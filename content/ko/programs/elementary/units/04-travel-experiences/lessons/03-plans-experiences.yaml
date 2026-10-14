@@ -1,0 +1,430 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:plans-experiences
+order_index: 3
+level: topik2
+title:
+  vi: Dự định & trải nghiệm - "định…", "đã từng…"
+objectives:
+  - vi: Nói dự định bằng V-(으)려고 하다 và "đã định… nhưng" bằng V-(으)려고 했어요.
+  - vi: Hỏi và kể trải nghiệm bằng V-(으)ㄴ 적이 있다/없다, nhất là V-아/어 본 적이 있다.
+  - vi: Dùng từ vựng kỳ nghỉ và phương tiện - 방학, 휴가, 계획, 해외여행, 제주도, 기차, 배, 한복, 처음.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ko:lesson:when-while-sightseeing]
+items:
+  - item: ko:item:gram-euryeogo-hada
+  - item: ko:item:gram-eun-jeok-itda
+  - item: ko:item:cheoeum
+  - item: ko:item:haeoe-yeohaeng
+  - item: ko:item:jejudo
+  - item: ko:item:gicha
+  - item: ko:item:bae-ship
+  - item: ko:item:gyehoek
+  - item: ko:item:banghak
+  - item: ko:item:hyuga
+  - item: ko:item:hanbok
+  - item: ko:item:gram-a-eo-boda
+    role: reuse
+  - item: ko:item:gram-eul-geoyeyo
+    role: reuse
+  - item: ko:item:gram-eureo-gada
+    role: reuse
+  - item: ko:item:verb-tada
+    role: reuse
+  - item: ko:item:hanbeon
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được kế hoạch cho kỳ nghỉ sắp tới và hỏi bạn bè "bạn đã từng… chưa?" về các trải nghiệm du lịch.
+  - type: explain
+    text:
+      vi: V-(으)려고 해요 là "định / dự định làm V". Không patchim và gốc ㄹ + 려고 (가려고, 만들려고), có patchim + 으려고 (먹으려고). Dạng quá khứ -(으)려고 했어요 thường là "đã định… nhưng không làm được".
+  - type: explain
+    text:
+      vi: V-(으)ㄴ 적이 있어요 / 없어요 là "đã từng / chưa từng làm V". Gắn dạng -(으)ㄴ vào gốc - 간 적, 먹은 적; hay đi kèm -아/어 보다 thành 가 본 적이 있어요 (đã từng đi thử).
+  - type: explain
+    text:
+      vi: Hỏi trải nghiệm - …-(으)ㄴ 적이 있어요? Trả lời - 네, 있어요 / 아니요, 없어요, hoặc ngắn hơn 네, 가 봤어요. Từ 처음 (lần đầu) hay đi cùng - 처음 가 봤어요.
+  - type: deep_explain
+    text:
+      vi: -(으)려고 하다 nhẹ hơn -(으)ㄹ 거예요 - nghe như "đang tính, đang định", chưa chắc chắn. Đừng nhầm với -(으)러 가다 (đi để làm gì) đã học - 먹으러 가요 cần động từ di chuyển ở sau. Khi nói nhanh người Hàn hay phát âm 갈려고, 먹을려고, nhưng chính tả chuẩn là 가려고, 먹으려고. -(으)ㄴ 적이 있다 chỉ dùng cho trải nghiệm đáng kể, không dùng cho việc ngày nào cũng làm.
+  - type: example
+    target: 이번 방학에 제주도에 가려고 해요. 비행기표는 벌써 샀어요.
+    target_lang: ko
+    translation:
+      vi: Kỳ nghỉ này tôi định đi Jeju. Vé máy bay thì tôi mua rồi.
+    note:
+      vi: 가다 không có patchim → 가려고 해요.
+  - type: example
+    target: 기차를 타려고 했어요. 그런데 표가 없어서 버스를 탔어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đã định đi tàu hoả. Nhưng hết vé nên tôi đi xe buýt.
+    note:
+      vi: -(으)려고 했어요 - đã định nhưng không làm được.
+  - type: example
+    target: 해외여행을 가 본 적이 있어요? - 네, 작년에 처음 베트남에 가 봤어요.
+    target_lang: ko
+    translation:
+      vi: Bạn đã từng đi du lịch nước ngoài chưa? - Rồi, năm ngoái tôi lần đầu đi Việt Nam.
+    note:
+      vi: Câu hỏi dùng -(으)ㄴ 적이 있어요?, câu trả lời có thể dùng gọn -아/어 봤어요.
+  - type: example
+    target: 저는 한복을 입어 본 적이 없어요. 그래서 이번 휴가 때 한번 입어 보려고 해요.
+    target_lang: ko
+    translation:
+      vi: Tôi chưa từng mặc thử hanbok. Vì vậy kỳ nghỉ phép lần này tôi định mặc thử một lần.
+    note:
+      vi: 입어 보다 + -(으)려고 하다 → 입어 보려고 해요.
+  - type: example
+    target: 부산에서 배를 타고 제주도에 간 적이 있어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đã từng đi tàu thủy từ Busan đến Jeju.
+    note:
+      vi: 가다 → 간 적; phương tiện + 를 타고.
+  - type: common_mistake
+    wrong: 제주도에 가는 적이 있어요.
+    right: 제주도에 간 적이 있어요. / 제주도에 가 본 적이 있어요.
+    target_lang: ko
+    note:
+      vi: Trải nghiệm là việc đã qua nên dùng -(으)ㄴ (간), không dùng -는 (가는) hay chia 갔은. Người Việt hay nghĩ "đã từng" phải thêm 았/었, nhưng dạng -(으)ㄴ đã mang nghĩa quá khứ rồi.
+  - type: common_mistake
+    wrong: 방학에 한국어를 배울려고 해요.
+    right: 방학에 한국어를 배우려고 해요.
+    target_lang: ko
+    note:
+      vi: Khi nói nhanh nhiều người đọc [배울려고], nhưng chính tả chuẩn là 배우려고. Chỉ thêm ㄹ khi gốc vốn có ㄹ - 만들려고, 놀려고.
+  - type: common_mistake
+    wrong: 저는 밥을 먹은 적이 있어요.
+    right: 저는 삼계탕을 먹어 본 적이 있어요.
+    target_lang: ko
+    note:
+      vi: Việc ngày nào cũng làm không phải là "trải nghiệm", nên câu đầu nghe rất lạ. Dùng -(으)ㄴ 적이 있다 cho việc đặc biệt, hiếm khi làm.
+  - type: summary
+    points:
+      - vi: V-(으)려고 해요 = định làm V; -(으)려고 했어요 = đã định (nhưng…).
+      - vi: V-(으)ㄴ 적이 있어요/없어요 = đã từng / chưa từng; hay dùng V-아/어 본 적이 있어요.
+      - vi: Chính tả - 가려고, 배우려고 (không thêm ㄹ); 간 적, 먹은 적 (không phải 가는 적, 갔은 적).
+      - vi: 방학 (học sinh) · 휴가 (người đi làm) · 계획 · 해외여행 · 제주도 · 기차 · 배 · 한복 · 처음.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:plans-experiences-listen-plan
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이번 방학에 제주도에 가려고 해요.
+      options:
+        - { id: d8m, text: Kỳ nghỉ này tôi định đi Jeju., lang: vi }
+        - { id: s3q, text: Kỳ nghỉ này tôi đã đi Jeju., lang: vi }
+        - { id: k6w, text: Tôi đã từng đi Jeju vào kỳ nghỉ., lang: vi }
+        - { id: u2f, text: Kỳ nghỉ này tôi định đi Busan., lang: vi }
+    answer:
+      correct_option_id: d8m
+    explanation:
+      vi: 가려고 해요 = định đi (chưa đi). "Đã đi" là 갔어요, "đã từng đi" là 간 적이 있어요; 제주도 là Jeju, không phải Busan.
+    display_answer: Kỳ nghỉ này tôi định đi Jeju.
+
+  - key: ko:exercise:plans-experiences-mcq-meogeo-bon
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eun-jeok-itda
+    prompt:
+      stem: "Chọn dạng đúng: 삼계탕을 ___ 적이 있어요? (Bạn đã từng ăn thử samgyetang chưa?)"
+      stem_lang: vi
+      options:
+        - { id: n4a, text: 먹어 본, lang: ko }
+        - { id: b7x, text: 먹어 보는, lang: ko }
+        - { id: q1e, text: 먹어 봤은, lang: ko }
+        - { id: f5c, text: 먹어 보기, lang: ko }
+    answer:
+      correct_option_id: n4a
+    explanation:
+      vi: Trải nghiệm dùng -(으)ㄴ 적 - 보다 → 본, nên 먹어 본 적이 있어요. -는 là dạng hiện tại, 봤은 không tồn tại, -기 không đi với 적.
+    display_answer: 먹어 본
+
+  - key: ko:exercise:plans-experiences-mcq-bae
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:bae-ship
+    prompt:
+      stem: "배를 타고 제주도에 갔어요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: h2r, text: Tôi đã đi tàu thủy đến Jeju., lang: vi }
+        - { id: w9d, text: Tôi đã đi tàu hoả đến Jeju., lang: vi }
+        - { id: o6j, text: Tôi bị đau bụng ở Jeju., lang: vi }
+        - { id: e3t, text: Tôi đã đi máy bay đến Jeju., lang: vi }
+    answer:
+      correct_option_id: h2r
+    explanation:
+      vi: 배를 타다 = đi tàu thủy. Tàu hoả là 기차, máy bay là 비행기; "đau bụng" là 배가 아프다 - dùng 이/가 và 아프다, không phải 타다.
+    display_answer: Tôi đã đi tàu thủy đến Jeju.
+
+  - key: ko:exercise:plans-experiences-fill-boryeogo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      template: "주말에 친구하고 영화를 {{b1}} 해요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Cuối tuần tôi định đi xem phim với bạn."
+        - "Gợi ý: 보다 + -(으)려고 (gốc không có patchim)."
+    answer:
+      blanks:
+        b1: [보려고]
+    known_wrong:
+      - answer: 볼려고
+        feedback_vi: Khi nói nhanh hay nghe [볼려고], nhưng chính tả chuẩn là 보려고 - 보 không có ㄹ.
+        error_tag: ryeogo_spelling
+      - answer: 보으려고
+        feedback_vi: 으려고 chỉ dùng khi gốc có patchim (먹으려고). 보 không có patchim → 보려고.
+        error_tag: ryeogo_form
+      - answer: 보러
+        feedback_vi: -(으)러 đi với 가다/오다 (đi để xem). Với 해요 phải là -(으)려고 - 보려고 해요.
+        error_tag: reo_ryeogo
+    explanation:
+      vi: Dự định - V-(으)려고 해요. 보다 không có patchim → 보려고 해요.
+    display_answer: 주말에 친구하고 영화를 보려고 해요.
+
+  - key: ko:exercise:plans-experiences-wb-hanbok
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hanbok
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Tôi chưa từng mặc thử hanbok.\""'
+      tokens:
+        - { id: h4, text: 적이 }
+        - { id: h2, text: 입어 }
+        - { id: h5, text: 없어요 }
+        - { id: h6, text: 보는 }
+        - { id: h1, text: 한복을 }
+        - { id: h3, text: 본 }
+    answer:
+      orders:
+        - [h1, h2, h3, h4, h5]
+    explanation:
+      vi: 입어 보다 (mặc thử) + -(으)ㄴ 적이 없다 → 입어 본 적이 없어요. 보는 là dạng hiện tại, không đi với 적.
+    display_answer: 한복을 입어 본 적이 없어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:plans-experiences-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-jeok-itda
+    prompt:
+      template: "(Tôi đã từng đi Busan.) 부산에 {{b1}} 적이 있어요. (Nghỉ hè tôi định học bơi.) 여름 방학에 수영을 {{b2}} 해요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [간, 가 본]
+        b2: [배우려고]
+    known_wrong:
+      - answer: 가는
+        feedback_vi: Trải nghiệm đã qua dùng -(으)ㄴ - 간 적, không dùng 가는.
+        error_tag: eun_jeok_form
+      - answer: 갔은
+        feedback_vi: Không chia 았/었 trước 적; dạng -(으)ㄴ (간) đã mang nghĩa quá khứ.
+        error_tag: eun_jeok_form
+      - answer: 배울려고
+        feedback_vi: Chính tả chuẩn là 배우려고 - 배우다 không có ㄹ.
+        error_tag: ryeogo_spelling
+      - answer: 배우러
+        feedback_vi: -(으)러 đi với 가다/오다. "Định học" là 배우려고 해요.
+        error_tag: reo_ryeogo
+    explanation:
+      vi: Đã từng đi - 간 적이 있어요 (hoặc 가 본 적이 있어요). Định học - 배우다 không có patchim → 배우려고 해요.
+    display_answer: 부산에 간 적이 있어요. 여름 방학에 수영을 배우려고 해요.
+
+  - key: ko:exercise:plans-experiences-translate-abroad
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:haeoe-yeohaeng
+    prompt:
+      source_text: Bạn đã từng đi du lịch nước ngoài chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 해외여행을 가 본 적이 있어요?
+        - 해외여행 가 본 적이 있어요?
+        - 해외여행 가 본 적 있어요?
+        - 해외여행을 간 적이 있어요?
+        - 해외여행 간 적 있어요?
+        - 해외여행을 해 본 적이 있어요?
+        - 해외여행 해 본 적 있어요?
+        - 해외여행을 한 적이 있어요?
+        - 해외여행을 가 본 적이 있으세요?
+        - 해외여행 가 봤어요?
+        - 해외여행을 가 봤어요?
+    known_wrong:
+      - answer: 해외여행을 가는 적이 있어요?
+        feedback_vi: Trải nghiệm dùng -(으)ㄴ - 간 적 / 가 본 적, không dùng 가는.
+        error_tag: eun_jeok_form
+      - answer: 해외여행을 갔은 적이 있어요?
+        feedback_vi: Không chia 았/었 trước 적 - chỉ cần 간 적.
+        error_tag: eun_jeok_form
+      - answer: 해외여행을 가려고 해요?
+        feedback_vi: -(으)려고 해요 là "định đi", không phải "đã từng đi".
+        error_tag: ryeogo_vs_jeok
+    explanation:
+      vi: '"Đã từng… chưa?" = V-(으)ㄴ 적이 있어요? - 가 본 적이 있어요? hoặc 간 적이 있어요?. Du lịch nước ngoài là 해외여행 (가다 / 하다).'
+    display_answer: 해외여행을 가 본 적이 있어요?
+
+  - key: ko:exercise:plans-experiences-translate-ship
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      source_text: Tôi định đi tàu thủy đến Jeju.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 배를 타고 제주도에 가려고 해요.
+        - 저는 배를 타고 제주도에 가려고 해요.
+        - 제주도에 배를 타고 가려고 해요.
+        - 저는 제주도에 배를 타고 가려고 해요.
+        - 배로 제주도에 가려고 해요.
+        - 제주도에 배로 가려고 해요.
+        - 저는 배로 제주도에 가려고 해요.
+    known_wrong:
+      - answer: 배를 타고 제주도에 갈려고 해요.
+        feedback_vi: Chính tả chuẩn là 가려고 - 가다 không có ㄹ.
+        error_tag: ryeogo_spelling
+      - answer: 배를 타고 제주도를 가려고 해요.
+        feedback_vi: Nơi đến dùng 에 - 제주도에 가다.
+        error_tag: particle_e_destination
+      - answer: 배를 타고 제주도에 간 적이 있어요.
+        feedback_vi: Câu này là "đã từng đi". "Định đi" là 가려고 해요.
+        error_tag: ryeogo_vs_jeok
+    explanation:
+      vi: Định làm - V-(으)려고 해요 → 가려고 해요. Đi bằng tàu thủy = 배를 타고 가다 hoặc 배로 가다.
+    display_answer: 배를 타고 제주도에 가려고 해요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:plans-experiences-mcq-answer-exp
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-jeok-itda
+    prompt:
+      stem: "Người Hàn hỏi bạn: 김치를 먹어 본 적이 있어요? Bạn đã ăn rồi. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m6p, text: "네, 먹어 본 적이 있어요.", lang: ko }
+        - { id: a1z, text: "네, 먹어 본 적이 없어요.", lang: ko }
+        - { id: r8k, text: "아니요, 먹은 적이 있어요.", lang: ko }
+        - { id: x2v, text: "네, 먹으려고 해요.", lang: ko }
+    answer:
+      correct_option_id: m6p
+    explanation:
+      vi: Đã ăn rồi → 네, 먹어 본 적이 있어요. 네 + 없어요 hoặc 아니요 + 있어요 tự mâu thuẫn; 먹으려고 해요 là "định ăn", tức là chưa ăn.
+    display_answer: "네, 먹어 본 적이 있어요."
+
+  - key: ko:exercise:plans-experiences-mcq-failed-plan
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      stem: "Hôm qua bạn định đi tàu hoả, nhưng hết vé nên phải đi xe buýt. Câu nào kể đúng?"
+      stem_lang: vi
+      options:
+        - { id: t5n, text: 기차를 타려고 했어요. 그런데 표가 없어서 버스를 탔어요., lang: ko }
+        - { id: l3c, text: 기차를 탔어요. 그런데 표가 없어서 버스를 탔어요., lang: ko }
+        - { id: j9s, text: 기차를 타려고 해요. 그런데 표가 없어서 버스를 탔어요., lang: ko }
+        - { id: y7g, text: 기차를 탄 적이 있어요. 그런데 표가 없어서 버스를 탔어요., lang: ko }
+    answer:
+      correct_option_id: t5n
+    explanation:
+      vi: '"Đã định… nhưng không làm được" là -(으)려고 했어요. 탔어요 nghĩa là đã đi rồi; 타려고 해요 là dự định hiện tại; 탄 적이 있어요 là trải nghiệm, đều không hợp ngữ cảnh.'
+    display_answer: 기차를 타려고 했어요. 그런데 표가 없어서 버스를 탔어요.
+
+  - key: ko:exercise:plans-experiences-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hyuga
+    prompt:
+      source_text: 제주도에 가 본 적이 없어요. 그래서 이번 휴가 때 가려고 해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi chưa từng đi Jeju. Vì vậy kỳ nghỉ phép lần này tôi định đi.
+        - Tôi chưa từng đi Jeju. Vì vậy kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa từng đến Jeju. Vì vậy kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa đi Jeju bao giờ. Vì vậy kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa từng đi Jeju. Nên kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa từng đi Jeju. Vì thế kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa từng đi Jeju. Vì vậy kỳ nghỉ này tôi định đi.
+        - Tôi chưa từng đi đảo Jeju. Vì vậy kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa từng đi Jeju nên kỳ nghỉ phép này tôi định đi.
+        - Tôi chưa từng đi Jeju. Vì vậy tôi định đi vào kỳ nghỉ phép này.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã từng đi Jeju. Vì vậy kỳ nghỉ phép này tôi định đi.
+        feedback_vi: 본 적이 없어요 là "chưa từng"; "đã từng" là 본 적이 있어요.
+        error_tag: jeok_itda_eopda
+      - answer: Tôi chưa từng đi Jeju. Vì vậy kỳ nghỉ phép này tôi đã đi.
+        feedback_vi: 가려고 해요 là "định đi", chưa đi.
+        error_tag: ryeogo_meaning
+    explanation:
+      vi: 가 본 적이 없어요 = chưa từng đi; 그래서 = vì vậy; 휴가 때 = vào kỳ nghỉ phép; 가려고 해요 = định đi.
+    display_answer: Tôi chưa từng đi Jeju. Vì vậy kỳ nghỉ phép lần này tôi định đi.
+
+  - key: ko:exercise:plans-experiences-wb-summer
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:banghak
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Nghỉ hè tôi định đi du lịch nước ngoài.\""'
+      tokens:
+        - { id: s5, text: 가려고 }
+        - { id: s3, text: 때 }
+        - { id: s6, text: 해요 }
+        - { id: s1, text: 여름 }
+        - { id: s7, text: 갔으려고 }
+        - { id: s4, text: 해외여행을 }
+        - { id: s2, text: 방학 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4, s5, s6]
+    explanation:
+      vi: Thời gian (여름 방학 때) đứng đầu, rồi 해외여행을, cuối cùng 가려고 해요. -(으)려고 gắn vào gốc, không chia quá khứ - 갔으려고 sai.
+    display_answer: 여름 방학 때 해외여행을 가려고 해요.

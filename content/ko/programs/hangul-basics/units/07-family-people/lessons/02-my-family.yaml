@@ -1,0 +1,390 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:my-family
+order_index: 2
+level: topik1
+title:
+  vi: Gia đình của tôi - 제, 우리, 의
+objectives:
+  - vi: Nói "của tôi" lịch sự bằng 제 (= 저의) và biết khi nào 내 là quá suồng sã.
+  - vi: Dùng 우리 cho gia đình như người Hàn - 우리 엄마, 우리 가족.
+  - vi: Nói "của ai đó" bằng N의 N và hỏi "Người này là ai?" bằng 누구예요?
+estimated_minutes: 14
+skills: [grammar, speaking, reading]
+prerequisites: [ko:lesson:family-members]
+items:
+  - item: ko:item:je-possessive
+  - item: ko:item:nae-possessive
+  - item: ko:item:uri
+  - item: ko:item:gram-ui-possessive
+  - item: ko:item:nugu
+  - item: ko:item:bumonim
+  - item: ko:item:hyeongje
+  - item: ko:item:gajok-sajin
+  - item: ko:item:jeo-na
+    role: reuse
+  - item: ko:item:gajok
+    role: reuse
+  - item: ko:item:ireum
+    role: reuse
+  - item: ko:item:saram
+    role: reuse
+  - item: ko:item:copula-ieyo-yeyo
+    role: reuse
+  - item: ko:item:namdongsaeng
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn cầm ảnh gia đình và giới thiệu được - "Đây là ảnh gia đình tôi. Đây là mẹ tôi, còn đây là em trai tôi."
+  - type: explain
+    text:
+      vi: '"Của tôi" lịch sự là 제 - rút gọn của 저의 - và luôn đứng TRƯỚC danh từ - 제 이름 (tên tôi), 제 가방 (cặp của tôi). Dạng thân mật là 내 (= 나의), chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn.'
+  - type: explain
+    text:
+      vi: Khi nói về gia đình, nhà, trường, người Hàn thường dùng 우리 (chúng tôi) thay cho 제 - 우리 엄마 (mẹ tôi), 우리 가족 (gia đình tôi), 우리 집 (nhà tôi). Cách này giống tiếng Việt nói "nhà mình", "mẹ mình".
+  - type: explain
+    text:
+      vi: '"Của + người khác" dùng N의 N, nhưng thứ tự ngược tiếng Việt - "anh trai của Minsu" là 민수 씨의 형. Hỏi "ai" dùng 누구 - 이 사람은 누구예요? (Người này là ai?).'
+  - type: deep_explain
+    text:
+      vi: Khi nói với người lớn hoặc trong tình huống trang trọng, 우리 được hạ thấp thành 저희 - 저희 어머니, 저희 가족. Trong hội thoại, 의 thường được bỏ - 친구 동생 (em của bạn), 엄마 이름 (tên mẹ). Riêng 제 và 내 đã chứa sẵn 의 nên không thêm gì nữa.
+  - type: example
+    target: 이건 우리 가족사진이에요.
+    target_lang: ko
+    translation:
+      vi: Đây là ảnh gia đình tôi.
+    note:
+      vi: 우리 가족 tự nhiên hơn 제 가족 khi khoe ảnh cả nhà.
+  - type: example
+    target: 제 이름은 마이예요. 제 남동생 이름은 민호예요.
+    target_lang: ko
+    translation:
+      vi: Tên tôi là Mai. Tên em trai tôi là Minho.
+    note:
+      vi: 제 đứng trước danh từ; 남동생 이름 bỏ 의 ở giữa.
+  - type: example
+    target: 이 사람은 누구예요? - 민수 씨의 누나예요.
+    target_lang: ko
+    translation:
+      vi: Người này là ai? - Là chị gái của Minsu.
+    note:
+      vi: 누구 không có patchim nên đi với 예요.
+  - type: example
+    target: 형제가 있어요? - 아니요, 없어요. 부모님하고 저, 세 명이에요.
+    target_lang: ko
+    translation:
+      vi: Bạn có anh chị em không? - Không, tôi không có. Bố mẹ và tôi, ba người.
+  - type: common_mistake
+    wrong: 저 가족은 네 명이에요.
+    right: 우리 가족은 네 명이에요. / 제 가족은 네 명이에요.
+    target_lang: ko
+    note:
+      vi: Người Việt nói "gia đình tôi" nên dễ ghép 저 + 가족. Nhưng 저 đứng trước danh từ lại là "kia" - 저 가족 là "gia đình kia". "Của tôi" phải là 제 hoặc 우리.
+  - type: common_mistake
+    wrong: (nói với giáo viên) 내 이름은 마이예요.
+    right: (nói với giáo viên) 제 이름은 마이예요.
+    target_lang: ko
+    note:
+      vi: 내 là "của tớ" thân mật, không hợp với đuôi lịch sự 예요 và với người lớn. Khi nói 해요체, luôn dùng 제.
+  - type: common_mistake
+    wrong: 형의 민수 씨
+    right: 민수 씨의 형
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "anh của Minsu" đặt người sở hữu ở sau. Tiếng Hàn ngược lại - người sở hữu + 의 đứng trước.
+  - type: summary
+    points:
+      - vi: 제 = 저의 (lịch sự) · 내 = 나의 (thân mật) - đứng trước danh từ.
+      - vi: 우리 엄마, 우리 가족, 우리 집 - cách nói tự nhiên về gia đình; 저희 khi rất lịch sự.
+      - vi: 저 + danh từ = "N kia", không phải "N của tôi".
+      - vi: A의 B = B của A (의 hay bị bỏ khi nói) · 누구예요? = là ai?
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:my-family-mcq-je-origin
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:je-possessive
+    prompt:
+      stem: "제 trong 제 이름 (tên tôi) là dạng rút gọn của cụm nào?"
+      stem_lang: vi
+      options:
+        - { id: n6w, text: 저의, lang: ko }
+        - { id: a3j, text: 나의, lang: ko }
+        - { id: t8c, text: 저는, lang: ko }
+        - { id: l1p, text: 우리, lang: ko }
+    answer:
+      correct_option_id: n6w
+    explanation:
+      vi: 저 (tôi, lịch sự) + 의 (của) = 저의, rút gọn thành 제. 나의 rút thành 내 (thân mật); 저는 là "tôi thì", không mang nghĩa "của".
+    display_answer: 저의
+
+  - key: ko:exercise:my-family-listen-who
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:nugu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이 사람은 누구예요? - 우리 오빠예요.
+      options:
+        - { id: y5d, text: Người này là ai? - Là anh trai tôi., lang: vi }
+        - { id: j2s, text: Người này tên gì? - Là anh trai tôi., lang: vi }
+        - { id: o9g, text: Người này là ai? - Là em trai tôi., lang: vi }
+        - { id: c4x, text: Người này ở đâu? - Ở nhà anh trai tôi., lang: vi }
+    answer:
+      correct_option_id: y5d
+    explanation:
+      vi: 누구예요? là "là ai?" (tên gì là 이름이 뭐예요?, ở đâu là 어디예요?). 우리 오빠 là anh trai tôi; em trai là 남동생.
+    display_answer: Người này là ai? - Là anh trai tôi.
+
+  - key: ko:exercise:my-family-mcq-ui-order
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-ui-possessive
+    prompt:
+      stem: Cách nào đúng để nói "anh trai của Minsu"?
+      stem_lang: vi
+      options:
+        - { id: f3m, text: 민수 씨의 형, lang: ko }
+        - { id: w7r, text: 형의 민수 씨, lang: ko }
+        - { id: b2v, text: 민수 씨 형의, lang: ko }
+        - { id: h6n, text: 형 민수 씨의, lang: ko }
+    answer:
+      correct_option_id: f3m
+    explanation:
+      vi: Người sở hữu + 의 đứng trước, người/vật được sở hữu đứng sau - 민수 씨의 형. Thứ tự này ngược với tiếng Việt "anh của Minsu".
+    display_answer: 민수 씨의 형
+
+  - key: ko:exercise:my-family-fill-photo-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:uri
+    prompt:
+      template: "이건 {{b1}} 가족사진이에요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Đây là ảnh gia đình tôi."
+        - "Gợi ý: từ người Hàn hay dùng cho gia đình mình, nghĩa gốc là \"chúng tôi\"."
+    answer:
+      blanks:
+        b1: [우리, 제, 저희]
+    known_wrong:
+      - answer: 저
+        feedback_vi: 저 + danh từ nghĩa là "kia" - 저 가족사진 là "tấm ảnh gia đình kia". Dùng 우리 hoặc 제.
+        error_tag: possessive_jeo_je
+      - answer: 내
+        feedback_vi: 내 là thân mật, không hợp với đuôi lịch sự 이에요. Dùng 우리 hoặc 제.
+        error_tag: possessive_politeness
+      - answer: 나
+        feedback_vi: 나 là "tôi" thân mật và không mang nghĩa "của". Dùng 우리 hoặc 제.
+        error_tag: possessive_politeness
+    explanation:
+      vi: Khi nói về gia đình, người Hàn dùng 우리 (우리 가족); 제 và 저희 cũng đúng. 저 đứng trước danh từ lại có nghĩa "kia".
+    display_answer: 이건 우리 가족사진이에요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:my-family-fill-je-nae
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:nae-possessive
+    prompt:
+      template: "(Minsu nói với thầy giáo) {{b1}} 이름은 민수예요. (Minsu nói với bạn thân) {{b2}} 이름은 민수야."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [제]
+        b2: [내]
+    known_wrong:
+      - answer: 저
+        feedback_vi: 저 + danh từ là "kia". "Của tôi" lịch sự là 제 (= 저의).
+        error_tag: possessive_jeo_je
+      - answer: 나
+        feedback_vi: 나 là "tôi" thân mật; "của tôi" thân mật là 내 (= 나의).
+        error_tag: possessive_na_nae
+      - answer: 저의는
+        feedback_vi: Chỉ cần 제 (rút gọn của 저의), không thêm 는 vào giữa.
+        error_tag: possessive_form
+    explanation:
+      vi: Với thầy giáo dùng 해요체 nên "của tôi" là 제. Với bạn thân nói thân mật (-야) thì dùng 내.
+    display_answer: 제 이름은 민수예요. / 내 이름은 민수야.
+
+  - key: ko:exercise:my-family-translate-brother-name
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:je-possessive
+    prompt:
+      source_text: Tên em trai tôi là Minho.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제 남동생 이름은 민호예요.
+        - 우리 남동생 이름은 민호예요.
+        - 제 남동생의 이름은 민호예요.
+        - 저희 남동생 이름은 민호예요.
+        - 남동생 이름은 민호예요.
+        - 제 남동생은 이름이 민호예요.
+        - 우리 남동생은 이름이 민호예요.
+    known_wrong:
+      - answer: 저 남동생 이름은 민호예요.
+        feedback_vi: 저 남동생 là "cậu em trai kia". "Của tôi" là 제 hoặc 우리.
+        error_tag: possessive_jeo_je
+      - answer: 제 남동생 이름은 민호이에요.
+        feedback_vi: 민호 không có patchim nên dùng 예요 - 민호예요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 이름 제 남동생은 민호예요.
+        feedback_vi: Người sở hữu đứng trước - 제 남동생 이름 (tên của em trai tôi).
+        error_tag: possessive_order
+      - answer: 내 남동생 이름은 민호예요.
+        feedback_vi: 내 là thân mật, không hợp với đuôi lịch sự 예요. Dùng 제 hoặc 우리.
+        error_tag: possessive_politeness
+    explanation:
+      vi: Thứ tự là người sở hữu trước - 제 남동생 (em trai tôi) + 이름 (tên); 의 có thể bỏ. 민호 không có patchim nên dùng 예요.
+    display_answer: 제 남동생 이름은 민호예요.
+
+  - key: ko:exercise:my-family-translate-who
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:nugu
+    prompt:
+      source_text: Người này là ai?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 사람은 누구예요?
+        - 이 사람 누구예요?
+        - 이 사람이 누구예요?
+        - 이분은 누구세요?
+        - 이분은 누구예요?
+    known_wrong:
+      - answer: 이 사람은 누구이에요?
+        feedback_vi: 누구 không có patchim nên dùng 예요 - 누구예요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 이 사람은 뭐예요?
+        feedback_vi: 뭐 là "cái gì" - dùng cho đồ vật. Hỏi người dùng 누구.
+        error_tag: question_word
+      - answer: 저 사람은 누구예요?
+        feedback_vi: 저 사람 là "người kia" (ở xa). "Người này" là 이 사람.
+        error_tag: demonstrative
+    explanation:
+      vi: 이 사람 = người này; 누구 = ai; 누구 không có patchim nên + 예요. Từ để hỏi đứng gần cuối câu, không đầu câu như tiếng Anh.
+    display_answer: 이 사람은 누구예요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:my-family-mcq-situation-photo
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gajok-sajin
+    prompt:
+      stem: Bạn cho đồng nghiệp người Hàn xem điện thoại và muốn nói "Đây là ảnh gia đình tôi". Câu nào tự nhiên và đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: s1e, text: 이건 우리 가족사진이에요., lang: ko }
+        - { id: g5k, text: 이건 저 가족사진이에요., lang: ko }
+        - { id: p8u, text: 이건 가족사진 우리예요., lang: ko }
+        - { id: d6t, text: 이건 우리 가족사진예요., lang: ko }
+    answer:
+      correct_option_id: s1e
+    explanation:
+      vi: 우리 + 가족사진 là "ảnh gia đình tôi"; 사진 có patchim ㄴ nên dùng 이에요. 저 가족사진 là "tấm ảnh gia đình kia", và 우리 phải đứng trước danh từ.
+    display_answer: 이건 우리 가족사진이에요.
+
+  - key: ko:exercise:my-family-translate-siblings-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:hyeongje
+    prompt:
+      source_text: 형제가 있어요? - 네, 오빠가 한 명 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn có anh chị em không? - Có, tôi có một anh trai.
+        - Bạn có anh chị em không? - Vâng, tôi có một anh trai.
+        - Bạn có anh chị em không? - Có, một anh trai.
+        - Bạn có anh chị em không? - Dạ có, tôi có một anh trai.
+        - Bạn có anh chị em ruột không? - Có, tôi có một anh trai.
+        - Có anh chị em không? - Có, tôi có một anh trai.
+        - Bạn có anh em không? - Có, tôi có một anh trai.
+        - Bạn có anh chị em không? - Có, tôi có một người anh trai.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn có anh chị em không? - Có, tôi có một em trai.
+        feedback_vi: 오빠 là anh trai (người nói là nữ), không phải em trai.
+        error_tag: family_term
+      - answer: Bạn có anh chị em không? - Có, tôi có một chị gái.
+        feedback_vi: 오빠 là anh trai; chị gái là 언니/누나.
+        error_tag: family_term
+    explanation:
+      vi: 형제 = anh chị em ruột; 오빠 = anh trai (người nói là nữ); 한 명 = một người.
+    display_answer: Bạn có anh chị em không? - Có, tôi có một anh trai.
+
+  - key: ko:exercise:my-family-wb-friend-sister
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-ui-possessive
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Em gái của bạn tôi là nhân viên công ty.\""
+      tokens:
+        - { id: k1, text: 여동생은 }
+        - { id: k2, text: 회사원이에요 }
+        - { id: k3, text: 저 }
+        - { id: k4, text: 친구의 }
+        - { id: k5, text: 제 }
+        - { id: k6, text: 여동생을 }
+    answer:
+      orders:
+        - [k5, k4, k1, k2]
+        - [k4, k1, k2]
+    explanation:
+      vi: Người sở hữu đứng trước - 제 친구의 여동생 (em gái của bạn tôi). 저 ở đây sẽ thành "kia", và chủ đề câu dùng 은 chứ không dùng 을.
+    display_answer: 제 친구의 여동생은 회사원이에요.
+
+  - key: ko:exercise:my-family-mcq-situation-boss
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:nae-possessive
+    prompt:
+      stem: Trưởng phòng hỏi cái cặp trên bàn là của ai. Bạn trả lời "Là cặp của tôi ạ." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m4z, text: 제 가방이에요., lang: ko }
+        - { id: r7b, text: 내 가방이에요., lang: ko }
+        - { id: u3q, text: 저 가방이에요., lang: ko }
+        - { id: x8f, text: 가방 제예요., lang: ko }
+    answer:
+      correct_option_id: m4z
+    explanation:
+      vi: Nói với cấp trên bằng 해요체 thì "của tôi" là 제. 내 quá thân mật; 저 가방 là "cái cặp kia"; 제 phải đứng trước danh từ.
+    display_answer: 제 가방이에요.

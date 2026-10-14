@@ -1,0 +1,445 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:daily-troubles-mishaps
+order_index: 1
+level: topik3
+title:
+  vi: "Sự cố bất ngờ: -는 바람에 và -(으)ㄹ 뻔했다"
+objectives:
+  - vi: Kể nguyên nhân bất ngờ dẫn tới chuyện không may bằng -는 바람에.
+  - vi: Nói "suýt nữa thì…" bằng 하마터면 … -(으)ㄹ 뻔했어요.
+  - vi: Phân biệt -는 바람에 (kết quả xấu) với -(으)ㄴ 덕분에 (kết quả tốt).
+  - vi: Dùng từ vựng về sự cố hằng ngày - mất ví, lỡ xe, ngã, bị thương.
+estimated_minutes: 18
+skills: [grammar, speaking, vocabulary]
+prerequisites: [ko:lesson:culture-opinions-review]
+items:
+  - item: ko:item:gram-neun-barame
+  - item: ko:item:gram-eul-ppeonhada
+  - item: ko:item:hamateomyeon
+  - item: ko:item:jigabeul-ireobeorida
+  - item: ko:item:hyudaepon
+  - item: ko:item:neomeojida
+  - item: ko:item:dachida
+  - item: ko:item:nochida
+  - item: ko:item:danghwanghada
+  - item: ko:item:gapjagi
+  - item: ko:item:neutjameul-jada
+    role: reuse
+  - item: ko:item:giri-makhida
+    role: reuse
+  - item: ko:item:gojang-nada
+    role: reuse
+  - item: ko:item:jigakada
+    role: reuse
+  - item: ko:item:gram-aseo-reason
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một sự cố bất ngờ (tự nhiên trời mưa, điện thoại hỏng, ngủ quên) đã gây ra chuyện gì, và nói được mình "suýt nữa thì" gặp chuyện gì.
+  - type: explain
+    text:
+      vi: -는 바람에 nối một nguyên nhân bất ngờ, ngoài ý muốn với một kết quả thường là xấu - 갑자기 비가 오는 바람에 옷이 젖었어요. Nó chỉ gắn vào động từ và luôn ở dạng -는, kể cả khi chuyện đã qua; thì quá khứ nằm ở cuối câu.
+  - type: explain
+    text:
+      vi: Vế sau của -는 바람에 là kết quả đã xảy ra, nên không được là lời khuyên, mệnh lệnh hay lời rủ. Nếu kết quả tốt (nhờ ai giúp, nhờ trời đẹp), hãy dùng -(으)ㄴ 덕분에 - 친구가 도와준 덕분에 일찍 끝났어요.
+  - type: explain
+    text:
+      vi: V-(으)ㄹ 뻔했어요 là "suýt nữa thì…" - chuyện gần như xảy ra nhưng cuối cùng không xảy ra. Nó gần như luôn ở quá khứ, hay đi với 하마터면 - 하마터면 넘어질 뻔했어요 (suýt ngã, nhưng không ngã).
+  - type: deep_explain
+    text:
+      vi: So với -아서/어서, -는 바람에 nhấn mạnh tính bất ngờ và cảm giác "tại cái đó mà…", nên hay đi với 갑자기. Người Việt hay dịch "tại/do…" thành -는 바람에 cho mọi lý do, nhưng lý do quen thuộc, có thể đoán trước (bận, mệt) thì -아서 tự nhiên hơn. Còn -(으)ㄹ 뻔했다 nếu dùng cho việc đã xảy ra thật sẽ làm người nghe hiểu ngược - 넘어질 뻔했어요 nghĩa là bạn không ngã.
+  - type: example
+    target: 늦잠을 자는 바람에 회사에 지각했어요.
+    target_lang: ko
+    translation:
+      vi: Tại ngủ quên nên tôi đi làm muộn.
+    note:
+      vi: 자다 → 자는 바람에; quá khứ chỉ ở 지각했어요.
+  - type: example
+    target: 갑자기 휴대폰이 고장 나는 바람에 연락을 못 했어요.
+    target_lang: ko
+    translation:
+      vi: Tự dưng điện thoại hỏng nên tôi không liên lạc được.
+    note:
+      vi: 갑자기 + -는 바람에 - cặp rất tự nhiên cho sự cố bất ngờ.
+  - type: example
+    target: 하마터면 지하철에서 지갑을 잃어버릴 뻔했어요.
+    target_lang: ko
+    translation:
+      vi: Suýt chút nữa là tôi làm mất ví trên tàu điện ngầm.
+    note:
+      vi: Ví không mất - chỉ "suýt" mất thôi.
+  - type: example
+    target: 길이 막히는 바람에 비행기를 놓칠 뻔했어요.
+    target_lang: ko
+    translation:
+      vi: Tại tắc đường mà tôi suýt lỡ chuyến bay.
+    note:
+      vi: Kết hợp cả hai mẫu - nguyên nhân bất ngờ và kết quả "suýt".
+  - type: example
+    target: 계단에서 넘어져서 발목을 다쳤어요. 너무 당황했어요.
+    target_lang: ko
+    translation:
+      vi: Tôi ngã ở cầu thang nên bị thương ở mắt cá chân. Hoảng hết cả hồn.
+    note:
+      vi: Ngã thật nên dùng 넘어졌어요 / 넘어져서, không dùng -(으)ㄹ 뻔했다.
+  - type: common_mistake
+    wrong: 친구가 도와주는 바람에 일을 빨리 끝냈어요.
+    right: 친구가 도와준 덕분에 일을 빨리 끝냈어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "nhờ/tại bạn giúp" đều được, nhưng -는 바람에 mang sắc thái "tại cái đó mà hỏng việc". Kết quả tốt thì dùng -(으)ㄴ 덕분에.
+  - type: common_mistake
+    wrong: 늦잠을 잤는 바람에 지각했어요.
+    right: 늦잠을 자는 바람에 지각했어요.
+    target_lang: ko
+    note:
+      vi: -는 바람에 không gắn thì quá khứ (잤는, 잔 đều sai). Thì quá khứ nằm ở động từ cuối câu.
+  - type: common_mistake
+    wrong: 어제 계단에서 넘어질 뻔했어요. 그래서 다리를 다쳤어요.
+    right: 어제 계단에서 넘어졌어요. 그래서 다리를 다쳤어요.
+    target_lang: ko
+    note:
+      vi: Đã bị thương tức là đã ngã thật, nên không dùng 넘어질 뻔했어요 ("suýt ngã"). -(으)ㄹ 뻔했다 chỉ dùng khi chuyện cuối cùng không xảy ra.
+  - type: summary
+    points:
+      - vi: V-는 바람에 - nguyên nhân bất ngờ → kết quả xấu; luôn -는, không quá khứ; vế sau không là mệnh lệnh, rủ rê.
+      - vi: Kết quả tốt → -(으)ㄴ 덕분에, không dùng -는 바람에.
+      - vi: (하마터면) V-(으)ㄹ 뻔했어요 - suýt nữa thì…, nhưng chuyện đã không xảy ra.
+      - vi: Từ vựng - 지갑을 잃어버리다, 휴대폰, 넘어지다, 다치다, 놓치다, 당황하다, 갑자기.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dt-mishaps-mcq-natural-barame
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-barame
+    prompt:
+      stem: Câu nào dùng -는 바람에 tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: r7k, text: 갑자기 비가 오는 바람에 옷이 다 젖었어요., lang: ko }
+        - { id: m2v, text: 날씨가 좋은 바람에 산책을 했어요., lang: ko }
+        - { id: z9p, text: 친구가 도와주는 바람에 숙제를 다 했어요., lang: ko }
+        - { id: e4c, text: 비가 오는 바람에 우산을 가져가세요., lang: ko }
+    answer:
+      correct_option_id: r7k
+    explanation:
+      vi: Mưa bất ngờ dẫn tới kết quả xấu (ướt hết) - đúng chức năng của -는 바람에. 좋은 바람에 sai vì 좋다 là tính từ và kết quả tốt; bạn giúp là kết quả tốt (dùng 덕분에); 가져가세요 là lời khuyên, không đi sau -는 바람에.
+    display_answer: 갑자기 비가 오는 바람에 옷이 다 젖었어요.
+
+  - key: ko:exercise:dt-mishaps-listen-almost-miss
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eul-ppeonhada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 하마터면 지하철을 놓칠 뻔했어요.
+      options:
+        - { id: c5n, text: Suýt nữa thì tôi lỡ tàu điện ngầm., lang: vi }
+        - { id: w8d, text: Tôi đã lỡ tàu điện ngầm., lang: vi }
+        - { id: h3y, text: Tôi sắp đi tàu điện ngầm., lang: vi }
+        - { id: q1u, text: May mà tôi không đi tàu điện ngầm., lang: vi }
+    answer:
+      correct_option_id: c5n
+    explanation:
+      vi: 하마터면 … -(으)ㄹ 뻔했어요 là "suýt nữa thì…" - chuyện đã không xảy ra. "Đã lỡ tàu" phải là 놓쳤어요; câu không nói về dự định hay việc không đi tàu.
+    display_answer: Suýt nữa thì tôi lỡ tàu điện ngầm.
+
+  - key: ko:exercise:dt-mishaps-mcq-did-fall
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eul-ppeonhada
+    prompt:
+      stem: "Bạn của bạn nói: 길이 미끄러워서 넘어질 뻔했어요. Điều gì đã xảy ra?"
+      stem_lang: vi
+      options:
+        - { id: b6t, text: Bạn ấy suýt ngã nhưng không ngã., lang: vi }
+        - { id: j2r, text: Bạn ấy đã bị ngã., lang: vi }
+        - { id: x4f, text: Bạn ấy sợ sẽ bị ngã vào ngày mai., lang: vi }
+        - { id: p7g, text: Bạn ấy làm người khác ngã., lang: vi }
+    answer:
+      correct_option_id: b6t
+    explanation:
+      vi: -(으)ㄹ 뻔했다 luôn có nghĩa chuyện gần xảy ra nhưng không xảy ra. Nếu ngã thật, bạn ấy sẽ nói 넘어졌어요.
+    display_answer: Bạn ấy suýt ngã nhưng không ngã.
+
+  - key: ko:exercise:dt-mishaps-fill-barame-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-neun-barame
+    prompt:
+      template: "갑자기 눈이 {{b1}} 바람에 비행기가 늦게 출발했어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Tự nhiên tuyết rơi nên máy bay cất cánh muộn."
+        - "Gợi ý: 오다 + -는."
+    answer:
+      blanks:
+        b1: [오는]
+    known_wrong:
+      - answer: 왔는
+        feedback_vi: -는 바람에 không gắn quá khứ. Dùng 오는.
+        error_tag: past_with_barame
+      - answer: 온
+        feedback_vi: Trước 바람에 luôn là -는 - 오는 바람에.
+        error_tag: barame_form
+      - answer: 와서
+        feedback_vi: Trước 바람에 cần dạng định ngữ -는, không dùng -아서.
+        error_tag: barame_form
+    explanation:
+      vi: 오다 bỏ 다, thêm -는 → 오는 바람에. Dù chuyện đã qua, -는 바람에 vẫn giữ -는; quá khứ nằm ở 출발했어요.
+    display_answer: 갑자기 눈이 오는 바람에 비행기가 늦게 출발했어요.
+
+  - key: ko:exercise:dt-mishaps-wb-almost-bus
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hamateomyeon
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Suýt chút nữa là tôi lỡ xe buýt.\""
+      tokens:
+        - { id: t3, text: 놓칠 }
+        - { id: t5, text: 놓친 }
+        - { id: t4, text: 뻔했어요 }
+        - { id: t1, text: 하마터면 }
+        - { id: t6, text: 뻔해요 }
+        - { id: t2, text: 버스를 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: 놓치다 → 놓칠 (-(으)ㄹ) + 뻔했어요 (quá khứ). 놓친 là định ngữ quá khứ, không đi với 뻔하다; 뻔해요 ở hiện tại không dùng cho "suýt".
+    display_answer: 하마터면 버스를 놓칠 뻔했어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dt-mishaps-fill-overslept
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-barame
+    prompt:
+      template: "(Tại ngủ quên nên tôi lỡ chuyến bay.) 늦잠을 {{b1}} 바람에 비행기를 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [자는]
+        b2: [놓쳤어요]
+    known_wrong:
+      - answer: 잤는
+        feedback_vi: -는 바람에 không gắn quá khứ - 자는.
+        error_tag: past_with_barame
+      - answer: 잔
+        feedback_vi: Trước 바람에 luôn là -는 - 자는.
+        error_tag: barame_form
+      - answer: 놓쳐요
+        feedback_vi: Chuyện đã xảy ra nên vế sau ở quá khứ - 놓쳤어요.
+        error_tag: tense_result
+      - answer: 놓칠 뻔했어요
+        feedback_vi: Câu gốc nói đã lỡ chuyến bay thật, nên dùng 놓쳤어요, không phải "suýt lỡ".
+        error_tag: ppeon_actual_event
+    explanation:
+      vi: 자다 → 자는 바람에 (không quá khứ); 놓치다 → 놓쳤어요 vì việc lỡ chuyến bay đã xảy ra thật.
+    display_answer: 늦잠을 자는 바람에 비행기를 놓쳤어요.
+
+  - key: ko:exercise:dt-mishaps-translate-almost-fell
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:neomeojida
+    prompt:
+      source_text: Suýt nữa thì tôi bị ngã.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 하마터면 넘어질 뻔했어요.
+        - 넘어질 뻔했어요.
+        - 저는 하마터면 넘어질 뻔했어요.
+        - 저는 넘어질 뻔했어요.
+        - 전 넘어질 뻔했어요.
+        - 하마터면 넘어질 뻔했습니다.
+        - 넘어질 뻔했습니다.
+    known_wrong:
+      - answer: 넘어질 뻔해요.
+        feedback_vi: '"Suýt" là chuyện đã qua, nên dùng quá khứ 뻔했어요.'
+        error_tag: ppeon_present
+      - answer: 넘어졌을 뻔했어요.
+        feedback_vi: Không gắn quá khứ trước -(으)ㄹ 뻔했다 - 넘어질 뻔했어요.
+        error_tag: ppeon_form
+      - answer: 하마터면 넘어졌어요.
+        feedback_vi: 넘어졌어요 là đã ngã thật. "Suýt ngã" là 넘어질 뻔했어요.
+        error_tag: ppeon_actual_event
+    explanation:
+      vi: '"Suýt nữa thì" = (하마터면) V-(으)ㄹ 뻔했어요. 넘어지다 không có patchim nên thêm ㄹ → 넘어질.'
+    display_answer: 하마터면 넘어질 뻔했어요.
+
+  - key: ko:exercise:dt-mishaps-translate-phone-broke
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-neun-barame
+    prompt:
+      source_text: Tự nhiên điện thoại hỏng nên tôi không liên lạc được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 갑자기 휴대폰이 고장 나는 바람에 연락을 못 했어요.
+        - 갑자기 휴대폰이 고장 나는 바람에 연락을 못했어요.
+        - 갑자기 휴대폰이 고장 나는 바람에 연락 못 했어요.
+        - 갑자기 휴대폰이 고장 나는 바람에 연락 못했어요.
+        - 갑자기 핸드폰이 고장 나는 바람에 연락을 못 했어요.
+        - 갑자기 핸드폰이 고장 나는 바람에 연락을 못했어요.
+        - 갑자기 휴대폰이 고장이 나는 바람에 연락을 못 했어요.
+        - 갑자기 휴대폰이 고장 나는 바람에 연락할 수 없었어요.
+        - 갑자기 휴대폰이 고장 나서 연락을 못 했어요.
+        - 갑자기 휴대폰이 고장 나서 연락을 못했어요.
+    known_wrong:
+      - answer: 갑자기 휴대폰이 고장 났는 바람에 연락을 못 했어요.
+        feedback_vi: -는 바람에 không gắn quá khứ - 고장 나는 바람에.
+        error_tag: past_with_barame
+      - answer: 갑자기 휴대폰이 고장 난 바람에 연락을 못 했어요.
+        feedback_vi: Trước 바람에 luôn là -는 - 고장 나는 바람에.
+        error_tag: barame_form
+      - answer: 갑자기 휴대폰을 잃어버리는 바람에 연락을 못 했어요.
+        feedback_vi: '"Hỏng" là 고장 나다; 잃어버리다 là làm mất.'
+        error_tag: vocab_broken_lost
+    explanation:
+      vi: Sự cố bất ngờ (갑자기) + kết quả xấu → -는 바람에. 고장 나다 → 고장 나는 바람에; "không liên lạc được" là 연락을 못 했어요.
+    display_answer: 갑자기 휴대폰이 고장 나는 바람에 연락을 못 했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dt-mishaps-mcq-thanks-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-barame
+    prompt:
+      stem: Bạn kể với đồng nghiệp rằng nhờ chị Minji giúp mà bạn tìm lại được ví. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: d3s, text: 민지 씨가 도와준 덕분에 지갑을 찾았어요., lang: ko }
+        - { id: k8w, text: 민지 씨가 도와주는 바람에 지갑을 찾았어요., lang: ko }
+        - { id: u5m, text: 민지 씨가 도와줬는 바람에 지갑을 찾았어요., lang: ko }
+        - { id: g1z, text: 민지 씨가 도와줄 뻔해서 지갑을 찾았어요., lang: ko }
+    answer:
+      correct_option_id: d3s
+    explanation:
+      vi: Kết quả tốt (tìm lại được ví) nên dùng -(으)ㄴ 덕분에. -는 바람에 mang nghĩa "tại… mà hỏng việc"; 도와줬는 sai dạng; 도와줄 뻔해서 là "suýt giúp", vô nghĩa ở đây.
+    display_answer: 민지 씨가 도와준 덕분에 지갑을 찾았어요.
+
+  - key: ko:exercise:dt-mishaps-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hamateomyeon
+    prompt:
+      source_text: 길이 막히는 바람에 하마터면 비행기를 놓칠 뻔했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tại tắc đường nên suýt nữa tôi lỡ chuyến bay.
+        - Tại tắc đường mà suýt nữa tôi lỡ chuyến bay.
+        - Vì tắc đường nên suýt nữa tôi lỡ chuyến bay.
+        - Do tắc đường nên suýt nữa tôi lỡ chuyến bay.
+        - Tại kẹt xe nên suýt nữa tôi lỡ chuyến bay.
+        - Vì kẹt xe nên suýt nữa tôi lỡ chuyến bay.
+        - Tại tắc đường nên tôi suýt lỡ chuyến bay.
+        - Vì tắc đường nên tôi suýt lỡ chuyến bay.
+        - Vì kẹt xe nên tôi suýt trễ chuyến bay.
+        - Tại kẹt xe nên tôi suýt trễ chuyến bay.
+        - Tại tắc đường nên suýt chút nữa tôi lỡ chuyến bay.
+        - Đường tắc nên suýt nữa tôi lỡ máy bay.
+        - Tại tắc đường nên suýt nữa tôi lỡ máy bay.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tại tắc đường nên tôi đã lỡ chuyến bay.
+        feedback_vi: 놓칠 뻔했어요 là "suýt lỡ" - thực tế chưa lỡ.
+        error_tag: ppeon_meaning
+      - answer: Dù tắc đường tôi vẫn kịp chuyến bay.
+        feedback_vi: -는 바람에 nêu nguyên nhân ("tại… nên"), không phải "dù".
+        error_tag: meaning_reason
+    explanation:
+      vi: 막히는 바람에 = tại (đường) tắc nên; 하마터면 … 놓칠 뻔했어요 = suýt nữa thì lỡ. Người nói cuối cùng vẫn kịp chuyến bay.
+    display_answer: Tại tắc đường nên suýt nữa tôi lỡ chuyến bay.
+
+  - key: ko:exercise:dt-mishaps-translate-snow-late
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gapjagi
+    prompt:
+      source_text: Tự dưng tuyết rơi nhiều nên tôi đi học muộn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 갑자기 눈이 많이 오는 바람에 학교에 지각했어요.
+        - 갑자기 눈이 많이 오는 바람에 지각했어요.
+        - 갑자기 눈이 많이 오는 바람에 학교에 늦었어요.
+        - 갑자기 눈이 많이 오는 바람에 수업에 지각했어요.
+        - 갑자기 눈이 많이 오는 바람에 수업에 늦었어요.
+        - 갑자기 눈이 많이 와서 학교에 지각했어요.
+        - 갑자기 눈이 많이 와서 학교에 늦었어요.
+        - 갑자기 눈이 많이 내리는 바람에 학교에 지각했어요.
+        - 저는 갑자기 눈이 많이 오는 바람에 학교에 지각했어요.
+    known_wrong:
+      - answer: 갑자기 눈이 많이 왔는 바람에 학교에 지각했어요.
+        feedback_vi: -는 바람에 không gắn quá khứ - 오는 바람에.
+        error_tag: past_with_barame
+      - answer: 갑자기 눈이 많이 오는 바람에 학교에 지각할 뻔했어요.
+        feedback_vi: Câu gốc nói đã đi muộn thật, không phải "suýt muộn".
+        error_tag: ppeon_actual_event
+      - answer: 갑자기 눈이 많이 오는 바람에 학교에 지각해요.
+        feedback_vi: Chuyện đã xảy ra nên vế sau dùng quá khứ - 지각했어요.
+        error_tag: tense_result
+    explanation:
+      vi: Nguyên nhân bất ngờ → 갑자기 + 오는 바람에; kết quả xấu đã xảy ra → 지각했어요 / 늦었어요. -아서 (와서) cũng đúng nhưng ít nhấn tính bất ngờ hơn.
+    display_answer: 갑자기 눈이 많이 오는 바람에 학교에 지각했어요.
+
+  - key: ko:exercise:dt-mishaps-mcq-injured
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dachida
+    prompt:
+      stem: Bạn kể rằng hôm qua bạn ngã ở cầu thang và bị thương ở tay. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: a9h, text: 어제 계단에서 넘어져서 손을 다쳤어요., lang: ko }
+        - { id: f6e, text: 어제 계단에서 넘어질 뻔해서 손을 다쳤어요., lang: ko }
+        - { id: n4x, text: 어제 계단에서 넘어져서 손이 다쳤어요., lang: ko }
+        - { id: y2b, text: 어제 계단에서 넘어지는 바람에 손을 다치세요., lang: ko }
+    answer:
+      correct_option_id: a9h
+    explanation:
+      vi: Ngã thật rồi nên dùng 넘어져서, không dùng 넘어질 뻔해서 (suýt ngã). Bộ phận bị thương đi với 을/를 - 손을 다쳤어요; 다치세요 là lời bảo, vô lý sau -는 바람에.
+    display_answer: 어제 계단에서 넘어져서 손을 다쳤어요.

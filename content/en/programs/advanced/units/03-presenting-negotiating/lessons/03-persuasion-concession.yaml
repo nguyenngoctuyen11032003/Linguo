@@ -1,0 +1,407 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:persuasion-concession
+order_index: 3
+level: c1
+title:
+  vi: Thuyết phục bằng nhượng bộ & trạng từ quan điểm
+objectives:
+  - vi: Thuyết phục bằng lập luận nhượng bộ - thừa nhận một điểm rồi phản bác với Admittedly…, Granted…, While it is true that…, That said….
+  - vi: Thể hiện mức độ chắc chắn bằng trạng từ quan điểm - undeniably, presumably, conceivably, There is no denying that….
+  - vi: Phân biệt actually (thật ra) với currently (hiện nay).
+estimated_minutes: 20
+skills: [speaking, writing, grammar, vocabulary]
+prerequisites: [en:lesson:rhetorical-devices]
+items:
+  - item: en:item:concession-structure
+  - item: en:item:admittedly
+  - item: en:item:granted
+  - item: en:item:while-it-is-true-that
+  - item: en:item:that-said
+  - item: en:item:stance-adverb
+  - item: en:item:undeniably
+  - item: en:item:conceivably
+  - item: en:item:presumably
+  - item: en:item:there-is-no-denying
+  - item: en:item:actually-currently
+  - item: en:item:i-take-your-point
+    role: reuse
+  - item: en:item:having-said-that
+    role: reuse
+  - item: en:item:arguably
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Người nghe dễ bị thuyết phục hơn khi thấy bạn công bằng - biết thừa nhận điểm mạnh của phía bên kia. Sau bài này, bạn biết "nhường một bước để tiến hai bước" và chọn đúng trạng từ để thể hiện mức độ chắc chắn.
+  - type: explain
+    text:
+      vi: Lập luận nhượng bộ có hai bước - (1) thừa nhận - Admittedly…, Granted…, There is no denying that…; (2) phản bác - However…, That said…, But…. Ý phản bác luôn đặt sau, vì người nghe nhớ ý cuối cùng.
+  - type: explain
+    text:
+      vi: While it is true that…, … gói cả hai bước vào một câu - giống "Tuy đúng là… nhưng…" của tiếng Việt, nhưng tiếng Anh không thêm but vào vế sau. I take your point, but… và That said… (dạng ngắn của Having said that) rất hợp khi tranh luận trực tiếp.
+  - type: explain
+    text:
+      vi: Trạng từ quan điểm cho biết bạn chắc chắn đến đâu - undeniably (không thể phủ nhận), presumably (chắc là, suy ra từ thông tin có sẵn), conceivably (có thể hình dung được, khả năng thấp), arguably (có thể cho rằng). Chọn sai mức độ sẽ khiến bạn nghe áp đặt hoặc thiếu tự tin.
+  - type: deep_explain
+    text:
+      vi: Actually trong tiếng Anh nghĩa là "thật ra" - dùng để sửa một hiểu lầm hoặc nói điều bất ngờ (It's actually quite cheap). Người Việt hay dùng actually với nghĩa "hiện tại" (We are actually working on…), khiến người nghe tưởng bạn đang đính chính điều gì. "Hiện nay" là currently hoặc at present.
+  - type: example
+    target: Admittedly, the new system has had some teething problems. That said, it has already cut processing time by half.
+    target_lang: en
+    translation:
+      vi: Phải thừa nhận là hệ thống mới gặp vài trục trặc ban đầu. Dù vậy, nó đã giảm một nửa thời gian xử lý.
+    note:
+      vi: Nhượng bộ trước (Admittedly), phản bác sau (That said) - ý tích cực đọng lại.
+  - type: example
+    target: While it is true that online courses are cheaper, they require a great deal of self-discipline.
+    target_lang: en
+    translation:
+      vi: Tuy đúng là các khoá học trực tuyến rẻ hơn, nhưng chúng đòi hỏi tính tự giác rất cao.
+    note:
+      vi: Tiếng Việt có "nhưng", tiếng Anh thì không - While đã đủ để nối hai vế.
+  - type: example
+    target: There is no denying that the city needs more housing. The question is where to build it.
+    target_lang: en
+    translation:
+      vi: Không thể phủ nhận rằng thành phố cần thêm nhà ở. Vấn đề là xây ở đâu.
+    note:
+      vi: Đồng ý với điều hiển nhiên trước, rồi chuyển sang điểm tranh cãi thật sự.
+  - type: example
+    target: The manager isn't answering - presumably she's still in the meeting. It could conceivably last until six.
+    target_lang: en
+    translation:
+      vi: Quản lý không nghe máy - chắc là chị ấy vẫn đang họp. Không loại trừ khả năng cuộc họp kéo dài đến sáu giờ.
+    note:
+      vi: Presumably - suy đoán có căn cứ; conceivably - một khả năng có thể nhưng không chắc.
+  - type: common_mistake
+    wrong: While it is true that the plan is risky, but the rewards are huge.
+    right: While it is true that the plan is risky, the rewards are huge.
+    target_lang: en
+    note:
+      vi: Giống lỗi "Although… but", không dùng but sau mệnh đề While.
+  - type: common_mistake
+    wrong: Actually, our company has 200 employees and is expanding.
+    right: Currently, our company has 200 employees and is expanding.
+    target_lang: en
+    note:
+      vi: Muốn nói "hiện nay" thì dùng currently/at present. Actually ở đầu câu nghe như bạn đang sửa lời ai đó.
+  - type: common_mistake
+    wrong: There is no deny that prices are rising.
+    right: There is no denying that prices are rising.
+    target_lang: en
+    note:
+      vi: Sau There is no dùng V-ing - no denying.
+  - type: summary
+    points:
+      - vi: Nhượng bộ rồi phản bác - Admittedly / Granted / There is no denying that… + However / That said / But….
+      - vi: While it is true that X, Y - không thêm but vào vế Y.
+      - vi: Đối thoại trực tiếp - I take your point, but…; That said = Having said that.
+      - vi: Mức độ chắc chắn - undeniably (rõ ràng) > presumably (chắc là) > conceivably (có thể hình dung).
+      - vi: actually = thật ra; currently / at present = hiện nay.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:concession-mcq-order
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:concession-structure
+    prompt:
+      stem: Bạn ỦNG HỘ việc mở văn phòng mới. Cách sắp xếp nào thuyết phục nhất?
+      stem_lang: vi
+      options:
+        - { id: y2f, text: "Admittedly, the new office will be expensive. However, it will bring us closer to our biggest clients.", lang: en }
+        - { id: h7b, text: "The new office will bring us closer to our biggest clients. However, admittedly, it will be very expensive.", lang: en }
+        - { id: e4m, text: "Admittedly, the new office will be expensive, and it is far from our clients.", lang: en }
+        - { id: v9c, text: "The new office will be expensive. Admittedly.", lang: en }
+    answer:
+      correct_option_id: y2f
+    explanation:
+      vi: Nhượng bộ (chi phí) trước, ý ủng hộ (gần khách hàng) sau, nên người nghe nhớ điểm có lợi. Đảo thứ tự làm ý tiêu cực đọng lại; hai phương án còn lại không có ý phản bác.
+    display_answer: "Admittedly, the new office will be expensive. However, it will bring us closer to our biggest clients."
+
+  - key: en:exercise:concession-listen-that-said
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:that-said
+    prompt:
+      audio_asset_id: null
+      fallback_text: "The pilot was far from perfect. That said, the feedback from users was overwhelmingly positive."
+      options:
+        - { id: p5k, text: "Bản thử nghiệm chưa hoàn hảo, nhưng phản hồi của người dùng rất tích cực.", lang: vi }
+        - { id: a8w, text: "Bản thử nghiệm hoàn hảo, và người dùng nói đúng như vậy.", lang: vi }
+        - { id: j3r, text: "Bản thử nghiệm tệ, và người dùng phản hồi rất tiêu cực.", lang: vi }
+        - { id: n6d, text: "Người dùng đã nói rằng bản thử nghiệm ở rất xa.", lang: vi }
+    answer:
+      correct_option_id: p5k
+    explanation:
+      vi: Far from perfect = còn lâu mới hoàn hảo (nhượng bộ). That said = dù vậy, mở ra ý tích cực ngược lại. Said ở đây không có nghĩa "người dùng nói".
+    display_answer: "Bản thử nghiệm chưa hoàn hảo, nhưng phản hồi của người dùng rất tích cực."
+
+  - key: en:exercise:concession-mcq-currently
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:actually-currently
+    prompt:
+      stem: "Chọn từ đúng: \"We are ___ recruiting three software engineers, so the team will grow next month.\" (ý: hiện nay)"
+      stem_lang: vi
+      options:
+        - { id: b6v, text: currently, lang: en }
+        - { id: r1x, text: actually, lang: en }
+        - { id: m4q, text: actual, lang: en }
+        - { id: s8t, text: lately, lang: en }
+    answer:
+      correct_option_id: b6v
+    explanation:
+      vi: Currently = hiện nay, hợp với thì hiện tại tiếp diễn. Actually = thật ra (dùng để đính chính); actual là tính từ; lately (gần đây) thường đi với thì hiện tại hoàn thành.
+    display_answer: currently
+
+  - key: en:exercise:concession-fill-while-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:while-it-is-true-that
+    prompt:
+      template: "While it is {{b1}} that the course is expensive, the benefits are clear. That {{b2}}, not everyone can afford it."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tuy đúng là khoá học đắt, nhưng lợi ích thì rõ ràng. Dù vậy, không phải ai cũng chi trả được."
+        - "Gợi ý: ô 1 là tính từ \"đúng\"; ô 2 là quá khứ phân từ của say."
+    answer:
+      blanks:
+        b1: ["true"]
+        b2: [said]
+    known_wrong:
+      - answer: right
+        feedback_vi: Cụm cố định là While it is true that…; right ít dùng trong cấu trúc này.
+        error_tag: collocation
+      - answer: saying
+        feedback_vi: Dạng ngắn là That said (quá khứ phân từ), hoặc dạng dài Having said that.
+        error_tag: that_said
+      - answer: say
+        feedback_vi: Dùng quá khứ phân từ - That said.
+        error_tag: that_said
+    explanation:
+      vi: While it is true that… nhượng bộ trong cùng một câu. That said là dạng rút gọn của Having said that, mở đầu ý ngược lại.
+    display_answer: While it is true that the course is expensive, the benefits are clear. That said, not everyone can afford it.
+
+  - key: en:exercise:concession-mcq-stance
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:stance-adverb
+    prompt:
+      stem: "\"The results are ___ impressive - even our critics have praised them.\" Trạng từ nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: w3z, text: undeniably, lang: en }
+        - { id: k7e, text: conceivably, lang: en }
+        - { id: d1u, text: presumably, lang: en }
+        - { id: f5i, text: actually not, lang: en }
+    answer:
+      correct_option_id: w3z
+    explanation:
+      vi: Ngay cả người chỉ trích cũng khen nên kết quả "không thể phủ nhận" là ấn tượng - undeniably. Conceivably (có thể hình dung) và presumably (chắc là) quá yếu so với bằng chứng; actually not mâu thuẫn ý câu.
+    display_answer: undeniably
+
+  # ---------------- recall ----------------
+  - key: en:exercise:concession-fill-stance
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:presumably
+    prompt:
+      template: "The director hasn't replied; {{b1}} she's still on the plane. There is no {{b2}} that the deal matters to her. We are {{b3}} preparing a backup plan, just in case."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [presumably, probably]
+        b2: [denying, doubt]
+        b3: [currently, now]
+    known_wrong:
+      - answer: actually
+        feedback_vi: Actually là "thật ra", không mang nghĩa "hiện nay"; dùng currently.
+        error_tag: actually_currently
+      - answer: deny
+        feedback_vi: Sau There is no dùng V-ing - no denying.
+        error_tag: verb_form
+      - answer: undeniably
+        feedback_vi: Ta chỉ đoán cô ấy còn trên máy bay, chưa chắc chắn; undeniably quá mạnh.
+        error_tag: stance_adverb
+    explanation:
+      vi: Presumably - suy đoán có căn cứ (chưa trả lời nên chắc là còn trên máy bay). There is no denying/doubt that… khẳng định điều hiển nhiên. Currently - hiện nay, không phải actually.
+    display_answer: The director hasn't replied; presumably she's still on the plane. There is no denying that the deal matters to her. We are currently preparing a backup plan, just in case.
+
+  - key: en:exercise:concession-translate-admittedly
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:admittedly
+    prompt:
+      source_text: Phải thừa nhận là giải pháp này tốn kém, nhưng về lâu dài nó sẽ giúp tiết kiệm tiền.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Admittedly, this solution is expensive, but it will save money in the long run.
+        - Admittedly, this solution is expensive, but in the long run it will save money.
+        - Admittedly, this solution is costly, but it will save money in the long run.
+        - Admittedly, this solution is costly, but in the long run it will save money.
+        - Admittedly, this solution is expensive, but it will save us money in the long run.
+        - Admittedly, this solution is costly, but it will save us money in the long run.
+        - Admittedly, this solution is expensive, but it will save money in the long term.
+        - Admittedly, the solution is expensive, but it will save money in the long run.
+        - Admittedly, this solution is expensive. However, it will save money in the long run.
+        - Admittedly this solution is expensive, but it will save money in the long run.
+        - Admittedly, this solution is expensive, but it'll save money in the long run.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Admittedly, this solution is expensive.
+        feedback_vi: Còn thiếu vế phản bác - Admittedly luôn đi với một ý đối lập phía sau.
+        error_tag: incomplete
+      - answer: Admitted, this solution is expensive, but it will save money in the long run.
+        feedback_vi: Cần trạng từ admittedly, không phải admitted.
+        error_tag: word_form
+    explanation:
+      vi: Admittedly mở đầu phần nhượng bộ, but/however mở phần phản bác. In the long run = về lâu dài.
+    display_answer: Admittedly, this solution is expensive, but it will save money in the long run.
+
+  - key: en:exercise:concession-translate-to-vi-while
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:while-it-is-true-that
+    prompt:
+      source_text: While it is true that prices have risen, wages have risen even faster.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuy đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Tuy đúng là giá cả đã tăng nhưng tiền lương còn tăng nhanh hơn.
+        - Đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Đúng là giá cả đã tăng, nhưng tiền lương thậm chí còn tăng nhanh hơn.
+        - Dù đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.
+        - Mặc dù đúng là giá cả đã tăng, lương còn tăng nhanh hơn.
+        - Tuy giá cả có tăng thật, nhưng lương còn tăng nhanh hơn.
+        - Đúng là giá đã tăng, nhưng lương còn tăng nhanh hơn nữa.
+        - Tuy đúng là giá cả tăng lên, nhưng tiền lương còn tăng nhanh hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trong khi giá cả tăng thì lương tăng nhanh hơn.
+        feedback_vi: While ở đây là nhượng bộ ("tuy… nhưng…"), không phải "trong khi" chỉ thời gian.
+        error_tag: while_meaning
+      - answer: Tuy đúng là giá cả đã tăng, nhưng lương tăng chậm hơn.
+        feedback_vi: Even faster là "còn nhanh hơn", không phải chậm hơn.
+        error_tag: meaning
+    explanation:
+      vi: While it is true that… = "Tuy đúng là…". Tiếng Việt cần "nhưng" ở vế sau, còn tiếng Anh thì không - đây là chỗ khác biệt hai ngôn ngữ.
+    display_answer: Tuy đúng là giá cả đã tăng, nhưng lương còn tăng nhanh hơn.
+
+  # ---------------- application ----------------
+  - key: en:exercise:concession-order-take-your-point
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:i-take-your-point
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi hiểu ý anh, nhưng bằng chứng lại cho thấy điều ngược lại.\""
+      tokens:
+        - { id: p-but, text: but }
+        - { id: p-suggests, text: suggests otherwise }
+        - { id: p-take, text: I take }
+        - { id: p-about, text: about }
+        - { id: p-evidence, text: the evidence }
+        - { id: p-point, text: your point, }
+    answer:
+      orders:
+        - [p-take, p-point, p-but, p-evidence, p-suggests]
+    explanation:
+      vi: I take your point, but… ghi nhận ý người kia rồi phản bác lịch sự. Suggest otherwise = cho thấy điều ngược lại. About là token thừa - take your point không đi với about.
+    display_answer: I take your point, but the evidence suggests otherwise.
+
+  - key: en:exercise:concession-mcq-granted
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:granted
+    prompt:
+      stem: "Đồng nghiệp nói: \"Launching in December is too risky.\" Bạn muốn thừa nhận một phần nhưng vẫn bảo vệ kế hoạch. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: c2n, text: "Granted, there are risks. That said, waiting until spring would mean losing the holiday market.", lang: en }
+        - { id: x6g, text: "You are wrong. December is not risky.", lang: en }
+        - { id: l9p, text: "Granted, there are risks, so we should probably wait until spring.", lang: en }
+        - { id: o3s, text: "Actually, we are launching in December now.", lang: en }
+    answer:
+      correct_option_id: c2n
+    explanation:
+      vi: Granted thừa nhận rủi ro, That said chuyển sang lý do bảo vệ kế hoạch. You are wrong quá thẳng và thiếu lý lẽ; phương án thứ ba lại đồng ý hoàn toàn; câu cuối dùng actually sai nghĩa và không trả lời phản biện.
+    display_answer: "Granted, there are risks. That said, waiting until spring would mean losing the holiday market."
+
+  - key: en:exercise:concession-translate-no-denying
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:there-is-no-denying
+    prompt:
+      source_text: Không thể phủ nhận rằng mạng xã hội có ảnh hưởng lớn đến giới trẻ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - There is no denying that social media has a big influence on young people.
+        - There's no denying that social media has a big influence on young people.
+        - There is no denying that social media has a huge influence on young people.
+        - There is no denying that social media has a great influence on young people.
+        - There is no denying that social media has a major influence on young people.
+        - There is no denying that social media has a significant influence on young people.
+        - There is no denying that social media has a big impact on young people.
+        - There is no denying that social media has a huge impact on young people.
+        - There is no denying that social media has a major impact on young people.
+        - There is no denying that social media has a significant impact on young people.
+        - There's no denying that social media has a huge impact on young people.
+        - There is no denying that social media has a strong influence on young people.
+        - There is no denying that social media greatly influences young people.
+        - Undeniably, social media has a big influence on young people.
+        - Undeniably, social media has a huge impact on young people.
+        - There is no denying that social media has a big influence on the youth.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: There is no deny that social media has a big influence on young people.
+        feedback_vi: Sau There is no dùng V-ing - no denying.
+        error_tag: verb_form
+      - answer: There is no denying that social media has a big influence to young people.
+        feedback_vi: Influence/impact đi với on - an influence on young people.
+        error_tag: preposition
+      - answer: Can't deny social media has a big influence on young people.
+        feedback_vi: Câu tiếng Anh cần chủ ngữ; dùng There is no denying that… hoặc You can't deny that….
+        error_tag: missing_subject
+    explanation:
+      vi: There is no denying that… = Không thể phủ nhận rằng…; sau no là V-ing. Have an influence/impact on + người/vật.
+    display_answer: There is no denying that social media has a big influence on young people.

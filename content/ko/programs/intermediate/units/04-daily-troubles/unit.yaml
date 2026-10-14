@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:unit:daily-troubles
+order_index: 4
+title:
+  vi: Sự cố thường ngày & cảm xúc

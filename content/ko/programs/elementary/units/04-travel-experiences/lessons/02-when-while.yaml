@@ -1,0 +1,424 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:when-while-sightseeing
+order_index: 2
+level: topik2
+title:
+  vi: Khi đi tham quan - V-(으)ㄹ 때 & V-(으)면서
+objectives:
+  - vi: Nói "khi…" bằng V/A-(으)ㄹ 때, N 때 và phân biệt với V-았/었을 때 (khi việc đã xảy ra).
+  - vi: Nói hai việc cùng lúc của một người bằng V-(으)면서.
+  - vi: Dùng từ vựng tham quan - 관광지, 구경하다, 경치, 기념품, 산, 바다, 박물관, 아름답다.
+estimated_minutes: 17
+skills: [grammar, vocabulary, listening, writing]
+prerequisites: [ko:lesson:before-after-travel]
+items:
+  - item: ko:item:gram-eul-ttae
+  - item: ko:item:gram-asseul-ttae
+  - item: ko:item:gram-noun-ttae
+  - item: ko:item:gram-eumyeonseo
+  - item: ko:item:gwangwangji
+  - item: ko:item:gugyeonghada
+  - item: ko:item:gyeongchi
+  - item: ko:item:ginyeompum
+  - item: ko:item:san
+  - item: ko:item:areumdapda
+  - item: ko:item:bangmulgwan
+  - item: ko:item:bada
+    role: reuse
+  - item: ko:item:sajin-jjikda
+    role: reuse
+  - item: ko:item:yumyeonghada
+    role: reuse
+  - item: ko:item:gram-b-irregular
+    role: reuse
+  - item: ko:item:gram-go-and
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được mình đã làm gì ở nơi du lịch - ngắm cảnh, chụp ảnh, mua quà - và chuyện gì xảy ra "khi" bạn ở đó.
+  - type: explain
+    text:
+      vi: V/A-(으)ㄹ 때 là "khi, lúc" - 갈 때, 먹을 때, 놀 때 (gốc ㄹ chỉ thêm 때). Với danh từ chỉ dịp, dùng thẳng N 때 - 방학 때, 휴가 때, 점심 때.
+  - type: explain
+    text:
+      vi: Khi việc đó đã xảy ra xong rồi mới có việc sau, dùng V-았/었을 때 - 제주도에 갔을 때 (khi đã đến Jeju, lúc ở Jeju). So sánh - 비행기를 탈 때 (lúc đang lên máy bay) và 비행기를 탔을 때 (khi đã lên máy bay rồi).
+  - type: explain
+    text:
+      vi: V-(으)면서 là "vừa… vừa…" - một người làm hai việc cùng lúc. Không patchim / gốc ㄹ + 면서 (마시면서), có patchim + 으면서 (찍으면서); thì đặt ở động từ cuối.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt chỉ có một chữ "khi", nên người Việt hay dùng -(으)ㄹ 때 cho mọi trường hợp. Hãy tự hỏi - việc trong vế "khi" đã xong chưa? Đã đến nơi, đã gặp, đã ăn xong → -았/었을 때; đang diễn ra, chưa xong → -(으)ㄹ 때. Với -(으)면서, chủ ngữ của hai việc phải là một; nếu hai người làm hai việc, hãy nối bằng -고 - 저는 운전하고 친구는 노래했어요.
+  - type: example
+    target: 비행기를 탈 때 여권을 보여 줘야 해요.
+    target_lang: ko
+    translation:
+      vi: Khi lên máy bay phải xuất trình hộ chiếu.
+    note:
+      vi: Việc lên máy bay đang diễn ra → 탈 때.
+  - type: example
+    target: 제주도에 갔을 때 바다에서 수영했어요.
+    target_lang: ko
+    translation:
+      vi: Hồi đi Jeju, tôi đã bơi ở biển.
+    note:
+      vi: Đã đến Jeju rồi mới bơi → 갔을 때.
+  - type: example
+    target: 커피를 마시면서 바다를 구경했어요. 경치가 정말 아름다웠어요.
+    target_lang: ko
+    translation:
+      vi: Tôi vừa uống cà phê vừa ngắm biển. Phong cảnh đẹp thật sự.
+    note:
+      vi: Cùng một người làm hai việc; 아름답다 bất quy tắc ㅂ → 아름다웠어요.
+  - type: example
+    target: 비가 올 때는 박물관을 구경하고 기념품을 샀어요.
+    target_lang: ko
+    translation:
+      vi: Lúc trời mưa, chúng tôi tham quan bảo tàng và mua quà lưu niệm.
+    note:
+      vi: 때는 nhấn mạnh "riêng lúc đó"; 박물관 đọc [방물관].
+  - type: example
+    target: 휴가 때 산에 가서 사진을 많이 찍었어요.
+    target_lang: ko
+    translation:
+      vi: Kỳ nghỉ phép tôi lên núi và chụp rất nhiều ảnh.
+    note:
+      vi: N 때 - không cần -(으)ㄹ vì 휴가 là danh từ.
+  - type: common_mistake
+    wrong: 제주도에 갈 때 바다에서 수영했어요.
+    right: 제주도에 갔을 때 바다에서 수영했어요.
+    target_lang: ko
+    note:
+      vi: 갈 때 là lúc đang trên đường đi, nên câu nghe như bạn bơi trên đường tới Jeju. Bạn bơi khi đã ở Jeju, nên dùng 갔을 때.
+  - type: common_mistake
+    wrong: 제가 운전하면서 친구가 노래했어요.
+    right: 제가 운전하고 친구는 노래했어요.
+    target_lang: ko
+    note:
+      vi: -(으)면서 chỉ dùng khi cùng một người làm hai việc. Hai người, hai việc thì nối bằng -고 (hoặc nói 제가 운전할 때 친구가 노래했어요).
+  - type: common_mistake
+    wrong: 경치가 정말 아름답었어요.
+    right: 경치가 정말 아름다웠어요.
+    target_lang: ko
+    note:
+      vi: 아름답다 bất quy tắc ㅂ giống 덥다 - ㅂ đổi thành 우 rồi ghép 었 → 아름다웠어요.
+  - type: summary
+    points:
+      - vi: V/A-(으)ㄹ 때 = khi, lúc (đang diễn ra) - 탈 때, 먹을 때; N 때 - 방학 때, 휴가 때.
+      - vi: V-았/었을 때 = khi việc đã xảy ra - 갔을 때, 도착했을 때.
+      - vi: V-(으)면서 = vừa… vừa… (cùng một người) - 마시면서, 찍으면서.
+      - vi: 관광지 · 구경하다 · 경치 · 기념품 · 산 · 바다 · 박물관 [방물관] · 아름다워요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:when-while-sightseeing-listen-jeju
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-asseul-ttae
+    prompt:
+      audio_asset_id: null
+      fallback_text: 제주도에 갔을 때 바다에서 수영했어요.
+      options:
+        - { id: f3u, text: "Hồi đi Jeju, tôi đã bơi ở biển.", lang: vi }
+        - { id: x8a, text: "Trước khi đi Jeju, tôi đã bơi ở biển.", lang: vi }
+        - { id: n5e, text: "Hồi đi Jeju, tôi đã leo núi.", lang: vi }
+        - { id: v1o, text: "Khi đi Jeju, tôi sẽ ngắm biển.", lang: vi }
+    answer:
+      correct_option_id: f3u
+    explanation:
+      vi: 갔을 때 = khi đã đến (hồi đi); 바다에서 수영했어요 = đã bơi ở biển. "Trước khi" là 가기 전에, leo núi là 등산하다, "sẽ" cần đuôi tương lai.
+    display_answer: "Hồi đi Jeju, tôi đã bơi ở biển."
+
+  - key: ko:exercise:when-while-sightseeing-mcq-souvenir
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ginyeompum
+    prompt:
+      stem: Từ nào có nghĩa là "quà lưu niệm"?
+      stem_lang: vi
+      options:
+        - { id: a2y, text: 기념품, lang: ko }
+        - { id: j6q, text: 관광지, lang: ko }
+        - { id: u9h, text: 경치, lang: ko }
+        - { id: o4m, text: 박물관, lang: ko }
+    answer:
+      correct_option_id: a2y
+    explanation:
+      vi: 기념품 = quà lưu niệm. 관광지 là điểm du lịch, 경치 là phong cảnh, 박물관 là bảo tàng.
+    display_answer: 기념품
+
+  - key: ko:exercise:when-while-sightseeing-mcq-masimyeonseo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eumyeonseo
+    prompt:
+      stem: "Chọn dạng đúng: 커피를 ___ 친구하고 이야기했어요. (vừa uống cà phê vừa nói chuyện)"
+      stem_lang: vi
+      options:
+        - { id: w7k, text: 마시면서, lang: ko }
+        - { id: i3c, text: 마시으면서, lang: ko }
+        - { id: e8z, text: 마실면서, lang: ko }
+        - { id: t2b, text: 마시고면서, lang: ko }
+    answer:
+      correct_option_id: w7k
+    explanation:
+      vi: 마시다 không có patchim nên chỉ thêm 면서 - 마시면서. 으면서 dành cho gốc có patchim (먹으면서); 마실면서, 마시고면서 không tồn tại.
+    display_answer: 마시면서
+
+  - key: ko:exercise:when-while-sightseeing-fill-tal-ttae
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-ttae
+    prompt:
+      template: "비행기를 {{b1}} 때 여권을 보여 줘야 해요."
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa của câu: Khi lên máy bay phải xuất trình hộ chiếu."
+        - "Gợi ý: 타다 + -(으)ㄹ 때 (gốc không có patchim)."
+    answer:
+      blanks:
+        b1: [탈]
+    known_wrong:
+      - answer: 타을
+        feedback_vi: 타 không có patchim nên chỉ thêm ㄹ - 탈 때; 을 dành cho gốc có patchim.
+        error_tag: eul_ttae_form
+      - answer: 타는
+        feedback_vi: '"Khi" dùng -(으)ㄹ 때, không dùng -는 때.'
+        error_tag: eul_ttae_form
+      - answer: 타기
+        feedback_vi: -기 đi với 전에 ("trước khi"). "Khi" là 탈 때.
+        error_tag: eul_ttae_form
+    explanation:
+      vi: 타다 không có patchim → 탈 때 (khi lên). Việc xuất trình hộ chiếu diễn ra ngay lúc đang lên máy bay, nên không dùng 탔을 때.
+    display_answer: 비행기를 탈 때 여권을 보여 줘야 해요.
+
+  - key: ko:exercise:when-while-sightseeing-wb-photo
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gugyeonghada
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Chúng tôi vừa chụp ảnh vừa dạo xem chợ.\""'
+      tokens:
+        - { id: p3, text: 시장을 }
+        - { id: p2, text: 찍으면서 }
+        - { id: p5, text: 찍면서 }
+        - { id: p4, text: 구경했어요 }
+        - { id: p1, text: 사진을 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: 찍다 có patchim nên thêm 으면서 - 찍으면서. Vế "vừa chụp ảnh" đứng trước, 시장을 구경했어요 ở cuối.
+    display_answer: 사진을 찍으면서 시장을 구경했어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:when-while-sightseeing-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-asseul-ttae
+    prompt:
+      template: "(Lúc tôi đến sân bay thì trời mưa.) 공항에 {{b1}} 때 비가 왔어요. (Tôi vừa ngắm biển vừa uống cà phê.) 바다를 {{b2}} 커피를 마셨어요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [도착했을]
+        b2: [보면서, 구경하면서]
+    known_wrong:
+      - answer: 도착할
+        feedback_vi: Đã đến nơi rồi trời mới mưa, nên dùng -았/었을 때 - 도착했을 때.
+        error_tag: asseul_ttae
+      - answer: 도착한
+        feedback_vi: '"Khi" không dùng 도착한 때; hãy dùng 도착했을 때.'
+        error_tag: eul_ttae_form
+      - answer: 보고
+        feedback_vi: -고 là làm xong việc này rồi mới làm việc kia. "Vừa… vừa…" dùng -(으)면서 - 보면서.
+        error_tag: myeonseo_go
+    explanation:
+      vi: Đến nơi xong rồi trời mưa → 도착했을 때. Hai việc cùng lúc của một người → 보면서 / 구경하면서; thì quá khứ nằm ở 마셨어요.
+    display_answer: 공항에 도착했을 때 비가 왔어요. 바다를 보면서 커피를 마셨어요.
+
+  - key: ko:exercise:when-while-sightseeing-translate-coffee
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eumyeonseo
+    prompt:
+      source_text: Tôi đã vừa uống cà phê vừa ngắm biển.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 커피를 마시면서 바다를 구경했어요.
+        - 커피를 마시면서 바다를 봤어요.
+        - 저는 커피를 마시면서 바다를 구경했어요.
+        - 저는 커피를 마시면서 바다를 봤어요.
+        - 커피 마시면서 바다를 구경했어요.
+        - 커피 마시면서 바다를 봤어요.
+        - 바다를 구경하면서 커피를 마셨어요.
+        - 바다를 보면서 커피를 마셨어요.
+        - 저는 바다를 보면서 커피를 마셨어요.
+    known_wrong:
+      - answer: 커피를 마시고 바다를 구경했어요.
+        feedback_vi: -고 là làm lần lượt. "Vừa… vừa…" cùng lúc dùng -(으)면서.
+        error_tag: myeonseo_go
+      - answer: 커피를 마셨면서 바다를 구경했어요.
+        feedback_vi: -(으)면서 gắn vào gốc, không chia quá khứ; quá khứ nằm ở 구경했어요.
+        error_tag: myeonseo_tense
+      - answer: 커피를 마시면서 바다를 구경해요.
+        feedback_vi: Câu gốc là "đã", nên động từ cuối ở quá khứ - 구경했어요.
+        error_tag: past_tense
+    explanation:
+      vi: Một người làm hai việc cùng lúc - V-(으)면서; 마시다 không có patchim → 마시면서. Thì quá khứ đặt ở động từ cuối - 구경했어요 / 봤어요.
+    display_answer: 커피를 마시면서 바다를 구경했어요.
+
+  - key: ko:exercise:when-while-sightseeing-translate-photos
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-asseul-ttae
+    prompt:
+      source_text: Hồi đi Jeju, tôi đã chụp nhiều ảnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제주도에 갔을 때 사진을 많이 찍었어요.
+        - 저는 제주도에 갔을 때 사진을 많이 찍었어요.
+        - 제주도에 갔을 때 저는 사진을 많이 찍었어요.
+        - 제주도에 여행 갔을 때 사진을 많이 찍었어요.
+        - 제주도에 여행을 갔을 때 사진을 많이 찍었어요.
+        - 제주도 여행을 갔을 때 사진을 많이 찍었어요.
+        - 제주도에 갔을 때 많은 사진을 찍었어요.
+        - 제주도에 갔을 때 사진 많이 찍었어요.
+    known_wrong:
+      - answer: 제주도에 갈 때 사진을 많이 찍었어요.
+        feedback_vi: 갈 때 là lúc đang trên đường đi. Bạn chụp ảnh khi đã ở Jeju → 갔을 때.
+        error_tag: asseul_ttae
+      - answer: 제주도에 갔을 때 사진을 많이 찍어요.
+        feedback_vi: '"Đã chụp" là quá khứ - 찍었어요.'
+        error_tag: past_tense
+      - answer: 제주도를 갔을 때 사진을 많이 찍었어요.
+        feedback_vi: Nơi đến dùng 에 - 제주도에 가다.
+        error_tag: particle_e_destination
+    explanation:
+      vi: Đã đến Jeju rồi mới chụp ảnh → 갔을 때. "Chụp nhiều ảnh" = 사진을 많이 찍었어요; 많이 đứng trước động từ.
+    display_answer: 제주도에 갔을 때 사진을 많이 찍었어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:when-while-sightseeing-mcq-scenery
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:areumdapda
+    prompt:
+      stem: '"Bạn của bạn hỏi: 설악산 여행 어땠어요? Bạn muốn nói \"Phong cảnh đẹp thật sự.\" Câu nào đúng?"'
+      stem_lang: vi
+      options:
+        - { id: c5r, text: 경치가 정말 아름다웠어요., lang: ko }
+        - { id: g1w, text: 경치가 정말 아름답었어요., lang: ko }
+        - { id: m8t, text: 경치를 정말 아름다웠어요., lang: ko }
+        - { id: y4p, text: 경치가 정말 아름다울 때요., lang: ko }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: 아름답다 bất quy tắc ㅂ → 아름다웠어요; chủ ngữ của tính từ dùng 이/가 - 경치가. 아름답었어요 sai bất quy tắc, 경치를 sai trợ từ, còn 아름다울 때요 là "lúc đẹp" - không trả lời câu hỏi.
+    display_answer: 경치가 정말 아름다웠어요.
+
+  - key: ko:exercise:when-while-sightseeing-mcq-two-people
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-eumyeonseo
+    prompt:
+      stem: '"Bạn kể về chuyến đi: \"Tôi lái xe, còn bạn tôi hát.\" Câu nào đúng?"'
+      stem_lang: vi
+      options:
+        - { id: k2d, text: 제가 운전하고 친구는 노래했어요., lang: ko }
+        - { id: r9v, text: 제가 운전하면서 친구는 노래했어요., lang: ko }
+        - { id: h6s, text: 제가 운전하기 전에 친구는 노래했어요., lang: ko }
+        - { id: z3n, text: 제가 운전했으면서 친구는 노래했어요., lang: ko }
+    answer:
+      correct_option_id: k2d
+    explanation:
+      vi: Hai người làm hai việc nên nối bằng -고. -(으)면서 chỉ dùng khi cùng một người làm hai việc; -기 전에 là "trước khi", sai nghĩa.
+    display_answer: 제가 운전하고 친구는 노래했어요.
+
+  - key: ko:exercise:when-while-sightseeing-translate-museum-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:bangmulgwan
+    prompt:
+      source_text: 비가 올 때는 박물관을 구경해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi trời mưa thì tôi đi tham quan bảo tàng.
+        - Khi trời mưa thì đi tham quan bảo tàng.
+        - Khi trời mưa, tôi tham quan bảo tàng.
+        - Lúc trời mưa thì tôi đi tham quan bảo tàng.
+        - Lúc trời mưa thì đi tham quan bảo tàng.
+        - Lúc trời mưa, tôi tham quan bảo tàng.
+        - Khi mưa thì tôi đi xem bảo tàng.
+        - Khi trời mưa thì tôi đi xem bảo tàng.
+        - Trời mưa thì tôi đi tham quan bảo tàng.
+        - Những lúc trời mưa, tôi đi tham quan bảo tàng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi trời mưa thì tôi đi xem phim.
+        feedback_vi: 박물관 [방물관] là bảo tàng, không phải rạp phim (영화관).
+        error_tag: vocab_bangmulgwan
+      - answer: Trước khi trời mưa thì tôi đi tham quan bảo tàng.
+        feedback_vi: 올 때 là "khi (trời mưa)"; "trước khi" là 오기 전에.
+        error_tag: eul_ttae_meaning
+    explanation:
+      vi: 비가 올 때 = khi trời mưa (때는 nhấn mạnh "những lúc đó"); 박물관을 구경해요 = tham quan bảo tàng.
+    display_answer: Khi trời mưa thì tôi đi tham quan bảo tàng.
+
+  - key: ko:exercise:when-while-sightseeing-wb-gwangwangji
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gwangwangji
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Ở Jeju có nhiều điểm du lịch nổi tiếng.\""'
+      tokens:
+        - { id: g3, text: 관광지가 }
+        - { id: g4, text: 많아요 }
+        - { id: g1, text: 제주도에는 }
+        - { id: g5, text: 관광지를 }
+        - { id: g2, text: 유명한 }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+        - [g2, g3, g1, g4]
+    explanation:
+      vi: N이/가 많아요 = có nhiều N, nên dùng 관광지가 (không dùng 를). 유명한 đứng ngay trước danh từ nó bổ nghĩa.
+    display_answer: 제주도에는 유명한 관광지가 많아요.

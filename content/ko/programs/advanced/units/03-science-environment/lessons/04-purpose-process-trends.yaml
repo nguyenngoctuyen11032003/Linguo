@@ -1,0 +1,411 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:purpose-process-trends
+order_index: 4
+level: topik5
+title:
+  vi: Mục đích, quy trình và xu hướng - văn bài giảng và báo cáo
+objectives:
+  - vi: Nói mục đích trang trọng bằng -기 위한 N và -고자 하다 (mở đầu bài giảng, báo cáo nghiên cứu).
+  - vi: Mô tả xu hướng bằng -는 추세이다 và lan rộng bằng 확산되다.
+  - vi: Mô tả một quy trình theo bước - 과정, 단계, 거치다, 먼저 … 그다음 … 마지막으로.
+estimated_minutes: 22
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:cause-effect-written]
+items:
+  - item: ko:item:gp-gi-wihan
+  - item: ko:item:gp-goja-hada
+  - item: ko:item:gp-neun-chuseida
+  - item: ko:item:gwajeong
+  - item: ko:item:dangye
+  - item: ko:item:geochida
+  - item: ko:item:dojiphada
+  - item: ko:item:hwaksandoeda
+  - item: ko:item:hyeonsang
+  - item: ko:item:process-connectives
+  - item: ko:item:gram-gi-wihaeseo
+    role: reuse
+  - item: ko:item:tanso-jungnip
+    role: reuse
+  - item: ko:item:ilhoeyongpum
+    role: reuse
+  - item: ko:item:gp-written-passive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu được phần mở đầu một bài giảng khoa học, đọc được đoạn mô tả quy trình kiểu TOPIK, và viết câu nêu mục đích, xu hướng bằng văn trang trọng.
+  - type: explain
+    text:
+      vi: -기 위해서 (để) đứng trước động từ; khi đứng trước danh từ, nó đổi thành -기 위한 - 탄소를 줄이기 위한 정책 (chính sách nhằm giảm carbon). Tiếng Việt đặt mục đích sau danh từ, tiếng Hàn đặt trước.
+  - type: explain
+    text:
+      vi: -고자 하다 là "muốn, nhằm" ở mức trang trọng, dùng thay -(으)려고 하다 trong bài giảng, báo cáo - 말씀드리고자 합니다, 분석하고자 한다. Dạng nối -고자 cũng mang nghĩa "nhằm" - 문제를 해결하고자 법을 만들었다.
+  - type: explain
+    text:
+      vi: -는 추세이다 là "đang có xu hướng", mô tả một thay đổi đang diễn ra; đi với động từ thay đổi (늘어나다, 줄어들다, 증가하다). Danh từ Hán Hàn có thể gắn thẳng - 증가 추세, 감소 추세이다.
+  - type: deep_explain
+    text:
+      vi: Đoạn mô tả quy trình trong đọc hiểu TOPIK thường mở bằng N은/는 세 단계를 거친다 hoặc N 과정은 다음과 같다, rồi liệt kê bằng 먼저 → 그다음 → 마지막으로. Câu hỏi hay hỏi thứ tự hoặc chi tiết của một bước, nên bạn hãy đánh dấu từng từ nối khi đọc. Bài giảng mở đầu theo khung - 오늘은 N에 대해 말씀드리고자 합니다 → 먼저 … 살펴보고 → 이어서 … 알아보겠습니다.
+  - type: example
+    target: 안녕하십니까. 오늘은 탄소 중립을 위한 국가 전략에 대해 말씀드리고자 합니다. 먼저 현재 배출 현황을 살펴보고, 이어서 각 단계별 목표를 알아보겠습니다.
+    target_lang: ko
+    translation:
+      vi: Xin chào quý vị. Hôm nay tôi xin trình bày về chiến lược quốc gia hướng tới trung hoà carbon. Trước tiên chúng ta xem xét tình hình phát thải hiện nay, tiếp theo tìm hiểu mục tiêu của từng giai đoạn.
+    note:
+      vi: Mở đầu bài giảng - 합쇼체, -고자 합니다, N을 위한 N, 먼저 … 이어서.
+  - type: example
+    target: 일회용 컵을 줄이기 위한 보증금 제도가 도입되면서 다회용 컵을 쓰는 사람이 늘어나는 추세이다.
+    target_lang: ko
+    translation:
+      vi: Khi chế độ đặt cọc nhằm giảm cốc dùng một lần được áp dụng, số người dùng cốc tái sử dụng đang có xu hướng tăng.
+    note:
+      vi: -기 위한 + danh từ (제도); -는 추세이다 với động từ thay đổi 늘어나다.
+  - type: example
+    target: 플라스틱 재활용은 세 단계를 거친다. 먼저 종류별로 분류한다. 그다음 깨끗하게 씻은 뒤 잘게 부순다. 마지막으로 녹여서 새 제품의 원료로 쓴다.
+    target_lang: ko
+    translation:
+      vi: Tái chế nhựa trải qua ba bước. Trước tiên phân loại theo chủng loại. Tiếp theo rửa sạch rồi nghiền nhỏ. Cuối cùng nấu chảy để làm nguyên liệu cho sản phẩm mới.
+    note:
+      vi: Mô tả quy trình - N을/를 거치다, 먼저 → 그다음 → 마지막으로, câu chủ động không chủ ngữ.
+  - type: common_mistake
+    wrong: 이것은 탄소 배출을 줄이기 위해서 정책이다.
+    right: 이것은 탄소 배출을 줄이기 위한 정책이다.
+    target_lang: ko
+    note:
+      vi: Khi "để giảm carbon" bổ nghĩa cho danh từ 정책 (chính sách nhằm…), phải dùng 위한. 위해서 chỉ đứng trước động từ - 줄이기 위해서 정책을 만들었다.
+  - type: common_mistake
+    wrong: 오늘은 기후 정책에 대해 이야기하고 싶어요.
+    right: 오늘은 기후 정책에 대해 말씀드리고자 합니다.
+    target_lang: ko
+    note:
+      vi: Mở đầu bài giảng, thuyết trình mà dùng -고 싶어요 nghe như chuyện riêng. Văn trang trọng dùng -고자 합니다 và khiêm tốn 말씀드리다.
+  - type: common_mistake
+    wrong: 미세먼지 문제를 걱정하는 사람이 많은 추세이다.
+    right: 미세먼지 문제를 걱정하는 사람이 많아지는 추세이다.
+    target_lang: ko
+    note:
+      vi: 추세 là xu hướng thay đổi, nên đi với động từ thay đổi (많아지다, 늘어나다), không đi với tính từ tĩnh 많다.
+  - type: summary
+    points:
+      - vi: V-기 위해서 + động từ; V-기 위한 + danh từ (정책, 제도, 노력).
+      - vi: V-고자 하다 / V-고자 = muốn, nhằm (trang trọng) - 말씀드리고자 합니다.
+      - vi: V-는 추세이다 · N 추세이다 = đang có xu hướng (động từ thay đổi); 확산되다 = lan rộng.
+      - vi: Quy trình - N을/를 거치다 · 과정 · 단계 · 먼저 → 그다음 → -(으)ㄴ 뒤 → 마지막으로.
+      - vi: …는 현상을 N(이)라고 한다 = hiện tượng … được gọi là N; 도입하다 = đưa vào áp dụng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:purpose-process-mcq-wihan
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gp-gi-wihan
+    prompt:
+      stem: "Chọn dạng đúng: 탄소 배출을 줄이기 ___ 정책이 시행되고 있다. (Các chính sách nhằm giảm phát thải carbon đang được thực thi.)"
+      stem_lang: vi
+      options:
+        - { id: p8r, text: 위한, lang: ko }
+        - { id: c3y, text: 위해서, lang: ko }
+        - { id: j6e, text: 위하여, lang: ko }
+        - { id: x2o, text: 때문인, lang: ko }
+    answer:
+      correct_option_id: p8r
+    explanation:
+      vi: Sau chỗ trống là danh từ 정책 nên cần dạng định ngữ 위한. 위해서 và 위하여 chỉ đứng trước động từ; 때문인 là nguyên nhân, không phải mục đích.
+    display_answer: 위한
+
+  - key: ko:exercise:purpose-process-mcq-chuse
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gp-neun-chuseida
+    prompt:
+      stem: "Câu 전기 자동차를 구매하는 사람이 늘어나는 추세이다 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: m5u, text: Số người mua ô tô điện đang có xu hướng tăng., lang: vi }
+        - { id: d9i, text: Số người mua ô tô điện đã tăng gấp đôi., lang: vi }
+        - { id: s1a, text: Người ta dự định sẽ mua nhiều ô tô điện hơn., lang: vi }
+        - { id: k4f, text: Số người mua ô tô điện đang giảm dần., lang: vi }
+    answer:
+      correct_option_id: m5u
+    explanation:
+      vi: -는 추세이다 là "đang có xu hướng", 늘어나다 là "tăng lên". Câu không nêu con số cụ thể và không nói về dự định.
+    display_answer: Số người mua ô tô điện đang có xu hướng tăng.
+
+  - key: ko:exercise:purpose-process-listen-goja
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-goja-hada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 오늘은 기후 정책의 방향에 대해 말씀드리고자 합니다.
+      options:
+        - { id: h7q, text: Hôm nay tôi xin trình bày về định hướng của chính sách khí hậu., lang: vi }
+        - { id: z4t, text: Hôm nay tôi muốn nghe ý kiến của các bạn về khí hậu., lang: vi }
+        - { id: f2l, text: Hôm qua tôi đã trình bày về chính sách khí hậu., lang: vi }
+        - { id: w9g, text: Hôm nay chính phủ đã công bố chính sách khí hậu mới., lang: vi }
+    answer:
+      correct_option_id: h7q
+    explanation:
+      vi: 말씀드리다 là "thưa, trình bày" (khiêm tốn), -고자 합니다 là "xin được, muốn" ở mức trang trọng - câu mở đầu bài giảng. Người nói là người trình bày, không phải người nghe hay chính phủ.
+    display_answer: Hôm nay tôi xin trình bày về định hướng của chính sách khí hậu.
+
+  - key: ko:exercise:purpose-process-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:geochida
+    prompt:
+      template: "전기 자동차를 사는 사람이 늘어나는 {{b1}}이다. 신약은 여러 단계의 실험을 {{b2}} 시장에 나온다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Số người mua ô tô điện đang có xu hướng tăng. Thuốc mới trải qua thí nghiệm nhiều giai đoạn rồi mới ra thị trường."
+        - "Gợi ý: \"xu hướng\" - 추___; \"trải qua … rồi\" - 거치다 → 거___."
+    answer:
+      blanks:
+        b1: [추세]
+        b2: [거쳐, 거쳐서]
+    known_wrong:
+      - answer: 경향
+        feedback_vi: 경향 đi với 이 있다 (-는 경향이 있다). Mẫu "-는 ___이다" là 추세이다.
+        error_tag: chuse_vs_gyeonghyang
+      - answer: 겪어
+        feedback_vi: 겪다 là trải qua khó khăn, kinh nghiệm. Trải qua các bước, giai đoạn là 거치다 → 거쳐.
+        error_tag: geochida_vs_gyeokda
+    explanation:
+      vi: -는 추세이다 = đang có xu hướng. N을/를 거쳐(서) = trải qua N rồi - dùng cho các bước, giai đoạn của một quy trình.
+    display_answer: 전기 자동차를 사는 사람이 늘어나는 추세이다. 신약은 여러 단계의 실험을 거쳐 시장에 나온다.
+
+  - key: ko:exercise:purpose-process-wb-spread
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:hwaksandoeda
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Phong trào giảm nhựa đang lan rộng ra toàn thế giới.\""
+      tokens:
+        - { id: s3, text: 전 세계로 }
+        - { id: s5, text: 확산하고 있다 }
+        - { id: s1, text: 플라스틱을 줄이자는 }
+        - { id: s4, text: 확산되고 있다 }
+        - { id: s2, text: 운동이 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: Chủ ngữ 운동이 tự lan rộng, không có tân ngữ, nên dùng 확산되다. N(으)로 chỉ hướng lan ra.
+    display_answer: 플라스틱을 줄이자는 운동이 전 세계로 확산되고 있다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:purpose-process-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-goja-hada
+    prompt:
+      template: "(Nghiên cứu này nhằm phân tích ảnh hưởng của bụi mịn đến sức khoẻ.) 본 연구는 미세먼지가 건강에 미치는 영향을 분석하{{b1}} 한다. (Khu bảo tồn dành cho động vật có nguy cơ tuyệt chủng đã được lập ra.) 멸종 위기 동물을 {{b2}} 보호 구역이 만들어졌다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [고자]
+        b2: [위한]
+    known_wrong:
+      - answer: 고 싶다고
+        feedback_vi: -고 싶다 là cảm xúc cá nhân, không hợp văn báo cáo. Dùng -고자 한다.
+        error_tag: goja_register
+      - answer: 위해서
+        feedback_vi: Trước danh từ 보호 구역 phải dùng định ngữ 위한.
+        error_tag: wihan_vs_wihaeseo
+      - answer: 려고
+        feedback_vi: -(으)려고 하다 đúng nghĩa nhưng là văn nói thường; báo cáo nghiên cứu dùng -고자 하다.
+        error_tag: goja_register
+    explanation:
+      vi: Mở đầu báo cáo dùng 본 연구는 … -고자 한다 (nhằm). N을 위한 N = N dành cho, nhằm N - đứng trước danh từ 보호 구역.
+    display_answer: 본 연구는 미세먼지가 건강에 미치는 영향을 분석하고자 한다. / 멸종 위기 동물을 위한 보호 구역이 만들어졌다.
+
+  - key: ko:exercise:purpose-process-translate-wihan
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-gi-wihan
+    prompt:
+      source_text: Chính phủ đã áp dụng chính sách nhằm giảm đồ dùng một lần. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 정부는 일회용품을 줄이기 위한 정책을 도입했다.
+        - 정부가 일회용품을 줄이기 위한 정책을 도입했다.
+        - 정부는 일회용품 사용을 줄이기 위한 정책을 도입했다.
+        - 정부가 일회용품 사용을 줄이기 위한 정책을 도입했다.
+        - 정부는 일회용품을 줄이기 위한 정책을 시행했다.
+        - 정부는 일회용품 사용을 줄이기 위한 정책을 시행했다.
+        - 정부는 일회용품 감소를 위한 정책을 도입했다.
+    known_wrong:
+      - answer: 정부는 일회용품을 줄이기 위해서 정책을 도입했다.
+        feedback_vi: Câu này nghĩa là "để giảm … chính phủ áp dụng chính sách" - mục đích không còn bổ nghĩa cho 정책. "Chính sách nhằm…" là 줄이기 위한 정책.
+        error_tag: wihan_vs_wihaeseo
+      - answer: 정부는 일회용품을 줄기 위한 정책을 도입했다.
+        feedback_vi: Có tân ngữ 일회용품을 nên dùng 줄이다 → 줄이기.
+        error_tag: causative_needed
+      - answer: 정부는 일회용품을 줄이기 위한 정책을 수입했다.
+        feedback_vi: 수입하다 là nhập khẩu. "Đưa vào áp dụng" chính sách là 도입하다.
+        error_tag: dojip_vs_suip
+    explanation:
+      vi: Mục đích bổ nghĩa cho danh từ 정책 → 줄이기 위한 정책. "Áp dụng (chế độ, chính sách mới)" là 도입하다; quá khứ văn viết 도입했다.
+    display_answer: 정부는 일회용품을 줄이기 위한 정책을 도입했다.
+
+  - key: ko:exercise:purpose-process-translate-chuse
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-neun-chuseida
+    prompt:
+      source_text: Số người đi xe đạp đang có xu hướng tăng. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 자전거를 타는 사람이 늘어나는 추세이다.
+        - 자전거를 타는 사람이 늘어나는 추세다.
+        - 자전거를 타는 사람이 증가하는 추세이다.
+        - 자전거를 타는 사람이 증가하는 추세다.
+        - 자전거를 타는 사람이 늘고 있는 추세이다.
+        - 자전거를 타는 사람이 늘고 있는 추세다.
+        - 자전거를 타는 사람들이 늘어나는 추세이다.
+        - 자전거 이용자가 늘어나는 추세이다.
+        - 자전거 이용자가 늘어나는 추세다.
+        - 자전거 이용자가 증가하는 추세이다.
+        - 자전거 이용자가 증가하는 추세다.
+        - 자전거 이용자 수가 증가하는 추세이다.
+        - 자전거를 이용하는 사람이 늘어나는 추세이다.
+        - 자전거를 이용하는 사람이 증가하는 추세이다.
+    known_wrong:
+      - answer: 자전거를 타는 사람이 많은 추세이다.
+        feedback_vi: 추세 đi với động từ thay đổi - 늘어나는/많아지는 추세이다, không dùng tính từ 많은.
+        error_tag: chuse_static_adjective
+      - answer: 자전거를 타는 사람이 늘어날 추세이다.
+        feedback_vi: Xu hướng đang diễn ra dùng định ngữ hiện tại -는 - 늘어나는 추세이다.
+        error_tag: chuse_tense
+      - answer: 자전거를 타는 사람이 늘어나는 추세예요.
+        feedback_vi: Đây là 해요체. Văn viết là 추세이다 / 추세다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: Động từ thay đổi + -는 추세이다 (rút gọn 추세다). "Số người đi xe đạp" có thể là 자전거를 타는 사람 hoặc 자전거 이용자.
+    display_answer: 자전거를 타는 사람이 늘어나는 추세이다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:purpose-process-mcq-lecture
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-goja-hada
+    prompt:
+      stem: "Bạn mở đầu một bài thuyết trình học thuật về năng lượng tái tạo. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: e5n, text: 오늘은 재생 에너지의 현황과 과제에 대해 말씀드리고자 합니다., lang: ko }
+        - { id: r8v, text: 오늘은 재생 에너지에 대해 얘기하고 싶어요., lang: ko }
+        - { id: t3b, text: 오늘은 재생 에너지에 대해 말하자., lang: ko }
+        - { id: y6m, text: 오늘은 재생 에너지에 대해 말씀하시고자 합니다., lang: ko }
+    answer:
+      correct_option_id: e5n
+    explanation:
+      vi: Thuyết trình học thuật dùng 합쇼체, khiêm tốn 말씀드리다 + -고자 합니다. -고 싶어요 và 말하자 quá thân mật; 말씀하시다 là kính ngữ cho người khác, không dùng cho chính mình.
+    display_answer: 오늘은 재생 에너지의 현황과 과제에 대해 말씀드리고자 합니다.
+
+  - key: ko:exercise:purpose-process-mcq-steps
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:process-connectives
+    prompt:
+      stem: "Đọc đoạn văn: 음식물 쓰레기는 다음과 같은 과정을 거쳐 퇴비가 된다. 먼저 수거한 쓰레기에서 비닐과 뼈 같은 이물질을 골라낸다. 그다음 물기를 뺀 뒤 잘게 부순다. 마지막으로 미생물을 넣어 약 한 달 동안 발효시킨다. Bước thứ hai trong quy trình là gì?"
+      stem_lang: vi
+      options:
+        - { id: g4c, text: Làm ráo nước rồi nghiền nhỏ., lang: vi }
+        - { id: l1x, text: Nhặt bỏ túi nilon và xương., lang: vi }
+        - { id: n7z, text: Cho vi sinh vật vào để lên men., lang: vi }
+        - { id: u2h, text: Thu gom rác thực phẩm từ các hộ gia đình., lang: vi }
+    answer:
+      correct_option_id: g4c
+    explanation:
+      vi: 그다음 đánh dấu bước thứ hai - 물기를 뺀 뒤 잘게 부순다 (làm ráo nước rồi nghiền nhỏ). Nhặt tạp chất là bước 먼저, lên men là bước 마지막으로; việc thu gom đã xong trước quy trình (수거한 쓰레기).
+    display_answer: Làm ráo nước rồi nghiền nhỏ.
+
+  - key: ko:exercise:purpose-process-wb-goja
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-goja-hada
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chính phủ đã đưa vào áp dụng chế độ mới nhằm giải quyết vấn đề.\""
+      tokens:
+        - { id: c4, text: 도입했다 }
+        - { id: c2, text: 문제를 해결하고자 }
+        - { id: c6, text: 해결하고 싶어서 }
+        - { id: c1, text: 정부는 }
+        - { id: c3, text: 새로운 제도를 }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+        - [c2, c1, c3, c4]
+    explanation:
+      vi: -고자 ở dạng nối là "nhằm" - trang trọng, hợp văn tin tức. -고 싶어서 diễn tả mong muốn cá nhân, không hợp chủ ngữ là chính phủ trong văn viết.
+    display_answer: 정부는 문제를 해결하고자 새로운 제도를 도입했다.
+
+  - key: ko:exercise:purpose-process-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hyeonsang
+    prompt:
+      source_text: 도시의 기온이 주변 지역보다 높은 현상을 열섬 현상이라고 한다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hiện tượng nhiệt độ của thành phố cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ thành phố cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ đô thị cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ của đô thị cao hơn các khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ thành phố cao hơn vùng xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ đô thị cao hơn vùng xung quanh được gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ thành phố cao hơn khu vực xung quanh gọi là hiện tượng đảo nhiệt.
+        - Hiện tượng nhiệt độ đô thị cao hơn khu vực xung quanh được gọi là đảo nhiệt đô thị.
+        - Hiện tượng nhiệt độ thành phố cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt đô thị.
+        - Hiện tượng nhiệt độ đô thị cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt đô thị.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hiện tượng nhiệt độ thành phố thấp hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.
+        feedback_vi: 높다 là "cao", không phải "thấp".
+        error_tag: meaning_reversed
+      - answer: Thành phố có nhiệt độ cao hơn khu vực xung quanh nên được gọi là đảo.
+        feedback_vi: Câu là định nghĩa - …는 현상을 N(이)라고 한다 "hiện tượng … được gọi là N", không nói thành phố là "đảo".
+        error_tag: definition_pattern
+    explanation:
+      vi: Mẫu định nghĩa …는 현상을 N(이)라고 한다 = hiện tượng … được gọi là N. 열섬 (nhiệt đảo) là "đảo nhiệt"; 주변 지역보다 높다 = cao hơn khu vực xung quanh.
+    display_answer: Hiện tượng nhiệt độ của thành phố cao hơn khu vực xung quanh được gọi là hiện tượng đảo nhiệt.

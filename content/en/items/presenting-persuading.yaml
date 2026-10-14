@@ -1,0 +1,911 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Thuyết trình, thuyết phục & tranh luận" (C1-C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: dẫn dắt bài thuyết trình (signposting) ----------------
+  - key: en:item:signposting
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking, vocabulary]
+    front:
+      text: signposting
+      ipa: UK /ˈsaɪnpəʊstɪŋ/ · US /ˈsaɪnpoʊstɪŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Những câu "chỉ đường" trong bài nói, báo cho người nghe biết mình đang ở đâu và sắp chuyển sang đâu.
+      examples:
+        - target: Clear signposting helps the audience follow a complex argument.
+          translation:
+            vi: Dẫn dắt rõ ràng giúp khán giả theo kịp một lập luận phức tạp.
+      pronunciation_note:
+        vi: Chữ t trong signpost gần như không đọc rõ - /ˈsaɪnpəʊst/; chữ g trong sign câm.
+      confusion:
+        vi: Signpost nghĩa gốc là "biển chỉ đường"; trong thuyết trình, signposting là các cụm như This brings me to…, Moving on….
+
+  - key: en:item:id-like-to-begin-by
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I'd like to begin by + V-ing …
+      ipa: /aɪd ˈlaɪk tə bɪˈɡɪn baɪ/
+      pos: cụm mở đầu
+    back:
+      meaning:
+        vi: Tôi xin bắt đầu bằng việc… (câu mở đầu trang trọng, tự nhiên của bài thuyết trình).
+      examples:
+        - target: I'd like to begin by looking at where we were this time last year.
+          translation:
+            vi: Tôi xin bắt đầu bằng việc nhìn lại vị trí của chúng ta vào thời điểm này năm ngoái.
+        - target: I'd like to begin by thanking the organisers for inviting me.
+          translation:
+            vi: Trước hết, tôi xin cảm ơn ban tổ chức đã mời tôi.
+      confusion:
+        vi: Sau giới từ by là V-ing (by looking), không phải to + V. Người Việt hay mở đầu bằng "Today I will present about…" - vừa sai ngữ pháp vừa kém tự nhiên.
+
+  - key: en:item:divided-into-parts
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I've divided my talk into three parts.
+      ipa: UK /aɪv dɪˈvaɪdɪd maɪ ˈtɔːk ˈɪntə ˈθriː ˈpɑːts/ · US /aɪv dɪˈvaɪdɪd maɪ ˈtɑːk ˈɪntə ˈθriː ˈpɑːrts/
+      pos: cụm giới thiệu bố cục
+    back:
+      meaning:
+        vi: Tôi chia bài nói thành ba phần (giới thiệu bố cục ngay đầu bài).
+      examples:
+        - target: "I've divided my talk into three parts: the problem, our solution and the costs."
+          translation:
+            vi: "Tôi chia bài nói thành ba phần - vấn đề, giải pháp của chúng tôi và chi phí."
+      confusion:
+        vi: Dùng divide … into, không dùng divide … to hay divide … in.
+
+  - key: en:item:this-brings-me-to
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: This brings me to …
+      ipa: /ðɪs ˈbrɪŋz miː tuː/
+      pos: cụm chuyển ý
+    back:
+      meaning:
+        vi: Điều này dẫn tôi đến (phần/ý tiếp theo)… - chuyển ý có liên kết logic với ý vừa nói.
+      examples:
+        - target: Costs have doubled in two years. This brings me to my main point - we need a new supplier.
+          translation:
+            vi: Chi phí đã tăng gấp đôi trong hai năm. Điều này dẫn tôi đến ý chính - chúng ta cần nhà cung cấp mới.
+      confusion:
+        vi: Khác Moving on to… (chỉ chuyển phần), This brings me to… cho thấy ý sau là hệ quả của ý trước.
+
+  - key: en:item:let-me-elaborate-on
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: Let me elaborate on …
+      ipa: UK /let miː ɪˈlæbəreɪt ɒn/ · US /let miː ɪˈlæbəreɪt ɑːn/
+      pos: cụm triển khai ý
+    back:
+      meaning:
+        vi: Để tôi nói rõ hơn / triển khai thêm về…
+      examples:
+        - target: Let me elaborate on the second risk, because it's the one that worries me most.
+          translation:
+            vi: Để tôi nói kỹ hơn về rủi ro thứ hai, vì đó là điều tôi lo nhất.
+      pronunciation_note:
+        vi: Động từ elaborate đọc đuôi /-reɪt/; tính từ elaborate (công phu) đọc đuôi /-rət/.
+      confusion:
+        vi: Elaborate là nội động từ, cần on - elaborate on the risk, không nói elaborate the risk.
+
+  - key: en:item:to-put-this-into-perspective
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: To put this into perspective, …
+      ipa: UK /tə ˈpʊt ðɪs ˈɪntə pəˈspektɪv/ · US /tə ˈpʊt ðɪs ˈɪntə pɚˈspektɪv/
+      pos: cụm so sánh, đặt bối cảnh
+    back:
+      meaning:
+        vi: Để dễ hình dung (mức độ của con số/sự việc)… - thường kèm một phép so sánh quen thuộc.
+      examples:
+        - target: We lose 2,000 litres of water a day. To put this into perspective, that's enough for forty families.
+          translation:
+            vi: Mỗi ngày chúng ta lãng phí 2.000 lít nước. Để dễ hình dung, lượng đó đủ cho bốn mươi gia đình.
+      confusion:
+        vi: Perspective (góc nhìn) khác prospective (tương lai, triển vọng). Cũng gặp dạng To put that in perspective.
+
+  - key: en:item:turning-now-to
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Turning now to … / Moving on to …
+      ipa: UK /ˈtɜːnɪŋ naʊ tuː/ · US /ˈtɝːnɪŋ naʊ tuː/
+      pos: cụm chuyển phần
+    back:
+      meaning:
+        vi: Bây giờ chuyển sang… (chuyển sang phần mới của bài nói).
+      examples:
+        - target: Turning now to the budget, I'll explain where the extra money will come from.
+          translation:
+            vi: Giờ chuyển sang phần ngân sách, tôi sẽ giải thích khoản tiền bổ sung đến từ đâu.
+      confusion:
+        vi: Sau to là danh từ hoặc V-ing (Moving on to costs / to discussing costs), không phải động từ nguyên mẫu.
+
+  - key: en:item:as-i-mentioned-earlier
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: As I mentioned earlier, …
+      ipa: UK /əz aɪ ˈmenʃənd ˈɜːliə/ · US /əz aɪ ˈmenʃənd ˈɝːliɚ/
+      pos: cụm quay lại ý
+    back:
+      meaning:
+        vi: Như tôi đã đề cập lúc trước… - nối ý đang nói với một ý đã nêu.
+      examples:
+        - target: As I mentioned earlier, the pilot project ended in March.
+          translation:
+            vi: Như tôi đã nói lúc trước, dự án thử nghiệm kết thúc vào tháng Ba.
+      confusion:
+        vi: Mention không đi với about - mention the project, không nói mention about the project.
+
+  - key: en:item:to-recap
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: To recap, …
+      ipa: /tə ˈriːkæp/
+      pos: cụm tóm tắt
+    back:
+      meaning:
+        vi: Tóm tắt lại… (nhắc lại ngắn gọn các ý chính, thường ở cuối phần hoặc cuối bài).
+      examples:
+        - target: "To recap: sales are up, costs are down, and customer complaints have halved."
+          translation:
+            vi: "Tóm lại - doanh số tăng, chi phí giảm, còn khiếu nại của khách hàng đã giảm một nửa."
+      confusion:
+        vi: To recap mang tính khẩu ngữ hơn In summary; dùng hợp nhất trong bài nói.
+
+  - key: en:item:give-a-presentation-on
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking, grammar]
+    front:
+      text: give a presentation on … / present + N
+      ipa: UK /ɡɪv ə ˌpreznˈteɪʃn ɒn/ · US /ɡɪv ə ˌpriːzenˈteɪʃn ɑːn/
+      pos: collocation
+    back:
+      meaning:
+        vi: Thuyết trình về… - present là ngoại động từ (present the results), còn danh từ đi với give a presentation on/about.
+      examples:
+        - target: Today I'll be presenting the results of our customer survey.
+          translation:
+            vi: Hôm nay tôi sẽ trình bày kết quả khảo sát khách hàng.
+        - target: She gave a presentation on renewable energy at the conference.
+          translation:
+            vi: Cô ấy đã thuyết trình về năng lượng tái tạo tại hội nghị.
+      confusion:
+        vi: Không nói present about something; "thuyết trình về X" là present X hoặc give a presentation on X.
+
+  - key: en:item:emphasise
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: emphasise / stress
+      ipa: /ˈemfəsaɪz/ · /stres/
+      pos: động từ (ngoại động từ)
+    back:
+      meaning:
+        vi: Nhấn mạnh (một điều gì đó) - tân ngữ theo ngay sau động từ.
+      examples:
+        - target: I want to emphasise one thing - safety comes first.
+          translation:
+            vi: Tôi muốn nhấn mạnh một điều - an toàn là trên hết.
+      pronunciation_note:
+        vi: Trọng âm rơi vào âm đầu /ˈem-/. Tiếng Anh Mỹ viết emphasize.
+      confusion:
+        vi: Không nói emphasise about / stress about (trừ khi stress about = lo lắng về). Danh từ thì có on - put emphasis on.
+
+  # ---------------- Bài 2: biện pháp tu từ & câu nhấn mạnh ----------------
+  - key: en:item:rhetorical-device
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: rhetorical device
+      ipa: UK /rɪˈtɒrɪkl dɪˈvaɪs/ · US /rɪˈtɔːrɪkl dɪˈvaɪs/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Biện pháp tu từ - cách dùng ngôn ngữ để gây ấn tượng và thuyết phục (bộ ba, câu hỏi tu từ, đối lập…).
+      examples:
+        - target: Good speakers use rhetorical devices sparingly, not in every sentence.
+          translation:
+            vi: Người nói giỏi dùng biện pháp tu từ có chừng mực, không phải câu nào cũng dùng.
+      pronunciation_note:
+        vi: Rhetoric nhấn âm đầu /ˈretərɪk/, nhưng rhetorical nhấn âm hai /rɪˈtɒr-/.
+      confusion:
+        vi: Rhetorical trong bài này là "tu từ", không mang nghĩa xấu như "nói suông" (empty rhetoric).
+
+  - key: en:item:tricolon
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: tricolon (the rule of three)
+      ipa: UK /traɪˈkəʊlən/ · US /traɪˈkoʊlən/
+      pos: biện pháp tu từ
+    back:
+      meaning:
+        vi: Bộ ba - liệt kê ba ý song song, cùng cấu trúc, thường ý cuối dài hoặc mạnh nhất.
+      examples:
+        - target: Our new system is faster, cheaper and far easier to use.
+          translation:
+            vi: Hệ thống mới của chúng tôi nhanh hơn, rẻ hơn và dễ dùng hơn hẳn.
+        - target: We listened, we learned, and we changed.
+          translation:
+            vi: Chúng tôi đã lắng nghe, đã học hỏi và đã thay đổi.
+      confusion:
+        vi: Ba ý phải cùng dạng ngữ pháp (cùng tính từ so sánh, cùng động từ); trộn dạng (faster, cheaper and it is easy) làm mất nhịp.
+
+  - key: en:item:rhetorical-question
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: rhetorical question
+      ipa: UK /rɪˌtɒrɪkl ˈkwestʃən/ · US /rɪˌtɔːrɪkl ˈkwestʃən/
+      pos: biện pháp tu từ
+    back:
+      meaning:
+        vi: Câu hỏi tu từ - hỏi để người nghe suy nghĩ hoặc để dẫn vào ý tiếp theo, không chờ câu trả lời.
+      examples:
+        - target: So why should we care about a two-degree rise? Because it changes everything.
+          translation:
+            vi: Vậy tại sao chúng ta phải bận tâm đến mức tăng hai độ? Bởi vì nó thay đổi mọi thứ.
+        - target: Who among us hasn't missed a deadline?
+          translation:
+            vi: Ai trong chúng ta chưa từng trễ hạn chứ?
+      confusion:
+        vi: Câu hỏi tu từ vẫn giữ trật tự câu hỏi (why should we, hasn't anyone); tránh hỏi liên tục nhiều câu khiến bài nói như thẩm vấn.
+
+  - key: en:item:antithesis
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: antithesis
+      ipa: /ænˈtɪθəsɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Phép đối - đặt hai ý trái ngược cạnh nhau trong cấu trúc song song để làm nổi bật ý chính.
+      examples:
+        - target: "\"We are not here to talk about problems; we are here to solve them\" is a classic antithesis."
+          translation:
+            vi: “Chúng ta ở đây không phải để bàn về vấn đề, mà để giải quyết chúng” là một phép đối kinh điển.
+      pronunciation_note:
+        vi: Trọng âm rơi vào âm hai /-ˈtɪθ-/; /θ/ đặt lưỡi giữa hai răng.
+      confusion:
+        vi: Ngoài nghĩa tu từ, the antithesis of X còn có nghĩa "hoàn toàn trái ngược với X".
+
+  - key: en:item:not-x-but-y
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: not X but Y / It's not X; it's Y.
+      ipa: UK /nɒt … bət …/ · US /nɑːt … bət …/
+      pos: cấu trúc đối lập
+    back:
+      meaning:
+        vi: Không phải X mà là Y - phủ nhận một cách hiểu để làm nổi bật cách hiểu đúng.
+      examples:
+        - target: The problem is not the technology but the way we use it.
+          translation:
+            vi: Vấn đề không nằm ở công nghệ mà ở cách chúng ta sử dụng nó.
+      confusion:
+        vi: Không chèn thêm and - not the technology but…, không nói not the technology and but…. X và Y nên cùng dạng (danh từ - danh từ).
+
+  - key: en:item:the-question-is-not-whether
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: The question is not whether … but when/how …
+      ipa: UK /ðə ˈkwestʃən ɪz nɒt ˈweðə/ · US /ðə ˈkwestʃən ɪz nɑːt ˈweðɚ/
+      pos: cấu trúc đối lập
+    back:
+      meaning:
+        vi: Vấn đề không phải là có… hay không, mà là khi nào/bằng cách nào… - chuyển trọng tâm tranh luận.
+      examples:
+        - target: The question is not whether AI will change our jobs, but how quickly.
+          translation:
+            vi: Câu hỏi không phải là AI có thay đổi công việc của chúng ta hay không, mà là nhanh đến mức nào.
+      confusion:
+        vi: Whether/how ở đây dẫn câu hỏi gián tiếp nên dùng trật tự câu kể - how quickly it will happen, không phải how quickly will it happen.
+
+  - key: en:item:far-from
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: Far from + V-ing/adj, …
+      ipa: UK /ˈfɑː frəm/ · US /ˈfɑːr frəm/
+      pos: cụm đối lập
+    back:
+      meaning:
+        vi: Không những không… mà ngược lại… / còn lâu mới….
+      examples:
+        - target: Far from reducing costs, the new software has actually increased them.
+          translation:
+            vi: Phần mềm mới không những không giảm chi phí mà thực tế còn làm chúng tăng lên.
+        - target: The results are far from perfect.
+          translation:
+            vi: Kết quả còn lâu mới hoàn hảo.
+      confusion:
+        vi: Sau far from là V-ing hoặc tính từ/danh từ, không phải to + V. Không nhầm với far away from (xa về khoảng cách).
+
+  - key: en:item:it-is-precisely-that
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: It is precisely + X + that …
+      ipa: /ɪt ɪz prɪˈsaɪsli … ðæt/
+      pos: câu chẻ nhấn mạnh
+    back:
+      meaning:
+        vi: Chính vì/chính là X mà… - câu chẻ It is… that thêm precisely để nhấn mạnh tuyệt đối.
+      examples:
+        - target: It is precisely because the market is changing that we need to act now.
+          translation:
+            vi: Chính vì thị trường đang thay đổi nên chúng ta cần hành động ngay.
+        - target: It was precisely this kind of mistake that cost us the contract.
+          translation:
+            vi: Chính kiểu sai lầm này đã khiến chúng ta mất hợp đồng.
+      confusion:
+        vi: Precisely đứng ngay sau It is/was; không lặp lại because hay so ở vế sau (không nói …that so we need).
+
+  - key: en:item:all-we-need-is
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: All (that) we need is … / All you have to do is (to) + V
+      ipa: /ˈɔːl wi ˈniːd ɪz/
+      pos: câu chẻ với All
+    back:
+      meaning:
+        vi: Tất cả những gì chúng ta cần là…/Chỉ cần… - nhấn mạnh rằng chỉ một điều duy nhất là đủ.
+      examples:
+        - target: All we need is six more months and a small team.
+          translation:
+            vi: Tất cả những gì chúng ta cần là thêm sáu tháng và một nhóm nhỏ.
+        - target: All you have to do is sign here.
+          translation:
+            vi: Bạn chỉ cần ký vào đây.
+      confusion:
+        vi: All ở đây nghĩa là "điều duy nhất" nên động từ chia số ít - All we need is…. Đừng nhầm với All of us need… (tất cả chúng ta đều cần), nghĩa khác hẳn.
+
+  - key: en:item:let-us-not-forget
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Let us not forget that … / Let's not forget …
+      ipa: UK /let əs nɒt fəˈɡet/ · US /let əs nɑːt fɚˈɡet/
+      pos: cụm kêu gọi
+    back:
+      meaning:
+        vi: Chúng ta đừng quên rằng… - nhắc một sự thật để kéo khán giả về phía mình.
+      examples:
+        - target: Let us not forget that this company started in a garage with two employees.
+          translation:
+            vi: Chúng ta đừng quên rằng công ty này khởi đầu trong một gara với hai nhân viên.
+      confusion:
+        vi: Dạng phủ định là Let's not + V (Let's not forget), không phải Don't let's forget hay Let's don't forget trong văn trang trọng.
+
+  # ---------------- Bài 3: thuyết phục, nhượng bộ & trạng từ quan điểm ----------------
+  - key: en:item:concession-structure
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, speaking, writing]
+    front:
+      text: concede → counter (Admittedly X. However, Y.)
+      ipa: /kənˈseʃn/
+      pos: cấu trúc lập luận
+    back:
+      meaning:
+        vi: Lập luận nhượng bộ - thừa nhận một điểm của phía bên kia trước, rồi đưa ra phản bác mạnh hơn.
+      examples:
+        - target: Admittedly, the plan is expensive. However, doing nothing would cost us far more.
+          translation:
+            vi: Phải thừa nhận là kế hoạch này tốn kém. Tuy nhiên, không làm gì cả sẽ khiến chúng ta tốn kém hơn nhiều.
+      confusion:
+        vi: Ý nhượng bộ đứng trước, ý chính đứng sau - người nghe nhớ ý cuối. Đảo ngược thứ tự làm ý phản bác của bạn yếu đi.
+
+  - key: en:item:admittedly
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: admittedly
+      ipa: /ədˈmɪtɪdli/
+      pos: trạng từ quan điểm
+    back:
+      meaning:
+        vi: Phải thừa nhận rằng… - nhận một điểm yếu hoặc một sự thật bất lợi trước khi phản bác.
+      examples:
+        - target: Admittedly, we underestimated the demand. Even so, the launch was a success.
+          translation:
+            vi: Phải thừa nhận là chúng tôi đã đánh giá thấp nhu cầu. Dù vậy, buổi ra mắt vẫn thành công.
+      confusion:
+        vi: Admittedly thường đi kèm một vế đối lập phía sau (but, however, even so); đứng một mình nghe như câu bỏ dở.
+
+  - key: en:item:granted
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: Granted, …
+      ipa: UK /ˈɡrɑːntɪd/ · US /ˈɡræntɪd/
+      pos: trạng từ nhượng bộ
+    back:
+      meaning:
+        vi: Đúng là…, công nhận là… (nhượng bộ, hơi khẩu ngữ hơn admittedly).
+      examples:
+        - target: Granted, the course is demanding, but the rewards are enormous.
+          translation:
+            vi: Công nhận là khoá học rất nặng, nhưng thành quả thì rất lớn.
+      confusion:
+        vi: Granted ở đầu câu không phải bị động "được cấp"; khác take something for granted (coi là đương nhiên).
+
+  - key: en:item:while-it-is-true-that
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: While it is true that …, …
+      ipa: UK /waɪl ɪt ɪz ˈtruː ðət/ · US /hwaɪl ɪt ɪz ˈtruː ðət/
+      pos: mệnh đề nhượng bộ
+    back:
+      meaning:
+        vi: Tuy đúng là…, nhưng… - nhượng bộ và phản bác trong cùng một câu.
+      examples:
+        - target: While it is true that remote work saves time, it can also isolate new employees.
+          translation:
+            vi: Tuy đúng là làm việc từ xa tiết kiệm thời gian, nó cũng có thể khiến nhân viên mới bị cô lập.
+      confusion:
+        vi: Không thêm but vào vế sau - While it is true that…, it can…, không nói …, but it can…. Giống lỗi "Although… but" của người Việt.
+
+  - key: en:item:that-said
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: That said, …
+      ipa: /ˈðæt ˈsed/
+      pos: cụm chuyển ý
+    back:
+      meaning:
+        vi: Dù vậy…, nói thế nhưng… - dạng ngắn, tự nhiên của Having said that.
+      examples:
+        - target: The figures look encouraging. That said, it's too early to celebrate.
+          translation:
+            vi: Số liệu trông khả quan. Dù vậy, vẫn còn quá sớm để ăn mừng.
+      confusion:
+        vi: That said đứng đầu câu mới, có dấu phẩy sau; không dùng nó để nối hai mệnh đề bằng dấu phẩy đơn thuần (…encouraging, that said it's…).
+
+  - key: en:item:stance-adverb
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: stance adverbs (undeniably, conceivably, presumably…)
+      ipa: UK /stɑːns ˈædvɜːb/ · US /stæns ˈædvɝːb/
+      pos: trạng từ quan điểm
+    back:
+      meaning:
+        vi: Trạng từ thể hiện mức độ chắc chắn hoặc thái độ của người nói với cả câu; thường đứng đầu câu hoặc sau be/trợ động từ.
+      examples:
+        - target: The results are undeniably impressive, but they are presumably based on a small sample.
+          translation:
+            vi: Kết quả không thể phủ nhận là ấn tượng, nhưng có lẽ chúng dựa trên một mẫu nhỏ.
+      confusion:
+        vi: Chọn trạng từ là chọn mức độ cam kết - undeniably (100%), presumably (khá chắc, suy ra), conceivably (có thể xảy ra, nhưng chưa chắc).
+
+  - key: en:item:undeniably
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: undeniably
+      ipa: /ˌʌndɪˈnaɪəbli/
+      pos: trạng từ quan điểm
+    back:
+      meaning:
+        vi: Không thể phủ nhận, rõ ràng là.
+      examples:
+        - target: Social media is undeniably a powerful tool for small businesses.
+          translation:
+            vi: Không thể phủ nhận mạng xã hội là công cụ mạnh mẽ với doanh nghiệp nhỏ.
+      pronunciation_note:
+        vi: Trọng âm rơi vào /-ˈnaɪ-/ (deny); đọc đủ năm âm tiết un-de-ni-a-bly.
+      confusion:
+        vi: Dùng khi điều đó hiển nhiên; dùng cho một ý gây tranh cãi sẽ làm người nghe thấy bạn áp đặt.
+
+  - key: en:item:conceivably
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: conceivably
+      ipa: /kənˈsiːvəbli/
+      pos: trạng từ quan điểm
+    back:
+      meaning:
+        vi: Có thể hình dung được là, không loại trừ khả năng (khả năng thấp hơn possibly).
+      examples:
+        - target: The project could conceivably be finished by May, but I wouldn't count on it.
+          translation:
+            vi: Không loại trừ khả năng dự án xong vào tháng Năm, nhưng tôi không trông chờ vào điều đó.
+      confusion:
+        vi: Conceivably chỉ khả năng có thể xảy ra, không phải "chắc chắn"; hay đi với could/might.
+
+  - key: en:item:presumably
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: presumably
+      ipa: UK /prɪˈzjuːməbli/ · US /prɪˈzuːməbli/
+      pos: trạng từ quan điểm
+    back:
+      meaning:
+        vi: Có lẽ (suy ra từ thông tin đang có), chắc là.
+      examples:
+        - target: The report isn't here yet - presumably it's still with the legal team.
+          translation:
+            vi: Báo cáo chưa đến - chắc là vẫn đang ở chỗ bộ phận pháp lý.
+      confusion:
+        vi: Presumably là phỏng đoán có căn cứ; khác certainly (chắc chắn). Đừng nhầm với "giả sử" (suppose).
+
+  - key: en:item:there-is-no-denying
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: There is no denying that …
+      ipa: UK /ðeər ɪz ˈnəʊ dɪˈnaɪɪŋ ðət/ · US /ðer ɪz ˈnoʊ dɪˈnaɪɪŋ ðət/
+      pos: cụm khẳng định
+    back:
+      meaning:
+        vi: Không thể phủ nhận rằng… (thường là bước nhượng bộ trước khi phản bác).
+      examples:
+        - target: There is no denying that the new policy is unpopular, but it is necessary.
+          translation:
+            vi: Không thể phủ nhận rằng chính sách mới không được lòng người, nhưng nó là cần thiết.
+      confusion:
+        vi: Sau no là V-ing (no denying), không phải to deny. Cùng mẫu với There's no point in + V-ing.
+
+  - key: en:item:actually-currently
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: actually / currently
+      ipa: /ˈæktʃuəli/ · UK /ˈkʌrəntli/ · US /ˈkɝːəntli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: Actually = thật ra, trên thực tế (sửa lại hoặc bổ sung thông tin); currently = hiện nay, hiện tại.
+      examples:
+        - target: We are currently testing the app with two hundred users.
+          translation:
+            vi: Hiện chúng tôi đang thử nghiệm ứng dụng với hai trăm người dùng.
+        - target: People think the app is new, but it was actually launched in 2019.
+          translation:
+            vi: Mọi người nghĩ ứng dụng mới ra, nhưng thật ra nó được ra mắt từ năm 2019.
+      confusion:
+        vi: Người Việt hay dùng actually với nghĩa "hiện tại, thực tại" (dễ nhầm với actuel trong tiếng Pháp). Trong tiếng Anh, "hiện nay" là currently hoặc at present.
+
+  # ---------------- Bài 4: hỏi đáp & tranh luận ----------------
+  - key: en:item:thats-a-fair-question
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: That's a fair question. / That's a valid point.
+      ipa: UK /ðæts ə ˈfeə ˈkwestʃən/ · US /ðæts ə ˈfer ˈkwestʃən/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Đó là câu hỏi hợp lý / Đó là ý đúng - ghi nhận người hỏi trước khi trả lời, đặc biệt khi câu hỏi khó.
+      examples:
+        - target: That's a fair question, and I'll be honest - we don't have all the data yet.
+          translation:
+            vi: Câu hỏi rất hợp lý, và tôi xin nói thật - chúng tôi chưa có đủ dữ liệu.
+      confusion:
+        vi: Fair ở đây là "hợp lý, chính đáng", không phải "công bằng" hay "hội chợ".
+
+  - key: en:item:if-i-understand-you-correctly
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking, listening]
+    front:
+      text: If I understand you correctly, you're asking …
+      ipa: UK /ɪf aɪ ˌʌndəˈstænd juː kəˈrektli/ · US /ɪf aɪ ˌʌndɚˈstænd juː kəˈrektli/
+      pos: cụm làm rõ câu hỏi
+    back:
+      meaning:
+        vi: Nếu tôi hiểu đúng thì anh/chị đang hỏi… - diễn đạt lại câu hỏi để kiểm tra và có thêm thời gian suy nghĩ.
+      examples:
+        - target: If I understand you correctly, you're asking whether the price will go up next year.
+          translation:
+            vi: Nếu tôi hiểu đúng thì anh đang hỏi liệu giá có tăng vào năm sau không.
+      confusion:
+        vi: Phần sau asking là câu hỏi gián tiếp nên dùng trật tự câu kể - whether the price will go up, không phải will the price go up.
+
+  - key: en:item:let-me-get-back-to-you
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I'd need to check that - let me get back to you.
+      ipa: /let miː ɡet ˈbæk tə juː/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Tôi cần kiểm tra lại điều đó - tôi sẽ phản hồi anh/chị sau (cách thừa nhận chưa biết mà vẫn chuyên nghiệp).
+      examples:
+        - target: I don't have the exact figure with me, so let me get back to you on that by Friday.
+          translation:
+            vi: Tôi không có con số chính xác ở đây, nên tôi xin phản hồi anh về việc đó trước thứ Sáu.
+      confusion:
+        vi: Get back to someone = liên lạc lại sau; khác get back (trở về). Nêu thời hạn cụ thể (by Friday) để tạo lòng tin.
+
+  - key: en:item:with-all-due-respect
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: With (all due) respect, …
+      ipa: UK /wɪð ˈɔːl ˈdjuː rɪˈspekt/ · US /wɪð ˈɔːl ˈduː rɪˈspekt/
+      pos: cụm phản đối lịch sự
+    back:
+      meaning:
+        vi: Với tất cả sự tôn trọng, … - mở đầu một lời phản đối thẳng thắn với người có vị trí cao hơn.
+      examples:
+        - target: With all due respect, I don't think the figures support that conclusion.
+          translation:
+            vi: Với tất cả sự tôn trọng, tôi không nghĩ số liệu ủng hộ kết luận đó.
+      confusion:
+        vi: Cụm này báo hiệu sắp phản đối mạnh; dùng quá nhiều hoặc với giọng gay gắt nghe lại thành mỉa mai.
+
+  - key: en:item:see-it-differently
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I see it (somewhat) differently.
+      ipa: /aɪ ˈsiː ɪt ˈdɪfrəntli/
+      pos: cụm phản đối nhẹ nhàng
+    back:
+      meaning:
+        vi: Tôi nhìn nhận vấn đề hơi khác - cách phản đối mềm thay cho "You are wrong".
+      examples:
+        - target: I see it somewhat differently - in my experience, customers care more about service than price.
+          translation:
+            vi: Tôi nhìn nhận hơi khác - theo kinh nghiệm của tôi, khách hàng quan tâm đến dịch vụ hơn giá cả.
+      confusion:
+        vi: Nói You are wrong / You're not right với người lạ hay cấp trên nghe rất gay gắt trong tiếng Anh; hãy phản đối ý kiến, không phản đối con người.
+
+  - key: en:item:counter-argument
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: counter-argument
+      ipa: UK /ˈkaʊntər ˌɑːɡjumənt/ · US /ˈkaʊntɚ ˌɑːrɡjəmənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Lập luận phản bác, lập luận của phía bên kia.
+      examples:
+        - target: A strong essay anticipates the main counter-argument and answers it.
+          translation:
+            vi: Một bài luận tốt lường trước lập luận phản bác chính và trả lời nó.
+      pronunciation_note:
+        vi: Trọng âm chính rơi vào counter - /ˈkaʊntə(r)/.
+      confusion:
+        vi: Danh từ đếm được - a counter-argument, counter-arguments; cũng viết counterargument.
+
+  - key: en:item:rebut
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: rebut / rebuttal
+      ipa: /rɪˈbʌt/ · /rɪˈbʌtl/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: Bác bỏ (một lập luận, cáo buộc) bằng lý lẽ hoặc bằng chứng.
+      examples:
+        - target: The minister rebutted the claim with figures from an independent study.
+          translation:
+            vi: Bộ trưởng bác bỏ cáo buộc bằng số liệu từ một nghiên cứu độc lập.
+      pronunciation_note:
+        vi: Trọng âm âm hai /-ˈbʌt/; quá khứ nhân đôi t - rebutted.
+      confusion:
+        vi: Rebut là chứng minh điều kia sai bằng lý lẽ; refute mạnh hơn (đã chứng minh xong), còn deny chỉ là nói "không đúng".
+
+  - key: en:item:concede
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: concede (that) …
+      ipa: /kənˈsiːd/
+      pos: động từ
+    back:
+      meaning:
+        vi: Thừa nhận (thường miễn cưỡng) rằng ý kia đúng một phần; nhượng bộ.
+      examples:
+        - target: She conceded that the deadline was unrealistic.
+          translation:
+            vi: Cô ấy thừa nhận rằng thời hạn đó là phi thực tế.
+        - target: I'm willing to concede that point, but not the whole argument.
+          translation:
+            vi: Tôi sẵn sàng nhượng bộ ở điểm đó, nhưng không phải toàn bộ lập luận.
+      confusion:
+        vi: Concede a point (nhượng một điểm) khác concede defeat (chịu thua). Danh từ là concession.
+
+  - key: en:item:compelling
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: compelling
+      ipa: /kəmˈpelɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Thuyết phục, có sức nặng (lập luận, bằng chứng, lý do).
+      examples:
+        - target: The study provides compelling evidence that the drug works.
+          translation:
+            vi: Nghiên cứu đưa ra bằng chứng thuyết phục rằng thuốc có hiệu quả.
+      confusion:
+        vi: Collocation thường gặp - a compelling argument/case/reason/evidence. Mạnh hơn convincing; không dùng cho người (a compelling person nghĩa là người cuốn hút).
+
+  - key: en:item:flawed-reasoning
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: flawed reasoning / a flawed argument
+      ipa: UK /ˈflɔːd ˈriːzənɪŋ/ · US /ˈflɑːd ˈriːzənɪŋ/
+      pos: collocation
+    back:
+      meaning:
+        vi: Lập luận có lỗ hổng, suy luận sai.
+      examples:
+        - target: The conclusion rests on flawed reasoning - correlation is not causation.
+          translation:
+            vi: Kết luận dựa trên suy luận sai - tương quan không có nghĩa là nhân quả.
+      confusion:
+        vi: Phê bình lập luận (flawed reasoning) thay vì phê bình người nói (you are stupid) là chuẩn mực tranh luận lịch sự.
+
+  - key: en:item:undermine
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: undermine
+      ipa: UK /ˌʌndəˈmaɪn/ · US /ˌʌndɚˈmaɪn/
+      pos: động từ
+    back:
+      meaning:
+        vi: Làm suy yếu (từ từ, từ bên trong) - một lập luận, niềm tin, uy tín.
+      examples:
+        - target: One small error in the data could undermine the whole argument.
+          translation:
+            vi: Chỉ một lỗi nhỏ trong số liệu cũng có thể làm suy yếu cả lập luận.
+      confusion:
+        vi: Undermine khác underestimate (đánh giá thấp) - hai từ dễ nhầm vì cùng tiền tố under-.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:food-for-thought
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: food for thought
+      ipa: UK /ˌfuːd fə ˈθɔːt/ · US /ˌfuːd fɚ ˈθɑːt/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Điều đáng suy ngẫm (hay dùng để kết thúc bài nói).
+      examples:
+        - target: I'll leave you with a little food for thought - what will your job look like in ten years?
+          translation:
+            vi: Tôi xin để lại cho các bạn một điều để suy ngẫm - công việc của bạn sẽ ra sao trong mười năm nữa?
+      confusion:
+        vi: Danh từ không đếm được - some food for thought, không nói a food for thought.
+
+  - key: en:item:burden-of-proof
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: the burden of proof (is on / lies with …)
+      ipa: UK /ðə ˌbɜːdn əv ˈpruːf/ · US /ðə ˌbɝːdn əv ˈpruːf/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Nghĩa vụ chứng minh - bên đưa ra nhận định phải đưa bằng chứng.
+      examples:
+        - target: You're the one proposing the change, so the burden of proof is on you.
+          translation:
+            vi: Bạn là người đề xuất thay đổi, nên bạn có nghĩa vụ chứng minh.
+      confusion:
+        vi: Dùng the burden of proof lies with/is on + người, không nói the burden of proof belongs to.

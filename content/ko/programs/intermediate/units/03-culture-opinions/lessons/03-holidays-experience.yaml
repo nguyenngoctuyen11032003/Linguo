@@ -27,6 +27,7 @@ items:
   - item: ko:item:charye
   - item: ko:item:sebae
   - item: ko:item:hanbok
+    role: reuse
   - item: ko:item:songpyeon
   - item: ko:item:dareuda
     role: reuse

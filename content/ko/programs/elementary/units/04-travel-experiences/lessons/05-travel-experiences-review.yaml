@@ -1,0 +1,448 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:travel-experiences-review
+order_index: 5
+level: topik2
+title:
+  vi: Ôn tập - Nhật ký Jeju & gọi điện đặt phòng
+objectives:
+  - vi: Đọc hiểu một trang nhật ký du lịch Jeju 2 đêm 3 ngày có trước khi / sau khi / khi / vừa… vừa….
+  - vi: Nghe hiểu và nói được một cuộc gọi đặt phòng khách sạn - số đêm, giờ nhận / trả phòng, giá.
+  - vi: Tránh các lỗi quen thuộc - 갔기 전에, 갈 때 / 갔을 때, -(으)면서 khác chủ ngữ, vị trí của N보다.
+estimated_minutes: 18
+skills: [reading, listening, writing, grammar]
+prerequisites: [ko:lesson:comparing-booking]
+items:
+  - item: ko:item:cheot-nal
+  - item: ko:item:ilgi
+    role: reuse
+  - item: ko:item:jejudo
+    role: reuse
+  - item: ko:item:bak-il
+    role: reuse
+  - item: ko:item:gram-gi-jeone
+    role: reuse
+  - item: ko:item:gram-eun-hue
+    role: reuse
+  - item: ko:item:gram-eul-ttae
+    role: reuse
+  - item: ko:item:gram-asseul-ttae
+    role: reuse
+  - item: ko:item:gram-eumyeonseo
+    role: reuse
+  - item: ko:item:gram-euryeogo-hada
+    role: reuse
+  - item: ko:item:gram-eun-jeok-itda
+    role: reuse
+  - item: ko:item:gram-boda-deo
+    role: reuse
+  - item: ko:item:gram-jeil-gajang
+    role: reuse
+  - item: ko:item:bang
+    role: reuse
+  - item: ko:item:chekeuin
+    role: reuse
+  - item: ko:item:myeot-bak
+    role: reuse
+  - item: ko:item:ginyeompum
+    role: reuse
+  - item: ko:item:gugyeonghada
+    role: reuse
+  - item: ko:item:areumdapda
+    role: reuse
+  - item: ko:item:yeyakada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn đọc được nhật ký chuyến đi Jeju của Tuấn, hiểu cuộc gọi đặt phòng của anh ấy và tự viết vài câu kể về chuyến đi của mình.
+  - type: explain
+    text:
+      vi: 'Phần 1 là 일기 (nhật ký) của Tuấn (투안) về chuyến đi Jeju 2박 3일, kể theo 첫날 → 둘째 날 → 마지막 날. Hãy để ý các mốc thời gian - 출발하기 전에, 도착한 후에, 비가 올 때, 구경하면서.'
+  - type: explain
+    text:
+      vi: 'Phần 2 là cuộc gọi Tuấn đặt phòng trước chuyến đi. Một cuộc gọi đặt phòng thường đi theo thứ tự - ngày và số đêm (10월 1일부터 2박), số người, giờ nhận / trả phòng, giá (1박에 얼마예요?), rồi chốt 예약할게요.'
+  - type: deep_explain
+    text:
+      vi: Nhật ký thật của người Hàn thường viết đuôi -았다/었다 (갔다, 좋았다); ở đây dùng 해요체 để bạn đọc dễ hơn. Khách sạn nghe máy thường nói 합쇼체 - 네, 바다호텔입니다 - vì đây là lời chào công việc; khách trả lời bằng 해요체 lịch sự là đủ. Giá phòng tính theo đêm - 1박에 12만 원 (12 vạn won một đêm).
+  - type: example
+    target: "[첫날] 지난주에 친구 민지하고 제주도에 2박 3일 동안 여행을 갔어요. 출발하기 전에 인터넷으로 비행기표와 숙소를 예약했어요. 김포공항에서 비행기를 타고 한 시간 후에 제주도에 도착했어요. 호텔에 도착한 후에 바다에 갔어요. 바다를 구경하면서 사진을 많이 찍었어요."
+    target_lang: ko
+    translation:
+      vi: "[Ngày đầu] Tuần trước tôi đi du lịch Jeju 3 ngày 2 đêm với bạn tôi là Minji. Trước khi xuất phát, tôi đã đặt vé máy bay và chỗ ở qua mạng. Chúng tôi lên máy bay ở sân bay Gimpo và một tiếng sau thì đến Jeju. Đến khách sạn xong, chúng tôi ra biển. Chúng tôi vừa ngắm biển vừa chụp rất nhiều ảnh."
+    note:
+      vi: 출발하기 전에 (trước khi), 한 시간 후에 (một tiếng sau), 도착한 후에 (sau khi), 구경하면서 (vừa… vừa…).
+  - type: example
+    target: "[둘째 날] 한라산에 올라가려고 했어요. 그런데 비가 와서 박물관을 구경했어요. 비가 올 때는 박물관이 제일 좋아요!"
+    target_lang: ko
+    translation:
+      vi: "[Ngày thứ hai] Chúng tôi định leo núi Halla. Nhưng trời mưa nên chúng tôi đi tham quan bảo tàng. Khi trời mưa thì bảo tàng là tuyệt nhất!"
+    note:
+      vi: -(으)려고 했어요 = đã định nhưng không làm được; 올 때 = khi (trời mưa).
+  - type: example
+    target: "[마지막 날] 공항에 가기 전에 시장에서 기념품을 샀어요. 저는 제주도에 가 본 적이 없었어요. 그런데 제주도 바다가 베트남 바다보다 더 파란 것 같았어요. 이번 여행에서 바다가 제일 좋았어요. 다음에는 한라산에 꼭 올라가 보려고 해요."
+    target_lang: ko
+    translation:
+      vi: "[Ngày cuối] Trước khi ra sân bay, tôi mua quà lưu niệm ở chợ. Trước đây tôi chưa từng đến Jeju. Biển Jeju hình như xanh hơn biển Việt Nam. Trong chuyến này tôi thích biển nhất. Lần sau tôi nhất định sẽ thử leo núi Halla."
+    note:
+      vi: 가기 전에 · 가 본 적이 없었어요 · N보다 더 · 제일 · 올라가 보려고 해요.
+  - type: example
+    target: "직원: 네, 바다호텔입니다. / 투안: 안녕하세요. 방을 예약하고 싶어요. 10월 1일부터 2박 할 거예요. 빈방 있어요? / 직원: 네, 있어요. 몇 분이세요? / 투안: 두 명이에요. 체크인은 몇 시부터예요? / 직원: 오후 3시부터예요. 체크아웃은 오전 11시까지예요. / 투안: 1박에 얼마예요? / 직원: 1박에 12만 원이에요. / 투안: 좋아요. 그럼 예약할게요."
+    target_lang: ko
+    translation:
+      vi: "Nhân viên: Vâng, khách sạn Bada xin nghe. / Tuấn: Xin chào. Tôi muốn đặt phòng. Tôi ở 2 đêm từ ngày 1 tháng 10. Còn phòng trống không ạ? / Nhân viên: Vâng, còn ạ. Quý khách mấy người ạ? / Tuấn: Hai người. Nhận phòng từ mấy giờ ạ? / Nhân viên: Từ 3 giờ chiều. Trả phòng trước 11 giờ sáng. / Tuấn: Một đêm bao nhiêu tiền ạ? / Nhân viên: Một đêm 120.000 won. / Tuấn: Được ạ. Vậy tôi đặt nhé."
+    note:
+      vi: 몇 분이세요? là cách hỏi số người lịch sự (분 = người, kính ngữ); bạn trả lời bằng 명 - 두 명이에요.
+  - type: common_mistake
+    wrong: 공항에 갔기 전에 기념품을 샀어요.
+    right: 공항에 가기 전에 기념품을 샀어요.
+    target_lang: ko
+    note:
+      vi: Chuyện đã qua nhưng -기 전에 vẫn gắn vào gốc; thì quá khứ chỉ ở 샀어요.
+  - type: common_mistake
+    wrong: 제주도에 갈 때 바다에서 사진을 찍었어요.
+    right: 제주도에 갔을 때 바다에서 사진을 찍었어요.
+    target_lang: ko
+    note:
+      vi: Bạn chụp ảnh khi đã ở Jeju, nên dùng 갔을 때. 갈 때 là lúc đang trên đường đi.
+  - type: common_mistake
+    wrong: 제가 사진을 찍으면서 민지가 바다를 구경했어요.
+    right: 제가 사진을 찍고 민지는 바다를 구경했어요.
+    target_lang: ko
+    note:
+      vi: Hai người làm hai việc thì không dùng -(으)면서; nối bằng -고.
+  - type: common_mistake
+    wrong: 제주도 바다가 더 파래요 베트남 바다보다.
+    right: 제주도 바다가 베트남 바다보다 더 파래요.
+    target_lang: ko
+    note:
+      vi: N보다 luôn đứng trước tính từ, không đặt cuối câu như "xanh hơn biển Việt Nam".
+  - type: summary
+    points:
+      - vi: Thứ tự chuyến đi - V-기 전에 → V-(으)ㄴ 후에 → V-(으)ㄹ 때 / V-았/었을 때.
+      - vi: V-(으)면서 (một người, hai việc) · V-(으)려고 해요 / 했어요 · V-아/어 본 적이 있어요/없어요.
+      - vi: A이/가 B보다 더 + tính từ · 제일 / 가장 + tính từ.
+      - vi: Đặt phòng - 빈방 있어요? · 2박 할 거예요 · 체크인은 3시부터 · 1박에 얼마예요? · 예약할게요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:travel-experiences-review-listen-checkin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:chekeuin
+    prompt:
+      audio_asset_id: null
+      fallback_text: 체크인은 오후 3시부터예요. 체크아웃은 오전 11시까지예요.
+      options:
+        - { id: l5c, text: Nhận phòng từ 3 giờ chiều. Trả phòng trước 11 giờ sáng., lang: vi }
+        - { id: g2n, text: Nhận phòng từ 3 giờ sáng. Trả phòng trước 11 giờ tối., lang: vi }
+        - { id: w8r, text: Nhận phòng trước 3 giờ chiều. Trả phòng từ 11 giờ sáng., lang: vi }
+        - { id: a4j, text: Nhận phòng từ 4 giờ chiều. Trả phòng trước 11 giờ sáng., lang: vi }
+    answer:
+      correct_option_id: l5c
+    explanation:
+      vi: 오후 = buổi chiều, 오전 = buổi sáng; 부터 = từ, 까지 = đến (hạn). 3시 đọc [세 시].
+    display_answer: Nhận phòng từ 3 giờ chiều. Trả phòng trước 11 giờ sáng.
+
+  - key: ko:exercise:travel-experiences-review-mcq-why-museum
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      stem: "Đọc nhật ký: 둘째 날에는 한라산에 올라가려고 했어요. 그런데 비가 와서 박물관을 구경했어요. Vì sao Tuấn không leo núi Halla?"
+      stem_lang: vi
+      options:
+        - { id: v6t, text: Vì trời mưa., lang: vi }
+        - { id: q3p, text: Vì anh ấy đã từng leo rồi., lang: vi }
+        - { id: e5x, text: Vì anh ấy thích bảo tàng hơn., lang: vi }
+        - { id: o9b, text: Vì hết vé., lang: vi }
+    answer:
+      correct_option_id: v6t
+    explanation:
+      vi: 올라가려고 했어요 = đã định leo; 그런데 비가 와서 = nhưng vì trời mưa (-아서 chỉ lý do). Nên Tuấn đổi sang tham quan bảo tàng.
+    display_answer: Vì trời mưa.
+
+  - key: ko:exercise:travel-experiences-review-mcq-spelling
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      stem: "Chọn câu đúng cho \"Lần sau tôi nhất định sẽ thử leo núi Halla.\""
+      stem_lang: vi
+      options:
+        - { id: n7w, text: 다음에는 한라산에 꼭 올라가 보려고 해요., lang: ko }
+        - { id: c1s, text: 다음에는 한라산에 꼭 올라가 볼려고 해요., lang: ko }
+        - { id: k4f, text: 다음에는 한라산에 꼭 올라갔 보려고 해요., lang: ko }
+        - { id: z8m, text: 다음에는 한라산에 꼭 올라가 본 적이 해요., lang: ko }
+    answer:
+      correct_option_id: n7w
+    explanation:
+      vi: 올라가 보다 + -(으)려고 해요 → 올라가 보려고 해요. 볼려고 sai chính tả (보 không có ㄹ), 올라갔 보다 sai, còn 본 적이 phải đi với 있다/없다.
+    display_answer: 다음에는 한라산에 꼭 올라가 보려고 해요.
+
+  - key: ko:exercise:travel-experiences-review-fill-before
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-gi-jeone
+    prompt:
+      template: "{{b1}} 전에 인터넷으로 비행기표와 숙소를 예약했어요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Trước khi xuất phát, tôi đã đặt vé máy bay và chỗ ở qua mạng."
+        - "Gợi ý: 출발하다 + -기."
+    answer:
+      blanks:
+        b1: [출발하기]
+    known_wrong:
+      - answer: 출발했기
+        feedback_vi: -기 전에 không chia quá khứ; quá khứ đã nằm ở 예약했어요.
+        error_tag: past_before_gi_jeone
+      - answer: 출발한
+        feedback_vi: 출발한 đi với 후에 ("sau khi"). "Trước khi" là 출발하기 전에.
+        error_tag: jeon_hu_form
+    explanation:
+      vi: Trước khi xuất phát = 출발하기 전에 (gốc + 기, không chia thì).
+    display_answer: 출발하기 전에 인터넷으로 비행기표와 숙소를 예약했어요.
+
+  - key: ko:exercise:travel-experiences-review-wb-souvenir
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:ginyeompum
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Trước khi ra sân bay, tôi đã mua quà lưu niệm.\""
+      tokens:
+        - { id: v3, text: 전에 }
+        - { id: v5, text: 샀어요 }
+        - { id: v1, text: 공항에 }
+        - { id: v6, text: 갔기 }
+        - { id: v4, text: 기념품을 }
+        - { id: v2, text: 가기 }
+    answer:
+      orders:
+        - [v1, v2, v3, v4, v5]
+    explanation:
+      vi: 공항에 가기 전에 (trước khi ra sân bay) đứng đầu, rồi 기념품을 샀어요. 갔기 sai vì -기 전에 không chia quá khứ.
+    display_answer: 공항에 가기 전에 기념품을 샀어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:travel-experiences-review-fill-diary
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eumyeonseo
+    prompt:
+      template: "(Đến khách sạn xong, chúng tôi ra biển.) 호텔에 {{b1}} 후에 바다에 갔어요. (Chúng tôi vừa ngắm biển vừa chụp ảnh.) 바다를 {{b2}} 사진을 찍었어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [도착한]
+        b2: [구경하면서, 보면서]
+    known_wrong:
+      - answer: 도착하는
+        feedback_vi: "\"Sau khi\" cần -(으)ㄴ - 도착한 후에."
+        error_tag: eun_hue_form
+      - answer: 도착하기
+        feedback_vi: -기 đi với 전에. "Sau khi" là 도착한 후에.
+        error_tag: jeon_hu_form
+      - answer: 구경하고
+        feedback_vi: -고 là làm lần lượt. "Vừa… vừa…" dùng -(으)면서.
+        error_tag: myeonseo_go
+    explanation:
+      vi: Sau khi đến = 도착한 후에. Hai việc cùng lúc của cùng một người = 구경하면서 / 보면서.
+    display_answer: 호텔에 도착한 후에 바다에 갔어요. 바다를 구경하면서 사진을 찍었어요.
+
+  - key: ko:exercise:travel-experiences-review-translate-halla
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-euryeogo-hada
+    prompt:
+      source_text: Tôi đã định leo núi Halla nhưng trời mưa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 한라산에 올라가려고 했지만 비가 왔어요.
+        - 한라산에 올라가려고 했어요. 그런데 비가 왔어요.
+        - 한라산에 올라가려고 했어요. 하지만 비가 왔어요.
+        - 저는 한라산에 올라가려고 했지만 비가 왔어요.
+        - 한라산에 가려고 했지만 비가 왔어요.
+        - 한라산에 가려고 했어요. 그런데 비가 왔어요.
+        - 한라산에 등산하려고 했지만 비가 왔어요.
+        - 한라산을 등산하려고 했지만 비가 왔어요.
+        - 한라산에 등산하려고 했어요. 그런데 비가 왔어요.
+        - 한라산에 올라가려고 했는데 비가 왔어요.
+    known_wrong:
+      - answer: 한라산에 올라갈려고 했지만 비가 왔어요.
+        feedback_vi: Chính tả chuẩn là 올라가려고 - 가 không có ㄹ.
+        error_tag: ryeogo_spelling
+      - answer: 한라산에 올라가려고 해요. 그런데 비가 왔어요.
+        feedback_vi: Việc "đã định" trong quá khứ dùng -(으)려고 했어요.
+        error_tag: ryeogo_tense
+      - answer: 한라산에 올라갔지만 비가 왔어요.
+        feedback_vi: 올라갔지만 là "đã leo nhưng". Ở đây chỉ "định leo" - 올라가려고 했지만.
+        error_tag: ryeogo_meaning
+    explanation:
+      vi: '"Đã định… nhưng" = V-(으)려고 했지만 hoặc V-(으)려고 했어요. 그런데…. Leo núi = 산에 올라가다 hoặc 등산하다.'
+    display_answer: 한라산에 올라가려고 했지만 비가 왔어요.
+
+  - key: ko:exercise:travel-experiences-review-translate-vacancy
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:bang
+    prompt:
+      source_text: Cuối tuần này còn phòng trống không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이번 주말에 빈방 있어요?
+        - 이번 주말에 빈방이 있어요?
+        - 이번 주말 빈방 있어요?
+        - 이번 주말에 방 있어요?
+        - 이번 주말에 방이 있어요?
+        - 이번 주말에 빈방 있나요?
+        - 이번 주말에는 빈방 있어요?
+    known_wrong:
+      - answer: 이번 주말에 빈방 없어요?
+        feedback_vi: 없어요? hỏi "không có phòng à?". Hỏi "còn phòng không" dùng 있어요?
+        error_tag: itda_eopda
+      - answer: 이번 주말 때 빈방 있어요?
+        feedback_vi: 주말 dùng 에, không dùng 때 - 이번 주말에.
+        error_tag: noun_ttae
+      - answer: 이번 주말에 빈방 있으세요?
+        feedback_vi: Kính ngữ -시- dùng cho người, không dùng cho đồ vật như phòng. Nói 빈방 있어요?
+        error_tag: honorific_object
+    explanation:
+      vi: Còn phòng trống = 빈방(이) 있어요?; cuối tuần này = 이번 주말에.
+    display_answer: 이번 주말에 빈방 있어요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:travel-experiences-review-mcq-cheaper
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-boda-deo
+    prompt:
+      stem: "Lễ tân nói: 1박에 12만 원이에요. Bạn thấy hơi đắt và muốn hỏi \"Có phòng rẻ hơn không?\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: x4d, text: 더 싼 방 있어요?, lang: ko }
+        - { id: m7q, text: 더 비싼 방 있어요?, lang: ko }
+        - { id: u1g, text: 방 있어요 더 싼?, lang: ko }
+        - { id: b3w, text: 제일 방 싸요?, lang: ko }
+    answer:
+      correct_option_id: x4d
+    explanation:
+      vi: 더 싼 방 = phòng rẻ hơn (더 + bổ nghĩa đứng trước danh từ). 비싼 là "đắt"; đặt 더 싼 sau động từ là lối nói tiếng Việt; 제일 phải đứng trước tính từ.
+    display_answer: 더 싼 방 있어요?
+
+  - key: ko:exercise:travel-experiences-review-mcq-best
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-jeil-gajang
+    prompt:
+      stem: "Đọc nhật ký: 이번 여행에서 바다가 제일 좋았어요. 다음에는 한라산에 꼭 올라가 보려고 해요. Câu nào đúng với đoạn này?"
+      stem_lang: vi
+      options:
+        - { id: f8h, text: Tuấn thích biển nhất và lần sau định leo núi Halla., lang: vi }
+        - { id: d2s, text: Tuấn thích núi Halla nhất và đã leo lên rồi., lang: vi }
+        - { id: y5k, text: Tuấn thấy biển đẹp hơn núi và không muốn quay lại., lang: vi }
+        - { id: p6v, text: Tuấn đã từng leo núi Halla nhiều lần., lang: vi }
+    answer:
+      correct_option_id: f8h
+    explanation:
+      vi: 바다가 제일 좋았어요 = thích biển nhất; 올라가 보려고 해요 = định thử leo (chưa leo). Các phương án khác mâu thuẫn với 려고 해요 (chưa làm).
+    display_answer: Tuấn thích biển nhất và lần sau định leo núi Halla.
+
+  - key: ko:exercise:travel-experiences-review-translate-day1-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:cheot-nal
+    prompt:
+      source_text: 첫날에는 바다를 구경하면서 사진을 많이 찍었어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày đầu tiên, tôi vừa ngắm biển vừa chụp nhiều ảnh.
+        - Ngày đầu tiên, tôi vừa ngắm biển vừa chụp rất nhiều ảnh.
+        - Ngày đầu, tôi vừa ngắm biển vừa chụp nhiều ảnh.
+        - Ngày đầu tiên tôi vừa ngắm biển vừa chụp được nhiều ảnh.
+        - Ngày đầu tiên, chúng tôi vừa ngắm biển vừa chụp nhiều ảnh.
+        - Ngày đầu, chúng tôi vừa ngắm biển vừa chụp rất nhiều ảnh.
+        - Hôm đầu tiên, tôi vừa ngắm biển vừa chụp nhiều ảnh.
+        - Ngày đầu tiên, tôi vừa ngắm biển vừa chụp ảnh rất nhiều.
+        - Ngày đầu tiên, tôi vừa ngắm biển vừa chụp nhiều hình.
+        - Ngày đầu tiên tôi vừa ngắm biển vừa chụp ảnh nhiều.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngày đầu tiên, tôi ngắm biển xong rồi chụp nhiều ảnh.
+        feedback_vi: -(으)면서 là hai việc cùng lúc (vừa… vừa…), không phải làm xong việc này rồi mới làm việc kia.
+        error_tag: myeonseo_meaning
+      - answer: Ngày cuối cùng, tôi vừa ngắm biển vừa chụp nhiều ảnh.
+        feedback_vi: 첫날 là ngày đầu tiên; ngày cuối là 마지막 날.
+        error_tag: vocab_cheot_nal
+    explanation:
+      vi: 첫날 [천날] = ngày đầu; 구경하면서 = vừa ngắm; 사진을 많이 찍었어요 = đã chụp nhiều ảnh.
+    display_answer: Ngày đầu tiên, tôi vừa ngắm biển vừa chụp nhiều ảnh.
+
+  - key: ko:exercise:travel-experiences-review-translate-never
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-jeok-itda
+    prompt:
+      source_text: Tôi chưa từng đi Jeju.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제주도에 가 본 적이 없어요.
+        - 저는 제주도에 가 본 적이 없어요.
+        - 제주도에 간 적이 없어요.
+        - 저는 제주도에 간 적이 없어요.
+        - 제주도에 가 본 적 없어요.
+        - 제주도에는 가 본 적이 없어요.
+        - 저는 제주도에 안 가 봤어요.
+        - 제주도에 안 가 봤어요.
+    known_wrong:
+      - answer: 제주도에 가 본 적이 안 있어요.
+        feedback_vi: Phủ định của 있어요 là 없어요, không phải 안 있어요.
+        error_tag: an_itda
+      - answer: 제주도에 가는 적이 없어요.
+        feedback_vi: Trải nghiệm dùng -(으)ㄴ - 간 적 / 가 본 적, không dùng 가는.
+        error_tag: eun_jeok_form
+      - answer: 제주도에 가려고 하지 않아요.
+        feedback_vi: Câu này là "không định đi", không phải "chưa từng đi".
+        error_tag: ryeogo_vs_jeok
+    explanation:
+      vi: Chưa từng = V-(으)ㄴ 적이 없어요; hay dùng với -아/어 보다 - 가 본 적이 없어요. Nơi đến dùng 에.
+    display_answer: 제주도에 가 본 적이 없어요.

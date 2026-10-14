@@ -1,0 +1,424 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:comparing-booking
+order_index: 4
+level: topik2
+title:
+  vi: So sánh & đặt phòng khách sạn
+objectives:
+  - vi: So sánh bằng N보다 (더) và nói "nhất" bằng 제일 / 가장 đúng trật tự tiếng Hàn.
+  - vi: Hỏi phòng trống, đặt phòng theo số đêm (1박 2일, 2박 3일) và hỏi giờ nhận / trả phòng.
+  - vi: Hiểu câu hỏi của lễ tân - 몇 박 하실 거예요? - và trả lời đúng.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ko:lesson:plans-experiences]
+items:
+  - item: ko:item:gram-boda-deo
+  - item: ko:item:gram-jeil-gajang
+  - item: ko:item:hotel
+  - item: ko:item:bang
+  - item: ko:item:sukso
+  - item: ko:item:bak-il
+  - item: ko:item:chekeuin
+  - item: ko:item:myeot-bak
+  - item: ko:item:gakkapda
+  - item: ko:item:pyeonhada
+  - item: ko:item:yeyakada
+    role: reuse
+  - item: ko:item:bissayo
+    role: reuse
+  - item: ko:item:ssayo
+    role: reuse
+  - item: ko:item:gram-honorific-subject
+    role: reuse
+  - item: ko:item:gram-b-irregular
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn so sánh được hai chỗ ở (rẻ hơn, gần hơn, tiện nhất) và gọi điện đặt phòng cho chuyến đi 2 đêm 3 ngày.
+  - type: explain
+    text:
+      vi: So sánh hơn - A이/가 B보다 (더) + tính từ. 보다 gắn vào vế "hơn ai/cái gì" và đứng trước tính từ - 제주도가 서울보다 더 따뜻해요 (Jeju ấm hơn Seoul). 더 có thể bỏ, nghĩa không đổi.
+  - type: explain
+    text:
+      vi: So sánh nhất - 제일 / 가장 + tính từ - 제일 싸요, 가장 높은 산. Phạm vi so sánh dùng N 중에서 hoặc N에서 - 이 호텔들 중에서 어디가 제일 가까워요?
+  - type: explain
+    text:
+      vi: 박 là đêm, 일 là ngày - 1박 2일 (1 đêm 2 ngày), 2박 3일 (2 đêm 3 ngày), đọc bằng số Hán Hàn. Lễ tân sẽ hỏi 몇 박 하실 거예요? (Quý khách ở mấy đêm?) - bạn trả lời 2박 할 거예요 hoặc ngắn gọn 2박이요.
+  - type: deep_explain
+    text:
+      vi: 'Tiếng Việt nói "A cao hơn B" (tính từ trước, "hơn B" sau), còn tiếng Hàn đặt B보다 trước tính từ - 저보다 키가 커요. Vì vậy câu "형이 키가 커요 저보다" nghe như nói vội rồi thêm vào, không phải câu chuẩn. Cũng cẩn thận gắn 보다 đúng danh từ - 서울보다 제주도가 따뜻해요 và 제주도가 서울보다 따뜻해요 cùng nghĩa, vì 보다 luôn đi với vế bị so sánh.'
+  - type: example
+    target: 제주도가 서울보다 더 따뜻해요.
+    target_lang: ko
+    translation:
+      vi: Jeju ấm hơn Seoul.
+    note:
+      vi: 서울보다 = "hơn Seoul"; chủ ngữ được khen là 제주도가.
+  - type: example
+    target: 형이 저보다 키가 커요.
+    target_lang: ko
+    translation:
+      vi: Anh tôi cao hơn tôi.
+    note:
+      vi: '"Cao" trong tiếng Hàn là 키가 크다; 저보다 đứng trước 키가 커요.'
+  - type: example
+    target: 이 호텔이 역에서 제일 가까워요. 그런데 방이 좀 비싸요.
+    target_lang: ko
+    translation:
+      vi: Khách sạn này gần ga nhất. Nhưng phòng hơi đắt.
+    note:
+      vi: 가깝다 bất quy tắc ㅂ → 가까워요; mốc "gần đâu" dùng 에서.
+  - type: example
+    target: "직원: 몇 박 하실 거예요? / 손님: 2박 할 거예요. 체크인은 몇 시부터예요? / 직원: 오후 3시부터예요."
+    target_lang: ko
+    translation:
+      vi: "Nhân viên: Quý khách ở mấy đêm ạ? / Khách: Tôi ở 2 đêm. Nhận phòng từ mấy giờ ạ? / Nhân viên: Từ 3 giờ chiều ạ."
+    note:
+      vi: 하실 có -시- vì nhân viên nói với khách; khách trả lời về mình thì bỏ -시-.
+  - type: example
+    target: 이번 주말에 빈방 있어요? 1박 2일로 예약하고 싶어요.
+    target_lang: ko
+    translation:
+      vi: Cuối tuần này còn phòng trống không? Tôi muốn đặt 1 đêm 2 ngày.
+    note:
+      vi: N(으)로 예약하다 = đặt theo (gói / số đêm).
+  - type: common_mistake
+    wrong: 형이 키가 커요 저보다.
+    right: 형이 저보다 키가 커요.
+    target_lang: ko
+    note:
+      vi: Người Việt dịch thẳng "cao hơn tôi" nên đặt 저보다 ở cuối. Trong tiếng Hàn, tính từ luôn ở cuối câu và N보다 đứng trước nó.
+  - type: common_mistake
+    wrong: 이 숙소가 싸요 제일.
+    right: 이 숙소가 제일 싸요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "rẻ nhất" đặt "nhất" sau tính từ, còn 제일 / 가장 luôn đứng trước tính từ.
+  - type: common_mistake
+    wrong: 3일 2박 예약하고 싶어요.
+    right: 2박 3일 예약하고 싶어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "3 ngày 2 đêm", tiếng Hàn nói đêm trước, ngày sau - 2박 3일. Lễ tân hỏi theo số đêm (몇 박).
+  - type: summary
+    points:
+      - vi: A이/가 B보다 (더) + tính từ - B보다 luôn đứng trước tính từ.
+      - vi: 제일 / 가장 + tính từ (제일 싸요, 가장 높은 산); phạm vi - N 중에서 / N에서.
+      - vi: 1박 2일 · 2박 3일 (đêm trước, ngày sau); 몇 박 하실 거예요? → 2박 할 거예요.
+      - vi: 빈방 있어요? · 체크인은 3시부터 · 체크아웃은 11시까지 · 숙소 · 가까워요 / 멀어요 · 편해요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:comparing-booking-listen-nights
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:myeot-bak
+    prompt:
+      audio_asset_id: null
+      fallback_text: 몇 박 하실 거예요? - 2박 할 거예요.
+      options:
+        - { id: p4r, text: "Quý khách ở mấy đêm? - Tôi ở 2 đêm.", lang: vi }
+        - { id: c9e, text: "Quý khách ở mấy đêm? - Tôi ở 3 đêm.", lang: vi }
+        - { id: z1k, text: "Quý khách đi mấy người? - 2 người.", lang: vi }
+        - { id: i6b, text: "Quý khách ở mấy ngày? - Tôi ở 2 ngày.", lang: vi }
+    answer:
+      correct_option_id: p4r
+    explanation:
+      vi: 박 là đêm (ngủ lại), không phải ngày (일) hay người (명). 2박 [이박] = 2 đêm.
+    display_answer: "Quý khách ở mấy đêm? - Tôi ở 2 đêm."
+
+  - key: ko:exercise:comparing-booking-mcq-bak-il
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:bak-il
+    prompt:
+      stem: "제주도 2박 3일 여행 nghĩa là chuyến đi Jeju…"
+      stem_lang: vi
+      options:
+        - { id: o3w, text: 3 ngày 2 đêm, lang: vi }
+        - { id: e7d, text: 2 ngày 3 đêm, lang: vi }
+        - { id: n2h, text: 2 ngày 2 đêm, lang: vi }
+        - { id: v8s, text: 23 ngày, lang: vi }
+    answer:
+      correct_option_id: o3w
+    explanation:
+      vi: 박 = đêm, 일 = ngày; tiếng Hàn nói số đêm trước - 2박 3일 = 2 đêm 3 ngày, tiếng Việt quen nói "3 ngày 2 đêm".
+    display_answer: 3 ngày 2 đêm
+
+  - key: ko:exercise:comparing-booking-mcq-warmer
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-boda-deo
+    prompt:
+      stem: Câu nào có nghĩa "Jeju ấm hơn Seoul"?
+      stem_lang: vi
+      options:
+        - { id: u5m, text: 제주도가 서울보다 더 따뜻해요., lang: ko }
+        - { id: f2t, text: 서울이 제주도보다 더 따뜻해요., lang: ko }
+        - { id: w8a, text: 제주도가 더 따뜻해요 서울보다., lang: ko }
+        - { id: g4y, text: 제주도보다 서울이 더 따뜻해요., lang: ko }
+    answer:
+      correct_option_id: u5m
+    explanation:
+      vi: 보다 gắn vào vế "hơn ai" - 서울보다 = hơn Seoul, và đứng trước tính từ. Phương án 2 và 4 đảo nghĩa (Seoul ấm hơn); phương án 3 đặt 서울보다 sau tính từ như tiếng Việt.
+    display_answer: 제주도가 서울보다 더 따뜻해요.
+
+  - key: ko:exercise:comparing-booking-fill-boda
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-boda-deo
+    prompt:
+      template: "부산이 서울{{b1}} 더 따뜻해요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Busan ấm hơn Seoul."
+        - "Gợi ý: trợ từ so sánh \"hơn\" gắn vào danh từ."
+    answer:
+      blanks:
+        b1: [보다]
+    known_wrong:
+      - answer: 에서
+        feedback_vi: 에서 là "ở / từ". So sánh "hơn" dùng 보다 - 서울보다.
+        error_tag: boda_particle
+      - answer: 이
+        feedback_vi: Chủ ngữ là 부산이 rồi; vế bị so sánh cần 보다.
+        error_tag: boda_particle
+    explanation:
+      vi: 보다 gắn vào vế bị so sánh (서울) - 서울보다 더 따뜻해요 = ấm hơn Seoul.
+    display_answer: 부산이 서울보다 더 따뜻해요.
+
+  - key: ko:exercise:comparing-booking-wb-biggest
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-jeil-gajang
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Phòng này lớn nhất.\""'
+      tokens:
+        - { id: j3, text: 제일 }
+        - { id: j5, text: 크어요 }
+        - { id: j4, text: 커요 }
+        - { id: j1, text: 이 }
+        - { id: j2, text: 방이 }
+    answer:
+      orders:
+        - [j1, j2, j3, j4]
+    explanation:
+      vi: 제일 đứng ngay trước tính từ - 제일 커요. 크다 bỏ ㅡ khi gặp 어요 → 커요, không có 크어요.
+    display_answer: 이 방이 제일 커요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:comparing-booking-fill-room
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chekeuin
+    prompt:
+      template: "(Còn phòng trống không?) {{b1}} 있어요? (Nhận phòng từ 3 giờ chiều.) 체크인은 오후 3시{{b2}}예요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [빈방, 방]
+        b2: [부터]
+    known_wrong:
+      - answer: 까지
+        feedback_vi: 까지 là "đến (hạn)". Giờ bắt đầu nhận phòng dùng 부터.
+        error_tag: buteo_kkaji
+      - answer: 에
+        feedback_vi: 3시에 là "lúc 3 giờ". "Từ 3 giờ" là 3시부터.
+        error_tag: buteo_kkaji
+      - answer: 호텔
+        feedback_vi: Hỏi "còn phòng trống" là 빈방 있어요? - 호텔 là cả khách sạn.
+        error_tag: vocab_bang
+    explanation:
+      vi: Phòng trống = 빈방 (hoặc gọn là 방). Mốc bắt đầu dùng 부터 - 3시부터; hạn chót dùng 까지 - 11시까지.
+    display_answer: 빈방 있어요? 체크인은 오후 3시부터예요.
+
+  - key: ko:exercise:comparing-booking-translate-taller
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-boda-deo
+    prompt:
+      source_text: Anh tôi cao hơn tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 형이 저보다 키가 커요.
+        - 형은 저보다 키가 커요.
+        - 형이 저보다 키가 더 커요.
+        - 형은 저보다 키가 더 커요.
+        - 형이 저보다 더 키가 커요.
+        - 우리 형이 저보다 키가 커요.
+        - 저희 형이 저보다 키가 커요.
+        - 오빠가 저보다 키가 커요.
+        - 오빠는 저보다 키가 커요.
+        - 오빠가 저보다 키가 더 커요.
+        - 저보다 형이 키가 커요.
+    known_wrong:
+      - answer: 형이 키가 커요 저보다.
+        feedback_vi: 저보다 phải đứng trước tính từ - 형이 저보다 키가 커요.
+        error_tag: boda_order
+      - answer: 저는 형보다 키가 커요.
+        feedback_vi: Câu này là "Tôi cao hơn anh". 보다 gắn vào người thấp hơn - 저보다.
+        error_tag: boda_reversed
+      - answer: 형이 저보다 키가 크어요.
+        feedback_vi: 크다 bỏ ㅡ khi gặp 어요 → 커요.
+        error_tag: eu_irregular
+    explanation:
+      vi: Cao = 키가 크다. "Hơn tôi" = 저보다, đặt trước 키가 커요. Anh trai - nam gọi 형, nữ gọi 오빠.
+    display_answer: 형이 저보다 키가 커요.
+
+  - key: ko:exercise:comparing-booking-translate-book
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:bak-il
+    prompt:
+      source_text: Tôi muốn đặt phòng 2 đêm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 2박 예약하고 싶어요.
+        - 방을 2박 예약하고 싶어요.
+        - 방 2박 예약하고 싶어요.
+        - 2박으로 예약하고 싶어요.
+        - 방을 2박으로 예약하고 싶어요.
+        - 저는 2박 예약하고 싶어요.
+        - 2박 방을 예약하고 싶어요.
+        - 이박 예약하고 싶어요.
+    known_wrong:
+      - answer: 2일 예약하고 싶어요.
+        feedback_vi: 일 là ngày; đặt phòng tính theo đêm - 2박.
+        error_tag: bak_il
+      - answer: 두 박 예약하고 싶어요.
+        feedback_vi: 박 đi với số Hán Hàn - 이박 (2박), không dùng 두.
+        error_tag: sino_number
+      - answer: 2박 예약했어요.
+        feedback_vi: Câu gốc là "muốn đặt" - V-고 싶어요, không phải "đã đặt".
+        error_tag: go_sipeoyo
+    explanation:
+      vi: 2 đêm = 2박 [이박]; "muốn đặt" = 예약하고 싶어요. Có thể nói 방을 2박(으로) 예약하고 싶어요.
+    display_answer: 2박 예약하고 싶어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:comparing-booking-mcq-reception
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:myeot-bak
+    prompt:
+      stem: "Bạn đặt chuyến 3 ngày 2 đêm. Lễ tân hỏi: 몇 박 하실 거예요? Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: b6q, text: 2박 할 거예요., lang: ko }
+        - { id: s9l, text: 3박 할 거예요., lang: ko }
+        - { id: d1x, text: 2박 하실 거예요., lang: ko }
+        - { id: h7c, text: 두 박 할 거예요., lang: ko }
+    answer:
+      correct_option_id: b6q
+    explanation:
+      vi: 3 ngày 2 đêm là 2박. Khi nói về mình bỏ kính ngữ -시- (할 거예요, không phải 하실 거예요); 박 dùng số Hán Hàn nên không nói 두 박.
+    display_answer: 2박 할 거예요.
+
+  - key: ko:exercise:comparing-booking-mcq-closest
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gakkapda
+    prompt:
+      stem: '"Bạn muốn nói với bạn \"Khách sạn này gần ga nhất.\" Câu nào đúng?"'
+      stem_lang: vi
+      options:
+        - { id: r2m, text: 이 호텔이 역에서 제일 가까워요., lang: ko }
+        - { id: k5v, text: 이 호텔이 역에서 제일 가깝어요., lang: ko }
+        - { id: e9p, text: 이 호텔이 역에서 가까워요 제일., lang: ko }
+        - { id: t3j, text: 이 호텔이 역보다 제일 가까워요., lang: ko }
+    answer:
+      correct_option_id: r2m
+    explanation:
+      vi: 가깝다 bất quy tắc ㅂ → 가까워요; 제일 đứng trước tính từ; mốc "gần ga" dùng 역에서. 역보다 là "hơn nhà ga", sai nghĩa.
+    display_answer: 이 호텔이 역에서 제일 가까워요.
+
+  - key: ko:exercise:comparing-booking-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:sukso
+    prompt:
+      source_text: 숙소가 공항에서 멀지만 아주 편해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chỗ ở xa sân bay nhưng rất thoải mái.
+        - Chỗ ở cách xa sân bay nhưng rất thoải mái.
+        - Chỗ ở thì xa sân bay nhưng rất thoải mái.
+        - Nơi ở xa sân bay nhưng rất thoải mái.
+        - Chỗ nghỉ xa sân bay nhưng rất thoải mái.
+        - Chỗ ở xa sân bay nhưng rất tiện.
+        - Chỗ ở xa sân bay nhưng rất tiện nghi.
+        - Chỗ ở xa sân bay nhưng thoải mái lắm.
+        - Chỗ ở tuy xa sân bay nhưng rất thoải mái.
+        - Nơi lưu trú xa sân bay nhưng rất thoải mái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chỗ ở gần sân bay nhưng rất thoải mái.
+        feedback_vi: 멀다 là "xa"; "gần" là 가깝다.
+        error_tag: meolda_gakkapda
+      - answer: Chỗ ở xa sân bay nên rất thoải mái.
+        feedback_vi: -지만 là "nhưng", không phải "nên".
+        error_tag: jiman_meaning
+    explanation:
+      vi: 숙소 = chỗ ở; 공항에서 멀지만 = xa sân bay nhưng; 아주 편해요 = rất thoải mái / rất tiện.
+    display_answer: Chỗ ở xa sân bay nhưng rất thoải mái.
+
+  - key: ko:exercise:comparing-booking-wb-cheaper
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-boda-deo
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Khách sạn này rẻ hơn khách sạn kia.\""'
+      tokens:
+        - { id: c4, text: 호텔보다 }
+        - { id: c6, text: 싸요 }
+        - { id: c2, text: 호텔이 }
+        - { id: c7, text: 호텔에서 }
+        - { id: c5, text: 더 }
+        - { id: c1, text: 이 }
+        - { id: c3, text: 저 }
+    answer:
+      orders:
+        - [c1, c2, c3, c4, c5, c6]
+        - [c3, c4, c1, c2, c5, c6]
+    explanation:
+      vi: 저 호텔보다 = hơn khách sạn kia; 더 싸요 ở cuối. Có thể đặt 저 호텔보다 trước hoặc sau 이 호텔이, miễn là trước 더 싸요. 호텔에서 là "ở khách sạn", sai nghĩa.
+    display_answer: 이 호텔이 저 호텔보다 더 싸요.

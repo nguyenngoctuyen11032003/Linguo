@@ -1,0 +1,411 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:describing-people
+order_index: 4
+level: topik1
+title:
+  vi: Miêu tả người - cao, thấp, xinh, tốt bụng
+objectives:
+  - vi: Miêu tả ngoại hình và tính cách bằng tính từ đuôi 해요체 - 키가 커요, 예뻐요, 친절해요, 젊어요.
+  - vi: Chia đúng tính từ có ㅡ ở cuối gốc - 크다 → 커요, 예쁘다 → 예뻐요.
+  - vi: Dùng cấu trúc N은/는 N이/가 A (형은 키가 커요) và hỏi N이/가 어때요?
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ko:lesson:family-count-age]
+items:
+  - item: ko:item:ki
+  - item: ko:item:keuda
+  - item: ko:item:jakda
+  - item: ko:item:yeppeuda
+  - item: ko:item:meositda
+  - item: ko:item:jeomda
+  - item: ko:item:nai-manta
+  - item: ko:item:gilda
+  - item: ko:item:nalssinhada
+  - item: ko:item:chakada
+  - item: ko:item:gram-double-subject
+  - item: ko:item:gram-eottaeyo
+  - item: ko:item:chinjeolhada
+    role: reuse
+  - item: ko:item:gram-eu-irregular
+    role: reuse
+  - item: ko:item:body-meori
+    role: reuse
+  - item: ko:item:gram-go-and
+    role: reuse
+  - item: ko:item:nai
+    role: reuse
+  - item: ko:item:yeonse
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả được người thân - "Anh tôi cao và tốt bụng", "Chị tôi tóc dài và rất xinh" - và hỏi bạn bè "Bạn trai bạn thế nào?".
+  - type: explain
+    text:
+      vi: Tính từ tiếng Hàn đứng cuối câu như động từ và chia đuôi 해요체 như nhau - 작다 → 작아요, 젊다 → 젊어요, 멋있다 → 멋있어요, -하다 → -해요 (친절해요, 착해요, 날씬해요). Không cần thêm "là" (이에요) trước tính từ, giống tiếng Việt nói "Anh tôi cao".
+  - type: explain
+    text:
+      vi: Gốc kết thúc bằng ㅡ thì ㅡ rơi mất trước 어요/아요 - 크다 → 커요, 예쁘다 → 예뻐요. Gốc một âm tiết (크) luôn thêm 어; gốc dài hơn thì nhìn nguyên âm đứng trước - 예쁘 có ㅖ nên thêm 어 (예뻐요), 바쁘 có ㅏ nên thêm 아 (바빠요).
+  - type: explain
+    text:
+      vi: 'Tả một đặc điểm của người dùng hai trợ từ - người + 은/는, đặc điểm + 이/가 - 형은 키가 커요 (Anh tôi cao), 언니는 머리가 길어요 (Chị tôi tóc dài). Hỏi "thế nào?" - N이/가 어때요?; nối hai tính từ bằng -고 - 키가 크고 친절해요.'
+  - type: deep_explain
+    text:
+      vi: Người Hàn tế nhị khi nói về tuổi - với người trẻ dùng 젊어요, với người lớn tuổi thì nói 나이가 많으세요 hoặc 연세가 많으세요, tránh 늙었어요 (già rồi). 예뻐요 thường dùng cho nữ, trẻ em, đồ vật; khen nam giới thì dùng 멋있어요. 착해요 là hiền, tốt bụng (tính cách), còn 친절해요 là thân thiện, ân cần khi đối xử với người khác.
+  - type: example
+    target: 우리 형은 키가 크고 멋있어요.
+    target_lang: ko
+    translation:
+      vi: Anh tôi cao và phong độ.
+    note:
+      vi: 크다 + -고 = 크고; ㅡ chỉ rơi trước 어/아, không rơi trước -고.
+  - type: example
+    target: 언니는 머리가 길어요. 그리고 정말 예뻐요.
+    target_lang: ko
+    translation:
+      vi: Chị tôi tóc dài. Và xinh thật.
+  - type: example
+    target: 남자 친구가 어때요? - 키는 좀 작아요. 그런데 아주 착해요.
+    target_lang: ko
+    translation:
+      vi: Bạn trai bạn thế nào? - Hơi thấp. Nhưng rất hiền.
+    note:
+      vi: 키는 với 는 để đối chiếu - "chiều cao thì hơi thấp, nhưng…".
+  - type: example
+    target: 우리 선생님은 젊고 친절해요.
+    target_lang: ko
+    translation:
+      vi: Cô giáo tôi trẻ và tận tình.
+    note:
+      vi: 젊고 đọc [점꼬].
+  - type: example
+    target: 할아버지는 나이가 많으세요. 하지만 아주 건강하세요.
+    target_lang: ko
+    translation:
+      vi: Ông tôi lớn tuổi rồi. Nhưng ông rất khỏe.
+    note:
+      vi: -으세요/-세요 thêm sự kính trọng khi tả người lớn tuổi.
+  - type: common_mistake
+    wrong: 형은 키가 크어요.
+    right: 형은 키가 커요.
+    target_lang: ko
+    note:
+      vi: Người học hay ghép thẳng 크 + 어요. Gốc có ㅡ ở cuối thì ㅡ rơi mất - 커요; tương tự 예쁘어요 → 예뻐요.
+  - type: common_mistake
+    wrong: 저 사람이 키를 커요.
+    right: 저 사람은 키가 커요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt chỉ có một chủ ngữ ("Người đó cao") nên người học thấy hai 이/가 là lạ và đổi một cái thành 을/를. Tính từ không bao giờ đi với 을/를 - người là chủ đề (은/는), 키 là chủ ngữ (가).
+  - type: common_mistake
+    wrong: 오빠는 커요.
+    right: 오빠는 키가 커요.
+    target_lang: ko
+    note:
+      vi: Bỏ 키가 thì câu nghe như "anh ấy to lớn" (về thân hình) chứ không phải "cao". Tiếng Việt có riêng từ "cao", còn tiếng Hàn cần 키가 + 커요.
+  - type: summary
+    points:
+      - vi: 키가 커요 (cao) · 키가 작아요 (thấp) · 머리가 길어요 (tóc dài) · 날씬해요 (thon thả).
+      - vi: 예뻐요 (xinh) · 멋있어요 (phong độ) · 착해요 (hiền) · 친절해요 (tử tế) · 젊어요 (trẻ) · 나이가 많아요 (lớn tuổi).
+      - vi: ㅡ rơi - 크다 → 커요, 예쁘다 → 예뻐요 (không phải 크어요, 예쁘어요).
+      - vi: Người은/는 + đặc điểm이/가 + tính từ · N이/가 어때요? · A-고 A.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:describing-people-mcq-keoyo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:keuda
+    prompt:
+      stem: "크다 (to, cao) ở đuôi 해요체 là gì?"
+      stem_lang: vi
+      options:
+        - { id: d3n, text: 커요, lang: ko }
+        - { id: k8w, text: 크어요, lang: ko }
+        - { id: p1s, text: 크아요, lang: ko }
+        - { id: y6z, text: 카요, lang: ko }
+    answer:
+      correct_option_id: d3n
+    explanation:
+      vi: Gốc 크 kết thúc bằng ㅡ nên ㅡ rơi đi; gốc một âm tiết thì thêm 어 → 커요. 크어요, 크아요 giữ lại ㅡ là sai.
+    display_answer: 커요
+
+  - key: ko:exercise:describing-people-listen-sister
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:yeppeuda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 우리 언니는 키가 크고 예뻐요.
+      options:
+        - { id: h5c, text: Chị tôi cao và xinh., lang: vi }
+        - { id: r2u, text: Chị tôi thấp và xinh., lang: vi }
+        - { id: m9e, text: Chị tôi cao và tốt bụng., lang: vi }
+        - { id: x4b, text: Em gái tôi cao và xinh., lang: vi }
+    answer:
+      correct_option_id: h5c
+    explanation:
+      vi: 언니 là chị gái (em gái là 여동생); 키가 크고 là "cao và", 예뻐요 là "xinh". Thấp là 키가 작아요, tốt bụng là 착해요.
+    display_answer: Chị tôi cao và xinh.
+
+  - key: ko:exercise:describing-people-mcq-young
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:jeomda
+    prompt:
+      stem: 우리 어머니는 젊어요. - 젊어요 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a7q, text: trẻ, lang: vi }
+        - { id: f2v, text: lớn tuổi, lang: vi }
+        - { id: s8l, text: thấp, lang: vi }
+        - { id: n1h, text: hiền, lang: vi }
+    answer:
+      correct_option_id: a7q
+    explanation:
+      vi: 젊어요 (từ 젊다) là "trẻ". Lớn tuổi là 나이가 많아요, thấp là 키가 작아요, hiền là 착해요.
+    display_answer: trẻ
+
+  - key: ko:exercise:describing-people-fill-kiga-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-double-subject
+    prompt:
+      template: "오빠는 {{b1}} 커요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Anh tôi cao."
+        - "Gợi ý: \"chiều cao\" + trợ từ chủ ngữ."
+    answer:
+      blanks:
+        b1: [키가]
+    known_wrong:
+      - answer: 키를
+        feedback_vi: Tính từ không đi với 을/를. Đặc điểm của người dùng 이/가 - 키가 커요.
+        error_tag: double_subject_particle
+      - answer: 키이
+        feedback_vi: 키 kết thúc bằng nguyên âm nên dùng 가 - 키가.
+        error_tag: particle_i_ga
+      - answer: 기가
+        feedback_vi: '"Chiều cao" là 키 với ㅋ bật hơi, không phải 기.'
+        error_tag: consonant_aspirated
+    explanation:
+      vi: 오빠는 là chủ đề, 키가 là chủ ngữ của 커요 - "Anh tôi thì chiều cao lớn" = "Anh tôi cao".
+    display_answer: 오빠는 키가 커요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:describing-people-fill-conjugate
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eu-irregular
+    prompt:
+      template: "크다 → {{b1}} · 예쁘다 → {{b2}} · 작다 → {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [커요]
+        b2: [예뻐요]
+        b3: [작아요]
+    known_wrong:
+      - answer: 크어요
+        feedback_vi: ㅡ ở cuối gốc phải rơi - 커요.
+        error_tag: eu_irregular
+      - answer: 예쁘어요
+        feedback_vi: ㅡ ở cuối gốc phải rơi - 예뻐요.
+        error_tag: eu_irregular
+      - answer: 예빠요
+        feedback_vi: Nguyên âm trước 쁘 là ㅖ (không phải ㅏ/ㅗ) nên thêm 어 - 예뻐요.
+        error_tag: eu_irregular
+      - answer: 작어요
+        feedback_vi: 작 có nguyên âm ㅏ nên thêm 아 - 작아요.
+        error_tag: haeyo_vowel_harmony
+    explanation:
+      vi: 크, 예쁘 kết thúc bằng ㅡ nên ㅡ rơi rồi thêm 어 - 커요, 예뻐요. 작 có ㅏ, không có ㅡ, nên chia bình thường - 작아요.
+    display_answer: 커요 · 예뻐요 · 작아요
+
+  - key: ko:exercise:describing-people-translate-father-tall
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ki
+    prompt:
+      source_text: Bố tôi cao.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 아버지는 키가 커요.
+        - 우리 아버지는 키가 커요.
+        - 아빠는 키가 커요.
+        - 우리 아빠는 키가 커요.
+        - 저희 아버지는 키가 커요.
+        - 제 아버지는 키가 커요.
+        - 아버지가 키가 커요.
+        - 우리 아버지는 키가 크세요.
+        - 아버지는 키가 크세요.
+    known_wrong:
+      - answer: 아버지는 키가 크어요.
+        feedback_vi: ㅡ ở cuối gốc 크 phải rơi - 커요.
+        error_tag: eu_irregular
+      - answer: 아버지는 키를 커요.
+        feedback_vi: Tính từ không đi với 을/를 - 키가 커요.
+        error_tag: double_subject_particle
+      - answer: 아버지는 커요.
+        feedback_vi: Thiếu 키가 nên câu thành "bố tôi to lớn". "Cao" là 키가 커요.
+        error_tag: missing_ki
+      - answer: 저 아버지는 키가 커요.
+        feedback_vi: 저 아버지 là "ông bố kia". "Bố tôi" là 우리 아버지 hoặc 제 아버지.
+        error_tag: possessive_jeo_je
+    explanation:
+      vi: Người + 은/는 (아버지는), đặc điểm + 이/가 (키가), tính từ 커요 (크다, ㅡ rơi). 크세요 thêm sự kính trọng với bố, cũng đúng.
+    display_answer: 우리 아버지는 키가 커요.
+
+  - key: ko:exercise:describing-people-translate-how-is
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eottaeyo
+    prompt:
+      source_text: Bạn trai của bạn thế nào?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 남자 친구가 어때요?
+        - 남자 친구는 어때요?
+        - 남자친구가 어때요?
+        - 남자친구는 어때요?
+        - 남자 친구는 어떤 사람이에요?
+        - 남자 친구가 어떤 사람이에요?
+    known_wrong:
+      - answer: 남자 친구가 어때예요?
+        feedback_vi: 어때요 đã là đuôi hoàn chỉnh, không thêm 예요.
+        error_tag: eottaeyo_form
+      - answer: 남자 친구가 뭐예요?
+        feedback_vi: 뭐예요 là "là gì". Hỏi nhận xét, miêu tả dùng 어때요?
+        error_tag: question_word
+      - answer: 남자 친구를 어때요?
+        feedback_vi: 어때요 là tính từ nên đi với 이/가 (hoặc 은/는), không đi với 을/를.
+        error_tag: particle_eottaeyo
+    explanation:
+      vi: '"Thế nào?" = N이/가 어때요?; 친구 kết thúc bằng nguyên âm nên dùng 가 (hoặc 는). Từ hỏi đứng cuối câu.'
+    display_answer: 남자 친구가 어때요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:describing-people-mcq-answer-boyfriend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eottaeyo
+    prompt:
+      stem: "Bạn của bạn hỏi: \"남자 친구가 어때요?\" Bạn muốn trả lời \"Cao và tử tế lắm\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: e9t, text: 키가 크고 친절해요., lang: ko }
+        - { id: w4k, text: 키를 크고 친절해요., lang: ko }
+        - { id: c7y, text: 키가 크어요 친절해요., lang: ko }
+        - { id: u1m, text: 키가 크고 친절이에요., lang: ko }
+    answer:
+      correct_option_id: e9t
+    explanation:
+      vi: Trả lời 어때요? bằng tính từ - 키가 크고 (cao và) + 친절해요. Tính từ không đi với 를, không đứng trước 이에요; nối hai tính từ dùng -고.
+    display_answer: 키가 크고 친절해요.
+
+  - key: ko:exercise:describing-people-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:meositda
+    prompt:
+      source_text: 우리 오빠는 멋있어요. 그리고 아주 착해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh trai tôi phong độ. Và rất hiền.
+        - Anh trai tôi phong độ. Và rất tốt bụng.
+        - Anh tôi phong độ. Và rất tốt bụng.
+        - Anh tôi đẹp trai. Và rất hiền.
+        - Anh trai tôi đẹp trai. Và rất tốt bụng.
+        - Anh trai tôi ngầu lắm. Và rất hiền.
+        - Anh trai tôi phong độ và rất tốt bụng.
+        - Anh tôi đẹp trai và rất hiền.
+        - Anh trai tôi đẹp trai và rất hiền.
+        - Anh tôi phong độ và rất hiền.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Em trai tôi phong độ. Và rất tốt bụng.
+        feedback_vi: 오빠 là anh trai (người nói là nữ), không phải em trai.
+        error_tag: family_term
+      - answer: Anh trai tôi phong độ. Và rất thân thiện.
+        feedback_vi: 착해요 là hiền, tốt bụng; "thân thiện, tử tế" là 친절해요.
+        error_tag: adjective_meaning
+    explanation:
+      vi: 멋있어요 = phong độ, đẹp trai; 그리고 = và; 아주 = rất; 착해요 = hiền, tốt bụng.
+    display_answer: Anh trai tôi phong độ. Và rất tốt bụng.
+
+  - key: ko:exercise:describing-people-wb-mother
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeppeuda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Mẹ tôi trẻ và xinh.\""
+      tokens:
+        - { id: n1, text: 예뻐요 }
+        - { id: n2, text: 엄마는 }
+        - { id: n3, text: 예쁘어요 }
+        - { id: n4, text: 우리 }
+        - { id: n5, text: 젊고 }
+        - { id: n6, text: 저 }
+    answer:
+      orders:
+        - [n4, n2, n5, n1]
+        - [n2, n5, n1]
+    explanation:
+      vi: 우리 엄마는 (mẹ tôi) + 젊고 (trẻ và) + 예뻐요 (xinh). 예쁘어요 sai vì ㅡ phải rơi; 저 엄마 sẽ thành "bà mẹ kia".
+    display_answer: 우리 엄마는 젊고 예뻐요.
+
+  - key: ko:exercise:describing-people-mcq-polite-age
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:nai-manta
+    prompt:
+      stem: Bạn kể với đồng nghiệp rằng ông của bạn đã lớn tuổi, và muốn nói thật lễ phép. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: g3x, text: 우리 할아버지는 연세가 많으세요., lang: ko }
+        - { id: z8p, text: 우리 할아버지는 늙었어요., lang: ko }
+        - { id: b5j, text: 우리 할아버지는 키가 많아요., lang: ko }
+        - { id: q6d, text: 우리 할아버지는 연세가 커요., lang: ko }
+    answer:
+      correct_option_id: g3x
+    explanation:
+      vi: Với ông bà, "tuổi" là 연세 và "nhiều" thêm kính ngữ - 많으세요. 늙었어요 nghe thiếu tế nhị; tuổi đi với 많다 (nhiều), không đi với 크다, và 키 (chiều cao) không đi với 많다.
+    display_answer: 우리 할아버지는 연세가 많으세요.

@@ -1,0 +1,412 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:before-after-travel
+order_index: 1
+level: topik2
+title:
+  vi: Trước khi đi, sau khi đến
+objectives:
+  - vi: Nói việc làm trước một hành động bằng V-기 전에 và sau một hành động bằng V-(으)ㄴ 후에 / 다음에.
+  - vi: Dùng N 전에 / N 후에 với mốc thời gian - 출발 30분 전에, 1시간 후에.
+  - vi: Nắm từ vựng chuẩn bị chuyến đi - 여행, 비행기표, 짐을 싸다, 공항, 출발하다, 도착하다.
+estimated_minutes: 16
+skills: [grammar, vocabulary, reading, writing]
+prerequisites: [ko:lesson:hobbies-appointments-review]
+items:
+  - item: ko:item:gram-gi-jeone
+  - item: ko:item:gram-eun-hue
+  - item: ko:item:gram-noun-jeon-hu
+  - item: ko:item:yeohaeng
+  - item: ko:item:bihaenggi
+  - item: ko:item:bihaenggipyo
+  - item: ko:item:jim
+  - item: ko:item:gonghang
+  - item: ko:item:chulbalhada
+  - item: ko:item:dochakhada
+  - item: ko:item:yeohaenghada
+    role: reuse
+  - item: ko:item:yeyakada
+    role: reuse
+  - item: ko:item:yeogwon
+    role: reuse
+  - item: ko:item:jeonhwahada
+    role: reuse
+  - item: ko:item:gram-past-tense
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được các bước chuẩn bị một chuyến đi theo đúng thứ tự - đặt vé, soạn hành lý, ra sân bay, đến nơi rồi gọi điện về nhà.
+  - type: explain
+    text:
+      vi: V-기 전에 là "trước khi V" - gắn thẳng vào gốc động từ, không chia thì - 가기 전에, 먹기 전에, 자기 전에. Thì của cả câu nằm ở động từ cuối - 여행 가기 전에 비행기표를 예약했어요.
+  - type: explain
+    text:
+      vi: V-(으)ㄴ 후에 (hoặc -(으)ㄴ 다음에) là "sau khi V". Gốc không patchim + ㄴ (도착한 후에), có patchim + 은 (먹은 후에), gốc ㄹ bỏ ㄹ + ㄴ (만든 후에, 싼 후에 từ 싸다).
+  - type: explain
+    text:
+      vi: Với danh từ chỉ sự việc hoặc khoảng thời gian, chỉ cần N 전에 / N 후에 - 식사 전에, 출발 30분 전에, 1시간 후에. Thứ tự ngược tiếng Việt - "30 phút trước giờ xuất phát" thành 출발 30분 전에.
+  - type: deep_explain
+    text:
+      vi: Hai cấu trúc khác nhau ở dạng gắn vào động từ - "trước" dùng -기 (가기 전에), "sau" dùng -(으)ㄴ (간 후에). Lỗi hay gặp là trộn hai dạng - 가는 후에, 간 전에, 가기 후에 đều sai. 다음에 và 후에 gần như thay được cho nhau; 다음에 hơi khẩu ngữ, còn 후에 dùng được cả khi viết. Khi nói nhanh, người Hàn có thể bỏ 에 - 도착한 후 전화했어요.
+  - type: example
+    target: 여행 가기 전에 비행기표를 예약했어요.
+    target_lang: ko
+    translation:
+      vi: Trước khi đi du lịch, tôi đã đặt vé máy bay.
+    note:
+      vi: 가기 전에 giữ nguyên gốc 가-; quá khứ nằm ở 예약했어요.
+  - type: example
+    target: 출발하기 전에 짐을 다 쌌어요. 그리고 여권도 가방에 넣었어요.
+    target_lang: ko
+    translation:
+      vi: Trước khi xuất phát tôi đã soạn xong hành lý. Tôi cũng đã bỏ hộ chiếu vào túi.
+    note:
+      vi: 짐을 싸다 = soạn hành lý; 싸다 ở đây không phải "rẻ".
+  - type: example
+    target: 공항에 도착한 후에 엄마한테 전화했어요.
+    target_lang: ko
+    translation:
+      vi: Đến sân bay xong, tôi gọi điện cho mẹ.
+    note:
+      vi: 도착하다 không có patchim → 도착한 후에. Nơi đến dùng 에 - 공항에 도착하다.
+  - type: example
+    target: 비행기는 9시에 출발해요. 출발 두 시간 전에 공항에 가야 해요.
+    target_lang: ko
+    translation:
+      vi: Máy bay cất cánh lúc 9 giờ. Phải ra sân bay hai tiếng trước giờ khởi hành.
+    note:
+      vi: Danh từ 출발 + khoảng thời gian + 전에.
+  - type: example
+    target: 점심을 먹은 다음에 호텔에 갔어요.
+    target_lang: ko
+    translation:
+      vi: Ăn trưa xong, chúng tôi về khách sạn.
+    note:
+      vi: 먹다 có patchim → 먹은 다음에.
+  - type: common_mistake
+    wrong: 여행 갔기 전에 비행기표를 예약했어요.
+    right: 여행 가기 전에 비행기표를 예약했어요.
+    target_lang: ko
+    note:
+      vi: Câu kể chuyện quá khứ nên người Việt hay chia 갔 ở cả vế "trước khi". -기 전에 luôn gắn vào gốc động từ; chỉ động từ cuối câu mới mang thì quá khứ.
+  - type: common_mistake
+    wrong: 밥을 먹는 후에 공항에 가요.
+    right: 밥을 먹은 후에 공항에 가요.
+    target_lang: ko
+    note:
+      vi: '"Sau khi" đòi dạng -(으)ㄴ (việc đã xong) - 먹은 후에. -는 là dạng đang diễn ra nên không dùng được ở đây.'
+  - type: common_mistake
+    wrong: 공항을 도착했어요.
+    right: 공항에 도착했어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "đến sân bay" không có giới từ, nên bạn dễ dùng 을/를. 도착하다 cần 에 cho nơi đến.
+  - type: summary
+    points:
+      - vi: V-기 전에 = trước khi V (không chia thì ở V) - 가기 전에, 자기 전에.
+      - vi: V-(으)ㄴ 후에 / 다음에 = sau khi V - 도착한 후에, 먹은 다음에, 만든 후에.
+      - vi: N 전에 / N 후에 - 식사 전에, 출발 30분 전에, 1시간 후에.
+      - vi: 여행, 비행기(표), 짐을 싸다, 공항에 도착하다, 서울에서 출발하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:before-after-travel-listen-ticket
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-gi-jeone
+    prompt:
+      audio_asset_id: null
+      fallback_text: 여행 가기 전에 비행기표를 예약했어요.
+      options:
+        - { id: q7d, text: "Trước khi đi du lịch, tôi đã đặt vé máy bay.", lang: vi }
+        - { id: m2k, text: "Sau khi đi du lịch, tôi đã đặt vé máy bay.", lang: vi }
+        - { id: z5r, text: "Trước khi đi du lịch, tôi đã mua vé tàu.", lang: vi }
+        - { id: h9w, text: "Trước khi đi du lịch, tôi sẽ đặt khách sạn.", lang: vi }
+    answer:
+      correct_option_id: q7d
+    explanation:
+      vi: 가기 전에 = trước khi đi; 비행기표 = vé máy bay (vé tàu là 기차표); 예약했어요 ở quá khứ = đã đặt.
+    display_answer: "Trước khi đi du lịch, tôi đã đặt vé máy bay."
+
+  - key: ko:exercise:before-after-travel-mcq-dochakan
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eun-hue
+    prompt:
+      stem: "Chọn dạng đúng: 공항에 ___ 후에 친구한테 전화했어요. (Sau khi đến sân bay…)"
+      stem_lang: vi
+      options:
+        - { id: c4t, text: 도착한, lang: ko }
+        - { id: y8n, text: 도착하는, lang: ko }
+        - { id: e1v, text: 도착하기, lang: ko }
+        - { id: p6j, text: 도착했은, lang: ko }
+    answer:
+      correct_option_id: c4t
+    explanation:
+      vi: '"Sau khi" dùng -(으)ㄴ 후에; 도착하다 không có patchim nên thành 도착한. -는 là dạng đang diễn ra, -기 dùng với 전에, còn 도착했은 không tồn tại.'
+    display_answer: 도착한
+
+  - key: ko:exercise:before-after-travel-mcq-noun-jeon
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-noun-jeon-hu
+    prompt:
+      stem: "출발 30분 전에 버스를 타요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r3b, text: Đi xe buýt 30 phút trước giờ xuất phát., lang: vi }
+        - { id: k8f, text: Đi xe buýt 30 phút sau giờ xuất phát., lang: vi }
+        - { id: w1s, text: Xuất phát lúc 30 phút trước xe buýt., lang: vi }
+        - { id: d5g, text: Đi xe buýt 30 phút rồi xuất phát., lang: vi }
+    answer:
+      correct_option_id: r3b
+    explanation:
+      vi: N + khoảng thời gian + 전에 - 출발 30분 전에 = 30 phút trước giờ xuất phát. "Sau" sẽ là 후에.
+    display_answer: Đi xe buýt 30 phút trước giờ xuất phát.
+
+  - key: ko:exercise:before-after-travel-fill-jagi
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-gi-jeone
+    prompt:
+      template: "어젯밤에 {{b1}} 전에 짐을 쌌어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Tối qua, trước khi ngủ tôi đã soạn hành lý."
+        - "Gợi ý: 자다 + -기 (không chia quá khứ)."
+    answer:
+      blanks:
+        b1: [자기]
+    known_wrong:
+      - answer: 잤기
+        feedback_vi: -기 전에 không mang thì quá khứ; quá khứ đã nằm ở 쌌어요.
+        error_tag: past_before_gi_jeone
+      - answer: 자는
+        feedback_vi: '"Trước khi" dùng -기 전에 - 자기 전에, không phải 자는.'
+        error_tag: gi_jeone_form
+      - answer: 잔
+        feedback_vi: 잔 + 후에 là "sau khi ngủ". "Trước khi" dùng 자기 전에.
+        error_tag: jeon_hu_form
+    explanation:
+      vi: Trước khi ngủ = 자기 전에 - gốc 자 + 기, không chia thì. Câu đã ở quá khứ nhờ 쌌어요.
+    display_answer: 어젯밤에 자기 전에 짐을 쌌어요.
+
+  - key: ko:exercise:before-after-travel-wb-meogeun
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-eun-hue
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Ăn cơm xong, tôi ra sân bay.\""'
+      tokens:
+        - { id: t4, text: 공항에 }
+        - { id: t2, text: 먹은 }
+        - { id: t5, text: 가요 }
+        - { id: t1, text: 밥을 }
+        - { id: t6, text: 먹는 }
+        - { id: t3, text: 후에 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4, t5]
+    explanation:
+      vi: Vế "sau khi" đứng trước - 밥을 먹은 후에, rồi mới đến 공항에 가요. 먹는 là dạng đang diễn ra, không đi với 후에.
+    display_answer: 밥을 먹은 후에 공항에 가요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:before-after-travel-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eun-hue
+    prompt:
+      template: "(Đến khách sạn xong, tôi gọi điện cho mẹ.) 호텔에 {{b1}} 후에 엄마한테 전화했어요. (Trước khi xuất phát, tôi đã soạn hành lý.) {{b2}} 전에 짐을 쌌어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [도착한]
+        b2: [출발하기]
+    known_wrong:
+      - answer: 도착하는
+        feedback_vi: '"Sau khi" cần -(으)ㄴ - 도착한 후에.'
+        error_tag: eun_hue_form
+      - answer: 도착했은
+        feedback_vi: Không chia quá khứ trước 후에; chỉ cần 도착한.
+        error_tag: eun_hue_form
+      - answer: 출발했기
+        feedback_vi: -기 전에 gắn vào gốc, không mang 았/었 - 출발하기 전에.
+        error_tag: past_before_gi_jeone
+      - answer: 출발한
+        feedback_vi: 출발한 đi với 후에 ("sau khi"). "Trước khi" là 출발하기 전에.
+        error_tag: jeon_hu_form
+    explanation:
+      vi: Sau khi đến - 도착한 후에 (gốc không patchim + ㄴ). Trước khi xuất phát - 출발하기 전에 (gốc + 기). Thì quá khứ chỉ nằm ở động từ cuối câu.
+    display_answer: 호텔에 도착한 후에 엄마한테 전화했어요. 출발하기 전에 짐을 쌌어요.
+
+  - key: ko:exercise:before-after-travel-translate-ticket
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-gi-jeone
+    prompt:
+      source_text: Trước khi đi du lịch, tôi đã đặt vé máy bay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 여행 가기 전에 비행기표를 예약했어요.
+        - 여행을 가기 전에 비행기표를 예약했어요.
+        - 저는 여행 가기 전에 비행기표를 예약했어요.
+        - 저는 여행을 가기 전에 비행기표를 예약했어요.
+        - 여행하기 전에 비행기표를 예약했어요.
+        - 저는 여행하기 전에 비행기표를 예약했어요.
+        - 여행 가기 전에 저는 비행기표를 예약했어요.
+        - 여행 가기 전에 비행기 표를 예약했어요.
+    known_wrong:
+      - answer: 여행 갔기 전에 비행기표를 예약했어요.
+        feedback_vi: -기 전에 không mang thì quá khứ - 가기 전에; quá khứ đã có ở 예약했어요.
+        error_tag: past_before_gi_jeone
+      - answer: 여행 간 후에 비행기표를 예약했어요.
+        feedback_vi: 간 후에 là "sau khi đi". "Trước khi" là 가기 전에.
+        error_tag: jeon_hu_form
+      - answer: 여행 가기 전에 비행기표를 예약해요.
+        feedback_vi: '"Đã đặt" là quá khứ - 예약했어요.'
+        error_tag: past_tense
+      - answer: yeohaeng gagi jeone bihaenggipyoreul yeyakaesseoyo
+        feedback_vi: Hãy viết bằng Hangul, phiên âm Latinh chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: '"Trước khi đi du lịch" = 여행(을) 가기 전에 (gốc 가 + 기 전에). "Đã đặt vé máy bay" = 비행기표를 예약했어요, thì quá khứ ở cuối câu.'
+    display_answer: 여행 가기 전에 비행기표를 예약했어요.
+
+  - key: ko:exercise:before-after-travel-translate-call
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dochakhada
+    prompt:
+      source_text: Sau khi đến sân bay, tôi đã gọi điện cho bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 공항에 도착한 후에 친구한테 전화했어요.
+        - 공항에 도착한 다음에 친구한테 전화했어요.
+        - 공항에 도착한 후에 친구에게 전화했어요.
+        - 공항에 도착한 다음에 친구에게 전화했어요.
+        - 저는 공항에 도착한 후에 친구한테 전화했어요.
+        - 저는 공항에 도착한 다음에 친구한테 전화했어요.
+        - 공항에 도착한 후에 친구한테 전화를 했어요.
+        - 공항에 도착한 후에 친구에게 전화를 했어요.
+        - 공항에 도착한 후 친구한테 전화했어요.
+        - 공항에 도착한 후 친구에게 전화했어요.
+    known_wrong:
+      - answer: 공항에 도착하는 후에 친구한테 전화했어요.
+        feedback_vi: '"Sau khi" cần -(으)ㄴ - 도착한 후에.'
+        error_tag: eun_hue_form
+      - answer: 공항을 도착한 후에 친구한테 전화했어요.
+        feedback_vi: 도착하다 cần 에 cho nơi đến - 공항에.
+        error_tag: particle_e_destination
+      - answer: 공항에 도착했은 후에 친구한테 전화했어요.
+        feedback_vi: Không chia quá khứ trước 후에 - chỉ cần 도착한.
+        error_tag: eun_hue_form
+    explanation:
+      vi: Sau khi đến = 도착한 후에 / 다음에; nơi đến dùng 에 - 공항에 도착하다. Gọi điện cho ai = 친구한테 / 친구에게 전화하다.
+    display_answer: 공항에 도착한 후에 친구한테 전화했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:before-after-travel-mcq-two-hours
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-noun-jeon-hu
+    prompt:
+      stem: '"Bạn của bạn hỏi: 비행기가 10시에 출발해요. 언제 공항에 가야 해요? Bạn muốn trả lời \"Phải đến sân bay hai tiếng trước giờ cất cánh.\" Câu nào đúng?"'
+      stem_lang: vi
+      options:
+        - { id: s2n, text: 출발 두 시간 전에 공항에 가야 해요., lang: ko }
+        - { id: g7p, text: 출발 두 시간 후에 공항에 가야 해요., lang: ko }
+        - { id: l4x, text: 두 시간 출발 전에 공항을 가야 해요., lang: ko }
+        - { id: b9c, text: 출발했기 전에 두 시간 공항에 가야 해요., lang: ko }
+    answer:
+      correct_option_id: s2n
+    explanation:
+      vi: Mốc + khoảng thời gian + 전에 - 출발 두 시간 전에. 후에 là "sau"; đảo thứ tự và dùng 공항을 đều sai; 출발했기 là dạng không tồn tại.
+    display_answer: 출발 두 시간 전에 공항에 가야 해요.
+
+  - key: ko:exercise:before-after-travel-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:jim
+    prompt:
+      source_text: 짐을 싼 다음에 잠깐 쉬었어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Soạn hành lý xong, tôi nghỉ một lát.
+        - Soạn hành lý xong, tôi nghỉ một chút.
+        - Sau khi soạn hành lý, tôi đã nghỉ một lát.
+        - Sau khi soạn hành lý, tôi nghỉ một lát.
+        - Sau khi soạn hành lý, tôi nghỉ một chút.
+        - Sau khi soạn hành lý xong, tôi nghỉ một lát.
+        - Soạn đồ xong, tôi nghỉ một lát.
+        - Sau khi soạn đồ, tôi nghỉ một lát.
+        - Sau khi đóng gói hành lý, tôi nghỉ một lát.
+        - Tôi soạn hành lý xong rồi nghỉ một lát.
+        - Tôi soạn hành lý xong rồi nghỉ một chút.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trước khi soạn hành lý, tôi nghỉ một lát.
+        feedback_vi: 싼 다음에 là "sau khi soạn"; "trước khi" sẽ là 싸기 전에.
+        error_tag: jeon_hu_confusion
+      - answer: Hành lý rẻ nên tôi nghỉ một lát.
+        feedback_vi: 짐을 싸다 là "soạn hành lý"; 싸다 nghĩa "rẻ" là một từ khác.
+        error_tag: ssada_homonym
+    explanation:
+      vi: 싸다 (soạn, gói) không có patchim nên 싸 + ㄴ = 싼 다음에 = sau khi soạn. 잠깐 쉬었어요 = đã nghỉ một lát.
+    display_answer: Soạn hành lý xong, tôi nghỉ một lát.
+
+  - key: ko:exercise:before-after-travel-wb-pack
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jim
+    prompt:
+      instruction: '"Sắp xếp thành câu tiếng Hàn: \"Trước khi xuất phát, tôi đã soạn xong hết hành lý.\""'
+      tokens:
+        - { id: k3, text: 짐을 }
+        - { id: k5, text: 쌌어요 }
+        - { id: k1, text: 출발하기 }
+        - { id: k6, text: 출발했기 }
+        - { id: k4, text: 다 }
+        - { id: k2, text: 전에 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4, k5]
+    explanation:
+      vi: Vế "trước khi" đứng đầu - 출발하기 전에 (gốc + 기, không chia quá khứ), sau đó 짐을 다 쌌어요. 다 (hết) đứng ngay trước động từ.
+    display_answer: 출발하기 전에 짐을 다 쌌어요.

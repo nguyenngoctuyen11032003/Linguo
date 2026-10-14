@@ -1,0 +1,431 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:daily-troubles-daga-deoni
+order_index: 2
+level: topik3
+title:
+  vi: "Đang làm thì…, làm xong thì…: -다가 và -았/었더니"
+objectives:
+  - vi: Kể việc đang làm thì bị gián đoạn hoặc gặp sự cố bằng V-다가, giữ cùng một chủ ngữ.
+  - vi: Kể việc mình đã làm và điều mình phát hiện ra sau đó bằng V-았/었더니.
+  - vi: Nói về đồ bị rơi, vỡ, hỏng và chuyện mang đi sửa.
+  - vi: Bày tỏ cảm giác xót xa, buồn bực bằng 속상하다.
+estimated_minutes: 20
+skills: [grammar, speaking, vocabulary]
+prerequisites: [ko:lesson:daily-troubles-mishaps]
+items:
+  - item: ko:item:gram-daga
+  - item: ko:item:gram-at-deoni
+  - item: ko:item:surihada
+  - item: ko:item:seobiseu-senteo
+  - item: ko:item:tteoreotteurida
+  - item: ko:item:kkaejida
+  - item: ko:item:hwamyeon
+  - item: ko:item:chungjeonhada
+  - item: ko:item:soksanghada
+  - item: ko:item:mikkeureopda
+  - item: ko:item:neomeojida
+    role: reuse
+  - item: ko:item:hyudaepon
+    role: reuse
+  - item: ko:item:gojang-nada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "đang đi thì ngã", "đang sạc điện thoại thì ngủ quên", "mang máy đi sửa thì được báo là…" - những câu chuyện sự cố rất hay gặp khi nói chuyện bằng tiếng Hàn.
+  - type: explain
+    text:
+      vi: V-다가 nghĩa là đang làm A thì dừng lại, chuyển sang B, hoặc đang làm A thì xảy ra B (thường là sự cố) - 걷다가 넘어졌어요. Gắn thẳng vào thân động từ, không phân biệt patchim - 하다가, 먹다가.
+  - type: explain
+    text:
+      vi: Hai vế của -다가 phải cùng một chủ ngữ. "Tôi đang ngủ thì bạn gọi" có hai chủ ngữ khác nhau, nên phải nói 제가 자고 있는데 친구가 전화했어요, không dùng -다가.
+  - type: explain
+    text:
+      vi: V-았/었더니 nghĩa là "tôi đã làm A, thì thấy/kết quả là B" - 창문을 열었더니 눈이 오고 있었어요. Vế trước là hành động của chính bạn; vế sau là điều bạn phát hiện hoặc kết quả xảy ra sau đó.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt chỉ cần "thì" cho cả hai mẫu, nên người học hay lẫn. Hãy hỏi - A bị cắt ngang khi đang diễn ra (-다가) hay A đã làm xong rồi mới thấy B (-았/었더니)? Ngoài ra, -았다가 (갔다가) là làm xong A rồi đảo ngược hoặc chuyển sang B - 우산을 가져갔다가 잃어버렸어요; còn -더니 không có 았 dùng để kể điều quan sát được ở người khác.
+  - type: example
+    target: 휴대폰을 보면서 걷다가 넘어졌어요.
+    target_lang: ko
+    translation:
+      vi: Tôi vừa đi vừa xem điện thoại thì bị ngã.
+    note:
+      vi: Người đi và người ngã là một - "tôi".
+  - type: example
+    target: 커피를 마시다가 휴대폰을 떨어뜨렸어요. 화면이 깨졌어요.
+    target_lang: ko
+    translation:
+      vi: Đang uống cà phê thì tôi làm rơi điện thoại. Màn hình vỡ mất rồi.
+    note:
+      vi: 떨어뜨리다 có tân ngữ (휴대폰을) vì mình làm rơi.
+  - type: example
+    target: 서비스 센터에 갔더니 수리하는 데 일주일이 걸린다고 했어요.
+    target_lang: ko
+    translation:
+      vi: Tôi đến trung tâm bảo hành thì họ bảo sửa mất một tuần.
+    note:
+      vi: Đi đến nơi xong (갔더니) mới biết thông tin ở vế sau.
+  - type: example
+    target: 밤새 충전했더니 배터리가 100%가 됐어요.
+    target_lang: ko
+    translation:
+      vi: Sạc qua đêm xong thì pin đầy 100%.
+    note:
+      vi: -았/었더니 + kết quả của chính việc mình làm.
+  - type: example
+    target: 길이 미끄러워서 넘어졌어요. 새 바지가 찢어져서 정말 속상해요.
+    target_lang: ko
+    translation:
+      vi: Đường trơn nên tôi bị ngã. Cái quần mới bị rách, xót thật.
+    note:
+      vi: 속상하다 - buồn bực vì chuyện không may, mất mát.
+  - type: common_mistake
+    wrong: 제가 자다가 친구가 전화했어요.
+    right: 제가 자고 있는데 친구가 전화했어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt nói "tôi đang ngủ thì bạn gọi" rất tự nhiên, nhưng -다가 đòi hai vế cùng chủ ngữ. Chủ ngữ khác nhau thì dùng -고 있는데 hoặc -는데.
+  - type: common_mistake
+    wrong: 제가 창문을 열더니 눈이 오고 있었어요.
+    right: 제가 창문을 열었더니 눈이 오고 있었어요.
+    target_lang: ko
+    note:
+      vi: Kể việc chính mình đã làm rồi phát hiện ra điều gì đó thì cần 았/었 - 열었더니. -더니 không có 았 dùng khi kể về người khác.
+  - type: common_mistake
+    wrong: 휴대폰이 떨어뜨려서 화면이 깨졌어요.
+    right: 휴대폰을 떨어뜨려서 화면이 깨졌어요.
+    target_lang: ko
+    note:
+      vi: 떨어뜨리다 là "mình làm rơi", cần tân ngữ 을/를. Nếu muốn nói "điện thoại rơi" thì dùng 휴대폰이 떨어져서.
+  - type: summary
+    points:
+      - vi: V-다가 - đang làm A thì chuyển sang / gặp B; hai vế cùng chủ ngữ.
+      - vi: Chủ ngữ khác nhau → -고 있는데 / -는데, không dùng -다가.
+      - vi: V-았/었더니 - tôi đã làm A, thì thấy / kết quả là B.
+      - vi: 떨어뜨리다 (làm rơi) ≠ 떨어지다 (tự rơi); 깨지다 (vỡ) ≠ 고장 나다 (hỏng máy).
+      - vi: 수리하다, 서비스 센터, 화면, 충전하다, 미끄럽다, 속상하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dt-daga-mcq-same-subject
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-daga
+    prompt:
+      stem: Câu nào dùng -다가 đúng?
+      stem_lang: vi
+      options:
+        - { id: s4j, text: 숙제를 하다가 잠이 들었어요., lang: ko }
+        - { id: l8n, text: 제가 숙제를 하다가 동생이 들어왔어요., lang: ko }
+        - { id: v2q, text: 숙제를 했다가 잠이 들어요., lang: ko }
+        - { id: o6r, text: 숙제를 하다가 잠이 드세요., lang: ko }
+    answer:
+      correct_option_id: s4j
+    explanation:
+      vi: Người làm bài tập và người ngủ thiếp đi là một - đúng điều kiện của -다가. Câu có 동생이 đổi chủ ngữ nên sai; 했다가 + 들어요 lệch thì và nghĩa; 드세요 là lời bảo.
+    display_answer: 숙제를 하다가 잠이 들었어요.
+
+  - key: ko:exercise:dt-daga-listen-coffee
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tteoreotteurida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 커피를 마시다가 휴대폰을 떨어뜨렸어요.
+      options:
+        - { id: i3w, text: Đang uống cà phê thì tôi làm rơi điện thoại., lang: vi }
+        - { id: t7k, text: Uống cà phê xong tôi mới gọi điện thoại., lang: vi }
+        - { id: e5z, text: Tôi làm rơi cà phê lên điện thoại., lang: vi }
+        - { id: u9b, text: Điện thoại rơi nên tôi không uống cà phê nữa., lang: vi }
+    answer:
+      correct_option_id: i3w
+    explanation:
+      vi: 마시다가 là "đang uống thì…", 휴대폰을 떨어뜨렸어요 là "làm rơi điện thoại". Thứ bị rơi là điện thoại (휴대폰을), không phải cà phê.
+    display_answer: Đang uống cà phê thì tôi làm rơi điện thoại.
+
+  - key: ko:exercise:dt-deoni-mcq-medicine
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-at-deoni
+    prompt:
+      stem: "약을 먹었더니 좀 괜찮아졌어요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n2h, text: Tôi uống thuốc xong thì thấy đỡ hơn., lang: vi }
+        - { id: a8y, text: Tôi đang uống thuốc thì thấy mệt., lang: vi }
+        - { id: k5c, text: Nếu uống thuốc thì sẽ đỡ hơn., lang: vi }
+        - { id: m1f, text: Tôi thấy đỡ rồi nên không uống thuốc., lang: vi }
+    answer:
+      correct_option_id: n2h
+    explanation:
+      vi: -았/었더니 - tôi đã làm A (uống thuốc) và kết quả là B (đỡ hơn). Không phải "đang làm" (-다가) hay "nếu" (-(으)면).
+    display_answer: Tôi uống thuốc xong thì thấy đỡ hơn.
+
+  - key: ko:exercise:dt-daga-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-daga
+    prompt:
+      template: "휴대폰을 {{b1}} 잠이 들었어요."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Đang sạc điện thoại thì tôi ngủ thiếp đi."
+        - "Gợi ý: 충전하다 + -다가."
+    answer:
+      blanks:
+        b1: [충전하다가]
+    known_wrong:
+      - answer: 충전했다가
+        feedback_vi: Việc sạc chưa xong mà đang diễn ra thì bị ngắt, nên dùng 충전하다가, không gắn 았/었.
+        error_tag: daga_past
+      - answer: 충전했더니
+        feedback_vi: -았/었더니 là "làm xong rồi thấy…". Ở đây đang sạc thì ngủ, nên dùng -다가.
+        error_tag: daga_vs_deoni
+    explanation:
+      vi: 충전하다 bỏ 다, thêm -다가 → 충전하다가. Hành động sạc đang diễn ra thì một việc khác (ngủ thiếp đi) xen vào.
+    display_answer: 휴대폰을 충전하다가 잠이 들었어요.
+
+  - key: ko:exercise:dt-deoni-wb-snow
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-at-deoni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi mở cửa sổ ra thì thấy tuyết đang rơi.\""
+      tokens:
+        - { id: t2, text: 열었더니 }
+        - { id: t6, text: 열다가 }
+        - { id: t4, text: 오고 있었어요 }
+        - { id: t1, text: 창문을 }
+        - { id: t5, text: 열더니 }
+        - { id: t3, text: 눈이 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: Mở cửa xong mới thấy tuyết, và người mở là "tôi", nên dùng 열었더니. 열다가 là "đang mở thì…", 열더니 dùng khi kể về người khác.
+    display_answer: 창문을 열었더니 눈이 오고 있었어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dt-daga-fill-run-center
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-daga
+    prompt:
+      template: "(Tôi đang chạy trên đường thì bị ngã.) 길에서 {{b1}} 넘어졌어요. (Tôi đến trung tâm bảo hành thì nhân viên giải thích rất tận tình.) 서비스 센터에 {{b2}} 직원이 친절하게 설명해 줬어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [뛰다가]
+        b2: [갔더니]
+    known_wrong:
+      - answer: 뛰었다가
+        feedback_vi: Đang chạy thì ngã, việc chạy chưa xong - dùng 뛰다가.
+        error_tag: daga_past
+      - answer: 가더니
+        feedback_vi: Người đi là chính bạn, nên cần 았 - 갔더니.
+        error_tag: deoni_first_person
+      - answer: 가다가
+        feedback_vi: 가다가 là "đang đi trên đường thì…". Bạn đã đến nơi rồi mới gặp nhân viên, nên dùng 갔더니.
+        error_tag: daga_vs_deoni
+    explanation:
+      vi: Ô 1 - đang chạy thì có sự cố → 뛰다가. Ô 2 - đã đến nơi xong mới thấy điều ở vế sau → 갔더니 (가다 + 았더니).
+    display_answer: 길에서 뛰다가 넘어졌어요. 서비스 센터에 갔더니 직원이 친절하게 설명해 줬어요.
+
+  - key: ko:exercise:dt-daga-translate-movie
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-daga
+    prompt:
+      source_text: Đang xem phim thì tôi ngủ thiếp đi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 영화를 보다가 잠이 들었어요.
+        - 영화를 보다가 잠들었어요.
+        - 영화 보다가 잠이 들었어요.
+        - 영화 보다가 잠들었어요.
+        - 저는 영화를 보다가 잠이 들었어요.
+        - 저는 영화를 보다가 잠들었어요.
+        - 영화를 보다가 잠이 들었습니다.
+        - 영화를 보다가 잤어요.
+    known_wrong:
+      - answer: 영화를 봤다가 잠이 들었어요.
+        feedback_vi: Đang xem chứ chưa xem xong, nên dùng 보다가.
+        error_tag: daga_past
+      - answer: 영화를 봤더니 잠이 들었어요.
+        feedback_vi: -았/었더니 là làm xong rồi mới có kết quả. Đang xem thì ngủ - dùng 보다가.
+        error_tag: daga_vs_deoni
+      - answer: 영화를 보면서 잠이 들었어요.
+        feedback_vi: -(으)면서 là hai việc diễn ra song song. Ở đây việc xem bị ngắt vì ngủ - dùng -다가.
+        error_tag: daga_vs_myeonseo
+    explanation:
+      vi: Hành động A (xem phim) đang diễn ra thì bị ngắt bởi B (ngủ thiếp đi), cùng một người → 보다가. Thì quá khứ đặt ở cuối - 잠이 들었어요.
+    display_answer: 영화를 보다가 잠이 들었어요.
+
+  - key: ko:exercise:dt-deoni-translate-closed
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:seobiseu-senteo
+    prompt:
+      source_text: Tôi đến trung tâm bảo hành thì thấy cửa đóng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 서비스 센터에 갔더니 문이 닫혀 있었어요.
+        - 서비스 센터에 갔더니 문이 닫혀있었어요.
+        - 서비스 센터에 갔더니 문을 닫았어요.
+        - 저는 서비스 센터에 갔더니 문이 닫혀 있었어요.
+        - 서비스센터에 갔더니 문이 닫혀 있었어요.
+        - 서비스 센터에 가 봤더니 문이 닫혀 있었어요.
+        - 서비스 센터에 갔더니 문이 닫혀 있더라고요.
+    known_wrong:
+      - answer: 서비스 센터에 가더니 문이 닫혀 있었어요.
+        feedback_vi: Người đi là chính bạn, nên dùng 갔더니 (có 았).
+        error_tag: deoni_first_person
+      - answer: 서비스 센터에 가다가 문이 닫혀 있었어요.
+        feedback_vi: 가다가 là "đang đi giữa đường". Bạn đã đến nơi rồi mới thấy cửa đóng - dùng 갔더니.
+        error_tag: daga_vs_deoni
+      - answer: 서비스 센터에 가면 문이 닫혀 있었어요.
+        feedback_vi: -(으)면 là "nếu"; kể chuyện đã xảy ra thì dùng 갔더니.
+        error_tag: condition_vs_deoni
+    explanation:
+      vi: Tôi làm A (đến trung tâm) xong mới phát hiện B (cửa đóng) → 갔더니. "Cửa đang đóng" thường nói 문이 닫혀 있었어요.
+    display_answer: 서비스 센터에 갔더니 문이 닫혀 있었어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dt-daga-mcq-friend-called
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-daga
+    prompt:
+      stem: Bạn muốn kể "Tôi đang ngủ thì bạn tôi gọi điện". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: c7g, text: 제가 자고 있는데 친구가 전화했어요., lang: ko }
+        - { id: r3p, text: 제가 자다가 친구가 전화했어요., lang: ko }
+        - { id: h9d, text: 제가 잤더니 친구가 전화했어요., lang: ko }
+        - { id: w1s, text: 제가 자는 바람에 친구가 전화했어요., lang: ko }
+    answer:
+      correct_option_id: c7g
+    explanation:
+      vi: Hai vế có hai chủ ngữ (제가 / 친구가), nên không dùng -다가; nói bối cảnh bằng -고 있는데. 잤더니 nghĩa là "tôi ngủ xong thì…", còn -는 바람에 biến việc ngủ thành nguyên nhân khiến bạn gọi - vô lý.
+    display_answer: 제가 자고 있는데 친구가 전화했어요.
+
+  - key: ko:exercise:dt-daga-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:soksanghada
+    prompt:
+      source_text: 휴대폰을 떨어뜨려서 화면이 깨졌어요. 정말 속상해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Thật là xót.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Xót thật.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Buồn thật.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Tôi buồn quá.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Tôi xót quá.
+        - Tôi đánh rơi điện thoại nên màn hình bị vỡ. Xót thật.
+        - Tôi đánh rơi điện thoại nên màn hình bị vỡ. Buồn thật.
+        - Tôi làm rơi điện thoại nên vỡ màn hình. Xót thật.
+        - Tôi làm rơi điện thoại nên vỡ màn hình. Buồn thật.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Thật là buồn bực.
+        - Tôi làm rơi điện thoại nên màn hình vỡ rồi. Xót quá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Điện thoại bị hỏng nên màn hình bị vỡ. Thật là xót.
+        feedback_vi: 떨어뜨리다 là "làm rơi", không phải "bị hỏng".
+        error_tag: vocab_drop
+      - answer: Tôi làm rơi điện thoại nhưng màn hình không vỡ. Thật may.
+        feedback_vi: 깨졌어요 là "đã vỡ", 속상해요 là "buồn bực, xót", không phải "may".
+        error_tag: meaning_result
+    explanation:
+      vi: 떨어뜨려서 = làm rơi nên; 화면이 깨졌어요 = màn hình bị vỡ; 속상해요 = buồn bực, xót xa vì chuyện không may.
+    display_answer: Tôi làm rơi điện thoại nên màn hình bị vỡ. Thật là xót.
+
+  - key: ko:exercise:dt-deoni-translate-medicine
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-at-deoni
+    prompt:
+      source_text: Tôi nghỉ ngơi một ngày thì thấy khỏe hơn nhiều.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 하루 쉬었더니 많이 좋아졌어요.
+        - 하루 쉬었더니 많이 괜찮아졌어요.
+        - 하루 쉬었더니 많이 나아졌어요.
+        - 하루 동안 쉬었더니 많이 좋아졌어요.
+        - 하루 동안 쉬었더니 많이 나아졌어요.
+        - 저는 하루 쉬었더니 많이 좋아졌어요.
+        - 하루 쉬었더니 훨씬 좋아졌어요.
+        - 하루 쉬었더니 훨씬 나아졌어요.
+        - 하루 쉬었더니 몸이 많이 좋아졌어요.
+    known_wrong:
+      - answer: 하루 쉬더니 많이 좋아졌어요.
+        feedback_vi: Người nghỉ là chính bạn, cần 았/었 - 쉬었더니.
+        error_tag: deoni_first_person
+      - answer: 하루 쉬다가 많이 좋아졌어요.
+        feedback_vi: -다가 là "đang nghỉ thì…". Nghỉ xong rồi mới khỏe hơn - dùng 쉬었더니.
+        error_tag: daga_vs_deoni
+      - answer: 하루 쉬면 많이 좋아졌어요.
+        feedback_vi: -(으)면 là "nếu", không hợp với chuyện đã xảy ra.
+        error_tag: condition_vs_deoni
+    explanation:
+      vi: Việc mình đã làm (nghỉ một ngày) + kết quả sau đó (khỏe hơn) → 쉬었더니. "Khỏe hơn" dùng 좋아졌어요 / 나아졌어요.
+    display_answer: 하루 쉬었더니 많이 좋아졌어요.
+
+  - key: ko:exercise:dt-daga-mcq-slippery
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:mikkeureopda
+    prompt:
+      stem: Bạn kể với đồng nghiệp rằng đường trơn, bạn đang đi bộ thì bị ngã. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: x6m, text: 길이 미끄러워서 걷다가 넘어졌어요., lang: ko }
+        - { id: d2v, text: 길이 미끄럽어서 걷다가 넘어졌어요., lang: ko }
+        - { id: f8k, text: 길이 미끄러워서 걷더니 넘어졌어요., lang: ko }
+        - { id: b4n, text: 길이 미끄러워서 걷다가 넘어지세요., lang: ko }
+    answer:
+      correct_option_id: x6m
+    explanation:
+      vi: 미끄럽다 là bất quy tắc ㅂ → 미끄러워서. Đang đi thì ngã, cùng một người → 걷다가. 걷더니 dùng để kể về người khác; 넘어지세요 là lời bảo, vô nghĩa ở đây.
+    display_answer: 길이 미끄러워서 걷다가 넘어졌어요.

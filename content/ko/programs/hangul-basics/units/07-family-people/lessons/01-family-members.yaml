@@ -1,0 +1,395 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:family-members
+order_index: 1
+level: topik1
+title:
+  vi: Thành viên trong gia đình
+objectives:
+  - vi: Gọi tên các thành viên gia đình - bố mẹ, ông bà, anh chị em - ở dạng thân mật và trang trọng.
+  - vi: Chọn đúng 형/오빠 (anh) và 누나/언니 (chị) theo giới tính của chính bạn.
+  - vi: Nói mình có anh chị em nào bằng N이/가 있어요 và nối hai người bằng 하고.
+estimated_minutes: 14
+skills: [vocabulary, speaking, listening]
+prerequisites: [ko:lesson:food-shopping-review]
+items:
+  - item: ko:item:gajok
+  - item: ko:item:abeoji
+  - item: ko:item:eomma
+  - item: ko:item:halabeoji
+  - item: ko:item:hyeong
+  - item: ko:item:oppa
+  - item: ko:item:nuna
+  - item: ko:item:eonni
+  - item: ko:item:namdongsaeng
+  - item: ko:item:yeodongsaeng
+  - item: ko:item:gram-sibling-speaker
+  - item: ko:item:eomeoni
+    role: reuse
+  - item: ko:item:appa
+    role: reuse
+  - item: ko:item:halmeoni
+    role: reuse
+  - item: ko:item:gram-itda-eopda
+    role: reuse
+  - item: ko:item:hago-wa-gwa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được gia đình mình có những ai - "Tôi có một anh trai và một em gái" - và không bị nhầm 형 với 오빠 nữa.
+  - type: explain
+    text:
+      vi: Bố mẹ có hai cách gọi - 아빠, 엄마 (ba, má - thân mật) và 아버지, 어머니 (bố, mẹ - trang trọng). Khi kể về gia đình với người lạ hoặc người lớn, bạn nên dùng 아버지, 어머니. Ông là 할아버지, bà là 할머니.
+  - type: explain
+    text:
+      vi: Anh và chị đổi theo giới tính của NGƯỜI NÓI. Nếu bạn là nam - anh là 형, chị là 누나; nếu bạn là nữ - anh là 오빠, chị là 언니. Em thì ai cũng nói như nhau - 남동생 (em trai), 여동생 (em gái).
+  - type: explain
+    text:
+      vi: Để nói "tôi có…", dùng N이/가 있어요 như đã học - 형이 있어요, 누나가 있어요. Nối hai người bằng 하고 - 형하고 누나가 있어요 (chỉ người cuối mới mang 이/가).
+  - type: deep_explain
+    text:
+      vi: Người Hàn gọi anh chị bằng chính các từ này, kể cả với người không cùng huyết thống - nữ sinh gọi anh khóa trên là 오빠, nam gọi chị đồng nghiệp thân là 누나. Vì thế khi nghe một bạn nữ nói 오빠, bạn chưa chắc đó là anh ruột. Ngược lại, em (동생) không được gọi bằng từ này mà gọi bằng tên.
+  - type: example
+    target: (민수) 저는 형하고 누나가 있어요.
+    target_lang: ko
+    translation:
+      vi: (Minsu, nam) Tôi có anh trai và chị gái.
+    note:
+      vi: Minsu là nam nên gọi anh là 형, chị là 누나.
+  - type: example
+    target: (지은) 저는 오빠하고 언니가 있어요.
+    target_lang: ko
+    translation:
+      vi: (Jieun, nữ) Tôi có anh trai và chị gái.
+    note:
+      vi: Cùng nghĩa với câu trên, nhưng Jieun là nữ nên dùng 오빠, 언니.
+  - type: example
+    target: 남동생이 한 명 있어요. 여동생은 없어요.
+    target_lang: ko
+    translation:
+      vi: Tôi có một em trai. Em gái thì không có.
+    note:
+      vi: 한 명 là "một người" - số thuần Hàn + 명. 은 ở 여동생은 để đối chiếu với câu trước.
+  - type: example
+    target: 할아버지하고 할머니는 시골에 계세요.
+    target_lang: ko
+    translation:
+      vi: Ông và bà tôi ở dưới quê.
+    note:
+      vi: 계세요 là cách nói kính trọng của 있어요 cho người lớn tuổi - bạn sẽ học kỹ ở bài 3.
+  - type: common_mistake
+    wrong: (Lan, nữ) 저는 형이 있어요.
+    right: (Lan, nữ) 저는 오빠가 있어요.
+    target_lang: ko
+    note:
+      vi: Người Việt chọn từ theo người được gọi ("anh" vì người đó là nam). Tiếng Hàn chọn theo người nói - Lan là nữ nên phải dùng 오빠.
+  - type: common_mistake
+    wrong: (Nam, nam) 저는 언니가 있어요.
+    right: (Nam, nam) 저는 누나가 있어요.
+    target_lang: ko
+    note:
+      vi: 언니 chỉ dành cho người nói là nữ. Nam gọi chị là 누나 - nếu dùng 언니, người Hàn sẽ bật cười.
+  - type: common_mistake
+    wrong: 저는 남동생을 있어요.
+    right: 저는 남동생이 있어요.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "có em trai" giống tân ngữ nên dễ dùng 을/를. Với 있어요/없어요, người/vật được "có" luôn đi với 이/가.
+  - type: summary
+    points:
+      - vi: 아빠/엄마 (thân mật) · 아버지/어머니 (trang trọng) · 할아버지/할머니.
+      - vi: Bạn là nam - 형 (anh), 누나 (chị); bạn là nữ - 오빠 (anh), 언니 (chị).
+      - vi: 남동생 (em trai) · 여동생 (em gái) - không phụ thuộc người nói.
+      - vi: N이/가 있어요 · N하고 N이/가 있어요; 가족 = gia đình.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:family-members-mcq-oppa
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:oppa
+    prompt:
+      stem: Bạn là nữ. Bạn gọi anh trai mình bằng từ nào?
+      stem_lang: vi
+      options:
+        - { id: k4v, text: 오빠, lang: ko }
+        - { id: s9b, text: 형, lang: ko }
+        - { id: d1q, text: 누나, lang: ko }
+        - { id: x6m, text: 언니, lang: ko }
+    answer:
+      correct_option_id: k4v
+    explanation:
+      vi: Người nói là nữ nên anh trai là 오빠. 형 là anh trai khi người nói là nam; 누나 và 언니 đều là "chị".
+    display_answer: 오빠
+
+  - key: ko:exercise:family-members-listen-siblings
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:nuna
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 누나하고 남동생이 있어요.
+      options:
+        - { id: p3t, text: Tôi có chị gái và em trai., lang: vi }
+        - { id: g8n, text: Tôi có anh trai và em gái., lang: vi }
+        - { id: w2j, text: Tôi có chị gái và em gái., lang: vi }
+        - { id: c5r, text: Tôi có mẹ và em trai., lang: vi }
+    answer:
+      correct_option_id: p3t
+    explanation:
+      vi: 누나 là chị gái (người nói là nam), 남동생 là em trai. Em gái là 여동생, anh trai là 형/오빠, mẹ là 엄마/어머니.
+    display_answer: Tôi có chị gái và em trai.
+
+  - key: ko:exercise:family-members-mcq-grandpa
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:halabeoji
+    prompt:
+      stem: 할아버지 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: f7z, text: ông, lang: vi }
+        - { id: u2e, text: bà, lang: vi }
+        - { id: b9h, text: bố, lang: vi }
+        - { id: o4l, text: anh trai, lang: vi }
+    answer:
+      correct_option_id: f7z
+    explanation:
+      vi: 할아버지 là ông; 아버지 (bố) nằm trong từ này, thêm 할 phía trước thành "ông". Bà là 할머니 (từ 어머니), anh trai là 형/오빠.
+    display_answer: ông
+
+  - key: ko:exercise:family-members-fill-eonni
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:eonni
+    prompt:
+      template: "(지은, nữ) 저는 {{b1}}가 한 명 있어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi (Jieun, nữ) có một chị gái."
+        - "Gợi ý: \"chị\" khi người nói là nữ, bắt đầu bằng 언."
+    answer:
+      blanks:
+        b1: [언니]
+    known_wrong:
+      - answer: 누나
+        feedback_vi: 누나 là "chị" khi người nói là nam. Jieun là nữ nên dùng 언니.
+        error_tag: sibling_speaker_gender
+      - answer: 언이
+        feedback_vi: Viết là 언니 - patchim ㄴ của 언 và ㄴ của 니 đều phải có.
+        error_tag: spelling
+      - answer: 여동생
+        feedback_vi: 여동생 là em gái. Câu này nói về chị gái.
+        error_tag: family_term
+    explanation:
+      vi: Người nói là nữ nên chị gái là 언니. 언니 kết thúc bằng nguyên âm nên đi với 가.
+    display_answer: (지은, nữ) 저는 언니가 한 명 있어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:family-members-fill-minsu
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-sibling-speaker
+    prompt:
+      template: "(민수, nam - \"Tôi có anh trai và chị gái.\") 저는 {{b1}}하고 {{b2}}가 있어요."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [형]
+        b2: [누나]
+    known_wrong:
+      - answer: 오빠
+        feedback_vi: 오빠 chỉ dùng khi người nói là nữ. Minsu là nam nên anh trai là 형.
+        error_tag: sibling_speaker_gender
+      - answer: 언니
+        feedback_vi: 언니 chỉ dùng khi người nói là nữ. Minsu là nam nên chị gái là 누나.
+        error_tag: sibling_speaker_gender
+    explanation:
+      vi: Chọn từ theo giới tính người nói - Minsu là nam, nên anh là 형, chị là 누나. 하고 nối hai người, 가 đứng sau người cuối.
+    display_answer: (민수) 저는 형하고 누나가 있어요.
+
+  - key: ko:exercise:family-members-translate-brother
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:namdongsaeng
+    prompt:
+      source_text: Tôi có một em trai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 남동생이 한 명 있어요.
+        - 저는 남동생이 한 명 있어요.
+        - 남동생 한 명 있어요.
+        - 저는 남동생 한 명 있어요.
+        - 남동생이 하나 있어요.
+        - 저는 남동생이 하나 있어요.
+        - 전 남동생이 한 명 있어요.
+    known_wrong:
+      - answer: 저는 남동생을 한 명 있어요.
+        feedback_vi: Với 있어요, người được "có" đi với 이/가 - 남동생이.
+        error_tag: particle_itda
+      - answer: 저는 남동생이 일 명 있어요.
+        feedback_vi: Đếm người dùng số thuần Hàn - 한 명, không dùng 일 명.
+        error_tag: native_sino_number
+      - answer: 저는 남동생이 하나 명 있어요.
+        feedback_vi: Trước 명, 하나 rút gọn thành 한 - 한 명.
+        error_tag: native_short_form
+      - answer: 저는 여동생이 한 명 있어요.
+        feedback_vi: 여동생 là em gái. Em trai là 남동생.
+        error_tag: family_term
+    explanation:
+      vi: Em trai = 남동생; "một người" = 한 명 (số thuần Hàn rút gọn + 명); "có" = 이/가 있어요. Số lượng đứng sau người - 남동생이 한 명.
+    display_answer: 저는 남동생이 한 명 있어요.
+
+  - key: ko:exercise:family-members-translate-mother
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:eomma
+    prompt:
+      source_text: Mẹ tôi là giáo viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어머니는 선생님이에요.
+        - 엄마는 선생님이에요.
+        - 우리 어머니는 선생님이에요.
+        - 우리 엄마는 선생님이에요.
+        - 어머니가 선생님이에요.
+        - 엄마가 선생님이에요.
+        - 제 어머니는 선생님이에요.
+        - 저희 어머니는 선생님이에요.
+    known_wrong:
+      - answer: 엄마는 선생님예요.
+        feedback_vi: 선생님 có patchim ㅁ nên dùng 이에요 - 선생님이에요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 엄마은 선생님이에요.
+        feedback_vi: 엄마 không có patchim nên dùng 는 - 엄마는.
+        error_tag: particle_eun_neun
+      - answer: 저 엄마는 선생님이에요.
+        feedback_vi: 저 엄마 nghĩa là "bà mẹ kia". "Mẹ tôi" là 우리 엄마 hoặc 제 어머니 - bạn sẽ học kỹ ở bài sau.
+        error_tag: possessive_je
+    explanation:
+      vi: Mẹ = 엄마 (thân mật) hoặc 어머니 (trang trọng); 엄마 không có patchim nên đi với 는. Trong tiếng Hàn, "của tôi" thường được bỏ khi đã rõ, hoặc nói 우리 엄마.
+    display_answer: 어머니는 선생님이에요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:family-members-mcq-situation-female
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-sibling-speaker
+    prompt:
+      stem: Bạn là nữ, bạn kể với một người bạn Hàn rằng mình có một anh trai và một em gái. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: r5y, text: 오빠하고 여동생이 있어요., lang: ko }
+        - { id: m8a, text: 형하고 여동생이 있어요., lang: ko }
+        - { id: h1w, text: 오빠하고 언니가 있어요., lang: ko }
+        - { id: z3c, text: 오빠하고 여동생을 있어요., lang: ko }
+    answer:
+      correct_option_id: r5y
+    explanation:
+      vi: Người nói là nữ nên anh trai là 오빠; em gái là 여동생 và với 있어요 phải dùng 이. 형 dành cho người nói là nam, 언니 là chị chứ không phải em.
+    display_answer: 오빠하고 여동생이 있어요.
+
+  - key: ko:exercise:family-members-mcq-who-nurse
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:nuna
+    prompt:
+      stem: "Một bạn nam người Hàn nói: \"우리 누나는 간호사예요.\" Ai là y tá?"
+      stem_lang: vi
+      options:
+        - { id: q2k, text: Chị gái của bạn ấy, lang: vi }
+        - { id: e7f, text: Em gái của bạn ấy, lang: vi }
+        - { id: v4s, text: Anh trai của bạn ấy, lang: vi }
+        - { id: i9d, text: Mẹ của bạn ấy, lang: vi }
+    answer:
+      correct_option_id: q2k
+    explanation:
+      vi: 누나 là "chị gái" khi người nói là nam. Em gái là 여동생, anh trai (với người nói nam) là 형, mẹ là 엄마/어머니.
+    display_answer: Chị gái của bạn ấy
+
+  - key: ko:exercise:family-members-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hyeong
+    prompt:
+      source_text: 저는 형이 한 명 있어요. 그리고 여동생이 두 명 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi có một anh trai. Và tôi có hai em gái.
+        - Tôi có một anh trai. Và có hai em gái.
+        - Tôi có một anh trai và hai em gái.
+        - Tôi có một người anh trai và hai em gái.
+        - Tôi có một anh trai. Ngoài ra tôi có hai em gái.
+        - Tôi có một anh trai, và hai em gái.
+        - Tôi có một anh trai. Tôi còn có hai em gái.
+        - Tôi có một anh và hai em gái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi có một chị gái và hai em gái.
+        feedback_vi: 형 là anh trai (người nói là nam), không phải chị gái.
+        error_tag: family_term
+      - answer: Tôi có một anh trai và hai em trai.
+        feedback_vi: 여동생 là em gái; em trai là 남동생.
+        error_tag: family_term
+      - answer: Tôi có hai anh trai và một em gái.
+        feedback_vi: 한 명 là một người, 두 명 là hai người - xem lại số đi với ai.
+        error_tag: number_counter
+    explanation:
+      vi: 형 = anh trai (người nói là nam), 여동생 = em gái, 한 명/두 명 = một/hai người, 그리고 = và.
+    display_answer: Tôi có một anh trai và hai em gái.
+
+  - key: ko:exercise:family-members-wb-female
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:eonni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn. Bạn là nữ: \"Tôi có chị gái và em trai.\""
+      tokens:
+        - { id: t1, text: 남동생이 }
+        - { id: t2, text: 누나하고 }
+        - { id: t3, text: 있어요 }
+        - { id: t4, text: 언니하고 }
+        - { id: t5, text: 저는 }
+        - { id: t6, text: 남동생을 }
+    answer:
+      orders:
+        - [t5, t4, t1, t3]
+    explanation:
+      vi: Người nói là nữ nên chị gái là 언니 (không phải 누나). Với 있어요, người được "có" dùng 이 - 남동생이; động từ 있어요 ở cuối câu.
+    display_answer: 저는 언니하고 남동생이 있어요.

@@ -1,0 +1,428 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:daily-troubles-chatting
+order_index: 3
+level: topik3
+title:
+  vi: "Kể chuyện rắc rối: -더라고요, -잖아요, -거든요"
+objectives:
+  - vi: Kể lại điều mình đã thấy, cảm nhận bằng -더라고요, không dùng cho hành động có chủ ý của chính mình.
+  - vi: Nhắc điều người nghe đã biết bằng -잖아요.
+  - vi: Đưa ra lý do người nghe chưa biết bằng -거든요, và biết không dùng nó khi viết.
+  - vi: Bày tỏ cảm xúc - 답답하다, 짜증이 나다, 다행이다.
+estimated_minutes: 20
+skills: [grammar, speaking, listening]
+prerequisites: [ko:lesson:daily-troubles-daga-deoni]
+items:
+  - item: ko:item:gram-deoragoyo
+  - item: ko:item:gram-janayo
+  - item: ko:item:gram-geodeunyo
+  - item: ko:item:dapdaphada
+  - item: ko:item:jjajeungi-nada
+  - item: ko:item:dahaengida
+  - item: ko:item:wollae
+  - item: ko:item:algo-boni
+  - item: ko:item:jeongsini-eopda
+  - item: ko:item:giri-makhida
+    role: reuse
+  - item: ko:item:nochida
+    role: reuse
+  - item: ko:item:jigabeul-ireobeorida
+    role: reuse
+  - item: ko:item:hyudaepon
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể chuyện rắc rối với bạn bè, đồng nghiệp một cách tự nhiên như người Hàn - "tôi thấy…", "…mà", "chả là…" - và bày tỏ được mình bực, sốt ruột hay nhẹ nhõm.
+  - type: explain
+    text:
+      vi: -더라고요 kể lại điều chính bạn đã thấy, nghe, cảm nhận như một phát hiện - 길이 많이 막히더라고요 (tôi thấy đường tắc lắm). Thì quá khứ được ngầm hiểu trong 더, nên không cần thêm 았.
+  - type: explain
+    text:
+      vi: -잖아요 là "…mà, …còn gì" - nhắc điều người nghe cũng biết - 오늘 월요일이잖아요. -거든요 là "chả là…" - đưa ra lý do, bối cảnh người nghe chưa biết - 버스를 놓쳤거든요.
+  - type: explain
+    text:
+      vi: Cả -잖아요 và -거든요 đều là văn nói. Khi viết email, báo cáo, bài luận, hãy dùng -기 때문이다, -아서, -(으)니까 thay cho -거든요.
+  - type: deep_explain
+    text:
+      vi: Người Việt hay dịch "vì" thành -거든요 ở mọi nơi, kể cả bài viết TOPIK, khiến câu nghe như đang nói chuyện phiếm. Với -더라고요, hãy nhớ người nói là "người quan sát" - bạn không quan sát hành động có chủ ý của chính mình, nên 제가 영화를 보더라고요 là sai; nhưng cảm giác, phản ứng bất ngờ của chính mình thì được (생각보다 무섭더라고요). Còn -잖아요 với cấp trên dễ nghe như "anh/chị biết rồi còn hỏi", nên dùng cẩn thận.
+  - type: example
+    target: 분실물 센터에 갔는데 직원이 정말 친절하더라고요.
+    target_lang: ko
+    translation:
+      vi: Tôi đến quầy đồ thất lạc, thấy nhân viên tử tế lắm.
+    note:
+      vi: -더라고요 - điều bạn đã tận mắt thấy.
+  - type: example
+    target: 원래 금요일 저녁에는 길이 막히잖아요.
+    target_lang: ko
+    translation:
+      vi: Tối thứ Sáu vốn hay tắc đường mà.
+    note:
+      vi: Ai cũng biết điều này → -잖아요, thường đi với 원래.
+  - type: example
+    target: 어제 전화 못 받아서 미안해요. 휴대폰을 잃어버렸거든요.
+    target_lang: ko
+    translation:
+      vi: Xin lỗi hôm qua tôi không nghe máy. Chả là tôi làm mất điện thoại.
+    note:
+      vi: Người nghe chưa biết chuyện mất điện thoại → -거든요. Với bạn thân có thể bỏ 요 (잃어버렸거든).
+  - type: example
+    target: 지갑을 잃어버린 줄 알았는데 알고 보니 가방 안에 있더라고요. 정말 다행이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi cứ tưởng mất ví, hóa ra nó nằm trong túi. May thật.
+    note:
+      vi: 알고 보니 + -더라고요 - cặp hay gặp khi kể phát hiện bất ngờ.
+  - type: example
+    target: 아침부터 정신이 없어서 너무 답답하고 짜증이 났어요.
+    target_lang: ko
+    translation:
+      vi: Từ sáng đã rối tung lên nên tôi thấy bức bối và bực mình quá.
+  - type: common_mistake
+    wrong: 제가 어제 분실물 센터에 가더라고요.
+    right: 제가 어제 분실물 센터에 갔는데 사람이 많더라고요.
+    target_lang: ko
+    note:
+      vi: Việc đi là hành động có chủ ý của chính bạn, nên không dùng -더라고요. Dùng quá khứ thường cho việc mình làm, và -더라고요 cho điều mình thấy ở đó.
+  - type: common_mistake
+    wrong: 저는 한국어를 공부합니다. 한국 회사에서 일하고 싶거든요.
+    right: 저는 한국 회사에서 일하고 싶기 때문에 한국어를 공부합니다.
+    target_lang: ko
+    note:
+      vi: Trong bài viết, bài luận, -거든요 nghe như nói chuyện phiếm. Viết lý do thì dùng -기 때문에 hoặc -기 때문이다.
+  - type: common_mistake
+    wrong: 팀장님, 제가 어제 말씀드렸잖아요.
+    right: 팀장님, 어제 말씀드린 것처럼 오늘은 일찍 퇴근하겠습니다.
+    target_lang: ko
+    note:
+      vi: Với cấp trên, -잖아요 nghe như trách "tôi nói rồi còn gì". Dùng cách nói nhẹ nhàng hơn như -(으)ㄴ 것처럼.
+  - type: summary
+    points:
+      - vi: -더라고요 - kể điều mình đã thấy, cảm nhận; không dùng cho hành động có chủ ý của mình.
+      - vi: -잖아요 - người nghe đã biết (…mà, …còn gì); cẩn thận với cấp trên.
+      - vi: -거든요 - lý do người nghe chưa biết (chả là…); chỉ dùng khi nói, không dùng khi viết.
+      - vi: 답답하다 (bức bối), 짜증이 나다 (bực mình), 다행이다 (may quá), 정신이 없다 (rối tung).
+      - vi: 원래 (vốn dĩ) hay đi với -잖아요; 알고 보니 (hóa ra) hay đi với -더라고요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dt-chat-mcq-deorago-natural
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-deoragoyo
+    prompt:
+      stem: Câu nào dùng -더라고요 tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: p5e, text: 아침에 나가 보니까 길이 많이 막히더라고요., lang: ko }
+        - { id: g9t, text: 제가 어제 영화를 보더라고요., lang: ko }
+        - { id: y3a, text: 저는 내일 서비스 센터에 가더라고요., lang: ko }
+        - { id: m7u, text: 제가 아침에 커피를 마시더라고요., lang: ko }
+    answer:
+      correct_option_id: p5e
+    explanation:
+      vi: Người nói ra ngoài và thấy đường tắc - đó là điều quan sát được, hợp với -더라고요. Ba câu còn lại kể hành động có chủ ý của chính mình (hoặc việc tương lai), nên không dùng -더라고요.
+    display_answer: 아침에 나가 보니까 길이 많이 막히더라고요.
+
+  - key: ko:exercise:dt-chat-listen-monday
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-janayo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 오늘 월요일이잖아요. 그래서 길이 막혀요.
+      options:
+        - { id: z8h, text: Hôm nay là thứ Hai mà. Vì thế đường mới tắc., lang: vi }
+        - { id: k2b, text: Hôm nay có phải thứ Hai không? Đường có tắc không?, lang: vi }
+        - { id: r6c, text: Hôm nay không phải thứ Hai nên đường không tắc., lang: vi }
+        - { id: e1x, text: Chả là thứ Hai tôi bị kẹt xe., lang: vi }
+    answer:
+      correct_option_id: z8h
+    explanation:
+      vi: 월요일이잖아요 là "thứ Hai mà" - nhắc điều người nghe cũng biết; 그래서 길이 막혀요 là "vì thế đường tắc". Câu không phải câu hỏi, cũng không phủ định.
+    display_answer: Hôm nay là thứ Hai mà. Vì thế đường mới tắc.
+
+  - key: ko:exercise:dt-chat-mcq-late-reason
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-geodeunyo
+    prompt:
+      stem: "Bạn đến muộn. Đồng nghiệp hỏi: 왜 늦었어요? Họ không biết bạn bị lỡ xe buýt. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: w4q, text: 죄송해요. 버스를 놓쳤거든요., lang: ko }
+        - { id: d6j, text: 죄송해요. 버스를 놓쳤잖아요., lang: ko }
+        - { id: s1n, text: 죄송해요. 버스를 놓치더라고요., lang: ko }
+        - { id: h5p, text: 죄송해요. 버스를 놓칠 테니까요., lang: ko }
+    answer:
+      correct_option_id: w4q
+    explanation:
+      vi: Người nghe chưa biết lý do nên dùng -거든요 (chả là…). -잖아요 chỉ dùng cho điều người nghe đã biết; -더라고요 không dùng cho việc của chính mình; -(으)ㄹ 테니까 là ý định, dự đoán.
+    display_answer: 죄송해요. 버스를 놓쳤거든요.
+
+  - key: ko:exercise:dt-chat-fill-janayo-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:wollae
+    prompt:
+      template: "원래 이 시간에는 길이 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Giờ này đường vốn dĩ hay tắc mà."
+        - "Gợi ý: 막히다 + đuôi \"…mà\" (người nghe đã biết)."
+    answer:
+      blanks:
+        b1: [막히잖아요]
+    known_wrong:
+      - answer: 막히거든요
+        feedback_vi: -거든요 dùng cho lý do người nghe chưa biết. Điều "vốn dĩ" ai cũng biết thì dùng -잖아요.
+        error_tag: janayo_vs_geodeunyo
+      - answer: 막히잔아요
+        feedback_vi: Viết đúng chính tả là 잖 (có ㅎ) - 막히잖아요, dù đọc là [자나요].
+        error_tag: spelling_janayo
+    explanation:
+      vi: 원래 (vốn dĩ) + -잖아요 nhắc lại điều ai cũng biết. 막히다 bỏ 다, thêm -잖아요.
+    display_answer: 원래 이 시간에는 길이 막히잖아요.
+
+  - key: ko:exercise:dt-chat-wb-algo-boni
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:algo-boni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Hóa ra cái ví nằm trong túi (tôi thấy vậy).\""
+      tokens:
+        - { id: t3, text: 가방 안에 }
+        - { id: t5, text: 있더라도 }
+        - { id: t1, text: 알고 보니 }
+        - { id: t4, text: 있더라고요 }
+        - { id: t2, text: 지갑이 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t1, t3, t2, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: 알고 보니 (hóa ra) mở đầu điều phát hiện; kết câu bằng 있더라고요 vì đây là điều bạn tự thấy. 있더라도 là "dù có…", không hợp nghĩa.
+    display_answer: 알고 보니 지갑이 가방 안에 있더라고요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dt-chat-fill-two-endings
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-deoragoyo
+    prompt:
+      template: "(Xin lỗi vì đến muộn. Chả là đường tắc quá.) 늦어서 죄송해요. 길이 너무 {{b1}}. (Tôi đến quầy đồ thất lạc, thấy nhân viên tử tế lắm.) 분실물 센터에 갔는데 직원이 정말 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [막혔거든요]
+        b2: [친절하더라고요]
+    known_wrong:
+      - answer: 막혔잖아요
+        feedback_vi: Người nghe chưa biết lý do bạn đến muộn, nên dùng -거든요, không dùng -잖아요.
+        error_tag: janayo_vs_geodeunyo
+      - answer: 막히더라고요
+        feedback_vi: Ở đây bạn đang giải thích lý do cho người nghe - dùng -거든요 (막혔거든요).
+        error_tag: deorago_vs_geodeunyo
+      - answer: 친절했잖아요
+        feedback_vi: Người nghe chưa đến đó nên không biết chuyện này - kể điều mình đã thấy dùng 친절하더라고요.
+        error_tag: janayo_new_info
+    explanation:
+      vi: Ô 1 - lý do người nghe chưa biết → 막혔거든요. Ô 2 - điều bạn đã quan sát → 친절하더라고요 (친절하다 + 더라고요).
+    display_answer: 늦어서 죄송해요. 길이 너무 막혔거든요. 분실물 센터에 갔는데 직원이 정말 친절하더라고요.
+
+  - key: ko:exercise:dt-chat-translate-lost-phone
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-geodeunyo
+    prompt:
+      source_text: Xin lỗi vì không nghe máy. Chả là tôi làm mất điện thoại.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 전화를 못 받아서 미안해요. 휴대폰을 잃어버렸거든요.
+        - 전화를 못 받아서 죄송해요. 휴대폰을 잃어버렸거든요.
+        - 전화 못 받아서 미안해요. 휴대폰을 잃어버렸거든요.
+        - 전화 못 받아서 죄송해요. 휴대폰을 잃어버렸거든요.
+        - 전화를 못 받아서 미안해요. 핸드폰을 잃어버렸거든요.
+        - 전화를 못 받아서 죄송해요. 핸드폰을 잃어버렸거든요.
+        - 전화를 못 받아서 미안해요. 제가 휴대폰을 잃어버렸거든요.
+        - 전화를 못 받아서 죄송해요. 제가 휴대폰을 잃어버렸거든요.
+        - 전화를 못 받아서 죄송합니다. 휴대폰을 잃어버렸거든요.
+    known_wrong:
+      - answer: 전화를 못 받아서 미안해요. 휴대폰을 잃어버렸잖아요.
+        feedback_vi: Người nghe chưa biết bạn mất điện thoại, nên dùng -거든요.
+        error_tag: janayo_vs_geodeunyo
+      - answer: 전화를 못 받아서 미안해요. 휴대폰을 잊어버렸거든요.
+        feedback_vi: 잊어버리다 là "quên"; làm mất đồ là 잃어버리다.
+        error_tag: vocab_lose_forget
+      - answer: 전화를 못 받아서 미안해요. 휴대폰을 잃어버리더라고요.
+        feedback_vi: Làm mất điện thoại là việc của chính bạn, không dùng -더라고요.
+        error_tag: deorago_own_action
+    explanation:
+      vi: Xin lỗi + -아서 (못 받아서 미안해요), rồi đưa lý do người nghe chưa biết bằng -거든요 - 잃어버렸거든요.
+    display_answer: 전화를 못 받아서 미안해요. 휴대폰을 잃어버렸거든요.
+
+  - key: ko:exercise:dt-chat-translate-always-traffic
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-janayo
+    prompt:
+      source_text: Thứ Sáu đường vốn dĩ hay tắc mà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 금요일에는 원래 길이 막히잖아요.
+        - 원래 금요일에는 길이 막히잖아요.
+        - 금요일에는 원래 길이 많이 막히잖아요.
+        - 원래 금요일에는 길이 많이 막히잖아요.
+        - 금요일은 원래 길이 막히잖아요.
+        - 금요일에 원래 길이 막히잖아요.
+        - 원래 금요일에 길이 막히잖아요.
+    known_wrong:
+      - answer: 금요일에는 원래 길이 막히거든요.
+        feedback_vi: '"…mà" nhắc điều ai cũng biết - dùng -잖아요.'
+        error_tag: janayo_vs_geodeunyo
+      - answer: 금요일에는 원래 길이 막히잔아요.
+        feedback_vi: Viết 잖 có ㅎ - 막히잖아요.
+        error_tag: spelling_janayo
+    explanation:
+      vi: 원래 = vốn dĩ; 길이 막히다 = tắc đường; "…mà" (người nghe đã biết) = -잖아요.
+    display_answer: 금요일에는 원래 길이 막히잖아요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dt-chat-mcq-writing
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-geodeunyo
+    prompt:
+      stem: Bạn viết báo cáo gửi công ty giải thích vì sao giao hàng chậm (do tai nạn giao thông). Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: b9w, text: 배송이 늦어진 것은 교통사고가 났기 때문입니다., lang: ko }
+        - { id: a3z, text: 배송이 늦어졌어요. 교통사고가 났거든요., lang: ko }
+        - { id: j7m, text: 배송이 늦어졌어요. 교통사고가 났잖아요., lang: ko }
+        - { id: q2d, text: 배송이 늦어졌어요. 교통사고가 나더라고요., lang: ko }
+    answer:
+      correct_option_id: b9w
+    explanation:
+      vi: Báo cáo là văn viết trang trọng, nên dùng -기 때문입니다. -거든요, -잖아요, -더라고요 đều là văn nói thân mật, không hợp với báo cáo.
+    display_answer: 배송이 늦어진 것은 교통사고가 났기 때문입니다.
+
+  - key: ko:exercise:dt-chat-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:dahaengida
+    prompt:
+      source_text: 알고 보니 휴대폰이 가방 안에 있더라고요. 정말 다행이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hóa ra điện thoại nằm trong túi. Thật may quá.
+        - Hóa ra điện thoại nằm trong túi. May thật.
+        - Hóa ra điện thoại nằm trong túi. May quá.
+        - Hóa ra điện thoại ở trong túi. May quá.
+        - Hóa ra điện thoại ở trong túi. May thật.
+        - Hóa ra điện thoại ở trong túi. Thật là may.
+        - Té ra điện thoại nằm trong túi. May quá.
+        - Té ra điện thoại ở trong túi. May thật.
+        - Hóa ra điện thoại nằm trong cặp. May quá.
+        - Hóa ra điện thoại ở trong cặp. May thật.
+        - Hóa ra điện thoại nằm trong túi. Thật là may.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hóa ra điện thoại không có trong túi. Thật đáng tiếc.
+        feedback_vi: 있더라고요 là "(thấy) có ở đó", 다행이에요 là "may quá".
+        error_tag: meaning_result
+      - answer: Tôi để điện thoại trong túi. Thật may quá.
+        feedback_vi: 알고 보니 là "hóa ra" - một phát hiện bất ngờ, không phải hành động của bạn.
+        error_tag: meaning_algo_boni
+    explanation:
+      vi: 알고 보니 = hóa ra; -더라고요 kể điều bạn tự thấy; 다행이에요 = may quá.
+    display_answer: Hóa ra điện thoại nằm trong túi. Thật may quá.
+
+  - key: ko:exercise:dt-chat-translate-frustrated
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:dapdaphada
+    prompt:
+      source_text: Đường cứ tắc mãi nên tôi thấy bức bối quá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 길이 계속 막혀서 너무 답답해요.
+        - 길이 계속 막혀서 정말 답답해요.
+        - 길이 계속 막혀서 답답해요.
+        - 길이 계속 막혀서 너무 답답했어요.
+        - 길이 계속 막혀서 정말 답답했어요.
+        - 길이 계속 막히니까 너무 답답해요.
+        - 길이 자꾸 막혀서 너무 답답해요.
+        - 저는 길이 계속 막혀서 너무 답답해요.
+    known_wrong:
+      - answer: 길이 계속 막혔어서 너무 답답해요.
+        feedback_vi: -아서 không gắn quá khứ - 막혀서.
+        error_tag: past_with_aseo
+      - answer: 길이 계속 막혀서 너무 다행이에요.
+        feedback_vi: 다행이다 là "may quá"; "bức bối" là 답답하다.
+        error_tag: vocab_emotion
+      - answer: 길이 계속 막혀서 너무 답답하더라고요.
+        feedback_vi: Cảm xúc của chính bạn ngay lúc này thì nói thẳng 답답해요; -더라고요 dùng khi kể lại sau đó.
+        error_tag: deorago_current_feeling
+    explanation:
+      vi: Lý do + cảm xúc - 막혀서 + 답답해요. 답답하다 diễn tả cảm giác bức bối, sốt ruột khi bế tắc; 계속 là "cứ, liên tục".
+    display_answer: 길이 계속 막혀서 너무 답답해요.
+
+  - key: ko:exercise:dt-chat-mcq-remind-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-janayo
+    prompt:
+      stem: Hôm qua bạn đã nói với bạn thân rằng hôm nay bạn bận. Hôm nay bạn ấy lại rủ đi chơi. Bạn nhắc lại thế nào?
+      stem_lang: vi
+      options:
+        - { id: v8f, text: 제가 오늘 바쁘다고 어제 말했잖아요., lang: ko }
+        - { id: u4k, text: 제가 오늘 바쁘다고 어제 말했거든요., lang: ko }
+        - { id: o2y, text: 제가 오늘 바쁘다고 어제 말하더라고요., lang: ko }
+        - { id: i6r, text: 제가 오늘 바쁘다고 어제 말할 뻔했어요., lang: ko }
+    answer:
+      correct_option_id: v8f
+    explanation:
+      vi: Bạn ấy đã được nghe rồi, nên nhắc lại bằng -잖아요 ("tôi đã nói rồi mà"). -거든요 dùng cho thông tin mới; -더라고요 không dùng cho hành động của chính mình; 말할 뻔했어요 là "suýt nói".
+    display_answer: 제가 오늘 바쁘다고 어제 말했잖아요.

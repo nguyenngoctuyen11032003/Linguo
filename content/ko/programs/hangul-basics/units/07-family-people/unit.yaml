@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:unit:family-people
+order_index: 7
+title:
+  vi: Gia đình & miêu tả người

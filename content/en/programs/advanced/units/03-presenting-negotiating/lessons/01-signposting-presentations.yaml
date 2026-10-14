@@ -1,0 +1,401 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:signposting-presentations
+order_index: 1
+level: c1
+title:
+  vi: Dẫn dắt bài thuyết trình (signposting)
+objectives:
+  - vi: Mở đầu, giới thiệu bố cục, chuyển ý và tóm tắt bài thuyết trình bằng các cụm signposting tự nhiên.
+  - vi: Dùng Let me elaborate on… và To put this into perspective… để triển khai và làm rõ số liệu.
+  - vi: Sửa các lỗi quen thuộc - "Today I will present about…", discuss about, emphasise about.
+estimated_minutes: 20
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:nuance-idiom-review]
+items:
+  - item: en:item:signposting
+  - item: en:item:id-like-to-begin-by
+  - item: en:item:divided-into-parts
+  - item: en:item:this-brings-me-to
+  - item: en:item:let-me-elaborate-on
+  - item: en:item:to-put-this-into-perspective
+  - item: en:item:turning-now-to
+  - item: en:item:as-i-mentioned-earlier
+  - item: en:item:to-recap
+  - item: en:item:give-a-presentation-on
+  - item: en:item:emphasise
+  - item: en:item:discuss
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Một bài thuyết trình hay không chỉ có nội dung tốt mà còn dẫn người nghe đi từng bước. Sau bài này, bạn mở đầu, chuyển ý và kết thúc bài nói như một diễn giả chuyên nghiệp, không cần đọc slide.
+  - type: explain
+    text:
+      vi: Signposting là những câu "biển chỉ đường" - báo cho khán giả bạn đang ở phần nào và sắp đi đâu. Người đọc có thể lật lại trang, nhưng người nghe thì không, nên bài nói cần nhiều signposting hơn bài viết.
+  - type: explain
+    text:
+      vi: Mở đầu - I'd like to begin by + V-ing; giới thiệu bố cục - I've divided my talk into three parts. Chuyển ý - This brings me to… (ý sau là hệ quả ý trước), Turning now to… / Moving on to… (sang phần mới), As I mentioned earlier… (quay lại ý cũ).
+  - type: explain
+    text:
+      vi: Triển khai - Let me elaborate on…; làm rõ con số - To put this into perspective, … kèm một phép so sánh dễ hình dung. Kết thúc - To recap, … rồi nhắc lại 2-3 ý chính.
+  - type: deep_explain
+    text:
+      vi: Người Việt hay mở đầu bằng "Hello everyone, today I will present about…" - dịch sát "hôm nay tôi sẽ thuyết trình về". Present là ngoại động từ (present the results), còn danh từ đi với give a presentation on. Tương tự, discuss, emphasise, mention đều nhận tân ngữ trực tiếp, không cần about - dù tiếng Việt luôn có "về".
+  - type: example
+    target: Good morning, everyone. I'd like to begin by looking at a number that surprised us all.
+    target_lang: en
+    translation:
+      vi: Chào buổi sáng mọi người. Tôi xin bắt đầu bằng một con số khiến tất cả chúng tôi bất ngờ.
+    note:
+      vi: Mở đầu bằng một con số hoặc câu chuyện hấp dẫn hơn nhiều so với "Today I will present…".
+  - type: example
+    target: "I've divided my talk into three parts: what went wrong, what we learned and what we'll do next."
+    target_lang: en
+    translation:
+      vi: "Tôi chia bài nói thành ba phần - điều gì đã sai, chúng ta học được gì và sắp tới sẽ làm gì."
+    note:
+      vi: Báo trước bố cục giúp khán giả biết bài nói dài bao lâu và theo dõi dễ hơn.
+  - type: example
+    target: Our app now has 50,000 users. To put this into perspective, that's the population of a small town.
+    target_lang: en
+    translation:
+      vi: Ứng dụng của chúng tôi hiện có 50.000 người dùng. Để dễ hình dung, con số đó bằng dân số của một thị trấn nhỏ.
+    note:
+      vi: Con số trừu tượng trở nên cụ thể nhờ một phép so sánh quen thuộc.
+  - type: example
+    target: Delivery times have doubled. This brings me to the real issue - our warehouse is simply too small.
+    target_lang: en
+    translation:
+      vi: Thời gian giao hàng đã tăng gấp đôi. Điều này dẫn tôi đến vấn đề thật sự - nhà kho của chúng ta quá nhỏ.
+    note:
+      vi: This brings me to… nối hệ quả với nguyên nhân, mượt hơn Next….
+  - type: common_mistake
+    wrong: Hello everyone, today I will present about our marketing plan.
+    right: Good morning, everyone. Today I'll be presenting our marketing plan.
+    target_lang: en
+    note:
+      vi: Present là ngoại động từ - present our plan, không có about. Hoặc dùng I'd like to give a presentation on….
+  - type: common_mistake
+    wrong: In this part, I want to discuss about the risks and emphasise about safety.
+    right: In this part, I want to discuss the risks and emphasise safety.
+    target_lang: en
+    note:
+      vi: Discuss và emphasise nhận tân ngữ trực tiếp; "thảo luận về", "nhấn mạnh về" trong tiếng Việt không chuyển thành about.
+  - type: common_mistake
+    wrong: Let me elaborate the second point.
+    right: Let me elaborate on the second point.
+    target_lang: en
+    note:
+      vi: Với nghĩa "nói rõ thêm", elaborate cần on.
+  - type: summary
+    points:
+      - vi: Mở đầu - I'd like to begin by + V-ing; bố cục - I've divided my talk into… parts.
+      - vi: Chuyển ý - This brings me to… (hệ quả), Turning now to… / Moving on to… (phần mới), As I mentioned earlier… (quay lại).
+      - vi: Triển khai - Let me elaborate on…; làm rõ số liệu - To put this into perspective, ….
+      - vi: Kết thúc - To recap, … + 2-3 ý chính.
+      - vi: present / discuss / emphasise / mention + tân ngữ, không có about; danh từ - give a presentation on, put emphasis on.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:signpost-mcq-opening
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:id-like-to-begin-by
+    prompt:
+      stem: Bạn mở đầu bài thuyết trình trước ban giám đốc. Câu nào tự nhiên và đúng ngữ pháp nhất?
+      stem_lang: vi
+      options:
+        - { id: q7h, text: "Good morning. I'd like to begin by looking at last quarter's results.", lang: en }
+        - { id: d2m, text: "Hello everyone, today I will present about last quarter's results.", lang: en }
+        - { id: w5r, text: "Good morning. I'd like to begin to looking at last quarter's results.", lang: en }
+        - { id: k9s, text: "Hello everyone, now I talk about last quarter's results.", lang: en }
+    answer:
+      correct_option_id: q7h
+    explanation:
+      vi: Begin by + V-ing là cách mở đầu chuẩn. Present about sai vì present nhận tân ngữ trực tiếp; begin to looking sai dạng động từ; now I talk thiếu thì và kém trang trọng.
+    display_answer: "Good morning. I'd like to begin by looking at last quarter's results."
+
+  - key: en:exercise:signpost-listen-brings-me-to
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:this-brings-me-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Customer complaints have tripled since March. This brings me to my final point: we need to retrain the support team."
+      options:
+        - { id: z4c, text: "Khiếu nại tăng gấp ba, và điều đó dẫn đến ý cuối - cần đào tạo lại đội hỗ trợ.", lang: vi }
+        - { id: b8n, text: "Khiếu nại giảm từ tháng Ba, nên không cần đào tạo lại đội hỗ trợ.", lang: vi }
+        - { id: j1t, text: "Người nói chuyển sang một chủ đề hoàn toàn không liên quan đến khiếu nại.", lang: vi }
+        - { id: f6y, text: "Người nói mới bắt đầu bài thuyết trình và giới thiệu ba phần.", lang: vi }
+    answer:
+      correct_option_id: z4c
+    explanation:
+      vi: This brings me to… nối ý trước (khiếu nại tăng gấp ba) với ý sau như một hệ quả; my final point cho biết đây là ý cuối, không phải phần mở đầu.
+    display_answer: "Khiếu nại tăng gấp ba, và điều đó dẫn đến ý cuối - cần đào tạo lại đội hỗ trợ."
+
+  - key: en:exercise:signpost-fill-elaborate-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:let-me-elaborate-on
+    prompt:
+      template: "Let me elaborate {{b1}} that figure. To put this {{b2}} perspective, we spend more on printing than on training."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Để tôi nói rõ hơn về con số đó. Để dễ hình dung, chúng ta chi cho việc in ấn nhiều hơn cho đào tạo."
+        - "Gợi ý: ô 1 là giới từ đi sau elaborate; ô 2 là giới từ trong put … perspective."
+    answer:
+      blanks:
+        b1: [on, upon]
+        b2: [into, in]
+    known_wrong:
+      - answer: about
+        feedback_vi: Elaborate (nói rõ thêm) đi với on, không đi với about.
+        error_tag: preposition
+      - answer: to
+        feedback_vi: Cụm cố định là put this into (hoặc in) perspective.
+        error_tag: preposition
+    explanation:
+      vi: Elaborate on = triển khai thêm về một ý. Put something into perspective = đặt vào bối cảnh để dễ hình dung; dạng in perspective cũng được chấp nhận.
+    display_answer: Let me elaborate on that figure. To put this into perspective, we spend more on printing than on training.
+
+  - key: en:exercise:signpost-mcq-discuss
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:emphasise
+    prompt:
+      stem: Câu nào KHÔNG có lỗi?
+      stem_lang: vi
+      options:
+        - { id: r3v, text: "In the next section, I'll discuss the risks and emphasise the need for training.", lang: en }
+        - { id: m8k, text: "In the next section, I'll discuss about the risks and emphasise the need for training.", lang: en }
+        - { id: p2x, text: "In the next section, I'll discuss the risks and emphasise about the need for training.", lang: en }
+        - { id: h6g, text: "In the next section, I'll mention about the risks and emphasise on training.", lang: en }
+    answer:
+      correct_option_id: r3v
+    explanation:
+      vi: Discuss, emphasise và mention đều nhận tân ngữ trực tiếp, không thêm about hay on. Chỉ danh từ mới có giới từ - a discussion about, emphasis on.
+    display_answer: "In the next section, I'll discuss the risks and emphasise the need for training."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:signpost-fill-structure
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:divided-into-parts
+    prompt:
+      template: "I've divided my talk {{b1}} three parts. … {{b2}} now to the second part, the budget. … To {{b3}}, we need more staff, more space and more time."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [into]
+        b2: [turning, moving]
+        b3: [recap, summarise, summarize, sum up, conclude]
+    known_wrong:
+      - answer: in
+        feedback_vi: Chia thành các phần là divide into, không phải divide in.
+        error_tag: preposition
+      - answer: turn
+        feedback_vi: Cụm chuyển phần dùng dạng V-ing - Turning now to….
+        error_tag: verb_form
+      - answer: move
+        feedback_vi: Cụm chuyển phần dùng dạng V-ing - Moving on to… / Moving now to….
+        error_tag: verb_form
+      - answer: summary
+        feedback_vi: Sau To cần động từ - To recap / To summarise; danh từ summary đi với In summary.
+        error_tag: word_form
+    explanation:
+      vi: Divide into = chia thành. Turning (hoặc Moving) now to… mở phần mới. To recap/To summarise mở đầu phần tóm tắt - sau to là động từ nguyên mẫu.
+    display_answer: I've divided my talk into three parts. … Turning now to the second part, the budget. … To recap, we need more staff, more space and more time.
+
+  - key: en:exercise:signpost-translate-begin
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:id-like-to-begin-by
+    prompt:
+      source_text: Tôi xin bắt đầu bằng việc giới thiệu nhóm của chúng tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'd like to begin by introducing our team.
+        - I would like to begin by introducing our team.
+        - I'd like to start by introducing our team.
+        - I would like to start by introducing our team.
+        - Let me begin by introducing our team.
+        - Let me start by introducing our team.
+        - I'll begin by introducing our team.
+        - I'd like to begin by introducing my team.
+        - I would like to begin by introducing my team.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'd like to begin by introduce our team.
+        feedback_vi: Sau giới từ by phải là V-ing - by introducing.
+        error_tag: verb_form
+      - answer: I'd like to begin with introduce our team.
+        feedback_vi: Dùng begin by + V-ing; begin with đi với danh từ (begin with an introduction).
+        error_tag: verb_form
+      - answer: Today I will present about our team.
+        feedback_vi: Present không đi với about, và câu chưa có ý "bắt đầu bằng".
+        error_tag: present_about
+    explanation:
+      vi: Begin/start by + V-ing diễn đạt "bắt đầu bằng việc…". I'd like to… lịch sự hơn I want to… khi đứng trước khán giả.
+    display_answer: I'd like to begin by introducing our team.
+
+  - key: en:exercise:signpost-translate-to-vi-perspective
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:to-put-this-into-perspective
+    prompt:
+      source_text: To put this into perspective, that's more than our entire annual budget.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, số tiền đó còn lớn hơn toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung, con số đó còn nhiều hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số đó vượt cả toàn bộ ngân sách hằng năm của chúng ta.
+        - Để dễ hình dung thì con số đó còn lớn hơn toàn bộ ngân sách một năm của chúng ta.
+        - Để các bạn dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Nói cho dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số đó còn lớn hơn cả ngân sách cả năm của chúng ta.
+        - Để dễ hình dung, con số đó lớn hơn toàn bộ ngân sách hằng năm của chúng tôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Để đặt điều này vào góc nhìn, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        feedback_vi: Dịch sát chữ nghe gượng; put into perspective nghĩa là "để dễ hình dung, để so sánh cho rõ".
+        error_tag: literal_translation
+      - answer: Theo quan điểm của tôi, con số đó lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+        feedback_vi: Perspective ở đây không phải "quan điểm"; cụm này giúp người nghe hình dung độ lớn.
+        error_tag: perspective
+    explanation:
+      vi: To put this into perspective báo hiệu một phép so sánh giúp khán giả hình dung độ lớn của con số. Dịch sát "đặt vào góc nhìn" nghe không tự nhiên trong tiếng Việt.
+    display_answer: Để dễ hình dung, con số đó còn lớn hơn toàn bộ ngân sách cả năm của chúng ta.
+
+  # ---------------- application ----------------
+  - key: en:exercise:signpost-order-brings-me-to
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:this-brings-me-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Điều này dẫn tôi đến phần quan trọng nhất của bài nói.\""
+      tokens:
+        - { id: s-part, text: part }
+        - { id: s-to, text: to }
+        - { id: s-about, text: about }
+        - { id: s-this, text: This brings me }
+        - { id: s-talk, text: of my talk }
+        - { id: s-most, text: the most important }
+    answer:
+      orders:
+        - [s-this, s-to, s-most, s-part, s-talk]
+    explanation:
+      vi: Cụm cố định là This brings me to + danh từ. About là token thừa - bring someone to something không đi với about.
+    display_answer: This brings me to the most important part of my talk.
+
+  - key: en:exercise:signpost-mcq-fix-opening
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:give-a-presentation-on
+    prompt:
+      stem: "Đồng nghiệp nhờ bạn sửa câu mở đầu: \"Today I will present about the new app.\" Bạn đề xuất câu nào?"
+      stem_lang: vi
+      options:
+        - { id: x3d, text: "Today I'll be presenting the new app.", lang: en }
+        - { id: g7w, text: "Today I will presentation about the new app.", lang: en }
+        - { id: t5a, text: "Today I'll give a presentation the new app.", lang: en }
+        - { id: n2u, text: "Today I will present on about the new app.", lang: en }
+    answer:
+      correct_option_id: x3d
+    explanation:
+      vi: Present + tân ngữ trực tiếp (present the new app). Presentation là danh từ, không làm động từ; give a presentation cần on/about trước chủ đề.
+    display_answer: "Today I'll be presenting the new app."
+
+  - key: en:exercise:signpost-mcq-choose-signpost
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:as-i-mentioned-earlier
+    prompt:
+      stem: "Ở cuối bài, bạn muốn quay lại con số đã nêu ở phần mở đầu để chốt lập luận. Cụm nào phù hợp nhất cho chỗ trống: \"___, we lose two customers every day.\""
+      stem_lang: vi
+      options:
+        - { id: c8q, text: As I mentioned earlier, lang: en }
+        - { id: v1e, text: I'd like to begin by, lang: en }
+        - { id: y4i, text: As I mentioned about earlier, lang: en }
+        - { id: u9o, text: Let me elaborate on, lang: en }
+    answer:
+      correct_option_id: c8q
+    explanation:
+      vi: As I mentioned earlier nối với ý đã nêu trước đó. I'd like to begin by dùng ở đầu bài và cần V-ing; mention không đi với about; Let me elaborate on cần một danh từ phía sau, không đứng trước mệnh đề.
+    display_answer: As I mentioned earlier
+
+  - key: en:exercise:signpost-translate-emphasise
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:emphasise
+    prompt:
+      source_text: Tôi muốn nhấn mạnh rằng dự án này cần thêm thời gian.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I want to emphasise that this project needs more time.
+        - I want to emphasize that this project needs more time.
+        - I'd like to emphasise that this project needs more time.
+        - I'd like to emphasize that this project needs more time.
+        - I would like to emphasise that this project needs more time.
+        - I would like to emphasize that this project needs more time.
+        - I want to stress that this project needs more time.
+        - I'd like to stress that this project needs more time.
+        - I would like to stress that this project needs more time.
+        - I want to emphasise that this project needs extra time.
+        - I'd like to emphasise that the project needs more time.
+        - I want to emphasise that the project needs more time.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I want to emphasise about this project needs more time.
+        feedback_vi: Emphasise nhận tân ngữ trực tiếp hoặc mệnh đề that; không dùng about.
+        error_tag: emphasise_about
+      - answer: I want to emphasise about that this project needs more time.
+        feedback_vi: Bỏ about - emphasise that + mệnh đề.
+        error_tag: emphasise_about
+      - answer: I want to emphasis that this project needs more time.
+        feedback_vi: Emphasis là danh từ; động từ là emphasise (hoặc emphasize).
+        error_tag: word_form
+    explanation:
+      vi: Emphasise/stress + that + mệnh đề, không có about. Chú ý emphasis (danh từ) và emphasise (động từ) khác nhau.
+    display_answer: I want to emphasise that this project needs more time.

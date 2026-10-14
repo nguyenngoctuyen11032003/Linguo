@@ -1,0 +1,413 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:qa-debate
+order_index: 4
+level: c1
+title:
+  vi: Hỏi đáp & tranh luận một cách khéo léo
+objectives:
+  - vi: Xử lý câu hỏi khó trong phần hỏi đáp - ghi nhận, diễn đạt lại, trả lời hoặc hẹn phản hồi sau.
+  - vi: Phản đối lịch sự thay cho "You are wrong" - I see it somewhat differently, With all due respect….
+  - vi: Dùng từ vựng tranh luận - counter-argument, rebut, concede, compelling, flawed reasoning, undermine.
+estimated_minutes: 22
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:persuasion-concession]
+items:
+  - item: en:item:thats-a-fair-question
+  - item: en:item:if-i-understand-you-correctly
+  - item: en:item:let-me-get-back-to-you
+  - item: en:item:with-all-due-respect
+  - item: en:item:see-it-differently
+  - item: en:item:counter-argument
+  - item: en:item:rebut
+  - item: en:item:concede
+  - item: en:item:compelling
+  - item: en:item:flawed-reasoning
+  - item: en:item:undermine
+  - item: en:item:not-entirely-convinced
+    role: reuse
+  - item: en:item:agree-up-to-a-point
+    role: reuse
+  - item: en:item:i-take-your-point
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Phần hỏi đáp là lúc diễn giả dễ "mất điểm" nhất - một câu hỏi khó hay một lời phản bác gay gắt có thể làm bạn lúng túng. Bài này cho bạn một quy trình bình tĩnh để trả lời và bộ từ vựng để tranh luận sắc bén mà vẫn lịch sự.
+  - type: explain
+    text:
+      vi: Quy trình bốn bước cho câu hỏi khó - (1) ghi nhận - That's a fair question; (2) diễn đạt lại - If I understand you correctly, you're asking whether…; (3) trả lời ngắn, thẳng; (4) nếu chưa biết - I'd need to check that; let me get back to you. Bước 2 giúp bạn chắc mình hiểu đúng và có thêm vài giây suy nghĩ.
+  - type: explain
+    text:
+      vi: Trong tiếng Anh, "You are wrong" với người lạ, khách hàng hay cấp trên nghe rất gay gắt, kể cả khi bạn đúng. Hãy phản đối ý kiến chứ không phản đối con người - I see it somewhat differently, I'm not entirely convinced, I agree up to a point, With all due respect… (khi cần nói thẳng với người có vị trí cao).
+  - type: explain
+    text:
+      vi: Từ vựng tranh luận - a counter-argument (lập luận phản bác), rebut (bác bỏ bằng lý lẽ), concede (thừa nhận, nhượng bộ), a compelling argument/case (lập luận thuyết phục), flawed reasoning (suy luận có lỗ hổng), undermine (làm suy yếu).
+  - type: deep_explain
+    text:
+      vi: Khi phản bác, hãy nhắm vào lập luận - The reasoning is flawed, The data doesn't support that - thay vì vào người nói. Nếu câu hỏi chứa một tiền đề sai (Why did you waste so much money?), đừng trả lời ngay; hãy tách tiền đề ra - I wouldn't describe it as wasted…. Hứa phản hồi sau thì nêu thời hạn cụ thể để giữ uy tín.
+  - type: example
+    target: "That's a fair question. If I understand you correctly, you're asking whether the new system will lead to job cuts. The short answer is no."
+    target_lang: en
+    translation:
+      vi: "Câu hỏi rất hợp lý. Nếu tôi hiểu đúng thì anh đang hỏi liệu hệ thống mới có dẫn đến cắt giảm nhân sự hay không. Câu trả lời ngắn gọn là không."
+    note:
+      vi: Ghi nhận → diễn đạt lại → trả lời ngắn; câu hỏi gián tiếp sau asking dùng trật tự câu kể.
+  - type: example
+    target: With all due respect, I see it somewhat differently. The survey only covered one city, which undermines the whole conclusion.
+    target_lang: en
+    translation:
+      vi: Với tất cả sự tôn trọng, tôi nhìn nhận hơi khác. Cuộc khảo sát chỉ thực hiện ở một thành phố, điều này làm suy yếu cả kết luận.
+    note:
+      vi: Phản đối mềm ở câu mở, nhưng lý lẽ cụ thể ở câu sau.
+  - type: example
+    target: I'm willing to concede that point. However, your main argument rests on flawed reasoning.
+    target_lang: en
+    translation:
+      vi: Tôi sẵn sàng nhượng bộ ở điểm đó. Tuy nhiên, lập luận chính của anh dựa trên suy luận có lỗ hổng.
+    note:
+      vi: Concede một điểm nhỏ giúp bạn có vẻ công bằng khi phản bác điểm lớn.
+  - type: example
+    target: "I don't have those figures with me, so let me get back to you by Friday."
+    target_lang: en
+    translation:
+      vi: "Tôi không có số liệu đó ở đây, nên tôi xin phản hồi anh trước thứ Sáu."
+    note:
+      vi: Thừa nhận chưa biết một cách chuyên nghiệp, có hẹn thời gian.
+  - type: common_mistake
+    wrong: You are wrong. The data shows something else.
+    right: I see it somewhat differently - the data seems to show something else.
+    target_lang: en
+    note:
+      vi: Câu "You are wrong" công kích người nói và nghe rất gay gắt; hãy phản đối ý kiến bằng lời lẽ mềm hơn.
+  - type: common_mistake
+    wrong: If I understand you correctly, you're asking will the price go up.
+    right: If I understand you correctly, you're asking whether the price will go up.
+    target_lang: en
+    note:
+      vi: Câu hỏi gián tiếp sau asking dùng whether/if + trật tự câu kể, không đảo trợ động từ.
+  - type: common_mistake
+    wrong: That small mistake underestimated the whole argument.
+    right: That small mistake undermined the whole argument.
+    target_lang: en
+    note:
+      vi: Undermine = làm suy yếu; underestimate = đánh giá thấp. Hai từ cùng tiền tố under- nên hay bị nhầm.
+  - type: summary
+    points:
+      - vi: Câu hỏi khó - That's a fair question → If I understand you correctly, you're asking whether… → trả lời ngắn.
+      - vi: Chưa biết - I'd need to check that; let me get back to you (+ thời hạn).
+      - vi: Phản đối lịch sự - I see it somewhat differently / I'm not entirely convinced / With all due respect….
+      - vi: Từ vựng - counter-argument, rebut, concede, compelling, flawed reasoning, undermine (≠ underestimate).
+      - vi: Phản bác lập luận, không công kích người nói.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:qa-debate-mcq-tough-question
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:thats-a-fair-question
+    prompt:
+      stem: "Một người nghe hỏi gay gắt: \"Isn't this new system just a way to cut jobs?\" Câu trả lời nào chuyên nghiệp nhất?"
+      stem_lang: vi
+      options:
+        - { id: v4h, text: "That's a fair question. If I understand you correctly, you're asking whether anyone will lose their job. The answer is no.", lang: en }
+        - { id: q1k, text: "That's a stupid question. Of course not.", lang: en }
+        - { id: e7z, text: "You are wrong. Next question, please.", lang: en }
+        - { id: m3c, text: "Actually, I don't want to answer about this.", lang: en }
+    answer:
+      correct_option_id: v4h
+    explanation:
+      vi: Phương án đúng đi đủ ba bước - ghi nhận, diễn đạt lại, trả lời ngắn. Các phương án khác công kích người hỏi, né tránh hoặc sai ngữ pháp (answer about).
+    display_answer: "That's a fair question. If I understand you correctly, you're asking whether anyone will lose their job. The answer is no."
+
+  - key: en:exercise:qa-debate-listen-due-respect
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:with-all-due-respect
+    prompt:
+      audio_asset_id: null
+      fallback_text: "With all due respect, I'm not entirely convinced that the data supports that conclusion."
+      options:
+        - { id: k8f, text: "Người nói phản đối lịch sự nhưng dứt khoát - họ nghi ngờ số liệu có ủng hộ kết luận không.", lang: vi }
+        - { id: t2y, text: "Người nói hoàn toàn đồng ý với kết luận và khen số liệu.", lang: vi }
+        - { id: w6a, text: "Người nói xin lỗi vì đã đưa ra số liệu sai.", lang: vi }
+        - { id: h0n, text: "Người nói yêu cầu mọi người tôn trọng mình hơn.", lang: vi }
+    answer:
+      correct_option_id: k8f
+    explanation:
+      vi: With all due respect báo hiệu một lời phản đối sắp đến; I'm not entirely convinced là cách nói giảm của "tôi không đồng ý". Respect ở đây không phải đòi hỏi được tôn trọng.
+    display_answer: "Người nói phản đối lịch sự nhưng dứt khoát - họ nghi ngờ số liệu có ủng hộ kết luận không."
+
+  - key: en:exercise:qa-debate-mcq-compelling
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:compelling
+    prompt:
+      stem: "\"The report makes a compelling case for a four-day week.\" Compelling ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s5p, text: "Thuyết phục, có sức nặng", lang: vi }
+        - { id: c9r, text: "Bắt buộc theo luật", lang: vi }
+        - { id: a3j, text: "Phức tạp, khó hiểu", lang: vi }
+        - { id: z7m, text: "Gây tranh cãi, thiếu căn cứ", lang: vi }
+    answer:
+      correct_option_id: s5p
+    explanation:
+      vi: A compelling case/argument là lập luận thuyết phục đến mức khó bác bỏ. Dù compel có nghĩa "buộc", compelling không mang nghĩa "bắt buộc theo luật" (compulsory).
+    display_answer: "Thuyết phục, có sức nặng"
+
+  - key: en:exercise:qa-debate-fill-clarify-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:if-i-understand-you-correctly
+    prompt:
+      template: "If I understand you {{b1}}, you're asking {{b2}} the price will go up next year."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Nếu tôi hiểu đúng thì anh đang hỏi liệu giá có tăng vào năm sau không."
+        - "Gợi ý: ô 1 là trạng từ \"đúng\" (c…); ô 2 là từ dẫn câu hỏi gián tiếp có/không (w…)."
+    answer:
+      blanks:
+        b1: [correctly, rightly]
+        b2: [whether, if]
+    known_wrong:
+      - answer: correct
+        feedback_vi: Bổ nghĩa cho động từ understand cần trạng từ - correctly.
+        error_tag: word_form
+      - answer: that
+        feedback_vi: Ask + câu hỏi có/không gián tiếp dùng whether hoặc if, không dùng that.
+        error_tag: indirect_question
+      - answer: will
+        feedback_vi: Câu hỏi gián tiếp không đảo trợ động từ lên trước; dùng whether + the price will go up.
+        error_tag: indirect_question
+    explanation:
+      vi: Correctly là trạng từ bổ nghĩa cho understand. Ask whether/if + mệnh đề trật tự câu kể tạo câu hỏi gián tiếp có/không.
+    display_answer: If I understand you correctly, you're asking whether the price will go up next year.
+
+  - key: en:exercise:qa-debate-mcq-disagree
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:see-it-differently
+    prompt:
+      stem: Trong cuộc họp với khách hàng, bạn không đồng ý với nhận định của họ. Câu nào phù hợp nhất để mở đầu?
+      stem_lang: vi
+      options:
+        - { id: f2d, text: "I see it somewhat differently.", lang: en }
+        - { id: n5w, text: "You are wrong.", lang: en }
+        - { id: j9b, text: "Your opinion is not correct.", lang: en }
+        - { id: r4u, text: "No, it's not true, you don't understand.", lang: en }
+    answer:
+      correct_option_id: f2d
+    explanation:
+      vi: I see it somewhat differently phản đối quan điểm một cách mềm mỏng, mở đường cho lý lẽ của bạn. Ba câu còn lại nhắm vào người nghe và nghe rất gay gắt trong tiếng Anh, nhất là với khách hàng.
+    display_answer: "I see it somewhat differently."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:qa-debate-fill-debate-verbs
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:rebut
+    prompt:
+      template: "The minister {{b1}} the claim with figures from an independent study. Even her critics {{b2}} that her evidence was strong. One weak statistic, however, could {{b3}} her entire argument."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [rebutted, refuted]
+        b2: [conceded, admitted, acknowledged]
+        b3: [undermine, weaken]
+    known_wrong:
+      - answer: underestimate
+        feedback_vi: Underestimate là "đánh giá thấp"; "làm suy yếu" là undermine.
+        error_tag: undermine_underestimate
+      - answer: rebut
+        feedback_vi: Câu kể chuyện ở quá khứ - rebutted (nhân đôi t).
+        error_tag: verb_form
+      - answer: concede
+        feedback_vi: Câu ở quá khứ - conceded.
+        error_tag: verb_form
+      - answer: denied
+        feedback_vi: Deny là phủ nhận; ở đây người chỉ trích thừa nhận (conceded) bằng chứng mạnh.
+        error_tag: meaning
+    explanation:
+      vi: Rebut = bác bỏ bằng lý lẽ hoặc số liệu. Concede that… = (miễn cưỡng) thừa nhận. Undermine = làm suy yếu, khác underestimate.
+    display_answer: The minister rebutted the claim with figures from an independent study. Even her critics conceded that her evidence was strong. One weak statistic, however, could undermine her entire argument.
+
+  - key: en:exercise:qa-debate-translate-get-back
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:let-me-get-back-to-you
+    prompt:
+      source_text: Tôi cần kiểm tra lại số liệu đó - tôi sẽ phản hồi anh sau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'd need to check that figure - let me get back to you.
+        - I would need to check that figure - let me get back to you.
+        - I need to check that figure - let me get back to you.
+        - I need to check that figure. I'll get back to you.
+        - I need to check that figure, and I'll get back to you.
+        - I'd need to check that figure. I'll get back to you later.
+        - I need to check that figure; I'll get back to you later.
+        - I need to double-check that figure - let me get back to you.
+        - I'd need to double-check that figure - I'll get back to you.
+        - I need to check those figures - let me get back to you.
+        - I'd need to check that number - let me get back to you.
+        - I need to check that data - I'll get back to you later.
+        - I need to check that figure again - let me get back to you.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I need to check that figure - I will back to you later.
+        feedback_vi: Thiếu động từ get - cụm đúng là get back to someone.
+        error_tag: phrasal_verb
+      - answer: I need to check that figure - I will response you later.
+        feedback_vi: Response là danh từ; dùng get back to you hoặc respond to you.
+        error_tag: word_form
+    explanation:
+      vi: Get back to someone = liên lạc, phản hồi lại sau. I'd need to… mềm hơn I need to…, rất hợp khi trả lời câu hỏi trước đám đông.
+    display_answer: I'd need to check that figure - let me get back to you.
+
+  - key: en:exercise:qa-debate-translate-to-vi-flawed
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:flawed-reasoning
+    prompt:
+      source_text: The conclusion rests on flawed reasoning.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kết luận này dựa trên suy luận sai.
+        - Kết luận này dựa trên một lập luận có lỗ hổng.
+        - Kết luận dựa trên suy luận có lỗ hổng.
+        - Kết luận này dựa trên lập luận sai.
+        - Kết luận này dựa trên lập luận có lỗ hổng.
+        - Kết luận này dựa trên cách suy luận sai lầm.
+        - Kết luận đó dựa trên suy luận sai.
+        - Kết luận đó dựa trên lập luận có lỗ hổng.
+        - Kết luận dựa trên suy luận sai.
+        - Kết luận này được đưa ra từ một suy luận sai.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kết luận này dựa trên suy luận hoàn hảo.
+        feedback_vi: Flawed là có khiếm khuyết, có lỗ hổng - ngược với hoàn hảo.
+        error_tag: meaning
+      - answer: Kết luận này nghỉ ngơi trên suy luận sai.
+        feedback_vi: Rest on nghĩa là "dựa trên", không phải "nghỉ ngơi".
+        error_tag: literal_translation
+    explanation:
+      vi: Rest on = dựa trên; flawed reasoning = suy luận có lỗ hổng. Phê bình lập luận là cách phản bác lịch sự.
+    display_answer: Kết luận này dựa trên suy luận sai.
+
+  # ---------------- application ----------------
+  - key: en:exercise:qa-debate-order-due-respect
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:with-all-due-respect
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Với tất cả sự tôn trọng, tôi nhìn nhận vấn đề hơi khác.\""
+      tokens:
+        - { id: d-somewhat, text: somewhat }
+        - { id: d-differently, text: differently }
+        - { id: d-different, text: different }
+        - { id: d-respect, text: "With all due respect," }
+        - { id: d-it, text: it }
+        - { id: d-see, text: I see }
+    answer:
+      orders:
+        - [d-respect, d-see, d-it, d-somewhat, d-differently]
+    explanation:
+      vi: See it differently cần trạng từ differently bổ nghĩa cho động từ see; different (tính từ) là token thừa. Somewhat đứng trước differently để làm mềm lời phản đối.
+    display_answer: With all due respect, I see it somewhat differently.
+
+  - key: en:exercise:qa-debate-mcq-rebuttal
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:counter-argument
+    prompt:
+      stem: "Trong buổi tranh luận, đối phương nói: \"Remote workers are less productive - my team proves it.\" Câu phản bác nào sắc bén mà vẫn lịch sự nhất?"
+      stem_lang: vi
+      options:
+        - { id: g6e, text: "I take your point, but one team is hardly a compelling sample. Drawing a general rule from it is flawed reasoning.", lang: en }
+        - { id: y8l, text: "You are wrong and your team is not productive.", lang: en }
+        - { id: b1o, text: "I concede that remote workers are less productive, so you are right.", lang: en }
+        - { id: p7t, text: "Your argument undermines, and I underestimate it.", lang: en }
+    answer:
+      correct_option_id: g6e
+    explanation:
+      vi: Phương án đúng ghi nhận ý đối phương, rồi nhắm vào lập luận (mẫu quá nhỏ, suy luận sai). Câu thứ hai công kích; câu thứ ba nhượng bộ hoàn toàn; câu cuối dùng undermine thiếu tân ngữ và nhầm nghĩa.
+    display_answer: "I take your point, but one team is hardly a compelling sample. Drawing a general rule from it is flawed reasoning."
+
+  - key: en:exercise:qa-debate-translate-compelling
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:compelling
+    prompt:
+      source_text: Họ đã đưa ra một lập luận rất thuyết phục cho việc tăng ngân sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - They made a very compelling case for increasing the budget.
+        - They made a very compelling argument for increasing the budget.
+        - They made a very compelling case for raising the budget.
+        - They made a very compelling argument for raising the budget.
+        - They made a very compelling case for a budget increase.
+        - They made a very compelling argument for a budget increase.
+        - They put forward a very compelling case for increasing the budget.
+        - They put forward a very compelling argument for increasing the budget.
+        - They presented a very compelling case for increasing the budget.
+        - They presented a very compelling argument for increasing the budget.
+        - They made a highly compelling case for increasing the budget.
+        - They made a really compelling case for increasing the budget.
+        - They have made a very compelling case for increasing the budget.
+        - They gave a very compelling argument for increasing the budget.
+        - They made a very convincing case for increasing the budget.
+        - They made a very convincing argument for increasing the budget.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: They made a very compelling case for increase the budget.
+        feedback_vi: Sau giới từ for cần V-ing - for increasing.
+        error_tag: verb_form
+      - answer: They made a very compelled argument for increasing the budget.
+        feedback_vi: Compelled là "bị buộc"; tính từ "thuyết phục" là compelling.
+        error_tag: word_form
+      - answer: They made a very compelling argument to increasing the budget.
+        feedback_vi: A case/argument for something - dùng for, không dùng to.
+        error_tag: preposition
+    explanation:
+      vi: Make a compelling case/argument for + V-ing/danh từ = đưa ra lập luận thuyết phục ủng hộ điều gì. Compelling (gây thuyết phục) khác compelled (bị ép buộc).
+    display_answer: They made a very compelling case for increasing the budget.

@@ -662,25 +662,6 @@ items:
       confusion:
         vi: 세배 là một kiểu lạy cúi người, khác với chúc Tết bằng lời ở Việt Nam; người nhận lạy thường đáp lại bằng 덕담 (lời chúc).
 
-  - key: ko:item:hanbok
-    type: vocab
-    level: topik3
-    difficulty: 1
-    skill_tags: [vocabulary, culture]
-    front:
-      text: 한복
-      romanization: hanbok
-      pos: danh từ
-    back:
-      meaning:
-        vi: hanbok, trang phục truyền thống Hàn Quốc
-      examples:
-        - target: 설날에 한복을 입는 사람이 줄었어요.
-          translation:
-            vi: Số người mặc hanbok vào ngày Tết đã giảm.
-      pronunciation_note:
-        vi: 한복을 đọc nối [한보글]; 한복도 [한복또].
-
   - key: ko:item:songpyeon
     type: vocab
     level: topik4

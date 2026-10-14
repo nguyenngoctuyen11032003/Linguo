@@ -1,0 +1,438 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:family-people-review
+order_index: 5
+level: topik1
+title:
+  vi: Ôn tập - Giới thiệu ảnh gia đình
+objectives:
+  - vi: Đọc hiểu và tự viết một đoạn giới thiệu ảnh gia đình - số người, từng thành viên, ngoại hình và tính cách.
+  - vi: Theo kịp một hội thoại xem ảnh gia đình - hỏi "ai đây?", "thế nào?", "có anh chị em không?".
+  - vi: Không lặp lại các lỗi quen thuộc - 형/오빠 theo giới tính người nói, 제/우리 thay cho 저, 커요 thay cho 크어요.
+estimated_minutes: 16
+skills: [reading, speaking, listening, writing]
+prerequisites: [ko:lesson:describing-people]
+items:
+  - item: ko:item:gajok-sajin
+    role: reuse
+  - item: ko:item:uri
+    role: reuse
+  - item: ko:item:je-possessive
+    role: reuse
+  - item: ko:item:nugu
+    role: reuse
+  - item: ko:item:gram-sibling-speaker
+    role: reuse
+  - item: ko:item:oppa
+    role: reuse
+  - item: ko:item:nuna
+    role: reuse
+  - item: ko:item:eonni
+    role: reuse
+  - item: ko:item:hyeong
+    role: reuse
+  - item: ko:item:gajogi-myeot-myeong
+    role: reuse
+  - item: ko:item:modu
+    role: reuse
+  - item: ko:item:maknae
+    role: reuse
+  - item: ko:item:yeonse
+    role: reuse
+  - item: ko:item:gram-double-subject
+    role: reuse
+  - item: ko:item:gram-eottaeyo
+    role: reuse
+  - item: ko:item:keuda
+    role: reuse
+  - item: ko:item:yeppeuda
+    role: reuse
+  - item: ko:item:jeomda
+    role: reuse
+  - item: ko:item:chakada
+    role: reuse
+  - item: ko:item:gilda
+    role: reuse
+  - item: ko:item:chinjeolhada
+    role: reuse
+  - item: ko:item:meositda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn cầm một tấm ảnh gia đình và giới thiệu trọn vẹn bằng tiếng Hàn - gia đình mấy người, ai là ai, mỗi người trông thế nào và tính cách ra sao.
+  - type: explain
+    text:
+      vi: 'Một đoạn giới thiệu ảnh thường theo thứ tự - mở đầu (이건 우리 가족사진이에요), số người (우리 가족은 모두 다섯 명이에요), kể từng người (할머니, 아버지, 어머니, 오빠하고 저예요), rồi tả từng người bằng N은/는 N이/가 A.'
+  - type: explain
+    text:
+      vi: Khi xem ảnh cùng bạn, các câu hỏi hay gặp là 이 사람은 누구예요?, 몇 살이에요?, 어때요?, 형제가 있어요?. Trả lời "anh, chị" thì nhớ chọn từ theo giới tính của chính bạn - nam nói 형/누나, nữ nói 오빠/언니.
+  - type: deep_explain
+    text:
+      vi: Khi tả ông bà, người Hàn đổi sang lời kính trọng - 연세가 많으세요, 건강하세요, 계세요. Với bố mẹ, trong hội thoại thân mật bạn có thể dùng 해요체 thường (아버지는 친절해요), nhưng thêm -(으)세요 sẽ lễ phép hơn (아버지는 친절하세요).
+  - type: example
+    target: 이건 우리 가족사진이에요. 우리 가족은 모두 다섯 명이에요. 할머니, 아버지, 어머니, 오빠하고 저예요. 저는 막내예요.
+    target_lang: ko
+    translation:
+      vi: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng năm người. Bà, bố, mẹ, anh trai và tôi. Tôi là con út.
+    note:
+      vi: Mai là nữ nên gọi anh trai là 오빠.
+  - type: example
+    target: 할머니는 연세가 많으세요. 아버지는 키가 크고 친절해요. 어머니는 젊고 예뻐요. 오빠는 회사원이에요. 멋있고 착해요.
+    target_lang: ko
+    translation:
+      vi: Bà tôi đã lớn tuổi. Bố tôi cao và tử tế. Mẹ tôi trẻ và xinh. Anh tôi là nhân viên công ty. Anh ấy phong độ và hiền.
+    note:
+      vi: Mỗi người là chủ đề (은/는), đặc điểm là chủ ngữ (이/가); hai tính từ nối bằng -고.
+  - type: example
+    target: "민수: 이 사람은 누구예요? / 마이: 우리 오빠예요. 스물여덟 살이에요. / 민수: 키가 크고 멋있어요!"
+    target_lang: ko
+    translation:
+      vi: "Minsu: Người này là ai vậy? / Mai: Anh trai tôi đấy. Anh ấy 28 tuổi. / Minsu: Cao mà phong độ ghê!"
+  - type: example
+    target: "마이: 민수 씨는 형제가 있어요? / 민수: 네, 누나가 한 명 있어요. 누나는 머리가 길고 아주 착해요."
+    target_lang: ko
+    translation:
+      vi: "Mai: Anh Minsu có anh chị em không? / Minsu: Có, tôi có một chị gái. Chị tôi tóc dài và rất hiền."
+    note:
+      vi: Minsu là nam nên chị gái là 누나; nếu Mai nói về chị mình thì dùng 언니.
+  - type: common_mistake
+    wrong: 저 가족은 다섯 명이에요.
+    right: 우리 가족은 다섯 명이에요.
+    target_lang: ko
+    note:
+      vi: 저 + danh từ là "N kia". "Gia đình tôi" là 우리 가족 (tự nhiên nhất) hoặc 제 가족.
+  - type: common_mistake
+    wrong: (마이, nữ) 우리 형은 키가 크어요.
+    right: (마이, nữ) 우리 오빠는 키가 커요.
+    target_lang: ko
+    note:
+      vi: Hai lỗi trong một câu - Mai là nữ nên anh trai là 오빠, và 크다 bỏ ㅡ thành 커요.
+  - type: common_mistake
+    wrong: 할머니는 몇 살이에요? 할머니는 늙었어요.
+    right: 할머니는 연세가 어떻게 되세요? 할머니는 연세가 많으세요.
+    target_lang: ko
+    note:
+      vi: Với ông bà, đổi 나이 thành 연세 và thêm -세요. 몇 살 và 늙었어요 nghe như đang nói về trẻ con hoặc thiếu tế nhị.
+  - type: summary
+    points:
+      - vi: 이건 우리 가족사진이에요 → 우리 가족은 모두 N 명이에요 → kể từng người → tả từng người.
+      - vi: 이 사람은 누구예요? · 몇 살이에요? · N이/가 어때요? · 형제가 있어요?
+      - vi: Nam - 형/누나; nữ - 오빠/언니. "Của tôi" - 제/우리, không phải 저.
+      - vi: 커요 · 예뻐요 · 작아요 · 젊어요 · 길어요 · 멋있어요 · 착해요 · 친절해요; ông bà - 연세가 많으세요.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:family-people-review-listen-five
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:modu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이건 우리 가족사진이에요. 우리 가족은 모두 다섯 명이에요.
+      options:
+        - { id: s4p, text: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng năm người., lang: vi }
+        - { id: d9k, text: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng bốn người., lang: vi }
+        - { id: j6w, text: Đây là ảnh gia đình kia. Gia đình đó tổng cộng năm người., lang: vi }
+        - { id: m2r, text: Đây là ảnh bạn tôi. Bạn tôi có năm anh chị em., lang: vi }
+    answer:
+      correct_option_id: s4p
+    explanation:
+      vi: 우리 가족사진 là ảnh gia đình tôi (gia đình kia sẽ là 저 가족); 다섯 명 là năm người, 모두 là tổng cộng.
+    display_answer: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng năm người.
+
+  - key: ko:exercise:family-people-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-double-subject
+    prompt:
+      stem: "Đọc đoạn văn: 할머니는 연세가 많으세요. 아버지는 키가 크고 친절해요. 어머니는 젊고 예뻐요. - Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: h8c, text: Mẹ trẻ và xinh., lang: vi }
+        - { id: o3v, text: Bố thấp và hiền., lang: vi }
+        - { id: y7n, text: Bà còn trẻ., lang: vi }
+        - { id: l5e, text: Mẹ cao và tử tế., lang: vi }
+    answer:
+      correct_option_id: h8c
+    explanation:
+      vi: 어머니는 젊고 예뻐요 = mẹ trẻ và xinh. Bố thì 키가 커요 (cao), không phải thấp; bà 연세가 많으세요 (lớn tuổi); "cao và tử tế" là bố, không phải mẹ.
+    display_answer: Mẹ trẻ và xinh.
+
+  - key: ko:exercise:family-people-review-mcq-eonni
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gram-sibling-speaker
+    prompt:
+      stem: "Minsu (nam) nói 누나가 한 명 있어요. Nếu Mai (nữ) muốn nói cùng ý \"Tôi có một chị gái\", Mai dùng từ nào thay cho 누나?"
+      stem_lang: vi
+      options:
+        - { id: t2z, text: 언니, lang: ko }
+        - { id: f9b, text: 누나, lang: ko }
+        - { id: w5q, text: 오빠, lang: ko }
+        - { id: i1g, text: 여동생, lang: ko }
+    answer:
+      correct_option_id: t2z
+    explanation:
+      vi: Từ "chị" đổi theo giới tính người nói - nam nói 누나, nữ nói 언니. 오빠 là anh trai, 여동생 là em gái.
+    display_answer: 언니
+
+  - key: ko:exercise:family-people-review-fill-kind-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:chinjeolhada
+    prompt:
+      template: "아버지는 키가 크고 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Bố tôi cao và tử tế."
+        - "Gợi ý: 친절하다 chia đuôi 해요체."
+    answer:
+      blanks:
+        b1: [친절해요, 친절하세요]
+    known_wrong:
+      - answer: 친절하요
+        feedback_vi: Tính từ -하다 chia thành -해요 - 친절해요.
+        error_tag: haeyo_hada
+      - answer: 친절이에요
+        feedback_vi: 친절하다 là tính từ, chia trực tiếp thành 친절해요, không dùng 이에요.
+        error_tag: adjective_copula
+      - answer: 착해요
+        feedback_vi: 착해요 là hiền, tốt bụng. "Tử tế, thân thiện" là 친절해요.
+        error_tag: adjective_meaning
+    explanation:
+      vi: 친절하다 → 친절해요 (-하다 luôn thành -해요). 친절하세요 thêm sự kính trọng với bố, cũng đúng.
+    display_answer: 아버지는 키가 크고 친절해요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:family-people-review-fill-dialogue
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:nugu
+    prompt:
+      template: "(Người này là ai? - Anh trai tôi. Anh ấy cao.) 이 사람은 {{b1}}예요? - 우리 오빠예요. 키가 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [누구]
+        b2: [커요]
+    known_wrong:
+      - answer: 뭐
+        feedback_vi: 뭐 là "cái gì" - hỏi người dùng 누구.
+        error_tag: question_word
+      - answer: 크어요
+        feedback_vi: ㅡ ở cuối gốc 크 phải rơi - 커요.
+        error_tag: eu_irregular
+      - answer: 작아요
+        feedback_vi: 작아요 là thấp. "Cao" là 커요.
+        error_tag: adjective_meaning
+    explanation:
+      vi: Hỏi người - 누구예요?; cao - 키가 커요 (크다 rơi ㅡ).
+    display_answer: 이 사람은 누구예요? - 우리 오빠예요. 키가 커요.
+
+  - key: ko:exercise:family-people-review-translate-mother
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:chakada
+    prompt:
+      source_text: Mẹ tôi trẻ và hiền.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 우리 엄마는 젊고 착해요.
+        - 우리 어머니는 젊고 착해요.
+        - 엄마는 젊고 착해요.
+        - 어머니는 젊고 착해요.
+        - 제 어머니는 젊고 착해요.
+        - 저희 어머니는 젊고 착해요.
+        - 우리 어머니는 젊고 착하세요.
+        - 저희 어머니는 젊고 착하세요.
+        - 우리 엄마는 젊어요. 그리고 착해요.
+    known_wrong:
+      - answer: 저 엄마는 젊고 착해요.
+        feedback_vi: 저 엄마 là "bà mẹ kia". "Mẹ tôi" là 우리 엄마.
+        error_tag: possessive_jeo_je
+      - answer: 우리 엄마는 젊고 착하요.
+        feedback_vi: Tính từ -하다 chia thành -해요 - 착해요.
+        error_tag: haeyo_hada
+      - answer: 우리 엄마는 나이가 많고 착해요.
+        feedback_vi: 나이가 많아요 là lớn tuổi. "Trẻ" là 젊어요 (젊고).
+        error_tag: adjective_meaning
+      - answer: 우리 엄마는 젊어요 착해요.
+        feedback_vi: Nối hai tính từ trong một câu cần -고 - 젊고 착해요.
+        error_tag: missing_go
+    explanation:
+      vi: Mẹ tôi = 우리 엄마/어머니; trẻ và = 젊고 (젊다 + -고); hiền = 착해요.
+    display_answer: 우리 엄마는 젊고 착해요.
+
+  - key: ko:exercise:family-people-review-translate-nuna
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:nuna
+    prompt:
+      source_text: (Bạn là nam) Tôi có một chị gái.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 누나가 한 명 있어요.
+        - 저는 누나가 한 명 있어요.
+        - 누나 한 명 있어요.
+        - 저는 누나 한 명 있어요.
+        - 누나가 하나 있어요.
+        - 전 누나가 한 명 있어요.
+        - 누나가 있어요.
+        - 저는 누나가 있어요.
+    known_wrong:
+      - answer: 저는 언니가 한 명 있어요.
+        feedback_vi: 언니 chỉ dùng khi người nói là nữ. Bạn là nam nên chị gái là 누나.
+        error_tag: sibling_speaker_gender
+      - answer: 저는 누나가 일 명 있어요.
+        feedback_vi: Đếm người dùng số thuần Hàn - 한 명.
+        error_tag: native_sino_number
+      - answer: 저는 누나를 한 명 있어요.
+        feedback_vi: Với 있어요, dùng 이/가 - 누나가.
+        error_tag: particle_itda
+    explanation:
+      vi: Người nói là nam nên chị gái là 누나; có một người = 이/가 한 명 있어요.
+    display_answer: 저는 누나가 한 명 있어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:family-people-review-mcq-how-many
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gajogi-myeot-myeong
+    prompt:
+      stem: "Bạn (nữ) được hỏi 가족이 몇 명이에요?. Nhà bạn có bố mẹ, một chị gái và bạn. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: v6h, text: 네 명이에요. 부모님하고 언니하고 저예요., lang: ko }
+        - { id: c3k, text: 사 명이에요. 부모님하고 언니하고 저예요., lang: ko }
+        - { id: z1u, text: 네 명이에요. 부모님하고 누나하고 저예요., lang: ko }
+        - { id: e8m, text: 넷 명이에요. 부모님하고 언니하고 저예요., lang: ko }
+    answer:
+      correct_option_id: v6h
+    explanation:
+      vi: Bốn người = 네 명 (số thuần Hàn rút gọn, không dùng 사 hay 넷). Bạn là nữ nên chị gái là 언니, không phải 누나.
+    display_answer: 네 명이에요. 부모님하고 언니하고 저예요.
+
+  - key: ko:exercise:family-people-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:meositda
+    prompt:
+      source_text: 오빠는 스물여덟 살이에요. 키가 크고 멋있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh tôi 28 tuổi. Cao và phong độ.
+        - Anh trai tôi 28 tuổi. Anh ấy cao và phong độ.
+        - Anh tôi hai mươi tám tuổi. Cao và phong độ.
+        - Anh trai tôi hai mươi tám tuổi. Anh ấy cao và phong độ.
+        - Anh trai tôi 28 tuổi. Cao và đẹp trai.
+        - Anh tôi 28 tuổi. Anh ấy cao và đẹp trai.
+        - Anh trai tôi 28 tuổi. Anh ấy cao và đẹp trai.
+        - Anh tôi 28 tuổi, cao và phong độ.
+        - Anh trai tôi 28 tuổi, cao và đẹp trai.
+        - Anh tôi 28 tuổi. Anh ấy cao và phong độ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh tôi 18 tuổi. Cao và phong độ.
+        feedback_vi: 스물여덟 = 20 + 8 = 28. 18 là 열여덟.
+        error_tag: native_numbers
+      - answer: Anh tôi 28 tuổi. Thấp và phong độ.
+        feedback_vi: 키가 크고 là "cao và"; thấp là 키가 작아요.
+        error_tag: adjective_meaning
+    explanation:
+      vi: 오빠 = anh trai (người nói là nữ); 스물여덟 살 = 28 tuổi; 키가 크고 = cao và; 멋있어요 = phong độ, đẹp trai.
+    display_answer: Anh trai tôi 28 tuổi. Anh ấy cao và phong độ.
+
+  - key: ko:exercise:family-people-review-wb-hair
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gilda
+    prompt:
+      instruction: "Bạn là nữ. Sắp xếp thành câu tiếng Hàn: \"Chị gái tôi tóc dài.\""
+      tokens:
+        - { id: p1, text: 길어요 }
+        - { id: p2, text: 우리 }
+        - { id: p3, text: 머리를 }
+        - { id: p4, text: 머리가 }
+        - { id: p5, text: 언니는 }
+        - { id: p6, text: 누나는 }
+    answer:
+      orders:
+        - [p2, p5, p4, p1]
+        - [p5, p4, p1]
+    explanation:
+      vi: Người (언니는 - bạn là nữ nên dùng 언니) + đặc điểm (머리가) + tính từ (길어요). Tính từ không đi với 를, nên 머리를 là sai.
+    display_answer: 우리 언니는 머리가 길어요.
+
+  - key: ko:exercise:family-people-review-mcq-minsu-photo
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hyeong
+    prompt:
+      stem: Minsu (nam) chỉ vào ảnh và giới thiệu "Đây là anh trai tôi. Anh ấy hiền lắm." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: n7a, text: 우리 형이에요. 아주 착해요., lang: ko }
+        - { id: b4t, text: 우리 오빠예요. 아주 착해요., lang: ko }
+        - { id: x2e, text: 저 형이에요. 아주 착해요., lang: ko }
+        - { id: k5s, text: 우리 형이에요. 아주 착하요., lang: ko }
+    answer:
+      correct_option_id: n7a
+    explanation:
+      vi: Minsu là nam nên anh trai là 형 (형 có patchim nên + 이에요). 오빠 chỉ dùng khi người nói là nữ; 저 형 là "anh kia"; 착하다 chia thành 착해요.
+    display_answer: 우리 형이에요. 아주 착해요.
+
+  - key: ko:exercise:family-people-review-mcq-polite-grandma
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeonse
+    prompt:
+      stem: Trong ảnh có bà của bạn Hàn. Bạn muốn hỏi lễ phép "Bà bạn bao nhiêu tuổi rồi?". Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: q4j, text: 할머니는 연세가 어떻게 되세요?, lang: ko }
+        - { id: u9d, text: 할머니는 몇 살이에요?, lang: ko }
+        - { id: r3f, text: 할머니는 나이가 어때요?, lang: ko }
+        - { id: g6l, text: 할머니는 연세가 누구예요?, lang: ko }
+    answer:
+      correct_option_id: q4j
+    explanation:
+      vi: Hỏi tuổi người lớn tuổi - 연세가 어떻게 되세요?. 몇 살이에요? dành cho bạn bè, trẻ em; 어때요 hỏi "thế nào", còn 누구 là "ai".
+    display_answer: 할머니는 연세가 어떻게 되세요?

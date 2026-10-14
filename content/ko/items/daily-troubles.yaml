@@ -1,0 +1,904 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Sự cố thường ngày & cảm xúc" (TOPIK 3). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: sự cố bất ngờ (-는 바람에, -(으)ㄹ 뻔하다) ----------------
+  - key: ko:item:gram-neun-barame
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-는 바람에
+      romanization: -neun barame
+      pos: cấu trúc lý do
+    back:
+      meaning:
+        vi: Vì (một việc bất ngờ) nên… - nguyên nhân xảy ra đột ngột, ngoài ý muốn, dẫn tới kết quả thường là không tốt. Chỉ gắn vào động từ, luôn ở dạng -는 (không gắn quá khứ), vế sau thường là quá khứ.
+      examples:
+        - target: 늦잠을 자는 바람에 비행기를 놓쳤어요.
+          translation:
+            vi: Tại ngủ quên nên tôi bị lỡ chuyến bay.
+        - target: 갑자기 비가 오는 바람에 옷이 다 젖었어요.
+          translation:
+            vi: Tự nhiên trời đổ mưa nên quần áo tôi ướt hết.
+      pronunciation_note:
+        vi: 바람에 nối âm thành [바라메].
+      confusion:
+        vi: Kết quả tốt thì dùng -(으)ㄴ 덕분에 (nhờ…), không dùng -는 바람에. Vế sau không được là mệnh lệnh, rủ rê (-(으)세요, -(으)ㅂ시다).
+
+  - key: ko:item:gram-eul-ppeonhada
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄹ 뻔했다
+      romanization: -(eu)l ppeonhaetda
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: Suýt nữa thì… - một việc (thường là xấu) gần như đã xảy ra nhưng cuối cùng không xảy ra. Gần như luôn dùng ở quá khứ - 넘어질 뻔했어요.
+      examples:
+        - target: 계단에서 넘어질 뻔했어요.
+          translation:
+            vi: Tôi suýt ngã ở cầu thang.
+        - target: 하마터면 지하철을 놓칠 뻔했어요.
+          translation:
+            vi: Suýt chút nữa là tôi lỡ tàu điện ngầm.
+      pronunciation_note:
+        vi: ㅃ là phụ âm căng, đọc gọn, không bật hơi - [뻔해써요]. Thân có patchim thêm 을 - 잃어버릴 뻔했어요, 먹을 뻔했어요.
+      confusion:
+        vi: Việc đã xảy ra thật thì không dùng -(으)ㄹ 뻔했다 - ngã thật là 넘어졌어요. "Suýt" của tiếng Việt luôn ứng với dạng quá khứ 뻔했어요, không nói 뻔해요.
+
+  - key: ko:item:hamateomyeon
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 하마터면
+      romanization: hamateomyeon
+      pos: phó từ
+    back:
+      meaning:
+        vi: suýt nữa thì, chút xíu nữa là (luôn đi với -(으)ㄹ 뻔했다)
+      examples:
+        - target: 하마터면 차에 부딪힐 뻔했어요.
+          translation:
+            vi: Suýt chút nữa là tôi bị xe đâm.
+      pronunciation_note:
+        vi: Đọc liền một hơi [하마터면]; ㅌ bật hơi.
+      confusion:
+        vi: 하마터면 đi với -(으)ㄹ 뻔했다, không dùng với câu kể việc đã xảy ra thật như 하마터면 늦었어요.
+
+  - key: ko:item:jigabeul-ireobeorida
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 지갑을 잃어버리다
+      romanization: jigabeul ireobeorida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: làm mất ví, đánh rơi mất ví
+      examples:
+        - target: 지하철에서 지갑을 잃어버렸어요.
+          translation:
+            vi: Tôi làm mất ví trên tàu điện ngầm.
+      pronunciation_note:
+        vi: 잃어버리다 đọc [이러버리다] - ㅎ trong ㅀ câm, ㄹ nối sang nguyên âm sau.
+      confusion:
+        vi: 잃어버리다 là "làm mất (đồ)"; 잊어버리다 là "quên". Hai từ đọc gần giống nhau nên người Việt hay nhầm khi viết.
+
+  - key: ko:item:hyudaepon
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 휴대폰
+      romanization: hyudaepon
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại di động (cũng nói 핸드폰, 휴대 전화)
+      examples:
+        - target: 휴대폰이 고장 나서 연락을 못 했어요.
+          translation:
+            vi: Điện thoại hỏng nên tôi không liên lạc được.
+      pronunciation_note:
+        vi: ㅍ bật hơi rõ - [휴대폰]; ㅐ đọc như "e" mở.
+      confusion:
+        vi: Trong văn bản trang trọng hay gặp 휴대 전화; khi nói chuyện thường dùng 휴대폰 hoặc 핸드폰.
+
+  - key: ko:item:neomeojida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 넘어지다
+      romanization: neomeojida
+      pos: động từ
+    back:
+      meaning:
+        vi: ngã, té (khi đang đi, chạy)
+      examples:
+        - target: 길이 미끄러워서 넘어졌어요.
+          translation:
+            vi: Đường trơn nên tôi bị ngã.
+      pronunciation_note:
+        vi: Nối âm [너머지다]; 넘어졌어요 đọc [너머저써요].
+      confusion:
+        vi: 넘어지다 là ngã (người, cột ngã xuống); đồ vật rơi từ trên cao xuống là 떨어지다.
+
+  - key: ko:item:dachida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 다치다
+      romanization: dachida
+      pos: động từ
+    back:
+      meaning:
+        vi: bị thương
+      examples:
+        - target: 넘어져서 다리를 다쳤어요.
+          translation:
+            vi: Tôi bị ngã nên bị thương ở chân.
+      pronunciation_note:
+        vi: ㅊ bật hơi - [다치다]; 다쳤어요 [다처써요].
+      confusion:
+        vi: Bộ phận bị thương đi với 을/를 - 손을 다쳤어요, không dùng 이/가 như 손이 다쳤어요.
+
+  - key: ko:item:nochida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 놓치다
+      romanization: nochida
+      pos: động từ
+    back:
+      meaning:
+        vi: lỡ, bỏ lỡ (xe, tàu, cơ hội)
+      examples:
+        - target: 버스를 놓쳐서 택시를 탔어요.
+          translation:
+            vi: Lỡ xe buýt nên tôi đi taxi.
+      pronunciation_note:
+        vi: 놓치다 đọc [녿치다]; ㅎ trước ㅊ không phát âm thành tiếng riêng.
+      confusion:
+        vi: Lỡ xe là 놓치다, không dùng 잃어버리다 (mất đồ) hay 늦다 (muộn).
+
+  - key: ko:item:danghwanghada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 당황하다
+      romanization: danghwanghada
+      pos: động từ
+    back:
+      meaning:
+        vi: bối rối, hoảng (vì chuyện bất ngờ, không biết xử lý thế nào)
+      examples:
+        - target: 지갑이 없어서 너무 당황했어요.
+          translation:
+            vi: Không thấy ví đâu nên tôi hoảng quá.
+      pronunciation_note:
+        vi: Khi nói nhanh ㅎ giữa từ yếu đi - [당왕하다].
+      confusion:
+        vi: 당황하다 là bối rối tức thời vì bất ngờ; lo lắng kéo dài là 걱정되다.
+
+  - key: ko:item:gapjagi
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 갑자기
+      romanization: gapjagi
+      pos: phó từ
+    back:
+      meaning:
+        vi: đột nhiên, bỗng nhiên
+      examples:
+        - target: 갑자기 휴대폰 화면이 꺼졌어요.
+          translation:
+            vi: Màn hình điện thoại bỗng nhiên tắt ngúm.
+      pronunciation_note:
+        vi: ㅈ sau patchim ㅂ đọc căng - [갑짜기].
+      confusion:
+        vi: 갑자기 rất hay đi cùng -는 바람에 vì cả hai đều nói việc bất ngờ.
+
+  # ---------------- bài 2: -다가, -았/었더니 ----------------
+  - key: ko:item:gram-daga
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-다가
+      romanization: -daga
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Đang làm A thì (dừng lại / chuyển sang) B; hoặc đang làm A thì xảy ra B (thường là sự cố). Hai vế phải cùng một chủ ngữ.
+      examples:
+        - target: 숙제를 하다가 잠이 들었어요.
+          translation:
+            vi: Đang làm bài tập thì tôi ngủ thiếp đi.
+        - target: 휴대폰을 보면서 걷다가 넘어졌어요.
+          translation:
+            vi: Vừa đi vừa xem điện thoại nên tôi bị ngã.
+      pronunciation_note:
+        vi: Thân có patchim nối thẳng - 걷다가 [걷따가], 먹다가 [먹따가]; ㄷ đọc căng.
+      confusion:
+        vi: Chủ ngữ hai vế khác nhau thì không dùng -다가 - "Tôi đang ngủ thì bạn gọi" là 자고 있는데 친구가 전화했어요. -았다가 (갔다가) là làm xong A rồi mới chuyển sang B.
+
+  - key: ko:item:gram-at-deoni
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-았/었더니
+      romanization: -atdeoni · -eotdeoni
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: (Tôi) đã làm A, thì (phát hiện ra / kết quả là) B. Vế trước là hành động của chính người nói, vế sau là điều người nói nhận thấy hoặc kết quả sau đó.
+      examples:
+        - target: 아침에 창문을 열었더니 눈이 오고 있었어요.
+          translation:
+            vi: Sáng mở cửa sổ ra thì thấy tuyết đang rơi.
+        - target: 약을 먹었더니 좀 괜찮아졌어요.
+          translation:
+            vi: Uống thuốc xong thì tôi thấy đỡ hơn.
+      pronunciation_note:
+        vi: ㄷ sau patchim ㅆ đọc căng - 열었더니 [여럳떠니], 먹었더니 [머걷떠니].
+      confusion:
+        vi: Vế trước gần như luôn là "tôi" (저/제가). Kể về người khác mà mình quan sát thì dùng -더니 không có 았 (동생이 공부하더니…), là mẫu khác.
+
+  - key: ko:item:surihada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 수리하다
+      romanization: surihada
+      pos: động từ
+    back:
+      meaning:
+        vi: sửa chữa (máy móc, đồ vật); 수리를 맡기다 là mang đi sửa
+      examples:
+        - target: 노트북을 수리하는 데 일주일이 걸려요.
+          translation:
+            vi: Sửa máy tính xách tay mất một tuần.
+      pronunciation_note:
+        vi: ㄹ giữa hai nguyên âm đọc nhẹ như "r" - [수리하다].
+      confusion:
+        vi: 수리하다 trang trọng hơn 고치다; cả hai đều là "sửa". Sửa bài, sửa lỗi trong văn bản dùng 고치다 hoặc 수정하다, không dùng 수리하다.
+
+  - key: ko:item:seobiseu-senteo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 서비스 센터
+      romanization: seobiseu senteo
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm bảo hành, sửa chữa (của hãng)
+      examples:
+        - target: 휴대폰이 고장 나서 서비스 센터에 갔어요.
+          translation:
+            vi: Điện thoại hỏng nên tôi đến trung tâm bảo hành.
+      pronunciation_note:
+        vi: Từ mượn tiếng Anh; 센터 đọc [센터], ㅌ bật hơi.
+      confusion:
+        vi: Hỏi khách hàng qua điện thoại là 고객 센터; mang máy đến sửa là 서비스 센터.
+
+  - key: ko:item:tteoreotteurida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 떨어뜨리다
+      romanization: tteoreotteurida
+      pos: động từ
+    back:
+      meaning:
+        vi: làm rơi, đánh rơi (đồ vật xuống đất)
+      examples:
+        - target: 휴대폰을 떨어뜨려서 화면이 깨졌어요.
+          translation:
+            vi: Tôi làm rơi điện thoại nên màn hình bị vỡ.
+      pronunciation_note:
+        vi: Nối âm [떠러뜨리다]; ㄸ căng ở cả hai chỗ.
+      confusion:
+        vi: 떨어뜨리다 là mình làm rơi (có tân ngữ 을/를); 떨어지다 là đồ tự rơi (휴대폰이 떨어졌어요).
+
+  - key: ko:item:kkaejida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 깨지다
+      romanization: kkaejida
+      pos: động từ
+    back:
+      meaning:
+        vi: bị vỡ (kính, cốc, màn hình)
+      examples:
+        - target: 컵이 떨어져서 깨졌어요.
+          translation:
+            vi: Cái cốc rơi xuống nên vỡ mất.
+      pronunciation_note:
+        vi: ㄲ căng, không bật hơi - [깨지다]; 깨졌어요 [깨저써요].
+      confusion:
+        vi: 깨지다 dùng cho đồ thủy tinh, sứ, màn hình bị vỡ; máy hỏng không chạy là 고장 나다.
+
+  - key: ko:item:hwamyeon
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 화면
+      romanization: hwamyeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: màn hình
+      examples:
+        - target: 화면이 안 켜져요.
+          translation:
+            vi: Màn hình không lên.
+      pronunciation_note:
+        vi: ㅘ đọc lướt như "oa" - [화면].
+      confusion:
+        vi: 화면 là màn hình hiển thị; cái máy tính màn hình rời gọi là 모니터.
+
+  - key: ko:item:chungjeonhada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 충전하다
+      romanization: chungjeonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: sạc (pin); nạp tiền (thẻ giao thông)
+      examples:
+        - target: 휴대폰을 충전하다가 잠이 들었어요.
+          translation:
+            vi: Tôi đang sạc điện thoại thì ngủ quên mất.
+      pronunciation_note:
+        vi: ㅊ bật hơi, ㅈ thường - [충전하다].
+      confusion:
+        vi: Hết pin nói 배터리가 다 됐어요 hoặc 배터리가 없어요; "sạc" luôn là 충전하다.
+
+  - key: ko:item:soksanghada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 속상하다
+      romanization: soksanghada
+      pos: tính từ
+    back:
+      meaning:
+        vi: buồn bực, xót xa, khó chịu trong lòng (vì chuyện không như ý)
+      examples:
+        - target: 새 휴대폰이 깨져서 정말 속상해요.
+          translation:
+            vi: Điện thoại mới bị vỡ, tôi xót quá.
+      pronunciation_note:
+        vi: ㅅ sau patchim ㄱ đọc căng - [속쌍하다].
+      confusion:
+        vi: 속상하다 là buồn bực vì mất mát, thất bại; 슬프다 là buồn thương (chia tay, mất người thân).
+
+  - key: ko:item:mikkeureopda
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 미끄럽다
+      romanization: mikkeureopda
+      pos: tính từ
+    back:
+      meaning:
+        vi: trơn (đường, sàn nhà)
+      examples:
+        - target: 눈이 와서 길이 미끄러워요.
+          translation:
+            vi: Tuyết rơi nên đường trơn.
+      pronunciation_note:
+        vi: Bất quy tắc ㅂ - 미끄럽다 → 미끄러워요 [미끄러워요]; ㄲ căng.
+      confusion:
+        vi: Không chia 미끄럽어요; ㅂ đổi thành 우 giống 덥다 → 더워요.
+
+  # ---------------- bài 3: -더라고요, -잖아요, -거든요 ----------------
+  - key: ko:item:gram-deoragoyo
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: A/V-더라고요
+      romanization: -deoragoyo
+      pos: đuôi câu
+    back:
+      meaning:
+        vi: Kể lại điều chính mình đã thấy, nghe, cảm nhận trước đó như một phát hiện mới - "thấy… lắm", "hóa ra…". Dùng nhiều trong hội thoại.
+      examples:
+        - target: 분실물 센터 직원이 정말 친절하더라고요.
+          translation:
+            vi: Nhân viên ở quầy đồ thất lạc tử tế lắm (tôi thấy vậy).
+        - target: 아침에 나가 보니까 길이 많이 막히더라고요.
+          translation:
+            vi: Sáng ra đường thì thấy đường tắc kinh khủng.
+      pronunciation_note:
+        vi: Khi nói thường nghe thành [-더라구요], nhưng viết luôn là 더라고요.
+      confusion:
+        vi: Không dùng cho hành động có chủ ý của chính mình - không nói 제가 어제 영화를 보더라고요. Kể việc mình làm thì dùng quá khứ thường (봤어요).
+
+  - key: ko:item:gram-janayo
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: A/V-잖아요 · N(이)잖아요
+      romanization: -janayo
+      pos: đuôi câu
+    back:
+      meaning:
+        vi: …mà, …còn gì - nhắc lại điều người nghe cũng đã biết để giải thích hoặc trách nhẹ.
+      examples:
+        - target: 오늘 월요일이잖아요. 그래서 길이 막혀요.
+          translation:
+            vi: Hôm nay thứ Hai mà. Vì thế đường mới tắc.
+        - target: 제가 어제 말했잖아요.
+          translation:
+            vi: Hôm qua tôi đã nói rồi còn gì.
+      pronunciation_note:
+        vi: ㅎ trong 잖 câm - 잖아요 đọc [자나요].
+      confusion:
+        vi: Chỉ dùng khi người nghe đã biết điều đó. Với cấp trên, -잖아요 dễ nghe như bắt bẻ, nên thận trọng.
+
+  - key: ko:item:gram-geodeunyo
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: A/V-거든요 · N(이)거든요
+      romanization: -geodeunyo
+      pos: đuôi câu
+    back:
+      meaning:
+        vi: Là vì…, chả là… - đưa ra lý do hoặc bối cảnh mà người nghe chưa biết, chỉ dùng khi nói chuyện thân mật, lịch sự.
+      examples:
+        - target: 늦어서 죄송해요. 버스를 놓쳤거든요.
+          translation:
+            vi: Xin lỗi vì đến muộn. Chả là tôi bị lỡ xe buýt.
+        - target: 제가 어제 휴대폰을 잃어버렸거든요. 그래서 연락을 못 했어요.
+          translation:
+            vi: Chả là hôm qua tôi làm mất điện thoại. Nên tôi không liên lạc được.
+      pronunciation_note:
+        vi: Có ㄴ chen vào - 거든요 đọc [거든뇨].
+      confusion:
+        vi: Không dùng -거든요 trong bài viết, email, báo cáo - khi viết dùng -기 때문이다 hoặc -아서. -거든요 khác -잖아요 - người nghe chưa biết lý do.
+
+  - key: ko:item:dapdaphada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 답답하다
+      romanization: dapdaphada
+      pos: tính từ
+    back:
+      meaning:
+        vi: bức bối, ngột ngạt, sốt ruột (khi bế tắc, không giải quyết được)
+      examples:
+        - target: 길이 계속 막혀서 너무 답답해요.
+          translation:
+            vi: Đường cứ tắc mãi, bực bội quá.
+      pronunciation_note:
+        vi: ㄷ sau ㅂ đọc căng, ㅂ + ㅎ thành ㅍ - [답따파다].
+      confusion:
+        vi: Phòng thiếu không khí cũng là 답답하다. Tức giận rõ ràng thì dùng 짜증이 나다 hoặc 화가 나다.
+
+  - key: ko:item:jjajeungi-nada
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 짜증이 나다
+      romanization: jjajeungi nada
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bực mình, cáu
+      examples:
+        - target: 아침부터 일이 잘 안 돼서 짜증이 났어요.
+          translation:
+            vi: Từ sáng việc gì cũng trục trặc nên tôi bực mình.
+      pronunciation_note:
+        vi: ㅉ căng - [짜증이 나다].
+      confusion:
+        vi: Làm người khác bực là 짜증을 내다 (cáu với ai); tự mình thấy bực là 짜증이 나다.
+
+  - key: ko:item:dahaengida
+    type: phrase
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 다행이다
+      romanization: dahaengida
+      pos: cụm (danh từ + 이다)
+    back:
+      meaning:
+        vi: may quá, thật may là
+      examples:
+        - target: 크게 안 다쳐서 다행이에요.
+          translation:
+            vi: May mà bạn không bị thương nặng.
+      pronunciation_note:
+        vi: Khi nói nhanh ㅎ yếu đi - [다앵이에요].
+      confusion:
+        vi: Thường đi sau -아서/어서 - 찾아서 다행이에요 (may là tìm thấy). Không nói 다행해요.
+
+  - key: ko:item:wollae
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 원래
+      romanization: wollae
+      pos: phó từ
+    back:
+      meaning:
+        vi: vốn dĩ, bình thường thì
+      examples:
+        - target: 이 시간에는 원래 길이 막히잖아요.
+          translation:
+            vi: Giờ này đường vốn dĩ hay tắc mà.
+      pronunciation_note:
+        vi: ㄴ + ㄹ đọc thành ㄹㄹ - [월래].
+      confusion:
+        vi: 원래 nhấn "vốn dĩ như thế", hay đi với -잖아요 khi nhắc điều ai cũng biết.
+
+  - key: ko:item:algo-boni
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 알고 보니
+      romanization: algo boni
+      pos: cụm từ
+    back:
+      meaning:
+        vi: hóa ra, té ra (sau khi biết sự thật)
+      examples:
+        - target: 지갑을 잃어버린 줄 알았는데 알고 보니 가방 안에 있었어요.
+          translation:
+            vi: Tôi tưởng mất ví, hóa ra nó nằm trong túi.
+      pronunciation_note:
+        vi: Đọc liền [알고보니]; ㄱ sau ㄹ vẫn là âm thường.
+      confusion:
+        vi: 알고 보니 mở đầu một sự thật bất ngờ, thường đi cùng câu quá khứ hoặc -더라고요.
+
+  - key: ko:item:jeongsini-eopda
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 정신이 없다
+      romanization: jeongsini eopda
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: rối tung, bận tối mắt, không còn đầu óc nghĩ gì
+      examples:
+        - target: 아침에 너무 정신이 없어서 휴대폰을 집에 두고 왔어요.
+          translation:
+            vi: Sáng nay rối quá nên tôi để quên điện thoại ở nhà.
+      pronunciation_note:
+        vi: 정신이 nối âm [정시니], 없다 [업따].
+      confusion:
+        vi: Không có nghĩa là "mất trí"; đây là cách nói rất thông dụng cho "bận rộn, rối rắm".
+
+  # ---------------- bài 4: -(으)ㄹ 테니까, -아/어 버리다, -고 말다 ----------------
+  - key: ko:item:gram-eul-tenikka
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄹ 테니까
+      romanization: -(eu)l tenikka
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: (1) Chủ ngữ "tôi" - tôi sẽ làm A, nên bạn hãy B. (2) Chủ ngữ khác - chắc là A, nên (hãy) B. Vế sau thường là lời khuyên, đề nghị, rủ rê.
+      examples:
+        - target: 제가 분실물 센터에 전화할 테니까 걱정하지 마세요.
+          translation:
+            vi: Tôi sẽ gọi cho quầy đồ thất lạc, bạn đừng lo.
+        - target: 지금은 길이 막힐 테니까 지하철을 타세요.
+          translation:
+            vi: Giờ này chắc đường tắc đấy, bạn đi tàu điện ngầm đi.
+      pronunciation_note:
+        vi: ㅌ bật hơi - [할 테니까]; thân có patchim thêm 을 - 찾을 테니까.
+      confusion:
+        vi: Khác -(으)ㄹ 텐데 (…chắc là… vậy mà/đáng lẽ), -(으)ㄹ 테니까 luôn dẫn tới một lời đề nghị, yêu cầu ở vế sau.
+
+  - key: ko:item:gram-a-beorida
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-아/어 버리다
+      romanization: -a/eo beorida
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: …mất rồi, …hết rồi - hành động kết thúc hẳn, kèm cảm xúc tiếc nuối (hoặc nhẹ nhõm) của người nói.
+      examples:
+        - target: 버스가 벌써 떠나 버렸어요.
+          translation:
+            vi: Xe buýt đã chạy mất rồi.
+        - target: 너무 배가 고파서 케이크를 다 먹어 버렸어요.
+          translation:
+            vi: Đói quá nên tôi ăn sạch cái bánh mất rồi.
+      pronunciation_note:
+        vi: Nối âm - 먹어 버렸어요 [머거버려써요].
+      confusion:
+        vi: 잃어버리다, 잊어버리다 đã thành một từ, viết liền. Các động từ khác viết cách - 떠나 버리다, 먹어 버리다.
+
+  - key: ko:item:gram-go-malda
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-고 말다
+      romanization: -go malda
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: Rốt cuộc cũng… (dù không muốn, dù đã cố tránh) - kết quả cuối cùng đáng tiếc. Thường đi với 결국, ở dạng -고 말았어요.
+      examples:
+        - target: 조심했는데 결국 넘어지고 말았어요.
+          translation:
+            vi: Đã cẩn thận rồi mà rốt cuộc tôi vẫn bị ngã.
+        - target: 참으려고 했지만 울고 말았어요.
+          translation:
+            vi: Tôi đã cố nhịn nhưng cuối cùng vẫn bật khóc.
+      pronunciation_note:
+        vi: 말았어요 nối âm [마라써요].
+      confusion:
+        vi: -고 말다 nhấn "dù cố gắng vẫn không tránh được"; -아/어 버리다 nhấn "xong hẳn, mất rồi". -고 말겠어요 (thì tương lai) lại nghĩa là quyết tâm "nhất định sẽ".
+
+  - key: ko:item:bunsilmul-senteo
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 분실물 센터
+      romanization: bunsilmul senteo
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy, trung tâm tiếp nhận đồ thất lạc
+      examples:
+        - target: 지하철에 두고 내린 가방은 분실물 센터에 가 보세요.
+          translation:
+            vi: Túi để quên trên tàu điện ngầm thì bạn thử đến trung tâm đồ thất lạc xem.
+      pronunciation_note:
+        vi: 분실물 đọc [분실물]; ㄹ cuối âm tiết đọc như "l".
+      confusion:
+        vi: 분실 là "đánh mất" (Hán Hàn, trang trọng); khi nói thường dùng 잃어버리다.
+
+  - key: ko:item:singohada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 신고하다
+      romanization: singohada
+      pos: động từ
+    back:
+      meaning:
+        vi: trình báo, khai báo (với cơ quan chức năng)
+      examples:
+        - target: 지갑을 잃어버려서 경찰서에 신고했어요.
+          translation:
+            vi: Tôi làm mất ví nên đã trình báo ở đồn cảnh sát.
+      pronunciation_note:
+        vi: Đọc [신고하다]; ㄱ sau ㄴ vẫn là âm thường.
+      confusion:
+        vi: Báo mất đồ là 분실 신고를 하다; báo cho bạn bè biết chỉ là 알리다 hoặc 말하다, không dùng 신고하다.
+
+  - key: ko:item:gyeongchalseo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 경찰서
+      romanization: gyeongchalseo
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồn cảnh sát (đồn nhỏ ở khu phố là 파출소, 지구대)
+      examples:
+        - target: 경찰서가 어디에 있어요?
+          translation:
+            vi: Đồn cảnh sát ở đâu ạ?
+      pronunciation_note:
+        vi: ㅅ sau ㄹ đọc căng - [경찰써].
+      confusion:
+        vi: 경찰 là cảnh sát (người), 경찰서 là đồn cảnh sát (nơi chốn).
+
+  - key: ko:item:geokjeongdoeda
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 걱정되다
+      romanization: geokjeongdoeda
+      pos: động từ
+    back:
+      meaning:
+        vi: thấy lo, lo lắng
+      examples:
+        - target: 여권을 못 찾을까 봐 걱정돼요.
+          translation:
+            vi: Tôi lo không tìm lại được hộ chiếu.
+      pronunciation_note:
+        vi: ㅈ sau ㄱ đọc căng - [걱쩡되다]; 걱정돼요 [걱쩡돼요].
+      confusion:
+        vi: Bảo người khác đừng lo là 걱정하지 마세요, không nói 걱정되지 마세요.
+
+  - key: ko:item:gyeolguk
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 결국
+      romanization: gyeolguk
+      pos: phó từ
+    back:
+      meaning:
+        vi: rốt cuộc, cuối cùng (thường là kết quả không mong muốn)
+      examples:
+        - target: 한 시간을 기다렸지만 결국 버스가 안 왔어요.
+          translation:
+            vi: Chờ cả tiếng mà rốt cuộc xe buýt không đến.
+      pronunciation_note:
+        vi: ㄱ cuối không bật ra - [결국].
+      confusion:
+        vi: Kết thúc tốt đẹp sau cố gắng thì hay dùng 드디어 (cuối cùng thì cũng); 결국 trung tính hoặc tiếc nuối.
+
+  - key: ko:item:ijeobeorida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 잊어버리다
+      romanization: ijeobeorida
+      pos: động từ
+    back:
+      meaning:
+        vi: quên mất (thông tin, việc phải làm)
+      examples:
+        - target: 비밀번호를 잊어버렸어요.
+          translation:
+            vi: Tôi quên mất mật khẩu.
+      pronunciation_note:
+        vi: Nối âm [이저버리다].
+      confusion:
+        vi: Đừng nhầm với 잃어버리다 (làm mất đồ). Để quên đồ ở đâu đó thì nói 두고 오다 / 두고 내리다.
+
+  - key: ko:item:dugo-naerida
+    type: phrase
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 두고 내리다
+      romanization: dugo naerida
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: để quên (đồ) trên xe rồi xuống
+      examples:
+        - target: 택시에 우산을 두고 내렸어요.
+          translation:
+            vi: Tôi để quên ô trên taxi.
+      pronunciation_note:
+        vi: Đọc [두고 내리다]; ㄱ giữa hai nguyên âm nghe gần như "g".
+      confusion:
+        vi: Quên ở nhà, ở quán thì dùng 두고 오다; quên trên xe khi xuống thì dùng 두고 내리다.
+
+  # ---------------- bài 5: ôn tập ----------------
+  - key: ko:item:yeollakcheo
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 연락처
+      romanization: yeollakcheo
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin liên lạc, số điện thoại liên hệ
+      examples:
+        - target: 여기에 이름하고 연락처를 써 주세요.
+          translation:
+            vi: Bạn viết tên và số liên lạc vào đây giúp tôi.
+      pronunciation_note:
+        vi: ㄴ + ㄹ đọc thành ㄹㄹ - [열락처].
+      confusion:
+        vi: 연락처 là số, địa chỉ để liên lạc; 연락 là việc liên lạc.
+
+  - key: ko:item:chajagada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 찾아가다
+      romanization: chajagada
+      pos: động từ
+    back:
+      meaning:
+        vi: đến lấy lại (đồ của mình); tìm đến (một nơi, một người)
+      examples:
+        - target: 신분증을 가지고 오시면 지갑을 찾아가실 수 있어요.
+          translation:
+            vi: Nếu mang theo giấy tờ tùy thân, anh chị có thể đến nhận lại ví.
+      pronunciation_note:
+        vi: Nối âm [차자가다].
+      confusion:
+        vi: 찾다 là tìm hoặc lấy lại; 찾아가다 nhấn việc đi đến nơi để nhận lại.

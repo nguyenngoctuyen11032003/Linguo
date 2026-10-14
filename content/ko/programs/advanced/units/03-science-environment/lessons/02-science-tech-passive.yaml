@@ -1,0 +1,414 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:science-tech-passive
+order_index: 2
+level: topik5
+title:
+  vi: Khoa học & công nghệ - bị động trong văn viết
+objectives:
+  - vi: Hiểu từ vựng tin khoa học, công nghệ - 인공지능, 개인 정보 유출, 자율 주행, 연구진, 실험, 개발하다.
+  - vi: Dùng đúng bị động của văn báo chí - 밝혀지다, 알려지다, 개발되다, 유출되다 - và tránh bị động kép 되어지다.
+  - vi: Phân biệt cặp tự động / gây khiến 줄다 - 줄이다, 늘다 - 늘리다 và nội động từ 발생하다.
+estimated_minutes: 22
+skills: [vocabulary, grammar, reading]
+prerequisites: [ko:lesson:climate-environment-vocab]
+items:
+  - item: ko:item:ingongjineung
+  - item: ko:item:gaein-jeongbo
+  - item: ko:item:yuchul
+  - item: ko:item:jayul-juhaeng
+  - item: ko:item:yeongujin
+  - item: ko:item:silheom
+  - item: ko:item:gaebalhada
+  - item: ko:item:balkyeojida
+  - item: ko:item:allyeojida
+  - item: ko:item:balsaenghada
+  - item: ko:item:gp-written-passive
+  - item: ko:item:julida-neullida
+  - item: ko:item:balpyohada
+    role: reuse
+  - item: ko:item:gyeolgwa
+    role: reuse
+  - item: ko:item:onsil-gaseu
+    role: reuse
+  - item: ko:item:baechulhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một bản tin khoa học kiểu "연구진이 … 밝혀냈다 / … 사실이 밝혀졌다" và tự viết câu bị động đúng chuẩn văn viết.
+  - type: explain
+    text:
+      vi: Tin khoa học thường nhấn vào kết quả hơn người làm, nên hay dùng bị động. Động từ Hán Hàn -하다 đổi thành -되다 (개발하다 → 개발되다, 유출하다 → 유출되다); động từ thuần Hàn thêm -아/어지다 (밝히다 → 밝혀지다, 알리다 → 알려지다).
+  - type: explain
+    text:
+      vi: Chỉ dùng một lớp bị động. 되다 đã là bị động, thêm -어지다 thành 되어지다 là bị động kép, bị coi là lỗi trong văn chuẩn - viết 개발되었다, không viết 개발되어졌다.
+  - type: explain
+    text:
+      vi: Tiếng Việt "giảm, tăng" dùng cho cả "tự giảm" lẫn "làm giảm". Tiếng Hàn tách đôi - 배출량이 줄다/늘다 (không tân ngữ) và 배출량을 줄이다/늘리다 (có tân ngữ, có người thực hiện).
+  - type: deep_explain
+    text:
+      vi: Một số động từ Hán Hàn vốn đã là nội động từ nên không cần bị động - 발생하다 (xảy ra), 증가하다, 감소하다; viết 사고가 발생되었다 bị coi là thừa. Mẫu báo chí cần thuộc - 연구진은 …을/를 밝혀냈다 (chủ động, "đã làm sáng tỏ"), …다는 사실이 밝혀졌다 (bị động), …(으)ㄴ/는 것으로 알려져 있다 (thông tin phổ biến). Khi người thực hiện quan trọng (연구진, 정부), tiếng Hàn chuộng câu chủ động hơn tiếng Việt.
+  - type: example
+    target: 국내 연구진이 인공지능을 이용해 미세먼지 농도를 예측하는 기술을 개발했다. 실험 결과 이 기술의 정확도는 90%가 넘는 것으로 나타났다.
+    target_lang: ko
+    translation:
+      vi: Nhóm nghiên cứu trong nước đã phát triển công nghệ dùng AI để dự báo nồng độ bụi mịn. Kết quả thí nghiệm cho thấy độ chính xác của công nghệ này trên 90%.
+    note:
+      vi: Bản tin minh hoạ (số liệu giả định) - câu chủ động khi có chủ thể rõ (연구진이 개발했다), cụm 실험 결과 … 것으로 나타났다.
+  - type: example
+    target: 연구 결과 잠이 부족하면 기억력이 떨어진다는 사실이 밝혀졌다.
+    target_lang: ko
+    translation:
+      vi: Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ giảm sút.
+    note:
+      vi: -다는 사실이 밝혀졌다 - bị động bằng -어지다 của 밝히다.
+  - type: example
+    target: 해킹으로 고객 100만 명의 개인 정보가 유출되었다.
+    target_lang: ko
+    translation:
+      vi: Do bị tấn công mạng, thông tin cá nhân của 1 triệu khách hàng đã bị rò rỉ.
+    note:
+      vi: Bị động Hán Hàn bằng -되다; tiếng Việt cần "bị", tiếng Hàn chỉ cần 되다.
+  - type: example
+    target: 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 했다.
+    target_lang: ko
+    translation:
+      vi: Chính phủ quyết định giảm nhiệt điện than và tăng năng lượng tái tạo.
+    note:
+      vi: Có chủ thể (정부) và tân ngữ (을/를) nên dùng 줄이다, 늘리다.
+  - type: common_mistake
+    wrong: 새로운 치료법이 개발되어졌다.
+    right: 새로운 치료법이 개발되었다.
+    target_lang: ko
+    note:
+      vi: Người Việt thêm "được" rồi lại muốn thêm -어지다 cho chắc. 되다 đã là bị động; 되어지다 là bị động kép.
+  - type: common_mistake
+    wrong: 정부는 온실가스 배출량을 줄기로 했다.
+    right: 정부는 온실가스 배출량을 줄이기로 했다.
+    target_lang: ko
+    note:
+      vi: Có tân ngữ 배출량을 nên phải dùng động từ gây khiến 줄이다. 줄다 chỉ dùng khi chính lượng phát thải là chủ ngữ - 배출량이 줄었다.
+  - type: common_mistake
+    wrong: 연구진은 쥐를 대상으로 시험을 진행했다.
+    right: 연구진은 쥐를 대상으로 실험을 진행했다.
+    target_lang: ko
+    note:
+      vi: 실험 (thực nghiệm) là "thí nghiệm", còn 시험 là "kỳ thi, kiểm tra" (chạy thử thì là 시험 운행). Hai từ chỉ khác một chữ nên người Việt hay viết nhầm.
+  - type: summary
+    points:
+      - vi: 인공지능 · 개인 정보 · 유출(되다) · 자율 주행 · 연구진 · 실험 · 개발하다/개발되다.
+      - vi: Bị động văn viết - N하다 → N되다; V → V-아/어지다 (밝혀지다, 알려지다). Không dùng 되어지다.
+      - vi: -다는 사실이 밝혀졌다 · -(으)ㄴ/는 것으로 알려져 있다 · 실험 결과 -(으)ㄴ/는 것으로 나타났다.
+      - vi: N이 줄다/늘다 ↔ N을 줄이다/늘리다; 발생하다 đã là "xảy ra", không cần 발생되다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:science-tech-mcq-silheom
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:silheom
+    prompt:
+      stem: "Trong câu 연구진은 쥐를 대상으로 실험을 진행했다, \"실험\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: b7n, text: thí nghiệm, lang: vi }
+        - { id: m3v, text: kỳ thi, lang: vi }
+        - { id: f8c, text: thực tập tại hiện trường, lang: vi }
+        - { id: d2x, text: kinh nghiệm thực tế, lang: vi }
+    answer:
+      correct_option_id: b7n
+    explanation:
+      vi: 실험 (thực nghiệm) là "thí nghiệm" - nhóm nghiên cứu làm thí nghiệm trên chuột. Kỳ thi là 시험, thực tập là 실습, kinh nghiệm là 경험.
+    display_answer: thí nghiệm
+
+  - key: ko:exercise:science-tech-mcq-double-passive
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-written-passive
+    prompt:
+      stem: "Chọn dạng đúng chuẩn văn viết: 새로운 치료법이 ___. (Một phương pháp điều trị mới đã được phát triển.)"
+      stem_lang: vi
+      options:
+        - { id: k4s, text: 개발되었다, lang: ko }
+        - { id: a6w, text: 개발되어졌다, lang: ko }
+        - { id: p1g, text: 개발했다, lang: ko }
+        - { id: h9z, text: 개발시켰다, lang: ko }
+    answer:
+      correct_option_id: k4s
+    explanation:
+      vi: Chủ ngữ 치료법 là thứ được phát triển nên dùng bị động một lớp 개발되었다. 개발되어졌다 là bị động kép; 개발했다 là chủ động (cần người làm); 개발시켰다 là "bắt/khiến phát triển".
+    display_answer: 개발되었다
+
+  - key: ko:exercise:science-tech-listen-leak
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:yuchul
+    prompt:
+      audio_asset_id: null
+      fallback_text: 해킹으로 고객의 개인 정보가 유출되었다.
+      options:
+        - { id: r5t, text: "Do bị tấn công mạng, thông tin cá nhân của khách hàng đã bị rò rỉ.", lang: vi }
+        - { id: e2y, text: Khách hàng đã tự công bố thông tin cá nhân lên mạng., lang: vi }
+        - { id: w8u, text: Công ty đã thu thập thông tin cá nhân để chống tấn công mạng., lang: vi }
+        - { id: q3i, text: Thông tin cá nhân của khách hàng đã được bảo vệ an toàn., lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 해킹으로 là "do bị hack", 유출되었다 là "đã bị rò rỉ" - bị động bằng 되다. Câu không nói ai công bố hay thu thập thông tin.
+    display_answer: Do bị tấn công mạng, thông tin cá nhân của khách hàng đã bị rò rỉ.
+
+  - key: ko:exercise:science-tech-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:balkyeojida
+    prompt:
+      template: "연구 결과 사고의 원인이 {{b1}}. 정부는 온실가스 배출량을 {{b2}} 계획이다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Kết quả nghiên cứu đã làm rõ nguyên nhân vụ tai nạn. Chính phủ có kế hoạch giảm lượng phát thải khí nhà kính."
+        - "Gợi ý: bị động của 밝히다 ở quá khứ; động từ gây khiến của 줄다 + -(으)ㄹ."
+    answer:
+      blanks:
+        b1: [밝혀졌다]
+        b2: [줄일]
+    known_wrong:
+      - answer: 밝혔다
+        feedback_vi: Chủ ngữ là 원인이 (nguyên nhân được làm rõ) nên cần bị động 밝혀졌다.
+        error_tag: passive_needed
+      - answer: 밝혀지어졌다
+        feedback_vi: Chỉ dùng một lớp bị động - 밝혀졌다.
+        error_tag: double_passive
+      - answer: 줄
+        feedback_vi: Có tân ngữ 배출량을 nên dùng động từ gây khiến 줄이다 → 줄일.
+        error_tag: causative_needed
+    explanation:
+      vi: 원인 là thứ được làm rõ nên dùng bị động 밝히다 → 밝혀지다 → 밝혀졌다. 배출량을 có 을 nên dùng 줄이다, gặp 계획 thành định ngữ tương lai 줄일.
+    display_answer: 연구 결과 사고의 원인이 밝혀졌다. 정부는 온실가스 배출량을 줄일 계획이다.
+
+  - key: ko:exercise:science-tech-wb-develop
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gaebalhada
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nhóm nghiên cứu trong nước đã phát triển công nghệ tự lái mới.\""
+      tokens:
+        - { id: v3, text: 자율 주행 기술을 }
+        - { id: v6, text: 개발되었다 }
+        - { id: v1, text: 국내 연구진이 }
+        - { id: v4, text: 개발했다 }
+        - { id: v2, text: 새로운 }
+    answer:
+      orders:
+        - [v1, v2, v3, v4]
+    explanation:
+      vi: Có chủ thể rõ (연구진이) và tân ngữ (기술을) nên dùng chủ động 개발했다. 개발되었다 là bị động, không đi với tân ngữ 을/를.
+    display_answer: 국내 연구진이 새로운 자율 주행 기술을 개발했다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:science-tech-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:allyeojida
+    prompt:
+      template: "(Năm ngoái xảy ra hơn 500 vụ cháy rừng.) 지난해 산불이 500건 넘게 {{b1}}. (Trà xanh được biết đến là tốt cho sức khoẻ.) 녹차는 건강에 좋은 것으로 {{b2}} 있다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [발생했다]
+        b2: [알려져]
+    known_wrong:
+      - answer: 발생되었다
+        feedback_vi: 발생하다 đã là "xảy ra" (nội động từ), không cần bị động - 발생했다.
+        error_tag: unnecessary_passive
+      - answer: 알려지어져
+        feedback_vi: Bị động kép. Dạng đúng là 알려져 있다.
+        error_tag: double_passive
+      - answer: 알게 되어
+        feedback_vi: 알게 되다 là "(người) biết ra". Thông tin "được biết đến" là 알려져 있다.
+        error_tag: allyeojida_vs_alge
+    explanation:
+      vi: 산불이 발생하다 = cháy rừng xảy ra, chia quá khứ văn viết 발생했다. Thông tin phổ biến dùng -(으)ㄴ/는 것으로 알려져 있다 - 알리다 → 알려지다 → 알려져 있다.
+    display_answer: 지난해 산불이 500건 넘게 발생했다. / 녹차는 건강에 좋은 것으로 알려져 있다.
+
+  - key: ko:exercise:science-tech-translate-leak
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yuchul
+    prompt:
+      source_text: Thông tin cá nhân của khách hàng đã bị rò rỉ. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 고객의 개인 정보가 유출되었다.
+        - 고객의 개인 정보가 유출됐다.
+        - 고객 개인 정보가 유출되었다.
+        - 고객 개인 정보가 유출됐다.
+        - 고객들의 개인 정보가 유출되었다.
+        - 고객들의 개인 정보가 유출됐다.
+    known_wrong:
+      - answer: 고객의 개인 정보가 유출되어졌다.
+        feedback_vi: Bị động kép. 유출되다 đã là bị động - 유출되었다.
+        error_tag: double_passive
+      - answer: 고객의 개인 정보가 유출했다.
+        feedback_vi: 유출하다 là "(ai đó) làm rò rỉ" và cần tân ngữ. Thông tin "bị rò rỉ" là 유출되었다.
+        error_tag: passive_needed
+      - answer: 고객의 개인 정보가 유출되었어요.
+        feedback_vi: Đây là 해요체. Văn viết là 유출되었다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: Thông tin là thứ bị rò rỉ nên dùng bị động Hán Hàn 유출되다, quá khứ văn viết 유출되었다 (hoặc rút gọn 유출됐다). Tiếng Việt cần "bị", tiếng Hàn chỉ cần 되다.
+    display_answer: 고객의 개인 정보가 유출되었다.
+
+  - key: ko:exercise:science-tech-translate-reduce
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:julida-neullida
+    prompt:
+      source_text: Chính phủ quyết định giảm nhiệt điện than và tăng năng lượng tái tạo. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 했다.
+        - 정부가 석탄 발전을 줄이고 재생 에너지를 늘리기로 했다.
+        - 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 결정했다.
+        - 정부가 석탄 발전을 줄이고 재생 에너지를 늘리기로 결정했다.
+        - 정부는 석탄 화력 발전을 줄이고 재생 에너지를 늘리기로 했다.
+        - 정부는 석탄 화력 발전을 줄이고 재생 에너지를 늘리기로 결정했다.
+        - 정부는 석탄 발전을 줄이며 재생 에너지를 늘리기로 했다.
+    known_wrong:
+      - answer: 정부는 석탄 발전을 줄고 재생 에너지를 늘기로 했다.
+        feedback_vi: Có tân ngữ (을/를) nên phải dùng 줄이다, 늘리다 - 줄이고, 늘리기로.
+        error_tag: causative_needed
+      - answer: 정부는 석탄 발전을 줄이고 재활용 에너지를 늘리기로 했다.
+        feedback_vi: Năng lượng tái tạo là 재생 에너지; 재활용 là tái chế vật liệu.
+        error_tag: jaesaeng_jaehwalyong
+      - answer: 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 했어요.
+        feedback_vi: Đây là 해요체. Văn viết là 했다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: Chính phủ là chủ thể làm giảm/tăng nên dùng 줄이다, 늘리다 với tân ngữ 을/를. "Quyết định làm" là -기로 하다 (hoặc -기로 결정하다), quá khứ văn viết 했다.
+    display_answer: 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 했다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:science-tech-mcq-gaebal-baljeon
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gaebalhada
+    prompt:
+      stem: "Bạn muốn viết: \"Khi AI phát triển, nhiều công việc đã thay đổi.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s6m, text: 인공지능이 발전하면서 많은 일이 바뀌었다., lang: ko }
+        - { id: g2b, text: 인공지능이 개발하면서 많은 일이 바뀌었다., lang: ko }
+        - { id: n7c, text: 인공지능이 발전되어지면서 많은 일이 바뀌었다., lang: ko }
+        - { id: t4e, text: 인공지능이 발전하면서 많은 일이 바뀌어졌다., lang: ko }
+    answer:
+      correct_option_id: s6m
+    explanation:
+      vi: AI "lớn mạnh lên" là 발전하다 (nội động từ). 개발하다 là "tạo ra cái mới" và cần người làm + tân ngữ. 발전되어지다 và 바뀌어지다 đều là bị động kép thừa.
+    display_answer: 인공지능이 발전하면서 많은 일이 바뀌었다.
+
+  - key: ko:exercise:science-tech-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:julida-neullida
+    prompt:
+      stem: "Bạn tóm tắt số liệu: lượng phát thải khí nhà kính năm ngoái đã tự giảm 5% (không nói ai làm). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c5r, text: 지난해 온실가스 배출량이 5% 줄었다., lang: ko }
+        - { id: x8k, text: 지난해 온실가스 배출량이 5% 줄였다., lang: ko }
+        - { id: j1p, text: 지난해 온실가스 배출량을 5% 줄었다., lang: ko }
+        - { id: u6d, text: 지난해 온실가스 배출량이 5% 줄여졌다., lang: ko }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: Lượng phát thải là chủ ngữ tự thay đổi nên dùng 줄다 → 줄었다. 줄였다 cần người làm và tân ngữ; 배출량을 줄었다 lẫn trợ từ; 줄여졌다 là bị động không cần thiết.
+    display_answer: 지난해 온실가스 배출량이 5% 줄었다.
+
+  - key: ko:exercise:science-tech-wb-allyeojida
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:allyeojida
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chất này được biết là không có hại cho cơ thể người.\""
+      tokens:
+        - { id: y4, text: 알려져 있다 }
+        - { id: y2, text: 인체에 }
+        - { id: y6, text: 알려지어져 있다 }
+        - { id: y3, text: 해가 없는 것으로 }
+        - { id: y1, text: 이 물질은 }
+    answer:
+      orders:
+        - [y1, y2, y3, y4]
+    explanation:
+      vi: Mẫu cố định -(으)ㄴ/는 것으로 알려져 있다 "được biết là". 알려지어져 là bị động kép, sai.
+    display_answer: 이 물질은 인체에 해가 없는 것으로 알려져 있다.
+
+  - key: ko:exercise:science-tech-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:balkyeojida
+    prompt:
+      source_text: 연구 결과 잠이 부족하면 기억력이 떨어진다는 사실이 밝혀졌다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu đã chứng minh rằng nếu thiếu ngủ thì trí nhớ sẽ giảm sút.
+        - Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ giảm.
+        - Kết quả nghiên cứu cho thấy thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu cho thấy nếu thiếu ngủ thì trí nhớ sẽ giảm sút.
+        - Kết quả nghiên cứu cho thấy thiếu ngủ làm giảm trí nhớ.
+        - Nghiên cứu đã làm rõ rằng thiếu ngủ thì trí nhớ giảm sút.
+        - Nghiên cứu đã chứng minh rằng thiếu ngủ làm giảm trí nhớ.
+        - Kết quả nghiên cứu đã làm rõ sự thật là thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu đã chỉ ra rằng thiếu ngủ thì trí nhớ giảm sút.
+        - Kết quả nghiên cứu đã chỉ ra rằng thiếu ngủ làm giảm trí nhớ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kết quả nghiên cứu cho thấy ngủ nhiều thì trí nhớ giảm sút.
+        feedback_vi: 잠이 부족하면 là "nếu thiếu ngủ", không phải "ngủ nhiều".
+        error_tag: meaning_reversed
+      - answer: Kết quả nghiên cứu cho thấy thiếu ngủ thì trí nhớ tăng lên.
+        feedback_vi: 떨어지다 là "giảm, sụt", không phải "tăng".
+        error_tag: meaning_reversed
+    explanation:
+      vi: 연구 결과 = kết quả nghiên cứu; -다는 사실이 밝혀졌다 = đã chứng minh/làm rõ (sự thật) rằng…; 기억력이 떨어지다 = trí nhớ giảm sút.
+    display_answer: Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ giảm sút.

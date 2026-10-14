@@ -1,0 +1,398 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:rhetorical-devices
+order_index: 2
+level: c1
+title:
+  vi: Biện pháp tu từ & câu nhấn mạnh trong bài nói
+objectives:
+  - vi: Nhận ra và dùng ba biện pháp tu từ phổ biến - bộ ba (tricolon), câu hỏi tu từ và phép đối.
+  - vi: Tạo đối lập với not X but Y, Far from…, The question is not whether… but….
+  - vi: Nhấn mạnh bằng câu chẻ It is precisely… that…, All we need is… và Let us not forget….
+estimated_minutes: 20
+skills: [speaking, grammar, writing]
+prerequisites: [en:lesson:signposting-presentations]
+items:
+  - item: en:item:rhetorical-device
+  - item: en:item:tricolon
+  - item: en:item:rhetorical-question
+  - item: en:item:antithesis
+  - item: en:item:not-x-but-y
+  - item: en:item:the-question-is-not-whether
+  - item: en:item:far-from
+  - item: en:item:it-is-precisely-that
+  - item: en:item:all-we-need-is
+  - item: en:item:let-us-not-forget
+  - item: en:item:it-cleft
+    role: reuse
+  - item: en:item:what-cleft
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Các bài diễn văn được nhớ lâu thường dùng vài biện pháp tu từ đơn giản nhưng đặt đúng chỗ. Sau bài này, bạn biết cách làm một ý "đọng lại" trong đầu người nghe mà không cần nói to hay lặp lại "very important".
+  - type: explain
+    text:
+      vi: Bộ ba (tricolon) - liệt kê ba ý cùng cấu trúc, ý cuối mạnh nhất - faster, cheaper and far easier to use. Câu hỏi tu từ - hỏi để dẫn dắt rồi tự trả lời - So why does this matter? Because…. Tiếng Việt cũng có lối nói này ("Vì sao ư? Vì…"), nên bạn chỉ cần chú ý trật tự câu hỏi tiếng Anh.
+  - type: explain
+    text:
+      vi: Phép đối (antithesis) đặt hai ý trái ngược trong cấu trúc song song - not X but Y; Far from + V-ing (không những không… mà còn ngược lại); The question is not whether… but how/when… chuyển trọng tâm tranh luận sang điều bạn muốn.
+  - type: explain
+    text:
+      vi: Câu chẻ It is… that (đã học ở unit 1) thêm precisely để nhấn mạnh tuyệt đối - It is precisely because… that…, giống "Chính vì… mà…". All we need is… / All you have to do is… nhấn mạnh rằng chỉ cần một điều; Let us not forget that… nhắc khán giả một sự thật có lợi cho bạn.
+  - type: deep_explain
+    text:
+      vi: Biện pháp tu từ hiệu quả nhất khi dùng ít - một bộ ba ở phần mở đầu, một phép đối ở phần kết. Ba ý trong tricolon phải song song về ngữ pháp (ba tính từ, ba động từ, ba mệnh đề); nếu không, nhịp câu bị gãy. Sau whether/how trong The question is not whether… but how…, dùng trật tự câu kể, giống câu hỏi gián tiếp.
+  - type: example
+    target: We came with a plan, we worked through the difficulties, and we delivered on every promise.
+    target_lang: en
+    translation:
+      vi: Chúng tôi đến với một kế hoạch, vượt qua mọi khó khăn và thực hiện mọi lời hứa.
+    note:
+      vi: Tricolon - ba mệnh đề song song (we came / we worked / we delivered), vế cuối dài và mạnh nhất.
+  - type: example
+    target: Is this the cheapest option? No. Is it the safest? Absolutely.
+    target_lang: en
+    translation:
+      vi: Đây có phải phương án rẻ nhất không? Không. Có phải là an toàn nhất không? Chắc chắn rồi.
+    note:
+      vi: Hai câu hỏi tu từ tự trả lời, tạo đối lập giữa giá và độ an toàn.
+  - type: example
+    target: Far from being a cost, training is an investment in our future.
+    target_lang: en
+    translation:
+      vi: Đào tạo không phải là chi phí, mà ngược lại, là khoản đầu tư cho tương lai của chúng ta.
+    note:
+      vi: Far from being X phủ nhận mạnh cách nhìn X để đưa ra cách nhìn ngược lại.
+  - type: example
+    target: It is precisely because our competitors are cutting prices that we should focus on quality.
+    target_lang: en
+    translation:
+      vi: Chính vì đối thủ đang giảm giá nên chúng ta càng phải tập trung vào chất lượng.
+    note:
+      vi: It is precisely because… that… - vế that không lặp lại so.
+  - type: common_mistake
+    wrong: Our product is faster, cheaper and it is easy to use.
+    right: Our product is faster, cheaper and easier to use.
+    target_lang: en
+    note:
+      vi: Ba ý của bộ ba phải cùng dạng - ba tính từ so sánh hơn. Chen một mệnh đề vào làm gãy nhịp.
+  - type: common_mistake
+    wrong: It is precisely because the market is changing that so we must act now.
+    right: It is precisely because the market is changing that we must act now.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "Chính vì… nên…", nhưng tiếng Anh đã có that nối hai vế; thêm so là thừa.
+  - type: common_mistake
+    wrong: The question is not whether can we do it, but how fast can we do it.
+    right: The question is not whether we can do it, but how fast we can do it.
+    target_lang: en
+    note:
+      vi: Sau whether/how ở đây là câu hỏi gián tiếp nên giữ trật tự câu kể - we can, không đảo can we.
+  - type: summary
+    points:
+      - vi: Tricolon - ba ý song song, ý cuối mạnh nhất.
+      - vi: Câu hỏi tu từ - So why does this matter? Because…; không lạm dụng.
+      - vi: Đối lập - not X but Y; Far from + V-ing/adj; The question is not whether… but how/when… (trật tự câu kể).
+      - vi: Nhấn mạnh - It is precisely + X + that…; All we need is…; Let us not forget that….
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:rhetoric-mcq-tricolon
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:tricolon
+    prompt:
+      stem: Câu nào là một bộ ba (tricolon) đúng chuẩn - ba ý song song về ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: a6r, text: "This plan will save time, cut costs and protect jobs.", lang: en }
+        - { id: e2k, text: "This plan will save time, cheaper costs and jobs are protected.", lang: en }
+        - { id: i8m, text: "This plan will save time and it is good.", lang: en }
+        - { id: o4w, text: "This plan, which saves time, will be discussed tomorrow.", lang: en }
+    answer:
+      correct_option_id: a6r
+    explanation:
+      vi: Save time, cut costs, protect jobs - ba cụm động từ + tân ngữ cùng cấu trúc. Phương án thứ hai trộn động từ, tính từ và câu bị động nên mất tính song song; hai câu còn lại không có ba ý.
+    display_answer: "This plan will save time, cut costs and protect jobs."
+
+  - key: en:exercise:rhetoric-listen-far-from
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:far-from
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Far from slowing us down, the new rules have made the whole team more efficient."
+      options:
+        - { id: l3b, text: "Quy định mới không hề làm chậm mà còn giúp cả nhóm làm việc hiệu quả hơn.", lang: vi }
+        - { id: s7d, text: "Quy định mới làm cả nhóm chậm lại và kém hiệu quả.", lang: vi }
+        - { id: w1n, text: "Quy định mới ở rất xa nên chưa ảnh hưởng đến nhóm.", lang: vi }
+        - { id: q9f, text: "Nhóm làm việc hiệu quả hơn dù quy định mới làm mọi việc chậm lại một chút.", lang: vi }
+    answer:
+      correct_option_id: l3b
+    explanation:
+      vi: Far from + V-ing phủ nhận hoàn toàn ý sau nó (slowing us down) rồi đưa ra điều ngược lại. Far ở đây không chỉ khoảng cách.
+    display_answer: "Quy định mới không hề làm chậm mà còn giúp cả nhóm làm việc hiệu quả hơn."
+
+  - key: en:exercise:rhetoric-mcq-rhetorical-question
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:rhetorical-question
+    prompt:
+      stem: "Diễn giả nói: \"Who among us hasn't sent an email to the wrong person?\" rồi tiếp tục bài nói. Câu hỏi này dùng để làm gì?"
+      stem_lang: vi
+      options:
+        - { id: g5t, text: "Tạo sự đồng cảm - ai cũng từng mắc lỗi này, không cần ai trả lời.", lang: vi }
+        - { id: n8y, text: "Yêu cầu khán giả giơ tay để diễn giả đếm số người.", lang: vi }
+        - { id: d3c, text: "Hỏi xem ai đã gửi nhầm email cho diễn giả.", lang: vi }
+        - { id: m0z, text: "Kiểm tra xem khán giả có hiểu tiếng Anh không.", lang: vi }
+    answer:
+      correct_option_id: g5t
+    explanation:
+      vi: Đây là câu hỏi tu từ - câu trả lời ngầm hiểu là "không ai cả", nên diễn giả không chờ trả lời. Nó kéo khán giả về phía người nói trước khi vào vấn đề.
+    display_answer: "Tạo sự đồng cảm - ai cũng từng mắc lỗi này, không cần ai trả lời."
+
+  - key: en:exercise:rhetoric-fill-precisely-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:it-is-precisely-that
+    prompt:
+      template: "It is {{b1}} because the risks are high {{b2}} we need a clear plan."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Chính vì rủi ro cao nên chúng ta cần một kế hoạch rõ ràng."
+        - "Gợi ý: ô 1 là trạng từ nghĩa \"chính xác là\" (p…); ô 2 là từ nối của câu chẻ It is… ___."
+    answer:
+      blanks:
+        b1: [precisely, exactly]
+        b2: [that]
+    known_wrong:
+      - answer: so
+        feedback_vi: Câu chẻ It is… nối bằng that; "nên" của tiếng Việt không chuyển thành so.
+        error_tag: cleft_that
+      - answer: which
+        feedback_vi: Câu chẻ nhấn mạnh trạng ngữ (because…) luôn dùng that, không dùng which.
+        error_tag: cleft_that
+      - answer: precise
+        feedback_vi: Cần trạng từ precisely, không phải tính từ precise.
+        error_tag: word_form
+    explanation:
+      vi: It is precisely because… that… = Chính vì… nên…. Precisely (hoặc exactly) nhấn mạnh lý do; that là từ nối bắt buộc của câu chẻ.
+    display_answer: It is precisely because the risks are high that we need a clear plan.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:rhetoric-fill-contrast
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:not-x-but-y
+    prompt:
+      template: "All we need {{b1}} two more engineers. The problem is not the budget {{b2}} the timeline. Far from {{b3}} (help) us, the delay has cost us a client."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [is]
+        b2: [but]
+        b3: [helping]
+    known_wrong:
+      - answer: are
+        feedback_vi: Chủ ngữ là All we need (điều duy nhất ta cần), chia số ít - is.
+        error_tag: subject_verb_agreement
+      - answer: and
+        feedback_vi: Cấu trúc đối lập là not X but Y.
+        error_tag: not_but
+      - answer: help
+        feedback_vi: Sau giới từ from là V-ing - far from helping.
+        error_tag: verb_form
+      - answer: to help
+        feedback_vi: Sau far from là V-ing, không dùng to + V.
+        error_tag: verb_form
+    explanation:
+      vi: All we need is… chia số ít vì All nghĩa là "điều duy nhất". Not X but Y tạo đối lập. Far from + V-ing nghĩa là "không những không… mà ngược lại".
+    display_answer: All we need is two more engineers. The problem is not the budget but the timeline. Far from helping us, the delay has cost us a client.
+
+  - key: en:exercise:rhetoric-translate-not-but
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:not-x-but-y
+    prompt:
+      source_text: Vấn đề không nằm ở công nghệ mà ở con người.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The problem is not the technology but the people.
+        - The problem isn't the technology but the people.
+        - The problem is not technology but people.
+        - The problem lies not in the technology but in the people.
+        - The problem lies not in technology but in people.
+        - The problem is not with the technology but with the people.
+        - The issue is not the technology but the people.
+        - The issue isn't the technology but the people.
+        - The issue lies not in the technology but in the people.
+        - The problem is not the technology, it's the people.
+        - The problem isn't the technology, it's the people.
+        - The problem is not the technology; it is the people.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The problem is not the technology and the people.
+        feedback_vi: Đối lập "không phải… mà là…" dùng not… but…, không dùng and.
+        error_tag: not_but
+      - answer: The problem is not lie in technology but in people.
+        feedback_vi: Không trộn is với lie; dùng The problem lies not in… hoặc The problem is not….
+        error_tag: verb_form
+    explanation:
+      vi: Not X but Y phủ nhận một cách hiểu rồi đưa ra cách hiểu đúng. Lies not in… but in… trang trọng hơn; It's not X, it's Y tự nhiên trong văn nói.
+    display_answer: The problem is not the technology but the people.
+
+  - key: en:exercise:rhetoric-translate-to-vi-precisely
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:it-is-precisely-that
+    prompt:
+      source_text: It is precisely this lack of trust that worries investors.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chính sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.
+        - Chính sự thiếu niềm tin này làm các nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này khiến các nhà đầu tư lo ngại.
+        - Chính sự thiếu tin tưởng này làm các nhà đầu tư lo lắng.
+        - Chính sự thiếu niềm tin này khiến nhà đầu tư lo ngại.
+        - Chính sự thiếu niềm tin này khiến các nhà đầu tư lo lắng.
+        - Chính sự thiếu lòng tin này khiến các nhà đầu tư lo ngại.
+        - Chính sự thiếu lòng tin này làm nhà đầu tư lo lắng.
+        - Điều khiến các nhà đầu tư lo ngại chính là sự thiếu niềm tin này.
+        - Điều làm các nhà đầu tư lo lắng chính là sự thiếu tin tưởng này.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chính xác là sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.
+        feedback_vi: Precisely trong câu chẻ nghĩa là "chính", không cần dịch sát "chính xác là".
+        error_tag: literal_translation
+      - answer: Sự thiếu niềm tin này có thể khiến các nhà đầu tư lo ngại.
+        feedback_vi: Câu gốc khẳng định chắc chắn và nhấn mạnh (chính…), không có ý "có thể".
+        error_tag: meaning
+    explanation:
+      vi: It is precisely X that… tương đương "Chính X…" trong tiếng Việt. Bạn cũng có thể đảo thành "Điều khiến… chính là X".
+    display_answer: Chính sự thiếu niềm tin này khiến các nhà đầu tư lo ngại.
+
+  # ---------------- application ----------------
+  - key: en:exercise:rhetoric-order-question-is-not
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:the-question-is-not-whether
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Câu hỏi không phải là chúng ta có đủ khả năng chi trả hay không, mà là chúng ta có thể không làm hay không.\""
+      tokens:
+        - { id: r-but, text: but }
+        - { id: r-afford-not, text: whether we can afford not to }
+        - { id: r-if, text: if can we }
+        - { id: r-question, text: The question is not }
+        - { id: r-afford, text: whether we can afford it, }
+    answer:
+      orders:
+        - [r-question, r-afford, r-but, r-afford-not]
+    explanation:
+      vi: The question is not whether… but whether… tạo phép đối hai vế song song. If can we là token thừa - sai trật tự (cần we can) và lặp ý.
+    display_answer: The question is not whether we can afford it, but whether we can afford not to.
+
+  - key: en:exercise:rhetoric-mcq-closing
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:let-us-not-forget
+    prompt:
+      stem: Bạn cần một câu kết mạnh cho bài nói kêu gọi đầu tư vào đào tạo nhân viên. Câu nào hiệu quả và đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: k2p, text: "Let us not forget that our people are not our biggest cost but our greatest asset.", lang: en }
+        - { id: f7x, text: "Let's don't forget that our people are our biggest cost and our greatest asset.", lang: en }
+        - { id: b4q, text: "Don't forget about our people, they are very, very important.", lang: en }
+        - { id: z6h, text: "Let us not forgetting that our people are our greatest asset.", lang: en }
+    answer:
+      correct_option_id: k2p
+    explanation:
+      vi: Let us not forget + phép đối not X but Y tạo câu kết đáng nhớ. Let's don't sai ngữ pháp; very, very important yếu và thiếu tu từ; sau Let us not cần động từ nguyên mẫu, không phải V-ing.
+    display_answer: "Let us not forget that our people are not our biggest cost but our greatest asset."
+
+  - key: en:exercise:rhetoric-translate-all-we-need
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:all-we-need-is
+    prompt:
+      source_text: Tất cả những gì chúng ta cần là sự ủng hộ của các bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - All we need is your support.
+        - All that we need is your support.
+        - All we need is your backing.
+        - All that we need is your backing.
+        - All we need now is your support.
+        - The only thing we need is your support.
+        - All we need from you is your support.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: All we need are your support.
+        feedback_vi: All we need (điều duy nhất ta cần) chia số ít - is; support cũng là danh từ không đếm được.
+        error_tag: subject_verb_agreement
+      - answer: All of us need your support.
+        feedback_vi: All of us need nghĩa là "tất cả chúng ta đều cần", không nhấn mạnh "chỉ cần một điều".
+        error_tag: all_cleft
+      - answer: Everything we need is your support.
+        feedback_vi: Cấu trúc nhấn mạnh tự nhiên là All we need is…, không dùng everything.
+        error_tag: all_cleft
+    explanation:
+      vi: All (that) we need is + danh từ nhấn mạnh rằng chỉ cần một điều. Đây là câu chẻ với All, tương tự What we need is….
+    display_answer: All we need is your support.
+
+  - key: en:exercise:rhetoric-mcq-antithesis
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:antithesis
+    prompt:
+      stem: Câu nào dùng phép đối (antithesis) để nhấn mạnh ý "chúng ta cần hành động, không chỉ hứa hẹn"?
+      stem_lang: vi
+      options:
+        - { id: u5j, text: "What we need now is not more promises but more action.", lang: en }
+        - { id: c1v, text: "We need more promises and more action now.", lang: en }
+        - { id: h8s, text: "Promises are good, action is also good, everything is good.", lang: en }
+        - { id: t3l, text: "We need now not more promises, more action.", lang: en }
+    answer:
+      correct_option_id: u5j
+    explanation:
+      vi: What-cleft (What we need now is…) kết hợp not X but Y đặt promises đối lập với action trong cấu trúc song song. Các phương án khác hoặc không đối lập, hoặc thiếu but nên sai ngữ pháp.
+    display_answer: "What we need now is not more promises but more action."

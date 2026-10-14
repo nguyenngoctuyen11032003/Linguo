@@ -1,0 +1,427 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:daily-troubles-tenikka-beorida
+order_index: 4
+level: topik3
+title:
+  vi: "Xử lý sự cố: -(으)ㄹ 테니까, -아/어 버리다, -고 말다"
+objectives:
+  - vi: Hứa giúp hoặc đưa ra dự đoán kèm lời khuyên bằng -(으)ㄹ 테니까.
+  - vi: Diễn tả việc đã xong hẳn, kèm tiếc nuối bằng -아/어 버리다.
+  - vi: Nói "rốt cuộc vẫn…" về kết quả không mong muốn bằng 결국 -고 말았어요.
+  - vi: Báo mất đồ - 분실물 센터, 경찰서, 신고하다, 두고 내리다.
+estimated_minutes: 20
+skills: [grammar, speaking, vocabulary]
+prerequisites: [ko:lesson:daily-troubles-chatting]
+items:
+  - item: ko:item:gram-eul-tenikka
+  - item: ko:item:gram-a-beorida
+  - item: ko:item:gram-go-malda
+  - item: ko:item:bunsilmul-senteo
+  - item: ko:item:singohada
+  - item: ko:item:gyeongchalseo
+  - item: ko:item:geokjeongdoeda
+  - item: ko:item:gyeolguk
+  - item: ko:item:ijeobeorida
+  - item: ko:item:dugo-naerida
+  - item: ko:item:jigabeul-ireobeorida
+    role: reuse
+  - item: ko:item:hyudaepon
+    role: reuse
+  - item: ko:item:nochida
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trấn an người khác khi họ mất đồ ("tôi sẽ gọi giúp, bạn đừng lo"), kể lại việc đã lỡ mất với chút tiếc nuối, và hướng dẫn người khác đi báo mất đồ.
+  - type: explain
+    text:
+      vi: V-(으)ㄹ 테니까 có hai cách dùng. Với "tôi" - tôi sẽ làm A, nên bạn hãy B (제가 전화할 테니까 기다리세요); với người, vật khác - chắc là A, nên hãy B (길이 막힐 테니까 일찍 출발하세요). Vế sau gần như luôn là lời khuyên, đề nghị, rủ rê.
+  - type: explain
+    text:
+      vi: V-아/어 버리다 là "…mất rồi, …hết rồi" - việc đã xong hẳn, kèm tiếc nuối hoặc nhẹ nhõm - 버스가 떠나 버렸어요. 잃어버리다 (làm mất) và 잊어버리다 (quên) đã thành một từ nên viết liền.
+  - type: explain
+    text:
+      vi: V-고 말았어요 là "rốt cuộc vẫn…" - dù đã cố tránh, kết quả không mong muốn vẫn xảy ra - 결국 울고 말았어요. So với -아/어 버리다, -고 말다 nhấn sự cố gắng thất bại hơn là sự hoàn tất.
+  - type: deep_explain
+    text:
+      vi: Đừng nhầm -(으)ㄹ 테니까 với -(으)ㄹ 텐데 - -(으)ㄹ 텐데 nêu một suy đoán làm nền (…chắc là…, vậy mà / thì…), còn -(으)ㄹ 테니까 luôn dẫn tới lời khuyên, đề nghị. Tiếng Việt chỉ có "mất rồi" cho cả -아/어 버리다 lẫn -고 말다; hãy nghĩ - nếu có 결국 và sự cố gắng tránh, -고 말았어요 là lựa chọn tự nhiên hơn. Khi kể chuyện hằng ngày, -아/어 버렸어요 phổ biến hơn trong văn nói.
+  - type: example
+    target: 제가 분실물 센터에 전화해 볼 테니까 걱정하지 마세요.
+    target_lang: ko
+    translation:
+      vi: Tôi sẽ thử gọi cho trung tâm đồ thất lạc, bạn đừng lo.
+    note:
+      vi: Chủ ngữ "tôi" → -(으)ㄹ 테니까 = ý định của người nói.
+  - type: example
+    target: 퇴근 시간이라서 길이 막힐 테니까 지하철을 타세요.
+    target_lang: ko
+    translation:
+      vi: Đang giờ tan tầm, chắc đường tắc đấy, bạn đi tàu điện ngầm đi.
+    note:
+      vi: Chủ ngữ khác (길이) → -(으)ㄹ 테니까 = dự đoán của người nói.
+  - type: example
+    target: 택시에 지갑을 두고 내려 버렸어요.
+    target_lang: ko
+    translation:
+      vi: Tôi để quên ví trên taxi mất rồi.
+    note:
+      vi: -아/어 버렸어요 thêm cảm giác tiếc nuối.
+  - type: example
+    target: 지갑을 잃어버려서 경찰서에 신고했어요. 카드가 다 들어 있어서 너무 걱정돼요.
+    target_lang: ko
+    translation:
+      vi: Tôi làm mất ví nên đã trình báo ở đồn cảnh sát. Thẻ đều ở trong đó nên tôi lo quá.
+  - type: example
+    target: 30분이나 뛰어갔는데 결국 기차를 놓치고 말았어요.
+    target_lang: ko
+    translation:
+      vi: Chạy suốt 30 phút mà rốt cuộc tôi vẫn lỡ chuyến tàu.
+    note:
+      vi: Đã cố gắng nhưng không tránh được → 결국 -고 말았어요.
+  - type: common_mistake
+    wrong: 제가 찾아볼 테니까 걱정하지 않았어요.
+    right: 제가 찾아볼 테니까 걱정하지 마세요.
+    target_lang: ko
+    note:
+      vi: Vế sau của -(으)ㄹ 테니까 thường là lời khuyên, đề nghị (-(으)세요, -지 마세요, -(으)ㅂ시다), không phải câu kể quá khứ.
+  - type: common_mistake
+    wrong: 비밀번호를 잃어버렸어요.
+    right: 비밀번호를 잊어버렸어요.
+    target_lang: ko
+    note:
+      vi: Hai từ đọc gần giống nhau - [이러버리다] và [이저버리다]. Quên thông tin là 잊어버리다; mất đồ vật là 잃어버리다.
+  - type: common_mistake
+    wrong: 결국 버스를 놓치고 말아요.
+    right: 결국 버스를 놓치고 말았어요.
+    target_lang: ko
+    note:
+      vi: Với nghĩa "rốt cuộc vẫn…", -고 말다 dùng ở quá khứ (말았어요). Dạng -고 말겠어요 lại có nghĩa là quyết tâm "nhất định sẽ…".
+  - type: summary
+    points:
+      - vi: V-(으)ㄹ 테니까 - (tôi sẽ / chắc là) A, nên hãy B; vế sau là khuyên, đề nghị.
+      - vi: V-아/어 버리다 - …mất rồi, xong hẳn, kèm tiếc nuối; 잃어버리다, 잊어버리다 viết liền.
+      - vi: 결국 V-고 말았어요 - rốt cuộc vẫn… dù đã cố tránh.
+      - vi: Mất đồ - 분실물 센터, 경찰서에 신고하다, 두고 내리다; cảm xúc - 걱정되다 (lo), 걱정하지 마세요 (đừng lo).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dt-tenikka-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-eul-tenikka
+    prompt:
+      stem: "제가 분실물 센터에 전화할 테니까 여기서 기다리세요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: f3r, text: "Tôi sẽ gọi cho trung tâm đồ thất lạc, bạn đợi ở đây nhé.", lang: vi }
+        - { id: o8m, text: Tôi đã gọi cho trung tâm đồ thất lạc nhưng phải đợi., lang: vi }
+        - { id: c2w, text: Nếu tôi gọi cho trung tâm đồ thất lạc thì bạn sẽ phải đợi., lang: vi }
+        - { id: l6s, text: "Trung tâm đồ thất lạc sẽ gọi cho bạn, bạn đợi nhé.", lang: vi }
+    answer:
+      correct_option_id: f3r
+    explanation:
+      vi: Chủ ngữ là 제가 nên -(으)ㄹ 테니까 thể hiện ý định của người nói ("tôi sẽ gọi"), kèm lời đề nghị 기다리세요. Không phải chuyện đã qua, cũng không phải "nếu".
+    display_answer: Tôi sẽ gọi cho trung tâm đồ thất lạc, bạn đợi ở đây nhé.
+
+  - key: ko:exercise:dt-beorida-listen-bus-left
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gram-a-beorida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 버스가 벌써 떠나 버렸어요.
+      options:
+        - { id: n5k, text: Xe buýt đã chạy mất rồi., lang: vi }
+        - { id: y1h, text: Xe buýt sắp chạy rồi., lang: vi }
+        - { id: g7p, text: Xe buýt vẫn chưa đến., lang: vi }
+        - { id: b3t, text: Tôi suýt lỡ xe buýt., lang: vi }
+    answer:
+      correct_option_id: n5k
+    explanation:
+      vi: 떠나 버렸어요 là "đã rời đi mất rồi" - việc đã xong hẳn, kèm tiếc nuối; 벌써 là "đã… rồi". "Suýt lỡ" sẽ là 놓칠 뻔했어요.
+    display_answer: Xe buýt đã chạy mất rồi.
+
+  - key: ko:exercise:dt-gomalda-mcq-natural
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-go-malda
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi đã cố nhịn nhưng rốt cuộc vẫn bật khóc.\""
+      stem_lang: vi
+      options:
+        - { id: x2j, text: 참으려고 했지만 결국 울고 말았어요., lang: ko }
+        - { id: e9v, text: 참으려고 했지만 결국 울고 말아요., lang: ko }
+        - { id: h4c, text: 참으려고 했지만 결국 울 뻔했어요., lang: ko }
+        - { id: w7n, text: 참으려고 했지만 결국 울고 말겠어요., lang: ko }
+    answer:
+      correct_option_id: x2j
+    explanation:
+      vi: Kết quả không mong muốn đã xảy ra dù đã cố → 결국 -고 말았어요 (quá khứ). 울 뻔했어요 là "suýt khóc" (không khóc); 말겠어요 mang nghĩa quyết tâm.
+    display_answer: 참으려고 했지만 결국 울고 말았어요.
+
+  - key: ko:exercise:dt-tenikka-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:singohada
+    prompt:
+      template: "제가 경찰서에 {{b1}} 테니까 걱정하지 마세요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi sẽ trình báo với đồn cảnh sát, bạn đừng lo."
+        - "Gợi ý: 신고하다 + -ㄹ."
+    answer:
+      blanks:
+        b1: [신고할]
+    known_wrong:
+      - answer: 신고한
+        feedback_vi: Trước 테니까 luôn là dạng -(으)ㄹ - 신고할.
+        error_tag: tenikka_form
+      - answer: 신고했을
+        feedback_vi: Bạn đang nói ý định sắp làm, nên không gắn quá khứ - 신고할.
+        error_tag: tenikka_past
+    explanation:
+      vi: 신고하다 không có patchim nên thêm ㄹ → 신고할 테니까. Chủ ngữ 제가 → ý định "tôi sẽ", kèm lời trấn an 걱정하지 마세요.
+    display_answer: 제가 경찰서에 신고할 테니까 걱정하지 마세요.
+
+  - key: ko:exercise:dt-gomalda-wb-fell
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gyeolguk
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Rốt cuộc tôi vẫn bị ngã.\""
+      tokens:
+        - { id: t3, text: 말았어요 }
+        - { id: t5, text: 넘어질 }
+        - { id: t2, text: 넘어지고 }
+        - { id: t1, text: 결국 }
+        - { id: t4, text: 버렸어요 }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: 결국 + V-고 말았어요. 넘어질 cần đi với 뻔했어요 (suýt ngã); 버렸어요 phải đi sau dạng -아/어 (넘어져 버렸어요), không đi sau 넘어지고.
+    display_answer: 결국 넘어지고 말았어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dt-beorida-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-a-beorida
+    prompt:
+      template: "(Em tôi ăn sạch cái bánh của tôi mất rồi.) 동생이 제 케이크를 다 {{b1}} 버렸어요. (Đã cẩn thận mà rốt cuộc tôi vẫn làm rơi điện thoại.) 조심했는데 결국 휴대폰을 {{b2}} 말았어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [먹어]
+        b2: [떨어뜨리고]
+    known_wrong:
+      - answer: 먹고
+        feedback_vi: 버리다 đi sau dạng -아/어 - 먹어 버렸어요. -고 đi với 말다.
+        error_tag: beorida_form
+      - answer: 떨어뜨려
+        feedback_vi: 말다 đi sau -고 - 떨어뜨리고 말았어요. -아/어 đi với 버리다.
+        error_tag: gomalda_form
+      - answer: 떨어지고
+        feedback_vi: Có tân ngữ 휴대폰을 nên cần 떨어뜨리다 (làm rơi), không phải 떨어지다 (tự rơi).
+        error_tag: vocab_drop
+    explanation:
+      vi: -아/어 버리다 - 먹다 → 먹어 버렸어요. -고 말다 - 떨어뜨리다 → 떨어뜨리고 말았어요. Đừng tráo hai đuôi nối -아/어 và -고.
+    display_answer: 동생이 제 케이크를 다 먹어 버렸어요. 조심했는데 결국 휴대폰을 떨어뜨리고 말았어요.
+
+  - key: ko:exercise:dt-tenikka-translate-dont-worry
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-eul-tenikka
+    prompt:
+      source_text: Tôi sẽ tìm thử giúp, bạn đừng lo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제가 찾아볼 테니까 걱정하지 마세요.
+        - 제가 찾아 볼 테니까 걱정하지 마세요.
+        - 제가 찾아 드릴 테니까 걱정하지 마세요.
+        - 제가 찾아드릴 테니까 걱정하지 마세요.
+        - 제가 찾아볼 테니까 걱정 마세요.
+        - 제가 찾을 테니까 걱정하지 마세요.
+        - 내가 찾아볼 테니까 걱정하지 마세요.
+        - 제가 찾아볼게요. 걱정하지 마세요.
+    known_wrong:
+      - answer: 제가 찾아볼 테니까 걱정되지 마세요.
+        feedback_vi: '"Đừng lo" là 걱정하지 마세요; 걱정되다 không đi với -지 마세요.'
+        error_tag: geokjeong_form
+      - answer: 제가 찾아볼 텐데 걱정하지 마세요.
+        feedback_vi: Ý định của mình + lời khuyên → -(으)ㄹ 테니까, không dùng -(으)ㄹ 텐데.
+        error_tag: tenikka_vs_tende
+      - answer: 제가 찾아봤으니까 걱정하지 마세요.
+        feedback_vi: Câu gốc nói việc bạn sắp làm, không phải đã làm.
+        error_tag: tense_intention
+    explanation:
+      vi: Ý định của "tôi" + lời trấn an → V-(으)ㄹ 테니까 + 걱정하지 마세요. 찾아보다 (tìm thử) → 찾아볼 테니까.
+    display_answer: 제가 찾아볼 테니까 걱정하지 마세요.
+
+  - key: ko:exercise:dt-beorida-translate-umbrella
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dugo-naerida
+    prompt:
+      source_text: Tôi để quên ô trên taxi mất rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 택시에 우산을 두고 내려 버렸어요.
+        - 택시에 우산을 두고 내려버렸어요.
+        - 택시에 우산을 두고 내렸어요.
+        - 제가 택시에 우산을 두고 내려 버렸어요.
+        - 저는 택시에 우산을 두고 내려 버렸어요.
+        - 우산을 택시에 두고 내려 버렸어요.
+        - 우산을 택시에 두고 내렸어요.
+    known_wrong:
+      - answer: 택시에 우산을 잃어버려 버렸어요.
+        feedback_vi: Để quên khi xuống xe là 두고 내리다; 잃어버리다 đã có 버리다 bên trong, không thêm nữa.
+        error_tag: vocab_leave_behind
+      - answer: 택시에 우산을 잊어버렸어요.
+        feedback_vi: 잊어버리다 là quên (thông tin). Để quên đồ trên xe là 두고 내리다.
+        error_tag: vocab_lose_forget
+      - answer: 택시에 우산을 두고 내리고 말아요.
+        feedback_vi: Chuyện đã xảy ra nên dùng quá khứ; ở đây -아/어 버렸어요 tự nhiên hơn.
+        error_tag: tense_result
+    explanation:
+      vi: 두고 내리다 = để quên rồi xuống xe; 내리다 + -어 버렸어요 → 내려 버렸어요 (mất rồi). Nơi để quên dùng 에 - 택시에.
+    display_answer: 택시에 우산을 두고 내려 버렸어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dt-tenikka-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-eul-tenikka
+    prompt:
+      stem: Đồng nghiệp sắp ra sân bay vào giờ tan tầm. Bạn khuyên "Chắc đường tắc đấy, chị đi tàu điện ngầm đi". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: q5x, text: 길이 막힐 테니까 지하철을 타세요., lang: ko }
+        - { id: z1g, text: 길이 막히는 바람에 지하철을 타세요., lang: ko }
+        - { id: r8b, text: 길이 막혔더니 지하철을 타세요., lang: ko }
+        - { id: s6y, text: 길이 막힐 뻔해서 지하철을 타세요., lang: ko }
+    answer:
+      correct_option_id: q5x
+    explanation:
+      vi: Dự đoán (chắc đường tắc) + lời khuyên → -(으)ㄹ 테니까. -는 바람에 không đi với lời khuyên; -았/었더니 kể chuyện đã qua; 막힐 뻔해서 là "suýt tắc", vô nghĩa.
+    display_answer: 길이 막힐 테니까 지하철을 타세요.
+
+  - key: ko:exercise:dt-tenikka-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:geokjeongdoeda
+    prompt:
+      source_text: 지갑을 잃어버려서 경찰서에 신고했어요. 너무 걱정돼요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi làm mất ví nên đã trình báo ở đồn cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã trình báo với đồn cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã báo cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã báo đồn cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã trình báo ở đồn cảnh sát. Lo quá.
+        - Tôi làm mất ví nên đã báo cảnh sát. Lo quá.
+        - Tôi bị mất ví nên đã trình báo ở đồn cảnh sát. Tôi lo quá.
+        - Tôi bị mất ví nên đã báo cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã khai báo ở đồn cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã trình báo ở đồn cảnh sát. Tôi rất lo.
+        - Tôi làm mất ví nên đã báo cảnh sát. Tôi lo lắng quá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi quên ví nên đã trình báo ở đồn cảnh sát. Tôi lo quá.
+        feedback_vi: 잃어버리다 là "làm mất", không phải "quên" (잊어버리다).
+        error_tag: vocab_lose_forget
+      - answer: Tôi làm mất ví nên đã đến đồn cảnh sát. May quá.
+        feedback_vi: 신고했어요 là "đã trình báo"; 걱정돼요 là "lo", không phải "may".
+        error_tag: meaning_result
+    explanation:
+      vi: 잃어버려서 = làm mất nên; 경찰서에 신고했어요 = đã trình báo với đồn cảnh sát; 너무 걱정돼요 = lo quá.
+    display_answer: Tôi làm mất ví nên đã trình báo ở đồn cảnh sát. Tôi lo quá.
+
+  - key: ko:exercise:dt-gomalda-translate-train
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-go-malda
+    prompt:
+      source_text: Tôi đã chạy hết sức nhưng rốt cuộc vẫn lỡ chuyến tàu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 열심히 뛰었지만 결국 기차를 놓치고 말았어요.
+        - 열심히 뛰었는데 결국 기차를 놓치고 말았어요.
+        - 열심히 달렸지만 결국 기차를 놓치고 말았어요.
+        - 열심히 달렸는데 결국 기차를 놓치고 말았어요.
+        - 열심히 뛰었지만 결국 기차를 놓쳐 버렸어요.
+        - 열심히 뛰었는데 결국 기차를 놓쳐 버렸어요.
+        - 열심히 뛰어갔지만 결국 기차를 놓치고 말았어요.
+        - 최선을 다해 뛰었지만 결국 기차를 놓치고 말았어요.
+        - 저는 열심히 뛰었지만 결국 기차를 놓치고 말았어요.
+    known_wrong:
+      - answer: 열심히 뛰었지만 결국 기차를 놓칠 뻔했어요.
+        feedback_vi: 놓칠 뻔했어요 là "suýt lỡ" - nhưng câu gốc nói đã lỡ thật.
+        error_tag: ppeon_actual_event
+      - answer: 열심히 뛰었지만 결국 기차를 놓치고 말아요.
+        feedback_vi: Kết quả đã xảy ra nên dùng quá khứ - 말았어요.
+        error_tag: gomalda_tense
+      - answer: 열심히 뛰었지만 결국 기차를 놓쳐 말았어요.
+        feedback_vi: 말다 đi sau -고 - 놓치고 말았어요.
+        error_tag: gomalda_form
+    explanation:
+      vi: Đã cố (뛰었지만) mà kết quả xấu vẫn xảy ra → 결국 놓치고 말았어요. 놓쳐 버렸어요 cũng diễn tả được sự tiếc nuối.
+    display_answer: 열심히 뛰었지만 결국 기차를 놓치고 말았어요.
+
+  - key: ko:exercise:dt-beorida-mcq-forgot-password
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:ijeobeorida
+    prompt:
+      stem: Bạn gọi trung tâm chăm sóc khách hàng vì không đăng nhập được do quên mật khẩu. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: k9d, text: 비밀번호를 잊어버렸어요., lang: ko }
+        - { id: j4u, text: 비밀번호를 잃어버렸어요., lang: ko }
+        - { id: p1z, text: 비밀번호를 두고 내렸어요., lang: ko }
+        - { id: m6e, text: 비밀번호를 잊어버릴 테니까요., lang: ko }
+    answer:
+      correct_option_id: k9d
+    explanation:
+      vi: Quên thông tin (mật khẩu) là 잊어버리다. 잃어버리다 là làm mất đồ vật; 두고 내리다 là để quên đồ trên xe; 잊어버릴 테니까요 là dự đoán tương lai.
+    display_answer: 비밀번호를 잊어버렸어요.

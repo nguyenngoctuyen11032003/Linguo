@@ -1,0 +1,418 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:cause-effect-written
+order_index: 3
+level: topik5
+title:
+  vi: Nguyên nhân - kết quả - giải pháp trong văn viết
+objectives:
+  - vi: Diễn đạt nguyên nhân xấu bằng -(으)ㄴ/는 탓에 và nguy cơ bằng -(으)ㄹ 우려가 있다.
+  - vi: Diễn đạt phương thức và đóng góp bằng -(으)ㅁ으로써, -는 데(에) 기여하다, và sự phụ thuộc bằng N에 달려 있다.
+  - vi: Nhận ra chuỗi nguyên nhân → kết quả → giải pháp trong đoạn đọc TOPIK II (dạng câu 35–38) để tìm ý chính.
+estimated_minutes: 22
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:science-tech-passive]
+items:
+  - item: ko:item:gp-neun-tase
+  - item: ko:item:gp-l-uryeoga-itda
+  - item: ko:item:gp-eum-eurosseo
+  - item: ko:item:gp-neun-de-giyeohada
+  - item: ko:item:gp-e-dallyeo-itda
+  - item: ko:item:wonin
+  - item: ko:item:akhwadoeda
+  - item: ko:item:choraehada
+  - item: ko:item:bangjihada
+  - item: ko:item:hyogwa
+  - item: ko:item:gp-l-subakke-eopda
+    role: reuse
+  - item: ko:item:misemeonji
+    role: reuse
+  - item: ko:item:ilhoeyongpum
+    role: reuse
+  - item: ko:item:yeonghyang-michida
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc một đoạn văn khoa học - môi trường và chỉ ra được đâu là nguyên nhân, đâu là kết quả, đâu là giải pháp tác giả đề xuất.
+  - type: explain
+    text:
+      vi: -(으)ㄴ/는 탓에 là "tại vì", chỉ dùng khi kết quả xấu và thường hàm ý trách. Kết quả tốt dùng 덕분에; trung tính dùng 때문에.
+  - type: explain
+    text:
+      vi: -(으)ㄹ 우려가 있다 là "có nguy cơ, e rằng" - dự đoán điều xấu, rất hay gặp trong tin tức. Luôn dùng -(으)ㄹ trước 우려 vì nói về khả năng trong tương lai.
+  - type: explain
+    text:
+      vi: -(으)ㅁ으로써 là "bằng cách, thông qua việc" (phương tiện → kết quả); -는 데(에) 기여하다 là "góp phần vào việc"; N에 달려 있다 là "phụ thuộc vào". Ba mẫu này thường xuất hiện ở phần giải pháp của bài viết.
+  - type: deep_explain
+    text:
+      vi: Đoạn đọc TOPIK II (câu 35–38) thường đi theo chuỗi - hiện tượng → nguyên nhân (탓에, 때문에) → hậu quả (초래하다, 악화되다, 우려가 있다) → giải pháp (-(으)ㅁ으로써, 기여하다, 달려 있다, -아/어야 한다). Ý chính (주제) gần như luôn nằm ở phần giải pháp, thường sau 따라서, 그러므로 hoặc 결국. Đừng chọn đáp án chỉ nhắc lại hiện tượng hoặc một chi tiết số liệu.
+  - type: example
+    target: 일회용품을 많이 쓰는 탓에 쓰레기 문제가 갈수록 악화되고 있다. 이대로 가면 매립지가 부족해질 우려가 있다. 따라서 다회용기를 사용함으로써 쓰레기를 줄여야 한다.
+    target_lang: ko
+    translation:
+      vi: Vì dùng nhiều đồ dùng một lần nên vấn đề rác ngày càng trầm trọng. Cứ thế này thì có nguy cơ thiếu bãi chôn lấp. Do đó, chúng ta phải giảm rác bằng cách dùng hộp đựng tái sử dụng.
+    note:
+      vi: Đoạn ngắn đủ chuỗi - nguyên nhân (탓에) → hậu quả (우려가 있다) → giải pháp (따라서 … -(으)ㅁ으로써).
+  - type: example
+    target: 전기 자동차의 보급은 도시의 대기 오염을 줄이는 데 기여했다.
+    target_lang: ko
+    translation:
+      vi: Việc phổ cập ô tô điện đã góp phần giảm ô nhiễm không khí đô thị.
+    note:
+      vi: Trước 데 dùng định ngữ hiện tại -는; 기여하다 đi với 에 (데에, viết gọn 데).
+  - type: example
+    target: 기후 위기를 막을 수 있을지는 각국 정부의 의지에 달려 있다.
+    target_lang: ko
+    translation:
+      vi: Có ngăn được khủng hoảng khí hậu hay không phụ thuộc vào quyết tâm của chính phủ các nước.
+    note:
+      vi: -(으)ㄹ지는 … 에 달려 있다 - "có … hay không thì phụ thuộc vào …".
+  - type: example
+    target: 무분별한 개발은 생태계 파괴를 초래했으며, 이는 결국 인간에게도 영향을 미칠 수밖에 없다.
+    target_lang: ko
+    translation:
+      vi: Phát triển bừa bãi đã gây ra việc phá huỷ hệ sinh thái, và rốt cuộc điều này chắc chắn cũng sẽ ảnh hưởng đến con người.
+    note:
+      vi: 초래하다 + kết quả xấu; 이는 (điều này) nối chuỗi nhân quả sang câu sau.
+  - type: common_mistake
+    wrong: 열심히 공부한 탓에 시험에 합격했다.
+    right: 열심히 공부한 덕분에 시험에 합격했다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "vì" dùng chung cho tốt và xấu, nên người học dùng 탓에 tràn lan. 탓에 chỉ đi với kết quả xấu; kết quả tốt dùng 덕분에.
+  - type: common_mistake
+    wrong: 대중교통을 이용하므로써 탄소 배출을 줄일 수 있다.
+    right: 대중교통을 이용함으로써 탄소 배출을 줄일 수 있다.
+    target_lang: ko
+    note:
+      vi: Người học trộn -(으)므로 (vì) với -(으)ㅁ으로써 (bằng cách). Cấu trúc đúng là danh từ hoá -(으)ㅁ + 으로써 - 이용함으로써.
+  - type: common_mistake
+    wrong: 이 기술은 환경 보호를 기여했다.
+    right: 이 기술은 환경 보호에 기여했다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "góp phần (vào)" có thể bỏ "vào", nhưng 기여하다 luôn cần 에. Viết N에 기여하다 hoặc -는 데(에) 기여하다.
+  - type: summary
+    points:
+      - vi: -(으)ㄴ/는 탓에 · N 탓에 = tại vì (kết quả xấu); tốt → 덕분에.
+      - vi: -(으)ㄹ 우려가 있다 = có nguy cơ (điều xấu); 초래하다 = gây ra; 악화되다 = xấu đi; 방지하다 = ngăn ngừa.
+      - vi: -(으)ㅁ으로써 = bằng cách (khác -(으)므로 = vì).
+      - vi: -는 데(에) 기여하다 / N에 기여하다 = góp phần; N에 달려 있다 = phụ thuộc vào.
+      - vi: Đọc TOPIK - hiện tượng → nguyên nhân → hậu quả → giải pháp; ý chính thường ở giải pháp.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:cause-effect-mcq-tase
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gp-neun-tase
+    prompt:
+      stem: "Chọn từ đúng: 비가 오지 않은 ___ 올해 농사를 망쳤다. (Tại trời không mưa nên năm nay mất mùa.)"
+      stem_lang: vi
+      options:
+        - { id: d4h, text: 탓에, lang: ko }
+        - { id: k8w, text: 덕분에, lang: ko }
+        - { id: z3n, text: 대신에, lang: ko }
+        - { id: m6q, text: 반면에, lang: ko }
+    answer:
+      correct_option_id: d4h
+    explanation:
+      vi: Kết quả xấu (mất mùa) nên dùng 탓에. 덕분에 chỉ dùng khi kết quả tốt; 대신에 là "thay vì", 반면에 là "trái lại".
+    display_answer: 탓에
+
+  - key: ko:exercise:cause-effect-mcq-eurosseo
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-eum-eurosseo
+    prompt:
+      stem: "Câu 대중교통을 이용함으로써 탄소 배출을 줄일 수 있다 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: v2s, text: Bằng cách dùng phương tiện công cộng có thể giảm phát thải carbon., lang: vi }
+        - { id: l5b, text: Vì dùng phương tiện công cộng nên phát thải carbon tăng., lang: vi }
+        - { id: f9t, text: Mặc dù dùng phương tiện công cộng vẫn không giảm được carbon., lang: vi }
+        - { id: h1c, text: Phải giảm carbon thì mới dùng được phương tiện công cộng., lang: vi }
+    answer:
+      correct_option_id: v2s
+    explanation:
+      vi: -(으)ㅁ으로써 là "bằng cách" - dùng phương tiện công cộng là cách để giảm phát thải. Đừng nhầm với -(으)므로 (vì).
+    display_answer: Bằng cách dùng phương tiện công cộng có thể giảm phát thải carbon.
+
+  - key: ko:exercise:cause-effect-listen-uryeo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-l-uryeoga-itda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이대로 가면 해수면이 상승해 일부 섬이 사라질 우려가 있다.
+      options:
+        - { id: n4x, text: "Cứ thế này, mực nước biển dâng và một số hòn đảo có nguy cơ biến mất.", lang: vi }
+        - { id: s7g, text: "Mực nước biển đã dâng và một số hòn đảo đã biến mất.", lang: vi }
+        - { id: o3z, text: "Nhờ mực nước biển hạ xuống, một số hòn đảo xuất hiện trở lại.", lang: vi }
+        - { id: e6f, text: "Người dân lo lắng nhưng mực nước biển không thay đổi.", lang: vi }
+    answer:
+      correct_option_id: n4x
+    explanation:
+      vi: -(으)ㄹ 우려가 있다 là dự đoán điều xấu có thể xảy ra, chưa xảy ra - nên không phải "đã biến mất". 상승하다 là "dâng lên".
+    display_answer: "Cứ thế này, mực nước biển dâng và một số hòn đảo có nguy cơ biến mất."
+
+  - key: ko:exercise:cause-effect-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-e-dallyeo-itda
+    prompt:
+      template: "개인 정보가 유출될 {{b1}}가 있으므로 비밀번호를 자주 바꿔야 한다. 탄소 중립의 성공은 기업의 참여에 {{b2}} 있다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Vì có nguy cơ rò rỉ thông tin cá nhân nên phải thường xuyên đổi mật khẩu. Thành công của trung hoà carbon phụ thuộc vào sự tham gia của doanh nghiệp."
+        - "Gợi ý: \"nguy cơ, lo ngại\" - 우___; \"phụ thuộc vào\" - N에 ___ 있다."
+    answer:
+      blanks:
+        b1: [우려]
+        b2: [달려]
+    known_wrong:
+      - answer: 의존해
+        feedback_vi: 의존하다 là "dựa dẫm, lệ thuộc". Kết quả "phụ thuộc vào" điều kiện là 에 달려 있다.
+        error_tag: dallyeo_vs_uijon
+      - answer: 따라
+        feedback_vi: N에 따라 là "tuỳ theo" và không đi với 있다. "Phụ thuộc vào" là 에 달려 있다.
+        error_tag: dallyeo_vs_ttara
+      - answer: 걱정
+        feedback_vi: Văn tin tức dùng -(으)ㄹ 우려가 있다; 걱정이 있다 không phải cụm cố định.
+        error_tag: uryeo_form
+    explanation:
+      vi: -(으)ㄹ 우려가 있다 = có nguy cơ (điều xấu - rò rỉ thông tin). N에 달려 있다 = phụ thuộc vào N, giữ nguyên dạng 달려 있다.
+    display_answer: 개인 정보가 유출될 우려가 있으므로 비밀번호를 자주 바꿔야 한다. 탄소 중립의 성공은 기업의 참여에 달려 있다.
+
+  - key: ko:exercise:cause-effect-wb-giyeo
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-neun-de-giyeohada
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Việc phổ cập ô tô điện đã góp phần giảm ô nhiễm không khí.\""
+      tokens:
+        - { id: g3, text: 줄이는 데 }
+        - { id: g5, text: 줄이는 데를 }
+        - { id: g1, text: 전기 자동차의 보급은 }
+        - { id: g4, text: 기여했다 }
+        - { id: g2, text: 대기 오염을 }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+    explanation:
+      vi: 기여하다 đi với 에 (데에, viết gọn 데), không đi với 를 - nên 줄이는 데를 là sai. Tân ngữ của 줄이다 là 대기 오염을.
+    display_answer: 전기 자동차의 보급은 대기 오염을 줄이는 데 기여했다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:cause-effect-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-eum-eurosseo
+    prompt:
+      template: "(Nhóm nghiên cứu đã nâng độ tin cậy bằng cách lặp lại thí nghiệm.) 연구진은 실험을 반복{{b1}} 결과의 신뢰성을 높였다. (Phát triển bừa bãi đã gây ra việc phá huỷ hệ sinh thái.) 무분별한 개발은 생태계 파괴를 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [함으로써]
+        b2: [초래했다]
+    known_wrong:
+      - answer: 하므로써
+        feedback_vi: Không có dạng 하므로써. "Bằng cách" là danh từ hoá -(으)ㅁ + 으로써 - 함으로써.
+        error_tag: eurosseo_form
+      - answer: 하므로
+        feedback_vi: -(으)므로 là "vì", không phải "bằng cách". Dùng 함으로써.
+        error_tag: eurosseo_vs_eumuro
+      - answer: 초래되었다
+        feedback_vi: Có tân ngữ 파괴를 nên dùng chủ động 초래했다.
+        error_tag: passive_unneeded
+    explanation:
+      vi: 반복하다 → 반복함 (danh từ hoá) + 으로써 = 반복함으로써 "bằng cách lặp lại". 초래하다 + tân ngữ 을/를, quá khứ văn viết 초래했다.
+    display_answer: 연구진은 실험을 반복함으로써 결과의 신뢰성을 높였다. / 무분별한 개발은 생태계 파괴를 초래했다.
+
+  - key: ko:exercise:cause-effect-translate-tase
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-neun-tase
+    prompt:
+      source_text: Do bụi mịn, sự kiện ngoài trời đã bị huỷ. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 미세먼지 탓에 야외 행사가 취소되었다.
+        - 미세먼지 탓에 야외 행사가 취소됐다.
+        - 미세먼지 때문에 야외 행사가 취소되었다.
+        - 미세먼지 때문에 야외 행사가 취소됐다.
+        - 미세먼지로 야외 행사가 취소되었다.
+        - 미세먼지로 야외 행사가 취소됐다.
+        - 미세먼지 탓에 야외 행사는 취소되었다.
+    known_wrong:
+      - answer: 미세먼지 덕분에 야외 행사가 취소되었다.
+        feedback_vi: 덕분에 chỉ dùng với kết quả tốt. Sự kiện bị huỷ là kết quả xấu - 탓에.
+        error_tag: tase_vs_deokbune
+      - answer: 미세먼지 탓에 야외 행사가 취소했다.
+        feedback_vi: Sự kiện "bị huỷ" là bị động 취소되었다; 취소했다 cần người huỷ và tân ngữ.
+        error_tag: passive_needed
+      - answer: 미세먼지 탓에 야외 행사가 취소되어졌다.
+        feedback_vi: Bị động kép. 취소되다 đã là bị động - 취소되었다.
+        error_tag: double_passive
+    explanation:
+      vi: N 탓에 (do lỗi của N) hợp với kết quả xấu; 때문에 trung tính cũng đúng. Sự kiện là thứ bị huỷ nên dùng 취소되다 → 취소되었다.
+    display_answer: 미세먼지 탓에 야외 행사가 취소되었다.
+
+  - key: ko:exercise:cause-effect-translate-dallyeo
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-e-dallyeo-itda
+    prompt:
+      source_text: Tương lai của môi trường phụ thuộc vào sự lựa chọn của chúng ta. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 환경의 미래는 우리의 선택에 달려 있다.
+        - 환경의 미래는 우리 선택에 달려 있다.
+        - 환경의 미래는 우리가 하는 선택에 달려 있다.
+        - 환경의 미래는 우리의 선택에 달렸다.
+        - 미래의 환경은 우리의 선택에 달려 있다.
+        - 미래의 환경은 우리 선택에 달려 있다.
+        - 미래 환경은 우리의 선택에 달려 있다.
+    known_wrong:
+      - answer: 환경의 미래는 우리의 선택에 의존한다.
+        feedback_vi: 의존하다 là "dựa dẫm, lệ thuộc". Kết quả "phụ thuộc vào" điều kiện là 에 달려 있다.
+        error_tag: dallyeo_vs_uijon
+      - answer: 환경의 미래는 우리의 선택을 달려 있다.
+        feedback_vi: 달려 있다 đi với 에 - 선택에 달려 있다.
+        error_tag: particle_e
+      - answer: 환경의 미래는 우리의 선택에 달려 있어요.
+        feedback_vi: Đây là 해요체. Văn viết là 달려 있다.
+        error_tag: haeyo_in_writing
+      - answer: 환경의 미래는 우리의 선택에 따라 있다.
+        feedback_vi: 에 따라 không đi với 있다. "Phụ thuộc vào" là 에 달려 있다.
+        error_tag: dallyeo_vs_ttara
+    explanation:
+      vi: N에 달려 있다 = phụ thuộc vào N (có thể rút thành 달렸다). "Tương lai của môi trường" là 환경의 미래 - sở hữu 의 đặt sau người/vật sở hữu.
+    display_answer: 환경의 미래는 우리의 선택에 달려 있다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:cause-effect-mcq-main-idea
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:hyogwa
+    prompt:
+      stem: "Đọc đoạn văn và chọn ý chính: 여름철 도시의 기온은 주변 지역보다 3~4도 높다. 건물과 도로가 열을 흡수하는 탓이다. 그런데 도시에 나무를 심으면 그늘이 생기고 수분이 증발하면서 기온을 낮추는 효과가 있다. 따라서 도시의 녹지를 늘림으로써 폭염 피해를 줄여야 한다."
+      stem_lang: vi
+      options:
+        - { id: w6k, text: Cần tăng diện tích cây xanh đô thị để giảm thiệt hại do nắng nóng., lang: vi }
+        - { id: r2m, text: Nhiệt độ đô thị cao hơn vùng xung quanh 3–4 độ., lang: vi }
+        - { id: y9d, text: Nhà cửa và đường sá hấp thụ nhiệt nên cần phá bớt nhà., lang: vi }
+        - { id: b5p, text: Cây xanh làm độ ẩm tăng nên không tốt cho đô thị., lang: vi }
+    answer:
+      correct_option_id: w6k
+    explanation:
+      vi: Đoạn đi theo chuỗi hiện tượng → nguyên nhân (탓이다) → tác dụng của cây (효과가 있다) → giải pháp sau 따라서 (녹지를 늘림으로써). Ý chính là giải pháp; con số 3–4 độ chỉ là chi tiết.
+    display_answer: Cần tăng diện tích cây xanh đô thị để giảm thiệt hại do nắng nóng.
+
+  - key: ko:exercise:cause-effect-mcq-giyeo-particle
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-neun-de-giyeohada
+    prompt:
+      stem: "Bạn viết kết luận báo cáo: \"Nghiên cứu này sẽ góp phần vào việc bảo vệ hệ sinh thái.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a7j, text: 이 연구는 생태계를 보호하는 데 기여할 것이다., lang: ko }
+        - { id: q4s, text: 이 연구는 생태계를 보호하는 것을 기여할 것이다., lang: ko }
+        - { id: t1v, text: 이 연구는 생태계 보호를 기여할 것이다., lang: ko }
+        - { id: i8w, text: 이 연구는 생태계를 보호한 데 기여할 거예요., lang: ko }
+    answer:
+      correct_option_id: a7j
+    explanation:
+      vi: 기여하다 cần 에 - -는 데(에) 기여하다 hoặc N에 기여하다. Hai phương án có 을/를 sai trợ từ; phương án cuối sai định ngữ (보호한) và dùng 해요체.
+    display_answer: 이 연구는 생태계를 보호하는 데 기여할 것이다.
+
+  - key: ko:exercise:cause-effect-wb-uryeo
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-l-uryeoga-itda
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu hạn hán kéo dài, vấn đề thiếu nước có nguy cơ trở nên trầm trọng hơn.\""
+      tokens:
+        - { id: u3, text: 물 부족 문제가 }
+        - { id: u6, text: 악화되는 }
+        - { id: u5, text: 우려가 있다 }
+        - { id: u1, text: 가뭄이 }
+        - { id: u4, text: 악화될 }
+        - { id: u2, text: 길어지면 }
+    answer:
+      orders:
+        - [u1, u2, u3, u4, u5]
+    explanation:
+      vi: 우려 nói về khả năng trong tương lai nên đi với định ngữ -(으)ㄹ - 악화될 우려가 있다; 악화되는 우려 là sai. Điều kiện 가뭄이 길어지면 đứng đầu.
+    display_answer: 가뭄이 길어지면 물 부족 문제가 악화될 우려가 있다.
+
+  - key: ko:exercise:cause-effect-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:akhwadoeda
+    prompt:
+      source_text: 일회용품을 많이 쓰는 탓에 쓰레기 문제가 악화되었다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác đã trở nên trầm trọng hơn.
+        - Tại dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Do dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Do sử dụng nhiều đồ dùng một lần, vấn đề rác thải đã trở nên trầm trọng hơn.
+        - Vì sử dụng nhiều đồ dùng một lần, vấn đề rác thải đã xấu đi.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã xấu đi.
+        - Việc dùng nhiều đồ dùng một lần đã làm vấn đề rác thải trầm trọng hơn.
+        - Việc sử dụng nhiều đồ dùng một lần đã khiến vấn đề rác thải trở nên trầm trọng hơn.
+        - Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên nghiêm trọng hơn.
+        - Do dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên nghiêm trọng hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhờ dùng nhiều đồ dùng một lần nên vấn đề rác thải đã được cải thiện.
+        feedback_vi: 탓에 chỉ nguyên nhân xấu, và 악화되다 là "xấu đi", không phải "cải thiện".
+        error_tag: meaning_reversed
+      - answer: Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã bị ác hoá.
+        feedback_vi: Không dịch theo âm Hán Việt - 악화되다 là "trở nên trầm trọng, xấu đi".
+        error_tag: sino_viet_calque
+    explanation:
+      vi: -는 탓에 = vì/tại (nguyên nhân xấu); 악화되다 = trở nên trầm trọng, xấu đi. 일회용품 là "đồ dùng một lần".
+    display_answer: Vì dùng nhiều đồ dùng một lần nên vấn đề rác thải đã trở nên trầm trọng hơn.

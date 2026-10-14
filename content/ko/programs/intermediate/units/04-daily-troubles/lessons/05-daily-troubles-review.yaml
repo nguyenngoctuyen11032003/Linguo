@@ -1,0 +1,434 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:daily-troubles-review
+order_index: 5
+level: topik3
+title:
+  vi: Ôn tập - Ở quầy đồ thất lạc và một ngày xui xẻo
+objectives:
+  - vi: Theo dõi một cuộc hội thoại tại trung tâm đồ thất lạc và tự báo mất đồ.
+  - vi: Đọc hiểu một bài blog kể về một ngày xui xẻo ở trình độ TOPIK 3.
+  - vi: Phối hợp -는 바람에, -(으)ㄹ 뻔했다, -다가, -았/었더니, -더라고요, -거든요, -(으)ㄹ 테니까, -아/어 버리다, -고 말다.
+estimated_minutes: 22
+skills: [reading, listening, speaking, grammar]
+prerequisites: [ko:lesson:daily-troubles-tenikka-beorida]
+items:
+  - item: ko:item:yeollakcheo
+  - item: ko:item:chajagada
+  - item: ko:item:gram-neun-barame
+    role: reuse
+  - item: ko:item:gram-eul-ppeonhada
+    role: reuse
+  - item: ko:item:gram-daga
+    role: reuse
+  - item: ko:item:gram-at-deoni
+    role: reuse
+  - item: ko:item:gram-deoragoyo
+    role: reuse
+  - item: ko:item:gram-geodeunyo
+    role: reuse
+  - item: ko:item:gram-eul-tenikka
+    role: reuse
+  - item: ko:item:gram-a-beorida
+    role: reuse
+  - item: ko:item:gram-go-malda
+    role: reuse
+  - item: ko:item:bunsilmul-senteo
+    role: reuse
+  - item: ko:item:dugo-naerida
+    role: reuse
+  - item: ko:item:hamateomyeon
+    role: reuse
+  - item: ko:item:dahaengida
+    role: reuse
+  - item: ko:item:jeongsini-eopda
+    role: reuse
+  - item: ko:item:soksanghada
+    role: reuse
+  - item: ko:item:phrase-eotteoke-osyeosseoyo
+    role: reuse
+  - item: ko:item:neutjameul-jada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn tự tin xử lý khi mất đồ ở Hàn Quốc - đến quầy đồ thất lạc, mô tả đồ vật, để lại liên lạc - và kể lại cả một ngày xui xẻo bằng các mẫu câu của unit.
+  - type: explain
+    text:
+      vi: Trong hội thoại, hãy để ý cách Hương giải thích bằng -거든요 (nhân viên chưa biết chuyện), và cách nhân viên dùng 어떻게 오셨어요?, -(으)ㄹ 수 있어요, -아/어 주세요 để hướng dẫn thủ tục.
+  - type: explain
+    text:
+      vi: Bài blog kể chuỗi sự cố theo thời gian - nguyên nhân bất ngờ (-는 바람에), đang làm thì gặp chuyện (-다가), làm xong mới thấy (-았/었더니), kết quả đáng tiếc (-아/어 버리다, -고 말다) và chuyện suýt xảy ra (-(으)ㄹ 뻔했다).
+  - type: deep_explain
+    text:
+      vi: Blog tiếng Hàn thường viết bằng 해요체 thân mật và hay dùng -더라고요 để kể điều người viết đã thấy. Tuy vậy, khi viết bài TOPIK hay báo cáo, hãy chuyển sang -기 때문이다, -아서 và đuôi -ㄴ다/-다 thay cho -거든요, -더라고요. Hãy đọc mỗi câu và tự hỏi - đây là nguyên nhân, sự gián đoạn, phát hiện hay kết quả?
+  - type: example
+    target: |-
+      직원: 안녕하세요. 어떻게 오셨어요?
+      흐엉: 지갑을 잃어버려서 왔어요. 아까 2호선 지하철에 두고 내린 것 같아요.
+      직원: 몇 시쯤, 어느 역에서 내리셨어요?
+      흐엉: 30분 전쯤 시청역에서 내렸어요. 갑자기 친구한테서 전화가 오는 바람에 정신이 없었거든요. 통화하다가 급하게 내려 버렸어요.
+      직원: 지갑이 어떻게 생겼어요?
+      흐엉: 갈색 가죽 지갑이에요. 안에 외국인 등록증하고 카드가 들어 있어요.
+      직원: 잠깐만요. 혹시 이 지갑이에요? 조금 전에 다른 승객이 맡기고 가셨어요.
+      흐엉: 네, 맞아요! 정말 다행이에요. 하마터면 카드를 다 정지할 뻔했어요.
+      직원: 신분증을 확인한 후에 찾아가실 수 있어요. 여기에 이름하고 연락처를 써 주세요.
+      흐엉: 네. 경찰서에 신고하려고 했는데 안 해도 되겠네요. 감사합니다!
+    target_lang: ko
+    translation:
+      vi: "Nhân viên: Xin chào. Chị cần giúp gì ạ? Hương: Tôi làm mất ví nên đến đây. Hình như lúc nãy tôi để quên trên tàu tuyến số 2. Nhân viên: Khoảng mấy giờ, chị xuống ở ga nào ạ? Hương: Tôi xuống ở ga Tòa thị chính khoảng 30 phút trước. Chả là tự dưng bạn tôi gọi điện nên tôi rối quá. Đang nói chuyện điện thoại thì tôi vội xuống mất. Nhân viên: Ví trông thế nào ạ? Hương: Ví da màu nâu. Bên trong có thẻ cư trú người nước ngoài và thẻ ngân hàng. Nhân viên: Chị đợi chút nhé. Có phải ví này không ạ? Lúc nãy có hành khách khác gửi lại. Hương: Vâng, đúng rồi! May quá. Suýt nữa là tôi phải khóa hết thẻ. Nhân viên: Sau khi kiểm tra giấy tờ tùy thân, chị có thể nhận lại. Chị viết tên và số liên lạc vào đây giúp tôi. Hương: Vâng. Tôi định đi trình báo cảnh sát, giờ thì không cần nữa rồi. Cảm ơn anh!"
+    note:
+      vi: 어떻게 오셨어요? là câu nhân viên hỏi "anh/chị đến có việc gì"; 맡기다 là gửi lại, giao cho giữ; 정지하다 là khóa, tạm ngừng (thẻ).
+  - type: example
+    target: |-
+      제목: 정말 운이 없는 하루
+      오늘은 아침부터 정말 정신이 없었어요. 알람을 못 듣는 바람에 30분이나 늦잠을 잤어요. 급하게 준비하다가 휴대폰을 떨어뜨려서 화면이 깨져 버렸어요. 서둘러 정류장에 갔더니 버스가 벌써 떠났더라고요. 택시를 탔는데 이번에는 길이 너무 막혀서 답답했어요. 결국 회의에 20분 늦고 말았어요.
+      퇴근 후에 서비스 센터에 갔더니 수리하는 데 일주일이 걸린대요. 정말 속상했어요. 집에 오는 길에는 비까지 와서 하마터면 미끄러운 계단에서 넘어질 뻔했어요. 그래도 크게 다치지 않아서 다행이에요. 내일은 알람을 두 개 맞추고 자야겠어요.
+    target_lang: ko
+    translation:
+      vi: "Tiêu đề: Một ngày thật xui xẻo. Hôm nay từ sáng tôi đã rối tung. Tại không nghe thấy chuông báo thức nên tôi ngủ quên tận 30 phút. Đang vội chuẩn bị thì tôi làm rơi điện thoại, màn hình vỡ mất. Vội chạy ra trạm thì thấy xe buýt đã đi rồi. Tôi bắt taxi, lần này thì đường tắc kinh khủng, bức bối lắm. Rốt cuộc tôi vẫn trễ cuộc họp 20 phút. Tan làm tôi đến trung tâm bảo hành thì họ bảo sửa mất một tuần. Xót thật. Trên đường về nhà trời còn mưa, suýt nữa tôi ngã ở cầu thang trơn. Dù vậy may là không bị thương nặng. Mai tôi phải đặt hai cái báo thức rồi mới ngủ."
+    note:
+      vi: Mỗi câu một mẫu - 못 듣는 바람에 (nguyên nhân bất ngờ), 준비하다가 (đang làm thì…), 갔더니 (đến nơi mới thấy), 깨져 버렸어요, 늦고 말았어요 (kết quả đáng tiếc), 넘어질 뻔했어요 (suýt).
+  - type: common_mistake
+    wrong: 제가 통화하다가 지하철 문이 닫혔어요.
+    right: 제가 통화하는 동안 지하철 문이 닫혔어요.
+    target_lang: ko
+    note:
+      vi: Chủ ngữ hai vế khác nhau (제가 / 문이), nên không dùng -다가. Dùng -는 동안 hoặc -고 있는데.
+  - type: common_mistake
+    wrong: 착한 승객이 지갑을 맡기는 바람에 지갑을 찾았어요.
+    right: 착한 승객이 지갑을 맡겨 준 덕분에 지갑을 찾았어요.
+    target_lang: ko
+    note:
+      vi: Kết quả tốt (tìm lại được ví) nên dùng -(으)ㄴ 덕분에; -는 바람에 dành cho kết quả không mong muốn.
+  - type: summary
+    points:
+      - vi: Báo mất đồ - 분실물 센터, 두고 내리다, mô tả đồ vật, viết 이름 và 연락처, mang 신분증 để 찾아가다.
+      - vi: Giải thích với người chưa biết → -거든요 (chỉ khi nói); kể điều mình thấy → -더라고요.
+      - vi: Nguyên nhân bất ngờ, kết quả xấu → -는 바람에; kết quả tốt → -(으)ㄴ 덕분에.
+      - vi: -다가 (cùng chủ ngữ, đang làm thì…) ≠ -았/었더니 (làm xong mới thấy).
+      - vi: -아/어 버리다 (mất rồi), 결국 -고 말았어요 (rốt cuộc vẫn…), 하마터면 -(으)ㄹ 뻔했어요 (suýt nữa).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:dt-review-mcq-why-left
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-neun-barame
+    prompt:
+      stem: Trong hội thoại, vì sao Hương để quên ví trên tàu?
+      stem_lang: vi
+      options:
+        - { id: u7a, text: Tự dưng có điện thoại nên chị rối và vội xuống tàu., lang: vi }
+        - { id: e3m, text: Chị ngủ quên trên tàu nên xuống quá ga., lang: vi }
+        - { id: o9k, text: Có người lấy ví của chị khi tàu đông., lang: vi }
+        - { id: y5c, text: Chị đưa ví cho bạn rồi quên lấy lại., lang: vi }
+    answer:
+      correct_option_id: u7a
+    explanation:
+      vi: 갑자기 친구한테서 전화가 오는 바람에 정신이 없었거든요 - tại bạn gọi bất ngờ nên rối; 통화하다가 급하게 내려 버렸어요 - đang nói chuyện thì vội xuống mất.
+    display_answer: Tự dưng có điện thoại nên chị rối và vội xuống tàu.
+
+  - key: ko:exercise:dt-review-listen-almost-cards
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:hamateomyeon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 정말 다행이에요. 하마터면 카드를 다 정지할 뻔했어요.
+      options:
+        - { id: s2h, text: May quá. Suýt nữa là tôi phải khóa hết thẻ., lang: vi }
+        - { id: d8w, text: Đáng tiếc quá. Tôi đã khóa hết thẻ rồi., lang: vi }
+        - { id: v4n, text: May quá. Thẻ của tôi vẫn còn đủ cả., lang: vi }
+        - { id: p6r, text: Lo quá. Chắc tôi phải khóa hết thẻ thôi., lang: vi }
+    answer:
+      correct_option_id: s2h
+    explanation:
+      vi: 다행이에요 là "may quá"; 하마터면 … 정지할 뻔했어요 là "suýt nữa thì đã khóa" - thực tế chưa khóa thẻ.
+    display_answer: May quá. Suýt nữa là tôi phải khóa hết thẻ.
+
+  - key: ko:exercise:dt-review-mcq-blog-late
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-go-malda
+    prompt:
+      stem: Trong bài blog, câu 결국 회의에 20분 늦고 말았어요 cho biết điều gì?
+      stem_lang: vi
+      options:
+        - { id: c1t, text: "Dù đã cố gắng, rốt cuộc người viết vẫn trễ họp 20 phút.", lang: vi }
+        - { id: h6j, text: Người viết suýt trễ họp nhưng cuối cùng kịp giờ., lang: vi }
+        - { id: a4x, text: Người viết quyết tâm sẽ không bao giờ trễ họp., lang: vi }
+        - { id: z3b, text: Cuộc họp bị dời lại 20 phút., lang: vi }
+    answer:
+      correct_option_id: c1t
+    explanation:
+      vi: 결국 -고 말았어요 là "rốt cuộc vẫn…" - kết quả đáng tiếc đã xảy ra. "Suýt trễ" là 늦을 뻔했어요; quyết tâm là -고 말겠어요.
+    display_answer: Dù đã cố gắng, rốt cuộc người viết vẫn trễ họp 20 phút.
+
+  - key: ko:exercise:dt-review-fill-alarm-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-neun-barame
+    prompt:
+      template: "알람을 못 {{b1}} 바람에 늦잠을 잤어요."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Tại không nghe thấy chuông báo thức nên tôi ngủ quên."
+        - "Gợi ý: 듣다 + -는."
+    answer:
+      blanks:
+        b1: [듣는]
+    known_wrong:
+      - answer: 들은
+        feedback_vi: Trước 바람에 luôn là -는 - 듣는.
+        error_tag: barame_form
+      - answer: 들어서
+        feedback_vi: Trước 바람에 cần dạng -는, không dùng -아/어서.
+        error_tag: barame_form
+      - answer: 들었는
+        feedback_vi: -는 바람에 không gắn quá khứ - 듣는.
+        error_tag: past_with_barame
+    explanation:
+      vi: 듣다 + -는 → 듣는 (ㄷ không đổi trước phụ âm). Không nghe thấy chuông là nguyên nhân bất ngờ dẫn tới ngủ quên → -는 바람에.
+    display_answer: 알람을 못 듣는 바람에 늦잠을 잤어요.
+
+  - key: ko:exercise:dt-review-wb-found
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gram-at-deoni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi đến trung tâm đồ thất lạc thì thấy ví ở đó.\""
+      tokens:
+        - { id: t3, text: 지갑이 }
+        - { id: t5, text: 가다가 }
+        - { id: t2, text: 갔더니 }
+        - { id: t6, text: 있었거든요 }
+        - { id: t4, text: 있더라고요 }
+        - { id: t1, text: 분실물 센터에 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: Đến nơi xong mới thấy → 갔더니; điều mình tận mắt thấy → 있더라고요. 가다가 là "đang đi giữa đường", 있었거든요 là đưa lý do.
+    display_answer: 분실물 센터에 갔더니 지갑이 있더라고요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:dt-review-fill-blog
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-daga
+    prompt:
+      template: "(Đang vội chuẩn bị thì tôi làm rơi điện thoại.) 급하게 {{b1}} 휴대폰을 떨어뜨렸어요. (Tôi đến trung tâm bảo hành thì họ bảo sửa mất một tuần.) 서비스 센터에 {{b2}} 수리하는 데 일주일이 걸린대요."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [준비하다가]
+        b2: [갔더니]
+    known_wrong:
+      - answer: 준비했더니
+        feedback_vi: Việc chuẩn bị đang diễn ra thì làm rơi điện thoại - dùng -다가.
+        error_tag: daga_vs_deoni
+      - answer: 가더니
+        feedback_vi: Người đi là chính bạn, cần 았 - 갔더니.
+        error_tag: deoni_first_person
+      - answer: 가다가
+        feedback_vi: Bạn đã đến nơi rồi mới nghe thông tin, nên dùng 갔더니.
+        error_tag: daga_vs_deoni
+    explanation:
+      vi: Ô 1 - đang làm A thì xảy ra B, cùng chủ ngữ → 준비하다가. Ô 2 - làm A xong mới biết B → 갔더니.
+    display_answer: 급하게 준비하다가 휴대폰을 떨어뜨렸어요. 서비스 센터에 갔더니 수리하는 데 일주일이 걸린대요.
+
+  - key: ko:exercise:dt-review-translate-left-wallet
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dugo-naerida
+    prompt:
+      source_text: Hình như tôi để quên ví trên tàu điện ngầm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 지하철에 지갑을 두고 내린 것 같아요.
+        - 지갑을 지하철에 두고 내린 것 같아요.
+        - 제가 지하철에 지갑을 두고 내린 것 같아요.
+        - 저는 지하철에 지갑을 두고 내린 것 같아요.
+        - 지하철에 지갑을 두고 내려 버린 것 같아요.
+        - 지하철에 지갑을 놓고 내린 것 같아요.
+        - 지갑을 지하철에 놓고 내린 것 같아요.
+    known_wrong:
+      - answer: 지하철에 지갑을 두고 내리는 것 같아요.
+        feedback_vi: Chuyện đã xảy ra nên dùng định ngữ quá khứ - 내린 것 같아요.
+        error_tag: geot_gatda_tense
+      - answer: 지하철에 지갑을 잊어버린 것 같아요.
+        feedback_vi: 잊어버리다 là quên thông tin. Để quên đồ trên tàu là 두고 내리다.
+        error_tag: vocab_lose_forget
+      - answer: 지하철에서 지갑을 두고 내린 것 같아요.
+        feedback_vi: Nơi để đồ lại dùng 에 - 지하철에 두고 내리다.
+        error_tag: particle_e_eseo
+    explanation:
+      vi: 두고 내리다 = để quên đồ trên xe rồi xuống; "hình như (đã)" = -(으)ㄴ 것 같아요 → 내린 것 같아요.
+    display_answer: 지하철에 지갑을 두고 내린 것 같아요.
+
+  - key: ko:exercise:dt-review-translate-not-hurt
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:dahaengida
+    prompt:
+      source_text: May mà tôi không bị thương nặng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 크게 다치지 않아서 다행이에요.
+        - 크게 안 다쳐서 다행이에요.
+        - 많이 다치지 않아서 다행이에요.
+        - 많이 안 다쳐서 다행이에요.
+        - 심하게 다치지 않아서 다행이에요.
+        - 저는 크게 다치지 않아서 다행이에요.
+        - 크게 다치지 않아서 다행이었어요.
+        - 크게 안 다쳐서 다행이었어요.
+        - 다행히 크게 다치지 않았어요.
+    known_wrong:
+      - answer: 크게 다치지 않아서 다행해요.
+        feedback_vi: Không có 다행하다; nói 다행이에요.
+        error_tag: dahaeng_form
+      - answer: 크게 다치지 않았어서 다행이에요.
+        feedback_vi: -아서 không gắn quá khứ - 않아서.
+        error_tag: past_with_aseo
+      - answer: 크게 다칠 뻔해서 다행이에요.
+        feedback_vi: 다칠 뻔하다 là "suýt bị thương", không hợp với "không bị thương nặng".
+        error_tag: ppeon_meaning
+    explanation:
+      vi: Lý do + 다행이에요 - 다치지 않아서 (hoặc 안 다쳐서) 다행이에요. 크게 là "nặng, nhiều" khi nói về bị thương.
+    display_answer: 크게 다치지 않아서 다행이에요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:dt-review-mcq-form
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeollakcheo
+    prompt:
+      stem: "Nhân viên nói: 여기에 이름하고 연락처를 써 주세요. Bạn viết gì vào ô 연락처?"
+      stem_lang: vi
+      options:
+        - { id: b7e, text: 010-1234-5678, lang: ko }
+        - { id: n3g, text: 갈색 가죽 지갑, lang: ko }
+        - { id: w9s, text: 시청역, lang: ko }
+        - { id: k2y, text: 오후 3시, lang: ko }
+    answer:
+      correct_option_id: b7e
+    explanation:
+      vi: 연락처 là thông tin liên lạc, thường là số điện thoại. Mô tả đồ vật, ga tàu hay giờ giấc không phải 연락처.
+    display_answer: 010-1234-5678
+
+  - key: ko:exercise:dt-review-mcq-reassure
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-eul-tenikka
+    prompt:
+      stem: Bạn của bạn để quên túi trên xe buýt và đang rất lo. Bạn muốn nói "Tôi sẽ thử gọi cho trung tâm đồ thất lạc, bạn đừng lo". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: f5q, text: 제가 분실물 센터에 전화해 볼 테니까 걱정하지 마세요., lang: ko }
+        - { id: l2z, text: 제가 분실물 센터에 전화해 보는 바람에 걱정하지 마세요., lang: ko }
+        - { id: r9u, text: 제가 분실물 센터에 전화해 봤더니 걱정하지 마세요., lang: ko }
+        - { id: g4o, text: 제가 분실물 센터에 전화해 볼 테니까 걱정되지 마세요., lang: ko }
+    answer:
+      correct_option_id: f5q
+    explanation:
+      vi: Ý định của mình + lời trấn an → -(으)ㄹ 테니까 + 걱정하지 마세요. -는 바람에, -았/었더니 không đi với lời khuyên; 걱정되지 마세요 sai, phải là 걱정하지 마세요.
+    display_answer: 제가 분실물 센터에 전화해 볼 테니까 걱정하지 마세요.
+
+  - key: ko:exercise:dt-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gram-a-beorida
+    prompt:
+      source_text: 서둘러 정류장에 갔더니 버스가 벌써 떠나 버렸더라고요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi vội chạy ra trạm thì thấy xe buýt đã đi mất rồi.
+        - Tôi vội ra trạm thì thấy xe buýt đã đi mất rồi.
+        - Tôi vội vàng ra trạm thì xe buýt đã đi mất rồi.
+        - Tôi vội đến trạm xe buýt thì thấy xe đã đi mất rồi.
+        - Tôi vội ra bến xe buýt thì thấy xe buýt đã đi mất rồi.
+        - Tôi vội chạy ra trạm thì xe buýt đã chạy mất rồi.
+        - Tôi vội chạy ra trạm thì thấy xe buýt đã chạy mất rồi.
+        - Tôi vội ra trạm thì xe buýt đã đi rồi.
+        - Tôi vội chạy ra trạm thì xe buýt đã đi mất rồi.
+        - Vội ra trạm thì thấy xe buýt đã đi mất rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi vội ra trạm nên kịp xe buýt.
+        feedback_vi: 떠나 버렸더라고요 là "(thấy) xe đã đi mất rồi" - không kịp.
+        error_tag: meaning_result
+      - answer: Tôi đang ra trạm thì xe buýt đi mất.
+        feedback_vi: 갔더니 là đã đến trạm rồi mới thấy, không phải "đang đi".
+        error_tag: daga_vs_deoni
+    explanation:
+      vi: 서둘러 = vội; 갔더니 = đến nơi rồi thì (thấy); 떠나 버렸더라고요 = đã đi mất rồi (điều người nói tận mắt thấy).
+    display_answer: Tôi vội chạy ra trạm thì thấy xe buýt đã đi mất rồi.
+
+  - key: ko:exercise:dt-review-translate-almost-bus
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-eul-ppeonhada
+    prompt:
+      source_text: Tại ngủ quên nên tôi suýt lỡ xe buýt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 늦잠을 자는 바람에 버스를 놓칠 뻔했어요.
+        - 늦잠을 자는 바람에 하마터면 버스를 놓칠 뻔했어요.
+        - 저는 늦잠을 자는 바람에 버스를 놓칠 뻔했어요.
+        - 늦잠을 자서 버스를 놓칠 뻔했어요.
+        - 늦잠을 자서 하마터면 버스를 놓칠 뻔했어요.
+        - 늦잠 자는 바람에 버스를 놓칠 뻔했어요.
+        - 늦잠을 자는 바람에 버스를 놓칠 뻔했습니다.
+    known_wrong:
+      - answer: 늦잠을 잤는 바람에 버스를 놓칠 뻔했어요.
+        feedback_vi: -는 바람에 không gắn quá khứ - 자는 바람에.
+        error_tag: past_with_barame
+      - answer: 늦잠을 자는 바람에 버스를 놓쳤어요.
+        feedback_vi: 놓쳤어요 là "đã lỡ"; "suýt lỡ" là 놓칠 뻔했어요.
+        error_tag: ppeon_meaning
+      - answer: 늦잠을 자는 바람에 버스를 놓칠 뻔해요.
+        feedback_vi: '"Suýt" là chuyện đã qua - dùng 뻔했어요.'
+        error_tag: ppeon_present
+    explanation:
+      vi: Nguyên nhân bất ngờ → 자는 바람에; kết quả "suýt" → 놓칠 뻔했어요. -아서 (자서) cũng đúng nhưng ít nhấn tính bất ngờ.
+    display_answer: 늦잠을 자는 바람에 버스를 놓칠 뻔했어요.

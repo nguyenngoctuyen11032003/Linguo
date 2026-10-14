@@ -1,0 +1,420 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:climate-environment-vocab
+order_index: 1
+level: topik5
+title:
+  vi: Khí hậu & môi trường - từ vựng Hán Hàn và -(으)ㄹ수록
+objectives:
+  - vi: Hiểu và dùng đúng từ vựng môi trường trong báo chí - 기후 변화, 온실가스, 탄소 중립, 미세먼지, 재생 에너지, 생태계, 멸종 위기.
+  - vi: Tránh bẫy Hán Việt - 환경 là "môi trường" chứ không phải "hoàn cảnh", 멸종 là "tuyệt chủng".
+  - vi: Diễn đạt quan hệ tỉ lệ "càng … càng" bằng -(으)ㄹ수록 trong văn viết.
+estimated_minutes: 20
+skills: [vocabulary, grammar, reading]
+prerequisites: [ko:lesson:academic-culture-review]
+items:
+  - item: ko:item:gihu-byeonhwa
+  - item: ko:item:onsil-gaseu
+  - item: ko:item:tanso-jungnip
+  - item: ko:item:chinhwangyeong
+  - item: ko:item:ilhoeyongpum
+  - item: ko:item:misemeonji
+  - item: ko:item:jaesaeng-eneoji
+  - item: ko:item:saengtaegye
+  - item: ko:item:myeoljong-wigi
+  - item: ko:item:baechulhada
+  - item: ko:item:hwangyeong
+  - item: ko:item:gp-eul-surok
+  - item: ko:item:hwangyeong-oyeom
+    role: reuse
+  - item: ko:item:jaehwalyong
+    role: reuse
+  - item: ko:item:jeunggahada
+    role: reuse
+  - item: ko:item:written-nda-verb
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một đoạn tin môi trường trình độ TOPIK 5 mà không vấp từ Hán Hàn, và viết được câu "càng … càng" bằng -(으)ㄹ수록.
+  - type: explain
+    text:
+      vi: Hầu hết từ môi trường là từ Hán Hàn, nên bạn đoán nghĩa nhanh nhờ âm Hán Việt - 기후 (khí hậu), 생태계 (sinh thái hệ), 재생 (tái sinh). Nhưng thứ tự thường ngược tiếng Việt - 기후 변화 là "khí hậu + biến hoá" = "biến đổi khí hậu".
+  - type: explain
+    text:
+      vi: Một số từ là "bạn giả" - âm Hán Việt giống nhưng nghĩa khác. 환경 (hoàn cảnh) nghĩa là "môi trường"; 멸종 (diệt chủng) nghĩa là "tuyệt chủng"; 탄소 중립 (trung lập) là "trung hoà carbon".
+  - type: explain
+    text:
+      vi: V/A-(으)ㄹ수록 gắn vào vế đầu để nói "càng … thì càng …". Khác tiếng Việt, bạn không lặp lại cấu trúc ở vế sau - vế sau dùng 더 hoặc động từ chỉ thay đổi (높아지다, 늘어나다).
+  - type: deep_explain
+    text:
+      vi: Gốc có patchim dùng -을수록 (많을수록), gốc nguyên âm hoặc ㄹ dùng -ㄹ수록 (오를수록, 살수록 - ㄹ rụng rồi thêm -ㄹ수록). Dạng nhấn mạnh lặp động từ - 오르면 오를수록. Trong báo chí, vế sau thường kết thúc bằng -는 경향이 있다 (có xu hướng) để giữ giọng khách quan.
+  - type: example
+    target: 기후 변화로 해수면이 상승하면서 해양 생태계가 위협받고 있다. 특히 산호초가 사라지면서 많은 해양 생물이 멸종 위기에 처했다.
+    target_lang: ko
+    translation:
+      vi: Do biến đổi khí hậu, mực nước biển dâng lên và hệ sinh thái biển đang bị đe doạ. Đặc biệt, khi rạn san hô biến mất, nhiều sinh vật biển rơi vào nguy cơ tuyệt chủng.
+    note:
+      vi: Đoạn tin minh hoạ - 기후 변화, 생태계, 멸종 위기에 처하다 là bộ từ hay đi cùng nhau.
+  - type: example
+    target: 기온이 오를수록 빙하가 더 빨리 녹는다.
+    target_lang: ko
+    translation:
+      vi: Nhiệt độ càng tăng, băng càng tan nhanh.
+    note:
+      vi: -(으)ㄹ수록 chỉ ở vế đầu; vế sau có 더 để hoàn chỉnh ý "càng".
+  - type: example
+    target: 정부는 2050년까지 탄소 중립을 달성하기 위해 재생 에너지의 비중을 늘리고 있다.
+    target_lang: ko
+    translation:
+      vi: Chính phủ đang tăng tỉ trọng năng lượng tái tạo để đạt trung hoà carbon vào năm 2050.
+    note:
+      vi: 탄소 중립을 달성하다 là cụm cố định; 비중 là "tỉ trọng".
+  - type: example
+    target: 일회용품을 많이 쓸수록 환경 오염은 심해질 수밖에 없다.
+    target_lang: ko
+    translation:
+      vi: Càng dùng nhiều đồ dùng một lần thì ô nhiễm môi trường càng trầm trọng, điều đó không tránh khỏi.
+    note:
+      vi: 쓰다 là gốc nguyên âm nên thành 쓸수록; vế sau dùng động từ thay đổi 심해지다.
+  - type: common_mistake
+    wrong: 우리 집 환경이 어려워서 아르바이트를 해야 한다.
+    right: 우리 집 형편이 어려워서 아르바이트를 해야 한다.
+    target_lang: ko
+    note:
+      vi: Người Việt dịch "hoàn cảnh gia đình khó khăn" theo âm Hán Việt thành 환경. Trong tiếng Hàn, 환경 là "môi trường"; hoàn cảnh kinh tế gia đình là 형편 hoặc 사정.
+  - type: common_mistake
+    wrong: 기온이 더 오르면 더 빙하가 녹는다.
+    right: 기온이 오를수록 빙하가 더 빨리 녹는다.
+    target_lang: ko
+    note:
+      vi: Dịch từng chữ "càng … càng" thành 더 … 더 nghe không tự nhiên. Tiếng Hàn dùng -(으)ㄹ수록 ở vế đầu, 더 chỉ đặt ở vế sau trước tính từ/trạng từ.
+  - type: common_mistake
+    wrong: 도시가 클 수록 미세먼지가 많다.
+    right: 도시가 클수록 미세먼지 농도가 높아진다.
+    target_lang: ko
+    note:
+      vi: -(으)ㄹ수록 viết liền. Vế sau nên nói sự thay đổi (높아진다) và bụi mịn đi với 농도가 높다, tự nhiên hơn 많다.
+  - type: summary
+    points:
+      - vi: 기후 변화 · 온실가스 · 탄소 중립 · 친환경 · 일회용품 · 미세먼지 · 재생 에너지 · 생태계 · 멸종 위기 · 배출하다.
+      - vi: Bạn giả Hán Việt - 환경 = môi trường (hoàn cảnh = 형편, 사정); 멸종 = tuyệt chủng.
+      - vi: V/A-(으)ㄹ수록 (viết liền) + vế sau có 더 hoặc động từ thay đổi = càng … càng.
+      - vi: Cụm cố định - 탄소 중립을 달성하다, 멸종 위기에 처하다, 온실가스를 배출하다, 미세먼지 농도가 높다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:climate-environment-mcq-tanso
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:tanso-jungnip
+    prompt:
+      stem: "Trong câu 한국은 2050년까지 탄소 중립을 달성하겠다고 발표했다, \"탄소 중립\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q7f, text: trung hoà carbon, lang: vi }
+        - { id: w2k, text: trung lập chính trị về khí hậu, lang: vi }
+        - { id: e9s, text: thuế carbon, lang: vi }
+        - { id: r4n, text: năng lượng than đá, lang: vi }
+    answer:
+      correct_option_id: q7f
+    explanation:
+      vi: 탄소 là carbon, 중립 ở đây là "trung hoà" - lượng phát thải ròng bằng 0. Âm Hán Việt "trung lập" dễ khiến bạn nghĩ đến chính trị, nhưng nghĩa không liên quan.
+    display_answer: trung hoà carbon
+
+  - key: ko:exercise:climate-environment-mcq-hwangyeong
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:hwangyeong
+    prompt:
+      stem: "Câu 이 회사는 근무 환경이 좋다 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: t5c, text: Công ty này có môi trường làm việc tốt., lang: vi }
+        - { id: y8m, text: Công ty này có hoàn cảnh khó khăn., lang: vi }
+        - { id: u3h, text: Công ty này bảo vệ môi trường tốt., lang: vi }
+        - { id: i6b, text: Công ty này trả lương tốt., lang: vi }
+    answer:
+      correct_option_id: t5c
+    explanation:
+      vi: 환경 là "môi trường", 근무 환경 là "môi trường làm việc". Âm Hán Việt "hoàn cảnh" là bẫy - hoàn cảnh khó khăn tiếng Hàn là 형편이 어렵다.
+    display_answer: Công ty này có môi trường làm việc tốt.
+
+  - key: ko:exercise:climate-environment-listen-dust
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:misemeonji
+    prompt:
+      audio_asset_id: null
+      fallback_text: 미세먼지 농도가 높은 날에는 외출을 줄이는 것이 좋다.
+      options:
+        - { id: o2v, text: Vào ngày nồng độ bụi mịn cao nên hạn chế ra ngoài., lang: vi }
+        - { id: p9d, text: Vào ngày ít bụi mịn nên ra ngoài nhiều hơn., lang: vi }
+        - { id: a1x, text: Bụi mịn tăng cao vì nhiều người ra ngoài., lang: vi }
+        - { id: s4j, text: Ngày có sương mù dày nên đeo khẩu trang., lang: vi }
+    answer:
+      correct_option_id: o2v
+    explanation:
+      vi: 미세먼지 농도가 높은 날 là "ngày nồng độ bụi mịn cao", 외출을 줄이다 là "giảm ra ngoài". Câu không nói nguyên nhân bụi mịn, cũng không nhắc sương mù (안개).
+    display_answer: Vào ngày nồng độ bụi mịn cao nên hạn chế ra ngoài.
+
+  - key: ko:exercise:climate-environment-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-eul-surok
+    prompt:
+      template: "기온이 오를{{b1}} 빙하가 더 빨리 녹는다. 공장과 자동차는 많은 온실가스를 {{b2}}한다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Nhiệt độ càng tăng, băng càng tan nhanh. Nhà máy và ô tô thải ra nhiều khí nhà kính."
+        - "Gợi ý: \"càng\" - -(으)ㄹ___; \"thải ra\" - 배___하다."
+    answer:
+      blanks:
+        b1: [수록]
+        b2: [배출]
+    known_wrong:
+      - answer: 면
+        feedback_vi: 오르면 chỉ là "nếu tăng". Ý "càng … càng" cần -(으)ㄹ수록.
+        error_tag: surok_missing
+      - answer: 배설
+        feedback_vi: 배설 là "bài tiết" (cơ thể). Khí thải ra môi trường dùng 배출하다.
+        error_tag: word_choice_baechul
+    explanation:
+      vi: 오르다 là gốc nguyên âm nên 오르 + -ㄹ수록 = 오를수록. Khí nhà kính "thải ra" là 배출하다 (bài xuất), từ chuyên dùng cho khí thải và chất thải.
+    display_answer: 기온이 오를수록 빙하가 더 빨리 녹는다. 공장과 자동차는 많은 온실가스를 배출한다.
+
+  - key: ko:exercise:climate-environment-wb-surok
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-eul-surok
+    prompt:
+      instruction: "Sắp xếp thành câu văn viết: \"Càng dùng nhiều đồ dùng một lần thì rác càng nhiều.\""
+      tokens:
+        - { id: m4, text: 많아진다 }
+        - { id: m2, text: 쓸수록 }
+        - { id: m6, text: 쓸 수록 }
+        - { id: m3, text: 쓰레기가 }
+        - { id: m1, text: 일회용품을 }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: Vế điều kiện "càng dùng" đứng trước với -(으)ㄹ수록 viết liền (쓸수록), vế kết quả dùng động từ thay đổi 많아진다. 쓸 수록 viết cách là sai chính tả.
+    display_answer: 일회용품을 쓸수록 쓰레기가 많아진다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:climate-environment-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:myeoljong-wigi
+    prompt:
+      template: "(Hệ sinh thái biển đang bị phá huỷ.) 해양 {{b1}}가 파괴되고 있다. (Nhiều loài động vật rơi vào nguy cơ tuyệt chủng.) 많은 동물이 {{b2}} 위기에 처했다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [생태계]
+        b2: [멸종]
+    known_wrong:
+      - answer: 생태게
+        feedback_vi: Đọc là [생태게] nhưng viết là 생태계 (ㅖ).
+        error_tag: spelling_gye
+      - answer: 절종
+        feedback_vi: 'Từ "tuyệt chủng" trong tiếng Hàn là 멸종 (diệt chủng theo âm Hán Việt), không phải 절종.'
+        error_tag: sino_viet_false_friend
+      - answer: 학살
+        feedback_vi: 학살 là "thảm sát", không dùng cho loài vật biến mất. "Tuyệt chủng" là 멸종.
+        error_tag: sino_viet_false_friend
+    explanation:
+      vi: 생태계 (sinh thái hệ) = hệ sinh thái; cụm cố định 멸종 위기에 처하다 = rơi vào nguy cơ tuyệt chủng. Chú ý thứ tự Hán Hàn ngược với tiếng Việt.
+    display_answer: 해양 생태계가 파괴되고 있다. / 많은 동물이 멸종 위기에 처했다.
+
+  - key: ko:exercise:climate-environment-translate-surok
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-eul-surok
+    prompt:
+      source_text: Nhiệt độ càng tăng, băng càng tan nhanh. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 기온이 오를수록 빙하가 더 빨리 녹는다.
+        - 기온이 오를수록 빙하가 빨리 녹는다.
+        - 기온이 오를수록 얼음이 더 빨리 녹는다.
+        - 기온이 오를수록 얼음이 빨리 녹는다.
+        - 기온이 오르면 오를수록 빙하가 더 빨리 녹는다.
+        - 기온이 오르면 오를수록 얼음이 더 빨리 녹는다.
+        - 기온이 높아질수록 빙하가 더 빨리 녹는다.
+        - 기온이 높아질수록 얼음이 더 빨리 녹는다.
+        - 기온이 올라갈수록 빙하가 더 빨리 녹는다.
+        - 기온이 올라갈수록 얼음이 더 빨리 녹는다.
+        - 온도가 오를수록 빙하가 더 빨리 녹는다.
+        - 온도가 오를수록 얼음이 더 빨리 녹는다.
+        - 온도가 높아질수록 얼음이 더 빨리 녹는다.
+        - 온도가 올라갈수록 얼음이 더 빨리 녹는다.
+    known_wrong:
+      - answer: 기온이 더 오르면 더 빙하가 빨리 녹는다.
+        feedback_vi: Không dịch "càng … càng" thành 더 … 더. Dùng -(으)ㄹ수록 ở vế đầu - 오를수록.
+        error_tag: surok_calque
+      - answer: 기온이 오를수록 빙하가 더 빨리 녹아요.
+        feedback_vi: Đây là 해요체. Văn viết dùng 녹는다.
+        error_tag: haeyo_in_writing
+      - answer: 기온이 오를수록 빙하가 더 빨리 녹다.
+        feedback_vi: 녹다 là động từ nên văn viết hiện tại phải là 녹는다.
+        error_tag: nda_verb_form
+    explanation:
+      vi: Vế đầu 기온이 오르다 + -ㄹ수록 = 오를수록; vế sau dùng 더 빨리 녹는다 (động từ có patchim + -는다). Có thể nhấn mạnh bằng 오르면 오를수록.
+    display_answer: 기온이 오를수록 빙하가 더 빨리 녹는다.
+
+  - key: ko:exercise:climate-environment-translate-gihu
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gihu-byeonhwa
+    prompt:
+      source_text: Biến đổi khí hậu đe doạ hệ sinh thái. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 기후 변화는 생태계를 위협한다.
+        - 기후 변화가 생태계를 위협한다.
+        - 기후 변화는 생태계를 위협하고 있다.
+        - 기후 변화가 생태계를 위협하고 있다.
+        - 기후 변화로 생태계가 위협받는다.
+        - 기후 변화로 생태계가 위협받고 있다.
+        - 기후 변화 때문에 생태계가 위협받고 있다.
+        - 기후 변화 때문에 생태계가 위협받는다.
+    known_wrong:
+      - answer: 변화 기후는 생태계를 위협한다.
+        feedback_vi: Thứ tự Hán Hàn là 기후 변화 (khí hậu + biến đổi), ngược tiếng Việt.
+        error_tag: sino_word_order
+      - answer: 기후 변화는 계태생을 위협한다.
+        feedback_vi: Hệ sinh thái là 생태계 (sinh-thái-hệ), không đảo theo tiếng Việt.
+        error_tag: sino_word_order
+      - answer: 기후 변화는 생태계를 위협해요.
+        feedback_vi: Đây là 해요체. Văn viết dùng 위협한다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: 기후 변화 = biến đổi khí hậu, 생태계 = hệ sinh thái, 위협하다 = đe doạ. Động từ -하다 trong văn viết hiện tại thành -한다.
+    display_answer: 기후 변화는 생태계를 위협한다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:climate-environment-mcq-surok-use
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-eul-surok
+    prompt:
+      stem: "Bạn viết báo cáo: \"Thành phố càng lớn thì nồng độ bụi mịn càng có xu hướng cao.\" Câu nào tự nhiên và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: g3w, text: 도시가 클수록 미세먼지 농도가 높아지는 경향이 있다., lang: ko }
+        - { id: h8e, text: 도시가 더 크면 더 미세먼지가 많은 경향이 있다., lang: ko }
+        - { id: j5r, text: 도시가 큰수록 미세먼지 농도가 높아지는 경향이 있다., lang: ko }
+        - { id: k1t, text: 도시가 클수록 미세먼지 농도가 높아지는 경향이 있어요., lang: ko }
+    answer:
+      correct_option_id: g3w
+    explanation:
+      vi: 크다 + -ㄹ수록 = 클수록 (không phải 큰수록); vế sau dùng động từ thay đổi 높아지다 và đuôi văn viết -다. Lặp 더 … 더 là dịch từng chữ, còn 있어요 là 해요체.
+    display_answer: 도시가 클수록 미세먼지 농도가 높아지는 경향이 있다.
+
+  - key: ko:exercise:climate-environment-mcq-hyeongpyeon
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:hwangyeong
+    prompt:
+      stem: "Bạn muốn viết: \"Vì hoàn cảnh gia đình khó khăn, anh ấy đã bỏ học.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: l7p, text: 집안 형편이 어려워서 그는 학교를 그만두었다., lang: ko }
+        - { id: z2q, text: 집안 환경이 어려워서 그는 학교를 그만두었다., lang: ko }
+        - { id: x6u, text: 집안 상황이 어려워서 그는 학교를 그만했다., lang: ko }
+        - { id: c9a, text: 집안 환경 오염이 심해서 그는 학교를 그만두었다., lang: ko }
+    answer:
+      correct_option_id: l7p
+    explanation:
+      vi: Hoàn cảnh kinh tế gia đình là 형편 (형편이 어렵다). 환경 theo âm Hán Việt là "hoàn cảnh" nhưng nghĩa là "môi trường"; còn "bỏ học" là 학교를 그만두다, không phải 그만하다.
+    display_answer: 집안 형편이 어려워서 그는 학교를 그만두었다.
+
+  - key: ko:exercise:climate-environment-wb-tanso
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jaesaeng-eneoji
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Muốn đạt trung hoà carbon thì cần năng lượng tái tạo.\""
+      tokens:
+        - { id: n3, text: 재생 에너지가 }
+        - { id: n5, text: 재활용 에너지가 }
+        - { id: n1, text: 탄소 중립을 }
+        - { id: n4, text: 필요하다 }
+        - { id: n2, text: 달성하려면 }
+    answer:
+      orders:
+        - [n1, n2, n3, n4]
+    explanation:
+      vi: Điều kiện "muốn đạt" (달성하려면) đứng trước, kết quả 재생 에너지가 필요하다 đứng sau. Năng lượng tái tạo là 재생 에너지; 재활용 là "tái chế vật liệu", không dùng cho năng lượng.
+    display_answer: 탄소 중립을 달성하려면 재생 에너지가 필요하다.
+
+  - key: ko:exercise:climate-environment-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:myeoljong-wigi
+    prompt:
+      source_text: 기후 변화로 많은 동물이 멸종 위기에 처했다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Do biến đổi khí hậu, nhiều loài động vật đã rơi vào nguy cơ tuyệt chủng.
+        - Do biến đổi khí hậu, nhiều loài động vật rơi vào nguy cơ tuyệt chủng.
+        - Do biến đổi khí hậu, nhiều loài động vật đang có nguy cơ tuyệt chủng.
+        - Do biến đổi khí hậu, nhiều động vật đã rơi vào nguy cơ tuyệt chủng.
+        - Vì biến đổi khí hậu, nhiều loài động vật đã rơi vào nguy cơ tuyệt chủng.
+        - Vì biến đổi khí hậu, nhiều loài động vật đang có nguy cơ tuyệt chủng.
+        - Biến đổi khí hậu khiến nhiều loài động vật rơi vào nguy cơ tuyệt chủng.
+        - Biến đổi khí hậu đã khiến nhiều loài động vật rơi vào nguy cơ tuyệt chủng.
+        - Biến đổi khí hậu khiến nhiều loài động vật có nguy cơ tuyệt chủng.
+        - Nhiều loài động vật đã rơi vào nguy cơ tuyệt chủng do biến đổi khí hậu.
+        - Nhiều loài động vật đang có nguy cơ tuyệt chủng do biến đổi khí hậu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Do biến đổi khí hậu, nhiều loài động vật đã bị diệt chủng.
+        feedback_vi: 멸종 là "tuyệt chủng" (tự biến mất), và 위기 là "nguy cơ" - các loài chưa biến mất hẳn.
+        error_tag: sino_viet_false_friend
+      - answer: Do biến đổi khí hậu, nhiều loài động vật đã tuyệt chủng.
+        feedback_vi: Câu có 위기 (nguy cơ) - các loài mới có nguy cơ, chưa tuyệt chủng.
+        error_tag: missing_wigi
+    explanation:
+      vi: N(으)로 ở đây chỉ nguyên nhân "do N". 멸종 위기에 처하다 là "rơi vào nguy cơ tuyệt chủng" - chữ 위기 rất quan trọng vì nó cho biết các loài chưa biến mất.
+    display_answer: Do biến đổi khí hậu, nhiều loài động vật đã rơi vào nguy cơ tuyệt chủng.

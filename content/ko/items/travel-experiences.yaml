@@ -1,0 +1,947 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Du lịch & trải nghiệm" (TOPIK 2). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Dùng lại từ unit khác: 여행하다, 예약하다, 사진을 찍다, 바다, 여권, 타다, 비싸요/싸요, V-아/어 보다, 한번…
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ================= bài 1: trước khi / sau khi =================
+  - key: ko:item:gram-gi-jeone
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-기 전에
+      romanization: -gi jeone
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trước khi làm V. Gắn -기 전에 vào gốc động từ, không chia thì - 가기 전에, 먹기 전에.
+      examples:
+        - target: 여행 가기 전에 비행기표를 예약했어요.
+          translation:
+            vi: Trước khi đi du lịch, tôi đã đặt vé máy bay.
+        - target: 자기 전에 짐을 쌌어요.
+          translation:
+            vi: Trước khi ngủ, tôi đã soạn hành lý.
+      pronunciation_note:
+        vi: 전에 nối âm thành [저네].
+      confusion:
+        vi: Thì quá khứ chỉ đặt ở cuối câu - 가기 전에 …했어요; không nói 갔기 전에. Tiếng Việt "trước khi" cũng không chia thì, nên bạn chỉ cần giữ nguyên gốc động từ.
+
+  - key: ko:item:gram-eun-hue
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄴ 후에 · V-(으)ㄴ 다음에
+      romanization: -(eu)n hue · -(eu)n daeume
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Sau khi làm V. Gốc không patchim + ㄴ 후에 (도착한 후에), có patchim + 은 후에 (먹은 후에), gốc ㄹ bỏ ㄹ + ㄴ (만든 후에). 다음에 nghĩa giống 후에, hay dùng khi nói.
+      examples:
+        - target: 공항에 도착한 후에 친구한테 전화했어요.
+          translation:
+            vi: Sau khi đến sân bay, tôi đã gọi điện cho bạn.
+        - target: 밥을 먹은 다음에 바다에 갔어요.
+          translation:
+            vi: Ăn cơm xong, chúng tôi ra biển.
+      pronunciation_note:
+        vi: 후에 đọc nhanh gần [후에]; 먹은 nối âm thành [머근].
+      confusion:
+        vi: Dùng dạng -(으)ㄴ, không phải -는 hay -기 - 먹은 후에, không nói 먹는 후에 hoặc 먹기 후에. Ngược với -기 전에, cấu trúc "sau khi" cần -(으)ㄴ.
+
+  - key: ko:item:gram-noun-jeon-hu
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N 전에 · N 후에
+      romanization: jeone · hue
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trước / sau một mốc thời gian hoặc sự việc (danh từ) - 출발 30분 전에, 식사 후에, 1시간 후에.
+      examples:
+        - target: 출발 두 시간 전에 공항에 가야 해요.
+          translation:
+            vi: Phải ra sân bay hai tiếng trước giờ khởi hành.
+        - target: 1시간 후에 호텔에 도착해요.
+          translation:
+            vi: Một tiếng nữa tôi đến khách sạn.
+      pronunciation_note:
+        vi: 1시간 đọc [한 시간] (số thuần Hàn với 시간).
+      confusion:
+        vi: Thứ tự ngược tiếng Việt - "trước bữa ăn" là 식사 전에, "30 phút trước giờ xuất phát" là 출발 30분 전에. Với khoảng thời gian, 1시간 후에 = "một tiếng nữa / một tiếng sau".
+
+  - key: ko:item:yeohaeng
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 여행
+      romanization: yeohaeng
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến du lịch, việc du lịch
+      examples:
+        - target: 다음 달에 가족하고 여행을 가요.
+          translation:
+            vi: Tháng sau tôi đi du lịch với gia đình.
+      pronunciation_note:
+        vi: ㅎ giữa hai nguyên âm đọc rất nhẹ - [여행] gần "yơ-eng".
+      confusion:
+        vi: 여행(을) 가다 = đi du lịch (nhấn vào việc đi), 여행하다 = du lịch (động từ). Danh từ 여행 còn đứng trước danh từ khác - 여행 계획, 여행 가방.
+
+  - key: ko:item:bihaenggi
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 비행기
+      romanization: bihaenggi
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy bay
+      examples:
+        - target: 비행기를 타고 제주도에 가요.
+          translation:
+            vi: Tôi đi máy bay đến đảo Jeju.
+      pronunciation_note:
+        vi: ㅎ giữa hai nguyên âm rất nhẹ - [비앵기] khi nói nhanh.
+      confusion:
+        vi: Đi máy bay là 비행기를 타다 (dùng 를), không nói 비행기에 가다. "Đi bằng máy bay" là 비행기로 가요.
+
+  - key: ko:item:bihaenggipyo
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 비행기표
+      romanization: bihaenggipyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé máy bay
+      examples:
+        - target: 인터넷으로 비행기표를 샀어요.
+          translation:
+            vi: Tôi đã mua vé máy bay qua mạng.
+      pronunciation_note:
+        vi: 표 có ㅍ bật hơi, đọc gần "pyô" kèm luồng hơi mạnh.
+      confusion:
+        vi: 표 là "vé" nói chung - 기차표 (vé tàu), 영화표 (vé xem phim). Mua vé là 표를 사다, đặt vé là 표를 예약하다.
+
+  - key: ko:item:jim
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 짐 · 짐을 싸다
+      romanization: jim · jimeul ssada
+      pos: danh từ · cụm động từ
+    back:
+      meaning:
+        vi: hành lý, đồ đạc mang theo; 짐을 싸다 = soạn / đóng gói hành lý
+      examples:
+        - target: 출발하기 전에 짐을 다 쌌어요.
+          translation:
+            vi: Trước khi xuất phát tôi đã soạn xong hết hành lý.
+      pronunciation_note:
+        vi: 짐을 nối âm [지믈]; 싸다 có ㅆ căng, đọc mạnh và gọn.
+      confusion:
+        vi: 싸다 ở đây là "gói, soạn", khác 싸다 = "rẻ" (싸요). Hai từ viết giống nhau, phân biệt bằng ngữ cảnh - 짐을 싸요 (soạn đồ) / 호텔이 싸요 (khách sạn rẻ).
+
+  - key: ko:item:gonghang
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 공항
+      romanization: gonghang
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân bay
+      examples:
+        - target: 인천공항에서 친구를 만났어요.
+          translation:
+            vi: Tôi đã gặp bạn ở sân bay Incheon.
+      pronunciation_note:
+        vi: Hai âm cuối đều là ㅇ [ng] - [공항] gần "kông-hang".
+      confusion:
+        vi: Tên sân bay đặt trước 공항 - 인천공항, 김포공항, giống tiếng Việt đảo ngược ("sân bay Incheon").
+
+  - key: ko:item:chulbalhada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 출발하다
+      romanization: chulbalhada
+      pos: động từ
+    back:
+      meaning:
+        vi: xuất phát, khởi hành
+      examples:
+        - target: 비행기가 오전 8시에 출발해요.
+          translation:
+            vi: Máy bay cất cánh lúc 8 giờ sáng.
+      pronunciation_note:
+        vi: ㄹ trước ㅎ, ㅎ gần như mất - [출바라다] khi nói nhanh.
+      confusion:
+        vi: Nơi xuất phát dùng 에서 - 서울에서 출발해요. Danh từ 출발 dùng với 전에/후에 - 출발 전에.
+
+  - key: ko:item:dochakhada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 도착하다
+      romanization: dochakada
+      pos: động từ
+    back:
+      meaning:
+        vi: đến nơi, tới
+      examples:
+        - target: 제주도에 오후 2시에 도착했어요.
+          translation:
+            vi: Tôi đến đảo Jeju lúc 2 giờ chiều.
+      pronunciation_note:
+        vi: ㄱ + ㅎ thành ㅋ bật hơi - [도차카다], 도착했어요 [도차캐써요].
+      confusion:
+        vi: Nơi đến dùng 에 - 공항에 도착해요, không dùng 를 (공항을 도착해요 là sai). Tiếng Việt "đến sân bay" không có trợ từ nên người Việt hay quên 에.
+
+  # ================= bài 2: khi / vừa… vừa…, tham quan =================
+  - key: ko:item:gram-eul-ttae
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V/A-(으)ㄹ 때
+      romanization: -(eu)l ttae
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Khi, lúc (làm V / trạng thái A). Không patchim + ㄹ 때 (갈 때), có patchim + 을 때 (먹을 때), gốc ㄹ chỉ thêm 때 (놀 때).
+      examples:
+        - target: 비행기를 탈 때 여권을 보여 줘야 해요.
+          translation:
+            vi: Khi lên máy bay phải xuất trình hộ chiếu.
+        - target: 시간이 있을 때 보통 여행을 가요.
+          translation:
+            vi: Khi có thời gian, tôi thường đi du lịch.
+      pronunciation_note:
+        vi: Sau -(으)ㄹ, 때 đã là âm căng; 갈 때 đọc [갈 때], 먹을 때 [머글 때].
+      confusion:
+        vi: -(으)ㄹ 때 ở đây không mang nghĩa tương lai; câu quá khứ vẫn dùng được (탈 때 여권을 보여 줬어요). Khi hành động đã xong hẳn rồi mới có việc sau, dùng -았/었을 때.
+
+  - key: ko:item:gram-asseul-ttae
+    type: grammar_point
+    level: topik2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V/A-았/었을 때
+      romanization: -at/eosseul ttae
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Khi (việc gì đó) đã xảy ra / đã xong - 제주도에 갔을 때 (khi tôi đã đến Jeju, lúc ở Jeju), 어렸을 때 (hồi nhỏ).
+      examples:
+        - target: 제주도에 갔을 때 바다에서 수영했어요.
+          translation:
+            vi: Hồi đi Jeju, tôi đã bơi ở biển.
+        - target: 공항에 도착했을 때 비가 왔어요.
+          translation:
+            vi: Lúc tôi đến sân bay thì trời mưa.
+      pronunciation_note:
+        vi: 갔을 때 nối âm [가쓸 때].
+      confusion:
+        vi: 제주도에 갈 때 = lúc đang trên đường đi Jeju; 제주도에 갔을 때 = khi đã ở Jeju. Người Việt hay dùng 갈 때 cho cả hai vì tiếng Việt chỉ có một chữ "khi".
+
+  - key: ko:item:gram-noun-ttae
+    type: grammar_point
+    level: topik2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N 때
+      romanization: ttae
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Vào dịp / lúc N - 방학 때 (kỳ nghỉ), 휴가 때 (kỳ nghỉ phép), 점심 때 (giờ trưa).
+      examples:
+        - target: 방학 때 부산에 여행을 가요.
+          translation:
+            vi: Kỳ nghỉ tôi đi du lịch Busan.
+      pronunciation_note:
+        vi: 때 là âm căng ㄸ, đọc gọn và mạnh như "tè" không bật hơi.
+      confusion:
+        vi: Một số từ chỉ thời gian chỉ dùng 에, không dùng 때 - 주말에, 토요일에, 아침에 (không nói 주말 때). Không thêm 에 sau 오늘, 내일, 어제.
+
+  - key: ko:item:gram-eumyeonseo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)면서
+      romanization: -(eu)myeonseo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Vừa… vừa… - một người làm hai việc cùng lúc. Không patchim / gốc ㄹ + 면서 (마시면서, 놀면서), có patchim + 으면서 (먹으면서).
+      examples:
+        - target: 커피를 마시면서 바다를 구경했어요.
+          translation:
+            vi: Tôi vừa uống cà phê vừa ngắm biển.
+        - target: 사진을 찍으면서 시장을 구경했어요.
+          translation:
+            vi: Chúng tôi vừa chụp ảnh vừa dạo xem chợ.
+      pronunciation_note:
+        vi: 찍으면서 nối âm [찌그면서].
+      confusion:
+        vi: Hai hành động phải cùng một chủ ngữ. "Tôi lái xe, bạn tôi hát" không dùng -(으)면서 mà dùng -고 - 제가 운전하고 친구는 노래했어요.
+
+  - key: ko:item:gwangwangji
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 관광지
+      romanization: gwangwangji
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm du lịch, địa điểm tham quan
+      examples:
+        - target: 제주도에는 유명한 관광지가 많아요.
+          translation:
+            vi: Ở Jeju có nhiều điểm du lịch nổi tiếng.
+      pronunciation_note:
+        vi: ㅘ đọc gần "oa" - [관광지] gần "koan-koang-chi".
+      confusion:
+        vi: 관광 là Hán Hàn "quan quang" (tham quan), 지 là "địa" - nên 관광지 giống "khu du lịch". 관광객 là khách du lịch.
+
+  - key: ko:item:gugyeonghada
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 구경하다
+      romanization: gugyeonghada
+      pos: động từ
+    back:
+      meaning:
+        vi: ngắm, xem, dạo xem (cảnh, chợ, lễ hội… cho vui)
+      examples:
+        - target: 시장을 구경하고 기념품을 샀어요.
+          translation:
+            vi: Tôi dạo xem chợ rồi mua quà lưu niệm.
+      pronunciation_note:
+        vi: ㄱ giữa hai nguyên âm đọc gần "g" - [구경하다].
+      confusion:
+        vi: 구경하다 là xem cho vui, đi ngắm; xem phim, xem TV thì dùng 보다. Đối tượng dùng 을/를 - 경치를 구경해요.
+
+  - key: ko:item:gyeongchi
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 경치
+      romanization: gyeongchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong cảnh, cảnh đẹp
+      examples:
+        - target: 산 위에서 본 경치가 정말 아름다웠어요.
+          translation:
+            vi: Phong cảnh nhìn từ trên núi đẹp thật sự.
+      pronunciation_note:
+        vi: ㅊ bật hơi - [경치] gần "kyơng-chhi".
+      confusion:
+        vi: Khen cảnh đẹp nói 경치가 좋아요 / 아름다워요. 경치가 예뻐요 vẫn nghe được, nhưng với núi, biển rộng lớn thì 좋아요 / 아름다워요 tự nhiên hơn.
+
+  - key: ko:item:ginyeompum
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 기념품
+      romanization: ginyeompum
+      pos: danh từ
+    back:
+      meaning:
+        vi: quà lưu niệm
+      examples:
+        - target: 친구들한테 줄 기념품을 샀어요.
+          translation:
+            vi: Tôi đã mua quà lưu niệm để tặng bạn bè.
+      pronunciation_note:
+        vi: ㅁ trước ㅍ - [기념품], ㅍ bật hơi.
+      confusion:
+        vi: 기념품 là đồ mua làm kỷ niệm ở nơi bạn đến; 선물 là quà tặng nói chung. Mua về tặng người khác vẫn có thể gọi là 기념품.
+
+  - key: ko:item:san
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 산
+      romanization: san
+      pos: danh từ
+    back:
+      meaning:
+        vi: núi
+      examples:
+        - target: 한국에서 제일 높은 산은 한라산이에요.
+          translation:
+            vi: Núi cao nhất Hàn Quốc là núi Halla.
+      pronunciation_note:
+        vi: ㅅ đầu từ đọc nhẹ như "x" - [산].
+      confusion:
+        vi: Tên núi ghép 산 vào cuối - 한라산, 설악산, 남산 (giống Hán Việt "sơn"). 산에 가요 là lên núi; 등산하다 là leo núi.
+
+  - key: ko:item:areumdapda
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 아름답다 → 아름다워요
+      romanization: areumdapda → areumdawoyo
+      pos: tính từ (bất quy tắc ㅂ)
+    back:
+      meaning:
+        vi: đẹp (cảnh, thiên nhiên, giọng hát…), mang sắc thái trang trọng hơn 예쁘다
+      examples:
+        - target: 제주도 바다가 정말 아름다워요.
+          translation:
+            vi: Biển Jeju đẹp thật sự.
+      pronunciation_note:
+        vi: 아름답다 đọc [아름답따]; 아름다워요 không còn âm ㅂ.
+      confusion:
+        vi: Bất quy tắc ㅂ giống 덥다 → 더워요 - không viết 아름답어요. Quá khứ là 아름다웠어요.
+
+  - key: ko:item:bangmulgwan
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 박물관
+      romanization: bangmulgwan
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo tàng
+      examples:
+        - target: 비가 올 때는 박물관을 구경해요.
+          translation:
+            vi: Khi trời mưa thì đi tham quan bảo tàng.
+      pronunciation_note:
+        vi: ㄱ trước ㅁ biến thành ㅇ (mũi hoá) - đọc [방물관], không đọc "pak-mul".
+      confusion:
+        vi: Viết 박 nhưng đọc [방]; khi nghe [방물관] bạn vẫn viết 박물관. 미술관 là bảo tàng mỹ thuật.
+
+  # ================= bài 3: dự định & trải nghiệm =================
+  - key: ko:item:gram-euryeogo-hada
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(으)려고 하다
+      romanization: -(eu)ryeogo hada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Định / dự định làm V. Không patchim / gốc ㄹ + 려고 해요 (가려고, 만들려고), có patchim + 으려고 해요 (먹으려고).
+      examples:
+        - target: 이번 방학에 제주도에 가려고 해요.
+          translation:
+            vi: Kỳ nghỉ này tôi định đi Jeju.
+        - target: 등산하려고 했는데 비가 왔어요.
+          translation:
+            vi: Tôi định đi leo núi nhưng trời lại mưa.
+      pronunciation_note:
+        vi: 려 đọc gần "ryơ" với ㄹ lướt nhẹ; 먹으려고 nối âm [머그려고].
+      confusion:
+        vi: -(으)려고 해요 nói ý định (chưa chắc chắn), còn -(으)ㄹ 거예요 nói kế hoạch, dự đoán. Quá khứ -(으)려고 했어요 thường là "đã định… nhưng không làm được".
+
+  - key: ko:item:gram-eun-jeok-itda
+    type: grammar_point
+    level: topik2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-(으)ㄴ 적이 있다/없다
+      romanization: -(eu)n jeogi itda/eopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đã từng / chưa từng làm V. Rất hay đi với -아/어 보다 - 가 본 적이 있어요 (đã từng đi thử).
+      examples:
+        - target: 한라산에 올라간 적이 있어요?
+          translation:
+            vi: Bạn đã từng leo lên núi Halla chưa?
+        - target: 저는 한복을 입어 본 적이 없어요.
+          translation:
+            vi: Tôi chưa từng mặc thử hanbok.
+      pronunciation_note:
+        vi: 적이 nối âm [저기]; 없어요 đọc [업써요].
+      confusion:
+        vi: Dùng dạng -(으)ㄴ (간 적, 먹은 적), không phải -는 hay -았 - không nói 가는 적, 갔은 적. Chỉ dùng cho trải nghiệm hiếm, không dùng cho việc làm hằng ngày (밥을 먹은 적이 있어요 nghe rất lạ).
+
+  - key: ko:item:cheoeum
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 처음
+      romanization: cheoeum
+      pos: danh từ · phó từ
+    back:
+      meaning:
+        vi: lần đầu, đầu tiên
+      examples:
+        - target: 바다를 처음 봤을 때 정말 좋았어요.
+          translation:
+            vi: Lần đầu nhìn thấy biển, tôi vui lắm.
+      pronunciation_note:
+        vi: ㅊ bật hơi rồi ㅓ + ㅡ - [처음] gần "chhơ-ưm".
+      confusion:
+        vi: 처음이에요 = đây là lần đầu; 처음 V-았어요 = lần đầu làm V. Còn "làm trước (người khác)" là 먼저 - 먼저 가세요, không dùng 처음.
+
+  - key: ko:item:haeoe-yeohaeng
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 해외여행
+      romanization: haeoe yeohaeng
+      pos: danh từ
+    back:
+      meaning:
+        vi: du lịch nước ngoài
+      examples:
+        - target: 해외여행을 가 본 적이 있어요?
+          translation:
+            vi: Bạn từng đi du lịch nước ngoài chưa?
+      pronunciation_note:
+        vi: 해외 đọc gần [해웨] - ㅚ ngày nay thường đọc như ㅞ.
+      confusion:
+        vi: 해외 là "hải ngoại", ngược lại là 국내여행 (du lịch trong nước). Đi du lịch nước ngoài là 해외여행(을) 가다.
+
+  - key: ko:item:jejudo
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 제주도
+      romanization: jejudo
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: đảo Jeju - hòn đảo du lịch lớn nhất Hàn Quốc
+      examples:
+        - target: 제주도는 바다와 한라산이 유명해요.
+          translation:
+            vi: Đảo Jeju nổi tiếng với biển và núi Halla.
+      pronunciation_note:
+        vi: ㅈ giữa hai nguyên âm đọc nhẹ gần "j" - [제주도].
+      confusion:
+        vi: 도 ở đây là "đảo" (Hán Việt "đảo"), nên không nói 제주도 섬. Từ Seoul thường đi bằng máy bay khoảng một tiếng.
+
+  - key: ko:item:gicha
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 기차
+      romanization: gicha
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu hoả
+      examples:
+        - target: 기차를 타고 부산에 갔어요.
+          translation:
+            vi: Tôi đi tàu hoả xuống Busan.
+      pronunciation_note:
+        vi: ㅊ bật hơi - [기차] gần "ki-chha".
+      confusion:
+        vi: Tàu hoả là 기차, tàu điện ngầm là 지하철, tàu thủy là 배. Đều dùng với 타다 và 를.
+
+  - key: ko:item:bae-ship
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 배 (tàu thủy)
+      romanization: bae
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu thủy, thuyền
+      examples:
+        - target: 부산에서 배를 타고 제주도에 갈 수 있어요.
+          translation:
+            vi: Từ Busan có thể đi tàu thủy đến Jeju.
+      pronunciation_note:
+        vi: ㅂ đầu từ nhẹ như "p" - [배].
+      confusion:
+        vi: 배 còn có nghĩa "bụng" và "quả lê". Dựa vào ngữ cảnh - 배를 타요 (đi tàu), 배가 아파요 (đau bụng).
+
+  - key: ko:item:gyehoek
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 계획
+      romanization: gyehoek
+      pos: danh từ
+    back:
+      meaning:
+        vi: kế hoạch
+      examples:
+        - target: 이번 여행 계획을 같이 세웠어요.
+          translation:
+            vi: Chúng tôi đã cùng lên kế hoạch cho chuyến đi lần này.
+      pronunciation_note:
+        vi: 계 thường đọc [게]; 계획 đọc [게획] hoặc [게훽].
+      confusion:
+        vi: Lập kế hoạch là 계획을 세우다, không phải 계획을 만들다. Hỏi kế hoạch - 방학 계획이 있어요?
+
+  - key: ko:item:banghak
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 방학
+      romanization: banghak
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ (của học sinh, sinh viên) - 여름 방학, 겨울 방학
+      examples:
+        - target: 여름 방학 때 해외여행을 가려고 해요.
+          translation:
+            vi: Nghỉ hè tôi định đi du lịch nước ngoài.
+      pronunciation_note:
+        vi: ㅇ cuối 방 + ㅎ đầu 학; ㅎ đọc nhẹ - [방악] khi nói nhanh.
+      confusion:
+        vi: 방학 chỉ dùng cho trường học; người đi làm nghỉ phép thì dùng 휴가.
+
+  - key: ko:item:hyuga
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 휴가
+      romanization: hyuga
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ phép (của người đi làm)
+      examples:
+        - target: 휴가 때 가족하고 바다에 가려고 해요.
+          translation:
+            vi: Kỳ nghỉ phép tôi định đi biển với gia đình.
+      pronunciation_note:
+        vi: ㅠ đọc "yu" - [휴가] gần "hyu-ka".
+      confusion:
+        vi: Xin nghỉ phép là 휴가를 내다; đi nghỉ là 휴가를 가다. Học sinh nghỉ thì dùng 방학.
+
+  - key: ko:item:hanbok
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 한복
+      romanization: hanbok
+      pos: danh từ
+    back:
+      meaning:
+        vi: hanbok - trang phục truyền thống Hàn Quốc
+      examples:
+        - target: 경복궁에서 한복을 입고 사진을 찍었어요.
+          translation:
+            vi: Tôi mặc hanbok và chụp ảnh ở cung Gyeongbok.
+      pronunciation_note:
+        vi: ㄴ cuối 한 + ㅂ - [한복], ㄱ cuối đọc không bật.
+      confusion:
+        vi: Mặc quần áo dùng 입다 - 한복을 입다, không dùng 쓰다 (đội) hay 신다 (đi giày).
+
+  # ================= bài 4: so sánh & đặt phòng =================
+  - key: ko:item:gram-boda-deo
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N보다 (더)
+      romanization: boda (deo)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Hơn N. 보다 gắn vào cái được so sánh (vế "hơn ai/cái gì"), 더 (hơn) có thể bỏ - A이/가 B보다 (더) + tính từ.
+      examples:
+        - target: 제주도가 서울보다 더 따뜻해요.
+          translation:
+            vi: Jeju ấm hơn Seoul.
+        - target: 형이 저보다 키가 커요.
+          translation:
+            vi: Anh tôi cao hơn tôi.
+      pronunciation_note:
+        vi: 보다 ở đây là trợ từ, viết liền với danh từ - 서울보다 [서울보다].
+      confusion:
+        vi: Tiếng Việt nói "A cao hơn B", nên người Việt hay đặt 보다 ra sau - 키가 커요 저보다 (sai). Tiếng Hàn đặt N보다 trước tính từ - 저보다 키가 커요.
+
+  - key: ko:item:gram-jeil-gajang
+    type: grammar_point
+    level: topik2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: 제일 · 가장 + A/V
+      romanization: jeil · gajang
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhất - đặt trước tính từ / động từ. 제일 hay dùng khi nói, 가장 hay dùng khi viết.
+      examples:
+        - target: 여행지 중에서 어디가 제일 좋았어요?
+          translation:
+            vi: Trong các nơi đã đi, bạn thích nơi nào nhất?
+        - target: 한국에서 가장 높은 산은 한라산이에요.
+          translation:
+            vi: Núi cao nhất Hàn Quốc là núi Halla.
+      pronunciation_note:
+        vi: 제일 đọc [제일], hai âm tiết rõ ràng.
+      confusion:
+        vi: Tiếng Việt "đẹp nhất" đặt "nhất" sau, tiếng Hàn đặt trước - 제일 예뻐요 (không nói 예뻐요 제일). Phạm vi so sánh dùng N 중에서 hoặc N에서.
+
+  - key: ko:item:hotel
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 호텔
+      romanization: hotel
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách sạn
+      examples:
+        - target: 바다 앞에 있는 호텔을 예약했어요.
+          translation:
+            vi: Tôi đã đặt khách sạn ở ngay trước biển.
+      pronunciation_note:
+        vi: ㅌ bật hơi, ㄹ cuối đọc như "l" - [호텔].
+      confusion:
+        vi: Ở khách sạn là 호텔에서 묵다 / 자다; đến khách sạn là 호텔에 가다. 게스트하우스 là nhà nghỉ kiểu homestay rẻ hơn.
+
+  - key: ko:item:bang
+    type: vocab
+    level: topik2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 방 · 빈방
+      romanization: bang · binbang
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng; 빈방 = phòng trống
+      examples:
+        - target: 이번 주말에 빈방 있어요?
+          translation:
+            vi: Cuối tuần này còn phòng trống không?
+      pronunciation_note:
+        vi: ㅇ cuối đọc "ng" - [방], [빈방].
+      confusion:
+        vi: 방 là phòng để ở / ngủ; phòng học là 교실, phòng họp là 회의실. "Còn phòng không?" nói 빈방 있어요? hoặc 방 있어요?
+
+  - key: ko:item:sukso
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 숙소
+      romanization: sukso
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ ở, nơi lưu trú (khách sạn, nhà nghỉ… nói chung)
+      examples:
+        - target: 숙소가 역에서 가까워서 편했어요.
+          translation:
+            vi: Chỗ ở gần ga nên rất tiện.
+      pronunciation_note:
+        vi: ㄱ cuối + ㅅ thành âm căng - đọc [숙쏘].
+      confusion:
+        vi: 숙소 là từ chung cho mọi loại chỗ ngủ khi đi xa; 호텔 chỉ là một loại 숙소. Đặt chỗ ở - 숙소를 예약하다.
+
+  - key: ko:item:bak-il
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 1박 2일 · 2박 3일
+      romanization: ilbak iil · ibak samil
+      pos: cụm danh từ (đơn vị đêm - ngày)
+    back:
+      meaning:
+        vi: 1 đêm 2 ngày, 2 đêm 3 ngày. 박 là đơn vị "đêm" (ngủ lại), 일 là "ngày"; đều đọc bằng số Hán Hàn.
+      examples:
+        - target: 제주도에 2박 3일 동안 여행을 갔어요.
+          translation:
+            vi: Tôi đã đi du lịch Jeju 3 ngày 2 đêm.
+      pronunciation_note:
+        vi: 1박 2일 đọc [일박 이일]; 2박 3일 đọc [이박 사밀] (nối âm).
+      confusion:
+        vi: Tiếng Việt nói "3 ngày 2 đêm" (ngày trước), tiếng Hàn nói 2박 3일 (đêm trước). Dùng số Hán Hàn - không đọc 두 박.
+
+  - key: ko:item:chekeuin
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 체크인 · 체크아웃
+      romanization: chekeuin · chekeuaut
+      pos: danh từ (체크인하다 - động từ)
+    back:
+      meaning:
+        vi: nhận phòng (check-in) · trả phòng (check-out)
+      examples:
+        - target: 체크인은 오후 3시부터예요. 체크아웃은 11시까지예요.
+          translation:
+            vi: Nhận phòng từ 3 giờ chiều. Trả phòng trước 11 giờ.
+      pronunciation_note:
+        vi: Từ mượn tiếng Anh nên thêm ㅡ - [체크인], không đọc "chếch-in".
+      confusion:
+        vi: Giờ bắt đầu dùng 부터, giờ hạn chót dùng 까지 - 3시부터, 11시까지.
+
+  - key: ko:item:myeot-bak
+    type: phrase
+    level: topik2
+    difficulty: 3
+    skill_tags: [speaking, listening]
+    front:
+      text: 몇 박 하실 거예요?
+      romanization: myeot bak hasil geoyeyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Quý khách sẽ ở mấy đêm ạ? (câu lễ tân hay hỏi)
+      examples:
+        - target: 몇 박 하실 거예요? - 2박 할 거예요.
+          translation:
+            vi: Quý khách ở mấy đêm ạ? - Tôi ở 2 đêm.
+      pronunciation_note:
+        vi: 몇 박 đọc [멷빡] - ㅂ thành âm căng; 거예요 đọc [거에요].
+      confusion:
+        vi: 하실 có -시- kính ngữ vì lễ tân nói với khách. Khi trả lời về mình, bỏ -시- - 2박 할 거예요 hoặc ngắn gọn 2박이요.
+
+  - key: ko:item:gakkapda
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 가깝다 → 가까워요 · 멀다 → 멀어요
+      romanization: gakkapda → gakkawoyo · meolda → meoreoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: gần · xa. Nơi làm mốc dùng 에서 - 역에서 가까워요 (gần ga).
+      examples:
+        - target: 호텔이 공항에서 멀어요? - 아니요, 가까워요.
+          translation:
+            vi: Khách sạn có xa sân bay không? - Không, gần lắm.
+      pronunciation_note:
+        vi: 가깝다 có ㄲ căng; 가까워요 không còn ㅂ. 멀어요 nối âm [머러요].
+      confusion:
+        vi: 가깝다 bất quy tắc ㅂ - 가까워요, không viết 가깝어요. Tiếng Việt "gần ga" không có trợ từ, nhưng tiếng Hàn cần 에서 - 역에서 가까워요.
+
+  - key: ko:item:pyeonhada
+    type: vocab
+    level: topik2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 편하다
+      romanization: pyeonhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: thoải mái, tiện lợi
+      examples:
+        - target: 방이 넓고 침대가 편해요.
+          translation:
+            vi: Phòng rộng và giường thoải mái.
+      pronunciation_note:
+        vi: ㅍ bật hơi - [편하다]; 편해요 đọc nhanh gần [펴내요].
+      confusion:
+        vi: 편하다 dùng cho cả "thoải mái" (giường, giày) và "tiện" (giao thông). Ngược nghĩa là 불편하다 (bất tiện, khó chịu).
+
+  # ================= bài 5: ôn tập =================
+  - key: ko:item:cheot-nal
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 첫날 · 둘째 날 · 마지막 날
+      romanization: cheonnal · dulljae nal · majimak nal
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày đầu tiên · ngày thứ hai · ngày cuối cùng (của chuyến đi, sự kiện)
+      examples:
+        - target: 첫날에는 바다를 구경하고 마지막 날에는 기념품을 샀어요.
+          translation:
+            vi: Ngày đầu tôi ngắm biển, ngày cuối tôi mua quà lưu niệm.
+      pronunciation_note:
+        vi: 첫날 đọc [천날] - patchim ㅅ thành ㄴ trước ㄴ (mũi hoá); 둘째 có ㅉ căng, đọc gọn và mạnh.
+      confusion:
+        vi: Kể nhật ký theo ngày thường thêm 에는 - 첫날에는, 둘째 날에는. 둘째 날 là "ngày thứ hai của chuyến đi", khác 이틀 (hai ngày) và 월요일 (thứ Hai).

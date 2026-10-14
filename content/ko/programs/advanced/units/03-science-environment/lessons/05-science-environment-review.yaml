@@ -1,0 +1,422 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:science-environment-review
+order_index: 5
+level: topik5
+title:
+  vi: Ôn tập - Đọc tin khoa học và nghe bài giảng về chính sách khí hậu
+objectives:
+  - vi: Đọc hiểu một bản tin khoa học và một đoạn bài giảng về chính sách khí hậu ở trình độ TOPIK 5.
+  - vi: Tìm chuỗi nguyên nhân - kết quả - giải pháp và ý chính của người nói.
+  - vi: Tự soát lỗi hay gặp của người Việt - bạn giả Hán Việt (환경, 실험), bị động kép 되어지다, 줄다/줄이다, 탓에/덕분에, -(으)ㄹ수록.
+estimated_minutes: 25
+skills: [reading, listening, grammar, vocabulary]
+prerequisites: [ko:lesson:purpose-process-trends]
+items:
+  - item: ko:item:ingongjineung
+    role: reuse
+  - item: ko:item:yeongujin
+    role: reuse
+  - item: ko:item:silheom
+    role: reuse
+  - item: ko:item:misemeonji
+    role: reuse
+  - item: ko:item:balkyeojida
+    role: reuse
+  - item: ko:item:gp-eul-surok
+    role: reuse
+  - item: ko:item:gp-neun-de-giyeohada
+    role: reuse
+  - item: ko:item:jaesaeng-eneoji
+    role: reuse
+  - item: ko:item:tanso-jungnip
+    role: reuse
+  - item: ko:item:onsil-gaseu
+    role: reuse
+  - item: ko:item:gp-neun-chuseida
+    role: reuse
+  - item: ko:item:gp-neun-tase
+    role: reuse
+  - item: ko:item:gp-l-uryeoga-itda
+    role: reuse
+  - item: ko:item:gp-e-dallyeo-itda
+    role: reuse
+  - item: ko:item:gp-goja-hada
+    role: reuse
+  - item: ko:item:gp-eum-eurosseo
+    role: reuse
+  - item: ko:item:gp-written-passive
+    role: reuse
+  - item: ko:item:wonin
+    role: reuse
+  - item: ko:item:hwangyeong
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này cho bạn đọc một bản tin khoa học và một đoạn bài giảng về chính sách khí hậu, rồi luyện tìm ý chính và viết lại các câu then chốt bằng văn viết chuẩn.
+  - type: explain
+    text:
+      vi: Bản tin khoa học thường theo khung - tiêu đề danh từ → 연구진이 … 개발했다 → 실험 결과 … 것으로 나타났다 / 사실이 밝혀졌다 → 연구진은 … 기여할 것으로 기대한다. Nhận ra khung này giúp bạn đọc nhanh phần đọc hiểu TOPIK II.
+  - type: explain
+    text:
+      vi: Bài giảng dùng 합쇼체 và đi theo khung - mở đầu -고자 합니다 → hiện trạng (-는 추세입니다) → nguyên nhân (탓에, 때문입니다) → nguy cơ (-(으)ㄹ 우려가 있습니다) → kết luận (결국, 따라서 … 달려 있습니다). Ý chính của người nói nằm ở phần kết luận.
+  - type: deep_explain
+    text:
+      vi: 'Trước khi nộp bài viết, hãy soát năm điểm - (1) không có bị động kép (되어지다, -어지어지다); (2) có tân ngữ thì dùng 줄이다/늘리다, không có thì 줄다/늘다; (3) 탓에 chỉ đi với kết quả xấu; (4) -(으)ㄹ수록 viết liền, vế sau có 더 hoặc động từ thay đổi; (5) từ Hán Hàn đúng nghĩa - 환경 là môi trường, 실험 là thí nghiệm, 시험 là kỳ thi.'
+  - type: example
+    target: "국내 연구진, AI로 미세먼지 예측 정확도 높여 / 국내 연구진이 인공지능을 활용해 미세먼지 농도를 예측하는 기술을 개발했다. 실험 결과 이 기술은 기존 방식보다 정확도가 20% 높은 것으로 나타났다. 또한 기온이 낮고 바람이 약할수록 미세먼지 농도가 더 높아진다는 사실도 밝혀졌다. 연구진은 이 기술이 시민의 건강을 지키는 데 기여할 것으로 기대한다고 밝혔다."
+    target_lang: ko
+    translation:
+      vi: "Nhóm nghiên cứu trong nước dùng AI nâng độ chính xác dự báo bụi mịn / Nhóm nghiên cứu trong nước đã phát triển công nghệ dùng trí tuệ nhân tạo để dự báo nồng độ bụi mịn. Kết quả thí nghiệm cho thấy độ chính xác của công nghệ này cao hơn phương pháp cũ 20%. Ngoài ra, nghiên cứu còn chứng minh rằng nhiệt độ càng thấp và gió càng yếu thì nồng độ bụi mịn càng cao. Nhóm nghiên cứu cho biết họ kỳ vọng công nghệ này sẽ góp phần bảo vệ sức khoẻ người dân."
+    note:
+      vi: Bản tin minh hoạ (số liệu giả định) - 개발했다, 실험 결과 … 나타났다, -(으)ㄹ수록, 밝혀졌다, -는 데 기여하다.
+  - type: example
+    target: 오늘은 기후 정책의 과제에 대해 말씀드리고자 합니다. 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않습니다. 석탄 발전에 의존하는 탓에 온실가스 배출량이 크게 줄지 않고 있기 때문입니다. 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다. 결국 정책의 성공은 시민과 기업이 얼마나 참여하느냐에 달려 있습니다.
+    target_lang: ko
+    translation:
+      vi: Hôm nay tôi xin trình bày về những thách thức của chính sách khí hậu. Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ. Đó là vì do phụ thuộc vào nhiệt điện than nên lượng phát thải khí nhà kính không giảm nhiều. Cứ thế này thì có nguy cơ không đạt được mục tiêu trung hoà carbon. Rốt cuộc, thành công của chính sách phụ thuộc vào mức độ tham gia của người dân và doanh nghiệp.
+    note:
+      vi: Trích đoạn bài giảng (nội dung minh hoạ) - -고자 합니다, -는 추세이다, 탓에, -(으)ㄹ 우려가 있다, 에 달려 있다.
+  - type: example
+    target: 대중교통을 이용함으로써 탄소 배출을 줄일 수 있으며, 이는 미세먼지를 방지하는 데에도 효과가 있다.
+    target_lang: ko
+    translation:
+      vi: Bằng cách dùng phương tiện công cộng, ta có thể giảm phát thải carbon, và điều này cũng có tác dụng ngăn ngừa bụi mịn.
+    note:
+      vi: Câu giải pháp điển hình - -(으)ㅁ으로써, -(으)며, -는 데에 효과가 있다.
+  - type: common_mistake
+    wrong: 실험 결과 새로운 사실이 밝혀지어졌다.
+    right: 실험 결과 새로운 사실이 밝혀졌다.
+    target_lang: ko
+    note:
+      vi: 밝혀지다 đã là bị động (밝히다 + -어지다). Thêm một lớp -어지다 nữa là bị động kép.
+  - type: common_mistake
+    wrong: 정부의 지원 탓에 재생 에너지 기업이 크게 성장했다.
+    right: 정부의 지원 덕분에 재생 에너지 기업이 크게 성장했다.
+    target_lang: ko
+    note:
+      vi: Kết quả tốt (doanh nghiệp tăng trưởng) nên dùng 덕분에. 탓에 chỉ dùng khi đổ lỗi cho nguyên nhân của kết quả xấu.
+  - type: summary
+    points:
+      - vi: Bản tin khoa học - 연구진이 … 개발했다 → 실험 결과 … 나타났다 / 밝혀졌다 → … 기여할 것으로 기대한다.
+      - vi: Bài giảng - -고자 합니다 → -는 추세 → 탓에 → -(으)ㄹ 우려가 있다 → 결국 … 에 달려 있다.
+      - vi: Ý chính nằm ở phần kết luận, giải pháp - không chọn chi tiết số liệu.
+      - vi: Soát lỗi - 되어지다 · 줄다/줄이다 · 탓에/덕분에 · -(으)ㄹ수록 · 환경/실험.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:science-environment-review-mcq-article
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:yeongujin
+    prompt:
+      stem: "Đọc tin: 국내 연구진이 인공지능을 활용해 미세먼지 농도를 예측하는 기술을 개발했다. 실험 결과 이 기술은 기존 방식보다 정확도가 20% 높은 것으로 나타났다. 또한 기온이 낮고 바람이 약할수록 미세먼지 농도가 더 높아진다는 사실도 밝혀졌다. Nội dung nào đúng với bản tin?"
+      stem_lang: vi
+      options:
+        - { id: a3k, text: Gió càng yếu thì nồng độ bụi mịn càng cao., lang: vi }
+        - { id: b8m, text: Công nghệ mới kém chính xác hơn phương pháp cũ 20%., lang: vi }
+        - { id: c5p, text: Nhiệt độ càng cao thì bụi mịn càng nhiều., lang: vi }
+        - { id: d1r, text: Nhóm nghiên cứu nước ngoài đã phát triển công nghệ này., lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: 기온이 낮고 바람이 약할수록 농도가 더 높아진다 - nhiệt độ càng thấp, gió càng yếu thì bụi mịn càng cao. Công nghệ chính xác hơn 20% (높은), và 국내 연구진 là nhóm trong nước.
+    display_answer: Gió càng yếu thì nồng độ bụi mịn càng cao.
+
+  - key: ko:exercise:science-environment-review-mcq-lecture
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gp-e-dallyeo-itda
+    prompt:
+      stem: "Đọc đoạn bài giảng: 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않습니다. 석탄 발전에 의존하는 탓에 온실가스 배출량이 크게 줄지 않고 있기 때문입니다. 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다. 결국 정책의 성공은 시민과 기업이 얼마나 참여하느냐에 달려 있습니다. Ý chính của người nói là gì?"
+      stem_lang: vi
+      options:
+        - { id: e7t, text: Thành công của chính sách khí hậu phụ thuộc vào sự tham gia của người dân và doanh nghiệp., lang: vi }
+        - { id: f2w, text: Tỉ trọng năng lượng tái tạo đang tăng nên không cần lo lắng., lang: vi }
+        - { id: g9y, text: Nên tăng nhiệt điện than để đạt mục tiêu trung hoà carbon., lang: vi }
+        - { id: h4z, text: Mục tiêu trung hoà carbon chắc chắn đã thất bại., lang: vi }
+    answer:
+      correct_option_id: e7t
+    explanation:
+      vi: Kết luận sau 결국 là ý chính - 정책의 성공은 … 참여하느냐에 달려 있다. 우려가 있다 là "có nguy cơ", chưa phải "đã thất bại"; năng lượng tái tạo tăng nhưng 아직 충분하지 않다.
+    display_answer: Thành công của chính sách khí hậu phụ thuộc vào sự tham gia của người dân và doanh nghiệp.
+
+  - key: ko:exercise:science-environment-review-listen-uryeo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gp-l-uryeoga-itda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이대로 가면 탄소 중립 목표를 달성하지 못할 우려가 있습니다.
+      options:
+        - { id: i6c, text: "Cứ thế này, có nguy cơ không đạt được mục tiêu trung hoà carbon.", lang: vi }
+        - { id: j3e, text: "Cứ thế này, chắc chắn sẽ đạt mục tiêu trung hoà carbon.", lang: vi }
+        - { id: k8g, text: "Chúng ta đã không đạt được mục tiêu trung hoà carbon.", lang: vi }
+        - { id: l5i, text: "Mục tiêu trung hoà carbon đã được thay đổi.", lang: vi }
+    answer:
+      correct_option_id: i6c
+    explanation:
+      vi: 달성하지 못할 우려가 있다 = có nguy cơ không đạt được - một dự đoán xấu, chưa xảy ra. 이대로 가면 = cứ đà này.
+    display_answer: "Cứ thế này, có nguy cơ không đạt được mục tiêu trung hoà carbon."
+
+  - key: ko:exercise:science-environment-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-eul-surok
+    prompt:
+      template: "기온이 낮고 바람이 약할{{b1}} 미세먼지 농도가 더 높아진다. 이 기술은 시민의 건강을 지키는 데 {{b2}}할 것이다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Nhiệt độ càng thấp và gió càng yếu thì nồng độ bụi mịn càng cao. Công nghệ này sẽ góp phần bảo vệ sức khoẻ người dân."
+        - "Gợi ý: \"càng\" - -(으)ㄹ___; \"góp phần\" - -는 데 기___하다."
+    answer:
+      blanks:
+        b1: [수록]
+        b2: [기여]
+    known_wrong:
+      - answer: 때
+        feedback_vi: 약할 때 chỉ là "khi yếu". Ý "càng … càng" cần -(으)ㄹ수록.
+        error_tag: surok_missing
+      - answer: 공헌
+        feedback_vi: 공헌하다 cũng là "cống hiến" nhưng mang sắc thái trang trọng về con người; cụm cố định trong tin khoa học là -는 데 기여하다.
+        error_tag: giyeo_collocation
+    explanation:
+      vi: 약하다 → 약할수록 (càng yếu). -는 데 기여하다 = góp phần vào việc…, đúng khung câu kết của bản tin khoa học.
+    display_answer: 기온이 낮고 바람이 약할수록 미세먼지 농도가 더 높아진다. 이 기술은 시민의 건강을 지키는 데 기여할 것이다.
+
+  - key: ko:exercise:science-environment-review-wb-eurosseo
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gp-eum-eurosseo
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bằng cách dùng phương tiện công cộng, ta có thể giảm phát thải carbon.\""
+      tokens:
+        - { id: r3, text: 탄소 배출을 }
+        - { id: r5, text: 이용하므로써 }
+        - { id: r1, text: 대중교통을 }
+        - { id: r4, text: 줄일 수 있다 }
+        - { id: r2, text: 이용함으로써 }
+    answer:
+      orders:
+        - [r1, r2, r3, r4]
+    explanation:
+      vi: "\"Bằng cách\" là -(으)ㅁ으로써 - 이용함으로써. 이용하므로써 là lỗi trộn -(으)므로 (vì) với -(으)ㅁ으로써."
+    display_answer: 대중교통을 이용함으로써 탄소 배출을 줄일 수 있다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:science-environment-review-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-neun-tase
+    prompt:
+      template: "(Vì phụ thuộc vào nhiệt điện than nên lượng phát thải không giảm nhiều.) 석탄 발전에 의존하는 {{b1}}에 배출량이 크게 줄지 않는다. (Lượng phát thải khí nhà kính phải được giảm.) 정부는 온실가스 배출량을 {{b2}} 한다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [탓]
+        b2: [줄여야]
+    known_wrong:
+      - answer: 덕분
+        feedback_vi: Lượng phát thải không giảm là kết quả xấu - dùng 탓에, không dùng 덕분에.
+        error_tag: tase_vs_deokbune
+      - answer: 줄어야
+        feedback_vi: Có tân ngữ 배출량을 nên phải dùng 줄이다 → 줄여야.
+        error_tag: causative_needed
+      - answer: 줄여져야
+        feedback_vi: Chủ ngữ là 정부는 và có tân ngữ, nên dùng chủ động 줄여야 한다.
+        error_tag: passive_unneeded
+    explanation:
+      vi: -는 탓에 nêu nguyên nhân của kết quả xấu (không giảm được). Chính phủ là chủ thể làm giảm 배출량을 → 줄이다 + -어야 하다 = 줄여야 한다.
+    display_answer: 석탄 발전에 의존하는 탓에 배출량이 크게 줄지 않는다. / 정부는 온실가스 배출량을 줄여야 한다.
+
+  - key: ko:exercise:science-environment-review-translate-chuse
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-neun-chuseida
+    prompt:
+      source_text: Tỉ trọng năng lượng tái tạo đang có xu hướng tăng. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 재생 에너지의 비중이 늘어나는 추세이다.
+        - 재생 에너지의 비중이 늘어나는 추세다.
+        - 재생 에너지의 비중이 커지는 추세이다.
+        - 재생 에너지의 비중이 커지는 추세다.
+        - 재생 에너지의 비중이 높아지는 추세이다.
+        - 재생 에너지의 비중이 높아지는 추세다.
+        - 재생 에너지의 비중이 증가하는 추세이다.
+        - 재생 에너지의 비중이 증가하는 추세다.
+        - 재생 에너지 비중이 늘어나는 추세이다.
+        - 재생 에너지 비중이 커지는 추세이다.
+        - 재생 에너지 비중이 높아지는 추세이다.
+        - 재생 에너지 비중이 증가하는 추세이다.
+        - 재생 에너지의 비중은 늘어나는 추세이다.
+        - 재생 에너지의 비중이 늘고 있는 추세이다.
+    known_wrong:
+      - answer: 재생 에너지의 비중이 많은 추세이다.
+        feedback_vi: 추세 đi với động từ thay đổi (늘어나는, 커지는), không đi với tính từ tĩnh 많은.
+        error_tag: chuse_static_adjective
+      - answer: 재활용 에너지의 비중이 늘어나는 추세이다.
+        feedback_vi: Năng lượng tái tạo là 재생 에너지; 재활용 là tái chế vật liệu.
+        error_tag: jaesaeng_jaehwalyong
+      - answer: 재생 에너지의 비중이 늘어나는 추세입니다.
+        feedback_vi: Đây là 합쇼체 (văn nói trang trọng). Đề yêu cầu văn viết -다 - 추세이다.
+        error_tag: register_written
+    explanation:
+      vi: 비중 = tỉ trọng; động từ thay đổi + -는 추세이다 (rút gọn 추세다). Năng lượng tái tạo là 재생 에너지.
+    display_answer: 재생 에너지의 비중이 늘어나는 추세이다.
+
+  - key: ko:exercise:science-environment-review-translate-wonin
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:balkyeojida
+    prompt:
+      source_text: Nguyên nhân của vụ tai nạn vẫn chưa được làm rõ. (văn viết, đuôi -다)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 사고의 원인은 아직 밝혀지지 않았다.
+        - 사고의 원인이 아직 밝혀지지 않았다.
+        - 사고 원인은 아직 밝혀지지 않았다.
+        - 사고 원인이 아직 밝혀지지 않았다.
+        - 아직 사고의 원인은 밝혀지지 않았다.
+        - 아직 사고의 원인이 밝혀지지 않았다.
+        - 아직 사고 원인이 밝혀지지 않았다.
+    known_wrong:
+      - answer: 사고의 원인은 아직 밝히지 않았다.
+        feedback_vi: Nguyên nhân là thứ "được làm rõ" nên dùng bị động 밝혀지다 → 밝혀지지 않았다.
+        error_tag: passive_needed
+      - answer: 사고의 원인은 아직 밝혀지어지지 않았다.
+        feedback_vi: Bị động kép. Dạng đúng là 밝혀지지 않았다.
+        error_tag: double_passive
+      - answer: 사고의 원인은 아직 밝혀지지 않았어요.
+        feedback_vi: Đây là 해요체. Văn viết là 않았다.
+        error_tag: haeyo_in_writing
+    explanation:
+      vi: 원인 (nguyên nhân) là chủ ngữ được làm rõ → bị động 밝혀지다; "vẫn chưa" là 아직 + -지 않았다.
+    display_answer: 사고의 원인은 아직 밝혀지지 않았다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:science-environment-review-mcq-proofread
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-written-passive
+    prompt:
+      stem: "Bạn soát lại bài viết. Câu nào KHÔNG có lỗi?"
+      stem_lang: vi
+      options:
+        - { id: m2a, text: 새로운 실험 방법이 개발되면서 연구 기간이 줄었다., lang: ko }
+        - { id: n7b, text: 새로운 시험 방법이 개발되어지면서 연구 기간이 줄었다., lang: ko }
+        - { id: o4c, text: 정부의 지원 탓에 연구 기간을 크게 줄었다., lang: ko }
+        - { id: p9d, text: 실험 환경이 어려워서 연구진은 연구 기간을 늘었다., lang: ko }
+    answer:
+      correct_option_id: m2a
+    explanation:
+      vi: 개발되면서 là bị động một lớp, 연구 기간이 줄었다 là tự giảm (không tân ngữ) - đúng. Các câu khác có 되어지다, 탓에 với kết quả tốt, 기간을 줄었다/늘었다 (thiếu dạng gây khiến 줄였다/늘렸다).
+    display_answer: 새로운 실험 방법이 개발되면서 연구 기간이 줄었다.
+
+  - key: ko:exercise:science-environment-review-mcq-summary
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-goja-hada
+    prompt:
+      stem: "Bạn tóm tắt bài giảng về chính sách khí hậu trong một câu cho báo cáo (văn viết -다). Câu nào đúng nội dung và văn phong?"
+      stem_lang: vi
+      options:
+        - { id: q3e, text: 탄소 중립의 성공은 시민과 기업의 참여에 달려 있다., lang: ko }
+        - { id: r8f, text: 탄소 중립의 성공은 시민과 기업의 참여에 달려 있어요., lang: ko }
+        - { id: s5g, text: 탄소 중립의 성공은 시민과 기업의 참여를 의존한다., lang: ko }
+        - { id: t1h, text: 탄소 중립은 석탄 발전 덕분에 이미 달성되었다., lang: ko }
+    answer:
+      correct_option_id: q3e
+    explanation:
+      vi: Kết luận bài giảng là thành công phụ thuộc vào sự tham gia - N에 달려 있다, đuôi -다. 있어요 là 해요체; 의존하다 vừa sai nghĩa vừa sai trợ từ; câu cuối trái nội dung.
+    display_answer: 탄소 중립의 성공은 시민과 기업의 참여에 달려 있다.
+
+  - key: ko:exercise:science-environment-review-wb-giyeo
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gp-neun-de-giyeohada
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nhóm nghiên cứu kỳ vọng công nghệ này sẽ góp phần bảo vệ sức khoẻ người dân.\""
+      tokens:
+        - { id: w4, text: 기여할 것으로 }
+        - { id: w2, text: 이 기술이 }
+        - { id: w6, text: 지키는 데를 }
+        - { id: w5, text: 기대한다 }
+        - { id: w1, text: 연구진은 }
+        - { id: w3, text: 시민의 건강을 지키는 데 }
+    answer:
+      orders:
+        - [w1, w2, w3, w4, w5]
+    explanation:
+      vi: Khung kết bản tin - 연구진은 + [nội dung kỳ vọng] + -(으)ㄹ 것으로 기대한다. 기여하다 đi với 에 nên 지키는 데를 là sai.
+    display_answer: 연구진은 이 기술이 시민의 건강을 지키는 데 기여할 것으로 기대한다.
+
+  - key: ko:exercise:science-environment-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:jaesaeng-eneoji
+    prompt:
+      source_text: 재생 에너지의 비중은 늘어나는 추세이지만 아직 충분하지 않다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+        - Tỷ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+        - Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đầy đủ.
+        - Tỉ trọng năng lượng tái tạo đang có xu hướng tăng lên nhưng vẫn chưa đủ.
+        - Tỷ trọng năng lượng tái tạo đang có xu hướng tăng lên nhưng vẫn chưa đủ.
+        - Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn còn chưa đủ.
+        - Tỉ trọng năng lượng tái tạo có xu hướng tăng nhưng vẫn chưa đủ.
+        - Tỉ trọng năng lượng tái tạo đang tăng nhưng vẫn chưa đủ.
+        - Tỷ trọng năng lượng tái tạo đang tăng nhưng vẫn chưa đủ.
+        - Dù tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+        - Mặc dù tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tỉ trọng năng lượng tái tạo đang có xu hướng giảm nhưng vẫn đủ.
+        feedback_vi: 늘어나다 là "tăng", 충분하지 않다 là "chưa đủ".
+        error_tag: meaning_reversed
+      - answer: Tỉ trọng năng lượng tái chế đang có xu hướng tăng nhưng vẫn chưa đủ.
+        feedback_vi: 재생 에너지 là năng lượng tái tạo, không phải "tái chế" (재활용).
+        error_tag: jaesaeng_jaehwalyong
+    explanation:
+      vi: 비중 = tỉ trọng; -는 추세이다 = đang có xu hướng; -지만 = nhưng; 아직 충분하지 않다 = vẫn chưa đủ.
+    display_answer: Tỉ trọng năng lượng tái tạo đang có xu hướng tăng nhưng vẫn chưa đủ.

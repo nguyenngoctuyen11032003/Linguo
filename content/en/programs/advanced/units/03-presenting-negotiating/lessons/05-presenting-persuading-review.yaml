@@ -1,0 +1,444 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:presenting-persuading-review
+order_index: 5
+level: c2
+title:
+  vi: Ôn tập - Bài thuyết trình & cuộc tranh luận
+objectives:
+  - vi: Theo dõi một bài thuyết trình hoàn chỉnh và một cuộc tranh luận có cấu trúc, nhận ra signposting, biện pháp tu từ, nhượng bộ và phản bác.
+  - vi: Phối hợp các công cụ của cả unit để mở đầu, lập luận, trả lời chất vấn và kết thúc thuyết phục.
+  - vi: Tự sửa các lỗi hay gặp - present/discuss/emphasise about, While… but, actually thay cho currently, phản đối quá thẳng.
+estimated_minutes: 25
+skills: [listening, reading, speaking, grammar, vocabulary]
+prerequisites: [en:lesson:qa-debate]
+items:
+  - item: en:item:food-for-thought
+  - item: en:item:burden-of-proof
+  - item: en:item:id-like-to-begin-by
+    role: reuse
+  - item: en:item:divided-into-parts
+    role: reuse
+  - item: en:item:this-brings-me-to
+    role: reuse
+  - item: en:item:to-put-this-into-perspective
+    role: reuse
+  - item: en:item:to-recap
+    role: reuse
+  - item: en:item:give-a-presentation-on
+    role: reuse
+  - item: en:item:tricolon
+    role: reuse
+  - item: en:item:rhetorical-question
+    role: reuse
+  - item: en:item:far-from
+    role: reuse
+  - item: en:item:it-is-precisely-that
+    role: reuse
+  - item: en:item:all-we-need-is
+    role: reuse
+  - item: en:item:admittedly
+    role: reuse
+  - item: en:item:while-it-is-true-that
+    role: reuse
+  - item: en:item:that-said
+    role: reuse
+  - item: en:item:actually-currently
+    role: reuse
+  - item: en:item:see-it-differently
+    role: reuse
+  - item: en:item:concede
+    role: reuse
+  - item: en:item:rebut
+    role: reuse
+  - item: en:item:compelling
+    role: reuse
+  - item: en:item:flawed-reasoning
+    role: reuse
+  - item: en:item:with-all-due-respect
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đưa bạn vào hai tình huống thật - một bài thuyết trình ngắn đề xuất tuần làm việc bốn ngày và một phần tranh luận có cấu trúc về chính đề xuất đó. Bạn sẽ thấy các công cụ của cả unit phối hợp với nhau ra sao.
+  - type: explain
+    text:
+      vi: Bài thuyết trình đi theo khung - mở đầu (I'd like to begin by…), bố cục (I've divided my talk into…), triển khai với số liệu (To put this into perspective…), chuyển ý (This brings me to…), kết bằng tóm tắt và một câu gây suy ngẫm. Tu từ (bộ ba, câu hỏi tu từ, phép đối) xuất hiện ở đầu và cuối, nơi khán giả chú ý nhất.
+  - type: explain
+    text:
+      vi: Trong tranh luận, mỗi lượt lời thường có ba nhịp - nhượng bộ (I'm willing to concede…, Admittedly…), phản bác (That said…, I see it somewhat differently…), và đưa bằng chứng. Hai cụm mới - the burden of proof is on… (bên đề xuất phải chứng minh) và food for thought (điều đáng suy ngẫm).
+  - type: deep_explain
+    text:
+      vi: Khi tự kiểm tra bài nói C2, hãy dò - (1) present/discuss/emphasise/mention có thừa about không; (2) While/Although có kéo theo but không; (3) actually có bị dùng thay currently không; (4) lời phản đối nhắm vào lập luận hay vào người nói; (5) câu hỏi gián tiếp đã dùng trật tự câu kể chưa.
+  - type: example
+    target: "Good afternoon, everyone. I'd like to begin by asking you a simple question: when did you last do your best work at 5 p.m. on a Friday? I've divided my talk into three parts: the problem, the evidence and the proposal. Our staff currently work 40 hours a week, yet productivity has fallen for two years. To put this into perspective, we lose the equivalent of one working day per person every week."
+    target_lang: en
+    translation:
+      vi: "Chào buổi chiều mọi người. Tôi xin bắt đầu bằng một câu hỏi đơn giản - lần gần nhất bạn làm việc tốt nhất vào lúc 5 giờ chiều thứ Sáu là khi nào? Tôi chia bài nói thành ba phần - vấn đề, bằng chứng và đề xuất. Nhân viên của chúng ta hiện làm 40 giờ mỗi tuần, vậy mà năng suất đã giảm suốt hai năm. Để dễ hình dung, mỗi tuần chúng ta mất tương đương một ngày làm việc của mỗi người."
+    note:
+      vi: Thuyết trình (phần 1) - mở bằng câu hỏi tu từ, giới thiệu bố cục, dùng currently (không phải actually) và đặt con số vào bối cảnh.
+  - type: example
+    target: "This brings me to the evidence. Companies that have tried a four-day week report fewer sick days, lower staff turnover and, far from losing output, higher productivity. To recap: the problem is real, the evidence is compelling, and the cost of a trial is small. It is precisely because we value our people that we should try this. I'll leave you with some food for thought: the question is not whether we can afford to change, but whether we can afford not to."
+    target_lang: en
+    translation:
+      vi: "Điều này dẫn tôi đến phần bằng chứng. Các công ty đã thử tuần làm việc bốn ngày cho biết số ngày nghỉ ốm ít hơn, nhân viên nghỉ việc ít hơn và, không những không giảm sản lượng, năng suất còn cao hơn. Tóm lại - vấn đề là có thật, bằng chứng thuyết phục và chi phí thử nghiệm rất nhỏ. Chính vì chúng ta trân trọng nhân viên nên chúng ta nên thử. Tôi xin để lại một điều để các bạn suy ngẫm - câu hỏi không phải là chúng ta có đủ khả năng thay đổi hay không, mà là chúng ta có thể không thay đổi hay không."
+    note:
+      vi: Thuyết trình (phần 2) - hai bộ ba (fewer…, lower…, higher…; the problem…, the evidence…, the cost…), Far from, câu chẻ precisely và phép đối ở câu kết.
+  - type: example
+    target: "Opposition: With all due respect, the evidence is far from conclusive. Most of the studies cover small tech firms, not manufacturers like us. Presenter: I'm willing to concede that point - our situation is different. That said, a six-month trial in one department would give us our own data."
+    target_lang: en
+    translation:
+      vi: "Phản biện: Với tất cả sự tôn trọng, bằng chứng còn lâu mới đủ để kết luận. Phần lớn nghiên cứu là về các công ty công nghệ nhỏ, không phải nhà sản xuất như chúng ta. Người thuyết trình: Tôi sẵn sàng nhượng bộ điểm đó - hoàn cảnh của chúng ta khác. Dù vậy, một đợt thử nghiệm sáu tháng ở một bộ phận sẽ cho chúng ta số liệu của riêng mình."
+    note:
+      vi: Tranh luận (lượt 1) - phản biện mở bằng With all due respect; người thuyết trình nhượng bộ (concede) rồi phản bác (That said).
+  - type: example
+    target: "Opposition: Granted, a trial is low-risk. But the burden of proof is on you: what happens if output falls? Presenter: That's a fair question. If output drops by more than five per cent, we end the trial. All we need is the chance to find out."
+    target_lang: en
+    translation:
+      vi: "Phản biện: Công nhận là thử nghiệm ít rủi ro. Nhưng anh có nghĩa vụ chứng minh - nếu sản lượng giảm thì sao? Người thuyết trình: Câu hỏi rất hợp lý. Nếu sản lượng giảm hơn năm phần trăm, chúng ta sẽ dừng thử nghiệm. Tất cả những gì chúng ta cần là một cơ hội để kiểm chứng."
+    note:
+      vi: Tranh luận (lượt 2) - Granted nhượng bộ, the burden of proof chuyển trách nhiệm chứng minh; người thuyết trình ghi nhận câu hỏi rồi trả lời ngắn. Không ai nói "You are wrong".
+  - type: example
+    target: The burden of proof lies with those who want to change the system, not with those who want to keep it.
+    target_lang: en
+    translation:
+      vi: Nghĩa vụ chứng minh thuộc về những người muốn thay đổi hệ thống, chứ không phải những người muốn giữ nguyên.
+    note:
+      vi: The burden of proof lies with / is on + người; câu còn dùng phép đối not with….
+  - type: common_mistake
+    wrong: Today I will discuss about the four-day week and emphasise about its benefits.
+    right: Today I'll be discussing the four-day week and emphasising its benefits.
+    target_lang: en
+    note:
+      vi: Discuss và emphasise nhận tân ngữ trực tiếp; "về" trong tiếng Việt không chuyển thành about.
+  - type: common_mistake
+    wrong: Actually, our staff work 40 hours a week.
+    right: Currently, our staff work 40 hours a week.
+    target_lang: en
+    note:
+      vi: Muốn nói "hiện nay" thì dùng currently; actually ở đầu câu nghe như bạn đang đính chính một hiểu lầm.
+  - type: common_mistake
+    wrong: While it is true that a trial costs money, but the benefits are greater.
+    right: While it is true that a trial costs money, the benefits are greater.
+    target_lang: en
+    note:
+      vi: Mệnh đề While đã mang nghĩa đối lập; thêm but là lặp, giống lỗi Although… but.
+  - type: summary
+    points:
+      - vi: Khung thuyết trình - mở đầu → bố cục → số liệu đặt vào bối cảnh → chuyển ý → tóm tắt → câu kết gây suy ngẫm.
+      - vi: Tu từ ở đầu và cuối - câu hỏi tu từ, bộ ba, phép đối, It is precisely… that….
+      - vi: Tranh luận - nhượng bộ (concede, Granted, Admittedly) → phản bác (That said, I see it somewhat differently) → bằng chứng.
+      - vi: Cụm mới - the burden of proof is on / lies with…; food for thought (không đếm được).
+      - vi: Tự sửa - bỏ about sau present/discuss/emphasise; bỏ but sau While; currently ≠ actually.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:persuade-review-mcq-perspective
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:to-put-this-into-perspective
+    prompt:
+      stem: "Trong bài thuyết trình, câu \"To put this into perspective, we lose the equivalent of one working day per person every week\" có tác dụng gì?"
+      stem_lang: vi
+      options:
+        - { id: x5n, text: "Biến con số năng suất giảm thành hình ảnh cụ thể, dễ hình dung.", lang: vi }
+        - { id: d8q, text: "Nêu quan điểm cá nhân của người nói về tuần làm việc.", lang: vi }
+        - { id: m2e, text: "Chuyển sang phần đề xuất của bài nói.", lang: vi }
+        - { id: k6w, text: "Thừa nhận một điểm yếu của đề xuất.", lang: vi }
+    answer:
+      correct_option_id: x5n
+    explanation:
+      vi: To put this into perspective báo hiệu một phép so sánh giúp khán giả "thấy" độ lớn của vấn đề. Perspective ở đây không phải "quan điểm"; câu chuyển ý là This brings me to….
+    display_answer: "Biến con số năng suất giảm thành hình ảnh cụ thể, dễ hình dung."
+
+  - key: en:exercise:persuade-review-mcq-concession
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:concede
+    prompt:
+      stem: Trong cuộc tranh luận, câu nào là lời NHƯỢNG BỘ của người thuyết trình?
+      stem_lang: vi
+      options:
+        - { id: h3a, text: "I'm willing to concede that point - our situation is different.", lang: en }
+        - { id: u7r, text: "With all due respect, the evidence is far from conclusive.", lang: en }
+        - { id: o1c, text: "But the burden of proof is on you.", lang: en }
+        - { id: f9g, text: "If output drops by more than five per cent, we end the trial.", lang: en }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: Concede that point = thừa nhận điểm đối phương nêu. Hai câu kế là lời phản biện của phía bên kia; câu cuối là cam kết, không phải nhượng bộ.
+    display_answer: "I'm willing to concede that point - our situation is different."
+
+  - key: en:exercise:persuade-review-listen-food-for-thought
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:food-for-thought
+    prompt:
+      audio_asset_id: null
+      fallback_text: "I'll leave you with some food for thought: the question is not whether we can afford to change, but whether we can afford not to."
+      options:
+        - { id: r4j, text: "Người nói kết bài bằng một ý để suy ngẫm - không thay đổi mới là điều tốn kém.", lang: vi }
+        - { id: e9v, text: "Người nói mời khán giả ăn nhẹ sau bài thuyết trình.", lang: vi }
+        - { id: y3m, text: "Người nói thừa nhận công ty không đủ tiền để thay đổi.", lang: vi }
+        - { id: c6b, text: "Người nói hỏi khán giả có muốn thay đổi hay không và chờ câu trả lời.", lang: vi }
+    answer:
+      correct_option_id: r4j
+    explanation:
+      vi: Food for thought là thành ngữ "điều đáng suy ngẫm", không liên quan đến đồ ăn. Phép đối not whether… but whether… chuyển câu hỏi từ "có đủ tiền thay đổi không" sang "có chịu nổi việc không thay đổi không".
+    display_answer: "Người nói kết bài bằng một ý để suy ngẫm - không thay đổi mới là điều tốn kém."
+
+  - key: en:exercise:persuade-review-fill-burden-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:burden-of-proof
+    prompt:
+      template: "You're the one proposing the change, so the burden of {{b1}} is on you. I'm willing to {{b2}} that a trial is low-risk, but I need numbers."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Anh là người đề xuất thay đổi, nên anh có nghĩa vụ chứng minh. Tôi sẵn sàng thừa nhận thử nghiệm ít rủi ro, nhưng tôi cần số liệu."
+        - "Gợi ý: ô 1 là danh từ \"bằng chứng\" (p…); ô 2 là động từ \"thừa nhận, nhượng bộ\" (c…)."
+    answer:
+      blanks:
+        b1: [proof]
+        b2: [concede, admit, accept, grant, acknowledge]
+    known_wrong:
+      - answer: prove
+        feedback_vi: Sau of cần danh từ - the burden of proof; prove là động từ.
+        error_tag: word_form
+      - answer: evidences
+        feedback_vi: Cụm cố định là the burden of proof; evidence cũng không có dạng số nhiều.
+        error_tag: collocation
+      - answer: concession
+        feedback_vi: Sau willing to cần động từ - concede; concession là danh từ.
+        error_tag: word_form
+    explanation:
+      vi: The burden of proof is on + người = người đó phải chứng minh. Be willing to concede that… = sẵn sàng thừa nhận rằng….
+    display_answer: You're the one proposing the change, so the burden of proof is on you. I'm willing to concede that a trial is low-risk, but I need numbers.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:persuade-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:this-brings-me-to
+    prompt:
+      template: "I'd like to begin {{b1}} sharing a surprising figure. … This brings me {{b2}} my second point. … {{b3}}, the plan has risks. That said, our staff {{b4}} work longer hours than anyone else in the industry."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 11 }
+        - { id: b4, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [by]
+        b2: [to]
+        b3: [admittedly, granted, undeniably]
+        b4: [currently]
+    known_wrong:
+      - answer: with
+        feedback_vi: Begin by + V-ing (bắt đầu bằng việc làm gì); begin with đi với danh từ.
+        error_tag: preposition
+      - answer: actually
+        feedback_vi: Ý câu là "hiện nay" - dùng currently; actually là "thật ra".
+        error_tag: actually_currently
+      - answer: admitted
+        feedback_vi: Đầu câu cần trạng từ nhượng bộ admittedly, không phải quá khứ phân từ admitted.
+        error_tag: word_form
+    explanation:
+      vi: Begin by + V-ing mở đầu; This brings me to chuyển ý; Admittedly/Granted nhượng bộ trước That said; currently = hiện nay.
+    display_answer: I'd like to begin by sharing a surprising figure. … This brings me to my second point. … Admittedly, the plan has risks. That said, our staff currently work longer hours than anyone else in the industry.
+
+  - key: en:exercise:persuade-review-translate-precisely
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:it-is-precisely-that
+    prompt:
+      source_text: Chính vì lý do này mà chúng ta không thể chờ thêm nữa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It is precisely for this reason that we cannot wait any longer.
+        - It is precisely for this reason that we can't wait any longer.
+        - It's precisely for this reason that we cannot wait any longer.
+        - It's precisely for this reason that we can't wait any longer.
+        - It is precisely for this reason that we cannot wait any more.
+        - It is precisely for this reason that we can no longer wait.
+        - It is for precisely this reason that we cannot wait any longer.
+        - It is for precisely this reason that we can't wait any longer.
+        - It is precisely because of this that we cannot wait any longer.
+        - It is precisely because of this that we can't wait any longer.
+        - That is precisely why we cannot wait any longer.
+        - That's precisely why we can't wait any longer.
+        - This is precisely why we cannot wait any longer.
+        - This is precisely why we can't wait any longer.
+        - It is exactly for this reason that we cannot wait any longer.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It is precisely for this reason that so we cannot wait any longer.
+        feedback_vi: Câu chẻ đã có that nối hai vế; bỏ so.
+        error_tag: cleft_that
+      - answer: It is precise for this reason that we cannot wait any longer.
+        feedback_vi: Cần trạng từ precisely, không phải tính từ precise.
+        error_tag: word_form
+      - answer: Precisely this reason we cannot wait any longer.
+        feedback_vi: Thiếu khung câu chẻ It is… that… (hoặc That is precisely why…).
+        error_tag: cleft_that
+    explanation:
+      vi: It is precisely for this reason that… = Chính vì lý do này mà…. That is precisely why… là cách nói ngắn, tự nhiên hơn trong văn nói.
+    display_answer: It is precisely for this reason that we cannot wait any longer.
+
+  - key: en:exercise:persuade-review-translate-to-vi-far-from
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:far-from
+    prompt:
+      source_text: Far from being a luxury, good design is a necessity.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thiết kế tốt không phải là thứ xa xỉ mà là điều cần thiết.
+        - Thiết kế tốt không hề là thứ xa xỉ mà là một nhu cầu thiết yếu.
+        - Thiết kế tốt không phải là xa xỉ mà là điều cần thiết.
+        - Thiết kế tốt chẳng phải thứ xa xỉ mà là điều cần thiết.
+        - Thiết kế tốt không những không phải là thứ xa xỉ mà còn là điều cần thiết.
+        - Thiết kế tốt không phải là một thứ xa xỉ, mà là một điều cần thiết.
+        - Thiết kế tốt không phải là thứ xa xỉ, nó là điều thiết yếu.
+        - Thiết kế đẹp không phải là thứ xa xỉ mà là điều cần thiết.
+        - Thiết kế tốt không hề xa xỉ mà là điều cần thiết.
+        - Còn lâu thiết kế tốt mới là thứ xa xỉ, nó là điều cần thiết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thiết kế tốt ở xa sự xa xỉ và là điều cần thiết.
+        feedback_vi: Far from ở đây không chỉ khoảng cách; nó phủ nhận - "không hề là".
+        error_tag: literal_translation
+      - answer: Thiết kế tốt là thứ xa xỉ và cần thiết.
+        feedback_vi: Câu gốc phủ nhận ý "xa xỉ"; far from being a luxury = hoàn toàn không phải thứ xa xỉ.
+        error_tag: meaning
+    explanation:
+      vi: Far from being X, Y = không hề là X, mà là Y. Đây là phép đối - gạt bỏ một cách nhìn để đưa ra cách nhìn ngược lại.
+    display_answer: Thiết kế tốt không phải là thứ xa xỉ mà là điều cần thiết.
+
+  # ---------------- application ----------------
+  - key: en:exercise:persuade-review-order-while
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:while-it-is-true-that
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tuy đúng là kế hoạch tốn kém, nhưng cái giá của việc không hành động còn cao hơn nhiều.\""
+      tokens:
+        - { id: w-far, text: is far higher }
+        - { id: w-but, text: but }
+        - { id: w-while, text: While it is true }
+        - { id: w-cost, text: the cost of inaction }
+        - { id: w-that, text: that the plan is expensive, }
+    answer:
+      orders:
+        - [w-while, w-that, w-cost, w-far]
+    explanation:
+      vi: While it is true that X, Y - vế Y không cần but, khác tiếng Việt "tuy… nhưng…". But là token thừa. Far higher = cao hơn nhiều.
+    display_answer: While it is true that the plan is expensive, the cost of inaction is far higher.
+
+  - key: en:exercise:persuade-review-mcq-rebut
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:rebut
+    prompt:
+      stem: "Đối phương nói: \"Shorter weeks always mean lower output - everybody knows that.\" Bạn có một lượt để phản bác. Câu nào tốt nhất?"
+      stem_lang: vi
+      options:
+        - { id: t8u, text: "I see it somewhat differently. \"Everybody knows\" is hardly evidence - and the data from three trials points the other way.", lang: en }
+        - { id: a5k, text: "You are wrong, everybody knows nothing.", lang: en }
+        - { id: l2s, text: "Actually, I agree that shorter weeks always mean lower output.", lang: en }
+        - { id: n7z, text: "While it is true that everybody knows that, but we should try anyway.", lang: en }
+    answer:
+      correct_option_id: t8u
+    explanation:
+      vi: Câu đúng phản đối mềm, chỉ ra lỗ hổng lập luận (dựa vào "ai cũng biết") rồi đưa bằng chứng. Các câu khác công kích người nói, đầu hàng lập luận, hoặc mắc lỗi While… but.
+    display_answer: "I see it somewhat differently. \"Everybody knows\" is hardly evidence - and the data from three trials points the other way."
+
+  - key: en:exercise:persuade-review-mcq-error-free
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:give-a-presentation-on
+    prompt:
+      stem: Câu nào KHÔNG có lỗi?
+      stem_lang: vi
+      options:
+        - { id: b9e, text: "Last month she gave a presentation on staff wellbeing and emphasised the need for flexible hours.", lang: en }
+        - { id: g4p, text: "Last month she presented about staff wellbeing and emphasised the need for flexible hours.", lang: en }
+        - { id: s1x, text: "Last month she gave a presentation on staff wellbeing and emphasised about flexible hours.", lang: en }
+        - { id: v6h, text: "Last month she gave a presentation on staff wellbeing, which actually is being discussed about.", lang: en }
+    answer:
+      correct_option_id: b9e
+    explanation:
+      vi: Give a presentation on + chủ đề và emphasise + tân ngữ đều đúng. Các câu khác thừa about sau present, emphasise, discuss; câu cuối còn dùng actually sai nghĩa "hiện nay".
+    display_answer: "Last month she gave a presentation on staff wellbeing and emphasised the need for flexible hours."
+
+  - key: en:exercise:persuade-review-translate-admittedly-all
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:all-we-need-is
+    prompt:
+      source_text: Phải thừa nhận là không có giải pháp nào hoàn hảo, nhưng tất cả những gì chúng ta cần là một khởi đầu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Admittedly, no solution is perfect, but all we need is a start.
+        - Admittedly, no solution is perfect, but all that we need is a start.
+        - Admittedly, no solution is perfect, but all we need is a beginning.
+        - Admittedly, no solution is perfect, but all we need is a starting point.
+        - Admittedly, there is no perfect solution, but all we need is a start.
+        - Admittedly, there's no perfect solution, but all we need is a start.
+        - Admittedly, there is no perfect solution, but all we need is a starting point.
+        - Admittedly, no solution is perfect. However, all we need is a start.
+        - Admittedly, no solution is perfect. That said, all we need is a start.
+        - Admittedly, none of the solutions is perfect, but all we need is a start.
+        - Admittedly, no solution is perfect, but all we need is to make a start.
+        - Admittedly, no solution is perfect, but all we need is to start.
+        - Granted, no solution is perfect, but all we need is a start.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Admittedly, no solution is perfect, but all we need are a start.
+        feedback_vi: All we need (điều duy nhất ta cần) chia số ít - is.
+        error_tag: subject_verb_agreement
+      - answer: Admittedly, no solution is perfect, but all of us need a start.
+        feedback_vi: All of us need = tất cả chúng ta đều cần; muốn nhấn mạnh "chỉ cần" thì dùng All we need is….
+        error_tag: all_cleft
+      - answer: Admitted, no solution is perfect, but all we need is a start.
+        feedback_vi: Cần trạng từ admittedly để nhượng bộ.
+        error_tag: word_form
+    explanation:
+      vi: Admittedly nhượng bộ (không giải pháp nào hoàn hảo), but mở phần phản bác, All we need is… nhấn mạnh rằng chỉ cần bắt đầu. Đây là khung nhượng bộ - phản bác - nhấn mạnh của cả unit.
+    display_answer: Admittedly, no solution is perfect, but all we need is a start.

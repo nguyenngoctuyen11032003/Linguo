@@ -1,0 +1,1060 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Khoa học, môi trường & công nghệ" (TOPIK 5). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Câu ví dụ dùng văn viết -ㄴ다/-는다/-다 vì đây là văn phong của báo khoa học, bài giảng và phần đọc TOPIK II.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: khí hậu & môi trường, -(으)ㄹ수록 ----------------
+  - key: ko:item:gihu-byeonhwa
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 기후 변화
+      romanization: gihu byeonhwa
+      pos: cụm danh từ (Hán Hàn 氣候 變化)
+    back:
+      meaning:
+        vi: biến đổi khí hậu
+      examples:
+        - target: 기후 변화로 여름이 점점 길어지고 있다.
+          translation:
+            vi: Do biến đổi khí hậu, mùa hè ngày càng dài ra.
+        - target: 기후 변화에 대응하기 위해 각국이 협력하고 있다.
+          translation:
+            vi: Các nước đang hợp tác để ứng phó với biến đổi khí hậu.
+      pronunciation_note:
+        vi: 변화 đọc [변화], ㅎ giữa hai nguyên âm/âm mũi thường rất nhẹ, gần như [벼놔] khi nói nhanh.
+      confusion:
+        vi: Thứ tự Hán Hàn ngược tiếng Việt - "biến đổi khí hậu" là 기후 변화 (khí hậu + biến hoá). Động từ đi kèm thường là 대응하다 (ứng phó), không phải 싸우다.
+
+  - key: ko:item:onsil-gaseu
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 온실가스
+      romanization: onsilgaseu
+      pos: danh từ (溫室 + gas)
+    back:
+      meaning:
+        vi: khí nhà kính
+      examples:
+        - target: 공장과 자동차는 많은 온실가스를 배출한다.
+          translation:
+            vi: Nhà máy và ô tô thải ra nhiều khí nhà kính.
+        - target: 정부는 2030년까지 온실가스 배출량을 40% 줄이기로 했다.
+          translation:
+            vi: Chính phủ quyết định giảm 40% lượng phát thải khí nhà kính đến năm 2030.
+      pronunciation_note:
+        vi: 온실 đọc [온실], không có biến âm; 가스 đọc [가쓰] trong giao tiếp nhưng viết 가스.
+      confusion:
+        vi: 온실 là "nhà kính" (ôn thất - phòng ấm), viết liền với 가스. "Hiệu ứng nhà kính" là 온실 효과.
+
+  - key: ko:item:tanso-jungnip
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 탄소 중립
+      romanization: tanso jungnip
+      pos: cụm danh từ (Hán Hàn 炭素 中立)
+    back:
+      meaning:
+        vi: trung hoà carbon (lượng phát thải ròng bằng 0)
+      examples:
+        - target: 한국은 2050년까지 탄소 중립을 달성하겠다고 발표했다.
+          translation:
+            vi: Hàn Quốc tuyên bố sẽ đạt trung hoà carbon vào năm 2050.
+        - target: 탄소 중립을 실현하려면 산업 구조부터 바뀌어야 한다.
+          translation:
+            vi: Muốn hiện thực hoá trung hoà carbon thì trước hết cơ cấu công nghiệp phải thay đổi.
+      pronunciation_note:
+        vi: 중립 đọc [중닙] - ㄹ đứng sau ㅇ biến thành ㄴ.
+      confusion:
+        vi: Hán Việt là "trung lập", nhưng ở đây không mang nghĩa chính trị - 탄소 중립 là "trung hoà carbon". Động từ đi kèm là 달성하다 (đạt được) hoặc 실현하다 (hiện thực hoá).
+
+  - key: ko:item:chinhwangyeong
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 친환경
+      romanization: chinhwangyeong
+      pos: danh từ / định ngữ (Hán Hàn 親環境)
+    back:
+      meaning:
+        vi: thân thiện với môi trường
+      examples:
+        - target: 최근 친환경 제품을 찾는 소비자가 늘고 있다.
+          translation:
+            vi: Gần đây người tiêu dùng tìm sản phẩm thân thiện với môi trường ngày càng nhiều.
+        - target: 이 회사는 포장재를 친환경 소재로 바꾸었다.
+          translation:
+            vi: Công ty này đã đổi bao bì sang chất liệu thân thiện với môi trường.
+      pronunciation_note:
+        vi: Nói nhanh, ㅎ giữa ㄴ và nguyên âm yếu đi - [치놘경]; đọc chậm vẫn là [친환경].
+      confusion:
+        vi: 친환경 đứng trước danh từ như một định ngữ (친환경 자동차), không cần 의 hay 적인. Không viết 환경 친한 제품.
+
+  - key: ko:item:ilhoeyongpum
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 일회용품
+      romanization: ilhoeyongpum
+      pos: danh từ (Hán Hàn 一回用品)
+    back:
+      meaning:
+        vi: đồ dùng một lần
+      examples:
+        - target: 카페에서 일회용품 사용을 줄이기 위해 개인 컵을 가져오면 할인해 준다.
+          translation:
+            vi: Để giảm đồ dùng một lần, quán cà phê giảm giá nếu bạn mang cốc riêng.
+        - target: 일회용품은 편리하지만 쓰레기를 많이 만든다.
+          translation:
+            vi: Đồ dùng một lần tiện lợi nhưng tạo ra nhiều rác.
+      pronunciation_note:
+        vi: 회 thường đọc gần [훼] - [일훼용품]; ㄹ của 일 không nối sang 회.
+      confusion:
+        vi: 일회용 là tính chất "dùng một lần" (일회용 컵), thêm 품 (phẩm) mới thành danh từ "đồ dùng". Đừng nhầm 일회 (một lần) với 일일 (một ngày).
+
+  - key: ko:item:misemeonji
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 미세먼지
+      romanization: misemeonji
+      pos: danh từ (微細 + 먼지)
+    back:
+      meaning:
+        vi: bụi mịn
+      examples:
+        - target: 미세먼지 농도가 높은 날에는 마스크를 써야 한다.
+          translation:
+            vi: Vào ngày nồng độ bụi mịn cao, bạn nên đeo khẩu trang.
+        - target: 봄철에는 미세먼지 때문에 외출을 피하는 사람이 많다.
+          translation:
+            vi: Mùa xuân nhiều người tránh ra ngoài vì bụi mịn.
+      pronunciation_note:
+        vi: Đọc đủ bốn âm tiết [미세먼지]; ㅓ trong 먼 là "ơ", không phải "ô".
+      confusion:
+        vi: Bụi mịn "nhiều/ít" trong văn viết dùng 농도가 높다/낮다 (nồng độ cao/thấp) thay vì 많다/적다. "Bụi siêu mịn" là 초미세먼지.
+
+  - key: ko:item:jaesaeng-eneoji
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 재생 에너지
+      romanization: jaesaeng eneoji
+      pos: cụm danh từ (再生 + energy)
+    back:
+      meaning:
+        vi: năng lượng tái tạo
+      examples:
+        - target: 태양광과 풍력 같은 재생 에너지의 비중이 커지고 있다.
+          translation:
+            vi: Tỉ trọng năng lượng tái tạo như điện mặt trời và điện gió đang tăng lên.
+        - target: 석탄 발전을 재생 에너지로 바꾸는 데에는 시간이 걸린다.
+          translation:
+            vi: Chuyển nhiệt điện than sang năng lượng tái tạo cần thời gian.
+      pronunciation_note:
+        vi: 에너지 đọc [에너지] - ㅓ là "ơ"; không đọc theo tiếng Anh "e-nơ-gi".
+      confusion:
+        vi: 재생 là "tái sinh", còn 재활용 là "tái chế" (dùng lại vật liệu) - năng lượng tái tạo không gọi là 재활용 에너지. "Năng lượng mới và tái tạo" trong văn bản chính phủ là 신재생 에너지.
+
+  - key: ko:item:saengtaegye
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 생태계
+      romanization: saengtaegye
+      pos: danh từ (Hán Hàn 生態系)
+    back:
+      meaning:
+        vi: hệ sinh thái
+      examples:
+        - target: 바닷물 온도가 오르면서 해양 생태계가 파괴되고 있다.
+          translation:
+            vi: Khi nhiệt độ nước biển tăng, hệ sinh thái biển đang bị phá huỷ.
+      pronunciation_note:
+        vi: 계 thường đọc [게] - [생태게]; ㅖ sau phụ âm (trừ ㅇ, ㄹ) được đọc như ㅔ.
+      confusion:
+        vi: Hán Việt "sinh thái hệ" - thứ tự ngược với "hệ sinh thái". Đi kèm thường là 파괴되다 (bị phá huỷ), 보호하다 (bảo vệ), 회복되다 (phục hồi).
+
+  - key: ko:item:myeoljong-wigi
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 멸종 위기
+      romanization: myeoljong wigi
+      pos: cụm danh từ (Hán Hàn 滅種 危機)
+    back:
+      meaning:
+        vi: nguy cơ tuyệt chủng
+      examples:
+        - target: 서식지가 사라지면서 많은 동물이 멸종 위기에 처했다.
+          translation:
+            vi: Khi môi trường sống biến mất, nhiều loài động vật rơi vào nguy cơ tuyệt chủng.
+        - target: 정부는 멸종 위기 동물을 보호하기 위한 법을 만들었다.
+          translation:
+            vi: Chính phủ đã làm luật để bảo vệ động vật có nguy cơ tuyệt chủng.
+      pronunciation_note:
+        vi: 멸종 đọc [멸쫑] - ㅈ sau patchim ㄹ trong từ Hán Hàn bị căng.
+      confusion:
+        vi: Hán Việt "diệt chủng" nhưng nghĩa là "tuyệt chủng" (loài biến mất), không phải tội ác diệt chủng (학살). Cụm cố định - 멸종 위기에 처하다 / 놓이다 (rơi vào nguy cơ tuyệt chủng).
+
+  - key: ko:item:baechulhada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 배출하다
+      romanization: baechulhada
+      pos: động từ (Hán Hàn 排出)
+    back:
+      meaning:
+        vi: thải ra, phát thải
+      examples:
+        - target: 한국은 세계에서 탄소를 많이 배출하는 나라 중 하나이다.
+          translation:
+            vi: Hàn Quốc là một trong những nước phát thải nhiều carbon trên thế giới.
+        - target: 배출량을 줄이지 않으면 기온은 계속 오를 것이다.
+          translation:
+            vi: Nếu không giảm lượng phát thải, nhiệt độ sẽ tiếp tục tăng.
+      pronunciation_note:
+        vi: 배출 đọc [배출]; 배출량 đọc [배출량], ㄹㄹ giữ nguyên.
+      confusion:
+        vi: 배출하다 dùng cho khí thải, chất thải ra môi trường. "Thải rác" hằng ngày dùng 버리다, không dùng 배출하다 trong văn nói.
+
+  - key: ko:item:hwangyeong
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 환경
+      romanization: hwangyeong
+      pos: danh từ (Hán Hàn 環境)
+    back:
+      meaning:
+        vi: môi trường (tự nhiên); môi trường, điều kiện (sống, làm việc)
+      examples:
+        - target: 환경을 보호하려면 에너지를 아껴 써야 한다.
+          translation:
+            vi: Muốn bảo vệ môi trường thì phải tiết kiệm năng lượng.
+        - target: 이 회사는 근무 환경이 좋다.
+          translation:
+            vi: Công ty này có môi trường làm việc tốt.
+      pronunciation_note:
+        vi: Đọc [환경]; ㄴ của 환 không nối, 경 là "kyơng".
+      confusion:
+        vi: Hán Việt của 환경 là "hoàn cảnh", nhưng nghĩa là "môi trường". "Hoàn cảnh (gia đình khó khăn)" trong tiếng Hàn là 형편 hoặc 사정, còn "tình huống" là 상황.
+
+  - key: ko:item:gp-eul-surok
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: "V/A-(으)ㄹ수록 (càng … càng)"
+      romanization: "-(eu)lsurok"
+      pos: đuôi liên kết tỉ lệ
+    back:
+      meaning:
+        vi: “càng … thì càng …” - mức độ của vế sau thay đổi theo vế trước. Thường dùng dạng nhấn mạnh -(으)면 -(으)ㄹ수록, vế sau có 더 hoặc động từ chỉ sự thay đổi.
+      examples:
+        - target: 기온이 오를수록 빙하가 더 빨리 녹는다.
+          translation:
+            vi: Nhiệt độ càng tăng, băng càng tan nhanh.
+        - target: 도시가 클수록 미세먼지 농도가 높아지는 경향이 있다.
+          translation:
+            vi: Thành phố càng lớn thì nồng độ bụi mịn càng có xu hướng cao.
+        - target: 기술은 발전하면 발전할수록 우리 생활을 더 편리하게 만든다.
+          translation:
+            vi: Công nghệ càng phát triển càng làm cuộc sống của chúng ta tiện lợi hơn.
+      pronunciation_note:
+        vi: 수 sau -ㄹ bị căng - 오를수록 [오를쑤록], 클수록 [클쑤록].
+      confusion:
+        vi: Tiếng Việt lặp "càng" ở cả hai vế, nhưng tiếng Hàn chỉ gắn -(으)ㄹ수록 vào vế đầu - vế sau dùng 더 hoặc động từ thay đổi (-아/어지다, 늘어나다). Viết liền 오를수록, không viết 오를 수록.
+
+  # ---------------- bài 2: khoa học & công nghệ, bị động trong văn viết ----------------
+  - key: ko:item:ingongjineung
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 인공지능
+      romanization: ingongjineung
+      pos: danh từ (Hán Hàn 人工知能)
+    back:
+      meaning:
+        vi: trí tuệ nhân tạo (AI)
+      examples:
+        - target: 인공지능이 의사의 진단을 돕는 시대가 되었다.
+          translation:
+            vi: Đã đến thời trí tuệ nhân tạo hỗ trợ chẩn đoán của bác sĩ.
+        - target: 인공지능 기술이 발전하면서 사라지는 직업도 생기고 있다.
+          translation:
+            vi: Khi công nghệ AI phát triển, cũng có những nghề đang biến mất.
+      pronunciation_note:
+        vi: Đọc [인공지능], không biến âm; báo chí thường viết tắt là AI và đọc [에이아이].
+      confusion:
+        vi: Hán Việt "nhân công trí năng" - 인공 ở đây là "nhân tạo", không phải "nhân công lao động" (인력). Viết liền 인공지능.
+
+  - key: ko:item:gaein-jeongbo
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 개인 정보
+      romanization: gaein jeongbo
+      pos: cụm danh từ (Hán Hàn 個人 情報)
+    back:
+      meaning:
+        vi: thông tin cá nhân
+      examples:
+        - target: 앱을 설치할 때 개인 정보 제공에 동의해야 한다.
+          translation:
+            vi: Khi cài ứng dụng, bạn phải đồng ý cung cấp thông tin cá nhân.
+        - target: 개인 정보를 보호하기 위한 법이 강화되었다.
+          translation:
+            vi: Luật bảo vệ thông tin cá nhân đã được tăng cường.
+      pronunciation_note:
+        vi: 정보 đọc [정보]; 개인 đọc rõ hai âm tiết [개인].
+      confusion:
+        vi: 정보 là "tình báo" theo Hán Việt nhưng nghĩa thông dụng là "thông tin". "Thông tin" trong tin tức không dịch là 소식 (tin tức, tin vui buồn).
+
+  - key: ko:item:yuchul
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 유출 / 유출되다
+      romanization: yuchul / yuchuldoeda
+      pos: danh từ / động từ bị động (Hán Hàn 流出)
+    back:
+      meaning:
+        vi: rò rỉ (thông tin, dầu, chất độc); bị rò rỉ, bị lộ ra ngoài
+      examples:
+        - target: 해킹으로 고객 100만 명의 개인 정보가 유출되었다.
+          translation:
+            vi: Do bị tấn công mạng, thông tin cá nhân của 1 triệu khách hàng đã bị rò rỉ.
+        - target: 기름 유출 사고로 바다가 심하게 오염되었다.
+          translation:
+            vi: Vì sự cố tràn dầu, biển bị ô nhiễm nghiêm trọng.
+      pronunciation_note:
+        vi: Đọc [유출]; 유출되었다 đọc [유출되얻따].
+      confusion:
+        vi: Thông tin "bị lộ" là 유출되다 (bị động bằng 되다), không cần thêm 당하다. Gây ra rò rỉ (chủ động) là 유출하다 - 직원이 정보를 유출했다.
+
+  - key: ko:item:jayul-juhaeng
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 자율 주행
+      romanization: jayul juhaeng
+      pos: cụm danh từ (Hán Hàn 自律 走行)
+    back:
+      meaning:
+        vi: tự lái (xe tự hành)
+      examples:
+        - target: 자율 주행 자동차가 일부 도로에서 시험 운행을 하고 있다.
+          translation:
+            vi: Xe tự lái đang chạy thử trên một số tuyến đường.
+        - target: 자율 주행 기술이 상용화되려면 법과 제도가 먼저 마련되어야 한다.
+          translation:
+            vi: Muốn công nghệ tự lái được thương mại hoá thì luật và chế độ phải được chuẩn bị trước.
+      pronunciation_note:
+        vi: 자율 đọc [자율]; 주행 đọc [주행], ㅎ rõ vì đứng đầu âm tiết sau nguyên âm nhưng thường nhẹ.
+      confusion:
+        vi: Hán Việt "tự luật tẩu hành" - 주행 là "chạy (xe)", không phải 운전 (người lái). Xe tự lái là 자율 주행차 hoặc 자율 주행 자동차.
+
+  - key: ko:item:yeongujin
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 연구진
+      romanization: yeongujin
+      pos: danh từ (Hán Hàn 硏究陣)
+    back:
+      meaning:
+        vi: nhóm nghiên cứu, các nhà nghiên cứu
+      examples:
+        - target: 국내 연구진이 새로운 배터리 기술을 개발했다.
+          translation:
+            vi: Nhóm nghiên cứu trong nước đã phát triển công nghệ pin mới.
+        - target: 연구진은 실험 결과를 국제 학술지에 발표했다.
+          translation:
+            vi: Nhóm nghiên cứu đã công bố kết quả thí nghiệm trên tạp chí khoa học quốc tế.
+      pronunciation_note:
+        vi: Đọc [연구진]; ㅕ là "yơ".
+      confusion:
+        vi: 연구 = nghiên cứu (Hán Việt khớp hoàn toàn); 진 (trận) là "đội ngũ", nên 연구진 đã là số nhiều - không cần thêm 들. Một nhà nghiên cứu là 연구원 hoặc 연구자.
+
+  - key: ko:item:silheom
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 실험 / 실험하다
+      romanization: silheom / silheomhada
+      pos: danh từ / động từ (Hán Hàn 實驗)
+    back:
+      meaning:
+        vi: thí nghiệm; làm thí nghiệm
+      examples:
+        - target: 연구진은 쥐를 대상으로 실험을 진행했다.
+          translation:
+            vi: Nhóm nghiên cứu đã tiến hành thí nghiệm trên chuột.
+        - target: 실험 결과 이 물질은 인체에 해가 없는 것으로 나타났다.
+          translation:
+            vi: Kết quả thí nghiệm cho thấy chất này không gây hại cho cơ thể người.
+      pronunciation_note:
+        vi: Đọc [시럼] - ㄹ nối sang và ㅎ gần như mất.
+      confusion:
+        vi: Hán Việt là "thực nghiệm", nhưng nghĩa thường gặp là "thí nghiệm". "Thực nghiệm/thực tập" theo nghĩa đi thực tế là 실습; "kiểm tra, bài thi" là 시험 (khác 실험 một chữ).
+
+  - key: ko:item:gaebalhada
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 개발하다 / 개발되다
+      romanization: gaebalhada / gaebaldoeda
+      pos: động từ (Hán Hàn 開發)
+    back:
+      meaning:
+        vi: phát triển, nghiên cứu chế tạo (công nghệ, sản phẩm); được phát triển
+      examples:
+        - target: 이 회사는 플라스틱을 대신할 신소재를 개발했다.
+          translation:
+            vi: Công ty này đã phát triển vật liệu mới thay thế nhựa.
+        - target: 미세먼지를 측정하는 앱이 새로 개발되었다.
+          translation:
+            vi: Ứng dụng đo bụi mịn mới được phát triển.
+      pronunciation_note:
+        vi: Đọc [개발하다]; ㅎ giữa ㄹ và nguyên âm yếu, gần như [개바라다] khi nói nhanh.
+      confusion:
+        vi: Tiếng Việt "phát triển" có hai nghĩa - "tạo ra cái mới" là 개발하다, còn "lớn mạnh lên" (kinh tế phát triển) là 발전하다. 경제가 개발했다 là sai.
+
+  - key: ko:item:balkyeojida
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 밝혀지다
+      romanization: balkyeojida
+      pos: động từ bị động (밝히다 + -어지다)
+    back:
+      meaning:
+        vi: được làm sáng tỏ, được chứng minh, (sự thật) lộ ra
+      examples:
+        - target: 연구 결과 잠이 부족하면 기억력이 떨어진다는 사실이 밝혀졌다.
+          translation:
+            vi: Kết quả nghiên cứu đã chứng minh rằng thiếu ngủ thì trí nhớ giảm sút.
+        - target: 사고의 원인은 아직 밝혀지지 않았다.
+          translation:
+            vi: Nguyên nhân vụ tai nạn vẫn chưa được làm rõ.
+      pronunciation_note:
+        vi: 밝혀 đọc [발켜] - ㄱ gặp ㅎ thành ㅋ; 밝혀졌다 [발켜젿따].
+      confusion:
+        vi: Chủ động là 밝히다 (연구진이 원인을 밝혔다), bị động là 밝혀지다 (원인이 밝혀졌다). Cụm báo chí cố định - -다는 사실이 밝혀졌다 "đã được chứng minh rằng…".
+
+  - key: ko:item:allyeojida
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 알려지다
+      romanization: allyeojida
+      pos: động từ bị động (알리다 + -어지다)
+    back:
+      meaning:
+        vi: được biết đến, được cho là
+      examples:
+        - target: 녹차는 건강에 좋은 것으로 알려져 있다.
+          translation:
+            vi: Trà xanh được biết đến là tốt cho sức khoẻ.
+        - target: 이 지역은 철새가 많이 오는 곳으로 알려졌다.
+          translation:
+            vi: Vùng này được biết đến là nơi có nhiều chim di trú.
+      pronunciation_note:
+        vi: Đọc [알려지다] - ㄹㄹ giữ nguyên, ㄹ thứ hai đọc như "l".
+      confusion:
+        vi: Cụm cố định -(으)ㄴ/는 것으로 알려져 있다 "được biết là…", dùng khi đưa thông tin phổ biến, không chắc chắn 100%. Không nhầm với 알게 되다 (tôi biết ra) - chủ ngữ của 알려지다 là thông tin, không phải người biết.
+
+  - key: ko:item:balsaenghada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 발생하다
+      romanization: balsaenghada
+      pos: động từ (Hán Hàn 發生)
+    back:
+      meaning:
+        vi: xảy ra, phát sinh (sự cố, thiên tai, chất thải)
+      examples:
+        - target: 지난해 전국에서 산불이 500건 넘게 발생했다.
+          translation:
+            vi: Năm ngoái trên cả nước xảy ra hơn 500 vụ cháy rừng.
+        - target: 음식물 쓰레기에서 온실가스가 발생한다.
+          translation:
+            vi: Khí nhà kính phát sinh từ rác thải thực phẩm.
+      pronunciation_note:
+        vi: 생 sau patchim ㄹ trong từ Hán Hàn bị căng - [발쌩하다].
+      confusion:
+        vi: 발생하다 đã là nội động từ "xảy ra", không cần bị động - 사고가 발생되었다 nghe thừa, nên viết 사고가 발생했다. Dùng cho sự việc khách quan; sự việc nhỏ đời thường dùng 생기다.
+
+  - key: ko:item:gp-written-passive
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing, reading]
+    front:
+      text: "Bị động văn viết: N되다 · V-아/어지다 (tránh 되어지다)"
+      romanization: "-doeda / -a/eojida"
+      pos: bị động trong văn viết
+    back:
+      meaning:
+        vi: Văn báo chí, khoa học hay dùng bị động để nhấn vào sự việc - động từ Hán Hàn -하다 đổi thành -되다 (개발되다, 발견되다), động từ thuần Hàn thêm -아/어지다 (밝혀지다, 알려지다, 만들어지다). Chỉ dùng một lớp bị động.
+      examples:
+        - target: 새로운 치료법이 개발되었다.
+          translation:
+            vi: Một phương pháp điều trị mới đã được phát triển.
+        - target: 이 다리는 100년 전에 만들어졌다.
+          translation:
+            vi: Cây cầu này được xây dựng 100 năm trước.
+        - target: 실험 결과는 다음 달에 공개될 예정이다.
+          translation:
+            vi: Kết quả thí nghiệm dự kiến sẽ được công bố vào tháng sau.
+      pronunciation_note:
+        vi: 되었다 đọc [되얻따], viết gọn 됐다 [됃따] - trong văn viết trang trọng thường giữ 되었다.
+      confusion:
+        vi: 되다 + -어지다 thành 되어지다 là bị động kép, bị coi là sai trong văn chuẩn (개발되어졌다 → 개발되었다). Tiếng Việt thêm "được/bị" thoải mái, nhưng tiếng Hàn tự nhiên hơn khi dùng chủ động nếu đã có chủ thể rõ (연구진이 개발했다).
+
+  - key: ko:item:julida-neullida
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: "줄다 → 줄이다 · 늘다 → 늘리다 (tự động → gây khiến)"
+      romanization: "julda → jurida · neulda → neullida"
+      pos: cặp động từ tự động / gây khiến
+    back:
+      meaning:
+        vi: 줄다/늘다 là "(tự) giảm/tăng" - chủ ngữ là thứ thay đổi, không có tân ngữ. 줄이다/늘리다 là "làm giảm/làm tăng" - có tân ngữ 을/를 và chủ thể hành động.
+      examples:
+        - target: 정부는 석탄 발전을 줄이고 재생 에너지를 늘리기로 했다.
+          translation:
+            vi: Chính phủ quyết định giảm nhiệt điện than và tăng năng lượng tái tạo.
+        - target: 자전거 이용자가 늘면서 교통 체증이 줄었다.
+          translation:
+            vi: Khi người đi xe đạp tăng lên, tắc đường đã giảm.
+      pronunciation_note:
+        vi: 줄이다 đọc [주리다] (ㄹ nối sang); 늘리다 đọc [늘리다] với ㄹㄹ.
+      confusion:
+        vi: Tiếng Việt "giảm" dùng cho cả hai nghĩa (giá giảm / giảm giá). Tiếng Hàn phải chọn - 배출량이 줄었다 (tự giảm) nhưng 배출량을 줄였다 (ai đó làm giảm); 배출량을 줄었다 là sai.
+
+  # ---------------- bài 3: nguyên nhân - kết quả trong văn viết ----------------
+  - key: ko:item:gp-neun-tase
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: "V-는 탓에 · V/A-(으)ㄴ 탓에 · N 탓에"
+      romanization: "-neun tase / -(eu)n tase"
+      pos: biểu hiện nguyên nhân (tiêu cực)
+    back:
+      meaning:
+        vi: “tại vì, do (lỗi của)…” - chỉ nguyên nhân dẫn đến kết quả xấu, thường hàm ý trách móc. Kết quả tốt thì dùng 덕분에.
+      examples:
+        - target: 비가 오지 않은 탓에 올해 농사를 망쳤다.
+          translation:
+            vi: Tại trời không mưa nên năm nay mất mùa.
+        - target: 일회용품을 많이 쓰는 탓에 쓰레기가 줄지 않는다.
+          translation:
+            vi: Vì dùng nhiều đồ dùng một lần nên rác không giảm.
+        - target: 미세먼지 탓에 야외 행사가 취소되었다.
+          translation:
+            vi: Do bụi mịn, sự kiện ngoài trời đã bị huỷ.
+      pronunciation_note:
+        vi: 탓에 đọc nối [타세] - patchim ㅅ chuyển sang âm tiết sau.
+      confusion:
+        vi: Tiếng Việt "nhờ/tại" phân biệt rõ, nhưng người học hay dùng 탓에 như 때문에 cho mọi trường hợp. 탓에 + kết quả tốt (공부한 탓에 합격했다) là sai - phải là 공부한 덕분에.
+
+  - key: ko:item:gp-l-uryeoga-itda
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: "V/A-(으)ㄹ 우려가 있다 · N의 우려가 있다"
+      romanization: "-(eu)l uryeoga itda"
+      pos: biểu hiện lo ngại (văn viết)
+    back:
+      meaning:
+        vi: “có nguy cơ…, e rằng…” - dự đoán một điều xấu có thể xảy ra, dùng trong báo chí, thông báo chính thức. Mức độ mạnh hơn dùng 우려가 크다/높다.
+      examples:
+        - target: 이대로 가면 해수면이 상승해 일부 섬이 사라질 우려가 있다.
+          translation:
+            vi: Cứ thế này thì mực nước biển dâng và một số hòn đảo có nguy cơ biến mất.
+        - target: 개인 정보가 유출될 우려가 있으므로 비밀번호를 자주 바꿔야 한다.
+          translation:
+            vi: Vì có nguy cơ rò rỉ thông tin cá nhân nên bạn cần thường xuyên đổi mật khẩu.
+      pronunciation_note:
+        vi: Sau -ㄹ, 우 không căng; 우려가 đọc [우려가]. 있다 đọc [읻따].
+      confusion:
+        vi: Luôn dùng định ngữ tương lai -(으)ㄹ trước 우려 vì nói về khả năng - 사라지는 우려 là sai. Chỉ dùng cho điều xấu; điều tốt có thể xảy ra là -(으)ㄹ 가능성이 있다.
+
+  - key: ko:item:gp-eum-eurosseo
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-(으)ㅁ으로써 · N(으)로써"
+      romanization: "-(eu)meurosseo"
+      pos: biểu hiện phương thức (văn viết)
+    back:
+      meaning:
+        vi: “bằng cách…, thông qua việc…” - hành động ở vế trước là phương tiện để đạt kết quả ở vế sau.
+      examples:
+        - target: 대중교통을 이용함으로써 탄소 배출을 줄일 수 있다.
+          translation:
+            vi: Bằng cách dùng phương tiện công cộng, ta có thể giảm phát thải carbon.
+        - target: 연구진은 실험을 반복함으로써 결과의 신뢰성을 높였다.
+          translation:
+            vi: Nhóm nghiên cứu đã nâng độ tin cậy của kết quả bằng cách lặp lại thí nghiệm.
+      pronunciation_note:
+        vi: 함으로써 đọc nối [하므로써]; 써 là phụ âm căng ㅆ.
+      confusion:
+        vi: Đừng nhầm với -(으)므로 (vì, do - chỉ lý do) - 이용하므로 là "vì sử dụng", 이용함으로써 là "bằng cách sử dụng". Mẹo - -(으)ㅁ으로써 luôn có ㅁ và 써.
+
+  - key: ko:item:gp-neun-de-giyeohada
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-는 데(에) 기여하다 · N에 기여하다"
+      romanization: "-neun de(e) giyeohada"
+      pos: biểu hiện đóng góp (văn viết)
+    back:
+      meaning:
+        vi: “góp phần vào (việc)…” - nói một yếu tố, chính sách, công nghệ giúp tạo ra kết quả tốt.
+      examples:
+        - target: 전기 자동차의 보급은 대기 오염을 줄이는 데 기여했다.
+          translation:
+            vi: Việc phổ cập ô tô điện đã góp phần giảm ô nhiễm không khí.
+        - target: 이 연구는 기후 변화 예측의 정확도를 높이는 데에 크게 기여할 것이다.
+          translation:
+            vi: Nghiên cứu này sẽ góp phần lớn vào việc nâng độ chính xác của dự báo biến đổi khí hậu.
+      pronunciation_note:
+        vi: 기여 đọc [기여]; 데에 đọc liền [데에], thường rút thành 데.
+      confusion:
+        vi: 기여하다 đi với 에, không đi với 을/를 - 환경 보호에 기여하다 (không phải 환경 보호를 기여하다). Trước 데 dùng định ngữ hiện tại -는 và viết cách 데.
+
+  - key: ko:item:gp-e-dallyeo-itda
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: "N에 달려 있다 · V/A-(으)냐에 / -는지에 달려 있다"
+      romanization: "-e dallyeo itda"
+      pos: biểu hiện phụ thuộc
+    back:
+      meaning:
+        vi: “phụ thuộc vào, tuỳ thuộc vào…” - kết quả được quyết định bởi điều đứng trước 에.
+      examples:
+        - target: 탄소 중립의 성공은 기업의 참여에 달려 있다.
+          translation:
+            vi: Thành công của trung hoà carbon phụ thuộc vào sự tham gia của doanh nghiệp.
+        - target: 미래 환경은 우리가 지금 어떻게 행동하느냐에 달려 있다.
+          translation:
+            vi: Môi trường tương lai phụ thuộc vào việc chúng ta hành động thế nào ngay bây giờ.
+      pronunciation_note:
+        vi: 달려 đọc [달려] với ㄹㄹ; 있다 [읻따].
+      confusion:
+        vi: Người Việt hay dịch "phụ thuộc vào" thành 의존하다, nhưng 의존하다 là "dựa dẫm, lệ thuộc" (수입에 의존하다). Kết quả "tuỳ thuộc vào" điều kiện thì dùng 에 달려 있다; giữ nguyên dạng 달려 있다 (không đổi thành 달린다).
+
+  - key: ko:item:wonin
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 원인
+      romanization: wonin
+      pos: danh từ (Hán Hàn 原因)
+    back:
+      meaning:
+        vi: nguyên nhân
+      examples:
+        - target: 전문가들은 폭염의 주요 원인으로 기후 변화를 꼽았다.
+          translation:
+            vi: Các chuyên gia chỉ ra biến đổi khí hậu là nguyên nhân chính của nắng nóng gay gắt.
+        - target: 화재의 원인을 조사하고 있다.
+          translation:
+            vi: Đang điều tra nguyên nhân vụ hoả hoạn.
+      pronunciation_note:
+        vi: Đọc nối [워닌] - ㄴ của 원 chuyển sang 인.
+      confusion:
+        vi: Hán Việt khớp "nguyên nhân". Cặp đối là 결과 (kết quả); cụm hay gặp - N의 원인이 되다 (trở thành nguyên nhân của N), 원인을 밝히다 (làm rõ nguyên nhân).
+
+  - key: ko:item:akhwadoeda
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 악화되다
+      romanization: akhwadoeda
+      pos: động từ (Hán Hàn 惡化)
+    back:
+      meaning:
+        vi: trở nên xấu đi, trầm trọng hơn
+      examples:
+        - target: 가뭄이 길어지면서 물 부족 문제가 악화되었다.
+          translation:
+            vi: Khi hạn hán kéo dài, vấn đề thiếu nước đã trở nên trầm trọng hơn.
+      pronunciation_note:
+        vi: ㄱ gặp ㅎ thành ㅋ - [아콰되다].
+      confusion:
+        vi: Hán Việt "ác hoá" - nghĩa là "xấu đi", không liên quan "ác độc". Trái nghĩa là 개선되다 (được cải thiện); làm cho xấu đi (chủ động) là 악화시키다.
+
+  - key: ko:item:choraehada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 초래하다
+      romanization: choraehada
+      pos: động từ (Hán Hàn 招來)
+    back:
+      meaning:
+        vi: gây ra, dẫn đến (kết quả xấu)
+      examples:
+        - target: 무분별한 개발은 생태계 파괴를 초래했다.
+          translation:
+            vi: Sự phát triển bừa bãi đã gây ra việc phá huỷ hệ sinh thái.
+        - target: 작은 실수가 큰 사고를 초래할 수 있다.
+          translation:
+            vi: Một sai sót nhỏ có thể dẫn đến tai nạn lớn.
+      pronunciation_note:
+        vi: Đọc [초래하다]; ㅊ bật hơi.
+      confusion:
+        vi: 초래하다 cần tân ngữ 을/를 và thường mang nghĩa xấu (문제를, 피해를 초래하다). Kết quả tốt dùng 가져오다 (mang lại).
+
+  - key: ko:item:bangjihada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 방지하다
+      romanization: bangjihada
+      pos: động từ (Hán Hàn 防止)
+    back:
+      meaning:
+        vi: ngăn ngừa, phòng chống
+      examples:
+        - target: 산불을 방지하기 위해 등산객의 불 사용을 금지했다.
+          translation:
+            vi: Để ngăn ngừa cháy rừng, người ta đã cấm khách leo núi dùng lửa.
+      pronunciation_note:
+        vi: Đọc [방지하다]; 방 có âm mũi ㅇ ở cuối.
+      confusion:
+        vi: Hán Việt "phòng chỉ" - gần với "phòng chống". 방지하다 là ngăn trước khi xảy ra; còn 막다 là chặn (văn nói), 예방하다 dùng cho bệnh tật.
+
+  - key: ko:item:hyogwa
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 효과
+      romanization: hyogwa
+      pos: danh từ (Hán Hàn 效果)
+    back:
+      meaning:
+        vi: hiệu quả, tác dụng
+      examples:
+        - target: 나무를 심는 것은 도시의 온도를 낮추는 효과가 있다.
+          translation:
+            vi: Trồng cây có tác dụng làm giảm nhiệt độ thành phố.
+        - target: 이 정책은 기대만큼 효과를 거두지 못했다.
+          translation:
+            vi: Chính sách này không đạt hiệu quả như mong đợi.
+      pronunciation_note:
+        vi: Chuẩn là [효과]; nhiều người Hàn nói [효꽈], cả hai đều nghe được.
+      confusion:
+        vi: Hán Việt "hiệu quả" khớp, nhưng 효과 là "tác dụng, hiệu quả (của biện pháp)", còn "hiệu quả, năng suất làm việc" là 효율. Cụm - N에 효과가 있다, 효과를 거두다.
+
+  # ---------------- bài 4: mục đích, quá trình, xu hướng ----------------
+  - key: ko:item:gp-gi-wihan
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-기 위한 N · N을/를 위한 N"
+      romanization: "-gi wihan"
+      pos: định ngữ mục đích
+    back:
+      meaning:
+        vi: “(N) nhằm…, (N) để…” - dạng định ngữ của -기 위해서, đứng trước danh từ (정책, 노력, 방법, 기술).
+      examples:
+        - target: 탄소 배출을 줄이기 위한 정책이 시행되고 있다.
+          translation:
+            vi: Các chính sách nhằm giảm phát thải carbon đang được thực thi.
+        - target: 멸종 위기 동물을 위한 보호 구역이 만들어졌다.
+          translation:
+            vi: Khu bảo tồn dành cho động vật có nguy cơ tuyệt chủng đã được lập ra.
+      pronunciation_note:
+        vi: 위한 đọc [위한]; nói nhanh ㅎ yếu thành [위안].
+      confusion:
+        vi: Trước danh từ phải dùng 위한, không dùng 위해(서) - 줄이기 위해서 정책 là sai. Tiếng Việt "chính sách để giảm…" đặt mục đích sau danh từ, tiếng Hàn đặt trước.
+
+  - key: ko:item:gp-goja-hada
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "V-고자 하다 · V-고자 (văn viết trang trọng)"
+      romanization: "-goja hada"
+      pos: biểu hiện ý định, mục đích (trang trọng)
+    back:
+      meaning:
+        vi: “muốn, nhằm, có ý định…” - dạng trang trọng của -(으)려고 하다, dùng trong bài phát biểu, bài giảng, báo cáo, mở đầu luận văn.
+      examples:
+        - target: 오늘은 기후 정책의 방향에 대해 말씀드리고자 합니다.
+          translation:
+            vi: Hôm nay tôi xin trình bày về định hướng của chính sách khí hậu.
+        - target: 본 연구는 미세먼지가 건강에 미치는 영향을 분석하고자 한다.
+          translation:
+            vi: Nghiên cứu này nhằm phân tích ảnh hưởng của bụi mịn đến sức khoẻ.
+        - target: 정부는 문제를 해결하고자 새로운 법을 만들었다.
+          translation:
+            vi: Chính phủ đã ban hành luật mới nhằm giải quyết vấn đề.
+      pronunciation_note:
+        vi: 고자 đọc [고자], không căng; 하고자 합니다 [하고자 함니다] vì ㅂ gặp ㄴ bị mũi hoá.
+      confusion:
+        vi: Trong bài giảng, luận văn không dùng -고 싶다 (cảm xúc cá nhân) mà dùng -고자 하다. Chỉ gắn vào động từ - 건강하고자 là sai, phải là 건강해지고자.
+
+  - key: ko:item:gp-neun-chuseida
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: "V-는 추세이다 · N 추세이다"
+      romanization: "-neun chuseida"
+      pos: biểu hiện xu hướng (văn viết)
+    back:
+      meaning:
+        vi: “đang có xu hướng…” - mô tả một thay đổi đang diễn ra trong xã hội hoặc số liệu, thường đi với động từ thay đổi (증가하다, 늘어나다, 줄어들다).
+      examples:
+        - target: 전기 자동차를 구매하는 사람이 늘어나는 추세이다.
+          translation:
+            vi: Số người mua ô tô điện đang có xu hướng tăng.
+        - target: 최근 일회용 컵 사용량은 감소 추세이다.
+          translation:
+            vi: Gần đây lượng cốc dùng một lần đang có xu hướng giảm.
+      pronunciation_note:
+        vi: 추세이다 thường rút thành 추세다 [추세다] trong báo chí.
+      confusion:
+        vi: Dùng định ngữ hiện tại -는 với động từ thay đổi - 늘어나는 추세이다. Tính từ tĩnh không dùng được (많은 추세이다 ✗), phải đổi thành động từ thay đổi - 많아지는 추세이다.
+
+  - key: ko:item:gwajeong
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 과정
+      romanization: gwajeong
+      pos: danh từ (Hán Hàn 過程)
+    back:
+      meaning:
+        vi: quá trình
+      examples:
+        - target: 플라스틱이 분해되는 과정은 수백 년이 걸린다.
+          translation:
+            vi: Quá trình nhựa phân huỷ mất hàng trăm năm.
+        - target: 생산 과정에서 많은 에너지가 사용된다.
+          translation:
+            vi: Nhiều năng lượng được sử dụng trong quá trình sản xuất.
+      pronunciation_note:
+        vi: Đọc [과정]; ㅘ là "oa".
+      confusion:
+        vi: Hán Việt "quá trình" khớp với 과정 (過程). Đừng nhầm với 과정 (課程) "khoá học, chương trình" cùng cách viết - 석사 과정 là "chương trình thạc sĩ".
+
+  - key: ko:item:dangye
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 단계
+      romanization: dangye
+      pos: danh từ (Hán Hàn 段階)
+    back:
+      meaning:
+        vi: giai đoạn, bước
+      examples:
+        - target: 이 기술은 아직 실험 단계에 있다.
+          translation:
+            vi: Công nghệ này vẫn đang ở giai đoạn thử nghiệm.
+        - target: 쓰레기는 수거, 분류, 처리의 세 단계를 거친다.
+          translation:
+            vi: Rác trải qua ba bước - thu gom, phân loại, xử lý.
+      pronunciation_note:
+        vi: 계 đọc [게] - [단게].
+      confusion:
+        vi: Hán Việt "đoạn giai" (ngược "giai đoạn"). Khi mô tả các bước, văn viết hay dùng 첫 번째 단계, 다음 단계, 마지막 단계.
+
+  - key: ko:item:geochida
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 거치다
+      romanization: geochida
+      pos: động từ
+    back:
+      meaning:
+        vi: trải qua, đi qua (bước, giai đoạn, nơi chốn)
+      examples:
+        - target: 신약은 여러 차례의 실험을 거쳐 시장에 나온다.
+          translation:
+            vi: Thuốc mới trải qua nhiều lần thí nghiệm rồi mới ra thị trường.
+        - target: 수집된 자료는 분석 과정을 거쳐 보고서로 만들어진다.
+          translation:
+            vi: Dữ liệu thu thập trải qua quá trình phân tích rồi được làm thành báo cáo.
+      pronunciation_note:
+        vi: Đọc [거치다]; 거쳐 đọc [거처] - ㅕ sau ㅊ đọc như ㅓ.
+      confusion:
+        vi: Dạng -을/를 거쳐(서) "trải qua … rồi" rất hay gặp trong đoạn mô tả quy trình. Không nhầm với 겪다 (trải qua khó khăn, kinh nghiệm) - 어려움을 겪다, không nói 어려움을 거치다.
+
+  - key: ko:item:dojiphada
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 도입하다
+      romanization: doipada
+      pos: động từ (Hán Hàn 導入)
+    back:
+      meaning:
+        vi: đưa vào áp dụng (chế độ, công nghệ mới)
+      examples:
+        - target: 서울시는 내년부터 일회용 컵 보증금 제도를 도입한다.
+          translation:
+            vi: Thành phố Seoul sẽ áp dụng chế độ đặt cọc cốc dùng một lần từ năm sau.
+      pronunciation_note:
+        vi: ㅂ gặp ㅎ thành ㅍ - [도이파다].
+      confusion:
+        vi: Hán Việt "dẫn nhập" - nghĩa là "đưa vào áp dụng", không phải "nhập khẩu" (수입하다). Bị động là 도입되다.
+
+  - key: ko:item:hwaksandoeda
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 확산되다
+      romanization: hwaksandoeda
+      pos: động từ (Hán Hàn 擴散)
+    back:
+      meaning:
+        vi: lan rộng, lan toả
+      examples:
+        - target: 플라스틱을 줄이자는 운동이 전 세계로 확산되고 있다.
+          translation:
+            vi: Phong trào giảm nhựa đang lan rộng ra toàn thế giới.
+      pronunciation_note:
+        vi: ㅅ sau patchim ㄱ bị căng - [확싼되다].
+      confusion:
+        vi: Hán Việt "khuếch tán" nhưng dùng rộng hơn - phong trào, dịch bệnh, cháy rừng, tin đồn đều 확산되다. Làm cho lan rộng (chủ động) là 확산시키다.
+
+  - key: ko:item:hyeonsang
+    type: vocab
+    level: topik5
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 현상
+      romanization: hyeonsang
+      pos: danh từ (Hán Hàn 現象)
+    back:
+      meaning:
+        vi: hiện tượng
+      examples:
+        - target: 도시의 기온이 주변보다 높은 현상을 열섬 현상이라고 한다.
+          translation:
+            vi: Hiện tượng nhiệt độ thành phố cao hơn vùng xung quanh được gọi là hiện tượng đảo nhiệt.
+      pronunciation_note:
+        vi: Đọc [현상]; ㅎ đầu từ phát âm rõ.
+      confusion:
+        vi: Hán Việt khớp "hiện tượng". Mẫu định nghĩa trong bài đọc - …는 현상을 N(이)라고 한다 "hiện tượng … được gọi là N".
+
+  - key: ko:item:process-connectives
+    type: grammar_point
+    level: topik5
+    difficulty: 3
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: "먼저 · 그다음(에) · V-(으)ㄴ 뒤/후 · 마지막으로 (mô tả quy trình)"
+      romanization: "meonjeo · geudaeum · -(eu)n dwi/hu · majimageuro"
+      pos: từ nối mô tả các bước
+    back:
+      meaning:
+        vi: Bộ từ nối để mô tả quy trình theo thứ tự - 먼저 (trước tiên), 그다음(에) / 이어서 (tiếp theo), V-(으)ㄴ 뒤/후 (sau khi), 마지막으로 (cuối cùng).
+      examples:
+        - target: 먼저 플라스틱을 종류별로 분류한다. 그다음 깨끗하게 씻은 뒤 잘게 부순다. 마지막으로 녹여서 새 제품의 원료로 사용한다.
+          translation:
+            vi: Trước tiên, nhựa được phân loại theo chủng loại. Tiếp theo, rửa sạch rồi nghiền nhỏ. Cuối cùng, nấu chảy để dùng làm nguyên liệu cho sản phẩm mới.
+      pronunciation_note:
+        vi: 마지막으로 đọc nối [마지마그로]; 씻은 뒤 đọc [씨슨 뒤].
+      confusion:
+        vi: Tiếng Việt mô tả quy trình hay dùng bị động "được phân loại", nhưng tiếng Hàn thường viết câu chủ động không chủ ngữ (분류한다). -(으)ㄴ 뒤/후 dùng định ngữ quá khứ - 씻은 뒤, không phải 씻는 뒤.

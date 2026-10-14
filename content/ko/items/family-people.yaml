@@ -1,0 +1,883 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Gia đình & miêu tả người" (TOPIK 1). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# 어머니, 아빠, 할머니, 명, số đếm thuần Hàn, 께서/계시다, 친절하다, bất quy tắc ㅡ… thuộc unit khác, chỉ dùng lại (role: reuse).
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: thành viên gia đình ----------------
+  - key: ko:item:gajok
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 가족
+      romanization: gajok
+      pos: danh từ
+    back:
+      meaning:
+        vi: gia đình
+      examples:
+        - target: 우리 가족은 서울에 살아요.
+          translation:
+            vi: Gia đình tôi sống ở Seoul.
+      pronunciation_note:
+        vi: Đọc "ka-chốc"; patchim ㄱ cuối từ chỉ chặn hơi, không bật ra "k". Khi thêm 이 thì ㄱ nối sang - 가족이 [가조기].
+      confusion:
+        vi: 가족 là Hán Hàn của "gia tộc" nhưng nghĩa là "gia đình" nói chung, không phải "dòng họ".
+
+  - key: ko:item:abeoji
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 아버지
+      romanization: abeoji
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố, cha (trang trọng hơn 아빠)
+      examples:
+        - target: 아버지는 회사원이에요.
+          translation:
+            vi: Bố tôi là nhân viên công ty.
+      pronunciation_note:
+        vi: Đọc "a-bơ-chi"; ㅓ mở miệng, không tròn môi thành "bô".
+      confusion:
+        vi: 아빠 là cách gọi thân mật (ba, bố) khi nói chuyện trong nhà; 아버지 dùng khi giới thiệu với người lạ, người lớn hoặc khi đã trưởng thành.
+
+  - key: ko:item:eomma
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 엄마
+      romanization: eomma
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹ, má (thân mật)
+      examples:
+        - target: 우리 엄마는 요리를 잘해요.
+          translation:
+            vi: Mẹ tôi nấu ăn giỏi.
+      pronunciation_note:
+        vi: Đọc "ơm-ma"; patchim ㅁ ngậm môi rồi nối sang ㅁ của 마.
+      confusion:
+        vi: 엄마 thân mật, 어머니 trang trọng - giống "má" và "mẹ" trong tiếng Việt nhưng khoảng cách lịch sự rõ hơn. Khi nói với người lớn, nên dùng 어머니.
+
+  - key: ko:item:halabeoji
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 할아버지
+      romanization: harabeoji
+      pos: danh từ
+    back:
+      meaning:
+        vi: ông (ông nội, ông ngoại); ông cụ
+      examples:
+        - target: 할아버지하고 할머니는 시골에 계세요.
+          translation:
+            vi: Ông và bà tôi ở dưới quê.
+      pronunciation_note:
+        vi: Patchim ㄹ nối sang nguyên âm sau nên đọc [하라버지] - "ha-ra-bơ-chi".
+      confusion:
+        vi: Tiếng Hàn thông thường không tách ông nội/ông ngoại; muốn nói rõ ông ngoại thì dùng 외할아버지.
+
+  - key: ko:item:hyeong
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 형
+      romanization: hyeong
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh trai (người nói là nam)
+      examples:
+        - target: 저는 형이 한 명 있어요.
+          translation:
+            vi: Tôi (nam) có một anh trai.
+      pronunciation_note:
+        vi: Đọc "hiơng"; ㅕ là "iơ" lướt nhanh, patchim ㅇ là "ng".
+      confusion:
+        vi: Chỉ con trai/đàn ông gọi anh trai là 형. Con gái/phụ nữ gọi anh trai là 오빠.
+
+  - key: ko:item:oppa
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 오빠
+      romanization: oppa
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh trai (người nói là nữ)
+      examples:
+        - target: 우리 오빠는 대학생이에요.
+          translation:
+            vi: Anh trai tôi (tôi là nữ) là sinh viên.
+      pronunciation_note:
+        vi: ㅃ là phụ âm căng - đọc "ô-ppa", căng họng, không bật hơi.
+      confusion:
+        vi: Chỉ con gái/phụ nữ dùng 오빠. Nam gọi anh trai là 형; 오빠 cũng là cách con gái gọi bạn trai hoặc anh lớn tuổi thân thiết.
+
+  - key: ko:item:nuna
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 누나
+      romanization: nuna
+      pos: danh từ
+    back:
+      meaning:
+        vi: chị gái (người nói là nam)
+      examples:
+        - target: 누나는 간호사예요.
+          translation:
+            vi: Chị gái tôi (tôi là nam) là y tá.
+      pronunciation_note:
+        vi: Đọc "nu-na"; ㅜ tròn môi như "u".
+      confusion:
+        vi: Chỉ nam gọi chị gái là 누나. Nữ gọi chị gái là 언니.
+
+  - key: ko:item:eonni
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 언니
+      romanization: eonni
+      pos: danh từ
+    back:
+      meaning:
+        vi: chị gái (người nói là nữ)
+      examples:
+        - target: 언니하고 같이 살아요.
+          translation:
+            vi: Tôi (nữ) sống cùng chị gái.
+      pronunciation_note:
+        vi: Đọc "ơn-ni"; ㅓ mở miệng, đừng đọc thành "ôn-ni".
+      confusion:
+        vi: Chỉ nữ dùng 언니. Nam gọi chị gái là 누나. Nữ cũng gọi chị nhân viên quán hay chị khóa trên là 언니.
+
+  - key: ko:item:namdongsaeng
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 남동생
+      romanization: namdongsaeng
+      pos: danh từ
+    back:
+      meaning:
+        vi: em trai
+      examples:
+        - target: 남동생은 고등학생이에요.
+          translation:
+            vi: Em trai tôi là học sinh cấp ba.
+      pronunciation_note:
+        vi: Đọc "nam-tông-seng"; ㄷ sau patchim ㅁ đọc hơi nặng, ㅐ gần "e".
+      confusion:
+        vi: 동생 là "em" nói chung (cả trai lẫn gái). Thêm 남 (nam) hoặc 여 (nữ) khi cần nói rõ; không phụ thuộc giới tính người nói.
+
+  - key: ko:item:yeodongsaeng
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 여동생
+      romanization: yeodongsaeng
+      pos: danh từ
+    back:
+      meaning:
+        vi: em gái
+      examples:
+        - target: 여동생이 두 명 있어요.
+          translation:
+            vi: Tôi có hai em gái.
+      pronunciation_note:
+        vi: Đọc "iơ-tông-seng"; ㅕ là "iơ", không phải "iô".
+      confusion:
+        vi: 여동생 dùng chung cho người nói nam hay nữ, khác với 언니/누나 (chị) phải chọn theo giới tính người nói.
+
+  - key: ko:item:gram-sibling-speaker
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 형/오빠 · 누나/언니 (theo giới tính người nói)
+      romanization: hyeong/oppa · nuna/eonni
+      pos: quy tắc xưng hô
+    back:
+      meaning:
+        vi: 'Từ chỉ anh/chị trong tiếng Hàn đổi theo giới tính của NGƯỜI NÓI - nam nói 형 (anh), 누나 (chị); nữ nói 오빠 (anh), 언니 (chị).'
+      examples:
+        - target: (민수) 저는 형하고 누나가 있어요.
+          translation:
+            vi: (Minsu, nam) Tôi có anh trai và chị gái.
+        - target: (지은) 저는 오빠하고 언니가 있어요.
+          translation:
+            vi: (Jieun, nữ) Tôi có anh trai và chị gái.
+      confusion:
+        vi: Tiếng Việt chỉ có "anh", "chị" cho mọi người nói. Trước khi chọn từ, bạn hãy tự hỏi "mình là nam hay nữ?", chứ không phải "anh/chị là nam hay nữ?".
+
+  # ---------------- bài 2: sở hữu, 제/우리 ----------------
+  - key: ko:item:je-possessive
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: 제 (= 저의)
+      romanization: je
+      pos: đại từ sở hữu
+    back:
+      meaning:
+        vi: của tôi (lịch sự, khiêm nhường) - dạng rút gọn của 저의
+      examples:
+        - target: 제 이름은 마이예요.
+          translation:
+            vi: Tên tôi là Mai.
+        - target: 이건 제 가방이에요.
+          translation:
+            vi: Đây là cặp của tôi.
+      pronunciation_note:
+        vi: Đọc "chê"; 저의 khi nói thường đọc [저에], nên người Hàn gần như luôn rút thành 제.
+      confusion:
+        vi: 제 đứng TRƯỚC danh từ (제 가방), ngược thứ tự "cặp của tôi". Đừng nói 저 가방 - câu đó nghĩa là "cái cặp kia".
+
+  - key: ko:item:nae-possessive
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: 내 (= 나의)
+      romanization: nae
+      pos: đại từ sở hữu
+    back:
+      meaning:
+        vi: của tôi, của mình, của tớ (thân mật, dùng với bạn bè hoặc người nhỏ tuổi)
+      examples:
+        - target: 이거 내 책이야.
+          translation:
+            vi: Cái này là sách của tớ.
+      confusion:
+        vi: 내 đi với lối nói thân mật (나, -야). Khi nói 해요체 với người lạ hoặc người lớn, hãy dùng 제 - 제 책이에요.
+
+  - key: ko:item:uri
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 우리
+      romanization: uri
+      pos: đại từ
+    back:
+      meaning:
+        vi: chúng tôi, chúng ta; "của chúng tôi" - người Hàn dùng cho gia đình, nhà, trường, đất nước của mình (우리 엄마 = mẹ tôi)
+      examples:
+        - target: 우리 엄마는 선생님이에요.
+          translation:
+            vi: Mẹ tôi là giáo viên.
+        - target: 우리 집은 학교 앞에 있어요.
+          translation:
+            vi: Nhà tôi ở trước trường.
+      pronunciation_note:
+        vi: Đọc "u-ri"; ㄹ giữa hai nguyên âm là âm "r" nhẹ, chạm đầu lưỡi một lần.
+      confusion:
+        vi: 우리 엄마 nghe tự nhiên hơn 제 엄마, vì người Hàn coi gia đình là của chung. Lịch sự hơn nữa thì dùng 저희 (저희 어머니) khi nói với người lớn.
+
+  - key: ko:item:gram-ui-possessive
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N의 N
+      romanization: ui
+      pos: trợ từ sở hữu
+    back:
+      meaning:
+        vi: '"của" - nối người sở hữu (đứng trước) với vật/người được sở hữu (đứng sau)'
+      examples:
+        - target: 민수 씨의 형은 의사예요.
+          translation:
+            vi: Anh trai của Minsu là bác sĩ.
+        - target: 친구 동생이에요.
+          translation:
+            vi: Là em của bạn tôi.
+      pronunciation_note:
+        vi: Trợ từ 의 thường đọc [에] - 민수 씨의 [민수 씨에].
+      confusion:
+        vi: Thứ tự ngược tiếng Việt - "anh của Minsu" thành 민수 씨의 형. Khi nói, 의 thường được bỏ - 친구 동생 (em của bạn).
+
+  - key: ko:item:nugu
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 누구
+      romanization: nugu
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: ai
+      examples:
+        - target: 이 사람은 누구예요?
+          translation:
+            vi: Người này là ai?
+      pronunciation_note:
+        vi: Đọc "nu-gu"; ㄱ giữa hai nguyên âm nghe gần "g".
+      confusion:
+        vi: 누구 + 예요 (không có patchim) - 누구예요?, không phải 누구이에요. Khi làm chủ ngữ, 누구 + 가 thành 누가 - 누가 와요? (Ai đến?).
+
+  - key: ko:item:bumonim
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 부모님
+      romanization: bumonim
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố mẹ (kính trọng)
+      examples:
+        - target: 부모님은 베트남에 계세요.
+          translation:
+            vi: Bố mẹ tôi ở Việt Nam.
+      pronunciation_note:
+        vi: Đọc "pu-mô-nim"; ㅗ tròn môi.
+      confusion:
+        vi: 님 thể hiện sự kính trọng, nên khi nói bố mẹ đang ở đâu, người Hàn dùng 계세요 thay cho 있어요.
+
+  - key: ko:item:hyeongje
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 형제
+      romanization: hyeongje
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh chị em ruột
+      examples:
+        - target: 형제가 있어요?
+          translation:
+            vi: Bạn có anh chị em không?
+      pronunciation_note:
+        vi: Đọc "hiơng-chê".
+      confusion:
+        vi: Gốc nghĩa là "huynh đệ" nhưng khi hỏi 형제가 있어요?, người Hàn hỏi chung cả anh chị em trai lẫn gái.
+
+  - key: ko:item:gajok-sajin
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 가족사진
+      romanization: gajoksajin
+      pos: danh từ
+    back:
+      meaning:
+        vi: ảnh gia đình
+      examples:
+        - target: 이건 우리 가족사진이에요.
+          translation:
+            vi: Đây là ảnh gia đình tôi.
+      pronunciation_note:
+        vi: ㅅ sau patchim ㄱ đọc căng - [가족싸진].
+
+  # ---------------- bài 3: số người, tuổi, kính ngữ nhẹ ----------------
+  - key: ko:item:gajogi-myeot-myeong
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 가족이 몇 명이에요?
+      romanization: gajogi myeot myeongieyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Gia đình bạn có mấy người?
+      examples:
+        - target: 가족이 몇 명이에요? - 네 명이에요.
+          translation:
+            vi: Gia đình bạn có mấy người? - Bốn người.
+      pronunciation_note:
+        vi: Đọc liền [가조기 면 명이에요]; patchim ㅊ của 몇 trước ㅁ đọc thành ㄴ - [면 명].
+      confusion:
+        vi: Trả lời bằng số thuần Hàn dạng ngắn + 명 - 네 명 (không phải 사 명 hay 넷 명). Cách hỏi lịch sự hơn là 가족이 어떻게 되세요?
+
+  - key: ko:item:modu
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 모두
+      romanization: modu
+      pos: phó từ
+    back:
+      meaning:
+        vi: tất cả, tổng cộng
+      examples:
+        - target: 우리 가족은 모두 다섯 명이에요.
+          translation:
+            vi: Gia đình tôi tổng cộng năm người.
+      pronunciation_note:
+        vi: Đọc "mô-tu"; cả hai nguyên âm tròn môi.
+      confusion:
+        vi: 모두 đứng trước số lượng hoặc động từ (모두 다섯 명), không đứng cuối câu như "tất cả" đôi khi đứng trong tiếng Việt.
+
+  - key: ko:item:oedong
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 외동
+      romanization: oedong
+      pos: danh từ
+    back:
+      meaning:
+        vi: con một (không có anh chị em)
+      examples:
+        - target: 형제가 없어요. 저는 외동이에요.
+          translation:
+            vi: Tôi không có anh chị em. Tôi là con một.
+      pronunciation_note:
+        vi: ㅚ ngày nay đọc gần "uê" - [웨동].
+      confusion:
+        vi: Có thể nói rõ hơn - 외아들 (con trai một), 외동딸 (con gái một).
+
+  - key: ko:item:maknae
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 막내
+      romanization: mangnae
+      pos: danh từ
+    back:
+      meaning:
+        vi: con út, người nhỏ nhất (trong nhà, trong nhóm)
+      examples:
+        - target: 저는 우리 집 막내예요.
+          translation:
+            vi: Tôi là con út trong nhà.
+      pronunciation_note:
+        vi: Patchim ㄱ trước ㄴ đọc thành ㅇ - [망내] "mang-ne" (biến âm mũi).
+      confusion:
+        vi: Con cả là 첫째 hoặc 맏이; con thứ hai là 둘째.
+
+  - key: ko:item:adeul
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 아들
+      romanization: adeul
+      pos: danh từ
+    back:
+      meaning:
+        vi: con trai (con của bố mẹ)
+      examples:
+        - target: 아들이 한 명 있어요.
+          translation:
+            vi: Tôi có một con trai.
+      pronunciation_note:
+        vi: Đọc "a-tưl"; ㅡ không tròn môi - đừng đọc thành "a-tul".
+      confusion:
+        vi: 아들 là "con trai" của ai đó; "con trai" theo nghĩa "đàn ông, bé trai" là 남자 / 남자아이.
+
+  - key: ko:item:ttal
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 딸
+      romanization: ttal
+      pos: danh từ
+    back:
+      meaning:
+        vi: con gái (con của bố mẹ)
+      examples:
+        - target: 딸이 두 명 있어요.
+          translation:
+            vi: Tôi có hai con gái.
+      pronunciation_note:
+        vi: ㄸ là phụ âm căng - đọc "tal" với lưỡi căng, không bật hơi; khác 탈 (bật hơi).
+      confusion:
+        vi: '"Con gái" theo nghĩa "phụ nữ, bé gái" là 여자 / 여자아이, không phải 딸.'
+
+  - key: ko:item:nai
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 나이
+      romanization: nai
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuổi
+      examples:
+        - target: 나이가 어떻게 돼요?
+          translation:
+            vi: Bạn bao nhiêu tuổi?
+      confusion:
+        vi: Với người lớn tuổi, dùng từ kính trọng 연세 thay cho 나이.
+
+  - key: ko:item:myeot-sal
+    type: phrase
+    level: topik1
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: 몇 살이에요?
+      romanization: myeot sarieyo?
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bao nhiêu tuổi? (hỏi người bằng hoặc nhỏ tuổi hơn, trẻ em)
+      examples:
+        - target: 동생은 몇 살이에요? - 열다섯 살이에요.
+          translation:
+            vi: Em bạn mấy tuổi? - Mười lăm tuổi.
+      pronunciation_note:
+        vi: Patchim ㅊ của 몇 đứng trước ㅅ đọc [멷], ㅅ sau đó căng lên - [멷 싸리에요].
+      confusion:
+        vi: Tuổi dùng số thuần Hàn + 살 - 스무 살, 서른 살. Đừng hỏi người lớn tuổi "몇 살이에요?" - nghe thiếu lễ phép.
+
+  - key: ko:item:yeonse
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 연세
+      romanization: yeonse
+      pos: danh từ (kính ngữ)
+    back:
+      meaning:
+        vi: tuổi (kính ngữ của 나이, dùng cho ông bà, người lớn tuổi)
+      examples:
+        - target: 할아버지는 연세가 어떻게 되세요?
+          translation:
+            vi: Ông bạn năm nay bao nhiêu tuổi ạ?
+      pronunciation_note:
+        vi: Đọc "iơn-sê".
+      confusion:
+        vi: Hỏi tuổi người lớn - 연세가 어떻게 되세요?, không phải 몇 살이에요? Tả ông bà già thì nói 연세가 많으세요, tránh 늙었어요 (nghe thô).
+
+  - key: ko:item:jinji
+    type: vocab
+    level: topik2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 진지
+      romanization: jinji
+      pos: danh từ (kính ngữ)
+    back:
+      meaning:
+        vi: cơm, bữa ăn (kính ngữ của 밥, dùng cho ông bà, bố mẹ)
+      examples:
+        - target: 할머니, 진지 드세요.
+          translation:
+            vi: Bà ơi, bà ăn cơm ạ.
+      confusion:
+        vi: 진지 thường đi với 드시다 (ăn, kính ngữ của 먹다). Với bạn bè dùng 밥 - 밥 먹어요.
+
+  # ---------------- bài 4: miêu tả người ----------------
+  - key: ko:item:ki
+    type: vocab
+    level: topik1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 키
+      romanization: ki
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiều cao (của người)
+      examples:
+        - target: 형은 키가 커요.
+          translation:
+            vi: Anh tôi cao.
+      pronunciation_note:
+        vi: ㅋ bật hơi mạnh - đọc "khi" có luồng hơi, khác 기 (không bật hơi).
+      confusion:
+        vi: Tiếng Việt chỉ nói "cao", còn tiếng Hàn nói "chiều cao lớn" - 키가 커요; "thấp" là 키가 작아요.
+
+  - key: ko:item:keuda
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 크다 → 커요
+      romanization: keuda → keoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: to, lớn; (키가 크다) cao
+      examples:
+        - target: 아버지는 키가 커요.
+          translation:
+            vi: Bố tôi cao.
+        - target: 이 가방은 너무 커요.
+          translation:
+            vi: Cái cặp này to quá.
+      pronunciation_note:
+        vi: 커요 đọc "khơ-iô"; ㅓ mở miệng, không phải "khô".
+      confusion:
+        vi: Gốc 크 kết thúc bằng ㅡ nên ㅡ rơi mất rồi thêm 어요 - 커요, không phải 크어요 hay 크아요.
+
+  - key: ko:item:jakda
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 작다 → 작아요
+      romanization: jakda → jagayo
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhỏ, bé; (키가 작다) thấp
+      examples:
+        - target: 여동생은 키가 작아요.
+          translation:
+            vi: Em gái tôi thấp.
+      pronunciation_note:
+        vi: Patchim ㄱ nối sang nguyên âm - 작아요 đọc [자가요].
+      confusion:
+        vi: Người thấp là 키가 작아요; đừng dùng 낮아요 (thấp - cho đồ vật như tòa nhà, núi).
+
+  - key: ko:item:yeppeuda
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 예쁘다 → 예뻐요
+      romanization: yeppeuda → yeppeoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: đẹp, xinh
+      examples:
+        - target: 언니는 정말 예뻐요.
+          translation:
+            vi: Chị tôi xinh thật.
+      pronunciation_note:
+        vi: ㅃ căng - "iê-ppơ-iô". ㅖ sau ㅇ đọc đầy đủ "iê".
+      confusion:
+        vi: Gốc 예쁘 kết thúc bằng ㅡ, nguyên âm trước là ㅖ (không phải ㅏ/ㅗ) nên ㅡ rơi và thêm 어요 - 예뻐요. Thường dùng cho nữ, trẻ em, đồ vật.
+
+  - key: ko:item:meositda
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 멋있다 → 멋있어요
+      romanization: meositda → meosisseoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: đẹp trai, phong độ, ngầu; (đồ vật) đẹp, ấn tượng
+      examples:
+        - target: 우리 오빠는 멋있어요.
+          translation:
+            vi: Anh trai tôi phong độ lắm.
+      pronunciation_note:
+        vi: Đọc [머시써요]; patchim ㅅ nối sang 있, ㅆ nối sang 어.
+      confusion:
+        vi: Khen nam giới thường dùng 멋있어요 hoặc 잘생겼어요 (đẹp trai); 예뻐요 chủ yếu cho nữ.
+
+  - key: ko:item:jeomda
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 젊다 → 젊어요
+      romanization: jeomda → jeolmeoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: trẻ (người lớn trông trẻ, còn trẻ)
+      examples:
+        - target: 우리 어머니는 젊어요.
+          translation:
+            vi: Mẹ tôi còn trẻ.
+      pronunciation_note:
+        vi: Patchim kép ㄻ - 젊다 đọc [점따], còn 젊어요 nối ㅁ sang sau thành [절머요].
+      confusion:
+        vi: 젊어요 dùng cho người trưởng thành; trẻ con thì nói 어려요 (nhỏ tuổi). Ngược nghĩa là 나이가 많아요.
+
+  - key: ko:item:nai-manta
+    type: phrase
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 나이가 많다 → 나이가 많아요
+      romanization: naiga manta → naiga manayo
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: lớn tuổi, nhiều tuổi
+      examples:
+        - target: 형은 저보다 나이가 많아요.
+          translation:
+            vi: Anh tôi lớn tuổi hơn tôi.
+      pronunciation_note:
+        vi: ㅎ trong patchim ㄶ câm khi có nguyên âm theo sau - 많아요 đọc [마나요].
+      confusion:
+        vi: Nói lịch sự về người lớn tuổi - 나이가 많으세요 hoặc 연세가 많으세요. Tránh 늙었어요 (già rồi) vì nghe thiếu tế nhị.
+
+  - key: ko:item:gilda
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 길다 → 길어요
+      romanization: gilda → gireoyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: dài
+      examples:
+        - target: 언니는 머리가 길어요.
+          translation:
+            vi: Chị tôi tóc dài.
+      pronunciation_note:
+        vi: ㄹ nối sang nguyên âm - [기러요].
+      confusion:
+        vi: Ngược nghĩa là 짧아요 (ngắn). "Tóc dài" là 머리가 길어요 - 머리 vừa là "đầu" vừa là "tóc".
+
+  - key: ko:item:nalssinhada
+    type: vocab
+    level: topik1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 날씬하다 → 날씬해요
+      romanization: nalssinhada → nalssinhaeyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: thon thả, mảnh mai
+      examples:
+        - target: 누나는 키가 크고 날씬해요.
+          translation:
+            vi: Chị tôi cao và thon thả.
+      pronunciation_note:
+        vi: ㅆ căng - "nal-ssin-he-iô".
+      confusion:
+        vi: Đây là lời khen; 말랐어요 (gầy) có thể mang ý chê. Tính từ -하다 luôn thành -해요.
+
+  - key: ko:item:chakada
+    type: vocab
+    level: topik1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 착하다 → 착해요
+      romanization: chakada → chakaeyo
+      pos: tính từ
+    back:
+      meaning:
+        vi: hiền, tốt bụng, ngoan
+      examples:
+        - target: 제 남동생은 정말 착해요.
+          translation:
+            vi: Em trai tôi ngoan lắm.
+      pronunciation_note:
+        vi: ㄱ gặp ㅎ thành ㅋ bật hơi - 착해요 đọc [차캐요].
+      confusion:
+        vi: 착해요 nói về tính cách tốt bụng, hiền; 친절해요 là thân thiện, ân cần với người khác (nhân viên, hàng xóm).
+
+  - key: ko:item:gram-double-subject
+    type: grammar_point
+    level: topik1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N은/는 N이/가 A (키가 커요)
+      romanization: N-eun/neun N-i/ga A
+      pos: cấu trúc câu
+    back:
+      meaning:
+        vi: Câu miêu tả một bộ phận/đặc điểm của người - người là chủ đề (은/는), đặc điểm là chủ ngữ (이/가), tính từ đứng cuối.
+      examples:
+        - target: 오빠는 키가 커요.
+          translation:
+            vi: Anh tôi cao.
+        - target: 할머니는 머리가 길어요.
+          translation:
+            vi: Bà tôi tóc dài.
+      confusion:
+        vi: Giống cấu trúc "Anh tôi, chiều cao lớn" - hai phần đều cần trợ từ. Không dùng 을/를 với tính từ (키를 커요 là sai), và không thêm 의 (형의 키가 커요 nghe như dịch máy).
+
+  - key: ko:item:gram-eottaeyo
+    type: grammar_point
+    level: topik1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: N이/가 어때요?
+      romanization: N-i/ga eottaeyo?
+      pos: mẫu câu hỏi
+    back:
+      meaning:
+        vi: N thế nào? N ra sao? - hỏi nhận xét, miêu tả về người hoặc vật
+      examples:
+        - target: 남자 친구가 어때요? - 키가 크고 친절해요.
+          translation:
+            vi: Bạn trai bạn thế nào? - Cao và tử tế lắm.
+        - target: 언니는 어때요?
+          translation:
+            vi: Còn chị bạn thì thế nào?
+      pronunciation_note:
+        vi: Đọc "ơ-tte-iô"; ㄸ căng.
+      confusion:
+        vi: Trả lời bằng tính từ (커요, 예뻐요…), không dùng 이에요/예요. Dùng 은/는 khi chuyển sang người khác - 언니는 어때요? (còn chị thì sao?).

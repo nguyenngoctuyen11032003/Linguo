@@ -1,0 +1,396 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: ko:lesson:family-count-age
+order_index: 3
+level: topik1
+title:
+  vi: Gia đình mấy người? Tuổi và lời kính trọng
+objectives:
+  - vi: Hỏi và trả lời "Gia đình bạn có mấy người?" bằng số thuần Hàn + 명.
+  - vi: Hỏi tuổi bằng 몇 살이에요? và nói mình là con út, con một, có con trai/con gái.
+  - vi: Nhận ra và dùng vài từ kính trọng cho ông bà, bố mẹ - 연세, 진지, 계세요, 께서.
+estimated_minutes: 15
+skills: [speaking, listening, vocabulary]
+prerequisites: [ko:lesson:my-family]
+items:
+  - item: ko:item:gajogi-myeot-myeong
+  - item: ko:item:modu
+  - item: ko:item:oedong
+  - item: ko:item:maknae
+  - item: ko:item:adeul
+  - item: ko:item:ttal
+  - item: ko:item:nai
+  - item: ko:item:myeot-sal
+  - item: ko:item:yeonse
+  - item: ko:item:jinji
+  - item: ko:item:counter-myeong
+    role: reuse
+  - item: ko:item:native-short-forms
+    role: reuse
+  - item: ko:item:myeot
+    role: reuse
+  - item: ko:item:counter-sal
+    role: reuse
+  - item: ko:item:verb-gyesida
+    role: reuse
+  - item: ko:item:gram-honorific-subject
+    role: reuse
+  - item: ko:item:verb-deusida
+    role: reuse
+  - item: ko:item:halmeoni
+    role: reuse
+  - item: ko:item:halabeoji
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời được câu hỏi rất hay gặp khi làm quen với người Hàn - "Gia đình bạn có mấy người?" - và hỏi tuổi ông bà người khác một cách lễ phép.
+  - type: explain
+    text:
+      vi: 'Đếm người dùng số thuần Hàn dạng ngắn + 명 - 한 명, 두 명, 세 명, 네 명, 다섯 명. Hỏi - 가족이 몇 명이에요?; trả lời - 네 명이에요. Muốn kể từng người, bạn nối bằng 하고 rồi thêm 모두 (tổng cộng) - 아버지, 어머니, 오빠하고 저, 모두 네 명이에요.'
+  - type: explain
+    text:
+      vi: Hỏi tuổi bạn bè hoặc trẻ em - 몇 살이에요?; trả lời bằng số thuần Hàn + 살 - 스무 살이에요 (20 tuổi). 나이 là "tuổi", 막내 là con út, 외동 là con một, 아들/딸 là con trai/con gái.
+  - type: explain
+    text:
+      vi: 'Với ông bà và người lớn tuổi, tiếng Hàn đổi hẳn từ để tỏ lòng kính trọng - 나이 → 연세 (tuổi), 밥 → 진지 (cơm), 있어요 → 계세요 (ở), 이/가 → 께서. Ở cấp này, bạn chỉ cần nhớ vài câu cố định - 연세가 어떻게 되세요?, 진지 드세요, 할머니는 집에 계세요.'
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt thể hiện kính trọng chủ yếu bằng "ạ", "dạ" và cách xưng hô. Tiếng Hàn còn đổi cả danh từ và động từ khi chủ ngữ là người lớn, kể cả khi người đó không có mặt. 께서 rất trang trọng; trong hội thoại thường ngày, 할머니는 … 계세요 là đủ lịch sự.
+  - type: example
+    target: 가족이 몇 명이에요? - 다섯 명이에요. 부모님, 언니, 남동생하고 저예요.
+    target_lang: ko
+    translation:
+      vi: Gia đình bạn có mấy người? - Năm người. Bố mẹ, chị gái, em trai và tôi.
+    note:
+      vi: 다섯 (năm) giữ nguyên trước 명; chỉ 하나·둘·셋·넷 rút gọn thành 한·두·세·네.
+  - type: example
+    target: 저는 막내예요. 오빠는 스물다섯 살이에요.
+    target_lang: ko
+    translation:
+      vi: Tôi là con út. Anh tôi 25 tuổi.
+  - type: example
+    target: 할아버지는 연세가 어떻게 되세요? - 여든 살이세요.
+    target_lang: ko
+    translation:
+      vi: Ông bạn năm nay bao nhiêu tuổi ạ? - Ông tám mươi tuổi.
+    note:
+      vi: Khi nói tuổi của ông bà, người Hàn thêm 이세요 thay cho 이에요 để giữ lời kính trọng.
+  - type: example
+    target: 할머니께서 집에 계세요. 할머니, 진지 드세요.
+    target_lang: ko
+    translation:
+      vi: Bà đang ở nhà. Bà ơi, bà ăn cơm ạ.
+  - type: common_mistake
+    wrong: 우리 가족은 사 명이에요.
+    right: 우리 가족은 네 명이에요.
+    target_lang: ko
+    note:
+      vi: 명 đi với số thuần Hàn, nên "bốn người" là 네 명. 사 (số Hán Hàn) dùng cho tiền, ngày tháng, số điện thoại.
+  - type: common_mistake
+    wrong: 언니가 둘 명 있어요.
+    right: 언니가 두 명 있어요.
+    target_lang: ko
+    note:
+      vi: Trước đơn vị đếm, 하나·둘·셋·넷 rút thành 한·두·세·네 - 둘 명, 넷 명 là sai. Quy tắc này cũng áp dụng cho tuổi - 스물 → 스무 살.
+  - type: common_mistake
+    wrong: 할아버지는 몇 살이에요?
+    right: 할아버지는 연세가 어떻게 되세요?
+    target_lang: ko
+    note:
+      vi: Tiếng Việt hỏi "ông bao nhiêu tuổi ạ?" chỉ cần thêm "ạ". Tiếng Hàn hỏi tuổi người lớn bằng 몇 살 nghe như hỏi trẻ con - phải đổi sang 연세 và -세요.
+  - type: summary
+    points:
+      - vi: 가족이 몇 명이에요? - 한/두/세/네/다섯 명이에요 (số thuần Hàn + 명).
+      - vi: 몇 살이에요? - số thuần Hàn + 살 · 모두 = tổng cộng.
+      - vi: 막내 (con út) · 외동 (con một) · 아들 (con trai) · 딸 (con gái).
+      - vi: 'Người lớn tuổi - 나이 → 연세, 밥 → 진지, 있어요 → 계세요, 이/가 → 께서.'
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:family-count-age-mcq-four
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gajogi-myeot-myeong
+    prompt:
+      stem: "Gia đình bạn có bốn người. Chọn từ đúng: 우리 가족은 ___ 명이에요."
+      stem_lang: vi
+      options:
+        - { id: v7c, text: 네, lang: ko }
+        - { id: h2p, text: 사, lang: ko }
+        - { id: z5n, text: 넷, lang: ko }
+        - { id: e1g, text: 너, lang: ko }
+    answer:
+      correct_option_id: v7c
+    explanation:
+      vi: Đếm người dùng số thuần Hàn; 넷 (bốn) rút gọn thành 네 khi đứng trước 명. 사 là số Hán Hàn, còn 너 là "mày, bạn" - không phải số.
+    display_answer: 네
+
+  - key: ko:exercise:family-count-age-listen-five
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:maknae
+    prompt:
+      audio_asset_id: null
+      fallback_text: 우리 가족은 모두 다섯 명이에요. 저는 막내예요.
+      options:
+        - { id: b6s, text: Gia đình tôi tổng cộng năm người. Tôi là con út., lang: vi }
+        - { id: n3d, text: Gia đình tôi tổng cộng bốn người. Tôi là con út., lang: vi }
+        - { id: k9m, text: Gia đình tôi tổng cộng năm người. Tôi là con một., lang: vi }
+        - { id: t4w, text: Gia đình tôi tổng cộng năm người. Tôi là con cả., lang: vi }
+    answer:
+      correct_option_id: b6s
+    explanation:
+      vi: 다섯 명 là năm người (bốn là 네 명), 모두 là tổng cộng, 막내 là con út. Con một là 외동, con cả là 첫째.
+    display_answer: Gia đình tôi tổng cộng năm người. Tôi là con út.
+
+  - key: ko:exercise:family-count-age-mcq-yeonse
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:yeonse
+    prompt:
+      stem: Khi nói về ông bà, từ nào là cách nói kính trọng của 나이 (tuổi)?
+      stem_lang: vi
+      options:
+        - { id: q8r, text: 연세, lang: ko }
+        - { id: w3y, text: 진지, lang: ko }
+        - { id: a6k, text: 계세요, lang: ko }
+        - { id: j1x, text: 살, lang: ko }
+    answer:
+      correct_option_id: q8r
+    explanation:
+      vi: 연세 là "tuổi" kính trọng. 진지 là "cơm" kính trọng, 계세요 là "ở" kính trọng, còn 살 là đơn vị đếm tuổi thông thường.
+    display_answer: 연세
+
+  - key: ko:exercise:family-count-age-fill-gyeseyo-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:verb-gyesida
+    prompt:
+      template: "할머니는 지금 집에 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Bà hiện đang ở nhà."
+        - "Gợi ý: cách nói kính trọng của 있어요 khi nói về người lớn tuổi."
+    answer:
+      blanks:
+        b1: [계세요]
+    known_wrong:
+      - answer: 있어요
+        feedback_vi: Câu đúng ngữ pháp nhưng thiếu kính trọng. Với bà, dùng 계세요 thay cho 있어요.
+        error_tag: honorific_gyesida
+      - answer: 있으세요
+        feedback_vi: 있으세요 dùng khi bà "có" một thứ gì đó. "Ở" (một nơi) dùng 계세요.
+        error_tag: honorific_gyesida
+      - answer: 게세요
+        feedback_vi: Đọc nghe như [게세요] nhưng viết là 계세요 (ㅖ).
+        error_tag: spelling_pronunciation
+    explanation:
+      vi: Khi người ở một nơi là người lớn tuổi, 있어요 đổi thành 계세요 (từ 계시다).
+    display_answer: 할머니는 지금 집에 계세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:family-count-age-translate-three
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gajogi-myeot-myeong
+    prompt:
+      source_text: Gia đình tôi có ba người.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 우리 가족은 세 명이에요.
+        - 저희 가족은 세 명이에요.
+        - 제 가족은 세 명이에요.
+        - 가족이 세 명이에요.
+        - 우리 가족은 모두 세 명이에요.
+        - 저희 가족은 모두 세 명이에요.
+        - 우리 가족은 셋이에요.
+    known_wrong:
+      - answer: 우리 가족은 삼 명이에요.
+        feedback_vi: 명 đi với số thuần Hàn - 세 명, không phải 삼 명.
+        error_tag: native_sino_number
+      - answer: 우리 가족은 셋 명이에요.
+        feedback_vi: Trước 명, 셋 rút gọn thành 세 - 세 명.
+        error_tag: native_short_form
+      - answer: 저 가족은 세 명이에요.
+        feedback_vi: 저 가족 là "gia đình kia". "Gia đình tôi" là 우리 가족 hoặc 제 가족.
+        error_tag: possessive_jeo_je
+      - answer: 우리 가족은 세 명예요.
+        feedback_vi: 명 có patchim ㅇ nên dùng 이에요 - 세 명이에요.
+        error_tag: copula_ieyo_yeyo
+    explanation:
+      vi: Gia đình tôi = 우리 가족 (hoặc 저희/제 가족); ba người = 세 명; 명 có patchim nên + 이에요.
+    display_answer: 우리 가족은 세 명이에요.
+
+  - key: ko:exercise:family-count-age-fill-how-many
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:myeot
+    prompt:
+      template: "(Gia đình bạn mấy người? - Bốn người.) 가족이 {{b1}} 명이에요? - {{b2}} 명이에요."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [몇]
+        b2: [네]
+    known_wrong:
+      - answer: 사
+        feedback_vi: 명 đi với số thuần Hàn - 네 명.
+        error_tag: native_sino_number
+      - answer: 넷
+        feedback_vi: Trước 명, 넷 rút gọn thành 네.
+        error_tag: native_short_form
+      - answer: 무슨
+        feedback_vi: 무슨 là "gì, nào". Hỏi số lượng dùng 몇 (mấy).
+        error_tag: question_word
+    explanation:
+      vi: 몇 = mấy (hỏi số lượng, đứng trước đơn vị đếm). Bốn người = 네 명 (넷 rút gọn thành 네).
+    display_answer: 가족이 몇 명이에요? - 네 명이에요.
+
+  - key: ko:exercise:family-count-age-translate-only-child
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:oedong
+    prompt:
+      source_text: Tôi không có anh chị em. Tôi là con một.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 형제가 없어요. 저는 외동이에요.
+        - 형제가 없어요. 외동이에요.
+        - 저는 형제가 없어요. 외동이에요.
+        - 저는 형제가 없어요. 저는 외동이에요.
+        - 형제가 없어요. 전 외동이에요.
+        - 형제는 없어요. 저는 외동이에요.
+    known_wrong:
+      - answer: 형제가 없어요. 저는 외동예요.
+        feedback_vi: 외동 có patchim ㅇ nên dùng 이에요 - 외동이에요.
+        error_tag: copula_ieyo_yeyo
+      - answer: 형제를 없어요. 저는 외동이에요.
+        feedback_vi: Với 없어요, dùng 이/가 - 형제가 없어요.
+        error_tag: particle_itda
+      - answer: 형제가 없어요. 저는 막내예요.
+        feedback_vi: 막내 là con út (vẫn có anh chị). Con một là 외동.
+        error_tag: family_term
+    explanation:
+      vi: Không có anh chị em = 형제가 없어요; con một = 외동, có patchim nên + 이에요.
+    display_answer: 형제가 없어요. 저는 외동이에요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:family-count-age-mcq-ask-grandpa
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:yeonse
+    prompt:
+      stem: Bạn muốn hỏi lễ phép tuổi của ông người bạn Hàn. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: c2v, text: 할아버지는 연세가 어떻게 되세요?, lang: ko }
+        - { id: l9h, text: 할아버지는 몇 살이에요?, lang: ko }
+        - { id: s5f, text: 할아버지는 나이가 뭐예요?, lang: ko }
+        - { id: g7a, text: 할아버지는 진지가 어떻게 되세요?, lang: ko }
+    answer:
+      correct_option_id: c2v
+    explanation:
+      vi: Tuổi người lớn dùng 연세 + 어떻게 되세요?. 몇 살이에요? dùng cho bạn bè, trẻ em; 진지 là "cơm", không phải "tuổi".
+    display_answer: 할아버지는 연세가 어떻게 되세요?
+
+  - key: ko:exercise:family-count-age-translate-children-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:ttal
+    prompt:
+      source_text: 저는 아들이 한 명, 딸이 두 명 있어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi có một con trai và hai con gái.
+        - Tôi có một con trai, hai con gái.
+        - Tôi có một đứa con trai và hai đứa con gái.
+        - Tôi có một cậu con trai và hai cô con gái.
+        - Tôi có một con trai và hai đứa con gái.
+        - Tôi có 1 con trai và 2 con gái.
+        - Tôi có 1 con trai, 2 con gái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi có hai con trai và một con gái.
+        feedback_vi: 아들이 한 명 = một con trai, 딸이 두 명 = hai con gái.
+        error_tag: number_counter
+      - answer: Tôi có một em trai và hai em gái.
+        feedback_vi: 아들/딸 là con trai/con gái. Em trai, em gái là 남동생, 여동생.
+        error_tag: family_term
+    explanation:
+      vi: 아들 = con trai, 딸 = con gái; 한 명 = một người, 두 명 = hai người.
+    display_answer: Tôi có một con trai và hai con gái.
+
+  - key: ko:exercise:family-count-age-wb-five
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:modu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Gia đình tôi tổng cộng năm người.\""
+      tokens:
+        - { id: m1, text: 모두 }
+        - { id: m2, text: 명이에요 }
+        - { id: m3, text: 우리 }
+        - { id: m4, text: 오 }
+        - { id: m5, text: 가족은 }
+        - { id: m6, text: 다섯 }
+        - { id: m7, text: 저 }
+    answer:
+      orders:
+        - [m3, m5, m1, m6, m2]
+    explanation:
+      vi: 우리 가족은 (gia đình tôi) + 모두 (tổng cộng) + 다섯 명이에요 (năm người). Đếm người dùng số thuần Hàn 다섯, không dùng 오; 저 가족 sẽ thành "gia đình kia".
+    display_answer: 우리 가족은 모두 다섯 명이에요.
+
+  - key: ko:exercise:family-count-age-mcq-jinji
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:jinji
+    prompt:
+      stem: Bạn đến chơi nhà bạn Hàn vào bữa trưa và lễ phép mời bà của bạn ấy ăn cơm. Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: o5t, text: "할머니, 진지 드세요.", lang: ko }
+        - { id: i8c, text: "할머니, 밥 먹어요.", lang: ko }
+        - { id: y2w, text: "할머니, 진지 먹어요.", lang: ko }
+        - { id: f6j, text: "할머니, 연세 드세요.", lang: ko }
+    answer:
+      correct_option_id: o5t
+    explanation:
+      vi: Với ông bà, "cơm" là 진지 và "ăn" là 드시다 → 드세요. 밥 먹어요 thiếu kính trọng, 진지 먹어요 không khớp mức lịch sự, 연세 là "tuổi".
+    display_answer: 할머니, 진지 드세요.
