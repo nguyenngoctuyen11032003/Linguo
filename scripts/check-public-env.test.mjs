@@ -67,3 +67,15 @@ test('scans every VITE_ value for secrets', () => {
   assert.deepEqual(checkPublicEnv({ ...ok, VITE_OTHER: jwt('anon') }), []);
   assert.deepEqual(checkPublicEnv({ ...ok, VITE_SITE_URL: 'https://x.github.io/Linguo' }), []);
 });
+
+test('VITE_VAPID_PUBLIC_KEY (spec 10 §3): public key allowed, a pasted private key is rejected', () => {
+  // 65-byte uncompressed P-256 point, base64url → 87 characters starting with "B".
+  const publicKey = `B${'A'.repeat(86)}`;
+  assert.deepEqual(checkPublicEnv({ ...ok, VITE_VAPID_PUBLIC_KEY: publicKey }), []);
+  assert.deepEqual(checkPublicEnv({ ...ok, VITE_VAPID_PUBLIC_KEY: '' }), []);
+  // The 32-byte private key is 43 characters: putting it in VITE_* would publish it.
+  const errors = checkPublicEnv({ ...ok, VITE_VAPID_PUBLIC_KEY: 'x'.repeat(43) });
+  assert.equal(errors.length, 1);
+  assert.match(errors[0], /VITE_VAPID_PUBLIC_KEY/);
+  assert.match(checkPublicEnv({ ...ok, VITE_VAPID_PRIVATE_KEY: 'x' })[0], /VITE_VAPID_PRIVATE_KEY/);
+});

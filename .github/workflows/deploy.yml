@@ -161,6 +161,38 @@ jobs:
           fi
           supabase secrets set --env-file "$secrets_file" --project-ref "$SUPABASE_PROJECT_ID" >/dev/null
           echo "Updated Edge Function secrets: ${names[*]}"
+      # Spec 10 §3: notify-dispatch secrets, same rules as above. VAPID_PUBLIC_KEY comes from the public
+      # variable VITE_VAPID_PUBLIC_KEY so the browser and the server always use the same key pair.
+      - name: Set Edge Function secrets (reminders)
+        env:
+          NOTIFY_CRON_SECRET: ${{ secrets.NOTIFY_CRON_SECRET }}
+          VAPID_PUBLIC_KEY: ${{ vars.VITE_VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+        run: |
+          set +x
+          if [ ! -f supabase/functions/notify-dispatch/index.ts ]; then
+            echo "No notify-dispatch function."; exit 0
+          fi
+          umask 077
+          secrets_file="$(mktemp)"
+          trap 'rm -f "$secrets_file"' EXIT
+          names=()
+          for v in NOTIFY_CRON_SECRET VAPID_PUBLIC_KEY VAPID_PRIVATE_KEY VAPID_SUBJECT; do
+            if [ -n "${!v}" ]; then
+              printf '%s=%s\n' "$v" "${!v}" >> "$secrets_file"
+              names+=("$v")
+            fi
+          done
+          if [ -z "$NOTIFY_CRON_SECRET" ]; then
+            echo "::warning::No NOTIFY_CRON_SECRET in environment production; notify-dispatch refuses every call until it is set (docs/DEPLOY.md)."
+          fi
+          if [ -z "$VAPID_PUBLIC_KEY" ] || [ -z "$VAPID_PRIVATE_KEY" ] || [ -z "$VAPID_SUBJECT" ]; then
+            echo "::warning::VAPID not fully configured; reminders stay in the in-app inbox without Web Push (docs/DEPLOY.md)."
+          fi
+          if [ ${#names[@]} -eq 0 ]; then exit 0; fi
+          supabase secrets set --env-file "$secrets_file" --project-ref "$SUPABASE_PROJECT_ID" >/dev/null
+          echo "Updated Edge Function secrets: ${names[*]}"
       - name: Deploy all Edge Functions
         run: |
           if ls supabase/functions/*/index.ts >/dev/null 2>&1; then
@@ -186,6 +218,7 @@ jobs:
       VITE_SITE_URL: ${{ vars.VITE_SITE_URL }}
       VITE_AUTH_GOOGLE_ENABLED: ${{ vars.VITE_AUTH_GOOGLE_ENABLED }}
       VITE_HERO_VIDEO_URL: ${{ vars.VITE_HERO_VIDEO_URL }}
+      VITE_VAPID_PUBLIC_KEY: ${{ vars.VITE_VAPID_PUBLIC_KEY }}
       VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || format('/{0}/', github.event.repository.name) }}
     steps:
       - uses: actions/checkout@v7

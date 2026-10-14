@@ -2,7 +2,8 @@
   "lock": false,
   "imports": {
     "zod": "npm:zod@4.6.7",
-    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.117.3"
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.117.3",
+    "@block65/webcrypto-web-push": "npm:@block65/webcrypto-web-push@2.0.0"
   },
   "compilerOptions": {
     "strict": true,
