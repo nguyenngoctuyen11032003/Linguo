@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:housing-search
 order_index: 1
 level: topik3
@@ -239,6 +238,12 @@ exercises:
         - 다음 달에 이사 갈 거예요.
         - 저는 다음 달에 이사 갈 거예요.
         - 전 다음 달에 이사할 거예요.
+        - 다음 달에 이사합니다.
+        - 저는 다음 달에 이사합니다.
+        - 다음 달에 이사를 해요.
+        - 다음 달에 이사를 가요.
+        - 다음 달에 이사를 할 거예요.
+        - 다음 달에 집을 옮겨요.
     known_wrong:
       - answer: 다음 달에 집을 이사해요.
         feedback_vi: 이사 đã có nghĩa "chuyển chỗ ở", không thêm 집을.
@@ -302,6 +307,12 @@ exercises:
         - 이 방은 조금 작지만 살 만해요.
         - 이 방이 좀 좁지만 살 만해요.
         - 방이 좀 좁지만 살 만해요.
+        - 이 방 좀 좁지만 살 만해요.
+        - 이 방은 좀 좁긴 하지만 살 만해요.
+        - 이 방은 좀 좁기는 하지만 살 만해요.
+        - 이 방은 좀 좁지만 그래도 살 만해요.
+        - 이 방은 약간 좁지만 살 만해요.
+        - 이 방은 좀 좁지만 살 만합니다.
     known_wrong:
       - answer: 이 방은 좀 좁지만 살을 만해요.
         feedback_vi: 살다 có gốc ㄹ - viết 살 만해요, không thêm 을.
@@ -379,6 +390,10 @@ exercises:
         - Thuê jeonse không phải trả tiền thuê hàng tháng nhưng tiền cọc rất cao.
         - Jeonse thì không phải trả tiền tháng nhưng tiền cọc rất cao.
         - Thuê jeonse thì không mất tiền thuê hằng tháng nhưng tiền cọc rất đắt.
+        - Thuê jeonse thì không phải trả tiền thuê hàng tháng nhưng tiền cọc rất đắt.
+        - Jeonse không phải trả tiền thuê hằng tháng nhưng tiền đặt cọc rất cao.
+        - Thuê jeonse không trả tiền tháng nhưng tiền cọc rất cao.
+        - Với jeonse, không phải trả tiền thuê hằng tháng nhưng tiền cọc rất đắt.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -410,6 +425,10 @@ exercises:
         - 그 부동산은 믿을 만한 곳이에요.
         - 저 부동산은 믿을 만한 곳이에요.
         - 그 부동산 사무소는 믿을 만해요.
+        - 그 부동산 사무실은 믿을 만해요.
+        - 그 부동산 중개소는 믿을 만해요.
+        - 그 부동산은 믿을 만합니다.
+        - 그 부동산 믿을 만해요.
     known_wrong:
       - answer: 그 부동산은 믿는 만해요.
         feedback_vi: 만하다 đi với dạng -(으)ㄹ - 믿을 만해요.

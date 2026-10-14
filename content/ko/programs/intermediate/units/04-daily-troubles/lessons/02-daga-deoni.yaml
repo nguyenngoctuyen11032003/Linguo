@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:daily-troubles-daga-deoni
 order_index: 2
 level: topik3
@@ -235,7 +234,7 @@ exercises:
         - { id: b2, width_hint: 3 }
     answer:
       blanks:
-        b1: [뛰다가]
+        b1: [뛰다가, 달리다가]
         b2: [갔더니]
     known_wrong:
       - answer: 뛰었다가
@@ -271,6 +270,11 @@ exercises:
         - 저는 영화를 보다가 잠들었어요.
         - 영화를 보다가 잠이 들었습니다.
         - 영화를 보다가 잤어요.
+        - 영화 보다가 잤어요.
+        - 전 영화를 보다가 잠이 들었어요.
+        - 영화를 보다가 잠들어 버렸어요.
+        - 영화를 보면서 잠이 들었어요.
+        - 영화 보면서 잠들었어요.
     known_wrong:
       - answer: 영화를 봤다가 잠이 들었어요.
         feedback_vi: Đang xem chứ chưa xem xong, nên dùng 보다가.
@@ -278,9 +282,6 @@ exercises:
       - answer: 영화를 봤더니 잠이 들었어요.
         feedback_vi: -았/었더니 là làm xong rồi mới có kết quả. Đang xem thì ngủ - dùng 보다가.
         error_tag: daga_vs_deoni
-      - answer: 영화를 보면서 잠이 들었어요.
-        feedback_vi: -(으)면서 là hai việc diễn ra song song. Ở đây việc xem bị ngắt vì ngủ - dùng -다가.
-        error_tag: daga_vs_myeonseo
     explanation:
       vi: Hành động A (xem phim) đang diễn ra thì bị ngắt bởi B (ngủ thiếp đi), cùng một người → 보다가. Thì quá khứ đặt ở cuối - 잠이 들었어요.
     display_answer: 영화를 보다가 잠이 들었어요.
@@ -304,6 +305,11 @@ exercises:
         - 서비스센터에 갔더니 문이 닫혀 있었어요.
         - 서비스 센터에 가 봤더니 문이 닫혀 있었어요.
         - 서비스 센터에 갔더니 문이 닫혀 있더라고요.
+        - 서비스센터에 갔더니 문이 닫혀 있더라고요.
+        - 서비스 센터에 갔더니 문을 닫았더라고요.
+        - 서비스 센터에 가 보니까 문이 닫혀 있었어요.
+        - 서비스 센터에 갔는데 문이 닫혀 있었어요.
+        - 서비스 센터에 갔더니 문이 닫혀 있었습니다.
     known_wrong:
       - answer: 서비스 센터에 가더니 문이 닫혀 있었어요.
         feedback_vi: Người đi là chính bạn, nên dùng 갔더니 (có 았).
@@ -362,6 +368,11 @@ exercises:
         - Tôi làm rơi điện thoại nên vỡ màn hình. Buồn thật.
         - Tôi làm rơi điện thoại nên màn hình bị vỡ. Thật là buồn bực.
         - Tôi làm rơi điện thoại nên màn hình vỡ rồi. Xót quá.
+        - Tôi đánh rơi điện thoại nên màn hình bị vỡ. Thật là xót.
+        - Tôi đánh rơi điện thoại nên vỡ màn hình. Xót thật.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Bực thật.
+        - Tôi làm rơi điện thoại nên màn hình bị vỡ. Thật sự rất buồn.
+        - Tôi làm rơi điện thoại khiến màn hình bị vỡ. Xót thật.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -396,6 +407,11 @@ exercises:
         - 하루 쉬었더니 훨씬 좋아졌어요.
         - 하루 쉬었더니 훨씬 나아졌어요.
         - 하루 쉬었더니 몸이 많이 좋아졌어요.
+        - 하루 쉬었더니 몸이 훨씬 좋아졌어요.
+        - 하루 쉬었더니 몸이 많이 나아졌어요.
+        - 하루 쉬었더니 훨씬 괜찮아졌어요.
+        - 하루를 쉬었더니 많이 좋아졌어요.
+        - 전 하루 쉬었더니 많이 좋아졌어요.
     known_wrong:
       - answer: 하루 쉬더니 많이 좋아졌어요.
         feedback_vi: Người nghỉ là chính bạn, cần 았/었 - 쉬었더니.

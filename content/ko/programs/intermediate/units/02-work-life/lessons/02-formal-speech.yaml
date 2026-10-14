@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:formal-speech
 order_index: 2
 level: topik4
@@ -183,7 +182,7 @@ exercises:
         - "Gợi ý: 참석하다 + kính ngữ -시- + đuôi câu hỏi -ㅂ니까."
     answer:
       blanks:
-        b1: [참석하십니까, 참석합니까]
+        b1: [참석하십니까, 참석합니까, 참석하시겠습니까]
     known_wrong:
       - answer: 참석하십니다
         feedback_vi: Đây là câu hỏi nên đuôi phải là -ㅂ니까, không phải -ㅂ니다.
@@ -261,6 +260,11 @@ exercises:
         - 저는 영업부의 신입 사원입니다.
         - 영업부에 새로 온 신입 사원입니다.
         - 저는 영업부에 새로 온 신입 사원입니다.
+        - 영업부에 새로 들어온 신입 사원입니다.
+        - 저는 영업부에 새로 들어온 신입 사원입니다.
+        - 영업부 신입사원입니다.
+        - 저는 영업부 신입사원입니다.
+        - 저는 영업부의 신입사원입니다.
     known_wrong:
       - answer: 저는 영업부 신입 사원이에요.
         feedback_vi: Câu đúng nhưng là 해요체. Giới thiệu trước tập thể dùng 합쇼체 - 신입 사원입니다.
@@ -292,6 +296,15 @@ exercises:
         - 다음부터는 늦지 않도록 노력하겠습니다.
         - 다음에는 늦지 않도록 노력하겠습니다.
         - 다음부터는 늦지 않겠습니다.
+        - 앞으로는 늦지 않겠습니다.
+        - 앞으로는 늦지 않도록 노력하겠습니다.
+        - 앞으로 늦지 않도록 노력하겠습니다.
+        - 다음부터 늦지 않도록 노력하겠습니다.
+        - 다음부터는 늦지 않도록 주의하겠습니다.
+        - 다음부터는 안 늦도록 하겠습니다.
+        - 다음에는 늦지 않겠습니다.
+        - 다음부터는 늦지 않도록 할게요.
+        - 다음부터는 늦지 않도록 하겠어요.
     known_wrong:
       - answer: 다음부터는 늦지 않도록 하세요.
         feedback_vi: -도록 하세요 là lời nhắc người khác. Hứa về việc của mình dùng -도록 하겠습니다.
@@ -363,6 +376,12 @@ exercises:
         - Tài liệu cho cuộc họp ở trong phòng họp. Nhớ đọc trước khi họp nhé.
         - Tài liệu họp ở phòng họp. Mọi người nhớ đọc trước khi họp.
         - Tài liệu họp ở phòng họp. Xin hãy đọc trước khi họp.
+        - Tài liệu họp ở phòng họp. Mọi người nhớ đọc trước khi họp nhé.
+        - Tài liệu cuộc họp ở phòng họp. Xin hãy nhớ đọc trước khi họp.
+        - Tài liệu họp để ở phòng họp. Xin hãy nhớ đọc trước khi họp.
+        - Tài liệu họp ở phòng họp. Hãy nhớ đọc qua trước khi họp.
+        - Tài liệu họp ở phòng họp. Nhớ đọc trước khi họp nhé.
+        - Tài liệu họp ở phòng họp. Xin vui lòng nhớ đọc trước khi họp.
     rubric:
       diacritics: lenient
     known_wrong:

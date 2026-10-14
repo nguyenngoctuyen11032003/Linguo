@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:media-guessing
 order_index: 4
 level: topik4
@@ -115,13 +114,13 @@ exercises:
       stem_lang: vi
       options:
         - { id: w2k, text: 바쁜가, lang: ko }
-        - { id: h6d, text: 바쁘나, lang: ko }
+        - { id: h6d, text: 바쁘는가, lang: ko }
         - { id: z3q, text: 바쁜, lang: ko }
         - { id: n8s, text: 바빠서, lang: ko }
     answer:
       correct_option_id: w2k
     explanation:
-      vi: 바쁘다 là tính từ nên dùng -(으)ㄴ가 봐요 → 바쁜가 봐요 (theo chuẩn sách giáo khoa, -나 봐요 dành cho động từ). Trước 봐요 phải có -나/-(으)ㄴ가, nên 바쁜 và 바빠서 sai.
+      vi: 바쁘다 là tính từ nên dùng -(으)ㄴ가 봐요 → 바쁜가 봐요. -는가 chỉ gắn với động từ nên 바쁘는가 sai; trước 봐요 phải có -나/-(으)ㄴ가, nên 바쁜 và 바빠서 cũng sai.
     display_answer: 바쁜가
 
   - key: ko:exercise:media-guessing-mcq-na-verb
@@ -179,7 +178,7 @@ exercises:
         - "Gợi ý: 예매하다 + -(으)ㄹ걸."
     answer:
       blanks:
-        b1: [예매할걸]
+        b1: [예매할걸, 예약할걸]
     known_wrong:
       - answer: 예매했을걸
         feedback_vi: Động từ trước -(으)ㄹ걸 giữ dạng gốc - 예매할걸; chỉ 그랬어요 ở quá khứ.
@@ -236,6 +235,11 @@ exercises:
         - 피곤하실 텐데 조금 쉬세요.
         - 피곤하실 텐데 잠깐 쉬세요.
         - 피곤하실 텐데 쉬세요.
+        - 피곤할 텐데 잠시 쉬세요.
+        - 피곤하실 텐데 잠시 쉬세요.
+        - 피곤하실 텐데 좀 쉬십시오.
+        - 피곤했을 텐데 좀 쉬세요.
+        - 피곤하셨을 텐데 좀 쉬세요.
     known_wrong:
       - answer: 피곤한 텐데 좀 쉬세요.
         feedback_vi: 텐데 đi với dạng -(으)ㄹ - 피곤할 텐데.
@@ -243,9 +247,6 @@ exercises:
       - answer: 피곤해서 좀 쉬세요.
         feedback_vi: -아서/-어서 không đi với câu khuyên, mệnh lệnh; dùng 피곤할 텐데 để phỏng đoán rồi khuyên.
         error_tag: aseo_imperative
-      - answer: 피곤했을 텐데 좀 쉬세요.
-        feedback_vi: Câu nói về tình trạng hiện tại nên dùng 피곤할 텐데; -았/었을 텐데 là đoán về quá khứ.
-        error_tag: tende_tense
     explanation:
       vi: Đoán "chắc bạn mệt" = 피곤할 텐데, vế sau là lời khuyên 좀 쉬세요. Có thể thêm -시- (피곤하실 텐데) để lịch sự hơn.
     display_answer: 피곤할 텐데 좀 쉬세요.
@@ -270,7 +271,7 @@ exercises:
         feedback_vi: Giữ dạng gốc trước -(으)ㄹ걸 - 말걸 그랬어요.
         error_tag: regret_tense
       - answer: 바쁘나
-        feedback_vi: Theo chuẩn, tính từ dùng -(으)ㄴ가 봐요 - 바쁜가 봐요.
+        feedback_vi: Khi nói, người Hàn cũng hay dùng 바쁘나 봐요, nhưng theo chuẩn bài học, tính từ dùng -(으)ㄴ가 봐요 - 바쁜가 봐요.
         error_tag: na_eunga_boda
       - answer: 바쁠까
         feedback_vi: -(으)ㄹ까 là câu hỏi "liệu có…?". Đoán dựa trên dấu hiệu dùng 바쁜가 봐요.
@@ -300,6 +301,12 @@ exercises:
         - 표를 미리 살걸 그랬어요.
         - 미리 표를 살걸 그랬어요.
         - 표를 미리 사 둘걸 그랬어요.
+        - 미리 표를 사 둘걸 그랬어요.
+        - 표를 미리 사 놓을걸 그랬어요.
+        - 미리 예매해 둘걸 그랬어요.
+        - 표를 미리 예매해 둘걸 그랬어요.
+        - 티켓을 미리 예매할걸 그랬어요.
+        - 저는 표를 미리 예매할걸 그랬어요.
     known_wrong:
       - answer: 표를 미리 예매했을걸 그랬어요.
         feedback_vi: Động từ trước -(으)ㄹ걸 giữ dạng gốc - 예매할걸.
@@ -383,6 +390,11 @@ exercises:
         - Hình như YouTuber này nổi lắm. Lượt xem cao thật.
         - Hình như YouTuber này rất nổi tiếng. Lượt xem rất cao.
         - Hình như YouTuber này rất được yêu thích. Lượt xem rất cao.
+        - Hình như YouTuber này rất nổi tiếng. Lượt xem cao quá.
+        - Có vẻ YouTuber này nổi tiếng lắm. Lượt xem thật sự cao.
+        - Hình như YouTuber này rất nổi. Lượt xem cao thật.
+        - Chắc YouTuber này nổi tiếng lắm. Lượt xem cao thật.
+        - Hình như YouTuber này được nhiều người yêu thích. Lượt xem cao thật.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -417,6 +429,11 @@ exercises:
         - 내일 비가 올 텐데 우산을 가져가요.
         - 내일 비가 올 텐데 우산을 챙겨 가세요.
         - 내일은 비가 올 텐데 우산을 가져가세요.
+        - 내일은 비가 올 텐데 우산 챙기세요.
+        - 내일 비가 올 텐데 우산 챙겨 가세요.
+        - 내일 비가 올 텐데 우산 가져가요.
+        - 내일 비 올 텐데 우산 챙기세요.
+        - 내일 비 올 텐데 우산 가져가세요.
     known_wrong:
       - answer: 내일 비가 오는 텐데 우산을 가져가세요.
         feedback_vi: 텐데 đi với dạng -(으)ㄹ - 올 텐데.

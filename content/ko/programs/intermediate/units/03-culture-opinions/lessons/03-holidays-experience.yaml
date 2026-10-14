@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:holidays-experience
 order_index: 3
 level: topik4
@@ -44,7 +43,7 @@ body:
       vi: "Kinh nghiệm \"đã từng\" là V-(으)ㄴ 적이 있다, \"chưa bao giờ\" là V-(으)ㄴ 적이 없다 - 본 적이 있어요. Thêm 보다 (thử) thành V-아/어 본 적이 있다 khi nói đã từng thử làm gì - 입어 본 적, 가 본 적."
   - type: explain
     text:
-      vi: Tính từ + -아/어지다 nghĩa là "trở nên…" - 춥다 → 추워지다, 많다 → 많아지다, 다르다 → 달라지다. Cấu trúc này gắn với tính từ; với động từ, tiếng Việt cũng nói "trở nên" nhưng tiếng Hàn không dùng -아/어지다.
+      vi: Tính từ + -아/어지다 nghĩa là "trở nên…" - 춥다 → 추워지다, 많다 → 많아지다, 다르다 → 달라지다. Nghĩa "trở nên" này chỉ gắn với tính từ; với động từ như 잘하다, hãy dùng -게 되다 (잘하게 됐어요) hoặc đổi sang tính từ.
   - type: explain
     text:
       vi: Mong ước là -았/었으면 좋겠다 - 갔으면 좋겠어요 (mong là được đi). Phần -았/었 trông như quá khứ nhưng nói về tương lai; phần cuối luôn là 좋겠어요.
@@ -89,7 +88,7 @@ body:
     right: 한국어 실력이 좋아졌어요.
     target_lang: ko
     note:
-      vi: Tiếng Việt nói "trở nên giỏi" nên người học gắn -아/어지다 vào động từ 잘하다. -아/어지다 chỉ đi với tính từ - hãy dùng tính từ 좋다 (실력이 좋아졌어요).
+      vi: Tiếng Việt nói "trở nên giỏi" nên người học gắn -아/어지다 vào động từ 잘하다. Nghĩa "trở nên" của -아/어지다 chỉ đi với tính từ - hãy dùng tính từ 좋다 (실력이 좋아졌어요) hoặc 잘하게 됐어요.
   - type: common_mistake
     wrong: 내일은 날씨가 좋았으면 좋았어요.
     right: 내일은 날씨가 좋았으면 좋겠어요.
@@ -241,6 +240,14 @@ exercises:
         - 한복을 입어 봤어요?
         - 한복 입어 봤어요?
         - 한복을 입어 본 적이 있습니까?
+        - 한복 입어 본 적 있으세요?
+        - 한복 입어 본 적이 있으세요?
+        - 한복을 입어 본 적 있으세요?
+        - 한복을 입어 보신 적이 있어요?
+        - 한복을 입어 보신 적이 있으세요?
+        - 한복을 입어 보신 적 있으세요?
+        - 한복을 입어 본 적이 있나요?
+        - 한복을 입어 보셨어요?
     known_wrong:
       - answer: 한복을 입은 본 적이 있어요?
         feedback_vi: Trước 보다 dùng -아/어 - 입어 본 적.
@@ -268,7 +275,7 @@ exercises:
         - { id: b2, width_hint: 3 }
     answer:
       blanks:
-        b1: [간, 가 본]
+        b1: [간, 가 본, 온, 와 본]
         b2: [갔으면, 가면]
     known_wrong:
       - answer: 가는
@@ -308,6 +315,10 @@ exercises:
         - 차례를 지낸 적 없어요.
         - 차례 지낸 적이 없어요.
         - 저는 아직 차례를 지낸 적이 없어요.
+        - 전 차례를 지내 본 적이 없어요.
+        - 차례를 지내 본 적이 한 번도 없어요.
+        - 차례를 지내 본 적 없어요.
+        - 저는 차례를 지낸 적이 없습니다.
     known_wrong:
       - answer: 차례를 지내는 적이 없어요.
         feedback_vi: Kinh nghiệm dùng định ngữ quá khứ - 지낸 적.
@@ -388,6 +399,11 @@ exercises:
         - Vào Tết, trẻ em chúc Tết người lớn rồi nhận tiền mừng tuổi.
         - Vào Tết, trẻ em chúc Tết người lớn rồi nhận lì xì.
         - Vào Tết, trẻ em chúc Tết người lớn và nhận lì xì.
+        - Vào dịp Tết, trẻ em lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào ngày Tết, trẻ em chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em cúi lạy chúc Tết người lớn và nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em chúc Tết người lớn và được nhận tiền mừng tuổi.
+        - Vào Tết, trẻ em lạy chúc Tết người lớn và được nhận tiền mừng tuổi.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -423,6 +439,10 @@ exercises:
         - 요즘 설날 연휴는 더 짧아졌어요.
         - 요즘 설날 연휴가 예전보다 짧아졌어요.
         - 요즘 설날 연휴가 예전에 비해 짧아졌어요.
+        - 요즘 설 연휴는 짧아졌어요.
+        - 요즘은 설 연휴가 짧아졌어요.
+        - 요즘 설날 연휴가 짧아졌습니다.
+        - 요즘 설 연휴가 예전보다 짧아졌어요.
     known_wrong:
       - answer: 요즘 설날 연휴가 짧았어요.
         feedback_vi: 짧았어요 chỉ là "đã ngắn". "Trở nên ngắn hơn" cần -아지다 - 짧아졌어요.

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:housing-advice-review
 order_index: 5
 level: topik3
@@ -248,6 +247,11 @@ exercises:
         - 이 지역은 조용한 편이에요.
         - 여기는 조용한 편이에요.
         - 이 동네는 꽤 조용한 편이에요.
+        - 이 동네는 비교적 조용한 편이에요.
+        - 이 동네 조용한 편이에요.
+        - 이 근처는 조용한 편이에요.
+        - 이 지역은 조용한 편입니다.
+        - 이 동네가 조용한 편입니다.
     known_wrong:
       - answer: 이 동네는 조용하는 편이에요.
         feedback_vi: 조용하다 là tính từ - 조용한 편이에요.
@@ -281,6 +285,11 @@ exercises:
         - 쓰레기 버리는 날짜를 미리 알아 두세요.
         - 쓰레기 버리는 날도 미리 알아 두세요.
         - 쓰레기 버리는 날을 꼭 미리 알아 두세요.
+        - 쓰레기 버리는 날을 꼭 알아 둬요.
+        - 쓰레기 버리는 날을 미리 알아 둬요.
+        - 쓰레기 버리는 날을 꼭 알아 두십시오.
+        - 쓰레기 버리는 날을 꼭 기억해 두세요.
+        - 쓰레기 버리는 날을 미리 기억해 두세요.
     known_wrong:
       - answer: 쓰레기 버린 날을 꼭 알아 두세요.
         feedback_vi: Ngày đổ rác (định kỳ) dùng định ngữ hiện tại - 버리는 날; 버린 날 là "ngày đã vứt".
@@ -357,6 +366,11 @@ exercises:
         - Phí môi giới phải nộp khi ký hợp đồng.
         - Tiền môi giới phải trả khi ký hợp đồng.
         - Phí môi giới sẽ phải trả lúc ký hợp đồng.
+        - Phí môi giới phải trả lúc ký hợp đồng.
+        - Phí môi giới phải trả vào lúc ký hợp đồng.
+        - Phí môi giới cần trả khi ký hợp đồng.
+        - Phí môi giới phải thanh toán khi ký hợp đồng.
+        - Khi ký hợp đồng bạn phải trả phí môi giới.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -391,6 +405,13 @@ exercises:
         - 집주인이 보증금을 안 돌려줄까 봐 걱정되어요.
         - 보증금을 못 돌려받을까 봐 걱정이에요.
         - 보증금을 못 돌려받을까 봐 걱정돼요.
+        - 보증금을 돌려받지 못할까 봐 걱정이에요.
+        - 보증금을 돌려받지 못할까 봐 걱정돼요.
+        - 저는 집주인이 보증금을 안 돌려줄까 봐 걱정돼요.
+        - 집주인이 보증금을 안 돌려줄까 봐 걱정됩니다.
+        - 집주인이 보증금을 안 돌려줄까 봐서 걱정이에요.
+        - 집주인이 보증금을 안 돌려줄까 걱정이에요.
+        - 집주인이 보증금을 안 돌려줄까 걱정돼요.
     known_wrong:
       - answer: 집주인이 보증금을 돌려줄까 봐 걱정이에요.
         feedback_vi: Thiếu phủ định - câu này là "lo chủ nhà sẽ trả lại cọc". Điều bạn sợ là 안 돌려줄까 봐.

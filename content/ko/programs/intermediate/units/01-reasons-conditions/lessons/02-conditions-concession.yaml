@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:conditions-concession
 order_index: 2
 level: topik3
@@ -241,6 +240,12 @@ exercises:
         - 비가 오더라도 저는 갈 거예요.
         - 비가 와도 가요.
         - 비 와도 갈 거예요.
+        - 전 비가 와도 갈 거예요.
+        - 비가 와도 갈게요.
+        - 비가 와도 갈 겁니다.
+        - 비가 와도 가겠습니다.
+        - 비가 오더라도 가요.
+        - 비가 오더라도 갈게요.
     known_wrong:
       - answer: 비가 와서 갈 거예요.
         feedback_vi: 와서 là "vì mưa". "Dù mưa" là 와도.
@@ -304,6 +309,14 @@ exercises:
         - 그 식당에서 먹으려면 예약을 미리 해야 해요.
         - 그 식당에서 먹으려면 미리 예약을 해야 해요.
         - 그 집에서 먹으려면 미리 예약해야 해요.
+        - 그 집에서 먹으려면 미리 예약해야 돼요.
+        - 그 식당에서 밥을 먹으려면 미리 예약해야 돼요.
+        - 그 식당에서 먹으려면 예약을 미리 해야 돼요.
+        - 그 식당에서 먹으려면 미리 예약을 해야 돼요.
+        - 그 식당에서 먹으려면 미리 예약해야 합니다.
+        - 거기서 먹으려면 미리 예약해야 해요.
+        - 거기서 먹으려면 미리 예약해야 돼요.
+        - 그 가게에서 먹으려면 미리 예약해야 해요.
     known_wrong:
       - answer: 그 식당에서 먹으면 미리 예약해야 해요.
         feedback_vi: 먹으면 là "ăn rồi thì…". Muốn nói mục đích dùng 먹으려면.
@@ -376,6 +389,11 @@ exercises:
         - Hạn chót đăng ký là thứ Sáu tuần này. Nếu muộn sẽ không thể đăng ký.
         - Hạn đăng ký là thứ Sáu tuần này. Muộn thì không đăng ký được.
         - Hạn đăng ký là thứ 6 tuần này. Nếu muộn thì không đăng ký được.
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu muộn thì sẽ không đăng ký được.
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu muộn thì không thể đăng ký.
+        - Hạn đăng ký là thứ Sáu tuần này. Nếu muộn thì không thể đăng ký được.
+        - Hạn chót đăng ký là thứ Sáu tuần này. Nếu trễ thì không đăng ký được.
+        - Hạn chót đăng ký là thứ Sáu tuần này. Nếu muộn thì không thể đăng ký.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -409,6 +427,13 @@ exercises:
         - 저는 아무리 바빠도 엄마한테 전화해요.
         - 저는 아무리 바빠도 어머니께 전화해요.
         - 아무리 바빠도 엄마한테 전화를 해요.
+        - 아무리 바빠도 엄마에게 전화를 해요.
+        - 저는 아무리 바빠도 엄마에게 전화해요.
+        - 전 아무리 바빠도 엄마한테 전화해요.
+        - 아무리 바빠도 엄마한테 전화합니다.
+        - 아무리 바빠도 어머니께 전화드려요.
+        - 아무리 바빠도 어머니께 전화를 드려요.
+        - 아무리 바빠도 어머니께 전화합니다.
     known_wrong:
       - answer: 아무리 바빠서 엄마한테 전화해요.
         feedback_vi: 아무리 đi với -아도/어도 - 바빠도.

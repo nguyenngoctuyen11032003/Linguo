@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Văn hoá, truyền thông & quan điểm" (TOPIK 3-4). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Các cấu trúc lý do/điều kiện (-아서, -니까, -면…), tường thuật -다고 하다, 합쇼체, động từ kính ngữ và -게 되다 thuộc unit khác, ở đây chỉ dùng trong câu.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: nêu quan điểm, phép lịch sự ----------------
@@ -536,9 +535,9 @@ items:
           translation:
             vi: Dạo này văn hoá ngày lễ đã thay đổi nhiều.
       pronunciation_note:
-        vi: 추워졌어요 đọc [추워저써요]; ㅈ sau ㅕ đọc nhẹ.
+        vi: 추워졌어요 đọc [추워저써요]; ㅈ giữa hai nguyên âm đọc nhẹ, gần "j" hữu thanh.
       confusion:
-        vi: Chỉ gắn với tính từ (좋아지다, 많아지다). Với động từ, "trở nên/được" phải dùng cấu trúc khác như -게 되다 - 잘해지다 là sai.
+        vi: Nghĩa "trở nên" chỉ gắn với tính từ (좋아지다, 많아지다). Với động từ, "trở nên/được" phải dùng cấu trúc khác như -게 되다 - 잘해지다 là sai.
 
   - key: ko:item:gram-asseumyeon-joketda
     type: grammar_point

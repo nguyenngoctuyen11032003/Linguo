@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Đời sống công sở" (TOPIK 4). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # 회사, 회사원, 감사합니다, 죄송합니다 thuộc các unit sơ cấp, chỉ dùng lại.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: từ vựng công sở, -게 되다, -(으)ㄴ 지 =================

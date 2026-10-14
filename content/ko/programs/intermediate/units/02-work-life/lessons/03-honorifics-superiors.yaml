@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:honorifics-superiors
 order_index: 3
 level: topik4
@@ -184,7 +183,7 @@ exercises:
         - "Gợi ý: dạng khiêm nhường của 물어보다, chia đuôi -세요."
     answer:
       blanks:
-        b1: [여쭤보세요, 여쭤 보세요, 여쭈어 보세요, 여쭈어보세요]
+        b1: [여쭤보세요, 여쭤 보세요, 여쭈어 보세요, 여쭈어보세요, 여쭤보십시오, 여쭤 보십시오]
     known_wrong:
       - answer: 물어보세요
         feedback_vi: Hỏi người trên dùng từ khiêm nhường 여쭤보다, không dùng 물어보다.
@@ -263,6 +262,13 @@ exercises:
         - 팀장님께 보고서를 드렸습니다.
         - 팀장님께 보고서를 이미 보내 드렸습니다.
         - 팀장님께 보고서를 벌써 보내 드렸어요.
+        - 팀장님께 보고서를 이미 보내 드렸어요.
+        - 제가 팀장님께 보고서를 이미 보내 드렸습니다.
+        - 팀장님께 보고서 보내 드렸습니다.
+        - 팀장님께 보고서를 드렸어요.
+        - 팀장님께 보고서를 보냈습니다.
+        - 제가 팀장님께 보고서를 보냈습니다.
+        - 팀장님께 보고서를 보내드렸습니다.
     known_wrong:
       - answer: 팀장님께서 보고서를 보내 드렸습니다.
         feedback_vi: 께서 biến trưởng nhóm thành người gửi. Người nhận là sếp nên dùng 께.
@@ -299,6 +305,12 @@ exercises:
         - 회의 준비하느라고 연락을 못 드렸습니다. 죄송합니다.
         - 회의를 준비하느라고 연락을 못 드렸습니다. 죄송합니다.
         - 죄송합니다. 회의 준비하느라고 아직 연락을 못 드렸습니다.
+        - 죄송합니다. 회의 준비하느라 아직 연락을 못 드렸습니다.
+        - 죄송합니다. 회의 준비하느라 연락 못 드렸습니다.
+        - 죄송합니다. 회의 준비하느라고 연락드리지 못했습니다.
+        - 죄송합니다. 회의를 준비하느라고 연락드리지 못했습니다.
+        - 죄송합니다. 회의 준비하느라 연락드리지 못했습니다.
+        - 회의 준비하느라 연락을 못 드렸습니다. 죄송합니다.
     known_wrong:
       - answer: 실례합니다. 회의 준비하느라고 연락을 못 드렸습니다.
         feedback_vi: Bạn đang nhận lỗi, không phải xin phép - dùng 죄송합니다.
@@ -307,7 +319,7 @@ exercises:
         feedback_vi: Vế -느라고 không chia quá khứ - 준비하느라고.
         error_tag: neurago_tense
       - answer: 죄송합니다. 회의 준비하느라고 연락을 못 했습니다.
-        feedback_vi: Liên lạc với sếp nên dùng khiêm nhường - 연락을 못 드렸습니다.
+        feedback_vi: Câu đúng ngữ pháp, nhưng liên lạc với sếp thì người Hàn dùng dạng khiêm nhường - 연락을 못 드렸습니다.
         error_tag: humble_verb
     explanation:
       vi: 죄송합니다 nhận lỗi; -느라고 giải thích vì bận việc gì; 연락을 못 드렸습니다 - khiêm nhường vì người nhận liên lạc là sếp.
@@ -373,6 +385,10 @@ exercises:
         - Giám đốc đã tặng quà cho những nhân viên mới.
         - Giám đốc đã đưa quà cho các nhân viên mới.
         - Sếp tổng đã tặng quà cho các nhân viên mới.
+        - Giám đốc tặng quà cho nhân viên mới.
+        - Giám đốc đã tặng quà các nhân viên mới.
+        - Giám đốc đã trao quà cho các nhân viên mới.
+        - Giám đốc đã cho quà các nhân viên mới.
     rubric:
       diacritics: lenient
     known_wrong:

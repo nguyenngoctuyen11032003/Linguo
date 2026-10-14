@@ -1,11 +1,10 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Nhà ở, sức khoẻ & lời khuyên" (TOPIK 3). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 # Key dùng tiền tố ha- để không trùng với unit khác viết song song. V-도록 하다 (chỉ thị) đã có ở unit công việc; ở đây là -도록 "để cho".
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: tìm nhà ----------------
@@ -431,7 +430,7 @@ items:
     skill_tags: [vocabulary]
     front:
       text: 풀옵션
-      romanization: pulopsyeon
+      romanization: puropsyeon
       pos: danh từ
     back:
       meaning:
@@ -483,7 +482,7 @@ items:
           translation:
             vi: Hãy vứt rác sau 8 giờ tối.
       pronunciation_note:
-        vi: Đọc [버리다]; ㅓ mở miệng như "ơ" nhưng tròn hơn, đừng đọc thành 보리다.
+        vi: Đọc [버리다]; ㅓ mở miệng như "ơ", không tròn môi, đừng đọc thành 보리다.
       confusion:
         vi: Đổ rác là 쓰레기를 버리다, không dùng 쓰레기를 던지다 (ném).
 

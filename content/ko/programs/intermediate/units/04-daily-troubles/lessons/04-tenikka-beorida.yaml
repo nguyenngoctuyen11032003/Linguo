@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:daily-troubles-tenikka-beorida
 order_index: 4
 level: topik3
@@ -267,6 +266,11 @@ exercises:
         - 제가 찾을 테니까 걱정하지 마세요.
         - 내가 찾아볼 테니까 걱정하지 마세요.
         - 제가 찾아볼게요. 걱정하지 마세요.
+        - 제가 찾아볼 테니 걱정하지 마세요.
+        - 제가 한번 찾아볼 테니까 걱정하지 마세요.
+        - 제가 찾아봐 드릴 테니까 걱정하지 마세요.
+        - 제가 찾아봐 드릴게요. 걱정하지 마세요.
+        - 제가 찾아볼 테니까 걱정하지 마요.
     known_wrong:
       - answer: 제가 찾아볼 테니까 걱정되지 마세요.
         feedback_vi: '"Đừng lo" là 걱정하지 마세요; 걱정되다 không đi với -지 마세요.'
@@ -300,6 +304,10 @@ exercises:
         - 저는 택시에 우산을 두고 내려 버렸어요.
         - 우산을 택시에 두고 내려 버렸어요.
         - 우산을 택시에 두고 내렸어요.
+        - 택시에 우산 두고 내렸어요.
+        - 택시에 우산을 놓고 내렸어요.
+        - 택시에 우산을 놓고 내려 버렸어요.
+        - 우산을 택시에 놓고 내렸어요.
     known_wrong:
       - answer: 택시에 우산을 잃어버려 버렸어요.
         feedback_vi: Để quên khi xuống xe là 두고 내리다; 잃어버리다 đã có 버리다 bên trong, không thêm nữa.
@@ -358,6 +366,11 @@ exercises:
         - Tôi làm mất ví nên đã khai báo ở đồn cảnh sát. Tôi lo quá.
         - Tôi làm mất ví nên đã trình báo ở đồn cảnh sát. Tôi rất lo.
         - Tôi làm mất ví nên đã báo cảnh sát. Tôi lo lắng quá.
+        - Tôi làm mất ví nên đã trình báo cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã đi trình báo cảnh sát. Tôi lo quá.
+        - Tôi làm mất ví nên đã báo với đồn cảnh sát. Tôi lo quá.
+        - Tôi đánh mất ví nên đã báo cảnh sát. Tôi lo quá.
+        - Tôi bị mất ví nên đã báo cảnh sát. Lo quá.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -392,6 +405,10 @@ exercises:
         - 열심히 뛰어갔지만 결국 기차를 놓치고 말았어요.
         - 최선을 다해 뛰었지만 결국 기차를 놓치고 말았어요.
         - 저는 열심히 뛰었지만 결국 기차를 놓치고 말았어요.
+        - 열심히 뛰어갔는데 결국 기차를 놓치고 말았어요.
+        - 열심히 달렸지만 결국 기차를 놓쳐 버렸어요.
+        - 힘껏 뛰었지만 결국 기차를 놓치고 말았어요.
+        - 최선을 다해 달렸지만 결국 기차를 놓치고 말았어요.
     known_wrong:
       - answer: 열심히 뛰었지만 결국 기차를 놓칠 뻔했어요.
         feedback_vi: 놓칠 뻔했어요 là "suýt lỡ" - nhưng câu gốc nói đã lỡ thật.

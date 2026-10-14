@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:reasons-aseo-nikka
 order_index: 1
 level: topik3
@@ -261,6 +260,11 @@ exercises:
         - 비 오니까 우산 가져가세요.
         - 비가 오니까 우산을 챙기세요.
         - 비가 오니까 우산을 가져가요.
+        - 비가 오니까 우산 가져가요.
+        - 비 오니까 우산을 가져가세요.
+        - 비가 오니까 우산 챙기세요.
+        - 비가 오니까 우산을 챙겨 가세요.
+        - 비가 오니까 우산 챙겨 가세요.
     known_wrong:
       - answer: 비가 와서 우산을 가져가세요.
         feedback_vi: Vế sau là lời khuyên (-세요) nên dùng -니까, không dùng -아서.
@@ -321,6 +325,15 @@ exercises:
         - 연락이 늦어서 죄송합니다.
         - 연락을 늦게 해서 미안해요.
         - 연락을 늦게 해서 죄송해요.
+        - 연락을 늦게 해서 죄송합니다.
+        - 늦게 연락해서 미안합니다.
+        - 연락이 늦어서 미안합니다.
+        - 연락 늦어서 미안해요.
+        - 연락 늦어서 죄송해요.
+        - 늦게 연락드려서 죄송해요.
+        - 늦게 연락드려서 죄송합니다.
+        - 연락이 늦어져서 죄송해요.
+        - 연락이 늦어져서 죄송합니다.
     known_wrong:
       - answer: 늦게 연락했어서 미안해요.
         feedback_vi: -아서 không gắn quá khứ - 연락해서.
@@ -328,9 +341,6 @@ exercises:
       - answer: 늦게 연락했으니까 미안해요.
         feedback_vi: Khi xin lỗi, cảm ơn người Hàn dùng -아서; -(으)니까 nghe như đổ lý do.
         error_tag: nikka_with_apology
-      - answer: 미안해요 늦게 연락해서.
-        feedback_vi: Tiếng Hàn đặt lý do trước, lời xin lỗi ở cuối câu.
-        error_tag: word_order
     explanation:
       vi: Xin lỗi kèm lý do - V-아서 + 미안해요/죄송해요. 연락하다 → 연락해서; 늦게 là "muộn" (trạng từ).
     display_answer: 늦게 연락해서 미안해요.
@@ -377,6 +387,12 @@ exercises:
         - Xe buýt bị hỏng nên tôi đến công ty trễ.
         - Xe buýt hỏng nên tôi đi làm muộn.
         - Do xe buýt bị hỏng nên tôi đi làm muộn.
+        - Vì xe buýt hỏng nên tôi đi làm muộn.
+        - Vì xe buýt bị hỏng nên tôi đi làm trễ.
+        - Xe buýt bị hỏng nên tôi đã đi làm muộn.
+        - Xe buýt bị hỏng nên tôi bị muộn giờ làm.
+        - Xe buýt bị hỏng nên tôi đi làm bị muộn.
+        - Xe buýt bị hư nên tôi đi làm trễ.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -410,6 +426,11 @@ exercises:
         - 피곤했기 때문에 약속을 취소했어요.
         - 저는 피곤했기 때문에 약속을 취소했어요.
         - 피곤해서 약속을 취소했습니다.
+        - 전 피곤해서 약속을 취소했어요.
+        - 너무 피곤해서 약속 취소했어요.
+        - 저는 피곤해서 약속 취소했어요.
+        - 피곤했기 때문에 약속을 취소했습니다.
+        - 피곤하기 때문에 약속을 취소했습니다.
     known_wrong:
       - answer: 피곤했어서 약속을 취소했어요.
         feedback_vi: -아서 không gắn quá khứ - 피곤해서.

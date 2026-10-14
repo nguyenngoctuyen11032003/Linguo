@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:work-life-review
 order_index: 5
 level: topik4
@@ -291,6 +290,14 @@ exercises:
         - 저는 출장 가느라고 회식에 참석하지 못했습니다.
         - 출장 때문에 회식에 참석하지 못했습니다.
         - 출장을 가서 회식에 참석하지 못했습니다.
+        - 출장 가느라 회식에 못 갔습니다.
+        - 출장 가느라 회식에 참석 못 했습니다.
+        - 출장 가느라고 회식에 참석을 못 했습니다.
+        - 저는 출장 가느라 회식에 참석하지 못했습니다.
+        - 출장 때문에 회식에 못 갔습니다.
+        - 출장 때문에 회식에 참석 못 했습니다.
+        - 출장 중이라서 회식에 참석하지 못했습니다.
+        - 출장을 가서 회식에 못 갔습니다.
     known_wrong:
       - answer: 출장 갔느라고 회식에 참석하지 못했습니다.
         feedback_vi: Vế -느라고 không chia quá khứ - 가느라고.
@@ -327,6 +334,12 @@ exercises:
         - 입사한 지 여섯 달이 됐습니다.
         - 입사한 지 육 개월이 됐습니다.
         - 입사한 지 6개월이 지났습니다.
+        - 저는 입사한 지 6개월 됐습니다.
+        - 전 입사한 지 6개월이 됐습니다.
+        - 회사에 들어온 지 6개월 됐습니다.
+        - 회사에 들어온 지 6개월이 되었습니다.
+        - 입사한 지 반년이 됐습니다.
+        - 입사한 지 6개월째입니다.
     known_wrong:
       - answer: 입사하는 지 6개월이 됐습니다.
         feedback_vi: Dùng -(으)ㄴ 지 - 입사한 지.
@@ -402,6 +415,11 @@ exercises:
         - Ngày buổi giới thiệu đã đổi sang ngày 12 tháng 11.
         - Ngày tổ chức buổi giới thiệu đã được chuyển sang ngày 12 tháng 11.
         - Buổi giới thiệu được dời sang ngày 12/11.
+        - Ngày tổ chức buổi giới thiệu đã được dời sang ngày 12 tháng 11.
+        - Ngày buổi giới thiệu đã được đổi sang 12/11.
+        - Buổi giới thiệu đã được đổi sang ngày 12 tháng 11.
+        - Ngày diễn ra buổi giới thiệu đã được đổi sang ngày 12 tháng 11.
+        - Ngày buổi giới thiệu đã được đổi thành ngày 12 tháng 11.
     rubric:
       diacritics: lenient
     known_wrong:

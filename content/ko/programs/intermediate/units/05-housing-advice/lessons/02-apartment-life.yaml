@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:apartment-life
 order_index: 2
 level: topik3
@@ -270,6 +269,12 @@ exercises:
         - 집주인 전화번호를 저장해 놓으세요.
         - 집주인 번호를 꼭 저장해 놓으세요.
         - 집주인 번호를 저장해 놓으세요.
+        - 집주인 전화번호 꼭 저장해 두세요.
+        - 집주인 연락처를 꼭 저장해 두세요.
+        - 집주인 전화번호를 꼭 저장해 둬요.
+        - 집주인 전화번호를 꼭 저장해 놔요.
+        - 집주인 전화번호를 미리 저장해 두세요.
+        - 집주인 핸드폰 번호를 꼭 저장해 두세요.
     known_wrong:
       - answer: 집주인 전화번호를 꼭 저장하고 있으세요.
         feedback_vi: '"Lưu sẵn để sau dùng" là -아/어 두다 - 저장해 두세요, không dùng -고 있다.'
@@ -304,6 +309,12 @@ exercises:
         - 이웃 사람이 너무 시끄러워요.
         - 이웃 사람들이 너무 시끄러워요.
         - 이웃들이 너무 시끄러워요.
+        - 이웃집 사람들이 너무 시끄러워요.
+        - 옆집 사람이 너무 시끄러워요.
+        - 옆집 사람들이 너무 시끄러워요.
+        - 옆집이 정말 시끄러워요.
+        - 이웃집이 정말 시끄러워요.
+        - 이웃이 너무 시끄럽네요.
     known_wrong:
       - answer: 이웃이 너무 시끄럽어요.
         feedback_vi: 시끄럽다 là bất quy tắc ㅂ - 시끄러워요.
@@ -380,6 +391,12 @@ exercises:
         - Vì là phòng có đủ đồ dùng nên bạn không cần mua tủ lạnh.
         - Đây là phòng studio đầy đủ nội thất nên không cần mua tủ lạnh.
         - Vì là phòng full nội thất nên không cần mua tủ lạnh.
+        - Vì là phòng trọ đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Vì là căn hộ studio đầy đủ nội thất nên không cần mua tủ lạnh.
+        - Phòng full nội thất nên không cần mua tủ lạnh.
+        - Vì là phòng studio full đồ nên không cần mua tủ lạnh.
+        - Vì là phòng đầy đủ tiện nghi nên không cần mua tủ lạnh.
+        - Vì là phòng studio đầy đủ nội thất nên không mua tủ lạnh cũng được.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -416,6 +433,13 @@ exercises:
         - 저는 손님이 오기 전에 창문을 열어 놨어요.
         - 손님이 오시기 전에 창문을 열어 놓았어요.
         - 손님이 오시기 전에 창문을 열어 놨어요.
+        - 손님이 오시기 전에 창문을 열어 두었어요.
+        - 손님이 오시기 전에 창문을 열어 뒀어요.
+        - 저는 손님이 오기 전에 창문을 열어 두었어요.
+        - 손님이 오기 전에 제가 창문을 열어 두었어요.
+        - 손님 오기 전에 창문을 열어 놨어요.
+        - 손님이 오기 전에 창문을 미리 열어 놓았어요.
+        - 손님이 오기 전에 창문을 미리 열어 놨어요.
     known_wrong:
       - answer: 손님이 오기 전에 창문이 열어 놓았어요.
         feedback_vi: -아/어 놓다 cần tân ngữ - 창문을 열어 놓았어요.

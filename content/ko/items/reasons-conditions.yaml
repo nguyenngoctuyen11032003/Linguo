@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Lý do, điều kiện & tường thuật" (TOPIK 3). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- bài 1: lý do ----------------
@@ -160,7 +159,7 @@ items:
       pronunciation_note:
         vi: 걸리다 có hai ㄹ liền nhau [걸리다], đọc "l" rõ, không thành "n".
       confusion:
-        vi: Trợ từ là 에 (감기에 걸리다), không phải 을/를 như tiếng Việt "bị cảm".
+        vi: Trợ từ là 에 (감기에 걸리다), không dùng 을/를 dù tiếng Việt nói "bị cảm" như có tân ngữ.
 
   - key: ko:item:jigakada
     type: vocab
@@ -398,7 +397,7 @@ items:
       examples:
         - target: 혹시 시간이 있으면 좀 도와줄 수 있어요?
           translation:
-            vi: Nếu bạn có thời gian thì giúp tôi một chút được không?
+            vi: Không biết bạn có rảnh không, nếu có thì giúp tôi một chút được không?
       pronunciation_note:
         vi: Đọc [혹씨] - ㅅ sau ㄱ căng.
 
@@ -599,7 +598,7 @@ items:
           translation:
             vi: Xin lỗi, tôi muốn hỏi đường một chút ạ.
       pronunciation_note:
-        vi: 있는데 đọc [인는데] - ㅆ trước ㄴ thành ㄴ (nhũ hóa); 없는데 [엄는데].
+        vi: 있는데 đọc [인는데] - ㅆ trước ㄴ thành ㄴ (mũi hóa, 비음화); 없는데 [엄는데].
       confusion:
         vi: Kết câu bằng -는데요 là cách nhờ, gợi ý mềm mỏng, để người nghe tự hiểu phần còn lại. Nó không chỉ là "nhưng" như 그런데 ở đầu câu.
 
@@ -876,7 +875,7 @@ items:
           translation:
             vi: Cô giáo bảo nộp bài tập trước ngày mai.
       pronunciation_note:
-        vi: ㅐ đọc gần như ㅔ; 온대요 đọc "ôn-te-yô".
+        vi: ㅐ đọc gần như ㅔ; 온대요 đọc "ôn-đe-yô" - ㄷ sau ㄴ đọc nhẹ như "đ".
       confusion:
         vi: 학생이래요 (nghe nói là học sinh) và 가래요 (bảo hãy đi) cùng có 래요 nhưng nghĩa khác - nhìn trước 래요 là danh từ hay động từ.
 
@@ -1121,6 +1120,6 @@ items:
           translation:
             vi: Mọi người bảo ngon nên tôi đã mong đợi, nhưng cũng bình thường.
       pronunciation_note:
-        vi: Đọc "ki-te-ha-da"; ㅐ gần như ㅔ.
+        vi: Đọc "ki-đe-ha-da"; ㄷ giữa hai nguyên âm đọc nhẹ như "đ", ㅐ gần như ㅔ.
       confusion:
         vi: Hán Việt "kỳ đãi"; 기대가 크다 là kỳ vọng lớn, 기대 이하 là dưới mức mong đợi.

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:indirect-quotation
 order_index: 4
 level: topik3
@@ -241,6 +240,13 @@ exercises:
         - 팀장님이 오늘은 일찍 퇴근하래요.
         - 팀장님이 오늘 일찍 퇴근하라고 하세요.
         - 팀장님이 오늘 일찍 가라고 하셨어요.
+        - 팀장님이 오늘 일찍 퇴근하라고 하셨습니다.
+        - 팀장님께서 오늘 일찍 퇴근하라고 하셨습니다.
+        - 팀장님께서 오늘은 일찍 퇴근하라고 하셨어요.
+        - 팀장님이 오늘 일찍 퇴근하라셨어요.
+        - 팀장님이 오늘 일찍 들어가라고 하셨어요.
+        - 팀장님이 오늘 일찍 가래요.
+        - 팀장님이 오늘 일찍 퇴근하라고 해요.
     known_wrong:
       - answer: 팀장님이 오늘 일찍 퇴근한다고 하셨어요.
         feedback_vi: 퇴근한다고 là trưởng nhóm nói chính mình tan làm sớm. "Bảo (ai) làm" dùng -(으)라고.
@@ -268,8 +274,8 @@ exercises:
         - { id: b2, width_hint: 3 }
     answer:
       blanks:
-        b1: [결혼한대요, 결혼할 거래요]
-        b2: [먹으래요]
+        b1: [결혼한대요, 결혼할 거래요, 결혼하신대요, 결혼한다고 해요]
+        b2: [먹으래요, 먹으라고 해요]
     known_wrong:
       - answer: 결혼하대요
         feedback_vi: 결혼하다 là động từ nên cần ㄴ - 결혼한대요 (= 결혼한다고 해요).
@@ -304,6 +310,13 @@ exercises:
         - 친구가 주말에 같이 등산하재요.
         - 친구가 주말에 같이 등산 가재요.
         - 친구가 주말에 등산하자고 했어요.
+        - 친구가 주말에 등산 가자고 했어요.
+        - 친구가 이번 주말에 같이 등산 가자고 했어요.
+        - 제 친구가 주말에 같이 등산 가자고 했어요.
+        - 친구가 주말에 같이 등산을 하자고 했어요.
+        - 친구가 주말에 같이 등산을 가자고 했어요.
+        - 친구가 주말에 같이 산에 가재요.
+        - 친구가 주말에 같이 등산하자고 해요.
     known_wrong:
       - answer: 친구가 주말에 같이 등산한다고 했어요.
         feedback_vi: -는다고 là câu kể ("bạn nói là sẽ leo núi"). Lời rủ dùng -자고.
@@ -378,6 +391,13 @@ exercises:
         - Giáo viên bảo nộp bài tập trước ngày mai.
         - Cô giáo bảo nộp bài tập đến hết ngày mai.
         - Cô giáo dặn nộp bài tập trước ngày mai.
+        - Thầy giáo dặn nộp bài tập trước ngày mai.
+        - Cô giáo bảo hãy nộp bài tập trước ngày mai.
+        - Thầy giáo bảo hãy nộp bài tập trước ngày mai.
+        - Thầy giáo bảo nộp bài tập muộn nhất là ngày mai.
+        - Cô giáo bảo nộp bài tập chậm nhất là ngày mai.
+        - Giáo viên bảo phải nộp bài tập trước ngày mai.
+        - Cô giáo bảo đến ngày mai phải nộp bài tập.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -411,6 +431,14 @@ exercises:
         - 민수 씨가 회의 몇 시에 시작하냐고 물어봤어요.
         - 민수 씨가 회의가 몇 시에 시작하냬요.
         - 민수 씨가 회의가 몇 시에 시작하냐고 물어요.
+        - 민수 씨가 회의가 몇 시에 시작하냐고 물었습니다.
+        - 민수 씨가 회의가 몇 시에 시작되냐고 물었어요.
+        - 민수 씨가 회의는 몇 시에 시작하냐고 물었어요.
+        - 민수 씨가 회의 몇 시에 시작하냐고 물었어요.
+        - 민수 씨가 회의가 몇 시에 시작하느냐고 물어봤어요.
+        - 민수 씨가 회의가 몇 시에 시작하느냐고 물었어요.
+        - 민수 씨가 회의가 몇 시부터냐고 물어봤어요.
+        - 민수가 회의가 몇 시에 시작하냐고 물어봤어요.
     known_wrong:
       - answer: 민수 씨가 회의가 몇 시에 시작한다고 물어봤어요.
         feedback_vi: Thuật lại câu hỏi cần -냐고, không phải -ㄴ다고 - 시작하냐고.

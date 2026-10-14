@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:comparing-cultures
 order_index: 2
 level: topik4
@@ -243,6 +242,11 @@ exercises:
         - 한국 드라마가 미국 드라마보다 더 좋아요.
         - 저는 미국 드라마보다 한국 드라마를 좋아해요.
         - 전 미국 드라마보다 한국 드라마를 더 좋아해요.
+        - 전 미국 드라마보다 한국 드라마가 더 좋아요.
+        - 미국 드라마보다 한국 드라마를 좋아해요.
+        - 저는 미국 드라마보다 한국 드라마가 좋아요.
+        - 저는 한국 드라마를 미국 드라마보다 좋아해요.
+        - 저는 미국 드라마보다 한국 드라마를 더 좋아합니다.
     known_wrong:
       - answer: 저는 한국 드라마보다 미국 드라마를 더 좋아해요.
         feedback_vi: Câu này nghĩa là thích phim Mỹ hơn. 보다 phải gắn vào phim bị so sánh - 미국 드라마보다.
@@ -314,6 +318,16 @@ exercises:
         - 서울보다 하노이가 더 싸요.
         - 하노이가 서울보다 더 싸요.
         - 하노이는 서울보다 더 싸요.
+        - 서울보다 하노이가 싸요.
+        - 하노이가 서울보다 싸요.
+        - 하노이는 서울보다 싸요.
+        - 서울에 비해서 하노이는 더 싸요.
+        - 하노이가 서울에 비해 싸요.
+        - 서울에 비하면 하노이가 더 싸요.
+        - 서울에 비하면 하노이가 싸요.
+        - 서울에 비해 하노이가 더 저렴해요.
+        - 서울에 비해 하노이가 저렴해요.
+        - 하노이는 서울에 비해 저렴해요.
     known_wrong:
       - answer: 서울을 비해 하노이가 더 싸요.
         feedback_vi: '"So với" là N에 비해 - dùng trợ từ 에, không dùng 을.'
@@ -390,6 +404,11 @@ exercises:
         - YouTube có điểm tốt và cũng có điểm xấu.
         - YouTube có cả mặt tốt lẫn mặt xấu.
         - YouTube có cả ưu điểm lẫn khuyết điểm.
+        - YouTube có cả ưu điểm và khuyết điểm.
+        - YouTube có ưu điểm và cũng có khuyết điểm.
+        - YouTube có cả điểm mạnh lẫn điểm yếu.
+        - YouTube có cả mặt tốt và mặt xấu.
+        - YouTube có mặt tốt cũng có mặt xấu.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -428,6 +447,12 @@ exercises:
         - 한국 문화와 베트남 문화는 비슷하지만 차이점도 있어요.
         - 한국과 베트남의 문화는 비슷하지만 차이가 있어요.
         - 한국 문화와 베트남 문화는 비슷하지만 차이가 있어요.
+        - 한국과 베트남 문화는 비슷하지만 차이도 있어요.
+        - 한국과 베트남 문화는 비슷하지만 다른 점도 있어요.
+        - 한국과 베트남의 문화는 비슷하지만 차이점이 있어요.
+        - 한국과 베트남의 문화는 비슷하지만 다른 점도 있습니다.
+        - 한국 문화와 베트남 문화는 비슷하지만 차이점도 있습니다.
+        - 한국과 베트남의 문화는 비슷하지만 차이도 있습니다.
     known_wrong:
       - answer: 한국와 베트남의 문화는 비슷하지만 차이도 있어요.
         feedback_vi: 한국 có patchim ㄱ nên dùng 과 - 한국과.

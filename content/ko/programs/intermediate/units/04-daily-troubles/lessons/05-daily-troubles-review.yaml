@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:daily-troubles-review
 order_index: 5
 level: topik3
@@ -275,6 +274,10 @@ exercises:
         - 지하철에 지갑을 두고 내려 버린 것 같아요.
         - 지하철에 지갑을 놓고 내린 것 같아요.
         - 지갑을 지하철에 놓고 내린 것 같아요.
+        - 지하철에서 지갑을 두고 내린 것 같아요.
+        - 지하철에 지갑을 두고 내린 거 같아요.
+        - 지하철에 지갑을 놓고 내린 거 같아요.
+        - 지하철에 지갑 두고 내린 것 같아요.
     known_wrong:
       - answer: 지하철에 지갑을 두고 내리는 것 같아요.
         feedback_vi: Chuyện đã xảy ra nên dùng định ngữ quá khứ - 내린 것 같아요.
@@ -282,9 +285,6 @@ exercises:
       - answer: 지하철에 지갑을 잊어버린 것 같아요.
         feedback_vi: 잊어버리다 là quên thông tin. Để quên đồ trên tàu là 두고 내리다.
         error_tag: vocab_lose_forget
-      - answer: 지하철에서 지갑을 두고 내린 것 같아요.
-        feedback_vi: Nơi để đồ lại dùng 에 - 지하철에 두고 내리다.
-        error_tag: particle_e_eseo
     explanation:
       vi: 두고 내리다 = để quên đồ trên xe rồi xuống; "hình như (đã)" = -(으)ㄴ 것 같아요 → 내린 것 같아요.
     display_answer: 지하철에 지갑을 두고 내린 것 같아요.
@@ -310,6 +310,11 @@ exercises:
         - 크게 다치지 않아서 다행이었어요.
         - 크게 안 다쳐서 다행이었어요.
         - 다행히 크게 다치지 않았어요.
+        - 다행히 크게 안 다쳤어요.
+        - 다행히 많이 다치지 않았어요.
+        - 크게 다치지 않아서 다행입니다.
+        - 심하게 안 다쳐서 다행이에요.
+        - 크게 다치지 않아서 정말 다행이에요.
     known_wrong:
       - answer: 크게 다치지 않아서 다행해요.
         feedback_vi: Không có 다행하다; nói 다행이에요.
@@ -387,6 +392,12 @@ exercises:
         - Tôi vội ra trạm thì xe buýt đã đi rồi.
         - Tôi vội chạy ra trạm thì xe buýt đã đi mất rồi.
         - Vội ra trạm thì thấy xe buýt đã đi mất rồi.
+        - Tôi vội vàng ra trạm thì thấy xe buýt đã đi mất rồi.
+        - Tôi vội vã ra trạm thì thấy xe buýt đã đi mất rồi.
+        - Tôi vội ra bến xe buýt thì xe đã đi mất rồi.
+        - Tôi vội ra điểm dừng xe buýt thì thấy xe đã đi mất rồi.
+        - Tôi vội ra trạm thì thấy xe buýt đã chạy mất rồi.
+        - Tôi vội ra trạm thì thấy xe buýt đã đi rồi.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -419,6 +430,11 @@ exercises:
         - 늦잠을 자서 하마터면 버스를 놓칠 뻔했어요.
         - 늦잠 자는 바람에 버스를 놓칠 뻔했어요.
         - 늦잠을 자는 바람에 버스를 놓칠 뻔했습니다.
+        - 늦잠을 자서 버스를 놓칠 뻔했습니다.
+        - 늦잠 자서 버스를 놓칠 뻔했어요.
+        - 늦잠 자는 바람에 버스 놓칠 뻔했어요.
+        - 저는 늦잠을 자서 버스를 놓칠 뻔했어요.
+        - 전 늦잠을 자는 바람에 버스를 놓칠 뻔했어요.
     known_wrong:
       - answer: 늦잠을 잤는 바람에 버스를 놓칠 뻔했어요.
         feedback_vi: -는 바람에 không gắn quá khứ - 자는 바람에.

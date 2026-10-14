@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 key: ko:program:intermediate
 language: ko
 title:
   vi: Tiếng Hàn trung cấp (TOPIK 3-4)
 description:
-  vi: Lý do, điều kiện, tường thuật gián tiếp, công việc và các chủ đề xã hội quen thuộc (TOPIK 3-4). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Lý do, điều kiện và tường thuật gián tiếp; đời sống công sở với 합쇼체 và kính ngữ; văn hoá, truyền thông và cách nêu quan điểm; sự cố thường ngày và cảm xúc; nhà ở, sức khoẻ và lời khuyên (TOPIK 3-4).
 kind: core
 goal_types: []
 level_from: topik3

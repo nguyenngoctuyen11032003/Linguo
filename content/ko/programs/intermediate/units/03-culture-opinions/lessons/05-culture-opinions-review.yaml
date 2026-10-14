@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:culture-opinions-review
 order_index: 5
 level: topik4
@@ -254,6 +253,13 @@ exercises:
         - 저는 댓글을 달 때 조심할 필요가 있다고 생각해요.
         - 댓글 쓸 때 조심할 필요가 있다고 생각해요.
         - 제 생각에는 댓글을 쓸 때 조심해야 해요.
+        - 제 생각에는 댓글을 달 때 조심해야 해요.
+        - 제 생각에는 댓글 달 때 조심할 필요가 있어요.
+        - 제 생각에는 댓글을 쓸 때 주의할 필요가 있어요.
+        - 댓글을 쓸 때는 조심할 필요가 있다고 생각해요.
+        - 댓글을 쓸 때 조심해야 한다고 생각해요.
+        - 댓글을 달 때 조심해야 한다고 생각해요.
+        - 저는 댓글을 쓸 때 조심해야 한다고 생각해요.
     known_wrong:
       - answer: 제 생각에는 댓글을 쓸 때 조심하는 필요가 있어요.
         feedback_vi: Trước 필요 dùng -(으)ㄹ - 조심할 필요.
@@ -292,6 +298,12 @@ exercises:
         - 그 영화는 재미있나 봐요.
         - 그 드라마가 정말 좋은가 봐요.
         - 그 영화가 정말 좋은가 봐요.
+        - 그 드라마 재미있나 봐요.
+        - 그 영화 정말 재미있나 봐요.
+        - 그 드라마가 정말 재밌나 봐요.
+        - 그 드라마가 재밌나 봐요.
+        - 그 영화가 정말 재밌나 봐요.
+        - 그 영화가 재밌나 봐요.
     known_wrong:
       - answer: 그 드라마가 정말 재미있은가 봐요.
         feedback_vi: 재미있다 có đuôi 있다 nên dùng -나 봐요 - 재미있나 봐요.
@@ -300,7 +312,7 @@ exercises:
         feedback_vi: -아/어졌어요 là "đã trở nên". Phỏng đoán "hình như" dùng -나 봐요.
         error_tag: guess_missing
       - answer: 그 드라마가 정말 좋나 봐요.
-        feedback_vi: Theo chuẩn, tính từ 좋다 dùng -(으)ㄴ가 봐요 - 좋은가 봐요.
+        feedback_vi: Khi nói, người Hàn cũng hay dùng 좋나 봐요, nhưng theo chuẩn bài học, tính từ 좋다 dùng -(으)ㄴ가 봐요 - 좋은가 봐요.
         error_tag: na_eunga_boda
     explanation:
       vi: Hình như = -나 봐요 / -(으)ㄴ가 봐요. 재미있다 → 재미있나 봐요; nếu dùng tính từ 좋다 thì 좋은가 봐요.
@@ -370,6 +382,11 @@ exercises:
         - So với Việt Nam, ở Hàn Quốc lời nói thay đổi nhiều theo tuổi tác.
         - So với Việt Nam, ở Hàn Quốc cách nói chuyện thay đổi nhiều theo tuổi tác.
         - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều theo tuổi.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tùy vào tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc lời nói thay đổi nhiều theo tuổi.
+        - So với Việt Nam, Hàn Quốc có cách nói thay đổi nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói khác nhau nhiều theo tuổi tác.
+        - So với Việt Nam, ở Hàn Quốc cách nói thay đổi nhiều tùy theo độ tuổi.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -406,6 +423,11 @@ exercises:
         - 한국어를 더 빨리 공부할걸 그랬어요.
         - 한국어 공부를 더 일찍 시작할걸 그랬어요.
         - 한국어를 일찍 배울걸 그랬어요.
+        - 저는 한국어를 더 일찍 배울걸 그랬어요.
+        - 좀 더 일찍 한국어를 공부할걸 그랬어요.
+        - 한국어를 더 일찍 배워 둘걸 그랬어요.
+        - 한국어 공부를 더 일찍 할걸 그랬어요.
+        - 한국어 공부를 좀 더 일찍 시작할걸 그랬어요.
     known_wrong:
       - answer: 한국어를 더 일찍 배웠을걸 그랬어요.
         feedback_vi: Động từ trước -(으)ㄹ걸 giữ dạng gốc - 배울걸.

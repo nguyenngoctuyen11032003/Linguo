@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:daily-troubles-mishaps
 order_index: 1
 level: topik3
@@ -280,6 +279,10 @@ exercises:
         - 전 넘어질 뻔했어요.
         - 하마터면 넘어질 뻔했습니다.
         - 넘어질 뻔했습니다.
+        - 하마터면 저 넘어질 뻔했어요.
+        - 저 하마터면 넘어질 뻔했어요.
+        - 하마터면 넘어질 뻔했네요.
+        - 전 하마터면 넘어질 뻔했어요.
     known_wrong:
       - answer: 넘어질 뻔해요.
         feedback_vi: '"Suýt" là chuyện đã qua, nên dùng quá khứ 뻔했어요.'
@@ -316,6 +319,14 @@ exercises:
         - 갑자기 휴대폰이 고장 나는 바람에 연락할 수 없었어요.
         - 갑자기 휴대폰이 고장 나서 연락을 못 했어요.
         - 갑자기 휴대폰이 고장 나서 연락을 못했어요.
+        - 갑자기 휴대폰이 고장 나서 연락 못 했어요.
+        - 갑자기 핸드폰이 고장 나는 바람에 연락 못 했어요.
+        - 갑자기 핸드폰이 고장 나서 연락을 못 했어요.
+        - 휴대폰이 갑자기 고장 나는 바람에 연락을 못 했어요.
+        - 핸드폰이 갑자기 고장 나는 바람에 연락을 못 했어요.
+        - 갑자기 폰이 고장 나는 바람에 연락을 못 했어요.
+        - 갑자기 휴대폰이 고장 나는 바람에 연락을 못 드렸어요.
+        - 갑자기 휴대폰이 고장 나는 바람에 연락을 할 수 없었어요.
     known_wrong:
       - answer: 갑자기 휴대폰이 고장 났는 바람에 연락을 못 했어요.
         feedback_vi: -는 바람에 không gắn quá khứ - 고장 나는 바람에.
@@ -376,6 +387,13 @@ exercises:
         - Tại tắc đường nên suýt chút nữa tôi lỡ chuyến bay.
         - Đường tắc nên suýt nữa tôi lỡ máy bay.
         - Tại tắc đường nên suýt nữa tôi lỡ máy bay.
+        - Vì tắc đường nên suýt chút nữa tôi lỡ chuyến bay.
+        - Do kẹt xe nên suýt nữa tôi lỡ chuyến bay.
+        - Tại kẹt xe nên suýt nữa tôi trễ chuyến bay.
+        - Đường tắc nên tôi suýt lỡ chuyến bay.
+        - Vì tắc đường nên suýt nữa thì tôi lỡ chuyến bay.
+        - Tại tắc đường nên suýt nữa thì tôi lỡ chuyến bay.
+        - Tại kẹt xe mà suýt nữa tôi trễ máy bay.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -410,6 +428,12 @@ exercises:
         - 갑자기 눈이 많이 와서 학교에 늦었어요.
         - 갑자기 눈이 많이 내리는 바람에 학교에 지각했어요.
         - 저는 갑자기 눈이 많이 오는 바람에 학교에 지각했어요.
+        - 갑자기 눈이 많이 내리는 바람에 지각했어요.
+        - 갑자기 눈이 많이 내리는 바람에 학교에 늦었어요.
+        - 갑자기 눈이 많이 와서 지각했어요.
+        - 갑자기 눈이 많이 오는 바람에 학교에 늦게 갔어요.
+        - 갑자기 눈이 많이 와서 학교에 늦게 갔어요.
+        - 갑자기 눈이 많이 오는 바람에 학교에 지각했습니다.
     known_wrong:
       - answer: 갑자기 눈이 많이 왔는 바람에 학교에 지각했어요.
         feedback_vi: -는 바람에 không gắn quá khứ - 오는 바람에.

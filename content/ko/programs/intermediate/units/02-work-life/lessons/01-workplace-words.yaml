@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:workplace-words
 order_index: 1
 level: topik4
@@ -227,7 +226,7 @@ exercises:
     answer:
       blanks:
         b1: [한]
-        b2: [됐어요, 되었어요, 넘었어요]
+        b2: [됐어요, 되었어요, 넘었어요, 지났어요, 됐습니다, 되었습니다]
     known_wrong:
       - answer: 하는
         feedback_vi: Tính thời gian từ lúc bắt đầu dùng dạng -(으)ㄴ 지 - 일한 지, không dùng 일하는 지.
@@ -261,6 +260,14 @@ exercises:
         - 이 회사에서 일한 지 오 년이 됐어요.
         - 이 회사에서 일한 지 5년이 됐습니다.
         - 저는 이 회사에서 일한 지 5년이 됐습니다.
+        - 이 회사에서 일한 지 5년이 되었습니다.
+        - 전 이 회사에서 일한 지 5년이 됐어요.
+        - 이 회사에서 일한 지 벌써 5년이 됐어요.
+        - 이 회사에서 일한 지 5년이 지났어요.
+        - 이 회사에 다닌 지 5년이 됐어요.
+        - 이 회사에 다닌 지 5년 됐어요.
+        - 저는 이 회사에 다닌 지 5년이 됐어요.
+        - 이 회사에 다닌 지 5년이 되었어요.
     known_wrong:
       - answer: 이 회사에서 일하는 지 5년이 됐어요.
         feedback_vi: Dùng dạng -(으)ㄴ 지 - 일한 지, không phải 일하는 지.
@@ -297,6 +304,12 @@ exercises:
         - 저는 부산에 출장을 가게 됐어요.
         - 제가 부산으로 출장을 가게 됐어요.
         - 부산으로 출장을 가게 됐습니다.
+        - 부산으로 출장을 가게 되었습니다.
+        - 부산에 출장을 가게 됐습니다.
+        - 저는 부산으로 출장 가게 됐어요.
+        - 저는 부산에 출장 가게 됐어요.
+        - 부산 출장을 가게 됐어요.
+        - 전 부산으로 출장을 가게 됐어요.
     known_wrong:
       - answer: 부산으로 출장이 됐어요.
         feedback_vi: -게 되다 phải gắn sau động từ - 출장을 가게 됐어요.
@@ -353,6 +366,12 @@ exercises:
         - Do hạn chót nên tôi đã làm thêm buổi tối cùng các đồng nghiệp.
         - Vì deadline nên tôi đã làm thêm buổi tối cùng các đồng nghiệp.
         - Vì deadline nên tôi đã ở lại làm muộn với đồng nghiệp.
+        - Vì hạn chót nên tôi đã tăng ca cùng các đồng nghiệp.
+        - Vì hạn chót nên tôi đã tăng ca với đồng nghiệp.
+        - Vì deadline nên tôi đã tăng ca cùng đồng nghiệp.
+        - Vì hạn chót nên tôi đã làm thêm buổi tối với các đồng nghiệp.
+        - Vì hạn chót nên tôi đã làm thêm giờ cùng đồng nghiệp.
+        - Vì hạn chót nên tôi đã ở lại làm muộn cùng đồng nghiệp.
     rubric:
       diacritics: lenient
     known_wrong:

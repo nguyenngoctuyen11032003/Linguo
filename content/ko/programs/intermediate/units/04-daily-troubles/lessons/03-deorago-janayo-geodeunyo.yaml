@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: ko:lesson:daily-troubles-chatting
 order_index: 3
 level: topik3
@@ -41,7 +40,7 @@ body:
       vi: Sau bài này, bạn kể chuyện rắc rối với bạn bè, đồng nghiệp một cách tự nhiên như người Hàn - "tôi thấy…", "…mà", "chả là…" - và bày tỏ được mình bực, sốt ruột hay nhẹ nhõm.
   - type: explain
     text:
-      vi: -더라고요 kể lại điều chính bạn đã thấy, nghe, cảm nhận như một phát hiện - 길이 많이 막히더라고요 (tôi thấy đường tắc lắm). Thì quá khứ được ngầm hiểu trong 더, nên không cần thêm 았.
+      vi: -더라고요 kể lại điều chính bạn đã thấy, nghe, cảm nhận như một phát hiện - 길이 많이 막히더라고요 (tôi thấy đường tắc lắm). Thì quá khứ đã ngầm hiểu trong 더, nên thường không thêm 았; chỉ thêm khi việc đã xong trước lúc bạn thấy (벌써 끝났더라고요).
   - type: explain
     text:
       vi: -잖아요 là "…mà, …còn gì" - nhắc điều người nghe cũng biết - 오늘 월요일이잖아요. -거든요 là "chả là…" - đưa ra lý do, bối cảnh người nghe chưa biết - 버스를 놓쳤거든요.
@@ -235,20 +234,17 @@ exercises:
         - { id: b2, width_hint: 6 }
     answer:
       blanks:
-        b1: [막혔거든요]
+        b1: [막혔거든요, 막히더라고요]
         b2: [친절하더라고요]
     known_wrong:
       - answer: 막혔잖아요
         feedback_vi: Người nghe chưa biết lý do bạn đến muộn, nên dùng -거든요, không dùng -잖아요.
         error_tag: janayo_vs_geodeunyo
-      - answer: 막히더라고요
-        feedback_vi: Ở đây bạn đang giải thích lý do cho người nghe - dùng -거든요 (막혔거든요).
-        error_tag: deorago_vs_geodeunyo
       - answer: 친절했잖아요
         feedback_vi: Người nghe chưa đến đó nên không biết chuyện này - kể điều mình đã thấy dùng 친절하더라고요.
         error_tag: janayo_new_info
     explanation:
-      vi: Ô 1 - lý do người nghe chưa biết → 막혔거든요. Ô 2 - điều bạn đã quan sát → 친절하더라고요 (친절하다 + 더라고요).
+      vi: Ô 1 - lý do người nghe chưa biết → 막혔거든요 (kể như điều mình quan sát thì 막히더라고요 cũng tự nhiên). Ô 2 - điều bạn đã quan sát → 친절하더라고요 (친절하다 + 더라고요).
     display_answer: 늦어서 죄송해요. 길이 너무 막혔거든요. 분실물 센터에 갔는데 직원이 정말 친절하더라고요.
 
   - key: ko:exercise:dt-chat-translate-lost-phone
@@ -272,6 +268,13 @@ exercises:
         - 전화를 못 받아서 미안해요. 제가 휴대폰을 잃어버렸거든요.
         - 전화를 못 받아서 죄송해요. 제가 휴대폰을 잃어버렸거든요.
         - 전화를 못 받아서 죄송합니다. 휴대폰을 잃어버렸거든요.
+        - 전화를 못 받아서 죄송합니다. 핸드폰을 잃어버렸거든요.
+        - 전화를 못 받아서 미안합니다. 휴대폰을 잃어버렸거든요.
+        - 전화 못 받아서 미안해요. 핸드폰을 잃어버렸거든요.
+        - 전화 못 받아서 죄송해요. 핸드폰을 잃어버렸거든요.
+        - 전화 못 받아서 미안해요. 제가 휴대폰을 잃어버렸거든요.
+        - 전화를 못 받아서 미안해요. 폰을 잃어버렸거든요.
+        - 전화를 못 받아서 미안해요. 휴대폰을 잃어버려서요.
     known_wrong:
       - answer: 전화를 못 받아서 미안해요. 휴대폰을 잃어버렸잖아요.
         feedback_vi: Người nghe chưa biết bạn mất điện thoại, nên dùng -거든요.
@@ -305,6 +308,12 @@ exercises:
         - 금요일은 원래 길이 막히잖아요.
         - 금요일에 원래 길이 막히잖아요.
         - 원래 금요일에 길이 막히잖아요.
+        - 금요일엔 원래 길이 막히잖아요.
+        - 금요일은 원래 길이 많이 막히잖아요.
+        - 원래 금요일은 길이 막히잖아요.
+        - 금요일에는 길이 원래 막히잖아요.
+        - 금요일에는 원래 차가 막히잖아요.
+        - 금요일에는 원래 차가 많이 막히잖아요.
     known_wrong:
       - answer: 금요일에는 원래 길이 막히거든요.
         feedback_vi: '"…mà" nhắc điều ai cũng biết - dùng -잖아요.'
@@ -360,6 +369,11 @@ exercises:
         - Hóa ra điện thoại nằm trong cặp. May quá.
         - Hóa ra điện thoại ở trong cặp. May thật.
         - Hóa ra điện thoại nằm trong túi. Thật là may.
+        - Hóa ra điện thoại ở trong túi. Thật may quá.
+        - Hóa ra điện thoại nằm trong túi xách. May quá.
+        - Hóa ra điện thoại ở trong cặp. May quá.
+        - Thì ra điện thoại nằm trong túi. May quá.
+        - Thì ra điện thoại ở trong túi. May thật.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -393,6 +407,10 @@ exercises:
         - 길이 계속 막히니까 너무 답답해요.
         - 길이 자꾸 막혀서 너무 답답해요.
         - 저는 길이 계속 막혀서 너무 답답해요.
+        - 길이 계속 막혀서 너무 답답하네요.
+        - 길이 계속 막혀서 너무 답답합니다.
+        - 차가 계속 막혀서 너무 답답해요.
+        - 길이 계속 막혀서 너무 답답하더라고요.
     known_wrong:
       - answer: 길이 계속 막혔어서 너무 답답해요.
         feedback_vi: -아서 không gắn quá khứ - 막혀서.
@@ -400,9 +418,6 @@ exercises:
       - answer: 길이 계속 막혀서 너무 다행이에요.
         feedback_vi: 다행이다 là "may quá"; "bức bối" là 답답하다.
         error_tag: vocab_emotion
-      - answer: 길이 계속 막혀서 너무 답답하더라고요.
-        feedback_vi: Cảm xúc của chính bạn ngay lúc này thì nói thẳng 답답해요; -더라고요 dùng khi kể lại sau đó.
-        error_tag: deorago_current_feeling
     explanation:
       vi: Lý do + cảm xúc - 막혀서 + 답답해요. 답답하다 diễn tả cảm giác bức bối, sốt ruột khi bế tắc; 계속 là "cứ, liên tục".
     display_answer: 길이 계속 막혀서 너무 답답해요.
