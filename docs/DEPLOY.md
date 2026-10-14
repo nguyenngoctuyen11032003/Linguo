@@ -23,12 +23,17 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
 - Mỗi thay đổi schema = một file migration mới (`pnpm exec supabase migration new <ten>`).
 - **Không bao giờ sửa migration đã deploy; luôn tạo migration mới.** Supabase chỉ áp mỗi file migration **một lần** (theo tên trong `supabase_migrations.schema_migrations`); sửa file đã áp thì project hosted giữ bản cũ, còn `db reset`/CI dùng bản mới, hai bên lệch nhau mà không ai báo. Đã xảy ra một lần: `20261014000100_content.sql` bị sửa sau khi deploy (thêm `public.import_content_bundle`), phải vá bằng `20261014000600_spec2_sync.sql`.
   - `supabase/migrations-applied.json` ghi sha256 của mọi migration đã deploy. `node scripts/check-migrations-immutable.mjs` (chạy trong CI job web và `pnpm test`) fail khi một file trong danh sách bị sửa, đổi tên hoặc xoá. File migration mới không bị chặn.
-  - **Bước tay sau mỗi lần Deploy có `Supabase db push` thành công:** ghi các migration vừa áp vào danh sách rồi commit thẳng lên `main`:
+  - **Bước tay sau mỗi lần Deploy có `Supabase db push` thành công:** ghi các migration vừa áp vào danh sách rồi commit thẳng lên `main` (repo cá nhân, không mở PR):
     ```bash
-    node scripts/check-migrations-immutable.mjs --record 20261014000600_spec2_sync.sql   # liệt kê mọi file vừa áp
-    git add supabase/migrations-applied.json && git commit -m "chore(db): record deployed migrations"
+    # 1. Liệt kê file migration chưa có trong danh sách (chính là các file vừa được áp)
+    for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
+    # 2. Ghi checksum của chúng (liệt kê mọi file, cách nhau bằng dấu cách)
+    node scripts/check-migrations-immutable.mjs --record 20261015000800_answer_integrity.sql
+    # 3. Commit
+    git add supabase/migrations-applied.json && git commit -m "chore(db): record deployed migration (<ten>)"
     ```
-    Danh sách file vừa áp có trong log bước `db push --dry-run` của job `migrate`. `--record` từ chối ghi đè checksum khác của một file đã có trong danh sách.
+    Danh sách file vừa áp cũng có trong log bước `db push --dry-run` của job `migrate`. `--record` chỉ nhận tên file dạng `^\d{14}_[a-z0-9_]+\.sql$` có trong `supabase/migrations/`, và từ chối ghi đè checksum khác của một file đã có trong danh sách. Chỉ ghi **sau khi** job `migrate` xanh: ghi sớm sẽ khoá một file chưa được áp. Commit này chỉ đổi `supabase/migrations-applied.json` (nằm ngoài thư mục `migrations`), nên Deploy chạy tiếp chỉ build lại site, không áp migration hay deploy function.
+  - **Quy tắc đánh số migration mới:** tên file `<14 chữ số>_<ten>.sql` (chữ thường, số, gạch dưới) và số phải **lớn hơn** số của migration cuối cùng trong `supabase/migrations-applied.json`. Supabase CLI từ chối `db push` một migration có số nhỏ hơn migration đã áp trên project (hành vi của Supabase CLI, repo không tự kiểm tra), trong khi CI (`db reset` từ đầu) vẫn xanh vì áp theo thứ tự tên file. Các migration hiện có đã dùng dãy số `20261015…`, nên `supabase migration new` (lấy giờ hiện tại) có thể sinh ra số nhỏ hơn: kiểm tra tên file vừa tạo và đổi tên (khi chưa commit) cho lớn hơn migration cuối, ví dụ nối tiếp `20261015000900_<ten>.sql`.
   - Lỡ sửa migration đã deploy: hoàn tác file về bản đã deploy, đưa thay đổi vào một migration mới (`create or replace`, `drop … if exists` rồi tạo lại, `revoke`/`grant` tường minh) sao cho cả DB hosted lẫn DB mới tinh đều ra cùng một schema.
 - Thiết lập Auth trong `supabase/config.toml` chỉ áp dụng local; Auth hosted cấu hình trên Dashboard.
 
@@ -49,6 +54,26 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
    - `VITE_BASE_PATH` (tuỳ chọn) — mặc định `/<tên-repo>/`. Đặt `/` khi dùng tên miền riêng hoặc repo dạng `<user>.github.io`.
 5. Supabase **Authentication → URL Configuration** như `docs/SETUP.md` bước 2: Site URL `https://nguyenngoctuyen11032003.github.io/Linguo`; Redirect URLs `https://nguyenngoctuyen11032003.github.io/Linguo/**`, `http://localhost:5173/**`, `http://localhost:4173/**`. Cũng đặt **Minimum password length = 8** ở **Sign In / Providers → Email** (xem `docs/SETUP.md`).
 
+## Tổng hợp secrets và biến
+Đối chiếu với `.github/workflows/*.yml`. Ô "Bắt buộc" là bắt buộc để tính năng đó chạy; thiếu thì Deploy/Notify cảnh báo hoặc dừng như mô tả ở từng mục.
+
+| Tên | Loại / nơi đặt | Bắt buộc | Dùng bởi |
+|---|---|---|---|
+| `SUPABASE_PROJECT_ID` | Variable (repo) | Có | `migrate`, `functions` (Deploy) |
+| `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` | Variable (repo) | Có | build web; còn dùng `VITE_SUPABASE_URL` làm URL cho Publish content, Maintenance, Notify |
+| `VITE_SITE_URL` | Variable (repo) | Nên có | build web (`/Linguo`, phân biệt hoa/thường) |
+| `VITE_AUTH_GOOGLE_ENABLED` | Variable (repo) | Không (mặc định không bật) | build web |
+| `VITE_HERO_VIDEO_URL`, `VITE_BASE_PATH` | Variable (repo) | Không | build web (`VITE_BASE_PATH` mặc định `/<tên-repo>/`) |
+| `VITE_VAPID_PUBLIC_KEY` | Variable (repo) | Chỉ khi muốn Web Push | build web và được Deploy đẩy lên Supabase làm `VAPID_PUBLIC_KEY` |
+| `SUPABASE_ACCESS_TOKEN`, `SUPABASE_DB_PASSWORD` | Secret, environment `production` | Có | `migrate` (`functions` chỉ cần token) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Secret, environment `production` | Có cho Publish content và Maintenance | `content-publish.yml`, `maintenance.yml` |
+| `GEMINI_API_KEY`, `GEMINI_MODEL` | Secret, environment `production` | Có, nếu muốn gia sư AI chạy | đẩy lên Supabase bởi `functions` |
+| `GEMINI_DAILY_USER_LIMIT`, `GEMINI_MAX_OUTPUT_TOKENS`, `GEMINI_TIMEOUT_MS` | Secret, environment `production` | Không | như trên; mặc định và giới hạn hợp lệ ở mục Gia sư AI |
+| `NOTIFY_CRON_SECRET` | Secret, environment `production` **và** environment `notify` (cùng giá trị) | Có, nếu muốn nhắc học | `functions` đẩy lên Supabase; `notify.yml` đọc từ environment `notify` |
+| `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` | Secret, environment `production` | Chỉ khi muốn Web Push | đẩy lên Supabase bởi `functions` |
+
+Tự Supabase cấp cho Edge Functions, không cần đặt: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`. Mọi biến `VITE_*` đều đóng gói vào JavaScript công khai: chỉ đặt giá trị công khai (`scripts/check-public-env.mjs` chặn tên và giá trị giống secret). Secret chỉ đẩy lên Supabase khi job `functions` chạy; GitHub secret để trống không xoá giá trị đang có trên Supabase.
+
 ## Gia sư AI (Gemini)
 Edge Function `ai-tutor` (`verify_jwt = true`) đọc key và model từ **secret của Supabase**, không từ `VITE_*` hay GitHub Variables.
 
@@ -56,7 +81,7 @@ Edge Function `ai-tutor` (`verify_jwt = true`) đọc key và model từ **secre
 2. GitHub → **Settings → Environments → `production` → Secrets** (không đặt ở repo secrets/variables):
    - `GEMINI_API_KEY` — key từ Google AI Studio (bắt buộc)
    - `GEMINI_MODEL` — model id, ví dụ một model `gemini-…-flash` thuộc free tier (bắt buộc)
-   - Tuỳ chọn: `GEMINI_DAILY_USER_LIMIT` (mặc định `20`), `GEMINI_MAX_OUTPUT_TOKENS` (`1200`), `GEMINI_TIMEOUT_MS` (`20000`)
+   - Tuỳ chọn (theo `supabase/functions/ai-tutor/handler.ts`; giá trị không phải số nguyên hoặc ngoài khoảng sẽ bị bỏ qua và dùng mặc định): `GEMINI_DAILY_USER_LIMIT` (mặc định `20`, hợp lệ 1–1000), `GEMINI_MAX_OUTPUT_TOKENS` (mặc định `2048`, hợp lệ 64–8192), `GEMINI_TIMEOUT_MS` (mặc định `20000`, hợp lệ 1–45000)
 3. Job `functions` của Deploy chạy bước **Set Edge Function secrets (Gemini)** trước `functions deploy`: chỉ gửi những secret **có giá trị** qua `supabase secrets set --env-file` (giá trị không bao giờ được in ra; secret GitHub bỏ trống không xoá giá trị đang có trên Supabase). `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` do Supabase tự cấp cho Edge Functions.
 4. Job `functions` chỉ chạy khi `supabase/functions` đổi. Đổi key/model mà không đổi code: Actions → Deploy → **Run workflow** với `functions = true` (rồi Approve `production`). Hoặc đặt tay từ máy: `pnpm exec supabase secrets set --project-ref <ref> GEMINI_MODEL=<model-id>` (key nên đặt qua GitHub để không lưu vào lịch sử shell).
 5. Thiếu `GEMINI_API_KEY`/`GEMINI_MODEL` thì function trả 503 `ai_unavailable` (không trừ lượt) và web hiện phương án dự phòng; phần còn lại của app không bị ảnh hưởng.
@@ -78,6 +103,15 @@ Edge Function `notify-dispatch` (`verify_jwt = false`, spec 10 §3) được wor
 5. Job `functions` của Deploy chạy bước **Set Edge Function secrets (reminders)**: đẩy `NOTIFY_CRON_SECRET`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (chỉ những giá trị có thật, không in ra log). Sau khi thêm/đổi: Actions → Deploy → **Run workflow** với `functions = true`. Đổi `VITE_VAPID_PUBLIC_KEY` cũng cần build lại web (Deploy làm việc đó).
 6. Kiểm tra: Actions → Notify → **Run workflow**; log chỉ in `HTTP 200` và số đếm `{generated, pushed, failed, removed}` (không bao giờ in endpoint, khoá hay nội dung thông báo).
 
+Lịch chạy của workflow **Notify**: `cron: '*/15 * * * *'` (mỗi 15 phút, UTC), cộng `workflow_dispatch` để chạy tay (Actions → Notify → **Run workflow**, chỉ trên `main`: job có điều kiện `github.ref == 'refs/heads/main'`). Job dùng concurrency group `notify` (không chạy chồng) và environment `notify`. Nhịp 15 phút khớp cửa sổ nhắc `REMINDER_RULES.window_minutes` trong `packages/shared/src/notifications/contract.ts`; gọi hai lần trong cùng một cửa sổ không tạo nhắc trùng. Tốc độ chạy thực tế của cron do GitHub quyết định, nên một lượt có thể đến muộn; nhắc chỉ phát khi giờ địa phương của người học nằm trong cửa sổ 15 phút của khung nhắc, vì vậy lượt bị trễ quá cửa sổ sẽ bỏ lỡ khung đó.
+
+**Xoay khoá VAPID** (chỉ khi private key bị lộ; mọi subscription cũ sẽ không còn dùng được):
+1. Tạo cặp mới: `npx web-push generate-vapid-keys`.
+2. Cập nhật Variable `VITE_VAPID_PUBLIC_KEY` (Public Key mới) và secret `VAPID_PRIVATE_KEY` trong environment `production`.
+3. Actions → Deploy → **Run workflow** với `functions = true`, **Approve**. Lần chạy này đẩy cặp mới lên Supabase (bước *Set Edge Function secrets (reminders)*) **và** build lại web với public key mới. Nếu chỉ đổi một nửa (private key mới nhưng public key cũ, hoặc ngược lại), `notify-dispatch` kiểm tra bằng một chữ ký thử (`isValidVapid` trong `supabase/functions/notify-dispatch/push.ts`), thấy cặp không khớp thì bỏ qua push và vẫn trả 200 (thông báo trong app vẫn tạo).
+4. Subscription cũ do push service từ chối: tự bị xoá sau 5 lần thất bại (`failure_count`), hoặc ngay khi push service trả 404/410. Người học phải bấm lại "Bật thông báo trên thiết bị này" ở Cài đặt → Nhắc học trên từng thiết bị để tạo subscription mới. Không có cách nào di chuyển subscription cũ sang khoá mới.
+5. Kiểm tra bằng Actions → Notify → **Run workflow**: `pushed` tăng lên khi đã có thiết bị đăng ký lại.
+
 Hành vi:
 - Thiếu VAPID (hoặc cặp khoá sai/lệch nhau) → vẫn tạo thông báo trong app, bỏ qua push, trả 200 (không lỗi, không đụng tới subscription).
 - Thiếu `NOTIFY_CRON_SECRET` trong environment `notify` → workflow cảnh báo và thoát 0 (không gửi mail lỗi mỗi 15 phút).
@@ -86,11 +120,12 @@ Hành vi:
 
 ## Quy trình hằng ngày
 1. Tạo nhánh → code → mở PR → CI phải xanh (xem artifact `playwright-report` để duyệt ảnh chụp mobile).
-2. Merge vào `main` → Deploy tự chạy. Có migration mới thì job `migrate` chờ bạn **Approve** `production`.
-   - **Lần deploy đầu tiên** chỉ hỏi duyệt `migrate` một lần: chưa có Edge Function nào nên job `functions` được bỏ qua (job `changes` đặt cờ functions = false khi `supabase/functions` không có `*/index.ts`, kể cả khi chạy tay với `functions = true`).
+2. Merge vào `main` → Deploy tự chạy; bạn **Approve** `production` cho từng job (xem bên dưới). Có migration mới thì sau khi `migrate` xanh nhớ ghi checksum (mục Quy tắc an toàn database).
+   - **Những job chờ duyệt** (theo `deploy.yml`, mọi job khai báo `environment: production` đều dừng chờ Required reviewers): `migrate` (khi `supabase/migrations` đổi hoặc chạy tay với `migrate = true`), `functions` (khi `supabase/functions` đổi hoặc chạy tay với `functions = true`) và `build`. Vì vậy mỗi lần push vào `main` cần ít nhất **một** lần duyệt (cho `build`), cộng thêm một lần cho mỗi job `migrate`/`functions` có chạy. Job `pages` dùng environment `github-pages` (không có reviewer). Thứ tự: `verify` (CI) → `migrate` → `functions` và `build` (chạy song song, đều chờ `migrate` xong hoặc bị bỏ qua; `build` không đợi `functions`) → `pages`. Migrate thất bại thì cả `functions` lẫn `build` không chạy; `functions` thất bại không chặn việc đưa web lên.
+   - **Lần deploy đầu tiên:** chưa có Edge Function nào thì job `functions` được bỏ qua (job `changes` đặt cờ functions = false khi `supabase/functions` không có `*/index.ts`, kể cả khi chạy tay với `functions = true`).
    - Cổng duyệt của environment chặn ngay từ lúc job bắt đầu, nên người duyệt **chưa thấy** kết quả `db push --dry-run` trước khi bấm. Hãy duyệt dựa trên **SQL migration trong diff của PR** (CI đã áp dụng và test mọi migration trên Supabase local mới tinh).
    - Log `db push --dry-run` chỉ để lưu vết: sau khi duyệt, job in danh sách migration sẽ áp rồi mới chạy `db push --yes`.
-   - Một lần push đổi cả migration lẫn Edge Functions sẽ hỏi duyệt **hai lần** (job `migrate` rồi job `functions`, cùng environment `production`).
+   - Một lần push đổi cả migration lẫn Edge Functions sẽ hỏi duyệt **ba lần** (`migrate`, rồi `functions` và `build`, cùng environment `production`).
    - Job `changes` so sánh với commit của lần Deploy **thành công** gần nhất trên `main` (không phải commit trước của lần push), nên migration trong một lần push thất bại/bị thay thế vẫn được áp ở lần sau.
 3. Site: `https://nguyenngoctuyen11032003.github.io/Linguo/`.
 
@@ -99,7 +134,9 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
 
 1. Sửa YAML → `pnpm content:check` (kiểm tra schema, khoá, bài tiên quyết, đáp án chấm đúng/sai) → `pnpm content:build` (ghi lại `supabase/seed.sql`, dùng cho Supabase local và CI) → commit cả hai. CI fail nếu `seed.sql` lệch với `content/`.
 2. Merge vào `main` (migration nội dung, nếu có, phải được Deploy áp trước).
-3. Actions → **Publish content** → **Run workflow**, rồi **Approve** environment `production`. Job chạy `pnpm content:check` rồi `pnpm content:push`: gửi bundle nội dung tới RPC `public.import_content_bundle` (`POST {SUPABASE_URL}/rest/v1/rpc/import_content_bundle`, chỉ `service_role` được gọi; hàm này chỉ bọc `content_private.import_bundle`, đúng import mà `seed.sql` chạy) và in kết quả `{inserted, updated, archived, unchanged}`. Nhập lại cùng nội dung không đổi gì; dòng vắng mặt khỏi `content/` bị chuyển `archived` (không xoá).
+3. Actions → **Publish content** → **Run workflow**, rồi **Approve** environment `production`. Job chạy `pnpm content:check` rồi `pnpm content:push`: gửi bundle nội dung tới RPC `public.import_content_bundle` (`POST {SUPABASE_URL}/rest/v1/rpc/import_content_bundle`, chỉ `service_role` được gọi; hàm này chỉ bọc `content_private.import_bundle`, đúng import mà `seed.sql` chạy) và in kết quả `{inserted, updated, archived, unchanged}`. Nhập lại cùng nội dung không đổi gì; dòng vắng mặt khỏi `content/` bị chuyển `archived` (không xoá). Nếu `content/diagnostic/` và `content/exams/` có dữ liệu, script gửi tiếp kho câu hỏi kiểm tra đầu vào tới `import_diagnostic_content_bundle` và các đề luyện thi tới `import_exam_content_bundle` (theo `scripts/content-import.mjs`).
+   - Workflow cũng chạy lại toàn bộ CI (`verify`) trước khi nhập; migration chứa RPC import mới phải đã được áp (nếu không: HTTP 404, xem bảng sự cố).
+   - **Quy trình duyệt và xuất bản một đợt nội dung:** (a) trong YAML đặt `status`, `reviewed_by`, `reviewed_at` (nội dung không demo bắt buộc; `approved`/`published` cần cả hai trường duyệt, xem `content/README.md`); (b) `pnpm content:check` và `pnpm content:build`, commit YAML cùng `supabase/seed.sql`; (c) merge, rồi chạy **Publish content**; (d) kiểm tra kết quả `{inserted, updated, …}` và xem lại trên `/quan-tri/noi-dung` (xem mục Quản trị nội dung). Hiện toàn bộ nội dung trong `content/` đã ghi `status: published`; người duyệt là AI do chủ dự án uỷ quyền, chưa có giáo viên bản ngữ (`content/README.md`).
    - Cần secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` (bước 3 ở trên). URL lấy từ variable `VITE_SUPABASE_URL` sẵn có (URL project là công khai), truyền vào script dưới tên `SUPABASE_URL`.
    - Không dùng `SUPABASE_ACCESS_TOKEN` (token cá nhân có quyền trên mọi project): token đó chỉ còn dùng cho `supabase db push`/`functions deploy` trong Deploy.
 4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_URL` và `SUPABASE_SERVICE_ROLE_KEY` trong shell, không ghi vào file nào được commit (script từ chối chạy nếu thiếu và không bao giờ in key ra). Ví dụ (Git Bash): `SUPABASE_URL=https://<ref>.supabase.co SUPABASE_SERVICE_ROLE_KEY=sb_secret_… pnpm content:push`.
@@ -119,7 +156,15 @@ Trang `/quan-tri` (spec 11) chỉ mở cho tài khoản có vai trò trong bản
    Kiểm tra: `select s.role, u.email from public.staff_roles s join auth.users u on u.id = s.user_id;`
 3. Đăng xuất rồi đăng nhập lại (hoặc tải lại trang) → `/quan-tri` hiện ra.
 
-**Cấp/thu hồi vai trò về sau:** admin gọi RPC `admin_grant_role(p_user_id, p_role)` (`p_role = null` để thu hồi); mỗi lần cấp/thu hồi được ghi vào `admin_audit_log` (xem ở trang "Nhật ký"). Thay đổi bằng SQL thủ công **không** được ghi nhật ký, nên chỉ dùng SQL cho lần bootstrap hoặc khi mất hết admin. Không bao giờ cấp vai trò qua `service_role` từ code web.
+**Cấp/thu hồi vai trò về sau:** admin gọi RPC `admin_grant_role(p_user_id uuid, p_role text)` (`p_role = null` để thu hồi; vai trò hợp lệ `editor`, `reviewer`, `admin`; `user_not_found` nếu mã người dùng không có trong `auth.users`); mỗi lần cấp/thu hồi được ghi vào `admin_audit_log` (xem ở trang "Nhật ký"). RPC này **chưa có giao diện** trong `/quan-tri` (web không gọi nó) và cần phiên đăng nhập của một admin, nên không chạy được từ SQL Editor (ở đó không có `auth.uid()`). Việc cấp vai trò cho người khác vì vậy làm bằng SQL như bootstrap ở trên (thay `'admin'` bằng `'editor'`/`'reviewer'`; thu hồi bằng `delete from public.staff_roles where user_id = '<uuid>';`), hoặc gọi RPC bằng phiên của admin (ví dụ qua REST với access token của admin). Thay đổi bằng SQL **không** được ghi vào nhật ký và để trống `granted_by`; hãy ghi lại trong issue/ghi chú vận hành. Không bao giờ cấp vai trò qua `service_role` từ code web.
+
+**Cách đọc các trang quản trị** (menu "Tổng quan", "Nội dung", "Báo lỗi", "Nguồn" cho mọi vai trò; "Thống kê", "Nhật ký" chỉ admin):
+- **Tổng quan** (`/quan-tri`): số mục nội dung theo trạng thái, số đã xuất bản, số nội dung demo, số báo lỗi đang mở (mở hoặc đã phân loại) và danh sách "Cần kiểm duyệt".
+- **Nội dung** (`/quan-tri/noi-dung`): lọc theo loại, ngôn ngữ, trạng thái, từ khoá. Trang chi tiết có bốn khối: Trạng thái (đổi trạng thái; reviewer trở lên), Xem trước (đúng như người học thấy), Đáp án và giải thích (đáp án đúng, `known_wrong`, rubric; không bao giờ lộ cho người học), Nguồn và giấy phép. Đường chuyển trạng thái hợp lệ: `draft → in_review`; `in_review → approved | draft`; `approved → published | in_review`; `published → archived | in_review`; `archived → draft` (`ADMIN_STATUS_TRANSITIONS`); riêng câu hỏi trong đề thi (`exam_question`) chỉ chuyển được `published → archived`. Chuyển sang `approved`/`published` ghi người thực hiện vào `reviewed_by` và giờ vào `reviewed_at`. Nội dung vẫn sửa trong repo (`content/**/*.yaml`); trang chỉ cho thấy đường dẫn file (`repo_path`) cần sửa.
+- **Báo lỗi** (`/quan-tri/bao-loi`): hàng đợi báo lỗi của người học, gộp theo nội dung bị báo; chọn nhiều mục rồi xử lý (`fixed`, `rejected`, `duplicate` là trạng thái cuối, kèm ghi chú). Lý do báo: `wrong_answer`, `unclear`, `typo`, `audio`, `translation`, `offensive`, `other`. Chuyển một mục sang `published` khi còn báo lỗi "Đáp án sai" chưa xử lý bị từ chối (`open_wrong_answer_reports`) trừ khi admin ép (`p_force`).
+- **Nguồn** (`/quan-tri/nguon`): các nguồn và giấy phép khai báo trong `content/sources.yaml`.
+- **Thống kê** (`/quan-tri/thong-ke`, admin): người dùng hoạt động mỗi ngày, phễu người dùng mới, mức dùng AI (số request theo tác vụ và trạng thái, báo cáo câu trả lời AI theo lý do). Chỉ số tổng hợp, không có id hay email; khoảng thời gian chọn được.
+- **Nhật ký** (`/quan-tri/nhat-ky`, admin): các thao tác thay đổi dữ liệu gần đây của quản trị viên (đổi trạng thái, xử lý báo lỗi, cấp/thu hồi vai trò).
 
 **Trạng thái duyệt và import nội dung:** reviewer chuyển trạng thái trên trang quản trị (`admin_set_status`, ghi `reviewed_by`/`reviewed_at`). Khi chạy lại **Publish content**, dòng có nội dung không đổi (cùng `content_hash`) chỉ nhận trạng thái từ YAML nếu đó là đúng một bước hợp lệ từ trạng thái hiện tại; nếu không, trạng thái trong database được giữ (migration `20261015000420_import_keep_published.sql`). Vì vậy import không bao giờ hạ một dòng `published` xuống `draft`/`in_review`/`approved`; lưu trữ (`archived`, hoặc xoá khỏi `content/`) vẫn hoạt động. Nội dung đã sửa (hash đổi) luôn nhận trạng thái ghi trong YAML, nên hãy cập nhật YAML theo quyết định duyệt khi sửa nội dung.
 
@@ -134,6 +179,7 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
   - `study_sessions` chưa hoàn thành, tạo quá 180 ngày (nếu bảng đã có).
 
   Kết quả trả về là số dòng đã xoá của từng bảng, in ra log.
+- **Chưa được lên lịch:** hai RPC dọn dữ liệu khác chỉ `service_role` gọi được nhưng **không** được `purge_expired_data` hay workflow nào gọi (đã `grep` toàn repo): `purge_analytics()` (xoá `analytics_events` quá 180 ngày) và `purge_notifications()` (xoá hộp thư thông báo quá 90 ngày). Cho đến khi có người nối vào Maintenance, hai bảng này chỉ lớn lên. Chạy tay khi cần, ví dụ trong Supabase SQL Editor: `select public.purge_analytics(); select public.purge_notifications();` (SQL Editor chạy với quyền `postgres`, đủ để gọi hai hàm này). Đây là việc còn mở (xem `docs/superpowers/HANDOFF.md`).
 - Key chỉ được ghi vào một file cấu hình curl quyền 0600 rồi xoá ngay. Key không nằm trong argv và không bị in ra log. HTTP khác 2xx thì job fail.
 - Job dùng chung concurrency group `supabase-production` với `migrate` (Deploy) và Publish content, nên không bao giờ chạy cùng lúc với migration.
 - Environment `production` đang bật **Required reviewers**, nên mỗi lần chạy theo lịch cũng chờ bấm **Approve**. Không duyệt thì run hết hạn sau 30 ngày; dữ liệu chỉ được dọn muộn hơn, không mất gì. Nếu muốn chạy tự động hoàn toàn, tạo một environment riêng (ví dụ `maintenance`, chỉ cho nhánh `main`, không cần reviewer), chỉ chứa `SUPABASE_SERVICE_ROLE_KEY`, rồi đổi `environment:` trong workflow.
@@ -149,6 +195,9 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
 | Maintenance báo `HTTP 404 … purge_expired_data` | Migration `20261014000910_account_data.sql` chưa được Deploy áp lên project hosted |
 | Maintenance báo `HTTP 401`/`403` | `SUPABASE_SERVICE_ROLE_KEY` sai hoặc đã bị xoay vòng; cập nhật secret trong environment `production` |
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
+| `db push` từ chối vì migration cục bộ có số nhỏ hơn migration đã áp trên project | Đổi tên file mới (chưa deploy) cho số lớn hơn migration cuối trong `supabase/migrations-applied.json` (xem *Quy tắc đánh số migration mới*); không dùng `--include-all` để vượt qua |
+| CI báo `check-migrations-immutable` fail | Có file đã deploy bị sửa/đổi tên/xoá: hoàn tác file, đưa thay đổi vào migration mới |
+| Actions → Notify chỉ in cảnh báo "Thiếu NOTIFY_CRON_SECRET" rồi xanh | Chưa đặt secret trong environment `notify` (hoặc thiếu `VITE_SUPABASE_URL`); workflow cố ý bỏ qua |
 | Gia sư AI luôn "Tạm thời không khả dụng" | Thiếu secret `GEMINI_API_KEY`/`GEMINI_MODEL` trong environment `production`, hoặc chưa chạy lại Deploy với `functions = true` sau khi thêm; kiểm tra model id còn trong free tier |
 | Gia sư AI đang chạy rồi bỗng không khả dụng với mọi người | Model hết quota ngày của free tier (breaker mở, thử lại sau); chờ quota reset hoặc đổi `GEMINI_MODEL` rồi chạy lại Deploy với `functions = true` |
 | Notify báo `HTTP 401` | `NOTIFY_CRON_SECRET` trong environment `notify` khác giá trị đã đẩy lên Supabase (environment `production`), hoặc ngắn hơn 32 ký tự; đặt lại cả hai rồi chạy Deploy với `functions = true` |

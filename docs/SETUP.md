@@ -88,7 +88,7 @@ Gia sư AI chạy trong Edge Function `supabase/functions/ai-tutor`; key Gemini 
    pnpm db:start
    pnpm exec supabase functions serve --env-file supabase/functions/.env
    ```
-   `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` được Supabase CLI tự cấp, không cần điền. Tuỳ chọn: `GEMINI_DAILY_USER_LIMIT` (mặc định 20 lượt/người/ngày), `GEMINI_MAX_OUTPUT_TOKENS` (1200), `GEMINI_TIMEOUT_MS` (20000).
+   `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` được Supabase CLI tự cấp, không cần điền. Tuỳ chọn: `GEMINI_DAILY_USER_LIMIT` (mặc định 20 lượt/người/ngày), `GEMINI_MAX_OUTPUT_TOKENS` (2048), `GEMINI_TIMEOUT_MS` (20000); giá trị ngoài khoảng hợp lệ bị bỏ qua (xem `docs/DEPLOY.md` → Gia sư AI).
 4. **Kiểm tra code function** (cần Deno 2, hoặc `npx deno@2`): trong `supabase/functions` chạy `deno check .`, `deno lint`, `deno test --allow-env` (test dùng fetch giả, không gọi Gemini thật).
 5. **Production:** đặt secrets trong GitHub environment `production` (xem `docs/DEPLOY.md` → Gia sư AI); workflow Deploy tự đẩy chúng lên Supabase.
 
