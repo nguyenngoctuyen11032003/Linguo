@@ -143,7 +143,7 @@ test('quota exceeded falls back to the lesson explanation', async ({ page }) => 
   await answerFirstExercise(page);
   await page.getByRole('button', { name: 'Giải thích AI', exact: true }).click();
   const panel = sheet(page);
-  await expect(panel.getByRole('alert')).toContainText('Tạm thời không khả dụng');
+  await expect(panel.getByRole('alert')).toContainText('Đã hết lượt hôm nay');
   await expect(panel).toContainText(CURATED);
 });
 

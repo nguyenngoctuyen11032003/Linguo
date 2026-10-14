@@ -189,9 +189,9 @@ function ResultCard({
   );
   if (latest) {
     return (
-      <article className="scroll-mt-20 space-y-3 rounded-3xl border border-border bg-surface-solid p-4 shadow-[var(--shadow-card)]">
+      <article className="space-y-3 rounded-3xl border border-border bg-surface-solid p-4 shadow-[var(--shadow-card)]">
         <header className="space-y-1">
-          <h3 ref={headingRef} tabIndex={-1} lang={titleLang} className="break-words font-semibold focus:outline-none">
+          <h3 ref={headingRef} tabIndex={-1} lang={titleLang} className="scroll-mt-24 break-words font-semibold focus:outline-none">
             {entry.title}
           </h3>
           <p className="text-sm text-muted">{AI_LABEL}</p>

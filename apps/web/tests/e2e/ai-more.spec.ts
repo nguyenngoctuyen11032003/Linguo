@@ -63,6 +63,9 @@ test('tutor: analyzes a sentence into tokens, components and grammar points', as
   await openTutor(page);
   const panel = await analyze(page, 'I am a student.');
   await expect(panel.getByText('Tôi là học sinh.')).toBeVisible();
+  // The answer's heading takes focus so screen-reader users learn it arrived.
+  await expect(panel.getByRole('heading', { level: 3, name: 'I am a student.' })).toBeFocused();
+  await expectNoSeriousAxe(page, 'tutor sentence result');
   const tokens = panel.getByRole('list', { name: 'Từ loại từng từ' }).getByRole('listitem');
   await expect(tokens).toHaveCount(4);
   await expect(tokens.first()).toContainText('đại từ');
@@ -100,12 +103,20 @@ test('tutor: Gemini down shows the fallback and the other tabs keep working', as
   await expect(page.getByText('Tôi là học sinh.')).toBeVisible();
 });
 
-test('tutor: out of quota shows the quota notice', async ({ page }) => {
+test('tutor: out of quota shows the quota notice and switches the submit button off', async ({ page }) => {
   await setup(page, { ai: { ackAt: ACKED, mode: 'quota_exceeded' } });
   await openTutor(page);
-  await analyze(page, 'I am a student.');
-  await expect(page.getByRole('alert').filter({ hasText: 'Tạm thời không khả dụng' })).toBeVisible();
+  const panel = await analyze(page, 'I am a student.');
+  const notice = page.getByRole('alert').filter({ hasText: 'Đã hết lượt hôm nay' });
+  await expect(notice).toBeVisible();
+  await expect(notice).toContainText('Lượt mới sẽ có');
+  await expect(notice).not.toContainText('Tạm thời không khả dụng');
   await expect(page.getByRole('button', { name: 'Thử lại' })).toHaveCount(0);
+  const submit = panel.getByRole('button', { name: 'Phân tích câu' });
+  await expect(submit).toBeDisabled();
+  await expect(submit).toHaveAccessibleDescription(/Bạn đã dùng hết lượt hỏi AI hôm nay/);
+  await expectNoHorizontalScroll(page);
+  await expectNoSeriousAxe(page, 'tutor quota');
 });
 
 // ---- summarize_session: the completion screen -------------------------------------------------------------------
@@ -185,7 +196,7 @@ test('session: without AI the completion screen still works and shows the plain 
   await openCompletedSession(page);
   await page.getByRole('button', { name: 'Tóm tắt phiên bằng AI' }).click();
   const sheet = dialog(page, 'Tóm tắt phiên học');
-  await expect(sheet.getByRole('alert')).toContainText('Tạm thời không khả dụng');
+  await expect(sheet.getByRole('alert')).toContainText('Đã hết lượt hôm nay');
   await expect(sheet).toContainText('Bạn đã hoàn thành 2/3 hoạt động');
   await sheet.getByRole('button', { name: 'Đóng', exact: true }).click();
   await expect(page.getByRole('link', { name: 'Về trang chủ' })).toBeVisible();

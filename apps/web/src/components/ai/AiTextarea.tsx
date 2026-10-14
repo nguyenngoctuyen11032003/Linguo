@@ -1,5 +1,4 @@
 import { useId, useLayoutEffect, useRef, type ChangeEvent, type KeyboardEvent, type TextareaHTMLAttributes } from 'react';
-import { inputClasses } from '@/components/ui/Input';
 import { cn } from '@/lib/cn';
 
 export interface AiTextareaProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'onChange' | 'value' | 'maxLength' | 'rows'> {
@@ -61,7 +60,12 @@ export function AiTextarea({
         aria-describedby={describedByIds}
         onChange={(e: ChangeEvent<HTMLTextAreaElement>) => onValueChange(e.target.value)}
         onKeyDown={handleKeyDown}
-        className={cn(inputClasses(invalid), 'resize-none overflow-y-auto rounded-3xl py-3 leading-6 max-h-[9.5rem]', className)}
+        className={cn(
+          'block w-full min-h-12 max-h-[9.5rem] resize-none overflow-y-auto rounded-3xl border bg-surface-solid px-5 py-3 text-base leading-6 text-text placeholder:text-muted',
+          'transition-[border-color,box-shadow] duration-200 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/45',
+          invalid ? 'border-error' : 'border-border',
+          className,
+        )}
         {...rest}
       />
       {(showCounter || onSubmitShortcut) && (
