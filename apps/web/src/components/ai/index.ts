@@ -6,6 +6,7 @@ export { AiQuotaChip, type AiQuotaChipProps } from './AiQuotaChip';
 export { AiReportDialog, type AiReportDialogProps } from './AiReportDialog';
 export { AI_REPORT_REASON_LABELS, type AiReportReasonId } from './labels';
 export { AiResultView, AnalyzeView, ExplainView, PracticeView, ReviewWritingView, WRITING_FEEDBACK_LABEL } from './AiResultView';
-export { AnalyzeSentenceView, PlanReviewView, SessionSummaryView, tagLabel } from './AiMoreViews';
+export { AnalyzeSentenceView, PlanReviewView, SessionSummaryView } from './AiMoreViews';
+export { tagLabel } from './tag-labels';
 export { parseAiResult, type ParsedAiResult } from './parse';
 export { MarkdownLite } from './MarkdownLite';

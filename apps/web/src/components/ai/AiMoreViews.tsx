@@ -2,6 +2,7 @@ import { AlertTriangle, ArrowRight, Lightbulb } from 'lucide-react';
 import { Link } from 'react-router';
 import type { AiRequestInput, AnalyzeSentenceOutput, PlanReviewOutput, SummarizeSessionOutput } from '@linguo/shared';
 import { cn } from '@/lib/cn';
+import { tagLabel } from './tag-labels';
 
 // AI sheet views of analyze_sentence, summarize_session and plan_review (spec 8.2 #4, #9, #7).
 
@@ -113,23 +114,6 @@ export function AnalyzeSentenceView({ data, language }: { data: AnalyzeSentenceO
   );
 }
 
-const TAG_LABELS: Record<string, string> = {
-  typo: 'Chính tả',
-  article: 'Mạo từ a/an/the',
-  spacing: 'Khoảng cách giữa các từ',
-  particle_allomorph: 'Dạng trợ từ',
-  missing_diacritics: 'Thiếu dấu',
-  mcq: 'Trắc nghiệm',
-  fill_blank: 'Điền chỗ trống',
-  word_bank: 'Sắp xếp từ',
-  translate: 'Dịch câu',
-  listen: 'Nghe',
-};
-
-export function tagLabel(tag: string): string {
-  return TAG_LABELS[tag] ?? tag.replace(/_/g, ' ');
-}
-
 /** Warm recap of a session: what was done, up to three errors to remember and one next step. */
 export function SessionSummaryView({ data }: { data: SummarizeSessionOutput }) {
   return (
@@ -159,8 +143,8 @@ export function SessionSummaryView({ data }: { data: SummarizeSessionOutput }) {
   );
 }
 
-export const REVIEW_ROUTE = '/app/on-tap';
-export const lessonRoute = (lessonId: string) => `/app/hoc-tap/bai/${lessonId}`;
+const REVIEW_ROUTE = '/app/on-tap';
+const lessonRoute = (lessonId: string) => `/app/hoc-tap/bai/${lessonId}`;
 
 type PlanRequest = Extract<AiRequestInput, { task: 'plan_review' }>;
 
