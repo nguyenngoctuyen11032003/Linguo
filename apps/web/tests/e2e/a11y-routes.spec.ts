@@ -47,6 +47,12 @@ const ROUTES: RouteCase[] = [
     ready: (page) => page.getByRole('button', { name: /^(Bắt đầu|Làm tiếp)$/ }),
   },
   { name: 'tutor', path: '/app/gia-su', auth: true, ready: (page) => page.getByRole('heading', { level: 1, name: 'Gia sư AI' }) },
+  {
+    name: 'speaking',
+    path: '/app/luyen-noi',
+    auth: true,
+    ready: (page) => page.getByRole('heading', { level: 2, name: 'Nhắc lại câu' }),
+  },
   { name: 'settings', path: '/app/cai-dat', auth: true, ready: h1 },
   { name: 'notifications', path: '/app/thong-bao', auth: true, ready: h1 },
   { name: 'session', path: '/app/phien-hoc', auth: true, ready: (page) => page.getByRole('heading', { level: 2 }).first() },
