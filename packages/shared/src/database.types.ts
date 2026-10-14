@@ -705,6 +705,20 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"push_subscription_saves": {
+                  Row: {
+                    "id": string,"saved_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "id"?: string,"saved_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "id"?: string,"saved_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"push_subscriptions": {
                   Row: {
                     "auth": string,"created_at": string,"endpoint": string,"failure_count": number,"id": string,"last_success_at": string | null,"p256dh": string,"user_agent": string | null,"user_id": string
@@ -1218,6 +1232,9 @@ isOneToOne: false
 "import_exam_content_bundle":
 { Args: { "p_bundle": Json }; Returns: Json
                            },
+"is_allowed_push_endpoint":
+{ Args: { "p_endpoint": string }; Returns: boolean
+                           },
 "learning_path_validate":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: undefined
                            },
@@ -1299,6 +1316,9 @@ isOneToOne: false
               "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
             }[]
                            },
+"pending_push_notifications":
+{ Args: { "p_limit"?: number,"p_now"?: string }; Returns: Json
+                           },
 "postpone_reviews":
 { Args: { "p_card_ids": (string)[],"p_idempotency_key": string,"p_path_id": string }; Returns: Json
                            },
@@ -1346,12 +1366,15 @@ isOneToOne: false
 "reminders_prefs_json":
 { Args: { "p_user": string }; Returns: Json
                            },
+"reminders_push_text":
+{ Args: { "p_kind": string }; Returns: (string)[]
+                           },
 "reminders_skill_vi":
 { Args: { "p_skill": string }; Returns: string
                            },
 "reminders_slot":
 { Args: { "p_local": string,"p_remind_at": string,"p_slots": number }; Returns: {
-              "reminder_day": string,"slot": number
+              "elapsed_seconds": number,"reminder_day": string,"slot": number
             }[]
                            },
 "reminders_weekly_body":
