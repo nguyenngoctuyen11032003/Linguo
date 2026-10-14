@@ -4,10 +4,13 @@ import { Link } from 'react-router';
 import type { StudySession } from '@linguo/shared';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { SessionSummaryButton } from './SessionSummaryButton';
 
 interface Props {
   session: StudySession;
   onPlanAgain: () => void;
+  /** Learner language and level for the AI recap; omitted hides "Tóm tắt phiên bằng AI". */
+  learner?: { language: 'en' | 'ko'; level: string } | null;
 }
 
 /** Whole minutes for display; a started minute counts once something was done. */
@@ -16,7 +19,7 @@ function minutesOf(seconds: number): number {
 }
 
 /** End of a session: time, activities, and a calm word — no streak pressure (spec 6 §4). */
-export function CompletionView({ session, onPlanAgain }: Props) {
+export function CompletionView({ session, onPlanAgain, learner }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const { activities } = session.plan;
   const done = activities.filter((a) => a.status === 'done').length;
@@ -61,6 +64,7 @@ export function CompletionView({ session, onPlanAgain }: Props) {
           <Link to="/app" className={buttonClasses('accent', 'lg', true)}>
             Về trang chủ
           </Link>
+          {learner && <SessionSummaryButton session={session} learner={learner} />}
           <Button variant="ghost" block onClick={onPlanAgain}>
             Học thêm một phiên
           </Button>
