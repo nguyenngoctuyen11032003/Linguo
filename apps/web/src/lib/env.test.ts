@@ -8,6 +8,7 @@ describe('readEnv', () => {
     expect(env.siteUrl).toBe('http://localhost:5173');
     expect(env.googleEnabled).toBe(false);
     expect(env.heroVideoUrl).toBeNull();
+    expect(env.vapidPublicKey).toBeNull();
   });
 
   it('reads and normalizes configured values', () => {
@@ -18,6 +19,7 @@ describe('readEnv', () => {
         VITE_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_x',
         VITE_AUTH_GOOGLE_ENABLED: 'true',
         VITE_HERO_VIDEO_URL: 'https://cdn.example.com/hero.mp4',
+        VITE_VAPID_PUBLIC_KEY: ' BPublicKey ',
       },
       'https://user.github.io',
     );
@@ -26,6 +28,7 @@ describe('readEnv', () => {
     expect(env.siteUrl).toBe('https://user.github.io/Linguo');
     expect(env.googleEnabled).toBe(true);
     expect(env.heroVideoUrl).toBe('https://cdn.example.com/hero.mp4');
+    expect(env.vapidPublicKey).toBe('BPublicKey');
   });
 
   it('prefers VITE_SITE_URL and strips trailing slashes', () => {

@@ -4,6 +4,8 @@ export interface AppEnv {
   siteUrl: string;
   googleEnabled: boolean;
   heroVideoUrl: string | null;
+  /** Web Push VAPID public key (spec 10 §3); null turns device notifications off. */
+  vapidPublicKey: string | null;
   isSupabaseConfigured: boolean;
 }
 
@@ -24,6 +26,7 @@ export function readEnv(raw: RawEnv, origin: string): AppEnv {
     siteUrl,
     googleEnabled: str('VITE_AUTH_GOOGLE_ENABLED') === 'true',
     heroVideoUrl: str('VITE_HERO_VIDEO_URL') || null,
+    vapidPublicKey: str('VITE_VAPID_PUBLIC_KEY') || null,
     isSupabaseConfigured: /^https?:\/\/.+/.test(supabaseUrl) && supabaseKey.length > 0,
   };
 }
