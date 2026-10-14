@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type RefObject } from 'react';
 import { HelpCircle, Sparkles } from 'lucide-react';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import type { ReportTargetKind, SubmitResult, Verdict } from '@linguo/shared';
 import { AiExplainSheet } from '@/components/ai';
 import { ReportContentButton } from '@/components/report';

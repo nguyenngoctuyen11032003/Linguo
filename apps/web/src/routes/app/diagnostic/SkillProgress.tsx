@@ -1,5 +1,5 @@
 import { Check, Minus } from 'lucide-react';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import type { DiagnosticProgress } from '@linguo/shared';
 import { EASE_OUT } from '@/design/motion';
 import { cn } from '@/lib/cn';

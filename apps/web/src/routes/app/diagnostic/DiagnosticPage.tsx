@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState, type ReactNode, type RefObject } from 'react';
 import { Clock, HelpCircle, Pause, PauseCircle, ShieldCheck, Sparkles, X } from 'lucide-react';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router';
 import type { DiagnosticItem, DiagnosticMode, DiagnosticSkill } from '@linguo/shared';
 import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';

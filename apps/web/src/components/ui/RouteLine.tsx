@@ -1,5 +1,5 @@
 import { useId, useRef, useState } from 'react';
-import { motion, useInView } from 'motion/react';
+import { m as motion, useInView } from 'motion/react';
 import { EXPO_OUT, SPRING_POP, VIEWPORT_ONCE } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';

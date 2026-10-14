@@ -1,5 +1,5 @@
 import { useId, useLayoutEffect, useRef, type ReactNode, type RefObject } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, m as motion } from 'motion/react';
 import { functionalTransition } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMediaQuery } from '@/lib/useMediaQuery';

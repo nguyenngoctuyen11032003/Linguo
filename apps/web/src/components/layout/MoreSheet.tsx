@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, type RefObject } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, m as motion } from 'motion/react';
 import { ChevronRight, X } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router';
 import { functionalTransition } from '@/design/motion';

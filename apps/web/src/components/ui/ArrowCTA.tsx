@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import { EXPO_OUT } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';

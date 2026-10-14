@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import { EASE_OUT } from '@/design/motion';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 

@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, m as motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router';
 import { EXPO_OUT, reveal } from '@/design/motion';

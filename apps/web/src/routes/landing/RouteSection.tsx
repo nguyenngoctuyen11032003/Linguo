@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { motion, useInView } from 'motion/react';
+import { m as motion, useInView } from 'motion/react';
 import { BookOpen, Headphones, MessageCircle, type LucideIcon } from 'lucide-react';
 import { RouteLine, type RouteTrack } from '@/components/ui/RouteLine';
 import { DUR, reveal, VIEWPORT_ONCE } from '@/design/motion';

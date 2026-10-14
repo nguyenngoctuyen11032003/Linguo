@@ -1,5 +1,5 @@
 import { useId } from 'react';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import type { ActivityDay } from '@linguo/shared';
 import { EASE_OUT } from '@/design/motion';
 import { formatMinutes } from '@/features/learning-paths/components/schedule';

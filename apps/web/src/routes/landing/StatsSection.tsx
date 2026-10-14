@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { motion, useInView } from 'motion/react';
+import { m as motion, useInView } from 'motion/react';
 import { CountUp } from '@/components/ui/CountUp';
 import { reveal, VIEWPORT_ONCE } from '@/design/motion';
 import { cn } from '@/lib/cn';

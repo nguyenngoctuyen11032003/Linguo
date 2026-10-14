@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import { Volume2, VolumeX } from 'lucide-react';
 import type { ReviewCard } from '@linguo/shared';
 import { ReportContentButton } from '@/components/report';

@@ -1,5 +1,5 @@
 import { useId, useRef } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, m as motion } from 'motion/react';
 import { CheckCircle2, CircleDashed, Flag } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { functionalTransition } from '@/design/motion';

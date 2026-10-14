@@ -1,7 +1,14 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { MotionConfig } from 'motion/react';
+import { LazyMotion, MotionConfig } from 'motion/react';
 import { readBool, writeBool } from '@/lib/storage';
 import { useMediaQuery } from '@/lib/useMediaQuery';
+
+/**
+ * Animation features load after first paint (own chunk). Components use the slim `m` component (imported as
+ * `motion`: `import { m as motion } from 'motion/react'`); `strict` makes a stray full `motion` import throw in dev
+ * instead of silently pulling the whole library back into the entry bundle.
+ */
+const loadMotionFeatures = () => import('./motion-features').then((mod) => mod.default);
 
 const STORAGE_KEY = 'linguo-reduce-motion';
 
@@ -36,7 +43,9 @@ export function MotionProvider({ children }: { children: ReactNode }) {
 
   return (
     <MotionContext.Provider value={value}>
-      <MotionConfig reducedMotion={reduceMotion ? 'always' : 'never'}>{children}</MotionConfig>
+      <LazyMotion features={loadMotionFeatures} strict>
+        <MotionConfig reducedMotion={reduceMotion ? 'always' : 'never'}>{children}</MotionConfig>
+      </LazyMotion>
     </MotionContext.Provider>
   );
 }

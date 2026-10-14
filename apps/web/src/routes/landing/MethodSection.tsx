@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { motion, useInView } from 'motion/react';
+import { m as motion, useInView } from 'motion/react';
 import { BrainCircuit, CalendarClock, MessageSquareText } from 'lucide-react';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { reveal, VIEWPORT_ONCE } from '@/design/motion';

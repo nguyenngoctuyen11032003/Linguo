@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { motion } from 'motion/react';
+import { m as motion } from 'motion/react';
 import { Link } from 'react-router';
 import { ArrowCTA } from '@/components/ui/ArrowCTA';
 import { reveal } from '@/design/motion';

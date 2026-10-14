@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type RefObject } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, m as motion } from 'motion/react';
 import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
 import { Button } from '@/components/ui/Button';
 import { functionalTransition } from '@/design/motion';
