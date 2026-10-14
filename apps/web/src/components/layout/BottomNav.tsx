@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router';
 import { cn } from '@/lib/cn';
 import { MORE_NAV, PRIMARY_NAV } from './nav';
 
-const TAB = 'flex min-h-14 w-full flex-col items-center justify-center gap-0.5 px-1 text-xs font-medium leading-tight transition-colors';
+const TAB = 'flex min-h-14 w-full flex-col items-center justify-center gap-0.5 whitespace-nowrap px-0.5 text-xs font-medium leading-tight transition-colors';
 
 export function BottomNav({
   onMore,

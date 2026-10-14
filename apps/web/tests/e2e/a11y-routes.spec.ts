@@ -191,6 +191,37 @@ test.describe('keyboard, phone dialogs', () => {
   });
 });
 
+test.describe('route titles and focus', () => {
+  test.beforeEach(({}, testInfo) => { // eslint-disable-line no-empty-pattern
+    test.skip(!MOBILE_PROJECTS.includes(testInfo.project.name), `route titles run on ${MOBILE_PROJECTS.join(', ')}`);
+  });
+
+  const TITLES: Array<[string, string]> = [
+    ['sign-in', 'Đăng nhập · Linguo'],
+    ['privacy', 'Quyền riêng tư · Linguo'],
+    ['terms', 'Điều khoản sử dụng · Linguo'],
+    ['404', 'Không tìm thấy trang · Linguo'],
+    ['home', 'Trang chủ · Linguo'],
+    ['learn', 'Học tập · Linguo'],
+    ['review', 'Ôn tập · Linguo'],
+    ['settings', 'Cài đặt · Linguo'],
+  ];
+  for (const [name, title] of TITLES) {
+    test(`${name} has its own document title`, async ({ page }) => {
+      await openRoute(page, ROUTES.find((r) => r.name === name)!);
+      await expect(page).toHaveTitle(title);
+    });
+  }
+
+  test('navigating moves focus to the new page heading, announces it and updates the title', async ({ page }) => {
+    await openRoute(page, ROUTES.find((r) => r.name === 'home')!);
+    await page.getByRole('navigation', { name: 'Điều hướng chính' }).getByRole('link', { name: 'Học tập' }).click();
+    await expect(page).toHaveTitle('Học tập · Linguo');
+    await expect(page.getByRole('heading', { level: 1, name: 'Học tập' })).toBeFocused();
+    await expect(page.getByRole('status').filter({ hasText: /^Học tập$/ })).toHaveCount(1);
+  });
+});
+
 test.describe('offline', () => {
   test.beforeEach(({}, testInfo) => { // eslint-disable-line no-empty-pattern
     test.skip(!MOBILE_PROJECTS.includes(testInfo.project.name), `offline runs on ${MOBILE_PROJECTS.join(', ')}`);
@@ -208,6 +239,19 @@ test.describe('offline', () => {
       await context.setOffline(true);
       await expect(banner).toBeVisible();
       await expect(route.ready(page)).toBeVisible();
+      if (name === 'home') {
+        // In flow, not fixed: the app bar's avatar must stay the topmost element at its own centre point.
+        const avatar = page.getByRole('link', { name: 'Tài khoản và cài đặt' });
+        await expect(avatar).toBeVisible();
+        const covered = await avatar.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          const top = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
+          return !(top && el.contains(top));
+        });
+        expect(covered, 'offline banner must not cover the app bar').toBe(false);
+        const bannerBox = await banner.boundingBox();
+        expect(bannerBox && bannerBox.height <= 24, 'one line of copy').toBeTruthy();
+      }
       await expectNoSeriousAxe(page, `${route.path} offline`);
 
       await context.setOffline(false);

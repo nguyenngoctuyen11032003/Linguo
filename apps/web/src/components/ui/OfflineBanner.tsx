@@ -3,8 +3,8 @@ import { useOnline } from '@/lib/useOnline';
 
 /**
  * Sits in the document flow above the page (never fixed), so the app bar's language pill, bell and avatar stay
- * uncovered while offline. Below ~23rem the tail of the sentence stays in the accessible text but leaves the screen,
- * keeping the banner to one line at 320 px. The `role="status"` wrapper is always mounted so assistive tech
+ * uncovered while offline. Below ~26rem the tail of the sentence stays in the accessible text but leaves the screen,
+ * keeping the banner to one line on phones. The `role="status"` wrapper is always mounted so assistive tech
  * registers the live region before it changes.
  */
 export function OfflineBanner() {
@@ -16,7 +16,7 @@ export function OfflineBanner() {
           <WifiOff aria-hidden className="size-4 shrink-0" />
           <span>
             Bạn đang ngoại tuyến
-            <span className="max-[23rem]:sr-only"> — tiến độ sẽ được lưu khi có mạng</span>
+            <span className="max-[26rem]:sr-only"> — tiến độ sẽ được lưu khi có mạng</span>
           </span>
         </div>
       )}
