@@ -3,6 +3,7 @@ import { GOAL_LABELS, isTargetDateInRange, LANGUAGES, LEVEL_INFO, START_POINT_LA
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { EstimateSummary } from '@/features/learning-paths/components/EstimateSummary';
+import { nudgeMinutesPerDay } from '@/features/learning-paths/format-estimate';
 import { formatMinutes } from '@/features/learning-paths/components/schedule';
 import { formatDateVi } from '@/lib/dates';
 import type { StepNumber } from './logic';
@@ -22,6 +23,7 @@ interface Props {
 
 export function StepReview({ input, estimate, today, onEdit, onApplyMinutes, onApplyDate, onCreate, creating, error, errorAction }: Props) {
   const weekly = input.weeklyMinutes.reduce((s, m) => s + m, 0);
+  const nudge = estimate ? nudgeMinutesPerDay(estimate) : null;
   const rows: Array<{ label: string; value: string; step: StepNumber }> = [
     { label: 'Ngôn ngữ', value: LANGUAGES[input.language].nameVi, step: 1 },
     { label: 'Điểm xuất phát', value: START_POINT_LABELS[input.startPoint], step: 2 },
@@ -69,6 +71,11 @@ export function StepReview({ input, estimate, today, onEdit, onApplyMinutes, onA
                 </Button>
               )}
             </div>
+          )}
+          {nudge !== null && (estimate.feasibility === 'feasible' || estimate.feasibility === 'no_deadline') && (
+            <Button variant="ghost" onClick={() => onApplyMinutes(nudge)}>
+              Dùng {nudge} phút/ngày
+            </Button>
           )}
         </SolidCard>
       )}

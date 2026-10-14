@@ -8,6 +8,7 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { useDiagnosticStatus } from '@/features/diagnostic/useDiagnosticStatus';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
+import { formatEstimate } from '@/features/learning-paths/format-estimate';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { setPathStatus, type LearningPath } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
@@ -141,7 +142,7 @@ function PathItem({ path, onArchived }: { path: LearningPath; onArchived: () => 
             {LANGUAGES[path.language].nameVi} · {GOAL_LABELS[path.goalType]}
           </h3>
           <p className="text-sm text-muted">
-            {from} → {to} · khoảng {path.estimate.weeksMin}–{path.estimate.weeksMax} tuần
+            {from} → {to} · {formatEstimate(path.estimate.weeksMin, path.estimate.weeksMax)}
           </p>
         </div>
         {path.status === 'paused' && <span className="shrink-0 rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold">Tạm dừng</span>}

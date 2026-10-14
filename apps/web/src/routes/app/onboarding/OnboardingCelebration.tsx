@@ -2,13 +2,11 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router';
 import { LEVEL_INFO, type LevelCode } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
-import { CountUp } from '@/components/ui/CountUp';
 import { RouteLine } from '@/components/ui/RouteLine';
+import { formatEstimate } from '@/features/learning-paths/format-estimate';
 import type { LearningPath } from '@/features/learning-paths/service';
-import { useMotionPrefs } from '@/providers/MotionProvider';
 
 export function OnboardingCelebration({ path, onDone }: { path: LearningPath; onDone: () => void }) {
-  const { reduceMotion } = useMotionPrefs();
   const navigate = useNavigate();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const from = LEVEL_INFO[path.currentLevel as LevelCode].label;
@@ -45,8 +43,7 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
         Lộ trình đã sẵn sàng!
       </h1>
       <p className="text-[17px] text-muted">
-        Ước lượng khoảng <CountUp to={path.estimate.weeksMin} durationMs={reduceMotion ? 0 : 1200} />–
-        <CountUp to={path.estimate.weeksMax} durationMs={reduceMotion ? 0 : 1200} /> tuần để đạt {to}.
+        Ước lượng {formatEstimate(path.estimate.weeksMin, path.estimate.weeksMax)} để đạt {to}.
       </p>
       {unsure ? (
         <>

@@ -97,7 +97,7 @@ describe('LearningPathsSection', () => {
     renderWithProviders(<LearningPathsSection />, { route: '/app/cai-dat' });
     const section = screen.getByRole('region', { name: 'Lộ trình học' });
     expect(within(section).getByRole('heading', { level: 3, name: 'Tiếng Anh · Giao tiếp đời sống' })).toBeInTheDocument();
-    expect(within(section).getByText('A2 → B1 · khoảng 43–69 tuần')).toBeInTheDocument();
+    expect(within(section).getByText('A2 → B1 · khoảng 10–16 tháng')).toBeInTheDocument();
   });
 
   it('links to add the missing language', () => {
@@ -251,7 +251,7 @@ describe('LearningPathsSection', () => {
       expect(edit).toHaveAttribute('aria-expanded', 'true');
       await userEvent.selectOptions(screen.getByLabelText('Bậc mục tiêu'), 'b2');
       await userEvent.click(screen.getByRole('radio', { name: '45–60 phút mỗi ngày' }));
-      const estimate = screen.getByText('Khoảng 44–72 tuần');
+      const estimate = screen.getByText('Khoảng 10–17 tháng');
       expect(estimate.closest('[aria-live="polite"]')).not.toBeNull();
       await userEvent.click(screen.getByRole('button', { name: 'Lưu kế hoạch' }));
       expect(mocks.updatePlan).toHaveBeenCalledWith({}, 'path-en', {
@@ -360,7 +360,7 @@ describe('LearningPathsSection', () => {
       renderWithProviders(<LearningPathsSection />);
       await openEditor();
       expect(screen.getByText('Không tải được số giờ tham chiếu')).toBeInTheDocument();
-      expect(screen.queryByText(/Khoảng \d+–\d+ tuần/)).not.toBeInTheDocument();
+      expect(screen.queryByText(/Khoảng \d+(–\d+)? (tuần|tháng|năm)/)).not.toBeInTheDocument();
       await userEvent.click(screen.getByRole('button', { name: 'Thử lại' }));
       expect(retry).toHaveBeenCalledOnce();
     });

@@ -52,7 +52,7 @@ test('a new user creates an English path through the wizard', async ({ page }, t
   await next(page);
 
   await atStep(page, 'Xem lại lộ trình', testInfo, '6-review');
-  await expect(page.getByText('Khoảng 43–69 tuần')).toBeVisible();
+  await expect(page.getByText('Khoảng 10–16 tháng')).toBeVisible();
   await page.getByRole('button', { name: 'Tạo lộ trình' }).click();
 
   await expect(page.getByRole('heading', { name: 'Lộ trình đã sẵn sàng!' })).toBeVisible();

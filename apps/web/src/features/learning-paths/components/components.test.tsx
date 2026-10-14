@@ -128,7 +128,9 @@ describe('FeasibilityBadge', () => {
 describe('EstimateSummary', () => {
   it('shows the range, feasibility and assumptions', () => {
     render(<EstimateSummary estimate={TEST_PATH.estimate} />);
-    expect(screen.getByText('Khoảng 43–69 tuần')).toBeInTheDocument();
+    expect(screen.getByText('Khoảng 10–16 tháng')).toBeInTheDocument();
+    expect(screen.getByText('Tương đương 43–69 tuần học')).toBeInTheDocument();
+    expect(screen.queryByTestId('estimate-nudge')).not.toBeInTheDocument();
     expect(screen.getByText('Không đặt hạn')).toBeInTheDocument();
     expect(screen.getByText('Học 3 giờ 30 phút mỗi tuần')).toBeInTheDocument();
     expect(screen.getByText(/chưa được kiểm duyệt/)).toBeInTheDocument();
@@ -138,6 +140,12 @@ describe('EstimateSummary', () => {
   it('collapses an identical min and max into a single figure', () => {
     render(<EstimateSummary estimate={{ ...TEST_PATH.estimate, weeksMin: 12, weeksMax: 12 }} />);
     expect(screen.getByText('Khoảng 12 tuần')).toBeInTheDocument();
+  });
+
+  it('quotes a multi-year plan in years and nudges towards more minutes a day', () => {
+    render(<EstimateSummary estimate={{ ...TEST_PATH.estimate, weeksMin: 264, weeksMid: 346, weeksMax: 428, hoursNeeded: 605 }} />);
+    expect(screen.getByText('Khoảng 5–8 năm')).toBeInTheDocument();
+    expect(screen.getByTestId('estimate-nudge')).toHaveTextContent('Tăng lên 50 phút/ngày để rút ngắn đáng kể.');
   });
 
   it('formats the multiplier range and hours with Vietnamese number formatting', () => {

@@ -64,7 +64,7 @@ describe('OnboardingPage', () => {
     expect(screen.getByRole('radio', { name: '30 phút mỗi ngày' })).toBeChecked();
     await next();
     expect(screen.getByRole('heading', { level: 1, name: 'Xem lại lộ trình' })).toBeInTheDocument();
-    expect(screen.getByText('Khoảng 43–69 tuần')).toBeInTheDocument();
+    expect(screen.getByText('Khoảng 10–16 tháng')).toBeInTheDocument();
 
     mocks.createPath.mockResolvedValue(TEST_PATH);
     await userEvent.click(screen.getByRole('button', { name: 'Tạo lộ trình' }));

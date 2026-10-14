@@ -9,6 +9,7 @@ import { AppBar } from './AppBar';
 import { AppLayout } from './AppLayout';
 import { BottomNav } from './BottomNav';
 import { MoreSheet } from './MoreSheet';
+import { Sidebar } from './Sidebar';
 
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => null, requireSupabase: () => ({}) }));
 
@@ -36,6 +37,14 @@ describe('BottomNav', () => {
   });
 });
 
+describe('Sidebar', () => {
+  it('lists Luyện nói next to the other destinations', () => {
+    renderWithProviders(<Sidebar />, { route: '/app' });
+    expect(screen.getByRole('link', { name: 'Luyện nói' })).toHaveAttribute('href', '/app/luyen-noi');
+    expect(screen.getByRole('link', { name: 'Luyện thi' })).toBeInTheDocument();
+  });
+});
+
 describe('MoreSheet', () => {
   it('lists secondary destinations and closes on Escape', async () => {
     localStorage.setItem('linguo-reduce-motion', 'true');
@@ -44,6 +53,7 @@ describe('MoreSheet', () => {
     const dialog = screen.getByRole('dialog', { name: 'Thêm' });
     expect(dialog).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Luyện thi/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Luyện nói/ })).toHaveAttribute('href', '/app/luyen-noi');
     expect(screen.getByRole('link', { name: /Tiến độ/ })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Cài đặt/ })).toBeInTheDocument();
     await userEvent.keyboard('{Escape}');

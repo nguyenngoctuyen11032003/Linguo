@@ -1,4 +1,4 @@
-import { BookOpen, GraduationCap, House, NotebookPen, RotateCcw, Settings, Sparkles, TrendingUp, type LucideIcon } from 'lucide-react';
+import { BookOpen, GraduationCap, House, Mic, NotebookPen, RotateCcw, Settings, Sparkles, TrendingUp, type LucideIcon } from 'lucide-react';
 
 export interface NavItem {
   to: string;
@@ -7,7 +7,7 @@ export interface NavItem {
   end?: boolean;
 }
 
-/** Bottom bar (mobile) shows these 4 + "Thêm". Sidebar (desktop ≥1024px) shows all 7 (PRD 12.2). */
+/** Bottom bar (mobile) shows these 4 + "Thêm". Sidebar (desktop ≥1024px) shows all 8 (PRD 12.2). */
 export const PRIMARY_NAV: NavItem[] = [
   { to: '/app', label: 'Trang chủ', icon: House, end: true },
   { to: '/app/hoc-tap', label: 'Học tập', icon: BookOpen },
@@ -17,6 +17,7 @@ export const PRIMARY_NAV: NavItem[] = [
 
 export const MORE_NAV: NavItem[] = [
   { to: '/app/luyen-thi', label: 'Luyện thi', icon: GraduationCap },
+  { to: '/app/luyen-noi', label: 'Luyện nói', icon: Mic },
   { to: '/app/tu-vung-cua-toi', label: 'Từ vựng của tôi', icon: NotebookPen },
   { to: '/app/tien-do', label: 'Tiến độ', icon: TrendingUp },
   { to: '/app/cai-dat', label: 'Cài đặt', icon: Settings },
