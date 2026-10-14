@@ -7,7 +7,15 @@ import { z } from 'zod';
 // This file is copied verbatim into supabase/functions/_shared/ai-contract.ts by
 // scripts/sync-ai-contract.mjs (CI runs --check), so it may import only `zod`.
 
-export const AI_TASKS = ['explain_concept', 'generate_practice', 'analyze_error', 'review_writing'] as const;
+export const AI_TASKS = [
+  'explain_concept',
+  'generate_practice',
+  'analyze_error',
+  'review_writing',
+  'analyze_sentence',
+  'summarize_session',
+  'plan_review',
+] as const;
 export type AiTask = (typeof AI_TASKS)[number];
 
 export const AI_ERROR_CODES = ['bad_request', 'unauthorized', 'quota_exceeded', 'ai_unavailable', 'invalid_output'] as const;
@@ -20,6 +28,15 @@ export const REVIEW_WRITING_ANSWER_MAX_CHARS = 1500;
 /** review_writing: longest essay prompt (instruction + passage + question). */
 export const REVIEW_WRITING_PROMPT_MAX_CHARS = 1200;
 export const REVIEW_WRITING_MAX_CRITERIA = 6;
+/** analyze_sentence: longest sentence analysed (one sentence, not a passage). */
+export const ANALYZE_SENTENCE_MAX_CHARS = 160;
+export const ANALYZE_SENTENCE_MAX_TOKENS = 30;
+/** summarize_session: bounds of the compact, client-built summary. */
+export const SESSION_SUMMARY_MAX_ACTIVITIES = 12;
+export const SESSION_SUMMARY_MAX_ERROR_TAGS = 5;
+/** plan_review: bounded list of detected gaps in, at most this many steps out. */
+export const PLAN_REVIEW_MAX_GAPS = 10;
+export const PLAN_REVIEW_MAX_STEPS = 5;
 export const AI_REPORT_REASONS = ['wrong', 'unclear', 'unsafe', 'other'] as const;
 
 const language = z.enum(['en', 'ko']);
@@ -78,11 +95,77 @@ export const reviewWritingRequestSchema = z.strictObject({
     .refine((rows) => new Set(rows.map((r) => r.key)).size === rows.length, { message: 'duplicate rubric key' }),
 });
 
+/** Spec 8.2 #4: one sentence analysed at the learner's level. Cacheable, so no lesson_id (same input → same key). */
+export const analyzeSentenceRequestSchema = z.strictObject({
+  task: z.literal('analyze_sentence'),
+  language,
+  level,
+  sentence: shortText(ANALYZE_SENTENCE_MAX_CHARS),
+});
+
+const errorTagKey = z.string().regex(/^[a-z][a-z0-9_]{0,39}$/);
+const count = z.number().int().min(0).max(999);
+
+/** Spec 8.2 #9: what the learner did in a session, as numbers and tags only (no free text, no personal data). */
+export const summarizeSessionRequestSchema = z.strictObject({
+  task: z.literal('summarize_session'),
+  language,
+  level,
+  minutes: z.number().int().min(0).max(300),
+  activities: z
+    .array(
+      z.strictObject({
+        kind: z.enum(['review', 'lesson', 'practice', 'recap']),
+        status: z.enum(['done', 'skipped', 'pending']),
+        minutes: z.number().int().min(0).max(120),
+      }),
+    )
+    .min(1)
+    .max(SESSION_SUMMARY_MAX_ACTIVITIES),
+  accuracy_by_stage: z
+    .array(
+      z
+        .strictObject({ stage: z.enum(['recognition', 'recall', 'application']), attempts: count, correct: count })
+        .refine((r) => r.correct <= r.attempts, { message: 'correct over attempts' }),
+    )
+    .max(3)
+    .default([]),
+  error_tags: z
+    .array(z.strictObject({ tag: errorTagKey, count: count.min(1) }))
+    .max(SESSION_SUMMARY_MAX_ERROR_TAGS)
+    .default([]),
+});
+
+/**
+ * Spec 8.2 #7: detected gaps in (lessons the learner got wrong, weak exercise types/tags), a short plan out.
+ * `id` is a lesson uuid for kind 'lesson' and a tag key for kind 'tag'; steps may only target these ids.
+ */
+export const planReviewRequestSchema = z.strictObject({
+  task: z.literal('plan_review'),
+  language,
+  level,
+  gaps: z
+    .array(
+      z.strictObject({
+        kind: z.enum(['lesson', 'tag']),
+        id: z.string().regex(/^[A-Za-z0-9_-]{1,64}$/),
+        label: shortText(80),
+        count: count.min(1),
+      }),
+    )
+    .min(1)
+    .max(PLAN_REVIEW_MAX_GAPS)
+    .refine((rows) => new Set(rows.map((r) => `${r.kind}:${r.id}`)).size === rows.length, { message: 'duplicate gap' }),
+});
+
 export const aiRequestSchema = z.discriminatedUnion('task', [
   explainConceptRequestSchema,
   generatePracticeRequestSchema,
   analyzeErrorRequestSchema,
   reviewWritingRequestSchema,
+  analyzeSentenceRequestSchema,
+  summarizeSessionRequestSchema,
+  planReviewRequestSchema,
 ]);
 export type AiRequest = z.infer<typeof aiRequestSchema>;
 export type AiRequestInput = z.input<typeof aiRequestSchema>;
@@ -139,17 +222,84 @@ export const reviewWritingOutputSchema = z.strictObject({
   corrected_version: md(2000),
 });
 
+export const SENTENCE_POS = [
+  'noun',
+  'pronoun',
+  'verb',
+  'auxiliary',
+  'adjective',
+  'adverb',
+  'determiner',
+  'preposition',
+  'conjunction',
+  'interjection',
+  'particle',
+  'ending',
+  'number',
+  'other',
+] as const;
+export const SENTENCE_COMPONENTS = ['subject', 'predicate', 'object', 'complement', 'adverbial', 'modifier', 'topic', 'other'] as const;
+
+export const analyzeSentenceOutputSchema = z.strictObject({
+  /** The natural meaning in Vietnamese. */
+  translation_vi: md(300),
+  alternative_meanings: z.array(md(200)).max(3),
+  /** Words/morphemes copied from the sentence (checked by the Edge Function), with their part of speech. */
+  tokens: z
+    .array(z.strictObject({ text: md(40), pos: z.enum(SENTENCE_POS), meaning_vi: md(120) }))
+    .min(1)
+    .max(ANALYZE_SENTENCE_MAX_TOKENS),
+  components: z.array(z.strictObject({ label: z.enum(SENTENCE_COMPONENTS), text: md(80), note_vi: md(200) })).max(8),
+  grammar_points: z.array(z.strictObject({ pattern: md(80), explanation_vi: md(300) })).max(4),
+  confidence: z.enum(['high', 'medium', 'low']),
+  uncertainty: md(300).nullable(),
+});
+
+export const summarizeSessionOutputSchema = z.strictObject({
+  recap_vi: md(600),
+  /** Each tag comes from the request's error_tags (checked by the Edge Function). */
+  errors_to_remember: z.array(z.strictObject({ tag: md(40), note_vi: md(300) })).max(3),
+  next_step_vi: md(300),
+});
+
+export const PLAN_REVIEW_STEP_KINDS = ['review_cards', 'redo_lesson'] as const;
+
+export const planReviewOutputSchema = z.strictObject({
+  summary_vi: md(300),
+  /** target is always an id from the request's gaps; review_cards carries a card count, redo_lesson null. */
+  steps: z
+    .array(
+      z.strictObject({
+        kind: z.enum(PLAN_REVIEW_STEP_KINDS),
+        target: md(64),
+        cards: z.number().int().min(1).max(30).nullable(),
+        reason_vi: md(200),
+      }),
+    )
+    .min(1)
+    .max(PLAN_REVIEW_MAX_STEPS),
+});
+
 export const AI_OUTPUT_SCHEMAS = {
   explain_concept: explainConceptOutputSchema,
   generate_practice: generatePracticeOutputSchema,
   analyze_error: analyzeErrorOutputSchema,
   review_writing: reviewWritingOutputSchema,
+  analyze_sentence: analyzeSentenceOutputSchema,
+  summarize_session: summarizeSessionOutputSchema,
+  plan_review: planReviewOutputSchema,
 } as const;
 
 export type ExplainConceptOutput = z.infer<typeof explainConceptOutputSchema>;
 export type GeneratePracticeOutput = z.infer<typeof generatePracticeOutputSchema>;
 export type AnalyzeErrorOutput = z.infer<typeof analyzeErrorOutputSchema>;
 export type ReviewWritingOutput = z.infer<typeof reviewWritingOutputSchema>;
+export type AnalyzeSentenceOutput = z.infer<typeof analyzeSentenceOutputSchema>;
+export type SummarizeSessionOutput = z.infer<typeof summarizeSessionOutputSchema>;
+export type PlanReviewOutput = z.infer<typeof planReviewOutputSchema>;
+export type AnalyzeSentenceRequestInput = z.input<typeof analyzeSentenceRequestSchema>;
+export type SummarizeSessionRequestInput = z.input<typeof summarizeSessionRequestSchema>;
+export type PlanReviewRequestInput = z.input<typeof planReviewRequestSchema>;
 export type ReviewWritingRequestInput = z.input<typeof reviewWritingRequestSchema>;
 
 export const aiQuotaSchema = z.strictObject({ used: z.number().int(), limit: z.number().int(), resets_at: z.string() });
