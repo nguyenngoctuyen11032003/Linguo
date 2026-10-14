@@ -14,6 +14,7 @@ import { DiagnosticCard } from './home/DiagnosticCard';
 import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
 import { ReviewDueCard } from './home/ReviewDueCard';
+import { SpeakingCard } from './home/SpeakingCard';
 import { SpreadWarning } from './home/SpreadWarning';
 import { TodayCard } from './home/TodayCard';
 import { WeeklySummaryCard } from './home/WeeklySummaryCard';
@@ -83,6 +84,7 @@ export function HomePage() {
           <DiagnosticCard pathId={paths.current.id} />
           <ReviewDueCard />
           <NextLessonCard />
+          <SpeakingCard />
           <HomeMotivation pathId={paths.current.id} />
         </>
       )}
