@@ -1,0 +1,1006 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Kế hoạch & du lịch" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: be going to + mốc thời gian tương lai ----------------
+  - key: en:item:be-going-to
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: be going to + động từ nguyên mẫu
+      ipa: UK /ˈɡəʊɪŋ tə/ · US /ˈɡoʊɪŋ tə/
+      pos: cấu trúc tương lai
+    back:
+      meaning:
+        vi: "sẽ, định (nói về kế hoạch đã quyết định từ trước): I am going to visit Da Lat."
+      examples:
+        - target: We're going to visit Da Lat next week.
+          translation:
+            vi: Tuần sau chúng tôi định đi Đà Lạt.
+        - target: Is she going to stay at a hotel?
+          translation:
+            vi: Cô ấy có định ở khách sạn không?
+      pronunciation_note:
+        vi: Khi nói nhanh, going to thường đọc lướt thành /ˈɡʌnə/ (gonna), nhưng khi viết bạn luôn viết going to.
+      confusion:
+        vi: Be phải đổi theo chủ ngữ (I am, she is, they are) và động từ sau to giữ nguyên mẫu - không nói I going to hay I am going to visited.
+
+  - key: en:item:next-week
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: next week / next month / next year
+      ipa: /nekst wiːk/
+      pos: cụm trạng từ thời gian
+    back:
+      meaning:
+        vi: tuần sau / tháng sau / năm sau
+      examples:
+        - target: I'm going to start a new job next month.
+          translation:
+            vi: Tháng sau tôi sẽ bắt đầu công việc mới.
+      pronunciation_note:
+        vi: Next có cụm phụ âm cuối /kst/; đọc đủ âm /t/ nhẹ trước week.
+      confusion:
+        vi: Không thêm on hay in trước next - nói next week, không nói in next week hay on next Monday.
+
+  - key: en:item:in-two-days
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: in two days / in a week
+      ipa: /ɪn tuː deɪz/
+      pos: cụm trạng từ thời gian
+    back:
+      meaning:
+        vi: hai ngày nữa / một tuần nữa (tính từ bây giờ)
+      examples:
+        - target: We're going to fly to Hanoi in two days.
+          translation:
+            vi: Hai ngày nữa chúng tôi sẽ bay ra Hà Nội.
+      confusion:
+        vi: In two days nghĩa là "hai ngày nữa", không phải "trong vòng hai ngày". Đừng dùng after two days cho nghĩa này.
+
+  - key: en:item:the-day-after-tomorrow
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: the day after tomorrow
+      ipa: UK /ðə deɪ ˈɑːftə təˈmɒrəʊ/ · US /ðə deɪ ˈæftɚ təˈmɑːroʊ/
+      pos: cụm trạng từ thời gian
+    back:
+      meaning:
+        vi: ngày kia (sau ngày mai)
+      examples:
+        - target: My parents are going to arrive the day after tomorrow.
+          translation:
+            vi: Ngày kia bố mẹ tôi sẽ đến.
+      confusion:
+        vi: Phải có the ở đầu cụm. Tiếng Anh không có một từ riêng cho "ngày kia" như tiếng Việt.
+
+  - key: en:item:tonight
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tonight
+      ipa: /təˈnaɪt/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tối nay
+      examples:
+        - target: What are you going to do tonight?
+          translation:
+            vi: Tối nay bạn định làm gì?
+      pronunciation_note:
+        vi: Nhấn vào âm sau (night); âm đầu đọc nhẹ /tə/.
+      confusion:
+        vi: Nói tonight, không nói this night. Không thêm in hay at trước tonight.
+
+  - key: en:item:holiday
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: holiday
+      ipa: UK /ˈhɒlədeɪ/ · US /ˈhɑːlədeɪ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ, chuyến đi nghỉ (Anh-Anh; Anh-Mỹ hay dùng vacation)
+      examples:
+        - target: We're going to go on holiday in July.
+          translation:
+            vi: Tháng Bảy chúng tôi sẽ đi nghỉ.
+      confusion:
+        vi: Nói go on holiday (đi nghỉ), không nói go to holiday. Người Mỹ thường nói go on vacation.
+
+  - key: en:item:visit
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: visit
+      ipa: /ˈvɪzɪt/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: đi thăm, đến thăm (một người hoặc một nơi)
+      examples:
+        - target: I'm going to visit my grandparents in Hue.
+          translation:
+            vi: Tôi sẽ về Huế thăm ông bà.
+      pronunciation_note:
+        vi: Chữ s đọc là /z/ - "vi-zit", nhấn âm đầu.
+      confusion:
+        vi: Visit đi thẳng với nơi hoặc người, không cần to - visit Hoi An, không nói visit to Hoi An.
+
+  - key: en:item:stay
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stay
+      ipa: /steɪ/
+      pos: động từ
+    back:
+      meaning:
+        vi: ở lại, lưu trú (ở khách sạn, ở nhà ai đó trong chuyến đi)
+      examples:
+        - target: We're going to stay at a small hotel near the beach.
+          translation:
+            vi: Chúng tôi sẽ ở một khách sạn nhỏ gần biển.
+        - target: She's going to stay with her aunt.
+          translation:
+            vi: Cô ấy sẽ ở nhà dì.
+      confusion:
+        vi: Stay at + nơi chốn (stay at a hotel), stay with + người (stay with friends). Stay là ở tạm, còn live là sống lâu dài.
+
+  - key: en:item:go-sightseeing
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: go sightseeing
+      ipa: UK /ɡəʊ ˈsaɪtsiːɪŋ/ · US /ɡoʊ ˈsaɪtsiːɪŋ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi tham quan, ngắm cảnh
+      examples:
+        - target: Tomorrow we're going to go sightseeing in the old town.
+          translation:
+            vi: Ngày mai chúng tôi sẽ đi tham quan phố cổ.
+      confusion:
+        vi: Không có to hay a - nói go sightseeing, không nói go to sightseeing.
+
+  - key: en:item:plan
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: plan
+      ipa: /plæn/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: kế hoạch; lên kế hoạch
+      examples:
+        - target: Do you have any plans for the weekend?
+          translation:
+            vi: Cuối tuần bạn có kế hoạch gì không?
+        - target: We're planning a trip to Phu Quoc.
+          translation:
+            vi: Chúng tôi đang lên kế hoạch đi Phú Quốc.
+      confusion:
+        vi: Hỏi kế hoạch thường dùng số nhiều - any plans. Khi thêm -ing, gấp đôi n - planning.
+
+  - key: en:item:what-are-you-going-to-do
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking, grammar]
+    front:
+      text: What are you going to do…?
+      ipa: UK /wɒt ɑː juː ˈɡəʊɪŋ tə duː/ · US /wʌt ɑːr juː ˈɡoʊɪŋ tə duː/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn định làm gì…? (hỏi kế hoạch)
+      examples:
+        - target: What are you going to do this summer?
+          translation:
+            vi: Mùa hè này bạn định làm gì?
+      confusion:
+        vi: Đảo be lên trước chủ ngữ - What are you going to do?, không nói What you are going to do?
+
+  - key: en:item:soon
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: soon
+      ipa: /suːn/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: sắp, sớm (không lâu nữa)
+      examples:
+        - target: I'm going to buy a new phone soon.
+          translation:
+            vi: Tôi sắp mua điện thoại mới.
+      confusion:
+        vi: Soon là "sắp, chẳng bao lâu nữa", khác early (sớm so với giờ quy định) - get up early, không nói get up soon.
+
+  # ---------------- Bài 2: will, going to, hiện tại tiếp diễn chỉ lịch hẹn ----------------
+  - key: en:item:will-decision
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: will (quyết định ngay, đề nghị giúp)
+      ipa: /wɪl/
+      pos: trợ động từ
+    back:
+      meaning:
+        vi: "sẽ - quyết định ngay lúc nói hoặc đề nghị giúp ai: I'll get it. / I'll carry your bag."
+      examples:
+        - target: The phone is ringing. I'll answer it.
+          translation:
+            vi: Điện thoại reo kìa. Để tôi nghe.
+        - target: That bag looks heavy. I'll help you.
+          translation:
+            vi: Túi đó trông nặng quá. Để tôi giúp bạn.
+      pronunciation_note:
+        vi: I will thường rút gọn thành I'll /aɪl/, đọc gần "ai-ồ".
+      confusion:
+        vi: Sau will luôn là động từ nguyên mẫu - I will go, không nói I will going hay I will to go.
+
+  - key: en:item:will-prediction
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: will (dự đoán, ý kiến về tương lai)
+      ipa: /wɪl/
+      pos: trợ động từ
+    back:
+      meaning:
+        vi: "sẽ - đoán điều xảy ra trong tương lai theo ý kiến riêng, hay đi với I think, probably: I think you'll love Hoi An."
+      examples:
+        - target: I think it will be a great trip.
+          translation:
+            vi: Tôi nghĩ đó sẽ là một chuyến đi tuyệt vời.
+      confusion:
+        vi: Phủ định là will not hoặc won't. Nói I don't think it will rain, tự nhiên hơn I think it won't rain.
+
+  - key: en:item:wont
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: won't
+      ipa: UK /wəʊnt/ · US /woʊnt/
+      pos: dạng rút gọn (will not)
+    back:
+      meaning:
+        vi: sẽ không
+      examples:
+        - target: Don't worry, it won't take long.
+          translation:
+            vi: Đừng lo, sẽ không lâu đâu.
+      pronunciation_note:
+        vi: Won't /wəʊnt/ có âm "âu", khác want /wɒnt/ (muốn). Đọc nhầm sẽ thành "tôi muốn" thay vì "tôi sẽ không".
+      confusion:
+        vi: Won't là will not, không phải "willn't".
+
+  - key: en:item:present-continuous-future
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: hiện tại tiếp diễn chỉ lịch hẹn (I'm meeting Lan tomorrow)
+      pos: cấu trúc tương lai
+    back:
+      meaning:
+        vi: "be + V-ing + mốc thời gian tương lai: nói về việc đã hẹn, đã sắp xếp với người khác hoặc đã đặt vé."
+      examples:
+        - target: I'm meeting Lan at the café tomorrow.
+          translation:
+            vi: Mai tôi hẹn gặp Lan ở quán cà phê.
+        - target: We're flying to Hanoi on Friday.
+          translation:
+            vi: Thứ Sáu chúng tôi bay ra Hà Nội (đã đặt vé).
+      confusion:
+        vi: Phải có mốc thời gian tương lai (tomorrow, on Friday), nếu không người nghe hiểu là đang làm ngay bây giờ. Tiếng Việt nói "Mai tôi gặp Lan" không cần be, nhưng tiếng Anh cần am meeting.
+
+  - key: en:item:probably
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: probably
+      ipa: UK /ˈprɒbəbli/ · US /ˈprɑːbəbli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có lẽ, chắc là
+      examples:
+        - target: It will probably be hot in Nha Trang.
+          translation:
+            vi: Ở Nha Trang có lẽ sẽ nóng.
+      confusion:
+        vi: Probably đứng sau will (will probably be) nhưng đứng trước won't (probably won't come).
+
+  - key: en:item:shall-i
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Shall I…?
+      ipa: /ʃæl aɪ/
+      pos: câu đề nghị
+    back:
+      meaning:
+        vi: Để tôi… nhé? (hỏi xem người kia có muốn mình giúp không)
+      examples:
+        - target: Shall I book the tickets?
+          translation:
+            vi: Để tôi đặt vé nhé?
+      confusion:
+        vi: Đề nghị giúp dạng câu hỏi dùng Shall I…?, không dùng Will I…? (Will I…? là hỏi chuyện tương lai của chính mình).
+
+  - key: en:item:are-you-free
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Are you free on…?
+      ipa: UK /ɑː juː friː/ · US /ɑːr juː friː/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bạn có rảnh vào… không?
+      examples:
+        - target: Are you free on Saturday evening?
+          translation:
+            vi: Tối thứ Bảy bạn có rảnh không?
+      confusion:
+        vi: Free ở đây là "rảnh", không phải "miễn phí". Đừng bỏ are - Are you free?, không nói You free?
+
+  - key: en:item:appointment
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: appointment
+      ipa: /əˈpɔɪntmənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc hẹn (với bác sĩ, nha sĩ, công việc)
+      examples:
+        - target: I have a dentist appointment on Monday morning.
+          translation:
+            vi: Sáng thứ Hai tôi có hẹn với nha sĩ.
+      confusion:
+        vi: Hẹn chính thức (bác sĩ, ngân hàng) là appointment; hẹn hò yêu đương là date.
+
+  - key: en:item:pick-up
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: pick (someone) up
+      ipa: /pɪk ʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đón ai (bằng xe)
+      examples:
+        - target: I'll pick you up at the airport.
+          translation:
+            vi: Tôi sẽ ra sân bay đón bạn.
+      confusion:
+        vi: Khi người được đón là đại từ, đặt nó ở giữa - pick you up, không nói pick up you.
+
+  - key: en:item:invite
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: invite
+      ipa: /ɪnˈvaɪt/
+      pos: động từ
+    back:
+      meaning:
+        vi: mời
+      examples:
+        - target: Lan is inviting some friends to her birthday party on Sunday.
+          translation:
+            vi: Chủ nhật Lan mời vài người bạn đến dự tiệc sinh nhật.
+      pronunciation_note:
+        vi: Nhấn âm sau - in-VITE.
+      confusion:
+        vi: Invite someone to + sự kiện (invite you to the party). Danh từ "lời mời" là invitation.
+
+  - key: en:item:definitely
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: definitely
+      ipa: /ˈdefɪnətli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: chắc chắn
+      examples:
+        - target: I'll definitely call you when I arrive.
+          translation:
+            vi: Khi đến nơi tôi chắc chắn sẽ gọi cho bạn.
+      confusion:
+        vi: Giống probably, definitely đứng sau will và trước won't - I definitely won't be late.
+
+  # ---------------- Bài 3: khách sạn, sân bay, vé tàu xe ----------------
+  - key: en:item:book-verb
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: book
+      ipa: /bʊk/
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt trước (phòng, vé, bàn)
+      examples:
+        - target: I'd like to book a room for two nights.
+          translation:
+            vi: Tôi muốn đặt một phòng trong hai đêm.
+      confusion:
+        vi: Book ở đây là động từ "đặt", không phải danh từ "quyển sách". Nói book a room, không nói book for a room.
+
+  - key: en:item:single-double-room
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: single room / double room
+      ipa: /ˈsɪŋɡl ruːm/ · /ˈdʌbl ruːm/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: phòng đơn (một người) / phòng đôi (một giường lớn cho hai người)
+      examples:
+        - target: Do you have a double room for Friday night?
+          translation:
+            vi: Tối thứ Sáu khách sạn còn phòng đôi không?
+      confusion:
+        vi: Phòng có hai giường đơn riêng gọi là twin room; double room là một giường đôi.
+
+  - key: en:item:reservation
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: reservation
+      ipa: UK /ˌrezəˈveɪʃn/ · US /ˌrezɚˈveɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đặt chỗ trước (phòng, bàn, vé)
+      examples:
+        - target: I have a reservation under the name Tran.
+          translation:
+            vi: Tôi có đặt phòng trước, tên Trần.
+      pronunciation_note:
+        vi: Nhấn vào âm "vei" - re-ser-VA-tion.
+      confusion:
+        vi: Nói have a reservation hoặc make a reservation, không nói do a reservation.
+
+  - key: en:item:how-much-per-night
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: How much is it per night?
+      ipa: UK /haʊ mʌtʃ ɪz ɪt pə naɪt/ · US /haʊ mʌtʃ ɪz ɪt pɚ naɪt/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Bao nhiêu tiền một đêm?
+      examples:
+        - target: How much is it per night, with breakfast?
+          translation:
+            vi: Một đêm bao nhiêu tiền, có kèm bữa sáng không?
+      confusion:
+        vi: Per night = "mỗi đêm". Cũng có thể nói a night - It's 50 dollars a night.
+
+  - key: en:item:check-in
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: check in / check-in
+      ipa: /ˌtʃek ˈɪn/
+      pos: cụm động từ / danh từ
+    back:
+      meaning:
+        vi: làm thủ tục nhận phòng (khách sạn) hoặc làm thủ tục lên máy bay
+      examples:
+        - target: You can check in at the hotel after two o'clock.
+          translation:
+            vi: Bạn có thể nhận phòng khách sạn sau hai giờ.
+        - target: Where is the check-in desk for Vietnam Airlines?
+          translation:
+            vi: Quầy làm thủ tục của Vietnam Airlines ở đâu?
+      confusion:
+        vi: Động từ viết rời (check in), danh từ thường có gạch nối (the check-in desk). Trả phòng là check out.
+
+  - key: en:item:check-out
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: check out / check-out
+      ipa: /ˌtʃek ˈaʊt/
+      pos: cụm động từ / danh từ
+    back:
+      meaning:
+        vi: trả phòng (khách sạn)
+      examples:
+        - target: What time is check-out?
+          translation:
+            vi: Mấy giờ phải trả phòng?
+      confusion:
+        vi: Check out of the hotel là rời khách sạn; check in là lúc mới đến.
+
+  - key: en:item:passport
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: passport
+      ipa: UK /ˈpɑːspɔːt/ · US /ˈpæspɔːrt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộ chiếu
+      examples:
+        - target: Can I see your passport, please?
+          translation:
+            vi: Cho tôi xem hộ chiếu của bạn được không?
+      pronunciation_note:
+        vi: Nhấn âm đầu - PASS-port.
+
+  - key: en:item:boarding-pass
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: boarding pass
+      ipa: UK /ˈbɔːdɪŋ pɑːs/ · US /ˈbɔːrdɪŋ pæs/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: thẻ lên máy bay
+      examples:
+        - target: Here is your boarding pass. Your seat is 14A.
+          translation:
+            vi: Đây là thẻ lên máy bay của anh. Ghế của anh là 14A.
+      confusion:
+        vi: Boarding pass là thẻ lên máy bay nhận khi làm thủ tục; ticket là vé bạn mua trước đó.
+
+  - key: en:item:gate
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: gate
+      ipa: /ɡeɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa ra máy bay (ở sân bay); cổng
+      examples:
+        - target: Flight VN245 is boarding at gate 12.
+          translation:
+            vi: Chuyến bay VN245 đang mời hành khách lên máy bay tại cửa 12.
+      confusion:
+        vi: Nói at gate 12 (không cần the trước gate khi có số).
+
+  - key: en:item:flight
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: flight
+      ipa: /flaɪt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến bay
+      examples:
+        - target: My flight leaves at 7 a.m.
+          translation:
+            vi: Chuyến bay của tôi cất cánh lúc 7 giờ sáng.
+      pronunciation_note:
+        vi: Chữ gh câm - đọc /flaɪt/, gần "phlai-t".
+
+  - key: en:item:delayed
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: delayed
+      ipa: /dɪˈleɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị hoãn, bị trễ (chuyến bay, tàu)
+      examples:
+        - target: Our flight is delayed by two hours.
+          translation:
+            vi: Chuyến bay của chúng tôi bị hoãn hai tiếng.
+      confusion:
+        vi: Cần be - The flight is delayed. Người Việt hay nói "chuyến bay bị delay" và quên is. Bị huỷ hẳn là cancelled.
+
+  - key: en:item:single-return-ticket
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: single ticket / return ticket
+      ipa: /ˈsɪŋɡl ˈtɪkɪt/ · UK /rɪˈtɜːn/ · US /rɪˈtɝːn/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: vé một chiều / vé khứ hồi (Anh-Anh; Anh-Mỹ nói one-way / round-trip)
+      examples:
+        - target: A return ticket to Hue, please.
+          translation:
+            vi: Cho tôi một vé khứ hồi đi Huế.
+      confusion:
+        vi: Return ticket là vé khứ hồi (đi và về), không phải vé "chiều về".
+
+  - key: en:item:platform
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: platform
+      ipa: UK /ˈplætfɔːm/ · US /ˈplætfɔːrm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân ga, đường ray chờ tàu (số mấy)
+      examples:
+        - target: The train to Hanoi leaves from platform 3.
+          translation:
+            vi: Tàu đi Hà Nội chạy từ sân ga số 3.
+      confusion:
+        vi: Nói from platform 3 hoặc on platform 3, không cần the.
+
+  - key: en:item:luggage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: luggage
+      ipa: /ˈlʌɡɪdʒ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: hành lý
+      examples:
+        - target: How much luggage do you have?
+          translation:
+            vi: Bạn có bao nhiêu hành lý?
+      confusion:
+        vi: Luggage không đếm được - không nói a luggage hay luggages. Muốn đếm, nói a bag, two suitcases.
+
+  # ---------------- Bài 4: thời tiết, so sánh hơn, so sánh nhất ----------------
+  - key: en:item:weather
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: weather
+      ipa: UK /ˈweðə/ · US /ˈweðɚ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: thời tiết
+      examples:
+        - target: What's the weather like in Da Lat?
+          translation:
+            vi: Thời tiết ở Đà Lạt thế nào?
+      pronunciation_note:
+        vi: Âm th là /ð/ - đặt đầu lưỡi giữa hai hàm răng, rung cổ họng; đừng đọc thành "đe-thơ" hay "ve-dơ".
+      confusion:
+        vi: Hỏi thời tiết dùng What's the weather like?, không nói How is the weather like? Không nói a weather.
+
+  - key: en:item:sunny-rainy
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sunny / rainy / cloudy / windy
+      ipa: /ˈsʌni/ · /ˈreɪni/ · /ˈklaʊdi/ · /ˈwɪndi/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nắng / mưa / nhiều mây / nhiều gió
+      examples:
+        - target: It's sunny today, but it's going to be windy tomorrow.
+          translation:
+            vi: Hôm nay trời nắng, nhưng mai trời sẽ có gió.
+      confusion:
+        vi: Danh từ + y thành tính từ (sun → sunny, rain → rainy). Nhớ có It is - It's rainy, không nói Rainy hay It rainy.
+
+  - key: en:item:rain
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: rain
+      ipa: /reɪn/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: mưa (trời mưa)
+      examples:
+        - target: Look at those clouds! It's going to rain.
+          translation:
+            vi: Nhìn mây kìa! Trời sắp mưa rồi.
+        - target: It's raining in Hanoi now.
+          translation:
+            vi: Ở Hà Nội đang mưa.
+      confusion:
+        vi: Tiếng Anh cần chủ ngữ giả it - It's raining, không nói Raining hay Is raining.
+
+  - key: en:item:warm-cool
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: warm / cool
+      ipa: UK /wɔːm/ · US /wɔːrm/ · /kuːl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ấm / mát
+      examples:
+        - target: Da Lat is cool all year.
+          translation:
+            vi: Đà Lạt mát quanh năm.
+      confusion:
+        vi: Thang nhiệt độ - cold (lạnh), cool (mát), warm (ấm), hot (nóng). Warm đọc /wɔːm/, gần "quom", không đọc "quam".
+
+  - key: en:item:forecast
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: weather forecast
+      ipa: UK /ˈfɔːkɑːst/ · US /ˈfɔːrkæst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự báo thời tiết
+      examples:
+        - target: The forecast says it's going to be sunny at the weekend.
+          translation:
+            vi: Dự báo nói cuối tuần trời sẽ nắng.
+      pronunciation_note:
+        vi: Nhấn âm đầu - FORE-cast.
+
+  - key: en:item:degrees
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: degrees
+      ipa: /dɪˈɡriːz/
+      pos: danh từ
+    back:
+      meaning:
+        vi: độ (nhiệt độ)
+      examples:
+        - target: It's going to be 35 degrees in Saigon tomorrow.
+          translation:
+            vi: Mai ở Sài Gòn sẽ nóng 35 độ.
+      confusion:
+        vi: Từ hai độ trở lên dùng số nhiều degrees. Nói It's 35 degrees, không nói It has 35 degrees.
+
+  - key: en:item:comparative-er
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: so sánh hơn với tính từ ngắn (cheap → cheaper than)
+      pos: cấu trúc so sánh
+    back:
+      meaning:
+        vi: "Tính từ một âm tiết (và hai âm tiết tận cùng -y) thêm -er + than: cheaper than, hotter than, easier than."
+      examples:
+        - target: The train is cheaper than the plane.
+          translation:
+            vi: Đi tàu rẻ hơn đi máy bay.
+        - target: Nha Trang is hotter than Da Lat.
+          translation:
+            vi: Nha Trang nóng hơn Đà Lạt.
+      confusion:
+        vi: Đã có -er thì không thêm more - nói cheaper, không nói more cheaper. Phụ âm cuối sau một nguyên âm được gấp đôi (hot → hotter, big → bigger); -y đổi thành -ier (easy → easier).
+
+  - key: en:item:comparative-more
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: so sánh hơn với tính từ dài (more comfortable than)
+      pos: cấu trúc so sánh
+    back:
+      meaning:
+        vi: "Tính từ từ hai âm tiết trở lên (không tận cùng -y) dùng more + tính từ + than: more comfortable than, more beautiful than."
+      examples:
+        - target: The sleeper bus is more comfortable than the normal bus.
+          translation:
+            vi: Xe giường nằm thoải mái hơn xe thường.
+      confusion:
+        vi: Không vừa more vừa -er. Ngược lại, tính từ dài không thêm -er - không nói comfortabler.
+
+  - key: en:item:superlative
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: so sánh nhất (the cheapest, the most beautiful)
+      pos: cấu trúc so sánh
+    back:
+      meaning:
+        vi: "the + tính từ ngắn + -est, hoặc the most + tính từ dài: the cheapest, the most beautiful (… nhất)."
+      examples:
+        - target: Ha Long Bay is the most beautiful place I know.
+          translation:
+            vi: Vịnh Hạ Long là nơi đẹp nhất mà tôi biết.
+        - target: This is the cheapest hotel in town.
+          translation:
+            vi: Đây là khách sạn rẻ nhất thị trấn.
+      confusion:
+        vi: Không quên the - the cheapest, không nói cheapest hotel in town. "Nhất ở đâu" dùng in (in Vietnam, in town).
+
+  - key: en:item:good-better-best
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: good → better → the best · bad → worse → the worst
+      ipa: UK /ˈbetə/ · US /ˈbetɚ/ · /best/ · UK /wɜːs/ · US /wɝːs/
+      pos: so sánh bất quy tắc
+    back:
+      meaning:
+        vi: tốt hơn → tốt nhất; tệ hơn → tệ nhất (dạng đặc biệt, không thêm -er hay more)
+      examples:
+        - target: The food in Hue is better than here.
+          translation:
+            vi: Đồ ăn ở Huế ngon hơn ở đây.
+        - target: This is the best beach in Vietnam.
+          translation:
+            vi: Đây là bãi biển đẹp nhất Việt Nam.
+      confusion:
+        vi: Không nói gooder, more good hay the most good. Chỉ dùng better và the best.
+
+  - key: en:item:than
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: than
+      ipa: /ðæn/ · dạng yếu /ðən/
+      pos: liên từ
+    back:
+      meaning:
+        vi: hơn (dùng sau tính từ so sánh để nối với vật được so sánh)
+      examples:
+        - target: The bus is slower than the train.
+          translation:
+            vi: Xe buýt chậm hơn tàu hoả.
+      confusion:
+        vi: Than (hơn) khác then (sau đó). Không dùng that hay with sau so sánh - cheaper than, không nói cheaper that.
+
+  - key: en:item:comfortable
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: comfortable
+      ipa: UK /ˈkʌmftəbl/ · US /ˈkʌmftɚbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thoải mái, tiện nghi
+      examples:
+        - target: The beds in this hotel are very comfortable.
+          translation:
+            vi: Giường ở khách sạn này rất êm.
+      pronunciation_note:
+        vi: Nhấn âm đầu và đọc ba âm tiết - KUMF-tə-bl; chữ or gần như không đọc.
+
+  - key: en:item:beach
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: beach
+      ipa: /biːtʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bãi biển
+      examples:
+        - target: Let's go to the beach this afternoon.
+          translation:
+            vi: Chiều nay mình ra biển đi.
+      pronunciation_note:
+        vi: Nguyên âm /iː/ phải kéo dài như "bii-ch". Nếu đọc ngắn thành /ɪ/, người nghe có thể hiểu sang một từ thô tục.

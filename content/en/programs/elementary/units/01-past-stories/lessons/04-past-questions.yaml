@@ -1,0 +1,432 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:past-questions
+order_index: 4
+level: a2
+title:
+  vi: Cuối tuần của bạn thế nào? - didn't, Did…?, Wh- + did
+objectives:
+  - vi: Nói phủ định quá khứ với didn't + động từ nguyên mẫu (không nói "didn't went").
+  - vi: Hỏi Có/Không với Did…? và trả lời ngắn Yes, I did / No, I didn't.
+  - vi: Hỏi thông tin với What/Where/When/Who + did… và How was…?
+  - vi: Hỏi và kể về cuối tuần của mình một cách tự nhiên.
+estimated_minutes: 15
+skills: [grammar, speaking, listening]
+prerequisites: [en:lesson:past-irregular]
+items:
+  - item: en:item:past-negative-didnt
+  - item: en:item:past-question-did
+  - item: en:item:past-wh-did
+  - item: en:item:short-answer-did
+  - item: en:item:how-was-your-weekend
+  - item: en:item:had-a-great-time
+  - item: en:item:nothing-special
+  - item: en:item:relaxed
+  - item: en:item:fun
+  - item: en:item:all-day
+  - item: en:item:went
+    role: reuse
+  - item: en:item:be-past-negative
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Cuối tuần bạn đi đâu? Có vui không?" và trả lời "Mình không đi đâu cả, chỉ ở nhà nghỉ ngơi" bằng tiếng Anh, không mắc lỗi "didn't went" hay "Did you went".
+  - type: explain
+    text:
+      vi: Để phủ định một việc đã qua, dùng didn't (did not) + động từ nguyên mẫu - I didn't go, she didn't buy. Did đã mang dấu hiệu quá khứ, nên động từ sau nó trở về dạng gốc.
+  - type: explain
+    text:
+      vi: Câu hỏi Có/Không đưa did lên đầu - Did you go? Did she buy it? Trả lời ngắn bằng Yes, I did. / No, I didn't., không lặp lại động từ chính.
+  - type: explain
+    text:
+      vi: Tiếng Việt để từ hỏi ở cuối hoặc giữa câu (Bạn đi đâu?), còn tiếng Anh đặt từ hỏi lên đầu, rồi did, rồi chủ ngữ và động từ nguyên mẫu - Where did you go? What did you eat?
+  - type: explain
+    text:
+      vi: Hỏi về cảm nhận (vui không, thế nào) dùng How was…? với be, không dùng did - How was your weekend? How was the film? Câu với be (was/were) không bao giờ đi cùng did.
+  - type: deep_explain
+    text:
+      vi: Mẹo kiểm tra - trong một câu chỉ đánh dấu quá khứ một lần. Nếu đã có did/didn't thì động từ chính để nguyên; nếu không có did thì động từ chính đổi sang quá khứ (I went, but I didn't go). Khi hỏi về chủ ngữ (Who went with you?), tiếng Anh không dùng did - đây là ngoại lệ bạn sẽ gặp thêm ở bài sau.
+  - type: example
+    target: "How was your weekend? - It was great. I had a lot of fun."
+    target_lang: en
+    translation:
+      vi: "Cuối tuần của bạn thế nào? - Tuyệt lắm. Mình chơi rất vui."
+    note:
+      vi: How was hỏi về cảm nhận nên dùng was, không dùng did.
+  - type: example
+    target: "Did you go out on Saturday? - No, I didn't. It rained all day."
+    target_lang: en
+    translation:
+      vi: "Thứ Bảy bạn có đi chơi không? - Không. Trời mưa cả ngày."
+    note:
+      vi: Did + go (nguyên mẫu); trả lời ngắn No, I didn't.
+  - type: example
+    target: "Where did you go? - We went to Ha Long Bay."
+    target_lang: en
+    translation:
+      vi: "Bạn đã đi đâu? - Chúng mình đi vịnh Hạ Long."
+    note:
+      vi: Câu hỏi dùng did + go; câu trả lời không có did nên dùng went.
+  - type: example
+    target: "What did you do yesterday? - Nothing special. I just relaxed at home."
+    target_lang: en
+    translation:
+      vi: "Hôm qua bạn làm gì? - Không có gì đặc biệt. Mình chỉ ở nhà nghỉ ngơi."
+    note:
+      vi: Do xuất hiện hai lần - did là trợ động từ, do là động từ chính "làm".
+  - type: common_mistake
+    wrong: I didn't went to school yesterday.
+    right: I didn't go to school yesterday.
+    target_lang: en
+    note:
+      vi: Đã có didn't thì động từ chính để nguyên mẫu. Quá khứ chỉ đánh dấu một lần.
+  - type: common_mistake
+    wrong: Did you went to the party?
+    right: Did you go to the party?
+    target_lang: en
+    note:
+      vi: Did ở đầu câu đã cho biết quá khứ, nên dùng go, không dùng went.
+  - type: common_mistake
+    wrong: Where you went last weekend?
+    right: Where did you go last weekend?
+    target_lang: en
+    note:
+      vi: Câu hỏi Wh- cần did sau từ để hỏi; người Việt hay bỏ did vì tiếng Việt chỉ cần thêm "đâu".
+  - type: summary
+    points:
+      - vi: Phủ định - didn't + động từ nguyên mẫu (I didn't go).
+      - vi: Câu hỏi - Did + chủ ngữ + động từ nguyên mẫu? Trả lời Yes, I did / No, I didn't.
+      - vi: Từ để hỏi + did + chủ ngữ + động từ nguyên mẫu - Where did you go?
+      - vi: Cảm nhận - How was…? (dùng be, không dùng did).
+      - vi: Một câu chỉ đánh dấu quá khứ một lần - did hoặc động từ quá khứ, không cả hai.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:past-questions-mcq-didnt
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:past-negative-didnt
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: I didn't ___ to the party last night."
+      stem_lang: vi
+      options:
+        - { id: r8a, text: go, lang: en }
+        - { id: k2m, text: went, lang: en }
+        - { id: u6s, text: goes, lang: en }
+        - { id: b3z, text: going, lang: en }
+    answer:
+      correct_option_id: r8a
+    explanation:
+      vi: Sau didn't, động từ ở dạng nguyên mẫu - go. Didn't đã mang nghĩa quá khứ nên không dùng went.
+    display_answer: go
+
+  - key: en:exercise:past-questions-mcq-did
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-question-did
+    prompt:
+      stem: "Câu hỏi nào đúng để hỏi \"Bạn có xem pháo hoa không?\" (tối qua)"
+      stem_lang: vi
+      options:
+        - { id: c9v, text: Did you see the fireworks?, lang: en }
+        - { id: x2l, text: Did you saw the fireworks?, lang: en }
+        - { id: g7p, text: Were you see the fireworks?, lang: en }
+        - { id: n4e, text: You saw the fireworks did?, lang: en }
+    answer:
+      correct_option_id: c9v
+    explanation:
+      vi: Câu hỏi quá khứ - Did + chủ ngữ + động từ nguyên mẫu (see). Did you saw đánh dấu quá khứ hai lần; were không đi với động từ nguyên mẫu.
+    display_answer: Did you see the fireworks?
+
+  - key: en:exercise:past-questions-listen-where
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:past-wh-did
+    prompt:
+      audio_asset_id: null
+      fallback_text: Where did you go last weekend?
+      options:
+        - { id: f1t, text: Cuối tuần trước bạn đã đi đâu?, lang: vi }
+        - { id: w5r, text: Cuối tuần này bạn sẽ đi đâu?, lang: vi }
+        - { id: z8k, text: Cuối tuần trước bạn đã làm gì?, lang: vi }
+        - { id: e3h, text: Cuối tuần trước bạn đi với ai?, lang: vi }
+    answer:
+      correct_option_id: f1t
+    explanation:
+      vi: Where là "ở đâu", did + go là "đã đi", last weekend là "cuối tuần trước". "Làm gì" sẽ là What did you do.
+    display_answer: Cuối tuần trước bạn đã đi đâu?
+
+  - key: en:exercise:past-questions-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:short-answer-did
+    prompt:
+      template: "A: {{b1}} you have a good weekend? B: Yes, I {{b2}}. It was really fun."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: A: Cuối tuần của bạn vui không? B: Có. Vui lắm."
+        - "Gợi ý: câu hỏi có động từ have (nguyên mẫu) nên cần trợ động từ quá khứ; câu trả lời ngắn lặp lại trợ động từ đó."
+    answer:
+      blanks:
+        b1: [Did]
+        b2: [did]
+    known_wrong:
+      - answer: Were
+        feedback_vi: Câu có động từ chính have nên dùng Did, không dùng be.
+        error_tag: be_with_verb
+      - answer: was
+        feedback_vi: Câu hỏi dùng did thì câu trả lời ngắn cũng dùng did - Yes, I did.
+        error_tag: be_with_verb
+      - answer: Do
+        feedback_vi: Cuối tuần đã qua nên dùng Did, không dùng Do.
+        error_tag: tense_present
+      - answer: had
+        feedback_vi: Trả lời ngắn chỉ cần trợ động từ - Yes, I did.
+        error_tag: short_answer
+    explanation:
+      vi: Hỏi về việc đã qua với động từ thường (have) - Did you have…? Trả lời ngắn lặp lại did - Yes, I did.
+    display_answer: "A: Did you have a good weekend? B: Yes, I did. It was really fun."
+
+  - key: en:exercise:past-questions-order-dinner
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-wh-did
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Bữa tối bạn đã ăn gì?\""
+      tokens:
+        - { id: d-eat, text: eat }
+        - { id: d-for, text: for }
+        - { id: d-you, text: you }
+        - { id: d-ate, text: ate }
+        - { id: d-dinner, text: dinner }
+        - { id: d-what, text: What }
+        - { id: d-were, text: were }
+        - { id: d-did, text: did }
+    answer:
+      orders:
+        - [d-what, d-did, d-you, d-eat, d-for, d-dinner]
+    explanation:
+      vi: Từ để hỏi What đứng đầu, sau đó did, chủ ngữ you và động từ nguyên mẫu eat. Không dùng ate vì did đã cho biết quá khứ.
+    display_answer: What did you eat for dinner?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:past-questions-fill-negative
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:all-day
+    prompt:
+      template: "We {{b1}} (not / go) out last night. It rained {{b2}} day, so we {{b3}} (relax) at home."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: ["didn't go", did not go]
+        b2: [all]
+        b3: [relaxed]
+    known_wrong:
+      - answer: "didn't went"
+        feedback_vi: Sau didn't dùng động từ nguyên mẫu - didn't go.
+        error_tag: didnt_past_verb
+      - answer: "don't go"
+        feedback_vi: Chuyện xảy ra tối qua nên dùng didn't, không dùng don't.
+        error_tag: tense_present
+      - answer: "wasn't go"
+        feedback_vi: Phủ định động từ thường dùng didn't, không dùng wasn't.
+        error_tag: be_with_verb
+      - answer: not went
+        feedback_vi: Tiếng Anh cần trợ động từ - didn't go.
+        error_tag: didnt_past_verb
+      - answer: relax
+        feedback_vi: Việc đã xảy ra nên thêm -ed - relaxed.
+        error_tag: no_past_marking
+      - answer: the
+        feedback_vi: "\"Cả ngày\" là all day, không dùng the."
+        error_tag: all_day
+    explanation:
+      vi: Phủ định quá khứ - didn't + go. "Cả ngày" là all day. Relax là động từ có quy tắc - relaxed.
+    display_answer: We didn't go out last night. It rained all day, so we relaxed at home.
+
+  - key: en:exercise:past-questions-translate-monday
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-negative-didnt
+    prompt:
+      source_text: Thứ Hai vừa rồi tôi không đi làm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I didn't go to work on Monday.
+        - I did not go to work on Monday.
+        - I didn't go to work last Monday.
+        - On Monday I didn't go to work.
+        - On Monday, I didn't go to work.
+        - Last Monday I didn't go to work.
+        - I didn't work on Monday.
+        - I didn't work last Monday.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I didn't went to work on Monday.
+        feedback_vi: Sau didn't dùng động từ nguyên mẫu - didn't go.
+        error_tag: didnt_past_verb
+      - answer: I not go to work on Monday.
+        feedback_vi: Thiếu trợ động từ - I didn't go.
+        error_tag: missing_auxiliary
+      - answer: I don't go to work on Monday.
+        feedback_vi: Thứ Hai vừa rồi là quá khứ nên dùng didn't.
+        error_tag: tense_present
+      - answer: I wasn't go to work on Monday.
+        feedback_vi: Phủ định động từ thường dùng didn't, không dùng wasn't.
+        error_tag: be_with_verb
+    explanation:
+      vi: Phủ định quá khứ - didn't + động từ nguyên mẫu go. Ngày trong tuần dùng on (on Monday), hoặc last Monday không có giới từ.
+    display_answer: I didn't go to work on Monday.
+
+  - key: en:exercise:past-questions-translate-where
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-wh-did
+    prompt:
+      source_text: Cuối tuần trước bạn đã đi đâu?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Where did you go last weekend?
+        - Last weekend, where did you go?
+        - Where did you go at the weekend?
+        - Where did you go on the weekend?
+        - Where did you go over the weekend?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Where you went last weekend?
+        feedback_vi: Câu hỏi Wh- cần did - Where did you go?
+        error_tag: missing_auxiliary
+      - answer: Where did you went last weekend?
+        feedback_vi: Sau did dùng động từ nguyên mẫu - go.
+        error_tag: didnt_past_verb
+      - answer: Where were you go last weekend?
+        feedback_vi: Were không đi với động từ nguyên mẫu; dùng did - Where did you go?
+        error_tag: be_with_verb
+      - answer: You went where last weekend?
+        feedback_vi: Từ để hỏi đặt ở đầu câu, theo sau là did - Where did you go?
+        error_tag: question_word_order
+    explanation:
+      vi: Thứ tự câu hỏi - Where + did + you + go. Tiếng Việt để "đâu" ở cuối, tiếng Anh đưa where lên đầu.
+    display_answer: Where did you go last weekend?
+
+  # ---------------- application ----------------
+  - key: en:exercise:past-questions-translate-nothing
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:nothing-special
+    prompt:
+      source_text: Nothing special. I didn't go out; I just relaxed at home.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không có gì đặc biệt. Mình không đi đâu cả, chỉ ở nhà nghỉ ngơi.
+        - Không có gì đặc biệt. Tôi không ra ngoài, chỉ ở nhà nghỉ ngơi.
+        - Không có gì đặc biệt. Mình không đi chơi, chỉ ở nhà thư giãn.
+        - Không có gì đặc biệt cả. Tôi không đi đâu, chỉ nghỉ ngơi ở nhà.
+        - Không có gì đặc biệt. Tôi không đi ra ngoài, tôi chỉ ở nhà nghỉ ngơi.
+        - Không có gì đặc biệt. Mình không ra ngoài, mình chỉ nghỉ ngơi ở nhà thôi.
+        - Không có gì đặc biệt. Tôi không đi chơi, chỉ thư giãn ở nhà.
+        - Chẳng có gì đặc biệt. Mình không đi đâu, chỉ ở nhà nghỉ ngơi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không có gì đặc biệt. Mình đã đi chơi và nghỉ ngơi ở nhà.
+        feedback_vi: Didn't go out là phủ định - "không đi đâu, không ra ngoài".
+        error_tag: negation_missed
+    explanation:
+      vi: Nothing special là "không có gì đặc biệt"; didn't go out là "không ra ngoài/không đi chơi"; just relaxed at home là "chỉ ở nhà nghỉ ngơi".
+    display_answer: Không có gì đặc biệt. Mình không đi đâu cả, chỉ ở nhà nghỉ ngơi.
+
+  - key: en:exercise:past-questions-mcq-concert
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:short-answer-did
+    prompt:
+      stem: "Đồng nghiệp hỏi: \"Did you go to the concert on Friday?\" Bạn đã đi và rất vui. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: h6o, text: "Yes, I did. I had a great time.", lang: en }
+        - { id: j3c, text: "Yes, I went. I have a great time.", lang: en }
+        - { id: q9w, text: "Yes, I was. I had a great time.", lang: en }
+        - { id: m5y, text: "Yes, I did. It was very funny.", lang: en }
+    answer:
+      correct_option_id: h6o
+    explanation:
+      vi: Câu hỏi dùng Did nên trả lời ngắn Yes, I did; had a great time là "đã chơi rất vui". Yes, I was sai vì câu hỏi không dùng be; funny là "buồn cười", không phải "vui".
+    display_answer: "Yes, I did. I had a great time."
+
+  - key: en:exercise:past-questions-translate-fun
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:had-a-great-time
+    prompt:
+      source_text: Chúng tôi không mua gì cả, nhưng chúng tôi đã chơi rất vui.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We didn't buy anything, but we had a great time.
+        - We did not buy anything, but we had a great time.
+        - We didn't buy anything, but we had a good time.
+        - We didn't buy anything, but we had a lot of fun.
+        - We didn't buy anything, but we had fun.
+        - We didn't buy anything, but we had a really good time.
+        - We bought nothing, but we had a great time.
+        - We didn't buy anything but we had a great time.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We didn't bought anything, but we had a great time.
+        feedback_vi: Sau didn't dùng động từ nguyên mẫu - didn't buy.
+        error_tag: didnt_past_verb
+      - answer: We didn't buy nothing, but we had a great time.
+        feedback_vi: Didn't đã phủ định, nên dùng anything, không dùng nothing.
+        error_tag: double_negative
+      - answer: We don't buy anything, but we had a great time.
+        feedback_vi: Chuyện đã xảy ra nên dùng didn't.
+        error_tag: tense_present
+      - answer: We didn't buy anything, but we played very happy.
+        feedback_vi: "\"Chơi rất vui\" là had a great time hoặc had a lot of fun, không dịch từng chữ."
+        error_tag: literal_translation
+    explanation:
+      vi: Didn't + buy + anything là "không mua gì cả". "Chơi rất vui" tự nhiên nhất là had a great time/had a lot of fun.
+    display_answer: We didn't buy anything, but we had a great time.

@@ -1,0 +1,444 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:when-did-you
+order_index: 2
+level: b1
+title:
+  vi: Đã từng hay đã làm lúc nào?
+objectives:
+  - vi: Chọn đúng giữa hiện tại hoàn thành (trải nghiệm) và quá khứ đơn (thời điểm cụ thể).
+  - vi: Nhận ra các mốc thời gian đã kết thúc (yesterday, last year, ago, in 2019) luôn đi với quá khứ đơn.
+  - vi: Kể một kỷ niệm du lịch theo trình tự - mở đầu bằng present perfect, kể chi tiết bằng quá khứ đơn.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [en:lesson:have-you-ever]
+items:
+  - item: en:item:pp-vs-past-simple
+  - item: en:item:finished-time-expressions
+  - item: en:item:so-far
+  - item: en:item:recently
+  - item: en:item:memory
+  - item: en:item:trip-journey
+  - item: en:item:what-was-it-like
+  - item: en:item:get-lost
+  - item: en:item:miss-a-flight
+  - item: en:item:breathtaking
+  - item: en:item:present-perfect-experience
+    role: reuse
+  - item: en:item:irregular-past-participles
+    role: reuse
+  - item: en:item:been-vs-gone
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "Mình từng đến Nhật. Mình đi hồi năm ngoái và đã bị lạc ở Tokyo" với đúng thì cho từng câu.
+  - type: explain
+    text:
+      vi: Present perfect trả lời câu hỏi "đã từng chưa?" - thời điểm không quan trọng hoặc không biết. Past simple trả lời câu hỏi "khi nào, ở đâu, thế nào?" - sự việc nằm gọn trong một khoảng thời gian đã kết thúc.
+  - type: explain
+    text:
+      vi: Khi câu có mốc thời gian đã kết thúc như yesterday, last week, in 2019, two years ago, when I was a child, bạn bắt buộc dùng past simple. Câu "I have visited Japan last year" là sai, dù tiếng Việt nói "Năm ngoái mình đã đến Nhật".
+  - type: explain
+    text:
+      vi: Một câu chuyện thường mở đầu bằng present perfect để giới thiệu trải nghiệm, rồi chuyển sang past simple để kể chi tiết - Have you ever missed a flight? - Yes, I have. I missed one in 2019. Các từ so far, recently, in my life chỉ khoảng thời gian kéo dài đến bây giờ, nên đi với present perfect.
+  - type: deep_explain
+    text:
+      vi: Chữ "đã" trong tiếng Việt chỉ báo hiệu việc xảy ra trước bây giờ, nên không cho bạn biết phải dùng thì nào. Hãy tự hỏi - câu có (hoặc ngầm có) một thời điểm đã kết thúc không? Có thì dùng past simple; không có, chỉ quan tâm "đã từng / tính đến nay" thì dùng present perfect. Câu hỏi When…? và What time…? luôn dùng past simple - When did you go there?, không hỏi When have you gone there?
+  - type: example
+    target: I've been to Japan. I went there last year and got lost in Tokyo.
+    target_lang: en
+    translation:
+      vi: Mình từng đến Nhật. Mình đi hồi năm ngoái và bị lạc ở Tokyo.
+    note:
+      vi: Câu đầu giới thiệu trải nghiệm (present perfect); câu sau có last year nên dùng past simple.
+  - type: example
+    target: Have you ever missed a flight? - Yes, I missed one in 2019.
+    target_lang: en
+    translation:
+      vi: Bạn đã bao giờ lỡ chuyến bay chưa? - Rồi, mình lỡ một lần hồi năm 2019.
+    note:
+      vi: In 2019 là mốc đã kết thúc nên câu trả lời chuyển sang missed.
+  - type: example
+    target: I've visited ten provinces so far, and I want to see more.
+    target_lang: en
+    translation:
+      vi: Tính đến giờ mình đã đi được mười tỉnh, và mình muốn đi thêm nữa.
+    note:
+      vi: So far kéo dài đến hiện tại nên dùng have visited.
+  - type: example
+    target: You've been to Korea? What was it like?
+    target_lang: en
+    translation:
+      vi: Bạn đi Hàn rồi à? Ở đó thế nào?
+    note:
+      vi: What was it like? hỏi cảm nhận về một trải nghiệm đã qua; like ở đây không phải "thích".
+  - type: common_mistake
+    wrong: I have visited Japan last year.
+    right: I visited Japan last year.
+    target_lang: en
+    note:
+      vi: Last year là mốc đã kết thúc, nên bắt buộc dùng past simple. Present perfect không bao giờ đi với yesterday, last…, ago, in + năm đã qua.
+  - type: common_mistake
+    wrong: When have you gone to Da Lat?
+    right: When did you go to Da Lat?
+    target_lang: en
+    note:
+      vi: Câu hỏi When…? hỏi thời điểm cụ thể, nên dùng past simple với did.
+  - type: common_mistake
+    wrong: I didn't see that film yet.
+    right: I haven't seen that film yet.
+    target_lang: en
+    note:
+      vi: "\"Chưa xem\" tính đến bây giờ là khoảng thời gian chưa kết thúc, nên dùng present perfect. Didn't see chỉ dùng khi nói về một lúc đã qua (I didn't see it yesterday)."
+  - type: summary
+    points:
+      - vi: Present perfect - trải nghiệm, không nêu thời điểm (I've been to Japan).
+      - vi: Past simple - có mốc đã kết thúc (yesterday, last year, ago, in 2019, when I was…).
+      - vi: When…? luôn đi với past simple - When did you go?
+      - vi: So far, recently, in my life - đi với present perfect.
+      - vi: Kể chuyện - mở bằng present perfect, kể chi tiết bằng past simple.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:when-did-you-mcq-last-year
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:finished-time-expressions
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: I ___ Japan last year."
+      stem_lang: vi
+      options:
+        - { id: v3n, text: visited, lang: en }
+        - { id: j8q, text: have visited, lang: en }
+        - { id: o5r, text: have visit, lang: en }
+        - { id: i2m, text: was visit, lang: en }
+    answer:
+      correct_option_id: v3n
+    explanation:
+      vi: Last year là mốc thời gian đã kết thúc, nên dùng past simple - visited. Have visited không đi với last year; have visit và was visit sai cấu trúc.
+    display_answer: visited
+
+  - key: en:exercise:when-did-you-mcq-story
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:pp-vs-past-simple
+    prompt:
+      stem: "Đoạn nào dùng thì đúng?"
+      stem_lang: vi
+      options:
+        - { id: s9u, text: "I've been to Korea. I went there in 2022.", lang: en }
+        - { id: l4g, text: "I've been to Korea. I've gone there in 2022.", lang: en }
+        - { id: f6c, text: "I have been to Korea in 2022.", lang: en }
+        - { id: y2b, text: "I went to Korea. I have been there in 2022.", lang: en }
+    answer:
+      correct_option_id: s9u
+    explanation:
+      vi: Câu đầu giới thiệu trải nghiệm không có thời điểm (present perfect), câu sau có in 2022 nên chuyển sang past simple. Các phương án khác đều ghép present perfect với mốc đã kết thúc in 2022.
+    display_answer: "I've been to Korea. I went there in 2022."
+
+  - key: en:exercise:when-did-you-listen-ago
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:finished-time-expressions
+    prompt:
+      audio_asset_id: null
+      fallback_text: We went to Phu Quoc two years ago.
+      options:
+        - { id: p7a, text: Chúng mình đi Phú Quốc cách đây hai năm., lang: vi }
+        - { id: h3z, text: Chúng mình sống ở Phú Quốc được hai năm rồi., lang: vi }
+        - { id: n9e, text: Hai năm nữa chúng mình sẽ đi Phú Quốc., lang: vi }
+        - { id: c4w, text: Chúng mình đã đi Phú Quốc hai lần., lang: vi }
+    answer:
+      correct_option_id: p7a
+    explanation:
+      vi: Two years ago nghĩa là "cách đây hai năm" - một mốc đã kết thúc, nên câu dùng went. Hai lần là twice, còn "được hai năm rồi" sẽ dùng for two years.
+    display_answer: Chúng mình đi Phú Quốc cách đây hai năm.
+
+  - key: en:exercise:when-did-you-fill-flight
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:miss-a-flight
+    prompt:
+      template: "A: Have you ever {{b1}} a flight? B: Yes, I {{b2}}. I {{b3}} one in 2019."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Bạn đã bao giờ lỡ chuyến bay chưa? - Rồi. Mình lỡ một chuyến hồi 2019."
+        - "Gợi ý: ô 1 là V3 của miss; ô 2 trả lời ngắn cho câu hỏi Have…?; ô 3 có in 2019 nên dùng quá khứ đơn."
+    answer:
+      blanks:
+        b1: [missed]
+        b2: [have]
+        b3: [missed]
+    known_wrong:
+      - answer: did
+        feedback_vi: Câu hỏi bắt đầu bằng Have nên trả lời ngắn là Yes, I have.
+        error_tag: short_answer
+      - answer: have missed
+        feedback_vi: In 2019 là mốc đã kết thúc, nên dùng past simple - missed.
+        error_tag: finished_time
+      - answer: miss
+        feedback_vi: Cần dạng -ed - missed (V3 sau have, V2 với in 2019).
+        error_tag: verb_form
+    explanation:
+      vi: Câu hỏi trải nghiệm dùng have + V3 (missed). Trả lời ngắn lặp lại trợ động từ - Yes, I have. Câu kể chi tiết có in 2019 nên chuyển sang past simple - missed.
+    display_answer: "A: Have you ever missed a flight? B: Yes, I have. I missed one in 2019."
+
+  - key: en:exercise:when-did-you-order-recently
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:recently
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Gần đây bạn có đi đâu thú vị không?\""
+      tokens:
+        - { id: r-recently, text: recently }
+        - { id: r-anywhere, text: anywhere }
+        - { id: r-interesting, text: interesting }
+        - { id: r-been, text: been }
+        - { id: r-have, text: Have }
+        - { id: r-you, text: you }
+        - { id: r-did, text: Did }
+        - { id: r-gone, text: gone }
+    answer:
+      orders:
+        - [r-have, r-you, r-been, r-anywhere, r-interesting, r-recently]
+        - [r-have, r-you, r-recently, r-been, r-anywhere, r-interesting]
+    explanation:
+      vi: Recently chỉ khoảng thời gian kéo dài đến nay nên dùng present perfect - Have you been…? Tính từ đứng sau anywhere - anywhere interesting.
+    display_answer: Have you been anywhere interesting recently?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:when-did-you-fill-so-far
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:so-far
+    prompt:
+      template: "I {{b1}} (visit) ten provinces so far. Last month I {{b2}} (go) to Ha Giang."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [have visited]
+        b2: [went]
+    known_wrong:
+      - answer: visited
+        feedback_vi: So far kéo dài đến hiện tại, nên dùng present perfect - have visited.
+        error_tag: tense_choice
+      - answer: have gone
+        feedback_vi: Last month là mốc đã kết thúc, nên dùng past simple - went.
+        error_tag: finished_time
+      - answer: have been
+        feedback_vi: Last month là mốc đã kết thúc, nên dùng past simple - went.
+        error_tag: finished_time
+      - answer: goed
+        feedback_vi: Go là động từ bất quy tắc - go, went, gone.
+        error_tag: irregular_verb
+    explanation:
+      vi: So far (tính đến giờ) đi với present perfect - have visited. Last month là mốc đã kết thúc nên dùng past simple; V2 của go là went.
+    display_answer: I have visited ten provinces so far. Last month I went to Ha Giang.
+
+  - key: en:exercise:when-did-you-translate-japan
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:finished-time-expressions
+    prompt:
+      source_text: Năm ngoái mình đã đến thăm Nhật Bản.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I visited Japan last year.
+        - Last year I visited Japan.
+        - I went to Japan last year.
+        - Last year I went to Japan.
+        - I travelled to Japan last year.
+        - I traveled to Japan last year.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I have visited Japan last year.
+        feedback_vi: Last year là mốc đã kết thúc - dùng past simple - I visited Japan last year.
+        error_tag: finished_time
+      - answer: I've been to Japan last year.
+        feedback_vi: Present perfect không đi với last year - I went to Japan last year.
+        error_tag: finished_time
+      - answer: Last year I have been to Japan.
+        feedback_vi: Present perfect không đi với last year - Last year I went to Japan.
+        error_tag: finished_time
+      - answer: I visit Japan last year.
+        feedback_vi: Việc đã xảy ra năm ngoái cần past simple - visited.
+        error_tag: verb_form
+    explanation:
+      vi: "\"Đã\" ở đây đi với mốc \"năm ngoái\", một khoảng thời gian đã kết thúc, nên dùng past simple - visited hoặc went to."
+    display_answer: I visited Japan last year.
+
+  - key: en:exercise:when-did-you-translate-lost
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:get-lost
+    prompt:
+      source_text: Bạn đã bao giờ bị lạc ở nước ngoài chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Have you ever got lost abroad?
+        - Have you ever gotten lost abroad?
+        - Have you ever been lost abroad?
+        - Have you ever got lost in another country?
+        - Have you ever gotten lost in another country?
+        - Have you ever got lost in a foreign country?
+        - Have you ever gotten lost in a foreign country?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Did you ever get lost abroad?
+        feedback_vi: Hỏi trải nghiệm không nêu thời điểm dùng Have you ever + V3 - Have you ever got lost abroad?
+        error_tag: did_ever
+      - answer: Have you ever get lost abroad?
+        feedback_vi: Sau have cần V3 của get - got (UK) hoặc gotten (US).
+        error_tag: past_participle
+      - answer: Have you ever got lost to abroad?
+        feedback_vi: Abroad là trạng từ, không có to hay in phía trước.
+        error_tag: abroad_no_to
+    explanation:
+      vi: Câu hỏi trải nghiệm - Have you ever + V3. Bị lạc là get lost; V3 của get là got (Anh-Anh) hoặc gotten (Anh-Mỹ).
+    display_answer: Have you ever got lost abroad?
+
+  # ---------------- application ----------------
+  - key: en:exercise:when-did-you-mcq-email
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:breathtaking
+    prompt:
+      stem: "Bạn viết email kể cho bạn bè về chuyến đi Sapa tuần trước. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m6k, text: "We went to Sapa last week, and the views were breathtaking.", lang: en }
+        - { id: w1t, text: "We have gone to Sapa last week, and the views have been breathtaking.", lang: en }
+        - { id: z9p, text: "We have been to Sapa last week, and the views were breathtaking.", lang: en }
+        - { id: g5d, text: "We go to Sapa last week, and the views are breathtaking.", lang: en }
+    answer:
+      correct_option_id: m6k
+    explanation:
+      vi: Last week là mốc đã kết thúc, nên cả hai vế kể chuyến đi dùng past simple - went, were. Present perfect (have gone, have been) không đi với last week; hiện tại đơn go không dùng cho việc đã xảy ra.
+    display_answer: "We went to Sapa last week, and the views were breathtaking."
+
+  - key: en:exercise:when-did-you-mcq-what-like
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:what-was-it-like
+    prompt:
+      stem: "Bạn của bạn nói: \"I went to Korea last winter.\" Bạn muốn hỏi chuyến đi đó thế nào. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k8b, text: What was it like?, lang: en }
+        - { id: d2s, text: How was it like?, lang: en }
+        - { id: x4h, text: What did it like?, lang: en }
+        - { id: q1f, text: How did you like?, lang: en }
+    answer:
+      correct_option_id: k8b
+    explanation:
+      vi: What was it like? là câu hỏi cố định để hỏi cảm nhận; like là giới từ nên đi với What, không đi với How. What did it like? và How did you like? thiếu tân ngữ và sai nghĩa.
+    display_answer: What was it like?
+
+  - key: en:exercise:when-did-you-translate-memory
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:memory
+    prompt:
+      source_text: That trip is one of my best memories.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chuyến đi đó là một trong những kỷ niệm đẹp nhất của mình.
+        - Chuyến đi đó là một trong những kỷ niệm đẹp nhất của tôi.
+        - Chuyến đi ấy là một trong những kỷ niệm đẹp nhất của mình.
+        - Chuyến đi ấy là một trong những kỷ niệm đẹp nhất của tôi.
+        - Chuyến đi đó là một trong những kỷ niệm tuyệt vời nhất của mình.
+        - Chuyến đi đó là một trong những kỷ niệm tuyệt vời nhất của tôi.
+        - Chuyến đi đó là một trong những kỷ niệm đáng nhớ nhất của mình.
+        - Chuyến đi đó là một trong những kỷ niệm đáng nhớ nhất của tôi.
+        - Chuyến đi đó là một trong những kỉ niệm đẹp nhất của mình.
+        - Chuyến đi đó là một trong những kỉ niệm đẹp nhất của tôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chuyến đi đó là một trong những món quà lưu niệm đẹp nhất của tôi.
+        feedback_vi: Memory là kỷ niệm (điều nhớ lại); quà lưu niệm là souvenir.
+        error_tag: word_meaning
+    explanation:
+      vi: Memory ở đây là "kỷ niệm"; one of my best memories là "một trong những kỷ niệm đẹp nhất của mình". Trip là chuyến đi.
+    display_answer: Chuyến đi đó là một trong những kỷ niệm đẹp nhất của mình.
+
+  - key: en:exercise:when-did-you-translate-da-lat
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:pp-vs-past-simple
+    prompt:
+      source_text: Mình đến Đà Lạt rồi. Mình đi hồi tháng Ba và trời lạnh lắm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I've been to Da Lat. I went there in March and it was very cold.
+        - I have been to Da Lat. I went there in March and it was very cold.
+        - I've been to Da Lat. I went in March and it was very cold.
+        - I have been to Da Lat. I went in March and it was very cold.
+        - I've been to Dalat. I went there in March and it was very cold.
+        - I have been to Dalat. I went there in March and it was very cold.
+        - I've been to Da Lat. I went there in March and it was really cold.
+        - I have been to Da Lat. I went there in March and it was really cold.
+        - I've been to Da Lat. I went there in March and the weather was very cold.
+        - I've already been to Da Lat. I went there in March and it was very cold.
+        - I have already been to Da Lat. I went there in March and it was very cold.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I've been to Da Lat. I have been there in March and it was very cold.
+        feedback_vi: In March là mốc đã kết thúc - câu thứ hai dùng past simple - I went there in March.
+        error_tag: finished_time
+      - answer: I have been to Da Lat in March and it was very cold.
+        feedback_vi: Present perfect không đi với in March. Tách thành hai câu - I've been to Da Lat. I went there in March…
+        error_tag: finished_time
+      - answer: I've gone to Da Lat. I went there in March and it was very cold.
+        feedback_vi: Kể trải nghiệm (đã về) dùng been to, không dùng gone to.
+        error_tag: been_gone
+      - answer: I've been to Da Lat. I went there in March and it is very cold.
+        feedback_vi: Thời tiết lúc chuyến đi đã qua - dùng was.
+        error_tag: tense_choice
+    explanation:
+      vi: Câu đầu giới thiệu trải nghiệm (present perfect - I've been to). Câu sau có in March nên kể bằng past simple - went, was.
+    display_answer: I've been to Da Lat. I went there in March and it was very cold.

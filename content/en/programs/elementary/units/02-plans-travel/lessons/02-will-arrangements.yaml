@@ -1,0 +1,394 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:will-arrangements
+order_index: 2
+level: a2
+title:
+  vi: Will, going to và lịch hẹn
+objectives:
+  - vi: Dùng will để quyết định ngay lúc nói, đề nghị giúp đỡ và dự đoán.
+  - vi: Dùng hiện tại tiếp diễn (I'm meeting Lan tomorrow) cho việc đã hẹn, đã sắp xếp.
+  - vi: Phân biệt will, be going to và hiện tại tiếp diễn khi nói về tương lai.
+estimated_minutes: 14
+skills: [grammar, speaking, vocabulary]
+prerequisites: [en:lesson:going-to-plans]
+items:
+  - item: en:item:will-decision
+  - item: en:item:will-prediction
+  - item: en:item:wont
+  - item: en:item:present-continuous-future
+  - item: en:item:probably
+  - item: en:item:definitely
+  - item: en:item:shall-i
+  - item: en:item:are-you-free
+  - item: en:item:appointment
+  - item: en:item:pick-up
+  - item: en:item:invite
+  - item: en:item:be-going-to
+    role: reuse
+  - item: en:item:next-week
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn biết lúc nào nói "I'll help you", lúc nào nói "I'm going to…" và lúc nào nói "I'm meeting Lan tomorrow" - ba cách tiếng Việt đều có thể dịch là "sẽ".
+  - type: explain
+    text:
+      vi: Will + động từ nguyên mẫu dùng khi bạn quyết định ngay lúc đang nói, hoặc đề nghị giúp ai - "Điện thoại reo kìa. I'll answer it." Nếu việc đã quyết định từ trước, dùng be going to như bài 1.
+  - type: explain
+    text:
+      vi: Will còn dùng để dự đoán theo ý kiến riêng, hay đi với I think, probably, definitely - I think you'll love Hoi An. Phủ định là won't (will not) - It won't take long.
+  - type: explain
+    text:
+      vi: Khi đã hẹn với người khác hoặc đã đặt vé, người bản ngữ thường dùng hiện tại tiếp diễn (be + V-ing) kèm mốc thời gian - I'm meeting Lan tomorrow. Tiếng Việt nói "Mai tôi gặp Lan", nhưng tiếng Anh không dùng hiện tại đơn I meet.
+  - type: deep_explain
+    text:
+      vi: Ba dạng này gần nghĩa nên đôi khi đều chấp nhận được. Mẹo nhanh - quyết định tức thì hoặc đề nghị → will; ý định đã có → going to; lịch hẹn có thời gian, có người khác tham gia → be + V-ing. Câu đề nghị dạng hỏi dùng Shall I…? (Shall I book the tickets?), không dùng Will I…?
+  - type: example
+    target: "A: I don't have a pen. B: No problem, I'll lend you mine."
+    target_lang: en
+    translation:
+      vi: "A: Mình không có bút. B: Không sao, để mình cho bạn mượn bút của mình."
+    note:
+      vi: B quyết định ngay lúc nghe A nói, nên dùng will.
+  - type: example
+    target: I'm meeting Lan at the café tomorrow afternoon.
+    target_lang: en
+    translation:
+      vi: Chiều mai tôi hẹn gặp Lan ở quán cà phê.
+    note:
+      vi: Hai người đã hẹn trước, có giờ cụ thể - dùng am meeting.
+  - type: example
+    target: I think it will probably rain this evening.
+    target_lang: en
+    translation:
+      vi: Tôi nghĩ tối nay có lẽ sẽ mưa.
+    note:
+      vi: Dự đoán theo ý kiến, có I think và probably - dùng will.
+  - type: example
+    target: Shall I pick you up at the station?
+    target_lang: en
+    translation:
+      vi: Để tôi ra ga đón bạn nhé?
+    note:
+      vi: Đề nghị giúp dạng câu hỏi - Shall I…? Pick you up - đại từ đứng giữa.
+  - type: common_mistake
+    wrong: I will going to the airport with you.
+    right: I'll go to the airport with you.
+    target_lang: en
+    note:
+      vi: Sau will luôn là động từ nguyên mẫu go, không thêm -ing. Người Việt hay ghép "will" với "going" vì nghĩ cả hai đều là "sẽ".
+  - type: common_mistake
+    wrong: Tomorrow I meet Lan at 3 p.m.
+    right: Tomorrow I'm meeting Lan at 3 p.m.
+    target_lang: en
+    note:
+      vi: Lịch hẹn trong tương lai dùng be + V-ing. Hiện tại đơn I meet chỉ dùng cho thói quen (I meet Lan every Monday).
+  - type: common_mistake
+    wrong: I think it won't rain.
+    right: I don't think it will rain.
+    target_lang: en
+    note:
+      vi: Câu đầu không sai ngữ pháp, nhưng người bản ngữ thường đưa not lên think - I don't think it will rain.
+  - type: summary
+    points:
+      - vi: will + nguyên mẫu - quyết định ngay, đề nghị giúp (I'll help you), dự đoán (I think it will…).
+      - vi: won't = will not; probably/definitely đứng sau will, trước won't.
+      - vi: be + V-ing + mốc thời gian - lịch đã hẹn (I'm meeting Lan tomorrow).
+      - vi: Đề nghị dạng hỏi - Shall I…?; không bao giờ nói will going.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:will-arrangements-mcq-decision
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:will-decision
+    prompt:
+      stem: "Bạn của bạn nói: \"It's so hot in here!\" Bạn vừa nảy ra ý định mở cửa sổ. Bạn nói:"
+      stem_lang: vi
+      options:
+        - { id: v3k, text: "I'll open the window.", lang: en }
+        - { id: p8e, text: "I open the window.", lang: en }
+        - { id: j2w, text: "I'm going to opening the window.", lang: en }
+        - { id: f6s, text: "I will opening the window.", lang: en }
+    answer:
+      correct_option_id: v3k
+    explanation:
+      vi: Quyết định ngay lúc nói nên dùng will + nguyên mẫu - I'll open. Hiện tại đơn không diễn tả quyết định, còn sau will hay going to không dùng V-ing.
+    display_answer: "I'll open the window."
+
+  - key: en:exercise:will-arrangements-mcq-arrangement
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:present-continuous-future
+    prompt:
+      stem: "Bạn đã hẹn với nha sĩ lúc 9 giờ sáng thứ Hai. Câu nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: o4m, text: I see the dentist on Monday at 9., lang: en }
+        - { id: y7h, text: I'm seeing the dentist on Monday at 9., lang: en }
+        - { id: l1t, text: I seeing the dentist on Monday at 9., lang: en }
+        - { id: n5q, text: I will seeing the dentist on Monday at 9., lang: en }
+    answer:
+      correct_option_id: y7h
+    explanation:
+      vi: Cuộc hẹn đã sắp xếp, có giờ cụ thể - dùng be + V-ing (I'm seeing). Hiện tại đơn chỉ thói quen; câu còn lại thiếu am hoặc ghép will với V-ing.
+    display_answer: I'm seeing the dentist on Monday at 9.
+
+  - key: en:exercise:will-arrangements-listen-offer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:shall-i
+    prompt:
+      audio_asset_id: null
+      fallback_text: Shall I book the tickets for us?
+      options:
+        - { id: i9c, text: Để tôi đặt vé cho chúng ta nhé?, lang: vi }
+        - { id: w2b, text: Bạn đặt vé cho chúng ta được không?, lang: vi }
+        - { id: e6u, text: Tôi đã đặt vé cho chúng ta rồi., lang: vi }
+        - { id: k4g, text: Chúng ta có nên mua sách không?, lang: vi }
+    answer:
+      correct_option_id: i9c
+    explanation:
+      vi: Shall I…? là lời đề nghị "để tôi… nhé?". Book ở đây là động từ "đặt", không phải "quyển sách".
+    display_answer: Để tôi đặt vé cho chúng ta nhé?
+
+  - key: en:exercise:will-arrangements-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:pick-up
+    prompt:
+      template: "Your flight lands at 10? Don't worry, I'll {{b1}} you {{b2}} at the airport."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Chuyến bay của bạn hạ cánh lúc 10 giờ à? Đừng lo, tôi sẽ ra sân bay đón bạn."
+        - "Gợi ý: 'đón ai' là pick someone up."
+    answer:
+      blanks:
+        b1: [pick]
+        b2: [up]
+    known_wrong:
+      - answer: picking
+        feedback_vi: Sau will (I'll) là động từ nguyên mẫu - pick.
+        error_tag: verb_form
+      - answer: take
+        feedback_vi: Đón ai bằng xe là pick someone up.
+        error_tag: word_choice
+    explanation:
+      vi: Đón ai là pick + người + up; khi người là đại từ (you), nó đứng giữa pick và up. Sau I'll dùng nguyên mẫu.
+    display_answer: Don't worry, I'll pick you up at the airport.
+
+  - key: en:exercise:will-arrangements-order-predict
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:will-prediction
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi nghĩ bạn sẽ thích Hội An.\""
+      tokens:
+        - { id: p-love, text: love }
+        - { id: p-think, text: think }
+        - { id: p-hoian, text: Hoi An }
+        - { id: p-will, text: will }
+        - { id: p-i, text: I }
+        - { id: p-you, text: you }
+        - { id: p-loving, text: loving }
+    answer:
+      orders:
+        - [p-i, p-think, p-you, p-will, p-love, p-hoian]
+    explanation:
+      vi: Dự đoán theo ý kiến - I think + you will + nguyên mẫu love. Không dùng loving sau will.
+    display_answer: I think you will love Hoi An.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:will-arrangements-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-continuous-future
+    prompt:
+      template: "A: Are you free on Saturday? B: Sorry, I'm {{b1}} Lan for lunch. But I {{b2}} call you on Sunday."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [meeting, seeing]
+        b2: [will]
+    known_wrong:
+      - answer: meet
+        feedback_vi: Sau I'm cần V-ing - I'm meeting Lan (lịch đã hẹn).
+        error_tag: verb_form
+      - answer: going
+        feedback_vi: I'm going cần thêm to + động từ. Ở đây lịch đã hẹn nên dùng I'm meeting.
+        error_tag: verb_form
+      - answer: am
+        feedback_vi: Ô thứ hai cần will - I will call you (hứa ngay lúc nói).
+        error_tag: future_form
+    explanation:
+      vi: Ăn trưa với Lan là lịch đã hẹn nên dùng I'm meeting. Gọi lại vào Chủ nhật là quyết định/lời hứa ngay lúc nói nên dùng will.
+    display_answer: "Sorry, I'm meeting Lan for lunch. But I will call you on Sunday."
+
+  - key: en:exercise:will-arrangements-translate-help
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:will-decision
+    prompt:
+      source_text: Túi đó trông nặng quá. Để tôi giúp bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - That bag looks heavy. I will help you.
+        - That bag looks heavy. I'll help you.
+        - That bag looks very heavy. I'll help you.
+        - That bag looks very heavy. I will help you.
+        - That bag looks so heavy. I'll help you.
+        - That bag looks heavy. I'll help you with it.
+        - That bag looks heavy. Let me help you.
+        - That bag looks heavy. I'll carry it for you.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: That bag looks heavy. I help you.
+        feedback_vi: Đề nghị giúp ngay lúc nói cần will - I'll help you.
+        error_tag: future_form
+      - answer: That bag looks heavy. I will helping you.
+        feedback_vi: Sau will là động từ nguyên mẫu - I will help you.
+        error_tag: verb_form
+      - answer: That bag looks heavy. I am going to help you.
+        feedback_vi: Bạn vừa mới quyết định giúp, nên tự nhiên nhất là I'll help you.
+        error_tag: future_form
+    explanation:
+      vi: Lời đề nghị bạn nghĩ ra ngay khi thấy túi nặng - dùng will (I'll help you). Let me help you cũng là cách nói tự nhiên.
+    display_answer: That bag looks heavy. I'll help you.
+
+  - key: en:exercise:will-arrangements-translate-meeting
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-continuous-future
+    prompt:
+      source_text: Chiều mai tôi gặp Lan ở quán cà phê.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I am meeting Lan at the café tomorrow afternoon.
+        - I'm meeting Lan at the café tomorrow afternoon.
+        - I am meeting Lan at the cafe tomorrow afternoon.
+        - I'm meeting Lan at the cafe tomorrow afternoon.
+        - Tomorrow afternoon I am meeting Lan at the café.
+        - Tomorrow afternoon I'm meeting Lan at the café.
+        - Tomorrow afternoon I'm meeting Lan at the cafe.
+        - Tomorrow afternoon I am meeting Lan at the cafe.
+        - I'm meeting Lan at the coffee shop tomorrow afternoon.
+        - I am meeting Lan at the coffee shop tomorrow afternoon.
+        - I'm going to meet Lan at the café tomorrow afternoon.
+        - I'm going to meet Lan at the cafe tomorrow afternoon.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I meet Lan at the café tomorrow afternoon.
+        feedback_vi: Lịch hẹn tương lai dùng be + V-ing - I'm meeting Lan…
+        error_tag: future_form
+      - answer: I meeting Lan at the café tomorrow afternoon.
+        feedback_vi: Thiếu am - I am meeting Lan.
+        error_tag: missing_be
+      - answer: I will meeting Lan at the café tomorrow afternoon.
+        feedback_vi: Không ghép will với V-ing. Lịch hẹn - I'm meeting Lan.
+        error_tag: verb_form
+    explanation:
+      vi: Đây là cuộc hẹn đã sắp xếp nên tự nhiên nhất là I'm meeting; I'm going to meet cũng chấp nhận được. Tiếng Việt không cần "đang", nhưng tiếng Anh cần am + V-ing.
+    display_answer: I'm meeting Lan at the café tomorrow afternoon.
+
+  # ---------------- application ----------------
+  - key: en:exercise:will-arrangements-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:probably
+    prompt:
+      source_text: It probably won't be very cold in Da Lat next week.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuần sau ở Đà Lạt có lẽ sẽ không lạnh lắm.
+        - Tuần sau Đà Lạt có lẽ sẽ không lạnh lắm.
+        - Tuần sau ở Đà Lạt chắc sẽ không lạnh lắm.
+        - Tuần sau Đà Lạt chắc sẽ không lạnh lắm.
+        - Tuần sau ở Đà Lạt có lẽ không lạnh lắm.
+        - Có lẽ tuần sau ở Đà Lạt sẽ không lạnh lắm.
+        - Có lẽ tuần sau Đà Lạt sẽ không lạnh lắm.
+        - Tuần tới ở Đà Lạt có lẽ sẽ không lạnh lắm.
+        - Tuần sau ở Đà Lạt có lẽ sẽ không quá lạnh.
+        - Tuần sau ở Đà Lạt chắc là sẽ không lạnh lắm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Probably là "có lẽ/chắc là", won't be là "sẽ không", not very cold là "không lạnh lắm". Đặt "tuần sau" lên đầu cho tự nhiên.
+    display_answer: Tuần sau ở Đà Lạt có lẽ sẽ không lạnh lắm.
+
+  - key: en:exercise:will-arrangements-order-free
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:are-you-free
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Tối thứ Sáu bạn có rảnh không?\""
+      tokens:
+        - { id: r-evening, text: evening }
+        - { id: r-free, text: free }
+        - { id: r-on, text: on }
+        - { id: r-you, text: you }
+        - { id: r-friday, text: Friday }
+        - { id: r-are, text: Are }
+        - { id: r-do, text: Do }
+        - { id: r-in, text: in }
+    answer:
+      orders:
+        - [r-are, r-you, r-free, r-on, r-friday, r-evening]
+    explanation:
+      vi: Free là tính từ nên câu hỏi dùng Are you free…?, không dùng Do. Ngày trong tuần đi với on - on Friday evening.
+    display_answer: Are you free on Friday evening?
+
+  - key: en:exercise:will-arrangements-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:invite
+    prompt:
+      stem: "Bạn mời Minh: \"Lan is having a party on Sunday. Would you like to come?\" Minh vừa nghe xong và nhận lời. Minh nói gì?"
+      stem_lang: vi
+      options:
+        - { id: h3a, text: "Sure! I'll bring some cake.", lang: en }
+        - { id: u8d, text: "Sure! I bring some cake.", lang: en }
+        - { id: m6x, text: "Sure! I will to bring some cake.", lang: en }
+        - { id: q1z, text: "Sure! I'm bring some cake.", lang: en }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: Minh vừa quyết định mang bánh ngay lúc trả lời nên dùng I'll + nguyên mẫu bring. Các câu khác thiếu will, thêm to sau will hoặc ghép am với nguyên mẫu.
+    display_answer: "Sure! I'll bring some cake."

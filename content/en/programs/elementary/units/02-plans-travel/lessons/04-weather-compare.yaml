@@ -1,0 +1,403 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:weather-compare
+order_index: 4
+level: a2
+title:
+  vi: Thời tiết và so sánh điểm đến
+objectives:
+  - vi: Nói về thời tiết và dự báo - It's sunny, It's going to rain, It will be 30 degrees.
+  - vi: So sánh hai nơi bằng -er than và more … than (cheaper than, more comfortable than).
+  - vi: Chọn nơi tốt nhất bằng so sánh nhất, kể cả dạng bất quy tắc good - better - the best.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:hotel-airport]
+items:
+  - item: en:item:weather
+  - item: en:item:sunny-rainy
+  - item: en:item:rain
+  - item: en:item:warm-cool
+  - item: en:item:forecast
+  - item: en:item:degrees
+  - item: en:item:comparative-er
+  - item: en:item:comparative-more
+  - item: en:item:superlative
+  - item: en:item:good-better-best
+  - item: en:item:than
+  - item: en:item:comfortable
+  - item: en:item:crowded
+    role: reuse
+  - item: en:item:beach
+  - item: en:item:be-going-to
+    role: reuse
+  - item: en:item:will-prediction
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và nói được thời tiết ở nơi định đến, và so sánh các điểm du lịch như "Đà Lạt mát hơn Nha Trang" hay "Đây là bãi biển đẹp nhất".
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "Trời nắng", "Đang mưa"; tiếng Anh luôn cần chủ ngữ it - It's sunny, It's raining. Hỏi thời tiết - What's the weather like in Da Lat?
+  - type: explain
+    text:
+      vi: Dự báo dựa vào dấu hiệu bạn đang nhìn thấy (mây đen) thường dùng going to - Look at those clouds! It's going to rain. Dự báo chung, theo ý kiến hoặc bản tin dùng will hoặc going to - It will be 30 degrees tomorrow.
+  - type: explain
+    text:
+      vi: So sánh hơn - tính từ ngắn thêm -er + than (cheap → cheaper than, hot → hotter than, sunny → sunnier than); tính từ dài dùng more + tính từ + than (more comfortable than). Tiếng Việt chỉ thêm "hơn", nên người Việt hay nói thừa more cheaper - đã có -er thì không thêm more.
+  - type: explain
+    text:
+      vi: So sánh nhất - the + -est (the cheapest) hoặc the most + tính từ dài (the most beautiful). Good và bad là bất quy tắc - good, better, the best; bad, worse, the worst. Không nói more good hay the most good.
+  - type: deep_explain
+    text:
+      vi: "Quy tắc chính tả khi thêm -er/-est: tính từ một âm tiết kết thúc bằng một nguyên âm + một phụ âm thì gấp đôi phụ âm (hot → hotter, big → biggest); tận cùng -e chỉ thêm -r/-st (nice → nicer); tận cùng -y đổi thành -ier/-iest (sunny → sunnier, easy → the easiest). Một số tính từ hai âm tiết như crowded, famous, boring luôn dùng more/the most. Sau than, tiếng Anh nói chuyện thường dùng me/him (She is older than me), không cần I am."
+  - type: example
+    target: "What's the weather like in Da Lat? - It's cool and a bit cloudy."
+    target_lang: en
+    translation:
+      vi: Thời tiết ở Đà Lạt thế nào? - Trời mát và hơi nhiều mây.
+    note:
+      vi: Hỏi What's the weather like…?, trả lời bắt đầu bằng It's.
+  - type: example
+    target: The forecast says it's going to rain this afternoon.
+    target_lang: en
+    translation:
+      vi: Dự báo nói chiều nay trời sẽ mưa.
+    note:
+      vi: Dự báo về thời tiết - dùng going to (hoặc will).
+  - type: example
+    target: The train is cheaper than the plane, but the plane is more comfortable.
+    target_lang: en
+    translation:
+      vi: Đi tàu rẻ hơn máy bay, nhưng máy bay thoải mái hơn.
+    note:
+      vi: Cheap là tính từ ngắn → cheaper; comfortable dài → more comfortable.
+  - type: example
+    target: In my opinion, Phu Quoc has the best beaches in Vietnam.
+    target_lang: en
+    translation:
+      vi: Theo tôi, Phú Quốc có những bãi biển đẹp nhất Việt Nam.
+    note:
+      vi: Good → the best (bất quy tắc); "nhất ở đâu" dùng in.
+  - type: common_mistake
+    wrong: The bus is more cheaper than the train.
+    right: The bus is cheaper than the train.
+    target_lang: en
+    note:
+      vi: Cheaper đã mang nghĩa "rẻ hơn"; thêm more là thừa. Tiếng Việt chỉ có "hơn" nên người Việt hay dịch "more" cho chắc ăn.
+  - type: common_mistake
+    wrong: This is the most good hotel in Hoi An.
+    right: This is the best hotel in Hoi An.
+    target_lang: en
+    note:
+      vi: Good là bất quy tắc - better, the best. Không bao giờ nói more good hay the most good.
+  - type: common_mistake
+    wrong: Today raining.
+    right: It's raining today.
+    target_lang: en
+    note:
+      vi: Tiếng Anh cần chủ ngữ it và động từ be - It is raining. Tiếng Việt "Hôm nay mưa" không có chủ ngữ, nhưng tiếng Anh thì bắt buộc.
+  - type: summary
+    points:
+      - vi: "Thời tiết - It's sunny / rainy / cloudy / windy / cool / warm; It's raining; What's the weather like?"
+      - vi: "Dự báo - It's going to rain (có dấu hiệu); It will be 30 degrees."
+      - vi: "So sánh hơn - -er than (cheaper than) hoặc more … than (more comfortable than); không dùng cả hai."
+      - vi: "So sánh nhất - the -est / the most …; good → better → the best, bad → worse → the worst."
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:weather-compare-mcq-cheaper
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:comparative-er
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: The bus is ___ than the plane."
+      stem_lang: vi
+      options:
+        - { id: k2e, text: cheaper, lang: en }
+        - { id: r8b, text: more cheaper, lang: en }
+        - { id: h4t, text: more cheap, lang: en }
+        - { id: w6n, text: cheapest, lang: en }
+    answer:
+      correct_option_id: k2e
+    explanation:
+      vi: Cheap là tính từ ngắn nên chỉ thêm -er - cheaper than. More cheaper thừa more; cheapest là so sánh nhất và cần the.
+    display_answer: cheaper
+
+  - key: en:exercise:weather-compare-mcq-best
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:good-better-best
+    prompt:
+      stem: "Chọn câu đúng: \"Đây là nhà hàng ngon nhất ở Huế.\""
+      stem_lang: vi
+      options:
+        - { id: y3o, text: This is the most good restaurant in Hue., lang: en }
+        - { id: e7s, text: This is the best restaurant in Hue., lang: en }
+        - { id: v1d, text: This is the goodest restaurant in Hue., lang: en }
+        - { id: u5p, text: This is the better restaurant in Hue., lang: en }
+    answer:
+      correct_option_id: e7s
+    explanation:
+      vi: Good là bất quy tắc - so sánh nhất là the best. Better là so sánh hơn (giữa hai thứ); most good và goodest không tồn tại.
+    display_answer: This is the best restaurant in Hue.
+
+  - key: en:exercise:weather-compare-listen-forecast
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:forecast
+    prompt:
+      audio_asset_id: null
+      fallback_text: Tomorrow it's going to be windy and cool, about 18 degrees.
+      options:
+        - { id: f3m, text: "Ngày mai trời sẽ có gió và mát, khoảng 18 độ.", lang: vi }
+        - { id: q9a, text: "Hôm nay trời có gió và lạnh, khoảng 8 độ.", lang: vi }
+        - { id: z2r, text: "Ngày mai trời sẽ nắng và ấm, khoảng 28 độ.", lang: vi }
+        - { id: m7j, text: "Ngày mai trời sẽ mưa và mát, khoảng 80 độ.", lang: vi }
+    answer:
+      correct_option_id: f3m
+    explanation:
+      vi: Windy là "có gió", cool là "mát", about 18 degrees là "khoảng 18 độ". Chú ý eighteen (18) nhấn âm cuối, khác eighty (80).
+    display_answer: Ngày mai trời sẽ có gió và mát, khoảng 18 độ.
+
+  - key: en:exercise:weather-compare-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:comparative-more
+    prompt:
+      template: "The sleeper bus is {{b1}} comfortable {{b2}} the normal bus."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Xe giường nằm thoải mái hơn xe thường."
+        - "Gợi ý: comfortable là tính từ dài; 'hơn' là than."
+    answer:
+      blanks:
+        b1: [more]
+        b2: [than]
+    known_wrong:
+      - answer: then
+        feedback_vi: Then là "sau đó". So sánh dùng than.
+        error_tag: than_then
+      - answer: that
+        feedback_vi: Sau so sánh hơn dùng than, không dùng that.
+        error_tag: than_then
+      - answer: most
+        feedback_vi: So sánh hai thứ dùng more; most là so sánh nhất.
+        error_tag: comparative_form
+    explanation:
+      vi: Comfortable có nhiều âm tiết nên dùng more comfortable; vật được so sánh đứng sau than.
+    display_answer: The sleeper bus is more comfortable than the normal bus.
+
+  - key: en:exercise:weather-compare-order-rain
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:rain
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Nhìn mây kìa! Trời sắp mưa.\" (phần sau)"
+      tokens:
+        - { id: o-going, text: going }
+        - { id: o-rain, text: rain }
+        - { id: o-its, text: "It's" }
+        - { id: o-to, text: to }
+        - { id: o-raining, text: raining }
+        - { id: o-will, text: will }
+    answer:
+      orders:
+        - [o-its, o-going, o-to, o-rain]
+    explanation:
+      vi: Thấy mây đen là dấu hiệu, nên dự báo bằng going to - It's going to rain. Câu cần chủ ngữ it; sau to là nguyên mẫu rain.
+    display_answer: "It's going to rain."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:weather-compare-fill-forms
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:superlative
+    prompt:
+      template: "Nha Trang is {{b1}} than Da Lat, but Da Lat is the {{b2}} beautiful city I know. The weather there is {{b3}} than in Saigon."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [hotter, warmer, sunnier]
+        b2: [most]
+        b3: [better, cooler, nicer]
+    known_wrong:
+      - answer: hoter
+        feedback_vi: Hot kết thúc bằng một nguyên âm + một phụ âm, nên gấp đôi t - hotter.
+        error_tag: spelling
+      - answer: more hot
+        feedback_vi: Hot là tính từ ngắn - hotter, không dùng more.
+        error_tag: comparative_form
+      - answer: more
+        feedback_vi: So sánh nhất của tính từ dài là the most, không phải the more.
+        error_tag: superlative_form
+      - answer: gooder
+        feedback_vi: Good là bất quy tắc - better.
+        error_tag: irregular_comparative
+      - answer: more good
+        feedback_vi: Good là bất quy tắc - better, không nói more good.
+        error_tag: irregular_comparative
+    explanation:
+      vi: Ô 1 và 3 là so sánh hơn (có than) - hotter (gấp đôi t), better (bất quy tắc của good). Ô 2 là so sánh nhất của tính từ dài - the most beautiful.
+    display_answer: Nha Trang is hotter than Da Lat, but Da Lat is the most beautiful city I know. The weather there is better than in Saigon.
+
+  - key: en:exercise:weather-compare-translate-weather
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:weather
+    prompt:
+      source_text: Thời tiết ở Hội An thế nào?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - What's the weather like in Hoi An?
+        - What is the weather like in Hoi An?
+        - How is the weather in Hoi An?
+        - How's the weather in Hoi An?
+        - What's the weather like in Hoi An now?
+        - What is the weather like in Hoi An now?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How is the weather like in Hoi An?
+        feedback_vi: Đi với like thì dùng What - What's the weather like?; hoặc bỏ like - How is the weather?
+        error_tag: question_form
+      - answer: What the weather like in Hoi An?
+        feedback_vi: Thiếu is - What is (What's) the weather like?
+        error_tag: missing_be
+      - answer: How about the weather in Hoi An?
+        feedback_vi: How about…? dùng để gợi ý. Hỏi thời tiết - What's the weather like?
+        error_tag: question_form
+    explanation:
+      vi: Câu hỏi chuẩn là What's the weather like in…? (like ở đây là "giống như thế nào"). How's the weather…? cũng đúng nhưng không có like.
+    display_answer: What's the weather like in Hoi An?
+
+  - key: en:exercise:weather-compare-translate-cheaper
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:comparative-er
+    prompt:
+      source_text: Đi tàu rẻ hơn đi máy bay, nhưng máy bay nhanh hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The train is cheaper than the plane, but the plane is faster.
+        - The train is cheaper than the plane but the plane is quicker.
+        - Going by train is cheaper than going by plane, but the plane is faster.
+        - Going by train is cheaper than flying, but flying is faster.
+        - Taking the train is cheaper than flying, but flying is faster.
+        - The train is cheaper than flying, but flying is faster.
+        - Trains are cheaper than planes, but planes are faster.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The train is more cheaper than the plane, but the plane is more faster.
+        feedback_vi: Cheap và fast là tính từ ngắn - cheaper, faster; không thêm more.
+        error_tag: double_comparative
+      - answer: The train is cheaper the plane, but the plane is faster.
+        feedback_vi: Thiếu than sau cheaper - cheaper than the plane.
+        error_tag: missing_than
+      - answer: The train is cheap than the plane, but the plane is fast.
+        feedback_vi: So sánh hơn cần -er - cheaper than, faster.
+        error_tag: comparative_form
+    explanation:
+      vi: Cheap, fast là tính từ ngắn nên thêm -er; vế đầu có than vì nêu vật so sánh, vế sau đã rõ nên có thể bỏ than.
+    display_answer: The train is cheaper than the plane, but the plane is faster.
+
+  # ---------------- application ----------------
+  - key: en:exercise:weather-compare-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:crowded
+    prompt:
+      source_text: Vung Tau is more crowded than Con Dao, but it's cheaper.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vũng Tàu đông đúc hơn Côn Đảo, nhưng rẻ hơn.
+        - Vũng Tàu đông hơn Côn Đảo, nhưng rẻ hơn.
+        - Vũng Tàu đông người hơn Côn Đảo, nhưng rẻ hơn.
+        - Vũng Tàu đông đúc hơn Côn Đảo nhưng lại rẻ hơn.
+        - Vũng Tàu đông hơn Côn Đảo nhưng lại rẻ hơn.
+        - Vũng Tàu đông đúc hơn Côn Đảo, nhưng ở đó rẻ hơn.
+        - Vũng Tàu đông đúc hơn Côn Đảo, nhưng giá rẻ hơn.
+        - Vũng Tàu đông hơn Côn Đảo, nhưng chi phí rẻ hơn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: More crowded than là "đông (đúc) hơn"; it's cheaper là "rẻ hơn" - it ở đây chỉ Vũng Tàu nên tiếng Việt có thể bỏ chủ ngữ.
+    display_answer: Vũng Tàu đông đúc hơn Côn Đảo, nhưng rẻ hơn.
+
+  - key: en:exercise:weather-compare-order-best
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:superlative
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đây là khách sạn thoải mái nhất trong thị trấn.\""
+      tokens:
+        - { id: x-comfortable, text: comfortable }
+        - { id: x-in, text: in }
+        - { id: x-this, text: This }
+        - { id: x-hotel, text: hotel }
+        - { id: x-town, text: town }
+        - { id: x-most, text: most }
+        - { id: x-is, text: is }
+        - { id: x-the, text: the }
+        - { id: x-more, text: more }
+    answer:
+      orders:
+        - [x-this, x-is, x-the, x-most, x-comfortable, x-hotel, x-in, x-town]
+    explanation:
+      vi: So sánh nhất của tính từ dài - the most comfortable; "trong thị trấn" là in town. More chỉ dùng khi so sánh hai thứ.
+    display_answer: This is the most comfortable hotel in town.
+
+  - key: en:exercise:weather-compare-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:beach
+    prompt:
+      stem: "Bạn của bạn hỏi nên đi Mũi Né hay Quy Nhơn. Bạn thấy Quy Nhơn đẹp hơn và yên tĩnh hơn. Bạn nói:"
+      stem_lang: vi
+      options:
+        - { id: n2v, text: "Go to Quy Nhon. The beaches are better and it's quieter.", lang: en }
+        - { id: n8c, text: "Go to Quy Nhon. The beaches are more good and it's more quieter.", lang: en }
+        - { id: n5k, text: "Go to Quy Nhon. The beaches are best and it's quiet than Mui Ne.", lang: en }
+        - { id: n1h, text: "Go to Quy Nhon. The beaches are gooder and it's quieter.", lang: en }
+    answer:
+      correct_option_id: n2v
+    explanation:
+      vi: So sánh hai nơi dùng so sánh hơn - better (bất quy tắc của good) và quieter (quiet là tính từ ngắn). More good, more quieter, gooder đều sai; best cần the và dùng cho so sánh nhất.
+    display_answer: "Go to Quy Nhon. The beaches are better and it's quieter."

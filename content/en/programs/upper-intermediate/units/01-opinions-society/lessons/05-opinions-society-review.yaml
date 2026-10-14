@@ -1,0 +1,460 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:opinions-society-review
+order_index: 5
+level: b2
+title:
+  vi: "Ôn tập: Tranh luận trên diễn đàn - Có nên cấm ô tô cá nhân vào trung tâm?"
+objectives:
+  - vi: Đọc hiểu một cuộc tranh luận trên diễn đàn và nhận ra quan điểm, lý lẽ, nhượng bộ của từng người.
+  - vi: Kết hợp câu điều kiện, wish, bị động và câu tường thuật trong một bài luận nêu quan điểm.
+  - vi: Viết đoạn kết bằng All things considered và nêu ý kiến phía bên kia bằng It could be argued that…
+estimated_minutes: 30
+skills: [reading, writing, grammar, listening]
+prerequisites: [en:lesson:opinions-society-reported-speech]
+items:
+  - item: en:item:all-things-considered
+  - item: en:item:it-could-be-argued
+  - item: en:item:in-my-view
+    role: reuse
+  - item: en:item:on-the-other-hand
+    role: reuse
+  - item: en:item:having-said-that
+    role: reuse
+  - item: en:item:i-take-your-point
+    role: reuse
+  - item: en:item:mixed-conditional
+    role: reuse
+  - item: en:item:wish-past-perfect
+    role: reuse
+  - item: en:item:take-action
+    role: reuse
+  - item: en:item:pose-a-threat
+    role: reuse
+  - item: en:item:it-is-said-that
+    role: reuse
+  - item: en:item:deny-pattern
+    role: reuse
+  - item: en:item:suggest-pattern
+    role: reuse
+  - item: en:item:warn-pattern
+    role: reuse
+  - item: en:item:traffic-congestion
+    role: reuse
+  - item: en:item:public-transport
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu và tham gia được một cuộc tranh luận bằng tiếng Anh về chính sách đô thị, rồi viết một đoạn văn nêu quan điểm có lập luận hai chiều và kết luận rõ ràng.
+  - type: explain
+    text:
+      vi: "Một bài luận nêu quan điểm (opinion essay) ở trình độ B2 thường có bốn phần: mở bài nêu quan điểm (In my view…), thân bài đưa lý lẽ (Furthermore…), một đoạn nhìn nhận phía bên kia (It could be argued that… / On the other hand…), và kết luận (All things considered…)."
+  - type: explain
+    text:
+      vi: Văn trên diễn đàn thân mật hơn bài luận, nhưng người viết giỏi vẫn ghi nhận ý người khác (I take your point, but…) trước khi phản biện. Bạn hãy chú ý sự khác biệt văn phong này khi đọc các bài đăng dưới đây.
+  - type: explain
+    text:
+      vi: "Bài này ôn lại toàn bộ ngữ pháp của unit: điều kiện loại 2, 3 và hỗn hợp để bàn giả định; wish để bày tỏ tiếc nuối; bị động để viết khách quan; và động từ tường thuật để thuật lại ý kiến của người khác một cách chính xác."
+  - type: deep_explain
+    text:
+      vi: It could be argued that… là bị động với modal - người viết nêu ý kiến phía bên kia mà không nhận đó là quan điểm của mình, nên bài viết có vẻ khách quan và cân bằng. Hai lỗi người Việt hay mắc nhất trong bài luận là lặp ý (In my opinion, I think…) và dùng discuss about - discuss là ngoại động từ, đi thẳng với tân ngữ.
+  - type: example
+    target: "Lan_HN: In my view, banning private cars from the city centre is long overdue. Traffic congestion poses a serious threat to our health, and it is estimated that air pollution costs the city millions every year. Having said that, the ban should only be introduced once public transport has been improved."
+    target_lang: en
+    translation:
+      vi: "Lan_HN: Theo tôi, việc cấm ô tô cá nhân vào trung tâm thành phố lẽ ra phải làm từ lâu. Ùn tắc giao thông gây mối đe doạ nghiêm trọng cho sức khoẻ của chúng ta, và ước tính ô nhiễm không khí khiến thành phố thiệt hại hàng triệu mỗi năm. Dù vậy, lệnh cấm chỉ nên được áp dụng khi giao thông công cộng đã được cải thiện."
+    note:
+      vi: Mở bài nêu quan điểm (In my view), lý lẽ dùng bị động khách quan (it is estimated that), rồi nhượng bộ bằng Having said that.
+  - type: example
+    target: "MinhTran: I take your point, Lan, but it could be argued that a ban would hurt small shops in the centre. If the city had built more metro lines twenty years ago, we wouldn't need such an extreme measure now. I wish the authorities had listened to residents back then!"
+    target_lang: en
+    translation:
+      vi: "MinhTran: Mình hiểu ý bạn, Lan, nhưng cũng có thể cho rằng lệnh cấm sẽ gây thiệt hại cho các cửa hàng nhỏ ở trung tâm. Nếu hai mươi năm trước thành phố xây thêm tuyến tàu điện thì bây giờ chúng ta đã không cần một biện pháp cực đoan như vậy. Giá mà hồi đó chính quyền đã lắng nghe người dân!"
+    note:
+      vi: Câu điều kiện hỗn hợp (had built… wouldn't need… now) và wish + had + V3 để tiếc nuối.
+  - type: example
+    target: "Moderator: Thanks, both. To summarise, Lan suggested introducing the ban gradually, whereas Minh warned that it could damage local businesses. Neither of you denied that the city needs to take action."
+    target_lang: en
+    translation:
+      vi: "Người điều hành: Cảm ơn hai bạn. Tóm lại, Lan đề xuất áp dụng lệnh cấm dần dần, trong khi Minh cảnh báo rằng nó có thể gây hại cho các doanh nghiệp địa phương. Không ai phủ nhận rằng thành phố cần phải hành động."
+    note:
+      vi: Động từ tường thuật suggested + V-ing, warned that, denied that thay cho said.
+  - type: example
+    target: All things considered, I believe the benefits of a car-free centre outweigh the drawbacks, provided that public transport is made cheaper and more reliable first.
+    target_lang: en
+    translation:
+      vi: Xét mọi mặt, tôi tin rằng lợi ích của một trung tâm không ô tô lớn hơn những bất lợi, với điều kiện giao thông công cộng được làm cho rẻ và đáng tin cậy hơn trước.
+    note:
+      vi: Câu kết bài luận - All things considered + quan điểm cuối cùng + điều kiện (provided that).
+  - type: common_mistake
+    wrong: In this essay, I will discuss about the advantages of a car-free city centre.
+    right: In this essay, I will discuss the advantages of a car-free city centre.
+    target_lang: en
+    note:
+      vi: Discuss đã có nghĩa "thảo luận về", nên không thêm about. Nếu muốn dùng about thì nói talk about hoặc have a discussion about.
+  - type: common_mistake
+    wrong: In my opinion, I think the ban is a good idea.
+    right: In my opinion, the ban is a good idea.
+    target_lang: en
+    note:
+      vi: In my opinion và I think trùng nghĩa - chỉ giữ một. Đây là lỗi giám khảo IELTS/B2 rất hay trừ điểm.
+  - type: common_mistake
+    wrong: If the city would have invested earlier, the traffic would be better now.
+    right: If the city had invested earlier, the traffic would be better now.
+    target_lang: en
+    note:
+      vi: Mệnh đề If không chứa would; có now nên kết quả dùng would be (câu hỗn hợp).
+  - type: summary
+    points:
+      - vi: Bố cục bài luận - In my view… → Furthermore… → It could be argued that… / On the other hand… → All things considered…
+      - vi: Phản biện lịch sự - I take your point, but…; Having said that…
+      - vi: Giả định và tiếc nuối - điều kiện loại 2, 3, hỗn hợp; wish / If only + đúng thì.
+      - vi: Văn khách quan - bị động, It is estimated / believed that…
+      - vi: Thuật lại ý kiến - suggested + V-ing, denied + V-ing, warned (sb) not to…; discuss không đi với about.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:opsoc-rev-mcq-forum-stance
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:having-said-that
+    prompt:
+      stem: "Đọc bài đăng: \"In my view, banning private cars from the city centre would be a step in the right direction. Traffic congestion poses a serious threat to our health. Having said that, the ban should only be introduced once public transport has been improved.\" Người viết có quan điểm gì?"
+      stem_lang: vi
+      options:
+        - { id: k4s, text: Ủng hộ lệnh cấm nhưng chỉ khi giao thông công cộng đã được cải thiện., lang: vi }
+        - { id: e8h, text: Phản đối hoàn toàn lệnh cấm ô tô., lang: vi }
+        - { id: o3z, text: Muốn cấm ô tô ngay lập tức bất kể điều kiện., lang: vi }
+        - { id: r7q, text: Cho rằng giao thông công cộng hiện đã đủ tốt., lang: vi }
+    answer:
+      correct_option_id: k4s
+    explanation:
+      vi: In my view… a step in the right direction là ủng hộ; Having said that đưa ra điều kiện - chỉ áp dụng once public transport has been improved (khi đã được cải thiện, tức hiện tại chưa tốt).
+    display_answer: Ủng hộ lệnh cấm nhưng chỉ khi giao thông công cộng đã được cải thiện.
+
+  - key: en:exercise:opsoc-rev-listen-other-hand
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:on-the-other-hand
+    prompt:
+      audio_asset_id: null
+      fallback_text: Cars are convenient for families. On the other hand, they are the main cause of traffic congestion in the centre.
+      options:
+        - { id: j2w, text: "Ô tô tiện lợi cho các gia đình. Mặt khác, chúng là nguyên nhân chính gây ùn tắc giao thông ở trung tâm.", lang: vi }
+        - { id: u6b, text: "Ô tô tiện lợi cho các gia đình, vì vậy chúng không gây ùn tắc giao thông.", lang: vi }
+        - { id: t1n, text: "Ô tô bất tiện cho các gia đình sống ở trung tâm thành phố.", lang: vi }
+        - { id: g9k, text: "Ùn tắc giao thông khiến các gia đình phải mua thêm ô tô.", lang: vi }
+    answer:
+      correct_option_id: j2w
+    explanation:
+      vi: On the other hand đưa ra mặt thứ hai (nhược điểm) sau khi đã nêu ưu điểm (convenient). The main cause of là "nguyên nhân chính của".
+    display_answer: "Ô tô tiện lợi cho các gia đình. Mặt khác, chúng là nguyên nhân chính gây ùn tắc giao thông ở trung tâm."
+
+  - key: en:exercise:opsoc-rev-mcq-could-be-argued
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:it-could-be-argued
+    prompt:
+      stem: "Chọn đáp án đúng: ___ that banning cars would hurt small businesses in the centre."
+      stem_lang: vi
+      options:
+        - { id: v5c, text: It could be argued, lang: en }
+        - { id: m1y, text: It could argue, lang: en }
+        - { id: d4x, text: It could be arguing, lang: en }
+        - { id: w8o, text: It can argued, lang: en }
+    answer:
+      correct_option_id: v5c
+    explanation:
+      vi: It could be argued that… là bị động với modal (could + be + V3), dùng để nêu ý kiến phía bên kia một cách khách quan.
+    display_answer: It could be argued
+
+  - key: en:exercise:opsoc-rev-fill-mixed-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:mixed-conditional
+    prompt:
+      template: "If the city {{b1}} {{b2}} more metro lines in the 2000s, we would not need a car ban now."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Nếu những năm 2000 thành phố xây thêm tuyến tàu điện thì bây giờ chúng ta đã không cần lệnh cấm ô tô."
+        - "Gợi ý: điều kiện ở quá khứ - had + V3 (build → built)."
+    answer:
+      blanks:
+        b1: [had]
+        b2: [built]
+    known_wrong:
+      - answer: would
+        feedback_vi: Mệnh đề If không chứa would - had built.
+        error_tag: would_in_if_clause
+      - answer: build
+        feedback_vi: Sau had cần V3 - built.
+        error_tag: past_participle
+      - answer: builded
+        feedback_vi: Build là động từ bất quy tắc - V3 là built.
+        error_tag: irregular_verb
+    explanation:
+      vi: Điều kiện nằm ở quá khứ (in the 2000s) nhưng kết quả ở hiện tại (now), nên đây là câu hỗn hợp - If + had + V3, would + V.
+    display_answer: If the city had built more metro lines in the 2000s, we would not need a car ban now.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:opsoc-rev-fill-reporting
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:deny-pattern
+    prompt:
+      template: "Minh {{b1}} (phủ nhận) {{b2}} (say) that all cars should be banned; he only suggested {{b3}} (limit) them at weekends."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [denied]
+        b2: [saying, having said]
+        b3: [limiting]
+    known_wrong:
+      - answer: to say
+        feedback_vi: Deny đi với V-ing - denied saying.
+        error_tag: verb_pattern
+      - answer: to limit
+        feedback_vi: Suggest đi với V-ing - suggested limiting.
+        error_tag: suggest_pattern
+      - answer: admitted
+        feedback_vi: Admitted là thừa nhận, ngược nghĩa với phủ nhận (denied).
+        error_tag: reporting_verb
+      - answer: deny
+        feedback_vi: Câu kể lại sự việc đã qua (suggested), nên dùng denied.
+        error_tag: tense
+    explanation:
+      vi: Cả deny và suggest đều đi với V-ing - denied saying, suggested limiting. Dùng quá khứ vì đây là thuật lại cuộc tranh luận đã diễn ra.
+    display_answer: Minh denied saying that all cars should be banned; he only suggested limiting them at weekends.
+
+  - key: en:exercise:opsoc-rev-translate-believed
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:it-is-said-that
+    prompt:
+      source_text: Nhiều người tin rằng lệnh cấm sẽ cải thiện chất lượng không khí.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It is widely believed that the ban will improve air quality.
+        - It's widely believed that the ban will improve air quality.
+        - It is widely believed that the ban would improve air quality.
+        - It is widely believed that the ban will improve the air quality.
+        - Many people believe that the ban will improve air quality.
+        - Many people believe the ban will improve air quality.
+        - Many people believe that the ban would improve air quality.
+        - The ban is widely believed to improve air quality.
+        - The ban is widely believed to be able to improve air quality.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It is widely believed that the ban will be improved air quality.
+        feedback_vi: Lệnh cấm là chủ thể cải thiện, nên will improve (chủ động), không dùng will be improved.
+        error_tag: active_passive
+      - answer: Many people are believe that the ban will improve air quality.
+        feedback_vi: Believe là động từ thường, không đi với are - Many people believe…
+        error_tag: be_with_verb
+      - answer: It widely believed that the ban will improve air quality.
+        feedback_vi: Thiếu is - It is widely believed that…
+        error_tag: impersonal_passive
+    explanation:
+      vi: "\"Nhiều người tin rằng\" trong văn trang trọng là It is widely believed that…; cách nói thường ngày là Many people believe that…"
+    display_answer: It is widely believed that the ban will improve air quality.
+
+  - key: en:exercise:opsoc-rev-translate-discuss
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    prompt:
+      source_text: Chúng ta nên thảo luận vấn đề này một cách nghiêm túc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We should discuss this issue seriously.
+        - We should discuss this problem seriously.
+        - We should discuss this matter seriously.
+        - We should seriously discuss this issue.
+        - We should seriously discuss this problem.
+        - We ought to discuss this issue seriously.
+        - We should discuss this issue in a serious way.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We should discuss about this issue seriously.
+        feedback_vi: Discuss không đi với about - We should discuss this issue.
+        error_tag: discuss_about
+      - answer: We should discuss about this problem seriously.
+        feedback_vi: Discuss không đi với about - We should discuss this problem.
+        error_tag: discuss_about
+      - answer: We should discussing this issue seriously.
+        feedback_vi: Sau should dùng động từ nguyên mẫu - should discuss.
+        error_tag: modal_form
+    explanation:
+      vi: Discuss là ngoại động từ - tân ngữ đi ngay sau, không có about. "Một cách nghiêm túc" là trạng từ seriously, đặt cuối câu hoặc trước discuss.
+    display_answer: We should discuss this issue seriously.
+
+  # ---------------- application ----------------
+  - key: en:exercise:opsoc-rev-mcq-conclusion
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:all-things-considered
+    prompt:
+      stem: Bạn cần viết câu kết cho bài luận nêu quan điểm (văn phong trang trọng). Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: s3f, text: "All things considered, I believe a car-free centre would benefit most residents.", lang: en }
+        - { id: n7r, text: "In conclusion, in my opinion I think a car-free centre is good.", lang: en }
+        - { id: c2d, text: "All things are considered, a car-free centre would benefit most residents.", lang: en }
+        - { id: y5m, text: "To sum up, I am agree that a car-free centre is a good idea.", lang: en }
+    answer:
+      correct_option_id: s3f
+    explanation:
+      vi: All things considered là cụm kết luận cố định, theo sau là quan điểm cuối cùng. Các phương án khác lặp ý (in my opinion I think), sai cụm (All things are considered) hoặc sai ngữ pháp (I am agree).
+    display_answer: "All things considered, I believe a car-free centre would benefit most residents."
+
+  - key: en:exercise:opsoc-rev-translate-mixed
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:public-transport
+    prompt:
+      source_text: If the city had invested in public transport earlier, fewer people would rely on motorbikes today.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu thành phố đầu tư vào giao thông công cộng sớm hơn thì ngày nay đã ít người phụ thuộc vào xe máy hơn.
+        - Nếu thành phố đã đầu tư vào giao thông công cộng sớm hơn thì ngày nay sẽ có ít người phụ thuộc vào xe máy hơn.
+        - Nếu thành phố đầu tư vào giao thông công cộng sớm hơn, ngày nay sẽ ít người phải phụ thuộc vào xe máy hơn.
+        - Nếu thành phố đầu tư vào giao thông công cộng sớm hơn thì bây giờ đã ít người phụ thuộc vào xe máy hơn.
+        - Giá mà thành phố đầu tư vào giao thông công cộng sớm hơn thì ngày nay đã ít người phụ thuộc vào xe máy hơn.
+        - Nếu thành phố đầu tư vào giao thông công cộng sớm hơn thì hiện nay đã có ít người phụ thuộc vào xe máy hơn.
+        - Nếu thành phố sớm đầu tư vào giao thông công cộng thì ngày nay đã ít người phụ thuộc vào xe máy hơn.
+        - Nếu thành phố đầu tư vào giao thông công cộng sớm hơn thì ngày nay ít người phải dựa vào xe máy hơn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Đây là câu hỗn hợp - had invested (quá khứ không có thật) dẫn tới would rely … today (kết quả ở hiện tại). Rely on là "phụ thuộc vào, dựa vào".
+    display_answer: Nếu thành phố đầu tư vào giao thông công cộng sớm hơn thì ngày nay đã ít người phụ thuộc vào xe máy hơn.
+
+  - key: en:exercise:opsoc-rev-order-wish
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:wish-past-perfect
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Giá mà chính quyền đã lắng nghe người dân.\""
+      tokens:
+        - { id: l-res, text: to residents }
+        - { id: l-would, text: would }
+        - { id: l-auth, text: the authorities }
+        - { id: l-listened, text: listened }
+        - { id: l-wish, text: I wish }
+        - { id: l-had, text: had listened }
+    answer:
+      orders:
+        - [l-wish, l-auth, l-had, l-res]
+    explanation:
+      vi: Tiếc nuối về quá khứ dùng wish + had + V3. Listened (quá khứ đơn) sau wish lại nói về hiện tại, còn would không dùng để tiếc về quá khứ.
+    display_answer: I wish the authorities had listened to residents.
+
+  - key: en:exercise:opsoc-rev-translate-take-action
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:take-action
+    prompt:
+      source_text: Theo tôi, chính quyền nên hành động ngay để giảm ùn tắc giao thông.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In my view, the authorities should take action now to reduce traffic congestion.
+        - In my opinion, the authorities should take action now to reduce traffic congestion.
+        - In my view, the authorities should take action immediately to reduce traffic congestion.
+        - In my opinion, the authorities should take action immediately to reduce traffic congestion.
+        - In my view, the authorities should act now to reduce traffic congestion.
+        - I'd argue that the authorities should take action now to reduce traffic congestion.
+        - I think the authorities should take action now to reduce traffic congestion.
+        - In my view, the government should take action now to reduce traffic congestion.
+        - In my opinion, the government should take action now to reduce traffic congestion.
+        - In my view, the authorities should take immediate action to reduce traffic congestion.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In my opinion, I think the authorities should take action now to reduce traffic congestion.
+        feedback_vi: In my opinion đã có nghĩa "tôi nghĩ" - bỏ I think.
+        error_tag: redundant_opinion
+      - answer: In my view, the authorities should do action now to reduce traffic congestion.
+        feedback_vi: Collocation đúng là take action, không phải do action.
+        error_tag: collocation
+      - answer: In my view, the authorities should make action now to reduce traffic congestion.
+        feedback_vi: Collocation đúng là take action, không phải make action.
+        error_tag: collocation
+    explanation:
+      vi: Mở đầu bằng In my view (không thêm I think); "hành động" trong ngữ cảnh chính sách là take action. "Để giảm" là to + V - to reduce.
+    display_answer: In my view, the authorities should take action now to reduce traffic congestion.
+
+  - key: en:exercise:opsoc-rev-translate-warn
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:warn-pattern
+    prompt:
+      source_text: Cảnh sát cảnh báo chúng tôi không được lái xe vào trung tâm thành phố.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The police warned us not to drive into the city centre.
+        - The police warned us not to drive into the city center.
+        - The police warned us not to drive into the centre.
+        - The police warned us not to drive into the center.
+        - The police warned us not to drive in the city centre.
+        - The police warned us not to drive in the city center.
+        - The police warned us that we must not drive into the city centre.
+        - The police warned us that we couldn't drive into the city centre.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The police warned us don't drive into the city centre.
+        feedback_vi: Warn sb not to V - warned us not to drive.
+        error_tag: verb_pattern
+      - answer: The police warned us not drive into the city centre.
+        feedback_vi: Thiếu to - warned us not to drive.
+        error_tag: verb_pattern
+      - answer: The police warned to us not to drive into the city centre.
+        feedback_vi: Warn đi thẳng với tân ngữ người, không có to - warned us.
+        error_tag: verb_pattern
+    explanation:
+      vi: Warn + tân ngữ + not to + V là cấu trúc cảnh báo ai đừng làm gì. Police luôn đi với động từ số nhiều và có the.
+    display_answer: The police warned us not to drive into the city centre.

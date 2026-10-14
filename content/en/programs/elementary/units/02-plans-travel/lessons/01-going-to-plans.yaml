@@ -1,0 +1,395 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:going-to-plans
+order_index: 1
+level: a2
+title:
+  vi: Bạn định làm gì?
+objectives:
+  - vi: Nói về kế hoạch đã quyết định bằng be going to + động từ nguyên mẫu.
+  - vi: Dùng đúng các mốc thời gian tương lai - next week, tonight, in two days, the day after tomorrow.
+  - vi: Hỏi và trả lời về kế hoạch cho kỳ nghỉ, cuối tuần.
+estimated_minutes: 12
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:past-stories-review]
+items:
+  - item: en:item:be-going-to
+  - item: en:item:next-week
+  - item: en:item:in-two-days
+  - item: en:item:the-day-after-tomorrow
+  - item: en:item:tonight
+  - item: en:item:holiday
+  - item: en:item:visit
+  - item: en:item:stay
+  - item: en:item:go-sightseeing
+  - item: en:item:plan
+  - item: en:item:what-are-you-going-to-do
+  - item: en:item:soon
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được kế hoạch của mình như "Tuần sau tôi sẽ đi Đà Lạt" hay "Tối nay tôi định xem phim" bằng be going to, và hỏi lại người khác "Bạn định làm gì?".
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần thêm "sẽ" hoặc "định" trước động từ, thậm chí bỏ luôn - "Tuần sau tôi đi Đà Lạt". Tiếng Anh thì phải đổi dạng câu - khi nói về kế hoạch bạn đã quyết định, dùng be going to + động từ nguyên mẫu. I am going to visit Da Lat next week.
+  - type: explain
+    text:
+      vi: Be đổi theo chủ ngữ giống bài I am - I am, he/she is, you/we/they are; động từ sau to luôn giữ nguyên mẫu. Câu hỏi đảo be lên trước - Are you going to stay at a hotel? Phủ định thêm not - She isn't going to come.
+  - type: explain
+    text:
+      vi: Mốc thời gian tương lai thường đứng cuối câu - tonight (tối nay), next week (tuần sau), in two days (hai ngày nữa), the day after tomorrow (ngày kia), soon (sắp). Không thêm in hay on trước next và tonight.
+  - type: deep_explain
+    text:
+      vi: Nếu nói thì hiện tại đơn "I go to Da Lat next week", người bản ngữ vẫn hiểu nhưng nghe như lịch trình cố định hoặc sai ngữ pháp; thì hiện tại đơn dùng cho thói quen. Going to cho thấy bạn đã có ý định từ trước khi nói, thường đã chuẩn bị một phần. Trong hội thoại, I'm going to thường được đọc lướt thành "I'm gonna", nhưng bạn không nên viết gonna trong bài viết hay email.
+  - type: example
+    target: I'm going to visit Da Lat next week.
+    target_lang: en
+    translation:
+      vi: Tuần sau tôi sẽ đi Đà Lạt.
+    note:
+      vi: Đã quyết định từ trước nên dùng going to; next week đứng cuối, không có in.
+  - type: example
+    target: What are you going to do tonight?
+    target_lang: en
+    translation:
+      vi: Tối nay bạn định làm gì?
+    note:
+      vi: Câu hỏi đảo are lên trước you; do ở cuối là động từ chính "làm".
+  - type: example
+    target: We're going to stay with my aunt in two days.
+    target_lang: en
+    translation:
+      vi: Hai ngày nữa chúng tôi sẽ đến ở nhà dì tôi.
+    note:
+      vi: In two days là "hai ngày nữa", tính từ hôm nay.
+  - type: example
+    target: She isn't going to go sightseeing. She's going to relax at the hotel.
+    target_lang: en
+    translation:
+      vi: Cô ấy sẽ không đi tham quan. Cô ấy định nghỉ ngơi ở khách sạn.
+    note:
+      vi: Phủ định chỉ cần thêm not sau be - isn't going to.
+  - type: common_mistake
+    wrong: I go to Da Lat next week.
+    right: I'm going to go to Da Lat next week.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "Tuần sau tôi đi Đà Lạt" không cần "sẽ", nhưng tiếng Anh cần dạng tương lai. Kế hoạch đã quyết định thì dùng be going to.
+  - type: common_mistake
+    wrong: I going to visit my grandparents.
+    right: I am going to visit my grandparents.
+    target_lang: en
+    note:
+      vi: Thiếu be. Going to luôn đi cùng am/is/are, giống như "I am a student" không được bỏ am.
+  - type: common_mistake
+    wrong: We are going to visited Hue in next month.
+    right: We are going to visit Hue next month.
+    target_lang: en
+    note:
+      vi: Sau to là động từ nguyên mẫu (visit), và không dùng in trước next month.
+  - type: summary
+    points:
+      - vi: Kế hoạch đã quyết định - be (am/is/are) + going to + động từ nguyên mẫu.
+      - vi: Câu hỏi - Are you going to…? / What are you going to do? Phủ định - isn't / aren't / am not going to.
+      - vi: Mốc thời gian - tonight, next week, in two days, the day after tomorrow, soon; không thêm in/on trước next và tonight.
+      - vi: Đừng dùng hiện tại đơn (I go…) để nói kế hoạch tương lai.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:going-to-plans-mcq-be
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:be-going-to
+    prompt:
+      stem: "Chọn câu đúng: \"Tuần sau anh ấy sẽ đi Huế.\""
+      stem_lang: vi
+      options:
+        - { id: q7r, text: He going to visit Hue next week., lang: en }
+        - { id: m2c, text: He is going to visit Hue next week., lang: en }
+        - { id: x5d, text: He is going to visits Hue next week., lang: en }
+        - { id: b9k, text: He is going visit Hue next week., lang: en }
+    answer:
+      correct_option_id: m2c
+    explanation:
+      vi: Cần đủ ba phần - is (be theo he) + going to + visit (nguyên mẫu). Các câu còn lại thiếu is, thêm -s vào visit hoặc thiếu to.
+    display_answer: He is going to visit Hue next week.
+
+  - key: en:exercise:going-to-plans-mcq-time
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:the-day-after-tomorrow
+    prompt:
+      stem: "\"Ngày kia\" trong tiếng Anh là gì?"
+      stem_lang: vi
+      options:
+        - { id: t4w, text: the day after tomorrow, lang: en }
+        - { id: h8n, text: next day, lang: en }
+        - { id: e3v, text: in two weeks, lang: en }
+        - { id: z6p, text: tonight, lang: en }
+    answer:
+      correct_option_id: t4w
+    explanation:
+      vi: Tiếng Anh không có một từ riêng cho "ngày kia", nên nói the day after tomorrow (ngày sau ngày mai). In two weeks là "hai tuần nữa", tonight là "tối nay".
+    display_answer: the day after tomorrow
+
+  - key: en:exercise:going-to-plans-listen-plan
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:in-two-days
+    prompt:
+      audio_asset_id: null
+      fallback_text: We're going to fly to Phu Quoc in two days.
+      options:
+        - { id: r1s, text: Hai ngày nữa chúng tôi sẽ bay đi Phú Quốc., lang: vi }
+        - { id: k6f, text: Chúng tôi sẽ ở Phú Quốc trong hai ngày., lang: vi }
+        - { id: u3j, text: Hai ngày trước chúng tôi bay đi Phú Quốc., lang: vi }
+        - { id: d8m, text: Họ sẽ bay đi Phú Quốc vào ngày mai., lang: vi }
+    answer:
+      correct_option_id: r1s
+    explanation:
+      vi: In two days là "hai ngày nữa" (thời điểm trong tương lai), không phải "trong hai ngày". We're going to cho biết đây là kế hoạch của "chúng tôi".
+    display_answer: Hai ngày nữa chúng tôi sẽ bay đi Phú Quốc.
+
+  - key: en:exercise:going-to-plans-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:be-going-to
+    prompt:
+      template: "They {{b1}} going to {{b2}} sightseeing tomorrow."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Ngày mai họ sẽ đi tham quan."
+        - "Gợi ý: they đi với are; cụm 'đi tham quan' là go sightseeing."
+    answer:
+      blanks:
+        b1: [are]
+        b2: [go]
+    known_wrong:
+      - answer: is
+        feedback_vi: They là số nhiều, đi với are.
+        error_tag: be_form
+      - answer: goes
+        feedback_vi: Sau to luôn là động từ nguyên mẫu - go.
+        error_tag: verb_form
+      - answer: going
+        feedback_vi: Sau to dùng động từ nguyên mẫu go, không dùng going.
+        error_tag: verb_form
+    explanation:
+      vi: They đi với are; sau going to là động từ nguyên mẫu, nên go sightseeing.
+    display_answer: They are going to go sightseeing tomorrow.
+
+  - key: en:exercise:going-to-plans-order-question
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:what-are-you-going-to-do
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Tối nay bạn định làm gì?\""
+      tokens:
+        - { id: w-to, text: to }
+        - { id: w-you, text: you }
+        - { id: w-tonight, text: tonight }
+        - { id: w-do, text: do }
+        - { id: w-what, text: What }
+        - { id: w-going, text: going }
+        - { id: w-are, text: are }
+        - { id: w-is, text: is }
+    answer:
+      orders:
+        - [w-what, w-are, w-you, w-going, w-to, w-do, w-tonight]
+    explanation:
+      vi: Câu hỏi đảo be lên trước chủ ngữ - What are you going to do; tonight đứng cuối. You đi với are, không đi với is.
+    display_answer: What are you going to do tonight?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:going-to-plans-fill-neg
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:stay
+    prompt:
+      template: "I'm not going to stay {{b1}} a hotel. I'm going to stay {{b2}} my cousin."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [at, in]
+        b2: [with]
+    known_wrong:
+      - answer: on
+        feedback_vi: Ở khách sạn dùng stay at (hoặc in) a hotel, không dùng on.
+        error_tag: preposition
+      - answer: to
+        feedback_vi: Stay không đi với to. Ở khách sạn - stay at; ở nhà ai - stay with.
+        error_tag: preposition
+    explanation:
+      vi: Stay at + nơi chốn (a hotel), stay with + người (my cousin). Tiếng Việt chỉ nói "ở" cho cả hai, nhưng tiếng Anh tách thành at và with.
+    display_answer: I'm not going to stay at a hotel. I'm going to stay with my cousin.
+
+  - key: en:exercise:going-to-plans-translate-dalat
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:next-week
+    prompt:
+      source_text: Tuần sau tôi sẽ đi Đà Lạt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I am going to go to Da Lat next week.
+        - I'm going to go to Da Lat next week.
+        - I am going to visit Da Lat next week.
+        - I'm going to visit Da Lat next week.
+        - Next week I am going to go to Da Lat.
+        - Next week I'm going to go to Da Lat.
+        - Next week I am going to visit Da Lat.
+        - Next week I'm going to visit Da Lat.
+        - I am going to Da Lat next week.
+        - I'm going to Da Lat next week.
+        - I am going to go to Dalat next week.
+        - I'm going to go to Dalat next week.
+        - I am going to visit Dalat next week.
+        - I'm going to visit Dalat next week.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I go to Da Lat next week.
+        feedback_vi: Kế hoạch tương lai cần be going to - I'm going to go to Da Lat next week.
+        error_tag: future_form
+      - answer: I going to go to Da Lat next week.
+        feedback_vi: Thiếu am - I am going to go to Da Lat next week.
+        error_tag: missing_be
+      - answer: I am going to go to Da Lat in next week.
+        feedback_vi: Không dùng in trước next week.
+        error_tag: preposition
+      - answer: I will going to Da Lat next week.
+        feedback_vi: Sau will là động từ nguyên mẫu, và không trộn will với going - I'm going to go to Da Lat next week.
+        error_tag: verb_form
+    explanation:
+      vi: Đây là kế hoạch đã quyết định nên dùng be going to + go/visit; next week đứng đầu hoặc cuối câu, không có in. I'm going to Da Lat cũng đúng vì đây là cách nói lịch đã sắp xếp.
+    display_answer: I'm going to go to Da Lat next week.
+
+  - key: en:exercise:going-to-plans-translate-holiday
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:holiday
+    prompt:
+      source_text: Bạn có định đi nghỉ vào tháng Bảy không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Are you going to go on holiday in July?
+        - Are you going on holiday in July?
+        - Are you going to go on vacation in July?
+        - Are you going on vacation in July?
+        - Are you going to take a holiday in July?
+        - Are you going to take a vacation in July?
+        - In July, are you going to go on holiday?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You are going to go on holiday in July?
+        feedback_vi: Câu hỏi phải đảo are lên trước you - Are you going to…?
+        error_tag: word_order
+      - answer: Do you go on holiday in July?
+        feedback_vi: Hỏi kế hoạch tương lai dùng Are you going to…?, không dùng hiện tại đơn.
+        error_tag: future_form
+      - answer: Are you going to go to holiday in July?
+        feedback_vi: Đi nghỉ là go on holiday, không phải go to holiday.
+        error_tag: preposition
+    explanation:
+      vi: Hỏi về kế hoạch - Are you going to + go on holiday. Tháng dùng in (in July). Người Mỹ thường nói vacation thay cho holiday.
+    display_answer: Are you going to go on holiday in July?
+
+  # ---------------- application ----------------
+  - key: en:exercise:going-to-plans-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:the-day-after-tomorrow
+    prompt:
+      source_text: My parents are going to visit us the day after tomorrow.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày kia bố mẹ tôi sẽ đến thăm chúng tôi.
+        - Ngày kia bố mẹ tôi sẽ đến thăm chúng ta.
+        - Ngày kia bố mẹ tôi sẽ tới thăm chúng tôi.
+        - Bố mẹ tôi sẽ đến thăm chúng tôi vào ngày kia.
+        - Bố mẹ tôi sẽ đến thăm chúng tôi ngày kia.
+        - Ngày kia ba mẹ tôi sẽ đến thăm chúng tôi.
+        - Ba mẹ tôi sẽ đến thăm chúng tôi vào ngày kia.
+        - Ngày kia bố mẹ mình sẽ đến thăm bọn mình.
+        - Ngày kia bố mẹ tôi định đến thăm chúng tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Are going to visit là "sẽ/định đến thăm"; the day after tomorrow là "ngày kia". Tiếng Việt thường đưa mốc thời gian lên đầu câu.
+    display_answer: Ngày kia bố mẹ tôi sẽ đến thăm chúng tôi.
+
+  - key: en:exercise:going-to-plans-order-neg
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-going-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy sẽ không ở lại lâu.\""
+      tokens:
+        - { id: n-long, text: long }
+        - { id: n-going, text: going }
+        - { id: n-she, text: She }
+        - { id: n-stay, text: stay }
+        - { id: n-to, text: to }
+        - { id: n-isnt, text: "isn't" }
+        - { id: n-stays, text: stays }
+        - { id: n-dont, text: "don't" }
+    answer:
+      orders:
+        - [n-she, n-isnt, n-going, n-to, n-stay, n-long]
+    explanation:
+      vi: Phủ định của going to chỉ cần not sau be - She isn't going to stay. Không dùng don't, và sau to là stay nguyên mẫu.
+    display_answer: She isn't going to stay long.
+
+  - key: en:exercise:going-to-plans-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:plan
+    prompt:
+      stem: "Đồng nghiệp hỏi: \"Do you have any plans for the weekend?\" Bạn đã đặt vé đi Vũng Tàu từ tuần trước. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a5y, text: "Yes, I'm going to go to Vung Tau with my family.", lang: en }
+        - { id: c2l, text: "Yes, I go to Vung Tau every weekend with my family.", lang: en }
+        - { id: g7o, text: "Yes, I going to Vung Tau with my family.", lang: en }
+        - { id: s1i, text: "Yes, I'm going to went to Vung Tau with my family.", lang: en }
+    answer:
+      correct_option_id: a5y
+    explanation:
+      vi: Kế hoạch đã quyết định từ trước - I'm going to go. Hiện tại đơn every weekend là thói quen, không phải kế hoạch; hai câu kia thiếu am hoặc dùng sai dạng động từ.
+    display_answer: "Yes, I'm going to go to Vung Tau with my family."

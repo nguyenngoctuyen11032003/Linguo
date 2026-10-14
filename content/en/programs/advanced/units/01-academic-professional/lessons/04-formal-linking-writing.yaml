@@ -1,0 +1,436 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:formal-linking-writing
+order_index: 4
+level: c1
+title:
+  vi: Từ nối nâng cao & viết email, báo cáo trang trọng
+objectives:
+  - vi: Dùng đúng whereas, notwithstanding, albeit, consequently, thereby, although, despite.
+  - vi: Tránh lỗi "Although… but…" và "despite of" do dịch từ tiếng Việt.
+  - vi: Chuyển câu thân mật sang văn phong trang trọng và viết mở đầu, kết thúc email công việc, đoạn tóm tắt báo cáo.
+estimated_minutes: 18
+skills: [grammar, vocabulary, writing, reading]
+prerequisites: [en:lesson:cleft-inversion]
+items:
+  - item: en:item:although-without-but
+  - item: en:item:despite-in-spite-of
+  - item: en:item:whereas
+    role: reuse
+  - item: en:item:notwithstanding
+  - item: en:item:albeit
+  - item: en:item:consequently
+  - item: en:item:thereby
+  - item: en:item:register-shift
+  - item: en:item:i-am-writing-to
+  - item: en:item:please-find-attached
+  - item: en:item:further-to
+  - item: en:item:in-summary
+  - item: en:item:inversion-conditional
+    role: reuse
+  - item: en:item:significant-increase
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nối ý mạch lạc và đúng văn phong khi viết email công việc hoặc đoạn tóm tắt báo cáo, ví dụ "Sales rose by 12%, whereas costs remained stable, thereby improving our margin."
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "Mặc dù… nhưng…", còn tiếng Anh chỉ dùng một liên từ - Although X, Y hoặc X, but Y. Despite và in spite of là giới từ nên theo sau là danh từ hoặc V-ing, và không bao giờ có despite of.
+  - type: explain
+    text:
+      vi: Whereas đối chiếu hai sự việc trái ngược; albeit (tuy) đi với tính từ/trạng từ ngắn; notwithstanding (bất chấp) rất trang trọng. Consequently (do đó) mở đầu câu mới, còn thereby + V-ing nói kết quả trực tiếp của hành động vừa nêu.
+  - type: explain
+    text:
+      vi: Chuyển văn phong thân mật sang trang trọng - bỏ viết tắt, thay cụm động từ bằng từ trang trọng (get → obtain, ask for → request, find out → determine, need → require), dùng câu bị động hoặc danh từ hoá. Email trang trọng có khung quen thuộc - I am writing to…, Further to…, Please find attached…, Should you have any questions….
+  - type: deep_explain
+    text:
+      vi: Dấu câu đi kèm từ nối quan trọng - Consequently, However đứng sau dấu chấm hoặc chấm phẩy rồi có dấu phẩy (…late; consequently, …). Whereas thường có dấu phẩy phía trước. Một đoạn tóm tắt báo cáo tốt thường gồm - mục đích (This report outlines…), kết quả chính có số liệu, và khuyến nghị (It is recommended that…).
+  - type: example
+    target: Although the proposal is costly, it offers long-term benefits.
+    target_lang: en
+    translation:
+      vi: Mặc dù đề xuất tốn kém nhưng nó mang lại lợi ích lâu dài.
+    note:
+      vi: Chỉ có although, không có but - dù tiếng Việt có "nhưng".
+  - type: example
+    target: The northern branch exceeded its target, whereas the southern branch fell short.
+    target_lang: en
+    translation:
+      vi: Chi nhánh phía Bắc vượt chỉ tiêu, trong khi chi nhánh phía Nam không đạt.
+    note:
+      vi: Whereas đối chiếu hai vế trái ngược, có dấu phẩy phía trước.
+  - type: example
+    target: The company automated its invoicing, thereby reducing errors by 40%.
+    target_lang: en
+    translation:
+      vi: Công ty đã tự động hoá việc xuất hoá đơn, nhờ đó giảm 40% sai sót.
+    note:
+      vi: Thereby + V-ing, không cần chủ ngữ mới.
+  - type: example
+    target: Further to our meeting on Monday, please find attached the revised schedule.
+    target_lang: en
+    translation:
+      vi: Tiếp theo cuộc họp hôm thứ Hai, xin gửi kèm lịch trình đã được điều chỉnh.
+    note:
+      vi: Hai cụm mở đầu email trang trọng rất phổ biến, theo sau là danh từ.
+  - type: common_mistake
+    wrong: Although the weather was bad, but the event was a success.
+    right: Although the weather was bad, the event was a success.
+    target_lang: en
+    note:
+      vi: Lỗi dịch từng chữ "Mặc dù… nhưng…". Tiếng Anh chỉ cần although; muốn giữ but thì bỏ although - The weather was bad, but….
+  - type: common_mistake
+    wrong: Despite of the delays, the project was completed on time.
+    right: Despite the delays, the project was completed on time.
+    target_lang: en
+    note:
+      vi: Không có despite of. Dùng despite hoặc in spite of.
+  - type: common_mistake
+    wrong: The economy is recovering, albeit it is slow.
+    right: The economy is recovering, albeit slowly.
+    target_lang: en
+    note:
+      vi: Albeit không đi với mệnh đề đầy đủ. Muốn dùng mệnh đề thì chuyển sang although it is slow.
+  - type: summary
+    points:
+      - vi: Although X, Y hoặc X, but Y - không dùng cả hai.
+      - vi: Despite / in spite of + danh từ / V-ing; không có despite of; mệnh đề thì dùng despite the fact that.
+      - vi: Whereas (trong khi đó), albeit + từ/cụm ngắn, notwithstanding (bất chấp, rất trang trọng).
+      - vi: Consequently mở đầu câu mới; thereby + V-ing nói kết quả trực tiếp.
+      - vi: Email trang trọng - I am writing to…, Further to…, Please find attached…, Should you have any questions…; báo cáo - In summary, ….
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:linking-mcq-although
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:although-without-but
+    prompt:
+      stem: "Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f2s, text: "Although sales fell, but profits increased.", lang: en }
+        - { id: m6n, text: "Although sales fell, profits increased.", lang: en }
+        - { id: z1j, text: "Despite of the fall in sales, profits increased.", lang: en }
+        - { id: t8o, text: "Despite sales fell, profits increased.", lang: en }
+    answer:
+      correct_option_id: m6n
+    explanation:
+      vi: Although đã đủ nghĩa "mặc dù… nhưng" nên không thêm but. Despite không có of, và không đi trực tiếp với mệnh đề (sales fell).
+    display_answer: "Although sales fell, profits increased."
+
+  - key: en:exercise:linking-mcq-albeit
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:albeit
+    prompt:
+      stem: "Chọn từ phù hợp: The economy is recovering, ___ slowly."
+      stem_lang: vi
+      options:
+        - { id: c4b, text: albeit, lang: en }
+        - { id: y9g, text: despite, lang: en }
+        - { id: p5x, text: whereas, lang: en }
+        - { id: a3r, text: thereby, lang: en }
+    answer:
+      correct_option_id: c4b
+    explanation:
+      vi: Albeit (tuy) đi trước trạng từ/tính từ ngắn - albeit slowly. Despite cần danh từ, whereas cần mệnh đề đối lập, thereby cần V-ing.
+    display_answer: albeit
+
+  - key: en:exercise:linking-listen-whereas
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:whereas
+    prompt:
+      audio_asset_id: null
+      fallback_text: The northern region grew by eight percent, whereas the south declined slightly.
+      options:
+        - { id: d8k, text: "Miền Bắc tăng trưởng 8%, trong khi miền Nam giảm nhẹ.", lang: vi }
+        - { id: l3e, text: "Miền Bắc tăng trưởng 8%, vì vậy miền Nam giảm nhẹ.", lang: vi }
+        - { id: v6q, text: "Cả miền Bắc và miền Nam đều tăng trưởng 8%.", lang: vi }
+        - { id: h2w, text: "Miền Bắc giảm 8%, trong khi miền Nam tăng nhẹ.", lang: vi }
+    answer:
+      correct_option_id: d8k
+    explanation:
+      vi: Whereas là "trong khi (đó)", đối chiếu hai xu hướng trái ngược - grew (tăng) và declined (giảm). Nó không chỉ nguyên nhân - kết quả như vì vậy.
+    display_answer: "Miền Bắc tăng trưởng 8%, trong khi miền Nam giảm nhẹ."
+
+  - key: en:exercise:linking-fill-despite-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:despite-in-spite-of
+    prompt:
+      template: "{{b1}} the delays, the project was completed within budget. {{b2}}, the client renewed the contract."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 12 }
+      hint_levels:
+        - "Nghĩa: Mặc dù bị chậm trễ, dự án vẫn hoàn thành trong ngân sách. Do đó, khách hàng đã gia hạn hợp đồng."
+        - "Gợi ý: ô 1 là giới từ nhượng bộ đi với danh từ (D…); ô 2 là trạng từ nối chỉ kết quả (C…)."
+    answer:
+      blanks:
+        b1: [Despite, In spite of, Notwithstanding]
+        b2: [Consequently, As a result, Therefore, As a consequence]
+    known_wrong:
+      - answer: Despite of
+        feedback_vi: Không có despite of - chỉ despite hoặc in spite of.
+        error_tag: despite_of
+      - answer: Although
+        feedback_vi: Although cần mệnh đề (although there were delays); trước danh từ the delays dùng despite.
+        error_tag: although_despite
+      - answer: Whereas
+        feedback_vi: Whereas đối chiếu hai vế trái ngược, không chỉ kết quả hay nhượng bộ ở đây.
+        error_tag: linker_choice
+    explanation:
+      vi: The delays là danh từ nên dùng giới từ despite/in spite of. Câu sau là kết quả của câu trước nên dùng Consequently hoặc As a result.
+    display_answer: Despite the delays, the project was completed within budget. Consequently, the client renewed the contract.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:linking-fill-register
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:register-shift
+    prompt:
+      template: "Informal - \"We need more info. Can you find out the cost?\" → Formal - \"Further information is {{b1}}. Could you please {{b2}} the cost?\""
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [required, needed]
+        b2: [determine, confirm, ascertain, establish, clarify, check]
+    known_wrong:
+      - answer: find out
+        feedback_vi: Find out là cụm động từ thân mật; văn trang trọng dùng determine/confirm/ascertain.
+        error_tag: register
+      - answer: need
+        feedback_vi: Sau is cần quá khứ phân từ (bị động) - is required.
+        error_tag: passive
+      - answer: requested
+        feedback_vi: Requested là "được yêu cầu"; ý "cần có" là required.
+        error_tag: word_choice
+    explanation:
+      vi: Văn trang trọng dùng bị động với require (Further information is required) và động từ đơn gốc Latin thay cụm động từ - find out → determine/confirm.
+    display_answer: Further information is required. Could you please determine the cost?
+
+  - key: en:exercise:linking-translate-although
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:although-without-but
+    prompt:
+      source_text: Mặc dù đề xuất tốn kém nhưng nó mang lại lợi ích lâu dài.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Although the proposal is costly, it offers long-term benefits.
+        - Although the proposal is expensive, it offers long-term benefits.
+        - Although the proposal is costly, it brings long-term benefits.
+        - Although the proposal is expensive, it brings long-term benefits.
+        - Although the proposal is costly, it provides long-term benefits.
+        - Although the proposal is costly, it delivers long-term benefits.
+        - Though the proposal is costly, it offers long-term benefits.
+        - Even though the proposal is costly, it offers long-term benefits.
+        - Even though the proposal is expensive, it brings long-term benefits.
+        - The proposal is costly, but it offers long-term benefits.
+        - The proposal is expensive, but it offers long-term benefits.
+        - The proposal is expensive, but it brings long-term benefits.
+        - Despite being costly, the proposal offers long-term benefits.
+        - Despite its cost, the proposal offers long-term benefits.
+        - Despite the cost, the proposal offers long-term benefits.
+        - Although costly, the proposal offers long-term benefits.
+        - Although the proposal is costly, it offers long term benefits.
+        - Although the proposal is costly, it has long-term benefits.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Although the proposal is costly, but it offers long-term benefits.
+        feedback_vi: Không dùng cả although và but - bỏ but đi.
+        error_tag: although_but
+      - answer: Although the proposal is expensive, but it brings long-term benefits.
+        feedback_vi: Không dùng cả although và but - bỏ một trong hai.
+        error_tag: although_but
+      - answer: Despite the proposal is costly, it offers long-term benefits.
+        feedback_vi: Despite không đi với mệnh đề; dùng although hoặc despite being costly.
+        error_tag: although_despite
+      - answer: Despite of being costly, the proposal offers long-term benefits.
+        feedback_vi: Không có despite of - chỉ despite.
+        error_tag: despite_of
+    explanation:
+      vi: “Mặc dù… nhưng…” trong tiếng Anh chỉ cần một liên từ - Although X, Y hoặc X, but Y. Despite thì theo sau là danh từ/V-ing (despite being costly).
+    display_answer: Although the proposal is costly, it offers long-term benefits.
+
+  - key: en:exercise:linking-translate-thereby
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:thereby
+    prompt:
+      source_text: Công ty đã tự động hoá quy trình, nhờ đó giảm sai sót. (dùng thereby)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The company automated the process, thereby reducing errors.
+        - The company automated the process, thereby reducing mistakes.
+        - The company automated its process, thereby reducing errors.
+        - The company automated its processes, thereby reducing errors.
+        - The company automated the process, thereby cutting errors.
+        - The company has automated the process, thereby reducing errors.
+        - The company automated the procedure, thereby reducing errors.
+        - The company automated the process, thereby reducing the number of errors.
+        - The company automated the process and thereby reduced errors.
+        - The company automated the process, thereby minimising errors.
+        - The company automated the process, thereby minimizing errors.
+        - The company automated the process, thereby decreasing errors.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The company automated the process, thereby it reduced errors.
+        feedback_vi: Sau thereby dùng V-ing, không thêm chủ ngữ - thereby reducing errors.
+        error_tag: thereby_form
+      - answer: The company automated the process, thereby reduce errors.
+        feedback_vi: Sau thereby (đứng sau dấu phẩy) dùng V-ing - thereby reducing.
+        error_tag: thereby_form
+      - answer: The company automated the process, therefore reducing errors.
+        feedback_vi: Đề yêu cầu thereby (nhờ đó); therefore thường mở đầu mệnh đề mới có chủ ngữ.
+        error_tag: linker_choice
+    explanation:
+      vi: Thereby + V-ing diễn tả kết quả trực tiếp của hành động vừa nêu, chung chủ ngữ với vế trước. Vì vậy không cần chủ ngữ mới sau thereby.
+    display_answer: The company automated the process, thereby reducing errors.
+
+  # ---------------- application ----------------
+  - key: en:exercise:linking-mcq-email-opening
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:i-am-writing-to
+    prompt:
+      stem: "Bạn viết email đầu tiên cho phòng nhân sự một công ty để hỏi về vị trí tuyển dụng. Câu mở đầu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: s7c, text: "I am writing to enquire about the Marketing Analyst position advertised on your website.", lang: en }
+        - { id: g1t, text: "Hey! Just wanted to ask about the job you posted.", lang: en }
+        - { id: o4m, text: "I write this email to ask you about the job.", lang: en }
+        - { id: j9y, text: "My name is Lan and I want the job on your website.", lang: en }
+    answer:
+      correct_option_id: s7c
+    explanation:
+      vi: I am writing to + V là cách nêu mục đích chuẩn trong email trang trọng; enquire about trang trọng hơn ask about. Hey!/Just wanted quá thân mật, I write this email to là dịch từng chữ, I want the job thiếu lịch sự.
+    display_answer: "I am writing to enquire about the Marketing Analyst position advertised on your website."
+
+  - key: en:exercise:linking-order-attached
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:please-find-attached
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tiếp theo cuộc họp của chúng ta, xin gửi kèm bản ngân sách đã chỉnh sửa.\""
+      tokens:
+        - { id: a-attached, text: attached }
+        - { id: a-meeting, text: our meeting }
+        - { id: a-find, text: find }
+        - { id: a-budget, text: the revised budget }
+        - { id: a-further, text: Further to }
+        - { id: a-please, text: please }
+        - { id: a-despite, text: despite }
+    answer:
+      orders:
+        - [a-further, a-meeting, a-please, a-find, a-attached, a-budget]
+        - [a-further, a-meeting, a-please, a-find, a-budget, a-attached]
+    explanation:
+      vi: Further to + danh từ (our meeting) mở đầu email; trật tự cố định là please find attached + tân ngữ. Despite không hợp nghĩa.
+    display_answer: Further to our meeting, please find attached the revised budget.
+
+  - key: en:exercise:linking-translate-to-vi-summary
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:in-summary
+    prompt:
+      source_text: In summary, online sales rose significantly, whereas in-store sales remained stable.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến đã tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số online tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh thu trực tuyến tăng đáng kể, trong khi doanh thu tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, còn doanh số tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng mạnh, trong khi doanh số tại cửa hàng vẫn ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng giữ ổn định.
+        - Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số bán hàng tại cửa hàng không thay đổi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: In summary là "tóm lại"; whereas đối chiếu hai xu hướng, dịch "trong khi (đó)" hoặc "còn". Remained stable là "vẫn ổn định".
+    display_answer: Tóm lại, doanh số bán hàng trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng vẫn ổn định.
+
+  - key: en:exercise:linking-translate-formal-request
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:register-shift
+    prompt:
+      source_text: Chúng tôi cần thêm thông tin trước khi đưa ra quyết định. (viết trang trọng, dùng require)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We require further information before making a decision.
+        - We require further information before we make a decision.
+        - We require further information before reaching a decision.
+        - We require additional information before making a decision.
+        - We require more information before making a decision.
+        - We require further information before making a final decision.
+        - Further information is required before a decision can be made.
+        - Further information is required before a decision is made.
+        - Further information is required before making a decision.
+        - Additional information is required before a decision can be made.
+        - We will require further information before making a decision.
+        - We would require further information before making a decision.
+        - We require further information prior to making a decision.
+        - Further information is required prior to making a decision.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We require further informations before making a decision.
+        feedback_vi: Information không đếm được, không thêm -s.
+        error_tag: uncountable_noun
+      - answer: We require further information before doing a decision.
+        feedback_vi: Decision đi với make, không phải do.
+        error_tag: collocation
+      - answer: We need more info before deciding.
+        feedback_vi: Câu đúng nghĩa nhưng thân mật (need, info); đề yêu cầu văn trang trọng với require.
+        error_tag: register
+      - answer: We require further information before make a decision.
+        feedback_vi: Sau giới từ before dùng V-ing - before making.
+        error_tag: verb_form
+    explanation:
+      vi: Bản trang trọng dùng require thay need, further information thay more info, và before making a decision (hoặc bị động - before a decision can be made). Information không đếm được.
+    display_answer: We require further information before making a decision.

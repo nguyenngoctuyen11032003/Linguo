@@ -1,0 +1,1083 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Kể chuyện quá khứ" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: was / were ----------------
+  - key: en:item:be-past
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: was / were
+      ipa: was UK /wɒz/ · US /wʌz/ (đọc nhẹ /wəz/) · were UK /wɜː/ · US /wɝː/
+      pos: động từ be (quá khứ)
+    back:
+      meaning:
+        vi: "đã là, đã ở, (lúc đó) thì: I, he, she, it → was; you, we, they → were"
+      examples:
+        - target: I was at home yesterday.
+          translation:
+            vi: Hôm qua mình ở nhà.
+        - target: They were very tired last night.
+          translation:
+            vi: Tối qua họ rất mệt.
+      pronunciation_note:
+        vi: Trong câu nói nhanh, was thường đọc nhẹ thành /wəz/ (gần "wơz"), were thành /wə/. Khi đứng cuối câu trả lời ngắn (Yes, it was.) thì đọc rõ.
+      confusion:
+        vi: Tiếng Việt thêm "đã", "hôm qua" mà động từ không đổi; tiếng Anh phải đổi am/is sang was, are sang were. Không nói "I were" hay "they was".
+
+  - key: en:item:be-past-negative
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: wasn't / weren't · Was…? / Were…?
+      ipa: wasn't UK /ˈwɒznt/ · US /ˈwʌznt/ · weren't UK /wɜːnt/ · US /wɝːnt/
+      pos: phủ định và câu hỏi với be (quá khứ)
+    back:
+      meaning:
+        vi: "không (đã không) là / ở: was not = wasn't, were not = weren't; câu hỏi đảo was/were lên đầu"
+      examples:
+        - target: The film wasn't very good.
+          translation:
+            vi: Bộ phim không hay lắm.
+        - target: "Were you at work on Monday? - No, I wasn't."
+          translation:
+            vi: "Thứ Hai bạn có đi làm không? - Không."
+      confusion:
+        vi: Câu phủ định và câu hỏi với was/were không dùng did. Nói Was it cold?, không nói "Did it was cold?".
+
+  - key: en:item:there-was-were
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: there was / there were
+      ipa: UK /ðeə wəz/ · US /ðer wəz/ · UK /ðeə wə/ · US /ðer wɚ/
+      pos: cấu trúc "có" (quá khứ)
+    back:
+      meaning:
+        vi: "(lúc đó) có…: there was + danh từ số ít, there were + danh từ số nhiều"
+      examples:
+        - target: There was a small café near the beach.
+          translation:
+            vi: Gần bãi biển có một quán cà phê nhỏ.
+        - target: There were a lot of people at the market.
+          translation:
+            vi: Ở chợ có rất nhiều người.
+      confusion:
+        vi: Người Việt hay dịch "có" thành have (The market had many people). Để nói ở một nơi có cái gì, dùng there was/there were.
+
+  - key: en:item:yesterday
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: yesterday
+      ipa: UK /ˈjestədeɪ/ · US /ˈjestɚdeɪ/
+      pos: trạng từ / danh từ
+    back:
+      meaning:
+        vi: hôm qua
+      examples:
+        - target: I was very busy yesterday.
+          translation:
+            vi: Hôm qua mình rất bận.
+        - target: Yesterday morning we cleaned the house.
+          translation:
+            vi: Sáng hôm qua chúng mình dọn nhà.
+      pronunciation_note:
+        vi: Nhấn âm đầu YES. Âm "ter" ở giữa đọc rất nhẹ, gần "tơ".
+      confusion:
+        vi: Nói yesterday morning, yesterday evening (sáng qua, chiều tối qua), nhưng "tối qua" là last night, không nói "yesterday night".
+
+  - key: en:item:last-plus-time
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: last night / last week / last year
+      ipa: last UK /lɑːst/ · US /læst/
+      pos: cụm chỉ thời gian
+    back:
+      meaning:
+        vi: tối qua / tuần trước / năm ngoái (last + mốc thời gian = lần gần nhất đã qua)
+      examples:
+        - target: We visited my grandparents last weekend.
+          translation:
+            vi: Cuối tuần trước chúng mình đến thăm ông bà.
+        - target: It was cold last night.
+          translation:
+            vi: Tối qua trời lạnh.
+      pronunciation_note:
+        vi: Đuôi /st/ đọc rõ cả hai âm; khi đứng trước night, week, âm /t/ có thể nuốt nhẹ nhưng /s/ vẫn phải nghe được.
+      confusion:
+        vi: Không thêm in hay on trước last - nói last week, không nói "in last week". Không nói "the last week" khi muốn nói "tuần trước".
+
+  - key: en:item:time-ago
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: ago
+      ipa: UK /əˈɡəʊ/ · US /əˈɡoʊ/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cách đây, trước đây (đứng sau khoảng thời gian - two days ago)
+      examples:
+        - target: I met her three years ago.
+          translation:
+            vi: Mình gặp cô ấy cách đây ba năm.
+        - target: The bus left ten minutes ago.
+          translation:
+            vi: Xe buýt đi được mười phút rồi.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai GO; âm đầu a đọc rất nhẹ, gần "ơ".
+      confusion:
+        vi: Tiếng Việt nói "cách đây ba năm" (cách đây đứng trước), còn tiếng Anh đặt ago sau khoảng thời gian - three years ago, không nói "ago three years".
+
+  - key: en:item:in-plus-year
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: in 2020 / in May / in the summer
+      ipa: in 2020 = /ɪn ˌtwenti ˈtwenti/
+      pos: cụm chỉ thời gian
+    back:
+      meaning:
+        vi: vào năm 2020 / vào tháng Năm / vào mùa hè (in + năm, tháng, mùa)
+      examples:
+        - target: My sister was born in 2015.
+          translation:
+            vi: Em gái mình sinh năm 2015.
+        - target: We moved to Da Nang in 2020.
+          translation:
+            vi: Nhà mình chuyển vào Đà Nẵng năm 2020.
+      pronunciation_note:
+        vi: Năm có bốn chữ số thường đọc thành hai cặp - 2020 là twenty twenty, 1998 là nineteen ninety-eight. Riêng 2005 thường đọc two thousand and five.
+      confusion:
+        vi: Năm, tháng, mùa dùng in; ngày cụ thể dùng on (on Monday, on 5 May). Không nói "on 2020" hay "at 2020".
+
+  - key: en:item:was-born
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: was born / were born
+      ipa: UK /wəz ˈbɔːn/ · US /wəz ˈbɔːrn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: được sinh ra, sinh năm / sinh ở
+      examples:
+        - target: I was born in Hue in 2001.
+          translation:
+            vi: Mình sinh ra ở Huế năm 2001.
+        - target: Where were you born?
+          translation:
+            vi: Bạn sinh ra ở đâu?
+      confusion:
+        vi: Luôn cần was/were trước born. Người Việt hay nói "I born in 2001" vì tiếng Việt chỉ cần "tôi sinh năm 2001".
+
+  - key: en:item:at-the-weekend
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: at the weekend / on the weekend
+      ipa: weekend UK /ˌwiːkˈend/ · US /ˈwiːkend/
+      pos: cụm chỉ thời gian
+    back:
+      meaning:
+        vi: vào cuối tuần (at the weekend - Anh-Anh; on the weekend - Anh-Mỹ)
+      examples:
+        - target: What did you do at the weekend?
+          translation:
+            vi: Cuối tuần bạn đã làm gì?
+        - target: Last weekend was really fun.
+          translation:
+            vi: Cuối tuần trước vui lắm.
+      pronunciation_note:
+        vi: Giọng Anh thường nhấn END (week-END), giọng Mỹ nhấn WEEK (WEEK-end). Cả hai đều đúng.
+      confusion:
+        vi: Khi có last thì bỏ giới từ - last weekend, không nói "at last weekend".
+
+  - key: en:item:crowded
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: crowded
+      ipa: /ˈkraʊdɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đông đúc, chật người
+      examples:
+        - target: The beach was very crowded on Sunday.
+          translation:
+            vi: Chủ Nhật bãi biển rất đông.
+      pronunciation_note:
+        vi: Âm /aʊ/ như "ao". Đuôi -ed đọc /ɪd/ (thêm một âm "ịd") vì đứng sau âm /d/.
+      confusion:
+        vi: Crowded tả nơi chốn có nhiều người. Muốn nói "có nhiều người" thì dùng there were a lot of people, không nói "it was many people".
+
+  - key: en:item:amazing
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: amazing
+      ipa: /əˈmeɪzɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tuyệt vời, đáng kinh ngạc
+      examples:
+        - target: The view from the hotel was amazing.
+          translation:
+            vi: Cảnh nhìn từ khách sạn thật tuyệt vời.
+        - target: We had an amazing day.
+          translation:
+            vi: Chúng mình đã có một ngày tuyệt vời.
+      pronunciation_note:
+        vi: Nhấn âm giữa MA (/meɪ/, gần "mây"). Âm đầu a đọc nhẹ "ơ".
+      confusion:
+        vi: Amazing mạnh hơn good và nice nhiều. Không thêm very trước amazing (không nói "very amazing"); dùng really amazing hoặc absolutely amazing.
+
+  - key: en:item:boring
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: boring
+      ipa: /ˈbɔːrɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: chán, tẻ nhạt (tả sự việc, bộ phim, buổi học…)
+      examples:
+        - target: The meeting was long and boring.
+          translation:
+            vi: Cuộc họp dài và chán.
+      confusion:
+        vi: Boring tả thứ gây chán; bored tả cảm giác của người. Câu "I was boring" nghĩa là "tôi là người nhạt nhẽo"; muốn nói "tôi thấy chán" thì dùng I was bored.
+
+  # ---------------- Bài 2: động từ có quy tắc ----------------
+  - key: en:item:past-simple-regular
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V + -ed (quá khứ đơn, động từ có quy tắc)
+      ipa: watch → watched /wɒtʃt/ · play → played /pleɪd/
+      pos: thì quá khứ đơn
+    back:
+      meaning:
+        vi: diễn tả việc đã xảy ra và kết thúc trong quá khứ; động từ thêm -ed, giống nhau với mọi chủ ngữ
+      examples:
+        - target: I watched a film last night.
+          translation:
+            vi: Tối qua mình xem một bộ phim.
+        - target: She played badminton with her friends yesterday.
+          translation:
+            vi: Hôm qua cô ấy chơi cầu lông với bạn bè.
+      confusion:
+        vi: Tiếng Việt chỉ cần "hôm qua", "đã"; tiếng Anh bắt buộc đổi dạng động từ dù đã có yesterday. "Yesterday I watch TV" là sai.
+
+  - key: en:item:ed-spelling
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "Chính tả -ed: like → liked · study → studied · stop → stopped"
+      pos: quy tắc chính tả
+    back:
+      meaning:
+        vi: "Tận cùng -e: chỉ thêm -d. Phụ âm + y: đổi y thành -ied. Một nguyên âm + một phụ âm (từ ngắn): gấp đôi phụ âm rồi thêm -ed."
+      examples:
+        - target: She studied English last year.
+          translation:
+            vi: Năm ngoái cô ấy học tiếng Anh.
+        - target: The rain stopped at six o'clock.
+          translation:
+            vi: Mưa tạnh lúc sáu giờ.
+      confusion:
+        vi: Nguyên âm + y thì giữ y - play → played, stay → stayed (không viết "plaied"). Chỉ phụ âm + y mới đổi thành -ied.
+
+  - key: en:item:ed-pronunciation
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [pronunciation]
+    front:
+      text: "Cách đọc -ed: /t/ · /d/ · /ɪd/"
+      ipa: cooked /kʊkt/ · played /pleɪd/ · visited /ˈvɪzɪtɪd/
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "/ɪd/ sau âm /t/, /d/ (visited, started); /t/ sau âm vô thanh /k, p, s, ʃ, tʃ, f/ (cooked, watched); /d/ sau các âm còn lại (played, cleaned)."
+      examples:
+        - target: We visited the museum and cooked dinner.
+          translation:
+            vi: Chúng mình đi thăm bảo tàng rồi nấu bữa tối.
+      pronunciation_note:
+        vi: Chỉ /ɪd/ mới thêm một âm tiết - visit-ed. Cooked chỉ có một âm tiết, đọc gần "cúkt", không đọc "cúc-kệt".
+      confusion:
+        vi: Người Việt hay bỏ hẳn đuôi -ed khi nói (vì tiếng Việt ít âm cuối kép), khiến người nghe tưởng là hiện tại. Hãy bật nhẹ /t/ hoặc /d/ ở cuối.
+
+  - key: en:item:watched
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: watch → watched
+      ipa: UK /wɒtʃt/ · US /wɑːtʃt/
+      pos: động từ
+    back:
+      meaning:
+        vi: xem (TV, phim, trận đấu) → đã xem
+      examples:
+        - target: We watched a football match on TV.
+          translation:
+            vi: Chúng mình xem một trận bóng đá trên TV.
+      pronunciation_note:
+        vi: Đuôi -ed đọc /t/ vì đứng sau /tʃ/ - watched chỉ một âm tiết.
+      confusion:
+        vi: Watch dùng cho thứ đang chuyển động (phim, trận đấu); nhìn tranh, xem ảnh thì dùng look at.
+
+  - key: en:item:played
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: play → played
+      ipa: /pleɪd/
+      pos: động từ
+    back:
+      meaning:
+        vi: chơi (thể thao, trò chơi, nhạc cụ) → đã chơi
+      examples:
+        - target: The children played in the park all afternoon.
+          translation:
+            vi: Bọn trẻ chơi ở công viên cả buổi chiều.
+      pronunciation_note:
+        vi: Đuôi -ed đọc /d/ sau nguyên âm - played một âm tiết, gần "plêid".
+      confusion:
+        vi: Play + môn thể thao không cần the (play football); nhạc cụ thường có the (play the guitar).
+
+  - key: en:item:visited
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: visit → visited
+      ipa: /ˈvɪzɪtɪd/
+      pos: động từ
+    back:
+      meaning:
+        vi: thăm, đến thăm (người, nơi chốn) → đã thăm
+      examples:
+        - target: Last summer we visited Hoi An.
+          translation:
+            vi: Hè năm ngoái chúng mình đi Hội An.
+      pronunciation_note:
+        vi: Sau âm /t/ nên -ed đọc /ɪd/, thêm một âm tiết - VI-si-tid. Chữ s đọc /z/.
+      confusion:
+        vi: Visit + nơi chốn/người không cần to - visited Hoi An, không nói "visited to Hoi An".
+
+  - key: en:item:cooked
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: cook → cooked
+      ipa: /kʊkt/
+      pos: động từ
+    back:
+      meaning:
+        vi: nấu ăn → đã nấu
+      examples:
+        - target: My dad cooked fish soup for dinner.
+          translation:
+            vi: Bố mình nấu canh cá cho bữa tối.
+      pronunciation_note:
+        vi: -ed đọc /t/ sau /k/ - cooked một âm tiết, gần "cúkt".
+      confusion:
+        vi: Cook là động từ "nấu" và cũng là danh từ "đầu bếp"; cooker là cái bếp, không phải người nấu.
+
+  - key: en:item:cleaned
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: clean → cleaned
+      ipa: /kliːnd/
+      pos: động từ
+    back:
+      meaning:
+        vi: lau dọn, làm sạch → đã dọn
+      examples:
+        - target: I cleaned my room on Saturday morning.
+          translation:
+            vi: Sáng thứ Bảy mình dọn phòng.
+      pronunciation_note:
+        vi: -ed đọc /d/ sau /n/ - cleaned một âm tiết, gần "clinđ".
+      confusion:
+        vi: Clean the room là dọn phòng; clean one's teeth ít dùng, thường nói brush one's teeth.
+
+  - key: en:item:stayed
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: stay → stayed
+      ipa: /steɪd/
+      pos: động từ
+    back:
+      meaning:
+        vi: ở lại, ở (nhà, khách sạn) → đã ở
+      examples:
+        - target: It rained, so we stayed at home.
+          translation:
+            vi: Trời mưa nên chúng mình ở nhà.
+      pronunciation_note:
+        vi: -ed đọc /d/ sau nguyên âm /eɪ/.
+      confusion:
+        vi: Stay giữ y vì trước y là nguyên âm a - stayed, không viết "staied". Nói stay at home hoặc stay home, không nói "stay in home".
+
+  - key: en:item:studied
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: study → studied
+      ipa: /ˈstʌdid/
+      pos: động từ
+    back:
+      meaning:
+        vi: học (một môn, cho kỳ thi) → đã học
+      examples:
+        - target: He studied for his exam all weekend.
+          translation:
+            vi: Cậu ấy học ôn thi suốt cuối tuần.
+      pronunciation_note:
+        vi: Hai âm tiết STU-died; -ed đọc /d/, không thêm âm "ịd".
+      confusion:
+        vi: Phụ âm d + y nên đổi y thành -ied - studied, không viết "studyed".
+
+  - key: en:item:stopped
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: stop → stopped
+      ipa: UK /stɒpt/ · US /stɑːpt/
+      pos: động từ
+    back:
+      meaning:
+        vi: dừng lại, ngừng → đã dừng
+      examples:
+        - target: We stopped at a small café for lunch.
+          translation:
+            vi: Chúng mình dừng ở một quán cà phê nhỏ để ăn trưa.
+      pronunciation_note:
+        vi: -ed đọc /t/ sau /p/ - stopped một âm tiết, gần "stópt".
+      confusion:
+        vi: Một nguyên âm + một phụ âm cuối (s-t-o-p) nên gấp đôi p - stopped, không viết "stoped".
+
+  - key: en:item:started
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: start → started
+      ipa: UK /ˈstɑːtɪd/ · US /ˈstɑːrtɪd/
+      pos: động từ
+    back:
+      meaning:
+        vi: bắt đầu → đã bắt đầu
+      examples:
+        - target: The concert started at eight o'clock.
+          translation:
+            vi: Buổi hòa nhạc bắt đầu lúc tám giờ.
+      pronunciation_note:
+        vi: Sau âm /t/ nên -ed đọc /ɪd/ - STAR-tid, hai âm tiết.
+      confusion:
+        vi: Start at + giờ (at eight), start in + năm/tháng (in 2020).
+
+  - key: en:item:listened-to
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: listen to → listened to
+      ipa: /ˈlɪsnd tə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nghe (nhạc, ai đó nói) → đã nghe
+      examples:
+        - target: I listened to music on the bus.
+          translation:
+            vi: Mình nghe nhạc trên xe buýt.
+      pronunciation_note:
+        vi: Chữ t trong listen câm - đọc /ˈlɪsn/, gần "lít-sừn". -ed đọc /d/.
+      confusion:
+        vi: Listen luôn cần to trước thứ được nghe - listened to music, không nói "listened music".
+
+  # ---------------- Bài 3: động từ bất quy tắc + trình tự ----------------
+  - key: en:item:irregular-past
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Động từ bất quy tắc (go → went, have → had…)
+      pos: thì quá khứ đơn
+    back:
+      meaning:
+        vi: nhiều động từ thông dụng không thêm -ed mà có dạng quá khứ riêng, phải học thuộc
+      examples:
+        - target: We went to the beach and had lunch there.
+          translation:
+            vi: Chúng mình ra biển và ăn trưa ở đó.
+      confusion:
+        vi: Không thêm -ed vào động từ bất quy tắc ("goed", "buyed", "eated" đều sai). Dạng quá khứ cũng giống nhau với mọi chủ ngữ.
+
+  - key: en:item:went
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: go → went
+      ipa: /went/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: đi → đã đi
+      examples:
+        - target: I went to Da Lat last month.
+          translation:
+            vi: Tháng trước mình đi Đà Lạt.
+      confusion:
+        vi: Đi về nhà là went home, không có to (không nói "went to home"). Went là dạng quá khứ duy nhất, không nói "goed".
+
+  - key: en:item:had
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: have → had
+      ipa: /hæd/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: có; ăn, uống (have breakfast, have a coffee) → đã có, đã ăn
+      examples:
+        - target: We had pho for breakfast.
+          translation:
+            vi: Bữa sáng chúng mình ăn phở.
+        - target: I had a headache yesterday.
+          translation:
+            vi: Hôm qua mình bị đau đầu.
+      pronunciation_note:
+        vi: Âm /æ/ mở miệng rộng, giữa "a" và "e"; đuôi /d/ đọc nhẹ.
+      confusion:
+        vi: Had dùng cho mọi chủ ngữ, kể cả he/she (không có "hased"). Had a great time nghĩa là "đã chơi rất vui".
+
+  - key: en:item:saw
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: see → saw
+      ipa: UK /sɔː/ · US /sɑː/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: nhìn thấy, gặp (người quen), xem (phim ở rạp) → đã thấy
+      examples:
+        - target: I saw an old friend at the supermarket.
+          translation:
+            vi: Mình gặp một người bạn cũ ở siêu thị.
+      pronunciation_note:
+        vi: Âm /ɔː/ kéo dài, tròn môi như "o" dài; không có âm "w" ở cuối dù chữ viết có w.
+      confusion:
+        vi: Saw cũng là danh từ "cái cưa", nhưng trong câu kể chuyện gần như luôn là quá khứ của see.
+
+  - key: en:item:bought
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: buy → bought
+      ipa: UK /bɔːt/ · US /bɑːt/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: mua → đã mua
+      examples:
+        - target: She bought a new phone last week.
+          translation:
+            vi: Tuần trước cô ấy mua điện thoại mới.
+      pronunciation_note:
+        vi: Chữ gh câm - đọc /bɔːt/, gần "bót" kéo dài.
+      confusion:
+        vi: Dễ nhầm bought (mua) với brought (mang theo, quá khứ của bring). Không viết "buyed".
+
+  - key: en:item:ate
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: eat → ate
+      ipa: UK /et/ hoặc /eɪt/ · US /eɪt/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: ăn → đã ăn
+      examples:
+        - target: We ate seafood by the sea.
+          translation:
+            vi: Chúng mình ăn hải sản bên bờ biển.
+      pronunciation_note:
+        vi: Giọng Mỹ đọc /eɪt/ giống số eight; giọng Anh thường đọc /et/.
+      confusion:
+        vi: Không viết "eated". Khi nói bữa ăn, người bản xứ hay dùng had (had lunch) hơn ate lunch.
+
+  - key: en:item:took
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: take → took
+      ipa: /tʊk/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: lấy, mang; đi (xe); chụp (ảnh) → đã lấy, đã đi, đã chụp
+      examples:
+        - target: We took a taxi to the station.
+          translation:
+            vi: Chúng mình đi taxi ra ga.
+        - target: I took a lot of photos.
+          translation:
+            vi: Mình chụp rất nhiều ảnh.
+      pronunciation_note:
+        vi: Âm /ʊ/ ngắn, gần "túc", không kéo dài như "tuuk".
+      confusion:
+        vi: Muốn nói "chụp ảnh" thì dùng take photos, không nói "make photos" hay "shoot photos" trong giao tiếp thường ngày.
+
+  - key: en:item:met
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: meet → met
+      ipa: /met/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: gặp (lần đầu, hoặc gặp hẹn trước) → đã gặp
+      examples:
+        - target: I met my best friend at university.
+          translation:
+            vi: Mình quen đứa bạn thân nhất ở trường đại học.
+        - target: We met for coffee on Sunday.
+          translation:
+            vi: Chủ Nhật chúng mình gặp nhau uống cà phê.
+      pronunciation_note:
+        vi: Âm /e/ ngắn, gần "mét" - khác meet /miːt/ có âm "i" dài.
+      confusion:
+        vi: Met là gặp có hẹn hoặc làm quen; tình cờ thấy ai thì thường dùng saw (I saw Lan in the street).
+
+  - key: en:item:came
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: come → came
+      ipa: /keɪm/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: đến, tới (về phía người nói) → đã đến
+      examples:
+        - target: My cousins came to our house for dinner.
+          translation:
+            vi: Mấy anh chị họ đến nhà mình ăn tối.
+      confusion:
+        vi: Came home (về đến nhà) không có to. Phân biệt came (đến chỗ mình) với went (đi chỗ khác).
+
+  - key: en:item:got
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: get → got
+      ipa: UK /ɡɒt/ · US /ɡɑːt/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: nhận được; đến nơi (get to/home); thức dậy (get up) → đã…
+      examples:
+        - target: I got up late on Sunday.
+          translation:
+            vi: Chủ Nhật mình dậy muộn.
+        - target: We got home at midnight.
+          translation:
+            vi: Nửa đêm chúng mình mới về đến nhà.
+      confusion:
+        vi: Get có nhiều nghĩa; hãy học theo cụm - got up (dậy), got home (về đến nhà), got a message (nhận tin nhắn).
+
+  - key: en:item:made
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: make → made
+      ipa: /meɪd/
+      pos: động từ (bất quy tắc)
+    back:
+      meaning:
+        vi: làm, tạo ra, nấu (món ăn) → đã làm
+      examples:
+        - target: My mum made a birthday cake for me.
+          translation:
+            vi: Mẹ làm bánh sinh nhật cho mình.
+      pronunciation_note:
+        vi: Âm /eɪ/ như "ây", đuôi /d/ nhẹ; đọc giống maid.
+      confusion:
+        vi: Make là tạo ra thứ gì (made a cake, made friends); do là làm một việc (did homework). Không nói "made homework".
+
+  - key: en:item:sequence-first
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary, writing]
+    front:
+      text: first
+      ipa: UK /fɜːst/ · US /fɝːst/
+      pos: trạng từ nối (trình tự)
+    back:
+      meaning:
+        vi: đầu tiên, trước hết (mở đầu chuỗi sự việc)
+      examples:
+        - target: First, we had breakfast at the hotel.
+          translation:
+            vi: Đầu tiên, chúng mình ăn sáng ở khách sạn.
+      pronunciation_note:
+        vi: Âm /ɜː/ không có trong tiếng Việt, gần "ơ" kéo dài; giọng Mỹ cong lưỡi /ɝː/. Đuôi /st/ đọc đủ.
+      confusion:
+        vi: Đứng đầu câu, sau đó có dấu phẩy - First, … Không nói "Firstly" trong câu chuyện kể thân mật (Firstly hợp với bài viết liệt kê ý).
+
+  - key: en:item:sequence-then
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary, writing]
+    front:
+      text: then
+      ipa: /ðen/
+      pos: trạng từ nối (trình tự)
+    back:
+      meaning:
+        vi: sau đó, rồi (việc tiếp theo)
+      examples:
+        - target: We went to the market, then we cooked lunch.
+          translation:
+            vi: Chúng mình đi chợ, rồi nấu bữa trưa.
+      pronunciation_note:
+        vi: Âm /ð/ đặt đầu lưỡi giữa hai hàm răng và rung; không đọc thành "đen" hay "zen".
+      confusion:
+        vi: Then (sau đó) khác than (hơn, dùng khi so sánh). Sau then thường không cần dấu phẩy.
+
+  - key: en:item:after-that
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary, writing]
+    front:
+      text: after that
+      ipa: UK /ˈɑːftə ðæt/ · US /ˈæftɚ ðæt/
+      pos: cụm nối (trình tự)
+    back:
+      meaning:
+        vi: sau đó, tiếp đó
+      examples:
+        - target: After that, we walked along the river.
+          translation:
+            vi: Sau đó, chúng mình đi dạo dọc bờ sông.
+      confusion:
+        vi: After that đứng đầu câu và cần that; không nói "After, we walked…" để nối hai việc như tiếng Việt "sau, chúng tôi…".
+
+  - key: en:item:finally
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: finally
+      ipa: /ˈfaɪnəli/
+      pos: trạng từ nối (trình tự)
+    back:
+      meaning:
+        vi: cuối cùng (việc sau cùng trong chuỗi)
+      examples:
+        - target: Finally, we got home at eleven o'clock.
+          translation:
+            vi: Cuối cùng, mười một giờ chúng mình mới về đến nhà.
+      pronunciation_note:
+        vi: Nhấn âm đầu FAI; ba âm tiết FAI-nơ-li.
+      confusion:
+        vi: Kết thúc câu chuyện thì dùng finally hoặc in the end; at last mang ý "mãi mới được" sau khi chờ đợi lâu.
+
+  # ---------------- Bài 4: phủ định và câu hỏi ----------------
+  - key: en:item:past-negative-didnt
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: didn't + động từ nguyên mẫu
+      ipa: didn't /ˈdɪdnt/
+      pos: phủ định quá khứ đơn
+    back:
+      meaning:
+        vi: đã không làm gì (did not = didn't); sau didn't động từ trở về dạng nguyên mẫu
+      examples:
+        - target: I didn't go out last night.
+          translation:
+            vi: Tối qua mình không đi chơi.
+        - target: She didn't buy anything.
+          translation:
+            vi: Cô ấy không mua gì cả.
+      confusion:
+        vi: Did đã mang dấu hiệu quá khứ, nên động từ sau nó không đổi nữa - didn't go, không nói "didn't went".
+
+  - key: en:item:past-question-did
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Did + chủ ngữ + động từ nguyên mẫu…?
+      ipa: Did you…? /dɪd juː/ (nói nhanh /ˈdɪdʒə/)
+      pos: câu hỏi Có/Không quá khứ đơn
+    back:
+      meaning:
+        vi: hỏi xem ai đó có làm gì trong quá khứ không (…có… không?)
+      examples:
+        - target: Did you have a good weekend?
+          translation:
+            vi: Cuối tuần của bạn vui không?
+        - target: Did they see the fireworks?
+          translation:
+            vi: Họ có xem pháo hoa không?
+      pronunciation_note:
+        vi: Khi nói nhanh, Did you nối thành /ˈdɪdʒə/, gần "đi-jơ".
+      confusion:
+        vi: Đưa did lên đầu, động từ chính về nguyên mẫu - Did you go?, không nói "Did you went?" hay "You went?" (chỉ dùng khi ngạc nhiên).
+
+  - key: en:item:past-wh-did
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Wh- + did + chủ ngữ + động từ nguyên mẫu…?
+      pos: câu hỏi có từ để hỏi (quá khứ đơn)
+    back:
+      meaning:
+        vi: hỏi cái gì, ở đâu, khi nào, với ai… trong quá khứ (What did you do? Where did you go?)
+      examples:
+        - target: Where did you go on holiday?
+          translation:
+            vi: Kỳ nghỉ bạn đã đi đâu?
+        - target: What did you eat for dinner?
+          translation:
+            vi: Bữa tối bạn ăn gì?
+      confusion:
+        vi: Tiếng Việt để từ hỏi ở cuối (Bạn đi đâu?), tiếng Anh đặt từ hỏi lên đầu rồi đến did - Where did you go? Không nói "Where you went?".
+
+  - key: en:item:short-answer-did
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Yes, I did. / No, I didn't.
+      ipa: /jes aɪ ˈdɪd/ · /nəʊ aɪ ˈdɪdnt/ (US /noʊ/)
+      pos: câu trả lời ngắn
+    back:
+      meaning:
+        vi: Có. / Không. (trả lời câu hỏi Did…?)
+      examples:
+        - target: "Did you enjoy the film? - Yes, I did."
+          translation:
+            vi: "Bạn có thích bộ phim không? - Có."
+      confusion:
+        vi: Trả lời bằng did/didn't, không lặp lại động từ - không nói "Yes, I went" hay "No, I didn't went".
+
+  - key: en:item:how-was-your-weekend
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: How was your weekend?
+      ipa: UK /ˌhaʊ wəz jɔː ˌwiːkˈend/ · US /ˌhaʊ wəz jʊr ˈwiːkend/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Cuối tuần của bạn thế nào? (câu mở đầu trò chuyện đầu tuần)
+      examples:
+        - target: "How was your weekend? - It was great, thanks."
+          translation:
+            vi: "Cuối tuần của bạn thế nào? - Vui lắm, cảm ơn bạn."
+      confusion:
+        vi: Hỏi về tính chất (vui, chán) dùng How was…?, không dùng did - không nói "How did your weekend?".
+
+  - key: en:item:had-a-great-time
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: have a great time → had a great time
+      ipa: /hæd ə ˌɡreɪt ˈtaɪm/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chơi rất vui, có khoảng thời gian tuyệt vời
+      examples:
+        - target: We had a great time at the beach.
+          translation:
+            vi: Chúng mình đã chơi rất vui ở biển.
+      confusion:
+        vi: Không dịch từng chữ "chơi vui" thành "played happy". Cũng nói had a good time, had fun.
+
+  - key: en:item:nothing-special
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: Nothing special.
+      ipa: /ˌnʌθɪŋ ˈspeʃl/
+      pos: cụm giao tiếp
+    back:
+      meaning:
+        vi: Không có gì đặc biệt.
+      examples:
+        - target: "What did you do yesterday? - Nothing special. I stayed at home."
+          translation:
+            vi: "Hôm qua bạn làm gì? - Không có gì đặc biệt. Mình ở nhà."
+      pronunciation_note:
+        vi: Âm /θ/ trong nothing đặt lưỡi giữa hai răng và thổi hơi, không đọc thành "t" hay "s".
+      confusion:
+        vi: Nothing đã mang nghĩa phủ định, nên không thêm not - "I didn't do nothing" là sai trong tiếng Anh chuẩn; nói I didn't do anything.
+
+  - key: en:item:relaxed
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: relax → relaxed
+      ipa: /rɪˈlækst/
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ ngơi, thư giãn → đã nghỉ ngơi
+      examples:
+        - target: On Sunday I just relaxed at home.
+          translation:
+            vi: Chủ Nhật mình chỉ ở nhà nghỉ ngơi.
+      pronunciation_note:
+        vi: Chữ x đọc /ks/, nên -ed đọc /t/ - re-LAXT.
+      confusion:
+        vi: Relaxed cũng là tính từ "thoải mái" (I felt relaxed). Không nói "relaxed myself".
+
+  - key: en:item:fun
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fun
+      ipa: /fʌn/
+      pos: danh từ / tính từ
+    back:
+      meaning:
+        vi: niềm vui, sự vui vẻ; vui (It was fun.)
+      examples:
+        - target: The party was really fun.
+          translation:
+            vi: Bữa tiệc vui thật sự.
+        - target: We had a lot of fun.
+          translation:
+            vi: Chúng mình chơi rất vui.
+      confusion:
+        vi: Fun (vui, thú vị) khác funny (buồn cười). "The trip was funny" nghĩa là chuyến đi gây cười, không phải "vui".
+
+  - key: en:item:all-day
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: all day / all morning / all weekend
+      ipa: /ˌɔːl ˈdeɪ/
+      pos: cụm chỉ thời gian
+    back:
+      meaning:
+        vi: cả ngày / cả buổi sáng / suốt cuối tuần
+      examples:
+        - target: It rained all day, so we didn't go out.
+          translation:
+            vi: Trời mưa cả ngày nên chúng mình không ra ngoài.
+      confusion:
+        vi: Không có the hay giới từ trước - all day, không nói "in all day" hay "all the day".

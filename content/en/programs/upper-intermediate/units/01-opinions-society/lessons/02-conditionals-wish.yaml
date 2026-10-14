@@ -1,0 +1,433 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:opinions-society-conditionals
+order_index: 2
+level: b2
+title:
+  vi: Câu điều kiện loại 2, 3, hỗn hợp & wish
+objectives:
+  - vi: Dùng câu điều kiện loại 2 cho giả định ở hiện tại và loại 3 cho giả định về quá khứ.
+  - vi: Nhận biết và dùng câu điều kiện hỗn hợp (quá khứ → hiện tại).
+  - vi: Diễn tả mong ước và tiếc nuối bằng wish và If only với đúng thì.
+  - vi: Thảo luận về môi trường với các collocation pose a threat, take action, cut carbon emissions.
+estimated_minutes: 25
+skills: [grammar, writing, speaking]
+prerequisites: [en:lesson:opinions-society-views]
+items:
+  - item: en:item:second-conditional
+  - item: en:item:third-conditional
+  - item: en:item:mixed-conditional
+  - item: en:item:wish-past-simple
+  - item: en:item:wish-past-perfect
+  - item: en:item:if-only
+  - item: en:item:climate-change
+  - item: en:item:renewable-energy
+  - item: en:item:carbon-emissions
+  - item: en:item:sustainable
+  - item: en:item:pose-a-threat
+  - item: en:item:take-action
+  - item: en:item:in-my-view
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về những điều "giá như" - giả định về hiện tại, tiếc nuối về quá khứ - khi bàn về biến đổi khí hậu và các vấn đề môi trường.
+  - type: explain
+    text:
+      vi: "Loại 2 (If + quá khứ đơn, would + V) nói về điều không có thật ở hiện tại hoặc khó xảy ra: If public transport were cheaper, fewer people would drive. Dù dùng thì quá khứ, câu vẫn nói về bây giờ - giống \"nếu mà… thì…\" trong tiếng Việt."
+  - type: explain
+    text:
+      vi: "Loại 3 (If + had + V3, would have + V3) nói về quá khứ đã không xảy ra: If the city had built better drains, the streets wouldn't have flooded. Mệnh đề If tuyệt đối không có would."
+  - type: explain
+    text:
+      vi: "Câu hỗn hợp ghép điều kiện quá khứ với kết quả hiện tại: If we had planted more trees ten years ago, the city would be cooler now. Dấu hiệu là now, today ở vế kết quả."
+  - type: explain
+    text:
+      vi: "Wish và If only luôn lùi một thì so với thực tế: hiện tại → quá khứ đơn hoặc could (I wish I could…), quá khứ → had + V3 (I wish I had…). Tiếng Việt chỉ thêm \"ước gì / giá mà\" mà không đổi động từ, nên người Việt hay quên lùi thì."
+  - type: deep_explain
+    text:
+      vi: Trong văn trang trọng, If I were / If it were được ưa dùng hơn If I was, nhất là trong lời khuyên If I were you. Ở vế kết quả, có thể thay would bằng could hoặc might để giảm độ chắc chắn - If we had acted sooner, we might have saved the forest. Khi nói nhanh, would have đọc gọn thành would've /ˈwʊdəv/, nhưng không bao giờ viết là "would of".
+  - type: example
+    target: If public transport were cheaper and more reliable, far fewer people would drive to work.
+    target_lang: en
+    translation:
+      vi: Nếu giao thông công cộng rẻ và đáng tin cậy hơn thì sẽ có ít người lái xe đi làm hơn nhiều.
+    note:
+      vi: Loại 2 - giả định trái với thực tế hiện tại (giao thông công cộng hiện chưa rẻ).
+  - type: example
+    target: If the authorities had taken action earlier, the river would not have become so polluted.
+    target_lang: en
+    translation:
+      vi: Nếu chính quyền hành động sớm hơn thì dòng sông đã không bị ô nhiễm đến thế.
+    note:
+      vi: Loại 3 - cả điều kiện lẫn kết quả đều ở quá khứ.
+  - type: example
+    target: If we had invested in renewable energy ten years ago, our air would be much cleaner today.
+    target_lang: en
+    translation:
+      vi: Nếu mười năm trước chúng ta đầu tư vào năng lượng tái tạo thì hôm nay không khí đã sạch hơn nhiều.
+    note:
+      vi: Hỗn hợp - nguyên nhân ở quá khứ (ten years ago), kết quả ở hiện tại (today), nên dùng would be.
+  - type: example
+    target: Plastic waste poses a serious threat to marine life. If only more people understood that!
+    target_lang: en
+    translation:
+      vi: Rác thải nhựa gây ra mối đe doạ nghiêm trọng cho sinh vật biển. Giá mà nhiều người hiểu điều đó hơn!
+    note:
+      vi: If only + quá khứ đơn - mong ước cho hiện tại, cảm xúc mạnh hơn I wish.
+  - type: common_mistake
+    wrong: If I would have known about the flood, I would have left earlier.
+    right: If I had known about the flood, I would have left earlier.
+    target_lang: en
+    note:
+      vi: Would chỉ nằm ở vế kết quả. Mệnh đề If của loại 3 luôn dùng had + V3.
+  - type: common_mistake
+    wrong: I wish I can speak English fluently.
+    right: I wish I could speak English fluently.
+    target_lang: en
+    note:
+      vi: Sau wish phải lùi thì - can thành could. Tiếng Việt "ước gì tôi có thể" không đổi động từ, nhưng tiếng Anh thì phải đổi.
+  - type: common_mistake
+    wrong: If we had planted more trees, the city would have been cooler now.
+    right: If we had planted more trees, the city would be cooler now.
+    target_lang: en
+    note:
+      vi: Có now nên kết quả ở hiện tại - dùng would be (câu hỗn hợp), không dùng would have been.
+  - type: summary
+    points:
+      - vi: Loại 2 - If + quá khứ đơn, would + V (giả định hiện tại); ưu tiên If I/it were.
+      - vi: Loại 3 - If + had + V3, would have + V3 (giả định quá khứ); không có would trong mệnh đề If.
+      - vi: Hỗn hợp - If + had + V3, would + V + now (quá khứ ảnh hưởng hiện tại).
+      - vi: Wish / If only - quá khứ đơn hoặc could cho hiện tại; had + V3 cho tiếc nuối quá khứ.
+      - vi: Collocation môi trường - pose a threat to, take action on, cut carbon emissions, renewable energy.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:opsoc-cond-mcq-had-known
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:third-conditional
+    prompt:
+      stem: "Chọn đáp án đúng: If I ___ about the flood warning, I would have left the city earlier."
+      stem_lang: vi
+      options:
+        - { id: v2q, text: had known, lang: en }
+        - { id: j7e, text: would have known, lang: en }
+        - { id: o4m, text: knew, lang: en }
+        - { id: b9s, text: have known, lang: en }
+    answer:
+      correct_option_id: v2q
+    explanation:
+      vi: Vế kết quả là would have left (quá khứ), nên đây là loại 3 - mệnh đề If dùng had + V3. Would không bao giờ đứng trong mệnh đề If.
+    display_answer: had known
+
+  - key: en:exercise:opsoc-cond-mcq-wish-could
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:wish-past-simple
+    prompt:
+      stem: "Chọn đáp án đúng: I wish I ___ speak English more fluently."
+      stem_lang: vi
+      options:
+        - { id: x5l, text: could, lang: en }
+        - { id: g1t, text: can, lang: en }
+        - { id: p8h, text: will, lang: en }
+        - { id: k3d, text: am able, lang: en }
+    answer:
+      correct_option_id: x5l
+    explanation:
+      vi: Mong ước trái với hiện tại thì phải lùi thì - can thành could. I wish I can là lỗi rất phổ biến của người Việt.
+    display_answer: could
+
+  - key: en:exercise:opsoc-cond-listen-mixed
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:mixed-conditional
+    prompt:
+      audio_asset_id: null
+      fallback_text: If we had invested in renewable energy ten years ago, our air would be much cleaner today.
+      options:
+        - { id: w6r, text: "Nếu mười năm trước chúng ta đầu tư vào năng lượng tái tạo thì hôm nay không khí đã sạch hơn nhiều.", lang: vi }
+        - { id: e3n, text: "Nếu chúng ta đầu tư vào năng lượng tái tạo trong mười năm tới thì không khí sẽ sạch hơn nhiều.", lang: vi }
+        - { id: z9c, text: "Mười năm trước chúng ta đã đầu tư vào năng lượng tái tạo, nên hôm nay không khí sạch hơn nhiều.", lang: vi }
+        - { id: h2u, text: "Nếu hôm nay không khí sạch hơn, chúng ta sẽ đầu tư vào năng lượng tái tạo.", lang: vi }
+    answer:
+      correct_option_id: w6r
+    explanation:
+      vi: Had invested … ten years ago là điều đã không xảy ra trong quá khứ; would be … today là kết quả tưởng tượng ở hiện tại. Phương án "đã đầu tư, nên…" hiểu nhầm thành sự thật.
+    display_answer: "Nếu mười năm trước chúng ta đầu tư vào năng lượng tái tạo thì hôm nay không khí đã sạch hơn nhiều."
+
+  - key: en:exercise:opsoc-cond-fill-second-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:second-conditional
+    prompt:
+      template: "If public transport {{b1}} cheaper, fewer people {{b2}} drive to work."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Nếu giao thông công cộng rẻ hơn thì sẽ có ít người lái xe đi làm hơn."
+        - "Gợi ý: loại 2 - mệnh đề If dùng quá khứ của be, vế sau dùng would."
+    answer:
+      blanks:
+        b1: [were, was]
+        b2: [would]
+    known_wrong:
+      - answer: is
+        feedback_vi: Giả định trái với hiện tại thì lùi về quá khứ - were (hoặc was).
+        error_tag: conditional_tense
+      - answer: will
+        feedback_vi: Loại 2 dùng would ở vế kết quả, không dùng will.
+        error_tag: conditional_tense
+      - answer: would be
+        feedback_vi: Mệnh đề If không chứa would - dùng were.
+        error_tag: would_in_if_clause
+    explanation:
+      vi: Đây là giả định về hiện tại (giao thông công cộng hiện chưa rẻ), nên dùng loại 2 - If + were/was, would + V. Văn trang trọng ưu tiên were.
+    display_answer: If public transport were cheaper, fewer people would drive to work.
+
+  - key: en:exercise:opsoc-cond-mcq-pose
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:pose-a-threat
+    prompt:
+      stem: "Chọn động từ đúng: Rising sea levels ___ a serious threat to coastal cities such as Ho Chi Minh City."
+      stem_lang: vi
+      options:
+        - { id: r4a, text: pose, lang: en }
+        - { id: d8w, text: make, lang: en }
+        - { id: s6y, text: do, lang: en }
+        - { id: u1f, text: give, lang: en }
+    answer:
+      correct_option_id: r4a
+    explanation:
+      vi: Pose a threat to là collocation cố định (gây ra mối đe doạ cho). Make a threat lại có nghĩa là "đe doạ ai đó" bằng lời.
+    display_answer: pose
+
+  # ---------------- recall ----------------
+  - key: en:exercise:opsoc-cond-fill-take-action
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:take-action
+    prompt:
+      template: "If the government {{b1}} {{b2}} action earlier, the river would not have been so polluted."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [had]
+        b2: [taken]
+    known_wrong:
+      - answer: would
+        feedback_vi: Mệnh đề If không chứa would. Loại 3 dùng had + V3.
+        error_tag: would_in_if_clause
+      - answer: has
+        feedback_vi: Đây là quá khứ không có thật - dùng had, không dùng has.
+        error_tag: conditional_tense
+      - answer: took
+        feedback_vi: Sau had cần quá khứ phân từ (V3) - taken.
+        error_tag: past_participle
+      - answer: made
+        feedback_vi: Collocation đúng là take action, nên V3 là taken.
+        error_tag: collocation
+    explanation:
+      vi: Vế kết quả would not have been là quá khứ, nên mệnh đề If dùng had + V3. Take action là collocation cố định, V3 của take là taken.
+    display_answer: If the government had taken action earlier, the river would not have been so polluted.
+
+  - key: en:exercise:opsoc-cond-translate-wish-trees
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:wish-past-simple
+    prompt:
+      source_text: Ước gì thành phố mình có nhiều cây xanh hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I wish our city had more trees.
+        - I wish my city had more trees.
+        - I wish our city had more green trees.
+        - I wish there were more trees in our city.
+        - I wish there were more trees in my city.
+        - If only our city had more trees.
+        - If only there were more trees in our city.
+        - I wish our city had more greenery.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I wish our city has more trees.
+        feedback_vi: Sau wish phải lùi thì - has thành had.
+        error_tag: wish_tense
+      - answer: I wish our city will have more trees.
+        feedback_vi: Mong ước cho hiện tại dùng quá khứ đơn - I wish our city had more trees.
+        error_tag: wish_tense
+      - answer: I wish there are more trees in our city.
+        feedback_vi: Sau wish phải lùi thì - are thành were.
+        error_tag: wish_tense
+    explanation:
+      vi: Thực tế hiện tại là thành phố ít cây, nên mong ước dùng wish + quá khứ đơn (had, were). Có thể dùng If only để cảm xúc mạnh hơn.
+    display_answer: I wish our city had more trees.
+
+  - key: en:exercise:opsoc-cond-translate-had-known
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:third-conditional
+    prompt:
+      source_text: Nếu tôi biết trước thì tôi đã giúp bạn rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - If I had known, I would have helped you.
+        - If I'd known, I would have helped you.
+        - If I had known, I'd have helped you.
+        - If I'd known, I'd have helped you.
+        - If I had known earlier, I would have helped you.
+        - If I'd known earlier, I would have helped you.
+        - If I had known in advance, I would have helped you.
+        - I would have helped you if I had known.
+        - I would have helped you if I'd known.
+        - If I had known before, I would have helped you.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: If I would have known, I would have helped you.
+        feedback_vi: Mệnh đề If không chứa would - If I had known.
+        error_tag: would_in_if_clause
+      - answer: If I knew, I would have helped you.
+        feedback_vi: Điều kiện ở quá khứ nên dùng had + V3 - If I had known.
+        error_tag: conditional_tense
+      - answer: If I had known, I will help you.
+        feedback_vi: Kết quả trong quá khứ dùng would have + V3 - I would have helped you.
+        error_tag: conditional_tense
+    explanation:
+      vi: "\"Biết trước … đã giúp rồi\" là điều đã không xảy ra trong quá khứ, nên dùng loại 3 - If I had known, I would have helped you. I'd có thể là I had (vế If) hoặc I would (vế kết quả)."
+    display_answer: If I had known, I would have helped you.
+
+  # ---------------- application ----------------
+  - key: en:exercise:opsoc-cond-mcq-mixed-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:mixed-conditional
+    prompt:
+      stem: "Bạn đang làm ở ngân hàng nhưng tiếc vì hồi đại học đã không học khoa học môi trường. Câu nào diễn đạt đúng ý này?"
+      stem_lang: vi
+      options:
+        - { id: n5b, text: "If I had studied environmental science, I would be working on climate projects now.", lang: en }
+        - { id: t2o, text: "If I studied environmental science, I would have worked on climate projects now.", lang: en }
+        - { id: a7i, text: "If I would have studied environmental science, I would be working on climate projects now.", lang: en }
+        - { id: l3x, text: "If I have studied environmental science, I will work on climate projects now.", lang: en }
+    answer:
+      correct_option_id: n5b
+    explanation:
+      vi: Việc học là quá khứ không có thật (had studied), còn kết quả ở hiện tại (now) nên dùng would be working - đây là câu hỗn hợp. Mệnh đề If không bao giờ chứa would.
+    display_answer: "If I had studied environmental science, I would be working on climate projects now."
+
+  - key: en:exercise:opsoc-cond-translate-if-only
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:if-only
+    prompt:
+      source_text: If only we had acted sooner, the forest might still be here.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Giá mà chúng ta hành động sớm hơn, khu rừng có lẽ vẫn còn ở đây.
+        - Giá mà chúng ta đã hành động sớm hơn, khu rừng có lẽ vẫn còn ở đây.
+        - Giá mà chúng ta hành động sớm hơn thì có lẽ khu rừng vẫn còn đây.
+        - Giá như chúng ta hành động sớm hơn, khu rừng có thể vẫn còn ở đây.
+        - Giá như chúng ta đã hành động sớm hơn thì khu rừng có lẽ vẫn còn.
+        - Phải chi chúng ta hành động sớm hơn, khu rừng có lẽ vẫn còn ở đây.
+        - Giá mà chúng ta hành động sớm hơn, có lẽ cánh rừng vẫn còn ở đây.
+        - Giá mà mình hành động sớm hơn, khu rừng có lẽ vẫn còn ở đây.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: If only + had + V3 là tiếc nuối về quá khứ ("giá mà… đã…"); might still be here là kết quả có thể xảy ra ở hiện tại ("có lẽ vẫn còn").
+    display_answer: Giá mà chúng ta hành động sớm hơn, khu rừng có lẽ vẫn còn ở đây.
+
+  - key: en:exercise:opsoc-cond-order-wish-past
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:wish-past-perfect
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Giá mà tôi đã coi biến đổi khí hậu nghiêm túc hơn.\""
+      tokens:
+        - { id: w-cc, text: climate change }
+        - { id: w-took, text: took }
+        - { id: w-i, text: I }
+        - { id: w-more, text: more seriously }
+        - { id: w-would, text: would }
+        - { id: w-wish, text: I wish }
+        - { id: w-had, text: had taken }
+    answer:
+      orders:
+        - [w-wish, w-i, w-had, w-cc, w-more]
+    explanation:
+      vi: Tiếc nuối về quá khứ dùng wish + had + V3 (had taken). Took là quá khứ đơn - sau wish nó lại nói về hiện tại, nên không hợp ở đây.
+    display_answer: I wish I had taken climate change more seriously.
+
+  - key: en:exercise:opsoc-cond-translate-renewable
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:renewable-energy
+    prompt:
+      source_text: Giả sử mọi người đều dùng năng lượng tái tạo, chúng ta sẽ cắt giảm được rất nhiều khí thải carbon.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - If everyone used renewable energy, we would cut a lot of carbon emissions.
+        - If everyone used renewable energy, we could cut a lot of carbon emissions.
+        - If everybody used renewable energy, we would cut a lot of carbon emissions.
+        - If everybody used renewable energy, we could cut a lot of carbon emissions.
+        - If everyone used renewable energy, we would be able to cut a lot of carbon emissions.
+        - If everyone used renewable energy, we would reduce carbon emissions a lot.
+        - If everyone used renewable energy, we could reduce carbon emissions significantly.
+        - If everyone used renewable energy, we would cut carbon emissions significantly.
+        - If everyone used renewable energy, we would greatly reduce carbon emissions.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: If everyone would use renewable energy, we would cut a lot of carbon emissions.
+        feedback_vi: Mệnh đề If không chứa would - If everyone used.
+        error_tag: would_in_if_clause
+      - answer: If everyone uses renewable energy, we would cut a lot of carbon emissions.
+        feedback_vi: Giả định (loại 2) cần quá khứ đơn ở mệnh đề If - If everyone used.
+        error_tag: conditional_tense
+      - answer: If everyone used renewable energy, we will cut a lot of carbon emissions.
+        feedback_vi: Loại 2 dùng would (hoặc could) ở vế kết quả, không dùng will.
+        error_tag: conditional_tense
+    explanation:
+      vi: "\"Giả sử\" cho thấy đây là giả định khó xảy ra, nên dùng loại 2 - If + quá khứ đơn, would/could + V. Everyone là số ít nhưng ở quá khứ đơn chỉ cần used."
+    display_answer: If everyone used renewable energy, we would cut a lot of carbon emissions.

@@ -1,0 +1,420 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:opinions-society-views
+order_index: 1
+level: b2
+title:
+  vi: Bày tỏ & bảo vệ quan điểm
+objectives:
+  - vi: Nêu quan điểm bằng In my view, I'd argue that… và nối lập luận bằng On the other hand, Having said that, whereas, furthermore.
+  - vi: Đồng ý, đồng ý một phần và phản đối một cách lịch sự, không gay gắt.
+  - vi: Tránh các lỗi quen thuộc của người Việt như In my opinion, I think… và I am agree.
+estimated_minutes: 20
+skills: [speaking, writing, vocabulary]
+prerequisites: []
+items:
+  - item: en:item:in-my-view
+  - item: en:item:id-argue-that
+  - item: en:item:on-the-other-hand
+  - item: en:item:having-said-that
+  - item: en:item:i-take-your-point
+  - item: en:item:agree-up-to-a-point
+  - item: en:item:not-entirely-convinced
+  - item: en:item:agree-verb
+  - item: en:item:whereas
+  - item: en:item:furthermore
+  - item: en:item:social-media
+  - item: en:item:raise-awareness
+  - item: en:item:have-an-impact-on
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tham gia được một cuộc thảo luận về mạng xã hội - nêu ý kiến, đưa lý lẽ, thừa nhận ý của người khác rồi phản biện một cách lịch sự như người dùng tiếng Anh thành thạo.
+  - type: explain
+    text:
+      vi: Ở trình độ B2, thay vì lúc nào cũng nói I think, bạn nên đổi cách mở đầu - In my view (trang trọng, hợp bài luận), I'd argue that (khẳng định có lý lẽ). Mỗi cụm đã mang nghĩa "tôi nghĩ", nên đừng ghép thêm I think phía sau.
+  - type: explain
+    text:
+      vi: "Từ nối giúp lập luận mạch lạc: Furthermore thêm lý lẽ cùng chiều; On the other hand đưa ra mặt khác của vấn đề; Having said that thừa nhận ý vừa nói rồi rẽ sang hướng ngược lại. Whereas nối hai ý đối lập trong cùng một câu."
+  - type: explain
+    text:
+      vi: Người nói tiếng Anh hiếm khi phản đối thẳng bằng You're wrong. Họ ghi nhận ý người kia trước (I take your point, but…), đồng ý một phần (I agree up to a point) hoặc làm mềm lời phản đối (I'm not entirely convinced that…).
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt nói "tôi đồng ý" giống "tôi vui", nên người học hay viết I am agree. Trong tiếng Anh agree là động từ thường - I agree, I don't agree, Do you agree? Cũng cần phân biệt On the other hand (mặt khác) với On the contrary (ngược lại hoàn toàn, dùng để bác bỏ điều vừa được nói hoặc ngụ ý).
+  - type: example
+    target: In my view, social media has a huge impact on how teenagers see themselves.
+    target_lang: en
+    translation:
+      vi: Theo tôi, mạng xã hội có tác động rất lớn đến cách thanh thiếu niên nhìn nhận bản thân.
+    note:
+      vi: Have an impact on - giới từ luôn là on.
+  - type: example
+    target: Online campaigns can raise awareness very quickly. On the other hand, they rarely lead to real change.
+    target_lang: en
+    translation:
+      vi: Các chiến dịch trực tuyến có thể nâng cao nhận thức rất nhanh. Mặt khác, chúng hiếm khi dẫn đến thay đổi thực sự.
+    note:
+      vi: On the other hand bắt đầu câu mới và có dấu phẩy phía sau.
+  - type: example
+    target: I take your point, but I'd argue that the benefits are greater than the risks.
+    target_lang: en
+    translation:
+      vi: Tôi hiểu ý bạn, nhưng tôi cho rằng lợi ích lớn hơn rủi ro.
+    note:
+      vi: Ghi nhận ý người kia trước khi phản biện giúp cuộc thảo luận nhẹ nhàng hơn.
+  - type: example
+    target: Older people mostly read printed newspapers, whereas younger people get their news online. Furthermore, many of them never check the source.
+    target_lang: en
+    translation:
+      vi: Người lớn tuổi chủ yếu đọc báo in, trong khi người trẻ đọc tin trên mạng. Hơn nữa, nhiều người trong số họ không bao giờ kiểm tra nguồn tin.
+    note:
+      vi: Whereas nối hai ý đối lập trong một câu; Furthermore thêm một ý cùng chiều ở câu sau.
+  - type: common_mistake
+    wrong: In my opinion, I think social media is harmful.
+    right: In my opinion, social media is harmful.
+    target_lang: en
+    note:
+      vi: In my opinion đã có nghĩa "tôi nghĩ" - thêm I think là lặp ý. Chọn một trong hai - In my opinion… hoặc I think…
+  - type: common_mistake
+    wrong: I am agree with you.
+    right: I agree with you.
+    target_lang: en
+    note:
+      vi: Agree là động từ, không phải tính từ, nên không cần am. Phủ định là I don't agree, không phải I am not agree.
+  - type: common_mistake
+    wrong: The campaign rose awareness of cyberbullying.
+    right: The campaign raised awareness of cyberbullying.
+    target_lang: en
+    note:
+      vi: Raise (raised) cần tân ngữ - nâng cái gì lên. Rise (rose) là tự tăng, không có tân ngữ.
+  - type: summary
+    points:
+      - vi: Mở đầu quan điểm - In my view…, I'd argue that…; không thêm I think phía sau.
+      - vi: Nối ý - Furthermore (thêm ý), On the other hand (mặt khác), Having said that (dù vậy), whereas (trong khi).
+      - vi: Phản biện lịch sự - I take your point, but…; I agree up to a point; I'm not entirely convinced that…
+      - vi: Agree là động từ - I agree / I don't agree, không nói I am agree.
+      - vi: Collocation - raise awareness of, have an impact on.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:opsoc-views-mcq-other-hand
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:on-the-other-hand
+    prompt:
+      stem: "Chọn cụm từ phù hợp nhất: Online learning is convenient. ___, it requires a lot of self-discipline."
+      stem_lang: vi
+      options:
+        - { id: q7k, text: On the other hand, lang: en }
+        - { id: m2z, text: On the contrary, lang: en }
+        - { id: w9d, text: Furthermore, lang: en }
+        - { id: e4t, text: In my view, lang: en }
+    answer:
+      correct_option_id: q7k
+    explanation:
+      vi: Câu sau nêu một mặt khác (nhược điểm) của học trực tuyến, nên dùng On the other hand. On the contrary dùng để bác bỏ ý trước, còn Furthermore thêm ý cùng chiều.
+    display_answer: On the other hand
+
+  - key: en:exercise:opsoc-views-mcq-agree
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:agree-verb
+    prompt:
+      stem: Câu nào đúng ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: h3r, text: I am agree with you., lang: en }
+        - { id: z8b, text: I agree with you., lang: en }
+        - { id: c1x, text: I am agreed with you., lang: en }
+        - { id: u5n, text: I agreeing with you., lang: en }
+    answer:
+      correct_option_id: z8b
+    explanation:
+      vi: Agree là động từ thường, nên chỉ cần I agree. Các phương án còn lại thêm am hoặc dùng sai dạng vì dịch từng chữ "tôi đồng ý".
+    display_answer: I agree with you.
+
+  - key: en:exercise:opsoc-views-listen-point
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:i-take-your-point
+    prompt:
+      audio_asset_id: null
+      fallback_text: I take your point, but banning phones in schools seems a bit extreme.
+      options:
+        - { id: a6j, text: "Tôi hiểu ý bạn, nhưng cấm điện thoại trong trường học có vẻ hơi cực đoan.", lang: vi }
+        - { id: r2p, text: "Tôi hoàn toàn đồng ý rằng nên cấm điện thoại trong trường học.", lang: vi }
+        - { id: k8v, text: "Tôi lấy điện thoại của bạn vì trường học cấm dùng điện thoại.", lang: vi }
+        - { id: d5s, text: "Bạn nói đúng, cấm điện thoại trong trường học là chưa đủ.", lang: vi }
+    answer:
+      correct_option_id: a6j
+    explanation:
+      vi: I take your point là "tôi hiểu/ghi nhận ý bạn", sau đó but đưa ra ý phản biện. Take ở đây không có nghĩa là "lấy".
+    display_answer: "Tôi hiểu ý bạn, nhưng cấm điện thoại trong trường học có vẻ hơi cực đoan."
+
+  - key: en:exercise:opsoc-views-fill-raise
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:raise-awareness
+    prompt:
+      template: "The campaign aims to {{b1}} awareness of cyberbullying among teenagers."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Chiến dịch nhằm nâng cao nhận thức về bắt nạt trên mạng trong giới thanh thiếu niên."
+        - "Gợi ý: động từ có nghĩa \"nâng lên\", cần tân ngữ, bắt đầu bằng r."
+    answer:
+      blanks:
+        b1: [raise]
+    known_wrong:
+      - answer: rise
+        feedback_vi: Rise là tự tăng, không có tân ngữ. Nâng cao nhận thức là raise awareness.
+        error_tag: raise_rise
+      - answer: make
+        feedback_vi: Collocation cố định là raise awareness, không dùng make.
+        error_tag: collocation
+    explanation:
+      vi: Raise awareness of something là collocation cố định. Raise cần tân ngữ (awareness), còn rise thì không.
+    display_answer: The campaign aims to raise awareness of cyberbullying among teenagers.
+
+  - key: en:exercise:opsoc-views-order-impact
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-an-impact-on
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Theo tôi, mạng xã hội có tác động rất lớn đến giới trẻ.\""
+      tokens:
+        - { id: t-on, text: "on" }
+        - { id: t-view, text: "In my view," }
+        - { id: t-impact, text: a huge impact }
+        - { id: t-with, text: with }
+        - { id: t-young, text: young people }
+        - { id: t-has, text: has }
+        - { id: t-sm, text: social media }
+        - { id: t-think, text: I think }
+    answer:
+      orders:
+        - [t-view, t-sm, t-has, t-impact, t-on, t-young]
+    explanation:
+      vi: In my view mở đầu câu, không thêm I think. Have an impact luôn đi với on; social media là danh từ không đếm được nên dùng has.
+    display_answer: In my view, social media has a huge impact on young people.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:opsoc-views-fill-whereas
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:whereas
+    prompt:
+      template: "Older people tend to trust printed newspapers, {{b1}} younger people rely on social media for news."
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [whereas, while, but]
+    known_wrong:
+      - answer: on the other hand
+        feedback_vi: On the other hand thường mở đầu một câu mới. Nối hai ý đối lập trong cùng một câu, bạn dùng whereas hoặc while.
+        error_tag: linker_position
+      - answer: furthermore
+        feedback_vi: Furthermore thêm ý cùng chiều, nhưng hai vế ở đây đối lập nhau.
+        error_tag: linker_meaning
+      - answer: however
+        feedback_vi: However không nối hai mệnh đề chỉ bằng dấu phẩy. Trong cùng một câu, bạn dùng whereas hoặc while.
+        error_tag: linker_position
+    explanation:
+      vi: Hai vế đối lập (người lớn tuổi - người trẻ) nằm trong cùng một câu, nên dùng whereas (hoặc while, but). Whereas trang trọng và nhấn mạnh sự tương phản rõ nhất.
+    display_answer: Older people tend to trust printed newspapers, whereas younger people rely on social media for news.
+
+  - key: en:exercise:opsoc-views-translate-view
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:in-my-view
+    prompt:
+      source_text: Theo quan điểm của tôi, mạng xã hội mang lại nhiều lợi hơn hại.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In my view, social media does more good than harm.
+        - In my opinion, social media does more good than harm.
+        - From my point of view, social media does more good than harm.
+        - In my view, social media is more beneficial than harmful.
+        - In my opinion, social media is more beneficial than harmful.
+        - In my view, the benefits of social media outweigh the harms.
+        - In my view, social media brings more benefits than harm.
+        - In my opinion, social media brings more benefits than harm.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In my opinion, I think social media does more good than harm.
+        feedback_vi: In my opinion đã có nghĩa "tôi nghĩ", bỏ I think đi.
+        error_tag: redundant_opinion
+      - answer: In my view, I think social media does more good than harm.
+        feedback_vi: In my view đã có nghĩa "tôi nghĩ", bỏ I think đi.
+        error_tag: redundant_opinion
+      - answer: In my point of view, social media does more good than harm.
+        feedback_vi: Nói From my point of view hoặc In my view, không nói In my point of view.
+        error_tag: collocation
+    explanation:
+      vi: In my view / In my opinion / From my point of view đều mở đầu quan điểm và không cần thêm I think. Do more good than harm là cách nói tự nhiên của "lợi nhiều hơn hại".
+    display_answer: In my view, social media does more good than harm.
+
+  - key: en:exercise:opsoc-views-translate-disagree
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:agree-verb
+    prompt:
+      source_text: Tôi không đồng ý rằng công nghệ khiến chúng ta cô đơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I don't agree that technology makes us lonely.
+        - I disagree that technology makes us lonely.
+        - I don't agree that technology is making us lonely.
+        - I disagree that technology is making us lonely.
+        - I don't agree that technology makes us feel lonely.
+        - I disagree that technology makes us feel lonely.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am not agree that technology makes us lonely.
+        feedback_vi: Agree là động từ thường, phủ định dùng don't - I don't agree.
+        error_tag: agree_be
+      - answer: I not agree that technology makes us lonely.
+        feedback_vi: Phủ định động từ thường cần trợ động từ - I don't agree.
+        error_tag: missing_auxiliary
+      - answer: I am disagree that technology makes us lonely.
+        feedback_vi: Disagree cũng là động từ, không cần am - I disagree.
+        error_tag: agree_be
+    explanation:
+      vi: Agree/disagree là động từ thường, nên phủ định bằng don't và không dùng be. Make somebody + tính từ - makes us lonely.
+    display_answer: I don't agree that technology makes us lonely.
+
+  # ---------------- application ----------------
+  - key: en:exercise:opsoc-views-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:agree-up-to-a-point
+    prompt:
+      stem: "Trong buổi thảo luận, một bạn nói: \"Social media should be banned for under-16s.\" Bạn đồng ý một phần và muốn phản biện lịch sự. Bạn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: f6g, text: "I agree up to a point, but a total ban would be very hard to enforce.", lang: en }
+        - { id: n3c, text: "You're wrong. That's a stupid idea.", lang: en }
+        - { id: y7a, text: "I am agree, but a total ban would be very hard to enforce.", lang: en }
+        - { id: s1w, text: "On the contrary, I agree with you completely.", lang: en }
+    answer:
+      correct_option_id: f6g
+    explanation:
+      vi: I agree up to a point thể hiện đồng ý một phần, rồi but đưa ra lý lẽ phản biện - vừa lịch sự vừa rõ ràng. "I am agree" sai ngữ pháp; On the contrary mâu thuẫn với "I agree completely".
+    display_answer: "I agree up to a point, but a total ban would be very hard to enforce."
+
+  - key: en:exercise:opsoc-views-translate-having-said
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:having-said-that
+    prompt:
+      source_text: Smartphones can be a distraction in class. Having said that, they can be useful for research.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Điện thoại thông minh có thể gây xao nhãng trong lớp. Dù vậy, chúng có thể hữu ích cho việc tra cứu.
+        - Điện thoại thông minh có thể gây xao nhãng trong lớp học. Dù vậy, chúng có thể hữu ích cho việc tra cứu.
+        - Điện thoại thông minh có thể gây mất tập trung trong lớp. Tuy vậy, chúng có thể hữu ích cho việc tìm kiếm thông tin.
+        - Điện thoại thông minh có thể làm mất tập trung trong lớp. Tuy nhiên, chúng có thể có ích cho việc nghiên cứu.
+        - Điện thoại thông minh có thể gây xao nhãng trong giờ học. Nói vậy nhưng chúng có thể hữu ích cho việc tra cứu.
+        - Điện thoại có thể gây xao nhãng trong lớp. Dù vậy, chúng có thể hữu ích khi tra cứu.
+        - Điện thoại thông minh có thể gây xao nhãng trong lớp. Dù vậy, chúng có thể hữu ích khi tra cứu thông tin.
+        - Điện thoại thông minh có thể gây mất tập trung trong lớp. Dù vậy, chúng có thể hữu ích cho việc nghiên cứu.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Having said that là "dù vậy / nói thế nhưng" - thừa nhận ý trước rồi đưa ra mặt tích cực. Distraction là "sự xao nhãng", research ở đây là "tra cứu, tìm hiểu".
+    display_answer: Điện thoại thông minh có thể gây xao nhãng trong lớp. Dù vậy, chúng có thể hữu ích cho việc tra cứu.
+
+  - key: en:exercise:opsoc-views-order-convinced
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:not-entirely-convinced
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi chưa hoàn toàn tin rằng lớp học trực tuyến hiệu quả bằng lớp học trực tiếp.\""
+      tokens:
+        - { id: c-convinced, text: convinced }
+        - { id: c-online, text: online classes }
+        - { id: c-im, text: "I'm" }
+        - { id: c-are, text: are }
+        - { id: c-agree, text: agree }
+        - { id: c-entirely, text: entirely }
+        - { id: c-ftf, text: face-to-face ones }
+        - { id: c-not, text: not }
+        - { id: c-as, text: as effective as }
+        - { id: c-that, text: that }
+    answer:
+      orders:
+        - [c-im, c-not, c-entirely, c-convinced, c-that, c-online, c-are, c-as, c-ftf]
+        - [c-im, c-not, c-entirely, c-convinced, c-online, c-are, c-as, c-ftf]
+    explanation:
+      vi: I'm not entirely convinced (that) + mệnh đề là cách phản đối nhẹ nhàng; that có thể lược bỏ. As effective as là so sánh bằng.
+    display_answer: I'm not entirely convinced that online classes are as effective as face-to-face ones.
+
+  - key: en:exercise:opsoc-views-translate-impact
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:have-an-impact-on
+    prompt:
+      source_text: Chiến dịch này đã có tác động tích cực đến cộng đồng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This campaign has had a positive impact on the community.
+        - The campaign has had a positive impact on the community.
+        - This campaign had a positive impact on the community.
+        - The campaign had a positive impact on the community.
+        - This campaign has had a positive effect on the community.
+        - The campaign has had a positive effect on the community.
+        - This campaign has had a positive impact on the local community.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This campaign has had a positive impact to the community.
+        feedback_vi: Impact đi với giới từ on - a positive impact on.
+        error_tag: preposition
+      - answer: This campaign has had a positive impact with the community.
+        feedback_vi: Impact đi với giới từ on - a positive impact on.
+        error_tag: preposition
+      - answer: This campaign has impacted positive the community.
+        feedback_vi: Dùng cụm have a positive impact on, tính từ positive đứng trước danh từ impact.
+        error_tag: collocation
+    explanation:
+      vi: Have an impact on là collocation cố định; tính từ (positive, huge, negative) đặt giữa a và impact. "Đã có" có thể dịch bằng hiện tại hoàn thành hoặc quá khứ đơn tuỳ ngữ cảnh.
+    display_answer: This campaign has had a positive impact on the community.

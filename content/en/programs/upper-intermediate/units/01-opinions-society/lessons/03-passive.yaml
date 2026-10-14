@@ -1,0 +1,432 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:opinions-society-passive
+order_index: 3
+level: b2
+title:
+  vi: Câu bị động & It is said that…
+objectives:
+  - vi: Chia câu bị động ở các thì chính (hiện tại, tiếp diễn, hoàn thành, quá khứ, tương lai) và với động từ khuyết thiếu.
+  - vi: Đưa thông tin khách quan bằng It is said/believed that… và S + is said to…
+  - vi: Không chia bị động với nội động từ như happen, occur, arrive.
+  - vi: Dùng từ vựng về công nghệ và giáo dục trong văn phong trang trọng.
+estimated_minutes: 25
+skills: [grammar, writing, reading]
+prerequisites: [en:lesson:opinions-society-conditionals]
+items:
+  - item: en:item:passive-tenses
+  - item: en:item:passive-modals
+  - item: en:item:it-is-said-that
+  - item: en:item:be-said-to
+  - item: en:item:intransitive-no-passive
+  - item: en:item:artificial-intelligence
+  - item: en:item:curriculum
+  - item: en:item:tuition-fees
+  - item: en:item:critical-thinking
+  - item: en:item:access-to
+  - item: en:item:screen-time
+  - item: en:item:social-media
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được những câu khách quan, trang trọng về công nghệ và giáo dục - kiểu câu thường gặp trong báo chí, báo cáo và bài luận IELTS.
+  - type: explain
+    text:
+      vi: "Câu bị động = be + V3. Thì của câu nằm hoàn toàn ở be: is built, is being built, has been built, was built, will be built. Động từ chính luôn giữ dạng V3."
+  - type: explain
+    text:
+      vi: "Sau động từ khuyết thiếu (can, should, must, might…) dùng be + V3: Plastic bags should be banned. Nói về quá khứ thì dùng modal + have been + V3: The leak could have been prevented."
+  - type: explain
+    text:
+      vi: "Để đưa tin mà không nói rõ ai nói, văn trang trọng dùng It is said / believed / estimated that… hoặc đưa chủ ngữ lên đầu: AI is said to be… Việc đã xảy ra trước thì dùng to have + V3: The company is believed to have lost millions."
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt dùng "được" cho việc tốt và "bị" cho việc xấu, còn tiếng Anh chỉ có một dạng be + V3. Ngược lại, có những động từ tiếng Việt nghe như bị động ("được xảy ra") nhưng tiếng Anh không bao giờ chia bị động vì chúng không có tân ngữ - happen, occur, arrive, die, disappear. Người làm (by + …) chỉ thêm khi thông tin đó quan trọng.
+  - type: example
+    target: A new metro line is being built, and it will be completed by 2028.
+    target_lang: en
+    translation:
+      vi: Một tuyến tàu điện ngầm mới đang được xây dựng và sẽ hoàn thành trước năm 2028.
+    note:
+      vi: Is being built - bị động tiếp diễn; will be completed - bị động tương lai.
+  - type: example
+    target: Coding has been added to the curriculum, but many schools still do not have access to enough computers.
+    target_lang: en
+    translation:
+      vi: Lập trình đã được đưa vào chương trình học, nhưng nhiều trường vẫn chưa có đủ máy tính.
+    note:
+      vi: Has been added - bị động hiện tại hoàn thành. Danh từ access đi với to.
+  - type: example
+    target: It is widely believed that too much screen time affects children's sleep.
+    target_lang: en
+    translation:
+      vi: Nhiều người tin rằng dùng màn hình quá nhiều ảnh hưởng tới giấc ngủ của trẻ.
+    note:
+      vi: Widely (rộng rãi) thường chen giữa is và believed để nói "nhiều người tin".
+  - type: example
+    target: Artificial intelligence is said to be transforming education, although critical thinking cannot be taught by a machine alone.
+    target_lang: en
+    translation:
+      vi: Trí tuệ nhân tạo được cho là đang làm thay đổi giáo dục, dù tư duy phản biện không thể chỉ do máy móc dạy.
+    note:
+      vi: Is said to be transforming - việc đang diễn ra; cannot be taught - bị động với modal.
+  - type: common_mistake
+    wrong: The problem was happened last year.
+    right: The problem happened last year.
+    target_lang: en
+    note:
+      vi: Happen là nội động từ, không có bị động. Không ai "làm xảy ra" nó, nên chỉ nói happened.
+  - type: common_mistake
+    wrong: A new school is building near my house.
+    right: A new school is being built near my house.
+    target_lang: en
+    note:
+      vi: Trường học không tự xây - cần bị động tiếp diễn is being built. Thiếu being thì câu thành "trường học đang xây (cái gì đó)".
+  - type: common_mistake
+    wrong: Smartphones should banned in class.
+    right: Smartphones should be banned in class.
+    target_lang: en
+    note:
+      vi: Sau modal phải có be nguyên mẫu rồi mới đến V3 - should be banned.
+  - type: summary
+    points:
+      - vi: Bị động = be (chia theo thì) + V3 - is done, is being done, has been done, was done, will be done.
+      - vi: Modal + be + V3 (hiện tại) và modal + have been + V3 (quá khứ).
+      - vi: It is said / believed / estimated that… và S + is said to V / to have V3 - văn phong khách quan.
+      - vi: Happen, occur, arrive, disappear không bao giờ chia bị động.
+      - vi: Từ vựng - curriculum, tuition fees, critical thinking, access to, screen time, artificial intelligence.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:opsoc-pass-mcq-being-built
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:passive-tenses
+    prompt:
+      stem: "Chọn đáp án đúng: A new metro line ___ in Hanoi at the moment."
+      stem_lang: vi
+      options:
+        - { id: c4g, text: is being built, lang: en }
+        - { id: m9p, text: is building, lang: en }
+        - { id: i2v, text: builds, lang: en }
+        - { id: y6k, text: has built, lang: en }
+    answer:
+      correct_option_id: c4g
+    explanation:
+      vi: Tuyến tàu không tự xây nên cần bị động; at the moment cho thấy hành động đang diễn ra, nên dùng is being built (bị động tiếp diễn).
+    display_answer: is being built
+
+  - key: en:exercise:opsoc-pass-mcq-happened
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:intransitive-no-passive
+    prompt:
+      stem: Câu nào đúng ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: o7s, text: The data leak happened last month., lang: en }
+        - { id: f3j, text: The data leak was happened last month., lang: en }
+        - { id: q1z, text: The data leak is happened last month., lang: en }
+        - { id: g5e, text: The data leak was happen last month., lang: en }
+    answer:
+      correct_option_id: o7s
+    explanation:
+      vi: Happen là nội động từ (không có tân ngữ) nên không có dạng bị động. "Was happened" là lỗi do dịch "được/bị xảy ra".
+    display_answer: The data leak happened last month.
+
+  - key: en:exercise:opsoc-pass-listen-believed
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:it-is-said-that
+    prompt:
+      audio_asset_id: null
+      fallback_text: It is widely believed that artificial intelligence will change the way we learn.
+      options:
+        - { id: b8m, text: "Nhiều người tin rằng trí tuệ nhân tạo sẽ thay đổi cách chúng ta học.", lang: vi }
+        - { id: h4c, text: "Tôi tin chắc rằng trí tuệ nhân tạo sẽ thay đổi cách chúng ta học.", lang: vi }
+        - { id: n1w, text: "Trí tuệ nhân tạo đã thay đổi cách chúng ta học từ lâu.", lang: vi }
+        - { id: x6d, text: "Ít ai tin rằng trí tuệ nhân tạo có thể thay đổi việc học.", lang: vi }
+    answer:
+      correct_option_id: b8m
+    explanation:
+      vi: It is widely believed that… là "nhiều người tin rằng" - thông tin khách quan, không phải ý kiến riêng của người nói (khác với I strongly believe).
+    display_answer: "Nhiều người tin rằng trí tuệ nhân tạo sẽ thay đổi cách chúng ta học."
+
+  - key: en:exercise:opsoc-pass-fill-modal-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:passive-modals
+    prompt:
+      template: "Many parents think smartphones should {{b1}} {{b2}} in primary schools."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Nhiều phụ huynh nghĩ rằng điện thoại thông minh nên bị cấm ở trường tiểu học."
+        - "Gợi ý: modal + be + V3 (ban → banned)."
+    answer:
+      blanks:
+        b1: [be]
+        b2: [banned]
+    known_wrong:
+      - answer: is
+        feedback_vi: Sau modal (should) dùng be nguyên mẫu, không chia is.
+        error_tag: modal_passive
+      - answer: ban
+        feedback_vi: Bị động cần V3 - banned.
+        error_tag: past_participle
+      - answer: been
+        feedback_vi: Should been không đúng; hiện tại dùng should be + V3.
+        error_tag: modal_passive
+    explanation:
+      vi: Điện thoại bị cấm (không tự cấm), nên dùng bị động với modal - should + be + V3. Ban có V3 là banned (gấp đôi n).
+    display_answer: Many parents think smartphones should be banned in primary schools.
+
+  - key: en:exercise:opsoc-pass-order-curriculum
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:curriculum
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Lập trình đã được đưa vào chương trình giảng dạy.\""
+      tokens:
+        - { id: r-added, text: added }
+        - { id: r-was, text: was being }
+        - { id: r-coding, text: Coding }
+        - { id: r-adding, text: adding }
+        - { id: r-cur, text: to the curriculum }
+        - { id: r-has, text: has }
+        - { id: r-been, text: been }
+    answer:
+      orders:
+        - [r-coding, r-has, r-been, r-added, r-cur]
+    explanation:
+      vi: Bị động hiện tại hoàn thành là has been + V3. Coding là danh từ không đếm được nên dùng has.
+    display_answer: Coding has been added to the curriculum.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:opsoc-pass-fill-fees
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:tuition-fees
+    prompt:
+      template: "University tuition fees {{b1}} {{b2}} {{b3}} twice since 2020."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [have]
+        b2: [been]
+        b3: [raised, increased]
+    known_wrong:
+      - answer: has
+        feedback_vi: Tuition fees là số nhiều, nên dùng have.
+        error_tag: subject_verb_agreement
+      - answer: being
+        feedback_vi: Since 2020 đòi hỏi hiện tại hoàn thành - have been + V3.
+        error_tag: passive_tense
+      - answer: risen
+        feedback_vi: Rise không có bị động. Học phí bị (người khác) tăng thì dùng raised.
+        error_tag: raise_rise
+      - answer: rose
+        feedback_vi: Cần V3 của một ngoại động từ - raised hoặc increased.
+        error_tag: raise_rise
+    explanation:
+      vi: Since 2020 cho thấy thì hiện tại hoàn thành; fees số nhiều nên have; học phí bị nhà trường tăng nên dùng bị động have been raised.
+    display_answer: University tuition fees have been raised twice since 2020.
+
+  - key: en:exercise:opsoc-pass-translate-said
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:it-is-said-that
+    prompt:
+      source_text: Người ta nói rằng mạng xã hội gây hại cho sức khoẻ tinh thần của giới trẻ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It is said that social media harms young people's mental health.
+        - It's said that social media harms young people's mental health.
+        - It is said that social media is harmful to young people's mental health.
+        - It's said that social media is harmful to young people's mental health.
+        - Social media is said to harm young people's mental health.
+        - Social media is said to be harmful to young people's mental health.
+        - It is said that social media damages young people's mental health.
+        - It is said that social media is bad for young people's mental health.
+        - People say that social media harms young people's mental health.
+        - It is said that social media harms the mental health of young people.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Social media is said that harms young people's mental health.
+        feedback_vi: Khi đưa chủ ngữ lên đầu, dùng is said to + V - Social media is said to harm…
+        error_tag: impersonal_passive
+      - answer: It said that social media harms young people's mental health.
+        feedback_vi: Thiếu is - It is said that…
+        error_tag: impersonal_passive
+      - answer: It is said social media to harm young people's mental health.
+        feedback_vi: It is said that + mệnh đề; hoặc Social media is said to harm…
+        error_tag: impersonal_passive
+    explanation:
+      vi: "\"Người ta nói rằng\" trong văn trang trọng là It is said that + mệnh đề, hoặc đưa chủ ngữ lên đầu - Social media is said to harm… People say that… cũng đúng nhưng kém trang trọng hơn."
+    display_answer: It is said that social media harms young people's mental health.
+
+  - key: en:exercise:opsoc-pass-translate-taught
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:critical-thinking
+    prompt:
+      source_text: Trẻ em nên được dạy tư duy phản biện từ sớm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Children should be taught critical thinking from an early age.
+        - Children should be taught critical thinking early.
+        - Children should be taught critical thinking early on.
+        - Children should be taught critical thinking skills from an early age.
+        - Critical thinking should be taught to children from an early age.
+        - Children should be taught to think critically from an early age.
+        - Kids should be taught critical thinking from an early age.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Children should teach critical thinking from an early age.
+        feedback_vi: Câu này nghĩa là trẻ em đi dạy người khác. Trẻ được dạy thì cần bị động - should be taught.
+        error_tag: active_passive
+      - answer: Children should be teach critical thinking from an early age.
+        feedback_vi: Sau be cần V3 - taught.
+        error_tag: past_participle
+      - answer: Children should are taught critical thinking from an early age.
+        feedback_vi: Sau modal dùng be nguyên mẫu - should be taught.
+        error_tag: modal_passive
+    explanation:
+      vi: Trẻ em là người nhận việc dạy, nên dùng bị động với modal - should be taught. Teach có V3 bất quy tắc là taught.
+    display_answer: Children should be taught critical thinking from an early age.
+
+  # ---------------- application ----------------
+  - key: en:exercise:opsoc-pass-mcq-register
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:access-to
+    prompt:
+      stem: Bạn đang viết một báo cáo trang trọng về giáo dục. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: k7u, text: "It is estimated that 30% of students do not have access to a computer at home.", lang: en }
+        - { id: d2a, text: "People reckon like 30% of students haven't got a computer at home.", lang: en }
+        - { id: v5h, text: "It estimated that 30% of students do not have access to a computer at home.", lang: en }
+        - { id: p9r, text: "It is estimated that 30% of students do not have access with a computer at home.", lang: en }
+    answer:
+      correct_option_id: k7u
+    explanation:
+      vi: It is estimated that… là bị động khách quan, hợp văn trang trọng; access đi với to. Phương án "People reckon like" quá thân mật, các phương án còn lại sai ngữ pháp hoặc giới từ.
+    display_answer: "It is estimated that 30% of students do not have access to a computer at home."
+
+  - key: en:exercise:opsoc-pass-translate-believed
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:be-said-to
+    prompt:
+      source_text: The company is believed to have collected users' data without permission.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Công ty được cho là đã thu thập dữ liệu người dùng mà không được phép.
+        - Công ty được cho là đã thu thập dữ liệu của người dùng mà không được phép.
+        - Công ty bị cho là đã thu thập dữ liệu người dùng mà không xin phép.
+        - Công ty bị cho là đã thu thập dữ liệu của người dùng khi chưa được phép.
+        - Người ta tin rằng công ty đã thu thập dữ liệu người dùng mà không được phép.
+        - Người ta tin rằng công ty đó đã thu thập dữ liệu người dùng mà không xin phép.
+        - Công ty này được cho là đã thu thập dữ liệu người dùng mà không được phép.
+        - Công ty bị nghi là đã thu thập dữ liệu người dùng mà không được phép.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Is believed to have + V3 là "được cho là đã…" - việc thu thập xảy ra trước thời điểm người ta tin. Tiếng Việt có thể dùng "bị cho là" vì đây là việc xấu.
+    display_answer: Công ty được cho là đã thu thập dữ liệu người dùng mà không được phép.
+
+  - key: en:exercise:opsoc-pass-order-ai
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:artificial-intelligence
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bài luận của học sinh đang được chấm bằng trí tuệ nhân tạo.\""
+      tokens:
+        - { id: a-by, text: by }
+        - { id: a-being, text: being }
+        - { id: a-marking, text: marking }
+        - { id: a-ai, text: artificial intelligence }
+        - { id: a-essays, text: "Students' essays" }
+        - { id: a-is, text: is }
+        - { id: a-marked, text: marked }
+        - { id: a-are, text: are }
+    answer:
+      orders:
+        - [a-essays, a-are, a-being, a-marked, a-by, a-ai]
+    explanation:
+      vi: Bị động tiếp diễn là are being + V3 (essays số nhiều nên are). Người/vật thực hiện hành động được nêu sau by.
+    display_answer: "Students' essays are being marked by artificial intelligence."
+
+  - key: en:exercise:opsoc-pass-translate-could-have
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:passive-modals
+    prompt:
+      source_text: Vụ rò rỉ dữ liệu lẽ ra đã có thể tránh được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The data leak could have been avoided.
+        - The data leak could have been prevented.
+        - The data breach could have been avoided.
+        - The data breach could have been prevented.
+        - The leak could have been avoided.
+        - The leak could have been prevented.
+        - The data leak might have been avoided.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The data leak could have avoided.
+        feedback_vi: Vụ rò rỉ không tự tránh - cần bị động could have been avoided.
+        error_tag: modal_passive
+      - answer: The data leak could be avoided.
+        feedback_vi: Việc đã xảy ra trong quá khứ nên dùng could have been + V3.
+        error_tag: modal_passive
+      - answer: The data leak was could have been avoided.
+        feedback_vi: Không đặt was trước modal - The data leak could have been avoided.
+        error_tag: modal_passive
+    explanation:
+      vi: "\"Lẽ ra đã có thể\" nói về khả năng trong quá khứ không thành hiện thực - could have + V3; vì vụ rò rỉ là đối tượng chịu tác động nên thêm been - could have been avoided."
+    display_answer: The data leak could have been avoided.

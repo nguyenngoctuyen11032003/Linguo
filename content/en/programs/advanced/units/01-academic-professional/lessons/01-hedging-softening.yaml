@@ -1,0 +1,416 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:hedging-softening
+order_index: 1
+level: c1
+title:
+  vi: Rào đón & làm mềm nhận định
+objectives:
+  - vi: Dùng It would appear that, tend to, arguably, to some extent, be likely to để đưa ra nhận định thận trọng.
+  - vi: Viết kết luận nghiên cứu bằng the findings suggest that thay vì khẳng định tuyệt đối.
+  - vi: Thay very bằng highly, considerably, significantly, relatively cho đúng collocation.
+estimated_minutes: 15
+skills: [grammar, vocabulary, writing, reading]
+prerequisites: []
+items:
+  - item: en:item:hedging-language
+  - item: en:item:it-would-appear-that
+  - item: en:item:tend-to
+  - item: en:item:arguably
+  - item: en:item:to-some-extent
+  - item: en:item:findings-suggest
+  - item: en:item:somewhat
+  - item: en:item:be-likely-to
+  - item: en:item:intensifier-collocations
+  - item: en:item:highly
+  - item: en:item:considerably
+  - item: en:item:relatively
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được những nhận định thận trọng, khách quan như trong báo cáo và bài nghiên cứu, ví dụ "The findings suggest that remote work tends to increase productivity, at least to some extent."
+  - type: explain
+    text:
+      vi: Trong văn học thuật và công việc, người viết tránh khẳng định tuyệt đối khi bằng chứng chưa đủ. Thay vì This proves that…, họ viết This suggests that… hoặc It would appear that…. Cách nói này gọi là rào đón (hedging).
+  - type: explain
+    text:
+      vi: Công cụ rào đón chính gồm - động từ khuyết thiếu (may, might, could), động từ seem/appear/tend to/suggest, trạng từ (arguably, relatively, somewhat) và cụm to some extent. Tiếng Việt cũng có "có lẽ", "dường như", "ở mức độ nào đó", nhưng tiếng Anh học thuật dùng chúng dày hơn nhiều.
+  - type: explain
+    text:
+      vi: Người Việt hay lặp very cho mọi tính từ (very important, very big, very higher). Ở C1, bạn nên chọn trạng từ đi kèm tự nhiên - highly effective, considerably higher, significantly reduced, relatively small.
+  - type: deep_explain
+    text:
+      vi: Mức độ chắc chắn tăng dần - might → may → could → is likely to → will. Bạn có thể kết hợp hai công cụ (It would appear that prices are likely to rise), nhưng đừng chồng quá nhiều lớp (It might possibly perhaps seem…) vì câu sẽ mơ hồ. Very không đứng trước so sánh hơn - dùng much/considerably/significantly higher.
+  - type: example
+    target: It would appear that the survey questions were misunderstood.
+    target_lang: en
+    translation:
+      vi: Có vẻ như các câu hỏi khảo sát đã bị hiểu sai.
+    note:
+      vi: Chỉ ra vấn đề một cách lịch sự, không đổ lỗi trực tiếp cho ai.
+  - type: example
+    target: Smaller firms tend to be more flexible, although this is not always the case.
+    target_lang: en
+    translation:
+      vi: Các công ty nhỏ thường linh hoạt hơn, dù không phải lúc nào cũng vậy.
+    note:
+      vi: Tend to + động từ nguyên mẫu nói về xu hướng chung, mềm hơn always.
+  - type: example
+    target: The findings suggest that flexible hours are likely to reduce staff turnover.
+    target_lang: en
+    translation:
+      vi: Kết quả nghiên cứu cho thấy giờ làm linh hoạt có khả năng giảm tỷ lệ nghỉ việc.
+    note:
+      vi: Hai lớp rào đón - suggest và be likely to - phù hợp với kết luận dựa trên một nghiên cứu.
+  - type: example
+    target: Arguably, the cost was considerably higher than the benefit.
+    target_lang: en
+    translation:
+      vi: Có thể nói chi phí đã cao hơn đáng kể so với lợi ích.
+    note:
+      vi: Considerably higher thay cho very higher (sai) hoặc much higher (ít trang trọng hơn).
+  - type: common_mistake
+    wrong: The new method is very more effective.
+    right: The new method is considerably more effective.
+    target_lang: en
+    note:
+      vi: Very không đứng trước so sánh hơn. Dùng considerably, significantly hoặc much.
+  - type: common_mistake
+    wrong: This research proves that social media causes depression.
+    right: This research suggests that social media may contribute to depression.
+    target_lang: en
+    note:
+      vi: Một nghiên cứu hiếm khi "chứng minh" quan hệ nhân quả. Dùng suggest và may để nhận định đúng mức bằng chứng.
+  - type: common_mistake
+    wrong: Young people tend to using smartphones at night.
+    right: Young people tend to use smartphones at night.
+    target_lang: en
+    note:
+      vi: To trong tend to là một phần của động từ nguyên mẫu, nên theo sau là V nguyên mẫu, không phải V-ing.
+  - type: summary
+    points:
+      - vi: Rào đón giúp nhận định khớp với mức bằng chứng - suggest, appear, tend to, may/might.
+      - vi: It would appear that… trang trọng và mềm hơn It seems that….
+      - vi: Arguably, to some extent, relatively, somewhat làm mềm ý kiến mà không làm mất quan điểm.
+      - vi: Tend to / be likely to + V nguyên mẫu.
+      - vi: Thay very bằng collocation - highly effective, considerably higher, relatively small.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:hedging-mcq-most-cautious
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:hedging-language
+    prompt:
+      stem: "Câu nào phù hợp nhất cho phần kết luận của một nghiên cứu khảo sát 200 người?"
+      stem_lang: vi
+      options:
+        - { id: q7d, text: This survey proves that all customers prefer online shopping., lang: en }
+        - { id: m2k, text: The findings suggest that many customers may prefer online shopping., lang: en }
+        - { id: x9t, text: Customers definitely prefer online shopping now., lang: en }
+        - { id: b4w, text: Everybody knows customers prefer online shopping., lang: en }
+    answer:
+      correct_option_id: m2k
+    explanation:
+      vi: Khảo sát 200 người không đủ để "chứng minh" điều gì về mọi khách hàng. Suggest + may + many đưa ra nhận định đúng mức bằng chứng; các phương án khác khẳng định tuyệt đối.
+    display_answer: The findings suggest that many customers may prefer online shopping.
+
+  - key: en:exercise:hedging-mcq-appear
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:it-would-appear-that
+    prompt:
+      stem: "It would appear that the invoice was sent to the wrong address. Câu này có nghĩa gì?"
+      stem_lang: vi
+      options:
+        - { id: h3s, text: Có vẻ như hoá đơn đã bị gửi nhầm địa chỉ., lang: vi }
+        - { id: z8a, text: Hoá đơn chắc chắn đã bị gửi nhầm địa chỉ., lang: vi }
+        - { id: e5n, text: Hoá đơn sẽ xuất hiện ở địa chỉ khác., lang: vi }
+        - { id: u1c, text: Hoá đơn đáng lẽ phải được gửi đến địa chỉ khác., lang: vi }
+    answer:
+      correct_option_id: h3s
+    explanation:
+      vi: It would appear that là cụm rào đón nghĩa "có vẻ như", không mang nghĩa "xuất hiện". Would ở đây làm câu mềm hơn, không phải thì tương lai.
+    display_answer: Có vẻ như hoá đơn đã bị gửi nhầm địa chỉ.
+
+  - key: en:exercise:hedging-listen-tend
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:tend-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: Remote workers tend to take fewer sick days.
+      options:
+        - { id: r6p, text: Người làm việc từ xa thường nghỉ ốm ít ngày hơn., lang: vi }
+        - { id: k2v, text: Người làm việc từ xa không bao giờ nghỉ ốm., lang: vi }
+        - { id: w8j, text: Người làm việc từ xa định nghỉ ốm ít ngày hơn., lang: vi }
+        - { id: g5y, text: Người làm việc từ xa chăm sóc người ốm nhiều hơn., lang: vi }
+    answer:
+      correct_option_id: r6p
+    explanation:
+      vi: Tend to nghĩa là "có xu hướng, thường hay", nói về khuynh hướng chung - không tuyệt đối như never, cũng không phải "dự định" (intend to). Tend ở đây không liên quan đến chăm sóc (tend the sick).
+    display_answer: Người làm việc từ xa thường nghỉ ốm ít ngày hơn.
+
+  - key: en:exercise:hedging-fill-intensifier-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:intensifier-collocations
+    prompt:
+      template: "Costs were {{b1}} higher than last year, and the new software is {{b2}} effective."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Chi phí cao hơn đáng kể so với năm ngoái, và phần mềm mới rất hiệu quả."
+        - "Gợi ý: ô 1 là trạng từ đứng trước so sánh hơn (con-SID-…); ô 2 là trạng từ đi với effective, recommended (h…)."
+    answer:
+      blanks:
+        b1: [considerably, significantly, much, substantially, far]
+        b2: [highly, extremely, remarkably]
+    known_wrong:
+      - answer: very
+        feedback_vi: Very không đứng trước so sánh hơn (very higher là sai), và highly effective tự nhiên hơn very effective trong báo cáo.
+        error_tag: overuse_very
+      - answer: high
+        feedback_vi: High là tính từ "cao"; trạng từ chỉ mức độ là highly.
+        error_tag: word_form
+      - answer: considerable
+        feedback_vi: Considerable là tính từ; trước higher cần trạng từ considerably.
+        error_tag: word_form
+    explanation:
+      vi: Trước so sánh hơn (higher) dùng considerably/significantly/much, không dùng very. Highly là collocation chuẩn với effective trong văn trang trọng.
+    display_answer: Costs were considerably higher than last year, and the new software is highly effective.
+
+  - key: en:exercise:hedging-order-extent
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:to-some-extent
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Ở một mức độ nào đó, cuộc khủng hoảng có thể lường trước được.\""
+      tokens:
+        - { id: t-was, text: was }
+        - { id: t-extent, text: extent }
+        - { id: t-crisis, text: crisis }
+        - { id: t-to, text: to }
+        - { id: t-in, text: in }
+        - { id: t-predictable, text: predictable }
+        - { id: t-some, text: some }
+        - { id: t-the, text: the }
+    answer:
+      orders:
+        - [t-to, t-some, t-extent, t-the, t-crisis, t-was, t-predictable]
+        - [t-the, t-crisis, t-was, t-to, t-some, t-extent, t-predictable]
+        - [t-the, t-crisis, t-was, t-predictable, t-to, t-some, t-extent]
+    explanation:
+      vi: Cụm cố định là to some extent (dùng to, không dùng in). Cụm này có thể đứng đầu câu, giữa câu hoặc cuối câu.
+    display_answer: To some extent, the crisis was predictable.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:hedging-fill-tend-likely
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-likely-to
+    prompt:
+      template: "Prices {{b1}} likely to rise further, as consumers tend to {{b2}} more in the run-up to Tết."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [are]
+        b2: [spend, shop, buy]
+    known_wrong:
+      - answer: spending
+        feedback_vi: Sau tend to là động từ nguyên mẫu - tend to spend.
+        error_tag: verb_form
+      - answer: spends
+        feedback_vi: Sau tend to là động từ nguyên mẫu, không chia - tend to spend.
+        error_tag: verb_form
+      - answer: is
+        feedback_vi: Prices là số nhiều nên dùng are.
+        error_tag: subject_verb_agreement
+    explanation:
+      vi: Likely là tính từ nên cần be (prices are likely to). To trong tend to là dấu hiệu động từ nguyên mẫu, nên theo sau là spend.
+    display_answer: Prices are likely to rise further, as consumers tend to spend more in the run-up to Tết.
+
+  - key: en:exercise:hedging-translate-findings
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:findings-suggest
+    prompt:
+      source_text: Kết quả nghiên cứu cho thấy giấc ngủ ảnh hưởng đến trí nhớ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The findings suggest that sleep affects memory.
+        - The findings suggest sleep affects memory.
+        - The findings suggest that sleep has an effect on memory.
+        - The findings suggest that sleep has an impact on memory.
+        - The findings suggest that sleep influences memory.
+        - The results suggest that sleep affects memory.
+        - The results suggest sleep affects memory.
+        - The findings indicate that sleep affects memory.
+        - The research findings suggest that sleep affects memory.
+        - The study's findings suggest that sleep affects memory.
+        - The findings of the study suggest that sleep affects memory.
+        - The findings show that sleep affects memory.
+        - The results show that sleep affects memory.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The findings suggests that sleep affects memory.
+        feedback_vi: Findings là số nhiều nên động từ là suggest, không thêm -s.
+        error_tag: subject_verb_agreement
+      - answer: The findings suggest that sleep effects memory.
+        feedback_vi: Động từ "ảnh hưởng" là affect; effect thường là danh từ (have an effect on).
+        error_tag: affect_effect
+      - answer: The findings prove that sleep affects memory.
+        feedback_vi: Prove (chứng minh) quá mạnh so với "cho thấy"; dùng suggest, indicate hoặc show.
+        error_tag: overclaiming
+    explanation:
+      vi: “Kết quả nghiên cứu cho thấy” là the findings suggest that (that có thể lược). Findings số nhiều nên dùng suggest; “ảnh hưởng” là động từ affect.
+    display_answer: The findings suggest that sleep affects memory.
+
+  - key: en:exercise:hedging-translate-arguably
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:arguably
+    prompt:
+      source_text: Có thể nói đây là cải cách quan trọng nhất của thập kỷ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This is arguably the most important reform of the decade.
+        - Arguably, this is the most important reform of the decade.
+        - This is arguably the most significant reform of the decade.
+        - Arguably, this is the most significant reform of the decade.
+        - This is arguably the most important reform of the past decade.
+        - This is arguably the decade's most important reform.
+        - It is arguably the most important reform of the decade.
+        - Arguably, it is the most important reform of the decade.
+        - This is arguably the most important reform in a decade.
+        - This is arguably the most important reform of this decade.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This is arguably the importantest reform of the decade.
+        feedback_vi: Important dài nên so sánh nhất là the most important.
+        error_tag: superlative
+      - answer: This is arguably most important reform of the decade.
+        feedback_vi: So sánh nhất cần the - the most important.
+        error_tag: article
+      - answer: This is controversially the most important reform of the decade.
+        feedback_vi: Controversially nghĩa là "gây tranh cãi"; "có thể nói" là arguably.
+        error_tag: word_choice
+    explanation:
+      vi: Arguably mở ra một nhận định mạnh nhưng có thể bảo vệ được, đúng nghĩa "có thể nói". Nó đứng trước cụm so sánh nhất hoặc đầu câu kèm dấu phẩy.
+    display_answer: This is arguably the most important reform of the decade.
+
+  # ---------------- application ----------------
+  - key: en:exercise:hedging-mcq-email-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:it-would-appear-that
+    prompt:
+      stem: "Bạn phát hiện đối tác chuyển thiếu tiền thanh toán. Bạn muốn nêu vấn đề lịch sự, không buộc tội. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: n4f, text: "It would appear that the payment received was €200 less than the invoiced amount.", lang: en }
+        - { id: d7l, text: "You paid us €200 less. This is wrong.", lang: en }
+        - { id: s3o, text: "You obviously made a mistake with the payment.", lang: en }
+        - { id: c9e, text: "Why did you not pay the full amount?", lang: en }
+    answer:
+      correct_option_id: n4f
+    explanation:
+      vi: It would appear that nêu sự việc một cách khách quan, không chỉ thẳng vào lỗi của người nhận. Các phương án khác mang giọng buộc tội (You obviously made a mistake) hoặc chất vấn.
+    display_answer: "It would appear that the payment received was €200 less than the invoiced amount."
+
+  - key: en:exercise:hedging-translate-to-vi-relatively
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:relatively
+    prompt:
+      source_text: The sample size was relatively small, so the results should be interpreted with caution.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cỡ mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu tương đối nhỏ, vì vậy cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu tương đối nhỏ nên cần diễn giải kết quả một cách thận trọng.
+        - Cỡ mẫu tương đối nhỏ, vì vậy kết quả cần được diễn giải một cách thận trọng.
+        - Cỡ mẫu tương đối nhỏ, do đó cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu khá nhỏ, nên cần thận trọng khi diễn giải kết quả.
+        - Kích thước mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.
+        - Cỡ mẫu tương đối nhỏ nên các kết quả cần được diễn giải thận trọng.
+        - Cỡ mẫu tương đối nhỏ, nên kết quả cần được hiểu một cách thận trọng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Relatively small là "tương đối nhỏ" - một cách nói nhẹ về hạn chế của nghiên cứu. Should be interpreted with caution dịch tự nhiên là "cần thận trọng khi diễn giải".
+    display_answer: Cỡ mẫu tương đối nhỏ, nên cần thận trọng khi diễn giải kết quả.
+
+  - key: en:exercise:hedging-translate-tend-extent
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:tend-to
+    prompt:
+      source_text: Ở một mức độ nào đó, nhân viên trẻ có xu hướng chuyển việc thường xuyên hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - To some extent, younger employees tend to change jobs more frequently.
+        - To some extent, younger employees tend to change jobs more often.
+        - To some extent, young employees tend to change jobs more frequently.
+        - To some extent, young employees tend to change jobs more often.
+        - To a certain extent, younger employees tend to change jobs more frequently.
+        - To a certain extent, younger employees tend to change jobs more often.
+        - To some extent, younger staff tend to change jobs more frequently.
+        - To some extent, younger workers tend to change jobs more frequently.
+        - To some extent, younger workers tend to change jobs more often.
+        - Younger employees tend to change jobs more frequently, to some extent.
+        - To some extent, younger employees tend to switch jobs more frequently.
+        - To some extent, younger employees tend to switch jobs more often.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In some extent, younger employees tend to change jobs more frequently.
+        feedback_vi: Cụm cố định là to some extent, không dùng in.
+        error_tag: preposition
+      - answer: To some extent, younger employees tend to changing jobs more frequently.
+        feedback_vi: Sau tend to là động từ nguyên mẫu - tend to change.
+        error_tag: verb_form
+      - answer: To some extent, younger employees tend change jobs more frequently.
+        feedback_vi: Thiếu to - tend to change.
+        error_tag: verb_form
+    explanation:
+      vi: Hai lớp rào đón - to some extent (mức độ) và tend to (xu hướng) - giúp nhận định khái quát mà không tuyệt đối. Tend to + V nguyên mẫu.
+    display_answer: To some extent, younger employees tend to change jobs more frequently.

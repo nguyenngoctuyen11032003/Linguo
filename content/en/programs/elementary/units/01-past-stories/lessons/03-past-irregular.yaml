@@ -1,0 +1,431 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:past-irregular
+order_index: 3
+level: a2
+title:
+  vi: Đầu tiên… sau đó… - động từ bất quy tắc và kể theo trình tự
+objectives:
+  - vi: Dùng đúng dạng quá khứ của mười động từ bất quy tắc thông dụng - went, had, saw, bought, ate, took, met, came, got, made.
+  - vi: Không thêm -ed vào động từ bất quy tắc ("goed", "buyed").
+  - vi: Kể một câu chuyện ngắn theo trình tự với first, then, after that, finally.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [en:lesson:past-regular]
+items:
+  - item: en:item:irregular-past
+  - item: en:item:went
+  - item: en:item:had
+  - item: en:item:saw
+  - item: en:item:bought
+  - item: en:item:ate
+  - item: en:item:took
+  - item: en:item:met
+  - item: en:item:came
+  - item: en:item:got
+  - item: en:item:made
+  - item: en:item:sequence-first
+  - item: en:item:sequence-then
+  - item: en:item:after-that
+  - item: en:item:finally
+  - item: en:item:past-simple-regular
+    role: reuse
+  - item: en:item:time-ago
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một buổi đi chơi - "Đầu tiên chúng mình đi chợ, sau đó ăn trưa, cuối cùng về nhà lúc sáu giờ" - với đúng dạng quá khứ của các động từ hay dùng nhất.
+  - type: explain
+    text:
+      vi: Nhiều động từ thông dụng nhất lại không thêm -ed mà có dạng quá khứ riêng - go → went, have → had, see → saw, buy → bought. Bạn cần học thuộc chúng theo cặp, giống như học từ mới.
+  - type: explain
+    text:
+      vi: Giống động từ có quy tắc, dạng quá khứ bất quy tắc dùng cho mọi chủ ngữ - I went, she went, they went. Đừng thêm -ed vào chúng ("goed", "eated") và đừng thêm was phía trước ("I was go").
+  - type: explain
+    text:
+      vi: Khi kể chuyện, tiếng Việt dùng "đầu tiên, rồi, sau đó, cuối cùng"; tiếng Anh có first, then, after that, finally. First, after that, finally thường đứng đầu câu và có dấu phẩy theo sau; then có thể nối ngay trong câu (…, then we had lunch).
+  - type: deep_explain
+    text:
+      vi: Mẹo nhớ theo nhóm âm - buy → bought, bring → brought, think → thought đều có -ought /ɔːt/; come → came, eat → ate, make → made, take → took có nguyên âm thay đổi. Một số động từ đi kèm cụm cố định - take a photo, take a taxi, have lunch, get up, get home, go home (không có to). Kể chuyện dài thì đừng lặp mãi then; xen kẽ then và after that cho tự nhiên.
+  - type: example
+    target: Last Saturday I got up early and went to the market with my mum.
+    target_lang: en
+    translation:
+      vi: Thứ Bảy tuần trước mình dậy sớm và đi chợ với mẹ.
+    note:
+      vi: Get up → got up, go → went. Cả hai đều bất quy tắc, không thêm -ed.
+  - type: example
+    target: We bought some fruit, then we had a coffee near the lake.
+    target_lang: en
+    translation:
+      vi: Chúng mình mua ít hoa quả, rồi uống cà phê gần hồ.
+    note:
+      vi: Have a coffee là "uống cà phê" - had dùng được cho cả ăn và uống.
+  - type: example
+    target: After that, we saw some old friends and took a lot of photos.
+    target_lang: en
+    translation:
+      vi: Sau đó, chúng mình gặp mấy người bạn cũ và chụp rất nhiều ảnh.
+    note:
+      vi: Saw dùng khi tình cờ gặp; take photos (chụp ảnh) → took photos.
+  - type: example
+    target: Finally, we came home and made dinner together.
+    target_lang: en
+    translation:
+      vi: Cuối cùng, chúng mình về nhà và cùng nấu bữa tối.
+    note:
+      vi: Came home không có to; make dinner là "nấu bữa tối".
+  - type: common_mistake
+    wrong: Yesterday I go to the cinema and buy popcorn.
+    right: Yesterday I went to the cinema and bought popcorn.
+    target_lang: en
+    note:
+      vi: Lỗi rất phổ biến của người Việt - giữ nguyên động từ vì đã có yesterday. Mọi động từ trong câu kể quá khứ đều phải đổi.
+  - type: common_mistake
+    wrong: I was go to Da Lat last month.
+    right: I went to Da Lat last month.
+    target_lang: en
+    note:
+      vi: Was không phải là "đã". Quá khứ của go là went, không cần thêm was.
+  - type: common_mistake
+    wrong: We eated pho and buyed some souvenirs.
+    right: We ate pho and bought some souvenirs.
+    target_lang: en
+    note:
+      vi: Eat và buy là động từ bất quy tắc - ate, bought; không thêm -ed.
+  - type: summary
+    points:
+      - vi: go → went, have → had, see → saw, buy → bought, eat → ate.
+      - vi: take → took, meet → met, come → came, get → got, make → made.
+      - vi: Không thêm -ed và không thêm was trước động từ bất quy tắc.
+      - vi: Kể theo trình tự - First, … Then … After that, … Finally, …
+      - vi: Cụm cố định - went home, came home, got home (không có to), took photos, had lunch.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:past-irregular-mcq-went
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:went
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Yesterday we ___ to the beach."
+      stem_lang: vi
+      options:
+        - { id: t2b, text: goed, lang: en }
+        - { id: n5z, text: went, lang: en }
+        - { id: c8u, text: go, lang: en }
+        - { id: f3m, text: was go, lang: en }
+    answer:
+      correct_option_id: n5z
+    explanation:
+      vi: Go là động từ bất quy tắc, quá khứ là went. Goed không tồn tại; go thiếu dấu hiệu quá khứ; was go là ghép sai.
+    display_answer: went
+
+  - key: en:exercise:past-irregular-mcq-bought
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:bought
+    prompt:
+      stem: Dạng quá khứ của buy (mua) là gì?
+      stem_lang: vi
+      options:
+        - { id: h7e, text: buyed, lang: en }
+        - { id: z4o, text: brought, lang: en }
+        - { id: m1r, text: bought, lang: en }
+        - { id: a9k, text: buied, lang: en }
+    answer:
+      correct_option_id: m1r
+    explanation:
+      vi: Buy bất quy tắc - bought /bɔːt/. Brought là quá khứ của bring (mang theo), rất dễ nhầm vì chỉ khác chữ r.
+    display_answer: bought
+
+  - key: en:exercise:past-irregular-listen-story
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:sequence-first
+    prompt:
+      audio_asset_id: null
+      fallback_text: First we had breakfast, then we took a taxi to the market.
+      options:
+        - { id: v6l, text: "Đầu tiên chúng tôi ăn sáng, rồi đi taxi ra chợ.", lang: vi }
+        - { id: d3w, text: "Đầu tiên chúng tôi đi taxi ra chợ, rồi ăn sáng.", lang: vi }
+        - { id: p8h, text: "Chúng tôi ăn sáng ở chợ, rồi đi taxi về nhà.", lang: vi }
+        - { id: j2c, text: "Đầu tiên chúng tôi ăn trưa, rồi đi bộ ra chợ.", lang: vi }
+    answer:
+      correct_option_id: v6l
+    explanation:
+      vi: First đánh dấu việc thứ nhất (had breakfast - ăn sáng), then là việc tiếp theo (took a taxi - đi taxi). Thứ tự trong câu tiếng Anh giữ nguyên khi dịch.
+    display_answer: Đầu tiên chúng tôi ăn sáng, rồi đi taxi ra chợ.
+
+  - key: en:exercise:past-irregular-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:met
+    prompt:
+      template: "I {{b1}} (meet) Lan at a café, and we {{b2}} (eat) banh mi together."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Mình gặp Lan ở quán cà phê và chúng mình cùng ăn bánh mì."
+        - "Gợi ý: meet → m_t, eat → a_e (bất quy tắc)."
+    answer:
+      blanks:
+        b1: [met]
+        b2: [ate]
+    known_wrong:
+      - answer: meeted
+        feedback_vi: Meet bất quy tắc - quá khứ là met.
+        error_tag: irregular_ed
+      - answer: eated
+        feedback_vi: Eat bất quy tắc - quá khứ là ate.
+        error_tag: irregular_ed
+      - answer: meet
+        feedback_vi: Chuyện đã xảy ra nên dùng quá khứ của meet - met.
+        error_tag: no_past_marking
+      - answer: eat
+        feedback_vi: Chuyện đã xảy ra nên dùng quá khứ của eat - ate.
+        error_tag: no_past_marking
+    explanation:
+      vi: Meet → met, eat → ate. Cả hai đều là động từ bất quy tắc nên không thêm -ed.
+    display_answer: I met Lan at a café, and we ate banh mi together.
+
+  - key: en:exercise:past-irregular-order-photos
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:took
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Sau đó, chúng mình chụp rất nhiều ảnh.\""
+      tokens:
+        - { id: o-photos, text: photos }
+        - { id: o-took, text: took }
+        - { id: o-that, text: that }
+        - { id: o-a, text: a }
+        - { id: o-made, text: made }
+        - { id: o-we, text: we }
+        - { id: o-of, text: of }
+        - { id: o-after, text: After }
+        - { id: o-lot, text: lot }
+        - { id: o-take, text: take }
+    answer:
+      orders:
+        - [o-after, o-that, o-we, o-took, o-a, o-lot, o-of, o-photos]
+        - [o-we, o-took, o-a, o-lot, o-of, o-photos, o-after, o-that]
+    explanation:
+      vi: "\"Chụp ảnh\" là take photos, quá khứ là took photos - không dùng make. After that (sau đó) thường đứng đầu câu."
+    display_answer: After that, we took a lot of photos.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:past-irregular-fill-sequence
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:after-that
+    prompt:
+      template: "{{b1}}, we went to the market. {{b2}} we bought some fruit. {{b3}} that, we had lunch. {{b4}}, we got home at six."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 5 }
+        - { id: b4, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [First, Firstly, First of all]
+        b2: [Then, Next]
+        b3: [After]
+        b4: [Finally, Lastly, In the end]
+    known_wrong:
+      - answer: At last
+        feedback_vi: At last mang ý "mãi mới được" sau khi chờ lâu; kết thúc câu chuyện dùng Finally.
+        error_tag: at_last
+      - answer: Before
+        feedback_vi: Before that là "trước đó"; câu chuyện đang đi tiếp nên dùng After that.
+        error_tag: sequence_word
+      - answer: Last
+        feedback_vi: Để kết thúc chuỗi sự việc, dùng Finally hoặc In the end.
+        error_tag: sequence_word
+    explanation:
+      vi: Câu chuyện đi theo thứ tự First → Then → After that → Finally. Ô thứ ba đã có that phía sau nên cần After.
+    display_answer: First, we went to the market. Then we bought some fruit. After that, we had lunch. Finally, we got home at six.
+
+  - key: en:exercise:past-irregular-translate-phone
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:bought
+    prompt:
+      source_text: Tuần trước cô ấy mua một chiếc điện thoại mới.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She bought a new phone last week.
+        - Last week she bought a new phone.
+        - Last week, she bought a new phone.
+        - She bought a new mobile phone last week.
+        - She bought a new smartphone last week.
+        - Last week she bought a new smartphone.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She buy a new phone last week.
+        feedback_vi: Việc xảy ra tuần trước nên dùng quá khứ của buy - bought.
+        error_tag: no_past_marking
+      - answer: She buyed a new phone last week.
+        feedback_vi: Buy bất quy tắc - bought, không thêm -ed.
+        error_tag: irregular_ed
+      - answer: She was buy a new phone last week.
+        feedback_vi: Không dùng was + động từ nguyên mẫu; chỉ cần bought.
+        error_tag: was_plus_verb
+      - answer: She bought a new phone in last week.
+        feedback_vi: Không dùng in trước last - chỉ nói last week.
+        error_tag: time_preposition
+    explanation:
+      vi: Buy → bought, giống nhau với mọi chủ ngữ. Last week không có giới từ phía trước.
+    display_answer: She bought a new phone last week.
+
+  - key: en:exercise:past-irregular-translate-met
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:met
+    prompt:
+      source_text: Chúng tôi quen nhau ở trường đại học cách đây năm năm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We met at university five years ago.
+        - We met at university 5 years ago.
+        - We met each other at university five years ago.
+        - We met at the university five years ago.
+        - We met in university five years ago.
+        - We met at college five years ago.
+        - Five years ago we met at university.
+        - Five years ago, we met at university.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We meet at university five years ago.
+        feedback_vi: Việc xảy ra năm năm trước nên dùng met.
+        error_tag: no_past_marking
+      - answer: We meeted at university five years ago.
+        feedback_vi: Meet bất quy tắc - met, không thêm -ed.
+        error_tag: irregular_ed
+      - answer: We met at university ago five years.
+        feedback_vi: Ago đứng sau khoảng thời gian - five years ago.
+        error_tag: ago_position
+      - answer: We met at university before five years.
+        feedback_vi: "\"Cách đây năm năm\" là five years ago, không dùng before."
+        error_tag: ago_position
+    explanation:
+      vi: "\"Quen nhau\" lần đầu dùng met (quá khứ của meet). \"Cách đây năm năm\" là five years ago, ago đứng sau khoảng thời gian."
+    display_answer: We met at university five years ago.
+
+  # ---------------- application ----------------
+  - key: en:exercise:past-irregular-translate-cake
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:made
+    prompt:
+      source_text: First we went to the market and bought some fruit. Then we came home and made a cake.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đầu tiên chúng tôi đi chợ và mua ít hoa quả. Sau đó chúng tôi về nhà và làm bánh.
+        - Đầu tiên chúng tôi đi chợ và mua một ít hoa quả. Sau đó chúng tôi về nhà và làm bánh.
+        - Đầu tiên chúng tôi đi chợ mua ít hoa quả. Rồi chúng tôi về nhà làm bánh.
+        - Đầu tiên chúng tôi đi chợ và mua ít trái cây. Sau đó chúng tôi về nhà và làm bánh.
+        - Đầu tiên chúng tôi đi chợ và mua một ít trái cây. Sau đó chúng tôi về nhà và làm một cái bánh.
+        - Trước tiên chúng tôi đi chợ và mua ít hoa quả. Sau đó chúng tôi về nhà và làm bánh.
+        - Đầu tiên chúng mình đi chợ và mua ít hoa quả. Sau đó chúng mình về nhà và làm bánh.
+        - Đầu tiên chúng tôi đi chợ mua hoa quả, rồi về nhà làm bánh.
+        - Đầu tiên chúng tôi đi chợ và mua ít hoa quả. Sau đó chúng tôi về nhà và làm một chiếc bánh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đầu tiên chúng tôi về nhà và làm bánh. Sau đó chúng tôi đi chợ và mua ít hoa quả.
+        feedback_vi: First chỉ việc đi chợ, then mới là về nhà làm bánh - giữ đúng trình tự.
+        error_tag: sequence_order
+    explanation:
+      vi: First là "đầu tiên", then là "sau đó/rồi". Went, bought, came, made là quá khứ của go, buy, come, make; tiếng Việt không cần thêm "đã".
+    display_answer: Đầu tiên chúng tôi đi chợ và mua ít hoa quả. Sau đó chúng tôi về nhà và làm bánh.
+
+  - key: en:exercise:past-irregular-mcq-morning
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:irregular-past
+    prompt:
+      stem: Bạn kể với bạn bè về sáng Chủ Nhật vừa rồi - dậy muộn, ăn sáng rồi ra công viên. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: s4q, text: "I got up late, then I had breakfast and went to the park.", lang: en }
+        - { id: e1x, text: "I getted up late, then I had breakfast and went to the park.", lang: en }
+        - { id: l7n, text: "I got up late, then I have breakfast and go to the park.", lang: en }
+        - { id: y9g, text: "I got up late, then I had breakfast and goed to the park.", lang: en }
+    answer:
+      correct_option_id: s4q
+    explanation:
+      vi: Cả ba động từ đều bất quy tắc và đều phải ở quá khứ - got up, had, went. Getted, goed không tồn tại; have, go sai thì.
+    display_answer: I got up late, then I had breakfast and went to the park.
+
+  - key: en:exercise:past-irregular-translate-midnight
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:finally
+    prompt:
+      source_text: Cuối cùng, nửa đêm chúng tôi mới về đến nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Finally, we got home at midnight.
+        - Finally we got home at midnight.
+        - We finally got home at midnight.
+        - In the end, we got home at midnight.
+        - Finally, we came home at midnight.
+        - Finally, we arrived home at midnight.
+        - Finally, we got back home at midnight.
+        - Finally, we didn't get home until midnight.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Finally, we got to home at midnight.
+        feedback_vi: Home không đi với to - got home.
+        error_tag: home_no_to
+      - answer: Finally, we get home at midnight.
+        feedback_vi: Chuyện đã xảy ra nên dùng got, quá khứ của get.
+        error_tag: no_past_marking
+      - answer: Finally, we went to home at midnight.
+        feedback_vi: Home không đi với to - went home; "về đến nhà" tự nhiên hơn là got home.
+        error_tag: home_no_to
+      - answer: Finally, we getted home at midnight.
+        feedback_vi: Get bất quy tắc - got, không thêm -ed.
+        error_tag: irregular_ed
+    explanation:
+      vi: "\"Về đến nhà\" là got home - got là quá khứ của get, và home không cần to. Finally đứng đầu câu để kết thúc câu chuyện."
+    display_answer: Finally, we got home at midnight.

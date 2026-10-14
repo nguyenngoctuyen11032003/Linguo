@@ -1,0 +1,427 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:was-were
+order_index: 1
+level: a2
+title:
+  vi: Hôm qua bạn ở đâu? - was / were
+objectives:
+  - vi: Dùng was/were để nói mình đã ở đâu, cảm thấy thế nào, sự việc ra sao trong quá khứ.
+  - vi: Dùng there was/there were để tả nơi chốn trong quá khứ thay vì dịch "có" thành have.
+  - vi: Đặt mốc thời gian đúng - yesterday, last week, three days ago, in 2020.
+  - vi: Nói phủ định và hỏi với wasn't/weren't, Was…?/Were…? mà không dùng did.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: []
+items:
+  - item: en:item:be-past
+  - item: en:item:be-past-negative
+  - item: en:item:there-was-were
+  - item: en:item:yesterday
+  - item: en:item:last-plus-time
+  - item: en:item:time-ago
+  - item: en:item:in-plus-year
+  - item: en:item:was-born
+  - item: en:item:at-the-weekend
+  - item: en:item:crowded
+  - item: en:item:amazing
+  - item: en:item:boring
+  - item: en:item:be-present
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được những câu như "Hôm qua mình ở nhà", "Cuối tuần trước bãi biển rất đông", "Mình sinh năm 2001" bằng tiếng Anh với đúng was/were và mốc thời gian.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ thêm "hôm qua", "đã" còn từ "là", "ở" giữ nguyên; tiếng Anh phải đổi chính động từ be. Am và is thành was; are thành were - I was, she was, you were, they were.
+  - type: explain
+    text:
+      vi: Để phủ định, thêm not ngay sau was/were (wasn't, weren't); để hỏi, đưa was/were lên đầu câu (Were you tired?). Với be, bạn không cần did.
+  - type: explain
+    text:
+      vi: Muốn nói "ở đâu đó có gì" trong quá khứ, dùng there was + danh từ số ít, there were + danh từ số nhiều. Đừng dịch "có" thành had - There were many people at the market, không nói "The market had many people" khi tả cảnh.
+  - type: explain
+    text:
+      vi: Mốc thời gian quá khứ - yesterday, last night/week/year (không có in, on), three days ago (ago đứng sau khoảng thời gian), in 2020/in May. Mốc thời gian thường đứng cuối câu, hoặc đầu câu kèm dấu phẩy.
+  - type: deep_explain
+    text:
+      vi: Was/were khi đọc nhanh thường yếu đi thành /wəz/, /wə/, nên khi nghe hãy chú ý đến chủ ngữ và mốc thời gian. Câu trả lời ngắn lặp lại be - Yes, I was. / No, they weren't. "Sinh ra" trong tiếng Anh là dạng bị động be born, nên luôn cần was/were - I was born in 2001, kể cả khi bạn kể ở hiện tại.
+  - type: example
+    target: I was at home yesterday because I was tired.
+    target_lang: en
+    translation:
+      vi: Hôm qua mình ở nhà vì mình mệt.
+    note:
+      vi: Cả "ở nhà" lẫn "mệt" đều cần was, dù tiếng Việt không có động từ nào.
+  - type: example
+    target: There were a lot of people at the night market last Saturday.
+    target_lang: en
+    translation:
+      vi: Tối thứ Bảy tuần trước chợ đêm rất đông người.
+    note:
+      vi: People là số nhiều nên dùng there were; last Saturday không có on phía trước.
+  - type: example
+    target: "Was the film good? - No, it wasn't. It was really boring."
+    target_lang: en
+    translation:
+      vi: "Phim có hay không? - Không. Chán lắm."
+    note:
+      vi: Câu hỏi đảo was lên đầu, câu trả lời ngắn dùng wasn't - không có did.
+  - type: example
+    target: My parents were born in Nam Dinh in 1975.
+    target_lang: en
+    translation:
+      vi: Bố mẹ mình sinh ra ở Nam Định năm 1975.
+    note:
+      vi: Chủ ngữ số nhiều nên were born; năm dùng in.
+  - type: common_mistake
+    wrong: Yesterday I am very tired.
+    right: Yesterday I was very tired.
+    target_lang: en
+    note:
+      vi: Có yesterday rồi vẫn phải đổi am thành was. Tiếng Anh đánh dấu thời gian ngay trên động từ, không chỉ bằng từ chỉ thời gian.
+  - type: common_mistake
+    wrong: I born in 2001.
+    right: I was born in 2001.
+    target_lang: en
+    note:
+      vi: Born không đứng một mình; "sinh ra" là was born/were born.
+  - type: common_mistake
+    wrong: The beach had many people.
+    right: There were a lot of people on the beach.
+    target_lang: en
+    note:
+      vi: Để tả "ở đâu có gì", tiếng Anh dùng there was/were, không dịch "có" thành had.
+  - type: common_mistake
+    wrong: Did you were at home?
+    right: Were you at home?
+    target_lang: en
+    note:
+      vi: Câu hỏi với be chỉ cần đảo was/were lên đầu, không thêm did.
+  - type: summary
+    points:
+      - vi: I/he/she/it → was; you/we/they → were. Có từ chỉ quá khứ thì vẫn phải đổi be.
+      - vi: Phủ định wasn't/weren't, câu hỏi Was…?/Were…? - không dùng did với be.
+      - vi: Ở đâu đó "có…" → there was (số ít) / there were (số nhiều).
+      - vi: yesterday, last week (không in/on), two days ago (ago đứng sau), in 2020.
+      - vi: Sinh ra → was born / were born.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:was-were-mcq-they
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:be-past
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: They ___ at the cinema last night."
+      stem_lang: vi
+      options:
+        - { id: q7d, text: was, lang: en }
+        - { id: m2k, text: were, lang: en }
+        - { id: x5t, text: are, lang: en }
+        - { id: h9w, text: did, lang: en }
+    answer:
+      correct_option_id: m2k
+    explanation:
+      vi: They đi với were; last night là quá khứ nên không dùng are. Did không đứng trước nơi chốn như "at the cinema".
+    display_answer: were
+
+  - key: en:exercise:was-were-mcq-born
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:was-born
+    prompt:
+      stem: "Chọn câu đúng để nói \"Mình sinh năm 2003.\""
+      stem_lang: vi
+      options:
+        - { id: r4n, text: I born in 2003., lang: en }
+        - { id: b8c, text: I was born in 2003., lang: en }
+        - { id: z3f, text: I am born in 2003., lang: en }
+        - { id: t6j, text: I was born on 2003., lang: en }
+    answer:
+      correct_option_id: b8c
+    explanation:
+      vi: "\"Sinh ra\" là was born - luôn cần was. Năm dùng in, không dùng on. I am born sai vì việc sinh ra đã xảy ra trong quá khứ."
+    display_answer: I was born in 2003.
+
+  - key: en:exercise:was-were-listen-market
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:there-was-were
+    prompt:
+      audio_asset_id: null
+      fallback_text: There were a lot of people at the market yesterday.
+      options:
+        - { id: k3s, text: Hôm qua ở chợ có rất nhiều người., lang: vi }
+        - { id: e8v, text: Hôm nay ở chợ có rất nhiều người., lang: vi }
+        - { id: w1p, text: Hôm qua ở chợ không có nhiều người., lang: vi }
+        - { id: a6g, text: Hôm qua chợ có rất nhiều đồ ăn., lang: vi }
+    answer:
+      correct_option_id: k3s
+    explanation:
+      vi: There were a lot of people là "có rất nhiều người", yesterday là "hôm qua". Không có not nên không phải câu phủ định.
+    display_answer: Hôm qua ở chợ có rất nhiều người.
+
+  - key: en:exercise:was-were-fill-there
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:there-was-were
+    prompt:
+      template: "There {{b1}} a small café near the hotel, and there {{b2}} two good restaurants."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Gần khách sạn có một quán cà phê nhỏ và có hai nhà hàng ngon."
+        - "Gợi ý: a small café là số ít; two good restaurants là số nhiều."
+    answer:
+      blanks:
+        b1: [was]
+        b2: [were]
+    known_wrong:
+      - answer: is
+        feedback_vi: Câu đang tả lúc trước (quá khứ), nên dùng was/were, không dùng is.
+        error_tag: tense_present
+      - answer: are
+        feedback_vi: Câu đang tả lúc trước (quá khứ), nên dùng was/were, không dùng are.
+        error_tag: tense_present
+      - answer: had
+        feedback_vi: "\"Có\" trong câu tả nơi chốn là there was/were, không dùng had."
+        error_tag: there_have
+    explanation:
+      vi: A small café là số ít nên there was; two good restaurants là số nhiều nên there were.
+    display_answer: There was a small café near the hotel, and there were two good restaurants.
+
+  - key: en:exercise:was-were-order-ago
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:time-ago
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cách đây hai ngày mình ở Đà Nẵng.\""
+      tokens:
+        - { id: g-ago, text: ago }
+        - { id: g-were, text: were }
+        - { id: g-dn, text: Da Nang }
+        - { id: g-two, text: two }
+        - { id: g-in, text: in }
+        - { id: g-i, text: I }
+        - { id: g-days, text: days }
+        - { id: g-was, text: was }
+        - { id: g-before, text: before }
+    answer:
+      orders:
+        - [g-i, g-was, g-in, g-dn, g-two, g-days, g-ago]
+        - [g-two, g-days, g-ago, g-i, g-was, g-in, g-dn]
+    explanation:
+      vi: I đi với was. Ago đứng sau khoảng thời gian - two days ago, khác tiếng Việt "cách đây" đứng trước. Mốc thời gian có thể đặt cuối hoặc đầu câu.
+    display_answer: I was in Da Nang two days ago.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:was-were-fill-question
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-past-negative
+    prompt:
+      template: "A: {{b1}} you at home yesterday? B: No, I {{b2}}. I was at work."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Were]
+        b2: ["wasn't", was not]
+    known_wrong:
+      - answer: Did
+        feedback_vi: Câu hỏi với be không dùng did - chỉ cần đảo was/were lên đầu.
+        error_tag: did_with_be
+      - answer: "didn't"
+        feedback_vi: Câu hỏi dùng were thì câu trả lời ngắn cũng dùng be - No, I wasn't.
+        error_tag: did_with_be
+      - answer: "weren't"
+        feedback_vi: Chủ ngữ I đi với was, nên phủ định là wasn't.
+        error_tag: be_form
+      - answer: Was
+        feedback_vi: You luôn đi với were, kể cả khi chỉ một người - Were you…?
+        error_tag: be_form
+    explanation:
+      vi: You đi với were nên hỏi Were you…? Người trả lời nói về mình (I) nên dùng wasn't. Với be, không cần did.
+    display_answer: "A: Were you at home yesterday? B: No, I wasn't. I was at work."
+
+  - key: en:exercise:was-were-translate-born
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:was-born
+    prompt:
+      source_text: Tôi sinh ra ở Huế năm 2001.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I was born in Hue in 2001.
+        - I was born in Huế in 2001.
+        - In 2001, I was born in Hue.
+        - I was born in 2001 in Hue.
+        - I was born in Hue in two thousand and one.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I born in Hue in 2001.
+        feedback_vi: Thiếu was - "sinh ra" là was born.
+        error_tag: missing_be
+      - answer: I am born in Hue in 2001.
+        feedback_vi: Việc sinh ra đã qua, nên dùng was born, không dùng am born.
+        error_tag: tense_present
+      - answer: I was born in Hue on 2001.
+        feedback_vi: Năm dùng in, không dùng on - in 2001.
+        error_tag: time_preposition
+      - answer: I were born in Hue in 2001.
+        feedback_vi: I đi với was - I was born.
+        error_tag: be_form
+    explanation:
+      vi: "\"Sinh ra\" là was born; nơi chốn và năm đều dùng in. Thứ tự thường gặp là nơi chốn trước, thời gian sau."
+    display_answer: I was born in Hue in 2001.
+
+  - key: en:exercise:was-were-translate-cold
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:last-plus-time
+    prompt:
+      source_text: Tối qua trời rất lạnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It was very cold last night.
+        - Last night it was very cold.
+        - Last night, it was very cold.
+        - It was really cold last night.
+        - Last night was very cold.
+        - It was so cold last night.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It very cold last night.
+        feedback_vi: Thiếu was - tả trời lạnh vẫn cần be.
+        error_tag: missing_be
+      - answer: It is very cold last night.
+        feedback_vi: Last night là quá khứ nên dùng was, không dùng is.
+        error_tag: tense_present
+      - answer: It was very cold in last night.
+        feedback_vi: Không dùng in trước last - chỉ nói last night.
+        error_tag: time_preposition
+      - answer: It was very cold yesterday night.
+        feedback_vi: "\"Tối qua\" là last night; người bản xứ không nói yesterday night."
+        error_tag: last_night
+    explanation:
+      vi: Tả thời tiết dùng It + be; tối qua là quá khứ nên It was. "Tối qua" là last night, không có giới từ phía trước.
+    display_answer: It was very cold last night.
+
+  # ---------------- application ----------------
+  - key: en:exercise:was-were-translate-beach
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:amazing
+    prompt:
+      source_text: There weren't many people at the beach, but the view was amazing.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở bãi biển không có nhiều người, nhưng cảnh đẹp tuyệt vời.
+        - Ở bãi biển không có nhiều người, nhưng cảnh thật tuyệt vời.
+        - Bãi biển không đông người lắm, nhưng cảnh rất tuyệt.
+        - Bãi biển không có nhiều người, nhưng cảnh tuyệt vời.
+        - Bãi biển không có nhiều người nhưng phong cảnh tuyệt vời.
+        - Ở biển không có nhiều người, nhưng cảnh tuyệt đẹp.
+        - Bãi biển không đông lắm, nhưng cảnh đẹp tuyệt vời.
+        - Ở bãi biển không có nhiều người, nhưng quang cảnh thật tuyệt vời.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở bãi biển có nhiều người, nhưng cảnh tuyệt vời.
+        feedback_vi: "Weren't là phủ định - \"không có nhiều người\"."
+        error_tag: negation_missed
+    explanation:
+      vi: There weren't many people là "không có nhiều người" (phủ định của there were). The view was amazing là "cảnh tuyệt vời"; câu kể chuyện quá khứ nhưng tiếng Việt không cần thêm "đã".
+    display_answer: Ở bãi biển không có nhiều người, nhưng cảnh đẹp tuyệt vời.
+
+  - key: en:exercise:was-were-mcq-party
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-past-negative
+    prompt:
+      stem: "Bạn bè hỏi: \"Were you at Linh's party on Saturday?\" Bạn không đến vì bị ốm ở nhà. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: d2u, text: "No, I wasn't. I was ill at home.", lang: en }
+        - { id: f9l, text: "No, I didn't. I was ill at home.", lang: en }
+        - { id: y4b, text: "No, I weren't. I was ill at home.", lang: en }
+        - { id: n7o, text: "Yes, I was. I was ill at home.", lang: en }
+    answer:
+      correct_option_id: d2u
+    explanation:
+      vi: Câu hỏi dùng were nên câu trả lời ngắn dùng be - với I là wasn't. Didn't sai vì câu hỏi không có did; Yes, I was mâu thuẫn với việc ở nhà.
+    display_answer: "No, I wasn't. I was ill at home."
+
+  - key: en:exercise:was-were-translate-film
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crowded
+    prompt:
+      source_text: Cuối tuần trước bộ phim chán lắm, còn rạp thì rất đông.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Last weekend the film was very boring, and the cinema was very crowded.
+        - Last weekend, the film was very boring and the cinema was very crowded.
+        - The film was very boring last weekend, and the cinema was very crowded.
+        - Last weekend the film was really boring, and the cinema was really crowded.
+        - Last weekend the movie was very boring, and the cinema was very crowded.
+        - Last weekend the movie was very boring, and the movie theater was very crowded.
+        - Last weekend the film was very boring, but the cinema was very crowded.
+        - Last weekend the film was so boring, and the cinema was so crowded.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Last weekend the film very boring, and the cinema very crowded.
+        feedback_vi: Thiếu was - tính từ boring, crowded cần be đứng trước.
+        error_tag: missing_be
+      - answer: Last weekend the film is very boring, and the cinema is very crowded.
+        feedback_vi: Last weekend là quá khứ nên dùng was, không dùng is.
+        error_tag: tense_present
+      - answer: Last weekend the film was very bored, and the cinema was very crowded.
+        feedback_vi: Bored tả cảm giác của người; tả bộ phim gây chán dùng boring.
+        error_tag: ed_ing_adjective
+      - answer: At last weekend the film was very boring, and the cinema was very crowded.
+        feedback_vi: Không dùng giới từ trước last - chỉ nói last weekend.
+        error_tag: time_preposition
+    explanation:
+      vi: Cả hai vế đều tả tính chất trong quá khứ nên cần was. Boring tả bộ phim gây chán; crowded tả nơi đông người. "Còn" có thể dịch là and hoặc but.
+    display_answer: Last weekend the film was very boring, and the cinema was very crowded.

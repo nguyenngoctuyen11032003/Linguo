@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: en:program:advanced
+language: en
+title:
+  vi: Tiếng Anh cao cấp (C1-C2)
+description:
+  vi: Văn phong học thuật và chuyên nghiệp, đảo ngữ, rào đón, collocation và sắc thái diễn đạt (C1-C2). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: c1
+level_to: c2
+order_index: 5

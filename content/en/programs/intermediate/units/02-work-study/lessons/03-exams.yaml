@@ -1,0 +1,408 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:work-study-exams
+order_index: 3
+level: b1
+title:
+  vi: Học tập & thi cử
+objectives:
+  - vi: Dùng đúng từ về học tập - take/pass/fail an exam, assignment, hand in, revise, mark, course.
+  - vi: Nói về khả năng trong tương lai bằng câu điều kiện loại 1 (If + hiện tại đơn, will…).
+  - vi: Dùng hiện tại đơn sau when, as soon as, before, after khi nói về tương lai.
+estimated_minutes: 15
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:work-study-rules]
+items:
+  - item: en:item:first-conditional
+  - item: en:item:time-clause-present
+  - item: en:item:take-an-exam
+  - item: en:item:pass-an-exam
+  - item: en:item:fail-an-exam
+  - item: en:item:assignment
+  - item: en:item:hand-in
+  - item: en:item:revise
+  - item: en:item:mark-grade
+  - item: en:item:course
+  - item: en:item:deadline
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về kế hoạch học tập và thi cử - "Nếu mình thi đỗ, mình sẽ…", "Ngay khi nộp bài, mình sẽ…" - với đúng thì sau if và when.
+  - type: explain
+    text:
+      vi: Câu điều kiện loại 1 nói về điều có thể xảy ra - If + hiện tại đơn, will/can/must + động từ. Ví dụ - If you finish early, you can leave.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "Nếu mai trời sẽ mưa" vẫn được, nhưng tiếng Anh không đặt will sau if. Will chỉ nằm ở vế kết quả - If it rains, we'll stay at home.
+  - type: explain
+    text:
+      vi: Quy tắc này cũng áp dụng cho when, as soon as (ngay khi), before, after khi nói về tương lai. Nói I'll call you when I finish, không nói "when I will finish".
+  - type: deep_explain
+    text:
+      vi: Hai vế có thể đổi chỗ - You can leave if you finish early. Khi vế if đứng đầu thì có dấu phẩy, đứng sau thì thường không cần. Phân biệt take an exam (đi thi), pass (đỗ), fail (trượt); người Việt hay nói "join the exam" hoặc "fail in the exam", cả hai đều không tự nhiên.
+  - type: example
+    target: If you finish early, you can leave.
+    target_lang: en
+    translation:
+      vi: Nếu bạn làm xong sớm thì bạn có thể về.
+    note:
+      vi: Vế if dùng hiện tại đơn (finish), vế kết quả dùng can.
+  - type: example
+    target: If I pass the exam, I'll apply for a better job.
+    target_lang: en
+    translation:
+      vi: Nếu thi đỗ, mình sẽ nộp đơn xin một công việc tốt hơn.
+    note:
+      vi: Pass the exam = thi đỗ; will chỉ ở vế sau.
+  - type: example
+    target: I'll start revising as soon as I hand in this assignment.
+    target_lang: en
+    translation:
+      vi: Ngay khi nộp xong bài tập này, mình sẽ bắt đầu ôn thi.
+    note:
+      vi: Sau as soon as dùng hiện tại đơn (hand in) dù việc ở tương lai.
+  - type: example
+    target: When she finishes the course, she'll take the final exam.
+    target_lang: en
+    translation:
+      vi: Khi học xong khoá này, cô ấy sẽ thi cuối khoá.
+    note:
+      vi: Finishes - hiện tại đơn có -es vì chủ ngữ là she.
+  - type: common_mistake
+    wrong: If it will rain tomorrow, we'll stay at home.
+    right: If it rains tomorrow, we'll stay at home.
+    target_lang: en
+    note:
+      vi: Không dùng will sau if. Dù nói về ngày mai, vế if vẫn dùng hiện tại đơn (rains).
+  - type: common_mistake
+    wrong: I'll call you when I will get the results.
+    right: I'll call you when I get the results.
+    target_lang: en
+    note:
+      vi: Sau when, as soon as cũng dùng hiện tại đơn khi nói về tương lai.
+  - type: common_mistake
+    wrong: He failed in the exam.
+    right: He failed the exam.
+    target_lang: en
+    note:
+      vi: Fail và pass đi thẳng với tân ngữ, không cần giới từ in.
+  - type: summary
+    points:
+      - vi: If + hiện tại đơn, will / can / must + động từ (câu điều kiện loại 1).
+      - vi: Không có will sau if, when, as soon as, before, after.
+      - vi: take an exam = đi thi · pass = đỗ · fail = trượt (không có in).
+      - vi: assignment (bài được giao), hand in (nộp), revise (ôn), mark (điểm), course (khoá học).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:work-study-exams-mcq-if-rains
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:first-conditional
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: If it ___ tomorrow, we'll study at home."
+      stem_lang: vi
+      options:
+        - { id: w4k, text: rains, lang: en }
+        - { id: n1b, text: will rain, lang: en }
+        - { id: z8f, text: rain, lang: en }
+        - { id: p6s, text: raining, lang: en }
+    answer:
+      correct_option_id: w4k
+    explanation:
+      vi: Vế if dùng hiện tại đơn dù nói về ngày mai, nên chọn rains (it → thêm -s). "Will rain" sai vì không đặt will sau if.
+    display_answer: rains
+
+  - key: en:exercise:work-study-exams-mcq-pass
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:pass-an-exam
+    prompt:
+      stem: "Cụm nào có nghĩa là \"thi đỗ\"?"
+      stem_lang: vi
+      options:
+        - { id: h2m, text: pass the exam, lang: en }
+        - { id: k9t, text: take the exam, lang: en }
+        - { id: c5v, text: fail the exam, lang: en }
+        - { id: y3r, text: revise for the exam, lang: en }
+    answer:
+      correct_option_id: h2m
+    explanation:
+      vi: Pass the exam là thi đỗ. Take the exam chỉ là đi thi, fail là trượt, revise for là ôn thi.
+    display_answer: pass the exam
+
+  - key: en:exercise:work-study-exams-listen-results
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:time-clause-present
+    prompt:
+      audio_asset_id: null
+      fallback_text: I'll call you as soon as I get my results.
+      options:
+        - { id: b7j, text: Mình sẽ gọi bạn ngay khi có kết quả., lang: vi }
+        - { id: o4x, text: Mình đã gọi bạn ngay khi có kết quả., lang: vi }
+        - { id: g1q, text: Bạn hãy gọi mình khi có kết quả nhé., lang: vi }
+        - { id: m6d, text: Mình sẽ gọi bạn trước khi có kết quả., lang: vi }
+    answer:
+      correct_option_id: b7j
+    explanation:
+      vi: I'll call là "mình sẽ gọi"; as soon as là "ngay khi". Get dùng hiện tại đơn nhưng vẫn nói về tương lai.
+    display_answer: Mình sẽ gọi bạn ngay khi có kết quả.
+
+  - key: en:exercise:work-study-exams-fill-study-hard
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:first-conditional
+    prompt:
+      template: "If you {{b1}} hard, you {{b2}} pass the exam."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Nếu bạn học chăm thì bạn sẽ thi đỗ."
+        - "Gợi ý: vế if dùng hiện tại đơn của study; vế sau dùng will."
+    answer:
+      blanks:
+        b1: [study, work]
+        b2: [will, can]
+    known_wrong:
+      - answer: will study
+        feedback_vi: Không dùng will sau if - If you study hard.
+        error_tag: will_after_if
+      - answer: studies
+        feedback_vi: Chủ ngữ là you nên không thêm -es - you study.
+        error_tag: subject_verb_agreement
+      - answer: would
+        feedback_vi: Câu điều kiện loại 1 dùng will ở vế kết quả.
+        error_tag: conditional_form
+    explanation:
+      vi: Câu điều kiện loại 1 - vế if dùng hiện tại đơn (study), vế kết quả dùng will (hoặc can) + động từ nguyên mẫu.
+    display_answer: If you study hard, you will pass the exam.
+
+  - key: en:exercise:work-study-exams-order-when
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:time-clause-present
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình sẽ gọi bạn khi mình làm xong.\""
+      tokens:
+        - { id: w-finish, text: finish }
+        - { id: w-you, text: you }
+        - { id: w-will, text: will }
+        - { id: w-i, text: I }
+        - { id: w-when, text: when }
+        - { id: w-call, text: call }
+        - { id: w-ill, text: I'll }
+        - { id: w-finished, text: finished }
+    answer:
+      orders:
+        - [w-ill, w-call, w-you, w-when, w-i, w-finish]
+        - [w-when, w-i, w-finish, w-ill, w-call, w-you]
+    explanation:
+      vi: Vế chính dùng I'll; vế when dùng hiện tại đơn (when I finish), không dùng will. Hai vế có thể đổi chỗ cho nhau.
+    display_answer: I'll call you when I finish.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:work-study-exams-fill-revise
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:hand-in
+    prompt:
+      template: "I'll start {{b1}} (ôn thi) as soon as I {{b2}} (nộp) this assignment."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [revising, studying]
+        b2: [hand in, submit, turn in]
+    known_wrong:
+      - answer: will hand in
+        feedback_vi: Sau as soon as dùng hiện tại đơn - as soon as I hand in.
+        error_tag: will_in_time_clause
+      - answer: will submit
+        feedback_vi: Sau as soon as dùng hiện tại đơn - as soon as I submit.
+        error_tag: will_in_time_clause
+      - answer: reviewing lesson
+        feedback_vi: Đây là dịch từng chữ "ôn bài". Ôn thi là revising (Anh-Anh) hoặc studying.
+        error_tag: literal_translation
+      - answer: hand
+        feedback_vi: Nộp bài là cụm hand in, cần cả in.
+        error_tag: phrasal_verb
+    explanation:
+      vi: Start + -ing (revising). Sau as soon as dùng hiện tại đơn dù nói về tương lai - as soon as I hand in.
+    display_answer: I'll start revising as soon as I hand in this assignment.
+
+  - key: en:exercise:work-study-exams-translate-fail
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:fail-an-exam
+    prompt:
+      source_text: Nếu bạn trượt kỳ thi, bạn có thể thi lại.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - If you fail the exam, you can take it again.
+        - If you fail the exam, you can retake it.
+        - If you fail the exam, you can take the exam again.
+        - If you fail the exam, you can do it again.
+        - If you fail the test, you can take it again.
+        - You can take the exam again if you fail it.
+        - You can retake the exam if you fail it.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: If you will fail the exam, you can take it again.
+        feedback_vi: Không dùng will sau if - If you fail the exam.
+        error_tag: will_after_if
+      - answer: If you fail in the exam, you can take it again.
+        feedback_vi: Fail đi thẳng với tân ngữ - fail the exam, không có in.
+        error_tag: preposition
+      - answer: If you fail the exam, you can to take it again.
+        feedback_vi: Sau can không có to.
+        error_tag: modal_to
+    explanation:
+      vi: Câu điều kiện loại 1 - If + hiện tại đơn (fail), can + động từ nguyên mẫu. "Thi lại" là take it again hoặc retake it.
+    display_answer: If you fail the exam, you can take it again.
+
+  - key: en:exercise:work-study-exams-translate-results
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:time-clause-present
+    prompt:
+      source_text: Tôi sẽ gọi cho bạn ngay khi tôi có kết quả.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'll call you as soon as I get the results.
+        - I will call you as soon as I get the results.
+        - I'll call you as soon as I get my results.
+        - I'll call you as soon as I have the results.
+        - I'll call you as soon as I have my results.
+        - I'll phone you as soon as I get the results.
+        - As soon as I get the results, I'll call you.
+        - As soon as I get my results, I'll call you.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'll call you as soon as I will get the results.
+        feedback_vi: Sau as soon as dùng hiện tại đơn - as soon as I get.
+        error_tag: will_in_time_clause
+      - answer: I call you as soon as I get the results.
+        feedback_vi: Vế chính nói về tương lai cần will - I'll call you.
+        error_tag: missing_will
+      - answer: I'll call you as soon as I got the results.
+        feedback_vi: Việc ở tương lai nên dùng hiện tại đơn get, không dùng quá khứ got.
+        error_tag: tense
+    explanation:
+      vi: Vế chính dùng will (I'll call you). Sau as soon as dùng hiện tại đơn (get / have) dù việc xảy ra ở tương lai.
+    display_answer: I'll call you as soon as I get the results.
+
+  # ---------------- application ----------------
+  - key: en:exercise:work-study-exams-mcq-correct
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:first-conditional
+    prompt:
+      stem: "Bạn nhắn tin cho bạn bè về kỳ thi sắp tới. Câu nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: l3s, text: "If I get a good mark, my parents will be happy.", lang: en }
+        - { id: f9a, text: "If I will get a good mark, my parents will be happy.", lang: en }
+        - { id: u2n, text: "If I get a good mark, my parents are happy tomorrow.", lang: en }
+        - { id: t6e, text: "If I will get a good mark, my parents are happy.", lang: en }
+    answer:
+      correct_option_id: l3s
+    explanation:
+      vi: Vế if dùng hiện tại đơn (get), vế kết quả nói về tương lai dùng will. Các câu khác hoặc đặt will sau if, hoặc thiếu will ở vế kết quả.
+    display_answer: "If I get a good mark, my parents will be happy."
+
+  - key: en:exercise:work-study-exams-translate-assignment-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:assignment
+    prompt:
+      source_text: If you don't hand in the assignment by Friday, you'll get a low mark.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu bạn không nộp bài trước thứ Sáu, bạn sẽ bị điểm thấp.
+        - Nếu bạn không nộp bài trước thứ Sáu thì bạn sẽ bị điểm thấp.
+        - Nếu không nộp bài trước thứ Sáu, bạn sẽ bị điểm thấp.
+        - Nếu bạn không nộp bài tập trước thứ Sáu, bạn sẽ bị điểm thấp.
+        - Nếu bạn không nộp bài tập trước thứ Sáu thì bạn sẽ bị điểm kém.
+        - Nếu bạn không nộp bài trước thứ Sáu, bạn sẽ bị điểm kém.
+        - Nếu bạn không nộp bài muộn nhất vào thứ Sáu, bạn sẽ bị điểm thấp.
+        - Nếu bạn không nộp bài trước thứ 6, bạn sẽ bị điểm thấp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Hand in là nộp, by Friday là "trước / muộn nhất là thứ Sáu", a low mark là điểm thấp. Will ở vế sau cho thấy đây là chuyện tương lai.
+    display_answer: Nếu bạn không nộp bài trước thứ Sáu, bạn sẽ bị điểm thấp.
+
+  - key: en:exercise:work-study-exams-translate-course
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:take-an-exam
+    prompt:
+      source_text: Khi học xong khoá này, tôi sẽ thi IELTS.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - When I finish this course, I'll take the IELTS exam.
+        - When I finish this course, I will take the IELTS exam.
+        - When I finish this course, I'll take IELTS.
+        - When I finish this course, I'll take the IELTS test.
+        - When I finish the course, I'll take the IELTS exam.
+        - I'll take the IELTS exam when I finish this course.
+        - I will take the IELTS exam when I finish this course.
+        - I'll take IELTS when I finish this course.
+        - After I finish this course, I'll take the IELTS exam.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: When I will finish this course, I'll take the IELTS exam.
+        feedback_vi: Sau when dùng hiện tại đơn khi nói về tương lai - When I finish.
+        error_tag: will_in_time_clause
+      - answer: When I finish this course, I'll join the IELTS exam.
+        feedback_vi: Đi thi là take an exam, không dùng join.
+        error_tag: collocation
+      - answer: When I finish this course, I'll pass the IELTS exam.
+        feedback_vi: Pass là thi đỗ. "Thi" (dự thi) là take.
+        error_tag: take_pass
+      - answer: When I finished this course, I'll take the IELTS exam.
+        feedback_vi: Việc ở tương lai nên vế when dùng hiện tại đơn finish, không dùng quá khứ.
+        error_tag: tense
+    explanation:
+      vi: Vế when dùng hiện tại đơn (finish) dù nói về tương lai; vế chính dùng will. "Thi" (dự thi) là take an exam.
+    display_answer: When I finish this course, I'll take the IELTS exam.

@@ -1,0 +1,399 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:work-study-email-interview
+order_index: 4
+level: b1
+title:
+  vi: Email & phỏng vấn xin việc
+objectives:
+  - vi: Viết một email ứng tuyển ngắn với Dear…, I'm writing to…, I look forward to hearing from you và Best regards.
+  - vi: Nói về kinh nghiệm làm việc và điểm mạnh của mình trong buổi phỏng vấn.
+  - vi: Dùng đúng apply for, the position of, experience in và look forward to + -ing.
+estimated_minutes: 18
+skills: [writing, speaking, vocabulary]
+prerequisites: [en:lesson:work-study-exams]
+items:
+  - item: en:item:apply-for
+  - item: en:item:job-interview
+  - item: en:item:position
+  - item: en:item:cv
+  - item: en:item:email-dear
+  - item: en:item:im-writing-to
+  - item: en:item:best-regards
+  - item: en:item:look-forward-to
+  - item: en:item:attach
+  - item: en:item:strength
+  - item: en:item:work-experience
+  - item: en:item:be-responsible-for
+    role: reuse
+  - item: en:item:customer
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một email xin việc ngắn, rõ ràng và trả lời được các câu hỏi cơ bản khi phỏng vấn - kinh nghiệm, điểm mạnh, lý do ứng tuyển.
+  - type: explain
+    text:
+      vi: Email công việc có khung cố định - mở đầu bằng Dear + Mr/Ms + họ (hoặc Dear Sir or Madam), câu đầu nêu ngay mục đích bằng I'm writing to…, cuối thư là I look forward to hearing from you và Best regards. Tiếng Việt hay mở đầu bằng lời chúc sức khoẻ; email tiếng Anh thì vào thẳng việc.
+  - type: explain
+    text:
+      vi: Apply for + công việc/vị trí (apply for the position of…), experience in + lĩnh vực (experience in sales). Với nghĩa "kinh nghiệm làm việc", experience không đếm được - không thêm -s.
+  - type: explain
+    text:
+      vi: Trong look forward to, to là giới từ nên sau nó là -ing - I look forward to hearing from you. Đây là lỗi rất hay gặp vì người học quen "to + động từ nguyên mẫu".
+  - type: deep_explain
+    text:
+      vi: Khi phỏng vấn, câu hỏi What are your strengths? nên được trả lời bằng một điểm mạnh kèm ví dụ - I'm very organised. In my last job, I was responsible for planning all the team meetings. Kinh nghiệm thường nói bằng I have + số năm + experience in…, hoặc I worked as… for two years. Để giữ giọng trang trọng, tránh viết tắt kiểu "pls", "thx" và tránh mở đầu bằng Hi guys.
+  - type: example
+    target: "Dear Ms Taylor, I'm writing to apply for the position of sales assistant. I have two years' experience in customer service. Please find my CV attached. I look forward to hearing from you. Best regards, Tran Minh Anh"
+    target_lang: en
+    translation:
+      vi: "Kính gửi chị Taylor, tôi viết thư này để ứng tuyển vị trí trợ lý bán hàng. Tôi có hai năm kinh nghiệm làm dịch vụ khách hàng. Tôi xin gửi kèm CV. Tôi mong sớm nhận được phản hồi của chị. Trân trọng, Trần Minh Anh"
+    note:
+      vi: Một email ứng tuyển ngắn đủ năm phần - lời chào, mục đích, kinh nghiệm, tệp đính kèm, lời kết.
+  - type: example
+    target: I'm applying for a job at a bank, and I have an interview next week.
+    target_lang: en
+    translation:
+      vi: Mình đang nộp đơn xin việc ở một ngân hàng và tuần sau có buổi phỏng vấn.
+    note:
+      vi: Apply for a job; have an interview.
+  - type: example
+    target: My main strength is that I work well in a team.
+    target_lang: en
+    translation:
+      vi: Điểm mạnh chính của tôi là làm việc nhóm tốt.
+    note:
+      vi: Câu trả lời điển hình cho What are your strengths?
+  - type: common_mistake
+    wrong: I look forward to hear from you.
+    right: I look forward to hearing from you.
+    target_lang: en
+    note:
+      vi: To trong look forward to là giới từ, nên động từ sau nó thêm -ing.
+  - type: common_mistake
+    wrong: I have a lot of experiences in marketing.
+    right: I have a lot of experience in marketing.
+    target_lang: en
+    note:
+      vi: Kinh nghiệm làm việc là danh từ không đếm được, không thêm -s. Experiences (đếm được) là những trải nghiệm cụ thể trong đời.
+  - type: common_mistake
+    wrong: I'm writing to apply the position of receptionist.
+    right: I'm writing to apply for the position of receptionist.
+    target_lang: en
+    note:
+      vi: Apply cần for khi đi với công việc hoặc vị trí.
+  - type: summary
+    points:
+      - vi: Dear Ms/Mr + họ, (hoặc Dear Sir or Madam,) → I'm writing to… → nội dung → I look forward to hearing from you. → Best regards,
+      - vi: apply for + vị trí · experience in + lĩnh vực (không có -s) · Please find my CV attached.
+      - vi: look forward to + -ing.
+      - vi: Phỏng vấn - nêu điểm mạnh (My main strength is…) kèm ví dụ cụ thể.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:work-study-email-mcq-dear
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:email-dear
+    prompt:
+      stem: "Bạn viết email xin việc nhưng không biết tên người nhận. Mở đầu thế nào là phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: r8g, text: "Dear Sir or Madam,", lang: en }
+        - { id: e5c, text: "Hi guys,", lang: en }
+        - { id: n2w, text: "Dear Friend,", lang: en }
+        - { id: j7y, text: "Hey there,", lang: en }
+    answer:
+      correct_option_id: r8g
+    explanation:
+      vi: Dear Sir or Madam là lời chào trang trọng khi không biết tên người nhận. Các lựa chọn còn lại quá thân mật hoặc không dùng trong email công việc.
+    display_answer: "Dear Sir or Madam,"
+
+  - key: en:exercise:work-study-email-mcq-hearing
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:look-forward-to
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: I look forward to ___ from you."
+      stem_lang: vi
+      options:
+        - { id: s4d, text: hearing, lang: en }
+        - { id: k1z, text: hear, lang: en }
+        - { id: v6b, text: heard, lang: en }
+        - { id: q3u, text: be heard, lang: en }
+    answer:
+      correct_option_id: s4d
+    explanation:
+      vi: To trong look forward to là giới từ, nên sau nó là -ing (hearing), không phải động từ nguyên mẫu.
+    display_answer: hearing
+
+  - key: en:exercise:work-study-email-listen-experience
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:work-experience
+    prompt:
+      audio_asset_id: null
+      fallback_text: I have two years' experience in customer service.
+      options:
+        - { id: c2h, text: Tôi có hai năm kinh nghiệm làm dịch vụ khách hàng., lang: vi }
+        - { id: m9k, text: Tôi có hai trải nghiệm thú vị với khách hàng., lang: vi }
+        - { id: x4p, text: Tôi muốn làm dịch vụ khách hàng trong hai năm., lang: vi }
+        - { id: d7s, text: Tôi đã làm việc ở bộ phận dịch vụ được mười hai năm., lang: vi }
+    answer:
+      correct_option_id: c2h
+    explanation:
+      vi: Two years' experience in… là "hai năm kinh nghiệm về…". Experience ở đây không đếm được, nghĩa là kinh nghiệm làm việc, không phải "trải nghiệm".
+    display_answer: Tôi có hai năm kinh nghiệm làm dịch vụ khách hàng.
+
+  - key: en:exercise:work-study-email-fill-apply
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:apply-for
+    prompt:
+      template: "I'm writing to apply {{b1}} the position {{b2}} sales assistant."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi viết thư này để ứng tuyển vị trí trợ lý bán hàng."
+        - "Gợi ý: apply ___ + công việc; the position ___ + tên vị trí."
+    answer:
+      blanks:
+        b1: [for]
+        b2: [of]
+    known_wrong:
+      - answer: to
+        feedback_vi: Apply to dùng với công ty hoặc trường; với vị trí/công việc dùng apply for.
+        error_tag: preposition
+      - answer: as
+        feedback_vi: Cụm cố định là the position of + tên vị trí.
+        error_tag: preposition
+    explanation:
+      vi: Apply for + vị trí/công việc. The position of + tên vị trí (the position of sales assistant).
+    display_answer: I'm writing to apply for the position of sales assistant.
+
+  - key: en:exercise:work-study-email-order-cv
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:attach
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi xin gửi kèm CV của mình.\""
+      tokens:
+        - { id: v-attached, text: attached }
+        - { id: v-my, text: my }
+        - { id: v-attach, text: attach }
+        - { id: v-please, text: Please }
+        - { id: v-cv, text: CV }
+        - { id: v-find, text: find }
+    answer:
+      orders:
+        - [v-please, v-find, v-my, v-cv, v-attached]
+    explanation:
+      vi: Please find + tân ngữ + attached là câu cố định trong email, nghĩa là "tôi xin gửi kèm…". Attached đứng sau tân ngữ.
+    display_answer: Please find my CV attached.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:work-study-email-fill-closing
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:best-regards
+    prompt:
+      template: "I look forward to {{b1}} (nhận phản hồi) from you. {{b2}} regards, Tran Minh Anh"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [hearing]
+        b2: [Best, Kind]
+    known_wrong:
+      - answer: hear
+        feedback_vi: Sau look forward to dùng -ing - hearing.
+        error_tag: look_forward_ing
+      - answer: listening
+        feedback_vi: Nhận phản hồi qua thư là hear from someone, không dùng listen.
+        error_tag: word_choice
+      - answer: Good
+        feedback_vi: Lời kết cố định là Best regards hoặc Kind regards.
+        error_tag: collocation
+    explanation:
+      vi: Look forward to + -ing - hearing from you. Lời kết email trang trọng là Best regards hoặc Kind regards.
+    display_answer: I look forward to hearing from you. Best regards, Tran Minh Anh
+
+  - key: en:exercise:work-study-email-translate-experience
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:work-experience
+    prompt:
+      source_text: Tôi có ba năm kinh nghiệm trong lĩnh vực marketing.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have three years' experience in marketing.
+        - I have three years of experience in marketing.
+        - I have three years experience in marketing.
+        - I have 3 years' experience in marketing.
+        - I have 3 years of experience in marketing.
+        - I've got three years' experience in marketing.
+        - I have three years' experience in the marketing field.
+        - I have three years of experience in the field of marketing.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I have three years of experiences in marketing.
+        feedback_vi: Kinh nghiệm làm việc không đếm được, không thêm -s - experience.
+        error_tag: uncountable_noun
+      - answer: I have three years experiences in marketing.
+        feedback_vi: Kinh nghiệm làm việc không đếm được - three years' experience.
+        error_tag: uncountable_noun
+      - answer: I have three years of experience about marketing.
+        feedback_vi: Dùng experience in + lĩnh vực, không dùng about.
+        error_tag: preposition
+    explanation:
+      vi: Experience (kinh nghiệm làm việc) không đếm được, đi với in + lĩnh vực. Có thể nói three years' experience hoặc three years of experience.
+    display_answer: I have three years' experience in marketing.
+
+  - key: en:exercise:work-study-email-translate-writing-to
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:im-writing-to
+    prompt:
+      source_text: Tôi viết thư này để ứng tuyển vị trí trợ lý bán hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm writing to apply for the position of sales assistant.
+        - I am writing to apply for the position of sales assistant.
+        - I'm writing to apply for the sales assistant position.
+        - I am writing to apply for the sales assistant position.
+        - I'm writing to apply for the job of sales assistant.
+        - I'm writing to apply for the post of sales assistant.
+        - I am writing to apply for the post of sales assistant.
+        - I'm writing to apply for the position of Sales Assistant.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I write to apply for the position of sales assistant.
+        feedback_vi: Câu nêu mục đích email dùng hiện tại tiếp diễn - I'm writing to…
+        error_tag: tense
+      - answer: I'm writing for applying for the position of sales assistant.
+        feedback_vi: Nêu mục đích dùng to + động từ nguyên mẫu - I'm writing to apply.
+        error_tag: verb_form
+      - answer: I'm writing to apply the position of sales assistant.
+        feedback_vi: Apply cần for khi đi với vị trí - apply for the position.
+        error_tag: preposition
+    explanation:
+      vi: Câu mở đầu email ứng tuyển dùng I'm writing to + động từ nguyên mẫu. Apply for + the position of + tên vị trí.
+    display_answer: I'm writing to apply for the position of sales assistant.
+
+  # ---------------- application ----------------
+  - key: en:exercise:work-study-email-mcq-strengths
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:strength
+    prompt:
+      stem: "Người phỏng vấn hỏi: \"What are your main strengths?\" Câu trả lời nào phù hợp và đúng ngữ pháp nhất?"
+      stem_lang: vi
+      options:
+        - { id: o5t, text: "I'm very organised. In my last job, I was responsible for planning team meetings.", lang: en }
+        - { id: b8m, text: "I'm 25 years old and I live in Da Nang.", lang: en }
+        - { id: g1e, text: "My strength is I very organised.", lang: en }
+        - { id: w3x, text: "Yes, I have many strengths.", lang: en }
+    answer:
+      correct_option_id: o5t
+    explanation:
+      vi: Câu trả lời tốt nêu điểm mạnh (organised) kèm ví dụ cụ thể. Các phương án khác lạc đề, thiếu be (I very organised), hoặc không trả lời câu hỏi.
+    display_answer: "I'm very organised. In my last job, I was responsible for planning team meetings."
+
+  - key: en:exercise:work-study-email-translate-hearing-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:look-forward-to
+    prompt:
+      source_text: I look forward to hearing from you.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi mong nhận được phản hồi từ anh chị.
+        - Tôi mong nhận được phản hồi của anh chị.
+        - Tôi mong sớm nhận được phản hồi của anh chị.
+        - Tôi mong sớm nhận được phản hồi từ anh chị.
+        - Tôi mong nhận được phản hồi từ bạn.
+        - Tôi mong nhận được phản hồi của bạn.
+        - Tôi mong sớm nhận được phản hồi của bạn.
+        - Tôi rất mong nhận được phản hồi từ anh chị.
+        - Tôi rất mong nhận được phản hồi của bạn.
+        - Tôi mong sớm nhận được hồi âm của anh chị.
+        - Tôi mong nhận được hồi âm của bạn.
+        - Tôi mong được nghe phản hồi từ bạn.
+        - Mong sớm nhận được phản hồi của anh chị.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Look forward to là "mong chờ"; hear from you trong email là "nhận được phản hồi / hồi âm của bạn", không dịch từng chữ là "nghe bạn".
+    display_answer: Tôi mong sớm nhận được phản hồi của anh chị.
+
+  - key: en:exercise:work-study-email-translate-strength
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:strength
+    prompt:
+      source_text: Điểm mạnh chính của tôi là tôi làm việc nhóm tốt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My main strength is that I work well in a team.
+        - My main strength is that I work well in teams.
+        - My main strength is that I work well with others.
+        - My main strength is that I'm good at teamwork.
+        - My main strength is that I am good at teamwork.
+        - My main strength is that I'm good at working in a team.
+        - My main strength is that I am good at working in a team.
+        - My main strength is teamwork.
+        - My main strength is working well in a team.
+        - My main strength is I work well in a team.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My main strength is I good at teamwork.
+        feedback_vi: Good là tính từ nên cần be - I'm good at teamwork.
+        error_tag: missing_be
+      - answer: My main strengths is that I work well in a team.
+        feedback_vi: Strengths số nhiều phải đi với are; một điểm mạnh thì dùng strength is.
+        error_tag: subject_verb_agreement
+      - answer: My main strength is that I'm good at work in a team.
+        feedback_vi: Sau giới từ at dùng -ing - good at working.
+        error_tag: gerund_after_preposition
+    explanation:
+      vi: My main strength is that + mệnh đề, hoặc + danh từ/-ing (teamwork, working in a team). Good at + danh từ hoặc -ing.
+    display_answer: My main strength is that I work well in a team.

@@ -1,0 +1,441 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:how-long-have-you
+order_index: 3
+level: b1
+title:
+  vi: Bao lâu rồi? - for, since và been + V-ing
+objectives:
+  - vi: Hỏi và trả lời một việc đã kéo dài bao lâu bằng How long have you…?
+  - vi: Phân biệt for (khoảng thời gian) và since (mốc bắt đầu).
+  - vi: Nói về sở thích đang theo đuổi bằng have/has been + V-ing, và biết khi nào không dùng dạng -ing.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:when-did-you]
+items:
+  - item: en:item:for-since
+  - item: en:item:how-long-have-you
+  - item: en:item:present-perfect-continuous
+  - item: en:item:stative-verbs-perfect
+  - item: en:item:take-up
+  - item: en:item:be-into
+  - item: en:item:photography
+  - item: en:item:musical-instrument
+  - item: en:item:practise
+  - item: en:item:ever-since
+  - item: en:item:improve
+  - item: en:item:present-perfect-experience
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Mình học tiếng Anh được ba năm rồi", "Mình quen Minh từ hồi tiểu học" và hỏi người khác theo đuổi sở thích bao lâu rồi.
+  - type: explain
+    text:
+      vi: Một việc bắt đầu trong quá khứ và vẫn đang tiếp tục được nói bằng present perfect - I've lived here for five years. Tiếng Việt chỉ cần "được… rồi", nhưng tiếng Anh không dùng hiện tại đơn hay hiện tại tiếp diễn trong trường hợp này.
+  - type: explain
+    text:
+      vi: For đi với một khoảng thời gian (for three years, for a long time); since đi với mốc bắt đầu (since 2020, since Monday, since I was ten). Tiếng Việt "từ ba năm nay" dễ khiến bạn viết since three years - sai, vì three years là độ dài.
+  - type: explain
+    text:
+      vi: Với hoạt động đang diễn ra liên tục như học, tập, chơi, làm, người bản xứ hay dùng have/has been + V-ing - I've been learning English for three years. Câu hỏi tương ứng là How long have you been + V-ing?
+  - type: deep_explain
+    text:
+      vi: Động từ chỉ trạng thái như know, have (sở hữu), like, love, believe không dùng dạng -ing, nên chỉ dùng present perfect đơn - I've known her for ten years, không nói I've been knowing. Với live và work, cả hai dạng đều đúng và gần như cùng nghĩa. Mốc since có thể là một mệnh đề quá khứ đơn - I've played the guitar since I was twelve; ever since nhấn mạnh "kể từ đó đến tận bây giờ".
+  - type: example
+    target: I've been learning English for three years.
+    target_lang: en
+    translation:
+      vi: Mình học tiếng Anh được ba năm rồi.
+    note:
+      vi: Việc học vẫn đang tiếp tục, nên dùng have been + V-ing và for + khoảng thời gian.
+  - type: example
+    target: She's been playing the piano since she was six.
+    target_lang: en
+    translation:
+      vi: Cô ấy chơi piano từ năm sáu tuổi.
+    note:
+      vi: Since she was six là mốc bắt đầu (một mệnh đề quá khứ đơn). She's ở đây là she has.
+  - type: example
+    target: How long have you been into photography? - Ever since I took it up four years ago.
+    target_lang: en
+    translation:
+      vi: Bạn mê chụp ảnh bao lâu rồi? - Từ hồi mình bắt đầu chụp bốn năm trước đến giờ.
+    note:
+      vi: Be into là trạng thái nên dùng have been into, không thêm -ing. Took it up là quá khứ đơn chỉ mốc bắt đầu.
+  - type: example
+    target: I've known Minh since primary school.
+    target_lang: en
+    translation:
+      vi: Mình quen Minh từ hồi tiểu học.
+    note:
+      vi: Know là động từ trạng thái nên dùng have known, không dùng have been knowing.
+  - type: common_mistake
+    wrong: I am living here for five years.
+    right: I have lived here for five years.
+    target_lang: en
+    note:
+      vi: Việc kéo dài từ quá khứ đến nay không dùng hiện tại tiếp diễn. Dùng have lived hoặc have been living.
+  - type: common_mistake
+    wrong: I've studied English since three years.
+    right: I've studied English for three years.
+    target_lang: en
+    note:
+      vi: Three years là độ dài thời gian nên đi với for. Since chỉ đi với mốc - since 2022, since I was ten.
+  - type: common_mistake
+    wrong: How long do you know her?
+    right: How long have you known her?
+    target_lang: en
+    note:
+      vi: Hỏi một việc kéo dài đến bây giờ phải dùng present perfect. How long do you…? nghe như hỏi về tương lai hoặc thói quen.
+  - type: summary
+    points:
+      - vi: Việc bắt đầu trong quá khứ, vẫn tiếp tục - have/has + V3 hoặc have/has been + V-ing.
+      - vi: For + khoảng thời gian (for five years); since + mốc (since 2020, since I was ten).
+      - vi: How long have you + V3? / How long have you been + V-ing?
+      - vi: Know, have, like, love - không dùng -ing (I've known her for years).
+      - vi: Không nói I am living here for five years hay since three years.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:how-long-mcq-since
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:for-since
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: My family has lived in Can Tho ___ 2015."
+      stem_lang: vi
+      options:
+        - { id: s4j, text: since, lang: en }
+        - { id: f7l, text: for, lang: en }
+        - { id: r1o, text: from, lang: en }
+        - { id: a8u, text: in, lang: en }
+    answer:
+      correct_option_id: s4j
+    explanation:
+      vi: 2015 là mốc bắt đầu, nên dùng since. For đi với độ dài (for ten years); from và in không đi với present perfect để chỉ "từ… đến nay".
+    display_answer: since
+
+  - key: en:exercise:how-long-mcq-learning
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-perfect-continuous
+    prompt:
+      stem: "Câu nào nghĩa là \"Mình học tiếng Anh được ba năm rồi\"?"
+      stem_lang: vi
+      options:
+        - { id: e9c, text: I've been learning English for three years., lang: en }
+        - { id: b2x, text: I am learning English for three years., lang: en }
+        - { id: n5m, text: I've been learning English since three years., lang: en }
+        - { id: h6t, text: I learn English for three years., lang: en }
+    answer:
+      correct_option_id: e9c
+    explanation:
+      vi: Việc học bắt đầu từ ba năm trước và vẫn tiếp tục, nên dùng have been + V-ing với for + độ dài. Am learning và learn không diễn tả "kéo dài đến nay"; since không đi với three years.
+    display_answer: I've been learning English for three years.
+
+  - key: en:exercise:how-long-listen-piano
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:musical-instrument
+    prompt:
+      audio_asset_id: null
+      fallback_text: She's been playing the piano since she was six.
+      options:
+        - { id: p2d, text: Cô ấy chơi piano từ năm sáu tuổi., lang: vi }
+        - { id: t7v, text: Cô ấy chơi piano được sáu năm rồi., lang: vi }
+        - { id: l3s, text: Cô ấy chơi piano lúc sáu giờ., lang: vi }
+        - { id: y9g, text: Cô ấy đã thôi chơi piano từ năm sáu tuổi., lang: vi }
+    answer:
+      correct_option_id: p2d
+    explanation:
+      vi: Since she was six là mốc "từ năm sáu tuổi", và has been playing cho biết cô ấy vẫn đang chơi. "Được sáu năm" sẽ là for six years.
+    display_answer: Cô ấy chơi piano từ năm sáu tuổi.
+
+  - key: en:exercise:how-long-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:for-since
+    prompt:
+      template: "We've known each other {{b1}} primary school, and we've been best friends {{b2}} more than fifteen years."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Tụi mình quen nhau từ hồi tiểu học và là bạn thân hơn mười lăm năm rồi."
+        - "Gợi ý: ô 1 đứng trước một mốc; ô 2 đứng trước một khoảng thời gian."
+    answer:
+      blanks:
+        b1: [since]
+        b2: [for]
+    known_wrong:
+      - answer: from
+        feedback_vi: Present perfect chỉ "từ… đến nay" dùng since, không dùng from.
+        error_tag: since_for
+      - answer: in
+        feedback_vi: In không diễn tả khoảng thời gian kéo dài đến hiện tại.
+        error_tag: since_for
+    explanation:
+      vi: Primary school là mốc bắt đầu nên dùng since. More than fifteen years là độ dài nên dùng for.
+    display_answer: We've known each other since primary school, and we've been best friends for more than fifteen years.
+
+  - key: en:exercise:how-long-order-photography
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:how-long-have-you
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bạn chụp ảnh được bao lâu rồi?\""
+      tokens:
+        - { id: h-photography, text: photography }
+        - { id: h-been, text: been }
+        - { id: h-how, text: How }
+        - { id: h-doing, text: doing }
+        - { id: h-long, text: long }
+        - { id: h-you, text: you }
+        - { id: h-have, text: have }
+        - { id: h-are, text: are }
+        - { id: h-since, text: since }
+    answer:
+      orders:
+        - [h-how, h-long, h-have, h-you, h-been, h-doing, h-photography]
+    explanation:
+      vi: How long đứng đầu, sau đó đảo have lên trước you, rồi been + V-ing. Không dùng are vì hoạt động kéo dài từ quá khứ đến nay.
+    display_answer: How long have you been doing photography?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:how-long-fill-guitar
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:practise
+    prompt:
+      template: "I {{b1}} (practise) the guitar for six months, and my playing {{b2}} (improve) a lot since I started."
+      blanks:
+        - { id: b1, width_hint: 18 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [have been practising, have been practicing, have practised, have practiced]
+        b2: [has improved, has been improving]
+    known_wrong:
+      - answer: am practising
+        feedback_vi: Việc kéo dài sáu tháng đến nay không dùng hiện tại tiếp diễn - have been practising.
+        error_tag: continuous_for_duration
+      - answer: practise
+        feedback_vi: Có for six months và việc vẫn tiếp tục, nên cần have been practising.
+        error_tag: tense_choice
+      - answer: have improved
+        feedback_vi: My playing là ngôi thứ ba số ít nên dùng has - has improved.
+        error_tag: have_has
+      - answer: improved
+        feedback_vi: Câu có since I started (kéo dài đến nay) nên dùng present perfect - has improved.
+        error_tag: tense_choice
+    explanation:
+      vi: For six months và since I started đều chỉ khoảng thời gian kéo dài đến bây giờ, nên dùng present perfect. My playing (số ít) đi với has.
+    display_answer: I have been practising the guitar for six months, and my playing has improved a lot since I started.
+
+  - key: en:exercise:how-long-translate-da-nang
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:for-since
+    prompt:
+      source_text: Mình sống ở Đà Nẵng được năm năm rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have lived in Da Nang for five years.
+        - I have been living in Da Nang for five years.
+        - I have lived in Danang for five years.
+        - I have been living in Danang for five years.
+        - I have lived in Da Nang for 5 years.
+        - I have been living in Da Nang for 5 years.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am living in Da Nang for five years.
+        feedback_vi: Việc kéo dài đến nay không dùng hiện tại tiếp diễn - I've lived (been living) in Da Nang for five years.
+        error_tag: continuous_for_duration
+      - answer: I live in Da Nang for five years.
+        feedback_vi: Hiện tại đơn không đi với for five years khi nói "được… rồi" - I've lived in Da Nang for five years.
+        error_tag: tense_choice
+      - answer: I have lived in Da Nang since five years.
+        feedback_vi: Five years là độ dài, dùng for - for five years.
+        error_tag: since_for
+      - answer: I lived in Da Nang for five years.
+        feedback_vi: Câu này nghĩa là bạn đã không còn sống ở đó. Vẫn đang sống thì dùng I've lived.
+        error_tag: tense_choice
+    explanation:
+      vi: Bạn vẫn đang sống ở Đà Nẵng, nên dùng present perfect (have lived hoặc have been living). Five years là độ dài nên đi với for.
+    display_answer: I've lived in Da Nang for five years.
+
+  - key: en:exercise:how-long-translate-known
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stative-verbs-perfect
+    prompt:
+      source_text: Bạn quen cô ấy bao lâu rồi?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - How long have you known her?
+        - How long have you known her for?
+        - For how long have you known her?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: How long have you been knowing her?
+        feedback_vi: Know là động từ trạng thái, không dùng -ing - How long have you known her?
+        error_tag: stative_verb
+      - answer: How long do you know her?
+        feedback_vi: Việc quen kéo dài đến nay cần present perfect - How long have you known her?
+        error_tag: tense_choice
+      - answer: How long are you knowing her?
+        feedback_vi: Không dùng hiện tại tiếp diễn với know - How long have you known her?
+        error_tag: stative_verb
+      - answer: How long have you know her?
+        feedback_vi: Sau have cần V3 - known.
+        error_tag: past_participle
+    explanation:
+      vi: Hỏi "bao lâu rồi" dùng How long have you + V3. Know là động từ trạng thái nên chỉ dùng known, không dùng been knowing.
+    display_answer: How long have you known her?
+
+  # ---------------- application ----------------
+  - key: en:exercise:how-long-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:how-long-have-you
+    prompt:
+      stem: "Một người mới quen hỏi: \"How long have you been learning English?\" Bạn bắt đầu học từ năm 2018 và vẫn đang học. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c5q, text: "I've been learning it since 2018.", lang: en }
+        - { id: o3z, text: "I'm learning it since 2018.", lang: en }
+        - { id: i7k, text: "I've been learning it for 2018.", lang: en }
+        - { id: u1b, text: "I learned it since 2018.", lang: en }
+    answer:
+      correct_option_id: c5q
+    explanation:
+      vi: Câu trả lời giữ thì của câu hỏi (have been + V-ing), và 2018 là mốc bắt đầu nên dùng since. I'm learning và I learned không diễn tả "từ… đến nay"; for không đi với một năm cụ thể.
+    display_answer: "I've been learning it since 2018."
+
+  - key: en:exercise:how-long-translate-photography
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:photography
+    prompt:
+      source_text: She has been doing photography for two years.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô ấy chụp ảnh được hai năm rồi.
+        - Cô ấy đã chụp ảnh được hai năm rồi.
+        - Cô ấy chụp ảnh được hai năm.
+        - Cô ấy đã chụp ảnh được hai năm.
+        - Cô ấy đã chụp ảnh hai năm rồi.
+        - Cô ấy theo nhiếp ảnh được hai năm rồi.
+        - Cô ấy chơi nhiếp ảnh được hai năm rồi.
+        - Cô ấy đã theo đuổi nhiếp ảnh được hai năm rồi.
+        - Chị ấy chụp ảnh được hai năm rồi.
+        - Chị ấy đã chụp ảnh được hai năm rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cô ấy đã chụp ảnh hai năm trước.
+        feedback_vi: For two years là "được hai năm" (vẫn đang chụp), không phải "hai năm trước" (two years ago).
+        error_tag: for_ago
+    explanation:
+      vi: Has been doing + for two years diễn tả việc bắt đầu hai năm trước và vẫn đang tiếp tục - tiếng Việt nói "được hai năm rồi". Doing photography là chụp ảnh / theo nhiếp ảnh.
+    display_answer: Cô ấy chụp ảnh được hai năm rồi.
+
+  - key: en:exercise:how-long-translate-guitar
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:improve
+    prompt:
+      source_text: Mình tập guitar được sáu tháng rồi và mình đã tiến bộ nhiều.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I've been practising the guitar for six months and I've improved a lot.
+        - I've been practicing the guitar for six months and I've improved a lot.
+        - I've been practising guitar for six months and I've improved a lot.
+        - I've been practicing guitar for six months and I've improved a lot.
+        - I've been learning the guitar for six months and I've improved a lot.
+        - I've been learning guitar for six months and I've improved a lot.
+        - I've practised the guitar for six months and I've improved a lot.
+        - I've practiced the guitar for six months and I've improved a lot.
+        - I've been practising the guitar for six months and I've made a lot of progress.
+        - I've been practicing the guitar for six months and I've made a lot of progress.
+        - I've been practising the guitar for six months and I've got much better.
+        - I've been practising the guitar for six months and I've improved a great deal.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am practising the guitar for six months and I have improved a lot.
+        feedback_vi: Việc kéo dài sáu tháng đến nay không dùng hiện tại tiếp diễn - I've been practising.
+        error_tag: continuous_for_duration
+      - answer: I've been practising the guitar since six months and I've improved a lot.
+        feedback_vi: Six months là độ dài, dùng for - for six months.
+        error_tag: since_for
+      - answer: I practise the guitar for six months and I've improved a lot.
+        feedback_vi: "\"Được sáu tháng rồi\" cần present perfect - I've been practising."
+        error_tag: tense_choice
+      - answer: I've been practising the guitar for six months and I've improved better.
+        feedback_vi: Improve đã có nghĩa "tốt lên", không thêm better - I've improved a lot.
+        error_tag: word_choice
+    explanation:
+      vi: Việc tập bắt đầu sáu tháng trước và vẫn tiếp tục, nên dùng have been + V-ing với for. Kết quả đến nay (tiến bộ) dùng present perfect - I've improved a lot.
+    display_answer: I've been practising the guitar for six months and I've improved a lot.
+
+  - key: en:exercise:how-long-order-known
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stative-verbs-perfect
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình quen Minh từ hồi tiểu học.\""
+      tokens:
+        - { id: k-since, text: since }
+        - { id: k-school, text: school }
+        - { id: k-minh, text: Minh }
+        - { id: k-known, text: known }
+        - { id: k-primary, text: primary }
+        - { id: k-ive, text: I've }
+        - { id: k-for, text: for }
+        - { id: k-been, text: been }
+        - { id: k-knowing, text: knowing }
+    answer:
+      orders:
+        - [k-ive, k-known, k-minh, k-since, k-primary, k-school]
+    explanation:
+      vi: Know là động từ trạng thái nên dùng I've known, không dùng been knowing. Primary school là mốc bắt đầu nên dùng since.
+    display_answer: I've known Minh since primary school.

@@ -1,0 +1,399 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:work-study-at-work
+order_index: 1
+level: b1
+title:
+  vi: Ở nơi làm việc
+objectives:
+  - vi: Dùng đúng các từ về công sở - colleague, manager, department, deadline, meeting, salary.
+  - vi: Nói về nhiệm vụ của mình bằng be responsible for + danh từ/-ing và discuss (không có about).
+  - vi: Nhờ vả lịch sự bằng Could you…? và Would you mind -ing?, đề nghị giúp bằng I'll…
+estimated_minutes: 15
+skills: [vocabulary, grammar, speaking]
+prerequisites: [en:lesson:life-experiences-review]
+items:
+  - item: en:item:colleague
+  - item: en:item:manager
+  - item: en:item:department
+  - item: en:item:customer
+  - item: en:item:salary
+  - item: en:item:deadline
+  - item: en:item:meeting
+  - item: en:item:be-responsible-for
+  - item: en:item:discuss
+  - item: en:item:could-you-request
+  - item: en:item:would-you-mind
+  - item: en:item:offer-i-will
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giới thiệu được công việc của mình, nói mình phụ trách việc gì, và nhờ đồng nghiệp giúp một cách lịch sự như người bản ngữ ở văn phòng.
+  - type: explain
+    text:
+      vi: Để nói về nhiệm vụ, dùng be responsible for + danh từ hoặc động từ -ing - I'm responsible for customer emails, I'm responsible for training new staff. Đừng bỏ be như khi nói "tôi phụ trách" trong tiếng Việt.
+  - type: explain
+    text:
+      vi: Khi nhờ ai đó ở chỗ làm, Could you + động từ nguyên mẫu…? lịch sự hơn Can you…?. Would you mind + -ing…? còn lịch sự hơn nữa, hợp khi nhờ việc hơi phiền.
+  - type: explain
+    text:
+      vi: Khi bạn quyết định giúp ngay lúc nói, dùng I'll + động từ - I'll call IT, I'll send it now. Tiếng Việt nói "để em làm", tiếng Anh là I'll do it, không dùng hiện tại đơn "I do it".
+  - type: deep_explain
+    text:
+      vi: Một số động từ tiếng Việt cần "về" nhưng tiếng Anh thì không - discuss the plan (thảo luận về kế hoạch), không có about. Câu hỏi Would you mind…? nghĩa đen là "bạn có phiền không", nên đồng ý giúp thì trả lời No, not at all hoặc Of course not; nói Yes nghĩa là bạn thấy phiền. Trong email và cuộc họp, nói in a meeting (đang họp), at the meeting (tại cuộc họp đó) đều thường gặp.
+  - type: example
+    target: I work in the sales department, and I'm responsible for new customers.
+    target_lang: en
+    translation:
+      vi: Mình làm ở phòng kinh doanh và phụ trách khách hàng mới.
+    note:
+      vi: Work in the … department; responsible for + danh từ.
+  - type: example
+    target: Could you send me the report before the meeting?
+    target_lang: en
+    translation:
+      vi: Anh gửi giúp em báo cáo trước cuộc họp được không?
+    note:
+      vi: Could you + động từ nguyên mẫu (send), không có to.
+  - type: example
+    target: Would you mind checking my email before I send it to the manager?
+    target_lang: en
+    translation:
+      vi: Phiền chị đọc giúp em email trước khi em gửi cho sếp được không?
+    note:
+      vi: Sau mind là động từ -ing (checking).
+  - type: example
+    target: The deadline is tomorrow? Don't worry, I'll help you.
+    target_lang: en
+    translation:
+      vi: Mai là hạn chót à? Đừng lo, để mình giúp bạn.
+    note:
+      vi: I'll dùng cho lời đề nghị quyết định ngay lúc nói.
+  - type: common_mistake
+    wrong: We need to discuss about the deadline.
+    right: We need to discuss the deadline.
+    target_lang: en
+    note:
+      vi: Discuss đã có nghĩa "thảo luận về", nên không thêm about. Nếu muốn dùng about thì nói have a discussion about the deadline.
+  - type: common_mistake
+    wrong: Would you mind to send me the file?
+    right: Would you mind sending me the file?
+    target_lang: en
+    note:
+      vi: Mind luôn đi với -ing. Đây là lỗi rất phổ biến vì người Việt quen mẫu "want to, need to".
+  - type: common_mistake
+    wrong: I responsible for training new staff.
+    right: I'm responsible for training new staff.
+    target_lang: en
+    note:
+      vi: Responsible là tính từ nên cần be (am/is/are) phía trước, và sau for là -ing.
+  - type: summary
+    points:
+      - vi: Từ công sở - colleague, manager, department, customer, salary, deadline, meeting.
+      - vi: be responsible for + danh từ / -ing; discuss + tân ngữ (không có about).
+      - vi: Could you + động từ nguyên mẫu…? · Would you mind + -ing…?
+      - vi: Đề nghị giúp ngay lúc nói - I'll + động từ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:work-study-at-work-mcq-colleague
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:colleague
+    prompt:
+      stem: "Từ nào chỉ người làm cùng công ty với bạn (đồng nghiệp)?"
+      stem_lang: vi
+      options:
+        - { id: qz4, text: colleague, lang: en }
+        - { id: m7r, text: customer, lang: en }
+        - { id: d2k, text: salary, lang: en }
+        - { id: w9e, text: deadline, lang: en }
+    answer:
+      correct_option_id: qz4
+    explanation:
+      vi: Colleague là đồng nghiệp. Customer là khách hàng, salary là lương, deadline là hạn chót.
+    display_answer: colleague
+
+  - key: en:exercise:work-study-at-work-mcq-mind
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:would-you-mind
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Would you mind ___ the door, please?"
+      stem_lang: vi
+      options:
+        - { id: h3v, text: to close, lang: en }
+        - { id: t8n, text: closing, lang: en }
+        - { id: b5x, text: close, lang: en }
+        - { id: r1p, text: closed, lang: en }
+    answer:
+      correct_option_id: t8n
+    explanation:
+      vi: Sau Would you mind luôn là động từ thêm -ing, nên chọn closing. "To close" là lỗi người Việt hay mắc vì quen mẫu want to.
+    display_answer: closing
+
+  - key: en:exercise:work-study-at-work-listen-report
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:could-you-request
+    prompt:
+      audio_asset_id: null
+      fallback_text: Could you send me the report before the meeting?
+      options:
+        - { id: k6u, text: Anh gửi giúp em báo cáo trước cuộc họp được không?, lang: vi }
+        - { id: e2j, text: Anh có gửi báo cáo sau cuộc họp không?, lang: vi }
+        - { id: a9s, text: Em sẽ gửi anh báo cáo trước cuộc họp., lang: vi }
+        - { id: z4g, text: Anh đã gửi báo cáo cho sếp chưa?, lang: vi }
+    answer:
+      correct_option_id: k6u
+    explanation:
+      vi: Could you send me… là lời nhờ lịch sự "gửi giúp tôi… được không"; before the meeting là "trước cuộc họp", không phải "sau".
+    display_answer: Anh gửi giúp em báo cáo trước cuộc họp được không?
+
+  - key: en:exercise:work-study-at-work-fill-responsible
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-responsible-for
+    prompt:
+      template: "I'm responsible {{b1}} {{b2}} new staff."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi phụ trách đào tạo nhân viên mới."
+        - "Gợi ý: responsible đi với giới từ for, sau giới từ là động từ -ing của train."
+    answer:
+      blanks:
+        b1: [for]
+        b2: [training]
+    known_wrong:
+      - answer: to
+        feedback_vi: Responsible đi với for, không đi với to.
+        error_tag: preposition
+      - answer: of
+        feedback_vi: Responsible đi với for, không đi với of.
+        error_tag: preposition
+      - answer: train
+        feedback_vi: Sau giới từ for, động từ phải thêm -ing - training.
+        error_tag: gerund_after_preposition
+      - answer: to train
+        feedback_vi: Sau for dùng -ing - responsible for training.
+        error_tag: gerund_after_preposition
+    explanation:
+      vi: Be responsible for là cụm cố định. For là giới từ, nên động từ theo sau phải ở dạng -ing - training.
+    display_answer: I'm responsible for training new staff.
+
+  - key: en:exercise:work-study-at-work-order-could
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:could-you-request
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chị kiểm tra giúp em email này được không?\""
+      tokens:
+        - { id: c-email, text: email }
+        - { id: c-to, text: to }
+        - { id: c-you, text: you }
+        - { id: c-this, text: this }
+        - { id: c-could, text: Could }
+        - { id: c-checking, text: checking }
+        - { id: c-check, text: check }
+    answer:
+      orders:
+        - [c-could, c-you, c-check, c-this, c-email]
+    explanation:
+      vi: Could you + động từ nguyên mẫu (check). Không thêm to, và không dùng -ing sau could you (-ing chỉ dùng sau Would you mind).
+    display_answer: Could you check this email?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:work-study-at-work-fill-deadline
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:deadline
+    prompt:
+      template: "The {{b1}} (hạn chót) for the report is Friday, so my {{b2}} (quản lý) wants a draft on Thursday."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [deadline]
+        b2: [manager, boss]
+    known_wrong:
+      - answer: colleague
+        feedback_vi: Colleague là đồng nghiệp; người quản lý bạn là manager.
+        error_tag: word_choice
+      - answer: dead line
+        feedback_vi: Deadline viết liền thành một từ.
+        error_tag: spelling
+    explanation:
+      vi: Deadline là hạn chót (danh từ). Người quản lý trực tiếp là manager; boss cũng được trong văn nói.
+    display_answer: The deadline for the report is Friday, so my manager wants a draft on Thursday.
+
+  - key: en:exercise:work-study-at-work-translate-discuss
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:discuss
+    prompt:
+      source_text: Chúng ta hãy thảo luận về kế hoạch trong cuộc họp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Let's discuss the plan at the meeting.
+        - Let us discuss the plan at the meeting.
+        - Let's discuss the plan in the meeting.
+        - Let us discuss the plan in the meeting.
+        - Let's discuss the plan during the meeting.
+        - We should discuss the plan at the meeting.
+        - Let's discuss the plan at the meeting, then.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Let's discuss about the plan at the meeting.
+        feedback_vi: Discuss không đi với about - Let's discuss the plan.
+        error_tag: discuss_about
+      - answer: Let's discuss about the plan in the meeting.
+        feedback_vi: Discuss không đi với about - Let's discuss the plan.
+        error_tag: discuss_about
+      - answer: Let's discussing the plan at the meeting.
+        feedback_vi: Sau Let's là động từ nguyên mẫu - Let's discuss.
+        error_tag: verb_form
+    explanation:
+      vi: '"Thảo luận về" chỉ là discuss + tân ngữ; tiếng Anh không thêm about. "Hãy… nhé" dùng Let''s + động từ nguyên mẫu.'
+    display_answer: Let's discuss the plan at the meeting.
+
+  - key: en:exercise:work-study-at-work-translate-responsible
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-responsible-for
+    prompt:
+      source_text: Tôi phụ trách khách hàng mới.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I am responsible for new customers.
+        - I'm responsible for new customers.
+        - I am responsible for the new customers.
+        - I'm responsible for the new customers.
+        - I am in charge of new customers.
+        - I'm in charge of new customers.
+        - I'm responsible for looking after new customers.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I responsible for new customers.
+        feedback_vi: Thiếu be - I am responsible for…
+        error_tag: missing_be
+      - answer: I am responsible to new customers.
+        feedback_vi: Responsible đi với for khi nói về nhiệm vụ - responsible for.
+        error_tag: preposition
+      - answer: I am responsible of new customers.
+        feedback_vi: Responsible đi với for, không đi với of.
+        error_tag: preposition
+    explanation:
+      vi: '"Phụ trách" là be responsible for (hoặc be in charge of). Responsible là tính từ nên cần am phía trước.'
+    display_answer: I am responsible for new customers.
+
+  # ---------------- application ----------------
+  - key: en:exercise:work-study-at-work-mcq-offer
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:offer-i-will
+    prompt:
+      stem: "Đồng nghiệp nói: \"The printer isn't working and I need these copies now!\" Bạn muốn đề nghị giúp ngay. Câu nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: f2c, text: "Don't worry, I'll call IT.", lang: en }
+        - { id: u7y, text: "Don't worry, I call IT.", lang: en }
+        - { id: n4d, text: "Would you mind calling IT?", lang: en }
+        - { id: p8w, text: "Don't worry, I'm calling IT next week.", lang: en }
+    answer:
+      correct_option_id: f2c
+    explanation:
+      vi: Quyết định giúp ngay lúc nói dùng I'll + động từ. "I call IT" sai thì; "Would you mind calling IT?" là nhờ người kia chứ không phải đề nghị giúp; next week thì quá muộn.
+    display_answer: "Don't worry, I'll call IT."
+
+  - key: en:exercise:work-study-at-work-translate-mind-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:would-you-mind
+    prompt:
+      source_text: Would you mind calling the customer back this afternoon?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phiền bạn gọi lại cho khách hàng chiều nay được không?
+        - Phiền bạn chiều nay gọi lại cho khách hàng được không?
+        - Bạn có phiền gọi lại cho khách hàng chiều nay không?
+        - Phiền anh gọi lại cho khách hàng chiều nay được không?
+        - Phiền chị gọi lại cho khách hàng chiều nay được không?
+        - Bạn gọi lại cho khách hàng chiều nay giúp mình được không?
+        - Chiều nay bạn gọi lại cho khách hàng giúp mình được không?
+        - Phiền bạn gọi lại cho khách chiều nay được không?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Would you mind…? là lời nhờ rất lịch sự, tương đương "Phiền bạn… được không?". Call back là gọi lại.
+    display_answer: Phiền bạn gọi lại cho khách hàng chiều nay được không?
+
+  - key: en:exercise:work-study-at-work-translate-could
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:could-you-request
+    prompt:
+      source_text: Anh có thể gửi cho tôi file đó trước cuộc họp được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Could you send me the file before the meeting?
+        - Could you send me that file before the meeting?
+        - Could you send the file to me before the meeting?
+        - Could you send that file to me before the meeting?
+        - Could you please send me the file before the meeting?
+        - Could you send me the file before the meeting, please?
+        - Can you send me the file before the meeting?
+        - Can you send me that file before the meeting?
+        - Would you mind sending me the file before the meeting?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Could you to send me the file before the meeting?
+        feedback_vi: Sau could you là động từ nguyên mẫu, không có to.
+        error_tag: modal_to
+      - answer: Could you sending me the file before the meeting?
+        feedback_vi: Sau could you là động từ nguyên mẫu (send); -ing chỉ dùng sau Would you mind.
+        error_tag: verb_form
+      - answer: Would you mind to send me the file before the meeting?
+        feedback_vi: Sau Would you mind dùng -ing - sending.
+        error_tag: mind_ing
+    explanation:
+      vi: Lời nhờ lịch sự dùng Could you + động từ nguyên mẫu. Có thể đặt me ngay sau send (send me the file) hoặc dùng to me ở sau (send the file to me).
+    display_answer: Could you send me the file before the meeting?

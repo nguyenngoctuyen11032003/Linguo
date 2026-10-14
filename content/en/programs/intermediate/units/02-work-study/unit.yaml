@@ -1,0 +1,10 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:unit:work-study
+order_index: 2
+title:
+  vi: Công việc & học tập

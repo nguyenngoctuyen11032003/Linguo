@@ -1,0 +1,435 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:life-experiences-review
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập - Blog du lịch và email cho bạn cũ
+objectives:
+  - vi: Đọc hiểu một bài blog du lịch và một email thân mật dùng nhiều thì khác nhau.
+  - vi: Chọn đúng present perfect, past simple, have been + V-ing và used to trong cùng một đoạn văn.
+  - vi: Viết vài câu kể trải nghiệm và thay đổi trong cuộc sống của chính bạn.
+estimated_minutes: 20
+skills: [reading, grammar, writing]
+prerequisites: [en:lesson:yet-and-used-to]
+items:
+  - item: en:item:catch-up
+  - item: en:item:bucket-list
+  - item: en:item:since-then
+  - item: en:item:present-perfect-experience
+    role: reuse
+  - item: en:item:ever-never-experience
+    role: reuse
+  - item: en:item:pp-vs-past-simple
+    role: reuse
+  - item: en:item:finished-time-expressions
+    role: reuse
+  - item: en:item:for-since
+    role: reuse
+  - item: en:item:how-long-have-you
+    role: reuse
+  - item: en:item:present-perfect-continuous
+    role: reuse
+  - item: en:item:take-up
+    role: reuse
+  - item: en:item:already-yet-just
+    role: reuse
+  - item: en:item:used-to
+    role: reuse
+  - item: en:item:not-any-more
+    role: reuse
+  - item: en:item:nowadays
+    role: reuse
+  - item: en:item:get-lost
+    role: reuse
+  - item: en:item:breathtaking
+    role: reuse
+  - item: en:item:been-vs-gone
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn toàn bộ unit qua hai văn bản thật - một bài blog kể chuyến đi Peru và một email gửi bạn cũ. Bạn sẽ thấy mỗi thì được chọn vì lý do gì.
+  - type: explain
+    text:
+      vi: Trong một câu chuyện, present perfect thường mở đầu để giới thiệu trải nghiệm (I've never been to…), rồi past simple kể chi tiết có thời điểm (Last spring, I went…). Kết bài quay lại hiện tại bằng present perfect - Since then, I've been saving…
+  - type: explain
+    text:
+      vi: Email thân mật hay dùng How have you been? (dạo này bạn thế nào), just và already để báo tin mới, used to và nowadays để kể thay đổi. Khi đọc, hãy gạch chân các mốc thời gian - chúng cho bạn biết thì nào được dùng.
+  - type: deep_explain
+    text:
+      vi: Bảng nhớ nhanh - không nêu thời điểm, chỉ "đã từng" → present perfect; có mốc đã kết thúc → past simple; kéo dài đến nay với for/since → present perfect (hoặc been + V-ing); thói quen cũ đã chấm dứt → used to; vừa mới / rồi / chưa → just, already, yet với present perfect. Lỗi phổ biến nhất của người Việt là dịch mọi chữ "đã" thành past simple và dùng since với một khoảng thời gian.
+  - type: example
+    target: "I've always loved travelling, and I've visited twelve countries so far. Last spring, I finally went to Peru with two friends. We got lost on our first day in Lima, but a kind old man helped us. I've climbed a lot of mountains in my life, and Machu Picchu was the most breathtaking. Since then, I've been saving for my next trip. Next on my bucket list: Iceland!"
+    target_lang: en
+    translation:
+      vi: "Mình luôn mê du lịch, và tính đến giờ đã đi được mười hai nước. Mùa xuân năm ngoái, cuối cùng mình đã đi Peru cùng hai người bạn. Ngày đầu ở Lima tụi mình bị lạc, nhưng một ông cụ tốt bụng đã giúp. Mình đã leo nhiều ngọn núi trong đời, và Machu Picchu là nơi đẹp ngỡ ngàng nhất. Từ đó đến giờ, mình đang để dành tiền cho chuyến đi tiếp theo. Điểm đến tiếp theo trong danh sách: Iceland!"
+    note:
+      vi: Last spring, on our first day là mốc đã kết thúc nên dùng went, got lost, helped. In my life và since then kéo dài đến nay nên dùng I've climbed, I've been saving.
+  - type: example
+    target: "Hi Nam, long time no see! How have you been? I've just moved back to Hue, so I don't live in Saigon any more. I used to hate the quiet, but nowadays I really enjoy it. I've also taken up photography - I've been doing it for six months and I've already sold two photos! Have you found a new flat yet? Let's catch up soon. Mai"
+    target_lang: en
+    translation:
+      vi: "Chào Nam, lâu rồi không gặp! Dạo này bạn thế nào? Mình vừa chuyển về Huế, nên không sống ở Sài Gòn nữa. Hồi trước mình ghét sự yên tĩnh, nhưng giờ thì rất thích. Mình cũng bắt đầu chụp ảnh - mình chụp được sáu tháng rồi và đã bán được hai tấm ảnh! Bạn tìm được căn hộ mới chưa? Sớm gặp nhau kể chuyện nhé. Mai"
+    note:
+      vi: Just, already, yet báo tin mới tính đến hiện tại; used to và nowadays so sánh xưa và nay; for six months đi với I've been doing.
+  - type: example
+    target: We met in 2020, and we've been best friends since then.
+    target_lang: en
+    translation:
+      vi: Tụi mình gặp nhau năm 2020, và từ đó đến giờ là bạn thân.
+    note:
+      vi: In 2020 → past simple; since then (kéo dài đến nay) → present perfect.
+  - type: common_mistake
+    wrong: I've been living in Hue since three months.
+    right: I've been living in Hue for three months.
+    target_lang: en
+    note:
+      vi: Three months là độ dài nên dùng for. Since chỉ đi với mốc - since March, since I moved.
+  - type: common_mistake
+    wrong: I have gone to Peru last spring.
+    right: I went to Peru last spring.
+    target_lang: en
+    note:
+      vi: Last spring là mốc đã kết thúc nên bắt buộc dùng past simple. Ngoài ra, kể chuyến đi đã về thì không dùng gone.
+  - type: common_mistake
+    wrong: Did you ever try Peruvian food?
+    right: Have you ever tried Peruvian food?
+    target_lang: en
+    note:
+      vi: Hỏi trải nghiệm trong đời dùng Have you ever + V3, dù tiếng Việt có chữ "đã".
+  - type: summary
+    points:
+      - vi: Đã từng (không nêu lúc nào) → I've been / I've never…
+      - vi: Có mốc đã kết thúc → past simple (went, got lost, met).
+      - vi: Kéo dài đến nay → have + V3 / have been + V-ing với for (độ dài) và since (mốc).
+      - vi: Rồi, chưa, vừa mới → already, yet, just với present perfect.
+      - vi: Hồi trước từng → used to + V; bây giờ thì không → not… any more, nowadays.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:life-review-mcq-when
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:pp-vs-past-simple
+    prompt:
+      stem: "Đọc: \"I've visited twelve countries so far. Last spring, I finally went to Peru. Since then, I've been saving for my next trip.\" Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: r7c, text: Tác giả đi Peru vào mùa xuân năm ngoái và giờ đang để dành tiền cho chuyến sau., lang: vi }
+        - { id: b2n, text: Tác giả hiện vẫn đang ở Peru., lang: vi }
+        - { id: w9e, text: Tác giả chưa bao giờ đến Peru., lang: vi }
+        - { id: p4l, text: Tác giả đã thôi để dành tiền từ mùa xuân năm ngoái., lang: vi }
+    answer:
+      correct_option_id: r7c
+    explanation:
+      vi: Last spring, I went là việc đã xong ở một mốc quá khứ. Since then, I've been saving cho biết việc để dành tiền bắt đầu từ đó và vẫn đang tiếp tục.
+    display_answer: Tác giả đi Peru vào mùa xuân năm ngoái và giờ đang để dành tiền cho chuyến sau.
+
+  - key: en:exercise:life-review-listen-yet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:already-yet-just
+    prompt:
+      audio_asset_id: null
+      fallback_text: Have you found a new flat yet?
+      options:
+        - { id: n3t, text: Bạn tìm được căn hộ mới chưa?, lang: vi }
+        - { id: h8u, text: Bạn đã bao giờ ở căn hộ mới chưa?, lang: vi }
+        - { id: e1y, text: Bạn vừa tìm được căn hộ mới à?, lang: vi }
+        - { id: c6i, text: Bạn vẫn đang tìm căn hộ mới à?, lang: vi }
+    answer:
+      correct_option_id: n3t
+    explanation:
+      vi: Yet ở cuối câu hỏi present perfect nghĩa là "… chưa?". "Đã bao giờ" là ever, "vừa" là just, còn "vẫn đang tìm" sẽ là still looking.
+    display_answer: Bạn tìm được căn hộ mới chưa?
+
+  - key: en:exercise:life-review-mcq-catch-up
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:catch-up
+    prompt:
+      stem: "Cuối email, Mai viết: \"Let's catch up soon.\" Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k5g, text: Sớm gặp nhau kể chuyện cho nhau nghe nhé., lang: vi }
+        - { id: s1o, text: Cố gắng đuổi kịp mình nhé., lang: vi }
+        - { id: d7m, text: Nhanh bắt xe đi nhé., lang: vi }
+        - { id: z2a, text: Mai mình dậy sớm nhé., lang: vi }
+    answer:
+      correct_option_id: k5g
+    explanation:
+      vi: Trong email thân mật, catch up là gặp hoặc nói chuyện để cập nhật tin tức của nhau. Nghĩa "đuổi kịp" cũng có nhưng không hợp với ngữ cảnh lời chào cuối thư.
+    display_answer: Sớm gặp nhau kể chuyện cho nhau nghe nhé.
+
+  - key: en:exercise:life-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:not-any-more
+    prompt:
+      template: "I've {{b1}} moved back to Hue, so I don't live in Saigon {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa: Mình vừa chuyển về Huế, nên không sống ở Sài Gòn nữa."
+        - "Gợi ý: ô 1 là \"vừa mới\"; ô 2 là \"nữa\" ở cuối câu phủ định."
+    answer:
+      blanks:
+        b1: [just, already]
+        b2: [any more, anymore]
+    known_wrong:
+      - answer: yet
+        feedback_vi: Yet chỉ dùng trong câu hỏi và câu phủ định. "Vừa mới" là just.
+        error_tag: already_yet
+      - answer: no more
+        feedback_vi: Don't đã là phủ định, nên dùng any more - don't live… any more.
+        error_tag: double_negative
+      - answer: no longer
+        feedback_vi: No longer đứng trước động từ và không đi với don't - I no longer live in Saigon.
+        error_tag: no_longer_position
+      - answer: still
+        feedback_vi: Still (vẫn) ngược nghĩa với câu này. Cuối câu phủ định "nữa" là any more.
+        error_tag: word_meaning
+    explanation:
+      vi: Just (vừa mới) đứng giữa have và V3. Cuối câu phủ định, "không… nữa" là not… any more (Anh-Mỹ viết anymore).
+    display_answer: I've just moved back to Hue, so I don't live in Saigon any more.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:life-review-fill-photos
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:take-up
+    prompt:
+      template: "I {{b1}} (take up) photography six months ago, and I {{b2}} (sell) two photos since then."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [took up]
+        b2: [have sold]
+    known_wrong:
+      - answer: have taken up
+        feedback_vi: Six months ago là mốc đã kết thúc - dùng past simple - took up.
+        error_tag: finished_time
+      - answer: sold
+        feedback_vi: Since then kéo dài đến nay, nên dùng present perfect - have sold.
+        error_tag: tense_choice
+      - answer: have selled
+        feedback_vi: Sell là động từ bất quy tắc - sell, sold, sold.
+        error_tag: irregular_verb
+      - answer: taked up
+        feedback_vi: Take là động từ bất quy tắc - take, took, taken.
+        error_tag: irregular_verb
+    explanation:
+      vi: Ago là mốc đã kết thúc nên vế đầu dùng past simple (took up). Since then kéo dài đến hiện tại nên vế sau dùng present perfect (have sold).
+    display_answer: I took up photography six months ago, and I have sold two photos since then.
+
+  - key: en:exercise:life-review-translate-bucket-list
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:bucket-list
+    prompt:
+      source_text: Ngắm cực quang nằm trong danh sách những điều mình muốn làm trong đời.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Seeing the northern lights is on my bucket list.
+        - Watching the northern lights is on my bucket list.
+        - Seeing the aurora is on my bucket list.
+        - Seeing the aurora borealis is on my bucket list.
+        - The northern lights are on my bucket list.
+        - Seeing the northern lights is one of the things on my bucket list.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Seeing the northern lights is in my bucket list.
+        feedback_vi: Bucket list đi với giới từ on - on my bucket list.
+        error_tag: preposition
+      - answer: See the northern lights is on my bucket list.
+        feedback_vi: Hoạt động làm chủ ngữ cần dạng V-ing - Seeing the northern lights…
+        error_tag: gerund_subject
+    explanation:
+      vi: "\"Danh sách những điều muốn làm trong đời\" là bucket list, đi với on. Hoạt động đứng đầu câu làm chủ ngữ dùng V-ing - Seeing…"
+    display_answer: Seeing the northern lights is on my bucket list.
+
+  - key: en:exercise:life-review-translate-since-then
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:since-then
+    prompt:
+      source_text: Tụi mình gặp nhau năm 2020, và từ đó đến giờ là bạn thân.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We met in 2020, and we've been best friends since then.
+        - We met in 2020, and we've been best friends ever since.
+        - We met in 2020, and since then we've been best friends.
+        - We met in 2020 and have been best friends since then.
+        - We met in 2020 and have been best friends ever since.
+        - We met in 2020, and we've been close friends since then.
+        - We met in 2020, and we've been close friends ever since.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We have met in 2020, and we've been best friends since then.
+        feedback_vi: In 2020 là mốc đã kết thúc - We met in 2020.
+        error_tag: finished_time
+      - answer: We met in 2020, and we are best friends since then.
+        feedback_vi: Since then kéo dài đến nay nên dùng present perfect - we've been best friends.
+        error_tag: tense_choice
+      - answer: We met in 2020, and we were best friends since then.
+        feedback_vi: Since then kéo dài đến nay nên dùng present perfect - we've been best friends.
+        error_tag: tense_choice
+      - answer: We met since 2020, and we've been best friends since then.
+        feedback_vi: Gặp nhau là việc xảy ra một lần ở mốc 2020 - We met in 2020.
+        error_tag: since_for
+    explanation:
+      vi: Việc gặp nhau xảy ra ở một mốc đã kết thúc (in 2020) nên dùng past simple. "Từ đó đến giờ" là since then hoặc ever since, đi với present perfect.
+    display_answer: We met in 2020, and we've been best friends since then.
+
+  # ---------------- application ----------------
+  - key: en:exercise:life-review-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:for-since
+    prompt:
+      stem: "Nam trả lời email: \"How long have you lived in Hue?\" Mai chuyển về Huế cách đây ba tháng. Mai nên viết câu nào?"
+      stem_lang: vi
+      options:
+        - { id: f3w, text: "I've lived here for three months.", lang: en }
+        - { id: j6r, text: "I've lived here since three months.", lang: en }
+        - { id: l9p, text: "I live here for three months.", lang: en }
+        - { id: x5d, text: "I'm living here since three months ago.", lang: en }
+    answer:
+      correct_option_id: f3w
+    explanation:
+      vi: Việc sống ở Huế bắt đầu ba tháng trước và vẫn tiếp tục nên dùng present perfect. Three months là độ dài nên đi với for; since chỉ đi với mốc.
+    display_answer: "I've lived here for three months."
+
+  - key: en:exercise:life-review-translate-quiet
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:used-to
+    prompt:
+      source_text: I used to hate the quiet, but nowadays I really enjoy it.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hồi trước mình ghét sự yên tĩnh, nhưng giờ mình rất thích nó.
+        - Hồi trước mình ghét sự yên tĩnh, nhưng bây giờ mình rất thích nó.
+        - Hồi trước mình ghét sự yên tĩnh, nhưng giờ thì mình rất thích.
+        - Hồi trước mình ghét sự yên tĩnh, nhưng giờ mình rất thích.
+        - Hồi trước mình ghét sự yên tĩnh, nhưng bây giờ mình rất thích.
+        - Trước đây mình ghét sự yên tĩnh, nhưng bây giờ mình rất thích nó.
+        - Trước đây mình ghét sự yên tĩnh, nhưng giờ mình rất thích.
+        - Trước đây tôi ghét sự yên tĩnh, nhưng bây giờ tôi rất thích nó.
+        - Trước đây tôi ghét sự yên tĩnh, nhưng ngày nay tôi rất thích nó.
+        - Hồi trước tôi ghét sự yên tĩnh, nhưng bây giờ tôi rất thích.
+        - Ngày xưa mình ghét sự yên tĩnh, nhưng giờ mình rất thích.
+        - Ngày trước mình ghét sự yên tĩnh, nhưng giờ mình rất thích.
+        - Hồi trước mình ghét yên tĩnh, nhưng giờ mình rất thích.
+        - Hồi trước mình từng ghét sự yên tĩnh, nhưng giờ mình rất thích.
+        - Trước đây mình từng ghét sự yên tĩnh, nhưng bây giờ mình rất thích nó.
+        - Trước đây tôi từng ghét sự yên tĩnh, nhưng bây giờ tôi thực sự thích nó.
+        - Hồi trước mình ghét sự yên tĩnh, nhưng dạo này mình rất thích.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mình đã quen với sự yên tĩnh, nhưng giờ mình rất thích nó.
+        feedback_vi: Used to + V là "hồi trước từng", không phải "đã quen với" (be used to).
+        error_tag: used_to_be_used_to
+    explanation:
+      vi: Used to hate là "hồi trước / trước đây (từng) ghét" - nay không còn nữa. Nowadays là "bây giờ, ngày nay", đối lập với quá khứ.
+    display_answer: Hồi trước mình ghét sự yên tĩnh, nhưng giờ mình rất thích nó.
+
+  - key: en:exercise:life-review-translate-how-been
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-perfect-continuous
+    prompt:
+      source_text: Lâu rồi không gặp! Dạo này bạn thế nào? Mình mới bắt đầu tập yoga.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Long time no see! How have you been? I've just taken up yoga.
+        - Long time no see! How have you been? I've just started yoga.
+        - Long time no see! How have you been? I've just started doing yoga.
+        - Long time no see! How have you been? I've recently taken up yoga.
+        - Long time no see! How have you been? I've recently started yoga.
+        - Long time no see! How are you? I've just taken up yoga.
+        - Long time no see! How are you? I've just started yoga.
+        - It's been a long time! How have you been? I've just taken up yoga.
+        - It's been a long time! How have you been? I've just started yoga.
+        - Long time no see! How have you been? I recently took up yoga.
+        - Long time no see! How have you been? I just took up yoga.
+        - Long time no see! How have you been? I just started yoga.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Long time no see! How were you? I've just taken up yoga.
+        feedback_vi: Hỏi "dạo này" (từ lần gặp trước đến nay) dùng How have you been?
+        error_tag: tense_choice
+      - answer: Long time no see! How have you been? I've just took up yoga.
+        feedback_vi: Sau have cần V3 - taken up.
+        error_tag: past_participle
+      - answer: Long time no see! How have you been? I've just taken yoga up.
+        feedback_vi: Với danh từ, take up thường đứng liền nhau - take up yoga.
+        error_tag: phrasal_verb_order
+    explanation:
+      vi: How have you been? hỏi về khoảng thời gian từ lần gặp trước đến nay. "Mới bắt đầu" là I've just taken up / I've just started (Anh-Mỹ cũng nói I just took up).
+    display_answer: Long time no see! How have you been? I've just taken up yoga.
+
+  - key: en:exercise:life-review-order-peru
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:been-vs-gone
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy đã đến Peru hai lần rồi.\""
+      tokens:
+        - { id: e-twice, text: twice }
+        - { id: e-peru, text: Peru }
+        - { id: e-already, text: already }
+        - { id: e-to, text: to }
+        - { id: e-been, text: been }
+        - { id: e-she, text: She }
+        - { id: e-has, text: has }
+        - { id: e-yet, text: yet }
+        - { id: e-gone, text: gone }
+    answer:
+      orders:
+        - [e-she, e-has, e-already, e-been, e-to, e-peru, e-twice]
+        - [e-she, e-has, e-been, e-to, e-peru, e-twice, e-already]
+    explanation:
+      vi: Kể trải nghiệm đi lại dùng has been to (không dùng gone). "Rồi" trong câu khẳng định là already, đứng giữa has và been hoặc ở cuối câu; yet không dùng trong câu khẳng định.
+    display_answer: She has already been to Peru twice.

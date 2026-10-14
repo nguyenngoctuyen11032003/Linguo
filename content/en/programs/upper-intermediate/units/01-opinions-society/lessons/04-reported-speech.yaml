@@ -1,0 +1,425 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:opinions-society-reported-speech
+order_index: 4
+level: b2
+title:
+  vi: Câu tường thuật & động từ tường thuật
+objectives:
+  - vi: Thuật lại lời nói và câu hỏi với đúng quy tắc lùi thì, đổi đại từ và trạng từ thời gian.
+  - vi: Dùng đúng cấu trúc sau suggest, deny, admit, warn thay vì chỉ dùng said.
+  - vi: Bàn về đời sống đô thị - ùn tắc giao thông, nhà ở, giao thông công cộng, không gian xanh.
+estimated_minutes: 25
+skills: [grammar, reading, writing]
+prerequisites: [en:lesson:opinions-society-passive]
+items:
+  - item: en:item:reported-speech-backshift
+  - item: en:item:reported-questions
+  - item: en:item:suggest-pattern
+  - item: en:item:deny-pattern
+  - item: en:item:admit-pattern
+  - item: en:item:warn-pattern
+  - item: en:item:traffic-congestion
+  - item: en:item:affordable-housing
+  - item: en:item:public-transport
+  - item: en:item:green-space
+  - item: en:item:cost-of-living
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thuật lại được ý kiến của chính quyền, chuyên gia và người dân về các vấn đề đô thị - như cách một bài báo tiếng Anh vẫn viết.
+  - type: explain
+    text:
+      vi: "Khi động từ tường thuật ở quá khứ (said, told), thì trong lời nói gốc thường lùi một bậc: am/is → was, will → would, can → could, have done → had done, did → had done. Đại từ và từ chỉ thời gian cũng đổi theo: we → they, tomorrow → the next day, here → there."
+  - type: explain
+    text:
+      vi: Câu hỏi tường thuật dùng trật tự câu kể - chủ ngữ đứng trước động từ, bỏ do/does/did và bỏ dấu hỏi. Câu hỏi Yes/No dùng if hoặc whether - She asked if I lived nearby.
+  - type: explain
+    text:
+      vi: "Động từ tường thuật giúp câu chính xác và sinh động hơn said, nhưng mỗi động từ có cấu trúc riêng: suggest + V-ing / suggest that S (should) V; deny / admit + V-ing; warn sb (not) to V / warn that…"
+  - type: deep_explain
+    text:
+      vi: Nếu điều được thuật lại vẫn còn đúng ở hiện tại, bạn có thể giữ nguyên thì - She said the city is growing fast. Người Việt hay nói "suggest me to do" vì dịch "gợi ý tôi làm", nhưng suggest không bao giờ đi với tân ngữ + to V; tương tự, said không đi trực tiếp với tân ngữ (said to me, hoặc told me).
+  - type: example
+    target: "\"We will build three new parks next year.\" → The mayor said (that) they would build three new parks the following year."
+    target_lang: en
+    translation:
+      vi: "\"Chúng tôi sẽ xây ba công viên mới vào năm tới.\" → Thị trưởng nói rằng họ sẽ xây ba công viên mới vào năm sau đó."
+    note:
+      vi: will → would, we → they, next year → the following year.
+  - type: example
+    target: The reporter asked residents whether public transport had improved since the metro opened.
+    target_lang: en
+    translation:
+      vi: Phóng viên hỏi người dân liệu giao thông công cộng đã được cải thiện kể từ khi tàu điện mở cửa chưa.
+    note:
+      vi: Câu hỏi Yes/No → whether/if + trật tự câu kể (public transport had improved).
+  - type: example
+    target: The developer denied ignoring the rules and suggested building more affordable housing on the edge of the city.
+    target_lang: en
+    translation:
+      vi: Chủ đầu tư phủ nhận việc phớt lờ quy định và đề xuất xây thêm nhà ở giá phải chăng ở rìa thành phố.
+    note:
+      vi: Denied + V-ing, suggested + V-ing.
+  - type: example
+    target: Experts warned that traffic congestion would get worse unless the city invested in green spaces and public transport.
+    target_lang: en
+    translation:
+      vi: Các chuyên gia cảnh báo rằng ùn tắc giao thông sẽ tồi tệ hơn nếu thành phố không đầu tư vào không gian xanh và giao thông công cộng.
+    note:
+      vi: Warn that + mệnh đề, will lùi thành would.
+  - type: common_mistake
+    wrong: My teacher suggested me to read more English news.
+    right: My teacher suggested that I (should) read more English news.
+    target_lang: en
+    note:
+      vi: Suggest không đi với tân ngữ + to V. Dùng suggest that I (should) read hoặc suggest reading.
+  - type: common_mistake
+    wrong: She asked me where did I live.
+    right: She asked me where I lived.
+    target_lang: en
+    note:
+      vi: Câu hỏi tường thuật là câu kể - bỏ did, chủ ngữ đứng trước động từ, lùi thì live → lived.
+  - type: common_mistake
+    wrong: He said me that the rent was too high.
+    right: He told me that the rent was too high.
+    target_lang: en
+    note:
+      vi: Said không có tân ngữ người ngay sau. Dùng told me hoặc said to me.
+  - type: summary
+    points:
+      - vi: Lùi thì - is → was, will → would, can → could, did/has done → had done; đổi đại từ và từ chỉ thời gian.
+      - vi: Câu hỏi tường thuật - asked + wh-word / if / whether + S + V, không đảo ngữ, không do/did.
+      - vi: suggest + V-ing / that S (should) V; không nói suggest sb to V.
+      - vi: deny / admit + V-ing; warn sb (not) to V; tell sb, say (to sb).
+      - vi: Đô thị - traffic congestion, affordable housing, public transport, green space, the cost of living.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:opsoc-rep-mcq-would
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:reported-speech-backshift
+    prompt:
+      stem: "Chọn đáp án đúng: \"We will reduce bus fares.\" → The mayor said that they ___ bus fares."
+      stem_lang: vi
+      options:
+        - { id: e5x, text: would reduce, lang: en }
+        - { id: l2k, text: will reduced, lang: en }
+        - { id: s8f, text: reduce, lang: en }
+        - { id: j4o, text: are reducing, lang: en }
+    answer:
+      correct_option_id: e5x
+    explanation:
+      vi: Said ở quá khứ nên will lùi thành would; sau would là động từ nguyên mẫu reduce. Đại từ we cũng đổi thành they.
+    display_answer: would reduce
+
+  - key: en:exercise:opsoc-rep-mcq-suggest
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:suggest-pattern
+    prompt:
+      stem: Câu nào đúng ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: z3m, text: She suggested taking the bus instead of driving., lang: en }
+        - { id: w7b, text: She suggested us to take the bus instead of driving., lang: en }
+        - { id: u1t, text: She suggested to take the bus instead of driving., lang: en }
+        - { id: g6n, text: She suggested us take the bus instead of driving., lang: en }
+    answer:
+      correct_option_id: z3m
+    explanation:
+      vi: Suggest + V-ing (suggested taking) hoặc suggest that we (should) take. Suggest không đi với tân ngữ + to V và cũng không đi với to V trực tiếp.
+    display_answer: She suggested taking the bus instead of driving.
+
+  - key: en:exercise:opsoc-rep-listen-warn
+    type: listen
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:warn-pattern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Experts have warned residents not to drink the tap water until further notice.
+      options:
+        - { id: y8c, text: "Các chuyên gia đã cảnh báo người dân không uống nước máy cho đến khi có thông báo mới.", lang: vi }
+        - { id: i3s, text: "Các chuyên gia khuyên người dân nên uống nước máy vì nó an toàn.", lang: vi }
+        - { id: m6g, text: "Người dân đã cảnh báo các chuyên gia về chất lượng nước máy.", lang: vi }
+        - { id: q2h, text: "Các chuyên gia chưa thông báo gì về nước máy cho người dân.", lang: vi }
+    answer:
+      correct_option_id: y8c
+    explanation:
+      vi: Warn somebody not to do something là "cảnh báo ai đừng làm gì"; not đặt trước to. Until further notice là "cho đến khi có thông báo mới".
+    display_answer: "Các chuyên gia đã cảnh báo người dân không uống nước máy cho đến khi có thông báo mới."
+
+  - key: en:exercise:opsoc-rep-fill-deny-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:deny-pattern
+    prompt:
+      template: "The factory owner denied {{b1}} (dump) waste into the river."
+      blanks:
+        - { id: b1, width_hint: 12 }
+      hint_levels:
+        - "Nghĩa của câu: Chủ nhà máy phủ nhận việc đã xả chất thải xuống sông."
+        - "Gợi ý: deny + V-ing."
+    answer:
+      blanks:
+        b1: [dumping, having dumped]
+    known_wrong:
+      - answer: to dump
+        feedback_vi: Deny đi với V-ing, không đi với to V - denied dumping.
+        error_tag: verb_pattern
+      - answer: dump
+        feedback_vi: Sau deny cần V-ing - dumping.
+        error_tag: verb_pattern
+      - answer: not dumping
+        feedback_vi: Deny đã mang nghĩa phủ nhận, không thêm not.
+        error_tag: double_negative
+    explanation:
+      vi: Deny + V-ing (hoặc having + V3 để nhấn mạnh việc đã xảy ra). Bản thân deny đã là phủ định nên không cần not.
+    display_answer: The factory owner denied dumping waste into the river.
+
+  - key: en:exercise:opsoc-rep-mcq-question
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:reported-questions
+    prompt:
+      stem: "Chọn đáp án đúng: \"How long have you lived in Hanoi?\" → The reporter asked me how long ___ in Hanoi."
+      stem_lang: vi
+      options:
+        - { id: p5d, text: I had lived, lang: en }
+        - { id: c9r, text: had I lived, lang: en }
+        - { id: f1w, text: have you lived, lang: en }
+        - { id: t7j, text: did I live, lang: en }
+    answer:
+      correct_option_id: p5d
+    explanation:
+      vi: Câu hỏi tường thuật dùng trật tự câu kể (I had lived), không đảo ngữ. Have lived lùi thành had lived, you đổi thành I.
+    display_answer: I had lived
+
+  # ---------------- recall ----------------
+  - key: en:exercise:opsoc-rep-fill-admit
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:admit-pattern
+    prompt:
+      template: "The minister {{b1}} (thừa nhận) {{b2}} (make) a mistake and promised to fix the housing problem."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [admitted, acknowledged]
+        b2: [making]
+    known_wrong:
+      - answer: admit
+        feedback_vi: Câu kể chuyện quá khứ (promised) nên dùng admitted.
+        error_tag: tense
+      - answer: to make
+        feedback_vi: Admit đi với V-ing - admitted making.
+        error_tag: verb_pattern
+      - answer: make
+        feedback_vi: Sau admit cần V-ing - making.
+        error_tag: verb_pattern
+      - answer: denied
+        feedback_vi: Denied là phủ nhận, ngược nghĩa với thừa nhận.
+        error_tag: reporting_verb
+    explanation:
+      vi: Admit (thừa nhận) + V-ing, chia quá khứ admitted vì cả câu nói về quá khứ. Admit making a mistake là cụm rất hay gặp trong tin tức.
+    display_answer: The minister admitted making a mistake and promised to fix the housing problem.
+
+  - key: en:exercise:opsoc-rep-translate-suggest
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:suggest-pattern
+    prompt:
+      source_text: Cô ấy gợi ý chúng tôi đi làm bằng xe buýt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She suggested that we go to work by bus.
+        - She suggested that we should go to work by bus.
+        - She suggested we go to work by bus.
+        - She suggested we should go to work by bus.
+        - She suggested going to work by bus.
+        - She suggested that we take the bus to work.
+        - She suggested that we should take the bus to work.
+        - She suggested we take the bus to work.
+        - She suggested taking the bus to work.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She suggested us to go to work by bus.
+        feedback_vi: Suggest không đi với tân ngữ + to V. Nói She suggested that we (should) go…
+        error_tag: suggest_pattern
+      - answer: She suggested to go to work by bus.
+        feedback_vi: Suggest không đi với to V. Dùng suggested going hoặc suggested that we go.
+        error_tag: suggest_pattern
+      - answer: She suggested us going to work by bus.
+        feedback_vi: Không đặt us ngay sau suggest. Nói She suggested that we go… hoặc She suggested going…
+        error_tag: suggest_pattern
+    explanation:
+      vi: Suggest có hai cấu trúc - suggest + V-ing hoặc suggest (that) + S + (should) + V nguyên mẫu. "Gợi ý chúng tôi đi" không dịch thành suggest us to go.
+    display_answer: She suggested that we go to work by bus.
+
+  - key: en:exercise:opsoc-rep-translate-asked-if
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:reported-questions
+    prompt:
+      source_text: Anh ấy hỏi tôi liệu tôi có thích sống ở thành phố không.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He asked me if I liked living in the city.
+        - He asked me whether I liked living in the city.
+        - He asked me if I liked living in the city or not.
+        - He asked me whether or not I liked living in the city.
+        - He asked me if I liked to live in the city.
+        - He asked me whether I liked to live in the city.
+        - He asked if I liked living in the city.
+        - He asked whether I liked living in the city.
+        - He asked me if I enjoyed living in the city.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He asked me do I like living in the city.
+        feedback_vi: Câu hỏi Yes/No tường thuật cần if/whether và trật tự câu kể - He asked me if I liked…
+        error_tag: reported_question_order
+      - answer: He asked me did I like living in the city.
+        feedback_vi: Bỏ did và thêm if - He asked me if I liked living in the city.
+        error_tag: reported_question_order
+      - answer: He asked me if did I like living in the city.
+        feedback_vi: Sau if dùng trật tự câu kể, không có did - if I liked.
+        error_tag: reported_question_order
+    explanation:
+      vi: "\"Liệu… không\" là câu hỏi Yes/No, nên dùng asked (me) if/whether + chủ ngữ + động từ đã lùi thì (liked)."
+    display_answer: He asked me if I liked living in the city.
+
+  # ---------------- application ----------------
+  - key: en:exercise:opsoc-rep-mcq-report-news
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:traffic-congestion
+    prompt:
+      stem: "Một quan chức nói: \"The new flyover will reduce traffic congestion.\" Bạn viết lại cho bài báo. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h9a, text: "The official claimed that the new flyover would reduce traffic congestion.", lang: en }
+        - { id: r3v, text: "The official said me that the new flyover would reduce traffic congestion.", lang: en }
+        - { id: b6p, text: "The official told that the new flyover would reduce traffic congestion.", lang: en }
+        - { id: x2e, text: "The official claimed that the new flyover reducing traffic congestion.", lang: en }
+    answer:
+      correct_option_id: h9a
+    explanation:
+      vi: Claim that + mệnh đề cho thấy người viết giữ khoảng cách với lời tuyên bố; will lùi thành would. Said không đi trực tiếp với me, còn told luôn cần tân ngữ người.
+    display_answer: "The official claimed that the new flyover would reduce traffic congestion."
+
+  - key: en:exercise:opsoc-rep-translate-cost-living
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:cost-of-living
+    prompt:
+      source_text: Experts warned that the cost of living in big cities would continue to rise.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Các chuyên gia cảnh báo rằng chi phí sinh hoạt ở các thành phố lớn sẽ tiếp tục tăng.
+        - Các chuyên gia đã cảnh báo rằng chi phí sinh hoạt ở các thành phố lớn sẽ tiếp tục tăng.
+        - Các chuyên gia cảnh báo chi phí sinh hoạt ở các thành phố lớn sẽ tiếp tục tăng.
+        - Các chuyên gia cảnh báo rằng chi phí sinh hoạt tại các thành phố lớn sẽ tiếp tục tăng.
+        - Giới chuyên gia cảnh báo rằng chi phí sinh hoạt ở các thành phố lớn sẽ tiếp tục tăng.
+        - Các chuyên gia cảnh báo rằng chi phí sinh hoạt ở những thành phố lớn sẽ còn tiếp tục tăng.
+        - Chuyên gia cảnh báo rằng chi phí sinh hoạt ở các thành phố lớn sẽ tiếp tục tăng lên.
+        - Các chuyên gia cảnh báo rằng chi phí sinh hoạt ở các đô thị lớn sẽ tiếp tục tăng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Warned that + mệnh đề là "cảnh báo rằng". Would continue là will đã lùi thì, khi dịch sang tiếng Việt vẫn là "sẽ tiếp tục".
+    display_answer: Các chuyên gia cảnh báo rằng chi phí sinh hoạt ở các thành phố lớn sẽ tiếp tục tăng.
+
+  - key: en:exercise:opsoc-rep-order-admitted
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:affordable-housing
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chính quyền thành phố thừa nhận rằng không có đủ nhà ở giá phải chăng.\""
+      tokens:
+        - { id: h-enough, text: not enough }
+        - { id: h-is, text: is }
+        - { id: h-that, text: that }
+        - { id: h-housing, text: affordable housing }
+        - { id: h-council, text: The city council }
+        - { id: h-to, text: admitted to }
+        - { id: h-was, text: there was }
+        - { id: h-admitted, text: admitted }
+    answer:
+      orders:
+        - [h-council, h-admitted, h-that, h-was, h-enough, h-housing]
+        - [h-council, h-admitted, h-was, h-enough, h-housing]
+    explanation:
+      vi: Admit (that) + mệnh đề; that có thể lược bỏ. Is lùi thành was vì động từ tường thuật ở quá khứ; housing không đếm được nên dùng there was.
+    display_answer: The city council admitted that there was not enough affordable housing.
+
+  - key: en:exercise:opsoc-rep-translate-discuss
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:green-space
+    prompt:
+      source_text: Chúng tôi đã thảo luận về việc thiếu không gian xanh trong thành phố.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We discussed the lack of green space in the city.
+        - We discussed the lack of green spaces in the city.
+        - We have discussed the lack of green space in the city.
+        - We have discussed the lack of green spaces in the city.
+        - We discussed the shortage of green space in the city.
+        - We discussed the lack of green space in our city.
+        - We had a discussion about the lack of green space in the city.
+        - We talked about the lack of green space in the city.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We discussed about the lack of green space in the city.
+        feedback_vi: Discuss là ngoại động từ, không cần about - We discussed the lack of…
+        error_tag: discuss_about
+      - answer: We have discussed about the lack of green space in the city.
+        feedback_vi: Discuss không đi với about - We have discussed the lack of…
+        error_tag: discuss_about
+      - answer: We were discussed the lack of green space in the city.
+        feedback_vi: Chúng tôi là người thảo luận nên dùng chủ động - We discussed.
+        error_tag: active_passive
+    explanation:
+      vi: "\"Thảo luận về\" trong tiếng Anh là discuss + tân ngữ, không có about. Nếu muốn dùng about thì đổi sang danh từ (have a discussion about) hoặc talk about."
+    display_answer: We discussed the lack of green space in the city.

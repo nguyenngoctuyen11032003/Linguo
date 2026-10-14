@@ -1,0 +1,417 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:work-study-rules
+order_index: 2
+level: b1
+title:
+  vi: Quy định & lời khuyên
+objectives:
+  - vi: Nói về quy định ở chỗ làm bằng must, have to và be allowed to.
+  - vi: Phân biệt mustn't (cấm) với don't have to (không cần).
+  - vi: Đưa lời khuyên bằng should / shouldn't.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:work-study-at-work]
+items:
+  - item: en:item:must-obligation
+  - item: en:item:have-to-obligation
+  - item: en:item:mustnt-vs-dont-have-to
+  - item: en:item:should-advice
+  - item: en:item:be-allowed-to
+  - item: en:item:rule
+  - item: en:item:uniform
+  - item: en:item:on-time
+  - item: en:item:work-overtime
+  - item: en:item:take-a-break
+  - item: en:item:manager
+    role: reuse
+  - item: en:item:meeting
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được nội quy công ty cho đồng nghiệp mới - điều gì bắt buộc, điều gì bị cấm, điều gì không cần - và khuyên họ nên làm gì.
+  - type: explain
+    text:
+      vi: Must và have to đều là "phải". Must hay dùng cho quy định viết ra hoặc khi chính người nói thấy cần; have to dùng cho bắt buộc từ bên ngoài (công ty, luật). Sau cả hai là động từ nguyên mẫu.
+  - type: explain
+    text:
+      vi: Ở dạng phủ định, hai từ này khác hẳn nhau. Mustn't nghĩa là "cấm, không được"; don't have to nghĩa là "không cần, làm cũng được mà không làm cũng được".
+  - type: explain
+    text:
+      vi: Must không chia theo chủ ngữ và không đi với do - He must, You mustn't. Have to thì chia như động từ thường - She has to, Do you have to…?, We don't have to.
+  - type: explain
+    text:
+      vi: Should / shouldn't là lời khuyên ("nên / không nên"), nhẹ hơn must nhiều. Be allowed to là "được phép" theo quy định - We aren't allowed to eat at our desks.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt "không phải" vừa có nghĩa "không cần" (Thứ Bảy không phải đi làm) vừa có thể hiểu là cấm, nên người Việt hay nói nhầm mustn't. Mẹo nhớ - nếu câu tiếng Việt thêm được "cũng được" (không đi cũng được) thì dùng don't have to; nếu là "cấm, không được" thì dùng mustn't. Must không có dạng quá khứ riêng; nói về quá khứ dùng had to (Last week I had to work overtime).
+  - type: example
+    target: All staff must wear their ID cards at work.
+    target_lang: en
+    translation:
+      vi: Mọi nhân viên phải đeo thẻ khi làm việc.
+    note:
+      vi: Must + động từ nguyên mẫu - kiểu câu thường thấy trong nội quy viết.
+  - type: example
+    target: She has to work overtime because of the deadline.
+    target_lang: en
+    translation:
+      vi: Cô ấy phải tăng ca vì hạn chót.
+    note:
+      vi: Has to - have to chia theo she.
+  - type: example
+    target: You mustn't park here, but you don't have to pay in the staff car park.
+    target_lang: en
+    translation:
+      vi: Bạn không được đỗ xe ở đây, nhưng trong bãi xe nhân viên thì bạn không phải trả tiền.
+    note:
+      vi: Mustn't = cấm; don't have to = không cần.
+  - type: example
+    target: You should take a break - you look tired.
+    target_lang: en
+    translation:
+      vi: Bạn nên nghỉ một lát đi - trông bạn mệt lắm.
+    note:
+      vi: Should + động từ nguyên mẫu, là lời khuyên.
+  - type: common_mistake
+    wrong: You don't must be late.
+    right: You mustn't be late.
+    target_lang: en
+    note:
+      vi: Must không dùng với do/don't. Phủ định của must là must not (mustn't).
+  - type: common_mistake
+    wrong: You mustn't wear a suit on Fridays. (ý là không cần)
+    right: You don't have to wear a suit on Fridays.
+    target_lang: en
+    note:
+      vi: Mustn't là cấm. Nếu ý là "không cần mặc vest, mặc cũng được" thì phải dùng don't have to.
+  - type: common_mistake
+    wrong: You should to ask your manager.
+    right: You should ask your manager.
+    target_lang: en
+    note:
+      vi: Sau should, must, can không bao giờ có to. Chỉ have to và be allowed to mới có to.
+  - type: summary
+    points:
+      - vi: must / have to + động từ nguyên mẫu = phải; have to chia theo chủ ngữ (has to, don't have to).
+      - vi: mustn't = cấm, không được; don't have to = không cần.
+      - vi: should / shouldn't = nên / không nên (lời khuyên).
+      - vi: be (not) allowed to = được / không được phép theo quy định.
+      - vi: Quá khứ của must và have to đều là had to.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:work-study-rules-mcq-mustnt
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:mustnt-vs-dont-have-to
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: You ___ smoke inside the building. It's against the rules."
+      stem_lang: vi
+      options:
+        - { id: x5b, text: mustn't, lang: en }
+        - { id: j2h, text: don't have to, lang: en }
+        - { id: o7q, text: have to, lang: en }
+        - { id: g3t, text: should, lang: en }
+    answer:
+      correct_option_id: x5b
+    explanation:
+      vi: Against the rules (trái quy định) nghĩa là bị cấm, nên dùng mustn't. Don't have to chỉ là "không cần", không diễn tả lệnh cấm.
+    display_answer: mustn't
+
+  - key: en:exercise:work-study-rules-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:mustnt-vs-dont-have-to
+    prompt:
+      stem: "Câu \"You don't have to come to the meeting.\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s8f, text: Bạn không cần đến cuộc họp (đến cũng được)., lang: vi }
+        - { id: i4m, text: Bạn không được đến cuộc họp., lang: vi }
+        - { id: y6l, text: Bạn phải đến cuộc họp., lang: vi }
+        - { id: c1w, text: Bạn nên đến cuộc họp., lang: vi }
+    answer:
+      correct_option_id: s8f
+    explanation:
+      vi: Don't have to là "không bắt buộc" - bạn đến hay không đều được. "Không được đến" phải dùng mustn't.
+    display_answer: Bạn không cần đến cuộc họp (đến cũng được).
+
+  - key: en:exercise:work-study-rules-listen-uniform
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:uniform
+    prompt:
+      audio_asset_id: null
+      fallback_text: Staff have to wear a uniform, but they don't have to wear a tie.
+      options:
+        - { id: v3n, text: Nhân viên phải mặc đồng phục nhưng không cần đeo cà vạt., lang: vi }
+        - { id: d9r, text: Nhân viên phải mặc đồng phục và không được đeo cà vạt., lang: vi }
+        - { id: l2e, text: Nhân viên không cần mặc đồng phục nhưng phải đeo cà vạt., lang: vi }
+        - { id: q7k, text: Nhân viên nên mặc đồng phục và đeo cà vạt., lang: vi }
+    answer:
+      correct_option_id: v3n
+    explanation:
+      vi: Have to wear a uniform là bắt buộc mặc đồng phục; don't have to wear a tie là không cần đeo cà vạt (đeo cũng được), không phải bị cấm.
+    display_answer: Nhân viên phải mặc đồng phục nhưng không cần đeo cà vạt.
+
+  - key: en:exercise:work-study-rules-fill-has-to
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:have-to-obligation
+    prompt:
+      template: "My sister {{b1}} to work overtime this week."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Tuần này chị mình phải tăng ca."
+        - "Gợi ý: have to chia theo chủ ngữ; my sister = she."
+    answer:
+      blanks:
+        b1: [has]
+    known_wrong:
+      - answer: have
+        feedback_vi: My sister là ngôi thứ ba số ít (she), nên have to đổi thành has to.
+        error_tag: subject_verb_agreement
+      - answer: must
+        feedback_vi: Must không đi với to. Ở đây phía sau có to, nên cần has.
+        error_tag: modal_to
+    explanation:
+      vi: Have to chia như động từ thường - she has to. Must thì không đi với to, nên không điền được vào chỗ này.
+    display_answer: My sister has to work overtime this week.
+
+  - key: en:exercise:work-study-rules-order-break
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:take-a-break
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Bạn nên nghỉ giải lao một chút.\""
+      tokens:
+        - { id: t-break, text: break }
+        - { id: t-should, text: should }
+        - { id: t-taking, text: taking }
+        - { id: t-a, text: a }
+        - { id: t-to, text: to }
+        - { id: t-you, text: You }
+        - { id: t-take, text: take }
+    answer:
+      orders:
+        - [t-you, t-should, t-take, t-a, t-break]
+    explanation:
+      vi: Should + động từ nguyên mẫu (take), không có to và không dùng -ing. Cụm cố định là take a break.
+    display_answer: You should take a break.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:work-study-rules-fill-exam-rules
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:mustnt-vs-dont-have-to
+    prompt:
+      template: "You {{b1}} (không được) use your phone in the exam room. You {{b2}} (không cần) bring a pen - we give you one."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 13 }
+    answer:
+      blanks:
+        b1: [mustn't, must not, can't, cannot, aren't allowed to, are not allowed to]
+        b2: [don't have to, do not have to, don't need to, do not need to, needn't]
+    known_wrong:
+      - answer: don't must
+        feedback_vi: Must không đi với don't. Cấm thì dùng mustn't; không cần thì dùng don't have to.
+        error_tag: dont_must
+      - answer: not must
+        feedback_vi: Phủ định của must là must not (mustn't), đặt not sau must.
+        error_tag: dont_must
+      - answer: haven't to
+        feedback_vi: Dạng này rất cũ. Hãy dùng don't have to.
+        error_tag: have_to_negative
+      - answer: shouldn't
+        feedback_vi: Shouldn't chỉ là lời khuyên. Ở đây là quy định cấm hoặc không bắt buộc.
+        error_tag: modal_meaning
+    explanation:
+      vi: Chỗ thứ nhất là lệnh cấm nên dùng mustn't. Chỗ thứ hai là không bắt buộc (mang bút cũng được) nên dùng don't have to.
+    display_answer: You mustn't use your phone in the exam room. You don't have to bring a pen - we give you one.
+
+  - key: en:exercise:work-study-rules-translate-late
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:must-obligation
+    prompt:
+      source_text: Bạn không được đến muộn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You mustn't be late.
+        - You must not be late.
+        - You can't be late.
+        - You cannot be late.
+        - You aren't allowed to be late.
+        - You are not allowed to be late.
+        - You mustn't arrive late.
+        - You must not arrive late.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You don't must be late.
+        feedback_vi: Must không đi với don't - You mustn't be late.
+        error_tag: dont_must
+      - answer: You don't have to be late.
+        feedback_vi: Don't have to là "không cần", không phải lệnh cấm. Dùng mustn't.
+        error_tag: mustnt_dont_have_to
+      - answer: You mustn't to be late.
+        feedback_vi: Sau must không có to - You mustn't be late.
+        error_tag: modal_to
+      - answer: You mustn't late.
+        feedback_vi: Late là tính từ nên cần be - You mustn't be late.
+        error_tag: missing_be
+    explanation:
+      vi: '"Không được" là lệnh cấm, nên dùng mustn''t (hoặc aren''t allowed to). Late là tính từ, nên cần be - be late.'
+    display_answer: You mustn't be late.
+
+  - key: en:exercise:work-study-rules-translate-saturday
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:mustnt-vs-dont-have-to
+    prompt:
+      source_text: Thứ Bảy chúng tôi không phải đi làm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We don't have to work on Saturdays.
+        - We do not have to work on Saturdays.
+        - We don't have to work on Saturday.
+        - We don't have to go to work on Saturdays.
+        - We do not have to go to work on Saturdays.
+        - We don't have to go to work on Saturday.
+        - On Saturdays we don't have to work.
+        - On Saturdays, we don't have to go to work.
+        - We don't need to work on Saturdays.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We mustn't work on Saturdays.
+        feedback_vi: Mustn't là bị cấm làm việc. "Không phải đi làm" là không bắt buộc - don't have to.
+        error_tag: mustnt_dont_have_to
+      - answer: We don't must work on Saturdays.
+        feedback_vi: Must không đi với don't. Dùng don't have to.
+        error_tag: dont_must
+      - answer: We haven't to work on Saturdays.
+        feedback_vi: Dạng này rất cũ. Hãy nói We don't have to work.
+        error_tag: have_to_negative
+      - answer: We don't have to working on Saturdays.
+        feedback_vi: Sau have to là động từ nguyên mẫu - have to work.
+        error_tag: verb_form
+    explanation:
+      vi: '"Không phải đi làm" ở đây là không bắt buộc (đi cũng được), nên dùng don''t have to. Nói về thói quen mỗi thứ Bảy thường dùng on Saturdays.'
+    display_answer: We don't have to work on Saturdays.
+
+  # ---------------- application ----------------
+  - key: en:exercise:work-study-rules-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:should-advice
+    prompt:
+      stem: "Đồng nghiệp mới nói: \"My eyes hurt after looking at the screen all day.\" Bạn muốn khuyên họ. Câu nào đúng và hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: a6z, text: You should take a break every hour., lang: en }
+        - { id: e3p, text: You should to take a break every hour., lang: en }
+        - { id: h8c, text: You mustn't take a break every hour., lang: en }
+        - { id: r5u, text: You don't have to take breaks., lang: en }
+    answer:
+      correct_option_id: a6z
+    explanation:
+      vi: Lời khuyên dùng should + động từ nguyên mẫu. "Should to" sai ngữ pháp; mustn't và don't have to không phải lời khuyên hợp lý ở đây.
+    display_answer: You should take a break every hour.
+
+  - key: en:exercise:work-study-rules-translate-uniform-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:on-time
+    prompt:
+      source_text: You don't have to wear a uniform, but you must be on time.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn không cần mặc đồng phục, nhưng bạn phải đúng giờ.
+        - Bạn không cần mặc đồng phục nhưng phải đúng giờ.
+        - Bạn không phải mặc đồng phục, nhưng bạn phải đúng giờ.
+        - Bạn không phải mặc đồng phục nhưng phải đúng giờ.
+        - Bạn không bắt buộc mặc đồng phục, nhưng phải đến đúng giờ.
+        - Bạn không cần mặc đồng phục, nhưng phải đến đúng giờ.
+        - Bạn không cần mặc đồng phục nhưng phải có mặt đúng giờ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn không được mặc đồng phục, nhưng bạn phải đúng giờ.
+        feedback_vi: Don't have to là "không cần", không phải "không được".
+        error_tag: mustnt_dont_have_to
+    explanation:
+      vi: Don't have to là "không cần / không bắt buộc"; must be on time là "phải đúng giờ".
+    display_answer: Bạn không cần mặc đồng phục, nhưng bạn phải đúng giờ.
+
+  - key: en:exercise:work-study-rules-translate-ask-manager
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:should-advice
+    prompt:
+      source_text: Bạn nên hỏi quản lý trước khi làm thêm giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You should ask your manager before you work overtime.
+        - You should ask your manager before working overtime.
+        - You should ask the manager before you work overtime.
+        - You should ask the manager before working overtime.
+        - You should ask your manager before you do overtime.
+        - You should ask your manager before doing overtime.
+        - You should check with your manager before you work overtime.
+        - You should check with your manager before working overtime.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You should to ask your manager before you work overtime.
+        feedback_vi: Sau should không có to - should ask.
+        error_tag: modal_to
+      - answer: You should ask your manager before you will work overtime.
+        feedback_vi: Sau before dùng hiện tại đơn dù nói về tương lai - before you work.
+        error_tag: will_in_time_clause
+      - answer: You should ask your manager before work overtime.
+        feedback_vi: Sau before dùng -ing (before working) hoặc một mệnh đề (before you work).
+        error_tag: verb_form
+      - answer: You must ask your manager before you work overtime.
+        feedback_vi: Must là bắt buộc. "Nên" là lời khuyên - dùng should.
+        error_tag: modal_meaning
+    explanation:
+      vi: '"Nên" là should + động từ nguyên mẫu. Sau before dùng before you work hoặc before working.'
+    display_answer: You should ask your manager before you work overtime.

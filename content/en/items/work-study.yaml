@@ -1,0 +1,904 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Công việc & học tập" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Ở nơi làm việc ----------------
+  - key: en:item:colleague
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: colleague
+      ipa: UK /ˈkɒliːɡ/ · US /ˈkɑːliːɡ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng nghiệp
+      examples:
+        - target: I'm having lunch with a colleague from the sales team.
+          translation:
+            vi: Mình đang ăn trưa với một đồng nghiệp bên nhóm bán hàng.
+      pronunciation_note:
+        vi: Nhấn vào âm đầu (CO-league); chữ -ue cuối câm, đọc kết thúc bằng âm /ɡ/.
+      confusion:
+        vi: Colleague là người làm cùng công ty hoặc cùng ngành; friend là bạn bè. Trong email công việc, nói my colleague tự nhiên hơn my friend.
+
+  - key: en:item:manager
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: manager
+      ipa: UK /ˈmænɪdʒə/ · US /ˈmænɪdʒɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quản lý, trưởng (bộ phận), sếp trực tiếp
+      examples:
+        - target: My manager wants the report by Friday.
+          translation:
+            vi: Sếp mình muốn có báo cáo trước thứ Sáu.
+      pronunciation_note:
+        vi: Nhấn âm đầu MA-; chữ g đọc là /dʒ/ (gần "dz"), không đọc "ma-na-ghơ".
+      confusion:
+        vi: Boss là cách nói thân mật cho "sếp"; manager là chức danh chính thức, dùng được trong email và hồ sơ.
+
+  - key: en:item:department
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: department
+      ipa: UK /dɪˈpɑːtmənt/ · US /dɪˈpɑːrtmənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng, ban, bộ phận (trong công ty, trường học)
+      examples:
+        - target: She works in the marketing department.
+          translation:
+            vi: Cô ấy làm ở phòng marketing.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (-PART-). Đuôi -ment đọc nhẹ /mənt/.
+      confusion:
+        vi: Người Việt hay nói "work at the marketing department"; tự nhiên hơn là work in the … department.
+
+  - key: en:item:customer
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: customer
+      ipa: UK /ˈkʌstəmə/ · US /ˈkʌstəmɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách hàng (người mua hàng, dùng dịch vụ)
+      examples:
+        - target: We answer customer emails within 24 hours.
+          translation:
+            vi: Chúng tôi trả lời email của khách hàng trong vòng 24 giờ.
+      confusion:
+        vi: Customer là người mua hàng hoặc dịch vụ thường ngày; client là khách của dịch vụ chuyên môn (luật sư, công ty tư vấn).
+
+  - key: en:item:salary
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: salary
+      ipa: /ˈsæləri/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương (trả theo tháng hoặc theo năm)
+      examples:
+        - target: The salary is good, but the hours are long.
+          translation:
+            vi: Lương thì tốt, nhưng giờ làm dài.
+      pronunciation_note:
+        vi: Nhấn âm đầu SA-; ba âm tiết, không đọc thành "sa-la-ri" đều nhau.
+      confusion:
+        vi: Salary là lương cố định theo tháng/năm; wage là tiền công trả theo giờ hoặc theo tuần. Nói a high salary, không nói a big salary.
+
+  - key: en:item:deadline
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: deadline
+      ipa: /ˈdedlaɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạn chót, thời hạn phải hoàn thành
+      examples:
+        - target: The deadline for the project is next Monday.
+          translation:
+            vi: Hạn chót của dự án là thứ Hai tuần sau.
+      confusion:
+        vi: Người Việt hay dùng "deadline" như động từ ("bị deadline"); trong tiếng Anh nó chỉ là danh từ - meet a deadline (kịp hạn), miss a deadline (trễ hạn).
+
+  - key: en:item:meeting
+    type: vocab
+    level: b1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: meeting
+      ipa: UK /ˈmiːtɪŋ/ · US /ˈmiːt̬ɪŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc họp
+      examples:
+        - target: We have a team meeting every Tuesday morning.
+          translation:
+            vi: Sáng thứ Ba nào nhóm mình cũng họp.
+      confusion:
+        vi: Nói have a meeting hoặc be in a meeting (đang họp), không nói "make a meeting". Muốn sắp xếp một cuộc họp thì dùng arrange/set up a meeting.
+
+  - key: en:item:be-responsible-for
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: be responsible for (+ noun / -ing)
+      ipa: UK /rɪˈspɒnsəbl fə/ · US /rɪˈspɑːnsəbl fɚ/
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: chịu trách nhiệm về, phụ trách
+      examples:
+        - target: I'm responsible for training new staff.
+          translation:
+            vi: Tôi phụ trách đào tạo nhân viên mới.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (-SPON-).
+      confusion:
+        vi: Sau for là danh từ hoặc động từ thêm -ing (responsible for training), không dùng to train. Đừng quên be - I am responsible for…, không nói "I responsible for…".
+
+  - key: en:item:discuss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: discuss
+      ipa: /dɪˈskʌs/
+      pos: động từ
+    back:
+      meaning:
+        vi: thảo luận, bàn bạc (một vấn đề)
+      examples:
+        - target: Let's discuss the budget at the meeting.
+          translation:
+            vi: Mình bàn về ngân sách trong cuộc họp nhé.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (-CUSS).
+      confusion:
+        vi: Tiếng Việt nói "thảo luận về", nhưng discuss đi thẳng với tân ngữ - discuss the plan, không nói "discuss about the plan". Nếu muốn dùng about thì dùng danh từ - have a discussion about the plan.
+
+  - key: en:item:could-you-request
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking, grammar]
+    front:
+      text: Could you + động từ nguyên mẫu…?
+      ipa: /kʊd juː/
+      pos: mẫu câu nhờ vả
+    back:
+      meaning:
+        vi: Anh/chị có thể… được không? (nhờ lịch sự)
+      examples:
+        - target: Could you send me the file, please?
+          translation:
+            vi: Anh gửi giúp em file đó được không ạ?
+      pronunciation_note:
+        vi: Khi nói nhanh, could you nối thành /kʊdʒuː/ (gần "cu-dju").
+      confusion:
+        vi: Can you…? thân mật hơn; Could you…? lịch sự hơn, hợp với sếp và khách hàng. Sau could you là động từ nguyên mẫu, không thêm to (Could you send…, không nói Could you to send…).
+
+  - key: en:item:would-you-mind
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking, grammar]
+    front:
+      text: Would you mind + -ing…?
+      ipa: /wʊd juː ˈmaɪnd/
+      pos: mẫu câu nhờ vả
+    back:
+      meaning:
+        vi: Phiền anh/chị… được không? (nhờ rất lịch sự)
+      examples:
+        - target: Would you mind closing the window?
+          translation:
+            vi: Phiền bạn đóng cửa sổ giúp mình được không?
+      confusion:
+        vi: Sau mind là động từ thêm -ing - Would you mind opening…, không nói "Would you mind to open…". Đồng ý thì trả lời No, not at all hoặc Of course not (nghĩa là "không phiền gì"), vì câu hỏi là "bạn có phiền không".
+
+  - key: en:item:offer-i-will
+    type: grammar_point
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking, grammar]
+    front:
+      text: I'll + động từ (đề nghị giúp)
+      ipa: /aɪl/
+      pos: mẫu câu đề nghị
+    back:
+      meaning:
+        vi: Để tôi… (quyết định giúp ngay lúc nói)
+      examples:
+        - target: The printer isn't working. - Don't worry, I'll call IT.
+          translation:
+            vi: Máy in không chạy. - Đừng lo, để mình gọi bên IT.
+      confusion:
+        vi: Khi đề nghị giúp ngay lúc đó, dùng I'll, không dùng I'm going to hay hiện tại đơn ("I call IT" là sai). Muốn hỏi ý người kia thì dùng Shall I…? (Shall I call IT?).
+
+  # ---------------- Bài 2: Quy định & lời khuyên ----------------
+  - key: en:item:must-obligation
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: must + động từ nguyên mẫu
+      ipa: /mʌst/ (đọc nhẹ /məst/)
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: phải (bắt buộc - thường là quy định viết ra, hoặc người nói tự thấy cần)
+      examples:
+        - target: All visitors must sign in at reception.
+          translation:
+            vi: Mọi khách đến đều phải đăng ký tại quầy lễ tân.
+      confusion:
+        vi: Sau must là động từ nguyên mẫu không có to (must sign, không nói must to sign). Must không thêm -s và không dùng do/don't - nói He must, không nói "He musts" hay "You don't must".
+
+  - key: en:item:have-to-obligation
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: have to / has to + động từ nguyên mẫu
+      ipa: /ˈhæf tə/ · /ˈhæs tə/
+      pos: cấu trúc chỉ sự bắt buộc
+    back:
+      meaning:
+        vi: phải (bắt buộc do quy định, hoàn cảnh bên ngoài)
+      examples:
+        - target: Nurses have to work at night sometimes.
+          translation:
+            vi: Y tá đôi khi phải làm ca đêm.
+      pronunciation_note:
+        vi: Have to thường đọc là /ˈhæf tə/ (âm v thành f), has to đọc /ˈhæs tə/.
+      confusion:
+        vi: Have to chia theo chủ ngữ như động từ thường - She has to, Do you have to…?, I don't have to. Quá khứ của cả must và have to đều là had to.
+
+  - key: en:item:mustnt-vs-dont-have-to
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: mustn't ≠ don't have to
+      ipa: UK /ˈmʌsnt/ · /dəʊnt ˈhæf tə/ · US /ˈmʌsnt/ · /doʊnt ˈhæf tə/
+      pos: phủ định của must / have to
+    back:
+      meaning:
+        vi: "mustn't = cấm, không được làm; don't have to = không cần, không bắt buộc (làm cũng được)"
+      examples:
+        - target: You mustn't use your phone in the exam room.
+          translation:
+            vi: Bạn không được dùng điện thoại trong phòng thi.
+        - target: You don't have to wear a suit on Fridays.
+          translation:
+            vi: Thứ Sáu bạn không cần mặc vest.
+      pronunciation_note:
+        vi: Trong mustn't, chữ t đầu tiên câm - đọc /ˈmʌsnt/ (gần "mát-sừn").
+      confusion:
+        vi: Tiếng Việt "không phải" có thể hiểu là "không cần", nên người Việt hay dùng nhầm mustn't. Mustn't là cấm; don't have to chỉ là không bắt buộc.
+
+  - key: en:item:should-advice
+    type: grammar_point
+    level: b1
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: should / shouldn't + động từ nguyên mẫu
+      ipa: /ʃʊd/ · /ˈʃʊdnt/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: nên / không nên (lời khuyên, không bắt buộc)
+      examples:
+        - target: You should ask your manager before you leave early.
+          translation:
+            vi: Bạn nên hỏi sếp trước khi về sớm.
+      pronunciation_note:
+        vi: Chữ l trong should câm; đọc /ʃʊd/.
+      confusion:
+        vi: Should nhẹ hơn must nhiều - chỉ là lời khuyên. Sau should không có to (should ask, không nói should to ask).
+
+  - key: en:item:be-allowed-to
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: be (not) allowed to + động từ
+      ipa: /əˈlaʊd tə/
+      pos: cụm động từ bị động
+    back:
+      meaning:
+        vi: được phép / không được phép (theo quy định)
+      examples:
+        - target: We aren't allowed to eat at our desks.
+          translation:
+            vi: Chúng tôi không được phép ăn ở bàn làm việc.
+      pronunciation_note:
+        vi: Allowed đọc /əˈlaʊd/ (vần "ao"), không đọc "a-lâu".
+      confusion:
+        vi: Đừng quên be - We are allowed to…, không nói "We allowed to…". Câu "We aren't allowed to" gần nghĩa với "We mustn't".
+
+  - key: en:item:rule
+    type: vocab
+    level: b1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: rule
+      ipa: /ruːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định, quy tắc, luật lệ
+      examples:
+        - target: It's a company rule - you must wear your ID card.
+          translation:
+            vi: Đó là quy định của công ty - bạn phải đeo thẻ nhân viên.
+      confusion:
+        vi: Nói follow the rules (tuân theo quy định) và break a rule (vi phạm quy định). Rule đếm được - a rule, the rules.
+
+  - key: en:item:uniform
+    type: vocab
+    level: b1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: uniform
+      ipa: UK /ˈjuːnɪfɔːm/ · US /ˈjuːnɪfɔːrm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng phục
+      examples:
+        - target: Staff have to wear a uniform at work.
+          translation:
+            vi: Nhân viên phải mặc đồng phục khi làm việc.
+      pronunciation_note:
+        vi: Bắt đầu bằng âm /j/ (gần "giu"), nên nói a uniform, không nói an uniform.
+      confusion:
+        vi: Dùng động từ wear (mặc, đeo), không dùng put on khi nói về thói quen - I wear a uniform every day.
+
+  - key: en:item:on-time
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: on time
+      ipa: UK /ɒn ˈtaɪm/ · US /ɑːn ˈtaɪm/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: đúng giờ
+      examples:
+        - target: You must be on time for the meeting.
+          translation:
+            vi: Bạn phải có mặt đúng giờ cho cuộc họp.
+      confusion:
+        vi: On time là đúng giờ đã hẹn; in time là kịp lúc (trước khi quá muộn). Nói arrive on time, không nói "arrive in time" khi ý là đúng giờ hẹn.
+
+  - key: en:item:work-overtime
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: work overtime
+      ipa: UK /wɜːk ˈəʊvətaɪm/ · US /wɝːk ˈoʊvɚtaɪm/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: làm thêm giờ, tăng ca
+      examples:
+        - target: I don't have to work overtime this week.
+          translation:
+            vi: Tuần này mình không phải tăng ca.
+      confusion:
+        vi: Overtime ở đây là trạng từ, không cần giới từ - work overtime, không nói "work in overtime" hay "make OT".
+
+  - key: en:item:take-a-break
+    type: phrase
+    level: b1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: take a break
+      ipa: /teɪk ə ˈbreɪk/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nghỉ giải lao, nghỉ một lát
+      examples:
+        - target: You should take a break every two hours.
+          translation:
+            vi: Bạn nên nghỉ giải lao hai tiếng một lần.
+      confusion:
+        vi: Dùng take (không dùng make hay do) - take a break, have a break (Anh-Anh) đều được.
+
+  # ---------------- Bài 3: Học tập & thi cử ----------------
+  - key: en:item:first-conditional
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: If + hiện tại đơn, will / can / must + động từ
+      pos: câu điều kiện loại 1
+    back:
+      meaning:
+        vi: Nếu… thì… (điều có thể xảy ra ở hiện tại hoặc tương lai)
+      examples:
+        - target: If you finish early, you can leave.
+          translation:
+            vi: Nếu bạn làm xong sớm thì bạn có thể về.
+        - target: If it rains tomorrow, we'll stay at home.
+          translation:
+            vi: Nếu mai trời mưa thì chúng mình sẽ ở nhà.
+      confusion:
+        vi: Tiếng Việt nói "nếu mai trời sẽ mưa" được, nhưng tiếng Anh không dùng will sau if - If it rains, không nói "If it will rain". Will chỉ nằm ở vế kết quả.
+
+  - key: en:item:time-clause-present
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: when / as soon as / before / after + hiện tại đơn (nói về tương lai)
+      ipa: as soon as /əz ˈsuːn əz/
+      pos: mệnh đề thời gian
+    back:
+      meaning:
+        vi: khi / ngay khi / trước khi / sau khi… (việc ở tương lai)
+      examples:
+        - target: I'll call you as soon as I get the results.
+          translation:
+            vi: Mình sẽ gọi bạn ngay khi có kết quả.
+      confusion:
+        vi: Giống mệnh đề if, sau when, as soon as, before, after ta dùng hiện tại đơn dù nói về tương lai - when I finish, không nói "when I will finish".
+
+  - key: en:item:take-an-exam
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: take an exam
+      ipa: /teɪk ən ɪɡˈzæm/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi thi, dự thi
+      examples:
+        - target: I'm taking my English exam next month.
+          translation:
+            vi: Tháng sau mình thi tiếng Anh.
+      confusion:
+        vi: Take an exam là "đi thi", chưa chắc đã đỗ. "Thi đỗ" là pass an exam. Không nói "join an exam" hay "do an exam test".
+
+  - key: en:item:pass-an-exam
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: pass (an exam)
+      ipa: UK /pɑːs/ · US /pæs/
+      pos: động từ
+    back:
+      meaning:
+        vi: thi đỗ, vượt qua (kỳ thi)
+      examples:
+        - target: If you study hard, you'll pass the exam.
+          translation:
+            vi: Nếu bạn học chăm thì bạn sẽ thi đỗ.
+      confusion:
+        vi: Pass the exam đã có nghĩa là "đỗ", không cần thêm "successfully". Đừng nhầm với take (dự thi).
+
+  - key: en:item:fail-an-exam
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fail (an exam)
+      ipa: /feɪl/
+      pos: động từ
+    back:
+      meaning:
+        vi: thi trượt, thi rớt
+      examples:
+        - target: He failed his driving test, so he has to take it again.
+          translation:
+            vi: Anh ấy thi trượt bằng lái nên phải thi lại.
+      confusion:
+        vi: Fail đi thẳng với tân ngữ - fail the exam, không nói "fail in the exam" hay "fail from the exam".
+
+  - key: en:item:assignment
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: assignment
+      ipa: /əˈsaɪnmənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tập (lớn), bài luận được giao; nhiệm vụ được giao
+      examples:
+        - target: The history assignment is due on Friday.
+          translation:
+            vi: Bài tập môn lịch sử phải nộp vào thứ Sáu.
+      pronunciation_note:
+        vi: Chữ g câm - đọc /əˈsaɪnmənt/, nhấn âm thứ hai (-SIGN-).
+      confusion:
+        vi: Homework là bài tập về nhà nói chung (không đếm được); assignment là một bài được giao cụ thể, đếm được (an assignment, two assignments).
+
+  - key: en:item:hand-in
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: hand in
+      ipa: /ˌhænd ˈɪn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nộp (bài, báo cáo)
+      examples:
+        - target: Please hand in your essays by Monday.
+          translation:
+            vi: Các bạn nộp bài luận trước thứ Hai nhé.
+      confusion:
+        vi: Hand in thân mật hơn submit (trang trọng, hay dùng trong email và hệ thống trực tuyến). Tân ngữ đứng giữa hoặc sau đều được - hand it in, hand in the essay.
+
+  - key: en:item:revise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: revise (for an exam)
+      ipa: /rɪˈvaɪz/
+      pos: động từ
+    back:
+      meaning:
+        vi: ôn bài, ôn thi (Anh-Anh)
+      examples:
+        - target: I'm revising for my maths exam this weekend.
+          translation:
+            vi: Cuối tuần này mình ôn thi môn toán.
+      confusion:
+        vi: Trong Anh-Anh, revise for an exam là ôn thi; Anh-Mỹ dùng review hoặc study for. Không nói "review lesson" kiểu dịch từng chữ "ôn bài".
+
+  - key: en:item:mark-grade
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: mark (UK) / grade (US)
+      ipa: UK /mɑːk/ · US /ɡreɪd/
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm (bài kiểm tra, bài thi)
+      examples:
+        - target: She got a good mark in the final test.
+          translation:
+            vi: Cô ấy được điểm tốt trong bài kiểm tra cuối kỳ.
+      confusion:
+        vi: Nói get a good/high mark (được điểm cao), không nói "get a high point". Point là điểm trong trò chơi hoặc từng ý trong bài.
+
+  - key: en:item:course
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: course
+      ipa: UK /kɔːs/ · US /kɔːrs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoá học
+      examples:
+        - target: I'm doing an online course in project management.
+          translation:
+            vi: Mình đang học một khoá trực tuyến về quản lý dự án.
+      pronunciation_note:
+        vi: Đọc giống từ coarse; chữ u không phát âm riêng.
+      confusion:
+        vi: Nói do/take a course (học một khoá), a course in/on + môn học. Không nói "learn a course".
+
+  # ---------------- Bài 4: Email & phỏng vấn xin việc ----------------
+  - key: en:item:apply-for
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: apply for (a job / a course)
+      ipa: /əˈplaɪ fə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nộp đơn xin, ứng tuyển (công việc, học bổng, khoá học)
+      examples:
+        - target: I'm applying for a job at a bank.
+          translation:
+            vi: Mình đang nộp đơn xin việc ở một ngân hàng.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (-PLY).
+      confusion:
+        vi: Apply for + vị trí/công việc; apply to + công ty/trường. Không bỏ for - apply for the position, không nói "apply the position".
+
+  - key: en:item:job-interview
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: (job) interview
+      ipa: UK /ˈɪntəvjuː/ · US /ˈɪntɚvjuː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi phỏng vấn (xin việc)
+      examples:
+        - target: I have a job interview on Thursday afternoon.
+          translation:
+            vi: Chiều thứ Năm mình có buổi phỏng vấn xin việc.
+      confusion:
+        vi: Nói have an interview hoặc go for an interview; người phỏng vấn là interviewer, người được phỏng vấn là candidate.
+
+  - key: en:item:position
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: position
+      ipa: /pəˈzɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vị trí (công việc), chức vụ
+      examples:
+        - target: I'm writing to apply for the position of sales assistant.
+          translation:
+            vi: Tôi viết thư này để ứng tuyển vị trí trợ lý bán hàng.
+      confusion:
+        vi: Position trang trọng hơn job, hợp với email ứng tuyển. Nói the position of + tên vị trí.
+
+  - key: en:item:cv
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: CV (UK) / résumé (US)
+      ipa: /ˌsiː ˈviː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sơ yếu lý lịch, hồ sơ xin việc
+      examples:
+        - target: Please find my CV attached.
+          translation:
+            vi: Tôi xin gửi kèm CV của mình.
+      confusion:
+        vi: Đọc từng chữ C-V /ˌsiː ˈviː/. Thư xin việc đi kèm CV gọi là cover letter.
+
+  - key: en:item:email-dear
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: Dear Mr/Ms + họ, / Dear Sir or Madam,
+      ipa: UK /dɪə/ · US /dɪr/
+      pos: lời chào mở đầu email
+    back:
+      meaning:
+        vi: Kính gửi… (mở đầu email, thư trang trọng)
+      examples:
+        - target: Dear Ms Taylor,
+          translation:
+            vi: Kính gửi chị Taylor,
+      confusion:
+        vi: Sau Mr/Ms dùng họ (family name), không dùng tên riêng - Dear Ms Taylor, không viết "Dear Ms Anna". Không biết tên người nhận thì viết Dear Sir or Madam.
+
+  - key: en:item:im-writing-to
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: I'm writing to + động từ…
+      pos: câu nêu mục đích email
+    back:
+      meaning:
+        vi: Tôi viết thư này để…
+      examples:
+        - target: I'm writing to ask about the training course.
+          translation:
+            vi: Tôi viết thư này để hỏi về khoá đào tạo.
+      confusion:
+        vi: Câu đầu email nên nói ngay mục đích bằng I'm writing to + động từ (ask, apply, confirm). Dùng hiện tại tiếp diễn, không viết "I write to…" và không viết "I'm writing for asking".
+
+  - key: en:item:best-regards
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: Best regards, / Kind regards,
+      ipa: UK /best rɪˈɡɑːdz/ · US /best rɪˈɡɑːrdz/
+      pos: lời chào kết email
+    back:
+      meaning:
+        vi: Trân trọng, (chào cuối email)
+      examples:
+        - target: Best regards, Nguyen Lan
+          translation:
+            vi: Trân trọng, Nguyễn Lan
+      confusion:
+        vi: Regards luôn có -s. Trong email cực kỳ trang trọng bắt đầu bằng Dear Sir or Madam, kết bằng Yours faithfully.
+
+  - key: en:item:look-forward-to
+    type: phrase
+    level: b1
+    difficulty: 4
+    skill_tags: [writing, grammar]
+    front:
+      text: look forward to + -ing / danh từ
+      ipa: UK /lʊk ˈfɔːwəd tə/ · US /lʊk ˈfɔːrwɚd tə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mong chờ, mong nhận được
+      examples:
+        - target: I look forward to hearing from you.
+          translation:
+            vi: Tôi mong sớm nhận được phản hồi của anh/chị.
+      confusion:
+        vi: To ở đây là giới từ, nên sau nó là -ing - look forward to hearing, không viết "look forward to hear".
+
+  - key: en:item:attach
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: attach
+      ipa: /əˈtætʃ/
+      pos: động từ
+    back:
+      meaning:
+        vi: đính kèm (file vào email)
+      examples:
+        - target: I've attached the report to this email.
+          translation:
+            vi: Tôi đã đính kèm báo cáo trong email này.
+      confusion:
+        vi: Nói attach the file to the email, hoặc Please find … attached. Danh từ là attachment (tệp đính kèm).
+
+  - key: en:item:strength
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: strength
+      ipa: /streŋθ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm mạnh, thế mạnh
+      examples:
+        - target: My main strength is that I'm very organised.
+          translation:
+            vi: Điểm mạnh chính của tôi là tôi rất ngăn nắp.
+      pronunciation_note:
+        vi: Cuối từ là cụm /ŋθ/ - đặt lưỡi giữa hai răng cho âm th; đừng đọc thành "strenh".
+      confusion:
+        vi: Điểm yếu là weakness. Khi phỏng vấn, nói My main strength is… rồi đưa ví dụ cụ thể, đừng chỉ liệt kê tính từ.
+
+  - key: en:item:work-experience
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: (work) experience in / of
+      ipa: UK /ɪkˈspɪəriəns/ · US /ɪkˈspɪriəns/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: kinh nghiệm làm việc
+      examples:
+        - target: I have three years' experience in customer service.
+          translation:
+            vi: Tôi có ba năm kinh nghiệm làm dịch vụ khách hàng.
+      confusion:
+        vi: Với nghĩa "kinh nghiệm làm việc", experience không đếm được - không viết "experiences", không dùng a. Dùng experience in + lĩnh vực.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:confirm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: confirm
+      ipa: UK /kənˈfɜːm/ · US /kənˈfɝːm/
+      pos: động từ
+    back:
+      meaning:
+        vi: xác nhận
+      examples:
+        - target: Could you confirm the time of the interview?
+          translation:
+            vi: Anh/chị xác nhận giúp tôi giờ phỏng vấn được không?
+      confusion:
+        vi: Confirm đi thẳng với tân ngữ - confirm the time, không nói "confirm about the time".
+
+  - key: en:item:postpone
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: postpone
+      ipa: UK /pəˈspəʊn/ · US /poʊˈspoʊn/
+      pos: động từ
+    back:
+      meaning:
+        vi: hoãn, dời lại (sang thời điểm sau)
+      examples:
+        - target: The meeting has been postponed until Thursday.
+          translation:
+            vi: Cuộc họp đã được dời sang thứ Năm.
+      confusion:
+        vi: Postpone là dời sang lúc khác; cancel là huỷ hẳn. Sau postpone dùng -ing nếu là động từ - postpone meeting them.

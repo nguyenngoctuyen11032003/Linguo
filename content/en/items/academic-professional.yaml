@@ -1,0 +1,928 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Văn phong học thuật & chuyên nghiệp" (C1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: rào đón & làm mềm ----------------
+  - key: en:item:hedging-language
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "hedging: may / might / could + seem / appear / suggest"
+      pos: rào đón (ngữ pháp)
+    back:
+      meaning:
+        vi: Cách nói giảm độ chắc chắn để nhận định thận trọng, khách quan hơn - dùng động từ khuyết thiếu, seem/appear, suggest, trạng từ như arguably, somewhat.
+      examples:
+        - target: These results may indicate a change in consumer behaviour.
+          translation:
+            vi: Những kết quả này có thể cho thấy hành vi người tiêu dùng đang thay đổi.
+        - target: The policy appears to have had little effect.
+          translation:
+            vi: Chính sách này dường như ít có tác dụng.
+      confusion:
+        vi: Rào đón không phải là thiếu tự tin; trong văn học thuật, khẳng định tuyệt đối (This proves that…) khi dữ liệu chưa đủ bị coi là thiếu cẩn trọng.
+
+  - key: en:item:it-would-appear-that
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, grammar]
+    front:
+      text: It would appear that…
+      ipa: UK /ɪt wʊd əˈpɪə ðət/ · US /ɪt wʊd əˈpɪr ðət/
+      pos: cụm rào đón
+    back:
+      meaning:
+        vi: Có vẻ như…, Dường như… (nhận định thận trọng, trang trọng)
+      examples:
+        - target: It would appear that the figures were calculated incorrectly.
+          translation:
+            vi: Có vẻ như các số liệu đã bị tính sai.
+      pronunciation_note:
+        vi: Would đọc lướt /wʊd/, không đọc rõ chữ l; trọng âm rơi vào -pear.
+      confusion:
+        vi: It would appear that… trang trọng và mềm hơn It appears that… và It seems that…; hay dùng khi chỉ ra lỗi mà không muốn quy trách nhiệm trực tiếp.
+
+  - key: en:item:tend-to
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing, grammar]
+    front:
+      text: tend to + V
+      ipa: /tend tə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: có xu hướng, thường hay (nói về khuynh hướng chung, không tuyệt đối)
+      examples:
+        - target: Younger employees tend to change jobs more frequently.
+          translation:
+            vi: Nhân viên trẻ có xu hướng chuyển việc thường xuyên hơn.
+      confusion:
+        vi: Sau tend to là động từ nguyên mẫu (tend to change), không phải V-ing. Dùng tend to thay cho always để tránh khái quát hoá quá mức.
+
+  - key: en:item:arguably
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: arguably
+      ipa: UK /ˈɑːɡjuəbli/ · US /ˈɑːrɡjuəbli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có thể cho rằng, có lẽ (nêu ý kiến mạnh nhưng thừa nhận người khác có thể không đồng ý)
+      examples:
+        - target: This is arguably the most important reform of the decade.
+          translation:
+            vi: Có thể nói đây là cải cách quan trọng nhất của thập kỷ.
+      pronunciation_note:
+        vi: Trọng âm ở âm đầu AR-gu-a-bly; chữ e trong argue biến mất khi viết arguably.
+      confusion:
+        vi: Arguably không có nghĩa là "gây tranh cãi" (controversial); nó dùng để đưa ra một nhận định có thể bảo vệ được.
+
+  - key: en:item:to-some-extent
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing, speaking]
+    front:
+      text: to some extent
+      ipa: /tə sʌm ɪkˈstent/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: ở một mức độ nào đó, phần nào
+      examples:
+        - target: To some extent, the crisis was predictable.
+          translation:
+            vi: Ở một mức độ nào đó, cuộc khủng hoảng là có thể lường trước.
+      confusion:
+        vi: Các biến thể to a certain extent, to a large extent (phần lớn), to a lesser extent (ở mức ít hơn) đều dùng giới từ to, không dùng in.
+
+  - key: en:item:findings-suggest
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, reading]
+    front:
+      text: the findings suggest that…
+      ipa: UK /ðə ˈfaɪndɪŋz səˈdʒest ðət/ · US /ðə ˈfaɪndɪŋz səɡˈdʒest ðət/
+      pos: cụm học thuật
+    back:
+      meaning:
+        vi: kết quả nghiên cứu cho thấy… (một cách thận trọng)
+      examples:
+        - target: The findings suggest that sleep quality affects memory.
+          translation:
+            vi: Kết quả nghiên cứu cho thấy chất lượng giấc ngủ ảnh hưởng đến trí nhớ.
+      confusion:
+        vi: Suggest mềm hơn prove hay show. Findings luôn ở số nhiều khi nói về kết quả nghiên cứu, nên động từ là suggest, không phải suggests.
+
+  - key: en:item:somewhat
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: somewhat
+      ipa: UK /ˈsʌmwɒt/ · US /ˈsʌmwʌt/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hơi, phần nào (trang trọng hơn a bit, a little)
+      examples:
+        - target: The second survey produced somewhat different results.
+          translation:
+            vi: Cuộc khảo sát thứ hai cho ra kết quả hơi khác.
+      confusion:
+        vi: Trong văn viết trang trọng, somewhat thay cho a bit/kind of. Không dùng somewhat trước danh từ trực tiếp (somewhat a problem là sai; nói somewhat of a problem chỉ trong văn nói).
+
+  - key: en:item:be-likely-to
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [grammar, writing]
+    front:
+      text: be likely / unlikely to + V
+      ipa: /ˈlaɪkli/ · /ʌnˈlaɪkli/
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: có khả năng / không có khả năng (xảy ra)
+      examples:
+        - target: Prices are likely to rise further next year.
+          translation:
+            vi: Giá cả có khả năng tiếp tục tăng vào năm sau.
+      confusion:
+        vi: Likely ở đây là tính từ nên cần be - Prices are likely to rise, không phải Prices likely rise. Cũng có thể nói It is likely that prices will rise.
+
+  - key: en:item:intensifier-collocations
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: "very → highly / considerably / significantly / extremely"
+      pos: từ nhấn mạnh
+    back:
+      meaning:
+        vi: Thay very bằng trạng từ đi kèm tự nhiên (collocation) để văn chính xác và trang trọng hơn - highly effective, considerably higher, significantly reduced.
+      examples:
+        - target: The new system is highly efficient.
+          translation:
+            vi: Hệ thống mới rất hiệu quả.
+        - target: Costs were considerably higher than expected.
+          translation:
+            vi: Chi phí cao hơn đáng kể so với dự kiến.
+      confusion:
+        vi: Very không đứng trước so sánh hơn (very higher là sai) - dùng much, considerably, significantly. Very cũng không đi với tính từ tuyệt đối như essential, unique.
+
+  - key: en:item:highly
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: highly
+      ipa: /ˈhaɪli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: rất, cực kỳ (đi với một số tính từ cố định - highly likely, highly effective, highly recommended)
+      examples:
+        - target: It is highly unlikely that the deadline will be met.
+          translation:
+            vi: Rất khó có khả năng kịp hạn chót.
+      confusion:
+        vi: Highly không có nghĩa là "cao" về độ cao vật lý (dùng high); highly chỉ mức độ, và chỉ đi với một số tính từ, không nói highly big.
+
+  - key: en:item:considerably
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: considerably
+      ipa: /kənˈsɪdərəbli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: đáng kể, nhiều (hay đứng trước so sánh hơn hoặc sau động từ chỉ thay đổi)
+      examples:
+        - target: Sales have improved considerably since March.
+          translation:
+            vi: Doanh số đã cải thiện đáng kể kể từ tháng Ba.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai con-SID-er-a-bly; người nói nhanh thường nuốt âm -er-.
+      confusion:
+        vi: Considerably (đáng kể) khác considerately (một cách chu đáo, ân cần).
+
+  - key: en:item:relatively
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: relatively
+      ipa: /ˈrelətɪvli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tương đối (so với cái khác hoặc so với mức thông thường)
+      examples:
+        - target: The sample size was relatively small.
+          translation:
+            vi: Cỡ mẫu tương đối nhỏ.
+      confusion:
+        vi: Relatively làm mềm nhận định, phù hợp khi nói về hạn chế của nghiên cứu; tránh dùng very small vì nghe chủ quan hơn.
+
+  # ---------------- Bài 2: danh từ hoá & collocation ----------------
+  - key: en:item:nominalisation
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "nominalisation: decide → a decision; implement → the implementation of"
+      ipa: UK /ˌnɒmɪnəlaɪˈzeɪʃn/ · US /ˌnɑːmɪnələˈzeɪʃn/
+      pos: danh từ hoá (ngữ pháp)
+    back:
+      meaning:
+        vi: Chuyển động từ/tính từ thành danh từ để câu khách quan, cô đọng, trang trọng - We analysed the data → An analysis of the data was conducted.
+      examples:
+        - target: The implementation of the new policy led to a reduction in costs.
+          translation:
+            vi: Việc triển khai chính sách mới đã giúp giảm chi phí.
+      confusion:
+        vi: Danh từ hoá thường cần of phía sau (the implementation of the plan) và một động từ "nhẹ" đi kèm (make a decision, carry out an analysis). Lạm dụng quá nhiều danh từ cũng làm câu nặng nề.
+
+  - key: en:item:make-a-decision
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: make a decision
+      ipa: /meɪk ə dɪˈsɪʒn/
+      pos: collocation
+    back:
+      meaning:
+        vi: đưa ra quyết định
+      examples:
+        - target: The board will make a final decision next week.
+          translation:
+            vi: Hội đồng quản trị sẽ đưa ra quyết định cuối cùng vào tuần sau.
+      confusion:
+        vi: Người Việt hay nói do a decision vì "làm" - sai. Tiếng Anh Anh cũng dùng take a decision, nhưng make a decision phổ biến hơn.
+
+  - key: en:item:implementation
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: implementation
+      ipa: /ˌɪmplɪmenˈteɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc triển khai, thực hiện (kế hoạch, chính sách, hệ thống)
+      examples:
+        - target: Successful implementation requires adequate funding.
+          translation:
+            vi: Triển khai thành công đòi hỏi nguồn kinh phí đủ.
+      pronunciation_note:
+        vi: Trọng âm chính ở -TA-; động từ implement có trọng âm ở âm đầu IM-ple-ment.
+      confusion:
+        vi: Implement là động từ (implement a plan), implementation là danh từ (the implementation of a plan); đừng nói the implement of.
+
+  - key: en:item:research-uncountable
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: research (danh từ không đếm được)
+      ipa: UK /rɪˈsɜːtʃ/ · US /ˈriːsɜːrtʃ/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: nghiên cứu (nói chung). Muốn đếm, dùng a study, a research project, a piece of research.
+      examples:
+        - target: Recent research shows that bilingual children adapt more easily.
+          translation:
+            vi: Các nghiên cứu gần đây cho thấy trẻ song ngữ thích nghi dễ hơn.
+      confusion:
+        vi: Không nói a research hay researches (dù tiếng Việt nói "các nghiên cứu"). Dùng research shows, much research, studies show.
+
+  - key: en:item:conduct-research
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: conduct research (into / on)
+      ipa: UK /kənˈdʌkt rɪˈsɜːtʃ/ · US /kənˈdʌkt ˈriːsɜːrtʃ/
+      pos: collocation
+    back:
+      meaning:
+        vi: tiến hành nghiên cứu
+      examples:
+        - target: The team conducted research into urban air pollution.
+          translation:
+            vi: Nhóm đã tiến hành nghiên cứu về ô nhiễm không khí đô thị.
+      pronunciation_note:
+        vi: Conduct động từ nhấn âm sau (con-DUCT); danh từ conduct (hạnh kiểm) nhấn âm đầu.
+      confusion:
+        vi: Nói conduct/carry out/do research, không nói make research. Giới từ đi kèm là into hoặc on, không dùng about trong văn học thuật.
+
+  - key: en:item:draw-a-conclusion
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: draw a conclusion (from)
+      ipa: /drɔː ə kənˈkluːʒn/
+      pos: collocation
+    back:
+      meaning:
+        vi: rút ra kết luận
+      examples:
+        - target: It is too early to draw any firm conclusions from the data.
+          translation:
+            vi: Còn quá sớm để rút ra kết luận chắc chắn nào từ dữ liệu.
+      confusion:
+        vi: Tiếng Việt "rút ra" khiến người học nói take out a conclusion - sai. Dùng draw hoặc reach a conclusion.
+
+  - key: en:item:address-an-issue
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: address an issue
+      ipa: /əˈdres ən ˈɪʃuː/
+      pos: collocation
+    back:
+      meaning:
+        vi: giải quyết, xử lý một vấn đề (đối mặt và tìm cách xử lý)
+      examples:
+        - target: The report fails to address the issue of rising housing costs.
+          translation:
+            vi: Bản báo cáo không giải quyết được vấn đề chi phí nhà ở tăng cao.
+      pronunciation_note:
+        vi: Động từ address nhấn âm sau (ad-DRESS); danh từ "địa chỉ" ở Mỹ thường nhấn âm đầu.
+      confusion:
+        vi: Address là ngoại động từ, không cần giới từ - address the issue, không phải address to the issue.
+
+  - key: en:item:significant-increase
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: a significant increase in…
+      ipa: /ə sɪɡˈnɪfɪkənt ˈɪŋkriːs ɪn/
+      pos: collocation
+    back:
+      meaning:
+        vi: sự gia tăng đáng kể về…
+      examples:
+        - target: There has been a significant increase in online sales.
+          translation:
+            vi: Doanh số bán hàng trực tuyến đã tăng đáng kể.
+      pronunciation_note:
+        vi: Danh từ increase nhấn âm đầu (IN-crease); động từ increase nhấn âm sau (in-CREASE).
+      confusion:
+        vi: Sau increase (danh từ) dùng in để chỉ cái tăng (an increase in sales) và of để chỉ mức tăng (an increase of 10%).
+
+  - key: en:item:carry-out-an-analysis
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: carry out an analysis (of)
+      ipa: /ˌkæri ˈaʊt ən əˈnæləsɪs/
+      pos: collocation
+    back:
+      meaning:
+        vi: tiến hành phân tích
+      examples:
+        - target: We carried out a detailed analysis of customer complaints.
+          translation:
+            vi: Chúng tôi đã tiến hành phân tích chi tiết các khiếu nại của khách hàng.
+      confusion:
+        vi: Số nhiều của analysis là analyses /əˈnæləsiːz/. Nói carry out / conduct an analysis, không nói make an analysis trong văn học thuật.
+
+  - key: en:item:reach-an-agreement
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: reach an agreement
+      ipa: /riːtʃ ən əˈɡriːmənt/
+      pos: collocation
+    back:
+      meaning:
+        vi: đạt được thoả thuận
+      examples:
+        - target: The two companies finally reached an agreement on pricing.
+          translation:
+            vi: Hai công ty cuối cùng đã đạt được thoả thuận về giá.
+      confusion:
+        vi: Không nói get an agreement hay arrive an agreement; dùng reach an agreement hoặc come to an agreement.
+
+  - key: en:item:take-into-account
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: take something into account
+      ipa: /teɪk ˈsʌmθɪŋ ˈɪntuː əˈkaʊnt/
+      pos: collocation
+    back:
+      meaning:
+        vi: tính đến, cân nhắc đến
+      examples:
+        - target: The study did not take regional differences into account.
+          translation:
+            vi: Nghiên cứu này không tính đến sự khác biệt giữa các vùng.
+      confusion:
+        vi: Khi tân ngữ dài, đưa nó ra sau - take into account the fact that…. Không nói take account into.
+
+  - key: en:item:pose-a-challenge
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: pose a challenge / a threat / a risk
+      ipa: UK /pəʊz ə ˈtʃælɪndʒ/ · US /poʊz ə ˈtʃælɪndʒ/
+      pos: collocation
+    back:
+      meaning:
+        vi: đặt ra thách thức / gây ra mối đe doạ / rủi ro
+      examples:
+        - target: An ageing population poses a serious challenge to the healthcare system.
+          translation:
+            vi: Dân số già hoá đặt ra thách thức nghiêm trọng cho hệ thống y tế.
+      confusion:
+        vi: Pose a challenge to somebody/something dùng to; trang trọng hơn create a problem for.
+
+  # ---------------- Bài 3: câu chẻ & đảo ngữ ----------------
+  - key: en:item:what-cleft
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, speaking, writing]
+    front:
+      text: "What + S + V + is/was + …"
+      pos: câu chẻ với what
+    back:
+      meaning:
+        vi: Nhấn mạnh điều được nói đến bằng cách đưa nó ra sau is/was - What we need is more time. (Cái chúng ta cần là thêm thời gian.)
+      examples:
+        - target: What concerns me is the lack of transparency.
+          translation:
+            vi: Điều khiến tôi lo ngại là sự thiếu minh bạch.
+        - target: What we should do is review the contract again.
+          translation:
+            vi: Điều chúng ta nên làm là xem lại hợp đồng.
+      confusion:
+        vi: Mệnh đề what… đóng vai chủ ngữ số ít nên động từ chính là is/was. Khi phần nhấn mạnh là hành động, dùng do + V nguyên mẫu - What I did was (to) call the client.
+
+  - key: en:item:it-cleft
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "It is/was + X + that/who…"
+      pos: câu chẻ với it
+    back:
+      meaning:
+        vi: Nhấn mạnh một thành phần (người, vật, thời gian, lý do) - It was the CEO who approved the budget. (Chính CEO là người đã duyệt ngân sách.)
+      examples:
+        - target: It was only in 2019 that the problem was identified.
+          translation:
+            vi: Mãi đến năm 2019 vấn đề mới được phát hiện.
+      confusion:
+        vi: Tương đương "Chính… mà…" trong tiếng Việt. Thì của be theo ngữ cảnh (It is / It was), còn that không bỏ được khi nhấn mạnh chủ ngữ.
+
+  - key: en:item:inversion-not-only
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "Not only + trợ động từ + S + V…, but … also …"
+      pos: đảo ngữ
+    back:
+      meaning:
+        vi: Không những… mà còn… (nhấn mạnh, trang trọng). Khi Not only đứng đầu câu, phải đảo trợ động từ lên trước chủ ngữ.
+      examples:
+        - target: Not only is the plan expensive, but it is also risky.
+          translation:
+            vi: Kế hoạch này không những tốn kém mà còn rủi ro.
+        - target: Not only did she finish the report, but she also presented it.
+          translation:
+            vi: Cô ấy không chỉ hoàn thành báo cáo mà còn trình bày nó.
+      confusion:
+        vi: Lỗi rất hay gặp - Not only he is… (giữ trật tự như tiếng Việt). Phải là Not only is he…; với động từ thường thì mượn do/does/did - Not only did he…
+
+  - key: en:item:inversion-rarely
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "Rarely / Seldom / Never + trợ động từ + S + V"
+      pos: đảo ngữ
+    back:
+      meaning:
+        vi: Hiếm khi / Chưa bao giờ… (nhấn mạnh). Trạng từ phủ định đứng đầu câu kéo theo đảo ngữ.
+      examples:
+        - target: Rarely have I seen such a well-organised event.
+          translation:
+            vi: Hiếm khi tôi được thấy một sự kiện được tổ chức chu đáo như vậy.
+      confusion:
+        vi: Nếu rarely không đứng đầu câu thì không đảo - I have rarely seen…. Chỉ đảo trợ động từ (have, do, can…), không đảo động từ chính.
+
+  - key: en:item:under-no-circumstances
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: Under no circumstances + trợ động từ + S + V
+      ipa: UK /ˌʌndə nəʊ ˈsɜːkəmstænsɪz/ · US /ˌʌndər noʊ ˈsɜːrkəmstænsɪz/
+      pos: đảo ngữ (cụm cố định)
+    back:
+      meaning:
+        vi: Trong bất kỳ trường hợp nào cũng không… (cấm đoán mạnh, hay gặp trong quy định, thông báo)
+      examples:
+        - target: Under no circumstances should passwords be shared with colleagues.
+          translation:
+            vi: Trong mọi trường hợp, tuyệt đối không được chia sẻ mật khẩu cho đồng nghiệp.
+      confusion:
+        vi: Circumstances luôn ở số nhiều trong cụm này. Tương tự - On no account / At no time + đảo ngữ.
+
+  - key: en:item:inversion-conditional
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "Had I known… / Should you… / Were I…"
+      pos: đảo ngữ câu điều kiện
+    back:
+      meaning:
+        vi: Câu điều kiện bỏ if và đảo trợ động từ lên đầu, trang trọng hơn - Had I known = If I had known (Nếu tôi biết trước).
+      examples:
+        - target: Had I known about the delay, I would have rescheduled the meeting.
+          translation:
+            vi: Nếu biết trước việc chậm trễ, tôi đã dời lịch cuộc họp.
+        - target: Should you have any questions, please do not hesitate to contact us.
+          translation:
+            vi: Nếu bạn có bất kỳ câu hỏi nào, xin đừng ngần ngại liên hệ với chúng tôi.
+      confusion:
+        vi: Khi đã đảo thì không dùng if nữa (If had I known là sai). Phủ định đặt not sau chủ ngữ - Had I not known…, không viết Hadn't I known.
+
+  - key: en:item:no-sooner-than
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "No sooner had + S + V3 … than …"
+      pos: đảo ngữ
+    back:
+      meaning:
+        vi: Vừa mới… thì đã… (hai việc xảy ra liền nhau)
+      examples:
+        - target: No sooner had the meeting started than the power went out.
+          translation:
+            vi: Cuộc họp vừa bắt đầu thì mất điện.
+      confusion:
+        vi: No sooner đi với than, còn Hardly/Scarcely đi với when. Đừng trộn thành No sooner… when.
+
+  - key: en:item:little-did
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: "Little did + S + know / realise…"
+      pos: đảo ngữ
+    back:
+      meaning:
+        vi: (Lúc đó) hoàn toàn không hề biết / nhận ra rằng… - hay dùng trong kể chuyện.
+      examples:
+        - target: Little did we realise how difficult the merger would be.
+          translation:
+            vi: Chúng tôi hoàn toàn không ngờ việc sáp nhập lại khó khăn đến thế.
+      confusion:
+        vi: Little ở đây mang nghĩa phủ định (hầu như không), nên đảo did lên trước chủ ngữ; động từ sau đó ở nguyên mẫu - Little did I know, không phải Little did I knew.
+
+  - key: en:item:only-when-inversion
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "Only when / Only after … + trợ động từ + S + V"
+      pos: đảo ngữ
+    back:
+      meaning:
+        vi: Chỉ khi / Chỉ sau khi… thì mới… Đảo ngữ nằm ở mệnh đề chính, không phải ở mệnh đề when/after.
+      examples:
+        - target: Only when the data had been checked did we publish the report.
+          translation:
+            vi: Chỉ khi dữ liệu đã được kiểm tra, chúng tôi mới công bố báo cáo.
+      confusion:
+        vi: Người học hay đảo nhầm ở vế đầu (Only when had the data…). Vế only when giữ trật tự bình thường; vế sau mới đảo.
+
+  - key: en:item:the-reason-why
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: The reason (why)… is that…
+      ipa: /ðə ˈriːzn waɪ … ɪz ðət/
+      pos: cấu trúc nhấn mạnh
+    back:
+      meaning:
+        vi: Lý do… là vì… (nhấn mạnh nguyên nhân, gần với câu chẻ)
+      examples:
+        - target: The reason why the project failed is that it lacked clear leadership.
+          translation:
+            vi: Lý do dự án thất bại là vì thiếu sự lãnh đạo rõ ràng.
+      confusion:
+        vi: Sau The reason… is dùng that, không dùng because (The reason is because… bị coi là thừa trong văn trang trọng).
+
+  # ---------------- Bài 4: từ nối & viết trang trọng ----------------
+  - key: en:item:although-without-but
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "Although / Though + mệnh đề, mệnh đề (không có but)"
+      pos: liên từ nhượng bộ
+    back:
+      meaning:
+        vi: Mặc dù… (nhưng)… - tiếng Anh chỉ dùng một liên từ, hoặc although hoặc but.
+      examples:
+        - target: Although the proposal is costly, it offers long-term benefits.
+          translation:
+            vi: Mặc dù đề xuất tốn kém nhưng nó mang lại lợi ích lâu dài.
+      confusion:
+        vi: Tiếng Việt nói "Mặc dù… nhưng…" nên người học hay viết Although…, but… - sai. Bỏ một trong hai - Although X, Y hoặc X, but Y.
+
+  - key: en:item:despite-in-spite-of
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: "despite / in spite of + danh từ / V-ing"
+      ipa: /dɪˈspaɪt/ · /ɪn ˈspaɪt əv/
+      pos: giới từ nhượng bộ
+    back:
+      meaning:
+        vi: mặc dù, bất chấp (theo sau là danh từ hoặc V-ing, không phải mệnh đề)
+      examples:
+        - target: Despite the delays, the project was completed within budget.
+          translation:
+            vi: Mặc dù bị chậm trễ, dự án vẫn hoàn thành trong ngân sách.
+      confusion:
+        vi: Không có despite of - chỉ despite hoặc in spite of. Muốn theo sau là mệnh đề thì dùng despite the fact that….
+
+  - key: en:item:notwithstanding
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: notwithstanding
+      ipa: /ˌnɒtwɪθˈstændɪŋ/ · US /ˌnɑːtwɪθˈstændɪŋ/
+      pos: giới từ / trạng từ
+    back:
+      meaning:
+        vi: mặc dù, bất chấp (rất trang trọng, hay gặp trong văn bản pháp lý, báo cáo)
+      examples:
+        - target: Notwithstanding these limitations, the study offers valuable insights.
+          translation:
+            vi: Mặc dù có những hạn chế này, nghiên cứu vẫn mang lại những hiểu biết giá trị.
+      confusion:
+        vi: Notwithstanding có thể đứng trước hoặc sau danh từ (these limitations notwithstanding). Không thêm of phía sau.
+
+  - key: en:item:albeit
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: albeit
+      ipa: /ɔːlˈbiːɪt/
+      pos: liên từ
+    back:
+      meaning:
+        vi: mặc dù, tuy (theo sau là tính từ, trạng từ hoặc cụm từ ngắn, không phải mệnh đề đầy đủ)
+      examples:
+        - target: The economy is recovering, albeit slowly.
+          translation:
+            vi: Nền kinh tế đang phục hồi, tuy còn chậm.
+      pronunciation_note:
+        vi: Đọc ba âm al-BEE-it, trọng âm ở giữa.
+      confusion:
+        vi: Albeit + mệnh đề (albeit it is slow) là sai; muốn dùng mệnh đề thì chuyển sang although.
+
+  - key: en:item:consequently
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: consequently
+      ipa: UK /ˈkɒnsɪkwəntli/ · US /ˈkɑːnsəkwentli/
+      pos: trạng từ nối
+    back:
+      meaning:
+        vi: do đó, vì vậy (kết quả)
+      examples:
+        - target: The supplier failed to deliver on time. Consequently, production was delayed.
+          translation:
+            vi: Nhà cung cấp không giao hàng đúng hạn. Do đó, việc sản xuất bị chậm trễ.
+      confusion:
+        vi: Consequently là trạng từ, không nối hai mệnh đề bằng dấu phẩy như so; dùng dấu chấm hoặc chấm phẩy trước nó, hoặc thêm and.
+
+  - key: en:item:thereby
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: thereby + V-ing
+      ipa: UK /ˌðeəˈbaɪ/ · US /ˌðerˈbaɪ/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: nhờ đó, qua đó (kết quả trực tiếp của hành động vừa nêu)
+      examples:
+        - target: The company automated the process, thereby reducing errors.
+          translation:
+            vi: Công ty đã tự động hoá quy trình, nhờ đó giảm sai sót.
+      confusion:
+        vi: Sau thereby thường là V-ing (thereby reducing), không phải mệnh đề có chủ ngữ. Thereby khác therefore (vì vậy, mở đầu mệnh đề mới).
+
+  - key: en:item:register-shift
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: "get → obtain, ask for → request, find out → determine, need → require"
+      pos: chuyển văn phong
+    back:
+      meaning:
+        vi: Đổi cụm động từ và từ thân mật sang từ trang trọng (thường gốc Latin) khi viết email công việc, báo cáo.
+      examples:
+        - target: We need more information. → Further information is required.
+          translation:
+            vi: Chúng tôi cần thêm thông tin. → Cần có thêm thông tin.
+        - target: Can you send me the file? → Could you please send me the file?
+          translation:
+            vi: Gửi mình file được không? → Anh/chị vui lòng gửi giúp tôi tệp được không?
+      confusion:
+        vi: Văn trang trọng tránh viết tắt (don't → do not), tránh thán từ, tránh "very" lặp lại. Nhưng không cần biến mọi từ thành từ khó - rõ ràng vẫn quan trọng nhất.
+
+  - key: en:item:i-am-writing-to
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: I am writing to + V…
+      ipa: /aɪ əm ˈraɪtɪŋ tə/
+      pos: cụm mở đầu email
+    back:
+      meaning:
+        vi: Tôi viết thư này để… (nêu mục đích email trang trọng)
+      examples:
+        - target: I am writing to enquire about the position advertised on your website.
+          translation:
+            vi: Tôi viết thư này để hỏi về vị trí được đăng trên trang web của quý công ty.
+      confusion:
+        vi: Đừng mở đầu email trang trọng bằng I write this email to… hay My name is… để nêu mục đích; dùng I am writing to / with regard to….
+
+  - key: en:item:please-find-attached
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: Please find attached…
+      ipa: /pliːz faɪnd əˈtætʃt/
+      pos: cụm email
+    back:
+      meaning:
+        vi: Xin gửi kèm theo… (thông báo có tệp đính kèm)
+      examples:
+        - target: Please find attached the revised budget for your review.
+          translation:
+            vi: Xin gửi kèm bản ngân sách đã chỉnh sửa để anh/chị xem xét.
+      confusion:
+        vi: Trật tự cố định là Please find attached + tân ngữ; cách hiện đại, bớt cứng hơn là I have attached… hoặc I attach….
+
+  - key: en:item:further-to
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: Further to…
+      ipa: UK /ˈfɜːðə tə/ · US /ˈfɜːrðər tə/
+      pos: cụm email
+    back:
+      meaning:
+        vi: Tiếp theo (cuộc trao đổi / email) trước…
+      examples:
+        - target: Further to our telephone conversation, I am pleased to confirm your booking.
+          translation:
+            vi: Tiếp theo cuộc trao đổi qua điện thoại, tôi xin xác nhận đặt chỗ của anh/chị.
+      confusion:
+        vi: Further to + danh từ (our meeting, your email), không theo sau là mệnh đề. Ít trang trọng hơn thì dùng Following….
+
+  - key: en:item:in-summary
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: In summary, … / To summarise, …
+      ipa: /ɪn ˈsʌməri/ · UK /tə ˈsʌməraɪz/
+      pos: cụm tổng kết
+    back:
+      meaning:
+        vi: Tóm lại, … (mở đầu phần tổng kết báo cáo)
+      examples:
+        - target: In summary, the pilot scheme exceeded its main targets.
+          translation:
+            vi: Tóm lại, chương trình thí điểm đã vượt các mục tiêu chính.
+      confusion:
+        vi: Không viết In summarise hay To summary. Anh Anh viết summarise, Anh Mỹ viết summarize - giữ thống nhất trong một văn bản.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:in-light-of
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, reading]
+    front:
+      text: in light of…
+      ipa: /ɪn ˈlaɪt əv/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: xét đến, căn cứ vào (thông tin mới)
+      examples:
+        - target: In light of recent feedback, we have revised our proposal.
+          translation:
+            vi: Căn cứ vào các phản hồi gần đây, chúng tôi đã điều chỉnh đề xuất.
+      confusion:
+        vi: Anh Anh còn dùng in the light of; cả hai đều đúng. Không nhầm với in the lights of.
+
+  - key: en:item:with-regard-to
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: with regard to…
+      ipa: UK /wɪð rɪˈɡɑːd tə/ · US /wɪð rɪˈɡɑːrd tə/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: về việc, liên quan đến (trang trọng)
+      examples:
+        - target: With regard to your request, we are able to offer a full refund.
+          translation:
+            vi: Về yêu cầu của anh/chị, chúng tôi có thể hoàn tiền toàn bộ.
+      confusion:
+        vi: Viết with regard to (không có s), nhưng as regards và regarding thì đúng. With regards to bị coi là lỗi trong văn trang trọng.

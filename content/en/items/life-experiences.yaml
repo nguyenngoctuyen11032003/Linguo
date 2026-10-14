@@ -1,0 +1,940 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Trải nghiệm cuộc sống" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Have you ever…? ----------------
+  - key: en:item:present-perfect-experience
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: have/has + past participle (kinh nghiệm)
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Thì hiện tại hoàn thành dùng để kể một trải nghiệm đã có trong đời, không nói rõ lúc nào.
+      examples:
+        - target: I have visited Japan twice.
+          translation:
+            vi: Mình đã đến Nhật hai lần rồi.
+        - target: She has climbed Fansipan.
+          translation:
+            vi: Cô ấy từng leo Fansipan.
+      pronunciation_note:
+        vi: Khi nói, have thường rút gọn thành 've (/v/) và has thành 's (/z/ hoặc /s/) - I've, she's.
+      confusion:
+        vi: Chữ "đã" trong tiếng Việt không luôn là quá khứ đơn. Nếu bạn kể trải nghiệm mà không nói thời điểm, tiếng Anh dùng have/has + V3.
+
+  - key: en:item:ever-never-experience
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Have you ever…? / I've never…
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Ever (đã bao giờ) dùng trong câu hỏi về trải nghiệm; never (chưa bao giờ) dùng trong câu phủ định.
+      examples:
+        - target: Have you ever eaten durian?
+          translation:
+            vi: Bạn đã bao giờ ăn sầu riêng chưa?
+        - target: I've never been to Europe.
+          translation:
+            vi: Mình chưa bao giờ đến châu Âu.
+      pronunciation_note:
+        vi: Ever đọc UK /ˈevə/ · US /ˈevɚ/; never đọc UK /ˈnevə/ · US /ˈnevɚ/. Trọng âm rơi vào âm đầu.
+      confusion:
+        vi: Hỏi trải nghiệm dùng Have you ever…?, không dùng Did you ever…?. Never đã mang nghĩa phủ định nên không thêm not - I've never seen it, không nói I haven't never seen it.
+
+  - key: en:item:irregular-past-participles
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: be → been, see → seen, eat → eaten, go → gone, do → done, fly → flown, take → taken, write → written
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Quá khứ phân từ (V3) bất quy tắc thường gặp; nhiều động từ có V2 và V3 khác nhau.
+      examples:
+        - target: I saw a whale yesterday. I've never seen one before.
+          translation:
+            vi: Hôm qua mình thấy một con cá voi. Trước đó mình chưa bao giờ thấy.
+        - target: Have you ever flown in a helicopter?
+          translation:
+            vi: Bạn đã bao giờ đi trực thăng chưa?
+      pronunciation_note:
+        vi: Been đọc UK /biːn/ · US /bɪn/. Seen /siːn/, eaten /ˈiːtn/, flown UK /fləʊn/ · US /floʊn/.
+      confusion:
+        vi: Đừng dùng V2 sau have - I have seen, không phải I have saw. Với động từ có quy tắc, V2 và V3 giống nhau (visited, tried).
+
+  - key: en:item:been-vs-gone
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: have been to / have gone to
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Have been to = đã từng đến (và đã về); have gone to = đã đi đến đó và hiện vẫn đang ở đó hoặc đang trên đường.
+      examples:
+        - target: I've been to Da Lat three times.
+          translation:
+            vi: Mình đã đến Đà Lạt ba lần.
+        - target: Lan isn't here. She's gone to the airport.
+          translation:
+            vi: Lan không có ở đây. Cô ấy ra sân bay rồi.
+      confusion:
+        vi: Kể trải nghiệm du lịch thì dùng been to. Câu "I've gone to Paris" nghe như bạn vẫn đang ở Paris, nên rất lạ khi bạn đang nói chuyện ở Việt Nam.
+
+  - key: en:item:go-abroad
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: go abroad
+      ipa: UK /ɡəʊ əˈbrɔːd/ · US /ɡoʊ əˈbrɑːd/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đi nước ngoài
+      examples:
+        - target: Have you ever been abroad?
+          translation:
+            vi: Bạn đã bao giờ đi nước ngoài chưa?
+      pronunciation_note:
+        vi: Trọng âm của abroad rơi vào âm thứ hai - a-BROAD.
+      confusion:
+        vi: Abroad là trạng từ nên không có to phía trước - go abroad, không nói go to abroad.
+
+  - key: en:item:once-twice-times
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: once / twice / three times
+      ipa: /wʌns/ · /twaɪs/ · /θriː taɪmz/
+      pos: trạng từ chỉ số lần
+    back:
+      meaning:
+        vi: một lần / hai lần / ba lần (từ ba lần trở lên dùng số + times)
+      examples:
+        - target: I've been to Hue once, but my sister has been there many times.
+          translation:
+            vi: Mình đến Huế một lần, còn chị mình đến đó nhiều lần rồi.
+      pronunciation_note:
+        vi: Once đọc /wʌns/, bắt đầu bằng âm /w/ dù viết bằng chữ o.
+      confusion:
+        vi: Thường nói once, twice thay vì one time, two times. Số lần thường đứng ở cuối câu.
+
+  - key: en:item:unforgettable
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: unforgettable
+      ipa: UK /ˌʌnfəˈɡetəbl/ · US /ˌʌnfɚˈɡetəbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể nào quên, đáng nhớ
+      examples:
+        - target: Watching the sunrise on the mountain was an unforgettable experience.
+          translation:
+            vi: Ngắm bình minh trên núi là một trải nghiệm khó quên.
+      pronunciation_note:
+        vi: Trọng âm chính rơi vào get - un-for-GET-ta-ble.
+      confusion:
+        vi: Un- mang nghĩa phủ định, -able nghĩa là "có thể", giống cấu tạo "không thể quên" của tiếng Việt.
+
+  - key: en:item:try-something-new
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: try something new
+      ipa: UK /traɪ ˈsʌmθɪŋ njuː/ · US /traɪ ˈsʌmθɪŋ nuː/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: thử (ăn, làm) một điều mới
+      examples:
+        - target: I love travelling because I can try something new every day.
+          translation:
+            vi: Mình thích đi du lịch vì ngày nào cũng được thử điều mới.
+        - target: Have you ever tried snails?
+          translation:
+            vi: Bạn đã bao giờ ăn thử ốc chưa?
+      confusion:
+        vi: Try + món ăn nghĩa là ăn thử - try pho. Không cần thêm eat - nói try snails, không nói try eat snails.
+
+  - key: en:item:climb-a-mountain
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: climb a mountain
+      ipa: UK /klaɪm ə ˈmaʊntɪn/ · US /klaɪm ə ˈmaʊntn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: leo núi
+      examples:
+        - target: My father has climbed a mountain in Nepal.
+          translation:
+            vi: Bố mình đã từng leo một ngọn núi ở Nepal.
+      pronunciation_note:
+        vi: Chữ b trong climb là âm câm - đọc /klaɪm/.
+      confusion:
+        vi: Leo núi như một môn thể thao lâu dài là go hiking hoặc go climbing; climb a mountain là leo một ngọn núi cụ thể.
+
+  - key: en:item:in-my-life
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: in my life
+      ipa: /ɪn maɪ laɪf/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: trong đời mình (từ trước đến nay)
+      examples:
+        - target: I've never seen snow in my life.
+          translation:
+            vi: Cả đời mình chưa bao giờ thấy tuyết.
+      confusion:
+        vi: In my life chỉ khoảng thời gian chưa kết thúc (bạn vẫn đang sống), nên đi với hiện tại hoàn thành, không đi với quá khứ đơn.
+
+  - key: en:item:experience-noun
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: experience
+      ipa: UK /ɪkˈspɪəriəns/ · US /ɪkˈspɪriəns/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trải nghiệm (đếm được, một sự việc); kinh nghiệm (không đếm được)
+      examples:
+        - target: Living with a local family was an amazing experience.
+          translation:
+            vi: Sống cùng một gia đình người bản xứ là một trải nghiệm tuyệt vời.
+      pronunciation_note:
+        vi: Trọng âm rơi vào âm thứ hai - ex-PE-ri-ence.
+      confusion:
+        vi: Khi nói về một sự việc đã trải qua thì dùng an experience hoặc experiences. Khi nói về kinh nghiệm chung thì không có a.
+
+  # ---------------- Bài 2: Present perfect vs past simple ----------------
+  - key: en:item:pp-vs-past-simple
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: present perfect vs past simple
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Hiện tại hoàn thành nói về trải nghiệm, không nêu thời điểm; quá khứ đơn nói về sự việc ở một thời điểm đã kết thúc.
+      examples:
+        - target: I've been to Japan. I went there last year.
+          translation:
+            vi: Mình từng đến Nhật. Mình đi hồi năm ngoái.
+      confusion:
+        vi: Người Việt hay dịch "đã" thành quá khứ đơn trong mọi trường hợp. Câu đầu tiên giới thiệu trải nghiệm (present perfect), các câu kể chi tiết sau đó dùng quá khứ đơn.
+
+  - key: en:item:finished-time-expressions
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: yesterday, last year, in 2019, two years ago, when I was a child
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Các mốc thời gian đã kết thúc - luôn đi với quá khứ đơn, không đi với have/has + V3.
+      examples:
+        - target: We went to Phu Quoc two years ago.
+          translation:
+            vi: Chúng mình đi Phú Quốc cách đây hai năm.
+      confusion:
+        vi: Không nói I have visited Japan last year. Khi đã có mốc như last year hay ago, bạn phải dùng quá khứ đơn - I visited Japan last year.
+
+  - key: en:item:so-far
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: so far
+      ipa: UK /səʊ ˈfɑː/ · US /soʊ ˈfɑːr/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: cho đến nay, tính đến giờ
+      examples:
+        - target: I've visited ten provinces so far.
+          translation:
+            vi: Tính đến giờ mình đã đi được mười tỉnh.
+      confusion:
+        vi: So far nói về khoảng thời gian kéo dài đến hiện tại, nên đi với hiện tại hoàn thành. Câu có so far thường ngầm ý "và còn tiếp".
+
+  - key: en:item:recently
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: recently
+      ipa: /ˈriːsntli/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: gần đây, mới đây
+      examples:
+        - target: Have you been anywhere interesting recently?
+          translation:
+            vi: Gần đây bạn có đi đâu thú vị không?
+      pronunciation_note:
+        vi: Trọng âm ở âm đầu - RE-cent-ly; âm giữa đọc rất nhẹ.
+      confusion:
+        vi: Recently thường đi với hiện tại hoàn thành (I've recently moved). Có thể dùng với quá khứ đơn khi kể một việc cụ thể (I recently went to Hue).
+
+  - key: en:item:memory
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: memory
+      ipa: /ˈmeməri/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỷ niệm; trí nhớ
+      examples:
+        - target: That trip is one of my best memories.
+          translation:
+            vi: Chuyến đi đó là một trong những kỷ niệm đẹp nhất của mình.
+      confusion:
+        vi: Kỷ niệm (sự việc nhớ lại) là memory, số nhiều memories. Đồ lưu niệm mua khi du lịch là souvenir, không phải memory.
+
+  - key: en:item:trip-journey
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: trip / journey
+      ipa: /trɪp/ · UK /ˈdʒɜːni/ · US /ˈdʒɝːni/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trip là chuyến đi (gồm cả đi, ở, về); journey là quãng đường di chuyển từ nơi này đến nơi khác
+      examples:
+        - target: The trip to Sapa was great, but the journey there took nine hours.
+          translation:
+            vi: Chuyến đi Sapa rất tuyệt, nhưng đường đi lên đó mất chín tiếng.
+      confusion:
+        vi: Nói "chuyến du lịch" thường dùng trip - a business trip, a school trip. Travel thường là động từ hoặc danh từ không đếm được, nên không nói a travel.
+
+  - key: en:item:what-was-it-like
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: What was it like?
+      ipa: UK /wɒt wəz ɪt laɪk/ · US /wʌt wəz ɪt laɪk/
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: Nó như thế nào? (hỏi cảm nhận về một trải nghiệm)
+      examples:
+        - target: You've been to Korea? What was it like?
+          translation:
+            vi: Bạn đi Hàn rồi à? Ở đó thế nào?
+      confusion:
+        vi: Like ở đây là giới từ "giống như", không phải động từ "thích". Không trả lời bằng I liked; hãy miêu tả - It was beautiful but very cold.
+
+  - key: en:item:get-lost
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: get lost
+      ipa: UK /ɡet lɒst/ · US /ɡet lɔːst/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bị lạc đường
+      examples:
+        - target: We got lost in the old town on our first night.
+          translation:
+            vi: Đêm đầu tiên tụi mình bị lạc trong phố cổ.
+      confusion:
+        vi: Quá khứ là got lost, không nói was lost way. Câu "Get lost!" đứng một mình là câu đuổi người khác (cút đi), rất bất lịch sự.
+
+  - key: en:item:miss-a-flight
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: miss a flight
+      ipa: /mɪs ə flaɪt/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: lỡ chuyến bay
+      examples:
+        - target: Have you ever missed a flight?
+          translation:
+            vi: Bạn đã bao giờ bị lỡ chuyến bay chưa?
+      confusion:
+        vi: Miss còn có nghĩa là nhớ (người, nơi chốn) - I miss my hometown. Ngữ cảnh sẽ cho biết nghĩa nào.
+
+  - key: en:item:breathtaking
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: breathtaking
+      ipa: /ˈbreθteɪkɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đẹp ngỡ ngàng, đẹp đến nghẹt thở
+      examples:
+        - target: The view from the top of the mountain was breathtaking.
+          translation:
+            vi: Cảnh nhìn từ đỉnh núi đẹp ngỡ ngàng.
+      pronunciation_note:
+        vi: Breath đọc /breθ/ với âm /θ/ cuối (đặt lưỡi giữa hai hàm răng), khác với breathe /briːð/.
+      confusion:
+        vi: Breathtaking đã mang nghĩa "rất đẹp" nên không cần thêm very.
+
+  # ---------------- Bài 3: How long…? for / since ----------------
+  - key: en:item:for-since
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: for + khoảng thời gian / since + mốc thời gian
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: For đi với độ dài thời gian (for three years); since đi với điểm bắt đầu (since 2020, since I was ten).
+      examples:
+        - target: I've lived in Da Nang for five years.
+          translation:
+            vi: Mình sống ở Đà Nẵng được năm năm rồi.
+        - target: I've lived in Da Nang since 2021.
+          translation:
+            vi: Mình sống ở Đà Nẵng từ năm 2021.
+      confusion:
+        vi: Tiếng Việt nói "từ ba năm nay" nên người học hay viết since three years - sai. Three years là độ dài, phải dùng for.
+
+  - key: en:item:how-long-have-you
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: How long have you + V3…?
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Hỏi một việc đã kéo dài bao lâu tính đến hiện tại.
+      examples:
+        - target: How long have you known each other?
+          translation:
+            vi: Hai bạn quen nhau bao lâu rồi?
+      confusion:
+        vi: Nếu việc vẫn đang tiếp diễn thì không dùng How long do you…? hay How long are you…?. Dùng How long have you…? (hoặc How long have you been + V-ing?).
+
+  - key: en:item:present-perfect-continuous
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: have/has been + V-ing
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Thì hiện tại hoàn thành tiếp diễn - nhấn mạnh một hoạt động bắt đầu trong quá khứ và vẫn đang tiếp tục.
+      examples:
+        - target: I've been learning English for three years.
+          translation:
+            vi: Mình học tiếng Anh được ba năm rồi.
+        - target: She's been playing the piano since she was six.
+          translation:
+            vi: Cô ấy chơi piano từ năm sáu tuổi.
+      pronunciation_note:
+        vi: Been trong cấu trúc này thường đọc nhẹ /bɪn/ - I've been /aɪv bɪn/.
+      confusion:
+        vi: Không dùng hiện tại tiếp diễn cho việc kéo dài đến giờ - không nói I am learning English for three years. Tiếng Việt "đang học được ba năm" phải thành I've been learning.
+
+  - key: en:item:stative-verbs-perfect
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: know, have, like, love + present perfect (không thêm -ing)
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Động từ chỉ trạng thái (know, have = sở hữu, like, love, believe) dùng hiện tại hoàn thành đơn với for/since, không dùng dạng been + V-ing.
+      examples:
+        - target: I've known Minh since primary school.
+          translation:
+            vi: Mình quen Minh từ hồi tiểu học.
+        - target: We've had this dog for seven years.
+          translation:
+            vi: Nhà mình nuôi con chó này được bảy năm rồi.
+      confusion:
+        vi: Không nói I've been knowing her. Know chỉ trạng thái nên dùng I've known her.
+
+  - key: en:item:take-up
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: take up (a hobby)
+      ipa: /teɪk ʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bắt đầu tập, bắt đầu theo (một sở thích, môn thể thao)
+      examples:
+        - target: I took up yoga last year, and I've been doing it ever since.
+          translation:
+            vi: Mình bắt đầu tập yoga từ năm ngoái và tập đều từ đó đến giờ.
+      confusion:
+        vi: Quá khứ là took up, V3 là taken up. Ngược nghĩa với take up là give up (bỏ).
+
+  - key: en:item:be-into
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: be into something
+      ipa: /biː ˈɪntuː/
+      pos: cụm từ (thân mật)
+    back:
+      meaning:
+        vi: rất thích, mê (một sở thích)
+      examples:
+        - target: My brother is really into photography.
+          translation:
+            vi: Anh trai mình rất mê chụp ảnh.
+      confusion:
+        vi: Sau into là danh từ hoặc V-ing - I'm into cooking. Cách nói này thân mật, trong văn viết trang trọng hãy dùng be interested in.
+
+  - key: en:item:photography
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: photography
+      ipa: UK /fəˈtɒɡrəfi/ · US /fəˈtɑːɡrəfi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiếp ảnh, việc chụp ảnh
+      examples:
+        - target: She has been doing photography for two years.
+          translation:
+            vi: Cô ấy chụp ảnh được hai năm rồi.
+      pronunciation_note:
+        vi: Photograph nhấn âm đầu (PHO-to-graph), nhưng photography nhấn âm thứ hai (pho-TO-gra-phy).
+      confusion:
+        vi: Photography là môn/việc chụp ảnh; một tấm ảnh là a photo hoặc a photograph.
+
+  - key: en:item:musical-instrument
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: musical instrument
+      ipa: /ˈmjuːzɪkl ˈɪnstrəmənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhạc cụ
+      examples:
+        - target: Can you play a musical instrument?
+          translation:
+            vi: Bạn có chơi được nhạc cụ nào không?
+      pronunciation_note:
+        vi: Instrument nhấn âm đầu - IN-stru-ment.
+      confusion:
+        vi: Chơi nhạc cụ dùng play the + tên nhạc cụ - play the guitar, play the violin. Đừng quên the.
+
+  - key: en:item:practise
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: practise (UK) / practice (US)
+      ipa: /ˈpræktɪs/
+      pos: động từ
+    back:
+      meaning:
+        vi: luyện tập
+      examples:
+        - target: I've been practising the guitar every evening.
+          translation:
+            vi: Tối nào mình cũng tập đàn guitar.
+      confusion:
+        vi: Anh-Anh viết động từ là practise, danh từ là practice; Anh-Mỹ viết practice cho cả hai. Sau practise dùng V-ing - practise speaking.
+
+  - key: en:item:ever-since
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: ever since
+      ipa: UK /ˈevə sɪns/ · US /ˈevɚ sɪns/
+      pos: cụm trạng từ / liên từ
+    back:
+      meaning:
+        vi: kể từ đó đến nay; kể từ khi
+      examples:
+        - target: I went to Hoi An in 2019 and I've loved it ever since.
+          translation:
+            vi: Mình đến Hội An năm 2019 và từ đó đến giờ vẫn mê nơi này.
+      confusion:
+        vi: Ever since nhấn mạnh hơn since. Vế chứa ever since dùng hiện tại hoàn thành, còn vế nêu mốc bắt đầu dùng quá khứ đơn.
+
+  - key: en:item:improve
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: improve
+      ipa: /ɪmˈpruːv/
+      pos: động từ
+    back:
+      meaning:
+        vi: cải thiện, tiến bộ
+      examples:
+        - target: My cooking has improved a lot since I moved out.
+          translation:
+            vi: Từ khi ra ở riêng, tài nấu ăn của mình tiến bộ nhiều.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai - im-PROVE.
+      confusion:
+        vi: Improve có thể dùng một mình (My English has improved) hoặc có tân ngữ (I want to improve my English). Không nói improve better.
+
+  # ---------------- Bài 4: already / yet / just, used to ----------------
+  - key: en:item:already-yet-just
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: already / yet / just + present perfect
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Already = rồi (sớm hơn mong đợi); yet = chưa / chưa…à (câu phủ định và câu hỏi); just = vừa mới.
+      examples:
+        - target: I've already booked the tickets.
+          translation:
+            vi: Mình đặt vé rồi.
+        - target: Have you packed yet? - No, not yet.
+          translation:
+            vi: Bạn soạn đồ chưa? - Chưa.
+        - target: We've just arrived at the hotel.
+          translation:
+            vi: Tụi mình vừa mới đến khách sạn.
+      confusion:
+        vi: Already và just đứng giữa have và V3; yet đứng cuối câu. Không dùng yet trong câu khẳng định thường gặp.
+
+  - key: en:item:used-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: used to + V (nguyên mẫu)
+      ipa: /ˈjuːst tə/
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Đã từng (thói quen hoặc trạng thái trong quá khứ, nay không còn nữa).
+      examples:
+        - target: I used to live in the countryside.
+          translation:
+            vi: Hồi trước mình từng sống ở quê.
+      pronunciation_note:
+        vi: Used to đọc liền thành /ˈjuːstə/, chữ d gần như không nghe thấy. Vì vậy người học hay viết nhầm thành use to.
+      confusion:
+        vi: Câu khẳng định luôn viết used to, không phải use to. Đừng nhầm với be used to + V-ing (quen với việc gì).
+
+  - key: en:item:didnt-use-to
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: didn't use to / Did you use to…?
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: Dạng phủ định và câu hỏi của used to - sau did/didn't dùng use to (không có d).
+      examples:
+        - target: I didn't use to like vegetables.
+          translation:
+            vi: Hồi trước mình không thích ăn rau.
+        - target: Did you use to play outside a lot?
+          translation:
+            vi: Hồi trước bạn có hay chơi ngoài trời không?
+      confusion:
+        vi: Giống quy tắc did + động từ nguyên mẫu - did go, did use. Câu khẳng định thì ngược lại, luôn có d - I used to.
+
+  - key: en:item:not-any-more
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: not … any more (UK) / anymore (US)
+      ipa: UK /ˌeni ˈmɔː/ · US /ˌeni ˈmɔːr/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: không… nữa
+      examples:
+        - target: I used to smoke, but I don't smoke any more.
+          translation:
+            vi: Hồi trước mình hút thuốc, giờ không hút nữa.
+      confusion:
+        vi: Any more đứng cuối câu phủ định. Tiếng Anh-Anh hay viết rời any more, tiếng Anh-Mỹ viết liền anymore.
+
+  - key: en:item:no-longer
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: no longer
+      ipa: UK /nəʊ ˈlɒŋɡə/ · US /noʊ ˈlɔːŋɡɚ/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: không còn… nữa (trang trọng hơn not any more)
+      examples:
+        - target: She no longer lives in Hanoi.
+          translation:
+            vi: Cô ấy không còn sống ở Hà Nội nữa.
+      confusion:
+        vi: No longer đứng trước động từ thường và đã mang nghĩa phủ định, nên không thêm not hay don't.
+
+  - key: en:item:move-house
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: move (house)
+      ipa: /muːv haʊs/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chuyển nhà
+      examples:
+        - target: We've moved house three times since I was born.
+          translation:
+            vi: Từ khi mình ra đời, nhà mình đã chuyển ba lần.
+      confusion:
+        vi: Chuyển đến một nơi dùng move to - We moved to Can Tho. Move house là cách nói Anh-Anh; Anh-Mỹ thường chỉ nói move.
+
+  - key: en:item:grow-up
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: grow up
+      ipa: UK /ɡrəʊ ʌp/ · US /ɡroʊ ʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: lớn lên, trưởng thành
+      examples:
+        - target: I grew up in a small village near the sea.
+          translation:
+            vi: Mình lớn lên ở một làng nhỏ gần biển.
+      confusion:
+        vi: Quá khứ là grew up (bất quy tắc), V3 là grown up. Grow up không có tân ngữ; nuôi lớn một đứa trẻ là bring up.
+
+  - key: en:item:give-up
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: give up
+      ipa: /ɡɪv ʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: bỏ (một thói quen, hoạt động); bỏ cuộc
+      examples:
+        - target: My dad gave up coffee two years ago.
+          translation:
+            vi: Bố mình bỏ cà phê từ hai năm trước.
+      confusion:
+        vi: Sau give up dùng danh từ hoặc V-ing - give up smoking, không nói give up to smoke.
+
+  - key: en:item:lifestyle
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: lifestyle
+      ipa: /ˈlaɪfstaɪl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối sống
+      examples:
+        - target: My lifestyle has changed a lot since I moved to the city.
+          translation:
+            vi: Lối sống của mình thay đổi nhiều từ khi lên thành phố.
+      confusion:
+        vi: Lifestyle viết liền thành một từ. A healthy lifestyle là lối sống lành mạnh.
+
+  - key: en:item:countryside
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: the countryside
+      ipa: /ˈkʌntrisaɪd/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vùng quê, nông thôn
+      examples:
+        - target: My grandparents still live in the countryside.
+          translation:
+            vi: Ông bà mình vẫn sống ở quê.
+      pronunciation_note:
+        vi: Country đọc /ˈkʌntri/, âm đầu giống "câ", không đọc "cao".
+      confusion:
+        vi: Thường dùng the countryside và giới từ in. Quê (nơi mình sinh ra) là hometown, không phải countryside.
+
+  - key: en:item:nowadays
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: nowadays
+      ipa: /ˈnaʊədeɪz/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngày nay, dạo này (trái với ngày xưa)
+      examples:
+        - target: I used to walk to school, but nowadays children usually go by motorbike.
+          translation:
+            vi: Ngày xưa mình đi bộ đến trường, còn ngày nay trẻ con thường đi xe máy.
+      confusion:
+        vi: Nowadays đi với hiện tại đơn để so sánh với quá khứ (used to). Viết liền một từ.
+
+  # ---------------- Bài 5: Ôn tập ----------------
+  - key: en:item:catch-up
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: catch up (with somebody)
+      ipa: /kætʃ ʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: gặp/nói chuyện để cập nhật tin tức của nhau sau một thời gian
+      examples:
+        - target: Let's meet for coffee and catch up!
+          translation:
+            vi: Gặp nhau uống cà phê rồi kể chuyện cho nhau nghe nhé!
+      confusion:
+        vi: Catch up còn có nghĩa là đuổi kịp (ai đó, bài vở). Trong email thân mật, Let's catch up là lời rủ gặp lại.
+
+  - key: en:item:bucket-list
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bucket list
+      ipa: /ˈbʌkɪt lɪst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: danh sách những điều muốn làm trong đời
+      examples:
+        - target: Seeing the northern lights is on my bucket list.
+          translation:
+            vi: Ngắm cực quang nằm trong danh sách những điều mình muốn làm trong đời.
+      confusion:
+        vi: Thường đi với giới từ on - on my bucket list. Đây là cách nói thân mật, phổ biến trên blog và mạng xã hội.
+
+  - key: en:item:since-then
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: since then
+      ipa: /sɪns ðen/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: kể từ đó
+      examples:
+        - target: We met in 2020, and we've been best friends since then.
+          translation:
+            vi: Tụi mình gặp nhau năm 2020, và từ đó đến giờ là bạn thân.
+      confusion:
+        vi: Since then nối câu quá khứ đơn (mốc) với câu hiện tại hoàn thành (kéo dài đến nay), rất hay gặp trong bài kể chuyện.

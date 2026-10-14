@@ -1,0 +1,401 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:academic-professional-review
+order_index: 5
+level: c1
+title:
+  vi: Ôn tập - Email & tóm tắt báo cáo trang trọng
+objectives:
+  - vi: Đọc hiểu một email công việc và một đoạn tóm tắt báo cáo, nhận ra rào đón, danh từ hoá, đảo ngữ và từ nối.
+  - vi: Phối hợp các cấu trúc của cả unit khi viết câu trang trọng.
+  - vi: Tự sửa các lỗi hay gặp - Although… but…, despite of, Not only he is…, researches, lạm dụng very.
+estimated_minutes: 20
+skills: [reading, writing, grammar, vocabulary, listening]
+prerequisites: [en:lesson:formal-linking-writing]
+items:
+  - item: en:item:in-light-of
+  - item: en:item:with-regard-to
+  - item: en:item:it-would-appear-that
+    role: reuse
+  - item: en:item:findings-suggest
+    role: reuse
+  - item: en:item:intensifier-collocations
+    role: reuse
+  - item: en:item:nominalisation
+    role: reuse
+  - item: en:item:research-uncountable
+    role: reuse
+  - item: en:item:significant-increase
+    role: reuse
+  - item: en:item:inversion-not-only
+    role: reuse
+  - item: en:item:inversion-conditional
+    role: reuse
+  - item: en:item:under-no-circumstances
+    role: reuse
+  - item: en:item:although-without-but
+    role: reuse
+  - item: en:item:despite-in-spite-of
+    role: reuse
+  - item: en:item:whereas
+    role: reuse
+  - item: en:item:consequently
+    role: reuse
+  - item: en:item:please-find-attached
+    role: reuse
+  - item: en:item:in-summary
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đưa bạn vào hai văn bản thật - một email gửi đối tác và một đoạn tóm tắt báo cáo nội bộ. Bạn sẽ đọc, phân tích và tự viết lại câu bằng mọi cấu trúc đã học trong unit.
+  - type: explain
+    text:
+      vi: Một văn bản C1 tốt thường kết hợp nhiều công cụ cùng lúc - rào đón để nhận định đúng mức (the findings suggest), danh từ hoá để khách quan (the implementation of), từ nối để mạch lạc (whereas, consequently) và đôi khi đảo ngữ để nhấn mạnh (Not only…). Đừng dùng tất cả trong một câu; mỗi câu chỉ cần một hai điểm nhấn.
+  - type: explain
+    text:
+      vi: Hai cụm mới cho email và báo cáo - with regard to (về việc) và in light of (căn cứ vào). Cả hai theo sau là danh từ, giống further to.
+  - type: deep_explain
+    text:
+      vi: Khi tự kiểm tra bài viết, bạn có thể dò lần lượt - (1) có although và but cùng câu không, (2) có despite of không, (3) đảo ngữ sau Not only/Rarely đã đảo trợ động từ chưa, (4) research có bị thêm -s hay a không, (5) có bao nhiêu chữ very - thay bằng collocation phù hợp.
+  - type: example
+    target: "Dear Ms Taylor, Further to our call on Tuesday, I am writing with regard to the delayed shipment. It would appear that the goods were held at customs owing to a missing certificate. Please find attached a copy of the certificate. Should you require any further documents, please do not hesitate to contact me. Kind regards, Minh Tran"
+    target_lang: en
+    translation:
+      vi: "Kính gửi bà Taylor, Tiếp theo cuộc gọi hôm thứ Ba, tôi viết thư này về lô hàng bị chậm. Có vẻ như hàng đã bị giữ lại ở hải quan do thiếu một giấy chứng nhận. Xin gửi kèm bản sao giấy chứng nhận. Nếu bà cần thêm giấy tờ nào, xin đừng ngần ngại liên hệ với tôi. Trân trọng, Trần Minh"
+    note:
+      vi: Email kết hợp further to, with regard to, it would appear that (nêu vấn đề không đổ lỗi), please find attached và đảo ngữ Should you require.
+  - type: example
+    target: "In summary, the implementation of the new booking system led to a significant increase in online reservations, whereas phone bookings declined considerably. The findings suggest that customers value speed. Consequently, it is recommended that the phone line be retained only for complex enquiries."
+    target_lang: en
+    translation:
+      vi: "Tóm lại, việc triển khai hệ thống đặt chỗ mới đã giúp lượng đặt chỗ trực tuyến tăng đáng kể, trong khi đặt chỗ qua điện thoại giảm mạnh. Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, chúng tôi khuyến nghị chỉ giữ đường dây điện thoại cho các yêu cầu phức tạp."
+    note:
+      vi: Đoạn tóm tắt dùng danh từ hoá, collocation có số liệu, whereas để đối chiếu, rào đón bằng suggest và consequently để dẫn tới khuyến nghị.
+  - type: example
+    target: In light of these results, not only should we expand the online system, but we should also train staff to support it.
+    target_lang: en
+    translation:
+      vi: Căn cứ vào các kết quả này, chúng ta không chỉ nên mở rộng hệ thống trực tuyến mà còn nên đào tạo nhân viên hỗ trợ nó.
+    note:
+      vi: Not only đứng sau cụm in light of… vẫn ở đầu mệnh đề nên vẫn đảo - should we.
+  - type: common_mistake
+    wrong: Although many researches were conducted, but no clear conclusion was drawn.
+    right: Although a great deal of research was conducted, no clear conclusion was drawn.
+    target_lang: en
+    note:
+      vi: Hai lỗi cùng lúc - research không đếm được (không có -s, dùng a great deal of) và although không đi với but.
+  - type: common_mistake
+    wrong: With regards to your request, the results are very very good.
+    right: With regard to your request, the results are highly encouraging.
+    target_lang: en
+    note:
+      vi: Văn trang trọng viết with regard to (không có s). Lặp very nghe như văn nói; chọn collocation chính xác như highly encouraging.
+  - type: summary
+    points:
+      - vi: Email trang trọng - Further to…, I am writing with regard to…, It would appear that…, Please find attached…, Should you require….
+      - vi: Tóm tắt báo cáo - In summary, + danh từ hoá + collocation có số liệu + whereas/consequently + khuyến nghị.
+      - vi: In light of / with regard to + danh từ.
+      - vi: Tự kiểm tra năm lỗi - although… but, despite of, đảo ngữ thiếu, researches, very lặp lại.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:ap-review-mcq-email-purpose
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:it-would-appear-that
+    prompt:
+      stem: "Đọc email: \"Further to our call on Tuesday, I am writing with regard to the delayed shipment. It would appear that the goods were held at customs owing to a missing certificate.\" Người viết nói gì về nguyên nhân chậm trễ?"
+      stem_lang: vi
+      options:
+        - { id: b7q, text: Có vẻ hàng bị giữ ở hải quan vì thiếu một giấy chứng nhận., lang: vi }
+        - { id: n2d, text: Chắc chắn đối tác đã quên gửi giấy chứng nhận., lang: vi }
+        - { id: w5r, text: Hàng đã được thông quan và đang trên đường giao., lang: vi }
+        - { id: k8f, text: Cuộc gọi hôm thứ Ba bị hoãn vì thiếu giấy tờ., lang: vi }
+    answer:
+      correct_option_id: b7q
+    explanation:
+      vi: It would appear that là rào đón "có vẻ như", nên người viết nêu nguyên nhân một cách thận trọng, không khẳng định ai có lỗi. Owing to a missing certificate là "do thiếu một giấy chứng nhận".
+    display_answer: Có vẻ hàng bị giữ ở hải quan vì thiếu một giấy chứng nhận.
+
+  - key: en:exercise:ap-review-mcq-report-whereas
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:whereas
+    prompt:
+      stem: "Đọc tóm tắt: \"The implementation of the new booking system led to a significant increase in online reservations, whereas phone bookings declined considerably.\" Ý nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z4h, text: Đặt chỗ trực tuyến tăng mạnh còn đặt chỗ qua điện thoại giảm đáng kể., lang: vi }
+        - { id: c1u, text: Cả đặt chỗ trực tuyến và qua điện thoại đều tăng., lang: vi }
+        - { id: r6x, text: Đặt chỗ qua điện thoại giảm nên hệ thống mới bị huỷ., lang: vi }
+        - { id: f3m, text: Hệ thống mới chưa được triển khai., lang: vi }
+    answer:
+      correct_option_id: z4h
+    explanation:
+      vi: Whereas đối chiếu hai xu hướng trái ngược - a significant increase (tăng đáng kể) và declined considerably (giảm đáng kể). The implementation of cho biết hệ thống đã được triển khai.
+    display_answer: Đặt chỗ trực tuyến tăng mạnh còn đặt chỗ qua điện thoại giảm đáng kể.
+
+  - key: en:exercise:ap-review-listen-in-light
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:in-light-of
+    prompt:
+      audio_asset_id: null
+      fallback_text: In light of recent feedback, we have revised our proposal.
+      options:
+        - { id: y2n, text: "Căn cứ vào các phản hồi gần đây, chúng tôi đã điều chỉnh đề xuất.", lang: vi }
+        - { id: t9e, text: "Bất chấp các phản hồi gần đây, chúng tôi giữ nguyên đề xuất.", lang: vi }
+        - { id: g6s, text: Chúng tôi đang chờ phản hồi trước khi gửi đề xuất., lang: vi }
+        - { id: p4a, text: Đề xuất của chúng tôi đã nhận được nhiều phản hồi tích cực., lang: vi }
+    answer:
+      correct_option_id: y2n
+    explanation:
+      vi: In light of là "căn cứ vào, xét đến" - phản hồi là lý do để điều chỉnh. Nó không có nghĩa "bất chấp" (despite/notwithstanding).
+    display_answer: Căn cứ vào các phản hồi gần đây, chúng tôi đã điều chỉnh đề xuất.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:ap-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:inversion-not-only
+    prompt:
+      template: "{{b1}} the high cost, the system was approved. Not only {{b2}} it save time, but it also reduced errors. {{b3}} regard to training, a short course will be offered."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Despite, In spite of, Notwithstanding]
+        b2: [did]
+        b3: [With]
+    known_wrong:
+      - answer: Despite of
+        feedback_vi: Không có despite of - chỉ despite hoặc in spite of.
+        error_tag: despite_of
+      - answer: Although
+        feedback_vi: Although cần mệnh đề; trước danh từ the high cost dùng despite.
+        error_tag: although_despite
+      - answer: does
+        feedback_vi: Câu ở quá khứ (reduced) nên mượn did.
+        error_tag: inversion
+    explanation:
+      vi: The high cost là danh từ nên dùng despite. Not only đứng đầu câu ở quá khứ đơn nên mượn did - Not only did it save. With regard to là cụm cố định, không có s.
+    display_answer: Despite the high cost, the system was approved. Not only did it save time, but it also reduced errors. With regard to training, a short course will be offered.
+
+  - key: en:exercise:ap-review-translate-research
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:research-uncountable
+    prompt:
+      source_text: Các nghiên cứu gần đây cho thấy làm việc từ xa có thể làm tăng năng suất.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Recent research suggests that remote work may increase productivity.
+        - Recent research suggests that remote work can increase productivity.
+        - Recent research suggests that remote working may increase productivity.
+        - Recent research suggests that working remotely may increase productivity.
+        - Recent research suggests remote work may increase productivity.
+        - Recent research shows that remote work may increase productivity.
+        - Recent research shows that remote work can increase productivity.
+        - Recent research indicates that remote work may increase productivity.
+        - Recent studies suggest that remote work may increase productivity.
+        - Recent studies suggest that remote work can increase productivity.
+        - Recent studies show that remote work may increase productivity.
+        - Recent studies show that remote work can increase productivity.
+        - Recent studies show that working remotely can increase productivity.
+        - Recent research suggests that remote work may boost productivity.
+        - Recent research suggests that remote work may improve productivity.
+        - Recent studies suggest that remote work may improve productivity.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Recent researches suggest that remote work may increase productivity.
+        feedback_vi: Research không đếm được - không thêm -s. Muốn số nhiều, dùng studies.
+        error_tag: research_countable
+      - answer: Recent researches show that remote work can increase productivity.
+        feedback_vi: Research không đếm được - dùng recent research shows hoặc recent studies show.
+        error_tag: research_countable
+      - answer: Recent research suggest that remote work may increase productivity.
+        feedback_vi: Research không đếm được nên đi với động từ số ít - suggests.
+        error_tag: subject_verb_agreement
+      - answer: Recent research suggests that remote work may increases productivity.
+        feedback_vi: Sau may/can là động từ nguyên mẫu - increase.
+        error_tag: verb_form
+    explanation:
+      vi: “Các nghiên cứu” dịch là research (không đếm được, động từ số ít suggests) hoặc studies (số nhiều, suggest). “Có thể” là may/can - một lớp rào đón phù hợp.
+    display_answer: Recent research suggests that remote work may increase productivity.
+
+  - key: en:exercise:ap-review-translate-under-no
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:under-no-circumstances
+    prompt:
+      source_text: Trong bất kỳ trường hợp nào, nhân viên cũng không được chia sẻ dữ liệu khách hàng. (bắt đầu bằng Under no circumstances)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Under no circumstances should employees share customer data.
+        - Under no circumstances should staff share customer data.
+        - Under no circumstances may employees share customer data.
+        - Under no circumstances can employees share customer data.
+        - Under no circumstances are employees allowed to share customer data.
+        - Under no circumstances are employees permitted to share customer data.
+        - Under no circumstances should customer data be shared by employees.
+        - Under no circumstances should employees share client data.
+        - Under no circumstances must employees share customer data.
+        - Under no circumstances should employees share customers' data.
+        - Under no circumstances are staff allowed to share customer data.
+        - Under no circumstances should employees share any customer data.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Under no circumstances employees should share customer data.
+        feedback_vi: Under no circumstances đứng đầu câu thì phải đảo - should employees share.
+        error_tag: inversion
+      - answer: Under no circumstance should employees share customer data.
+        feedback_vi: Cụm cố định dùng số nhiều - circumstances.
+        error_tag: fixed_phrase
+      - answer: Under no circumstances should employees shared customer data.
+        feedback_vi: Sau should là động từ nguyên mẫu - share.
+        error_tag: verb_form
+    explanation:
+      vi: Under no circumstances mang nghĩa phủ định mạnh ở đầu câu nên kéo theo đảo ngữ - trợ động từ (should/may/can) đứng trước chủ ngữ.
+    display_answer: Under no circumstances should employees share customer data.
+
+  # ---------------- application ----------------
+  - key: en:exercise:ap-review-mcq-error-check
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:although-without-but
+    prompt:
+      stem: "Đồng nghiệp nhờ bạn kiểm tra đoạn tóm tắt báo cáo. Câu nào KHÔNG có lỗi?"
+      stem_lang: vi
+      options:
+        - { id: h1v, text: "Although the budget was limited, the team delivered the project on time.", lang: en }
+        - { id: q5c, text: "Although the budget was limited, but the team delivered the project on time.", lang: en }
+        - { id: u8l, text: "Despite of the limited budget, the team delivered the project on time.", lang: en }
+        - { id: e3z, text: "Not only the team delivered on time, but it also saved money.", lang: en }
+        - { id: m9w, text: "The team conducted many researches before delivering the project.", lang: en }
+    answer:
+      correct_option_id: h1v
+    explanation:
+      vi: Chỉ câu đầu đúng - although không đi với but. Các câu còn lại mắc đúng các lỗi của unit - although… but, despite of, Not only không đảo ngữ, researches.
+    display_answer: "Although the budget was limited, the team delivered the project on time."
+
+  - key: en:exercise:ap-review-order-should
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:inversion-conditional
+    prompt:
+      instruction: "Sắp xếp thành câu kết email: \"Nếu quý vị cần thêm tài liệu, xin vui lòng liên hệ với tôi.\""
+      tokens:
+        - { id: s-documents, text: further documents }
+        - { id: s-contact, text: contact me }
+        - { id: s-you, text: you }
+        - { id: s-please, text: please }
+        - { id: s-should, text: Should }
+        - { id: s-if, text: if }
+        - { id: s-require, text: require }
+    answer:
+      orders:
+        - [s-should, s-you, s-require, s-documents, s-please, s-contact]
+    explanation:
+      vi: Should you require… là đảo ngữ trang trọng của If you require…. Khi đã đảo thì không dùng if.
+    display_answer: Should you require further documents, please contact me.
+
+  - key: en:exercise:ap-review-translate-to-vi-summary
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:findings-suggest
+    prompt:
+      source_text: The findings suggest that customers value speed. Consequently, the phone line will be retained only for complex enquiries.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả nghiên cứu cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Vì vậy, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng đề cao tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do vậy, đường dây điện thoại sẽ chỉ được duy trì cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được duy trì cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng sự nhanh chóng. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Vì thế, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại để xử lý các yêu cầu phức tạp.
+        - Kết quả cho thấy khách hàng coi trọng tốc độ, do đó đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+        - Các kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: The findings suggest that là "kết quả (nghiên cứu) cho thấy"; consequently là "do đó, vì vậy". Will be retained only for là "sẽ chỉ được giữ lại cho".
+    display_answer: Kết quả cho thấy khách hàng coi trọng tốc độ. Do đó, đường dây điện thoại sẽ chỉ được giữ lại cho các yêu cầu phức tạp.
+
+  - key: en:exercise:ap-review-translate-summary-en
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:significant-increase
+    prompt:
+      source_text: Tóm lại, doanh số trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng giảm nhẹ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In summary, online sales increased significantly, whereas in-store sales decreased slightly.
+        - In summary, online sales rose significantly, whereas in-store sales fell slightly.
+        - In summary, online sales increased significantly, whereas in-store sales fell slightly.
+        - In summary, online sales increased considerably, whereas in-store sales decreased slightly.
+        - In summary, online sales rose considerably, whereas in-store sales declined slightly.
+        - In summary, there was a significant increase in online sales, whereas in-store sales decreased slightly.
+        - In summary, there was a significant increase in online sales, whereas in-store sales fell slightly.
+        - In summary, there was a significant increase in online sales, while in-store sales fell slightly.
+        - In summary, online sales increased significantly, while in-store sales decreased slightly.
+        - In summary, online sales rose significantly, while in-store sales fell slightly.
+        - To summarise, online sales increased significantly, whereas in-store sales decreased slightly.
+        - To summarize, online sales increased significantly, whereas in-store sales decreased slightly.
+        - In summary, online sales increased significantly, whereas sales in stores decreased slightly.
+        - In summary, online sales increased significantly, whereas store sales decreased slightly.
+        - In summary, online sales grew significantly, whereas in-store sales fell slightly.
+        - In summary, online sales increased significantly, whereas in-store sales declined slightly.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In summary, online sales increased very much, whereas in-store sales decreased a little.
+        feedback_vi: Increased very much nghe như văn nói; dùng increased significantly/considerably.
+        error_tag: overuse_very
+      - answer: In summary, there was a significant increase of online sales, whereas in-store sales decreased slightly.
+        feedback_vi: An increase in + cái tăng (online sales); of dùng cho mức tăng (an increase of 10%).
+        error_tag: preposition
+      - answer: In summarise, online sales increased significantly, whereas in-store sales decreased slightly.
+        feedback_vi: Viết In summary hoặc To summarise, không phải In summarise.
+        error_tag: fixed_phrase
+    explanation:
+      vi: In summary mở đầu phần tóm tắt; tăng/giảm dùng động từ kèm trạng từ chính xác (increased significantly, decreased slightly) hoặc danh từ hoá a significant increase in. Whereas/while đối chiếu hai xu hướng.
+    display_answer: In summary, online sales increased significantly, whereas in-store sales decreased slightly.

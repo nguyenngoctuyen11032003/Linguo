@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: en:program:elementary
+language: en
+title:
+  vi: Tiếng Anh sơ cấp (A2)
+description:
+  vi: Kể chuyện quá khứ, nói về kế hoạch, du lịch, so sánh và giao tiếp hằng ngày tự tin hơn (A2). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: a2
+level_to: a2
+order_index: 2

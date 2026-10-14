@@ -1,0 +1,18 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+key: en:program:intermediate
+language: en
+title:
+  vi: Tiếng Anh trung cấp (B1)
+description:
+  vi: Trải nghiệm, công việc, sức khoẻ, câu điều kiện và lời khuyên - xử lý hầu hết tình huống khi đi lại và làm việc (B1). Nội dung demo, chưa qua kiểm duyệt.
+kind: core
+goal_types: []
+level_from: b1
+level_to: b1
+order_index: 3

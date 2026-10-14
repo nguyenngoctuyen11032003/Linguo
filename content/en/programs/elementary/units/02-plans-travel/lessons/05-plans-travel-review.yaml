@@ -1,0 +1,397 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:plans-travel-review
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập - Chuyến đi Đà Lạt
+objectives:
+  - vi: Đọc hiểu một tin nhắn và một đoạn hội thoại về kế hoạch du lịch.
+  - vi: Chọn đúng going to, will hay hiện tại tiếp diễn khi nói về tương lai.
+  - vi: Dùng từ vựng khách sạn, sân bay, thời tiết và câu so sánh trong tình huống thật.
+estimated_minutes: 15
+skills: [reading, grammar, vocabulary, speaking]
+prerequisites: [en:lesson:weather-compare]
+items:
+  - item: en:item:be-going-to
+    role: reuse
+  - item: en:item:will-decision
+    role: reuse
+  - item: en:item:will-prediction
+    role: reuse
+  - item: en:item:present-continuous-future
+    role: reuse
+  - item: en:item:in-two-days
+    role: reuse
+  - item: en:item:stay
+    role: reuse
+  - item: en:item:shall-i
+    role: reuse
+  - item: en:item:pick-up
+    role: reuse
+  - item: en:item:book-verb
+    role: reuse
+  - item: en:item:check-in
+    role: reuse
+  - item: en:item:flight
+    role: reuse
+  - item: en:item:delayed
+    role: reuse
+  - item: en:item:single-return-ticket
+    role: reuse
+  - item: en:item:forecast
+    role: reuse
+  - item: en:item:rain
+    role: reuse
+  - item: en:item:comparative-er
+    role: reuse
+  - item: en:item:comparative-more
+    role: reuse
+  - item: en:item:good-better-best
+    role: reuse
+  - item: en:item:superlative
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ghép mọi thứ của unit vào một chuyến đi - Minh và Lan lên kế hoạch đi Đà Lạt, đặt phòng, gặp chuyến bay bị hoãn và so sánh chỗ ở. Bạn đọc, rồi tự nói và viết các câu tương tự.
+  - type: explain
+    text:
+      vi: "Ba cách nói tương lai trong unit - be going to cho kế hoạch đã quyết định (We're going to visit Da Lat); will cho quyết định ngay, đề nghị và dự đoán (I'll book it now, I think you'll love it); be + V-ing cho lịch đã hẹn (We're flying on Friday)."
+  - type: explain
+    text:
+      vi: "So sánh hai lựa chọn - -er than với tính từ ngắn (cheaper than), more … than với tính từ dài (more comfortable than); chọn cái nhất - the -est / the most …; good → better → the best. Đừng bao giờ dùng cùng lúc more và -er."
+  - type: deep_explain
+    text:
+      vi: Khi đọc tin nhắn tiếng Anh, hãy để ý động từ để đoán người viết đã chắc chắn đến đâu - I'm meeting/We're flying (đã sắp xếp), I'm going to (đã định), I'll/I think … will (vừa quyết định hoặc chỉ đoán). Người Việt hay dịch mọi chữ "sẽ" thành will, nên viết lại thử từng câu bằng dạng phù hợp sẽ giúp bạn nhớ lâu hơn.
+  - type: example
+    target: "Hi Minh! Good news - I'm going to take a week off in October, so we can go to Da Lat. I'm booking the flights tonight. The forecast says it's going to be cool and sunny. Can't wait! - Lan"
+    target_lang: en
+    translation:
+      vi: "Chào Minh! Tin vui nè - tháng Mười mình sẽ nghỉ phép một tuần, nên tụi mình đi Đà Lạt được. Tối nay mình đặt vé máy bay. Dự báo nói trời sẽ mát và nắng. Háo hức quá! - Lan"
+    note:
+      vi: Going to - kế hoạch đã định; I'm booking tonight - việc đã sắp xếp làm; dự báo thời tiết - going to.
+  - type: example
+    target: "Minh: The Pine Hill Hotel is cheaper, but the Lake View is more comfortable. Lan: Let's take the Lake View - it has the best reviews. I'll book it now."
+    target_lang: en
+    translation:
+      vi: "Minh: Khách sạn Pine Hill rẻ hơn, nhưng Lake View thoải mái hơn. Lan: Mình lấy Lake View đi - nó có đánh giá tốt nhất. Để mình đặt luôn bây giờ."
+    note:
+      vi: Cheaper / more comfortable so sánh hai khách sạn; the best là so sánh nhất của good; I'll book - quyết định ngay.
+  - type: example
+    target: "Our flight is delayed by an hour. Don't worry, my cousin is picking us up at the airport, so we won't need a taxi."
+    target_lang: en
+    translation:
+      vi: Chuyến bay bị hoãn một tiếng. Đừng lo, anh họ mình sẽ ra sân bay đón tụi mình, nên mình không cần đi taxi đâu.
+    note:
+      vi: Is picking us up - đã hẹn với anh họ; won't need - dự đoán.
+  - type: common_mistake
+    wrong: I will going to book the hotel tonight.
+    right: I'm going to book the hotel tonight.
+    target_lang: en
+    note:
+      vi: Không ghép will với going. Chọn một - I'm going to book (đã định) hoặc I'll book (quyết định ngay).
+  - type: common_mistake
+    wrong: Da Lat is more cooler than Saigon.
+    right: Da Lat is cooler than Saigon.
+    target_lang: en
+    note:
+      vi: Cool là tính từ ngắn, -er đã có nghĩa "hơn", nên không thêm more.
+  - type: common_mistake
+    wrong: I fly to Da Lat on Friday.
+    right: I'm flying to Da Lat on Friday.
+    target_lang: en
+    note:
+      vi: Chuyến bay đã đặt vé là lịch đã sắp xếp - dùng am flying. Hiện tại đơn chỉ dùng cho thói quen.
+  - type: summary
+    points:
+      - vi: going to - kế hoạch; will - quyết định ngay, đề nghị, dự đoán; be + V-ing - lịch đã hẹn.
+      - vi: Sau will và to luôn là động từ nguyên mẫu - không có will going, going to visited.
+      - vi: Du lịch - book a room, check in, boarding pass, gate, delayed, single/return ticket, platform.
+      - vi: So sánh - cheaper than, more comfortable than, the best; không dùng more cheaper hay the most good.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:plans-travel-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:present-continuous-future
+    prompt:
+      stem: "Đọc tin nhắn: \"Hi Minh! I'm going to take a week off in October, so we can go to Da Lat. I'm booking the flights tonight.\" Tối nay Lan làm gì?"
+      stem_lang: vi
+      options:
+        - { id: r4u, text: Lan đặt vé máy bay., lang: vi }
+        - { id: r9g, text: Lan bay đi Đà Lạt., lang: vi }
+        - { id: r2m, text: Lan xin nghỉ phép một tuần., lang: vi }
+        - { id: r7c, text: Lan đã đặt xong vé máy bay., lang: vi }
+    answer:
+      correct_option_id: r4u
+    explanation:
+      vi: I'm booking the flights tonight - hiện tại tiếp diễn kèm tonight là việc Lan đã sắp xếp làm tối nay, chưa xong. Việc nghỉ phép là vào tháng Mười.
+    display_answer: Lan đặt vé máy bay.
+
+  - key: en:exercise:plans-travel-review-mcq-future
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:will-decision
+    prompt:
+      stem: "Nhân viên lễ tân nói: \"We only have a double room left.\" Bạn quyết định lấy luôn. Bạn nói:"
+      stem_lang: vi
+      options:
+        - { id: d5x, text: "OK, I'll take it.", lang: en }
+        - { id: d1q, text: "OK, I take it tomorrow.", lang: en }
+        - { id: d8w, text: "OK, I will taking it.", lang: en }
+        - { id: d3e, text: "OK, I'm going take it.", lang: en }
+    answer:
+      correct_option_id: d5x
+    explanation:
+      vi: Quyết định ngay khi nghe thông tin - dùng I'll + nguyên mẫu. Các câu khác thiếu will, thêm -ing sau will, hoặc thiếu to sau going.
+    display_answer: "OK, I'll take it."
+
+  - key: en:exercise:plans-travel-review-listen-dialogue
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:comparative-more
+    prompt:
+      audio_asset_id: null
+      fallback_text: The Pine Hill Hotel is cheaper, but the Lake View is more comfortable and closer to the market.
+      options:
+        - { id: h2p, text: "Pine Hill rẻ hơn; Lake View thoải mái hơn và gần chợ hơn.", lang: vi }
+        - { id: h6t, text: "Lake View rẻ hơn; Pine Hill thoải mái hơn và gần chợ hơn.", lang: vi }
+        - { id: h9a, text: "Pine Hill rẻ nhất; Lake View thoải mái nhất.", lang: vi }
+        - { id: h3k, text: "Hai khách sạn có giá như nhau nhưng Lake View xa chợ hơn.", lang: vi }
+    answer:
+      correct_option_id: h2p
+    explanation:
+      vi: Cheaper đi với Pine Hill; more comfortable và closer to the market đi với Lake View. Đây là so sánh hơn giữa hai khách sạn, không phải so sánh nhất.
+    display_answer: "Pine Hill rẻ hơn; Lake View thoải mái hơn và gần chợ hơn."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:plans-travel-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-going-to
+    prompt:
+      template: "We're {{b1}} to stay in Da Lat for four days. The train is {{b2}} than the plane, but the plane is faster, so we're flying. Shall {{b3}} pick you up on the way to the airport?"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [going]
+        b2: [cheaper, slower]
+        b3: [I, we]
+    known_wrong:
+      - answer: go
+        feedback_vi: Cấu trúc là be going to - We're going to stay.
+        error_tag: future_form
+      - answer: more cheaper
+        feedback_vi: Cheap là tính từ ngắn - cheaper, không thêm more.
+        error_tag: double_comparative
+      - answer: more slow
+        feedback_vi: Slow là tính từ ngắn - slower.
+        error_tag: comparative_form
+      - answer: you
+        feedback_vi: Lời đề nghị giúp là Shall I…? (hoặc Shall we…?), không nói Shall you.
+        error_tag: offer_form
+    explanation:
+      vi: Kế hoạch - We're going to stay. Cheap/slow là tính từ ngắn nên thêm -er. Đề nghị đón ai - Shall I pick you up?
+    display_answer: "We're going to stay in Da Lat for four days. The train is cheaper than the plane, … Shall I pick you up on the way to the airport?"
+
+  - key: en:exercise:plans-travel-review-translate-flying
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:flight
+    prompt:
+      source_text: Thứ Sáu chúng tôi bay đi Đà Lạt. Chuyến bay cất cánh lúc 7 giờ sáng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We are flying to Da Lat on Friday. The flight leaves at 7 a.m.
+        - We're flying to Da Lat on Friday. The flight leaves at 7 a.m.
+        - We're flying to Da Lat on Friday. The flight leaves at 7 am.
+        - We are flying to Da Lat on Friday. The flight leaves at 7 am.
+        - On Friday we're flying to Da Lat. The flight leaves at 7 a.m.
+        - On Friday we are flying to Da Lat. The flight leaves at 7 a.m.
+        - We're flying to Da Lat on Friday. The flight takes off at 7 a.m.
+        - We are flying to Da Lat on Friday. Our flight leaves at 7 a.m.
+        - We're flying to Da Lat on Friday. Our flight leaves at 7 a.m.
+        - We're flying to Dalat on Friday. The flight leaves at 7 a.m.
+        - We're going to fly to Da Lat on Friday. The flight leaves at 7 a.m.
+        - We're flying to Da Lat on Friday. The flight leaves at seven in the morning.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We fly to Da Lat on Friday. The flight leaves at 7 a.m.
+        feedback_vi: Chuyến bay đã đặt là lịch đã sắp xếp - We're flying to Da Lat on Friday.
+        error_tag: future_form
+      - answer: We flying to Da Lat on Friday. The flight leaves at 7 a.m.
+        feedback_vi: Thiếu are - We are flying.
+        error_tag: missing_be
+      - answer: We will flying to Da Lat on Friday. The flight leaves at 7 a.m.
+        feedback_vi: Không ghép will với V-ing - We're flying (lịch đã hẹn).
+        error_tag: verb_form
+    explanation:
+      vi: Chuyến bay đã đặt vé - dùng are flying + on Friday. Giờ cất cánh theo lịch trình cố định dùng hiện tại đơn - The flight leaves at 7 a.m.
+    display_answer: We're flying to Da Lat on Friday. The flight leaves at 7 a.m.
+
+  - key: en:exercise:plans-travel-review-translate-best
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:good-better-best
+    prompt:
+      source_text: Khách sạn này tốt hơn khách sạn kia, nhưng Lake View là khách sạn tốt nhất.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This hotel is better than that hotel, but the Lake View is the best hotel.
+        - This hotel is better than that one, but the Lake View is the best hotel.
+        - This hotel is better than that one, but the Lake View is the best.
+        - This hotel is better than that hotel, but the Lake View is the best.
+        - This hotel is better than that one, but Lake View is the best hotel.
+        - This hotel is better than that one, but Lake View is the best.
+        - This hotel is better than that hotel, but Lake View is the best hotel.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This hotel is more good than that one, but the Lake View is the most good hotel.
+        feedback_vi: Good là bất quy tắc - better, the best.
+        error_tag: irregular_comparative
+      - answer: This hotel is gooder than that one, but the Lake View is the goodest hotel.
+        feedback_vi: Good không thêm -er/-est - better, the best.
+        error_tag: irregular_comparative
+      - answer: This hotel is better than that one, but the Lake View is best hotel.
+        feedback_vi: So sánh nhất cần the - the best hotel.
+        error_tag: article
+    explanation:
+      vi: Good → better (so sánh hai khách sạn) → the best (tốt nhất trong nhiều khách sạn). Có thể thay hotel thứ hai bằng one để khỏi lặp.
+    display_answer: This hotel is better than that one, but the Lake View is the best hotel.
+
+  # ---------------- application ----------------
+  - key: en:exercise:plans-travel-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:delayed
+    prompt:
+      source_text: Our flight is delayed, so we're going to have dinner at the airport.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chuyến bay của chúng tôi bị hoãn, nên chúng tôi sẽ ăn tối ở sân bay.
+        - Chuyến bay của chúng tôi bị hoãn nên chúng tôi sẽ ăn tối ở sân bay.
+        - Chuyến bay của chúng tôi bị trễ, nên chúng tôi sẽ ăn tối ở sân bay.
+        - Chuyến bay bị hoãn, nên chúng tôi sẽ ăn tối ở sân bay.
+        - Chuyến bay bị hoãn nên chúng tôi sẽ ăn tối ở sân bay.
+        - Chuyến bay bị trễ nên chúng tôi sẽ ăn tối ở sân bay.
+        - Chuyến bay của chúng tôi bị hoãn, vì vậy chúng tôi sẽ ăn tối tại sân bay.
+        - Chuyến bay của chúng ta bị hoãn, nên chúng ta sẽ ăn tối ở sân bay.
+        - Chuyến bay bị hoãn nên tụi mình sẽ ăn tối ở sân bay.
+        - Chuyến bay của chúng tôi bị hoãn, nên chúng tôi định ăn tối ở sân bay.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Is delayed là "bị hoãn/bị trễ"; so là "nên"; we're going to have dinner là "chúng tôi sẽ/định ăn tối".
+    display_answer: Chuyến bay của chúng tôi bị hoãn, nên chúng tôi sẽ ăn tối ở sân bay.
+
+  - key: en:exercise:plans-travel-review-order-forecast
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:forecast
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Dự báo nói ngày mai trời sẽ mưa.\""
+      tokens:
+        - { id: f-rain, text: rain }
+        - { id: f-says, text: says }
+        - { id: f-tomorrow, text: tomorrow }
+        - { id: f-forecast, text: forecast }
+        - { id: f-will, text: will }
+        - { id: f-the, text: The }
+        - { id: f-it, text: it }
+        - { id: f-raining, text: raining }
+    answer:
+      orders:
+        - [f-the, f-forecast, f-says, f-it, f-will, f-rain, f-tomorrow]
+        - [f-the, f-forecast, f-says, f-tomorrow, f-it, f-will, f-rain]
+    explanation:
+      vi: Theo bản tin - The forecast says + it will rain. Câu cần chủ ngữ it; sau will là nguyên mẫu rain. Tomorrow đứng cuối hoặc ngay trước it.
+    display_answer: The forecast says it will rain tomorrow.
+
+  - key: en:exercise:plans-travel-review-translate-ticket
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:single-return-ticket
+    prompt:
+      source_text: Cho tôi hai vé khứ hồi đi Huế. Tàu chạy từ sân ga nào?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Two return tickets to Hue, please. Which platform does the train leave from?
+        - Can I have two return tickets to Hue, please? Which platform does the train leave from?
+        - Could I have two return tickets to Hue, please? Which platform does the train leave from?
+        - Two return tickets to Hue, please. Which platform is the train?
+        - Two return tickets to Hue, please. Which platform is it?
+        - Two round-trip tickets to Hue, please. Which platform does the train leave from?
+        - Two round trip tickets to Hue, please. Which platform does the train leave from?
+        - I'd like two return tickets to Hue, please. Which platform does the train leave from?
+        - Two return tickets to Hue, please. What platform does the train leave from?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Two single tickets to Hue, please. Which platform does the train leave from?
+        feedback_vi: Single là vé một chiều; vé khứ hồi là return ticket.
+        error_tag: word_choice
+      - answer: Two return ticket to Hue, please. Which platform does the train leave from?
+        feedback_vi: Hai vé - ticket phải ở số nhiều - two return tickets.
+        error_tag: plural
+      - answer: Two return tickets to Hue, please. Which gate does the train leave from?
+        feedback_vi: Gate là cửa ra máy bay. Tàu hoả dùng platform.
+        error_tag: word_choice
+    explanation:
+      vi: Vé khứ hồi là return ticket (Anh-Mỹ - round-trip). Hỏi sân ga - Which platform does the train leave from?
+    display_answer: Two return tickets to Hue, please. Which platform does the train leave from?
+
+  - key: en:exercise:plans-travel-review-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:will-prediction
+    prompt:
+      stem: "Minh nhắn: \"Should we go to Da Lat or Nha Trang in December?\" Bạn muốn khuyên đi Đà Lạt vì mát hơn và ít đông hơn, và đoán Minh sẽ thích. Câu nào đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: m3s, text: "Da Lat. It's cooler and less crowded. I think you'll love it.", lang: en }
+        - { id: m8f, text: "Da Lat. It's more cooler and less crowded. I think you'll love it.", lang: en }
+        - { id: m1n, text: "Da Lat. It's cooler and less crowded. I think you will loving it.", lang: en }
+        - { id: m6b, text: "Da Lat. It's the coolest and less crowded. I think you love it.", lang: en }
+    answer:
+      correct_option_id: m3s
+    explanation:
+      vi: So sánh hai nơi dùng cooler (không có more); less crowded là "ít đông hơn". Dự đoán theo ý kiến - I think you'll love it (will + nguyên mẫu).
+    display_answer: "Da Lat. It's cooler and less crowded. I think you'll love it."

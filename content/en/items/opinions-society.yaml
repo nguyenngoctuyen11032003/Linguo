@@ -1,0 +1,997 @@
+# DEMO — chưa kiểm duyệt
+# Học liệu unit "Quan điểm & xã hội" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: bày tỏ & bảo vệ quan điểm ----------------
+  - key: en:item:in-my-view
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: In my view, …
+      ipa: /ɪn maɪ ˈvjuː/
+      pos: cụm mở đầu quan điểm
+    back:
+      meaning:
+        vi: Theo quan điểm của tôi, … (trang trọng hơn I think, hợp với bài luận và thảo luận)
+      examples:
+        - target: In my view, social media does more good than harm.
+          translation:
+            vi: Theo tôi, mạng xã hội mang lại nhiều lợi hơn hại.
+      pronunciation_note:
+        vi: View đọc /vjuː/, có âm /j/ lướt nhẹ, gần "viu", không đọc "vi-iu".
+      confusion:
+        vi: In my view đã có nghĩa "tôi nghĩ", nên không thêm I think phía sau (In my view, I think… là thừa). Cũng không nói "In my point of view"; nói From my point of view.
+
+  - key: en:item:id-argue-that
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: I'd argue that …
+      ipa: UK /aɪd ˈɑːɡjuː ðət/ · US /aɪd ˈɑːrɡjuː ðət/
+      pos: cụm bày tỏ quan điểm
+    back:
+      meaning:
+        vi: Tôi cho rằng… (nêu quan điểm một cách chắc chắn nhưng vẫn mềm mỏng, sẵn sàng đưa lý lẽ)
+      examples:
+        - target: I'd argue that schools should teach students how to spot fake news.
+          translation:
+            vi: Tôi cho rằng trường học nên dạy học sinh cách nhận ra tin giả.
+      pronunciation_note:
+        vi: I'd đọc liền /aɪd/, âm /d/ rất nhẹ, dễ bị nuốt khi nói nhanh.
+      confusion:
+        vi: Argue ở đây là "lập luận, cho rằng", không phải "cãi nhau" (argue with somebody). I'd argue = I would argue, dùng would để lời nói bớt gay gắt.
+
+  - key: en:item:on-the-other-hand
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [writing, reading]
+    front:
+      text: On the other hand, …
+      ipa: UK /ɒn ði ˈʌðə hænd/ · US /ɑːn ði ˈʌðɚ hænd/
+      pos: từ nối tương phản
+    back:
+      meaning:
+        vi: Mặt khác, … (đưa ra một mặt khác của vấn đề, thường sau On the one hand)
+      examples:
+        - target: Online classes are flexible. On the other hand, they can feel isolating.
+          translation:
+            vi: Lớp học trực tuyến linh hoạt. Mặt khác, chúng có thể khiến người học thấy cô lập.
+      confusion:
+        vi: Đừng nhầm với On the contrary - cụm này dùng để bác bỏ ý vừa nói ("Ngược lại hoàn toàn"), không phải để nêu mặt thứ hai.
+
+  - key: en:item:having-said-that
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: Having said that, …
+      ipa: /ˈhævɪŋ ˈsed ðæt/
+      pos: từ nối nhượng bộ
+    back:
+      meaning:
+        vi: Dù vậy, … / Nói thế nhưng… (thừa nhận ý vừa nêu rồi đưa ra ý ngược lại)
+      examples:
+        - target: Smartphones are a distraction in class. Having said that, they can be useful for research.
+          translation:
+            vi: Điện thoại thông minh gây xao nhãng trong lớp. Dù vậy, chúng có thể hữu ích khi tra cứu.
+      pronunciation_note:
+        vi: Said đọc /sed/ (gần "xét"), không đọc theo chữ là "xây-đ".
+      confusion:
+        vi: Thường đứng đầu câu và có dấu phẩy sau. Nghĩa gần However nhưng tự nhiên hơn trong văn nói.
+
+  - key: en:item:i-take-your-point
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I take your point, but …
+      ipa: /aɪ ˌteɪk jɔː ˈpɔɪnt bət/
+      pos: cụm phản biện lịch sự
+    back:
+      meaning:
+        vi: Tôi hiểu ý bạn, nhưng… (công nhận lập luận của người kia trước khi phản bác)
+      examples:
+        - target: I take your point, but banning phones completely seems a bit extreme.
+          translation:
+            vi: Tôi hiểu ý bạn, nhưng cấm điện thoại hoàn toàn thì có vẻ hơi cực đoan.
+      confusion:
+        vi: Take ở đây không phải "cầm, lấy" mà là "chấp nhận, ghi nhận". Có thể nói I see your point, but… với nghĩa tương tự.
+
+  - key: en:item:agree-up-to-a-point
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I agree up to a point.
+      ipa: /aɪ əˈɡriː ˌʌp tu ə ˈpɔɪnt/
+      pos: cụm đồng ý một phần
+    back:
+      meaning:
+        vi: Tôi đồng ý ở một mức độ nào đó. (đồng ý một phần, chuẩn bị nêu điểm khác)
+      examples:
+        - target: I agree up to a point, but I think the government should do more.
+          translation:
+            vi: Tôi đồng ý phần nào, nhưng tôi nghĩ chính phủ nên làm nhiều hơn.
+      confusion:
+        vi: Cách nói này giúp bạn không phản đối thẳng thừng - rất phổ biến trong thảo luận lịch sự bằng tiếng Anh.
+
+  - key: en:item:not-entirely-convinced
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: I'm not entirely convinced (that) …
+      ipa: UK /aɪm nɒt ɪnˈtaɪəli kənˈvɪnst/ · US /aɪm nɑːt ɪnˈtaɪɚli kənˈvɪnst/
+      pos: cụm phản đối nhẹ nhàng
+    back:
+      meaning:
+        vi: Tôi chưa hoàn toàn bị thuyết phục (rằng)… (cách phản đối lịch sự, gián tiếp)
+      examples:
+        - target: I'm not entirely convinced that working from home makes people more productive.
+          translation:
+            vi: Tôi chưa hoàn toàn tin rằng làm việc tại nhà giúp mọi người năng suất hơn.
+      pronunciation_note:
+        vi: Convinced kết thúc bằng /nst/ - hãy đọc đủ âm /t/ cuối.
+      confusion:
+        vi: Người nói tiếng Anh thường làm mềm lời phản đối (not entirely, not sure) thay vì nói thẳng I disagree hay You're wrong.
+
+  - key: en:item:agree-verb
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: agree (động từ) - I agree / I don't agree
+      ipa: /əˈɡriː/
+      pos: động từ
+    back:
+      meaning:
+        vi: "đồng ý: agree là động từ thường, nên phủ định dùng don't, không dùng be"
+      examples:
+        - target: I agree with you on this issue.
+          translation:
+            vi: Về vấn đề này tôi đồng ý với bạn.
+        - target: I don't agree that technology makes us lonely.
+          translation:
+            vi: Tôi không đồng ý rằng công nghệ khiến chúng ta cô đơn.
+      confusion:
+        vi: Người Việt hay nói "I am agree" vì dịch "tôi đồng ý" giống "tôi vui" (I am happy). Agree là động từ - I agree, I don't agree; chỉ dùng be với tính từ, ví dụ I am in agreement.
+
+  - key: en:item:whereas
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [writing, grammar]
+    front:
+      text: whereas
+      ipa: UK /weərˈæz/ · US /werˈæz/
+      pos: liên từ
+    back:
+      meaning:
+        vi: trong khi (đó) - nối hai mệnh đề đối lập nhau trong cùng một câu
+      examples:
+        - target: Older people often read the news in print, whereas younger people get it from social media.
+          translation:
+            vi: Người lớn tuổi thường đọc báo in, trong khi người trẻ lấy tin từ mạng xã hội.
+      pronunciation_note:
+        vi: Nhấn vào âm thứ hai (as).
+      confusion:
+        vi: Whereas nối hai mệnh đề trong một câu; On the other hand thường bắt đầu câu mới. Văn trang trọng dùng whereas nhiều hơn while.
+
+  - key: en:item:furthermore
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: furthermore
+      ipa: UK /ˌfɜːðəˈmɔː/ · US /ˈfɝːðɚmɔːr/
+      pos: trạng từ nối
+    back:
+      meaning:
+        vi: hơn nữa, ngoài ra (thêm một lý lẽ cùng chiều, trang trọng)
+      examples:
+        - target: Cycling is cheap. Furthermore, it reduces air pollution.
+          translation:
+            vi: Đi xe đạp rẻ. Hơn nữa, nó giúp giảm ô nhiễm không khí.
+      pronunciation_note:
+        vi: Người Anh nhấn âm cuối (more), người Mỹ thường nhấn âm đầu (fur).
+      confusion:
+        vi: Furthermore và Moreover trang trọng, hợp với bài luận; khi nói chuyện thường dùng Also hoặc What's more.
+
+  - key: en:item:social-media
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: social media
+      ipa: UK /ˌsəʊʃl ˈmiːdiə/ · US /ˌsoʊʃl ˈmiːdiə/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: mạng xã hội (nói chung)
+      examples:
+        - target: Teenagers spend several hours a day on social media.
+          translation:
+            vi: Thanh thiếu niên dành vài giờ mỗi ngày cho mạng xã hội.
+      confusion:
+        vi: Nói on social media, không có the và không thêm s. Muốn nói một trang cụ thể thì dùng a social media platform hoặc a social network.
+
+  - key: en:item:raise-awareness
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: raise awareness (of/about)
+      ipa: UK /ˌreɪz əˈweənəs/ · US /ˌreɪz əˈwernəs/
+      pos: cụm động từ - danh từ (collocation)
+    back:
+      meaning:
+        vi: nâng cao nhận thức (về điều gì)
+      examples:
+        - target: The campaign aims to raise awareness of plastic pollution.
+          translation:
+            vi: Chiến dịch nhằm nâng cao nhận thức về ô nhiễm nhựa.
+      pronunciation_note:
+        vi: Awareness nhấn âm thứ hai (wa), đuôi -ness đọc nhẹ /nəs/.
+      confusion:
+        vi: Dùng raise (nâng lên), không dùng rise (tự tăng, không có tân ngữ) hay increase awareness - cách sau ít tự nhiên hơn.
+
+  - key: en:item:have-an-impact-on
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: have an impact on
+      ipa: UK /hæv ən ˈɪmpækt ɒn/ · US /hæv ən ˈɪmpækt ɑːn/
+      pos: cụm từ cố định (collocation)
+    back:
+      meaning:
+        vi: có tác động / ảnh hưởng đến
+      examples:
+        - target: Social media has a huge impact on how young people see themselves.
+          translation:
+            vi: Mạng xã hội có tác động rất lớn đến cách người trẻ nhìn nhận bản thân.
+      pronunciation_note:
+        vi: Danh từ impact nhấn âm đầu (IM-pact).
+      confusion:
+        vi: Giới từ đi kèm là on, không phải to hay with. Có thể thêm tính từ ở giữa - have a positive/negative/huge impact on.
+
+  # ---------------- Bài 2: câu điều kiện & wish ----------------
+  - key: en:item:second-conditional
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: If + quá khứ đơn, would + V
+      pos: câu điều kiện loại 2
+    back:
+      meaning:
+        vi: Giả định trái với hiện tại hoặc khó xảy ra ở hiện tại/tương lai.
+      examples:
+        - target: If public transport were cheaper, fewer people would drive.
+          translation:
+            vi: Nếu giao thông công cộng rẻ hơn thì sẽ có ít người lái xe hơn.
+      confusion:
+        vi: Mệnh đề If dùng quá khứ đơn, không dùng would. Với be, văn trang trọng dùng were cho mọi chủ ngữ (If I were you…).
+
+  - key: en:item:third-conditional
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: If + had + V3, would have + V3
+      pos: câu điều kiện loại 3
+    back:
+      meaning:
+        vi: Giả định trái với quá khứ - nói về điều đã không xảy ra và kết quả tưởng tượng của nó.
+      examples:
+        - target: If the city had invested in flood defences, the damage would have been smaller.
+          translation:
+            vi: Nếu thành phố đã đầu tư vào hệ thống chống lũ thì thiệt hại đã nhỏ hơn.
+      pronunciation_note:
+        vi: Khi nói, would have thường đọc gọn là /ˈwʊdəv/ (would've); viết thì không bao giờ là "would of".
+      confusion:
+        vi: Lỗi rất phổ biến là "If I would have known". Mệnh đề If chỉ dùng had + V3 - If I had known.
+
+  - key: en:item:mixed-conditional
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: If + had + V3, would + V (hiện tại)
+      pos: câu điều kiện hỗn hợp
+    back:
+      meaning:
+        vi: Điều kiện trái với quá khứ nhưng kết quả nằm ở hiện tại.
+      examples:
+        - target: If I had studied IT at university, I would have a better job now.
+          translation:
+            vi: Nếu hồi đại học tôi học công nghệ thông tin thì bây giờ tôi đã có công việc tốt hơn.
+      confusion:
+        vi: Dấu hiệu nhận biết là các từ chỉ hiện tại như now, today trong mệnh đề kết quả - khi đó dùng would + V, không dùng would have + V3.
+
+  - key: en:item:wish-past-simple
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: wish + quá khứ đơn / could
+      pos: cấu trúc ước (hiện tại)
+    back:
+      meaning:
+        vi: Ước điều ở hiện tại khác đi (thực tế hiện tại không như vậy).
+      examples:
+        - target: I wish I could speak English more fluently.
+          translation:
+            vi: Ước gì tôi nói tiếng Anh trôi chảy hơn.
+        - target: I wish our city had more green spaces.
+          translation:
+            vi: Ước gì thành phố mình có nhiều không gian xanh hơn.
+      confusion:
+        vi: Sau wish phải lùi một thì - can thành could, have thành had. Không nói "I wish I can".
+
+  - key: en:item:wish-past-perfect
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: wish + had + V3
+      pos: cấu trúc ước về quá khứ (tiếc nuối)
+    back:
+      meaning:
+        vi: Tiếc nuối về điều đã xảy ra (hoặc không xảy ra) trong quá khứ.
+      examples:
+        - target: I wish I had taken the climate crisis more seriously when I was younger.
+          translation:
+            vi: Giá mà hồi trẻ tôi đã coi khủng hoảng khí hậu nghiêm túc hơn.
+      confusion:
+        vi: Tiếc về quá khứ dùng had + V3, không dùng quá khứ đơn - I wish I had gone, không phải I wish I went (câu này lại nói về hiện tại/thói quen).
+
+  - key: en:item:if-only
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: If only …
+      ipa: UK /ɪf ˈəʊnli/ · US /ɪf ˈoʊnli/
+      pos: cấu trúc ước (nhấn mạnh)
+    back:
+      meaning:
+        vi: Giá mà… / Phải chi… - giống wish nhưng cảm xúc mạnh hơn, cùng quy tắc lùi thì.
+      examples:
+        - target: If only we had acted sooner!
+          translation:
+            vi: Giá mà chúng ta hành động sớm hơn!
+      confusion:
+        vi: If only + quá khứ đơn cho hiện tại, + had + V3 cho quá khứ. Câu thường đứng một mình, không cần mệnh đề kết quả.
+
+  - key: en:item:climate-change
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: climate change
+      ipa: /ˈklaɪmət tʃeɪndʒ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: biến đổi khí hậu
+      examples:
+        - target: Climate change is already affecting farmers in the Mekong Delta.
+          translation:
+            vi: Biến đổi khí hậu đang ảnh hưởng tới nông dân ở Đồng bằng sông Cửu Long.
+      pronunciation_note:
+        vi: Climate đọc /ˈklaɪmət/, âm cuối nhẹ /ət/, không đọc "clai-mây".
+      confusion:
+        vi: Không có the hay a - Climate change is…, không nói "The climate change".
+
+  - key: en:item:renewable-energy
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: renewable energy
+      ipa: UK /rɪˌnjuːəbl ˈenədʒi/ · US /rɪˌnuːəbl ˈenɚdʒi/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: năng lượng tái tạo
+      examples:
+        - target: Vietnam has invested heavily in renewable energy such as solar and wind power.
+          translation:
+            vi: Việt Nam đã đầu tư mạnh vào năng lượng tái tạo như điện mặt trời và điện gió.
+      pronunciation_note:
+        vi: Renewable nhấn âm thứ hai (new).
+      confusion:
+        vi: Renewable (tái tạo được) khác recycled (được tái chế từ đồ cũ).
+
+  - key: en:item:carbon-emissions
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: carbon emissions
+      ipa: UK /ˌkɑːbən iˈmɪʃnz/ · US /ˌkɑːrbən iˈmɪʃnz/
+      pos: danh từ (thường số nhiều)
+    back:
+      meaning:
+        vi: lượng khí thải carbon
+      examples:
+        - target: Many countries have promised to cut carbon emissions by 2050.
+          translation:
+            vi: Nhiều nước đã cam kết cắt giảm khí thải carbon vào năm 2050.
+      confusion:
+        vi: Động từ hay đi kèm là cut, reduce hoặc lower emissions; không dùng "decrease the emissions" kèm the khi nói chung.
+
+  - key: en:item:sustainable
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sustainable
+      ipa: /səˈsteɪnəbl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: bền vững (có thể duy trì lâu dài mà không gây hại môi trường)
+      examples:
+        - target: We need a more sustainable way of producing food.
+          translation:
+            vi: Chúng ta cần một cách sản xuất thực phẩm bền vững hơn.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (stain), âm đầu đọc nhẹ /sə/.
+      confusion:
+        vi: Danh từ là sustainability (sự bền vững) - viết dài, nhấn âm bi.
+
+  - key: en:item:pose-a-threat
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: pose a threat (to)
+      ipa: UK /ˌpəʊz ə ˈθret/ · US /ˌpoʊz ə ˈθret/
+      pos: cụm từ cố định (collocation)
+    back:
+      meaning:
+        vi: gây ra mối đe doạ (đối với)
+      examples:
+        - target: Rising sea levels pose a serious threat to coastal cities.
+          translation:
+            vi: Mực nước biển dâng gây ra mối đe doạ nghiêm trọng cho các thành phố ven biển.
+      pronunciation_note:
+        vi: Threat bắt đầu bằng /θ/ - đặt đầu lưỡi giữa hai hàm răng, không đọc thành "t" hay "th" tiếng Việt.
+      confusion:
+        vi: Động từ đi với threat là pose (trang trọng), không dùng "make a threat" (nghĩa là đe doạ ai đó).
+
+  - key: en:item:take-action
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: take action (on)
+      ipa: /ˌteɪk ˈækʃn/
+      pos: cụm từ cố định (collocation)
+    back:
+      meaning:
+        vi: hành động, có biện pháp (để giải quyết vấn đề)
+      examples:
+        - target: Governments must take action on air pollution now.
+          translation:
+            vi: Các chính phủ phải hành động để giải quyết ô nhiễm không khí ngay bây giờ.
+      confusion:
+        vi: Nói take action, không nói "do action" hay "make action"; action ở đây không đếm được nên không có an.
+
+  # ---------------- Bài 3: câu bị động ----------------
+  - key: en:item:passive-tenses
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: be (chia theo thì) + V3
+      pos: câu bị động các thì chính
+    back:
+      meaning:
+        vi: Câu bị động - nhấn vào hành động hoặc người/vật chịu tác động, thay vì người làm.
+      examples:
+        - target: Thousands of trees are cut down every year.
+          translation:
+            vi: Hàng nghìn cây bị chặt hạ mỗi năm.
+        - target: A new metro line is being built in Hanoi.
+          translation:
+            vi: Một tuyến tàu điện ngầm mới đang được xây ở Hà Nội.
+        - target: The law has been changed several times.
+          translation:
+            vi: Luật đã được sửa đổi nhiều lần.
+      confusion:
+        vi: Thì nằm ở be (is/was/is being/has been/will be), còn động từ chính luôn ở V3. Tiếng Việt dùng "bị/được" nhưng tiếng Anh không phân biệt tốt xấu.
+
+  - key: en:item:passive-modals
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: modal + be + V3 / modal + have been + V3
+      pos: bị động với động từ khuyết thiếu
+    back:
+      meaning:
+        vi: Bị động sau can, should, must, might… (hiện tại) và should have been… (quá khứ).
+      examples:
+        - target: Plastic bags should be banned in supermarkets.
+          translation:
+            vi: Túi ni lông nên bị cấm ở siêu thị.
+        - target: The accident could have been avoided.
+          translation:
+            vi: Vụ tai nạn lẽ ra đã có thể tránh được.
+      confusion:
+        vi: Sau modal luôn là be nguyên mẫu, không chia - should be banned, không phải "should is banned" hay "should banned".
+
+  - key: en:item:it-is-said-that
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: It is said / believed / thought that …
+      ipa: /ɪt ɪz ˈsed ðət/
+      pos: bị động khách quan
+    back:
+      meaning:
+        vi: Người ta nói / tin / cho rằng… (đưa thông tin khách quan, không nói rõ ai nói)
+      examples:
+        - target: It is widely believed that smartphones affect children's sleep.
+          translation:
+            vi: Nhiều người tin rằng điện thoại thông minh ảnh hưởng tới giấc ngủ của trẻ em.
+      confusion:
+        vi: Tiếng Việt nói "Người ta nói rằng", nhưng trong văn viết trang trọng tiếng Anh thường dùng It is said that thay vì People say that.
+
+  - key: en:item:be-said-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: S + is said / thought / believed + to V / to have V3
+      pos: bị động khách quan (chủ ngữ thật)
+    back:
+      meaning:
+        vi: (Ai/cái gì) được cho là… - đưa chủ ngữ thật lên đầu câu.
+      examples:
+        - target: The new app is said to be very popular among students.
+          translation:
+            vi: Ứng dụng mới được cho là rất phổ biến trong giới sinh viên.
+        - target: The company is believed to have lost millions.
+          translation:
+            vi: Công ty được cho là đã thua lỗ hàng triệu đô.
+      confusion:
+        vi: Dùng to have + V3 khi việc xảy ra trước lúc "người ta nói" - is believed to have lost (đã mất), khác is believed to lose.
+
+  - key: en:item:intransitive-no-passive
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: happen, occur, arrive, disappear - không có bị động
+      pos: nội động từ
+    back:
+      meaning:
+        vi: Những động từ không có tân ngữ (nội động từ) không bao giờ chia bị động.
+      examples:
+        - target: The accident happened at around 6 p.m.
+          translation:
+            vi: Vụ tai nạn xảy ra vào khoảng 6 giờ tối.
+      confusion:
+        vi: Người Việt hay nói "It was happened" vì nghĩ "được/bị xảy ra". Happen tự xảy ra, không ai "happen" nó, nên chỉ nói It happened.
+
+  - key: en:item:artificial-intelligence
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: artificial intelligence (AI)
+      ipa: UK /ˌɑːtɪfɪʃl ɪnˈtelɪdʒəns/ · US /ˌɑːrtɪfɪʃl ɪnˈtelɪdʒəns/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: trí tuệ nhân tạo
+      examples:
+        - target: Artificial intelligence is being used to mark students' essays.
+          translation:
+            vi: Trí tuệ nhân tạo đang được dùng để chấm bài luận của học sinh.
+      pronunciation_note:
+        vi: Artificial nhấn âm thứ ba (fi); intelligence nhấn âm thứ hai (tel).
+      confusion:
+        vi: Khi nói chung không dùng the - Artificial intelligence is changing…
+
+  - key: en:item:curriculum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: curriculum
+      ipa: /kəˈrɪkjələm/
+      pos: danh từ (số nhiều curricula)
+    back:
+      meaning:
+        vi: chương trình giảng dạy (toàn bộ các môn và nội dung của một trường/cấp học)
+      examples:
+        - target: Coding has been added to the primary school curriculum.
+          translation:
+            vi: Lập trình đã được đưa vào chương trình tiểu học.
+      pronunciation_note:
+        vi: Nhấn âm thứ hai (ri), đọc gần "cờ-RI-kiu-lầm".
+      confusion:
+        vi: Curriculum là cả chương trình; syllabus là đề cương của một môn hoặc một khoá học.
+
+  - key: en:item:tuition-fees
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: tuition fees
+      ipa: UK /tjuˈɪʃn fiːz/ · US /tuˈɪʃn fiːz/
+      pos: danh từ (số nhiều)
+    back:
+      meaning:
+        vi: học phí
+      examples:
+        - target: University tuition fees have been raised again this year.
+          translation:
+            vi: Học phí đại học năm nay lại bị tăng.
+      confusion:
+        vi: Dùng fees (số nhiều) khi nói học phí; không dịch thành "study money" hay "school fee money".
+
+  - key: en:item:critical-thinking
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: critical thinking
+      ipa: /ˌkrɪtɪkl ˈθɪŋkɪŋ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: tư duy phản biện
+      examples:
+        - target: Schools should focus more on critical thinking than memorisation.
+          translation:
+            vi: Trường học nên chú trọng tư duy phản biện hơn là học thuộc lòng.
+      confusion:
+        vi: Critical ở đây không mang nghĩa "chỉ trích" mà là "phân tích, đánh giá có lý lẽ".
+
+  - key: en:item:access-to
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: (have) access to
+      ipa: /ˈækses tə/
+      pos: danh từ + giới từ
+    back:
+      meaning:
+        vi: (có) khả năng tiếp cận / sử dụng (cái gì)
+      examples:
+        - target: Millions of children still do not have access to the internet.
+          translation:
+            vi: Hàng triệu trẻ em vẫn chưa được tiếp cận internet.
+      confusion:
+        vi: Danh từ access đi với to (access to education). Động từ access thì không có to - access the internet.
+
+  - key: en:item:screen-time
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: screen time
+      ipa: /ˈskriːn taɪm/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: thời gian dùng thiết bị điện tử (điện thoại, máy tính, TV)
+      examples:
+        - target: Parents are advised to limit their children's screen time.
+          translation:
+            vi: Cha mẹ được khuyên nên hạn chế thời gian dùng màn hình của con.
+      confusion:
+        vi: Không đếm được - nói too much screen time, không nói "too many screen times".
+
+  # ---------------- Bài 4: câu tường thuật ----------------
+  - key: en:item:reported-speech-backshift
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: said (that) + lùi thì
+      pos: câu tường thuật
+    back:
+      meaning:
+        vi: Khi thuật lại lời nói trong quá khứ, thì thường lùi một bậc - is → was, will → would, have done → had done.
+      examples:
+        - target: "\"We will build more parks.\" → The mayor said (that) they would build more parks."
+          translation:
+            vi: "\"Chúng tôi sẽ xây thêm công viên.\" → Thị trưởng nói rằng họ sẽ xây thêm công viên."
+      confusion:
+        vi: Tiếng Việt không đổi thì nên người học hay giữ nguyên will. Nhớ đổi cả đại từ và từ chỉ thời gian - tomorrow → the next day, here → there.
+
+  - key: en:item:reported-questions
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: asked + wh-word / if + S + V
+      pos: câu hỏi tường thuật
+    back:
+      meaning:
+        vi: Thuật lại câu hỏi - dùng trật tự câu kể (chủ ngữ trước động từ), không dùng do/did và không có dấu hỏi.
+      examples:
+        - target: She asked me where I lived.
+          translation:
+            vi: Cô ấy hỏi tôi sống ở đâu.
+        - target: The reporter asked if the plan would work.
+          translation:
+            vi: Phóng viên hỏi liệu kế hoạch có hiệu quả không.
+      confusion:
+        vi: Không nói "She asked me where did I live". Câu hỏi Yes/No dùng if hoặc whether.
+
+  - key: en:item:suggest-pattern
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: suggest + V-ing / suggest (that) + S + (should) V
+      ipa: UK /səˈdʒest/ · US /səɡˈdʒest/
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: đề nghị, gợi ý
+      examples:
+        - target: She suggested taking the bus.
+          translation:
+            vi: Cô ấy gợi ý đi xe buýt.
+        - target: He suggested that we should cycle to work.
+          translation:
+            vi: Anh ấy đề nghị chúng tôi đạp xe đi làm.
+      confusion:
+        vi: Không bao giờ nói "suggest me to do" (dịch từ "gợi ý tôi làm"). Dùng suggest that I (should) do hoặc suggest doing.
+
+  - key: en:item:deny-pattern
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: deny + V-ing / deny (that) …
+      ipa: /dɪˈnaɪ/
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: phủ nhận (đã làm điều gì)
+      examples:
+        - target: The company denied polluting the river.
+          translation:
+            vi: Công ty phủ nhận việc đã gây ô nhiễm dòng sông.
+      confusion:
+        vi: Sau deny là V-ing, không phải to V - không nói "denied to pollute". Deny đã mang nghĩa phủ định nên không thêm not.
+
+  - key: en:item:admit-pattern
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: admit + V-ing / admit (that) …
+      ipa: /ədˈmɪt/
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: thừa nhận (điều gì, thường là điều không hay)
+      examples:
+        - target: The minister admitted making a mistake.
+          translation:
+            vi: Bộ trưởng thừa nhận đã mắc sai lầm.
+        - target: He admitted that the project was behind schedule.
+          translation:
+            vi: Anh ấy thừa nhận rằng dự án bị chậm tiến độ.
+      confusion:
+        vi: Giống deny, admit đi với V-ing hoặc mệnh đề that, không đi với to V.
+
+  - key: en:item:warn-pattern
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: warn sb (not) to V / warn sb about sth / warn (that) …
+      ipa: UK /wɔːn/ · US /wɔːrn/
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: cảnh báo (ai đừng làm gì / về điều gì)
+      examples:
+        - target: Experts warned residents not to drink the tap water.
+          translation:
+            vi: Các chuyên gia cảnh báo người dân không được uống nước máy.
+        - target: Scientists have warned that the city could flood more often.
+          translation:
+            vi: Các nhà khoa học đã cảnh báo rằng thành phố có thể ngập thường xuyên hơn.
+      pronunciation_note:
+        vi: Warn đọc giống warm nhưng kết thúc bằng /n/ - đừng nhầm hai từ.
+      confusion:
+        vi: Phủ định đặt not trước to - warned us not to go, không nói "warned us to not go" trong văn trang trọng hay "warned us don't go".
+
+  - key: en:item:traffic-congestion
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: traffic congestion
+      ipa: /ˈtræfɪk kənˈdʒestʃən/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: ùn tắc giao thông (cách nói trang trọng của traffic jams)
+      examples:
+        - target: Traffic congestion costs the city billions of dong every year.
+          translation:
+            vi: Ùn tắc giao thông khiến thành phố thiệt hại hàng tỷ đồng mỗi năm.
+      confusion:
+        vi: Congestion không đếm được; khi nói về từng vụ tắc đường thì dùng a traffic jam.
+
+  - key: en:item:affordable-housing
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: affordable housing
+      ipa: UK /əˌfɔːdəbl ˈhaʊzɪŋ/ · US /əˌfɔːrdəbl ˈhaʊzɪŋ/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: nhà ở giá phải chăng (người thu nhập trung bình mua/thuê được)
+      examples:
+        - target: Young workers are struggling to find affordable housing in big cities.
+          translation:
+            vi: Người lao động trẻ đang chật vật tìm nhà ở giá phải chăng tại các thành phố lớn.
+      pronunciation_note:
+        vi: Housing đọc /ˈhaʊzɪŋ/ với âm /z/, khác house /haʊs/ (âm /s/).
+      confusion:
+        vi: Housing không đếm được (nhà ở nói chung) - không nói "affordable housings".
+
+  - key: en:item:public-transport
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: public transport
+      ipa: UK /ˌpʌblɪk ˈtrænspɔːt/ · US /ˌpʌblɪk ˈtrænspɔːrt/
+      pos: danh từ (không đếm được)
+    back:
+      meaning:
+        vi: giao thông công cộng
+      examples:
+        - target: If public transport were more reliable, I would leave my motorbike at home.
+          translation:
+            vi: Nếu giao thông công cộng đáng tin cậy hơn, tôi sẽ để xe máy ở nhà.
+      confusion:
+        vi: Tiếng Anh Mỹ thường nói public transportation. Dùng by public transport hoặc on public transport, không có the.
+
+  - key: en:item:green-space
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: green space
+      ipa: /ˌɡriːn ˈspeɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: không gian xanh (công viên, vườn hoa, bãi cỏ trong đô thị)
+      examples:
+        - target: Many new housing projects have very little green space.
+          translation:
+            vi: Nhiều dự án nhà ở mới có rất ít không gian xanh.
+      confusion:
+        vi: Có thể đếm được (a green space, green spaces) hoặc dùng không đếm được (more green space) khi nói chung.
+
+  - key: en:item:cost-of-living
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: the cost of living
+      ipa: UK /ðə ˌkɒst əv ˈlɪvɪŋ/ · US /ðə ˌkɑːst əv ˈlɪvɪŋ/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: chi phí sinh hoạt
+      examples:
+        - target: The cost of living in Ho Chi Minh City has risen sharply.
+          translation:
+            vi: Chi phí sinh hoạt ở Thành phố Hồ Chí Minh đã tăng mạnh.
+      confusion:
+        vi: Luôn có the - the cost of living. Cách nói tương đương là living costs (số nhiều), ít khi dùng living cost số ít.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:all-things-considered
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: All things considered, …
+      ipa: UK /ˌɔːl ˈθɪŋz kənˈsɪdəd/ · US /ˌɔːl ˈθɪŋz kənˈsɪdɚd/
+      pos: cụm kết luận
+    back:
+      meaning:
+        vi: Xét mọi mặt, … / Cân nhắc tất cả, … (dùng để đưa ra kết luận sau khi đã bàn hai phía)
+      examples:
+        - target: All things considered, I believe the benefits of the ban outweigh the drawbacks.
+          translation:
+            vi: Xét mọi mặt, tôi tin rằng lợi ích của lệnh cấm lớn hơn bất lợi.
+      confusion:
+        vi: Dùng ở đoạn kết của bài luận, tương tự To sum up hay On balance. Không viết "All things are considered".
+
+  - key: en:item:it-could-be-argued
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: It could be argued that …
+      ipa: UK /ɪt kʊd bi ˈɑːɡjuːd ðət/ · US /ɪt kʊd bi ˈɑːrɡjuːd ðət/
+      pos: cụm nêu ý kiến đối lập (bị động)
+    back:
+      meaning:
+        vi: Có thể có ý kiến cho rằng… (nêu quan điểm phía bên kia một cách khách quan)
+      examples:
+        - target: It could be argued that banning cars would hurt small businesses.
+          translation:
+            vi: Có thể có ý kiến cho rằng cấm ô tô sẽ gây thiệt hại cho các doanh nghiệp nhỏ.
+      confusion:
+        vi: Đây là bị động với modal (could be + V3) - một cách giữ khoảng cách, không nói đó là ý kiến của chính bạn.

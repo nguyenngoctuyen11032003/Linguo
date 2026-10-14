@@ -1,0 +1,442 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:yet-and-used-to
+order_index: 4
+level: b1
+title:
+  vi: Rồi, chưa, vừa mới - và "hồi trước từng…"
+objectives:
+  - vi: Dùng already, yet, just với present perfect để nói việc đã làm rồi, chưa làm, vừa mới làm.
+  - vi: Kể thói quen và trạng thái ngày xưa bằng used to, kể cả câu phủ định và câu hỏi.
+  - vi: Nói về những thay đổi trong cuộc sống với not… any more, no longer, nowadays.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [en:lesson:how-long-have-you]
+items:
+  - item: en:item:already-yet-just
+  - item: en:item:used-to
+  - item: en:item:didnt-use-to
+  - item: en:item:not-any-more
+  - item: en:item:no-longer
+  - item: en:item:move-house
+  - item: en:item:grow-up
+  - item: en:item:give-up
+  - item: en:item:lifestyle
+  - item: en:item:countryside
+  - item: en:item:nowadays
+  - item: en:item:pp-vs-past-simple
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Mình đặt vé rồi", "Bạn soạn đồ chưa?", "Tụi mình vừa mới đến" và kể "Hồi trước mình từng sống ở quê, giờ thì không nữa".
+  - type: explain
+    text:
+      vi: Already (rồi), yet (chưa) và just (vừa mới) thường đi với present perfect. Already và just đứng giữa have và V3 - I've already booked, we've just arrived. Yet đứng cuối câu hỏi và câu phủ định - Have you packed yet? I haven't packed yet.
+  - type: explain
+    text:
+      vi: Used to + động từ nguyên mẫu kể thói quen hoặc trạng thái trong quá khứ mà nay không còn - I used to live in the countryside. Tiếng Việt nói "hồi trước từng…", và người học hay viết nhầm thành use to vì chữ d gần như không nghe thấy.
+  - type: explain
+    text:
+      vi: Câu phủ định và câu hỏi dùng did, nên bỏ d - I didn't use to like vegetables. Did you use to play outside? Để nói thói quen đó đã chấm dứt, thêm not… any more hoặc no longer - I don't smoke any more. She no longer lives here.
+  - type: deep_explain
+    text:
+      vi: Used to chỉ có ở quá khứ, không có dạng hiện tại - muốn nói thói quen bây giờ thì dùng hiện tại đơn, thường kèm nowadays. Đừng nhầm used to + V (hồi trước từng) với be used to + V-ing (đã quen với) - I'm used to getting up early nghĩa là "mình quen dậy sớm rồi". Với việc chỉ xảy ra một lần (I moved house in 2015), dùng quá khứ đơn, không dùng used to.
+  - type: example
+    target: Have you packed yet? - Yes, I've already packed.
+    target_lang: en
+    translation:
+      vi: Bạn soạn đồ chưa? - Rồi, mình soạn xong rồi.
+    note:
+      vi: Yet ở cuối câu hỏi; already đứng giữa have và V3.
+  - type: example
+    target: We've just arrived at the hotel.
+    target_lang: en
+    translation:
+      vi: Tụi mình vừa mới đến khách sạn.
+    note:
+      vi: Just = vừa mới, đứng giữa have và V3.
+  - type: example
+    target: I used to live in the countryside, but nowadays I live in Hanoi.
+    target_lang: en
+    translation:
+      vi: Hồi trước mình sống ở quê, còn bây giờ mình sống ở Hà Nội.
+    note:
+      vi: Used to cho quá khứ, nowadays + hiện tại đơn cho hiện tại.
+  - type: example
+    target: My dad didn't use to cook, but he gave up his old lifestyle and now he cooks every day.
+    target_lang: en
+    translation:
+      vi: Hồi trước bố mình không nấu ăn, nhưng bố đã bỏ lối sống cũ và giờ ngày nào cũng nấu.
+    note:
+      vi: Didn't use to - sau did không có d. Gave up là quá khứ đơn vì đó là một việc xảy ra một lần.
+  - type: common_mistake
+    wrong: I use to live in the countryside.
+    right: I used to live in the countryside.
+    target_lang: en
+    note:
+      vi: Câu khẳng định luôn viết used to, có d. Chữ d bị nuốt khi nói nhanh nên người học dễ bỏ sót khi viết.
+  - type: common_mistake
+    wrong: Did you used to play football?
+    right: Did you use to play football?
+    target_lang: en
+    note:
+      vi: Sau did, động từ trở về nguyên mẫu - did use, giống did go, did play.
+  - type: common_mistake
+    wrong: I have packed my suitcase yet.
+    right: I have already packed my suitcase.
+    target_lang: en
+    note:
+      vi: Yet chỉ dùng trong câu hỏi và câu phủ định. Câu khẳng định "rồi" dùng already, đứng giữa have và V3.
+  - type: summary
+    points:
+      - vi: Already (rồi) và just (vừa mới) - giữa have và V3.
+      - vi: Yet - cuối câu hỏi và câu phủ định (Have you…yet? I haven't…yet).
+      - vi: Used to + V - hồi trước từng (nay không còn). Không viết use to trong câu khẳng định.
+      - vi: Didn't use to / Did you use to…? - sau did bỏ d.
+      - vi: Thay đổi - not… any more, no longer, nowadays + hiện tại đơn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:yet-used-to-mcq-yet
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:already-yet-just
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Have you booked the hotel ___?"
+      stem_lang: vi
+      options:
+        - { id: y5a, text: yet, lang: en }
+        - { id: l2h, text: since, lang: en }
+        - { id: d8w, text: ago, lang: en }
+        - { id: m3r, text: never, lang: en }
+    answer:
+      correct_option_id: y5a
+    explanation:
+      vi: Yet đứng cuối câu hỏi present perfect, nghĩa là "chưa / chưa…à?". Since cần một mốc phía sau, ago đi với quá khứ đơn, never không đứng cuối câu hỏi.
+    display_answer: yet
+
+  - key: en:exercise:yet-used-to-mcq-used-to
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:used-to
+    prompt:
+      stem: "Chọn đáp án đúng: I ___ live in the countryside, but now I live in Hanoi."
+      stem_lang: vi
+      options:
+        - { id: u4e, text: used to, lang: en }
+        - { id: g9j, text: use to, lang: en }
+        - { id: z3s, text: am used to, lang: en }
+        - { id: w6k, text: was use to, lang: en }
+    answer:
+      correct_option_id: u4e
+    explanation:
+      vi: Kể việc hồi trước từng làm (nay không còn) dùng used to + V. Use to thiếu d; am used to là "đã quen với" và cần V-ing phía sau; was use to sai cấu trúc.
+    display_answer: used to
+
+  - key: en:exercise:yet-used-to-listen-just
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:already-yet-just
+    prompt:
+      audio_asset_id: null
+      fallback_text: We've just arrived at the hotel.
+      options:
+        - { id: j7n, text: Tụi mình vừa mới đến khách sạn., lang: vi }
+        - { id: b4c, text: Tụi mình sắp đến khách sạn., lang: vi }
+        - { id: x1q, text: Tụi mình chỉ ở khách sạn thôi., lang: vi }
+        - { id: f5o, text: Tụi mình đến khách sạn lâu rồi., lang: vi }
+    answer:
+      correct_option_id: j7n
+    explanation:
+      vi: Just đứng giữa have và V3 nghĩa là "vừa mới". Câu không nói về tương lai (sắp), và just ở đây không mang nghĩa "chỉ".
+    display_answer: Tụi mình vừa mới đến khách sạn.
+
+  - key: en:exercise:yet-used-to-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:already-yet-just
+    prompt:
+      template: "A: Have you packed {{b1}}? B: Yes, I've {{b2}} packed. I did it last night."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Bạn soạn đồ chưa? - Rồi, mình soạn rồi. Mình soạn từ tối qua."
+        - "Gợi ý: ô 1 đứng cuối câu hỏi (chưa); ô 2 đứng giữa have và V3 (rồi)."
+    answer:
+      blanks:
+        b1: [yet]
+        b2: [already]
+    known_wrong:
+      - answer: still
+        feedback_vi: Still (vẫn) không dùng ở đây. Câu hỏi "chưa" dùng yet; câu khẳng định "rồi" dùng already.
+        error_tag: already_yet
+      - answer: ever
+        feedback_vi: Ever hỏi về trải nghiệm trong đời. Hỏi "đã làm chưa" dùng yet.
+        error_tag: already_yet
+      - answer: just
+        feedback_vi: Just là "vừa mới", không hợp với "từ tối qua". Dùng already.
+        error_tag: already_yet
+    explanation:
+      vi: Yet đứng cuối câu hỏi present perfect. Trong câu khẳng định, "rồi" là already, đứng giữa have và V3.
+    display_answer: "A: Have you packed yet? B: Yes, I've already packed. I did it last night."
+
+  - key: en:exercise:yet-used-to-order-countryside
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:countryside
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Hồi trước mình từng sống ở quê.\""
+      tokens:
+        - { id: c-countryside, text: countryside }
+        - { id: c-live, text: live }
+        - { id: c-used, text: used }
+        - { id: c-the, text: the }
+        - { id: c-i, text: I }
+        - { id: c-in, text: in }
+        - { id: c-to, text: to }
+        - { id: c-use, text: use }
+        - { id: c-lived, text: lived }
+    answer:
+      orders:
+        - [c-i, c-used, c-to, c-live, c-in, c-the, c-countryside]
+    explanation:
+      vi: Used to + động từ nguyên mẫu (live). Câu khẳng định dùng used, không dùng use; vùng quê là the countryside, đi với in.
+    display_answer: I used to live in the countryside.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:yet-used-to-fill-gave-up
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:give-up
+    prompt:
+      template: "My uncle {{b1}} (smoke) a lot, but he {{b2}} it up three years ago. He doesn't smoke any more."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [used to smoke]
+        b2: [gave]
+    known_wrong:
+      - answer: use to smoke
+        feedback_vi: Câu khẳng định viết used to, có d - used to smoke.
+        error_tag: use_to
+      - answer: was used to smoke
+        feedback_vi: Be used to là "quen với". Hồi trước từng làm thì dùng used to + V - used to smoke.
+        error_tag: used_to_be_used_to
+      - answer: has given
+        feedback_vi: Three years ago là mốc đã kết thúc, nên dùng quá khứ đơn - gave.
+        error_tag: finished_time
+      - answer: gived
+        feedback_vi: Give là động từ bất quy tắc - give, gave, given.
+        error_tag: irregular_verb
+    explanation:
+      vi: Thói quen ngày xưa (nay không còn) dùng used to + V. Việc bỏ thuốc xảy ra một lần, có mốc three years ago, nên dùng quá khứ đơn - gave up.
+    display_answer: My uncle used to smoke a lot, but he gave it up three years ago. He doesn't smoke any more.
+
+  - key: en:exercise:yet-used-to-translate-vegetables
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:didnt-use-to
+    prompt:
+      source_text: Hồi trước mình không thích ăn rau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I didn't use to like vegetables.
+        - I didn't use to like eating vegetables.
+        - I never used to like vegetables.
+        - I never used to like eating vegetables.
+        - I used not to like vegetables.
+        - I didn't like vegetables before.
+        - I didn't like eating vegetables before.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I didn't used to like vegetables.
+        feedback_vi: Sau did/didn't, động từ ở dạng nguyên mẫu - didn't use to.
+        error_tag: did_used
+      - answer: I use to not like vegetables.
+        feedback_vi: Phủ định của used to là didn't use to - I didn't use to like vegetables.
+        error_tag: use_to
+      - answer: I wasn't used to like vegetables.
+        feedback_vi: Be used to nghĩa là "quen với". "Hồi trước không…" dùng didn't use to + V.
+        error_tag: used_to_be_used_to
+      - answer: I don't use to like vegetables.
+        feedback_vi: Used to chỉ có ở quá khứ, nên phủ định dùng didn't - I didn't use to like vegetables.
+        error_tag: use_to
+    explanation:
+      vi: "\"Hồi trước không…\" là didn't use to + V; sau didn't động từ trở về nguyên mẫu nên không có d. Cũng có thể nói I never used to like vegetables."
+    display_answer: I didn't use to like vegetables.
+
+  - key: en:exercise:yet-used-to-translate-tickets
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:already-yet-just
+    prompt:
+      source_text: Bạn đã đặt vé chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Have you booked the tickets yet?
+        - Have you booked the ticket yet?
+        - Have you booked your tickets yet?
+        - Have you booked your ticket yet?
+        - Have you bought the tickets yet?
+        - Have you bought the ticket yet?
+        - Have you booked the tickets already?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Have you yet booked the tickets?
+        feedback_vi: Yet đứng cuối câu - Have you booked the tickets yet?
+        error_tag: yet_position
+      - answer: Did you book the tickets yet?
+        feedback_vi: Một số người Mỹ nói vậy khi nói chuyện thân mật, nhưng cách chuẩn là Have you booked the tickets yet?
+        error_tag: tense_choice
+      - answer: Have you book the tickets yet?
+        feedback_vi: Sau have cần V3 - booked.
+        error_tag: past_participle
+      - answer: You have booked the tickets yet?
+        feedback_vi: Câu hỏi phải đảo have lên trước you.
+        error_tag: question_order
+    explanation:
+      vi: "\"Đã… chưa?\" hỏi về việc tính đến bây giờ, nên dùng Have you + V3 + yet? Yet đứng cuối câu."
+    display_answer: Have you booked the tickets yet?
+
+  # ---------------- application ----------------
+  - key: en:exercise:yet-used-to-mcq-meat
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:not-any-more
+    prompt:
+      stem: "Bạn muốn nói với bạn mới quen rằng trước đây bạn ăn thịt, nhưng giờ thì không ăn nữa. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: v8m, text: "I used to eat meat, but I don't any more.", lang: en }
+        - { id: k1t, text: "I use to eat meat, but I don't any more.", lang: en }
+        - { id: e4z, text: "I am used to eat meat, but now I don't.", lang: en }
+        - { id: o7p, text: "I used to eat meat, but I don't no more.", lang: en }
+    answer:
+      correct_option_id: v8m
+    explanation:
+      vi: Used to + V kể thói quen cũ, rồi not… any more cho biết bây giờ đã thôi. Use to thiếu d; am used to là "quen với"; don't no more là phủ định hai lần.
+    display_answer: "I used to eat meat, but I don't any more."
+
+  - key: en:exercise:yet-used-to-translate-no-longer
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:no-longer
+    prompt:
+      source_text: She no longer lives in Hanoi. She moved to the countryside last year.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô ấy không còn sống ở Hà Nội nữa. Cô ấy đã chuyển về quê năm ngoái.
+        - Cô ấy không còn sống ở Hà Nội nữa. Cô ấy chuyển về quê năm ngoái.
+        - Cô ấy không còn sống ở Hà Nội nữa. Năm ngoái cô ấy đã chuyển về quê.
+        - Cô ấy không còn sống ở Hà Nội nữa. Năm ngoái cô ấy chuyển về quê.
+        - Cô ấy không còn sống ở Hà Nội nữa. Cô ấy đã chuyển về nông thôn năm ngoái.
+        - Cô ấy không còn sống ở Hà Nội nữa. Năm ngoái cô ấy đã chuyển về nông thôn.
+        - Cô ấy không sống ở Hà Nội nữa. Cô ấy đã chuyển về quê năm ngoái.
+        - Cô ấy không sống ở Hà Nội nữa. Năm ngoái cô ấy chuyển về quê.
+        - Cô ấy không còn ở Hà Nội nữa. Cô ấy đã chuyển về quê năm ngoái.
+        - Chị ấy không còn sống ở Hà Nội nữa. Chị ấy đã chuyển về quê năm ngoái.
+        - Chị ấy không còn sống ở Hà Nội nữa. Năm ngoái chị ấy chuyển về quê.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cô ấy vẫn sống ở Hà Nội. Cô ấy đã chuyển về quê năm ngoái.
+        feedback_vi: No longer là "không còn… nữa", không phải "vẫn".
+        error_tag: word_meaning
+    explanation:
+      vi: No longer lives là "không còn sống… nữa". Moved to the countryside last year là "chuyển về quê năm ngoái" - quá khứ đơn vì có mốc last year.
+    display_answer: Cô ấy không còn sống ở Hà Nội nữa. Cô ấy đã chuyển về quê năm ngoái.
+
+  - key: en:exercise:yet-used-to-translate-grew-up
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:grow-up
+    prompt:
+      source_text: Mình lớn lên ở một ngôi làng nhỏ, nhưng bây giờ mình sống ở thành phố.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I grew up in a small village, but now I live in the city.
+        - I grew up in a small village, but I live in the city now.
+        - I grew up in a small village, but nowadays I live in the city.
+        - I grew up in a small village, but I now live in the city.
+        - I grew up in a small village, but now I live in a city.
+        - I grew up in a small village, but I live in a city now.
+        - I grew up in a little village, but now I live in the city.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I grow up in a small village, but now I live in the city.
+        feedback_vi: Việc lớn lên đã xong trong quá khứ - dùng grew up.
+        error_tag: verb_form
+      - answer: I growed up in a small village, but now I live in the city.
+        feedback_vi: Grow là động từ bất quy tắc - grow, grew, grown.
+        error_tag: irregular_verb
+      - answer: I was grown up in a small village, but now I live in the city.
+        feedback_vi: Grow up không dùng ở thể bị động - I grew up.
+        error_tag: verb_form
+      - answer: I grew up in a small village, but now I am living in the city.
+        feedback_vi: Nơi ở lâu dài hiện nay dùng hiện tại đơn - now I live in the city.
+        error_tag: tense_choice
+    explanation:
+      vi: Grow up có quá khứ bất quy tắc là grew up. Nơi bạn sống lâu dài bây giờ dùng hiện tại đơn, có thể thêm now hoặc nowadays.
+    display_answer: I grew up in a small village, but now I live in the city.
+
+  - key: en:exercise:yet-used-to-order-moved
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:move-house
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Nhà mình vừa mới chuyển nhà.\""
+      tokens:
+        - { id: m-house, text: house }
+        - { id: m-moved, text: moved }
+        - { id: m-just, text: just }
+        - { id: m-weve, text: We've }
+        - { id: m-yet, text: yet }
+        - { id: m-move, text: move }
+    answer:
+      orders:
+        - [m-weve, m-just, m-moved, m-house]
+    explanation:
+      vi: Just (vừa mới) đứng giữa have và V3 - We've just moved. Move house là chuyển nhà; yet không dùng trong câu khẳng định.
+    display_answer: We've just moved house.

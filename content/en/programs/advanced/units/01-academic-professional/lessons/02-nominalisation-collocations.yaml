@@ -1,0 +1,423 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:nominalisation-collocations
+order_index: 2
+level: c1
+title:
+  vi: Danh từ hoá & collocation học thuật
+objectives:
+  - vi: Chuyển câu dùng động từ sang dạng danh từ hoá (decide → make a decision, implement → the implementation of).
+  - vi: Dùng đúng collocation học thuật và công việc - conduct research, draw a conclusion, address an issue, a significant increase in.
+  - vi: Dùng research như danh từ không đếm được.
+estimated_minutes: 15
+skills: [grammar, vocabulary, writing]
+prerequisites: [en:lesson:hedging-softening]
+items:
+  - item: en:item:nominalisation
+  - item: en:item:make-a-decision
+  - item: en:item:implementation
+  - item: en:item:research-uncountable
+  - item: en:item:conduct-research
+  - item: en:item:draw-a-conclusion
+  - item: en:item:address-an-issue
+  - item: en:item:significant-increase
+  - item: en:item:carry-out-an-analysis
+  - item: en:item:reach-an-agreement
+  - item: en:item:take-into-account
+  - item: en:item:pose-a-challenge
+  - item: en:item:findings-suggest
+    role: reuse
+  - item: en:item:considerably
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được câu kiểu báo cáo như "The implementation of the new system led to a significant increase in productivity" thay vì "We used the new system and people worked much more".
+  - type: explain
+    text:
+      vi: Văn học thuật và báo cáo hay biến hành động thành danh từ - decide → a decision, analyse → an analysis, implement → the implementation of. Câu trở nên khách quan hơn vì trọng tâm là sự việc, không phải người làm.
+  - type: explain
+    text:
+      vi: Khi đã có danh từ, bạn cần động từ đi kèm đúng (collocation) - make a decision, conduct research, draw a conclusion, reach an agreement. Người Việt hay dịch từng chữ ("làm quyết định" → do a decision, "rút ra kết luận" → take out a conclusion), nên cần học theo cụm.
+  - type: explain
+    text:
+      vi: Research là danh từ không đếm được, dù tiếng Việt nói "một nghiên cứu", "các nghiên cứu". Không viết a research hay researches; dùng research, a study, studies hoặc a piece of research.
+  - type: deep_explain
+    text:
+      vi: Mẫu chuyển phổ biến - S + V + O → The + N + of + O + V(nhẹ). Ví dụ "The government reduced taxes, so consumers spent more" → "The reduction in taxes led to an increase in consumer spending". Chú ý giới từ - an increase/decrease/reduction in (cái gì), an increase of (bao nhiêu), research into/on.
+  - type: example
+    target: The committee made a decision to postpone the launch.
+    target_lang: en
+    translation:
+      vi: Uỷ ban đã quyết định hoãn việc ra mắt.
+    note:
+      vi: Make a decision, không phải do a decision.
+  - type: example
+    target: The implementation of the scheme posed a serious challenge to local authorities.
+    target_lang: en
+    translation:
+      vi: Việc triển khai chương trình đã đặt ra thách thức nghiêm trọng cho chính quyền địa phương.
+    note:
+      vi: Danh từ hoá + of; pose a challenge to là collocation trang trọng.
+  - type: example
+    target: Recent research into consumer habits shows a significant increase in mobile payments.
+    target_lang: en
+    translation:
+      vi: Các nghiên cứu gần đây về thói quen tiêu dùng cho thấy thanh toán di động tăng đáng kể.
+    note:
+      vi: Research không đếm được nên động từ là shows; an increase in + lĩnh vực tăng.
+  - type: example
+    target: Before drawing any conclusions, we need to take regional differences into account.
+    target_lang: en
+    translation:
+      vi: Trước khi rút ra kết luận nào, chúng ta cần tính đến sự khác biệt giữa các vùng.
+    note:
+      vi: Draw conclusions và take something into account là hai collocation rất hay gặp trong báo cáo.
+  - type: common_mistake
+    wrong: We did many researches about this issue.
+    right: We conducted a great deal of research into this issue.
+    target_lang: en
+    note:
+      vi: Research không đếm được - không thêm -s, không dùng many. Động từ đi kèm là conduct/carry out/do, giới từ là into/on.
+  - type: common_mistake
+    wrong: The manager will do a decision tomorrow.
+    right: The manager will make a decision tomorrow.
+    target_lang: en
+    note:
+      vi: Tiếng Việt "làm/đưa ra quyết định" nhưng tiếng Anh cố định là make (hoặc take ở Anh Anh), không bao giờ do.
+  - type: common_mistake
+    wrong: The report doesn't address to the issue of costs.
+    right: The report does not address the issue of costs.
+    target_lang: en
+    note:
+      vi: Address là ngoại động từ nên không cần to. Văn trang trọng cũng tránh viết tắt doesn't.
+  - type: summary
+    points:
+      - vi: Danh từ hoá - decide → make a decision, implement → the implementation of, analyse → carry out an analysis.
+      - vi: Học collocation theo cụm - conduct research, draw a conclusion, address an issue, reach an agreement, pose a challenge.
+      - vi: An increase in + cái tăng; an increase of + mức tăng.
+      - vi: Research không đếm được - research shows, a study, studies.
+      - vi: Take something into account; tân ngữ dài thì đặt sau - take into account the fact that….
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:nominal-mcq-research
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:research-uncountable
+    prompt:
+      stem: "Câu nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: v2h, text: Several researches have been done on this topic., lang: en }
+        - { id: a8u, text: A research shows that the topic is important., lang: en }
+        - { id: l5z, text: Considerable research has been conducted on this topic., lang: en }
+        - { id: o3m, text: Many researches show that the topic is important., lang: en }
+    answer:
+      correct_option_id: l5z
+    explanation:
+      vi: Research là danh từ không đếm được nên không đi với a, many, several và không thêm -s. Considerable research has been conducted vừa đúng ngữ pháp vừa trang trọng.
+    display_answer: Considerable research has been conducted on this topic.
+
+  - key: en:exercise:nominal-mcq-collocation
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:draw-a-conclusion
+    prompt:
+      stem: "Chọn động từ đúng: It is too early to ___ any firm conclusions."
+      stem_lang: vi
+      options:
+        - { id: j6c, text: draw, lang: en }
+        - { id: p1r, text: take out, lang: en }
+        - { id: f4g, text: do, lang: en }
+        - { id: y7s, text: pull, lang: en }
+    answer:
+      correct_option_id: j6c
+    explanation:
+      vi: Collocation là draw a conclusion (hoặc reach a conclusion). Take out là dịch từng chữ từ "rút ra", không dùng với conclusion.
+    display_answer: draw
+
+  - key: en:exercise:nominal-listen-increase
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:significant-increase
+    prompt:
+      audio_asset_id: null
+      fallback_text: There has been a significant increase in online sales this quarter.
+      options:
+        - { id: i9b, text: Doanh số bán hàng trực tuyến quý này đã tăng đáng kể., lang: vi }
+        - { id: e2w, text: Doanh số bán hàng trực tuyến quý này đã giảm đáng kể., lang: vi }
+        - { id: t5k, text: Doanh số bán hàng trực tuyến quý này tăng nhẹ., lang: vi }
+        - { id: m8q, text: Doanh số bán hàng tại cửa hàng quý này đã tăng đáng kể., lang: vi }
+    answer:
+      correct_option_id: i9b
+    explanation:
+      vi: A significant increase in là "sự gia tăng đáng kể về". Online sales là bán hàng trực tuyến, không phải tại cửa hàng; significant không phải "nhẹ".
+    display_answer: Doanh số bán hàng trực tuyến quý này đã tăng đáng kể.
+
+  - key: en:exercise:nominal-fill-implementation-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:implementation
+    prompt:
+      template: "The {{b1}} of the new policy led to a {{b2}} in costs."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 9 }
+      hint_levels:
+        - "Nghĩa của câu: Việc triển khai chính sách mới đã giúp giảm chi phí."
+        - "Gợi ý: ô 1 là danh từ của implement; ô 2 là danh từ của reduce."
+    answer:
+      blanks:
+        b1: [implementation]
+        b2: [reduction, decrease]
+    known_wrong:
+      - answer: implement
+        feedback_vi: Sau The và trước of cần danh từ - implementation.
+        error_tag: word_form
+      - answer: reduce
+        feedback_vi: Sau a cần danh từ - a reduction in costs.
+        error_tag: word_form
+      - answer: implementing
+        feedback_vi: Dạng chuẩn trong văn trang trọng là danh từ implementation (the implementation of).
+        error_tag: word_form
+    explanation:
+      vi: Danh từ hoá - implement → implementation, reduce → reduction. Mẫu the + N + of và a reduction in + cái giảm là mẫu điển hình của báo cáo.
+    display_answer: The implementation of the new policy led to a reduction in costs.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:nominal-fill-collocations
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:conduct-research
+    prompt:
+      template: "Our team {{b1}} research into customer complaints and finally {{b2}} an agreement with the supplier."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [conducted, did]
+        b2: [reached]
+    known_wrong:
+      - answer: made
+        feedback_vi: Không nói make research hay make an agreement trong nghĩa này; dùng conduct research và reach an agreement.
+        error_tag: collocation
+      - answer: got
+        feedback_vi: Get an agreement không tự nhiên; dùng reach an agreement.
+        error_tag: collocation
+      - answer: researched
+        feedback_vi: Ô trống cần động từ đi với danh từ research - conducted research.
+        error_tag: collocation
+    explanation:
+      vi: Research đi với conduct/carry out/do; agreement đi với reach hoặc come to. Cả hai câu ở quá khứ nên dùng conducted, reached.
+    display_answer: Our team conducted research into customer complaints and finally reached an agreement with the supplier.
+
+  - key: en:exercise:nominal-translate-decision
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:make-a-decision
+    prompt:
+      source_text: Hội đồng quản trị sẽ đưa ra quyết định cuối cùng vào tuần sau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The board will make a final decision next week.
+        - The board will make the final decision next week.
+        - The board will make its final decision next week.
+        - The board will take a final decision next week.
+        - The board will take the final decision next week.
+        - The board of directors will make a final decision next week.
+        - The board of directors will make the final decision next week.
+        - The board will reach a final decision next week.
+        - Next week, the board will make a final decision.
+        - Next week, the board will make the final decision.
+        - The board is going to make a final decision next week.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The board will do a final decision next week.
+        feedback_vi: Không dùng do với decision - make a decision.
+        error_tag: collocation
+      - answer: The board will decision next week.
+        feedback_vi: Decision là danh từ; cần make a decision hoặc dùng động từ decide.
+        error_tag: word_form
+      - answer: The board will make final decision next week.
+        feedback_vi: Decision là danh từ đếm được số ít nên cần a hoặc the.
+        error_tag: article
+    explanation:
+      vi: “Đưa ra quyết định” là make a decision (Anh Anh cũng nói take a decision). Decision đếm được nên cần a/the.
+    display_answer: The board will make a final decision next week.
+
+  - key: en:exercise:nominal-translate-address
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:address-an-issue
+    prompt:
+      source_text: Bản báo cáo không giải quyết vấn đề chi phí nhà ở.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The report does not address the issue of housing costs.
+        - The report doesn't address the issue of housing costs.
+        - The report fails to address the issue of housing costs.
+        - The report does not address the problem of housing costs.
+        - The report does not address the issue of housing prices.
+        - The report does not address housing costs.
+        - The report fails to address housing costs.
+        - The report does not deal with the issue of housing costs.
+        - The report does not tackle the issue of housing costs.
+        - The report did not address the issue of housing costs.
+        - The report failed to address the issue of housing costs.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The report does not address to the issue of housing costs.
+        feedback_vi: Address là ngoại động từ, không cần to.
+        error_tag: preposition
+      - answer: The report does not solve to the issue of housing costs.
+        feedback_vi: Solve không đi với to; trong báo cáo, address the issue tự nhiên hơn.
+        error_tag: preposition
+      - answer: The report not address the issue of housing costs.
+        feedback_vi: Câu phủ định hiện tại đơn cần does not.
+        error_tag: auxiliary
+    explanation:
+      vi: “Giải quyết (đề cập và xử lý) vấn đề” trong báo cáo là address the issue. Address không có giới từ theo sau; fails to address mang sắc thái phê bình.
+    display_answer: The report does not address the issue of housing costs.
+
+  # ---------------- application ----------------
+  - key: en:exercise:nominal-order-account
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:take-into-account
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Nghiên cứu này không tính đến sự khác biệt giữa các vùng.\""
+      tokens:
+        - { id: w-account, text: account }
+        - { id: w-take, text: take }
+        - { id: w-not, text: not }
+        - { id: w-study, text: study }
+        - { id: w-differences, text: differences }
+        - { id: w-into, text: into }
+        - { id: w-the, text: The }
+        - { id: w-regional, text: regional }
+        - { id: w-did, text: did }
+        - { id: w-in, text: in }
+    answer:
+      orders:
+        - [w-the, w-study, w-did, w-not, w-take, w-regional, w-differences, w-into, w-account]
+        - [w-the, w-study, w-did, w-not, w-take, w-into, w-account, w-regional, w-differences]
+    explanation:
+      vi: Take something into account - tân ngữ có thể đứng giữa (take regional differences into account) hoặc sau account khi muốn nhấn mạnh. Không dùng in thay into.
+    display_answer: The study did not take regional differences into account.
+
+  - key: en:exercise:nominal-mcq-rewrite
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:nominalisation
+    prompt:
+      stem: "Bạn cần viết lại câu sau cho báo cáo trang trọng: \"We analysed the data carefully and found that sales went up a lot.\" Phương án nào tốt nhất?"
+      stem_lang: vi
+      options:
+        - { id: k5d, text: "A careful analysis of the data revealed a significant increase in sales.", lang: en }
+        - { id: z3x, text: "We did a careful analyse of the data and sales went up very much.", lang: en }
+        - { id: h8r, text: "A careful analysis of the data revealed a significant increase of sales very much.", lang: en }
+        - { id: b6n, text: "The data was analysed carefully and sales got very higher.", lang: en }
+    answer:
+      correct_option_id: k5d
+    explanation:
+      vi: Phương án đúng danh từ hoá (analysed → an analysis of), dùng collocation a significant increase in sales. Các phương án khác sai từ loại (a careful analyse), sai giới từ/thừa từ hoặc dùng very higher.
+    display_answer: "A careful analysis of the data revealed a significant increase in sales."
+
+  - key: en:exercise:nominal-translate-to-vi-challenge
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:pose-a-challenge
+    prompt:
+      source_text: An ageing population poses a serious challenge to the healthcare system.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dân số già hoá đặt ra thách thức nghiêm trọng cho hệ thống y tế.
+        - Dân số già hoá đặt ra một thách thức nghiêm trọng cho hệ thống y tế.
+        - Dân số già hoá đặt ra thách thức lớn cho hệ thống y tế.
+        - Dân số già hóa đặt ra thách thức nghiêm trọng cho hệ thống y tế.
+        - Dân số già hoá đặt ra thách thức nghiêm trọng đối với hệ thống y tế.
+        - Dân số già hóa đặt ra thách thức nghiêm trọng đối với hệ thống y tế.
+        - Dân số già hoá là một thách thức nghiêm trọng đối với hệ thống y tế.
+        - Già hoá dân số đặt ra thách thức nghiêm trọng cho hệ thống y tế.
+        - Già hóa dân số đặt ra thách thức nghiêm trọng đối với hệ thống y tế.
+        - Dân số già hoá gây ra thách thức nghiêm trọng cho hệ thống y tế.
+        - Dân số già hoá đặt ra thách thức nghiêm trọng cho hệ thống chăm sóc sức khoẻ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Pose a challenge to là "đặt ra thách thức cho/đối với". An ageing population là "dân số già hoá" (hoặc "già hoá dân số"), healthcare system là "hệ thống y tế".
+    display_answer: Dân số già hoá đặt ra thách thức nghiêm trọng cho hệ thống y tế.
+
+  - key: en:exercise:nominal-translate-research
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:carry-out-an-analysis
+    prompt:
+      source_text: Chúng tôi đã tiến hành phân tích chi tiết các khiếu nại của khách hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We carried out a detailed analysis of customer complaints.
+        - We carried out a detailed analysis of the customer complaints.
+        - We carried out a detailed analysis of customers' complaints.
+        - We conducted a detailed analysis of customer complaints.
+        - We conducted a detailed analysis of the customer complaints.
+        - We have carried out a detailed analysis of customer complaints.
+        - We have conducted a detailed analysis of customer complaints.
+        - We carried out a thorough analysis of customer complaints.
+        - We conducted a thorough analysis of customer complaints.
+        - We analysed customer complaints in detail.
+        - We analyzed customer complaints in detail.
+        - A detailed analysis of customer complaints was carried out.
+        - A detailed analysis of customer complaints was conducted.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We made a detailed analysis of customer complaints.
+        feedback_vi: Trong văn trang trọng, analysis đi với carry out hoặc conduct, không phải make.
+        error_tag: collocation
+      - answer: We carried out a detailed analyse of customer complaints.
+        feedback_vi: Analyse là động từ; danh từ là analysis.
+        error_tag: word_form
+      - answer: We carried out detailed analysis about customer complaints.
+        feedback_vi: Dùng an analysis of, không dùng about.
+        error_tag: preposition
+    explanation:
+      vi: “Tiến hành phân tích” là carry out/conduct an analysis of. Analysis là danh từ đếm được nên cần a; giới từ là of.
+    display_answer: We carried out a detailed analysis of customer complaints.

@@ -1,0 +1,463 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:past-regular
+order_index: 2
+level: a2
+title:
+  vi: Hôm qua mình đã làm gì - động từ thêm -ed
+objectives:
+  - vi: Kể việc đã làm bằng thì quá khứ đơn với động từ có quy tắc (V + -ed).
+  - vi: Viết đúng chính tả -ed - liked, studied, stopped, stayed.
+  - vi: Đọc đúng ba cách phát âm của -ed - /t/, /d/, /ɪd/.
+  - vi: Luôn đổi dạng động từ dù câu đã có yesterday, last week…
+estimated_minutes: 15
+skills: [grammar, vocabulary, pronunciation, writing]
+prerequisites: [en:lesson:was-were]
+items:
+  - item: en:item:past-simple-regular
+  - item: en:item:ed-spelling
+  - item: en:item:ed-pronunciation
+  - item: en:item:watched
+  - item: en:item:played
+  - item: en:item:visited
+  - item: en:item:cooked
+  - item: en:item:cleaned
+  - item: en:item:stayed
+  - item: en:item:studied
+  - item: en:item:stopped
+  - item: en:item:started
+  - item: en:item:listened-to
+  - item: en:item:yesterday
+    role: reuse
+  - item: en:item:last-plus-time
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một ngày đã qua - "Hôm qua mình dọn phòng, nấu cơm rồi xem phim" - với động từ thêm -ed viết và đọc đúng.
+  - type: explain
+    text:
+      vi: Thì quá khứ đơn dùng cho việc đã xảy ra và kết thúc, thường đi với yesterday, last week, two days ago. Với phần lớn động từ, bạn chỉ cần thêm -ed - watch → watched, play → played. Dạng này giống nhau cho mọi chủ ngữ - I watched, she watched, they watched.
+  - type: explain
+    text:
+      vi: Tiếng Việt không đổi động từ, chỉ cần "hôm qua" hoặc "đã". Tiếng Anh thì bắt buộc đổi - nói "Yesterday I watch TV" nghe như sai thì, dù có yesterday.
+  - type: explain
+    text:
+      vi: "Ba quy tắc chính tả: tận cùng -e thì chỉ thêm -d (like → liked); phụ âm + y thì đổi thành -ied (study → studied), nhưng nguyên âm + y thì giữ y (play → played); từ ngắn kết thúc bằng một nguyên âm + một phụ âm thì gấp đôi phụ âm (stop → stopped)."
+  - type: explain
+    text:
+      vi: "-ed có ba cách đọc: /ɪd/ sau âm /t/ hoặc /d/ (visited, started) - thêm một âm tiết; /t/ sau âm vô thanh như /k/, /p/, /s/, /ʃ/, /tʃ/ (cooked, stopped, watched); /d/ sau các âm còn lại (played, cleaned, stayed)."
+  - type: deep_explain
+    text:
+      vi: Cách nhận âm vô thanh - đặt tay lên cổ họng, nếu không thấy rung khi phát âm cuối (như /k/, /p/, /s/) thì -ed đọc /t/. Người Việt quen âm cuối đơn nên hay nuốt mất -ed, khiến cooked nghe thành cook; hãy bật nhẹ âm cuối. Quy tắc gấp đôi phụ âm chỉ áp dụng khi trọng âm rơi vào âm tiết cuối - visit nhấn âm đầu nên viết visited, không gấp đôi t.
+  - type: example
+    target: Yesterday I cleaned my room and cooked dinner.
+    target_lang: en
+    translation:
+      vi: Hôm qua mình dọn phòng và nấu bữa tối.
+    note:
+      vi: Cả hai động từ đều thêm -ed. Cleaned đọc /d/, cooked đọc /t/.
+  - type: example
+    target: Last Sunday we visited our grandparents.
+    target_lang: en
+    translation:
+      vi: Chủ Nhật tuần trước chúng mình đến thăm ông bà.
+    note:
+      vi: Visited đọc /ˈvɪzɪtɪd/ - thêm âm "tịd" vì sau âm /t/. Visit không cần to.
+  - type: example
+    target: She studied all evening, then she stopped and listened to music.
+    target_lang: en
+    translation:
+      vi: Cô ấy học cả buổi tối, rồi dừng lại nghe nhạc.
+    note:
+      vi: Study → studied (đổi y), stop → stopped (gấp đôi p), listen to → listened to.
+  - type: example
+    target: The film started at eight, so we stayed at home until seven thirty.
+    target_lang: en
+    translation:
+      vi: Phim bắt đầu lúc tám giờ nên chúng mình ở nhà đến bảy rưỡi.
+    note:
+      vi: Stay giữ y vì trước y là nguyên âm a - stayed.
+  - type: common_mistake
+    wrong: Yesterday I watch TV with my family.
+    right: Yesterday I watched TV with my family.
+    target_lang: en
+    note:
+      vi: Có yesterday vẫn phải thêm -ed. Tiếng Anh đánh dấu quá khứ ngay trên động từ, không như tiếng Việt.
+  - type: common_mistake
+    wrong: I was cook dinner last night.
+    right: I cooked dinner last night.
+    target_lang: en
+    note:
+      vi: Người Việt hay dùng was như "đã". Was không đi với động từ nguyên mẫu; chỉ cần cooked.
+  - type: common_mistake
+    wrong: He studyed for the test and stoped at nine.
+    right: He studied for the test and stopped at nine.
+    target_lang: en
+    note:
+      vi: Phụ âm + y đổi thành -ied; stop ngắn, kết thúc bằng nguyên âm + phụ âm nên gấp đôi p.
+  - type: summary
+    points:
+      - vi: Việc đã xảy ra và kết thúc → quá khứ đơn; động từ có quy tắc thêm -ed, giống nhau mọi chủ ngữ.
+      - vi: Có yesterday, last week… vẫn phải đổi động từ. Không dùng was + động từ nguyên mẫu.
+      - vi: Chính tả - like → liked, study → studied, play → played, stop → stopped.
+      - vi: Phát âm - /ɪd/ sau /t/, /d/; /t/ sau âm vô thanh; /d/ sau các âm còn lại.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:past-regular-mcq-watched
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:past-simple-regular
+    prompt:
+      stem: "Chọn câu đúng: \"Hôm qua mình xem một bộ phim.\""
+      stem_lang: vi
+      options:
+        - { id: u5r, text: Yesterday I watched a film., lang: en }
+        - { id: c1x, text: Yesterday I watch a film., lang: en }
+        - { id: j8m, text: Yesterday I was watch a film., lang: en }
+        - { id: o3e, text: Yesterday I watching a film., lang: en }
+    answer:
+      correct_option_id: u5r
+    explanation:
+      vi: Việc đã xong trong quá khứ nên dùng watched. Watch thiếu dấu hiệu quá khứ dù có yesterday; was watch và watching không phải dạng quá khứ đơn.
+    display_answer: Yesterday I watched a film.
+
+  - key: en:exercise:past-regular-mcq-spelling
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ed-spelling
+    prompt:
+      stem: Dạng quá khứ của study viết thế nào?
+      stem_lang: vi
+      options:
+        - { id: i4w, text: studyed, lang: en }
+        - { id: v9a, text: studied, lang: en }
+        - { id: l2h, text: studed, lang: en }
+        - { id: e6q, text: studdied, lang: en }
+    answer:
+      correct_option_id: v9a
+    explanation:
+      vi: Study tận cùng bằng phụ âm d + y, nên đổi y thành i rồi thêm -ed - studied. Không gấp đôi d vì quy tắc gấp đôi chỉ áp dụng khi tận cùng là nguyên âm + phụ âm.
+    display_answer: studied
+
+  - key: en:exercise:past-regular-mcq-sound
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ed-pronunciation
+    prompt:
+      stem: Trong từ nào đuôi -ed được đọc thành một âm tiết riêng /ɪd/?
+      stem_lang: vi
+      options:
+        - { id: s7k, text: cooked, lang: en }
+        - { id: a3n, text: played, lang: en }
+        - { id: w8d, text: started, lang: en }
+        - { id: g5y, text: cleaned, lang: en }
+    answer:
+      correct_option_id: w8d
+    explanation:
+      vi: Start tận cùng bằng âm /t/, nên -ed đọc /ɪd/ - STAR-tid. Cooked đọc /t/ (sau /k/), played và cleaned đọc /d/.
+    display_answer: started
+
+  - key: en:exercise:past-regular-listen-visited
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:visited
+    prompt:
+      audio_asset_id: null
+      fallback_text: We visited our grandparents last Sunday.
+      options:
+        - { id: b6t, text: Chủ Nhật tuần trước chúng tôi đến thăm ông bà., lang: vi }
+        - { id: r2o, text: Chủ Nhật nào chúng tôi cũng đến thăm ông bà., lang: vi }
+        - { id: h4c, text: Chủ Nhật tới chúng tôi sẽ đến thăm ông bà., lang: vi }
+        - { id: m9z, text: Chủ Nhật tuần trước ông bà đến thăm chúng tôi., lang: vi }
+    answer:
+      correct_option_id: b6t
+    explanation:
+      vi: Visited (có đuôi /ɪd/) và last Sunday cho biết việc đã xảy ra tuần trước. Chủ ngữ là we nên chính "chúng tôi" đi thăm ông bà.
+    display_answer: Chủ Nhật tuần trước chúng tôi đến thăm ông bà.
+
+  - key: en:exercise:past-regular-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:cleaned
+    prompt:
+      template: "On Saturday I {{b1}} (clean) my room, and my brother {{b2}} (play) football."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Thứ Bảy mình dọn phòng, còn em trai mình chơi bóng đá."
+        - "Gợi ý: cả hai việc đã xảy ra, thêm -ed; play giữ nguyên y."
+    answer:
+      blanks:
+        b1: [cleaned]
+        b2: [played]
+    known_wrong:
+      - answer: clean
+        feedback_vi: Việc đã xảy ra vào thứ Bảy vừa qua, nên thêm -ed.
+        error_tag: no_past_marking
+      - answer: play
+        feedback_vi: Việc đã xảy ra vào thứ Bảy vừa qua, nên thêm -ed.
+        error_tag: no_past_marking
+      - answer: plaied
+        feedback_vi: Trước y là nguyên âm a nên giữ y - played.
+        error_tag: ed_spelling
+      - answer: cleanned
+        feedback_vi: Clean có hai nguyên âm ea trước n nên không gấp đôi phụ âm - cleaned.
+        error_tag: ed_spelling
+    explanation:
+      vi: Hai việc đã xảy ra nên dùng quá khứ đơn - cleaned, played. Play có nguyên âm trước y nên chỉ thêm -ed.
+    display_answer: On Saturday I cleaned my room, and my brother played football.
+
+  - key: en:exercise:past-regular-order-music
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:listened-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chúng mình ở nhà và nghe nhạc.\""
+      tokens:
+        - { id: w-music, text: music }
+        - { id: w-and, text: and }
+        - { id: w-listen, text: listen }
+        - { id: w-stayed, text: stayed }
+        - { id: w-to, text: to }
+        - { id: w-home, text: home }
+        - { id: w-we, text: We }
+        - { id: w-listened, text: listened }
+        - { id: w-at, text: at }
+        - { id: w-stay, text: stay }
+    answer:
+      orders:
+        - [w-we, w-stayed, w-at, w-home, w-and, w-listened, w-to, w-music]
+        - [w-we, w-listened, w-to, w-music, w-and, w-stayed, w-at, w-home]
+    explanation:
+      vi: Hai việc đã xảy ra nên dùng stayed và listened. Listen luôn cần to trước thứ được nghe - listened to music.
+    display_answer: We stayed at home and listened to music.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:past-regular-fill-spelling
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ed-spelling
+    prompt:
+      template: "Last Sunday Mai {{b1}} (study) in the morning, {{b2}} (stop) at a café for lunch and {{b3}} (visit) her aunt."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [studied]
+        b2: [stopped]
+        b3: [visited]
+    known_wrong:
+      - answer: studyed
+        feedback_vi: Phụ âm + y thì đổi y thành -ied - studied.
+        error_tag: ed_spelling
+      - answer: stoped
+        feedback_vi: Stop ngắn, tận cùng nguyên âm + phụ âm, nên gấp đôi p - stopped.
+        error_tag: ed_spelling
+      - answer: visitted
+        feedback_vi: Visit nhấn âm đầu nên không gấp đôi t - visited.
+        error_tag: ed_spelling
+      - answer: study
+        feedback_vi: Chuyện xảy ra Chủ Nhật tuần trước nên động từ phải ở quá khứ.
+        error_tag: no_past_marking
+      - answer: stop
+        feedback_vi: Chuyện xảy ra Chủ Nhật tuần trước nên động từ phải ở quá khứ.
+        error_tag: no_past_marking
+      - answer: visit
+        feedback_vi: Chuyện xảy ra Chủ Nhật tuần trước nên động từ phải ở quá khứ.
+        error_tag: no_past_marking
+    explanation:
+      vi: Study → studied (phụ âm + y), stop → stopped (gấp đôi phụ âm), visit → visited (trọng âm ở âm đầu nên chỉ thêm -ed).
+    display_answer: Last Sunday Mai studied in the morning, stopped at a café for lunch and visited her aunt.
+
+  - key: en:exercise:past-regular-translate-cooked
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:cooked
+    prompt:
+      source_text: Hôm qua bố tôi nấu bữa tối.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My father cooked dinner yesterday.
+        - My dad cooked dinner yesterday.
+        - Yesterday my father cooked dinner.
+        - Yesterday, my father cooked dinner.
+        - Yesterday my dad cooked dinner.
+        - Yesterday, my dad cooked dinner.
+        - My father made dinner yesterday.
+        - My dad made dinner yesterday.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Yesterday my father cook dinner.
+        feedback_vi: Có yesterday vẫn phải đổi động từ - cooked.
+        error_tag: no_past_marking
+      - answer: My father cook dinner yesterday.
+        feedback_vi: Có yesterday vẫn phải đổi động từ - cooked.
+        error_tag: no_past_marking
+      - answer: My father was cook dinner yesterday.
+        feedback_vi: Không dùng was + động từ nguyên mẫu; chỉ cần cooked.
+        error_tag: was_plus_verb
+      - answer: My father cooks dinner yesterday.
+        feedback_vi: Cooks là hiện tại; việc xảy ra hôm qua nên dùng cooked.
+        error_tag: no_past_marking
+    explanation:
+      vi: Việc đã xong hôm qua nên dùng quá khứ đơn cooked, giống nhau với mọi chủ ngữ. Yesterday đặt cuối câu hoặc đầu câu đều được.
+    display_answer: My father cooked dinner yesterday.
+
+  - key: en:exercise:past-regular-translate-started
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:started
+    prompt:
+      source_text: Tối qua buổi hòa nhạc bắt đầu lúc tám giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The concert started at eight o'clock last night.
+        - The concert started at eight last night.
+        - The concert started at 8 o'clock last night.
+        - The concert started at 8 last night.
+        - Last night the concert started at eight o'clock.
+        - Last night, the concert started at eight o'clock.
+        - Last night the concert started at eight.
+        - Last night the concert started at 8.
+        - The concert began at eight o'clock last night.
+        - Last night the concert began at eight o'clock.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The concert start at eight o'clock last night.
+        feedback_vi: Việc xảy ra tối qua nên dùng started.
+        error_tag: no_past_marking
+      - answer: The concert was start at eight o'clock last night.
+        feedback_vi: Không dùng was + động từ nguyên mẫu; chỉ cần started.
+        error_tag: was_plus_verb
+      - answer: The concert started in eight o'clock last night.
+        feedback_vi: Giờ cụ thể dùng at - at eight o'clock.
+        error_tag: time_preposition
+      - answer: The concert started at eight o'clock yesterday night.
+        feedback_vi: "\"Tối qua\" là last night, không nói yesterday night."
+        error_tag: last_night
+    explanation:
+      vi: Start → started (đọc /ɪd/ vì sau âm /t/). Giờ cụ thể dùng at; "tối qua" là last night.
+    display_answer: The concert started at eight o'clock last night.
+
+  # ---------------- application ----------------
+  - key: en:exercise:past-regular-translate-grandparents
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:played
+    prompt:
+      source_text: We visited our grandparents last weekend and played cards with them all evening.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần trước chúng tôi đến thăm ông bà và chơi bài với ông bà cả buổi tối.
+        - Cuối tuần trước chúng tôi đến thăm ông bà và chơi bài với ông bà suốt buổi tối.
+        - Cuối tuần trước chúng mình đến thăm ông bà và chơi bài với ông bà cả buổi tối.
+        - Cuối tuần trước chúng tôi về thăm ông bà và chơi bài với ông bà cả tối.
+        - Cuối tuần trước chúng tôi thăm ông bà và chơi bài với ông bà cả buổi tối.
+        - Chúng tôi đến thăm ông bà vào cuối tuần trước và chơi bài với ông bà cả buổi tối.
+        - Cuối tuần trước chúng tôi đã đến thăm ông bà và chơi bài với ông bà cả buổi tối.
+        - Cuối tuần trước chúng tôi đến thăm ông bà và chơi bài với họ cả buổi tối.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần tới chúng tôi đến thăm ông bà và chơi bài với ông bà cả buổi tối.
+        feedback_vi: Last weekend là "cuối tuần trước", không phải "cuối tuần tới".
+        error_tag: time_expression
+    explanation:
+      vi: Visited và played cho biết việc đã xảy ra; last weekend là "cuối tuần trước". Tiếng Việt không bắt buộc thêm "đã" vì đã có mốc thời gian.
+    display_answer: Cuối tuần trước chúng tôi đến thăm ông bà và chơi bài với ông bà cả buổi tối.
+
+  - key: en:exercise:past-regular-mcq-sunday
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-simple-regular
+    prompt:
+      stem: "Thứ Hai, đồng nghiệp hỏi: \"What did you do on Sunday?\" Bạn muốn kể mình đã dọn nhà và nấu bữa trưa cho cả nhà. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k8f, text: I cleaned the house and cooked lunch for my family., lang: en }
+        - { id: p1v, text: I clean the house and cook lunch for my family., lang: en }
+        - { id: x6s, text: I was clean the house and cook lunch for my family., lang: en }
+        - { id: q3j, text: I cleaned the house and cook lunch for my family., lang: en }
+    answer:
+      correct_option_id: k8f
+    explanation:
+      vi: Kể về Chủ Nhật đã qua nên cả hai động từ đều cần -ed - cleaned và cooked. Chỉ đổi động từ đầu là chưa đủ; was clean là sai cấu trúc.
+    display_answer: I cleaned the house and cooked lunch for my family.
+
+  - key: en:exercise:past-regular-translate-rain
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stayed
+    prompt:
+      source_text: Trời mưa nên chúng tôi ở nhà và xem TV.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It rained, so we stayed at home and watched TV.
+        - It rained, so we stayed home and watched TV.
+        - It was raining, so we stayed at home and watched TV.
+        - It was raining, so we stayed home and watched TV.
+        - It was rainy, so we stayed at home and watched TV.
+        - Because it rained, we stayed at home and watched TV.
+        - We stayed at home and watched TV because it rained.
+        - We stayed at home and watched TV because it was raining.
+        - It rained, so we stayed at home and watched television.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It rain, so we stay at home and watch TV.
+        feedback_vi: Chuyện đã xảy ra nên cả ba động từ cần ở quá khứ - rained, stayed, watched.
+        error_tag: no_past_marking
+      - answer: It rained, so we stayed at home and watch TV.
+        feedback_vi: Động từ thứ hai cũng phải ở quá khứ - watched.
+        error_tag: no_past_marking
+      - answer: It was rain, so we stayed at home and watched TV.
+        feedback_vi: Không nói was rain; dùng it rained hoặc it was raining.
+        error_tag: was_plus_verb
+      - answer: It rained, so we stayed in home and watched TV.
+        feedback_vi: "\"Ở nhà\" là stay at home hoặc stay home, không dùng in."
+        error_tag: preposition
+    explanation:
+      vi: Đây là chuyện đã qua nên mọi động từ đều ở quá khứ - rained, stayed, watched. "Ở nhà" là stay at home hoặc stay home.
+    display_answer: It rained, so we stayed at home and watched TV.

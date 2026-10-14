@@ -1,0 +1,419 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:cleft-inversion
+order_index: 3
+level: c1
+title:
+  vi: Câu chẻ & đảo ngữ để nhấn mạnh
+objectives:
+  - vi: Nhấn mạnh thông tin bằng câu chẻ What I need is… và It was X that….
+  - vi: Đảo ngữ đúng trật tự sau Not only, Rarely, Under no circumstances, No sooner, Little, Only when.
+  - vi: Dùng đảo ngữ câu điều kiện Had I known…, Should you…, Were I… trong văn trang trọng.
+estimated_minutes: 18
+skills: [grammar, writing, reading, speaking]
+prerequisites: [en:lesson:nominalisation-collocations]
+items:
+  - item: en:item:what-cleft
+  - item: en:item:it-cleft
+  - item: en:item:inversion-not-only
+  - item: en:item:inversion-rarely
+  - item: en:item:under-no-circumstances
+  - item: en:item:inversion-conditional
+  - item: en:item:no-sooner-than
+  - item: en:item:little-did
+  - item: en:item:only-when-inversion
+  - item: en:item:the-reason-why
+  - item: en:item:make-a-decision
+    role: reuse
+  - item: en:item:address-an-issue
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn biết cách đặt trọng tâm câu đúng chỗ - "What we need is a clear plan", "It was the CEO who approved it", "Not only did sales fall, but costs also rose".
+  - type: explain
+    text:
+      vi: Câu chẻ (cleft sentence) tách câu thành hai phần để làm nổi bật một thông tin. What + mệnh đề + is/was + X nhấn mạnh X ở cuối; It is/was + X + that/who… nhấn mạnh X ngay sau It is. Tiếng Việt có cách tương tự - "Điều tôi cần là…", "Chính… mà…".
+  - type: explain
+    text:
+      vi: Khi một từ mang nghĩa phủ định hoặc hạn chế đứng đầu câu (Not only, Rarely, Never, Under no circumstances, Little, Only when), câu phải đảo trợ động từ lên trước chủ ngữ, giống câu hỏi. Ví dụ - Rarely have I seen…, Not only is it…, Under no circumstances should you….
+  - type: explain
+    text:
+      vi: Người Việt hay giữ trật tự như tiếng Việt - Not only he is…, Rarely I have seen…. Nếu không có trợ động từ (hiện tại/quá khứ đơn), bạn phải mượn do/does/did - Not only did he finish…, không phải Not only finished he….
+  - type: deep_explain
+    text:
+      vi: Đảo ngữ câu điều kiện bỏ if - Had I known (= If I had known), Should you need (= If you should need), Were I in your position (= If I were…). Với Only when/Only after, đảo ở mệnh đề chính, không đảo ở vế when/after. No sooner đi với than, còn Hardly/Scarcely đi với when.
+  - type: example
+    target: What we need is a realistic timeline, not more meetings.
+    target_lang: en
+    translation:
+      vi: Điều chúng ta cần là một lộ trình thực tế, chứ không phải thêm các cuộc họp.
+    note:
+      vi: Mệnh đề what… là chủ ngữ số ít nên dùng is.
+  - type: example
+    target: It was the finance team that identified the error.
+    target_lang: en
+    translation:
+      vi: Chính bộ phận tài chính đã phát hiện ra lỗi.
+    note:
+      vi: It was… that… nhấn mạnh ai là người làm, tương đương "Chính…".
+  - type: example
+    target: Not only did the campaign increase sales, but it also improved our brand image.
+    target_lang: en
+    translation:
+      vi: Chiến dịch không chỉ tăng doanh số mà còn cải thiện hình ảnh thương hiệu.
+    note:
+      vi: Quá khứ đơn không có trợ động từ nên mượn did; vế sau dùng but… also.
+  - type: example
+    target: Had we known about the strike, we would have changed our travel plans.
+    target_lang: en
+    translation:
+      vi: Nếu biết trước về cuộc đình công, chúng tôi đã thay đổi kế hoạch đi lại.
+    note:
+      vi: Had we known = If we had known; không dùng if khi đã đảo ngữ.
+  - type: common_mistake
+    wrong: Not only he is talented, but he is also hard-working.
+    right: Not only is he talented, but he is also hard-working.
+    target_lang: en
+    note:
+      vi: Not only đứng đầu câu thì đảo is lên trước he. Vế sau but… also giữ trật tự bình thường.
+  - type: common_mistake
+    wrong: Rarely I have seen such poor results.
+    right: Rarely have I seen such poor results.
+    target_lang: en
+    note:
+      vi: Rarely đứng đầu câu kéo theo đảo ngữ - have lên trước I. Nếu không muốn đảo, viết I have rarely seen….
+  - type: common_mistake
+    wrong: If had I known, I would have called you.
+    right: Had I known, I would have called you.
+    target_lang: en
+    note:
+      vi: Đảo ngữ đã thay thế if, nên không dùng cả hai.
+  - type: summary
+    points:
+      - vi: What + S + V + is/was + X - nhấn mạnh X; What I did was (to) + V.
+      - vi: It is/was + X + that/who… - "Chính X…".
+      - vi: Từ phủ định/hạn chế ở đầu câu → trợ động từ + chủ ngữ - Not only is it…, Rarely have I…, Under no circumstances should you….
+      - vi: Không có trợ động từ thì mượn do/does/did - Not only did she…, Little did we know….
+      - vi: Had I known / Should you / Were I = câu điều kiện bỏ if; No sooner… than; Only when X, đảo ở vế chính.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:cleft-mcq-not-only
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:inversion-not-only
+    prompt:
+      stem: "Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: u4x, text: "Not only the plan is expensive, but it is also risky.", lang: en }
+        - { id: c7w, text: "Not only is the plan expensive, but it is also risky.", lang: en }
+        - { id: g2p, text: "Not only the plan expensive is, but it is also risky.", lang: en }
+        - { id: r9m, text: "Not only does the plan is expensive, but it is also risky.", lang: en }
+    answer:
+      correct_option_id: c7w
+    explanation:
+      vi: Not only đứng đầu câu nên đảo is lên trước chủ ngữ the plan. Câu đã có is thì không cần mượn does.
+    display_answer: "Not only is the plan expensive, but it is also risky."
+
+  - key: en:exercise:cleft-mcq-it-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:it-cleft
+    prompt:
+      stem: "It was the CEO who approved the budget. Câu này nhấn mạnh điều gì?"
+      stem_lang: vi
+      options:
+        - { id: d3f, text: Chính CEO (không phải ai khác) là người duyệt ngân sách., lang: vi }
+        - { id: n6t, text: CEO đã duyệt ngân sách (không phải kế hoạch khác)., lang: vi }
+        - { id: s1b, text: Ngân sách đã được duyệt từ lâu., lang: vi }
+        - { id: h5y, text: CEO có thể sẽ duyệt ngân sách., lang: vi }
+    answer:
+      correct_option_id: d3f
+    explanation:
+      vi: Phần đứng ngay sau It was (the CEO) là phần được nhấn mạnh. Vì vậy câu muốn nói "chính CEO", không phải người khác.
+    display_answer: Chính CEO (không phải ai khác) là người duyệt ngân sách.
+
+  - key: en:exercise:cleft-listen-under-no
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:under-no-circumstances
+    prompt:
+      audio_asset_id: null
+      fallback_text: Under no circumstances should passwords be shared with colleagues.
+      options:
+        - { id: a5k, text: "Trong mọi trường hợp, tuyệt đối không được chia sẻ mật khẩu cho đồng nghiệp.", lang: vi }
+        - { id: o8e, text: "Trong một số trường hợp, có thể chia sẻ mật khẩu cho đồng nghiệp.", lang: vi }
+        - { id: l2q, text: Đồng nghiệp nên chia sẻ mật khẩu với nhau khi cần., lang: vi }
+        - { id: x6u, text: Không cần đổi mật khẩu trong mọi trường hợp., lang: vi }
+    answer:
+      correct_option_id: a5k
+    explanation:
+      vi: Under no circumstances là cấm đoán tuyệt đối "trong bất kỳ trường hợp nào cũng không". Should passwords be shared là đảo ngữ của passwords should be shared.
+    display_answer: Trong mọi trường hợp, tuyệt đối không được chia sẻ mật khẩu cho đồng nghiệp.
+
+  - key: en:exercise:cleft-fill-what-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:what-cleft
+    prompt:
+      template: "{{b1}} concerns me {{b2}} the lack of transparency."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Điều khiến tôi lo ngại là sự thiếu minh bạch."
+        - "Gợi ý: ô 1 là từ mở đầu câu chẻ (W…); ô 2 là động từ be cho chủ ngữ số ít."
+    answer:
+      blanks:
+        b1: [What]
+        b2: [is]
+    known_wrong:
+      - answer: That
+        feedback_vi: Câu chẻ nhấn mạnh "điều mà…" mở đầu bằng What, không phải That.
+        error_tag: cleft
+      - answer: Which
+        feedback_vi: Which cần danh từ đứng trước; "Điều mà…" ở đầu câu là What.
+        error_tag: cleft
+      - answer: are
+        feedback_vi: Mệnh đề What… là chủ ngữ số ít nên dùng is.
+        error_tag: subject_verb_agreement
+    explanation:
+      vi: What concerns me là chủ ngữ (điều khiến tôi lo ngại), số ít nên đi với is. Phần được nhấn mạnh - the lack of transparency - nằm sau is.
+    display_answer: What concerns me is the lack of transparency.
+
+  - key: en:exercise:cleft-order-rarely
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:inversion-rarely
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Hiếm khi tôi thấy một sự kiện được tổ chức chu đáo như vậy.\""
+      tokens:
+        - { id: r-event, text: event }
+        - { id: r-seen, text: seen }
+        - { id: r-i, text: I }
+        - { id: r-such, text: such }
+        - { id: r-rarely, text: Rarely }
+        - { id: r-did, text: did }
+        - { id: r-organised, text: well-organised }
+        - { id: r-have, text: have }
+        - { id: r-a, text: a }
+    answer:
+      orders:
+        - [r-rarely, r-have, r-i, r-seen, r-such, r-a, r-organised, r-event]
+    explanation:
+      vi: Rarely đứng đầu câu nên đảo have lên trước I. Trật tự cụm danh từ là such a + tính từ + danh từ. Did không hợp vì seen là quá khứ phân từ, cần have.
+    display_answer: Rarely have I seen such a well-organised event.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:cleft-fill-inversion-did
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:little-did
+    prompt:
+      template: "Little {{b1}} we realise how difficult the merger would be. No sooner had the deal been signed {{b2}} the problems began."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [did]
+        b2: [than]
+    known_wrong:
+      - answer: do
+        feedback_vi: Câu kể chuyện ở quá khứ nên mượn did - Little did we realise.
+        error_tag: inversion
+      - answer: when
+        feedback_vi: No sooner đi với than; when chỉ đi với Hardly/Scarcely.
+        error_tag: no_sooner_than
+      - answer: then
+        feedback_vi: Cấu trúc là No sooner… than (so sánh), không phải then.
+        error_tag: no_sooner_than
+    explanation:
+      vi: Little (hầu như không) đứng đầu câu nên đảo - mượn did vì động từ realise ở quá khứ đơn. No sooner là dạng so sánh của soon nên đi với than.
+    display_answer: Little did we realise how difficult the merger would be. No sooner had the deal been signed than the problems began.
+
+  - key: en:exercise:cleft-translate-had-known
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:inversion-conditional
+    prompt:
+      source_text: Nếu biết trước về sự chậm trễ, tôi đã dời lịch cuộc họp. (dùng đảo ngữ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Had I known about the delay, I would have rescheduled the meeting.
+        - Had I known about the delay, I'd have rescheduled the meeting.
+        - Had I known about the delay, I would have postponed the meeting.
+        - Had I known about the delay, I would have moved the meeting.
+        - Had I known of the delay, I would have rescheduled the meeting.
+        - Had I known about the delay in advance, I would have rescheduled the meeting.
+        - Had I known about the delay beforehand, I would have rescheduled the meeting.
+        - Had I known about the delay earlier, I would have rescheduled the meeting.
+        - Had I been aware of the delay, I would have rescheduled the meeting.
+        - Had I known about the delay, I would have changed the time of the meeting.
+        - Had I known about the delay, I would have put off the meeting.
+        - Had I known about the delay, I would have put the meeting off.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: If had I known about the delay, I would have rescheduled the meeting.
+        feedback_vi: Đảo ngữ đã thay cho if - bỏ if đi.
+        error_tag: inversion
+      - answer: Had I knew about the delay, I would have rescheduled the meeting.
+        feedback_vi: Sau had là quá khứ phân từ - known, không phải knew.
+        error_tag: verb_form
+      - answer: Had I known about the delay, I would reschedule the meeting.
+        feedback_vi: Câu điều kiện loại 3 (việc trong quá khứ) cần would have + V3 - would have rescheduled.
+        error_tag: conditional
+      - answer: If I had known about the delay, I would have rescheduled the meeting.
+        feedback_vi: Câu này đúng ngữ pháp nhưng đề yêu cầu đảo ngữ - Had I known….
+        error_tag: inversion
+    explanation:
+      vi: Điều kiện loại 3 đảo ngữ - Had + S + V3, S + would have + V3. Đây là cách viết trang trọng của If I had known.
+    display_answer: Had I known about the delay, I would have rescheduled the meeting.
+
+  - key: en:exercise:cleft-translate-it-was
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:it-cleft
+    prompt:
+      source_text: Chính bộ phận tài chính đã phát hiện ra lỗi. (dùng câu chẻ It was…)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It was the finance team that identified the error.
+        - It was the finance team who identified the error.
+        - It was the finance department that identified the error.
+        - It was the finance department who identified the error.
+        - It was the finance team that discovered the error.
+        - It was the finance team who discovered the error.
+        - It was the finance department that discovered the error.
+        - It was the finance team that spotted the error.
+        - It was the finance team that found the error.
+        - It was the finance team who found the error.
+        - It was the finance department that found the error.
+        - It was the finance team that detected the error.
+        - It was the finance team that found the mistake.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It is the finance team that identified the error.
+        feedback_vi: Sự việc ở quá khứ nên dùng It was.
+        error_tag: tense
+      - answer: It was the finance team identified the error.
+        feedback_vi: Khi nhấn mạnh chủ ngữ, không được bỏ that/who.
+        error_tag: cleft
+      - answer: The finance team itself identified the error.
+        feedback_vi: Ý gần đúng nhưng bài này luyện câu chẻ - It was the finance team that….
+        error_tag: cleft
+    explanation:
+      vi: “Chính X đã…” là It was X that/who…. Vì X đóng vai chủ ngữ của identified, không được bỏ that/who.
+    display_answer: It was the finance team that identified the error.
+
+  # ---------------- application ----------------
+  - key: en:exercise:cleft-order-only-when
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:only-when-inversion
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chỉ khi dữ liệu đã được kiểm tra, chúng tôi mới công bố báo cáo.\""
+      tokens:
+        - { id: o-publish, text: publish }
+        - { id: o-checked, text: had been checked }
+        - { id: o-we, text: we }
+        - { id: o-only, text: Only when }
+        - { id: o-report, text: the report }
+        - { id: o-did, text: did }
+        - { id: o-data, text: the data }
+        - { id: o-published, text: published }
+    answer:
+      orders:
+        - [o-only, o-data, o-checked, o-did, o-we, o-publish, o-report]
+    explanation:
+      vi: Vế Only when… giữ trật tự bình thường (the data had been checked); vế chính đảo - did we publish. Sau did là động từ nguyên mẫu publish, nên published bị loại.
+    display_answer: Only when the data had been checked did we publish the report.
+
+  - key: en:exercise:cleft-translate-not-only
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:inversion-not-only
+    prompt:
+      source_text: Chiến dịch không chỉ tăng doanh số mà còn cải thiện hình ảnh thương hiệu. (bắt đầu bằng Not only)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Not only did the campaign increase sales, but it also improved our brand image.
+        - Not only did the campaign increase sales, but it also improved the brand image.
+        - Not only did the campaign increase sales, but it also improved brand image.
+        - Not only did the campaign increase sales, it also improved the brand image.
+        - Not only did the campaign increase sales, it also improved our brand image.
+        - Not only did the campaign increase sales, but also improved the brand image.
+        - Not only did the campaign boost sales, but it also improved the brand image.
+        - Not only did the campaign raise sales, but it also improved the brand image.
+        - Not only did the campaign increase sales, but it also enhanced the brand image.
+        - Not only did the campaign increase sales, but it improved the brand image as well.
+        - Not only did the campaign increase sales, but it also improved the image of the brand.
+        - Not only did the campaign increase sales, but it also improved its brand image.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Not only the campaign increased sales, but it also improved the brand image.
+        feedback_vi: Not only đứng đầu câu phải đảo ngữ - Not only did the campaign increase….
+        error_tag: inversion
+      - answer: Not only did the campaign increased sales, but it also improved the brand image.
+        feedback_vi: Sau did là động từ nguyên mẫu - increase, không phải increased.
+        error_tag: verb_form
+      - answer: Not only increased the campaign sales, but it also improved the brand image.
+        feedback_vi: Không đảo động từ chính; mượn trợ động từ did - Not only did the campaign increase….
+        error_tag: inversion
+    explanation:
+      vi: Quá khứ đơn không có trợ động từ nên mượn did và đưa lên trước chủ ngữ; động từ chính trở về nguyên mẫu. Vế sau dùng but… also với trật tự bình thường.
+    display_answer: Not only did the campaign increase sales, but it also improved our brand image.
+
+  - key: en:exercise:cleft-mcq-email-should
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:inversion-conditional
+    prompt:
+      stem: "Bạn kết thúc một email trang trọng gửi khách hàng. Câu nào phù hợp và đúng ngữ pháp nhất?"
+      stem_lang: vi
+      options:
+        - { id: e7v, text: "Should you have any further questions, please do not hesitate to contact me.", lang: en }
+        - { id: k1z, text: "If should you have any further questions, please do not hesitate to contact me.", lang: en }
+        - { id: w4d, text: "Should you have any further questions, don't hesitate to ping me!", lang: en }
+        - { id: q8h, text: "Do you have any further questions, please do not hesitate to contact me.", lang: en }
+    answer:
+      correct_option_id: e7v
+    explanation:
+      vi: Should you have… là đảo ngữ trang trọng của If you have…, rất hay dùng cuối email công việc. Không dùng kèm if; ping me và dấu chấm than quá thân mật; Do you have… là câu hỏi, không phải điều kiện.
+    display_answer: "Should you have any further questions, please do not hesitate to contact me."

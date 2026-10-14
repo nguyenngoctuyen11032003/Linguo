@@ -1,0 +1,381 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:hotel-airport
+order_index: 3
+level: a2
+title:
+  vi: Khách sạn, sân bay và vé tàu
+objectives:
+  - vi: Đặt phòng khách sạn và hỏi giá, giờ nhận phòng, trả phòng.
+  - vi: Hiểu và nói các câu thường gặp ở sân bay - check in, boarding pass, gate, delayed.
+  - vi: Mua vé tàu xe một chiều, khứ hồi và hỏi sân ga.
+estimated_minutes: 14
+skills: [vocabulary, speaking, listening]
+prerequisites: [en:lesson:will-arrangements]
+items:
+  - item: en:item:book-verb
+  - item: en:item:single-double-room
+  - item: en:item:reservation
+  - item: en:item:how-much-per-night
+  - item: en:item:check-in
+  - item: en:item:check-out
+  - item: en:item:passport
+  - item: en:item:boarding-pass
+  - item: en:item:gate
+  - item: en:item:flight
+  - item: en:item:delayed
+  - item: en:item:single-return-ticket
+  - item: en:item:platform
+  - item: en:item:luggage
+  - item: en:item:stay
+    role: reuse
+  - item: en:item:shall-i
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự đặt được phòng khách sạn, làm thủ tục ở sân bay và mua vé tàu bằng những câu tiếng Anh ngắn, lịch sự.
+  - type: explain
+    text:
+      vi: "Đặt phòng - I'd like to book a double room for two nights. I'd like to (= I would like to) lịch sự hơn I want. Khi đến khách sạn, nói I have a reservation under the name… và hỏi What time is check-out?"
+  - type: explain
+    text:
+      vi: Ở sân bay, bạn check in (làm thủ tục), đưa passport (hộ chiếu), nhận boarding pass (thẻ lên máy bay) rồi đi đến gate (cửa ra máy bay). Nếu chuyến bay bị trễ, bảng thông báo ghi delayed - The flight is delayed.
+  - type: explain
+    text:
+      vi: "Mua vé tàu hoặc xe khách - A single to Hue, please (vé một chiều) hoặc A return to Hue, please (vé khứ hồi). Hỏi tàu chạy ở đâu - Which platform does the train leave from?"
+  - type: deep_explain
+    text:
+      vi: Single/return là cách nói Anh-Anh; người Mỹ nói one-way/round-trip. Luggage là danh từ không đếm được giống "hành lý" chung, nên không nói a luggage hay luggages - muốn đếm thì nói two bags, one suitcase. Nhiều từ du lịch đã quen trong tiếng Việt (check-in, delay, booking), nhưng khi nói câu tiếng Anh bạn vẫn cần đủ be - The flight is delayed, không nói The flight delay.
+  - type: example
+    target: "Hello, I'd like to book a double room for Friday and Saturday night. How much is it per night?"
+    target_lang: en
+    translation:
+      vi: Xin chào, tôi muốn đặt một phòng đôi cho tối thứ Sáu và thứ Bảy. Một đêm bao nhiêu tiền ạ?
+    note:
+      vi: I'd like to book… là câu mở đầu lịch sự khi đặt phòng qua điện thoại.
+  - type: example
+    target: "Here's your boarding pass. You're boarding at gate 12 at 8:40."
+    target_lang: en
+    translation:
+      vi: Đây là thẻ lên máy bay của chị. Chị lên máy bay ở cửa 12 lúc 8 giờ 40.
+    note:
+      vi: At gate 12 - không cần the khi có số.
+  - type: example
+    target: Our flight is delayed by one hour, so we'll have a coffee.
+    target_lang: en
+    translation:
+      vi: Chuyến bay bị hoãn một tiếng, nên chúng ta đi uống cà phê thôi.
+    note:
+      vi: Delayed by + khoảng thời gian; we'll là quyết định ngay (bài 2).
+  - type: example
+    target: "A return ticket to Hue, please. Which platform is it?"
+    target_lang: en
+    translation:
+      vi: Cho tôi một vé khứ hồi đi Huế. Tàu ở sân ga số mấy ạ?
+    note:
+      vi: Return là khứ hồi (đi và về), không phải "chiều về".
+  - type: common_mistake
+    wrong: The flight delay two hours.
+    right: The flight is delayed by two hours.
+    target_lang: en
+    note:
+      vi: Tiếng Việt nói "chuyến bay delay hai tiếng", nhưng tiếng Anh cần is + delayed (bị hoãn) và by trước khoảng thời gian.
+  - type: common_mistake
+    wrong: I have two luggages.
+    right: I have two bags.
+    target_lang: en
+    note:
+      vi: Luggage không đếm được, không thêm -s. Đếm từng kiện thì dùng bag hoặc suitcase.
+  - type: common_mistake
+    wrong: I want to book for a room.
+    right: I'd like to book a room.
+    target_lang: en
+    note:
+      vi: Book đi thẳng với thứ được đặt, không cần for. I'd like to lịch sự hơn I want khi nói với nhân viên.
+  - type: summary
+    points:
+      - vi: "Khách sạn - I'd like to book a single/double room; I have a reservation; How much is it per night?; check in / check out."
+      - vi: "Sân bay - passport, check in, boarding pass, gate, flight; The flight is delayed (nhớ is)."
+      - vi: "Tàu xe - a single / a return ticket to…; Which platform…?"
+      - vi: Luggage không đếm được - không nói a luggage, luggages.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:hotel-airport-mcq-boarding
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:boarding-pass
+    prompt:
+      stem: "Bạn cần đưa thứ gì cho nhân viên ở cửa ra máy bay để lên máy bay?"
+      stem_lang: vi
+      options:
+        - { id: b7f, text: boarding pass, lang: en }
+        - { id: s2m, text: platform, lang: en }
+        - { id: c9y, text: reservation, lang: en }
+        - { id: d4u, text: return ticket, lang: en }
+    answer:
+      correct_option_id: b7f
+    explanation:
+      vi: Boarding pass là thẻ lên máy bay, nhận khi làm thủ tục. Platform là sân ga tàu hoả, reservation là việc đặt chỗ, return ticket là vé khứ hồi.
+    display_answer: boarding pass
+
+  - key: en:exercise:hotel-airport-mcq-return
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:single-return-ticket
+    prompt:
+      stem: "\"A return ticket to Hue, please.\" Người này muốn mua vé gì?"
+      stem_lang: vi
+      options:
+        - { id: t8r, text: Vé khứ hồi đi Huế (đi và về), lang: vi }
+        - { id: a3n, text: Vé chiều về từ Huế, lang: vi }
+        - { id: z5e, text: Vé một chiều đi Huế, lang: vi }
+        - { id: o1k, text: Đổi lại vé đi Huế, lang: vi }
+    answer:
+      correct_option_id: t8r
+    explanation:
+      vi: Return ticket là vé khứ hồi - gồm cả lượt đi và lượt về. Vé một chiều là single ticket.
+    display_answer: Vé khứ hồi đi Huế (đi và về)
+
+  - key: en:exercise:hotel-airport-listen-delayed
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:delayed
+    prompt:
+      audio_asset_id: null
+      fallback_text: Flight VN245 to Da Nang is delayed. The new departure time is 10:30.
+      options:
+        - { id: n6v, text: Chuyến bay VN245 đi Đà Nẵng bị hoãn; giờ cất cánh mới là 10 giờ 30., lang: vi }
+        - { id: j3c, text: Chuyến bay VN245 đi Đà Nẵng bị huỷ., lang: vi }
+        - { id: x8p, text: Chuyến bay VN245 đi Đà Nẵng đang lên máy bay ở cửa 10., lang: vi }
+        - { id: g2h, text: Chuyến bay VN245 từ Đà Nẵng đã hạ cánh lúc 10 giờ 30., lang: vi }
+    answer:
+      correct_option_id: n6v
+    explanation:
+      vi: Delayed là "bị hoãn, bị trễ"; new departure time là giờ khởi hành mới. Huỷ hẳn là cancelled, không phải delayed.
+    display_answer: Chuyến bay VN245 đi Đà Nẵng bị hoãn; giờ cất cánh mới là 10 giờ 30.
+
+  - key: en:exercise:hotel-airport-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:book-verb
+    prompt:
+      template: "I'd like to {{b1}} a double {{b2}} for two nights."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi muốn đặt một phòng đôi trong hai đêm."
+        - "Gợi ý: động từ 'đặt trước' là book; 'phòng' là room."
+    answer:
+      blanks:
+        b1: [book, reserve]
+        b2: [room]
+    known_wrong:
+      - answer: order
+        feedback_vi: Order dùng khi gọi món, mua hàng. Đặt phòng dùng book.
+        error_tag: word_choice
+      - answer: buy
+        feedback_vi: Bạn không mua phòng; đặt phòng là book a room.
+        error_tag: word_choice
+    explanation:
+      vi: Book a room là đặt phòng trước (reserve cũng được, trang trọng hơn). Double room là phòng có một giường đôi.
+    display_answer: I'd like to book a double room for two nights.
+
+  - key: en:exercise:hotel-airport-order-checkout
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:check-out
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Mấy giờ phải trả phòng?\""
+      tokens:
+        - { id: c-checkout, text: check-out }
+        - { id: c-time, text: time }
+        - { id: c-is, text: is }
+        - { id: c-what, text: What }
+        - { id: c-checkin, text: check-in }
+        - { id: c-do, text: do }
+    answer:
+      orders:
+        - [c-what, c-time, c-is, c-checkout]
+    explanation:
+      vi: Hỏi giờ - What time is + sự việc? Trả phòng là check-out; check-in là nhận phòng.
+    display_answer: What time is check-out?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:hotel-airport-fill-airport
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:gate
+    prompt:
+      template: "Can I see your {{b1}}, please? Thank you. Here is your boarding pass. Your flight leaves from {{b2}} 15."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [passport]
+        b2: [gate]
+    known_wrong:
+      - answer: platform
+        feedback_vi: Platform là sân ga tàu hoả. Ở sân bay, cửa ra máy bay là gate.
+        error_tag: word_choice
+      - answer: door
+        feedback_vi: Cửa ra máy bay ở sân bay gọi là gate, không phải door.
+        error_tag: word_choice
+    explanation:
+      vi: Khi làm thủ tục, nhân viên xin xem passport (hộ chiếu). Cửa ra máy bay là gate - leaves from gate 15.
+    display_answer: Can I see your passport, please? … Your flight leaves from gate 15.
+
+  - key: en:exercise:hotel-airport-translate-delayed
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:delayed
+    prompt:
+      source_text: Chuyến bay của chúng tôi bị hoãn hai tiếng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Our flight is delayed by two hours.
+        - Our flight is delayed two hours.
+        - Our flight is two hours late.
+        - Our flight has been delayed by two hours.
+        - Our flight has been delayed two hours.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Our flight delay two hours.
+        feedback_vi: Cần is + delayed - Our flight is delayed by two hours.
+        error_tag: missing_be
+      - answer: Our flight delayed two hours.
+        feedback_vi: Thiếu is - Our flight is delayed by two hours.
+        error_tag: missing_be
+      - answer: Our flight is delay two hours.
+        feedback_vi: Bị hoãn là delayed (có -ed) - is delayed by two hours.
+        error_tag: verb_form
+    explanation:
+      vi: Bị hoãn là be delayed; khoảng thời gian thêm by (by two hours). Tiếng Việt quen nói "bị delay" nhưng câu tiếng Anh vẫn cần is.
+    display_answer: Our flight is delayed by two hours.
+
+  - key: en:exercise:hotel-airport-translate-reservation
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:reservation
+    prompt:
+      source_text: Tôi đã đặt phòng trước, tên là Nguyễn Lan.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have a reservation under the name Nguyen Lan.
+        - I have a reservation in the name of Nguyen Lan.
+        - I've got a reservation under the name Nguyen Lan.
+        - I have a booking under the name Nguyen Lan.
+        - I have a reservation. My name is Nguyen Lan.
+        - I have a booking. My name is Nguyen Lan.
+        - I have a reservation for Nguyen Lan.
+        - I made a reservation. My name is Nguyen Lan.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I have reservation under the name Nguyen Lan.
+        feedback_vi: Reservation đếm được - cần a - I have a reservation.
+        error_tag: article
+      - answer: I did a reservation. My name is Nguyen Lan.
+        feedback_vi: Đặt chỗ là make/have a reservation, không dùng do.
+        error_tag: word_choice
+    explanation:
+      vi: Khi đến khách sạn, câu chuẩn là I have a reservation under the name… Tiếng Việt nói "đã đặt" nhưng tiếng Anh dùng have a reservation (tôi có một đặt phòng).
+    display_answer: I have a reservation under the name Nguyen Lan.
+
+  # ---------------- application ----------------
+  - key: en:exercise:hotel-airport-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:platform
+    prompt:
+      source_text: The train to Hanoi leaves from platform 3.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tàu đi Hà Nội chạy từ sân ga số 3.
+        - Tàu đi Hà Nội khởi hành từ sân ga số 3.
+        - Tàu đi Hà Nội xuất phát từ sân ga số 3.
+        - Tàu đi Hà Nội chạy ở sân ga số 3.
+        - Tàu đi Hà Nội khởi hành ở sân ga số 3.
+        - Tàu đi Hà Nội chạy từ sân ga 3.
+        - Tàu đi Hà Nội khởi hành từ sân ga 3.
+        - Tàu hoả đi Hà Nội chạy từ sân ga số 3.
+        - Tàu đi Hà Nội rời ga ở sân ga số 3.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Platform là sân ga (chỗ đứng chờ tàu), leaves from là "chạy/khởi hành từ". Hiện tại đơn ở đây chỉ lịch chạy tàu cố định.
+    display_answer: Tàu đi Hà Nội chạy từ sân ga số 3.
+
+  - key: en:exercise:hotel-airport-order-ticket
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:single-return-ticket
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cho tôi một vé một chiều đi Nha Trang.\""
+      tokens:
+        - { id: s-to, text: to }
+        - { id: s-please, text: please }
+        - { id: s-ticket, text: ticket }
+        - { id: s-a, text: A }
+        - { id: s-nhatrang, text: Nha Trang }
+        - { id: s-single, text: single }
+        - { id: s-return, text: return }
+    answer:
+      orders:
+        - [s-a, s-single, s-ticket, s-to, s-nhatrang, s-please]
+    explanation:
+      vi: Vé một chiều là single ticket (return là khứ hồi). Đi đến đâu dùng to; please thường đứng cuối câu yêu cầu.
+    display_answer: A single ticket to Nha Trang, please.
+
+  - key: en:exercise:hotel-airport-mcq-luggage
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:luggage
+    prompt:
+      stem: "Nhân viên quầy thủ tục hỏi \"How much luggage do you have?\" Bạn có một vali lớn và một túi xách tay. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: l5w, text: "Just one suitcase and a small bag.", lang: en }
+        - { id: l2q, text: "I have two luggages.", lang: en }
+        - { id: l8z, text: "I have a luggage and a bag.", lang: en }
+        - { id: l4c, text: "Two luggage, please.", lang: en }
+    answer:
+      correct_option_id: l5w
+    explanation:
+      vi: Luggage không đếm được nên không nói a luggage, luggages hay two luggage. Để đếm, bạn kể từng món - one suitcase, a small bag.
+    display_answer: "Just one suitcase and a small bag."

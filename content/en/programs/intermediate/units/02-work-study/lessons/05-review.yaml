@@ -1,0 +1,422 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:work-study-review
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập - Một tuần ở văn phòng
+objectives:
+  - vi: Đọc hiểu một email công việc ngắn có quy định, lời nhờ và kế hoạch.
+  - vi: Dùng lại must / don't have to / should, câu điều kiện loại 1 và mệnh đề when / as soon as.
+  - vi: Trả lời email lịch sự - xác nhận, nhờ dời lịch, kết thư đúng chuẩn.
+estimated_minutes: 18
+skills: [reading, writing, grammar]
+prerequisites: [en:lesson:work-study-email-interview]
+items:
+  - item: en:item:confirm
+  - item: en:item:postpone
+  - item: en:item:meeting
+    role: reuse
+  - item: en:item:deadline
+    role: reuse
+  - item: en:item:manager
+    role: reuse
+  - item: en:item:discuss
+    role: reuse
+  - item: en:item:could-you-request
+    role: reuse
+  - item: en:item:would-you-mind
+    role: reuse
+  - item: en:item:mustnt-vs-dont-have-to
+    role: reuse
+  - item: en:item:first-conditional
+    role: reuse
+  - item: en:item:time-clause-present
+    role: reuse
+  - item: en:item:email-dear
+    role: reuse
+  - item: en:item:best-regards
+    role: reuse
+  - item: en:item:look-forward-to
+    role: reuse
+  - item: en:item:job-interview
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ghép mọi thứ của unit vào một tình huống thật - đọc email của sếp về cuộc họp bị dời, rồi trả lời lịch sự và đúng ngữ pháp.
+  - type: explain
+    text:
+      vi: Khi đọc email công việc, hãy tìm ba điều - việc bắt buộc (must, have to), việc không cần (don't have to) và việc người viết nhờ bạn (Could you…?, Would you mind…?). Đó thường là những gì bạn phải làm sau khi đọc.
+  - type: explain
+    text:
+      vi: Khi trả lời, nói rõ mục đích ngay câu đầu (I'm writing to confirm…), dùng lời nhờ lịch sự nếu muốn đổi lịch, và kết bằng I look forward to + -ing cùng Best regards.
+  - type: deep_explain
+    text:
+      vi: Confirm và discuss đều đi thẳng với tân ngữ - confirm the time, discuss the deadline, không thêm about. Postpone là dời sang lúc khác; cancel là huỷ hẳn. Trong email, kế hoạch phụ thuộc điều kiện thường viết bằng câu điều kiện loại 1 - If you can't come, please let me know as soon as possible.
+  - type: example
+    target: "Hi Lan, We're postponing the team meeting until Thursday at 10 a.m. You don't have to prepare slides, but you must bring the sales figures. If you can't come, please tell me as soon as possible. Could you confirm by tomorrow? Best regards, David"
+    target_lang: en
+    translation:
+      vi: "Chào Lan, chúng ta sẽ dời cuộc họp nhóm sang 10 giờ sáng thứ Năm. Em không cần chuẩn bị slide nhưng phải mang số liệu bán hàng. Nếu em không đến được, hãy báo anh càng sớm càng tốt. Em xác nhận giúp anh trước ngày mai nhé? Trân trọng, David"
+    note:
+      vi: Email của quản lý có đủ bắt buộc (must), không cần (don't have to), điều kiện (if) và lời nhờ (Could you…?).
+  - type: example
+    target: "Dear David, I'm writing to confirm that I can come to the meeting on Thursday. Would you mind sending me last month's report before then? I'll bring the sales figures. Best regards, Lan"
+    target_lang: en
+    translation:
+      vi: "Anh David thân mến, em viết thư để xác nhận em sẽ dự cuộc họp thứ Năm. Phiền anh gửi em báo cáo tháng trước trước buổi đó được không ạ? Em sẽ mang số liệu bán hàng. Trân trọng, Lan"
+    note:
+      vi: Thư trả lời - mục đích (I'm writing to confirm), lời nhờ (Would you mind + -ing), lời hứa (I'll).
+  - type: example
+    target: As soon as I get the new deadline, I'll tell the team.
+    target_lang: en
+    translation:
+      vi: Ngay khi có hạn chót mới, mình sẽ báo cho cả nhóm.
+    note:
+      vi: Sau as soon as dùng hiện tại đơn (get).
+  - type: common_mistake
+    wrong: Could you confirm about the time of the meeting?
+    right: Could you confirm the time of the meeting?
+    target_lang: en
+    note:
+      vi: Confirm, discuss đi thẳng với tân ngữ; tiếng Việt có "về" nhưng tiếng Anh không có about.
+  - type: common_mistake
+    wrong: If I will finish early, I'll call you.
+    right: If I finish early, I'll call you.
+    target_lang: en
+    note:
+      vi: Không dùng will sau if, when, as soon as - kể cả khi nói về tương lai.
+  - type: common_mistake
+    wrong: You mustn't prepare slides. (ý là không cần)
+    right: You don't have to prepare slides.
+    target_lang: en
+    note:
+      vi: Mustn't là cấm; "không cần" là don't have to.
+  - type: summary
+    points:
+      - vi: Đọc email - tìm must / have to, don't have to, và lời nhờ Could you / Would you mind.
+      - vi: Trả lời - I'm writing to… · Would you mind + -ing? · I'll… · I look forward to + -ing · Best regards.
+      - vi: Không có will sau if / when / as soon as; confirm và discuss không có about.
+      - vi: postpone = dời lại; cancel = huỷ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:work-study-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:mustnt-vs-dont-have-to
+    prompt:
+      stem: "Đọc email: \"Hi Lan, We're postponing the team meeting until Thursday at 10 a.m. You don't have to prepare slides, but you must bring the sales figures. Could you confirm by tomorrow? David\" Theo email, Lan phải làm gì?"
+      stem_lang: vi
+      options:
+        - { id: k3f, text: Mang số liệu bán hàng đến cuộc họp và xác nhận trước ngày mai., lang: vi }
+        - { id: a8w, text: Chuẩn bị slide và mang số liệu bán hàng., lang: vi }
+        - { id: u5q, text: Huỷ cuộc họp vào thứ Năm., lang: vi }
+        - { id: z1n, text: Không được mang slide đến cuộc họp., lang: vi }
+    answer:
+      correct_option_id: k3f
+    explanation:
+      vi: Must bring là bắt buộc mang số liệu; Could you confirm by tomorrow là nhờ xác nhận trước ngày mai. Don't have to prepare slides là không cần làm slide, không phải bị cấm; postponing là dời lại chứ không huỷ.
+    display_answer: Mang số liệu bán hàng đến cuộc họp và xác nhận trước ngày mai.
+
+  - key: en:exercise:work-study-review-listen-postpone
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:postpone
+    prompt:
+      audio_asset_id: null
+      fallback_text: We're postponing the meeting until Thursday.
+      options:
+        - { id: p4y, text: Chúng ta sẽ dời cuộc họp sang thứ Năm., lang: vi }
+        - { id: t9c, text: Chúng ta sẽ huỷ cuộc họp vào thứ Năm., lang: vi }
+        - { id: h6j, text: Cuộc họp sẽ kết thúc vào thứ Năm., lang: vi }
+        - { id: e1v, text: "Chúng ta sẽ họp sớm hơn, vào thứ Năm.", lang: vi }
+    answer:
+      correct_option_id: p4y
+    explanation:
+      vi: Postpone until Thursday là dời đến thứ Năm. Huỷ hẳn là cancel; họp sớm hơn là bring the meeting forward.
+    display_answer: Chúng ta sẽ dời cuộc họp sang thứ Năm.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:work-study-review-fill-confirm
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:confirm
+    prompt:
+      template: "Could you {{b1}} (xác nhận) the time? If you {{b2}} (không thể) come, I'll {{b3}} (dời) the meeting until Friday."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [confirm, check]
+        b2: [can't, cannot, can not, aren't able to, are not able to]
+        b3: [postpone, move, put off]
+    known_wrong:
+      - answer: confirm about
+        feedback_vi: Confirm đi thẳng với tân ngữ - confirm the time, không có about.
+        error_tag: preposition
+      - answer: won't
+        feedback_vi: Không dùng will sau if - If you can't come.
+        error_tag: will_after_if
+      - answer: will not
+        feedback_vi: Không dùng will sau if - If you can't come.
+        error_tag: will_after_if
+      - answer: cancel
+        feedback_vi: Cancel là huỷ hẳn. Dời sang ngày khác là postpone.
+        error_tag: postpone_cancel
+      - answer: to confirm
+        feedback_vi: Sau Could you là động từ nguyên mẫu, không có to.
+        error_tag: modal_to
+    explanation:
+      vi: Could you + động từ nguyên mẫu (confirm). Vế if dùng hiện tại đơn (can't), không dùng will. Dời sang ngày khác là postpone.
+    display_answer: Could you confirm the time? If you can't come, I'll postpone the meeting until Friday.
+
+  - key: en:exercise:work-study-review-translate-postponed
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:postpone
+    prompt:
+      source_text: Cuộc họp bị dời đến thứ Năm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The meeting is postponed until Thursday.
+        - The meeting has been postponed until Thursday.
+        - The meeting was postponed until Thursday.
+        - The meeting is postponed to Thursday.
+        - The meeting has been postponed to Thursday.
+        - The meeting was postponed to Thursday.
+        - The meeting has been moved to Thursday.
+        - The meeting was moved to Thursday.
+        - The meeting has been put off until Thursday.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The meeting is cancelled until Thursday.
+        feedback_vi: Cancel là huỷ hẳn. Dời lại là postpone.
+        error_tag: postpone_cancel
+      - answer: The meeting postponed until Thursday.
+        feedback_vi: Cuộc họp "bị" dời nên cần be - The meeting is/was postponed.
+        error_tag: missing_be
+      - answer: The meeting is postpone until Thursday.
+        feedback_vi: Câu bị động cần dạng -ed - is postponed.
+        error_tag: passive_form
+    explanation:
+      vi: '"Bị dời" là bị động - be + postponed. Until Thursday hoặc to Thursday đều chỉ thời điểm mới.'
+    display_answer: The meeting has been postponed until Thursday.
+
+  - key: en:exercise:work-study-review-translate-slides
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:mustnt-vs-dont-have-to
+    prompt:
+      source_text: Bạn không cần chuẩn bị slide, nhưng bạn phải mang số liệu bán hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You don't have to prepare slides, but you must bring the sales figures.
+        - You do not have to prepare slides, but you must bring the sales figures.
+        - You don't have to prepare slides, but you have to bring the sales figures.
+        - You don't have to prepare any slides, but you must bring the sales figures.
+        - You don't have to prepare slides, but you must bring the sales data.
+        - You don't need to prepare slides, but you must bring the sales figures.
+        - You don't have to prepare slides, but you must bring sales figures.
+        - You don't have to prepare slides but you must bring the sales figures.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You mustn't prepare slides, but you must bring the sales figures.
+        feedback_vi: Mustn't là cấm. "Không cần" là don't have to.
+        error_tag: mustnt_dont_have_to
+      - answer: You don't must prepare slides, but you must bring the sales figures.
+        feedback_vi: Must không đi với don't. Dùng don't have to.
+        error_tag: dont_must
+      - answer: You don't have to prepare slides, but you must to bring the sales figures.
+        feedback_vi: Sau must không có to - must bring.
+        error_tag: modal_to
+    explanation:
+      vi: '"Không cần" là don''t have to; "phải" là must hoặc have to. Sau must là động từ nguyên mẫu không có to.'
+    display_answer: You don't have to prepare slides, but you must bring the sales figures.
+
+  # ---------------- application ----------------
+  - key: en:exercise:work-study-review-mcq-reschedule
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-you-mind
+    prompt:
+      stem: "Bạn bận vào buổi sáng và muốn nhờ quản lý dời cuộc họp sang buổi chiều một cách lịch sự. Câu nào đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: s7b, text: Would you mind moving the meeting to the afternoon?, lang: en }
+        - { id: d4x, text: Would you mind to move the meeting to the afternoon?, lang: en }
+        - { id: n9h, text: You must move the meeting to the afternoon., lang: en }
+        - { id: f2r, text: Could you moving the meeting to the afternoon?, lang: en }
+    answer:
+      correct_option_id: s7b
+    explanation:
+      vi: Would you mind + -ing là lời nhờ rất lịch sự. "Mind to move" và "Could you moving" sai dạng động từ; "You must…" là ra lệnh, không hợp khi nói với sếp.
+    display_answer: Would you mind moving the meeting to the afternoon?
+
+  - key: en:exercise:work-study-review-mcq-discuss
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:discuss
+    prompt:
+      stem: "Bạn viết email cho cả nhóm. Câu nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: i6m, text: We need to discuss the new deadline on Thursday., lang: en }
+        - { id: y2g, text: We need to discuss about the new deadline on Thursday., lang: en }
+        - { id: c8u, text: We need discuss the new deadline on Thursday., lang: en }
+        - { id: l5k, text: We need to discussing the new deadline on Thursday., lang: en }
+    answer:
+      correct_option_id: i6m
+    explanation:
+      vi: Need to + động từ nguyên mẫu, và discuss đi thẳng với tân ngữ (discuss the deadline), không có about.
+    display_answer: We need to discuss the new deadline on Thursday.
+
+  - key: en:exercise:work-study-review-order-confirm
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:confirm
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Anh xác nhận giúp em giờ phỏng vấn được không?\""
+      tokens:
+        - { id: f-interview, text: interview }
+        - { id: f-confirm, text: confirm }
+        - { id: f-of, text: of }
+        - { id: f-about, text: about }
+        - { id: f-the2, text: the }
+        - { id: f-you, text: you }
+        - { id: f-time, text: time }
+        - { id: f-could, text: Could }
+        - { id: f-the1, text: the }
+    answer:
+      orders:
+        - [f-could, f-you, f-confirm, f-the1, f-time, f-of, f-the2, f-interview]
+        - [f-could, f-you, f-confirm, f-the2, f-time, f-of, f-the1, f-interview]
+    explanation:
+      vi: Could you + confirm + tân ngữ (the time of the interview). Confirm không đi với about.
+    display_answer: Could you confirm the time of the interview?
+
+  - key: en:exercise:work-study-review-translate-report-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:first-conditional
+    prompt:
+      source_text: If I finish the report today, I'll send it to you before the meeting.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu hôm nay tôi làm xong báo cáo, tôi sẽ gửi cho anh trước cuộc họp.
+        - Nếu hôm nay tôi làm xong báo cáo thì tôi sẽ gửi cho anh trước cuộc họp.
+        - Nếu hôm nay tôi làm xong báo cáo, tôi sẽ gửi nó cho bạn trước cuộc họp.
+        - Nếu hôm nay tôi làm xong báo cáo, tôi sẽ gửi cho bạn trước cuộc họp.
+        - Nếu tôi làm xong báo cáo hôm nay, tôi sẽ gửi cho bạn trước cuộc họp.
+        - Nếu tôi hoàn thành báo cáo hôm nay, tôi sẽ gửi cho bạn trước cuộc họp.
+        - Nếu hôm nay tôi hoàn thành báo cáo, tôi sẽ gửi cho anh trước cuộc họp.
+        - Nếu hôm nay mình làm xong báo cáo, mình sẽ gửi cho bạn trước cuộc họp.
+        - Nếu hôm nay em làm xong báo cáo, em sẽ gửi cho anh trước cuộc họp.
+        - Nếu hôm nay tôi viết xong báo cáo, tôi sẽ gửi cho bạn trước cuộc họp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Câu điều kiện loại 1 - finish (hiện tại đơn) vẫn nói về hôm nay/tương lai, nên dịch là "nếu… làm xong"; I'll send là "tôi sẽ gửi".
+    display_answer: Nếu hôm nay tôi làm xong báo cáo, tôi sẽ gửi cho bạn trước cuộc họp.
+
+  - key: en:exercise:work-study-review-translate-mind-confirm
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:would-you-mind
+    prompt:
+      source_text: Phiền anh xác nhận giờ phỏng vấn giúp tôi được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Would you mind confirming the time of the interview?
+        - Would you mind confirming the interview time?
+        - Would you mind confirming the time of the interview for me?
+        - Would you mind confirming the interview time for me?
+        - Could you confirm the time of the interview?
+        - Could you confirm the interview time?
+        - Could you please confirm the time of the interview?
+        - Could you confirm the time of the interview for me?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Would you mind to confirm the time of the interview?
+        feedback_vi: Sau Would you mind dùng -ing - confirming.
+        error_tag: mind_ing
+      - answer: Would you mind confirming about the time of the interview?
+        feedback_vi: Confirm đi thẳng với tân ngữ, không có about.
+        error_tag: preposition
+      - answer: Could you confirm about the time of the interview?
+        feedback_vi: Confirm đi thẳng với tân ngữ, không có about.
+        error_tag: preposition
+    explanation:
+      vi: '"Phiền anh… được không" là Would you mind + -ing (confirming), hoặc Could you + động từ nguyên mẫu. Confirm không đi với about.'
+    display_answer: Would you mind confirming the time of the interview?
+
+  - key: en:exercise:work-study-review-fill-reply
+    type: fill_blank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:look-forward-to
+    prompt:
+      template: "Dear Mr Brown, I'm writing {{b1}} confirm my interview on Monday at 9 a.m. I look forward to {{b2}} you. {{b3}} regards, Tran Minh Anh"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [to]
+        b2: [meeting, seeing]
+        b3: [Best, Kind]
+    known_wrong:
+      - answer: for
+        feedback_vi: Nêu mục đích dùng to + động từ nguyên mẫu - I'm writing to confirm.
+        error_tag: preposition
+      - answer: meet
+        feedback_vi: Sau look forward to dùng -ing - meeting.
+        error_tag: look_forward_ing
+      - answer: see
+        feedback_vi: Sau look forward to dùng -ing - seeing.
+        error_tag: look_forward_ing
+      - answer: Good
+        feedback_vi: Lời kết cố định là Best regards hoặc Kind regards.
+        error_tag: collocation
+    explanation:
+      vi: I'm writing to + động từ nêu mục đích. Look forward to + -ing (meeting you). Kết thư bằng Best regards hoặc Kind regards.
+    display_answer: Dear Mr Brown, I'm writing to confirm my interview on Monday at 9 a.m. I look forward to meeting you. Best regards, Tran Minh Anh

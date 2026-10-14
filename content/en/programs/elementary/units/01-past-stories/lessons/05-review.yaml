@@ -1,0 +1,473 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:past-stories-review
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập - Kể chuyện cuối tuần
+objectives:
+  - vi: Đọc hiểu một đoạn kể chuyện ngắn ở thì quá khứ đơn.
+  - vi: Kết hợp was/were, động từ -ed, động từ bất quy tắc, didn't và Did…? trong cùng một câu chuyện.
+  - vi: Hỏi và kể về một ngày cuối tuần hay kỳ nghỉ theo đúng trình tự.
+estimated_minutes: 20
+skills: [reading, grammar, speaking, writing]
+prerequisites: [en:lesson:past-questions]
+items:
+  - item: en:item:be-past
+    role: reuse
+  - item: en:item:there-was-were
+    role: reuse
+  - item: en:item:was-born
+    role: reuse
+  - item: en:item:in-plus-year
+    role: reuse
+  - item: en:item:past-simple-regular
+    role: reuse
+  - item: en:item:stayed
+    role: reuse
+  - item: en:item:irregular-past
+    role: reuse
+  - item: en:item:went
+    role: reuse
+  - item: en:item:ate
+    role: reuse
+  - item: en:item:took
+    role: reuse
+  - item: en:item:saw
+    role: reuse
+  - item: en:item:came
+    role: reuse
+  - item: en:item:got
+    role: reuse
+  - item: en:item:sequence-first
+    role: reuse
+  - item: en:item:after-that
+    role: reuse
+  - item: en:item:finally
+    role: reuse
+  - item: en:item:past-negative-didnt
+    role: reuse
+  - item: en:item:past-question-did
+    role: reuse
+  - item: en:item:past-wh-did
+    role: reuse
+  - item: en:item:how-was-your-weekend
+    role: reuse
+  - item: en:item:had-a-great-time
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này gom mọi thứ của unit vào một câu chuyện thật - một ngày sinh nhật mẹ và một cuộc trò chuyện sáng thứ Hai. Sau bài, bạn tự kể được cuối tuần của mình trong 5-6 câu.
+  - type: explain
+    text:
+      vi: Khi kể chuyện quá khứ, hãy kiểm tra từng động từ - be thì dùng was/were; động từ thường thì thêm -ed hoặc dùng dạng bất quy tắc. Mỗi câu chỉ đánh dấu quá khứ một lần - nếu có did/didn't thì động từ chính để nguyên mẫu.
+  - type: explain
+    text:
+      vi: Một câu chuyện dễ nghe có khung - mở đầu bằng mốc thời gian (Last Saturday…), kể các việc theo trình tự (First, Then, After that, Finally) và kết thúc bằng cảm nhận (It was a great day.).
+  - type: deep_explain
+    text:
+      vi: Người Việt hay kể đúng ở câu đầu rồi "trôi" về thì hiện tại ở các câu sau, vì tiếng Việt không đổi động từ. Khi viết, bạn hãy gạch chân mọi động từ và hỏi - việc này đã xảy ra chưa? Nếu rồi, nó phải ở dạng quá khứ.
+  - type: example
+    target: "Last Saturday was my mum's birthday. First, I got up early and went to the market. I bought some flowers and a cake. Then I came home and cooked lunch with my sister. There were twelve people at our house! After that, we took a lot of photos. The weather wasn't good, so we didn't go out. Finally, everyone went home at nine. I was tired, but it was a great day."
+    target_lang: en
+    translation:
+      vi: "Thứ Bảy vừa rồi là sinh nhật mẹ mình. Đầu tiên, mình dậy sớm và đi chợ. Mình mua ít hoa và một chiếc bánh. Sau đó mình về nhà và nấu bữa trưa cùng em gái. Nhà mình có tới mười hai người! Tiếp đó, cả nhà chụp rất nhiều ảnh. Trời không đẹp nên mọi người không ra ngoài. Cuối cùng, chín giờ mọi người về. Mình mệt, nhưng đó là một ngày tuyệt vời."
+    note:
+      vi: Đoạn văn dùng đủ was/were, there were, động từ -ed (cooked), bất quy tắc (got, went, bought, came, took), didn't go và các từ nối trình tự.
+  - type: example
+    target: "Hoa: Hi Nam! How was your weekend? Nam: It was great, thanks. I went to my mum's birthday party. Hoa: Did you cook? Nam: Yes, I did. I cooked lunch with my sister. What did you do? Hoa: Nothing special. I stayed at home and watched films."
+    target_lang: en
+    translation:
+      vi: "Hoa: Chào Nam! Cuối tuần của bạn thế nào? Nam: Vui lắm, cảm ơn bạn. Mình đi dự tiệc sinh nhật mẹ. Hoa: Bạn có nấu ăn không? Nam: Có. Mình nấu bữa trưa cùng em gái. Còn bạn làm gì? Hoa: Không có gì đặc biệt. Mình ở nhà xem phim."
+    note:
+      vi: How was hỏi cảm nhận; Did you cook? hỏi Có/Không; What did you do? hỏi thông tin. Câu trả lời dùng động từ quá khứ, không có did.
+  - type: example
+    target: My grandparents were born in Hue, but they moved to Hanoi in 1980.
+    target_lang: en
+    translation:
+      vi: Ông bà mình sinh ra ở Huế, nhưng chuyển ra Hà Nội năm 1980.
+    note:
+      vi: Were born (chủ ngữ số nhiều), moved (-ed đọc /d/), in + năm.
+  - type: common_mistake
+    wrong: Last Sunday I went to the park and play badminton with my friends.
+    right: Last Sunday I went to the park and played badminton with my friends.
+    target_lang: en
+    note:
+      vi: Lỗi "trôi thì" - động từ thứ hai cũng là việc đã qua, nên phải là played.
+  - type: common_mistake
+    wrong: What you did yesterday?
+    right: What did you do yesterday?
+    target_lang: en
+    note:
+      vi: Câu hỏi Wh- cần did trước chủ ngữ, và động từ chính về nguyên mẫu (do).
+  - type: common_mistake
+    wrong: I was go to Vung Tau last month.
+    right: I went to Vung Tau last month.
+    target_lang: en
+    note:
+      vi: Was không có nghĩa "đã". Go → went là đủ.
+  - type: summary
+    points:
+      - vi: be → was/were; there was/there were; was born.
+      - vi: Động từ thường - thêm -ed (chú ý chính tả, cách đọc) hoặc dạng bất quy tắc.
+      - vi: didn't + nguyên mẫu; Did…? + nguyên mẫu; Wh- + did + nguyên mẫu; How was…?
+      - vi: Khung câu chuyện - mốc thời gian → First/Then/After that/Finally → cảm nhận.
+      - vi: Kiểm tra mọi động từ trong câu chuyện để không "trôi" về hiện tại.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:past-stories-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:past-negative-didnt
+    prompt:
+      stem: "Đọc: \"The weather wasn't good, so we didn't go out. Finally, everyone went home at nine.\" Câu nào đúng với đoạn này?"
+      stem_lang: vi
+      options:
+        - { id: a7r, text: Trời không đẹp nên họ ở trong nhà., lang: vi }
+        - { id: m3t, text: Trời đẹp nên họ ra ngoài chơi., lang: vi }
+        - { id: z9e, text: Mọi người về nhà lúc chín giờ sáng., lang: vi }
+        - { id: k1s, text: Họ ra ngoài dù trời không đẹp., lang: vi }
+    answer:
+      correct_option_id: a7r
+    explanation:
+      vi: Wasn't good là "không đẹp", didn't go out là "không ra ngoài". Đoạn văn nói về bữa tiệc sau bữa trưa, nên chín giờ là buổi tối, không phải buổi sáng.
+    display_answer: Trời không đẹp nên họ ở trong nhà.
+
+  - key: en:exercise:past-stories-review-listen-met
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:past-question-did
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Did you have a good weekend? - Yes, I did. I saw some old friends."
+      options:
+        - { id: p4n, text: "Cuối tuần của bạn vui không? - Có. Mình gặp mấy người bạn cũ.", lang: vi }
+        - { id: e8b, text: "Cuối tuần của bạn vui không? - Không. Mình không gặp ai cả.", lang: vi }
+        - { id: u2k, text: "Cuối tuần này bạn có rảnh không? - Có. Mình sẽ gặp mấy người bạn cũ.", lang: vi }
+        - { id: h6x, text: "Bạn có bạn cũ không? - Có. Mình có mấy người bạn cũ.", lang: vi }
+    answer:
+      correct_option_id: p4n
+    explanation:
+      vi: Did you have a good weekend? hỏi về cuối tuần đã qua; Yes, I did là "có"; saw some old friends là "gặp mấy người bạn cũ".
+    display_answer: "Cuối tuần của bạn vui không? - Có. Mình gặp mấy người bạn cũ."
+
+  - key: en:exercise:past-stories-review-mcq-error
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:irregular-past
+    prompt:
+      stem: Câu nào ĐÚNG ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: c5d, text: We didn't went to the beach., lang: en }
+        - { id: y8w, text: Did she bought a new bag?, lang: en }
+        - { id: o2q, text: They were very tired after the party., lang: en }
+        - { id: g6m, text: I was meet my cousins yesterday., lang: en }
+    answer:
+      correct_option_id: o2q
+    explanation:
+      vi: They đi với were, tired là tính từ nên dùng be. Ba câu còn lại đánh dấu quá khứ hai lần (didn't went, did… bought) hoặc ghép sai was + động từ (was meet).
+    display_answer: They were very tired after the party.
+
+  - key: en:exercise:past-stories-review-order-weekend
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:how-was-your-weekend
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Cuối tuần của bạn thế nào?\""
+      tokens:
+        - { id: v-weekend, text: weekend }
+        - { id: v-did, text: did }
+        - { id: v-your, text: your }
+        - { id: v-how, text: How }
+        - { id: v-were, text: were }
+        - { id: v-was, text: was }
+    answer:
+      orders:
+        - [v-how, v-was, v-your, v-weekend]
+    explanation:
+      vi: Hỏi cảm nhận về một thứ đã qua dùng How was…? - weekend là số ít nên dùng was. Không dùng did vì câu không có động từ thường.
+    display_answer: How was your weekend?
+
+  - key: en:exercise:past-stories-review-fill-dialogue
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:past-wh-did
+    prompt:
+      template: "A: What {{b1}} you do on Sunday? B: I {{b2}} (go) to the cinema. The film {{b3}} amazing!"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: A: Chủ Nhật bạn làm gì? B: Mình đi xem phim. Phim tuyệt lắm!"
+        - "Gợi ý: câu hỏi Wh- cần trợ động từ quá khứ; go bất quy tắc; film là số ít."
+    answer:
+      blanks:
+        b1: [did]
+        b2: [went]
+        b3: [was]
+    known_wrong:
+      - answer: do
+        feedback_vi: Chủ Nhật đã qua nên hỏi bằng did, không dùng do.
+        error_tag: tense_present
+      - answer: goed
+        feedback_vi: Go bất quy tắc - went.
+        error_tag: irregular_ed
+      - answer: go
+        feedback_vi: Câu trả lời không có did, nên động từ phải ở quá khứ - went.
+        error_tag: no_past_marking
+      - answer: were
+        feedback_vi: The film là số ít nên dùng was.
+        error_tag: be_form
+    explanation:
+      vi: What + did + you + do hỏi việc đã làm. Câu trả lời không có did nên dùng went. The film số ít đi với was.
+    display_answer: "A: What did you do on Sunday? B: I went to the cinema. The film was amazing!"
+
+  # ---------------- recall ----------------
+  - key: en:exercise:past-stories-review-fill-holiday
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:stayed
+    prompt:
+      template: "Last summer my family {{b1}} (go) to Nha Trang. We {{b2}} (stay) with my uncle and {{b3}} (eat) a lot of seafood. There {{b4}} (be) many tourists on the beach."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 3 }
+        - { id: b4, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [went]
+        b2: [stayed]
+        b3: [ate]
+        b4: [were]
+    known_wrong:
+      - answer: goed
+        feedback_vi: Go bất quy tắc - went.
+        error_tag: irregular_ed
+      - answer: staied
+        feedback_vi: Trước y là nguyên âm a nên giữ y - stayed.
+        error_tag: ed_spelling
+      - answer: eated
+        feedback_vi: Eat bất quy tắc - ate.
+        error_tag: irregular_ed
+      - answer: was
+        feedback_vi: Tourists là số nhiều nên dùng there were.
+        error_tag: be_form
+      - answer: stay
+        feedback_vi: Chuyện mùa hè năm ngoái nên động từ phải ở quá khứ.
+        error_tag: no_past_marking
+      - answer: eat
+        feedback_vi: Chuyện mùa hè năm ngoái nên động từ phải ở quá khứ.
+        error_tag: no_past_marking
+    explanation:
+      vi: Go → went, eat → ate (bất quy tắc), stay → stayed (giữ y). Many tourists số nhiều nên there were.
+    display_answer: Last summer my family went to Nha Trang. We stayed with my uncle and ate a lot of seafood. There were many tourists on the beach.
+
+  - key: en:exercise:past-stories-review-translate-breakfast
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:got
+    prompt:
+      source_text: Hôm qua tôi không ăn sáng vì tôi dậy muộn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I didn't have breakfast yesterday because I got up late.
+        - I did not have breakfast yesterday because I got up late.
+        - Yesterday I didn't have breakfast because I got up late.
+        - Yesterday, I didn't have breakfast because I got up late.
+        - I didn't eat breakfast yesterday because I got up late.
+        - I didn't have breakfast yesterday because I woke up late.
+        - Yesterday I didn't eat breakfast because I got up late.
+        - I didn't have breakfast yesterday because I overslept.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I didn't had breakfast yesterday because I got up late.
+        feedback_vi: Sau didn't dùng động từ nguyên mẫu - didn't have.
+        error_tag: didnt_past_verb
+      - answer: I didn't have breakfast yesterday because I get up late.
+        feedback_vi: Việc dậy muộn cũng đã xảy ra hôm qua - got up.
+        error_tag: no_past_marking
+      - answer: Yesterday I don't have breakfast because I get up late.
+        feedback_vi: Có yesterday nên dùng didn't have và got up.
+        error_tag: tense_present
+      - answer: I wasn't have breakfast yesterday because I got up late.
+        feedback_vi: Phủ định động từ thường dùng didn't, không dùng wasn't.
+        error_tag: be_with_verb
+    explanation:
+      vi: Vế đầu phủ định - didn't + have (nguyên mẫu). Vế sau khẳng định, không có did, nên get up → got up.
+    display_answer: I didn't have breakfast yesterday because I got up late.
+
+  - key: en:exercise:past-stories-review-translate-party
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:saw
+    prompt:
+      source_text: Bạn có gặp Lan ở bữa tiệc không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Did you see Lan at the party?
+        - Did you meet Lan at the party?
+        - Did you see Lan at the party yesterday?
+        - At the party, did you see Lan?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Did you saw Lan at the party?
+        feedback_vi: Sau did dùng động từ nguyên mẫu - see.
+        error_tag: didnt_past_verb
+      - answer: Were you see Lan at the party?
+        feedback_vi: Câu có động từ thường see nên dùng Did, không dùng Were.
+        error_tag: be_with_verb
+      - answer: You saw Lan at the party?
+        feedback_vi: Câu hỏi thông thường cần Did ở đầu - Did you see…?
+        error_tag: missing_auxiliary
+      - answer: Did you met Lan at the party?
+        feedback_vi: Sau did dùng động từ nguyên mẫu - meet.
+        error_tag: didnt_past_verb
+    explanation:
+      vi: Câu hỏi Có/Không - Did + you + see/meet (nguyên mẫu). Tình cờ gặp người quen thường dùng see.
+    display_answer: Did you see Lan at the party?
+
+  # ---------------- application ----------------
+  - key: en:exercise:past-stories-review-translate-born
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:was-born
+    prompt:
+      source_text: My grandparents were born in Hue, but they moved to Hanoi in 1980.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ông bà tôi sinh ra ở Huế, nhưng họ chuyển ra Hà Nội năm 1980.
+        - Ông bà tôi sinh ra ở Huế, nhưng ông bà chuyển ra Hà Nội năm 1980.
+        - Ông bà tôi sinh ra ở Huế nhưng đã chuyển ra Hà Nội vào năm 1980.
+        - Ông bà mình sinh ra ở Huế, nhưng chuyển ra Hà Nội năm 1980.
+        - Ông bà tôi sinh ở Huế, nhưng chuyển ra Hà Nội năm 1980.
+        - Ông bà tôi sinh ra ở Huế, nhưng họ đã chuyển đến Hà Nội năm 1980.
+        - Ông bà tôi sinh ra ở Huế, nhưng năm 1980 họ chuyển ra Hà Nội.
+        - Ông bà của tôi sinh ra ở Huế, nhưng họ chuyển ra Hà Nội vào năm 1980.
+        - Ông bà tôi quê ở Huế, nhưng năm 1980 ông bà chuyển ra Hà Nội.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ông bà tôi sống ở Huế, nhưng họ chuyển ra Hà Nội năm 1980.
+        feedback_vi: Were born là "sinh ra", không phải "sống".
+        error_tag: meaning_born
+    explanation:
+      vi: Were born là "sinh ra"; moved to là "chuyển đến/chuyển ra"; in 1980 là "năm 1980". Tiếng Việt không bắt buộc thêm "đã".
+    display_answer: Ông bà tôi sinh ra ở Huế, nhưng họ chuyển ra Hà Nội năm 1980.
+
+  - key: en:exercise:past-stories-review-mcq-wedding
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:had-a-great-time
+    prompt:
+      stem: "Bạn bè hỏi: \"How was your cousin's wedding?\" Bạn muốn nói đám cưới rất hay, mọi người nhảy múa và ăn rất nhiều. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: w3f, text: It was lovely. We danced and ate a lot., lang: en }
+        - { id: r6h, text: It was lovely. We dance and eat a lot., lang: en }
+        - { id: b1j, text: It did lovely. We danced and ate a lot., lang: en }
+        - { id: t8v, text: It was lovely. We danced and eated a lot., lang: en }
+    answer:
+      correct_option_id: w3f
+    explanation:
+      vi: How was…? trả lời bằng It was…; danced (thêm -d vì dance tận cùng -e) và ate (bất quy tắc) đều là quá khứ. It did lovely sai vì lovely là tính từ, cần be.
+    display_answer: It was lovely. We danced and ate a lot.
+
+  - key: en:exercise:past-stories-review-order-class
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 2
+    item: en:item:came
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"Hôm qua bạn có đến lớp không?\""
+      tokens:
+        - { id: l-came, text: came }
+        - { id: l-class, text: class }
+        - { id: l-you, text: you }
+        - { id: l-were, text: Were }
+        - { id: l-yesterday, text: yesterday }
+        - { id: l-come, text: come }
+        - { id: l-did, text: Did }
+        - { id: l-to, text: to }
+    answer:
+      orders:
+        - [l-did, l-you, l-come, l-to, l-class, l-yesterday]
+    explanation:
+      vi: Câu hỏi Có/Không với động từ thường - Did + you + come (nguyên mẫu). Không dùng came vì did đã mang nghĩa quá khứ; Were không đi với come.
+    display_answer: Did you come to class yesterday?
+
+  - key: en:exercise:past-stories-review-translate-beach
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:took
+    prompt:
+      source_text: Cuối tuần trước tôi đi biển với bạn bè. Chúng tôi ăn hải sản và chụp rất nhiều ảnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Last weekend I went to the beach with my friends. We ate seafood and took a lot of photos.
+        - Last weekend, I went to the beach with my friends. We ate seafood and took a lot of photos.
+        - Last weekend I went to the beach with my friends. We had seafood and took a lot of photos.
+        - Last weekend I went to the beach with my friends. We ate seafood and took lots of photos.
+        - Last weekend I went to the beach with my friends. We ate seafood and took a lot of pictures.
+        - Last weekend I went to the beach with friends. We ate seafood and took a lot of photos.
+        - I went to the beach with my friends last weekend. We ate seafood and took a lot of photos.
+        - Last weekend I went to the seaside with my friends. We ate seafood and took a lot of photos.
+        - Last weekend my friends and I went to the beach. We ate seafood and took a lot of photos.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Last weekend I go to the beach with my friends. We eat seafood and take a lot of photos.
+        feedback_vi: Chuyện cuối tuần trước nên mọi động từ phải ở quá khứ - went, ate, took.
+        error_tag: no_past_marking
+      - answer: Last weekend I went to the beach with my friends. We eat seafood and take a lot of photos.
+        feedback_vi: Câu thứ hai cũng là chuyện đã qua - ate, took. Đừng để "trôi thì".
+        error_tag: no_past_marking
+      - answer: Last weekend I went to the beach with my friends. We ate seafood and made a lot of photos.
+        feedback_vi: "\"Chụp ảnh\" là take photos - took a lot of photos."
+        error_tag: collocation_take_photo
+      - answer: Last weekend I was go to the beach with my friends. We ate seafood and took a lot of photos.
+        feedback_vi: Không dùng was + động từ nguyên mẫu; chỉ cần went.
+        error_tag: was_plus_verb
+    explanation:
+      vi: Cả ba động từ đều bất quy tắc - go → went, eat → ate, take → took. "Chụp ảnh" là take photos.
+    display_answer: Last weekend I went to the beach with my friends. We ate seafood and took a lot of photos.

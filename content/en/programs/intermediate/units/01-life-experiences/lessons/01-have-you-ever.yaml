@@ -1,0 +1,439 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+reviewed_by: null
+reviewed_at: null
+key: en:lesson:have-you-ever
+order_index: 1
+level: b1
+title:
+  vi: Bạn đã bao giờ…?
+objectives:
+  - vi: Hỏi và kể về trải nghiệm trong đời bằng Have you ever…? và I've never…
+  - vi: Dùng đúng quá khứ phân từ (V3) của các động từ bất quy tắc thường gặp.
+  - vi: Phân biệt have been to (đã từng đến) và have gone to (đã đi, chưa về).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: []
+items:
+  - item: en:item:present-perfect-experience
+  - item: en:item:ever-never-experience
+  - item: en:item:irregular-past-participles
+  - item: en:item:been-vs-gone
+  - item: en:item:go-abroad
+  - item: en:item:once-twice-times
+  - item: en:item:unforgettable
+  - item: en:item:try-something-new
+  - item: en:item:climb-a-mountain
+  - item: en:item:in-my-life
+  - item: en:item:experience-noun
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Bạn đã bao giờ đi nước ngoài chưa?", trả lời "Mình chưa bao giờ thấy tuyết" và kể mình đã đến một nơi bao nhiêu lần.
+  - type: explain
+    text:
+      vi: Khi kể một trải nghiệm trong đời mà không nói lúc nào, tiếng Anh dùng have/has + quá khứ phân từ (V3) - I have visited Hue. I, you, we, they đi với have; he, she, it đi với has. Khi nói, thường rút gọn thành I've, she's.
+  - type: explain
+    text:
+      vi: Hỏi "đã bao giờ… chưa?" dùng Have you ever + V3? Trả lời ngắn là Yes, I have hoặc No, I haven't. Chưa bao giờ là never - I've never been abroad; never đã là phủ định nên không thêm not.
+  - type: explain
+    text:
+      vi: Nhiều động từ thường gặp có V3 bất quy tắc - be → been, see → seen, eat → eaten, do → done, fly → flown, take → taken, write → written. Động từ có quy tắc thì V3 giống V2 - visited, tried, climbed.
+  - type: deep_explain
+    text:
+      vi: Kể chuyện đi lại, bạn dùng been to - I've been to Japan nghĩa là đã từng đến và đã về. She's gone to Japan nghĩa là cô ấy đã đi và hiện vẫn ở đó, nên không dùng gone để kể trải nghiệm. Số lần đặt ở cuối câu - once, twice, three times, many times; với nơi không cần to như abroad, home thì nói I've been abroad.
+  - type: example
+    target: Have you ever eaten durian?
+    target_lang: en
+    translation:
+      vi: Bạn đã bao giờ ăn sầu riêng chưa?
+    note:
+      vi: Ever đứng giữa you và V3. Eat có V3 là eaten, không phải ate.
+  - type: example
+    target: I've never been abroad, but I've been to Da Lat three times.
+    target_lang: en
+    translation:
+      vi: Mình chưa đi nước ngoài bao giờ, nhưng đã đến Đà Lạt ba lần.
+    note:
+      vi: Been abroad không có to; been to Da Lat có to vì Da Lat là tên địa danh.
+  - type: example
+    target: My grandmother has never flown in a plane.
+    target_lang: en
+    translation:
+      vi: Bà mình chưa bao giờ đi máy bay.
+    note:
+      vi: Grandmother là ngôi thứ ba số ít nên dùng has. Fly có V3 là flown.
+  - type: example
+    target: Climbing Fansipan was an unforgettable experience.
+    target_lang: en
+    translation:
+      vi: Leo Fansipan là một trải nghiệm không thể nào quên.
+    note:
+      vi: Một sự việc đã trải qua là an experience (đếm được).
+  - type: common_mistake
+    wrong: Did you ever eat durian?
+    right: Have you ever eaten durian?
+    target_lang: en
+    note:
+      vi: Tiếng Việt có chữ "đã" nên bạn dễ dùng quá khứ đơn. Hỏi trải nghiệm trong cả cuộc đời (chưa kết thúc) thì dùng Have you ever + V3.
+  - type: common_mistake
+    wrong: I have saw that film three times.
+    right: I have seen that film three times.
+    target_lang: en
+    note:
+      vi: Sau have/has phải là V3. Saw là V2 (quá khứ đơn), V3 của see là seen.
+  - type: common_mistake
+    wrong: I haven't never been to Europe.
+    right: I've never been to Europe.
+    target_lang: en
+    note:
+      vi: Never đã mang nghĩa "không bao giờ", thêm not là phủ định hai lần. Dùng never hoặc haven't… ever, không dùng cả hai.
+  - type: summary
+    points:
+      - vi: Trải nghiệm không nêu thời điểm - have/has + V3 (I've visited, she's tried).
+      - vi: Have you ever + V3? - Yes, I have. / No, I haven't. Không hỏi Did you ever…?
+      - vi: Never là phủ định - I've never been… không thêm not.
+      - vi: Been to = đã từng đến và đã về; gone to = đã đi và còn ở đó.
+      - vi: Số lần ở cuối câu - once, twice, three times.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:have-you-ever-mcq-eaten
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:irregular-past-participles
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Have you ever ___ sushi?"
+      stem_lang: vi
+      options:
+        - { id: q7w, text: eaten, lang: en }
+        - { id: m2c, text: ate, lang: en }
+        - { id: z5k, text: eat, lang: en }
+        - { id: h9d, text: eating, lang: en }
+    answer:
+      correct_option_id: q7w
+    explanation:
+      vi: Sau have phải dùng V3. Eat là động từ bất quy tắc - eat, ate, eaten - nên V3 là eaten; ate là V2 chỉ dùng cho quá khứ đơn.
+    display_answer: eaten
+
+  - key: en:exercise:have-you-ever-mcq-been-gone
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:been-vs-gone
+    prompt:
+      stem: "Bạn đang ở Việt Nam và muốn kể rằng mình từng đến Singapore. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r4t, text: I've been to Singapore., lang: en }
+        - { id: x8n, text: I've gone to Singapore., lang: en }
+        - { id: b3e, text: I've been in Singapore yesterday., lang: en }
+        - { id: u6s, text: I've went to Singapore., lang: en }
+    answer:
+      correct_option_id: r4t
+    explanation:
+      vi: Been to nghĩa là đã từng đến và đã về - đúng với người đang ở Việt Nam. Gone to nghĩa là vẫn còn ở đó; went là V2 nên không đứng sau have; yesterday là mốc đã kết thúc nên không dùng với present perfect.
+    display_answer: I've been to Singapore.
+
+  - key: en:exercise:have-you-ever-listen-abroad
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:go-abroad
+    prompt:
+      audio_asset_id: null
+      fallback_text: My brother has never been abroad.
+      options:
+        - { id: k2p, text: Anh trai mình chưa bao giờ đi nước ngoài., lang: vi }
+        - { id: d7y, text: Anh trai mình đã đi nước ngoài nhiều lần., lang: vi }
+        - { id: w5f, text: Anh trai mình đang ở nước ngoài., lang: vi }
+        - { id: g1v, text: Anh trai mình sắp đi nước ngoài., lang: vi }
+    answer:
+      correct_option_id: k2p
+    explanation:
+      vi: Has never been abroad nghĩa là chưa bao giờ đi nước ngoài. Never mang nghĩa phủ định, nên không thể là "đã đi nhiều lần"; câu cũng không nói về hiện tại hay tương lai.
+    display_answer: Anh trai mình chưa bao giờ đi nước ngoài.
+
+  - key: en:exercise:have-you-ever-fill-climbed
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ever-never-experience
+    prompt:
+      template: "Have you {{b1}} {{b2}} a mountain?"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Bạn đã bao giờ leo núi chưa?"
+        - "Gợi ý: từ thứ nhất là \"đã bao giờ\"; từ thứ hai là V3 của climb."
+    answer:
+      blanks:
+        b1: [ever]
+        b2: [climbed]
+    known_wrong:
+      - answer: never
+        feedback_vi: Never là "chưa bao giờ" (phủ định). Câu hỏi trải nghiệm dùng ever.
+        error_tag: ever_never
+      - answer: climb
+        feedback_vi: Sau have phải là V3 - climbed.
+        error_tag: past_participle
+      - answer: climbing
+        feedback_vi: Present perfect là have + V3, không phải V-ing - climbed.
+        error_tag: past_participle
+    explanation:
+      vi: Câu hỏi trải nghiệm có dạng Have you ever + V3. Climb là động từ có quy tắc nên V3 là climbed.
+    display_answer: Have you ever climbed a mountain?
+
+  - key: en:exercise:have-you-ever-order-never
+    type: word_bank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ever-never-experience
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mình chưa bao giờ đi nước ngoài.\""
+      tokens:
+        - { id: n-abroad, text: abroad }
+        - { id: n-to, text: to }
+        - { id: n-been, text: been }
+        - { id: n-ive, text: I've }
+        - { id: n-gone, text: gone }
+        - { id: n-never, text: never }
+        - { id: n-ever, text: ever }
+    answer:
+      orders:
+        - [n-ive, n-never, n-been, n-abroad]
+    explanation:
+      vi: Never đứng giữa have ('ve) và V3. Abroad là trạng từ nên không có to phía trước; kể trải nghiệm dùng been, không dùng gone.
+    display_answer: I've never been abroad.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:have-you-ever-fill-flown
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:irregular-past-participles
+    prompt:
+      template: "My aunt {{b1}} {{b2}} (fly) in a hot-air balloon twice."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [has]
+        b2: [flown]
+    known_wrong:
+      - answer: have
+        feedback_vi: My aunt là ngôi thứ ba số ít nên dùng has.
+        error_tag: have_has
+      - answer: flew
+        feedback_vi: Flew là V2. Sau has cần V3 - flown.
+        error_tag: past_participle
+      - answer: flied
+        feedback_vi: Fly là động từ bất quy tắc - fly, flew, flown.
+        error_tag: past_participle
+      - answer: fly
+        feedback_vi: Sau has cần V3 - flown.
+        error_tag: past_participle
+    explanation:
+      vi: Kể trải nghiệm kèm số lần (twice) dùng present perfect. My aunt (một người) đi với has, và V3 của fly là flown.
+    display_answer: My aunt has flown in a hot-air balloon twice.
+
+  - key: en:exercise:have-you-ever-translate-durian
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ever-never-experience
+    prompt:
+      source_text: Bạn đã bao giờ ăn sầu riêng chưa?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Have you ever eaten durian?
+        - Have you ever tried durian?
+        - Have you ever tasted durian?
+        - Have you ever eaten a durian?
+        - Have you ever eaten durians?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Did you ever eat durian?
+        feedback_vi: Hỏi trải nghiệm trong đời dùng Have you ever + V3 - Have you ever eaten durian?
+        error_tag: did_ever
+      - answer: Have you ever ate durian?
+        feedback_vi: Ate là V2. Sau have cần V3 - eaten.
+        error_tag: past_participle
+      - answer: Have you ever eat durian?
+        feedback_vi: Sau have cần V3 - eaten.
+        error_tag: past_participle
+      - answer: You have ever eaten durian?
+        feedback_vi: Câu hỏi phải đảo have lên trước you - Have you ever eaten durian?
+        error_tag: question_order
+      - answer: Have you never eaten durian?
+        feedback_vi: Câu hỏi "đã bao giờ… chưa" dùng ever, không dùng never.
+        error_tag: ever_never
+    explanation:
+      vi: "\"Đã bao giờ… chưa\" là Have you ever + V3. Eat là bất quy tắc nên V3 là eaten; cũng có thể dùng try (ăn thử) - Have you ever tried durian?"
+    display_answer: Have you ever eaten durian?
+
+  - key: en:exercise:have-you-ever-translate-snow
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:in-my-life
+    prompt:
+      source_text: Cả đời mình chưa bao giờ thấy tuyết.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have never seen snow in my life.
+        - I've never seen snow in my life.
+        - I have never seen snow in my whole life.
+        - I've never seen snow in my whole life.
+        - I have never seen snow.
+        - I've never seen snow.
+        - In my life, I have never seen snow.
+        - In my life, I've never seen snow.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I haven't never seen snow in my life.
+        feedback_vi: Never đã là phủ định, không thêm not - I've never seen snow.
+        error_tag: double_negative
+      - answer: I have never saw snow in my life.
+        feedback_vi: Saw là V2. Sau have cần V3 - seen.
+        error_tag: past_participle
+      - answer: I have ever seen snow in my life.
+        feedback_vi: Ever không mang nghĩa phủ định. "Chưa bao giờ" là never.
+        error_tag: ever_never
+      - answer: I never see snow in my life.
+        feedback_vi: Trải nghiệm trong đời (đến nay) dùng present perfect - I've never seen snow.
+        error_tag: tense_choice
+    explanation:
+      vi: "\"Chưa bao giờ\" là never, đứng giữa have và V3; V3 của see là seen. In my life chỉ khoảng thời gian chưa kết thúc nên hợp với present perfect."
+    display_answer: I've never seen snow in my life.
+
+  # ---------------- application ----------------
+  - key: en:exercise:have-you-ever-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:present-perfect-experience
+    prompt:
+      stem: "Một người bạn nước ngoài hỏi: \"Have you ever tried bun cha?\" Bạn đã ăn món này rất nhiều lần. Câu trả lời nào tự nhiên và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: e3j, text: "Yes, I have. Many times!", lang: en }
+        - { id: t8l, text: "Yes, I did. Many times!", lang: en }
+        - { id: a6o, text: "Yes, I was. Many times!", lang: en }
+        - { id: c1x, text: "No, I haven't. Many times!", lang: en }
+    answer:
+      correct_option_id: e3j
+    explanation:
+      vi: Câu hỏi bắt đầu bằng Have nên câu trả lời ngắn dùng have - Yes, I have. Did đi với câu hỏi quá khứ đơn, was đi với be; No, I haven't mâu thuẫn với "nhiều lần".
+    display_answer: "Yes, I have. Many times!"
+
+  - key: en:exercise:have-you-ever-order-twice
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:once-twice-times
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cô ấy đã đến Huế hai lần.\""
+      tokens:
+        - { id: t-twice, text: twice }
+        - { id: t-hue, text: Hue }
+        - { id: t-been, text: been }
+        - { id: t-she, text: She }
+        - { id: t-gone, text: gone }
+        - { id: t-to, text: to }
+        - { id: t-have, text: have }
+        - { id: t-has, text: has }
+    answer:
+      orders:
+        - [t-she, t-has, t-been, t-to, t-hue, t-twice]
+    explanation:
+      vi: She đi với has; kể trải nghiệm đi lại dùng been to. Số lần (twice) đứng cuối câu.
+    display_answer: She has been to Hue twice.
+
+  - key: en:exercise:have-you-ever-translate-climb
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:climb-a-mountain
+    prompt:
+      source_text: Have you ever climbed a mountain?
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn đã bao giờ leo núi chưa?
+        - Bạn đã từng leo núi chưa?
+        - Bạn từng leo núi chưa?
+        - Bạn đã leo núi bao giờ chưa?
+        - Bạn leo núi bao giờ chưa?
+        - Bạn có bao giờ leo núi chưa?
+        - Bạn đã bao giờ leo lên một ngọn núi chưa?
+        - Bạn đã từng leo một ngọn núi chưa?
+        - Bạn đã bao giờ leo một ngọn núi chưa?
+        - Bạn đã leo núi chưa?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Have you ever + V3? là câu hỏi "đã bao giờ / đã từng… chưa?". Climbed a mountain dịch tự nhiên là "leo núi".
+    display_answer: Bạn đã bao giờ leo núi chưa?
+
+  - key: en:exercise:have-you-ever-translate-abroad
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:go-abroad
+    prompt:
+      source_text: Bố mình đã đi nước ngoài ba lần, nhưng mẹ mình chưa bao giờ đi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My father has been abroad three times, but my mother has never been.
+        - My father's been abroad three times, but my mother's never been.
+        - My dad has been abroad three times, but my mum has never been.
+        - My dad has been abroad three times, but my mom has never been.
+        - My father has been abroad three times, but my mother has never been abroad.
+        - My dad has been abroad three times, but my mom has never been abroad.
+        - My dad has been abroad three times, but my mum has never been abroad.
+        - My father has travelled abroad three times, but my mother has never been.
+        - My father has traveled abroad three times, but my mother has never been.
+        - My father has been abroad three times, but my mother hasn't.
+        - My dad has been abroad three times, but my mom hasn't.
+        - My dad has been abroad three times, but my mum hasn't.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My father has been to abroad three times, but my mother has never been.
+        feedback_vi: Abroad là trạng từ, không có to phía trước - been abroad.
+        error_tag: abroad_no_to
+      - answer: My father have been abroad three times, but my mother have never been.
+        feedback_vi: My father, my mother là ngôi thứ ba số ít nên dùng has.
+        error_tag: have_has
+      - answer: My father has been abroad three times, but my mother hasn't never been.
+        feedback_vi: Never đã là phủ định - has never been hoặc hasn't, không dùng cả hai.
+        error_tag: double_negative
+    explanation:
+      vi: Cả hai vế kể trải nghiệm không nêu thời điểm nên dùng present perfect với has (ngôi thứ ba số ít). Go abroad không có to, số lần three times đứng sau abroad.
+    display_answer: My father has been abroad three times, but my mother has never been.
