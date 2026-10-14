@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { copyFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath, URL } from 'node:url';
+import { VitePWA } from 'vite-plugin-pwa';
 import { cspPlugin } from './build/csp.ts';
 
 const rootDir = fileURLToPath(new URL('../..', import.meta.url));
@@ -43,6 +44,26 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       cspPlugin({ supabaseUrl: env.VITE_SUPABASE_URL, heroVideoUrl: env.VITE_HERO_VIDEO_URL }),
       spaFallback(),
+      // Spec 10 §4: src/sw.ts → dist/sw.js with the precache manifest injected. Registration is manual
+      // (src/features/pwa/register.ts) and the manifest is the static public/manifest.webmanifest.
+      VitePWA({
+        strategies: 'injectManifest',
+        srcDir: 'src',
+        filename: 'sw.ts',
+        injectRegister: false,
+        manifest: false,
+        devOptions: { enabled: false },
+        injectManifest: {
+          rollupFormat: 'iife',
+          sourcemap: false,
+          minify: true,
+          // App shell only; 404.html is a copy of index.html (GitHub Pages deep links), big brand art is landing-only.
+          globPatterns: ['**/*.{html,js,css,woff,woff2,ico,png,svg,webmanifest}'],
+          globIgnores: ['404.html', 'brand/*.{png,webp}'],
+          // The main chunk must never be skipped silently (workbox drops files over the limit with a warning).
+          maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        },
+      }),
     ],
     resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
     server: { port: 5173, strictPort: true },
