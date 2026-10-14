@@ -10,6 +10,7 @@ const REVIEW_MESSAGES: Record<ReviewErrorCode, string> = {
   path_not_active: 'Lộ trình này đang tạm dừng. Hãy bật lại lộ trình để ôn tập.',
   card_not_found: 'Không tìm thấy thẻ ôn tập.',
   card_suspended: 'Thẻ này đang tạm ẩn.',
+  card_not_due: 'Thẻ này chưa đến lúc ôn đâu. Cứ để trí nhớ nghỉ ngơi một chút, Linguo sẽ nhắc bạn đúng lúc nhé.',
   invalid_rating: 'Mức đánh giá không hợp lệ.',
   idempotency_conflict: 'Lượt chấm này đã được gửi với nội dung khác.',
   rate_limited: 'Bạn đang chấm quá nhanh. Đợi một chút rồi thử lại.',
