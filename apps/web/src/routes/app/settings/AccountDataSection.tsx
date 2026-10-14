@@ -60,7 +60,9 @@ export function AccountDataSection() {
   async function onDeleted() {
     if (user) clearLocalAccountData(user.id);
     // Leave /app first: signing out while still inside it would send RequireAuth to the sign-in page instead.
-    navigate('/', { replace: true });
+    // Wait for the navigation to finish (the landing route is lazy and can be slow to load), or the sign-out below
+    // can win the race and land on the sign-in page.
+    await navigate('/', { replace: true });
     // The server already removed the user (and so the session): only the local copy is left to drop.
     await requireSupabase()
       .auth.signOut({ scope: 'local' })

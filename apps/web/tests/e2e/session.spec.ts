@@ -87,7 +87,7 @@ test('restores a planned session, reorders it with the keyboard and keeps the or
 
   await page.getByRole('button', { name: 'Bắt đầu phiên học' }).click();
   const sessionId = String(mock.planner.sessions()[0]?.id);
-  await expect(page).toHaveURL(new RegExp(`/app/hoc-tap/bai/${HELLO.id}\\?phien=${sessionId}&muc=a2$`));
+  await expect(page).toHaveURL(new RegExp(`/app/hoc-tap/bai/${HELLO.id}\\?phien=${sessionId}&muc=a2(&buoc=\\d+)?$`));
 });
 
 test('skips an activity, runs the recap and completes the session', async ({ page }) => {
