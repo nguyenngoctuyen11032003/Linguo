@@ -47,7 +47,7 @@ test.describe('app shell', () => {
     expect(Math.round(navBox!.y + navBox!.height)).toBe(viewport!.height);
 
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.waitForTimeout(300);
+    await settleAnimations(page);
     const last = await page.getByRole('button', { name: 'Đăng xuất' }).boundingBox();
     expect(last!.y + last!.height).toBeLessThanOrEqual(navBox!.y);
   });
