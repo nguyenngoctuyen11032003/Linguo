@@ -1,0 +1,55 @@
+# Reminders (spec 10 §3): every 15 minutes, calls the Edge Function notify-dispatch, which creates the due in-app
+# notifications (generate_due_notifications) and sends them as Web Push. The 15-minute cadence matches the
+# reminder window (REMINDER_RULES.window_minutes); calling twice in one window never duplicates a reminder.
+#
+# Uses environment `notify` (branch main only, NO required reviewers, so the cron runs unattended) holding only
+# NOTIFY_CRON_SECRET. That secret can do nothing but trigger this dispatch. It is never printed: it only goes into a
+# 0600 curl config file, not argv or logs. Not set yet → the run warns and exits 0 (no failure mail every 15 min).
+name: Notify
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    name: Dispatch due reminders
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    environment: notify
+    env:
+      SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      NOTIFY_CRON_SECRET: ${{ secrets.NOTIFY_CRON_SECRET }}
+    steps:
+      - name: Call notify-dispatch
+        run: |
+          set +x
+          if [ -z "$NOTIFY_CRON_SECRET" ] || [ -z "$SUPABASE_URL" ]; then
+            echo "::warning::Thiếu NOTIFY_CRON_SECRET (environment notify) hoặc variable VITE_SUPABASE_URL — bỏ qua (xem docs/DEPLOY.md → Nhắc học & Web Push)."
+            exit 0
+          fi
+          umask 077
+          cfg="$(mktemp)"
+          body="$(mktemp)"
+          trap 'rm -f "$cfg" "$body"' EXIT
+          printf 'header = "Authorization: Bearer %s"\n' "$NOTIFY_CRON_SECRET" > "$cfg"
+          status=$(curl --silent --show-error --max-time 120 --config "$cfg" \
+            --request POST --header 'Content-Type: application/json' --data '{}' \
+            --output "$body" --write-out '%{http_code}' \
+            "${SUPABASE_URL%/}/functions/v1/notify-dispatch") || { echo "::error::Không gọi được notify-dispatch"; exit 1; }
+          echo "HTTP $status"
+          # Body is counts only: {generated, pushed, failed, removed}.
+          head -c 500 "$body"; echo
+          if [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
+            echo "::error::notify-dispatch trả HTTP $status"
+            exit 1
+          fi
