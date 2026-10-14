@@ -131,6 +131,45 @@ describe('ContentDetailPage', () => {
     expect(mocks.rpc).not.toHaveBeenCalledWith('admin_get_content', expect.anything());
   });
 
+  it('links only http(s) source urls', async () => {
+    const withUrl = (url: string) => exerciseDetailFixture({ source: { ...exerciseDetailFixture().source!, url } });
+    routeRpcs(mocks.rpc, detailTable('editor', { admin_get_content: { data: withUrl('https://tatoeba.org/vi') } }));
+    const first = renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
+    const source = await screen.findByRole('region', { name: 'Nguồn và giấy phép' });
+    expect(within(source).getByRole('link', { name: /tatoeba\.org/ })).toHaveAttribute('href', 'https://tatoeba.org/vi');
+    first.unmount();
+
+    routeRpcs(mocks.rpc, detailTable('editor', { admin_get_content: { data: withUrl('javascript:alert(1)') } }));
+    renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
+    const unsafe = await screen.findByRole('region', { name: 'Nguồn và giấy phép' });
+    expect(within(unsafe).getByText('javascript:alert(1)')).toBeInTheDocument();
+    expect(within(unsafe).queryByRole('link')).not.toBeInTheDocument();
+  });
+
+  it('never shows the previous row under a new path and resets the status form', async () => {
+    const OTHER = 'e0000000-0000-4000-8000-0000000000ff';
+    let release: (value: { data: unknown; error: null }) => void = () => {};
+    mocks.rpc.mockImplementation((name: string, args: Record<string, unknown>) => {
+      if (name === 'staff_role') return Promise.resolve({ data: 'reviewer', error: null });
+      if (name === 'admin_get_content' && args.p_id === OTHER) return new Promise((resolve) => (release = resolve));
+      if (name === 'admin_get_content') return Promise.resolve({ data: exerciseDetailFixture(), error: null });
+      return Promise.resolve({ data: null, error: { message: `no_rpc_${name}`, code: 'X' } });
+    });
+    const user = userEvent.setup();
+    const { router } = renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
+    const note = await screen.findByLabelText('Ghi chú duyệt (không bắt buộc)');
+    await user.type(note, 'ghi chú của dòng cũ');
+    expect(note).toHaveValue('ghi chú của dòng cũ');
+
+    await router.navigate(`/quan-tri/noi-dung/exercise/${OTHER}`);
+    expect(await screen.findByText('Đang tải nội dung…')).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { level: 1 })).not.toBeInTheDocument();
+    expect(screen.queryByLabelText('Ghi chú duyệt (không bắt buộc)')).not.toBeInTheDocument();
+
+    release({ data: exerciseDetailFixture({ id: OTHER, key: 'en:exercise:other' }), error: null });
+    expect(await screen.findByLabelText('Ghi chú duyệt (không bắt buộc)')).toHaveValue('');
+  });
+
   it('shows a not-found error', async () => {
     routeRpcs(mocks.rpc, { staff_role: { data: 'editor' }, admin_get_content: { data: null, error: { message: 'content_not_found', code: 'P0001' } } });
     renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);

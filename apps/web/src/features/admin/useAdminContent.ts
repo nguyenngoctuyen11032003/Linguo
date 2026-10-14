@@ -58,5 +58,9 @@ export function useAdminContentDetail(kind: AdminContentKind | null, id: string 
     [kind, id, reload],
   );
 
+  // While another row loads the resource keeps the previous row's data; never hand it out for a different id/kind.
+  if (resource.data !== null && (resource.data.id !== id || resource.data.kind !== kind)) {
+    return { ...resource, status: resource.status === 'error' ? 'error' : 'loading', data: null, changeStatus, saving };
+  }
   return { ...resource, changeStatus, saving };
 }

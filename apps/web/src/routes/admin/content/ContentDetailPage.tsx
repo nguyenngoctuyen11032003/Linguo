@@ -5,7 +5,7 @@ import type { AdminContentDetail } from '@linguo/shared';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
-import { formatAdminDate, isContentKind, reportTargetKind, reportsPath } from '@/features/admin/content';
+import { formatAdminDate, isContentKind, reportTargetKind, reportsPath, safeUrl } from '@/features/admin/content';
 import { ADMIN_KIND_LABELS_VI } from '@/features/admin/service';
 import { useAdminContentDetail } from '@/features/admin/useAdminContent';
 import { useAdminRole } from '@/features/admin/useStaffRole';
@@ -79,7 +79,8 @@ export function ContentDetailPage() {
     );
   }
 
-  const data = detail.data;
+  // Never show another row's data under this path (the hook withholds it too while the new row loads).
+  const data = detail.data && detail.data.id === id && detail.data.kind === kind ? detail.data : null;
   if (!data) {
     return (
       <div className="space-y-4" aria-busy="true">
@@ -94,6 +95,9 @@ export function ContentDetailPage() {
   }
 
   const targetKind = reportTargetKind(data.kind);
+  const sourceHref = data.source ? safeUrl(data.source.url) : null;
+  // Local state (note, force, blocked, previewed answers) belongs to one row.
+  const rowKey = `${data.kind}:${data.id}`;
   const openReports = openReportsFromState(location.state);
 
   return (
@@ -111,11 +115,11 @@ export function ContentDetailPage() {
       </header>
 
       <Section title="Trạng thái">
-        <StatusActions detail={data} role={role} saving={detail.saving} onChange={detail.changeStatus} />
+        <StatusActions key={rowKey} detail={data} role={role} saving={detail.saving} onChange={detail.changeStatus} />
       </Section>
 
       <Section title="Xem trước">
-        <ContentPreview detail={data} />
+        <ContentPreview key={rowKey} detail={data} />
       </Section>
 
       <Section title="Đáp án và giải thích">
@@ -138,10 +142,15 @@ export function ContentDetailPage() {
               <>
                 <dt className="font-semibold text-muted">Liên kết</dt>
                 <dd className="min-w-0 break-all">
-                  <a href={data.source.url} target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline">
-                    {data.source.url}
-                    <ExternalLink aria-hidden className="size-3.5" />
-                  </a>
+                  {sourceHref ? (
+                    <a href={sourceHref} target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline">
+                      {data.source.url}
+                      <ExternalLink aria-hidden className="size-3.5" />
+                    </a>
+                  ) : (
+                    // Free text from the content repo: only http(s) becomes a link.
+                    <span>{data.source.url}</span>
+                  )}
                 </dd>
               </>
             )}

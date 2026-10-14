@@ -14,6 +14,7 @@ describe('adminErrorMessage', () => {
     expect(adminErrorMessage(new Error('open_wrong_answer_reports'))).toMatch(/Đáp án sai/);
     expect(adminErrorMessage(new Error('note_too_long'))).toMatch(/500/);
     expect(adminErrorMessage({ message: 'user_not_found', code: 'P0001' })).toBe('Không tìm thấy người dùng này.');
+    expect(adminErrorMessage({ message: 'last_admin_required', code: 'P0001' })).toMatch(/ít nhất một quản trị viên/);
   });
 
   it('extracts the error code', () => {

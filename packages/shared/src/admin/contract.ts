@@ -42,7 +42,10 @@ export const REPORT_RULES = { note_max: 500, resolution_note_max: 500, daily_lim
 /** report_content(p_target_kind, p_target_id, p_reason, p_note) → this. */
 export const reportContentResultSchema = z.object({
   report_id: z.string().uuid(),
-  /** 'open', or 'duplicate' when the same target was reported (by anyone) within 24 h. */
+  /**
+   * 'open', or 'duplicate' when an unresolved (open/triaged) report with the same reason and content version already
+   * exists for the target, or when the caller already has an unresolved report on it (then report_id is that report).
+   */
   status: z.enum(['open', 'duplicate']),
 });
 export type ReportContentResult = z.infer<typeof reportContentResultSchema>;
@@ -78,6 +81,8 @@ export const ADMIN_ERROR_CODES = [
   'invalid_report_status',
   'invalid_range',
   'invalid_role',
+  /** admin_grant_role would remove or demote the last remaining admin. */
+  'last_admin_required',
 ] as const;
 export type AdminErrorCode = (typeof ADMIN_ERROR_CODES)[number];
 

@@ -13,6 +13,7 @@ import {
   nextStatuses,
   reportTargetKind,
   reportsPath,
+  safeUrl,
   setContentStatus,
   transitionLabel,
 } from './content';
@@ -91,5 +92,14 @@ describe('helpers', () => {
     expect(reportTargetKind('exam_question')).toBe('exam_question');
     expect(formatAdminDate('2026-10-10T08:05:00Z')).toBe('10/10/2026');
     expect(formatAdminDate(null)).toBe('—');
+  });
+
+  it('safeUrl keeps only http(s) urls', () => {
+    expect(safeUrl('https://tatoeba.org/vi')).toBe('https://tatoeba.org/vi');
+    expect(safeUrl('http://example.com')).toBe('http://example.com/');
+    expect(safeUrl('javascript:alert(1)')).toBeNull();
+    expect(safeUrl('data:text/html,x')).toBeNull();
+    expect(safeUrl('not a url')).toBeNull();
+    expect(safeUrl(null)).toBeNull();
   });
 });

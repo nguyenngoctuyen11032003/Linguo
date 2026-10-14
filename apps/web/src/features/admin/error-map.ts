@@ -11,6 +11,7 @@ const ADMIN_MESSAGES: Record<AdminErrorCode, string> = {
   invalid_report_status: 'Trạng thái báo lỗi không hợp lệ.',
   invalid_range: 'Khoảng thời gian không hợp lệ.',
   invalid_role: 'Vai trò không hợp lệ.',
+  last_admin_required: 'Phải còn ít nhất một quản trị viên. Hãy chỉ định quản trị viên khác trước khi gỡ hoặc hạ vai trò này.',
 };
 
 const MESSAGES: Record<string, string> = {

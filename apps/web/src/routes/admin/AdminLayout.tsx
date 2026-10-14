@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import type { StaffRole } from '@linguo/shared';
 import { ArrowLeft, BarChart3, BookOpen, Flag, LayoutDashboard, Library, ScrollText, type LucideIcon } from 'lucide-react';
 import { Link, NavLink, Outlet } from 'react-router';
+import { breakOutOfFrame, isFramed } from '@/features/admin/frame-guard';
 import { STAFF_ROLE_LABELS_VI, hasStaffRole } from '@/features/admin/service';
 import { useAdminRole } from '@/features/admin/useStaffRole';
 import { cn } from '@/lib/cn';
@@ -44,10 +45,28 @@ function useNoIndex() {
   }, []);
 }
 
+/** What an embedded copy shows instead of the admin pages: nothing sensitive, only a way to open the real page. */
+function FramedNotice() {
+  useEffect(() => {
+    breakOutOfFrame();
+  }, []);
+  return (
+    <main className="min-h-hero bg-bg p-6 text-center">
+      <p className="mb-3 text-[15px]">Trang quản trị không được hiển thị bên trong trang khác.</p>
+      <a href={window.location.href} target="_top" rel="noopener" className="font-semibold text-primary underline underline-offset-4">
+        Mở trang quản trị trong cửa sổ riêng
+      </a>
+    </main>
+  );
+}
+
 /** Compact staff layout: desktop first (side nav), a scrolling tab row on small screens. */
 export function AdminLayout() {
   const role = useAdminRole();
   useNoIndex();
+  // Evaluated once per mount: a page cannot move between being framed and not.
+  const [framed] = useState(() => isFramed());
+  if (framed) return <FramedNotice />;
   const items = ADMIN_NAV.filter((item) => !item.minRole || hasStaffRole(role, item.minRole));
 
   return (

@@ -33,6 +33,17 @@ export const CONTENT_LANGUAGES = ['en', 'ko'] as const;
 export type ContentLanguage = (typeof CONTENT_LANGUAGES)[number];
 export const CONTENT_LANGUAGE_LABELS_VI: Record<ContentLanguage, string> = { en: 'Tiếng Anh', ko: 'Tiếng Hàn' };
 
+/** Only http(s) links are rendered as links (a source url is free text from the content repo). */
+export function safeUrl(url: string | null): string | null {
+  if (!url) return null;
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'https:' || parsed.protocol === 'http:' ? parsed.href : null;
+  } catch {
+    return null;
+  }
+}
+
 export function isContentKind(value: unknown): value is AdminContentKind {
   return typeof value === 'string' && (ADMIN_CONTENT_KINDS as readonly string[]).includes(value);
 }

@@ -2,6 +2,7 @@ import { Library } from 'lucide-react';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
+import { safeUrl } from '@/features/admin/content';
 import { useAdminSources } from '@/features/admin/useAdminSources';
 
 const SOURCE_STATUS_LABELS: Record<string, string> = {
@@ -12,17 +13,6 @@ const SOURCE_STATUS_LABELS: Record<string, string> = {
   retired: 'Ngừng dùng',
   archived: 'Lưu trữ',
 };
-
-/** Only http(s) links are rendered as links. */
-function safeUrl(url: string | null): string | null {
-  if (!url) return null;
-  try {
-    const parsed = new URL(url);
-    return parsed.protocol === 'https:' || parsed.protocol === 'http:' ? parsed.href : null;
-  } catch {
-    return null;
-  }
-}
 
 /** Spec 11 §4 "Nguồn": sources, licenses, attribution requirements and usage (read only). */
 export function SourcesPage() {
