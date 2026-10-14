@@ -1,12 +1,12 @@
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useRef, useState } from 'react';
-import { useNavigate } from 'react-router';
+import { Route, Routes, useNavigate } from 'react-router';
 import { describe, expect, it, vi } from 'vitest';
 import { TEST_KO_PATH, TEST_PATH } from '../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../tests/unit/render';
-import { ComingSoonPage } from '@/routes/app/ComingSoonPage';
 import { AppBar } from './AppBar';
+import { AppLayout } from './AppLayout';
 import { BottomNav } from './BottomNav';
 import { MoreSheet } from './MoreSheet';
 
@@ -148,10 +148,16 @@ describe('AppBar', () => {
   });
 });
 
-describe('ComingSoonPage', () => {
-  it('names the feature', () => {
-    renderWithProviders(<ComingSoonPage title="Ôn tập" />);
-    expect(screen.getByRole('heading', { level: 1, name: 'Ôn tập' })).toBeInTheDocument();
-    expect(screen.getByText(/Tính năng Ôn tập đang được xây dựng/)).toBeInTheDocument();
+describe('AppLayout', () => {
+  it('renders the routed child inside the main landmark', () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/app" element={<AppLayout />}>
+          <Route index element={<h1>Nội dung thử</h1>} />
+        </Route>
+      </Routes>,
+      { route: '/app' },
+    );
+    expect(screen.getByRole('main')).toContainElement(screen.getByRole('heading', { level: 1, name: 'Nội dung thử' }));
   });
 });
