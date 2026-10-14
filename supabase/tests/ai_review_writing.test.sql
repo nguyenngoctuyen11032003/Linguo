@@ -2,7 +2,7 @@ begin;
 create extension if not exists pgtap with schema extensions;
 select plan(8);
 
--- Spec 9 X6 (migration 20261015000350): review_writing is an allowed task for the usage log, the cache and
+-- Spec 9 X6 (migration 20261015000700): review_writing is an allowed task for the usage log, the cache and
 -- reports; unknown task names are still refused by the RPCs and the table checks.
 insert into auth.users (id, email, raw_user_meta_data) values
   ('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa', 'a@test.dev', '{}');
