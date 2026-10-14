@@ -24,7 +24,7 @@ parallel safe
 set search_path = ''
 as $$
   select nullif(btrim(regexp_replace(
-    regexp_replace(normalize(p_text, NFC), '[​-‏‪-‮⁦-⁩﻿]', '', 'g'),
+    regexp_replace(normalize(p_text, NFC), '[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]', '', 'g'),
     '[\s\x01-\x1f\x7f]+', ' ', 'g')), '');
 $$;
 

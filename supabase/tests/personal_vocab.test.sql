@@ -69,7 +69,7 @@ select is(public.import_personal_words(current_setting('test.la')::uuid, jsonb_b
     jsonb_build_object('term', '사과', 'meaning', 'quả táo', 'example', '사과를 먹어요.', 'note', 'danh từ', 'pronunciation', 'sa-gwa'),
     jsonb_build_object('term', '  학교 ', 'meaning', 'trường học'),
     jsonb_build_object('term', '=HYPERLINK("http://evil")', 'meaning', '+cmd|calc'),
-    jsonb_build_object('term', '바나나', 'meaning', E'chuối‮​\x01 vàng')))
+    jsonb_build_object('term', '바나나', 'meaning', E'chuối\u202e\u200b\x01 vàng')))
   - 'invalid', '{"added": 4, "updated": 0, "unchanged": 0, "duplicates": 0}'::jsonb, 'first import adds 4 words');
 reset role;
 select is((select term from public.personal_words where list_id = current_setting('test.la')::uuid and term like '=%'),

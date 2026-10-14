@@ -371,5 +371,11 @@ export function parsePersonalVocabCsv(input: string, options: ParseOptions = {})
 
 /** Strips the parser-only `line` so rows can go to import_personal_words. */
 export function toImportRows(rows: readonly ParsedWordRow[]): PersonalWordRow[] {
-  return rows.map(({ line: _line, ...rest }) => rest);
+  return rows.map((row) => {
+    const out: PersonalWordRow = { term: row.term, meaning: row.meaning };
+    if (row.example) out.example = row.example;
+    if (row.note) out.note = row.note;
+    if (row.pronunciation) out.pronunciation = row.pronunciation;
+    return out;
+  });
 }

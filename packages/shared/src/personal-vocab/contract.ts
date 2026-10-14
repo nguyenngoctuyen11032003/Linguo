@@ -35,7 +35,8 @@ export type PersonalVocabErrorCode = (typeof PERSONAL_VOCAB_ERROR_CODES)[number]
 
 // Same cleaning as public.personal_clean in SQL: NFC, bidi/zero-width characters dropped, control characters and
 // whitespace runs collapsed to one space, trimmed. Formula prefixes (= + - @) are plain text and stay untouched.
-const INVISIBLE = /[​-‏‪-‮⁦-⁩﻿]/g;
+const INVISIBLE = /[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]/g;
+// eslint-disable-next-line no-control-regex -- stripping control characters is the point
 const SPACE_OR_CONTROL = /[\s\u0000-\u001f\u007f]+/g;
 
 /** Cleaned text, or null when nothing is left. */

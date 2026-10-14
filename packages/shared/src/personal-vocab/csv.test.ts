@@ -29,7 +29,7 @@ describe('delimiters, BOM and line endings', () => {
   });
 
   it('strips a UTF-8 BOM so the first header is still recognised', () => {
-    const r = parse('﻿word,meaning\ncat,con mèo');
+    const r = parse('\ufeffword,meaning\ncat,con mèo');
     expect(r.hasHeader).toBe(true);
     expect(r.rows).toHaveLength(1);
   });
@@ -138,7 +138,7 @@ describe('row validation', () => {
   });
 
   it('trims and collapses whitespace and strips control and bidi characters', () => {
-    const r = parse('word,meaning\n"  big \t  apple ","‮quả​  táo\u0001 "');
+    const r = parse('word,meaning\n"  big \t  apple ","\u202equả\u200b  táo\u0001 "');
     expect(r.rows[0]).toMatchObject({ term: 'big apple', meaning: 'quả táo' });
   });
 
