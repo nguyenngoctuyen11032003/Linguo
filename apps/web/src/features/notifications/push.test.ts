@@ -1,7 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { fakeClient } from '../../../tests/unit/fake-supabase';
 import { prefs } from './notification-fixtures';
-import { disablePush, enablePush, getPushState, getPushSupport, urlBase64ToUint8Array } from './push';
+import type { AppSupabaseClient } from '@/lib/supabase';
+import { disablePush, enablePush, getPushState, getPushSupport, releasePushOnSignOut, urlBase64ToUint8Array } from './push';
 import { fakeSubscription, installPush, removePush, type PushEnv } from './push-test-utils';
 
 const mocks = vi.hoisted(() => ({ env: { vapidPublicKey: 'AQID' as string | null } }));
@@ -137,5 +138,65 @@ describe('disablePush', () => {
     const client = fakeClient({}, { set_notification_prefs: { data: prefs() } });
     await disablePush(client);
     expect(client.rpcCalls).toEqual([['set_notification_prefs', { p: { push_enabled: false } }]]);
+  });
+});
+
+describe('releasePushOnSignOut', () => {
+  it('unsubscribes this browser and deletes its endpoint server-side, without touching the prefs', async () => {
+    const sub = fakeSubscription();
+    push = installPush({ permission: 'granted', subscription: sub });
+    const client = fakeClient({}, { delete_push_subscription: { data: null } });
+    await releasePushOnSignOut(client);
+    expect(sub.unsubscribe).toHaveBeenCalled();
+    expect(client.rpcCalls).toEqual([['delete_push_subscription', { p_endpoint: 'https://push.example/sub-1' }]]);
+  });
+
+  it('does nothing without a subscription, without push support or without a registration', async () => {
+    push = installPush({ permission: 'granted' });
+    const none = fakeClient({});
+    await releasePushOnSignOut(none);
+    expect(none.rpcCalls).toEqual([]);
+    push.restore();
+    push = installPush({ permission: 'granted', registered: false });
+    await releasePushOnSignOut(none);
+    push.restore();
+    push = null;
+    restoreRemoved = removePush();
+    await releasePushOnSignOut(none);
+    expect(none.rpcCalls).toEqual([]);
+  });
+
+  it('never throws: an offline RPC or a failing unsubscribe is tolerated', async () => {
+    const sub = fakeSubscription();
+    sub.unsubscribe.mockRejectedValue(new Error('boom'));
+    push = installPush({ permission: 'granted', subscription: sub });
+    const client = fakeClient({}, { delete_push_subscription: { data: null, error: { message: 'TypeError: Failed to fetch', code: '' } } });
+    await expect(releasePushOnSignOut(client)).resolves.toBeUndefined();
+    expect(client.rpcCalls).toEqual([['delete_push_subscription', { p_endpoint: 'https://push.example/sub-1' }]]);
+
+    push.restore();
+    push = installPush({ permission: 'granted', subscription: fakeSubscription() });
+    const throwing = { rpc: () => Promise.reject(new Error('offline')) } as unknown as AppSupabaseClient;
+    await expect(releasePushOnSignOut(throwing)).resolves.toBeUndefined();
+  });
+
+  it('gives up after the timeout when the browser or the network hangs', async () => {
+    vi.useFakeTimers();
+    try {
+      const sub = fakeSubscription();
+      sub.unsubscribe.mockReturnValue(new Promise(() => {}));
+      push = installPush({ permission: 'granted', subscription: sub });
+      let done = false;
+      const pending = releasePushOnSignOut(fakeClient({}), 1500).then(() => {
+        done = true;
+      });
+      await vi.advanceTimersByTimeAsync(1000);
+      expect(done).toBe(false);
+      await vi.advanceTimersByTimeAsync(600);
+      await pending;
+      expect(done).toBe(true);
+    } finally {
+      vi.useRealTimers();
+    }
   });
 });

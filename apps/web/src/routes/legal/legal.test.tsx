@@ -23,7 +23,8 @@ describe('LegalPage', () => {
     expect(screen.getByText(/Lượt dùng AI: chỉ siêu dữ liệu/)).toBeInTheDocument();
     expect(screen.getByText(/không gửi tên, email hay lịch sử học/)).toBeInTheDocument();
     expect(screen.getByText(/Linguo không lưu nội dung câu hỏi bạn gửi cho AI/)).toBeInTheDocument();
-    expect(screen.getByText(/tự xoá sau 90 ngày/)).toBeInTheDocument();
+    expect(screen.getByText(/Nhật ký lượt dùng AI tự xoá sau 90 ngày/)).toBeInTheDocument();
+    expect(screen.getByText(/Hộp thông báo nhắc học tự xoá sau 90 ngày/)).toBeInTheDocument();
     expect(screen.getByText(/hết hạn sau 30 ngày/)).toBeInTheDocument();
     expect(screen.getByText(/tải toàn bộ dữ liệu của mình dưới dạng tệp JSON/)).toBeInTheDocument();
     expect(screen.getByText(new RegExp(CONTACT_EMAIL.replace('.', '\\.')))).toBeInTheDocument();

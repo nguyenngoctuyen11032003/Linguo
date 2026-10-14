@@ -114,6 +114,37 @@ export async function enablePush(client: AppSupabaseClient): Promise<PushResult>
   return { state: 'granted-subscribed', prefs };
 }
 
+/** How long signing out waits for the browser and the network to release this device's push subscription. */
+export const SIGN_OUT_PUSH_TIMEOUT_MS = 2_500;
+
+/**
+ * Called just before auth.signOut(): a device that signs out must stop receiving that learner's reminders. Best
+ * effort and never blocking: unsubscribes this browser's push subscription, then asks the server to forget the
+ * endpoint (while the session still allows it). It leaves push_enabled alone (a preference of the account, not of
+ * the device), swallows every error (offline, no service worker, RPC failure: a dead endpoint is deleted by the
+ * dispatcher on its first 404/410) and gives up after `timeoutMs`. Never throws.
+ */
+export async function releasePushOnSignOut(client: AppSupabaseClient, timeoutMs: number = SIGN_OUT_PUSH_TIMEOUT_MS): Promise<void> {
+  const work = (async () => {
+    if (getPushSupport() !== 'supported') return;
+    const registration = await currentRegistration();
+    const subscription = registration ? await registration.pushManager.getSubscription().catch(() => null) : null;
+    if (!subscription) return;
+    const { endpoint } = subscription;
+    await subscription.unsubscribe().catch(() => false);
+    await deletePushSubscription(client, endpoint).catch(() => undefined);
+  })().catch(() => undefined);
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<void>((resolve) => {
+    timer = setTimeout(resolve, timeoutMs);
+  });
+  try {
+    await Promise.race([work, timeout]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 /** Unsubscribes this device, forgets it server-side and turns push_enabled off. */
 export async function disablePush(client: AppSupabaseClient): Promise<PushResult> {
   if (getPushSupport() === 'supported') {

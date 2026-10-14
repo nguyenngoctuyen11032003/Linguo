@@ -15,6 +15,7 @@ const mocks = vi.hoisted(() => ({
   updatePreferences: vi.fn(),
   signOut: vi.fn(),
   rpc: vi.fn(),
+  releasePush: vi.fn(),
 }));
 
 function deferred<T = void>() {
@@ -48,6 +49,8 @@ vi.mock('@/features/notifications/useNotificationPrefs', () => ({
 vi.mock('@/features/notifications/usePushNotifications', () => ({
   usePushNotifications: () => ({ state: null, support: 'supported', busy: false, error: null, enable: async () => {}, disable: async () => {} }),
 }));
+// Releasing this browser's push subscription on sign-out is tested in features/notifications/push.test.ts.
+vi.mock('@/features/notifications/push', () => ({ releasePushOnSignOut: mocks.releasePush }));
 vi.mock('@/lib/supabase', () => ({
   getSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
   requireSupabase: () => ({ auth: { signOut: mocks.signOut }, rpc: mocks.rpc }),
@@ -57,6 +60,7 @@ beforeEach(() => {
   mocks.updateProfile.mockReset().mockResolvedValue(undefined);
   mocks.updatePreferences.mockReset().mockResolvedValue(undefined);
   mocks.signOut.mockReset().mockResolvedValue({ error: null });
+  mocks.releasePush.mockReset().mockResolvedValue(undefined);
   // Offline by default: queued lesson answers stay in the outbox.
   mocks.rpc.mockReset().mockResolvedValue({ data: null, error: { message: 'TypeError: Failed to fetch', code: '' }, status: 0 });
 });
@@ -130,6 +134,38 @@ describe('SettingsPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
     await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
     expect(mocks.signOut).toHaveBeenCalled();
+  });
+
+  it("releases this browser's push subscription before the session ends", async () => {
+    const order: string[] = [];
+    mocks.releasePush.mockImplementation(async () => {
+      order.push('release');
+    });
+    mocks.signOut.mockImplementation(async () => {
+      order.push('signOut');
+      return { error: null };
+    });
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
+    expect(order).toEqual(['release', 'signOut']);
+    expect(mocks.releasePush).toHaveBeenCalledTimes(1);
+  });
+
+  it('signs out even when releasing the push subscription fails', async () => {
+    mocks.releasePush.mockRejectedValue(new Error('offline'));
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
+    expect(mocks.signOut).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not release the push subscription while the unsynced-answers warning is open', async () => {
+    queueAnswer();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await screen.findByRole('alert');
+    expect(mocks.releasePush).not.toHaveBeenCalled();
   });
 
   it('warns before signing out while lesson answers wait to sync', async () => {

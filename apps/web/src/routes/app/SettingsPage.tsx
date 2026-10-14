@@ -12,6 +12,7 @@ import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { clearLessonCache } from '@/features/lesson-player/lessonCache';
 import { useOutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvider';
+import { releasePushOnSignOut } from '@/features/notifications/push';
 import { markLocalPreferenceEdit } from '@/features/preferences/local-edits';
 import { updatePreferences } from '@/features/preferences/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
@@ -156,7 +157,15 @@ export function SettingsPage() {
     setConfirmSignOut(false);
     setSigningOut(true);
     try {
-      const auth = requireSupabase().auth;
+      const client = requireSupabase();
+      const auth = client.auth;
+      // This browser must stop getting the learner's reminders once signed out: release its push subscription while
+      // the session can still delete it server-side. Best effort with a short timeout; it never blocks signing out.
+      try {
+        await releasePushOnSignOut(client);
+      } catch {
+        // Nothing to do: a dead endpoint is removed by the dispatcher on its first 404/410.
+      }
       const { error } = await auth.signOut();
       if (error) {
         // The server could not revoke the session (offline, expired token...): still drop it on this device.
