@@ -209,6 +209,14 @@ describe('SettingsPage', () => {
     expect(screen.getByTestId('location')).toHaveTextContent('/app/cai-dat');
   });
 
+  it('explains the 24-hour cooldown when the timezone was changed too recently', async () => {
+    mocks.updateProfile.mockRejectedValue({ message: 'timezone_change_cooldown', details: '2026-10-14T05:30:00Z', code: 'P0001' });
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Lưu hồ sơ' }));
+    expect(await screen.findByText(/Múi giờ chỉ được đổi một lần mỗi 24 giờ\. Bạn có thể đổi lại sau .*14\/10\/2026/)).toBeInTheDocument();
+    expect(screen.queryByText('Đã lưu hồ sơ.')).not.toBeInTheDocument();
+  });
+
   it('shows an error, not "saved", when the profile update touched no rows', async () => {
     mocks.updateProfile.mockRejectedValue(new Error('NO_ROWS_UPDATED'));
     const setProfile = vi.fn();

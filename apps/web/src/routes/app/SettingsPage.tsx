@@ -15,6 +15,7 @@ import { useOutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvide
 import { markLocalPreferenceEdit } from '@/features/preferences/local-edits';
 import { updatePreferences } from '@/features/preferences/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { profileSaveErrorMessage } from '@/features/profile/errors';
 import { updateProfile } from '@/features/profile/service';
 import { cn } from '@/lib/cn';
 import { requireSupabase } from '@/lib/supabase';
@@ -95,8 +96,8 @@ export function SettingsPage() {
       setProfile({ id: userId, ...parsed.data });
       setDisplayName(parsed.data.displayName);
       toast.show({ tone: 'success', message: 'Đã lưu hồ sơ.' });
-    } catch {
-      toast.show({ tone: 'error', message: 'Chưa lưu được hồ sơ. Kiểm tra mạng rồi thử lại.' });
+    } catch (error) {
+      toast.show({ tone: 'error', message: profileSaveErrorMessage(error, profile?.timezone ?? DEFAULT_TIMEZONE) });
     } finally {
       setSaving(false);
     }
