@@ -68,7 +68,24 @@ export default defineConfig(({ mode }) => {
     resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
     server: { port: 5173, strictPort: true },
     preview: { port: 4173, strictPort: true },
-    build: { target: 'es2020', sourcemap: false },
+    build: {
+      target: 'es2020',
+      sourcemap: false,
+      rolldownOptions: {
+        output: {
+          codeSplitting: {
+            groups: [
+              { name: 'v-react', test: /node_modules[\\/](\.pnpm[\\/][^\\/]*[\\/]node_modules[\\/])?(react|react-dom|scheduler)[\\/]/, priority: 10 },
+              { name: 'v-router', test: /node_modules[\\/].*react-router/, priority: 9 },
+              { name: 'v-supabase', test: /node_modules[\\/].*@supabase/, priority: 9 },
+              { name: 'v-zod', test: /node_modules[\\/].*[\\/]zod[\\/]/, priority: 9 },
+              { name: 'v-lucide', test: /node_modules[\\/].*lucide/, tags: ['$initial'], priority: 9 },
+              { name: 'v-lucide-app', test: /node_modules[\\/].*lucide/, priority: 8 },
+            ],
+          },
+        },
+      },
+    },
     test: {
       environment: 'happy-dom',
       globals: true,
