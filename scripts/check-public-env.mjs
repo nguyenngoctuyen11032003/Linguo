@@ -12,6 +12,10 @@ import { fileURLToPath } from 'node:url';
 const SECRET_NAME = /SECRET|PASSWORD|SERVICE_ROLE|PRIVATE|DB_URL|DATABASE|GEMINI|ACCESS_TOKEN/i;
 const URL_PATTERN = /^https:\/\/[a-z0-9-]+(\.[a-z0-9-]+)+(:\d+)?$/i;
 const KEY_NAME = 'VITE_SUPABASE_PUBLISHABLE_KEY';
+// Spec 10 §3: the VAPID PUBLIC key is public by design. It is a 65-byte uncompressed P-256 point (base64url,
+// 87 characters, first byte 0x04 → "B"); anything else (e.g. the 43-character private key) must not be bundled.
+const VAPID_NAME = 'VITE_VAPID_PUBLIC_KEY';
+const VAPID_PUBLIC_PATTERN = /^B[A-Za-z0-9_-]{86}$/;
 
 // Returns null when `value` is not shaped like a JWT (eyJ… with 3 segments); otherwise
 // { role, invalid } where role is undefined when the payload has no string role.
@@ -62,6 +66,13 @@ export function checkPublicEnv(env, { strict = false } = {}) {
     } else if (!key.startsWith('sb_publishable_')) {
       errors.push('VITE_SUPABASE_PUBLISHABLE_KEY không giống publishable key (sb_publishable_…) hay anon JWT (eyJ…).');
     }
+  }
+
+  const vapid = (env[VAPID_NAME] || '').trim();
+  if (vapid && !VAPID_PUBLIC_PATTERN.test(vapid)) {
+    errors.push(
+      `${VAPID_NAME} không giống VAPID public key (87 ký tự base64url, bắt đầu bằng "B"). Không bao giờ đặt private key vào VITE_*.`,
+    );
   }
 
   for (const [name, raw] of Object.entries(env)) {
