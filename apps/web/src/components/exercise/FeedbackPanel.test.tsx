@@ -36,7 +36,7 @@ describe('FeedbackPanel', () => {
     ['missing_diacritics', 'Đúng nhưng thiếu dấu'],
   ])('explains the built-in tag %s', (tag, message) => {
     renderExercise(<FeedbackPanel result={makeResult({ error_tags: [tag] })} />);
-    expect(screen.getByText(message)).toBeInTheDocument();
+    expect(screen.getByRole('listitem')).toHaveTextContent(message);
   });
 
   it('shows feedback_vi, display answer and explanation when revealed', () => {

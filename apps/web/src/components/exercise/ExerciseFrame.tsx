@@ -74,7 +74,7 @@ function parsePrompt(exercise: PublicExercise): Parsed | null {
 }
 
 const LANG_NAMES: Record<AnswerLang, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', vi: 'tiếng Việt' };
-const STAGE_LABELS: Record<ExerciseStage, string> = { recognition: 'Nhận diện', recall: 'Nhớ lại', application: 'Vận dụng' };
+const STAGE_LABELS: Record<ExerciseStage, string> = { recognition: 'Nhận biết', recall: 'Nhớ lại', application: 'Vận dụng' };
 
 function instructionFor(parsed: Parsed, answerLang: AnswerLang): string {
   switch (parsed.type) {
@@ -85,7 +85,7 @@ function instructionFor(parsed: Parsed, answerLang: AnswerLang): string {
     case 'fill_blank':
       return 'Điền vào chỗ trống';
     case 'word_bank':
-      return 'Ghép câu';
+      return 'Sắp xếp từ';
     case 'translate':
       return `Dịch sang ${LANG_NAMES[answerLang]}`;
   }
@@ -289,13 +289,14 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
     );
   } else if (showResult) {
     actions = (
-      <div className="grid gap-2">
-        <Button variant="primary" size="lg" block onClick={retry} disabled={busy}>
+      // One row: two stacked buttons would cover the feedback card on a small screen.
+      <div className={canGiveUp ? 'grid grid-cols-2 gap-2' : 'grid gap-2'}>
+        <Button variant="primary" size={canGiveUp ? 'md' : 'lg'} block onClick={retry} disabled={busy}>
           <RotateCcw aria-hidden className="size-5" />
           Thử lại
         </Button>
         {canGiveUp && (
-          <Button variant="ghost" block onClick={giveUp} disabled={busy}>
+          <Button variant="ghost" size="md" block onClick={giveUp} disabled={busy}>
             Xem đáp án
           </Button>
         )}

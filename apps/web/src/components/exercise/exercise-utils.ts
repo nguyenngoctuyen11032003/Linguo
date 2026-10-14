@@ -4,7 +4,7 @@ import type { Confidence } from '@/features/lesson-player/types';
 import { asset } from '@/lib/asset';
 import { seededShuffle } from './shuffle';
 
-export const CONFIDENCE_LABELS: Record<Confidence, string> = { 1: 'Đoán', 2: 'Hơi chắc', 3: 'Chắc chắn' };
+export const CONFIDENCE_LABELS: Record<Confidence, string> = { 1: 'Chưa chắc', 2: 'Hơi chắc', 3: 'Chắc chắn' };
 
 /** Messages for the grader's built-in error tags (spec 2 §5.4). */
 export const ERROR_TAG_MESSAGES: Record<string, string> = {

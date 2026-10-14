@@ -200,7 +200,7 @@ describe('LessonPage', () => {
     expect(screen.getByText('Nhớ lại')).toBeInTheDocument();
     expect(screen.getByText('50%')).toBeInTheDocument();
     expect(screen.queryByText('Vận dụng')).not.toBeInTheDocument();
-    expect(screen.getByText('Bạn chắc chắn nhưng sai 2 câu')).toBeInTheDocument();
+    expect(screen.getByText('2 câu bạn tin là đúng nhưng chưa đúng — đáng ôn lại')).toBeInTheDocument();
     expect(screen.getByText('1 câu gần đúng')).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Tiếp tục' }));
     expect(run.next).toHaveBeenCalled();

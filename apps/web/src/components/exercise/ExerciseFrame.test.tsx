@@ -120,14 +120,14 @@ describe('ExerciseFrame — flow', () => {
     const { onSubmit } = setup(makeExercise('mcq', {}, 'recall'));
     expect(screen.queryByRole('button', { name: 'Kiểm tra' })).not.toBeInTheDocument();
     const chips = within(screen.getByRole('group', { name: /Bạn chắc đến đâu/ }));
-    for (const name of ['Đoán', 'Hơi chắc', 'Chắc chắn']) expect(chips.getByRole('button', { name })).toBeDisabled();
+    for (const name of ['Chưa chắc', 'Hơi chắc', 'Chắc chắn']) expect(chips.getByRole('button', { name })).toBeDisabled();
     await userEvent.click(screen.getByRole('radio', { name: /apple/ }));
     await userEvent.click(chips.getByRole('button', { name: 'Hơi chắc' }));
     expect(onSubmit).toHaveBeenCalledWith({ option_id: 'o1' }, expect.objectContaining({ confidence: 2, hintCount: 0 }));
   });
 
   it.each([
-    ['Đoán', 1],
+    ['Chưa chắc', 1],
     ['Chắc chắn', 3],
   ] as const)('chip %s submits confidence %i', async (name, confidence) => {
     const { onSubmit } = setup(makeExercise('mcq', {}, 'application'));
@@ -160,6 +160,14 @@ describe('ExerciseFrame — flow', () => {
     const { onSubmit } = setup(makeExercise('translate'), graded(makeResult()));
     await userEvent.click(screen.getByRole('button', { name: 'Xem đáp án' }));
     expect(onSubmit).toHaveBeenCalledWith({ give_up: true }, expect.anything());
+  });
+
+  it('puts "Thử lại" and "Xem đáp án" on one row so they do not cover the feedback', () => {
+    setup(makeExercise('translate'), graded(makeResult()));
+    const retry = screen.getByRole('button', { name: 'Thử lại' });
+    const giveUp = screen.getByRole('button', { name: 'Xem đáp án' });
+    expect(retry.parentElement).toBe(giveUp.parentElement);
+    expect(retry.parentElement).toHaveClass('grid-cols-2');
   });
 
   it('shows "Tiếp tục" once the result is final', async () => {
@@ -211,9 +219,42 @@ describe('ExerciseFrame — flow', () => {
 });
 
 describe('ExerciseFrame — listen', () => {
-  it('disables audio when there is none and shows the fallback text', async () => {
+  function stubAudio(play: () => Promise<void>) {
+    const created: string[] = [];
+    vi.stubGlobal(
+      'Audio',
+      class {
+        currentTime = 0;
+        constructor(src: string) {
+          created.push(src);
+        }
+        play = play;
+      },
+    );
+    return created;
+  }
+  const withAudio = () => makeExercise('listen', { prompt: { ...makeExercise('listen').prompt, audio_asset_id: 'en/hello.mp3' } });
+
+  it('keeps the button enabled after a playback failure, offers a retry and shows the transcript', async () => {
+    const play = vi.fn().mockRejectedValueOnce(new Error('NotAllowedError')).mockResolvedValue(undefined);
+    const created = stubAudio(play);
+    setup(withAudio());
+    expect(screen.queryByText('Đọc thay vì nghe')).not.toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Nghe' }));
+    const retry = await screen.findByRole('button', { name: 'Không phát được. Thử lại' });
+    expect(retry).toBeEnabled();
+    expect(screen.getByText('Hello, my name is Lan.')).toBeInTheDocument();
+
+    await userEvent.click(retry);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Nghe' })).toBeEnabled());
+    expect(screen.queryByText('Đọc thay vì nghe')).not.toBeInTheDocument();
+    expect(play).toHaveBeenCalledTimes(2);
+    expect(created).toHaveLength(2);
+  });
+
+  it('renders no audio control when there is none and shows the fallback text', async () => {
     const { onSubmit } = setup(makeExercise('listen'));
-    expect(screen.getByRole('button', { name: 'Chưa có audio' })).toBeDisabled();
+    expect(screen.queryByRole('button', { name: /Nghe|audio|Thử lại/ })).not.toBeInTheDocument();
     expect(screen.getByText('Hello, my name is Lan.')).toBeInTheDocument();
     const group = screen.getByRole('radiogroup', { name: 'Nghe và chọn nghĩa đúng' });
     await userEvent.click(within(group).getByRole('radio', { name: /Xin chào/ }));
@@ -253,6 +294,29 @@ describe('ExerciseFrame — fill_blank', () => {
   it('has no hints outside recognition', () => {
     setup(makeExercise('fill_blank', {}, 'recall'));
     expect(screen.queryByRole('button', { name: /Gợi ý/ })).not.toBeInTheDocument();
+  });
+});
+
+describe('ExerciseFrame — wording', () => {
+  it('uses "Nhận biết" for the recognition stage and "Sắp xếp từ" for the word bank', () => {
+    setup(makeExercise('word_bank'));
+    expect(screen.getByText('Nhận biết')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Sắp xếp từ' })).toBeInTheDocument();
+    expect(screen.queryByText(/Nhận diện|Ghép câu/)).not.toBeInTheDocument();
+  });
+
+  it('shows the three confidence chips with equal weight', () => {
+    setup(makeExercise('mcq', {}, 'application'));
+    const chips = ['Chưa chắc', 'Hơi chắc', 'Chắc chắn'].map((name) => screen.getByRole('button', { name }));
+    for (const chip of chips) {
+      expect(chip.className).not.toContain('bg-primary');
+      expect(chip.className).toBe(chips[0]!.className);
+    }
+  });
+
+  it('marks the Korean term inside the spacing hint with lang="ko"', () => {
+    setup(makeExercise('translate'), graded(makeResult({ error_tags: ['spacing'] })));
+    expect(screen.getByText('띄어쓰기')).toHaveAttribute('lang', 'ko');
   });
 });
 
@@ -321,7 +385,7 @@ describe('ExerciseFrame — translate', () => {
     const { onSubmit } = setup(makeExercise('translate', {}, 'recall'));
     await userEvent.type(screen.getByRole('textbox'), 'I am a student{Enter}');
     expect(onSubmit).not.toHaveBeenCalled();
-    expect(screen.getByRole('button', { name: 'Đoán' })).toHaveFocus();
+    expect(screen.getByRole('button', { name: 'Chưa chắc' })).toHaveFocus();
     expect(screen.queryByRole('button', { name: /Gợi ý/ })).not.toBeInTheDocument();
   });
 

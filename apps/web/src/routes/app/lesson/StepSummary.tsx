@@ -92,7 +92,7 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
               );
             })}
           </dl>
-          {result.confident_wrong > 0 && <p className="text-[15px]">Bạn chắc chắn nhưng sai {result.confident_wrong} câu</p>}
+          {result.confident_wrong > 0 && <p className="text-[15px]">{result.confident_wrong} câu bạn tin là đúng nhưng chưa đúng — đáng ôn lại</p>}
           {result.almost_count > 0 && <p className="text-[15px]">{result.almost_count} câu gần đúng</p>}
         </section>
       ) : !canComplete ? (

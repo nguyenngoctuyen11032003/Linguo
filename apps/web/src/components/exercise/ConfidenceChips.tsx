@@ -28,9 +28,8 @@ export const ConfidenceChips = forwardRef<HTMLButtonElement, ConfidenceChipsProp
             className={cn(
               'inline-flex min-h-12 min-w-0 items-center justify-center rounded-full px-2 text-center text-[15px] font-semibold leading-tight',
               'transition-[scale,background-color] duration-200 not-disabled:active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-60',
-              level === 3
-                ? 'bg-primary text-on-primary not-disabled:hover:bg-primary-strong'
-                : 'border border-border bg-surface-solid text-text not-disabled:hover:bg-text/5',
+              // All three levels look the same: no option is visually the "right" one to pick.
+              'border border-border bg-surface-solid text-text not-disabled:hover:bg-text/5',
             )}
           >
             {CONFIDENCE_LABELS[level]}

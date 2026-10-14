@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type RefObject } from 'react';
+import { useEffect, useRef, useState, type ReactNode, type RefObject } from 'react';
 import { HelpCircle, Sparkles } from 'lucide-react';
 import { m as motion } from 'motion/react';
 import type { ReportTargetKind, SubmitResult, Verdict } from '@linguo/shared';
@@ -33,18 +33,21 @@ export interface FeedbackPanelProps {
 export function FeedbackPanel({ result, className, ai, report }: FeedbackPanelProps) {
   const { reduceMotion } = useMotionPrefs();
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
   const attemptId = result?.attempt_id ?? null;
   const seenRef = useRef<string | null>(attemptId);
 
   useEffect(() => {
     if (attemptId === null || attemptId === seenRef.current) return;
     seenRef.current = attemptId;
-    headingRef.current?.focus();
-  }, [attemptId]);
+    headingRef.current?.focus({ preventScroll: true });
+    // Bring the verdict above the sticky action bar (see scroll-mb below) instead of leaving it underneath.
+    cardRef.current?.scrollIntoView?.({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }, [attemptId, reduceMotion]);
 
   return (
     <div className={className}>
-      <div role="status" aria-live="polite">
+      <div ref={cardRef} role="status" aria-live="polite" className="scroll-mb-[calc(7rem+env(safe-area-inset-bottom,0px))]">
         {result && <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} />}
       </div>
       {result && ai && <FeedbackAiActions key={result.attempt_id} result={result} ai={ai} />}
@@ -89,6 +92,19 @@ function FeedbackAiActions({ result, ai }: { result: SubmitResult; ai: ExerciseA
   );
 }
 
+/** Marks the Korean (Hangul) and English ("a/an/the") fragments of a Vietnamese message with their own `lang`. */
+function withLanguageSpans(message: string): ReactNode {
+  return message.split(/([\uAC00-\uD7AF]+|\ba\/an\/the\b)/).map((part, i) =>
+    i % 2 === 0 ? (
+      part
+    ) : (
+      <span key={i} lang={/[\uAC00-\uD7AF]/.test(part) ? 'ko' : 'en'}>
+        {part}
+      </span>
+    ),
+  );
+}
+
 function FeedbackCard({
   result,
   reduceMotion,
@@ -124,7 +140,7 @@ function FeedbackCard({
       {tagMessages.length > 0 && (
         <ul className="mt-3 space-y-1 text-[16px] font-medium">
           {tagMessages.map((message) => (
-            <li key={message}>{message}</li>
+            <li key={message}>{withLanguageSpans(message)}</li>
           ))}
         </ul>
       )}
