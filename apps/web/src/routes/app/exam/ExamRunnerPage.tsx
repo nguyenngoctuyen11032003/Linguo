@@ -30,13 +30,16 @@ const SAVE_LABELS: Record<ExamSaveState, string> = {
   error: 'Chưa lưu được câu trả lời',
 };
 
-/** Plays a recorded listening asset; resolves when it ends or cannot play. */
-function playAsset(assetId: string): Promise<void> {
+/**
+ * Plays a recorded listening asset. `onStarted` fires once `play()` has resolved (playback really began); the
+ * promise resolves `true` when the clip ends, `false` when it could not play (network error, autoplay block).
+ */
+function playAsset(assetId: string, onStarted: () => void): Promise<boolean> {
   return new Promise((resolve) => {
     const audio = new Audio(audioUrl(assetId));
-    audio.onended = () => resolve();
-    audio.onerror = () => resolve();
-    audio.play().catch(() => resolve());
+    audio.onended = () => resolve(true);
+    audio.onerror = () => resolve(false);
+    audio.play().then(onStarted, () => resolve(false));
   });
 }
 
@@ -210,9 +213,14 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
   };
 
   const onListen = useCallback(
-    async (text: string | null, assetId: string | null) => {
-      if (assetId) return playAsset(assetId);
-      if (text) await speak(text, language).catch(() => undefined);
+    async (text: string | null, assetId: string | null, onStarted: () => void): Promise<boolean> => {
+      if (assetId) return playAsset(assetId, onStarted);
+      if (!text) return false;
+      // The Web Speech API has no "started" signal: a read-through (or a stop) counts, a synthesis error does not.
+      return speak(text, language).then(
+        () => true,
+        () => false,
+      );
     },
     [language],
   );
@@ -227,8 +235,10 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
   const header = (
     <>
       <div className="min-w-0 flex-1">
-        <h1 className="truncate text-base font-bold leading-tight">{attempt.form_title_vi}</h1>
-        <p className="truncate text-sm text-muted">
+        {/* Below 380 px the title line is visually dropped (still the page heading for screen readers) so the
+            "Phần X · Câu n/N" position keeps the room. */}
+        <h1 className="text-base font-bold leading-tight max-[379px]:sr-only min-[380px]:truncate">{attempt.form_title_vi}</h1>
+        <p className="text-sm text-muted max-[379px]:text-balance max-[379px]:text-[13px] min-[380px]:truncate">
           Phần {SECTION_LABELS[current.section]} · Câu {index + 1}/{questions.length}
         </p>
       </div>

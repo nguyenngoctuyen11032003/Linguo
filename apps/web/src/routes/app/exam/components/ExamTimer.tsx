@@ -38,23 +38,24 @@ export function ExamTimer({ remainingMs }: ExamTimerProps) {
 
   if (remainingMs === null) {
     return (
-      <p className="inline-flex items-center gap-1.5 text-sm font-medium text-muted">
-        <InfinityIcon aria-hidden className="size-4" />
-        Không giới hạn thời gian
+      // Icon-only below `sm`: the long label would squeeze the title and position out of the header.
+      <p className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-muted">
+        <InfinityIcon aria-hidden className="size-5 sm:size-4" />
+        <span className="sr-only sm:not-sr-only">Không giới hạn thời gian</span>
       </p>
     );
   }
 
   const warning = remainingMs <= WARN_MS;
   return (
-    <div className="inline-flex items-center gap-2">
+    <div className="inline-flex shrink-0 items-center gap-2">
       <span
         role="timer"
         aria-live="off"
         aria-label={`Thời gian còn lại ${formatClock(remainingMs)}`}
         data-warning={warning || undefined}
         className={cn(
-          'inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3 font-mono text-[15px] font-bold tabular-nums',
+          'inline-flex min-h-9 items-center gap-1.5 rounded-full border px-2.5 font-mono min-[380px]:px-3 text-[15px] font-bold tabular-nums',
           warning ? 'border-error/60 bg-error/10 text-error-text' : 'border-border bg-surface-solid text-text',
         )}
       >
