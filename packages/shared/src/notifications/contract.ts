@@ -21,8 +21,13 @@ export const ISO_DAYS = [1, 2, 3, 4, 5, 6, 7] as const;
 export type IsoDay = (typeof ISO_DAYS)[number];
 
 export const REMINDER_RULES = {
-  /** A reminder fires during [remind_at, remind_at + window). Matches the 15-minute cron. */
-  window_minutes: 15,
+  /**
+   * A reminder is due during [remind_at, remind_at + window): the 15-minute cron often runs late or is skipped, so
+   * a later run catches up within this window (unique per user, kind and local day: never twice).
+   */
+  window_minutes: 60,
+  /** A notification still without a push is retried by later runs until it is this old (push TTL). */
+  push_retry_hours: 4,
   max_per_day_min: 1,
   max_per_day_max: 3,
   /** Unclicked for this long → ignored_streak + 1. */
@@ -31,8 +36,11 @@ export const REMINDER_RULES = {
   ignores_per_backoff: 3,
   backoff_max: 3,
   max_push_subscriptions: 5,
-  /** Subscriptions are deleted once failure_count reaches this. */
-  max_push_failures: 5,
+  /**
+   * Subscriptions are deleted once failure_count reaches this; only runs answered 401/403 count (404/410 delete
+   * at once; network errors, 429 and 5xx never count).
+   */
+  max_push_failures: 10,
   retention_days: 90,
   title_max: 80,
   body_max: 300,

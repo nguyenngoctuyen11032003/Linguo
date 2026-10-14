@@ -142,3 +142,47 @@ Deno.test('isValidVapid accepts a real pair and rejects typos, swapped or mismat
   ];
   for (const [i, v] of bad.entries()) assert.equal(await isValidVapid(v), false, `case ${i}`);
 });
+
+Deno.test('requests never follow redirects: redirect: manual, and any 3xx is reported as that status', async () => {
+  const vapid = await vapidKeys();
+  const sub = await browserSubscription('https://fcm.googleapis.com/fcm/send/abc123');
+  const inits: RequestInit[] = [];
+  for (const status of [301, 302, 307, 308]) {
+    const send = createWebPushSender((_url, init) => {
+      inits.push(init);
+      return Promise.resolve(new Response(null, { status, headers: { location: 'http://169.254.169.254/latest/meta-data/' } }));
+    });
+    assert.deepEqual(await send(sub.target, PAYLOAD, vapid), { status });
+  }
+  assert.equal(inits.length, 4);
+  for (const init of inits) assert.equal(init.redirect, 'manual');
+});
+
+Deno.test('an opaque redirect (status 0) is reported as a 3xx failure, never as success', async () => {
+  const vapid = await vapidKeys();
+  const sub = await browserSubscription('https://fcm.googleapis.com/fcm/send/abc123');
+  const opaque = { status: 0, type: 'opaqueredirect', body: null } as unknown as Response;
+  const send = createWebPushSender(() => Promise.resolve(opaque));
+  assert.deepEqual(await send(sub.target, PAYLOAD, vapid), { status: 302 });
+});
+
+Deno.test('the endpoint host is re-checked before sending: nothing is fetched outside the allowlist', async () => {
+  const vapid = await vapidKeys();
+  let called = 0;
+  const send = createWebPushSender(() => {
+    called++;
+    return Promise.resolve(new Response(null, { status: 201 }));
+  });
+  for (const endpoint of [
+    'https://169.254.169.254/latest/meta-data/',
+    'https://localhost/x',
+    'https://push.example.com/x',
+    'https://user@fcm.googleapis.com/x',
+    'https://fcm.googleapis.com:8443/x',
+    'http://fcm.googleapis.com/x',
+  ]) {
+    const sub = await browserSubscription(endpoint);
+    assert.deepEqual(await send(sub.target, PAYLOAD, vapid), { status: null, blocked: true }, endpoint);
+  }
+  assert.equal(called, 0);
+});

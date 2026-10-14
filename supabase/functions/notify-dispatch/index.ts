@@ -17,6 +17,8 @@ function serviceDb(): DispatchDb {
   const rpc = client.rpc.bind(client) as unknown as (fn: string, args?: Record<string, unknown>) => PromiseLike<DbResult>;
   return {
     generateDue: (nowIso) => rpc('generate_due_notifications', { p_now: nowIso }),
+    pendingPush: (nowIso, limit) => rpc('pending_push_notifications', { p_now: nowIso, p_limit: limit }),
+    purge: () => rpc('purge_notifications'),
     subscriptionsFor: (userIds) =>
       client.from('push_subscriptions').select('id, user_id, endpoint, p256dh, auth, failure_count').in('user_id', userIds),
     deleteSubscription: (id) => client.from('push_subscriptions').delete().eq('id', id),
@@ -32,6 +34,7 @@ const deps: DispatchDeps = {
   get db() {
     return (db ??= serviceDb());
   },
+  // push.ts passes redirect: 'manual' and re-checks the endpoint host before every request.
   sendPush: createWebPushSender((input, init) => fetch(input, init)),
   vapidValid: isValidVapid,
   log: (message) => console.log(message),

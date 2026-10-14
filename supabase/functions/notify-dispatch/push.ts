@@ -2,6 +2,7 @@
 // (RFC 8291). Encryption and signing come from @block65/webcrypto-web-push (pure WebCrypto, no node:crypto),
 // the HTTP request goes through the injected fetch so tests never touch the network.
 import { buildPushPayload } from '@block65/webcrypto-web-push';
+import { isAllowedPushEndpoint } from './endpoint.ts';
 import type { PushOutcome, PushPayload, PushSender, PushTarget, VapidConfig } from './handler.ts';
 
 /** A reminder older than this is stale; the push service may drop it instead of delivering late. */
@@ -56,6 +57,8 @@ export function createWebPushSender(
   timeoutMs = PUSH_TIMEOUT_MS,
 ): PushSender {
   return async (target: PushTarget, payload: PushPayload, vapid: VapidConfig): Promise<PushOutcome> => {
+    // SSRF guard, second layer (the database CHECK is the first): never send to a host outside the allowlist.
+    if (!isAllowedPushEndpoint(target.endpoint)) return { status: null, blocked: true };
     // Throws on a malformed VAPID key or subscription: the handler treats that as a local error and
     // leaves the subscription alone (it is not the push service's fault).
     const request = await buildPushPayload(
@@ -68,10 +71,13 @@ export function createWebPushSender(
         method: 'POST',
         headers: request.headers,
         body: request.body,
+        // A push service never needs to redirect; following one would let a hostile endpoint reach any host.
+        redirect: 'manual',
         signal: AbortSignal.timeout(timeoutMs),
       });
       await res.body?.cancel().catch(() => {});
-      return { status: res.status };
+      // Browsers hide the status of a manual redirect (type 'opaqueredirect', status 0): still a 3xx failure.
+      return { status: res.type === 'opaqueredirect' || res.status === 0 ? 302 : res.status };
     } catch {
       // DNS, TLS, reset, timeout: transient from our point of view.
       return { status: null };
