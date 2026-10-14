@@ -1,4 +1,5 @@
 import { act, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { resetNotificationClickListener } from '@/features/pwa/notification-click';
@@ -56,5 +57,65 @@ describe('PwaBridge', () => {
     });
     expect(await screen.findByRole('heading', { name: 'Ôn tập' })).toBeInTheDocument();
     expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked');
+  });
+
+  function renderAt(initial: string) {
+    const container = new FakeContainer();
+    Object.defineProperty(navigator, 'serviceWorker', { value: container, configurable: true });
+    const router = createMemoryRouter(
+      [
+        { path: '/app/hoc-tap/bai/:id', element: <PwaBridge /> },
+        { path: '/app/luyen-thi/lam-bai/:id', element: <PwaBridge /> },
+        { path: '/app/tien-do', element: <PwaBridge /> },
+        { path: '/app/on-tap', element: <h1>Ôn tập</h1> },
+      ],
+      { initialEntries: [initial] },
+    );
+    render(<RouterProvider router={router} />);
+    const click = (navigated: boolean) =>
+      act(() => {
+        container.dispatchEvent(
+          new MessageEvent('message', {
+            data: { type: SW_NOTIFICATION_CLICKED, notification_id: ID, url: `${window.location.origin}/app/on-tap`, navigated },
+          }),
+        );
+      });
+    return { router, click };
+  }
+
+  it('does not leave a lesson: it marks the click and offers an "Mở" toast instead of navigating', async () => {
+    const { router, click } = renderAt('/app/hoc-tap/bai/abc');
+    click(false);
+    expect(await screen.findByTestId('notification-open-toast')).toBeInTheDocument();
+    expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked');
+    expect(router.state.location.pathname).toBe('/app/hoc-tap/bai/abc');
+    await userEvent.click(screen.getByRole('button', { name: 'Mở' }));
+    expect(await screen.findByRole('heading', { name: 'Ôn tập' })).toBeInTheDocument();
+    expect(router.state.location.pathname).toBe('/app/on-tap');
+  });
+
+  it('also protects exam attempts, and "Để sau" keeps the learner where they are', async () => {
+    const { router, click } = renderAt('/app/luyen-thi/lam-bai/7');
+    click(false);
+    await userEvent.click(await screen.findByRole('button', { name: 'Để sau' }));
+    expect(screen.queryByTestId('notification-open-toast')).not.toBeInTheDocument();
+    expect(router.state.location.pathname).toBe('/app/luyen-thi/lam-bai/7');
+    expect(markNotification).toHaveBeenCalledTimes(1);
+  });
+
+  it('routes straight away from an ordinary page', async () => {
+    const { router, click } = renderAt('/app/tien-do');
+    click(false);
+    expect(await screen.findByRole('heading', { name: 'Ôn tập' })).toBeInTheDocument();
+    expect(router.state.location.pathname).toBe('/app/on-tap');
+    expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked');
+  });
+
+  it('only marks the click when the window already shows the target', async () => {
+    const { router, click } = renderAt('/app/hoc-tap/bai/abc');
+    click(true);
+    await vi.waitFor(() => expect(markNotification).toHaveBeenCalledTimes(1));
+    expect(screen.queryByTestId('notification-open-toast')).not.toBeInTheDocument();
+    expect(router.state.location.pathname).toBe('/app/hoc-tap/bai/abc');
   });
 });

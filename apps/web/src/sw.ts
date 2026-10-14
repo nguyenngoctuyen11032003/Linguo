@@ -7,7 +7,8 @@
 // - Content images/audio: CacheFirst, 7 days, 200 entries.
 // - Supabase REST/RPC/Auth/Functions: never handled here (personal data goes straight to the network).
 // - Updates: a new worker waits until the app posts SW_MESSAGE_SKIP_WAITING (the "Tải lại" button).
-// - Push: shows the notification; a click focuses/opens the app and posts SW_NOTIFICATION_CLICKED.
+// - Push: shows the notification; a click focuses/opens the app and posts SW_NOTIFICATION_CLICKED. An open window is
+//   never navigated from here (that reloads the page, losing a lesson in progress): the app routes itself.
 import { clientsClaim } from 'workbox-core';
 import { cleanupOutdatedCaches, createHandlerBoundToURL, precacheAndRoute } from 'workbox-precaching';
 import { NavigationRoute, registerRoute } from 'workbox-routing';
@@ -21,10 +22,8 @@ import {
   MEDIA_MAX_AGE_SECONDS,
   MEDIA_MAX_ENTRIES,
   parsePushPayload,
-  pickClient,
-  SW_NOTIFICATION_CLICKED,
-  type NotificationClickedMessage,
 } from './features/pwa/sw-helpers';
+import { handleNotificationClick } from './features/pwa/sw-click';
 
 declare const self: ServiceWorkerGlobalScope & { __WB_MANIFEST: Array<{ url: string; revision: string | null }> };
 
@@ -85,42 +84,15 @@ self.addEventListener('notificationclick', (event) => {
   const data = (event.notification.data ?? {}) as { url?: unknown; notification_id?: unknown };
   // Re-validate: notification data survives SW updates and is the only input here.
   const push = parsePushPayload({ ...data, title: 'x', body: 'x' }, scope);
-  event.waitUntil(openAndNotify(push.url, push.notificationId));
+  event.waitUntil(
+    handleNotificationClick(
+      {
+        matchAll: () => self.clients.matchAll({ type: 'window', includeUncontrolled: true }) as Promise<readonly WindowClient[]>,
+        openWindow: (target) => self.clients.openWindow(target),
+      },
+      scope,
+      push.url,
+      push.notificationId,
+    ),
+  );
 });
-
-async function openAndNotify(url: string, notificationId: string | null): Promise<void> {
-  const windows = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
-  let target: WindowClient | null = pickClient(windows, scope);
-  let navigated = false;
-  if (target) {
-    try {
-      target = await target.focus();
-    } catch {
-      // focus() can be refused (no user activation); the window still exists.
-    }
-    if (target.url === url) {
-      navigated = true;
-    } else {
-      try {
-        // navigate() only works on windows this worker controls; otherwise the app routes itself.
-        const next = await target.navigate(url);
-        if (next) {
-          target = next;
-          navigated = true;
-        }
-      } catch {
-        navigated = false;
-      }
-    }
-  } else {
-    target = await self.clients.openWindow(url);
-    navigated = Boolean(target);
-  }
-  const message: NotificationClickedMessage = {
-    type: SW_NOTIFICATION_CLICKED,
-    notification_id: notificationId,
-    url,
-    navigated,
-  };
-  target?.postMessage(message);
-}
