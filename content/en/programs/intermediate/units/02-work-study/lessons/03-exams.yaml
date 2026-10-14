@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:work-study-exams
 order_index: 3
 level: b1
@@ -176,7 +175,7 @@ exercises:
     answer:
       blanks:
         b1: [study, work]
-        b2: [will, can]
+        b2: [will, can, should]
     known_wrong:
       - answer: will study
         feedback_vi: Không dùng will sau if - If you study hard.
@@ -230,7 +229,7 @@ exercises:
         - { id: b2, width_hint: 7 }
     answer:
       blanks:
-        b1: [revising, studying]
+        b1: [revising, studying, reviewing, to revise, to study]
         b2: [hand in, submit, turn in]
     known_wrong:
       - answer: will hand in
@@ -268,6 +267,8 @@ exercises:
         - If you fail the test, you can take it again.
         - You can take the exam again if you fail it.
         - You can retake the exam if you fail it.
+        - If you fail the exam, you can resit it.
+        - If you fail the test, you can retake it.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -304,6 +305,8 @@ exercises:
         - I'll phone you as soon as I get the results.
         - As soon as I get the results, I'll call you.
         - As soon as I get my results, I'll call you.
+        - I'll call you as soon as I receive the results.
+        - I'll call you as soon as I receive my results.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -388,6 +391,12 @@ exercises:
         - I will take the IELTS exam when I finish this course.
         - I'll take IELTS when I finish this course.
         - After I finish this course, I'll take the IELTS exam.
+        - When I have finished this course, I'll take the IELTS exam.
+        - When I complete this course, I'll take the IELTS exam.
+        - When I finish this course, I'll take the IELTS.
+        - When I finish this course, I'll do the IELTS exam.
+        - When I finish this course, I'll sit the IELTS exam.
+        - After I finish this course, I'll take IELTS.
     rubric:
       typo_tolerance: 1
     known_wrong:

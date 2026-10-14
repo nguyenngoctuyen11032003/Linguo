@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:work-study-review
 order_index: 5
 level: b1
@@ -48,7 +47,7 @@ items:
 body:
   - type: objective
     text:
-      vi: Bài này ghép mọi thứ của unit vào một tình huống thật - đọc email của sếp về cuộc họp bị dời, rồi trả lời lịch sự và đúng ngữ pháp.
+      vi: Bài này ghép mọi thứ của unit vào một tình huống cụ thể - đọc email của sếp về cuộc họp bị dời, rồi trả lời lịch sự và đúng ngữ pháp.
   - type: explain
     text:
       vi: Khi đọc email công việc, hãy tìm ba điều - việc bắt buộc (must, have to), việc không cần (don't have to) và việc người viết nhờ bạn (Could you…?, Would you mind…?). Đó thường là những gì bạn phải làm sau khi đọc.
@@ -162,7 +161,7 @@ exercises:
       blanks:
         b1: [confirm, check]
         b2: [can't, cannot, can not, aren't able to, are not able to]
-        b3: [postpone, move, put off]
+        b3: [postpone, move, put off, push back, delay]
     known_wrong:
       - answer: confirm about
         feedback_vi: Confirm đi thẳng với tân ngữ - confirm the time, không có about.
@@ -204,6 +203,11 @@ exercises:
         - The meeting has been moved to Thursday.
         - The meeting was moved to Thursday.
         - The meeting has been put off until Thursday.
+        - The meeting was put off until Thursday.
+        - The meeting has been pushed back to Thursday.
+        - The meeting has been rescheduled for Thursday.
+        - The meeting was rescheduled for Thursday.
+        - The meeting has been rescheduled to Thursday.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -240,6 +244,8 @@ exercises:
         - You don't need to prepare slides, but you must bring the sales figures.
         - You don't have to prepare slides, but you must bring sales figures.
         - You don't have to prepare slides but you must bring the sales figures.
+        - You don't need to prepare slides, but you have to bring the sales figures.
+        - You don't have to make slides, but you must bring the sales figures.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -371,6 +377,8 @@ exercises:
         - Could you confirm the interview time?
         - Could you please confirm the time of the interview?
         - Could you confirm the time of the interview for me?
+        - Could you please confirm the interview time?
+        - Would you mind confirming my interview time?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -403,7 +411,7 @@ exercises:
       blanks:
         b1: [to]
         b2: [meeting, seeing]
-        b3: [Best, Kind]
+        b3: [Best, Kind, Warm]
     known_wrong:
       - answer: for
         feedback_vi: Nêu mục đích dùng to + động từ nguyên mẫu - I'm writing to confirm.

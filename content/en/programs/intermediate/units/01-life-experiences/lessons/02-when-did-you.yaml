@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:when-did-you
 order_index: 2
 level: b1
@@ -48,7 +47,7 @@ body:
       vi: Một câu chuyện thường mở đầu bằng present perfect để giới thiệu trải nghiệm, rồi chuyển sang past simple để kể chi tiết - Have you ever missed a flight? - Yes, I have. I missed one in 2019. Các từ so far, recently, in my life chỉ khoảng thời gian kéo dài đến bây giờ, nên đi với present perfect.
   - type: deep_explain
     text:
-      vi: Chữ "đã" trong tiếng Việt chỉ báo hiệu việc xảy ra trước bây giờ, nên không cho bạn biết phải dùng thì nào. Hãy tự hỏi - câu có (hoặc ngầm có) một thời điểm đã kết thúc không? Có thì dùng past simple; không có, chỉ quan tâm "đã từng / tính đến nay" thì dùng present perfect. Câu hỏi When…? và What time…? luôn dùng past simple - When did you go there?, không hỏi When have you gone there?
+      vi: Chữ "đã" trong tiếng Việt chỉ báo hiệu việc xảy ra trước bây giờ, nên không cho bạn biết phải dùng thì nào. Hãy tự hỏi câu có (hoặc ngầm có) một thời điểm đã kết thúc không - có thì dùng past simple, còn nếu chỉ quan tâm "đã từng / tính đến nay" thì dùng present perfect. Hỏi When…? hay What time…? về việc đã qua thì dùng past simple - When did you go there?, không hỏi When have you gone there?
   - type: example
     target: I've been to Japan. I went there last year and got lost in Tokyo.
     target_lang: en
@@ -94,12 +93,12 @@ body:
     right: I haven't seen that film yet.
     target_lang: en
     note:
-      vi: "\"Chưa xem\" tính đến bây giờ là khoảng thời gian chưa kết thúc, nên dùng present perfect. Didn't see chỉ dùng khi nói về một lúc đã qua (I didn't see it yesterday)."
+      vi: "\"Chưa xem\" tính đến bây giờ là khoảng thời gian chưa kết thúc, nên dùng present perfect. Anh-Mỹ thân mật đôi khi nói didn't… yet, nhưng cách chuẩn là haven't… yet."
   - type: summary
     points:
       - vi: Present perfect - trải nghiệm, không nêu thời điểm (I've been to Japan).
       - vi: Past simple - có mốc đã kết thúc (yesterday, last year, ago, in 2019, when I was…).
-      - vi: When…? luôn đi với past simple - When did you go?
+      - vi: Hỏi When…? về việc đã qua dùng past simple - When did you go?
       - vi: So far, recently, in my life - đi với present perfect.
       - vi: Kể chuyện - mở bằng present perfect, kể chi tiết bằng past simple.
 exercises:
@@ -214,7 +213,6 @@ exercises:
         - { id: r-have, text: Have }
         - { id: r-you, text: you }
         - { id: r-did, text: Did }
-        - { id: r-gone, text: gone }
     answer:
       orders:
         - [r-have, r-you, r-been, r-anywhere, r-interesting, r-recently]
@@ -312,12 +310,12 @@ exercises:
         - Have you ever gotten lost in another country?
         - Have you ever got lost in a foreign country?
         - Have you ever gotten lost in a foreign country?
+        - Have you ever got lost overseas?
+        - Have you ever gotten lost overseas?
+        - Did you ever get lost abroad?
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: Did you ever get lost abroad?
-        feedback_vi: Hỏi trải nghiệm không nêu thời điểm dùng Have you ever + V3 - Have you ever got lost abroad?
-        error_tag: did_ever
       - answer: Have you ever get lost abroad?
         feedback_vi: Sau have cần V3 của get - got (UK) hoặc gotten (US).
         error_tag: past_participle
@@ -366,7 +364,7 @@ exercises:
     answer:
       correct_option_id: k8b
     explanation:
-      vi: What was it like? là câu hỏi cố định để hỏi cảm nhận; like là giới từ nên đi với What, không đi với How. What did it like? và How did you like? thiếu tân ngữ và sai nghĩa.
+      vi: What was it like? là câu hỏi cố định để hỏi cảm nhận; like là giới từ nên đi với What, không đi với How. What did it like? nghĩa là "nó thích gì", còn How did you like? thiếu tân ngữ it.
     display_answer: What was it like?
 
   - key: en:exercise:when-did-you-translate-memory
@@ -424,6 +422,11 @@ exercises:
         - I've been to Da Lat. I went there in March and the weather was very cold.
         - I've already been to Da Lat. I went there in March and it was very cold.
         - I have already been to Da Lat. I went there in March and it was very cold.
+        - I've been to Da Lat. I went in March and it was really cold.
+        - I have been to Da Lat. I went in March and it was really cold.
+        - I have been to Da Lat. I went there in March and the weather was very cold.
+        - I've been to Da Lat. I went there in March and it was so cold.
+        - I have been to Da Lat. I went there in March and it was so cold.
     rubric:
       typo_tolerance: 1
     known_wrong:

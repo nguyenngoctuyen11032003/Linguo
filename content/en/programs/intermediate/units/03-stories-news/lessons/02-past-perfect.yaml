@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:stories-news-past-perfect
 order_index: 2
 level: b1
@@ -106,7 +105,7 @@ exercises:
   - key: en:exercise:stories-news-pp-listen-train
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:had-past-participle
     prompt:
@@ -179,7 +178,7 @@ exercises:
         - "Gợi ý: vế by the time dùng quá khứ đơn; việc xảy ra trước dùng had + V3 (run - ran - run)."
     answer:
       blanks:
-        b1: [arrived, came]
+        b1: [arrived, came, got there]
         b2: [had run, "'d run", had already run]
     known_wrong:
       - answer: had arrived
@@ -283,6 +282,10 @@ exercises:
         - When the police came, the thief had already run away.
         - By the time the police got there, the thief had run away.
         - By the time the police arrived, the thief had disappeared.
+        - By the time the police arrived, the thief had fled.
+        - By the time the police arrived, the thief had already fled.
+        - By the time the police arrived, the thief had got away.
+        - By the time the police arrived, the thief had gotten away.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -324,6 +327,8 @@ exercises:
         - I traveled to Hue with my family last year.
         - I went to Huế with my family last year.
         - Last year I went to Huế with my family.
+        - My family and I went to Hue last year.
+        - Last year my family and I went to Hue.
     rubric:
       typo_tolerance: 1
     known_wrong:

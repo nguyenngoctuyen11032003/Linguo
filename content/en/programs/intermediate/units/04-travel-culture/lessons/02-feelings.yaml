@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:travel-culture-feelings
 order_index: 2
 level: b1
@@ -102,13 +101,13 @@ body:
       - vi: -ed = cảm giác của người (bored, interested, exhausted, disappointed, embarrassed).
       - vi: -ing = thứ gây ra cảm giác (boring, interesting, exhausting, disappointing, embarrassing).
       - vi: so + tính từ/trạng từ + that…; such (a/an) + tính từ + danh từ + that…
-      - vi: Interested in, disappointed with; không nói very exhausted - dùng really/completely exhausted.
+      - vi: Interested in, disappointed with; thường không nói very exhausted - dùng really/completely exhausted.
 exercises:
   # ---------------- recognition ----------------
   - key: en:exercise:travel-culture-f-listen-exhausted
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:exhausted
     prompt:
@@ -269,6 +268,7 @@ exercises:
         - We're disappointed with the hotel room.
         - We were disappointed by the hotel room.
         - We were disappointed with the room at the hotel.
+        - We felt disappointed with the hotel room.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -306,6 +306,12 @@ exercises:
         - The weather was so good that we walked to the beach.
         - It was such good weather that we walked to the beach.
         - It was such a beautiful day that we walked to the sea.
+        - The day was so beautiful that we walked to the beach.
+        - That day was so beautiful that we walked to the beach.
+        - It was so beautiful that day that we walked to the beach.
+        - That day the weather was so nice that we walked to the beach.
+        - That day the weather was so beautiful that we walked to the beach.
+        - The weather was so lovely that we walked to the beach.
     rubric:
       typo_tolerance: 1
     known_wrong:

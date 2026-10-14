@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Trải nghiệm cuộc sống" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Have you ever…? ----------------
@@ -52,7 +51,7 @@ items:
       pronunciation_note:
         vi: Ever đọc UK /ˈevə/ · US /ˈevɚ/; never đọc UK /ˈnevə/ · US /ˈnevɚ/. Trọng âm rơi vào âm đầu.
       confusion:
-        vi: Hỏi trải nghiệm dùng Have you ever…?, không dùng Did you ever…?. Never đã mang nghĩa phủ định nên không thêm not - I've never seen it, không nói I haven't never seen it.
+        vi: Hỏi trải nghiệm trong đời thường dùng Have you ever…? (Did you ever…? chủ yếu gặp trong Anh-Mỹ thân mật). Never đã mang nghĩa phủ định nên không thêm not - I've never seen it, không nói I haven't never seen it.
 
   - key: en:item:irregular-past-participles
     type: grammar_point
@@ -202,7 +201,7 @@ items:
       pronunciation_note:
         vi: Chữ b trong climb là âm câm - đọc /klaɪm/.
       confusion:
-        vi: Leo núi như một môn thể thao lâu dài là go hiking hoặc go climbing; climb a mountain là leo một ngọn núi cụ thể.
+        vi: Leo núi như một sở thích, môn thể thao là go hiking hoặc go climbing; climb a mountain là leo một ngọn núi cụ thể.
 
   - key: en:item:in-my-life
     type: phrase
@@ -221,7 +220,7 @@ items:
           translation:
             vi: Cả đời mình chưa bao giờ thấy tuyết.
       confusion:
-        vi: In my life chỉ khoảng thời gian chưa kết thúc (bạn vẫn đang sống), nên đi với hiện tại hoàn thành, không đi với quá khứ đơn.
+        vi: In my life chỉ khoảng thời gian chưa kết thúc (bạn vẫn đang sống), nên khi kể trải nghiệm từ trước đến nay thì dùng hiện tại hoàn thành.
 
   - key: en:item:experience-noun
     type: vocab
@@ -395,7 +394,7 @@ items:
           translation:
             vi: Đêm đầu tiên tụi mình bị lạc trong phố cổ.
       confusion:
-        vi: Quá khứ là got lost, không nói was lost way. Câu "Get lost!" đứng một mình là câu đuổi người khác (cút đi), rất bất lịch sự.
+        vi: Kể việc bị lạc dùng got lost; we were lost chỉ tả trạng thái đang lạc. Câu "Get lost!" đứng một mình là câu đuổi người khác (cút đi), rất bất lịch sự.
 
   - key: en:item:miss-a-flight
     type: phrase
@@ -683,7 +682,7 @@ items:
           translation:
             vi: Tụi mình vừa mới đến khách sạn.
       confusion:
-        vi: Already và just đứng giữa have và V3; yet đứng cuối câu. Không dùng yet trong câu khẳng định thường gặp.
+        vi: Already và just đứng giữa have và V3; yet đứng cuối câu. Yet thường không dùng trong câu khẳng định.
 
   - key: en:item:used-to
     type: grammar_point

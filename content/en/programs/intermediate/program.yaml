@@ -1,16 +1,15 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 key: en:program:intermediate
 language: en
 title:
   vi: Tiếng Anh trung cấp (B1)
 description:
-  vi: Trải nghiệm, công việc, sức khoẻ, câu điều kiện và lời khuyên - xử lý hầu hết tình huống khi đi lại và làm việc (B1). Nội dung demo, chưa qua kiểm duyệt.
+  vi: Kể trải nghiệm và thay đổi trong đời, nói chuyện công việc, học tập và email ứng tuyển, kể chuyện và đọc tin tức, du lịch, phong tục và phàn nàn lịch sự - xử lý hầu hết tình huống khi đi lại và làm việc (B1).
 kind: core
 goal_types: []
 level_from: b1

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:travel-culture-quantifiers
 order_index: 1
 level: b1
@@ -108,7 +107,7 @@ exercises:
   - key: en:exercise:travel-culture-q-listen-money
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:a-little-little
     prompt:
@@ -201,8 +200,8 @@ exercises:
         - "Gợi ý: hầu như không = h… any; không cái nào trong số = N… of."
     answer:
       blanks:
-        b1: [hardly]
-        b2: [None]
+        b1: [hardly, scarcely, barely]
+        b2: [None, Few]
     known_wrong:
       - answer: hard
         feedback_vi: Hard là "chăm chỉ, khó"; "hầu như không" là hardly any.
@@ -258,7 +257,7 @@ exercises:
       blanks:
         b1: [few]
         b2: [little]
-        b3: [lot]
+        b3: [lot, bit]
     known_wrong:
       - answer: many
         feedback_vi: Sau a không dùng many; với danh từ đếm được dùng a few, với money dùng a little, còn "nhiều" là a lot of.
@@ -288,6 +287,8 @@ exercises:
         - None of us speak Japanese.
         - None of us could speak any Japanese.
         - None of us were able to speak Japanese.
+        - None of us was able to speak Japanese.
+        - None of us knew Japanese.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -323,6 +324,9 @@ exercises:
         - I've only got a little money.
         - I have only got a little money left.
         - I only have a bit of money left.
+        - I've only got a bit of money left.
+        - I only have a little bit of money left.
+        - I have just a little money left.
     rubric:
       typo_tolerance: 1
     known_wrong:

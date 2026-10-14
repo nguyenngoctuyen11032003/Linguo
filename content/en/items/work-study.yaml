@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Công việc & học tập" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Ở nơi làm việc ----------------
@@ -109,7 +108,7 @@ items:
       pronunciation_note:
         vi: Nhấn âm đầu SA-; ba âm tiết, không đọc thành "sa-la-ri" đều nhau.
       confusion:
-        vi: Salary là lương cố định theo tháng/năm; wage là tiền công trả theo giờ hoặc theo tuần. Nói a high salary, không nói a big salary.
+        vi: Salary là lương cố định theo tháng/năm; wage là tiền công trả theo giờ hoặc theo tuần. Thường nói a high salary hoặc a good salary.
 
   - key: en:item:deadline
     type: vocab
@@ -298,7 +297,7 @@ items:
     skill_tags: [grammar]
     front:
       text: mustn't ≠ don't have to
-      ipa: UK /ˈmʌsnt/ · /dəʊnt ˈhæf tə/ · US /ˈmʌsnt/ · /doʊnt ˈhæf tə/
+      ipa: /ˈmʌsnt/ · UK /dəʊnt ˈhæf tə/ · US /doʊnt ˈhæf tə/
       pos: phủ định của must / have to
     back:
       meaning:
@@ -590,7 +589,7 @@ items:
           translation:
             vi: Các bạn nộp bài luận trước thứ Hai nhé.
       confusion:
-        vi: Hand in thân mật hơn submit (trang trọng, hay dùng trong email và hệ thống trực tuyến). Tân ngữ đứng giữa hoặc sau đều được - hand it in, hand in the essay.
+        vi: Hand in thân mật hơn submit (trang trọng, hay dùng trong email và hệ thống trực tuyến). Đại từ phải đứng giữa (hand it in); danh từ đứng giữa hoặc sau đều được (hand in the essay, hand the essay in).
 
   - key: en:item:revise
     type: vocab
@@ -609,7 +608,7 @@ items:
           translation:
             vi: Cuối tuần này mình ôn thi môn toán.
       confusion:
-        vi: Trong Anh-Anh, revise for an exam là ôn thi; Anh-Mỹ dùng review hoặc study for. Không nói "review lesson" kiểu dịch từng chữ "ôn bài".
+        vi: Trong Anh-Anh, revise for an exam là ôn thi; Anh-Mỹ dùng review hoặc study for. Trong Anh-Mỹ, revise thường chỉ có nghĩa là sửa lại (bài viết, kế hoạch).
 
   - key: en:item:mark-grade
     type: vocab
@@ -901,4 +900,4 @@ items:
           translation:
             vi: Cuộc họp đã được dời sang thứ Năm.
       confusion:
-        vi: Postpone là dời sang lúc khác; cancel là huỷ hẳn. Sau postpone dùng -ing nếu là động từ - postpone meeting them.
+        vi: Postpone là dời sang lúc khác; cancel là huỷ hẳn. Sau postpone dùng -ing nếu là động từ - We postponed leaving until Friday.

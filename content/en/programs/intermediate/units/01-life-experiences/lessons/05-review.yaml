@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:life-experiences-review
 order_index: 5
 level: b1
@@ -53,7 +52,7 @@ items:
 body:
   - type: objective
     text:
-      vi: Bài này ôn toàn bộ unit qua hai văn bản thật - một bài blog kể chuyến đi Peru và một email gửi bạn cũ. Bạn sẽ thấy mỗi thì được chọn vì lý do gì.
+      vi: Bài này ôn toàn bộ unit qua hai văn bản mẫu - một bài blog kể chuyến đi Peru và một email gửi bạn cũ. Bạn sẽ thấy mỗi thì được chọn vì lý do gì.
   - type: explain
     text:
       vi: Trong một câu chuyện, present perfect thường mở đầu để giới thiệu trải nghiệm (I've never been to…), rồi past simple kể chi tiết có thời điểm (Last spring, I went…). Kết bài quay lại hiện tại bằng present perfect - Since then, I've been saving…
@@ -67,7 +66,7 @@ body:
     target: "I've always loved travelling, and I've visited twelve countries so far. Last spring, I finally went to Peru with two friends. We got lost on our first day in Lima, but a kind old man helped us. I've climbed a lot of mountains in my life, and Machu Picchu was the most breathtaking. Since then, I've been saving for my next trip. Next on my bucket list: Iceland!"
     target_lang: en
     translation:
-      vi: "Mình luôn mê du lịch, và tính đến giờ đã đi được mười hai nước. Mùa xuân năm ngoái, cuối cùng mình đã đi Peru cùng hai người bạn. Ngày đầu ở Lima tụi mình bị lạc, nhưng một ông cụ tốt bụng đã giúp. Mình đã leo nhiều ngọn núi trong đời, và Machu Picchu là nơi đẹp ngỡ ngàng nhất. Từ đó đến giờ, mình đang để dành tiền cho chuyến đi tiếp theo. Điểm đến tiếp theo trong danh sách: Iceland!"
+      vi: "Mình luôn mê du lịch, và tính đến giờ đã đi được mười hai nước. Mùa xuân năm ngoái, cuối cùng mình đã đi Peru cùng hai người bạn. Ngày đầu ở Lima tụi mình bị lạc, nhưng một ông cụ tốt bụng đã giúp. Mình đã leo nhiều ngọn núi trong đời, và Machu Picchu là nơi đẹp ngỡ ngàng nhất. Từ đó đến giờ, mình vẫn đang để dành tiền cho chuyến đi tiếp theo. Điểm đến tiếp theo trong danh sách: Iceland!"
     note:
       vi: Last spring, on our first day là mốc đã kết thúc nên dùng went, got lost, helped. In my life và since then kéo dài đến nay nên dùng I've climbed, I've been saving.
   - type: example
@@ -97,11 +96,11 @@ body:
     note:
       vi: Last spring là mốc đã kết thúc nên bắt buộc dùng past simple. Ngoài ra, kể chuyến đi đã về thì không dùng gone.
   - type: common_mistake
-    wrong: Did you ever try Peruvian food?
-    right: Have you ever tried Peruvian food?
+    wrong: I am saving for my next trip since then.
+    right: I've been saving for my next trip since then.
     target_lang: en
     note:
-      vi: Hỏi trải nghiệm trong đời dùng Have you ever + V3, dù tiếng Việt có chữ "đã".
+      vi: Since then kéo dài từ một mốc quá khứ đến nay, nên dùng have been + V-ing. Hiện tại tiếp diễn không đi với since.
   - type: summary
     points:
       - vi: Đã từng (không nêu lúc nào) → I've been / I've never…
@@ -257,6 +256,7 @@ exercises:
         - Seeing the aurora borealis is on my bucket list.
         - The northern lights are on my bucket list.
         - Seeing the northern lights is one of the things on my bucket list.
+        - Watching the aurora is on my bucket list.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -289,6 +289,9 @@ exercises:
         - We met in 2020 and have been best friends ever since.
         - We met in 2020, and we've been close friends since then.
         - We met in 2020, and we've been close friends ever since.
+        - We met in 2020, and we've been best friends since.
+        - We met in 2020, and we've been best friends ever since then.
+        - We met in 2020, and ever since then we've been best friends.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -389,6 +392,11 @@ exercises:
         - Long time no see! How are you? I've just started yoga.
         - It's been a long time! How have you been? I've just taken up yoga.
         - It's been a long time! How have you been? I've just started yoga.
+        - It has been a long time! How have you been? I've just taken up yoga.
+        - It has been a long time! How have you been? I've just started yoga.
+        - Long time no see! How have you been? I've just started practising yoga.
+        - Long time no see! How have you been? I've just started practicing yoga.
+        - Long time no see! How have you been? I just started doing yoga.
         - Long time no see! How have you been? I recently took up yoga.
         - Long time no see! How have you been? I just took up yoga.
         - Long time no see! How have you been? I just started yoga.
@@ -401,9 +409,6 @@ exercises:
       - answer: Long time no see! How have you been? I've just took up yoga.
         feedback_vi: Sau have cần V3 - taken up.
         error_tag: past_participle
-      - answer: Long time no see! How have you been? I've just taken yoga up.
-        feedback_vi: Với danh từ, take up thường đứng liền nhau - take up yoga.
-        error_tag: phrasal_verb_order
     explanation:
       vi: How have you been? hỏi về khoảng thời gian từ lần gặp trước đến nay. "Mới bắt đầu" là I've just taken up / I've just started (Anh-Mỹ cũng nói I just took up).
     display_answer: Long time no see! How have you been? I've just taken up yoga.

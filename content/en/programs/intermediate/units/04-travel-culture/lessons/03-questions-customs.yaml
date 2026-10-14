@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:travel-culture-questions-customs
 order_index: 3
 level: b1
@@ -108,7 +107,7 @@ exercises:
   - key: en:exercise:travel-culture-qc-listen-temple
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:take-off-your-shoes
     prompt:
@@ -158,11 +157,11 @@ exercises:
         - { id: f8s, text: "don't you", lang: en }
         - { id: e3r, text: "isn't it", lang: en }
         - { id: u6d, text: "aren't you", lang: en }
-        - { id: k1z, text: "do you", lang: en }
+        - { id: k1z, text: "doesn't you", lang: en }
     answer:
       correct_option_id: f8s
     explanation:
-      vi: Câu chính dùng leave (hiện tại đơn) với you và ở thể khẳng định, nên đuôi là don't you. Isn't it chỉ dùng khi câu chính là it is; do you là đuôi của câu phủ định.
+      vi: Câu chính dùng leave (hiện tại đơn) với you và ở thể khẳng định, nên đuôi là don't you. Isn't it chỉ dùng khi câu chính là it is; aren't you dành cho câu có you are; doesn't không đi với you.
     display_answer: "don't you"
 
   - key: en:exercise:travel-culture-qc-mcq-bow
@@ -270,6 +269,8 @@ exercises:
         - Could you tell me what time the museum opens?
         - Do you know what time the museum will open?
         - Do you happen to know what time the museum opens?
+        - Do you know when the museum is open?
+        - Could you tell me when the museum opens?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -308,6 +309,11 @@ exercises:
         - In Japan, it is considered rude to leave a tip.
         - In Japan, it's rude to tip.
         - In Japan, it is rude to tip.
+        - In Japan, tipping is rude.
+        - In Japan, tipping is considered rude.
+        - In Japan, leaving a tip is considered impolite.
+        - In Japan, it's considered impolite to leave a tip.
+        - In Japan, it is considered impolite to leave a tip.
     rubric:
       typo_tolerance: 1
     known_wrong:

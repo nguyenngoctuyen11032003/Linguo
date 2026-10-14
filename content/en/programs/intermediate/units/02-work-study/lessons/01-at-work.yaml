@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:work-study-at-work
 order_index: 1
 level: b1
@@ -232,7 +231,7 @@ exercises:
     answer:
       blanks:
         b1: [deadline]
-        b2: [manager, boss]
+        b2: [manager, boss, supervisor]
     known_wrong:
       - answer: colleague
         feedback_vi: Colleague là đồng nghiệp; người quản lý bạn là manager.
@@ -263,6 +262,12 @@ exercises:
         - Let's discuss the plan during the meeting.
         - We should discuss the plan at the meeting.
         - Let's discuss the plan at the meeting, then.
+        - Let's talk about the plan at the meeting.
+        - Let's talk about the plan in the meeting.
+        - Let us talk about the plan at the meeting.
+        - Let us talk about the plan in the meeting.
+        - Let us discuss the plan during the meeting.
+        - We should discuss the plan in the meeting.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -298,6 +303,9 @@ exercises:
         - I am in charge of new customers.
         - I'm in charge of new customers.
         - I'm responsible for looking after new customers.
+        - I am in charge of the new customers.
+        - I'm in charge of the new customers.
+        - I'm responsible for dealing with new customers.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -381,6 +389,8 @@ exercises:
         - Could you send me the file before the meeting, please?
         - Can you send me the file before the meeting?
         - Can you send me that file before the meeting?
+        - Can you send the file to me before the meeting?
+        - Could you please send me that file before the meeting?
         - Would you mind sending me the file before the meeting?
     rubric:
       typo_tolerance: 1

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:yet-and-used-to
 order_index: 4
 level: b1
@@ -177,7 +176,7 @@ exercises:
         - "Gợi ý: ô 1 đứng cuối câu hỏi (chưa); ô 2 đứng giữa have và V3 (rồi)."
     answer:
       blanks:
-        b1: [yet]
+        b1: [yet, already]
         b2: [already]
     known_wrong:
       - answer: still
@@ -210,7 +209,6 @@ exercises:
         - { id: c-in, text: in }
         - { id: c-to, text: to }
         - { id: c-use, text: use }
-        - { id: c-lived, text: lived }
     answer:
       orders:
         - [c-i, c-used, c-to, c-live, c-in, c-the, c-countryside]
@@ -232,7 +230,7 @@ exercises:
         - { id: b2, width_hint: 5 }
     answer:
       blanks:
-        b1: [used to smoke]
+        b1: [used to smoke, smoked]
         b2: [gave]
     known_wrong:
       - answer: use to smoke
@@ -270,6 +268,9 @@ exercises:
         - I used not to like vegetables.
         - I didn't like vegetables before.
         - I didn't like eating vegetables before.
+        - I used to not like vegetables.
+        - I used to dislike vegetables.
+        - I didn't like vegetables in the past.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -308,15 +309,15 @@ exercises:
         - Have you bought the tickets yet?
         - Have you bought the ticket yet?
         - Have you booked the tickets already?
+        - Have you booked tickets yet?
+        - Have you booked the tickets?
+        - Did you book the tickets yet?
     rubric:
       typo_tolerance: 1
     known_wrong:
       - answer: Have you yet booked the tickets?
         feedback_vi: Yet đứng cuối câu - Have you booked the tickets yet?
         error_tag: yet_position
-      - answer: Did you book the tickets yet?
-        feedback_vi: Một số người Mỹ nói vậy khi nói chuyện thân mật, nhưng cách chuẩn là Have you booked the tickets yet?
-        error_tag: tense_choice
       - answer: Have you book the tickets yet?
         feedback_vi: Sau have cần V3 - booked.
         error_tag: past_participle
@@ -400,6 +401,8 @@ exercises:
         - I grew up in a small village, but now I live in a city.
         - I grew up in a small village, but I live in a city now.
         - I grew up in a little village, but now I live in the city.
+        - I grew up in a small village, but now I am living in the city.
+        - I grew up in a small village, but I am living in the city now.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -412,9 +415,6 @@ exercises:
       - answer: I was grown up in a small village, but now I live in the city.
         feedback_vi: Grow up không dùng ở thể bị động - I grew up.
         error_tag: verb_form
-      - answer: I grew up in a small village, but now I am living in the city.
-        feedback_vi: Nơi ở lâu dài hiện nay dùng hiện tại đơn - now I live in the city.
-        error_tag: tense_choice
     explanation:
       vi: Grow up có quá khứ bất quy tắc là grew up. Nơi bạn sống lâu dài bây giờ dùng hiện tại đơn, có thể thêm now hoặc nowadays.
     display_answer: I grew up in a small village, but now I live in the city.

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:stories-news-news-relative-clauses
 order_index: 4
 level: b1
@@ -108,7 +107,7 @@ exercises:
   - key: en:exercise:stories-news-nr-listen-police
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:according-to
     prompt:
@@ -297,6 +296,8 @@ exercises:
         - The man that lives next to my house is a journalist.
         - The man who lives next door to us is a journalist.
         - The man who lives next door is a reporter.
+        - The man living next door is a journalist.
+        - The man next door is a journalist.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -334,6 +335,8 @@ exercises:
         - When did the accident take place?
         - What time did the crash happen?
         - At what time did the accident happen?
+        - What time was the accident?
+        - When was the accident?
     rubric:
       typo_tolerance: 1
     known_wrong:

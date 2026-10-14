@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:have-you-ever
 order_index: 1
 level: b1
@@ -73,11 +72,11 @@ body:
     note:
       vi: Một sự việc đã trải qua là an experience (đếm được).
   - type: common_mistake
-    wrong: Did you ever eat durian?
+    wrong: You have ever eaten durian?
     right: Have you ever eaten durian?
     target_lang: en
     note:
-      vi: Tiếng Việt có chữ "đã" nên bạn dễ dùng quá khứ đơn. Hỏi trải nghiệm trong cả cuộc đời (chưa kết thúc) thì dùng Have you ever + V3.
+      vi: Tiếng Việt giữ nguyên trật tự câu khi hỏi nên bạn dễ quên đảo. Câu hỏi phải đưa have lên trước chủ ngữ - Have you ever + V3?
   - type: common_mistake
     wrong: I have saw that film three times.
     right: I have seen that film three times.
@@ -93,7 +92,7 @@ body:
   - type: summary
     points:
       - vi: Trải nghiệm không nêu thời điểm - have/has + V3 (I've visited, she's tried).
-      - vi: Have you ever + V3? - Yes, I have. / No, I haven't. Không hỏi Did you ever…?
+      - vi: Have you ever + V3? - Yes, I have. / No, I haven't. Đây là cách hỏi trải nghiệm chuẩn nhất.
       - vi: Never là phủ định - I've never been… không thêm not.
       - vi: Been to = đã từng đến và đã về; gone to = đã đi và còn ở đó.
       - vi: Số lần ở cuối câu - once, twice, three times.
@@ -264,12 +263,12 @@ exercises:
         - Have you ever tasted durian?
         - Have you ever eaten a durian?
         - Have you ever eaten durians?
+        - Have you ever had durian?
+        - Did you ever eat durian?
+        - Did you ever try durian?
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: Did you ever eat durian?
-        feedback_vi: Hỏi trải nghiệm trong đời dùng Have you ever + V3 - Have you ever eaten durian?
-        error_tag: did_ever
       - answer: Have you ever ate durian?
         feedback_vi: Ate là V2. Sau have cần V3 - eaten.
         error_tag: past_participle
@@ -392,6 +391,8 @@ exercises:
         - Bạn đã từng leo một ngọn núi chưa?
         - Bạn đã bao giờ leo một ngọn núi chưa?
         - Bạn đã leo núi chưa?
+        - Bạn đã bao giờ đi leo núi chưa?
+        - Bạn đã từng đi leo núi chưa?
     rubric:
       diacritics: lenient
     explanation:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:work-study-rules
 order_index: 2
 level: b1
@@ -180,7 +179,7 @@ exercises:
         - "Gợi ý: have to chia theo chủ ngữ; my sister = she."
     answer:
       blanks:
-        b1: [has]
+        b1: [has, had, needs]
     known_wrong:
       - answer: have
         feedback_vi: My sister là ngôi thứ ba số ít (she), nên have to đổi thành has to.
@@ -268,6 +267,8 @@ exercises:
         - You are not allowed to be late.
         - You mustn't arrive late.
         - You must not arrive late.
+        - You mustn't come late.
+        - You must not come late.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -308,6 +309,9 @@ exercises:
         - On Saturdays we don't have to work.
         - On Saturdays, we don't have to go to work.
         - We don't need to work on Saturdays.
+        - We do not have to work on Saturday.
+        - We don't need to go to work on Saturdays.
+        - We needn't work on Saturdays.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -367,6 +371,7 @@ exercises:
         - Bạn không bắt buộc mặc đồng phục, nhưng phải đến đúng giờ.
         - Bạn không cần mặc đồng phục, nhưng phải đến đúng giờ.
         - Bạn không cần mặc đồng phục nhưng phải có mặt đúng giờ.
+        - Bạn không bắt buộc phải mặc đồng phục, nhưng phải đúng giờ.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -397,6 +402,8 @@ exercises:
         - You should ask your manager before doing overtime.
         - You should check with your manager before you work overtime.
         - You should check with your manager before working overtime.
+        - You should ask your boss before you work overtime.
+        - You should ask your boss before working overtime.
     rubric:
       typo_tolerance: 1
     known_wrong:

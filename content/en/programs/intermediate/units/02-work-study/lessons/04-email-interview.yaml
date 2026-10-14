@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:work-study-email-interview
 order_index: 4
 level: b1
@@ -172,13 +171,10 @@ exercises:
     answer:
       blanks:
         b1: [for]
-        b2: [of]
+        b2: [of, as]
     known_wrong:
       - answer: to
         feedback_vi: Apply to dùng với công ty hoặc trường; với vị trí/công việc dùng apply for.
-        error_tag: preposition
-      - answer: as
-        feedback_vi: Cụm cố định là the position of + tên vị trí.
         error_tag: preposition
     explanation:
       vi: Apply for + vị trí/công việc. The position of + tên vị trí (the position of sales assistant).
@@ -202,8 +198,9 @@ exercises:
     answer:
       orders:
         - [v-please, v-find, v-my, v-cv, v-attached]
+        - [v-please, v-find, v-attached, v-my, v-cv]
     explanation:
-      vi: Please find + tân ngữ + attached là câu cố định trong email, nghĩa là "tôi xin gửi kèm…". Attached đứng sau tân ngữ.
+      vi: Please find + tân ngữ + attached là câu cố định trong email, nghĩa là "tôi xin gửi kèm…". Attached thường đứng sau tân ngữ, nhưng Please find attached my CV cũng đúng.
     display_answer: Please find my CV attached.
 
   # ---------------- recall ----------------
@@ -221,7 +218,7 @@ exercises:
     answer:
       blanks:
         b1: [hearing]
-        b2: [Best, Kind]
+        b2: [Best, Kind, Warm]
     known_wrong:
       - answer: hear
         feedback_vi: Sau look forward to dùng -ing - hearing.
@@ -256,6 +253,8 @@ exercises:
         - I've got three years' experience in marketing.
         - I have three years' experience in the marketing field.
         - I have three years of experience in the field of marketing.
+        - I have three years of marketing experience.
+        - I have three years' marketing experience.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -292,6 +291,8 @@ exercises:
         - I'm writing to apply for the post of sales assistant.
         - I am writing to apply for the post of sales assistant.
         - I'm writing to apply for the position of Sales Assistant.
+        - I'm writing to apply for the role of sales assistant.
+        - I'm writing to apply for the sales assistant job.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -382,6 +383,9 @@ exercises:
         - My main strength is teamwork.
         - My main strength is working well in a team.
         - My main strength is I work well in a team.
+        - My main strength is that I'm a good team player.
+        - My main strength is that I am a good team player.
+        - My main strength is that I work well in a group.
     rubric:
       typo_tolerance: 1
     known_wrong:

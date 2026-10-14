@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:travel-culture-review
 order_index: 5
 level: b1
@@ -125,8 +124,8 @@ body:
     note:
       vi: Such a surprise; câu hỏi đuôi don't you; câu hỏi gián tiếp Does anyone know if…
   - type: common_mistake
-    wrong: The room was so noisy, I was very boring and the staff was so rude person.
-    right: The room was so noisy, I was really bored, and the staff were such rude people.
+    wrong: The trip was very boring, so I was very boring. The staff were so rude people.
+    right: The trip was very boring, so I was really bored. The staff were such rude people.
     target_lang: en
     note:
       vi: Cảm giác của mình là bored; có danh từ thì dùng such, không dùng so.
@@ -148,7 +147,7 @@ exercises:
   - key: en:exercise:travel-culture-r-listen-towels
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 3
     item: en:item:hardly-any
     prompt:
@@ -262,6 +261,9 @@ exercises:
         - Does anybody know if tipping is OK in Thailand?
         - Does anyone know if you can tip in Thailand?
         - Does anyone know if people tip in Thailand?
+        - Does anyone know if it is okay to tip in Thailand?
+        - Does anyone know whether it's OK to tip in Thailand?
+        - Does anyone know whether it is OK to tip in Thailand?
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -293,7 +295,7 @@ exercises:
     answer:
       blanks:
         b1: [wondering]
-        b2: [could]
+        b2: [could, would, can]
         b3: [hearing]
     known_wrong:
       - answer: wonder
@@ -302,9 +304,6 @@ exercises:
       - answer: hear
         feedback_vi: Look forward to + V-ing - hearing.
         error_tag: look_forward_to_ing
-      - answer: can
-        feedback_vi: I was wondering if đi với could để giữ sự lịch sự và hoà hợp với was.
-        error_tag: modal_politeness
     explanation:
       vi: I was wondering if you could… là cách nhờ rất lịch sự. Trong look forward to, to là giới từ nên sau nó dùng V-ing (hearing).
     display_answer: I was wondering if you could give us a partial refund. I look forward to hearing from you.
@@ -329,6 +328,8 @@ exercises:
         - It was unacceptable to wait two hours for our room.
         - It is unacceptable to wait two hours for a room.
         - Waiting two hours for a room is unacceptable.
+        - Having to wait two hours for our room was unacceptable.
+        - Waiting two hours to get a room was unacceptable.
     rubric:
       typo_tolerance: 1
     known_wrong:

@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:travel-culture-complaints
 order_index: 4
 level: b1
@@ -110,7 +109,7 @@ exercises:
   - key: en:exercise:travel-culture-c-listen-ac
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:air-conditioning
     prompt:
@@ -238,7 +237,7 @@ exercises:
       blanks:
         b1: [afraid]
         b2: ["doesn't", does not]
-        b3: [noisy]
+        b3: [noisy, loud]
     known_wrong:
       - answer: scared
         feedback_vi: Lời phàn nàn lịch sự dùng I'm afraid (tôi e là), không dùng scared.
@@ -312,6 +311,8 @@ exercises:
         - I was wondering if I could check out a bit late.
         - I was wondering if I could have a late check-out.
         - I was wondering if I could have a late checkout.
+        - I was wondering if I could check out a little bit later.
+        - I was wondering whether I could have a late check-out.
     rubric:
       typo_tolerance: 1
     known_wrong:

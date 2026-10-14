@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Kể chuyện & tin tức" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Quá khứ tiếp diễn, when/while ----------------
@@ -310,7 +309,7 @@ items:
       pronunciation_note:
         vi: Nói liền by the time /baɪðəˈtaɪm/, nhấn vào TIME.
       confusion:
-        vi: Vế có by the time dùng quá khứ đơn (arrived); vế còn lại thường dùng had + V3. Không nói By the time the police had arrived.
+        vi: Vế có by the time thường dùng quá khứ đơn (arrived); vế còn lại thường dùng had + V3 để cho thấy việc đó xong trước.
 
   - key: en:item:realise
     type: vocab
@@ -415,7 +414,7 @@ items:
       pronunciation_note:
         vi: Leave có âm /iː/ dài; left có âm /e/ ngắn - đừng đọc hai từ giống nhau.
       confusion:
-        vi: Để quên đồ ở một nơi dùng leave (I left my phone at home), không dùng forget + nơi chốn (I forgot my phone at home nghe không tự nhiên bằng).
+        vi: Khi nói rõ nơi để quên, cách chuẩn là leave (I left my phone at home); forget thường đứng một mình (I forgot my phone).
 
   - key: en:item:arrive
     type: vocab
@@ -791,7 +790,7 @@ items:
           translation:
             vi: Đó là con phố nơi xảy ra vụ tai nạn.
       pronunciation_note:
-        vi: Where và were nghe gần giống nhau ở giọng Mỹ; where có âm /eə/ rõ hơn ở giọng Anh.
+        vi: Đừng nhầm where với were - where có nguyên âm UK /eə/ · US /e/, còn were là UK /ɜː/ · US /ɝː/.
       confusion:
         vi: Sau where phải có chủ ngữ và động từ đầy đủ. Nếu sau đó là động từ ngay (The café which opened last week) thì dùng which/that, không dùng where.
 

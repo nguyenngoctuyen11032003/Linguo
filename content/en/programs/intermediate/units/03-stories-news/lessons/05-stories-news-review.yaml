@@ -1,14 +1,13 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:stories-news-review
 order_index: 5
 level: b1
 title:
-  vi: Ôn tập - Một bản tin và một câu chuyện có thật
+  vi: Ôn tập - Một bản tin và một câu chuyện cá nhân
 objectives:
   - vi: Đọc hiểu một bản tin ngắn và kể lại bằng câu đầy đủ ở quá khứ.
   - vi: Kể một câu chuyện cá nhân với đủ ba thì kể chuyện, từ nối và mệnh đề quan hệ.
@@ -122,10 +121,10 @@ body:
       vi: Không lặp she sau who; sau was phải là V-ing.
   - type: common_mistake
     wrong: In the end of the story, I had got my bag back.
-    right: At the end of the story, I got my bag back.
+    right: In the end, I got my bag back.
     target_lang: en
     note:
-      vi: Có of thì dùng at the end of. Lấy lại túi là sự việc chính theo thứ tự, nên dùng quá khứ đơn got, không cần had.
+      vi: In the end (rốt cuộc) đứng một mình, không có of. Lấy lại túi là sự việc chính theo thứ tự, nên dùng quá khứ đơn got, không cần had.
   - type: summary
     points:
       - vi: Bối cảnh - was/were + V-ing; sự việc chính - quá khứ đơn; chuyện trước đó - had + V3.
@@ -139,7 +138,7 @@ exercises:
   - key: en:exercise:stories-news-review-listen-train-bag
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:when-while-interrupted
     prompt:
@@ -248,7 +247,7 @@ exercises:
       blanks:
         b1: [rescued]
         b2: [who, that]
-        b3: [In the end, Luckily, Fortunately]
+        b3: [In the end, Luckily, Fortunately, Thankfully]
     known_wrong:
       - answer: were rescued
         feedback_vi: Lính cứu hoả là người thực hiện việc cứu, nên dùng chủ động rescued.
@@ -292,6 +291,8 @@ exercises:
         - When I was sleeping on the train, someone stole my bag.
         - While I slept on the train, someone took my bag.
         - While I slept on the train, someone stole my bag.
+        - Someone took my bag while I was asleep on the train.
+        - Someone stole my bag while I was asleep on the train.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -334,6 +335,9 @@ exercises:
         - When I woke up, I realised my phone and wallet were gone.
         - When I woke up, I realized my phone and wallet were gone.
         - When I woke up, I realised my phone and wallet were missing.
+        - When I woke up, I realized my phone and wallet were missing.
+        - When I woke up, I realised that my phone and wallet were gone.
+        - When I woke up, I realized that my phone and wallet were gone.
         - When I woke up, I realised I had lost my phone and wallet.
         - When I woke up, I realized I had lost my phone and wallet.
         - When I woke up, I realised my phone and wallet had been stolen.
@@ -467,6 +471,8 @@ exercises:
         - According to the report, none of the people were injured in the fire.
         - Nobody was injured in the fire, according to the report.
         - No one was injured in the fire, according to the report.
+        - According to the report, there were no injuries in the fire.
+        - According to the report, nobody got injured in the fire.
     rubric:
       typo_tolerance: 1
     known_wrong:

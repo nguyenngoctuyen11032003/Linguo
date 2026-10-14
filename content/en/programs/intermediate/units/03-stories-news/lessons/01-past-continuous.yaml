@@ -1,9 +1,8 @@
-# DEMO — chưa kiểm duyệt
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 key: en:lesson:stories-news-past-continuous
 order_index: 1
 level: b1
@@ -106,7 +105,7 @@ exercises:
   - key: en:exercise:stories-news-pc-listen-rain
     type: listen
     stage: recognition
-    answer_lang: en
+    answer_lang: vi
     difficulty: 2
     item: en:item:when-while-interrupted
     prompt:
@@ -135,12 +134,12 @@ exercises:
       options:
         - { id: b5t, text: was cooking, lang: en }
         - { id: n8r, text: was cook, lang: en }
-        - { id: e3v, text: cooked, lang: en }
+        - { id: e3v, text: were cooking, lang: en }
         - { id: y6j, text: am cooking, lang: en }
     answer:
       correct_option_id: b5t
     explanation:
-      vi: Nấu bữa tối là việc dài đang diễn ra thì điện thoại reo, nên dùng was + V-ing. Was cook thiếu -ing; am cooking là hiện tại, không hợp với rang.
+      vi: Nấu bữa tối là việc dài đang diễn ra thì điện thoại reo, nên dùng was + V-ing. Was cook thiếu -ing; were cooking sai vì I đi với was; am cooking là hiện tại, không hợp với rang.
     display_answer: was cooking
 
   - key: en:exercise:stories-news-pc-mcq-knew
@@ -285,6 +284,11 @@ exercises:
         - I was cooking dinner at 8 last night.
         - At eight o'clock last night, I was making dinner.
         - I was making dinner at eight o'clock last night.
+        - At 8 p.m. last night, I was cooking dinner.
+        - At 8 pm last night, I was cooking dinner.
+        - At 8pm last night, I was cooking dinner.
+        - I was cooking dinner at 8 p.m. last night.
+        - I was cooking dinner at 8pm last night.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -326,6 +330,10 @@ exercises:
         - While he was watching the movie, he fell asleep.
         - He fell asleep when he was watching the film.
         - He fell asleep when he was watching the movie.
+        - He fell asleep while watching a film.
+        - He fell asleep while watching a movie.
+        - He fell asleep during the film.
+        - He fell asleep during the movie.
     rubric:
       typo_tolerance: 1
     known_wrong:
@@ -423,6 +431,8 @@ exercises:
         - [sl-she2, sl-slipped, sl-while, sl-she1, sl-was, sl-running, sl-down, sl-the, sl-stairs]
         - [sl-while, sl-she1, sl-was, sl-running, sl-down, sl-the, sl-stairs, sl-she2, sl-slipped]
         - [sl-while, sl-she2, sl-was, sl-running, sl-down, sl-the, sl-stairs, sl-she1, sl-slipped]
+        - [sl-she1, sl-slipped, sl-while, sl-running, sl-down, sl-the, sl-stairs]
+        - [sl-she2, sl-slipped, sl-while, sl-running, sl-down, sl-the, sl-stairs]
     explanation:
       vi: Việc ngắn "trượt chân" là she slipped; việc dài "đang chạy" là while she was running down the stairs. Vế while có thể đứng trước hoặc sau; token run là bẫy vì sau was cần running.
     display_answer: She slipped while she was running down the stairs.

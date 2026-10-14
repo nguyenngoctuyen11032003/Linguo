@@ -1,10 +1,9 @@
-# DEMO — chưa kiểm duyệt
 # Học liệu unit "Du lịch, văn hoá & giải quyết vấn đề" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
 schema_version: 1
-demo: true
+demo: false
 status: published
-reviewed_by: null
-reviewed_at: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-14T18:00:00+07:00"
 source: src:linguo-demo
 items:
   # ---------------- Bài 1: Lượng từ ----------------
@@ -100,7 +99,7 @@ items:
           translation:
             vi: Gần bãi biển có rất nhiều khách sạn rẻ.
       confusion:
-        vi: Plenty of mang ý "đủ, thậm chí thừa" nên nghe yên tâm hơn a lot of. Không dùng plenty of trong câu hỏi hay câu phủ định thông thường.
+        vi: Plenty of mang ý "đủ, thậm chí thừa" nên nghe yên tâm hơn a lot of. Plenty of thường dùng trong câu khẳng định.
 
   - key: en:item:hardly-any
     type: phrase
@@ -361,7 +360,7 @@ items:
       pronunciation_note:
         vi: Chữ h không đọc - /ɪɡˈzɔːstɪd/ "ig-ZOS-tid".
       confusion:
-        vi: Exhausted đã là "rất mệt", nên không nói very exhausted; dùng really exhausted hoặc completely exhausted.
+        vi: Exhausted đã là "rất mệt", nên thường không nói very exhausted; dùng really exhausted hoặc completely exhausted.
 
   - key: en:item:exhausting
     type: vocab
@@ -829,7 +828,7 @@ items:
           translation:
             vi: Wi-Fi trong phòng tôi không vào được.
       confusion:
-        vi: Người Việt hay nói The shower is broken cho mọi thứ; với máy móc, doesn't work/isn't working tự nhiên hơn. Không nói The shower not work.
+        vi: The shower is broken cũng đúng, nhưng khi báo máy móc trục trặc, doesn't work/isn't working phổ biến và nhẹ nhàng hơn. Không nói The shower not work.
 
   - key: en:item:noisy
     type: vocab
@@ -886,7 +885,7 @@ items:
           translation:
             vi: Điều hoà không chạy, phòng nóng quá.
       confusion:
-        vi: "Người Việt hay nói tắt \"máy lạnh\" là air con; trong tiếng Anh nói air conditioning hoặc AC."
+        vi: "Aircon là cách nói thân mật (Anh, Úc, Singapore); người Mỹ hay nói AC. Trong văn viết hoặc khi phàn nàn trang trọng, dùng air conditioning."
 
   - key: en:item:charge-verb
     type: vocab
