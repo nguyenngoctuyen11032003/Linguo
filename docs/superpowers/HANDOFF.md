@@ -2,11 +2,11 @@
 
 Tài liệu cho người (hoặc phiên làm việc) tiếp quản: trạng thái từng spec, các quyết định đã chốt (kèm nơi kiểm chứng trong code) và việc còn mở. Bản đồ tính năng chi tiết: [docs/FEATURES.md](../FEATURES.md). Cách deploy và vận hành: [DEPLOY.md](../DEPLOY.md), [RUNBOOK.md](../RUNBOOK.md), [SETUP.md](../SETUP.md).
 
-Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/shared/src/`; số migration rút gọn như `000200_...` nằm trong `supabase/migrations/` với tiền tố `20261014` hoặc `20261015` theo cùng dòng.
+Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/shared/src/`; số migration rút gọn như `000200_...` nằm trong `supabase/migrations/` với tiền tố `20261014`, `20261015` hoặc `20261016` theo cùng dòng. Danh sách đầy đủ ở mục 5.
 
 ## 1. Trạng thái từng spec
 
-Tất cả spec dưới đây đã được triển khai trên `main` và deploy lên production (các migration đều có trong `supabase/migrations-applied.json`). Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
+Tất cả spec và đợt bổ sung dưới đây đã được triển khai trên `main`. Mọi migration trong `supabase/migrations/` đều đã được ghi vào `supabase/migrations-applied.json` (34 trên 34 tại thời điểm viết; xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
 
 | Spec | Chủ đề | Nằm ở đâu | Migration chính |
 |---|---|---|---|
@@ -25,6 +25,21 @@ Tất cả spec dưới đây đã được triển khai trên `main` và deploy
 
 Các migration sửa lỗi sau khi ra mắt: `20261015000500_timezone_cooldown.sql`, `20261015000600_review_grade_guard.sql`, `20261015000610_export_exam_data.sql`, `20261015000800_answer_integrity.sql` (xem mục 2).
 
+**Đợt bổ sung sau Spec 11** (PRD §6.9, §8.2, §19 P2 và gia cố sau rà soát; chi tiết từng mục ở [FEATURES.md](../FEATURES.md) mục 6, 8, 9, 12, 15–18):
+
+| Hạng mục | Nằm ở đâu | Migration |
+|---|---|---|
+| Luyện thi tính vào chuỗi ngày và tiến độ (XP luôn 0), có backfill | `exam_close_attempt`, cột `exam_attempts.activity_counted_at` | `20261016000100_exam_activity.sql` |
+| Tác vụ AI `analyze_sentence`, `summarize_session`, `plan_review` | `supabase/functions/ai-tutor/lib/prompts/`, `web/components/ai/AiMoreViews.tsx`, trang gia sư, phiên học, Tiến độ | `20261016000200_ai_more_tasks.sql` |
+| Từ vựng cá nhân (nhập CSV, ôn FSRS) | `web/features/personal-vocab`, `web/routes/app/vocab`, `shared/personal-vocab` | `20261016000300_personal_vocab.sql` |
+| Gia cố nhắc học và Web Push | `supabase/functions/notify-dispatch`, `web/features/notifications`, `web/features/pwa/sw-click.ts` | `20261016000400_notify_hardening.sql` |
+| Gia cố quản trị nội dung, báo lỗi, quy tắc `client_at` 48 giờ | `supabase/migrations`, `supabase/tests/admin.test.sql` | `20261016000500_content_admin_hardening.sql` |
+| Đóng vai hội thoại với AI (`roleplay_turn`, danh mục kịch bản) | `shared/ai/roleplay-catalog.ts`, `web/features/roleplay`, `web/routes/app/roleplay` | `20261016000600_ai_roleplay.sql` |
+| Luyện nói (ghi âm trong bộ nhớ, chép lời tuỳ chọn, tự đánh giá) | `web/features/speaking`, `web/routes/app/speaking` | không có migration |
+| Hiệu năng (route lazy, `LazyMotion`, chunk vendor, ngân sách kích thước) | `apps/web/vite.config.ts`, `scripts/check-bundle-size.mjs` | không có migration |
+| UX và truy cập (tiêu đề route, thông báo chuyển trang, token viền, thông báo lỗi chung, trang Học tập, hoàn tác phiên học) | xem mục 2 | không có migration |
+| Smoke production | `scripts/smoke.mjs`, `.github/workflows/smoke.yml` | không có migration |
+
 Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệt là AI do chủ dự án uỷ quyền, chưa qua giáo viên bản ngữ (`content/README.md`). Khi có người duyệt thật, cập nhật `reviewed_by`/`reviewed_at` trong YAML và chạy lại **Publish content**.
 
 ## 2. Quyết định và quy tắc cần giữ
@@ -33,11 +48,20 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - **Quy tắc `client_at` và phiên bản đáp án (`20261015000800_answer_integrity.sql`, test `supabase/tests/answer_integrity.test.sql`):**
   - `submit_exercise` bỏ qua `p_client_at` trước thời điểm bắt đầu lượt học (`lesson_runs.started_at`): câu trả lời tính vào ngày của server; `client_at` ở tương lai bị kẹp về `now`. Vì thế không thể trả lời hôm nay rồi gán ngày hôm qua để vá chuỗi ngày hoặc lấy lại trần XP. Câu trả lời offline thật vẫn giữ đúng ngày vì lượt học đã tồn tại lúc đó.
   - Chỉ khoá đáp án hiện hành được dùng để chấm. Khoá cũ chỉ được chấp nhận cho câu trả lời offline được trả lời **trước** khi khoá hiện hành được tạo (`client_at < created_at` của khoá hiện hành). Còn lại trả `exercise_version_mismatch`, mà trình học đã xử lý bằng cách tải lại bài.
+  - Thêm ở `20261016000500_content_admin_hardening.sql` (cũng trong `supabase/tests/answer_integrity.test.sql`): `client_at` **cũ hơn 48 giờ** cũng bị bỏ qua, nên một lượt học mở ngày D không thể được trả lời ngày D+1 hoặc D+2 với `client_at` ngày D để bù ngày bỏ lỡ.
   - Các tính toán theo ngày khác (`progress_*`) vẫn kẹp `client_at` vào khoảng [ngày server − 7, ngày server] (`20261015000100_progress.sql`); quy tắc trên chặt hơn cho `submit_exercise`.
 - **Cooldown múi giờ (`20261015000500_timezone_cooldown.sql`, test `timezone_cooldown.test.sql`):** mọi giới hạn theo ngày (quota AI, giới hạn thẻ mới, trần XP, chuỗi ngày) dựa vào múi giờ trong `profiles.timezone`. Người học đổi múi giờ tối đa **một lần mỗi 24 giờ** (trigger `profiles_timezone_cooldown`, lỗi `timezone_change_cooldown`); lần đổi đầu luôn được; `service_role` và migration không bị giới hạn.
-- **Quy tắc bao phủ bản xuất dữ liệu:** `export_my_data()` xuất các phần cố định cộng mọi bảng trong `account_optional_tables()` (bản hiện hành nằm trong `20261015000610_export_exam_data.sql`: `study_sessions`, `activity_days`, `user_badges`, `analytics_events`, `exam_attempts`, `exam_answers`, `content_reports`, `notification_prefs`, `notifications`). Test `supabase/tests/account_export_coverage.test.sql` fail khi có bảng public mới có cột `user_id` mà không được xuất và cũng không nằm trong danh sách loại trừ có lý do. Thêm bảng người dùng mới thì phải thêm vào `account_optional_tables()` bằng một migration mới (hàm này được `create or replace` lại mỗi lần).
+- **Quy tắc bao phủ bản xuất dữ liệu:** `export_my_data()` xuất các phần cố định cộng mọi bảng trong `account_optional_tables()` (bản hiện hành nằm trong `20261016000300_personal_vocab.sql`: `study_sessions`, `activity_days`, `user_badges`, `analytics_events`, `exam_attempts`, `exam_answers`, `content_reports`, `notification_prefs`, `notifications`, `personal_word_lists`, `personal_words`, `personal_vocab_imports`). Test `supabase/tests/account_export_coverage.test.sql` fail khi có bảng public mới có cột `user_id` mà không được xuất và cũng không nằm trong danh sách loại trừ có lý do. Thêm bảng người dùng mới thì phải thêm vào `account_optional_tables()` bằng một migration mới (hàm này được `create or replace` lại mỗi lần).
 - **`push_subscriptions` không nằm trong bản xuất** (loại trừ có chủ đích trong test trên, cùng `account_export_requests` và `staff_roles`): endpoint và khoá của thiết bị là thông tin xác thực, không có giá trị học tập; bị xoá cùng tài khoản.
 - **Điểm thi TOPIK/CEFR chỉ là luyện tập trừ khi `scoring.verified`:** thang điểm là dữ liệu có phiên bản trong từng đề (`scoring` trong `content/exams/**`, schema `examScoringSchema`). Mọi đề mang nhãn "Bài luyện mô phỏng — không phải đề thi chính thức"; khi `scoring_verified = false` kết quả hiện cảnh báo chưa đối chiếu (`UNVERIFIED_SCORING_LABEL`) và ghi "Nguồn thang điểm". Mini mock được quy đổi tuyến tính và gắn nhãn "quy đổi tham khảo". CEFR không quy đổi điểm. Hiện hai đề TOPIK có `verified: true`, đề CEFR A2 có `verified: false`. Chỉ đổi `verified` sau khi người duyệt đối chiếu quy chế hiện hành.
+- **Luyện thi tính vào chuỗi ngày nhưng không cho XP (`20261016000100_exam_activity.sql`, test `exam_activity.test.sql`):** mỗi lượt thi được cộng vào `activity_days` đúng một lần khi đóng, cờ `exam_attempts.activity_counted_at`; thời gian hoạt động tính từ khoảng cách giữa các lần lưu đáp án (mỗi khoảng tối đa 120 giây); XP, bài học và lượt ôn đều 0. Backfill chạy ngay trong migration.
+- **Từ vựng cá nhân tách khỏi nội dung chuẩn và khỏi tiến độ:** bảng riêng, RLS chủ sở hữu, ghi qua RPC; ôn dùng lại `srs_next` nhưng không chạm `review_cards`/`review_logs`/mastery/chuỗi ngày/huy hiệu/analytics, nên không thể bơm XP hay mastery từ nội dung tự nhập (thiết kế: `docs/superpowers/specs/2026-10-14-linguo-personal-vocab-design.md`). Có đủ giới hạn ở `PERSONAL_VOCAB_LIMITS`.
+- **Đóng vai AI không lưu hội thoại phía server:** `roleplay_turn` không cache, mỗi lượt trừ một lượt quota, vai và mục tiêu lấy từ `shared/ai/roleplay-catalog.ts` (không từ client), hội thoại chỉ ở state React và `sessionStorage` của tab, tối đa 12 lượt (`ROLEPLAY_MAX_TURNS`).
+- **Luyện nói riêng tư:** âm thanh chỉ trong bộ nhớ trình duyệt, không tải lên; bản chép (Web Speech API) là tuỳ chọn và có thể sai; chỉ điểm tự đánh giá 1–3 được giữ trong `localStorage`; không suy ra trình độ từ một bản ghi. CSP `media-src` có `blob:` chỉ để phát lại bản ghi (`apps/web/build/csp.ts`).
+- **Gia cố nhắc học và push (`20261016000400_notify_hardening.sql`):** danh sách cho phép host push (chống SSRF qua `notify-dispatch`), gửi thử lại trong 4 giờ, cửa sổ bù 60 phút, nội dung push chung chung (không tên bài, số thẻ), xoá subscription chỉ khi push service từ chối danh tính của ta nhiều lần (401/403, 10 lần) hoặc trả 404/410, `purge_notifications` chạy mỗi đêm trong `notify-dispatch`, đăng xuất giải phóng subscription của thiết bị, bấm thông báo không bao giờ điều hướng cửa sổ đang mở. Chi tiết: FEATURES mục 9, DEPLOY mục "Nhắc học & Web Push".
+- **Gia cố quản trị nội dung (`20261016000500_content_admin_hardening.sql`):** báo lỗi trùng chỉ khi cùng lý do, cùng phiên bản và chưa xử lý; import không tự duyệt/xuất bản dòng còn báo lỗi chưa xử lý; không gỡ hay hạ admin cuối cùng; nhật ký quản trị chỉ thêm; đọc đáp án để lại nhật ký.
+- **Hiệu năng là ràng buộc của CI:** route lazy, `LazyMotion` strict (`import { m as motion } from 'motion/react'`), chunk vendor và ngân sách `pnpm check:bundle-size` (chunk vào 33 KiB gzip, tải đầu 240 KiB gzip). `web/app/zod-config.ts` (zod `jitless`) phải nằm trong chunk `v-zod`: zod 4 thử `Function('')` và CSP không cho `'unsafe-eval'`, nên thiếu cờ này trình duyệt báo vi phạm CSP. Chi tiết và cách chạy: FEATURES mục 18.
+- **Quy ước UX và truy cập:** tên trang ở `web/lib/route-titles.ts` + `RouteAnnouncer` (tiêu đề, thông báo, focus); token `--input-border` và `DISABLED_NEUTRAL*`; không bao giờ hiện mã lỗi thô cho người học (`GENERIC_ERROR_MESSAGE`); trang Học tập gợi ý bài tiếp theo; phiên học có hoàn tác khi bỏ qua; trang bài học có tên bài là `h1` và bộ đếm câu `aria-live`, thoát chỉ hỏi khi còn câu chưa gửi (FEATURES mục 2, 5, 18).
 - **Tính năng AI luôn ghi là phản hồi luyện tập:** nhận xét bài viết hiện "Phản hồi luyện tập — không phải điểm chính thức" (`WRITING_FEEDBACK_LABEL`); AI không sinh câu hỏi trong lúc thi; log AI chỉ lưu siêu dữ liệu, không lưu nội dung câu hỏi hay bài viết.
 - **Ước lượng thời gian học là tham khảo:** bảng `level_reference_hours` có `reviewed = false` và giao diện luôn nói rõ.
 - **Nội dung không sửa trong database:** nguồn sự thật là `content/` trong repo; trang quản trị chỉ xem trước, đổi trạng thái duyệt và xử lý báo lỗi. Import lại không hạ trạng thái một dòng không đổi nội dung (`000420_import_keep_published.sql`).
@@ -47,11 +71,13 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 ## 3. Giới hạn đã biết
 
 - Nghe: chưa có file audio thật. Toàn bộ `audio_asset_id` trong `content/` là `null`; bài `listen` và phần nghe của đề dùng `fallback_text`/`script` đọc bằng giọng máy (TTS của trình duyệt, `web/features/exam/tts.ts`). Kiểm tra đầu vào tự bỏ qua kỹ năng nghe (`not_supported`).
-- Luyện nói, nhận dạng giọng nói, viết/nói trong kiểm tra đầu vào: chưa làm, và không bao giờ được suy ra trình độ từ chúng.
+- Luyện nói đã có (`/app/luyen-noi`) nhưng không chấm tự động: chỉ tự đánh giá, và bản chép giọng nói phụ thuộc Web Speech API của trình duyệt (không có ở mọi trình duyệt, có thể gửi âm thanh tới dịch vụ của hãng trình duyệt). Viết/nói không có trong kiểm tra đầu vào và không bao giờ được suy ra trình độ từ chúng.
+- Đóng vai AI: mỗi lượt tốn một lượt quota AI ngày (mặc định 20), nên một buổi 12 lượt có thể dùng gần hết quota; hội thoại mất khi đóng tab.
+- Từ vựng cá nhân: chưa có OCR, chưa chia sẻ danh sách, chưa chấm offline (lỗi mạng cho chấm lại, an toàn nhờ idempotency key).
 - Gemini gói miễn phí: hết quota ngày làm AI tạm ngừng cho tới khi Google reset; circuit breaker nằm trong bộ nhớ từng instance (RUNBOOK mục 6).
-- Hai RPC dọn dữ liệu `purge_analytics()` (180 ngày) và `purge_notifications()` (90 ngày) **chưa được lên lịch**: workflow Maintenance chỉ gọi `purge_expired_data` (không gồm hai hàm này). Trang quyền riêng tư (`web/features/account/retention.ts`) hiện chỉ cam kết thời hạn của dữ liệu AI. Cần nối vào `purge_expired_data` bằng migration mới hoặc chạy tay định kỳ (DEPLOY.md, *Bảo trì dữ liệu*).
+- `purge_notifications()` (90 ngày) đã được lên lịch: `notify-dispatch` gọi mỗi đêm (giờ UTC 20). Còn `purge_analytics()` (180 ngày) **chưa được lên lịch**: workflow Maintenance chỉ gọi `purge_expired_data`, không gồm hàm này. Trang quyền riêng tư (`web/features/account/retention.ts`) hiện chỉ cam kết thời hạn của dữ liệu AI. Cần nối `purge_analytics` vào `purge_expired_data` bằng migration mới hoặc chạy tay định kỳ (DEPLOY.md, *Bảo trì dữ liệu*).
 - Maintenance và Deploy chờ duyệt vì environment `production` bật Required reviewers; run Maintenance theo lịch không được duyệt sẽ hết hạn (dữ liệu chỉ dọn muộn hơn).
-- Notify dựa vào cron của GitHub Actions: lượt đến muộn quá cửa sổ 15 phút làm lỡ khung nhắc đó.
+- Notify dựa vào cron của GitHub Actions, vốn hay chạy muộn hoặc bỏ lượt: nhắc vẫn đến hạn trong 60 phút kể từ đầu khung (cửa sổ bù), quá khung đó thì lỡ khung nhắc đó.
 - CSP đặt bằng thẻ `<meta>` (GitHub Pages không cho đặt header): `frame-ancestors`, báo cáo vi phạm không có tác dụng (RUNBOOK mục 7).
 - Nội dung chưa qua giáo viên bản ngữ (mục 1).
 - Test pgTAP và e2e chạy trong CI; local cần Docker (SETUP.md). Chưa có test trên thiết bị thật tự động: dùng `docs/MOBILE-QA.md`.
@@ -59,11 +85,60 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 
 ## 4. Việc còn mở
 
-- **Đóng vai hội thoại bằng AI (roleplay):** có trong PRD (`roleplay`, `POST /api/ai/roleplay/turn`) nhưng spec 5 loại khỏi phạm vi; chưa có tác vụ nào trong `AI_TASKS`.
-- **Bài nghe có audio thật** (thu âm hoặc TTS phía server, lưu `audio_asset_id`): schema và player đã có chỗ cho `audio_asset_id`, nội dung chưa dùng.
-- **OCR từ tài liệu:** không nằm trong kế hoạch; PRD chỉ nói "sau import danh sách từ cá nhân/CSV mới xem xét OCR" (mục P2).
-- Các mục P2 khác của PRD (nhận dạng giọng nói, công cụ giáo viên): chưa có spec.
-- Lên lịch cho `purge_analytics`/`purge_notifications` (mục 3).
+- **Bài nghe có audio thật:** cần một nguồn audio có giấy phép (thu âm hoặc TTS phía server rồi lưu `audio_asset_id`). Schema và player đã có chỗ cho `audio_asset_id`, nội dung chưa dùng; cho đến khi có, nghe dùng TTS của trình duyệt.
+- **Ngôn ngữ thứ ba:** chưa có; cần ngôn ngữ mới trong `content/`, trong danh mục kịch bản đóng vai (`ROLEPLAY_LEVELS`), tài liệu luyện nói và các CHECK `en|ko` của schema. Chưa có spec.
+- **OCR từ tài liệu:** không nằm trong kế hoạch; PRD chỉ nói "sau import danh sách từ cá nhân/CSV mới xem xét OCR" (mục P2). Import CSV đã có (FEATURES mục 17).
+- Các mục P2 khác của PRD (công cụ giáo viên): chưa có spec.
+- Lên lịch cho `purge_analytics` (mục 3).
 - Giao diện cho `admin_grant_role` nếu cần quản lý nhiều nhân sự.
 - Duyệt nội dung và thang điểm đề thi bởi người có chuyên môn; đối chiếu `scoring` của đề CEFR.
 - Thử khôi phục backup và rollback web theo RUNBOOK mục 1–3 và ghi vào "Nhật ký diễn tập".
+
+## 5. Danh sách migration
+
+Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 34 file và cả 34 đã được ghi trong `migrations-applied.json`, tức đã được Deploy áp lên production và ghi nhận. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
+
+```bash
+for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
+```
+
+| Số | Tên | Nội dung | Đã ghi trong `migrations-applied.json` |
+|---|---|---|---|
+| `20261013000100` | `foundation` | profiles, user_preferences, RLS nền | Có |
+| `20261013000200` | `learning_paths` | lộ trình, ước lượng thời gian | Có |
+| `20261014000100` | `content` | chương trình, bài, bài tập, import nội dung | Có |
+| `20261014000200` | `lesson_runs` | lượt học, chấm bài tập | Có |
+| `20261014000300` đến `000330` | `reviews`, `reviews_fsrs`, `reviews_queue`, `reviews_grade` | ôn tập FSRS (4 file) | Có |
+| `20261014000400` đến `000430` | `diagnostic`, `diagnostic_engine`, `diagnostic_rpc`, `diagnostic_import` | kiểm tra đầu vào (4 file) | Có |
+| `20261014000500` | `ai_gateway` | cache, quota, log, báo cáo AI | Có |
+| `20261014000600` | `spec2_sync` | vá `import_content_bundle` (migration `000100` đã bị sửa sau deploy) | Có |
+| `20261014000900` | `session_planner` | kế hoạch phiên học | Có |
+| `20261014000910` | `account_data` | xuất/xoá dữ liệu, `purge_expired_data` | Có |
+| `20261015000100` | `progress` | `activity_days`, huy hiệu, dashboard tiến độ | Có |
+| `20261015000110` | `analytics` | analytics nội bộ | Có |
+| `20261015000200` | `exams` | luyện thi TOPIK/CEFR | Có |
+| `20261015000300` | `reminders` | nhắc học, thông báo, push | Có |
+| `20261015000400` | `content_reports` | báo lỗi nội dung | Có |
+| `20261015000410` | `admin` | khu quản trị, vai trò, nhật ký | Có |
+| `20261015000420` | `import_keep_published` | import không hạ trạng thái | Có |
+| `20261015000500` | `timezone_cooldown` | đổi múi giờ tối đa một lần mỗi 24 giờ | Có |
+| `20261015000600` | `review_grade_guard` | `grade_review` áp bộ lọc hàng đợi | Có |
+| `20261015000610` | `export_exam_data` | bản xuất gồm dữ liệu thi | Có |
+| `20261015000700` | `ai_review_writing` | tác vụ `review_writing` | Có |
+| `20261015000800` | `answer_integrity` | `client_at` và phiên bản đáp án | Có |
+| `20261016000100` | `exam_activity` | luyện thi tính vào chuỗi ngày, backfill | Có |
+| `20261016000200` | `ai_more_tasks` | `analyze_sentence`, `summarize_session`, `plan_review` | Có |
+| `20261016000300` | `personal_vocab` | từ vựng cá nhân | Có |
+| `20261016000400` | `notify_hardening` | gia cố nhắc học và push | Có |
+| `20261016000500` | `content_admin_hardening` | gia cố quản trị nội dung, `client_at` 48 giờ | Có |
+| `20261016000600` | `ai_roleplay` | tác vụ `roleplay_turn` | Có |
+
+Migration mới phải có số lớn hơn `20261016000600` (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
+
+## 6. Vận hành local và nhiều phiên làm việc song song
+
+- **Chỉ một stack Supabase local tại một thời điểm** (SETUP.md, *Docker và Supabase local*); dùng stack gọn khi chỉ cần test database.
+- **Cổng bị Windows giữ trước:** `supabase/config.toml` đã dùng dải 553xx vì Windows (Hyper-V/WSL) giữ các dải cổng TCP và `supabase start` không bind được. Trên máy phát triển hiện tại, dải 584xx cũng bị chặn (theo ghi nhận của người vận hành máy này, không kiểm chứng được từ repo): khi cần cổng riêng cho một stack hoặc server phụ, chọn trong dải 574xx hoặc 575xx. Xem các dải đang bị giữ bằng `netsh interface ipv4 show excludedportrange protocol=tcp`.
+- **Khoá database cho các phiên song song:** các phiên agent dùng chung một Docker nên quy ước tạm khoá bằng thư mục: `mkdir /c/Users/TUYEN/linguo-db.lock` (thành công = giữ khoá; lỗi vì đã tồn tại = có phiên khác đang dùng, chờ), chạy test database, rồi `rmdir /c/Users/TUYEN/linguo-db.lock` khi xong. Đây là quy ước của máy phát triển này, không phải cơ chế của repo.
+- **Smoke production:** workflow `.github/workflows/smoke.yml` chạy `scripts/smoke.mjs` sau mỗi Deploy xanh, hằng ngày 02:30 UTC và khi chạy tay; cần repository variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` (tuỳ chọn `VITE_SITE_URL`). Hướng dẫn và cách đọc kết quả: [RUNBOOK.md](../RUNBOOK.md#kiểm-tra-sau-deploy-smoke).
+- **Environment của workflow Notify:** environment `notify` cần secret `NOTIFY_CRON_SECRET` và repository variable `VITE_SUPABASE_URL` (thiếu một trong hai thì run cảnh báo và thoát 0); environment `production` cần secrets `NOTIFY_CRON_SECRET`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` và repository variable `VITE_VAPID_PUBLIC_KEY` (DEPLOY.md, *Tổng hợp secrets và biến*).

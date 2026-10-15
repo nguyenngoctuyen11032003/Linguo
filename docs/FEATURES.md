@@ -72,7 +72,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Database:** `20261014000900_session_planner.sql` (`get_session_inputs`, `get_today_session`, `save_session_plan`, `reorder_session`, `update_session_item`, `finish_session`, `session_recap`, bảng `study_sessions`).
 - **Test:** `supabase/tests/session_planner.test.sql`; `shared/planner/plan.test.ts`, `contract.test.ts`; `web/features/session/*.test.ts(x)`, `web/routes/app/session/session.test.tsx`; e2e `session.spec.ts`, `session-return.spec.ts`.
 
-## 6. Gia sư AI (Spec 5; thêm `review_writing` ở Spec 9, bốn tác vụ nữa ở Spec 8.2)
+## 6. Gia sư AI (Spec 5; thêm `review_writing` ở Spec 9, bốn tác vụ nữa ở PRD §8.2)
 
 - **Route:** `/app/gia-su`; nút "Giải thích AI" trong bài học, thẻ ôn, phản hồi bài tập và bài viết trong đề thi.
 - **Web:** `web/routes/app/tutor/`, `web/components/ai/` (sheet, modal, quota chip, fallback khi AI lỗi, báo cáo câu trả lời AI, hộp thoại thông báo quyền riêng tư), `web/features/ai-tutor/`.
@@ -156,7 +156,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Bảo mật web đi kèm:** CSP chèn lúc build (`apps/web/build/csp.ts`), `pnpm check:bundle`, gitleaks, kiểm tra biến `VITE_*` (`scripts/check-public-env.mjs`); chi tiết ở [RUNBOOK.md](RUNBOOK.md) mục 7.
 - **Test:** `web/routes/legal/legal.test.tsx`, `web/routes/app/settings/ai-privacy-section.test.tsx`; e2e `hardening.spec.ts` (trang pháp lý, axe), `csp.spec.ts`, `a11y.spec.ts`, `a11y-routes.spec.ts`.
 
-## 15. Luyện nói (Spec 6.9)
+## 15. Luyện nói (PRD §6.9)
 
 - **Route:** `/app/luyen-noi` (có trong thanh điều hướng); chế độ "Nhắc lại câu", "Trả lời mở", "Đóng vai" (kịch bản soạn sẵn trong `web/features/speaking/content.ts`, không gọi AI; đóng vai với AI ở mục 16).
 - **Web:** `web/routes/app/speaking/` (`SpeakingPage.tsx`, `RepeatMode.tsx`, `OpenMode.tsx`, `RolePlayMode.tsx`, `PracticePanel.tsx`), `web/features/speaking/`. Câu luyện lấy từ bài học trong lộ trình (`useSpeakingMaterial.ts`, tối đa `LESSON_CHOICES_MAX` = 30 bài); không có thì dùng bộ câu mẫu `FALLBACK_SENTENCES`.
@@ -167,7 +167,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Database:** không có migration riêng.
 - **Test:** `web/features/speaking/*.test.ts(x)`, `web/routes/app/speaking/speaking.test.tsx`; e2e `speaking.spec.ts` (gồm kiểm không có lời gọi tải lên Supabase storage).
 
-## 16. Đóng vai hội thoại với AI (Spec 8.2 #6)
+## 16. Đóng vai hội thoại với AI (PRD §8.2 #6)
 
 - **Route:** `/app/dong-vai` (tiêu đề "Đóng vai với AI"): chọn kịch bản, trò chuyện, nhận xét sửa lỗi và tổng kết cuối buổi.
 - **Danh mục kịch bản cố định:** `shared/ai/roleplay-catalog.ts` (bảy kịch bản cho mỗi ngôn ngữ en/ko: `cafe_order`, `ask_directions`, `hotel_checkin`, `doctor_visit`, `job_interview`, `shopping_bargain`, `introductions`). Yêu cầu `roleplay_turn` chỉ mang khoá kịch bản; vai và mục tiêu do Edge Function lấy từ chính file này, không bao giờ từ chữ của client (chống prompt injection). File được sao nguyên văn sang `supabase/functions/_shared/roleplay-catalog.ts` bởi `pnpm ai:contract`.
