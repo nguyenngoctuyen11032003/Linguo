@@ -1211,6 +1211,11 @@ isOneToOne: false
               "active_ms": number,"n_answers": number
             }[]
                            },
+"exam_attempt_activity_days":
+{ Args: { "p_attempt_id": string }; Returns: {
+              "active_ms": number,"local_day": string,"n_answers": number
+            }[]
+                           },
 "exam_attempt_json":
 { Args: { "p_attempt_id": string }; Returns: Json
                            },
