@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/Input';
 import { PasswordInput } from '@/components/ui/PasswordInput';
 import { authErrorMessage } from '@/features/auth/error-map';
 import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
-import { safeNext } from '@/features/auth/safe-next';
+import { safeNext, withNext } from '@/features/auth/safe-next';
 import { requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert, textLinkClass } from './AuthCard';
 import { GoogleButton } from './GoogleButton';
@@ -56,7 +56,7 @@ export function SignInPage() {
       footer={
         <>
           Chưa có tài khoản?{' '}
-          <Link to="/dang-ky" className={textLinkClass}>
+          <Link to={withNext('/dang-ky', next)} className={textLinkClass}>
             Đăng ký miễn phí
           </Link>
         </>

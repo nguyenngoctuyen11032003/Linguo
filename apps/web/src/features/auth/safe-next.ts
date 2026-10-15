@@ -9,3 +9,11 @@ export function safeNext(next: string | null | undefined, fallback = '/app'): st
   if (UNSAFE_CHARS.test(next) || AUTH_ROUTES.test(next)) return fallback;
   return next;
 }
+
+/**
+ * `path` carrying `?next=` unless `next` is the default destination: moving between the auth screens (sign-in ⇄
+ * sign-up, email confirmation link) must not lose where the learner was going, e.g. a class invite link.
+ */
+export function withNext(path: string, next: string): string {
+  return next === '/app' ? path : `${path}?next=${encodeURIComponent(next)}`;
+}

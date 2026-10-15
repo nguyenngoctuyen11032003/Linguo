@@ -1,18 +1,22 @@
 import { useState, type FormEvent } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { Link, useNavigate, useSearchParams } from 'react-router';
 import { fieldErrors, signUpSchema } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
 import { PasswordInput } from '@/components/ui/PasswordInput';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { safeNext, withNext } from '@/features/auth/safe-next';
 import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
 import { authRedirect, requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert, textLinkClass } from './AuthCard';
 import { GoogleButton } from './GoogleButton';
 
 export function SignUpPage() {
+  const [params] = useSearchParams();
   const navigate = useNavigate();
+  // Kept from the sign-in screen (e.g. a class invite link) through email confirmation and Google sign-in.
+  const next = safeNext(params.get('next'));
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -37,15 +41,15 @@ export function SignUpPage() {
       const { data, error } = await requireSupabase().auth.signUp({
         email: parsed.data.email,
         password: parsed.data.password,
-        options: { emailRedirectTo: authRedirect('/auth/callback'), data: { display_name: parsed.data.displayName } },
+        options: { emailRedirectTo: authRedirect(withNext('/auth/callback', next)), data: { display_name: parsed.data.displayName } },
       });
       if (error) {
         setFormError(authErrorMessage(error));
         return;
       }
       // With email confirmation on, there is no session yet (also when the email already exists — Supabase hides that).
-      if (data.session) navigate('/app', { replace: true });
-      else navigate('/kiem-tra-email', { replace: true, state: { email: parsed.data.email } });
+      if (data.session) navigate(next, { replace: true });
+      else navigate('/kiem-tra-email', { replace: true, state: { email: parsed.data.email, next } });
     } catch (error) {
       setFormError(authErrorMessage(error));
     } finally {
@@ -60,13 +64,13 @@ export function SignUpPage() {
       footer={
         <>
           Đã có tài khoản?{' '}
-          <Link to="/dang-nhap" className={textLinkClass}>
+          <Link to={withNext('/dang-nhap', next)} className={textLinkClass}>
             Đăng nhập
           </Link>
         </>
       }
     >
-      <GoogleButton next="/app" onError={setFormError} />
+      <GoogleButton next={next} onError={setFormError} />
       <form ref={formRef} noValidate onSubmit={onSubmit} className="space-y-4">
         {formError && <FormAlert>{formError}</FormAlert>}
         <FormField label="Tên hiển thị (không bắt buộc)" error={errors.displayName}>

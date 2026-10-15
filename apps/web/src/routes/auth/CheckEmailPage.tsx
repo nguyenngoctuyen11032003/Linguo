@@ -3,6 +3,7 @@ import { MailCheck } from 'lucide-react';
 import { Link, useLocation } from 'react-router';
 import { Button } from '@/components/ui/Button';
 import { authErrorMessage } from '@/features/auth/error-map';
+import { safeNext, withNext } from '@/features/auth/safe-next';
 import { authRedirect, requireSupabase } from '@/lib/supabase';
 import { AuthCard, FormAlert, textLinkClass } from './AuthCard';
 
@@ -10,7 +11,10 @@ const COOLDOWN_S = 60;
 
 export function CheckEmailPage() {
   const location = useLocation();
-  const email = (location.state as { email?: string } | null)?.email;
+  const state = location.state as { email?: string; next?: string } | null;
+  const email = state?.email;
+  // The resent link must lead where the first one did (see SignUpPage).
+  const next = safeNext(state?.next);
   const [cooldown, setCooldown] = useState(COOLDOWN_S);
   const [message, setMessage] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null);
   const [loading, setLoading] = useState(false);
@@ -28,7 +32,7 @@ export function CheckEmailPage() {
       const { error } = await requireSupabase().auth.resend({
         type: 'signup',
         email,
-        options: { emailRedirectTo: authRedirect('/auth/callback') },
+        options: { emailRedirectTo: authRedirect(withNext('/auth/callback', next)) },
       });
       if (error) setMessage({ tone: 'error', text: authErrorMessage(error) });
       else {

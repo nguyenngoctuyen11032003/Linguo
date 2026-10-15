@@ -82,6 +82,11 @@ describe('SignInPage', () => {
     expect(mocks.auth.signInWithPassword).toHaveBeenCalledWith({ email: 'a@b.vn', password: 'matkhau123' });
   });
 
+  it('keeps next on the sign-up link', () => {
+    at('/dang-nhap?next=%2Fapp%2Fcai-dat', '/dang-nhap', <SignInPage />);
+    expect(screen.getByRole('link', { name: 'Đăng ký miễn phí' })).toHaveAttribute('href', '/dang-ky?next=%2Fapp%2Fcai-dat');
+  });
+
   it('shows a Vietnamese error on bad credentials', async () => {
     mocks.auth.signInWithPassword.mockResolvedValue({ data: {}, error: { code: 'invalid_credentials' } });
     at('/dang-nhap', '/dang-nhap', <SignInPage />);
@@ -120,6 +125,26 @@ describe('SignUpPage', () => {
       password: 'matkhau123',
       options: { emailRedirectTo: 'http://localhost:5173/auth/callback', data: { display_name: 'Minh Anh' } },
     });
+  });
+
+  it('carries next into the confirmation link, the sign-in link and an immediate session', async () => {
+    mocks.auth.signUp.mockResolvedValue({ data: { session: null, user: { id: 'u1' } }, error: null });
+    at('/dang-ky?next=%2Fapp%2Fcai-dat', '/dang-ky', <SignUpPage />);
+    expect(screen.getByRole('link', { name: 'Đăng nhập' })).toHaveAttribute('href', '/dang-nhap?next=%2Fapp%2Fcai-dat');
+    await userEvent.type(screen.getByLabelText('Email'), 'a@b.vn');
+    await userEvent.type(screen.getByLabelText('Mật khẩu'), 'matkhau123');
+    await userEvent.click(screen.getByRole('button', { name: 'Tạo tài khoản' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent('/kiem-tra-email'));
+    expect(mocks.auth.signUp.mock.calls[0]?.[0].options.emailRedirectTo).toBe('http://localhost:5173/auth/callback?next=%2Fapp%2Fcai-dat');
+  });
+
+  it('goes to next when sign-up returns a session', async () => {
+    mocks.auth.signUp.mockResolvedValue({ data: { session: { access_token: 't' }, user: { id: 'u1' } }, error: null });
+    at('/dang-ky?next=%2Fapp%2Fcai-dat', '/dang-ky', <SignUpPage />);
+    await userEvent.type(screen.getByLabelText('Email'), 'a@b.vn');
+    await userEvent.type(screen.getByLabelText('Mật khẩu'), 'matkhau123');
+    await userEvent.click(screen.getByRole('button', { name: 'Tạo tài khoản' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent('/app/cai-dat'));
   });
 });
 
@@ -273,19 +298,19 @@ describe('ResetPasswordPage', () => {
 });
 
 describe('CheckEmailPage', () => {
-  function renderWithEmail() {
+  function renderWithEmail(next?: string) {
     return renderWithProviders(
       <Routes>
-        <Route path="/" element={<Navigate to="/kiem-tra-email" replace state={{ email: 'a@b.vn' }} />} />
+        <Route path="/" element={<Navigate to="/kiem-tra-email" replace state={{ email: 'a@b.vn', next }} />} />
         <Route path="/kiem-tra-email" element={<CheckEmailPage />} />
       </Routes>,
       signedOut,
     );
   }
 
-  async function waitForResend() {
+  async function waitForResend(next?: string) {
     vi.useFakeTimers({ shouldAdvanceTime: true });
-    renderWithEmail();
+    renderWithEmail(next);
     // The countdown re-arms a 1s timer after every render, so step it one tick at a time.
     for (let i = 0; i < 60; i++) {
       await act(async () => {
@@ -313,5 +338,20 @@ describe('CheckEmailPage', () => {
     });
     expect(await screen.findByText('Đã gửi lại email xác minh.')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Gửi lại sau \d+s/ })).toBeDisabled();
+    expect(mocks.auth.resend).toHaveBeenCalledWith({
+      type: 'signup',
+      email: 'a@b.vn',
+      options: { emailRedirectTo: 'http://localhost:5173/auth/callback' },
+    });
+  });
+
+  it('resends a link that leads to the same next as the first one', async () => {
+    const button = await waitForResend('/app/cai-dat');
+    mocks.auth.resend.mockResolvedValue({ data: {}, error: null });
+    await act(async () => {
+      button.click();
+    });
+    await screen.findByText('Đã gửi lại email xác minh.');
+    expect(mocks.auth.resend.mock.calls[0]?.[0].options.emailRedirectTo).toBe('http://localhost:5173/auth/callback?next=%2Fapp%2Fcai-dat');
   });
 });
