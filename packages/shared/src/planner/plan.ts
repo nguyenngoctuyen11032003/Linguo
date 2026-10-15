@@ -304,13 +304,22 @@ function finalize(total: number, drafts: Draft[], focus: string, backlog: boolea
   };
 }
 
-/** Keeps the highest-priority activities that fit in `minutes`; trims the last one if needed. */
+/**
+ * Keeps the highest-priority pending activities that fit in `minutes`; trims the last one if needed. Activities
+ * already done or skipped (a session in progress) stay as they are and do not use up the new budget: "Rút gọn còn
+ * 10 phút" means 10 more minutes of work, not 10 minutes including what is already behind the learner.
+ */
 export function shortenPlan(plan: SessionPlan, minutes: number): SessionPlan {
   const total = clampMinutes(minutes);
   const byPriority = plan.activities
     .map((a, i) => ({ a, i }))
+    .filter(({ a }) => a.status === 'pending')
     .sort((x, y) => y.a.priority - x.a.priority || x.i - y.i);
   const kept = new Map<number, SessionActivity>();
+  plan.activities.forEach((a, i) => {
+    if (a.status !== 'pending') kept.set(i, a);
+  });
+  const finishedMinutes = [...kept.values()].reduce((sum, a) => sum + a.minutes, 0);
   let remaining = total;
   for (const { a, i } of byPriority) {
     if (remaining < 1) break;
@@ -327,5 +336,5 @@ export function shortenPlan(plan: SessionPlan, minutes: number): SessionPlan {
     remaining = 0;
   }
   const activities = [...kept.entries()].sort(([x], [y]) => x - y).map(([, a]) => a);
-  return { ...plan, minutes: total, activities };
+  return { ...plan, minutes: clampMinutes(finishedMinutes + total), activities };
 }

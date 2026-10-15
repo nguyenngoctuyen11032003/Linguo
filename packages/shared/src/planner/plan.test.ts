@@ -401,6 +401,27 @@ describe('shortenPlan', () => {
     expect(shortenPlan(p, 30).activities).toEqual(p.activities);
   });
 
+  it('keeps finished activities of a session in progress and gives the new minutes to pending ones', () => {
+    const p = planSession(base(), 60);
+    // The learner already did the top activity and skipped the second one.
+    const started: SessionPlan = {
+      ...p,
+      activities: p.activities.map((a, i) =>
+        i === 0 ? { ...a, status: 'done', seconds_spent: 300 } : i === 1 ? { ...a, status: 'skipped' } : a,
+      ),
+    };
+    const finished = started.activities.slice(0, 2);
+    const finishedMinutes = finished.reduce((s, a) => s + a.minutes, 0);
+    const s = shortenPlan(started, 10);
+    expect(sessionPlanSchema.safeParse(s).success).toBe(true);
+    expect(s.activities.slice(0, 2)).toEqual(finished);
+    const pending = s.activities.filter((a) => a.status === 'pending');
+    expect(pending.length).toBeGreaterThan(0);
+    expect(pending.reduce((sum, a) => sum + a.minutes, 0)).toBe(10);
+    expect(s.minutes).toBe(finishedMinutes + 10);
+    expect(total(s)).toBeLessThanOrEqual(s.minutes);
+  });
+
   it('never returns an empty plan and is deterministic', () => {
     const p = planSession(base(), 120);
     for (const m of [1, 5, 10]) {

@@ -212,7 +212,9 @@ function PathSession() {
     if (saved) {
       setSession(saved);
       setChosen(null);
-      setAnnouncement(`Đã rút gọn phiên còn ${saved.plan.minutes} phút.`);
+      // Finished activities stay in the plan, so announce the minutes still to do, not the plan's total.
+      const left = saved.plan.activities.filter((a) => a.status === 'pending').reduce((sum, a) => sum + a.minutes, 0);
+      setAnnouncement(`Đã rút gọn phiên còn ${left} phút.`);
     }
   }
 
