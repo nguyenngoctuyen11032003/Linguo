@@ -55,7 +55,7 @@ function lazyPage<K extends string>(load: () => Promise<Record<K, ComponentType>
  * elements but cannot add children, so the child paths are listed here (null = index) and kept in sync with
  * `adminRoutes` by a unit test; every element still comes from routes/admin/admin-routes.tsx.
  */
-export const ADMIN_CHILD_PATHS = [null, 'noi-dung', 'noi-dung/:kind/:id', 'bao-loi', 'nguon', 'thong-ke', 'nhat-ky'] as const;
+export const ADMIN_CHILD_PATHS = [null, 'noi-dung', 'noi-dung/:kind/:id', 'bao-loi', 'nguon', 'thong-ke', 'nhat-ky', 'nhan-su'] as const;
 const loadAdmin = () => import('@/routes/admin/admin-routes');
 
 const adminRoute: RouteObject = {
