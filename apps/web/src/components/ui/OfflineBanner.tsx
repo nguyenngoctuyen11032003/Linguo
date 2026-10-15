@@ -16,7 +16,7 @@ export function OfflineBanner() {
           <WifiOff aria-hidden className="size-4 shrink-0" />
           <span className="max-[26rem]:sr-only">Bạn đang ngoại tuyến — tiến độ sẽ được lưu khi có mạng</span>
           <span aria-hidden="true" className="hidden max-[26rem]:inline">
-            Đang ngoại tuyến — sẽ tự lưu khi có mạng
+            Ngoại tuyến — sẽ tự lưu khi có mạng
           </span>
         </div>
       )}
