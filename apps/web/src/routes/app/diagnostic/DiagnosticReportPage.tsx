@@ -9,6 +9,7 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { useDiagnosticRun } from '@/features/diagnostic/useDiagnosticRun';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 import { CONFIDENCE_LABELS, formatDate, levelLabel, missingReason, rangeLabel, SKILL_LABELS } from './labels';
 
 const HOME = '/app';
@@ -83,9 +84,12 @@ interface PlacementProps {
   acceptError: string | null;
   /** The hook has loaded the report itself (a report passed in navigation state shows first). */
   ready: boolean;
+  /** Loading the report failed while a report from navigation state is on screen: accept cannot run until a retry. */
+  loadError: string | null;
+  onRetryLoad: () => void;
 }
 
-function Placement({ report, targetLevel, accept, acceptError, ready }: PlacementProps) {
+function Placement({ report, targetLevel, accept, acceptError, ready, loadError, onRetryLoad }: PlacementProps) {
   const navigate = useNavigate();
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<PlacementResult | null>(null);
@@ -204,8 +208,23 @@ function Placement({ report, targetLevel, accept, acceptError, ready }: Placemen
           {acceptError ?? 'Không cập nhật được trình độ. Hãy thử lại.'}
         </p>
       )}
+      {!ready && loadError !== null && (
+        <div role="alert" className="flex flex-wrap items-center justify-between gap-2 rounded-2xl bg-text/5 p-3 text-[15px]">
+          <span className="min-w-0">Chưa cập nhật được trình độ: {loadError}</span>
+          <Button variant="ghost" onClick={onRetryLoad}>
+            Thử lại
+          </Button>
+        </div>
+      )}
       <div className="grid gap-2">
-        <Button variant="accent" size="lg" block loading={busy || !ready} onClick={() => void onAccept()}>
+        <Button
+          variant="accent"
+          size="lg"
+          block
+          loading={busy || (!ready && loadError === null)}
+          disabled={!ready}
+          onClick={() => void onAccept()}
+        >
           Cập nhật trình độ lộ trình thành {levelLabel(capped)}
         </Button>
         <Button variant="ghost" size="lg" block disabled={busy} onClick={() => navigate(HOME)}>
@@ -318,6 +337,8 @@ export function DiagnosticReportPage() {
               accept={run.accept}
               acceptError={run.error}
               ready={run.status === 'report'}
+              loadError={run.status === 'error' ? (run.error ?? GENERIC_ERROR_MESSAGE) : null}
+              onRetryLoad={run.retry}
             />
           </div>
         </section>

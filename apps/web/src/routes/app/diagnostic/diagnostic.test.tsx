@@ -353,6 +353,22 @@ describe('DiagnosticReportPage', () => {
     expect(screen.getByRole('button', { name: /Cập nhật trình độ lộ trình thành B1/ })).toBeDisabled();
   });
 
+  it('offers a retry instead of an endless spinner when loading fails under a report from navigation state', async () => {
+    mocks.run = makeRun({ status: 'error', item: null, report: null, error: 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.' });
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/kiem-tra/:pathId/ket-qua" element={<DiagnosticReportPage />} />
+      </Routes>,
+      { route: { pathname: reportRoute, state: { report: REPORT } } as unknown as string },
+    );
+    const accept = screen.getByRole('button', { name: /Cập nhật trình độ lộ trình thành B1/ });
+    expect(accept).toBeDisabled();
+    expect(accept).not.toHaveAttribute('aria-busy', 'true');
+    expect(screen.getByRole('alert')).toHaveTextContent('Không kết nối được máy chủ');
+    await userEvent.click(screen.getByRole('button', { name: 'Thử lại' }));
+    expect(mocks.run.retry).toHaveBeenCalled();
+  });
+
   it('does not explain a cap when the suggestion was not capped', () => {
     renderAt(makeRun({ status: 'report', item: null, report: REPORT }), reportRoute);
     expect(
