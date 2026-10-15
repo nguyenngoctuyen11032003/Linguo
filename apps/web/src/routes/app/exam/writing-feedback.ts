@@ -6,12 +6,14 @@ import {
   type AiRequestInput,
   type ExamResult,
 } from '@linguo/shared';
+import { familyLanguage } from './components/labels';
 
 type ReviewItem = ExamResult['review'][number];
 
 /** Review items carry no level, so feedback is pitched at a typical level of the family (CEFR: the form's level). */
 export function writingFeedbackLevel(result: Pick<ExamResult, 'family' | 'cefr_sections'>): string {
   if (result.family === 'cefr') return result.cefr_sections?.[0]?.level_code ?? 'a2';
+  if (result.family === 'jlpt') return 'n3';
   return result.family === 'topik_i' ? 'topik2' : 'topik4';
 }
 
@@ -36,7 +38,7 @@ export function writingFeedbackRequest(result: ExamResult, item: ReviewItem): Ai
     .trim();
   const request: AiRequestInput = {
     task: 'review_writing',
-    language: result.family === 'cefr' ? 'en' : 'ko',
+    language: familyLanguage(result.family),
     level: writingFeedbackLevel(result),
     prompt,
     answer,

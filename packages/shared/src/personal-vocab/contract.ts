@@ -6,7 +6,7 @@ import { PERSONAL_VOCAB_LIMITS as L } from './limits';
 // import_personal_words, update/delete_personal_word, get_personal_review_queue and grade_personal_word.
 // snake_case mirrors the SQL jsonb exactly.
 
-export const PERSONAL_LANGUAGES = ['en', 'ko'] as const;
+export const PERSONAL_LANGUAGES = ['en', 'ko', 'ja'] as const;
 export type PersonalLanguage = (typeof PERSONAL_LANGUAGES)[number];
 
 /** Mirrors the Vietnamese error map in apps/web/src/features/personal-vocab/error-map.ts. */

@@ -46,7 +46,7 @@ export type CandidateLesson = z.infer<typeof candidateLessonSchema>;
 /** get_session_inputs(p_path_id) → everything the pure planner needs; no content bodies. */
 export const sessionInputsSchema = z.object({
   path_id: z.uuid(),
-  language_code: z.enum(['en', 'ko']),
+  language_code: z.enum(['en', 'ko', 'ja']),
   local_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   /** Minutes planned for today in learning_paths.weekly_minutes (Mon=0). */
   daily_goal_minutes: z.number().int().min(0),

@@ -7,7 +7,7 @@ import { buildPlanReviewRequest } from './review-plan';
 
 interface Props {
   dashboard: Pick<ProgressDashboard, 'mistakes' | 'exercise_types'>;
-  learner: { language: 'en' | 'ko'; level: string };
+  learner: { language: 'en' | 'ko' | 'ja'; level: string };
 }
 
 /** "Lập kế hoạch ôn bằng AI" next to the mistakes list; hidden when there is nothing to plan. */
