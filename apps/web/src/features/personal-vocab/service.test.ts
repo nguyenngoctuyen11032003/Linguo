@@ -48,6 +48,11 @@ describe('personal vocab service', () => {
     expect(client.rpcCalls).toEqual([['import_personal_words', { p_list_id: LIST_ID, p_rows: [{ term: 'a', meaning: 'b' }] }]]);
   });
 
+  it('rethrows a counted import failure as its error code', async () => {
+    const client = fakeClient({}, { import_personal_words: { data: { ok: false, code: 'list_full' } } });
+    await expect(importPersonalWords(client, LIST_ID, [{ term: 'a', meaning: 'b' }])).rejects.toThrow('list_full');
+  });
+
   it('reads the words of a list ordered by position', async () => {
     const word = personalWord();
     const q = fakeQuery({ data: [word] });

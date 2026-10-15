@@ -47,7 +47,13 @@ export async function importPersonalWords(
   listId: string,
   rows: readonly PersonalWordRow[],
 ): Promise<PersonalImportResult> {
-  return parse(personalImportResultSchema, await callRpc(client, 'import_personal_words', { p_list_id: listId, p_rows: rows }));
+  const data = await callRpc(client, 'import_personal_words', { p_list_id: listId, p_rows: rows });
+  // Validation failures come back as {ok: false, code} so that the server keeps counting the attempt (a raise would
+  // roll the rate-limit log back); they surface as the same error code the RPC used to raise.
+  if (data && typeof data === 'object' && 'ok' in data && data.ok === false && 'code' in data && typeof data.code === 'string') {
+    throw new Error(data.code);
+  }
+  return parse(personalImportResultSchema, data);
 }
 
 export async function fetchPersonalWords(client: AppSupabaseClient, listId: string): Promise<PersonalWord[]> {

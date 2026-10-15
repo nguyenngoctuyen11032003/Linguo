@@ -32,6 +32,8 @@ describe('cleanPersonalText / personalTermKey', () => {
   it('trims, collapses whitespace, strips invisible characters and normalises to NFC', () => {
     expect(cleanPersonalText('  a \t b\n')).toBe('a b');
     expect(cleanPersonalText('\u202ea\u200bb\ufeff')).toBe('ab');
+    expect(cleanPersonalText('a­b⁠c⁡d⁤e᠎f؜g')).toBe('abcdefg');
+    expect(cleanPersonalText('­⁠؜')).toBeNull();
     expect(cleanPersonalText('\u0001\u007f')).toBeNull();
     expect(cleanPersonalText('   ')).toBeNull();
     expect(cleanPersonalText('한'.normalize('NFD'))).toBe('한');
