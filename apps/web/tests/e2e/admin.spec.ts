@@ -40,6 +40,7 @@ test('a learner reports a lesson exercise and follows it in Settings', async ({ 
   await trigger.click();
   const dialog = page.getByRole('dialog', { name: 'Báo lỗi nội dung' });
   await expect(dialog).toBeVisible();
+  await settleAnimations(page); // the report sheet slides in with a JS-driven transform; a tap during it never became stable on slow WebKit
   await expectNoHorizontalScroll(page);
   await dialog.getByRole('radio', { name: 'Đề bài khó hiểu' }).click();
   await dialog.getByLabel('Ghi chú (không bắt buộc)').fill('Câu hỏi nên có ví dụ.');
