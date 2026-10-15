@@ -1,5 +1,5 @@
 import { type ExplainConceptOutput, explainConceptOutputSchema } from '../../../_shared/ai-contract.ts';
-import { dataField, header, lessonBlock, parseWith, type PromptModule, requireHangul, s, systemPrompt, wrongTask } from './shared.ts';
+import { dataField, header, lessonBlock, parseWith, type PromptModule, requireTargetScript, s, systemPrompt, wrongTask } from './shared.ts';
 
 const VARIANT_RULES = {
   default: 'Giải thích rõ ràng, đủ ý cho trình độ đã nêu.',
@@ -17,7 +17,7 @@ export const explainConcept: PromptModule = {
     'Giải thích một từ, cấu trúc ngữ pháp hoặc câu mà người học hỏi.',
     '`summary`: một câu tiếng Việt tóm tắt ý chính.',
     '`explanation_md`: giải thích bằng tiếng Việt (Markdown đơn giản), gồm nghĩa, cách dùng, lưu ý quan trọng.',
-    '`examples`: 2–4 ví dụ; `target` là câu bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul), `vi` là bản dịch tiếng Việt tự nhiên.',
+    '`examples`: 2–4 ví dụ; `target` là câu bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji), `vi` là bản dịch tiếng Việt tự nhiên.',
     '`common_mistakes`: tối đa 3 lỗi người Việt hay mắc, viết bằng tiếng Việt; để mảng rỗng nếu không có.',
     '`confidence`: mức độ chắc chắn của bạn (high/medium/low).',
     '`uncertainty`: nếu confidence không phải high, nêu ngắn điều bạn chưa chắc và khuyên xem lại nội dung bài học đã kiểm duyệt; nếu chắc chắn thì null.',
@@ -50,9 +50,9 @@ export const explainConcept: PromptModule = {
     const out: ExplainConceptOutput = parsed.data;
     if (out.confidence === 'low' && !out.uncertainty?.trim()) return { ok: false, error: 'uncertainty is required when confidence is low' };
     if (!out.summary.trim() || !out.explanation_md.trim()) return { ok: false, error: 'summary and explanation_md must not be empty' };
-    if (req?.language === 'ko') {
+    if (req) {
       for (const [i, ex] of out.examples.entries()) {
-        const err = requireHangul(ex.target, `examples.${i}.target`);
+        const err = requireTargetScript(req.language, ex.target, `examples.${i}.target`);
         if (err) return { ok: false, error: err };
       }
     }

@@ -9,7 +9,7 @@ export type ExerciseType = (typeof EXERCISE_TYPES)[number];
 export const EXERCISE_STAGES = ['recognition', 'recall', 'application'] as const;
 export type ExerciseStage = (typeof EXERCISE_STAGES)[number];
 
-export const ANSWER_LANGS = ['en', 'ko', 'vi'] as const;
+export const ANSWER_LANGS = ['en', 'ko', 'ja', 'vi'] as const;
 export type AnswerLang = (typeof ANSWER_LANGS)[number];
 
 export const VERDICTS = ['correct', 'almost', 'incorrect'] as const;

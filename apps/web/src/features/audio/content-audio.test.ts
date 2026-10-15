@@ -40,7 +40,8 @@ describe('fallbackSpeechLang', () => {
     expect(fallbackSpeechLang(EN_ID, '안녕')).toBe('en');
     expect(fallbackSpeechLang(null, '안녕하세요')).toBe('ko');
     expect(fallbackSpeechLang('legacy.mp3', 'Hello')).toBe('en');
-    expect(fallbackSpeechLang(`ja-${'a'.repeat(32)}`, 'Hello')).toBe('en');
+    expect(fallbackSpeechLang(`ja-${'a'.repeat(32)}`, 'Hello')).toBe('ja');
+    expect(fallbackSpeechLang(`fr-${'a'.repeat(32)}`, 'Hello')).toBe('en');
   });
 });
 

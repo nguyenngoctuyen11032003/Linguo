@@ -29,9 +29,13 @@ export const CONTENT_STATUS_LABELS_VI: Record<ContentStatus, string> = {
   archived: 'Đã lưu trữ',
 };
 
-export const CONTENT_LANGUAGES = ['en', 'ko'] as const;
+export const CONTENT_LANGUAGES = ['en', 'ko', 'ja'] as const;
 export type ContentLanguage = (typeof CONTENT_LANGUAGES)[number];
-export const CONTENT_LANGUAGE_LABELS_VI: Record<ContentLanguage, string> = { en: 'Tiếng Anh', ko: 'Tiếng Hàn' };
+export const CONTENT_LANGUAGE_LABELS_VI: Record<ContentLanguage, string> = { en: 'Tiếng Anh', ko: 'Tiếng Hàn', ja: 'Tiếng Nhật' };
+
+export function isContentLanguage(value: string | null | undefined): value is ContentLanguage {
+  return (CONTENT_LANGUAGES as readonly (string | null | undefined)[]).includes(value);
+}
 
 /** Only http(s) links are rendered as links (a source url is free text from the content repo). */
 export function safeUrl(url: string | null): string | null {
@@ -75,7 +79,7 @@ export function filtersFromParams(params: URLSearchParams): ContentFilters {
   const page = Number(params.get('trang'));
   return {
     kind: isContentKind(kind) ? kind : DEFAULT_CONTENT_FILTERS.kind,
-    language: language === 'en' || language === 'ko' ? language : null,
+    language: isContentLanguage(language) ? language : null,
     status: isContentStatus(status) ? status : null,
     search: (params.get('q') ?? '').slice(0, 100),
     page: Number.isInteger(page) && page >= 1 ? page : 1,

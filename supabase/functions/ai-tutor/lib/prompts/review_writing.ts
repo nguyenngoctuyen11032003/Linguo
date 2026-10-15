@@ -1,5 +1,5 @@
 import { type ReviewWritingOutput, reviewWritingOutputSchema } from '../../../_shared/ai-contract.ts';
-import { dataField, header, parseWith, type PromptModule, requireHangul, s, systemPrompt, wrongTask } from './shared.ts';
+import { dataField, header, parseWith, type PromptModule, requireTargetScript, s, systemPrompt, wrongTask } from './shared.ts';
 
 // Spec 9 X6: practice feedback on an exam essay against the form's rubric. The points are a practice
 // estimate, never an official exam score; the corrected version is the learner's own essay, fixed.
@@ -16,7 +16,7 @@ export const reviewWriting: PromptModule = {
     '`points`: số nguyên từ 0 đến max_points của tiêu chí đó, chấm công bằng, vừa phải theo mô tả tiêu chí và trình độ người học.',
     '`comment_vi`: nhận xét bằng tiếng Việt, cụ thể: điểm làm tốt và lỗi chính, trích ngắn từ bài viết khi cần (phần trích giữ nguyên ngôn ngữ đích).',
     '`overall_vi`: 2–4 câu tiếng Việt: nhận xét chung và 1–2 việc nên ưu tiên cải thiện.',
-    '`corrected_version`: viết lại CHÍNH bài của người học bằng ngôn ngữ đích cho tự nhiên và đúng (tiếng Hàn phải viết bằng Hangul): sửa lỗi ngữ pháp, từ vựng, chính tả, giữ ý và độ dài gần như bài gốc, vừa trình độ; không thêm lời giải thích hay tiêu đề.',
+    '`corrected_version`: viết lại CHÍNH bài của người học bằng ngôn ngữ đích cho tự nhiên và đúng (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji): sửa lỗi ngữ pháp, từ vựng, chính tả, giữ ý và độ dài gần như bài gốc, vừa trình độ; không thêm lời giải thích hay tiêu đề.',
     'Nếu bài viết lạc đề, viết sai ngôn ngữ hoặc quá ngắn, cho điểm thấp ở tiêu chí liên quan và nói rõ lý do trong nhận xét.',
     'Không suy đoán về người học (tuổi, nghề nghiệp, năng lực).',
   ]),
@@ -58,10 +58,8 @@ export const reviewWriting: PromptModule = {
         if (!rubric) return { ok: false, error: `criteria: unknown key ${c.key}` };
         if (c.points > rubric.max_points) return { ok: false, error: `criteria.${c.key}: points over max_points` };
       }
-      if (req.language === 'ko') {
-        const err = requireHangul(out.corrected_version, 'corrected_version');
-        if (err) return { ok: false, error: err };
-      }
+      const err = requireTargetScript(req.language, out.corrected_version, 'corrected_version');
+      if (err) return { ok: false, error: err };
     }
     return { ok: true, data: out };
   },

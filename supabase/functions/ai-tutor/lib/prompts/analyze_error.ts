@@ -1,5 +1,5 @@
 import { type AnalyzeErrorOutput, analyzeErrorOutputSchema } from '../../../_shared/ai-contract.ts';
-import { dataField, header, lessonBlock, parseWith, type PromptModule, requireHangul, s, systemPrompt, wrongTask } from './shared.ts';
+import { dataField, header, lessonBlock, parseWith, type PromptModule, requireTargetScript, s, systemPrompt, wrongTask } from './shared.ts';
 
 export const analyzeError: PromptModule = {
   task: 'analyze_error',
@@ -11,7 +11,7 @@ export const analyzeError: PromptModule = {
     '`verdict`: correct nếu bài làm đúng hoặc tương đương về nghĩa và ngữ pháp; minor_issue nếu chỉ sai chính tả, dấu câu, viết hoa, khoảng cách hoặc lỗi nhỏ; incorrect nếu sai về nghĩa, ngữ pháp hoặc từ vựng.',
     '`error_type`: tên ngắn tiếng Việt của loại lỗi (ví dụ "chia động từ", "trợ từ", "chính tả", "trật tự từ"); null nếu verdict là correct.',
     '`explanation_md`: giải thích bằng tiếng Việt (Markdown đơn giản) vì sao bài làm sai hoặc đúng, chỉ dựa trên đề bài, đáp án chuẩn và bài làm.',
-    '`corrected`: câu trả lời đã sửa bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul); null nếu verdict là correct.',
+    '`corrected`: câu trả lời đã sửa bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji); null nếu verdict là correct.',
     '`tip_vi`: một mẹo ngắn bằng tiếng Việt để tránh lặp lại lỗi; null nếu không cần.',
     'Nếu bài làm bỏ trống, verdict là incorrect và giải thích đáp án chuẩn.',
     'Không suy đoán về người học (tuổi, nghề nghiệp, năng lực) và không chấm điểm số.',
@@ -45,8 +45,8 @@ export const analyzeError: PromptModule = {
     if (!parsed.ok) return parsed;
     const out: AnalyzeErrorOutput = parsed.data;
     if (!out.explanation_md.trim()) return { ok: false, error: 'explanation_md must not be empty' };
-    if (req?.language === 'ko' && out.corrected?.trim()) {
-      const err = requireHangul(out.corrected, 'corrected');
+    if (req && out.corrected?.trim()) {
+      const err = requireTargetScript(req.language, out.corrected, 'corrected');
       if (err) return { ok: false, error: err };
     }
     return { ok: true, data: out };

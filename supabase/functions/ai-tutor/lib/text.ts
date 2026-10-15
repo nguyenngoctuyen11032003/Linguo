@@ -110,7 +110,7 @@ export function repairPrompt(schema: Record<string, unknown>, badText: string): 
 }
 
 export interface SanitizeOptions {
-  language: 'en' | 'ko';
+  language: 'en' | 'ko' | 'ja';
   /** Maximum length (in code points) of any string; defaults to 2000. */
   maxStringLength?: number;
   /** Maximum array length; defaults to 20. */
@@ -158,4 +158,18 @@ const HANGUL_RE = /[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]/;
 export function hasHangul(text: string): boolean {
   // Hangul fillers (U+115F, U+1160, U+3164) render blank: they never make a reply Korean.
   return HANGUL_RE.test(text.replace(INVISIBLE_RE, ''));
+}
+
+// Hiragana, katakana (incl. phonetic extensions and half-width forms), then CJK ideographs (kanji, ext. A).
+const KANA_RE = /[぀-ゟ゠-ヿㇰ-ㇿｦ-ﾟ]/;
+const JAPANESE_RE = /[぀-ゟ゠-ヿㇰ-ㇿｦ-ﾟ㐀-䶿一-鿿]/;
+
+/** Kana or kanji: what makes a text Japanese (the analogue of hasHangul for ja). */
+export function hasJapanese(text: string): boolean {
+  return JAPANESE_RE.test(text.replace(INVISIBLE_RE, ''));
+}
+
+/** Hiragana or katakana only (kanji alone may be Chinese). */
+export function hasKana(text: string): boolean {
+  return KANA_RE.test(text.replace(INVISIBLE_RE, ''));
 }
