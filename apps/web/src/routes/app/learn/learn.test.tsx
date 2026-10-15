@@ -64,7 +64,7 @@ describe('LearnPage', () => {
     expect(screen.getByRole('heading', { level: 1, name: 'Học tập' })).toBeInTheDocument();
     expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Tiếng Anh A1', 'Ngữ pháp nền tảng']);
     expect(screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(['Làm quen', 'Con số', 'Câu đơn']);
-    const links = screen.getAllByRole('link').filter((a) => a.getAttribute('href')?.startsWith('/app/hoc-tap/bai/'));
+    const links = screen.getAllByRole('list').flatMap((ul) => within(ul).getAllByRole('link')).filter((a) => a.getAttribute('href')?.startsWith('/app/hoc-tap/bai/'));
     expect(links.map((a) => a.getAttribute('href'))).toEqual(
       [greet, names, numbers, grammar].map((l) => `/app/hoc-tap/bai/${l.lesson_id}`),
     );
@@ -72,6 +72,37 @@ describe('LearnPage', () => {
     expect(within(links[1] as HTMLElement).getByText('Đang học')).toBeInTheDocument();
     expect(within(links[1] as HTMLElement).getByText('12 phút')).toBeInTheDocument();
     expect(within(links[2] as HTMLElement).getByText('Chưa học')).toBeInTheDocument();
+  });
+
+  it('recommends the in-progress lesson with a top link and a row badge', () => {
+    renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    expect(screen.getByRole('link', { name: /Học tiếp: Tên của bạn/ })).toHaveAttribute('href', `/app/hoc-tap/bai/${names.lesson_id}`);
+    expect(screen.getAllByText('Học tiếp')).toHaveLength(1);
+    expect(screen.queryByText('Bài tiếp theo')).toBeNull();
+  });
+
+  it('recommends the first startable lesson when nothing is in progress', () => {
+    setHook({ lessons: [greet, { ...names, run_status: 'not_started' }, numbers] });
+    renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    expect(screen.getByRole('link', { name: /Học tiếp: Tên của bạn/ })).toBeInTheDocument();
+    expect(screen.getByText('Bài tiếp theo')).toBeInTheDocument();
+  });
+
+  it('shows a kind note when everything is completed', () => {
+    setHook({ lessons: [greet, { ...names, run_status: 'completed' }] });
+    renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    expect(screen.getByText(/Bạn đã hoàn thành các bài hiện có/)).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /Học tiếp:/ })).toBeNull();
+  });
+
+  it('shows accessible per-program and per-unit progress', () => {
+    renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    const bars = screen.getAllByRole('progressbar');
+    expect(bars).toHaveLength(5);
+    expect(bars[0]).toHaveAttribute('aria-valuenow', '1');
+    expect(bars[0]).toHaveAttribute('aria-valuemax', '3');
+    expect(bars[0]).toHaveAccessibleName('Tiến độ Tiếng Anh A1');
+    expect(screen.getAllByText('1/3 bài đã học')).toHaveLength(1);
   });
 
   it('shows the demo badge once per program with demo lessons', () => {

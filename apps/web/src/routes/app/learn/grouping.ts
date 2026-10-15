@@ -61,3 +61,8 @@ export function pendingPrerequisiteTitles(lesson: PathLesson, lessons: PathLesso
   const pending = known.filter((l) => l.run_status !== 'completed');
   return (pending.length > 0 ? pending : known).map((l) => l.title.vi);
 }
+
+/** Lessons completed (the "N/M bài đã học" numerator). */
+export function learnedCount(lessons: PathLesson[]): number {
+  return lessons.filter((l) => l.run_status === 'completed').length;
+}

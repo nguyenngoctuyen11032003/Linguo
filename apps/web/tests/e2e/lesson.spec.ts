@@ -27,7 +27,7 @@ async function openLesson(page: Page, lessonId: string) {
 }
 
 const heading = (page: Page) => page.getByRole('heading', { level: 1 });
-const lessonLink = (page: Page, lessonId: string) => page.locator(`a[href$="/app/hoc-tap/bai/${lessonId}"]`);
+const lessonLink = (page: Page, lessonId: string) => page.locator(`ul a[href$="/app/hoc-tap/bai/${lessonId}"]`);
 
 /** The bottom action must be tappable without scrolling. */
 async function expectInViewport(page: Page, name: string) {

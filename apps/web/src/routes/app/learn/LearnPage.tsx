@@ -1,4 +1,4 @@
-import { BookOpen, Check, ChevronRight, Clock, Compass } from 'lucide-react';
+import { ArrowRight, BookOpen, Check, ChevronRight, CircleDot, Clock, Compass, Lock, PartyPopper } from 'lucide-react';
 import { Link } from 'react-router';
 import type { PathLesson, RunStatus } from '@linguo/shared';
 import { DemoBadge } from '@/components/exercise';
@@ -9,7 +9,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { cn } from '@/lib/cn';
-import { groupPathLessons, pendingPrerequisiteTitles } from './grouping';
+import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson } from './grouping';
 
 const STATUS: Record<RunStatus, { label: string; className: string }> = {
   not_started: { label: 'Chưa học', className: 'bg-text/8 text-muted' },
@@ -29,7 +29,28 @@ function LoadingList() {
   );
 }
 
-function LessonRow({ lesson, lessons }: { lesson: PathLesson; lessons: PathLesson[] }) {
+function ProgressSummary({ label, done, total }: { label: string; done: number; total: number }) {
+  return (
+    <div className="space-y-1">
+      <p className="text-sm font-medium text-muted">
+        {done}/{total} bài đã học
+      </p>
+      <div
+        role="progressbar"
+        aria-label={label}
+        aria-valuemin={0}
+        aria-valuemax={total}
+        aria-valuenow={done}
+        aria-valuetext={`${done}/${total} bài đã học`}
+        className="h-2 overflow-hidden rounded-full bg-text/10"
+      >
+        <div className="h-full rounded-full bg-primary" style={{ width: `${total ? (done / total) * 100 : 0}%` }} />
+      </div>
+    </div>
+  );
+}
+
+function LessonRow({ lesson, lessons, nextId }: { lesson: PathLesson; lessons: PathLesson[]; nextId: string | null }) {
   const status = STATUS[lesson.run_status];
   const prerequisites = lesson.prerequisites_met ? [] : pendingPrerequisiteTitles(lesson, lessons);
   return (
@@ -42,15 +63,22 @@ function LessonRow({ lesson, lessons }: { lesson: PathLesson; lessons: PathLesso
         <span className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
           <span className={cn('inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-semibold', status.className)}>
             {lesson.run_status === 'completed' && <Check aria-hidden className="size-3.5" />}
+            {lesson.run_status === 'in_progress' && <CircleDot aria-hidden className="size-3.5" />}
             {status.label}
           </span>
+          {lesson.lesson_id === nextId && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 font-semibold text-on-accent">
+              {lesson.run_status === 'in_progress' ? 'Học tiếp' : 'Bài tiếp theo'}
+            </span>
+          )}
           <span className="inline-flex items-center gap-1 text-muted">
             <Clock aria-hidden className="size-3.5" />
             {lesson.estimated_minutes} phút
           </span>
         </span>
         {!lesson.prerequisites_met && (
-          <span className="block text-sm text-muted">
+          <span className="flex items-start gap-1.5 text-sm text-muted">
+            <Lock aria-hidden className="mt-0.5 size-3.5 shrink-0" />
             {prerequisites.length > 0 ? `Nên học trước: ${prerequisites.join(', ')}` : 'Nên học các bài trước đó trước'}
           </span>
         )}
@@ -65,6 +93,7 @@ export function LearnPage() {
   const paths = useLearningPaths();
   const { status, lessons, error, reload } = usePathLessons();
 
+  const next = pickNextLesson(lessons);
   let content;
   if (!paths.current) {
     if (paths.status === 'loading') content = <LoadingList />;
@@ -98,6 +127,20 @@ export function LearnPage() {
   } else {
     content = (
       <div className="space-y-8">
+        {next ? (
+          <Link
+            to={`/app/hoc-tap/bai/${next.lesson_id}`}
+            className={cn(buttonClasses('accent'), 'h-auto min-h-12 w-full justify-between gap-3 py-3 text-left')}
+          >
+            <span className="min-w-0 break-words">Học tiếp: {next.title.vi}</span>
+            <ArrowRight aria-hidden className="size-5 shrink-0" />
+          </Link>
+        ) : (
+          <p className="flex items-start gap-2 rounded-2xl border border-border bg-surface-solid px-4 py-3">
+            <PartyPopper aria-hidden className="mt-0.5 size-5 shrink-0 text-success-text" />
+            <span>Bạn đã hoàn thành các bài hiện có. Nội dung mới sẽ sớm được bổ sung nhé!</span>
+          </p>
+        )}
         {groupPathLessons(lessons).map((program) => (
           <section key={program.id} aria-labelledby={`program-${program.id}`} className="space-y-4">
             <div className="flex flex-wrap items-center gap-2">
@@ -106,15 +149,21 @@ export function LearnPage() {
               </h2>
               {program.isDemo && <DemoBadge />}
             </div>
+            <ProgressSummary
+              label={`Tiến độ ${program.title}`}
+              done={learnedCount(program.units.flatMap((u) => u.lessons))}
+              total={program.units.reduce((n, u) => n + u.lessons.length, 0)}
+            />
             {program.units.map((unit) => (
               <section key={unit.id} aria-labelledby={`unit-${unit.id}`} className="space-y-2">
                 <h3 id={`unit-${unit.id}`} className="text-sm font-semibold uppercase tracking-wide text-muted">
                   {unit.title}
                 </h3>
+                <ProgressSummary label={`Tiến độ ${unit.title}`} done={learnedCount(unit.lessons)} total={unit.lessons.length} />
                 <ul className="space-y-2">
                   {unit.lessons.map((lesson) => (
                     <li key={lesson.lesson_id}>
-                      <LessonRow lesson={lesson} lessons={lessons} />
+                      <LessonRow lesson={lesson} lessons={lessons} nextId={next?.lesson_id ?? null} />
                     </li>
                   ))}
                 </ul>
