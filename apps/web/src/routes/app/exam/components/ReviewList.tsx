@@ -4,6 +4,7 @@ import { REVIEW_WRITING_ANSWER_MAX_CHARS, type ExamFamily, type ExamResult } fro
 import { ReportContentButton } from '@/components/report';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
+import { readString, writeString } from '@/lib/storage';
 import { SECTION_LABELS, familyLanguage, isAnswered, questionTypeLabel } from './labels';
 
 export interface ReviewListProps {
@@ -23,11 +24,26 @@ export function ReviewList({ result, onAiFeedback }: ReviewListProps) {
     <ol className="grid gap-4" aria-label="Xem lại từng câu">
       {result.review.map((item) => (
         <li key={item.question_id} className="min-w-0">
-          <ReviewCard item={item} family={result.family} onAiFeedback={onAiFeedback} />
+          <ReviewCard item={item} attemptId={result.attempt_id} family={result.family} onAiFeedback={onAiFeedback} />
         </li>
       ))}
     </ol>
   );
+}
+
+/** Spec 9 §4: the essay self-assessment checklist is kept on this device, per attempt and question. */
+export const rubricStorageKey = (attemptId: string, questionId: string) => `linguo:exam-rubric:${attemptId}:${questionId}`;
+
+function readChecked(key: string): Record<string, boolean> {
+  const raw = readString(key);
+  if (!raw) return {};
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return {};
+    return Object.fromEntries(parsed.filter((k): k is string => typeof k === 'string').map((k) => [k, true]));
+  } catch {
+    return {};
+  }
 }
 
 const STATUS = {
@@ -43,7 +59,17 @@ function statusOf(item: ReviewItem): keyof typeof STATUS {
   return item.is_correct ? 'correct' : 'wrong';
 }
 
-function ReviewCard({ item, family, onAiFeedback }: { item: ReviewItem; family: ExamFamily; onAiFeedback?: ReviewListProps['onAiFeedback'] }) {
+function ReviewCard({
+  item,
+  attemptId,
+  family,
+  onAiFeedback,
+}: {
+  item: ReviewItem;
+  attemptId: string;
+  family: ExamFamily;
+  onAiFeedback?: ReviewListProps['onAiFeedback'];
+}) {
   const titleId = useId();
   const { prompt } = item;
   const answerLang = prompt.stem_lang !== 'vi' ? prompt.stem_lang : familyLanguage(family);
@@ -85,7 +111,7 @@ function ReviewCard({ item, family, onAiFeedback }: { item: ReviewItem; family: 
           {prompt.stem}
         </p>
 
-        {item.kind === 'essay' ? <EssayReview item={item} answerLang={answerLang} onAiFeedback={onAiFeedback} /> : <AnswerCompare item={item} answerLang={answerLang} />}
+        {item.kind === 'essay' ? <EssayReview item={item} storageKey={rubricStorageKey(attemptId, item.question_id)} answerLang={answerLang} onAiFeedback={onAiFeedback} /> : <AnswerCompare item={item} answerLang={answerLang} />}
 
         <div className="rounded-2xl border border-border bg-bg/60 px-4 py-3">
           <p className="mb-1 flex items-center gap-1.5 text-sm font-semibold">
@@ -136,14 +162,21 @@ function AnswerCompare({ item, answerLang }: { item: ReviewItem; answerLang: str
 
 function EssayReview({
   item,
+  storageKey,
   answerLang,
   onAiFeedback,
 }: {
   item: ReviewItem;
+  storageKey: string;
   answerLang: string;
   onAiFeedback?: ReviewListProps['onAiFeedback'];
 }) {
-  const [checked, setChecked] = useState<Record<string, boolean>>({});
+  const [checked, setChecked] = useState<Record<string, boolean>>(() => readChecked(storageKey));
+  const toggle = (key: string, on: boolean) => {
+    const next = { ...checked, [key]: on };
+    setChecked(next);
+    writeString(storageKey, JSON.stringify(Object.keys(next).filter((k) => next[k])));
+  };
   const rubric = item.rubric ?? [];
   const max = rubric.reduce((sum, r) => sum + r.max_points, 0);
   const self = rubric.reduce((sum, r) => sum + (checked[r.key] ? r.max_points : 0), 0);
@@ -171,7 +204,7 @@ function EssayReview({
                   <input
                     type="checkbox"
                     checked={checked[r.key] ?? false}
-                    onChange={(e) => setChecked((c) => ({ ...c, [r.key]: e.target.checked }))}
+                    onChange={(e) => toggle(r.key, e.target.checked)}
                     className="mt-1 size-5 shrink-0 accent-primary"
                   />
                   <span className="min-w-0">

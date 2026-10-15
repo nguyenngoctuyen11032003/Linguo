@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { CEFR_RESULT, TOPIK_RESULT } from './exam-fixtures';
 import { QuestionTypeBreakdown } from './QuestionTypeBreakdown';
 import { ResultSummary } from './ResultSummary';
-import { ReviewList } from './ReviewList';
+import { ReviewList, rubricStorageKey } from './ReviewList';
 import { renderExam } from './test-utils';
 
 describe('ResultSummary', () => {
@@ -95,6 +95,27 @@ describe('ReviewList', () => {
     expect(summary.closest('details')).not.toHaveAttribute('open');
     await user.click(summary);
     expect(summary.closest('details')).toHaveAttribute('open');
+  });
+
+  it('essay: keeps the self-assessment checklist on this device, per attempt', async () => {
+    const user = userEvent.setup();
+    const { unmount } = renderExam(<ReviewList result={TOPIK_RESULT} />);
+    const essay = () => screen.getAllByRole('article')[3]!;
+    await user.click(within(essay()).getByRole('checkbox', { name: /Hoàn thành yêu cầu/ }));
+    unmount();
+
+    renderExam(<ReviewList result={TOPIK_RESULT} />);
+    expect(within(essay()).getByRole('checkbox', { name: /Hoàn thành yêu cầu/ })).toBeChecked();
+    expect(within(essay()).getByText(/Tự chấm: 10\/20 điểm/)).toBeInTheDocument();
+    await user.click(within(essay()).getByRole('checkbox', { name: /Hoàn thành yêu cầu/ }));
+    expect(within(essay()).getByText(/Tự chấm: 0\/20 điểm/)).toBeInTheDocument();
+  });
+
+  it('essay: a corrupt or foreign checklist entry is ignored', () => {
+    const essay = TOPIK_RESULT.review[3]!;
+    localStorage.setItem(rubricStorageKey(TOPIK_RESULT.attempt_id, essay.question_id), '{not json');
+    renderExam(<ReviewList result={TOPIK_RESULT} />);
+    expect(screen.getByText(/Tự chấm: 0\/20 điểm/)).toBeInTheDocument();
   });
 
   it('essay: AI feedback button only when the page offers it and there is an essay to review', async () => {
