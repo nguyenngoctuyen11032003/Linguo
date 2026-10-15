@@ -166,6 +166,13 @@ const INVALID = [
     message: 'word_bank tokens "t4" and "t2" have the same text: list order 0 with them swapped too (t1 t4 t3)',
   },
   {
+    name: 'hint_levels outside the recognition stage',
+    file: LESSON_1,
+    from: '      blanks: [{ id: b1 }]',
+    to: '      blanks: [{ id: b1 }]\n      hint_levels: [Động từ "be".]',
+    message: 'hint_levels are only shown in the recognition stage (this exercise is recall)',
+  },
+  {
     name: 'fill_blank template with an undeclared placeholder',
     file: LESSON_1,
     from: 'template: "I {{b1}} a student."',

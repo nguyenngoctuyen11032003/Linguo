@@ -77,6 +77,10 @@ function levelError(lang, level, field = 'level') {
  */
 function answerShapeErrors(ex, lang) {
   const errors = [];
+  // Spec 2 §5.1: hints belong to the recognition stage only; the player never shows them in recall/application.
+  if (ex.prompt.hint_levels && ex.stage !== 'recognition') {
+    errors.push(`hint_levels are only shown in the recognition stage (this exercise is ${ex.stage})`);
+  }
   if (ex.type === 'translate') {
     // vi_to_target: Vietnamese source, answer in the lesson language; target_to_vi: the reverse.
     const [from, to] = ex.prompt.direction === 'vi_to_target' ? ['vi', lang] : [lang, 'vi'];
