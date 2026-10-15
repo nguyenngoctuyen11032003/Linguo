@@ -67,35 +67,45 @@ const LEARNER_EXACT_KEYS = [DRAFT_KEY];
 // Kept on purpose: non-personal device preferences (`linguo-theme`, `linguo-reduce-motion`), the recovery-pending
 // flag (no personal data) and the shared media cache (`linguo-media-v1`).
 
-function wipeStore(store: Storage): void {
+/**
+ * Kept on sign-out: the queued, not yet synced answers (lesson and review outboxes, scoped by user id, sent after the
+ * next sign-in) and cached lesson text of OTHER users (curated content, not personal; the signing-out user's own cache
+ * is cleared by exact key below).
+ */
+const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
+
+function wipeStore(store: Storage, signOut: boolean): void {
   const keys: string[] = [];
   for (let i = 0; i < store.length; i += 1) {
     const key = store.key(i);
     if (key) keys.push(key);
   }
+  const prefixes = signOut ? LEARNER_KEY_PREFIXES.filter((p) => !SIGN_OUT_KEEP_PREFIXES.includes(p)) : LEARNER_KEY_PREFIXES;
   for (const key of keys) {
-    if (LEARNER_EXACT_KEYS.includes(key) || LEARNER_KEY_PREFIXES.some((p) => key.startsWith(p))) store.removeItem(key);
+    if (LEARNER_EXACT_KEYS.includes(key) || prefixes.some((p) => key.startsWith(p))) store.removeItem(key);
   }
 }
 
 /**
  * Sign-out and account deletion: removes every per-learner client store, for ALL user ids, because the device is
- * being handed over (queued, unsynced answers of this user are dropped too; sign-out already asked the learner to
- * confirm when some were pending). Each store is wiped independently: one failing never stops the rest, and this
- * never throws. `userId` additionally clears that user's keys by exact name in case enumeration fails.
+ * being handed over. On sign-out (`mode: 'sign-out'`) the queued unsynced answers stay for the next sign-in so no
+ * learning progress is lost, and other users' cached lesson text stays (see SIGN_OUT_KEEP_PREFIXES); the default
+ * mode (account deletion) drops everything of the learner. Each store is wiped independently: one failing never
+ * stops the rest, and this never throws. `userId` additionally clears that user's keys by exact name in case
+ * enumeration fails.
  */
-export function clearAllLocalLearnerData(userId?: string | null): void {
+export function clearAllLocalLearnerData(userId?: string | null, options: { mode?: 'sign-out' | 'delete' } = {}): void {
+  const signOut = options.mode === 'sign-out';
   for (const read of [() => localStorage, () => sessionStorage]) {
     try {
-      wipeStore(read());
+      wipeStore(read(), signOut);
     } catch {
       // Storage blocked: nothing readable is stored either.
     }
   }
   if (userId) {
     const exact: Array<() => void> = [
-      () => removeKey(outboxKey(userId)),
-      () => removeKey(reviewOutboxKey(userId)),
+      ...(signOut ? [] : [() => removeKey(outboxKey(userId)), () => removeKey(reviewOutboxKey(userId))]),
       () => clearLessonCache(userId),
       () => clearSession(userId),
       () => clearReflections(userId),

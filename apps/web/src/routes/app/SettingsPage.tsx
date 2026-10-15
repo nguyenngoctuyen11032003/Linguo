@@ -181,9 +181,10 @@ export function SettingsPage() {
         }
         toast.show({ tone: 'error', message: 'Không đăng xuất được trên máy chủ, đã xoá phiên trên thiết bị này.' });
       }
-      // The device is handed over: drop every per-learner store (outboxes, cached lessons, role-play chat, speaking
-      // ratings, onboarding draft) for all users. Pending answers were already confirmed above.
-      clearAllLocalLearnerData(userId);
+      // The device is handed over: drop this user's cached lessons and every user's private stores (role-play chat,
+      // speaking ratings, onboarding draft), but keep the queued answers that are not synced yet: they are scoped by
+      // user id and are sent after the next sign-in, so signing out never loses learning progress.
+      clearAllLocalLearnerData(userId, { mode: 'sign-out' });
       navigate('/', { replace: true });
     } catch {
       toast.show({ tone: 'error', message: 'Không đăng xuất được. Vui lòng thử lại.' });
