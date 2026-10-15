@@ -204,7 +204,7 @@ select r.user_id, r.learning_path_id, r.id, r.lesson_id, e.id, e.version, 1, gen
   case when r.lesson_id = current_setting('test.lesson')::uuid then 'incorrect' else 'correct' end,
   r.lesson_id <> current_setting('test.lesson')::uuid,
   case when r.lesson_id = current_setting('test.lesson')::uuid then 0.25 else 1 end,
-  1, false, false, false, '{}', e.stage, e.exercise_type, 120000, 0, '2026-10-14 03:00Z'
+  1, false, false, false, '{}', e.stage, e.exercise_type, 120000, 0, timestamptz '2026-10-14 03:00Z' + g * interval '2 minutes'
 from public.lesson_runs r
 cross join generate_series(1, 12) as g
 cross join lateral (select x.* from public.exercises x where x.lesson_id = r.lesson_id and x.status = 'published' order by x.order_index limit 1) as e

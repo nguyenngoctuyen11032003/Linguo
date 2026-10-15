@@ -1,6 +1,6 @@
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(21);
+select plan(29);
 
 -- Backend review B3 (20261016000100_exam_activity.sql): closing an exam attempt adds it to activity_days
 -- (answers, capped active time, no XP), once; the streak/dashboard then count exam minutes.
@@ -38,7 +38,8 @@ $$;
 insert into auth.users (id, email, raw_user_meta_data) values
   ('ea000000-0000-4000-8000-00000000000a', 'eaa@test.dev', '{}'),
   ('ea000000-0000-4000-8000-00000000000b', 'eab@test.dev', '{}'),
-  ('ea000000-0000-4000-8000-00000000000c', 'eac@test.dev', '{}');
+  ('ea000000-0000-4000-8000-00000000000c', 'eac@test.dev', '{}'),
+  ('ea000000-0000-4000-8000-00000000000d', 'ead@test.dev', '{}');
 insert into public.content_sources (id, key, title, author_or_org, license, status, is_demo, content_hash)
 values (public.ea_id('src:ea'), 'src:ea', 'EA test source', 'Linguo', 'own', 'published', true, md5('ea') || md5('ea#'));
 
@@ -60,6 +61,9 @@ select public.ea_as('ea000000-0000-4000-8000-00000000000b');
 select set_config('test.pb', (public.create_learning_path('en', 'new', 'cefr', 'a1', 'a2', array[30,30,30,30,30,30,30]::smallint[])).id::text, true);
 select public.ea_as('ea000000-0000-4000-8000-00000000000c');
 select set_config('test.pc', (public.create_learning_path('en', 'new', 'cefr', 'a1', 'a2', array[30,30,30,30,30,30,30]::smallint[])).id::text, true);
+
+select public.ea_as('ea000000-0000-4000-8000-00000000000d');
+select set_config('test.pd', (public.create_learning_path('en', 'new', 'cefr', 'a1', 'a2', array[30,30,30,30,30,30,30]::smallint[])).id::text, true);
 
 -- ===== A: a long exam (4 answers + 1 cleared) =====
 select public.ea_as('ea000000-0000-4000-8000-00000000000a');
@@ -126,7 +130,54 @@ reset role;
 select is((select count(*)::integer from public.activity_days where user_id = 'ea000000-0000-4000-8000-00000000000c'), 0,
   'no activity row was written for an unrelated user');
 
--- ===== Backfill: attempts closed before the migration are added once =====
+-- ===== F1.1: activity is credited to the day the answers were SAVED, not the day the attempt is closed =====
+-- D answers a section attempt two days ago (+90 s and +200 s) and only closes it now.
+select public.ea_as('ea000000-0000-4000-8000-00000000000d');
+set local role authenticated;
+select set_config('test.ad', public.start_exam(current_setting('test.pd')::uuid, public.ea_id('en:exam:ea-c1'), 'section', 'reading') ->> 'attempt_id', true);
+select public.ea_save(current_setting('test.ad'), 'en:examq:ea-1', 'a');
+select public.ea_save(current_setting('test.ad'), 'en:examq:ea-2', 'b');
+reset role;
+update public.exam_attempts set started_at = now() - interval '2 days' where id = current_setting('test.ad')::uuid;
+select public.ea_at(current_setting('test.ad'), 'en:examq:ea-1', 90);
+select public.ea_at(current_setting('test.ad'), 'en:examq:ea-2', 200);
+select lives_ok(format('select public.exam_close_attempt(%L, ''submitted'')', current_setting('test.ad')), 'D closes the old attempt now');
+select is((select row(d.answers, d.active_ms)::text from public.activity_days d
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '2 days')),
+  '(2,200000)', 'the answers are credited to the day they were saved (two days ago)');
+select is((select count(*)::integer from public.activity_days d
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.ea_day('ea000000-0000-4000-8000-00000000000d')), 0,
+  'and nothing is credited to the day of the close');
+
+-- An attempt whose answers span two local days is split per day (answers 30 h and 1 h ago, closed now).
+set local role authenticated;
+select public.ea_as('ea000000-0000-4000-8000-00000000000d');
+select set_config('test.ae', public.start_exam(current_setting('test.pd')::uuid, public.ea_id('en:exam:ea-c1'), 'section', 'reading') ->> 'attempt_id', true);
+select public.ea_save(current_setting('test.ae'), 'en:examq:ea-3', 'a');
+select public.ea_save(current_setting('test.ae'), 'en:examq:ea-4', 'a');
+reset role;
+update public.exam_attempts set started_at = now() - interval '31 hours' where id = current_setting('test.ae')::uuid;
+update public.exam_answers set updated_at = now() - interval '30 hours' where attempt_id = current_setting('test.ae')::uuid and question_id = public.ea_id('en:examq:ea-3');
+update public.exam_answers set updated_at = now() - interval '1 hour' where attempt_id = current_setting('test.ae')::uuid and question_id = public.ea_id('en:examq:ea-4');
+select public.exam_close_attempt(current_setting('test.ae')::uuid, 'submitted');
+select is((select row(d.answers, d.active_ms)::text from public.activity_days d
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '30 hours')),
+  '(1,120000)', 'the first answer is credited to its own day (gap capped at 120 s)');
+select is((select row(d.answers, d.active_ms)::text from public.activity_days d
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '1 hour')),
+  '(1,120000)', 'and the second answer to the later day');
+
+-- Backfill: attempts closed before the migration are added once, on the day of their answers.
+delete from public.activity_days where user_id = 'ea000000-0000-4000-8000-00000000000d';
+update public.exam_attempts set activity_counted_at = null where id = current_setting('test.ad')::uuid;
+select is(public.exam_backfill_activity(), 1, 'the backfill handles the uncounted old attempt of D');
+select is((select row(d.answers, d.active_ms)::text from public.activity_days d
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '2 days')),
+  '(2,200000)', 'and credits it to the day of the answers, not the close');
+select is(public.exam_backfill_activity(), 0, 'a second backfill is a no-op');
+
+-- ===== Backfill (original): attempts
+-- closed before the migration are added once =====
 delete from public.activity_days where user_id = 'ea000000-0000-4000-8000-00000000000a';
 update public.exam_attempts set activity_counted_at = null where id = current_setting('test.aa')::uuid;
 select is(public.exam_backfill_activity(), 1, 'the backfill handles the one uncounted closed attempt');

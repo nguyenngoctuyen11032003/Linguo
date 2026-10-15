@@ -2,12 +2,14 @@
 -- account deletion. Migration: 20261016000300_personal_vocab.sql.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(99);
+select plan(112);
 
 insert into auth.users (id, email, raw_user_meta_data) values
   ('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa', 'a@test.dev', '{}'),
   ('bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb', 'b@test.dev', '{}'),
-  ('cccccccc-cccc-4ccc-8ccc-cccccccccccc', 'c@test.dev', '{}');
+  ('cccccccc-cccc-4ccc-8ccc-cccccccccccc', 'c@test.dev', '{}'),
+  ('dddddddd-dddd-4ddd-8ddd-dddddddddddd', 'd@test.dev', '{}'),
+  ('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee', 'e@test.dev', '{}');
 
 create function pg_temp.as_user(p_user uuid) returns void language sql as $$
   select set_config('request.jwt.claims', json_build_object('sub', p_user, 'role', 'authenticated')::text, true);
@@ -111,9 +113,9 @@ select is(public.import_personal_words(current_setting('test.le')::uuid, jsonb_b
       {"index": 4, "reason": "term_too_long"}, {"index": 5, "reason": "meaning_too_long"},
       {"index": 6, "reason": "example_too_long"}, {"index": 7, "reason": "invalid_field"},
       {"index": 8, "reason": "not_an_object"}]}'::jsonb, 'row-level validation, duplicates and NFC/NFD folding');
-select throws_ok(format($$ select public.import_personal_words(%L, '[]'::jsonb) $$, current_setting('test.le')), 'P0001', 'invalid_rows', 'empty import refused');
-select throws_ok(format($$ select public.import_personal_words(%L, '{"term": "x"}'::jsonb) $$, current_setting('test.le')), 'P0001', 'invalid_rows', 'non-array import refused');
-select throws_ok(format($$ select public.import_personal_words(%L, pg_temp.rows('t', 1001)) $$, current_setting('test.le')), 'P0001', 'too_many_rows', 'more than 1000 rows refused');
+select is(public.import_personal_words(current_setting('test.le')::uuid, '[]'::jsonb) ->> 'code', 'invalid_rows', 'empty import refused');
+select is(public.import_personal_words(current_setting('test.le')::uuid, '{"term": "x"}'::jsonb) ->> 'code', 'invalid_rows', 'non-array import refused');
+select is(public.import_personal_words(current_setting('test.le')::uuid, pg_temp.rows('t', 1001)) ->> 'code', 'too_many_rows', 'more than 1000 rows refused');
 select throws_ok($$ select public.import_personal_words(gen_random_uuid(), pg_temp.rows('t', 1)) $$, 'P0001', 'list_not_found', 'unknown list refused');
 
 -- ===== Review queue and grading (FSRS reuse) =====
@@ -207,12 +209,10 @@ select throws_ok($$ delete from public.personal_words $$, '42501', null, 'no dir
 -- ===== Caps =====
 select set_config('test.b1', public.create_personal_list('L1', 'en') ->> 'id', true);
 select is(public.import_personal_words(current_setting('test.b1')::uuid, pg_temp.rows('w', 1000)) ->> 'added', '1000', 'a list takes 1000 words');
-select throws_ok(format($$ select public.import_personal_words(%L, pg_temp.rows('extra', 1)) $$, current_setting('test.b1')),
-  'P0001', 'list_full', 'the 1001st word is refused');
+select is(public.import_personal_words(current_setting('test.b1')::uuid, pg_temp.rows('extra', 1)) ->> 'code', 'list_full', 'the 1001st word is refused');
 select is(public.import_personal_words(current_setting('test.b1')::uuid, pg_temp.rows('w', 1000)) ->> 'unchanged', '1000', 'a full list can still be re-imported');
 select set_config('test.b2', public.create_personal_list('L2', 'en') ->> 'id', true);
-select throws_ok(format($$ select public.import_personal_words(%L, pg_temp.rows('w', 1001)) $$, current_setting('test.b2')),
-  'P0001', 'too_many_rows', 'more than 1000 rows per call refused');
+select is(public.import_personal_words(current_setting('test.b2')::uuid, pg_temp.rows('w', 1001)) ->> 'code', 'too_many_rows', 'more than 1000 rows per call refused');
 select is(public.import_personal_words(current_setting('test.b2')::uuid, pg_temp.rows('v', 1000)) ->> 'added', '1000', 'second full list');
 select set_config('test.b3', public.create_personal_list('L3', 'en') ->> 'id', true);
 select public.import_personal_words(current_setting('test.b3')::uuid, pg_temp.rows('u', 1000));
@@ -221,8 +221,7 @@ select public.import_personal_words(current_setting('test.b4')::uuid, pg_temp.ro
 select set_config('test.b5', public.create_personal_list('L5', 'en') ->> 'id', true);
 select public.import_personal_words(current_setting('test.b5')::uuid, pg_temp.rows('s', 1000));
 select set_config('test.b6', public.create_personal_list('L6', 'en') ->> 'id', true);
-select throws_ok(format($$ select public.import_personal_words(%L, pg_temp.rows('r', 1)) $$, current_setting('test.b6')),
-  'P0001', 'vocab_full', 'the 5001st word of a user is refused');
+select is(public.import_personal_words(current_setting('test.b6')::uuid, pg_temp.rows('r', 1)) ->> 'code', 'vocab_full', 'the 5001st word of a user is refused');
 
 -- Lists: 20 per user (B has 6).
 select is((select count(*)::integer from (select public.create_personal_list('X' || g, 'en') from generate_series(1, 14) g) s), 14, 'B reaches 20 lists');
@@ -246,6 +245,50 @@ update public.personal_vocab_imports set created_at = now() - interval '2 hours'
 set local role authenticated;
 select pg_temp.as_user('cccccccc-cccc-4ccc-8ccc-cccccccccccc');
 select is(public.import_personal_words(current_setting('test.c2')::uuid, pg_temp.rows('back', 1)) ->> 'added', '1', 'imports are allowed again an hour later');
+
+-- ===== F1.3: attempts are counted (failures too), size bounds, field keep, invisible characters =====
+select pg_temp.as_user('dddddddd-dddd-4ddd-8ddd-dddddddddddd');
+select set_config('test.d1', public.create_personal_list('D', 'en') ->> 'id', true);
+select is((select count(*)::integer from (select public.import_personal_words(current_setting('test.d1')::uuid, '[]'::jsonb) as r from generate_series(1, 10)) s
+           where s.r = '{"ok": false, "code": "invalid_rows"}'::jsonb), 10, 'failed imports return {ok:false, code} instead of raising');
+select throws_ok(format($$ select public.import_personal_words(%L, pg_temp.rows('d', 1)) $$, current_setting('test.d1')), 'P0001', 'rate_limited',
+  'ten failed attempts use up the hourly allowance');
+reset role;
+select is((select count(*)::integer from public.personal_vocab_imports where user_id = 'dddddddd-dddd-4ddd-8ddd-dddddddddddd' and added = 0), 10,
+  'the failed attempts were logged');
+set local role authenticated;
+
+select pg_temp.as_user('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee');
+select set_config('test.e1', public.create_personal_list('E', 'en') ->> 'id', true);
+select is(public.import_personal_words(current_setting('test.e1')::uuid,
+    (select jsonb_agg(jsonb_build_object('term', 't' || g, 'meaning', repeat('x', 1000))) from generate_series(1, 700) g)) ->> 'code',
+  'too_many_rows', 'a payload over 600000 bytes is refused before parsing');
+select is(public.import_personal_words(current_setting('test.e1')::uuid, jsonb_build_array(
+    jsonb_build_object('term', repeat('a', 1001), 'meaning', 'x'),
+    jsonb_build_object('term', 'ok', 'meaning', 'x', 'example', repeat(' ', 5000) || 'e'),
+    jsonb_build_object('term', 'ok3', 'meaning', 'x', 'example', 'e1', 'note', 'n1', 'pronunciation', 'p1'))) -> 'invalid',
+  '[{"index": 0, "reason": "term_too_long"}, {"index": 1, "reason": "example_too_long"}]'::jsonb,
+  'fields over 1000 raw characters are rejected before cleaning');
+select is(public.import_personal_words(current_setting('test.e1')::uuid, jsonb_build_array(
+    jsonb_build_object('term', 'ok3', 'meaning', 'x'))) - 'invalid',
+  '{"added": 0, "updated": 0, "unchanged": 1, "duplicates": 0}'::jsonb, 're-importing with fewer columns changes nothing');
+select is((select row(example, note, pronunciation)::text from public.personal_words where list_id = current_setting('test.e1')::uuid and term = 'ok3'),
+  '(e1,n1,p1)', 'and keeps the stored example, note and pronunciation');
+select is(public.import_personal_words(current_setting('test.e1')::uuid, jsonb_build_array(
+    jsonb_build_object('term', 'ok3', 'meaning', 'x', 'example', 'e2'))) ->> 'updated', '1', 'a non-empty incoming value does overwrite');
+select is((select row(example, note, pronunciation)::text from public.personal_words where list_id = current_setting('test.e1')::uuid and term = 'ok3'),
+  '(e2,n1,p1)', 'only that field');
+reset role;
+select is(public.personal_clean(E'a\u00adb\u2060c\u2064d\u180ee\u061cf'), 'abcdef', 'soft hyphen, word joiners, mongolian vowel separator and arabic letter mark are stripped');
+set local role authenticated;
+select pg_temp.as_user('eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee');
+select is(public.import_personal_words(current_setting('test.e1')::uuid, jsonb_build_array(
+    jsonb_build_object('term', E'pe\u00ad\u2060ar', 'meaning', 'quả lê'))) ->> 'added', '1', 'an invisible-character term imports');
+select is((select term_key from public.personal_words where list_id = current_setting('test.e1')::uuid and meaning = 'quả lê'), 'pear', 'as its cleaned key');
+reset role;
+select is((select count(*)::integer from public.personal_vocab_imports where user_id = 'eeeeeeee-eeee-4eee-8eee-eeeeeeeeeeee' and added = 1 and list_id = current_setting('test.e1')::uuid), 2,
+  'successful imports record the list and the added count');
+set local role authenticated;
 
 -- ===== Export and deletion =====
 select pg_temp.as_user('aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa');

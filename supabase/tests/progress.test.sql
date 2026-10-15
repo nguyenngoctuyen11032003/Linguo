@@ -102,8 +102,8 @@ select set_config('test.e4', 'c8000000-0000-4000-8000-000000000034', true);
 
 -- Runs and attempts are written directly as the owner (the lesson RPCs are covered by lesson_runs.test.sql).
 create function public.c8_run(p_user uuid, p_path uuid, p_lesson uuid) returns uuid language sql volatile as $$
-  insert into public.lesson_runs (user_id, learning_path_id, lesson_id, content_version, queue)
-  values (p_user, p_path, p_lesson, 1, '{}') returning id;
+  insert into public.lesson_runs (user_id, learning_path_id, lesson_id, content_version, queue, started_at)
+  values (p_user, p_path, p_lesson, 1, '{}', now() - interval '1 day') returning id;
 $$;
 create function public.c8_complete(p_run uuid) returns void language sql volatile as $$
   update public.lesson_runs set status = 'completed', completed_at = now(), summary_json = '{}' where id = p_run;
@@ -181,7 +181,7 @@ select public.c8_attempt(current_setting('test.a')::uuid, current_setting('test.
 select is((public.c8_day(current_setting('test.a')::uuid, 0)).xp, 3, 'an answer after the reveal earns nothing');
 select is((public.c8_day(current_setting('test.a')::uuid, 0)).active_ms, 5500::bigint, 'active time sums response_ms');
 select public.c8_attempt(current_setting('test.a')::uuid, current_setting('test.r1')::uuid, current_setting('test.e2')::uuid, 'incorrect', 1, false, 300000);
-select is((public.c8_day(current_setting('test.a')::uuid, 0)).active_ms, 125500::bigint, 'response_ms is capped at 120 s per answer');
+select is((public.c8_day(current_setting('test.a')::uuid, 0)).active_ms, 7500::bigint, 'a long response_ms is capped by the server gap since the previous attempt (2 s floor), not credited as reported');
 select is((public.c8_day(current_setting('test.a')::uuid, 0)).answers, 6, 'every attempt counts as an answer');
 
 -- Client time: back-dated at most 7 days, never in the future.
@@ -214,7 +214,7 @@ select is((public.c8_day(current_setting('test.a')::uuid, 0)).reviews, 1, 'a gra
 select public.c8_review(current_setting('test.a')::uuid, current_setting('test.pa')::uuid, current_setting('test.card')::uuid, 'grade', 1::smallint, 500000);
 select is((public.c8_day(current_setting('test.a')::uuid, 0)).xp, 31, 'a forgotten review earns no XP');
 select is((public.c8_day(current_setting('test.a')::uuid, 0)).reviews, 2, 'a forgotten review is still counted');
-select is((public.c8_day(current_setting('test.a')::uuid, 0)).active_ms, 249500::bigint, 'review time is capped at 120 s as well');
+select is((public.c8_day(current_setting('test.a')::uuid, 0)).active_ms, 131500::bigint, 'review time is capped at 120 s per grade');
 select public.c8_review(current_setting('test.a')::uuid, current_setting('test.pa')::uuid, null, 'postpone', null, null);
 select is((public.c8_day(current_setting('test.a')::uuid, 0)).reviews, 2, 'a postpone log is not a review');
 
@@ -258,7 +258,7 @@ select is(current_setting('test.d')::jsonb ->> 'today', current_setting('test.to
 select is(jsonb_array_length(current_setting('test.d')::jsonb -> 'days'), 7, '7 days for range 7');
 select is(current_setting('test.d')::jsonb #>> '{days,6,date}', current_setting('test.today'), 'days end today');
 select is(current_setting('test.d')::jsonb #>> '{days,0,date}', (current_setting('test.today')::date - 6)::text, 'days start 6 days ago');
-select is((current_setting('test.d')::jsonb #>> '{days,6,minutes}')::integer, 4, 'minutes are whole active minutes');
+select is((current_setting('test.d')::jsonb #>> '{days,6,minutes}')::integer, 2, 'minutes are whole active minutes');
 select is((current_setting('test.d')::jsonb #>> '{days,6,goal_minutes}')::integer,
   (array[10,20,30,40,50,60,0])[extract(isodow from current_setting('test.today')::date)::integer], 'goal minutes come from weekly_minutes');
 select is((current_setting('test.d')::jsonb #>> '{days,6,active}')::boolean, true, 'a day with a lesson is active');
