@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode, type RefObject } from 'react';
 import { HelpCircle, Sparkles } from 'lucide-react';
 import { m as motion } from 'motion/react';
-import type { ReportTargetKind, SubmitResult, Verdict } from '@linguo/shared';
+import type { AnswerLang, ReportTargetKind, SubmitResult, Verdict } from '@linguo/shared';
 import { AiExplainSheet } from '@/components/ai';
 import { ReportContentButton } from '@/components/report';
 import { Button } from '@/components/ui/Button';
@@ -24,13 +24,15 @@ export interface FeedbackPanelProps {
   ai?: ExerciseAiInput;
   /** Content the "Báo lỗi nội dung" button reports (spec 11 §2). Omit to hide the button. */
   report?: { kind: ReportTargetKind; id: string };
+  /** The exercise's `answer_lang`: screen readers read the revealed answer in that language, not as Vietnamese. */
+  answerLang?: AnswerLang;
 }
 
 /**
  * Verdict feedback. The `role="status"` wrapper stays mounted so screen readers register it before content
  * appears; focus moves to the heading when a new result arrives (not on mount, e.g. when resuming).
  */
-export function FeedbackPanel({ result, className, ai, report }: FeedbackPanelProps) {
+export function FeedbackPanel({ result, className, ai, report, answerLang }: FeedbackPanelProps) {
   const { reduceMotion } = useMotionPrefs();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -48,7 +50,9 @@ export function FeedbackPanel({ result, className, ai, report }: FeedbackPanelPr
   return (
     <div className={className}>
       <div ref={cardRef} role="status" aria-live="polite" className="scroll-mb-[calc(7rem+env(safe-area-inset-bottom,0px))]">
-        {result && <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} />}
+        {result && (
+          <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} answerLang={answerLang} />
+        )}
       </div>
       {result && ai && <FeedbackAiActions key={result.attempt_id} result={result} ai={ai} />}
       {result && report && (
@@ -109,10 +113,12 @@ function FeedbackCard({
   result,
   reduceMotion,
   headingRef,
+  answerLang,
 }: {
   result: SubmitResult;
   reduceMotion: boolean;
   headingRef: RefObject<HTMLHeadingElement>;
+  answerLang?: AnswerLang;
 }) {
   const ui = VERDICT_UI[result.verdict];
   const tagMessages = result.error_tags.map((tag) => ERROR_TAG_MESSAGES[tag]).filter((m): m is string => Boolean(m));
@@ -148,7 +154,9 @@ function FeedbackCard({
       {result.display_answer && (
         <p className="mt-3 text-[17px]">
           <span className="block text-sm font-semibold text-text">Đáp án</span>
-          <span className="font-semibold">{result.display_answer}</span>
+          <span lang={answerLang} className="font-semibold">
+            {result.display_answer}
+          </span>
         </p>
       )}
       {result.explanation && <p className="mt-2 text-[16px] text-text">{result.explanation.vi}</p>}

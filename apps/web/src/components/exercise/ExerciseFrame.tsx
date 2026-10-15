@@ -351,6 +351,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
             className="mt-4"
             ai={aiInput}
             report={reportable ? { kind: 'exercise', id: exercise.id } : undefined}
+            answerLang={exercise.answer_lang}
           />
         </div>
         <ActionBar>{actions}</ActionBar>

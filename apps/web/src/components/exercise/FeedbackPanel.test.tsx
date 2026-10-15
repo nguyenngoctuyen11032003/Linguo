@@ -57,6 +57,11 @@ describe('FeedbackPanel', () => {
     expect(screen.getByText('Động từ to be đi với I là am.')).toBeInTheDocument();
   });
 
+  it('marks the revealed answer with the answer language', () => {
+    renderExercise(<FeedbackPanel result={makeResult({ revealed: true, final: true, display_answer: '안녕하세요' })} answerLang="ko" />);
+    expect(screen.getByText('안녕하세요')).toHaveAttribute('lang', 'ko');
+  });
+
   it('keeps secondary text off the muted color, which drops below 4.5:1 on the tinted verdict card', () => {
     renderExercise(
       <FeedbackPanel
