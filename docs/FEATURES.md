@@ -11,7 +11,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 | 3 | Flashcard và ôn tập FSRS | `/app/on-tap` |
 | 4 | Kiểm tra đầu vào thích ứng | `/app/kiem-tra/:pathId` |
 | 5 | Kế hoạch phiên học | `/app/phien-hoc`, thẻ trên trang chủ |
-| 6 | Gia sư AI (gồm `review_writing`) | `/app/gia-su`, nút "Giải thích AI" |
+| 6 | Gia sư AI (8 tác vụ: thêm `review_writing`, `analyze_sentence`, `summarize_session`, `plan_review`, `roleplay_turn`) | `/app/gia-su`, nút "Giải thích AI", `/app/dong-vai` |
 | 7 | Luyện thi TOPIK / CEFR | `/app/luyen-thi` |
 | 8 | Tiến độ, động lực, analytics | `/app/tien-do` |
 | 9 | Nhắc học, báo cáo tuần, Web Push | `/app/thong-bao`, cài đặt |
@@ -20,6 +20,10 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 | 12 | Khu quản trị | `/quan-tri` |
 | 13 | Xuất và xoá dữ liệu tài khoản | cài đặt |
 | 14 | Quyền riêng tư và điều khoản | `/quyen-rieng-tu`, `/dieu-khoan` |
+| 15 | Luyện nói | `/app/luyen-noi` |
+| 16 | Đóng vai hội thoại với AI | `/app/dong-vai` |
+| 17 | Từ vựng của tôi (nhập CSV) | `/app/tu-vung-cua-toi` |
+| 18 | Quy ước hiệu năng, truy cập và thông báo lỗi | toàn app |
 
 ## 1. Onboarding và lộ trình học (Spec 1)
 
@@ -35,8 +39,10 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Route:** `/app/hoc-tap` (danh sách bài theo lộ trình), `/app/hoc-tap/bai/:lessonId` (trình học).
 - **Web:** `web/routes/app/lesson/` (các bước mục tiêu → giải thích → ví dụ → lỗi thường gặp → bài tập → tóm tắt → lịch ôn), `web/components/exercise/` (mcq, fill_blank, translate, word_bank, listen), `web/features/lesson-player/` (máy trạng thái `playerMachine.ts`, service).
 - **Offline:** `outbox.ts` giữ câu trả lời chưa tới server trong localStorage (tối đa 200, hết hạn 7 ngày, backoff tối đa 60 giây), phát lại theo thứ tự với cùng `idempotency_key` (`OutboxSyncProvider.tsx`, `useOutboxSync.ts`); `lessonCache.ts` giữ nội dung chữ của tối đa 2 bài gần nhất, 7 ngày, để mở lại khi mất mạng.
+- **Trang Học tập (`web/routes/app/learn/`):** gợi ý bài tiếp theo (`pickNextLesson` trong `grouping.ts`: bài đang học, nếu không thì bài chưa học đầu tiên đã đủ bài tiên quyết) và hiện tiến độ theo chương trình và từng unit (`learnedCount`).
+- **Cấu trúc trang bài học (`web/routes/app/lesson/LessonPage.tsx`):** tên bài là `h1` của trang; bộ đếm câu hỏi là một đoạn `aria-live="polite"` (đọc lại khi sang câu mới); nút thoát chỉ hỏi xác nhận khi còn câu trả lời chưa gửi (`run.pendingCount > 0`).
 - **Chấm điểm:** chấm trên server theo `shared/content/grading.ts` (cùng thuật toán với hàm SQL `grade_exercise`); fixture dùng chung `grading.fixtures.json`.
-- **Database:** `20261014000100_content.sql` (chương trình, unit, bài, học liệu, bài tập, `content_private.exercise_keys`, `import_content_bundle`), `20261014000200_lesson_runs.sql` (`start_lesson`, `get_lesson`, `submit_exercise`, `grade_exercise`, `complete_lesson`, `save_lesson_cursor`, `path_lessons`, `lesson_for_path`), `20261014000600_spec2_sync.sql`, `20261015000800_answer_integrity.sql` (xem HANDOFF).
+- **Database:** `20261014000100_content.sql` (chương trình, unit, bài, học liệu, bài tập, `content_private.exercise_keys`, `import_content_bundle`), `20261014000200_lesson_runs.sql` (`start_lesson`, `get_lesson`, `submit_exercise`, `grade_exercise`, `complete_lesson`, `save_lesson_cursor`, `path_lessons`, `lesson_for_path`), `20261014000600_spec2_sync.sql`, `20261015000800_answer_integrity.sql` (khoá đáp án theo phiên bản, kẹp `client_at`), `20261016000500_content_admin_hardening.sql` (thêm quy tắc `client_at` cũ hơn 48 giờ bị bỏ qua); xem [HANDOFF](superpowers/HANDOFF.md) mục 2.
 - **Nội dung:** `content/<en|ko>/programs/...` và `content/<en|ko>/items/`; cách soạn và xuất bản ở [content/README.md](../content/README.md) và [DEPLOY.md](DEPLOY.md) mục "Xuất bản nội dung".
 - **Test:** `supabase/tests/lesson_runs.test.sql`, `grading.test.sql`, `answer_integrity.test.sql`, `content.test.sql`, `content_no_leak.test.sql`; `scripts/content-import.test.mjs`; `web/features/lesson-player/*.test.ts(x)`; `web/routes/app/lesson/*.test.tsx`; e2e `lesson.spec.ts`.
 
@@ -62,18 +68,25 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Route:** `/app/phien-hoc` (độ dài 10/15/30/45/60/90/120 phút, tham số `?phut=`); thẻ "Hôm nay" trên trang chủ (`web/routes/app/home/TodayCard.tsx`).
 - **Web:** `web/routes/app/session/`, `web/features/session/` (`usePlanner.ts`, `useTodaySession.ts`), `web/features/session-link/` (đưa người học quay lại phiên sau khi làm xong bài/ôn tập).
 - **Shared:** `shared/planner/plan.ts` (bộ lập kế hoạch thuần, chạy phía client), `contract.ts`.
+- **Bỏ qua và hoàn tác:** bỏ qua một hoạt động hiện nút "Hoàn tác" trong `UNDO_VISIBLE_MS` = 8 giây (`web/routes/app/session/SessionPage.tsx`); nút đổi thứ tự cao 44px và đọc lại vị trí mới cho trình đọc màn hình. Khi phiên xong, `web/routes/app/session/SessionSummaryButton.tsx` gọi tác vụ AI `summarize_session` (mục 6).
 - **Database:** `20261014000900_session_planner.sql` (`get_session_inputs`, `get_today_session`, `save_session_plan`, `reorder_session`, `update_session_item`, `finish_session`, `session_recap`, bảng `study_sessions`).
 - **Test:** `supabase/tests/session_planner.test.sql`; `shared/planner/plan.test.ts`, `contract.test.ts`; `web/features/session/*.test.ts(x)`, `web/routes/app/session/session.test.tsx`; e2e `session.spec.ts`, `session-return.spec.ts`.
 
-## 6. Gia sư AI (Spec 5, thêm `review_writing` ở Spec 9)
+## 6. Gia sư AI (Spec 5; thêm `review_writing` ở Spec 9, bốn tác vụ nữa ở Spec 8.2)
 
 - **Route:** `/app/gia-su`; nút "Giải thích AI" trong bài học, thẻ ôn, phản hồi bài tập và bài viết trong đề thi.
 - **Web:** `web/routes/app/tutor/`, `web/components/ai/` (sheet, modal, quota chip, fallback khi AI lỗi, báo cáo câu trả lời AI, hộp thoại thông báo quyền riêng tư), `web/features/ai-tutor/`.
-- **Edge Function:** `supabase/functions/ai-tutor/` (`handler.ts` là pipeline; `lib/gemini.ts`, `lib/breaker.ts`, `lib/ip-limiter.ts`, `lib/prompts/`), cấu hình `[functions.ai-tutor] verify_jwt = true` trong `supabase/config.toml`. Bốn tác vụ: `explain_concept`, `generate_practice`, `analyze_error`, `review_writing` (`AI_TASKS` trong `shared/ai/contract.ts`; bản sao hợp đồng cho Deno ở `supabase/functions/_shared/ai-contract.ts`, đồng bộ bằng `pnpm ai:contract`).
+- **Edge Function:** `supabase/functions/ai-tutor/` (`handler.ts` là pipeline; `lib/gemini.ts`, `lib/breaker.ts`, `lib/ip-limiter.ts`, `lib/prompts/`), cấu hình `[functions.ai-tutor] verify_jwt = true` trong `supabase/config.toml`. Tám tác vụ: `explain_concept`, `generate_practice`, `analyze_error`, `review_writing`, `analyze_sentence`, `summarize_session`, `plan_review`, `roleplay_turn` (`AI_TASKS` trong `shared/ai/contract.ts`; bản sao hợp đồng cho Deno ở `supabase/functions/_shared/ai-contract.ts`, đồng bộ bằng `pnpm ai:contract`).
+- **Bốn tác vụ thêm (migration `20261016000200_ai_more_tasks.sql` và `20261016000600_ai_roleplay.sql`; chỉ mở rộng danh sách tác vụ trong CHECK của `ai_cache`, `ai_usage`, `ai_reports` và trong các RPC của cache/log):**
+  - `analyze_sentence`: phân tích một câu (tối đa `ANALYZE_SENTENCE_MAX_CHARS` = 160 ký tự) ở tab phân tích câu của trang gia sư (`web/routes/app/tutor/TutorPage.tsx`); có cache như `explain_concept`.
+  - `summarize_session`: tóm tắt phiên học khi hoàn thành (`web/routes/app/session/SessionSummaryButton.tsx`); đầu vào là bản tóm tắt gọn do client dựng (tối đa `SESSION_SUMMARY_MAX_ACTIVITIES` = 12 hoạt động); không cache.
+  - `plan_review`: kế hoạch ôn từ các lỗ hổng đã phát hiện, ở trang Tiến độ (`web/routes/app/progress/ReviewPlanButton.tsx`, `review-plan.ts`); tối đa `PLAN_REVIEW_MAX_GAPS` = 10 lỗ hổng vào, `PLAN_REVIEW_MAX_STEPS` = 5 bước ra; có cache theo đầu vào.
+  - `roleplay_turn`: xem mục 16.
+  - Đầu ra được kiểm trong `supabase/functions/ai-tutor/lib/prompts/` và hiển thị bằng `web/components/ai/AiMoreViews.tsx`.
 - **Giới hạn (đọc từ code):** quota ngày theo tài khoản `GEMINI_DAILY_USER_LIMIT` (mặc định 20), 30 request/phút/IP theo isolate, payload tối đa 16 KB, bài viết cho `review_writing` tối đa 1500 ký tự; circuit breaker mở sau 5 lỗi upstream trong 60 giây; thiếu `GEMINI_API_KEY`/`GEMINI_MODEL` trả 503 `ai_unavailable`. Vận hành: [RUNBOOK.md](RUNBOOK.md) mục 6.
 - **Database:** `20261014000500_ai_gateway.sql` (`ai_cache`, `ai_quota`, `ai_usage`, `ai_reports`, `ai_quota_consume`, `ai_quota_refund`, `ai_usage_log`, `ack_ai_notice`, `ai_report`), `20261015000700_ai_review_writing.sql` (mở rộng danh sách tác vụ).
 - **Nhãn:** phản hồi bài viết ghi "Phản hồi luyện tập — không phải điểm chính thức" (`WRITING_FEEDBACK_LABEL` trong `web/components/ai/AiResultView.tsx`); AI không bao giờ sinh câu hỏi trong lúc thi.
-- **Test:** `supabase/tests/ai_gateway.test.sql`, `ai_review_writing.test.sql`; Deno `supabase/functions/ai-tutor/handler_test.ts` và `lib/*_test.ts` (CI job `functions`); `shared/ai/contract.test.ts`; `web/components/ai/ai-ui.test.tsx`, `web/features/ai-tutor/*.test.ts(x)`, `web/routes/app/tutor/tutor.test.tsx`; e2e `ai.spec.ts`.
+- **Test:** `supabase/tests/ai_gateway.test.sql`, `ai_review_writing.test.sql`, `ai_more_tasks.test.sql`, `ai_roleplay.test.sql`; Deno `supabase/functions/ai-tutor/handler_test.ts` và `lib/*_test.ts` (CI job `functions`); `shared/ai/contract.test.ts`, `contract-more.test.ts`, `contract-roleplay.test.ts`; `web/components/ai/ai-ui.test.tsx`, `web/features/ai-tutor/*.test.ts(x)`, `web/routes/app/tutor/tutor.test.tsx`; e2e `ai.spec.ts`, `ai-more.spec.ts`.
 
 ## 7. Luyện thi TOPIK I/II và CEFR (Spec 9)
 
@@ -88,9 +101,10 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 
 - **Route:** `/app/tien-do` (hoạt động, học tập, năng lực; XP, chuỗi ngày theo lịch, thử thách tuần, huy hiệu, danh sách lỗi sai, ước lượng); dải động lực trên trang chủ.
 - **Web:** `web/routes/app/progress/`, `web/features/progress/` (`useProgressDashboard.ts`, `useMotivationPrefs.ts`), phần bật/tắt động lực ở `web/routes/app/settings/MotivationSection.tsx`.
+- **Luyện thi tính vào chuỗi ngày (`20261016000100_exam_activity.sql`):** khi đóng một lượt thi (nộp hoặc hết giờ), `exam_close_attempt` cộng lượt đó vào `activity_days` đúng một lần: số câu = số đáp án khác rỗng; thời gian hoạt động = tổng khoảng cách giữa các lần lưu đáp án, mỗi khoảng tối đa 120 giây (khoảng đầu tính từ `started_at`); XP luôn 0 (luyện thi không dùng để cày XP); ngày tính theo múi giờ của người học. Cột `exam_attempts.activity_counted_at` đánh dấu lượt đã được cộng nên đóng lại hay chạy lại không cộng đôi. Cuối migration gọi `exam_backfill_activity()` để cộng các lượt đã đóng trước đó (gọi lần hai không còn gì để làm). Ngưỡng ngày hoạt động vẫn là `STREAK_RULES` (10 lượt ôn hoặc 5 phút).
 - **Analytics nội bộ:** `web/features/analytics/` (`client.ts` gom lô tối đa 20 sự kiện, `RouteTracker.tsx` chỉ gửi mẫu route, không gửi id/query). Danh sách sự kiện cố định ở `ANALYTICS_EVENTS` (`shared/progress/contract.ts`). Người học tắt được bằng `user_preferences.analytics_opt_out` (khi đó `track_events` không lưu gì).
 - **Database:** `20261015000100_progress.sql` (activity_days, user_badges, các trigger trên attempts/review_logs/lesson_runs, `get_progress_dashboard`), `20261015000110_analytics.sql` (`analytics_events`, `track_events`, `purge_analytics`).
-- **Test:** `supabase/tests/progress.test.sql`, `analytics.test.sql`; `web/features/progress/*.test.ts(x)`, `web/features/analytics/*.test.ts(x)`, `web/routes/app/progress/*.test.tsx`; e2e `progress.spec.ts`.
+- **Test:** `supabase/tests/progress.test.sql`, `analytics.test.sql`, `exam_activity.test.sql`; `web/features/progress/*.test.ts(x)`, `web/features/analytics/*.test.ts(x)`, `web/routes/app/progress/*.test.tsx`; e2e `progress.spec.ts`.
 
 ## 9. Nhắc học, báo cáo tuần, Web Push (Spec 10)
 
@@ -98,7 +112,15 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Web:** `web/features/notifications/` (service, `push.ts` chỉ đăng ký thiết bị khi người học bấm, `usePushNotifications.ts`, `useWeeklySummary.ts`), `web/routes/app/notifications/`.
 - **Edge Function:** `supabase/functions/notify-dispatch/` (`handler.ts`, `push.ts`), `verify_jwt = false`, chỉ nhận `Authorization: Bearer <NOTIFY_CRON_SECRET>`; được workflow `.github/workflows/notify.yml` gọi mỗi 15 phút (xem [DEPLOY.md](DEPLOY.md) mục "Nhắc học & Web Push").
 - **Database:** `20261015000300_reminders.sql` (notification_prefs, notifications, push_subscriptions; `get_notification_prefs`, `set_notification_prefs`, `save_push_subscription`, `delete_push_subscription`, `list_notifications`, `mark_notification`, `unread_notification_count`; chỉ `service_role`: `generate_due_notifications`, `purge_notifications`). Báo cáo tuần: Chủ nhật, khung nhắc đầu tiên (19:30 nếu chưa có cấu hình), luôn vào hộp thư, chỉ đẩy ngoài giờ yên lặng. Nội dung nhắc không dùng câu gây áp lực (`forbidden-phrases.test.ts`).
-- **Test:** `supabase/tests/reminders.test.sql`; Deno `supabase/functions/notify-dispatch/handler_test.ts`, `push_test.ts`; `web/features/notifications/*.test.ts(x)`, `web/routes/app/notifications/NotificationsPage.test.tsx`, `web/routes/app/settings/RemindersSection.test.tsx`; e2e `reminders.spec.ts`.
+- **Gia cố (`20261016000400_notify_hardening.sql`, `supabase/functions/notify-dispatch/endpoint.ts`):**
+  - Endpoint push chỉ nhận FCM, Mozilla autopush, WNS, Apple (`is_allowed_push_endpoint` trong RPC lẫn CHECK, kiểm lại trong function, không theo redirect); `save_push_subscription` giới hạn 20 lần/giờ; client không đọc được khoá `p256dh`/`auth` của chính mình.
+  - Cửa sổ bù: nhắc vẫn đến hạn trong 60 phút kể từ đầu khung (`REMINDER_RULES.window_minutes`) vì cron GitHub hay chạy muộn; chỉ bỏ qua khi đã có nhắc của người đó trong cùng khung.
+  - Nội dung push luôn chung chung theo loại thông báo (`reminders_push_text`); tên bài, số thẻ, số phút chỉ ở hộp thư trong app.
+  - Gửi thử lại được: `pending_push_notifications` trả các dòng chưa gửi push trong 4 giờ (`PUSH_TTL_SECONDS`). Chỉ phản hồi 401/403 của push service tăng `failure_count` (xoá khi đạt `max_push_failures` = 10); 404/410 xoá ngay; lỗi mạng, 429, 5xx không tính.
+  - Dọn: `notify-dispatch` gọi `purge_notifications` mỗi đêm (các lượt chạy trong giờ UTC 20, `PURGE_UTC_HOUR`).
+  - Đăng xuất: `releasePushOnSignOut` (`web/features/notifications/push.ts`) huỷ subscription của thiết bị và xoá endpoint phía server trước `signOut` (tốt nhất có thể, không chặn, tối đa 2,5 giây).
+  - Bấm vào thông báo (`web/features/pwa/sw-click.ts`): nếu app đang mở thì chỉ focus, **không** điều hướng cửa sổ đó (tránh mất bài đang làm); app nhận đích qua `postMessage` và tự định tuyến trong `web/app/PwaBridge.tsx` (hỏi trước khi rời bài học/bài thi).
+- **Test:** `supabase/tests/reminders.test.sql`, `notify_hardening.test.sql`; Deno `supabase/functions/notify-dispatch/handler_test.ts`, `push_test.ts`, `endpoint_test.ts`; `web/features/pwa/sw-click.test.ts`; `web/features/notifications/*.test.ts(x)`, `web/routes/app/notifications/NotificationsPage.test.tsx`, `web/routes/app/settings/RemindersSection.test.tsx`; e2e `reminders.spec.ts`.
 
 ## 10. PWA: cài app và offline (Spec 10)
 
@@ -110,7 +132,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 
 - **UI:** `web/components/report/` (`ReportContentButton`, `ReportContentDialog`) trong bài tập, thẻ ôn, câu hỏi kiểm tra đầu vào và phần xem lại bài thi; "Báo lỗi của tôi" ở Cài đặt (`web/routes/app/settings/MyReportsSection.tsx`).
 - **Web:** `web/features/content-reports/`.
-- **Database:** `20261015000400_content_reports.sql` (`content_reports`, `report_content`, `list_my_reports`). Lý do báo: `wrong_answer`, `unclear`, `typo`, `audio`, `translation`, `offensive`, `other` (`REPORT_REASONS` trong `shared/admin/contract.ts`). Người học đọc báo lỗi của mình qua RLS; xử lý chỉ qua RPC của quản trị (mục 12).
+- **Database:** `20261015000400_content_reports.sql` (`content_reports`, `report_content`, `list_my_reports`; cách tính báo trùng được sửa ở `20261016000500_content_admin_hardening.sql`). Lý do báo: `wrong_answer`, `unclear`, `typo`, `audio`, `translation`, `offensive`, `other` (`REPORT_REASONS` trong `shared/admin/contract.ts`). Người học đọc báo lỗi của mình qua RLS; xử lý chỉ qua RPC của quản trị (mục 12).
 - **Test:** `supabase/tests/content_reports.test.sql`; `web/features/content-reports/*.test.ts(x)`, `web/components/report/report.test.tsx`, `my-reports-section.test.tsx`; e2e `admin.spec.ts` (kịch bản "a learner reports a lesson exercise and follows it in Settings").
 
 ## 12. Khu quản trị `/quan-tri` (Spec 11)
@@ -119,12 +141,13 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Web:** `web/routes/admin/` (`AdminGuard.tsx`, `AdminLayout.tsx`, `admin-routes.tsx`), `web/features/admin/`. Danh sách đường dẫn con ở `ADMIN_CHILD_PATHS` trong `web/app/router.tsx`, có test giữ đồng bộ với `adminRoutes` (`web/routes/admin/admin-route.test.tsx`).
 - **Vai trò (`public.staff_roles`):** `editor` < `reviewer` < `admin`. Cách đọc từng trang và cấp vai trò: [DEPLOY.md](DEPLOY.md) mục "Quản trị nội dung".
 - **Database:** `20261015000410_admin.sql` (`staff_role`, `admin_content_overview`, `admin_list_content`, `admin_get_content`, `admin_set_status`, `admin_list_reports`, `admin_resolve_report`, `admin_list_sources`, `admin_analytics`, `admin_ai_usage`, `admin_audit_log_recent`, `admin_grant_role`; helper trong schema `admin_private`), `20261015000420_import_keep_published.sql` (nhập lại nội dung không bao giờ hạ một dòng đã `published`).
+- **Gia cố (`20261016000500_content_admin_hardening.sql`):** báo lỗi chỉ là `duplicate` của báo lỗi chưa xử lý cùng lý do và cùng phiên bản nội dung (mỗi người một báo lỗi chưa xử lý cho mỗi mục); import không tự duyệt/xuất bản dòng còn báo lỗi chưa xử lý và giữ trạng thái do người duyệt đặt; `admin_grant_role` không gỡ hay hạ admin cuối cùng; `admin_audit_log` chỉ thêm, không sửa; đọc đáp án qua `admin_get_content` để lại một dòng nhật ký.
 - **Test:** `supabase/tests/admin.test.sql`, `content_no_leak.test.sql`; `web/routes/admin/*.test.tsx`, `web/features/admin/*.test.ts(x)`; e2e `admin.spec.ts` (404 cho người học, axe, không cuộn ngang).
 
 ## 13. Xuất và xoá dữ liệu tài khoản (Spec 7)
 
 - **Route:** Cài đặt, mục "Tài khoản và dữ liệu" (`web/routes/app/settings/AccountDataSection.tsx`), `web/features/account/service.ts`.
-- **Database:** `20261014000910_account_data.sql`: `export_my_data()` (giới hạn 5 lần/giờ), `delete_my_account(text)` (cần gõ đúng cụm xác nhận, ghi một dòng ẩn danh vào `account_deletions`), `purge_expired_data()` (chỉ `service_role`, chạy bởi workflow Maintenance). Quy tắc bao phủ của bản xuất: `account_optional_tables()` (`20261015000610_export_exam_data.sql`), xem HANDOFF.
+- **Database:** `20261014000910_account_data.sql`: `export_my_data()` (giới hạn 5 lần/giờ), `delete_my_account(text)` (cần gõ đúng cụm xác nhận, ghi một dòng ẩn danh vào `account_deletions`), `purge_expired_data()` (chỉ `service_role`, chạy bởi workflow Maintenance). Quy tắc bao phủ của bản xuất: `account_optional_tables()` (bản mới nhất ở `20261016000300_personal_vocab.sql`, thêm ba bảng từ vựng cá nhân), xem HANDOFF.
 - **Test:** `supabase/tests/account_data.test.sql`, `account_export_coverage.test.sql`; `web/features/account/service.test.ts`, `account-data-section.test.tsx`; e2e `hardening.spec.ts` (nhóm "account data").
 
 ## 14. Quyền riêng tư và điều khoản (Spec 7)
@@ -132,3 +155,51 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Route:** `/quyen-rieng-tu`, `/dieu-khoan` (`web/routes/legal/`, nội dung ở `content.ts`; số ngày lưu trữ lấy từ `web/features/account/retention.ts`); mục "AI và quyền riêng tư" ở Cài đặt (`web/routes/app/settings/AiPrivacySection.tsx`) nói rõ gia sư AI gửi gì tới Gemini gói miễn phí.
 - **Bảo mật web đi kèm:** CSP chèn lúc build (`apps/web/build/csp.ts`), `pnpm check:bundle`, gitleaks, kiểm tra biến `VITE_*` (`scripts/check-public-env.mjs`); chi tiết ở [RUNBOOK.md](RUNBOOK.md) mục 7.
 - **Test:** `web/routes/legal/legal.test.tsx`, `web/routes/app/settings/ai-privacy-section.test.tsx`; e2e `hardening.spec.ts` (trang pháp lý, axe), `csp.spec.ts`, `a11y.spec.ts`, `a11y-routes.spec.ts`.
+
+## 15. Luyện nói (Spec 6.9)
+
+- **Route:** `/app/luyen-noi` (có trong thanh điều hướng); chế độ "Nhắc lại câu", "Trả lời mở", "Đóng vai" (kịch bản soạn sẵn trong `web/features/speaking/content.ts`, không gọi AI; đóng vai với AI ở mục 16).
+- **Web:** `web/routes/app/speaking/` (`SpeakingPage.tsx`, `RepeatMode.tsx`, `OpenMode.tsx`, `RolePlayMode.tsx`, `PracticePanel.tsx`), `web/features/speaking/`. Câu luyện lấy từ bài học trong lộ trình (`useSpeakingMaterial.ts`, tối đa `LESSON_CHOICES_MAX` = 30 bài); không có thì dùng bộ câu mẫu `FALLBACK_SENTENCES`.
+- **Ghi âm chỉ trong bộ nhớ:** `useRecorder.ts` dùng `MediaRecorder`, giữ `Blob` sau một object URL, không tải lên và không lưu; tự dừng sau `RECORDING_MAX_MS` = 60 giây; rời trang thì dừng, nhả micro và thu hồi URL. Thiếu `getUserMedia`/`MediaRecorder` hoặc bị từ chối quyền thì màn hình rơi về nghe mẫu và tự luyện.
+- **Chép lời là tuỳ chọn:** chỉ bật khi người học tích; dùng Web Speech API của trình duyệt (`useSpeechRecognition.ts`), có thể sai và sửa được; trình duyệt không hỗ trợ thì ẩn. Một số trình duyệt gửi âm thanh tới dịch vụ nhận dạng của chính họ, màn hình có ghi chú về điều này.
+- **Tự đánh giá:** năm trục (`RATING_AXES`: độ dễ hiểu, âm mục tiêu, nhịp và ngắt nghỉ, độ trôi chảy, hợp nội dung), mức 1–3, không có điểm tổng. Chỉ điểm tự đánh giá được lưu trong `localStorage` của trình duyệt (`ratings.ts`, khoá `linguo-speaking-v1:<userId>`, tối đa `REFLECTIONS_MAX` = 30 mục), không bao giờ lưu âm thanh hay bản chép, và không gửi gì lên server. Không suy ra trình độ từ một bản ghi.
+- **CSP:** `media-src` có thêm `blob:` để phát lại bản ghi (`apps/web/build/csp.ts`, có chú thích; test ở `apps/web/build/csp.test.ts`).
+- **Database:** không có migration riêng.
+- **Test:** `web/features/speaking/*.test.ts(x)`, `web/routes/app/speaking/speaking.test.tsx`; e2e `speaking.spec.ts` (gồm kiểm không có lời gọi tải lên Supabase storage).
+
+## 16. Đóng vai hội thoại với AI (Spec 8.2 #6)
+
+- **Route:** `/app/dong-vai` (tiêu đề "Đóng vai với AI"): chọn kịch bản, trò chuyện, nhận xét sửa lỗi và tổng kết cuối buổi.
+- **Danh mục kịch bản cố định:** `shared/ai/roleplay-catalog.ts` (bảy kịch bản cho mỗi ngôn ngữ en/ko: `cafe_order`, `ask_directions`, `hotel_checkin`, `doctor_visit`, `job_interview`, `shopping_bargain`, `introductions`). Yêu cầu `roleplay_turn` chỉ mang khoá kịch bản; vai và mục tiêu do Edge Function lấy từ chính file này, không bao giờ từ chữ của client (chống prompt injection). File được sao nguyên văn sang `supabase/functions/_shared/roleplay-catalog.ts` bởi `pnpm ai:contract`.
+- **Giới hạn:** tối đa `ROLEPLAY_MAX_TURNS` = 12 lượt (lượt 0 là câu mở đầu của đối tác, lượt cuối khép hội thoại); mỗi request gửi tối đa `ROLEPLAY_HISTORY_MAX_TURNS` = 10 lượt gần nhất, mỗi lượt tối đa `ROLEPLAY_TURN_MAX_CHARS` = 300 ký tự; trả lời của đối tác tối đa `ROLEPLAY_REPLY_MAX_CHARS` = 400 ký tự và tối đa `ROLEPLAY_MAX_CORRECTIONS` = 2 sửa lỗi. **Mỗi lượt là một request, trừ một lượt quota AI** (cùng quota ngày với các tác vụ khác). Không cache.
+- **Không lưu lịch sử trên server:** hội thoại sống trong state React và `sessionStorage` của tab (`web/features/roleplay/storage.ts`, khoá `linguo:roleplay:v1:<userId>`) để tải lại trang không mất; xoá khi kết thúc hoặc rời buổi; log AI chỉ lưu siêu dữ liệu. Server kiểm đầu ra: trả lời tiếng Hàn phải có Hangul, tiếng Anh không được có Hangul (`supabase/functions/ai-tutor/lib/prompts/roleplay_turn.ts`).
+- **Web:** `web/routes/app/roleplay/` (`ScenarioPicker.tsx`, `ChatView.tsx`, `RecapView.tsx`), `web/features/roleplay/` (`session.ts`, `useRoleplaySession.ts`).
+- **Database:** `20261016000600_ai_roleplay.sql` (thêm `roleplay_turn` vào danh sách tác vụ của `ai_cache`, `ai_usage`, `ai_reports` và các RPC liên quan).
+- **Test:** `supabase/tests/ai_roleplay.test.sql`; Deno `supabase/functions/ai-tutor/lib/prompts/prompts_roleplay_test.ts`; `shared/ai/contract-roleplay.test.ts`; `web/features/roleplay/*.test.ts(x)`, `web/routes/app/roleplay/roleplay.test.tsx`; e2e `roleplay.spec.ts` (mock `roleplay_turn` xác định), quét axe ở `a11y-routes.spec.ts`.
+
+## 17. Từ vựng của tôi (nhập CSV)
+
+Thiết kế đầy đủ: [specs/2026-10-14-linguo-personal-vocab-design.md](superpowers/specs/2026-10-14-linguo-personal-vocab-design.md).
+
+- **Route:** `/app/tu-vung-cua-toi` (danh sách), `/app/tu-vung-cua-toi/:listId` (chi tiết), `/app/tu-vung-cua-toi/:listId/on-tap` (ôn bằng flashcard).
+- **Web:** `web/routes/app/vocab/` (`ImportDialog.tsx`, `PersonalListsPage.tsx`, `PersonalListPage.tsx`, `PersonalReviewPage.tsx`, các hộp thoại sửa/xoá), `web/features/personal-vocab/`.
+- **Shared:** `shared/personal-vocab/` (`contract.ts`, `limits.ts`, `csv.ts`): CSV được phân tích hoàn toàn ở trình duyệt (từ chối file trên 1 MiB, nhận dấu `,` `;` tab, tiêu đề song ngữ); chỉ các dòng đã qua xem trước được gửi lên.
+- **Giới hạn (`PERSONAL_VOCAB_LIMITS`, trùng với SQL):** 20 danh sách/người, 1000 từ/danh sách, 5000 từ/người, 1000 dòng/lần nhập, 10 lần nhập/giờ, file CSV tối đa 1 MiB (1.048.576 byte).
+- **Database:** `20261016000300_personal_vocab.sql`: bảng `personal_word_lists`, `personal_words`, `personal_vocab_imports` (RLS chỉ chủ sở hữu; client chỉ đọc, ghi qua RPC); RPC `list_personal_lists`, `create_personal_list`, `rename_personal_list`, `delete_personal_list`, `import_personal_words`, `update_personal_word`, `delete_personal_word`, `get_personal_review_queue`, `grade_personal_word`.
+- **Dùng lại FSRS, tách khỏi tiến độ:** chấm điểm gọi `srs_next`/`srs_previews` hiện có; ôn từ cá nhân không ghi `review_cards`, `review_logs`, mastery, chuỗi ngày, huy hiệu hay analytics (theo ghi chú thiết kế).
+- **Xuất và xoá dữ liệu:** ba bảng nằm trong `account_optional_tables()` nên có trong `export_my_data` và bị xoá cùng tài khoản (cascade).
+- **Test:** `supabase/tests/personal_vocab.test.sql`, `account_export_coverage.test.sql`; `shared/personal-vocab/*.test.ts`; `web/features/personal-vocab/*.test.ts(x)`, `web/routes/app/vocab/vocab.test.tsx`; e2e `personal-vocab.spec.ts`.
+
+## 18. Quy ước hiệu năng, truy cập và thông báo lỗi
+
+Quy ước áp dụng cho mọi route; nhiều điều trong đó có test hoặc bước CI bắt khi vi phạm.
+
+- **Route tải lazy:** các trang người học và `/quan-tri` tải theo nhu cầu bằng `lazyPage(...)` trong `web/app/router.tsx`.
+- **Animation:** `LazyMotion` ở chế độ `strict` (`web/providers/MotionProvider.tsx`), tính năng nạp lười trong `web/providers/motion-features.ts`. Mọi component phải `import { m as motion } from 'motion/react'`; import `motion` đầy đủ sẽ báo lỗi ở dev thay vì lặng lẽ kéo cả thư viện vào bundle đầu.
+- **Chunk vendor:** `v-react`, `v-router`, `v-supabase`, `v-zod`, `v-lucide`, `v-lucide-app` (`apps/web/vite.config.ts`, `codeSplitting.groups`).
+- **zod ở chế độ `jitless`, giữ trong chunk `v-zod`:** `web/app/zod-config.ts` (import đầu tiên của `main.tsx`). Zod 4 thử `Function('')` ở lần parse object đầu để quyết định có biên dịch parser hay không; CSP không có `'unsafe-eval'` (`apps/web/build/csp.ts`) nên phép thử đó bị báo là vi phạm CSP. `jitless` bỏ phép thử. File được ghim vào cùng chunk `v-zod` để cờ chạy ngay sau zod và trước mọi module tạo schema (commit `ad0ea9d`).
+- **Ngân sách kích thước:** `pnpm build` rồi `pnpm check:bundle-size` (`scripts/check-bundle-size.mjs`; CI job `web` chạy sau `check:bundle`). Script đi theo các `import` tĩnh từ `dist/index.html` và fail khi chunk vào (`index-*.js`) vượt 33 KiB gzip, tổng JS tải đầu vượt 240 KiB gzip (`BUDGETS`), hoặc một chunk phải lazy (`LAZY_CHUNKS`: admin, motion-features, các trang lớn) bị import tĩnh. Tăng ngân sách phải có lý do trong commit. Test: `node --test scripts/check-bundle-size.test.mjs` (có trong `pnpm test`).
+- **Tiêu đề trang và thông báo chuyển trang:** tên trang khai báo tập trung ở `web/lib/route-titles.ts` (thêm route mới thì thêm vào `ROUTE_NAMES`); `RouteAnnouncer` (`web/components/layout/RouteAnnouncer.tsx`) đặt `document.title`, đọc tên trang bằng vùng live và chuyển focus tới `h1` (hoặc `main`).
+- **Màu và trạng thái vô hiệu:** viền ô nhập dùng token `--input-border` (`web/design/tokens.css`, tương phản 3:1, ánh xạ thành `color-input-border` trong `global.css`); điều khiển tự làm dùng `DISABLED_NEUTRAL` và `DISABLED_NEUTRAL_TRACK` (`web/components/ui/disabled-styles.ts`) thay vì giảm độ mờ.
+- **Không hiện mã lỗi thô cho người học:** lỗi chưa có thông điệp tiếng Việt riêng dùng `GENERIC_ERROR_MESSAGE` hoặc `genericErrorMessage(code)` (`web/lib/error-fallback.ts`; mã chỉ được `console.debug` ở dev). `ErrorState` mặc định dùng thông điệp này.
+- **Bố cục hẹp:** không cuộn ngang ở 320px (e2e `layout.spec.ts`, `a11y-routes.spec.ts`).
