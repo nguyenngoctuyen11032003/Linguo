@@ -4,7 +4,8 @@ import { describe, expect, it, vi } from 'vitest';
 import { CEFR_RESULT, TOPIK_RESULT } from './exam-fixtures';
 import { QuestionTypeBreakdown } from './QuestionTypeBreakdown';
 import { ResultSummary } from './ResultSummary';
-import { ReviewList, rubricStorageKey } from './ReviewList';
+import { rubricStorageKey } from './labels';
+import { ReviewList } from './ReviewList';
 import { renderExam } from './test-utils';
 
 describe('ResultSummary', () => {

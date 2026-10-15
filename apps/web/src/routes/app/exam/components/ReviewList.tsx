@@ -5,7 +5,7 @@ import { ReportContentButton } from '@/components/report';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
 import { readString, writeString } from '@/lib/storage';
-import { SECTION_LABELS, familyLanguage, isAnswered, questionTypeLabel } from './labels';
+import { SECTION_LABELS, familyLanguage, isAnswered, questionTypeLabel, rubricStorageKey } from './labels';
 
 export interface ReviewListProps {
   result: ExamResult;
@@ -31,8 +31,6 @@ export function ReviewList({ result, onAiFeedback }: ReviewListProps) {
   );
 }
 
-/** Spec 9 §4: the essay self-assessment checklist is kept on this device, per attempt and question. */
-export const rubricStorageKey = (attemptId: string, questionId: string) => `linguo:exam-rubric:${attemptId}:${questionId}`;
 
 function readChecked(key: string): Record<string, boolean> {
   const raw = readString(key);

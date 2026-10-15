@@ -127,6 +127,9 @@ export function formatScore(n: number): string {
 export const examResultHref = (attemptId: string) => `/app/luyen-thi/ket-qua/${attemptId}`;
 export const examRunnerHref = (attemptId: string) => `/app/luyen-thi/lam-bai/${attemptId}`;
 
+/** Spec 9 §4: localStorage key of the essay self-assessment checklist, per attempt and question. */
+export const rubricStorageKey = (attemptId: string, questionId: string) => `linguo:exam-rubric:${attemptId}:${questionId}`;
+
 /** Counted in code points so a Hangul syllable or an emoji is one character, as the learner sees it. */
 export function charCount(text: string): number {
   return Array.from(text).length;
