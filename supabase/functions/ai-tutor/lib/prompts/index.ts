@@ -7,6 +7,7 @@ import { explainConcept } from './explain_concept.ts';
 import { generatePractice } from './generate_practice.ts';
 import { planReview } from './plan_review.ts';
 import { reviewWriting } from './review_writing.ts';
+import { roleplayTurn } from './roleplay_turn.ts';
 import { summarizeSession } from './summarize_session.ts';
 import type { PromptModule } from './shared.ts';
 
@@ -20,4 +21,5 @@ export const PROMPTS: Record<AiTask, PromptModule> = {
   analyze_sentence: analyzeSentence,
   summarize_session: summarizeSession,
   plan_review: planReview,
+  roleplay_turn: roleplayTurn,
 };

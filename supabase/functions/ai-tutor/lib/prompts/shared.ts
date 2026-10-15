@@ -10,6 +10,8 @@ export interface PromptModule {
   /** `<task>@<n>`; bump on any prompt/schema change so cached answers are invalidated. */
   version: string;
   system: string;
+  /** Per-request system prompt when the trusted persona depends on the request (roleplay_turn's catalog scenario). */
+  buildSystem?(req: AiRequest): string;
   temperature: number;
   maxOutputTokens: number;
   /** Budget of the single repair attempt; defaults to the handler's 600 tokens. */

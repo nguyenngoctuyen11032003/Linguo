@@ -20,6 +20,9 @@ function cacheFields(req: AiRequest): (string | number)[] {
     case 'summarize_session':
       // Never cached (one learner's session); listed so the key stays total over every task.
       return [req.minutes, JSON.stringify(req.activities), JSON.stringify(req.accuracy_by_stage), JSON.stringify(req.error_tags)];
+    case 'roleplay_turn':
+      // Never cached (a conversation); listed so the key stays total over every task.
+      return [req.scenario_key, req.turn_index, n(req.learner_message), JSON.stringify(req.history)];
     case 'plan_review':
       // Order-independent: the same gaps in any order give the same plan. Labels are part of the model input.
       return [

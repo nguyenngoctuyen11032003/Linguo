@@ -5,6 +5,7 @@ import { callGemini, type GeminiDeps, GeminiError } from './lib/gemini.ts';
 import type { createBreaker } from './lib/breaker.ts';
 import { clientIp, type IpLimiter } from './lib/ip-limiter.ts';
 import { type PromptModule, PROMPTS } from './lib/prompts/index.ts';
+import { roleplayScenarioOf } from './lib/prompts/roleplay_turn.ts';
 import { extractJson, repairPrompt, sanitizeOutput } from './lib/text.ts';
 import { cacheKey } from './lib/cache-key.ts';
 
@@ -122,6 +123,9 @@ function inputChars(req: AiRequest): number {
       return JSON.stringify([req.activities, req.accuracy_by_stage, req.error_tags]).length;
     case 'plan_review':
       return JSON.stringify(req.gaps).length;
+    case 'roleplay_turn':
+      // Only sizes: the message and the history lengths, never their text.
+      return req.learner_message.length + req.history.reduce((n, t) => n + t.text.length, 0);
   }
 }
 
@@ -212,6 +216,8 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
   const parsed = aiRequestSchema.safeParse(body);
   if (!parsed.success) return fail(400, 'bad_request');
   const request = parsed.data;
+  // The scenario comes from the fixed catalog; an unknown key (or one of the other language) is a bad request.
+  if (request.task === 'roleplay_turn' && !roleplayScenarioOf(request)) return fail(400, 'bad_request');
 
   // 3. Configuration (nothing consumed yet).
   const apiKey = deps.env('GEMINI_API_KEY')?.trim();
@@ -333,7 +339,7 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
     const base = {
       apiKey,
       model,
-      system: prompt.system,
+      system: prompt.buildSystem ? prompt.buildSystem(request) : prompt.system,
       temperature: prompt.temperature,
       timeoutMs,
       responseSchema: prompt.responseSchema,
