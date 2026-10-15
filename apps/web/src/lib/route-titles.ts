@@ -36,6 +36,8 @@ const ROUTE_NAMES: ReadonlyArray<readonly [pattern: string, name: string | null]
   ['/app/tu-vung-cua-toi', 'Từ vựng của tôi'],
   ['/app/tu-vung-cua-toi/:listId', 'Danh sách từ vựng'],
   ['/app/tu-vung-cua-toi/:listId/on-tap', 'Ôn từ vựng của tôi'],
+  ['/app/lop-hoc', 'Lớp học'],
+  ['/app/lop-hoc/tham-gia', 'Tham gia lớp học'],
   ['/quan-tri', 'Quản trị — Tổng quan'],
   ['/quan-tri/noi-dung', 'Quản trị — Nội dung'],
   ['/quan-tri/noi-dung/:kind/:id', 'Quản trị — Chi tiết nội dung'],

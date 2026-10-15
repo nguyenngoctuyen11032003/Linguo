@@ -24,6 +24,8 @@ describe('routeDocumentTitle', () => {
     ['/app/tu-vung-cua-toi', 'Từ vựng của tôi · Linguo'],
     ['/app/tu-vung-cua-toi/l1', 'Danh sách từ vựng · Linguo'],
     ['/app/tu-vung-cua-toi/l1/on-tap', 'Ôn từ vựng của tôi · Linguo'],
+    ['/app/lop-hoc', 'Lớp học · Linguo'],
+    ['/app/lop-hoc/tham-gia', 'Tham gia lớp học · Linguo'],
     ['/app/tien-do', 'Tiến độ · Linguo'],
     ['/app/cai-dat', 'Cài đặt · Linguo'],
     ['/app/thong-bao', 'Thông báo · Linguo'],

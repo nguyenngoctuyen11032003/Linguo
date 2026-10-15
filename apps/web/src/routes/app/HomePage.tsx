@@ -10,6 +10,7 @@ import { setPathStatus } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { resolveTimeZone } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
+import { ClassesHomeCard } from '@/features/classes/ClassesHomeCard';
 import { DiagnosticCard } from './home/DiagnosticCard';
 import { NextLessonCard } from './home/NextLessonCard';
 import { PathSummaryCard } from './home/PathSummaryCard';
@@ -98,6 +99,7 @@ export function HomePage() {
           {paths.current.status === 'active' && pathSummary}
           <DiagnosticCard pathId={paths.current.id} />
           <SpeakingCard />
+          <ClassesHomeCard />
           <HomeMotivation pathId={paths.current.id} />
         </>
       )}
