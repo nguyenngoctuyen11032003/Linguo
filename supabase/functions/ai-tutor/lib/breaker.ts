@@ -10,6 +10,8 @@ export type BreakerState = 'closed' | 'open' | 'half_open';
 export interface Breaker {
   canRequest(): boolean;
   retryAfterSec(): number;
+  /** Gives back a claimed half-open probe slot when the request ended before reaching the upstream. */
+  releaseProbe(): void;
   onSuccess(): void;
   onFailure(kind: GeminiErrorKind): void;
   state(): BreakerState;
@@ -70,6 +72,10 @@ export function createBreaker(o: {
       if (s === 'closed') return 0;
       if (s === 'half_open') return 1;
       return Math.max(1, Math.ceil((openedAt! + o.openMs - o.now()) / 1000));
+    },
+
+    releaseProbe() {
+      probeAt = null;
     },
 
     onSuccess() {

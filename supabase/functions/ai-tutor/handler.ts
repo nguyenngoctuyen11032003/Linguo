@@ -320,13 +320,19 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
   try {
     const { data, error } = await db.rpc('ai_quota_consume', { p_limit: dailyLimit });
     const q = error ? null : parseQuota(data, dailyLimit);
-    if (!q) return fail(503, 'ai_unavailable');
+    if (!q) {
+      deps.breaker.releaseProbe();
+      return fail(503, 'ai_unavailable');
+    }
     quota = { used: q.used, limit: q.limit, resets_at: q.resets_at };
     if (!q.allowed) {
+      // No upstream call happens: give back a half-open probe slot claimed by canRequest().
+      deps.breaker.releaseProbe();
       await logUsage('quota_exceeded', 429, 0, false, false);
       return fail(429, 'quota_exceeded', { quota });
     }
   } catch {
+    deps.breaker.releaseProbe();
     return fail(503, 'ai_unavailable');
   }
 
@@ -402,6 +408,9 @@ export async function handle(req: Request, deps: HandlerDeps): Promise<Response>
     } else if (err instanceof InvalidOutputError) {
       status = 502;
       code = 'invalid_output';
+    } else {
+      // Unexpected local error before any breaker report: do not leave the probe slot claimed.
+      deps.breaker.releaseProbe();
     }
     try {
       await admin.rpc('ai_quota_refund', { p_user_id: userId });

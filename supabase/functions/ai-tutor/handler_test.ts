@@ -423,6 +423,22 @@ Deno.test('daily-quota 429 opens the breaker; the next request is refused withou
   assert.equal(db.used, 0);
 });
 
+Deno.test('half_open: an over-quota request does not pin the probe slot for the next in-quota request', async () => {
+  let t = NOW;
+  const breaker = createBreaker({ failureThreshold: 5, windowMs: 60_000, openMs: 60_000, now: () => t });
+  breaker.onFailure('daily_quota');
+  t += 60_000;
+  assert.equal(breaker.state(), 'half_open');
+
+  const over = harness({ db: fakeDb({ limitReached: true }), breaker });
+  await expectError(await handle(post(explainBody()), over.deps), 429, 'quota_exceeded');
+
+  const ok = harness({ breaker, steps: [geminiOk(EXPLAIN_OUTPUT)] });
+  await expectSuccess(await handle(post(explainBody({ concept: 'past simple' })), ok.deps));
+  assert.equal(ok.fetch.bodies.length, 1);
+  assert.equal(breaker.state(), 'closed');
+});
+
 // ---------------------------------------------------------------------------
 // Step 6: cache
 // ---------------------------------------------------------------------------
