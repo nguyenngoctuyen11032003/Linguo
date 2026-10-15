@@ -131,20 +131,21 @@ select is((select count(*)::integer from public.activity_days where user_id = 'e
   'no activity row was written for an unrelated user');
 
 -- ===== F1.1: activity is credited to the day the answers were SAVED, not the day the attempt is closed =====
--- D answers a section attempt two days ago (+90 s and +200 s) and only closes it now.
+-- D answers a section attempt three days ago (+90 s and +200 s) and only closes it now. Three days (not two) keeps that
+-- day apart from the "30 hours ago" day below at any time of day.
 select public.ea_as('ea000000-0000-4000-8000-00000000000d');
 set local role authenticated;
 select set_config('test.ad', public.start_exam(current_setting('test.pd')::uuid, public.ea_id('en:exam:ea-c1'), 'section', 'reading') ->> 'attempt_id', true);
 select public.ea_save(current_setting('test.ad'), 'en:examq:ea-1', 'a');
 select public.ea_save(current_setting('test.ad'), 'en:examq:ea-2', 'b');
 reset role;
-update public.exam_attempts set started_at = now() - interval '2 days' where id = current_setting('test.ad')::uuid;
+update public.exam_attempts set started_at = now() - interval '3 days' where id = current_setting('test.ad')::uuid;
 select public.ea_at(current_setting('test.ad'), 'en:examq:ea-1', 90);
 select public.ea_at(current_setting('test.ad'), 'en:examq:ea-2', 200);
 select lives_ok(format('select public.exam_close_attempt(%L, ''submitted'')', current_setting('test.ad')), 'D closes the old attempt now');
 select is((select row(d.answers, d.active_ms)::text from public.activity_days d
-           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '2 days')),
-  '(2,200000)', 'the answers are credited to the day they were saved (two days ago)');
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '3 days')),
+  '(2,200000)', 'the answers are credited to the day they were saved (three days ago)');
 select is((select count(*)::integer from public.activity_days d
            where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.ea_day('ea000000-0000-4000-8000-00000000000d')), 0,
   'and nothing is credited to the day of the close');
@@ -172,7 +173,7 @@ delete from public.activity_days where user_id = 'ea000000-0000-4000-8000-000000
 update public.exam_attempts set activity_counted_at = null where id = current_setting('test.ad')::uuid;
 select is(public.exam_backfill_activity(), 1, 'the backfill handles the uncounted old attempt of D');
 select is((select row(d.answers, d.active_ms)::text from public.activity_days d
-           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '2 days')),
+           where d.user_id = 'ea000000-0000-4000-8000-00000000000d' and d.local_day = public.progress_local_day('ea000000-0000-4000-8000-00000000000d', now() - interval '3 days')),
   '(2,200000)', 'and credits it to the day of the answers, not the close');
 select is(public.exam_backfill_activity(), 0, 'a second backfill is a no-op');
 
