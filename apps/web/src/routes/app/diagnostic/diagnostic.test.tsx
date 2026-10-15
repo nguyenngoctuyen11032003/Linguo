@@ -100,6 +100,27 @@ describe('DiagnosticPage — intro', () => {
     renderAt(makeRun({ status: 'intro', item: null, progress: null, resumable: false, retakeAfter: '2026-10-27T03:00:00Z' }));
     expect(screen.getByText(/Bạn có thể làm lại bài kiểm tra từ ngày 27\/10\/2026/)).toBeInTheDocument();
   });
+
+  it('offers no start that would only hit the cooldown while the retake date is ahead', async () => {
+    const retakeAfter = new Date(Date.now() + 5 * 86_400_000).toISOString();
+    const run = makeRun({ status: 'intro', mode: null, item: null, progress: null, resumable: false, retakeAfter });
+    renderAt(run);
+    expect(screen.getByText(/Bạn có thể làm lại bài kiểm tra từ ngày/)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Bắt đầu' })).not.toBeInTheDocument();
+    await userEvent.click(screen.getByRole('link', { name: 'Về trang chủ' }));
+    expect(location()).toBe('/app');
+    expect(run.start).not.toHaveBeenCalled();
+  });
+
+  it('keeps the foundation check available: the retake date is the full test’s', () => {
+    const retakeAfter = new Date(Date.now() + 5 * 86_400_000).toISOString();
+    renderAt(
+      makeRun({ status: 'intro', mode: null, item: null, progress: null, resumable: false, retakeAfter }),
+      `/app/kiem-tra/${PATH_ID}?che-do=nen-tang`,
+    );
+    expect(screen.queryByText(/Bạn có thể làm lại bài kiểm tra từ ngày/)).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Bắt đầu' })).toBeEnabled();
+  });
 });
 
 describe('DiagnosticPage — question', () => {

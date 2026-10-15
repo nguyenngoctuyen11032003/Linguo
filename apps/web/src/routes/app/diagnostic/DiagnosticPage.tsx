@@ -22,6 +22,13 @@ const HOME = '/app';
 
 const reportPath = (pathId: string) => `/app/kiem-tra/${pathId}/ket-qua`;
 
+/** A timestamp later than now; false for null or an unparseable value. */
+function isFuture(iso: string | null): boolean {
+  if (!iso) return false;
+  const time = new Date(iso).getTime();
+  return !Number.isNaN(time) && time > Date.now();
+}
+
 function Shell({ header, children, footer }: { header: ReactNode; children: ReactNode; footer?: ReactNode }) {
   return (
     <div className="flex min-h-dvh flex-col bg-bg">
@@ -284,31 +291,41 @@ export function DiagnosticPage() {
   }
 
   if (status === 'intro' || !item) {
+    const introMode = run.mode ?? requestedMode;
+    // diagnostic_status's retake date describes the full test (a foundation check has its own cooldown): while it
+    // is in the future, start_diagnostic would only answer `diagnostic_cooldown`, so no "Bắt đầu" that cannot work.
+    const coolingDown = !run.resumable && introMode === 'full' && isFuture(run.retakeAfter);
     return (
       <Shell
         header={header}
         footer={
-          <div className="flex gap-3">
-            <Link to={HOME} className={buttonClasses('ghost', 'lg')}>
-              Để sau
+          coolingDown ? (
+            <Link to={HOME} className={buttonClasses('accent', 'lg', true)}>
+              Về trang chủ
             </Link>
-            <div className="flex-1">
-              <Button
-                variant="accent"
-                size="lg"
-                block
-                onClick={() => {
-                  track('diagnostic_started', { mode: run.mode ?? requestedMode, resumed: run.resumable });
-                  run.start();
-                }}
-              >
-                {run.resumable ? 'Làm tiếp' : 'Bắt đầu'}
-              </Button>
+          ) : (
+            <div className="flex gap-3">
+              <Link to={HOME} className={buttonClasses('ghost', 'lg')}>
+                Để sau
+              </Link>
+              <div className="flex-1">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  block
+                  onClick={() => {
+                    track('diagnostic_started', { mode: introMode, resumed: run.resumable });
+                    run.start();
+                  }}
+                >
+                  {run.resumable ? 'Làm tiếp' : 'Bắt đầu'}
+                </Button>
+              </div>
             </div>
-          </div>
+          )
         }
       >
-        <Intro mode={run.mode ?? requestedMode} resumable={run.resumable} retakeAfter={run.retakeAfter} />
+        <Intro mode={introMode} resumable={run.resumable} retakeAfter={introMode === 'full' ? run.retakeAfter : null} />
       </Shell>
     );
   }
