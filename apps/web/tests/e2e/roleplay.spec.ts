@@ -195,7 +195,7 @@ test('leaving a chat with messages asks first; staying keeps the conversation', 
   await expect(page.getByRole('button', { name: 'Chọn tình huống khác' })).toBeFocused();
 
   await page.getByRole('button', { name: 'Chọn tình huống khác' }).click();
-  await dialog.getByRole('button', { name: 'Bỏ và chọn tình huống khác' }).click();
+  await dialog.getByRole('button', { name: 'Bỏ cuộc trò chuyện' }).click();
   await expect(page.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeVisible();
   await page.reload();
   await expect(page.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeVisible({ timeout: 15_000 });

@@ -282,7 +282,7 @@ describe('RoleplayPage: UX polish', () => {
     expect(leave).toHaveFocus();
 
     await userEvent.click(leave);
-    await userEvent.click(screen.getByRole('button', { name: 'Bỏ và chọn tình huống khác' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ cuộc trò chuyện' }));
     expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
     expect(sessionStorage.length).toBe(0);
   });

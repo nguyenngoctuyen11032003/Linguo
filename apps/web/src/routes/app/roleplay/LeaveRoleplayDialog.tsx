@@ -1,4 +1,4 @@
-import { useId, useRef } from 'react';
+import { useId, useRef, type RefObject } from 'react';
 import { AnimatePresence, m as motion } from 'motion/react';
 import { Button } from '@/components/ui/Button';
 import { functionalTransition } from '@/design/motion';
@@ -9,15 +9,17 @@ export interface LeaveRoleplayDialogProps {
   open: boolean;
   onStay(): void;
   onLeave(): void;
+  /** Focus returns here on "Ở lại" (Safari does not focus a clicked button, so it cannot be read on open). */
+  triggerRef?: RefObject<HTMLElement | null>;
 }
 
 /** "Bỏ cuộc trò chuyện này?": leaving discards the running chat; "Ở lại trò chuyện" gets focus first. */
-export function LeaveRoleplayDialog({ open, onStay, onLeave }: LeaveRoleplayDialogProps) {
+export function LeaveRoleplayDialog({ open, onStay, onLeave, triggerRef }: LeaveRoleplayDialogProps) {
   const { reduceMotion } = useMotionPrefs();
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   const descriptionId = useId();
-  useModalDialog(open, onStay, { containerRef: panelRef });
+  useModalDialog(open, onStay, { containerRef: panelRef, triggerRef });
   const offscreen = reduceMotion ? { opacity: 0 } : { opacity: 0, y: 24 };
 
   return (
@@ -58,7 +60,7 @@ export function LeaveRoleplayDialog({ open, onStay, onLeave }: LeaveRoleplayDial
                 Ở lại trò chuyện
               </Button>
               <Button variant="danger" size="lg" block onClick={onLeave}>
-                Bỏ và chọn tình huống khác
+                Bỏ cuộc trò chuyện
               </Button>
             </div>
           </motion.div>

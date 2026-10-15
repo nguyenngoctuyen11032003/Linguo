@@ -94,10 +94,11 @@ export function AiNoticeDialog({ open, onAccept, onClose, triggerRef, context = 
           Chưa lưu được xác nhận. Vui lòng thử lại.
         </p>
       )}
-      {/* Kept in view while the notice scrolls on short screens, so the answer is always one tap away. */}
+      {/* Kept in view while the notice scrolls on short screens, so the answer is always one tap away. The negative
+          inset and margin cancel the scroll area's bottom padding so nothing scrolls by underneath the buttons. */}
       <div
         data-testid="ai-notice-actions"
-        className="sticky bottom-0 -mb-[max(1.25rem,env(safe-area-inset-bottom,0px))] mt-4 grid gap-2 border-t border-border bg-surface-solid pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
+        className="sticky -bottom-[max(1.25rem,env(safe-area-inset-bottom,0px))] -mb-[max(1.25rem,env(safe-area-inset-bottom,0px))] mt-4 grid gap-2 border-t border-border bg-surface-solid pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
       >
         <Button variant="accent" size="lg" block loading={busy} onClick={() => void accept()}>
           Tôi đã hiểu, tiếp tục

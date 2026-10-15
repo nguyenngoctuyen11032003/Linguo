@@ -37,7 +37,7 @@ describe('AiNoticeDialog', () => {
   it('keeps the answer buttons in a sticky footer and still traps Tab inside', async () => {
     const { dialog, onAccept } = renderNotice();
     const actions = within(dialog).getByTestId('ai-notice-actions');
-    expect(actions).toHaveClass('sticky', 'bottom-0');
+    expect(actions).toHaveClass('sticky');
     expect(within(actions).getByRole('button', { name: 'Tôi đã hiểu, tiếp tục' })).toBeInTheDocument();
     await userEvent.tab();
     expect(within(dialog).getByRole('link', { name: 'Chính sách quyền riêng tư' })).toHaveFocus();

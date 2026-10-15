@@ -158,6 +158,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
   const [empty, setEmpty] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const leaveRef = useRef<HTMLButtonElement>(null);
   const composerRef = useRef<HTMLDivElement>(null);
   // The input and its send button, or the "finished" card: what should sit above the bottom nav after a reply.
   const tailRef = useRef<HTMLDivElement>(null);
@@ -355,7 +356,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
               Kết thúc và xem tóm tắt
             </Button>
           )}
-          <Button variant="ghost" onClick={() => (learnerCount > 0 ? setConfirmLeave(true) : onLeave())} disabled={loading}>
+          <Button ref={leaveRef} variant="ghost" onClick={() => (learnerCount > 0 ? setConfirmLeave(true) : onLeave())} disabled={loading}>
             Chọn tình huống khác
           </Button>
         </div>
@@ -367,6 +368,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
       </div>
       <LeaveRoleplayDialog
         open={confirmLeave}
+        triggerRef={leaveRef}
         onStay={() => setConfirmLeave(false)}
         onLeave={() => {
           setConfirmLeave(false);
