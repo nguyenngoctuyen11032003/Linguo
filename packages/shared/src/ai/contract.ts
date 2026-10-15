@@ -62,7 +62,9 @@ export const AI_LEVELS = [
   'topik5',
   'topik6',
 ] as const;
-const level = z.enum(AI_LEVELS);
+const AI_LEVEL_SET: ReadonlySet<string> = new Set(AI_LEVELS);
+// Typed as `string` (not the enum) so callers holding a level from the database need no casts; only known codes pass.
+const level = z.string().refine((v) => AI_LEVEL_SET.has(v), { message: 'unknown level' });
 const shortText = (max: number) => z.string().trim().min(1).max(max);
 
 const common = {
