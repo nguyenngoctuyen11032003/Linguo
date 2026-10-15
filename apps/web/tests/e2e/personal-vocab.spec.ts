@@ -35,7 +35,12 @@ test('import a pasted CSV: preview with row errors, then confirm', async ({ page
   await dialog.getByLabel('Hoặc dán danh sách vào đây').fill(CSV);
   await dialog.getByRole('button', { name: 'Xem trước' }).click();
 
-  await expect(dialog.getByRole('status').first()).toContainText('Đọc được 3 từ hợp lệ, 1 dòng có lỗi sẽ bị bỏ qua, 1 dòng trùng từ');
+  const summary = dialog.getByRole('status').first();
+  await expect(summary).toContainText('Đọc được 3 từ hợp lệ, 1 dòng có lỗi sẽ bị bỏ qua, 1 dòng trùng từ với dòng trước nên được bỏ qua');
+  // The preview starts from the top with focus on its summary (the button that opened it is gone).
+  await expect(summary).toBeFocused();
+  await expect(summary).toBeInViewport({ ratio: 1 });
+  await expect(dialog.getByText(/giữ nguyên lịch ôn/)).toBeVisible();
   await expect(dialog.getByRole('table', { name: /Xem trước 3 trên 3 từ/ }).getByRole('cell', { name: '=1+1' })).toBeVisible();
   const errors = dialog.getByRole('table', { name: /1 dòng có lỗi/ });
   await expect(errors.getByRole('cell', { name: 'Thiếu nghĩa' })).toBeVisible();
@@ -44,7 +49,10 @@ test('import a pasted CSV: preview with row errors, then confirm', async ({ page
   await expectNoSeriousAxe(page, 'import preview');
 
   await dialog.getByRole('button', { name: 'Nhập 3 từ' }).click();
-  await expect(dialog.getByRole('status').first()).toContainText('Đã thêm 3 từ mới');
+  const done = dialog.getByRole('status').first();
+  await expect(done).toContainText('Đã thêm 3 từ mới');
+  await expect(done).toBeFocused();
+  await expect(done).toBeInViewport({ ratio: 1 });
   expect(mock.imports()).toHaveLength(1);
   expect(mock.imports()[0]?.map((r) => r.term)).toEqual(['apple', '=1+1', '사과']);
 
@@ -110,9 +118,11 @@ test('review a list with the flashcards', async ({ page }) => {
   await expect(summary).toBeVisible();
   await expect(summary).toBeFocused();
   expect(mock.grades().map((g) => g.rating)).toEqual([3, 4]);
+  // Nothing else is due: no "review more" button that would only lead to an empty screen.
+  await expect(page.getByRole('button', { name: /Ôn tiếp/ })).toHaveCount(0);
   await expectNoHorizontalScroll(page);
 
-  await page.getByRole('link', { name: 'Về danh sách' }).click();
+  await page.getByRole('link', { name: 'Về danh sách', exact: true }).click();
   await expect(page.getByText('Hôm nay bạn đã ôn xong danh sách này')).toBeVisible();
 });
 
@@ -157,6 +167,47 @@ for (const colorScheme of ['light', 'dark'] as const) {
   });
 }
 
+test('deleting a word keeps keyboard focus in the table', async ({ page }) => {
+  await setup(page, {
+    lists: [
+      {
+        id: PERSONAL_LIST_ID,
+        name: 'Từ vựng TOPIK',
+        language_code: 'ko',
+        words: [
+          { term: '사과', meaning: 'quả táo' },
+          { term: '학교', meaning: 'trường học' },
+        ],
+      },
+    ],
+  });
+  // Registered after the vocabulary mock, so it answers first; everything else falls through to the mock.
+  await page.route('**/rest/v1/rpc/delete_personal_word', (route) => route.fulfill({ json: { deleted: true } }));
+  await page.goto(LIST_URL);
+  await expect(page.getByRole('table', { name: /Danh sách 2 từ/ })).toBeVisible({ timeout: 15_000 });
+
+  await page.getByRole('button', { name: 'Xoá từ 사과' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Xoá từ' }).click();
+  await expect(page.getByRole('dialog')).toBeHidden();
+  await expect(page.getByRole('button', { name: 'Xoá từ 학교' })).toBeFocused();
+
+  await page.keyboard.press('Enter');
+  await page.getByRole('dialog').getByRole('button', { name: 'Xoá từ' }).click();
+  await expect(page.getByRole('dialog')).toBeHidden();
+  await expect(page.getByRole('heading', { level: 1, name: 'Từ vựng TOPIK' })).toBeFocused();
+});
+
+test('a long list name is truncated in the review back link, never widening the page', async ({ page }) => {
+  const longName = 'Từ vựng chuyên ngành kế toán kiểm toán và tài chính doanh nghiệp quốc tế';
+  await setup(page, { lists: [{ id: PERSONAL_LIST_ID, name: longName, language_code: 'ko', words: [{ term: '사과', meaning: 'quả táo' }] }] });
+  await page.goto(`${LIST_URL}/on-tap`);
+  const back = page.getByRole('link', { name: `Về danh sách ${longName}` });
+  await expect(back).toBeVisible({ timeout: 15_000 });
+  const box = await back.boundingBox();
+  expect(box?.height ?? 0).toBeLessThan(60);
+  await expectNoHorizontalScroll(page);
+});
+
 test('the navigation reaches the personal vocabulary and the empty state is warm', async ({ page }) => {
   await setup(page, { lists: [] });
   await page.goto(LISTS_URL);
@@ -164,7 +215,17 @@ test('the navigation reaches the personal vocabulary and the empty state is warm
   await page.getByRole('button', { name: /Tạo danh sách đầu tiên/ }).click();
   const dialog = page.getByRole('dialog', { name: 'Tạo danh sách mới' });
   await dialog.getByLabel('Tên danh sách').fill('Từ mới');
-  await dialog.getByRole('radio', { name: /Tiếng Anh/ }).click();
+  // The learner studies English, so English is preselected; the language choice is one Tab stop with arrow keys.
+  const english = dialog.getByRole('radio', { name: /Tiếng Anh/ });
+  const korean = dialog.getByRole('radio', { name: /Tiếng Hàn/ });
+  await expect(english).toBeChecked();
+  await page.keyboard.press('Tab');
+  await expect(english).toBeFocused();
+  await page.keyboard.press('ArrowRight');
+  await expect(korean).toBeChecked();
+  await expect(korean).toBeFocused();
+  await dialog.getByText('Tiếng Anh', { exact: true }).click();
+  await expect(english).toBeChecked();
   await dialog.getByRole('button', { name: 'Tạo danh sách' }).click();
   await expect(page.getByRole('link', { name: /Từ mới/ })).toBeVisible();
   await expectNoHorizontalScroll(page);
