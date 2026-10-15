@@ -6,7 +6,7 @@ Sự cố production (backup/khôi phục, rollback, xoay key, Gemini hết quot
 
 ```text
 Pull Request ──► CI (.github/workflows/ci.yml)
-                  ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build → check:bundle
+                  ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build → check:bundle → check:bundle-size
                   ├─ secrets:  gitleaks (binary pin sha256) quét toàn bộ lịch sử Git
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
                   └─ database: fixtures SQL ↔ TS (ước lượng, chấm điểm) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
@@ -16,6 +16,8 @@ push main ─────► Deploy (.github/workflows/deploy.yml)
                   changes ───────┼─► migrate (khi supabase/migrations đổi; cần bấm duyệt)
                                  ├─► functions (khi supabase/functions đổi)
                                  └─► build (VITE_* từ Variables, base /<repo>/, CSP chèn lúc build) → check:bundle → GitHub Pages
+
+Deploy xanh trên main ─► Smoke (.github/workflows/smoke.yml; cũng chạy hằng ngày): kiểm site và Supabase thật, xem RUNBOOK
 ```
 
 ## Quy tắc an toàn database
@@ -99,7 +101,7 @@ Edge Function `notify-dispatch` (`verify_jwt = false`, spec 10 §3) được wor
    - `NOTIFY_CRON_SECRET` — chuỗi ở bước 1
    - `VAPID_PRIVATE_KEY` — Private Key ở bước 1 (**không bao giờ** đặt vào biến `VITE_*`)
    - `VAPID_SUBJECT` — `mailto:<email-của-bạn>` hoặc một URL `https://…`
-4. **Settings → Environments → New environment `notify`**: Deployment branches = `main`, **không** bật Required reviewers (cron phải chạy không cần duyệt). Thêm đúng một secret `NOTIFY_CRON_SECRET` (cùng giá trị bước 3). Secret này chỉ dùng để kích hoạt việc gửi nhắc, không đọc/ghi được dữ liệu nào khác.
+4. **Settings → Environments → New environment `notify`**: Deployment branches = `main`, **không** bật Required reviewers (cron phải chạy không cần duyệt). Thêm đúng một secret `NOTIFY_CRON_SECRET` (cùng giá trị bước 3). Secret này chỉ dùng để kích hoạt việc gửi nhắc, không đọc/ghi được dữ liệu nào khác. Workflow còn cần repository variable `VITE_SUPABASE_URL` (đã đặt ở mục Thiết lập một lần, bước 4); thiếu secret hoặc variable thì run cảnh báo và thoát 0 mà không gửi gì (`notify.yml`).
 5. Job `functions` của Deploy chạy bước **Set Edge Function secrets (reminders)**: đẩy `NOTIFY_CRON_SECRET`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (chỉ những giá trị có thật, không in ra log). Sau khi thêm/đổi: Actions → Deploy → **Run workflow** với `functions = true`. Đổi `VITE_VAPID_PUBLIC_KEY` cũng cần build lại web (Deploy làm việc đó).
 6. Kiểm tra: Actions → Notify → **Run workflow**; log chỉ in `HTTP 200` và số đếm `{generated, pushed, failed, removed}` (không bao giờ in endpoint, khoá hay nội dung thông báo).
 
@@ -109,13 +111,13 @@ Lịch chạy của workflow **Notify**: `cron: '*/15 * * * *'` (mỗi 15 phút,
 1. Tạo cặp mới: `npx web-push generate-vapid-keys`.
 2. Cập nhật Variable `VITE_VAPID_PUBLIC_KEY` (Public Key mới) và secret `VAPID_PRIVATE_KEY` trong environment `production`.
 3. Actions → Deploy → **Run workflow** với `functions = true`, **Approve**. Lần chạy này đẩy cặp mới lên Supabase (bước *Set Edge Function secrets (reminders)*) **và** build lại web với public key mới. Nếu chỉ đổi một nửa (private key mới nhưng public key cũ, hoặc ngược lại), `notify-dispatch` kiểm tra bằng một chữ ký thử (`isValidVapid` trong `supabase/functions/notify-dispatch/push.ts`), thấy cặp không khớp thì bỏ qua push và vẫn trả 200 (thông báo trong app vẫn tạo).
-4. Subscription cũ do push service từ chối: tự bị xoá sau 5 lần thất bại (`failure_count`), hoặc ngay khi push service trả 404/410. Người học phải bấm lại "Bật thông báo trên thiết bị này" ở Cài đặt → Nhắc học trên từng thiết bị để tạo subscription mới. Không có cách nào di chuyển subscription cũ sang khoá mới.
+4. Subscription cũ do push service từ chối: tự bị xoá khi `failure_count` đạt 10 (chỉ các lượt push service trả 401/403, tức từ chối danh tính VAPID của ta, mới được đếm), hoặc ngay khi push service trả 404/410. Người học phải bấm lại "Bật thông báo trên thiết bị này" ở Cài đặt → Nhắc học trên từng thiết bị để tạo subscription mới. Không có cách nào di chuyển subscription cũ sang khoá mới.
 5. Kiểm tra bằng Actions → Notify → **Run workflow**: `pushed` tăng lên khi đã có thiết bị đăng ký lại.
 
 Hành vi:
 - Thiếu VAPID (hoặc cặp khoá sai/lệch nhau) → vẫn tạo thông báo trong app, bỏ qua push, trả 200 (không lỗi, không đụng tới subscription).
 - Thiếu `NOTIFY_CRON_SECRET` trong environment `notify` → workflow cảnh báo và thoát 0 (không gửi mail lỗi mỗi 15 phút).
-- Push service trả 404/410 → xoá subscription. Lỗi khác (5xx, 429, mạng) → `failure_count + 1`, xoá khi đạt 5. Thành công → `failure_count = 0`, cập nhật `delivered_push_at`.
+- Push service trả 404/410 → xoá subscription. 401/403 → `failure_count + 1`, xoá khi đạt 10 (`MAX_PUSH_FAILURES`). Lỗi khác (5xx, 429, mạng) không tính vào `failure_count`; dòng chưa gửi được thử lại ở các lượt sau trong 4 giờ. Thành công → `failure_count = 0`, cập nhật `delivered_push_at`. Endpoint ngoài danh sách cho phép bị bỏ qua cục bộ (không gọi mạng).
 - **Xoay VAPID** làm mọi subscription cũ hết hiệu lực (push service từ chối); chúng tự bị xoá sau vài lần thất bại và người học cần bật lại thông báo trên thiết bị. Chỉ xoay khi private key bị lộ.
 
 ## Quy trình hằng ngày
@@ -180,7 +182,8 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
   - `study_sessions` chưa hoàn thành, tạo quá 180 ngày (nếu bảng đã có).
 
   Kết quả trả về là số dòng đã xoá của từng bảng, in ra log.
-- **Chưa được lên lịch:** hai RPC dọn dữ liệu khác chỉ `service_role` gọi được nhưng **không** được `purge_expired_data` hay workflow nào gọi (đã `grep` toàn repo): `purge_analytics()` (xoá `analytics_events` quá 180 ngày) và `purge_notifications()` (xoá hộp thư thông báo quá 90 ngày). Cho đến khi có người nối vào Maintenance, hai bảng này chỉ lớn lên. Chạy tay khi cần, ví dụ trong Supabase SQL Editor: `select public.purge_analytics(); select public.purge_notifications();` (SQL Editor chạy với quyền `postgres`, đủ để gọi hai hàm này). Đây là việc còn mở (xem `docs/superpowers/HANDOFF.md`).
+- **Đã lên lịch ở nơi khác:** `purge_notifications()` (xoá hộp thư thông báo quá 90 ngày) do Edge Function `notify-dispatch` gọi mỗi đêm (các lượt Notify trong giờ UTC 20), không thuộc Maintenance.
+- **Chưa được lên lịch:** `purge_analytics()` (xoá `analytics_events` quá 180 ngày) chỉ `service_role` gọi được nhưng **không** được `purge_expired_data` hay workflow nào gọi (đã `grep` toàn repo). Cho đến khi có người nối vào Maintenance, bảng này chỉ lớn lên. Chạy tay khi cần, ví dụ trong Supabase SQL Editor: `select public.purge_analytics();` (SQL Editor chạy với quyền `postgres`, đủ để gọi hàm này). Đây là việc còn mở (xem `docs/superpowers/HANDOFF.md`).
 - Key chỉ được ghi vào một file cấu hình curl quyền 0600 rồi xoá ngay. Key không nằm trong argv và không bị in ra log. HTTP khác 2xx thì job fail.
 - Job dùng chung concurrency group `supabase-production` với `migrate` (Deploy) và Publish content, nên không bao giờ chạy cùng lúc với migration.
 - Environment `production` đang bật **Required reviewers**, nên mỗi lần chạy theo lịch cũng chờ bấm **Approve**. Không duyệt thì run hết hạn sau 30 ngày; dữ liệu chỉ được dọn muộn hơn, không mất gì. Nếu muốn chạy tự động hoàn toàn, tạo một environment riêng (ví dụ `maintenance`, chỉ cho nhánh `main`, không cần reviewer), chỉ chứa `SUPABASE_SERVICE_ROLE_KEY`, rồi đổi `environment:` trong workflow.
@@ -206,6 +209,8 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
 | Notify báo `HTTP 404` | Function `notify-dispatch` chưa được deploy: Actions → Deploy → **Run workflow** với `functions = true` |
 | Có thông báo trong app nhưng thiết bị không nhận push (`pushed = 0`) | Thiếu/sai `VAPID_*` hoặc `VITE_VAPID_PUBLIC_KEY` khác cặp với `VAPID_PRIVATE_KEY`; kiểm tra log function (`push skipped`) |
 | Job `secrets` (gitleaks) báo leak | Secret thật: xoay key ngay theo `docs/RUNBOOK.md` mục 5. Giá trị giả trong test: ghép chuỗi lúc chạy (xem `scripts/check-bundle-secrets.test.mjs`) hoặc, sau khi rà soát, thêm fingerprint vào `.gitleaksignore` |
+| `check:bundle-size` fail (CI job `web`) | JS tải đầu vượt ngân sách hoặc một chunk lazy bị import tĩnh: chạy `pnpm build && pnpm check:bundle-size` để xem chunk nào; tìm import tĩnh mới thêm (nhớ `import { m as motion } from 'motion/react'`). Chỉ tăng `BUDGETS` trong `scripts/check-bundle-size.mjs` có lý do trong commit (FEATURES mục 18) |
+| Smoke báo đỏ hoặc bỏ qua kèm cảnh báo | Xem `docs/RUNBOOK.md` → *Kiểm tra sau deploy (smoke)*; cần repository variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` |
 | `check:bundle` fail | Một secret hoặc source map lọt vào `apps/web/dist`: kiểm tra biến `VITE_*`, `build.sourcemap` trong `apps/web/vite.config.ts` |
 | Console trình duyệt báo vi phạm Content-Security-Policy | Nguồn mới chưa có trong `apps/web/build/csp.ts`: thêm có chủ đích kèm test (`docs/RUNBOOK.md` mục 7) |
 | Pages 404 ở trang chủ | Kiểm tra bước 2 (Source = GitHub Actions) |
