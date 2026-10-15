@@ -1,0 +1,296 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kata-long-loanwords
+order_index: 4
+level: kana
+title:
+  vi: Trường âm ー và từ ngoại lai
+objectives:
+  - vi: Đọc và viết dấu trường âm ー (コーヒー, ケーキ).
+  - vi: Đọc các âm mở rộng như ティ, ファ, フォ.
+  - vi: Viết tên nước Việt Nam - ベトナム.
+estimated_minutes: 12
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:kata-dakuten-yoon]
+items:
+  - item: ja:item:kata-choon
+  - item: ja:item:kata-extended
+  - item: ja:item:koohii
+  - item: ja:item:keeki
+  - item: ja:item:betonamu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được hầu hết từ ngoại lai thường gặp - コーヒー (cà phê), ケーキ (bánh ngọt), パーティー (bữa tiệc) - và viết được ベトナム (Việt Nam).
+  - type: explain
+    text:
+      vi: Trong Katakana, nguyên âm dài được viết bằng dấu gạch ー thay vì thêm あ/い/う như Hiragana. ー kéo dài nguyên âm ngay trước nó thêm một nhịp - コーヒー đọc "cô-ô-hi-i".
+  - type: explain
+    text:
+      vi: Để ghi âm nước ngoài, Katakana ghép thêm nguyên âm nhỏ ァ ィ ゥ ェ ォ - ティ (ti), ディ (di), ファ (fa), フォ (fo), ウィ (wi), ジェ (je). Tên nước, tên người nước ngoài cũng viết bằng Katakana - ベトナム (Việt Nam).
+  - type: deep_explain
+    text:
+      vi: Bỏ ー hay thêm ー sai chỗ đều đổi từ - ケーキ (bánh ngọt) đọc ba nhịp, ケキ không có nghĩa. Trước khi có ティ, chữ チ (chi) từng được dùng cho "ti", nên một số từ cũ vẫn viết チ - チーム (team), チケット (ticket).
+  - type: example
+    target: コーヒー
+    target_lang: ja
+    translation:
+      vi: cà phê
+    note:
+      vi: Hai chỗ kéo dài - コー và ヒー.
+  - type: example
+    target: ケーキ
+    target_lang: ja
+    translation:
+      vi: bánh ngọt
+    note:
+      vi: ケー kéo dài, rồi キ - "kê-ê-ki".
+  - type: example
+    target: パーティー
+    target_lang: ja
+    translation:
+      vi: bữa tiệc
+    note:
+      vi: パー + ティー - ティ là âm mở rộng đọc "ti".
+  - type: example
+    target: ベトナム
+    target_lang: ja
+    translation:
+      vi: Việt Nam
+    note:
+      vi: ベ (be) + ト (to) + ナ (na) + ム (mu).
+  - type: common_mistake
+    wrong: コヒー
+    right: コーヒー
+    target_lang: ja
+    note:
+      vi: Cà phê có hai chỗ kéo dài - コー và ヒー. Thiếu ー đầu tiên là sai chính tả.
+  - type: common_mistake
+    wrong: ベトナン
+    right: ベトナム
+    target_lang: ja
+    note:
+      vi: Âm cuối "m" của "Nam" được viết ム (mu), không phải ン.
+  - type: summary
+    points:
+      - vi: ー kéo dài nguyên âm đứng trước thêm một nhịp (コーヒー, ケーキ).
+      - vi: Nguyên âm nhỏ ァ ィ ゥ ェ ォ tạo âm mở rộng - ティ, ファ, フォ, ウィ, ジェ.
+      - vi: Tên nước ngoài viết Katakana - ベトナム.
+      - vi: コーヒー cà phê · ケーキ bánh ngọt · パーティー bữa tiệc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kata4-mcq-choon
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kata-choon
+    prompt:
+      stem: Dấu ー trong ケーキ có tác dụng gì?
+      stem_lang: vi
+      options:
+        - { id: a8g, text: Kéo dài nguyên âm e của ケ thêm một nhịp, lang: vi }
+        - { id: b3h, text: Ngắt một nhịp như ッ, lang: vi }
+        - { id: c7i, text: Đọc thành âm "n", lang: vi }
+        - { id: d1j, text: "Chỉ để trang trí, không đọc", lang: vi }
+    answer:
+      correct_option_id: a8g
+    explanation:
+      vi: ー kéo dài nguyên âm đứng trước - ケー đọc "kê-ê". Âm ngắt là ッ, âm "n" là ン.
+    display_answer: Kéo dài nguyên âm e của ケ thêm một nhịp
+
+  - key: ja:exercise:kata4-mcq-ti
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-extended
+    prompt:
+      stem: Cách viết nào đọc là "ti" (như trong "party")?
+      stem_lang: vi
+      options:
+        - { id: e5k, text: ティ, lang: ja }
+        - { id: f9l, text: チ, lang: ja }
+        - { id: g4m, text: テイ, lang: ja }
+        - { id: h8n, text: ツィ, lang: ja }
+    answer:
+      correct_option_id: e5k
+    explanation:
+      vi: ティ (テ + ィ nhỏ) đọc một nhịp "ti". チ là "chi"; テイ có イ to nên đọc hai nhịp "tê-i"; ツィ là "tsi".
+    display_answer: ティ
+
+  - key: ja:exercise:kata4-listen-koohii
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:koohii
+    prompt:
+      audio_asset_id: null
+      fallback_text: コーヒー
+      options:
+        - { id: i2o, text: cà phê, lang: vi }
+        - { id: j6p, text: bánh ngọt, lang: vi }
+        - { id: k1q, text: bữa tiệc, lang: vi }
+        - { id: l5r, text: kem (đá), lang: vi }
+    answer:
+      correct_option_id: i2o
+    explanation:
+      vi: コーヒー (cô-ô-hi-i) là cà phê. Bánh ngọt là ケーキ, bữa tiệc là パーティー, kem là アイス.
+    display_answer: cà phê
+
+  - key: ja:exercise:kata4-build-keeki
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:keeki
+    prompt:
+      instruction: Ghép các chữ thành từ "kēki" (bánh ngọt).
+      tokens:
+        - { id: k1, text: キ }
+        - { id: k2, text: ー }
+        - { id: k3, text: ッ }
+        - { id: k4, text: ケ }
+        - { id: k5, text: エ }
+    answer:
+      orders:
+        - [k4, k2, k1]
+    explanation:
+      vi: 'ケーキ = ケ + ー (kéo dài) + キ. Katakana kéo dài bằng ー, không thêm エ; ッ là âm ngắt.'
+    display_answer: ケーキ
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kata4-fill-coffee
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:koohii
+    prompt:
+      template: "Cà phê - コ{{b1}}ヒ{{b2}}"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [ー]
+        b2: [ー]
+    known_wrong:
+      - answer: う
+        feedback_vi: Katakana kéo dài bằng dấu ー, không thêm う như Hiragana.
+        error_tag: katakana_long_vowel
+      - answer: ウ
+        feedback_vi: Katakana kéo dài bằng dấu ー, không thêm ウ.
+        error_tag: katakana_long_vowel
+      - answer: イ
+        feedback_vi: Katakana kéo dài bằng dấu ー, không thêm イ.
+        error_tag: katakana_long_vowel
+    explanation:
+      vi: コーヒー có hai nguyên âm dài - コー và ヒー - đều viết bằng ー.
+    display_answer: ー, ー
+
+  - key: ja:exercise:kata4-write-vietnam
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:betonamu
+    prompt:
+      source_text: Việt Nam
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ベトナム
+    known_wrong:
+      - answer: べとなむ
+        feedback_vi: Tên nước ngoài viết bằng Katakana - ベトナム.
+        error_tag: hiragana_for_katakana
+      - answer: ベトナン
+        feedback_vi: Âm "m" cuối viết ム (mu) - ベトナム.
+        error_tag: final_consonant
+      - answer: ヘトナム
+        feedback_vi: Thiếu dấu ゛ - "be" là ベ.
+        error_tag: missing_dakuten
+      - answer: betonamu
+        feedback_vi: Hãy gõ bằng chữ Katakana (ベトナム), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Việt Nam là ベトナム - ベ (be) + ト (to) + ナ (na) + ム (mu).
+    display_answer: ベトナム
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kata4-meaning-party
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kata-extended
+    prompt:
+      source_text: パーティー
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - bữa tiệc
+        - tiệc
+        - buổi tiệc
+        - liên hoan
+        - bữa liên hoan
+        - buổi liên hoan
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: cà phê
+        feedback_vi: Cà phê là コーヒー. パーティー (pa-a-ti-i) là bữa tiệc, từ "party".
+        error_tag: vocab_meaning
+    explanation:
+      vi: パーティー đọc "pa-a-ti-i", mượn từ tiếng Anh "party" - bữa tiệc.
+    display_answer: bữa tiệc
+
+  - key: ja:exercise:kata4-mcq-fork
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-extended
+    prompt:
+      stem: '"Cái nĩa" (fork) tiếng Nhật đọc là "fōku". Cách viết nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: m9s, text: フォーク, lang: ja }
+        - { id: n4t, text: ホーク, lang: ja }
+        - { id: o8u, text: フオーク, lang: ja }
+        - { id: p2v, text: フォク, lang: ja }
+    answer:
+      correct_option_id: m9s
+    explanation:
+      vi: '"fo" là フ + ォ nhỏ - フォ; "ō" dài thêm ー; cuối là ク. ホ là "ho", オ to sẽ thành hai nhịp, thiếu ー là sai độ dài.'
+    display_answer: フォーク
+
+  - key: ja:exercise:kata4-build-party
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-extended
+    prompt:
+      instruction: 'Ghép các chữ thành từ "pātī" (bữa tiệc).'
+      tokens:
+        - { id: q1, text: ィ }
+        - { id: q2, text: ー }
+        - { id: q3, text: パ }
+        - { id: q4, text: テ }
+        - { id: q5, text: ー }
+        - { id: q6, text: チ }
+    answer:
+      orders:
+        - [q3, q2, q4, q1, q5]
+        - [q3, q5, q4, q1, q2]
+    explanation:
+      vi: 'パーティー = パ + ー + テ + ィ (nhỏ) + ー. ティ đọc "ti"; チ là "chi".'
+    display_answer: パーティー

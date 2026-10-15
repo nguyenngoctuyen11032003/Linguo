@@ -1,0 +1,314 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kana-review
+order_index: 5
+level: kana
+title:
+  vi: Ôn tập - Hiragana và Katakana
+objectives:
+  - vi: Chọn đúng bảng chữ - Hiragana cho từ thuần Nhật, Katakana cho từ ngoại lai.
+  - vi: Phân biệt các cặp dễ nhầm シ/ツ, ン/ソ, ぬ/め và chữ nhỏ/chữ to.
+  - vi: Đọc và viết lại các từ đã học trong hai unit đầu.
+estimated_minutes: 15
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:kata-long-loanwords]
+items:
+  - item: ja:item:kata-sa
+    role: reuse
+  - item: ja:item:kata-wa
+    role: reuse
+  - item: ja:item:hira-na
+    role: reuse
+  - item: ja:item:hira-yoon
+    role: reuse
+  - item: ja:item:hira-sokuon
+    role: reuse
+  - item: ja:item:kata-choon
+    role: reuse
+  - item: ja:item:neko
+    role: reuse
+  - item: ja:item:densha
+    role: reuse
+  - item: ja:item:koohii
+    role: reuse
+  - item: ja:item:pan
+    role: reuse
+  - item: ja:item:betonamu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc trôi chảy cả hai bảng chữ và biết từ nào viết bằng Hiragana, từ nào viết bằng Katakana.
+  - type: explain
+    text:
+      vi: Một câu tiếng Nhật thường trộn cả hai bảng chữ - Hiragana cho từ thuần Nhật và phần ngữ pháp, Katakana cho từ ngoại lai và tên nước ngoài. Ví dụ コーヒーをのみます (tôi uống cà phê) - コーヒー là Katakana, phần còn lại là Hiragana.
+  - type: explain
+    text:
+      vi: Ba điểm cần soát lại khi viết - dấu ゛/゜ có đúng không, chữ nhỏ hay chữ to (ゃ/や, っ/つ), và cách kéo dài (Hiragana thêm あ/い/う, Katakana dùng ー).
+  - type: deep_explain
+    text:
+      vi: Khi gõ trên máy tính hay điện thoại, bạn gõ phiên âm Latinh rồi bộ gõ đổi sang kana - "kitte" ra きって, "kya" ra きゃ, "-" ra ー. Nhấn phím chuyển đổi để chọn Katakana cho từ ngoại lai.
+  - type: example
+    target: コーヒーをのみます。
+    target_lang: ja
+    translation:
+      vi: Tôi uống cà phê.
+    note:
+      vi: コーヒー (Katakana, từ ngoại lai) + をのみます (Hiragana, phần ngữ pháp và động từ).
+  - type: example
+    target: ベトナムのパン
+    target_lang: ja
+    translation:
+      vi: bánh mì Việt Nam
+    note:
+      vi: Hai từ Katakana nối bằng の (Hiragana) - "của".
+  - type: example
+    target: でんしゃとねこ
+    target_lang: ja
+    translation:
+      vi: tàu điện và con mèo
+    note:
+      vi: Toàn bộ là từ thuần Nhật nên viết Hiragana; と nghĩa là "và".
+  - type: common_mistake
+    wrong: こーひー
+    right: コーヒー
+    target_lang: ja
+    note:
+      vi: Từ ngoại lai viết bằng Katakana. Dấu ー chỉ dùng trong Katakana.
+  - type: common_mistake
+    wrong: ネコ
+    right: ねこ
+    target_lang: ja
+    note:
+      vi: ねこ là từ thuần Nhật nên viết Hiragana (hoặc chữ Hán 猫). Katakana ネコ chỉ thấy trong tên riêng hay cách viết nhấn mạnh.
+  - type: summary
+    points:
+      - vi: Hiragana - từ thuần Nhật, ngữ pháp; Katakana - từ ngoại lai, tên nước ngoài.
+      - vi: シ/ツ, ン/ソ - nét hất lên là シ, ン; nét kéo xuống là ツ, ソ.
+      - vi: Chữ nhỏ ゃ ゅ ょ っ (ャ ュ ョ ッ) đổi cách đọc - đừng viết thành chữ to.
+      - vi: Kéo dài - Hiragana thêm あ/い/う, Katakana dùng ー.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kanarev-mcq-script
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:koohii
+    prompt:
+      stem: Từ nào sau đây là từ ngoại lai, nên viết bằng Katakana?
+      stem_lang: vi
+      options:
+        - { id: a4w, text: コーヒー, lang: ja }
+        - { id: b8x, text: ねこ, lang: ja }
+        - { id: c2y, text: でんしゃ, lang: ja }
+        - { id: d6z, text: がっこう, lang: ja }
+    answer:
+      correct_option_id: a4w
+    explanation:
+      vi: コーヒー mượn từ "coffee" nên viết Katakana. ねこ (mèo), でんしゃ (tàu điện), がっこう (trường học) đều là từ tiếng Nhật, viết Hiragana.
+    display_answer: コーヒー
+
+  - key: ja:exercise:kanarev-mcq-tsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-sa
+    prompt:
+      stem: Chữ nào đọc là "tsu"?
+      stem_lang: vi
+      options:
+        - { id: e1a, text: ツ, lang: ja }
+        - { id: f5b, text: シ, lang: ja }
+        - { id: g9c, text: ソ, lang: ja }
+        - { id: h3d, text: ン, lang: ja }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: ツ (tsu) có hai chấm nằm ngang phía trên, nét dài kéo xuống. シ là shi, ソ là so, ン là n.
+    display_answer: ツ
+
+  - key: ja:exercise:kanarev-listen-pan
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:pan
+    prompt:
+      audio_asset_id: null
+      fallback_text: ベトナムのパン
+      options:
+        - { id: i7e, text: bánh mì Việt Nam, lang: vi }
+        - { id: j1f, text: cà phê Việt Nam, lang: vi }
+        - { id: k5g, text: tàu điện Việt Nam, lang: vi }
+        - { id: l9h, text: bánh ngọt Việt Nam, lang: vi }
+    answer:
+      correct_option_id: i7e
+    explanation:
+      vi: パン là bánh mì - ベトナムのパン là bánh mì Việt Nam. Cà phê là コーヒー, tàu điện là でんしゃ, bánh ngọt là ケーキ.
+    display_answer: bánh mì Việt Nam
+
+  - key: ja:exercise:kanarev-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-yoon
+    prompt:
+      template: "でん{{b1}} (tàu điện)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - '"sha" - một nhịp, viết bằng Hiragana.'
+        - し + chữ や viết nhỏ.
+    answer:
+      blanks:
+        b1: [しゃ]
+    known_wrong:
+      - answer: しや
+        feedback_vi: や phải viết nhỏ (ゃ) để đọc một nhịp "sha".
+        error_tag: small_kana
+      - answer: シャ
+        feedback_vi: でんしゃ là từ tiếng Nhật, viết toàn bộ bằng Hiragana - しゃ.
+        error_tag: katakana_for_hiragana
+      - answer: ちゃ
+        feedback_vi: ちゃ là "cha". "sha" là しゃ.
+        error_tag: kana_shi_chi
+    explanation:
+      vi: でんしゃ - phần còn thiếu là しゃ (し + ゃ nhỏ), đọc một nhịp "sha".
+    display_answer: でんしゃ
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kanarev-write-coffee
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:koohii
+    prompt:
+      source_text: cà phê
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - コーヒー
+        - 珈琲
+    known_wrong:
+      - answer: こーひー
+        feedback_vi: Từ ngoại lai viết bằng Katakana - コーヒー.
+        error_tag: hiragana_for_katakana
+      - answer: コヒー
+        feedback_vi: Thiếu ー sau コ - cà phê là コーヒー.
+        error_tag: katakana_long_vowel
+      - answer: コーヒ
+        feedback_vi: Thiếu ー sau ヒ - cà phê là コーヒー.
+        error_tag: katakana_long_vowel
+      - answer: kohi
+        feedback_vi: Hãy gõ bằng chữ Katakana (コーヒー), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Cà phê là コーヒー - hai chỗ kéo dài, đều viết bằng ー.
+    display_answer: コーヒー
+
+  - key: ja:exercise:kanarev-write-neko
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:neko
+    prompt:
+      source_text: con mèo
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ねこ
+        - 猫
+    known_wrong:
+      - answer: ねこう
+        feedback_vi: ねこ không có nguyên âm dài - chỉ hai nhịp ね + こ.
+        error_tag: long_vowel
+      - answer: ぬこ
+        feedback_vi: ぬ là "nu". Con mèo là ねこ (ne-ko).
+        error_tag: kana_vowel
+      - answer: neko
+        feedback_vi: Hãy gõ bằng chữ Hiragana (ねこ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Con mèo là ねこ - từ thuần Nhật nên viết Hiragana (chữ Hán 猫).
+    display_answer: ねこ
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kanarev-meaning-sentence
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:densha
+    prompt:
+      source_text: でんしゃとねこ
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - tàu điện và con mèo
+        - tàu điện và mèo
+        - tàu điện với con mèo
+        - tàu điện với mèo
+        - con tàu điện và con mèo
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: con mèo và tàu điện
+        feedback_vi: Giữ đúng thứ tự - でんしゃ (tàu điện) đứng trước と (và), ねこ (con mèo) đứng sau.
+        error_tag: word_order
+    explanation:
+      vi: でんしゃ là tàu điện, と là "và", ねこ là con mèo.
+    display_answer: tàu điện và con mèo
+
+  - key: ja:exercise:kanarev-mcq-spelling
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-choon
+    prompt:
+      stem: Bạn muốn viết "bánh mì Việt Nam" trên thực đơn. Cách viết nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m2i, text: ベトナムのパン, lang: ja }
+        - { id: n6j, text: べとなむのぱん, lang: ja }
+        - { id: o1k, text: ベトナムノパン, lang: ja }
+        - { id: p5l, text: ベトナンのパン, lang: ja }
+    answer:
+      correct_option_id: m2i
+    explanation:
+      vi: ベトナム và パン là từ ngoại lai nên viết Katakana; の là ngữ pháp nên viết Hiragana. ベトナン sai âm cuối - "Nam" là ナム.
+    display_answer: ベトナムのパン
+
+  - key: ja:exercise:kanarev-build-coffee
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-choon
+    prompt:
+      instruction: Ghép các chữ thành từ "kōhī" (cà phê).
+      tokens:
+        - { id: r1, text: ヒ }
+        - { id: r2, text: ー }
+        - { id: r3, text: ウ }
+        - { id: r4, text: コ }
+        - { id: r5, text: ー }
+        - { id: r6, text: ホ }
+    answer:
+      orders:
+        - [r4, r2, r1, r5]
+        - [r4, r5, r1, r2]
+    explanation:
+      vi: 'コーヒー = コ + ー + ヒ + ー. Katakana kéo dài bằng ー, không thêm ウ; ホ là "ho".'
+    display_answer: コーヒー

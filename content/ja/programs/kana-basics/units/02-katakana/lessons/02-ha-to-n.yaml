@@ -1,0 +1,285 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kata-ha-to-n
+order_index: 2
+level: kana
+title:
+  vi: Katakana ハ đến ン
+objectives:
+  - vi: Đọc và viết các hàng ハ, マ, ヤ, ラ, ワ và chữ ン.
+  - vi: Phân biệt cặp dễ nhầm ン (n) và ソ (so).
+  - vi: Hiểu vì sao "hotel" thành ホテル - âm "l" và phụ âm cuối trong từ ngoại lai.
+estimated_minutes: 12
+skills: [reading, writing]
+prerequisites: [ja:lesson:kata-a-to-no]
+items:
+  - item: ja:item:kata-ha
+  - item: ja:item:kata-ma
+  - item: ja:item:kata-ya
+  - item: ja:item:kata-ra
+  - item: ja:item:kata-wa
+  - item: ja:item:hoteru
+  - item: ja:item:kamera
+  - item: ja:item:kata-sa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được cả 46 chữ Katakana cơ bản và các từ như ホテル (khách sạn), カメラ (máy ảnh), ワイン (rượu vang).
+  - type: explain
+    text:
+      vi: Các hàng còn lại - ハ ヒ フ ヘ ホ, マ ミ ム メ モ, ヤ ユ ヨ, ラ リ ル レ ロ, ワ ヲ ン. Cách đọc giống hệt Hiragana; ヲ gần như không dùng trong Katakana.
+  - type: explain
+    text:
+      vi: Tiếng Nhật không có âm "l" riêng, nên cả "l" và "r" của từ nước ngoài đều viết bằng hàng ラ. Tiếng Nhật cũng không có phụ âm đứng cuối (trừ ン), nên "hotel" phải thêm nguyên âm - ホテル (ho-te-ru).
+  - type: deep_explain
+    text:
+      vi: ン (n) và ソ (so) dễ nhầm giống シ/ツ. Nét dài của ン hất từ dưới lên, của ソ kéo từ trên xuống. Mẹo chung - nét hất lên là シ và ン, nét kéo xuống là ツ và ソ.
+  - type: example
+    target: ホテル
+    target_lang: ja
+    translation:
+      vi: khách sạn
+    note:
+      vi: ホ (ho) + テ (te) + ル (ru) - "l" cuối thành ル.
+  - type: example
+    target: カメラ
+    target_lang: ja
+    translation:
+      vi: máy ảnh
+    note:
+      vi: カ (ka) + メ (me) + ラ (ra).
+  - type: example
+    target: ワイン
+    target_lang: ja
+    translation:
+      vi: rượu vang
+    note:
+      vi: ワ (wa) + イ (i) + ン (n) - từ "wine".
+  - type: common_mistake
+    wrong: ワイソ
+    right: ワイン
+    target_lang: ja
+    note:
+      vi: Cuối từ là ン (n), nét dài hất lên. ソ (so) có nét dài kéo xuống.
+  - type: common_mistake
+    wrong: ホテロ
+    right: ホテル
+    target_lang: ja
+    note:
+      vi: "\"Hotel\" kết thúc bằng ル (ru), không phải ロ (ro). Âm cuối thêm nguyên âm u là cách thường gặp nhất."
+  - type: summary
+    points:
+      - vi: ハ ヒ フ ヘ ホ · マ ミ ム メ モ · ヤ ユ ヨ · ラ リ ル レ ロ · ワ ヲ ン.
+      - vi: Cả "l" và "r" nước ngoài đều viết bằng hàng ラ.
+      - vi: Phụ âm cuối từ thường được thêm nguyên âm (hotel → ホテル).
+      - vi: ン nét hất lên, ソ nét kéo xuống.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kata2-mcq-n
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-wa
+    prompt:
+      stem: Chữ Katakana nào là âm "n" cuối từ?
+      stem_lang: vi
+      options:
+        - { id: k3a, text: ン, lang: ja }
+        - { id: l7b, text: ソ, lang: ja }
+        - { id: m1c, text: ツ, lang: ja }
+        - { id: n5d, text: ノ, lang: ja }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: ン là âm "n" cuối, nét dài hất từ dưới lên. ソ là "so", ツ là "tsu", ノ là "no".
+    display_answer: ン
+
+  - key: ja:exercise:kata2-mcq-me
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kata-ma
+    prompt:
+      stem: Chữ メ đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: o2e, text: me, lang: vi }
+        - { id: p6f, text: mu, lang: vi }
+        - { id: q9g, text: ma, lang: vi }
+        - { id: r4h, text: nu, lang: vi }
+    answer:
+      correct_option_id: o2e
+    explanation:
+      vi: メ là "me", tương ứng め Hiragana. ム là mu, マ là ma, ヌ là nu.
+    display_answer: me
+
+  - key: ja:exercise:kata2-listen-kamera
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kamera
+    prompt:
+      audio_asset_id: null
+      fallback_text: カメラ
+      options:
+        - { id: s8i, text: máy ảnh, lang: vi }
+        - { id: t3j, text: khách sạn, lang: vi }
+        - { id: u7k, text: rượu vang, lang: vi }
+        - { id: v1l, text: cà vạt, lang: vi }
+    answer:
+      correct_option_id: s8i
+    explanation:
+      vi: カメラ (ka-me-ra) là máy ảnh, từ "camera". Khách sạn là ホテル, rượu vang là ワイン.
+    display_answer: máy ảnh
+
+  - key: ja:exercise:kata2-build-hoteru
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hoteru
+    prompt:
+      instruction: Ghép các chữ thành từ "hoteru" (khách sạn).
+      tokens:
+        - { id: h1, text: ル }
+        - { id: h2, text: ロ }
+        - { id: h3, text: テ }
+        - { id: h4, text: ホ }
+        - { id: h5, text: ハ }
+    answer:
+      orders:
+        - [h4, h3, h1]
+    explanation:
+      vi: 'hoteru = ホ (ho) + テ (te) + ル (ru). ロ là "ro", ハ là "ha".'
+    display_answer: ホテル
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kata2-fill-ra-row
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-ra
+    prompt:
+      template: "Katakana hàng ラ: ラ {{b1}} ル レ {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [リ]
+        b2: [ロ]
+    known_wrong:
+      - answer: り
+        feedback_vi: り là Hiragana. Katakana viết リ.
+        error_tag: hiragana_for_katakana
+      - answer: ろ
+        feedback_vi: ろ là Hiragana. Katakana viết ロ.
+        error_tag: hiragana_for_katakana
+      - answer: ri
+        feedback_vi: Hãy gõ bằng chữ Katakana (リ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Hàng ラ - ラ ra, リ ri, ル ru, レ re, ロ ro. リ gần giống り Hiragana.
+    display_answer: リ, ロ
+
+  - key: ja:exercise:kata2-write-kamera
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kamera
+    prompt:
+      source_text: máy ảnh (camera) - viết bằng Katakana
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - カメラ
+    known_wrong:
+      - answer: かめら
+        feedback_vi: Từ ngoại lai viết bằng Katakana - カメラ.
+        error_tag: hiragana_for_katakana
+      - answer: カメロ
+        feedback_vi: Âm cuối là ラ (ra) - カメラ.
+        error_tag: kana_vowel
+      - answer: kamera
+        feedback_vi: Hãy gõ bằng chữ Katakana (カメラ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Máy ảnh là カメラ - カ (ka) + メ (me) + ラ (ra).
+    display_answer: カメラ
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kata2-meaning-wain
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kata-wa
+    prompt:
+      source_text: ワイン
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - rượu vang
+        - vang
+        - rượu nho
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: khách sạn
+        feedback_vi: Khách sạn là ホテル. ワイン (wa-i-n) là rượu vang, từ "wine".
+        error_tag: vocab_meaning
+    explanation:
+      vi: ワイン đọc "wa-i-n", mượn từ tiếng Anh "wine" - rượu vang.
+    display_answer: rượu vang
+
+  - key: ja:exercise:kata2-mcq-lemon
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-ra
+    prompt:
+      stem: '"Quả chanh vàng" (lemon) tiếng Nhật đọc là "remon". Cách viết nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: w5m, text: レモン, lang: ja }
+        - { id: x9n, text: レモソ, lang: ja }
+        - { id: y2o, text: ルモン, lang: ja }
+        - { id: z6p, text: れもん, lang: ja }
+    answer:
+      correct_option_id: w5m
+    explanation:
+      vi: '"l" của "lemon" viết bằng hàng ラ - レ (re); cuối là ン (n), không phải ソ (so). Từ ngoại lai viết Katakana, không viết れもん.'
+    display_answer: レモン
+
+  - key: ja:exercise:kata2-build-wain
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-wa
+    prompt:
+      instruction: 'Ghép các chữ thành từ "wain" (rượu vang).'
+      tokens:
+        - { id: w1, text: ン }
+        - { id: w2, text: イ }
+        - { id: w3, text: ソ }
+        - { id: w4, text: ワ }
+        - { id: w5, text: ウ }
+    answer:
+      orders:
+        - [w4, w2, w1]
+    explanation:
+      vi: 'wain = ワ (wa) + イ (i) + ン (n). ソ là "so" - nét kéo xuống; ン nét hất lên.'
+    display_answer: ワイン
