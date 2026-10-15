@@ -103,6 +103,8 @@ export const roleplayTurn: PromptModule = {
       if (req.language === 'ko' && !hasHangul(reply)) return { ok: false, error: 'partner_reply: Korean text must contain Hangul' };
       if (req.language === 'ja' && !hasJapanese(reply)) return { ok: false, error: 'partner_reply: Japanese text must contain kana or kanji' };
       if (req.language === 'ja' && hasHangul(reply)) return { ok: false, error: 'partner_reply: Japanese reply must not contain Hangul' };
+      // A spoken Japanese line always has kana (particles, endings); kanji alone is a Chinese answer.
+      if (req.language === 'ja' && !hasKana(reply)) return { ok: false, error: 'partner_reply: Japanese reply must contain kana' };
       if (req.language === 'ko' && hasKana(reply)) return { ok: false, error: 'partner_reply: Korean reply must not contain kana' };
       if (req.language === 'en' && hasHangul(reply)) return { ok: false, error: 'partner_reply: English reply must not contain Hangul' };
       if (req.language === 'en' && hasJapanese(reply)) return { ok: false, error: 'partner_reply: English reply must not contain Japanese' };

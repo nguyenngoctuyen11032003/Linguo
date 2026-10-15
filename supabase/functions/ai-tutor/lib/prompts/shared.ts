@@ -1,7 +1,7 @@
 // Shared pieces of the ai-tutor prompt modules (PRD §8.5, spec 5 §3).
 import type { z } from 'zod';
 import type { AiRequest, AiTask } from '../../../_shared/ai-contract.ts';
-import { hasHangul, hasJapanese, wrapData } from '../text.ts';
+import { hasHangul, hasJapanese, hasKana, wrapData } from '../text.ts';
 
 export type ValidateResult = { ok: true; data: unknown } | { ok: false; error: string };
 
@@ -76,9 +76,33 @@ export function systemPrompt(taskRules: string[]): string {
   return [BASE_RULES, '', 'Nhiệm vụ:', ...taskRules.map((r) => `- ${r}`)].join('\n');
 }
 
+/**
+ * Japanese politeness register (and script) by level: beginners only meet the polite です/ます form, so a reply in
+ * plain form or heavy keigo would teach them something they cannot use yet. Unknown levels get the safe default.
+ */
+const JA_REGISTER_N5 = 'chỉ dùng thể lịch sự です/ます, câu ngắn; chỉ dùng kanji trình độ N5, từ khó hơn viết bằng hiragana.';
+const JA_REGISTER: Record<string, string> = {
+  kana: 'chỉ dùng thể lịch sự です/ます, câu rất ngắn; viết chủ yếu bằng hiragana và katakana, hạn chế kanji (chỉ kanji rất cơ bản).',
+  n5: JA_REGISTER_N5,
+  n4: 'dùng thể lịch sự です/ます; có thể dùng các mẫu N4 (～てください, ～たいです, ～ことができます); kanji trình độ N4, từ khó hơn viết bằng hiragana.',
+  n3: 'mặc định dùng thể lịch sự です/ます; thể thường chỉ khi vai là bạn bè thân; kính ngữ cơ bản (いらっしゃいませ, お～ください) khi vai là nhân viên phục vụ.',
+  n2: 'dùng lối nói tự nhiên đúng vai: thể lịch sự hoặc kính ngữ, khiêm nhường ngữ (尊敬語・謙譲語) khi là nhân viên, lễ tân, nhà tuyển dụng; thể thường giữa bạn bè.',
+  n1: 'dùng lối nói tự nhiên đúng vai, kể cả kính ngữ, khiêm nhường ngữ (尊敬語・謙譲語) đầy đủ trong bối cảnh trang trọng; thể thường giữa bạn bè.',
+};
+
+export function japaneseRegister(level: string): string {
+  return JA_REGISTER[level] ?? JA_REGISTER_N5;
+}
+
 /** Header lines (trusted, server-validated values only) shared by every user message. */
 export function header(req: AiRequest): string[] {
-  return [`Ngôn ngữ đích: ${LANGUAGE_LABELS[req.language]}`, `Trình độ người học: ${levelLabel(req.level)}`];
+  const lines = [`Ngôn ngữ đích: ${LANGUAGE_LABELS[req.language]}`, `Trình độ người học: ${levelLabel(req.level)}`];
+  if (req.language === 'ja') {
+    lines.push(
+      `Lối nói tiếng Nhật: ${japaneseRegister(req.level)} Luôn viết bằng chữ Nhật (kana, kanji): không viết romaji thay chữ Nhật, không chèn furigana trong ngoặc.`,
+    );
+  }
+  return lines;
 }
 
 export function lessonBlock(lessonContext: string | null): string[] {
@@ -105,11 +129,24 @@ export function requireJapanese(text: string, where: string): string | null {
   return hasJapanese(text) ? null : `${where}: Japanese text must contain kana or kanji`;
 }
 
-/** Target-language script check: Hangul for ko, kana or kanji for ja, nothing for en. */
+/**
+ * Target-language script check: Hangul (and no kana) for ko, kana or kanji (and no Hangul) for ja, nothing for en.
+ * Mixing the two scripts is always a model slip: Korean text never contains kana, Japanese text never Hangul.
+ */
 export function requireTargetScript(language: AiRequest['language'], text: string, where: string): string | null {
-  if (language === 'ko') return requireHangul(text, where);
-  if (language === 'ja') return requireJapanese(text, where);
+  if (language === 'ko') return requireHangul(text, where) ?? (hasKana(text) ? `${where}: Korean text must not contain kana` : null);
+  if (language === 'ja') return requireJapanese(text, where) ?? (hasHangul(text) ? `${where}: Japanese text must not contain Hangul` : null);
   return null;
+}
+
+/**
+ * requireTargetScript for whole sentences (a role-play reply, a rewritten essay). Japanese sentences always carry
+ * kana (particles, inflections), so kanji alone means the model answered in Chinese.
+ */
+export function requireTargetSentence(language: AiRequest['language'], text: string, where: string): string | null {
+  const err = requireTargetScript(language, text, where);
+  if (err) return err;
+  return language === 'ja' && !hasKana(text) ? `${where}: Japanese sentence must contain kana` : null;
 }
 
 /** For "is this text really in the sentence?" checks: NFKC, unified quotes, no whitespace, English lower-cased. */

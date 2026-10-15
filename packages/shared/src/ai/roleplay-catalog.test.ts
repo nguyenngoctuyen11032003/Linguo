@@ -10,7 +10,7 @@ import {
   type RoleplayLanguage,
 } from './roleplay-catalog';
 
-const LANGS: RoleplayLanguage[] = ['en', 'ko'];
+const LANGS: RoleplayLanguage[] = ['en', 'ko', 'ja'];
 
 describe('roleplay catalog integrity', () => {
   it('has scenarios for every language', () => {
@@ -62,9 +62,35 @@ describe('roleplay catalog integrity', () => {
     }
   });
 
-  it('level scales mirror the learning levels of every language (ja included, catalog may be empty)', () => {
+  it('level scales mirror the learning levels of every language', () => {
     expect(ROLEPLAY_LEVELS).toEqual({ en: [...LEVELS.en], ko: [...LEVELS.ko], ja: [...LEVELS.ja] });
-    for (const s of roleplayScenariosFor('ja')) expect(s.language).toBe('ja');
+  });
+
+  it('ja mirrors ko: same scenario keys, goal keys and level spread (same ordinal positions)', () => {
+    const ko = roleplayScenariosFor('ko');
+    const ja = roleplayScenariosFor('ja');
+    expect(ja.map((s) => s.key)).toEqual(ko.map((s) => s.key));
+    // ko starts at hangul (0), ja at kana (0); topik1..topik5 sit at the same ordinals as n5..n1.
+    const ord = (lang: RoleplayLanguage, level: string) => ROLEPLAY_LEVELS[lang].indexOf(level);
+    for (const k of ko) {
+      const j = findRoleplayScenario('ja', k.key)!;
+      expect(j.goals.map((g) => g.key)).toEqual(k.goals.map((g) => g.key));
+      expect(ord('ja', j.level_min)).toBe(ord('ko', k.level_min));
+      expect(ord('ja', j.level_max)).toBe(ord('ko', k.level_max));
+      expect(j.title_vi).toBe(k.title_vi);
+    }
+  });
+
+  it('ja openings are Japanese script (kana present, no Hangul) and personas are Vietnamese with a register', () => {
+    const KANA = /[぀-ヿ]/;
+    const HANGUL = /[가-힯]/;
+    for (const s of roleplayScenariosFor('ja')) {
+      expect(s.opening_hint).toMatch(KANA);
+      expect(s.opening_hint).not.toMatch(HANGUL);
+      expect(s.persona).toMatch(/^Bạn là/);
+      expect(s.persona).toMatch(/です\/ます|kính ngữ/);
+    }
+    for (const s of roleplayScenariosFor('ko')) expect(s.opening_hint).not.toMatch(KANA);
   });
 });
 

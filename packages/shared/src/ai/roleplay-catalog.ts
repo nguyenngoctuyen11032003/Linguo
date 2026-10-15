@@ -218,6 +218,98 @@ export const ROLEPLAY_SCENARIOS: readonly RoleplayScenario[] = [
     level_max: 'topik2',
     opening_hint: '안녕하세요! 만나서 반가워요. 이름이 뭐예요?',
   },
+  // Japanese (same keys and level spread as ko: topik1–3 ≈ n5–n3, topik2–4 ≈ n4–n2, topik3–5 ≈ n3–n1).
+  {
+    key: 'cafe_order',
+    language: 'ja',
+    title_vi: 'Gọi đồ ở quán cà phê',
+    summary_vi: 'Chọn đồ uống, món ăn kèm và thanh toán.',
+    partner_role_vi: 'Nhân viên quán cà phê',
+    persona:
+      'Bạn là nhân viên thân thiện ở quầy một quán cà phê ở Tokyo. Bạn nhận order đồ uống và bánh, hỏi nóng hay lạnh (ホット / アイス), cỡ ly, uống tại chỗ hay mang đi (店内 / お持ち帰り), rồi báo giá bằng yên. Dùng lối nói lịch sự của nhân viên phục vụ (です/ます, いらっしゃいませ, ～でしょうか).',
+    goals: [g('order_drink', 'Gọi một đồ uống'), g('choose_size_or_extras', 'Chọn nóng/lạnh, cỡ ly hoặc món kèm'), g('pay', 'Hỏi giá và thanh toán')],
+    level_min: 'n5',
+    level_max: 'n3',
+    opening_hint: 'いらっしゃいませ！ご注文はお決まりですか？',
+  },
+  {
+    key: 'ask_directions',
+    language: 'ja',
+    title_vi: 'Hỏi đường',
+    summary_vi: 'Hỏi và hiểu cách đi đến một địa điểm.',
+    partner_role_vi: 'Người dân địa phương',
+    persona:
+      'Bạn là một người dân Osaka tốt bụng đang đứng gần cửa ra ga tàu. Bạn chỉ đường ngắn gọn bằng mốc dễ thấy (まっすぐ, 右, 左, 角, 信号, 向かい, となり). Dùng lối nói lịch sự (です/ます).',
+    goals: [g('ask_place', 'Hỏi đường đến một nơi'), g('confirm_route', 'Nhắc lại để chắc mình hiểu'), g('thank', 'Cảm ơn và chào tạm biệt')],
+    level_min: 'n5',
+    level_max: 'n3',
+    opening_hint: 'すみません、何かお探しですか？',
+  },
+  {
+    key: 'hotel_checkin',
+    language: 'ja',
+    title_vi: 'Nhận phòng khách sạn',
+    summary_vi: 'Xác nhận đặt phòng, hỏi giờ ăn sáng và wifi.',
+    partner_role_vi: 'Lễ tân khách sạn',
+    persona:
+      'Bạn là lễ tân rất lịch sự của một khách sạn ở Kyoto. Bạn xác nhận tên khách và số đêm, nhắc giờ trả phòng, và trả lời câu hỏi về bữa sáng, wifi. Dùng kính ngữ của lễ tân (ございます, いたします, ～でしょうか) nhưng câu ngắn, rõ ràng.',
+    goals: [g('confirm_booking', 'Xác nhận đặt phòng'), g('ask_facilities', 'Hỏi về bữa sáng hoặc wifi'), g('special_request', 'Nêu một yêu cầu thêm')],
+    level_min: 'n4',
+    level_max: 'n2',
+    opening_hint: 'いらっしゃいませ。ご予約のお名前をお願いいたします。',
+  },
+  {
+    key: 'doctor_visit',
+    language: 'ja',
+    title_vi: 'Đi khám bác sĩ',
+    summary_vi: 'Mô tả triệu chứng và nghe lời dặn của bác sĩ.',
+    partner_role_vi: 'Bác sĩ đa khoa',
+    persona:
+      'Bạn là bác sĩ đa khoa điềm đạm ở một phòng khám nhỏ. Bạn hỏi người bệnh triệu chứng nhẹ thường gặp (頭が痛い, 熱がある, のどが痛い, かぜ), hỏi từ bao giờ, rồi dặn nghỉ ngơi và uống thuốc. Không chẩn đoán bệnh nặng, không kê thuốc cụ thể thật; đây chỉ là tình huống luyện nói. Dùng lối nói lịch sự (です/ます).',
+    goals: [g('describe_symptoms', 'Mô tả triệu chứng'), g('say_duration', 'Nói triệu chứng kéo dài bao lâu'), g('understand_advice', 'Hiểu lời dặn của bác sĩ')],
+    level_min: 'n4',
+    level_max: 'n2',
+    opening_hint: 'こんにちは。今日はどうしましたか？',
+  },
+  {
+    key: 'job_interview',
+    language: 'ja',
+    title_vi: 'Phỏng vấn xin việc cơ bản',
+    summary_vi: 'Giới thiệu bản thân, kinh nghiệm và điểm mạnh.',
+    partner_role_vi: 'Nhà tuyển dụng',
+    persona:
+      'Bạn là nhà tuyển dụng lịch sự trong buổi phỏng vấn đầu cho vị trí nhân viên văn phòng ở một công ty Nhật. Bạn hỏi lần lượt: tự giới thiệu (自己紹介), kinh nghiệm, một điểm mạnh, vì sao muốn làm vị trí này. Mỗi lần chỉ hỏi một câu. Dùng kính ngữ trang trọng của phỏng vấn (～てください, ～でしょうか, お聞かせください).',
+    goals: [g('introduce_self', 'Giới thiệu bản thân'), g('describe_experience', 'Nói về kinh nghiệm'), g('state_strength', 'Nêu một điểm mạnh')],
+    level_min: 'n3',
+    level_max: 'n1',
+    opening_hint: '本日はお越しいただきありがとうございます。まず、簡単に自己紹介をお願いします。',
+  },
+  {
+    key: 'shopping_bargain',
+    language: 'ja',
+    title_vi: 'Mua sắm và trả giá',
+    summary_vi: 'Hỏi giá, cỡ, màu và thương lượng nhẹ nhàng.',
+    partner_role_vi: 'Người bán hàng',
+    persona:
+      'Bạn là người bán hàng vui vẻ ở một cửa hàng quần áo nhỏ trong khu phố mua sắm. Bạn giới thiệu sản phẩm, nói giá bằng yên, và sẵn sàng giảm giá một chút (少し安くします) nếu khách hỏi lịch sự. Dùng lối nói lịch sự (です/ます).',
+    goals: [g('ask_price', 'Hỏi giá'), g('ask_size_or_color', 'Hỏi cỡ hoặc màu'), g('bargain', 'Thương lượng giá'), g('decide', 'Quyết định mua hoặc không')],
+    level_min: 'n5',
+    level_max: 'n3',
+    opening_hint: 'いらっしゃいませ！どうぞゆっくり見てください。',
+  },
+  {
+    key: 'introductions',
+    language: 'ja',
+    title_vi: 'Làm quen và tự giới thiệu',
+    summary_vi: 'Chào hỏi, nói tên, nơi ở và sở thích.',
+    partner_role_vi: 'Một người bạn mới',
+    persona:
+      'Bạn là một bạn học người Nhật thân thiện vừa gặp người học lần đầu ở câu lạc bộ ngoại ngữ. Bạn hỏi tên, quê quán, công việc hoặc việc học, và sở thích; bạn cũng chia sẻ vài điều ngắn về mình. Dùng lối nói lịch sự đơn giản (です/ます), câu ngắn.',
+    goals: [g('greet_and_name', 'Chào và nói tên'), g('say_origin', 'Nói mình đến từ đâu'), g('share_hobby', 'Chia sẻ một sở thích')],
+    level_min: 'kana',
+    level_max: 'n4',
+    opening_hint: 'はじめまして！わたしはゆいです。おなまえはなんですか？',
+  },
 ];
 
 export function findRoleplayScenario(language: RoleplayLanguage, key: string): RoleplayScenario | undefined {
