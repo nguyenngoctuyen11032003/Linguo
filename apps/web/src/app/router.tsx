@@ -148,6 +148,9 @@ const routeTree: RouteObject[] = [
               { path: 'tu-vung-cua-toi', ...lazyPage(() => import('@/routes/app/vocab/PersonalListsPage'), 'PersonalListsPage') },
               { path: 'tu-vung-cua-toi/:listId', ...lazyPage(() => import('@/routes/app/vocab/PersonalListPage'), 'PersonalListPage') },
               { path: 'tu-vung-cua-toi/:listId/on-tap', ...lazyPage(() => import('@/routes/app/vocab/PersonalReviewPage'), 'PersonalReviewPage') },
+              // Classes, learner side (PRD P2): join by code (also the invite link), my classes and assignments.
+              { path: 'lop-hoc', ...lazyPage(() => import('@/routes/app/classes/ClassesPage'), 'ClassesPage') },
+              { path: 'lop-hoc/tham-gia', ...lazyPage(() => import('@/routes/app/classes/JoinClassPage'), 'JoinClassPage') },
             ],
           },
         ],
