@@ -171,6 +171,9 @@ Trang `/quan-tri` (spec 11) chỉ mở cho tài khoản có vai trò trong bản
 
 **Trạng thái duyệt và import nội dung:** reviewer chuyển trạng thái trên trang quản trị (`admin_set_status`, ghi `reviewed_by`/`reviewed_at`). Khi chạy lại **Publish content**, dòng có nội dung không đổi (cùng `content_hash`) chỉ nhận trạng thái từ YAML nếu đó là đúng một bước hợp lệ từ trạng thái hiện tại; nếu không, trạng thái trong database được giữ (migration `20261015000420_import_keep_published.sql`). Vì vậy import không bao giờ hạ một dòng `published` xuống `draft`/`in_review`/`approved`; lưu trữ (`archived`, hoặc xoá khỏi `content/`) vẫn hoạt động. Nội dung đã sửa (hash đổi) luôn nhận trạng thái ghi trong YAML, nên hãy cập nhật YAML theo quyết định duyệt khi sửa nội dung.
 
+## Ghim phiên bản GitHub Actions
+Mọi action bên thứ ba trong `.github/workflows` được ghim theo **mã commit SHA đầy đủ** kèm phiên bản trong chú thích cuối dòng (ví dụ `uses: actions/checkout@<sha> # v7.0.1`). Các job có secret (`migrate`, `functions`, `build`, xuất bản nội dung, bảo trì, nhắc học) chạy các action này nên không dùng thẻ phiên bản trôi nổi như `@v7`. Dependabot mở PR hằng tuần, gộp bản minor/patch, để cập nhật các mã SHA; bản major đến thành PR riêng. Khi thêm action mới, luôn ghim bằng SHA (kiểm tra SHA đúng là commit của tag: `gh api repos/<owner>/<repo>/commits/<sha>`). Không đổi lại sang thẻ trôi nổi.
+
 ## Bảo trì dữ liệu (Maintenance)
 Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 19 * * *` UTC, tức 02:17 giờ Việt Nam) và chạy tay được qua Actions → **Maintenance** → **Run workflow**.
 
