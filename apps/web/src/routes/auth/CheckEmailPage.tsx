@@ -11,11 +11,12 @@ const COOLDOWN_S = 60;
 
 export function CheckEmailPage() {
   const location = useLocation();
-  const state = location.state as { email?: string; next?: string } | null;
+  const state = location.state as { email?: string; next?: string; resendNow?: boolean } | null;
   const email = state?.email;
   // The resent link must lead where the first one did (see SignUpPage).
   const next = safeNext(state?.next);
-  const [cooldown, setCooldown] = useState(COOLDOWN_S);
+  // From sign-in with an unconfirmed account (resendNow) no email was just sent: allow a resend right away.
+  const [cooldown, setCooldown] = useState(state?.resendNow ? 0 : COOLDOWN_S);
   const [message, setMessage] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null);
   const [loading, setLoading] = useState(false);
 

@@ -87,6 +87,39 @@ describe('SignInPage', () => {
     expect(screen.getByRole('link', { name: 'Đăng ký miễn phí' })).toHaveAttribute('href', '/dang-ky?next=%2Fapp%2Fcai-dat');
   });
 
+  it('offers a fresh confirmation email to an unconfirmed account, resendable right away', async () => {
+    mocks.auth.signInWithPassword.mockResolvedValue({ data: {}, error: { code: 'email_not_confirmed' } });
+    mocks.auth.resend.mockResolvedValue({ data: {}, error: null });
+    renderWithProviders(
+      <Routes>
+        <Route path="/dang-nhap" element={<SignInPage />} />
+        <Route path="/kiem-tra-email" element={<CheckEmailPage />} />
+      </Routes>,
+      { route: '/dang-nhap?next=%2Fapp%2Fcai-dat', ...signedOut },
+    );
+    await userEvent.type(screen.getByLabelText('Email'), 'a@b.vn');
+    await userEvent.type(screen.getByLabelText('Mật khẩu'), 'matkhau123');
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng nhập' }));
+    await userEvent.click(await screen.findByRole('link', { name: 'Gửi lại email xác minh' }));
+    await userEvent.click(await screen.findByRole('button', { name: 'Gửi lại email' }));
+    expect(await screen.findByText('Đã gửi lại email xác minh.')).toBeInTheDocument();
+    expect(mocks.auth.resend).toHaveBeenCalledWith({
+      type: 'signup',
+      email: 'a@b.vn',
+      options: { emailRedirectTo: 'http://localhost:5173/auth/callback?next=%2Fapp%2Fcai-dat' },
+    });
+  });
+
+  it('does not offer a confirmation email for other sign-in errors', async () => {
+    mocks.auth.signInWithPassword.mockResolvedValue({ data: {}, error: { code: 'invalid_credentials' } });
+    at('/dang-nhap', '/dang-nhap', <SignInPage />);
+    await userEvent.type(screen.getByLabelText('Email'), 'a@b.vn');
+    await userEvent.type(screen.getByLabelText('Mật khẩu'), 'sai');
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng nhập' }));
+    await screen.findByText('Email hoặc mật khẩu không đúng.');
+    expect(screen.queryByRole('link', { name: 'Gửi lại email xác minh' })).not.toBeInTheDocument();
+  });
+
   it('shows a Vietnamese error on bad credentials', async () => {
     mocks.auth.signInWithPassword.mockResolvedValue({ data: {}, error: { code: 'invalid_credentials' } });
     at('/dang-nhap', '/dang-nhap', <SignInPage />);
