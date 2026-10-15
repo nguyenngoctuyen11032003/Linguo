@@ -44,7 +44,14 @@ export const FALLBACK_SENTENCES: Record<SpeakingLanguage, SpeakingSentence[]> = 
     { id: 'fb-ko-4', text: '물 한 잔 주세요.', translation: 'Cho tôi một cốc nước.' },
     { id: 'fb-ko-5', text: '다시 한번 말씀해 주세요.', translation: 'Xin hãy nói lại một lần nữa.' },
   ],
-  ja: [],
+  // Polite です/ます form only, N5 vocabulary and kanji (what beginners repeat first).
+  ja: [
+    { id: 'fb-ja-1', text: 'こんにちは。', translation: 'Xin chào.' },
+    { id: 'fb-ja-2', text: 'はじめまして。よろしくおねがいします。', translation: 'Rất vui được gặp bạn. Mong được giúp đỡ.' },
+    { id: 'fb-ja-3', text: 'わたしは学生です。', translation: 'Tôi là học sinh.' },
+    { id: 'fb-ja-4', text: 'お水をください。', translation: 'Cho tôi nước.' },
+    { id: 'fb-ja-5', text: 'もう一度言ってください。', translation: 'Xin hãy nói lại một lần nữa.' },
+  ],
 };
 
 export interface OpenPrompt {
@@ -66,7 +73,11 @@ export const OPEN_PROMPTS: Record<SpeakingLanguage, OpenPrompt[]> = {
     { id: 'open-ko-2', question: 'Hãy kể về một ngày bình thường của bạn.', starter: '아침에 저는 …. 그리고 ….' },
     { id: 'open-ko-3', question: 'Cuối tuần bạn thích làm gì?', starter: '주말에 저는 …을/를 좋아해요.' },
   ],
-  ja: [],
+  ja: [
+    { id: 'open-ja-1', question: 'Hãy giới thiệu bản thân trong 2–3 câu.', starter: 'わたしは…です。…にすんでいます。' },
+    { id: 'open-ja-2', question: 'Hãy kể về một ngày bình thường của bạn.', starter: '朝、わたしは…ます。それから、…ます。' },
+    { id: 'open-ja-3', question: 'Cuối tuần bạn thích làm gì?', starter: '週末、わたしは…がすきです。' },
+  ],
 };
 
 /** The lesson-specific prompt first (when the lesson has a title), then the generic ones. */
@@ -143,6 +154,30 @@ export const ROLE_PLAYS: Record<SpeakingLanguage, RolePlayScript[]> = {
       ],
     },
   ],
-  // Japanese speaking material ships with the ja content (LANGUAGES.ja.available).
-  ja: [],
+  ja: [
+    {
+      id: 'rp-ja-cafe',
+      title: 'Gọi đồ uống ở quán cà phê',
+      setting: 'Bạn bước vào quán cà phê và gọi một thức uống.',
+      turns: [
+        { speaker: 'partner', text: 'いらっしゃいませ。ご注文はお決まりですか？', translation: 'Xin mời vào. Quý khách đã chọn được món chưa ạ?' },
+        { speaker: 'you', text: 'コーヒーをひとつください。', translation: 'Cho tôi một ly cà phê.' },
+        { speaker: 'partner', text: 'ホットとアイス、どちらにしますか？', translation: 'Nóng hay đá ạ?' },
+        { speaker: 'you', text: 'アイスでおねがいします。いくらですか？', translation: 'Cho tôi đá. Bao nhiêu tiền ạ?' },
+        { speaker: 'partner', text: '四百円です。', translation: 'Bốn trăm yên ạ.' },
+        { speaker: 'you', text: 'はい、どうぞ。ありがとうございます。', translation: 'Đây ạ. Cảm ơn!' },
+      ],
+    },
+    {
+      id: 'rp-ja-intro',
+      title: 'Làm quen với người mới',
+      setting: 'Bạn gặp một người bạn mới và chào hỏi.',
+      turns: [
+        { speaker: 'partner', text: 'はじめまして。わたしはゆいです。おなまえはなんですか？', translation: 'Rất vui được gặp bạn. Mình là Yui. Bạn tên gì?' },
+        { speaker: 'you', text: 'はじめまして。ミンです。よろしくおねがいします。', translation: 'Rất vui được gặp bạn. Mình là Minh. Mong được giúp đỡ.' },
+        { speaker: 'partner', text: 'こちらこそ。どこから来ましたか？', translation: 'Mình cũng vậy. Bạn đến từ đâu?' },
+        { speaker: 'you', text: 'ベトナムから来ました。', translation: 'Mình đến từ Việt Nam.' },
+      ],
+    },
+  ],
 };
