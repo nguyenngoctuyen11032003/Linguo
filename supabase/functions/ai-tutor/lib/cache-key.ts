@@ -1,7 +1,7 @@
 import type { AiRequest } from '../../_shared/ai-contract.ts';
 
 /** NFKC, trim, collapse whitespace; English is also lower-cased (Korean has no case). */
-export function normalizeText(text: string | undefined | null, language: 'en' | 'ko'): string {
+export function normalizeText(text: string | undefined | null, language: 'en' | 'ko' | 'ja'): string {
   if (text === undefined || text === null) return '';
   const s = text.normalize('NFKC').trim().replace(/\s+/g, ' ');
   return language === 'en' ? s.toLowerCase() : s;

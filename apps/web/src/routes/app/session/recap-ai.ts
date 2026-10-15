@@ -3,7 +3,7 @@ import { clip, type AiSheetState } from '@/components/exercise/ai-context';
 import type { SessionMistake } from '@/features/session/service';
 
 interface LearnerLevel {
-  language: 'en' | 'ko';
+  language: 'en' | 'ko' | 'ja';
   level: string;
 }
 

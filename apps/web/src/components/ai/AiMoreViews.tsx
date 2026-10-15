@@ -6,7 +6,7 @@ import { tagLabel } from './tag-labels';
 
 // AI sheet views of analyze_sentence, summarize_session and plan_review (spec 8.2 #4, #9, #7).
 
-type Lang = 'en' | 'ko';
+type Lang = 'en' | 'ko' | 'ja';
 
 function SectionTitle({ children }: { children: string }) {
   return <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{children}</h3>;

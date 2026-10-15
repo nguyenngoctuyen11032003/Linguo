@@ -1,9 +1,9 @@
 // Spec 9 §4: listening questions without a recording are read aloud with the Web Speech API. When the browser has
 // no voice for the target language, canSpeak() is false and the UI shows the script instead ("đọc thay nghe").
 
-export type TtsLanguage = 'en' | 'ko';
+export type TtsLanguage = 'en' | 'ko' | 'ja';
 
-const LOCALES: Record<TtsLanguage, string> = { en: 'en-US', ko: 'ko-KR' };
+const LOCALES: Record<TtsLanguage, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP' };
 
 function synth(): SpeechSynthesis | null {
   if (typeof window === 'undefined') return null;
@@ -22,7 +22,7 @@ function voices(s: SpeechSynthesis): SpeechSynthesisVoice[] {
 
 const normalise = (tag: string) => tag.replace('_', '-').toLowerCase();
 
-/** The exact locale (ko-KR / en-US) if installed, else any voice of the language (e.g. en-GB). */
+/** The exact locale (ko-KR / en-US / ja-JP) if installed, else any voice of the language (e.g. en-GB). */
 function pickVoice(s: SpeechSynthesis, lang: TtsLanguage): SpeechSynthesisVoice | null {
   const all = voices(s);
   const locale = LOCALES[lang].toLowerCase();

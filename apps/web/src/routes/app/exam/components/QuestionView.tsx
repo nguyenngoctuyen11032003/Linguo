@@ -9,7 +9,7 @@ import { SECTION_LABELS, charCount } from './labels';
 export interface QuestionViewProps {
   question: ExamServedQuestion;
   /** Target language of the attempt: `lang` of the learner's typed answer. */
-  language: 'en' | 'ko';
+  language: 'en' | 'ko' | 'ja';
   /** Plays allowed per listening question (2 in a full mock); null = unlimited. */
   listenLimit: number | null;
   /** New answer; a blank text answer is reported as null. */
@@ -97,7 +97,7 @@ function AnswerField({
   onAnswer,
 }: {
   question: ExamServedQuestion;
-  language: 'en' | 'ko';
+  language: 'en' | 'ko' | 'ja';
   stemId: string;
   onAnswer(a: string | null): void;
 }) {
@@ -112,7 +112,7 @@ function AnswerField({
 
 const toAnswer = (value: string) => (value.trim() === '' ? null : value);
 
-function ShortTextField({ question, language, onAnswer }: { question: ExamServedQuestion; language: 'en' | 'ko'; onAnswer(a: string | null): void }) {
+function ShortTextField({ question, language, onAnswer }: { question: ExamServedQuestion; language: 'en' | 'ko' | 'ja'; onAnswer(a: string | null): void }) {
   const inputId = useId();
   const [value, setValue] = useState(question.answer ?? '');
   return (
@@ -136,7 +136,7 @@ function ShortTextField({ question, language, onAnswer }: { question: ExamServed
 
 type Band = 'below' | 'in' | 'above' | 'none';
 
-function EssayField({ question, language, onAnswer }: { question: ExamServedQuestion; language: 'en' | 'ko'; onAnswer(a: string | null): void }) {
+function EssayField({ question, language, onAnswer }: { question: ExamServedQuestion; language: 'en' | 'ko' | 'ja'; onAnswer(a: string | null): void }) {
   const areaId = useId();
   const guideId = useId();
   const [value, setValue] = useState(question.answer ?? '');
@@ -203,7 +203,7 @@ function ListenControls({
   canListen,
 }: {
   question: ExamServedQuestion;
-  language: 'en' | 'ko';
+  language: 'en' | 'ko' | 'ja';
   listenLimit: number | null;
   used: number;
   onPlayed(): void;

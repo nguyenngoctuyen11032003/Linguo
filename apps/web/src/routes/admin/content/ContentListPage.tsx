@@ -16,6 +16,7 @@ import {
   filtersToParams,
   formatAdminDate,
   isContentKind,
+  isContentLanguage,
   isContentStatus,
   type ContentFilters,
 } from '@/features/admin/content';
@@ -104,7 +105,7 @@ export function ContentListPage() {
             value={filters.language ?? ''}
             onChange={(e) => {
               const v = e.target.value;
-              update({ language: v === 'en' || v === 'ko' ? v : null });
+              update({ language: isContentLanguage(v) ? v : null });
             }}
             className={selectClasses}
           >
