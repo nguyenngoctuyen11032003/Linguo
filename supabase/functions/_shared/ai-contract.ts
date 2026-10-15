@@ -15,6 +15,7 @@ export const AI_TASKS = [
   'analyze_sentence',
   'summarize_session',
   'plan_review',
+  'roleplay_turn',
 ] as const;
 export type AiTask = (typeof AI_TASKS)[number];
 
@@ -37,6 +38,13 @@ export const SESSION_SUMMARY_MAX_ERROR_TAGS = 5;
 /** plan_review: bounded list of detected gaps in, at most this many steps out. */
 export const PLAN_REVIEW_MAX_GAPS = 10;
 export const PLAN_REVIEW_MAX_STEPS = 5;
+/** roleplay_turn: a session is one opening turn (turn_index 0) plus learner turns up to MAX_TURNS - 1. */
+export const ROLEPLAY_MAX_TURNS = 12;
+/** roleplay_turn: only the last turns are sent as context, each bounded. */
+export const ROLEPLAY_HISTORY_MAX_TURNS = 10;
+export const ROLEPLAY_TURN_MAX_CHARS = 300;
+export const ROLEPLAY_REPLY_MAX_CHARS = 400;
+export const ROLEPLAY_MAX_CORRECTIONS = 2;
 export const AI_REPORT_REASONS = ['wrong', 'unclear', 'unsafe', 'other'] as const;
 
 const language = z.enum(['en', 'ko']);
@@ -158,6 +166,38 @@ export const planReviewRequestSchema = z.strictObject({
     .refine((rows) => new Set(rows.map((r) => `${r.kind}:${r.id}`)).size === rows.length, { message: 'duplicate gap' }),
 });
 
+/**
+ * Spec 8.2 #6: one turn of a role-play conversation. The scenario is only a KEY: persona and goals come from the
+ * fixed catalog (roleplay-catalog.ts), never from client text. turn_index 0 is the opening turn (no history, no
+ * message); later turns carry the learner's message and the last turns of the conversation (a bounded window).
+ */
+export const roleplayTurnRequestSchema = z
+  .strictObject({
+    task: z.literal('roleplay_turn'),
+    language,
+    level,
+    scenario_key: z.string().regex(/^[a-z][a-z_]{1,31}$/),
+    history: z
+      .array(z.strictObject({ role: z.enum(['partner', 'learner']), text: shortText(ROLEPLAY_TURN_MAX_CHARS) }))
+      .max(ROLEPLAY_HISTORY_MAX_TURNS)
+      .default([]),
+    learner_message: z.string().trim().max(ROLEPLAY_TURN_MAX_CHARS).default(''),
+    turn_index: z.number().int().min(0).max(ROLEPLAY_MAX_TURNS - 1),
+  })
+  .superRefine((req, ctx) => {
+    if (req.turn_index === 0) {
+      if (req.history.length > 0) ctx.addIssue({ code: 'custom', path: ['history'], message: 'opening turn has no history' });
+      if (req.learner_message !== '') ctx.addIssue({ code: 'custom', path: ['learner_message'], message: 'opening turn has no message' });
+      return;
+    }
+    if (req.learner_message === '') ctx.addIssue({ code: 'custom', path: ['learner_message'], message: 'message required' });
+    // Before learner turn k the conversation holds the opening plus (k - 1) exchanges: 2k - 1 entries at most.
+    if (req.history.length === 0 || req.history.length > 2 * req.turn_index - 1) {
+      ctx.addIssue({ code: 'custom', path: ['history'], message: 'history does not match turn_index' });
+    }
+    if (req.history.at(-1)?.role !== 'partner') ctx.addIssue({ code: 'custom', path: ['history'], message: 'history must end with the partner' });
+  });
+
 export const aiRequestSchema = z.discriminatedUnion('task', [
   explainConceptRequestSchema,
   generatePracticeRequestSchema,
@@ -166,6 +206,7 @@ export const aiRequestSchema = z.discriminatedUnion('task', [
   analyzeSentenceRequestSchema,
   summarizeSessionRequestSchema,
   planReviewRequestSchema,
+  roleplayTurnRequestSchema,
 ]);
 export type AiRequest = z.infer<typeof aiRequestSchema>;
 export type AiRequestInput = z.input<typeof aiRequestSchema>;
@@ -280,6 +321,18 @@ export const planReviewOutputSchema = z.strictObject({
     .max(PLAN_REVIEW_MAX_STEPS),
 });
 
+/** Spec 8.2 #6: the partner's next line plus gentle feedback on the learner's last message only. */
+export const roleplayTurnOutputSchema = z.strictObject({
+  /** In the target language (Hangul for ko); in character, short, usually ends with a follow-up question. */
+  partner_reply: md(ROLEPLAY_REPLY_MAX_CHARS),
+  hint_vi: md(200).nullable(),
+  /** Real errors in the learner's last message only; empty for the opening turn. */
+  corrections: z.array(z.strictObject({ original: md(300), corrected: md(300), note_vi: md(300) })).max(ROLEPLAY_MAX_CORRECTIONS),
+  /** Goal keys reached so far; each comes from the scenario (checked by the Edge Function). */
+  goal_progress: z.array(md(40)).max(6),
+  finished: z.boolean(),
+});
+
 export const AI_OUTPUT_SCHEMAS = {
   explain_concept: explainConceptOutputSchema,
   generate_practice: generatePracticeOutputSchema,
@@ -288,6 +341,7 @@ export const AI_OUTPUT_SCHEMAS = {
   analyze_sentence: analyzeSentenceOutputSchema,
   summarize_session: summarizeSessionOutputSchema,
   plan_review: planReviewOutputSchema,
+  roleplay_turn: roleplayTurnOutputSchema,
 } as const;
 
 export type ExplainConceptOutput = z.infer<typeof explainConceptOutputSchema>;
@@ -297,6 +351,8 @@ export type ReviewWritingOutput = z.infer<typeof reviewWritingOutputSchema>;
 export type AnalyzeSentenceOutput = z.infer<typeof analyzeSentenceOutputSchema>;
 export type SummarizeSessionOutput = z.infer<typeof summarizeSessionOutputSchema>;
 export type PlanReviewOutput = z.infer<typeof planReviewOutputSchema>;
+export type RoleplayTurnOutput = z.infer<typeof roleplayTurnOutputSchema>;
+export type RoleplayTurnRequestInput = z.input<typeof roleplayTurnRequestSchema>;
 export type AnalyzeSentenceRequestInput = z.input<typeof analyzeSentenceRequestSchema>;
 export type SummarizeSessionRequestInput = z.input<typeof summarizeSessionRequestSchema>;
 export type PlanReviewRequestInput = z.input<typeof planReviewRequestSchema>;
