@@ -1,6 +1,7 @@
 import { act, render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { ToastProvider, useLiftToasts } from './Toast';
+import { ToastProvider } from './Toast';
+import { useLiftToasts } from './toast-lift';
 
 function Lift({ level, active }: { level: 1 | 2; active: boolean }) {
   useLiftToasts(level, active);

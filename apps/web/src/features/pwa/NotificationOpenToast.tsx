@@ -1,6 +1,6 @@
 import { Bell, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { useLiftToasts } from '@/components/ui/Toast';
+import { useLiftToasts } from '@/components/ui/toast-lift';
 
 export interface NotificationOpenToastProps {
   /** True while a tapped notification waits for the learner to leave a lesson, exam or session. */

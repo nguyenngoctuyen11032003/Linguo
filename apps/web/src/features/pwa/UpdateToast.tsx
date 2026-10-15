@@ -1,6 +1,6 @@
 import { RefreshCw, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { useLiftToasts } from '@/components/ui/Toast';
+import { useLiftToasts } from '@/components/ui/toast-lift';
 import { isBusyRoute } from './busy-route';
 import { useSwUpdate } from './useSwUpdate';
 
