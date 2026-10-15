@@ -1,6 +1,18 @@
 import { describe, expect, it } from 'vitest';
 import { fakeClient } from '../../../tests/unit/fake-supabase';
-import { aiTaskTable, analyticsTotals, formatMs, formatShare, funnelRows, getAiUsage, getAnalytics, parseAnalyticsRange } from './analytics';
+import { AI_TASKS } from '@linguo/shared';
+import {
+  AI_TASK_LABELS_VI,
+  aiTaskTable,
+  analyticsTotals,
+  formatMs,
+  formatShare,
+  funnelRows,
+  getAiUsage,
+  getAnalytics,
+  labelOr,
+  parseAnalyticsRange,
+} from './analytics';
 import { aiUsageFixture, analyticsFixture } from './content-fixtures';
 
 describe('analytics RPCs', () => {
@@ -40,6 +52,11 @@ describe('analytics helpers', () => {
     expect(statuses).toEqual(['ok', 'error']);
     expect(rows[0]).toEqual({ task: 'explain_concept', total: 123, byStatus: { ok: 120, error: 3 } });
     expect(rows[1]?.task).toBe('analyze_error');
+  });
+
+  it('labels every AI task in Vietnamese', () => {
+    for (const task of AI_TASKS) expect(labelOr(AI_TASK_LABELS_VI, task)).not.toBe(task);
+    expect(labelOr(AI_TASK_LABELS_VI, 'future_task')).toBe('future_task');
   });
 
   it('totals the daily rows and formats numbers', () => {

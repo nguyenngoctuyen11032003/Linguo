@@ -5,6 +5,7 @@ import {
   type AdminAiUsage,
   type AdminAnalytics,
   type AdminAnalyticsRange,
+  type AiTask,
 } from '@linguo/shared';
 import { callRpc, parse } from '@/features/lesson-player/service';
 import type { AppSupabaseClient } from '@/lib/supabase';
@@ -77,10 +78,16 @@ export function aiTaskTable(byTask: AdminAiUsage['by_task']): { statuses: string
   return { statuses, rows: [...rows.values()].sort((a, b) => b.total - a.total || a.task.localeCompare(b.task)) };
 }
 
-export const AI_TASK_LABELS_VI: Record<string, string> = {
+/** One label per AI task (typed against AI_TASKS, so a new task cannot ship without one). */
+export const AI_TASK_LABELS_VI: Record<AiTask, string> = {
   explain_concept: 'Giải thích khái niệm',
   generate_practice: 'Tạo bài luyện',
   analyze_error: 'Phân tích lỗi sai',
+  review_writing: 'Nhận xét bài viết',
+  analyze_sentence: 'Phân tích câu',
+  summarize_session: 'Tóm tắt phiên học',
+  plan_review: 'Kế hoạch ôn tập',
+  roleplay_turn: 'Đóng vai với AI',
 };
 
 export const AI_STATUS_LABELS_VI: Record<string, string> = {
