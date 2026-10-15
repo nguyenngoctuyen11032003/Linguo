@@ -79,6 +79,17 @@ function clamp(index: number, steps: readonly LessonStep[]): number {
   return Math.min(Math.max(0, Math.trunc(index)), steps.length - 1);
 }
 
+/**
+ * `index` clamped to the steps, except that the "next review" step ("Bạn đã hoàn thành bài học") is only reachable
+ * once the lesson is completed: a `?buoc=` from the URL or browser history lands on the summary instead.
+ */
+export function reachableStep(index: number, steps: readonly LessonStep[], completed: boolean): number {
+  const target = clamp(index, steps);
+  if (completed || steps[target]?.kind !== 'next_review') return target;
+  const summary = steps.findIndex((s) => s.kind === 'summary');
+  return summary >= 0 ? summary : target;
+}
+
 function withoutLocal(local: PlayerState['local'], key: string): PlayerState['local'] {
   if (!(key in local)) return local;
   const next = { ...local };
@@ -135,18 +146,19 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       const steps = buildSteps(action.payload, action.run.queue);
       const local: PlayerState['local'] = {};
       for (const p of action.pending ?? []) local[entryKey(p.exerciseId, p.queueIndex)] = 'pending_sync';
+      const completeResult = action.run.status === 'completed' ? storedSummary(action.run) : null;
       return {
         payload: action.payload,
         run: action.run,
         steps,
-        stepIndex: clamp(action.stepIndex, steps),
+        stepIndex: reachableStep(action.stepIndex, steps, completeResult !== null),
         attempts: action.payload.attempts,
         local,
-        completeResult: action.run.status === 'completed' ? storedSummary(action.run) : null,
+        completeResult,
       };
     }
     case 'goto':
-      return { ...state, stepIndex: clamp(action.index, state.steps) };
+      return { ...state, stepIndex: reachableStep(action.index, state.steps, state.completeResult !== null) };
     case 'submitting':
     case 'pending':
       return {

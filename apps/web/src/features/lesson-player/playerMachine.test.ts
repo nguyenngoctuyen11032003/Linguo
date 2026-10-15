@@ -85,9 +85,17 @@ describe('playerReducer', () => {
   it('loads steps from the run queue and clamps the step index', () => {
     const state = loaded({}, 99);
     expect(state.steps).toHaveLength(8);
-    expect(state.stepIndex).toBe(7);
+    // The last step is "next review", which an unfinished run cannot reach: it lands on the summary.
+    expect(state.stepIndex).toBe(6);
     expect(playerReducer(state, { type: 'goto', index: -3 }).stepIndex).toBe(0);
     expect(playerReducer(state, { type: 'goto', index: 4 }).stepIndex).toBe(4);
+  });
+
+  it('reaches the next review step only once the lesson is completed', () => {
+    let state = loaded({}, 6);
+    expect(playerReducer(state, { type: 'goto', index: 7 }).stepIndex).toBe(6);
+    state = playerReducer(state, { type: 'completed', result: COMPLETE });
+    expect(playerReducer(state, { type: 'goto', index: 7 }).stepIndex).toBe(7);
   });
 
   it('restores pending outbox entries on load', () => {

@@ -199,8 +199,9 @@ describe('useLessonRun', () => {
 
     const { result: clamped } = renderRun(`/app/hoc-tap/bai/${LESSON_ID}?buoc=99`);
     await ready(clamped);
-    expect(clamped.current.api.stepIndex).toBe(7);
-    expect(clamped.current.location.search).toBe('?buoc=8');
+    // Clamped to the summary: the next review step needs a completed lesson.
+    expect(clamped.current.api.stepIndex).toBe(6);
+    expect(clamped.current.location.search).toBe('?buoc=7');
   });
 
   it('navigates steps, follows browser history and saves the cursor (debounced, only forward)', async () => {

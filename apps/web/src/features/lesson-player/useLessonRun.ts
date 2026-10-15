@@ -24,6 +24,7 @@ import {
   exerciseStateFor,
   initialPlayerState,
   playerReducer,
+  reachableStep,
   unresolvedSteps,
   type EntryRef,
 } from './playerMachine';
@@ -232,7 +233,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
         const stepIndex =
           run.status === 'completed'
             ? steps.findIndex((s) => s.kind === 'summary')
-            : ((restart ? null : parseStepParam(params.get(STEP_PARAM), steps.length)) ?? cursorIndex);
+            : reachableStep((restart ? null : parseStepParam(params.get(STEP_PARAM), steps.length)) ?? cursorIndex, steps, false);
         const pending = createOutbox(userId)
           .list()
           .filter((e) => e.args.p_run_id === run.id)
@@ -295,7 +296,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   const goTo = useCallback((index: number) => {
     const { state: current, setSearchParams: setParams } = latest.current;
     if (current.steps.length === 0) return;
-    const target = Math.min(Math.max(Math.trunc(index), 0), current.steps.length - 1);
+    const target = reachableStep(index, current.steps, current.completeResult !== null);
     dispatch({ type: 'goto', index: target });
     setParams(
       (prev) => {
