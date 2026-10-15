@@ -188,7 +188,16 @@ Theo PRD §19 (điều kiện tối thiểu), §20.3 (bảo mật) và §22 (đ�
 | Edge Function `ai-tutor`, `notify-dispatch` | Supabase Dashboard → Edge Functions → chọn function → **Logs**. `notify-dispatch` chỉ log số đếm và các thông điệp cố định (ví dụ `VAPID keys not set, push skipped`, `NOTIFY_CRON_SECRET is unset or too short`); `ai-tutor` không tự ghi log ra console, siêu dữ liệu từng request nằm ở bảng `ai_usage` |
 | Lỗi database, RLS, RPC | Supabase Dashboard → **Logs** (Postgres, API) |
 | Dùng AI, báo lỗi nội dung, thao tác quản trị | `/quan-tri/thong-ke`, `/quan-tri/bao-loi`, `/quan-tri/nhat-ky` (cần vai trò) |
-| Lỗi phía trình duyệt | Console của trình duyệt; app không gửi log lỗi về server (analytics nội bộ chỉ có sự kiện học tập trong danh sách `ANALYTICS_EVENTS`) |
+| Lỗi phía trình duyệt | `/quan-tri/thong-ke` → bảng **Lỗi phía người dùng** (xem mục "Lỗi phía người dùng" bên dưới); chi tiết hơn chỉ có trong Console của máy người dùng |
+
+### Lỗi phía người dùng (client_error)
+
+App báo lỗi ẩn danh qua sự kiện analytics `client_error` (`track_events`), chỉ cho người đã đăng nhập và chưa tắt công tắc phân tích. Mỗi sự kiện chỉ gồm: `kind` (`render_error`, `unhandled_rejection`, `window_error`, `chunk_load_error`, `rpc_error`), `code` (tên lỗi ngắn, không có nội dung thông báo), đường dẫn dạng mẫu (ví dụ `/app/hoc-tap/bai/:id`, không id, query hay hash) và `online`. Không có stack trace, email hay id.
+
+- Xem: `/quan-tri/thong-ke` (admin) → **Lỗi phía người dùng**: tổng theo loại và 10 cặp loại × màn hình nhiều nhất trong 7/28/90 ngày (`admin_analytics.client_errors`).
+- Giới hạn: tối đa 20 sự kiện lỗi/người/giờ, phần dư bị bỏ im lặng; máy chủ từ chối payload ngoài whitelist (`invalid_event`). Client chỉ gửi mỗi cặp loại + màn hình + mã một lần trong 10 phút.
+- Tăng đột biến `chunk_load_error`: thường do vừa deploy bản mới trong lúc người dùng mở bản cũ (hoặc mạng yếu); người dùng bấm **Thử lại** để tải lại trang. Kiểm tra deploy gần nhất trước khi coi là lỗi mã.
+- Lưu 180 ngày cùng `analytics_events` (`purge_analytics`), nằm trong bản xuất dữ liệu cá nhân, không tính vào DAU/WAU.
 
 ### Tắt nhắc học và Web Push toàn hệ thống
 
