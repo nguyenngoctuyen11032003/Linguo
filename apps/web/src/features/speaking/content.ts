@@ -44,6 +44,7 @@ export const FALLBACK_SENTENCES: Record<SpeakingLanguage, SpeakingSentence[]> = 
     { id: 'fb-ko-4', text: '물 한 잔 주세요.', translation: 'Cho tôi một cốc nước.' },
     { id: 'fb-ko-5', text: '다시 한번 말씀해 주세요.', translation: 'Xin hãy nói lại một lần nữa.' },
   ],
+  ja: [],
 };
 
 export interface OpenPrompt {
@@ -65,6 +66,7 @@ export const OPEN_PROMPTS: Record<SpeakingLanguage, OpenPrompt[]> = {
     { id: 'open-ko-2', question: 'Hãy kể về một ngày bình thường của bạn.', starter: '아침에 저는 …. 그리고 ….' },
     { id: 'open-ko-3', question: 'Cuối tuần bạn thích làm gì?', starter: '주말에 저는 …을/를 좋아해요.' },
   ],
+  ja: [],
 };
 
 /** The lesson-specific prompt first (when the lesson has a title), then the generic ones. */
@@ -141,4 +143,6 @@ export const ROLE_PLAYS: Record<SpeakingLanguage, RolePlayScript[]> = {
       ],
     },
   ],
+  // Japanese speaking material ships with the ja content (LANGUAGES.ja.available).
+  ja: [],
 };

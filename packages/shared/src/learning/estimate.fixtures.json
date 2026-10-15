@@ -18,6 +18,14 @@
       { "levelCode": "topik4", "ordinal": 4, "cumulativeHours": 1000 },
       { "levelCode": "topik5", "ordinal": 5, "cumulativeHours": 1500 },
       { "levelCode": "topik6", "ordinal": 6, "cumulativeHours": 2200 }
+    ],
+    "ja": [
+      { "levelCode": "kana", "ordinal": 0, "cumulativeHours": 0 },
+      { "levelCode": "n5", "ordinal": 1, "cumulativeHours": 150 },
+      { "levelCode": "n4", "ordinal": 2, "cumulativeHours": 350 },
+      { "levelCode": "n3", "ordinal": 3, "cumulativeHours": 700 },
+      { "levelCode": "n2", "ordinal": 4, "cumulativeHours": 1300 },
+      { "levelCode": "n1", "ordinal": 5, "cumulativeHours": 2200 }
     ]
   },
   "cases": [
@@ -86,6 +94,18 @@
       "language": "en", "currentLevel": "b1", "targetLevel": "b2",
       "weeklyMinutes": [60, 60, 60, 60, 60, 60, 60], "targetDate": "2026-10-01",
       "expected": { "hoursNeeded": 200, "weeksMin": 24, "weeksMid": 29, "weeksMax": 38, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 720, "suggestedDate": "2027-05-04" }
+    },
+    {
+      "name": "ja kana to n4, 30 min every day, no deadline",
+      "language": "ja", "currentLevel": "kana", "targetLevel": "n4",
+      "weeklyMinutes": [30, 30, 30, 30, 30, 30, 30], "targetDate": null,
+      "expected": { "hoursNeeded": 350, "weeksMin": 80, "weeksMid": 100, "weeksMax": 130, "feasibility": "no_deadline", "suggestedMinutesPerDay": null, "suggestedDate": null }
+    },
+    {
+      "name": "ja n3 to n2, 60 min on weekdays, deadline too close needs more time",
+      "language": "ja", "currentLevel": "n3", "targetLevel": "n2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 0, 0], "targetDate": "2027-10-12",
+      "expected": { "hoursNeeded": 600, "weeksMin": 96, "weeksMid": 120, "weeksMax": 156, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 139, "suggestedDate": "2029-01-30" }
     }
   ]
 }

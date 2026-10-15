@@ -1,4 +1,4 @@
-// Exam practice forms (spec 9 §2): content/exams/<en|ko>/<form>.yaml → checks → bundle for
+// Exam practice forms (spec 9 §2): content/exams/<en|ko|ja>/<form>.yaml → checks → bundle for
 // public.import_exam_content_bundle(jsonb). Loading lives in load.mjs (kind `exam`); checkContent()
 // claims the form and question keys with every other key and calls examErrors().
 import * as shared from '@linguo/shared';
@@ -13,7 +13,7 @@ const DOLLAR_TAG = '$exam$';
 const q = (s) => JSON.stringify(s);
 
 /** Exam family → language of its forms. */
-export const FAMILY_LANGUAGE = { topik_i: 'ko', topik_ii: 'ko', cefr: 'en' };
+export const FAMILY_LANGUAGE = { topik_i: 'ko', topik_ii: 'ko', cefr: 'en', jlpt: 'ja' };
 
 /** Comparison form of an option text: NFC, case-folded, single spaces. */
 const norm = (s) => s.normalize('NFC').trim().toLowerCase().replace(/\s+/g, ' ');

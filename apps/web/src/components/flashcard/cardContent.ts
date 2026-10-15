@@ -5,6 +5,8 @@ export interface CardContent {
   lang: ReviewCard['item']['language_code'];
   text: string;
   ipa: string | null;
+  /** ja: kana reading of a kanji word. */
+  reading: string | null;
   romanization: string | null;
   pos: string | null;
   meaningVi: string;
@@ -29,6 +31,7 @@ export function readCardContent(card: ReviewCard): CardContent {
     lang: language_code,
     text: str(front.text) ?? '',
     ipa: str(front.ipa),
+    reading: str(front.reading),
     romanization: str(front.romanization),
     pos: str(front.pos),
     meaningVi: vi(back.meaning) ?? '',

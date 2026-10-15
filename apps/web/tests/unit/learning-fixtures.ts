@@ -9,6 +9,7 @@ type PathRow = Database['public']['Tables']['learning_paths']['Row'];
 export const REFERENCE: ReferenceHoursByLanguage = {
   en: fixtures.referenceHours.en.map((r) => ({ ...r, reviewed: false })),
   ko: fixtures.referenceHours.ko.map((r) => ({ ...r, reviewed: false })),
+  ja: fixtures.referenceHours.ja.map((r) => ({ ...r, reviewed: false })),
 };
 
 export const ESTIMATE_RECORD = {

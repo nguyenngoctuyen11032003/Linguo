@@ -17,7 +17,7 @@ import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic
 import { buildExamBundle, renderExamSql } from './content/exam.mjs';
 import { canonicalJson, hashRow } from './content/hash.mjs';
 import { contentId, uuidV5 } from './content/ids.mjs';
-import { loadContent } from './content/load.mjs';
+import { classify, loadContent } from './content/load.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const VALID = join(here, '__fixtures__', 'content-valid');
@@ -1306,4 +1306,90 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     }
   }
   assert.equal(slots.size, 4, 'correct options are spread over every position');
+});
+
+// ---- Japanese (ja) plumbing: layout, keys, JLPT family ------------------------------------------------------
+
+/** A small valid JLPT N4–N3 form: one listening and one reading mcq (JLPT has no writing section). */
+const JLPT_YAML = `# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: ja
+form:
+  key: ja:exam:jlpt-mock
+  family: jlpt
+  title_vi: JLPT — Đề thử
+  description_vi: Đề thử JLPT cho kiểm thử.
+  level_from: n4
+  level_to: n3
+  source_key: src:fixture
+  time_limits: { listening: 20, reading: 30 }
+  scoring:
+    verified: false
+    source_note_vi: Chưa đối chiếu.
+    section_max: { listening: 60, reading: 120 }
+    bands:
+      - { level_code: n4, min_total: 90 }
+      - { level_code: n3, min_total: 95 }
+    pass_ratio: null
+questions:
+  - key: ja:examq:jlpt-mock-l01
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Nghe và chọn câu đáp lại phù hợp.
+      stem: 正しい答えを選んでください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: "男: 傘を持っていますか。"
+      options:
+        - { id: a, text: "はい、持っています。", lang: ja }
+        - { id: b, text: "はい、傘です。", lang: ja }
+    answer: a
+    explanation: { vi: "Câu hỏi có/không về việc mang ô." }
+  - key: ja:examq:jlpt-mock-r01
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n3
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp.
+      stem: （＿）に入るものを選んでください。
+      stem_lang: ja
+      passage: "雨が（＿）、出かけます。"
+      options:
+        - { id: a, text: "降っても", lang: ja }
+        - { id: b, text: "降ったら", lang: ja }
+    answer: a
+    explanation: { vi: "〜ても: dù … vẫn." }
+`;
+
+test('ja: content layout accepts ja programs, items, diagnostic and exam files', () => {
+  assert.deepEqual(classify(['ja', 'items', 'kana.yaml']), { kind: 'items', lang: 'ja' });
+  assert.deepEqual(classify(['ja', 'programs', 'n5', 'program.yaml']), { kind: 'program', lang: 'ja', program: 'n5' });
+  assert.deepEqual(classify(['ja', 'programs', 'n5', 'units', '01-kana', 'unit.yaml']), { kind: 'unit', lang: 'ja', program: 'n5', unit: '01-kana' });
+  assert.deepEqual(classify(['diagnostic', 'ja', 'vocabulary.yaml']), { kind: 'diagnostic', lang: 'ja' });
+  assert.deepEqual(classify(['exams', 'ja', 'jlpt-n5-mock-1.yaml']), { kind: 'exam', lang: 'ja' });
+  assert.equal(classify(['jp', 'items', 'kana.yaml']), null);
+});
+
+test('ja: a JLPT form passes the checks and builds a ja bundle', (t) => {
+  const tree = tempTree(t);
+  mkdirSync(join(tree.content, 'exams', 'ja'), { recursive: true });
+  writeFileSync(join(tree.content, 'exams', 'ja', 'jlpt-mock.yaml'), JLPT_YAML);
+  const loaded = loadTree(tree.content);
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildExamBundle(loaded);
+  assert.ok(examBundleSchema.safeParse(bundle).success);
+  const [form] = bundle.forms;
+  assert.deepEqual([form.language_code, form.family, form.id], ['ja', 'jlpt', contentId('ja:exam:jlpt-mock')]);
+
+  const wrongFamily = tempTree(t);
+  mkdirSync(join(wrongFamily.content, 'exams', 'ja'), { recursive: true });
+  writeFileSync(join(wrongFamily.content, 'exams', 'ja', 'jlpt-mock.yaml'), JLPT_YAML.replace('family: jlpt', 'family: topik_i'));
+  assert.ok(checkContent(loadTree(wrongFamily.content), { grade }).some((e) => e.includes('family topik_i is a ko exam, not ja')));
 });

@@ -73,7 +73,7 @@ function levelError(lang, level, field = 'level') {
 
 /**
  * Shape checks that zod cannot express because they relate prompt, answer and lesson language.
- * `lang` is the lesson's language (en | ko).
+ * `lang` is the lesson's language (en | ko | ja).
  */
 function answerShapeErrors(ex, lang) {
   const errors = [];

@@ -3,10 +3,13 @@ import type { LanguageCode } from '../constants';
 export const LEVELS = {
   en: ['pre_a1', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'],
   ko: ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'],
+  /** Kana (ordinal 0), then JLPT N5 → N1 (ordinals 1–5): JLPT numbers count down, ordinals count up. */
+  ja: ['kana', 'n5', 'n4', 'n3', 'n2', 'n1'],
 } as const;
 export type EnLevel = (typeof LEVELS.en)[number];
 export type KoLevel = (typeof LEVELS.ko)[number];
-export type LevelCode = EnLevel | KoLevel;
+export type JaLevel = (typeof LEVELS.ja)[number];
+export type LevelCode = EnLevel | KoLevel | JaLevel;
 
 export interface LevelInfo {
   label: string;
@@ -28,6 +31,12 @@ export const LEVEL_INFO: Record<LevelCode, LevelInfo> = {
   topik4: { label: 'TOPIK 4', description: 'Dùng cho công việc thông thường, hiểu tin tức và văn bản phổ thông.' },
   topik5: { label: 'TOPIK 5', description: 'Làm việc trong môi trường chuyên môn, hiểu chủ đề kinh tế, xã hội.' },
   topik6: { label: 'TOPIK 6', description: 'Sử dụng gần như người bản xứ trong học thuật và chuyên môn.' },
+  kana: { label: 'Kana', description: 'Chưa đọc được chữ Nhật hoặc mới làm quen Hiragana, Katakana.' },
+  n5: { label: 'JLPT N5', description: 'Đọc câu đơn giản bằng Hiragana, Katakana và Kanji cơ bản; nghe hội thoại ngắn, nói chậm.' },
+  n4: { label: 'JLPT N4', description: 'Hiểu tiếng Nhật cơ bản về chủ đề quen thuộc hằng ngày khi người nói nói chậm.' },
+  n3: { label: 'JLPT N3', description: 'Hiểu tiếng Nhật dùng trong sinh hoạt hằng ngày, đọc được tiêu đề báo và văn bản dễ.' },
+  n2: { label: 'JLPT N2', description: 'Hiểu tin tức, bài báo và hội thoại tốc độ tự nhiên; dùng được cho công việc thông thường.' },
+  n1: { label: 'JLPT N1', description: 'Hiểu tiếng Nhật trong nhiều tình huống, kể cả văn bản lập luận phức tạp và hàm ý.' },
 };
 
 export const START_POINTS = ['new', 'some', 'rusty', 'confident', 'unsure'] as const;
@@ -51,12 +60,15 @@ export const GOAL_TYPES = [
   'topik_i',
   'topik_ii',
   'skill_focus',
+  'kana_basics',
+  'jlpt',
 ] as const;
 export type GoalType = (typeof GOAL_TYPES)[number];
 
 export const GOALS_BY_LANGUAGE: Record<LanguageCode, readonly GoalType[]> = {
   en: ['foundation', 'daily_communication', 'work_it', 'reading_docs', 'cefr'],
   ko: ['hangul_basics', 'communication', 'topik_i', 'topik_ii', 'skill_focus'],
+  ja: ['kana_basics', 'communication', 'jlpt', 'skill_focus'],
 };
 
 export const GOAL_LABELS: Record<GoalType, string> = {
@@ -70,6 +82,8 @@ export const GOAL_LABELS: Record<GoalType, string> = {
   topik_i: 'TOPIK I (cấp 1–2)',
   topik_ii: 'TOPIK II (cấp 3–6)',
   skill_focus: 'Nâng cao nghe, đọc hoặc viết',
+  kana_basics: 'Kana và giao tiếp nền tảng',
+  jlpt: 'Đạt một cấp JLPT (N5–N1)',
 };
 
 const GOAL_DEFAULT_TARGET: Record<GoalType, LevelCode> = {
@@ -83,7 +97,16 @@ const GOAL_DEFAULT_TARGET: Record<GoalType, LevelCode> = {
   topik_i: 'topik2',
   topik_ii: 'topik4',
   skill_focus: 'topik4',
+  kana_basics: 'n5',
+  jlpt: 'n3',
 };
+
+/** Defaults of goals shared between languages whose own scale differs from the table above. */
+const GOAL_DEFAULT_TARGET_BY_LANGUAGE: Partial<Record<LanguageCode, Partial<Record<GoalType, LevelCode>>>> = {
+  ja: { communication: 'n3', skill_focus: 'n3' },
+};
+
+const UNSURE_DEFAULT_LEVEL: Record<LanguageCode, LevelCode> = { en: 'a1', ko: 'topik1', ja: 'n5' };
 
 const TOPIK_I: readonly string[] = ['topik1', 'topik2'];
 const TOPIK_II: readonly string[] = ['topik3', 'topik4', 'topik5', 'topik6'];
@@ -115,13 +138,13 @@ export function allowedTargets(language: LanguageCode, goal: GoalType, current: 
 
 export function defaultTarget(language: LanguageCode, goal: GoalType, current: string): LevelCode | null {
   const options = allowedTargets(language, goal, current);
-  const preferred = GOAL_DEFAULT_TARGET[goal];
+  const preferred = GOAL_DEFAULT_TARGET_BY_LANGUAGE[language]?.[goal] ?? GOAL_DEFAULT_TARGET[goal];
   return options.includes(preferred) ? preferred : (options[0] ?? null);
 }
 
 /** `new` → lowest level (step 3 is skipped); `unsure` → a gentle default; otherwise the user picks. */
 export function suggestedCurrentLevel(language: LanguageCode, startPoint: StartPoint): LevelCode | null {
   if (startPoint === 'new') return LEVELS[language][0];
-  if (startPoint === 'unsure') return language === 'en' ? 'a1' : 'topik1';
+  if (startPoint === 'unsure') return UNSURE_DEFAULT_LEVEL[language];
   return null;
 }
