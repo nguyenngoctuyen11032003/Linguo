@@ -255,6 +255,16 @@ describe('a running session', () => {
     expect(location()).toBe(`/app/hoc-tap/bai/50000000-0000-4000-8000-00000000000b?phien=${SESSION_ID}&muc=a3`);
   });
 
+  it('treats a shortened session (saved as planned, with finished activities) as under way', async () => {
+    serve(todayResult(sessionWithStatuses(['done', 'pending', 'pending', 'pending'], { status: 'planned' })));
+    render();
+    await ready();
+    expect(screen.getByText('Tiến độ: 1/4 hoạt động')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Bắt đầu phiên học' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('group', { name: 'Bạn có bao nhiêu phút?' })).not.toBeInTheDocument();
+  });
+
   it('starts with the first pending activity in the review', async () => {
     serve(todayResult(studySession()));
     render();
