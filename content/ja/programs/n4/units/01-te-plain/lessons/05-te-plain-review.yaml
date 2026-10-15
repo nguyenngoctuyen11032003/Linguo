@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-te-plain-review
+order_index: 5
+level: n4
+title:
+  vi: Ôn tập - hội thoại thân mật và nhật ký
+objectives:
+  - vi: Phối hợp thể て, thể ない, thể た trong một đoạn hội thoại thân mật.
+  - vi: Viết vài câu nhật ký bằng thể thường.
+  - vi: Chọn đúng thể lịch sự hay thể thường theo người nghe.
+estimated_minutes: 15
+skills: [grammar, reading, writing, speaking]
+prerequisites: [ja:lesson:n4-ta-form-experience]
+items:
+  - item: ja:item:n4-phrase-doushita-no
+  - item: ja:item:n4-nikki
+  - item: ja:item:n4-phrase-ki-o-tsukete
+  - item: ja:item:n4-yasumi-no-hi
+  - item: ja:item:n4-gram-te-form
+    role: reuse
+  - item: ja:item:n4-gram-te-iru
+    role: reuse
+  - item: ja:item:n4-gram-nai-form
+    role: reuse
+  - item: ja:item:n4-gram-ta-form
+    role: reuse
+  - item: ja:item:n4-gram-tari-tari
+    role: reuse
+  - item: ja:item:n4-gram-naide-kudasai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi han bạn bè "Cậu sao thế?", kể lại ngày nghỉ bằng thể thường và viết được một đoạn nhật ký ngắn.
+  - type: explain
+    text:
+      vi: "Cả unit xoay quanh thể て: từ thể て bạn có ngay ています, てください, てもいい, てはいけない và thể た (て → た). Thể ない cho ないでください và なかった."
+  - type: explain
+    text:
+      vi: Nhật ký và nói chuyện với bạn thân dùng thể thường (だ・た・ない). Với người lạ, thầy cô, đồng nghiệp lớn tuổi thì dùng です・ます.
+  - type: explain
+    text:
+      vi: Khi ghép câu dài, chỉ động từ cuối mang thì và mức lịch sự - các vế trước dùng て hoặc たり.
+  - type: deep_explain
+    text:
+      vi: 'Một đoạn nhật ký mẫu: 今日は休みの日だった。朝、部屋を掃除して、洗濯をした。午後は友達と映画を見たり、買い物をしたりした。楽しかった。 Lưu ý mọi câu đều kết thúc bằng thể thường quá khứ.'
+  - type: example
+    target: 元気がないね。どうしたの？ - 昨日、あまり寝なかったんだ。
+    target_lang: ja
+    translation:
+      vi: Trông cậu mệt thế. Sao vậy? - Hôm qua tớ không ngủ mấy.
+    note:
+      vi: どうしたの？ là thể thân mật của どうしましたか. 寝なかった là quá khứ phủ định thường.
+  - type: example
+    target: 休みの日は何をしていますか。 - 本を読んだり、散歩したりしています。
+    target_lang: ja
+    translation:
+      vi: Ngày nghỉ bạn thường làm gì? - Tôi đọc sách, đi dạo các thứ.
+    note:
+      vi: Thói quen dùng ています; liệt kê ví dụ dùng たり～たり.
+  - type: example
+    target: 今日は友達と京都へ行って、着物を着た。楽しかった。
+    target_lang: ja
+    translation:
+      vi: Hôm nay tôi đi Kyoto với bạn và mặc kimono. Vui lắm.
+    note:
+      vi: Câu nhật ký - thể thường quá khứ, nối bằng て.
+  - type: example
+    target: 雨だから、気をつけて帰ってね。
+    target_lang: ja
+    translation:
+      vi: Trời mưa đấy, về cẩn thận nhé.
+    note:
+      vi: Hai thể て liền nhau - 気をつけて (cẩn thận) và 帰って (về).
+  - type: common_mistake
+    wrong: 今日は休みの日でした。部屋を掃除した。
+    right: 今日は休みの日だった。部屋を掃除した。
+    target_lang: ja
+    note:
+      vi: Trong cùng một đoạn nhật ký nên giữ một kiểu - thể thường thì dùng だった, không trộn でした.
+  - type: common_mistake
+    wrong: 朝ご飯を食べた、学校へ行った。
+    right: 朝ご飯を食べて、学校へ行った。
+    target_lang: ja
+    note:
+      vi: Nối hai hành động theo thứ tự dùng thể て, không đặt hai thể た cạnh nhau bằng dấu phẩy.
+  - type: common_mistake
+    wrong: 先生、どうしたの？
+    right: 先生、どうしましたか。
+    target_lang: ja
+    note:
+      vi: どうしたの？ chỉ dùng với bạn bè, người nhỏ tuổi. Với thầy cô dùng どうしましたか.
+  - type: summary
+    points:
+      - vi: て → ています, てください, てもいい, てはいけない, た.
+      - vi: ない → ないでください, なかった.
+      - vi: Nhật ký, bạn bè - thể thường; người lạ, cấp trên - です・ます. Giữ một kiểu trong cả đoạn.
+      - vi: どうしたの？ sao thế · 日記 nhật ký · 気をつけて cẩn thận nhé · 休みの日 ngày nghỉ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-tpr-mcq-doushita
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-phrase-doushita-no
+    prompt:
+      stem: Bạn thân trông buồn, bạn hỏi どうしたの？. Câu này nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: Cậu sao thế?, lang: vi }
+        - { id: p8d, text: Cậu đã làm gì?, lang: vi }
+        - { id: w2s, text: Cậu đi đâu thế?, lang: vi }
+        - { id: m6q, text: Cậu có khỏe không?, lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: どうしたの？ hỏi "có chuyện gì xảy ra" khi thấy người khác không ổn. "Đã làm gì" là 何をしたの？; "có khỏe không" là 元気？.
+    display_answer: Cậu sao thế?
+
+  - key: ja:exercise:n4-tpr-listen-careful
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-phrase-ki-o-tsukete
+    prompt:
+      audio_asset_id: null
+      fallback_text: 雨だから、気をつけて帰ってね。
+      options:
+        - { id: a8u, text: "Trời mưa đấy, về cẩn thận nhé.", lang: vi }
+        - { id: q2z, text: "Trời mưa đấy, đừng về nhé.", lang: vi }
+        - { id: d6l, text: "Trời mưa rồi, mang ô theo nhé.", lang: vi }
+        - { id: s9f, text: "Trời mưa đấy, về sớm nhé.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 気をつけて là "cẩn thận", 帰って là "về", ね làm câu nhẹ nhàng như "nhé". "Đừng về" sẽ là 帰らないで.
+    display_answer: Trời mưa đấy, về cẩn thận nhé.
+
+  - key: ja:exercise:n4-tpr-mcq-diary-style
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-nikki
+    prompt:
+      stem: Câu nào phù hợp để viết trong nhật ký (thể thường)?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 今日は日本語の授業に遅れた。, lang: ja }
+        - { id: y1n, text: 今日は日本語の授業に遅れました。, lang: ja }
+        - { id: e7c, text: 今日は日本語の授業に遅れるだった。, lang: ja }
+        - { id: h4b, text: 今日は日本語の授業に遅れりた。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Nhật ký dùng thể thường quá khứ - 遅れる (nhóm 2) → 遅れた. 遅れました là thể lịch sự; 遅れるだった và 遅れりた sai cách chia.
+    display_answer: 今日は日本語の授業に遅れた。
+
+  - key: ja:exercise:n4-tpr-fill-holiday
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-yasumi-no-hi
+    prompt:
+      template: "Ngày nghỉ bạn thường làm gì? - 休みの日は何を{{b1}}か。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - Hỏi thói quen, dùng mẫu V-ています.
+        - する → して + います.
+    answer:
+      blanks:
+        b1: [しています, してます, します]
+    known_wrong:
+      - answer: しました
+        feedback_vi: しました là quá khứ (một lần), không hỏi thói quen.
+        error_tag: te_iru_habit
+    explanation:
+      vi: Thói quen lặp lại dùng V-ています - 何をしていますか. 何をしますか cũng đúng nhưng ít tự nhiên hơn khi hỏi thói quen.
+    display_answer: 休みの日は何をしていますか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-tpr-fill-diary
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ta-form
+    prompt:
+      template: "(Nhật ký) Sáng tôi dọn phòng rồi giặt đồ. - 朝、部屋を掃除{{b1}}、洗濯を{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [して]
+        b2: [した]
+    known_wrong:
+      - answer: しました
+        feedback_vi: Nhật ký dùng thể thường - した. Vế đầu nối bằng して.
+        error_tag: plain_form
+      - answer: したり
+        feedback_vi: たり dùng để liệt kê và cần します ở cuối. Kể theo thứ tự thì dùng して.
+        error_tag: tari_form
+    explanation:
+      vi: Hành động trước nối bằng thể て (して), hành động cuối mang thì quá khứ thường (した).
+    display_answer: 朝、部屋を掃除して、洗濯をした。
+
+  - key: ja:exercise:n4-tpr-fill-dont-touch
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-naide-kudasai
+    prompt:
+      template: "Cái này nguy hiểm. Đừng chạm vào. - これは危ないです。{{b1}}ください。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [触らないで, さわらないで]
+    known_wrong:
+      - answer: 触りないで
+        feedback_vi: 触る thuộc nhóm 1 - る → ら + ない (触らない).
+        error_tag: nai_form
+      - answer: 触らないて
+        feedback_vi: Mẫu là ないで (có dấu ゛).
+        error_tag: naide_form
+      - answer: 触って
+        feedback_vi: 触ってください là "hãy chạm" - ngược nghĩa.
+        error_tag: naide_form
+    explanation:
+      vi: 触る → 触らない + でください. Đồ được chạm vào thường đi với に (これに触らないで).
+    display_answer: これは危ないです。触らないでください。
+
+  - key: ja:exercise:n4-tpr-translate-diary-write
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-nikki
+    prompt:
+      source_text: Tối nào tôi cũng viết nhật ký.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 毎晩日記を書いています。
+        - まいばんにっきをかいています。
+        - 毎晩、日記を書いています。
+        - 毎晩日記を書きます。
+        - 毎晩、日記を書きます。
+        - 私は毎晩日記を書いています。
+        - 私は毎晩、日記を書いています。
+        - 毎晩日記を書いてます。
+    known_wrong:
+      - answer: 毎晩日記を書きています。
+        feedback_vi: 書く → 書いて, không lấy thể ます thêm て.
+        error_tag: te_form
+      - answer: 毎晩にっきを書いた。
+        feedback_vi: Thói quen hằng tối không dùng quá khứ.
+        error_tag: tense_past
+    explanation:
+      vi: Thói quen lặp lại dùng 書いています (hoặc 書きます). 毎晩 là "mỗi tối".
+    display_answer: 毎晩日記を書いています。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-tpr-translate-diary-read
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-gram-tari-tari
+    prompt:
+      source_text: 午後は友達と映画を見たり、買い物をしたりした。楽しかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Buổi chiều tôi xem phim, mua sắm với bạn. Vui lắm.
+        - Buổi chiều tôi xem phim, mua sắm các thứ với bạn. Vui lắm.
+        - Buổi chiều tôi đã xem phim, mua sắm với bạn. Vui lắm.
+        - Buổi chiều tôi cùng bạn xem phim, mua sắm. Vui lắm.
+        - Buổi chiều tôi cùng bạn xem phim, mua sắm các thứ. Vui lắm.
+        - Buổi chiều tôi xem phim và mua sắm với bạn. Vui lắm.
+        - Buổi chiều tôi đi xem phim, mua sắm với bạn. Vui lắm.
+        - Chiều tôi xem phim, mua sắm với bạn. Vui lắm.
+        - Buổi chiều tôi xem phim, mua sắm với bạn. Rất vui.
+        - Buổi chiều tôi xem phim, mua sắm với bạn. Vui quá.
+        - Buổi chiều tớ xem phim, mua sắm với bạn. Vui lắm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Buổi chiều tôi xem phim rồi đi mua sắm với bạn. Vui lắm.
+        feedback_vi: たり～たり chỉ liệt kê ví dụ, không nói thứ tự "rồi".
+        error_tag: tari_form
+      - answer: Buổi chiều tôi xem phim, mua sắm với bạn. Chán lắm.
+        feedback_vi: 楽しかった là "vui", không phải "chán" (つまらなかった).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 見たり、したりした liệt kê vài việc đã làm buổi chiều. 楽しかった là quá khứ của 楽しい (vui).
+    display_answer: Buổi chiều tôi xem phim, mua sắm với bạn. Vui lắm.
+
+  - key: ja:exercise:n4-tpr-order-casual
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nai-form
+    prompt:
+      instruction: 'Sắp xếp thành câu thân mật: "Hôm qua tớ không ngủ mấy."'
+      tokens:
+        - { id: t-nenakatta, text: 寝なかった }
+        - { id: t-amari, text: あまり }
+        - { id: t-kinou, text: 昨日は }
+        - { id: t-nemasen, text: 寝ませんでした }
+    answer:
+      orders:
+        - [t-kinou, t-amari, t-nenakatta]
+    explanation:
+      vi: あまり đi với phủ định nghĩa là "không … mấy". Nói với bạn dùng thể thường 寝なかった; 寝ませんでした là thể lịch sự.
+    display_answer: 昨日はあまり寝なかった。
+
+  - key: ja:exercise:n4-tpr-mcq-politeness
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-iru
+    prompt:
+      stem: Bạn gặp giám đốc công ty lần đầu và muốn hỏi "Ông sống ở đâu ạ?". Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: どちらに住んでいらっしゃいますか。, lang: ja }
+        - { id: j7r, text: どこに住んでる？, lang: ja }
+        - { id: c1o, text: どこに住む？, lang: ja }
+        - { id: n5g, text: どこで住んでいますか。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Với cấp trên dùng dạng lịch sự, ở đây là kính ngữ いらっしゃいます (= います) và どちら (= どこ). 住んでる？ là thể thân mật; 住む thiếu ている; で sai trợ từ.
+    display_answer: どちらに住んでいらっしゃいますか。
+
+  - key: ja:exercise:n4-tpr-translate-kyoto
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-te-form
+    prompt:
+      source_text: (Nhật ký) Tôi đi Kyoto rồi mặc kimono.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 京都へ行って、着物を着た。
+        - 京都に行って、着物を着た。
+        - 京都へ行って着物を着た。
+        - 京都に行って着物を着た。
+        - きょうとへいって、きものをきた。
+        - きょうとにいって、きものをきた。
+        - きょうとへいってきものをきた。
+        - きょうとにいってきものをきた。
+        - 京都に行って、着物を着ました。
+        - 京都へ行って、着物を着ました。
+    known_wrong:
+      - answer: 京都へ行った、着物を着た。
+        feedback_vi: Nối hai hành động theo thứ tự dùng thể て - 行って.
+        error_tag: te_form
+      - answer: 京都へ行いて、着物を着た。
+        feedback_vi: 行く là ngoại lệ - thể て là 行って.
+        error_tag: te_form
+      - answer: 京都へ行って、着物を切った。
+        feedback_vi: Mặc là 着る (着た); 切る (切った) là "cắt".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 行く → 行って nối với vế sau; 着る (nhóm 2) → 着た. Nhật ký nên dùng thể thường, nhưng 着ました cũng được chấp nhận.
+    display_answer: 京都へ行って、着物を着た。

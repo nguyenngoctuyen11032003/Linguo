@@ -1,0 +1,805 @@
+# Học liệu unit "Thể て & thể thường" (JLPT N4). reading là cách đọc bằng kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: cách chia thể て =================
+  - key: ja:item:n4-gram-te-form
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-て形 (書いて・読んで・食べて・して・来て)
+      romanization: te-kei
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Thể て của động từ - dạng nối dùng trong rất nhiều mẫu câu. Nhóm 1: う・つ・る → って, む・ぶ・ぬ → んで, く → いて, ぐ → いで, す → して. Nhóm 2: bỏ る thêm て. Bất quy tắc: する → して, 来る → 来て (きて)."
+      examples:
+        - target: 手紙を書いて、出しました。
+          translation:
+            vi: Tôi viết thư rồi gửi đi.
+        - target: 本を読んで、寝ました。
+          translation:
+            vi: Tôi đọc sách rồi đi ngủ.
+        - target: 朝ご飯を食べて、学校へ行きます。
+          translation:
+            vi: Tôi ăn sáng rồi đi học.
+      pronunciation_note:
+        vi: っ là âm ngắt - ngừng một nhịp trước て, ví dụ 待って [mat-te]. ん trong 読んで kéo dài một nhịp.
+      confusion:
+        vi: 行く là ngoại lệ - 行って (いって), không phải 行いて. Đừng nhầm 来て (きて, đến) với 着て (きて, mặc) - viết khác chữ Hán.
+
+  - key: ja:item:n4-gram-te-kudasai
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-て + ください
+      romanization: -te kudasai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Hãy … / Xin vui lòng … - nhờ hoặc yêu cầu lịch sự.
+      examples:
+        - target: ちょっと待ってください。
+          translation:
+            vi: Xin chờ một chút.
+        - target: ここに名前を書いてください。
+          translation:
+            vi: Hãy viết tên vào đây.
+        - target: もう一度言ってください。
+          translation:
+            vi: Xin hãy nói lại một lần nữa.
+      confusion:
+        vi: ください đứng một mình đi với danh từ (水をください - cho tôi nước). Nhờ người khác làm việc gì thì phải dùng thể て + ください.
+
+  - key: ja:item:n4-gram-te-sequence
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V1-て、V2
+      romanization: V1-te, V2
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm V1 rồi (sau đó) làm V2 - nối các hành động theo thứ tự. Thì của cả câu do động từ cuối quyết định.
+      examples:
+        - target: シャワーを浴びて、寝ます。
+          translation:
+            vi: Tôi tắm rồi đi ngủ.
+        - target: 駅で友達に会って、映画を見ました。
+          translation:
+            vi: Tôi gặp bạn ở ga rồi đi xem phim.
+      confusion:
+        vi: て không mang thì. 会って、見ました là cả hai việc đều đã xảy ra; đừng chia 会いました、見ました giữa câu.
+
+  - key: ja:item:n4-matsu
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 待つ
+      reading: まつ
+      romanization: matsu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: chờ, đợi
+      examples:
+        - target: 駅で友達を待っています。
+          translation:
+            vi: Tôi đang đợi bạn ở ga.
+      pronunciation_note:
+        vi: Thể て là 待って (まって) - có âm ngắt っ.
+      confusion:
+        vi: Người được đợi đi với を (友達を待つ), không dùng に như "đợi cho".
+
+  - key: ja:item:n4-isogu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 急ぐ
+      reading: いそぐ
+      romanization: isogu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: vội, khẩn trương
+      examples:
+        - target: 時間がありません。急いでください。
+          translation:
+            vi: Không còn thời gian. Hãy nhanh lên.
+      confusion:
+        vi: Đuôi ぐ → いで (急いで), khác với đuôi く → いて (書いて).
+
+  - key: ja:item:n4-kasu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 貸す
+      reading: かす
+      romanization: kasu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: cho mượn
+      examples:
+        - target: ペンを貸してください。
+          translation:
+            vi: Cho tôi mượn cây bút.
+      confusion:
+        vi: 貸す là "cho mượn", còn 借りる (かりる) là "mượn". "Cho tôi mượn" dùng 貸してください.
+
+  - key: ja:item:n4-yobu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 呼ぶ
+      reading: よぶ
+      romanization: yobu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: gọi (người, xe)
+      examples:
+        - target: タクシーを呼んでください。
+          translation:
+            vi: Hãy gọi taxi giúp tôi.
+      confusion:
+        vi: Gọi điện thoại là 電話をかける, không dùng 呼ぶ. 呼ぶ là gọi ai đến hoặc gọi tên.
+
+  - key: ja:item:n4-miseru
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 見せる
+      reading: みせる
+      romanization: miseru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: cho xem
+      examples:
+        - target: パスポートを見せてください。
+          translation:
+            vi: Xin cho xem hộ chiếu.
+      confusion:
+        vi: 見る là "xem", 見せる là "cho (người khác) xem". Đây là nhóm 2 nên thể て chỉ bỏ る - 見せて.
+
+  - key: ja:item:n4-akeru
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 開ける
+      reading: あける
+      romanization: akeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: mở (cửa, cửa sổ, hộp)
+      examples:
+        - target: 窓を開けてください。
+          translation:
+            vi: Hãy mở cửa sổ ra.
+      confusion:
+        vi: 開ける là mình mở cái gì (có を); cửa tự mở là 開く (あく) - ドアが開きました.
+
+  - key: ja:item:n4-shimeru
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 閉める
+      reading: しめる
+      romanization: shimeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: đóng (cửa, cửa sổ)
+      examples:
+        - target: ドアを閉めてください。
+          translation:
+            vi: Hãy đóng cửa lại.
+      confusion:
+        vi: 閉める (đóng cửa) khác 消す (けす, tắt đèn, tắt máy). Đóng đèn không nói 電気を閉める.
+
+  # ================= bài 2: ている, てもいい, てはいけない =================
+  - key: ja:item:n4-gram-te-iru
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-て + います
+      romanization: -te imasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "(1) Đang làm - 今、ご飯を食べています. (2) Trạng thái kết quả kéo dài - 結婚しています (đã kết hôn), 東京に住んでいます (sống ở Tokyo). (3) Thói quen, nghề nghiệp - 銀行に勤めています."
+      examples:
+        - target: 弟は今、テレビを見ています。
+          translation:
+            vi: Em trai tôi đang xem tivi.
+        - target: 姉は結婚しています。
+          translation:
+            vi: Chị tôi đã có gia đình.
+        - target: 大阪に住んでいます。
+          translation:
+            vi: Tôi sống ở Osaka.
+      pronunciation_note:
+        vi: Khi nói nhanh, い thường bị nuốt - 見ています nghe như 見てます.
+      confusion:
+        vi: 結婚しています là "đã kết hôn (hiện vẫn vậy)", không phải "đang làm đám cưới". 住んでいます luôn dùng ている, không nói 住みます cho "đang sống".
+
+  - key: ja:item:n4-gram-te-mo-ii
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-て + もいいです(か)
+      romanization: -te mo ii desu (ka)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Được phép làm V / Tôi làm V có được không? - xin phép và cho phép.
+      examples:
+        - target: 写真を撮ってもいいですか。
+          translation:
+            vi: Tôi chụp ảnh được không?
+        - target: ええ、使ってもいいですよ。
+          translation:
+            vi: Vâng, bạn cứ dùng.
+      confusion:
+        vi: Trả lời từ chối lịch sự thường là すみません、ちょっと… thay vì nói thẳng いけません.
+
+  - key: ja:item:n4-gram-te-wa-ikenai
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + はいけません
+      romanization: -te wa ikemasen
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không được làm V - cấm đoán (quy định, luật lệ, người trên nói với người dưới).
+      examples:
+        - target: ここでたばこを吸ってはいけません。
+          translation:
+            vi: Không được hút thuốc ở đây.
+        - target: 美術館で写真を撮ってはいけません。
+          translation:
+            vi: Không được chụp ảnh trong bảo tàng mỹ thuật.
+      pronunciation_note:
+        vi: は ở đây là trợ từ nên đọc là "wa" - てはいけません [te wa ikemasen].
+      confusion:
+        vi: Đây là câu cấm khá mạnh, không dùng để từ chối khách hay người trên. Đừng viết わ thay cho trợ từ は.
+
+  - key: ja:item:n4-sumu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 住む
+      reading: すむ
+      romanization: sumu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: sống, cư trú
+      examples:
+        - target: 兄は東京に住んでいます。
+          translation:
+            vi: Anh tôi sống ở Tokyo.
+      confusion:
+        vi: Nơi sống đi với に (東京に住む), không dùng で. Diễn tả "đang sống" luôn dùng 住んでいます.
+
+  - key: ja:item:n4-shiru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 知る
+      reading: しる
+      romanization: shiru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: biết
+      examples:
+        - target: 田中さんの電話番号を知っていますか。
+          translation:
+            vi: Bạn có biết số điện thoại của anh Tanaka không?
+        - target: いいえ、知りません。
+          translation:
+            vi: Không, tôi không biết.
+      confusion:
+        vi: Khẳng định dùng 知っています, nhưng phủ định lại là 知りません (không nói 知っていません). 知る đuôi る nhưng thuộc nhóm 1 - 知って.
+
+  - key: ja:item:n4-kekkon-suru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 結婚する
+      reading: けっこんする
+      romanization: kekkon suru
+      pos: động từ する
+    back:
+      meaning:
+        vi: kết hôn
+      examples:
+        - target: 先生は去年結婚しました。
+          translation:
+            vi: Thầy giáo đã kết hôn năm ngoái.
+      confusion:
+        vi: Kết hôn với ai dùng と - 田中さんと結婚しました. "Đã có gia đình" là 結婚しています.
+
+  - key: ja:item:n4-tsutomeru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 勤める
+      reading: つとめる
+      romanization: tsutomeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: làm việc (cho một công ty, cơ quan)
+      examples:
+        - target: 父は銀行に勤めています。
+          translation:
+            vi: Bố tôi làm việc ở ngân hàng.
+      confusion:
+        vi: 勤める đi với に (会社に勤める); 働く (はたらく) thì đi với で (会社で働く). Cả hai đều dịch là "làm việc".
+
+  - key: ja:item:n4-suu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 吸う
+      reading: すう
+      romanization: suu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: hút (thuốc), hít (không khí)
+      examples:
+        - target: たばこを吸ってもいいですか。
+          translation:
+            vi: Tôi hút thuốc được không?
+      confusion:
+        vi: Đuôi う → って - 吸って (すって), không phải 吸いて.
+
+  # ================= bài 3: thể từ điển và thể ない =================
+  - key: ja:item:n4-gram-plain-nonpast
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường hiện tại (辞書形 / ない形)
+      romanization: futsuukei
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Dạng thân mật dùng với bạn bè, gia đình: 行きます → 行く, 行きません → 行かない. Danh từ: 学生です → 学生だ; tính từ い bỏ です: 高いです → 高い."
+      examples:
+        - target: 明日、学校に行く？
+          translation:
+            vi: Mai cậu có đi học không?
+        - target: うん、行く。
+          translation:
+            vi: Ừ, có đi.
+        - target: 今日は暇だ。
+          translation:
+            vi: Hôm nay tớ rảnh.
+      confusion:
+        vi: Thể thường không phải là "nói trống không bất lịch sự" - đó là cách nói tự nhiên với người thân. Với người lạ, cấp trên vẫn dùng です・ます.
+
+  - key: ja:item:n4-gram-nai-form
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-ない形 (書かない・食べない・しない・来ない)
+      romanization: nai-kei
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Phủ định thể thường. Nhóm 1: đổi âm cuối sang hàng あ + ない (書く → 書かない), riêng う → わない (買う → 買わない). Nhóm 2: bỏ る + ない. する → しない, 来る → 来ない (こない)."
+      examples:
+        - target: 今日はお酒を飲まない。
+          translation:
+            vi: Hôm nay tôi không uống rượu.
+        - target: 肉を食べない。
+          translation:
+            vi: Tôi không ăn thịt.
+      pronunciation_note:
+        vi: 来ない đọc là こない, không phải きない.
+      confusion:
+        vi: ある (có) có phủ định đặc biệt là ない, không nói あらない. 買う → 買わない, không phải 買あない.
+
+  - key: ja:item:n4-gram-naide-kudasai
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-ない + でください
+      romanization: -naide kudasai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Xin đừng … / Đừng … - nhờ người khác không làm việc gì.
+      examples:
+        - target: ここに車を止めないでください。
+          translation:
+            vi: Xin đừng đỗ xe ở đây.
+        - target: 心配しないでください。
+          translation:
+            vi: Đừng lo lắng.
+      confusion:
+        vi: Phải là ないで, không phải ないて. Câu này nhẹ nhàng hơn てはいけません.
+
+  - key: ja:item:n4-wasureru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 忘れる
+      reading: わすれる
+      romanization: wasureru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: quên
+      examples:
+        - target: 傘を忘れないでください。
+          translation:
+            vi: Đừng quên ô nhé.
+      confusion:
+        vi: '"Quên mang đồ" cũng dùng 忘れる - 財布を忘れました (tôi để quên ví).'
+
+  - key: ja:item:n4-shinpai-suru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 心配する
+      reading: しんぱいする
+      romanization: shinpai suru
+      pos: động từ する
+    back:
+      meaning:
+        vi: lo lắng
+      examples:
+        - target: 大丈夫です。心配しないでください。
+          translation:
+            vi: Không sao đâu. Đừng lo.
+      confusion:
+        vi: Lo cho ai dùng を - 母はいつも私を心配しています.
+
+  - key: ja:item:n4-sawaru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 触る
+      reading: さわる
+      romanization: sawaru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: chạm, sờ
+      examples:
+        - target: 作品に触らないでください。
+          translation:
+            vi: Xin đừng chạm vào tác phẩm.
+      confusion:
+        vi: Vật bị chạm đi với に (作品に触る). 触る đuôi る nhưng thuộc nhóm 1 - 触らない, 触って.
+
+  - key: ja:item:n4-suteru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 捨てる
+      reading: すてる
+      romanization: suteru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: vứt, bỏ (rác)
+      examples:
+        - target: ここにごみを捨てないでください。
+          translation:
+            vi: Xin đừng vứt rác ở đây.
+      confusion:
+        vi: Nhóm 2 nên phủ định chỉ bỏ る - 捨てない, không phải 捨てらない.
+
+  - key: ja:item:n4-okureru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 遅れる
+      reading: おくれる
+      romanization: okureru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: muộn, trễ
+      examples:
+        - target: 授業に遅れないでください。
+          translation:
+            vi: Đừng đến lớp muộn nhé.
+      confusion:
+        vi: Trễ cái gì dùng に (会議に遅れる). 遅い (おそい) là tính từ "chậm, muộn", còn 遅れる là động từ "đến trễ".
+
+  # ================= bài 4: thể た, たことがある, たり =================
+  - key: ja:item:n4-gram-ta-form
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-た形 / V-なかった
+      romanization: ta-kei / -nakatta
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Quá khứ thể thường. Đổi て → た, で → だ (書いて → 書いた, 読んで → 読んだ). Phủ định: ない → なかった (行かない → 行かなかった). Danh từ: だった; tính từ い: 高かった."
+      examples:
+        - target: 昨日、何をした？
+          translation:
+            vi: Hôm qua cậu làm gì?
+        - target: 映画を見た。おもしろかった。
+          translation:
+            vi: Tớ đi xem phim. Hay lắm.
+        - target: 朝ご飯を食べなかった。
+          translation:
+            vi: Tớ không ăn sáng.
+      confusion:
+        vi: Cứ biết thể て là có ngay thể た. Tính từ い không thêm だった - 高かった, không phải 高いだった.
+
+  - key: ja:item:n4-gram-ta-koto-ga-aru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-た + ことがあります
+      romanization: -ta koto ga arimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đã từng làm V (kinh nghiệm). Chưa từng - V-た + ことがありません.
+      examples:
+        - target: 富士山に登ったことがあります。
+          translation:
+            vi: Tôi đã từng leo núi Phú Sĩ.
+        - target: 着物を着たことがありません。
+          translation:
+            vi: Tôi chưa từng mặc kimono.
+      confusion:
+        vi: Phải dùng thể た, không dùng thể từ điển - 行くことがあります nghĩa là "thỉnh thoảng có đi", không phải "đã từng đi". Không dùng với việc vừa làm hôm qua.
+
+  - key: ja:item:n4-gram-tari-tari
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V1-たり、V2-たりします
+      romanization: -tari, -tari shimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm những việc như V1, V2… - liệt kê vài hành động tiêu biểu, không theo thứ tự.
+      examples:
+        - target: 週末は掃除をしたり、洗濯をしたりします。
+          translation:
+            vi: Cuối tuần tôi dọn dẹp, giặt giũ các thứ.
+        - target: 昨日は本を読んだり、音楽を聞いたりしました。
+          translation:
+            vi: Hôm qua tôi đọc sách, nghe nhạc.
+      confusion:
+        vi: Cuối mẫu luôn có します (thì đặt ở đây). Đừng quên たり thứ hai và đừng dùng たり để kể việc theo thứ tự - thứ tự thì dùng て.
+
+  - key: ja:item:n4-noboru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 登る
+      reading: のぼる
+      romanization: noboru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: leo, trèo (núi)
+      examples:
+        - target: 去年、富士山に登りました。
+          translation:
+            vi: Năm ngoái tôi đã leo núi Phú Sĩ.
+      confusion:
+        vi: Núi đi với に (山に登る). 登る đuôi る nhưng thuộc nhóm 1 - 登った, 登らない.
+
+  - key: ja:item:n4-souji
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 掃除
+      reading: そうじ
+      romanization: souji
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: việc dọn dẹp, quét dọn
+      examples:
+        - target: 毎朝、部屋を掃除します。
+          translation:
+            vi: Sáng nào tôi cũng dọn phòng.
+      confusion:
+        vi: Có thể nói 掃除をする hoặc 部屋を掃除する - nhưng không dùng hai を liền (部屋を掃除をする nghe không tự nhiên).
+
+  - key: ja:item:n4-sentaku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 洗濯
+      reading: せんたく
+      romanization: sentaku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: việc giặt giũ
+      examples:
+        - target: 日曜日に洗濯をします。
+          translation:
+            vi: Tôi giặt đồ vào Chủ nhật.
+      confusion:
+        vi: 洗濯 là giặt quần áo; rửa bát là 皿を洗う (あらう), không dùng 洗濯.
+
+  - key: ja:item:n4-kimono
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 着物
+      reading: きもの
+      romanization: kimono
+      pos: danh từ
+    back:
+      meaning:
+        vi: kimono (trang phục truyền thống Nhật)
+      examples:
+        - target: 京都で着物を着ました。
+          translation:
+            vi: Tôi đã mặc kimono ở Kyoto.
+      confusion:
+        vi: Mặc dùng 着る (きる) - 着物を着る. Đừng nhầm 着る (mặc) với 切る (きる, cắt).
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n4-phrase-doushita-no
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: どうしたの？
+      romanization: dou shita no?
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Có chuyện gì vậy? / Cậu sao thế? (thân mật)
+      examples:
+        - target: 元気がないね。どうしたの？
+          translation:
+            vi: Trông cậu mệt mỏi thế. Có chuyện gì vậy?
+      confusion:
+        vi: Đây là thể thường của どうしましたか. Với người lạ hay cấp trên, hãy dùng どうしましたか.
+
+  - key: ja:item:n4-nikki
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 日記
+      reading: にっき
+      romanization: nikki
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhật ký
+      examples:
+        - target: 毎晩、日本語で日記を書いています。
+          translation:
+            vi: Tối nào tôi cũng viết nhật ký bằng tiếng Nhật.
+      pronunciation_note:
+        vi: Có âm ngắt - にっき [nik-ki], không đọc にき.
+      confusion:
+        vi: Nhật ký thường viết bằng thể thường (だ・た), không dùng です・ます.
+
+  - key: ja:item:n4-phrase-ki-o-tsukete
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 気をつけて
+      reading: きをつけて
+      romanization: ki o tsukete
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Cẩn thận nhé / Đi đường cẩn thận.
+      examples:
+        - target: 雨だから、気をつけて帰ってね。
+          translation:
+            vi: Trời mưa đấy, về cẩn thận nhé.
+      confusion:
+        vi: Lịch sự hơn là 気をつけてください. を ở đây đọc là "o".
+
+  - key: ja:item:n4-yasumi-no-hi
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 休みの日
+      reading: やすみのひ
+      romanization: yasumi no hi
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày nghỉ
+      examples:
+        - target: 休みの日は何をしていますか。
+          translation:
+            vi: Ngày nghỉ bạn thường làm gì?
+      confusion:
+        vi: Hỏi thói quen ngày nghỉ dùng ています (何をしていますか), nghe tự nhiên hơn 何をしますか.

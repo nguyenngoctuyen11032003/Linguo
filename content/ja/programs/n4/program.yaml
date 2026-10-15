@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+key: ja:program:n4
+language: ja
+title:
+  vi: Tiếng Nhật sơ cấp 2 (N4)
+description:
+  vi: Thể て, thể thường và quá khứ thường, thể khả năng, cho - nhận, bắt buộc, sở thích, thời tiết, hẹn gặp, so sánh và du lịch (JLPT N4).
+kind: core
+goal_types: []
+level_from: n4
+level_to: n4
+order_index: 3

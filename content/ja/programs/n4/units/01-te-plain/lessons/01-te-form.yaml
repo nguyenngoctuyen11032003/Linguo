@@ -1,0 +1,415 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-te-form
+order_index: 1
+level: n4
+title:
+  vi: Thể て - nhờ vả bằng てください và nối hành động
+objectives:
+  - vi: Chia thể て cho cả ba nhóm động từ, kể cả ngoại lệ 行って.
+  - vi: Nhờ người khác lịch sự bằng V-てください.
+  - vi: Nối nhiều hành động theo thứ tự bằng V-て、V.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: []
+items:
+  - item: ja:item:n4-gram-te-form
+  - item: ja:item:n4-gram-te-kudasai
+  - item: ja:item:n4-gram-te-sequence
+  - item: ja:item:n4-matsu
+  - item: ja:item:n4-isogu
+  - item: ja:item:n4-kasu
+  - item: ja:item:n4-yobu
+  - item: ja:item:n4-miseru
+  - item: ja:item:n4-akeru
+  - item: ja:item:n4-shimeru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nhờ được người khác "chờ một chút", "cho mượn bút", "mở cửa sổ" bằng tiếng Nhật lịch sự, và kể được một chuỗi việc "ăn sáng rồi đi học".
+  - type: explain
+    text:
+      vi: Thể て là dạng nối của động từ, giống chữ "rồi", "và" trong tiếng Việt nhưng gắn thẳng vào động từ. Nó là nền cho rất nhiều mẫu câu ở N4, nên bạn cần chia thật nhanh.
+  - type: explain
+    text:
+      vi: "Nhóm 2 (đuôi -eru/-iru như 食べる, 見せる) dễ nhất - bỏ る thêm て. Nhóm 1 đổi theo âm cuối: う・つ・る → って, む・ぶ・ぬ → んで, く → いて, ぐ → いで, す → して."
+  - type: explain
+    text:
+      vi: Bất quy tắc chỉ có する → して và 来る → 来て (きて). Ngoại lệ duy nhất của nhóm 1 là 行く → 行って, không phải 行いて.
+  - type: explain
+    text:
+      vi: Nhờ ai làm gì - V-て + ください (待ってください). Kể việc theo thứ tự - V1-て、V2; thì của cả câu nằm ở động từ cuối cùng.
+  - type: deep_explain
+    text:
+      vi: Mẹo nhớ nhóm 1 theo câu "うつる → って, むぶぬ → んで, く → いて, ぐ → いで, す → して". Một số động từ đuôi る lại thuộc nhóm 1 (帰る, 知る, 入る) - thể て của chúng là 帰って, không phải 帰て. Với người thân, người Nhật hay bỏ ください - 待って!
+  - type: example
+    target: ちょっと待ってください。
+    target_lang: ja
+    translation:
+      vi: Xin chờ một chút.
+    note:
+      vi: 待つ đuôi つ → 待って. Câu nói rất thường gặp ở cửa hàng, nhà ga.
+  - type: example
+    target: すみません、ペンを貸してください。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, cho tôi mượn cây bút.
+    note:
+      vi: 貸す đuôi す → 貸して. "Cho tôi mượn" là 貸して, không phải 借りて.
+  - type: example
+    target: 窓を開けてください。
+    target_lang: ja
+    translation:
+      vi: Hãy mở cửa sổ ra.
+    note:
+      vi: 開ける là nhóm 2 nên chỉ bỏ る → 開けて.
+  - type: example
+    target: 朝ご飯を食べて、学校へ行きます。
+    target_lang: ja
+    translation:
+      vi: Tôi ăn sáng rồi đi học.
+    note:
+      vi: 食べて nối hai hành động. Thì hiện tại nằm ở 行きます cuối câu.
+  - type: common_mistake
+    wrong: 駅へ行いてください。
+    right: 駅へ行ってください。
+    target_lang: ja
+    note:
+      vi: 行く đuôi く nhưng là ngoại lệ - thể て là 行って.
+  - type: common_mistake
+    wrong: ちょっと待ちてください。
+    right: ちょっと待ってください。
+    target_lang: ja
+    note:
+      vi: Không lấy thể ます rồi thêm て. 待つ đuôi つ nên thành 待って.
+  - type: common_mistake
+    wrong: タクシーを呼びてください。
+    right: タクシーを呼んでください。
+    target_lang: ja
+    note:
+      vi: Đuôi ぶ → んで - 呼んで. Âm て đổi thành で.
+  - type: common_mistake
+    wrong: 朝ご飯を食べました、学校へ行きました。
+    right: 朝ご飯を食べて、学校へ行きました。
+    target_lang: ja
+    note:
+      vi: Tiếng Việt chỉ cần dấu phẩy, nhưng tiếng Nhật nối hành động bằng thể て; chỉ động từ cuối mang thì quá khứ.
+  - type: summary
+    points:
+      - vi: Nhóm 2 - bỏ る + て (見せて, 開けて). する → して, 来る → 来て.
+      - vi: Nhóm 1 - う・つ・る → って; む・ぶ・ぬ → んで; く → いて; ぐ → いで; す → して; 行く → 行って.
+      - vi: Nhờ vả - V-てください. Kể theo thứ tự - V1-て、V2 (thì nằm ở cuối).
+      - vi: 待つ chờ · 急ぐ vội · 貸す cho mượn · 呼ぶ gọi · 見せる cho xem · 開ける mở · 閉める đóng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-te-mcq-matsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-matsu
+    prompt:
+      stem: Thể て của 待つ (chờ) là gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 待って, lang: ja }
+        - { id: p8d, text: 待ちて, lang: ja }
+        - { id: w2s, text: 待んで, lang: ja }
+        - { id: m6q, text: 待いて, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 待つ là nhóm 1, đuôi つ → って nên thành 待って. 待ちて là lỗi lấy thể ます thêm て; んで chỉ dành cho đuôi む・ぶ・ぬ.
+    display_answer: 待って
+
+  - key: ja:exercise:n4-te-mcq-iku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-te-form
+    prompt:
+      stem: Thể て của 行く (đi) là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 行って, lang: ja }
+        - { id: y1n, text: 行いて, lang: ja }
+        - { id: e7c, text: 行きて, lang: ja }
+        - { id: h4b, text: 行んで, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Đuôi く thường thành いて (書く → 書いて), nhưng 行く là ngoại lệ duy nhất - 行って.
+    display_answer: 行って
+
+  - key: ja:exercise:n4-te-listen-pen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-kasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: すみません、ペンを貸してください。
+      options:
+        - { id: a8u, text: "Xin lỗi, cho tôi mượn cây bút.", lang: vi }
+        - { id: q2z, text: "Xin lỗi, tôi mượn cây bút rồi.", lang: vi }
+        - { id: d6l, text: "Xin lỗi, hãy mua cây bút giúp tôi.", lang: vi }
+        - { id: s9f, text: "Xin lỗi, hãy cho tôi xem cây bút.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 貸して là thể て của 貸す (cho mượn), thêm ください thành lời nhờ. "Cho xem" là 見せて, "mua" là 買って.
+    display_answer: Xin lỗi, cho tôi mượn cây bút.
+
+  - key: ja:exercise:n4-te-fill-yobu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-yobu
+    prompt:
+      template: "Hãy gọi taxi giúp tôi. - タクシーを{{b1}}ください。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Động từ gốc là 呼ぶ (よぶ).
+        - Đuôi ぶ → んで.
+    answer:
+      blanks:
+        b1: [呼んで, よんで]
+    known_wrong:
+      - answer: 呼びて
+        feedback_vi: Không lấy thể ます thêm て. Đuôi ぶ → んで - 呼んで.
+        error_tag: te_form
+      - answer: 呼って
+        feedback_vi: って dành cho đuôi う・つ・る. 呼ぶ đuôi ぶ nên là 呼んで.
+        error_tag: te_form
+      - answer: 呼んて
+        feedback_vi: Sau ん thì て đổi thành で - 呼んで.
+        error_tag: te_form
+    explanation:
+      vi: 呼ぶ thuộc nhóm 1, đuôi ぶ → んで. 呼んでください là "hãy gọi (giúp)".
+    display_answer: タクシーを呼んでください。
+
+  - key: ja:exercise:n4-te-mcq-miseru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-miseru
+    prompt:
+      stem: 'Ở sân bay, nhân viên muốn nói "Xin cho xem hộ chiếu." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: パスポートを見せてください。, lang: ja }
+        - { id: j7r, text: パスポートを見てください。, lang: ja }
+        - { id: c1o, text: パスポートを見せるください。, lang: ja }
+        - { id: n5g, text: パスポートを貸してください。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: '"Cho (người khác) xem" là 見せる, nhóm 2 nên thể て là 見せて. 見てください là "hãy xem"; 見せるください sai vì ください phải đi sau thể て.'
+    display_answer: パスポートを見せてください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-te-fill-isogu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-isogu
+    prompt:
+      template: "Không còn thời gian. Hãy nhanh lên. - 時間がありません。{{b1}}ください。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [急いで, いそいで]
+    known_wrong:
+      - answer: 急いて
+        feedback_vi: Đuôi ぐ → いで (có dấu ゛), khác với く → いて.
+        error_tag: te_form
+      - answer: 急ぎて
+        feedback_vi: Không lấy thể ます thêm て. 急ぐ → 急いで.
+        error_tag: te_form
+      - answer: 急って
+        feedback_vi: って dành cho đuôi う・つ・る. Đuôi ぐ → いで.
+        error_tag: te_form
+    explanation:
+      vi: 急ぐ đuôi ぐ nên thể て là 急いで. Âm đục ぐ giữ lại thành で.
+    display_answer: 時間がありません。急いでください。
+
+  - key: ja:exercise:n4-te-fill-shimeru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-shimeru
+    prompt:
+      template: "Lạnh quá. Hãy đóng cửa sổ lại. - 寒いです。窓を{{b1}}ください。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [閉めて, しめて]
+    known_wrong:
+      - answer: 閉めって
+        feedback_vi: 閉める là nhóm 2 - chỉ bỏ る rồi thêm て, không có っ.
+        error_tag: te_form
+      - answer: 開けて
+        feedback_vi: 開けて là "mở". Trời lạnh nên cần "đóng" - 閉めて.
+        error_tag: vocab_open_close
+      - answer: 消して
+        feedback_vi: 消す là tắt (đèn, máy). Đóng cửa sổ dùng 閉める.
+        error_tag: vocab_open_close
+    explanation:
+      vi: 閉める (đóng) thuộc nhóm 2, bỏ る thêm て → 閉めて.
+    display_answer: 寒いです。窓を閉めてください。
+
+  - key: ja:exercise:n4-te-translate-wait
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-te-kudasai
+    prompt:
+      source_text: Xin chờ một chút.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ちょっと待ってください。
+        - ちょっとまってください。
+        - 少し待ってください。
+        - すこしまってください。
+        - 少々お待ちください。
+        - しょうしょうおまちください。
+        - ちょっと待って下さい。
+    known_wrong:
+      - answer: ちょっと待ちてください。
+        feedback_vi: 待つ đuôi つ → 待って, không lấy thể ます thêm て.
+        error_tag: te_form
+      - answer: ちょっと待つください。
+        feedback_vi: ください phải đi sau thể て - 待ってください.
+        error_tag: te_form
+      - answer: chotto matte kudasai
+        feedback_vi: Hãy gõ bằng chữ Nhật (kana/kanji), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: 待つ → 待って + ください. 少々お待ちください là cách nói rất trang trọng của nhân viên phục vụ, cũng đúng.
+    display_answer: ちょっと待ってください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-te-translate-sequence
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-sequence
+    prompt:
+      source_text: 駅で友達に会って、映画を見ました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi gặp bạn ở ga rồi đi xem phim.
+        - Tôi gặp bạn ở ga rồi xem phim.
+        - Tôi đã gặp bạn ở ga rồi xem phim.
+        - Tôi đã gặp bạn ở nhà ga rồi đi xem phim.
+        - Tôi gặp bạn ở nhà ga rồi xem phim.
+        - Tôi gặp bạn ở nhà ga rồi đi xem phim.
+        - Tôi gặp bạn ở ga và xem phim.
+        - Tôi đã gặp bạn ở ga và xem phim.
+        - Tôi gặp bạn ở ga, sau đó xem phim.
+        - Tôi gặp bạn ở ga, sau đó đi xem phim.
+        - Mình gặp bạn ở ga rồi đi xem phim.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi gặp bạn ở ga rồi sẽ xem phim.
+        feedback_vi: Động từ cuối 見ました là quá khứ, nên cả hai việc đều đã xảy ra.
+        error_tag: tense_past
+      - answer: Tôi đợi bạn ở ga rồi xem phim.
+        feedback_vi: 会って là thể て của 会う (gặp), không phải 待つ (đợi).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 会って nối hai việc theo thứ tự "gặp rồi xem". て không mang thì - thì quá khứ lấy từ 見ました ở cuối câu.
+    display_answer: Tôi gặp bạn ở ga rồi đi xem phim.
+
+  - key: ja:exercise:n4-te-order-breakfast
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-sequence
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi ăn sáng rồi đi học."'
+      tokens:
+        - { id: t-ikimasu, text: 学校へ行きます }
+        - { id: t-tabemasu, text: 食べます、 }
+        - { id: t-asagohan, text: 朝ご飯を }
+        - { id: t-tabete, text: 食べて、 }
+    answer:
+      orders:
+        - [t-asagohan, t-tabete, t-ikimasu]
+    explanation:
+      vi: Hành động trước dùng thể て (食べて), hành động sau mang thì (行きます). 食べます、 sai vì giữa câu không dùng thể ます để nối.
+    display_answer: 朝ご飯を食べて、学校へ行きます。
+
+  - key: ja:exercise:n4-te-mcq-open-window
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-akeru
+    prompt:
+      stem: Phòng học nóng quá. Bạn muốn nhờ bạn cùng lớp mở cửa sổ. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: g3k, text: 窓を開けてください。, lang: ja }
+        - { id: u9p, text: 窓を閉めてください。, lang: ja }
+        - { id: b2w, text: 窓を開けるください。, lang: ja }
+        - { id: x6e, text: 窓が開きてください。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: Mở cửa sổ là 窓を開ける, nhóm 2 nên thể て là 開けて. 閉めて là "đóng"; ください không đi sau thể từ điển 開ける.
+    display_answer: 窓を開けてください。
+
+  - key: ja:exercise:n4-te-translate-write-name
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-form
+    prompt:
+      source_text: Hãy viết tên vào đây.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ここに名前を書いてください。
+        - ここになまえをかいてください。
+        - ここに名前をかいてください。
+        - ここになまえを書いてください。
+        - ここに名前を書いて下さい。
+        - お名前をここに書いてください。
+        - 名前をここに書いてください。
+        - なまえをここにかいてください。
+    known_wrong:
+      - answer: ここに名前を書きてください。
+        feedback_vi: Đuôi く → いて - 書いて, không lấy thể ます thêm て.
+        error_tag: te_form
+      - answer: ここに名前を書ってください。
+        feedback_vi: 書く đuôi く nên là 書いて; って chỉ dành cho う・つ・る (và 行く).
+        error_tag: te_form
+      - answer: ここで名前を書いてください。
+        feedback_vi: Viết "vào" chỗ nào dùng に (ここに), で chỉ nơi diễn ra hành động.
+        error_tag: particle_ni_de
+    explanation:
+      vi: 書く đuôi く → 書いて + ください. Chỗ viết vào dùng trợ từ に.
+    display_answer: ここに名前を書いてください。

@@ -1,0 +1,405 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-te-iru-permission
+order_index: 2
+level: n4
+title:
+  vi: ています, てもいいですか và てはいけません
+objectives:
+  - vi: Nói việc đang làm và trạng thái kéo dài bằng V-ています (住んでいます, 結婚しています).
+  - vi: Xin phép bằng V-てもいいですか và trả lời.
+  - vi: Hiểu và nói quy định cấm bằng V-てはいけません.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, reading]
+prerequisites: [ja:lesson:n4-te-form]
+items:
+  - item: ja:item:n4-gram-te-iru
+  - item: ja:item:n4-gram-te-mo-ii
+  - item: ja:item:n4-gram-te-wa-ikenai
+  - item: ja:item:n4-sumu
+  - item: ja:item:n4-shiru
+  - item: ja:item:n4-kekkon-suru
+  - item: ja:item:n4-tsutomeru
+  - item: ja:item:n4-suu
+  - item: ja:item:n4-gram-te-form
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giới thiệu được "Tôi sống ở Osaka, làm việc ở ngân hàng", hỏi "Tôi chụp ảnh được không?" và đọc hiểu biển cấm "Không được hút thuốc".
+  - type: explain
+    text:
+      vi: V-ています có hai nghĩa chính. Một là "đang làm" (今、食べています); hai là trạng thái sau một việc đã xảy ra vẫn kéo dài (結婚しています - đã có gia đình, 住んでいます - đang sống ở).
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "tôi biết", "tôi sống ở…" mà không cần "đang". Tiếng Nhật thì những động từ như 住む, 知る, 勤める, 結婚する hầu như luôn đi với ています.
+  - type: explain
+    text:
+      vi: Xin phép - V-てもいいですか (làm … được không?). Cấm - V-てはいけません (không được làm …); câu này khá mạnh, thường gặp trong nội quy, biển báo.
+  - type: deep_explain
+    text:
+      vi: 知る là ngoại lệ đáng nhớ - "biết" là 知っています nhưng "không biết" là 知りません. Trả lời câu xin phép, người Nhật hay nói ええ、どうぞ hoặc từ chối mềm すみません、ちょっと…, hiếm khi nói thẳng いけません. Trong てはいけません, は đọc là "wa".
+  - type: example
+    target: 兄は東京に住んでいます。
+    target_lang: ja
+    translation:
+      vi: Anh tôi sống ở Tokyo.
+    note:
+      vi: 住む → 住んで + います. Nơi sống đi với に.
+  - type: example
+    target: 父は銀行に勤めています。
+    target_lang: ja
+    translation:
+      vi: Bố tôi làm việc ở ngân hàng.
+    note:
+      vi: Nghề nghiệp, nơi làm việc lâu dài cũng dùng ています.
+  - type: example
+    target: すみません、ここで写真を撮ってもいいですか。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, tôi chụp ảnh ở đây được không?
+    note:
+      vi: 撮る → 撮って + もいいですか.
+  - type: example
+    target: ここでたばこを吸ってはいけません。
+    target_lang: ja
+    translation:
+      vi: Không được hút thuốc ở đây.
+    note:
+      vi: 吸う đuôi う → 吸って. は đọc là "wa".
+  - type: common_mistake
+    wrong: 私は大阪に住みます。
+    right: 私は大阪に住んでいます。
+    target_lang: ja
+    note:
+      vi: '"Tôi sống ở Osaka" (hiện tại) dùng 住んでいます. 住みます nghe như "sẽ đến sống".'
+  - type: common_mistake
+    wrong: 田中さんを知っていません。
+    right: 田中さんを知りません。
+    target_lang: ja
+    note:
+      vi: Phủ định của 知っています là 知りません - ngoại lệ cần nhớ.
+  - type: common_mistake
+    wrong: 姉は結婚します。
+    right: 姉は結婚しています。
+    target_lang: ja
+    note:
+      vi: '"Chị tôi đã có gia đình" là trạng thái nên dùng 結婚しています. 結婚します là "sẽ kết hôn".'
+  - type: common_mistake
+    wrong: ここで写真を撮るもいいですか。
+    right: ここで写真を撮ってもいいですか。
+    target_lang: ja
+    note:
+      vi: もいいですか phải đi sau thể て, không đi sau thể từ điển.
+  - type: summary
+    points:
+      - vi: V-ています - đang làm, hoặc trạng thái kéo dài (住んでいます, 結婚しています, 勤めています).
+      - vi: 知っています (biết) ↔ 知りません (không biết).
+      - vi: Xin phép - V-てもいいですか. Cấm - V-てはいけません (は đọc "wa").
+      - vi: 住む sống · 知る biết · 結婚する kết hôn · 勤める làm việc ở · 吸う hút.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-teiru-mcq-sumu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-sumu
+    prompt:
+      stem: '"Tôi sống ở Osaka." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 大阪に住んでいます。, lang: ja }
+        - { id: p8d, text: 大阪で住んでいます。, lang: ja }
+        - { id: w2s, text: 大阪に住みています。, lang: ja }
+        - { id: m6q, text: 大阪に住っています。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Nơi sống đi với に; 住む đuôi む → 住んで + います. で dùng cho nơi diễn ra hành động, không dùng với 住む.
+    display_answer: 大阪に住んでいます。
+
+  - key: ja:exercise:n4-teiru-mcq-shiru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shiru
+    prompt:
+      stem: 'Bạn được hỏi 田中さんの住所を知っていますか。 Bạn không biết. Trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: いいえ、知りません。, lang: ja }
+        - { id: y1n, text: いいえ、知っていません。, lang: ja }
+        - { id: e7c, text: いいえ、知りませんでした。, lang: ja }
+        - { id: h4b, text: いいえ、知らないです。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Phủ định của 知っています là 知りません. 知っていません sai ngữ pháp; 知りませんでした là "(lúc đó) đã không biết"; 知らないです nghe thiếu lịch sự trong câu trả lời này.
+    display_answer: いいえ、知りません。
+
+  - key: ja:exercise:n4-teiru-listen-no-smoking
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-te-wa-ikenai
+    prompt:
+      audio_asset_id: null
+      fallback_text: ここでたばこを吸ってはいけません。
+      options:
+        - { id: a8u, text: Không được hút thuốc ở đây., lang: vi }
+        - { id: q2z, text: Bạn có thể hút thuốc ở đây., lang: vi }
+        - { id: d6l, text: Tôi đang hút thuốc ở đây., lang: vi }
+        - { id: s9f, text: Không được mua thuốc lá ở đây., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 吸って là thể て của 吸う (hút), てはいけません là "không được". "Có thể hút" sẽ là 吸ってもいいです; "mua" là 買う.
+    display_answer: Không được hút thuốc ở đây.
+
+  - key: ja:exercise:n4-teiru-fill-photo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-te-mo-ii
+    prompt:
+      template: "Tôi chụp ảnh được không? - 写真を撮って{{b1}}ですか。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Mẫu xin phép là V-て + ? + いいですか.
+        - Chỉ cần thêm trợ từ và いい.
+    answer:
+      blanks:
+        b1: [もいい]
+    known_wrong:
+      - answer: はいけない
+        feedback_vi: てはいけない là "không được", không dùng để xin phép.
+        error_tag: permission_prohibition
+      - answer: いい
+        feedback_vi: Thiếu も - mẫu xin phép là てもいいですか.
+        error_tag: missing_particle
+    explanation:
+      vi: Xin phép dùng V-て + もいいですか. も là phần bắt buộc của mẫu, không bỏ được.
+    display_answer: 写真を撮ってもいいですか。
+
+  - key: ja:exercise:n4-teiru-mcq-married
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-kekkon-suru
+    prompt:
+      stem: 姉は結婚しています。 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: Chị tôi đã có gia đình., lang: vi }
+        - { id: j7r, text: Chị tôi đang làm đám cưới., lang: vi }
+        - { id: c1o, text: Chị tôi sắp kết hôn., lang: vi }
+        - { id: n5g, text: Chị tôi muốn kết hôn., lang: vi }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 結婚しています là trạng thái sau khi kết hôn vẫn kéo dài - "đã có gia đình". "Sắp kết hôn" là 結婚します, "muốn kết hôn" là 結婚したいです.
+    display_answer: Chị tôi đã có gia đình.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-teiru-fill-bank
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tsutomeru
+    prompt:
+      template: "Bố tôi làm việc ở ngân hàng. - 父は銀行に{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [勤めています, つとめています, 勤めてます, つとめてます]
+    known_wrong:
+      - answer: 勤めます
+        feedback_vi: Nơi làm việc lâu dài là trạng thái - dùng 勤めています.
+        error_tag: te_iru_state
+      - answer: 働いています
+        feedback_vi: 働く đi với で (銀行で働いています). Câu có に nên dùng 勤めています.
+        error_tag: particle_ni_de
+      - answer: 勤めっています
+        feedback_vi: 勤める nhóm 2 - bỏ る thêm て, không có っ.
+        error_tag: te_form
+    explanation:
+      vi: 勤める đi với に và diễn tả công việc lâu dài nên dùng thể ています - 勤めています.
+    display_answer: 父は銀行に勤めています。
+
+  - key: ja:exercise:n4-teiru-fill-suu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-suu
+    prompt:
+      template: "Trong bệnh viện không được hút thuốc. - 病院でたばこを{{b1}}はいけません。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [吸って, すって]
+    known_wrong:
+      - answer: 吸いて
+        feedback_vi: Đuôi う → って - 吸って.
+        error_tag: te_form
+      - answer: 吸んで
+        feedback_vi: んで dành cho đuôi む・ぶ・ぬ. 吸う đuôi う → 吸って.
+        error_tag: te_form
+      - answer: 吸う
+        feedback_vi: はいけません phải đi sau thể て.
+        error_tag: te_form
+    explanation:
+      vi: 吸う thuộc nhóm 1, đuôi う → って. 吸ってはいけません là "không được hút".
+    display_answer: 病院でたばこを吸ってはいけません。
+
+  - key: ja:exercise:n4-teiru-translate-may-i-sit
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-mo-ii
+    prompt:
+      source_text: Tôi ngồi ở đây được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ここに座ってもいいですか。
+        - ここにすわってもいいですか。
+        - ここ、座ってもいいですか。
+        - すみません、ここに座ってもいいですか。
+        - ここに座ってもよろしいですか。
+        - ここに座っていいですか。
+        - ここにすわっていいですか。
+    known_wrong:
+      - answer: ここに座ってはいけませんか。
+        feedback_vi: てはいけません là cấm đoán. Xin phép dùng てもいいですか.
+        error_tag: permission_prohibition
+      - answer: ここに座りてもいいですか。
+        feedback_vi: 座る (nhóm 1, đuôi る) → 座って, không phải 座りて.
+        error_tag: te_form
+      - answer: ここで座ってもいいですか。
+        feedback_vi: Chỗ ngồi xuống dùng に (ここに座る), không dùng で.
+        error_tag: particle_ni_de
+    explanation:
+      vi: 座る (すわる, ngồi) → 座って + もいいですか. Chỗ ngồi vào dùng に. Nói nhanh có thể bỏ も - 座っていいですか.
+    display_answer: ここに座ってもいいですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-teiru-translate-intro
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-iru
+    prompt:
+      source_text: 兄は結婚していて、東京に住んでいます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh tôi đã có gia đình và sống ở Tokyo.
+        - Anh tôi đã kết hôn và sống ở Tokyo.
+        - Anh trai tôi đã có gia đình và sống ở Tokyo.
+        - Anh trai tôi đã kết hôn và sống ở Tokyo.
+        - Anh tôi đã có gia đình và đang sống ở Tokyo.
+        - Anh tôi đã kết hôn và đang sống ở Tokyo.
+        - Anh trai tôi đã có gia đình và đang sống ở Tokyo.
+        - Anh trai tôi đã kết hôn và đang sống ở Tokyo.
+        - Anh tôi đã lập gia đình và sống ở Tokyo.
+        - Anh tôi có gia đình rồi và sống ở Tokyo.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh tôi đang làm đám cưới và sống ở Tokyo.
+        feedback_vi: 結婚している là trạng thái "đã có gia đình", không phải "đang làm đám cưới".
+        error_tag: te_iru_state
+      - answer: Anh tôi sẽ kết hôn và sống ở Tokyo.
+        feedback_vi: Không có ý tương lai - 結婚していて là đã kết hôn.
+        error_tag: te_iru_state
+    explanation:
+      vi: 結婚していて là thể て của 結婚しています, nối với vế sau. Cả hai vế đều là trạng thái hiện tại.
+    display_answer: Anh tôi đã có gia đình và sống ở Tokyo.
+
+  - key: ja:exercise:n4-teiru-order-museum
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-wa-ikenai
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Trong bảo tàng không được chụp ảnh."'
+      tokens:
+        - { id: t-ikemasen, text: はいけません }
+        - { id: t-totte, text: 撮って }
+        - { id: t-bijutsukan, text: 美術館で }
+        - { id: t-shashin, text: 写真を }
+        - { id: t-moii, text: もいいです }
+    answer:
+      orders:
+        - [t-bijutsukan, t-shashin, t-totte, t-ikemasen]
+        - [t-shashin, t-bijutsukan, t-totte, t-ikemasen]
+    explanation:
+      vi: Nơi chốn đi với で, tân ngữ đi với を, rồi thể て 撮って + はいけません. もいいです là "được phép", ngược nghĩa.
+    display_answer: 美術館で写真を撮ってはいけません。
+
+  - key: ja:exercise:n4-teiru-mcq-reply-permission
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-mo-ii
+    prompt:
+      stem: 'Đồng nghiệp hỏi この辞書を使ってもいいですか。 Bạn đồng ý. Câu trả lời nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: g3k, text: ええ、どうぞ。, lang: ja }
+        - { id: u9p, text: ええ、使ってはいけません。, lang: ja }
+        - { id: b2w, text: いいえ、どうぞ。, lang: ja }
+        - { id: x6e, text: ええ、使っています。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: ええ、どうぞ là cách đồng ý ngắn gọn, tự nhiên. 使ってはいけません là cấm; 使っています là "đang dùng", không trả lời câu xin phép.
+    display_answer: ええ、どうぞ。
+
+  - key: ja:exercise:n4-teiru-translate-know
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shiru
+    prompt:
+      source_text: Tôi biết số điện thoại của anh Tanaka.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 田中さんの電話番号を知っています。
+        - たなかさんのでんわばんごうをしっています。
+        - 私は田中さんの電話番号を知っています。
+        - わたしはたなかさんのでんわばんごうをしっています。
+        - 田中さんの電話番号を知ってます。
+        - 田中さんの電話番号は知っています。
+    known_wrong:
+      - answer: 田中さんの電話番号を知ります。
+        feedback_vi: '"Biết" (hiện tại) phải dùng 知っています, không dùng 知ります.'
+        error_tag: te_iru_state
+      - answer: 田中さんの電話番号をわかっています。
+        feedback_vi: Biết thông tin như số điện thoại dùng 知っています; わかる đi với が và mang nghĩa "hiểu".
+        error_tag: vocab_shiru_wakaru
+    explanation:
+      vi: '"Biết" ở hiện tại luôn là 知っています. Số điện thoại là 電話番号 (でんわばんごう).'
+    display_answer: 田中さんの電話番号を知っています。
