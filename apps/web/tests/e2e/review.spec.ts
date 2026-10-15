@@ -12,6 +12,41 @@ async function setup(page: Page, reviews: ReviewMockOptions = {}, path: Record<s
   return mock;
 }
 
+/** A browser with speechSynthesis and en-US / ko-KR voices, or (supported: false) without the API. */
+async function stubSpeech(page: Page, supported: boolean) {
+  await page.addInitScript((on) => {
+    if (!on) {
+      Object.defineProperty(window, 'speechSynthesis', { value: undefined, configurable: true });
+      return;
+    }
+    const voices = [
+      { lang: 'en-US', name: 'Stub en' },
+      { lang: 'ko-KR', name: 'Stub ko' },
+    ];
+    const spoken: unknown[] = [];
+    (window as unknown as Record<string, unknown>).__spoken = spoken;
+    class Utterance {
+      constructor(public text: string) {}
+      lang = '';
+      rate = 1;
+      voice: unknown = null;
+      onend: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+    }
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { value: Utterance, configurable: true });
+    Object.defineProperty(window, 'speechSynthesis', {
+      configurable: true,
+      value: {
+        getVoices: () => voices,
+        speak: (u: unknown) => spoken.push(u),
+        cancel: () => {},
+        addEventListener: () => {},
+        removeEventListener: () => {},
+      },
+    });
+  }, supported);
+}
+
 const counter = (page: Page) => page.getByRole('heading', { level: 2, name: /^Thẻ \d+\/\d+$/ });
 const front = (page: Page) => page.getByTestId('flashcard-front');
 const back = (page: Page) => page.getByTestId('flashcard-back');
@@ -186,10 +221,32 @@ test('Korean cards review the same way', async ({ page }) => {
   expect(mock.reviewGrades()).toHaveLength(2);
 });
 
+test('a card without a recording offers machine speech, never autoplays, and says it is not a recording', async ({ page }) => {
+  await stubSpeech(page, true);
+  await setup(page, { due: 2 });
+  await openReview(page);
+  const spokenRates = () => page.evaluate(() => (window as unknown as { __spoken: Array<{ rate: number }> }).__spoken.map((u) => u.rate));
+  expect(await spokenRates()).toEqual([]);
+  await expect(page.getByText('Giọng đọc tự động — chỉ để luyện nghe')).toBeVisible();
+  const speak = page.getByRole('button', { name: /^Nghe phát âm: / });
+  await expect(speak).toBeVisible();
+  await speak.click();
+  expect(await spokenRates()).toEqual([0.9]);
+});
+
+test('a browser without speechSynthesis shows no speak button', async ({ page }) => {
+  await stubSpeech(page, false);
+  await setup(page, { due: 2 });
+  await openReview(page);
+  await expect(page.getByRole('button', { name: /^Nghe phát âm/ })).toHaveCount(0);
+  await expect(front(page)).toBeVisible();
+});
+
 for (const colorScheme of ['light', 'dark'] as const) {
   test(`no serious a11y violations in the review (${colorScheme})`, async ({ page }, testInfo) => {
     test.skip(!['iphone-15-pro', 'pixel-7'].includes(testInfo.project.name), 'a11y runs on two devices');
     test.setTimeout(90_000);
+    await stubSpeech(page, true);
     await setup(page, { due: 2 });
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
     const scan = async (label: string) => {

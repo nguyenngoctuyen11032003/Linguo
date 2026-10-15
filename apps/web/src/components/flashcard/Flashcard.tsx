@@ -6,6 +6,7 @@ import { EASE_OUT } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { AudioPlayButton } from '../exercise/AudioPlayButton';
+import { MachineSpeechButton } from '../exercise/MachineSpeechButton';
 import { answerText, readCardContent, type CardContent } from './cardContent';
 
 /** Spec 3 §6: the card turns over in 250 ms; reduced motion swaps the faces instantly. */
@@ -153,6 +154,15 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       {showAudio && card.item.audio_path && (
         <div className="mt-3 flex justify-center">
           <AudioPlayButton key={card.card_id} path={card.item.audio_path} />
+        </div>
+      )}
+      {showAudio && !card.item.audio_path && content.text && (
+        <div className="mt-3 flex flex-col items-center gap-2">
+          {/* Keyed by face so flipping cancels the speech in progress. */}
+          <MachineSpeechButton key={`${card.card_id}:w:${flipped}`} text={content.text} lang={content.lang} label="Nghe phát âm" compact />
+          {flipped && content.example && (
+            <MachineSpeechButton key={`${card.card_id}:e`} text={content.example.target} lang={content.lang} label="Nghe câu ví dụ" compact note={false} />
+          )}
         </div>
       )}
       <p role="status" aria-live="polite" className="sr-only">
