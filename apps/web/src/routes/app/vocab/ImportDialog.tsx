@@ -1,4 +1,4 @@
-import { useId, useRef, useState, type ChangeEvent, type RefObject } from 'react';
+import { useId, useLayoutEffect, useRef, useState, type ChangeEvent, type RefObject } from 'react';
 import { FileUp } from 'lucide-react';
 import {
   PERSONAL_VOCAB_LIMITS as L,
@@ -53,8 +53,22 @@ function ImportBody({ existingCount, onClose, onImport }: Pick<ImportDialogProps
   const [importError, setImportError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+  /** What receives focus when a step appears: the summary of preview / done, the text box when going back. */
+  const stepFocusRef = useRef<HTMLElement | null>(null);
+  const shownStep = useRef(step.kind);
   const pasteId = useId();
   const fileId = useId();
+
+  // The button that moved to the next step is gone with the old step: start the new one from the top (the dialog
+  // body keeps its scroll offset otherwise, hiding the summary on small phones) and move focus to its summary.
+  useLayoutEffect(() => {
+    if (shownStep.current === step.kind) return;
+    shownStep.current = step.kind;
+    const target = stepFocusRef.current;
+    const body = target?.closest<HTMLElement>('[data-vocab-dialog-body]');
+    if (body) body.scrollTop = 0;
+    target?.focus({ preventScroll: true });
+  }, [step.kind]);
 
   function preview(source: string) {
     const parsed = parsePersonalVocabCsv(source);
@@ -104,7 +118,14 @@ function ImportBody({ existingCount, onClose, onImport }: Pick<ImportDialogProps
     const { result } = step;
     return (
       <div className="space-y-4">
-        <p role="status" className="rounded-2xl bg-primary/10 px-4 py-3 text-[15px]">
+        <p
+          ref={(el) => {
+            stepFocusRef.current = el;
+          }}
+          role="status"
+          tabIndex={-1}
+          className="rounded-2xl bg-primary/10 px-4 py-3 text-[15px] focus:outline-none"
+        >
           Xong rồi! Đã thêm <strong>{result.added}</strong> từ mới
           {result.updated > 0 && <>, cập nhật {result.updated} từ</>}
           {result.unchanged > 0 && <>, {result.unchanged} từ đã có sẵn và giữ nguyên</>}.
@@ -123,11 +144,23 @@ function ImportBody({ existingCount, onClose, onImport }: Pick<ImportDialogProps
     const overflow = Math.max(0, existingCount + rows.length - L.maxWordsPerList);
     return (
       <div className="space-y-4">
-        <p role="status" className="text-[15px]">
+        <p
+          ref={(el) => {
+            stepFocusRef.current = el;
+          }}
+          role="status"
+          tabIndex={-1}
+          className="text-[15px] focus:outline-none"
+        >
           Đọc được <strong>{rows.length}</strong> từ hợp lệ
           {parsed.errorCount > 0 && <>, {parsed.errorCount} dòng có lỗi sẽ bị bỏ qua</>}
-          {parsed.duplicates.length > 0 && <>, {parsed.duplicates.length} dòng trùng từ</>}.
+          {parsed.duplicates.length > 0 && <>, {parsed.duplicates.length} dòng trùng từ với dòng trước nên được bỏ qua</>}.
         </p>
+        {rows.length > 0 && (
+          <p className="text-sm text-muted">
+            Từ đã có trong danh sách sẽ không bị thêm lần nữa: Linguo giữ nguyên lịch ôn và chỉ cập nhật nghĩa cùng các cột có nội dung trong file.
+          </p>
+        )}
         {parsed.encodingSuspect && (
           <p role="note" className="rounded-2xl border border-border px-4 py-3 text-[15px]">
             Có ký tự lạ trong file, có thể file chưa được lưu ở dạng UTF-8. Nếu chữ Hàn hoặc chữ có dấu bị hỏng, hãy lưu lại file dưới dạng “CSV UTF-8”.
@@ -259,6 +292,9 @@ function ImportBody({ existingCount, onClose, onImport }: Pick<ImportDialogProps
           Hoặc dán danh sách vào đây
         </label>
         <textarea
+          ref={(el) => {
+            stepFocusRef.current = el;
+          }}
           id={pasteId}
           value={text}
           rows={5}
