@@ -189,9 +189,13 @@ function isBlank(record: RawRecord): boolean {
   return !record.tooLong && !record.unterminated && record.fields.every((f) => cleanPersonalText(f) === null);
 }
 
-/** Picks the delimiter that splits the first records into the most consistent columns (>= 2). */
+/**
+ * Picks the delimiter that splits the first records into the most consistent columns (>= 2). Ties go to the
+ * earlier candidate: tab, then semicolon, then comma. Vietnamese meanings often hold a comma ("quả táo, trái táo")
+ * while a semicolon inside a cell is rare, so a headerless semicolon file with one comma per line stays semicolon.
+ */
 function detectDelimiter(text: string): CsvDelimiter {
-  const candidates: CsvDelimiter[] = ['\t', ',', ';'];
+  const candidates: CsvDelimiter[] = ['\t', ';', ','];
   let best: CsvDelimiter = ',';
   let bestScore = 0;
   const head = text.slice(0, 20_000);

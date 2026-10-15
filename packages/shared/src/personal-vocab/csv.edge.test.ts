@@ -80,6 +80,21 @@ describe('parsePersonalVocabCsv edge cases', () => {
     expect(r.rows[0]).toMatchObject({ term: 'hi, there', meaning: 'xin chào, bạn' });
   });
 
+  it('a headerless semicolon file with one comma per meaning is still split on semicolons', () => {
+    const r = parsePersonalVocabCsv('apple;quả táo, trái táo\npear;quả lê, trái lê\n');
+    expect(r.delimiter).toBe(';');
+    expect(r.rows.map(({ term, meaning }) => ({ term, meaning }))).toEqual([
+      { term: 'apple', meaning: 'quả táo, trái táo' },
+      { term: 'pear', meaning: 'quả lê, trái lê' },
+    ]);
+  });
+
+  it('a plain comma file is unaffected by the semicolon tie-break', () => {
+    const r = parsePersonalVocabCsv('apple,quả táo\npear,quả lê\n');
+    expect(r.delimiter).toBe(',');
+    expect(r.rows).toHaveLength(2);
+  });
+
   it('toImportRows omits unset optional fields and the line', () => {
     const out = toImportRows(parsePersonalVocabCsv('a,b\n').rows);
     expect(out).toEqual([{ term: 'a', meaning: 'b' }]);
