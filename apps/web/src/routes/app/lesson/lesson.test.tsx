@@ -61,6 +61,8 @@ describe('LessonPage', () => {
     expect(screen.getByText('Giới thiệu tên mình')).toBeInTheDocument();
     expect(screen.getByText('Sau bài này bạn chào hỏi được.')).toBeInTheDocument();
     expect(screen.getByText('Khoảng 8 phút')).toBeInTheDocument();
+    // Below the step title (h2 "Bắt đầu bài học").
+    expect(screen.getByRole('heading', { level: 3, name: 'Mục tiêu bài học' })).toBeInTheDocument();
     expect(screen.getByText('Nội dung demo — chưa kiểm duyệt')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Quay lại' })).not.toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Tiếp tục' }));
@@ -172,7 +174,8 @@ describe('LessonPage', () => {
   it('offers "Học lại" on the summary of a completed lesson', async () => {
     const run = makeRun({ stepIndex: 6, runStatus: 'completed', completeResult: COMPLETE_RESULT });
     renderLesson(run);
-    expect(screen.getByText('Kết quả của bạn')).toBeInTheDocument();
+    // A sub-section of the "Tóm tắt" step (h2), so one level below it.
+    expect(screen.getByRole('heading', { level: 3, name: 'Kết quả của bạn' })).toBeInTheDocument();
     expect(run.complete).not.toHaveBeenCalled();
     await userEvent.click(screen.getByRole('button', { name: 'Học lại' }));
     expect(run.restart).toHaveBeenCalledTimes(1);

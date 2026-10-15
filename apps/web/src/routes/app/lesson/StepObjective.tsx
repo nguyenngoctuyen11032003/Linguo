@@ -16,9 +16,9 @@ export function StepObjective({ lesson }: { lesson: LessonPayload['lesson'] }) {
       ))}
       {lesson.objectives.length > 0 && (
         <section aria-labelledby="lesson-objectives" className="space-y-2">
-          <h2 id="lesson-objectives" className="text-base font-bold">
+          <h3 id="lesson-objectives" className="text-base font-bold">
             Mục tiêu bài học
-          </h2>
+          </h3>
           <ul className="space-y-2">
             {lesson.objectives.map((objective, i) => (
               <li key={i} className="flex gap-3">

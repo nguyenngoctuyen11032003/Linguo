@@ -77,9 +77,9 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
 
       {result ? (
         <section aria-labelledby="lesson-stats" className="space-y-3 rounded-2xl border border-border bg-surface-solid p-4">
-          <h2 id="lesson-stats" className="text-base font-bold">
+          <h3 id="lesson-stats" className="text-base font-bold">
             Kết quả của bạn
-          </h2>
+          </h3>
           <dl className="grid grid-cols-3 gap-3">
             {STAGE_LABELS.map(([stage, label]) => {
               const accuracy = result.accuracy_by_stage[stage];
