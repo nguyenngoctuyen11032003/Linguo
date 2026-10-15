@@ -177,6 +177,17 @@ describe('useRoleplaySession', () => {
     expect(loadSession(USER, 'en')).toBeNull();
   });
 
+  it('resumes the saved session when the path language arrives after the first render', async () => {
+    await startedSession();
+    const hook = renderHook(({ language }: { language: string | null }) => useRoleplaySession(USER, language, language ? 'a2' : null), {
+      initialProps: { language: null as string | null },
+    });
+    expect(hook.result.current.session).toBeNull();
+    expect(loadSession(USER, 'en')).not.toBeNull(); // not cleared while the language is unknown
+    hook.rerender({ language: 'en' });
+    await waitFor(() => expect(hook.result.current.session?.messages).toHaveLength(1));
+  });
+
   it('drops a late answer after unmount', async () => {
     const gate = deferred<unknown>();
     mocks.invoke.mockReturnValueOnce(gate.promise);

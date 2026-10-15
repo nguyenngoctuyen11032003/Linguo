@@ -230,11 +230,13 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
 
       <p className="px-1 text-sm text-muted">{ROLEPLAY_AI_NOTE}</p>
 
-      <ol role="log" aria-label="Cuộc trò chuyện" aria-live="polite" aria-relevant="additions" className="space-y-3">
-        {session.messages.map((m) => (
-          <Bubble key={m.id} message={m} lang={lang} tts={tts} latestPartner={m.id === lastPartnerId} onReport={onReport} />
-        ))}
-      </ol>
+      <div role="log" aria-label="Cuộc trò chuyện" aria-live="polite" aria-relevant="additions">
+        <ol className="space-y-3">
+          {session.messages.map((m) => (
+            <Bubble key={m.id} message={m} lang={lang} tts={tts} latestPartner={m.id === lastPartnerId} onReport={onReport} />
+          ))}
+        </ol>
+      </div>
 
       <div aria-live="polite" aria-busy={loading || undefined}>
         {loading && <AiLoading label={session.messages.length === 0 ? 'Đối tác đang mở lời…' : 'Đối tác đang trả lời…'} />}

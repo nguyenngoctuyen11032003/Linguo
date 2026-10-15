@@ -1030,6 +1030,8 @@ function aiData(task: string, mode: AiMockMode, request: Row = {}): Record<strin
       };
     }
     // ==== END ai-more mocks ====
+    case 'roleplay_turn':
+      return roleplayTurnData(request, mode);
     case 'analyze_error':
       return {
         verdict: 'incorrect',
@@ -2494,3 +2496,45 @@ export async function mockPersonalVocab(page: Page, opts: PersonalVocabMockOptio
   };
 }
 // ==== END personal vocabulary mocks ==============================================================================
+
+// ==== BEGIN roleplay mocks (roleplay_turn answers of the ai-tutor function: apps/web/tests/e2e/roleplay.spec.ts) ====
+/**
+ * Deterministic partner for the role-play e2e tests, derived from the request only (called from aiData above).
+ * Goals are read from what the learner has said so far (history + message): a drink word reaches order_drink, a size
+ * word choose_size_or_extras, "pay"/"card"/"how much" pay. "I want" in the last message gets a gentle correction.
+ */
+function roleplayTurnData(request: Row, mode: AiMockMode): Record<string, unknown> {
+  const korean = request.language === 'ko';
+  const index = Number(request.turn_index ?? 0);
+  const message = String(request.learner_message ?? '');
+  if (index === 0) {
+    return {
+      partner_reply: korean ? '어서 오세요! 주문하시겠어요?' : 'Hi! Welcome to Sunny Café. What can I get you today?',
+      hint_vi: 'Hãy gọi một đồ uống.',
+      corrections: [],
+      goal_progress: [],
+      finished: false,
+    };
+  }
+  const history = (Array.isArray(request.history) ? request.history : []) as Row[];
+  const said = [...history.filter((h) => h.role === 'learner').map((h) => String(h.text)), message].join(' ').toLowerCase();
+  const goals: string[] = [];
+  if (/coffee|latte|tea/.test(said)) goals.push('order_drink');
+  if (/small|medium|large/.test(said)) goals.push('choose_size_or_extras');
+  if (/\bpay\b|card|how much/.test(said)) goals.push('pay');
+  const wants = /\bI want\b/.exec(message);
+  const done = goals.length >= 3;
+  return {
+    partner_reply:
+      mode === 'html'
+        ? AI_HTML_PAYLOAD
+        : done
+          ? 'That is four dollars. Enjoy your drink!'
+          : `Sure! That is turn ${index}. Anything else?`,
+    hint_vi: done ? null : 'Thử nói thêm về cỡ ly hoặc cách thanh toán.',
+    corrections: wants ? [{ original: wants[0], corrected: 'I would like', note_vi: 'Nói "I would like" nghe lịch sự hơn khi gọi đồ.' }] : [],
+    goal_progress: goals,
+    finished: done,
+  };
+}
+// ==== END roleplay mocks ==========================================================================================

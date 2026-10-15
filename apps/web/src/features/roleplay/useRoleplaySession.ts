@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AI_OUTPUT_SCHEMAS, findRoleplayScenario, type AiError, type AiRequestInput, type RoleplayScenario } from '@linguo/shared';
 import { useAiTutor, type AiTutorStatus } from '@/features/ai-tutor/useAiTutor';
 import {
@@ -58,6 +58,21 @@ export function useRoleplaySession(userId: string | null, language: string | nul
   const sessionRef = useRef(session);
   const pending = useRef<Pending | null>(null);
   const busy = useRef(false);
+
+  // The path (and so the language) can arrive after the first render: resume the saved session once it is known.
+  const restoredFor = useRef<string | null>(userId && language && session ? `${userId}:${language}` : null);
+  useEffect(() => {
+    if (!userId || !language) return;
+    const key = `${userId}:${language}`;
+    if (restoredFor.current === key) return;
+    restoredFor.current = key;
+    if (sessionRef.current) return;
+    const saved = loadSession(userId, language);
+    if (saved) {
+      sessionRef.current = saved;
+      setSession(saved);
+    }
+  }, [userId, language]);
 
   const commit = useCallback(
     (next: RoleplaySession | null) => {
