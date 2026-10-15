@@ -5,7 +5,7 @@ import type { RoleplaySession } from './session';
 // The last session is kept in sessionStorage (this tab only, gone when the tab closes) so a reload does not lose the
 // conversation. It is cleared when the learner finishes or leaves the session. Nothing here is sent anywhere.
 
-const KEY_PREFIX = 'linguo:roleplay:v1:';
+export const KEY_PREFIX = 'linguo:roleplay:v1:';
 
 const messageSchema = z.object({
   id: z.number().int(),

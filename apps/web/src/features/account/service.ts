@@ -1,6 +1,9 @@
-import { clearLessonCache } from '@/features/lesson-player/lessonCache';
-import { OUTBOX_CHANGE_EVENT, outboxKey } from '@/features/lesson-player/outbox';
-import { reviewOutboxKey } from '@/features/reviews/outbox';
+import { clearLessonCache, LESSON_CACHE_PREFIX } from '@/features/lesson-player/lessonCache';
+import { OUTBOX_CHANGE_EVENT, OUTBOX_KEY_PREFIX, outboxKey } from '@/features/lesson-player/outbox';
+import { REVIEW_OUTBOX_KEY_PREFIX, reviewOutboxKey } from '@/features/reviews/outbox';
+import { clearSession, KEY_PREFIX as ROLEPLAY_KEY_PREFIX } from '@/features/roleplay/storage';
+import { clearReflections, REFLECTION_KEY_PREFIX } from '@/features/speaking/ratings';
+import { DRAFT_KEY } from '@/routes/app/onboarding/useOnboardingDraft';
 import { isNetworkError } from '@/lib/network-error';
 import { removeKey } from '@/lib/storage';
 import type { AppSupabaseClient } from '@/lib/supabase';
@@ -54,14 +57,67 @@ export function downloadJson(data: unknown, fileName: string): void {
 }
 
 /**
- * After the account is gone: answers and grades still queued for it can never sync, and cached lessons must not
- * stay on the device.
+ * Every per-learner store this app keeps in the browser, by key prefix (localStorage and sessionStorage alike):
+ * lesson + review outboxes, cached lesson text, role-play conversation, speaking self-ratings. Keys are suffixed
+ * with the user id.
  */
+const LEARNER_KEY_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX, ROLEPLAY_KEY_PREFIX, REFLECTION_KEY_PREFIX];
+/** Per-device (not per-user) key that still holds a learner's input: the onboarding draft. */
+const LEARNER_EXACT_KEYS = [DRAFT_KEY];
+// Kept on purpose: non-personal device preferences (`linguo-theme`, `linguo-reduce-motion`), the recovery-pending
+// flag (no personal data) and the shared media cache (`linguo-media-v1`).
+
+function wipeStore(store: Storage): void {
+  const keys: string[] = [];
+  for (let i = 0; i < store.length; i += 1) {
+    const key = store.key(i);
+    if (key) keys.push(key);
+  }
+  for (const key of keys) {
+    if (LEARNER_EXACT_KEYS.includes(key) || LEARNER_KEY_PREFIXES.some((p) => key.startsWith(p))) store.removeItem(key);
+  }
+}
+
+/**
+ * Sign-out and account deletion: removes every per-learner client store, for ALL user ids, because the device is
+ * being handed over (queued, unsynced answers of this user are dropped too; sign-out already asked the learner to
+ * confirm when some were pending). Each store is wiped independently: one failing never stops the rest, and this
+ * never throws. `userId` additionally clears that user's keys by exact name in case enumeration fails.
+ */
+export function clearAllLocalLearnerData(userId?: string | null): void {
+  for (const read of [() => localStorage, () => sessionStorage]) {
+    try {
+      wipeStore(read());
+    } catch {
+      // Storage blocked: nothing readable is stored either.
+    }
+  }
+  if (userId) {
+    const exact: Array<() => void> = [
+      () => removeKey(outboxKey(userId)),
+      () => removeKey(reviewOutboxKey(userId)),
+      () => clearLessonCache(userId),
+      () => clearSession(userId),
+      () => clearReflections(userId),
+    ];
+    for (const fn of exact) {
+      try {
+        fn();
+      } catch {
+        // Keep going with the other stores.
+      }
+    }
+  }
+  try {
+    window.dispatchEvent(new Event(OUTBOX_CHANGE_EVENT));
+  } catch {
+    // No window: nothing is listening.
+  }
+}
+
+/** After the account is gone: nothing of it may stay on the device. */
 export function clearLocalAccountData(userId: string): void {
-  removeKey(outboxKey(userId));
-  removeKey(reviewOutboxKey(userId));
-  clearLessonCache(userId);
-  window.dispatchEvent(new Event(OUTBOX_CHANGE_EVENT));
+  clearAllLocalLearnerData(userId);
 }
 
 const MESSAGES: Record<string, string> = {

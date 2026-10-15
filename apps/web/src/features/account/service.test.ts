@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { AppSupabaseClient } from '@/lib/supabase';
-import { accountErrorMessage, DELETE_CONFIRM_PHRASE, deleteMyAccount, downloadJson, exportFileName, exportMyData } from './service';
+import { accountErrorMessage, clearAllLocalLearnerData, clearLocalAccountData, DELETE_CONFIRM_PHRASE, deleteMyAccount, downloadJson, exportFileName, exportMyData } from './service';
 
 function fakeClient(result: { data?: unknown; error?: unknown }) {
   const rpc = vi.fn(() => Promise.resolve({ data: result.data ?? null, error: result.error ?? null }));
@@ -61,5 +61,56 @@ describe('account service', () => {
     expect(accountErrorMessage({ message: 'TypeError: Failed to fetch', code: '' }, 'export')).toMatch(/Không kết nối/);
     expect(accountErrorMessage(new Error('boom'), 'export')).toBe('Chưa tải được dữ liệu. Vui lòng thử lại.');
     expect(accountErrorMessage(new Error('boom'), 'delete')).toBe('Chưa xoá được tài khoản. Vui lòng thử lại.');
+  });
+});
+
+describe('clearAllLocalLearnerData', () => {
+  const learnerKeys = [
+    'linguo-outbox-v1:u1',
+    'linguo-outbox-v1:u2',
+    'linguo-review-outbox-v1:u1',
+    'linguo-lesson-v1:u1:abc',
+    'linguo-speaking-v1:u1',
+    'linguo-speaking-v1:u2',
+    'linguo-onboarding-draft',
+  ];
+
+  afterEach(() => {
+    localStorage.clear();
+    sessionStorage.clear();
+  });
+
+  it('wipes every per-learner key for all users, in both storages, and keeps device preferences', () => {
+    for (const k of learnerKeys) localStorage.setItem(k, 'x');
+    sessionStorage.setItem('linguo:roleplay:v1:u1', 'chat');
+    sessionStorage.setItem('linguo:roleplay:v1:u2', 'chat');
+    localStorage.setItem('linguo-theme', 'dark');
+    localStorage.setItem('linguo-reduce-motion', 'true');
+    clearAllLocalLearnerData('u1');
+    for (const k of learnerKeys) expect(localStorage.getItem(k)).toBeNull();
+    expect(sessionStorage.length).toBe(0);
+    expect(localStorage.getItem('linguo-theme')).toBe('dark');
+    expect(localStorage.getItem('linguo-reduce-motion')).toBe('true');
+  });
+
+  it('works without a user id and is also what account deletion runs', () => {
+    localStorage.setItem('linguo-speaking-v1:u9', 'x');
+    clearLocalAccountData('u9');
+    expect(localStorage.getItem('linguo-speaking-v1:u9')).toBeNull();
+    sessionStorage.setItem('linguo:roleplay:v1:u3', 'x');
+    clearAllLocalLearnerData();
+    expect(sessionStorage.getItem('linguo:roleplay:v1:u3')).toBeNull();
+  });
+
+  it('never throws and still clears sessionStorage when localStorage is blocked', () => {
+    sessionStorage.setItem('linguo:roleplay:v1:u1', 'chat');
+    localStorage.setItem('linguo-speaking-v1:u1', 'x');
+    const original = Storage.prototype.removeItem;
+    vi.spyOn(Storage.prototype, 'removeItem').mockImplementation(function (this: Storage, key: string) {
+      if (this === localStorage) throw new Error('blocked');
+      original.call(this, key);
+    });
+    expect(() => clearAllLocalLearnerData('u1')).not.toThrow();
+    expect(sessionStorage.getItem('linguo:roleplay:v1:u1')).toBeNull();
   });
 });

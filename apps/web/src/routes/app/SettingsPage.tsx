@@ -10,7 +10,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
-import { clearLessonCache } from '@/features/lesson-player/lessonCache';
+import { clearAllLocalLearnerData } from '@/features/account/service';
 import { useOutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvider';
 import { releasePushOnSignOut } from '@/features/notifications/push';
 import { markLocalPreferenceEdit } from '@/features/preferences/local-edits';
@@ -181,9 +181,9 @@ export function SettingsPage() {
         }
         toast.show({ tone: 'error', message: 'Không đăng xuất được trên máy chủ, đã xoá phiên trên thiết bị này.' });
       }
-      // Queued answers and grades stay in their outboxes (sent when this user signs in here again), but the cached lesson text is
-      // only for offline reopening by this user and must not outlive the session on a shared device.
-      if (userId) clearLessonCache(userId);
+      // The device is handed over: drop every per-learner store (outboxes, cached lessons, role-play chat, speaking
+      // ratings, onboarding draft) for all users. Pending answers were already confirmed above.
+      clearAllLocalLearnerData(userId);
       navigate('/', { replace: true });
     } catch {
       toast.show({ tone: 'error', message: 'Không đăng xuất được. Vui lòng thử lại.' });
