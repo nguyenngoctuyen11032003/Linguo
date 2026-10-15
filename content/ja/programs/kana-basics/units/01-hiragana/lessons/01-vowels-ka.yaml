@@ -1,0 +1,262 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:hira-vowels-ka
+order_index: 1
+level: kana
+title:
+  vi: Nguyên âm あいうえお và hàng か
+objectives:
+  - vi: Đọc và viết năm nguyên âm あ い う え お.
+  - vi: Đọc và viết hàng か - か き く け こ.
+  - vi: Đọc hai từ đầu tiên いえ (ngôi nhà) và かお (khuôn mặt).
+estimated_minutes: 10
+skills: [reading, writing, listening]
+prerequisites: []
+items:
+  - item: ja:item:hira-a
+  - item: ja:item:hira-ka
+  - item: ja:item:ie
+  - item: ja:item:kao
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và viết được mười chữ Hiragana đầu tiên và đọc được hai từ いえ (ngôi nhà), かお (khuôn mặt).
+  - type: explain
+    text:
+      vi: Tiếng Nhật dùng ba loại chữ - Hiragana, Katakana và chữ Hán (Kanji). Hiragana là bảng chữ cơ bản nhất, dùng cho từ thuần Nhật và đuôi ngữ pháp. Mỗi chữ Hiragana là một nhịp (một âm tiết ngắn), không ghép từ chữ cái như tiếng Việt.
+  - type: explain
+    text:
+      vi: Bảng chữ xếp theo hàng và cột. Cột là năm nguyên âm あ (a), い (i), う (u), え (e), お (o). Hàng か là phụ âm k ghép với từng nguyên âm - か ka, き ki, く ku, け ke, こ ko.
+  - type: deep_explain
+    text:
+      vi: う gần "ư" của tiếng Việt, môi hầu như không tròn - nên く đọc gần "cư" chứ không phải "cu". え gần "ê", お gần "ô". Mỗi chữ dài đúng một nhịp, đọc đều nhau - いえ là hai nhịp "i-ê", かお là hai nhịp "ca-ô", không gộp thành "cao".
+  - type: example
+    target: いえ
+    target_lang: ja
+    translation:
+      vi: ngôi nhà
+    note:
+      vi: Hai chữ い (i) + え (e), đọc hai nhịp đều nhau.
+  - type: example
+    target: かお
+    target_lang: ja
+    translation:
+      vi: khuôn mặt
+    note:
+      vi: か (ka) + お (o). Đọc "ca-ô", không đọc "cao".
+  - type: example
+    target: あき
+    target_lang: ja
+    translation:
+      vi: mùa thu
+    note:
+      vi: あ (a) + き (ki).
+  - type: common_mistake
+    wrong: かあ
+    right: かお
+    target_lang: ja
+    note:
+      vi: あ và お trông gần giống nhau. お có thêm một chấm nhỏ phía trên bên phải - "khuôn mặt" là かお.
+  - type: common_mistake
+    wrong: いけ
+    right: いえ
+    target_lang: ja
+    note:
+      vi: Ngôi nhà là いえ với nguyên âm え (e). いけ có け (ke) là "cái ao" - nghĩa khác hẳn.
+  - type: summary
+    points:
+      - vi: Hiragana viết từng nhịp, mỗi chữ là một âm tiết ngắn.
+      - vi: あ a · い i · う u · え e · お o (う gần "ư", môi không tròn).
+      - vi: か ka · き ki · く ku · け ke · こ ko.
+      - vi: いえ là ngôi nhà, かお là khuôn mặt.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:hira1-mcq-o
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-a
+    prompt:
+      stem: Chữ nào đọc là "o" (gần "ô")?
+      stem_lang: vi
+      options:
+        - { id: m2q, text: あ, lang: ja }
+        - { id: z7k, text: お, lang: ja }
+        - { id: t4w, text: え, lang: ja }
+        - { id: c9p, text: う, lang: ja }
+    answer:
+      correct_option_id: z7k
+    explanation:
+      vi: お đọc "o" và có một chấm nhỏ phía trên bên phải. あ là "a" (không có chấm), え là "e", う là "u".
+    display_answer: お
+
+  - key: ja:exercise:hira1-mcq-ke
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-ka
+    prompt:
+      stem: Chữ け đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: h3d, text: ke, lang: vi }
+        - { id: r8s, text: ki, lang: vi }
+        - { id: b1n, text: ka, lang: vi }
+        - { id: w6u, text: ko, lang: vi }
+    answer:
+      correct_option_id: h3d
+    explanation:
+      vi: け là "ke" - hàng か (k) ghép với cột え (e). き là ki, か là ka, こ là ko.
+    display_answer: ke
+
+  - key: ja:exercise:hira1-listen-kao
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kao
+    prompt:
+      audio_asset_id: null
+      fallback_text: かお
+      options:
+        - { id: g5j, text: khuôn mặt, lang: vi }
+        - { id: e2v, text: ngôi nhà, lang: vi }
+        - { id: y7c, text: mùa thu, lang: vi }
+        - { id: o4l, text: tình yêu, lang: vi }
+    answer:
+      correct_option_id: g5j
+    explanation:
+      vi: かお (ka-o) là khuôn mặt. Ngôi nhà là いえ, mùa thu là あき, tình yêu là あい.
+    display_answer: khuôn mặt
+
+  - key: ja:exercise:hira1-build-ie
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ie
+    prompt:
+      instruction: Ghép các chữ thành từ có nghĩa "ngôi nhà".
+      tokens:
+        - { id: k1, text: え }
+        - { id: k2, text: け }
+        - { id: k3, text: い }
+        - { id: k4, text: あ }
+    answer:
+      orders:
+        - [k3, k1]
+    explanation:
+      vi: 'Ngôi nhà là いえ - い (i) rồi え (e). け là "ke", ghép いけ sẽ thành "cái ao".'
+    display_answer: いえ
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:hira1-fill-ka-row
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-ka
+    prompt:
+      template: "Hàng か: か き {{b1}} け {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [く]
+        b2: [こ]
+    known_wrong:
+      - answer: ku
+        feedback_vi: Hãy gõ bằng chữ Hiragana (く), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: ko
+        feedback_vi: Hãy gõ bằng chữ Hiragana (こ), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: う
+        feedback_vi: う là nguyên âm "u". Hàng か cần phụ âm k - く (ku).
+        error_tag: kana_row
+      - answer: お
+        feedback_vi: お là nguyên âm "o". Hàng か cần phụ âm k - こ (ko).
+        error_tag: kana_row
+    explanation:
+      vi: Hàng か đi theo thứ tự cột a-i-u-e-o - か ka, き ki, く ku, け ke, こ ko.
+    display_answer: く, こ
+
+  - key: ja:exercise:hira1-write-kao
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kao
+    prompt:
+      source_text: khuôn mặt
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - かお
+        - 顔
+    known_wrong:
+      - answer: かあ
+        feedback_vi: あ là "a". Khuôn mặt là かお với お ("o", có chấm nhỏ).
+        error_tag: kana_a_o
+      - answer: こお
+        feedback_vi: こ là "ko". Khuôn mặt bắt đầu bằng か (ka) - かお.
+        error_tag: kana_vowel
+      - answer: kao
+        feedback_vi: Hãy gõ bằng chữ Hiragana (かお), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Khuôn mặt là かお - か (ka) + お (o). Chữ Hán của từ này là 顔.
+    display_answer: かお
+
+  # ---------------- application ----------------
+  - key: ja:exercise:hira1-meaning-aki
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hira-ka
+    prompt:
+      source_text: あき
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - mùa thu
+        - thu
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: ngôi nhà
+        feedback_vi: Ngôi nhà là いえ. あき (a-ki) là mùa thu.
+        error_tag: vocab_meaning
+    explanation:
+      vi: あき đọc "a-ki", nghĩa là mùa thu.
+    display_answer: mùa thu
+
+  - key: ja:exercise:hira1-build-kaki
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-ka
+    prompt:
+      instruction: 'Ghép các chữ thành từ đọc là "kaki" (quả hồng).'
+      tokens:
+        - { id: p1, text: き }
+        - { id: p2, text: こ }
+        - { id: p3, text: か }
+        - { id: p4, text: く }
+        - { id: p5, text: あ }
+    answer:
+      orders:
+        - [p3, p1]
+    explanation:
+      vi: '"kaki" là か (ka) + き (ki) = かき. こ là ko, く là ku.'
+    display_answer: かき

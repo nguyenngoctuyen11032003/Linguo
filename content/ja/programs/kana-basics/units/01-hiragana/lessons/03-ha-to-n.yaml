@@ -1,0 +1,292 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:hira-ha-to-n
+order_index: 3
+level: kana
+title:
+  vi: Hàng は, ま, や, ら, わ và ん
+objectives:
+  - vi: Đọc và viết các hàng は, ま, や, ら, わ và chữ ん.
+  - vi: Phát âm đúng ふ (fu), âm r của tiếng Nhật và ん đứng cuối.
+  - vi: Đọc các từ はな, やま, さくら, わたし, ほん.
+estimated_minutes: 14
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:hira-sa-ta-na]
+items:
+  - item: ja:item:hira-ha
+  - item: ja:item:hira-ma
+  - item: ja:item:hira-ya
+  - item: ja:item:hira-ra
+  - item: ja:item:hira-wa
+  - item: ja:item:hana
+  - item: ja:item:yama
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được toàn bộ 46 chữ Hiragana cơ bản và các từ như はな (bông hoa), やま (ngọn núi), さくら (hoa anh đào).
+  - type: explain
+    text:
+      vi: Hàng は là phụ âm h - は ha, ひ hi, へ he, ほ ho; riêng ふ đọc "fu". Hàng ま là m - ま mi む め も. Hàng や chỉ có ba chữ - や ya, ゆ yu, よ yo.
+  - type: explain
+    text:
+      vi: Hàng ら là âm r của tiếng Nhật - ら ri る れ ろ. Cuối bảng là わ (wa), を (đọc "o", chỉ dùng làm trợ từ) và ん - âm "n" đứng cuối, tự nó là một nhịp.
+  - type: deep_explain
+    text:
+      vi: ふ không phải "phu" - tiếng Việt "ph" chạm răng vào môi dưới, còn ふ chỉ thổi hơi nhẹ qua hai môi. Âm r tiếng Nhật nằm giữa "r" và "l" - đầu lưỡi chạm nhẹ lợi trên một lần, không rung. ん được tính một nhịp riêng - ほん đọc hai nhịp "hô-n".
+  - type: example
+    target: はな
+    target_lang: ja
+    translation:
+      vi: bông hoa
+    note:
+      vi: は (ha) + な (na).
+  - type: example
+    target: やま
+    target_lang: ja
+    translation:
+      vi: ngọn núi
+    note:
+      vi: や (ya) + ま (ma).
+  - type: example
+    target: さくら
+    target_lang: ja
+    translation:
+      vi: hoa anh đào
+    note:
+      vi: さ (sa) + く (ku) + ら (ra) - ら đọc nhẹ, nằm giữa "ra" và "la".
+  - type: example
+    target: わたし
+    target_lang: ja
+    translation:
+      vi: tôi
+    note:
+      vi: わ (wa) + た (ta) + し (shi) - từ bạn sẽ dùng nhiều nhất khi giới thiệu bản thân.
+  - type: common_mistake
+    wrong: ほろ
+    right: ほん
+    target_lang: ja
+    note:
+      vi: Quyển sách là ほん với ん (n). ろ là "ro" - một nhịp có nguyên âm, còn ん chỉ là âm mũi "n" đứng cuối.
+  - type: common_mistake
+    wrong: はめ
+    right: はな
+    target_lang: ja
+    note:
+      vi: Bông hoa là はな với な (na). め là "me".
+  - type: summary
+    points:
+      - vi: は ha · ひ hi · ふ fu · へ he · ほ ho (ふ thổi hơi qua hai môi).
+      - vi: ま ma · み mi · む mu · め me · も mo; や ya · ゆ yu · よ yo.
+      - vi: ら ra · り ri · る ru · れ re · ろ ro (r nhẹ, giữa "r" và "l").
+      - vi: わ wa · を o (trợ từ) · ん n (một nhịp riêng).
+      - vi: はな bông hoa · やま ngọn núi · さくら hoa anh đào · わたし tôi · ほん quyển sách.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:hira3-mcq-fu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-ha
+    prompt:
+      stem: Chữ nào đọc là "fu"?
+      stem_lang: vi
+      options:
+        - { id: w2c, text: ふ, lang: ja }
+        - { id: i7v, text: ほ, lang: ja }
+        - { id: b4t, text: ひ, lang: ja }
+        - { id: o9z, text: む, lang: ja }
+    answer:
+      correct_option_id: w2c
+    explanation:
+      vi: ふ là "fu", chữ đặc biệt của hàng は. ほ là "ho", ひ là "hi", む là "mu".
+    display_answer: ふ
+
+  - key: ja:exercise:hira3-mcq-wo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-wa
+    prompt:
+      stem: Chữ nào đọc giống お ("o") nhưng chỉ dùng làm trợ từ?
+      stem_lang: vi
+      options:
+        - { id: c6n, text: を, lang: ja }
+        - { id: m3s, text: わ, lang: ja }
+        - { id: k8u, text: ん, lang: ja }
+        - { id: e1q, text: ろ, lang: ja }
+    answer:
+      correct_option_id: c6n
+    explanation:
+      vi: を đọc "o" như お, nhưng chỉ dùng làm trợ từ đứng sau tân ngữ. わ là "wa", ん là "n", ろ là "ro".
+    display_answer: を
+
+  - key: ja:exercise:hira3-listen-sakura
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-ra
+    prompt:
+      audio_asset_id: null
+      fallback_text: さくら
+      options:
+        - { id: t5f, text: hoa anh đào, lang: vi }
+        - { id: g1x, text: ngọn núi, lang: vi }
+        - { id: z4d, text: bông hoa, lang: vi }
+        - { id: p8j, text: quyển sách, lang: vi }
+    answer:
+      correct_option_id: t5f
+    explanation:
+      vi: さくら (sa-ku-ra) là hoa anh đào. Ngọn núi là やま, bông hoa nói chung là はな, quyển sách là ほん.
+    display_answer: hoa anh đào
+
+  - key: ja:exercise:hira3-build-yama
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:yama
+    prompt:
+      instruction: Ghép các chữ thành từ có nghĩa "ngọn núi".
+      tokens:
+        - { id: y1, text: ま }
+        - { id: y2, text: よ }
+        - { id: y3, text: も }
+        - { id: y4, text: や }
+    answer:
+      orders:
+        - [y4, y1]
+    explanation:
+      vi: 'Ngọn núi là やま - や (ya) + ま (ma). よ là "yo", も là "mo".'
+    display_answer: やま
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:hira3-fill-ha-row
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-ha
+    prompt:
+      template: "Hàng は: は {{b1}} ふ {{b2}} ほ"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [ひ]
+        b2: [へ]
+    known_wrong:
+      - answer: hi
+        feedback_vi: Hãy gõ bằng chữ Hiragana (ひ), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: he
+        feedback_vi: Hãy gõ bằng chữ Hiragana (へ), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: み
+        feedback_vi: み (mi) thuộc hàng ま. Hàng は có ひ (hi).
+        error_tag: kana_row
+    explanation:
+      vi: Hàng は đọc ha, hi, fu, he, ho - chỗ trống là ひ (hi) và へ (he).
+    display_answer: ひ, へ
+
+  - key: ja:exercise:hira3-write-hana
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hana
+    prompt:
+      source_text: bông hoa
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はな
+        - 花
+    known_wrong:
+      - answer: はめ
+        feedback_vi: め là "me". Bông hoa là はな với な (na).
+        error_tag: kana_shape
+      - answer: ほな
+        feedback_vi: ほ là "ho". Bông hoa bắt đầu bằng は (ha) - はな.
+        error_tag: kana_vowel
+      - answer: hana
+        feedback_vi: Hãy gõ bằng chữ Hiragana (はな), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Bông hoa là はな - は (ha) + な (na). Chữ Hán là 花.
+    display_answer: はな
+
+  # ---------------- application ----------------
+  - key: ja:exercise:hira3-meaning-watashi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hira-wa
+    prompt:
+      source_text: わたし
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - tôi
+        - mình
+        - em
+        - tớ
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: bạn
+        feedback_vi: わたし là "tôi" - người nói tự xưng, không phải "bạn".
+        error_tag: vocab_meaning
+    explanation:
+      vi: わたし (wa-ta-shi) là "tôi", cách tự xưng lịch sự phổ biến nhất.
+    display_answer: tôi
+
+  - key: ja:exercise:hira3-build-hon
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-wa
+    prompt:
+      instruction: 'Ghép các chữ thành từ đọc là "hon" (quyển sách).'
+      tokens:
+        - { id: h1, text: ん }
+        - { id: h2, text: ろ }
+        - { id: h3, text: ほ }
+        - { id: h4, text: は }
+        - { id: h5, text: の }
+    answer:
+      orders:
+        - [h3, h1]
+    explanation:
+      vi: '"hon" = ほ (ho) + ん (n). ろ là "ro", の là "no" - không dùng làm phần "n" cuối từ.'
+    display_answer: ほん
+
+  - key: ja:exercise:hira3-mcq-fune
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hira-ha
+    prompt:
+      stem: '"Con thuyền" tiếng Nhật đọc là "fune". Cách viết nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: a2r, text: ふね, lang: ja }
+        - { id: l7h, text: ほね, lang: ja }
+        - { id: u3y, text: ふぬ, lang: ja }
+        - { id: n6w, text: ひね, lang: ja }
+    answer:
+      correct_option_id: a2r
+    explanation:
+      vi: fu là ふ, ne là ね - ふね. ほね (hone) là xương, ぬ là "nu", ひ là "hi".
+    display_answer: ふね

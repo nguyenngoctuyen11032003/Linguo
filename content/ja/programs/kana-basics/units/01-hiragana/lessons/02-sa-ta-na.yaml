@@ -1,0 +1,297 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:hira-sa-ta-na
+order_index: 2
+level: kana
+title:
+  vi: Hàng さ, た, な
+objectives:
+  - vi: Đọc và viết ba hàng さ, た, な.
+  - vi: Nhớ ba chữ đọc khác quy luật - し (shi), ち (chi), つ (tsu).
+  - vi: Đọc các từ すし, いぬ, ねこ.
+estimated_minutes: 12
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:hira-vowels-ka]
+items:
+  - item: ja:item:hira-sa
+  - item: ja:item:hira-ta
+  - item: ja:item:hira-na
+  - item: ja:item:sushi
+  - item: ja:item:inu
+  - item: ja:item:neko
+  - item: ja:item:hira-a
+    role: reuse
+  - item: ja:item:hira-ka
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được thêm mười lăm chữ và các từ quen thuộc như すし (sushi), いぬ (con chó), ねこ (con mèo).
+  - type: explain
+    text:
+      vi: Hàng さ là phụ âm s - さ sa, す su, せ se, そ so; riêng し đọc "shi". Hàng た là phụ âm t - た ta, て te, と to; riêng ち đọc "chi" và つ đọc "tsu".
+  - type: explain
+    text:
+      vi: Hàng な là phụ âm n, đọc đều theo quy luật - な na, に ni, ぬ nu, ね ne, の no.
+  - type: deep_explain
+    text:
+      vi: し và ち là hai chữ người Việt hay đọc sai thành "xi", "ti". し gần "shi" (lưỡi lùi về sau, có hơi gió), ち gần "chi" của tiếng Việt. つ không có trong tiếng Việt - bạn bật "t" rồi trượt ngay sang "s", tất cả trong một nhịp "tsư".
+  - type: example
+    target: すし
+    target_lang: ja
+    translation:
+      vi: món sushi
+    note:
+      vi: す (su) + し (shi). す đọc rất nhẹ.
+  - type: example
+    target: いぬ
+    target_lang: ja
+    translation:
+      vi: con chó
+    note:
+      vi: い (i) + ぬ (nu).
+  - type: example
+    target: ねこ
+    target_lang: ja
+    translation:
+      vi: con mèo
+    note:
+      vi: ね (ne) + こ (ko).
+  - type: example
+    target: くつ
+    target_lang: ja
+    translation:
+      vi: đôi giày
+    note:
+      vi: く (ku) + つ (tsu) - つ bật "t" trước rồi mới tới "s".
+  - type: common_mistake
+    wrong: くす
+    right: くつ
+    target_lang: ja
+    note:
+      vi: Đôi giày là くつ với つ (tsu). す (su) không có tiếng "t" bật ở đầu.
+  - type: common_mistake
+    wrong: いめ
+    right: いぬ
+    target_lang: ja
+    note:
+      vi: ぬ (nu) có vòng xoắn nhỏ ở cuối nét, め (me) thì không. Con chó là いぬ.
+  - type: summary
+    points:
+      - vi: さ sa · し shi · す su · せ se · そ so.
+      - vi: た ta · ち chi · つ tsu · て te · と to.
+      - vi: な na · に ni · ぬ nu · ね ne · の no.
+      - vi: すし sushi · いぬ con chó · ねこ con mèo · くつ đôi giày.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:hira2-mcq-shi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-sa
+    prompt:
+      stem: Chữ nào đọc là "shi"?
+      stem_lang: vi
+      options:
+        - { id: q4b, text: し, lang: ja }
+        - { id: n8f, text: ち, lang: ja }
+        - { id: s2x, text: す, lang: ja }
+        - { id: j6r, text: つ, lang: ja }
+    answer:
+      correct_option_id: q4b
+    explanation:
+      vi: し là "shi", chữ đặc biệt của hàng さ. ち là "chi", す là "su", つ là "tsu".
+    display_answer: し
+
+  - key: ja:exercise:hira2-mcq-tsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-ta
+    prompt:
+      stem: Chữ つ đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: d3m, text: tsu, lang: vi }
+        - { id: u7a, text: su, lang: vi }
+        - { id: l1e, text: tu, lang: vi }
+        - { id: x5h, text: chi, lang: vi }
+    answer:
+      correct_option_id: d3m
+    explanation:
+      vi: つ thuộc hàng た nhưng đọc "tsu" - bật "t" rồi trượt sang "s". Không có âm "tu" trong bảng Hiragana; "su" là す.
+    display_answer: tsu
+
+  - key: ja:exercise:hira2-listen-neko
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:neko
+    prompt:
+      audio_asset_id: null
+      fallback_text: ねこ
+      options:
+        - { id: a9c, text: con mèo, lang: vi }
+        - { id: f2y, text: con chó, lang: vi }
+        - { id: v6k, text: đôi giày, lang: vi }
+        - { id: h8t, text: món sushi, lang: vi }
+    answer:
+      correct_option_id: a9c
+    explanation:
+      vi: ねこ (ne-ko) là con mèo. Con chó là いぬ, đôi giày là くつ, sushi là すし.
+    display_answer: con mèo
+
+  - key: ja:exercise:hira2-build-sushi
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:sushi
+    prompt:
+      instruction: Ghép các chữ thành từ "sushi".
+      tokens:
+        - { id: s1, text: し }
+        - { id: s2, text: ち }
+        - { id: s3, text: す }
+        - { id: s4, text: つ }
+    answer:
+      orders:
+        - [s3, s1]
+    explanation:
+      vi: 'sushi = す (su) + し (shi). つ là "tsu", ち là "chi".'
+    display_answer: すし
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:hira2-fill-ta-row
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-ta
+    prompt:
+      template: "Hàng た: た {{b1}} {{b2}} て と"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [ち]
+        b2: [つ]
+    known_wrong:
+      - answer: し
+        feedback_vi: し (shi) thuộc hàng さ. Hàng た có ち (chi).
+        error_tag: kana_row
+      - answer: す
+        feedback_vi: す (su) thuộc hàng さ. Hàng た có つ (tsu).
+        error_tag: kana_row
+      - answer: chi
+        feedback_vi: Hãy gõ bằng chữ Hiragana (ち), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: tsu
+        feedback_vi: Hãy gõ bằng chữ Hiragana (つ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Hàng た đọc ta, chi, tsu, te, to - hai chữ giữa là ち và つ.
+    display_answer: ち, つ
+
+  - key: ja:exercise:hira2-write-inu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:inu
+    prompt:
+      source_text: con chó
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - いぬ
+        - 犬
+    known_wrong:
+      - answer: いめ
+        feedback_vi: め là "me". Con chó là いぬ - ぬ có vòng xoắn ở cuối nét.
+        error_tag: kana_nu_me
+      - answer: ねこ
+        feedback_vi: ねこ là con mèo. Con chó là いぬ.
+        error_tag: vocab_meaning
+      - answer: inu
+        feedback_vi: Hãy gõ bằng chữ Hiragana (いぬ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Con chó là いぬ - い (i) + ぬ (nu). Chữ Hán là 犬.
+    display_answer: いぬ
+
+  # ---------------- application ----------------
+  - key: ja:exercise:hira2-meaning-kutsu
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hira-ta
+    prompt:
+      source_text: くつ
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - đôi giày
+        - giày
+        - giầy
+        - đôi giầy
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: con mèo
+        feedback_vi: Con mèo là ねこ. くつ (ku-tsu) là đôi giày.
+        error_tag: vocab_meaning
+    explanation:
+      vi: くつ đọc "ku-tsu", nghĩa là giày, đôi giày.
+    display_answer: đôi giày
+
+  - key: ja:exercise:hira2-build-neko
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:neko
+    prompt:
+      instruction: Ghép các chữ thành từ có nghĩa "con mèo".
+      tokens:
+        - { id: n1, text: こ }
+        - { id: n2, text: ぬ }
+        - { id: n3, text: め }
+        - { id: n4, text: ね }
+        - { id: n5, text: け }
+    answer:
+      orders:
+        - [n4, n1]
+    explanation:
+      vi: 'Con mèo là ねこ - ね (ne) + こ (ko). ぬ là "nu", め là "me", け là "ke".'
+    display_answer: ねこ
+
+  - key: ja:exercise:hira2-mcq-read
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hira-sa
+    prompt:
+      stem: Bạn thấy biển hiệu ghi "すし". Cách đọc nào đúng?
+      stem_lang: vi
+      options:
+        - { id: r3w, text: sushi, lang: vi }
+        - { id: k9p, text: suchi, lang: vi }
+        - { id: e5g, text: tsushi, lang: vi }
+        - { id: y1m, text: sashi, lang: vi }
+    answer:
+      correct_option_id: r3w
+    explanation:
+      vi: す là "su", し là "shi" - すし đọc "sushi". "chi" là ち, "tsu" là つ, "sa" là さ.
+    display_answer: sushi

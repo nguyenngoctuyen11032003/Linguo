@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+key: ja:program:kana-basics
+language: ja
+title:
+  vi: Kana và giao tiếp nền tảng
+description:
+  vi: Hai bảng chữ Hiragana và Katakana (âm đục, âm ghép, âm ngắt, trường âm, từ ngoại lai) rồi giao tiếp đầu tiên - chào hỏi và giới thiệu, số đếm và thời gian, sinh hoạt hằng ngày, ăn uống và mua sắm (Kana đến N5). Câu tiếng Nhật trong bài viết bằng kana để bạn đọc được ngay; chữ Hán xem trên thẻ từ vựng.
+kind: core
+goal_types: []
+level_from: kana
+level_to: n5
+order_index: 1

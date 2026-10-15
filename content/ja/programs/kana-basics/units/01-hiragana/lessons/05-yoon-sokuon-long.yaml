@@ -1,0 +1,299 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:hira-yoon-sokuon-long
+order_index: 5
+level: kana
+title:
+  vi: Âm ghép, âm ngắt っ và trường âm
+objectives:
+  - vi: Đọc âm ghép với ゃ ゅ ょ viết nhỏ (きゃ, しゅ, ちょ…).
+  - vi: Đọc và viết âm ngắt っ (きって, がっこう).
+  - vi: Phân biệt nguyên âm ngắn và dài (おばさん / おばあさん).
+estimated_minutes: 14
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:hira-dakuten]
+items:
+  - item: ja:item:hira-yoon
+  - item: ja:item:hira-sokuon
+  - item: ja:item:hira-long-vowel
+  - item: ja:item:kitte
+  - item: ja:item:densha
+  - item: ja:item:hira-ya
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được mọi kiểu viết của Hiragana - âm ghép, âm ngắt và trường âm - qua các từ でんしゃ (tàu điện), きって (con tem), おばあさん (bà).
+  - type: explain
+    text:
+      vi: Âm ghép là chữ cột い (き, し, ち, に, ひ, み, り và các chữ có dấu) cộng với ゃ, ゅ, ょ viết nhỏ, đọc lướt thành một nhịp - きゃ kya, しゅ shu, ちょ cho. Chữ nhỏ hay to làm đổi cách đọc - きや là hai nhịp "ki-ya", きゃ chỉ một nhịp.
+  - type: explain
+    text:
+      vi: っ (つ viết nhỏ) không đọc thành tiếng mà giữ im một nhịp, rồi bật mạnh phụ âm sau - きって "kit-tê". Nguyên âm dài kéo dài thêm một nhịp - おかあさん (mẹ), おにいさん (anh trai); cột え thường thêm い (せんせい), cột お thường thêm う (がっこう).
+  - type: deep_explain
+    text:
+      vi: Tiếng Nhật đếm theo nhịp, nên っ, ん và phần kéo dài đều chiếm trọn một nhịp. Thiếu hay thừa một nhịp có thể đổi nghĩa - きて (hãy đến) / きって (con tem), おばさん (cô, dì) / おばあさん (bà). えい và おう khi nói tự nhiên đọc thành "ê" dài và "ô" dài, không đọc tách "ê-i", "ô-u".
+  - type: example
+    target: でんしゃ
+    target_lang: ja
+    translation:
+      vi: tàu điện
+    note:
+      vi: で + ん + しゃ - しゃ đọc một nhịp "sha".
+  - type: example
+    target: きって
+    target_lang: ja
+    translation:
+      vi: con tem
+    note:
+      vi: Dừng một nhịp ở っ trước て - "kit-tê".
+  - type: example
+    target: おばあさん
+    target_lang: ja
+    translation:
+      vi: bà
+    note:
+      vi: ばあ kéo dài - "ô-ba-a-xan".
+  - type: example
+    target: がっこう
+    target_lang: ja
+    translation:
+      vi: trường học
+    note:
+      vi: Có cả っ (ngắt trước こ) và trường âm こう ("cô" dài) - "gak-kô-ô".
+  - type: common_mistake
+    wrong: でんしや
+    right: でんしゃ
+    target_lang: ja
+    note:
+      vi: Âm ghép viết ゃ nhỏ. でんしや với や to sẽ đọc thành bốn nhịp "đen-shi-ya".
+  - type: common_mistake
+    wrong: きて
+    right: きって
+    target_lang: ja
+    note:
+      vi: Con tem là きって, có っ nhỏ để ngắt một nhịp. きて nghĩa là "hãy đến".
+  - type: common_mistake
+    wrong: おばさん
+    right: おばあさん
+    target_lang: ja
+    note:
+      vi: Muốn nói "bà" phải kéo dài ばあ. おばさん (ba ngắn) là "cô, dì".
+  - type: summary
+    points:
+      - vi: Chữ cột い + ゃ/ゅ/ょ nhỏ = một nhịp (きゃ kya, しゅ shu, ちょ cho).
+      - vi: っ nhỏ - im một nhịp, bật mạnh phụ âm sau (きって).
+      - vi: Trường âm - thêm あ/い/う; cột え thêm い, cột お thêm う (せんせい, がっこう).
+      - vi: でんしゃ tàu điện · きって con tem · おばあさん bà · がっこう trường học.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:hira5-mcq-kya
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-yoon
+    prompt:
+      stem: Cách viết nào đọc là một nhịp "kya"?
+      stem_lang: vi
+      options:
+        - { id: m4z, text: きゃ, lang: ja }
+        - { id: a1p, text: きや, lang: ja }
+        - { id: u6c, text: かや, lang: ja }
+        - { id: i9g, text: きょ, lang: ja }
+    answer:
+      correct_option_id: m4z
+    explanation:
+      vi: きゃ dùng ゃ nhỏ nên đọc một nhịp "kya". きや (や to) là hai nhịp "ki-ya"; きょ là "kyo".
+    display_answer: きゃ
+
+  - key: ja:exercise:hira5-mcq-sokuon
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-sokuon
+    prompt:
+      stem: Chữ っ nhỏ trong きって có tác dụng gì?
+      stem_lang: vi
+      options:
+        - { id: b5s, text: Ngắt một nhịp rồi bật mạnh phụ âm t phía sau, lang: vi }
+        - { id: h2w, text: Đọc thành "tsu" như つ, lang: vi }
+        - { id: e7k, text: Kéo dài nguyên âm い phía trước, lang: vi }
+        - { id: z3m, text: "Không có tác dụng gì, có thể bỏ đi", lang: vi }
+    answer:
+      correct_option_id: b5s
+    explanation:
+      vi: っ nhỏ không đọc thành tiếng mà giữ im một nhịp, rồi bật mạnh phụ âm sau - "kit-tê". Bỏ っ thì thành きて (hãy đến), nghĩa khác.
+    display_answer: Ngắt một nhịp rồi bật mạnh phụ âm t phía sau
+
+  - key: ja:exercise:hira5-listen-obaasan
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-long-vowel
+    prompt:
+      audio_asset_id: null
+      fallback_text: おばあさん
+      options:
+        - { id: k2y, text: bà, lang: vi }
+        - { id: r6q, text: "cô, dì", lang: vi }
+        - { id: n1d, text: mẹ, lang: vi }
+        - { id: t8x, text: anh trai, lang: vi }
+    answer:
+      correct_option_id: k2y
+    explanation:
+      vi: おばあさん có ばあ kéo dài - nghĩa là "bà". おばさん (ngắn) là cô, dì; mẹ là おかあさん, anh trai là おにいさん.
+    display_answer: bà
+
+  - key: ja:exercise:hira5-build-densha
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:densha
+    prompt:
+      instruction: Ghép các chữ thành từ có nghĩa "tàu điện" (densha).
+      tokens:
+        - { id: e1, text: ゃ }
+        - { id: e2, text: し }
+        - { id: e3, text: ん }
+        - { id: e4, text: で }
+        - { id: e5, text: や }
+        - { id: e6, text: て }
+    answer:
+      orders:
+        - [e4, e3, e2, e1]
+    explanation:
+      vi: 'densha = で (de) + ん (n) + しゃ (sha). しゃ ghép し với ゃ nhỏ; dùng や to sẽ thành "shi-ya".'
+    display_answer: でんしゃ
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:hira5-fill-long
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-long-vowel
+    prompt:
+      template: "Bà - おば{{b1}}さん. Giáo viên - せんせ{{b2}}."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [あ]
+        b2: [い]
+    known_wrong:
+      - answer: お
+        feedback_vi: ば thuộc cột あ, nên kéo dài bằng あ - おばあさん.
+        error_tag: long_vowel
+      - answer: え
+        feedback_vi: Cột え thường kéo dài bằng い - せんせい, dù khi nói nghe như "ê" dài.
+        error_tag: long_vowel
+      - answer: う
+        feedback_vi: う dùng để kéo dài cột う và cột お. せんせい kéo dài bằng い.
+        error_tag: long_vowel
+    explanation:
+      vi: Nguyên âm dài viết thêm chữ cùng cột - ばあ (cột あ). Riêng cột え thường thêm い - せんせい, đọc "xen-xê-ê".
+    display_answer: あ, い
+
+  - key: ja:exercise:hira5-write-kitte
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kitte
+    prompt:
+      source_text: con tem
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きって
+        - 切手
+    known_wrong:
+      - answer: きて
+        feedback_vi: Thiếu っ nhỏ - きて là "hãy đến". Con tem là きって.
+        error_tag: missing_sokuon
+      - answer: きつて
+        feedback_vi: つ phải viết nhỏ (っ) để ngắt nhịp. きつて sẽ đọc "ki-tsu-tê".
+        error_tag: sokuon_size
+      - answer: kitte
+        feedback_vi: Hãy gõ bằng chữ Hiragana (きって), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Con tem là きって - き + っ (ngắt một nhịp) + て. Chữ Hán là 切手.
+    display_answer: きって
+
+  # ---------------- application ----------------
+  - key: ja:exercise:hira5-meaning-gakkou
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hira-sokuon
+    prompt:
+      source_text: がっこう
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - trường học
+        - trường
+        - ngôi trường
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: tàu điện
+        feedback_vi: Tàu điện là でんしゃ. がっこう (gak-kô) là trường học.
+        error_tag: vocab_meaning
+    explanation:
+      vi: がっこう đọc "gak-kô-ô" - có っ ngắt nhịp và こう kéo dài - nghĩa là trường học.
+    display_answer: trường học
+
+  - key: ja:exercise:hira5-mcq-ocha
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hira-yoon
+    prompt:
+      stem: '"Trà" tiếng Nhật đọc là "ocha" (hai nhịp). Cách viết nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: p7v, text: おちゃ, lang: ja }
+        - { id: g3b, text: おちや, lang: ja }
+        - { id: w8r, text: おっちゃ, lang: ja }
+        - { id: c1h, text: おしゃ, lang: ja }
+    answer:
+      correct_option_id: p7v
+    explanation:
+      vi: '"cha" là ち + ゃ nhỏ - おちゃ có hai nhịp お và ちゃ. おちや có や to (ba nhịp), おっちゃ thừa っ, しゃ là "sha".'
+    display_answer: おちゃ
+
+  - key: ja:exercise:hira5-build-gakkou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hira-sokuon
+    prompt:
+      instruction: 'Ghép các chữ thành từ "gakkō" (trường học).'
+      tokens:
+        - { id: g1, text: う }
+        - { id: g2, text: こ }
+        - { id: g3, text: っ }
+        - { id: g4, text: が }
+        - { id: g5, text: つ }
+        - { id: g6, text: お }
+    answer:
+      orders:
+        - [g4, g3, g2, g1]
+    explanation:
+      vi: 'がっこう = が + っ (nhỏ, ngắt nhịp) + こう (kéo dài cột お bằng う). Dùng つ to sẽ đọc thành "tsu"; kéo dài こ bằng お là cách viết sai.'
+    display_answer: がっこう

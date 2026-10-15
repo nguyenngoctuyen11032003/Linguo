@@ -1,0 +1,289 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:hira-dakuten
+order_index: 4
+level: kana
+title:
+  vi: Âm đục ゛ và âm bán đục ゜
+objectives:
+  - vi: Đổi k→g, s→z, t→d, h→b bằng dấu ゛ (dakuten).
+  - vi: Đổi h→p bằng vòng tròn ゜ (handakuten).
+  - vi: Đọc các từ かぎ, かばん, えんぴつ.
+estimated_minutes: 12
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:hira-ha-to-n]
+items:
+  - item: ja:item:hira-dakuten
+  - item: ja:item:hira-handakuten
+  - item: ja:item:kagi
+  - item: ja:item:kaban
+  - item: ja:item:hira-ka
+    role: reuse
+  - item: ja:item:hira-ha
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được 25 chữ có dấu ゛ và ゜, và các từ như かぎ (chìa khóa), かばん (cái cặp).
+  - type: explain
+    text:
+      vi: Thêm hai chấm ゛ vào góc trên bên phải là phụ âm đổi thành âm "đục" (rung cổ họng) - か→が (ga), さ→ざ (za), た→だ (da), は→ば (ba). Cả hàng đổi theo - ぎ gi, ぐ gu, げ ge, ご go…
+  - type: explain
+    text:
+      vi: Riêng hàng は còn có vòng tròn nhỏ ゜ để thành âm p - ぱ pa, ぴ pi, ぷ pu, ぺ pe, ぽ po.
+  - type: deep_explain
+    text:
+      vi: だ, で, ど đọc như "đ" tiếng Việt (đa, đê, đô), không phải "d". ざ là "z" rung, gần "d" của giọng Hà Nội. じ và ぢ cùng đọc "ji", ず và づ cùng đọc "zu"; thông thường bạn viết じ và ず, ぢ/づ chỉ xuất hiện trong một số ít từ.
+  - type: example
+    target: かぎ
+    target_lang: ja
+    translation:
+      vi: chìa khóa
+    note:
+      vi: か (ka) + ぎ (gi) - き thêm ゛ thành ぎ.
+  - type: example
+    target: かばん
+    target_lang: ja
+    translation:
+      vi: cái cặp
+    note:
+      vi: か + ば (ba) + ん - は thêm ゛ thành ば.
+  - type: example
+    target: えんぴつ
+    target_lang: ja
+    translation:
+      vi: bút chì
+    note:
+      vi: え + ん + ぴ (pi) + つ - ひ thêm ゜ thành ぴ.
+  - type: common_mistake
+    wrong: かき
+    right: かぎ
+    target_lang: ja
+    note:
+      vi: Chìa khóa là かぎ, có hai chấm ゛. かき (không có dấu) là quả hồng.
+  - type: common_mistake
+    wrong: かぱん
+    right: かばん
+    target_lang: ja
+    note:
+      vi: Cái cặp là かばん với ば (hai chấm, "ba"). ぱ có vòng tròn là "pa".
+  - type: summary
+    points:
+      - vi: ゛ đổi k→g, s→z, t→d, h→b (が ざ だ ば).
+      - vi: ゜ chỉ đi với hàng は, đổi h→p (ぱ ぴ ぷ ぺ ぽ).
+      - vi: だ đọc "đa"; じ = ぢ "ji", ず = づ "zu" (thường viết じ, ず).
+      - vi: かぎ chìa khóa · かばん cái cặp · えんぴつ bút chì.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:hira4-mcq-ga
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-dakuten
+    prompt:
+      stem: Chữ nào đọc là "ga"?
+      stem_lang: vi
+      options:
+        - { id: h2k, text: が, lang: ja }
+        - { id: v8e, text: か, lang: ja }
+        - { id: s5m, text: ざ, lang: ja }
+        - { id: q1b, text: ぱ, lang: ja }
+    answer:
+      correct_option_id: h2k
+    explanation:
+      vi: が là か thêm dấu ゛, đọc "ga". か (không dấu) là "ka", ざ là "za", ぱ là "pa".
+    display_answer: が
+
+  - key: ja:exercise:hira4-mcq-pa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hira-handakuten
+    prompt:
+      stem: Chữ ぽ đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: c7r, text: po, lang: vi }
+        - { id: j3n, text: bo, lang: vi }
+        - { id: t9w, text: ho, lang: vi }
+        - { id: f4x, text: fo, lang: vi }
+    answer:
+      correct_option_id: c7r
+    explanation:
+      vi: ぽ là ほ thêm vòng tròn ゜ nên đọc "po". ぼ (hai chấm) là "bo", ほ (không dấu) là "ho".
+    display_answer: po
+
+  - key: ja:exercise:hira4-listen-kagi
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kagi
+    prompt:
+      audio_asset_id: null
+      fallback_text: かぎ
+      options:
+        - { id: o5d, text: chìa khóa, lang: vi }
+        - { id: e8h, text: quả hồng, lang: vi }
+        - { id: w1j, text: cái cặp, lang: vi }
+        - { id: g6v, text: bút chì, lang: vi }
+    answer:
+      correct_option_id: o5d
+    explanation:
+      vi: かぎ (ka-gi) là chìa khóa. Quả hồng là かき (ka-ki) - chỉ khác âm "g" và "k".
+    display_answer: chìa khóa
+
+  - key: ja:exercise:hira4-build-kaban
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kaban
+    prompt:
+      instruction: Ghép các chữ thành từ có nghĩa "cái cặp".
+      tokens:
+        - { id: b1, text: ば }
+        - { id: b2, text: ん }
+        - { id: b3, text: ぱ }
+        - { id: b4, text: か }
+        - { id: b5, text: が }
+    answer:
+      orders:
+        - [b4, b1, b2]
+    explanation:
+      vi: 'Cái cặp là かばん - か (ka) + ば (ba) + ん (n). ぱ là "pa", が là "ga".'
+    display_answer: かばん
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:hira4-fill-voiced
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hira-dakuten
+    prompt:
+      template: "Thêm ゛: さ → {{b1}}, た → {{b2}}, は → {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+        - { id: b3, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [ざ]
+        b2: [だ]
+        b3: [ば]
+    known_wrong:
+      - answer: ぱ
+        feedback_vi: ぱ có vòng tròn ゜ ("pa"). Thêm hai chấm ゛ vào は là ば ("ba").
+        error_tag: dakuten_handakuten
+      - answer: za
+        feedback_vi: Hãy gõ bằng chữ Hiragana (ざ), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: da
+        feedback_vi: Hãy gõ bằng chữ Hiragana (だ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Dấu ゛ đổi s→z (ざ), t→d (だ), h→b (ば). Vòng tròn ゜ mới đổi h→p (ぱ).
+    display_answer: ざ, だ, ば
+
+  - key: ja:exercise:hira4-write-kagi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kagi
+    prompt:
+      source_text: chìa khóa
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - かぎ
+        - 鍵
+    known_wrong:
+      - answer: かき
+        feedback_vi: かき (không dấu) là quả hồng. Chìa khóa cần dấu ゛ - かぎ.
+        error_tag: missing_dakuten
+      - answer: がぎ
+        feedback_vi: Chỉ chữ thứ hai có dấu ゛ - かぎ (ka-gi).
+        error_tag: extra_dakuten
+      - answer: kagi
+        feedback_vi: Hãy gõ bằng chữ Hiragana (かぎ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Chìa khóa là かぎ - か (ka) + ぎ (gi). Chữ Hán là 鍵.
+    display_answer: かぎ
+
+  # ---------------- application ----------------
+  - key: ja:exercise:hira4-meaning-enpitsu
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hira-handakuten
+    prompt:
+      source_text: えんぴつ
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - bút chì
+        - cây bút chì
+        - cái bút chì
+        - viết chì
+        - cây viết chì
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: cái cặp
+        feedback_vi: Cái cặp là かばん. えんぴつ (en-pi-tsu) là bút chì.
+        error_tag: vocab_meaning
+    explanation:
+      vi: えんぴつ đọc "en-pi-tsu", nghĩa là bút chì. ぴ là ひ thêm vòng tròn ゜.
+    display_answer: bút chì
+
+  - key: ja:exercise:hira4-mcq-sanpo
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hira-handakuten
+    prompt:
+      stem: '"Đi dạo" tiếng Nhật đọc là "sanpo". Cách viết nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: x2n, text: さんぽ, lang: ja }
+        - { id: d6s, text: さんぼ, lang: ja }
+        - { id: k4f, text: さんほ, lang: ja }
+        - { id: r9a, text: ざんぽ, lang: ja }
+    answer:
+      correct_option_id: x2n
+    explanation:
+      vi: '"po" là ほ thêm vòng tròn ゜ - ぽ, nên viết さんぽ. ぼ là "bo", ほ là "ho", ざ là "za".'
+    display_answer: さんぽ
+
+  - key: ja:exercise:hira4-build-denwa
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hira-dakuten
+    prompt:
+      instruction: 'Ghép các chữ thành từ đọc là "denwa" (điện thoại).'
+      tokens:
+        - { id: d1, text: わ }
+        - { id: d2, text: て }
+        - { id: d3, text: ん }
+        - { id: d4, text: で }
+        - { id: d5, text: は }
+    answer:
+      orders:
+        - [d4, d3, d1]
+    explanation:
+      vi: '"denwa" = で (de) + ん (n) + わ (wa). て (không dấu) là "te"; は chỉ đọc "wa" khi làm trợ từ, trong từ vựng "wa" viết わ.'
+    display_answer: でんわ
