@@ -1,6 +1,6 @@
 -- Japanese (ja) as the third learnable language: every language CHECK and RPC validation admits ja (and still
 -- rejects unknown codes), JLPT levels and goals, the jlpt exam family end to end, diagnostic level mapping.
--- Migration: 20261017000300_japanese.sql.
+-- Migration: 20261017000900_japanese.sql.
 begin;
 create extension if not exists pgtap with schema extensions;
 select plan(53);
