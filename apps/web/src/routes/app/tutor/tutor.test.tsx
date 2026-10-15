@@ -141,6 +141,20 @@ describe('TutorPage', () => {
     expect(mocks.calls).toHaveLength(1);
   });
 
+  it('does not ask again when the acknowledgement was still loading at submit time', async () => {
+    mocks.notice = { ...notice(false), status: 'loading' };
+    render();
+    await ask('present perfect');
+    expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument();
+    expect(mocks.calls).toHaveLength(0);
+    mocks.notice = notice(true);
+    // Any re-render picks up the loaded acknowledgement (the mock hook reads it on each render).
+    await userEvent.click(screen.getByRole('tab', { name: 'Tạo bài luyện' }));
+    expect(mocks.calls).toEqual([expect.objectContaining({ task: 'explain_concept', concept: 'present perfect' })]);
+    expect(mocks.calls).toHaveLength(1);
+    expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument();
+  });
+
   it('does not ask when the notice is dismissed', async () => {
     mocks.notice = notice(false);
     render();

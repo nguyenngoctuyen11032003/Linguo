@@ -70,7 +70,16 @@ function useGatedRun(ai: UseAiTutor, notice: ReturnType<typeof useAiNotice>) {
     if (req) void ai.run(req);
     return true;
   };
-  return { start, accept, pending, cancel: () => setPending(null), lastRef };
+  // Asked before the acknowledgement had loaded: a learner who already acknowledged is not asked again.
+  const run = ai.run;
+  useEffect(() => {
+    if (!pending || !notice.acknowledged) return;
+    setPending(null);
+    void run(pending);
+  }, [pending, notice.acknowledged, run]);
+  // The notice only opens once it is known that the learner has not acknowledged it yet.
+  const asking = pending !== null && !notice.acknowledged && notice.status !== 'loading';
+  return { start, accept, pending, asking, cancel: () => setPending(null), lastRef };
 }
 
 /** Records each successful answer once, newest first. */
@@ -400,7 +409,7 @@ function ExplainTab({ language, level, notice, quota, onReport }: PanelProps) {
           )
         }
       />
-      <AiNoticeDialog open={gate.pending !== null} onAccept={gate.accept} onClose={gate.cancel} />
+      <AiNoticeDialog open={gate.asking} onAccept={gate.accept} onClose={gate.cancel} />
     </>
   );
 }
@@ -460,7 +469,7 @@ function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
           </form>
         }
       />
-      <AiNoticeDialog open={gate.pending !== null} onAccept={gate.accept} onClose={gate.cancel} />
+      <AiNoticeDialog open={gate.asking} onAccept={gate.accept} onClose={gate.cancel} />
     </>
   );
 }
@@ -527,7 +536,7 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
           </form>
         }
       />
-      <AiNoticeDialog open={gate.pending !== null} onAccept={gate.accept} onClose={gate.cancel} />
+      <AiNoticeDialog open={gate.asking} onAccept={gate.accept} onClose={gate.cancel} />
     </>
   );
 }
