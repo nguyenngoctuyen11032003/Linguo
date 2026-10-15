@@ -1,13 +1,13 @@
 import { act, render, screen } from '@testing-library/react';
 import type { Session } from '@supabase/supabase-js';
-import { MemoryRouter, Route, Routes } from 'react-router';
+import { MemoryRouter, Route, Routes, useLocation } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { AppSupabaseClient } from '@/lib/supabase';
 import { AuthContext, AuthProvider, useAuth, type AuthState } from './AuthProvider';
 import { authErrorMessage, isKnownAuthErrorCode } from './error-map';
 import { RedirectIfAuthed, RequireAuth } from './guards';
 import { clearRecovery, isRecoveryPending, markRecoveryPending } from './recovery';
-import { safeNext } from './safe-next';
+import { safeNext, withNext } from './safe-next';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 describe('authErrorMessage', () => {
@@ -65,6 +65,13 @@ describe('safeNext', () => {
     }
     expect(safeNext('/dang-nhap', '/')).toBe('/');
     expect(safeNext('/dang-nhap-sau')).toBe('/dang-nhap-sau');
+  });
+});
+
+describe('withNext', () => {
+  it('adds next only when it is not the default destination', () => {
+    expect(withNext('/dang-ky', '/app')).toBe('/dang-ky');
+    expect(withNext('/auth/callback', '/app/lop-hoc?ma=AB12')).toBe('/auth/callback?next=%2Fapp%2Flop-hoc%3Fma%3DAB12');
   });
 });
 
@@ -188,6 +195,26 @@ describe('guards', () => {
   it('RequireAuth sends signed-out users to sign in', () => {
     renderGuarded(signedOut, '/app');
     expect(screen.getByText('Trang đăng nhập')).toBeInTheDocument();
+  });
+
+  it('RequireAuth keeps the path, query and section hash in next', () => {
+    let seen = '';
+    function Spy() {
+      const location = useLocation();
+      seen = location.search;
+      return <p>Trang đăng nhập</p>;
+    }
+    render(
+      <AuthContext.Provider value={signedOut}>
+        <MemoryRouter initialEntries={['/app/cai-dat?x=1#lo-trinh']}>
+          <Routes>
+            <Route path="/app/cai-dat" element={<RequireAuth><p>Cài đặt</p></RequireAuth>} />
+            <Route path="/dang-nhap" element={<Spy />} />
+          </Routes>
+        </MemoryRouter>
+      </AuthContext.Provider>,
+    );
+    expect(new URLSearchParams(seen).get('next')).toBe('/app/cai-dat?x=1#lo-trinh');
   });
 
   it('RedirectIfAuthed sends signed-in users to a safe next', () => {

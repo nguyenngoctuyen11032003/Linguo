@@ -11,7 +11,8 @@ export function RequireAuth({ children }: { children: ReactNode }) {
   if (auth.status === 'unconfigured') return <NotConfigured />;
   if (auth.status === 'loading') return <FullScreenLoader />;
   if (auth.status === 'signed-out') {
-    const next = encodeURIComponent(location.pathname + location.search);
+    // The hash is kept too: links such as /app/cai-dat#lo-trinh open a specific section after sign-in.
+    const next = encodeURIComponent(location.pathname + location.search + location.hash);
     return <Navigate to={`/dang-nhap?next=${next}`} replace />;
   }
   return <>{children}</>;
