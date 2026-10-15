@@ -1,7 +1,9 @@
 ﻿import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { ToastProvider } from '@/components/ui/Toast';
 import { InstallAppSection } from './InstallAppSection';
+import { NotificationOpenToast } from './NotificationOpenToast';
 import { onNotificationClicked, resetNotificationClickListener } from './notification-click';
 import { registerServiceWorker, swBasePath, swUpdateStore } from './register';
 import { SW_MESSAGE_SKIP_WAITING, SW_NOTIFICATION_CLICKED } from './sw-helpers';
@@ -110,6 +112,29 @@ describe('UpdateToast', () => {
     expect(screen.getByRole('status')).toBeEmptyDOMElement();
   });
 
+  it('lifts the app toasts above itself while it shows instead of overlapping them', () => {
+    render(
+      <ToastProvider>
+        <UpdateToast pathname="/app" />
+      </ToastProvider>,
+    );
+    const toastRegion = () => document.querySelector('[data-lift]')!;
+    expect(toastRegion()).toHaveAttribute('data-lift', '0');
+    act(() => swUpdateStore.setWaiting(asWorker(new FakeWorker())));
+    expect(toastRegion()).toHaveAttribute('data-lift', '1');
+    act(() => swUpdateStore.reset());
+    expect(toastRegion()).toHaveAttribute('data-lift', '0');
+  });
+
+  it('lifts the app toasts above the "Bạn có thông báo mới" toast too', () => {
+    render(
+      <ToastProvider>
+        <NotificationOpenToast open onOpen={() => {}} onDismiss={() => {}} />
+      </ToastProvider>,
+    );
+    expect(document.querySelector('[data-lift]')).toHaveAttribute('data-lift', '2');
+  });
+
   it('applies the update only when "Tải lại" is tapped', async () => {
     const user = userEvent.setup();
     const apply = vi.spyOn(swUpdateStore, 'applyUpdate').mockImplementation(() => undefined);
@@ -212,6 +237,18 @@ describe('InstallAppSection', () => {
     await user.click(screen.getByRole('button', { name: 'Cài Linguo lên máy' }));
     expect(event.prompt).toHaveBeenCalledTimes(1);
     expect(screen.queryByRole('heading', { name: 'Cài ứng dụng' })).not.toBeInTheDocument();
+  });
+
+  it('says so, calmly, when the install prompt is dismissed, and keeps focus in the section', async () => {
+    const user = userEvent.setup();
+    captureInstallPrompt();
+    render(<InstallAppSection />);
+    fireInstallPrompt('dismissed');
+    await user.click(screen.getByRole('button', { name: 'Cài Linguo lên máy' }));
+    const status = await screen.findByRole('status');
+    expect(status).toHaveTextContent('Đã bỏ qua lần này. Bạn có thể cài Linguo sau từ menu của trình duyệt.');
+    expect(screen.getByRole('heading', { name: 'Cài ứng dụng' })).toHaveFocus();
+    expect(screen.queryByRole('button', { name: 'Cài Linguo lên máy' })).not.toBeInTheDocument();
   });
 
   it('shows the Share → Add to Home Screen steps on iOS', () => {

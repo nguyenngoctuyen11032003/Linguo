@@ -13,6 +13,30 @@ interface ToastApi {
 }
 
 const ToastContext = createContext<ToastApi | null>(null);
+
+/**
+ * The PWA toasts (UpdateToast, NotificationOpenToast) are fixed in their own slots above the bottom nav. While one
+ * shows, the toast stack moves above it instead of covering it: level 1 = the update toast slot, level 2 = the
+ * "Bạn có thông báo mới" slot above it. The stack clears the highest active level.
+ */
+export type ToastLiftLevel = 1 | 2;
+type RegisterLift = (level: ToastLiftLevel) => () => void;
+const ToastLiftContext = createContext<RegisterLift | null>(null);
+
+const LIFT_CLASS: Record<0 | ToastLiftLevel, string> = {
+  0: 'bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] lg:bottom-6',
+  1: 'bottom-[calc(10.5rem+env(safe-area-inset-bottom,0px))] lg:bottom-[6.5rem]',
+  2: 'bottom-[calc(15.5rem+env(safe-area-inset-bottom,0px))] lg:bottom-[11.5rem]',
+};
+
+/** Keeps the toast stack clear of a PWA toast while `active`. Does nothing outside <ToastProvider>. */
+export function useLiftToasts(level: ToastLiftLevel, active: boolean): void {
+  const register = useContext(ToastLiftContext);
+  useEffect(() => {
+    if (!register || !active) return;
+    return register(level);
+  }, [register, level, active]);
+}
 const ICONS = { success: CheckCircle2, error: XCircle, info: Info } as const;
 const TONE_CLASS: Record<ToastTone, string> = { success: 'text-success', error: 'text-error', info: 'text-primary' };
 /** Errors stay longer so they can be read; everything else is transient. */
@@ -54,13 +78,25 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
   const api = useMemo(() => ({ show }), [show]);
 
+  const [lifts, setLifts] = useState<ToastLiftLevel[]>([]);
+  const registerLift = useCallback<RegisterLift>((level) => {
+    setLifts((list) => [...list, level]);
+    return () =>
+      setLifts((list) => {
+        const index = list.indexOf(level);
+        return index < 0 ? list : [...list.slice(0, index), ...list.slice(index + 1)];
+      });
+  }, []);
+  const lift = lifts.reduce<0 | ToastLiftLevel>((max, level) => (level > max ? level : max), 0);
+
   return (
     <ToastContext.Provider value={api}>
-      {children}
+      <ToastLiftContext.Provider value={registerLift}>{children}</ToastLiftContext.Provider>
       <div
         role="status"
         aria-live="polite"
-        className="pointer-events-none fixed inset-x-0 bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] z-[90] flex flex-col items-center gap-2 px-4 lg:bottom-6"
+        data-lift={lift}
+        className={cn('pointer-events-none fixed inset-x-0 z-[90] flex flex-col items-center gap-2 px-4', LIFT_CLASS[lift])}
       >
         {items.map((t) => {
           const Icon = ICONS[t.tone];
