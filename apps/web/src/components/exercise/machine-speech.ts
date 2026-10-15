@@ -4,9 +4,13 @@ import { canSpeak, onVoicesChanged, speak, stopSpeaking, type TtsLanguage } from
 export const NORMAL_RATE = 0.9;
 export const SLOW_RATE = 0.7;
 
-/** Korean script means Korean; everything else the app teaches is English. */
+/** Hiragana, katakana (incl. phonetic extensions and half-width forms) and CJK unified ideographs (kanji). */
+export const JAPANESE_SCRIPT_RE = /[぀-ヿㇰ-ㇿ一-鿿ｦ-ﾟ]/;
+
+/** Hangul means Korean; kana or kanji means Japanese; everything else the app teaches is English. */
 export function detectScriptLang(text: string): TtsLanguage {
-  return /[ᄀ-ᇿㄱ-ㆎ가-힣]/.test(text) ? 'ko' : 'en';
+  if (/[ᄀ-ᇿㄱ-ㆎ가-힣]/.test(text)) return 'ko';
+  return JAPANESE_SCRIPT_RE.test(text) ? 'ja' : 'en';
 }
 
 export type MachineSpeechState = 'idle' | 'speaking' | 'error';

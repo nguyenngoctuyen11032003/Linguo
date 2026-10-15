@@ -10,6 +10,7 @@ import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { feedbackAiRequests, type AiSheetState, type ExerciseAiInput } from './ai-context';
 import { ERROR_TAG_MESSAGES } from './exercise-utils';
+import { JAPANESE_SCRIPT_RE } from './machine-speech';
 
 const VERDICT_UI: Record<Verdict, { icon: string; label: string; tone: string; iconTone: string }> = {
   correct: { icon: '✓', label: 'Chính xác', tone: 'border-success/50 bg-success/10', iconTone: 'bg-success text-bg' },
@@ -92,13 +93,13 @@ function FeedbackAiActions({ result, ai }: { result: SubmitResult; ai: ExerciseA
   );
 }
 
-/** Marks the Korean (Hangul) and English ("a/an/the") fragments of a Vietnamese message with their own `lang`. */
+/** Marks the Korean (Hangul), Japanese (kana/kanji) and English ("a/an/the") fragments of a Vietnamese message with their own `lang`. */
 function withLanguageSpans(message: string): ReactNode {
-  return message.split(/([\uAC00-\uD7AF]+|\ba\/an\/the\b)/).map((part, i) =>
+  return message.split(/([\uAC00-\uD7AF]+|[\u3040-\u30FF\u31F0-\u31FF\u4E00-\u9FFF\uFF66-\uFF9F]+|\ba\/an\/the\b)/).map((part, i) =>
     i % 2 === 0 ? (
       part
     ) : (
-      <span key={i} lang={/[\uAC00-\uD7AF]/.test(part) ? 'ko' : 'en'}>
+      <span key={i} lang={/[\uAC00-\uD7AF]/.test(part) ? 'ko' : JAPANESE_SCRIPT_RE.test(part) ? 'ja' : 'en'}>
         {part}
       </span>
     ),

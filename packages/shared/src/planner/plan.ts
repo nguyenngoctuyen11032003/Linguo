@@ -31,7 +31,7 @@ const SKILL_VI: Record<PlannerSkill, string> = {
   speaking: 'Nói',
 };
 
-const LANGUAGE_VI: Record<SessionInputs['language_code'], string> = { en: 'tiếng Anh', ko: 'tiếng Hàn' };
+const LANGUAGE_VI: Record<SessionInputs['language_code'], string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
 
 type Draft = Omit<SessionActivity, 'id' | 'status' | 'seconds_spent'>;
 

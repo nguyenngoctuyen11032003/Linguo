@@ -2,6 +2,7 @@ import {
   addDaysIso,
   allowedTargets,
   isGoalForLanguage,
+  isLanguageAvailable,
   isLevelOf,
   isTargetDateInRange,
   weeklyMinutesSchema,
@@ -44,7 +45,8 @@ export interface StepContext {
 export function isStepValid(step: StepNumber, data: OnboardingDraftData, ctx: StepContext): boolean {
   switch (step) {
     case 1:
-      return Boolean(data.language) && !ctx.taken.includes(data.language as LanguageCode);
+      // A restored draft may name a language that is no longer (or not yet) offered.
+      return Boolean(data.language) && isLanguageAvailable(data.language as LanguageCode) && !ctx.taken.includes(data.language as LanguageCode);
     case 2:
       return Boolean(data.startPoint);
     case 3:

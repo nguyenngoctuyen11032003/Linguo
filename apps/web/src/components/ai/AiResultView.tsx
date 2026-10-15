@@ -13,7 +13,7 @@ import { AnalyzeSentenceView, PlanReviewView, SessionSummaryView } from './AiMor
 import { MarkdownLite } from './MarkdownLite';
 import { parseAiResult } from './parse';
 
-type Lang = 'en' | 'ko';
+type Lang = 'en' | 'ko' | 'ja';
 
 function SectionTitle({ children }: { children: string }) {
   return <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{children}</h3>;

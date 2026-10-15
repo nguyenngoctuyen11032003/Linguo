@@ -1,5 +1,5 @@
 import { assert, assertEquals, assertFalse, assertStringIncludes, assertThrows } from 'jsr:@std/assert@1';
-import { escapeDelimiters, extractJson, hasHangul, redactPii, repairPrompt, sanitizeOutput, stripControl, wrapData } from './text.ts';
+import { escapeDelimiters, extractJson, hasHangul, hasJapanese, hasKana, redactPii, repairPrompt, sanitizeOutput, stripControl, wrapData } from './text.ts';
 
 /** Returns the text between the first opening tag and the LAST closing tag of the block. */
 function blockBody(wrapped: string, tag: string): string {
@@ -162,4 +162,16 @@ Deno.test('hasHangul', () => {
   assert(hasHangul('ㄱ'));
   assertFalse(hasHangul('I am a student'));
   assertFalse(hasHangul('日本語'));
+});
+
+Deno.test('hasJapanese and hasKana', () => {
+  assert(hasJapanese('私は学生です。'));
+  assert(hasJapanese('カタカナ'));
+  assert(hasJapanese('日本語'));
+  assert(hasJapanese('ｶﾀｶﾅ'));
+  assertFalse(hasJapanese('watashi wa gakusei desu'));
+  assertFalse(hasJapanese('저는 학생이에요'));
+  assertFalse(hasJapanese('​⁠ hello'));
+  assert(hasKana('ひらがな'));
+  assertFalse(hasKana('日本語'), 'kanji alone is not kana');
 });

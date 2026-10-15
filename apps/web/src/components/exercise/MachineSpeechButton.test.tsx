@@ -34,6 +34,13 @@ describe('detectScriptLang', () => {
     expect(detectScriptLang('학교에 가요.')).toBe('ko');
     expect(detectScriptLang('Hello')).toBe('en');
   });
+
+  it('picks Japanese for kana or kanji, Korean first when Hangul is present', () => {
+    expect(detectScriptLang('ありがとう')).toBe('ja');
+    expect(detectScriptLang('カタカナ')).toBe('ja');
+    expect(detectScriptLang('学校')).toBe('ja');
+    expect(detectScriptLang('학교 学校')).toBe('ko');
+  });
 });
 
 describe('MachineSpeechButton', () => {

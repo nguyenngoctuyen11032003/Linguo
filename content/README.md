@@ -14,8 +14,9 @@ content/
   en/programs/<program>/units/<nn>-<unit>/unit.yaml
   en/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<lesson>.yaml
   ko/...                                         # giống en
-  diagnostic/<en|ko>/<kỹ-năng>.yaml               # kho câu hỏi kiểm tra đầu vào (spec 4)
-  exams/<en|ko>/<tên-đề>.yaml                     # đề luyện thi mô phỏng (spec 9)
+  ja/...                                         # giống en (tiếng Nhật, chưa có nội dung)
+  diagnostic/<en|ko|ja>/<kỹ-năng>.yaml            # kho câu hỏi kiểm tra đầu vào (spec 4)
+  exams/<en|ko|ja>/<tên-đề>.yaml                  # đề luyện thi mô phỏng (spec 9)
 ```
 
 - Unit thuộc chương trình chứa thư mục của nó; bài thuộc unit chứa thư mục của nó. Nguồn (`source`) của unit, bài và bài tập lấy từ `program.yaml`; của học liệu lấy từ file items.
@@ -28,7 +29,7 @@ content/
 - Trạng thái duyệt (`status`, `reviewed_by`, `reviewed_at`): chương trình, unit, bài đặt ở đầu file; học liệu đặt ở đầu file items (áp dụng cho mọi item trong file); nguồn đặt trong từng mục của `sources.yaml`. Nội dung demo bỏ trống `status` thì được nhập là `published`; nội dung **không** demo phải ghi rõ `status`, và khi `approved`/`published` phải có cả `reviewed_by` lẫn `reviewed_at`.
 - Bài `published` chỉ được liên kết (và dùng trong bài tập) học liệu `published`, nếu không học liệu sẽ không hiện ra.
 - **Key** ổn định, không đổi sau khi xuất bản (id trong DB sinh từ key): `<lang>:<loại>:<tên>`, ví dụ `en:lesson:i-am`, `ko:item:vowel-eo`, `en:exercise:i-am-translate-student`; nguồn dùng `src:<tên>`. Chỉ chữ thường, số, gạch ngang.
-- Cấp độ: EN `pre_a1 … c2`, KO `hangul, topik1 … topik6`; cấp của bài phải nằm trong khoảng `level_from…level_to` của chương trình.
+- Cấp độ: EN `pre_a1 … c2`, KO `hangul, topik1 … topik6`, JA `kana, n5, n4, n3, n2, n1` (tăng dần: N5 thấp nhất); cấp của bài phải nằm trong khoảng `level_from…level_to` của chương trình.
 - Mỗi học liệu chỉ được `introduce` ở một bài; các bài khác dùng `role: reuse`.
 - Văn bản tiếng Việt đủ dấu, chuẩn hoá **NFC** (gõ bằng bộ gõ Unicode dựng sẵn). Công cụ kiểm tra từng chuỗi sau khi đọc YAML, nên cả chuỗi viết bằng escape (`"Tôi"`) cũng bị bắt; ký tự điều khiển (trừ xuống dòng và tab) và U+FFFE/U+FFFF bị cấm.
 - Trong `content/` chỉ có file `.yaml`/`.yml` (nội dung) và `.md` (tài liệu); file khác bị báo lỗi.
@@ -159,6 +160,16 @@ questions:
 - Phần nghe chưa có audio: `audio_asset_id: null` và `script` bằng ngôn ngữ đích (ứng dụng đọc bằng giọng máy). Viết số bằng chữ số (`1층`, `30%`) như văn bản thông thường.
 - Thang điểm: TOPIK cần `section_max` cho mọi phần có câu hỏi, `bands` tăng dần, `pass_ratio: null`; CEFR cần `bands: []` và `pass_ratio`. File demo: header `# DEMO — chưa kiểm duyệt`, `scoring.verified: false`, không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
 - Đề được nhập bằng `public.import_exam_content_bundle` (câu lệnh thứ ba trong `supabase/seed.sql`, sau kho kiểm tra đầu vào; `pnpm content:push` gọi cùng RPC sau diagnostic). Bundle theo `examBundleSchema` (`packages/shared/src/exam/bundle.ts`): `prompt` công khai không chứa `script`; `answer`, `explanation`, `script`, `rubric`, `sample_answer` được tách sang `content_private.exam_keys`.
+
+## Tiếng Nhật (ja)
+
+Hạ tầng đã nhận `ja` ở mọi nơi (schema, RPC, import, AI, web) nhưng `LANGUAGES.ja.available` vẫn là `false` (`packages/shared/src/constants.ts`) cho tới khi có nội dung đã duyệt; bật cờ này là bước tích hợp nội dung.
+
+- Học liệu: `ja/items/<chủ-đề>.yaml`, key `ja:item:<tên>`. `type`: `vocab`, `phrase`, `grammar_point`, `kana` (chữ Hiragana/Katakana, như `hangul` của KO).
+- `front.text` viết bằng chữ Nhật (kana/kanji); `front.reading` là cách đọc bằng kana khi từ có kanji (学校 → がっこう, dùng làm furigana); `front.romanization` là Hepburn, chỉ để tham khảo.
+- Chương trình: `ja/programs/<slug>/program.yaml` (key `ja:program:<slug>`, ví dụ slug `kana`, `n5`, `n4`), unit `units/<nn>-<unit>/unit.yaml`, bài `units/<nn>-<unit>/lessons/<nn>-<bài>.yaml`. `goal_types` của chương trình `kind: goal`: `kana_basics`, `communication`, `jlpt`, `skill_focus`.
+- Kho kiểm tra đầu vào: `diagnostic/ja/<vocabulary|grammar|reading>.yaml`, `language: ja`, key `ja:diag:<tên>`; mỗi ô kỹ năng × cấp cần ≥ 5 câu. Bài kiểm tra `ja:assessment:diagnostic:v1` đã có sẵn trong DB (migration `20261017000900_japanese.sql`).
+- Đề luyện thi: `exams/ja/<tên-đề>.yaml`, `family: jlpt`, key `ja:exam:<tên>`, câu `ja:examq:<tên>`; chấm như TOPIK: `section_max` cho mọi phần có câu hỏi, `bands` tăng dần theo `n5…n1`, `pass_ratio: null`.
 
 ## Lệnh
 

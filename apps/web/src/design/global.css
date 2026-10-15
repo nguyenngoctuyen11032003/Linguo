@@ -61,6 +61,14 @@
     word-break: keep-all;
     overflow-wrap: anywhere;
   }
+  /* Japanese: system fonts only (no webfont download); Be Vietnam Pro has no kana/kanji glyphs. */
+  :lang(ja) {
+    font-family:
+      'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Noto Sans CJK JP', 'Yu Gothic UI', 'Yu Gothic', Meiryo,
+      var(--font-sans);
+    line-break: strict;
+    overflow-wrap: anywhere;
+  }
   :focus-visible {
     outline: 3px solid var(--focus-ring);
     outline-offset: 2px;

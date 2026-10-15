@@ -30,12 +30,12 @@ describe('service', () => {
   it('skips reference rows with an unknown language code', async () => {
     const q = fakeQuery({
       data: [
-        { language_code: 'ja', level_code: 'n5', ordinal: 1, cumulative_hours: 300, reviewed: true },
+        { language_code: 'zh', level_code: 'hsk1', ordinal: 1, cumulative_hours: 300, reviewed: true },
         { language_code: 'en', level_code: 'a1', ordinal: 1, cumulative_hours: 90, reviewed: false },
       ],
     });
     const grouped = await listReferenceHours(fakeClient({ level_reference_hours: q }));
-    expect(grouped).toEqual({ en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }], ko: [] });
+    expect(grouped).toEqual({ en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }], ko: [], ja: [] });
     expect(q.calls).toContainEqual(['order', ['ordinal']]);
   });
 
@@ -65,6 +65,7 @@ describe('service', () => {
     expect(await listReferenceHours(fakeClient({ level_reference_hours: q }))).toEqual({
       en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }],
       ko: [{ levelCode: 'topik1', ordinal: 1, cumulativeHours: 120, reviewed: true }],
+      ja: [],
     });
   });
 

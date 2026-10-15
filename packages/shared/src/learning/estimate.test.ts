@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest';
+import type { LanguageCode } from '../constants';
 import fixtures from './estimate.fixtures.json';
 import { addDaysIso, estimatePath, EstimateError, isoToUtcDays, isTargetDateInRange, type ReferenceHours } from './estimate';
 
-const reference = (language: 'en' | 'ko', reviewed = false): ReferenceHours[] =>
+const reference = (language: LanguageCode, reviewed = false): ReferenceHours[] =>
   fixtures.referenceHours[language].map((r) => ({ ...r, reviewed }));
 
 describe('estimatePath (shared fixtures, mirrored by SQL)', () => {
@@ -10,7 +11,7 @@ describe('estimatePath (shared fixtures, mirrored by SQL)', () => {
     it(c.name, () => {
       const result = estimatePath(
         { currentLevel: c.currentLevel, targetLevel: c.targetLevel, weeklyMinutes: c.weeklyMinutes, targetDate: c.targetDate, today: fixtures.today },
-        reference(c.language as 'en' | 'ko'),
+        reference(c.language as LanguageCode),
       );
       expect({
         hoursNeeded: result.hoursNeeded,

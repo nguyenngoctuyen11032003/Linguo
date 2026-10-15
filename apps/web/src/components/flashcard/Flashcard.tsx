@@ -12,7 +12,7 @@ import { answerText, readCardContent, type CardContent } from './cardContent';
 /** Spec 3 §6: the card turns over in 250 ms; reduced motion swaps the faces instantly. */
 export const FLIP_DURATION_S = 0.25;
 
-const LANGUAGE_NAMES: Record<CardContent['lang'], string> = { en: 'tiếng Anh', ko: 'tiếng Hàn' };
+const LANGUAGE_NAMES: Record<CardContent['lang'], string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
 
 export interface FlashcardProps {
   card: ReviewCard;
@@ -178,6 +178,11 @@ function TargetWord({ content }: { content: CardContent }) {
       <span lang={content.lang} className="text-[clamp(26px,8.5vw,34px)] font-bold leading-tight">
         {content.text}
       </span>
+      {content.reading && (
+        <span lang={content.lang} className="text-[17px] text-text">
+          {content.reading}
+        </span>
+      )}
       {content.romanization && <span className="text-[17px] text-text">{content.romanization}</span>}
       {content.ipa && <span className="font-mono text-[16px] text-text">/{content.ipa.replace(/^\/|\/$/g, '')}/</span>}
       {content.pos && <span className="text-sm font-medium text-muted">{content.pos}</span>}

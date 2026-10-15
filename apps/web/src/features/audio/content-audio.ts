@@ -24,7 +24,7 @@ export function contentAudioSrc(id: string | null | undefined, supabaseUrl: stri
 /** Language of the machine-speech fallback: the one in a generated id, else guessed from the text's script. */
 export function fallbackSpeechLang(id: string | null | undefined, text: string): TtsLanguage {
   const lang = audioAssetLang(id);
-  return lang === 'en' || lang === 'ko' ? lang : detectScriptLang(text);
+  return lang === 'en' || lang === 'ko' || lang === 'ja' ? lang : detectScriptLang(text);
 }
 
 /**
