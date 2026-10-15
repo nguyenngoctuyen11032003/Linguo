@@ -20,6 +20,8 @@ describe('AdminLayout frame guard', () => {
     routeRpcs(mocks.rpc, { staff_role: { data: 'editor' }, admin_content_overview: { data: null, error: { message: 'x', code: 'X' } } });
     renderAdmin('/quan-tri');
     expect(await screen.findByRole('navigation', { name: 'Điều hướng quản trị' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Tổng quan' })).toHaveAttribute('aria-current', 'page');
+    expect(screen.getByRole('navigation', { name: 'Điều hướng quản trị' }).querySelector('ul')).toHaveClass('flex-wrap');
     expect(mocks.breakOutOfFrame).not.toHaveBeenCalled();
   });
 

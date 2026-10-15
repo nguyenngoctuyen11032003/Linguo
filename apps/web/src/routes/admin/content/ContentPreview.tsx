@@ -89,7 +89,7 @@ function FlashcardPreview({ detail }: { detail: AdminContentDetail }) {
               direction === d ? 'bg-primary text-on-primary' : 'text-muted hover:bg-text/5',
             )}
           >
-            {d === 'recognize' ? 'Nhận diện' : 'Nhớ lại'}
+            {d === 'recognize' ? 'Nhận biết' : 'Nhớ lại'}
           </button>
         ))}
       </div>

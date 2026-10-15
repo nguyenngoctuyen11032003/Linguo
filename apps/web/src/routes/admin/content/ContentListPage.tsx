@@ -172,7 +172,7 @@ export function ContentListPage() {
           ))}
         </div>
       ) : items.length > 0 ? (
-        <div className={cn('overflow-x-auto rounded-2xl border border-border bg-surface-solid', list.status === 'loading' && 'opacity-60')}>
+        <div tabIndex={0} role="region" aria-label="Danh sách nội dung (cuộn ngang nếu cần)" className={cn('overflow-x-auto rounded-2xl border border-border bg-surface-solid focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40', list.status === 'loading' && 'opacity-60')}>
           <table className="w-full min-w-[640px] text-left text-[15px]">
             <caption className="sr-only">{`${ADMIN_KIND_LABELS_VI[filters.kind]}, trang ${filters.page}`}</caption>
             <thead className="border-b border-border text-sm text-muted">

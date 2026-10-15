@@ -224,7 +224,7 @@ export function ReportsPage() {
               {reports.error}
             </p>
           )}
-          <div className="overflow-x-auto rounded-3xl border border-border bg-surface-solid" aria-busy={reports.status === 'loading' || undefined}>
+          <div tabIndex={0} role="region" aria-label="Hàng đợi báo lỗi (cuộn ngang nếu cần)" className="overflow-x-auto rounded-3xl border border-border bg-surface-solid focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40" aria-busy={reports.status === 'loading' || undefined}>
             <table className="w-full text-left text-[15px]">
               <caption className="px-4 pt-4 text-left font-semibold">Hàng đợi báo lỗi, nhóm theo nội dung</caption>
               <thead className="text-sm text-muted">

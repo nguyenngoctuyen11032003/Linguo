@@ -19,6 +19,11 @@ describe('ExamFormCard', () => {
     expect(within(card).getByText(/Nội dung demo/)).toBeInTheDocument();
   });
 
+  it('keeps the duration in the full-mock button name', () => {
+    renderExam(<ExamFormCard form={TOPIK_FORM} warningVi={null} onStart={vi.fn()} busy={false} />);
+    expect(screen.getByRole('button', { name: 'Thi thử toàn bài · 40 phút' })).toBeInTheDocument();
+  });
+
   it('shows untimed sections and no last attempt for a fresh form', () => {
     renderExam(<ExamFormCard form={CEFR_FORM} warningVi={null} onStart={vi.fn()} busy={false} />);
     expect(screen.getByText(/Nghe: 8 câu · không giới hạn thời gian/)).toBeInTheDocument();

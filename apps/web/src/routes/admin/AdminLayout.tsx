@@ -91,7 +91,7 @@ export function AdminLayout() {
       </header>
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-6 lg:px-safe">
         <nav aria-label="Điều hướng quản trị" className="border-b border-border lg:border-b-0 lg:py-6">
-          <ul className="flex gap-1 overflow-x-auto px-safe py-2 lg:flex-col lg:overflow-visible lg:p-0">
+          <ul className="flex flex-wrap gap-1 px-safe py-2 lg:flex-col lg:p-0">
             {items.map((item) => (
               <li key={item.to} className="shrink-0">
                 <NavLink
@@ -99,7 +99,7 @@ export function AdminLayout() {
                   end={item.end}
                   className={({ isActive }) =>
                     cn(
-                      'flex min-h-11 items-center gap-2 whitespace-nowrap rounded-2xl px-3 text-[15px] font-medium',
+                      'flex min-h-11 items-center gap-2 whitespace-nowrap rounded-2xl px-3 text-[15px] font-medium focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
                       isActive ? 'bg-primary/12 font-semibold text-text' : 'text-muted hover:bg-text/5 hover:text-text',
                     )
                   }

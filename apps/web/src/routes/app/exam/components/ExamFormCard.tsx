@@ -75,8 +75,18 @@ export function ExamFormCard({ form, warningVi, onStart, busy }: ExamFormCardPro
 
       <div className="grid gap-2">
         <Button variant="primary" block disabled={busy} onClick={() => onStart('full')}>
-          <Timer aria-hidden className="size-5" />
-          Thi thử toàn bài{timed && totalMinutes > 0 ? ` · ${totalMinutes} phút` : ''}
+          <Timer aria-hidden className="size-5 shrink-0" />
+          <span className="flex min-w-0 flex-col items-center">
+            <span>Thi thử toàn bài</span>
+            {timed && totalMinutes > 0 && (
+              <>
+                <span aria-hidden="true" className="text-sm font-medium opacity-90">
+                  {totalMinutes} phút
+                </span>
+                <span className="sr-only">{` · ${totalMinutes} phút`}</span>
+              </>
+            )}
+          </span>
         </Button>
         <Button
           variant="ghost"

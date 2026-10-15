@@ -35,7 +35,7 @@ export function SourcesPage() {
       ) : data.length === 0 ? (
         <EmptyState icon={Library} title="Chưa có nguồn" description="Chưa có nguồn nội dung nào được khai báo." />
       ) : (
-        <div className="overflow-x-auto rounded-3xl border border-border bg-surface-solid">
+        <div tabIndex={0} role="region" aria-label="Danh sách nguồn nội dung (cuộn ngang nếu cần)" className="overflow-x-auto rounded-3xl border border-border bg-surface-solid focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40">
           <table className="w-full text-left text-[15px]">
             <caption className="px-4 pt-4 text-left font-semibold">Danh sách nguồn nội dung</caption>
             <thead className="text-sm text-muted">

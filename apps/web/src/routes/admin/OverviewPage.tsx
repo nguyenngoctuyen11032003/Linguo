@@ -114,7 +114,7 @@ function OverviewContent({ overview }: { overview: AdminOverview }) {
         </Link>
       </SolidCard>
 
-      <div className="overflow-x-auto rounded-3xl border border-border bg-surface-solid">
+      <div tabIndex={0} role="region" aria-label="Số lượng theo loại nội dung (cuộn ngang nếu cần)" className="overflow-x-auto rounded-3xl border border-border bg-surface-solid focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40">
         <table className="w-full text-left text-[15px]">
           <caption className="px-4 pt-4 text-left font-semibold">Số lượng theo loại nội dung</caption>
           <thead className="text-sm text-muted">
