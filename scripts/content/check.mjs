@@ -87,8 +87,18 @@ function answerShapeErrors(ex, lang) {
   }
   if (ex.type === 'mcq' || ex.type === 'listen') {
     const ids = ex.prompt.options.map((o) => o.id);
-    if (!ids.includes(ex.answer.correct_option_id)) {
+    const correct = ex.prompt.options.find((o) => o.id === ex.answer.correct_option_id);
+    if (!correct) {
       errors.push(`answer correct_option_id ${q(ex.answer.correct_option_id)} is not an option (${ids.join(', ')})`);
+    } else if (correct.text.trim() !== ex.display_answer.trim()) {
+      // The player marks "Đáp án đúng" on the option whose text equals display_answer (ChoiceGroup).
+      errors.push(`display_answer ${q(ex.display_answer)} must equal the correct option text ${q(correct.text)}`);
+    }
+    const texts = new Map();
+    for (const o of ex.prompt.options) {
+      const text = o.text.trim();
+      if (texts.has(text)) errors.push(`options ${q(texts.get(text))} and ${q(o.id)} have the same text ${q(text)}`);
+      else texts.set(text, o.id);
     }
   }
   if (ex.type === 'word_bank') {
@@ -104,12 +114,35 @@ function answerShapeErrors(ex, lang) {
         errors.push(`word_bank tokens are listed in the order of answer order ${i} (shuffle them so the list does not reveal the answer)`);
       }
     });
+    // Tokens that look the same are interchangeable to the learner, but the grader compares ids: every order must
+    // also be listed with any two same-text tokens swapped (or one substituted for the other when only one is used).
+    const listed = new Set(ex.answer.orders.map((order) => order.join(' ')));
+    const sameText = [];
+    ex.prompt.tokens.forEach((a, i) => {
+      for (const b of ex.prompt.tokens.slice(i + 1)) if (a.text.trim() === b.text.trim()) sameText.push([a.id, b.id]);
+    });
+    ex.answer.orders.forEach((order, i) => {
+      for (const [a, b] of sameText) {
+        if (!order.includes(a) && !order.includes(b)) continue;
+        const swapped = order.map((id) => (id === a ? b : id === b ? a : id)).join(' ');
+        if (!listed.has(swapped)) {
+          errors.push(`word_bank tokens ${q(a)} and ${q(b)} have the same text: list order ${i} with them swapped too (${swapped})`);
+        }
+      }
+    });
   }
   if (ex.type === 'fill_blank') {
     const promptIds = ex.prompt.blanks.map((b) => b.id).sort();
     const answerIds = Object.keys(ex.answer.blanks).sort();
     if (promptIds.join() !== answerIds.join()) {
       errors.push(`fill_blank answer blanks (${answerIds.join(', ')}) do not match prompt blanks (${promptIds.join(', ')})`);
+    }
+    // The player renders an input for every {{id}} (same pattern as parseTemplate): an undeclared one would be an
+    // input that is never graded, a repeated one two inputs sharing one value.
+    const placeholders = [...ex.prompt.template.matchAll(/\{\{([a-z0-9][a-z0-9_-]{0,39})\}\}/g)].map((m) => m[1]);
+    for (const id of new Set(placeholders)) {
+      if (!promptIds.includes(id)) errors.push(`fill_blank template placeholder {{${id}}} is not a declared blank`);
+      else if (placeholders.filter((p) => p === id).length > 1) errors.push(`fill_blank template uses {{${id}}} more than once`);
     }
   }
   return errors;
