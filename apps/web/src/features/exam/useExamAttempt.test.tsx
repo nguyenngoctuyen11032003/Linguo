@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { ATTEMPT_ID, examAttempt, examQuestionId, examResult } from './exam-fixtures';
-import { EXAM_SAVE_DEBOUNCE_MS, useExamAttempt } from './useExamAttempt';
+import { EXAM_RETRY_BASE_MS, EXAM_SAVE_DEBOUNCE_MS, useExamAttempt } from './useExamAttempt';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 const mocks = vi.hoisted(() => {
@@ -177,6 +177,30 @@ describe('useExamAttempt: autosave', () => {
     expect(result.current.saveState).toBe('saved');
   });
 
+  it('retries an unanswered save on a backoff timer while the browser still reports online', async () => {
+    const TIMEOUT = { error: { message: 'Bad gateway', code: '', status: 503 } };
+    server({ get_exam_attempt: { data: examAttempt() }, save_exam_answer: [TIMEOUT, TIMEOUT, saved()] });
+    const { result } = await renderRunning();
+    act(() => result.current.setAnswer(examQuestionId(3), '도와줄 수 있어요'));
+    await advance(EXAM_SAVE_DEBOUNCE_MS);
+    expect(calls('save_exam_answer')).toHaveLength(1);
+    expect(result.current.saveState).toBe('offline');
+    await advance(EXAM_RETRY_BASE_MS - 1);
+    expect(calls('save_exam_answer')).toHaveLength(1);
+    await advance(1);
+    expect(calls('save_exam_answer')).toHaveLength(2);
+    // Second failure: the delay doubles.
+    await advance(EXAM_RETRY_BASE_MS);
+    expect(calls('save_exam_answer')).toHaveLength(2);
+    await advance(EXAM_RETRY_BASE_MS);
+    const sent = calls('save_exam_answer');
+    expect(sent).toHaveLength(3);
+    expect(new Set(sent.map((a) => a.p_idempotency_key)).size).toBe(1);
+    expect(result.current.saveState).toBe('saved');
+    // Clock interval only: no retry left behind.
+    expect(vi.getTimerCount()).toBe(1);
+  });
+
   it('does not call the server while the browser is offline', async () => {
     server({ get_exam_attempt: { data: examAttempt() }, save_exam_answer: saved() });
     const { result } = await renderRunning();
@@ -311,6 +335,21 @@ describe('useExamAttempt: submit', () => {
     expect(calls('save_exam_answer')).toHaveLength(3);
     expect(calls('submit_exam')).toHaveLength(1);
     expect(result.current.status).toBe('finished');
+  });
+
+  it('retries a failed auto-submit when the server did not answer', async () => {
+    server({
+      get_exam_attempt: { data: examAttempt({ deadline_at: '2026-10-13T02:10:01.000Z' }) },
+      submit_exam: [{ error: { message: 'Bad gateway', code: '', status: 502 } }, { data: examResult({ status: 'expired' }) }],
+    });
+    const { result } = await renderRunning();
+    await advance(1000);
+    expect(calls('submit_exam')).toHaveLength(1);
+    expect(result.current.status).toBe('running');
+    await advance(EXAM_RETRY_BASE_MS);
+    expect(calls('submit_exam')).toHaveLength(2);
+    expect(result.current.status).toBe('finished');
+    expect(vi.getTimerCount()).toBe(0);
   });
 
   it('loads the stored result when submit finds the attempt already closed', async () => {

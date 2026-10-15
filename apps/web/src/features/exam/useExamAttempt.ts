@@ -6,9 +6,14 @@ import { getExamAttempt, saveExamAnswer, submitExam } from './service';
 
 // Spec 9 §4. The runner's data: the clock follows the server (deadline_at vs server_now, not the device clock),
 // answers autosave 800 ms after the last edit of a question, saves that never reached the server stay queued and
-// are resent (same idempotency key) when the browser is back online, on pagehide and before submitting.
+// are resent (same idempotency key) when the browser is back online, on pagehide and before submitting. A save or
+// auto-submit that got no answer while the browser still reports itself online (timeout, 5xx) has no `online`
+// event to wait for, so it is retried on a backoff timer instead.
 
 export const EXAM_SAVE_DEBOUNCE_MS = 800;
+/** First retry delay after an unanswered save / auto-submit; doubles up to EXAM_RETRY_MAX_MS. */
+export const EXAM_RETRY_BASE_MS = 5000;
+export const EXAM_RETRY_MAX_MS = 30_000;
 const TICK_MS = 1000;
 
 export type ExamRunStatus = 'loading' | 'running' | 'submitting' | 'finished' | 'error';
@@ -84,6 +89,8 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
     let closing: Promise<void> | null = null;
     let offline = false;
     let lastOutcome: ExamSaveState = 'idle';
+    let retryTimer: ReturnType<typeof setTimeout> | null = null;
+    let retryDelay = EXAM_RETRY_BASE_MS;
     const local = new Map<string, { answer: string | null; flagged: boolean }>();
     const pending = new Map<string, PendingSave>();
     const timers = new Map<string, ReturnType<typeof setTimeout>>();
@@ -108,12 +115,35 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
       timers.clear();
     }
 
+    function clearRetry() {
+      if (retryTimer !== null) clearTimeout(retryTimer);
+      retryTimer = null;
+    }
+
+    /**
+     * Retries queued saves (and a failed auto-submit) later. Skipped while the browser is offline: the `online`
+     * event resends then. Saves still waiting on their debounce go out on their own.
+     */
+    function scheduleRetry() {
+      if (!alive || finished || retryTimer !== null) return;
+      retryTimer = setTimeout(() => {
+        retryTimer = null;
+        if (!alive || finished || browserOffline()) return;
+        retryDelay = Math.min(retryDelay * 2, EXAM_RETRY_MAX_MS);
+        const due = [...pending.keys()].filter((id) => !timers.has(id));
+        void Promise.all(due.map((id) => sendOne(id))).then(() => {
+          if (autoSubmitted && !finished && !submitting) void submit();
+        });
+      }, retryDelay);
+    }
+
     function finish(r: ExamResult) {
       if (finished) return;
       finished = true;
       running = false;
       stopClock();
       clearTimers();
+      clearRetry();
       pending.clear();
       if (!alive) return;
       setResult(r);
@@ -157,6 +187,7 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
           });
           if (pending.get(questionId)?.key === entry.key) pending.delete(questionId);
           offline = false;
+          retryDelay = EXAM_RETRY_BASE_MS;
           if (!res.saved || res.status !== 'in_progress') {
             await closeFromServer();
             return;
@@ -165,6 +196,7 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
         } catch (e) {
           if (isUnansweredError(e)) {
             offline = true;
+            scheduleRetry();
             return;
           }
           if (pending.get(questionId)?.key === entry.key) pending.delete(questionId);
@@ -228,6 +260,7 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
             setStatus('running');
             setError(examErrorMessage(new Error('answers_unsaved')));
           }
+          if (autoSubmitted) scheduleRetry();
           return;
         }
         try {
@@ -241,6 +274,8 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
             setStatus('running');
             setError(examErrorMessage(e));
           }
+          // The clock already ran out: keep trying to hand the attempt in while the server does not answer.
+          if (autoSubmitted && isUnansweredError(e)) scheduleRetry();
         }
       })().finally(() => {
         submitting = null;
@@ -331,6 +366,7 @@ export function useExamAttempt(attemptId: string): ExamAttemptRun {
     return () => {
       alive = false;
       stopClock();
+      clearRetry();
       window.removeEventListener('online', onOnline);
       window.removeEventListener('pagehide', onPageHide);
       // Unsaved edits still go out after the runner unmounts.
