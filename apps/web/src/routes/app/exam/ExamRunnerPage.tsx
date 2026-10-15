@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import { AlertTriangle, ChevronLeft, ChevronRight, CloudOff, Loader2, Send, X } from 'lucide-react';
 import { Link, useBlocker, useNavigate, useParams } from 'react-router';
 import type { ExamAttempt } from '@linguo/shared';
-import { audioUrl } from '@/components/exercise/exercise-utils';
+import { playContentAudioOnce } from '@/features/audio/content-audio';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
@@ -35,12 +35,8 @@ const SAVE_LABELS: Record<ExamSaveState, string> = {
  * promise resolves `true` when the clip ends, `false` when it could not play (network error, autoplay block).
  */
 function playAsset(assetId: string, onStarted: () => void): Promise<boolean> {
-  return new Promise((resolve) => {
-    const audio = new Audio(audioUrl(assetId));
-    audio.onended = () => resolve(true);
-    audio.onerror = () => resolve(false);
-    audio.play().then(onStarted, () => resolve(false));
-  });
+  // Generated recordings resolve to the content-audio bucket (features/audio); legacy paths play as before.
+  return playContentAudioOnce(assetId, onStarted);
 }
 
 /** TTS availability for the attempt language; voices can load after the first render. */

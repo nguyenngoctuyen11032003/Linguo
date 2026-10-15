@@ -66,3 +66,12 @@ Quy trình đề xuất:
 3. `pnpm content:check && pnpm audio:check`, xem diff `content/` + manifest, commit, rồi import nội dung như thường lệ (DEPLOY.md).
 
 Lưu ý bản quyền: audio do Gemini TTS sinh từ văn bản Linguo tự soạn; ghi nguồn trong `content/sources.yaml` nếu cần công bố cách tạo.
+
+## Trình phát trên web (`apps/web/src/features/audio`)
+
+- `ContentAudio` được dùng ở bài nghe trong bài học (`ListenExercise`) và thẻ ôn (`Flashcard`) khi id có dạng `<lang>-<hash>`; id cũ (đường dẫn file đặt tay) vẫn dùng nút "Nghe" cũ. Không có id thì giữ giọng đọc của máy như trước.
+- Nút: Nghe / Tạm dừng / Nghe tiếp, "Nghe lại từ đầu", "Nghe chậm (0,75×)" (`aria-pressed`). Mọi nút cao tối thiểu 48px. Chỉ một bản ghi phát cùng lúc.
+- Không tải gì trước lần bấm đầu (preload none). Lần đầu tải cả file bằng `fetch()` (không gửi cookie) rồi phát qua URL `blob:`; nghe lại dùng lại file đã tải. CSP: `connect-src` và `media-src` đã có origin Supabase, `media-src` có `blob:` (`apps/web/build/csp.ts`).
+- Lỗi (mất mạng mà file chưa có trong cache, 404, trình duyệt chặn phát): hiện "Không phát được bản ghi âm", nút "Thử lại" (tải lại từ đầu), giọng đọc của máy cho `fallback_text` và phần "Đọc thay vì nghe".
+- Luyện thi: `ExamRunnerPage` phát bản ghi qua `playContentAudioOnce` (lượt nghe chỉ bị tính khi đã thật sự phát).
+- Service worker: `GET` không có `Range` tới `/storage/v1/object/public/content-audio/<lang>/<id>.wav` dùng CacheFirst trong cache riêng `linguo-content-audio-v1` (80 file, 30 ngày, xoá khi hết quota). Vì vậy một đoạn đã nghe có thể nghe lại khi offline; đoạn chưa nghe thì không.
