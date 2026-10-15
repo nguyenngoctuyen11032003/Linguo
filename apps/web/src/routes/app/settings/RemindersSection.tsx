@@ -21,6 +21,7 @@ import {
 } from '@/features/notifications/validation';
 import { cn } from '@/lib/cn';
 import { SECTION_SCROLL_MARGIN } from './section-state';
+import { DISABLED_NEUTRAL, DISABLED_NEUTRAL_TRACK } from '@/components/ui/disabled-styles';
 
 const MAX_OPTIONS = Array.from(
   { length: REMINDER_RULES.max_per_day_max - REMINDER_RULES.max_per_day_min + 1 },
@@ -59,13 +60,13 @@ function SwitchRow({ label, description, checked, disabled = false, onToggle }: 
         aria-describedby={descId}
         disabled={disabled}
         onClick={onToggle}
-        className="inline-flex min-h-11 min-w-14 shrink-0 items-center justify-center rounded-full disabled:cursor-wait disabled:opacity-60"
+        className="group inline-flex min-h-11 min-w-14 shrink-0 items-center justify-center rounded-full disabled:cursor-wait"
       >
         <span
           aria-hidden="true"
-          className={cn('relative inline-flex h-8 w-14 items-center rounded-full border border-border transition-colors', checked ? 'bg-primary' : 'bg-text/15')}
+          className={cn('relative inline-flex h-8 w-14 items-center rounded-full border border-input-border transition-colors', DISABLED_NEUTRAL_TRACK, checked ? 'bg-primary' : 'bg-text/15')}
         >
-          <span className={cn('inline-block size-6 rounded-full bg-white shadow transition-transform', checked ? 'translate-x-7' : 'translate-x-1')} />
+          <span className={cn('inline-block size-6 rounded-full bg-white shadow transition-transform group-disabled:bg-muted', checked ? 'translate-x-7' : 'translate-x-1')} />
         </span>
       </button>
     </div>
@@ -84,7 +85,8 @@ const chipClasses = (active: boolean) =>
   cn(
     'inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border px-3 text-[15px] font-semibold transition-colors',
     'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
-    active ? 'border-primary bg-primary text-on-primary' : 'border-border bg-surface-solid text-text hover:bg-text/5',
+    active ? 'border-primary bg-primary text-on-primary' : 'border-input-border bg-surface-solid text-text hover:bg-text/5',
+    DISABLED_NEUTRAL,
   );
 
 function DeviceNotifications({ push, pushEnabled }: { push: PushNotificationsState; pushEnabled: boolean }) {

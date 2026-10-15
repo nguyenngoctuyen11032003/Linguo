@@ -1,6 +1,7 @@
 import { useId } from 'react';
 import { SESSION_LENGTHS, type SessionLength } from '@linguo/shared';
 import { cn } from '@/lib/cn';
+import { DISABLED_NEUTRAL } from '@/components/ui/disabled-styles';
 
 interface Props {
   value: SessionLength;
@@ -25,9 +26,10 @@ export function LengthChips({ value, onChange, disabled }: Props) {
             disabled={disabled}
             onClick={() => onChange(length)}
             className={cn(
-              'min-h-11 min-w-11 rounded-full border px-4 text-[15px] font-semibold transition-colors disabled:opacity-60',
+              'min-h-11 min-w-11 rounded-full border px-4 text-[15px] font-semibold transition-colors',
+              DISABLED_NEUTRAL,
               'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
-              length === value ? 'border-primary bg-primary/12 text-primary' : 'border-border hover:bg-text/5',
+              length === value ? 'border-primary bg-primary/12 text-primary' : 'border-input-border hover:bg-text/5',
             )}
           >
             {length} phút

@@ -31,7 +31,7 @@ export function ChoiceGroup<T extends string>({
             className={cn(
               'min-h-11 rounded-full border px-4 text-[15px] font-semibold transition-colors',
               FOCUS_RING,
-              o.id === value ? 'border-primary bg-primary/12 text-primary' : 'border-border hover:bg-text/5',
+              o.id === value ? 'border-primary bg-primary/12 text-primary' : 'border-input-border hover:bg-text/5',
             )}
           >
             {o.label}

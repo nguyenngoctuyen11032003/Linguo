@@ -1,6 +1,7 @@
 import { AlertTriangle } from 'lucide-react';
 import { Button } from './Button';
 import { SolidCard } from './SolidCard';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 interface ErrorStateProps {
   title?: string;
@@ -12,7 +13,7 @@ interface ErrorStateProps {
 
 export function ErrorState({
   title = 'Không tải được dữ liệu',
-  description = 'Đã có lỗi xảy ra. Kiểm tra kết nối mạng rồi thử lại.',
+  description = GENERIC_ERROR_MESSAGE,
   onRetry,
   retryLabel = 'Thử lại',
   headingLevel = 'h2',

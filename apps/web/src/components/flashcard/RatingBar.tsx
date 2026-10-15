@@ -3,6 +3,7 @@ import type { Rating, ReviewCard } from '@linguo/shared';
 import { cn } from '@/lib/cn';
 import { formatInterval } from './formatInterval';
 import { RATING_LABELS, RATING_PREVIEW_KEY, RATINGS } from './ratings';
+import { DISABLED_NEUTRAL } from '@/components/ui/disabled-styles';
 
 export interface RatingBarProps {
   previews: ReviewCard['previews'];
@@ -60,10 +61,11 @@ export function RatingBar({ previews, onRate, revealed, submitting = false, clas
               data-rating={rating}
               className={cn(
                 'flex min-h-14 min-w-0 flex-col items-center justify-center rounded-2xl px-1 py-2 text-center leading-tight',
-                'transition-[scale,background-color] duration-200 not-disabled:active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-60',
+                'transition-[scale,background-color] duration-200 not-disabled:active:scale-[0.97]',
+                DISABLED_NEUTRAL,
                 rating === 3
                   ? 'bg-primary text-on-primary not-disabled:hover:bg-primary-strong'
-                  : 'border border-border bg-surface-solid text-text not-disabled:hover:bg-text/5',
+                  : 'border border-input-border bg-surface-solid text-text not-disabled:hover:bg-text/5',
                 rating === 1 && 'border-error/60',
               )}
             >

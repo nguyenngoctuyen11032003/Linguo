@@ -16,6 +16,7 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 import { formatDate, FOUNDATION_MODE_VALUE, MODE_PARAM, SKILL_LABELS, type SkipReason } from './labels';
 import { SkillProgress } from './SkillProgress';
 import { SkipSkillSheet } from './SkipSkillSheet';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 
 const HOME = '/app';
 
@@ -271,7 +272,7 @@ export function DiagnosticPage() {
         <div className="space-y-4">
           <ErrorState
             title="Không tiếp tục được bài kiểm tra"
-            description={run.error ?? 'Đã có lỗi xảy ra. Kiểm tra kết nối mạng rồi thử lại.'}
+            description={run.error ?? GENERIC_ERROR_MESSAGE}
             onRetry={run.retry}
           />
           <Link to={HOME} className={buttonClasses('ghost', 'md', true)}>

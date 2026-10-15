@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState, type FocusEvent } from 'react';
 import { Check, ChevronDown, Plus } from 'lucide-react';
 import { LANGUAGE_CODES, LANGUAGES, type LanguageCode, type PathStatus } from '@linguo/shared';
 import { Spinner } from './Spinner';
+import { DISABLED_NEUTRAL } from './disabled-styles';
 
 export interface PillPath {
   id: string;
@@ -57,7 +58,7 @@ export function LanguagePill({ paths, currentId, pending = false, onSelect, onAd
   };
 
   const itemClass =
-    'flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm not-disabled:hover:bg-text/5 disabled:cursor-not-allowed disabled:opacity-60';
+    'flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm not-disabled:hover:bg-text/5 ' + DISABLED_NEUTRAL;
 
   return (
     <div ref={wrapperRef} className="relative" onBlur={onBlur}>
@@ -69,7 +70,7 @@ export function LanguagePill({ paths, currentId, pending = false, onSelect, onAd
         aria-busy={pending || undefined}
         aria-label={lang ? `${lang.short} – Ngôn ngữ đang học: ${lang.nameVi}. Đổi ngôn ngữ` : 'Chọn ngôn ngữ học'}
         onClick={() => setOpen((v) => !v)}
-        className="glass inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 text-sm font-semibold"
+        className="glass inline-flex min-h-11 border border-input-border items-center gap-1.5 rounded-full px-4 text-sm font-semibold"
       >
         {lang ? lang.short : 'Ngôn ngữ'}
         {pending ? <Spinner /> : <ChevronDown aria-hidden className="size-4" />}

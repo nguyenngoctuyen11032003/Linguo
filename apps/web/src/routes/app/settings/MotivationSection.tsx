@@ -4,6 +4,7 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { useMotivationPrefs } from '@/features/progress/useMotivationPrefs';
 import { cn } from '@/lib/cn';
 import { SECTION_SCROLL_MARGIN } from './section-state';
+import { DISABLED_NEUTRAL_TRACK } from '@/components/ui/disabled-styles';
 
 interface ToggleRowProps {
   label: string;
@@ -35,13 +36,13 @@ function ToggleRow({ label, description, checked, disabled, onToggle }: ToggleRo
         aria-describedby={descId}
         disabled={disabled}
         onClick={onToggle}
-        className="inline-flex min-h-11 min-w-14 shrink-0 items-center justify-center rounded-full disabled:cursor-wait disabled:opacity-60"
+        className="group inline-flex min-h-11 min-w-14 shrink-0 items-center justify-center rounded-full disabled:cursor-wait"
       >
         <span
           aria-hidden="true"
-          className={cn('relative inline-flex h-8 w-14 items-center rounded-full border border-border transition-colors', checked ? 'bg-primary' : 'bg-text/15')}
+          className={cn('relative inline-flex h-8 w-14 items-center rounded-full border border-input-border transition-colors', DISABLED_NEUTRAL_TRACK, checked ? 'bg-primary' : 'bg-text/15')}
         >
-          <span className={cn('inline-block size-6 rounded-full bg-white shadow transition-transform', checked ? 'translate-x-7' : 'translate-x-1')} />
+          <span className={cn('inline-block size-6 rounded-full bg-white shadow transition-transform group-disabled:bg-muted', checked ? 'translate-x-7' : 'translate-x-1')} />
         </span>
       </button>
     </div>
