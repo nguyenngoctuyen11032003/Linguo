@@ -1,4 +1,5 @@
 import { BookOpen, Drama, GraduationCap, House, Mic, NotebookPen, RotateCcw, Settings, Sparkles, TrendingUp, type LucideIcon } from 'lucide-react';
+import { Presentation } from 'lucide-react';
 
 export interface NavItem {
   to: string;
@@ -23,3 +24,6 @@ export const MORE_NAV: NavItem[] = [
   { to: '/app/tien-do', label: 'Tiến độ', icon: TrendingUp },
   { to: '/app/cai-dat', label: 'Cài đặt', icon: Settings },
 ];
+
+/** Shown after MORE_NAV only to users with a teacher profile (is_teacher()). */
+export const TEACHER_NAV_ITEM: NavItem = { to: '/giao-vien', label: 'Lớp học (giáo viên)', icon: Presentation };

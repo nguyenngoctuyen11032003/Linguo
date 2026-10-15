@@ -7,6 +7,7 @@ import { cn } from '@/lib/cn';
 import { useModalDialog } from '@/lib/useModalDialog';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { MORE_NAV } from './nav';
+import { useTeacherNav } from '@/features/teacher/useTeacherNav';
 
 export function MoreSheet({
   open,
@@ -19,6 +20,7 @@ export function MoreSheet({
   triggerRef?: RefObject<HTMLElement | null>;
 }) {
   const { reduceMotion } = useMotionPrefs();
+  const teacherNav = useTeacherNav();
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   const { pathname } = useLocation();
@@ -75,7 +77,7 @@ export function MoreSheet({
               </button>
             </div>
             <ul className="mt-2 space-y-1">
-              {MORE_NAV.map((item) => (
+              {[...MORE_NAV, ...teacherNav].map((item) => (
                 <li key={item.to}>
                   <NavLink
                     to={item.to}

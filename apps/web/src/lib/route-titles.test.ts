@@ -36,6 +36,8 @@ describe('routeDocumentTitle', () => {
     ['/dieu-khoan', 'Điều khoản sử dụng · Linguo'],
     ['/quan-tri', 'Quản trị — Tổng quan · Linguo'],
     ['/quan-tri/thong-ke', 'Quản trị — Thống kê · Linguo'],
+    ['/giao-vien', 'Giáo viên — Lớp học của tôi · Linguo'],
+    ['/giao-vien/lop/c1', 'Giáo viên — Chi tiết lớp · Linguo'],
     ['/khong-co-trang-nay', `${NOT_FOUND_NAME} · Linguo`],
   ])('%s -> %s', (path, title) => {
     expect(routeDocumentTitle(path)).toBe(title);
