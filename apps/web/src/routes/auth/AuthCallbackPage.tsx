@@ -6,7 +6,7 @@ import { authErrorMessage, isKnownAuthErrorCode } from '@/features/auth/error-ma
 import { markRecoveryPending } from '@/features/auth/recovery';
 import { safeNext } from '@/features/auth/safe-next';
 import { requireSupabase } from '@/lib/supabase';
-import { AuthCard } from './AuthCard';
+import { AuthCard, textLinkClass } from './AuthCard';
 
 /** The only place password-recovery links point to (see ForgotPasswordPage). */
 const RECOVERY_PATH = '/dat-lai-mat-khau';
@@ -52,6 +52,25 @@ export function AuthCallbackPage() {
   }, [params, navigate, providerError]);
 
   if (!error) return <FullScreenLoader label="Đang hoàn tất đăng nhập…" />;
+
+  // A failed password-reset link: the messages ask for a new link, so lead straight to where one is requested.
+  if (safeNext(params.get('next')) === RECOVERY_PATH) {
+    return (
+      <AuthCard
+        title="Không mở được liên kết đặt lại mật khẩu"
+        subtitle={error}
+        footer={
+          <Link to="/dang-nhap" className={textLinkClass}>
+            Đến trang đăng nhập
+          </Link>
+        }
+      >
+        <Link to="/quen-mat-khau" className={buttonClasses('accent', 'lg', true)}>
+          Gửi lại liên kết đặt lại
+        </Link>
+      </AuthCard>
+    );
+  }
 
   return (
     <AuthCard title="Không hoàn tất được đăng nhập" subtitle={error}>

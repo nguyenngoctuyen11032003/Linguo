@@ -212,6 +212,13 @@ describe('AuthCallbackPage', () => {
     expect(sessionStorage.getItem('linguo-recovery')).toBeNull();
   });
 
+  it('offers a new reset link when a password-reset link fails', async () => {
+    at('/auth/callback?next=%2Fdat-lai-mat-khau&error=access_denied&error_code=otp_expired', '/auth/callback', <AuthCallbackPage />);
+    expect(await screen.findByRole('heading', { name: 'Không mở được liên kết đặt lại mật khẩu' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Gửi lại liên kết đặt lại' })).toHaveAttribute('href', '/quen-mat-khau');
+    expect(screen.getByRole('link', { name: 'Đến trang đăng nhập' })).toHaveAttribute('href', '/dang-nhap');
+  });
+
   it('maps a known provider error code to our own text and never renders error_description', async () => {
     at(
       '/auth/callback?error=access_denied&error_code=otp_expired&error_description=%3Cb%3EInjected%3C%2Fb%3E%20raw%20text',
