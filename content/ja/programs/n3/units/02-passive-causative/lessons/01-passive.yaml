@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-passive
+order_index: 1
+level: n3
+title:
+  vi: Được khen, bị mắng - thể bị động ～(ら)れる
+objectives:
+  - vi: Chia thể bị động của ba nhóm động từ.
+  - vi: Kể chuyện mình được khen, bị mắng, được nhờ với người làm hành động đánh dấu bằng に.
+  - vi: Dùng ～によって trong câu bị động mang tính thông tin (ai xây, ai viết, ai phát minh).
+estimated_minutes: 18
+skills: [grammar, speaking, reading]
+prerequisites: [ja:lesson:n3-conditions-review]
+items:
+  - item: ja:item:n3-gram-passive
+  - item: ja:item:n3-gram-niyotte
+  - item: ja:item:n3-homeru
+  - item: ja:item:n3-shikaru
+  - item: ja:item:n3-tanomu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "tôi được sếp khen", "tôi bị thầy mắng", "tôi được nhờ photo tài liệu", và đọc hiểu câu kiểu "ngôi chùa này được xây 800 năm trước".
+  - type: explain
+    text:
+      vi: 'Cách chia - nhóm 1 đổi âm u thành a rồi thêm れる: 叱る → 叱られる, 言う → 言われる (う → わ), 頼む → 頼まれる. Nhóm 2 bỏ る thêm られる: 褒める → 褒められる. Bất quy tắc: する → される, 来る → 来られる.'
+  - type: explain
+    text:
+      vi: 'Câu bị động lấy người chịu tác động làm chủ ngữ, người làm hành động thêm に: (私は) 先生に褒められました. Tiếng Nhật chỉ có một dạng cho cả "được" lẫn "bị" - ngữ cảnh cho biết tốt hay xấu.'
+  - type: explain
+    text:
+      vi: 'Khi nói ai tạo ra cái gì (viết, xây, phát minh) trong văn thông tin, người làm đánh dấu bằng によって: この本は夏目漱石によって書かれました.'
+  - type: deep_explain
+    text:
+      vi: Người Nhật dùng bị động nhiều hơn người Việt, nhất là khi kể chuyện xảy ra với mình - 部長に呼ばれた (tôi bị/được trưởng phòng gọi). Câu chủ động 部長が私を呼んだ đúng nhưng nghe như kể chuyện người khác. Lấy "mình" làm trung tâm là thói quen của tiếng Nhật.
+  - type: example
+    target: 発表がよかったと、部長に褒められました。
+    target_lang: ja
+    translation:
+      vi: Tôi được trưởng phòng khen là bài thuyết trình tốt.
+  - type: example
+    target: 遅刻して、先生に叱られました。
+    target_lang: ja
+    translation:
+      vi: Tôi đi muộn nên bị thầy mắng.
+  - type: example
+    target: 課長に資料のコピーを頼まれました。
+    target_lang: ja
+    translation:
+      vi: Tôi được trưởng nhóm nhờ photo tài liệu.
+    note:
+      vi: Việc được nhờ (コピー) vẫn giữ を.
+  - type: example
+    target: 電話はベルによって発明されました。
+    target_lang: ja
+    translation:
+      vi: Điện thoại được phát minh bởi Bell.
+  - type: common_mistake
+    wrong: 私は先生から叱りました。
+    right: 私は先生に叱られました。
+    target_lang: ja
+    note:
+      vi: Muốn nói "tôi bị mắng" phải đổi động từ sang thể bị động (叱られる) và người mắng dùng に. Giữ 叱りました thì câu thành "tôi đã mắng".
+  - type: common_mistake
+    wrong: 母に言うられました。
+    right: 母に言われました。
+    target_lang: ja
+    note:
+      vi: Động từ đuôi う đổi thành わ rồi thêm れる - 言う → 言われる, 買う → 買われる. Không gắn られる vào thể từ điển.
+  - type: summary
+    points:
+      - vi: Nhóm 1 - u → a + れる (う → わ); nhóm 2 - る → られる; する → される; 来る → 来られる.
+      - vi: Người làm hành động + に; việc được nhờ vẫn giữ を.
+      - vi: Một dạng cho cả "được" và "bị"; ngữ cảnh quyết định.
+      - vi: Tạo ra (書く, 建てる, 発明する) - người làm + によって.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-passive-mcq-iwareru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-passive
+    prompt:
+      stem: Thể bị động của 言う là gì?
+      stem_lang: vi
+      options:
+        - { id: b6n, text: 言われる, lang: ja }
+        - { id: h3x, text: 言あれる, lang: ja }
+        - { id: q8f, text: 言うられる, lang: ja }
+        - { id: e1w, text: 言わせる, lang: ja }
+    answer:
+      correct_option_id: b6n
+    explanation:
+      vi: Động từ đuôi う đổi thành わ rồi thêm れる - 言われる. 言わせる là thể sai khiến (bắt nói), không phải bị động.
+    display_answer: 言われる
+
+  - key: ja:exercise:n3-passive-listen-homerareta
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-homeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 発表がよかったと、部長に褒められました。
+      options:
+        - { id: w5c, text: Tôi được trưởng phòng khen là bài thuyết trình tốt., lang: vi }
+        - { id: k2j, text: Tôi đã khen trưởng phòng vì bài thuyết trình tốt., lang: vi }
+        - { id: m7o, text: Tôi bị trưởng phòng mắng vì bài thuyết trình., lang: vi }
+        - { id: z4e, text: Trưởng phòng nhờ tôi làm bài thuyết trình., lang: vi }
+    answer:
+      correct_option_id: w5c
+    explanation:
+      vi: 部長に褒められました - được trưởng phòng khen (bị động, 部長 là người khen). Nếu tôi khen thì sẽ là 部長を褒めました.
+    display_answer: Tôi được trưởng phòng khen là bài thuyết trình tốt.
+
+  - key: ja:exercise:n3-passive-mcq-ni
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-shikaru
+    prompt:
+      stem: 'Chọn trợ từ đúng: 遅刻して、先生＿＿叱られました。'
+      stem_lang: vi
+      options:
+        - { id: c3t, text: に, lang: ja }
+        - { id: y9s, text: を, lang: ja }
+        - { id: o2g, text: が, lang: ja }
+        - { id: a7d, text: で, lang: ja }
+    answer:
+      correct_option_id: c3t
+    explanation:
+      vi: Trong câu bị động, người làm hành động (người mắng) đánh dấu bằng に. を chỉ tân ngữ, が sẽ biến thầy thành người bị mắng.
+    display_answer: に
+
+  - key: ja:exercise:n3-passive-fill-tanomareta
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-tanomu
+    prompt:
+      template: "課長に資料のコピーを{{b1}}。(頼む)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Tôi được trưởng nhóm nhờ photo tài liệu."
+        - "Gợi ý: 頼む là nhóm 1 - む → ま + れる, chia quá khứ lịch sự."
+    answer:
+      blanks:
+        b1: [頼まれました, たのまれました, 頼まれた, たのまれた]
+    known_wrong:
+      - answer: 頼みました
+        feedback_vi: Đây là chủ động "tôi đã nhờ". Bạn là người được nhờ nên dùng bị động 頼まれました.
+        error_tag: passive_needed
+      - answer: 頼むられました
+        feedback_vi: Nhóm 1 đổi む thành ま rồi thêm れる - 頼まれる.
+        error_tag: passive_form
+    explanation:
+      vi: 頼む → 頼まれる → 頼まれました. Người nhờ (課長) dùng に, việc được nhờ (コピー) vẫn giữ を.
+    display_answer: 課長に資料のコピーを頼まれました。
+
+  - key: ja:exercise:n3-passive-wb-niyotte
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-niyotte
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Điện thoại được phát minh bởi Bell.\""
+      tokens:
+        - { id: d3, text: 発明されました }
+        - { id: d1, text: 電話は }
+        - { id: d4, text: 発明しました }
+        - { id: d2, text: ベルによって }
+    answer:
+      orders:
+        - [d1, d2, d3]
+        - [d2, d1, d3]
+    explanation:
+      vi: Câu bị động mang tính thông tin - người phát minh dùng によって, động từ ở thể bị động 発明されました. 発明しました là chủ động.
+    display_answer: 電話はベルによって発明されました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-passive-fill-shikarareta
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shikaru
+    prompt:
+      template: "子どものとき、よく母{{b1}}{{b2}}。(叱る)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [に]
+        b2: [叱られました, しかられました, 叱られた, しかられた]
+    known_wrong:
+      - answer: を
+        feedback_vi: Người mắng trong câu bị động dùng に, không dùng を.
+        error_tag: passive_agent
+      - answer: 叱りました
+        feedback_vi: Đây là chủ động "đã mắng". Bạn là người bị mắng nên dùng 叱られました.
+        error_tag: passive_needed
+    explanation:
+      vi: 叱る (nhóm 1) → 叱られる. Người mắng (母) + に.
+    display_answer: 子どものとき、よく母に叱られました。
+
+  - key: ja:exercise:n3-passive-translate-homerareta
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-homeru
+    prompt:
+      source_text: Tôi được thầy giáo khen. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 先生に褒められました。
+        - 先生にほめられました。
+        - 私は先生に褒められました。
+        - 私は先生にほめられました。
+        - せんせいにほめられました。
+        - 先生に褒められたんです。
+        - 先生にほめられたんです。
+        - 私は先生から褒められました。
+        - 先生から褒められました。
+        - 先生からほめられました。
+    known_wrong:
+      - answer: 先生を褒めました。
+        feedback_vi: Câu này là "tôi đã khen thầy". Được khen phải dùng bị động 褒められました và 先生に.
+        error_tag: passive_needed
+      - answer: 先生が褒められました。
+        feedback_vi: 先生が... nghĩa là thầy được khen. Bạn là người được khen nên thầy phải đi với に.
+        error_tag: passive_agent
+      - answer: sensei ni homeraremashita
+        feedback_vi: Hãy viết bằng chữ Nhật (kana/kanji); romaji chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: 褒める (nhóm 2) → 褒められる. Người khen thêm に (から cũng được với động từ liên quan lời nói).
+    display_answer: 先生に褒められました。
+
+  - key: ja:exercise:n3-passive-translate-yobareta
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-passive
+    prompt:
+      source_text: Tôi bị trưởng phòng gọi. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 部長に呼ばれました。
+        - 私は部長に呼ばれました。
+        - ぶちょうによばれました。
+        - 部長によばれました。
+        - 部長に呼ばれたんです。
+        - 部長から呼ばれました。
+    known_wrong:
+      - answer: 部長に呼びました。
+        feedback_vi: 呼びました là "đã gọi". Bị gọi dùng bị động 呼ばれました.
+        error_tag: passive_needed
+      - answer: 部長に呼ぶられました。
+        feedback_vi: Nhóm 1 đổi ぶ thành ば rồi thêm れる - 呼ばれる.
+        error_tag: passive_form
+    explanation:
+      vi: 呼ぶ (nhóm 1) → 呼ばれる → 呼ばれました. Người gọi (部長) + に.
+    display_answer: 部長に呼ばれました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-passive-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-passive
+    prompt:
+      stem: Bạn kể với bạn bè rằng hôm nay bị sếp mắng vì quên nộp báo cáo. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: r4p, text: 報告書を出すのを忘れて、上司に叱られました。, lang: ja }
+        - { id: n9h, text: 報告書を出すのを忘れて、上司を叱りました。, lang: ja }
+        - { id: f1k, text: 報告書を出すのを忘れて、上司が叱られました。, lang: ja }
+        - { id: j6b, text: 報告書を出すのを忘れて、上司に叱らせました。, lang: ja }
+    answer:
+      correct_option_id: r4p
+    explanation:
+      vi: Bạn là người bị mắng - 上司に叱られました. 上司を叱りました là bạn mắng sếp; 上司が叱られました là sếp bị mắng; 叱らせました là thể sai khiến.
+    display_answer: 報告書を出すのを忘れて、上司に叱られました。
+
+  - key: ja:exercise:n3-passive-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-niyotte
+    prompt:
+      source_text: この小説は有名な作家によって書かれました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuốn tiểu thuyết này được viết bởi một nhà văn nổi tiếng.
+        - Cuốn tiểu thuyết này do một nhà văn nổi tiếng viết.
+        - Tiểu thuyết này được viết bởi một nhà văn nổi tiếng.
+        - Tiểu thuyết này do một nhà văn nổi tiếng viết.
+        - Cuốn tiểu thuyết này được một nhà văn nổi tiếng viết.
+        - Quyển tiểu thuyết này được viết bởi một nhà văn nổi tiếng.
+        - Quyển tiểu thuyết này do một nhà văn nổi tiếng viết.
+        - Cuốn tiểu thuyết này được viết bởi một tác giả nổi tiếng.
+        - Cuốn tiểu thuyết này do một tác giả nổi tiếng viết.
+        - Một nhà văn nổi tiếng đã viết cuốn tiểu thuyết này.
+        - Cuốn tiểu thuyết này được viết bởi nhà văn nổi tiếng.
+        - Cuốn tiểu thuyết này là do một nhà văn nổi tiếng viết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhà văn nổi tiếng này đã đọc cuốn tiểu thuyết.
+        feedback_vi: 書かれました là "được viết", không phải "đọc"; và chủ đề của câu là cuốn tiểu thuyết.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～によって書かれました - được viết bởi... Tiếng Việt tự nhiên có thể nói "do ... viết".
+    display_answer: Cuốn tiểu thuyết này được viết bởi một nhà văn nổi tiếng.
+
+  - key: ja:exercise:n3-passive-wb-sareru
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-passive
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi được bạn mời đến bữa tiệc.\""
+      tokens:
+        - { id: v4, text: 招待されました }
+        - { id: v2, text: 友だちに }
+        - { id: v5, text: 招待させました }
+        - { id: v3, text: パーティーに }
+        - { id: v1, text: 私は }
+    answer:
+      orders:
+        - [v1, v2, v3, v4]
+        - [v1, v3, v2, v4]
+        - [v2, v3, v4]
+        - [v3, v2, v4]
+    explanation:
+      vi: 招待する → 招待される (する → される). Người mời (友だち) + に, nơi được mời đến (パーティー) + に. 招待させました là thể sai khiến. 私は có thể lược bỏ.
+    display_answer: 私は友だちにパーティーに招待されました。
+
+  - key: ja:exercise:n3-passive-mcq-niyotte
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-niyotte
+    prompt:
+      stem: Bạn giới thiệu với khách du lịch về một ngôi chùa. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: l8v, text: このお寺は約800年前に建てられました。, lang: ja }
+        - { id: s2m, text: このお寺は約800年前に建てました。, lang: ja }
+        - { id: g5r, text: このお寺は約800年前に建たせました。, lang: ja }
+        - { id: t7y, text: このお寺を約800年前に建てられました。, lang: ja }
+    answer:
+      correct_option_id: l8v
+    explanation:
+      vi: Chủ ngữ là ngôi chùa (được xây) - 建てられました với は. 建てました là "đã xây" (cần người xây làm chủ ngữ); 建たせました sai; を không đi với câu bị động kiểu này.
+    display_answer: このお寺は約800年前に建てられました。

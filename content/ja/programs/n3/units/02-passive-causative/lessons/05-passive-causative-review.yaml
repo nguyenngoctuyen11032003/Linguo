@@ -1,0 +1,360 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-passive-causative-review
+order_index: 5
+level: n3
+title:
+  vi: "Ôn tập: bài giới thiệu, tin ngắn và chuyện kể"
+objectives:
+  - vi: Đọc hiểu đoạn giới thiệu địa danh và tin ngắn dùng bị động mang tính thông tin.
+  - vi: Kể lại một trải nghiệm có cả bị động, sai khiến và bị động sai khiến.
+  - vi: Nhận ra ai làm gì với ai trong câu dài.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n3-causative-passive]
+items:
+  - item: ja:item:n3-kaisai
+  - item: ja:item:n3-honyaku
+  - item: ja:item:n3-sekaijuu
+  - item: ja:item:n3-tateru
+  - item: ja:item:n3-gram-passive
+    role: reuse
+  - item: ja:item:n3-gram-niyotte
+    role: reuse
+  - item: ja:item:n3-gram-meiwaku-ukemi
+    role: reuse
+  - item: ja:item:n3-gram-causative
+    role: reuse
+  - item: ja:item:n3-gram-sasete-kudasai
+    role: reuse
+  - item: ja:item:n3-gram-causative-passive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đưa bạn vào hai kiểu văn bản - đoạn giới thiệu du lịch, tin ngắn (nhiều bị động thông tin) và lời kể chuyện cá nhân (nhiều bị động than phiền, bị động sai khiến).
+  - type: explain
+    text:
+      vi: 'Văn giới thiệu, tin tức hay dùng bị động khi không cần nói ai làm: この寺は800年前に建てられました, 大会は東京で開催されます, この本は30か国語に翻訳されています. Người làm, nếu cần, dùng によって.'
+  - type: explain
+    text:
+      vi: 'Khi gặp câu dài, hãy tìm động từ trước: ～れる/られる (bị/được), ～せる/させる (bắt/cho), ～させられる/～される (bị bắt). Sau đó tìm に để biết ai là người làm/ra lệnh.'
+  - type: deep_explain
+    text:
+      vi: ～ています với bị động diễn tả trạng thái kéo dài - 世界中で読まれています (đang được đọc khắp thế giới), 翻訳されています (đã được dịch và vẫn còn). Câu kiểu này rất hay xuất hiện trong bài đọc JLPT N3 về văn hoá, sản phẩm.
+  - type: example
+    target: 金閣寺は1397年に建てられ、1994年に世界遺産に登録されました。
+    target_lang: ja
+    translation:
+      vi: Chùa Kinkaku được xây năm 1397 và được công nhận di sản thế giới năm 1994.
+    note:
+      vi: 建てられ là dạng nối câu (liên dụng) của 建てられて.
+  - type: example
+    target: この小説は30か国語に翻訳され、世界中で読まれています。
+    target_lang: ja
+    translation:
+      vi: Cuốn tiểu thuyết này đã được dịch ra 30 thứ tiếng và được đọc trên khắp thế giới.
+  - type: example
+    target: 来年の大会は大阪で開催される予定です。
+    target_lang: ja
+    translation:
+      vi: Giải đấu năm sau dự kiến được tổ chức ở Osaka.
+  - type: example
+    target: 引っ越しの日、雨に降られたうえに、友だちに2時間も待たされました。
+    target_lang: ja
+    translation:
+      vi: Ngày chuyển nhà, tôi đã bị mưa lại còn bị bạn bắt chờ đến 2 tiếng.
+    note:
+      vi: ～うえに - đã... lại còn...
+  - type: common_mistake
+    wrong: この本は日本語から英語を翻訳されました。
+    right: この本は日本語から英語に翻訳されました。
+    target_lang: ja
+    note:
+      vi: Dịch sang ngôn ngữ nào dùng に - 英語に翻訳する. Ngôn ngữ gốc dùng から.
+  - type: common_mistake
+    wrong: オリンピックが東京で開催しました。
+    right: オリンピックは東京で開催されました。
+    target_lang: ja
+    note:
+      vi: Sự kiện là thứ "được tổ chức" nên dùng bị động 開催されました. Câu chủ động 開催しました cần chủ ngữ là ban tổ chức.
+  - type: summary
+    points:
+      - vi: Văn thông tin - bị động khi không cần nói ai làm; người tạo ra + によって.
+      - vi: ～れています - trạng thái kéo dài (được đọc, được yêu thích).
+      - vi: Đọc câu dài - tìm đuôi động từ trước, rồi tìm に.
+      - vi: 開催する (tổ chức), 翻訳する (dịch), 世界中 (khắp thế giới), 建てる (xây).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-passive-causative-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-tateru
+    prompt:
+      stem: "Đọc: 「このお寺は約800年前に建てられ、今も多くの観光客に愛されています。」 Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: x3f, text: Ngôi chùa được xây khoảng 800 năm trước và nay vẫn được nhiều khách du lịch yêu thích., lang: vi }
+        - { id: q6n, text: Ngôi chùa do khách du lịch xây khoảng 800 năm trước., lang: vi }
+        - { id: j9r, text: Ngôi chùa sẽ được xây lại sau 800 năm., lang: vi }
+        - { id: e2c, text: Ngày nay ít khách du lịch đến ngôi chùa này., lang: vi }
+    answer:
+      correct_option_id: x3f
+    explanation:
+      vi: 建てられ - được xây; 観光客に愛されています - được khách du lịch yêu thích (に ở đây là người yêu thích, không phải người xây).
+    display_answer: Ngôi chùa được xây khoảng 800 năm trước và nay vẫn được nhiều khách du lịch yêu thích.
+
+  - key: ja:exercise:n3-passive-causative-review-listen-kaisai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-kaisai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 来年の大会は大阪で開催される予定です。
+      options:
+        - { id: a6t, text: Giải đấu năm sau dự kiến được tổ chức ở Osaka., lang: vi }
+        - { id: m1y, text: Giải đấu năm ngoái đã được tổ chức ở Osaka., lang: vi }
+        - { id: v8k, text: Osaka dự định không tổ chức giải đấu năm sau., lang: vi }
+        - { id: h4e, text: Giải đấu năm sau sẽ bị huỷ ở Osaka., lang: vi }
+    answer:
+      correct_option_id: a6t
+    explanation:
+      vi: 来年 - năm sau; 開催される予定 - dự kiến được tổ chức. Không có phủ định hay 中止 (huỷ).
+    display_answer: Giải đấu năm sau dự kiến được tổ chức ở Osaka.
+
+  - key: ja:exercise:n3-passive-causative-review-fill-honyaku
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-honyaku
+    prompt:
+      template: "この小説は30か国語{{b1}}{{b2}}、世界中で読まれています。(翻訳する)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Cuốn tiểu thuyết này đã được dịch ra 30 thứ tiếng và được đọc khắp thế giới."
+        - "Gợi ý: dịch sang ngôn ngữ nào dùng に; する → される, dạng nối câu."
+    answer:
+      blanks:
+        b1: [に]
+        b2: [翻訳され, 翻訳されて, ほんやくされ, ほんやくされて]
+    known_wrong:
+      - answer: を
+        feedback_vi: Dịch sang ngôn ngữ nào dùng に, không dùng を.
+        error_tag: particle_ni
+      - answer: 翻訳して
+        feedback_vi: Cuốn sách là thứ được dịch - dùng bị động 翻訳されて.
+        error_tag: passive_needed
+    explanation:
+      vi: ～に翻訳される - được dịch sang...; 翻訳され (văn viết) hoặc 翻訳されて đều nối được hai vế.
+    display_answer: この小説は30か国語に翻訳され、世界中で読まれています。
+
+  - key: ja:exercise:n3-passive-causative-review-mcq-who
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      stem: '「田中さんは部長に会議の資料を作らされた」 - ai là người làm tài liệu?'
+      stem_lang: vi
+      options:
+        - { id: d5w, text: Anh Tanaka (bị trưởng phòng bắt làm)., lang: vi }
+        - { id: k2m, text: Trưởng phòng (bị anh Tanaka bắt làm)., lang: vi }
+        - { id: s9g, text: Trưởng phòng tự làm cho anh Tanaka., lang: vi }
+        - { id: p7b, text: Không rõ ai làm., lang: vi }
+    answer:
+      correct_option_id: d5w
+    explanation:
+      vi: 作らされた là bị động sai khiến - chủ ngữ (田中さん) là người phải làm, người bắt (部長) đi với に.
+    display_answer: Anh Tanaka (bị trưởng phòng bắt làm).
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-passive-causative-review-fill-mix
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-meiwaku-ukemi
+    prompt:
+      template: "引っ越しの日、雨に{{b1}}うえに、友だちに2時間も{{b2}}。(降る / 待つ)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [降られた, ふられた]
+        b2: [待たされました, またされました, 待たせられました, 待たされた, 待たせられた]
+    known_wrong:
+      - answer: 降った
+        feedback_vi: Câu than phiền - mưa làm khổ mình - dùng bị động 雨に降られた.
+        error_tag: passive_needed
+      - answer: 待たせました
+        feedback_vi: 待たせました là "tôi bắt bạn chờ". Bạn là người phải chờ - 待たされました.
+        error_tag: causative_passive_needed
+    explanation:
+      vi: 雨に降られた - bị mưa (bị động than phiền); 友だちに待たされた - bị bạn bắt chờ (bị động sai khiến). ～うえに - đã... lại còn.
+    display_answer: 引っ越しの日、雨に降られたうえに、友だちに2時間も待たされました。
+
+  - key: ja:exercise:n3-passive-causative-review-translate-sekaijuu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-sekaijuu
+    prompt:
+      source_text: Bài hát này được yêu thích trên khắp thế giới. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この歌は世界中で愛されています。
+        - この歌は世界中で人気があります。
+        - この歌は世界中で好かれています。
+        - この曲は世界中で愛されています。
+        - この曲は世界中で人気があります。
+        - この歌は世界中の人に愛されています。
+        - この歌は世界中の人々に愛されています。
+        - この曲は世界中の人に愛されています。
+        - このうたはせかいじゅうであいされています。
+        - この歌は世界中で親しまれています。
+    known_wrong:
+      - answer: この歌は世界中で愛しています。
+        feedback_vi: Bài hát là thứ được yêu - dùng bị động 愛されています.
+        error_tag: passive_needed
+    explanation:
+      vi: 愛する → 愛される (được yêu); ～ています - trạng thái đang tiếp diễn. 世界中で - khắp thế giới.
+    display_answer: この歌は世界中で愛されています。
+
+  - key: ja:exercise:n3-passive-causative-review-translate-kaisai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kaisai
+    prompt:
+      source_text: Thế vận hội được tổ chức ở Tokyo. (lịch sự, quá khứ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - オリンピックは東京で開催されました。
+        - オリンピックが東京で開催されました。
+        - 東京でオリンピックが開催されました。
+        - オリンピックは東京で行われました。
+        - オリンピックが東京で行われました。
+        - 東京でオリンピックが行われました。
+        - オリンピックはとうきょうでかいさいされました。
+    known_wrong:
+      - answer: オリンピックは東京で開催しました。
+        feedback_vi: Thế vận hội là thứ được tổ chức - dùng bị động 開催されました.
+        error_tag: passive_needed
+    explanation:
+      vi: 開催する → 開催される; 行う → 行われる cũng đúng. Nơi tổ chức dùng で.
+    display_answer: オリンピックは東京で開催されました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-passive-causative-review-mcq-story
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-causative
+    prompt:
+      stem: '"Trưởng phòng bắt tôi viết báo cáo, nhưng sau đó lại khen tôi." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: n4c, text: 部長に報告書を書かされましたが、そのあと褒められました。, lang: ja }
+        - { id: t8j, text: 部長に報告書を書かせましたが、そのあと褒めました。, lang: ja }
+        - { id: w3e, text: 部長に報告書を書かれましたが、そのあと褒めさせました。, lang: ja }
+        - { id: c1q, text: 部長が報告書を書かされましたが、そのあと褒められました。, lang: ja }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: Tôi bị bắt viết - 書かされました; tôi được khen - 褒められました; người làm là 部長 + に. Câu thứ hai là tôi bắt trưởng phòng; câu thứ ba sai cả hai động từ; câu cuối trưởng phòng là người bị bắt.
+    display_answer: 部長に報告書を書かされましたが、そのあと褒められました。
+
+  - key: ja:exercise:n3-passive-causative-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-passive
+    prompt:
+      source_text: この製品は若い人によく使われています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sản phẩm này được giới trẻ dùng nhiều.
+        - Sản phẩm này được người trẻ dùng nhiều.
+        - Sản phẩm này được giới trẻ sử dụng nhiều.
+        - Sản phẩm này được người trẻ sử dụng nhiều.
+        - Sản phẩm này được những người trẻ sử dụng nhiều.
+        - Sản phẩm này được giới trẻ ưa dùng.
+        - Sản phẩm này được giới trẻ dùng rất nhiều.
+        - Sản phẩm này được giới trẻ thường xuyên sử dụng.
+        - Sản phẩm này được người trẻ tuổi dùng nhiều.
+        - Giới trẻ dùng sản phẩm này nhiều.
+        - Giới trẻ hay dùng sản phẩm này.
+        - Sản phẩm này được giới trẻ hay dùng.
+        - Sản phẩm này được nhiều bạn trẻ sử dụng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người trẻ không dùng sản phẩm này.
+        feedback_vi: Câu gốc khẳng định - được dùng nhiều (よく使われています).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 使われています - đang được dùng; 若い人に - bởi người trẻ; よく - nhiều, thường.
+    display_answer: Sản phẩm này được giới trẻ dùng nhiều.
+
+  - key: ja:exercise:n3-passive-causative-review-wb-kinkakuji
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-niyotte
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Ngôi chùa này được xây bởi một vị tướng quân.\""
+      tokens:
+        - { id: k4, text: 建てられました }
+        - { id: k2, text: ある将軍によって }
+        - { id: k5, text: 建てさせました }
+        - { id: k1, text: このお寺は }
+    answer:
+      orders:
+        - [k1, k2, k4]
+        - [k2, k1, k4]
+    explanation:
+      vi: Người xây (tạo ra) trong câu thông tin dùng によって; ngôi chùa được xây - 建てられました. 建てさせました là "bắt xây".
+    display_answer: このお寺はある将軍によって建てられました。
+
+  - key: ja:exercise:n3-passive-causative-review-mcq-request
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sasete-kudasai
+    prompt:
+      stem: Bạn muốn xin trưởng phòng cho phụ trách dự án dịch thuật mới. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: r2y, text: 新しい翻訳の仕事を、ぜひ私に担当させてください。, lang: ja }
+        - { id: g6a, text: 新しい翻訳の仕事を、ぜひ私に担当されてください。, lang: ja }
+        - { id: l9u, text: 新しい翻訳の仕事を、ぜひ部長に担当させます。, lang: ja }
+        - { id: o5v, text: 新しい翻訳の仕事を、ぜひ担当させられてください。, lang: ja }
+    answer:
+      correct_option_id: r2y
+    explanation:
+      vi: Xin phép làm - ～させてください; ぜひ - nhất định, rất mong. Các câu còn lại dùng bị động, bắt sếp làm, hoặc bị động sai khiến - đều sai.
+    display_answer: 新しい翻訳の仕事を、ぜひ私に担当させてください。

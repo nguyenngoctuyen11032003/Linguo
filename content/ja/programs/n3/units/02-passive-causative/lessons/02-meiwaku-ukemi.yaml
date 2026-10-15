@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-meiwaku-ukemi
+order_index: 2
+level: n3
+title:
+  vi: Bị mưa, bị giẫm chân - bị động "bị làm phiền"
+objectives:
+  - vi: Kể chuyện xui xẻo bằng bị động gián tiếp - 雨に降られた, 隣の人に騒がれた.
+  - vi: Giữ を cho đồ vật, bộ phận cơ thể của mình - 足を踏まれた, 財布を盗まれた.
+  - vi: Tránh lối dịch từng chữ "chân tôi bị giẫm" thành 私の足が踏まれた.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-passive]
+items:
+  - item: ja:item:n3-gram-meiwaku-ukemi
+  - item: ja:item:n3-fumu
+  - item: ja:item:n3-nusumu
+  - item: ja:item:n3-sawagu
+  - item: ja:item:n3-okosu
+  - item: ja:item:n3-gram-passive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một ngày xui - bị mưa ướt, bị giẫm chân trên tàu, bị trộm xe đạp, bị hàng xóm làm ồn - theo cách người Nhật thật sự nói.
+  - type: explain
+    text:
+      vi: 'Tiếng Nhật có kiểu bị động đặc biệt: người nói chịu phiền vì hành động của người khác, kể cả khi hành động đó không tác động trực tiếp lên mình. 雨に降られた - "tôi bị mưa" (mưa rơi làm tôi khổ); 子どもに泣かれた - "tôi bị con khóc" (con khóc làm tôi mệt).'
+  - type: explain
+    text:
+      vi: 'Khi đồ vật hoặc bộ phận cơ thể của bạn bị tác động, chủ ngữ vẫn là bạn và đồ vật giữ を: (私は) 足を踏まれました, 財布を盗まれました. Người gây ra dùng に.'
+  - type: deep_explain
+    text:
+      vi: Kiểu bị động này luôn mang ý "phiền, khổ". Vì vậy 雨に降られた nghe như than, còn 雨が降った chỉ là thông tin. Người Việt hay quên kiểu này và nói chủ động - câu đúng nhưng mất sắc thái than phiền mà người Nhật mong đợi.
+  - type: example
+    target: 帰りに雨に降られて、びしょびしょになりました。
+    target_lang: ja
+    translation:
+      vi: Trên đường về tôi bị mưa, ướt sũng cả người.
+  - type: example
+    target: 電車の中で、足を踏まれました。
+    target_lang: ja
+    translation:
+      vi: Trên tàu điện tôi bị giẫm vào chân.
+    note:
+      vi: Chủ ngữ là tôi (lược), 足 giữ を.
+  - type: example
+    target: 駅で自転車を盗まれました。
+    target_lang: ja
+    translation:
+      vi: Tôi bị trộm xe đạp ở ga.
+  - type: example
+    target: 夜遅くまで隣の人に騒がれて、寝られませんでした。
+    target_lang: ja
+    translation:
+      vi: Bị hàng xóm làm ồn đến khuya nên tôi không ngủ được.
+  - type: common_mistake
+    wrong: 私の足が踏まれました。
+    right: 足を踏まれました。
+    target_lang: ja
+    note:
+      vi: Tiếng Việt nói "chân tôi bị giẫm" nên người Việt hay dịch như vậy. Tiếng Nhật lấy người làm chủ ngữ và giữ を cho bộ phận cơ thể.
+  - type: common_mistake
+    wrong: 雨が降られました。
+    right: 雨に降られました。
+    target_lang: ja
+    note:
+      vi: Mưa là thứ gây phiền nên đi với に; người chịu phiền (tôi) là chủ ngữ được lược bỏ.
+  - type: summary
+    points:
+      - vi: Bị động gián tiếp - người nói chịu phiền vì hành động của người khác.
+      - vi: Người/vật gây ra + に; đồ vật, bộ phận cơ thể của mình + を.
+      - vi: 雨に降られる, 足を踏まれる, 財布を盗まれる, 子どもに泣かれる.
+      - vi: 起きる - tự dậy; 起こす - đánh thức; 起こされる - bị đánh thức.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-meiwaku-ukemi-mcq-ashi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-fumu
+    prompt:
+      stem: '"Trên tàu tôi bị giẫm vào chân." Câu nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: u6s, text: 電車の中で足を踏まれました。, lang: ja }
+        - { id: i3b, text: 電車の中で私の足が踏みました。, lang: ja }
+        - { id: o9w, text: 電車の中で足に踏まれました。, lang: ja }
+        - { id: e5k, text: 電車の中で足を踏みました。, lang: ja }
+    answer:
+      correct_option_id: u6s
+    explanation:
+      vi: Chủ ngữ là tôi (lược), bộ phận cơ thể giữ を, động từ ở bị động 踏まれました. 足を踏みました nghĩa là "tôi giẫm (chân ai đó)".
+    display_answer: 電車の中で足を踏まれました。
+
+  - key: ja:exercise:n3-meiwaku-ukemi-listen-ame
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-gram-meiwaku-ukemi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 帰りに雨に降られて、びしょびしょになりました。
+      options:
+        - { id: a8m, text: Trên đường về tôi bị mưa nên ướt sũng., lang: vi }
+        - { id: x2c, text: Trên đường về trời mưa nhưng tôi có ô., lang: vi }
+        - { id: h5t, text: Tôi về nhà trước khi trời mưa., lang: vi }
+        - { id: r1y, text: Trên đường về tôi bị ngã nên bẩn hết., lang: vi }
+    answer:
+      correct_option_id: a8m
+    explanation:
+      vi: 雨に降られて - bị mưa (chịu phiền vì mưa); びしょびしょ - ướt sũng. Không có ý mang ô hay về trước khi mưa.
+    display_answer: Trên đường về tôi bị mưa nên ướt sũng.
+
+  - key: ja:exercise:n3-meiwaku-ukemi-mcq-okosareta
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-okosu
+    prompt:
+      stem: '"Sáng sớm tôi bị em bé đánh thức." Chọn dạng đúng: 朝早く、赤ちゃんに＿＿。'
+      stem_lang: vi
+      options:
+        - { id: n6p, text: 起こされました, lang: ja }
+        - { id: d4j, text: 起きられました, lang: ja }
+        - { id: w9q, text: 起こしました, lang: ja }
+        - { id: g2f, text: 起こさせました, lang: ja }
+    answer:
+      correct_option_id: n6p
+    explanation:
+      vi: Đánh thức là 起こす; bị đánh thức là 起こされる (す → さ + れる). 起きられる là thể khả năng/bị động của 起きる (tự dậy); 起こさせる là sai khiến.
+    display_answer: 起こされました
+
+  - key: ja:exercise:n3-meiwaku-ukemi-fill-nusumareta
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-nusumu
+    prompt:
+      template: "駅で自転車{{b1}}{{b2}}。(盗む)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Tôi bị trộm xe đạp ở ga."
+        - "Gợi ý: đồ của mình giữ を; 盗む → む thành ま + れる."
+    answer:
+      blanks:
+        b1: [を]
+        b2: [盗まれました, ぬすまれました, 盗まれた, ぬすまれた]
+    known_wrong:
+      - answer: が
+        feedback_vi: Câu kể chuyện mình bị mất đồ - chủ ngữ là tôi, xe đạp giữ を.
+        error_tag: meiwaku_particle
+      - answer: 盗みました
+        feedback_vi: 盗みました là "tôi đã lấy trộm". Bị lấy trộm phải dùng 盗まれました.
+        error_tag: passive_needed
+    explanation:
+      vi: (私は) 自転車を盗まれました - đồ vật của mình giữ を, động từ bị động 盗まれる.
+    display_answer: 駅で自転車を盗まれました。
+
+  - key: ja:exercise:n3-meiwaku-ukemi-wb-sawagu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-sawagu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Bị hàng xóm làm ồn nên tôi không ngủ được.\""
+      tokens:
+        - { id: s3, text: 寝られませんでした }
+        - { id: s4, text: 騒いで }
+        - { id: s1, text: 隣の人に }
+        - { id: s2, text: 騒がれて }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: 騒ぐ → 騒がれる (bị làm ồn); người gây ồn + に. 騒いで là chủ động - "tôi làm ồn", không hợp với 隣の人に.
+    display_answer: 隣の人に騒がれて、寝られませんでした。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-meiwaku-ukemi-fill-furareta
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-meiwaku-ukemi
+    prompt:
+      template: "傘を持っていなかったので、雨{{b1}}{{b2}}。(降る)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [に]
+        b2: [降られました, ふられました, 降られた, ふられた]
+    known_wrong:
+      - answer: が
+        feedback_vi: Trong bị động gián tiếp, mưa là thứ gây phiền nên đi với に.
+        error_tag: meiwaku_particle
+      - answer: 降りました
+        feedback_vi: 雨が降りました là thông tin trung tính. Ở đây bạn than bị mưa - dùng bị động 降られました với に.
+        error_tag: passive_needed
+    explanation:
+      vi: 雨に降られる - bị mưa ướt. 降る (nhóm 1) → 降られる.
+    display_answer: 傘を持っていなかったので、雨に降られました。
+
+  - key: ja:exercise:n3-meiwaku-ukemi-translate-ashi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-fumu
+    prompt:
+      source_text: Trên tàu điện tôi bị giẫm vào chân. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 電車の中で足を踏まれました。
+        - 電車の中で、足を踏まれました。
+        - 電車で足を踏まれました。
+        - 電車で、足を踏まれました。
+        - 私は電車の中で足を踏まれました。
+        - 電車の中で誰かに足を踏まれました。
+        - 電車の中で、誰かに足を踏まれました。
+        - 電車で誰かに足を踏まれました。
+        - でんしゃのなかであしをふまれました。
+        - 電車の中で足をふまれました。
+        - 電車の中で足を踏まれたんです。
+    known_wrong:
+      - answer: 電車の中で私の足が踏まれました。
+        feedback_vi: Tiếng Nhật lấy người làm chủ ngữ và giữ を cho bộ phận cơ thể - 足を踏まれました.
+        error_tag: meiwaku_particle
+      - answer: 電車の中で足を踏みました。
+        feedback_vi: 踏みました là "tôi giẫm". Bị giẫm phải dùng 踏まれました.
+        error_tag: passive_needed
+    explanation:
+      vi: 足を踏まれる - bị giẫm chân. 電車の中で hoặc 電車で - trên tàu.
+    display_answer: 電車の中で足を踏まれました。
+
+  - key: ja:exercise:n3-meiwaku-ukemi-translate-saifu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-nusumu
+    prompt:
+      source_text: Tôi bị lấy trộm ví. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 財布を盗まれました。
+        - 私は財布を盗まれました。
+        - さいふを盗まれました。
+        - 財布をぬすまれました。
+        - さいふをぬすまれました。
+        - 財布を盗まれたんです。
+        - 財布をとられました。
+        - 財布を取られました。
+        - 誰かに財布を盗まれました。
+    known_wrong:
+      - answer: 私の財布が盗みました。
+        feedback_vi: Câu này sai cả chủ ngữ lẫn động từ. Nói 財布を盗まれました - chủ ngữ là tôi, động từ bị động.
+        error_tag: passive_needed
+      - answer: 財布に盗まれました。
+        feedback_vi: に dùng cho kẻ trộm, không dùng cho đồ bị mất. Đồ bị mất giữ を.
+        error_tag: meiwaku_particle
+    explanation:
+      vi: 盗む → 盗まれる; đồ bị mất giữ を. 取られる (bị lấy) cũng rất hay dùng trong hội thoại.
+    display_answer: 財布を盗まれました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-meiwaku-ukemi-mcq-nuance
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-meiwaku-ukemi
+    prompt:
+      stem: '「雨に降られた」 khác 「雨が降った」 ở điểm nào?'
+      stem_lang: vi
+      options:
+        - { id: k7v, text: Câu đầu than phiền - người nói bị mưa làm khổ; câu sau chỉ báo trời mưa., lang: vi }
+        - { id: b3e, text: Câu đầu là thì tương lai; câu sau là quá khứ., lang: vi }
+        - { id: z8h, text: Câu đầu là mưa nhỏ; câu sau là mưa to., lang: vi }
+        - { id: c5r, text: Hai câu hoàn toàn giống nghĩa và sắc thái., lang: vi }
+    answer:
+      correct_option_id: k7v
+    explanation:
+      vi: Bị động gián tiếp luôn có ý người nói chịu phiền. Cả hai câu đều quá khứ, và không nói gì về lượng mưa.
+    display_answer: Câu đầu than phiền - người nói bị mưa làm khổ; câu sau chỉ báo trời mưa.
+
+  - key: ja:exercise:n3-meiwaku-ukemi-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-okosu
+    prompt:
+      source_text: 夜中に子どもに泣かれて、ほとんど寝られませんでした。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nửa đêm con khóc nên tôi gần như không ngủ được.
+        - Nửa đêm bị con khóc nên tôi gần như không ngủ được.
+        - Nửa đêm con tôi khóc nên tôi gần như không ngủ được.
+        - Nửa đêm bọn trẻ khóc nên tôi hầu như không ngủ được.
+        - Nửa đêm con khóc nên tôi hầu như không ngủ được.
+        - Nửa đêm bị con khóc nên tôi hầu như không ngủ được.
+        - Đêm qua con khóc nên tôi gần như không ngủ được.
+        - Giữa đêm con khóc nên tôi gần như không ngủ được.
+        - Nửa đêm đứa bé khóc nên tôi gần như không ngủ được.
+        - Nửa đêm con khóc làm tôi gần như không ngủ được.
+        - Nửa đêm con khóc nên tôi gần như chẳng ngủ được.
+        - Nửa đêm con khóc nên tôi gần như không ngủ được gì.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nửa đêm tôi làm con khóc nên không ngủ được.
+        feedback_vi: 泣かれて là bị động (tôi chịu phiền vì con khóc), không phải tôi làm con khóc (泣かせる).
+        error_tag: passive_causative
+    explanation:
+      vi: 子どもに泣かれる - bị con khóc (làm phiền); ほとんど～ない - hầu như không; 寝られませんでした - đã không ngủ được.
+    display_answer: Nửa đêm con khóc nên tôi gần như không ngủ được.
+
+  - key: ja:exercise:n3-meiwaku-ukemi-wb-okosareta
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-okosu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Chủ nhật mà sáng sớm tôi bị điện thoại đánh thức.\""
+      tokens:
+        - { id: o4, text: 起こされました }
+        - { id: o2, text: 朝早く }
+        - { id: o5, text: 起きられました }
+        - { id: o1, text: 日曜日なのに }
+        - { id: o3, text: 電話に }
+    answer:
+      orders:
+        - [o1, o2, o3, o4]
+        - [o1, o3, o2, o4]
+    explanation:
+      vi: 起こす → 起こされる - bị đánh thức; 電話に - tác nhân gây phiền. 日曜日なのに - "Chủ nhật vậy mà" (ôn lại のに). 起きられました là "đã dậy được".
+    display_answer: 日曜日なのに、朝早く電話に起こされました。
+
+  - key: ja:exercise:n3-meiwaku-ukemi-mcq-police
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-nusumu
+    prompt:
+      stem: Bạn đến đồn cảnh sát (交番) báo mất xe đạp. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: p1g, text: すみません、駅前で自転車を盗まれたんですが…。, lang: ja }
+        - { id: m4w, text: すみません、駅前で自転車を盗んだんですが…。, lang: ja }
+        - { id: y7n, text: すみません、駅前で自転車に盗まれたんですが…。, lang: ja }
+        - { id: t2d, text: すみません、駅前で自転車を盗ませたんですが…。, lang: ja }
+    answer:
+      correct_option_id: p1g
+    explanation:
+      vi: 自転車を盗まれた - tôi bị trộm xe đạp; ～んですが… mở đầu trình bày vấn đề một cách lịch sự. 盗んだ là "tôi đã trộm"; 自転車に là xe đạp đi trộm; 盗ませた là sai khiến.
+    display_answer: すみません、駅前で自転車を盗まれたんですが…。
