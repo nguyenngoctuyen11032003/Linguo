@@ -28,6 +28,15 @@ describe('buildCsp', () => {
     expect(directive(csp, 'media-src')).toBe("media-src 'self' blob: https://cdn.example.com");
   });
 
+  it('allows recorded listening audio from the Storage bucket (fetched, then played as a blob: URL)', () => {
+    const supabaseUrl = 'https://abc.supabase.co';
+    const clip = `${supabaseUrl}/storage/v1/object/public/content-audio/ko/ko-${'a'.repeat(32)}.wav`;
+    const csp = buildCsp({ supabaseUrl });
+    const origin = new URL(clip).origin;
+    expect(directive(csp, 'connect-src')?.split(' ')).toContain(origin);
+    expect(directive(csp, 'media-src')?.split(' ')).toEqual(expect.arrayContaining([origin, 'blob:']));
+  });
+
   it('originOf only accepts http(s) URLs', () => {
     expect(originOf('https://abc.supabase.co/rest/v1')).toBe('https://abc.supabase.co');
     expect(originOf('http://127.0.0.1:54321')).toBe('http://127.0.0.1:54321');

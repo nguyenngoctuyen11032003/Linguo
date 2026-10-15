@@ -5,7 +5,7 @@ import { ReportContentButton } from '@/components/report';
 import { EASE_OUT } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
-import { AudioPlayButton } from '../exercise/AudioPlayButton';
+import { ContentAudio } from '@/features/audio/ContentAudio';
 import { MachineSpeechButton } from '../exercise/MachineSpeechButton';
 import { answerText, readCardContent, type CardContent } from './cardContent';
 
@@ -153,7 +153,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       )}
       {showAudio && card.item.audio_path && (
         <div className="mt-3 flex justify-center">
-          <AudioPlayButton key={card.card_id} path={card.item.audio_path} />
+          <ContentAudio key={card.card_id} assetId={card.item.audio_path} fallbackText={content.text} fallbackLang={content.lang} compact />
         </div>
       )}
       {showAudio && !card.item.audio_path && content.text && (

@@ -1,6 +1,6 @@
 import { useId, useState } from 'react';
 import type { ListenPrompt } from '@linguo/shared';
-import { AudioPlayButton } from './AudioPlayButton';
+import { ContentAudio } from '@/features/audio/ContentAudio';
 import { ChoiceGroup } from './ChoiceGroup';
 import { detectScriptLang } from './machine-speech';
 import { MachineSpeechButton } from './MachineSpeechButton';
@@ -18,7 +18,7 @@ export function ListenExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & 
       <p id={labelId} className="mb-3 text-[18px] font-semibold leading-snug">
         Nghe và chọn nghĩa đúng
       </p>
-      <AudioPlayButton path={prompt.audio_asset_id} onFailedChange={setFailed} className="mb-3" />
+      {prompt.audio_asset_id !== null && <ContentAudio key={prompt.audio_asset_id} assetId={prompt.audio_asset_id} fallbackText={prompt.fallback_text} onFailedChange={setFailed} className="mb-3" />}
       {noAudio && (
         <MachineSpeechButton
           key={prompt.fallback_text}

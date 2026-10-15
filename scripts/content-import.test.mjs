@@ -5,7 +5,7 @@ import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, 
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { bundleSchema, diagnosticBundleSchema, diagnosticItemSchema, examBundleSchema, examServedQuestionSchema, gradeExamAnswer, gradeResponse } from '@linguo/shared';
+import { bundleSchema, diagnosticBundleSchema, diagnosticItemSchema, examBundleSchema, examServedQuestionSchema, gradeExamAnswer, gradeResponse, isAudioAssetId } from '@linguo/shared';
 import { main } from './content-import.mjs';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
@@ -1266,7 +1266,8 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     // TOPIK bands are checked against the official notice; CEFR has no official pass mark.
     assert.equal(form.scoring.verified, key.startsWith('ko:'), `${key} scoring.verified`);
     assert.ok(new Set(form.questions.map((q) => q.question_type)).size >= 4, `${key}: at least 4 question types`);
-    for (const q of form.questions.filter((x) => x.section === 'listening')) assert.ok(q.script && q.prompt.audio_asset_id === null, q.key);
+    // Listening keeps its script (TTS fallback, shown after submit); audio, when generated, is a content-audio id (docs/AUDIO.md).
+    for (const q of form.questions.filter((x) => x.section === 'listening')) assert.ok(q.script && (q.prompt.audio_asset_id === null || isAudioAssetId(q.prompt.audio_asset_id)), q.key);
   }
   const topik1 = byKey.get('ko:exam:topik-i-mock-1');
   assert.equal(count(topik1, 'writing'), 0);
