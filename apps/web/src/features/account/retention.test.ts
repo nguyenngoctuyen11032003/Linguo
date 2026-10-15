@@ -30,6 +30,13 @@ describe('retention copy', () => {
     expect(STORED_DATA_SUMMARY.join('\n')).toMatch(/báo cáo lỗi kỹ thuật/);
   });
 
+  it('commits to deleting anonymous usage events (analytics) after 180 days', () => {
+    const line = RETENTION_SUMMARY.find((item) => item.startsWith('Sự kiện sử dụng ẩn danh'));
+    expect(line).toBeDefined();
+    expect(line).toMatch(/tự xoá sau 180 ngày/);
+    expect(STORED_DATA_SUMMARY.join('\n')).toMatch(/Sự kiện sử dụng ẩn danh/);
+  });
+
   it('keeps the AI retention lines', () => {
     expect(RETENTION_SUMMARY.join('\n')).toMatch(/lượt dùng AI tự xoá sau 90 ngày/);
   });

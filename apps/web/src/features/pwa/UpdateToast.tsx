@@ -1,5 +1,6 @@
 import { RefreshCw, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useLiftToasts } from '@/components/ui/toast-lift';
 import { isBusyRoute } from './busy-route';
 import { useSwUpdate } from './useSwUpdate';
 
@@ -15,6 +16,8 @@ export interface UpdateToastProps {
 export function UpdateToast({ pathname }: UpdateToastProps) {
   const { updateAvailable, applyUpdate, dismiss } = useSwUpdate();
   const busy = isBusyRoute(pathname ?? (typeof window === 'undefined' ? '' : window.location.pathname));
+  // Shares the bottom slot with the app toasts: push them above this one while it shows.
+  useLiftToasts(1, updateAvailable);
 
   return (
     <div

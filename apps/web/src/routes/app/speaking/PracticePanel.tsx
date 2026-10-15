@@ -1,5 +1,5 @@
 import { useEffect, useId, useState } from 'react';
-import { Mic, Square, Trash2 } from 'lucide-react';
+import { Check, Mic, Square, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { compareToTarget } from '@/features/speaking/overlap';
 import { RATING_AXES, RATING_LABELS, type Ratings, type RatingValue, type SpeakingLanguage } from '@/features/speaking/ratings';
@@ -85,6 +85,7 @@ export function PracticePanel({ lang, target, transcribe, onSaveReflection }: Pr
   const [saved, setSaved] = useState(false);
   const transcriptId = useId();
   const transcriptHelpId = useId();
+  const saveHintId = useId();
   const { status, error } = recorder;
   const selfPractice = !recorder.supported || status === 'error';
   const useTranscript = transcribe && stt.supported;
@@ -121,6 +122,7 @@ export function PracticePanel({ lang, target, transcribe, onSaveReflection }: Pr
             : '';
 
   const showRatings = selfPractice || status === 'recorded';
+  const rated = Object.keys(ratings).length > 0;
   const hint = target && status === 'recorded' && useTranscript ? compareToTarget(target, stt.transcript) : null;
 
   return (
@@ -241,14 +243,27 @@ export function PracticePanel({ lang, target, transcribe, onSaveReflection }: Pr
           <div className="flex flex-wrap items-center gap-3">
             <Button
               variant="ghost"
-              disabled={Object.keys(ratings).length === 0 || saved}
+              disabled={!rated || saved}
+              aria-describedby={rated ? undefined : saveHintId}
               onClick={() => {
                 onSaveReflection(ratings);
                 setSaved(true);
               }}
             >
-              Lưu tự đánh giá trên thiết bị này
+              {saved ? (
+                <>
+                  <Check aria-hidden className="size-4" />
+                  Đã lưu
+                </>
+              ) : (
+                'Lưu tự đánh giá trên thiết bị này'
+              )}
             </Button>
+            {!rated && (
+              <p id={saveHintId} className="text-sm text-muted">
+                Chọn ít nhất một mức tự đánh giá để lưu
+              </p>
+            )}
             <p role="status" className="text-sm text-muted">
               {saved ? 'Đã lưu trên thiết bị này. Bạn chưa mất gì, cứ luyện tiếp nhé!' : ''}
             </p>

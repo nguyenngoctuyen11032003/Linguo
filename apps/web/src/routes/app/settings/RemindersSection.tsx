@@ -20,7 +20,7 @@ import {
   type ReminderDraft,
 } from '@/features/notifications/validation';
 import { cn } from '@/lib/cn';
-import { SECTION_SCROLL_MARGIN } from './section-state';
+import { SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './section-state';
 import { DISABLED_NEUTRAL, DISABLED_NEUTRAL_TRACK } from '@/components/ui/disabled-styles';
 
 const MAX_OPTIONS = Array.from(
@@ -80,6 +80,14 @@ function FieldError({ id, children }: { id: string; children: ReactNode }) {
     </p>
   );
 }
+
+/** DISABLED_NEUTRAL for a chip that is a <label> around a radio: driven by the wrapped input being disabled. */
+const DISABLED_NEUTRAL_LABEL =
+  'has-[:disabled]:cursor-not-allowed has-[:disabled]:border-transparent has-[:disabled]:bg-surface-solid has-[:disabled]:text-muted ' +
+  'has-[:disabled]:outline-2 has-[:disabled]:-outline-offset-2 has-[:disabled]:outline-dashed has-[:disabled]:outline-muted';
+
+/** DISABLED_NEUTRAL for a text/time input (the shared Input has no disabled look of its own). */
+const DISABLED_NEUTRAL_INPUT = 'disabled:cursor-not-allowed disabled:bg-surface-solid disabled:text-muted disabled:border-dashed';
 
 const chipClasses = (active: boolean) =>
   cn(
@@ -189,7 +197,7 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
         onToggle={() => change({ reminders_enabled: !draft.reminders_enabled })}
       />
 
-      <fieldset disabled={!draft.reminders_enabled} className="min-w-0 space-y-5 disabled:opacity-60">
+      <fieldset disabled={!draft.reminders_enabled} className="min-w-0 space-y-5 disabled:text-muted">
         <legend className="sr-only">Lịch nhắc</legend>
         <FormField label="Giờ nhắc" error={errors.remind_at}>
           {(a11y) => (
@@ -200,7 +208,7 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
               invalid={a11y.invalid}
               value={draft.remind_at}
               onChange={(e) => change({ remind_at: e.target.value })}
-              className="max-w-40"
+              className={cn('max-w-40', DISABLED_NEUTRAL_INPUT)}
             />
           )}
         </FormField>
@@ -241,7 +249,7 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
                   invalid={Boolean(errors.quiet)}
                   value={draft.quiet_start}
                   onChange={(e) => change({ quiet_start: e.target.value })}
-                  className="w-40"
+                  className={cn('w-40', DISABLED_NEUTRAL_INPUT)}
                 />
               )}
             </FormField>
@@ -253,7 +261,7 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
                   invalid={Boolean(errors.quiet)}
                   value={draft.quiet_end}
                   onChange={(e) => change({ quiet_end: e.target.value })}
-                  className="w-40"
+                  className={cn('w-40', DISABLED_NEUTRAL_INPUT)}
                 />
               )}
             </FormField>
@@ -265,7 +273,10 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
           <legend className="px-1 text-sm font-medium">Số lần nhắc tối đa mỗi ngày</legend>
           <div className="flex gap-2">
             {MAX_OPTIONS.map((n) => (
-              <label key={n} className={cn(chipClasses(draft.max_per_day === n), 'cursor-pointer has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/45')}>
+              <label
+                key={n}
+                className={cn(chipClasses(draft.max_per_day === n), 'cursor-pointer has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/45', DISABLED_NEUTRAL_LABEL)}
+              >
                 <input
                   type="radio"
                   name="max_per_day"
@@ -316,7 +327,7 @@ export function RemindersSection() {
   return (
     <section id="nhac-hoc" aria-labelledby="reminders-heading" className={SECTION_SCROLL_MARGIN}>
       <SolidCard className="space-y-5">
-        <h2 id="reminders-heading" className="text-lg font-bold">
+        <h2 id="reminders-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
           Nhắc học
         </h2>
         {status === 'loading' && (

@@ -1,5 +1,6 @@
 import { Bell, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { useLiftToasts } from '@/components/ui/toast-lift';
 
 export interface NotificationOpenToastProps {
   /** True while a tapped notification waits for the learner to leave a lesson, exam or session. */
@@ -14,11 +15,13 @@ export interface NotificationOpenToastProps {
  * never reloads it. The live region is always mounted so the toast is announced when it appears.
  */
 export function NotificationOpenToast({ open, onOpen, onDismiss }: NotificationOpenToastProps) {
+  // Sits one slot above UpdateToast (which can be two lines tall); app toasts move above this slot while it shows.
+  useLiftToasts(2, open);
   return (
     <div
       role="status"
       aria-live="polite"
-      className="pointer-events-none fixed inset-x-0 bottom-[calc(10rem+env(safe-area-inset-bottom,0px))] z-[91] flex justify-center px-4 lg:bottom-24"
+      className="pointer-events-none fixed inset-x-0 bottom-[calc(10.5rem+env(safe-area-inset-bottom,0px))] z-[91] flex justify-center px-4 lg:bottom-[6.5rem]"
     >
       {open && (
         <div

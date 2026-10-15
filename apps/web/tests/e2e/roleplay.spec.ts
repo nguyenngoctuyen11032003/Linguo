@@ -60,7 +60,7 @@ test('picks a scenario, chats, sees a correction and goal progress, then finishe
 
   await say(page, 'I want a large latte');
   await expect(log.getByText('Sure! That is turn 1. Anything else?')).toBeVisible();
-  const fix = page.getByRole('region', { name: 'Gợi ý sửa' });
+  const fix = page.getByRole('region', { name: 'Gợi ý sửa câu' });
   await expect(fix).toContainText('I would like');
   await expect(fix).toContainText('Nói "I would like" nghe lịch sự hơn khi gọi đồ.');
   const goals = page.getByRole('list', { name: 'Mục tiêu của tình huống' });
@@ -151,6 +151,115 @@ test('AI text is rendered as text and the page is accessible in light and dark a
     await expectNoHorizontalScroll(page);
     await expectNoSeriousAxe(page, `role-play chat ${scheme} 320px`);
   }
+});
+
+test('at 320x640 the whole composer sits above the bottom nav after every partner reply', async ({ page }) => {
+  await setup(page);
+  await page.setViewportSize({ width: 320, height: 640 });
+  await startCafe(page);
+  const input = page.getByLabel(/Tin nhắn của bạn/);
+  const send = page.getByRole('button', { name: 'Gửi', exact: true });
+  const nav = page.getByRole('navigation', { name: 'Điều hướng chính' });
+  // Input and "Gửi" fully on screen and above the fixed nav (the scroll may still be settling, hence the poll).
+  const clearOfNav = async () => {
+    const navTop = (await nav.boundingBox())!.y;
+    const boxes = [await input.boundingBox(), await send.boundingBox()];
+    return boxes.every((box) => box !== null && box.y >= 0 && box.y + box.height <= navTop);
+  };
+  await expect(input).toBeFocused();
+  await expect.poll(clearOfNav).toBe(true);
+  for (const [turn, text] of [
+    [2, 'I want a large latte'],
+    [3, 'A coffee please'],
+  ] as const) {
+    await say(page, text);
+    await expect(page.getByText(`Lượt ${turn}/12`)).toBeVisible();
+    await expect(input).toBeFocused();
+    await expect.poll(clearOfNav).toBe(true);
+  }
+});
+
+test('leaving a chat with messages asks first; staying keeps the conversation', async ({ page }) => {
+  await setup(page);
+  await startCafe(page);
+  await say(page, 'A coffee please');
+  await expect(page.getByText('Lượt 2/12')).toBeVisible();
+  await page.getByRole('button', { name: 'Chọn tình huống khác' }).click();
+  const dialog = page.getByRole('alertdialog', { name: 'Bỏ cuộc trò chuyện này?' });
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByRole('button', { name: 'Ở lại trò chuyện' })).toBeFocused();
+  await expectNoSeriousAxe(page, 'role-play leave confirm');
+  await page.keyboard.press('Escape');
+  await expect(dialog).toHaveCount(0);
+  await expect(page.getByText('A coffee please')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Chọn tình huống khác' })).toBeFocused();
+
+  await page.getByRole('button', { name: 'Chọn tình huống khác' }).click();
+  await dialog.getByRole('button', { name: 'Bỏ cuộc trò chuyện' }).click();
+  await expect(page.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByText('A coffee please')).toHaveCount(0);
+});
+
+test('quota used up before starting: every "Bắt đầu" is off with the reset hint', async ({ page }) => {
+  await setup(page, { ackAt: ACKED, used: 20, limit: 20 });
+  await openPicker(page);
+  const starts = page.getByRole('button', { name: /^Bắt đầu: / });
+  await expect(starts.first()).toBeDisabled();
+  const count = await starts.count();
+  expect(count).toBeGreaterThan(1);
+  for (let i = 0; i < count; i++) {
+    await expect(starts.nth(i)).toBeDisabled();
+    await expect(starts.nth(i)).toHaveAccessibleDescription(/Bài học và ôn tập vẫn dùng bình thường/);
+  }
+  await expectNoHorizontalScroll(page);
+  await expectNoSeriousAxe(page, 'role-play picker quota used up');
+});
+
+test('focus moves to the scenario title on start, the page title on leave and the recap title on finish', async ({ page }) => {
+  const mock = await setup(page);
+  await openPicker(page);
+  // Hold the opening turn so the focus right after starting can be checked before the reply moves it to the input.
+  let release: () => void = () => {};
+  const held = new Promise<void>((resolve) => (release = resolve));
+  await page.route('**/functions/v1/ai-tutor', async (route) => {
+    await held;
+    await route.fallback();
+  });
+  await page.getByRole('button', { name: 'Bắt đầu: Gọi đồ ở quán cà phê' }).click();
+  await expect(page.getByRole('heading', { level: 2, name: 'Gọi đồ ở quán cà phê' })).toBeFocused();
+  release();
+  await expect(page.getByLabel(/Tin nhắn của bạn/)).toBeFocused();
+
+  await page.getByRole('button', { name: 'Chọn tình huống khác' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Đóng vai với AI' })).toBeFocused();
+
+  await page.getByRole('button', { name: 'Bắt đầu: Gọi đồ ở quán cà phê' }).click();
+  await expect(page.getByLabel(/Tin nhắn của bạn/)).toBeFocused();
+  await say(page, 'A coffee please');
+  await expect(page.getByText('Lượt 2/12')).toBeVisible();
+  await page.getByRole('button', { name: 'Kết thúc và xem tóm tắt' }).click();
+  await expect(page.getByRole('heading', { name: 'Tóm tắt buổi đóng vai' })).toBeFocused();
+  await page.getByRole('button', { name: 'Luyện tình huống khác' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Đóng vai với AI' })).toBeFocused();
+  expect(mock.ai.requests().length).toBeGreaterThan(0);
+});
+
+test('the AI notice talks about the partner and keeps its answer in view at 320x640', async ({ page }) => {
+  await setup(page, { ackAt: null });
+  await page.setViewportSize({ width: 320, height: 640 });
+  await openPicker(page);
+  await page.getByRole('button', { name: 'Bắt đầu: Gọi đồ ở quán cà phê' }).click();
+  const dialog = page.getByRole('alertdialog', { name: /Trước khi trò chuyện với Đối tác AI/ });
+  await expect(dialog).toBeVisible();
+  await expect(dialog).toContainText('Tin nhắn của bạn được gửi tới Google Gemini');
+  await expect(dialog.getByText('Trước khi trò chuyện với Đối tác AI')).toBeFocused();
+  await settleAnimations(page);
+  await expect(dialog.getByRole('button', { name: 'Tôi đã hiểu, tiếp tục' })).toBeInViewport({ ratio: 1 });
+  await expectNoSeriousAxe(page, 'role-play AI notice');
+  await dialog.getByRole('button', { name: 'Tôi đã hiểu, tiếp tục' }).click();
+  await expect(page.getByText('Hi! Welcome to Sunny Café. What can I get you today?')).toBeVisible();
 });
 
 test('the entry links from the tutor and speaking pages lead to the role-play screen', async ({ page }) => {

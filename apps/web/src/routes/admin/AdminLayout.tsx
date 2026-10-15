@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { StaffRole } from '@linguo/shared';
-import { ArrowLeft, BarChart3, BookOpen, Flag, LayoutDashboard, Library, ScrollText, type LucideIcon } from 'lucide-react';
+import { ArrowLeft, BarChart3, BookOpen, Flag, LayoutDashboard, Library, ScrollText, Users, type LucideIcon } from 'lucide-react';
 import { Link, NavLink, Outlet } from 'react-router';
 import { breakOutOfFrame, isFramed } from '@/features/admin/frame-guard';
 import { STAFF_ROLE_LABELS_VI, hasStaffRole } from '@/features/admin/service';
@@ -22,6 +22,7 @@ const ADMIN_NAV: readonly AdminNavItem[] = [
   { to: '/quan-tri/nguon', label: 'Nguồn', icon: Library },
   { to: '/quan-tri/thong-ke', label: 'Thống kê', icon: BarChart3, minRole: 'admin' },
   { to: '/quan-tri/nhat-ky', label: 'Nhật ký', icon: ScrollText, minRole: 'admin' },
+  { to: '/quan-tri/nhan-su', label: 'Nhân sự', icon: Users, minRole: 'admin' },
 ];
 
 /** Keeps the admin area out of search indexes while it is mounted (spec 11 §4), restoring the previous tag after. */

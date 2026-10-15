@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Download, Share } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
@@ -11,13 +11,24 @@ import { useInstallPrompt } from './useInstallPrompt';
 export function InstallAppSection() {
   const { status, promptInstall } = useInstallPrompt();
   const [busy, setBusy] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
+  const headingRef = useRef<HTMLHeadingElement>(null);
 
-  if (status === 'installed' || status === 'unsupported') return null;
+  useEffect(() => {
+    // The button is gone once the prompt is used: keep keyboard focus in the section, on its heading.
+    if (dismissed) headingRef.current?.focus();
+  }, [dismissed]);
+
+  // A dismissed prompt cannot be shown again (status turns 'unsupported'): stay visible with a short note instead
+  // of vanishing under the learner's finger.
+  const showDismissed = dismissed && status !== 'available';
+  if (status === 'installed' || (status === 'unsupported' && !showDismissed)) return null;
 
   const install = async () => {
     setBusy(true);
     try {
-      await promptInstall();
+      const outcome = await promptInstall();
+      if (outcome !== 'accepted') setDismissed(true);
     } finally {
       setBusy(false);
     }
@@ -26,14 +37,22 @@ export function InstallAppSection() {
   return (
     <section id="cai-app" aria-labelledby="install-app-heading" className="scroll-mt-[calc(4.5rem+env(safe-area-inset-top,0px))]">
       <SolidCard className="space-y-3">
-        <h2 id="install-app-heading" className="text-lg font-bold">
+        <h2
+          ref={headingRef}
+          id="install-app-heading"
+          tabIndex={-1}
+          className="rounded-lg text-lg font-bold focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/45"
+        >
           Cài ứng dụng
         </h2>
         <p className="text-[15px]">
           Cài Linguo lên màn hình chính để mở nhanh như một ứng dụng, học được cả khi mạng chập chờn và nhận nhắc học trên thiết
           bị.
         </p>
-        {status === 'available' ? (
+        <p role="status" className="text-[15px] text-muted empty:hidden">
+          {showDismissed ? 'Đã bỏ qua lần này. Bạn có thể cài Linguo sau từ menu của trình duyệt.' : ''}
+        </p>
+        {status === 'unsupported' ? null : status === 'available' ? (
           <Button variant="primary" onClick={install} loading={busy}>
             <Download aria-hidden className="size-5" />
             Cài Linguo lên máy

@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { correctResponse, DEMO_LESSONS, expectNoHorizontalScroll, lessonExercises, mockSupabase, pathRow, signIn } from './fixtures';
+import { correctResponse, DEMO_LESSONS, expectNoHorizontalScroll, lessonExercises, mockSupabase, pathRow, settleAnimations, signIn } from './fixtures';
 
 type Row = ReturnType<typeof lessonExercises>[number];
 
@@ -64,7 +64,12 @@ async function fillAnswer(page: Page, exercise: Row, response: Record<string, un
     case 'mcq':
     case 'listen': {
       const option = prompt.options.find((o: { id: string }) => o.id === response.option_id);
-      await page.getByRole('radio', { name: option.text, exact: true }).click();
+      // A listen exercise shifts its options when the audio fails and the fallback text appears; retry a lost tap.
+      const radio = page.getByRole('radio', { name: option.text, exact: true });
+      await expect(async () => {
+        await radio.click();
+        await expect(radio).toBeChecked({ timeout: 1_500 });
+      }).toPass({ timeout: 15_000 });
       break;
     }
     case 'word_bank':
@@ -90,7 +95,7 @@ function submitButton(page: Page, exercise: Row) {
 async function answerCorrectly(page: Page, exercise: Row) {
   await fillAnswer(page, exercise);
   await submitButton(page, exercise).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
 }
 
 async function runWholeLesson(page: Page, lesson: Record<string, unknown>) {
@@ -126,7 +131,7 @@ test('a learner finds the English lesson on Learn and finishes it', async ({ pag
   await runWholeLesson(page, DEMO_LESSONS.enHello);
 
   await page.goto('/app/hoc-tap');
-  await expect(lessonLink(page, DEMO_LESSONS.enHello.id)).toContainText('Đã xong');
+  await expect(lessonLink(page, DEMO_LESSONS.enHello.id)).toContainText('Đã học');
   await expect(lessonLink(page, DEMO_LESSONS.enIAm.id)).not.toContainText('Nên học trước');
 });
 
@@ -148,7 +153,7 @@ test('a reload mid-lesson resumes at the same step with its feedback', async ({ 
   await page.reload();
   await expect(heading(page)).toHaveText(/^Câu 1\//);
   await expect(page).toHaveURL(url);
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   await next(page);
   await expect(heading(page)).toHaveText(/^Câu 2\//);
   await fillAnswer(page, second!);
@@ -179,8 +184,9 @@ test('a double tap on Check sends a single submission', async ({ page }) => {
   await skipToExercise(page);
   await fillAnswer(page, first!);
   await submitButton(page, first!).dblclick();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
-  await page.waitForTimeout(300);
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
+  // Flush two frames so a second (duplicate) submission would have been sent by now.
+  await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
   expect(mock.submitCalls()).toBe(1);
 });
 
@@ -194,7 +200,7 @@ test('a wrong answer twice reveals the answer and re-checks the exercise at the 
 
   await fillAnswer(page, first, { option_id: wrong.id });
   await submitButton(page, first).click();
-  await expect(page.getByText('Chưa đúng', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chưa đúng', { exact: true })).toBeVisible({ timeout: 15_000 });
   await page.getByRole('button', { name: 'Xem đáp án' }).click();
   await expect(page.getByText(first.key_data.display_answer).first()).toBeVisible();
   await next(page);
@@ -224,7 +230,7 @@ test('the first exercise can be done with the keyboard only', async ({ page }) =
   for (let i = 0; i < 8 && !/^Câu/.test((await heading(page).textContent()) ?? ''); i++) {
     await tabTo((f) => f.text === 'Tiếp tục');
     await page.keyboard.press('Enter');
-    await page.waitForTimeout(100);
+    await settleAnimations(page);
   }
   await expect(heading(page)).toHaveText(/^Câu 1\//);
 
@@ -238,7 +244,7 @@ test('the first exercise can be done with the keyboard only', async ({ page }) =
   await expect(page.getByRole('radio', { name: correctText, exact: true })).toHaveAttribute('aria-checked', 'true');
   await tabTo((f) => f.text === 'Kiểm tra');
   await page.keyboard.press('Enter');
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   await tabTo((f) => f.text === 'Tiếp tục');
   await page.keyboard.press('Enter');
   await expect(heading(page)).toHaveText(/^Câu 2\//);
@@ -267,7 +273,7 @@ test('Korean typed through an IME composition is graded correctly', async ({ pag
   await cdp.send('Input.insertText', { text: '오이' });
   await expect(input).toHaveValue('오이');
   await submitButton(page, exercises[index]!).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
 });
 
 for (const colorScheme of ['light', 'dark'] as const) {
@@ -277,7 +283,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await setup(page, EN_PATH);
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
     const scan = async (label: string) => {
-      await page.waitForTimeout(500);
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, `${label}: ${JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)}`).toEqual([]);

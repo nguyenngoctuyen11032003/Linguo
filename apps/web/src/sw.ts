@@ -5,6 +5,7 @@
 // - Precache: the app shell (HTML, JS, CSS, fonts, icons) listed in self.__WB_MANIFEST.
 // - Navigations: precached index.html (SPA fallback inside the scope, works offline).
 // - Content images/audio: CacheFirst, 7 days, 200 entries.
+// - Recorded listening clips (public `content-audio` bucket): CacheFirst in their own cache, 30 days, 80 entries.
 // - Supabase REST/RPC/Auth/Functions: never handled here (personal data goes straight to the network).
 // - Updates: a new worker waits until the app posts SW_MESSAGE_SKIP_WAITING (the "Tải lại" button).
 // - Push: shows the notification; a click focuses/opens the app and posts SW_NOTIFICATION_CLICKED. An open window is
@@ -24,6 +25,12 @@ import {
   parsePushPayload,
 } from './features/pwa/sw-helpers';
 import { handleNotificationClick } from './features/pwa/sw-click';
+import {
+  CONTENT_AUDIO_CACHE_NAME,
+  CONTENT_AUDIO_MAX_AGE_SECONDS,
+  CONTENT_AUDIO_MAX_ENTRIES,
+  isContentAudioRequest,
+} from './features/audio/sw-audio';
 
 declare const self: ServiceWorkerGlobalScope & { __WB_MANIFEST: Array<{ url: string; revision: string | null }> };
 
@@ -36,6 +43,24 @@ clientsClaim();
 
 // SPA navigations inside the scope get the precached shell; the router renders the page (or NotFound).
 registerRoute(new NavigationRoute(createHandlerBoundToURL('index.html')));
+
+// Recorded listening clips (content-audio bucket): own bounded cache, registered first so it wins over the media rule.
+registerRoute(
+  ({ request }) =>
+    isContentAudioRequest({
+      url: request.url,
+      method: request.method,
+      destination: request.destination,
+      hasRange: request.headers.has('range'),
+    }),
+  new CacheFirst({
+    cacheName: CONTENT_AUDIO_CACHE_NAME,
+    plugins: [
+      new CacheableResponsePlugin({ statuses: [200] }),
+      new ExpirationPlugin({ maxEntries: CONTENT_AUDIO_MAX_ENTRIES, maxAgeSeconds: CONTENT_AUDIO_MAX_AGE_SECONDS, purgeOnQuotaError: true }),
+    ],
+  }),
+);
 
 registerRoute(
   ({ request }) =>

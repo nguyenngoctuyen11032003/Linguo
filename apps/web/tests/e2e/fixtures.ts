@@ -2330,15 +2330,29 @@ export async function signIn(page: Page) {
  */
 export async function settleAnimations(page: Page) {
   await page.evaluate(() => {
-    (window as unknown as { __idleChecks: number }).__idleChecks = 0;
+    const w = window as unknown as { __idleChecks: number; __styleSig: string };
+    w.__idleChecks = 0;
+    w.__styleSig = '';
   });
   await page.waitForFunction(
     () => {
-      const w = window as unknown as { __idleChecks: number };
+      const w = window as unknown as { __idleChecks: number; __styleSig: string };
       const running = document
         .getAnimations()
         .some((a) => a.playState === 'running' && Number.isFinite(Number(a.effect?.getComputedTiming().endTime)));
-      w.__idleChecks = running ? 0 : (w.__idleChecks ?? 0) + 1;
+      // Motion drives opacity/transform from JS (not Web Animations): a changing signature of every non-default
+      // opacity and transform means an entrance (landing fade-in, sheet slide) is still in flight.
+      const sig: string[] = [];
+      document.body.querySelectorAll('*').forEach((el, i) => {
+        const s = getComputedStyle(el);
+        // Infinite CSS animations (spinners, pulses) change forever by design.
+        if (s.animationIterationCount.includes('infinite')) return;
+        if (s.opacity !== '1' || s.transform !== 'none') sig.push(`${i}:${s.opacity}:${s.transform}`);
+      });
+      const signature = sig.join('|');
+      const moving = signature !== w.__styleSig;
+      w.__styleSig = signature;
+      w.__idleChecks = running || moving ? 0 : (w.__idleChecks ?? 0) + 1;
       return w.__idleChecks >= 3;
     },
     undefined,

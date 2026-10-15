@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
-import { mockSupabase, signIn } from './fixtures';
+import { mockSupabase, settleAnimations, signIn } from './fixtures';
 
 const PAGES = [
   { path: '/', auth: false },
@@ -10,6 +10,8 @@ const PAGES = [
   { path: '/app/cai-dat', auth: true },
 ];
 
+test.describe.configure({ timeout: 60_000 }); // 15 s readiness wait below + axe on a loaded machine
+
 for (const { path, auth } of PAGES) {
   for (const colorScheme of ['light', 'dark'] as const) {
     test(`no serious a11y violations on ${path} (${colorScheme})`, async ({ page }, testInfo) => {
@@ -18,7 +20,9 @@ for (const { path, auth } of PAGES) {
       await mockSupabase(page);
       if (auth) await signIn(page);
       await page.goto(path);
-      await page.waitForTimeout(800);
+      await expect(page.getByRole('heading', { level: 1 }).first()).toBeVisible({ timeout: 15_000 });
+      await expect(page.locator('html')).toHaveAttribute('data-theme', colorScheme);
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);

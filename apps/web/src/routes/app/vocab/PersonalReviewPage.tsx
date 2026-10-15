@@ -21,6 +21,8 @@ export function PersonalReviewPage() {
   const cardHeadingRef = useRef<HTMLHeadingElement>(null);
   const summaryRef = useRef<HTMLHeadingElement>(null);
   const cardKey = card ? `${card.card_id}:${position}` : null;
+  /** Due words the server left out of this session (one session serves at most `limit` cards). */
+  const remaining = session.totals ? Math.max(0, session.totals.due_total - total) : 0;
   const listUrl = listId ? `/app/tu-vung-cua-toi/${listId}` : '/app/tu-vung-cua-toi';
 
   useEffect(() => {
@@ -36,9 +38,13 @@ export function PersonalReviewPage() {
 
   const heading = (
     <div className="space-y-1">
-      <Link to={listUrl} className="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-medium text-muted hover:text-text">
-        <ArrowLeft aria-hidden className="size-4" />
-        {list ? list.name : 'Danh sách của tôi'}
+      <Link
+        to={listUrl}
+        aria-label={list ? `Về danh sách ${list.name}` : 'Về danh sách'}
+        className="flex min-h-11 w-fit max-w-full items-center gap-1.5 text-[15px] font-medium text-muted hover:text-text"
+      >
+        <ArrowLeft aria-hidden className="size-4 shrink-0" />
+        <span className="min-w-0 truncate">{list ? list.name : 'Về danh sách'}</span>
       </Link>
       <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Ôn từ vựng của tôi</h1>
     </div>
@@ -98,12 +104,15 @@ export function PersonalReviewPage() {
           </h2>
           <p role="status" className="max-w-sm text-[15px] text-muted">
             {graded.length > 0 ? `Bạn vừa ôn ${graded.length} từ. Lần ôn tiếp theo đã được xếp lịch rồi.` : 'Không có từ nào được chấm trong phiên này.'}
+            {remaining > 0 && ` Còn ${remaining} từ đến hạn hôm nay.`}
           </p>
           <div className="flex w-full max-w-xs flex-col gap-3">
-            <Button variant="accent" size="lg" block onClick={session.retry}>
-              Ôn tiếp nếu còn từ
-            </Button>
-            <Link to={listUrl} className={buttonClasses('ghost', 'lg', true)}>
+            {remaining > 0 && (
+              <Button variant="accent" size="lg" block onClick={session.retry}>
+                Ôn tiếp các từ còn lại
+              </Button>
+            )}
+            <Link to={listUrl} className={buttonClasses(remaining > 0 ? 'ghost' : 'accent', 'lg', true)}>
               Về danh sách
             </Link>
           </div>

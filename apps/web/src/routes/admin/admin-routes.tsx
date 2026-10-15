@@ -8,6 +8,7 @@ import { ContentListPage } from './content/ContentListPage';
 import { OverviewPage } from './OverviewPage';
 import { ReportsPage } from './ReportsPage';
 import { SourcesPage } from './SourcesPage';
+import { StaffPage } from './staff/StaffPage';
 
 /**
  * Children of `/quan-tri` (spec 11 §4). Mount them under `adminRootRoute` (guard + layout); Wave 2 wires that into
@@ -32,6 +33,14 @@ export const adminRoutes: RouteObject[] = [
     element: (
       <AdminGuard minRole="admin">
         <AuditLogPage />
+      </AdminGuard>
+    ),
+  },
+  {
+    path: 'nhan-su',
+    element: (
+      <AdminGuard minRole="admin">
+        <StaffPage />
       </AdminGuard>
     ),
   },

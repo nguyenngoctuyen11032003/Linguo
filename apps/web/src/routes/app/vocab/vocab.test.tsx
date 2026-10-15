@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { PersonalList, PersonalWord } from '@linguo/shared';
 import { LIST_ID, fakeVocabClient, personalCard, personalList, personalWord } from '@/features/personal-vocab/personal-fixtures';
+import { TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { PersonalListPage } from './PersonalListPage';
 import { PersonalListsPage } from './PersonalListsPage';
@@ -213,7 +214,7 @@ describe('PersonalListPage', () => {
     await user.paste('word,meaning\napple,quả táo\npear\n=1+1,công thức\napple,trùng');
     await user.click(within(dialog).getByRole('button', { name: 'Xem trước' }));
 
-    expect(await within(dialog).findByRole('status')).toHaveTextContent('Đọc được 2 từ hợp lệ, 1 dòng có lỗi sẽ bị bỏ qua, 1 dòng trùng từ');
+    expect(await within(dialog).findByRole('status')).toHaveTextContent('Đọc được 2 từ hợp lệ, 1 dòng có lỗi sẽ bị bỏ qua, 1 dòng trùng từ với dòng trước nên được bỏ qua');
     const preview = within(dialog).getByRole('table', { name: /Xem trước 2 trên 2 từ/ });
     expect(within(preview).getByRole('cell', { name: '=1+1' })).toBeInTheDocument();
     const errors = within(dialog).getByRole('table', { name: /1 dòng có lỗi/ });
@@ -306,5 +307,165 @@ describe('PersonalReviewPage', () => {
       { route: `/app/tu-vung-cua-toi/${LIST_ID}/on-tap` },
     );
     expect(await screen.findByRole('heading', { name: 'Chưa có từ nào cần ôn lúc này' })).toBeInTheDocument();
+  });
+});
+
+describe('focus and wording', () => {
+  const openList = () =>
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/tu-vung-cua-toi" element={<PersonalListsPage />} />
+        <Route path="/app/tu-vung-cua-toi/:listId" element={<PersonalListPage />} />
+      </Routes>,
+      { route: `/app/tu-vung-cua-toi/${LIST_ID}` },
+    );
+
+  it('starts each import step from the top and moves focus to its summary', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'Từ vựng TOPIK' })];
+    openList();
+    await user.click(await screen.findByRole('button', { name: 'Nhập từ CSV' }));
+    const dialog = await screen.findByRole('dialog', { name: 'Nhập từ CSV' });
+    const body = dialog.querySelector<HTMLElement>('[data-vocab-dialog-body]') as HTMLElement;
+    expect(body).not.toBeNull();
+    await user.click(within(dialog).getByLabelText('Hoặc dán danh sách vào đây'));
+    await user.paste('apple,quả táo\npear,quả lê');
+    body.scrollTop = 240;
+    await user.click(within(dialog).getByRole('button', { name: 'Xem trước' }));
+
+    const summary = await within(dialog).findByRole('status');
+    expect(summary).toHaveTextContent('Đọc được 2 từ hợp lệ');
+    expect(summary).toHaveFocus();
+    expect(body.scrollTop).toBe(0);
+    expect(within(dialog).getByText(/giữ nguyên lịch ôn và chỉ cập nhật nghĩa/)).toBeInTheDocument();
+
+    // Going back puts the learner in the text box again, with the pasted text kept.
+    await user.click(within(dialog).getByRole('button', { name: 'Chọn lại' }));
+    expect(within(dialog).getByLabelText('Hoặc dán danh sách vào đây')).toHaveFocus();
+    await user.click(within(dialog).getByRole('button', { name: 'Xem trước' }));
+
+    body.scrollTop = 240;
+    await user.click(within(dialog).getByRole('button', { name: 'Nhập 2 từ' }));
+    const done = await within(dialog).findByText(/Đã thêm/);
+    expect(done.closest('[role="status"]')).toHaveFocus();
+    expect(body.scrollTop).toBe(0);
+  });
+
+  it('moves focus to the next word, then the previous one, then the heading as words are deleted', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'Từ vựng TOPIK', due_count: 2 })];
+    words = [personalWord({ term: '사과', meaning: 'quả táo' }), personalWord({ term: '학교', meaning: 'trường học' }), personalWord({ term: '물', meaning: 'nước' })];
+    openList();
+
+    async function remove(term: string) {
+      await user.click(await screen.findByRole('button', { name: `Xoá từ ${term}` }));
+      const dialog = await screen.findByRole('dialog', { name: /Xoá từ/ });
+      await user.click(within(dialog).getByRole('button', { name: 'Xoá từ' }));
+      await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+    }
+
+    await remove('학교');
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Xoá từ 물' })).toHaveFocus());
+    await remove('물');
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Xoá từ 사과' })).toHaveFocus());
+    await remove('사과');
+    await waitFor(() => expect(screen.getByRole('heading', { level: 1, name: 'Từ vựng TOPIK' })).toHaveFocus());
+  });
+
+  it('shows the error state, not "0 từ", when the words fail to load', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'Từ vựng TOPIK', word_count: 4, due_count: 0 })];
+    // The fake counts the words itself: keep the server count at 4, and fail the words query.
+    const inner = client.rpc;
+    client.rpc = (name: string, args: Record<string, unknown>) =>
+      name === 'list_personal_lists' ? Promise.resolve({ data: lists, error: null }) : inner(name, args);
+    client.from = () => {
+      const q: Record<string, unknown> = {};
+      for (const m of ['select', 'eq', 'order']) q[m] = () => q;
+      q.then = (resolve: (v: unknown) => unknown, reject: (e: unknown) => unknown) =>
+        Promise.resolve({ data: null, error: { message: 'TypeError: Failed to fetch', code: '' } }).then(resolve, reject);
+      return q as never;
+    };
+    openList();
+    expect(await screen.findByRole('heading', { name: 'Không tải được các từ' })).toBeInTheDocument();
+    expect(screen.getByText(/· 4 từ/)).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Xoá danh sách' }));
+    const dialog = await screen.findByRole('dialog');
+    expect(dialog).not.toHaveTextContent('Cả 0 từ');
+    expect(dialog).toHaveTextContent('mọi từ trong đó');
+  });
+
+  it('uses consistent names: back to "Từ vựng của tôi", lists under "Danh sách của tôi"', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'Từ vựng TOPIK' })];
+    openList();
+    expect(await screen.findByRole('link', { name: 'Từ vựng của tôi' })).toHaveAttribute('href', '/app/tu-vung-cua-toi');
+    expect(screen.queryByText('Tất cả danh sách')).not.toBeInTheDocument();
+    await user.click(screen.getByRole('link', { name: 'Từ vựng của tôi' }));
+    expect(await screen.findByRole('heading', { level: 2, name: 'Danh sách của tôi' })).toBeInTheDocument();
+  });
+
+  it('defaults a new list to the current path language and moves the choice with arrow keys', async () => {
+    const user = userEvent.setup();
+    renderLists();
+    await user.click(await screen.findByRole('button', { name: /Tạo danh sách đầu tiên/ }));
+    const dialog = await screen.findByRole('dialog', { name: 'Tạo danh sách mới' });
+    const english = within(dialog).getByRole('radio', { name: /Tiếng Anh/ });
+    const korean = within(dialog).getByRole('radio', { name: /Tiếng Hàn/ });
+    // The test learner studies English.
+    expect(english).toBeChecked();
+    english.focus();
+    await user.keyboard('{ArrowRight}');
+    expect(korean).toBeChecked();
+    expect(korean).toHaveFocus();
+  });
+
+  it('defaults to Korean for a Korean path', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<PersonalListsPage />, { route: '/app/tu-vung-cua-toi', paths: { paths: [{ ...TEST_PATH, language: 'ko' }] } });
+    await user.click(await screen.findByRole('button', { name: /Tạo danh sách đầu tiên/ }));
+    const dialog = await screen.findByRole('dialog', { name: 'Tạo danh sách mới' });
+    expect(within(dialog).getByRole('radio', { name: /Tiếng Hàn/ })).toBeChecked();
+  });
+
+  const renderReview = () =>
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/tu-vung-cua-toi/:listId/on-tap" element={<PersonalReviewPage />} />
+      </Routes>,
+      { route: `/app/tu-vung-cua-toi/${LIST_ID}/on-tap` },
+    );
+
+  async function finishOneCard() {
+    const user = userEvent.setup();
+    expect(await screen.findByRole('heading', { level: 2, name: 'Thẻ 1/1' })).toBeInTheDocument();
+    await user.click(screen.getByTestId('flashcard-front'));
+    await user.keyboard('3');
+    expect(await screen.findByRole('heading', { name: 'Xong phiên ôn' })).toBeInTheDocument();
+  }
+
+  it('hides "Ôn tiếp" when nothing is left and keeps the full list name in the back link', async () => {
+    const longName = 'Một tên danh sách rất dài để kiểm tra việc cắt bớt ở màn hình hẹp';
+    lists = [personalList({ name: longName })];
+    words = [personalWord({ term: '사과', meaning: 'quả táo' })];
+    renderReview();
+    await finishOneCard();
+    expect(screen.queryByRole('button', { name: 'Ôn tiếp các từ còn lại' })).not.toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Về danh sách' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: `Về danh sách ${longName}` })).toBeInTheDocument();
+  });
+
+  it('offers "Ôn tiếp các từ còn lại" when due words were left out of the session', async () => {
+    lists = [personalList()];
+    words = [personalWord({ term: '사과', meaning: 'quả táo' })];
+    const inner = client.rpc;
+    client.rpc = (name: string, args: Record<string, unknown>) =>
+      name === 'get_personal_review_queue'
+        ? Promise.resolve({ data: { cards: words.map((w) => personalCard(w)), totals: { due_total: 4, served: 1, new_available: 4 } }, error: null })
+        : inner(name, args);
+    renderReview();
+    await finishOneCard();
+    expect(screen.getByText(/Còn 3 từ đến hạn hôm nay/)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Ôn tiếp các từ còn lại' })).toBeInTheDocument();
   });
 });

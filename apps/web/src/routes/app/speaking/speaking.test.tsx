@@ -132,7 +132,11 @@ describe('SpeakingPage', () => {
     expect(screen.queryByText(/điểm số:|Tổng điểm|\d+\s*\/\s*100/)).toBeNull();
     const save = screen.getByRole('button', { name: 'Lưu tự đánh giá trên thiết bị này' });
     expect(save).toBeDisabled();
+    // A disabled save says why.
+    expect(save).toHaveAccessibleDescription('Chọn ít nhất một mức tự đánh giá để lưu');
     await user.click(within(screen.getByRole('group', { name: 'Độ dễ hiểu' })).getByLabelText('Khá tốt'));
+    expect(save).toBeEnabled();
+    expect(save).not.toHaveAccessibleDescription();
     await user.click(within(screen.getByRole('group', { name: 'Độ trôi chảy' })).getByLabelText('Cần luyện thêm'));
     await user.click(save);
     expect(screen.getByText(/Đã lưu trên thiết bị này/)).toBeInTheDocument();
@@ -140,9 +144,68 @@ describe('SpeakingPage', () => {
       expect.objectContaining({ mode: 'repeat', lang: 'en', ratings: { clarity: 3, fluency: 1 } }),
     ]);
     expect(screen.getByText('Bạn đã lưu 1 lần tự đánh giá trên thiết bị này.')).toBeInTheDocument();
+    // The button itself shows the saved state until a rating changes.
+    expect(screen.getByRole('button', { name: 'Đã lưu' })).toBeDisabled();
+    expect(screen.queryByRole('button', { name: 'Lưu tự đánh giá trên thiết bị này' })).toBeNull();
+    await user.click(within(screen.getByRole('group', { name: 'Độ trôi chảy' })).getByLabelText('Tạm ổn'));
+    expect(screen.queryByRole('button', { name: 'Đã lưu' })).toBeNull();
+    expect(screen.getByRole('button', { name: 'Lưu tự đánh giá trên thiết bị này' })).toBeEnabled();
+  });
 
-    await user.click(screen.getByRole('button', { name: 'Xoá các tự đánh giá đã lưu' }));
-    expect(loadReflections(TEST_USER_ID)).toEqual([]);
+  describe('clearing saved self-assessments', () => {
+    async function saveOne(user: ReturnType<typeof userEvent.setup>) {
+      await user.click(screen.getByRole('button', { name: 'Bắt đầu ghi âm' }));
+      await user.click(await screen.findByRole('button', { name: 'Dừng ghi âm' }));
+      await screen.findByLabelText('Bản ghi giọng của bạn');
+      await user.click(within(screen.getByRole('group', { name: 'Độ dễ hiểu' })).getByLabelText('Khá tốt'));
+      await user.click(screen.getByRole('button', { name: 'Lưu tự đánh giá trên thiết bị này' }));
+    }
+
+    it('asks first, and keeping them returns focus to the button', async () => {
+      const user = userEvent.setup();
+      render();
+      await saveOne(user);
+      const clear = screen.getByRole('button', { name: 'Xoá các tự đánh giá đã lưu' });
+      await user.click(clear);
+      const dialog = screen.getByRole('dialog', { name: 'Xoá các tự đánh giá đã lưu?' });
+      expect(dialog).toHaveAccessibleDescription(/1 lần tự đánh giá/);
+      expect(within(dialog).getByRole('button', { name: 'Giữ lại' })).toHaveFocus();
+      await user.click(within(dialog).getByRole('button', { name: 'Giữ lại' }));
+      await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull());
+      expect(loadReflections(TEST_USER_ID)).toHaveLength(1);
+      expect(clear).toHaveFocus();
+
+      await user.click(clear);
+      await user.keyboard('{Escape}');
+      await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull());
+      expect(loadReflections(TEST_USER_ID)).toHaveLength(1);
+      expect(clear).toHaveFocus();
+    });
+
+    it('deletes on confirm and moves focus to a confirmation in place', async () => {
+      const user = userEvent.setup();
+      render();
+      await saveOne(user);
+      await user.click(screen.getByRole('button', { name: 'Xoá các tự đánh giá đã lưu' }));
+      await user.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Xoá' }));
+      await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull());
+      expect(loadReflections(TEST_USER_ID)).toEqual([]);
+      expect(screen.queryByRole('button', { name: 'Xoá các tự đánh giá đã lưu' })).toBeNull();
+      expect(screen.getByText('Đã xoá các tự đánh giá đã lưu trên thiết bị này.')).toHaveFocus();
+    });
+  });
+
+  it('names the AI conversation link apart from the scripted mode', () => {
+    render();
+    expect(screen.getByRole('link', { name: 'Luyện hội thoại với đối tác AI' })).toHaveAttribute('href', '/app/dong-vai');
+    expect(screen.getByRole('button', { name: 'Hội thoại mẫu', pressed: false })).toBeInTheDocument();
+    expect(screen.queryByText(/Đóng vai/)).toBeNull();
+  });
+
+  it('labels the stop control of the sample voice "Dừng đọc"', () => {
+    mocks.tts = { ...mocks.tts, speakingText: 'Good morning, how are you today?' };
+    render();
+    expect(screen.getByRole('button', { name: 'Dừng đọc' })).toBeInTheDocument();
   });
 
   it('releases the microphone and the audio when the learner leaves the page', async () => {
@@ -268,11 +331,12 @@ describe('SpeakingPage', () => {
     });
   });
 
-  describe('role-play', () => {
+  describe('model dialogue (scripted, no AI)', () => {
     it('walks through the scripted exchange and records only the learner turns', async () => {
       const user = userEvent.setup();
       render();
-      await user.click(screen.getByRole('button', { name: 'Đóng vai' }));
+      await user.click(screen.getByRole('button', { name: 'Hội thoại mẫu' }));
+      expect(screen.getByRole('heading', { level: 2, name: 'Hội thoại mẫu' })).toBeInTheDocument();
       expect(screen.getByText('Hi! What would you like to drink?')).toBeInTheDocument();
       expect(screen.queryByRole('button', { name: 'Bắt đầu ghi âm' })).toBeNull();
       await user.click(screen.getByRole('button', { name: 'Nghe đối phương' }));
@@ -294,7 +358,7 @@ describe('SpeakingPage', () => {
       mocks.material = material({ lang: 'ko', sentences: FALLBACK_SENTENCES.ko });
       const user = userEvent.setup();
       render();
-      await user.click(screen.getByRole('button', { name: 'Đóng vai' }));
+      await user.click(screen.getByRole('button', { name: 'Hội thoại mẫu' }));
       expect(screen.getByText('어서 오세요. 뭘 드릴까요?')).toHaveAttribute('lang', 'ko');
     });
   });

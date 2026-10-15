@@ -49,6 +49,7 @@ async function startFullMock(page: Page) {
 const choose = (page: Page, text: string) => page.getByRole('radio', { name: text, exact: false }).first();
 
 async function axe(page: Page) {
+  await settleAnimations(page);
   const results = await new AxeBuilder({ page }).analyze();
   const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
   expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);

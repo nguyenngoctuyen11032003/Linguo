@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { CheckCircle2, Info, X, XCircle } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { LIFT_CLASS, ToastLiftContext, type RegisterLift, type ToastLiftLevel } from './toast-lift';
 
 export type ToastTone = 'success' | 'error' | 'info';
 interface ToastItem {
@@ -13,6 +14,7 @@ interface ToastApi {
 }
 
 const ToastContext = createContext<ToastApi | null>(null);
+
 const ICONS = { success: CheckCircle2, error: XCircle, info: Info } as const;
 const TONE_CLASS: Record<ToastTone, string> = { success: 'text-success', error: 'text-error', info: 'text-primary' };
 /** Errors stay longer so they can be read; everything else is transient. */
@@ -54,13 +56,25 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
   const api = useMemo(() => ({ show }), [show]);
 
+  const [lifts, setLifts] = useState<ToastLiftLevel[]>([]);
+  const registerLift = useCallback<RegisterLift>((level) => {
+    setLifts((list) => [...list, level]);
+    return () =>
+      setLifts((list) => {
+        const index = list.indexOf(level);
+        return index < 0 ? list : [...list.slice(0, index), ...list.slice(index + 1)];
+      });
+  }, []);
+  const lift = lifts.reduce<0 | ToastLiftLevel>((max, level) => (level > max ? level : max), 0);
+
   return (
     <ToastContext.Provider value={api}>
-      {children}
+      <ToastLiftContext.Provider value={registerLift}>{children}</ToastLiftContext.Provider>
       <div
         role="status"
         aria-live="polite"
-        className="pointer-events-none fixed inset-x-0 bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] z-[90] flex flex-col items-center gap-2 px-4 lg:bottom-6"
+        data-lift={lift}
+        className={cn('pointer-events-none fixed inset-x-0 z-[90] flex flex-col items-center gap-2 px-4', LIFT_CLASS[lift])}
       >
         {items.map((t) => {
           const Icon = ICONS[t.tone];

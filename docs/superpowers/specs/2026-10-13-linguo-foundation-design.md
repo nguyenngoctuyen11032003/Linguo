@@ -243,7 +243,7 @@ Migration `supabase/migrations/<ts>_foundation.sql`:
 | `SUPABASE_DB_PASSWORD` | GitHub Secrets (env `production`) | Không | Có |
 | Google OAuth Client ID/Secret | Supabase Dashboard → Auth → Providers | Không | Không |
 | Site URL + Redirect URLs | Supabase Dashboard → Auth → URL Configuration | — | Có |
-| `GEMINI_API_KEY`, `GEMINI_MODEL`, `GEMINI_DAILY_USER_LIMIT=20`, `GEMINI_MAX_OUTPUT_TOKENS=1200`, `GEMINI_TIMEOUT_MS=20000` | Supabase secrets (`supabase secrets set`) | Không | Không (spec 5; khai báo sẵn trong `.env.example`, phần comment "server-only") |
+| `GEMINI_API_KEY`, `GEMINI_MODEL`, `GEMINI_DAILY_USER_LIMIT=20`, `GEMINI_MAX_OUTPUT_TOKENS=2048`, `GEMINI_TIMEOUT_MS=20000` | Supabase secrets (`supabase secrets set`) | Không | Không (spec 5; khai báo sẵn trong `.env.example`, phần comment "server-only") |
 
 `check-public-env.mjs` fail build nếu key là `sb_secret_…`/JWT role ≠ `anon`, hoặc có biến `VITE_*` chứa SECRET/PASSWORD/SERVICE_ROLE/PRIVATE/DATABASE/GEMINI.
 

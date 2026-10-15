@@ -1,12 +1,13 @@
 import { readFileSync } from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { expectNoHorizontalScroll, mockSupabase, signIn, SUPABASE_URL, USER_ID } from './fixtures';
+import { expectNoHorizontalScroll, mockSupabase, settleAnimations, signIn, SUPABASE_URL, USER_ID } from './fixtures';
 
 const A11Y_PROJECTS = ['iphone-15-pro', 'pixel-7'];
 
 /** `include` scopes axe to one part of a long page (the settings time zone list makes full scans slow on WebKit). */
 async function expectNoSeriousA11y(page: Page, include?: string) {
+  await settleAnimations(page);
   const builder = new AxeBuilder({ page });
   if (include) builder.include(include);
   const results = await builder.analyze();
@@ -153,7 +154,7 @@ test.describe('account data', () => {
     await signIn(page);
     await page.goto('/app/cai-dat#tai-khoan-du-lieu');
     await expect(page.getByRole('region', { name: 'Tài khoản và dữ liệu' })).toBeVisible();
-    await page.waitForTimeout(500);
+    await settleAnimations(page);
     await expectNoSeriousA11y(page, 'section[aria-labelledby="account-data-heading"]');
   });
 });

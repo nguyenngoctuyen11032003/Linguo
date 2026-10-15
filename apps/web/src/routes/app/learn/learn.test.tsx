@@ -1,4 +1,4 @@
-import { screen, within } from '@testing-library/react';
+import { screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { PathLesson } from '@linguo/shared';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
@@ -6,6 +6,7 @@ import { renderWithProviders } from '../../../../tests/unit/render';
 import { pathLesson } from '../lesson/lesson-fixtures';
 import { groupPathLessons } from './grouping';
 import { LearnPage } from './LearnPage';
+import { UNIT_OPEN_KEY } from './unit-open';
 
 type Hook = { status: 'loading' | 'ready' | 'error'; lessons: PathLesson[]; error: string | null; reload: () => void };
 const mocks = vi.hoisted(() => ({ value: null as unknown as Hook }));
@@ -68,7 +69,9 @@ describe('LearnPage', () => {
     expect(links.map((a) => a.getAttribute('href'))).toEqual(
       [greet, names, numbers, grammar].map((l) => `/app/hoc-tap/bai/${l.lesson_id}`),
     );
-    expect(within(links[0] as HTMLElement).getByText('Đã xong')).toBeInTheDocument();
+    // One term for finished lessons, matching "N/M bài đã học".
+    expect(within(links[0] as HTMLElement).getByText('Đã học')).toBeInTheDocument();
+    expect(screen.queryByText('Đã xong')).toBeNull();
     expect(within(links[1] as HTMLElement).getByText('Đang học')).toBeInTheDocument();
     expect(within(links[1] as HTMLElement).getByText('12 phút')).toBeInTheDocument();
     expect(within(links[2] as HTMLElement).getByText('Chưa học')).toBeInTheDocument();
@@ -84,8 +87,45 @@ describe('LearnPage', () => {
   it('recommends the first startable lesson when nothing is in progress', () => {
     setHook({ lessons: [greet, { ...names, run_status: 'not_started' }, numbers] });
     renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
-    expect(screen.getByRole('link', { name: /Học tiếp: Tên của bạn/ })).toBeInTheDocument();
+    // Not started yet: the top link says "Bắt đầu", agreeing with the row's "Bài tiếp theo" badge.
+    expect(screen.getByRole('link', { name: /Bắt đầu: Tên của bạn/ })).toHaveAttribute('href', `/app/hoc-tap/bai/${names.lesson_id}`);
+    expect(screen.queryByRole('link', { name: /Học tiếp:/ })).toBeNull();
     expect(screen.getByText('Bài tiếp theo')).toBeInTheDocument();
+  });
+
+  it('shows the language and current → target level of the path', () => {
+    renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    const header = screen.getByText('Tiếng Anh').closest('p') as HTMLElement;
+    expect(header).toHaveTextContent('A2 → B1');
+    expect(within(header).getByText('trình độ hiện tại A2, mục tiêu B1')).toHaveClass('sr-only');
+  });
+
+  it('opens only the unit holding the recommended lesson and remembers toggles for the tab', async () => {
+    window.sessionStorage.clear();
+    const view = renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    const details = () => [...view.container.querySelectorAll('details')];
+    // Làm quen holds "Tên của bạn" (in progress); Con số and Câu đơn start collapsed.
+    expect(details().map((d) => d.open)).toEqual([true, false, false]);
+    // Lesson links stay in the DOM (and in `ul a[href]`) even when their unit is collapsed.
+    expect(view.container.querySelector(`ul a[href$="/app/hoc-tap/bai/${grammar.lesson_id}"]`)).not.toBeNull();
+
+    await userEvent.click(screen.getByRole('heading', { level: 3, name: 'Câu đơn' }));
+    await waitFor(() => expect(details()[2]?.open).toBe(true));
+    await userEvent.click(screen.getByRole('heading', { level: 3, name: 'Làm quen' }));
+    await waitFor(() => expect(details()[0]?.open).toBe(false));
+    expect(JSON.parse(window.sessionStorage.getItem(UNIT_OPEN_KEY) ?? '{}')).toEqual({ [U3]: true, [U1]: false });
+
+    view.unmount();
+    const again = renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    expect([...again.container.querySelectorAll('details')].map((d) => d.open)).toEqual([false, false, true]);
+    window.sessionStorage.clear();
+  });
+
+  it('marks prerequisites with a route hint, not a lock', () => {
+    renderWithProviders(<LearnPage />, { route: '/app/hoc-tap' });
+    const hint = screen.getByText('Nên học trước: Tên của bạn');
+    expect(hint.querySelector('svg')?.getAttribute('class')).toContain('lucide-route');
+    expect(document.querySelector('.lucide-lock')).toBeNull();
   });
 
   it('shows a kind note when everything is completed', () => {

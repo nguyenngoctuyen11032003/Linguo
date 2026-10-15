@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import { Target } from 'lucide-react';
 import { LEVEL_INFO, roleplayScenarioFitsLevel, roleplayScenariosFor, type LevelCode, type RoleplayScenario } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
@@ -7,7 +8,19 @@ type Lang = 'en' | 'ko';
 
 const levelName = (code: string) => LEVEL_INFO[code as LevelCode]?.label ?? code;
 
-function ScenarioCard({ scenario, suits, onPick, disabled }: { scenario: RoleplayScenario; suits: boolean; onPick: () => void; disabled: boolean }) {
+function ScenarioCard({
+  scenario,
+  suits,
+  onPick,
+  disabled,
+  describedBy,
+}: {
+  scenario: RoleplayScenario;
+  suits: boolean;
+  onPick: () => void;
+  disabled: boolean;
+  describedBy?: string;
+}) {
   return (
     <li>
       <SolidCard className="flex h-full flex-col gap-3 p-4">
@@ -34,7 +47,7 @@ function ScenarioCard({ scenario, suits, onPick, disabled }: { scenario: Rolepla
           {!suits && ' (khác trình độ hiện tại của bạn)'}
         </p>
         <div className="mt-auto">
-          <Button variant={suits ? 'accent' : 'ghost'} disabled={disabled} onClick={onPick} aria-label={`Bắt đầu: ${scenario.title_vi}`}>
+          <Button variant={suits ? 'accent' : 'ghost'} disabled={disabled} onClick={onPick} aria-label={`Bắt đầu: ${scenario.title_vi}`} aria-describedby={describedBy}>
             Bắt đầu
           </Button>
         </div>
@@ -49,12 +62,16 @@ export function ScenarioPicker({
   level,
   onPick,
   disabled,
+  gateHint = null,
 }: {
   language: Lang;
   level: string;
   onPick: (scenario: RoleplayScenario) => void;
   disabled: boolean;
+  /** Today's AI turns are used up: why every "Bắt đầu" is off and when it comes back. */
+  gateHint?: string | null;
 }) {
+  const gateHintId = useId();
   const all = roleplayScenariosFor(language);
   const fitting = all.filter((s) => roleplayScenarioFitsLevel(s, level));
   const others = all.filter((s) => !roleplayScenarioFitsLevel(s, level));
@@ -67,13 +84,25 @@ export function ScenarioPicker({
         </div>
         <ul className="grid gap-3 sm:grid-cols-2">
           {list.map((s) => (
-            <ScenarioCard key={s.key} scenario={s} suits={suits} disabled={disabled} onPick={() => onPick(s)} />
+            <ScenarioCard
+              key={s.key}
+              scenario={s}
+              suits={suits}
+              disabled={disabled}
+              describedBy={gateHint ? gateHintId : undefined}
+              onPick={() => onPick(s)}
+            />
           ))}
         </ul>
       </section>
     );
   return (
     <div className="space-y-6">
+      {gateHint && (
+        <p id={gateHintId} className="rounded-2xl border border-border bg-surface-solid px-4 py-3 text-[15px]">
+          {gateHint} Bài học và ôn tập vẫn dùng bình thường.
+        </p>
+      )}
       {group('Hợp trình độ của bạn', 'Chọn một tình huống rồi trò chuyện với đối tác AI nhé.', fitting, true)}
       {group(
         fitting.length > 0 ? 'Tình huống khác' : 'Các tình huống',
