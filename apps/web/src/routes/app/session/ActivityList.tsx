@@ -27,8 +27,12 @@ interface Props {
   onSkip: (activity: SessionActivity) => void;
 }
 
-const iconButton =
-  'inline-flex size-11 items-center justify-center rounded-full border border-border text-text transition-colors not-disabled:hover:bg-text/5 disabled:opacity-40 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40';
+/** Neutral disabled look shared with Button: dashed outline on a flat surface, no opacity. */
+const DISABLED_NEUTRAL =
+  'disabled:cursor-not-allowed disabled:border-transparent disabled:bg-surface-solid disabled:text-muted disabled:outline-2 disabled:-outline-offset-2 disabled:outline-dashed disabled:outline-muted';
+
+/** 44 px touch target (size-11 = 2.75 rem) for the icon-only up/down buttons. */
+export const iconButton = `inline-flex size-11 min-h-11 min-w-11 items-center justify-center rounded-full border border-border text-text transition-colors not-disabled:hover:bg-text/5 ${DISABLED_NEUTRAL} focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40`;
 
 /** The session plan in the learner's order: minutes, reason, up/down (keyboard: Tab + Enter/Space) and skip. */
 export function ActivityList({ activities, busy, onMove, onSkip }: Props) {
@@ -121,7 +125,7 @@ export function ActivityList({ activities, busy, onMove, onSkip }: Props) {
                   disabled={busy}
                   onClick={() => onSkip(activity)}
                   aria-label={`Bỏ qua “${activity.title_vi}”`}
-                  className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 text-[15px] font-semibold text-muted transition-colors not-disabled:hover:bg-text/5 disabled:opacity-40 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+                  className={`inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 text-[15px] font-semibold text-muted transition-colors not-disabled:hover:bg-text/5 ${DISABLED_NEUTRAL} focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40`}
                 >
                   <SkipForward aria-hidden className="size-4" />
                   Bỏ qua

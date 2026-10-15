@@ -76,7 +76,7 @@ test('restores a planned session, reorders it with the keyboard and keeps the or
   await up.focus();
   await page.keyboard.press('Enter');
   expect(await titles(page)).toEqual([HELLO.title.vi, 'Ôn thẻ đến hạn', I_AM.title.vi, 'Tổng kết']);
-  await expect(page.getByText(`Đã chuyển “${HELLO.title.vi}” lên vị trí 1/4.`)).toBeAttached();
+  await expect(page.getByText(`“${HELLO.title.vi}”: vị trí 1/4.`)).toBeAttached();
   // First now: the up arrow is disabled and focus stays on the same row.
   await expect(page.getByRole('button', { name: `Đưa “${HELLO.title.vi}” xuống` })).toBeFocused();
   await expect.poll(() => mock.planner.calls('reorder_session').length).toBe(1);
@@ -103,6 +103,8 @@ test('skips an activity, runs the recap and completes the session', async ({ pag
 
   await page.getByRole('button', { name: `Bỏ qua “${I_AM.title.vi}”` }).click();
   await expect(page.getByText('Tiến độ: 3/4 hoạt động')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Hoàn tác' })).toBeVisible();
+  await expectNoSeriousAxe(page, 'undo offer');
 
   await page.getByRole('button', { name: 'Tiếp tục' }).click();
   await expect(page.getByRole('heading', { name: 'Tổng kết: lỗi sai hôm nay' })).toBeFocused();

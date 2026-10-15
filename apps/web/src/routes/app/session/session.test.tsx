@@ -16,7 +16,7 @@ import {
 import { LearningPathsContext } from '@/features/learning-paths/LearningPathsProvider';
 import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
-import { SessionPage } from './SessionPage';
+import { SessionPage, UNDO_VISIBLE_MS } from './SessionPage';
 
 interface SheetProps {
   open: boolean;
@@ -280,7 +280,7 @@ describe('a running session', () => {
     screen.getByRole('button', { name: 'Đưa “Chào hỏi” lên' }).focus();
     await userEvent.keyboard('{Enter}');
     expect(activityTitles()).toEqual(['Chào hỏi', 'Ôn thẻ đến hạn', 'Luyện ngữ pháp', 'Tổng kết']);
-    expect(screen.getByText('Đã chuyển “Chào hỏi” lên vị trí 1/4.')).toBeInTheDocument();
+    expect(screen.getByText('“Chào hỏi”: vị trí 1/4.')).toBeInTheDocument();
     // Now first: its up arrow is disabled, so focus moves to its down arrow.
     await waitFor(() => expect(screen.getByRole('button', { name: 'Đưa “Chào hỏi” xuống' })).toHaveFocus());
     await waitFor(() => expect(calls('reorder_session')).toEqual([{ p_session_id: SESSION_ID, p_order: ['a2', 'a1', 'a3', 'a4'] }]));
@@ -322,6 +322,61 @@ describe('a running session', () => {
     expect(calls('update_session_item')).toEqual([{ p_session_id: SESSION_ID, p_item_id: 'a1', p_status: 'skipped', p_seconds: 0 }]);
     expect(screen.getByText('Đã bỏ qua “Ôn thẻ đến hạn”.')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Tiếp tục' })).toBeInTheDocument();
+  });
+
+  it('offers Hoàn tác after a skip and restores the activity through update_session_item', async () => {
+    serve(todayResult(studySession()), {
+      update_session_item: (args) =>
+        args.p_status === 'pending'
+          ? { data: sessionWithStatuses(['pending', 'pending', 'pending', 'pending']) }
+          : { data: sessionWithStatuses(['skipped', 'pending', 'pending', 'pending']) },
+    });
+    render();
+    await ready();
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Ôn thẻ đến hạn”' }));
+    expect(await screen.findByText('Tiến độ: 1/4 hoạt động')).toBeInTheDocument();
+    expect(document.querySelector('p[aria-live="polite"]')).toHaveTextContent('Đã bỏ qua “Ôn thẻ đến hạn”. Bạn có thể bấm Hoàn tác');
+    const undo = screen.getByRole('button', { name: 'Hoàn tác' });
+    expect(undo.className).toContain('min-h-11');
+    undo.focus();
+    await userEvent.keyboard('{Enter}');
+    expect(await screen.findByText('Tiến độ: 0/4 hoạt động')).toBeInTheDocument();
+    expect(calls('update_session_item')[1]).toEqual({ p_session_id: SESSION_ID, p_item_id: 'a1', p_status: 'pending', p_seconds: 0 });
+    expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
+    expect(document.querySelector('p[aria-live="polite"]')).toHaveTextContent('Đã hoàn tác: “Ôn thẻ đến hạn” cần học lại.');
+  });
+
+  it('drops the Hoàn tác offer after a few seconds and when the order changes', async () => {
+    serve(todayResult(studySession()), { update_session_item: { data: sessionWithStatuses(['skipped', 'pending', 'pending', 'pending']) } });
+    render();
+    await ready();
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Ôn thẻ đến hạn”' }));
+    expect(await screen.findByRole('button', { name: 'Hoàn tác' })).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Đưa “Chào hỏi” xuống' }));
+    expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
+
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Luyện ngữ pháp”' }));
+    expect(await screen.findByRole('button', { name: 'Hoàn tác' })).toBeInTheDocument();
+    await act(async () => {
+      await new Promise((resolve) => setTimeout(resolve, UNDO_VISIBLE_MS + 100));
+    });
+    expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
+  }, 20000);
+
+  it('gives the arrows 44 px targets, names with the title and a neutral disabled style', async () => {
+    serve(todayResult(studySession()));
+    render();
+    await ready();
+    const up = screen.getByRole('button', { name: 'Đưa “Ôn thẻ đến hạn” lên' });
+    const down = screen.getByRole('button', { name: 'Đưa “Ôn thẻ đến hạn” xuống' });
+    for (const button of [up, down]) {
+      expect(button.className).toContain('size-11');
+      expect(button.className).toContain('min-h-11');
+      expect(button.className).not.toContain('opacity');
+    }
+    expect(up).toBeDisabled();
+    expect(up.className).toContain('disabled:outline-dashed');
+    expect(down).toBeEnabled();
   });
 
   it('keeps a skip made while a reorder is still in flight', async () => {

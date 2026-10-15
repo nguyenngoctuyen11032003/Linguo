@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react';
-import { Leaf, PauseCircle, Scissors } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Leaf, PauseCircle, Scissors, Undo2 } from 'lucide-react';
 import { Link, Navigate, useNavigate, useSearchParams } from 'react-router';
 import { nearestSessionLength, SESSION_LENGTHS, type SessionActivity, type SessionLength, type StudySession } from '@linguo/shared';
 import { Button, buttonClasses } from '@/components/ui/Button';
@@ -19,6 +19,9 @@ import { ActivityList, type MoveDirection } from './ActivityList';
 import { CompletionView } from './CompletionView';
 import { LengthChips } from './LengthChips';
 import { RecapView } from './RecapView';
+
+/** How long the "Hoàn tác" offer after a skip stays on screen. */
+export const UNDO_VISIBLE_MS = 8000;
 
 const TITLE = 'Phiên học hôm nay';
 
@@ -61,8 +64,16 @@ function PathSession() {
    * the last request already includes all earlier ones. Only that newest answer is put on screen: an older one
    * would undo a change made after it was sent (e.g. bring back an activity skipped during a reorder).
    */
+  const [undo, setUndo] = useState<{ itemId: string; title: string } | null>(null);
   const requests = useRef<Promise<unknown>>(Promise.resolve());
   const latestRequest = useRef(0);
+
+  // The offer lapses after a few seconds (a later change also clears it).
+  useEffect(() => {
+    if (!undo) return;
+    const timer = window.setTimeout(() => setUndo(null), UNDO_VISIBLE_MS);
+    return () => window.clearTimeout(timer);
+  }, [undo]);
 
   if (paths.status === 'ready' && paths.paths.length === 0) return <Navigate to="/app/bat-dau" replace />;
 
@@ -78,6 +89,7 @@ function PathSession() {
 
   async function mutate(job: () => Promise<StudySession>, success?: (saved: StudySession) => void) {
     if (saving) return;
+    setUndo(null);
     setSaving(true);
     try {
       const request = enqueue(job);
@@ -97,10 +109,11 @@ function PathSession() {
     const moved = activities[index];
     const other = activities[target];
     if (!moved || !other) return;
+    setUndo(null);
     activities[index] = other;
     activities[target] = moved;
     setSession({ ...current, plan: { ...current.plan, activities } });
-    setAnnouncement(`Đã chuyển “${moved.title_vi}” ${direction === 'up' ? 'lên' : 'xuống'} vị trí ${target + 1}/${activities.length}.`);
+    setAnnouncement(`“${moved.title_vi}”: vị trí ${target + 1}/${activities.length}.`);
 
     const order = activities.map((a) => a.id);
     const request = enqueue(() => reorderSession(requireSupabase(), current.id, order));
@@ -117,7 +130,18 @@ function PathSession() {
   function skip(current: StudySession, activity: SessionActivity) {
     void mutate(
       () => updateSessionItem(requireSupabase(), current.id, activity.id, 'skipped', 0),
-      () => setAnnouncement(`Đã bỏ qua “${activity.title_vi}”.`),
+      () => {
+        setAnnouncement(`Đã bỏ qua “${activity.title_vi}”. Bạn có thể bấm Hoàn tác trong vài giây.`);
+        setUndo({ itemId: activity.id, title: activity.title_vi });
+      },
+    );
+  }
+
+  /** Back to pending through the same serialized queue as every other change. */
+  function undoSkip(current: StudySession, offer: { itemId: string; title: string }) {
+    void mutate(
+      () => updateSessionItem(requireSupabase(), current.id, offer.itemId, 'pending', 0),
+      () => setAnnouncement(`Đã hoàn tác: “${offer.title}” cần học lại.`),
     );
   }
 
@@ -268,6 +292,20 @@ function PathSession() {
           <h2 id="session-activities-title" className="text-lg font-bold">
             Các hoạt động
           </h2>
+          {undo && (
+            <div className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-surface-solid p-3 pl-4">
+              <p className="min-w-0 text-[15px] break-words">Đã bỏ qua “{undo.title}”.</p>
+              <button
+                type="button"
+                disabled={saving}
+                onClick={() => undoSkip(session, undo)}
+                className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border border-border px-4 text-[15px] font-semibold text-text transition-colors not-disabled:hover:bg-text/5 disabled:cursor-not-allowed disabled:border-transparent disabled:bg-surface-solid disabled:text-muted disabled:outline-2 disabled:-outline-offset-2 disabled:outline-dashed disabled:outline-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+              >
+                <Undo2 aria-hidden className="size-4" />
+                Hoàn tác
+              </button>
+            </div>
+          )}
           <ActivityList
             activities={session.plan.activities}
             busy={saving}
