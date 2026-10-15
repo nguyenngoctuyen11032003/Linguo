@@ -16,7 +16,8 @@ const PERSONAL_MESSAGES: Record<PersonalVocabErrorCode, string> = {
   list_full: `Danh sách này chỉ chứa tối đa ${L.maxWordsPerList} từ. Hãy tách phần còn lại sang một danh sách khác.`,
   vocab_full: `Tổng số từ cá nhân của bạn đã đạt mức tối đa ${L.maxWordsPerUser} từ. Hãy xoá bớt từ không cần nữa.`,
   invalid_rows: 'Không có dòng nào hợp lệ để nhập.',
-  too_many_rows: `Mỗi lần chỉ nhập được tối đa ${L.maxRowsPerImport} dòng. Hãy tách file thành nhiều phần.`,
+  // Also returned when the rows exceed the server payload cap (600 000 bytes), even under the row limit.
+  too_many_rows: `Lần nhập này quá nhiều dòng hoặc quá dài (tối đa ${L.maxRowsPerImport} dòng mỗi lần). Hãy tách file thành nhiều phần.`,
   rate_limited: `Bạn đã nhập khá nhiều rồi (tối đa ${L.maxImportsPerHour} lần mỗi giờ). Nghỉ một lát rồi thử lại nhé.`,
   invalid_term: `Từ cần có từ 1 đến ${L.term} ký tự.`,
   invalid_meaning: `Nghĩa cần có từ 1 đến ${L.meaning} ký tự.`,
