@@ -100,10 +100,12 @@ test('a lesson opened from the session reports it done and leads back', async ({
   const mock = await setup(page, { session: studySessionRow() });
   const lesson = DEMO_LESSONS.enHello;
   const exercises = lessonExercises(String(lesson.id));
-  const heading = page.getByRole('heading', { level: 1 });
+  const title = page.getByRole('heading', { level: 1 });
+  // The current step: the question counter (live paragraph) or a content step h2.
+  const heading = page.locator('main').locator('h2, p[aria-live="polite"]').first();
 
   await page.goto(`/app/hoc-tap/bai/${lesson.id}?phien=${SESSION_ID}&muc=a2`);
-  await expect(heading).toHaveText(String((lesson.title as { vi: string }).vi), { timeout: 15_000 });
+  await expect(title).toHaveText(String((lesson.title as { vi: string }).vi), { timeout: 15_000 });
   for (let i = 0; i < 8 && !/^Câu \d+\/\d+$/.test((await heading.textContent()) ?? ''); i++) await next(page);
   for (const [i, exercise] of exercises.entries()) {
     await expect(heading).toHaveText(`Câu ${i + 1}/${exercises.length}`);

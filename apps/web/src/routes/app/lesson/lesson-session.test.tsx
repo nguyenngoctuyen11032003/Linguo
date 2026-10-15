@@ -102,7 +102,7 @@ describe('LessonPage in a study session', () => {
 
   it('leaves to the session page from the exit sheet', async () => {
     localStorage.setItem('linguo-reduce-motion', 'true');
-    renderLesson(makeRun({ stepIndex: 2 }));
+    renderLesson(makeRun({ stepIndex: 2, pendingCount: 1 }));
     await userEvent.click(screen.getByRole('button', { name: 'Thoát bài học' }));
     await userEvent.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Thoát' }));
     expect(screen.getByTestId('location')).toHaveTextContent(/^\/app\/phien-hoc$/);

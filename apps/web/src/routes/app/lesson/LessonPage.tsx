@@ -26,6 +26,7 @@ const CONTENT_TITLES = {
   explain: 'Giải thích',
   examples: 'Ví dụ',
   mistake: 'Lỗi thường gặp',
+  objective: 'Bắt đầu bài học',
   summary: 'Tóm tắt',
   next_review: 'Hoàn thành bài học',
 } as const;
@@ -33,7 +34,6 @@ const CONTENT_TITLES = {
 const LEARN_PATH = '/app/hoc-tap';
 
 function stepTitle(run: LessonRunApi, step: LessonStep): string {
-  if (step.kind === 'objective') return run.lesson?.title.vi ?? '';
   if (step.kind === 'exercise') {
     const { current, total } = questionPosition(run.steps, run.stepIndex);
     return `Câu ${current}/${total}`;
@@ -59,7 +59,7 @@ export function LessonPage() {
   const fromSession = sessionReturn.link !== null;
   const [returning, setReturning] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
+  const titleRef = useRef<HTMLHeadingElement & HTMLParagraphElement>(null);
   const { status, step, stepIndex, lesson } = run;
   const completed = !!run.completeResult;
   const { reportDone } = sessionReturn;
@@ -82,23 +82,30 @@ export function LessonPage() {
     if (status === 'ready') titleRef.current?.focus();
   }, [status, stepIndex]);
 
+  function leave() {
+    navigate(fromSession ? SESSION_PAGE_PATH : LEARN_PATH);
+  }
+
   const header = (
     <header className="pt-safe">
       <div className="mx-auto flex min-h-14 w-full max-w-xl items-center gap-3 px-safe py-2">
         <button
           ref={closeRef}
           type="button"
-          onClick={() => setExitOpen(true)}
+          onClick={() => (run.pendingCount > 0 ? setExitOpen(true) : leave())}
           aria-label="Thoát bài học"
           className="inline-flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-text/5"
         >
           <X aria-hidden className="size-5" />
         </button>
-        {status === 'ready' && run.steps.length > 0 ? (
-          <LessonProgress steps={run.steps} stepIndex={stepIndex} />
-        ) : (
-          <span className="flex-1" />
-        )}
+        <div className="min-w-0 flex-1 space-y-1">
+          {status === 'ready' && lesson && (
+            <h1 className="truncate text-base font-bold leading-tight" title={lesson.title.vi}>
+              {lesson.title.vi}
+            </h1>
+          )}
+          {status === 'ready' && run.steps.length > 0 && <LessonProgress steps={run.steps} stepIndex={stepIndex} />}
+        </div>
       </div>
     </header>
   );
@@ -107,7 +114,7 @@ export function LessonPage() {
     <ExitSheet
       open={exitOpen}
       onClose={() => setExitOpen(false)}
-      onExit={() => navigate(fromSession ? SESSION_PAGE_PATH : LEARN_PATH)}
+      onExit={leave}
       pendingCount={run.pendingCount}
       triggerRef={closeRef}
     />
@@ -272,17 +279,24 @@ export function LessonPage() {
             <span className="rounded-full bg-warn/15 px-3 py-1 text-sm font-semibold">Làm lại câu sai</span>
           )}
         </div>
-        <h1
-          ref={titleRef}
-          tabIndex={-1}
-          className={
-            step.kind === 'exercise'
-              ? 'mt-2 text-sm font-semibold text-muted focus:outline-none'
-              : 'mt-2 text-[26px] font-bold leading-tight tracking-[-0.03em] focus:outline-none'
-          }
-        >
-          {stepTitle(run, step)}
-        </h1>
+        {step.kind === 'exercise' ? (
+          <p
+            ref={titleRef}
+            tabIndex={-1}
+            aria-live="polite"
+            className="mt-2 text-sm font-semibold text-muted focus:outline-none"
+          >
+            {stepTitle(run, step)}
+          </p>
+        ) : (
+          <h2
+            ref={titleRef}
+            tabIndex={-1}
+            className="mt-2 text-[26px] font-bold leading-tight tracking-[-0.03em] focus:outline-none"
+          >
+            {stepTitle(run, step)}
+          </h2>
+        )}
         <div className="mt-5">{body}</div>
       </main>
       {footer && (

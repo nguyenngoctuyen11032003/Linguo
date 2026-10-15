@@ -10,7 +10,7 @@ export function LessonProgress({ steps, stepIndex }: { steps: LessonStep[]; step
   const current = Math.min(stepIndex + 1, total);
   const label = progressLabel(steps, stepIndex);
   return (
-    <div className="min-w-0 flex-1 space-y-1">
+    <div className="min-w-0 space-y-1">
       <div
         role="progressbar"
         aria-label="Tiến độ bài học"

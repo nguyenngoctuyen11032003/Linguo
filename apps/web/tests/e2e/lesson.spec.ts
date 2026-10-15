@@ -21,12 +21,15 @@ async function openLesson(page: Page, lessonId: string) {
   // Loading waits for the profile, the paths and two RPCs; allow for slow CI devices.
   // The exit button marks the lesson page (also shown while loading); its h1 appears once loaded.
   await expect(page.getByRole('button', { name: 'Thoát bài học' })).toBeVisible({ timeout: 15_000 });
-  await expect(heading(page)).toBeVisible({ timeout: 15_000 });
+  await expect(lessonTitle(page)).toBeVisible({ timeout: 15_000 });
   // The seeded lessons are reviewed (demo: false), so no demo badge.
   await expect(page.getByText(DEMO_LABEL)).toHaveCount(0);
 }
 
-const heading = (page: Page) => page.getByRole('heading', { level: 1 });
+/** The lesson title: the page's only h1. */
+const lessonTitle = (page: Page) => page.getByRole('heading', { level: 1 });
+/** The current step: the question counter (a live paragraph) or the content step's h2. */
+const heading = (page: Page) => page.locator('main').locator('h2, p[aria-live="polite"]').first();
 const lessonLink = (page: Page, lessonId: string) => page.locator(`ul a[href$="/app/hoc-tap/bai/${lessonId}"]`);
 
 /** The bottom action must be tappable without scrolling. */
@@ -93,7 +96,7 @@ async function answerCorrectly(page: Page, exercise: Row) {
 async function runWholeLesson(page: Page, lesson: Record<string, unknown>) {
   const exercises = lessonExercises(String(lesson.id));
   await openLesson(page, String(lesson.id));
-  await expect(heading(page)).toHaveText(String((lesson.title as { vi: string }).vi));
+  await expect(lessonTitle(page)).toHaveText(String((lesson.title as { vi: string }).vi));
   await expectNoHorizontalScroll(page);
   await skipToExercise(page);
   for (const [i, exercise] of exercises.entries()) {

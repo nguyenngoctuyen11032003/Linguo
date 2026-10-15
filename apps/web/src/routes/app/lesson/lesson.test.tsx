@@ -91,7 +91,7 @@ describe('LessonPage', () => {
   it('renders explanations with the deep explanation folded and goes back', async () => {
     const run = makeRun({ stepIndex: 1 });
     renderLesson(run);
-    expect(screen.getByRole('heading', { level: 1, name: 'Giải thích' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Giải thích' })).toBeInTheDocument();
     expect(screen.getByText('Dùng Hello để chào ở mọi tình huống.')).toBeInTheDocument();
     const details = screen.getByText('Giải thích sâu hơn').closest('details');
     expect(details).not.toBeNull();
@@ -103,7 +103,7 @@ describe('LessonPage', () => {
 
   it('renders examples in the target language', () => {
     renderLesson(makeRun({ stepIndex: 2 }));
-    expect(screen.getByRole('heading', { level: 1, name: 'Ví dụ' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Ví dụ' })).toBeInTheDocument();
     expect(screen.getByText('Hello, Anna!')).toHaveAttribute('lang', 'en');
     expect(screen.getByText('Xin chào, Anna!')).toBeInTheDocument();
     expect(screen.getByText('Dùng được ở mọi nơi.')).toBeInTheDocument();
@@ -111,7 +111,7 @@ describe('LessonPage', () => {
 
   it('labels common mistakes with text, not only colour', () => {
     renderLesson(makeRun({ stepIndex: 3 }));
-    expect(screen.getByRole('heading', { level: 1, name: 'Lỗi thường gặp' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Lỗi thường gặp' })).toBeInTheDocument();
     expect(screen.getByText('Sai:')).toBeInTheDocument();
     expect(screen.getByText('Đúng:')).toBeInTheDocument();
     expect(screen.getByText('Hello you!')).toHaveAttribute('lang', 'en');
@@ -148,7 +148,7 @@ describe('LessonPage', () => {
   it('summary waits for pending attempts before completing', () => {
     const run = makeRun({ stepIndex: 6, canComplete: false, pendingCount: 2 });
     renderLesson(run);
-    expect(screen.getByRole('heading', { level: 1, name: 'Tóm tắt' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Tóm tắt' })).toBeInTheDocument();
     expect(screen.getByText('Hello = xin chào')).toBeInTheDocument();
     expect(screen.getByText('Còn 2 câu đang chờ đồng bộ')).toBeInTheDocument();
     expect(run.complete).not.toHaveBeenCalled();
@@ -160,7 +160,7 @@ describe('LessonPage', () => {
     const steps = [...makeRun().steps.slice(0, 6), recheck, ...makeRun().steps.slice(6)];
     const run = makeRun({ steps, stepIndex: 7, canComplete: false, unresolved: [5, 6] });
     renderLesson(run);
-    expect(screen.getByRole('heading', { level: 1, name: 'Tóm tắt' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Tóm tắt' })).toBeInTheDocument();
     expect(screen.getByText('Còn 2 câu chưa có kết quả. Làm xong để hoàn thành bài học.')).toBeInTheDocument();
     const list = screen.getByRole('list', { name: 'Câu chưa có kết quả' });
     expect(within(list).getAllByRole('listitem').map((li) => li.firstChild?.textContent)).toEqual(['Câu 2', 'Câu 3 (làm lại)']);
@@ -215,15 +215,15 @@ describe('LessonPage', () => {
 
   it('shows the next review date and returns home', async () => {
     renderLesson(makeRun({ stepIndex: 7, completeResult: COMPLETE_RESULT }));
-    expect(screen.getByRole('heading', { level: 1, name: 'Hoàn thành bài học' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Hoàn thành bài học' })).toBeInTheDocument();
     expect(screen.getByText('15/10/2026')).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Về trang chủ' }));
     expect(screen.getByTestId('location')).toHaveTextContent(/^\/app$/);
   });
 
-  it('opens the exit sheet and keeps learning or leaves', async () => {
+  it('opens the exit sheet (only with unsaved answers) and keeps learning or leaves', async () => {
     localStorage.setItem('linguo-reduce-motion', 'true');
-    renderLesson(makeRun({ stepIndex: 2 }));
+    renderLesson(makeRun({ stepIndex: 2, pendingCount: 1 }));
     await userEvent.click(screen.getByRole('button', { name: 'Thoát bài học' }));
     const dialog = screen.getByRole('dialog', { name: 'Tiến độ đã được lưu' });
     expect(within(dialog).getByRole('button', { name: 'Học tiếp' })).toHaveFocus();
@@ -233,6 +233,30 @@ describe('LessonPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Thoát bài học' }));
     await userEvent.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Thoát' }));
     expect(screen.getByTestId('location')).toHaveTextContent(/^\/app\/hoc-tap$/);
+  });
+
+  it('leaves straight away when nothing is waiting to sync', async () => {
+    renderLesson(makeRun({ stepIndex: 2 }));
+    await userEvent.click(screen.getByRole('button', { name: 'Thoát bài học' }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(screen.getByTestId('location')).toHaveTextContent(/^\/app\/hoc-tap$/);
+  });
+
+  it('has one h1 (the lesson title) and announces the question counter politely', () => {
+    renderLesson(makeRun({ stepIndex: 4 }));
+    expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào hỏi cơ bản');
+    const counter = screen.getByText('Câu 1/2');
+    expect(counter.tagName).toBe('P');
+    expect(counter).toHaveAttribute('aria-live', 'polite');
+    expect(screen.queryByRole('heading', { name: 'Câu 1/2' })).not.toBeInTheDocument();
+    expect(counter).toHaveFocus();
+  });
+
+  it('uses h2 for the step title on content steps and keeps a single h1', () => {
+    renderLesson(makeRun({ stepIndex: 1 }));
+    expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
+    expect(screen.getByRole('heading', { level: 2, name: 'Giải thích' })).toHaveFocus();
   });
 
   it('shows a loading state', () => {
