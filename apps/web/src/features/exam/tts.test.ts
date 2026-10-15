@@ -68,6 +68,20 @@ describe('tts', () => {
     await ko;
   });
 
+  it('speaks Japanese with a ja-JP voice, or any ja voice', async () => {
+    const synth = fakeSynth(['ko-KR', 'ja_JP']);
+    expect(canSpeak('ja')).toBe(true);
+    const done = speak('ありがとうございます', 'ja');
+    const u = synth.spoken[0]!;
+    expect(u.lang).toBe('ja-JP');
+    expect(u.voice).toEqual({ lang: 'ja_JP', name: 'Voice ja_JP' });
+    u.onend?.();
+    await done;
+
+    fakeSynth(['ko-KR', 'en-US']);
+    expect(canSpeak('ja')).toBe(false);
+  });
+
   it('stopSpeaking cancels and resolves the pending speech', async () => {
     const synth = fakeSynth(['ko-KR']);
     const done = speak('천천히 말해 주세요', 'ko');

@@ -10,7 +10,7 @@ import {
 
 /** Lesson facts the exercise feedback needs to ask the AI tutor (spec 5 §5). Absent → no AI buttons. */
 export interface LessonAiContext {
-  language: 'en' | 'ko';
+  language: 'en' | 'ko' | 'ja';
   level: string;
   lessonId?: string;
   /** "Lesson title — item", the concept explain_concept asks about. */

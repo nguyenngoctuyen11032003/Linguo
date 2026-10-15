@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { LEVELS } from '../learning/levels';
 import { PERSONAL_VOCAB_LIMITS } from '../personal-vocab/limits';
 import {
   ROLEPLAY_LEVELS,
@@ -54,9 +55,16 @@ describe('roleplay catalog integrity', () => {
       expect(roleplayScenarioFitsLevel(s, 'zz_unknown')).toBe(false);
       expect(roleplayScenarioFitsLevel(s, '')).toBe(false);
       // A level from the other language never fits.
-      const other = ROLEPLAY_LEVELS[s.language === 'en' ? 'ko' : 'en'];
-      for (const level of other) expect(roleplayScenarioFitsLevel(s, level)).toBe(false);
+      for (const lang of Object.keys(ROLEPLAY_LEVELS) as RoleplayLanguage[]) {
+        if (lang === s.language) continue;
+        for (const level of ROLEPLAY_LEVELS[lang]) expect(roleplayScenarioFitsLevel(s, level)).toBe(false);
+      }
     }
+  });
+
+  it('level scales mirror the learning levels of every language (ja included, catalog may be empty)', () => {
+    expect(ROLEPLAY_LEVELS).toEqual({ en: [...LEVELS.en], ko: [...LEVELS.ko], ja: [...LEVELS.ja] });
+    for (const s of roleplayScenariosFor('ja')) expect(s.language).toBe('ja');
   });
 });
 

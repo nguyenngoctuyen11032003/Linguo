@@ -38,3 +38,39 @@ describe('levels', () => {
     expect(suggestedCurrentLevel('en', 'some')).toBeNull();
   });
 });
+
+describe('levels: Japanese (JLPT)', () => {
+  it('orders kana then N5 → N1 with Vietnamese info', () => {
+    expect(LEVELS.ja).toEqual(['kana', 'n5', 'n4', 'n3', 'n2', 'n1']);
+    for (const code of LEVELS.ja) expect(LEVEL_INFO[code].description.length).toBeGreaterThan(10);
+    expect(LEVEL_INFO.n3.label).toBe('JLPT N3');
+  });
+
+  it('keeps level codes unique across languages', () => {
+    const all = [...LEVELS.en, ...LEVELS.ko, ...LEVELS.ja];
+    expect(new Set(all).size).toBe(all.length);
+  });
+
+  it('pairs Japanese goals and levels with ja only', () => {
+    expect(GOALS_BY_LANGUAGE.ja).toEqual(['kana_basics', 'communication', 'jlpt', 'skill_focus']);
+    expect(isGoalForLanguage('ja', 'jlpt')).toBe(true);
+    expect(isGoalForLanguage('ja', 'topik_i')).toBe(false);
+    expect(isGoalForLanguage('ko', 'jlpt')).toBe(false);
+    expect(isLevelOf('ja', 'n5')).toBe(true);
+    expect(isLevelOf('ja', 'topik1')).toBe(false);
+    expect(isLevelOf('ko', 'n5')).toBe(false);
+  });
+
+  it('allows every higher JLPT level and picks language-aware defaults', () => {
+    expect(allowedTargets('ja', 'jlpt', 'kana')).toEqual(['n5', 'n4', 'n3', 'n2', 'n1']);
+    expect(allowedTargets('ja', 'jlpt', 'n2')).toEqual(['n1']);
+    expect(allowedTargets('ja', 'jlpt', 'n1')).toEqual([]);
+    expect(defaultTarget('ja', 'kana_basics', 'kana')).toBe('n5');
+    expect(defaultTarget('ja', 'jlpt', 'n5')).toBe('n3');
+    expect(defaultTarget('ja', 'communication', 'kana')).toBe('n3');
+    expect(defaultTarget('ja', 'skill_focus', 'n3')).toBe('n2');
+    expect(defaultTarget('ko', 'communication', 'hangul')).toBe('topik3');
+    expect(suggestedCurrentLevel('ja', 'new')).toBe('kana');
+    expect(suggestedCurrentLevel('ja', 'unsure')).toBe('n5');
+  });
+});

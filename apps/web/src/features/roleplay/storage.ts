@@ -19,7 +19,7 @@ const messageSchema = z.object({
 
 const sessionSchema = z.object({
   scenarioKey: z.string().max(32),
-  language: z.enum(['en', 'ko']),
+  language: z.enum(['en', 'ko', 'ja']),
   level: z.string().max(10),
   startedAt: z.number(),
   messages: z.array(messageSchema).max(40),

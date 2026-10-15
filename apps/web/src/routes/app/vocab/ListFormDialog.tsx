@@ -88,7 +88,7 @@ function ListForm({ mode, initialName, onClose, onSubmit }: Pick<ListFormDialogP
         <fieldset className="space-y-1.5">
           <legend className="mb-1.5 px-1 text-sm font-medium">Ngôn ngữ của các từ</legend>
           <div className="grid grid-cols-2 gap-2">
-            {PERSONAL_LANGUAGES.map((code) => {
+            {PERSONAL_LANGUAGES.filter((code) => LANGUAGES[code].available).map((code) => {
               const selected = language === code;
               return (
                 <label

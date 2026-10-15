@@ -17,12 +17,12 @@ export const CONTENT_STATUSES = ['draft', 'in_review', 'approved', 'published', 
 export type ContentStatus = (typeof CONTENT_STATUSES)[number];
 export const LICENSES = ['own', 'cc_by', 'cc_by_sa', 'public_domain', 'licensed'] as const;
 export const PROGRAM_KINDS = ['core', 'goal'] as const;
-export const ITEM_TYPES = ['vocab', 'phrase', 'grammar_point', 'hangul'] as const;
+export const ITEM_TYPES = ['vocab', 'phrase', 'grammar_point', 'hangul', 'kana'] as const;
 export const ITEM_ROLES = ['introduce', 'reuse'] as const;
-export const TARGET_LANGS = ['en', 'ko'] as const;
+export const TARGET_LANGS = ['en', 'ko', 'ja'] as const;
 
 /** Stable repo keys, e.g. `en:lesson:greetings-hello`, `src:linguo-demo`. */
-export const contentKeySchema = z.string().regex(/^(?:en|ko|src):(?:[a-z]+:)?[a-z0-9][a-z0-9-]{0,63}$/);
+export const contentKeySchema = z.string().regex(/^(?:en|ko|ja|src):(?:[a-z]+:)?[a-z0-9][a-z0-9-]{0,63}$/);
 export const localizedTextSchema = z.strictObject({ vi: z.string().trim().min(1).max(2000) });
 export type LocalizedText = z.infer<typeof localizedTextSchema>;
 
@@ -78,6 +78,8 @@ export const REQUIRED_BLOCKS = ['objective', 'explain', 'example', 'common_mista
 export const itemFrontSchema = z.strictObject({
   text: targetText,
   ipa: z.string().max(120).optional(),
+  /** ja: kana reading of a word written with kanji (学校 → がっこう); shown above the romanization. */
+  reading: z.string().max(120).optional(),
   romanization: z.string().max(120).optional(),
   pos: z.string().max(40).optional(),
 });

@@ -13,7 +13,7 @@ const minutesOf = (seconds: number) => (seconds <= 0 ? 0 : Math.max(1, Math.roun
  */
 export function buildSessionSummaryRequest(
   session: StudySession,
-  learner: { language: 'en' | 'ko'; level: string },
+  learner: { language: 'en' | 'ko' | 'ja'; level: string },
   mistakes: readonly SessionMistake[],
 ): Extract<SummarizeSessionRequestInput, { task: 'summarize_session' }> {
   const activities = session.plan.activities.slice(0, SESSION_SUMMARY_MAX_ACTIVITIES).map((a) => ({

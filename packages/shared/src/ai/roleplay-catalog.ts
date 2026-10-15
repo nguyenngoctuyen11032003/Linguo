@@ -4,7 +4,7 @@
 // This file is copied verbatim into supabase/functions/_shared/roleplay-catalog.ts by
 // scripts/sync-ai-contract.mjs (CI runs --check), so it must not import anything.
 
-export type RoleplayLanguage = 'en' | 'ko';
+export type RoleplayLanguage = 'en' | 'ko' | 'ja';
 
 export interface RoleplayGoal {
   /** snake_case key; the model reports reached goals by these keys only. */
@@ -32,6 +32,7 @@ export interface RoleplayScenario {
 export const ROLEPLAY_LEVELS: Record<RoleplayLanguage, readonly string[]> = {
   en: ['pre_a1', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'],
   ko: ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'],
+  ja: ['kana', 'n5', 'n4', 'n3', 'n2', 'n1'],
 };
 
 const g = (key: string, label_vi: string): RoleplayGoal => ({ key, label_vi });
