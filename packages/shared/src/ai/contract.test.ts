@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
+import { LEVELS } from '../learning/levels';
 import {
+  AI_LEVELS,
   AI_OUTPUT_SCHEMAS,
   AI_REQUEST_MAX_BYTES,
   AI_TASKS,
@@ -62,6 +64,16 @@ describe('review_writing contract', () => {
     expect(aiRequestSchema.safeParse({ ...request, rubric: [{ ...rubric[0], key: 'Bad-Key' }] }).success).toBe(false);
     expect(aiRequestSchema.safeParse({ ...request, rubric: [{ ...rubric[0], max_points: 0 }] }).success).toBe(false);
     expect(aiRequestSchema.safeParse({ ...request, rubric: [{ ...rubric[0], max_points: 31 }] }).success).toBe(false);
+  });
+
+  it('level is restricted to the CEFR / TOPIK codes of the learning levels', () => {
+    for (const lvl of [...LEVELS.en, ...LEVELS.ko]) {
+      expect(aiRequestSchema.safeParse({ ...request, level: lvl }).success).toBe(true);
+    }
+    expect(AI_LEVELS).toEqual([...LEVELS.en, ...LEVELS.ko]);
+    for (const bad of ['', 'ignore_all', 'A2', 'x1', 'topik7', 'a2 ', 'native']) {
+      expect(aiRequestSchema.safeParse({ ...request, level: bad }).success).toBe(false);
+    }
   });
 
   it('a maximal Korean request still fits the body limit', () => {

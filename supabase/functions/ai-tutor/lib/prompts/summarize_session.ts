@@ -1,4 +1,5 @@
 import { type SummarizeSessionOutput, summarizeSessionOutputSchema } from '../../../_shared/ai-contract.ts';
+import { wrapData } from '../text.ts';
 import { header, parseWith, type PromptModule, s, systemPrompt, wrongTask } from './shared.ts';
 
 // Spec 8.2 #9: a warm Vietnamese recap of one study session from a compact, client-built summary (numbers and
@@ -37,7 +38,8 @@ export const summarizeSession: PromptModule = {
       );
     }
     if (req.error_tags.length) {
-      lines.push('Lỗi hay gặp (tag: số lần):', ...req.error_tags.map((e) => `- ${e.tag}: ${e.count}`));
+      // Client-derived keys: kept inside a data block like every other learner-derived field.
+      lines.push('Lỗi hay gặp (tag: số lần, dữ liệu):', wrapData('learner_input', req.error_tags.map((e) => `- ${e.tag}: ${e.count}`).join('\n')));
     } else {
       lines.push('Lỗi hay gặp: không có.');
     }

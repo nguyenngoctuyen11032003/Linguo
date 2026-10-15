@@ -46,7 +46,8 @@ const LEVEL_LABELS: Record<string, string> = {
 };
 
 export function levelLabel(level: string): string {
-  return LEVEL_LABELS[level] ?? level;
+  // The contract only admits known level codes; never echo an unknown value into the prompt header.
+  return LEVEL_LABELS[level] ?? 'không xác định';
 }
 
 /** Rules every task's system prompt starts with (PRD §8.5). */

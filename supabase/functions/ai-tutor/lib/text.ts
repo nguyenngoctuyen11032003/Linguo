@@ -7,7 +7,8 @@ export type DataTag = 'learner_input' | 'lesson_context';
 // deno-lint-ignore no-control-regex -- stripping control characters is the point
 const CONTROL_RE = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F]/g;
 /** Zero-width, bidi-override and other invisible formatting characters. */
-const INVISIBLE_RE = /[\u00AD\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF]/g;
+const INVISIBLE_RE =
+  /[\u00AD\u061C\u115F\u1160\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\u3164\uFE00-\uFE0F\uFEFF\uFFA0\u{E0000}-\u{E007F}\u{E0100}-\u{E01EF}]/gu;
 /** Unicode line/paragraph separators are turned into plain newlines. */
 const LINE_SEP_RE = /[\u2028\u2029]/g;
 
@@ -17,8 +18,12 @@ export function stripControl(text: string): string {
 
 /** Escapes the characters that could open or close a delimiter block. */
 export function escapeDelimiters(text: string): string {
-  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return text.replace(/&/g, '&amp;').replace(OPEN_ANGLE_RE, '&lt;').replace(CLOSE_ANGLE_RE, '&gt;');
 }
+
+/** `<` plus look-alikes: fullwidth, small, single guillemet, angle brackets, heavy angle quotation. */
+const OPEN_ANGLE_RE = /[<＜﹤‹〈⟨〈❮]/g;
+const CLOSE_ANGLE_RE = /[>＞﹥›〉⟩〉❯]/g;
 
 const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}/g;
 /** Digit runs that may contain spaces, dots, dashes or a parenthesised area code. */
@@ -151,5 +156,6 @@ export function sanitizeOutput<T>(value: T, opts: SanitizeOptions): T {
 const HANGUL_RE = /[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]/;
 
 export function hasHangul(text: string): boolean {
-  return HANGUL_RE.test(text);
+  // Hangul fillers (U+115F, U+1160, U+3164) render blank: they never make a reply Korean.
+  return HANGUL_RE.test(text.replace(INVISIBLE_RE, ''));
 }

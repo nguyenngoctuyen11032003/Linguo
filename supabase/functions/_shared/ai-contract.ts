@@ -48,7 +48,24 @@ export const ROLEPLAY_MAX_CORRECTIONS = 2;
 export const AI_REPORT_REASONS = ['wrong', 'unclear', 'unsafe', 'other'] as const;
 
 const language = z.enum(['en', 'ko']);
-const level = z.string().regex(/^[a-z0-9_]{2,10}$/);
+/** CEFR (en) and TOPIK (ko) level codes; mirrors LEVELS in learning/levels.ts (a test keeps them equal). */
+export const AI_LEVELS = [
+  'pre_a1',
+  'a1',
+  'a2',
+  'b1',
+  'b2',
+  'c1',
+  'c2',
+  'hangul',
+  'topik1',
+  'topik2',
+  'topik3',
+  'topik4',
+  'topik5',
+  'topik6',
+] as const;
+const level = z.enum(AI_LEVELS);
 const shortText = (max: number) => z.string().trim().min(1).max(max);
 
 const common = {
