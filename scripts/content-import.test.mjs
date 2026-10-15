@@ -1255,6 +1255,9 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     'ko:exam:topik-i-mock-1': { listening: 10, reading: 14, time: { listening: 15, reading: 25 } },
     'ko:exam:topik-ii-mock-1': { listening: 8, reading: 10, time: { listening: 20, reading: 25, writing: 20 } },
     'en:exam:cefr-a2-mock-1': { listening: 8, reading: 10, time: { listening: 15, reading: 20, writing: 20 } },
+    'ja:exam:jlpt-n5-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 30 } },
+    'ja:exam:jlpt-n4-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 35 } },
+    'ja:exam:jlpt-n3-mock-1': { listening: 8, reading: 14, time: { listening: 15, reading: 30 } },
   };
   assert.deepEqual([...byKey.keys()].sort(), Object.keys(expected).sort());
   for (const [key, want] of Object.entries(expected)) {
@@ -1263,8 +1266,8 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     assert.equal(count(form, 'reading', 'mcq'), want.reading, `${key} reading`);
     assert.deepEqual(form.time_limits, want.time, `${key} time`);
     assert.equal(form.is_demo, false);
-    // TOPIK bands are checked against the official notice; CEFR has no official pass mark.
-    assert.equal(form.scoring.verified, key.startsWith('ko:'), `${key} scoring.verified`);
+    // TOPIK and JLPT bands are checked against the official sources; CEFR has no official pass mark.
+    assert.equal(form.scoring.verified, !key.startsWith('en:'), `${key} scoring.verified`);
     assert.ok(new Set(form.questions.map((q) => q.question_type)).size >= 4, `${key}: at least 4 question types`);
     // Listening keeps its script (TTS fallback, shown after submit); audio, when generated, is a content-audio id (docs/AUDIO.md).
     for (const q of form.questions.filter((x) => x.section === 'listening')) assert.ok(q.script && (q.prompt.audio_asset_id === null || isAudioAssetId(q.prompt.audio_asset_id)), q.key);
@@ -1297,6 +1300,13 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
   assert.equal(count(cefr, 'writing', 'essay'), 1);
   assert.deepEqual([cefr.scoring.bands, cefr.scoring.pass_ratio], [[], 0.6]);
   assert.ok(cefr.questions.find((q) => q.kind === 'essay').rubric.length >= 3);
+  // JLPT (jlpt.jp): total 0–180, language knowledge · reading folded into `reading` (120), one pass band per form.
+  for (const [key, level, pass] of [['ja:exam:jlpt-n5-mock-1', 'n5', 80], ['ja:exam:jlpt-n4-mock-1', 'n4', 90], ['ja:exam:jlpt-n3-mock-1', 'n3', 95]]) {
+    const jlpt = byKey.get(key);
+    assert.equal(count(jlpt, 'writing'), 0, `${key} writing`);
+    assert.deepEqual(jlpt.scoring.section_max, { listening: 60, reading: 120 }, `${key} section_max`);
+    assert.deepEqual(jlpt.scoring.bands, [{ level_code: level, min_total: pass }], `${key} bands`);
+  }
   // Every mcq answer is one of its served options, and the correct option lands in every position.
   const slots = new Set();
   for (const form of bundle.forms) {
