@@ -1,0 +1,464 @@
+schema_version: 1
+demo: false
+language: ja
+skill: reading
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- kana ----------------
+  - key: ja:diag:read-kana-menu-coffee
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "メニュー　コーヒー 300えん　ジュース 250えん　ケーキ 400えん"
+      stem: Theo thực đơn này, một cốc cà phê giá bao nhiêu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "250 yên", lang: vi }
+        - { id: b, text: "300 yên", lang: vi }
+        - { id: c, text: "400 yên", lang: vi }
+        - { id: d, text: "350 yên", lang: vi }
+    answer: b
+    explanation:
+      vi: "“コーヒー 300えん” nghĩa là cà phê 300 yên (“えん” là yên). 250 yên là giá “ジュース” (nước ép), 400 yên là giá “ケーキ” (bánh ngọt)."
+  - key: ja:diag:read-kana-elevator-sign
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "← エレベーター　　トイレ →"
+      stem: Bạn muốn đi thang máy. Theo tấm biển này, bạn nên đi về hướng nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Sang phải, theo mũi tên “トイレ”", lang: vi }
+        - { id: b, text: "Đi thẳng về phía trước", lang: vi }
+        - { id: c, text: "Sang trái, theo mũi tên “エレベーター”", lang: vi }
+        - { id: d, text: "Quay lại phía sau", lang: vi }
+    answer: c
+    explanation:
+      vi: "“エレベーター” (erebētā) là thang máy, mũi tên của nó chỉ sang trái. “トイレ” (toire) là nhà vệ sinh."
+  - key: ja:diag:read-kana-self-intro
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "はじめまして。わたしは リンです。ベトナムから きました。どうぞ よろしく。"
+      stem: Theo lời giới thiệu, Linh đến từ đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: Việt Nam, lang: vi }
+        - { id: b, text: Nhật Bản, lang: vi }
+        - { id: c, text: Hàn Quốc, lang: vi }
+        - { id: d, text: Trung Quốc, lang: vi }
+    answer: a
+    explanation:
+      vi: "“ベトナムから きました” nghĩa là “tôi đến từ Việt Nam”; “〜から” chỉ điểm xuất phát. Tên nước ngoài như “ベトナム” được viết bằng Katakana."
+  - key: ja:diag:read-kana-cat-tama
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "うちに ねこが います。なまえは タマです。タマは さかなが すきです。"
+      stem: Con mèo Tama thích gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Sữa, lang: vi }
+        - { id: b, text: Thịt, lang: vi }
+        - { id: c, text: Con chim, lang: vi }
+        - { id: d, text: Cá, lang: vi }
+    answer: d
+    explanation:
+      vi: "“タマは さかなが すきです” nghĩa là “Tama thích cá”; “さかな” là cá, mẫu “〜が すきです” là thích cái gì."
+  - key: ja:diag:read-kana-morning-bread
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "わたしは まいあさ パンを たべます。それから コーヒーを のみます。"
+      stem: Mỗi sáng người viết làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Uống cà phê rồi ăn cơm", lang: vi }
+        - { id: b, text: "Ăn bánh mì rồi uống cà phê", lang: vi }
+        - { id: c, text: "Ăn cơm rồi uống trà", lang: vi }
+        - { id: d, text: "Ăn bánh mì rồi uống sữa", lang: vi }
+    answer: b
+    explanation:
+      vi: "“パンを たべます” là ăn bánh mì, “それから” là sau đó, rồi “コーヒーを のみます” là uống cà phê. Sữa là “ミルク/ぎゅうにゅう”, trà là “おちゃ”."
+  # ---------------- n5 ----------------
+  - key: ja:diag:read-n5-weekend-sunday
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "土曜日に 友だちと 海へ 行きました。天気が よかったです。日曜日は うちで 本を 読みました。"
+      stem: Chủ nhật người viết đã làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đi biển với bạn", lang: vi }
+        - { id: b, text: "Đi mua sắm", lang: vi }
+        - { id: c, text: "Đọc sách ở nhà", lang: vi }
+        - { id: d, text: "Gặp bạn ở quán cà phê", lang: vi }
+    answer: c
+    explanation:
+      vi: "“日曜日は うちで 本を 読みました” là chủ nhật đọc sách ở nhà. Đi biển với bạn là việc của “土曜日” (thứ bảy) — đây là bẫy đọc nhầm ngày."
+  - key: ja:diag:read-n5-memo-meeting
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "田中さんへ　12時に 駅の 前で 会いましょう。おくれないで ください。　山田"
+      stem: Tanaka và Yamada hẹn gặp nhau ở đâu, lúc mấy giờ?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Trước nhà ga, lúc 12 giờ", lang: vi }
+        - { id: b, text: "Trong nhà ga, lúc 2 giờ", lang: vi }
+        - { id: c, text: "Trước trường học, lúc 12 giờ", lang: vi }
+        - { id: d, text: "Trước nhà ga, lúc 10 giờ", lang: vi }
+    answer: a
+    explanation:
+      vi: "“12時に 駅の 前で” là lúc 12 giờ, ở trước nhà ga (“前” là phía trước). “おくれないで ください” là xin đừng đến muộn."
+  - key: ja:diag:read-n5-family-sister
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "わたしの 家族は 四人です。父と 母と 姉と わたしです。姉は 銀行で はたらいて います。"
+      stem: Chị gái của người viết làm việc ở đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: Bệnh viện, lang: vi }
+        - { id: b, text: Trường học, lang: vi }
+        - { id: c, text: Bưu điện, lang: vi }
+        - { id: d, text: Ngân hàng, lang: vi }
+    answer: d
+    explanation:
+      vi: "“姉は 銀行で はたらいて います” là chị gái làm việc ở ngân hàng; “姉” (あね) là chị gái của mình, “銀行” là ngân hàng."
+  - key: ja:diag:read-n5-greengrocer-hours
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "やおや　あさ 9時〜よる 7時　水曜日は 休みです。"
+      stem: Theo tấm biển của cửa hàng rau quả, bạn có thể đến mua vào lúc nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thứ Tư, 10 giờ sáng", lang: vi }
+        - { id: b, text: "Thứ Năm, 6 giờ tối", lang: vi }
+        - { id: c, text: "Thứ Hai, 8 giờ tối", lang: vi }
+        - { id: d, text: "Thứ Sáu, 8 giờ sáng", lang: vi }
+    answer: b
+    explanation:
+      vi: "Cửa hàng mở từ 9 giờ sáng đến 7 giờ tối (“よる 7時”) và nghỉ thứ Tư (“水曜日は 休み”). 6 giờ tối thứ Năm nằm trong giờ mở cửa; 8 giờ tối đã đóng, 8 giờ sáng chưa mở."
+  - key: ja:diag:read-n5-my-room
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "わたしの へやは あまり 大きくないですが、明るくて きれいです。まどから 山が 見えます。"
+      stem: Phòng của người viết như thế nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Rộng và sáng sủa", lang: vi }
+        - { id: b, text: "Không rộng lắm nhưng sáng sủa và sạch đẹp", lang: vi }
+        - { id: c, text: "Tối và không sạch", lang: vi }
+        - { id: d, text: "Rộng nhưng không nhìn thấy núi", lang: vi }
+    answer: b
+    explanation:
+      vi: "“あまり 大きくないですが” là không rộng lắm nhưng, “明るくて きれいです” là sáng sủa và sạch đẹp. Từ cửa sổ có thể nhìn thấy núi (“山が 見えます”)."
+  # ---------------- n4 ----------------
+  - key: ja:diag:read-n4-library-rules
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "図書館からの お知らせ：本は 一回に 5冊まで、2週間 借りることが できます。辞書は 借りることが できません。返す日に おくれた 人は、1週間 本を 借りられません。"
+      stem: Câu nào đúng với thông báo của thư viện?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mỗi lần được mượn tối đa 5 cuốn trong 2 tuần", lang: vi }
+        - { id: b, text: "Có thể mượn từ điển trong 1 tuần", lang: vi }
+        - { id: c, text: "Trả sách muộn thì phải nộp tiền phạt", lang: vi }
+        - { id: d, text: "Mỗi lần chỉ được mượn 2 cuốn", lang: vi }
+    answer: a
+    explanation:
+      vi: "“5冊まで、2週間” là tối đa 5 cuốn trong 2 tuần. Từ điển không được mượn (“借りることが できません”); trả muộn thì bị cấm mượn 1 tuần chứ không phải nộp phạt."
+  - key: ja:diag:read-n4-late-email
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "課長、すみません。電車が 事故で 止まって しまったので、会議に 30分ぐらい おくれます。資料は もう 課長の 机の 上に 置いて あります。"
+      stem: Vì sao người viết đến cuộc họp muộn?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì ngủ quên", lang: vi }
+        - { id: b, text: "Vì chưa chuẩn bị xong tài liệu", lang: vi }
+        - { id: c, text: "Vì bị ốm", lang: vi }
+        - { id: d, text: "Vì tàu điện dừng do sự cố", lang: vi }
+    answer: d
+    explanation:
+      vi: "“電車が 事故で 止まって しまったので” nêu lý do: tàu điện dừng vì sự cố. Tài liệu thì đã đặt sẵn trên bàn trưởng phòng (“置いて あります”)."
+  - key: ja:diag:read-n4-guitar-now
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "わたしは 去年から ギターを 習って います。はじめは 指が いたかったですが、今は かんたんな 歌なら ひけるように なりました。来年は 友だちと コンサートを したいと 思って います。"
+      stem: Hiện giờ người viết có thể làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tổ chức buổi hòa nhạc với bạn", lang: vi }
+        - { id: b, text: "Chơi được những bài hát đơn giản", lang: vi }
+        - { id: c, text: "Dạy guitar cho bạn bè", lang: vi }
+        - { id: d, text: "Chơi được mọi bài hát khó", lang: vi }
+    answer: b
+    explanation:
+      vi: "“今は かんたんな 歌なら ひけるように なりました” là bây giờ đã chơi được nếu là bài đơn giản. Buổi hòa nhạc chỉ là dự định năm sau (“来年は … したいと 思って います”)."
+  - key: ja:diag:read-n4-garbage-bottles
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "ごみの 出し方：燃える ごみは 月曜日と 木曜日、びん・かんは 水曜日に 出して ください。どの ごみも 朝 8時までに 出して ください。"
+      stem: Muốn bỏ chai lọ thì phải mang ra vào lúc nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thứ Hai hoặc thứ Năm", lang: vi }
+        - { id: b, text: "Tối thứ Tư, sau 8 giờ", lang: vi }
+        - { id: c, text: "Sáng thứ Tư, trước 8 giờ", lang: vi }
+        - { id: d, text: "Bất kỳ ngày nào, trước 8 giờ sáng", lang: vi }
+    answer: c
+    explanation:
+      vi: "“びん・かんは 水曜日” là chai lọ, lon bỏ vào thứ Tư, và “朝 8時までに” là trước 8 giờ sáng. Thứ Hai và thứ Năm là ngày bỏ rác cháy được (“燃える ごみ”)."
+  - key: ja:diag:read-n4-birthday-bag
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "来週は 母の 誕生日です。花を あげようと 思いましたが、母は 去年「花は すぐ かれるから、使える 物の ほうが いい」と 言って いました。それで、新しい かばんを 買う ことに しました。"
+      stem: Người viết quyết định tặng mẹ món quà gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Hoa, lang: vi }
+        - { id: b, text: Một chiếc túi mới, lang: vi }
+        - { id: c, text: Bánh sinh nhật, lang: vi }
+        - { id: d, text: Một bình hoa, lang: vi }
+    answer: b
+    explanation:
+      vi: "Người viết định tặng hoa (“あげようと 思いましたが”) nhưng mẹ thích đồ dùng được hơn, nên “新しい かばんを 買う ことに しました” — quyết định mua túi mới."
+  # ---------------- n3 ----------------
+  - key: ja:diag:read-n3-remote-work-downside
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "最近、自宅で 仕事を する 人が 増えて いる。通勤の 時間が なくなり、家族と 過ごす 時間が 増えたと 喜ぶ 人が 多い。一方で、同僚と 直接 話す 機会が 減り、孤独を 感じると いう 声も ある。"
+      stem: Theo bài, mặt trái của việc làm việc tại nhà là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mất nhiều thời gian đi lại hơn", lang: vi }
+        - { id: b, text: "Có ít thời gian ở bên gia đình", lang: vi }
+        - { id: c, text: "Ít cơ hội nói chuyện trực tiếp với đồng nghiệp nên thấy cô đơn", lang: vi }
+        - { id: d, text: "Thu nhập bị giảm", lang: vi }
+    answer: c
+    explanation:
+      vi: "“一方で” (mặt khác) mở ra điểm tiêu cực: “同僚と 直接 話す 機会が 減り、孤独を 感じる”. Thời gian đi lại mất đi và thời gian bên gia đình tăng lên là mặt tích cực."
+  - key: ja:diag:read-n3-elevator-inspection
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "【お知らせ】点検のため、10月20日（火）午前9時から午後3時まで、エレベーターが 使えません。ご迷惑を おかけしますが、階段を ご利用ください。"
+      stem: Lúc 2 giờ chiều ngày 20/10, cư dân muốn lên tầng thì nên làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đi cầu thang bộ", lang: vi }
+        - { id: b, text: "Đi thang máy như bình thường", lang: vi }
+        - { id: c, text: "Đi thang máy vì đã kiểm tra xong", lang: vi }
+        - { id: d, text: "Gọi điện cho ban quản lý để mở thang máy", lang: vi }
+    answer: a
+    explanation:
+      vi: "Thang máy ngừng từ 9 giờ sáng đến 3 giờ chiều (“午前9時から午後3時まで”), nên lúc 2 giờ chiều vẫn chưa dùng được; thông báo đề nghị “階段を ご利用ください” (hãy dùng cầu thang bộ)."
+  - key: ja:diag:read-n3-furoshiki-name
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "風呂敷は、物を 包んだり 運んだり する ための 四角い 布で ある。昔、銭湯に 行く ときに 服を 包むのに 使われて いた ことから、この 名前が ついたと 言われて いる。最近では、レジ袋の 代わりに 使う 人も 増えて いる。"
+      stem: Theo bài, tên gọi “風呂敷” bắt nguồn từ đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Từ hình vuông của tấm vải", lang: vi }
+        - { id: b, text: "Từ việc được dùng thay túi ni-lông", lang: vi }
+        - { id: c, text: "Từ tên của người làm ra nó", lang: vi }
+        - { id: d, text: "Từ việc dùng để gói quần áo khi đi nhà tắm công cộng", lang: vi }
+    answer: d
+    explanation:
+      vi: "“〜ことから、この 名前が ついた” cho biết nguồn gốc tên gọi: ngày xưa dùng để gói quần áo khi đi nhà tắm công cộng (“銭湯”). Việc thay túi ni-lông (“レジ袋”) là cách dùng hiện nay."
+  - key: ja:diag:read-n3-study-abroad-food
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "留学して 一番 困ったのは、言葉よりも 食事だった。最初は 日本の 料理が 口に 合わず、毎日 自分で 料理を して いた。しかし、友だちに 誘われて いろいろな 店に 行く うちに、だんだん 好きに なって いった。"
+      stem: Khi mới đi du học, điều khiến người viết khó khăn nhất là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Chuyện ăn uống, lang: vi }
+        - { id: b, text: Ngôn ngữ, lang: vi }
+        - { id: c, text: Không có bạn bè, lang: vi }
+        - { id: d, text: Thiếu tiền, lang: vi }
+    answer: a
+    explanation:
+      vi: "“一番 困ったのは、言葉よりも 食事だった” — khó khăn nhất là chuyện ăn uống, hơn cả ngôn ngữ (“AよりもB” nhấn mạnh B). “口に 合わない” là không hợp khẩu vị."
+  - key: ja:diag:read-n3-volunteer-reason
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "私は 毎月 一回、公園を 掃除する ボランティアに 参加して いる。始めた きっかけは、子どもが 公園で けがを しそうに なった ことだ。落ちて いた ガラスの 破片を 見て、自分にも できる ことを しようと 思った。"
+      stem: Điều gì khiến người viết bắt đầu tham gia tình nguyện dọn công viên?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Được bạn bè rủ tham gia", lang: vi }
+        - { id: b, text: "Con suýt bị thương vì mảnh kính vỡ ở công viên", lang: vi }
+        - { id: c, text: "Công ty yêu cầu nhân viên tham gia", lang: vi }
+        - { id: d, text: "Muốn làm quen với hàng xóm", lang: vi }
+    answer: b
+    explanation:
+      vi: "“始めた きっかけは” (cơ duyên bắt đầu) là “子どもが 公園で けがを しそうに なった こと” — con suýt bị thương; “Vそうに なる” là suýt nữa thì…, nguyên nhân là mảnh kính vỡ rơi trên đất."
+  # ---------------- n2 ----------------
+  - key: ja:diag:read-n2-food-loss
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "日本では、まだ食べられるのに捨てられてしまう食品、いわゆる「食品ロス」が年間数百万トンにのぼる。その半分近くは家庭から出ているとされる。大がかりな対策も必要だが、買い物の前に冷蔵庫の中を確認するといった小さな工夫の積み重ねこそが、問題の解決につながるのではないだろうか。"
+      stem: Người viết muốn nói điều gì nhất trong đoạn văn về “食品ロス”?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Lãng phí thực phẩm chủ yếu đến từ nhà hàng", lang: vi }
+        - { id: b, text: "Cần có luật cấm vứt bỏ thực phẩm", lang: vi }
+        - { id: c, text: "Tích lũy những thói quen nhỏ trong gia đình sẽ giúp giải quyết vấn đề", lang: vi }
+        - { id: d, text: "Nên mua sẵn nhiều thực phẩm để dự trữ", lang: vi }
+    answer: c
+    explanation:
+      vi: "Ý chính nằm ở câu cuối: “小さな工夫の積み重ねこそが、問題の解決につながるのではないだろうか” — chính sự tích lũy các cách làm nhỏ mới dẫn tới giải quyết vấn đề. “〜こそ” nhấn mạnh, “〜のではないだろうか” là cách khẳng định ý kiến một cách mềm mỏng."
+  - key: ja:diag:read-n2-machine-translation
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "機械翻訳の精度は年々向上しており、旅行先での簡単な会話なら十分に役立つようになった。しかし、言葉の背景にある文化や話し手の微妙な気持ちまで正確に伝えられるとは限らない。だからこそ、外国語を学ぶ意味が失われることはないと私は考えている。"
+      stem: Quan điểm của người viết về việc học ngoại ngữ là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vẫn có ý nghĩa vì máy dịch không phải lúc nào cũng truyền đạt được văn hóa và cảm xúc", lang: vi }
+        - { id: b, text: "Không còn cần thiết vì máy dịch đã đủ tốt", lang: vi }
+        - { id: c, text: "Chỉ cần thiết khi đi du lịch nước ngoài", lang: vi }
+        - { id: d, text: "Nên học thay vì dùng máy dịch vì máy dịch luôn sai", lang: vi }
+    answer: a
+    explanation:
+      vi: "“〜とは限らない” là “không hẳn lúc nào cũng…”: máy dịch không phải lúc nào cũng truyền tải được văn hóa, cảm xúc tinh tế. “だからこそ” (chính vì thế) dẫn đến kết luận: ý nghĩa của việc học ngoại ngữ không mất đi. Bài không nói máy dịch “luôn sai”."
+  - key: ja:diag:read-n2-wagashi-shop
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "創業三百年を超える老舗の和菓子店が、若者向けに洋風の新商品を発売した。伝統を守るだけでは店を続けていけないという危機感からだという。一方で、昔ながらの味を求める客のために、看板商品の作り方は一切変えていない。"
+      stem: Câu nào đúng với nội dung bài về tiệm bánh kẹo truyền thống?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tiệm đã thay đổi toàn bộ cách làm truyền thống", lang: vi }
+        - { id: b, text: "Tiệm ra sản phẩm mới vì khách lớn tuổi yêu cầu", lang: vi }
+        - { id: c, text: "Tiệm mới mở được khoảng một trăm năm", lang: vi }
+        - { id: d, text: "Tiệm ra sản phẩm mới nhưng giữ nguyên cách làm sản phẩm chủ lực", lang: vi }
+    answer: d
+    explanation:
+      vi: "Tiệm ra sản phẩm kiểu Tây cho giới trẻ (“若者向け”) vì lo ngại chỉ giữ truyền thống thì không trụ được, nhưng “看板商品の作り方は一切変えていない” — hoàn toàn không đổi cách làm sản phẩm chủ lực. Tiệm đã hơn 300 năm (“三百年を超える”)."
+  - key: ja:diag:read-n2-short-nap
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "昼食後に15分から20分程度の短い昼寝をすると、午後の集中力が高まるという研究がある。ただし、30分以上眠ってしまうと深い眠りに入り、かえって目覚めた後にぼんやりしやすくなるそうだ。"
+      stem: Theo bài, ngủ trưa quá 30 phút có thể gây ra điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tăng khả năng tập trung vào buổi chiều", lang: vi }
+        - { id: b, text: "Dễ bị lơ mơ, uể oải sau khi thức dậy", lang: vi }
+        - { id: c, text: "Khó ngủ vào ban đêm", lang: vi }
+        - { id: d, text: "Bị đau đầu kéo dài", lang: vi }
+    answer: b
+    explanation:
+      vi: "“ただし” (tuy nhiên) nêu lưu ý: ngủ quá 30 phút sẽ vào giấc sâu, “かえって目覚めた後にぼんやりしやすくなる” — ngược lại dễ lơ mơ sau khi dậy. Tăng tập trung là tác dụng của giấc ngủ ngắn 15–20 phút; khó ngủ ban đêm hay đau đầu không được nhắc đến."
+  - key: ja:diag:read-n2-cashless
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "キャッシュレス決済の普及により、財布を持たずに外出する人も珍しくなくなった。便利になった反面、高齢者など使い方に慣れていない人が取り残されるおそれもある。店側には、現金での支払いも引き続き受け付けるといった配慮が求められる。"
+      stem: Theo người viết, các cửa hàng cần làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Chỉ chấp nhận thanh toán không dùng tiền mặt", lang: vi }
+        - { id: b, text: "Hướng dẫn người cao tuổi cách dùng điện thoại", lang: vi }
+        - { id: c, text: "Tiếp tục nhận thanh toán bằng tiền mặt", lang: vi }
+        - { id: d, text: "Giảm giá cho người trả bằng tiền mặt", lang: vi }
+    answer: c
+    explanation:
+      vi: "Câu cuối: “現金での支払いも引き続き受け付けるといった配慮が求められる” — cửa hàng cần quan tâm, tiếp tục nhận tiền mặt. “反面” giới thiệu mặt trái: người không quen sử dụng có nguy cơ bị bỏ lại phía sau."
+  # ---------------- n1 ----------------
+  - key: ja:diag:read-n1-concept-of-ma
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "日本語の「間」という言葉は、単に物と物との物理的な隔たりを指すにとどまらない。会話における沈黙や、音楽における音と音との空白もまた「間」と呼ばれ、そこにこそ表現の妙が宿るとされてきた。沈黙を気まずいものとして埋めようとする風潮が強まる昨今、この感覚は見直されてしかるべきであろう。"
+      stem: Người viết có thái độ thế nào đối với khái niệm “間”?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cho rằng nên lấp đầy sự im lặng vì nó gây khó xử", lang: vi }
+        - { id: b, text: "Cho rằng cảm thức về “間” đáng được nhìn nhận lại", lang: vi }
+        - { id: c, text: "Cho rằng “間” chỉ là khoảng cách vật lý", lang: vi }
+        - { id: d, text: "Cho rằng “間” đã lỗi thời trong xã hội hiện đại", lang: vi }
+    answer: b
+    explanation:
+      vi: "“見直されてしかるべきであろう” nghĩa là “lẽ ra cần được nhìn nhận lại”. “〜にとどまらない” cho thấy “間” không chỉ là khoảng cách vật lý; xu hướng muốn lấp đầy im lặng là điều người viết phê phán."
+  - key: ja:diag:read-n1-experts
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "専門家の意見を鵜呑みにするのは危険だとよく言われる。しかし、だからといって専門知識を軽視し、自分の直感だけを頼りにするのは本末転倒である。肝心なのは、根拠を自ら確かめようとする姿勢を持ちつつ、専門家の知見に謙虚に耳を傾けることだ。"
+      stem: Theo người viết, điều quan trọng nhất là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Chỉ nên tin vào trực giác của bản thân", lang: vi }
+        - { id: b, text: "Tin tuyệt đối vào ý kiến chuyên gia", lang: vi }
+        - { id: c, text: "Không nên nghe ý kiến của chuyên gia", lang: vi }
+        - { id: d, text: "Vừa tự kiểm chứng căn cứ vừa khiêm tốn lắng nghe chuyên gia", lang: vi }
+    answer: d
+    explanation:
+      vi: "“肝心なのは” (điều cốt yếu là) dẫn tới ý chính: “根拠を自ら確かめようとする姿勢を持ちつつ、専門家の知見に謙虚に耳を傾けること”. “鵜呑みにする” là tin sống nuốt tươi; “本末転倒” là đầu đuôi lộn ngược — phê phán việc chỉ dựa vào trực giác."
+  - key: ja:diag:read-n1-tsundoku
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "買ったまま読まずに本を積んでおくことを「積ん読」という。怠惰の象徴のように語られがちだが、手元にある未読の本は、自分がまだ知らない世界の存在を絶えず思い出させてくれる。そう考えれば、積ん読もまた知的好奇心の一つの表れにほかならない。"
+      stem: Người viết đánh giá thói quen “積ん読” như thế nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Là một biểu hiện của trí tò mò hiểu biết", lang: vi }
+        - { id: b, text: "Là biểu tượng của sự lười biếng", lang: vi }
+        - { id: c, text: "Là thói quen xấu cần bỏ ngay", lang: vi }
+        - { id: d, text: "Chỉ là sự lãng phí tiền bạc", lang: vi }
+    answer: a
+    explanation:
+      vi: "“〜にほかならない” là “không gì khác hơn chính là”: 積ん読 chính là một biểu hiện của trí tò mò. “怠惰の象徴のように語られがちだが” — tuy hay bị coi là biểu tượng lười biếng, nhưng người viết phản bác quan điểm đó."
+  - key: ja:diag:read-n1-regional-revival
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "人口減少に悩む地方都市の中には、大型の商業施設を誘致して活性化を図ろうとするところも少なくない。だが、そうした施設は往々にして地元の商店街から客を奪い、撤退した後には空洞化した街並みだけが残る。外から何かを持ち込むより、その土地に根ざした資源を掘り起こすことのほうが、遠回りに見えて実は確かな道なのではないか。"
+      stem: Người viết cho rằng con đường chắc chắn để vực dậy các đô thị địa phương là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thu hút các trung tâm thương mại lớn về địa phương", lang: vi }
+        - { id: b, text: "Đóng cửa các khu phố buôn bán cũ", lang: vi }
+        - { id: c, text: "Khai thác những nguồn lực gắn bó với chính vùng đất đó", lang: vi }
+        - { id: d, text: "Tìm mọi cách tăng dân số thật nhanh", lang: vi }
+    answer: c
+    explanation:
+      vi: "Câu cuối: “その土地に根ざした資源を掘り起こすことのほうが…確かな道なのではないか” — khai thác nguồn lực bắt rễ từ địa phương mới là con đường chắc chắn dù trông có vẻ vòng vèo. Việc thu hút trung tâm thương mại bị phê phán vì “往々にして” (thường thì) lấy mất khách của khu phố buôn bán."
+  - key: ja:diag:read-n1-learning-from-failure
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "失敗を恐れるあまり挑戦を避けていては、成長の機会そのものを失いかねない。とはいえ、無謀な挑戦を奨励しているわけではない。失敗から何を学び取るかという視点を欠いたままでは、いくら失敗を重ねたところで得るものは乏しいのである。"
+      stem: Ý chính của đoạn văn về thất bại là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nên thử thách càng liều lĩnh càng tốt", lang: vi }
+        - { id: b, text: "Thất bại chỉ có giá trị khi ta rút ra được bài học từ nó", lang: vi }
+        - { id: c, text: "Nên tránh thất bại bằng mọi giá", lang: vi }
+        - { id: d, text: "Càng thất bại nhiều thì càng trưởng thành", lang: vi }
+    answer: b
+    explanation:
+      vi: "“いくら失敗を重ねたところで得るものは乏しい” — nếu thiếu góc nhìn rút ra bài học thì dù thất bại bao nhiêu cũng thu được ít. “無謀な挑戦を奨励しているわけではない” bác bỏ ý “càng liều càng tốt”; “〜かねない” cảnh báo việc né tránh thử thách."
