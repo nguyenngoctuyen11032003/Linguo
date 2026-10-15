@@ -2,7 +2,8 @@ import { useId, useState } from 'react';
 import type { ListenPrompt } from '@linguo/shared';
 import { AudioPlayButton } from './AudioPlayButton';
 import { ChoiceGroup } from './ChoiceGroup';
-import { detectScriptLang, MachineSpeechButton } from './MachineSpeechButton';
+import { detectScriptLang } from './machine-speech';
+import { MachineSpeechButton } from './MachineSpeechButton';
 import { useOrderedOptions } from './exercise-utils';
 import type { ChoiceExerciseProps } from './McqExercise';
 

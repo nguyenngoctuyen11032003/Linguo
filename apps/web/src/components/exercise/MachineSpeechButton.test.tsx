@@ -3,7 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { stubSpeechSynthesis } from '../../../tests/unit/speech-synthesis';
 import { ListenExercise } from './ListenExercise';
-import { detectScriptLang, MachineSpeechButton } from './MachineSpeechButton';
+import { detectScriptLang } from './machine-speech';
+import { MachineSpeechButton } from './MachineSpeechButton';
 import { renderExercise } from './test-utils';
 
 const VOICES = [
