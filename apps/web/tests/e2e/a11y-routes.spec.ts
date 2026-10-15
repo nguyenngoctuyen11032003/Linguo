@@ -53,6 +53,7 @@ const ROUTES: RouteCase[] = [
     auth: true,
     ready: (page) => page.getByRole('heading', { level: 2, name: 'Nhắc lại câu' }),
   },
+  { name: 'roleplay', path: '/app/dong-vai', auth: true, ready: (page) => page.getByRole('heading', { level: 2, name: 'Hợp trình độ của bạn' }) },
   { name: 'settings', path: '/app/cai-dat', auth: true, ready: h1 },
   { name: 'notifications', path: '/app/thong-bao', auth: true, ready: h1 },
   { name: 'session', path: '/app/phien-hoc', auth: true, ready: (page) => page.getByRole('heading', { level: 2 }).first() },
