@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Check, Circle } from 'lucide-react';
+import { Check, Circle, Flag } from 'lucide-react';
 import type { RoleplayScenario } from '@linguo/shared';
 import { AI_LABEL, AiFallback, AiLoading, AiResultView, type QuotaGate } from '@/components/ai';
 import { Button } from '@/components/ui/Button';
@@ -17,6 +17,7 @@ export function RecapView({
   gate,
   onRetry,
   onNew,
+  onReport,
 }: {
   session: RoleplaySession;
   scenario: RoleplayScenario;
@@ -25,6 +26,8 @@ export function RecapView({
   gate: QuotaGate;
   onRetry: () => void;
   onNew: () => void;
+  /** Opens the report dialog for the AI recap (every AI answer carries a report button, PRD 8.2 #9). */
+  onReport: (responseId: string, trigger: HTMLButtonElement) => void;
 }) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
@@ -97,6 +100,12 @@ export function RecapView({
           <SolidCard className="space-y-3 p-4">
             <p className="text-sm text-muted">{AI_LABEL}</p>
             <AiResultView result={summary.result} language={lang} />
+            <div className="border-t border-border pt-3">
+              <Button variant="ghost" onClick={(e) => onReport(summary.result!.response_id, e.currentTarget)}>
+                <Flag aria-hidden className="size-4" />
+                Báo lỗi
+              </Button>
+            </div>
           </SolidCard>
         )}
         {(summary.state === 'quota' || summary.state === 'unavailable' || summary.state === 'error') && (

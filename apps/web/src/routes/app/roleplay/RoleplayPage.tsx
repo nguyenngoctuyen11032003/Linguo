@@ -62,6 +62,11 @@ export function RoleplayPage() {
     return true;
   };
 
+  const openReport = (id: string, trigger: HTMLButtonElement) => {
+    reportTriggerRef.current = trigger;
+    setReport(id);
+  };
+
   const finish = () => {
     if (!api.session) return;
     api.forgetSaved();
@@ -107,7 +112,7 @@ export function RoleplayPage() {
     }
   } else if (api.session && api.scenario) {
     content = recap ? (
-      <RecapView session={api.session} scenario={api.scenario} summary={summary} quota={quota.quota} gate={gate} onRetry={retrySummary} onNew={leave} />
+      <RecapView session={api.session} scenario={api.scenario} summary={summary} quota={quota.quota} gate={gate} onRetry={retrySummary} onNew={leave} onReport={openReport} />
     ) : (
       <ChatView
         api={api}
@@ -118,10 +123,7 @@ export function RoleplayPage() {
         tts={tts}
         onFinish={finish}
         onLeave={leave}
-        onReport={(id, trigger) => {
-          reportTriggerRef.current = trigger;
-          setReport(id);
-        }}
+        onReport={openReport}
       />
     );
   } else if (language) {

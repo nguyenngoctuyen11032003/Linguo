@@ -197,6 +197,10 @@ describe('RoleplayPage: conversation', () => {
     expect(body).toMatchObject({ language: 'en', activities: [{ kind: 'practice', status: 'done' }], error_tags: [{ tag: 'roleplay_corrections', count: 1 }] });
     expect(JSON.stringify(body)).not.toContain('latte');
     expect(screen.getByText(SUMMARY_DATA.recap_vi)).toBeInTheDocument();
+    // The AI recap is reportable like every other AI answer.
+    await userEvent.click(within(screen.getByRole('region', { name: 'Nhận xét của AI' })).getByRole('button', { name: 'Báo lỗi' }));
+    expect(await screen.findByRole('dialog', { name: 'Báo lỗi giải thích AI' })).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Huỷ' }));
     expect(screen.getByRole('region', { name: 'Những chỗ nên sửa' })).toHaveTextContent('I would like');
     expect(sessionStorage.length).toBe(0);
     await userEvent.click(screen.getByRole('button', { name: 'Luyện tình huống khác' }));
