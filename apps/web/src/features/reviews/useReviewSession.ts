@@ -319,10 +319,17 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
       postponing.current = true;
       const session = sessionRef.current;
       try {
-        const result = await postponeReviews(c, p, all ? null : [card.card_id], crypto.randomUUID());
+        // "Hoãn tất cả" names the cards left in this session, so it sends exactly those: a null list would also move
+        // due cards this session never served (a study session takes only its review_limit) and cards whose
+        // grade is still waiting in the outbox.
+        const ids = all ? current.cards.slice(current.position).map((x) => x.card_id) : [card.card_id];
+        const result = await postponeReviews(c, p, ids, crypto.randomUUID());
         if (sessionRef.current !== session) return;
         if (all) {
           dispatch({ type: 'postponedAll' });
+          if (result.skipped > 0) {
+            toast.show({ tone: 'info', message: `${result.skipped} thẻ đã được hoãn quá nhiều lần nên vẫn cần ôn hôm nay.` });
+          }
         } else if (result.postponed > 0) {
           dispatch({ type: 'postponed', cardId: card.card_id });
         } else {

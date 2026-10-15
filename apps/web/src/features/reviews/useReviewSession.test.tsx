@@ -318,12 +318,26 @@ describe('useReviewSession', () => {
     await act(() => hook.current.grade(3, META));
     await act(() => hook.current.postpone(true));
     expect(fake.callsOf('postpone_reviews')).toEqual([
-      { p_path_id: PATH_ID, p_card_ids: null, p_idempotency_key: expect.any(String) },
+      // Only the cards left in this session, never every due card of the path.
+      { p_path_id: PATH_ID, p_card_ids: [cardId(2), cardId(3)], p_idempotency_key: expect.any(String) },
     ]);
     expect(hook.current.status).toBe('finished');
     expect(hook.current.total).toBe(1);
     expect(hook.current.graded).toHaveLength(1);
     await waitFor(() => expect(hook.current.summary).toEqual(summary()));
+  });
+
+  it('says how many cards the server would not postpone again when postponing all', async () => {
+    installClient({
+      get_review_queue: () => ({ data: queue([card(1), card(2)]) }),
+      postpone_reviews: () => ({ data: { postponed: 1, skipped: 1, replayed: false } }),
+      review_summary: () => ({ data: summary() }),
+    });
+    const { result: hook } = renderSession();
+    await ready(hook);
+    await act(() => hook.current.postpone(true));
+    expect(hook.current.status).toBe('finished');
+    expect(await screen.findByText('1 thẻ đã được hoãn quá nhiều lần nên vẫn cần ôn hôm nay.')).toBeInTheDocument();
   });
 
   it('loads 10 more cards after the session, skipping cards already served', async () => {

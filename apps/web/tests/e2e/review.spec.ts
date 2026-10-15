@@ -177,7 +177,9 @@ test('P postpones the current card and "Hoãn tất cả" the rest', async ({ pa
   await page.getByRole('button', { name: 'Hoãn tất cả' }).click();
   await page.getByRole('dialog').getByRole('button', { name: /^Hoãn \d+ thẻ$/ }).click();
   await expect(summaryHeading(page)).toBeVisible();
-  expect(mock.postponeCalls()).toEqual([expect.any(Array), null]);
+  // "Hoãn tất cả" sends the two cards left in the session, not null (every due card of the path).
+  expect(mock.postponeCalls()).toEqual([expect.any(Array), expect.any(Array)]);
+  expect(mock.postponeCalls()[1]).toHaveLength(2);
   expect(mock.reviewGrades()).toHaveLength(0);
   await expectNoHorizontalScroll(page);
 });
