@@ -102,14 +102,14 @@ function ClientErrorsTable({ errors }: { errors: AdminAnalyticsData['client_erro
       <p className="text-sm text-muted">
         {formatCount(errors.total)} báo cáo ẩn danh (loại lỗi và đường dẫn dạng mẫu, không có nội dung người dùng).
       </p>
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-[420px] text-left text-[15px]">
+      <div>
+        <table className="w-full table-fixed text-left text-[15px]">
           <caption className="sr-only">Lỗi phía người dùng theo loại và màn hình, tối đa 10 dòng</caption>
           <thead>
             <tr className="border-b border-border text-sm text-muted">
-              <th scope="col" className="py-2 pr-3 font-semibold">Loại lỗi</th>
+              <th scope="col" className="w-[38%] py-2 pr-3 font-semibold">Loại lỗi</th>
               <th scope="col" className="py-2 pr-3 font-semibold">Màn hình</th>
-              <th scope="col" className="py-2 text-right font-semibold">Số lần</th>
+              <th scope="col" className="w-16 py-2 text-right font-semibold">Số lần</th>
             </tr>
           </thead>
           <tbody>
