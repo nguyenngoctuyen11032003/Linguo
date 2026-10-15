@@ -10,6 +10,8 @@ const PAGES = [
   { path: '/app/cai-dat', auth: true },
 ];
 
+test.describe.configure({ timeout: 60_000 }); // 15 s readiness wait below + axe on a loaded machine
+
 for (const { path, auth } of PAGES) {
   for (const colorScheme of ['light', 'dark'] as const) {
     test(`no serious a11y violations on ${path} (${colorScheme})`, async ({ page }, testInfo) => {

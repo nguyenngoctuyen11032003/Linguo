@@ -50,7 +50,7 @@ async function setup(page: Page, planner: PlannerMockOptions = {}) {
 
 async function openSessionPage(page: Page) {
   await page.goto('/app/phien-hoc');
-  await expect(page.getByRole('heading', { level: 1, name: 'Phiên học hôm nay' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Phiên học hôm nay' })).toBeVisible({ timeout: 15_000 });
   // Loading waits for the profile, the paths and today's session; every loaded state has an h2. Allow for slow CI.
   await expect(page.getByRole('heading', { level: 2 }).first()).toBeVisible({ timeout: 15_000 });
 }

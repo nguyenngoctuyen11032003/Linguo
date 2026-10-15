@@ -6,7 +6,10 @@ import { DEMO_LESSONS, mockSupabase, pathRow, PROGRESS_PATH_ID, settleAnimations
 // focus, the offline banner and prefers-reduced-motion. a11y.spec.ts keeps its own light/dark pass over the auth
 // pages; this sweep covers the full route list (sign-up and forgot-password stay with a11y.spec / forms.spec).
 
-const MOBILE_PROJECTS = ['iphone-se', 'pixel-7'];
+// openRoute allows 15 s for the route's data on a loaded WebKit, which alone is half of the default 30 s budget.
+test.describe.configure({ timeout: 60_000 });
+
+const MOBILE_PROJECTS =['iphone-se', 'pixel-7'];
 /** Desktop runs as a viewport override inside one Chromium project: playwright.config only defines phones. */
 const DESKTOP_PROJECT = 'pixel-7';
 const DESKTOP = { viewport: { width: 1280, height: 800 }, isMobile: false, hasTouch: false } as const;
@@ -219,7 +222,7 @@ test.describe('route titles and focus', () => {
   test('navigating moves focus to the new page heading, announces it and updates the title', async ({ page }) => {
     await openRoute(page, ROUTES.find((r) => r.name === 'home')!);
     await page.getByRole('navigation', { name: 'Điều hướng chính' }).getByRole('link', { name: 'Học tập' }).click();
-    await expect(page).toHaveTitle('Học tập · Linguo');
+    await expect(page).toHaveTitle('Học tập · Linguo', { timeout: 15_000 }); // the lazy route chunk loads slowly on WebKit under load
     await expect(page.getByRole('heading', { level: 1, name: 'Học tập' })).toBeFocused();
     await expect(page.getByRole('status').filter({ hasText: /^Học tập$/ })).toHaveCount(1);
   });

@@ -64,7 +64,12 @@ async function fillAnswer(page: Page, exercise: Row, response: Record<string, un
     case 'mcq':
     case 'listen': {
       const option = prompt.options.find((o: { id: string }) => o.id === response.option_id);
-      await page.getByRole('radio', { name: option.text, exact: true }).click();
+      // A listen exercise shifts its options when the audio fails and the fallback text appears; retry a lost tap.
+      const radio = page.getByRole('radio', { name: option.text, exact: true });
+      await expect(async () => {
+        await radio.click();
+        await expect(radio).toBeChecked({ timeout: 1_500 });
+      }).toPass({ timeout: 15_000 });
       break;
     }
     case 'word_bank':
