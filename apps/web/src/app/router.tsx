@@ -153,6 +153,16 @@ const routeTree: RouteObject[] = [
         ],
       },
       adminRoute,
+      // Teacher tools (PRD P2): own chunk and shell, only for users with a teacher profile.
+      {
+        path: 'giao-vien',
+        ...lazyPage(() => import('@/routes/teacher/TeacherRoute'), 'TeacherRoute'),
+        handle: MAIN_LAYOUT,
+        children: [
+          { index: true, ...lazyPage(() => import('@/routes/teacher/TeacherClassesPage'), 'TeacherClassesPage') },
+          { path: 'lop/:classId', ...lazyPage(() => import('@/routes/teacher/TeacherClassPage'), 'TeacherClassPage') },
+        ],
+      },
       { path: '*', element: <NotFoundPage /> },
     ],
   },
