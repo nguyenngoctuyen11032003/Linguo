@@ -391,4 +391,11 @@ describe('SpeakingPage', () => {
     await userEvent.setup().click(screen.getByRole('button', { name: 'Thử lại' }));
     expect(reload).toHaveBeenCalled();
   });
+
+  it('stops the sample voice when switching mode', async () => {
+    mocks.material = material();
+    render();
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Trả lời mở' }));
+    expect(mocks.tts.stop).toHaveBeenCalled();
+  });
 });

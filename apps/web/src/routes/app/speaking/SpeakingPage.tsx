@@ -57,6 +57,12 @@ export function SpeakingPage() {
   const clearButtonRef = useRef<HTMLButtonElement>(null);
   const clearedRef = useRef<HTMLParagraphElement>(null);
 
+  // The sample voice belongs to the sentence on screen: switching mode must not keep reading the old one.
+  const changeMode = (next: SpeakingMode) => {
+    if (next !== mode) tts.stop();
+    setMode(next);
+  };
+
   const onSaveReflection = useCallback(
     (ratings: Ratings) => {
       if (!userId || !lang) return;
@@ -118,7 +124,7 @@ export function SpeakingPage() {
         <>
           <PrivacyNote />
           <SolidCard className="space-y-4">
-            <ChoiceGroup label="Chế độ luyện" options={MODES} value={mode} onChange={setMode} />
+            <ChoiceGroup label="Chế độ luyện" options={MODES} value={mode} onChange={changeMode} />
             {mode !== 'roleplay' && material.lessons.length > 0 && (
               <SelectField label="Lấy câu mẫu từ bài" value={material.lessonId ?? ''} onChange={material.selectLesson}>
                 {material.lessons.map((l) => (
