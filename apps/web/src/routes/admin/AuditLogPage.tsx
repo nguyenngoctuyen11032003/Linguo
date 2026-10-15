@@ -3,14 +3,27 @@ import type { StaffRole } from '@linguo/shared';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
-import { STAFF_ROLE_LABELS_VI } from '@/features/admin/service';
+import { ADMIN_KIND_LABELS_VI, STAFF_ROLE_LABELS_VI } from '@/features/admin/service';
 import { useAdminAudit } from '@/features/admin/useAdminAudit';
 
+// Every action written through admin_private.audit in supabase/migrations; unknown ones fall back to the raw code.
 const ACTION_LABELS: Record<string, string> = {
   set_status: 'Chuyển trạng thái',
-  resolve_report: 'Xử lý báo lỗi',
+  resolve_reports: 'Xử lý báo lỗi',
+  read_answers: 'Xem đáp án',
   grant_role: 'Cấp vai trò',
   revoke_role: 'Thu hồi vai trò',
+  list_staff: 'Xem danh sách nhân sự',
+  find_user: 'Tìm người dùng',
+  grant_teacher: 'Cấp quyền giáo viên',
+  revoke_teacher: 'Thu hồi quyền giáo viên',
+};
+
+const TARGET_LABELS: Record<string, string> = {
+  ...ADMIN_KIND_LABELS_VI,
+  content_report: 'Báo lỗi nội dung',
+  user: 'Người dùng',
+  staff: 'Nhân sự',
 };
 
 const formatDate = (iso: string) => {
@@ -81,7 +94,7 @@ export function AuditLogPage() {
                     {entry.actor && <span className="block font-mono text-xs text-muted">{entry.actor.slice(0, 8)}</span>}
                   </td>
                   <td className="px-4 py-3">
-                    {entry.target_kind ?? '—'}
+                    {entry.target_kind ? (TARGET_LABELS[entry.target_kind] ?? entry.target_kind) : '—'}
                     {entry.target_id && <span className="block break-all font-mono text-xs text-muted">{entry.target_id}</span>}
                   </td>
                   <td className="max-w-md break-words px-4 py-3 text-sm text-muted">{detailText(entry.detail)}</td>

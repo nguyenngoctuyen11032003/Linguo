@@ -5,6 +5,7 @@ import {
   REPORT_A1,
   REPORT_A2,
   REPORT_TARGET_A,
+  auditEntryFixture,
   overviewFixture,
   reportListFixture,
   sourceFixture,
@@ -49,6 +50,30 @@ describe('SourcesPage', () => {
     expect(within(table).getByRole('link', { name: 'Tatoeba' })).toHaveAttribute('href', 'https://tatoeba.org/');
     expect(within(table).queryByRole('link', { name: 'Lạ' })).not.toBeInTheDocument();
     expect(within(table).getByText('Chưa khai báo')).toBeInTheDocument();
+  });
+});
+
+describe('AuditLogPage', () => {
+  it('labels the actions and targets the database actually writes', async () => {
+    routeRpcs(mocks.rpc, {
+      staff_role: { data: 'admin' },
+      admin_audit_log_recent: {
+        data: [
+          auditEntryFixture(),
+          auditEntryFixture({ id: '50000000-0000-4000-8000-000000000002', action: 'read_answers', target_kind: 'exercise', detail: { key: 'en.a1.x' } }),
+          auditEntryFixture({ id: '50000000-0000-4000-8000-000000000003', action: 'some_new_action', target_kind: 'mystery' }),
+        ],
+      },
+    });
+    renderAdmin('/quan-tri/nhat-ky');
+    const table = await screen.findByRole('table', { name: 'Các thao tác gần đây' });
+    expect(within(table).getByRole('rowheader', { name: 'Xử lý báo lỗi' })).toBeInTheDocument();
+    expect(within(table).getByText('Báo lỗi nội dung')).toBeInTheDocument();
+    expect(within(table).getByRole('rowheader', { name: 'Xem đáp án' })).toBeInTheDocument();
+    expect(within(table).getByText('Bài tập')).toBeInTheDocument();
+    // Unknown codes stay readable instead of disappearing.
+    expect(within(table).getByRole('rowheader', { name: 'some_new_action' })).toBeInTheDocument();
+    expect(within(table).getByText('mystery')).toBeInTheDocument();
   });
 });
 

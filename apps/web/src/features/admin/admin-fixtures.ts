@@ -79,7 +79,7 @@ export function auditEntryFixture(overrides: Partial<AdminAuditEntry> = {}): Adm
     id: '50000000-0000-4000-8000-000000000001',
     actor: ADMIN_USER_ID,
     actor_role: 'admin',
-    action: 'resolve_report',
+    action: 'resolve_reports',
     target_kind: 'content_report',
     target_id: REPORT_A1,
     detail: { status: 'fixed' },
