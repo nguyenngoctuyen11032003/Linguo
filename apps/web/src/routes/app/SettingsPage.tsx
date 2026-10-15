@@ -29,7 +29,7 @@ import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
 import { RemindersSection } from './settings/RemindersSection';
-import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_SCROLL_MARGIN } from './settings/section-state';
+import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './settings/section-state';
 import { SettingsJumpList } from './settings/SettingsJumpList';
 import { timeZoneLabel, timeZoneOptions } from './settings/timezones';
 
@@ -201,7 +201,7 @@ export function SettingsPage() {
 
       <section id="ho-so" aria-labelledby="profile-heading" className={SECTION_SCROLL_MARGIN}>
         <SolidCard className="space-y-4">
-          <h2 id="profile-heading" className="text-lg font-bold">
+          <h2 id="profile-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
             Hồ sơ
           </h2>
           {status === 'loading' && (
@@ -254,7 +254,7 @@ export function SettingsPage() {
 
       <section id="giao-dien" aria-labelledby="display-heading" className={SECTION_SCROLL_MARGIN}>
         <SolidCard className="space-y-5">
-          <h2 id="display-heading" className="text-lg font-bold">
+          <h2 id="display-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
             Giao diện
           </h2>
           <fieldset>

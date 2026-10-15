@@ -65,6 +65,18 @@ describe('RemindersSection', () => {
     expect(saveButton()).toBeDisabled();
   });
 
+  it('greys the schedule out with the neutral disabled style, not opacity, when reminders are off', () => {
+    setPrefs({ prefs: prefs({ reminders_enabled: false }) });
+    render();
+    const fieldset = screen.getByRole('group', { name: 'Lịch nhắc' });
+    expect(fieldset).toBeDisabled();
+    expect(fieldset.className).not.toMatch(/opacity/);
+    expect(screen.getByLabelText('Giờ nhắc')).toBeDisabled();
+    expect(screen.getByLabelText('Giờ nhắc').className).toMatch(/disabled:border-dashed/);
+    expect(screen.getByRole('button', { name: 'Thứ Hai' }).className).toMatch(/disabled:outline-dashed/);
+    expect(screen.getByRole('radio', { name: '1 lần' }).closest('label')!.className).toMatch(/has-\[:disabled\]:outline-dashed/);
+  });
+
   it('toggles days, changes the max per day and saves the patch', async () => {
     render();
     await userEvent.click(screen.getByRole('button', { name: 'Chủ nhật' }));

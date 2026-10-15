@@ -339,13 +339,35 @@ describe('SettingsPage', () => {
     expect(screen.getByRole('switch', { name: 'Giảm chuyển động' })).toHaveAttribute('aria-checked', 'false');
   });
 
-  it('shows a jump list with a link to every section', () => {
+  it('shows a jump list whose labels are the section headings', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     const nav = screen.getByRole('navigation', { name: 'Đi tới mục cài đặt' });
-    for (const label of ['Hồ sơ', 'Lộ trình', 'Giao diện', 'Động lực', 'Nhắc học', 'AI và riêng tư', 'Báo lỗi', 'Dữ liệu và tài khoản']) {
-      expect(within(nav).getByRole('link', { name: label })).toBeInTheDocument();
+    const labels = within(nav)
+      .getAllByRole('link')
+      .map((link) => link.textContent);
+    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Báo lỗi của tôi', 'Tài khoản và dữ liệu']);
+    for (const label of labels) {
+      expect(screen.getByRole('heading', { level: 2, name: label! })).toBeInTheDocument();
     }
     expect(within(nav).getByRole('link', { name: 'Nhắc học' })).toHaveAttribute('href', '#nhac-hoc');
+  });
+
+  it('keeps the jump list to one horizontally scrollable row of chips', () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    const list = within(screen.getByRole('navigation', { name: 'Đi tới mục cài đặt' })).getByRole('list');
+    expect(list).toHaveClass('overflow-x-auto');
+    expect(list).not.toHaveClass('flex-wrap');
+  });
+
+  it('moves keyboard focus to the heading of every jump target', async () => {
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    const nav = screen.getByRole('navigation', { name: 'Đi tới mục cài đặt' });
+    for (const link of within(nav).getAllByRole('link')) {
+      await userEvent.click(link);
+      const heading = screen.getByRole('heading', { level: 2, name: link.textContent! });
+      await waitFor(() => expect(heading).toHaveFocus());
+      expect(heading).toHaveAttribute('tabindex', '-1');
+    }
   });
 
   it('folds the rarely used sections behind labelled disclosure buttons', () => {
@@ -362,7 +384,7 @@ describe('SettingsPage', () => {
   it('opens a folded section from the jump list, focuses its heading and remembers it for the session', async () => {
     const { unmount } = renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
     const nav = screen.getByRole('navigation', { name: 'Đi tới mục cài đặt' });
-    await userEvent.click(within(nav).getByRole('link', { name: 'Dữ liệu và tài khoản' }));
+    await userEvent.click(within(nav).getByRole('link', { name: 'Tài khoản và dữ liệu' }));
     const heading = screen.getByRole('heading', { level: 2, name: 'Tài khoản và dữ liệu' });
     expect(heading.closest('details')).toHaveAttribute('open');
     await waitFor(() => expect(heading).toHaveFocus());
