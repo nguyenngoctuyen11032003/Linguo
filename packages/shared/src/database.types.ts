@@ -241,6 +241,38 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"assignments": {
+                  Row: {
+                    "class_id": string,"created_at": string,"due_at": string | null,"exam_form_id": string | null,"id": string,"kind": string,"lesson_id": string | null,"note": string | null,"target_count": number | null,"teacher_assignment_json": Json | null,"teacher_assignment_title": string | null
+                  }
+                  ComputedFields: "teacher_assignment_json" | "teacher_assignment_title"
+                  Insert: {
+                    "class_id": string,"created_at"?: string,"due_at"?: string | null,"exam_form_id"?: string | null,"id"?: string,"kind": string,"lesson_id"?: string | null,"note"?: string | null,"target_count"?: number | null
+                  }
+                  Update: {
+                    "class_id"?: string,"created_at"?: string,"due_at"?: string | null,"exam_form_id"?: string | null,"id"?: string,"kind"?: string,"lesson_id"?: string | null,"note"?: string | null,"target_count"?: number | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "assignments_class_id_fkey"
+      columns: ["class_id"]
+isOneToOne: false
+      referencedRelation: "classes"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "assignments_exam_form_id_fkey"
+      columns: ["exam_form_id"]
+isOneToOne: false
+      referencedRelation: "exam_forms"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "assignments_lesson_id_fkey"
+      columns: ["lesson_id"]
+isOneToOne: false
+      referencedRelation: "lessons"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"attempts": {
                   Row: {
                     "after_reveal": boolean,"attempt_no": number,"client_at": string | null,"confidence": number | null,"content_version": number,"created_at": string,"error_tags": (string)[],"exercise_id": string,"exercise_type": string,"exercise_version": number,"feedback_json": NonNullable<Json>,"gave_up": boolean,"hint_count": number,"id": string,"idempotency_key": string,"is_correct": boolean,"learning_item_id": string | null,"learning_path_id": string,"lesson_id": string,"lesson_run_id": string,"modality": string | null,"normalized_response": string | null,"payload_hash": string,"response_json": NonNullable<Json>,"response_ms": number,"revealed": boolean,"score": number,"stage": string,"synced_late": boolean,"user_id": string,"verdict": string
@@ -284,6 +316,74 @@ isOneToOne: false
       referencedRelation: "lesson_runs"
       referencedColumns: ["id"]
     }
+                  ]
+                },"class_invites": {
+                  Row: {
+                    "class_id": string,"code": string,"created_at": string,"expires_at": string,"max_uses": number | null,"revoked_at": string | null,"uses": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "class_id": string,"code": string,"created_at"?: string,"expires_at": string,"max_uses"?: number | null,"revoked_at"?: string | null,"uses"?: number
+                  }
+                  Update: {
+                    "class_id"?: string,"code"?: string,"created_at"?: string,"expires_at"?: string,"max_uses"?: number | null,"revoked_at"?: string | null,"uses"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "class_invites_class_id_fkey"
+      columns: ["class_id"]
+isOneToOne: false
+      referencedRelation: "classes"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"class_join_attempts": {
+                  Row: {
+                    "created_at": string,"id": string,"succeeded": boolean,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"id"?: string,"succeeded": boolean,"user_id": string
+                  }
+                  Update: {
+                    "created_at"?: string,"id"?: string,"succeeded"?: boolean,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"class_members": {
+                  Row: {
+                    "class_id": string,"joined_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "class_id": string,"joined_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "class_id"?: string,"joined_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "class_members_class_id_fkey"
+      columns: ["class_id"]
+isOneToOne: false
+      referencedRelation: "classes"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"classes": {
+                  Row: {
+                    "archived_at": string | null,"created_at": string,"id": string,"language_code": string,"name": string,"teacher_id": string,"updated_at": string,"teacher_class_json": Json | null
+                  }
+                  ComputedFields: "teacher_class_json"
+                  Insert: {
+                    "archived_at"?: string | null,"created_at"?: string,"id"?: string,"language_code": string,"name": string,"teacher_id": string,"updated_at"?: string
+                  }
+                  Update: {
+                    "archived_at"?: string | null,"created_at"?: string,"id"?: string,"language_code"?: string,"name"?: string,"teacher_id"?: string,"updated_at"?: string
+                  }
+                  Relationships: [
+                    
                   ]
                 },"content_reports": {
                   Row: {
@@ -933,6 +1033,20 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"teacher_profiles": {
+                  Row: {
+                    "granted_at": string,"granted_by": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "granted_at"?: string,"granted_by"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "granted_at"?: string,"granted_by"?: string | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"units": {
                   Row: {
                     "content_hash": string,"created_at": string,"id": string,"is_demo": boolean,"key": string,"order_index": number,"program_id": string,"reviewed_at": string | null,"reviewed_by": string | null,"source_id": string,"status": string,"title": NonNullable<Json>,"updated_at": string,"version": number
@@ -1070,6 +1184,9 @@ isOneToOne: false
                            },
 "answer_diagnostic":
 { Args: { "p_attempt_id": string,"p_choice": string,"p_item_id": string }; Returns: Json
+                           },
+"class_access":
+{ Args: { "p_class_id": string }; Returns: string
                            },
 "complete_lesson":
 { Args: { "p_run_id": string }; Returns: Json
@@ -1297,6 +1414,9 @@ isOneToOne: false
 "grading_text":
 { Args: { "p_accepted": Json,"p_known_wrong": Json,"p_lang": string,"p_rubric": Json,"p_text": string }; Returns: Json
                            },
+"grant_teacher_role":
+{ Args: { "p_grant": boolean,"p_user_id": string }; Returns: Json
+                           },
 "import_content_bundle":
 { Args: { "p_bundle": Json }; Returns: Json
                            },
@@ -1311,6 +1431,24 @@ isOneToOne: false
                            },
 "is_allowed_push_endpoint":
 { Args: { "p_endpoint": string }; Returns: boolean
+                           },
+"is_teacher":
+{ Args: Record<PropertyKey, never>; Returns: boolean
+                           },
+"learner_class_json":
+{ Args: { "p_class": Omit<Database["public"]['Tables']["classes"]['Row'], Database["public"]['Tables']["classes"]['ComputedFields']>,"p_joined_at": string,"p_user": string }; Returns: Json
+                           },
+"learner_join_class":
+{ Args: { "p_code": string }; Returns: Json
+                           },
+"learner_leave_class":
+{ Args: { "p_class_id": string }; Returns: Json
+                           },
+"learner_list_assignments":
+{ Args: { "p_class_id"?: string }; Returns: Json
+                           },
+"learner_list_classes":
+{ Args: Record<PropertyKey, never>; Returns: Json
                            },
 "learning_path_validate":
 { Args: { "p_current_level": string,"p_goal_type": string,"p_language": string,"p_target_date": string,"p_target_level": string,"p_today": string,"p_weekly_minutes": (number)[] }; Returns: undefined
@@ -1652,6 +1790,85 @@ isOneToOne: false
                            },
 "submit_exercise":
 { Args: { "p_client_at": string,"p_confidence": number,"p_exercise_id": string,"p_exercise_version": number,"p_hint_count": number,"p_idempotency_key": string,"p_response": Json,"p_response_ms": number,"p_run_id": string }; Returns: Json
+                           },
+"teacher_active_invites":
+{ Args: { "p_class_id": string }; Returns: Json
+                           },
+"teacher_archive_class":
+{ Args: { "p_archived": boolean,"p_class_id": string }; Returns: Json
+                           },
+"teacher_assignment_done_at":
+{ Args: { "p_a": Omit<Database["public"]['Tables']["assignments"]['Row'], Database["public"]['Tables']["assignments"]['ComputedFields']>,"p_language": string,"p_user": string }; Returns: string
+                           },
+"teacher_assignment_json":
+{ Args: { "p_a": Omit<Database["public"]['Tables']["assignments"]['Row'], Database["public"]['Tables']["assignments"]['ComputedFields']> }; Returns: Json
+                           },
+"teacher_assignment_title":
+{ Args: { "p_a": Omit<Database["public"]['Tables']["assignments"]['Row'], Database["public"]['Tables']["assignments"]['ComputedFields']> }; Returns: string
+                           },
+"teacher_class_for":
+{ Args: { "p_active": boolean,"p_class_id": string,"p_teacher": string }; Returns: {
+              "archived_at": string | null,
+"created_at": string,
+"id": string,
+"language_code": string,
+"name": string,
+"teacher_id": string,
+"updated_at": string
+            }
+                          SetofOptions: {
+        from: "*"
+        to: "classes"
+        isOneToOne: true
+        isSetofReturn: false
+      } },
+"teacher_class_json":
+{ Args: { "p_class": Omit<Database["public"]['Tables']["classes"]['Row'], Database["public"]['Tables']["classes"]['ComputedFields']> }; Returns: Json
+                           },
+"teacher_class_roster":
+{ Args: { "p_class_id": string }; Returns: Json
+                           },
+"teacher_create_assignment":
+{ Args: { "p_class_id": string,"p_due_at"?: string,"p_kind": string,"p_note"?: string,"p_ref_id"?: string,"p_target_count"?: number }; Returns: Json
+                           },
+"teacher_create_class":
+{ Args: { "p_language": string,"p_name": string }; Returns: Json
+                           },
+"teacher_create_invite":
+{ Args: { "p_class_id": string,"p_expires_hours"?: number,"p_max_uses"?: number }; Returns: Json
+                           },
+"teacher_delete_assignment":
+{ Args: { "p_assignment_id": string }; Returns: Json
+                           },
+"teacher_invite_code":
+{ Args: Record<PropertyKey, never>; Returns: string
+                           },
+"teacher_list_classes":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
+"teacher_member_path":
+{ Args: { "p_language": string,"p_user": string }; Returns: string
+                           },
+"teacher_member_stats":
+{ Args: { "p_class": Omit<Database["public"]['Tables']["classes"]['Row'], Database["public"]['Tables']["classes"]['ComputedFields']>,"p_user": string }; Returns: Json
+                           },
+"teacher_normalize_code":
+{ Args: { "p_code": string }; Returns: string
+                           },
+"teacher_remove_member":
+{ Args: { "p_class_id": string,"p_user_id": string }; Returns: Json
+                           },
+"teacher_rename_class":
+{ Args: { "p_class_id": string,"p_name": string }; Returns: Json
+                           },
+"teacher_require":
+{ Args: Record<PropertyKey, never>; Returns: string
+                           },
+"teacher_reviews_since":
+{ Args: { "p_language": string,"p_since": string,"p_user": string }; Returns: number
+                           },
+"teacher_revoke_invite":
+{ Args: { "p_code": string }; Returns: Json
                            },
 "track_events":
 { Args: { "p_events": Json }; Returns: number
