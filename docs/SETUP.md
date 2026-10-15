@@ -54,7 +54,10 @@ pnpm test           # unit tests
 pnpm e2e            # Playwright trên các thiết bị iPhone/Android giả lập
 pnpm db:start && pnpm db:test   # database local + test RLS (cần Docker)
 pnpm build && pnpm check:bundle # bản production: CSP được chèn lúc build, bundle không được chứa secret/source map
+pnpm check:bundle-size          # sau pnpm build: ngân sách kích thước JS tải đầu (chunk vào 33 KiB, tổng 240 KiB gzip; CI cũng chạy)
 ```
+
+Ngân sách và cách xử lý khi vượt: `docs/FEATURES.md` mục 18. Kiểm tra site và Supabase đang chạy thật (chỉ đọc) bằng `SITE_URL=… SUPABASE_URL=… SUPABASE_PUBLISHABLE_KEY=… pnpm smoke`; xem `docs/RUNBOOK.md` → *Kiểm tra sau deploy (smoke)*.
 
 `pnpm e2e` build web ở chế độ `e2e` (file `.env.e2e` ở gốc repo: Supabase giả ở `e2e.invalid`, mọi lời gọi được Playwright mock) rồi chạy `vite preview`; không cần Supabase hay Docker. Lần đầu cần cài trình duyệt: `pnpm --filter @linguo/web exec playwright install chromium webkit` (như CI). Test unit chạy bằng `pnpm test`, gồm cả kiểm tra migration đã deploy không bị sửa và các script trong `scripts/`.
 
@@ -86,6 +89,8 @@ Cổng local dùng dải 553xx thay vì mặc định 543xx:
 
 Lý do: Windows (Hyper-V/WSL) có thể giữ trước các cổng TCP 54237–54336, khiến `supabase start` không bind được cổng mặc định. Xem cấu hình trong `supabase/config.toml`.
 
+**Cổng bị Windows giữ là bẫy chung, không riêng Supabase.** Dải bị giữ khác nhau theo máy và có thể đổi sau khi khởi động lại: xem bằng `netsh interface ipv4 show excludedportrange protocol=tcp`. Trên máy phát triển của dự án, dải 584xx cũng bị chặn; khi cần cổng riêng (một stack Supabase thứ hai, server thử), chọn trong dải 574xx hoặc 575xx và kiểm lại bằng lệnh trên. (Thông tin về máy này do người vận hành ghi nhận, không kiểm chứng được từ repo.) Quy ước chạy nhiều phiên làm việc song song trên cùng một Docker (khoá `linguo-db.lock`): `docs/superpowers/HANDOFF.md` mục 6.
+
 ### Windows (Git Bash)
 Git Bash tự đổi các chuỗi giống đường dẫn Unix thành đường dẫn Windows, làm hỏng biến môi trường như `VITE_BASE_PATH=/Linguo/`. Thêm tiền tố `MSYS_NO_PATHCONV=1` cho lệnh truyền đường dẫn qua biến môi trường:
 ```bash
@@ -93,7 +98,7 @@ MSYS_NO_PATHCONV=1 VITE_BASE_PATH=/Linguo/ pnpm build
 ```
 
 ## 7. Gia sư AI — Gemini (tuỳ chọn)
-Gia sư AI chạy trong Edge Function `supabase/functions/ai-tutor`; key Gemini **chỉ** nằm ở phía server (secret của Edge Function), không bao giờ ở `.env` của web hay biến `VITE_*`. Không có key, app vẫn chạy: nút "Giải thích AI" hiện "Tạm thời không khả dụng" kèm lời giải thích soạn sẵn.
+Gia sư AI chạy trong Edge Function `supabase/functions/ai-tutor`; key Gemini **chỉ** nằm ở phía server (secret của Edge Function), không bao giờ ở `.env` của web hay biến `VITE_*`. Không có key, app vẫn chạy: nút "Giải thích AI" hiện "Tạm thời không khả dụng" kèm lời giải thích soạn sẵn. Tám tác vụ AI (gồm phân tích câu, tóm tắt phiên học, kế hoạch ôn và đóng vai `/app/dong-vai`) dùng chung một function, một key và một quota ngày; mỗi lượt đóng vai trừ một lượt (FEATURES mục 6 và 16). Luyện nói (`/app/luyen-noi`) không cần key hay secret nào: ghi âm chỉ ở trình duyệt.
 
 1. **Lấy API key:** vào [Google AI Studio](https://aistudio.google.com/apikey) → đăng nhập Google → **Get API key / Create API key** (chọn hoặc tạo một Google Cloud project). Không bật billing cho project này nếu chỉ muốn dùng gói miễn phí.
 2. **Chọn model:** trong AI Studio (bảng chọn model, hoặc trang [rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)) chọn một model **Flash** có trong **free tier**, ví dụ dạng `gemini-…-flash`. Ghi đúng **model id** (không phải tên hiển thị). Model chỉ đọc từ secret `GEMINI_MODEL`; đổi model không cần sửa code (cache cũ tự không dùng lại vì khoá cache chứa tên model).
@@ -137,7 +142,8 @@ Cần một dòng trong `public.staff_roles`. Trên Supabase local: đăng ký m
 | Secret/service_role key của Supabase (chỉ để chạy `pnpm content:push` hoặc workflow Publish content/Maintenance) | Production: GitHub → Environment `production` → Secrets `SUPABASE_SERVICE_ROLE_KEY`; local: biến môi trường của một lệnh, không ghi vào file |
 | Tên đầy đủ các secret/biến của GitHub | `docs/DEPLOY.md` → Tổng hợp secrets và biến |
 | VAPID public key (tuỳ chọn) | `.env` và GitHub → Variables (`VITE_VAPID_PUBLIC_KEY`) |
-| VAPID private key, subject, `NOTIFY_CRON_SECRET` (tuỳ chọn) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets (`NOTIFY_CRON_SECRET` cả ở environment `notify`) |
+| VAPID private key, subject, `NOTIFY_CRON_SECRET` (tuỳ chọn) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `NOTIFY_CRON_SECRET`; `NOTIFY_CRON_SECRET` đặt thêm (cùng giá trị) ở environment `notify`, và workflow Notify còn đọc repository variable `VITE_SUPABASE_URL` |
+| Smoke check sau deploy (tuỳ chọn) | GitHub → repository Variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` (đã đặt cho build; không cần secret) |
 
 ## Bảng giờ tham chiếu (ước lượng thời gian)
 
