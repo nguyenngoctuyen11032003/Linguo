@@ -7,10 +7,17 @@ export interface IpLimiter {
   hit(key: string): { allowed: true } | { allowed: false; retryAfterSec: number };
 }
 
-/** Client IP: the first `x-forwarded-for` entry (set by the Supabase edge), else 'unknown'. */
+/**
+ * Client IP behind Cloudflare/Supabase: `cf-connecting-ip` when present, else the RIGHTMOST
+ * `x-forwarded-for` entry (appended by the trusted proxy; the leading ones are client-controlled),
+ * else one shared 'unknown' bucket.
+ */
 export function clientIp(req: Request): string {
-  const first = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim();
-  return first ? first.slice(0, 64) : 'unknown';
+  const cf = req.headers.get('cf-connecting-ip')?.trim();
+  if (cf) return cf.slice(0, 64);
+  const parts = req.headers.get('x-forwarded-for')?.split(',').map((p) => p.trim()).filter(Boolean);
+  const last = parts?.[parts.length - 1];
+  return last ? last.slice(0, 64) : 'unknown';
 }
 
 export function createIpLimiter(o: { limit: number; windowMs: number; now: () => number; maxKeys?: number }): IpLimiter {
@@ -19,8 +26,12 @@ export function createIpLimiter(o: { limit: number; windowMs: number; now: () =>
 
   const prune = (now: number) => {
     for (const [k, w] of windows) if (now - w.start >= o.windowMs) windows.delete(k);
-    // Still too many live keys (an address spray): start over rather than grow without bound.
-    if (windows.size >= maxKeys) windows.clear();
+    // Still full of live keys (an address spray): evict the oldest windows (Map keeps start order
+    // because a restarted window is re-inserted) instead of forgetting everyone.
+    for (const k of windows.keys()) {
+      if (windows.size < maxKeys) break;
+      windows.delete(k);
+    }
   };
 
   return {
@@ -29,6 +40,7 @@ export function createIpLimiter(o: { limit: number; windowMs: number; now: () =>
       let w = windows.get(key);
       if (!w || now - w.start >= o.windowMs) {
         if (!w && windows.size >= maxKeys) prune(now);
+        windows.delete(key);
         w = { start: now, count: 0 };
         windows.set(key, w);
       }

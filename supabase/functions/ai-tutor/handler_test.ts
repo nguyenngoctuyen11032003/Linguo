@@ -291,7 +291,7 @@ Deno.test('body over 16 KB or not JSON → 400 bad_request', async () => {
 
 Deno.test('per-IP limit: the 31st request in a minute → 429 quota_exceeded with retry_after_sec, nothing consumed', async () => {
   const h = harness({ db: fakeDb({ validToken: false }) });
-  const from = (ip: string) => post(explainBody(), { authorization: 'Bearer good-token', 'x-forwarded-for': `${ip}, 10.0.0.1` });
+  const from = (ip: string) => post(explainBody(), { authorization: 'Bearer good-token', 'x-forwarded-for': `10.0.0.${Math.floor(Math.random() * 250)}, ${ip}` });
   for (let i = 0; i < 30; i++) await expectError(await handle(from('203.0.113.7'), h.deps), 401, 'unauthorized');
   const body = await expectError(await handle(from('203.0.113.7'), h.deps), 429, 'quota_exceeded');
   assert.equal(body.retry_after_sec, 60);
