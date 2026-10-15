@@ -20,6 +20,7 @@ describe('routeDocumentTitle', () => {
     ['/app/luyen-thi/lam-bai/a1', 'Làm bài luyện thi · Linguo'],
     ['/app/luyen-thi/ket-qua/a1', 'Kết quả luyện thi · Linguo'],
     ['/app/luyen-noi', 'Luyện nói · Linguo'],
+    ['/app/dong-vai', 'Đóng vai với AI · Linguo'],
     ['/app/tu-vung-cua-toi', 'Từ vựng của tôi · Linguo'],
     ['/app/tu-vung-cua-toi/l1', 'Danh sách từ vựng · Linguo'],
     ['/app/tu-vung-cua-toi/l1/on-tap', 'Ôn từ vựng của tôi · Linguo'],

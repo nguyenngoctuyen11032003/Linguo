@@ -42,6 +42,7 @@ describe('Sidebar', () => {
     renderWithProviders(<Sidebar />, { route: '/app' });
     expect(screen.getByRole('link', { name: 'Luyện nói' })).toHaveAttribute('href', '/app/luyen-noi');
     expect(screen.getByRole('link', { name: 'Luyện thi' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Đóng vai với AI' })).toHaveAttribute('href', '/app/dong-vai');
   });
 });
 

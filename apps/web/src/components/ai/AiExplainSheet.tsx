@@ -28,6 +28,7 @@ const TITLES: Record<AiRequestInput['task'], string> = {
   analyze_sentence: 'Phân tích câu',
   summarize_session: 'Tóm tắt phiên học',
   plan_review: 'Kế hoạch ôn tập',
+  roleplay_turn: 'Đóng vai với AI',
 };
 
 const LOADING: Partial<Record<AiRequestInput['task'], string>> = {

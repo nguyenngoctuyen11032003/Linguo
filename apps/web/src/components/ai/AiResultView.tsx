@@ -236,5 +236,12 @@ export function AiResultView({ result, language, request }: { result: AiSuccess;
       return <SessionSummaryView data={parsed.data} />;
     case 'plan_review':
       return <PlanReviewView data={parsed.data} request={request?.task === 'plan_review' ? request : undefined} />;
+    case 'roleplay_turn':
+      // Role-play turns are chat bubbles on the role-play screen; this is only the plain reply.
+      return (
+        <p lang={language} className="break-words">
+          {parsed.data.partner_reply}
+        </p>
+      );
   }
 }

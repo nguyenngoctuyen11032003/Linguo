@@ -639,6 +639,12 @@ export function TutorPage() {
             {LANGUAGES[path.language].nameVi} · trình độ {levelLabel}. Câu trả lời do AI tạo, có thể chưa chính xác.
           </p>
         )}
+        <Link
+          to="/app/dong-vai"
+          className="inline-flex min-h-11 items-center text-[15px] font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+        >
+          Đóng vai hội thoại với AI
+        </Link>
       </header>
       {content}
       <AiReportDialog open={report !== null} onClose={() => setReport(null)} usageId={report} triggerRef={reportTriggerRef} />

@@ -10,6 +10,7 @@ const TAG_LABELS: Record<string, string> = {
   word_bank: 'Sắp xếp từ',
   translate: 'Dịch câu',
   listen: 'Nghe',
+  roleplay_corrections: 'Lỗi gặp khi đóng vai',
 };
 
 export function tagLabel(tag: string): string {

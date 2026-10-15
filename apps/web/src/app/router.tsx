@@ -108,6 +108,7 @@ const routeTree: RouteObject[] = [
               { path: 'phien-hoc', ...lazyPage(() => import('@/routes/app/session/SessionPage'), 'SessionPage') },
               { path: 'gia-su', ...lazyPage(() => import('@/routes/app/tutor/TutorPage'), 'TutorPage') },
               { path: 'luyen-noi', ...lazyPage(() => import('@/routes/app/speaking/SpeakingPage'), 'SpeakingPage') },
+              { path: 'dong-vai', ...lazyPage(() => import('@/routes/app/roleplay/RoleplayPage'), 'RoleplayPage') },
               { path: 'luyen-thi', ...lazyPage(() => import('@/routes/app/exam/ExamHubPage'), 'ExamHubPage') },
               { path: 'tien-do', ...lazyPage(() => import('@/routes/app/progress/ProgressPage'), 'ProgressPage') },
               { path: 'cai-dat', ...lazyPage(() => import('@/routes/app/SettingsPage'), 'SettingsPage') },

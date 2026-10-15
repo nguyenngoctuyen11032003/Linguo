@@ -26,6 +26,7 @@ const ROUTE_NAMES: ReadonlyArray<readonly [pattern: string, name: string | null]
   ['/app/phien-hoc', 'Phiên học'],
   ['/app/gia-su', 'Gia sư AI'],
   ['/app/luyen-noi', 'Luyện nói'],
+  ['/app/dong-vai', 'Đóng vai với AI'],
   ['/app/luyen-thi', 'Luyện thi'],
   ['/app/luyen-thi/lam-bai/:attemptId', 'Làm bài luyện thi'],
   ['/app/luyen-thi/ket-qua/:attemptId', 'Kết quả luyện thi'],

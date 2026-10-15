@@ -7,6 +7,7 @@ import {
   type GeneratePracticeOutput,
   type PlanReviewOutput,
   type ReviewWritingOutput,
+  type RoleplayTurnOutput,
   type SummarizeSessionOutput,
 } from '@linguo/shared';
 
@@ -17,7 +18,8 @@ export type ParsedAiResult =
   | { task: 'review_writing'; data: ReviewWritingOutput }
   | { task: 'analyze_sentence'; data: AnalyzeSentenceOutput }
   | { task: 'summarize_session'; data: SummarizeSessionOutput }
-  | { task: 'plan_review'; data: PlanReviewOutput };
+  | { task: 'plan_review'; data: PlanReviewOutput }
+  | { task: 'roleplay_turn'; data: RoleplayTurnOutput };
 
 /** Validates `result.data` against the task's output schema; null when it does not match. */
 export function parseAiResult(result: AiSuccess): ParsedAiResult | null {
@@ -49,6 +51,10 @@ export function parseAiResult(result: AiSuccess): ParsedAiResult | null {
     case 'plan_review': {
       const parsed = AI_OUTPUT_SCHEMAS.plan_review.safeParse(result.data);
       return parsed.success ? { task: 'plan_review', data: parsed.data } : null;
+    }
+    case 'roleplay_turn': {
+      const parsed = AI_OUTPUT_SCHEMAS.roleplay_turn.safeParse(result.data);
+      return parsed.success ? { task: 'roleplay_turn', data: parsed.data } : null;
     }
   }
 }

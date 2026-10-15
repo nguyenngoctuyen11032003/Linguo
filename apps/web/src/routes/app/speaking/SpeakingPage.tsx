@@ -64,6 +64,12 @@ export function SpeakingPage() {
         <p className="text-[15px] text-muted">
           Nói to, nghe lại và tự nhận xét. Đây là luyện tập nhẹ nhàng, không có điểm số hay đánh giá trình độ.
         </p>
+        <Link
+          to="/app/dong-vai"
+          className="inline-flex min-h-11 items-center text-[15px] font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+        >
+          Muốn trò chuyện với đối tác AI? Thử Đóng vai với AI
+        </Link>
       </header>
 
       {material.status === 'loading' && (
