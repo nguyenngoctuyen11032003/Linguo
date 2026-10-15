@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useId, useRef, useState } from 'react';
 import { ChevronRight, NotebookPen, Plus } from 'lucide-react';
 import { Link } from 'react-router';
 import { LANGUAGES, PERSONAL_VOCAB_LIMITS as L } from '@linguo/shared';
@@ -17,6 +17,7 @@ export function PersonalListsPage() {
   const toast = useToast();
   const [creating, setCreating] = useState(false);
   const createRef = useRef<HTMLButtonElement>(null);
+  const listsHeadingId = useId();
   const atLimit = api.lists.length >= L.maxLists;
 
   let content;
@@ -50,29 +51,34 @@ export function PersonalListsPage() {
         {api.status === 'error' && (
           <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
             {api.error}{' '}
-            <button type="button" onClick={api.reload} className="font-semibold underline">
+            <button type="button" onClick={api.reload} className="-my-2 inline-flex min-h-11 min-w-11 items-center justify-center px-1 font-semibold underline">
               Thử lại
             </button>
           </p>
         )}
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {api.lists.map((list) => (
-            <li key={list.id} className="min-w-0">
-              <SolidCard className="p-0">
-                <Link to={`/app/tu-vung-cua-toi/${list.id}`} className="flex min-h-20 items-center gap-3 rounded-3xl p-5 hover:bg-text/5">
-                  <span className="min-w-0 flex-1">
-                    <span className="block break-words text-[17px] font-semibold">{list.name}</span>
-                    <span className="mt-0.5 block text-sm text-muted">
-                      {LANGUAGES[list.language_code].nameVi} · {list.word_count} từ
-                      {list.due_count > 0 ? ` · ${list.due_count} từ cần ôn` : list.word_count > 0 ? ' · hôm nay đã ôn xong' : ''}
+        <section aria-labelledby={listsHeadingId} className="space-y-3">
+          <h2 id={listsHeadingId} className="text-lg font-semibold tracking-[-0.01em]">
+            Danh sách của tôi
+          </h2>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {api.lists.map((list) => (
+              <li key={list.id} className="min-w-0">
+                <SolidCard className="p-0">
+                  <Link to={`/app/tu-vung-cua-toi/${list.id}`} className="flex min-h-20 items-center gap-3 rounded-3xl p-5 hover:bg-text/5">
+                    <span className="min-w-0 flex-1">
+                      <span className="block break-words text-[17px] font-semibold">{list.name}</span>
+                      <span className="mt-0.5 block text-sm text-muted">
+                        {LANGUAGES[list.language_code].nameVi} · {list.word_count} từ
+                        {list.due_count > 0 ? ` · ${list.due_count} từ cần ôn` : list.word_count > 0 ? ' · hôm nay đã ôn xong' : ''}
+                      </span>
                     </span>
-                  </span>
-                  <ChevronRight aria-hidden className="size-5 shrink-0 text-muted" />
-                </Link>
-              </SolidCard>
-            </li>
-          ))}
-        </ul>
+                    <ChevronRight aria-hidden className="size-5 shrink-0 text-muted" />
+                  </Link>
+                </SolidCard>
+              </li>
+            ))}
+          </ul>
+        </section>
       </>
     );
   }

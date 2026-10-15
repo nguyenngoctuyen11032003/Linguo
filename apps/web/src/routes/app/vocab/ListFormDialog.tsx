@@ -4,8 +4,13 @@ import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input } from '@/components/ui/Input';
 import { personalVocabErrorMessage } from '@/features/personal-vocab/error-map';
+import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
 import { VocabDialog } from './VocabDialog';
+
+function isPersonalLanguage(code: string | undefined): code is PersonalLanguage {
+  return (PERSONAL_LANGUAGES as readonly string[]).includes(code ?? '');
+}
 
 export interface ListFormDialogProps {
   open: boolean;
@@ -35,10 +40,12 @@ export function ListFormDialog({ open, mode, initialName = '', triggerRef, onClo
 
 function ListForm({ mode, initialName, onClose, onSubmit }: Pick<ListFormDialogProps, 'mode' | 'onClose' | 'onSubmit'> & { initialName: string }) {
   const [name, setName] = useState(initialName);
-  const [language, setLanguage] = useState<PersonalLanguage>('ko');
+  const pathLanguage = useLearningPaths().current?.language;
+  // Start from the language the learner is studying now.
+  const [language, setLanguage] = useState<PersonalLanguage>(() => (isPersonalLanguage(pathLanguage) ? pathLanguage : 'ko'));
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const languageLabelId = useId();
+  const languageName = useId();
 
   async function submit(event: FormEvent) {
     event.preventDefault();
@@ -77,34 +84,30 @@ function ListForm({ mode, initialName, onClose, onSubmit }: Pick<ListFormDialogP
         )}
       </FormField>
       {mode === 'create' && (
-        <div role="radiogroup" aria-labelledby={languageLabelId} className="space-y-1.5">
-          <p id={languageLabelId} className="px-1 text-sm font-medium">
-            Ngôn ngữ của các từ
-          </p>
+        // Native radios: one Tab stop, arrow keys move the choice.
+        <fieldset className="space-y-1.5">
+          <legend className="mb-1.5 px-1 text-sm font-medium">Ngôn ngữ của các từ</legend>
           <div className="grid grid-cols-2 gap-2">
             {PERSONAL_LANGUAGES.map((code) => {
               const selected = language === code;
               return (
-                <button
+                <label
                   key={code}
-                  type="button"
-                  role="radio"
-                  aria-checked={selected}
-                  onClick={() => setLanguage(code)}
                   className={cn(
-                    'flex min-h-14 flex-col items-center justify-center rounded-2xl border px-2 py-2 text-center',
+                    'flex min-h-14 cursor-pointer flex-col items-center justify-center rounded-2xl border px-2 py-2 text-center has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/45',
                     selected ? 'border-primary bg-primary/10 font-semibold' : 'border-border bg-surface-solid',
                   )}
                 >
+                  <input type="radio" name={languageName} value={code} checked={selected} onChange={() => setLanguage(code)} className="sr-only" />
                   <span>{LANGUAGES[code].nameVi}</span>
                   <span lang={code} className="text-sm text-muted">
                     {LANGUAGES[code].nativeName}
                   </span>
-                </button>
+                </label>
               );
             })}
           </div>
-        </div>
+        </fieldset>
       )}
       <div className="grid gap-2 sm:grid-cols-2">
         <Button variant="ghost" size="lg" block onClick={onClose} disabled={busy}>
