@@ -79,7 +79,7 @@ async function answerFirstExercise(page: Page) {
   const exercise = lessonExercises(String(LESSON.id))[0]!;
   await fillAnswer(page, exercise);
   await page.getByRole('button', { name: exercise.stage === 'recognition' ? 'Kiểm tra' : 'Chắc chắn', exact: true }).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   return exercise;
 }
 

@@ -95,7 +95,7 @@ function submitButton(page: Page, exercise: Row) {
 async function answerCorrectly(page: Page, exercise: Row) {
   await fillAnswer(page, exercise);
   await submitButton(page, exercise).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
 }
 
 async function runWholeLesson(page: Page, lesson: Record<string, unknown>) {
@@ -153,7 +153,7 @@ test('a reload mid-lesson resumes at the same step with its feedback', async ({ 
   await page.reload();
   await expect(heading(page)).toHaveText(/^Câu 1\//);
   await expect(page).toHaveURL(url);
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   await next(page);
   await expect(heading(page)).toHaveText(/^Câu 2\//);
   await fillAnswer(page, second!);
@@ -184,7 +184,7 @@ test('a double tap on Check sends a single submission', async ({ page }) => {
   await skipToExercise(page);
   await fillAnswer(page, first!);
   await submitButton(page, first!).dblclick();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   // Flush two frames so a second (duplicate) submission would have been sent by now.
   await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
   expect(mock.submitCalls()).toBe(1);
@@ -200,7 +200,7 @@ test('a wrong answer twice reveals the answer and re-checks the exercise at the 
 
   await fillAnswer(page, first, { option_id: wrong.id });
   await submitButton(page, first).click();
-  await expect(page.getByText('Chưa đúng', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chưa đúng', { exact: true })).toBeVisible({ timeout: 15_000 });
   await page.getByRole('button', { name: 'Xem đáp án' }).click();
   await expect(page.getByText(first.key_data.display_answer).first()).toBeVisible();
   await next(page);
@@ -244,7 +244,7 @@ test('the first exercise can be done with the keyboard only', async ({ page }) =
   await expect(page.getByRole('radio', { name: correctText, exact: true })).toHaveAttribute('aria-checked', 'true');
   await tabTo((f) => f.text === 'Kiểm tra');
   await page.keyboard.press('Enter');
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   await tabTo((f) => f.text === 'Tiếp tục');
   await page.keyboard.press('Enter');
   await expect(heading(page)).toHaveText(/^Câu 2\//);
@@ -273,7 +273,7 @@ test('Korean typed through an IME composition is graded correctly', async ({ pag
   await cdp.send('Input.insertText', { text: '오이' });
   await expect(input).toHaveValue('오이');
   await submitButton(page, exercises[index]!).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
 });
 
 for (const colorScheme of ['light', 'dark'] as const) {

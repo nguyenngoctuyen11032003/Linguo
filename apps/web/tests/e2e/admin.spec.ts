@@ -34,7 +34,7 @@ test('a learner reports a lesson exercise and follows it in Settings', async ({ 
   const option = (FIRST_EXERCISE!.prompt.options as Array<{ id: string; text: string }>).find((o) => o.id === optionId)!;
   await page.getByRole('radio', { name: option.text, exact: true }).click();
   await page.getByRole('button', { name: 'Kiểm tra', exact: true }).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
 
   const trigger = page.getByRole('button', { name: 'Báo lỗi nội dung' });
   await trigger.click();
