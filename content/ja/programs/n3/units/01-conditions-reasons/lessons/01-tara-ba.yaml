@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-tara-ba
+order_index: 1
+level: n3
+title:
+  vi: Nếu... thì - ～たら và ～ば
+objectives:
+  - vi: Chia đúng thể たら và thể ば của động từ, tính từ, danh từ.
+  - vi: Dùng ～たら cho lời nhờ, lời hẹn sau một mốc thời gian; dùng ～ば để nêu điều kiện cần.
+  - vi: Tránh lỗi ghép ～ば (động từ hành động) với lời nhờ, lời rủ ở vế sau.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: []
+items:
+  - item: ja:item:n3-gram-tara
+  - item: ja:item:n3-gram-ba
+  - item: ja:item:n3-tsugou
+  - item: ja:item:n3-maniau
+  - item: ja:item:n3-renraku
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hẹn được kiểu "đến nơi thì gọi mình nhé", "nếu không tiện thì tuần sau cũng được" và biết lúc nào dùng たら, lúc nào dùng ば.
+  - type: explain
+    text:
+      vi: 'たら - lấy thể た rồi thêm ら: 行った → 行ったら, 食べた → 食べたら, 安かった → 安かったら, 雨だった → 雨だったら. Có た nhưng không phải quá khứ - 明日着いたら là "ngày mai khi đến nơi".'
+  - type: explain
+    text:
+      vi: 'ば - động từ đổi âm cuối u thành e rồi thêm ば: 行く → 行けば, 待つ → 待てば, 食べる → 食べれば, する → すれば, 来る → 来れば. Tính từ い bỏ い thêm ければ: 安い → 安ければ, いい → よければ.'
+  - type: explain
+    text:
+      vi: たら dùng được hầu như mọi lúc, kể cả khi vế sau là lời nhờ, lời rủ. ば nhấn mạnh "chỉ cần... là được", hay dùng khi khuyên hoặc nói điều kiện chung.
+  - type: deep_explain
+    text:
+      vi: Khi vế ば là động từ hành động (着く, 帰る) và cùng chủ ngữ với vế sau, vế sau không được là yêu cầu, rủ rê, ý định - lúc đó phải dùng たら. Nếu vế ば là trạng thái (ある, いる, tính từ) thì không bị giới hạn - 時間があれば、手伝ってください vẫn tự nhiên.
+  - type: example
+    target: 駅に着いたら、連絡してください。
+    target_lang: ja
+    translation:
+      vi: Đến ga thì liên lạc cho tôi nhé.
+    note:
+      vi: Vế sau là lời nhờ nên dùng たら.
+  - type: example
+    target: 都合が悪ければ、来週でもいいですよ。
+    target_lang: ja
+    translation:
+      vi: Nếu bạn không tiện thì tuần sau cũng được.
+    note:
+      vi: 悪い → 悪ければ.
+  - type: example
+    target: 急げば、まだ間に合います。
+    target_lang: ja
+    translation:
+      vi: Nếu nhanh lên thì vẫn còn kịp.
+  - type: example
+    target: 明日雨が降ったら、試合は中止です。
+    target_lang: ja
+    translation:
+      vi: Nếu mai trời mưa thì trận đấu bị huỷ.
+  - type: common_mistake
+    wrong: 駅に着けば、電話してください。
+    right: 駅に着いたら、電話してください。
+    target_lang: ja
+    note:
+      vi: 着く là hành động, vế sau là lời nhờ nên phải dùng たら. Tiếng Việt chỉ có một chữ "nếu/khi" nên người Việt hay dùng ば cho mọi trường hợp.
+  - type: common_mistake
+    wrong: 安いければ、買います。
+    right: 安ければ、買います。
+    target_lang: ja
+    note:
+      vi: Tính từ い phải bỏ い rồi mới thêm ければ. いい là trường hợp đặc biệt - よければ.
+  - type: summary
+    points:
+      - vi: たら = thể た + ら; dùng được với lời nhờ, rủ, hẹn.
+      - vi: ば - động từ u → e + ば; tính từ い → ければ; いい → よければ.
+      - vi: ば (động từ hành động) không đi với lời nhờ/rủ ở vế sau.
+      - vi: 都合がいい/悪い - tiện/không tiện; 間に合う - kịp; 連絡する - liên lạc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-tara-ba-mcq-ikeba
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-ba
+    prompt:
+      stem: Thể ば của 行く là gì?
+      stem_lang: vi
+      options:
+        - { id: k4p, text: 行けば, lang: ja }
+        - { id: r7e, text: 行くば, lang: ja }
+        - { id: m2x, text: 行かば, lang: ja }
+        - { id: t9s, text: 行ったば, lang: ja }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: Động từ đổi âm cuối u thành e rồi thêm ば - く (ku) → け (ke) → 行けば. ば không gắn thẳng vào thể từ điển hay thể た.
+    display_answer: 行けば
+
+  - key: ja:exercise:n3-tara-ba-listen-station
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-gram-tara
+    prompt:
+      audio_asset_id: null
+      fallback_text: 駅に着いたら、連絡してください。
+      options:
+        - { id: a3h, text: Đến ga thì liên lạc cho tôi nhé., lang: vi }
+        - { id: w8n, text: Trước khi đến ga thì liên lạc cho tôi nhé., lang: vi }
+        - { id: c5v, text: Tôi đã liên lạc khi đến ga., lang: vi }
+        - { id: j1q, text: Nếu không đến ga được thì liên lạc cho tôi., lang: vi }
+    answer:
+      correct_option_id: a3h
+    explanation:
+      vi: 着いたら - "khi đã đến nơi"; てください là lời nhờ. Câu không có 前に (trước khi) hay phủ định 着かなかったら.
+    display_answer: Đến ga thì liên lạc cho tôi nhé.
+
+  - key: ja:exercise:n3-tara-ba-mcq-yasukereba
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-ba
+    prompt:
+      stem: '"Nếu rẻ thì tôi mua." Chọn dạng đúng điền vào: ＿＿、買います。'
+      stem_lang: vi
+      options:
+        - { id: y6b, text: 安ければ, lang: ja }
+        - { id: f2d, text: 安いければ, lang: ja }
+        - { id: u8k, text: 安くければ, lang: ja }
+        - { id: o4z, text: 安いば, lang: ja }
+    answer:
+      correct_option_id: y6b
+    explanation:
+      vi: Tính từ い bỏ い rồi thêm ければ - 安い → 安ければ. Giữ lại い (安いければ) hay thêm く là lỗi hay gặp.
+    display_answer: 安ければ
+
+  - key: ja:exercise:n3-tara-ba-fill-areba
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-ba
+    prompt:
+      template: "時間が{{b1}}、手伝います。(ある)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Nếu có thời gian thì tôi sẽ giúp."
+        - "Gợi ý: ある → đổi る thành れ rồi thêm ば (hoặc dùng thể た + ら)."
+    answer:
+      blanks:
+        b1: [あれば, あったら]
+    known_wrong:
+      - answer: あるば
+        feedback_vi: ば không gắn vào thể từ điển. ある → あれば.
+        error_tag: ba_form
+      - answer: あるたら
+        feedback_vi: たら gắn vào thể た - あった → あったら.
+        error_tag: tara_form
+    explanation:
+      vi: ある là trạng thái nên cả あれば và あったら đều tự nhiên. Vế sau là ý định (手伝います) vẫn dùng được với ば vì vế trước không phải hành động.
+    display_answer: 時間があれば、手伝います。
+
+  - key: ja:exercise:n3-tara-ba-wb-maniau
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-maniau
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nếu nhanh lên thì vẫn còn kịp.\""
+      tokens:
+        - { id: t3, text: 間に合います }
+        - { id: t2, text: まだ }
+        - { id: t4, text: 急ぐば }
+        - { id: t1, text: 急げば }
+    answer:
+      orders:
+        - [t1, t2, t3]
+        - [t2, t1, t3]
+    explanation:
+      vi: 急ぐ → 急げば (ぐ → げ + ば). まだ có thể đứng trước hay sau 急げば. 急ぐば sai vì ば không gắn vào thể từ điển.
+    display_answer: 急げば、まだ間に合います。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-tara-ba-fill-futtara
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tara
+    prompt:
+      template: "明日雨が{{b1}}、試合は中止です。(降る)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [降ったら, ふったら, 降れば, ふれば]
+    known_wrong:
+      - answer: 降るたら
+        feedback_vi: たら gắn vào thể た - 降った → 降ったら.
+        error_tag: tara_form
+      - answer: 降るば
+        feedback_vi: ば không gắn vào thể từ điển - 降る → 降れば.
+        error_tag: ba_form
+      - answer: 降ると
+        feedback_vi: と dùng cho kết quả tất yếu, luôn xảy ra; nói một lần cụ thể (mai trời mưa) nên dùng たら hoặc ば.
+        error_tag: conditional_choice
+    explanation:
+      vi: 降る là động từ nhóm 1 - 降った → 降ったら, hoặc る → れ + ば → 降れば. Vế sau là thông tin nên cả hai đều đúng.
+    display_answer: 明日雨が降ったら、試合は中止です。
+
+  - key: ja:exercise:n3-tara-ba-translate-tsugou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tsugou
+    prompt:
+      source_text: Nếu bạn không tiện thì tuần sau cũng được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 都合が悪ければ、来週でもいいです。
+        - 都合が悪ければ来週でもいいです。
+        - 都合が悪ければ、来週でもいいですよ。
+        - 都合が悪ければ来週でもいいですよ。
+        - 都合が悪かったら、来週でもいいです。
+        - 都合が悪かったら来週でもいいです。
+        - 都合が悪かったら、来週でもいいですよ。
+        - 都合が悪かったら来週でもいいですよ。
+        - 都合が悪ければ、来週でも大丈夫です。
+        - 都合が悪ければ来週でも大丈夫です。
+        - 都合が悪かったら、来週でも大丈夫です。
+        - 都合が悪かったら来週でも大丈夫です。
+        - つごうがわるければ、らいしゅうでもいいです。
+        - つごうがわるければらいしゅうでもいいです。
+        - 都合が悪ければ、来週でもいい。
+        - 都合が悪ければ来週でもいい。
+        - 都合が悪かったら、来週でもいいよ。
+        - 都合が悪かったら来週でもいいよ。
+    known_wrong:
+      - answer: 都合が悪いければ、来週でもいいです。
+        feedback_vi: Tính từ い bỏ い rồi thêm ければ - 悪い → 悪ければ.
+        error_tag: ba_form
+      - answer: tsugou ga warukereba raishuu demo ii desu
+        feedback_vi: Hãy viết bằng chữ Nhật (kana/kanji); romaji chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: 都合が悪い - không tiện; 悪い → 悪ければ hoặc 悪かったら. ～でもいいです - "... cũng được".
+    display_answer: 都合が悪ければ、来週でもいいです。
+
+  - key: ja:exercise:n3-tara-ba-translate-renraku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-renraku
+    prompt:
+      source_text: Đến ga thì liên lạc cho tôi nhé. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 駅に着いたら、連絡してください。
+        - 駅に着いたら連絡してください。
+        - 駅についたら、連絡してください。
+        - 駅についたら連絡してください。
+        - 駅に着いたら、連絡ください。
+        - 駅に着いたら連絡ください。
+        - 駅に着いたら、連絡して下さい。
+        - 駅に着いたら連絡して下さい。
+        - 駅に着いたら、私に連絡してください。
+        - 駅に着いたら私に連絡してください。
+        - えきについたら、れんらくしてください。
+        - えきについたられんらくしてください。
+    known_wrong:
+      - answer: 駅に着けば、連絡してください。
+        feedback_vi: 着く là hành động và vế sau là lời nhờ, nên phải dùng たら, không dùng ば.
+        error_tag: ba_request
+      - answer: 駅に着くと、連絡してください。
+        feedback_vi: と không đi với lời nhờ ở vế sau. Dùng 着いたら.
+        error_tag: to_request
+    explanation:
+      vi: 着く → 着いた → 着いたら (sau khi đến). Vế sau là lời nhờ ～てください nên chỉ たら tự nhiên.
+    display_answer: 駅に着いたら、連絡してください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-tara-ba-mcq-mail
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tara
+    prompt:
+      stem: Bạn muốn dặn bạn thân "Về đến nhà thì nhắn tin cho mình nhé." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: e7g, text: 家に帰ったら、メールしてね。, lang: ja }
+        - { id: h2w, text: 家に帰れば、メールしてね。, lang: ja }
+        - { id: s9r, text: 家に帰ると、メールしてね。, lang: ja }
+        - { id: l5c, text: 家に帰るなら、メールしてね。, lang: ja }
+    answer:
+      correct_option_id: e7g
+    explanation:
+      vi: Nhắn tin sau khi đã về đến nhà - 帰ったら. ば và と không đi với lời nhờ khi vế trước là hành động; 帰るなら là "nếu định về" - nhắn trước khi về.
+    display_answer: 家に帰ったら、メールしてね。
+
+  - key: ja:exercise:n3-tara-ba-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-maniau
+    prompt:
+      source_text: タクシーで行けば、会議に間に合いますよ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu đi taxi thì sẽ kịp cuộc họp đấy.
+        - Nếu đi taxi thì kịp cuộc họp đấy.
+        - Nếu đi taxi thì sẽ kịp cuộc họp.
+        - Nếu đi taxi thì kịp cuộc họp.
+        - Đi taxi thì sẽ kịp cuộc họp đấy.
+        - Đi taxi thì kịp cuộc họp đấy.
+        - Đi taxi thì kịp họp đấy.
+        - Nếu đi taxi thì kịp họp đấy.
+        - Nếu đi bằng taxi thì sẽ kịp cuộc họp đấy.
+        - Nếu bạn đi taxi thì sẽ kịp cuộc họp đấy.
+        - Nếu đi tắc xi thì sẽ kịp cuộc họp đấy.
+        - Nếu đi taxi thì vẫn kịp cuộc họp đấy.
+        - Nếu đi taxi thì sẽ kịp giờ họp đấy.
+        - Đi taxi là kịp họp đấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã đi taxi nên kịp cuộc họp.
+        feedback_vi: 行けば là điều kiện "nếu đi", chưa xảy ra; không phải "đã đi".
+        error_tag: conditional_meaning
+      - answer: Nếu đi taxi thì sẽ không kịp cuộc họp.
+        feedback_vi: 間に合います là kịp; không kịp là 間に合いません.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 行けば - nếu đi; 会議に間に合う - kịp cuộc họp; よ ở cuối - "đấy" (cho người nghe biết thông tin).
+    display_answer: Nếu đi taxi thì sẽ kịp cuộc họp đấy.
+
+  - key: ja:exercise:n3-tara-ba-wb-yokereba
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tsugou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nếu bạn tiện thì tuần sau gặp nhau nhé.\""
+      tokens:
+        - { id: w3, text: 会いましょう }
+        - { id: w5, text: 都合がいければ }
+        - { id: w2, text: 来週 }
+        - { id: w1, text: 都合がよければ }
+    answer:
+      orders:
+        - [w1, w2, w3]
+        - [w2, w1, w3]
+    explanation:
+      vi: いい chia ば thành よければ (từ よい), không phải いければ. 来週 có thể đứng đầu câu hoặc ngay trước 会いましょう.
+    display_answer: 都合がよければ、来週会いましょう。
+
+  - key: ja:exercise:n3-tara-ba-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ba
+    prompt:
+      stem: 'Đồng nghiệp lo không kịp hạn nộp. Bạn khuyên: "Chỉ cần hỏi trưởng phòng là được mà." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: q8a, text: 部長に聞けばいいですよ。, lang: ja }
+        - { id: z4k, text: 部長に聞くといいましょう。, lang: ja }
+        - { id: d1f, text: 部長に聞いたらいけません。, lang: ja }
+        - { id: v6m, text: 部長に聞けばだめですよ。, lang: ja }
+    answer:
+      correct_option_id: q8a
+    explanation:
+      vi: ～ばいい là mẫu khuyên "chỉ cần... là được". いけません và だめ là cấm đoán, ngược nghĩa; といいましょう là sai ngữ pháp.
+    display_answer: 部長に聞けばいいですよ。

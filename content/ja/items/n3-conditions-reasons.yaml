@@ -1,0 +1,530 @@
+# Học liệu unit "Điều kiện, lý do và nhượng bộ" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～たら / ～ば =================
+  - key: ja:item:n3-gram-tara
+    type: grammar_point
+    level: n3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-たら · A-かったら · N-だったら
+      romanization: -tara
+      pos: điều kiện / thời điểm
+    back:
+      meaning:
+        vi: '"Nếu... thì", "khi (đã)... thì". Lấy thể た rồi thêm ら - 行ったら, 安かったら, 雨だったら. Vế sau dùng được mọi kiểu câu, kể cả nhờ vả, rủ rê.'
+      examples:
+        - target: 駅に着いたら、連絡してください。
+          translation:
+            vi: Đến ga thì liên lạc cho tôi nhé.
+      pronunciation_note:
+        vi: たら đọc "ta-ra", r tiếng Nhật đọc nhẹ giữa "r" và "l".
+      confusion:
+        vi: たら không phải thì quá khứ dù có た - 明日駅に着いたら là "ngày mai khi đến ga". Đây là dạng điều kiện an toàn nhất khi bạn phân vân.
+
+  - key: ja:item:n3-gram-ba
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-ば · A-ければ · N-なら(ば)
+      romanization: -ba · -kereba
+      pos: điều kiện
+    back:
+      meaning:
+        vi: '"Nếu... thì" - nhấn vào điều kiện cần để có kết quả. Động từ đổi đuôi u → e + ば (行く → 行けば, 食べる → 食べれば, する → すれば, 来る → 来れば); tính từ い bỏ い + ければ (安い → 安ければ).'
+      examples:
+        - target: 急げば、まだ間に合います。
+          translation:
+            vi: Nếu nhanh lên thì vẫn còn kịp.
+      pronunciation_note:
+        vi: ければ đọc "kê-rê-ba", hai âm け rõ ràng, không nuốt âm.
+      confusion:
+        vi: Khi vế ば là hành động (着く, 行く) và cùng chủ ngữ với vế sau, vế sau không được là lời nhờ hay rủ - nói 着いたら、電話してください, không nói 着けば、電話してください. いい → よければ (không phải いければ).
+
+  - key: ja:item:n3-tsugou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 都合
+      reading: つごう
+      romanization: tsugō
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tiện / không tiện về thời gian, hoàn cảnh; 都合がいい - tiện, 都合が悪い - không tiện
+      examples:
+        - target: 都合が悪ければ、来週でもいいですよ。
+          translation:
+            vi: Nếu bạn không tiện thì tuần sau cũng được.
+      pronunciation_note:
+        vi: ごう là âm dài - "gô-ô", kéo dài gấp đôi; đọc ngắn thành "tsugo" là sai.
+      confusion:
+        vi: 都合 nói về lịch, hoàn cảnh của người; đồ vật tiện dụng thì dùng 便利 (べんり). "Tôi bận" một cách lịch sự là 都合が悪いです.
+
+  - key: ja:item:n3-maniau
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 間に合う
+      reading: まにあう
+      romanization: ma ni au
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: kịp (giờ, hạn); 間に合わない - không kịp
+      examples:
+        - target: タクシーで行けば、会議に間に合います。
+          translation:
+            vi: Nếu đi taxi thì sẽ kịp cuộc họp.
+      pronunciation_note:
+        vi: Đọc liền "ma-ni-a-u", あう là hai nguyên âm tách rõ.
+      confusion:
+        vi: Kịp cái gì dùng に - 電車に間に合う (kịp tàu). Không kịp tàu nên bị lỡ là 電車に乗り遅れる.
+
+  - key: ja:item:n3-renraku
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 連絡する
+      reading: れんらくする
+      romanization: renraku suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: liên lạc, báo tin (gọi điện, nhắn tin, email đều được)
+      examples:
+        - target: 何かあったら、すぐ連絡してください。
+          translation:
+            vi: Có chuyện gì thì liên lạc ngay cho tôi nhé.
+      pronunciation_note:
+        vi: ん trước r đọc như "n" mũi nhẹ - "ren-ra-ku".
+      confusion:
+        vi: Liên lạc với ai dùng に - 先生に連絡する. 連絡 bao gồm mọi cách báo tin, nên không cần nói rõ là gọi hay nhắn.
+
+  # ================= bài 2: ～と / ～なら =================
+  - key: ja:item:n3-gram-to-cond
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển)-と
+      romanization: -to
+      pos: điều kiện tất yếu
+    back:
+      meaning:
+        vi: '"Hễ... là", "cứ... thì" - kết quả tự nhiên, luôn xảy ra: chỉ đường, cách dùng máy, quy luật. このボタンを押すと、お湯が出ます.'
+      examples:
+        - target: まっすぐ行くと、右に駅があります。
+          translation:
+            vi: Đi thẳng là thấy ga ở bên phải.
+      pronunciation_note:
+        vi: と đọc "tô", không bật hơi.
+      confusion:
+        vi: Vế sau của と không được là ý muốn, lời nhờ, lời rủ - không nói 駅に着くと、電話してください. Muốn nhờ thì dùng たら.
+
+  - key: ja:item:n3-gram-nara
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N / V-なら
+      romanization: -nara
+      pos: điều kiện theo chủ đề
+    back:
+      meaning:
+        vi: '"Nếu là... thì", "nếu (bạn) định... thì" - nhận lại điều người kia vừa nói rồi khuyên hoặc đưa thông tin. 京都に行くなら、秋がいいですよ.'
+      examples:
+        - target: ラーメンなら、駅前の店がおすすめです。
+          translation:
+            vi: Nếu là ramen thì tôi giới thiệu quán trước ga.
+      pronunciation_note:
+        vi: Đọc "na-ra", hai nguyên âm a ngắn.
+      confusion:
+        vi: 行くなら là "nếu định đi" - lời khuyên áp dụng trước khi đi; 行ったら là "sau khi đi rồi". Khuyên mua vé trước thì dùng 行くなら、チケットを先に買ったほうがいい.
+
+  - key: ja:item:n3-magaru
+    type: vocab
+    level: n3
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 曲がる
+      reading: まがる
+      romanization: magaru
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: rẽ, quẹo (khi đi đường)
+      examples:
+        - target: 二つ目の信号を右に曲がると、銀行があります。
+          translation:
+            vi: Rẽ phải ở đèn giao thông thứ hai là thấy ngân hàng.
+      pronunciation_note:
+        vi: が giữa từ nhiều người đọc mũi nhẹ "nga"; đọc "ga" vẫn đúng.
+      confusion:
+        vi: Rẽ ở đâu dùng を (角を曲がる), rẽ về phía nào dùng に (右に曲がる). Người Việt hay dùng で cho chỗ rẽ - sai.
+
+  - key: ja:item:n3-tsukiatari
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 突き当たり
+      reading: つきあたり
+      romanization: tsukiatari
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuối đường, chỗ đường cụt (phải rẽ trái hoặc phải)
+      examples:
+        - target: この道をまっすぐ行くと、突き当たりに郵便局があります。
+          translation:
+            vi: Đi thẳng đường này là thấy bưu điện ở cuối đường.
+      pronunciation_note:
+        vi: つ đọc "tsư" - đầu lưỡi chạm răng rồi bật ra, không đọc "chu".
+      confusion:
+        vi: 突き当たり là điểm đường dừng lại trước mặt bạn; góc phố là 角 (かど). 突き当たりを右に曲がる - đến cuối đường thì rẽ phải.
+
+  - key: ja:item:n3-osusume
+    type: vocab
+    level: n3
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: おすすめ
+      romanization: osusume
+      pos: danh từ
+    back:
+      meaning:
+        vi: món/điều được giới thiệu, gợi ý; 店のおすすめ - món quán gợi ý
+      examples:
+        - target: 何かおすすめはありますか。
+          translation:
+            vi: Có món gì bạn gợi ý không?
+      pronunciation_note:
+        vi: す thường đọc nhẹ gần như "x" - "ô-xư-xư-mê".
+      confusion:
+        vi: Động từ là すすめる (勧める) - khuyên, gợi ý. "Tôi giới thiệu..." tự nhiên nhất là ～がおすすめです, không cần dịch từng chữ "tôi giới thiệu".
+
+  # ================= bài 3: ～ので / ～おかげで / ～せいで =================
+  - key: ja:item:n3-gram-node
+    type: grammar_point
+    level: n3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V/A-ので · N/Na-なので
+      romanization: node
+      pos: liên từ lý do
+    back:
+      meaning:
+        vi: '"Vì... nên" - nêu lý do một cách khách quan, nhẹ nhàng, hợp khi xin phép hay xin lỗi. Danh từ và tính từ な thêm な - 雨なので, 静かなので.'
+      examples:
+        - target: 熱があるので、今日は休ませてください。
+          translation:
+            vi: Vì tôi bị sốt nên cho tôi nghỉ hôm nay.
+      pronunciation_note:
+        vi: ので đọc "nô-đê", で đọc như "đê".
+      confusion:
+        vi: から cũng là "vì" nhưng nghe chủ quan, mạnh hơn; khi xin lỗi, xin phép người trên nên dùng ので. Danh từ đi với なので, không phải だので.
+
+  - key: ja:item:n3-gram-okagede
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N-のおかげで · V/A-おかげで
+      romanization: okage de
+      pos: nguyên nhân tốt
+    back:
+      meaning:
+        vi: '"Nhờ có... mà" - nguyên nhân dẫn đến kết quả tốt, kèm ý biết ơn. 先生のおかげで、合格できました.'
+      examples:
+        - target: 友だちが手伝ってくれたおかげで、早く終わりました。
+          translation:
+            vi: Nhờ bạn giúp mà tôi xong sớm.
+      pronunciation_note:
+        vi: おかげ đọc "ô-ka-ghê".
+      confusion:
+        vi: Kết quả xấu thì không dùng おかげで mà dùng せいで. Câu trả lời quen thuộc おかげさまで nghĩa là "nhờ trời / nhờ mọi người, tôi vẫn ổn".
+
+  - key: ja:item:n3-gram-seide
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N-のせいで · V/A-せいで
+      romanization: sei de
+      pos: nguyên nhân xấu
+    back:
+      meaning:
+        vi: '"Tại... mà", "do... nên" - nguyên nhân dẫn đến kết quả xấu, thường mang ý trách móc. 雨のせいで、試合が中止になった.'
+      examples:
+        - target: 渋滞のせいで、会議に遅れてしまいました。
+          translation:
+            vi: Tại tắc đường mà tôi bị muộn họp.
+      pronunciation_note:
+        vi: せい đọc dài "xê-ê"; い sau え thường kéo thành え dài.
+      confusion:
+        vi: Đổ lỗi cho người cụ thể (あなたのせいで) nghe khá nặng. Muốn trung tính chỉ nói nguyên nhân thì dùng ので hoặc で - 事故で電車が止まった.
+
+  - key: ja:item:n3-juutai
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 渋滞
+      reading: じゅうたい
+      romanization: jūtai
+      pos: danh từ
+    back:
+      meaning:
+        vi: tắc đường, kẹt xe; 渋滞している - đang tắc
+      examples:
+        - target: 朝は道が渋滞しているので、電車で行きます。
+          translation:
+            vi: Buổi sáng đường tắc nên tôi đi tàu điện.
+      pronunciation_note:
+        vi: じゅう là âm dài "ju-u"; đọc ngắn thành じゅたい là sai.
+      confusion:
+        vi: 渋滞 chỉ dùng cho xe cộ. Tàu đông người là 混んでいる (こんでいる), không nói 電車が渋滞.
+
+  - key: ja:item:n3-goukaku
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 合格する
+      reading: ごうかくする
+      romanization: gōkaku suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: đỗ, thi đậu; 試験に合格する - thi đỗ
+      examples:
+        - target: 先生のおかげで、N3に合格しました。
+          translation:
+            vi: Nhờ thầy mà tôi đã đỗ N3.
+      pronunciation_note:
+        vi: ごう dài "gô-ô"; かく đọc nhẹ "ka-kư".
+      confusion:
+        vi: Đỗ kỳ thi nào dùng に - 試験に合格する, không dùng を. Ngược lại là 落ちる (おちる) - trượt.
+
+  # ================= bài 4: ～のに / ～ても =================
+  - key: ja:item:n3-gram-noni
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V/A-のに · N/Na-なのに
+      romanization: noni
+      pos: nhượng bộ (bất mãn)
+    back:
+      meaning:
+        vi: '"Vậy mà", "thế mà" - kết quả trái với mong đợi, kèm cảm giác tiếc, bực, ngạc nhiên. 一生懸命勉強したのに、落ちてしまった.'
+      examples:
+        - target: 約束したのに、彼は来ませんでした。
+          translation:
+            vi: Đã hẹn rồi vậy mà anh ấy không đến.
+      pronunciation_note:
+        vi: のに đọc "nô-ni", giọng thường hạ xuống thể hiện tiếc nuối.
+      confusion:
+        vi: Vế sau của のに là sự thật đã/đang xảy ra, không dùng với lời nhờ hay ý định - không nói 雨なのに、行きましょう. Khi đó dùng ても - 雨が降っても行きましょう.
+
+  - key: ja:item:n3-gram-temo
+    type: grammar_point
+    level: n3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-ても · A-くても · N/Na-でも
+      romanization: -temo
+      pos: nhượng bộ giả định
+    back:
+      meaning:
+        vi: '"Dù... cũng", "cho dù... thì vẫn". Thể て + も - 雨が降っても, 高くても, 子どもでも.'
+      examples:
+        - target: どんなに忙しくても、毎日日本語を勉強します。
+          translation:
+            vi: Dù bận đến đâu, ngày nào tôi cũng học tiếng Nhật.
+      pronunciation_note:
+        vi: ても đọc "tê-mô"; với động từ đuôi ぐ, ぶ, む, ぬ thành でも - 読んでも, 泳いでも.
+      confusion:
+        vi: ても nói về điều kiện giả định hoặc chung chung; nói về một chuyện thật đã xảy ra với giọng tiếc nuối thì dùng のに. どんなに / いくら ～ても = "dù ... đến mấy".
+
+  - key: ja:item:n3-isshoukenmei
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 一生懸命
+      reading: いっしょうけんめい
+      romanization: isshōkenmei
+      pos: tính từ な / phó từ
+    back:
+      meaning:
+        vi: hết sức, chăm chỉ, dốc toàn lực; 一生懸命(に)働く - làm việc hết mình
+      examples:
+        - target: 一生懸命練習したのに、試合に負けました。
+          translation:
+            vi: Đã tập luyện hết sức vậy mà vẫn thua trận.
+      pronunciation_note:
+        vi: いっ có âm ngắt (っ) - dừng nửa nhịp trước しょう; しょう và けん đều kéo dài.
+      confusion:
+        vi: Đây là cụm cố định, không tách ra. Hay viết nhầm 一所懸命 - cách viết cũ, vẫn gặp nhưng ít hơn.
+
+  - key: ja:item:n3-akirameru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 諦める
+      reading: あきらめる
+      romanization: akirameru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: bỏ cuộc, từ bỏ (hy vọng, ước mơ)
+      examples:
+        - target: 失敗しても、諦めないでください。
+          translation:
+            vi: Dù thất bại cũng đừng bỏ cuộc nhé.
+      pronunciation_note:
+        vi: Đọc "a-ki-ra-mê-rư", r nhẹ.
+      confusion:
+        vi: Thường viết bằng hiragana あきらめる. Bỏ cái gì dùng を - 夢を諦める; bỏ thói quen như thuốc lá thì dùng やめる.
+
+  - key: ja:item:n3-kekka
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 結果
+      reading: けっか
+      romanization: kekka
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết quả
+      examples:
+        - target: 試験の結果は来月わかります。
+          translation:
+            vi: Tháng sau mới biết kết quả thi.
+      pronunciation_note:
+        vi: っ là âm ngắt - "kệ(t)-ka", dừng một nhịp trước か.
+      confusion:
+        vi: 結果 là kết quả cuối cùng; thành tích, điểm số là 成績 (せいせき). Viết thiếu っ (けか) là sai chính tả.
+
+  # ================= bài 5: ôn tập (thông báo) =================
+  - key: ja:item:n3-oshirase
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: お知らせ
+      reading: おしらせ
+      romanization: oshirase
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông báo (dán ở bảng tin, gửi qua email, phát trên loa)
+      examples:
+        - target: マンションの掲示板にお知らせが貼ってあります。
+          translation:
+            vi: Trên bảng tin của chung cư có dán thông báo.
+      pronunciation_note:
+        vi: し đọc "si" nhẹ, không phải "shi" nặng như tiếng Anh.
+      confusion:
+        vi: お知らせ là văn bản thông báo; động từ "báo cho biết" là 知らせる. Tin tức thời sự là ニュース.
+
+  - key: ja:item:n3-chuushi
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 中止
+      reading: ちゅうし
+      romanization: chūshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: huỷ bỏ, dừng (sự kiện); 中止になる - bị huỷ
+      examples:
+        - target: 雨が降ったら、花火大会は中止になります。
+          translation:
+            vi: Nếu trời mưa thì lễ hội pháo hoa sẽ bị huỷ.
+      pronunciation_note:
+        vi: ちゅう là âm dài "chư-ư".
+      confusion:
+        vi: 中止 là huỷ hẳn; dời sang ngày khác là 延期 (えんき). Sự kiện tự bị huỷ dùng 中止になる, người tổ chức huỷ dùng 中止する.
+
+  - key: ja:item:n3-enki
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 延期
+      reading: えんき
+      romanization: enki
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoãn, dời lại (sang ngày sau); 延期になる - bị hoãn
+      examples:
+        - target: 台風のせいで、運動会は来週に延期になりました。
+          translation:
+            vi: Tại bão mà hội thao bị hoãn sang tuần sau.
+      pronunciation_note:
+        vi: ん trước き đọc như "ng" - "eng-ki".
+      confusion:
+        vi: 延期 vẫn sẽ tổ chức sau; 中止 là không tổ chức nữa. Dời sang ngày nào dùng に - 来週に延期する.
+
+  - key: ja:item:n3-sanka
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 参加する
+      reading: さんかする
+      romanization: sanka suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: tham gia (sự kiện, hoạt động)
+      examples:
+        - target: 参加したい人は、金曜日までに連絡してください。
+          translation:
+            vi: Ai muốn tham gia thì liên lạc trước thứ Sáu.
+      pronunciation_note:
+        vi: ん trước か đọc "ng" - "sang-ka".
+      confusion:
+        vi: Tham gia cái gì dùng に - イベントに参加する, không dùng を. Người Việt hay dịch "tham gia" thành を vì tiếng Việt không có giới từ.

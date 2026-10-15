@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-conditions-review
+order_index: 5
+level: n3
+title:
+  vi: "Ôn tập: thông báo sự kiện và tin nhắn"
+objectives:
+  - vi: Đọc hiểu một thông báo sự kiện trong khu phố và một chuỗi tin nhắn, suy ra điều không viết thẳng.
+  - vi: Phối hợp たら/ば/と/なら, ので/おかげで/せいで, のに/ても trong cùng một tình huống.
+  - vi: Phân biệt 中止 (huỷ) và 延期 (hoãn) trong thông báo.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n3-noni-temo]
+items:
+  - item: ja:item:n3-oshirase
+  - item: ja:item:n3-chuushi
+  - item: ja:item:n3-enki
+  - item: ja:item:n3-sanka
+  - item: ja:item:n3-gram-tara
+    role: reuse
+  - item: ja:item:n3-gram-ba
+    role: reuse
+  - item: ja:item:n3-gram-to-cond
+    role: reuse
+  - item: ja:item:n3-gram-nara
+    role: reuse
+  - item: ja:item:n3-gram-node
+    role: reuse
+  - item: ja:item:n3-gram-okagede
+    role: reuse
+  - item: ja:item:n3-gram-seide
+    role: reuse
+  - item: ja:item:n3-gram-noni
+    role: reuse
+  - item: ja:item:n3-gram-temo
+    role: reuse
+  - item: ja:item:n3-renraku
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đưa bạn vào hai loại văn bản rất hay gặp ở Nhật - tờ thông báo của khu phố hoặc chung cư, và tin nhắn LINE giữa bạn bè. Bạn dùng lại toàn bộ ngữ pháp điều kiện, lý do, nhượng bộ của unit.
+  - type: explain
+    text:
+      vi: 'Thông báo dùng thể ます và cụm cố định: ～を行います (sẽ tổ chức), ～になります (sẽ thành), ～てください (xin hãy), ～方 (かた - người, lịch sự hơn 人). Ngày tháng viết 10月20日(日) - (日) là Chủ nhật.'
+  - type: explain
+    text:
+      vi: 'Điều kiện trong thông báo thường là 雨が降ったら / 雨の場合は (trường hợp mưa). Hãy để ý 中止 (huỷ hẳn) và 延期 (dời ngày) - hai từ này quyết định bạn có cần đến hay không.'
+  - type: deep_explain
+    text:
+      vi: Câu hỏi đọc hiểu JLPT N3 thường hỏi điều suy ra được. Ví dụ thông báo nói "mưa thì dời sang Chủ nhật tuần sau" - vậy nếu mưa, bạn vẫn tham gia được vào tuần sau. Hãy gạch chân các từ nối ので, のに, ても, たら vì chúng cho biết quan hệ giữa các ý.
+  - type: example
+    target: "お知らせ: 10月20日(日)に公園で秋祭りを行います。雨が降ったら、27日(日)に延期になります。参加したい方は、15日までに管理人に連絡してください。"
+    target_lang: ja
+    translation:
+      vi: "Thông báo: Ngày 20/10 (Chủ nhật) sẽ tổ chức lễ hội mùa thu ở công viên. Nếu trời mưa, lễ hội sẽ dời sang ngày 27 (Chủ nhật). Ai muốn tham gia xin liên lạc với người quản lý trước ngày 15."
+    note:
+      vi: 延期 - dời, không phải huỷ.
+  - type: example
+    target: "ミン: 明日の花火大会、行く? / ゆき: 行きたいけど、台風のせいで中止になったらしいよ。 / ミン: えー、楽しみにしていたのに。"
+    target_lang: ja
+    translation:
+      vi: "Minh: Mai đi lễ hội pháo hoa không? / Yuki: Muốn đi lắm, nhưng nghe nói tại bão nên bị huỷ rồi. / Minh: Ơ, mình đã mong mãi vậy mà."
+    note:
+      vi: せいで - nguyên nhân xấu; のに cuối câu - tiếc nuối.
+  - type: example
+    target: 皆さんが手伝ってくれたおかげで、お祭りは大成功でした。
+    target_lang: ja
+    translation:
+      vi: Nhờ mọi người giúp đỡ mà lễ hội đã thành công lớn.
+  - type: common_mistake
+    wrong: お祭りを参加したいです。
+    right: お祭りに参加したいです。
+    target_lang: ja
+    note:
+      vi: 参加する đi với に. Tiếng Việt "tham gia lễ hội" không có giới từ nên người Việt hay dùng を.
+  - type: common_mistake
+    wrong: 雨が降ったら、お祭りは中止です。でも、来週します。
+    right: 雨が降ったら、お祭りは来週に延期です。
+    target_lang: ja
+    note:
+      vi: Đã nói 中止 (huỷ) thì không tổ chức nữa. Dời sang ngày khác phải dùng 延期.
+  - type: summary
+    points:
+      - vi: 'Thông báo: ～を行います, ～になります, ～方 (người), ～までに (trước hạn).'
+      - vi: 中止 - huỷ hẳn; 延期 - dời ngày; 参加する đi với に.
+      - vi: たら/ば/と/なら - điều kiện; ので/おかげで/せいで - lý do; のに/ても - nhượng bộ.
+      - vi: Đọc hiểu - để ý từ nối để suy ra điều không viết thẳng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-conditions-review-mcq-notice
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-enki
+    prompt:
+      stem: "Đọc thông báo: 「10月20日(日)に秋祭りを行います。雨が降ったら、27日(日)に延期になります。」 Nếu ngày 20 trời mưa thì sao?"
+      stem_lang: vi
+      options:
+        - { id: v2k, text: Lễ hội được tổ chức vào ngày 27., lang: vi }
+        - { id: c7m, text: Lễ hội bị huỷ hẳn., lang: vi }
+        - { id: t4e, text: Lễ hội vẫn tổ chức ngày 20 trong nhà., lang: vi }
+        - { id: l9s, text: Người tham gia phải liên lạc lại vào ngày 27., lang: vi }
+    answer:
+      correct_option_id: v2k
+    explanation:
+      vi: 延期になります - được dời lại, sang ngày 27. Nếu bị huỷ thì thông báo sẽ dùng 中止.
+    display_answer: Lễ hội được tổ chức vào ngày 27.
+
+  - key: ja:exercise:n3-conditions-review-listen-chuushi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-chuushi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 台風のせいで、花火大会は中止になりました。
+      options:
+        - { id: d6w, text: Tại bão mà lễ hội pháo hoa bị huỷ., lang: vi }
+        - { id: k3y, text: Tại bão mà lễ hội pháo hoa bị hoãn sang tuần sau., lang: vi }
+        - { id: f8b, text: "Dù có bão, lễ hội pháo hoa vẫn diễn ra.", lang: vi }
+        - { id: q1n, text: Nhờ bão tan mà lễ hội pháo hoa được tổ chức., lang: vi }
+    answer:
+      correct_option_id: d6w
+    explanation:
+      vi: 中止になりました - đã bị huỷ (không phải 延期 - hoãn). せいで cho biết bão là nguyên nhân xấu.
+    display_answer: Tại bão mà lễ hội pháo hoa bị huỷ.
+
+  - key: ja:exercise:n3-conditions-review-fill-sanka
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-sanka
+    prompt:
+      template: "参加したい方は、15日{{b1}}管理人{{b2}}連絡してください。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Ai muốn tham gia xin liên lạc với người quản lý trước ngày 15."
+        - "Gợi ý: hạn chót dùng までに; liên lạc với ai dùng に."
+    answer:
+      blanks:
+        b1: [までに]
+        b2: [に]
+    known_wrong:
+      - answer: まで
+        feedback_vi: まで là "cho đến" (kéo dài liên tục); hạn chót để làm một việc dùng までに.
+        error_tag: made_madeni
+      - answer: を
+        feedback_vi: Liên lạc với ai dùng に - 管理人に連絡する.
+        error_tag: particle_ni
+    explanation:
+      vi: までに - trước (hạn chót); 管理人に連絡する - liên lạc với người quản lý.
+    display_answer: 参加したい方は、15日までに管理人に連絡してください。
+
+  - key: ja:exercise:n3-conditions-review-wb-noni
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-noni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Mình đã mong mãi vậy mà (bị huỷ).\""
+      tokens:
+        - { id: n2, text: していたのに }
+        - { id: n3, text: していたので }
+        - { id: n1, text: 楽しみに }
+    answer:
+      orders:
+        - [n1, n2]
+    explanation:
+      vi: 楽しみにする - mong chờ; のに ở cuối câu - than tiếc vì điều mong đợi không thành. ので là "vì", không mang ý tiếc.
+    display_answer: 楽しみにしていたのに。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-conditions-review-fill-mix
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tara
+    prompt:
+      template: "雨が{{b1}}、お祭りは延期です。でも、少し雨が{{b2}}、お祭りはやります。(降る)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [降ったら, 降れば, ふったら, ふれば]
+        b2: [降っても, ふっても]
+    known_wrong:
+      - answer: 降ったのに
+        feedback_vi: Câu nói về kế hoạch tương lai nên dùng ても ("dù có mưa"), không dùng のに.
+        error_tag: noni_temo
+    explanation:
+      vi: Vế đầu là điều kiện - 降ったら / 降れば. Vế sau là "dù mưa một chút vẫn tổ chức" - 降っても.
+    display_answer: 雨が降ったら、お祭りは延期です。でも、少し雨が降っても、お祭りはやります。
+
+  - key: ja:exercise:n3-conditions-review-translate-sanka
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-sanka
+    prompt:
+      source_text: Tôi muốn tham gia lễ hội. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お祭りに参加したいです。
+        - 祭りに参加したいです。
+        - 私はお祭りに参加したいです。
+        - 私もお祭りに参加したいです。
+        - おまつりにさんかしたいです。
+        - お祭りに参加したいと思います。
+        - 私はお祭りに参加したいと思います。
+        - お祭りに参加させてください。
+        - お祭りに参加したいんですが。
+    known_wrong:
+      - answer: お祭りを参加したいです。
+        feedback_vi: 参加する đi với に - お祭りに参加する.
+        error_tag: particle_ni
+    explanation:
+      vi: ～に参加する - tham gia ...; ～たいです - muốn (lịch sự).
+    display_answer: お祭りに参加したいです。
+
+  - key: ja:exercise:n3-conditions-review-translate-okage
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-okagede
+    prompt:
+      source_text: Nhờ mọi người giúp đỡ mà lễ hội đã thành công. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 皆さんが手伝ってくれたおかげで、お祭りは成功しました。
+        - 皆さんが手伝ってくれたおかげでお祭りは成功しました。
+        - 皆さんのおかげで、お祭りは成功しました。
+        - 皆さんのおかげでお祭りは成功しました。
+        - みなさんのおかげで、お祭りは成功しました。
+        - みなさんのおかげでお祭りは成功しました。
+        - 皆さんが手伝ってくださったおかげで、お祭りは成功しました。
+        - 皆さんが手伝ってくださったおかげでお祭りは成功しました。
+        - 皆さんが手伝ってくれたおかげで、お祭りが成功しました。
+        - 皆さんが手伝ってくれたおかげでお祭りが成功しました。
+        - 皆さんのおかげで、お祭りが成功しました。
+        - 皆さんのおかげでお祭りが成功しました。
+        - みんなが手伝ってくれたおかげで、お祭りは成功しました。
+        - みんなが手伝ってくれたおかげでお祭りは成功しました。
+        - 皆さんのお手伝いのおかげで、お祭りは成功しました。
+        - 皆さんのお手伝いのおかげでお祭りは成功しました。
+        - 皆さんのおかげで、お祭りは大成功でした。
+        - 皆さんのおかげでお祭りは大成功でした。
+        - 皆さんのおかげで、お祭りは成功でした。
+        - 皆さんのおかげでお祭りは成功でした。
+    known_wrong:
+      - answer: 皆さんのせいで、お祭りは成功しました。
+        feedback_vi: Kết quả tốt và có ý cảm ơn - dùng おかげで, không dùng せいで.
+        error_tag: okage_sei
+      - answer: 皆さんがおかげで、お祭りは成功しました。
+        feedback_vi: Sau danh từ dùng の - 皆さんのおかげで; hoặc dùng mệnh đề 皆さんが手伝ってくれたおかげで.
+        error_tag: missing_no
+    explanation:
+      vi: 皆さんのおかげで (danh từ + の) hoặc 手伝ってくれたおかげで (động từ). 成功する - thành công.
+    display_answer: 皆さんが手伝ってくれたおかげで、お祭りは成功しました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-conditions-review-mcq-infer
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-oshirase
+    prompt:
+      stem: "Đọc thông báo: 「明日はビルの点検のため、エレベーターが止まります。重い荷物がある方は、今日中に運んでください。」 Điều nào suy ra được?"
+      stem_lang: vi
+      options:
+        - { id: p5r, text: Ngày mai cư dân phải đi cầu thang bộ., lang: vi }
+        - { id: u1h, text: Hôm nay thang máy không dùng được., lang: vi }
+        - { id: g7c, text: Ngày mai không được mang đồ vào toà nhà., lang: vi }
+        - { id: j4x, text: Việc kiểm tra toà nhà đã bị hoãn., lang: vi }
+    answer:
+      correct_option_id: p5r
+    explanation:
+      vi: 'Thang máy dừng ngày mai (明日...止まります) nên phải đi cầu thang bộ - điều này không viết thẳng nhưng suy ra được. Hôm nay vẫn dùng được, vì thông báo bảo hãy chuyển đồ nặng trong hôm nay (今日中に).'
+    display_answer: Ngày mai cư dân phải đi cầu thang bộ.
+
+  - key: ja:exercise:n3-conditions-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-nara
+    prompt:
+      source_text: お祭りに行くなら、浴衣を着て行くといいですよ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu đi lễ hội thì bạn nên mặc yukata đi đấy.
+        - Nếu đi lễ hội thì nên mặc yukata đi đấy.
+        - Nếu đi lễ hội thì mặc yukata đi sẽ hay đấy.
+        - Nếu bạn đi lễ hội thì nên mặc yukata mà đi.
+        - Nếu đi lễ hội thì nên mặc yukata.
+        - Nếu định đi lễ hội thì nên mặc yukata đi đấy.
+        - Nếu đi lễ hội thì bạn nên mặc yukata.
+        - Đi lễ hội thì nên mặc yukata đấy.
+        - Đi lễ hội thì nên mặc yukata đi.
+        - Nếu đi lễ hội thì mặc yukata đi là hay nhất đấy.
+        - Nếu đi lễ hội thì mặc yukata đi thì tốt đấy.
+        - Nếu đi lễ hội thì mặc yukata sẽ đẹp đấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi đi lễ hội thì nên mặc yukata.
+        feedback_vi: 行くなら - nếu định đi, việc mặc yukata là trước khi đi, không phải sau.
+        error_tag: nara_timing
+    explanation:
+      vi: 行くなら - nếu định đi; ～といいですよ - "... thì hay đấy" (lời khuyên). 浴衣 - áo yukata mùa hè.
+    display_answer: Nếu đi lễ hội thì bạn nên mặc yukata đi đấy.
+
+  - key: ja:exercise:n3-conditions-review-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-temo
+    prompt:
+      stem: 'Bạn nhắn cho Yuki: "Dù lễ hội bị hoãn, tuần sau mình vẫn đi được." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: s3a, text: お祭りが延期になっても、来週なら行けるよ。, lang: ja }
+        - { id: m6d, text: お祭りが延期になったのに、来週なら行けるよ。, lang: ja }
+        - { id: b9f, text: お祭りが中止になっても、来週なら行けるよ。, lang: ja }
+        - { id: y2t, text: お祭りが延期になるので、来週も行けないよ。, lang: ja }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: Giả định "dù có bị hoãn" - ても; 来週なら - "nếu là tuần sau". Câu のに dùng cho chuyện đã xảy ra, không hợp; 中止 là huỷ thì không có "tuần sau"; câu cuối ngược nghĩa.
+    display_answer: お祭りが延期になっても、来週なら行けるよ。
+
+  - key: ja:exercise:n3-conditions-review-wb-notice
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-chuushi
+    prompt:
+      instruction: "Sắp xếp thành câu thông báo: \"Nếu trời mưa, chợ phiên đồ cũ sẽ bị huỷ.\""
+      tokens:
+        - { id: m4, text: 中止になります }
+        - { id: m2, text: フリーマーケットは }
+        - { id: m5, text: 中止をなります }
+        - { id: m1, text: 雨が降ったら }
+    answer:
+      orders:
+        - [m1, m2, m4]
+        - [m2, m1, m4]
+    explanation:
+      vi: Sự kiện "bị huỷ" dùng 中止になります - danh từ + に + なる (trở thành). 中止をなります sai trợ từ. Chủ đề và điều kiện có thể đổi chỗ.
+    display_answer: 雨が降ったら、フリーマーケットは中止になります。

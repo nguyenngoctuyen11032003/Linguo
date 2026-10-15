@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-to-nara
+order_index: 2
+level: n3
+title:
+  vi: Chỉ đường và khuyên nhủ - ～と và ～なら
+objectives:
+  - vi: Dùng ～と để chỉ đường, hướng dẫn cách dùng máy, nói quy luật luôn xảy ra.
+  - vi: Dùng ～なら để nhận lại chủ đề người kia nói rồi khuyên hoặc giới thiệu.
+  - vi: Phân biệt と, たら, ば, なら trong những câu dễ nhầm.
+estimated_minutes: 18
+skills: [grammar, speaking, listening]
+prerequisites: [ja:lesson:n3-tara-ba]
+items:
+  - item: ja:item:n3-gram-to-cond
+  - item: ja:item:n3-gram-nara
+  - item: ja:item:n3-magaru
+  - item: ja:item:n3-tsukiatari
+  - item: ja:item:n3-osusume
+  - item: ja:item:n3-gram-tara
+    role: reuse
+  - item: ja:item:n3-gram-ba
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chỉ đường cho khách ("đi thẳng là thấy..."), giải thích cách dùng máy bán vé, và đưa lời khuyên kiểu "nếu đi Kyoto thì nên đi mùa thu".
+  - type: explain
+    text:
+      vi: 'と gắn sau thể từ điển (hoặc thể ない): 押すと, 曲がると, 行かないと. Vế sau là điều luôn xảy ra hoặc bạn phát hiện ra - このボタンを押すと、切符が出ます.'
+  - type: explain
+    text:
+      vi: Vế sau của と không được là ý muốn, lời nhờ, lời rủ, lời khuyên. Muốn nói "đến nơi thì gọi tôi" phải dùng たら.
+  - type: explain
+    text:
+      vi: 'なら đứng sau danh từ hoặc thể thường của động từ: 京都なら, 行くなら. Bạn nhận lại điều người kia vừa nói ("nếu là chuyện đó thì...") rồi đưa lời khuyên, thông tin.'
+  - type: deep_explain
+    text:
+      vi: '行くなら và 行ったら khác nhau về thời điểm. 京都に行くなら、新幹線が便利です - lời khuyên áp dụng trước khi đi. 京都に行ったら、お寺を見てください - việc làm sau khi đã đến nơi. Tiếng Việt đều là "nếu đi Kyoto thì...", nên hãy tự hỏi: việc ở vế sau xảy ra trước hay sau?'
+  - type: example
+    target: この道をまっすぐ行くと、突き当たりに郵便局があります。
+    target_lang: ja
+    translation:
+      vi: Đi thẳng đường này là thấy bưu điện ở cuối đường.
+    note:
+      vi: Chỉ đường - kết quả luôn như vậy nên dùng と.
+  - type: example
+    target: 二つ目の信号を右に曲がると、銀行が見えます。
+    target_lang: ja
+    translation:
+      vi: Rẽ phải ở đèn giao thông thứ hai là thấy ngân hàng.
+  - type: example
+    target: "A: 来月、京都に行きます。 B: 京都に行くなら、秋がおすすめですよ。"
+    target_lang: ja
+    translation:
+      vi: "A: Tháng sau tôi đi Kyoto. B: Nếu đi Kyoto thì mùa thu là đẹp nhất đấy."
+    note:
+      vi: B nhận lại chủ đề của A bằng なら.
+  - type: example
+    target: ラーメンなら、駅前の店がおすすめです。
+    target_lang: ja
+    translation:
+      vi: Nếu là ramen thì tôi giới thiệu quán trước ga.
+  - type: common_mistake
+    wrong: 駅に着くと、電話してください。
+    right: 駅に着いたら、電話してください。
+    target_lang: ja
+    note:
+      vi: と không đi với lời nhờ. Người Việt dịch "đến ga thì..." hay chọn と vì nó ngắn, nhưng lời nhờ phải dùng たら.
+  - type: common_mistake
+    wrong: 角で右に曲がってください。
+    right: 角を右に曲がってください。
+    target_lang: ja
+    note:
+      vi: Chỗ mình đi qua để rẽ dùng を (角を曲がる, 橋を渡る); hướng rẽ dùng に (右に).
+  - type: summary
+    points:
+      - vi: と - kết quả tất yếu, chỉ đường, cách dùng máy; vế sau không là nhờ/rủ/khuyên.
+      - vi: なら - nhận lại chủ đề rồi khuyên; 行くなら = trước khi đi, 行ったら = sau khi đến.
+      - vi: 角を右に曲がる - を cho chỗ rẽ, に cho hướng rẽ.
+      - vi: 突き当たり - cuối đường; おすすめ - món/điều được gợi ý.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-to-nara-mcq-button
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-to-cond
+    prompt:
+      stem: 'Hướng dẫn dùng máy: "Bấm nút này là vé sẽ ra." Chọn từ điền vào: このボタンを押す＿＿、切符が出ます。'
+      stem_lang: vi
+      options:
+        - { id: g5t, text: と, lang: ja }
+        - { id: b8m, text: なら, lang: ja }
+        - { id: p2c, text: ので, lang: ja }
+        - { id: x7r, text: のに, lang: ja }
+    answer:
+      correct_option_id: g5t
+    explanation:
+      vi: Cách dùng máy - bấm là vé luôn ra, kết quả tất yếu nên dùng と. ので là "vì", のに là "vậy mà"; 押すなら là "nếu định bấm", không hợp với hướng dẫn.
+    display_answer: と
+
+  - key: ja:exercise:n3-to-nara-listen-directions
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-tsukiatari
+    prompt:
+      audio_asset_id: null
+      fallback_text: この道をまっすぐ行くと、突き当たりに郵便局があります。
+      options:
+        - { id: n4w, text: Đi thẳng đường này là thấy bưu điện ở cuối đường., lang: vi }
+        - { id: k1e, text: Đi thẳng đường này là thấy ngân hàng ở góc phố., lang: vi }
+        - { id: s6y, text: Rẽ phải ở đường này là thấy bưu điện., lang: vi }
+        - { id: d3o, text: Bưu điện ở ngay đầu đường này., lang: vi }
+    answer:
+      correct_option_id: n4w
+    explanation:
+      vi: まっすぐ行く - đi thẳng; 突き当たり - cuối đường; 郵便局 - bưu điện. Câu không có 曲がる (rẽ) hay 銀行 (ngân hàng).
+    display_answer: Đi thẳng đường này là thấy bưu điện ở cuối đường.
+
+  - key: ja:exercise:n3-to-nara-mcq-nara
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-nara
+    prompt:
+      stem: 'A: 日本のお土産を買いたいんですが…。 B: お土産＿＿、駅前のデパートがおすすめですよ。'
+      stem_lang: ja
+      options:
+        - { id: r9u, text: なら, lang: ja }
+        - { id: e2s, text: と, lang: ja }
+        - { id: i6h, text: ので, lang: ja }
+        - { id: a4j, text: ても, lang: ja }
+    answer:
+      correct_option_id: r9u
+    explanation:
+      vi: B nhận lại chủ đề "quà" mà A vừa nói rồi giới thiệu - dùng なら. と không gắn sau danh từ để làm điều kiện như vậy; ので là "vì", ても là "dù".
+    display_answer: なら
+
+  - key: ja:exercise:n3-to-nara-fill-wo-ni
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-magaru
+    prompt:
+      template: "その角{{b1}}右{{b2}}曲がると、駅があります。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Rẽ phải ở góc đó là thấy ga."
+        - "Gợi ý: chỗ đi qua để rẽ dùng を; hướng rẽ dùng に."
+    answer:
+      blanks:
+        b1: [を]
+        b2: [に, へ]
+    known_wrong:
+      - answer: で
+        feedback_vi: Chỗ rẽ là nơi bạn đi qua nên dùng を - 角を曲がる, không dùng で.
+        error_tag: particle_route
+    explanation:
+      vi: 角を曲がる - rẽ ở góc (を chỉ nơi đi qua); 右に曲がる - rẽ sang phải (に chỉ hướng, へ cũng được).
+    display_answer: その角を右に曲がると、駅があります。
+
+  - key: ja:exercise:n3-to-nara-wb-bank
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-to-cond
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Rẽ phải ở đèn giao thông thứ hai là thấy ngân hàng.\""
+      tokens:
+        - { id: u4, text: 銀行が見えます }
+        - { id: u2, text: 右に }
+        - { id: u5, text: 曲がってください }
+        - { id: u1, text: 二つ目の信号を }
+        - { id: u3, text: 曲がると }
+    answer:
+      orders:
+        - [u1, u2, u3, u4]
+    explanation:
+      vi: Chỉ đường - "rẽ là thấy" dùng 曲がると. 曲がってください là lời nhờ, không nối được với 銀行が見えます. Chỗ rẽ (二つ目の信号を) thường đứng trước hướng rẽ (右に).
+    display_answer: 二つ目の信号を右に曲がると、銀行が見えます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-to-nara-fill-iku-nara
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-nara
+    prompt:
+      template: "A: 週末、北海道に行きます。 B: 北海道に{{b1}}、コートを持っていったほうがいいですよ。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [行くなら, いくなら]
+    known_wrong:
+      - answer: 行ったら
+        feedback_vi: Mang áo khoác là việc làm trước khi đi, nên dùng 行くなら. 行ったら là sau khi đã đến nơi.
+        error_tag: nara_timing
+      - answer: 行くと
+        feedback_vi: Vế sau là lời khuyên (～たほうがいい) nên không dùng と.
+        error_tag: to_advice
+    explanation:
+      vi: B nhận lại chủ đề "đi Hokkaido" và khuyên việc cần làm trước khi đi - 行くなら.
+    display_answer: 北海道に行くなら、コートを持っていったほうがいいですよ。
+
+  - key: ja:exercise:n3-to-nara-translate-osusume
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-osusume
+    prompt:
+      source_text: Nếu là ramen thì tôi giới thiệu quán trước ga.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ラーメンなら、駅前の店がおすすめです。
+        - ラーメンなら駅前の店がおすすめです。
+        - ラーメンなら、駅前の店がおすすめですよ。
+        - ラーメンなら駅前の店がおすすめですよ。
+        - ラーメンなら、駅前のお店がおすすめです。
+        - ラーメンなら駅前のお店がおすすめです。
+        - ラーメンなら、駅前の店がお勧めです。
+        - ラーメンなら駅前の店がお勧めです。
+        - ラーメンなら、駅前の店をおすすめします。
+        - ラーメンなら駅前の店をおすすめします。
+        - ラーメンなら、駅の前の店がおすすめです。
+        - ラーメンなら駅の前の店がおすすめです。
+    known_wrong:
+      - answer: ラーメンと、駅前の店がおすすめです。
+        feedback_vi: Nhận lại chủ đề người kia nói rồi giới thiệu dùng なら, không dùng と.
+        error_tag: conditional_choice
+    explanation:
+      vi: ～なら - "nếu là... thì"; ～がおすすめです - "... là thứ tôi giới thiệu". 駅前 - trước ga.
+    display_answer: ラーメンなら、駅前の店がおすすめです。
+
+  - key: ja:exercise:n3-to-nara-translate-tsukiatari
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tsukiatari
+    prompt:
+      source_text: Đến cuối đường thì rẽ trái. (lời nhờ lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 突き当たりを左に曲がってください。
+        - 突き当たりを左へ曲がってください。
+        - 突き当たりを左に曲がって下さい。
+        - つきあたりを左に曲がってください。
+        - つきあたりをひだりにまがってください。
+        - 突き当りを左に曲がってください。
+        - 突き当たりで左に曲がってください。
+        - 突き当たりを左に曲がってくださいね。
+    known_wrong:
+      - answer: 突き当たりを左に曲がると。
+        feedback_vi: Đây là lời nhờ nên cần ～てください; と chỉ nối hai vế điều kiện - kết quả.
+        error_tag: to_request
+    explanation:
+      vi: 突き当たりを曲がる - rẽ ở cuối đường; 左に - sang trái; 曲がってください - xin hãy rẽ. 突き当たりで cũng được chấp nhận vì ở cuối đường là điểm bạn dừng để rẽ.
+    display_answer: 突き当たりを左に曲がってください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-to-nara-mcq-kyoto
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-nara
+    prompt:
+      stem: Bạn của bạn sắp đi Kyoto. Bạn muốn khuyên nên mua vé tàu Shinkansen trước. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: o7b, text: 京都に行くなら、新幹線の切符を先に買ったほうがいいですよ。, lang: ja }
+        - { id: c3n, text: 京都に行ったら、新幹線の切符を先に買ったほうがいいですよ。, lang: ja }
+        - { id: m9e, text: 京都に行くと、新幹線の切符を先に買ったほうがいいですよ。, lang: ja }
+        - { id: f6w, text: 京都に行けば、新幹線の切符を先に買います。, lang: ja }
+    answer:
+      correct_option_id: o7b
+    explanation:
+      vi: Mua vé là việc trước khi đi, lại là lời khuyên - dùng 行くなら. 行ったら là sau khi đã đến Kyoto; と không đi với lời khuyên; câu ば cuối nói về việc của chính mình, không phải lời khuyên.
+    display_answer: 京都に行くなら、新幹線の切符を先に買ったほうがいいですよ。
+
+  - key: ja:exercise:n3-to-nara-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-to-cond
+    prompt:
+      source_text: 春になると、この公園は花見の客でいっぱいになります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cứ đến mùa xuân là công viên này lại đông nghịt người đi ngắm hoa.
+        - Cứ đến mùa xuân là công viên này đầy người đi ngắm hoa.
+        - Hễ đến mùa xuân là công viên này đông nghịt người ngắm hoa.
+        - Đến mùa xuân thì công viên này đầy người đi ngắm hoa.
+        - Đến mùa xuân công viên này đầy người đi ngắm hoa.
+        - Mùa xuân đến là công viên này đầy khách ngắm hoa.
+        - Cứ mùa xuân là công viên này đông nghịt người đi ngắm hoa.
+        - Đến mùa xuân thì công viên này đông nghịt khách ngắm hoa.
+        - Cứ vào mùa xuân là công viên này đầy người ngắm hoa.
+        - Vào mùa xuân công viên này đầy người đi ngắm hoa.
+        - Đến mùa xuân công viên này chật kín người đi ngắm hoa.
+        - Cứ đến mùa xuân là công viên này chật kín người ngắm hoa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nếu đến mùa xuân thì hãy đi ngắm hoa ở công viên này.
+        feedback_vi: Câu gốc không phải lời khuyên mà nói điều luôn xảy ra mỗi mùa xuân.
+        error_tag: to_meaning
+    explanation:
+      vi: と ở đây là quy luật "cứ đến... là..."; 花見の客 - khách ngắm hoa anh đào; いっぱいになる - trở nên đông kín.
+    display_answer: Cứ đến mùa xuân là công viên này lại đông nghịt người đi ngắm hoa.
+
+  - key: ja:exercise:n3-to-nara-mcq-which-wrong
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-to-cond
+    prompt:
+      stem: Câu nào SAI ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: l2q, text: 駅に着くと、電話してください。, lang: ja }
+        - { id: y8v, text: 駅に着いたら、電話してください。, lang: ja }
+        - { id: t5a, text: 駅に着くと、友だちが待っていました。, lang: ja }
+        - { id: w1z, text: このボタンを押すと、ドアが開きます。, lang: ja }
+    answer:
+      correct_option_id: l2q
+    explanation:
+      vi: と không đi với lời nhờ (てください). Câu 着くと、友だちが待っていました đúng - と còn dùng để kể điều bạn phát hiện ra khi làm gì đó.
+    display_answer: 駅に着くと、電話してください。
+
+  - key: ja:exercise:n3-to-nara-wb-souvenir
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-nara
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nếu là quà lưu niệm thì tôi gợi ý bánh ngọt này.\""
+      tokens:
+        - { id: s3, text: このお菓子が }
+        - { id: s4, text: おすすめです }
+        - { id: s5, text: お土産と }
+        - { id: s1, text: お土産なら }
+    answer:
+      orders:
+        - [s1, s3, s4]
+    explanation:
+      vi: お土産なら - nhận lại chủ đề "quà"; このお菓子がおすすめです - bánh này là món tôi gợi ý. お土産と không mang nghĩa "nếu là".
+    display_answer: お土産なら、このお菓子がおすすめです。

@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-noni-temo
+order_index: 4
+level: n3
+title:
+  vi: Vậy mà, dù... cũng - ～のに và ～ても
+objectives:
+  - vi: Dùng ～のに để bày tỏ tiếc nuối, bất ngờ khi kết quả trái mong đợi.
+  - vi: Dùng ～ても (どんなに/いくら～ても) để nói "dù... cũng".
+  - vi: Biết のに chỉ dùng cho sự thật, ても dùng được với lời khuyên, ý định.
+estimated_minutes: 18
+skills: [grammar, speaking, writing]
+prerequisites: [ja:lesson:n3-node-okage-sei]
+items:
+  - item: ja:item:n3-gram-noni
+  - item: ja:item:n3-gram-temo
+  - item: ja:item:n3-isshoukenmei
+  - item: ja:item:n3-akirameru
+  - item: ja:item:n3-kekka
+  - item: ja:item:n3-goukaku
+    role: reuse
+  - item: ja:item:n3-gram-node
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn than được "học chăm thế mà vẫn trượt", động viên "dù thất bại cũng đừng bỏ cuộc", và chọn đúng giữa のに và ても.
+  - type: explain
+    text:
+      vi: 'のに nối hai sự thật trái ngược, người nói thấy tiếc, bực hoặc bất ngờ: 約束したのに、来なかった. Danh từ và tính từ な dùng なのに - 日曜日なのに, 静かなのに.'
+  - type: explain
+    text:
+      vi: 'ても - "dù... cũng": 雨が降っても行きます, 高くても買います, 子どもでもわかります. Thêm どんなに hoặc いくら để nhấn mạnh "dù... đến mấy" - いくら食べても太らない.'
+  - type: explain
+    text:
+      vi: のに nói về chuyện đã xảy ra hoặc đang là sự thật. ても có thể nói chuyện giả định, và vế sau được là lời khuyên, ý định - 失敗しても、諦めないでください.
+  - type: deep_explain
+    text:
+      vi: のに cuối câu (もっと早く言ってくれればよかったのに) là lời than "giá mà...". Với người trên nên tránh vì nghe như trách móc. Khi chỉ muốn nói đối lập trung tính, dùng けど hoặc が.
+  - type: example
+    target: 一生懸命勉強したのに、試験に落ちてしまいました。
+    target_lang: ja
+    translation:
+      vi: Đã học hết sức vậy mà vẫn thi trượt.
+  - type: example
+    target: 日曜日なのに、会社に行かなければなりません。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật vậy mà vẫn phải đi làm.
+    note:
+      vi: Danh từ + なのに.
+  - type: example
+    target: 失敗しても、諦めないでください。
+    target_lang: ja
+    translation:
+      vi: Dù thất bại cũng đừng bỏ cuộc nhé.
+  - type: example
+    target: いくら説明しても、彼はわかってくれません。
+    target_lang: ja
+    translation:
+      vi: Giải thích mấy anh ấy cũng không hiểu cho.
+  - type: common_mistake
+    wrong: 雨なのに、出かけましょう。
+    right: 雨が降っても、出かけましょう。
+    target_lang: ja
+    note:
+      vi: Vế sau là lời rủ nên không dùng のに. Tiếng Việt "trời mưa mà vẫn đi" dễ khiến bạn chọn のに, nhưng rủ rê, khuyên nhủ phải dùng ても.
+  - type: common_mistake
+    wrong: 高いでも、買います。
+    right: 高くても、買います。
+    target_lang: ja
+    note:
+      vi: Tính từ い đổi い thành くて rồi thêm も - 高くても. でも chỉ đi sau danh từ và tính từ な.
+  - type: summary
+    points:
+      - vi: のに - sự thật trái mong đợi, có cảm xúc tiếc/bực; danh từ/tính từ な + なのに.
+      - vi: ても - dù... cũng; い → くても, danh từ/な → でも; động từ thể て + も.
+      - vi: どんなに/いくら ～ても - dù... đến mấy.
+      - vi: Lời rủ, khuyên, ý định ở vế sau - dùng ても, không dùng のに.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-noni-temo-mcq-noni
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-noni
+    prompt:
+      stem: '"Đã hẹn rồi vậy mà anh ấy không đến." Chọn từ điền vào: 約束した＿＿、彼は来ませんでした。'
+      stem_lang: vi
+      options:
+        - { id: s7d, text: のに, lang: ja }
+        - { id: a2g, text: ので, lang: ja }
+        - { id: e9k, text: おかげで, lang: ja }
+        - { id: u4b, text: なら, lang: ja }
+    answer:
+      correct_option_id: s7d
+    explanation:
+      vi: Đã hẹn mà không đến - trái mong đợi, có ý bực - のに. ので là "vì", おかげで là "nhờ", なら là "nếu là".
+    display_answer: のに
+
+  - key: ja:exercise:n3-noni-temo-listen-fail
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-isshoukenmei
+    prompt:
+      audio_asset_id: null
+      fallback_text: 一生懸命勉強したのに、試験に落ちてしまいました。
+      options:
+        - { id: i5f, text: Đã học hết sức vậy mà vẫn thi trượt., lang: vi }
+        - { id: o8t, text: Nhờ học hết sức mà đã thi đỗ., lang: vi }
+        - { id: y3w, text: Dù học hết sức thì cũng có thể thi trượt., lang: vi }
+        - { id: g6l, text: Vì không học nên đã thi trượt., lang: vi }
+    answer:
+      correct_option_id: i5f
+    explanation:
+      vi: 一生懸命 - hết sức; のに - vậy mà; 落ちてしまいました - đã trượt (tiếc nuối). Đây là chuyện đã xảy ra, không phải giả định.
+    display_answer: Đã học hết sức vậy mà vẫn thi trượt.
+
+  - key: ja:exercise:n3-noni-temo-mcq-takakutemo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-temo
+    prompt:
+      stem: '"Dù đắt tôi cũng mua." Chọn dạng đúng: ＿＿、買います。'
+      stem_lang: vi
+      options:
+        - { id: n3c, text: 高くても, lang: ja }
+        - { id: w6e, text: 高いでも, lang: ja }
+        - { id: b9h, text: 高いても, lang: ja }
+        - { id: m1s, text: 高ても, lang: ja }
+    answer:
+      correct_option_id: n3c
+    explanation:
+      vi: Tính từ い - bỏ い thêm くて rồi thêm も - 高くても. でも chỉ đi sau danh từ, tính từ な.
+    display_answer: 高くても
+
+  - key: ja:exercise:n3-noni-temo-fill-nanoni
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-noni
+    prompt:
+      template: "日曜日{{b1}}、会社に行かなければなりません。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Chủ nhật vậy mà vẫn phải đi làm."
+        - "Gợi ý: danh từ + な + từ chỉ 'vậy mà'."
+    answer:
+      blanks:
+        b1: [なのに]
+    known_wrong:
+      - answer: のに
+        feedback_vi: Sau danh từ phải thêm な - 日曜日なのに.
+        error_tag: nanoni_form
+      - answer: だのに
+        feedback_vi: Dạng chuẩn là なのに; だのに là cách nói cũ, văn chương.
+        error_tag: nanoni_form
+    explanation:
+      vi: 日曜日 là danh từ nên dùng なのに. Câu này là sự thật có ý than, đúng chức năng của のに.
+    display_answer: 日曜日なのに、会社に行かなければなりません。
+
+  - key: ja:exercise:n3-noni-temo-wb-akirameru
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-akirameru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Dù thất bại cũng đừng bỏ cuộc nhé.\""
+      tokens:
+        - { id: k2, text: 諦めないでください }
+        - { id: k3, text: 失敗したのに }
+        - { id: k1, text: 失敗しても }
+    answer:
+      orders:
+        - [k1, k2]
+    explanation:
+      vi: Vế sau là lời khuyên (～ないでください) nên dùng ても. のに không đi với lời khuyên, lời nhờ.
+    display_answer: 失敗しても、諦めないでください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-noni-temo-fill-ikura
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-temo
+    prompt:
+      template: "いくら{{b1}}、太りません。(食べる)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [食べても, たべても]
+    known_wrong:
+      - answer: 食べるても
+        feedback_vi: ても gắn vào thể て - 食べて → 食べても.
+        error_tag: temo_form
+      - answer: 食べたのに
+        feedback_vi: いくら đi với ても để thành "dù... đến mấy"; のに không kết hợp với いくら như vậy.
+        error_tag: ikura_temo
+    explanation:
+      vi: いくら ～ても - dù... bao nhiêu. 食べる → 食べて → 食べても.
+    display_answer: いくら食べても、太りません。
+
+  - key: ja:exercise:n3-noni-temo-translate-ame
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-temo
+    prompt:
+      source_text: Dù trời mưa tôi cũng đi. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 雨が降っても、行きます。
+        - 雨が降っても行きます。
+        - 雨でも、行きます。
+        - 雨でも行きます。
+        - 雨が降っても、私は行きます。
+        - 雨が降っても私は行きます。
+        - 雨でも、私は行きます。
+        - 雨でも私は行きます。
+        - あめがふっても、いきます。
+        - あめがふってもいきます。
+        - 雨が降っても、出かけます。
+        - 雨が降っても出かけます。
+    known_wrong:
+      - answer: 雨なのに、行きます。
+        feedback_vi: Đây là ý định cho tương lai (giả định) nên dùng ても, không dùng のに.
+        error_tag: noni_temo
+      - answer: 雨が降るても、行きます。
+        feedback_vi: ても gắn vào thể て - 降って → 降っても.
+        error_tag: temo_form
+    explanation:
+      vi: 降る → 降って → 降っても; với danh từ có thể nói gọn 雨でも. Câu nói về dự định nên chỉ ても hợp.
+    display_answer: 雨が降っても、行きます。
+
+  - key: ja:exercise:n3-noni-temo-translate-kekka
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kekka
+    prompt:
+      source_text: Đã cố gắng như vậy mà kết quả không tốt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 頑張ったのに、結果はよくなかったです。
+        - 頑張ったのに結果はよくなかったです。
+        - 頑張ったのに、結果が良くなかったです。
+        - 頑張ったのに結果が良くなかったです。
+        - 頑張ったのに、結果はよくなかった。
+        - 頑張ったのに結果はよくなかった。
+        - 頑張ったのに、結果は良くなかったです。
+        - 頑張ったのに結果は良くなかったです。
+        - 頑張ったのに、結果がよくなかったです。
+        - 頑張ったのに結果がよくなかったです。
+        - がんばったのに、結果はよくなかったです。
+        - がんばったのに結果はよくなかったです。
+        - あんなに頑張ったのに、結果はよくなかったです。
+        - あんなに頑張ったのに結果はよくなかったです。
+        - こんなに頑張ったのに、結果はよくなかったです。
+        - こんなに頑張ったのに結果はよくなかったです。
+        - 頑張ったのに、結果はよくありませんでした。
+        - 頑張ったのに結果はよくありませんでした。
+        - 一生懸命頑張ったのに、結果はよくなかったです。
+        - 一生懸命頑張ったのに結果はよくなかったです。
+    known_wrong:
+      - answer: 頑張っても、結果はよくなかったです。
+        feedback_vi: Chuyện đã xảy ra, có ý tiếc - dùng のに. ても thường dùng cho giả định hay chuyện chung.
+        error_tag: noni_temo
+      - answer: 頑張ったので、結果はよくなかったです。
+        feedback_vi: ので là "vì" - cố gắng không phải lý do khiến kết quả xấu.
+        error_tag: node_noni
+    explanation:
+      vi: 頑張った + のに - đã cố gắng vậy mà...; よくなかった - không tốt (いい → よくない → よくなかった).
+    display_answer: 頑張ったのに、結果はよくなかったです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-noni-temo-mcq-invite
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-temo
+    prompt:
+      stem: Bạn rủ đồng nghiệp "Dù hơi mưa thì mình vẫn đi ngắm hoa nhé." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: x4v, text: 少し雨が降っても、花見に行きましょう。, lang: ja }
+        - { id: h8q, text: 少し雨が降ったのに、花見に行きましょう。, lang: ja }
+        - { id: z2p, text: 少し雨なのに、花見に行きましょう。, lang: ja }
+        - { id: r5a, text: 少し雨が降るので、花見に行きましょう。, lang: ja }
+    answer:
+      correct_option_id: x4v
+    explanation:
+      vi: Lời rủ (～ましょう) ở vế sau chỉ đi với ても. のに không dùng với lời rủ; ので biến mưa thành lý do để đi ngắm hoa - vô lý.
+    display_answer: 少し雨が降っても、花見に行きましょう。
+
+  - key: ja:exercise:n3-noni-temo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-noni
+    prompt:
+      source_text: もっと早く言ってくれればよかったのに。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Giá mà bạn nói sớm hơn thì tốt rồi.
+        - Giá mà nói sớm hơn thì tốt biết mấy.
+        - Giá bạn nói sớm hơn thì tốt rồi.
+        - Giá mà bạn nói với tôi sớm hơn.
+        - Giá mà bạn nói với mình sớm hơn thì tốt rồi.
+        - Giá mà bạn nói sớm hơn.
+        - Phải chi bạn nói sớm hơn thì tốt rồi.
+        - Sao bạn không nói sớm hơn.
+        - Sao không nói sớm hơn.
+        - Nếu bạn nói sớm hơn thì tốt rồi.
+        - Giá mà bạn nói cho tôi sớm hơn thì tốt rồi.
+        - Giá mà cậu nói sớm hơn thì tốt rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn đã nói sớm nên tốt quá.
+        feedback_vi: ～ばよかったのに là tiếc nuối về điều đã không xảy ra - người kia đã không nói sớm.
+        error_tag: noni_meaning
+    explanation:
+      vi: ～ばよかったのに - "giá mà... thì tốt rồi", than tiếc điều đã không xảy ra. Câu này hơi trách, nên tránh nói với người trên.
+    display_answer: Giá mà bạn nói sớm hơn thì tốt rồi.
+
+  - key: ja:exercise:n3-noni-temo-wb-isshoukenmei
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-isshoukenmei
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đã tập luyện hết sức vậy mà vẫn thua trận.\""
+      tokens:
+        - { id: p3, text: 負けました }
+        - { id: p5, text: 練習しても }
+        - { id: p2, text: 練習したのに }
+        - { id: p1, text: 一生懸命 }
+        - { id: p4, text: 試合に }
+    answer:
+      orders:
+        - [p1, p2, p4, p3]
+    explanation:
+      vi: Chuyện đã xảy ra, có tiếc nuối - 練習したのに. 一生懸命 đứng trước động từ nó bổ nghĩa; 試合に負ける - thua trận (dùng に).
+    display_answer: 一生懸命練習したのに、試合に負けました。
