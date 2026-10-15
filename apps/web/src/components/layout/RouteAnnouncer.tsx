@@ -35,7 +35,11 @@ export function RouteAnnouncer() {
   useEffect(() => {
     if (previous.current === pathname) return;
     previous.current = pathname;
-    setMessage(routeName(pathname) ?? 'Trang chủ Linguo');
+    // Clear first, set in the next frame: an identical consecutive message (two unknown paths) must still change the
+    // live region's text, or screen readers would not announce it again.
+    setMessage('');
+    const text = routeName(pathname) ?? 'Trang chủ Linguo';
+    const announce = requestAnimationFrame(() => setMessage(text));
     // After the frame: a closing sheet restores focus to its trigger in a follow-up commit, which we must not lose to.
     const frame = requestAnimationFrame(() => {
       if (pageAlreadyHasFocus()) return;
@@ -43,11 +47,15 @@ export function RouteAnnouncer() {
       if (!target) return;
       if (!target.hasAttribute('tabindex')) {
         target.setAttribute('tabindex', '-1');
-        target.style.outline = 'none';
+        // No outline override: the global :focus-visible ring stays, and the browser itself shows it only for
+        // keyboard-initiated navigation.
       }
       target.focus({ preventScroll: true });
     });
-    return () => cancelAnimationFrame(frame);
+    return () => {
+      cancelAnimationFrame(announce);
+      cancelAnimationFrame(frame);
+    };
   }, [pathname]);
 
   return (

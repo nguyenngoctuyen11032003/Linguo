@@ -15,6 +15,8 @@ function Shell() {
         <Link to="/app/on-tap?tab=2">Đổi tab</Link>
         <Link to="/app/bat-dau">Tới onboarding</Link>
         <Link to="/app/cai-dat">Tới cài đặt</Link>
+        <Link to="/khong-co-1">Trang lạ 1</Link>
+        <Link to="/khong-co-2">Trang lạ 2</Link>
       </nav>
       <main id="main">
         <Outlet />
@@ -46,6 +48,7 @@ function setup(initial: string) {
           { path: 'app/on-tap', element: <h1>Ôn tập</h1> },
           { path: 'app/bat-dau', element: <SelfFocusingPage /> },
           { path: 'app/cai-dat', element: <p>Không có tiêu đề</p> },
+          { path: '*', element: <h1>Không tìm thấy</h1> },
         ],
       },
     ],
@@ -100,12 +103,26 @@ describe('RouteAnnouncer', () => {
     expect(document.title).toBe('Bắt đầu · Linguo');
   });
 
-  it('makes the focused heading a programmatic-only target without a focus ring', async () => {
+  it('makes the focused heading a programmatic target but keeps the focus indicator', async () => {
     setup('/');
     await userEvent.click(screen.getByRole('link', { name: 'Tới ôn tập' }));
     const heading = await screen.findByRole('heading', { name: 'Ôn tập' });
     await waitFor(() => expect(heading).toHaveFocus());
     expect(heading).toHaveAttribute('tabindex', '-1');
-    expect(heading.style.outline).toContain('none');
+    expect(heading.style.outline).toBe('');
+  });
+
+  it('re-announces an identical consecutive message by clearing the live region first', async () => {
+    setup('/');
+    await userEvent.click(screen.getByRole('link', { name: 'Trang lạ 1' }));
+    await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent('Không tìm thấy trang'));
+    const seen: string[] = [];
+    const observer = new MutationObserver(() => seen.push(screen.getByRole('status').textContent ?? ''));
+    observer.observe(screen.getByRole('status'), { childList: true, characterData: true, subtree: true });
+    await userEvent.click(screen.getByRole('link', { name: 'Trang lạ 2' }));
+    await waitFor(() => expect(seen).toContain('Không tìm thấy trang'));
+    observer.disconnect();
+    expect(seen[0]).toBe('');
+    await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent('Không tìm thấy trang'));
   });
 });
