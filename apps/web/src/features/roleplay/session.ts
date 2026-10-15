@@ -70,7 +70,21 @@ export function isOver(s: RoleplaySession): boolean {
   return s.finished || partnerTurns(s) >= MAX_TURNS;
 }
 
-const clip = (text: string) => Array.from(text.trim()).slice(0, ROLEPLAY_TURN_MAX_CHARS).join('');
+/**
+ * At most ROLEPLAY_TURN_MAX_CHARS UTF-16 units, the unit the contract's `max()` counts (an emoji is two), without
+ * cutting a surrogate pair in half. Counting code points instead let a reply with emoji overflow the limit, and
+ * every later turn of the session was refused as a bad request.
+ */
+function clip(text: string): string {
+  const trimmed = text.trim();
+  if (trimmed.length <= ROLEPLAY_TURN_MAX_CHARS) return trimmed;
+  let out = '';
+  for (const ch of trimmed) {
+    if (out.length + ch.length > ROLEPLAY_TURN_MAX_CHARS) break;
+    out += ch;
+  }
+  return out.trimEnd();
+}
 
 /** The last ≤ 10 confirmed turns, each clipped to 300 characters (the server's own bounds). */
 export function buildHistory(s: RoleplaySession): { role: 'partner' | 'learner'; text: string }[] {

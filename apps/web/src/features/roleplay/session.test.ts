@@ -69,6 +69,17 @@ describe('requests', () => {
     }
   });
 
+  it('clips by the server length (UTF-16 units) so a reply with emoji stays a valid request, never splitting a pair', () => {
+    // 290 letters then emoji: 300 code points but more than 300 UTF-16 units, which the contract's max() counts.
+    const reply = `${'a'.repeat(290)}${'😊'.repeat(20)}`;
+    let s = played(1);
+    s = { ...s, messages: s.messages.map((m) => (m.role === 'partner' ? { ...m, text: reply } : m)) };
+    const history = buildHistory(s);
+    expect(history.every((t) => t.text.length <= 300)).toBe(true);
+    expect(history[0]!.text).toBe(`${'a'.repeat(290)}${'😊'.repeat(5)}`);
+    expect(aiRequestSchema.safeParse(turnRequest(s, '😊'.repeat(200))).success).toBe(true);
+  });
+
   it('never puts the unconfirmed (sending or failed) learner message into the history', () => {
     const { session, id } = addLearnerMessage(played(0), 'still sending');
     expect(buildHistory(session).map((t) => t.text)).toEqual(['Hi! What can I get you?']);
