@@ -156,6 +156,15 @@ describe('Flashcard', () => {
     expect(screen.getByRole('button', { name: 'Nghe' })).toBeInTheDocument();
   });
 
+  it('shows the learner note of a personal word on the back only', async () => {
+    // get_personal_review_queue puts the word's note in back.note.
+    const card = makeCard({ item: { language_code: 'en', front: { text: 'apple' }, back: { meaning: { vi: 'quả táo' }, examples: [], note: 'Gặp trong bài đọc tuần 3' } } });
+    renderExercise(<Harness card={card} />);
+    expect(screen.queryByText('Gặp trong bài đọc tuần 3')).not.toBeInTheDocument();
+    await userEvent.click(screen.getByTestId('flashcard-front'));
+    expect(screen.getByTestId('flashcard-back')).toHaveTextContent('Ghi chú: Gặp trong bài đọc tuần 3');
+  });
+
   it('tolerates a card without examples or pronunciation', async () => {
     const card = makeCard({ item: { language_code: 'en', front: { text: 'school' }, back: { meaning: { vi: 'trường học' } } } });
     renderExercise(<Harness card={card} />);

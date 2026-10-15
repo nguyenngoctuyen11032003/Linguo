@@ -126,6 +126,12 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
           )}
         </p>
       )}
+      {content.note && (
+        <p className="w-full text-left text-[15px] text-text">
+          <span className="font-semibold">Ghi chú: </span>
+          {content.note}
+        </p>
+      )}
       {reportable && <ReportContentButton targetKind="learning_item" targetId={card.item_id} className="mt-1" />}
     </div>
   );

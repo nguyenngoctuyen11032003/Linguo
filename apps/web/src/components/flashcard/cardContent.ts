@@ -9,6 +9,8 @@ export interface CardContent {
   pos: string | null;
   meaningVi: string;
   example: { target: string; translationVi: string } | null;
+  /** The learner's own note on a personal word (get_personal_review_queue sends it as `back.note`). */
+  note: string | null;
 }
 
 function str(value: unknown): string | null {
@@ -33,6 +35,7 @@ export function readCardContent(card: ReviewCard): CardContent {
     pos: str(front.pos),
     meaningVi: vi(back.meaning) ?? '',
     example: target ? { target, translationVi: vi(firstRecord?.translation) ?? '' } : null,
+    note: str(back.note),
   };
 }
 
