@@ -22,8 +22,9 @@ test('a learner reports a lesson exercise and follows it in Settings', async ({ 
   expect(FIRST_EXERCISE!.exercise_type).toBe('mcq');
   const mock = await setup(page);
   await page.goto(`/app/hoc-tap/bai/${DEMO_LESSONS.enHello.id}`);
-  const heading = page.getByRole('heading', { level: 1 });
-  await expect(heading).toBeVisible({ timeout: 15_000 });
+  // The lesson title is the page's h1; the current step is the live question counter or a content step's h2.
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 15_000 });
+  const heading = page.locator('main').locator('h2, p[aria-live="polite"]').first();
   for (let i = 0; i < 8 && !/^Câu \d+\/\d+$/.test((await heading.textContent()) ?? ''); i++) {
     await page.getByRole('button', { name: 'Tiếp tục', exact: true }).click();
   }

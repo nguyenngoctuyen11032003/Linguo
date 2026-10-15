@@ -31,7 +31,10 @@ async function setup(page: Page, ai: AiMockOptions = { ackAt: ACKED }) {
   return mock;
 }
 
-const heading = (page: Page) => page.getByRole('heading', { level: 1 });
+/** The lesson title: the page's only h1. */
+const lessonTitle = (page: Page) => page.getByRole('heading', { level: 1 });
+/** The current step: the question counter (a live paragraph) or a content step's h2. */
+const heading = (page: Page) => page.locator('main').locator('h2, p[aria-live="polite"]').first();
 
 /** Fill in the right answer through the UI (same controls as lesson.spec.ts). */
 async function fillAnswer(page: Page, exercise: Row) {
@@ -63,7 +66,7 @@ async function fillAnswer(page: Page, exercise: Row) {
 /** Opens the demo lesson, walks to its first exercise and answers it right: the AI buttons appear under the feedback. */
 async function answerFirstExercise(page: Page) {
   await page.goto(`/app/hoc-tap/bai/${String(LESSON.id)}`);
-  await expect(heading(page)).toHaveText(LESSON_TITLE, { timeout: 15_000 });
+  await expect(lessonTitle(page)).toHaveText(LESSON_TITLE, { timeout: 15_000 });
   for (let i = 0; i < 8 && !/^Câu \d+\/\d+$/.test((await heading(page).textContent()) ?? ''); i++) {
     await page.getByRole('button', { name: 'Tiếp tục', exact: true }).click();
   }
