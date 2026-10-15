@@ -28,7 +28,8 @@ export function RecapView({
 }) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
-    headingRef.current?.focus({ preventScroll: true });
+    // Finishing from the bottom of a long chat: bring the recap title into view along with focus.
+    headingRef.current?.focus();
   }, []);
   const corrections = collectCorrections(session);
   const reached = scenario.goals.filter((g) => session.goals.includes(g.key)).length;
