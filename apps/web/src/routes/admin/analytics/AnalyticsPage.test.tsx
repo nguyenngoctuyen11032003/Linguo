@@ -42,6 +42,16 @@ describe('AnalyticsPage', () => {
     expect(screen.getByText('38%')).toBeInTheDocument();
   });
 
+  it('lists client errors by kind and route', async () => {
+    rpcs('admin');
+    renderAdmin('/quan-tri/thong-ke');
+    await screen.findByText('Số liệu 28 ngày gần nhất.');
+    const table = screen.getByRole('table', { name: /Lỗi phía người dùng theo loại và màn hình/ });
+    expect(within(table).getByText('/app/hoc-tap/bai/:lessonId')).toBeInTheDocument();
+    expect(within(table).getByText('Không tải được mã trang')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Lỗi phía người dùng' })).toBeInTheDocument();
+  });
+
   it('switches the range', async () => {
     rpcs('admin');
     const user = userEvent.setup();

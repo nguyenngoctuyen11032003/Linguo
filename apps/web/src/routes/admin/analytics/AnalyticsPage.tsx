@@ -1,6 +1,6 @@
 import { useId, type ReactNode } from 'react';
 import { useSearchParams } from 'react-router';
-import { ADMIN_ANALYTICS_RANGES, type AdminAnalyticsRange } from '@linguo/shared';
+import { ADMIN_ANALYTICS_RANGES, type AdminAnalytics as AdminAnalyticsData, type AdminAnalyticsRange } from '@linguo/shared';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
@@ -87,6 +87,46 @@ function AnalyticsContent() {
   );
 }
 
+const KIND_LABELS: Record<string, string> = {
+  render_error: 'Lỗi hiển thị',
+  unhandled_rejection: 'Promise bị từ chối',
+  window_error: 'Lỗi trình duyệt',
+  chunk_load_error: 'Không tải được mã trang',
+  rpc_error: 'Lỗi máy chủ',
+};
+
+function ClientErrorsTable({ errors }: { errors: AdminAnalyticsData['client_errors'] }) {
+  if (errors.total === 0) return <p className="text-[15px] text-muted">Chưa có lỗi nào được báo cáo trong khoảng thời gian này.</p>;
+  return (
+    <div className="space-y-3">
+      <p className="text-sm text-muted">
+        {formatCount(errors.total)} báo cáo ẩn danh (loại lỗi và đường dẫn dạng mẫu, không có nội dung người dùng).
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[420px] text-left text-[15px]">
+          <caption className="sr-only">Lỗi phía người dùng theo loại và màn hình, tối đa 10 dòng</caption>
+          <thead>
+            <tr className="border-b border-border text-sm text-muted">
+              <th scope="col" className="py-2 pr-3 font-semibold">Loại lỗi</th>
+              <th scope="col" className="py-2 pr-3 font-semibold">Màn hình</th>
+              <th scope="col" className="py-2 text-right font-semibold">Số lần</th>
+            </tr>
+          </thead>
+          <tbody>
+            {errors.top.map((row) => (
+              <tr key={`${row.kind}|${row.route ?? ''}`}className="border-b border-border/60">
+                <td className="py-2 pr-3">{KIND_LABELS[row.kind] ?? row.kind}</td>
+                <td className="break-all py-2 pr-3 font-mono text-sm">{row.route ?? '—'}</td>
+                <td className="py-2 text-right tabular-nums">{formatCount(row.count)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function AnalyticsBody({ data, loading }: { data: NonNullable<ReturnType<typeof useAdminAnalytics>['data']>; loading: boolean }) {
   const { analytics, aiUsage } = data;
   const totals = analyticsTotals(analytics.daily);
@@ -108,6 +148,10 @@ function AnalyticsBody({ data, loading }: { data: NonNullable<ReturnType<typeof 
 
       <Section title="Phễu người dùng mới">
         <FunnelChart funnel={analytics.funnel} />
+      </Section>
+
+      <Section title="Lỗi phía người dùng">
+        <ClientErrorsTable errors={analytics.client_errors} />
       </Section>
 
       <Section title="Mức dùng AI">

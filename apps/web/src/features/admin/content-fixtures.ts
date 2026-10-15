@@ -196,6 +196,17 @@ export function analyticsFixture(days = 7): AdminAnalytics {
     wau: 42,
     onboarding_completed: 30,
     funnel: { signed_up: 100, onboarded: 80, first_lesson: 60, third_lesson: 30, returned_day7: 15 },
+    client_errors: {
+      total: 7,
+      by_kind: [
+        { kind: 'render_error', count: 4 },
+        { kind: 'chunk_load_error', count: 3 },
+      ],
+      top: [
+        { kind: 'render_error', route: '/app/hoc-tap/bai/:lessonId', count: 4 },
+        { kind: 'chunk_load_error', route: '/app', count: 3 },
+      ],
+    },
   };
 }
 

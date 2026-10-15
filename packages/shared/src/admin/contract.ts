@@ -243,6 +243,14 @@ export const adminAnalyticsSchema = z.object({
     third_lesson: z.number().int(),
     returned_day7: z.number().int(),
   }),
+  /** Anonymous client error reports (analytics event client_error): totals by kind and the top kind x route pairs. */
+  client_errors: z
+    .object({
+      total: z.number().int(),
+      by_kind: z.array(z.object({ kind: z.string(), count: z.number().int() })),
+      top: z.array(z.object({ kind: z.string(), route: z.string().nullable(), count: z.number().int() })),
+    })
+    .default({ total: 0, by_kind: [], top: [] }),
 });
 export type AdminAnalytics = z.infer<typeof adminAnalyticsSchema>;
 

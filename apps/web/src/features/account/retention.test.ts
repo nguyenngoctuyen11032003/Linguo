@@ -24,6 +24,12 @@ describe('retention copy', () => {
     expect(STORED_DATA_SUMMARY.join('\n')).toMatch(/Nhắc học/);
   });
 
+  it('says anonymous technical error reports are kept 180 days and can be turned off', () => {
+    expect(RETENTION.analyticsDays).toBe(180);
+    expect(RETENTION_SUMMARY.join('\n')).toMatch(/báo cáo lỗi kỹ thuật tự xoá sau 180 ngày; tắt công tắc phân tích/);
+    expect(STORED_DATA_SUMMARY.join('\n')).toMatch(/báo cáo lỗi kỹ thuật/);
+  });
+
   it('keeps the AI retention lines', () => {
     expect(RETENTION_SUMMARY.join('\n')).toMatch(/lượt dùng AI tự xoá sau 90 ngày/);
   });

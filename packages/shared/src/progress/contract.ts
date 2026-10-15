@@ -247,6 +247,7 @@ export const ANALYTICS_EVENTS = [
   'exam_started',
   'exam_completed',
   'badge_earned',
+  'client_error',
 ] as const;
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];
 
@@ -264,3 +265,19 @@ export const analyticsEventSchema = z.object({
 });
 export type AnalyticsEvent = z.infer<typeof analyticsEventSchema>;
 export const ANALYTICS_BATCH_MAX = 20;
+
+// client_error (privacy-preserving crash reports). props are a strict whitelist mirrored by track_events: kind +
+// optional code (name/short code, never a message), build (version token) and online. The event's route is a
+// path template. The server stores at most 20 per user per hour and silently drops the rest.
+export const CLIENT_ERROR_KINDS = ['render_error', 'unhandled_rejection', 'window_error', 'chunk_load_error', 'rpc_error'] as const;
+export type ClientErrorKind = (typeof CLIENT_ERROR_KINDS)[number];
+export const CLIENT_ERROR_CODE_MAX = 60;
+export const clientErrorPropsSchema = z
+  .object({
+    kind: z.enum(CLIENT_ERROR_KINDS),
+    code: z.string().regex(/^[A-Za-z0-9_.:-]{1,60}$/).optional(),
+    build: z.string().regex(/^[A-Za-z0-9_.+-]{1,40}$/).optional(),
+    online: z.boolean().optional(),
+  })
+  .strict();
+export type ClientErrorProps = z.infer<typeof clientErrorPropsSchema>;

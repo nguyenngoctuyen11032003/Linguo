@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { createMemoryRouter, Outlet, RouterProvider } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import * as reporting from '@/lib/error-reporting';
 import { RouteError } from './RouteError';
 
 function Boom(): never {
@@ -44,6 +45,14 @@ describe('RouteError', () => {
     expect(screen.getByRole('link', { name: 'Về trang chủ' })).toHaveAttribute('href', '/');
     await userEvent.click(screen.getByRole('button', { name: 'Thử lại' }));
     expect(reload).toHaveBeenCalledOnce();
+  });
+
+  it('reports the crash once through the error reporter', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const spy = vi.spyOn(reporting, 'reportRenderError').mockImplementation(() => {});
+    renderBroken(false);
+    expect(await screen.findByRole('heading', { name: 'Có lỗi xảy ra' })).toBeInTheDocument();
+    expect(spy).toHaveBeenCalledTimes(1);
   });
 
   it('does not add a second main landmark inside a layout that has one', async () => {

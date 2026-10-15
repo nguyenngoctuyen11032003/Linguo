@@ -19,6 +19,19 @@ import { RouteError } from '@/routes/RouteError';
 const MAIN_LAYOUT = { providesMain: true } as const;
 
 /**
+ * React Router leaves a route blank (no errorElement) when its lazy() rejects, e.g. a chunk that fails to load on a
+ * flaky network or after a new deploy. Resolve with a component that rethrows during render instead, so the route's
+ * RouteError (friendly screen + error report) shows.
+ */
+function failedChunk(error: unknown): Pick<RouteObject, 'Component'> {
+  return {
+    Component: () => {
+      throw error;
+    },
+  };
+}
+
+/**
  * Route-level code splitting: the landing, legal and auth screens stay in the entry chunk; everything a signed-in
  * learner uses loads on demand (`/app` shell, lesson player, review, exams, ...). React Router holds a navigation
  * until the chunk arrives (the previous screen stays up, so nothing shifts) and shows `hydrateFallbackElement` on a
@@ -26,7 +39,15 @@ const MAIN_LAYOUT = { providesMain: true } as const;
  * keeps working offline. A failed chunk load reaches the route's errorElement ("Thử lại" reloads the page).
  */
 function lazyPage<K extends string>(load: () => Promise<Record<K, ComponentType>>, name: K): Pick<RouteObject, 'lazy'> {
-  return { lazy: async () => ({ Component: (await load())[name] }) };
+  return {
+    lazy: async () => {
+      try {
+        return { Component: (await load())[name] };
+      } catch (error) {
+        return failedChunk(error);
+      }
+    },
+  };
 }
 
 /**
@@ -40,11 +61,21 @@ const loadAdmin = () => import('@/routes/admin/admin-routes');
 const adminRoute: RouteObject = {
   path: 'quan-tri',
   handle: MAIN_LAYOUT,
-  lazy: async () => ({ element: (await loadAdmin()).adminRootRoute.element }),
+  lazy: async () => {
+    try {
+      return { element: (await loadAdmin()).adminRootRoute.element };
+    } catch (error) {
+      return failedChunk(error);
+    }
+  },
   children: ADMIN_CHILD_PATHS.map((path): RouteObject => {
     const lazy = async () => {
-      const { adminRoutes } = await loadAdmin();
-      return { element: adminRoutes.find((r) => (path === null ? r.index : r.path === path))?.element };
+      try {
+        const { adminRoutes } = await loadAdmin();
+        return { element: adminRoutes.find((r) => (path === null ? r.index : r.path === path))?.element };
+      } catch (error) {
+        return failedChunk(error);
+      }
     };
     return path === null ? { index: true, lazy } : { path, lazy };
   }),

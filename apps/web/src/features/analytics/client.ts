@@ -42,10 +42,19 @@ export function setAnalyticsRoute(pattern: string | null): void {
 }
 
 /** Queues an event. Invalid events (unknown name, non-allowlisted props) are dropped silently. */
-export function track(name: AnalyticsEventName, props: Record<string, string | number | boolean> = {}): void {
+export function track(
+  name: AnalyticsEventName,
+  props: Record<string, string | number | boolean> = {},
+  opts: { route?: string | null } = {},
+): void {
   try {
     if (!client) return;
-    const parsed = analyticsEventSchema.safeParse({ name, props, at: new Date().toISOString(), route });
+    const parsed = analyticsEventSchema.safeParse({
+      name,
+      props,
+      at: new Date().toISOString(),
+      route: opts.route !== undefined ? opts.route : route,
+    });
     if (!parsed.success) return;
     queue.push(parsed.data);
     if (queue.length > ANALYTICS_QUEUE_MAX) queue.splice(0, queue.length - ANALYTICS_QUEUE_MAX);

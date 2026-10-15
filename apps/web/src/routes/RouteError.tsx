@@ -1,7 +1,9 @@
 import { AlertTriangle } from 'lucide-react';
+import { useEffect } from 'react';
 import { isRouteErrorResponse, Link, useRouteError } from 'react-router';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { reportRenderError } from '@/lib/error-reporting';
 import { NotFoundPage } from './NotFoundPage';
 
 interface Props {
@@ -21,7 +23,11 @@ function devDetail(error: unknown): string | null {
  */
 export function RouteError({ inMain = false }: Props) {
   const error = useRouteError();
-  if (isRouteErrorResponse(error) && error.status === 404) return <NotFoundPage />;
+  const notFound = isRouteErrorResponse(error) && error.status === 404;
+  useEffect(() => {
+    if (!notFound) reportRenderError(error);
+  }, [error, notFound]);
+  if (notFound) return <NotFoundPage />;
   if (import.meta.env.DEV) console.error(error);
   const detail = devDetail(error);
 
