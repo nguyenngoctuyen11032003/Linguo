@@ -120,7 +120,7 @@ describe('RoleplayPage: conversation', () => {
     );
     await say('I want a latte');
     await screen.findByText('Hot or iced?');
-    const fix = screen.getByRole('region', { name: 'Gợi ý sửa' });
+    const fix = screen.getByRole('region', { name: 'Gợi ý sửa câu' });
     expect(fix).toHaveTextContent('I would like');
     expect(fix).toHaveTextContent('Lịch sự hơn khi gọi đồ.');
     expect(screen.getByRole('list', { name: 'Mục tiêu của tình huống' })).toHaveTextContent('Gọi một đồ uống (đã đạt)');
@@ -139,9 +139,11 @@ describe('RoleplayPage: conversation', () => {
   });
 
   it('disables sending with the friendly note when today is used up', async () => {
+    const first = render();
+    await begin();
+    first.unmount();
     mocks.quota = { status: 'ready', quota: { ...QUOTA, used: 20 }, remaining: 0, error: null, refresh: vi.fn() };
     render();
-    await begin();
     expect(screen.getByRole('button', { name: 'Gửi' })).toBeDisabled();
     expect(screen.getByText(/Bài học và ôn tập vẫn dùng bình thường/)).toBeInTheDocument();
   });
@@ -210,5 +212,123 @@ describe('RoleplayPage: conversation', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Chọn tình huống khác' }));
     expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
     expect(sessionStorage.length).toBe(0);
+  });
+});
+
+describe('RoleplayPage: UX polish', () => {
+  it('names corrections and the hint apart, with a heading under the scenario title', async () => {
+    render();
+    await begin();
+    expect(screen.getByText('Gợi ý cách trả lời:', { exact: false })).toBeInTheDocument();
+    reply(() => turn({ corrections: [{ original: 'I want', corrected: 'I would like', note_vi: 'Lịch sự hơn.' }] }));
+    await say('I want a latte');
+    const fix = await screen.findByRole('region', { name: 'Gợi ý sửa câu' });
+    expect(within(fix).getByRole('heading', { level: 3, name: 'Gợi ý sửa câu' })).toBeInTheDocument();
+  });
+
+  it('explains why finishing is off before the first message', async () => {
+    render();
+    await begin();
+    const finish = screen.getByRole('button', { name: 'Kết thúc và xem tóm tắt' });
+    expect(finish).toBeDisabled();
+    expect(finish).toHaveAccessibleDescription('Gửi ít nhất một tin nhắn để xem tóm tắt nhé.');
+    await say('A latte');
+    await screen.findByText('Lượt 2/12');
+    expect(screen.getByRole('button', { name: 'Kết thúc và xem tóm tắt' })).toBeEnabled();
+    expect(screen.queryByText('Gửi ít nhất một tin nhắn để xem tóm tắt nhé.')).not.toBeInTheDocument();
+  });
+
+  it('brings the whole composer into view after each partner reply and keeps focus in the input', async () => {
+    const scroll = vi.fn();
+    const original = Element.prototype.scrollIntoView;
+    Element.prototype.scrollIntoView = scroll;
+    try {
+      render();
+      await begin();
+      await say('A latte');
+      await screen.findByText('Lượt 2/12');
+      const input = screen.getByLabelText(/Tin nhắn của bạn/);
+      await waitFor(() => expect(input).toHaveFocus());
+      const last = scroll.mock.contexts.at(-1) as HTMLElement;
+      expect(last).toContainElement(input);
+      expect(last).toContainElement(screen.getByRole('button', { name: 'Gửi' }));
+    } finally {
+      Element.prototype.scrollIntoView = original;
+    }
+  });
+
+  it('leaves at once when nothing was sent yet', async () => {
+    render();
+    await begin();
+    await userEvent.click(screen.getByRole('button', { name: 'Chọn tình huống khác' }));
+    expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument();
+    expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
+  });
+
+  it('asks before discarding a chat with learner messages; staying keeps it', async () => {
+    render();
+    await begin();
+    await say('A latte');
+    await screen.findByText('Lượt 2/12');
+    const leave = screen.getByRole('button', { name: 'Chọn tình huống khác' });
+    await userEvent.click(leave);
+    const dialog = screen.getByRole('alertdialog', { name: 'Bỏ cuộc trò chuyện này?' });
+    expect(dialog).toHaveAccessibleDescription(/sẽ bị xoá/);
+    expect(within(dialog).getByRole('button', { name: 'Ở lại trò chuyện' })).toHaveFocus();
+    await userEvent.click(within(dialog).getByRole('button', { name: 'Ở lại trò chuyện' }));
+    await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
+    expect(screen.getByText('A latte')).toBeInTheDocument();
+    expect(sessionStorage.length).toBeGreaterThan(0);
+    expect(leave).toHaveFocus();
+
+    await userEvent.click(leave);
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ cuộc trò chuyện' }));
+    expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
+    expect(sessionStorage.length).toBe(0);
+  });
+
+  it('switches every "Bắt đầu" off with the quota hint when today is used up', () => {
+    mocks.quota = { status: 'ready', quota: { ...QUOTA, used: 20 }, remaining: 0, error: null, refresh: vi.fn() };
+    render();
+    const starts = screen.getAllByRole('button', { name: /^Bắt đầu: / });
+    expect(starts.length).toBeGreaterThan(1);
+    for (const start of starts) {
+      expect(start).toBeDisabled();
+      expect(start).toHaveAccessibleDescription(/Bài học và ôn tập vẫn dùng bình thường/);
+    }
+  });
+
+  it('moves focus to the scenario title on start, the page title on leave and the recap title on finish', async () => {
+    render();
+    // Hold the opening turn so the chat stays on its loading state.
+    let open: (value: unknown) => void = () => {};
+    mocks.invoke.mockImplementationOnce(() => new Promise((resolve) => (open = resolve)));
+    await userEvent.click(screen.getByRole('button', { name: 'Bắt đầu: Gọi đồ ở quán cà phê' }));
+    expect(screen.getByRole('heading', { level: 2, name: 'Gọi đồ ở quán cà phê' })).toHaveFocus();
+    open({ data: turn({ partner_reply: 'Hi! Welcome to Sunny Café.' }), error: null });
+    await screen.findByText(/Welcome to Sunny Café/);
+    await waitFor(() => expect(screen.getByLabelText(/Tin nhắn của bạn/)).toHaveFocus());
+
+    await userEvent.click(screen.getByRole('button', { name: 'Chọn tình huống khác' }));
+    expect(screen.getByRole('heading', { level: 1, name: 'Đóng vai với AI' })).toHaveFocus();
+
+    reply((b) => (b.turn_index === 0 ? turn({ partner_reply: 'Hi! Welcome to Sunny Café.' }) : turn()));
+    await begin();
+    reply((b) => (b.task === 'summarize_session' ? aiSuccess('summarize_session', SUMMARY_DATA) : turn()));
+    await say('A latte');
+    await screen.findByText('Lượt 2/12');
+    await userEvent.click(screen.getByRole('button', { name: 'Kết thúc và xem tóm tắt' }));
+    expect(await screen.findByRole('heading', { name: 'Tóm tắt buổi đóng vai' })).toHaveFocus();
+    await userEvent.click(screen.getByRole('button', { name: 'Luyện tình huống khác' }));
+    expect(screen.getByRole('heading', { level: 1, name: 'Đóng vai với AI' })).toHaveFocus();
+  });
+
+  it('words the AI notice for the role-play partner', async () => {
+    mocks.notice = notice(false);
+    render();
+    await userEvent.click(screen.getByRole('button', { name: 'Bắt đầu: Gọi đồ ở quán cà phê' }));
+    const dialog = await screen.findByRole('alertdialog');
+    expect(dialog).toHaveAccessibleName(/Trước khi trò chuyện với Đối tác AI/);
+    expect(dialog).toHaveTextContent('Tin nhắn của bạn được gửi tới Google Gemini');
   });
 });

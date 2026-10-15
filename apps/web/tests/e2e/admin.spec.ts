@@ -34,12 +34,13 @@ test('a learner reports a lesson exercise and follows it in Settings', async ({ 
   const option = (FIRST_EXERCISE!.prompt.options as Array<{ id: string; text: string }>).find((o) => o.id === optionId)!;
   await page.getByRole('radio', { name: option.text, exact: true }).click();
   await page.getByRole('button', { name: 'Kiểm tra', exact: true }).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
 
   const trigger = page.getByRole('button', { name: 'Báo lỗi nội dung' });
   await trigger.click();
   const dialog = page.getByRole('dialog', { name: 'Báo lỗi nội dung' });
   await expect(dialog).toBeVisible();
+  await settleAnimations(page); // the report sheet slides in with a JS-driven transform; a tap during it never became stable on slow WebKit
   await expectNoHorizontalScroll(page);
   await dialog.getByRole('radio', { name: 'Đề bài khó hiểu' }).click();
   await dialog.getByLabel('Ghi chú (không bắt buộc)').fill('Câu hỏi nên có ví dụ.');
@@ -129,6 +130,7 @@ for (const { path, heading } of ADMIN_PAGES) {
       // A fresh load per scheme: switching in place would catch colour transitions half way.
       await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
       await open();
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       const summary = serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) }));

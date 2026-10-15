@@ -8,7 +8,7 @@ export const RATING_AXES = [
   { id: 'clarity', label: 'Độ dễ hiểu', hint: 'Người nghe có hiểu bạn nói gì không?' },
   { id: 'sounds', label: 'Âm mục tiêu', hint: 'Những âm khó trong câu này đã rõ chưa?' },
   { id: 'rhythm', label: 'Nhịp và ngắt nghỉ', hint: 'Bạn ngắt nghỉ đúng chỗ, nhịp nói đều chứ?' },
-  { id: 'fluency', label: 'Độ trôi chảy', hint: 'Bạn nói liền mạch hay hay khựng lại?' },
+  { id: 'fluency', label: 'Độ trôi chảy', hint: 'Bạn nói liền mạch hay còn khựng lại?' },
   { id: 'content', label: 'Hợp nội dung', hint: 'Bạn đã nói đúng điều cần nói chưa?' },
 ] as const;
 

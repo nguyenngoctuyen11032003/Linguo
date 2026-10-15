@@ -75,7 +75,9 @@ export function VocabDialog({ open, title, description, onClose, triggerRef, wid
                 <X aria-hidden className="size-5" />
               </button>
             </div>
-            <div className="min-h-0 flex-1 overflow-y-auto px-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-4">{children}</div>
+            <div data-vocab-dialog-body className="min-h-0 flex-1 overflow-y-auto px-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-4">
+              {children}
+            </div>
           </motion.div>
         </div>
       )}

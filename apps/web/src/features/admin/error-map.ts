@@ -19,6 +19,8 @@ const MESSAGES: Record<string, string> = {
   // Raised by the admin RPCs beyond ADMIN_ERROR_CODES (admin_resolve_report, admin_grant_role).
   note_too_long: 'Ghi chú quá dài (tối đa 500 ký tự).',
   user_not_found: 'Không tìm thấy người dùng này.',
+  // admin_find_user (staff page).
+  invalid_user_query: 'Hãy nhập đúng email hoặc mã người dùng (UUID).',
   invalid_payload: 'Dữ liệu trả về không hợp lệ. Vui lòng thử lại.',
   supabase_unavailable: 'Chưa cấu hình kết nối máy chủ.',
 };

@@ -1,6 +1,8 @@
 # Daily data retention (spec 7 §1): calls the service_role-only RPC public.purge_expired_data, which deletes
 # expired ai_cache rows, ai_usage older than 90 days, ai_quota older than 60 days, export rate-limit rows
-# older than a day and unfinished study_sessions older than 180 days, and returns the counts.
+# older than a day and unfinished study_sessions older than 180 days, and returns the counts. A second step calls
+# public.purge_analytics (service_role only), which enforces the 180-day retention of analytics_events (product events
+# and anonymous technical error reports) and returns the number of rows deleted; it runs even if the first step fails.
 # Uses SUPABASE_SERVICE_ROLE_KEY from environment `production` (never printed: it only goes into a 0600
 # curl config file, not argv or logs) and shares the `supabase-production` concurrency group with
 # deploy.yml's migration job and content-publish.yml, so it never runs while migrations are applied.
@@ -54,5 +56,30 @@ jobs:
           cat "$body"; echo
           if [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
             echo "::error::purge_expired_data trả HTTP $status"
+            exit 1
+          fi
+      - name: Call purge_analytics
+        if: success() || failure()
+        run: |
+          set +x
+          missing=0
+          for v in SUPABASE_URL SUPABASE_SERVICE_ROLE_KEY; do
+            if [ -z "${!v}" ]; then echo "::error::Thiếu $v (xem docs/DEPLOY.md)"; missing=1; fi
+          done
+          [ "$missing" -eq 0 ] || exit 1
+          umask 077
+          cfg="$(mktemp)"
+          body="$(mktemp)"
+          trap 'rm -f "$cfg" "$body"' EXIT
+          printf 'header = "apikey: %s"\nheader = "Authorization: Bearer %s"\n' \
+            "$SUPABASE_SERVICE_ROLE_KEY" "$SUPABASE_SERVICE_ROLE_KEY" > "$cfg"
+          status=$(curl --silent --show-error --max-time 60 --config "$cfg" \
+            --request POST --header 'Content-Type: application/json' --data '{}' \
+            --output "$body" --write-out '%{http_code}' \
+            "${SUPABASE_URL%/}/rest/v1/rpc/purge_analytics") || { echo "::error::Không gọi được Supabase"; exit 1; }
+          echo "HTTP $status"
+          cat "$body"; echo
+          if [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
+            echo "::error::purge_analytics trả HTTP $status"
             exit 1
           fi

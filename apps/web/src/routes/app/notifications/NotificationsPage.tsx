@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { BarChart3, Bell, Layers, PlayCircle, Zap, type LucideIcon } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 import type { AppNotification, NotificationKind } from '@linguo/shared';
@@ -31,6 +32,7 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
     <li>
       <button
         type="button"
+        data-notification-id={item.id}
         onClick={() => onOpen(item)}
         className={cn(
           'flex min-h-11 w-full items-start gap-3 rounded-2xl px-4 py-3 text-left transition-colors hover:bg-text/5',
@@ -40,21 +42,24 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
       >
         <span
           className={cn(
-            'mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-xl',
+            'relative mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-xl',
             unread ? 'bg-primary/15 text-primary' : 'bg-text/8 text-muted',
           )}
         >
           <Icon aria-hidden className="size-5" />
+          {unread && (
+            // A dot on the icon instead of a word beside the title, so a long title keeps the full row width at 320 px.
+            <span
+              data-testid="unread-dot"
+              aria-hidden="true"
+              className="absolute -right-1 -top-1 size-3 rounded-full bg-primary ring-2 ring-surface-solid"
+            />
+          )}
         </span>
         <span className="min-w-0 flex-1">
-          <span className="flex items-baseline justify-between gap-3">
-            <span className={cn('min-w-0 text-[15px] leading-snug', unread ? 'font-bold' : 'font-medium')}>{item.title_vi}</span>
-            {unread && (
-              <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-primary">
-                <span aria-hidden="true" className="size-2 rounded-full bg-primary" />
-                Chưa đọc
-              </span>
-            )}
+          <span className={cn('block text-[15px] leading-snug', unread ? 'font-bold' : 'font-medium')}>
+            {item.title_vi}
+            {unread && <span className="sr-only"> — Chưa đọc</span>}
           </span>
           <span className="mt-0.5 block text-sm text-muted">{item.body_vi}</span>
           <span className="mt-1 block text-xs text-muted">
@@ -71,6 +76,29 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
 export function NotificationsPage() {
   const { status, items, hasMore, loadingMore, error, loadMore, reload, markClicked } = useNotifications();
   const navigate = useNavigate();
+
+  const listRef = useRef<HTMLUListElement>(null);
+  const moreRef = useRef<HTMLButtonElement>(null);
+  // "Xem thêm" disables itself while loading, which drops keyboard focus: once the page is in, focus the first
+  // older notification (or give focus back to the button when nothing new came, e.g. after an error).
+  const focusAfter = useRef<string | null>(null);
+  const [loadedTick, setLoadedTick] = useState(0);
+
+  const showMore = async () => {
+    focusAfter.current = items[items.length - 1]?.id ?? null;
+    await loadMore();
+    setLoadedTick((n) => n + 1);
+  };
+
+  useEffect(() => {
+    const lastId = focusAfter.current;
+    if (loadedTick === 0 || lastId === null) return;
+    focusAfter.current = null;
+    const rows = Array.from(listRef.current?.querySelectorAll<HTMLButtonElement>('button[data-notification-id]') ?? []);
+    const index = rows.findIndex((row) => row.dataset.notificationId === lastId);
+    const target = rows[index + 1] ?? moreRef.current ?? rows[rows.length - 1];
+    target?.focus();
+  }, [loadedTick]);
 
   const open = (item: AppNotification) => {
     // The mark is optimistic: a slow or failed RPC never holds the learner back from the action.
@@ -122,7 +150,7 @@ export function NotificationsPage() {
   return (
     <div className="space-y-6">
       <Title />
-      <ul aria-label="Danh sách thông báo" className="space-y-1 rounded-3xl border border-border bg-surface-solid p-2 shadow-[var(--shadow-card)]">
+      <ul ref={listRef} aria-label="Danh sách thông báo" className="space-y-1 rounded-3xl border border-border bg-surface-solid p-2 shadow-[var(--shadow-card)]">
         {items.map((item) => (
           <NotificationRow key={item.id} item={item} onOpen={open} />
         ))}
@@ -134,7 +162,7 @@ export function NotificationsPage() {
       )}
       {hasMore && (
         <div className="flex justify-center">
-          <Button variant="ghost" loading={loadingMore} onClick={() => void loadMore()}>
+          <Button ref={moreRef} variant="ghost" loading={loadingMore} onClick={() => void showMore()}>
             Xem thêm
           </Button>
         </div>

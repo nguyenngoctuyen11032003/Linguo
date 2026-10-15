@@ -8,6 +8,7 @@ import {
   lessonExercises,
   mockSupabase,
   pathRow,
+  settleAnimations,
   signIn,
   type AiMockOptions,
 } from './fixtures';
@@ -44,7 +45,12 @@ async function fillAnswer(page: Page, exercise: Row) {
     case 'mcq':
     case 'listen': {
       const option = prompt.options.find((o: { id: string }) => o.id === response.option_id);
-      await page.getByRole('radio', { name: option.text, exact: true }).click();
+      // A listen exercise shifts its options when the audio fails and the fallback text appears; retry a lost tap.
+      const radio = page.getByRole('radio', { name: option.text, exact: true });
+      await expect(async () => {
+        await radio.click();
+        await expect(radio).toBeChecked({ timeout: 1_500 });
+      }).toPass({ timeout: 15_000 });
       break;
     }
     case 'word_bank':
@@ -73,7 +79,7 @@ async function answerFirstExercise(page: Page) {
   const exercise = lessonExercises(String(LESSON.id))[0]!;
   await fillAnswer(page, exercise);
   await page.getByRole('button', { name: exercise.stage === 'recognition' ? 'Kiểm tra' : 'Chắc chắn', exact: true }).click();
-  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
+  await expect(page.getByText('Chính xác', { exact: true })).toBeVisible({ timeout: 15_000 });
   return exercise;
 }
 
@@ -250,7 +256,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await expect(page.getByRole('alertdialog', { name: NOTICE_TITLE })).toBeVisible();
     const axe = async () => {
       // Let the sheet's enter transition settle, like a11y.spec.ts does for pages.
-      await page.waitForTimeout(800);
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);

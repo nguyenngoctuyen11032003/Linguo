@@ -27,3 +27,13 @@ export { StaffRoleContext, useAdminRole, useStaffRole, type StaffRoleState } fro
 export { useAdminAnalytics, type AdminAnalyticsData } from './useAdminAnalytics';
 export { useAdminContentDetail, useAdminContentList, type AdminContentDetailState, type SetStatusInput, type SetStatusOutcome } from './useAdminContent';
 export { yamlHint, type YamlHint } from './yaml-hint';
+export {
+  STAFF_ROLE_DESCRIPTIONS_VI,
+  canManageMember,
+  findAdminUser,
+  grantStaffRole,
+  listAdminStaff,
+  staffDisplayName,
+  staffQueryKind,
+} from './staff';
+export { useAdminStaff, type AdminStaffState, type StaffActionOutcome } from './useAdminStaff';

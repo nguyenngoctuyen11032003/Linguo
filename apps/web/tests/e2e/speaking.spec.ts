@@ -125,6 +125,10 @@ test('a learner records a sentence, listens back, rates it on separate axes and 
   await setup(page, { mic: 'ok' });
   await openSpeaking(page);
   await expect(page.getByText(/Linguo không tải lên hay lưu bản ghi nào/)).toBeVisible();
+  // The AI conversation feature is linked under its own name, apart from the scripted "Hội thoại mẫu" mode.
+  await expect(page.getByRole('link', { name: 'Luyện hội thoại với đối tác AI' })).toHaveAttribute('href', '/app/dong-vai');
+  await expect(page.getByRole('button', { name: 'Hội thoại mẫu' })).toBeVisible();
+  await expect(page.locator('main').getByText('Đóng vai', { exact: false })).toHaveCount(0);
   await expectNoHorizontalScroll(page);
 
   await record(page).click();
@@ -137,17 +141,37 @@ test('a learner records a sentence, listens back, rates it on separate axes and 
   for (const axis of ['Độ dễ hiểu', 'Âm mục tiêu', 'Nhịp và ngắt nghỉ', 'Độ trôi chảy', 'Hợp nội dung']) {
     await expect(page.getByRole('group', { name: axis })).toBeVisible();
   }
+  const save = page.getByRole('button', { name: 'Lưu tự đánh giá trên thiết bị này' });
+  await expect(save).toBeDisabled();
+  await expect(save).toHaveAccessibleDescription('Chọn ít nhất một mức tự đánh giá để lưu');
   await page.getByRole('group', { name: 'Độ dễ hiểu' }).getByText('Khá tốt').click();
+  await expect(save).toBeEnabled();
   await page.getByRole('group', { name: 'Độ trôi chảy' }).getByText('Tạm ổn').click();
   await expectNoHorizontalScroll(page);
   await axeBothThemes(page, 'speaking with a recording');
 
-  await page.getByRole('button', { name: 'Lưu tự đánh giá trên thiết bị này' }).click();
+  await save.click();
   await expect(page.getByText(/Đã lưu trên thiết bị này/)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Đã lưu', exact: true })).toBeDisabled();
   await expect(page.getByText('Bạn đã lưu 1 lần tự đánh giá trên thiết bị này.')).toBeVisible();
   const stored = await page.evaluate(() => Object.entries(localStorage).filter(([k]) => k.startsWith('linguo-speaking-v1:')));
   expect(stored).toHaveLength(1);
   expect(stored[0]![1]).not.toMatch(/transcript|audio|blob/i);
+
+  // Deleting the saved self-assessments asks first.
+  const clear = page.getByRole('button', { name: 'Xoá các tự đánh giá đã lưu' });
+  await clear.click();
+  const dialog = page.getByRole('dialog', { name: 'Xoá các tự đánh giá đã lưu?' });
+  await expect(dialog).toBeVisible();
+  await expectNoHorizontalScroll(page);
+  await axeBothThemes(page, 'speaking clear self-assessments dialog');
+  await dialog.getByRole('button', { name: 'Giữ lại' }).click();
+  await expect(dialog).toHaveCount(0);
+  await expect(clear).toBeFocused();
+  await clear.click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Xoá', exact: true }).click();
+  await expect(page.getByText('Đã xoá các tự đánh giá đã lưu trên thiết bị này.')).toBeFocused();
+  expect(await page.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith('linguo-speaking-v1:')))).toEqual([]);
 
   // Audio never leaves the page: the only blob: reads are the <audio> element's own in-memory source; there is no
   // storage call and no write other than the (mocked) Supabase RPCs the app always makes.
@@ -193,8 +217,8 @@ for (const [mic, message] of [
     await expect(page.getByRole('heading', { name: 'Nghe và tự luyện' })).toBeVisible();
     await expect(page.getByText(message).first()).toBeVisible();
     await expect(page.getByRole('group', { name: 'Độ trôi chảy' })).toBeVisible();
-    await page.getByRole('button', { name: 'Đóng vai' }).click();
-    await expect(page.getByRole('heading', { level: 2, name: 'Đóng vai' })).toBeVisible();
+    await page.getByRole('button', { name: 'Hội thoại mẫu' }).click();
+    await expect(page.getByRole('heading', { level: 2, name: 'Hội thoại mẫu' })).toBeVisible();
     await expectNoHorizontalScroll(page);
   });
 }
@@ -238,7 +262,8 @@ test('open answer and scripted role-play work, in Korean too', async ({ page }) 
   await expect(record(page)).toBeVisible();
   await axeBothThemes(page, 'speaking open answer');
 
-  await page.getByRole('button', { name: 'Đóng vai' }).click();
+  await page.getByRole('button', { name: 'Hội thoại mẫu' }).click();
+  await expect(page.getByRole('heading', { level: 2, name: 'Hội thoại mẫu' })).toBeVisible();
   await expect(page.getByText('어서 오세요. 뭘 드릴까요?')).toBeVisible();
   await page.getByRole('button', { name: 'Tiếp tục' }).click();
   await expect(page.getByText('커피 한 잔 주세요.')).toBeVisible();

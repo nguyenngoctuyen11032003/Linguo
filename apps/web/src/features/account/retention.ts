@@ -1,6 +1,7 @@
 /**
  * What Linguo keeps and for how long. Shared by Settings › "Tài khoản và dữ liệu" and /quyen-rieng-tu so the two
- * never disagree; the numbers mirror ai_cache's TTL and purge_expired_data (spec 7 §1).
+ * never disagree; the numbers mirror ai_cache's TTL and purge_expired_data (spec 7 §1), plus purge_analytics, which the
+ * daily Maintenance workflow (.github/workflows/maintenance.yml) calls for the 180-day analytics retention.
  */
 export const RETENTION = {
   aiUsageDays: 90,
@@ -8,7 +9,7 @@ export const RETENTION = {
   aiCacheDays: 30,
   /** purge_notifications() (REMINDER_RULES.retention_days), run nightly by notify-dispatch. */
   notificationInboxDays: 90,
-  /** purge_analytics(): product events and anonymous technical error reports. */
+  /** purge_analytics() (run daily by the Maintenance workflow): product events and anonymous technical error reports. */
   analyticsDays: 180,
 } as const;
 

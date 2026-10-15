@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderWithProviders } from '../../../../tests/unit/render';
@@ -54,7 +54,35 @@ describe('NotificationsPage', () => {
     renderWithProviders(<NotificationsPage />, { route: '/app/thong-bao' });
     const list = screen.getByRole('list', { name: 'Danh sách thông báo' });
     expect(list.querySelectorAll('li')).toHaveLength(2);
-    expect(screen.getAllByText('Chưa đọc')).toHaveLength(1);
+    expect(screen.getAllByText(/Chưa đọc/)).toHaveLength(1);
+    expect(screen.getByRole('button', { name: /Đến giờ ôn tập/ })).toHaveTextContent('Chưa đọc');
+  });
+
+  it('marks unread with a dot and screen-reader text, never a visible word beside the title', () => {
+    setState({ items: [makeNotification({ title_vi: 'Một tiêu đề khá dài cho màn hình hẹp' })] });
+    renderWithProviders(<NotificationsPage />, { route: '/app/thong-bao' });
+    expect(screen.getByText(/Chưa đọc/)).toHaveClass('sr-only');
+    expect(screen.getByTestId('unread-dot')).toHaveAttribute('aria-hidden', 'true');
+  });
+
+  it('moves focus to the first newly loaded notification after "Xem thêm"', async () => {
+    const first = makeNotification({ title_vi: 'Thông báo đầu' });
+    const older = makeNotification({ title_vi: 'Thông báo cũ hơn', created_at: '2026-10-01T08:00:00Z' });
+    const loadMore = vi.fn(async () => {
+      mocks.state = { ...mocks.state, items: [first, older], hasMore: false };
+    });
+    setState({ items: [first], hasMore: true, loadMore });
+    renderWithProviders(<NotificationsPage />, { route: '/app/thong-bao' });
+    await userEvent.click(screen.getByRole('button', { name: 'Xem thêm' }));
+    await waitFor(() => expect(screen.getByRole('button', { name: /Thông báo cũ hơn/ })).toHaveFocus());
+  });
+
+  it('keeps focus on "Xem thêm" when nothing new arrived', async () => {
+    setState({ items: [makeNotification()], hasMore: true });
+    renderWithProviders(<NotificationsPage />, { route: '/app/thong-bao' });
+    const more = screen.getByRole('button', { name: 'Xem thêm' });
+    await userEvent.click(more);
+    await waitFor(() => expect(more).toHaveFocus());
   });
 
   it('marks a notification clicked and follows its action', async () => {

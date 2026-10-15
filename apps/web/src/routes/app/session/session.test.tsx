@@ -357,11 +357,96 @@ describe('a running session', () => {
 
     await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Luyện ngữ pháp”' }));
     expect(await screen.findByRole('button', { name: 'Hoàn tác' })).toBeInTheDocument();
+    // Focus lands on the offer (which holds its countdown); leaving it lets the countdown run.
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Hoàn tác' })).toHaveFocus());
+    act(() => (document.activeElement as HTMLElement).blur());
     await act(async () => {
       await new Promise((resolve) => setTimeout(resolve, UNDO_VISIBLE_MS + 100));
     });
     expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
   }, 20000);
+
+  it('holds the Hoàn tác countdown while it is hovered or focused (WCAG 2.2.1)', async () => {
+    serve(todayResult(studySession()), { update_session_item: { data: sessionWithStatuses(['skipped', 'pending', 'pending', 'pending']) } });
+    render();
+    await ready();
+    vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'], shouldAdvanceTime: true });
+    try {
+      const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime });
+      await user.click(screen.getByRole('button', { name: 'Bỏ qua “Ôn thẻ đến hạn”' }));
+      const undo = await screen.findByRole('button', { name: 'Hoàn tác' });
+      await waitFor(() => expect(undo).toHaveFocus());
+      act(() => vi.advanceTimersByTime(UNDO_VISIBLE_MS * 3));
+      expect(screen.getByRole('button', { name: 'Hoàn tác' })).toBeInTheDocument();
+
+      act(() => undo.blur());
+      await user.hover(screen.getByTestId('undo-bar'));
+      act(() => vi.advanceTimersByTime(UNDO_VISIBLE_MS * 3));
+      expect(screen.getByRole('button', { name: 'Hoàn tác' })).toBeInTheDocument();
+
+      await user.unhover(screen.getByTestId('undo-bar'));
+      act(() => vi.advanceTimersByTime(UNDO_VISIBLE_MS - 100));
+      expect(screen.getByRole('button', { name: 'Hoàn tác' })).toBeInTheDocument();
+      act(() => vi.advanceTimersByTime(200));
+      expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('moves focus to Hoàn tác after a skip and back to the restored row after undo', async () => {
+    serve(todayResult(studySession()), {
+      update_session_item: (args) =>
+        args.p_status === 'pending'
+          ? { data: sessionWithStatuses(['pending', 'pending', 'pending', 'pending']) }
+          : { data: sessionWithStatuses(['pending', 'skipped', 'pending', 'pending']) },
+    });
+    render();
+    await ready();
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Chào hỏi”' }));
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Hoàn tác' })).toHaveFocus());
+    await userEvent.keyboard('{Enter}');
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Bỏ qua “Chào hỏi”' })).toHaveFocus());
+    expect(document.body).not.toHaveFocus();
+  });
+
+  it('keeps focus on the row when a skip is refused', async () => {
+    serve(todayResult(studySession()), { update_session_item: { error: { message: 'TypeError: Failed to fetch', code: '' } } });
+    render();
+    await ready();
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua “Chào hỏi”' }));
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Bỏ qua “Chào hỏi”' })).toHaveFocus());
+    expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
+  });
+
+  it('restores a skipped activity with Học lại after the undo offer is gone', async () => {
+    serve(todayResult(sessionWithStatuses(['done', 'skipped', 'pending', 'pending'])), {
+      update_session_item: { data: sessionWithStatuses(['done', 'pending', 'pending', 'pending']) },
+    });
+    render();
+    await ready();
+    expect(screen.queryByRole('button', { name: 'Hoàn tác' })).not.toBeInTheDocument();
+    const again = screen.getByRole('button', { name: 'Học lại “Chào hỏi”' });
+    expect(again.className).toContain('min-h-11');
+    await userEvent.click(again);
+    expect(await screen.findByText('Tiến độ: 1/4 hoạt động')).toBeInTheDocument();
+    expect(calls('update_session_item')).toEqual([{ p_session_id: SESSION_ID, p_item_id: 'a2', p_status: 'pending', p_seconds: 0 }]);
+    expect(screen.queryByRole('button', { name: /^Học lại/ })).not.toBeInTheDocument();
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Bỏ qua “Chào hỏi”' })).toHaveFocus());
+    expect(document.querySelector('p[aria-live="polite"]')).toHaveTextContent('Đã đưa “Chào hỏi” trở lại danh sách cần học.');
+  });
+
+  it('only offers move buttons on pending activities', async () => {
+    serve(todayResult(sessionWithStatuses(['done', 'skipped', 'pending', 'pending'])));
+    render();
+    await ready();
+    expect(screen.queryByRole('button', { name: /^Đưa “Ôn thẻ đến hạn”/ })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /^Đưa “Chào hỏi”/ })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Đưa “Luyện ngữ pháp” lên' })).toBeEnabled();
+    expect(screen.getByRole('button', { name: 'Đưa “Tổng kết” xuống' })).toBeDisabled();
+    // Done rows have no action at all; skipped rows only "Học lại".
+    expect(screen.getAllByRole('button', { name: /^Học lại/ })).toHaveLength(1);
+  });
 
   it('gives the arrows 44 px targets, names with the title and a neutral disabled style', async () => {
     serve(todayResult(studySession()));

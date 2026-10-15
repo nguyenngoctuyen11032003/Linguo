@@ -3,3 +3,4 @@ export * from './authoring';
 export * from './bundle';
 export * from './rpc';
 export * from './grading';
+export * from './audio';

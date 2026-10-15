@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { expectNoHorizontalScroll, mockSupabase, pathRow, signIn, type ReviewMockOptions } from './fixtures';
+import { expectNoHorizontalScroll, mockSupabase, pathRow, settleAnimations, signIn, type ReviewMockOptions } from './fixtures';
 
 const EN_PATH = pathRow({ id: 'path-en', language_code: 'en', current_level: 'pre_a1', target_level: 'a1' });
 const KO_PATH = pathRow({ id: 'path-ko', language_code: 'ko', current_level: 'hangul', target_level: 'topik1' });
@@ -250,7 +250,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await setup(page, { due: 2 });
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
     const scan = async (label: string) => {
-      await page.waitForTimeout(400);
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, `${label}: ${JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)}`).toEqual([]);

@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Compass, MessagesSquare } from 'lucide-react';
 import { Link } from 'react-router';
 import { LANGUAGES, LEVEL_INFO, type LevelCode, type RoleplayScenario } from '@linguo/shared';
@@ -46,6 +46,9 @@ export function RoleplayPage() {
   const [report, setReport] = useState<string | null>(null);
   const reportTriggerRef = useRef<HTMLElement | null>(null);
   const summaryRequest = useRef<ReturnType<typeof buildSummaryRequest> | null>(null);
+  // Back on the picker after leaving a chat or its recap: focus the page title instead of leaving it on <body>.
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const focusPicker = useRef(false);
 
   const pick = (scenario: RoleplayScenario) => {
     if (notice.acknowledged) api.start(scenario);
@@ -76,7 +79,13 @@ export function RoleplayPage() {
     summary.reset();
     summaryRequest.current = null;
     setRecap(false);
+    focusPicker.current = true;
   };
+  useEffect(() => {
+    if (!focusPicker.current || api.session) return;
+    focusPicker.current = false;
+    titleRef.current?.focus();
+  });
 
   let content: ReactNode;
   if (!path) {
@@ -116,7 +125,15 @@ export function RoleplayPage() {
       />
     );
   } else if (language) {
-    content = <ScenarioPicker language={language} level={path.currentLevel} onPick={pick} disabled={notice.status === 'loading'} />;
+    content = (
+      <ScenarioPicker
+        language={language}
+        level={path.currentLevel}
+        onPick={pick}
+        disabled={notice.status === 'loading' || gate.exhausted}
+        gateHint={gate.exhausted ? gate.hint : null}
+      />
+    );
   } else {
     content = (
       <EmptyState
@@ -132,7 +149,9 @@ export function RoleplayPage() {
     <div className="space-y-6">
       <header className="space-y-2">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Đóng vai với AI</h1>
+          <h1 ref={titleRef} tabIndex={-1} className="text-[28px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+            Đóng vai với AI
+          </h1>
           <AiQuotaChip quota={quota.quota} />
         </div>
         {path && !api.session && (
@@ -142,7 +161,7 @@ export function RoleplayPage() {
         )}
       </header>
       {content}
-      <AiNoticeDialog open={picked !== null} onAccept={accept} onClose={() => setPicked(null)} />
+      <AiNoticeDialog context="roleplay" open={picked !== null} onAccept={accept} onClose={() => setPicked(null)} />
       <AiReportDialog open={report !== null} onClose={() => setReport(null)} usageId={report} triggerRef={reportTriggerRef} />
     </div>
   );

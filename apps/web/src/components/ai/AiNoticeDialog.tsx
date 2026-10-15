@@ -1,8 +1,23 @@
-import { useEffect, useState, type RefObject } from 'react';
+import { useEffect, useRef, useState, type RefObject } from 'react';
 import { ShieldAlert } from 'lucide-react';
 import { Link } from 'react-router';
 import { Button } from '@/components/ui/Button';
 import { AiModal } from './AiModal';
+
+export type AiNoticeContext = 'tutor' | 'roleplay';
+
+const COPY: Record<AiNoticeContext, { title: string; description: string; sent: string }> = {
+  tutor: {
+    title: 'Trước khi dùng Gia sư AI',
+    description: 'Giải thích AI có thể chưa chính xác. Hãy đối chiếu với bài học khi thấy điều gì lạ.',
+    sent: 'Câu hỏi của bạn',
+  },
+  roleplay: {
+    title: 'Trước khi trò chuyện với Đối tác AI',
+    description: 'Đối tác AI có thể nói sai hoặc chưa tự nhiên. Hãy đối chiếu với bài học khi thấy điều gì lạ.',
+    sent: 'Tin nhắn của bạn',
+  },
+};
 
 export interface AiNoticeDialogProps {
   open: boolean;
@@ -10,18 +25,25 @@ export interface AiNoticeDialogProps {
   onAccept: () => Promise<boolean | void> | boolean | void;
   onClose: () => void;
   triggerRef?: RefObject<HTMLElement | null>;
+  /** Which AI the learner is about to use: the tutor (questions) or the role-play partner (messages). */
+  context?: AiNoticeContext;
 }
 
 /** Privacy notice shown before the first AI request (PRD §8.6): free-tier Gemini data handling. */
-export function AiNoticeDialog({ open, onAccept, onClose, triggerRef }: AiNoticeDialogProps) {
+export function AiNoticeDialog({ open, onAccept, onClose, triggerRef, context = 'tutor' }: AiNoticeDialogProps) {
   const [busy, setBusy] = useState(false);
   const [failed, setFailed] = useState(false);
+  const titleRef = useRef<HTMLSpanElement>(null);
+  const copy = COPY[context];
 
   useEffect(() => {
     if (!open) {
       setBusy(false);
       setFailed(false);
+      return;
     }
+    // Start reading at the title (not the privacy link half-way down); runs after the modal's own initial focus.
+    titleRef.current?.focus({ preventScroll: true });
   }, [open]);
 
   const accept = async () => {
@@ -43,16 +65,16 @@ export function AiNoticeDialog({ open, onAccept, onClose, triggerRef }: AiNotice
       triggerRef={triggerRef}
       role="alertdialog"
       title={
-        <span className="inline-flex items-center gap-2">
+        <span ref={titleRef} tabIndex={-1} className="inline-flex items-center gap-2 focus:outline-none">
           <ShieldAlert aria-hidden className="size-5 shrink-0 text-primary" />
-          Trước khi dùng Gia sư AI
+          {copy.title}
         </span>
       }
-      description="Giải thích AI có thể chưa chính xác. Hãy đối chiếu với bài học khi thấy điều gì lạ."
+      description={copy.description}
     >
       <ul className="list-disc space-y-2 pl-5 text-[15px] leading-relaxed">
         <li>
-          Câu hỏi của bạn được gửi tới <strong>Google Gemini</strong> qua gói miễn phí (free tier).
+          {copy.sent} được gửi tới <strong>Google Gemini</strong> qua gói miễn phí (free tier).
         </li>
         <li>Theo chính sách của Google, dữ liệu gửi qua gói miễn phí có thể được dùng để cải thiện sản phẩm của Google và có thể được người đánh giá xem xét.</li>
         <li>
@@ -72,7 +94,12 @@ export function AiNoticeDialog({ open, onAccept, onClose, triggerRef }: AiNotice
           Chưa lưu được xác nhận. Vui lòng thử lại.
         </p>
       )}
-      <div className="mt-5 grid gap-2">
+      {/* Kept in view while the notice scrolls on short screens, so the answer is always one tap away. The negative
+          inset and margin cancel the scroll area's bottom padding so nothing scrolls by underneath the buttons. */}
+      <div
+        data-testid="ai-notice-actions"
+        className="sticky -bottom-[max(1.25rem,env(safe-area-inset-bottom,0px))] -mb-[max(1.25rem,env(safe-area-inset-bottom,0px))] mt-4 grid gap-2 border-t border-border bg-surface-solid pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
+      >
         <Button variant="accent" size="lg" block loading={busy} onClick={() => void accept()}>
           Tôi đã hiểu, tiếp tục
         </Button>

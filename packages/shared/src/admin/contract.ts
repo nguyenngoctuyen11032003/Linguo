@@ -277,3 +277,40 @@ export const adminAuditEntrySchema = z.object({
   created_at: z.string(),
 });
 export type AdminAuditEntry = z.infer<typeof adminAuditEntrySchema>;
+
+// ---------------------------------------------------------------------------
+// Staff management (/quan-tri/nhan-su, admin only; 20261017000500_admin_staff.sql)
+// ---------------------------------------------------------------------------
+
+/** admin_list_staff() → array of this: admins first, then reviewers, then editors. */
+export const adminStaffMemberSchema = z.object({
+  user_id: z.string().uuid(),
+  email: z.string().nullable(),
+  display_name: z.string().nullable(),
+  role: z.enum(STAFF_ROLES),
+  /** The admin who granted the role; null when it was granted by SQL. */
+  granted_by: z.string().uuid().nullable(),
+  granted_by_email: z.string().nullable(),
+  granted_at: z.string(),
+});
+export type AdminStaffMember = z.infer<typeof adminStaffMemberSchema>;
+
+/**
+ * admin_find_user(p_query) → this, or null when no account matches. p_query is a user id or an email address (exact,
+ * case-insensitive); anything else, or more than 320 characters, raises invalid_user_query.
+ */
+export const adminFoundUserSchema = z.object({
+  user_id: z.string().uuid(),
+  email: z.string().nullable(),
+  display_name: z.string().nullable(),
+  role: z.enum(STAFF_ROLES).nullable(),
+});
+export type AdminFoundUser = z.infer<typeof adminFoundUserSchema>;
+export const ADMIN_USER_QUERY_MAX = 320;
+
+/** admin_grant_role(p_user_id, p_role: StaffRole | null) → this (role null = revoked). */
+export const adminGrantRoleResultSchema = z.object({
+  user_id: z.string().uuid(),
+  role: z.enum(STAFF_ROLES).nullable(),
+});
+export type AdminGrantRoleResult = z.infer<typeof adminGrantRoleResultSchema>;

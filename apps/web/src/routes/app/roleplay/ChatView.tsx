@@ -18,6 +18,7 @@ import {
 import type { RoleplayApi } from '@/features/roleplay/useRoleplaySession';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
+import { LeaveRoleplayDialog } from './LeaveRoleplayDialog';
 
 const MESSAGE_MAX = 300;
 const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn' } as const;
@@ -47,11 +48,11 @@ function GoalChecklist({ scenario, reached }: { scenario: RoleplayScenario; reac
 function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' | 'ko' }) {
   if (message.corrections.length === 0) return null;
   return (
-    <section aria-label="Gợi ý sửa" className="mt-1.5 space-y-1.5 rounded-2xl border border-border px-3 py-2 text-sm">
-      <h4 className="flex items-center gap-1.5 font-semibold">
+    <section aria-label="Gợi ý sửa câu" className="mt-1.5 space-y-1.5 rounded-2xl border border-border px-3 py-2 text-sm">
+      <h3 className="flex items-center gap-1.5 font-semibold">
         <Pencil aria-hidden className="size-3.5 text-primary" />
-        Gợi ý sửa
-      </h4>
+        Gợi ý sửa câu
+      </h3>
       <ul className="space-y-1.5">
         {message.corrections.map((c, i) => (
           <li key={i} className="space-y-0.5">
@@ -108,9 +109,9 @@ function Bubble({
         {partner && (
           <div className="flex flex-wrap items-center gap-1">
             {tts.available && (
-              <Button variant="ghost" onClick={() => (playing ? tts.stop() : tts.play(message.text))} aria-label={playing ? 'Dừng nghe' : 'Nghe câu của đối tác'}>
+              <Button variant="ghost" onClick={() => (playing ? tts.stop() : tts.play(message.text))} aria-label={playing ? undefined : 'Nghe câu của đối tác'}>
                 {playing ? <Square aria-hidden className="size-4" /> : <Volume2 aria-hidden className="size-4" />}
-                {playing ? 'Dừng' : 'Nghe'}
+                {playing ? 'Dừng đọc' : 'Nghe'}
               </Button>
             )}
             {latestPartner && message.responseId && (
@@ -125,7 +126,7 @@ function Bubble({
           <p className="flex items-start gap-1.5 rounded-2xl bg-primary/10 px-3 py-2 text-sm">
             <Lightbulb aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
             <span className="break-words">
-              <span className="font-semibold">Gợi ý: </span>
+              <span className="font-semibold">Gợi ý cách trả lời: </span>
               {message.hint_vi}
             </span>
           </p>
@@ -155,10 +156,16 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
   const [voiceOn, setVoiceOn] = useState(false);
   const [draft, setDraft] = useState('');
   const [empty, setEmpty] = useState(false);
+  const [confirmLeave, setConfirmLeave] = useState(false);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const leaveRef = useRef<HTMLButtonElement>(null);
   const composerRef = useRef<HTMLDivElement>(null);
+  // The input and its send button, or the "finished" card: what should sit above the bottom nav after a reply.
+  const tailRef = useRef<HTMLDivElement>(null);
   const endRef = useRef<HTMLDivElement>(null);
   const voiceId = useId();
   const errorId = useId();
+  const finishHintId = useId();
   const turns = partnerTurns(session);
   const over = isOver(session);
   const loading = api.state === 'loading';
@@ -166,10 +173,18 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
   const lastPartnerId = [...session.messages].reverse().find((m) => m.role === 'partner')?.id;
   const { listening, transcript, start: startStt, stop: stopStt, reset: resetStt } = stt;
 
-  // New message: keep the end of the conversation in view (no smooth scroll with reduced motion).
+  // Starting a scenario (or coming back to one) lands on its title instead of leaving focus on <body>.
   useEffect(() => {
-    endRef.current?.scrollIntoView?.({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
-  }, [session.messages.length, loading, reduceMotion]);
+    headingRef.current?.focus({ preventScroll: true });
+  }, []);
+
+  // New message: keep the end of the conversation in view (no smooth scroll with reduced motion). While the partner
+  // is typing that is the typing indicator; once it replied it is the whole composer (input and "Gửi"), which the
+  // root scroll-padding keeps clear of the bottom nav.
+  useEffect(() => {
+    const target = loading ? endRef.current : (tailRef.current ?? endRef.current);
+    target?.scrollIntoView?.({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }, [session.messages.length, loading, over, reduceMotion]);
 
   // After each partner reply the input is ready again.
   const seenTurns = useRef(0);
@@ -218,7 +233,9 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
       <SolidCard className="space-y-3 p-4">
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div className="min-w-0">
-            <h2 className="text-lg font-bold leading-snug">{scenario.title_vi}</h2>
+            <h2 ref={headingRef} tabIndex={-1} className="text-lg font-bold leading-snug focus:outline-none">
+              {scenario.title_vi}
+            </h2>
             <p className="text-sm text-muted">Đối tác: {scenario.partner_role_vi} · nói {LANGUAGE_NAME[lang]}</p>
           </div>
           <p className="shrink-0 rounded-full bg-text/5 px-3 py-1 text-sm font-semibold tabular-nums">
@@ -255,54 +272,58 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
       <div ref={endRef} />
 
       {over ? (
-        <SolidCard className="space-y-3 p-4">
-          <p className="font-semibold">Buổi trò chuyện đã xong, bạn làm tốt lắm!</p>
-          <p className="text-[15px] text-muted">
-            {session.goals.length >= scenario.goals.length
-              ? 'Bạn đã đạt mọi mục tiêu của tình huống.'
-              : 'Bạn đã đi hết số lượt của một buổi.'}{' '}
-            Xem tóm tắt để nhớ lại những gì đã luyện nhé.
-          </p>
-          <Button variant="accent" onClick={onFinish}>
-            Kết thúc và xem tóm tắt
-          </Button>
-        </SolidCard>
+        <div ref={tailRef}>
+          <SolidCard className="space-y-3 p-4">
+            <p className="font-semibold">Buổi trò chuyện đã xong, bạn làm tốt lắm!</p>
+            <p className="text-[15px] text-muted">
+              {session.goals.length >= scenario.goals.length
+                ? 'Bạn đã đạt mọi mục tiêu của tình huống.'
+                : 'Bạn đã đi hết số lượt của một buổi.'}{' '}
+              Xem tóm tắt để nhớ lại những gì đã luyện nhé.
+            </p>
+            <Button variant="accent" onClick={onFinish}>
+              Kết thúc và xem tóm tắt
+            </Button>
+          </SolidCard>
+        </div>
       ) : (
         <form onSubmit={submit} noValidate className="space-y-3">
-          <div ref={composerRef} className="space-y-1.5">
-            <label htmlFor={`${voiceId}-msg`} className="block px-1 text-sm font-medium">
-              Tin nhắn của bạn (bằng {LANGUAGE_NAME[lang]})
-            </label>
-            <AiTextarea
-              id={`${voiceId}-msg`}
-              lang={lang}
-              value={draft}
-              maxLength={MESSAGE_MAX}
-              invalid={empty}
-              aria-describedby={empty ? errorId : undefined}
-              placeholder={lang === 'ko' ? 'Gõ câu trả lời bằng tiếng Hàn…' : 'Type your reply in English…'}
-              onValueChange={(v) => {
-                setDraft(v);
-                if (empty) setEmpty(false);
-              }}
-              onSubmitShortcut={() => submit()}
-            />
-            {empty && (
-              <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
-                Hãy viết vài chữ trước khi gửi nhé.
-              </p>
-            )}
-          </div>
-          <div className="flex flex-wrap items-center gap-2">
-            <Button type="submit" variant="accent" loading={loading} disabled={sendDisabled} hint={gate.hint ? `${gate.hint} Bài học và ôn tập vẫn dùng bình thường.` : undefined}>
-              Gửi
-            </Button>
-            {stt.supported && voiceOn && (
-              <Button variant="ghost" onClick={listening ? stopStt : startStt} aria-pressed={listening} disabled={loading || api.stalled}>
-                {listening ? <Square aria-hidden className="size-4" /> : <Mic aria-hidden className="size-4" />}
-                {listening ? 'Dừng nói' : 'Nói để nhập'}
+          <div ref={tailRef} className="space-y-3">
+            <div ref={composerRef} className="space-y-1.5">
+              <label htmlFor={`${voiceId}-msg`} className="block px-1 text-sm font-medium">
+                Tin nhắn của bạn (bằng {LANGUAGE_NAME[lang]})
+              </label>
+              <AiTextarea
+                id={`${voiceId}-msg`}
+                lang={lang}
+                value={draft}
+                maxLength={MESSAGE_MAX}
+                invalid={empty}
+                aria-describedby={empty ? errorId : undefined}
+                placeholder={lang === 'ko' ? 'Gõ câu trả lời bằng tiếng Hàn…' : 'Type your reply in English…'}
+                onValueChange={(v) => {
+                  setDraft(v);
+                  if (empty) setEmpty(false);
+                }}
+                onSubmitShortcut={() => submit()}
+              />
+              {empty && (
+                <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
+                  Hãy viết vài chữ trước khi gửi nhé.
+                </p>
+              )}
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Button type="submit" variant="accent" loading={loading} disabled={sendDisabled} hint={gate.hint ? `${gate.hint} Bài học và ôn tập vẫn dùng bình thường.` : undefined}>
+                Gửi
               </Button>
-            )}
+              {stt.supported && voiceOn && (
+                <Button variant="ghost" onClick={listening ? stopStt : startStt} aria-pressed={listening} disabled={loading || api.stalled}>
+                  {listening ? <Square aria-hidden className="size-4" /> : <Mic aria-hidden className="size-4" />}
+                  {listening ? 'Dừng nói' : 'Nói để nhập'}
+                </Button>
+              )}
+            </div>
           </div>
           {stt.supported && (
             <div className="space-y-1">
@@ -328,16 +349,32 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
         </form>
       )}
 
-      <div className="flex flex-wrap gap-2 border-t border-border pt-3">
-        {!over && (
-          <Button variant="ghost" onClick={onFinish} disabled={learnerCount === 0 || loading}>
-            Kết thúc và xem tóm tắt
+      <div className="space-y-2 border-t border-border pt-3">
+        <div className="flex flex-wrap gap-2">
+          {!over && (
+            <Button variant="ghost" onClick={onFinish} disabled={learnerCount === 0 || loading} aria-describedby={learnerCount === 0 ? finishHintId : undefined}>
+              Kết thúc và xem tóm tắt
+            </Button>
+          )}
+          <Button ref={leaveRef} variant="ghost" onClick={() => (learnerCount > 0 ? setConfirmLeave(true) : onLeave())} disabled={loading}>
+            Chọn tình huống khác
           </Button>
+        </div>
+        {!over && learnerCount === 0 && (
+          <p id={finishHintId} className="px-1 text-sm text-muted">
+            Gửi ít nhất một tin nhắn để xem tóm tắt nhé.
+          </p>
         )}
-        <Button variant="ghost" onClick={onLeave} disabled={loading}>
-          Chọn tình huống khác
-        </Button>
       </div>
+      <LeaveRoleplayDialog
+        open={confirmLeave}
+        triggerRef={leaveRef}
+        onStay={() => setConfirmLeave(false)}
+        onLeave={() => {
+          setConfirmLeave(false);
+          onLeave();
+        }}
+      />
     </div>
   );
 }

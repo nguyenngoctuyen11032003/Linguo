@@ -16,7 +16,10 @@ interface Props {
   onSaveReflection: (ratings: Ratings) => void;
 }
 
-/** "Đóng vai": a fixed script where the partner's lines are given and the learner says their own. No AI involved. */
+/**
+ * "Hội thoại mẫu": a fixed script where the partner's lines are given and the learner says their own. No AI involved;
+ * deliberately not called "Đóng vai", which is the separate AI conversation feature at /app/dong-vai.
+ */
 export function RolePlayMode({ lang, tts, transcribe, onSaveReflection }: Props) {
   const scripts = ROLE_PLAYS[lang];
   const [scriptId, setScriptId] = useState(scripts[0]?.id ?? '');
@@ -43,7 +46,7 @@ export function RolePlayMode({ lang, tts, transcribe, onSaveReflection }: Props)
   return (
     <SolidCard className="space-y-5">
       <h2 ref={headingRef} tabIndex={-1} className="text-xl font-bold tracking-[-0.02em] focus:outline-none">
-        Đóng vai
+        Hội thoại mẫu
       </h2>
       <SelectField label="Tình huống" value={script.id} onChange={change}>
         {scripts.map((s) => (

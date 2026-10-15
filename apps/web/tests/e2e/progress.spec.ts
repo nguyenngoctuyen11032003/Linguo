@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { expectNoHorizontalScroll, mockSupabase, pathRow, PROGRESS_PATH_ID, signIn, type ProgressMockOptions } from './fixtures';
+import { expectNoHorizontalScroll, mockSupabase, pathRow, PROGRESS_PATH_ID, settleAnimations, signIn, type ProgressMockOptions } from './fixtures';
 
 const PATH = pathRow({ id: PROGRESS_PATH_ID });
 
@@ -111,7 +111,8 @@ test('opting out of analytics stops sending events', async ({ page }) => {
   const mock = await setup(page, { analyticsOptOut: true });
   await openProgress(page);
   await page.evaluate(() => window.dispatchEvent(new Event('pagehide')));
-  await page.waitForTimeout(300);
+  // pagehide is dispatched synchronously; flush two frames so any (unwanted) async send would have happened.
+  await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
   expect(mock.progress.events()).toEqual([]);
 });
 
@@ -122,6 +123,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
     await openProgress(page);
     await expect(h2(page, 'Động lực')).toBeVisible();
+    await settleAnimations(page);
     const results = await new AxeBuilder({ page }).analyze();
     const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
     expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);

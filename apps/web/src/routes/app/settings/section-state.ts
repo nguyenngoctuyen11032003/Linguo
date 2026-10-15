@@ -7,6 +7,9 @@ const listeners = new Set<() => void>();
 
 export const SECTION_SCROLL_MARGIN = 'scroll-mt-[calc(4.5rem+env(safe-area-inset-top,0px))]';
 
+/** Section h2 that the jump list focuses (tabIndex={-1}): no outline on a pointer jump, a ring on a keyboard one. */
+export const SECTION_HEADING_CLASS = 'rounded-lg text-lg font-bold focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/45';
+
 export function subscribeSections(listener: () => void): () => void {
   listeners.add(listener);
   return () => listeners.delete(listener);
@@ -33,7 +36,11 @@ export function jumpToSection(id: string): void {
     const section = document.getElementById(id);
     if (!section) return;
     section.scrollIntoView?.({ block: 'start' });
-    section.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true });
+    const heading = section.querySelector<HTMLElement>('h2');
+    if (!heading) return;
+    // Headings are not focusable by default: make the target programmatically focusable so focus follows the jump.
+    if (!heading.hasAttribute('tabindex')) heading.tabIndex = -1;
+    heading.focus({ preventScroll: true });
   });
 }
 

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, FileUp, NotebookPen, Pencil, Play, Trash2 } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { LANGUAGES, type PersonalWord } from '@linguo/shared';
@@ -42,11 +42,25 @@ export function PersonalListPage() {
   const renameRef = useRef<HTMLButtonElement>(null);
   const deleteRef = useRef<HTMLButtonElement>(null);
   const rowTrigger = useRef<HTMLElement | null>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  /** Delete buttons by word id, to move focus to a neighbour once a word (and its button) is gone. */
+  const deleteButtons = useRef(new Map<string, HTMLButtonElement>());
+  /** Where focus goes after a word is deleted: a neighbouring word's id, or null for the list heading. */
+  const focusAfterDelete = useRef<{ wordId: string | null } | null>(null);
+
+  // The dialog returns focus to the delete button it was opened from, but that button left with its row.
+  useEffect(() => {
+    const pending = focusAfterDelete.current;
+    if (removing !== null || !pending) return;
+    focusAfterDelete.current = null;
+    const next = pending.wordId ? deleteButtons.current.get(pending.wordId) : undefined;
+    (next ?? headingRef.current)?.focus();
+  }, [removing]);
 
   const back = (
     <Link to="/app/tu-vung-cua-toi" className="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-medium text-muted hover:text-text">
       <ArrowLeft aria-hidden className="size-4" />
-      Tất cả danh sách
+      Từ vựng của tôi
     </Link>
   );
 
@@ -80,7 +94,7 @@ export function PersonalListPage() {
           description="Danh sách này không tồn tại hoặc đã bị xoá."
           action={
             <Link to="/app/tu-vung-cua-toi" className={buttonClasses('accent')}>
-              Về danh sách của tôi
+              Về Từ vựng của tôi
             </Link>
           }
         />
@@ -93,14 +107,18 @@ export function PersonalListPage() {
   const dueCount = list.due_count;
   const items = words.words;
   const visible = items.slice(0, shown);
+  /** The server's count stays right when the words themselves failed to load. */
+  const wordCount = words.status === 'ready' ? items.length : list.word_count;
 
   return (
     <div className="space-y-6">
       {back}
       <div className="space-y-1">
-        <h1 className="break-words text-[28px] font-bold leading-tight tracking-[-0.03em]">{list.name}</h1>
+        <h1 ref={headingRef} tabIndex={-1} className="break-words text-[28px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+          {list.name}
+        </h1>
         <p className="text-[15px] text-muted">
-          {language.nameVi} · {items.length} từ{dueCount > 0 ? ` · ${dueCount} từ cần ôn hôm nay` : ''}
+          {language.nameVi} · {wordCount} từ{dueCount > 0 ? ` · ${dueCount} từ cần ôn hôm nay` : ''}
         </p>
       </div>
 
@@ -199,6 +217,10 @@ export function PersonalListPage() {
                       <Pencil aria-hidden className="size-4" />
                     </button>
                     <button
+                      ref={(el) => {
+                        if (el) deleteButtons.current.set(word.id, el);
+                        else deleteButtons.current.delete(word.id);
+                      }}
                       type="button"
                       aria-label={`Xoá từ ${word.term}`}
                       onClick={(e) => {
@@ -247,7 +269,13 @@ export function PersonalListPage() {
       <ConfirmDeleteDialog
         open={deleting}
         title={`Xoá “${list.name}”?`}
-        description={`Cả ${items.length} từ trong danh sách và lịch ôn của chúng sẽ bị xoá và không khôi phục được.`}
+        description={
+          words.status === 'error'
+            ? 'Danh sách, mọi từ trong đó và lịch ôn của chúng sẽ bị xoá và không khôi phục được.'
+            : wordCount === 0
+              ? 'Danh sách đang trống và sẽ bị xoá, không khôi phục được.'
+              : `Cả ${wordCount} từ trong danh sách và lịch ôn của chúng sẽ bị xoá và không khôi phục được.`
+        }
         confirmLabel="Xoá danh sách"
         triggerRef={deleteRef}
         onClose={() => setDeleting(false)}
@@ -276,7 +304,10 @@ export function PersonalListPage() {
         onClose={() => setRemoving(null)}
         onConfirm={async () => {
           if (!removing) return;
+          const index = visible.findIndex((w) => w.id === removing.id);
+          const neighbour = visible[index + 1] ?? visible[index - 1] ?? null;
           await words.remove(removing.id);
+          focusAfterDelete.current = { wordId: neighbour?.id ?? null };
           lists.reload();
         }}
       />

@@ -137,4 +137,18 @@ describe('OfflineBanner', () => {
     expect(screen.queryByText(/ngoại tuyến/)).not.toBeInTheDocument();
     expect(screen.getByRole('status')).toBeEmptyDOMElement();
   });
+
+  it('keeps a short visible reassurance on narrow phones, at 14 px or more', () => {
+    Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
+    render(<OfflineBanner />);
+    const region = screen.getByRole('status');
+    // Screen readers get the full sentence once; narrow screens show the short line instead (hidden from AT).
+    const full = screen.getByText('Bạn đang ngoại tuyến — tiến độ sẽ được lưu khi có mạng');
+    expect(full).toHaveClass('max-[26rem]:sr-only');
+    const short = screen.getByText('Ngoại tuyến — sẽ tự lưu khi có mạng');
+    expect(short).toHaveAttribute('aria-hidden', 'true');
+    expect(short).toHaveClass('hidden', 'max-[26rem]:inline');
+    expect(region.innerHTML).not.toMatch(/text-\[1[0-3]px\]|text-xs/);
+    expect(region.firstElementChild).toHaveClass('text-sm');
+  });
 });

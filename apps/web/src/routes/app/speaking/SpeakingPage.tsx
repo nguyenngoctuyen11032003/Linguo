@@ -1,5 +1,5 @@
-import { useCallback, useId, useState } from 'react';
-import { Compass, Lock } from 'lucide-react';
+import { useCallback, useEffect, useId, useRef, useState } from 'react';
+import { ArrowRight, Compass, Lock } from 'lucide-react';
 import { Link } from 'react-router';
 import { buttonClasses, Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -16,6 +16,7 @@ import {
 import { isSpeechRecognitionSupported } from '@/features/speaking/useSpeechRecognition';
 import { useSpeakingMaterial } from '@/features/speaking/useSpeakingMaterial';
 import { useTts } from '@/features/speaking/useTts';
+import { ClearReflectionsDialog } from './ClearReflectionsDialog';
 import { ChoiceGroup, FOCUS_RING, SelectField } from './controls';
 import { OpenMode } from './OpenMode';
 import { RepeatMode } from './RepeatMode';
@@ -24,7 +25,8 @@ import { RolePlayMode } from './RolePlayMode';
 const MODES: { id: SpeakingMode; label: string }[] = [
   { id: 'repeat', label: 'Nhắc lại câu' },
   { id: 'open', label: 'Trả lời mở' },
-  { id: 'roleplay', label: 'Đóng vai' },
+  // Scripted, no AI. Not "Đóng vai": that name belongs to the AI conversation feature linked from this page's header.
+  { id: 'roleplay', label: 'Hội thoại mẫu' },
 ];
 
 function PrivacyNote() {
@@ -49,13 +51,25 @@ export function SpeakingPage() {
   const lang = material.lang;
   const tts = useTts(lang ?? 'en');
 
+  const [confirmClear, setConfirmClear] = useState(false);
+  const [cleared, setCleared] = useState(false);
+  const clearButtonRef = useRef<HTMLButtonElement>(null);
+  const clearedRef = useRef<HTMLParagraphElement>(null);
+
   const onSaveReflection = useCallback(
     (ratings: Ratings) => {
       if (!userId || !lang) return;
       setReflections(saveReflection(userId, { at: new Date().toISOString(), mode, lang, ratings }));
+      setCleared(false);
     },
     [userId, lang, mode],
   );
+
+  // The clear button is gone after deleting: keep keyboard focus where it was, on the confirmation that replaces it.
+  // Runs after the dialog's own clean-up, which can no longer return focus to the removed button.
+  useEffect(() => {
+    if (cleared) clearedRef.current?.focus();
+  }, [cleared]);
 
   return (
     <div className="space-y-6">
@@ -64,12 +78,16 @@ export function SpeakingPage() {
         <p className="text-[15px] text-muted">
           Nói to, nghe lại và tự nhận xét. Đây là luyện tập nhẹ nhàng, không có điểm số hay đánh giá trình độ.
         </p>
-        <Link
-          to="/app/dong-vai"
-          className="inline-flex min-h-11 items-center text-[15px] font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
-        >
-          Muốn trò chuyện với đối tác AI? Thử Đóng vai với AI
-        </Link>
+        <p className="flex flex-wrap items-center gap-x-1.5 text-[15px] text-muted">
+          Muốn trò chuyện tự do hơn?
+          <Link
+            to="/app/dong-vai"
+            className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+          >
+            Luyện hội thoại với đối tác AI
+            <ArrowRight aria-hidden className="size-4" />
+          </Link>
+        </p>
       </header>
 
       {material.status === 'loading' && (
@@ -155,17 +173,28 @@ export function SpeakingPage() {
           {userId && reflections.length > 0 && (
             <p className="flex flex-wrap items-center gap-x-3 text-sm text-muted">
               Bạn đã lưu {reflections.length} lần tự đánh giá trên thiết bị này.
-              <Button
-                variant="ghost"
-                onClick={() => {
-                  clearReflections(userId);
-                  setReflections([]);
-                }}
-              >
+              <Button ref={clearButtonRef} variant="ghost" onClick={() => setConfirmClear(true)}>
                 Xoá các tự đánh giá đã lưu
               </Button>
             </p>
           )}
+          {userId && cleared && reflections.length === 0 && (
+            <p ref={clearedRef} tabIndex={-1} className="text-sm text-muted focus:outline-none">
+              Đã xoá các tự đánh giá đã lưu trên thiết bị này.
+            </p>
+          )}
+          <ClearReflectionsDialog
+            open={confirmClear}
+            count={reflections.length}
+            triggerRef={clearButtonRef}
+            onKeep={() => setConfirmClear(false)}
+            onConfirm={() => {
+              if (userId) clearReflections(userId);
+              setReflections([]);
+              setCleared(true);
+              setConfirmClear(false);
+            }}
+          />
         </>
       )}
     </div>

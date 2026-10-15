@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { DEMO_LESSONS, expectNoHorizontalScroll, mockSupabase, pathRow, signIn, type PlannerMockOptions } from './fixtures';
+import { DEMO_LESSONS, expectNoHorizontalScroll, mockSupabase, pathRow, settleAnimations, signIn, type PlannerMockOptions } from './fixtures';
 
 // Spec 6 §5: the session page against mocked RPCs. Returning from a lesson/review to the session is covered with the
 // lesson player and review integration.
@@ -50,7 +50,7 @@ async function setup(page: Page, planner: PlannerMockOptions = {}) {
 
 async function openSessionPage(page: Page) {
   await page.goto('/app/phien-hoc');
-  await expect(page.getByRole('heading', { level: 1, name: 'Phiên học hôm nay' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Phiên học hôm nay' })).toBeVisible({ timeout: 15_000 });
   // Loading waits for the profile, the paths and today's session; every loaded state has an h2. Allow for slow CI.
   await expect(page.getByRole('heading', { level: 2 }).first()).toBeVisible({ timeout: 15_000 });
 }
@@ -58,7 +58,7 @@ async function openSessionPage(page: Page) {
 const titles = (page: Page) => page.getByRole('list', { name: 'Các hoạt động của phiên' }).getByRole('heading', { level: 3 }).allTextContents();
 
 async function expectNoSeriousAxe(page: Page, label: string) {
-  await page.waitForTimeout(400);
+  await settleAnimations(page);
   const results = await new AxeBuilder({ page }).analyze();
   const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
   expect(serious, `${label}: ${JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)}`).toEqual([]);
@@ -75,7 +75,7 @@ test('restores a planned session, reorders it with the keyboard and keeps the or
   const up = page.getByRole('button', { name: `Đưa “${HELLO.title.vi}” lên` });
   await up.focus();
   await page.keyboard.press('Enter');
-  expect(await titles(page)).toEqual([HELLO.title.vi, 'Ôn thẻ đến hạn', I_AM.title.vi, 'Tổng kết']);
+  await expect.poll(() => titles(page)).toEqual([HELLO.title.vi, 'Ôn thẻ đến hạn', I_AM.title.vi, 'Tổng kết']);
   await expect(page.getByText(`“${HELLO.title.vi}”: vị trí 1/4.`)).toBeAttached();
   // First now: the up arrow is disabled and focus stays on the same row.
   await expect(page.getByRole('button', { name: `Đưa “${HELLO.title.vi}” xuống` })).toBeFocused();
@@ -83,7 +83,7 @@ test('restores a planned session, reorders it with the keyboard and keeps the or
 
   await page.reload();
   await expect(page.getByRole('heading', { name: 'Ưu tiên ôn tập: 4 thẻ đến hạn' })).toBeVisible({ timeout: 15_000 });
-  expect(await titles(page)).toEqual([HELLO.title.vi, 'Ôn thẻ đến hạn', I_AM.title.vi, 'Tổng kết']);
+  await expect.poll(() => titles(page)).toEqual([HELLO.title.vi, 'Ôn thẻ đến hạn', I_AM.title.vi, 'Tổng kết']);
 
   await page.getByRole('button', { name: 'Bắt đầu phiên học' }).click();
   const sessionId = String(mock.planner.sessions()[0]?.id);

@@ -13,7 +13,7 @@ Người học bấm "Giải thích AI" trong bài học / thẻ ôn, hoặc dù
 
 - Một function `supabase/functions/ai-tutor` (Deno), `verify_jwt = true`. `index.ts` chỉ nối mạng; logic trong `handler.ts` + `lib/*` nhận phụ thuộc tiêm vào (fetch, đồng hồ, random, sleep, supabase factory) để test.
 - Hợp đồng zod `packages/shared/src/ai/contract.ts` được chép nguyên văn sang `supabase/functions/_shared/ai-contract.ts` bằng `scripts/sync-ai-contract.mjs` (CI `--check`). Deno dùng `npm:zod@4` qua `supabase/functions/deno.json`.
-- Model chỉ đọc từ secret `GEMINI_MODEL`; key `GEMINI_API_KEY`; tuỳ chọn `GEMINI_DAILY_USER_LIMIT=20`, `GEMINI_MAX_OUTPUT_TOKENS=1200`, `GEMINI_TIMEOUT_MS=20000`. Không có giá trị nào trong `VITE_*` hay GitHub repo vars.
+- Model chỉ đọc từ secret `GEMINI_MODEL`; key `GEMINI_API_KEY`; tuỳ chọn `GEMINI_DAILY_USER_LIMIT=20`, `GEMINI_MAX_OUTPUT_TOKENS=2048`, `GEMINI_TIMEOUT_MS=20000`. Không có giá trị nào trong `VITE_*` hay GitHub repo vars.
 
 ## 3. Luồng xử lý một request
 

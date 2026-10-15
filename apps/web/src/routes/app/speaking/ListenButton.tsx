@@ -18,7 +18,7 @@ export function ListenButton({ text, lang, tts, label = 'Nghe mẫu' }: { text: 
   return playing ? (
     <Button variant="ghost" onClick={tts.stop}>
       <Square aria-hidden className="size-4" />
-      Dừng nghe
+      Dừng đọc
     </Button>
   ) : (
     <Button variant="ghost" onClick={() => tts.play(text)}>

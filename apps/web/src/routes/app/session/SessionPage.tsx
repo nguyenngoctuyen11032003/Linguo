@@ -65,15 +65,45 @@ function PathSession() {
    * would undo a change made after it was sent (e.g. bring back an activity skipped during a reorder).
    */
   const [undo, setUndo] = useState<{ itemId: string; title: string } | null>(null);
+  /** Pointer over / focus inside the undo bar: its countdown waits (WCAG 2.2.1 Timing Adjustable). */
+  const [undoHeld, setUndoHeld] = useState({ hover: false, focus: false });
   const requests = useRef<Promise<unknown>>(Promise.resolve());
   const latestRequest = useRef(0);
+  const undoButton = useRef<HTMLButtonElement>(null);
+  const activitiesSection = useRef<HTMLElement>(null);
+  /** Where keyboard focus goes once the pending change has settled (buttons are disabled while saving). */
+  const focusTarget = useRef<{ kind: 'undo' } | { kind: 'row'; id: string } | null>(null);
 
-  // The offer lapses after a few seconds (a later change also clears it).
+  function clearUndo() {
+    setUndo(null);
+    setUndoHeld({ hover: false, focus: false });
+  }
+
+  // The offer lapses a few seconds after the learner leaves it alone (a later change also clears it).
+  const held = undoHeld.hover || undoHeld.focus;
   useEffect(() => {
-    if (!undo) return;
-    const timer = window.setTimeout(() => setUndo(null), UNDO_VISIBLE_MS);
+    if (!undo || held) return;
+    const timer = window.setTimeout(() => {
+      setUndo(null);
+      setUndoHeld({ hover: false, focus: false });
+    }, UNDO_VISIBLE_MS);
     return () => window.clearTimeout(timer);
-  }, [undo]);
+  }, [undo, held]);
+
+  // Move focus after a skip (to "Hoàn tác") or a restore (back to the row), once nothing is disabled any more.
+  useEffect(() => {
+    const target = focusTarget.current;
+    if (!target || saving) return;
+    let el: HTMLElement | null | undefined;
+    if (target.kind === 'undo') el = undoButton.current;
+    else {
+      const row = activitiesSection.current?.querySelector<HTMLElement>(`[data-activity-id="${CSS.escape(target.id)}"]`);
+      el = row?.querySelector<HTMLElement>('[data-row-action]:not(:disabled)') ?? row;
+    }
+    if (!el) return;
+    focusTarget.current = null;
+    el.focus();
+  });
 
   if (paths.status === 'ready' && paths.paths.length === 0) return <Navigate to="/app/bat-dau" replace />;
 
@@ -89,7 +119,7 @@ function PathSession() {
 
   async function mutate(job: () => Promise<StudySession>, success?: (saved: StudySession) => void) {
     if (saving) return;
-    setUndo(null);
+    clearUndo();
     setSaving(true);
     try {
       const request = enqueue(job);
@@ -109,7 +139,7 @@ function PathSession() {
     const moved = activities[index];
     const other = activities[target];
     if (!moved || !other) return;
-    setUndo(null);
+    clearUndo();
     activities[index] = other;
     activities[target] = moved;
     setSession({ ...current, plan: { ...current.plan, activities } });
@@ -128,20 +158,29 @@ function PathSession() {
   }
 
   function skip(current: StudySession, activity: SessionActivity) {
+    if (saving) return;
+    // If the skip fails the row keeps its "Bỏ qua" button: focus returns there instead of falling to <body>.
+    focusTarget.current = { kind: 'row', id: activity.id };
     void mutate(
       () => updateSessionItem(requireSupabase(), current.id, activity.id, 'skipped', 0),
       () => {
-        setAnnouncement(`Đã bỏ qua “${activity.title_vi}”. Bạn có thể bấm Hoàn tác trong vài giây.`);
+        setAnnouncement(`Đã bỏ qua “${activity.title_vi}”. Bạn có thể bấm Hoàn tác, hoặc Học lại ở hoạt động đó.`);
         setUndo({ itemId: activity.id, title: activity.title_vi });
+        focusTarget.current = { kind: 'undo' };
       },
     );
   }
 
-  /** Back to pending through the same serialized queue as every other change. */
-  function undoSkip(current: StudySession, offer: { itemId: string; title: string }) {
+  /**
+   * Back to pending through the same serialized queue as every other change: used by the "Hoàn tác" offer and,
+   * once that has lapsed, by "Học lại" on the skipped row. Focus goes back to the restored row.
+   */
+  function restore(current: StudySession, itemId: string, title: string, fromUndo: boolean) {
+    if (saving) return;
+    focusTarget.current = { kind: 'row', id: itemId };
     void mutate(
-      () => updateSessionItem(requireSupabase(), current.id, offer.itemId, 'pending', 0),
-      () => setAnnouncement(`Đã hoàn tác: “${offer.title}” cần học lại.`),
+      () => updateSessionItem(requireSupabase(), current.id, itemId, 'pending', 0),
+      () => setAnnouncement(fromUndo ? `Đã hoàn tác: “${title}” cần học lại.` : `Đã đưa “${title}” trở lại danh sách cần học.`),
     );
   }
 
@@ -288,17 +327,27 @@ function PathSession() {
           </SolidCard>
         )}
 
-        <section aria-labelledby="session-activities-title" className="space-y-3">
+        <section ref={activitiesSection} aria-labelledby="session-activities-title" className="space-y-3">
           <h2 id="session-activities-title" className="text-lg font-bold">
             Các hoạt động
           </h2>
           {undo && (
-            <div className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-surface-solid p-3 pl-4">
+            <div
+              data-testid="undo-bar"
+              className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-surface-solid p-3 pl-4"
+              onMouseEnter={() => setUndoHeld((h) => ({ ...h, hover: true }))}
+              onMouseLeave={() => setUndoHeld((h) => ({ ...h, hover: false }))}
+              onFocus={() => setUndoHeld((h) => ({ ...h, focus: true }))}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setUndoHeld((h) => ({ ...h, focus: false }));
+              }}
+            >
               <p className="min-w-0 text-[15px] break-words">Đã bỏ qua “{undo.title}”.</p>
               <button
+                ref={undoButton}
                 type="button"
                 disabled={saving}
-                onClick={() => undoSkip(session, undo)}
+                onClick={() => restore(session, undo.itemId, undo.title, true)}
                 className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border border-border px-4 text-[15px] font-semibold text-text transition-colors not-disabled:hover:bg-text/5 disabled:cursor-not-allowed disabled:border-transparent disabled:bg-surface-solid disabled:text-muted disabled:outline-2 disabled:-outline-offset-2 disabled:outline-dashed disabled:outline-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
               >
                 <Undo2 aria-hidden className="size-4" />
@@ -311,6 +360,7 @@ function PathSession() {
             busy={saving}
             onMove={(index, direction) => move(session, index, direction)}
             onSkip={(activity) => skip(session, activity)}
+            onRestore={(activity) => restore(session, activity.id, activity.title_vi, false)}
           />
         </section>
       </div>

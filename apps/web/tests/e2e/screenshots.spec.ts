@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { mockSupabase, signIn } from './fixtures';
+import { mockSupabase, settleAnimations, signIn } from './fixtures';
 
 /** Attached to the HTML report for human review (no pixel diffing: Windows/Linux baselines differ). */
 for (const colorScheme of ['light', 'dark'] as const) {
@@ -13,7 +13,8 @@ for (const colorScheme of ['light', 'dark'] as const) {
       ['sign-in', '/dang-nhap'],
     ] as const) {
       await page.goto(path);
-      await page.waitForTimeout(800);
+      await expect(page.getByRole('heading', { level: 1 }).first()).toBeVisible({ timeout: 15_000 });
+      await settleAnimations(page);
       await testInfo.attach(`${name}-${colorScheme}`, { body: await page.screenshot({ fullPage: true }), contentType: 'image/png' });
     }
     await signIn(page);

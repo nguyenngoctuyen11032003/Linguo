@@ -43,6 +43,7 @@ const ROUTE_NAMES: ReadonlyArray<readonly [pattern: string, name: string | null]
   ['/quan-tri/nguon', 'Quản trị — Nguồn và giấy phép'],
   ['/quan-tri/thong-ke', 'Quản trị — Thống kê'],
   ['/quan-tri/nhat-ky', 'Quản trị — Nhật ký'],
+  ['/quan-tri/nhan-su', 'Quản trị — Nhân sự'],
 ];
 
 /** The page name for a pathname, or `null` for the landing page. Unknown paths are the 404 page. */
