@@ -1,6 +1,7 @@
-import { ArrowRight, BookOpen, Check, ChevronRight, CircleDot, Clock, Compass, Lock, PartyPopper } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowRight, BookOpen, Check, ChevronDown, ChevronRight, CircleDot, Clock, Compass, PartyPopper, Route } from 'lucide-react';
 import { Link } from 'react-router';
-import type { PathLesson, RunStatus } from '@linguo/shared';
+import { LANGUAGES, LEVEL_INFO, type LevelCode, type PathLesson, type RunStatus } from '@linguo/shared';
 import { DemoBadge } from '@/components/exercise';
 import { buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -9,12 +10,13 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { cn } from '@/lib/cn';
-import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson } from './grouping';
+import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson, type UnitGroup } from './grouping';
+import { readUnitOpen, writeUnitOpen, type UnitOpenState } from './unit-open';
 
 const STATUS: Record<RunStatus, { label: string; className: string }> = {
   not_started: { label: 'Chưa học', className: 'bg-text/8 text-muted' },
   in_progress: { label: 'Đang học', className: 'bg-primary/12 text-primary' },
-  completed: { label: 'Đã xong', className: 'bg-success/15 text-success-text' },
+  completed: { label: 'Đã học', className: 'bg-success/15 text-success-text' },
 };
 
 function LoadingList() {
@@ -78,7 +80,7 @@ function LessonRow({ lesson, lessons, nextId }: { lesson: PathLesson; lessons: P
         </span>
         {!lesson.prerequisites_met && (
           <span className="flex items-start gap-1.5 text-sm text-muted">
-            <Lock aria-hidden className="mt-0.5 size-3.5 shrink-0" />
+            <Route aria-hidden className="mt-0.5 size-3.5 shrink-0" />
             {prerequisites.length > 0 ? `Nên học trước: ${prerequisites.join(', ')}` : 'Nên học các bài trước đó trước'}
           </span>
         )}
@@ -88,10 +90,96 @@ function LessonRow({ lesson, lessons, nextId }: { lesson: PathLesson; lessons: P
   );
 }
 
+const levelName = (code: string) => LEVEL_INFO[code as LevelCode]?.label ?? code;
+
+/** Compact "which path am I on" line: language, current level → target level. */
+function PathHeader({ language, current, target }: { language: string; current: string; target: string }) {
+  const name = LANGUAGES[language as keyof typeof LANGUAGES]?.nameVi ?? language;
+  return (
+    <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] text-muted">
+      <span className="font-semibold text-text">{name}</span>
+      <span aria-hidden>·</span>
+      {current === target ? (
+        <span>Trình độ {levelName(current)}</span>
+      ) : (
+        <>
+          <span aria-hidden>
+            {levelName(current)} → {levelName(target)}
+          </span>
+          <span className="sr-only">
+            trình độ hiện tại {levelName(current)}, mục tiêu {levelName(target)}
+          </span>
+        </>
+      )}
+    </p>
+  );
+}
+
+/**
+ * One unit as a native disclosure: the summary keeps the title and progress visible while collapsed and
+ * the lesson list sits below. Opening/closing is reported up so the page can remember it for the tab.
+ */
+function UnitSection({
+  unit,
+  lessons,
+  nextId,
+  open,
+  onToggle,
+}: {
+  unit: UnitGroup;
+  lessons: PathLesson[];
+  nextId: string | null;
+  open: boolean;
+  onToggle: (open: boolean) => void;
+}) {
+  const done = learnedCount(unit.lessons);
+  const complete = done === unit.lessons.length;
+  return (
+    <section aria-labelledby={`unit-${unit.id}`}>
+      <details
+        open={open}
+        onToggle={(event) => {
+          const now = event.currentTarget.open;
+          if (now !== open) onToggle(now);
+        }}
+        className="group"
+      >
+        <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 rounded-2xl py-1 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45 [&::-webkit-details-marker]:hidden">
+          <span className="min-w-0 flex-1 space-y-2">
+            <span className="flex items-center gap-1.5">
+              {complete && <Check aria-hidden className="size-4 shrink-0 text-success-text" />}
+              <h3 id={`unit-${unit.id}`} className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {unit.title}
+              </h3>
+            </span>
+            <ProgressSummary label={`Tiến độ ${unit.title}`} done={done} total={unit.lessons.length} />
+          </span>
+          <ChevronDown aria-hidden className="size-5 shrink-0 text-muted transition-transform group-open:rotate-180" />
+        </summary>
+        <ul className="mt-2 space-y-2">
+          {unit.lessons.map((lesson) => (
+            <li key={lesson.lesson_id}>
+              <LessonRow lesson={lesson} lessons={lessons} nextId={nextId} />
+            </li>
+          ))}
+        </ul>
+      </details>
+    </section>
+  );
+}
+
 /** /app/hoc-tap: programs → units → lessons of the current learning path. */
 export function LearnPage() {
   const paths = useLearningPaths();
   const { status, lessons, error, reload } = usePathLessons();
+  // Units the learner opened/closed in this tab; the others follow the default (open = holds the recommended lesson).
+  const [openUnits, setOpenUnits] = useState<UnitOpenState>(readUnitOpen);
+  const toggleUnit = (id: string, open: boolean) =>
+    setOpenUnits((prev) => {
+      const next = { ...prev, [id]: open };
+      writeUnitOpen(next);
+      return next;
+    });
 
   const next = pickNextLesson(lessons);
   let content;
@@ -132,7 +220,9 @@ export function LearnPage() {
             to={`/app/hoc-tap/bai/${next.lesson_id}`}
             className={cn(buttonClasses('accent'), 'h-auto min-h-12 w-full justify-between gap-3 py-3 text-left')}
           >
-            <span className="min-w-0 break-words">Học tiếp: {next.title.vi}</span>
+            <span className="min-w-0 break-words">
+              {next.run_status === 'in_progress' ? 'Học tiếp' : 'Bắt đầu'}: {next.title.vi}
+            </span>
             <ArrowRight aria-hidden className="size-5 shrink-0" />
           </Link>
         ) : (
@@ -155,19 +245,14 @@ export function LearnPage() {
               total={program.units.reduce((n, u) => n + u.lessons.length, 0)}
             />
             {program.units.map((unit) => (
-              <section key={unit.id} aria-labelledby={`unit-${unit.id}`} className="space-y-2">
-                <h3 id={`unit-${unit.id}`} className="text-sm font-semibold uppercase tracking-wide text-muted">
-                  {unit.title}
-                </h3>
-                <ProgressSummary label={`Tiến độ ${unit.title}`} done={learnedCount(unit.lessons)} total={unit.lessons.length} />
-                <ul className="space-y-2">
-                  {unit.lessons.map((lesson) => (
-                    <li key={lesson.lesson_id}>
-                      <LessonRow lesson={lesson} lessons={lessons} nextId={next?.lesson_id ?? null} />
-                    </li>
-                  ))}
-                </ul>
-              </section>
+              <UnitSection
+                key={unit.id}
+                unit={unit}
+                lessons={lessons}
+                nextId={next?.lesson_id ?? null}
+                open={openUnits[unit.id] ?? next?.unit_id === unit.id}
+                onToggle={(open) => toggleUnit(unit.id, open)}
+              />
             ))}
           </section>
         ))}
@@ -177,7 +262,12 @@ export function LearnPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Học tập</h1>
+      <div className="space-y-1">
+        <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Học tập</h1>
+        {paths.current && (
+          <PathHeader language={paths.current.language} current={paths.current.currentLevel} target={paths.current.targetLevel} />
+        )}
+      </div>
       {content}
     </div>
   );

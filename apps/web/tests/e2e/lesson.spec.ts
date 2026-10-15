@@ -126,7 +126,7 @@ test('a learner finds the English lesson on Learn and finishes it', async ({ pag
   await runWholeLesson(page, DEMO_LESSONS.enHello);
 
   await page.goto('/app/hoc-tap');
-  await expect(lessonLink(page, DEMO_LESSONS.enHello.id)).toContainText('Đã xong');
+  await expect(lessonLink(page, DEMO_LESSONS.enHello.id)).toContainText('Đã học');
   await expect(lessonLink(page, DEMO_LESSONS.enIAm.id)).not.toContainText('Nên học trước');
 });
 
