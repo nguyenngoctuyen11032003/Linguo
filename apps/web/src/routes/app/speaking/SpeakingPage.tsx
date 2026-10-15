@@ -3,6 +3,7 @@ import { ArrowRight, Compass, Lock } from 'lucide-react';
 import { Link } from 'react-router';
 import { buttonClasses, Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useAuth } from '@/features/auth/AuthProvider';
@@ -97,6 +98,8 @@ export function SpeakingPage() {
           <Skeleton className="block h-64 w-full rounded-3xl" />
         </div>
       )}
+
+      {material.status === 'error' && <ErrorState title="Không tải được lộ trình" onRetry={material.reload} />}
 
       {material.status === 'ready' && !lang && (
         <EmptyState

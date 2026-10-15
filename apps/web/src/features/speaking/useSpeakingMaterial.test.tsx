@@ -14,7 +14,7 @@ vi.mock('@/lib/supabase', () => ({ getSupabase: () => mocks.client, requireSupab
 const SECOND = '20000000-0000-4000-8000-000000000002';
 const THIRD = '20000000-0000-4000-8000-000000000003';
 
-function paths(language: 'en' | 'ko' = 'en'): LearningPathsContextValue {
+function paths(language: 'en' | 'ko' = 'en', over: Partial<LearningPathsContextValue> = {}): LearningPathsContextValue {
   return {
     status: 'ready',
     error: null,
@@ -24,12 +24,13 @@ function paths(language: 'en' | 'ko' = 'en'): LearningPathsContextValue {
     reload: vi.fn(),
     setCurrent: vi.fn(),
     upsertPath: vi.fn(),
+    ...over,
   };
 }
 
-function render(language: 'en' | 'ko' = 'en') {
+function render(language: 'en' | 'ko' = 'en', over: Partial<LearningPathsContextValue> = {}) {
   const Wrapper = ({ children }: { children: ReactNode }) => (
-    <LearningPathsContext.Provider value={paths(language)}>{children}</LearningPathsContext.Provider>
+    <LearningPathsContext.Provider value={paths(language, over)}>{children}</LearningPathsContext.Provider>
   );
   return renderHook(() => useSpeakingMaterial(), { wrapper: Wrapper });
 }
@@ -97,5 +98,23 @@ describe('useSpeakingMaterial', () => {
     await waitFor(() => expect(result.current.status).toBe('ready'));
     expect(result.current).toMatchObject({ usingFallback: true, lessonId: null, lessonTitle: null });
     expect(result.current.sentences).toEqual(FALLBACK_SENTENCES.en);
+  });
+
+  it('reports an error with reload when the paths could not be loaded', () => {
+    const reload = vi.fn();
+    mocks.client = fakeClient({}, {});
+    const { result } = render('en', { status: 'error', current: null, currentId: null, reload });
+    expect(result.current.status).toBe('error');
+    expect(result.current.lang).toBeNull();
+    result.current.reload();
+    expect(reload).toHaveBeenCalled();
+  });
+
+  it('does not wait forever for lessons of a path in a language without speaking practice', async () => {
+    mocks.client = fakeClient({}, { path_lessons: { data: lessonsRpc }, get_lesson: { data: payload() } });
+    const other = { id: PATH_ID, language: 'xx' } as unknown as LearningPath;
+    const { result } = render('en', { current: other });
+    await waitFor(() => expect(result.current.status).toBe('ready'));
+    expect(result.current.lang).toBeNull();
   });
 });

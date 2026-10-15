@@ -23,6 +23,7 @@ const LESSON_SENTENCES = [
 function material(overrides: Partial<SpeakingMaterial> = {}): SpeakingMaterial {
   return {
     status: 'ready',
+    reload: vi.fn(),
     lang: 'en',
     lessons: [],
     lessonId: null,
@@ -379,5 +380,15 @@ describe('SpeakingPage', () => {
     render();
     expect(screen.getByRole('link', { name: 'Tạo lộ trình' })).toHaveAttribute('href', '/app/bat-dau');
     await waitFor(() => expect(screen.queryByText('Nhắc lại câu')).toBeNull());
+  });
+
+  it('shows a retryable error, not the "no path" empty state, when the paths could not be loaded', async () => {
+    const reload = vi.fn();
+    mocks.material = material({ status: 'error', reload, lang: null, sentences: [] });
+    render();
+    expect(screen.getByRole('alert')).toHaveTextContent('Không tải được lộ trình');
+    expect(screen.queryByRole('link', { name: 'Tạo lộ trình' })).toBeNull();
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Thử lại' }));
+    expect(reload).toHaveBeenCalled();
   });
 });

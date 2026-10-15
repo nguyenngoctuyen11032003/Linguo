@@ -11,7 +11,10 @@ import type { SpeakingLanguage } from './ratings';
 export const LESSON_CHOICES_MAX = 30;
 
 export interface SpeakingMaterial {
-  status: 'loading' | 'ready';
+  /** 'error': the learning paths could not be loaded, so it is unknown whether the learner has one. */
+  status: 'loading' | 'ready' | 'error';
+  /** Loads the learning paths again (after 'error'). */
+  reload: () => void;
   /** Language of the current learning path; null until a path is known. */
   lang: SpeakingLanguage | null;
   lessons: PathLesson[];
@@ -46,7 +49,7 @@ export function defaultLessonId(choices: PathLesson[]): string | null {
  * (path_lessons + get_lesson; no new RPC, nothing is started or saved).
  */
 export function useSpeakingMaterial(): SpeakingMaterial {
-  const { current, currentId, status: pathsStatus } = useLearningPaths();
+  const { current, currentId, status: pathsStatus, reload } = useLearningPaths();
   const { status: lessonsStatus, lessons } = usePathLessons();
   const lang = isSpeakingLanguage(current?.language) ? current.language : null;
   const choices = useMemo(() => lessonChoices(lessons), [lessons]);
@@ -77,12 +80,18 @@ export function useSpeakingMaterial(): SpeakingMaterial {
   const selectLesson = useCallback((id: string) => setPicked({ pathId: currentId, lessonId: id }), [currentId]);
 
   const lessonReady = loaded !== null && loaded.pathId === currentId && loaded.lessonId === lessonId;
-  const waitingForLesson = lessonId !== null && !lessonReady;
-  const status = pathsStatus === 'loading' || (currentId !== null && lessonsStatus === 'loading' && lessons.length === 0) || waitingForLesson ? 'loading' : 'ready';
+  // Lessons are only read for a speaking language: without one there is nothing to wait for (else: endless skeleton).
+  const waitingForLesson = lang !== null && lessonId !== null && !lessonReady;
+  const status: SpeakingMaterial['status'] =
+    pathsStatus === 'error' && !current
+      ? 'error'
+      : pathsStatus === 'loading' || (currentId !== null && lessonsStatus === 'loading' && lessons.length === 0) || waitingForLesson
+        ? 'loading'
+        : 'ready';
   const fromLesson = lessonReady ? loaded.sentences : [];
   const usingFallback = fromLesson.length === 0;
   const sentences = usingFallback ? (lang ? FALLBACK_SENTENCES[lang] : []) : fromLesson;
   const lesson = choices.find((l) => l.lesson_id === lessonId);
 
-  return { status, lang, lessons: choices, lessonId, lessonTitle: lesson?.title.vi ?? null, selectLesson, sentences, usingFallback };
+  return { status, reload, lang, lessons: choices, lessonId, lessonTitle: lesson?.title.vi ?? null, selectLesson, sentences, usingFallback };
 }
