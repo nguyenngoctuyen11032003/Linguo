@@ -213,6 +213,44 @@ Giảm thiểu mà không tắt hẳn: hạ `GEMINI_DAILY_USER_LIMIT` (mục 6).
 - **Deploy** khi nghi một bản đang lỗi: Actions → Deploy → **Disable workflow** (như mục 2 bước 2), rồi rollback theo mục 3 và 4.
 - **Một nội dung sai** đang hiển thị cho người học: admin chuyển nó về `in_review` hoặc `archived` ở `/quan-tri/noi-dung` (có hiệu lực ngay, không cần deploy); sửa YAML trong repo sau đó. Lưu ý lần **Publish content** kế tiếp không hạ trạng thái của dòng có nội dung không đổi, nhưng nội dung đã sửa nhận trạng thái ghi trong YAML.
 
+## Kiểm tra sau deploy (smoke)
+
+Deploy xanh chưa chắc site đang chạy đúng (sai base path, thiếu env lúc build, service worker/manifest hỏng, Edge Function chưa deploy). Workflow **Smoke** (`.github/workflows/smoke.yml`, script `scripts/smoke.mjs`) gọi site và Supabase thật sau mỗi lần Deploy thành công trên `main`, hằng ngày lúc 02:30 UTC và khi bấm **Run workflow**. Chỉ đọc: không gọi gì tốn lượt AI, không gửi thông báo, không in dữ liệu người dùng hay nội dung phản hồi.
+
+**Biến cần có** (repository variables, giá trị công khai, không cần secret; job không gắn environment `production` nên không chờ duyệt):
+
+| Biến | Bắt buộc | Ghi chú |
+|---|---|---|
+| `VITE_SUPABASE_URL` | Có | cùng biến dùng để build web |
+| `VITE_SUPABASE_PUBLISHABLE_KEY` | Có | cùng biến dùng để build web |
+| `VITE_SITE_URL` | Không | mặc định `https://<owner viết thường>.github.io/<tên repo>`; đặt nếu dùng tên miền riêng |
+
+Thiếu `VITE_SUPABASE_URL` hoặc `VITE_SUPABASE_PUBLISHABLE_KEY` ở cấp repo thì run in `::warning::` rồi kết thúc xanh (không kiểm tra gì). Nếu hai biến này mới chỉ nằm trong environment `production`, hãy thêm cùng tên ở **Settings → Secrets and variables → Actions → Variables → Repository variables**.
+
+**Chạy tay:**
+
+```bash
+SITE_URL=https://<owner>.github.io/<repo> SUPABASE_URL=https://<ref>.supabase.co \
+SUPABASE_PUBLISHABLE_KEY=sb_publishable_... node scripts/smoke.mjs        # thêm --json cho máy đọc
+```
+
+Mỗi kiểm tra in một dòng `PASS`/`FAIL` rồi một dòng tổng kết; exit 1 nếu có lỗi, 2 nếu thiếu biến.
+
+| Kiểm tra | Fail nghĩa là |
+|---|---|
+| `page:/` | `/` không 200 hoặc HTML thiếu `#root`, CSP meta (`script-src 'self'`, không `unsafe-inline`/`unsafe-eval`), `<meta name="referrer">`, module script: sai base path hoặc build lỗi/thiếu `VITE_SUPABASE_URL` |
+| `deeplink:/dang-nhap`, `deeplink:/app` | GitHub Pages trả `404.html` (status 404) cho route SPA; script chấp nhận 200 hoặc 404 miễn body là app shell. Fail: `404.html` không phải bản sao `index.html` |
+| `assets` | một script/modulepreload/CSS cùng origin trong `index.html` không 200, rỗng hoặc sai content-type: deploy dở dang hoặc cache cũ |
+| `manifest` | `manifest.webmanifest` không phải JSON hợp lệ, thiếu `name`/`start_url`/`icons`, `start_url` ngoài scope hoặc icon không tải được |
+| `sw.js` | không 200, không phải JavaScript hoặc là HTML (SPA fallback): PWA offline hỏng |
+| `bundle-secrets` | JS phục vụ có secret (cùng luật với `pnpm check:bundle`) hoặc có source map: xoay key (mục 5) rồi deploy lại |
+| `supabase:auth-health` | `/auth/v1/health` không 200: project tạm dừng, sai `VITE_SUPABASE_URL` hoặc key |
+| `supabase:function:ai-tutor`, `…:notify-dispatch` | `OPTIONS` trả 404 hoặc 5xx: Edge Function chưa deploy (Actions → Deploy → Run workflow với `functions = true`) |
+| `supabase:rpc-anon` | RPC `export_my_data` gọi ẩn danh không bị 401/403: `revoke … from anon` bị mất, xem migration |
+| `supabase:table-anon` | `profiles` đọc ẩn danh trả dòng: RLS hoặc grant bị gỡ. Coi là sự cố bảo mật |
+
+**Tắt lịch:** Actions → **Smoke** → menu `…` → **Disable workflow** (tắt luôn lần chạy sau Deploy), hoặc xoá khối `schedule:` trong `smoke.yml`. Lỗi mạng tạm thời được thử lại 2 lần; run đỏ do GitHub Pages chưa kịp cập nhật thì chạy lại bằng **Run workflow**.
+
 ## Nhật ký diễn tập
 
 | Ngày | Việc | Kết quả |

@@ -128,6 +128,7 @@ Hành vi:
    - Một lần push đổi cả migration lẫn Edge Functions sẽ hỏi duyệt **ba lần** (`migrate`, rồi `functions` và `build`, cùng environment `production`).
    - Job `changes` so sánh với commit của lần Deploy **thành công** gần nhất trên `main` (không phải commit trước của lần push), nên migration trong một lần push thất bại/bị thay thế vẫn được áp ở lần sau.
 3. Site: `https://nguyenngoctuyen11032003.github.io/Linguo/`.
+   - Sau khi Deploy thành công, workflow **Smoke** tự kiểm tra site và Supabase thật (cũng chạy hằng ngày 02:30 UTC). Cần repository variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` (và tuỳ chọn `VITE_SITE_URL`); thiếu thì bỏ qua kèm cảnh báo. Chi tiết: `docs/RUNBOOK.md` → *Kiểm tra sau deploy (smoke)*.
 
 ## Xuất bản nội dung
 Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nhập nội dung vào database hosted; việc này chạy tay qua workflow riêng.
