@@ -9,7 +9,7 @@ import { buildSessionSummaryRequest } from './session-summary';
 
 interface Props {
   session: StudySession;
-  learner: { language: 'en' | 'ko'; level: string };
+  learner: { language: 'en' | 'ko' | 'ja'; level: string };
 }
 
 /** What the learner still reads when the AI cannot write the recap: the same numbers, no AI. */

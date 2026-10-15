@@ -14,7 +14,7 @@ import { EXAM_BUNDLE_VERSION, EXAM_FAMILIES, EXAM_QUESTION_KINDS, EXAM_SECTIONS,
 // - `prompt` is the public part (never `script`, answers or rubric); the private columns
 //   (answer, explanation, script, rubric, sample_answer) go to content_private.exam_keys.
 
-const textLang = z.enum(['en', 'ko', 'vi']);
+const textLang = z.enum(['en', 'ko', 'ja', 'vi']);
 const hash = z.string().regex(/^[0-9a-f]{64}$/);
 
 export const examBundleQuestionSchema = z.strictObject({

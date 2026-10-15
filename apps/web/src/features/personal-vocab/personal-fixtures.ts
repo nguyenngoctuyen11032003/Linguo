@@ -40,7 +40,7 @@ export function personalWord(overrides: Partial<PersonalWord> = {}): PersonalWor
 
 const preview = (interval_minutes: number) => ({ interval_minutes, due_at: '2026-10-14T00:00:00Z' });
 
-export function personalCard(word: PersonalWord, language: 'en' | 'ko' = 'ko'): ReviewCard {
+export function personalCard(word: PersonalWord, language: 'en' | 'ko' | 'ja' = 'ko'): ReviewCard {
   return {
     card_id: word.id,
     item_id: word.id,

@@ -403,3 +403,43 @@ Deno.test('review_writing.validate', () => {
   assert(v(goodWriting).ok, 'rubric checks need the request');
   assertFalse(v(null).ok);
 });
+
+// Japanese (ja): requests validate with JLPT levels and outputs must be written in kana/kanji, like Hangul for ko.
+const explainJa = req({ task: 'explain_concept', language: 'ja', level: 'n5', concept: 'は và が khác nhau thế nào?' });
+const practiceJa = req({ task: 'generate_practice', language: 'ja', level: 'n4', skill: 'vocabulary', focus: 'đồ ăn' });
+const analyzeJa = req({
+  task: 'analyze_error',
+  language: 'ja',
+  level: 'n5',
+  prompt: 'Dịch: Tôi là học sinh.',
+  expected: '私は学生です。',
+  answer: '私が学生です',
+});
+
+Deno.test('ja requests: JLPT levels only, Japanese header', () => {
+  assert(aiRequestSchema.safeParse({ task: 'explain_concept', language: 'ja', level: 'n1', concept: 'keigo' }).success);
+  assertFalse(aiRequestSchema.safeParse({ task: 'explain_concept', language: 'ja', level: 'n6', concept: 'keigo' }).success);
+  const user = PROMPTS.explain_concept.buildUser(explainJa, { lessonContext: null });
+  assertStringIncludes(user, 'Ngôn ngữ đích: tiếng Nhật');
+  assertStringIncludes(user, 'JLPT N5');
+});
+
+Deno.test('ja outputs must contain kana or kanji', () => {
+  const ex = PROMPTS.explain_concept.validate;
+  const goodJa = { ...goodExplainKo, explanation_md: '**は** đánh dấu chủ đề...', examples: [{ target: '私は学生です。', vi: 'Tôi là học sinh.' }] };
+  assert(ex(goodJa, explainJa).ok);
+  const romaji = { ...goodJa, examples: [{ target: 'watashi wa gakusei desu', vi: 'Tôi là học sinh.' }] };
+  const res = ex(romaji, explainJa);
+  assertFalse(res.ok, 'ja examples must contain kana or kanji');
+  if (!res.ok) assertStringIncludes(res.error, 'Japanese');
+
+  const gp = PROMPTS.generate_practice.validate;
+  assertFalse(gp(goodPractice, practiceJa).ok, 'ja practice must contain Japanese');
+  const jaItem = { question: 'Từ nào nghĩa là "cơm"?', options: ['ごはん', 'みず', 'パン'], answer: 'ごはん', explanation_vi: 'ごはん là cơm.' };
+  assert(gp({ items: [jaItem] }, practiceJa).ok);
+
+  const ae = PROMPTS.analyze_error.validate;
+  const good = { verdict: 'minor_issue', error_type: 'trợ từ', explanation_md: 'Dùng は.', corrected: '私は学生です。', tip_vi: null };
+  assert(ae(good, analyzeJa).ok);
+  assertFalse(ae({ ...good, corrected: 'watashi wa gakusei desu' }, analyzeJa).ok, 'ja corrected needs kana or kanji');
+});

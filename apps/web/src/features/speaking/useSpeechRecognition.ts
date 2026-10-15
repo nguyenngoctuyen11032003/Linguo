@@ -30,7 +30,7 @@ interface Recognition {
 }
 type RecognitionCtor = new () => Recognition;
 
-const LOCALES: Record<SpeakingLanguage, string> = { en: 'en-US', ko: 'ko-KR' };
+const LOCALES: Record<SpeakingLanguage, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP' };
 
 function recognitionCtor(): RecognitionCtor | null {
   if (typeof window === 'undefined') return null;

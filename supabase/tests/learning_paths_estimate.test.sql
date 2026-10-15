@@ -2,7 +2,7 @@
 -- Do not edit by hand: run `pnpm fixtures:sync`.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(27);
+select plan(36);
 select is((select count(*)::int from public.level_reference_hours where language_code = 'en'), 7, 'reference hours: en has 7 levels');
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'en' and level_code = 'pre_a1'), array[0, 0], 'reference hours: en/pre_a1');
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'en' and level_code = 'a1'), array[1, 90], 'reference hours: en/a1');
@@ -19,6 +19,13 @@ select is((select array[ordinal::int, cumulative_hours] from public.level_refere
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ko' and level_code = 'topik4'), array[4, 1000], 'reference hours: ko/topik4');
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ko' and level_code = 'topik5'), array[5, 1500], 'reference hours: ko/topik5');
 select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ko' and level_code = 'topik6'), array[6, 2200], 'reference hours: ko/topik6');
+select is((select count(*)::int from public.level_reference_hours where language_code = 'ja'), 6, 'reference hours: ja has 6 levels');
+select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ja' and level_code = 'kana'), array[0, 0], 'reference hours: ja/kana');
+select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ja' and level_code = 'n5'), array[1, 150], 'reference hours: ja/n5');
+select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ja' and level_code = 'n4'), array[2, 350], 'reference hours: ja/n4');
+select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ja' and level_code = 'n3'), array[3, 700], 'reference hours: ja/n3');
+select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ja' and level_code = 'n2'), array[4, 1300], 'reference hours: ja/n2');
+select is((select array[ordinal::int, cumulative_hours] from public.level_reference_hours where language_code = 'ja' and level_code = 'n1'), array[5, 2200], 'reference hours: ja/n1');
 select is(public.estimate_learning_path('en', 'a2', 'b1', array[30, 30, 30, 30, 30, 30, 30]::smallint[], null, date '2026-10-13') - 'assumptions', '{"hours_needed":185,"weeks_min":43,"weeks_mid":53,"weeks_max":69,"feasibility":"no_deadline","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en a2 to b1, 30 min every day, no deadline');
 select is(public.estimate_learning_path('en', 'pre_a1', 'c2', array[120, 120, 120, 120, 120, 0, 0]::smallint[], null, date '2026-10-13') - 'assumptions', '{"hours_needed":1100,"weeks_min":88,"weeks_mid":110,"weeks_max":143,"feasibility":"no_deadline","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en pre_a1 to c2, 120 min on weekdays, no deadline');
 select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2027-07-13', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"feasible","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en b1 to b2, 60 min every day, feasible deadline');
@@ -30,5 +37,7 @@ select is(public.estimate_learning_path('en', 'a1', 'a2', array[30, 30, 30, 30, 
 select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2027-07-06', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"feasible","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en b1 to b2, 60 min every day, deadline exactly at weeksMax is feasible');
 select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2027-05-04', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"tight","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: en b1 to b2, 60 min every day, deadline exactly at weeksMid is tight');
 select is(public.estimate_learning_path('en', 'b1', 'b2', array[60, 60, 60, 60, 60, 60, 60]::smallint[], date '2026-10-01', date '2026-10-13') - 'assumptions', '{"hours_needed":200,"weeks_min":24,"weeks_mid":29,"weeks_max":38,"feasibility":"needs_more_time","suggested_minutes_per_day":720,"suggested_date":"2027-05-04"}'::jsonb, 'estimate: en b1 to b2, 60 min every day, deadline in the past needs more time');
+select is(public.estimate_learning_path('ja', 'kana', 'n4', array[30, 30, 30, 30, 30, 30, 30]::smallint[], null, date '2026-10-13') - 'assumptions', '{"hours_needed":350,"weeks_min":80,"weeks_mid":100,"weeks_max":130,"feasibility":"no_deadline","suggested_minutes_per_day":null,"suggested_date":null}'::jsonb, 'estimate: ja kana to n4, 30 min every day, no deadline');
+select is(public.estimate_learning_path('ja', 'n3', 'n2', array[60, 60, 60, 60, 60, 0, 0]::smallint[], date '2027-10-12', date '2026-10-13') - 'assumptions', '{"hours_needed":600,"weeks_min":96,"weeks_mid":120,"weeks_max":156,"feasibility":"needs_more_time","suggested_minutes_per_day":139,"suggested_date":"2029-01-30"}'::jsonb, 'estimate: ja n3 to n2, 60 min on weekdays, deadline too close needs more time');
 select * from finish();
 rollback;

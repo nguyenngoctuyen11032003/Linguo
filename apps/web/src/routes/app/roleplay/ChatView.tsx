@@ -21,7 +21,8 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 import { LeaveRoleplayDialog } from './LeaveRoleplayDialog';
 
 const MESSAGE_MAX = 300;
-const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn' } as const;
+const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' } as const;
+const REPLY_PLACEHOLDER = { en: 'Type your reply in English…', ko: 'Gõ câu trả lời bằng tiếng Hàn…', ja: 'Gõ câu trả lời bằng tiếng Nhật…' } as const;
 
 export const ROLEPLAY_AI_NOTE =
   'Đối tác là AI nên có thể nói sai hoặc chưa tự nhiên. Đừng nhập thông tin cá nhân thật như số điện thoại, địa chỉ hay mật khẩu.';
@@ -45,7 +46,7 @@ function GoalChecklist({ scenario, reached }: { scenario: RoleplayScenario; reac
   );
 }
 
-function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' | 'ko' }) {
+function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' | 'ko' | 'ja' }) {
   if (message.corrections.length === 0) return null;
   return (
     <section aria-label="Gợi ý sửa câu" className="mt-1.5 space-y-1.5 rounded-2xl border border-border px-3 py-2 text-sm">
@@ -82,7 +83,7 @@ function Bubble({
   onReport,
 }: {
   message: RoleplayMessage;
-  lang: 'en' | 'ko';
+  lang: 'en' | 'ko' | 'ja';
   tts: TtsApi;
   latestPartner: boolean;
   onReport: (responseId: string, trigger: HTMLButtonElement) => void;
@@ -300,7 +301,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
                 maxLength={MESSAGE_MAX}
                 invalid={empty}
                 aria-describedby={empty ? errorId : undefined}
-                placeholder={lang === 'ko' ? 'Gõ câu trả lời bằng tiếng Hàn…' : 'Type your reply in English…'}
+                placeholder={REPLY_PLACEHOLDER[lang]}
                 onValueChange={(v) => {
                   setDraft(v);
                   if (empty) setEmpty(false);

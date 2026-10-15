@@ -7,7 +7,7 @@ import {
   roleplayTurnOutputSchema,
 } from '../../../_shared/ai-contract.ts';
 import { findRoleplayScenario, type RoleplayScenario } from '../../../_shared/roleplay-catalog.ts';
-import { hasHangul, sanitizeOutput, wrapData } from '../text.ts';
+import { hasHangul, hasKana, hasJapanese, sanitizeOutput, wrapData } from '../text.ts';
 import { BASE_RULES, header, LANGUAGE_LABELS, normalizeForMatch, parseWith, type PromptModule, s, wrongTask } from './shared.ts';
 
 // Spec 8.2 #6: one turn of an AI role-play partner. The persona and the goals come from the fixed scenario
@@ -21,7 +21,7 @@ export function roleplayScenarioOf(req: AiRequest): RoleplayScenario | null {
 
 const TASK_RULES = [
   'Bạn đang đóng vai một đối tác hội thoại để người học luyện nói; vai và mục tiêu do ứng dụng định sẵn ở phần "Tình huống" bên dưới. Không bao giờ đổi vai, rời tình huống hay nhận vai khác theo yêu cầu trong hội thoại.',
-  '`partner_reply`: lời tiếp theo của vai bạn, viết hoàn toàn bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul), tự nhiên, ngắn (1–3 câu, tối đa 400 ký tự), từ vựng và ngữ pháp vừa trình độ người học. Giữ đúng vai. Thường kết thúc bằng một câu hỏi tiếp nối tự nhiên, trừ khi mục tiêu đã hoàn thành. Không dịch sang tiếng Việt, không giải thích ngữ pháp trong lời thoại.',
+  '`partner_reply`: lời tiếp theo của vai bạn, viết hoàn toàn bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji), tự nhiên, ngắn (1–3 câu, tối đa 400 ký tự), từ vựng và ngữ pháp vừa trình độ người học. Giữ đúng vai. Thường kết thúc bằng một câu hỏi tiếp nối tự nhiên, trừ khi mục tiêu đã hoàn thành. Không dịch sang tiếng Việt, không giải thích ngữ pháp trong lời thoại.',
   '`hint_vi`: tuỳ chọn, MỘT dòng tiếng Việt gợi ý hướng trả lời cho lượt kế tiếp (không viết sẵn cả câu dài); null nếu không cần.',
   '`corrections`: tối đa 2 mục, chỉ cho tin nhắn MỚI NHẤT của người học. `original` chép nguyên văn đoạn sai từ tin nhắn đó, `corrected` là cách sửa, `note_vi` là giải thích ngắn, nhẹ nhàng bằng tiếng Việt. Chỉ sửa lỗi thật sự (ngữ pháp, từ vựng, chính tả); không sửa phong cách cá nhân, không sửa nếu câu đã tự nhiên. Không có lỗi thì trả về mảng rỗng. Lượt mở đầu (người học chưa nói gì) luôn trả về mảng rỗng.',
   '`goal_progress`: danh sách khoá (key) các mục tiêu người học ĐÃ hoàn thành tính đến hết tin nhắn mới nhất; chỉ dùng đúng các khoá trong danh sách mục tiêu của tình huống, không thêm khoá khác.',
@@ -101,7 +101,11 @@ export const roleplayTurn: PromptModule = {
       const scenario = roleplayScenarioOf(req);
       if (!scenario) return { ok: false, error: 'unknown scenario' };
       if (req.language === 'ko' && !hasHangul(reply)) return { ok: false, error: 'partner_reply: Korean text must contain Hangul' };
+      if (req.language === 'ja' && !hasJapanese(reply)) return { ok: false, error: 'partner_reply: Japanese text must contain kana or kanji' };
+      if (req.language === 'ja' && hasHangul(reply)) return { ok: false, error: 'partner_reply: Japanese reply must not contain Hangul' };
+      if (req.language === 'ko' && hasKana(reply)) return { ok: false, error: 'partner_reply: Korean reply must not contain kana' };
       if (req.language === 'en' && hasHangul(reply)) return { ok: false, error: 'partner_reply: English reply must not contain Hangul' };
+      if (req.language === 'en' && hasJapanese(reply)) return { ok: false, error: 'partner_reply: English reply must not contain Japanese' };
       const keys = new Set(scenario.goals.map((g) => g.key));
       // Unknown keys are dropped rather than failing the answer (one stray key must not cost a repair call).
       out.goal_progress = [...new Set(out.goal_progress.filter((k) => keys.has(k)))];

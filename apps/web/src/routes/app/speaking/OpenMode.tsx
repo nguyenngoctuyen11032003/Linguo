@@ -16,6 +16,7 @@ interface Props {
 }
 
 const HELP_SHOWN = 3;
+const LANGUAGE_NAME: Record<SpeakingLanguage, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
 
 /** "Trả lời mở": a question in Vietnamese, the learner answers freely in the target language. */
 export function OpenMode({ lang, lessonTitle, helpSentences, transcribe, onSaveReflection }: Props) {
@@ -35,7 +36,7 @@ export function OpenMode({ lang, lessonTitle, helpSentences, transcribe, onSaveR
             Gợi ý mở đầu: <span lang={lang}>{prompt.starter}</span>
           </p>
         )}
-        <p className="text-sm text-muted">Hãy nói khoảng 20–40 giây bằng {lang === 'ko' ? 'tiếng Hàn' : 'tiếng Anh'}. Câu đơn giản cũng rất tốt.</p>
+        <p className="text-sm text-muted">Hãy nói khoảng 20–40 giây bằng {LANGUAGE_NAME[lang]}. Câu đơn giản cũng rất tốt.</p>
       </div>
       {help.length > 0 && (
         <details className="rounded-2xl border border-border px-4 py-2">

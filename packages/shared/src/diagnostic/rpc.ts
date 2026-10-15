@@ -38,7 +38,7 @@ export const DIAGNOSTIC_ERROR_CODES = [
   'already_applied',
 ] as const;
 
-const optionSchema = z.object({ id: z.string(), text: z.string(), lang: z.enum(['en', 'ko', 'vi']) });
+const optionSchema = z.object({ id: z.string(), text: z.string(), lang: z.enum(['en', 'ko', 'ja', 'vi']) });
 
 export const diagnosticItemSchema = z.object({
   id: z.uuid(),
@@ -46,7 +46,7 @@ export const diagnosticItemSchema = z.object({
   item_type: z.enum(DIAGNOSTIC_ITEM_TYPES),
   prompt: z.object({
     stem: z.string(),
-    stem_lang: z.enum(['en', 'ko', 'vi']),
+    stem_lang: z.enum(['en', 'ko', 'ja', 'vi']),
     /** reading_mcq only */
     passage: z.string().nullable().optional(),
     options: z.array(optionSchema).min(2).max(6),

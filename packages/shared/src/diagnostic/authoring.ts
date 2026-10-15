@@ -3,7 +3,7 @@ import { LANGUAGE_CODES } from '../constants';
 import { contentKeySchema, localizedTextSchema } from '../content/authoring';
 import { DIAGNOSTIC_ITEM_TYPES, DIAGNOSTIC_SKILLS } from './rpc';
 
-// Spec 4 §3: the diagnostic item bank as authored in content/diagnostic/<en|ko>/<skill>.yaml and the
+// Spec 4 §3: the diagnostic item bank as authored in content/diagnostic/<en|ko|ja>/<skill>.yaml and the
 // bundle `scripts/content-import.mjs` builds for content_private.import_diagnostic_bundle(jsonb).
 // Cross-file rules (answer is an option id, unique stems, ≥ 5 items per skill × level, level valid
 // for the language, demo header, NFC) live in scripts/content/check.mjs.
@@ -15,7 +15,7 @@ export type KeyConfidence = (typeof KEY_CONFIDENCES)[number];
 /** Minimum items per skill × level × language (spec 4 plan, task D5). */
 export const DIAGNOSTIC_MIN_ITEMS_PER_CELL = 5;
 /** Option languages: Vietnamese or a target language. */
-export const DIAGNOSTIC_TEXT_LANGS = ['en', 'ko', 'vi'] as const;
+export const DIAGNOSTIC_TEXT_LANGS = ['en', 'ko', 'ja', 'vi'] as const;
 
 const text = z.string().trim().min(1);
 

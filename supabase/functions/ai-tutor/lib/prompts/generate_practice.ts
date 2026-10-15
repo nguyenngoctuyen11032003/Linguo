@@ -1,5 +1,5 @@
 import { type GeneratePracticeOutput, generatePracticeOutputSchema } from '../../../_shared/ai-contract.ts';
-import { dataField, header, lessonBlock, parseWith, type PromptModule, requireHangul, s, systemPrompt, wrongTask } from './shared.ts';
+import { dataField, header, lessonBlock, parseWith, type PromptModule, requireTargetScript, s, systemPrompt, wrongTask } from './shared.ts';
 
 const SKILL_LABELS = { vocabulary: 'từ vựng', grammar: 'ngữ pháp', reading: 'đọc hiểu' } as const;
 
@@ -10,7 +10,7 @@ export const generatePractice: PromptModule = {
   maxOutputTokens: 1200,
   system: systemPrompt([
     'Tạo câu hỏi trắc nghiệm luyện tập ngắn, mỗi câu có đúng MỘT đáp án đúng.',
-    '`question`: đề bài; nội dung cần luyện viết bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul), lời dẫn có thể bằng tiếng Việt.',
+    '`question`: đề bài; nội dung cần luyện viết bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji), lời dẫn có thể bằng tiếng Việt.',
     '`options`: 3–4 lựa chọn khác nhau, không trùng lặp, các phương án nhiễu phải hợp lý nhưng sai rõ ràng.',
     '`answer`: chép NGUYÊN VĂN một phần tử trong `options`.',
     '`explanation_vi`: giải thích bằng tiếng Việt vì sao đáp án đúng và vì sao lựa chọn nhiễu sai.',
@@ -56,8 +56,8 @@ export const generatePractice: PromptModule = {
       if (options.some((o) => !o)) return { ok: false, error: `items.${i}.options contains an empty option` };
       if (new Set(options).size !== options.length) return { ok: false, error: `items.${i}.options has duplicates` };
       if (!options.includes(item.answer.trim())) return { ok: false, error: `items.${i}.answer is not one of the options` };
-      if (req?.language === 'ko') {
-        const err = requireHangul([item.question, ...item.options].join(' '), `items.${i}`);
+      if (req) {
+        const err = requireTargetScript(req.language, [item.question, ...item.options].join(' '), `items.${i}`);
         if (err) return { ok: false, error: err };
       }
     }
