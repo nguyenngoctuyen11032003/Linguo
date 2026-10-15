@@ -26,8 +26,8 @@ import { matchesDeletePhrase } from './delete-phrase';
 
 const DELETED_ITEMS = [
   'Tài khoản đăng nhập, email và hồ sơ.',
-  'Mọi lộ trình, kết quả kiểm tra đầu vào, bài học đã làm và thẻ ôn tập.',
-  'Lịch sử dùng AI và các báo cáo bạn đã gửi.',
+  'Mọi lộ trình, kết quả kiểm tra đầu vào, bài học và bài luyện đề đã làm, thẻ ôn tập và sổ từ cá nhân.',
+  'Lịch sử dùng AI, báo lỗi nội dung và các báo cáo bạn đã gửi.',
   'Câu trả lời còn chờ đồng bộ trên thiết bị này.',
 ] as const;
 

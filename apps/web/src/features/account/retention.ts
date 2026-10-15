@@ -18,7 +18,9 @@ export const CONTACT_EMAIL = 'lienhe@linguo.app';
 
 export const STORED_DATA_SUMMARY = [
   'Tài khoản: email, tên hiển thị, múi giờ và tuỳ chọn giao diện.',
-  'Tiến độ học: lộ trình, kết quả kiểm tra đầu vào, câu trả lời trong bài học, lịch sử ôn thẻ và ước lượng kỹ năng.',
+  'Tiến độ học: lộ trình, kết quả kiểm tra đầu vào, câu trả lời trong bài học và bài luyện đề, lịch sử ôn thẻ, ngày học, huy hiệu và ước lượng kỹ năng.',
+  'Sổ từ cá nhân: danh sách từ bạn tự thêm hoặc nhập từ tệp, kèm nghĩa, ví dụ, ghi chú, phát âm và lịch ôn của từng từ.',
+  'Báo lỗi nội dung: lý do, ghi chú bạn viết và kết quả xử lý.',
   'Lượt dùng AI: chỉ siêu dữ liệu (thời điểm, loại yêu cầu, độ dài, trạng thái) và báo cáo bạn gửi về câu trả lời AI. Không lưu nội dung câu hỏi bạn gửi cho AI.',
   'Nhắc học: tuỳ chọn nhắc, hộp thông báo trong ứng dụng và, nếu bạn bật thông báo đẩy, địa chỉ đăng ký của thiết bị (tối đa 5 thiết bị).',
   'Sự kiện sử dụng ẩn danh và báo cáo lỗi kỹ thuật: loại lỗi, tên lỗi ngắn, đường dẫn dạng mẫu và trạng thái mạng, không có nội dung bạn nhập. Có thể tắt bằng công tắc phân tích trong Cài đặt.',

@@ -13,7 +13,7 @@ export interface LegalDocument {
   sections: readonly LegalSection[];
 }
 
-const UPDATED = '13/10/2026';
+const UPDATED = '16/10/2026';
 const CONTACT = `Mọi câu hỏi hoặc yêu cầu về dữ liệu, hãy gửi email tới ${CONTACT_EMAIL}. Chúng tôi trả lời bằng tiếng Việt.`;
 
 export const PRIVACY: LegalDocument = {

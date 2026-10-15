@@ -37,6 +37,13 @@ describe('retention copy', () => {
     expect(STORED_DATA_SUMMARY.join('\n')).toMatch(/Sự kiện sử dụng ẩn danh/);
   });
 
+  it('discloses the learner-written data the account export holds (personal vocab, exam practice, content reports)', () => {
+    const stored = STORED_DATA_SUMMARY.join('\n');
+    expect(stored).toMatch(/Sổ từ cá nhân/);
+    expect(stored).toMatch(/bài luyện đề/);
+    expect(stored).toMatch(/Báo lỗi nội dung/);
+  });
+
   it('keeps the AI retention lines', () => {
     expect(RETENTION_SUMMARY.join('\n')).toMatch(/lượt dùng AI tự xoá sau 90 ngày/);
   });
