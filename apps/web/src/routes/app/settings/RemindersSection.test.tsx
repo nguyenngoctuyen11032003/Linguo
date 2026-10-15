@@ -134,6 +134,34 @@ describe('RemindersSection', () => {
     expect(screen.getByText(/Linguo đang nhắc thưa hơn/)).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Nhắc như cũ' }));
     expect(mocks.prefs.resetBackoff).toHaveBeenCalled();
+    // The banner goes away on success: the learner hears what happened and keeps focus in the section.
+    expect(await screen.findByText('Linguo sẽ nhắc bạn như cũ.')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Nhắc học' })).toHaveFocus();
+  });
+
+  it('says nothing when undoing the backoff fails (the error shows instead)', async () => {
+    setPrefs({ prefs: prefs({ reminders_enabled: true, backoff_level: 1 }), resetBackoff: vi.fn().mockResolvedValue(false) });
+    render();
+    await userEvent.click(screen.getByRole('button', { name: 'Nhắc như cũ' }));
+    expect(screen.queryByText('Linguo sẽ nhắc bạn như cũ.')).not.toBeInTheDocument();
+  });
+
+  it('announces the loading state', () => {
+    setPrefs({ status: 'loading', prefs: null });
+    render();
+    expect(screen.getByText('Đang tải cài đặt nhắc học…').closest('[role="status"]')).not.toBeNull();
+  });
+
+  it('offers to switch push back on when this device is subscribed but push is off for the account', async () => {
+    setPrefs({ prefs: prefs({ reminders_enabled: true, push_enabled: false }) });
+    setPush({ state: 'granted-subscribed' });
+    render();
+    expect(screen.queryByText('Đã bật trên thiết bị này.')).not.toBeInTheDocument();
+    expect(screen.getByText(/chưa nhận được nhắc/)).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Bật thông báo trên thiết bị này' }));
+    expect(mocks.push.enable).toHaveBeenCalledTimes(1);
+    await userEvent.click(screen.getByRole('button', { name: 'Huỷ đăng ký thiết bị này' }));
+    expect(mocks.push.disable).toHaveBeenCalledTimes(1);
   });
 
   it('explains why the save button is disabled', () => {

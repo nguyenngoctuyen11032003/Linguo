@@ -1,4 +1,4 @@
-import { useId, useState, type FormEvent, type ReactNode } from 'react';
+import { useId, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { BellRing, Info } from 'lucide-react';
 import { ISO_DAYS, REMINDER_RULES, type NotificationPrefs } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
@@ -119,15 +119,30 @@ function DeviceNotifications({ push, pushEnabled }: { push: PushNotificationsSta
         </p>
       </div>
     );
-  } else if (state === 'granted-subscribed') {
+  } else if (state === 'granted-subscribed' && pushEnabled) {
     body = (
       <div className="flex flex-wrap items-center gap-3">
-        <p className="text-sm font-medium">
-          {pushEnabled ? 'Đã bật trên thiết bị này.' : 'Thiết bị này đã đăng ký nhận thông báo.'}
-        </p>
+        <p className="text-sm font-medium">Đã bật trên thiết bị này.</p>
         <Button variant="ghost" loading={busy} onClick={() => void disable()}>
           Tắt trên thiết bị này
         </Button>
+      </div>
+    );
+  } else if (state === 'granted-subscribed') {
+    // Subscribed, but push_enabled is off for the account (turned off on another device): the server sends no push
+    // until it is switched back on, so offer that instead of claiming the device is set up.
+    body = (
+      <div className="space-y-2">
+        <p className="text-sm text-muted">Thông báo thiết bị đang tắt cho tài khoản của bạn, nên thiết bị này chưa nhận được nhắc.</p>
+        <div className="flex flex-wrap items-center gap-3">
+          <Button variant="ghost" loading={busy} onClick={() => void enable()}>
+            <BellRing aria-hidden className="size-4" />
+            Bật thông báo trên thiết bị này
+          </Button>
+          <Button variant="ghost" disabled={busy} onClick={() => void disable()}>
+            Huỷ đăng ký thiết bị này
+          </Button>
+        </div>
       </div>
     );
   } else {
@@ -324,14 +339,24 @@ export function RemindersSection() {
     return ok;
   };
 
+  // The banner (and the button the learner just pressed) disappears on success: say what happened and keep focus
+  // in the section instead of dropping it on <body>.
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const undoBackoff = async () => {
+    if (await resetBackoff()) {
+      toast.show({ tone: 'success', message: 'Linguo sẽ nhắc bạn như cũ.' });
+      headingRef.current?.focus();
+    }
+  };
+
   return (
     <section id="nhac-hoc" aria-labelledby="reminders-heading" className={SECTION_SCROLL_MARGIN}>
       <SolidCard className="space-y-5">
-        <h2 id="reminders-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
+        <h2 ref={headingRef} id="reminders-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
           Nhắc học
         </h2>
         {status === 'loading' && (
-          <div className="space-y-3">
+          <div role="status" className="space-y-3">
             <span className="sr-only">Đang tải cài đặt nhắc học…</span>
             <Skeleton className="block h-12 w-full rounded-2xl" />
             <Skeleton className="block h-12 w-full rounded-2xl" />
@@ -353,7 +378,7 @@ export function RemindersSection() {
                   <Info aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
                   {BACKOFF_TEXT}
                 </p>
-                <Button variant="ghost" onClick={() => void resetBackoff()} disabled={saving}>
+                <Button variant="ghost" onClick={() => void undoBackoff()} disabled={saving}>
                   Nhắc như cũ
                 </Button>
               </div>
