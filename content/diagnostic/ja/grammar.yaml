@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+language: ja
+skill: grammar
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------- kana ----------
+  - key: ja:diag:gram-kana-watashi-wa
+    level: kana
+    item_type: cloze_choice
+    prompt:
+      stem: "わたし___ がくせいです。"
+      stem_lang: ja
+      options:
+        - { id: a, text: は, lang: ja }
+        - { id: b, text: を, lang: ja }
+        - { id: c, text: へ, lang: ja }
+        - { id: d, text: で, lang: ja }
+    answer: a
+    explanation: { vi: "Trợ từ chủ đề “は” (đọc là “wa”) đánh dấu chủ đề câu: “わたしは がくせいです” (Tôi là học sinh). “を” đánh dấu tân ngữ, “へ” chỉ hướng đi, “で” chỉ nơi chốn hành động." }
+  - key: ja:diag:gram-kana-mizu-o
+    level: kana
+    item_type: cloze_choice
+    prompt:
+      stem: "まいあさ みず___ のみます。"
+      stem_lang: ja
+      options:
+        - { id: a, text: に, lang: ja }
+        - { id: b, text: を, lang: ja }
+        - { id: c, text: へ, lang: ja }
+        - { id: d, text: が, lang: ja }
+    answer: b
+    explanation: { vi: "“みず” là tân ngữ của động từ “のみます” (uống), nên dùng trợ từ “を” (đọc là “o”). “が” chỉ chủ ngữ — “みずが のみます” sẽ thành “nước uống”." }
+  - key: ja:diag:gram-kana-gakkou-e
+    level: kana
+    item_type: cloze_choice
+    prompt:
+      stem: "あした がっこう___ いきます。"
+      stem_lang: ja
+      options:
+        - { id: a, text: を, lang: ja }
+        - { id: b, text: で, lang: ja }
+        - { id: c, text: へ, lang: ja }
+        - { id: d, text: が, lang: ja }
+    answer: c
+    explanation: { vi: "Với động từ di chuyển “いきます” (đi), nơi đến được đánh dấu bằng “へ” (đọc là “e”) hoặc “に”. “で” chỉ nơi diễn ra hành động, “を” chỉ tân ngữ, “が” chỉ chủ ngữ." }
+  - key: ja:diag:gram-kana-watashi-no-hon
+    level: kana
+    item_type: cloze_choice
+    prompt:
+      stem: "これは わたし___ ほんです。"
+      stem_lang: ja
+      options:
+        - { id: a, text: を, lang: ja }
+        - { id: b, text: に, lang: ja }
+        - { id: c, text: で, lang: ja }
+        - { id: d, text: の, lang: ja }
+    answer: d
+    explanation: { vi: "“の” nối hai danh từ để chỉ sở hữu: “わたしの ほん” (sách của tôi). Lưu ý thứ tự ngược với tiếng Việt: người sở hữu đứng trước." }
+  - key: ja:diag:gram-kana-desu-ka
+    level: kana
+    item_type: cloze_choice
+    prompt:
+      stem: "あなたは がくせいです___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: か, lang: ja }
+        - { id: b, text: を, lang: ja }
+        - { id: c, text: に, lang: ja }
+        - { id: d, text: へ, lang: ja }
+    answer: a
+    explanation: { vi: "Thêm “か” vào cuối câu để tạo câu hỏi: “あなたは がくせいですか” (Bạn là học sinh phải không?). Các trợ từ còn lại không đứng ở cuối câu." }
+  # ---------- n5 ----------
+  - key: ja:diag:gram-n5-tabetai
+    level: n5
+    item_type: cloze_choice
+    prompt:
+      stem: "おなかが すきましたから、なにか ___たいです。"
+      stem_lang: ja
+      options:
+        - { id: a, text: たべて, lang: ja }
+        - { id: b, text: たべ, lang: ja }
+        - { id: c, text: たべる, lang: ja }
+        - { id: d, text: たべた, lang: ja }
+    answer: b
+    explanation: { vi: "“〜たい” (muốn) gắn vào gốc thể ます: たべます → たべ + たい = “たべたい” (muốn ăn). Không gắn “たい” vào thể て, thể từ điển hay thể た." }
+  - key: ja:diag:gram-n5-matte-kudasai
+    level: n5
+    item_type: cloze_choice
+    prompt:
+      stem: "すみません、ちょっと ___ください。"
+      stem_lang: ja
+      options:
+        - { id: a, text: まち, lang: ja }
+        - { id: b, text: まつ, lang: ja }
+        - { id: c, text: まって, lang: ja }
+        - { id: d, text: まった, lang: ja }
+    answer: c
+    explanation: { vi: "Lời nhờ “Hãy … giúp” dùng thể て + ください: まつ → “まってください” (xin chờ một chút). Động từ đuôi “つ” chuyển thành “って”." }
+  - key: ja:diag:gram-n5-kara
+    level: n5
+    item_type: cloze_choice
+    prompt:
+      stem: "雨が 降っています___、かさを 持って 行きます。"
+      stem_lang: ja
+      options:
+        - { id: a, text: まで, lang: ja }
+        - { id: b, text: より, lang: ja }
+        - { id: c, text: しか, lang: ja }
+        - { id: d, text: から, lang: ja }
+    answer: d
+    explanation: { vi: "“〜から” đứng sau mệnh đề để chỉ lý do: “Vì trời đang mưa nên tôi mang ô đi”. “まで” (đến), “より” (so với), “しか” (chỉ… đi với phủ định) không chỉ lý do." }
+  - key: ja:diag:gram-n5-neko-imasu
+    level: n5
+    item_type: cloze_choice
+    prompt:
+      stem: "つくえの 上に ねこが ___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: います, lang: ja }
+        - { id: b, text: あります, lang: ja }
+        - { id: c, text: です, lang: ja }
+        - { id: d, text: いきます, lang: ja }
+    answer: a
+    explanation: { vi: "Sự tồn tại của người và động vật dùng “います”; đồ vật, cây cối dùng “あります”. Con mèo là động vật nên “ねこが います”." }
+  - key: ja:diag:gram-n5-samuku-nakatta
+    level: n5
+    item_type: cloze_choice
+    prompt:
+      stem: "きのうは あまり さむく___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: ないです, lang: ja }
+        - { id: b, text: なかったです, lang: ja }
+        - { id: c, text: かったです, lang: ja }
+        - { id: d, text: でした, lang: ja }
+    answer: b
+    explanation: { vi: "“きのう” (hôm qua) nên cần quá khứ phủ định của tính từ đuôi い: さむい → “さむくなかったです” (đã không lạnh lắm). “あまり” luôn đi với thể phủ định; “さむくでした” là sai (phải là “さむかったです”)." }
+  # ---------- n4 ----------
+  - key: ja:diag:gram-n4-yomemasu
+    level: n4
+    item_type: cloze_choice
+    prompt:
+      stem: "わたしは 日本語の 新聞が 少し ___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 読みます, lang: ja }
+        - { id: b, text: 読ませます, lang: ja }
+        - { id: c, text: 読めます, lang: ja }
+        - { id: d, text: 読んでいます, lang: ja }
+    answer: c
+    explanation: { vi: "Đối tượng đi với “が” và nghĩa “có thể đọc một chút” → thể khả năng “読めます”. “読みます/読んでいます” cần trợ từ “を” (新聞を読みます); “読ませます” là thể sai khiến." }
+  - key: ja:diag:gram-n4-tsuitara
+    level: n4
+    item_type: cloze_choice
+    prompt:
+      stem: "駅に ___、電話して ください。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 着くと, lang: ja }
+        - { id: b, text: 着いたら, lang: ja }
+        - { id: c, text: 着いたり, lang: ja }
+        - { id: d, text: 着きに, lang: ja }
+    answer: b
+    explanation: { vi: "“〜たら” nghĩa là “khi/sau khi … thì”, vế sau có thể là lời nhờ: “駅に着いたら、電話してください” (Đến ga rồi thì gọi cho tôi). Sau “〜と” không được dùng câu nhờ vả, mệnh lệnh; “〜たり” phải đi thành cặp liệt kê." }
+  - key: ja:diag:gram-n4-ikura-temo
+    level: n4
+    item_type: cloze_choice
+    prompt:
+      stem: "いくら 練習___、上手に なりません。"
+      stem_lang: ja
+      options:
+        - { id: a, text: しても, lang: ja }
+        - { id: b, text: したら, lang: ja }
+        - { id: c, text: するので, lang: ja }
+        - { id: d, text: すれば, lang: ja }
+    answer: a
+    explanation: { vi: "Cấu trúc “いくら 〜ても” nghĩa là “dù … bao nhiêu đi nữa”: “Dù luyện tập bao nhiêu cũng không giỏi lên”. “したら/すれば” là điều kiện, “するので” chỉ lý do — không hợp với vế sau phủ định." }
+  - key: ja:diag:gram-n4-furisou
+    level: n4
+    item_type: cloze_choice
+    prompt:
+      stem: "空が 暗く なって きました。雨が ___そうです。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 降って, lang: ja }
+        - { id: b, text: 降ら, lang: ja }
+        - { id: c, text: 降れ, lang: ja }
+        - { id: d, text: 降り, lang: ja }
+    answer: d
+    explanation: { vi: "Phỏng đoán qua những gì nhìn thấy (“trông như sắp mưa”) dùng gốc thể ます + そうです: 降ります → “降りそうです”. Các dạng “降って/降ら/降れ” không ghép với “そうです”." }
+  - key: ja:diag:gram-n4-yobaremashita
+    level: n4
+    item_type: cloze_choice
+    prompt:
+      stem: "わたしは 先生に 名前を ___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 呼びました, lang: ja }
+        - { id: b, text: 呼ばれました, lang: ja }
+        - { id: c, text: 呼べました, lang: ja }
+        - { id: d, text: 呼んでくれました, lang: ja }
+    answer: b
+    explanation: { vi: "“わたしは 先生に …” là cấu trúc bị động: người thực hiện hành động đi với “に”. “呼ばれました” = tôi được/bị thầy gọi tên. “呼んでくれました” cần chủ ngữ là người làm (“先生が わたしの名前を呼んでくれました”)." }
+  # ---------- n3 ----------
+  - key: ja:diag:gram-n3-wasurenai-youni
+    level: n3
+    item_type: cloze_choice
+    prompt:
+      stem: "忘れない___、手帳に メモして おきます。"
+      stem_lang: ja
+      options:
+        - { id: a, text: ことに, lang: ja }
+        - { id: b, text: ところに, lang: ja }
+        - { id: c, text: ように, lang: ja }
+        - { id: d, text: わけに, lang: ja }
+    answer: c
+    explanation: { vi: "“〜ように” chỉ mục đích với động từ không chủ ý hoặc thể phủ định: “Để không quên, tôi ghi sẵn vào sổ tay”. “ことに/ところに/わけに” không diễn tả mục đích." }
+  - key: ja:diag:gram-n3-makeru-wake-ga-nai
+    level: n3
+    item_type: cloze_choice
+    prompt:
+      stem: "あんなに 練習したのだから、彼が 負ける___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: わけがない, lang: ja }
+        - { id: b, text: はずだ, lang: ja }
+        - { id: c, text: ことになる, lang: ja }
+        - { id: d, text: ようにする, lang: ja }
+    answer: a
+    explanation: { vi: "Vế trước nêu căn cứ (đã luyện tập nhiều như thế), nên kết luận hợp lý là “không đời nào thua”: “負けるわけがない”. “負けるはずだ” lại là “chắc chắn sẽ thua” — ngược với căn cứ." }
+  - key: ja:diag:gram-n3-kita-bakari
+    level: n3
+    item_type: cloze_choice
+    prompt:
+      stem: "日本に 来た___なので、まだ 日本語が よく わかりません。"
+      stem_lang: ja
+      options:
+        - { id: a, text: まま, lang: ja }
+        - { id: b, text: うち, lang: ja }
+        - { id: c, text: とおり, lang: ja }
+        - { id: d, text: ばかり, lang: ja }
+    answer: d
+    explanation: { vi: "“Vた + ばかり” nghĩa là vừa mới làm xong (theo cảm nhận của người nói): “Tôi vừa mới sang Nhật nên chưa hiểu rõ tiếng Nhật”. “まま” là giữ nguyên trạng thái, “うち” là trong lúc, “とおり” là theo đúng như." }
+  - key: ja:diag:gram-n3-ni-totte
+    level: n3
+    item_type: cloze_choice
+    prompt:
+      stem: "この 写真は、わたし___ 大切な 思い出です。"
+      stem_lang: ja
+      options:
+        - { id: a, text: について, lang: ja }
+        - { id: b, text: にとって, lang: ja }
+        - { id: c, text: によって, lang: ja }
+        - { id: d, text: に対して, lang: ja }
+    answer: b
+    explanation: { vi: "“〜にとって” nghĩa là “đối với (ai đó), xét từ lập trường của…”: “Bức ảnh này là kỷ niệm quý giá đối với tôi”. “について” là về (chủ đề), “によって” là tùy theo/bởi, “に対して” là đối với (hướng hành động, thái độ tới ai)." }
+  - key: ja:diag:gram-n3-tabesasemashita
+    level: n3
+    item_type: cloze_choice
+    prompt:
+      stem: "子どもの ころ、母は わたしに 毎日 野菜を ___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 食べました, lang: ja }
+        - { id: b, text: 食べたがりました, lang: ja }
+        - { id: c, text: 食べさせました, lang: ja }
+        - { id: d, text: 食べようとしました, lang: ja }
+    answer: c
+    explanation: { vi: "Cấu trúc “A は B に 〜を Vさせる” là thể sai khiến: mẹ bắt/cho tôi ăn rau mỗi ngày → “食べさせました”. Với “食べました” hay “食べようとしました” thì người ăn là mẹ, không thể có “わたしに”." }
+  # ---------- n2 ----------
+  - key: ja:diag:gram-n2-ni-kakawarazu
+    level: n2
+    item_type: cloze_choice
+    prompt:
+      stem: "この イベントは、年齢___、どなたでも 参加できます。"
+      stem_lang: ja
+      options:
+        - { id: a, text: にもかかわらず, lang: ja }
+        - { id: b, text: にかかわらず, lang: ja }
+        - { id: c, text: に応じて, lang: ja }
+        - { id: d, text: に比べて, lang: ja }
+    answer: b
+    explanation: { vi: "“〜にかかわらず” là “không phân biệt, bất kể”: bất kể tuổi tác, ai cũng tham gia được. “にもかかわらず” là “mặc dù” (nhượng bộ); “に応じて” (tùy theo) mâu thuẫn với “どなたでも”." }
+  - key: ja:diag:gram-n2-enki-sezaru
+    level: n2
+    item_type: cloze_choice
+    prompt:
+      stem: "台風で 電車が 止まったので、会議は 延期せ___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: ざるを得なかった, lang: ja }
+        - { id: b, text: ずにはいられなかった, lang: ja }
+        - { id: c, text: ずに済んだ, lang: ja }
+        - { id: d, text: ないわけだった, lang: ja }
+    answer: a
+    explanation: { vi: "“〜ざるを得ない” là “buộc phải, đành phải” (do hoàn cảnh): tàu dừng vì bão nên đành phải hoãn họp; “する” → “せざるを得ない”. “ずにはいられない” là không kìm được (cảm xúc), “ずに済んだ” là may mà không phải hoãn — trái với hoàn cảnh; “延期せないわけ” sai hình thức." }
+  - key: ja:diag:gram-n2-bakarika
+    level: n2
+    item_type: cloze_choice
+    prompt:
+      stem: "彼は 英語___、フランス語も 話せる。"
+      stem_lang: ja
+      options:
+        - { id: a, text: にしては, lang: ja }
+        - { id: b, text: に限って, lang: ja }
+        - { id: c, text: からして, lang: ja }
+        - { id: d, text: ばかりか, lang: ja }
+    answer: d
+    explanation: { vi: "“A ばかりか B も” là “không chỉ A mà cả B”: không chỉ tiếng Anh mà cả tiếng Pháp anh ấy cũng nói được. “にしては” (so với… thì), “に限って” (riêng… thì lại), “からして” (ngay từ… đã) không hợp nghĩa." }
+  - key: ja:diag:gram-n2-ijou-wa
+    level: n2
+    item_type: cloze_choice
+    prompt:
+      stem: "引き受けた___、最後まで 責任を 持って やるべきだ。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 一方で, lang: ja }
+        - { id: b, text: 以上は, lang: ja }
+        - { id: c, text: とたんに, lang: ja }
+        - { id: d, text: うちに, lang: ja }
+    answer: b
+    explanation: { vi: "“〜以上は” là “một khi đã … thì (đương nhiên phải)”, thường đi với “べきだ/なければならない”: một khi đã nhận việc thì phải có trách nhiệm đến cùng. “とたんに” là ngay khi vừa, “うちに” là trong lúc." }
+  - key: ja:diag:gram-n2-suki-ni
+    level: n2
+    item_type: cloze_choice
+    prompt:
+      stem: "母親が 見ていない___、子どもは お菓子を 食べて しまった。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 以上, lang: ja }
+        - { id: b, text: ものの, lang: ja }
+        - { id: c, text: 隙に, lang: ja }
+        - { id: d, text: 末に, lang: ja }
+    answer: c
+    explanation: { vi: "“〜隙に” là “nhân lúc (ai đó) sơ hở”: nhân lúc mẹ không để ý, đứa trẻ ăn vụng bánh kẹo. “ものの” là “tuy… nhưng”, “末に” là “sau một hồi (cố gắng)…” và đi sau thể た/danh từ." }
+  # ---------- n1 ----------
+  - key: ja:diag:gram-n1-ya-ina-ya
+    level: n1
+    item_type: cloze_choice
+    prompt:
+      stem: "ベルが 鳴る___、生徒たちは 教室を 飛び出した。"
+      stem_lang: ja
+      options:
+        - { id: a, text: や否や, lang: ja }
+        - { id: b, text: とたんに, lang: ja }
+        - { id: c, text: ものなら, lang: ja }
+        - { id: d, text: ばこそ, lang: ja }
+    answer: a
+    explanation: { vi: "“Vる + や否や” là “vừa mới … thì ngay lập tức”: chuông vừa reo, học sinh đã lao ra khỏi lớp. “とたんに” cũng có nghĩa gần như vậy nhưng phải đi sau thể た (“鳴ったとたんに”)." }
+  - key: ja:diag:gram-n1-ni-hikikae
+    level: n1
+    item_type: cloze_choice
+    prompt:
+      stem: "兄が 社交的なの___、弟は 人見知りだ。"
+      stem_lang: ja
+      options:
+        - { id: a, text: とあって, lang: ja }
+        - { id: b, text: ならでは, lang: ja }
+        - { id: c, text: にもまして, lang: ja }
+        - { id: d, text: に引き換え, lang: ja }
+    answer: d
+    explanation: { vi: "“〜に引き換え” dùng để so sánh hai đối tượng trái ngược: ngược hẳn với người anh hòa đồng, cậu em lại nhút nhát với người lạ. “にもまして” là “hơn cả”, “とあって” là “vì là (dịp đặc biệt)”, “ならでは” là “chỉ có ở…”." }
+  - key: ja:diag:gram-n1-made-mo-nai
+    level: n1
+    item_type: cloze_choice
+    prompt:
+      stem: "そんな 簡単な ことは、わざわざ 説明する___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: にほかならない, lang: ja }
+        - { id: b, text: までもない, lang: ja }
+        - { id: c, text: ばかりだ, lang: ja }
+        - { id: d, text: しまつだ, lang: ja }
+    answer: b
+    explanation: { vi: "“Vる + までもない” là “không cần thiết phải…”: chuyện đơn giản thế thì chẳng cần mất công giải thích. “にほかならない” là “chính là, không gì khác ngoài”, “しまつだ” là “rốt cuộc đến mức (kết cục tệ)”." }
+  - key: ja:diag:gram-n1-ga-saigo
+    level: n1
+    item_type: cloze_choice
+    prompt:
+      stem: "あの 人は 一度 話し始めた___、何時間でも 止まらない。"
+      stem_lang: ja
+      options:
+        - { id: a, text: を皮切りに, lang: ja }
+        - { id: b, text: ともなると, lang: ja }
+        - { id: c, text: が最後, lang: ja }
+        - { id: d, text: とはいえ, lang: ja }
+    answer: c
+    explanation: { vi: "“Vた + が最後” là “một khi đã … thì (sẽ dẫn đến kết quả không cứu vãn được)”: một khi người đó đã bắt đầu nói thì nói hàng giờ không dừng. “を皮切りに” (bắt đầu từ…) đi sau danh từ, “とはいえ” là “tuy nói vậy”." }
+  - key: ja:diag:gram-n1-zu-ni-wa-okanai
+    level: n1
+    item_type: cloze_choice
+    prompt:
+      stem: "彼の 熱意 あふれる スピーチは、聴衆を 感動させ___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: ずにはおかなかった, lang: ja }
+        - { id: b, text: ずじまいだった, lang: ja }
+        - { id: c, text: まいとした, lang: ja }
+        - { id: d, text: ないまでもなかった, lang: ja }
+    answer: a
+    explanation: { vi: "“〜ずにはおかない” diễn tả tác động tất yếu: bài phát biểu đầy nhiệt huyết không thể không làm khán giả xúc động. “ずじまい” là “rốt cuộc đã không làm”, “まいとした” là “cố để không…” — đều trái nghĩa; “ないまでもなかった” sai hình thức." }
