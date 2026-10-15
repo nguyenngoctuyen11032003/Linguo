@@ -7,7 +7,7 @@ import {
   roleplayTurnOutputSchema,
 } from '../../../_shared/ai-contract.ts';
 import { findRoleplayScenario, type RoleplayScenario } from '../../../_shared/roleplay-catalog.ts';
-import { hasHangul, wrapData } from '../text.ts';
+import { hasHangul, sanitizeOutput, wrapData } from '../text.ts';
 import { BASE_RULES, header, LANGUAGE_LABELS, normalizeForMatch, parseWith, type PromptModule, s, wrongTask } from './shared.ts';
 
 // Spec 8.2 #6: one turn of an AI role-play partner. The persona and the goals come from the fixed scenario
@@ -91,7 +91,9 @@ export const roleplayTurn: PromptModule = {
     const parsed = parseWith(roleplayTurnOutputSchema, data);
     if (!parsed.ok) return parsed;
     const out: RoleplayTurnOutput = { ...parsed.data };
-    const reply = out.partner_reply.trim();
+    // Judge the reply as it will be served: the handler sanitises it afterwards (tags, invisibles), which
+    // could leave nothing, or strip the only Hangul, behind a reply that looked fine.
+    const reply = sanitizeOutput(out.partner_reply, { language: req?.language ?? 'en' }).trim();
     if (!reply) return { ok: false, error: 'partner_reply must not be empty' };
     out.partner_reply = reply;
     out.hint_vi = out.hint_vi?.trim() ? out.hint_vi.trim() : null;
@@ -101,10 +103,8 @@ export const roleplayTurn: PromptModule = {
       if (req.language === 'ko' && !hasHangul(reply)) return { ok: false, error: 'partner_reply: Korean text must contain Hangul' };
       if (req.language === 'en' && hasHangul(reply)) return { ok: false, error: 'partner_reply: English reply must not contain Hangul' };
       const keys = new Set(scenario.goals.map((g) => g.key));
-      for (const k of out.goal_progress) {
-        if (!keys.has(k)) return { ok: false, error: `goal_progress: unknown goal ${k}` };
-      }
-      out.goal_progress = [...new Set(out.goal_progress)];
+      // Unknown keys are dropped rather than failing the answer (one stray key must not cost a repair call).
+      out.goal_progress = [...new Set(out.goal_progress.filter((k) => keys.has(k)))];
       // Corrections only concern the learner's last message: nothing on the opening turn, and each `original`
       // must really appear in that message (otherwise it is dropped, not shown).
       const message = normalizeForMatch(req.learner_message, req.language);

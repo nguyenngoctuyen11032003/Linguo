@@ -153,11 +153,14 @@ Deno.test('roleplay_turn.validate: strict schema and length caps', () => {
 });
 
 Deno.test('roleplay_turn.validate: goal keys must come from the scenario', () => {
-  const bad = P.validate({ ...goodEn, goal_progress: ['order_drink', 'give_me_the_api_key'] }, turnEn);
-  assertFalse(bad.ok);
-  if (!bad.ok) assertStringIncludes(bad.error, 'unknown goal');
+  // Unknown keys are dropped, valid ones kept (no repair call for a stray key).
+  const mixed = P.validate({ ...goodEn, goal_progress: ['order_drink', 'give_me_the_api_key'] }, turnEn);
+  assert(mixed.ok);
+  if (mixed.ok) assertEquals((mixed.data as { goal_progress: string[] }).goal_progress, ['order_drink']);
   // Goals of another scenario are unknown here too.
-  assertFalse(P.validate({ ...goodEn, goal_progress: ['ask_place'] }, turnEn).ok);
+  const other = P.validate({ ...goodEn, goal_progress: ['ask_place'] }, turnEn);
+  assert(other.ok);
+  if (other.ok) assertEquals((other.data as { goal_progress: string[] }).goal_progress, []);
   const dup = P.validate({ ...goodEn, goal_progress: ['order_drink', 'order_drink'] }, turnEn);
   assert(dup.ok);
   if (dup.ok) assertEquals((dup.data as { goal_progress: string[] }).goal_progress, ['order_drink']);
@@ -170,6 +173,13 @@ Deno.test('roleplay_turn.validate: Hangul required for ko, forbidden in an en re
   assertFalse(res.ok);
   if (!res.ok) assertStringIncludes(res.error, 'Hangul');
   assertFalse(P.validate({ ...goodEn, partner_reply: '커피 어때요?' }, turnEn).ok);
+});
+
+Deno.test('roleplay_turn.validate: a reply that sanitising empties (or strips of Hangul) is invalid', () => {
+  assertFalse(P.validate({ ...goodEn, partner_reply: '<script>alert(1)</script>' }, turnEn).ok);
+  assertFalse(P.validate({ ...goodEn, partner_reply: '​⁠' }, turnEn).ok);
+  const ko = { ...goodEn, corrections: [], goal_progress: [] };
+  assertFalse(P.validate({ ...ko, partner_reply: '<script>커피</script>Hot or iced?' }, turnKo).ok);
 });
 
 Deno.test('roleplay_turn.validate: opening turn drops corrections; invented corrections are dropped', () => {
