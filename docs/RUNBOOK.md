@@ -8,7 +8,7 @@ Tài liệu xử lý sự cố và vận hành production (spec 7 §3). Thiết 
 | Database + Auth | Supabase hosted (project `SUPABASE_PROJECT_ID`) | RLS cho user; `service_role` chỉ ở Edge Functions và workflow `production` |
 | Gia sư AI | Edge Function `ai-tutor` + Gemini | Key Gemini chỉ trong secret Supabase |
 | Nhắc học và Web Push | Workflow **Notify** (mỗi 15 phút) → Edge Function `notify-dispatch` | `NOTIFY_CRON_SECRET` (environment `notify` và Supabase), khoá VAPID chỉ trong secret Supabase |
-| Dọn dữ liệu | Workflow **Maintenance** (hằng ngày) → RPC `purge_expired_data` | `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` |
+| Dọn dữ liệu | Workflow **Maintenance** (hằng ngày) → RPC `purge_expired_data` và `purge_analytics`; `notify-dispatch` gọi `purge_notifications` mỗi đêm | `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` |
 | Quản trị nội dung | `/quan-tri` (bảng `staff_roles`) | Vai trò `editor` < `reviewer` < `admin`, cấp bằng SQL hoặc `admin_grant_role` |
 | Secrets | GitHub environment `production`, Supabase secrets | Không bao giờ trong `VITE_*`, file commit hay log |
 
@@ -175,7 +175,7 @@ Theo PRD §19 (điều kiện tối thiểu), §20.3 (bảo mật) và §22 (đ�
 - [ ] Đã thử rollback web một lần (Re-run một Deploy cũ).
 - [ ] Nhắc học: environment `notify` có `NOTIFY_CRON_SECRET`; Actions → Notify chạy tay trả `HTTP 200`; nếu bật Web Push thì `VITE_VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` đã đặt và một thiết bị thật nhận được thông báo thử.
 - [ ] Quản trị: đã bootstrap admin đầu tiên (DEPLOY.md → Quản trị nội dung) và đăng nhập `/quan-tri` được; tài khoản thường mở `/quan-tri` thấy 404.
-- [ ] `purge_analytics()` và `purge_notifications()` đã được quyết định (nối vào Maintenance hoặc chạy tay định kỳ), xem DEPLOY.md → Bảo trì dữ liệu.
+- [ ] Actions → Maintenance chạy tay (Approve `production`) trả `HTTP 200` cho cả `purge_expired_data` lẫn `purge_analytics`, xem DEPLOY.md → Bảo trì dữ liệu.
 - [ ] Mọi migration đã deploy đều có trong `supabase/migrations-applied.json` (`node scripts/check-migrations-immutable.mjs` xanh).
 
 ## 9. Sự cố cơ bản

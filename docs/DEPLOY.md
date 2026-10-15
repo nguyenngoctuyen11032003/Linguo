@@ -8,8 +8,9 @@ Sự cố production (backup/khôi phục, rollback, xoay key, Gemini hết quot
 Pull Request ──► CI (.github/workflows/ci.yml)
                   ├─ web:      check-public-env → check-migrations-immutable → lint → content:check → content:build --check → typecheck → unit tests → build → check:bundle → check:bundle-size
                   ├─ secrets:  gitleaks (binary pin sha256) quét toàn bộ lịch sử Git
+                  ├─ functions: bản sao hợp đồng AI khớp shared → deno check → deno lint → deno test (Edge Functions)
                   ├─ e2e:      Playwright trên iPhone SE/15 Pro/15 Pro Max/landscape, Pixel 7, Galaxy S9+
-                  └─ database: fixtures SQL ↔ TS (ước lượng, chấm điểm) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
+                  └─ database: fixtures SQL ↔ TS (ước lượng, chấm bài, FSRS, kiểm tra đầu vào, chấm đề thi) → Supabase local (Docker) → áp mọi migration + seed.sql → db lint → pgTAP (RLS, chấm điểm, bài học) → kiểm types
 
 push main ─────► Deploy (.github/workflows/deploy.yml)
                   verify (= CI) ─┐
@@ -35,7 +36,7 @@ Deploy xanh trên main ─► Smoke (.github/workflows/smoke.yml; cũng chạy h
     git add supabase/migrations-applied.json && git commit -m "chore(db): record deployed migration (<ten>)"
     ```
     Danh sách file vừa áp cũng có trong log bước `db push --dry-run` của job `migrate`. `--record` chỉ nhận tên file dạng `^\d{14}_[a-z0-9_]+\.sql$` có trong `supabase/migrations/`, và từ chối ghi đè checksum khác của một file đã có trong danh sách. Chỉ ghi **sau khi** job `migrate` xanh: ghi sớm sẽ khoá một file chưa được áp. Commit này chỉ đổi `supabase/migrations-applied.json` (nằm ngoài thư mục `migrations`), nên Deploy chạy tiếp chỉ build lại site, không áp migration hay deploy function.
-  - **Quy tắc đánh số migration mới:** tên file `<14 chữ số>_<ten>.sql` (chữ thường, số, gạch dưới) và số phải **lớn hơn** số của migration cuối cùng trong `supabase/migrations-applied.json`. Supabase CLI từ chối `db push` một migration có số nhỏ hơn migration đã áp trên project (hành vi của Supabase CLI, repo không tự kiểm tra), trong khi CI (`db reset` từ đầu) vẫn xanh vì áp theo thứ tự tên file. Các migration hiện có đã dùng dãy số `20261015…`, nên `supabase migration new` (lấy giờ hiện tại) có thể sinh ra số nhỏ hơn: kiểm tra tên file vừa tạo và đổi tên (khi chưa commit) cho lớn hơn migration cuối (số của file cuối trong `supabase/migrations-applied.json` cộng thêm một bước, ví dụ sau `20261015000800_…` dùng `20261015000900_<ten>.sql`).
+  - **Quy tắc đánh số migration mới:** tên file `<14 chữ số>_<ten>.sql` (chữ thường, số, gạch dưới) và số phải **lớn hơn** số của migration cuối cùng trong `supabase/migrations-applied.json`. Supabase CLI từ chối `db push` một migration có số nhỏ hơn migration đã áp trên project (hành vi của Supabase CLI, repo không tự kiểm tra), trong khi CI (`db reset` từ đầu) vẫn xanh vì áp theo thứ tự tên file. Các migration hiện có đã dùng dãy số `20261015…`, nên `supabase migration new` (lấy giờ hiện tại) có thể sinh ra số nhỏ hơn: kiểm tra tên file vừa tạo và đổi tên (khi chưa commit) cho lớn hơn migration cuối, tính cả các file đã có trong `supabase/migrations/` nhưng chưa được ghi vào `supabase/migrations-applied.json` (số của file cuối cộng thêm một bước, ví dụ sau `20261016000800_…` dùng `20261016000900_<ten>.sql`).
   - Lỡ sửa migration đã deploy: hoàn tác file về bản đã deploy, đưa thay đổi vào một migration mới (`create or replace`, `drop … if exists` rồi tạo lại, `revoke`/`grant` tường minh) sao cho cả DB hosted lẫn DB mới tinh đều ra cùng một schema.
 - Thiết lập Auth trong `supabase/config.toml` chỉ áp dụng local; Auth hosted cấu hình trên Dashboard.
 
@@ -186,7 +187,7 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
 
   Kết quả trả về là số dòng đã xoá của từng bảng, in ra log.
 - **Đã lên lịch ở nơi khác:** `purge_notifications()` (xoá hộp thư thông báo quá 90 ngày) do Edge Function `notify-dispatch` gọi mỗi đêm (các lượt Notify trong giờ UTC 20), không thuộc Maintenance.
-- **Chưa được lên lịch:** `purge_analytics()` (xoá `analytics_events` quá 180 ngày) chỉ `service_role` gọi được nhưng **không** được `purge_expired_data` hay workflow nào gọi (đã `grep` toàn repo). Cho đến khi có người nối vào Maintenance, bảng này chỉ lớn lên. Chạy tay khi cần, ví dụ trong Supabase SQL Editor: `select public.purge_analytics();` (SQL Editor chạy với quyền `postgres`, đủ để gọi hàm này). Đây là việc còn mở (xem `docs/superpowers/HANDOFF.md`).
+- Bước thứ hai của cùng job gọi `POST {VITE_SUPABASE_URL}/rest/v1/rpc/purge_analytics` (cũng chỉ `service_role` gọi được): xoá `analytics_events` quá 180 ngày (sự kiện sử dụng và báo lỗi kỹ thuật `client_error`) và trả số dòng đã xoá. Bước này chạy cả khi bước `purge_expired_data` lỗi. Con số 180 ngày cũng là cam kết trên trang quyền riêng tư (`apps/web/src/features/account/retention.ts`).
 - Key chỉ được ghi vào một file cấu hình curl quyền 0600 rồi xoá ngay. Key không nằm trong argv và không bị in ra log. HTTP khác 2xx thì job fail.
 - Job dùng chung concurrency group `supabase-production` với `migrate` (Deploy) và Publish content, nên không bao giờ chạy cùng lúc với migration.
 - Environment `production` đang bật **Required reviewers**, nên mỗi lần chạy theo lịch cũng chờ bấm **Approve**. Không duyệt thì run hết hạn sau 30 ngày; dữ liệu chỉ được dọn muộn hơn, không mất gì. Nếu muốn chạy tự động hoàn toàn, tạo một environment riêng (ví dụ `maintenance`, chỉ cho nhánh `main`, không cần reviewer), chỉ chứa `SUPABASE_SERVICE_ROLE_KEY`, rồi đổi `environment:` trong workflow.
@@ -200,6 +201,7 @@ Workflow `.github/workflows/maintenance.yml` chạy **hằng ngày** (cron `17 1
 | Publish content báo `--apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY` | Thiếu secret `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` hoặc variable `VITE_SUPABASE_URL` |
 | Publish content báo `HTTP 404 … import_content_bundle` | Migration nội dung chưa được Deploy áp lên project hosted |
 | Maintenance báo `HTTP 404 … purge_expired_data` | Migration `20261014000910_account_data.sql` chưa được Deploy áp lên project hosted |
+| Maintenance báo `HTTP 404 … purge_analytics` | Migration `20261015000110_analytics.sql` chưa được Deploy áp lên project hosted |
 | Maintenance báo `HTTP 401`/`403` | `SUPABASE_SERVICE_ROLE_KEY` sai hoặc đã bị xoay vòng; cập nhật secret trong environment `production` |
 | Migration chưa được áp | Actions → Deploy → **Run workflow** với `migrate = true` |
 | `db push` từ chối vì migration cục bộ có số nhỏ hơn migration đã áp trên project | Đổi tên file mới (chưa deploy) cho số lớn hơn migration cuối trong `supabase/migrations-applied.json` (xem *Quy tắc đánh số migration mới*); không dùng `--include-all` để vượt qua |

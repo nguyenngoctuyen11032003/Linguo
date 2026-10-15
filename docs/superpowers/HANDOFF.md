@@ -6,7 +6,7 @@ Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/sh
 
 ## 1. Trạng thái từng spec
 
-Tất cả spec và đợt bổ sung dưới đây đã được triển khai trên `main`. Mọi migration trong `supabase/migrations/` đều đã được ghi vào `supabase/migrations-applied.json` (34 trên 34 tại thời điểm viết; xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
+Tất cả spec và đợt bổ sung dưới đây đã được triển khai trên `main`. Tại thời điểm viết, 34 trên 36 migration trong `supabase/migrations/` đã được ghi vào `supabase/migrations-applied.json` (`20261016000700_client_errors.sql` và `20261016000800_progress_vocab_hardening.sql` chưa được ghi, xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
 
 | Spec | Chủ đề | Nằm ở đâu | Migration chính |
 |---|---|---|---|
@@ -35,6 +35,8 @@ Các migration sửa lỗi sau khi ra mắt: `20261015000500_timezone_cooldown.s
 | Gia cố nhắc học và Web Push | `supabase/functions/notify-dispatch`, `web/features/notifications`, `web/features/pwa/sw-click.ts` | `20261016000400_notify_hardening.sql` |
 | Gia cố quản trị nội dung, báo lỗi, quy tắc `client_at` (48 giờ, sau đó siết còn 12 giờ ở `000800`) | `supabase/migrations`, `supabase/tests/admin.test.sql` | `20261016000500_content_admin_hardening.sql` |
 | Đóng vai hội thoại với AI (`roleplay_turn`, danh mục kịch bản) | `shared/ai/roleplay-catalog.ts`, `web/features/roleplay`, `web/routes/app/roleplay` | `20261016000600_ai_roleplay.sql` |
+| Báo lỗi kỹ thuật ẩn danh (sự kiện analytics `client_error`, bảng "Lỗi phía người dùng" ở `/quan-tri/thong-ke`) | `web/lib/error-reporting.ts`, `web/routes/RouteError.tsx`, RUNBOOK mục 9 | `20261016000700_client_errors.sql` |
+| Gia cố sau rà soát bảo mật: ngày hoạt động của luyện thi theo lúc lưu đáp án, chặn giả thời gian hoạt động, `client_at` 12 giờ, gia cố nhập từ vựng cá nhân | `supabase/tests/answer_integrity.test.sql`, `web/features/personal-vocab/service.ts` | `20261016000800_progress_vocab_hardening.sql` |
 | Luyện nói (ghi âm trong bộ nhớ, chép lời tuỳ chọn, tự đánh giá) | `web/features/speaking`, `web/routes/app/speaking` | không có migration |
 | Hiệu năng (route lazy, `LazyMotion`, chunk vendor, ngân sách kích thước) | `apps/web/vite.config.ts`, `scripts/check-bundle-size.mjs` | không có migration |
 | UX và truy cập (tiêu đề route, thông báo chuyển trang, token viền, thông báo lỗi chung, trang Học tập, hoàn tác phiên học) | xem mục 2 | không có migration |
@@ -75,13 +77,12 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - Đóng vai AI: mỗi lượt tốn một lượt quota AI ngày (mặc định 20), nên một buổi 12 lượt có thể dùng gần hết quota; hội thoại mất khi đóng tab.
 - Từ vựng cá nhân: chưa có OCR, chưa chia sẻ danh sách, chưa chấm offline (lỗi mạng cho chấm lại, an toàn nhờ idempotency key).
 - Gemini gói miễn phí: hết quota ngày làm AI tạm ngừng cho tới khi Google reset; circuit breaker nằm trong bộ nhớ từng instance (RUNBOOK mục 6).
-- `purge_notifications()` (90 ngày) đã được lên lịch: `notify-dispatch` gọi mỗi đêm (giờ UTC 20). Còn `purge_analytics()` (180 ngày) **chưa được lên lịch**: workflow Maintenance chỉ gọi `purge_expired_data`, không gồm hàm này. Trang quyền riêng tư (`web/features/account/retention.ts`) hiện chỉ cam kết thời hạn của dữ liệu AI. Cần nối `purge_analytics` vào `purge_expired_data` bằng migration mới hoặc chạy tay định kỳ (DEPLOY.md, *Bảo trì dữ liệu*).
+- Dọn dữ liệu chạy theo lịch nhưng phụ thuộc cron: `purge_notifications()` (90 ngày) do `notify-dispatch` gọi mỗi đêm (giờ UTC 20); `purge_expired_data()` và `purge_analytics()` (180 ngày) do workflow Maintenance gọi hằng ngày (DEPLOY.md, *Bảo trì dữ liệu*). Trang quyền riêng tư (`web/features/account/retention.ts`) cam kết đúng các thời hạn này.
 - Maintenance và Deploy chờ duyệt vì environment `production` bật Required reviewers; run Maintenance theo lịch không được duyệt sẽ hết hạn (dữ liệu chỉ dọn muộn hơn).
 - Notify dựa vào cron của GitHub Actions, vốn hay chạy muộn hoặc bỏ lượt: nhắc vẫn đến hạn trong 60 phút kể từ đầu khung (cửa sổ bù), quá khung đó thì lỡ khung nhắc đó.
 - CSP đặt bằng thẻ `<meta>` (GitHub Pages không cho đặt header): `frame-ancestors`, báo cáo vi phạm không có tác dụng (RUNBOOK mục 7).
 - Nội dung chưa qua giáo viên bản ngữ (mục 1).
 - Test pgTAP và e2e chạy trong CI; local cần Docker (SETUP.md). Chưa có test trên thiết bị thật tự động: dùng `docs/MOBILE-QA.md`.
-- Một số ghi chú mặc định lỗi thời ngoài tài liệu này: `.env.example` và `supabase/functions/.env.example` vẫn ghi `GEMINI_MAX_OUTPUT_TOKENS=1200` trong khi mặc định thật là `2048` (`supabase/functions/ai-tutor/handler.ts`); các spec cũ trong `docs/superpowers/specs` cũng nhắc 1200.
 
 ## 4. Việc còn mở
 
@@ -89,14 +90,13 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - **Ngôn ngữ thứ ba:** chưa có; cần ngôn ngữ mới trong `content/`, trong danh mục kịch bản đóng vai (`ROLEPLAY_LEVELS`), tài liệu luyện nói và các CHECK `en|ko` của schema. Chưa có spec.
 - **OCR từ tài liệu:** không nằm trong kế hoạch; PRD chỉ nói "sau import danh sách từ cá nhân/CSV mới xem xét OCR" (mục P2). Import CSV đã có (FEATURES mục 17).
 - Các mục P2 khác của PRD (công cụ giáo viên): chưa có spec.
-- Lên lịch cho `purge_analytics` (mục 3).
 - Giao diện cho `admin_grant_role` nếu cần quản lý nhiều nhân sự.
 - Duyệt nội dung và thang điểm đề thi bởi người có chuyên môn; đối chiếu `scoring` của đề CEFR.
 - Thử khôi phục backup và rollback web theo RUNBOOK mục 1–3 và ghi vào "Nhật ký diễn tập".
 
 ## 5. Danh sách migration
 
-Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 34 file và cả 34 đã được ghi trong `migrations-applied.json`, tức đã được Deploy áp lên production và ghi nhận. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
+Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 36 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), còn `20261016000700` và `20261016000800` chưa được ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
 
 ```bash
 for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
@@ -131,10 +131,11 @@ for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supa
 | `20261016000300` | `personal_vocab` | từ vựng cá nhân | Có |
 | `20261016000400` | `notify_hardening` | gia cố nhắc học và push | Có |
 | `20261016000500` | `content_admin_hardening` | gia cố quản trị nội dung, `client_at` 48 giờ | Có |
-| `20261016000800` | `progress_vocab_hardening` | luyện thi tính theo ngày làm bài, thời gian hoạt động bị chặn bởi thời gian thật ở server, `client_at` 12 giờ, gia cố từ vựng cá nhân | Chưa (chưa ghi vào `migrations-applied.json`) |
 | `20261016000600` | `ai_roleplay` | tác vụ `roleplay_turn` | Có |
+| `20261016000700` | `client_errors` | sự kiện analytics `client_error` (báo lỗi kỹ thuật ẩn danh), `admin_analytics.client_errors` | Chưa |
+| `20261016000800` | `progress_vocab_hardening` | luyện thi tính theo ngày làm bài, thời gian hoạt động bị chặn bởi thời gian thật ở server, `client_at` 12 giờ, gia cố từ vựng cá nhân | Chưa |
 
-Migration mới phải có số lớn hơn `20261016000600` (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
+Migration mới phải có số lớn hơn `20261016000800`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
 
 ## 6. Vận hành local và nhiều phiên làm việc song song
 
