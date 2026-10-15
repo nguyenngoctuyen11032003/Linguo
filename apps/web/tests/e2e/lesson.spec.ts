@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { correctResponse, DEMO_LESSONS, expectNoHorizontalScroll, lessonExercises, mockSupabase, pathRow, signIn } from './fixtures';
+import { correctResponse, DEMO_LESSONS, expectNoHorizontalScroll, lessonExercises, mockSupabase, pathRow, settleAnimations, signIn } from './fixtures';
 
 type Row = ReturnType<typeof lessonExercises>[number];
 
@@ -180,7 +180,8 @@ test('a double tap on Check sends a single submission', async ({ page }) => {
   await fillAnswer(page, first!);
   await submitButton(page, first!).dblclick();
   await expect(page.getByText('Chính xác', { exact: true })).toBeVisible();
-  await page.waitForTimeout(300);
+  // Flush two frames so a second (duplicate) submission would have been sent by now.
+  await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
   expect(mock.submitCalls()).toBe(1);
 });
 
@@ -224,7 +225,7 @@ test('the first exercise can be done with the keyboard only', async ({ page }) =
   for (let i = 0; i < 8 && !/^Câu/.test((await heading(page).textContent()) ?? ''); i++) {
     await tabTo((f) => f.text === 'Tiếp tục');
     await page.keyboard.press('Enter');
-    await page.waitForTimeout(100);
+    await settleAnimations(page);
   }
   await expect(heading(page)).toHaveText(/^Câu 1\//);
 
@@ -277,7 +278,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await setup(page, EN_PATH);
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
     const scan = async (label: string) => {
-      await page.waitForTimeout(500);
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, `${label}: ${JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)}`).toEqual([]);

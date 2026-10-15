@@ -8,6 +8,7 @@ import {
   lessonExercises,
   mockSupabase,
   pathRow,
+  settleAnimations,
   signIn,
   type AiMockOptions,
 } from './fixtures';
@@ -250,7 +251,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await expect(page.getByRole('alertdialog', { name: NOTICE_TITLE })).toBeVisible();
     const axe = async () => {
       // Let the sheet's enter transition settle, like a11y.spec.ts does for pages.
-      await page.waitForTimeout(800);
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);

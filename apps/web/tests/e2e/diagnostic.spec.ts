@@ -1,7 +1,7 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page, type TestInfo } from '@playwright/test';
 import { diagnosticReportSchema, diagnosticStatusSchema, diagnosticStepSchema, placementResultSchema } from '@linguo/shared';
-import { DIAGNOSTIC_BANK, diagnosticCorrectText, expectNoHorizontalScroll, mockSupabase, pathRow, signIn, SUPABASE_URL } from './fixtures';
+import { DIAGNOSTIC_BANK, diagnosticCorrectText, expectNoHorizontalScroll, mockSupabase, pathRow, settleAnimations, signIn, SUPABASE_URL } from './fixtures';
 
 // Spec 4 §6: "chưa chắc" onboarding → placement test → pause/reload → report → level update, with no answer key on
 // the wire. The test runner and report screens come from D7; Home/settings/onboarding entry points from D8.
@@ -63,6 +63,7 @@ async function axe(page: Page, testInfo: TestInfo, label: string) {
       root.style.display = '';
       await new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
     });
+    await settleAnimations(page);
     const results = await new AxeBuilder({ page }).analyze();
     const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
     expect(serious, `${label} (${colorScheme}): ${JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)}`).toEqual([]);

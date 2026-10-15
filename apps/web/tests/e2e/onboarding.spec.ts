@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page, type TestInfo } from '@playwright/test';
-import { expectNoHorizontalScroll, mockSupabase, pathRow, signIn } from './fixtures';
+import { expectNoHorizontalScroll, mockSupabase, pathRow, settleAnimations, signIn } from './fixtures';
 
 const SHOT_PROJECTS = ['iphone-se', 'pixel-7', 'iphone-15-pro-landscape'];
 
@@ -96,6 +96,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await signIn(page);
     await page.goto('/app/bat-dau');
     await expect(page.getByRole('heading', { level: 1, name: 'Bạn muốn học ngôn ngữ nào?' })).toBeVisible();
+    await settleAnimations(page);
     const results = await new AxeBuilder({ page }).analyze();
     const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
     expect(serious, JSON.stringify(serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) })), null, 2)).toEqual([]);

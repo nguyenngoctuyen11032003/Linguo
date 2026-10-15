@@ -77,6 +77,8 @@ async function openRoute(page: Page, route: RouteCase, colorScheme: 'light' | 'd
 }
 
 async function expectNoSeriousAxe(page: Page, label: string) {
+  // The offline banner and any late-mounted node enter with a transition; axe must not sample mid-fade colours.
+  await settleAnimations(page);
   const results = await new AxeBuilder({ page }).analyze();
   const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
   expect(

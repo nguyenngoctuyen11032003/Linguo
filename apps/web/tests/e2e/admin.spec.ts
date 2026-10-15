@@ -129,6 +129,7 @@ for (const { path, heading } of ADMIN_PAGES) {
       // A fresh load per scheme: switching in place would catch colour transitions half way.
       await page.emulateMedia({ reducedMotion: 'reduce', colorScheme });
       await open();
+      await settleAnimations(page);
       const results = await new AxeBuilder({ page }).analyze();
       const serious = results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
       const summary = serious.map((v) => ({ id: v.id, targets: v.nodes.map((n) => n.target) }));
