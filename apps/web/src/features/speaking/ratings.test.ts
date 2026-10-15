@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { clearReflections, loadReflections, REFLECTIONS_MAX, saveReflection, type Reflection } from './ratings';
+import { clearReflections, loadReflections, RATING_AXES, REFLECTIONS_MAX, saveReflection, type Reflection } from './ratings';
 
 const reflection = (n: number): Reflection => ({ at: `2026-10-14T00:00:${String(n % 60).padStart(2, '0')}Z`, mode: 'repeat', lang: 'en', ratings: { clarity: 2 } });
 
@@ -38,5 +38,16 @@ describe('reflections storage', () => {
     saveReflection('u1', reflection(1));
     clearReflections('u1');
     expect(loadReflections('u1')).toEqual([]);
+  });
+});
+
+describe('rating axes copy', () => {
+  it('has no doubled words in labels or hints', () => {
+    for (const axis of RATING_AXES) {
+      for (const text of [axis.label, axis.hint]) {
+        const words = text.toLowerCase().split(/\s+/);
+        expect(words.some((w, i) => i > 0 && w === words[i - 1]), text).toBe(false);
+      }
+    }
   });
 });
