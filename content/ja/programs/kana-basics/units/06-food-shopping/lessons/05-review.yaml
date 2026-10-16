@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:food-shopping-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Ở quán ăn và cửa hàng
+objectives:
+  - vi: Gọi món, hỏi giá và mua hàng trong một tình huống hoàn chỉnh.
+  - vi: Phân biệt を (たべます, かいます) với が (すき, ほしい).
+  - vi: Dùng đúng この / これ, たい / ほしい, たかい / やすい.
+estimated_minutes: 16
+skills: [speaking, listening, grammar, writing]
+prerequisites: [ja:lesson:shopping]
+items:
+  - item: ja:item:tabemasu
+    role: reuse
+  - item: ja:item:nomimasu
+    role: reuse
+  - item: ja:item:o-kudasai
+    role: reuse
+  - item: ja:item:itadakimasu
+    role: reuse
+  - item: ja:item:suki
+    role: reuse
+  - item: ja:item:hoshii
+    role: reuse
+  - item: ja:item:tai
+    role: reuse
+  - item: ja:item:oishii
+    role: reuse
+  - item: ja:item:kono-sono-ano
+    role: reuse
+  - item: ja:item:takai-yasui
+    role: reuse
+  - item: ja:item:kaimasu
+    role: reuse
+  - item: ja:item:ikura
+    role: reuse
+  - item: ja:item:tsu-counter
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin đi ăn và đi mua sắm ở Nhật - gọi món, khen món ăn, hỏi giá, mặc cả nhẹ nhàng bằng "hơi đắt" và mua hàng.
+  - type: explain
+    text:
+      vi: Hai nhóm trợ từ dễ nhầm - động từ hành động (たべます, のみます, かいます, V たい) đi với を; tính từ cảm xúc (すき, きらい, ほしい) đi với が.
+  - type: explain
+    text:
+      vi: Ba cặp dễ nhầm - この (+ danh từ) / これ (đứng một mình); ほしい (muốn có vật) / たい (muốn làm); たかい (đắt) / やすい (rẻ) - phủ định bằng くない.
+  - type: deep_explain
+    text:
+      vi: Một lượt mua hàng điển hình - いらっしゃいませ → (bạn) すみません、これはいくらですか → (nhân viên) …えんです → (bạn) じゃあ、これをください → (nhân viên) ありがとうございます. Tất cả mẫu câu bạn đã có. Bước tiếp theo, các chương trình N5 sẽ mở rộng sang dạng quá khứ (〜ました), tính từ, gia đình và du lịch.
+  - type: example
+    target: すみません、このシャツはいくらですか。- にせんきゅうひゃくえんです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, cái áo sơ mi này bao nhiêu tiền? - 2.900 yên.
+    note:
+      vi: シャツ - áo sơ mi; きゅうひゃく - 900.
+  - type: example
+    target: ちょっとたかいですね。じゃあ、そのシャツをください。
+    target_lang: ja
+    translation:
+      vi: Hơi đắt nhỉ. Vậy cho tôi cái áo đó.
+    note:
+      vi: その + danh từ - cái (áo) đó.
+  - type: example
+    target: なにがたべたいですか。- すしがたべたいです。すしがだいすきです。
+    target_lang: ja
+    translation:
+      vi: Bạn muốn ăn gì? - Tôi muốn ăn sushi. Tôi rất thích sushi.
+    note:
+      vi: Với たい có thể dùng が hoặc を; だいすき - rất thích.
+  - type: example
+    target: いただきます。…おいしいです！ごちそうさまでした。
+    target_lang: ja
+    translation:
+      vi: Xin phép ăn. … Ngon quá! Cảm ơn vì bữa ăn.
+    note:
+      vi: Ba câu theo thứ tự của một bữa ăn.
+  - type: common_mistake
+    wrong: わたしはラーメンをすきです。
+    right: わたしはラーメンがすきです。
+    target_lang: ja
+    note:
+      vi: すき đi với が.
+  - type: common_mistake
+    wrong: あたらしいかばんをかいたいがほしいです。
+    right: あたらしいかばんをかいたいです。
+    target_lang: ja
+    note:
+      vi: たい và ほしい không ghép với nhau - chọn một - かいたいです (muốn mua) hoặc かばんがほしいです (muốn có cặp).
+  - type: summary
+    points:
+      - vi: を - たべます, のみます, かいます; が - すき, きらい, ほしい.
+      - vi: N を (số lượng) ください - gọi món, mua hàng.
+      - vi: この / その / あの + N; これ / それ / あれ đứng một mình.
+      - vi: V たいです muốn làm · N がほしいです muốn có · たかくないです không đắt.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:fs-review-mcq-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hoshii
+    prompt:
+      stem: "Chọn trợ từ đúng - あたらしいかばん ___ ほしいです。"
+      stem_lang: vi
+      options:
+        - { id: a8t, text: が, lang: ja }
+        - { id: b3u, text: を, lang: ja }
+        - { id: c7v, text: で, lang: ja }
+        - { id: d2w, text: に, lang: ja }
+    answer:
+      correct_option_id: a8t
+    explanation:
+      vi: ほしい là tính từ chỉ mong muốn, đi với が - かばんがほしいです.
+    display_answer: が
+
+  - key: ja:exercise:fs-review-listen-shop
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:o-kudasai
+    prompt:
+      audio_asset_id: null
+      fallback_text: このパンをみっつください。
+      options:
+        - { id: e6x, text: Cho tôi ba cái bánh mì này., lang: vi }
+        - { id: f1y, text: Cho tôi ba cái bánh mì kia., lang: vi }
+        - { id: g5z, text: Cho tôi hai cái bánh mì này., lang: vi }
+        - { id: h9a, text: Tôi muốn ăn ba cái bánh mì., lang: vi }
+    answer:
+      correct_option_id: e6x
+    explanation:
+      vi: このパン - bánh mì này; みっつ - ba cái; ください - cho tôi. "Kia" là あの, hai là ふたつ.
+    display_answer: Cho tôi ba cái bánh mì này.
+
+  - key: ja:exercise:fs-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kono-sono-ano
+    prompt:
+      template: "{{b1}}かばんはいくらですか。- {{b2}}はさんぜんえんです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cái cặp này bao nhiêu tiền? - Cái đó 3.000 yên."
+        - Chỗ thứ nhất đứng trước danh từ (gần người hỏi); chỗ thứ hai đứng một mình (người trả lời nói về vật gần người hỏi).
+    answer:
+      blanks:
+        b1: [この]
+        b2: [それ]
+    known_wrong:
+      - answer: これ
+        feedback_vi: Trước danh từ dùng この.
+        error_tag: kono_kore
+      - answer: その
+        feedback_vi: その cần danh từ theo sau; đứng một mình dùng それ.
+        error_tag: kono_kore
+    explanation:
+      vi: このかばん (cặp này - có danh từ) / それは (cái đó - đứng một mình).
+    display_answer: このかばんはいくらですか。- それはさんぜんえんです。
+
+  - key: ja:exercise:fs-review-order-want
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:tai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi muốn uống cà phê.”"
+      tokens:
+        - { id: t1, text: のみたいです }
+        - { id: t2, text: コーヒー }
+        - { id: t3, text: を }
+        - { id: t4, text: のみますたい }
+    answer:
+      orders:
+        - [t2, t3, t1]
+    explanation:
+      vi: コーヒー + を + のみたいです. Bỏ ます trước たい.
+    display_answer: コーヒーをのみたいです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:fs-review-fill-meal
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:oishii
+    prompt:
+      template: "Trước khi ăn - {{b1}}。 Khen món ăn - {{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [いただきます, 頂きます]
+        b2: [おいしい, 美味しい]
+    known_wrong:
+      - answer: ごちそうさまでした
+        feedback_vi: ごちそうさまでした nói sau khi ăn xong.
+        error_tag: wrong_expression
+      - answer: おいしくない
+        feedback_vi: おいしくない là "không ngon"; khen thì nói おいしい.
+        error_tag: negation
+    explanation:
+      vi: いただきます trước bữa ăn; おいしいです - ngon.
+    display_answer: いただきます。/ おいしいです。
+
+  - key: ja:exercise:fs-review-write-like
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:suki
+    prompt:
+      source_text: Tôi thích cá. Tôi không thích thịt lắm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - さかながすきです。にくはあまりすきじゃありません。
+        - 魚が好きです。肉はあまり好きじゃありません。
+        - わたしはさかながすきです。にくはあまりすきじゃありません。
+        - 私は魚が好きです。肉はあまり好きじゃありません。
+        - さかながすきです。にくはあまりすきではありません。
+        - 魚が好きです。肉はあまり好きではありません。
+        - さかながすきです。にくがあまりすきじゃありません。
+        - 魚が好きです。肉があまり好きじゃありません。
+        - さかながすきですにくはあまりすきじゃありません。
+        - 魚が好きです肉はあまり好きじゃありません。
+        - わたしはさかながすきですにくはあまりすきじゃありません。
+        - 私は魚が好きです肉はあまり好きじゃありません。
+        - さかながすきですにくはあまりすきではありません。
+        - 魚が好きです肉はあまり好きではありません。
+        - さかながすきですにくがあまりすきじゃありません。
+        - 魚が好きです肉があまり好きじゃありません。
+    known_wrong:
+      - answer: さかなをすきです。にくはあまりすきじゃありません。
+        feedback_vi: すき đi với が - さかながすきです.
+        error_tag: particle_ga_suki
+      - answer: さかながすきです。にくはあまりすきです。
+        feedback_vi: あまり luôn đi với phủ định - あまりすきじゃありません.
+        error_tag: amari_negative
+    explanation:
+      vi: さかながすきです (thích cá); にくはあまりすきじゃありません (thịt thì không thích lắm).
+    display_answer: さかながすきです。にくはあまりすきじゃありません。
+
+  - key: ja:exercise:fs-review-write-buy-two
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:tsu-counter
+    prompt:
+      source_text: Cho tôi hai cái bánh mì này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - このパンをふたつください。
+        - このパンを二つください。
+        - このパンをふたつおねがいします。
+        - このパンを二つお願いします。
+        - このパン、ふたつください。
+        - このパン、二つください。
+        - このパンふたつください。
+        - このパン二つください。
+    known_wrong:
+      - answer: これパンをふたつください。
+        feedback_vi: Trước danh từ dùng この.
+        error_tag: kono_kore
+      - answer: ふたつこのパンをください。
+        feedback_vi: Số lượng đứng sau を - このパンをふたつください.
+        error_tag: word_order
+      - answer: このパンをふたりください。
+        feedback_vi: ふたり đếm người; đồ vật dùng ふたつ.
+        error_tag: counter_type
+    explanation:
+      vi: このパン + を + ふたつ + ください.
+    display_answer: このパンをふたつください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:fs-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:takai-yasui
+    prompt:
+      source_text: そのとけいはたかいです。このとけいはたかくないです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái đồng hồ đó đắt. Cái đồng hồ này không đắt.
+        - Đồng hồ đó đắt. Đồng hồ này không đắt.
+        - Cái đồng hồ đó đắt, cái đồng hồ này không đắt.
+        - Chiếc đồng hồ đó đắt. Chiếc đồng hồ này không đắt.
+        - Cái đồng hồ đó thì đắt. Cái đồng hồ này thì không đắt.
+        - Đồng hồ đó đắt, đồng hồ này không đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái đồng hồ đó đắt. Cái đồng hồ này rẻ.
+        feedback_vi: たかくない là "không đắt" - gần nghĩa nhưng không phải "rẻ" (やすい).
+        error_tag: i_adj_negative
+    explanation:
+      vi: そのとけい - đồng hồ đó; たかい - đắt; このとけい - đồng hồ này; たかくない - không đắt.
+    display_answer: Cái đồng hồ đó đắt. Cái đồng hồ này không đắt.
+
+  - key: ja:exercise:fs-review-mcq-want
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hoshii
+    prompt:
+      stem: Bạn muốn nói "Tôi muốn mua một cái máy ảnh." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m2b, text: カメラをかいたいです。, lang: ja }
+        - { id: n6c, text: カメラをかいますたいです。, lang: ja }
+        - { id: o1d, text: カメラをほしいです。, lang: ja }
+        - { id: p5e, text: カメラがかいます。, lang: ja }
+    answer:
+      correct_option_id: m2b
+    explanation:
+      vi: Muốn làm (mua) - かいます → かいたいです. Không giữ ます; ほしい đi với が và nghĩa là "muốn có"; かいます đi với を và không có nghĩa "muốn".
+    display_answer: カメラをかいたいです。
+
+  - key: ja:exercise:fs-review-write-order
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:o-kudasai
+    prompt:
+      source_text: Xin lỗi, cái này bao nhiêu tiền? Vậy cho tôi cái này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - すみません、これはいくらですか。じゃあ、これをください。
+        - すみません。これはいくらですか。じゃあ、これをください。
+        - すみません、これはいくらですか。じゃあ、これをおねがいします。
+        - すみません、これはいくらですか。じゃあ、これをお願いします。
+        - すみません、これ、いくらですか。じゃあ、これをください。
+        - すみません、これはいくらですか。では、これをください。
+        - すみませんこれはいくらですかじゃあこれをください。
+        - すみませんこれはいくらですかじゃあこれをおねがいします。
+        - すみませんこれはいくらですかじゃあこれをお願いします。
+        - すみませんこれいくらですかじゃあこれをください。
+        - すみませんこれはいくらですかではこれをください。
+    known_wrong:
+      - answer: すみません、これはいくつですか。じゃあ、これをください。
+        feedback_vi: Hỏi giá dùng いくら.
+        error_tag: ikura_ikutsu
+      - answer: すみません、このはいくらですか。じゃあ、このをください。
+        feedback_vi: この cần danh từ theo sau; đứng một mình dùng これ.
+        error_tag: kono_kore
+      - answer: すみません、これはいくらですか。じゃあ、これがください。
+        feedback_vi: ください đi với を - これをください.
+        error_tag: particle_choice
+    explanation:
+      vi: すみません + これはいくらですか (hỏi giá) + じゃあ (vậy thì) + これをください (cho tôi cái này).
+    display_answer: すみません、これはいくらですか。じゃあ、これをください。

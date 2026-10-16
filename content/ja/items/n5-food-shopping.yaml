@@ -1,0 +1,426 @@
+# Học liệu unit "Ăn uống & mua sắm" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: đồ ăn, thức uống ----------------
+  - key: ja:item:tabemasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 食べます
+      reading: たべます
+      romanization: tabemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: ăn
+      examples:
+        - target: あさごはんをたべます。
+          translation:
+            vi: Tôi ăn sáng.
+
+  - key: ja:item:nomimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 飲みます
+      reading: のみます
+      romanization: nomimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: uống
+      examples:
+        - target: まいあさコーヒーをのみます。
+          translation:
+            vi: Sáng nào tôi cũng uống cà phê.
+
+  - key: ja:item:gohan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: ご飯
+      reading: ごはん
+      romanization: gohan
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơm; bữa ăn. あさごはん (bữa sáng), ひるごはん (bữa trưa), ばんごはん (bữa tối).
+      examples:
+        - target: ひるごはんをたべます。
+          translation:
+            vi: Tôi ăn trưa.
+
+  - key: ja:item:mizu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 水
+      reading: みず
+      romanization: mizu
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước (nước lạnh, nước uống)
+      examples:
+        - target: みずをのみます。
+          translation:
+            vi: Tôi uống nước.
+      confusion:
+        vi: Nước nóng là おゆ, không phải あついみず.
+
+  - key: ja:item:ocha
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: お茶
+      reading: おちゃ
+      romanization: ocha
+      pos: danh từ
+    back:
+      meaning:
+        vi: trà (thường là trà xanh Nhật)
+      examples:
+        - target: おちゃをのみますか。
+          translation:
+            vi: Bạn uống trà không?
+      pronunciation_note:
+        vi: ちゃ là một nhịp "cha" - "ô-cha".
+
+  - key: ja:item:niku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 肉
+      reading: にく
+      romanization: niku
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt
+      examples:
+        - target: にくをたべます。
+          translation:
+            vi: Tôi ăn thịt.
+
+  - key: ja:item:sakana
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 魚
+      reading: さかな
+      romanization: sakana
+      pos: danh từ
+    back:
+      meaning:
+        vi: cá
+      examples:
+        - target: さかなをたべません。
+          translation:
+            vi: Tôi không ăn cá.
+
+  - key: ja:item:yasai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 野菜
+      reading: やさい
+      romanization: yasai
+      pos: danh từ
+    back:
+      meaning:
+        vi: rau
+      examples:
+        - target: まいにちやさいをたべます。
+          translation:
+            vi: Ngày nào tôi cũng ăn rau.
+
+  # ---------------- bài 2: gọi món ----------------
+  - key: ja:item:o-kudasai
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: N を ください
+      romanization: o kudasai
+      pos: mẫu câu nhờ / gọi món
+    back:
+      meaning:
+        vi: Cho tôi N - dùng khi gọi món, mua hàng. Thêm số lượng sau を - コーヒーをふたつください (cho tôi hai cà phê).
+      examples:
+        - target: みずをください。
+          translation:
+            vi: Cho tôi nước.
+      confusion:
+        vi: Số lượng đứng sau を, trước ください - không nói ふたつコーヒーをください.
+
+  - key: ja:item:onegaishimasu
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: N をおねがいします
+      romanization: o onegaishimasu
+      pos: mẫu câu gọi món (lịch sự)
+    back:
+      meaning:
+        vi: Cho tôi N (lịch sự hơn ください một chút) - rất hay dùng ở nhà hàng, quầy vé.
+      examples:
+        - target: おちゃをおねがいします。
+          translation:
+            vi: Cho tôi trà.
+
+  - key: ja:item:irasshaimase
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [listening]
+    front:
+      text: いらっしゃいませ
+      romanization: irasshaimase
+      pos: câu chào khách
+    back:
+      meaning:
+        vi: Kính chào quý khách - nhân viên nói khi khách bước vào. Khách không cần đáp lại bằng câu này.
+      examples:
+        - target: いらっしゃいませ。なんめいさまですか。
+          translation:
+            vi: Kính chào quý khách. Quý khách đi mấy người ạ?
+      pronunciation_note:
+        vi: っ tạo nhịp ngắt - "i-ras-sha-i-ma-sê".
+
+  - key: ja:item:itadakimasu
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking]
+    front:
+      text: いただきます / ごちそうさまでした
+      romanization: itadakimasu / gochisōsama deshita
+      pos: câu nói trước / sau bữa ăn
+    back:
+      meaning:
+        vi: いただきます - nói trước khi ăn (mời, xin phép ăn); ごちそうさまでした - nói sau khi ăn xong (cảm ơn bữa ăn).
+      examples:
+        - target: いただきます。
+          translation:
+            vi: Mời cả nhà / Tôi xin phép ăn.
+      confusion:
+        vi: Đừng nhầm thứ tự - いただきます trước bữa, ごちそうさま sau bữa.
+
+  - key: ja:item:menyuu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: メニュー
+      romanization: menyū
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực đơn (từ ngoại lai, viết Katakana)
+      examples:
+        - target: メニューをください。
+          translation:
+            vi: Cho tôi xem thực đơn.
+      pronunciation_note:
+        vi: ニュ là một nhịp "nyu", ー kéo dài - "mê-nyu-u".
+
+  # ---------------- bài 3: thích, muốn ----------------
+  - key: ja:item:suki
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: N が好きです
+      reading: N がすきです
+      romanization: ga suki desu
+      pos: mẫu câu "thích"
+    back:
+      meaning:
+        vi: Thích N. Đối tượng được thích đi với が (không phải を). Phủ định - すきじゃありません (không thích); rất thích - だいすきです.
+      examples:
+        - target: わたしはすしがすきです。
+          translation:
+            vi: Tôi thích sushi.
+      confusion:
+        vi: すき là tính từ, không phải động từ - nói すしがすきです, không nói すしをすきます.
+
+  - key: ja:item:kirai
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 嫌い
+      reading: きらい
+      romanization: kirai
+      pos: tính từ
+    back:
+      meaning:
+        vi: ghét, không thích - N がきらいです. Nói thẳng きらい khá mạnh; lịch sự hơn - あまりすきじゃありません (không thích lắm).
+      examples:
+        - target: やさいがきらいです。
+          translation:
+            vi: Tôi ghét rau.
+
+  - key: ja:item:hoshii
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N が欲しいです
+      reading: N がほしいです
+      romanization: ga hoshii desu
+      pos: mẫu câu "muốn có"
+    back:
+      meaning:
+        vi: Muốn có N (đồ vật) - あたらしいかばんがほしいです (Tôi muốn có cái cặp mới). Chỉ dùng cho mong muốn của bản thân (hoặc hỏi người nghe).
+      examples:
+        - target: カメラがほしいです。
+          translation:
+            vi: Tôi muốn có một cái máy ảnh.
+      confusion:
+        vi: ほしい dùng với danh từ (muốn có cái gì); muốn làm gì thì dùng V たいです.
+
+  - key: ja:item:tai
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V たいです
+      romanization: tai desu
+      pos: mẫu câu "muốn làm"
+    back:
+      meaning:
+        vi: Muốn làm V - bỏ ます, thêm たいです - たべます → たべたいです (muốn ăn), いきます → いきたいです (muốn đi). Phủ định - たくないです.
+      examples:
+        - target: にほんへいきたいです。
+          translation:
+            vi: Tôi muốn đi Nhật.
+        - target: ラーメンをたべたいです。
+          translation:
+            vi: Tôi muốn ăn mì ramen.
+      confusion:
+        vi: Không nói たべますたいです - phải bỏ ます trước khi thêm たい.
+
+  - key: ja:item:oishii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: おいしい
+      romanization: oishii
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngon. Khen món ăn - おいしいです！; không ngon - おいしくないです.
+      examples:
+        - target: このラーメンはおいしいです。
+          translation:
+            vi: Món ramen này ngon.
+      pronunciation_note:
+        vi: Kéo dài い cuối - "ô-i-shi-i".
+
+  # ---------------- bài 4: mua sắm ----------------
+  - key: ja:item:kaimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 買います
+      reading: かいます
+      romanization: kaimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: mua
+      examples:
+        - target: スーパーでやさいをかいます。
+          translation:
+            vi: Tôi mua rau ở siêu thị.
+
+  - key: ja:item:mise
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 店
+      reading: みせ
+      romanization: mise
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng, quán. Lịch sự - おみせ.
+      examples:
+        - target: このみせはやすいです。
+          translation:
+            vi: Cửa hàng này rẻ.
+
+  - key: ja:item:takai-yasui
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 高い / 安い
+      reading: たかい / やすい
+      romanization: takai / yasui
+      pos: tính từ
+    back:
+      meaning:
+        vi: たかい - đắt (cũng có nghĩa "cao"); やすい - rẻ. Phủ định - たかくないです (không đắt), やすくないです (không rẻ).
+      examples:
+        - target: このとけいはたかいです。
+          translation:
+            vi: Cái đồng hồ này đắt.
+      confusion:
+        vi: Phủ định tính từ đuôi い - đổi い thành くない, không dùng じゃありません.
+
+  - key: ja:item:kono-sono-ano
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: この / その / あの + N
+      romanization: kono / sono / ano
+      pos: từ chỉ định đứng trước danh từ
+    back:
+      meaning:
+        vi: この N - N này; その N - N đó; あの N - N kia. Phải có danh từ theo sau, khác これ / それ / あれ đứng một mình.
+      examples:
+        - target: そのかばんはいくらですか。
+          translation:
+            vi: Cái cặp đó bao nhiêu tiền?
+      confusion:
+        vi: Không nói これかばん - đứng trước danh từ phải dùng このかばん.
