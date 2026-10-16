@@ -29,7 +29,15 @@
     { "name": "ko ideographic space is a space", "lang": "ko", "rubric": {}, "input": "저는\u3000학생이에요", "expected": "저는 학생이에요" },
     { "name": "vi qu cluster keeps its tone", "lang": "vi", "rubric": {}, "input": "Quý", "expected": "quý" },
     { "name": "vi qu cluster with grave keeps its tone", "lang": "vi", "rubric": {}, "input": "quỳ xuống", "expected": "quỳ xuống" },
-    { "name": "vi NFD input is composed", "lang": "vi", "rubric": {}, "input": "To\u0302i la\u0300", "expected": "tôi là" }
+    { "name": "vi NFD input is composed", "lang": "vi", "rubric": {}, "input": "To\u0302i la\u0300", "expected": "tôi là" },
+    { "name": "ja drops 、 。 and all spaces", "lang": "ja", "rubric": {}, "input": "はい、そうです。", "expected": "はいそうです" },
+    { "name": "ja drops ASCII spaces between words", "lang": "ja", "rubric": {}, "input": "  わたし は  がくせい です ", "expected": "わたしはがくせいです" },
+    { "name": "ja drops ideographic space", "lang": "ja", "rubric": {}, "input": "わたし　は　がくせいです", "expected": "わたしはがくせいです" },
+    { "name": "ja drops tab, newline and NBSP", "lang": "ja", "rubric": {}, "input": "わたし\t\nは がくせい", "expected": "わたしはがくせい" },
+    { "name": "ja drops corner brackets", "lang": "ja", "rubric": {}, "input": "「こんにちは」と いいました。", "expected": "こんにちはといいました" },
+    { "name": "ja lowercases romaji and joins it", "lang": "ja", "rubric": {}, "input": "Tanaka さん", "expected": "tanakaさん" },
+    { "name": "ja strict punctuation keeps inner 、 and drops spaces", "lang": "ja", "rubric": { "punctuation": "strict" }, "input": "はい、 そうです 。", "expected": "はい、そうです" },
+    { "name": "ja does not expand contractions", "lang": "ja", "rubric": {}, "input": "I'm ok", "expected": "i'mok" }
   ],
   "grade": [
     { "name": "mcq correct", "type": "mcq", "lang": "en", "answer": { "correct_option_id": "b" }, "response": { "option_id": "b" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } },
@@ -84,6 +92,12 @@
     { "name": "ko copula after batchim", "type": "translate", "lang": "ko", "answer": { "accepted": ["학생이에요"] }, "response": { "text": "학생예요" }, "expected": { "verdict": "incorrect", "error_tags": ["particle_allomorph"], "feedback_vi": null } },
     { "name": "ko ideographic space in response", "type": "translate", "lang": "ko", "answer": { "accepted": ["저는 학생이에요"] }, "response": { "text": "저는\u3000학생이에요" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } },
     { "name": "vi qu cluster tone misplaced is wrong", "type": "translate", "lang": "vi", "answer": { "accepted": ["quý"] }, "response": { "text": "qúy" }, "expected": { "verdict": "incorrect", "error_tags": [], "feedback_vi": null } },
-    { "name": "vi NFD response matches", "type": "translate", "lang": "vi", "answer": { "accepted": ["Tôi là sinh viên."] }, "response": { "text": "To\u0302i la\u0300 sinh vie\u0302n" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } }
+    { "name": "vi NFD response matches", "type": "translate", "lang": "vi", "answer": { "accepted": ["Tôi là sinh viên."] }, "response": { "text": "To\u0302i la\u0300 sinh vie\u0302n" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } },
+    { "name": "ja response without spaces or punctuation matches", "type": "translate", "lang": "ja", "answer": { "accepted": ["\u308f\u305f\u3057\u306f \u304c\u304f\u305b\u3044\u3067\u3059\u3002"] }, "response": { "text": "\u308f\u305f\u3057\u306f\u304c\u304f\u305b\u3044\u3067\u3059" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } },
+    { "name": "ja response with spaces instead of \u3001 matches", "type": "translate", "lang": "ja", "answer": { "accepted": ["\u306f\u3044\u3001\u305d\u3046\u3067\u3059\u3002"] }, "response": { "text": "\u306f\u3044 \u305d\u3046\u3067\u3059" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } },
+    { "name": "ja ideographic spaces in response match", "type": "translate", "lang": "ja", "answer": { "accepted": ["\u3053\u308c\u306f\u307b\u3093\u3067\u3059"] }, "response": { "text": "\u3053\u308c\u306f\u3000\u307b\u3093\u3000\u3067\u3059\u3002" }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } },
+    { "name": "ja known wrong matches regardless of spaces", "type": "translate", "lang": "ja", "answer": { "accepted": ["\u304c\u3063\u3053\u3046\u306b \u3044\u304d\u307e\u3059"] }, "known_wrong": [{ "answer": "\u304c\u3063\u3053\u3046\u3092 \u3044\u304d\u307e\u3059", "error_tag": "particle", "feedback_vi": "D\u00f9ng \u306b cho \u0111\u00edch \u0111\u1ebfn." }], "response": { "text": "\u304c\u3063\u3053\u3046\u3092\u3044\u304d\u307e\u3059\u3002" }, "expected": { "verdict": "incorrect", "error_tags": ["particle"], "feedback_vi": "D\u00f9ng \u306b cho \u0111\u00edch \u0111\u1ebfn." } },
+    { "name": "ja different words still wrong", "type": "translate", "lang": "ja", "answer": { "accepted": ["\u308f\u305f\u3057\u306f \u304c\u304f\u305b\u3044\u3067\u3059"] }, "response": { "text": "\u308f\u305f\u3057\u306f \u305b\u3093\u305b\u3044\u3067\u3059" }, "expected": { "verdict": "incorrect", "error_tags": [], "feedback_vi": null } },
+    { "name": "ja fill blank ignores spaces", "type": "fill_blank", "lang": "ja", "answer": { "blanks": { "b1": ["\u3067\u3059"] } }, "response": { "blanks": { "b1": " \u3067 \u3059 " } }, "expected": { "verdict": "correct", "error_tags": [], "feedback_vi": null } }
   ]
 }

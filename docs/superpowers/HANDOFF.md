@@ -92,7 +92,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - Đóng vai AI: mỗi lượt tốn một lượt quota AI ngày (mặc định 20), nên một buổi 12 lượt có thể dùng gần hết quota; buổi dở dang và buổi đã kết thúc nhưng chưa xem tổng kết được giữ trên thiết bị (`localStorage` khoá `linguo:roleplay:v2:<userId>`, đóng tab vẫn còn) tối đa 24 giờ sau tin nhắn cuối, xoá khi rời buổi, xem xong tổng kết, đăng xuất hoặc xoá tài khoản; không đồng bộ sang thiết bị khác (FEATURES mục 16).
 - Từ vựng cá nhân: chưa có OCR, chưa chia sẻ danh sách. Chấm offline đã có qua outbox `linguo-personal-outbox-v1:<userId>` (gửi lại theo thứ tự khi có mạng/tab hiện lại/mỗi 15 giây, giữ khi đăng xuất như outbox bài học và ôn tập, xoá khi xoá tài khoản; FEATURES mục 17); cảnh báo "chưa đồng bộ" khi đăng xuất ở Cài đặt (`web/routes/app/SettingsPage.tsx`) đếm cả lượt chấm từ cá nhân còn chờ.
 - Tiếng Nhật: chỉ có nội dung tới N3 (Kana → N5, N4, N3; đề JLPT N5/N4/N3). Cấp `n2`, `n1` tồn tại nên người học có thể chọn mục tiêu hoặc được xếp vào đó mà chưa có chương trình. Bài đầu của N4 chưa có bài tiên quyết là bài cuối của `kana-basics`.
-- Chấm tiếng Nhật: `normalizeAnswer` (`shared/content/grading.ts`, bản SQL `grade_exercise`) giữ khoảng trắng và đổi `、` `。` thành khoảng trắng, nên nội dung ja phải khai thêm biến thể đáp án (không dấu câu, không khoảng trắng).
+- Chấm tiếng Nhật: với `answer_lang = ja`, `normalizeAnswer` (`shared/content/grading.ts`) và `grading_normalize` (SQL, dùng bởi `grade_exercise`; bản mới ở `20261018140000_ja_grading_whitespace.sql`) bỏ mọi khoảng trắng (kể cả khoảng trắng toàn góc U+3000) sau bước xử lý dấu câu, nên `はい、そうです。`, `はい そうです` và `はいそうです` được chấm như nhau. Nội dung ja viết trước thay đổi này vẫn còn các biến thể đáp án thừa (không dấu câu, không khoảng trắng): vô hại, chưa dọn. Production chỉ chấm theo quy tắc mới sau khi Deploy áp migration này; trước đó server vẫn chấm theo quy tắc cũ (nội dung hiện có vẫn đúng nhờ các biến thể thừa). Máy chấm đề thi (`normalizeExamText`, câu `short_text`) không đổi: vẫn giữ khoảng trắng giữa từ.
 - Công cụ giáo viên: chưa có giao diện cấp quyền giáo viên (chỉ SQL, hoặc gọi `grant_teacher_role` bằng phiên của admin; DEPLOY.md, *Giáo viên*). Bài giao dạng đề thi dẫn tới trang Luyện thi chung, không mở thẳng đề được giao.
 - Gemini gói miễn phí: hết quota ngày làm AI tạm ngừng cho tới khi Google reset; circuit breaker nằm trong bộ nhớ từng instance (RUNBOOK mục 6).
 - Dọn dữ liệu phụ thuộc cron: `purge_notifications()` (90 ngày) do `notify-dispatch` gọi mỗi đêm (giờ UTC 20); `purge_expired_data()` và `purge_analytics()` (180 ngày) do workflow Maintenance gọi hằng ngày (DEPLOY.md, *Bảo trì dữ liệu*). Trang quyền riêng tư (`web/features/account/retention.ts`) cam kết đúng các thời hạn này.
@@ -107,7 +107,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - **Đưa đợt P2 lên production**, theo thứ tự: merge `integrate/p2-batch` vào `main`; duyệt Deploy cho các migration chưa áp (mục 5; `20261018130000_japanese.sql` đã được đánh số lại từ `20261017000900` để đứng sau `db_hardening`); sau khi Deploy xanh, ghi mọi migration mới vào `migrations-applied.json` (`--record`); chạy **Publish content** (hoặc `pnpm content:push`) để production có chương trình ja, kho kiểm tra đầu vào và đề JLPT; cấp quyền giáo viên đầu tiên (DEPLOY.md, *Giáo viên*).
 - **Tạo audio thật:** chạy `pnpm audio:generate` với `GEMINI_API_KEY` và service key ([AUDIO.md](../AUDIO.md)), commit YAML và manifest, rồi chạy Publish content.
 - **Kiểm tra Edge Functions bằng Deno:** đợt P2 sửa `supabase/functions` (kịch bản đóng vai và prompt tiếng Nhật) nhưng `deno check .`/`deno lint` chưa chạy trên máy tích hợp (không có Deno); CI job `functions` chạy chúng.
-- **Chấm tiếng Nhật bỏ khoảng trắng:** cân nhắc bỏ mọi khoảng trắng khi chuẩn hoá đáp án ja trong `grading.ts` và hàm SQL tương ứng (migration mới + fixture), để nội dung không phải khai biến thể.
+- **Chấm tiếng Nhật bỏ khoảng trắng:** đã làm (`20261018140000_ja_grading_whitespace.sql`, fixture ja trong `grading.fixtures.json`); còn chờ Deploy áp migration. Tuỳ chọn: dọn các biến thể đáp án ja nay đã thừa trong `content/ja` (chỉ sau khi migration đã lên production).
 - **Nội dung tiếng Nhật:** thêm N2/N1 hoặc chặn chọn hai cấp này; thêm bài tiên quyết từ cuối `kana-basics` cho bài đầu N4; người bản ngữ duyệt nội dung, kịch bản đóng vai và tài liệu luyện nói.
 - **Bài giao dạng đề thi** mở thẳng đề được giao thay vì trang Luyện thi chung.
 - **Giao diện cấp quyền giáo viên** (ví dụ trong trang Nhân sự) nếu số giáo viên tăng.
@@ -117,7 +117,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 
 ## 5. Danh sách migration
 
-Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 41 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), bảy file từ `20261016000700` trở đi chưa được ghi. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
+Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 42 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), tám file từ `20261016000700` trở đi chưa được ghi. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
 
 ```bash
 for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
@@ -160,8 +160,9 @@ for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supa
 | `20261017000500` | `admin_staff` | `admin_list_staff`, `admin_find_user` cho trang Nhân sự | Chưa |
 | `20261018090000` | `db_hardening` | index `attempts.learning_path_id`, chặn xoá tài khoản admin cuối cùng, ẩn `resolved_by` với người học | Chưa |
 | `20261018130000` | `japanese` | tiếng Nhật: cấp độ, mục tiêu, họ đề `jlpt`, mở rộng CHECK/RPC sang `ja` (đánh số lại từ `20261017000900`) | Chưa |
+| `20261018140000` | `ja_grading_whitespace` | `grading_normalize` bỏ mọi khoảng trắng khi chấm đáp án `ja` (khớp `normalizeAnswer`) | Chưa |
 
-Migration mới phải có số lớn hơn `20261018130000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
+Migration mới phải có số lớn hơn `20261018140000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
 
 ## 6. Vận hành local và nhiều phiên làm việc song song
 

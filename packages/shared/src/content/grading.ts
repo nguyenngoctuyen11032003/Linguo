@@ -102,6 +102,9 @@ export function normalizeAnswer(input: string, lang: AnswerLang, rubric: Rubric)
   s = collapse(s);
   if (lang === 'en' && rubric.expand_contractions) s = s.replace(CONTRACTION_RE, (m) => CONTRACTIONS[m] ?? m);
   if (lang === 'vi') s = s.replace(VI_TONE_RE, (m) => VI_TONES[m] ?? m);
+  // Japanese is written without spaces: after punctuation handling drop every space (WHITESPACE,
+  // incl. U+3000, is already U+0020 here), so "はい、そうです。" and "はい そうです" both equal "はいそうです".
+  if (lang === 'ja') return s.replace(/ /gu, '');
   return collapse(s);
 }
 
