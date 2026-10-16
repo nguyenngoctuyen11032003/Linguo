@@ -360,19 +360,19 @@ exercises:
     difficulty: 5
     item: ja:item:n1-u3-gram-no-itari
     prompt:
-      instruction: "Sắp xếp thành câu mở đầu bài phát biểu nhận giải: \"Được nhận một giải thưởng danh giá như thế này, tôi vô cùng vinh dự.\""
+      instruction: "Sắp xếp thành câu mở đầu bài phát biểu: \"Được đông đảo quý vị đến dự như thế này, tôi vô cùng vinh dự.\""
       tokens:
-        - { id: r3, text: いただき、 }
+        - { id: r3, text: お集まりいただき、 }
         - { id: r5, text: 光栄極まりないです }
-        - { id: r1, text: このような }
+        - { id: r1, text: このように }
         - { id: r4, text: 光栄の至りです }
-        - { id: r2, text: 名誉ある賞を }
+        - { id: r2, text: 大勢の皆様に }
     answer:
       orders:
         - [r1, r2, r3, r4]
     explanation:
-      vi: 名誉ある賞 - giải thưởng danh giá; いただき - được nhận (khiêm nhường); 光栄の至りです - vô cùng vinh dự. 極まりない thường để phê phán, không dùng cho vinh dự của bản thân.
-    display_answer: このような名誉ある賞をいただき、光栄の至りです。
+      vi: 大勢の皆様にお集まりいただき - được đông đảo quý vị tụ họp (khiêm nhường ～ていただく); 光栄の至りです - vô cùng vinh dự. 極まりない thường để phê phán (無礼極まりない), không dùng cho vinh dự của bản thân.
+    display_answer: このように大勢の皆様にお集まりいただき、光栄の至りです。
 
   - key: ja:exercise:n1-emotion-evaluation-review-mcq-interview
     type: mcq

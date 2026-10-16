@@ -255,39 +255,32 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n2-u1-orikaesu
+    item: ja:item:n2-u1-gram-shidai
     prompt:
-      source_text: Ngay khi quay về văn phòng, tôi sẽ gọi lại cho anh/chị. (khiêm nhường, dùng 次第)
+      source_text: Ngay khi hàng về đến, chúng tôi sẽ liên lạc với quý khách. (khiêm nhường, dùng 次第)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 会社に戻り次第、折り返しお電話いたします。
-        - 会社に戻り次第、折り返しお電話します。
-        - 会社に戻り次第、折り返しご連絡いたします。
-        - 会社に戻り次第、折り返しご連絡します。
-        - 事務所に戻り次第、折り返しお電話いたします。
-        - 事務所に戻り次第、折り返しお電話します。
-        - 事務所に戻り次第、折り返しご連絡いたします。
-        - オフィスに戻り次第、折り返しお電話いたします。
-        - オフィスに戻り次第、折り返しお電話します。
-        - オフィスに戻り次第、折り返しご連絡いたします。
-        - 社に戻り次第、折り返しお電話いたします。
-        - 戻り次第、折り返しお電話いたします。
-        - 戻り次第、折り返しご連絡いたします。
-        - 会社に戻り次第、すぐに折り返しお電話いたします。
-        - 会社へ戻り次第、折り返しお電話いたします。
-        - かいしゃにもどりしだい、おりかえしおでんわいたします。
+        - 商品が届き次第、ご連絡いたします。
+        - 商品が届き次第、ご連絡します。
+        - 商品が届き次第、お客様にご連絡いたします。
+        - 商品が入り次第、ご連絡いたします。
+        - 商品が入荷し次第、ご連絡いたします。
+        - 商品が届き次第、すぐにご連絡いたします。
+        - 品物が届き次第、ご連絡いたします。
+        - 商品が届き次第、お知らせいたします。
+        - しょうひんがとどきしだい、ごれんらくいたします。
     known_wrong:
-      - answer: 会社に戻ったとたん、折り返しお電話いたします。
-        feedback_vi: たとたん không đi với lời hứa của người nói. Dùng 戻り次第.
-        error_tag: totan_volition
-      - answer: 会社に戻った次第、折り返しお電話いたします。
-        feedback_vi: 次第 gắn vào gốc ます - 戻り次第.
+      - answer: 商品が届いた次第、ご連絡いたします。
+        feedback_vi: 次第 gắn vào gốc ます - 届きます → 届き次第.
         error_tag: shidai_form
+      - answer: 商品が届いたとたん、ご連絡いたします。
+        feedback_vi: たとたん kể chuyện bất ngờ đã xảy ra, không đi với lời hứa của người nói. Dùng 届き次第.
+        error_tag: totan_volition
     explanation:
-      vi: 戻ります → 戻り次第; 折り返しお電話いたします - tôi sẽ gọi lại (khiêm nhường).
-    display_answer: 会社に戻り次第、折り返しお電話いたします。
+      vi: 届きます → 届き次第 - ngay khi (hàng) đến; ご連絡いたします - xin liên lạc (khiêm nhường). 次第 hợp lời hứa trong công việc vì vế sau là hành động người nói sẽ làm.
+    display_answer: 商品が届き次第、ご連絡いたします。
 
   # ---------------- application ----------------
   - key: ja:exercise:n2-u1-review-mcq-infer

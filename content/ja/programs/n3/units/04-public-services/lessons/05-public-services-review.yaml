@@ -174,20 +174,19 @@ exercises:
     difficulty: 3
     item: ja:item:n3-teishutsu
     prompt:
-      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đơn đăng ký hãy nộp ở quầy trước ngày 20.\""
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Xin hãy nộp cả bản sao thẻ cư trú cùng (với đơn).\""
       tokens:
         - { id: e4, text: 提出してください }
-        - { id: e2, text: 20日までに }
-        - { id: e1, text: 申込書は }
-        - { id: e5, text: 窓口を }
-        - { id: e3, text: 窓口に }
+        - { id: e2, text: コピーも }
+        - { id: e5, text: 提出しにください }
+        - { id: e1, text: 在留カードの }
+        - { id: e3, text: 一緒に }
     answer:
       orders:
         - [e1, e2, e3, e4]
-        - [e1, e3, e2, e4]
     explanation:
-      vi: 窓口に提出する - nộp ở quầy (に chỉ nơi nhận). 窓口を không đúng.
-    display_answer: 申込書は20日までに窓口に提出してください。
+      vi: 在留カードのコピーも (cả bản sao thẻ cư trú) + 一緒に (cùng) + 提出してください (hãy nộp). も thay を để nói "cả... nữa"; 提出しにください sai vì ください đi sau thể て.
+    display_answer: 在留カードのコピーも一緒に提出してください。
 
   # ---------------- recall ----------------
   - key: ja:exercise:n3-public-services-review-fill-moushikomi

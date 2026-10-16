@@ -284,27 +284,27 @@ exercises:
     difficulty: 2
     item: ja:item:ja-arimasen
     prompt:
-      source_text: いいえ、わたしはにほんじんじゃありません。
+      source_text: いいえ、たなかさんはいしゃじゃありません。
       source_lang: ja
       direction: target_to_vi
     answer:
       accepted:
-        - Không, tôi không phải là người Nhật.
-        - Không, tôi không phải người Nhật.
-        - Không, tôi không phải là người Nhật Bản.
-        - Không, tôi không phải người Nhật Bản.
-        - Không, mình không phải là người Nhật.
-        - Không, mình không phải người Nhật.
-        - Không ạ, tôi không phải là người Nhật.
+        - Không, anh Tanaka không phải là bác sĩ.
+        - Không, anh Tanaka không phải bác sĩ.
+        - Không, Tanaka không phải là bác sĩ.
+        - Không, ông Tanaka không phải là bác sĩ.
+        - Không, chị Tanaka không phải là bác sĩ.
+        - Không ạ, anh Tanaka không phải là bác sĩ.
+        - Không, anh Tanaka không phải là bác sỹ.
     rubric:
       diacritics: lenient
     known_wrong:
-      - answer: Vâng, tôi là người Nhật.
+      - answer: Vâng, anh Tanaka là bác sĩ.
         feedback_vi: いいえ là "không" và じゃありません là phủ định - "không phải là".
         error_tag: negation
     explanation:
-      vi: いいえ - không; にほんじんじゃありません - không phải là người Nhật.
-    display_answer: Không, tôi không phải là người Nhật.
+      vi: いいえ - không; いしゃじゃありません - không phải là bác sĩ. じゃありません là phủ định của です, giống "không phải là" của tiếng Việt.
+    display_answer: Không, anh Tanaka không phải là bác sĩ.
 
   - key: ja:exercise:namenat-mcq-reply
     type: mcq

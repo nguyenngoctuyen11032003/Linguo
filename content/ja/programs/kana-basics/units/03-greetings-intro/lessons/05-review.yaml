@@ -313,24 +313,31 @@ exercises:
     difficulty: 2
     item: ja:item:jin
     prompt:
-      source_text: はじめまして。ランです。ベトナムじんです。
+      source_text: たなかさんはにほんじんです。せんせいです。
       source_lang: ja
       direction: target_to_vi
     answer:
       accepted:
-        - Rất vui được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
-        - Rất vui được gặp bạn. Tôi là Lan. Tôi là người Việt.
-        - Rất hân hạnh được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
-        - Hân hạnh được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
-        - Rất vui được gặp anh chị. Tôi là Lan. Tôi là người Việt Nam.
-        - Rất vui được gặp bạn. Mình là Lan. Mình là người Việt Nam.
-        - Xin chào. Tôi là Lan. Tôi là người Việt Nam.
-        - Rất vui được gặp bạn, tôi là Lan, tôi là người Việt Nam.
+        - Anh Tanaka là người Nhật. Anh ấy là giáo viên.
+        - Anh Tanaka là người Nhật. Anh ấy là thầy giáo.
+        - Anh Tanaka là người Nhật, là giáo viên.
+        - Anh Tanaka là người Nhật và là giáo viên.
+        - Thầy Tanaka là người Nhật. Thầy là giáo viên.
+        - Ông Tanaka là người Nhật. Ông ấy là giáo viên.
+        - Tanaka là người Nhật. Anh ấy là giáo viên.
+        - Anh Tanaka là người Nhật Bản. Anh ấy là giáo viên.
     rubric:
       diacritics: lenient
+    known_wrong:
+      - answer: Anh Tanaka là người Việt Nam. Anh ấy là giáo viên.
+        feedback_vi: にほんじん là người Nhật; người Việt Nam là ベトナムじん.
+        error_tag: nationality
+      - answer: Anh Tanaka là người Nhật. Anh ấy là sinh viên.
+        feedback_vi: せんせい là giáo viên; sinh viên là がくせい.
+        error_tag: vocab_meaning
     explanation:
-      vi: はじめまして - rất vui được gặp (lần đầu); ランです - tôi là Lan; ベトナムじんです - tôi là người Việt Nam. Tiếng Việt nên thêm "tôi".
-    display_answer: Rất vui được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
+      vi: たなかさんは (anh Tanaka thì) + にほんじん (người Nhật) + です. Câu thứ hai bỏ chủ đề vì đã rõ - tiếng Việt nên thêm "anh ấy" cho tự nhiên.
+    display_answer: Anh Tanaka là người Nhật. Anh ấy là giáo viên.
 
   - key: ja:exercise:gi-review-write-whose
     type: translate

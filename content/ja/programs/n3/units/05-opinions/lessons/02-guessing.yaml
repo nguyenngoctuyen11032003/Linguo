@@ -194,22 +194,22 @@ exercises:
     difficulty: 4
     item: ja:item:n3-gram-sou-da-denbun
     prompt:
-      template: "ニュースによると、来月から電気代が{{b1}}そうです。(上がる - nghe nói)"
+      template: "田中さんの話によると、駅前のパン屋は来月{{b1}}そうです。(閉まる - nghe nói)"
       blanks:
         - { id: b1, width_hint: 3 }
     answer:
       blanks:
-        b1: [上がる, あがる]
+        b1: [閉まる, しまる]
     known_wrong:
-      - answer: 上がり
-        feedback_vi: 上がりそうです là "trông như sắp tăng" (tự mình đoán). Có nguồn tin - 上がるそうです.
+      - answer: 閉まり
+        feedback_vi: 閉まりそうです là "trông như sắp đóng cửa" (tự mình đoán). Nghe anh Tanaka kể - 閉まるそうです.
         error_tag: souda_type
-      - answer: 上がって
-        feedback_vi: Trước そうだ truyền đạt dùng thể thường - 上がる.
+      - answer: 閉まって
+        feedback_vi: Trước そうだ truyền đạt dùng thể thường - 閉まる.
         error_tag: souda_form
     explanation:
-      vi: ニュースによると - theo tin tức; thể thường 上がる + そうです - nghe nói sẽ tăng. Có nguồn tin rõ ràng (によると) là dấu hiệu chắc chắn của そうだ truyền đạt.
-    display_answer: ニュースによると、来月から電気代が上がるそうです。
+      vi: 田中さんの話によると - theo lời anh Tanaka; thể thường 閉まる + そうです - nghe nói sẽ đóng cửa. Có nguồn tin cụ thể (によると) là dấu hiệu của そうだ truyền đạt.
+    display_answer: 田中さんの話によると、駅前のパン屋は来月閉まるそうです。
 
   - key: ja:exercise:n3-guessing-translate-youda
     type: translate

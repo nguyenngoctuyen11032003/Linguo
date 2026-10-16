@@ -242,27 +242,27 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n4-suu
+    item: ja:item:n4-gram-te-wa-ikenai
     prompt:
-      template: "Trong bệnh viện không được hút thuốc. - 病院でたばこを{{b1}}はいけません。"
+      template: "Trong thư viện không được gọi điện thoại. - 図書館で電話を{{b1}}はいけません。"
       blanks:
-        - { id: b1, width_hint: 4 }
+        - { id: b1, width_hint: 2 }
     answer:
       blanks:
-        b1: [吸って, すって]
+        b1: [して]
     known_wrong:
-      - answer: 吸いて
-        feedback_vi: Đuôi う → って - 吸って.
+      - answer: する
+        feedback_vi: はいけません phải đi sau thể て - する → して.
         error_tag: te_form
-      - answer: 吸んで
-        feedback_vi: んで dành cho đuôi む・ぶ・ぬ. 吸う đuôi う → 吸って.
+      - answer: しって
+        feedback_vi: する là động từ bất quy tắc - thể て là して, không phải しって.
         error_tag: te_form
-      - answer: 吸う
-        feedback_vi: はいけません phải đi sau thể て.
+      - answer: しない
+        feedback_vi: Cấm làm gì - V-て + はいけません; しない là thể phủ định.
         error_tag: te_form
     explanation:
-      vi: 吸う thuộc nhóm 1, đuôi う → って. 吸ってはいけません là "không được hút".
-    display_answer: 病院でたばこを吸ってはいけません。
+      vi: 電話をする → 電話をして + はいけません - không được gọi điện. する là một trong hai động từ bất quy tắc, thể て luôn là して.
+    display_answer: 図書館で電話をしてはいけません。
 
   - key: ja:exercise:n4-teiru-translate-may-i-sit
     type: translate

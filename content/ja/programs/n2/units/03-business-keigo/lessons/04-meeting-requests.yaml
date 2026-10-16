@@ -260,32 +260,30 @@ exercises:
     difficulty: 4
     item: ja:item:n2-u3-enryo
     prompt:
-      source_text: Cảm ơn anh/chị đã có lòng, nhưng lần này cho phép tôi xin từ chối ạ. (dùng せっかくですが và 遠慮)
+      source_text: Buổi liên hoan tối nay, cho phép tôi xin không tham gia ạ. (dùng 遠慮)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - せっかくですが、今回は遠慮させていただきます。
-        - せっかくですが、今回はご遠慮させていただきます。
-        - せっかくですが、今回は遠慮いたします。
-        - せっかくですが今回は遠慮させていただきます。
-        - せっかくのお誘いですが、今回は遠慮させていただきます。
-        - せっかくのお話ですが、今回は遠慮させていただきます。
-        - せっかくですが、今回は遠慮させていただけますでしょうか。
-        - せっかくですが、今回は遠慮させていただければと思います。
-        - 折角ですが、今回は遠慮させていただきます。
-        - せっかくですが、このたびは遠慮させていただきます。
-        - せっかくですが、こんかいはえんりょさせていただきます。
+        - 今晩の飲み会は、遠慮させていただきます。
+        - 今晩の飲み会は遠慮させていただきます。
+        - 今夜の飲み会は、遠慮させていただきます。
+        - 今日の飲み会は、遠慮させていただきます。
+        - 今晩の飲み会は、ご遠慮させていただきます。
+        - 今晩の飲み会は、遠慮いたします。
+        - 申し訳ありませんが、今晩の飲み会は遠慮させていただきます。
+        - 今晩の懇親会は、遠慮させていただきます。
+        - こんばんののみかいは、えんりょさせていただきます。
     known_wrong:
-      - answer: せっかくですが、今回はご遠慮ください。
+      - answer: 今晩の飲み会は、ご遠慮ください。
         feedback_vi: ご遠慮ください là "xin anh/chị đừng..." - bảo người kia không làm, không phải mình từ chối.
         error_tag: kenjougo_meaning
-      - answer: せっかくですが、今回は遠慮しないでください。
+      - answer: 今晩の飲み会は、遠慮しないでください。
         feedback_vi: 遠慮しないで là "đừng khách sáo" - ngược ý.
         error_tag: vocab_confusion
     explanation:
-      vi: せっかくですが - cảm ơn đã có lòng nhưng...; 遠慮させていただきます - xin phép từ chối. ご遠慮させていただきます vẫn hay nghe dù về lý thuyết thừa ご.
-    display_answer: せっかくですが、今回は遠慮させていただきます。
+      vi: 遠慮させていただきます - xin phép không tham gia; cách từ chối mềm, không nói thẳng 行きません. ご遠慮させていただきます vẫn hay nghe dù về lý thuyết thừa ご.
+    display_answer: 今晩の飲み会は、遠慮させていただきます。
 
   # ---------------- application ----------------
   - key: ja:exercise:n2-u3-meeting-requests-listen-result

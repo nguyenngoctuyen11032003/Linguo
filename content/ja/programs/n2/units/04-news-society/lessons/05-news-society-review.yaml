@@ -204,7 +204,7 @@ exercises:
     difficulty: 4
     item: ja:item:n2-u4-hitode-busoku
     prompt:
-      template: "介護の現場では{{b1}}が深刻だ。(thiếu nhân lực)"
+      template: "若い働き手が減り、建設業界では{{b1}}が続いている。(thiếu nhân lực)"
       blanks:
         - { id: b1, width_hint: 4 }
     answer:
@@ -218,8 +218,8 @@ exercises:
         feedback_vi: 人出 là lượng người ra đường. Người làm, sức người - 人手.
         error_tag: kanji
     explanation:
-      vi: 人手不足が深刻だ - thiếu nhân lực nghiêm trọng.
-    display_answer: 介護の現場では人手不足が深刻だ。
+      vi: 人手不足が続いている - tình trạng thiếu nhân lực kéo dài. 働き手 - người lao động; 減り là dạng nối văn viết của 減って.
+    display_answer: 若い働き手が減り、建設業界では人手不足が続いている。
 
   - key: ja:exercise:n2-news-society-review-translate-happyou
     type: translate

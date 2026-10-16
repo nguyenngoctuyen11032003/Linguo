@@ -318,36 +318,30 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 3
-    item: ja:item:mimasu
+    item: ja:item:yomimasu
     prompt:
-      source_text: Buổi tối tôi xem tivi ở nhà.
+      source_text: Tôi đọc sách ở thư viện.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - よるうちでテレビをみます。
-        - 夜家でテレビを見ます。
-        - 夜うちでテレビを見ます。
-        - よる、うちでテレビをみます。
-        - 夜、家でテレビを見ます。
-        - 夜、うちでテレビを見ます。
-        - よるテレビをうちでみます。
-        - わたしはよるうちでテレビをみます。
-        - 私は夜家でテレビを見ます。
-        - 私は夜うちでテレビを見ます。
-        - よるはうちでテレビをみます。
-        - 夜は家でテレビを見ます。
-        - 夜はうちでテレビを見ます。
+        - としょかんでほんをよみます。
+        - 図書館で本を読みます。
+        - わたしはとしょかんでほんをよみます。
+        - 私は図書館で本を読みます。
+        - ほんをとしょかんでよみます。
+        - 本を図書館で読みます。
+        - としょかんで本を読みます。
     known_wrong:
-      - answer: よるうちにテレビをみます。
-        feedback_vi: Nơi diễn ra hành động dùng で - うちで.
+      - answer: としょかんにほんをよみます。
+        feedback_vi: Nơi diễn ra hành động dùng で - としょかんで.
         error_tag: particle_ni_de
-      - answer: よるうちでテレビおみます。
+      - answer: としょかんでほんおよみます。
         feedback_vi: Trợ từ tân ngữ viết を.
         error_tag: particle_o_spelling
-      - answer: よるうちでテレビをみません。
-        feedback_vi: Câu khẳng định dùng みます.
-        error_tag: negation
+      - answer: としょかんでほんがよみます。
+        feedback_vi: Vật bị đọc là tân ngữ - dùng を, không dùng が.
+        error_tag: particle_o
     explanation:
-      vi: よる (buổi tối) + うちで (ở nhà) + テレビを (tivi) + みます (xem).
-    display_answer: よるうちでテレビをみます。
+      vi: としょかんで (ở thư viện - nơi làm việc gì đó) + ほんを (sách - tân ngữ) + よみます (đọc). Tiếng Việt đặt "ở thư viện" cuối câu, tiếng Nhật đặt trước động từ.
+    display_answer: としょかんでほんをよみます。

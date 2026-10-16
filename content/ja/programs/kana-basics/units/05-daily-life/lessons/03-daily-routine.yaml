@@ -322,31 +322,27 @@ exercises:
     difficulty: 3
     item: ja:item:benkyou-shimasu
     prompt:
-      source_text: Hằng ngày tôi học lúc 8 giờ tối.
+      source_text: Chủ nhật tôi không học.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - まいにちよるはちじにべんきょうします。
-        - 毎日夜八時に勉強します。
-        - 毎日夜8時に勉強します。
-        - まいにちごごはちじにべんきょうします。
-        - 毎日午後八時に勉強します。
-        - 毎日午後8時に勉強します。
-        - よるはちじにまいにちべんきょうします。
-        - わたしはまいにちよるはちじにべんきょうします。
-        - 私は毎日夜八時に勉強します。
-        - 私は毎日夜8時に勉強します。
+        - にちようびはべんきょうしません。
+        - 日曜日は勉強しません。
+        - わたしはにちようびはべんきょうしません。
+        - わたしはにちようびにべんきょうしません。
+        - 私は日曜日は勉強しません。
+        - にちようびにはべんきょうしません。
+        - 日曜日には勉強しません。
+        - にちようびにべんきょうしません。
+        - 日曜日に勉強しません。
     known_wrong:
-      - answer: まいにちによるはちじにべんきょうします。
-        feedback_vi: まいにち không đi với に.
-        error_tag: particle_ni_time
-      - answer: まいにちよるはちじべんきょうします。
-        feedback_vi: Giờ có số cần に - はちじに.
-        error_tag: particle_ni_time
-      - answer: まいにちよるはちじにべんきょうしません。
-        feedback_vi: Câu khẳng định dùng します.
+      - answer: にちようびはべんきょうします。
+        feedback_vi: Câu phủ định cần ません - べんきょうしません.
         error_tag: negation
+      - answer: にちようびはべんきょうをません。
+        feedback_vi: Phủ định của します là しません; べんきょう + しません viết liền.
+        error_tag: verb_form
     explanation:
-      vi: まいにち (hằng ngày) + よる (buổi tối) + はちじに (lúc 8 giờ) + べんきょうします.
-    display_answer: まいにちよるはちじにべんきょうします。
+      vi: にちようびは (chủ nhật thì) + べんきょうしません. は sau ngày trong tuần nhấn ý "riêng chủ nhật thì (khác ngày thường)"; thứ trong tuần có thể đi với に hoặc không.
+    display_answer: にちようびはべんきょうしません。
