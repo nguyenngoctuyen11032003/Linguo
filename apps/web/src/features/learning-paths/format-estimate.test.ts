@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import type { EstimateResult } from '@linguo/shared';
-import { formatEstimate, isLongEstimate, nudgeMinutesPerDay } from './format-estimate';
+import { estimateRange, formatEstimate, isLongEstimate, nudgeMinutesPerDay } from './format-estimate';
+
+describe('estimateRange', () => {
+  it('gives the numbers and unit formatEstimate words', () => {
+    expect(estimateRange(12, 8)).toEqual({ min: 8, max: 12, unit: 'tuần' });
+    expect(estimateRange(43, 69)).toEqual({ min: 10, max: 16, unit: 'tháng' });
+    expect(estimateRange(264, 428)).toEqual({ min: 5, max: 8, unit: 'năm' });
+  });
+});
 
 describe('formatEstimate', () => {
   it('keeps short plans in weeks, up to 12 weeks', () => {

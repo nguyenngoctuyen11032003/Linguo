@@ -2,15 +2,20 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router';
 import { LEVEL_INFO, type LevelCode } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
+import { CountUp } from '@/components/ui/CountUp';
 import { RouteLine } from '@/components/ui/RouteLine';
-import { formatEstimate } from '@/features/learning-paths/format-estimate';
+import { estimateRange } from '@/features/learning-paths/format-estimate';
 import type { LearningPath } from '@/features/learning-paths/service';
+
+/** Short enough to finish while the learner reads the heading. */
+const COUNT_MS = 1200;
 
 export function OnboardingCelebration({ path, onDone }: { path: LearningPath; onDone: () => void }) {
   const navigate = useNavigate();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const from = LEVEL_INFO[path.currentLevel as LevelCode].label;
   const to = LEVEL_INFO[path.targetLevel as LevelCode].label;
+  const estimate = estimateRange(path.estimate.weeksMin, path.estimate.weeksMax);
   const unsure = path.startPoint === 'unsure';
   const beginner = path.startPoint === 'new';
   // Placement test (spec 4 §5). Replaces the wizard entry so "back" from the test does not reopen an empty wizard.
@@ -42,8 +47,15 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
       <h1 ref={headingRef} tabIndex={-1} className="text-[28px] font-bold tracking-[-0.03em] focus:outline-none">
         Lộ trình đã sẵn sàng!
       </h1>
-      <p className="text-[17px] text-muted">
-        Ước lượng {formatEstimate(path.estimate.weeksMin, path.estimate.weeksMax)} để đạt {to}.
+      {/* The estimate counts up (spec onboarding step 6); CountUp shows the final numbers at once under reduced motion. */}
+      <p data-testid="celebration-estimate" className="text-[17px] text-muted">
+        Ước lượng khoảng <CountUp to={estimate.min} durationMs={COUNT_MS} className="tabular-nums" />
+        {estimate.min !== estimate.max && (
+          <>
+            –<CountUp to={estimate.max} durationMs={COUNT_MS} className="tabular-nums" />
+          </>
+        )}{' '}
+        {estimate.unit} để đạt {to}.
       </p>
       {unsure ? (
         <>
