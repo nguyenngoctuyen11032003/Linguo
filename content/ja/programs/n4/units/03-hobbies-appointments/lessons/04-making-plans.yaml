@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-making-plans
+order_index: 4
+level: n4
+title:
+  vi: Hẹn gặp - rủ rê, たら và từ chối khéo
+objectives:
+  - vi: Rủ bạn bè bằng thể ý chí (行こう) và hỏi ý kiến bằng V-ようか.
+  - vi: Đặt điều kiện "nếu / khi" bằng たら.
+  - vi: Hỏi giờ giấc thuận tiện, chốt chỗ hẹn và từ chối lịch sự.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-weather-seasons]
+items:
+  - item: ja:item:n4-gram-volitional
+  - item: ja:item:n4-gram-tara
+  - item: ja:item:n4-tsugou
+  - item: ja:item:n4-yakusoku
+  - item: ja:item:n4-machiawase
+  - item: ja:item:n4-phrase-zannen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn rủ "Cùng đi xem phim nhé", hỏi "Thứ Bảy bạn có tiện không?", chốt "Gặp trước ga lúc 10 giờ nhé" và từ chối khéo khi bận.
+  - type: explain
+    text:
+      vi: Thể ý chí (行こう, 食べよう, しよう) học ở bài 2 cũng là cách rủ thân mật - bằng 行きましょう nhưng dùng với bạn bè. Thêm か để hỏi ý kiến - 何を食べようか (mình ăn gì đây?).
+  - type: explain
+    text:
+      vi: "たら = thể た + ら: 行った → 行ったら, 暇だった → 暇だったら, 雨だった → 雨だったら. Nghĩa là \"nếu …\" hoặc \"khi … xong thì\" (駅に着いたら、電話してください)."
+  - type: explain
+    text:
+      vi: Hỏi lịch sự về thời gian - ご都合はいかがですか. Chốt thời gian, địa điểm - N + にしましょう (十時にしましょう). Từ chối - 残念ですが、その日はちょっと都合が悪いです.
+  - type: deep_explain
+    text:
+      vi: Người Nhật thường không từ chối thẳng. Câu bỏ lửng その日はちょっと… (hôm đó thì hơi…) đã đủ để người nghe hiểu là "không được". Sau khi từ chối, thêm また今度誘ってください để giữ quan hệ.
+  - type: example
+    target: 今度の土曜日、一緒に映画を見に行こう。
+    target_lang: ja
+    translation:
+      vi: Thứ Bảy này cùng đi xem phim nhé.
+    note:
+      vi: 行く → 行こう - rủ thân mật.
+  - type: example
+    target: 時間があったら、一緒に行きませんか。
+    target_lang: ja
+    translation:
+      vi: Nếu có thời gian thì đi cùng không?
+    note:
+      vi: ある → あった → あったら.
+  - type: example
+    target: 待ち合わせは駅の前で、十時にしましょう。
+    target_lang: ja
+    translation:
+      vi: Mình hẹn gặp trước ga lúc 10 giờ nhé.
+    note:
+      vi: N + にしましょう - chốt lựa chọn.
+  - type: example
+    target: 残念ですが、その日は約束があるので、行けません。
+    target_lang: ja
+    translation:
+      vi: Tiếc quá, hôm đó tôi có hẹn rồi nên không đi được.
+    note:
+      vi: 残念ですが mở đầu từ chối; lý do + ので; 行けません (thể khả năng).
+  - type: common_mistake
+    wrong: 部長、一緒に食べよう。
+    right: 部長、一緒に食べませんか。
+    target_lang: ja
+    note:
+      vi: Thể ý chí là rủ thân mật. Với cấp trên dùng V-ませんか.
+  - type: common_mistake
+    wrong: 駅に着くたら、電話してください。
+    right: 駅に着いたら、電話してください。
+    target_lang: ja
+    note:
+      vi: たら gắn vào thể た - 着く → 着いた → 着いたら.
+  - type: common_mistake
+    wrong: 暇たら、遊びに来てください。
+    right: 暇だったら、遊びに来てください。
+    target_lang: ja
+    note:
+      vi: Tính từ đuôi な và danh từ cần だった trước ら - 暇だったら.
+  - type: summary
+    points:
+      - vi: Thể ý chí - rủ thân mật (行こう); V-ようか - hỏi ý kiến.
+      - vi: V-た / A-かった / N-だった + ら - nếu, khi.
+      - vi: Hỏi lịch - ご都合はいかがですか; chốt - N にしましょう.
+      - vi: Từ chối - 残念ですが / その日はちょっと….
+      - vi: 都合 sự thuận tiện · 約束 hẹn, lời hứa · 待ち合わせ hẹn gặp.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-pln-mcq-lets-go
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-volitional
+    prompt:
+      stem: Rủ bạn thân "Cùng đi biển nhé!". Chọn câu tự nhiên.
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 一緒に海へ行こう！, lang: ja }
+        - { id: p8d, text: 一緒に海へ行きよう！, lang: ja }
+        - { id: w2s, text: 一緒に海へ行くよう！, lang: ja }
+        - { id: m6q, text: 一緒に海へ行かよう！, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 行く thuộc nhóm 1 - く → こ + う (行こう). よう chỉ dùng cho nhóm 2.
+    display_answer: 一緒に海へ行こう！
+
+  - key: ja:exercise:n4-pln-mcq-tsugou
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-tsugou
+    prompt:
+      stem: すみません、その日はちょっと都合が悪いです。 Người nói muốn nói gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: Hôm đó tôi không tiện., lang: vi }
+        - { id: y1n, text: Hôm đó thời tiết xấu., lang: vi }
+        - { id: e7c, text: Hôm đó tôi bị ốm., lang: vi }
+        - { id: h4b, text: Hôm đó tôi rảnh., lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 都合が悪い là "không tiện" - cách từ chối lịch sự, không nói rõ lý do. "Thời tiết xấu" là 天気が悪い.
+    display_answer: Hôm đó tôi không tiện.
+
+  - key: ja:exercise:n4-pln-listen-meet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-machiawase
+    prompt:
+      audio_asset_id: null
+      fallback_text: 待ち合わせは駅の前で、十時にしましょう。
+      options:
+        - { id: a8u, text: Mình hẹn gặp trước ga lúc 10 giờ nhé., lang: vi }
+        - { id: q2z, text: Mình hẹn gặp trong ga lúc 10 giờ nhé., lang: vi }
+        - { id: d6l, text: Mình hẹn gặp trước ga lúc 2 giờ nhé., lang: vi }
+        - { id: s9f, text: Tàu đến ga lúc 10 giờ., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 駅の前で - trước ga; 十時 - 10 giờ (2 giờ là 二時); にしましょう - chốt lựa chọn.
+    display_answer: Mình hẹn gặp trước ga lúc 10 giờ nhé.
+
+  - key: ja:exercise:n4-pln-fill-tara
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-tara
+    prompt:
+      template: "Đến ga thì gọi điện cho tôi nhé. - 駅に{{b1}}、電話してください。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - 着く thuộc nhóm 1, đuôi く.
+        - Thể た là 着いた, thêm ら.
+    answer:
+      blanks:
+        b1: [着いたら, ついたら]
+    known_wrong:
+      - answer: 着くたら
+        feedback_vi: たら gắn vào thể た - 着いた + ら.
+        error_tag: tara_form
+      - answer: 着きたら
+        feedback_vi: Không lấy thể ます. 着く → 着いた → 着いたら.
+        error_tag: tara_form
+    explanation:
+      vi: 着く → 着いた → 着いたら - "khi đến nơi thì".
+    display_answer: 駅に着いたら、電話してください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-pln-fill-hima
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-tara
+    prompt:
+      template: "Nếu rảnh thì đến chơi nhé. - {{b1}}、遊びに来てください。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [暇だったら, ひまだったら]
+    known_wrong:
+      - answer: 暇たら
+        feedback_vi: Tính từ đuôi な cần だった - 暇だったら.
+        error_tag: tara_form
+      - answer: 暇かったら
+        feedback_vi: かったら dành cho tính từ đuôi い. 暇 là đuôi な - 暇だったら.
+        error_tag: tara_form
+    explanation:
+      vi: 暇 (đuôi な) → 暇だった → 暇だったら.
+    display_answer: 暇だったら、遊びに来てください。
+
+  - key: ja:exercise:n4-pln-fill-what-eat
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-volitional
+    prompt:
+      template: "(Với bạn) Trưa nay mình ăn gì đây? - 昼ご飯、何を{{b1}}か。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [食べよう, たべよう]
+    known_wrong:
+      - answer: 食べろう
+        feedback_vi: 食べる thuộc nhóm 2 - bỏ る thêm よう (食べよう).
+        error_tag: volitional_form
+      - answer: 食べこう
+        feedback_vi: 食べる thuộc nhóm 2 - 食べよう.
+        error_tag: volitional_form
+    explanation:
+      vi: V-ようか - hỏi ý kiến thân mật "mình … nhé?/ đây?". 食べる → 食べよう.
+    display_answer: 昼ご飯、何を食べようか。
+
+  - key: ja:exercise:n4-pln-translate-promise
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-yakusoku
+    prompt:
+      source_text: Hôm nay tôi có hẹn với bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今日は友達と約束があります。
+        - きょうはともだちとやくそくがあります。
+        - 今日、友達と約束があります。
+        - 今日は友達と約束があるんです。
+        - 今日は友達との約束があります。
+        - 今日は友達と会う約束があります。
+        - 今日は友達と約束がある。
+    known_wrong:
+      - answer: 今日は友達に約束があります。
+        feedback_vi: Hẹn cùng ai dùng と - 友達と約束がある.
+        error_tag: particle_to
+      - answer: 今日は友達と約束がいます。
+        feedback_vi: Cuộc hẹn là sự việc, dùng あります.
+        error_tag: aru_iru
+    explanation:
+      vi: N + と + 約束があります - có hẹn với ai.
+    display_answer: 今日は友達と約束があります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-pln-mcq-decline
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-phrase-zannen
+    prompt:
+      stem: Đồng nghiệp lớn tuổi rủ bạn đi uống tối thứ Sáu, nhưng bạn đã có hẹn. Câu từ chối nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 残念ですが、金曜日はちょっと約束があって…。, lang: ja }
+        - { id: j7r, text: いいえ、行きません。, lang: ja }
+        - { id: c1o, text: 金曜日は行こう。, lang: ja }
+        - { id: n5g, text: 残念ですが、行かなくてもいいです。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 残念ですが + lý do bỏ lửng là từ chối khéo. いいえ、行きません quá thẳng; 行こう là nhận lời; 行かなくてもいい là "không cần đi" - lạc nghĩa.
+    display_answer: 残念ですが、金曜日はちょっと約束があって…。
+
+  - key: ja:exercise:n4-pln-translate-free
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-tara
+    prompt:
+      source_text: 仕事が終わったら、一緒に晩ご飯を食べませんか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Làm xong việc thì cùng ăn tối không?
+        - Xong việc thì cùng ăn tối không?
+        - Khi xong việc, cùng ăn tối không?
+        - Khi làm xong việc, mình cùng ăn tối nhé?
+        - Xong việc thì mình cùng ăn tối nhé?
+        - Làm xong việc thì cùng đi ăn tối không?
+        - Xong việc thì cùng đi ăn tối không?
+        - Tan làm thì cùng ăn tối không?
+        - Tan làm thì cùng đi ăn tối không?
+        - Sau khi làm xong việc, cùng ăn tối không?
+        - Làm xong việc thì cùng ăn tối nhé?
+        - Xong việc rồi cùng ăn tối không?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nếu không có việc thì cùng ăn tối không?
+        feedback_vi: 終わったら là "khi (công việc) kết thúc", không phải "không có việc".
+        error_tag: vocab_meaning
+      - answer: Làm xong việc rồi, tôi đã ăn tối.
+        feedback_vi: 食べませんか là lời mời, không phải kể lại.
+        error_tag: invitation
+    explanation:
+      vi: 終わったら - khi kết thúc / xong; 食べませんか - lời mời lịch sự "cùng ăn không?".
+    display_answer: Làm xong việc thì cùng ăn tối không?
+
+  - key: ja:exercise:n4-pln-order-convenient
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tsugou
+    prompt:
+      instruction: 'Sắp xếp thành câu lịch sự: "Thứ Bảy anh/chị có tiện không ạ?"'
+      tokens:
+        - { id: t-ikaga, text: いかがですか }
+        - { id: t-gotsugou, text: ご都合は }
+        - { id: t-doyoubi, text: 土曜日の }
+        - { id: t-tsugou-ga, text: 都合が }
+    answer:
+      orders:
+        - [t-doyoubi, t-gotsugou, t-ikaga]
+    explanation:
+      vi: 土曜日の + ご都合は + いかがですか. いかが là cách hỏi lịch sự của どう.
+    display_answer: 土曜日のご都合はいかがですか。
+
+  - key: ja:exercise:n4-pln-translate-rain
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-tara
+    prompt:
+      source_text: Nếu trời mưa thì mình xem phim ở nhà nhé. (nói với bạn)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 雨だったら、家で映画を見よう。
+        - 雨だったら家で映画を見よう。
+        - あめだったら、いえでえいがをみよう。
+        - あめだったら、うちでえいがをみよう。
+        - 雨だったら、うちで映画を見よう。
+        - 雨が降ったら、家で映画を見よう。
+        - 雨が降ったら、うちで映画を見よう。
+        - 雨が降ったら家で映画を見よう。
+        - 雨だったら、家で映画を見ようね。
+        - 雨が降ったら、家で映画を見ようね。
+        - 雨だったら、家で映画を見ましょう。
+        - 雨が降ったら、家で映画を見ましょう。
+    known_wrong:
+      - answer: 雨たら、家で映画を見よう。
+        feedback_vi: Danh từ cần だった - 雨だったら.
+        error_tag: tara_form
+      - answer: 雨が降るたら、家で映画を見よう。
+        feedback_vi: たら gắn vào thể た - 降った + ら.
+        error_tag: tara_form
+      - answer: 雨だったら、家で映画を見ろう。
+        feedback_vi: 見る thuộc nhóm 2 - 見よう.
+        error_tag: volitional_form
+    explanation:
+      vi: 雨だったら / 雨が降ったら - nếu mưa; 見る → 見よう - rủ thân mật.
+    display_answer: 雨だったら、家で映画を見よう。

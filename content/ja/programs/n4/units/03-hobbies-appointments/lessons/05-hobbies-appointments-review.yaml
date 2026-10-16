@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-hobbies-appointments-review
+order_index: 5
+level: n4
+title:
+  vi: Ôn tập - hẹn đi chơi cuối tuần
+objectives:
+  - vi: Phối hợp sở thích, dự định, thời tiết và rủ rê trong một cuộc trò chuyện.
+  - vi: Nhận lời, từ chối và đổi hẹn một cách tự nhiên.
+  - vi: Đọc hiểu một tin nhắn hẹn gặp ngắn.
+estimated_minutes: 15
+skills: [grammar, reading, speaking, listening]
+prerequisites: [ja:lesson:n4-making-plans]
+items:
+  - item: ja:item:n4-phrase-mata-kondo
+  - item: ja:item:n4-renraku
+  - item: ja:item:n4-phrase-tanoshimi
+  - item: ja:item:n4-gram-no-ga-suki
+    role: reuse
+  - item: ja:item:n4-gram-te-miru
+    role: reuse
+  - item: ja:item:n4-gram-you-to-omou
+    role: reuse
+  - item: ja:item:n4-gram-sou-looks
+    role: reuse
+  - item: ja:item:n4-gram-volitional
+    role: reuse
+  - item: ja:item:n4-gram-tara
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn rủ bạn đi chơi theo sở thích chung, đổi kế hoạch khi trời mưa, báo đến muộn và nói "Mình mong lắm!".
+  - type: explain
+    text:
+      vi: "Unit này có bốn nhóm: sở thích (ことです, のが好き), dự định (てみる, ようと思う, つもり), thời tiết (そうです, なります, でしょう) và hẹn gặp (行こう, たら, 都合)."
+  - type: explain
+    text:
+      vi: Một cuộc hẹn thường đi theo trình tự - hỏi sở thích → rủ (行きませんか / 行こう) → hỏi lịch (都合) → chốt giờ và chỗ (にしましょう) → nói 楽しみにしています.
+  - type: explain
+    text:
+      vi: Khi không đi được, từ chối khéo rồi thêm また今度 để giữ quan hệ. Khi đến muộn, nhớ 連絡する (báo trước).
+  - type: deep_explain
+    text:
+      vi: 'Tin nhắn mẫu: 明日の釣り、天気予報によると雨が降るそうだよ。雨だったら、映画にしようか。駅に着いたら連絡してね。楽しみにしてる！ Lưu ý そうだ (nghe nói) sau thể thường, たら cho điều kiện, và thể ý chí + か để hỏi ý kiến.'
+  - type: example
+    target: 山に登るのが好きなら、今度一緒に行ってみない？
+    target_lang: ja
+    translation:
+      vi: Nếu cậu thích leo núi thì lần tới đi thử cùng tớ không?
+    note:
+      vi: のが好き + なら (nếu như); てみない？ - rủ thử thân mật.
+  - type: example
+    target: 空が暗くなりましたね。雨が降りそうだから、また今度にしましょう。
+    target_lang: ja
+    translation:
+      vi: Trời tối rồi nhỉ. Có vẻ sắp mưa nên để lần sau nhé.
+    note:
+      vi: なりました - thay đổi; 降りそう - đoán từ bầu trời; また今度にしましょう - hoãn lại.
+  - type: example
+    target: 少し遅れるので、着いたら連絡します。
+    target_lang: ja
+    translation:
+      vi: Tôi sẽ đến muộn một chút, đến nơi tôi sẽ báo nhé.
+    note:
+      vi: 着いたら - khi đến nơi.
+  - type: example
+    target: 日曜日のピクニック、楽しみにしています。
+    target_lang: ja
+    translation:
+      vi: Tôi rất mong buổi picnic Chủ nhật.
+    note:
+      vi: 楽しみにしています cho việc sắp tới.
+  - type: common_mistake
+    wrong: 日曜日のピクニック、楽しいです。
+    right: 日曜日のピクニック、楽しみにしています。
+    target_lang: ja
+    note:
+      vi: Việc chưa xảy ra không dùng 楽しいです; nói mình mong chờ - 楽しみにしています.
+  - type: common_mistake
+    wrong: 遅れたら、連絡しました。
+    right: 遅れたら、連絡してください。
+    target_lang: ja
+    note:
+      vi: Vế sau たら ở đây là việc chưa xảy ra - dùng lời nhờ, ý định, không dùng quá khứ.
+  - type: common_mistake
+    wrong: また今度に誘いましょう。
+    right: また今度誘ってください。
+    target_lang: ja
+    note:
+      vi: Sau khi từ chối, nhờ người kia lần sau rủ lại - 誘ってください. また今度 đứng trước động từ, không cần に.
+  - type: summary
+    points:
+      - vi: Sở thích - ことです / のが好き; dự định - ようと思っています / つもりです; thử - てみる.
+      - vi: Thời tiết - 降りそう (trông có vẻ), 降るそう (nghe nói), でしょう (có lẽ), なります.
+      - vi: Hẹn - 行こう / 行きませんか, たら, ご都合, にしましょう.
+      - vi: また今度 để lần sau · 連絡 liên lạc · 楽しみにしています rất mong chờ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-har-mcq-tanoshimi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-phrase-tanoshimi
+    prompt:
+      stem: Tuần sau bạn đi du lịch với bạn bè. Bạn muốn nói "Mình rất mong chuyến đi". Chọn câu đúng.
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 旅行、楽しみにしています。, lang: ja }
+        - { id: p8d, text: 旅行、楽しかったです。, lang: ja }
+        - { id: w2s, text: 旅行、楽しいでしょう。, lang: ja }
+        - { id: m6q, text: 旅行、楽しそうでした。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Mong chờ việc sắp tới - 楽しみにしています. 楽しかった là đã vui (quá khứ); でしょう là phỏng đoán; 楽しそうでした là "trông có vẻ vui".
+    display_answer: 旅行、楽しみにしています。
+
+  - key: ja:exercise:n4-har-listen-late
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-renraku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 少し遅れるので、着いたら連絡します。
+      options:
+        - { id: a8u, text: "Tôi sẽ đến muộn một chút, đến nơi tôi sẽ báo.", lang: vi }
+        - { id: q2z, text: "Tôi đến sớm một chút, đến nơi tôi sẽ báo.", lang: vi }
+        - { id: d6l, text: "Tôi đã đến rồi, bạn liên lạc với tôi nhé.", lang: vi }
+        - { id: s9f, text: Nếu bạn đến muộn thì báo tôi nhé., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 遅れる - đến muộn; 着いたら - khi đến nơi; 連絡します - tôi sẽ liên lạc.
+    display_answer: Tôi sẽ đến muộn một chút, đến nơi tôi sẽ báo.
+
+  - key: ja:exercise:n4-har-mcq-kondo
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-phrase-mata-kondo
+    prompt:
+      stem: Bạn rủ đồng nghiệp đi ăn, họ đáp すみません、今日はちょっと…。また今度お願いします。 Ý họ là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: "Hôm nay không được, để lần sau nhé.", lang: vi }
+        - { id: y1n, text: "Hôm nay được, đi ngay thôi.", lang: vi }
+        - { id: e7c, text: Họ không bao giờ muốn đi., lang: vi }
+        - { id: h4b, text: Họ muốn đi hôm nay nhưng sẽ đến muộn., lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 今日はちょっと… là từ chối khéo; また今度 - để lần sau, giữ thiện ý chứ không từ chối hẳn.
+    display_answer: Hôm nay không được, để lần sau nhé.
+
+  - key: ja:exercise:n4-har-fill-try-climb
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-miru
+    prompt:
+      template: "Lần tới đi thử cùng tớ không? - 今度一緒に{{b1}}みない？"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Thể て của 行く là ngoại lệ.
+        - 行く → 行って.
+    answer:
+      blanks:
+        b1: [行って, いって]
+    known_wrong:
+      - answer: 行いて
+        feedback_vi: 行く là ngoại lệ - thể て là 行って.
+        error_tag: te_form
+      - answer: 行き
+        feedback_vi: てみる cần thể て - 行って + みない.
+        error_tag: te_miru
+    explanation:
+      vi: 行って + みない？ - rủ "đi thử không?" kiểu thân mật.
+    display_answer: 今度一緒に行ってみない？
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-har-fill-rain-change
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-sou-looks
+    prompt:
+      template: "Có vẻ sắp mưa nên để lần sau nhé. - 雨が{{b1}}だから、また今度{{b2}}しましょう。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [降りそう, ふりそう]
+        b2: [に]
+    known_wrong:
+      - answer: 降るそう
+        feedback_vi: Đoán từ những gì mình thấy dùng gốc 降り + そう. 降るそう là "nghe nói".
+        error_tag: sou_looks_hearsay
+      - answer: を
+        feedback_vi: Chốt lựa chọn dùng N + にしましょう.
+        error_tag: ni_suru
+    explanation:
+      vi: 降りそうだから - vì trông có vẻ sắp mưa; また今度にしましょう - để lần sau.
+    display_answer: 雨が降りそうだから、また今度にしましょう。
+
+  - key: ja:exercise:n4-har-translate-contact
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-renraku
+    prompt:
+      source_text: Nếu đến muộn thì hãy báo cho tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 遅れたら、連絡してください。
+        - 遅れたら連絡してください。
+        - おくれたら、れんらくしてください。
+        - 遅れたら、私に連絡してください。
+        - 遅れるときは、連絡してください。
+        - 遅れる時は、連絡してください。
+        - 遅れそうだったら、連絡してください。
+        - 遅れたら、連絡して。
+        - 遅れたら、連絡してね。
+        - 遅れる場合は、連絡してください。
+    known_wrong:
+      - answer: 遅れるたら、連絡してください。
+        feedback_vi: たら gắn vào thể た - 遅れた + ら.
+        error_tag: tara_form
+      - answer: 遅れたら、連絡しました。
+        feedback_vi: Câu nhờ vả - dùng 連絡してください.
+        error_tag: tense_past
+    explanation:
+      vi: 遅れる → 遅れたら + 連絡してください.
+    display_answer: 遅れたら、連絡してください。
+
+  - key: ja:exercise:n4-har-fill-like-climb
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-no-ga-suki
+    prompt:
+      template: "Tôi thích leo núi. - 私は山に{{b1}}が好きです。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [登るの, のぼるの, 登ること, のぼること]
+    known_wrong:
+      - answer: 登ります
+        feedback_vi: Trước が好き cần danh từ hóa bằng thể từ điển + の - 登るの.
+        error_tag: koto_nominalizer
+      - answer: 登る
+        feedback_vi: Động từ cần の hoặc こと trước が - 登るの.
+        error_tag: koto_nominalizer
+    explanation:
+      vi: 登る + の + が好きです. 登ることが好きです cũng đúng.
+    display_answer: 私は山に登るのが好きです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-har-translate-message
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-gram-tara
+    prompt:
+      source_text: 雨だったら、映画にしようか。駅に着いたら連絡してね。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu mưa thì mình xem phim nhé? Đến ga thì báo tớ nhé.
+        - Nếu trời mưa thì mình đi xem phim nhé? Đến ga thì báo tớ nhé.
+        - Nếu mưa thì đổi sang xem phim nhé? Đến ga thì báo tớ nhé.
+        - Nếu trời mưa thì đổi sang xem phim nhé? Đến ga thì báo tớ nhé.
+        - Nếu mưa thì mình xem phim nhé? Đến ga thì liên lạc với tớ nhé.
+        - Nếu trời mưa thì mình xem phim nhé? Đến ga thì liên lạc với tớ nhé.
+        - Nếu mưa thì xem phim nhé? Đến ga thì báo tớ nhé.
+        - Nếu mưa thì mình xem phim nhé? Khi đến ga thì báo tớ nhé.
+        - Nếu mưa thì mình xem phim nhé? Đến ga thì báo mình nhé.
+        - Nếu mưa thì mình xem phim nhé? Đến ga thì báo cho tớ nhé.
+        - Nếu mưa thì chọn xem phim nhé? Đến ga thì báo tớ nhé.
+        - Mưa thì mình xem phim nhé? Đến ga thì báo tớ nhé.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì trời mưa nên mình đã xem phim. Đến ga thì báo tớ nhé.
+        feedback_vi: だったら là "nếu", và しようか là rủ, chưa xảy ra.
+        error_tag: tara_form
+      - answer: Nếu mưa thì mình xem phim nhé? Tớ đã đến ga rồi.
+        feedback_vi: 着いたら連絡してね là nhờ "đến ga thì báo", không phải "đã đến".
+        error_tag: tara_form
+    explanation:
+      vi: 雨だったら - nếu mưa; 映画にしようか - chọn phim nhé?; 着いたら連絡してね - đến nơi thì báo nhé.
+    display_answer: Nếu mưa thì mình xem phim nhé? Đến ga thì báo tớ nhé.
+
+  - key: ja:exercise:n4-har-order-plan
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-you-to-omou
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Cuối tuần này tôi định thử làm bánh."'
+      tokens:
+        - { id: t-omotte, text: と思っています }
+        - { id: t-tsukutte, text: 作って }
+        - { id: t-shuumatsu, text: 今週末、 }
+        - { id: t-miyou, text: みよう }
+        - { id: t-keeki, text: ケーキを }
+        - { id: t-miru, text: みる }
+    answer:
+      orders:
+        - [t-shuumatsu, t-keeki, t-tsukutte, t-miyou, t-omotte]
+    explanation:
+      vi: 作ってみる (thử làm) → thể ý chí 作ってみよう + と思っています (định). みると思っています sai mẫu dự định.
+    display_answer: 今週末、ケーキを作ってみようと思っています。
+
+  - key: ja:exercise:n4-har-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-volitional
+    prompt:
+      stem: 'Bạn thân nhắn: 日曜日、釣りに行かない？ Bạn muốn nhận lời và rủ "đi sớm nhé". Trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: いいね！朝早く行こう。, lang: ja }
+        - { id: j7r, text: いいね！朝早く行きよう。, lang: ja }
+        - { id: c1o, text: 残念ですが、朝早く行きます。, lang: ja }
+        - { id: n5g, text: いいね！朝早く行ったら。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Nhận lời thân mật いいね！, rủ bằng thể ý chí 行こう. 行きよう chia sai; 残念ですが là từ chối; 行ったら bỏ lửng vô nghĩa ở đây.
+    display_answer: いいね！朝早く行こう。
+
+  - key: ja:exercise:n4-har-translate-weekend
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-tara
+    prompt:
+      source_text: Nếu cuối tuần trời đẹp thì cùng đi picnic không? (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 週末、天気がよかったら、一緒にピクニックに行きませんか。
+        - 週末天気がよかったら、一緒にピクニックに行きませんか。
+        - 週末、天気が良かったら、一緒にピクニックに行きませんか。
+        - しゅうまつ、てんきがよかったら、いっしょにピクニックにいきませんか。
+        - 週末、晴れたら、一緒にピクニックに行きませんか。
+        - 週末、天気がよかったら、ピクニックに行きませんか。
+        - 週末、天気がいいなら、一緒にピクニックに行きませんか。
+        - 週末に天気がよかったら、一緒にピクニックに行きませんか。
+        - 週末、天気がよかったら、一緒にピクニックへ行きませんか。
+    known_wrong:
+      - answer: 週末、天気がいいかったら、一緒にピクニックに行きませんか。
+        feedback_vi: いい là ngoại lệ - よかった → よかったら.
+        error_tag: tara_form
+      - answer: 週末、天気がよかったら、一緒にピクニックに行こう。
+        feedback_vi: Câu này đúng ngữ pháp nhưng là thân mật; đề yêu cầu lịch sự - 行きませんか.
+        error_tag: politeness
+    explanation:
+      vi: いい → よかった → よかったら; mời lịch sự - 行きませんか.
+    display_answer: 週末、天気がよかったら、一緒にピクニックに行きませんか。

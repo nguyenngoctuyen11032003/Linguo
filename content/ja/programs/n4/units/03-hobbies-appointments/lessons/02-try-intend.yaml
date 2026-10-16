@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-try-intend
+order_index: 2
+level: n4
+title:
+  vi: Làm thử và dự định - てみる, ようと思う, つもり
+objectives:
+  - vi: Nói "thử làm" bằng V-てみます.
+  - vi: Chia thể ý chí và nói dự định bằng V意向形 + と思っています.
+  - vi: Nói ý định chắc chắn bằng V辞書形 / V-ない + つもりです.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:n4-hobbies]
+items:
+  - item: ja:item:n4-gram-te-miru
+  - item: ja:item:n4-gram-you-to-omou
+  - item: ja:item:n4-gram-tsumori
+  - item: ja:item:n4-narau
+  - item: ja:item:n4-hajimeru
+  - item: ja:item:n4-kyoumi
+  - item: ja:item:n4-yameru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể "Tôi đã ăn thử natto", "Tôi định học guitar" và "Nghỉ hè tôi định đi Hokkaido".
+  - type: explain
+    text:
+      vi: V-てみます là "thử làm V để xem thế nào" - giống chữ "thử" trong tiếng Việt. みる chia như 見る (nhóm 2) - てみました, てみたい, てみてください.
+  - type: explain
+    text:
+      vi: "Thể ý chí - nhóm 1 đổi âm cuối sang hàng お + う (行く → 行こう, 習う → 習おう, 読む → 読もう); nhóm 2 bỏ る + よう (始める → 始めよう); する → しよう, 来る → 来よう (こよう). Thêm と思っています để nói dự định."
+  - type: explain
+    text:
+      vi: つもりです đứng sau thể từ điển hoặc thể ない, nói ý định đã quyết khá chắc - 行くつもりです, 行かないつもりです.
+  - type: deep_explain
+    text:
+      vi: ようと思っています là dự định đã nghĩ từ trước và vẫn còn; ようと思います là ý vừa nảy ra lúc nói. つもり nghe quyết tâm hơn nên tránh dùng để hỏi kế hoạch người trên (先生は何をするつもりですか nghe thiếu lễ độ) - hãy hỏi 何をなさいますか hoặc đơn giản 何をしますか.
+  - type: example
+    target: 納豆を初めて食べてみました。
+    target_lang: ja
+    translation:
+      vi: Lần đầu tiên tôi ăn thử natto.
+    note:
+      vi: 食べる → 食べて + みました.
+  - type: example
+    target: 来月からギターを習おうと思っています。
+    target_lang: ja
+    translation:
+      vi: Tôi định từ tháng sau sẽ học guitar.
+    note:
+      vi: 習う → 習おう (う → おう).
+  - type: example
+    target: 夏休みに北海道へ行くつもりです。
+    target_lang: ja
+    translation:
+      vi: Nghỉ hè tôi định đi Hokkaido.
+    note:
+      vi: Thể từ điển + つもりです.
+  - type: example
+    target: 日本の歴史に興味があるので、本を読んでみたいです。
+    target_lang: ja
+    translation:
+      vi: Tôi quan tâm đến lịch sử Nhật nên muốn thử đọc sách.
+    note:
+      vi: N + に興味がある; てみたい - muốn thử.
+  - type: common_mistake
+    wrong: ギターを習うと思っています。
+    right: ギターを習おうと思っています。
+    target_lang: ja
+    note:
+      vi: Dự định dùng thể ý chí (習おう). 習うと思います lại thành "tôi nghĩ là (ai đó) sẽ học".
+  - type: common_mistake
+    wrong: この靴、履いて見てもいいですか。
+    right: この靴、履いてみてもいいですか。
+    target_lang: ja
+    note:
+      vi: '"Thử" viết bằng hiragana みる; 見る (kanji) là nhìn bằng mắt.'
+  - type: common_mistake
+    wrong: 日本の歴史が興味があります。
+    right: 日本の歴史に興味があります。
+    target_lang: ja
+    note:
+      vi: Đối tượng quan tâm đi với に.
+  - type: summary
+    points:
+      - vi: V-てみます - thử làm.
+      - vi: Thể ý chí (行こう, 始めよう, しよう, 来よう) + と思っています - dự định.
+      - vi: V辞書形 / V-ない + つもりです - ý định chắc chắn.
+      - vi: 習う học (có người dạy) · 始める bắt đầu · 興味 sự quan tâm · やめる bỏ, thôi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-tri-mcq-volitional
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-you-to-omou
+    prompt:
+      stem: Thể ý chí của 習う (học) là gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 習おう, lang: ja }
+        - { id: p8d, text: 習よう, lang: ja }
+        - { id: w2s, text: 習いよう, lang: ja }
+        - { id: m6q, text: 習わう, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 習う thuộc nhóm 1, う đổi sang お rồi thêm う - 習おう. よう chỉ dành cho nhóm 2.
+    display_answer: 習おう
+
+  - key: ja:exercise:n4-tri-mcq-try
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-te-miru
+    prompt:
+      stem: この服、着てみてもいいですか。 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: Tôi mặc thử bộ đồ này được không?, lang: vi }
+        - { id: y1n, text: Tôi xem bộ đồ này được không?, lang: vi }
+        - { id: e7c, text: Tôi mua bộ đồ này được không?, lang: vi }
+        - { id: h4b, text: Bạn đã mặc bộ đồ này chưa?, lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 着てみる là "mặc thử"; てもいいですか là xin phép. Chỉ "xem" sẽ là 見てもいいですか.
+    display_answer: Tôi mặc thử bộ đồ này được không?
+
+  - key: ja:exercise:n4-tri-listen-guitar
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-narau
+    prompt:
+      audio_asset_id: null
+      fallback_text: 来月からギターを習おうと思っています。
+      options:
+        - { id: a8u, text: Tôi định từ tháng sau sẽ học guitar., lang: vi }
+        - { id: q2z, text: Tôi đã học guitar từ tháng trước., lang: vi }
+        - { id: d6l, text: Tôi nghĩ tháng sau bạn sẽ học guitar., lang: vi }
+        - { id: s9f, text: Tôi định bỏ guitar từ tháng sau., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 来月から - từ tháng sau; 習おうと思っています - tôi định học. "Bỏ" sẽ là やめよう.
+    display_answer: Tôi định từ tháng sau sẽ học guitar.
+
+  - key: ja:exercise:n4-tri-fill-kyoumi
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kyoumi
+    prompt:
+      template: "Tôi quan tâm đến lịch sử Nhật Bản. - 日本の歴史{{b1}}興味があります。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - Đối tượng của 興味がある.
+        - Trợ từ chỉ hướng / đích.
+    answer:
+      blanks:
+        b1: [に]
+    known_wrong:
+      - answer: が
+        feedback_vi: が đã dùng cho 興味 (興味がある). Đối tượng quan tâm đi với に.
+        error_tag: particle_ni_kyoumi
+      - answer: を
+        feedback_vi: ある không nhận tân ngữ を. Dùng に.
+        error_tag: particle_ni_kyoumi
+    explanation:
+      vi: Mẫu cố định N + に興味があります.
+    display_answer: 日本の歴史に興味があります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-tri-fill-tsumori
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-tsumori
+    prompt:
+      template: "Tôi định sẽ không hút thuốc nữa. - もうたばこは{{b1}}つもりです。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [吸わない, すわない]
+    known_wrong:
+      - answer: 吸いない
+        feedback_vi: 吸う (đuôi う) → 吸わない (う → わ).
+        error_tag: nai_form
+      - answer: 吸います
+        feedback_vi: Trước つもり dùng thể thường, và câu cần phủ định.
+        error_tag: tsumori_form
+      - answer: 吸おう
+        feedback_vi: Thể ý chí đi với と思う, không đi với つもり.
+        error_tag: tsumori_form
+    explanation:
+      vi: V-ない + つもりです - định không làm. 吸う → 吸わない.
+    display_answer: もうたばこは吸わないつもりです。
+
+  - key: ja:exercise:n4-tri-fill-hajimeru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-hajimeru
+    prompt:
+      template: "Tôi định bắt đầu tập yoga. - ヨガを{{b1}}と思っています。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [始めよう, はじめよう]
+    known_wrong:
+      - answer: 始めろう
+        feedback_vi: 始める thuộc nhóm 2 - bỏ る thêm よう (始めよう).
+        error_tag: volitional_form
+      - answer: 始める
+        feedback_vi: Nói dự định của mình dùng thể ý chí 始めよう + と思っています.
+        error_tag: volitional_form
+      - answer: 始まろう
+        feedback_vi: 始まる là tự động từ. Bắt đầu làm gì dùng 始める.
+        error_tag: vocab_transitive
+    explanation:
+      vi: 始める (nhóm 2) → 始めよう + と思っています.
+    display_answer: ヨガを始めようと思っています。
+
+  - key: ja:exercise:n4-tri-translate-natto
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-miru
+    prompt:
+      source_text: Tôi đã ăn thử natto.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 納豆を食べてみました。
+        - なっとうをたべてみました。
+        - 納豆を食べてみた。
+        - 私は納豆を食べてみました。
+        - 納豆を初めて食べてみました。
+    known_wrong:
+      - answer: 納豆を食べて見ました。
+        feedback_vi: '"Thử" viết bằng hiragana - てみました.'
+        error_tag: te_miru
+      - answer: 納豆を食べみました。
+        feedback_vi: Cần thể て trước みる - 食べて + みました.
+        error_tag: te_form
+      - answer: 納豆を食べました。
+        feedback_vi: Thiếu nghĩa "thử" - thêm てみました.
+        error_tag: te_miru
+    explanation:
+      vi: 食べる → 食べて + みました. みる viết bằng hiragana.
+    display_answer: 納豆を食べてみました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-tri-translate-hokkaido
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-tsumori
+    prompt:
+      source_text: 夏休みに北海道へ行くつもりです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nghỉ hè tôi định đi Hokkaido.
+        - Kỳ nghỉ hè tôi định đi Hokkaido.
+        - Vào kỳ nghỉ hè tôi định đi Hokkaido.
+        - Nghỉ hè tôi dự định đi Hokkaido.
+        - Kỳ nghỉ hè tôi dự định đi Hokkaido.
+        - Tôi định đi Hokkaido vào kỳ nghỉ hè.
+        - Tôi định đi Hokkaido vào nghỉ hè.
+        - Tôi dự định đi Hokkaido vào kỳ nghỉ hè.
+        - Nghỉ hè tôi định sẽ đi Hokkaido.
+        - Nghỉ hè này tôi định đi Hokkaido.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nghỉ hè tôi đã đi Hokkaido.
+        feedback_vi: つもりです là dự định, chưa xảy ra.
+        error_tag: tense_past
+      - answer: Nghỉ hè tôi không định đi Hokkaido.
+        feedback_vi: Câu gốc khẳng định - 行くつもり. Phủ định là 行かないつもり.
+        error_tag: negation
+    explanation:
+      vi: 行くつもりです - định đi; 夏休みに - vào kỳ nghỉ hè.
+    display_answer: Nghỉ hè tôi định đi Hokkaido.
+
+  - key: ja:exercise:n4-tri-order-study
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-you-to-omou
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Năm sau tôi định đi du học Nhật."'
+      tokens:
+        - { id: t-omotte, text: と思っています }
+        - { id: t-nihon, text: 日本へ }
+        - { id: t-rainen, text: 来年、 }
+        - { id: t-ryuugaku, text: 留学しよう }
+        - { id: t-ryuugaku-suru, text: 留学する }
+    answer:
+      orders:
+        - [t-rainen, t-nihon, t-ryuugaku, t-omotte]
+    explanation:
+      vi: する → しよう (thể ý chí) + と思っています. 留学すると思っています nghĩa là "tôi nghĩ (ai đó) sẽ du học".
+    display_answer: 来年、日本へ留学しようと思っています。
+
+  - key: ja:exercise:n4-tri-mcq-shoes
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-miru
+    prompt:
+      stem: Ở cửa hàng giày, bạn muốn xin đi thử đôi này. Nói thế nào?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: この靴、履いてみてもいいですか。, lang: ja }
+        - { id: j7r, text: この靴、履いてもらってもいいですか。, lang: ja }
+        - { id: c1o, text: この靴、履こうと思っていますか。, lang: ja }
+        - { id: n5g, text: この靴、履くつもりですか。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 履いてみる (đi thử giày) + てもいいですか (xin phép). Các câu khác hỏi dự định hoặc nhờ người khác đi giày.
+    display_answer: この靴、履いてみてもいいですか。
+
+  - key: ja:exercise:n4-tri-translate-quit
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-yameru
+    prompt:
+      source_text: Bận quá nên tôi định bỏ tennis.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 忙しいので、テニスをやめようと思っています。
+        - 忙しいから、テニスをやめようと思っています。
+        - いそがしいので、テニスをやめようとおもっています。
+        - 忙しいので、テニスをやめるつもりです。
+        - 忙しいから、テニスをやめるつもりです。
+        - 忙しいので、テニスをやめようと思います。
+        - 忙しいから、テニスをやめようと思います。
+        - 忙しいので、テニスを辞めようと思っています。
+        - 忙しいので、テニスをやめようと思ってます。
+    known_wrong:
+      - answer: 忙しいので、テニスをやめろうと思っています。
+        feedback_vi: やめる thuộc nhóm 2 - やめよう.
+        error_tag: volitional_form
+      - answer: 忙しいので、テニスをやめると思っています。
+        feedback_vi: Dự định của mình dùng thể ý chí - やめようと思っています.
+        error_tag: volitional_form
+      - answer: 忙しいので、テニスをやめました。
+        feedback_vi: Câu gốc là "định bỏ", chưa bỏ.
+        error_tag: tense_past
+    explanation:
+      vi: Lý do (忙しいので) + やめよう + と思っています, hoặc やめるつもりです.
+    display_answer: 忙しいので、テニスをやめようと思っています。

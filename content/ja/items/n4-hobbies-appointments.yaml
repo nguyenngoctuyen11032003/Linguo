@@ -1,0 +1,641 @@
+# Học liệu unit "Sở thích, thời tiết & hẹn gặp" (JLPT N4). reading là cách đọc bằng kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: sở thích - ことです / のが好きです =================
+  - key: ja:item:n4-gram-shumi-koto
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: 趣味は V辞書形 + ことです
+      romanization: shumi wa ... koto desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Sở thích của tôi là (làm) V - こと biến động từ thành danh từ.
+      examples:
+        - target: 私の趣味は写真を撮ることです。
+          translation:
+            vi: Sở thích của tôi là chụp ảnh.
+        - target: 趣味は料理を作ることです。
+          translation:
+            vi: Sở thích của tôi là nấu ăn.
+      confusion:
+        vi: Trước こと là thể từ điển (撮る), không dùng thể ます (撮りますこと là sai). Danh từ thì nói thẳng - 趣味はサッカーです.
+
+  - key: ja:item:n4-gram-no-ga-suki
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V辞書形 + のが 好き・上手・下手です
+      romanization: no ga suki / jouzu / heta desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Thích / giỏi / kém (việc) làm V - の biến động từ thành danh từ, rồi đi với が.
+      examples:
+        - target: 私は歌を歌うのが好きです。
+          translation:
+            vi: Tôi thích hát.
+        - target: 兄は絵をかくのが上手です。
+          translation:
+            vi: Anh trai tôi vẽ giỏi.
+        - target: 私は泳ぐのが下手です。
+          translation:
+            vi: Tôi bơi kém.
+      confusion:
+        vi: 好き・上手・下手 đều là tính từ đuôi な nên vật được thích đi với が, không phải を. Trước 好きです dùng の hoặc こと đều được, nhưng sau 趣味は chỉ dùng ことです.
+
+  - key: ja:item:n4-shumi
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 趣味
+      reading: しゅみ
+      romanization: shumi
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở thích
+      examples:
+        - target: 趣味は何ですか。
+          translation:
+            vi: Sở thích của bạn là gì?
+      confusion:
+        vi: Hỏi người lớn tuổi lịch sự hơn - ご趣味は何ですか.
+
+  - key: ja:item:n4-tsuri
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 釣り
+      reading: つり
+      romanization: tsuri
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu cá
+      examples:
+        - target: 週末は父と釣りに行きます。
+          translation:
+            vi: Cuối tuần tôi đi câu cá với bố.
+      confusion:
+        vi: Đi câu cá là 釣りに行く - mục đích (danh từ hoạt động) + に + 行く.
+
+  - key: ja:item:n4-toru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 撮る
+      reading: とる
+      romanization: toru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: chụp (ảnh), quay (phim)
+      examples:
+        - target: ここで写真を撮ってもいいですか。
+          translation:
+            vi: Tôi chụp ảnh ở đây được không?
+      confusion:
+        vi: Cùng đọc とる với 取る (lấy, cầm). Chụp ảnh viết 撮る; thể て là 撮って.
+
+  - key: ja:item:n4-jouzu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 上手
+      reading: じょうず
+      romanization: jouzu
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: giỏi, khéo
+      examples:
+        - target: 日本語が上手ですね。
+          translation:
+            vi: Tiếng Nhật của bạn giỏi quá.
+      confusion:
+        vi: 上手 dùng để khen người khác. Nói về mình, người Nhật khiêm tốn dùng 得意 (とくい) hoặc nói いいえ、まだまだです.
+
+  - key: ja:item:n4-heta
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 下手
+      reading: へた
+      romanization: heta
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: kém, vụng
+      examples:
+        - target: 私は料理が下手です。
+          translation:
+            vi: Tôi nấu ăn dở.
+      confusion:
+        vi: Nói người khác 下手 rất thất lễ; chỉ nên dùng khi nói về bản thân. "Không thích" là 好きじゃない, khác "kém".
+
+  # ================= bài 2: てみる / ようと思う / つもり =================
+  - key: ja:item:n4-gram-te-miru
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-て + みます
+      romanization: -te mimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Thử làm V (để xem thế nào).
+      examples:
+        - target: 納豆を食べてみました。
+          translation:
+            vi: Tôi đã ăn thử natto.
+        - target: この服、着てみてもいいですか。
+          translation:
+            vi: Tôi mặc thử bộ đồ này được không?
+      confusion:
+        vi: みる ở đây viết bằng hiragana, chia như 見る nhóm 2 (てみます, てみたい, てみてください).
+
+  - key: ja:item:n4-gram-you-to-omou
+    type: grammar_point
+    level: n4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V意向形 + と思っています
+      romanization: -ou to omotte imasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Tôi định làm V. Thể ý chí: nhóm 1 âm cuối đổi sang hàng お + う (行く → 行こう, 習う → 習おう); nhóm 2 bỏ る + よう (始める → 始めよう); する → しよう, 来る → 来よう (こよう)."
+      examples:
+        - target: 来年、日本へ留学しようと思っています。
+          translation:
+            vi: Tôi định năm sau đi du học Nhật.
+        - target: ギターを習おうと思っています。
+          translation:
+            vi: Tôi định học guitar.
+      confusion:
+        vi: と思っています là dự định đã nghĩ từ trước; と思います là vừa quyết định lúc nói. Đừng dùng thể ます trước と思う (行きますと思う là sai).
+
+  - key: ja:item:n4-gram-tsumori
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V辞書形 / V-ない + つもりです
+      romanization: tsumori desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Có ý định (chắc chắn hơn) làm / không làm V.
+      examples:
+        - target: 夏休みに北海道へ行くつもりです。
+          translation:
+            vi: Nghỉ hè tôi định đi Hokkaido.
+        - target: もうたばこは吸わないつもりです。
+          translation:
+            vi: Tôi định sẽ không hút thuốc nữa.
+      confusion:
+        vi: つもり là quyết tâm khá chắc chắn; ようと思っています mềm hơn. Không dùng つもり để hỏi kế hoạch của người trên.
+
+  - key: ja:item:n4-narau
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 習う
+      reading: ならう
+      romanization: narau
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: học (từ người khác, học kỹ năng)
+      examples:
+        - target: 先生にピアノを習っています。
+          translation:
+            vi: Tôi đang học piano với thầy.
+      confusion:
+        vi: 習う là học có người dạy, thường là kỹ năng; 勉強する là tự học, nghiên cứu. Người dạy đi với に.
+
+  - key: ja:item:n4-hajimeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 始める
+      reading: はじめる
+      romanization: hajimeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: bắt đầu (làm gì)
+      examples:
+        - target: 去年からヨガを始めました。
+          translation:
+            vi: Tôi bắt đầu tập yoga từ năm ngoái.
+      confusion:
+        vi: 始める cần tân ngữ を (ヨガを始める); 始まる là tự động từ (授業が始まる - giờ học bắt đầu).
+
+  - key: ja:item:n4-kyoumi
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 興味
+      reading: きょうみ
+      romanization: kyoumi
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự quan tâm, hứng thú
+      examples:
+        - target: 日本の歴史に興味があります。
+          translation:
+            vi: Tôi quan tâm đến lịch sử Nhật Bản.
+      confusion:
+        vi: Mẫu là N + に興味があります - đối tượng đi với に, không dùng が hay を.
+
+  - key: ja:item:n4-yameru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: やめる
+      romanization: yameru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: bỏ, thôi (không làm nữa)
+      examples:
+        - target: 忙しくて、テニスをやめました。
+          translation:
+            vi: Bận quá nên tôi bỏ tennis rồi.
+      confusion:
+        vi: Bỏ việc làm là 会社を辞める (cùng đọc やめる). Với thói quen, sở thích thường viết bằng hiragana.
+
+  # ================= bài 3: thời tiết - そうです / なります / でしょう =================
+  - key: ja:item:n4-gram-sou-looks
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc / A-gốc + そうです
+      romanization: -sou desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Trông có vẻ / sắp - đoán từ những gì nhìn thấy. 降ります → 降りそう; おいしい → おいしそう (bỏ い); 元気 → 元気そう. Đặc biệt - いい → よさそう."
+      examples:
+        - target: 雨が降りそうです。
+          translation:
+            vi: Trời có vẻ sắp mưa.
+        - target: このケーキはおいしそうですね。
+          translation:
+            vi: Cái bánh này trông ngon nhỉ.
+      confusion:
+        vi: Không dùng そう cho thứ nhìn là biết ngay (きれいそう nói về cô gái là sai, chỉ nói きれいです). Khác そうです "nghe nói" đứng sau thể thường (降るそうです).
+
+  - key: ja:item:n4-gram-naru
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: A-く / Na-に / N-に + なります
+      romanization: -ku / -ni narimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trở nên, trở thành - tính từ đuôi い đổi い → く, tính từ đuôi な và danh từ thêm に.
+      examples:
+        - target: だんだん暖かくなりました。
+          translation:
+            vi: Trời dần dần ấm lên rồi.
+        - target: 春になりました。
+          translation:
+            vi: Xuân đã đến rồi.
+        - target: 部屋がきれいになりました。
+          translation:
+            vi: Căn phòng đã sạch sẽ rồi.
+      confusion:
+        vi: いい → よくなる (không phải いくなる). きれい là tính từ đuôi な dù kết thúc bằng い - きれいになる.
+
+  - key: ja:item:n4-gram-deshou
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Thể thường + でしょう
+      romanization: deshou
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Có lẽ, chắc là - phỏng đoán, hay dùng trong dự báo thời tiết. Danh từ và tính từ đuôi な bỏ だ (雨でしょう).
+      examples:
+        - target: 明日は晴れるでしょう。
+          translation:
+            vi: Ngày mai có lẽ trời sẽ nắng.
+        - target: 午後から雨でしょう。
+          translation:
+            vi: Từ chiều có lẽ sẽ mưa.
+      pronunciation_note:
+        vi: Khi lên giọng cuối câu (でしょう？) thì thành câu hỏi xác nhận "đúng không?".
+      confusion:
+        vi: 雨だでしょう là sai - danh từ nối trực tiếp 雨でしょう. Thân mật nói だろう.
+
+  - key: ja:item:n4-tenki-yohou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 天気予報
+      reading: てんきよほう
+      romanization: tenki yohou
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự báo thời tiết
+      examples:
+        - target: 天気予報によると、明日は雪が降るそうです。
+          translation:
+            vi: Theo dự báo thời tiết, ngày mai nghe nói có tuyết.
+      pronunciation_note:
+        vi: よほう có hai âm dài - [yo-hoo].
+      confusion:
+        vi: '"Theo dự báo" là 天気予報によると, thường đi với そうです (nghe nói) ở cuối câu.'
+
+  - key: ja:item:n4-kisetsu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 季節
+      reading: きせつ
+      romanization: kisetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa
+      examples:
+        - target: どの季節が一番好きですか。
+          translation:
+            vi: Bạn thích mùa nào nhất?
+      confusion:
+        vi: Bốn mùa - 春 (はる) xuân, 夏 (なつ) hè, 秋 (あき) thu, 冬 (ふゆ) đông.
+
+  - key: ja:item:n4-tsuyu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 梅雨
+      reading: つゆ
+      romanization: tsuyu
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa mưa (khoảng tháng 6 - tháng 7 ở Nhật)
+      examples:
+        - target: 梅雨は毎日雨が降って、じめじめします。
+          translation:
+            vi: Mùa mưa ngày nào cũng mưa, ẩm ướt khó chịu.
+      confusion:
+        vi: Đọc つゆ (cũng có cách đọc ばいう trong tin tức). Vào mùa mưa là 梅雨に入る.
+
+  - key: ja:item:n4-suzushii
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 涼しい
+      reading: すずしい
+      romanization: suzushii
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: mát mẻ
+      examples:
+        - target: 秋になって、涼しくなりました。
+          translation:
+            vi: Sang thu, trời đã mát hơn.
+      confusion:
+        vi: 涼しい nói về không khí dễ chịu; nước, đồ vật mát lạnh dùng 冷たい (つめたい).
+
+  # ================= bài 4: hẹn gặp - thể ý chí / たら =================
+  - key: ja:item:n4-gram-volitional
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Thể ý chí (行こう・食べよう・しよう)
+      romanization: ikou / tabeyou / shiyou
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Rủ rê thân mật "cùng … nhé" - dạng thường của ましょう. Hỏi ý kiến - V-ようか (行こうか？).
+      examples:
+        - target: 一緒に映画を見に行こう。
+          translation:
+            vi: Cùng đi xem phim nhé.
+        - target: 何を食べようか。
+          translation:
+            vi: Mình ăn gì đây?
+      confusion:
+        vi: 行こう = 行きましょう nhưng thân mật, chỉ dùng với bạn bè. Với người trên, mời bằng 行きませんか.
+
+  - key: ja:item:n4-gram-tara
+    type: grammar_point
+    level: n4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-た / A-かった / N-だった + ら
+      romanization: -tara
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nếu / khi … thì - thêm ら vào thể た (行ったら, 暇だったら, 雨だったら).
+      examples:
+        - target: 時間があったら、一緒に行きませんか。
+          translation:
+            vi: Nếu có thời gian thì đi cùng không?
+        - target: 駅に着いたら、電話してください。
+          translation:
+            vi: Đến ga thì gọi điện cho tôi nhé.
+      confusion:
+        vi: Phủ định - なかったら (雨が降らなかったら). Vế sau たら có thể là lời mời, nhờ vả, ý định - linh hoạt hơn と và ば.
+
+  - key: ja:item:n4-tsugou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 都合
+      reading: つごう
+      romanization: tsugou
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thuận tiện (về thời gian, hoàn cảnh)
+      examples:
+        - target: 土曜日のご都合はいかがですか。
+          translation:
+            vi: Thứ Bảy anh/chị có tiện không ạ?
+      confusion:
+        vi: Từ chối khéo - その日はちょっと都合が悪いです (hôm đó tôi không tiện lắm). Hỏi lịch sự - ご都合.
+
+  - key: ja:item:n4-yakusoku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 約束
+      reading: やくそく
+      romanization: yakusoku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: lời hứa; cuộc hẹn
+      examples:
+        - target: 今日は友達と約束があります。
+          translation:
+            vi: Hôm nay tôi có hẹn với bạn.
+      confusion:
+        vi: Giữ lời hứa là 約束を守る (まもる); thất hứa là 約束を破る (やぶる).
+
+  - key: ja:item:n4-machiawase
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 待ち合わせ
+      reading: まちあわせ
+      romanization: machiawase
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc hẹn gặp nhau (ở một chỗ)
+      examples:
+        - target: 待ち合わせは駅の前で、十時にしましょう。
+          translation:
+            vi: Mình hẹn gặp trước ga lúc 10 giờ nhé.
+      confusion:
+        vi: Quyết định thời gian, địa điểm dùng N + にします (十時にしましょう).
+
+  - key: ja:item:n4-phrase-zannen
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 残念ですが
+      reading: ざんねんですが
+      romanization: zannen desu ga
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Tiếc quá, nhưng … (mở đầu lời từ chối)
+      examples:
+        - target: 残念ですが、その日は都合が悪いです。
+          translation:
+            vi: Tiếc quá, hôm đó tôi không tiện.
+      confusion:
+        vi: Người Nhật ít nói thẳng いいえ、行きません; thường mở đầu bằng 残念ですが hoặc すみません、その日はちょっと….
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n4-phrase-mata-kondo
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: また今度
+      reading: またこんど
+      romanization: mata kondo
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Để lần sau nhé.
+      examples:
+        - target: じゃあ、また今度誘ってください。
+          translation:
+            vi: Vậy lần sau rủ tôi nhé.
+      confusion:
+        vi: Dùng sau khi từ chối để giữ quan hệ; không nhất thiết là hẹn cụ thể.
+
+  - key: ja:item:n4-renraku
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 連絡
+      reading: れんらく
+      romanization: renraku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: liên lạc, báo tin
+      examples:
+        - target: 遅れるときは、連絡してください。
+          translation:
+            vi: Khi đến muộn thì hãy báo cho tôi.
+      confusion:
+        vi: Người được liên lạc đi với に (友達に連絡する).
+
+  - key: ja:item:n4-phrase-tanoshimi
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 楽しみにしています
+      reading: たのしみにしています
+      romanization: tanoshimi ni shite imasu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Tôi rất mong chờ (điều sắp tới).
+      examples:
+        - target: 来週の旅行、楽しみにしています。
+          translation:
+            vi: Tôi rất mong chuyến đi tuần sau.
+      confusion:
+        vi: Thân mật nói 楽しみ！ hoặc 楽しみだね. Không dùng 楽しいです cho việc chưa xảy ra.
