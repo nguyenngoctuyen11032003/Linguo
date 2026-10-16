@@ -70,8 +70,14 @@ export function AiFallback({ state, error, quota, fallback, onRetry }: AiFallbac
 
   return (
     <div className="space-y-4">
-      <div role="alert" className="flex items-start gap-3 rounded-2xl bg-text/[0.03] px-4 py-3 ring-1 ring-border ring-inset">
-        <Icon aria-hidden className="mt-0.5 size-5 shrink-0 text-muted" />
+      {/* scroll-mt: when focus or scrollIntoView lands here (also inside the AI sheet) it stays clear of the app bar. */}
+      <div
+        role="alert"
+        className="flex scroll-mt-[calc(4.5rem+env(safe-area-inset-top,0px))] items-start gap-3 rounded-2xl bg-text/[0.03] px-4 py-3.5 ring-1 ring-border ring-inset"
+      >
+        <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-text/[0.06] text-muted">
+          <Icon aria-hidden className="size-[18px]" />
+        </span>
         <div className="min-w-0 space-y-1">
           <p className="font-semibold">{title}</p>
           <p className="text-[15px] text-muted">{message}</p>

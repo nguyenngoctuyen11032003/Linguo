@@ -26,7 +26,6 @@ export function DiagnosticCard({ pathId }: { pathId: string }) {
       }
       to={`/app/kiem-tra/${pathId}`}
       label={resume ? 'Làm tiếp' : 'Làm bài kiểm tra'}
-      shortLabel={resume ? undefined : 'Làm bài'}
     />
   );
 }

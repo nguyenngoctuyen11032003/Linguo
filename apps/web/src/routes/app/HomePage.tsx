@@ -97,12 +97,13 @@ export function HomePage() {
           <WeeklySummaryCard />
           <SpreadWarning paths={paths.paths} />
           {paths.current.status === 'active' && pathSummary}
-          {/* Two short tiles side by side on phones; a lone tile takes the full row. */}
-          <div className="grid grid-cols-2 gap-3 *:min-w-0 max-[379px]:grid-cols-1 sm:grid-cols-1 max-sm:[&>*:only-child]:col-span-2">
-            <DiagnosticCard pathId={paths.current.id} />
+          {/* The placement test arrives after a request and may stay hidden, so it takes its own full row: the two
+              static shortcuts below never change width when it appears (no layout shift, no lone tall tile). */}
+          <DiagnosticCard pathId={paths.current.id} />
+          <div className="grid grid-cols-2 gap-3 *:min-w-0 max-[379px]:grid-cols-1 sm:grid-cols-1">
             <SpeakingCard />
+            <ClassesHomeCard />
           </div>
-          <ClassesHomeCard />
           <HomeMotivation pathId={paths.current.id} />
         </>
       )}
