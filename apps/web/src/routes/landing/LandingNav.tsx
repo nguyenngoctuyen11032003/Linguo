@@ -76,7 +76,7 @@ export function LandingNav({ ready }: { ready: boolean }) {
       {/* Floating glass pill: stays reachable while scrolling the long page. */}
       <header className="fixed inset-x-0 top-0 z-30 px-3 pt-[max(0.75rem,env(safe-area-inset-top,0px))] min-[1024px]:hidden">
         <motion.div
-          className="glass mx-auto flex h-14 max-w-5xl items-center justify-between rounded-full pl-3 pr-1.5 shadow-[var(--shadow-dock)]"
+          className="glass bg-[#0c1420]/92! mx-auto flex h-14 max-w-5xl items-center justify-between rounded-full pl-3 pr-1.5 shadow-[var(--shadow-dock)]"
           variants={reveal('drop', reduceMotion)}
           initial="hidden"
           animate={state}

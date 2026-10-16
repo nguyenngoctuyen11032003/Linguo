@@ -17,7 +17,7 @@ export function MethodSection() {
   const state = inView || reduceMotion ? 'shown' : 'hidden';
 
   return (
-    <section id="phuong-phap" aria-labelledby="method-title" className="scroll-mt-20 overflow-x-clip bg-bg px-safe py-[clamp(64px,12vh,120px)]">
+    <section id="phuong-phap" aria-labelledby="method-title" className="min-[1024px]:-scroll-mt-18 overflow-x-clip bg-bg px-safe py-[clamp(64px,12vh,120px)]">
       <div ref={ref} className="mx-auto max-w-5xl min-[1280px]:max-w-[1200px]">
         <motion.h2
           id="method-title"

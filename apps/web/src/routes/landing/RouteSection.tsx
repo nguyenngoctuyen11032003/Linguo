@@ -60,7 +60,7 @@ export function RouteSection() {
     <section
       id="lo-trinh"
       aria-labelledby="route-title"
-      className="relative scroll-mt-20 overflow-x-clip bg-[linear-gradient(180deg,#0B1420_0%,#10283C_45%,#173E5B_75%,#3A2A2A_100%)] px-safe py-[clamp(64px,12vh,120px)]"
+      className="relative min-[1024px]:-scroll-mt-18 overflow-x-clip bg-[linear-gradient(180deg,#0B1420_0%,#10283C_40%,#173E5B_64%,#3A2A2A_84%,var(--bg)_100%)] px-safe py-[clamp(64px,12vh,120px)]"
     >
       <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:grid min-[1024px]:max-w-5xl min-[1280px]:max-w-[1200px] min-[1024px]:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] min-[1024px]:grid-rows-[1fr_1fr] min-[1024px]:gap-x-16">
         <motion.div className="min-[1024px]:self-end min-[1024px]:pb-5" variants={reveal('fadeUp', reduceMotion)} initial="hidden" animate={state}>
