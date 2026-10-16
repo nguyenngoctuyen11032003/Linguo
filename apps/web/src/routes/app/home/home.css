@@ -80,7 +80,8 @@
   content: '';
   position: absolute;
   left: -2.25rem;
-  top: 1.625rem;
+  /* Centre on the unit badge: card padding (1rem) + half the 2.75rem badge - half the node. */
+  top: calc(2.375rem - 0.5625rem);
   z-index: 1;
   width: 1.125rem;
   height: 1.125rem;
@@ -88,6 +89,21 @@
   background: var(--surface-solid);
   border: 2px solid var(--border);
   box-sizing: border-box;
+}
+/* Phones: a slimmer gutter so the unit card (and its own lesson spine) keeps the width. */
+@media (max-width: 639px) {
+  .route {
+    padding-left: 1.5rem;
+  }
+  .route::before {
+    left: calc(0.4375rem - 1px);
+  }
+  .route > li::before {
+    left: -1.5rem;
+    top: calc(2.375rem - 0.4375rem);
+    width: 0.875rem;
+    height: 0.875rem;
+  }
 }
 .route > li[data-state='done']::before {
   background: var(--success);

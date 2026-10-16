@@ -40,11 +40,11 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
   const inline = language.replace('Tiếng', 'tiếng');
   const open = assignments.filter((a) => a.state !== 'done').length;
   return (
-    <SolidCard>
+    <SolidCard className="p-4 sm:p-5">
       <section aria-labelledby={titleId} className="space-y-4">
         <div className="flex min-w-0 items-start gap-3">
             <div className="min-w-0 flex-1 break-words">
-              <h2 id={titleId} className="text-[19px] font-extrabold leading-snug tracking-[-0.02em]">
+              <h2 id={titleId} className="text-[17px] font-extrabold leading-snug sm:text-[19px] tracking-[-0.02em]">
                 {klass.name}
               </h2>
               <p className="mt-0.5 text-[13px] text-muted">
@@ -53,7 +53,7 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
             </div>
             {assignments.length > 0 && (
               <span aria-hidden="true" className="flex shrink-0 flex-col items-end">
-                <span className={cn('stat-num text-[44px] leading-none', open > 0 ? 'text-accent-text' : 'text-success-text')}>{open}</span>
+                <span className={cn('stat-num text-[34px] leading-none sm:text-[44px]', open > 0 ? 'text-accent-text' : 'text-success-text')}>{open}</span>
                 <span className="eyebrow mt-1">còn lại</span>
               </span>
             )}

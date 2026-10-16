@@ -10,6 +10,7 @@ import { joinedMessage } from '@/features/classes/labels';
 import { useLearnerClasses, type LearnerClassesApi } from '@/features/classes/useLearnerClasses';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { cn } from '@/lib/cn';
 import { resolveTimeZone } from '@/lib/dates';
 import { useOnline } from '@/lib/useOnline';
 import { ClassCard } from './ClassCard';
@@ -60,7 +61,7 @@ export function ClassesPage() {
       )}
 
       <div className="reveal-stagger grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-x-8 xl:grid-cols-[minmax(0,1fr)_26rem]">
-      <SolidCard className="p-5 lg:col-start-2 lg:p-6">
+      <SolidCard className="p-4 sm:p-5 lg:col-start-2 lg:p-6">
         <section aria-labelledby="join-class-title" className="space-y-3">
           <h2 id="join-class-title" className="text-xl font-extrabold tracking-[-0.02em]">
             Tham gia lớp mới
@@ -78,7 +79,8 @@ export function ClassesPage() {
         </section>
       </SolidCard>
 
-      <div className="min-w-0 lg:col-start-1 lg:row-span-2 lg:row-start-1">
+      {/* A learner already in a class sees the assignments first on phones; the join form follows. */}
+      <div className={cn('min-w-0 lg:col-start-1 lg:row-span-2 lg:row-start-1', api.classes.length > 0 && 'max-lg:order-first')}>
       <ClassList
         api={api}
         timeZone={timeZone}
@@ -137,7 +139,7 @@ function ClassList({ api, timeZone, currentLanguage, online, onLeave }: ClassLis
       <EmptyState
         icon={Users}
         title="Bạn chưa ở lớp nào"
-        description="Khi giáo viên gửi mã lớp hoặc đường dẫn mời, hãy nhập mã ở trên. Bài được giao sẽ hiện ngay tại đây."
+        description="Khi giáo viên gửi mã lớp hoặc đường dẫn mời, hãy nhập mã vào ô Mã lớp. Bài được giao sẽ hiện ngay tại đây."
       />
     );
   }

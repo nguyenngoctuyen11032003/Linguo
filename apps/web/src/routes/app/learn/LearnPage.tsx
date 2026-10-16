@@ -76,7 +76,7 @@ function LessonNode({ lesson, index, isNext }: { lesson: PathLesson; index: numb
     <span
       aria-hidden="true"
       className={cn(
-        'relative z-10 grid size-14 shrink-0 place-items-center rounded-full text-lg font-extrabold transition-transform duration-150 group-active:translate-y-[3px]',
+        'relative z-10 grid size-12 shrink-0 sm:size-14 place-items-center rounded-full text-lg font-extrabold transition-transform duration-150 group-active:translate-y-[3px]',
         completed && 'bg-success text-white shadow-[0_4px_0_color-mix(in_srgb,var(--success)_55%,black)]',
         !completed && isNext && 'press-accent bg-accent text-on-accent ring-[6px] ring-accent/20',
         !completed && !isNext && lesson.run_status === 'in_progress' && 'press-primary bg-primary text-on-primary',
@@ -101,7 +101,7 @@ function LessonRow({ lesson, lessons, nextId, index }: { lesson: PathLesson; les
     <Link
       to={`/app/hoc-tap/bai/${lesson.lesson_id}`}
       className={cn(
-        'group flex min-h-16 items-center gap-4 rounded-[1.25rem] py-2 pl-1 pr-3 transition-colors hover:bg-text/[0.04] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
+        'group flex min-h-16 items-center gap-3 rounded-[1.25rem] py-2 pl-1 pr-2 sm:gap-4 sm:pr-3 transition-colors hover:bg-text/[0.04] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
         isNext && 'bg-accent/[0.07] ring-1 ring-accent/25 ring-inset',
       )}
     >
@@ -206,7 +206,7 @@ function UnitSection({
           <ChevronDown aria-hidden className="size-5 shrink-0 text-muted transition-transform group-open:rotate-180" />
         </summary>
         {/* The path spine runs through the centre of the lesson nodes. */}
-        <ul className="relative space-y-1 px-3 pb-3 before:absolute before:bottom-8 before:left-[2.75rem] before:top-6 before:w-0.5 before:rounded-full before:bg-border">
+        <ul className="relative space-y-1 px-2.5 pb-3 sm:px-3 before:absolute before:bottom-8 before:left-[calc(2.5rem-1px)] sm:before:left-[calc(2.75rem-1px)] before:top-6 before:w-0.5 before:rounded-full before:bg-border">
           {unit.lessons.map((lesson, i) => (
             <li key={lesson.lesson_id}>
               <LessonRow lesson={lesson} lessons={lessons} nextId={nextId} index={i} />

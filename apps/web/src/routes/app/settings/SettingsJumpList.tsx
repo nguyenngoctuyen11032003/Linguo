@@ -59,7 +59,7 @@ export function SettingsJumpList() {
   return (
     <nav aria-label="Đi tới mục cài đặt" className="min-w-0 lg:sticky lg:top-24 lg:self-start">
       <p className="eyebrow mb-3 hidden px-3 lg:block">Mục cài đặt</p>
-      <ul className="-mx-1.5 flex snap-x gap-2 overflow-x-auto overscroll-x-contain p-1.5 [scrollbar-width:none] lg:mx-0 lg:snap-none lg:flex-col lg:gap-0.5 lg:overflow-visible lg:border-l lg:border-border lg:p-0 [&::-webkit-scrollbar]:hidden">
+      <ul className="-mx-[var(--page-gutter)] flex snap-x scroll-px-[var(--page-gutter)] gap-2 overflow-x-auto overscroll-x-contain px-[var(--page-gutter)] py-1.5 [scrollbar-width:none] lg:mx-0 lg:snap-none lg:flex-col lg:gap-0.5 lg:overflow-visible lg:border-l lg:border-border lg:p-0 [&::-webkit-scrollbar]:hidden">
         {items.map((item) => (
           <li key={item.id} className="shrink-0 snap-start lg:shrink">
             <a

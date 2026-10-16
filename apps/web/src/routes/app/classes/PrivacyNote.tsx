@@ -23,8 +23,8 @@ const NOT_SEEN = [
 export function PrivacyNote({ headingLevel = 'h2' }: { headingLevel?: 'h2' | 'h3' }) {
   const Heading = headingLevel;
   return (
-    <SolidCard>
-      <section aria-labelledby="class-privacy-title" className="space-y-4">
+    <SolidCard className="p-4 sm:p-5">
+      <section aria-labelledby="class-privacy-title" className="@container space-y-4">
         <div>
           <Heading id="class-privacy-title" className="text-[19px] font-extrabold tracking-[-0.02em]">
             Giáo viên thấy gì về bạn?
@@ -33,8 +33,8 @@ export function PrivacyNote({ headingLevel = 'h2' }: { headingLevel?: 'h2' | 'h3
             Chỉ các con số tổng hợp về việc học trong ngôn ngữ của lớp, và chỉ khi bạn còn ở trong lớp.
           </p>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2">
-          <div className="space-y-2 rounded-2xl bg-primary/8 p-4 ring-1 ring-primary/20 ring-inset">
+        <div className="grid gap-3 @lg:grid-cols-2">
+          <div className="space-y-2 rounded-2xl bg-primary/8 p-3.5 sm:p-4 ring-1 ring-primary/20 ring-inset">
             <h3 className="flex items-center gap-2 text-[15px] font-semibold">
               <Eye aria-hidden className="size-5 shrink-0 text-primary" />
               Giáo viên thấy
@@ -45,7 +45,7 @@ export function PrivacyNote({ headingLevel = 'h2' }: { headingLevel?: 'h2' | 'h3
               ))}
             </ul>
           </div>
-          <div className="space-y-2 rounded-2xl bg-success/8 p-4 ring-1 ring-success/20 ring-inset">
+          <div className="space-y-2 rounded-2xl bg-success/8 p-3.5 sm:p-4 ring-1 ring-success/20 ring-inset">
             <h3 className="flex items-center gap-2 text-[15px] font-semibold">
               <EyeOff aria-hidden className="size-5 shrink-0 text-success-text" />
               Giáo viên không thấy
