@@ -7,7 +7,7 @@ import { gradePersonalWord } from './service';
 
 // Personal vocabulary grades that never reached the server (offline, timeout, 408/5xx) wait here and are replayed FIFO
 // by OutboxSyncProvider with the same idempotency key, exactly like review grades (same store, cap, backoff and
-// 7-day expiry). Unlike the lesson and review outboxes this one is wiped on sign-out too (features/account/service.ts).
+// 7-day expiry). Like the lesson and review outboxes it is kept on sign-out and wiped on account deletion (features/account/service.ts).
 
 export const PERSONAL_OUTBOX_KEY_PREFIX = 'linguo-personal-outbox-v1:';
 
