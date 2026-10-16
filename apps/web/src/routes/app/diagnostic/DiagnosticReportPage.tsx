@@ -1,16 +1,24 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { CircleCheck, CircleDashed, Info, X } from 'lucide-react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router';
-import { REPORT_SKILLS, type DiagnosticConfidence, type DiagnosticReport, type PlacementResult } from '@linguo/shared';
+import {
+  CONTENT_MAX_LEVEL,
+  isAtContentCeiling,
+  REPORT_SKILLS,
+  type DiagnosticConfidence,
+  type DiagnosticReport,
+  type PlacementResult,
+} from '@linguo/shared';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useDiagnosticRun } from '@/features/diagnostic/useDiagnosticRun';
+import { contentCeilingMessage } from '@/features/learning-paths/content-ceiling';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
-import { CONFIDENCE_LABELS, formatDate, levelLabel, missingReason, rangeLabel, SKILL_LABELS } from './labels';
+import { clampReportToContent, CONFIDENCE_LABELS, formatDate, levelLabel, missingReason, rangeLabel, SKILL_LABELS } from './labels';
 
 const HOME = '/app';
 const SETTINGS_PATHS = '/app/cai-dat#lo-trinh';
@@ -140,7 +148,13 @@ function Placement({ report, targetLevel, accept, acceptError, ready, loadError,
         message = <p>Chưa đủ dữ liệu để gợi ý trình độ, nên lộ trình giữ nguyên {levelLabel(result.previous_level)}.</p>;
         break;
       case 'needs_target_update':
-        message = (
+        // The target is already the highest level with lessons: there is no higher target to set yet.
+        message = targetLevel && isAtContentCeiling(report.language_code, targetLevel) ? (
+          <p>
+            Trình độ gợi ý {levelLabel(capped)} đã bằng mục tiêu {levelLabel(targetLevel)} của lộ trình, nên lộ trình chưa được đổi.{' '}
+            {contentCeilingMessage(report.language_code)}
+          </p>
+        ) : (
           <p>
             Trình độ gợi ý {levelLabel(capped)} đã bằng hoặc vượt mục tiêu
             {targetLevel ? ` ${levelLabel(targetLevel)}` : ''} của lộ trình, nên lộ trình chưa được đổi. Hãy đặt mục tiêu cao hơn trong{' '}
@@ -246,12 +260,13 @@ export function DiagnosticReportPage() {
   const { paths } = useLearningPaths();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const stateReport = (location.state as { report?: DiagnosticReport | null } | null)?.report ?? null;
-  const report = run.report ?? stateReport;
+  const rawReport = run.report ?? stateReport;
+  const { report, clamped } = rawReport ? clampReportToContent(rawReport) : { report: null, clamped: false };
   const path = paths.find((p) => p.id === pathId);
 
   useEffect(() => {
-    if (report) headingRef.current?.focus();
-  }, [report]);
+    if (rawReport) headingRef.current?.focus();
+  }, [rawReport]);
 
   const header = (
     <header className="pt-safe">
@@ -303,8 +318,15 @@ export function DiagnosticReportPage() {
             {report.bank_unreviewed && ' Bộ câu hỏi đang thử nghiệm.'}
           </p>
         </div>
-        {(report.early_stop || report.rapid_answer_share > 0.3) && (
+        {(report.early_stop || report.rapid_answer_share > 0.3 || clamped) && (
           <ul className="space-y-2 text-[15px]">
+            {clamped && (
+              <li className="flex gap-2">
+                <Info aria-hidden className="mt-0.5 size-5 shrink-0" />
+                {contentCeilingMessage(report.language_code)} Kết quả cao hơn được tính là{' '}
+                {levelLabel(CONTENT_MAX_LEVEL[report.language_code])}.
+              </li>
+            )}
             {report.early_stop && (
               <li className="flex gap-2">
                 <Info aria-hidden className="mt-0.5 size-5 shrink-0" />

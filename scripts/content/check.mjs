@@ -8,7 +8,7 @@ import { diagnosticErrors, diagnosticItems } from './diagnostic.mjs';
 import { examErrors, examFiles } from './exam.mjs';
 import { effectiveStatus, indexContent } from './load.mjs';
 
-const { LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelOf, levelOrdinal } = shared;
+const { CONTENT_MAX_LEVEL, LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelAvailable, isLevelOf, levelOrdinal } = shared;
 
 export const DEMO_HEADER = '# DEMO — chưa kiểm duyệt';
 
@@ -285,6 +285,13 @@ export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerC
     if (to) err(p.file, to);
     if (!from && !to && levelOrdinal(p.lang, d.level_from) > levelOrdinal(p.lang, d.level_to)) {
       err(p.file, `level_from ${q(d.level_from)} is above level_to ${q(d.level_to)}`);
+    }
+    // Learners only see levels up to CONTENT_MAX_LEVEL (shared/learning/levels.ts): content above it would be unreachable.
+    if (!to && !isLevelAvailable(p.lang, d.level_to)) {
+      err(
+        p.file,
+        `level_to ${q(d.level_to)} is above CONTENT_MAX_LEVEL.${p.lang} (${CONTENT_MAX_LEVEL[p.lang]}); raise it in packages/shared/src/learning/levels.ts so learners can pick the new levels`,
+      );
     }
     if (d.kind === 'core' && d.goal_types.length) err(p.file, 'kind core must have no goal_types');
     if (d.kind === 'goal' && !d.goal_types.length) err(p.file, 'kind goal needs at least one goal_type');

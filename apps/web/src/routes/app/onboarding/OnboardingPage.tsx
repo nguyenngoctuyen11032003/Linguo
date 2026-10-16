@@ -7,7 +7,7 @@ import {
   DEFAULT_TIMEZONE,
   estimatePath,
   fieldErrors,
-  isLevelOf,
+  isLevelAvailable,
   LANGUAGE_CODES,
   LANGUAGES,
   suggestedCurrentLevel,
@@ -205,7 +205,7 @@ export function OnboardingPage() {
         value={data.startPoint}
         onChange={(startPoint) => {
           const suggested = suggestedCurrentLevel(language, startPoint);
-          const keep = data.currentLevel && isLevelOf(language, data.currentLevel) ? data.currentLevel : undefined;
+          const keep = data.currentLevel && isLevelAvailable(language, data.currentLevel) ? data.currentLevel : undefined;
           update({ startPoint, currentLevel: startPoint === 'new' ? (suggested ?? undefined) : (keep ?? suggested ?? undefined) });
         }}
       />
