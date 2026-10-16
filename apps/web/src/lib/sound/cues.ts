@@ -30,7 +30,18 @@ export type SoundCue =
   | 'warning'
   | 'error'
   | 'toggleOn'
-  | 'toggleOff';
+  | 'toggleOff'
+  | 'place'
+  | 'unplace'
+  | 'hint'
+  | 'success'
+  | 'notify'
+  | 'start'
+  | 'levelUp'
+  | 'timeUp'
+  | 'save'
+  | 'remove'
+  | 'play';
 
 // Equal-tempered pitches used by the kit.
 const N = {
@@ -246,5 +257,114 @@ export const CUES: Record<SoundCue, CueDef> = {
   toggleOff: {
     level: 0.4,
     play: (v) => v.tone({ freq: N.A5, dur: 0.08, type: 'sine', gain: 0.18, glideTo: N.E5 }),
+  },
+  // Word-bank token dropped into the answer line: a dry, rounded wooden "tok". Very frequent, so tiny and quiet.
+  place: {
+    level: 0.38,
+    minGap: 35,
+    play: (v) => {
+      v.tone({ freq: 880, dur: 0.045, type: 'sine', gain: 0.2, attack: 0.002, glideTo: 620 });
+      v.noise({ dur: 0.018, gain: 0.05, filter: 'bandpass', freq: 1800, q: 2.5 });
+    },
+  },
+  // Token taken back out: the same wood, a fourth lower, so placing and removing read as a pair.
+  unplace: {
+    level: 0.32,
+    minGap: 35,
+    play: (v) => {
+      v.tone({ freq: 620, dur: 0.045, type: 'sine', gain: 0.18, attack: 0.002, glideTo: 440 });
+      v.noise({ dur: 0.015, gain: 0.035, filter: 'bandpass', freq: 1200, q: 2.5 });
+    },
+  },
+  // A hint (or an explanation) opens: a soft, curious sparkle, two quiet high notes and a breath of air.
+  hint: {
+    level: 0.42,
+    minGap: 250,
+    play: (v) => {
+      bell(v, N.E6, 0, 0.16, 0.12);
+      bell(v, N.A6, 0.07, 0.32, 0.11);
+      v.noise({ at: 0.04, dur: 0.22, gain: 0.018, filter: 'highpass', freq: 7000, echo: true });
+    },
+  },
+  // Quiet confirmation for a background action that worked (settings saved, goal set, report sent).
+  success: {
+    level: 0.45,
+    minGap: 600,
+    play: (v) => {
+      bell(v, N.G5, 0, 0.12, 0.14);
+      bell(v, N.C6, 0.06, 0.3, 0.15);
+    },
+  },
+  // Something new arrived (notification, AI answer ready): marimba-like double tap, recognisable but polite.
+  notify: {
+    level: 0.5,
+    haptic: [12, 50, 12],
+    minGap: 1500,
+    play: (v) => {
+      v.tone({ freq: N.D6, dur: 0.1, type: 'sine', gain: 0.2, attack: 0.002 });
+      v.tone({ freq: N.D6 * 4, dur: 0.03, type: 'sine', gain: 0.03, attack: 0.001 });
+      v.tone({ freq: N.A6, at: 0.11, dur: 0.24, type: 'sine', gain: 0.18, attack: 0.002, echo: true });
+    },
+  },
+  // A lesson, review, exam or placement test begins: a short rising swell, like lifting a curtain.
+  start: {
+    level: 0.5,
+    minGap: 1000,
+    play: (v) => {
+      v.noise({ dur: 0.32, gain: 0.05, filter: 'bandpass', freq: 500, sweepTo: 4000, q: 0.9 });
+      v.tone({ freq: N.C5, at: 0.2, dur: 0.14, type: 'triangle', gain: 0.16 });
+      bell(v, N.G5, 0.28, 0.4, 0.16);
+    },
+  },
+  // Level reached / exam passed / placement result: the biggest moment. Low swell, rising major arpeggio, held
+  // bright chord with shimmer. Reserved for genuinely rare events.
+  levelUp: {
+    level: 0.85,
+    haptic: [20, 50, 20, 50, 20, 50, 90],
+    play: (v) => {
+      v.tone({ freq: N.C4, dur: 0.5, type: 'sine', gain: 0.14, glideTo: N.C5 });
+      [N.C5, N.E5, N.G5, N.C6, N.E6, N.G6].forEach((f, i) =>
+        v.tone({ freq: f, at: 0.12 + i * 0.065, dur: 0.14, type: 'triangle', gain: 0.18 }),
+      );
+      [N.C6, N.E6, N.G6, N.C7].forEach((f) => bell(v, f, 0.55, 1.4, 0.12));
+      v.tone({ freq: N.C4, at: 0.55, dur: 1.2, type: 'sine', gain: 0.12 });
+      v.noise({ at: 0.5, dur: 1.2, gain: 0.035, filter: 'highpass', freq: 5000, sweepTo: 11000, echo: true });
+    },
+  },
+  // Exam time ran out: three firm, descending notes. Clear and final, but not alarming.
+  timeUp: {
+    level: 0.6,
+    haptic: [60, 80, 60],
+    minGap: 2000,
+    play: (v) => {
+      [N.G5, N.E5, N.C5].forEach((f, i) =>
+        v.tone({ freq: f, at: i * 0.16, dur: i === 2 ? 0.5 : 0.15, type: 'triangle', gain: 0.22 }),
+      );
+      v.tone({ freq: N.C4, at: 0.32, dur: 0.5, type: 'sine', gain: 0.12 });
+    },
+  },
+  // A word/card saved to the learner's deck: a short "pocketed" pop rising into a soft bell.
+  save: {
+    level: 0.45,
+    minGap: 150,
+    play: (v) => {
+      v.tone({ freq: 400, dur: 0.06, type: 'sine', gain: 0.18, glideTo: 800 });
+      bell(v, N.E6, 0.05, 0.25, 0.13);
+    },
+  },
+  // Something taken away (word removed, item deleted): a muted, downward puff. Never sounds like an error.
+  remove: {
+    level: 0.38,
+    minGap: 150,
+    play: (v) => {
+      v.tone({ freq: 700, dur: 0.1, type: 'sine', gain: 0.15, glideTo: 300 });
+      v.noise({ dur: 0.1, gain: 0.04, filter: 'lowpass', freq: 2000, sweepTo: 400 });
+    },
+  },
+  // Press play on lesson audio: a barely-there tick so the tap feels acknowledged before speech starts.
+  play: {
+    level: 0.25,
+    minGap: 200,
+    play: (v) => v.tone({ freq: N.G5, dur: 0.04, type: 'sine', gain: 0.14, attack: 0.002 }),
   },
 };
