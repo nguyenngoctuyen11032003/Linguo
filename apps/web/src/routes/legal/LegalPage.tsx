@@ -1,9 +1,31 @@
+import type { ReactNode } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { CONTACT_EMAIL } from '@/features/account/retention';
 import { PRIVACY, TERMS, type LegalDocument } from './content';
 
 const DOCUMENTS = { privacy: PRIVACY, terms: TERMS } as const satisfies Record<string, LegalDocument>;
+
+/** The contact address inside a paragraph, as a mailto link the learner can tap. */
+function withContactLink(text: string): ReactNode {
+  const parts = text.split(CONTACT_EMAIL);
+  if (parts.length === 1) return text;
+  return parts.flatMap((part, index) =>
+    index === 0
+      ? [part]
+      : [
+          <a
+            key={index}
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="break-all font-semibold text-primary underline underline-offset-4"
+          >
+            {CONTACT_EMAIL}
+          </a>,
+          part,
+        ],
+  );
+}
 
 /** Public /quyen-rieng-tu and /dieu-khoan pages (spec 7 §2). */
 export function LegalPage({ kind }: { kind: keyof typeof DOCUMENTS }) {
@@ -36,7 +58,7 @@ export function LegalPage({ kind }: { kind: keyof typeof DOCUMENTS }) {
             </ul>
           )}
           {section.paragraphs?.map((p) => (
-            <p key={p}>{p}</p>
+            <p key={p}>{withContactLink(p)}</p>
           ))}
         </SolidCard>
       ))}
