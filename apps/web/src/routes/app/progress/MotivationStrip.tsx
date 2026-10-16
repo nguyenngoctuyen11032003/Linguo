@@ -12,7 +12,7 @@ export function MotivationStrip({ motivation }: { motivation: Motivation }) {
   const done = Math.min(challenge.done_days, challenge.target_days);
   return (
     <SolidCard className="group relative p-4 transition-colors hover:border-primary/40">
-      <section aria-labelledby={headingId}>
+      <section aria-labelledby={headingId} className="@container">
         <h2 id={headingId} className="sr-only">
           Nhịp học tuần này
         </h2>
@@ -44,7 +44,7 @@ export function MotivationStrip({ motivation }: { motivation: Motivation }) {
                   {challenge.completed && ' · Đã hoàn thành'}
                 </span>
                 <span aria-hidden="true" className="eyebrow block whitespace-nowrap">
-                  <span className="max-[379px]:hidden">Thử thách </span>tuần
+                  <span className="@max-[19rem]:hidden">Thử thách </span>tuần
                 </span>
               </p>
               <div aria-hidden="true" className="mt-2 flex items-center gap-1">

@@ -52,7 +52,7 @@ export function TotalsGrid({ totals, retention, masteredTotal, rangeDays }: Tota
   const weekGoal = totals.week_goal_minutes;
   const weekShare = weekGoal > 0 ? Math.min(1, totals.week_minutes / weekGoal) : 0;
   return (
-    <dl className="grid grid-cols-2 gap-2 min-[380px]:gap-2.5 sm:grid-cols-3 lg:gap-4 xl:grid-cols-4">
+    <dl className="grid grid-cols-2 gap-2 min-[380px]:gap-2.5 sm:grid-cols-3 md:grid-cols-4 lg:gap-4">
       <Stat term="Hôm nay">
         <Duration minutes={totals.today_minutes} />
       </Stat>
