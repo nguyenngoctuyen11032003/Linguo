@@ -45,7 +45,7 @@ select lives_ok($$insert into public.learning_items (id, key, source_id, languag
   'learning items accept ja kana items');
 select lives_ok($$insert into public.learning_items (id, key, source_id, language_code, item_type, level_code, difficulty,
     front, back, status, is_demo, content_hash)
-  values (md5('ja:item:gakkou')::uuid, 'ja:item:gakkou', md5('src:jx')::uuid, 'ja', 'vocab', 'n5', 1,
+  values (md5('ja:item:pgtap-gakkou')::uuid, 'ja:item:pgtap-gakkou', md5('src:jx')::uuid, 'ja', 'vocab', 'n5', 1,
     '{"text": "学校", "reading": "がっこう"}', '{"meaning": {"vi": "trường học"}}', 'published', true, md5('g') || md5('g#'))$$,
   'learning items accept ja vocab with a reading');
 select throws_ok($$insert into public.learning_items (id, key, source_id, language_code, item_type, level_code, difficulty,
