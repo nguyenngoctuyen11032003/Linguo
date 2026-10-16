@@ -7,6 +7,7 @@ import {
   REPORT_TARGET_A,
   auditEntryFixture,
   overviewFixture,
+  reportGroupFixture,
   reportListFixture,
   sourceFixture,
 } from '@/features/admin/admin-fixtures';
@@ -77,7 +78,9 @@ describe('AuditLogPage', () => {
   });
 });
 
-describe('ReportsPage', () => {
+// Several sequential async steps, each allowed asyncUtilTimeout (5 s, tests/unit/setup.ts): the default 5 s test
+// timeout is shorter than one slow step, so give the multi-step flows room under parallel load.
+describe('ReportsPage', { timeout: 20_000 }, () => {
   it('loads open reports and resolves the selected groups in bulk with a note', async () => {
     const resolve = vi.fn(() => ({ data: { updated: 2 } }));
     routeRpcs(mocks.rpc, {
@@ -94,7 +97,10 @@ describe('ReportsPage', () => {
 
     expect(screen.getByRole('button', { name: 'Áp dụng' })).toBeDisabled();
     await user.click(within(table).getByRole('checkbox', { name: /Chọn "Chọn từ đúng/ }));
-    await user.type(screen.getByLabelText(/Ghi chú xử lý/), '  đã sửa  ');
+    // One paste instead of a keystroke per character: each keystroke re-renders the whole queue, which is what
+    // pushed this test past the default timeout on a loaded machine.
+    await user.click(screen.getByLabelText(/Ghi chú xử lý/));
+    await user.paste('  đã sửa  ');
     await user.click(screen.getByRole('button', { name: 'Áp dụng cho 2 báo lỗi' }));
 
     await waitFor(() => expect(resolve).toHaveBeenCalledWith({ p_report_ids: [REPORT_A1, REPORT_A2], p_status: 'fixed', p_resolution_note: 'đã sửa' }));
@@ -113,6 +119,34 @@ describe('ReportsPage', () => {
     await user.click(await screen.findByRole('checkbox', { name: 'Chọn tất cả nội dung trên trang' }));
     await user.click(screen.getByRole('button', { name: 'Áp dụng cho 3 báo lỗi' }));
     expect(await screen.findByRole('alert')).toHaveTextContent('Bạn không có quyền thực hiện thao tác này.');
+  });
+
+  it('steps back a page when resolving empties the last page', async () => {
+    // 21 open groups: page 2 holds one. Once it is resolved the server has 20 groups and page 2 is empty.
+    let resolved = false;
+    const listed = (args: Record<string, unknown>) => {
+      const total = resolved ? 20 : 21;
+      const onSecondPage = args.p_offset === 20;
+      const groups = onSecondPage ? (resolved ? [] : [reportGroupFixture({ target_label: 'Câu cuối' })]) : [reportGroupFixture()];
+      return { data: reportListFixture({ groups, total_groups: total }) };
+    };
+    routeRpcs(mocks.rpc, {
+      staff_role: { data: 'editor' },
+      admin_list_reports: listed,
+      admin_resolve_report: () => {
+        resolved = true;
+        return { data: { updated: 2 } };
+      },
+    });
+    const user = userEvent.setup();
+    renderAdmin('/quan-tri/bao-loi');
+    await user.click(await screen.findByRole('button', { name: 'Trang sau' }));
+    await user.click(await screen.findByRole('checkbox', { name: 'Chọn "Câu cuối"' }));
+    await user.click(screen.getByRole('button', { name: 'Áp dụng cho 2 báo lỗi' }));
+
+    expect(await screen.findByText('Trang 1 / 1')).toBeInTheDocument();
+    expect(screen.queryByText('Không có báo lỗi')).not.toBeInTheDocument();
+    expect(screen.getByText('Đã đánh dấu 2 báo lỗi là "Đã sửa".')).toBeInTheDocument();
   });
 
   it('refetches with the chosen filters', async () => {

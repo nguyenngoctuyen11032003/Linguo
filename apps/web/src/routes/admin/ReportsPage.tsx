@@ -1,4 +1,4 @@
-import { useId, useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useId, useMemo, useState, type FormEvent } from 'react';
 import {
   REPORT_REASON_LABELS_VI,
   REPORT_RULES,
@@ -68,6 +68,13 @@ export function ReportsPage() {
   const selectedGroups = groups.filter((g) => selected.has(groupKey(g)));
   const selectedReportIds = selectedGroups.flatMap((g) => g.reports.map((r) => r.id));
   const allSelected = groups.length > 0 && selectedGroups.length === groups.length;
+
+  // Resolving every group on the last page (or a queue that shrank meanwhile) leaves `page` past the end: the
+  // empty state would hide the pager with reports still on earlier pages. Step back to the last real page.
+  const pastEnd = reports.status === 'ready' && page > 0 && groups.length === 0;
+  useEffect(() => {
+    if (pastEnd) setPage(Math.max(0, pageCount - 1));
+  }, [pastEnd, pageCount]);
 
   const resetView = () => {
     setSelected(new Set());
