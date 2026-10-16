@@ -38,7 +38,7 @@ items:
     role: reuse
   - item: ko:item:gp-e-ttareumyeon
     role: reuse
-  - item: ko:item:gp-ban-myeon
+  - item: ko:item:gram-neun-banmyeone
     role: reuse
   - item: ko:item:gp-eum-edo-bulguhago
     role: reuse
@@ -111,7 +111,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 3
-    item: ko:item:gp-ban-myeon
+    item: ko:item:gram-neun-banmyeone
     prompt:
       stem: "Đọc tin: 한 환경 단체에 따르면 지난해 일회용 컵 사용량은 2년 전에 비해 30% 증가한 반면, 재활용률은 20%대에 머물렀다. Nội dung nào đúng?"
       stem_lang: vi

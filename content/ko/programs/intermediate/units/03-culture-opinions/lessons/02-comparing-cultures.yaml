@@ -9,14 +9,15 @@ level: topik4
 title:
   vi: So sánh văn hoá Hàn - Việt
 objectives:
-  - vi: So sánh hơn bằng N보다 (더) và "so với" bằng N에 비해(서), đặt trợ từ vào đúng vật bị so sánh.
+  - vi: Ôn nhanh N보다 (더) (đã học ở TOPIK 2) rồi chuyển sang "so với" N에 비해(서) của văn viết, đặt trợ từ vào đúng vật bị so sánh.
   - vi: Đối lập hai mặt của một sự việc bằng -는/(으)ㄴ 반면(에) trong văn viết.
   - vi: Nói về điểm giống, khác, ưu điểm và nhược điểm giữa văn hoá truyền thống và hiện đại.
 estimated_minutes: 20
 skills: [grammar, reading, writing]
 prerequisites: [ko:lesson:opinions-etiquette]
 items:
-  - item: ko:item:gram-boda
+  - item: ko:item:gram-boda-deo
+    role: reuse
   - item: ko:item:gram-e-bihae
   - item: ko:item:gram-neun-banmyeone
   - item: ko:item:munhwa
@@ -111,7 +112,7 @@ exercises:
     stage: recognition
     answer_lang: ko
     difficulty: 2
-    item: ko:item:gram-boda
+    item: ko:item:gram-boda-deo
     prompt:
       stem: Câu nào có nghĩa "Việt Nam nóng hơn Hàn Quốc"?
       stem_lang: vi
@@ -225,7 +226,7 @@ exercises:
     stage: recall
     answer_lang: ko
     difficulty: 3
-    item: ko:item:gram-boda
+    item: ko:item:gram-boda-deo
     prompt:
       source_text: Tôi thích phim bộ Hàn hơn phim bộ Mỹ.
       source_lang: vi

@@ -17,7 +17,8 @@ skills: [grammar, reading, writing]
 prerequisites: [ko:lesson:society-economy-vocab]
 items:
   - item: ko:item:gp-eumyeo
-  - item: ko:item:gp-ban-myeon
+  - item: ko:item:gram-neun-banmyeone
+    role: reuse
   - item: ko:item:gp-neun-de-banhae
   - item: ko:item:gp-e-ttareumyeon
   - item: ko:item:gp-eum-edo-bulguhago
@@ -166,7 +167,7 @@ exercises:
     stage: recognition
     answer_lang: ko
     difficulty: 3
-    item: ko:item:gp-ban-myeon
+    item: ko:item:gram-neun-banmyeone
     prompt:
       template: "1인 가구는 증가{{b1}} 반면 4인 가구는 감소했다. 재활용은 자원을 아낄 {{b2}} 아니라 환경 오염도 줄인다."
       blanks:
@@ -295,7 +296,7 @@ exercises:
     stage: recall
     answer_lang: ko
     difficulty: 4
-    item: ko:item:gp-ban-myeon
+    item: ko:item:gram-neun-banmyeone
     prompt:
       source_text: Giá cả đã tăng, trong khi lương lại giảm. (văn viết, dùng 반면 hoặc 데 반해)
       source_lang: vi

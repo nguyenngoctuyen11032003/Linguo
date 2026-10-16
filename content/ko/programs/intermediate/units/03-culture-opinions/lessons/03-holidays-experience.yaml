@@ -9,7 +9,7 @@ level: topik4
 title:
   vi: Ngày lễ Hàn Quốc - kinh nghiệm, thay đổi và mong ước
 objectives:
-  - vi: Kể kinh nghiệm bằng -아/어 본 적이 있다/없다 và -(으)ㄴ 적이 있다/없다.
+  - vi: Ôn lại -(으)ㄴ 적이 있다/없다 (đã học ở TOPIK 2) và kể kinh nghiệm "đã từng thử" bằng -아/어 본 적이 있다/없다.
   - vi: Nói sự thay đổi bằng tính từ + -아/어지다, và nói mong ước bằng -았/었으면 좋겠다.
   - vi: Đọc hiểu một bài báo ngắn về 명절 - 설날, 추석, 차례, 세배, 한복, 송편.
 estimated_minutes: 22
@@ -17,7 +17,8 @@ skills: [grammar, reading, vocabulary]
 prerequisites: [ko:lesson:comparing-cultures]
 items:
   - item: ko:item:gram-a-bon-jeogi-itda
-  - item: ko:item:gram-eun-jeogi-eopda
+  - item: ko:item:gram-eun-jeok-itda
+    role: reuse
   - item: ko:item:gram-a-jida
   - item: ko:item:gram-asseumyeon-joketda
   - item: ko:item:myeongjeol
@@ -37,10 +38,10 @@ items:
 body:
   - type: objective
     text:
-      vi: Sau bài này, bạn hỏi được "Bạn đã từng mặc hanbok chưa?", kể "Dạo này văn hoá ngày lễ đã thay đổi nhiều", nói "Mong là Tết này được về quê" và đọc hiểu một bài báo ngắn về ngày lễ Hàn Quốc.
+      vi: Sau bài này, bạn hỏi được "Bạn đã từng nhận tiền mừng tuổi chưa?", kể "Dạo này văn hoá ngày lễ đã thay đổi nhiều", nói "Mong là Tết này được về quê" và đọc hiểu một bài báo ngắn về ngày lễ Hàn Quốc.
   - type: explain
     text:
-      vi: "Kinh nghiệm \"đã từng\" là V-(으)ㄴ 적이 있다, \"chưa bao giờ\" là V-(으)ㄴ 적이 없다 - 본 적이 있어요. Thêm 보다 (thử) thành V-아/어 본 적이 있다 khi nói đã từng thử làm gì - 입어 본 적, 가 본 적."
+      vi: "Kinh nghiệm \"đã từng\" là V-(으)ㄴ 적이 있다, \"chưa bao giờ\" là V-(으)ㄴ 적이 없다 - 본 적이 있어요. Thêm 보다 (thử) thành V-아/어 본 적이 있다 khi nói đã từng thử làm gì - 받아 본 적, 가 본 적. Bạn đã gặp -(으)ㄴ 적이 있다 ở TOPIK 2; bài này ôn lại và tập trung vào sắc thái \"thử\" của 본 적."
   - type: explain
     text:
       vi: Tính từ + -아/어지다 nghĩa là "trở nên…" - 춥다 → 추워지다, 많다 → 많아지다, 다르다 → 달라지다. Nghĩa "trở nên" này chỉ gắn với tính từ; với động từ như 잘하다, hãy dùng -게 되다 (잘하게 됐어요) hoặc đổi sang tính từ.
@@ -58,12 +59,12 @@ body:
     note:
       vi: Bài báo dùng văn viết -다 (달라졌다, 했다). Chú ý 달라졌다, 많아졌다 - tính từ + -아/어지다 chỉ sự thay đổi.
   - type: example
-    target: 한복을 입어 본 적이 있어요?
+    target: 설날에 세뱃돈을 받아 본 적이 있어요?
     target_lang: ko
     translation:
-      vi: Bạn đã từng mặc thử hanbok chưa?
+      vi: Bạn đã từng nhận tiền mừng tuổi vào dịp Tết chưa?
     note:
-      vi: 입다 + -어 보다 → 입어 보다, rồi + -ㄴ 적이 있다.
+      vi: 받다 + -아 보다 → 받아 보다, rồi + -ㄴ 적이 있다.
   - type: example
     target: 저는 아직 차례를 지낸 적이 없어요.
     target_lang: ko
@@ -116,18 +117,18 @@ exercises:
     difficulty: 2
     item: ko:item:gram-a-bon-jeogi-itda
     prompt:
-      stem: "Chọn dạng đúng: 한복을 ___ 본 적이 있어요? (Bạn đã từng mặc thử hanbok chưa?)"
+      stem: "Chọn dạng đúng: 설날에 떡국을 ___ 본 적이 있어요? (Bạn đã từng ăn thử canh bánh gạo tteokguk vào dịp Tết chưa?)"
       stem_lang: vi
       options:
-        - { id: q4z, text: 입어, lang: ko }
-        - { id: c8v, text: 입은, lang: ko }
-        - { id: l2n, text: 입고, lang: ko }
-        - { id: x5d, text: 입을, lang: ko }
+        - { id: q4z, text: 먹어, lang: ko }
+        - { id: c8v, text: 먹은, lang: ko }
+        - { id: l2n, text: 먹고, lang: ko }
+        - { id: x5d, text: 먹을, lang: ko }
     answer:
       correct_option_id: q4z
     explanation:
-      vi: Đã từng thử = V-아/어 본 적이 있다. 입다 có nguyên âm ㅣ nên thêm -어 → 입어 본 적. 입은 chỉ dùng khi không có 보다 (입은 적).
-    display_answer: 입어
+      vi: Đã từng thử = V-아/어 본 적이 있다. 먹다 có nguyên âm ㅓ nên thêm -어 → 먹어 본 적. 먹은 chỉ dùng khi không có 보다 (먹은 적); tiếng Việt nói "ăn thử" một cụm, còn tiếng Hàn phải nối 먹어 + 보다.
+    display_answer: 먹어
 
   - key: ko:exercise:holidays-experience-listen-songpyeon
     type: listen
@@ -227,47 +228,46 @@ exercises:
     difficulty: 3
     item: ko:item:gram-a-bon-jeogi-itda
     prompt:
-      source_text: Bạn đã từng mặc thử hanbok chưa?
+      source_text: Bạn đã từng lạy chúc Tết người lớn bao giờ chưa?
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 한복을 입어 본 적이 있어요?
-        - 한복 입어 본 적이 있어요?
-        - 한복을 입어 본 적 있어요?
-        - 한복 입어 본 적 있어요?
-        - 한복을 입어 본 적이 있으세요?
-        - 한복을 입어 봤어요?
-        - 한복 입어 봤어요?
-        - 한복을 입어 본 적이 있습니까?
-        - 한복 입어 본 적 있으세요?
-        - 한복 입어 본 적이 있으세요?
-        - 한복을 입어 본 적 있으세요?
-        - 한복을 입어 보신 적이 있어요?
-        - 한복을 입어 보신 적이 있으세요?
-        - 한복을 입어 보신 적 있으세요?
-        - 한복을 입어 본 적이 있나요?
-        - 한복을 입어 보셨어요?
+        - 어른들께 세배를 해 본 적이 있어요?
+        - 어른들께 세배해 본 적이 있어요?
+        - 어른들께 세배를 해 본 적 있어요?
+        - 어른들께 세배해 본 적 있어요?
+        - 어른께 세배를 해 본 적이 있어요?
+        - 어른께 세배해 본 적이 있어요?
+        - 어른들에게 세배를 해 본 적이 있어요?
+        - 어른들께 세배를 한 적이 있어요?
+        - 어른들께 세배한 적이 있어요?
+        - 세배를 해 본 적이 있어요?
+        - 세배해 본 적이 있어요?
+        - 어른들께 세배를 해 본 적이 있으세요?
+        - 어른들께 세배를 해 보신 적이 있어요?
+        - 어른들께 세배를 해 본 적이 있습니까?
+        - 어른들께 세배를 해 본 적이 있나요?
     known_wrong:
-      - answer: 한복을 입은 본 적이 있어요?
-        feedback_vi: Trước 보다 dùng -아/어 - 입어 본 적.
+      - answer: 어른들께 세배를 한 본 적이 있어요?
+        feedback_vi: Trước 보다 dùng -아/어 - 해 본 적.
         error_tag: bon_jeok_form
-      - answer: 한복을 입는 적이 있어요?
-        feedback_vi: Kinh nghiệm dùng định ngữ quá khứ -(으)ㄴ - 입은 적, hoặc 입어 본 적.
+      - answer: 어른들께 세배를 하는 적이 있어요?
+        feedback_vi: Kinh nghiệm dùng định ngữ quá khứ -(으)ㄴ - 한 적, hoặc 해 본 적.
         error_tag: past_adnominal
-      - answer: 한복을 입어 본 적이 없어요?
+      - answer: 어른들께 세배를 해 본 적이 없어요?
         feedback_vi: Câu hỏi "đã từng… chưa?" dùng 있어요?; 없어요? là "chưa từng… à?".
         error_tag: itda_eopda
     explanation:
-      vi: '"Đã từng thử mặc" = 입어 보다 + -ㄴ 적이 있다 → 입어 본 적이 있어요? Tiếng Hàn không cần chủ ngữ "bạn" khi hỏi trực tiếp.'
-    display_answer: 한복을 입어 본 적이 있어요?
+      vi: '"Đã từng… bao giờ chưa" = 해 보다 + -ㄴ 적이 있다 → 해 본 적이 있어요?; "người lớn" là người nhận hành động kính trọng nên dùng 께 thay cho 에게. Tiếng Hàn không cần chủ ngữ "bạn" khi hỏi trực tiếp.'
+    display_answer: 어른들께 세배를 해 본 적이 있어요?
 
   - key: ko:exercise:holidays-experience-fill-never-hope
     type: fill_blank
     stage: recall
     answer_lang: ko
     difficulty: 3
-    item: ko:item:gram-eun-jeogi-eopda
+    item: ko:item:gram-eun-jeok-itda
     prompt:
       template: "(Tôi chưa từng đến Hàn Quốc vào dịp Chuseok.) 추석에 한국에 {{b1}} 적이 없어요. (Tết năm nay mong là được về quê.) 이번 설날에는 고향에 {{b2}} 좋겠어요."
       blanks:
