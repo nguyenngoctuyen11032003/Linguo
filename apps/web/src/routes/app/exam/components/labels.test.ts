@@ -5,6 +5,8 @@ describe('questionTypeLabel', () => {
   it('uses the curated Vietnamese name for known tags', () => {
     expect(questionTypeLabel('cefr_read_gist')).toBe('Đọc — ý chính');
     expect(questionTypeLabel('topik_ii_write_51')).toBe('Viết — điền câu (kiểu câu 51)');
+    expect(questionTypeLabel('jlpt_read_kanji_reading')).toBe('Đọc — cách đọc kanji');
+    expect(questionTypeLabel('jlpt_listen_task')).toBe('Nghe — hiểu nhiệm vụ');
   });
 
   it('keeps unknown tags readable', () => {

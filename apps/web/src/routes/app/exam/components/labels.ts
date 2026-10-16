@@ -58,6 +58,20 @@ const QUESTION_TYPE_LABELS: Record<string, string> = {
   cefr_read_detail: 'Đọc — chi tiết',
   cefr_read_sign: 'Đọc — biển báo, thông báo',
   cefr_write_email: 'Viết — email ngắn',
+  jlpt_listen_task: 'Nghe — hiểu nhiệm vụ',
+  jlpt_listen_point: 'Nghe — nắm điểm chính',
+  jlpt_listen_gist: 'Nghe — ý chính',
+  jlpt_listen_utterance: 'Nghe — chọn câu nói phù hợp',
+  jlpt_listen_response: 'Nghe — chọn câu đáp lại',
+  jlpt_read_kanji_reading: 'Đọc — cách đọc kanji',
+  jlpt_read_kanji_writing: 'Đọc — cách viết kanji',
+  jlpt_read_vocab: 'Đọc — từ vựng theo ngữ cảnh',
+  jlpt_read_paraphrase: 'Đọc — từ gần nghĩa',
+  jlpt_read_usage: 'Đọc — cách dùng từ',
+  jlpt_read_grammar: 'Đọc — ngữ pháp',
+  jlpt_read_order: 'Đọc — sắp xếp câu',
+  jlpt_read_detail: 'Đọc — hiểu chi tiết',
+  jlpt_read_info: 'Đọc — tìm thông tin',
 };
 
 const TAG_SECTIONS: Record<string, string> = {
