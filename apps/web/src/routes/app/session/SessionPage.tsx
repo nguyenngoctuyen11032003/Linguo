@@ -260,8 +260,8 @@ function PathSession() {
     const { finished, total } = sessionProgress(session);
     const pending = session.plan.activities.filter((a) => a.status === 'pending');
     const pendingMinutes = pending.reduce((sum, a) => sum + a.minutes, 0);
-    // A shortened session is saved as a new 'planned' row that keeps its finished activities: it is still under way
-    // ("Tiếp tục", no re-plan from scratch).
+    // A started session stays 'in_progress' when shortened (same row, same started_at) and keeps its finished
+    // activities: it is still under way ("Tiếp tục", no re-plan from scratch).
     const planned = session.status === 'planned' && finished === 0;
     const current = asLength(session.minutes_planned);
     const selected = chosen ?? current ?? nearestSessionLength(session.minutes_planned);
