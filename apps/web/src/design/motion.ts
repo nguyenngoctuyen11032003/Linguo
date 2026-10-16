@@ -8,13 +8,19 @@ export const DUR = { fast: 0.18, base: 0.22, slow: 0.85 } as const;
 /** `useInView` options for scroll reveals: fire once, slightly before the element is fully in view. */
 export const VIEWPORT_ONCE = { once: true, margin: '0px 0px -60px 0px' } as const;
 
-export type RevealKind = 'slideLeft' | 'slideRight' | 'blurUp' | 'fadeUp' | 'speed' | 'pop' | 'drop';
+export type RevealKind = 'slideLeft' | 'slideRight' | 'blurUp' | 'fadeUp' | 'speed' | 'pop' | 'drop' | 'rise';
 
 /**
  * Variants with `hidden` / `shown` states. Expressive tier (landing, celebrations).
  * When `reduce` is true every kind becomes a short opacity fade.
  */
 export function reveal(kind: RevealKind, reduce: boolean, delay = 0): Variants {
+  // `rise` never hides the element (no opacity change): use it for above-the-fold text so it paints, and counts as
+  // the Largest Contentful Paint, before any script or animation runs.
+  if (kind === 'rise') {
+    if (reduce) return { hidden: {}, shown: {} };
+    return { hidden: { y: 14 }, shown: { y: 0, transition: { duration: 0.6, ease: EXPO_OUT, delay } } };
+  }
   if (reduce) {
     return { hidden: { opacity: 0 }, shown: { opacity: 1, transition: { duration: DUR.fast } } };
   }

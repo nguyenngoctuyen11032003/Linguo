@@ -14,4 +14,9 @@ describe('reveal', () => {
       expect(Object.keys(v.hidden as object)).toEqual(['opacity']);
     }
   });
+
+  it('rise never hides the element, so above-the-fold text can be the LCP', () => {
+    expect(reveal('rise', false).hidden).not.toHaveProperty('opacity');
+    expect(reveal('rise', true).hidden).toEqual({});
+  });
 });

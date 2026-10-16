@@ -67,7 +67,7 @@ export function HeroSection() {
         </h1>
         <motion.p
           className="mt-5 max-w-md text-[17px] leading-relaxed text-muted"
-          variants={reveal('blurUp', reduceMotion, 0.3)}
+          variants={reveal('rise', reduceMotion, 0.1)}
           initial="hidden"
           animate={state}
         >
@@ -76,7 +76,7 @@ export function HeroSection() {
         </motion.p>
         <motion.div
           className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-3"
-          variants={reveal('blurUp', reduceMotion, 0.45)}
+          variants={reveal('rise', reduceMotion, 0.2)}
           initial="hidden"
           animate={state}
         >
