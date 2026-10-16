@@ -13,9 +13,10 @@ describe('assignment labels', () => {
     expect(assignmentTitle(learnerAssignment({ title: null }))).toBe('Bài học');
   });
 
-  it('links lessons directly, exams to the hub and reviews to the review page', () => {
+  it('links lessons directly, exams to the assigned form in the hub and reviews to the review page', () => {
     expect(assignmentLink(learnerAssignment())).toBe(`/app/hoc-tap/bai/${LESSON_ID}`);
-    expect(assignmentLink(learnerAssignment({ kind: 'exam' }))).toBe('/app/luyen-thi');
+    expect(assignmentLink(learnerAssignment({ kind: 'exam' }))).toBe(`/app/luyen-thi?de=${LESSON_ID}`);
+    expect(assignmentLink(learnerAssignment({ kind: 'exam', ref_id: null }))).toBe('/app/luyen-thi');
     expect(assignmentLink(learnerAssignment({ kind: 'review', ref_id: null }))).toBe('/app/on-tap');
   });
 
@@ -23,6 +24,8 @@ describe('assignment labels', () => {
     expect(assignmentAction(learnerAssignment())).toBe('Làm bài');
     expect(assignmentAction(learnerAssignment({ state: 'done' }))).toBe('Học lại');
     expect(assignmentAction(learnerAssignment({ kind: 'review' }))).toBe('Ôn ngay');
+    expect(assignmentAction(learnerAssignment({ kind: 'exam' }))).toBe('Làm đề');
+    expect(assignmentAction(learnerAssignment({ kind: 'exam', state: 'done' }))).toBe('Làm lại đề');
     expect(assignmentStatus(learnerAssignment())).toBe('Chưa làm');
     expect(assignmentStatus(learnerAssignment({ state: 'overdue' }))).toBe('Quá hạn');
     expect(assignmentStatus(learnerAssignment({ state: 'done' }))).toBe('Đã xong');

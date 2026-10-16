@@ -1,5 +1,21 @@
-import type { AdminFoundUser, AdminStaffMember } from '@linguo/shared';
+import type { AdminFoundUser, AdminStaffMember, AdminTeacher } from '@linguo/shared';
 import { ADMIN_USER_ID } from './admin-fixtures';
+
+export const TEACHER_ID = '50000000-0000-4000-8000-000000000004';
+
+/** A teacher granted by SQL (no granter) who runs two classes. */
+export function teacherFixture(overrides: Partial<AdminTeacher> = {}): AdminTeacher {
+  return {
+    user_id: TEACHER_ID,
+    email: 'colan@example.com',
+    display_name: 'Cô Lan',
+    granted_by: null,
+    granted_by_email: null,
+    granted_at: '2026-10-02T08:00:00Z',
+    active_classes: 2,
+    ...overrides,
+  };
+}
 
 // Fixtures for the staff page (/quan-tri/nhan-su). They satisfy the shared zod contract. The first member is the
 // signed-in admin of the unit tests (ADMIN_USER_ID).

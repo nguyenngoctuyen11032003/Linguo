@@ -1169,6 +1169,9 @@ isOneToOne: false
 "admin_list_staff":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
+"admin_list_teachers":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
 "admin_resolve_report":
 { Args: { "p_report_ids": (string)[],"p_resolution_note"?: string,"p_status": string }; Returns: Json
                            },

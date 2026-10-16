@@ -9,6 +9,10 @@ export interface RevokeRoleDialogProps {
   /** Name of the staff member; null closes the dialog. */
   name: string | null;
   roleLabel: string;
+  /** Dialog title; defaults to the staff role wording. */
+  title?: string;
+  /** What the person loses, after their name; defaults to the staff role wording. */
+  consequence?: string;
   busy: boolean;
   onConfirm(): void;
   /** Also called on Escape and on a backdrop click. */
@@ -16,7 +20,7 @@ export interface RevokeRoleDialogProps {
 }
 
 /** "Thu hồi vai trò?" confirmation: focus-trapped, Escape cancels, "Huỷ" gets focus first so Enter is safe. */
-export function RevokeRoleDialog({ name, roleLabel, busy, onConfirm, onCancel }: RevokeRoleDialogProps) {
+export function RevokeRoleDialog({ name, roleLabel, title = 'Thu hồi vai trò?', consequence, busy, onConfirm, onCancel }: RevokeRoleDialogProps) {
   const { reduceMotion } = useMotionPrefs();
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -53,13 +57,14 @@ export function RevokeRoleDialog({ name, roleLabel, busy, onConfirm, onCancel }:
             className="relative w-full max-w-md rounded-t-[28px] border-t border-border bg-surface-solid px-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-5 focus:outline-none sm:rounded-[28px] sm:border"
           >
             <h2 id={titleId} className="text-lg font-bold">
-              Thu hồi vai trò?
+              {title}
             </h2>
             <div id={descriptionId} className="mt-2 space-y-2 text-[15px]">
               <p>
-                <strong className="break-words">{name}</strong> sẽ mất vai trò {roleLabel} và không vào được khu quản trị nữa.
+                <strong className="break-words">{name}</strong>{' '}
+                {consequence ?? `sẽ mất vai trò ${roleLabel} và không vào được khu quản trị nữa.`}
               </p>
-              <p className="text-muted">Thay đổi được ghi vào nhật ký quản trị. Bạn có thể cấp lại vai trò sau.</p>
+              <p className="text-muted">Thay đổi được ghi vào nhật ký quản trị. Bạn có thể cấp lại sau.</p>
             </div>
             <div className="mt-5 grid gap-2 sm:grid-cols-2">
               <Button variant="ghost" size="lg" block onClick={onCancel} disabled={busy}>

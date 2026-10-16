@@ -1,8 +1,8 @@
 import { useCallback, useRef, useState } from 'react';
-import type { AdminFoundUser, AdminStaffMember, StaffRole } from '@linguo/shared';
+import type { AdminFoundUser, AdminStaffMember, AdminTeacher, StaffRole } from '@linguo/shared';
 import { getSupabase } from '@/lib/supabase';
 import { adminErrorCode, adminErrorMessage } from './error-map';
-import { findAdminUser, grantStaffRole, listAdminStaff } from './staff';
+import { findAdminUser, grantStaffRole, listAdminStaff, listAdminTeachers, setTeacherStatus } from './staff';
 import { useAdminResource, type AdminResourceState } from './useAdminOverview';
 
 export type StaffActionOutcome<T = null> = { ok: true; value: T } | { ok: false; code: string | null; message: string };
@@ -59,4 +59,42 @@ export function useAdminStaff(): AdminStaffState {
   }, []);
 
   return { ...resource, setRole, findUser, savingUserId };
+}
+
+export interface AdminTeachersState extends AdminResourceState<AdminTeacher[]> {
+  /** grant_teacher_role; `grant` false revokes. On success the list is reloaded. */
+  setTeacher: (userId: string, grant: boolean) => Promise<StaffActionOutcome<boolean>>;
+  /** User id whose teacher status is being saved, while a change runs. */
+  savingTeacherId: string | null;
+}
+
+/** Teacher list + grant/revoke for the teacher section of /quan-tri/nhan-su (admin only). One change at a time. */
+export function useAdminTeachers(): AdminTeachersState {
+  const resource = useAdminResource('teachers', listAdminTeachers);
+  const { reload } = resource;
+  const [savingTeacherId, setSavingTeacherId] = useState<string | null>(null);
+  const savingRef = useRef(false);
+
+  const setTeacher = useCallback(
+    async (userId: string, grant: boolean): Promise<StaffActionOutcome<boolean>> => {
+      const client = getSupabase();
+      if (!client) return failure(new Error('supabase_unavailable'));
+      if (savingRef.current) return { ok: false, code: null, message: 'Đang lưu, vui lòng đợi.' };
+      savingRef.current = true;
+      setSavingTeacherId(userId);
+      try {
+        const result = await setTeacherStatus(client, userId, grant);
+        reload();
+        return { ok: true, value: result.is_teacher };
+      } catch (error) {
+        return failure(error);
+      } finally {
+        savingRef.current = false;
+        setSavingTeacherId(null);
+      }
+    },
+    [reload],
+  );
+
+  return { ...resource, setTeacher, savingTeacherId };
 }

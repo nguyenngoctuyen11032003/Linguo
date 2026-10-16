@@ -17,6 +17,7 @@ const ACTION_LABELS: Record<string, string> = {
   find_user: 'Tìm người dùng',
   grant_teacher: 'Cấp quyền giáo viên',
   revoke_teacher: 'Thu hồi quyền giáo viên',
+  list_teachers: 'Xem danh sách giáo viên',
 };
 
 const TARGET_LABELS: Record<string, string> = {
@@ -24,6 +25,7 @@ const TARGET_LABELS: Record<string, string> = {
   content_report: 'Báo lỗi nội dung',
   user: 'Người dùng',
   staff: 'Nhân sự',
+  teacher: 'Giáo viên',
 };
 
 const formatDate = (iso: string) => {

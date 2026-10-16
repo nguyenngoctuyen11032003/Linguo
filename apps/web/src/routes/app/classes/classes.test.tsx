@@ -123,7 +123,7 @@ describe('ClassesPage', () => {
     expect(within(card).getByRole('heading', { level: 3, name: 'Bài được giao · còn 2 bài' })).toBeInTheDocument();
     expect(within(card).getByRole('link', { name: 'Làm bài: Chào hỏi cơ bản' })).toHaveAttribute('href', `/app/hoc-tap/bai/${LESSON_ID}`);
     expect(within(card).getByRole('link', { name: 'Ôn ngay: Ôn 20 thẻ' })).toHaveAttribute('href', '/app/on-tap');
-    expect(within(card).getByRole('link', { name: 'Mở luyện thi: TOPIK I mini' })).toHaveAttribute('href', '/app/luyen-thi');
+    expect(within(card).getByRole('link', { name: 'Làm lại đề: TOPIK I mini' })).toHaveAttribute('href', `/app/luyen-thi?de=${LESSON_ID}`);
     expect(within(card).getByText('Quá hạn · Đã ôn 5/20')).toBeInTheDocument();
     expect(within(card).getByText('Đã xong')).toBeInTheDocument();
     expect(within(card).getByText('Không có hạn')).toBeInTheDocument();

@@ -60,7 +60,7 @@ select is((select array_agg(p.proname::text order by p.proname) from pg_proc p
     where p.pronamespace = 'public'::regnamespace and (p.proname like 'admin\_%' or p.proname = 'staff_role')),
   array['admin_ai_usage', 'admin_analytics', 'admin_audit_log_recent', 'admin_content_overview', 'admin_find_user',
     'admin_get_content', 'admin_grant_role', 'admin_list_content', 'admin_list_reports', 'admin_list_sources',
-    'admin_list_staff', 'admin_resolve_report', 'admin_set_status', 'staff_role'], 'the admin RPC set');
+    'admin_list_staff', 'admin_list_teachers', 'admin_resolve_report', 'admin_set_status', 'staff_role'], 'the admin RPC set');
 select ok((select bool_and(p.prosecdef and p.proconfig @> array['search_path=""']) from pg_proc p
     where p.pronamespace = 'public'::regnamespace and (p.proname like 'admin\_%' or p.proname = 'staff_role')),
   'every admin RPC is security definer with an empty search_path');

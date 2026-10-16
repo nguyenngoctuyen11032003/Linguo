@@ -121,6 +121,7 @@ export type CreateInviteInput = z.infer<typeof createInviteInputSchema>;
 // ---------------------------------------------------------------------------
 
 export const grantTeacherResultSchema = z.object({ user_id: z.uuid(), is_teacher: z.boolean() });
+export type GrantTeacherResult = z.infer<typeof grantTeacherResultSchema>;
 
 /** teacher_create_invite, and each entry of teacherClassSchema.invites (active invites only). */
 export const teacherInviteSchema = z.object({

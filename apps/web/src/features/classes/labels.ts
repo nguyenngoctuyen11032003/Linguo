@@ -21,12 +21,13 @@ export function assignmentTitle(a: Pick<LearnerAssignment, 'kind' | 'title' | 't
 }
 
 /**
- * Where the learner does the assignment. Lessons open directly; an exam form is started from the exam hub (it asks
- * for the mode first); a review assignment counts any graded review in the class language.
+ * Where the learner does the assignment. Lessons open directly; an exam form opens the exam hub on that form
+ * (`?de=<form id>`: the learner still picks the mode, and the hub explains when the form is not available); a review
+ * assignment counts any graded review in the class language.
  */
 export function assignmentLink(a: Pick<LearnerAssignment, 'kind' | 'ref_id'>): string {
   if (a.kind === 'lesson' && a.ref_id) return `/app/hoc-tap/bai/${a.ref_id}`;
-  if (a.kind === 'exam') return '/app/luyen-thi';
+  if (a.kind === 'exam') return a.ref_id ? `/app/luyen-thi?de=${encodeURIComponent(a.ref_id)}` : '/app/luyen-thi';
   return '/app/on-tap';
 }
 
@@ -34,7 +35,7 @@ export function assignmentLink(a: Pick<LearnerAssignment, 'kind' | 'ref_id'>): s
 export function assignmentAction(a: Pick<LearnerAssignment, 'kind' | 'state'>): string {
   const done = a.state === 'done';
   if (a.kind === 'lesson') return done ? 'Học lại' : 'Làm bài';
-  if (a.kind === 'exam') return done ? 'Mở luyện thi' : 'Vào luyện thi';
+  if (a.kind === 'exam') return done ? 'Làm lại đề' : 'Làm đề';
   return done ? 'Ôn thêm' : 'Ôn ngay';
 }
 
