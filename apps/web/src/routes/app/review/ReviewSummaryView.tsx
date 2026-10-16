@@ -1,4 +1,4 @@
-import { CheckCircle2, CloudOff } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, CloudOff } from 'lucide-react';
 import type { ReviewGradeResult, ReviewQueue, ReviewSummary } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
@@ -7,6 +7,8 @@ import { hasMoreCards } from './more';
 interface Props {
   /** Cards rated in this visit, including ones still waiting in the outbox. */
   reviewedCount: number;
+  /** Cards rated in this visit whose queued grade the server dropped: not reviewed, still due. */
+  droppedCount?: number;
   graded: ReviewGradeResult[];
   pendingCount: number;
   summary: ReviewSummary | null;
@@ -23,7 +25,7 @@ function percent(value: number): string {
 }
 
 /** End of a review session: what was done, what is next, and a clear way to stop. */
-export function ReviewSummaryView({ reviewedCount, graded, pendingCount, summary, totals, loadingMore, onMore, onDone, session }: Props) {
+export function ReviewSummaryView({ reviewedCount, droppedCount = 0, graded, pendingCount, summary, totals, loadingMore, onMore, onDone, session }: Props) {
   const remembered = graded.filter((g) => g.rating_effective >= 3).length;
   const mastered = graded.filter((g) => g.newly_mastered).length;
   const tomorrow = summary?.forecast[1]?.count ?? null;
@@ -58,6 +60,13 @@ export function ReviewSummaryView({ reviewedCount, graded, pendingCount, summary
 
         {summary && summary.retention_30d !== null && (
           <p className="text-[15px]">Tỷ lệ nhớ 30 ngày: {percent(summary.retention_30d)}</p>
+        )}
+
+        {droppedCount > 0 && (
+          <p role="status" className="flex items-center gap-2 rounded-2xl bg-warn/15 px-4 py-3 text-[15px]">
+            <AlertTriangle aria-hidden className="size-4 shrink-0" />
+            {droppedCount} thẻ chưa lưu được kết quả nên cần ôn lại.
+          </p>
         )}
 
         {pendingCount > 0 && (

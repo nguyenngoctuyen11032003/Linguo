@@ -20,6 +20,8 @@ interface SessionState {
   position: number;
   cardStates: Record<string, CardUiState>;
   graded: ReviewGradeResult[];
+  /** Cards whose queued grade the server later dropped (and that have no accepted grade since). */
+  syncFailed: string[];
   totals: ReviewQueue['totals'] | null;
   summary: ReviewSummary | null;
 }
@@ -51,6 +53,7 @@ const initialState: SessionState = {
   position: 0,
   cardStates: {},
   graded: [],
+  syncFailed: [],
   totals: null,
   summary: null,
 };
@@ -89,6 +92,7 @@ function reducer(state: SessionState, action: Action): SessionState {
       const next = {
         ...state,
         graded,
+        syncFailed: state.syncFailed.filter((id) => id !== action.cardId),
         cardStates: { ...state.cardStates, [action.cardId]: { status: 'graded' as const, result: action.result } },
       };
       return action.advance && state.cards[state.position]?.card_id === action.cardId ? advance(next) : next;
@@ -98,7 +102,8 @@ function reducer(state: SessionState, action: Action): SessionState {
     case 'syncFailed': {
       const cardStates = { ...state.cardStates };
       delete cardStates[action.cardId];
-      return { ...state, cardStates };
+      const syncFailed = state.syncFailed.includes(action.cardId) ? state.syncFailed : [...state.syncFailed, action.cardId];
+      return { ...state, cardStates, syncFailed };
     }
     case 'postponed': {
       const index = state.cards.findIndex((c) => c.card_id === action.cardId);
@@ -379,6 +384,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
     grade,
     postpone,
     graded: state.graded,
+    syncFailed: state.syncFailed,
     pendingCount: reviews.pendingCount,
     summary: state.summary,
     loadMore,

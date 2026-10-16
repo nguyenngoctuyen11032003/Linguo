@@ -36,6 +36,11 @@ export interface ReviewSessionApi {
   postpone: (all?: boolean) => Promise<void>;
   /** Cards graded in this session, for the summary screen. */
   graded: ReviewGradeResult[];
+  /**
+   * Cards this session queued offline whose grade the server later dropped: not reviewed, they stay due.
+   * A card leaves the list once a grade for it is accepted.
+   */
+  syncFailed: string[];
   pendingCount: number;
   summary: ReviewSummary | null;
   /** Fetch 10 more new/due cards after the daily cap ("+10 thẻ nữa"). */

@@ -89,6 +89,7 @@ export function sessionApi(overrides: Partial<ReviewSessionApi> = {}): ReviewSes
     grade: vi.fn().mockResolvedValue(undefined),
     postpone: vi.fn().mockResolvedValue(undefined),
     graded: [],
+    syncFailed: [],
     pendingCount: 0,
     summary: null,
     loadMore: vi.fn().mockResolvedValue(undefined),

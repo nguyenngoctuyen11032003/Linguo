@@ -63,7 +63,10 @@ export function ReviewPage() {
   const cardKey = card ? `${card.card_id}:${position}` : null;
   // A refused grade puts the card back on screen to answer again: it is not reviewed yet.
   const answering = !!card && (cardState.status === 'front' || cardState.status === 'back');
-  const reviewedCount = ratedIds.filter((id) => !(answering && id === card?.card_id)).length;
+  // A queued grade the server later dropped is not reviewed either: the card stays due.
+  const dropped = new Set(session.syncFailed);
+  const reviewedCount = ratedIds.filter((id) => !(answering && id === card?.card_id) && !dropped.has(id)).length;
+  const droppedCount = ratedIds.filter((id) => dropped.has(id)).length;
 
   // A new card: reset the per-card inputs, restart the response timer and move focus to the card heading so
   // screen readers announce it and Space/1–4 work without hunting for focus.
@@ -244,6 +247,7 @@ export function ReviewPage() {
         <Heading />
         <ReviewSummaryView
           reviewedCount={reviewedCount}
+          droppedCount={droppedCount}
           graded={session.graded}
           pendingCount={pendingCount}
           summary={session.summary}

@@ -135,6 +135,26 @@ describe('ReviewPage', () => {
     expect(screen.getByText(/^Đã ôn 0 thẻ/)).toBeInTheDocument();
   });
 
+  it('does not count a grade the server dropped after syncing, and says it needs review again', async () => {
+    const first = reviewCard();
+    const second = reviewCard();
+    const session = setSession({ card: first, cardState: { status: 'back' }, total: 2 });
+    render();
+    await userEvent.keyboard('3');
+    update({ ...session, card: second, position: 1, cardState: { status: 'back' } });
+    await userEvent.keyboard('4');
+    update({
+      ...session,
+      status: 'finished',
+      card: null,
+      position: 2,
+      graded: [gradeResult({ card_id: second.card_id })],
+      syncFailed: [first.card_id],
+    });
+    expect(screen.getByText('Đã ôn 1 thẻ. Nghỉ ngơi cũng là một phần của việc nhớ lâu.')).toBeInTheDocument();
+    expect(screen.getByText('1 thẻ chưa lưu được kết quả nên cần ôn lại.')).toBeInTheDocument();
+  });
+
   it('rates through the rating bar', async () => {
     const session = setSession({ cardState: { status: 'back' } });
     render();

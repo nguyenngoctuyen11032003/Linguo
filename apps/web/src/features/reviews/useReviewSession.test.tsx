@@ -194,6 +194,27 @@ describe('useReviewSession', () => {
     expect(createReviewOutbox(USER_ID).list()).toEqual([]);
   });
 
+  it('reports a queued grade the server drops on replay as not reviewed', async () => {
+    let offline = true;
+    installClient({
+      get_review_queue: () => ({ data: queue([card(1), card(2)]) }),
+      grade_review: () =>
+        offline ? { error: NETWORK, status: 0 } : { error: { message: 'card_suspended', code: 'P0001' }, status: 400 },
+    });
+    const { result: hook } = renderSession();
+    await ready(hook);
+    await act(() => hook.current.grade(1, META));
+    expect(hook.current.syncFailed).toEqual([]);
+
+    offline = false;
+    await act(async () => {
+      window.dispatchEvent(new Event('online'));
+    });
+    await waitFor(() => expect(hook.current.syncFailed).toEqual([cardId(1)]));
+    expect(hook.current.graded).toEqual([]);
+    expect(hook.current.pendingCount).toBe(0);
+  });
+
   it('never counts an unconfirmed grade as saved, and resends it under the key it was first sent with', async () => {
     let down = true;
     const fake = installClient({
