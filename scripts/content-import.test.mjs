@@ -1309,6 +1309,7 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
   const expected = {
     'ko:exam:topik-i-mock-1': { listening: 10, reading: 14, time: { listening: 15, reading: 25 } },
     'ko:exam:topik-ii-mock-1': { listening: 8, reading: 10, time: { listening: 20, reading: 25, writing: 20 } },
+    'ko:exam:topik-ii-mock-2': { listening: 8, reading: 10, time: { listening: 20, reading: 25, writing: 20 } },
     'en:exam:cefr-a2-mock-1': { listening: 8, reading: 10, time: { listening: 15, reading: 20, writing: 20 } },
     'ja:exam:jlpt-n5-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 30 } },
     'ja:exam:jlpt-n4-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 35 } },
@@ -1334,23 +1335,24 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     { level_code: 'topik1', min_total: 80 },
     { level_code: 'topik2', min_total: 140 },
   ]);
-  const topik2 = byKey.get('ko:exam:topik-ii-mock-1');
-  assert.equal(count(topik2, 'writing', 'short_text'), 2);
-  assert.equal(count(topik2, 'writing', 'essay'), 1);
-  assert.deepEqual(topik2.scoring.section_max, { listening: 100, reading: 100, writing: 100 });
-  assert.deepEqual(
-    topik2.scoring.bands.map((b) => [b.level_code, b.min_total]),
-    [
-      ['topik3', 120],
-      ['topik4', 150],
-      ['topik5', 190],
-      ['topik6', 230],
-    ],
-  );
-  for (const q of topik2.questions.filter((x) => x.kind === 'short_text')) assert.ok(q.answer.length >= 2, `${q.key}: several accepted answers`);
-  const essay53 = topik2.questions.find((q) => q.kind === 'essay');
-  assert.ok(essay53.rubric.length >= 3);
-  assert.ok(essay53.sample_answer.length >= 200 && essay53.sample_answer.length <= 300, `53 sample answer is ${essay53.sample_answer.length} chars`);
+  for (const topik2 of [byKey.get('ko:exam:topik-ii-mock-1'), byKey.get('ko:exam:topik-ii-mock-2')]) {
+    assert.equal(count(topik2, 'writing', 'short_text'), 2);
+    assert.equal(count(topik2, 'writing', 'essay'), 1);
+    assert.deepEqual(topik2.scoring.section_max, { listening: 100, reading: 100, writing: 100 });
+    assert.deepEqual(
+      topik2.scoring.bands.map((b) => [b.level_code, b.min_total]),
+      [
+        ['topik3', 120],
+        ['topik4', 150],
+        ['topik5', 190],
+        ['topik6', 230],
+      ],
+    );
+    for (const q of topik2.questions.filter((x) => x.kind === 'short_text')) assert.ok(q.answer.length >= 2, `${q.key}: several accepted answers`);
+    const essay53 = topik2.questions.find((q) => q.kind === 'essay');
+    assert.ok(essay53.rubric.length >= 3);
+    assert.ok(essay53.sample_answer.length >= 200 && essay53.sample_answer.length <= 300, `53 sample answer is ${essay53.sample_answer.length} chars`);
+  }
   const cefr = byKey.get('en:exam:cefr-a2-mock-1');
   assert.equal(count(cefr, 'writing', 'essay'), 1);
   assert.deepEqual([cefr.scoring.bands, cefr.scoring.pass_ratio], [[], 0.6]);
