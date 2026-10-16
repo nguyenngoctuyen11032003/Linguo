@@ -110,8 +110,10 @@ describe('SettingsPage', () => {
     await userEvent.click(name);
     await userEvent.paste('a'.repeat(61));
     await userEvent.click(screen.getByRole('button', { name: 'Lưu hồ sơ' }));
-    expect(screen.getByText('Tên hiển thị tối đa 60 ký tự.')).toBeInTheDocument();
+    expect(screen.getByText('Tên hiển thị tối đa 60 ký tự.')).toHaveAttribute('role', 'alert');
     expect(mocks.updateProfile).not.toHaveBeenCalled();
+    await waitFor(() => expect(name).toHaveFocus());
+    expect(name).toHaveAttribute('aria-invalid', 'true');
   });
 
   it('applies the theme immediately and persists it', async () => {
