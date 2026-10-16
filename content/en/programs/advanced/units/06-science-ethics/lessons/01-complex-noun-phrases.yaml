@@ -1,0 +1,330 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:science-ethics-noun-phrases
+order_index: 1
+level: c1
+title:
+  vi: The rapidly ageing rural population - cụm danh từ phức trong văn học thuật
+objectives:
+  - vi: Nén một mệnh đề dài thành cụm danh từ bằng bổ ngữ đứng trước (trạng từ + tính từ + danh từ phụ).
+  - vi: Thêm chi tiết sau danh từ bằng cụm giới từ, cụm phân từ và to + V thay cho mệnh đề quan hệ.
+  - vi: Dùng collocation học thuật về khoa học và chính sách - far-reaching, unintended consequences, long-term implications, evidence-based.
+  - vi: Tránh lỗi thứ tự từ do ảnh hưởng của tiếng Việt (danh từ chính đứng trước).
+estimated_minutes: 25
+skills: [grammar, writing, reading]
+prerequisites: [en:lesson:spoken-discourse-review]
+items:
+  - item: en:item:sci-noun-phrase-premodification
+  - item: en:item:sci-noun-phrase-postmodification
+  - item: en:item:sci-far-reaching
+  - item: en:item:sci-ageing-population
+  - item: en:item:sci-unintended-consequences
+  - item: en:item:sci-cutting-edge
+  - item: en:item:sci-long-term-implications
+  - item: en:item:sci-evidence-based
+  - item: en:item:nominalisation
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được những câu dày thông tin như trong báo cáo khoa học hay bài báo chính sách, mà vẫn rõ ràng và đúng trật tự từ.
+  - type: explain
+    text:
+      vi: "Văn học thuật tiếng Anh dồn thông tin vào cụm danh từ. Bổ ngữ đứng TRƯỚC danh từ chính theo thứ tự trạng từ → tính từ → danh từ phụ → DANH TỪ CHÍNH: a rapidly growing urban middle class. Tiếng Việt làm ngược lại (\"tầng lớp trung lưu đô thị đang tăng nhanh\"), nên người Việt hay đặt sai vị trí."
+  - type: explain
+    text:
+      vi: "Bổ ngữ đứng SAU danh từ gồm cụm giới từ (a policy with far-reaching consequences), cụm -ing chủ động (patients taking part in the trial), cụm V3 bị động (data collected from smartphones) và to + V (the first country to approve the drug)."
+  - type: explain
+    text:
+      vi: "Danh từ làm bổ ngữ đứng trước luôn ở số ít: a two-year study, a cancer drug trial. Tính từ ghép có gạch nối khi đứng trước danh từ: evidence-based policy, cutting-edge research."
+  - type: deep_explain
+    text:
+      vi: Đừng nén quá mức - quá ba bổ ngữ trước một danh từ khiến câu khó đọc (the government rural health care worker training scheme). Khi đó hãy chuyển bớt sang sau bằng cụm giới từ - a government scheme to train health workers in rural areas. Bài này nối tiếp kỹ năng danh từ hoá đã học ở unit 1, nhưng tập trung vào cách sắp xếp các bổ ngữ quanh danh từ chính.
+  - type: example
+    target: The rapidly ageing rural population is placing heavy demands on local clinics.
+    target_lang: en
+    translation:
+      vi: Dân số nông thôn đang già hoá nhanh chóng đặt gánh nặng lớn lên các phòng khám địa phương.
+    note:
+      vi: Trạng từ (rapidly) + tính từ (ageing) + tính từ (rural) + danh từ chính (population).
+  - type: example
+    target: The ministry has made a decision with far-reaching consequences for private universities.
+    target_lang: en
+    translation:
+      vi: Bộ đã đưa ra một quyết định có hệ quả sâu rộng đối với các trường đại học tư.
+    note:
+      vi: Cụm giới từ with … đứng sau danh từ decision.
+  - type: example
+    target: Volunteers taking part in the five-year trial will receive regular health checks.
+    target_lang: en
+    translation:
+      vi: Những tình nguyện viên tham gia thử nghiệm kéo dài năm năm sẽ được kiểm tra sức khoẻ định kỳ.
+    note:
+      vi: Cụm -ing chủ động (taking part) thay cho who are taking part; five-year là danh từ bổ ngữ số ít.
+  - type: example
+    target: Singapore was the first country to approve lab-grown meat for sale.
+    target_lang: en
+    translation:
+      vi: Singapore là quốc gia đầu tiên phê duyệt bán thịt nuôi cấy trong phòng thí nghiệm.
+    note:
+      vi: The first + danh từ + to V - bổ ngữ sau dạng nguyên mẫu.
+  - type: common_mistake
+    wrong: The population rural ageing rapidly needs more care.
+    right: The rapidly ageing rural population needs more care.
+    target_lang: en
+    note:
+      vi: Tiếng Anh đặt bổ ngữ trước danh từ chính; giữ trật tự trạng từ → tính từ → danh từ.
+  - type: common_mistake
+    wrong: The researchers conducted a three-years study of sleep patterns.
+    right: The researchers conducted a three-year study of sleep patterns.
+    target_lang: en
+    note:
+      vi: Danh từ làm bổ ngữ (có gạch nối) đứng trước danh từ chính luôn ở số ít.
+  - type: common_mistake
+    wrong: Data which collected from smartwatches may not be accurate.
+    right: Data collected from smartwatches may not be accurate.
+    target_lang: en
+    note:
+      vi: Khi rút gọn thành cụm V3, bỏ cả which lẫn be. Nếu giữ which thì phải viết which is collected.
+  - type: summary
+    points:
+      - vi: Trước danh từ - trạng từ → tính từ → danh từ phụ (số ít) → DANH TỪ CHÍNH.
+      - vi: Sau danh từ - cụm giới từ, -ing (chủ động), V3 (bị động), to + V (the first … to).
+      - vi: Tính từ ghép có gạch nối trước danh từ - far-reaching, cutting-edge, evidence-based.
+      - vi: Không nén quá ba bổ ngữ phía trước; chuyển bớt ra sau cho dễ đọc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:scieth-np-mcq-order
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-noun-phrase-premodification
+    prompt:
+      stem: "Cụm danh từ nào đúng trật tự cho ý \"một hệ thống cảnh báo lũ chi phí thấp\"?"
+      stem_lang: vi
+      options:
+        - { id: y3n, text: a low-cost flood warning system, lang: en }
+        - { id: u8b, text: a system flood warning low-cost, lang: en }
+        - { id: i5k, text: a flood low-cost warning system, lang: en }
+        - { id: o2w, text: a warning system low-cost of flood, lang: en }
+    answer:
+      correct_option_id: y3n
+    explanation:
+      vi: Tính từ ghép (low-cost) đứng trước, rồi danh từ phụ (flood warning), cuối cùng là danh từ chính (system). Tiếng Việt đặt danh từ chính lên đầu nên các phương án còn lại là dịch theo trật tự tiếng Việt.
+    display_answer: a low-cost flood warning system
+
+  - key: en:exercise:scieth-np-listen-taking-part
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-noun-phrase-postmodification
+    prompt:
+      audio_asset_id: null
+      fallback_text: Farmers using the new drought-resistant rice reported yields twenty per cent higher.
+      options:
+        - { id: a6d, text: "Những nông dân dùng giống lúa chịu hạn mới cho biết năng suất cao hơn hai mươi phần trăm.", lang: vi }
+        - { id: m1x, text: "Nông dân đang dùng lúa mới để báo cáo năng suất cao hơn hai mươi phần trăm.", lang: vi }
+        - { id: g7q, text: "Giống lúa chịu hạn mới đã được nông dân báo cáo là cần thêm hai mươi phần trăm nước.", lang: vi }
+        - { id: e4z, text: "Hai mươi phần trăm nông dân dùng giống lúa chịu hạn mới.", lang: vi }
+    answer:
+      correct_option_id: a6d
+    explanation:
+      vi: Farmers using … là cụm -ing bổ nghĩa sau danh từ (= farmers who used …); động từ chính của câu là reported. Twenty per cent higher bổ nghĩa cho yields, không phải số nông dân.
+    display_answer: "Những nông dân dùng giống lúa chịu hạn mới cho biết năng suất cao hơn hai mươi phần trăm."
+
+  - key: en:exercise:scieth-np-fill-far-reaching-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-far-reaching
+    prompt:
+      template: "Raising the retirement age would be a reform with {{b1}} consequences for the labour market."
+      blanks:
+        - { id: b1, width_hint: 12 }
+      hint_levels:
+        - "Nghĩa: Nâng tuổi nghỉ hưu sẽ là một cải cách có hệ quả sâu rộng đối với thị trường lao động."
+        - "Gợi ý: tính từ ghép có gạch nối, far + reach + -ing."
+    answer:
+      blanks:
+        b1: [far-reaching, far reaching, wide-ranging]
+    known_wrong:
+      - answer: far-reached
+        feedback_vi: Tính từ ghép đúng là far-reaching (đuôi -ing), không có far-reached.
+        error_tag: compound_adjective
+      - answer: far
+        feedback_vi: Cần cả tính từ ghép far-reaching (sâu rộng).
+        error_tag: compound_adjective
+    explanation:
+      vi: Far-reaching consequences là collocation học thuật chỉ hệ quả lan rộng. Cụm with + far-reaching consequences bổ nghĩa sau danh từ reform.
+    display_answer: Raising the retirement age would be a reform with far-reaching consequences for the labour market.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:scieth-np-fill-year-singular
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-noun-phrase-premodification
+    prompt:
+      template: "The university has received funding for a {{b1}} study into microplastics in drinking water."
+      blanks:
+        - { id: b1, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [four-year, four year, 4-year]
+    known_wrong:
+      - answer: four-years
+        feedback_vi: Danh từ làm bổ ngữ đứng trước danh từ chính ở số ít - four-year.
+        error_tag: noun_modifier_plural
+      - answer: four years
+        feedback_vi: Khi đứng trước study, dùng dạng ghép số ít four-year.
+        error_tag: noun_modifier_plural
+    explanation:
+      vi: Four-year bổ nghĩa cho study nên ở số ít và có gạch nối, giống a ten-minute walk. Nếu đặt sau danh từ thì nói a study lasting four years.
+    display_answer: The university has received funding for a four-year study into microplastics in drinking water.
+
+  - key: en:exercise:scieth-np-translate-ageing
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-ageing-population
+    prompt:
+      source_text: Dân số già hoá đang làm tăng nhu cầu về điều dưỡng tại nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - An ageing population is increasing demand for home care.
+        - An ageing population is increasing the demand for home care.
+        - The ageing population is increasing demand for home care.
+        - The ageing population is increasing the demand for home care.
+        - An aging population is increasing demand for home care.
+        - The aging population is increasing demand for home care.
+        - An ageing population is increasing demand for home nursing.
+        - The ageing population is increasing demand for home nursing.
+        - An ageing population is driving up demand for home care.
+        - The ageing population is driving up demand for home care.
+        - An ageing population is raising demand for home care.
+        - The ageing population is pushing up demand for home care.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: An old population is increasing demand for home care.
+        feedback_vi: "\"Già hoá\" là quá trình đang diễn ra - dùng ageing population."
+        error_tag: collocation
+      - answer: A population ageing is increasing demand for home care.
+        feedback_vi: Tính từ ageing đứng trước danh từ population.
+        error_tag: word_order
+    explanation:
+      vi: An ageing population là collocation cố định; ageing đứng trước danh từ. Demand for + N là "nhu cầu về".
+    display_answer: An ageing population is increasing demand for home care.
+
+  - key: en:exercise:scieth-np-translate-first-to
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-noun-phrase-postmodification
+    prompt:
+      source_text: Bà là nhà khoa học nữ đầu tiên giành giải thưởng này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She was the first female scientist to win this award.
+        - She was the first woman scientist to win this award.
+        - She is the first female scientist to win this award.
+        - She is the first woman scientist to win this award.
+        - She was the first female scientist to win this prize.
+        - She is the first female scientist to win this prize.
+        - She was the first woman scientist to win this prize.
+        - She was the first female scientist to receive this award.
+        - She is the first female scientist to receive this award.
+        - She was the first female scientist to win the award.
+        - She is the first female scientist to win the award.
+        - She was the first woman to win this award as a scientist.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She was the first female scientist who won this award.
+        feedback_vi: Sau the first, tự nhiên nhất là to + V - the first female scientist to win.
+        error_tag: first_to_infinitive
+      - answer: She was the first female scientist winning this award.
+        feedback_vi: Sau the first + danh từ dùng to + V, không dùng V-ing.
+        error_tag: first_to_infinitive
+    explanation:
+      vi: Cấu trúc the first/last/only + danh từ + to V là bổ ngữ sau danh từ rất phổ biến. Tính từ female đứng trước scientist.
+    display_answer: She was the first female scientist to win this award.
+
+  # ---------------- application ----------------
+  - key: en:exercise:scieth-np-mcq-condense
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-evidence-based
+    prompt:
+      stem: "Bạn cần rút gọn câu sau cho bản tóm tắt chính sách: \"The government will introduce policies which are based on evidence in order to reduce smoking among teenagers.\" Phương án nào đúng và gọn nhất?"
+      stem_lang: vi
+      options:
+        - { id: w8j, text: "The government will introduce evidence-based policies to reduce teenage smoking.", lang: en }
+        - { id: d5f, text: "The government will introduce policies evidence-based to reduce smoking teenage.", lang: en }
+        - { id: c3h, text: "The government will introduce evidence-basing policies to reduce teenagers smoking.", lang: en }
+        - { id: z1p, text: "The government will introduce based-evidence policies to reduce teenage smoking.", lang: en }
+    answer:
+      correct_option_id: w8j
+    explanation:
+      vi: "Policies which are based on evidence nén thành evidence-based policies (tính từ ghép đứng trước); smoking among teenagers thành teenage smoking. Các phương án khác sai trật tự hoặc sai dạng từ ghép."
+    display_answer: "The government will introduce evidence-based policies to reduce teenage smoking."
+
+  - key: en:exercise:scieth-np-order-unintended
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-unintended-consequences
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lệnh cấm có một hệ quả ngoài ý muốn là đẩy giá lên cao.\""
+      tokens:
+        - { id: u-prices, text: of pushing up prices }
+        - { id: u-ban, text: The ban }
+        - { id: u-cons, text: the unintended consequence }
+        - { id: u-had, text: had }
+        - { id: u-push, text: to push up prices }
+    answer:
+      orders:
+        - [u-ban, u-had, u-cons, u-prices]
+    explanation:
+      vi: Have the unintended consequence of + V-ing là mẫu chuẩn; cụm of + V-ing bổ nghĩa sau consequence. To push up prices là token nhiễu vì consequence không đi với to + V ở đây.
+    display_answer: The ban had the unintended consequence of pushing up prices.
+
+  - key: en:exercise:scieth-np-translate-cutting-edge-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-long-term-implications
+    prompt:
+      source_text: The long-term implications of cutting-edge brain implants for personal privacy are still poorly understood.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tác động lâu dài của các thiết bị cấy ghép não tiên tiến đối với quyền riêng tư cá nhân vẫn chưa được hiểu rõ.
+        - Những hệ luỵ lâu dài của thiết bị cấy ghép não tiên tiến nhất đối với quyền riêng tư cá nhân vẫn còn chưa được hiểu rõ.
+        - Tác động lâu dài của công nghệ cấy ghép não tiên tiến đối với quyền riêng tư cá nhân vẫn chưa được hiểu rõ.
+        - Hệ quả lâu dài của các thiết bị cấy ghép não hiện đại nhất đối với quyền riêng tư vẫn còn ít được hiểu.
+        - Người ta vẫn chưa hiểu rõ tác động lâu dài của các thiết bị cấy ghép não tiên tiến đối với quyền riêng tư cá nhân.
+        - Tác động lâu dài của thiết bị cấy ghép vào não tiên tiến nhất đối với quyền riêng tư cá nhân vẫn chưa được hiểu rõ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Chủ ngữ là cả cụm danh từ dài The long-term implications of … for personal privacy; động từ chính là are understood. Khi dịch sang tiếng Việt, đặt danh từ chính lên trước rồi mới đến các bổ ngữ.
+    display_answer: Tác động lâu dài của các thiết bị cấy ghép não tiên tiến đối với quyền riêng tư cá nhân vẫn chưa được hiểu rõ.

@@ -1,0 +1,324 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:science-ethics-review
+order_index: 5
+level: c2
+title:
+  vi: "Ôn tập: Xã luận về chỉnh sửa gen & AI trong y tế và bài phản hồi"
+objectives:
+  - vi: Đọc hiểu một bài xã luận dày đặc cụm danh từ phức, từ phái sinh và thành ngữ về khoa học.
+  - vi: Nhận ra lập luận cân bằng và các tín hiệu rào đón, nghi vấn đạo đức trong bài.
+  - vi: Viết một đoạn phản hồi ngắn kết hợp ngôn ngữ tranh luận đạo đức, thành ngữ và cụm danh từ học thuật.
+estimated_minutes: 30
+skills: [reading, writing, vocabulary, grammar]
+prerequisites: [en:lesson:science-ethics-debate]
+items:
+  - item: en:item:sci-informed-consent
+  - item: en:item:sci-gene-editing
+  - item: en:item:sci-noun-phrase-premodification
+    role: reuse
+  - item: en:item:sci-noun-phrase-postmodification
+    role: reuse
+  - item: en:item:sci-far-reaching
+    role: reuse
+  - item: en:item:sci-prefix-pseudo
+    role: reuse
+  - item: en:item:sci-double-edged-sword
+    role: reuse
+  - item: en:item:sci-uncharted-territory
+    role: reuse
+  - item: en:item:sci-it-is-debatable-whether
+    role: reuse
+  - item: en:item:sci-at-the-expense-of
+    role: reuse
+  - item: en:item:sci-err-on-the-side-of-caution
+    role: reuse
+  - item: en:item:sci-moral-obligation
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đặt mọi thứ của unit vào một bài xã luận về hai công nghệ gây tranh cãi - chỉnh sửa gen và AI chẩn đoán bệnh - rồi bạn viết đoạn phản hồi gửi toà soạn.
+  - type: explain
+    text:
+      vi: "Khi đọc xã luận, hãy tìm danh từ chính trong các cụm danh từ dài trước (the long-term implications of …), rồi mới đọc bổ ngữ. Phân tích tiền tố, hậu tố giúp bạn đoán nghĩa các từ mới như pseudoscientific, self-regulating."
+  - type: explain
+    text:
+      vi: "Khi viết phản hồi, mở bằng nghi vấn khách quan (It is debatable whether…), cân nhắc lợi hại (a double-edged sword, at the expense of), rồi kết luận có trách nhiệm (we should err on the side of caution; there is a moral obligation to…). Dùng một hai thành ngữ là đủ - nhiều quá sẽ thiếu nghiêm túc."
+  - type: deep_explain
+    text:
+      vi: Informed consent (sự đồng ý sau khi được thông tin đầy đủ) là khái niệm trung tâm của đạo đức y sinh - bất kỳ lập luận nào về dữ liệu bệnh nhân hay thử nghiệm lâm sàng đều cần nhắc đến nó. Gene editing là danh từ ghép với danh từ bổ ngữ ở số ít, giống cancer research hay data protection.
+  - type: example
+    target: "Editorial: Gene editing has moved from science fiction to the hospital ward, and regulators are clearly in uncharted territory."
+    target_lang: en
+    translation:
+      vi: "Xã luận: Chỉnh sửa gen đã đi từ khoa học viễn tưởng vào tận phòng bệnh, và các cơ quan quản lý rõ ràng đang ở vùng chưa có tiền lệ."
+    note:
+      vi: Mở bài xã luận bằng hình ảnh và thành ngữ uncharted territory.
+  - type: example
+    target: AI tools trained on patient records collected without informed consent raise serious ethical concerns.
+    target_lang: en
+    translation:
+      vi: Các công cụ AI được huấn luyện trên hồ sơ bệnh nhân thu thập mà không có sự đồng ý đầy đủ gây ra lo ngại nghiêm trọng về đạo đức.
+    note:
+      vi: Hai cụm phân từ bổ nghĩa sau danh từ - trained on…, collected without….
+  - type: example
+    target: "Reply: Much as I share the editor's concerns, banning the technology outright would come at the expense of patients with rare diseases."
+    target_lang: en
+    translation:
+      vi: "Phản hồi: Dù rất đồng tình với lo ngại của biên tập viên, cấm hẳn công nghệ này sẽ phải đánh đổi bằng quyền lợi của các bệnh nhân mắc bệnh hiếm."
+    note:
+      vi: Nối với unit 5 - Much as + at the expense of trong một câu phản biện.
+  - type: common_mistake
+    wrong: Researchers must obtain an informed consent from every participant.
+    right: Researchers must obtain informed consent from every participant.
+    target_lang: en
+    note:
+      vi: Informed consent là danh từ không đếm được - không dùng an.
+  - type: common_mistake
+    wrong: Genes editing could eliminate some inherited diseases.
+    right: Gene editing could eliminate some inherited diseases.
+    target_lang: en
+    note:
+      vi: Danh từ làm bổ ngữ đứng trước ở số ít - gene editing.
+  - type: summary
+    points:
+      - vi: Đọc - tìm danh từ chính trước, rồi bổ ngữ trước và sau.
+      - vi: Đoán nghĩa từ mới bằng tiền tố, hậu tố (pseudo-, self-, -proof, -ify).
+      - vi: Viết - nghi vấn khách quan → cân nhắc lợi hại → kết luận có trách nhiệm.
+      - vi: Informed consent (không đếm được), gene editing (danh từ bổ ngữ số ít).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:scieth-review-mcq-head-noun
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-noun-phrase-postmodification
+    prompt:
+      stem: "Trong câu \"The growing number of clinics offering unproven stem-cell treatments worries regulators\", danh từ chính làm chủ ngữ là gì?"
+      stem_lang: vi
+      options:
+        - { id: g4p, text: number, lang: en }
+        - { id: y8h, text: clinics, lang: en }
+        - { id: t2c, text: treatments, lang: en }
+        - { id: u6k, text: regulators, lang: en }
+    answer:
+      correct_option_id: g4p
+    explanation:
+      vi: Chủ ngữ là cả cụm The growing number of clinics offering…; danh từ chính là number, nên động từ chia số ít worries. Clinics và treatments nằm trong phần bổ ngữ phía sau.
+    display_answer: number
+
+  - key: en:exercise:scieth-review-listen-consent
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-informed-consent
+    prompt:
+      audio_asset_id: null
+      fallback_text: No hospital should share scans with tech firms without the informed consent of its patients.
+      options:
+        - { id: o5v, text: "Không bệnh viện nào nên chia sẻ ảnh chụp chiếu với công ty công nghệ khi chưa có sự đồng ý sau khi được thông tin đầy đủ của bệnh nhân.", lang: vi }
+        - { id: w3z, text: "Bệnh viện nên chia sẻ ảnh chụp chiếu với công ty công nghệ để bệnh nhân được thông tin đầy đủ.", lang: vi }
+        - { id: d9n, text: "Bệnh nhân không được chia sẻ ảnh chụp chiếu với công ty công nghệ.", lang: vi }
+        - { id: m6f, text: "Các công ty công nghệ phải thông báo cho bệnh viện trước khi chụp chiếu.", lang: vi }
+    answer:
+      correct_option_id: o5v
+    explanation:
+      vi: Informed consent là sự đồng ý của bệnh nhân sau khi đã hiểu rõ rủi ro và mục đích; without nghĩa là khi chưa có điều đó thì không được chia sẻ. Các phương án khác đảo vai trò hoặc bỏ mất nghĩa "đồng ý".
+    display_answer: "Không bệnh viện nào nên chia sẻ ảnh chụp chiếu với công ty công nghệ khi chưa có sự đồng ý sau khi được thông tin đầy đủ của bệnh nhân."
+
+  - key: en:exercise:scieth-review-fill-pseudo-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-prefix-pseudo
+    prompt:
+      template: "Online clinics selling \"DNA-based diets\" often rely on {{b1}} claims rather than clinical evidence."
+      blanks:
+        - { id: b1, width_hint: 16 }
+      hint_levels:
+        - "Nghĩa: Các phòng khám trực tuyến bán \"chế độ ăn theo ADN\" thường dựa vào những tuyên bố nguỵ khoa học thay vì bằng chứng lâm sàng."
+        - "Gợi ý: tiền tố \"giả, nguỵ\" + tính từ của science."
+    answer:
+      blanks:
+        b1: [pseudoscientific, pseudo-scientific, unscientific]
+    known_wrong:
+      - answer: pseudoscience
+        feedback_vi: Trước danh từ claims cần tính từ - pseudoscientific.
+        error_tag: word_form
+      - answer: scientific
+        feedback_vi: Ngữ cảnh "thay vì bằng chứng lâm sàng" cần nghĩa ngược lại - pseudoscientific.
+        error_tag: prefix_choice
+    explanation:
+      vi: Pseudo- (nguỵ) + scientific (tính từ) bổ nghĩa cho claims. Rather than clinical evidence cho thấy các tuyên bố này không có cơ sở khoa học.
+    display_answer: Online clinics selling "DNA-based diets" often rely on pseudoscientific claims rather than clinical evidence.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:scieth-review-fill-gene-editing
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-gene-editing
+    prompt:
+      template: "Critics warn that {{b1}} {{b2}} could one day be used to select traits such as height or intelligence."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [gene]
+        b2: [editing]
+    known_wrong:
+      - answer: genes
+        feedback_vi: Danh từ bổ ngữ đứng trước ở số ít - gene editing.
+        error_tag: noun_modifier_plural
+      - answer: edit
+        feedback_vi: Cần danh động từ editing để làm danh từ ghép gene editing.
+        error_tag: word_form
+    explanation:
+      vi: Gene editing là danh từ ghép, gene làm bổ ngữ nên ở số ít. Cả cụm làm chủ ngữ của could be used.
+    display_answer: Critics warn that gene editing could one day be used to select traits such as height or intelligence.
+
+  - key: en:exercise:scieth-review-translate-debatable
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sci-it-is-debatable-whether
+    prompt:
+      source_text: Vẫn còn tranh cãi liệu AI có nên được phép đưa ra chẩn đoán cuối cùng hay không.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It is debatable whether AI should be allowed to make the final diagnosis.
+        - It's debatable whether AI should be allowed to make the final diagnosis.
+        - It is debatable whether AI should be allowed to make final diagnoses.
+        - It's debatable whether AI should be allowed to make final diagnoses.
+        - It is debatable whether AI should be allowed to give the final diagnosis.
+        - It's debatable whether AI should be allowed to give the final diagnosis.
+        - It is debatable whether AI should be permitted to make the final diagnosis.
+        - It is debatable whether AI should be allowed to make the final diagnosis or not.
+        - It is debatable whether or not AI should be allowed to make the final diagnosis.
+        - It is still debatable whether AI should be allowed to make the final diagnosis.
+        - It's still debatable whether AI should be allowed to make the final diagnosis.
+        - It remains debatable whether AI should be allowed to make the final diagnosis.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It is debatable that AI should be allowed to make the final diagnosis.
+        feedback_vi: Debatable đi với whether vì đây là câu hỏi còn bỏ ngỏ.
+        error_tag: whether_that
+      - answer: It is debatable whether AI should allow to make the final diagnosis.
+        feedback_vi: Cần bị động be allowed to - AI should be allowed to make.
+        error_tag: passive_form
+    explanation:
+      vi: "\"Vẫn còn tranh cãi liệu… hay không\" là It is debatable whether…; AI được cho phép nên dùng bị động should be allowed to + V."
+    display_answer: It is debatable whether AI should be allowed to make the final diagnosis.
+
+  - key: en:exercise:scieth-review-translate-obligation
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sci-moral-obligation
+    prompt:
+      source_text: Bệnh viện có nghĩa vụ đạo đức phải giải thích rủi ro cho bệnh nhân.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hospitals have a moral obligation to explain the risks to patients.
+        - Hospitals have a moral obligation to explain the risks to their patients.
+        - Hospitals have a moral obligation to explain risks to patients.
+        - The hospital has a moral obligation to explain the risks to patients.
+        - The hospital has a moral obligation to explain the risks to its patients.
+        - A hospital has a moral obligation to explain the risks to patients.
+        - Hospitals have a moral obligation to explain the risks to the patients.
+        - Hospitals are under a moral obligation to explain the risks to patients.
+        - Hospitals have a moral obligation to explain the risks to their patients clearly.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Hospitals have a moral obligation to explain patients the risks.
+        feedback_vi: Explain không có hai tân ngữ liền nhau - explain the risks to patients.
+        error_tag: explain_to
+      - answer: Hospitals have a moral obligation of explaining the risks to patients.
+        feedback_vi: Obligation đi với to + V - to explain.
+        error_tag: obligation_to
+    explanation:
+      vi: "\"Có nghĩa vụ đạo đức phải\" là have a moral obligation to + V. Lỗi rất hay gặp của người Việt là explain someone something - đúng phải là explain something to someone."
+    display_answer: Hospitals have a moral obligation to explain the risks to patients.
+
+  # ---------------- application ----------------
+  - key: en:exercise:scieth-review-mcq-response
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sci-double-edged-sword
+    prompt:
+      stem: "Bạn viết câu chủ đề cho đoạn phản hồi xã luận: thừa nhận AI chẩn đoán vừa có lợi vừa có hại, rồi đề xuất thận trọng. Câu nào hay và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: a3r, text: "AI diagnosis is a double-edged sword, so regulators should err on the side of caution until long-term data is available.", lang: en }
+        - { id: j6w, text: "AI diagnosis is a double-edged knife, so regulators should err on the caution side until long-term data is available.", lang: en }
+        - { id: p1e, text: "AI diagnosis is the tip of the iceberg, so regulators should push the boundaries until long-term data is available.", lang: en }
+        - { id: s8b, text: "AI diagnosis is a grey area of the iceberg, so regulators should move the goalposts until long-term data is available.", lang: en }
+    answer:
+      correct_option_id: a3r
+    explanation:
+      vi: A double-edged sword diễn tả đúng "vừa lợi vừa hại", err on the side of caution là lời đề xuất thận trọng. Các phương án khác sai hình thức thành ngữ (knife, caution side) hoặc ghép thành ngữ sai nghĩa.
+    display_answer: "AI diagnosis is a double-edged sword, so regulators should err on the side of caution until long-term data is available."
+
+  - key: en:exercise:scieth-review-order-expense
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-at-the-expense-of
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tốc độ không nên đánh đổi bằng sự đồng ý có hiểu biết.\""
+      tokens:
+        - { id: x-consent, text: informed consent }
+        - { id: x-speed, text: Speed }
+        - { id: x-expense, text: at the expense of }
+        - { id: x-cost, text: at the expensive of }
+        - { id: x-should, text: should not come }
+    answer:
+      orders:
+        - [x-speed, x-should, x-expense, x-consent]
+    explanation:
+      vi: Come at the expense of + danh từ = phải đánh đổi bằng. Expense là danh từ; "the expensive of" sai từ loại. Informed consent không có mạo từ.
+    display_answer: Speed should not come at the expense of informed consent.
+
+  - key: en:exercise:scieth-review-translate-far-reaching-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: en:item:sci-far-reaching
+    prompt:
+      source_text: Editing the genes of embryos could have far-reaching consequences for future generations who never gave their consent.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chỉnh sửa gen của phôi có thể gây ra hệ quả sâu rộng cho các thế hệ tương lai, những người chưa bao giờ đồng ý.
+        - Việc chỉnh sửa gen phôi có thể có hệ quả sâu rộng đối với các thế hệ sau, những người chưa từng đưa ra sự đồng ý.
+        - Chỉnh sửa gen phôi thai có thể gây hậu quả sâu rộng cho những thế hệ tương lai vốn chưa bao giờ đồng ý.
+        - Việc chỉnh sửa gen của phôi có thể để lại hệ quả sâu rộng cho các thế hệ tương lai - những người không hề được hỏi ý kiến.
+        - Chỉnh sửa gen của phôi có thể gây ảnh hưởng sâu rộng đến các thế hệ tương lai, những người chưa bao giờ chấp thuận.
+        - Việc chỉnh sửa gen phôi có thể gây ra những hệ quả sâu rộng cho các thế hệ mai sau, những người chưa từng đồng ý.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Far-reaching consequences là "hệ quả sâu rộng"; cụm who never gave their consent bổ nghĩa cho future generations - nhấn mạnh vấn đề đạo đức về sự đồng ý.
+    display_answer: Chỉnh sửa gen của phôi có thể gây ra hệ quả sâu rộng cho các thế hệ tương lai, những người chưa bao giờ đồng ý.

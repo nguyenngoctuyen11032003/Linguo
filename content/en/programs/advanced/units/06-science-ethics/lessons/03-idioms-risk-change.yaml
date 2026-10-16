@@ -1,0 +1,328 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:science-ethics-idioms
+order_index: 3
+level: c2
+title:
+  vi: A double-edged sword, a grey area - thành ngữ về rủi ro, thay đổi & tranh cãi
+objectives:
+  - vi: Hiểu và dùng tám thành ngữ thường gặp trong tin công nghệ và tranh luận chính sách.
+  - vi: Chọn thành ngữ đúng sắc thái - tích cực (a step in the right direction), trung tính (uncharted territory), phàn nàn (move the goalposts).
+  - vi: Giữ đúng hình thức cố định của thành ngữ (mạo từ, số nhiều, giới từ).
+  - vi: Biết khi nào nên thay thành ngữ bằng cách nói thẳng trong văn trang trọng.
+estimated_minutes: 25
+skills: [vocabulary, speaking, reading]
+prerequisites: [en:lesson:science-ethics-word-formation]
+items:
+  - item: en:item:sci-double-edged-sword
+  - item: en:item:sci-tip-of-the-iceberg
+  - item: en:item:sci-open-a-can-of-worms
+  - item: en:item:sci-grey-area
+  - item: en:item:sci-move-the-goalposts
+  - item: en:item:sci-push-the-boundaries
+  - item: en:item:sci-step-in-the-right-direction
+  - item: en:item:sci-uncharted-territory
+  - item: en:item:idiom-register
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn bình luận về AI, chỉnh sửa gen hay mạng xã hội bằng những thành ngữ mà báo chí và chuyên gia dùng hằng ngày - đúng hình thức và đúng sắc thái.
+  - type: explain
+    text:
+      vi: "Nhóm \"lợi - hại\": a double-edged sword (con dao hai lưỡi), a grey area (vùng xám, chưa rõ đúng sai). Nhóm \"quy mô vấn đề\": the tip of the iceberg (phần nổi của tảng băng), open a can of worms (khơi ra một loạt rắc rối)."
+  - type: explain
+    text:
+      vi: "Nhóm \"thay đổi\": push the boundaries (mở rộng giới hạn), uncharted territory (vùng chưa có tiền lệ), a step in the right direction (bước đi đúng hướng nhưng chưa đủ), move the goalposts (đổi luật chơi giữa chừng - mang ý phàn nàn)."
+  - type: explain
+    text:
+      vi: "Thành ngữ là cụm cố định - không đổi mạo từ, số ít/số nhiều hay giới từ: the tip of the iceberg (không phải a tip), move the goalposts (số nhiều), a step in (không phải to) the right direction. Người Việt hay dịch sát chữ từ tiếng Việt nên đổi mất hình thức chuẩn."
+  - type: deep_explain
+    text:
+      vi: Báo chí và bài phát biểu dùng thành ngữ để tạo hình ảnh, nhưng trong báo cáo học thuật nên dùng ít - thay a grey area bằng an area where the law is unclear, the tip of the iceberg bằng a small part of a much larger problem. Một số thành ngữ có thể biến thể nhẹ - open (up) a whole can of worms, push the boundaries of science - nhưng phần lõi phải giữ nguyên.
+  - type: example
+    target: Cheap genetic tests are a double-edged sword - they empower patients but can also cause needless panic.
+    target_lang: en
+    translation:
+      vi: Xét nghiệm gen giá rẻ là con dao hai lưỡi - chúng trao quyền cho bệnh nhân nhưng cũng có thể gây hoảng loạn không cần thiết.
+    note:
+      vi: Vừa có lợi vừa có hại - thường giải thích hai mặt ngay sau dấu gạch.
+  - type: example
+    target: The ten fake reviews we found are only the tip of the iceberg.
+    target_lang: en
+    translation:
+      vi: Mười bài đánh giá giả mà chúng tôi tìm thấy chỉ là phần nổi của tảng băng.
+    note:
+      vi: Hay đi với only/just; luôn có the.
+  - type: example
+    target: Questioning the original data would open a can of worms that nobody in the lab wants to deal with.
+    target_lang: en
+    translation:
+      vi: Đặt nghi vấn về dữ liệu gốc sẽ là chọc vào tổ ong mà không ai trong phòng thí nghiệm muốn đối mặt.
+    note:
+      vi: Would open - nói về rủi ro nếu khơi vấn đề ra.
+  - type: example
+    target: The new data-sharing law is a step in the right direction, but enforcement remains weak.
+    target_lang: en
+    translation:
+      vi: Luật chia sẻ dữ liệu mới là bước đi đúng hướng, nhưng việc thực thi vẫn còn yếu.
+    note:
+      vi: Tích cực nhưng hàm ý "chưa đủ" - đi kèm but.
+  - type: common_mistake
+    wrong: These complaints are just a top of the iceberg.
+    right: These complaints are just the tip of the iceberg.
+    target_lang: en
+    note:
+      vi: Thành ngữ cố định là the tip (đỉnh, chóp) of the iceberg - không dùng top, không dùng a.
+  - type: common_mistake
+    wrong: The investors keep moving the goalpost.
+    right: The investors keep moving the goalposts.
+    target_lang: en
+    note:
+      vi: Goalposts luôn số nhiều trong thành ngữ này.
+  - type: common_mistake
+    wrong: The ban is a step to the right direction.
+    right: The ban is a step in the right direction.
+    target_lang: en
+    note:
+      vi: Giới từ cố định là in - a step in the right direction.
+  - type: summary
+    points:
+      - vi: Lợi - hại - a double-edged sword; chưa rõ đúng sai - a grey area.
+      - vi: Quy mô - the tip of the iceberg; khơi rắc rối - open a can of worms.
+      - vi: Thay đổi - push the boundaries, uncharted territory, a step in the right direction, move the goalposts (phàn nàn).
+      - vi: Giữ nguyên mạo từ, số nhiều, giới từ; văn học thuật nên dùng ít thành ngữ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:scieth-idiom-mcq-grey-area
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-grey-area
+    prompt:
+      stem: "Chọn thành ngữ phù hợp: Whether influencers must label AI-edited photos is still a legal ___."
+      stem_lang: vi
+      options:
+        - { id: w4h, text: grey area, lang: en }
+        - { id: j9r, text: tip of the iceberg, lang: en }
+        - { id: d2n, text: can of worms, lang: en }
+        - { id: m7c, text: double-edged sword, lang: en }
+    answer:
+      correct_option_id: w4h
+    explanation:
+      vi: Luật chưa quy định rõ nên đây là "vùng xám" - a legal grey area. Các thành ngữ khác nói về quy mô vấn đề hoặc lợi hại, không hợp với tính từ legal ở đây.
+    display_answer: grey area
+
+  - key: en:exercise:scieth-idiom-listen-goalposts
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-move-the-goalposts
+    prompt:
+      audio_asset_id: null
+      fallback_text: We hit every target in the first contract, and then the client moved the goalposts.
+      options:
+        - { id: p3s, text: "Chúng tôi đạt mọi chỉ tiêu trong hợp đồng đầu, rồi khách hàng lại đổi luật chơi.", lang: vi }
+        - { id: t8l, text: "Chúng tôi đạt mọi chỉ tiêu, nên khách hàng chuyển văn phòng đi chỗ khác.", lang: vi }
+        - { id: g5x, text: "Khách hàng giúp chúng tôi đạt mọi chỉ tiêu trong hợp đồng đầu.", lang: vi }
+        - { id: a1v, text: "Chúng tôi đổi mục tiêu vì khách hàng không đạt chỉ tiêu.", lang: vi }
+    answer:
+      correct_option_id: p3s
+    explanation:
+      vi: Move the goalposts là thay đổi tiêu chí giữa chừng một cách không công bằng - sau khi bên kia đã đạt yêu cầu. Phương án "chuyển văn phòng" là hiểu sát chữ.
+    display_answer: "Chúng tôi đạt mọi chỉ tiêu trong hợp đồng đầu, rồi khách hàng lại đổi luật chơi."
+
+  - key: en:exercise:scieth-idiom-fill-tip-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-tip-of-the-iceberg
+    prompt:
+      template: "The leaked emails are probably just the {{b1}} of the {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Những email bị rò rỉ có lẽ chỉ là phần nổi của tảng băng."
+        - "Gợi ý: đỉnh/chóp + tảng băng trôi."
+    answer:
+      blanks:
+        b1: [tip]
+        b2: [iceberg]
+    known_wrong:
+      - answer: top
+        feedback_vi: Thành ngữ cố định dùng tip (chóp), không dùng top.
+        error_tag: fixed_idiom
+      - answer: ice
+        feedback_vi: Cần cả từ iceberg (tảng băng trôi).
+        error_tag: fixed_idiom
+    explanation:
+      vi: The tip of the iceberg chỉ phần nhỏ nhìn thấy được của một vấn đề lớn hơn nhiều. Hình thức cố định là tip, không phải top.
+    display_answer: The leaked emails are probably just the tip of the iceberg.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:scieth-idiom-fill-step
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-step-in-the-right-direction
+    prompt:
+      template: "Free school meals are a step {{b1}} the right {{b2}}, but child poverty needs a far bigger response."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [in]
+        b2: [direction]
+    known_wrong:
+      - answer: to
+        feedback_vi: Giới từ cố định là in - a step in the right direction.
+        error_tag: fixed_idiom
+      - answer: way
+        feedback_vi: Thành ngữ dùng direction, không dùng way.
+        error_tag: fixed_idiom
+    explanation:
+      vi: A step in the right direction là tiến bộ nhưng chưa đủ - khớp với vế but … far bigger response. Giới từ in không đổi.
+    display_answer: Free school meals are a step in the right direction, but child poverty needs a far bigger response.
+
+  - key: en:exercise:scieth-idiom-translate-double-edged
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-double-edged-sword
+    prompt:
+      source_text: Làm việc từ xa là con dao hai lưỡi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Remote work is a double-edged sword.
+        - Remote working is a double-edged sword.
+        - Working remotely is a double-edged sword.
+        - Working from home is a double-edged sword.
+        - Remote work is a double edged sword.
+        - Remote work can be a double-edged sword.
+        - Working remotely can be a double-edged sword.
+        - Working from home can be a double-edged sword.
+        - Remote working can be a double-edged sword.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Remote work is a two-edged knife.
+        feedback_vi: Tiếng Anh nói a double-edged sword (gươm), không dùng knife.
+        error_tag: literal_translation
+      - answer: Remote work is double-edged sword.
+        feedback_vi: Thành ngữ cần mạo từ a - a double-edged sword.
+        error_tag: article
+    explanation:
+      vi: "\"Con dao hai lưỡi\" có thành ngữ tương đương a double-edged sword; chú ý giữ mạo từ a và dùng sword chứ không phải knife."
+    display_answer: Remote work is a double-edged sword.
+
+  - key: en:exercise:scieth-idiom-translate-uncharted
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sci-uncharted-territory
+    prompt:
+      source_text: Với những thuốc giảm cân thế hệ mới, các bác sĩ đang bước vào vùng chưa có tiền lệ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - With the new generation of weight-loss drugs, doctors are entering uncharted territory.
+        - With new-generation weight-loss drugs, doctors are entering uncharted territory.
+        - With the latest weight-loss drugs, doctors are entering uncharted territory.
+        - With the new generation of weight loss drugs, doctors are entering uncharted territory.
+        - With the new weight-loss drugs, doctors are entering uncharted territory.
+        - With these new weight-loss drugs, doctors are entering uncharted territory.
+        - With the new generation of weight-loss drugs, doctors are moving into uncharted territory.
+        - With the new generation of weight-loss drugs, doctors are in uncharted territory.
+        - With a new generation of weight-loss drugs, doctors are entering uncharted territory.
+        - With the new generation of slimming drugs, doctors are entering uncharted territory.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: With the new generation of weight-loss drugs, doctors are entering an uncharted territory.
+        feedback_vi: Trong thành ngữ này territory không có mạo từ - enter uncharted territory.
+        error_tag: article
+      - answer: With the new generation of weight-loss drugs, doctors are entering unknown land.
+        feedback_vi: Thành ngữ chuẩn là uncharted territory.
+        error_tag: literal_translation
+    explanation:
+      vi: "\"Vùng chưa có tiền lệ\" là uncharted territory (vùng chưa có trên bản đồ), dùng không mạo từ sau enter / be in."
+    display_answer: With the new generation of weight-loss drugs, doctors are entering uncharted territory.
+
+  # ---------------- application ----------------
+  - key: en:exercise:scieth-idiom-mcq-can-of-worms
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-open-a-can-of-worms
+    prompt:
+      stem: "Trong cuộc họp, đồng nghiệp đề xuất kiểm tra lại toàn bộ hợp đồng nhà cung cấp cũ. Bạn lo việc này sẽ khơi ra hàng loạt vấn đề pháp lý. Câu nào diễn đạt đúng ý?"
+      stem_lang: vi
+      options:
+        - { id: c6q, text: "Reviewing every old supplier contract could open a can of worms.", lang: en }
+        - { id: r3e, text: "Reviewing every old supplier contract could push the boundaries.", lang: en }
+        - { id: h9u, text: "Reviewing every old supplier contract is a step in the right direction.", lang: en }
+        - { id: o4b, text: "Reviewing every old supplier contract could open a box of worms.", lang: en }
+    answer:
+      correct_option_id: c6q
+    explanation:
+      vi: Open a can of worms là khơi ra một loạt rắc rối khó kiểm soát - đúng nỗi lo của bạn. Push the boundaries và a step in the right direction mang nghĩa tích cực; box of worms sai hình thức cố định.
+    display_answer: "Reviewing every old supplier contract could open a can of worms."
+
+  - key: en:exercise:scieth-idiom-order-push
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-push-the-boundaries
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Startup này đang mở rộng giới hạn của công nghệ pin.\""
+      tokens:
+        - { id: k-tech, text: of battery technology }
+        - { id: k-push, text: is pushing the boundaries }
+        - { id: k-firm, text: This start-up }
+        - { id: k-move, text: is moving the goalposts }
+    answer:
+      orders:
+        - [k-firm, k-push, k-tech]
+    explanation:
+      vi: Push the boundaries of + lĩnh vực = mở rộng giới hạn của lĩnh vực đó (tích cực). Moving the goalposts là phàn nàn về việc đổi luật chơi, sai ý câu.
+    display_answer: This start-up is pushing the boundaries of battery technology.
+
+  - key: en:exercise:scieth-idiom-translate-grey-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-grey-area
+    prompt:
+      source_text: Collecting voice data from smart speakers is still a grey area, and the cases reported so far are only the tip of the iceberg.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Việc thu thập dữ liệu giọng nói từ loa thông minh vẫn là vùng xám, và các vụ được báo cáo đến nay chỉ là phần nổi của tảng băng.
+        - Thu thập dữ liệu giọng nói từ loa thông minh vẫn là một vùng xám, và những vụ được báo cáo tới giờ mới chỉ là phần nổi của tảng băng.
+        - Việc thu thập dữ liệu giọng nói qua loa thông minh vẫn là vùng xám, và các trường hợp được báo cáo cho đến nay chỉ là phần nổi của tảng băng chìm.
+        - Thu thập dữ liệu giọng nói từ loa thông minh vẫn còn là vùng xám, và những vụ việc được báo cáo đến nay chỉ là phần nổi của tảng băng.
+        - Việc thu thập dữ liệu giọng nói từ loa thông minh vẫn còn là vùng xám pháp lý, và các vụ được báo cáo đến nay chỉ là phần nổi của tảng băng.
+        - Thu thập dữ liệu giọng nói từ loa thông minh vẫn là vùng xám, và các vụ đã được báo cáo chỉ là phần nổi của tảng băng chìm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Hai thành ngữ đều có tương đương tiếng Việt - a grey area là "vùng xám", the tip of the iceberg là "phần nổi của tảng băng (chìm)". So far là "đến nay".
+    display_answer: Việc thu thập dữ liệu giọng nói từ loa thông minh vẫn là vùng xám, và các vụ được báo cáo đến nay chỉ là phần nổi của tảng băng.

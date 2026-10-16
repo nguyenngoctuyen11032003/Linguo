@@ -1,0 +1,337 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:science-ethics-debate
+order_index: 4
+level: c2
+title:
+  vi: On ethical grounds… - ngôn ngữ tranh luận về đạo đức khoa học
+objectives:
+  - vi: Nêu nghi vấn đạo đức một cách học thuật bằng It is debatable whether, raise the question of.
+  - vi: Cân nhắc lợi - hại bằng the benefits outweigh the risks, at the expense of, there is a fine line between.
+  - vi: Lập luận về trách nhiệm bằng a moral obligation, on ethical grounds, err on the side of caution.
+  - vi: Viết một đoạn lập luận cân bằng về một vấn đề khoa học gây tranh cãi.
+estimated_minutes: 25
+skills: [writing, speaking, vocabulary]
+prerequisites: [en:lesson:science-ethics-idioms]
+items:
+  - item: en:item:sci-it-is-debatable-whether
+  - item: en:item:sci-raise-the-question-of
+  - item: en:item:sci-on-ethical-grounds
+  - item: en:item:sci-at-the-expense-of
+  - item: en:item:sci-fine-line-between
+  - item: en:item:sci-benefits-outweigh-risks
+  - item: en:item:sci-moral-obligation
+  - item: en:item:sci-err-on-the-side-of-caution
+  - item: en:item:crw-on-balance
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tham gia được một cuộc tranh luận về thử nghiệm trên động vật, dữ liệu sức khoẻ hay AI chẩn đoán bệnh - nêu nghi vấn, cân nhắc lợi hại và kết luận có trách nhiệm.
+  - type: explain
+    text:
+      vi: "Nêu nghi vấn mà không phản đối thẳng: It is debatable whether + mệnh đề (vẫn còn tranh cãi liệu…), X raises the question of + N/V-ing (X đặt ra câu hỏi về…). Hai cụm này giúp bạn nghe khách quan - điều rất được coi trọng trong bài luận tiếng Anh."
+  - type: explain
+    text:
+      vi: "Cân nhắc lợi - hại: the benefits outweigh the risks (lợi ích lớn hơn rủi ro), A at the expense of B (đạt A nhưng hy sinh B), there is a fine line between A and B (ranh giới mong manh). Outweigh là ngoại động từ - không có than."
+  - type: explain
+    text:
+      vi: "Trách nhiệm và thận trọng: have a moral obligation to + V (nghĩa vụ đạo đức), reject/oppose something on ethical grounds (vì lý do đạo đức), err on the side of caution (thà thận trọng quá còn hơn). Mẫu on + tính từ + grounds còn dùng với medical, legal, financial."
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt thường nói "về mặt đạo đức thì…" ở đầu câu; tiếng Anh tự nhiên hơn khi gắn cụm vào động từ - They objected on ethical grounds. Khi kết luận, kết hợp với On balance (đã học ở unit 4) để cho thấy bạn đã cân nhắc cả hai phía - On balance, the benefits outweigh the risks, provided that…. Tránh dùng ngôn ngữ tuyệt đối (always, never, completely immoral) vì làm lập luận kém thuyết phục.
+  - type: example
+    target: It is debatable whether tech companies should be allowed to sell anonymised health data.
+    target_lang: en
+    translation:
+      vi: Vẫn còn tranh cãi liệu các công ty công nghệ có nên được phép bán dữ liệu sức khoẻ đã ẩn danh hay không.
+    note:
+      vi: It is debatable whether - nêu nghi vấn mà vẫn khách quan.
+  - type: example
+    target: AI diagnosis raises the question of who is accountable when the algorithm gets it wrong.
+    target_lang: en
+    translation:
+      vi: Chẩn đoán bằng AI đặt ra câu hỏi ai chịu trách nhiệm khi thuật toán sai.
+    note:
+      vi: Raise the question of + who-clause.
+  - type: example
+    target: Several hospitals declined to take part in the study on ethical grounds.
+    target_lang: en
+    translation:
+      vi: Một số bệnh viện từ chối tham gia nghiên cứu vì lý do đạo đức.
+    note:
+      vi: On ethical grounds gắn sau động từ.
+  - type: example
+    target: There is a fine line between protecting public health and invading people's privacy.
+    target_lang: en
+    translation:
+      vi: Ranh giới giữa bảo vệ sức khoẻ cộng đồng và xâm phạm quyền riêng tư của người dân rất mong manh.
+    note:
+      vi: A fine line between + V-ing and V-ing - hai vế cân đối.
+  - type: common_mistake
+    wrong: The benefits of the new drug outweigh than the risks.
+    right: The benefits of the new drug outweigh the risks.
+    target_lang: en
+    note:
+      vi: Outweigh đã chứa nghĩa so sánh "nặng hơn", nên không thêm than.
+  - type: common_mistake
+    wrong: It is debatable that the trial was ethical.
+    right: It is debatable whether the trial was ethical.
+    target_lang: en
+    note:
+      vi: Debatable đi với whether (liệu có hay không), vì bản chất là một câu hỏi còn bỏ ngỏ.
+  - type: common_mistake
+    wrong: Governments have a moral obligation of protecting refugees.
+    right: Governments have a moral obligation to protect refugees.
+    target_lang: en
+    note:
+      vi: Obligation theo sau bởi to + V.
+  - type: summary
+    points:
+      - vi: Nêu nghi vấn - It is debatable whether…; X raises the question of….
+      - vi: Cân nhắc - the benefits outweigh the risks (không than); A at the expense of B; a fine line between A and B.
+      - vi: Trách nhiệm - a moral obligation to + V; on ethical grounds; err on the side of caution.
+      - vi: Kết luận cân bằng với On balance, tránh ngôn ngữ tuyệt đối.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:scieth-debate-mcq-outweigh
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-benefits-outweigh-risks
+    prompt:
+      stem: "Câu nào dùng outweigh đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: v8w, text: "For most patients, the benefits of surgery clearly outweigh the risks.", lang: en }
+        - { id: l2o, text: "For most patients, the benefits of surgery clearly outweigh than the risks.", lang: en }
+        - { id: s6a, text: "For most patients, the benefits of surgery are clearly outweigh the risks.", lang: en }
+        - { id: n3j, text: "For most patients, the benefits of surgery clearly outweighs the risks.", lang: en }
+    answer:
+      correct_option_id: v8w
+    explanation:
+      vi: Outweigh là ngoại động từ, nhận tân ngữ trực tiếp, không cần than hay are. Chủ ngữ the benefits số nhiều nên động từ là outweigh, không có -s.
+    display_answer: "For most patients, the benefits of surgery clearly outweigh the risks."
+
+  - key: en:exercise:scieth-debate-listen-expense
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-at-the-expense-of
+    prompt:
+      audio_asset_id: null
+      fallback_text: The app grew rapidly, but at the expense of its users' privacy.
+      options:
+        - { id: z5k, text: "Ứng dụng phát triển nhanh, nhưng phải đánh đổi bằng quyền riêng tư của người dùng.", lang: vi }
+        - { id: b8y, text: "Ứng dụng phát triển nhanh nhờ người dùng trả nhiều tiền hơn.", lang: vi }
+        - { id: q1t, text: "Ứng dụng phát triển nhanh và bảo vệ tốt quyền riêng tư của người dùng.", lang: vi }
+        - { id: f7i, text: "Người dùng phải trả chi phí để ứng dụng phát triển nhanh.", lang: vi }
+    answer:
+      correct_option_id: z5k
+    explanation:
+      vi: At the expense of là "đánh đổi bằng, gây thiệt hại cho" - không liên quan trực tiếp đến tiền. Phương án "trả tiền", "trả chi phí" là hiểu sát chữ expense.
+    display_answer: "Ứng dụng phát triển nhanh, nhưng phải đánh đổi bằng quyền riêng tư của người dùng."
+
+  - key: en:exercise:scieth-debate-fill-grounds-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-on-ethical-grounds
+    prompt:
+      template: "The committee rejected the trial {{b1}} ethical {{b2}}, citing the risks to vulnerable patients."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Uỷ ban bác cuộc thử nghiệm vì lý do đạo đức, viện dẫn rủi ro cho các bệnh nhân dễ tổn thương."
+        - "Gợi ý: giới từ + ethical + danh từ số nhiều nghĩa \"căn cứ, cơ sở\"."
+    answer:
+      blanks:
+        b1: [on]
+        b2: [grounds]
+    known_wrong:
+      - answer: ground
+        feedback_vi: Trong cụm này grounds luôn ở số nhiều.
+        error_tag: fixed_phrase
+      - answer: by
+        feedback_vi: Giới từ cố định là on - on ethical grounds.
+        error_tag: preposition
+      - answer: reasons
+        feedback_vi: For ethical reasons thì đúng, nhưng với giới từ on phải là grounds.
+        error_tag: collocation
+    explanation:
+      vi: On + tính từ + grounds là mẫu cố định "vì lý do…" (on medical/legal grounds). Grounds số nhiều nghĩa là "căn cứ".
+    display_answer: The committee rejected the trial on ethical grounds, citing the risks to vulnerable patients.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:scieth-debate-fill-debatable
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-it-is-debatable-whether
+    prompt:
+      template: "It is {{b1}} {{b2}} schools should use facial recognition to take attendance."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [debatable, questionable, doubtful, unclear]
+        b2: [whether]
+    known_wrong:
+      - answer: that
+        feedback_vi: Debatable mở ra một câu hỏi bỏ ngỏ, nên dùng whether, không dùng that.
+        error_tag: whether_that
+      - answer: debating
+        feedback_vi: Cần tính từ debatable (còn tranh cãi), không phải V-ing.
+        error_tag: word_form
+      - answer: if
+        feedback_vi: Trong văn trang trọng sau debatable dùng whether.
+        error_tag: whether_that
+    explanation:
+      vi: It is debatable whether… là cách nêu nghi vấn học thuật. Whether phù hợp vì người viết chưa khẳng định có hay không.
+    display_answer: It is debatable whether schools should use facial recognition to take attendance.
+
+  - key: en:exercise:scieth-debate-translate-moral-obligation
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-moral-obligation
+    prompt:
+      source_text: Các nhà khoa học có nghĩa vụ đạo đức phải công bố cả những kết quả tiêu cực.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Scientists have a moral obligation to publish negative results too.
+        - Scientists have a moral obligation to publish negative results as well.
+        - Scientists have a moral obligation to publish even negative results.
+        - Scientists have a moral obligation to also publish negative results.
+        - Scientists have a moral obligation to publish negative findings too.
+        - Scientists have a moral obligation to publish negative findings as well.
+        - Scientists have a moral obligation to publish their negative results too.
+        - Scientists have a moral obligation to publish negative results, too.
+        - Scientists have a moral obligation to publish both positive and negative results.
+        - Scientists are under a moral obligation to publish negative results too.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Scientists have a moral obligation of publishing negative results too.
+        feedback_vi: Obligation đi với to + V - to publish.
+        error_tag: obligation_to
+      - answer: Scientists have a moral responsible to publish negative results too.
+        feedback_vi: Cần danh từ obligation (hoặc responsibility), không dùng tính từ responsible.
+        error_tag: word_form
+    explanation:
+      vi: "\"Có nghĩa vụ đạo đức phải\" là have a moral obligation to + V. \"Cả những kết quả tiêu cực\" có thể diễn đạt bằng too, as well hoặc even."
+    display_answer: Scientists have a moral obligation to publish negative results too.
+
+  - key: en:exercise:scieth-debate-translate-err
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sci-err-on-the-side-of-caution
+    prompt:
+      source_text: Khi chưa chắc chắn về độ an toàn, chúng ta nên thận trọng trước đã.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - When we are not sure about safety, we should err on the side of caution.
+        - When we're not sure about safety, we should err on the side of caution.
+        - When we are unsure about safety, we should err on the side of caution.
+        - When we're unsure about safety, we should err on the side of caution.
+        - When we are not sure about the safety, we should err on the side of caution.
+        - If we are not sure about safety, we should err on the side of caution.
+        - If we're not sure about safety, we should err on the side of caution.
+        - If we are unsure about safety, we should err on the side of caution.
+        - When safety is uncertain, we should err on the side of caution.
+        - When in doubt about safety, we should err on the side of caution.
+        - When we are uncertain about safety, we should err on the side of caution.
+        - When we are not certain about safety, we should err on the side of caution.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: When we are not sure about safety, we should err on the caution side.
+        feedback_vi: Thành ngữ cố định là err on the side of caution.
+        error_tag: fixed_idiom
+      - answer: When we are not sure about safety, we should error on the side of caution.
+        feedback_vi: Động từ là err; error là danh từ.
+        error_tag: word_form
+    explanation:
+      vi: "\"Thận trọng trước đã\" khi chưa chắc chắn tương đương thành ngữ err on the side of caution (thà thận trọng quá còn hơn). Err là động từ hiếm, chỉ gặp trong cụm này."
+    display_answer: When we're not sure about safety, we should err on the side of caution.
+
+  # ---------------- application ----------------
+  - key: en:exercise:scieth-debate-mcq-raise-question
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-raise-the-question-of
+    prompt:
+      stem: "Bạn viết đoạn mở đầu bài luận về robot chăm sóc người già và muốn nêu vấn đề một cách khách quan. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: x2m, text: "Care robots raise the question of whether machines can meet the emotional needs of older people.", lang: en }
+        - { id: e5c, text: "Care robots rise the question of whether machines can meet the emotional needs of older people.", lang: en }
+        - { id: k9s, text: "Care robots are completely immoral and should always be banned.", lang: en }
+        - { id: i7d, text: "Care robots raise the question that machines meet the emotional needs of older people.", lang: en }
+    answer:
+      correct_option_id: x2m
+    explanation:
+      vi: Raise (ngoại động từ) the question of whether… nêu vấn đề mà không vội kết luận. Rise là nội động từ nên không có tân ngữ; câu "completely immoral … always" quá tuyệt đối; "the question that" sai cấu trúc.
+    display_answer: "Care robots raise the question of whether machines can meet the emotional needs of older people."
+
+  - key: en:exercise:scieth-debate-order-fine-line
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-fine-line-between
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ranh giới giữa khích lệ và gây áp lực cho nhân viên rất mong manh.\""
+      tokens:
+        - { id: l-press, text: and pressuring them }
+        - { id: l-there, text: There is a fine line }
+        - { id: l-enc, text: between encouraging employees }
+        - { id: l-than, text: than pressuring them }
+    answer:
+      orders:
+        - [l-there, l-enc, l-press]
+    explanation:
+      vi: Cấu trúc cố định a fine line between A and B - dùng and, không dùng than. Hai vế cân đối, đều là V-ing (encouraging, pressuring).
+    display_answer: There is a fine line between encouraging employees and pressuring them.
+
+  - key: en:exercise:scieth-debate-translate-balance-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: en:item:sci-benefits-outweigh-risks
+    prompt:
+      source_text: On balance, the benefits of sharing patient data outweigh the risks, provided that it is done with strict safeguards.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cân nhắc mọi mặt, lợi ích của việc chia sẻ dữ liệu bệnh nhân lớn hơn rủi ro, miễn là việc đó được thực hiện với các biện pháp bảo vệ nghiêm ngặt.
+        - Xét tổng thể, lợi ích của việc chia sẻ dữ liệu bệnh nhân lớn hơn rủi ro, với điều kiện có các biện pháp bảo vệ nghiêm ngặt.
+        - Nhìn chung, lợi ích của việc chia sẻ dữ liệu bệnh nhân vượt trội so với rủi ro, miễn là được thực hiện kèm biện pháp bảo vệ chặt chẽ.
+        - Cân nhắc kỹ thì lợi ích của việc chia sẻ dữ liệu bệnh nhân lớn hơn rủi ro, miễn là có các biện pháp bảo vệ nghiêm ngặt.
+        - Xét mọi mặt, lợi ích của việc chia sẻ dữ liệu người bệnh lớn hơn rủi ro, với điều kiện việc này được làm với những biện pháp bảo vệ nghiêm ngặt.
+        - Tóm lại, lợi ích của việc chia sẻ dữ liệu bệnh nhân lớn hơn rủi ro, miễn là có biện pháp bảo vệ chặt chẽ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: On balance là "cân nhắc mọi mặt/xét tổng thể"; outweigh là "lớn hơn, vượt trội"; provided that là "miễn là, với điều kiện". Câu kết luận cân bằng vì có điều kiện kèm theo.
+    display_answer: Cân nhắc mọi mặt, lợi ích của việc chia sẻ dữ liệu bệnh nhân lớn hơn rủi ro, miễn là việc đó được thực hiện với các biện pháp bảo vệ nghiêm ngặt.

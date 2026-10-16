@@ -1,0 +1,670 @@
+# Học liệu unit "Khoa học, đạo đức & tranh luận xã hội" (C1-C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: cụm danh từ phức ----------------
+  - key: en:item:sci-noun-phrase-premodification
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "pre-modification: adverb + adjective + noun + NOUN"
+      pos: bổ nghĩa trước danh từ
+    back:
+      meaning:
+        vi: Đặt trạng từ, tính từ, danh từ phụ trước danh từ chính để nén thông tin - the rapidly ageing rural population thay cho the population in rural areas, which is ageing rapidly.
+      examples:
+        - target: The government has launched a low-cost home testing kit for diabetes.
+          translation:
+            vi: Chính phủ đã tung ra một bộ xét nghiệm tiểu đường tại nhà giá rẻ.
+      confusion:
+        vi: Tiếng Việt đặt bổ ngữ sau danh từ ("bộ xét nghiệm tại nhà giá rẻ"), tiếng Anh đặt trước. Danh từ làm bổ ngữ thường ở dạng số ít (a ten-year plan, không phải a ten-years plan).
+
+  - key: en:item:sci-noun-phrase-postmodification
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: "post-modification: NOUN + prepositional phrase / participle / to-infinitive"
+      pos: bổ nghĩa sau danh từ
+    back:
+      meaning:
+        vi: Đặt cụm giới từ, cụm phân từ hoặc to + V sau danh từ để thêm chi tiết mà không cần mệnh đề quan hệ đầy đủ - a decision with far-reaching consequences, patients taking part in the trial, the first country to ban the practice.
+      examples:
+        - target: Researchers working on the project were not allowed to speak to the press.
+          translation:
+            vi: Các nhà nghiên cứu làm việc trong dự án không được phép trả lời báo chí.
+      confusion:
+        vi: Cụm phân từ -ing mang nghĩa chủ động (researchers working), V3 mang nghĩa bị động (data collected by the app). Đừng giữ who/which khi đã rút gọn.
+
+  - key: en:item:sci-far-reaching
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: far-reaching
+      ipa: UK /ˌfɑːˈriːtʃɪŋ/ · US /ˌfɑːrˈriːtʃɪŋ/
+      pos: tính từ ghép
+    back:
+      meaning:
+        vi: Có ảnh hưởng sâu rộng (thường đi với consequences, implications, reforms)
+      examples:
+        - target: The court's ruling could have far-reaching consequences for online privacy.
+          translation:
+            vi: Phán quyết của toà có thể gây hệ quả sâu rộng cho quyền riêng tư trực tuyến.
+      confusion:
+        vi: Viết có gạch nối khi đứng trước danh từ. Không nói far-reached.
+
+  - key: en:item:sci-ageing-population
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: an ageing population
+      ipa: /ən ˈeɪdʒɪŋ ˌpɒpjuˈleɪʃn/ · US /ən ˈeɪdʒɪŋ ˌpɑːpjuˈleɪʃn/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Dân số già hoá (tỷ lệ người cao tuổi ngày càng tăng)
+      examples:
+        - target: Japan's ageing population is putting pressure on its pension system.
+          translation:
+            vi: Dân số già hoá của Nhật Bản đang tạo áp lực lên hệ thống lương hưu.
+      pronunciation_note:
+        vi: Ageing là cách viết Anh; Mỹ viết aging. Cách đọc giống nhau /ˈeɪdʒɪŋ/.
+      confusion:
+        vi: Không nói an old population khi muốn nói xu hướng già hoá - ageing nhấn mạnh quá trình đang diễn ra.
+
+  - key: en:item:sci-unintended-consequences
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: unintended consequences
+      ipa: UK /ˌʌnɪnˈtendɪd ˈkɒnsɪkwənsɪz/ · US /ˌʌnɪnˈtendɪd ˈkɑːnsəkwensɪz/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Hệ quả ngoài ý muốn (kết quả không lường trước của một chính sách hay phát minh)
+      examples:
+        - target: The plastic bag tax had the unintended consequence of increasing sales of bin liners.
+          translation:
+            vi: Thuế túi nhựa gây ra hệ quả ngoài ý muốn là doanh số túi đựng rác tăng.
+      confusion:
+        vi: Unintended (không chủ ý) khác unexpected (bất ngờ) - một hệ quả có thể dự đoán được nhưng vẫn không phải điều người làm chính sách nhắm tới.
+
+  - key: en:item:sci-cutting-edge
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: cutting-edge
+      ipa: /ˌkʌtɪŋ ˈedʒ/
+      pos: tính từ ghép
+    back:
+      meaning:
+        vi: Tiên tiến nhất, đi đầu (công nghệ, nghiên cứu)
+      examples:
+        - target: The lab uses cutting-edge imaging to detect tumours at an early stage.
+          translation:
+            vi: Phòng thí nghiệm dùng công nghệ chụp ảnh tiên tiến nhất để phát hiện khối u sớm.
+      confusion:
+        vi: Có gạch nối khi đứng trước danh từ (cutting-edge research); không gạch nối khi làm danh từ (at the cutting edge of science).
+
+  - key: en:item:sci-long-term-implications
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: long-term implications
+      ipa: UK /ˌlɒŋ ˈtɜːm ˌɪmplɪˈkeɪʃnz/ · US /ˌlɔːŋ ˈtɝːm ˌɪmplɪˈkeɪʃnz/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Hàm ý, tác động lâu dài
+      examples:
+        - target: Few studies have examined the long-term implications of remote learning for teenagers.
+          translation:
+            vi: Ít nghiên cứu xem xét tác động lâu dài của việc học từ xa đối với thanh thiếu niên.
+      confusion:
+        vi: Implication (hàm ý, hệ luỵ) khác implementation (việc triển khai). Đi với giới từ for hoặc of.
+
+  - key: en:item:sci-evidence-based
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: evidence-based
+      ipa: /ˌevɪdəns ˈbeɪst/
+      pos: tính từ ghép
+    back:
+      meaning:
+        vi: Dựa trên bằng chứng (chính sách, điều trị, phương pháp)
+      examples:
+        - target: Doctors are urged to follow evidence-based guidelines rather than habit.
+          translation:
+            vi: Bác sĩ được khuyến khích làm theo hướng dẫn dựa trên bằng chứng thay vì thói quen.
+      confusion:
+        vi: Mẫu danh từ + V3 ghép có gạch nối rất phổ biến trong văn học thuật - research-led, data-driven, community-based.
+
+  # ---------------- Bài 2: cấu tạo từ nâng cao ----------------
+  - key: en:item:sci-prefix-counter
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: counter- (counterpart, counterattack, counterintuitive)
+      ipa: UK /ˈkaʊntə/ · US /ˈkaʊntɚ/
+      pos: tiền tố
+    back:
+      meaning:
+        vi: Tiền tố "ngược lại, đối lại" - counterintuitive (trái với trực giác), counterbalance (đối trọng), counterclaim (phản tố).
+      examples:
+        - target: It sounds counterintuitive, but resting more can make athletes faster.
+          translation:
+            vi: Nghe có vẻ trái trực giác, nhưng nghỉ nhiều hơn có thể giúp vận động viên nhanh hơn.
+      pronunciation_note:
+        vi: Trọng âm thường rơi vào counter- trong danh từ (ˈcounterpart), nhưng ở tính từ dài thì dịch về sau (ˌcounterinˈtuitive).
+      confusion:
+        vi: Counter- (đối lại) khác anti- (chống lại). Counterpart là "người/vật tương đương ở phía bên kia", không phải "đối thủ".
+
+  - key: en:item:sci-counterproductive
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: counterproductive
+      ipa: UK /ˌkaʊntəprəˈdʌktɪv/ · US /ˌkaʊntɚprəˈdʌktɪv/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Phản tác dụng (gây ra kết quả ngược với mục tiêu)
+      examples:
+        - target: Banning the app outright may prove counterproductive, driving users to less secure alternatives.
+          translation:
+            vi: Cấm hẳn ứng dụng có thể phản tác dụng, đẩy người dùng sang những lựa chọn kém an toàn hơn.
+      confusion:
+        vi: Không nói "anti-productive". Có thể viết counter-productive (có gạch nối) theo kiểu Anh cũ.
+
+  - key: en:item:sci-prefix-inter
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: inter- (interdisciplinary, interconnected, intergovernmental)
+      ipa: UK /ˈɪntə/ · US /ˈɪntɚ/
+      pos: tiền tố
+    back:
+      meaning:
+        vi: Tiền tố "giữa, liên" - interdisciplinary (liên ngành), interdependent (phụ thuộc lẫn nhau).
+      examples:
+        - target: Climate research is increasingly interdisciplinary, combining physics, economics and sociology.
+          translation:
+            vi: Nghiên cứu khí hậu ngày càng mang tính liên ngành, kết hợp vật lý, kinh tế học và xã hội học.
+      confusion:
+        vi: Inter- (giữa các nhóm) khác intra- (bên trong một nhóm) - international (giữa các nước) và intranet (mạng nội bộ).
+
+  - key: en:item:sci-prefix-self
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: self- (self-driving, self-regulation, self-funded)
+      ipa: /self/
+      pos: tiền tố
+    back:
+      meaning:
+        vi: Tiền tố "tự" - self-driving (tự lái), self-regulation (tự điều chỉnh, tự quản), self-sufficient (tự cung tự cấp).
+      examples:
+        - target: Critics argue that self-regulation has failed in the social media industry.
+          translation:
+            vi: Giới phê bình cho rằng cơ chế tự quản đã thất bại trong ngành mạng xã hội.
+      confusion:
+        vi: Luôn có gạch nối sau self- (self-esteem), trừ selfish và selfless.
+
+  - key: en:item:sci-prefix-pseudo
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: pseudo- (pseudoscience, pseudonym)
+      ipa: UK /ˈsjuːdəʊ/ · US /ˈsuːdoʊ/
+      pos: tiền tố
+    back:
+      meaning:
+        vi: Tiền tố "giả, nguỵ" - pseudoscience (nguỵ khoa học), pseudonym (bút danh), pseudo-intellectual (kẻ làm ra vẻ trí thức).
+      examples:
+        - target: The documentary was criticised for presenting pseudoscience as established fact.
+          translation:
+            vi: Bộ phim tài liệu bị chỉ trích vì trình bày nguỵ khoa học như thể sự thật đã được xác lập.
+      pronunciation_note:
+        vi: Chữ p đầu câm - đọc /ˈsuː-/ hoặc /ˈsjuː-/, không đọc "p-xơ".
+      confusion:
+        vi: Pseudo- mang sắc thái chê; trung tính hơn là quasi- (quasi-official - bán chính thức).
+
+  - key: en:item:sci-suffix-proof
+    type: grammar_point
+    level: c1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: -proof (waterproof, future-proof, tamper-proof)
+      ipa: /pruːf/
+      pos: hậu tố
+    back:
+      meaning:
+        vi: Hậu tố "chống, không bị ảnh hưởng bởi" - waterproof (chống nước), future-proof (không lỗi thời), tamper-proof (chống can thiệp).
+      examples:
+        - target: Engineers are trying to future-proof the grid against more extreme heatwaves.
+          translation:
+            vi: Các kỹ sư đang cố làm cho lưới điện chịu được những đợt nắng nóng khắc nghiệt hơn trong tương lai.
+      confusion:
+        vi: -proof khác -resistant - water-resistant chỉ chống nước một phần, waterproof là hoàn toàn. Future-proof còn dùng như động từ.
+
+  - key: en:item:sci-suffix-ify-ise
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: -ify / -ise (-ize) (clarify, intensify, prioritise, digitise)
+      ipa: /ɪfaɪ/ · /aɪz/
+      pos: hậu tố tạo động từ
+    back:
+      meaning:
+        vi: Hậu tố biến danh từ/tính từ thành động từ "làm cho…" - clear → clarify, intense → intensify, priority → prioritise, digital → digitise.
+      examples:
+        - target: The ministry plans to digitise all land records by 2030.
+          translation:
+            vi: Bộ dự định số hoá toàn bộ hồ sơ đất đai trước năm 2030.
+      confusion:
+        vi: Anh viết -ise (prioritise), Mỹ viết -ize (prioritize); chọn một kiểu và giữ nhất quán trong cả bài.
+
+  - key: en:item:sci-suffix-wise
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: -wise (cost-wise, timewise, clockwise)
+      ipa: /waɪz/
+      pos: hậu tố
+    back:
+      meaning:
+        vi: Hậu tố "về mặt…" (khẩu ngữ, công sở) - cost-wise (về chi phí), timewise (về thời gian); hoặc "theo hướng" - clockwise (theo chiều kim đồng hồ).
+      examples:
+        - target: Cost-wise, the solar option makes sense; timewise, it's a nightmare.
+          translation:
+            vi: Về chi phí, phương án điện mặt trời là hợp lý; về thời gian thì đúng là ác mộng.
+      confusion:
+        vi: Nghĩa "về mặt" khá khẩu ngữ; trong văn trang trọng dùng in terms of cost. Không nhầm với wise (khôn ngoan).
+
+  # ---------------- Bài 3: thành ngữ rủi ro, thay đổi & tranh cãi ----------------
+  - key: en:item:sci-double-edged-sword
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: a double-edged sword
+      ipa: /ə ˌdʌbl ˈedʒd ˈsɔːd/ · US /ə ˌdʌbl ˈedʒd ˈsɔːrd/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Con dao hai lưỡi (vừa có lợi vừa có hại)
+      examples:
+        - target: Facial recognition is a double-edged sword - it catches criminals but erodes privacy.
+          translation:
+            vi: Nhận diện khuôn mặt là con dao hai lưỡi - nó bắt được tội phạm nhưng bào mòn quyền riêng tư.
+      pronunciation_note:
+        vi: Chữ w trong sword câm - đọc /sɔːd/, không đọc "xuốt".
+      confusion:
+        vi: Rất may tiếng Việt có hình ảnh tương đương; nhưng tiếng Anh nói sword (gươm) chứ không phải knife.
+
+  - key: en:item:sci-tip-of-the-iceberg
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: the tip of the iceberg
+      ipa: /ðə ˈtɪp əv ði ˈaɪsbɜːɡ/ · US /ðə ˈtɪp əv ði ˈaɪsbɝːɡ/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Phần nổi của tảng băng (chỉ một phần nhỏ của vấn đề lớn hơn nhiều)
+      examples:
+        - target: The reported cases of research fraud are probably just the tip of the iceberg.
+          translation:
+            vi: Các vụ gian lận nghiên cứu được báo cáo có lẽ chỉ là phần nổi của tảng băng.
+      confusion:
+        vi: Luôn dùng mạo từ the - the tip of the iceberg. Thường đi với only/just.
+
+  - key: en:item:sci-open-a-can-of-worms
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: open a can of worms
+      ipa: /ˌəʊpən ə ˌkæn əv ˈwɜːmz/ · US /ˌoʊpən ə ˌkæn əv ˈwɝːmz/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Khơi ra một loạt rắc rối (động vào một vấn đề sẽ kéo theo nhiều vấn đề phức tạp khác), gần với "chọc vào tổ ong"
+      examples:
+        - target: Asking who owns the patient data would open a whole can of worms.
+          translation:
+            vi: Hỏi xem ai sở hữu dữ liệu bệnh nhân sẽ là chọc vào cả một tổ ong rắc rối.
+      confusion:
+        vi: Thường dùng với would/could vì nói về rủi ro của việc khơi ra. Biến thể - a can of worms (bản thân vấn đề).
+
+  - key: en:item:sci-grey-area
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: a grey area
+      ipa: /ə ˈɡreɪ ˌeəriə/ · US /ə ˈɡreɪ ˌeriə/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Vùng xám (tình huống không rõ đúng sai, luật chưa quy định rõ)
+      examples:
+        - target: Using AI-generated images in news reports remains a legal grey area.
+          translation:
+            vi: Việc dùng ảnh do AI tạo trong bản tin vẫn là vùng xám pháp lý.
+      confusion:
+        vi: Anh viết grey, Mỹ viết gray. Không nói "a grey zone" trong nghĩa này.
+
+  - key: en:item:sci-move-the-goalposts
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: move the goalposts
+      ipa: UK /ˌmuːv ðə ˈɡəʊlpəʊsts/ · US /ˌmuːv ðə ˈɡoʊlpoʊsts/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Thay đổi luật chơi giữa chừng (đổi tiêu chí hoặc yêu cầu khi người khác sắp đạt được, một cách không công bằng)
+      examples:
+        - target: Every time we meet the safety targets, the regulator moves the goalposts.
+          translation:
+            vi: Lần nào chúng tôi đạt chỉ tiêu an toàn, cơ quan quản lý lại đổi luật chơi.
+      confusion:
+        vi: Mang sắc thái phàn nàn, chê trách. Goalposts luôn ở số nhiều.
+
+  - key: en:item:sci-push-the-boundaries
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: push the boundaries (of …)
+      ipa: /ˌpʊʃ ðə ˈbaʊndriz/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Mở rộng giới hạn, vượt khỏi những gì được coi là có thể hoặc chấp nhận được
+      examples:
+        - target: The new telescope is pushing the boundaries of what we can observe in deep space.
+          translation:
+            vi: Kính viễn vọng mới đang mở rộng giới hạn những gì ta có thể quan sát trong không gian sâu.
+      confusion:
+        vi: Có thể tích cực (đổi mới) hoặc tiêu cực (vượt giới hạn đạo đức) tuỳ ngữ cảnh.
+
+  - key: en:item:sci-step-in-the-right-direction
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: a step in the right direction
+      ipa: /ə ˈstep ɪn ðə ˌraɪt dəˈrekʃn/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Một bước đi đúng hướng (tiến bộ nhưng chưa đủ)
+      examples:
+        - target: The new labelling rules are a step in the right direction, but they don't go far enough.
+          translation:
+            vi: Quy định ghi nhãn mới là bước đi đúng hướng, nhưng chưa đủ mạnh.
+      pronunciation_note:
+        vi: Direction có hai cách đọc /dəˈrekʃn/ và /daɪˈrekʃn/; cả hai đều chuẩn.
+      confusion:
+        vi: Thường hàm ý "chưa đủ" - hay đi kèm but…. Không nói a step to the right direction.
+
+  - key: en:item:sci-uncharted-territory
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: uncharted territory
+      ipa: UK /ʌnˌtʃɑːtɪd ˈterətri/ · US /ʌnˌtʃɑːrtɪd ˈterətɔːri/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Vùng đất chưa được khám phá (tình huống hoàn toàn mới, chưa có tiền lệ)
+      examples:
+        - target: With brain-computer interfaces, lawmakers are entering uncharted territory.
+          translation:
+            vi: Với giao diện não - máy tính, các nhà làm luật đang bước vào vùng chưa có tiền lệ.
+      confusion:
+        vi: Không có mạo từ - be in / enter uncharted territory (danh từ không đếm được trong cụm này).
+
+  # ---------------- Bài 4: ngôn ngữ tranh luận đạo đức ----------------
+  - key: en:item:sci-it-is-debatable-whether
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: It is debatable whether …
+      ipa: /ɪt ɪz dɪˈbeɪtəbl ˈweðə/ · US /ɪt ɪz dɪˈbeɪtəbl ˈweðɚ/
+      pos: cụm rào đón
+    back:
+      meaning:
+        vi: Còn chưa rõ liệu… / Vẫn còn tranh cãi liệu… (nêu nghi ngờ một cách học thuật, không phản đối thẳng)
+      examples:
+        - target: It is debatable whether genetic screening of embryos should be available to all.
+          translation:
+            vi: Vẫn còn tranh cãi liệu sàng lọc gen phôi có nên được cung cấp cho mọi người hay không.
+      confusion:
+        vi: Dùng whether (liệu), không dùng that - It is debatable that là sai nghĩa.
+
+  - key: en:item:sci-raise-the-question-of
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: raise the question of …
+      ipa: /ˌreɪz ðə ˈkwestʃən əv/
+      pos: collocation
+    back:
+      meaning:
+        vi: Đặt ra câu hỏi về… (một sự việc khiến người ta phải suy nghĩ đến vấn đề khác)
+      examples:
+        - target: Self-driving cars raise the question of who is responsible in a crash.
+          translation:
+            vi: Xe tự lái đặt ra câu hỏi ai chịu trách nhiệm khi xảy ra tai nạn.
+      confusion:
+        vi: Raise (nêu ra, ngoại động từ) khác rise (tự tăng, nội động từ). Ngoài ra raise the question of + N/V-ing, hoặc raise the question (of) whether/who….
+
+  - key: en:item:sci-on-ethical-grounds
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: on ethical grounds
+      ipa: /ɒn ˈeθɪkl ˈɡraʊndz/ · US /ɑːn ˈeθɪkl ˈɡraʊndz/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: Vì lý do đạo đức (mẫu on + adj + grounds - on medical/legal/financial grounds)
+      examples:
+        - target: Several researchers refused to join the trial on ethical grounds.
+          translation:
+            vi: Một số nhà nghiên cứu từ chối tham gia thử nghiệm vì lý do đạo đức.
+      confusion:
+        vi: Luôn dùng grounds số nhiều và giới từ on - không nói by ethical ground. For ethical reasons cũng đúng nhưng ít trang trọng hơn.
+
+  - key: en:item:sci-at-the-expense-of
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: at the expense of …
+      ipa: /ət ði ɪkˈspens əv/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: Đánh đổi bằng… / Gây thiệt hại cho… (đạt được điều này nhưng phải hy sinh điều kia)
+      examples:
+        - target: Speeding up approvals should not come at the expense of patient safety.
+          translation:
+            vi: Đẩy nhanh việc phê duyệt không được đánh đổi bằng sự an toàn của bệnh nhân.
+      confusion:
+        vi: Khác at the cost of về sắc thái nhẹ - at the expense of hay dùng khi một nhóm người hoặc giá trị bị thiệt. Expense ở dạng số ít.
+
+  - key: en:item:sci-fine-line-between
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: There is a fine line between A and B.
+      ipa: /ðər ɪz ə ˌfaɪn ˈlaɪn bɪˈtwiːn/
+      pos: cụm diễn đạt
+    back:
+      meaning:
+        vi: Ranh giới giữa A và B rất mong manh
+      examples:
+        - target: There is a fine line between personalised advertising and manipulation.
+          translation:
+            vi: Ranh giới giữa quảng cáo cá nhân hoá và thao túng rất mong manh.
+      confusion:
+        vi: Fine ở đây là "mảnh, mỏng", không phải "ổn". Có thể nói tread/walk a fine line (đi trên dây).
+
+  - key: en:item:sci-benefits-outweigh-risks
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: the benefits outweigh the risks
+      ipa: /ðə ˈbenɪfɪts ˌaʊtˈweɪ ðə ˈrɪsks/
+      pos: collocation
+    back:
+      meaning:
+        vi: Lợi ích lớn hơn rủi ro
+      examples:
+        - target: Most experts agree that the benefits of the vaccine far outweigh the risks.
+          translation:
+            vi: Đa số chuyên gia đồng ý rằng lợi ích của vắc-xin vượt xa rủi ro.
+      pronunciation_note:
+        vi: Outweigh nhấn vào weigh /ˌaʊtˈweɪ/; gh câm.
+      confusion:
+        vi: Outweigh là ngoại động từ, không cần than - không nói outweigh than the risks. Muốn nhấn mạnh thêm far hoặc clearly.
+
+  - key: en:item:sci-moral-obligation
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: a moral obligation (to + V)
+      ipa: UK /ə ˌmɒrəl ˌɒblɪˈɡeɪʃn/ · US /ə ˌmɔːrəl ˌɑːblɪˈɡeɪʃn/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Nghĩa vụ đạo đức (không bắt buộc theo luật nhưng là việc đúng phải làm)
+      examples:
+        - target: Wealthy nations have a moral obligation to share medical supplies during a pandemic.
+          translation:
+            vi: Các quốc gia giàu có nghĩa vụ đạo đức phải chia sẻ vật tư y tế trong đại dịch.
+      confusion:
+        vi: Moral obligation khác legal obligation (nghĩa vụ pháp lý). Theo sau là to + V, không phải of + V-ing.
+
+  - key: en:item:sci-err-on-the-side-of-caution
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: err on the side of caution
+      ipa: UK /ˌɜːr ɒn ðə ˌsaɪd əv ˈkɔːʃn/ · US /ˌer ɑːn ðə ˌsaɪd əv ˈkɑːʃn/
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: Thà thận trọng quá còn hơn (chọn phương án an toàn khi chưa chắc chắn)
+      examples:
+        - target: Until we know more about the side effects, we should err on the side of caution.
+          translation:
+            vi: Cho đến khi biết thêm về tác dụng phụ, chúng ta nên thận trọng trước đã.
+      pronunciation_note:
+        vi: Err đọc /ɜː/ (UK) hoặc /er/ (US), giống âm đầu của early.
+      confusion:
+        vi: Err (phạm lỗi, nghiêng về) là động từ hiếm, chỉ gặp trong cụm này. Không nói err on the caution side.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:sci-informed-consent
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: informed consent
+      ipa: UK /ɪnˌfɔːmd kənˈsent/ · US /ɪnˌfɔːrmd kənˈsent/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: Sự đồng ý có hiểu biết (người tham gia đồng ý sau khi được giải thích đầy đủ rủi ro, lợi ích)
+      examples:
+        - target: No patient data may be used for training without informed consent.
+          translation:
+            vi: Không dữ liệu bệnh nhân nào được dùng để huấn luyện nếu chưa có sự đồng ý sau khi được thông tin đầy đủ.
+      confusion:
+        vi: Consent là danh từ không đếm được trong cụm này - không nói an informed consent. Give/obtain informed consent.
+
+  - key: en:item:sci-gene-editing
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: gene editing
+      ipa: /ˈdʒiːn ˌedɪtɪŋ/
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: Chỉnh sửa gen (thay đổi trực tiếp ADN của sinh vật bằng công nghệ như CRISPR)
+      examples:
+        - target: Gene editing could eliminate some inherited diseases within a generation.
+          translation:
+            vi: Chỉnh sửa gen có thể loại bỏ một số bệnh di truyền trong vòng một thế hệ.
+      confusion:
+        vi: Gene là danh từ làm bổ ngữ nên ở số ít - gene editing, không phải genes editing. Genetic (tính từ) dùng trong genetic engineering.

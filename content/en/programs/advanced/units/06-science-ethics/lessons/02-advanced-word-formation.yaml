@@ -1,0 +1,334 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:science-ethics-word-formation
+order_index: 2
+level: c1
+title:
+  vi: Counterintuitive, self-regulation, future-proof - cấu tạo từ nâng cao
+objectives:
+  - vi: Hiểu và dùng tiền tố counter-, inter-, self-, pseudo- trong văn bản khoa học và chính sách.
+  - vi: Dùng hậu tố -proof, -ify/-ise để tạo tính từ và động từ mới.
+  - vi: Dùng -wise ("về mặt…") đúng văn phong và biết khi nào đổi sang in terms of.
+  - vi: Đoán nghĩa từ mới trong bài đọc học thuật nhờ phân tích tiền tố, hậu tố.
+estimated_minutes: 25
+skills: [vocabulary, reading, writing]
+prerequisites: [en:lesson:science-ethics-noun-phrases]
+items:
+  - item: en:item:sci-prefix-counter
+  - item: en:item:sci-counterproductive
+  - item: en:item:sci-prefix-inter
+  - item: en:item:sci-prefix-self
+  - item: en:item:sci-prefix-pseudo
+  - item: en:item:sci-suffix-proof
+  - item: en:item:sci-suffix-ify-ise
+  - item: en:item:sci-suffix-wise
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được những từ dài như counterintuitive, interdisciplinary, self-regulation mà không cần tra từ điển, và tự tạo từ đúng khi viết.
+  - type: explain
+    text:
+      vi: "Tiền tố đổi nghĩa từ gốc: counter- (đối lại) → counterintuitive, counterproductive; inter- (giữa, liên) → interdisciplinary, interconnected; self- (tự) → self-driving, self-regulation; pseudo- (giả, nguỵ) → pseudoscience. Ở B2 bạn đã học un-, mis-, over-, under-; nhóm này thường gặp hơn trong văn khoa học."
+  - type: explain
+    text:
+      vi: "Hậu tố -ify và -ise/-ize tạo động từ \"làm cho…\": clear → clarify, intense → intensify, digital → digitise. Hậu tố -proof tạo tính từ \"chống…\": waterproof, tamper-proof, future-proof."
+  - type: explain
+    text:
+      vi: "-wise gắn sau danh từ nghĩa \"về mặt…\" (cost-wise, timewise) - tiện trong họp hành nhưng khẩu ngữ; trong báo cáo hãy viết in terms of cost. Tiếng Việt chỉ cần thêm \"về mặt\", nên người học hay lạm dụng -wise trong văn trang trọng."
+  - type: deep_explain
+    text:
+      vi: Trọng âm có thể dịch chuyển khi thêm hậu tố - ˈclarity → ˈclarify, nhưng ˈintense → inˈtensify. Self- luôn có gạch nối (self-funded), counter- và inter- thường viết liền (counterbalance, interdependent). Một mẹo đoán nghĩa - tách từ thành tiền tố + gốc + hậu tố - inter + connect + ed = được kết nối với nhau.
+  - type: example
+    target: It may seem counterintuitive, but adding more lanes often makes traffic worse.
+    target_lang: en
+    translation:
+      vi: Nghe có vẻ trái trực giác, nhưng mở thêm làn đường thường khiến giao thông tệ hơn.
+    note:
+      vi: Counter- + intuitive = trái với trực giác.
+  - type: example
+    target: The project brings together an interdisciplinary team of doctors, coders and ethicists.
+    target_lang: en
+    translation:
+      vi: Dự án tập hợp một nhóm liên ngành gồm bác sĩ, lập trình viên và chuyên gia đạo đức học.
+    note:
+      vi: Inter- + disciplinary = giữa nhiều ngành.
+  - type: example
+    target: Health officials are trying to clarify which supplements are backed by science and which are pseudoscience.
+    target_lang: en
+    translation:
+      vi: Giới chức y tế đang cố làm rõ thực phẩm chức năng nào có cơ sở khoa học và loại nào là nguỵ khoa học.
+    note:
+      vi: Clear → clarify (-ify); pseudo- + science = nguỵ khoa học.
+  - type: example
+    target: Timewise, the new vaccine plant is ahead of schedule; cost-wise, it's well over budget.
+    target_lang: en
+    translation:
+      vi: Về thời gian, nhà máy vắc-xin mới vượt tiến độ; về chi phí, nó vượt ngân sách khá nhiều.
+    note:
+      vi: -wise = "về mặt…", hợp với lời nói trong cuộc họp.
+  - type: common_mistake
+    wrong: Banning homework completely could be anti-productive.
+    right: Banning homework completely could be counterproductive.
+    target_lang: en
+    note:
+      vi: Tính từ "phản tác dụng" là counterproductive; anti-productive không tồn tại.
+  - type: common_mistake
+    wrong: "In the report: Budgetwise, the hospital project is sustainable."
+    right: "In the report: In terms of budget, the hospital project is sustainable."
+    target_lang: en
+    note:
+      vi: -wise mang tính khẩu ngữ; báo cáo trang trọng dùng in terms of.
+  - type: common_mistake
+    wrong: Selfdriving cars still struggle in heavy rain.
+    right: Self-driving cars still struggle in heavy rain.
+    target_lang: en
+    note:
+      vi: Từ ghép với self- luôn có gạch nối.
+  - type: summary
+    points:
+      - vi: counter- đối lại (counterintuitive, counterproductive); inter- giữa/liên (interdisciplinary).
+      - vi: self- tự (self-driving, có gạch nối); pseudo- giả/nguỵ (pseudoscience, p câm).
+      - vi: -ify/-ise tạo động từ (clarify, digitise); -proof tạo tính từ chống… (future-proof).
+      - vi: -wise = về mặt… (khẩu ngữ); văn trang trọng dùng in terms of.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:scieth-wf-mcq-pseudo
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-prefix-pseudo
+    prompt:
+      stem: "Chọn từ đúng: Claims that the bracelet \"balances your energy\" are pure ___."
+      stem_lang: vi
+      options:
+        - { id: r7m, text: pseudoscience, lang: en }
+        - { id: l4c, text: counterscience, lang: en }
+        - { id: v9e, text: interscience, lang: en }
+        - { id: b2u, text: self-science, lang: en }
+    answer:
+      correct_option_id: r7m
+    explanation:
+      vi: Pseudo- nghĩa là "giả, nguỵ", nên pseudoscience là thứ tự nhận là khoa học nhưng không có cơ sở. Các từ còn lại không tồn tại.
+    display_answer: pseudoscience
+
+  - key: en:exercise:scieth-wf-listen-interconnected
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-prefix-inter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Food prices, energy costs and climate policy are deeply interconnected.
+      options:
+        - { id: n6t, text: "Giá thực phẩm, chi phí năng lượng và chính sách khí hậu gắn kết chặt chẽ với nhau.", lang: vi }
+        - { id: h3w, text: "Giá thực phẩm, chi phí năng lượng và chính sách khí hậu hoàn toàn độc lập với nhau.", lang: vi }
+        - { id: x8s, text: "Giá thực phẩm và chi phí năng lượng phụ thuộc vào kết nối internet.", lang: vi }
+        - { id: f1o, text: "Chính sách khí hậu đã cắt đứt mối liên hệ giữa giá thực phẩm và năng lượng.", lang: vi }
+    answer:
+      correct_option_id: n6t
+    explanation:
+      vi: Inter- (giữa) + connected (được kết nối) = gắn kết với nhau. Phương án "internet" là bẫy vì cùng tiền tố inter- nhưng khác nghĩa hoàn toàn.
+    display_answer: "Giá thực phẩm, chi phí năng lượng và chính sách khí hậu gắn kết chặt chẽ với nhau."
+
+  - key: en:exercise:scieth-wf-fill-proof-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sci-suffix-proof
+    prompt:
+      template: "Medicine bottles now come with {{b1}} caps, so you can see if anyone has opened them."
+      blanks:
+        - { id: b1, width_hint: 12 }
+      hint_levels:
+        - "Nghĩa: Lọ thuốc giờ có nắp chống can thiệp, nên bạn biết được có ai đã mở chưa."
+        - "Gợi ý: tamper (can thiệp, xáo trộn) + hậu tố \"chống\"."
+    answer:
+      blanks:
+        b1: [tamper-proof, tamperproof, tamper-evident]
+    known_wrong:
+      - answer: tampered
+        feedback_vi: Tampered là "đã bị can thiệp"; cần tính từ "chống can thiệp" - tamper-proof.
+        error_tag: suffix_choice
+      - answer: anti-tamper
+        feedback_vi: Câu cần tính từ với hậu tố -proof - tamper-proof.
+        error_tag: suffix_choice
+    explanation:
+      vi: Hậu tố -proof nghĩa "chống, không bị ảnh hưởng bởi", giống waterproof. Tamper-proof caps là nắp chống can thiệp, phổ biến trên bao bì thuốc.
+    display_answer: Medicine bottles now come with tamper-proof caps, so you can see if anyone has opened them.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:scieth-wf-fill-ify
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-suffix-ify-ise
+    prompt:
+      template: "As the drought worsened, protests began to {{b1}} and the government had to {{b2}} its water policy to the public."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [intensify, escalate]
+        b2: [clarify, explain]
+    known_wrong:
+      - answer: intense
+        feedback_vi: Sau to cần động từ - intense là tính từ, động từ là intensify.
+        error_tag: word_form
+      - answer: clear
+        feedback_vi: Động từ "làm rõ" với tân ngữ là chính sách thường dùng clarify.
+        error_tag: word_form
+      - answer: clearify
+        feedback_vi: Chính tả đúng là clarify (không có e).
+        error_tag: spelling
+    explanation:
+      vi: Hậu tố -ify biến tính từ thành động từ "làm cho…" - intense → intensify (gia tăng), clear → clarify (làm rõ). Chú ý chính tả clarify, không phải clearify.
+    display_answer: As the drought worsened, protests began to intensify and the government had to clarify its water policy to the public.
+
+  - key: en:exercise:scieth-wf-translate-counterproductive
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-counterproductive
+    prompt:
+      source_text: Phạt quá nặng có thể phản tác dụng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Harsh penalties can be counterproductive.
+        - Harsh penalties could be counterproductive.
+        - Harsh penalties may be counterproductive.
+        - Harsh punishments can be counterproductive.
+        - Overly harsh penalties can be counterproductive.
+        - Overly harsh punishments can be counterproductive.
+        - Excessive penalties can be counterproductive.
+        - Excessive fines can be counterproductive.
+        - Punishing too harshly can be counterproductive.
+        - Punishing people too harshly can be counterproductive.
+        - Fines that are too heavy can be counterproductive.
+        - Penalties that are too harsh can be counterproductive.
+        - Harsh penalties can be counter-productive.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Harsh penalties can be anti-productive.
+        feedback_vi: Tính từ "phản tác dụng" là counterproductive.
+        error_tag: prefix_choice
+      - answer: Harsh penalties can be unproductive.
+        feedback_vi: Unproductive là "không hiệu quả"; counterproductive mạnh hơn - gây kết quả ngược lại.
+        error_tag: prefix_choice
+    explanation:
+      vi: "\"Phản tác dụng\" là gây ra kết quả ngược với mục tiêu - counterproductive. Unproductive chỉ là không đem lại kết quả."
+    display_answer: Harsh penalties can be counterproductive.
+
+  - key: en:exercise:scieth-wf-translate-self-regulation
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-prefix-self
+    prompt:
+      source_text: Ngành công nghiệp này không thể chỉ dựa vào cơ chế tự quản.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This industry cannot rely on self-regulation alone.
+        - This industry can't rely on self-regulation alone.
+        - This industry cannot rely solely on self-regulation.
+        - This industry can't rely solely on self-regulation.
+        - This industry cannot rely only on self-regulation.
+        - This industry can't rely only on self-regulation.
+        - This industry cannot depend on self-regulation alone.
+        - This industry can't depend on self-regulation alone.
+        - The industry cannot rely on self-regulation alone.
+        - The industry can't rely on self-regulation alone.
+        - The industry cannot rely solely on self-regulation.
+        - This industry cannot rely on self regulation alone.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This industry cannot rely on auto-regulation alone.
+        feedback_vi: Tiền tố "tự" trong ngữ cảnh quản lý là self- - self-regulation.
+        error_tag: prefix_choice
+      - answer: This industry cannot rely on self-regulating alone.
+        feedback_vi: Sau rely on cần danh từ - self-regulation.
+        error_tag: word_form
+    explanation:
+      vi: "\"Tự quản\" (ngành tự đặt và giám sát quy tắc) là self-regulation; self- luôn có gạch nối. Rely on … alone là \"chỉ dựa vào\"."
+    display_answer: This industry cannot rely on self-regulation alone.
+
+  # ---------------- application ----------------
+  - key: en:exercise:scieth-wf-mcq-wise-register
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-suffix-wise
+    prompt:
+      stem: "Bạn viết câu kết trong một BÁO CÁO TRANG TRỌNG gửi hội đồng quản trị về chi phí dự án. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: s5g, text: "In terms of cost, the project remains within the approved budget.", lang: en }
+        - { id: k8a, text: "Cost-wise, the project is pretty much fine budget-wise.", lang: en }
+        - { id: e2y, text: "Costwise-speaking, the project remains within the approved budget.", lang: en }
+        - { id: q6d, text: "In cost-wise terms, the project remains within the approved budget.", lang: en }
+    answer:
+      correct_option_id: s5g
+    explanation:
+      vi: -wise mang tính khẩu ngữ, hợp với cuộc họp hơn văn bản trang trọng; báo cáo nên dùng In terms of cost. Các phương án khác vừa khẩu ngữ vừa ghép sai.
+    display_answer: "In terms of cost, the project remains within the approved budget."
+
+  - key: en:exercise:scieth-wf-order-future-proof
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sci-suffix-proof
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thành phố cần đảm bảo hệ thống thoát nước không bị lỗi thời trước mưa lớn hơn.\""
+      tokens:
+        - { id: f-rain, text: against heavier rainfall }
+        - { id: f-city, text: The city needs to }
+        - { id: f-drain, text: its drainage system }
+        - { id: f-proof, text: future-proof }
+        - { id: f-anti, text: anti-future }
+    answer:
+      orders:
+        - [f-city, f-proof, f-drain, f-rain]
+    explanation:
+      vi: Future-proof dùng như động từ (làm cho không lỗi thời) + tân ngữ its drainage system + against …. Anti-future không phải từ tiếng Anh.
+    display_answer: The city needs to future-proof its drainage system against heavier rainfall.
+
+  - key: en:exercise:scieth-wf-translate-counterintuitive-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sci-prefix-counter
+    prompt:
+      source_text: Counterintuitively, an interdisciplinary review found that the cheapest treatment was also the most effective.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trái với trực giác, một nghiên cứu tổng quan liên ngành phát hiện ra rằng phương pháp điều trị rẻ nhất cũng là hiệu quả nhất.
+        - Trái với suy nghĩ thông thường, một tổng quan liên ngành cho thấy cách điều trị rẻ nhất cũng hiệu quả nhất.
+        - Ngược với trực giác, một bài đánh giá liên ngành phát hiện phương pháp điều trị rẻ nhất cũng là hiệu quả nhất.
+        - Trái với trực giác, một đánh giá liên ngành cho thấy phương pháp điều trị rẻ nhất lại cũng hiệu quả nhất.
+        - Thật trái trực giác, một nghiên cứu tổng quan liên ngành cho thấy cách chữa rẻ nhất cũng là cách hiệu quả nhất.
+        - Trái với dự đoán, một tổng quan liên ngành phát hiện rằng phương pháp điều trị rẻ nhất cũng hiệu quả nhất.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Counterintuitively = trái với trực giác (counter- đối lại); interdisciplinary = liên ngành (inter- giữa các ngành). Tách tiền tố giúp bạn đoán nghĩa ngay cả khi chưa gặp từ.
+    display_answer: Trái với trực giác, một nghiên cứu tổng quan liên ngành phát hiện ra rằng phương pháp điều trị rẻ nhất cũng là hiệu quả nhất.
