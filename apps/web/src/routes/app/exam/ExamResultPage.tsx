@@ -23,7 +23,7 @@ function resultFromState(state: unknown): ExamResult | null {
 function Page({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-dvh flex-col">
-      <header className="glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
+      <header className="glass sticky top-0 z-30 border-x-0! border-t-0! pt-safe">
         <div className="mx-auto flex min-h-14 w-full max-w-3xl items-center gap-2 px-safe py-2">
           <Link
             to={EXAM_HUB_PATH}
