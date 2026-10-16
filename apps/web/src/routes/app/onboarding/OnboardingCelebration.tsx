@@ -44,7 +44,7 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
           },
         ]}
       />
-      <h1 ref={headingRef} tabIndex={-1} className="text-[28px] font-bold tracking-[-0.03em] focus:outline-none">
+      <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
         Lộ trình đã sẵn sàng!
       </h1>
       {/* The estimate counts up (spec onboarding step 6); CountUp shows the final numbers at once under reduced motion. */}

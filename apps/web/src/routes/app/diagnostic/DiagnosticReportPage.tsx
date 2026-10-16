@@ -280,7 +280,7 @@ export function DiagnosticReportPage() {
   } else if (!report) {
     body = (
       <div className="space-y-4">
-        <h1 className="text-[26px] font-bold leading-tight tracking-[-0.03em]">Chưa có kết quả</h1>
+        <h1 className="page-title">Chưa có kết quả</h1>
         <p className="text-muted">Bạn chưa hoàn thành bài kiểm tra trình độ cho lộ trình này.</p>
         <Link to={`/app/kiem-tra/${pathId}`} className={buttonClasses('accent', 'lg', true)}>
           Làm bài kiểm tra
@@ -292,7 +292,7 @@ export function DiagnosticReportPage() {
     body = (
       <div className="space-y-6">
         <div>
-          <h1 ref={headingRef} tabIndex={-1} className="text-[26px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+          <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
             Kết quả kiểm tra
           </h1>
           <p className="mt-2 text-[15px] text-muted">

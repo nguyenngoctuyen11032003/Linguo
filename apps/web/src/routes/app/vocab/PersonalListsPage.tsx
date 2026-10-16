@@ -87,7 +87,7 @@ export function PersonalListsPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Từ vựng của tôi</h1>
+          <h1 className="page-title">Từ vựng của tôi</h1>
           <p className="mt-1 max-w-prose text-[15px] text-muted">
             Danh sách riêng của bạn, chỉ mình bạn thấy. Ôn bằng cùng lịch ôn thông minh với các thẻ trong bài học.
           </p>

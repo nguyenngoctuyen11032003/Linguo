@@ -114,7 +114,7 @@ export function PersonalListPage() {
     <div className="space-y-6">
       {back}
       <div className="space-y-1">
-        <h1 ref={headingRef} tabIndex={-1} className="break-words text-[28px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+        <h1 ref={headingRef} tabIndex={-1} className="break-words page-title focus:outline-none">
           {list.name}
         </h1>
         <p className="text-[15px] text-muted">
@@ -167,7 +167,7 @@ export function PersonalListPage() {
       )}
 
       {items.length > 0 && (
-        <div role="region" aria-label="Các từ trong danh sách" tabIndex={0} className="max-w-full overflow-x-auto rounded-3xl border border-border bg-surface-solid">
+        <div role="region" aria-label="Các từ trong danh sách" tabIndex={0} className="max-w-full overflow-x-auto card">
           <table className="w-full min-w-0 text-left text-[15px]">
             <caption className="sr-only">
               Danh sách {items.length} từ của “{list.name}”

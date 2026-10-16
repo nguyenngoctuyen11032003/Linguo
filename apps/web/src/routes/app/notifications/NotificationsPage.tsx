@@ -21,7 +21,7 @@ const KIND_META: Record<NotificationKind, { icon: LucideIcon; label: string }> =
 const safeTarget = (url: string) => (url.startsWith('/app/') && !url.startsWith('//') ? url : '/app');
 
 function Title() {
-  return <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Thông báo</h1>;
+  return <h1 className="page-title">Thông báo</h1>;
 }
 
 function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (item: AppNotification) => void }) {
@@ -150,7 +150,7 @@ export function NotificationsPage() {
   return (
     <div className="space-y-6">
       <Title />
-      <ul ref={listRef} aria-label="Danh sách thông báo" className="space-y-1 rounded-3xl border border-border bg-surface-solid p-2 shadow-[var(--shadow-card)]">
+      <ul ref={listRef} aria-label="Danh sách thông báo" className="space-y-1 card p-2">
         {items.map((item) => (
           <NotificationRow key={item.id} item={item} onOpen={open} />
         ))}

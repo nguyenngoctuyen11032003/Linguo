@@ -199,7 +199,7 @@ export function SettingsPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Cài đặt</h1>
+      <h1 className="page-title">Cài đặt</h1>
 
       <SettingsJumpList />
 

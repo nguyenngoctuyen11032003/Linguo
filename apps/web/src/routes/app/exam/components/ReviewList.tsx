@@ -76,7 +76,7 @@ function ReviewCard({
   const script = prompt.script ?? (item.section === 'listening' ? prompt.tts_text : undefined);
 
   return (
-    <article aria-labelledby={titleId} className="min-w-0 space-y-3 rounded-3xl border border-border bg-surface-solid p-4 sm:p-5">
+    <article aria-labelledby={titleId} className="min-w-0 space-y-3 card p-4 sm:p-5">
       <header className="flex flex-wrap items-center justify-between gap-2">
         <h3 id={titleId} className="min-w-0 text-sm font-semibold text-muted break-words">
           Câu {item.seq} · {SECTION_LABELS[item.section]} · {questionTypeLabel(item.question_type)}

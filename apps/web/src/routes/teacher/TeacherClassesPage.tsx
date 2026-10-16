@@ -69,7 +69,7 @@ export function TeacherClassesPage() {
           <p className="text-[15px] text-muted">Không có lớp nào đang hoạt động. Hãy tạo lớp mới hoặc khôi phục một lớp đã lưu trữ.</p>
         )}
         {archived.length > 0 && (
-          <details className="group rounded-3xl border border-border bg-surface-solid">
+          <details className="group card">
             <summary className="flex min-h-13 cursor-pointer list-none items-center gap-2 rounded-3xl px-5 text-[15px] font-semibold focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 [&::-webkit-details-marker]:hidden">
               <Archive aria-hidden className="size-5 text-muted" />
               <span className="flex-1">Lớp đã lưu trữ ({archived.length})</span>
@@ -88,7 +88,7 @@ export function TeacherClassesPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0">
-          <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Lớp học của tôi</h1>
+          <h1 className="page-title">Lớp học của tôi</h1>
           <p className="mt-1 max-w-prose text-[15px] text-muted">
             Bạn chỉ thấy số liệu tổng hợp của học viên. Câu trả lời, hội thoại với AI và từ vựng riêng của họ luôn được giữ kín.
           </p>

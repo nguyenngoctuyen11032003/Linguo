@@ -82,7 +82,7 @@ function Intro({ mode, resumable, retakeAfter }: IntroProps) {
   ];
   return (
     <>
-      <h1 ref={headingRef} tabIndex={-1} className="text-[26px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+      <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
         {foundation ? 'Kiểm tra nền tảng' : 'Kiểm tra trình độ'}
       </h1>
       <p className="mt-2 text-muted">Giúp Linguo chọn bài học vừa sức với bạn.</p>

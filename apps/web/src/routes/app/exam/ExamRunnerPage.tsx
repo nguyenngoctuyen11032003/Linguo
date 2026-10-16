@@ -274,7 +274,7 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
             />
           </fieldset>
         </div>
-        <aside aria-label="Điều hướng câu hỏi" className="min-w-0 rounded-3xl border border-border bg-surface-solid p-4 md:sticky md:top-20">
+        <aside aria-label="Điều hướng câu hỏi" className="min-w-0 card p-4 md:sticky md:top-20">
           <QuestionNavigator questions={questions} currentId={current.question_id} onGo={go} />
         </aside>
       </div>

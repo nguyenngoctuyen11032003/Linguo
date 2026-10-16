@@ -292,7 +292,7 @@ export function LessonPage() {
           <h2
             ref={titleRef}
             tabIndex={-1}
-            className="mt-2 text-[26px] font-bold leading-tight tracking-[-0.03em] focus:outline-none"
+            className="mt-2 text-[26px] font-extrabold leading-tight tracking-[-0.03em] focus:outline-none"
           >
             {stepTitle(run, step)}
           </h2>

@@ -35,7 +35,7 @@ function Page({ children }: { children: ReactNode }) {
         </div>
       </header>
       <main id="main" className="mx-auto w-full max-w-3xl flex-1 space-y-6 px-safe pt-4 pb-[calc(2rem+env(safe-area-inset-bottom,0px))]">
-        <h1 className="text-[26px] font-bold leading-tight tracking-[-0.03em]">Kết quả bài luyện</h1>
+        <h1 className="page-title">Kết quả bài luyện</h1>
         {children}
       </main>
     </div>

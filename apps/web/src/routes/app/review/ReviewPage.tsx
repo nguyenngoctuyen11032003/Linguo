@@ -29,7 +29,7 @@ function isTypingTarget(target: EventTarget | null): boolean {
 }
 
 function Heading() {
-  return <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">{TITLE}</h1>;
+  return <h1 className="page-title">{TITLE}</h1>;
 }
 
 /** /app/on-tap: the daily flashcard review (spec 3 §6). Scheduling stays on the server; this screen only rates. */

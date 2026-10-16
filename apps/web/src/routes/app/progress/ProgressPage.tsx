@@ -175,7 +175,7 @@ export function ProgressPage() {
     <div className="space-y-6">
       <header className="flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0 space-y-1">
-          <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Tiến độ</h1>
+          <h1 className="page-title">Tiến độ</h1>
           <p className="text-sm text-muted">Thời gian học, kết quả và trình độ ước lượng được tính riêng.</p>
         </div>
         {paths.current && <RangeToggle value={range} onChange={changeRange} />}

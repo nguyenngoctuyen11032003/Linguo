@@ -7,6 +7,13 @@ import { EstimateSummary } from '@/features/learning-paths/components/EstimateSu
 import { formatEstimate } from '@/features/learning-paths/format-estimate';
 import type { LearningPath } from '@/features/learning-paths/service';
 
+const SHORT_LEVEL: Record<string, string> = { pre_a1: 'A0', hangul: '가', kana: 'あ' };
+
+/** Two-to-three character level tag for the big readout (A2, T3, N4…). */
+function shortLevel(code: string): string {
+  return SHORT_LEVEL[code] ?? code.replace(/^topik/, 'T').toUpperCase();
+}
+
 interface Props {
   path: LearningPath;
   onResume: () => void;
@@ -31,14 +38,22 @@ export function PathSummaryCard({ path, onResume, resuming, focusRef }: Props) {
       <Link
         ref={focusRef}
         to="/app/hoc-tap"
-        className="flex min-h-14 items-center gap-3 rounded-3xl border border-border bg-surface-solid px-5 py-3 shadow-[var(--shadow-card)] transition-colors hover:bg-text/5"
+        className="card flex min-h-14 items-center gap-4 px-4 py-3.5 transition-colors hover:border-primary/40"
       >
-        <span className="min-w-0 flex-1 break-words">
-          <span className="block text-sm text-muted">Lộ trình của bạn</span>
-          <span className="block font-semibold">{title}</span>
-          <span className="block text-sm text-muted">
+        <span aria-hidden="true" className="stat-num flex shrink-0 items-center gap-1.5 text-[28px]">
+          <span className="text-muted">{shortLevel(path.currentLevel)}</span>
+          <span className="h-0.5 w-4 rounded-full bg-gradient-to-r from-muted to-accent" />
+          <span className="text-accent-text">{shortLevel(path.targetLevel)}</span>
+        </span>
+        <span className="min-w-0 flex-1 break-words border-l border-border pl-4">
+          <span className="eyebrow block">Lộ trình của bạn</span>
+          <span className="block text-[15px] font-bold leading-snug">{title}</span>
+          <span className="block text-[13px] text-muted">
             <span className="sr-only">Từ trình độ hiện tại tới mục tiêu: </span>
-            {from} → {to} · {weeks}
+            <span className="sr-only">
+              {from} → {to} ·{' '}
+            </span>
+            {weeks}
             {!path.estimate.assumptions.referenceReviewed && ' (ước lượng tham khảo)'}
           </span>
         </span>

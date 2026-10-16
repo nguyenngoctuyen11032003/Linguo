@@ -416,7 +416,7 @@ function PathSession() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">{TITLE}</h1>
+      <h1 className="page-title">{TITLE}</h1>
       <p aria-live="polite" className="sr-only">
         {announcement}
       </p>

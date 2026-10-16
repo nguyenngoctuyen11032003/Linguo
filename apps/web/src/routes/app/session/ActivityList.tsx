@@ -77,7 +77,7 @@ export function ActivityList({ activities, busy, onMove, onSkip, onRestore }: Pr
             data-activity-id={activity.id}
             tabIndex={-1}
             className={cn(
-              'rounded-3xl border border-border bg-surface-solid p-4 shadow-[var(--shadow-card)] focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
+              'card p-4 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
               !pending && 'border-dashed',
             )}
           >

@@ -45,7 +45,7 @@ export function ClassesPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 ref={headingRef} tabIndex={-1} className="text-[28px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+        <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
           Lớp học
         </h1>
         <p className="mt-1 max-w-prose text-[15px] text-muted">

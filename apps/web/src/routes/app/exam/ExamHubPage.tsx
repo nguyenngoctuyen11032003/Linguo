@@ -192,7 +192,7 @@ export function ExamHubPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-1">
-        <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Luyện thi</h1>
+        <h1 className="page-title">Luyện thi</h1>
         <p className="text-[15px] text-muted">Bài luyện mô phỏng theo cấu trúc đề thi — không phải đề thi chính thức.</p>
       </div>
       {content}

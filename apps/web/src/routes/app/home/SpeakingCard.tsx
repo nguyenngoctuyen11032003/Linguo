@@ -8,7 +8,7 @@ export function SpeakingCard() {
       icon={Mic}
       titleId="speaking-card-title"
       title="Luyện nói"
-      description="Nhắc lại câu, trả lời mở và đóng vai. Giọng của bạn không bị lưu lại."
+      description="Nói theo mẫu, đóng vai. Không lưu giọng nói."
       to="/app/luyen-noi"
       label="Vào luyện nói"
     />

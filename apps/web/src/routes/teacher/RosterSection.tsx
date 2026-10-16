@@ -35,7 +35,7 @@ export function RosterSection({ roster, api }: { roster: TeacherRoster; api: Cla
           Chưa có học viên nào. Hãy gửi mã mời để học viên vào lớp.
         </SolidCard>
       ) : (
-        <div role="region" aria-labelledby="roster-title" tabIndex={0} className="max-w-full overflow-x-auto rounded-3xl border border-border bg-surface-solid">
+        <div role="region" aria-labelledby="roster-title" tabIndex={0} className="max-w-full overflow-x-auto card">
           <table className="w-full text-left text-[15px]">
             <caption className="sr-only">
               Tiến độ của {members.length} học viên. Số phút và số bài tính trong 7 ngày gần nhất; tỉ lệ ôn đúng tính trong 30 ngày.

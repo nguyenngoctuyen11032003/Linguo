@@ -60,11 +60,10 @@ describe('NextLessonCard', () => {
     expect(screen.queryByRole('link', { name: 'Bắt đầu' })).not.toBeInTheDocument();
   });
 
-  it('uses an outline button so only Hôm nay is a filled primary', () => {
+  it('stays unfilled so only Hôm nay is a filled primary', () => {
     setHook({ lessons: [open] });
     renderWithProviders(<NextLessonCard />, { route: '/app' });
     const link = screen.getByRole('link', { name: 'Học bài này' });
-    expect(link).toHaveClass('border');
     expect(link).not.toHaveClass('bg-primary');
     expect(link).not.toHaveClass('bg-accent');
   });

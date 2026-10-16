@@ -204,7 +204,7 @@ function ResultCard({
   );
   if (latest) {
     return (
-      <article className="space-y-3 rounded-3xl border border-border bg-surface-solid p-4 shadow-[var(--shadow-card)]">
+      <article className="space-y-3 card p-4">
         <header className="space-y-1">
           <h3 ref={headingRef} tabIndex={-1} lang={titleLang} className="scroll-mt-24 break-words font-semibold focus:outline-none">
             {entry.title}
@@ -216,7 +216,7 @@ function ResultCard({
     );
   }
   return (
-    <details className="group rounded-3xl border border-border bg-surface-solid px-4 py-3">
+    <details className="group card px-4 py-3">
       <summary lang={titleLang} className="flex min-h-11 cursor-pointer items-center break-words font-semibold">
         {entry.title}
       </summary>
@@ -646,7 +646,7 @@ export function TutorPage() {
     <div className="space-y-6">
       <header className="space-y-2">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Gia sư AI</h1>
+          <h1 className="page-title">Gia sư AI</h1>
           <AiQuotaChip quota={quota.quota} />
         </div>
         {path && (

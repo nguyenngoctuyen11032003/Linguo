@@ -81,7 +81,7 @@ export function SpeakingPage() {
   return (
     <div className="space-y-6">
       <header className="space-y-1">
-        <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Luyện nói</h1>
+        <h1 className="page-title">Luyện nói</h1>
         <p className="text-[15px] text-muted">
           Nói to, nghe lại và tự nhận xét. Đây là luyện tập nhẹ nhàng, không có điểm số hay đánh giá trình độ.
         </p>

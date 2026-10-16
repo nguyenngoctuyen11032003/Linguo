@@ -12,7 +12,7 @@ export function AuthCard({ title, subtitle, children, footer }: AuthCardProps) {
   return (
     <div className="space-y-5">
       <div className="space-y-2">
-        <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">{title}</h1>
+        <h1 className="page-title">{title}</h1>
         {subtitle && <p className="text-[15px] leading-relaxed text-muted">{subtitle}</p>}
       </div>
       <SolidCard className="space-y-5 p-6">{children}</SolidCard>

@@ -69,10 +69,10 @@ export function HomePage() {
   );
 
   return (
-    <div className="space-y-6">
-      <header className="space-y-1">
-        <p className="text-sm capitalize text-muted">{todayLabel(timeZone)}</p>
-        <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">
+    <div className="space-y-4">
+      <header className="space-y-2 pb-2">
+        <p className="eyebrow">{todayLabel(timeZone)}</p>
+        <h1 className="page-title">
           {status === 'loading' ? (
             <>
               <span className="sr-only">Đang tải…</span>
@@ -97,8 +97,11 @@ export function HomePage() {
           <WeeklySummaryCard />
           <SpreadWarning paths={paths.paths} />
           {paths.current.status === 'active' && pathSummary}
-          <DiagnosticCard pathId={paths.current.id} />
-          <SpeakingCard />
+          {/* Two short tiles side by side on phones; a lone tile takes the full row. */}
+          <div className="grid grid-cols-2 gap-3 *:min-w-0 max-[379px]:grid-cols-1 sm:grid-cols-1 max-sm:[&>*:only-child]:col-span-2">
+            <DiagnosticCard pathId={paths.current.id} />
+            <SpeakingCard />
+          </div>
           <ClassesHomeCard />
           <HomeMotivation pathId={paths.current.id} />
         </>

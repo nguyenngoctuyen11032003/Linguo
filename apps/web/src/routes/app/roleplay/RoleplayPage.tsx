@@ -151,7 +151,7 @@ export function RoleplayPage() {
     <div className="space-y-6">
       <header className="space-y-2">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 ref={titleRef} tabIndex={-1} className="text-[28px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+          <h1 ref={titleRef} tabIndex={-1} className="page-title focus:outline-none">
             Đóng vai với AI
           </h1>
           <AiQuotaChip quota={quota.quota} />

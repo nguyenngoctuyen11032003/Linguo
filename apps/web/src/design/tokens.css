@@ -1,18 +1,23 @@
 :root,
 [data-theme='light'] {
   color-scheme: light;
-  --bg: #f6f8fb;
-  --surface: #ffffff;
+  /* Warm paper, ink text: editorial light mode. */
+  --bg: #f3f1ec;
+  --surface: rgb(255 255 255 / 0.82);
   --surface-solid: #ffffff;
-  --border: #e3e8ef;
+  --card-bg: #ffffff;
+  --card-sheen: inset 0 1px 0 rgb(255 255 255 / 0.9);
+  --border: #e4dfd5;
   --input-border: #7d8a99;
-  --text: #0f1c2b;
-  --muted: #5b6b7c;
-  --primary: #276fa0;
-  --primary-strong: #1f5c86;
+  --text: #0d1622;
+  --muted: #59646f;
+  --primary: #1f6a9a;
+  --primary-strong: #17547b;
+  --primary-depth: #124564;
   --on-primary: #ffffff;
   --accent: #f37d25;
-  --accent-text: #b4500e;
+  --accent-depth: #c25e14;
+  --accent-text: #a94a0b;
   --on-accent: #1a0e05;
   --gold: #8f6417;
   --success: #1f7a50;
@@ -21,40 +26,57 @@
   --on-warn: #1a1203;
   --error: #c03a31;
   --error-text: #a8302a;
-  --glass-blur: 0px;
-  --shadow-card: 0 1px 2px rgb(15 28 43 / 0.06), 0 8px 24px rgb(15 28 43 / 0.06);
-  --focus-ring: #276fa0;
+  --glass-blur: 18px;
+  --shadow-card: 0 1px 0 rgb(13 22 34 / 0.04), 0 10px 30px -12px rgb(13 22 34 / 0.14);
+  --shadow-dock: 0 18px 40px -16px rgb(13 22 34 / 0.35), 0 2px 6px rgb(13 22 34 / 0.06);
+  --ambient: radial-gradient(ellipse 70% 40% at 0% 0%, rgb(31 106 154 / 0.1), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgb(243 125 37 / 0.08), transparent 70%);
+  --hero-bg: linear-gradient(155deg, #10283b 0%, #173a52 45%, #8a4a1f 130%);
+  --focus-ring: #1f6a9a;
 }
 
 [data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0b1420;
-  --surface: rgb(18 26 38 / 0.78);
-  --surface-solid: #121c29;
-  --border: rgb(255 255 255 / 0.1);
+  /* Deep ink with warm/cool ambient glows. */
+  --bg: #070b12;
+  --surface: rgb(16 22 32 / 0.72);
+  --surface-solid: #0f151f;
+  --card-bg: linear-gradient(180deg, #121a26 0%, #0e141d 100%);
+  --card-sheen: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  --border: rgb(255 255 255 / 0.08);
   --input-border: rgb(255 255 255 / 0.38);
   --text: #eef3f8;
-  --muted: #9aa9b8;
+  --muted: #94a3b3;
   --primary: #4ca2d1;
   --primary-strong: #3380b6;
+  --primary-depth: #1f5d86;
   --on-primary: #06121c;
   --accent: #f37d25;
-  --accent-text: #f37d25;
+  --accent-depth: #a85212;
+  --accent-text: #f58a3a;
   --on-accent: #1a0e05;
-  --gold: #d9a13b;
+  --gold: #e3ad48;
   --success: #3fb67f;
   --success-text: var(--success);
   --warn: #e0a526;
   --on-warn: #1a1203;
   --error: #ef6a5f;
   --error-text: var(--error);
-  --glass-blur: 16px;
-  --shadow-card: 0 12px 40px rgb(0 0 0 / 0.35);
+  --glass-blur: 20px;
+  --shadow-card: 0 1px 0 rgb(0 0 0 / 0.4), 0 18px 40px -20px rgb(0 0 0 / 0.7);
+  --shadow-dock: 0 20px 50px -12px rgb(0 0 0 / 0.75), 0 0 0 1px rgb(255 255 255 / 0.04);
+  --ambient: radial-gradient(ellipse 65% 45% at 10% -5%, rgb(76 162 209 / 0.16), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 100% 105%, rgb(243 125 37 / 0.12), transparent 70%);
+  --hero-bg: linear-gradient(155deg, #0d2333 0%, #12324a 45%, #6b3a17 125%);
   --focus-ring: #7cc0e6;
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   [data-theme='dark'] {
-    --surface: #121c29;
+    --surface: #10161f;
+  }
+  [data-theme='light'],
+  :root {
+    --surface: #ffffff;
   }
 }

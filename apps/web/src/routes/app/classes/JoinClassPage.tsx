@@ -22,7 +22,7 @@ export function JoinClassPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-[28px] font-bold leading-tight tracking-[-0.03em]">Tham gia lớp học</h1>
+        <h1 className="page-title">Tham gia lớp học</h1>
         <p className="mt-1 max-w-prose text-[15px] text-muted">
           {initialCode
             ? 'Giáo viên đã mời bạn vào lớp. Hãy đọc kỹ giáo viên sẽ thấy gì, rồi bấm “Tham gia lớp” nếu bạn đồng ý.'

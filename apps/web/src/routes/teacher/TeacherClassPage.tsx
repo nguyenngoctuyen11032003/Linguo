@@ -78,7 +78,7 @@ export function TeacherClassPage() {
         {back}
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0">
-            <h1 className="break-words text-[28px] font-bold leading-tight tracking-[-0.03em]">{cls.name}</h1>
+            <h1 className="break-words page-title">{cls.name}</h1>
             <p className="mt-1 text-[15px] text-muted">
               {CLASS_LANGUAGE_LABELS[cls.language_code]} · {cls.member_count} học viên · tạo ngày {formatDay(cls.created_at)}
             </p>

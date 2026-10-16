@@ -7,7 +7,7 @@ const CAP_MINUTES = ACTIVE_MS_CAP_PER_ANSWER / 60_000;
 /** "Cách tính" disclosure (PRD 10.2): activity ≠ learning ≠ competence, and which data each number uses. */
 export function HowCalculated() {
   return (
-    <details className="group rounded-3xl border border-border bg-surface-solid shadow-[var(--shadow-card)]">
+    <details className="group card">
       <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 rounded-3xl px-5 py-3 font-semibold [&::-webkit-details-marker]:hidden">
         Cách tính các số liệu
         <ChevronDown aria-hidden className="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" />

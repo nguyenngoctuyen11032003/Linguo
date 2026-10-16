@@ -13,9 +13,11 @@
   --color-muted: var(--muted);
   --color-primary: var(--primary);
   --color-primary-strong: var(--primary-strong);
+  --color-primary-depth: var(--primary-depth);
   --color-on-primary: var(--on-primary);
   --color-accent: var(--accent);
   --color-accent-text: var(--accent-text);
+  --color-accent-depth: var(--accent-depth);
   --color-on-accent: var(--on-accent);
   --color-gold: var(--gold);
   --color-success: var(--success);
@@ -44,7 +46,7 @@
     margin: 0;
     min-height: 100vh;
     min-height: 100dvh;
-    background: var(--bg);
+    background: var(--ambient) fixed, var(--bg);
     color: var(--text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -101,8 +103,56 @@
 @utility glass {
   background: var(--surface);
   border: 1px solid var(--border);
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.2);
-  backdrop-filter: blur(var(--glass-blur)) saturate(1.2);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+}
+/* Raised content surface: soft gradient, hairline border, top sheen. */
+@utility card {
+  border-radius: 1.75rem;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: var(--card-sheen), var(--shadow-card);
+}
+/* Display heading (F1 / CARGOX): condensed, uppercase, tight. */
+@utility page-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 11vw, 3.25rem);
+  line-height: 1.04;
+  padding-top: 0.08em;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+}
+/* Big numeric readouts. */
+@utility stat-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.82;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+/* Tiny uppercase label above a value. */
+@utility eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+/* Duolingo-style tactile depth: a solid ledge that collapses on press. */
+@utility press-primary {
+  box-shadow: 0 4px 0 var(--primary-depth);
+  &:not(:disabled):active {
+    translate: 0 3px;
+    box-shadow: 0 1px 0 var(--primary-depth);
+  }
+}
+@utility press-accent {
+  box-shadow: 0 4px 0 var(--accent-depth);
+  &:not(:disabled):active {
+    translate: 0 3px;
+    box-shadow: 0 1px 0 var(--accent-depth);
+  }
 }
 @utility pt-safe {
   padding-top: env(safe-area-inset-top, 0px);

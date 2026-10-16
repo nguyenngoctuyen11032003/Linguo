@@ -322,7 +322,7 @@ export function OnboardingPage() {
         <p className="text-sm text-muted">
           Bước {index + 1}/{steps.length}
         </p>
-        <h1 id="onboarding-title" ref={titleRef} tabIndex={-1} className="mt-1 text-[26px] font-bold leading-tight tracking-[-0.03em] focus:outline-none">
+        <h1 id="onboarding-title" ref={titleRef} tabIndex={-1} className="mt-1 text-[26px] font-extrabold leading-tight tracking-[-0.03em] focus:outline-none">
           {TITLES[step]}
         </h1>
         <div className="mt-5">{body}</div>

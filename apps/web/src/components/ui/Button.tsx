@@ -15,11 +15,11 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const VARIANTS: Record<ButtonVariant, string> = {
-  primary: 'bg-primary text-on-primary not-disabled:hover:bg-primary-strong',
-  accent: 'bg-accent text-on-accent not-disabled:hover:brightness-110',
-  ghost: 'border border-border bg-transparent text-text not-disabled:hover:bg-text/5',
-  glass: 'glass text-text not-disabled:hover:bg-text/5',
-  danger: 'border border-error/40 bg-transparent text-error not-disabled:hover:bg-error/10',
+  primary: 'press-primary bg-primary text-on-primary not-disabled:hover:bg-primary-strong',
+  accent: 'press-accent bg-accent text-on-accent not-disabled:hover:brightness-110',
+  ghost: 'border border-border bg-text/[0.03] text-text not-disabled:hover:bg-text/8 not-disabled:active:scale-[0.97]',
+  glass: 'glass text-text not-disabled:hover:bg-text/5 not-disabled:active:scale-[0.97]',
+  danger: 'border border-error/40 bg-transparent text-error not-disabled:hover:bg-error/10 not-disabled:active:scale-[0.97]',
 };
 
 /**
@@ -29,13 +29,13 @@ const VARIANTS: Record<ButtonVariant, string> = {
 const DISABLED =
   'disabled:cursor-not-allowed disabled:aria-busy:cursor-progress ' +
   'disabled:not-aria-busy:border-transparent disabled:not-aria-busy:bg-surface-solid disabled:not-aria-busy:text-muted ' +
-  'disabled:not-aria-busy:outline-2 disabled:not-aria-busy:-outline-offset-2 disabled:not-aria-busy:outline-dashed disabled:not-aria-busy:outline-muted';
+  'disabled:not-aria-busy:shadow-none disabled:not-aria-busy:outline-2 disabled:not-aria-busy:-outline-offset-2 disabled:not-aria-busy:outline-dashed disabled:not-aria-busy:outline-muted';
 
 /** Shared with links that must look like buttons (e.g. `<Link className={buttonClasses('ghost')}>`). */
 export const buttonClasses = (variant: ButtonVariant = 'primary', size: ButtonSize = 'md', block = false) =>
   cn(
-    'inline-flex items-center justify-center gap-2 rounded-full py-2 text-center font-semibold leading-tight',
-    'transition-[scale,background-color,filter] duration-200 not-disabled:active:scale-[0.97]',
+    'inline-flex items-center justify-center gap-2 rounded-full py-2 text-center font-bold leading-tight tracking-[-0.01em]',
+    'transition-[scale,translate,box-shadow,background-color,filter] duration-150',
     DISABLED,
     size === 'lg' ? 'min-h-13 px-6 text-[17px]' : 'min-h-11 px-5 text-[15px]',
     block && 'w-full',
