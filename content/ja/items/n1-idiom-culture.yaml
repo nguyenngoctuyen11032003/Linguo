@@ -1,0 +1,694 @@
+# Học liệu unit "Thành ngữ, tục ngữ và văn hoá" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: quán dụng ngữ với bộ phận cơ thể =================
+  - key: ja:item:n1-u5-kao-ga-hiroi
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 顔が広い
+      reading: かおがひろい
+      romanization: kao ga hiroi
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: quen biết rộng, có nhiều mối quan hệ (nghĩa đen "mặt rộng")
+      examples:
+        - target: 部長は業界で顔が広いので、いい取引先を紹介してくれた。
+          translation:
+            vi: Trưởng phòng quen biết rộng trong ngành nên đã giới thiệu cho tôi một đối tác tốt.
+      pronunciation_note:
+        vi: Đọc "ka-ô ga hi-rô-i".
+      confusion:
+        vi: Không phải "mặt to". Mặt dày, trơ trẽn là 顔が厚い / 厚かましい; nổi tiếng, được nhiều người biết mặt là 顔が売れる.
+
+  - key: ja:item:n1-u5-hara-ga-tatsu
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 腹が立つ
+      reading: はらがたつ
+      romanization: hara ga tatsu
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: tức giận, bực mình (nghĩa đen "bụng dựng lên")
+      examples:
+        - target: 約束を何度も破られて、さすがに腹が立った。
+          translation:
+            vi: Bị thất hứa nhiều lần, quả thật tôi đã nổi giận.
+      pronunciation_note:
+        vi: Đọc "ha-ra ga ta-tsư".
+      confusion:
+        vi: 腹が立つ là tự động từ - cơn giận tự nổi lên (～に腹が立つ - tức vì ~). 腹を立てる là tha động từ, nhấn hành động nổi giận của ai đó - 彼はすぐ腹を立てる. 腹立たしい là tính từ "đáng bực".
+
+  - key: ja:item:n1-u5-mimi-ga-itai
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 耳が痛い
+      reading: みみがいたい
+      romanization: mimi ga itai
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: nghe mà nhột, chạm đúng chỗ yếu của mình (lời phê bình đúng nên khó nghe)
+      examples:
+        - target: 先生の「準備不足だ」という指摘は耳が痛かった。
+          translation:
+            vi: Lời nhận xét "chuẩn bị chưa kỹ" của thầy nghe thật nhột tai.
+      pronunciation_note:
+        vi: Đọc "mi-mi ga i-ta-i".
+      confusion:
+        vi: Ngoài nghĩa đen "đau tai", nghĩa bóng chỉ cảm giác khó chịu khi bị nói trúng lỗi của mình. Khác 耳にする (tình cờ nghe thấy) và 耳を疑う (không tin vào tai mình).
+
+  - key: ja:item:n1-u5-me-ga-nai
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ～に目がない
+      reading: ～にめがない
+      romanization: ni me ga nai
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: mê ~, rất thích ~ đến mức không cưỡng lại được
+      examples:
+        - target: 妹は甘いものに目がなくて、ケーキを見るとすぐ買ってしまう。
+          translation:
+            vi: Em gái tôi mê đồ ngọt, thấy bánh kem là mua ngay.
+      pronunciation_note:
+        vi: Đọc "mê ga na-i".
+      confusion:
+        vi: Dù có ない nhưng nghĩa tích cực "rất thích", không phải "không có mắt". 目が高い là "có mắt tinh đời, biết nhìn hàng tốt".
+
+  - key: ja:item:n1-u5-hana-ga-takai
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 鼻が高い
+      reading: はながたかい
+      romanization: hana ga takai
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: hãnh diện, tự hào (thường vì thành tích của người thân)
+      examples:
+        - target: 息子が全国大会で優勝して、親として鼻が高い。
+          translation:
+            vi: Con trai vô địch giải toàn quốc, là cha mẹ tôi rất hãnh diện.
+      pronunciation_note:
+        vi: Đọc "ha-na ga ta-ka-i".
+      confusion:
+        vi: 鼻が高い là tự hào chính đáng. 鼻にかける là khoe khoang, vênh váo (nghĩa xấu) - 学歴を鼻にかける.
+
+  - key: ja:item:n1-u5-te-wo-yaku
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: ～に手を焼く
+      reading: ～にてをやく
+      romanization: ni te o yaku
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: vất vả xoay xở với ~, bó tay với ~ (người, việc khó bảo)
+      examples:
+        - target: 新しいシステムのトラブルに、担当者たちはかなり手を焼いている。
+          translation:
+            vi: Những người phụ trách đang khá vất vả với sự cố của hệ thống mới.
+      pronunciation_note:
+        vi: Đọc "tê ô ya-kư".
+      confusion:
+        vi: Đối tượng gây khó dùng に - 子どもに手を焼く. Gần nghĩa 手に負えない (vượt quá sức xử lý), nhưng 手を焼く nhấn vào sự vất vả đang chịu.
+
+  - key: ja:item:n1-u5-kata-wo-motsu
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: ～の肩を持つ
+      reading: ～のかたをもつ
+      romanization: no kata o motsu
+      pos: quán dụng ngữ
+    back:
+      meaning:
+        vi: bênh vực, đứng về phía ~
+      examples:
+        - target: 母はいつも弟の肩を持つので、私は不満だった。
+          translation:
+            vi: Mẹ lúc nào cũng bênh em trai nên tôi bất mãn.
+      pronunciation_note:
+        vi: Đọc "ka-ta ô mô-tsư".
+      confusion:
+        vi: Người được bênh dùng の - 弟の肩を持つ. 肩を落とす là "buông thõng vai, thất vọng"; 肩の荷が下りる là "trút được gánh nặng".
+
+  # ================= bài 2: tục ngữ ことわざ =================
+  - key: ja:item:n1-u5-kotowaza
+    type: vocab
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: ことわざ
+      reading: ことわざ
+      romanization: kotowaza
+      pos: danh từ
+    back:
+      meaning:
+        vi: tục ngữ (viết kanji 諺, thường viết kana)
+      examples:
+        - target: 日本には「花より団子」ということわざがある。
+          translation:
+            vi: Ở Nhật có câu tục ngữ "hoa không bằng bánh dango".
+      pronunciation_note:
+        vi: Đọc "kô-tô-wa-za".
+      confusion:
+        vi: ことわざ là câu tục ngữ có bài học; 慣用句 là cụm từ cố định mang nghĩa bóng (顔が広い); 四字熟語 là thành ngữ bốn chữ Hán.
+
+  - key: ja:item:n1-u5-saru-mo-ki-kara
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 猿も木から落ちる
+      reading: さるもきからおちる
+      romanization: saru mo ki kara ochiru
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: khỉ cũng có lúc rơi từ cây xuống - người giỏi cũng có lúc sai (gần "nhân vô thập toàn", "ngựa hay cũng có lúc vấp")
+      examples:
+        - target: ベテランの田中さんがこんな計算ミスをするなんて、猿も木から落ちるだね。
+          translation:
+            vi: Anh Tanaka lão luyện mà cũng tính sai thế này, đúng là ngựa hay cũng có lúc vấp.
+      pronunciation_note:
+        vi: Đọc "xa-rư mô ki ka-ra ô-chi-rư".
+      confusion:
+        vi: Dùng cho người giỏi lỡ sai, không dùng cho người vốn kém. Câu cùng nghĩa - 弘法にも筆の誤り.
+
+  - key: ja:item:n1-u5-isogaba-maware
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 急がば回れ
+      reading: いそがばまわれ
+      romanization: isogaba maware
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: vội thì hãy đi đường vòng - càng gấp càng nên chọn cách chắc chắn (gần "dục tốc bất đạt")
+      examples:
+        - target: 急がば回れと言うから、基礎からしっかり復習しよう。
+          translation:
+            vi: Người ta nói "dục tốc bất đạt", nên hãy ôn kỹ từ nền tảng.
+      pronunciation_note:
+        vi: Đọc "i-xô-ga-ba ma-wa-rê".
+      confusion:
+        vi: 急がば là dạng điều kiện cổ của 急ぐ (急げば); 回れ là mệnh lệnh của 回る. Không có nghĩa "đi lòng vòng cho vui".
+
+  - key: ja:item:n1-u5-ishi-no-ue
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 石の上にも三年
+      reading: いしのうえにもさんねん
+      romanization: ishi no ue ni mo sannen
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: ngồi trên đá lạnh ba năm cũng ấm - kiên nhẫn chịu đựng ắt có kết quả (gần "có công mài sắt có ngày nên kim")
+      examples:
+        - target: 石の上にも三年だ。今の仕事をもう少し続けてみたらどうか。
+          translation:
+            vi: Có công mài sắt có ngày nên kim. Sao cậu không thử làm công việc hiện tại thêm một thời gian?
+      pronunciation_note:
+        vi: さんねん - "xan-nên", ん kéo dài một nhịp.
+      confusion:
+        vi: 三年 ở đây là "thời gian dài", không phải đúng ba năm. Câu thường dùng để khuyên người muốn bỏ cuộc sớm.
+
+  - key: ja:item:n1-u5-hana-yori-dango
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 花より団子
+      reading: はなよりだんご
+      romanization: hana yori dango
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: bánh dango hơn ngắm hoa - coi trọng cái thiết thực hơn cái đẹp, cái phong nhã (gần "có thực mới vực được đạo")
+      examples:
+        - target: お花見に来たのに、みんな食べてばかりで花より団子だ。
+          translation:
+            vi: Đi ngắm hoa mà ai cũng chỉ lo ăn, đúng là "hoa không bằng bánh".
+      pronunciation_note:
+        vi: だんご - "đan-gô".
+      confusion:
+        vi: Thường dùng đùa vui, hơi châm chọc người ham ăn hoặc thực dụng. Không mang nghĩa trang trọng "thực tế là quan trọng nhất".
+
+  - key: ja:item:n1-u5-neko-ni-koban
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 猫に小判
+      reading: ねこにこばん
+      romanization: neko ni koban
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: đưa đồng vàng cho mèo - đồ quý vào tay người không biết giá trị thì vô ích (gần "đàn gảy tai trâu")
+      examples:
+        - target: 料理をしない私に高級な包丁なんて、猫に小判だよ。
+          translation:
+            vi: Tặng dao xịn cho tôi, người không nấu ăn, thì đúng là phí của.
+      pronunciation_note:
+        vi: Đọc "nê-kô ni kô-ban".
+      confusion:
+        vi: 小判 là tiền vàng thời Edo. Câu cùng nghĩa - 豚に真珠. Nói về người khác có thể thất lễ; hay dùng để tự hạ mình.
+
+  - key: ja:item:n1-u5-deru-kui
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 出る杭は打たれる
+      reading: でるくいはうたれる
+      romanization: deru kui wa utareru
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: cọc nhô lên thì bị đóng xuống - người nổi trội, khác biệt dễ bị ghen ghét, chèn ép
+      examples:
+        - target: 出る杭は打たれると言うが、新しい提案をためらうべきではない。
+          translation:
+            vi: Người ta nói cây cao đón gió, nhưng không nên ngần ngại đưa ra đề xuất mới.
+      pronunciation_note:
+        vi: くい - "kư-i"; 打たれる - "ư-ta-rê-rư" (bị động).
+      confusion:
+        vi: 打たれる là thể bị động của 打つ. Câu phản ánh văn hoá coi trọng hoà hợp tập thể của Nhật; hay được nhắc tới khi bàn về văn hoá công sở.
+
+  # ================= bài 3: thành ngữ bốn chữ 四字熟語 =================
+  - key: ja:item:n1-u5-isshou-kenmei
+    type: phrase
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 一生懸命
+      reading: いっしょうけんめい
+      romanization: isshō kenmei
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: hết sức, dốc toàn lực (Hán Việt "nhất sinh huyền mệnh")
+      examples:
+        - target: 彼女は合格を目指して、毎日一生懸命勉強している。
+          translation:
+            vi: Cô ấy đang học hết sức mỗi ngày để thi đỗ.
+      pronunciation_note:
+        vi: いっしょう có âm ngắt っ và âm dài - "ít-shô-ô kên-mê-ê".
+      confusion:
+        vi: Dùng như tính từ đuôi な hoặc phó từ - 一生懸命な姿, 一生懸命働く. Gốc là 一所懸命 (giữ một mảnh đất bằng cả mạng sống).
+
+  - key: ja:item:n1-u5-ishin-denshin
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 以心伝心
+      reading: いしんでんしん
+      romanization: ishin denshin
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: tâm đầu ý hợp, hiểu nhau không cần lời (Hán Việt "dĩ tâm truyền tâm")
+      examples:
+        - target: 長年一緒に働いてきたので、二人は以心伝心で仕事を進められる。
+          translation:
+            vi: Đã làm việc cùng nhau nhiều năm nên hai người hiểu ý nhau mà triển khai công việc không cần nói nhiều.
+      pronunciation_note:
+        vi: Đọc "i-shin đên-shin".
+      confusion:
+        vi: Gắn với văn hoá "đọc không khí" (空気を読む) của Nhật. Không viết 意心伝心 - chữ đầu là 以 (dĩ).
+
+  - key: ja:item:n1-u5-jigou-jitoku
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 自業自得
+      reading: じごうじとく
+      romanization: jigō jitoku
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: tự làm tự chịu, gieo gió gặt bão (Hán Việt "tự nghiệp tự đắc")
+      examples:
+        - target: 徹夜で遊んで試験に落ちたのだから、自業自得だ。
+          translation:
+            vi: Chơi thâu đêm rồi thi trượt, đúng là tự làm tự chịu.
+      pronunciation_note:
+        vi: じごう có âm dài - "ji-gô-ô ji-tô-kư".
+      confusion:
+        vi: Luôn mang nghĩa xấu (hậu quả không hay do chính mình gây ra). Nói thẳng với người đang gặp chuyện có thể rất nặng lời.
+
+  - key: ja:item:n1-u5-ichigo-ichie
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 一期一会
+      reading: いちごいちえ
+      romanization: ichigo ichie
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: mỗi lần gặp gỡ chỉ có một lần trong đời, nên hãy trân trọng (Hán Việt "nhất kỳ nhất hội")
+      examples:
+        - target: 一期一会の気持ちで、一人一人のお客様を大切にしています。
+          translation:
+            vi: Chúng tôi trân trọng từng vị khách với tâm thế "mỗi cuộc gặp chỉ có một lần".
+      pronunciation_note:
+        vi: 一期 đọc いちご (không phải いっき), 一会 đọc いちえ.
+      confusion:
+        vi: Bắt nguồn từ tinh thần trà đạo. Đọc sai thành いっきいっかい là lỗi thường gặp.
+
+  - key: ja:item:n1-u5-isseki-nichou
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 一石二鳥
+      reading: いっせきにちょう
+      romanization: isseki nichō
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: một mũi tên trúng hai đích, một công đôi việc (Hán Việt "nhất thạch nhị điểu")
+      examples:
+        - target: 自転車通勤は運動にもなるし、交通費も節約できて一石二鳥だ。
+          translation:
+            vi: Đạp xe đi làm vừa được vận động vừa tiết kiệm tiền đi lại, một công đôi việc.
+      pronunciation_note:
+        vi: Đọc "ít-xê-ki ni-chô-ô".
+      confusion:
+        vi: Chỉ dùng cho kết quả tốt. Cùng nghĩa - 一挙両得. Ngược lại "bắt cá hai tay hỏng cả hai" là 二兎を追う者は一兎をも得ず.
+
+  - key: ja:item:n1-u5-shikou-sakugo
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 試行錯誤
+      reading: しこうさくご
+      romanization: shikō sakugo
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: thử và sai, mày mò rút kinh nghiệm qua nhiều lần thất bại (Hán Việt "thí hành thác ngộ")
+      examples:
+        - target: 試行錯誤を重ねた結果、ようやく新しい製品が完成した。
+          translation:
+            vi: Sau rất nhiều lần thử và sai, cuối cùng sản phẩm mới đã hoàn thành.
+      pronunciation_note:
+        vi: しこう có âm dài - "shi-kô-ô xa-kư-gô".
+      confusion:
+        vi: Hay đi với 重ねる, 繰り返す hoặc する - 試行錯誤を重ねる, 試行錯誤しながら. Nghĩa trung tính - quá trình nỗ lực, không phải "sai lầm".
+
+  - key: ja:item:n1-u5-rinki-ouhen
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 臨機応変
+      reading: りんきおうへん
+      romanization: rinki ōhen
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: tuỳ cơ ứng biến, linh hoạt theo tình huống (Hán Việt "lâm cơ ứng biến")
+      examples:
+        - target: マニュアル通りにいかないときは、臨機応変に対応してください。
+          translation:
+            vi: Khi mọi việc không theo đúng sổ tay hướng dẫn, hãy xử lý linh hoạt.
+      pronunciation_note:
+        vi: おう là âm dài - "rin-ki ô-ô-hên".
+      confusion:
+        vi: Dùng như tính từ đuôi な / phó từ に - 臨機応変な対応, 臨機応変に動く. Nghĩa tích cực, không phải "tuỳ tiện".
+
+  # ================= bài 4: thư từ trang trọng =================
+  - key: ja:item:n1-u5-haikei-keigu
+    type: phrase
+    level: n1
+    difficulty: 3
+    skill_tags: [writing, culture]
+    front:
+      text: 拝啓 ～ 敬具
+      reading: はいけい ～ けいぐ
+      romanization: haikei ... keigu
+      pos: cụm thư từ
+    back:
+      meaning:
+        vi: cặp từ mở đầu và kết thư trang trọng - 拝啓 "kính gửi" (mở thư), 敬具 "kính thư" (cuối thư)
+      examples:
+        - target: 拝啓　新緑の候、貴社ますますご清栄のこととお喜び申し上げます。
+          translation:
+            vi: Kính gửi quý công ty. Giữa tiết cây lá xanh tươi, chúng tôi xin chúc mừng quý công ty ngày càng thịnh vượng.
+      pronunciation_note:
+        vi: Đọc "hai-kê-ê" và "kê-ê-gư".
+      confusion:
+        vi: Phải đi đúng cặp - 拝啓 kết bằng 敬具, 謹啓 (rất trang trọng) kết bằng 謹白 / 謹言, 前略 kết bằng 草々. Không dùng 拝啓 với 草々.
+
+  - key: ja:item:n1-u5-zenryaku-sousou
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [writing, culture]
+    front:
+      text: 前略 ～ 草々
+      reading: ぜんりゃく ～ そうそう
+      romanization: zenryaku ... sōsō
+      pos: cụm thư từ
+    back:
+      meaning:
+        vi: cặp mở - kết thư lược bỏ lời chào mùa - 前略 "xin lược phần đầu", 草々 "viết vội, kính thư"
+      examples:
+        - target: 前略　取り急ぎ用件のみ申し上げます。
+          translation:
+            vi: Xin lược phần chào hỏi, tôi chỉ xin trình bày ngay công việc.
+      pronunciation_note:
+        vi: Đọc "zên-rya-kư" và "xô-ô-xô-ô".
+      confusion:
+        vi: Sau 前略 không viết 時候の挨拶. Không dùng với người trên trong thư cần lễ nghi; với thư cảm ơn, xin lỗi trang trọng nên dùng 拝啓 ～ 敬具.
+
+  - key: ja:item:n1-u5-jikou-no-aisatsu
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [writing, culture]
+    front:
+      text: 時候の挨拶
+      reading: じこうのあいさつ
+      romanization: jikō no aisatsu
+      pos: cụm thư từ
+    back:
+      meaning:
+        vi: lời chào theo mùa ở đầu thư - 〇〇の候 (trang trọng) hoặc câu mô tả thời tiết (thân mật hơn)
+      examples:
+        - target: 厳しい寒さが続いておりますが、いかがお過ごしでしょうか。
+          translation:
+            vi: Cái lạnh khắc nghiệt vẫn kéo dài, không biết dạo này anh/chị thế nào.
+      pronunciation_note:
+        vi: じこう - "ji-kô-ô"; 候 trong 〇〇の候 đọc こう.
+      confusion:
+        vi: 'Mỗi tháng có cách nói riêng: 1月 厳寒の候 / 新春の候, 4月 陽春の候, 5月 新緑の候, 7月 盛夏の候, 9月 初秋の候, 12月 師走の候. Dùng sai mùa là lỗi lớn trong thư trang trọng.'
+
+  - key: ja:item:n1-u5-gosei-ei
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: ますますご清栄のこととお喜び申し上げます
+      reading: ますますごせいえいのこととおよろこびもうしあげます
+      romanization: masumasu go-seiei no koto to oyorokobi mōshiagemasu
+      pos: câu cố định
+    back:
+      meaning:
+        vi: '"Xin chúc mừng quý vị ngày càng hưng thịnh" - lời chào an khang sau 時候の挨拶 trong thư trang trọng.'
+      examples:
+        - target: 貴社ますますご清栄のこととお喜び申し上げます。
+          translation:
+            vi: Xin chúc mừng quý công ty ngày càng hưng thịnh.
+      pronunciation_note:
+        vi: 清栄 - "xê-ê-ê"; 申し上げます - "mô-ô-shi-a-gê-ma-xư".
+      confusion:
+        vi: Gửi công ty dùng 貴社 + ご清栄 / ご隆盛 / ご発展; gửi cá nhân dùng ご清祥 / ご健勝. ご清栄 dùng được cho cả hai.
+
+  - key: ja:item:n1-u5-heiso
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: 平素は格別のお引き立てを賜り、厚く御礼申し上げます
+      reading: へいそはかくべつのおひきたてをたまわり、あつくおんれいもうしあげます
+      romanization: heiso wa kakubetsu no ohikitate o tamawari, atsuku onrei mōshiagemasu
+      pos: câu cố định
+    back:
+      meaning:
+        vi: '"Xin chân thành cảm ơn quý vị đã luôn đặc biệt ưu ái" - lời cảm ơn mở đầu thư thương mại.'
+      examples:
+        - target: 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
+          translation:
+            vi: Xin chân thành cảm ơn quý công ty đã luôn đặc biệt ưu ái chúng tôi.
+      pronunciation_note:
+        vi: 平素 - "hê-ê-xô"; 賜り - "ta-ma-wa-ri"; 御礼 - "ôn-rê-ê".
+      confusion:
+        vi: 平素 = 普段 (thường ngày) dạng văn viết. 賜る là khiêm nhường ngữ của もらう; 厚く御礼申し上げます trang trọng hơn ありがとうございます.
+
+  - key: ja:item:n1-u5-ryakugi
+    type: phrase
+    level: n1
+    difficulty: 5
+    skill_tags: [writing]
+    front:
+      text: まずは略儀ながら書中にてご挨拶申し上げます
+      reading: まずはりゃくぎながらしょちゅうにてごあいさつもうしあげます
+      romanization: mazu wa ryakugi nagara shochū nite go-aisatsu mōshiagemasu
+      pos: câu cố định
+    back:
+      meaning:
+        vi: '"Trước hết, xin được gửi lời chào qua thư dù còn sơ sài" - câu kết trước 敬具.'
+      examples:
+        - target: まずは略儀ながら書中にて御礼申し上げます。
+          translation:
+            vi: Trước hết, xin được gửi lời cảm ơn qua thư dù còn sơ sài.
+      pronunciation_note:
+        vi: 略儀 - "rya-kư-gi"; 書中 - "shô-chư-ư".
+      confusion:
+        vi: 略儀ながら = "tuy giản lược" (đáng lẽ phải đến tận nơi). Phần cuối thay theo mục đích - ご挨拶 / 御礼 / お詫び申し上げます.
+
+  - key: ja:item:n1-u5-gojiai
+    type: phrase
+    level: n1
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: 時節柄、ご自愛ください
+      reading: じせつがら、ごじあいください
+      romanization: jisetsugara, go-jiai kudasai
+      pos: câu cố định
+    back:
+      meaning:
+        vi: '"Thời tiết đang thất thường, xin hãy giữ gìn sức khoẻ" - lời chúc cuối thư.'
+      examples:
+        - target: 寒さ厳しき折、どうぞご自愛ください。
+          translation:
+            vi: Giữa lúc trời rét đậm, xin anh/chị hãy giữ gìn sức khoẻ.
+      pronunciation_note:
+        vi: 自愛 - "ji-a-i"; 時節柄 - "ji-xê-tsư-ga-ra".
+      confusion:
+        vi: ご自愛 đã có nghĩa "giữ gìn thân thể" nên viết お体をご自愛ください là thừa (lỗi lặp nghĩa). Nói 体に気をつけてください là cách thường ngày.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n1-u5-kanyouku
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 慣用句
+      reading: かんようく
+      romanization: kan'yōku
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán dụng ngữ - cụm từ cố định mang nghĩa bóng (顔が広い, 腹が立つ)
+      examples:
+        - target: 体の部分を使った慣用句は日常会話でよく使われる。
+          translation:
+            vi: Quán dụng ngữ dùng bộ phận cơ thể được dùng nhiều trong hội thoại hằng ngày.
+      pronunciation_note:
+        vi: かんよう có âm dài - "kan-yô-ô-kư".
+      confusion:
+        vi: 慣用句 không thể dịch từng chữ; ことわざ là câu hoàn chỉnh có bài học; 四字熟語 là bốn chữ Hán.
+
+  - key: ja:item:n1-u5-yurai
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 由来
+      reading: ゆらい
+      romanization: yurai
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguồn gốc, xuất xứ (của tên gọi, phong tục, thành ngữ); ～に由来する - bắt nguồn từ ~
+      examples:
+        - target: 「一期一会」という言葉は茶道に由来する。
+          translation:
+            vi: Cụm từ "nhất kỳ nhất hội" bắt nguồn từ trà đạo.
+      pronunciation_note:
+        vi: Đọc "yư-ra-i".
+      confusion:
+        vi: 由来 là nguồn gốc của tên, từ, phong tục; 起源 là khởi nguyên của sự vật lớn (文明の起源); 原因 là nguyên nhân của sự việc.
+
+  - key: ja:item:n1-u5-tatoe
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: たとえ（例え・喩え）
+      reading: たとえ
+      romanization: tatoe
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối ví von, phép so sánh; ～のたとえ - câu ví về ~
+      examples:
+        - target: 「猫に小判」は、価値の分からない人に貴重なものを与えても無駄だというたとえだ。
+          translation:
+            vi: 'Câu "đưa vàng cho mèo" là lối ví von rằng đưa vật quý cho người không biết giá trị cũng vô ích.'
+      pronunciation_note:
+        vi: Đọc "ta-tô-ê".
+      confusion:
+        vi: Danh từ たとえ (lối ví) khác phó từ たとえ～ても (cho dù ~). Từ điển giải thích tục ngữ hay dùng mẫu ～というたとえ / ～のたとえ.

@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-idiom-culture-review
+order_index: 5
+level: n1
+title:
+  vi: "Ôn tập: thành ngữ, tục ngữ và văn hoá trong bài đọc"
+objectives:
+  - vi: Phân biệt 慣用句, ことわざ, 四字熟語 và giải thích nguồn gốc bằng ～に由来する, ～というたとえ.
+  - vi: Đọc hiểu đoạn văn bàn về văn hoá có dùng thành ngữ, tục ngữ.
+  - vi: Chọn thành ngữ và câu thư từ đúng ngữ cảnh khi viết.
+estimated_minutes: 25
+skills: [reading, writing, vocabulary]
+prerequisites: [ja:lesson:n1-u5-formal-letters]
+items:
+  - item: ja:item:n1-u5-kanyouku
+  - item: ja:item:n1-u5-yurai
+  - item: ja:item:n1-u5-tatoe
+  - item: ja:item:n1-u5-kotowaza
+    role: reuse
+  - item: ja:item:n1-u5-mimi-ga-itai
+    role: reuse
+  - item: ja:item:n1-u5-kata-wo-motsu
+    role: reuse
+  - item: ja:item:n1-u5-neko-ni-koban
+    role: reuse
+  - item: ja:item:n1-u5-deru-kui
+    role: reuse
+  - item: ja:item:n1-u5-ichigo-ichie
+    role: reuse
+  - item: ja:item:n1-u5-ishin-denshin
+    role: reuse
+  - item: ja:item:n1-u5-haikei-keigu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn cuối unit đưa bạn vào dạng đọc N1 - đoạn văn bình luận về ngôn ngữ và văn hoá, trong đó thành ngữ vừa là nội dung vừa là công cụ diễn đạt.
+  - type: explain
+    text:
+      vi: 'Ba loại: 慣用句 (顔が広い, 耳が痛い) - cụm cố định mang nghĩa bóng; ことわざ (猫に小判, 出る杭は打たれる) - câu tục ngữ có bài học; 四字熟語 (一期一会, 以心伝心) - bốn chữ Hán. Bàn về nguồn gốc: ～は～に由来する (bắt nguồn từ), ～は～というたとえだ (là lối ví von rằng ~).'
+  - type: explain
+    text:
+      vi: 'Mẫu giải nghĩa hay gặp trong đề và từ điển: 「猫に小判」は、価値の分からない人に貴重なものを与えても無駄だというたとえだ. Mẫu trích dẫn: ～と言うように, ～と言うが, ～とはよく言ったものだ (ôn bài 2).'
+  - type: deep_explain
+    text:
+      vi: 'Trong bài đọc, thành ngữ thường dùng để tóm ý hoặc chuyển ý: tác giả trích 出る杭は打たれる để mô tả hiện trạng rồi phản bác bằng しかし. Ý chính vẫn nằm sau từ nối và ở câu cuối. Khi gặp thành ngữ lạ, đừng dịch từng chữ - dựa vào câu xung quanh để đoán sắc thái tốt hay xấu.'
+  - type: example
+    target: 体の部分を使った慣用句は日常会話でよく使われる。
+    target_lang: ja
+    translation:
+      vi: Quán dụng ngữ dùng bộ phận cơ thể được dùng nhiều trong hội thoại hằng ngày.
+  - type: example
+    target: 「一期一会」という言葉は茶道に由来する。
+    target_lang: ja
+    translation:
+      vi: Cụm từ "nhất kỳ nhất hội" bắt nguồn từ trà đạo.
+  - type: example
+    target: 「猫に小判」は、価値の分からない人に貴重なものを与えても無駄だというたとえだ。
+    target_lang: ja
+    translation:
+      vi: Câu "đưa vàng cho mèo" là lối ví von rằng đưa vật quý cho người không biết giá trị cũng vô ích.
+  - type: example
+    target: 出る杭は打たれると言うが、最近は個性を評価する会社も増えている。
+    target_lang: ja
+    translation:
+      vi: Người ta nói cây cao đón gió, nhưng gần đây số công ty đánh giá cao cá tính cũng đang tăng.
+  - type: common_mistake
+    wrong: 「一期一会」という言葉は茶道を由来する。
+    right: 「一期一会」という言葉は茶道に由来する。
+    target_lang: ja
+    note:
+      vi: Bắt nguồn từ ~ dùng に - ～に由来する.
+  - type: common_mistake
+    wrong: 「花より団子」は有名な四字熟語だ。
+    right: 「花より団子」は有名なことわざだ。
+    target_lang: ja
+    note:
+      vi: 花より団子 không phải bốn chữ Hán ghép thành một từ - đó là ことわざ. 四字熟語 là dạng như 一石二鳥, 以心伝心.
+  - type: summary
+    points:
+      - vi: 慣用句 - cụm nghĩa bóng; ことわざ - câu tục ngữ; 四字熟語 - thành ngữ bốn chữ.
+      - vi: ～に由来する - bắt nguồn từ ~; ～というたとえ - lối ví von rằng ~.
+      - vi: Trích dẫn - ～と言うように / ～と言うが / ～とはよく言ったものだ.
+      - vi: Thư trang trọng - 拝啓 → 時候の挨拶 → ご清栄 → 本文 → ご自愛 → 略儀ながら → 敬具.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-idiom-culture-review-mcq-kind
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-kanyouku
+    prompt:
+      stem: 'Chọn từ phù hợp: 「顔が広い」や「耳が痛い」のように、体の部分を使った＿＿は多い。'
+      stem_lang: vi
+      options:
+        - { id: d6v, text: 慣用句, lang: ja }
+        - { id: k2s, text: 四字熟語, lang: ja }
+        - { id: x9f, text: 敬語, lang: ja }
+        - { id: o3w, text: 時候の挨拶, lang: ja }
+    answer:
+      correct_option_id: d6v
+    explanation:
+      vi: 顔が広い, 耳が痛い là quán dụng ngữ (慣用句). 四字熟語 phải là bốn chữ Hán; 敬語 là kính ngữ; 時候の挨拶 là lời chào theo mùa trong thư.
+    display_answer: 慣用句
+
+  - key: ja:exercise:n1-idiom-culture-review-listen-yurai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-yurai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 「一期一会」という言葉は茶道に由来する。
+      options:
+        - { id: t7b, text: Cụm từ "nhất kỳ nhất hội" bắt nguồn từ trà đạo., lang: vi }
+        - { id: e4n, text: Cụm từ "nhất kỳ nhất hội" thường được dùng trong trà đạo hiện đại., lang: vi }
+        - { id: w8c, text: Trà đạo bắt nguồn từ cụm từ "nhất kỳ nhất hội"., lang: vi }
+        - { id: y2h, text: Cụm từ "nhất kỳ nhất hội" không liên quan đến trà đạo., lang: vi }
+    answer:
+      correct_option_id: t7b
+    explanation:
+      vi: AはBに由来する - A bắt nguồn từ B. Ở đây A là 一期一会, B là 茶道 (trà đạo).
+    display_answer: Cụm từ "nhất kỳ nhất hội" bắt nguồn từ trà đạo.
+
+  - key: ja:exercise:n1-idiom-culture-review-mcq-tatoe
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-tatoe
+    prompt:
+      stem: 'Câu nào giải thích đúng nghĩa của 「猫に小判」?'
+      stem_lang: vi
+      options:
+        - { id: p1m, text: 価値の分からない人に貴重なものを与えても無駄だというたとえ, lang: ja }
+        - { id: g5q, text: 上手な人でも失敗することがあるというたとえ, lang: ja }
+        - { id: r7z, text: 我慢して続ければ必ず成果が出るというたとえ, lang: ja }
+        - { id: h3k, text: 目立つ人は周りから攻撃されやすいというたとえ, lang: ja }
+    answer:
+      correct_option_id: p1m
+    explanation:
+      vi: 猫に小判 - đồ quý vô ích với người không biết giá trị. Các phương án khác lần lượt là 猿も木から落ちる, 石の上にも三年, 出る杭は打たれる.
+    display_answer: 価値の分からない人に貴重なものを与えても無駄だというたとえ
+
+  - key: ja:exercise:n1-idiom-culture-review-fill-yurai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-yurai
+    prompt:
+      template: "「一期一会」という言葉は茶道{{b1}}{{b2}}する。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cụm từ \"nhất kỳ nhất hội\" bắt nguồn từ trà đạo."
+        - "Gợi ý: trợ từ + từ Hán 'do lai' (nguồn gốc) - ゆらい."
+    answer:
+      blanks:
+        b1: [に]
+        b2: [由来, ゆらい]
+    known_wrong:
+      - answer: を
+        feedback_vi: 由来する đi với に - 茶道に由来する.
+        error_tag: particle_ni
+      - answer: 原因
+        feedback_vi: 原因 là nguyên nhân của sự việc. Nguồn gốc của từ ngữ là 由来.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～に由来する - bắt nguồn từ ~.
+    display_answer: 「一期一会」という言葉は茶道に由来する。
+
+  - key: ja:exercise:n1-idiom-culture-review-wb-kotowaza
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-deru-kui
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Người ta nói cây cao đón gió, nhưng gần đây số công ty đánh giá cao cá tính cũng đang tăng.\""
+      tokens:
+        - { id: c4, text: 増えている }
+        - { id: c2, text: 最近は個性を }
+        - { id: c5, text: 減っている }
+        - { id: c1, text: 出る杭は打たれると言うが、 }
+        - { id: c3, text: 評価する会社も }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+    explanation:
+      vi: ～と言うが - người ta nói ~ nhưng; 個性を評価する - đánh giá cao cá tính; 増えている - đang tăng. 減っている (đang giảm) sai nghĩa.
+    display_answer: 出る杭は打たれると言うが、最近は個性を評価する会社も増えている。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-idiom-culture-review-fill-mimi
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-mimi-ga-itai
+    prompt:
+      template: "後輩に「先輩はいつも話が長い」と言われて、{{b1}}が痛かった。(nghe nhột vì bị nói trúng)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [耳, みみ]
+    known_wrong:
+      - answer: 頭
+        feedback_vi: 頭が痛い là "đau đầu, đau đầu vì lo". Bị nói trúng lỗi mình là 耳が痛い.
+        error_tag: idiom_meaning
+      - answer: 腹
+        feedback_vi: 腹が痛い chỉ là đau bụng; tức giận là 腹が立つ. Ở đây là 耳が痛い.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 耳が痛い - lời nói đúng lỗi của mình nên nghe khó chịu.
+    display_answer: 後輩に「先輩はいつも話が長い」と言われて、耳が痛かった。
+
+  - key: ja:exercise:n1-idiom-culture-review-translate-kanyouku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-kanyouku
+    prompt:
+      source_text: Quán dụng ngữ không thể hiểu được nếu dịch từng chữ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 慣用句は一語ずつ訳しても理解できない。
+        - 慣用句は一語ずつ訳しても理解できません。
+        - 慣用句は一語ずつ訳しても意味が分からない。
+        - 慣用句は一語ずつ訳しても意味がわからない。
+        - 慣用句は一語ずつ訳しても意味が分かりません。
+        - 慣用句は一語一語訳しても理解できない。
+        - 慣用句は一語一語訳しても意味が分からない。
+        - 慣用句は一字ずつ訳しても理解できない。
+        - 慣用句は一字ずつ訳しても意味が分からない。
+        - 慣用句は言葉を一つずつ訳しても理解できない。
+        - 慣用句は言葉を一つずつ訳しても意味が分からない。
+        - 慣用句は直訳しても理解できない。
+        - 慣用句は直訳しても意味が分からない。
+        - 慣用句は直訳では理解できない。
+        - 慣用句は一語ずつ訳すと理解できない。
+        - 慣用句は一語ずつ訳したら理解できない。
+    known_wrong:
+      - answer: 慣用句は一語ずつ訳せば理解できる。
+        feedback_vi: Câu gốc là phủ định "không thể hiểu" - 理解できない.
+        error_tag: negation
+      - answer: ことわざは一語ずつ訳しても理解できない。
+        feedback_vi: Quán dụng ngữ là 慣用句; ことわざ là tục ngữ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 一語ずつ訳す / 直訳する - dịch từng chữ; ～ても理解できない - dù ~ cũng không hiểu được.
+    display_answer: 慣用句は一語ずつ訳しても理解できない。
+
+  - key: ja:exercise:n1-idiom-culture-review-translate-kata
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-kata-wo-motsu
+    prompt:
+      source_text: Trong cuộc họp, không ai bênh tôi cả. (dùng 肩を持つ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会議で、私の肩を持ってくれる人は誰もいなかった。
+        - 会議で私の肩を持ってくれる人は誰もいなかった。
+        - 会議で、私の肩を持ってくれる人はいなかった。
+        - 会議で、誰も私の肩を持ってくれなかった。
+        - 会議で誰も私の肩を持ってくれなかった。
+        - 会議では、誰も私の肩を持ってくれなかった。
+        - 会議では誰も私の肩を持ってくれなかった。
+        - 会議で、誰も私の肩を持たなかった。
+        - 会議で誰も私の肩を持たなかった。
+        - 会議では、誰も私の肩を持たなかった。
+        - 会議で、私の肩を持つ人は誰もいなかった。
+        - 会議で、誰も私の肩を持ってくれませんでした。
+        - 会議で、私の肩を持ってくれる人は誰もいませんでした。
+        - 会議で、誰一人私の肩を持ってくれなかった。
+        - 会議中、誰も私の肩を持ってくれなかった。
+        - かいぎで、だれもわたしのかたをもってくれなかった。
+    known_wrong:
+      - answer: 会議で、誰も私に肩を持ってくれなかった。
+        feedback_vi: Người được bênh đi với の - 私の肩を持つ.
+        error_tag: particle_no
+      - answer: 会議で、みんなが私の肩を持ってくれた。
+        feedback_vi: Câu gốc là "không ai" - 誰も～なかった.
+        error_tag: negation
+    explanation:
+      vi: 誰も～なかった - không ai ~; ～の肩を持ってくれる - bênh (giúp) ~.
+    display_answer: 会議で、誰も私の肩を持ってくれなかった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-idiom-culture-review-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u5-ishin-denshin
+    prompt:
+      stem: "Đọc: 「『以心伝心』や『一期一会』のように、日本語には人間関係を大切にする言葉が多い。一方で、『出る杭は打たれる』ということわざに表れているように、周りと違うことを恐れる気持ちも根強い。言葉を学ぶことは、その国の価値観を知ることでもあるのだ。」 Ý chính của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: n6c, text: Học thành ngữ của một ngôn ngữ cũng là tìm hiểu hệ giá trị của đất nước đó., lang: vi }
+        - { id: a3x, text: Tiếng Nhật có quá nhiều thành ngữ nên rất khó học., lang: vi }
+        - { id: s9p, text: Người Nhật không còn coi trọng các mối quan hệ., lang: vi }
+        - { id: j1t, text: Câu "cây cao đón gió" đã không còn được người Nhật dùng., lang: vi }
+    answer:
+      correct_option_id: n6c
+    explanation:
+      vi: Câu cuối 言葉を学ぶことは、その国の価値観を知ることでもある - học ngôn ngữ cũng là biết giá trị quan của đất nước đó (ý chính). Hai câu đầu là ví dụ hai mặt - coi trọng quan hệ / sợ khác biệt.
+    display_answer: Học thành ngữ của một ngôn ngữ cũng là tìm hiểu hệ giá trị của đất nước đó.
+
+  - key: ja:exercise:n1-idiom-culture-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u5-neko-ni-koban
+    prompt:
+      source_text: 高価な辞書も、使わなければ猫に小判だ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ điển đắt tiền mà không dùng thì cũng vô ích.
+        - Từ điển đắt tiền mà không dùng thì cũng phí của.
+        - Từ điển đắt tiền nếu không dùng thì cũng vô ích.
+        - Từ điển đắt tiền nếu không dùng thì cũng phí.
+        - Từ điển đắt tiền nếu không dùng thì cũng phí của.
+        - Dù là từ điển đắt tiền, nếu không dùng thì cũng vô ích.
+        - Dù là từ điển đắt tiền, nếu không dùng thì cũng phí của.
+        - Cuốn từ điển đắt tiền mà không dùng thì cũng vô ích.
+        - Cuốn từ điển đắt tiền mà không dùng thì cũng phí của.
+        - Từ điển đắt tiền mà không dùng thì cũng như đàn gảy tai trâu.
+        - Từ điển đắt tiền mà không dùng thì chẳng khác gì đưa vàng cho mèo.
+        - Từ điển đắt tiền mà không dùng thì cũng như đưa vàng cho mèo.
+        - Từ điển đắt tiền mà không sử dụng thì cũng vô ích.
+        - Từ điển đắt tiền mà không dùng đến thì cũng vô ích.
+        - Từ điển đắt tiền mà không dùng thì cũng chẳng có ích gì.
+        - Từ điển đắt tiền mà không dùng thì cũng vô dụng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Từ điển đắt tiền nên mèo cũng không dùng.
+        feedback_vi: 猫に小判 là tục ngữ "đồ quý mà không biết dùng thì vô ích", không nói về con mèo thật.
+        error_tag: idiom_literal
+    explanation:
+      vi: 高価な - đắt tiền; ～も、使わなければ - dù là ~, nếu không dùng; 猫に小判 - vô ích, phí của.
+    display_answer: Từ điển đắt tiền mà không dùng thì cũng vô ích.
+
+  - key: ja:exercise:n1-idiom-culture-review-wb-tatoe
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u5-tatoe
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"'Khỉ cũng rơi từ cây' là lối ví von rằng người giỏi cũng có lúc thất bại.\""
+      tokens:
+        - { id: m3, text: 上手な人でも }
+        - { id: m1, text: 「猿も木から落ちる」は、 }
+        - { id: m5, text: というたとえだ }
+        - { id: m2, text: どんなに }
+        - { id: m4, text: 失敗することがある }
+        - { id: m6, text: に由来する }
+    answer:
+      orders:
+        - [m1, m2, m3, m4, m5]
+    explanation:
+      vi: どんなに上手な人でも - dù giỏi đến đâu; ～というたとえだ - là lối ví von rằng ~. に由来する là "bắt nguồn từ", không hợp ở đây.
+    display_answer: 「猿も木から落ちる」は、どんなに上手な人でも失敗することがあるというたとえだ。
+
+  - key: ja:exercise:n1-idiom-culture-review-mcq-letter
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u5-haikei-keigu
+    prompt:
+      stem: Bạn viết thư cảm ơn thầy giáo cũ vào tháng 12. Câu kết thư nào đúng lễ nghi nhất?
+      stem_lang: vi
+      options:
+        - { id: z5d, text: 寒さ厳しき折、どうぞご自愛ください。まずは略儀ながら書中にて御礼申し上げます。　敬具, lang: ja }
+        - { id: i8u, text: 寒さ厳しき折、お体をご自愛ください。まずは略儀ながら書中にて御礼申し上げます。　草々, lang: ja }
+        - { id: v2a, text: 新緑の候、どうぞご自愛ください。まずは略儀ながら書中にて御礼申し上げます。　拝啓, lang: ja }
+        - { id: f6o, text: 寒いから、体に気をつけてね。じゃあ、またね。　敬具, lang: ja }
+    answer:
+      correct_option_id: z5d
+    explanation:
+      vi: Lời chúc hợp mùa đông + 略儀ながら + 敬具 - đúng. Phương án 2 lặp nghĩa (お体をご自愛) và sai cặp (草々); phương án 3 sai mùa và 拝啓 là từ mở đầu; phương án 4 quá thân mật.
+    display_answer: 寒さ厳しき折、どうぞご自愛ください。まずは略儀ながら書中にて御礼申し上げます。　敬具

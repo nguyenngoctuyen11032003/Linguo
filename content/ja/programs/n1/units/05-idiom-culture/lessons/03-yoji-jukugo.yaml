@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u5-yoji-jukugo
+order_index: 3
+level: n1
+title:
+  vi: Thành ngữ bốn chữ 四字熟語
+objectives:
+  - vi: Đọc đúng và hiểu nghĩa bảy thành ngữ bốn chữ thông dụng.
+  - vi: Tận dụng âm Hán Việt để đoán nghĩa 四字熟語.
+  - vi: Dùng 四字熟語 đúng chức năng trong câu - danh từ, tính từ đuôi な, phó từ.
+estimated_minutes: 22
+skills: [vocabulary, reading, writing]
+prerequisites: [ja:lesson:n1-u5-kotowaza]
+items:
+  - item: ja:item:n1-u5-isshou-kenmei
+  - item: ja:item:n1-u5-ishin-denshin
+  - item: ja:item:n1-u5-jigou-jitoku
+  - item: ja:item:n1-u5-ichigo-ichie
+  - item: ja:item:n1-u5-isseki-nichou
+  - item: ja:item:n1-u5-shikou-sakugo
+  - item: ja:item:n1-u5-rinki-ouhen
+body:
+  - type: objective
+    text:
+      vi: 四字熟語 (thành ngữ bốn chữ) xuất hiện dày đặc trong báo chí, diễn văn và đề N1. Người Việt có lợi thế lớn vì phần lớn có âm Hán Việt quen thuộc. Sau bài này, bạn dùng được bảy thành ngữ thường gặp.
+  - type: explain
+    text:
+      vi: '一生懸命 - hết sức; 以心伝心 - dĩ tâm truyền tâm, hiểu nhau không cần lời; 自業自得 - tự làm tự chịu; 一期一会 - mỗi cuộc gặp chỉ một lần trong đời; 一石二鳥 - một công đôi việc; 試行錯誤 - thử và sai; 臨機応変 - tuỳ cơ ứng biến.'
+  - type: explain
+    text:
+      vi: 'Chức năng trong câu: danh từ - 一期一会を大切にする, 試行錯誤を重ねる, 自業自得だ; tính từ đuôi な / phó từ に - 臨機応変な対応 / 臨機応変に対応する, 一生懸命な姿 / 一生懸命働く; 以心伝心で (bằng cách hiểu ý nhau).'
+  - type: deep_explain
+    text:
+      vi: 'Âm Hán Việt giúp đoán nghĩa, nhưng cách đọc tiếng Nhật có ngoại lệ: 一期一会 đọc いちごいちえ (không phải いっきいっかい). Cũng có thành ngữ "giả bạn": 一生懸命 không phải "liều mạng cả đời" mà chỉ là "hết sức". Đề N1 hay hỏi chọn kanji đúng (以心伝心, không phải 意心伝心) và chọn thành ngữ đúng sắc thái - 自業自得 luôn mang nghĩa xấu.'
+  - type: example
+    target: 自転車通勤は運動にもなるし、交通費も節約できて一石二鳥だ。
+    target_lang: ja
+    translation:
+      vi: Đạp xe đi làm vừa được vận động vừa tiết kiệm tiền đi lại, một công đôi việc.
+  - type: example
+    target: 試行錯誤を重ねた結果、ようやく新しい製品が完成した。
+    target_lang: ja
+    translation:
+      vi: Sau rất nhiều lần thử và sai, cuối cùng sản phẩm mới đã hoàn thành.
+  - type: example
+    target: マニュアル通りにいかないときは、臨機応変に対応してください。
+    target_lang: ja
+    translation:
+      vi: Khi mọi việc không theo đúng sổ tay hướng dẫn, hãy xử lý linh hoạt.
+  - type: example
+    target: 一期一会の気持ちで、一人一人のお客様を大切にしています。
+    target_lang: ja
+    translation:
+      vi: Chúng tôi trân trọng từng vị khách với tâm thế "mỗi cuộc gặp chỉ có một lần".
+  - type: common_mistake
+    wrong: 彼が試験に合格したのは自業自得だ。
+    right: 彼が試験に合格したのは努力の結果だ。
+    target_lang: ja
+    note:
+      vi: 自業自得 chỉ dùng cho hậu quả xấu do mình gây ra. Kết quả tốt nhờ nỗ lực nói 努力の結果 / 努力が実った.
+  - type: common_mistake
+    wrong: 臨機応変を対応する。
+    right: 臨機応変に対応する。
+    target_lang: ja
+    note:
+      vi: 臨機応変 bổ nghĩa cho động từ bằng に - 臨機応変に対応する; bổ nghĩa cho danh từ bằng な - 臨機応変な判断.
+  - type: summary
+    points:
+      - vi: 一生懸命 - hết sức; 試行錯誤 - thử và sai (試行錯誤を重ねる).
+      - vi: 以心伝心 - hiểu nhau không cần lời; 一期一会 - trân trọng từng cuộc gặp.
+      - vi: 一石二鳥 - một công đôi việc; 自業自得 - tự làm tự chịu (nghĩa xấu).
+      - vi: 臨機応変に / な - tuỳ cơ ứng biến.
+      - vi: Âm Hán Việt giúp đoán nghĩa, nhưng cần học cách đọc riêng (一期一会 - いちごいちえ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u5-yoji-jukugo-mcq-isseki
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-isseki-nichou
+    prompt:
+      stem: 「一石二鳥」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: p5c, text: một công đôi việc, lang: vi }
+        - { id: a1w, text: bắt cá hai tay, lang: vi }
+        - { id: s8k, text: tự làm tự chịu, lang: vi }
+        - { id: u3j, text: thử và sai, lang: vi }
+    answer:
+      correct_option_id: p5c
+    explanation:
+      vi: 一石二鳥 - một hòn đá hạ hai con chim (nhất thạch nhị điểu), tức một việc được hai lợi.
+    display_answer: một công đôi việc
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-listen-shikou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-shikou-sakugo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 試行錯誤を重ねた結果、ようやく新しい製品が完成した。
+      options:
+        - { id: h9r, text: "Sau rất nhiều lần thử và sai, cuối cùng sản phẩm mới đã hoàn thành.", lang: vi }
+        - { id: b4z, text: Vì mắc nhiều lỗi nên sản phẩm mới bị huỷ., lang: vi }
+        - { id: w2e, text: Sản phẩm mới được hoàn thành ngay lần thử đầu tiên., lang: vi }
+        - { id: m7x, text: "Sau khi sản phẩm mới hoàn thành, người ta mới thử nghiệm.", lang: vi }
+    answer:
+      correct_option_id: h9r
+    explanation:
+      vi: 試行錯誤を重ねる - thử và sai nhiều lần; ～た結果 - kết quả là; ようやく - cuối cùng (sau bao vất vả).
+    display_answer: Sau rất nhiều lần thử và sai, cuối cùng sản phẩm mới đã hoàn thành.
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-mcq-reading-ichigo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-ichigo-ichie
+    prompt:
+      stem: 「一期一会」 đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: e6n, text: いちごいちえ, lang: ja }
+        - { id: t2v, text: いっきいっかい, lang: ja }
+        - { id: o8s, text: いちきいちかい, lang: ja }
+        - { id: c1y, text: いっごいっえ, lang: ja }
+    answer:
+      correct_option_id: e6n
+    explanation:
+      vi: 一期一会 - いちごいちえ. 期 đọc ご và 会 đọc え là cách đọc đặc biệt (gốc Phật giáo, trà đạo).
+    display_answer: いちごいちえ
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-fill-ishin
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-ishin-denshin
+    prompt:
+      template: "長年一緒に働いてきたので、二人は{{b1}}心伝心で仕事を進められる。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Đã làm việc cùng nhau nhiều năm nên hai người hiểu ý nhau mà triển khai công việc."
+        - "Gợi ý: chữ 'dĩ' (bằng, lấy) - い."
+    answer:
+      blanks:
+        b1: [以, い]
+    known_wrong:
+      - answer: 意
+        feedback_vi: Dễ nhầm vì cùng đọc い, nhưng thành ngữ là 以心伝心 (dĩ tâm truyền tâm).
+        error_tag: kanji_choice
+      - answer: 一
+        feedback_vi: Không phải 一心 - thành ngữ là 以心伝心.
+        error_tag: kanji_choice
+    explanation:
+      vi: 以心伝心 - lấy tâm truyền tâm, hiểu nhau không cần lời.
+    display_answer: 長年一緒に働いてきたので、二人は以心伝心で仕事を進められる。
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-wb-isshou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-isshou-kenmei
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cô ấy đang học hết sức mỗi ngày để thi đỗ.\""
+      tokens:
+        - { id: a3, text: 毎日一生懸命 }
+        - { id: a5, text: 毎日一生懸命な }
+        - { id: a1, text: 彼女は }
+        - { id: a4, text: 勉強している }
+        - { id: a2, text: 合格を目指して、 }
+    answer:
+      orders:
+        - [a1, a2, a3, a4]
+    explanation:
+      vi: 一生懸命 bổ nghĩa cho động từ dùng như phó từ (一生懸命勉強する, hoặc 一生懸命に). 一生懸命な chỉ đứng trước danh từ.
+    display_answer: 彼女は合格を目指して、毎日一生懸命勉強している。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u5-yoji-jukugo-fill-rinki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-rinki-ouhen
+    prompt:
+      template: "マニュアル通りにいかないときは、臨機{{b1}}に対応してください。(tuỳ cơ ứng biến)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [応変, おうへん]
+    known_wrong:
+      - answer: 対応
+        feedback_vi: Thành ngữ là 臨機応変 (lâm cơ ứng biến); 対応 đã có ở sau.
+        error_tag: kanji_choice
+      - answer: おへん
+        feedback_vi: おう là âm dài - おうへん.
+        error_tag: long_vowel
+    explanation:
+      vi: 臨機応変に対応する - xử lý linh hoạt theo tình huống.
+    display_answer: マニュアル通りにいかないときは、臨機応変に対応してください。
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-translate-jigou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-jigou-jitoku
+    prompt:
+      source_text: Chơi thâu đêm rồi thi trượt, đúng là tự làm tự chịu. (dùng 自業自得)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 徹夜で遊んで試験に落ちたのだから、自業自得だ。
+        - 徹夜で遊んで試験に落ちたんだから、自業自得だ。
+        - 徹夜で遊んで試験に落ちたのは、自業自得だ。
+        - 徹夜で遊んで試験に落ちたのだから、自業自得です。
+        - 徹夜で遊んで試験に落ちたんだから、自業自得です。
+        - 徹夜で遊んで試験に落ちたのは自業自得だ。
+        - 徹夜で遊んで試験に落ちたのは自業自得です。
+        - 一晩中遊んで試験に落ちたのだから、自業自得だ。
+        - 一晩中遊んで試験に落ちたんだから、自業自得だ。
+        - 一晩中遊んで試験に落ちたのは自業自得だ。
+        - 徹夜で遊んで試験に落ちたなんて、自業自得だ。
+        - 徹夜で遊んで、試験に落ちた。自業自得だ。
+        - 徹夜で遊んで試験に落ちたのだから、まさに自業自得だ。
+        - てつやであそんでしけんにおちたのだから、じごうじとくだ。
+    known_wrong:
+      - answer: 徹夜で遊んで試験に落ちたのだから、一石二鳥だ。
+        feedback_vi: 一石二鳥 là một công đôi việc (tốt). Tự làm tự chịu là 自業自得.
+        error_tag: idiom_meaning
+      - answer: 徹夜で遊んで試験に受かったのだから、自業自得だ。
+        feedback_vi: Thi trượt là 試験に落ちる; 受かる là thi đỗ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 徹夜で遊ぶ - chơi thâu đêm; 試験に落ちる - thi trượt; ～のだから - vì (rõ ràng) là ~; 自業自得 - tự làm tự chịu.
+    display_answer: 徹夜で遊んで試験に落ちたのだから、自業自得だ。
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-translate-isseki
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-isseki-nichou
+    prompt:
+      source_text: Nấu cơm ở nhà vừa tiết kiệm vừa tốt cho sức khoẻ, đúng là một công đôi việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 家で料理をすると、節約にもなるし健康にもいいので、一石二鳥だ。
+        - 家で料理をすると、節約にもなるし健康にもいいから、一石二鳥だ。
+        - 家で料理をするのは、節約にもなるし健康にもいいので、一石二鳥だ。
+        - 家で料理をするのは節約にもなるし健康にもいいし、一石二鳥だ。
+        - 自炊は節約にもなるし健康にもいいので、一石二鳥だ。
+        - 自炊は節約にもなるし健康にもいいから、一石二鳥だ。
+        - 自炊は節約にもなるし、健康にもいいし、一石二鳥だ。
+        - 自炊は節約にもなるし健康にもいいので、一石二鳥です。
+        - 家で料理をすると、節約にもなるし健康にもいいので、一石二鳥です。
+        - 家でご飯を作ると、節約にもなるし健康にもいいので、一石二鳥だ。
+        - 家でご飯を作るのは、節約にもなるし健康にもいいので、一石二鳥だ。
+        - 自炊はお金の節約にもなるし健康にもいいので、一石二鳥だ。
+        - 自炊は節約になるうえに健康にもいいので、一石二鳥だ。
+        - 自炊すると節約にもなるし健康にもいいので、一石二鳥だ。
+    known_wrong:
+      - answer: 自炊は節約にもなるし健康にもいいので、自業自得だ。
+        feedback_vi: 自業自得 là tự làm tự chịu (nghĩa xấu). Một công đôi việc là 一石二鳥.
+        error_tag: idiom_meaning
+      - answer: 自炊は節約にもなるし健康にもいいので、一石二鳥な。
+        feedback_vi: Kết câu dùng 一石二鳥だ / です; な chỉ đứng trước danh từ.
+        error_tag: copula
+    explanation:
+      vi: 自炊 / 家で料理をする - nấu ăn ở nhà; ～にもなるし～にもいい - vừa ~ vừa ~; 一石二鳥だ - một công đôi việc.
+    display_answer: 自炊は節約にもなるし健康にもいいので、一石二鳥だ。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u5-yoji-jukugo-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-ichigo-ichie
+    prompt:
+      stem: Bạn viết lời cảm ơn gửi người bạn quen trong chuyến du lịch, muốn nói rằng bạn trân trọng cuộc gặp tình cờ đó. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: l7q, text: 旅先での出会いは一期一会だと思い、本当に大切にしています。, lang: ja }
+        - { id: z4a, text: 旅先での出会いは自業自得だと思い、本当に大切にしています。, lang: ja }
+        - { id: f2u, text: 旅先での出会いは試行錯誤だと思い、本当に大切にしています。, lang: ja }
+        - { id: j9c, text: 旅先での出会いは臨機応変だと思い、本当に大切にしています。, lang: ja }
+    answer:
+      correct_option_id: l7q
+    explanation:
+      vi: 一期一会 - mỗi cuộc gặp chỉ một lần, cần trân trọng. Các thành ngữ còn lại không hợp nghĩa.
+    display_answer: 旅先での出会いは一期一会だと思い、本当に大切にしています。
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u5-rinki-ouhen
+    prompt:
+      source_text: 災害時には、規則よりも臨機応変な判断が求められる。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi có thảm hoạ, người ta cần những phán đoán linh hoạt hơn là quy tắc.
+        - Khi có thảm hoạ, cần phán đoán linh hoạt hơn là quy tắc.
+        - Khi có thiên tai, cần phán đoán linh hoạt hơn là quy tắc.
+        - Khi có thiên tai, người ta cần những phán đoán linh hoạt hơn là quy tắc.
+        - Lúc thiên tai, cần phán đoán linh hoạt hơn là tuân theo quy tắc.
+        - Khi xảy ra thiên tai, cần phán đoán linh hoạt hơn là quy tắc.
+        - Khi xảy ra thảm hoạ, cần phán đoán linh hoạt hơn là quy tắc.
+        - Khi thiên tai xảy ra, cần phán đoán tuỳ cơ ứng biến hơn là quy tắc.
+        - Khi có thiên tai, cần phán đoán tuỳ cơ ứng biến hơn là quy tắc.
+        - Khi có thiên tai, đòi hỏi phán đoán linh hoạt hơn là quy tắc.
+        - Khi có thiên tai, sự phán đoán linh hoạt được đòi hỏi hơn là quy tắc.
+        - Khi xảy ra thiên tai, cần phán đoán linh hoạt hơn là theo quy định.
+        - Khi có thiên tai, cần quyết định linh hoạt hơn là quy tắc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi có thiên tai, cần tuân thủ quy tắc hơn là phán đoán linh hoạt.
+        feedback_vi: 規則よりも～ - hơn là quy tắc; điều được coi trọng là 臨機応変な判断.
+        error_tag: comparison
+    explanation:
+      vi: 災害時 - lúc thiên tai; AよりもB - B hơn là A; 臨機応変な判断 - phán đoán linh hoạt; 求められる - được đòi hỏi.
+    display_answer: Khi có thiên tai, cần phán đoán linh hoạt hơn là quy tắc.
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-wb-shikou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-shikou-sakugo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Vừa thử và sai, chúng tôi vừa cải tiến dịch vụ.\""
+      tokens:
+        - { id: k3, text: サービスを }
+        - { id: k1, text: 試行錯誤 }
+        - { id: k5, text: 一期一会 }
+        - { id: k4, text: 改善している }
+        - { id: k2, text: しながら、 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: 試行錯誤しながら - vừa thử và sai vừa ~. 一期一会 không hợp nghĩa.
+    display_answer: 試行錯誤しながら、サービスを改善している。
+
+  - key: ja:exercise:n1-u5-yoji-jukugo-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u5-ishin-denshin
+    prompt:
+      stem: "Đọc: 「日本では以心伝心が美徳とされてきた。しかし、国際的な職場では、言わなくても分かるだろうという期待は誤解を生みやすい。臨機応変に、言葉ではっきり伝える姿勢も必要だ。」 Ý của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: r5b, text: "Ở môi trường quốc tế, cần linh hoạt và nói rõ bằng lời, không chỉ trông vào việc hiểu ý nhau.", lang: vi }
+        - { id: i3m, text: "Ở môi trường quốc tế, im lặng là cách tốt nhất để tránh hiểu lầm.", lang: vi }
+        - { id: y6t, text: Người Nhật không bao giờ coi trọng việc hiểu ý nhau không cần lời., lang: vi }
+        - { id: d8h, text: Nơi làm việc quốc tế nên bỏ hẳn văn hoá Nhật Bản., lang: vi }
+    answer:
+      correct_option_id: r5b
+    explanation:
+      vi: 以心伝心が美徳とされてきた - hiểu nhau không cần lời được coi là đức tính; 誤解を生みやすい - dễ sinh hiểu lầm; 言葉ではっきり伝える姿勢も必要だ - cũng cần thái độ nói rõ bằng lời (ý chính ở câu cuối).
+    display_answer: Ở môi trường quốc tế, cần linh hoạt và nói rõ bằng lời, không chỉ trông vào việc hiểu ý nhau.
