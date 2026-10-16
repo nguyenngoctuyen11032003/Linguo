@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u4-ni-sokushite-ni-terashite
+order_index: 2
+level: n1
+title:
+  vi: Căn cứ và chuẩn mực - ～に即して, ～に照らして
+objectives:
+  - vi: Nói "bám sát thực tế / sự thật" bằng ～に即して / ～に即した.
+  - vi: Nói "đối chiếu với chuẩn mực để phán xét" bằng ～に照らして.
+  - vi: Phân biệt hai mẫu trong văn bản pháp lý, báo cáo với 実情, 法令, 妥当.
+estimated_minutes: 24
+skills: [grammar, reading, vocabulary]
+prerequisites: [ja:lesson:n1-u4-wo-motte-wo-oite]
+items:
+  - item: ja:item:n1-u4-jitsujou
+  - item: ja:item:n1-u4-hourei
+  - item: ja:item:n1-u4-datou
+  - item: ja:item:n1-u4-gram-ni-sokushite
+  - item: ja:item:n1-u4-gram-ni-terashite
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và viết được câu lập luận kiểu báo cáo - "sửa quy trình cho sát thực tế", "đối chiếu với luật thì hành vi này vi phạm" - vốn là khung chuẩn của văn bản học thuật và pháp lý.
+  - type: explain
+    text:
+      vi: 'N + に即して - "bám sát, phù hợp với" một thực tế khách quan: 実情に即して計画を見直す. Bổ nghĩa danh từ: N + に即した + N - 事実に即した報道 (đưa tin đúng sự thật). N hay gặp: 事実, 実情, 実態, 現実, 現場, 規則.'
+  - type: explain
+    text:
+      vi: 'N + に照らして - "đối chiếu với" một chuẩn để đánh giá đúng sai, hợp lý hay không: 法律に照らして判断する; 過去の例に照らすと / 照らせば. Bổ nghĩa danh từ: に照らした判断. N hay gặp: 法律, 法令, 規則, 基準, 常識, 経験, 過去の例.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo phân biệt: に即して đi với hành động làm cho khớp (運用する, 見直す, 対応する, 書く) - thực tế là khuôn mẫu để làm theo. に照らして đi với hành động đánh giá (判断する, 考える, 処分する, 明らかだ) - chuẩn mực là thước đo. Cả hai đều cứng; văn nói thay bằng ～に合わせて và ～と比べて / ～から見て. Lưu ý 照らして (đối chiếu) khác 照らされて (bị chiếu sáng).'
+  - type: example
+    target: 現場の実情に即して、マニュアルを改める必要がある。
+    target_lang: ja
+    translation:
+      vi: Cần sửa lại sổ tay hướng dẫn cho sát với thực tế hiện trường.
+  - type: example
+    target: 報道機関には、事実に即した報道が求められる。
+    target_lang: ja
+    translation:
+      vi: Cơ quan báo chí được đòi hỏi phải đưa tin đúng sự thật.
+  - type: example
+    target: 法令に照らして判断すれば、この契約は無効である。
+    target_lang: ja
+    translation:
+      vi: Nếu đối chiếu với pháp luật mà phán đoán thì hợp đồng này vô hiệu.
+  - type: example
+    target: 過去の例に照らせば、今回の処分は妥当だと言える。
+    target_lang: ja
+    translation:
+      vi: Đối chiếu với các tiền lệ, có thể nói lần xử lý này là thoả đáng.
+  - type: common_mistake
+    wrong: 部長の指示に即して、資料を作り直した。
+    right: 部長の指示に従って、資料を作り直した。
+    target_lang: ja
+    note:
+      vi: に即して đi với thực tế, sự thật, quy định khách quan; làm theo chỉ thị của một người dùng ～に従って.
+  - type: common_mistake
+    wrong: 法律に即して考えると、彼の行為は違法だ。
+    right: 法律に照らして考えると、彼の行為は違法だ。
+    target_lang: ja
+    note:
+      vi: Đánh giá hợp pháp hay không là đem luật làm thước đo - に照らして. に即して dùng khi làm cho khớp (法律に即して手続きを進める).
+  - type: summary
+    points:
+      - vi: に即して / に即した - bám sát thực tế, sự thật (làm cho khớp).
+      - vi: に照らして / に照らすと / に照らせば - đối chiếu với chuẩn (để đánh giá).
+      - vi: Làm theo người - に従って, không phải に即して.
+      - vi: 実情 (thực trạng), 法令 (pháp luật), 妥当 (thoả đáng).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u4-sokushite-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u4-gram-ni-terashite
+    prompt:
+      stem: 「法律に照らして判断する」 - に照らして nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a5k, text: đối chiếu với (chuẩn mực), lang: vi }
+        - { id: q2v, text: bị chiếu sáng bởi, lang: vi }
+        - { id: j8e, text: thay cho, lang: vi }
+        - { id: x4n, text: bất kể, lang: vi }
+    answer:
+      correct_option_id: a5k
+    explanation:
+      vi: に照らして - đem N làm thước đo để đánh giá. 照らされて mới là "bị chiếu sáng"; "bất kể" là いかんによらず.
+    display_answer: đối chiếu với (chuẩn mực)
+
+  - key: ja:exercise:n1-u4-sokushite-listen-sokushita
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u4-gram-ni-sokushite
+    prompt:
+      audio_asset_id: null
+      fallback_text: 報道機関には、事実に即した報道が求められる。
+      options:
+        - { id: e7c, text: Cơ quan báo chí được đòi hỏi phải đưa tin đúng sự thật., lang: vi }
+        - { id: o3h, text: Cơ quan báo chí đòi hỏi người dân cung cấp sự thật., lang: vi }
+        - { id: r9b, text: Cơ quan báo chí cần đưa tin thật nhanh., lang: vi }
+        - { id: u1s, text: Báo chí thường đưa tin không đúng sự thật., lang: vi }
+    answer:
+      correct_option_id: e7c
+    explanation:
+      vi: 事実に即した報道 - đưa tin bám sát sự thật; ～が求められる - được đòi hỏi, cần phải.
+    display_answer: Cơ quan báo chí được đòi hỏi phải đưa tin đúng sự thật.
+
+  - key: ja:exercise:n1-u4-sokushite-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ni-sokushite
+    prompt:
+      stem: 'Chọn từ phù hợp: 地域の実情＿＿、支援制度を柔軟に運用すべきだ。'
+      stem_lang: vi
+      options:
+        - { id: m6d, text: に即して, lang: ja }
+        - { id: z2p, text: をおいて, lang: ja }
+        - { id: h5w, text: に照らされて, lang: ja }
+        - { id: c8t, text: いかんによらず, lang: ja }
+    answer:
+      correct_option_id: m6d
+    explanation:
+      vi: 実情に即して運用する - vận hành cho sát thực trạng (làm cho khớp). いかんによらず nghĩa "bất kể" - trái ý câu.
+    display_answer: に即して
+
+  - key: ja:exercise:n1-u4-sokushite-fill-terashite
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ni-terashite
+    prompt:
+      template: "社内規定に{{b1}}、彼の行為は処分の対象となる。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Đối chiếu với quy định công ty, hành vi của anh ta thuộc diện bị xử lý."
+        - "Gợi ý: động từ 照らす ở thể て."
+    answer:
+      blanks:
+        b1: [照らして, てらして, 照らすと, 照らせば]
+    known_wrong:
+      - answer: 即して
+        feedback_vi: Ở đây quy định là thước đo để phán xét - に照らして, không phải に即して.
+        error_tag: sokushite_terashite
+      - answer: 照らされて
+        feedback_vi: 照らされて là bị động "bị chiếu sáng"; mẫu đối chiếu dùng 照らして.
+        error_tag: grammar_form
+    explanation:
+      vi: 規定に照らして - đối chiếu với quy định; 処分の対象となる - thuộc diện bị xử lý.
+    display_answer: 社内規定に照らして、彼の行為は処分の対象となる。
+
+  - key: ja:exercise:n1-u4-sokushite-wb-jitsujou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-jitsujou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cần sửa lại sổ tay hướng dẫn cho sát với thực tế hiện trường.\""
+      tokens:
+        - { id: p3, text: マニュアルを改める必要がある }
+        - { id: p1, text: 現場の }
+        - { id: p4, text: 実情を照らして、 }
+        - { id: p2, text: 実情に即して、 }
+    answer:
+      orders:
+        - [p1, p2, p3]
+    explanation:
+      vi: 実情に即して - bám sát thực trạng. 照らす đi với に (に照らして), không đi với を trong mẫu này.
+    display_answer: 現場の実情に即して、マニュアルを改める必要がある。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u4-sokushite-fill-datou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-datou
+    prompt:
+      template: "過去の例に照らせば、今回の処分は{{b1}}だと言える。(thoả đáng)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [妥当, だとう]
+    known_wrong:
+      - answer: だと
+        feedback_vi: とう là âm dài - だとう.
+        error_tag: long_vowel
+      - answer: 適任
+        feedback_vi: 適任 là "người hợp với vai trò"; đánh giá một quyết định là 妥当.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 処分は妥当だ - việc xử lý là thoả đáng. 妥当 là tính từ な dùng nhiều trong văn đánh giá.
+    display_answer: 過去の例に照らせば、今回の処分は妥当だと言える。
+
+  - key: ja:exercise:n1-u4-sokushite-translate-hourei
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-hourei
+    prompt:
+      source_text: Nếu đối chiếu với pháp luật mà phán đoán thì hợp đồng này vô hiệu. (dùng 法令に照らして, văn viết である)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 法令に照らして判断すれば、この契約は無効である。
+        - 法令に照らして判断すれば この契約は無効である。
+        - 法令に照らして判断すると、この契約は無効である。
+        - 法令に照らして判断するなら、この契約は無効である。
+        - 法令に照らして判断した場合、この契約は無効である。
+        - 法令に照らして判断すれば、本契約は無効である。
+        - 法令に照らして判断すれば、この契約は無効となる。
+        - 法令に照らして考えれば、この契約は無効である。
+        - 法令に照らして考えると、この契約は無効である。
+        - 法令に照らせば、この契約は無効である。
+        - 法令に照らすと、この契約は無効である。
+        - 法令に照らして判断すれば、この契約は無効だ。
+        - ほうれいにてらしてはんだんすれば、このけいやくはむこうである。
+    known_wrong:
+      - answer: 法令に即して判断すれば、この契約は無効である。
+        feedback_vi: Phán đoán hợp lệ hay không là đem luật làm thước đo - に照らして.
+        error_tag: sokushite_terashite
+      - answer: 法令を照らして判断すれば、この契約は無効である。
+        feedback_vi: Mẫu đối chiếu là N + に照らして, không dùng を.
+        error_tag: particle
+    explanation:
+      vi: 法令に照らして判断すれば - nếu đối chiếu với pháp luật mà phán đoán; 無効である - vô hiệu (văn viết).
+    display_answer: 法令に照らして判断すれば、この契約は無効である。
+
+  - key: ja:exercise:n1-u4-sokushite-translate-sokushita
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ni-sokushite
+    prompt:
+      source_text: Cần có chính sách sát với thực trạng của địa phương. (dùng 実情に即した)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 地方の実情に即した政策が必要だ。
+        - 地方の実情に即した政策が必要である。
+        - 地方の実情に即した政策が必要です。
+        - 地方の実情に即した政策が求められる。
+        - 地方の実情に即した政策が求められている。
+        - 地域の実情に即した政策が必要だ。
+        - 地域の実情に即した政策が必要である。
+        - 地域の実情に即した政策が必要です。
+        - 地域の実情に即した政策が求められる。
+        - 地方の実情に即した政策を取る必要がある。
+        - 地域の実情に即した政策を取る必要がある。
+        - ちほうのじつじょうにそくしたせいさくがひつようだ。
+    known_wrong:
+      - answer: 地方の実情に即して政策が必要だ。
+        feedback_vi: Bổ nghĩa cho danh từ 政策 phải dùng に即した + N.
+        error_tag: grammar_form
+      - answer: 地方の事情に照らした政策が必要だ。
+        feedback_vi: Chính sách "sát thực trạng" là làm cho khớp - 実情に即した; に照らした dùng khi đánh giá theo chuẩn.
+        error_tag: sokushite_terashite
+    explanation:
+      vi: 実情に即した政策 - chính sách sát thực trạng; 必要だ / 求められる - cần có.
+    display_answer: 地方の実情に即した政策が必要だ。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u4-sokushite-mcq-distinguish
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ni-terashite
+    prompt:
+      stem: Bạn viết báo cáo, muốn nói "Đối chiếu với tiêu chuẩn an toàn thì sản phẩm này có vấn đề." Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: v2a, text: 安全基準に照らして、この製品には問題があると言わざるを得ない。, lang: ja }
+        - { id: l6m, text: 安全基準に即して、この製品には問題があると言わざるを得ない。, lang: ja }
+        - { id: t9f, text: 安全基準をおいて、この製品には問題があると言わざるを得ない。, lang: ja }
+        - { id: d3y, text: 安全基準に照らされて、この製品には問題があると言わざるを得ない。, lang: ja }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: Tiêu chuẩn là thước đo để đánh giá - に照らして. に即して là làm cho khớp; をおいて là "ngoài ra không có"; 照らされて là bị động.
+    display_answer: 安全基準に照らして、この製品には問題があると言わざるを得ない。
+
+  - key: ja:exercise:n1-u4-sokushite-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-jitsujou
+    prompt:
+      source_text: 地方の実情を知らずに、制度を作るべきではない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không nên đặt ra chế độ mà không biết thực trạng ở địa phương.
+        - Không nên đặt ra chế độ khi không biết thực trạng ở địa phương.
+        - Không nên đặt ra chế độ mà không biết thực trạng địa phương.
+        - Không nên xây dựng chế độ mà không biết thực trạng của địa phương.
+        - Không nên xây dựng chế độ khi không nắm được thực trạng địa phương.
+        - Không nên tạo ra chế độ mà không biết tình hình thực tế ở địa phương.
+        - Không nên lập ra chế độ mà không biết tình hình thực tế của địa phương.
+        - Không nên đặt ra chính sách mà không biết thực trạng ở địa phương.
+        - Không nên xây dựng chế độ mà không hiểu thực trạng ở địa phương.
+        - Không nên đặt ra quy chế mà không biết thực trạng ở địa phương.
+        - Không nên làm ra chế độ khi không biết thực tế ở địa phương.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không nên tìm hiểu thực trạng ở địa phương khi đặt ra chế độ.
+        feedback_vi: 知らずに là "mà không biết"; câu gốc phê phán việc đặt chế độ khi chưa nắm thực trạng.
+        error_tag: meaning
+    explanation:
+      vi: 実情を知らずに - mà không biết thực trạng; 制度を作るべきではない - không nên đặt ra chế độ.
+    display_answer: Không nên đặt ra chế độ mà không biết thực trạng ở địa phương.
+
+  - key: ja:exercise:n1-u4-sokushite-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ni-sokushite
+    prompt:
+      stem: "Đọc: 「国が定めた指針は全国一律であり、地方の実情に即していないとの批判がある。各自治体が地域の実態に即した運用をできるよう、制度を見直すべきである。」 Tác giả chủ trương điều gì?"
+      stem_lang: vi
+      options:
+        - { id: k7s, text: Sửa chế độ để các địa phương vận hành sát với thực tế của mình., lang: vi }
+        - { id: b4e, text: Áp dụng thống nhất hướng dẫn của nhà nước cho cả nước., lang: vi }
+        - { id: g1x, text: Bãi bỏ hoàn toàn hướng dẫn của nhà nước., lang: vi }
+        - { id: w8r, text: Phê phán các địa phương không tuân thủ hướng dẫn., lang: vi }
+    answer:
+      correct_option_id: k7s
+    explanation:
+      vi: 全国一律 - đồng loạt toàn quốc (đang bị chê); 実態に即した運用をできるよう、制度を見直すべき - nên sửa chế độ để địa phương vận hành sát thực tế. Không có ý bãi bỏ.
+    display_answer: Sửa chế độ để các địa phương vận hành sát với thực tế của mình.
+
+  - key: ja:exercise:n1-u4-sokushite-wb-terasu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ni-terashite
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đối chiếu với lẽ thường, cách giải thích đó thật khó chấp nhận.\""
+      tokens:
+        - { id: n3, text: 到底受け入れられない }
+        - { id: n4, text: 常識に即した }
+        - { id: n1, text: 常識に照らして、 }
+        - { id: n2, text: その説明は }
+    answer:
+      orders:
+        - [n1, n2, n3]
+        - [n2, n1, n3]
+    explanation:
+      vi: 常識に照らして - đối chiếu với lẽ thường (thước đo đánh giá); 到底～ない - hoàn toàn không thể. 常識に即した là bổ nghĩa danh từ, không hợp chỗ này.
+    display_answer: 常識に照らして、その説明は到底受け入れられない。

@@ -1,0 +1,391 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-academic-discourse-review
+order_index: 5
+level: n1
+title:
+  vi: "Ôn tập: đọc xã luận và văn bản lập luận"
+objectives:
+  - vi: Đọc hiểu đoạn xã luận có nhượng bộ, căn cứ và kiến nghị, tìm được quan điểm của người viết.
+  - vi: Ôn và phân biệt をもって, をおいて, に即して, に照らして, いかん, とはいえ, といえども, ながらも.
+  - vi: Dùng 論点, 根拠, 提言, 見解 để tóm tắt một lập luận.
+estimated_minutes: 28
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n1-u4-towaie-toiedomo]
+items:
+  - item: ja:item:n1-u4-ronten
+  - item: ja:item:n1-u4-konkyo
+  - item: ja:item:n1-u4-teigen
+  - item: ja:item:n1-u4-kenkai
+  - item: ja:item:n1-u4-gram-wo-motte
+    role: reuse
+  - item: ja:item:n1-u4-gram-wo-oite
+    role: reuse
+  - item: ja:item:n1-u4-gram-ni-sokushite
+    role: reuse
+  - item: ja:item:n1-u4-gram-ni-terashite
+    role: reuse
+  - item: ja:item:n1-u4-gram-ikan-ni-yorazu
+    role: reuse
+  - item: ja:item:n1-u4-gram-ikan-dewa
+    role: reuse
+  - item: ja:item:n1-u4-gram-towaie
+    role: reuse
+  - item: ja:item:n1-u4-gram-toiedomo
+    role: reuse
+  - item: ja:item:n1-u4-gram-nagaramo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn cuối unit đưa bạn vào dạng đọc hiểu dài của JLPT N1 - một đoạn xã luận hoặc văn bản lập luận, nơi các mẫu ngữ pháp trang trọng đan xen và câu hỏi xoay quanh "người viết muốn nói gì nhất".
+  - type: explain
+    text:
+      vi: 'Bố cục thường gặp của 社説: (1) nêu sự việc - ～が発表された; (2) công nhận một mặt - 確かに / ～とはいえ / ～ながらも; (3) đánh giá theo chuẩn - ～に照らして / ～に即して; (4) cảnh báo - ～いかんでは～かねない; (5) kiến nghị - ～べきだ / ～が求められる / ～を提言したい.'
+  - type: explain
+    text:
+      vi: 'Từ khoá để tóm tắt: 論点 (luận điểm), 根拠 (căn cứ), 提言 (kiến nghị), 見解 (quan điểm chính thức). Ví dụ: 筆者の見解は～である; その根拠として～を挙げている.'
+  - type: deep_explain
+    text:
+      vi: 'Bẫy hay gặp trong đề đọc: phương án lặp lại vế công nhận (trước とはいえ / ながらも) thay vì vế phản bác; phương án đảo ngược いかんでは (có thể) thành "chắc chắn"; phương án biến ý kiến của người khác (～という見解もある) thành ý của tác giả. Luôn hỏi: câu này là sự thật, ý người khác, hay quan điểm của chính người viết?'
+  - type: example
+    target: 議論の論点を整理してから、結論を出しましょう。
+    target_lang: ja
+    translation:
+      vi: Hãy sắp xếp lại các luận điểm của cuộc tranh luận rồi mới đưa ra kết luận.
+  - type: example
+    target: その主張には科学的な根拠がない。
+    target_lang: ja
+    translation:
+      vi: Lập luận đó không có căn cứ khoa học.
+  - type: example
+    target: 専門家会議は、教育制度の見直しを政府に提言した。
+    target_lang: ja
+    translation:
+      vi: Hội đồng chuyên gia đã kiến nghị chính phủ xem xét lại chế độ giáo dục.
+  - type: example
+    target: この問題について、政府はまだ公式な見解を示していない。
+    target_lang: ja
+    translation:
+      vi: Về vấn đề này, chính phủ vẫn chưa đưa ra quan điểm chính thức.
+  - type: common_mistake
+    wrong: その主張には科学的な理由がない。
+    right: その主張には科学的な根拠がない。
+    target_lang: ja
+    note:
+      vi: Cơ sở cho một nhận định, lập luận là 根拠; 理由 là lý do của hành động.
+  - type: common_mistake
+    wrong: 政府は公式な見解を言った。
+    right: 政府は公式な見解を示した。
+    target_lang: ja
+    note:
+      vi: 見解 đi với 示す / 述べる / 発表する; 見解を言う nghe thiếu trang trọng.
+  - type: summary
+    points:
+      - vi: Xã luận - sự việc → công nhận (とはいえ, ながらも) → đánh giá (に照らして) → cảnh báo (いかんでは) → kiến nghị.
+      - vi: Quan điểm người viết nằm sau vế nhượng bộ và ở câu cuối.
+      - vi: 論点, 根拠 (を示す), 提言 (する), 見解 (を示す).
+      - vi: Ôn をもって, をおいて, に即して, いかんによらず, といえども.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-academic-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-konkyo
+    prompt:
+      stem: "Đọc: 「人工知能の導入で雇用が失われるという見解がある。確かに一部の職種では仕事が減るだろう。とはいえ、その主張には十分な根拠があるとは言い難い。過去の技術革新に照らせば、新たな職種が生まれる可能性も高いからだ。」 Quan điểm của người viết là gì?"
+      stem_lang: vi
+      options:
+        - { id: f2k, text: Ý kiến AI làm mất việc làm chưa đủ căn cứ vì AI cũng có thể tạo ra nghề mới., lang: vi }
+        - { id: x7q, text: AI chắc chắn sẽ làm mất việc làm của rất nhiều người., lang: vi }
+        - { id: m4d, text: Không có ngành nghề nào bị giảm việc vì AI., lang: vi }
+        - { id: c9s, text: Không nên đưa AI vào sử dụng., lang: vi }
+    answer:
+      correct_option_id: f2k
+    explanation:
+      vi: ～という見解がある - là ý của người khác; とはいえ、根拠があるとは言い難い - người viết phản bác; 過去の技術革新に照らせば - đối chiếu với các lần đổi mới công nghệ trước. Người viết vẫn thừa nhận 一部の職種では減る nên phương án "không ngành nào" sai.
+    display_answer: Ý kiến AI làm mất việc làm chưa đủ căn cứ vì AI cũng có thể tạo ra nghề mới.
+
+  - key: ja:exercise:n1-academic-review-listen-teigen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-teigen
+    prompt:
+      audio_asset_id: null
+      fallback_text: 専門家会議は、教育制度の見直しを政府に提言した。
+      options:
+        - { id: o3a, text: Hội đồng chuyên gia đã kiến nghị chính phủ xem xét lại chế độ giáo dục., lang: vi }
+        - { id: t8w, text: Chính phủ đã yêu cầu hội đồng chuyên gia xem xét lại chế độ giáo dục., lang: vi }
+        - { id: e5h, text: Hội đồng chuyên gia phản đối việc sửa đổi chế độ giáo dục., lang: vi }
+        - { id: j1y, text: Hội đồng chuyên gia đã quyết định thay đổi chế độ giáo dục., lang: vi }
+    answer:
+      correct_option_id: o3a
+    explanation:
+      vi: 専門家会議は - chủ thể là hội đồng chuyên gia; 政府に提言した - kiến nghị lên chính phủ (không phải tự quyết định).
+    display_answer: Hội đồng chuyên gia đã kiến nghị chính phủ xem xét lại chế độ giáo dục.
+
+  - key: ja:exercise:n1-academic-review-mcq-grammar
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ikan-dewa
+    prompt:
+      stem: 'Chọn từ phù hợp: 今回の調査結果＿＿、計画そのものを見直さざるを得なくなるかもしれない。'
+      stem_lang: vi
+      options:
+        - { id: s6v, text: いかんによっては, lang: ja }
+        - { id: k2b, text: いかんによらず, lang: ja }
+        - { id: w9e, text: をおいて, lang: ja }
+        - { id: h4p, text: といえども, lang: ja }
+    answer:
+      correct_option_id: s6v
+    explanation:
+      vi: Vế sau là khả năng (～かもしれない) nên dùng いかんによっては - tuỳ kết quả. いかんによらず là "bất kể", ngược nghĩa.
+    display_answer: いかんによっては
+
+  - key: ja:exercise:n1-academic-review-fill-ronten
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-ronten
+    prompt:
+      template: "議論の{{b1}}を整理してから、結論を出しましょう。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Hãy sắp xếp lại các luận điểm của cuộc tranh luận rồi mới đưa ra kết luận."
+        - "Gợi ý: 'luận điểm' - ろんてん."
+    answer:
+      blanks:
+        b1: [論点, ろんてん]
+    known_wrong:
+      - answer: 結論
+        feedback_vi: Câu đã có 結論を出す ở vế sau; thứ cần sắp xếp trước là 論点 (luận điểm).
+        error_tag: vocab_meaning
+      - answer: ろんでん
+        feedback_vi: Đọc ろんてん - て không có dấu đục.
+        error_tag: reading
+    explanation:
+      vi: 論点を整理する - sắp xếp các luận điểm.
+    display_answer: 議論の論点を整理してから、結論を出しましょう。
+
+  - key: ja:exercise:n1-academic-review-wb-kenkai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-kenkai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Về vấn đề này, chính phủ vẫn chưa đưa ra quan điểm chính thức.\""
+      tokens:
+        - { id: v3, text: 公式な見解を }
+        - { id: v5, text: 公式な根拠を }
+        - { id: v1, text: この問題について、 }
+        - { id: v4, text: 示していない }
+        - { id: v2, text: 政府はまだ }
+    answer:
+      orders:
+        - [v1, v2, v3, v4]
+    explanation:
+      vi: 見解を示す - nêu quan điểm; 根拠 là căn cứ, không phải "quan điểm".
+    display_answer: この問題について、政府はまだ公式な見解を示していない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-academic-review-fill-konkyo
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-konkyo
+    prompt:
+      template: "その主張には科学的な{{b1}}がない。(căn cứ)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [根拠, こんきょ]
+    known_wrong:
+      - answer: 理由
+        feedback_vi: 理由 là lý do của hành động; cơ sở cho một lập luận là 根拠.
+        error_tag: vocab_meaning
+      - answer: こんきょう
+        feedback_vi: きょ là âm ngắn - こんきょ.
+        error_tag: long_vowel
+    explanation:
+      vi: 科学的な根拠がない - không có căn cứ khoa học.
+    display_answer: その主張には科学的な根拠がない。
+
+  - key: ja:exercise:n1-academic-review-translate-teigen
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-teigen
+    prompt:
+      source_text: Hội đồng chuyên gia đã kiến nghị chính phủ xem xét lại chế độ giáo dục. (dùng 提言)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 専門家会議は、教育制度の見直しを政府に提言した。
+        - 専門家会議は教育制度の見直しを政府に提言した。
+        - 専門家会議は、政府に教育制度の見直しを提言した。
+        - 専門家会議は政府に教育制度の見直しを提言した。
+        - 専門家会議は、教育制度の見直しを政府に提言しました。
+        - 専門家会議は、政府に教育制度の見直しを提言しました。
+        - 専門家会議は、教育制度を見直すよう政府に提言した。
+        - 専門家会議は、政府に教育制度を見直すよう提言した。
+        - 専門家会議は、教育制度を見直すべきだと政府に提言した。
+        - 専門家会議は、政府に対して教育制度の見直しを提言した。
+        - 専門家会議が、教育制度の見直しを政府に提言した。
+        - せんもんかかいぎは、きょういくせいどのみなおしをせいふにていげんした。
+    known_wrong:
+      - answer: 専門家会議は、教育制度の見直しを政府を提言した。
+        feedback_vi: Đối tượng nhận kiến nghị đi với に - 政府に提言する.
+        error_tag: particle
+      - answer: 政府は、教育制度の見直しを専門家会議に提言した。
+        feedback_vi: Đảo chủ thể - người kiến nghị là hội đồng chuyên gia.
+        error_tag: meaning
+    explanation:
+      vi: N を + 人 に + 提言する - kiến nghị N với ai; 見直し - sự xem xét lại.
+    display_answer: 専門家会議は、教育制度の見直しを政府に提言した。
+
+  - key: ja:exercise:n1-academic-review-translate-oite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-wo-oite
+    prompt:
+      source_text: Có thể giải quyết vấn đề này, ngoài giáo sư Yamada ra thì không có ai khác. (dùng をおいて他に)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この問題を解決できるのは、山田教授をおいて他にいない。
+        - この問題を解決できるのは山田教授をおいて他にいない。
+        - この問題を解決できるのは、山田教授をおいて他にいません。
+        - この問題を解決できるのは、山田教授をおいて他にはいない。
+        - この問題を解決できるのは、山田教授をおいてほかにいない。
+        - この問題を解決できる人は、山田教授をおいて他にいない。
+        - この問題を解決できる人は、山田教授をおいて他にいません。
+        - この問題を解決できるのは、山田教授をおいて他に誰もいない。
+        - この問題を解決できるのは、山田先生をおいて他にいない。
+        - この問題を解決できるのは、山田先生をおいて他にいません。
+        - この問題を解決できる人は、山田先生をおいて他にいない。
+        - このもんだいをかいけつできるのは、やまだきょうじゅをおいてほかにいない。
+    known_wrong:
+      - answer: この問題を解決できるのは、山田教授を除いて他にいない。
+        feedback_vi: を除いて là "trừ ra" - ngược nghĩa. Dùng をおいて.
+        error_tag: oite_nozoite
+      - answer: この問題を解決できるのは、山田教授をもって他にいない。
+        feedback_vi: をもって là mốc / phương tiện; "ngoài ... ra không có" là をおいて.
+        error_tag: wo_motte_oite
+    explanation:
+      vi: 解決できるのは - người có thể giải quyết; 山田教授をおいて他にいない - ngoài giáo sư Yamada ra không có ai.
+    display_answer: この問題を解決できるのは、山田教授をおいて他にいない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-academic-review-mcq-editorial
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-gram-nagaramo
+    prompt:
+      stem: "Đọc đoạn xã luận: 「市は財政難を理由に、図書館の開館時間を短縮すると発表した。厳しい財政事情は理解できるとはいえ、住民の声を聞かないまま決めたことは問題だ。市は住民の学ぶ機会を守ると言いながらも、その場を自ら狭めている。市民の実情に即した議論をやり直すべきだ。」 Người viết phê phán điều gì nhất?"
+      stem_lang: vi
+      options:
+        - { id: z4c, text: Thành phố quyết định mà không nghe ý kiến cư dân và mâu thuẫn với lời hứa của chính mình., lang: vi }
+        - { id: r7m, text: Thành phố đang gặp khó khăn tài chính nghiêm trọng., lang: vi }
+        - { id: d1u, text: Cư dân không chịu sử dụng thư viện., lang: vi }
+        - { id: l5g, text: Thư viện nên đóng cửa hoàn toàn để tiết kiệm ngân sách., lang: vi }
+    answer:
+      correct_option_id: z4c
+    explanation:
+      vi: 財政事情は理解できるとはいえ - vế công nhận (không phải ý chính); 住民の声を聞かないまま決めたことは問題だ - phê phán; 守ると言いながらも、自ら狭めている - nói vậy nhưng lại tự thu hẹp; 実情に即した議論をやり直すべきだ - kiến nghị.
+    display_answer: Thành phố quyết định mà không nghe ý kiến cư dân và mâu thuẫn với lời hứa của chính mình.
+
+  - key: ja:exercise:n1-academic-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ikan-ni-yorazu
+    prompt:
+      source_text: 結果のいかんによらず、その根拠を説明する責任がある。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bất kể kết quả ra sao, vẫn có trách nhiệm giải thích căn cứ của nó.
+        - Bất kể kết quả thế nào, vẫn có trách nhiệm giải thích căn cứ của nó.
+        - Bất kể kết quả ra sao cũng có trách nhiệm giải thích căn cứ của nó.
+        - Bất kể kết quả thế nào cũng có trách nhiệm giải thích căn cứ.
+        - Bất kể kết quả như thế nào, có trách nhiệm giải thích căn cứ của nó.
+        - Dù kết quả ra sao đi nữa, vẫn có trách nhiệm giải thích căn cứ của nó.
+        - Dù kết quả thế nào, vẫn có trách nhiệm giải thích căn cứ.
+        - Dù kết quả ra sao cũng phải có trách nhiệm giải thích căn cứ của nó.
+        - Bất kể kết quả ra sao, có trách nhiệm giải thích cơ sở của nó.
+        - Bất kể kết quả thế nào, vẫn có trách nhiệm giải thích cơ sở của điều đó.
+        - Bất luận kết quả ra sao, vẫn có trách nhiệm giải thích căn cứ của nó.
+        - Không kể kết quả ra sao, vẫn có trách nhiệm giải thích căn cứ của nó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tuỳ theo kết quả mà có trách nhiệm giải thích căn cứ của nó.
+        feedback_vi: いかんによらず là "bất kể", không phải "tuỳ theo" (いかんによって).
+        error_tag: ikan_meaning
+    explanation:
+      vi: 結果のいかんによらず - bất kể kết quả ra sao; 根拠を説明する責任がある - có trách nhiệm giải thích căn cứ.
+    display_answer: Bất kể kết quả ra sao, vẫn có trách nhiệm giải thích căn cứ của nó.
+
+  - key: ja:exercise:n1-academic-review-mcq-write
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ni-terashite
+    prompt:
+      stem: Bạn viết kết luận cho bài luận - "Đối chiếu với các tiền lệ, kiến nghị này là thoả đáng, nhưng dù là chính phủ đi nữa cũng không thể thực hiện ngay." Câu nào đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: n8t, text: 過去の例に照らせば、この提言は妥当だ。とはいえ、政府といえども直ちに実行するのは難しい。, lang: ja }
+        - { id: b2f, text: 過去の例に即して、この提言は妥当だ。とはいえ、政府ながらも直ちに実行するのは難しい。, lang: ja }
+        - { id: g6x, text: 過去の例をおいて、この提言は妥当だ。といえども、政府とはいえ直ちに実行できる。, lang: ja }
+        - { id: y3w, text: 過去の例いかんによらず、この提言は妥当だ。とはいえ、政府をもって直ちに実行するのは難しい。, lang: ja }
+    answer:
+      correct_option_id: n8t
+    explanation:
+      vi: 例に照らせば - đối chiếu tiền lệ (đánh giá); とはいえ đầu câu - tuy vậy; 政府といえども - dù là chính phủ đi nữa. Các phương án kia dùng sai mẫu hoặc sai nghĩa (実行できる).
+    display_answer: 過去の例に照らせば、この提言は妥当だ。とはいえ、政府といえども直ちに実行するのは難しい。
+
+  - key: ja:exercise:n1-academic-review-wb-summary
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-towaie
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tuy đúng là đề xuất có căn cứ, nhưng vẫn còn vấn đề về chi phí.\""
+      tokens:
+        - { id: y4, text: 残っている }
+        - { id: y2, text: とはいえ、 }
+        - { id: y5, text: をおいて、 }
+        - { id: y1, text: 提言に根拠がある }
+        - { id: y3, text: 費用の問題が }
+    answer:
+      orders:
+        - [y1, y2, y3, y4]
+    explanation:
+      vi: Thể thường + とはいえ - tuy ... nhưng; 費用の問題が残っている - vẫn còn vấn đề chi phí. をおいて cần N và vế phủ định ～他にない.
+    display_answer: 提言に根拠があるとはいえ、費用の問題が残っている。
