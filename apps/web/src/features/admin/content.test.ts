@@ -90,8 +90,23 @@ describe('helpers', () => {
     expect(reportsPath('learning_item')).toBe('/quan-tri/bao-loi?loai=learning_item');
     expect(reportTargetKind('unit')).toBeNull();
     expect(reportTargetKind('exam_question')).toBe('exam_question');
-    expect(formatAdminDate('2026-10-10T08:05:00Z')).toBe('10/10/2026');
+    expect(formatAdminDate('2026-10-10')).toBe('10/10/2026');
     expect(formatAdminDate(null)).toBe('—');
+  });
+
+  it('formats a timestamp in the viewer time zone, a plain date as written', () => {
+    const tz = process.env.TZ;
+    process.env.TZ = 'Asia/Ho_Chi_Minh';
+    try {
+      // 20:05 UTC is already the next day in Vietnam (UTC+7).
+      expect(formatAdminDate('2026-10-10T20:05:00+00:00')).toBe('11/10/2026');
+      // A plain date has no zone: shown as written, never shifted.
+      expect(formatAdminDate('2026-10-31')).toBe('31/10/2026');
+      expect(formatAdminDate('not a date')).toBe('not a date');
+    } finally {
+      if (tz === undefined) delete process.env.TZ;
+      else process.env.TZ = tz;
+    }
   });
 
   it('safeUrl keeps only http(s) urls', () => {

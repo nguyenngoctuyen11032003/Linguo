@@ -184,11 +184,21 @@ export function reportTargetKind(kind: AdminContentKind): ReportTargetKind | nul
   return REPORTABLE[kind] ?? null;
 }
 
-/** "2026-10-10T08:05:00Z" → "10/10/2026"; null → "—". */
+const two = (n: number) => String(n).padStart(2, '0');
+
+/**
+ * "2026-10-10" → "10/10/2026" as written; a timestamp ("2026-10-10T20:05:00+00:00") → its date in the viewer's
+ * time zone, so an evening UTC update is not shown a day early in Vietnam. null → "—".
+ */
 export function formatAdminDate(iso: string | null): string {
   if (!iso) return '—';
   const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
-  return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
+  if (!m) return iso;
+  if (iso.length > 10) {
+    const d = new Date(iso);
+    if (!Number.isNaN(d.getTime())) return `${two(d.getDate())}/${two(d.getMonth() + 1)}/${d.getFullYear()}`;
+  }
+  return `${m[3]}/${m[2]}/${m[1]}`;
 }
 
 /** Link to the report queue filtered to a content kind (admin_list_reports has no per-target filter). */
