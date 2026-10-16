@@ -25,6 +25,7 @@ import { useAiQuota } from '@/features/ai-tutor/useAiQuota';
 import { useAiTutor, type AiTutorState as UseAiTutor } from '@/features/ai-tutor/useAiTutor';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
 type Tab = 'explain' | 'practice' | 'sentence';
@@ -66,6 +67,7 @@ function useGatedRun(ai: UseAiTutor, notice: ReturnType<typeof useAiNotice>) {
   const [pending, setPending] = useState<AiRequestInput | null>(null);
   const lastRef = useRef<AiRequestInput | null>(null);
   const start = (req: AiRequestInput) => {
+    playSound('send');
     lastRef.current = req;
     if (notice.acknowledged) void ai.run(req);
     else setPending(req);
@@ -95,9 +97,15 @@ function useHistory(ai: UseAiTutor, lastRef: { current: AiRequestInput | null },
   const result = ai.state === 'ok' ? ai.result : null;
   const titleRef = useRef(titleOf);
   titleRef.current = titleOf;
+  // A soft "pop" when an answer arrives, once per answer (re-renders and StrictMode re-runs see the same one).
+  const heard = useRef<AiSuccess | null>(null);
   useEffect(() => {
     const request = lastRef.current;
     if (!result || !request) return;
+    if (heard.current !== result) {
+      heard.current = result;
+      playSound('receive');
+    }
     setHistory((h) =>
       h.some((e) => e.result === result)
         ? h

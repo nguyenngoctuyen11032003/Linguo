@@ -18,6 +18,7 @@ import { contentCeilingMessage } from '@/features/learning-paths/content-ceiling
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
+import { playSound } from '@/lib/sound';
 import { clampReportToContent, CONFIDENCE_LABELS, formatDate, levelLabel, missingReason, rangeLabel, SKILL_LABELS } from './labels';
 
 const HOME = '/app';
@@ -267,6 +268,15 @@ export function DiagnosticReportPage() {
   useEffect(() => {
     if (rawReport) headingRef.current?.focus();
   }, [rawReport]);
+
+  // Fanfare only when the learner arrives straight from finishing the test, not when reopening an older report.
+  const finishedHere = (location.state as { finished?: boolean } | null)?.finished === true;
+  const celebrated = useRef(false);
+  useEffect(() => {
+    if (!finishedHere || !rawReport || celebrated.current) return;
+    celebrated.current = true;
+    playSound('levelUp');
+  }, [finishedHere, rawReport]);
 
   const header = (
     <header className="pt-safe min-[1024px]:border-b min-[1024px]:border-[var(--hairline)]">

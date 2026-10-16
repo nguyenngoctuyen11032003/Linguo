@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { Check, Mic, Square, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { alignToTarget } from '@/features/speaking/align';
-import { compareToTarget } from '@/features/speaking/overlap';
+import { compareToTarget, type OverlapLevel } from '@/features/speaking/overlap';
 import { RATING_AXES, RATING_LABELS, type Ratings, type RatingValue, type SpeakingLanguage } from '@/features/speaking/ratings';
 import { useRecorder, type RecorderError } from '@/features/speaking/useRecorder';
 import { useSpeechRecognition } from '@/features/speaking/useSpeechRecognition';
@@ -10,7 +10,7 @@ import type { TtsApi } from '@/features/speaking/useTts';
 import { cn } from '@/lib/cn';
 import { FOCUS_RING } from './controls';
 import { WordFeedback } from './WordFeedback';
-import { playSound } from '@/lib/sound';
+import { playSound, type SoundCue } from '@/lib/sound';
 
 const RECORDER_MESSAGES: Record<RecorderError, string> = {
   unsupported: 'Trình duyệt này chưa hỗ trợ ghi âm. Bạn vẫn luyện bình thường theo cách bên dưới.',
@@ -25,6 +25,9 @@ const OVERLAP_TEXT = {
   partial: 'Bản chép có vài từ khác câu mẫu. Có thể bạn nói khác đi một chút, hoặc máy nghe chưa đúng.',
   far: 'Bản chép khác câu mẫu khá nhiều. Có thể máy nghe chưa đúng, hãy nghe lại giọng bạn và so với câu mẫu.',
 } as const;
+
+// The verdict family, played directly (not playVerdict): a speaking hint is not a graded answer and must not feed a combo.
+const OVERLAP_CUE = { close: 'correct', partial: 'almost', far: 'incorrect' } as const satisfies Record<OverlapLevel, SoundCue>;
 
 const MISSING_SHOWN = 8;
 
@@ -140,6 +143,22 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
   const rated = Object.keys(ratings).length > 0;
   const hint = target && status === 'recorded' && useTranscript ? compareToTarget(target, stt.transcript) : null;
   const alignment = hint && target ? alignToTarget(target, stt.transcript) : null;
+
+  // The match hint sounds once per recording, a beat after the stop blip so the two do not blur; editing the
+  // transcript afterwards changes the hint silently.
+  const hintLevel = hint?.level ?? null;
+  const hintSounded = useRef(false);
+  useEffect(() => {
+    if (status === 'recording') hintSounded.current = false;
+  }, [status]);
+  useEffect(() => {
+    if (!hintLevel || hintSounded.current) return;
+    const timer = setTimeout(() => {
+      hintSounded.current = true;
+      playSound(OVERLAP_CUE[hintLevel]);
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [hintLevel]);
 
   return (
     <div className="space-y-5">

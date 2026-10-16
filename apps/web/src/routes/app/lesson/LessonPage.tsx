@@ -22,7 +22,7 @@ import { StepMistake } from './StepMistake';
 import { StepNextReview } from './StepNextReview';
 import { StepObjective } from './StepObjective';
 import { StepSummary } from './StepSummary';
-import { resetAnswerStreak } from '@/lib/sound';
+import { playSound, resetAnswerStreak } from '@/lib/sound';
 
 const CONTENT_TITLES = {
   explain: 'Giải thích',
@@ -55,6 +55,15 @@ export function LessonPage() {
   const run = useLessonRun(lessonId);
   // A combo never carries over from another lesson.
   useEffect(resetAnswerStreak, [lessonId]);
+  // A run in progress opens with the start cue, once per run (a restart is a new run); a completed run opens silently on its summary.
+  const startedRun = useRef<string | null>(null);
+  const { runId, runStatus } = run;
+  useEffect(() => {
+    if (!runId || runStatus !== 'in_progress' || startedRun.current === runId) return;
+    startedRun.current = runId;
+    resetAnswerStreak();
+    playSound('start');
+  }, [runId, runStatus]);
   const { profile } = useProfile();
   const navigate = useNavigate();
   const [exitOpen, setExitOpen] = useState(false);

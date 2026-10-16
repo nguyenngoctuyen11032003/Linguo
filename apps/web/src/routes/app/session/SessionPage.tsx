@@ -14,6 +14,7 @@ import { readLengthParam, SHORT_SESSION_MINUTES } from '@/features/session/lengt
 import { finishSession, firstPending, reorderSession, sessionLink, sessionProgress, updateSessionItem } from '@/features/session/service';
 import { usePlanner } from '@/features/session/usePlanner';
 import { useTodaySession } from '@/features/session/useTodaySession';
+import { playSound } from '@/lib/sound';
 import { requireSupabase } from '@/lib/supabase';
 import { ActivityList, type MoveDirection } from './ActivityList';
 import { CompletionView } from './CompletionView';
@@ -309,7 +310,16 @@ function PathSession() {
               </div>
             </div>
             {pending.length > 0 ? (
-              <Button variant="accent" size="lg" block onClick={() => start(session)}>
+              <Button
+                variant="accent"
+                size="lg"
+                block
+                onClick={() => {
+                  // Beginning the session is the moment; resuming it is just the next step.
+                  playSound(planned ? 'start' : 'next');
+                  start(session);
+                }}
+              >
                 {planned ? 'Bắt đầu phiên học' : 'Tiếp tục'}
               </Button>
             ) : (

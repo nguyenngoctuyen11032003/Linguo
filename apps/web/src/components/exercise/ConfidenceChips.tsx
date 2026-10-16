@@ -1,6 +1,7 @@
 import { forwardRef, useId } from 'react';
 import type { Confidence } from '@/features/lesson-player/types';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { CONFIDENCE_LABELS } from './exercise-utils';
 import { DISABLED_NEUTRAL } from '@/components/ui/disabled-styles';
 const LEVELS: Confidence[] = [1, 2, 3];
@@ -26,7 +27,10 @@ export const ConfidenceChips = forwardRef<HTMLButtonElement, ConfidenceChipsProp
             ref={level === 1 ? ref : undefined}
             type="button"
             disabled={disabled}
-            onClick={() => onPick(level)}
+            onClick={() => {
+              playSound('select');
+              onPick(level);
+            }}
             className={cn(
               'group inline-flex min-h-15 min-w-0 flex-col items-center justify-center gap-1.5 rounded-2xl px-1 py-2 text-center text-[14px] font-bold leading-tight whitespace-nowrap min-[360px]:text-[15px]',
               'transition-[translate,box-shadow,background-color] duration-150 not-disabled:active:translate-y-[3px] disabled:cursor-not-allowed disabled:shadow-none',

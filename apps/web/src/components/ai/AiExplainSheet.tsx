@@ -7,6 +7,7 @@ import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
 import { track } from '@/features/analytics';
 import { useAiQuota } from '@/features/ai-tutor/useAiQuota';
 import { useAiTutor } from '@/features/ai-tutor/useAiTutor';
+import { playSound } from '@/lib/sound';
 import { AiFallback, type AiFallbackText } from './AiFallback';
 import { AiModal } from './AiModal';
 import { AiNoticeDialog } from './AiNoticeDialog';
@@ -98,6 +99,15 @@ export function AiExplainSheet({ open, onClose, request, fallback, triggerRef }:
     setReportOpen(false);
     aiRef.current.reset();
   }, [open]);
+
+  // Chime once when an answer arrives (each re-ask brings a new result object); re-renders keep the same one.
+  const heardResult = useRef<unknown>(null);
+  const arrived = ai.state === 'ok' ? ai.result : null;
+  useEffect(() => {
+    if (!open || !arrived || heardResult.current === arrived) return;
+    heardResult.current = arrived;
+    playSound('notify');
+  }, [open, arrived]);
 
   const run = (req: AiRequestInput) => {
     setCurrent(req);

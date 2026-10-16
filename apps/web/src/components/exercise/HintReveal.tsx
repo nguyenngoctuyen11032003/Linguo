@@ -1,4 +1,5 @@
 import { Lightbulb } from 'lucide-react';
+import { playSound } from '@/lib/sound';
 
 export interface HintRevealProps {
   levels: string[];
@@ -28,7 +29,10 @@ export function HintReveal({ levels, shown, onReveal, disabled = false }: HintRe
       {shown < levels.length && (
         <button
           type="button"
-          onClick={onReveal}
+          onClick={() => {
+            playSound('hint');
+            onReveal();
+          }}
           disabled={disabled}
           className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-border bg-surface-solid px-4 text-[15px] font-bold text-gold not-disabled:hover:bg-gold/10 disabled:cursor-not-allowed disabled:text-muted disabled:outline-2 disabled:-outline-offset-2 disabled:outline-dashed disabled:outline-muted"
         >
