@@ -1,0 +1,402 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-news-society-review
+order_index: 5
+level: n2
+title:
+  vi: "Ôn tập: đọc tin tức xã hội"
+objectives:
+  - vi: Đọc hiểu một bản tin xã hội có tiêu đề, số liệu và nhận định.
+  - vi: Phân biệt thông tin dẫn lại (～によると, ～とされる) với ý kiến của người viết (～とは限らない, ～だろう).
+  - vi: Dùng từ vựng về vấn đề xã hội - 少子高齢化, 人手不足, 対策.
+estimated_minutes: 26
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n2-u4-statistics]
+items:
+  - item: ja:item:n2-u4-shoushi-koureika
+  - item: ja:item:n2-u4-hitode-busoku
+  - item: ja:item:n2-u4-taisaku
+  - item: ja:item:n2-u4-gram-ni-yoru-to
+    role: reuse
+  - item: ja:item:n2-u4-gram-to-sareru
+    role: reuse
+  - item: ja:item:n2-u4-gram-to-wa-kagiranai
+    role: reuse
+  - item: ja:item:n2-u4-gram-midashi
+    role: reuse
+  - item: ja:item:n2-u4-gram-wo-shimeru
+    role: reuse
+  - item: ja:item:n2-u4-gram-ni-tomonatte
+    role: reuse
+  - item: ja:item:n2-u4-zennenhi
+    role: reuse
+  - item: ja:item:n2-u4-houshin
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn cuối unit đưa bạn vào một bản tin hoàn chỉnh về vấn đề xã hội Nhật Bản - giảm sinh, già hoá, thiếu nhân lực - và luyện đúng kỹ năng đề N2 hay hỏi - ai nói điều này, và người viết nghĩ gì.
+  - type: explain
+    text:
+      vi: 'Cấu trúc bản tin: 見出し (tiêu đề) → リード文 (câu tóm tắt: ai, cái gì, khi nào) → số liệu (～によると、～を占める / 前年比～%減) → nhận định (～とされる, 専門家は～と指摘している) → triển vọng (～する方針だ / ～見通しだ).'
+  - type: explain
+    text:
+      vi: 'Từ vựng chủ đề: 少子高齢化 (giảm sinh và già hoá dân số) - đi với 進む; 人手不足 (thiếu nhân lực) - đi với 深刻だ / 深刻化する; 対策 (biện pháp đối phó) - ～への対策, 対策をとる / 進める.'
+  - type: deep_explain
+    text:
+      vi: 'Khi đọc, hãy gạch chân đuôi câu. ～という, ～とのことだ, ～とされる, ～によると = thông tin dẫn lại, không phải ý người viết. ～とは限らない, ～必要があるだろう, ～べきではないか = ý kiến của người viết. Câu hỏi "筆者の考えに合うものはどれか" thường nhắm vào câu sau ただ / しかし ở cuối đoạn.'
+  - type: example
+    target: ある調査によると、65歳以上の人が人口の約3割を占めるという。
+    target_lang: ja
+    translation:
+      vi: Theo một cuộc khảo sát, người từ 65 tuổi trở lên chiếm khoảng 30% dân số.
+  - type: example
+    target: 少子高齢化に伴って、働く人の数が減っている。
+    target_lang: ja
+    translation:
+      vi: Cùng với tình trạng giảm sinh và già hoá dân số, số người lao động đang giảm.
+  - type: example
+    target: 介護の現場では人手不足が深刻です。
+    target_lang: ja
+    translation:
+      vi: Trong ngành chăm sóc người cao tuổi, tình trạng thiếu nhân lực đang nghiêm trọng.
+  - type: example
+    target: 政府は人手不足への対策として、外国人労働者の受け入れを拡大する方針だ。
+    target_lang: ja
+    translation:
+      vi: Như một biện pháp đối phó với thiếu nhân lực, chính phủ có chủ trương mở rộng tiếp nhận lao động nước ngoài.
+  - type: common_mistake
+    wrong: 会社は人手不足を対策している。
+    right: 会社は人手不足への対策を進めている。
+    target_lang: ja
+    note:
+      vi: 対策 là danh từ, không dùng như động từ với を. Nói ～への対策を進める / ～の対策をとる.
+  - type: common_mistake
+    wrong: 日本では少子高齢化が増えている。
+    right: 日本では少子高齢化が進んでいる。
+    target_lang: ja
+    note:
+      vi: 少子高齢化 là một quá trình - đi với 進む (tiến triển), không đi với 増える.
+  - type: summary
+    points:
+      - vi: 少子高齢化が進む; 人手不足が深刻だ; ～への対策.
+      - vi: Thông tin dẫn lại - によると, という, とされる, とのことだ.
+      - vi: Ý người viết - とは限らない, ～だろう, thường sau ただ / しかし.
+      - vi: Ôn を占める, に伴って, 前年比, tiêu đề ～へ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-news-society-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-shoushi-koureika
+    prompt:
+      stem: "Đọc: 「ある調査によると、65歳以上の人が人口の約3割を占めるという。少子高齢化に伴って働く人の数が減り、多くの業界で人手不足が深刻になっている。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: h2q, text: "Người từ 65 tuổi chiếm khoảng 30% dân số, và thiếu nhân lực trở nên nghiêm trọng ở nhiều ngành.", lang: vi }
+        - { id: w7d, text: Người từ 65 tuổi chỉ chiếm khoảng 3% dân số., lang: vi }
+        - { id: k5j, text: Số người lao động đang tăng nhờ già hoá dân số., lang: vi }
+        - { id: c1x, text: Người viết khẳng định nên tăng tỉ lệ sinh ngay., lang: vi }
+    answer:
+      correct_option_id: h2q
+    explanation:
+      vi: 約3割を占める - chiếm khoảng 30%; 働く人の数が減り - số người lao động giảm; 人手不足が深刻 - thiếu nhân lực nghiêm trọng. Đoạn văn không có ý kiến "nên".
+    display_answer: Người từ 65 tuổi chiếm khoảng 30% dân số, và thiếu nhân lực trở nên nghiêm trọng ở nhiều ngành.
+
+  - key: ja:exercise:n2-news-society-review-listen-hitode
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-hitode-busoku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 介護の現場では人手不足が深刻です。
+      options:
+        - { id: m4a, text: "Trong ngành chăm sóc người cao tuổi, tình trạng thiếu nhân lực đang nghiêm trọng.", lang: vi }
+        - { id: z6t, text: "Trong ngành chăm sóc người cao tuổi, số nhân viên đang tăng mạnh.", lang: vi }
+        - { id: o9f, text: Ngành chăm sóc người cao tuổi đang có quá nhiều người làm., lang: vi }
+        - { id: u3b, text: Ngành chăm sóc người cao tuổi đã giải quyết được việc thiếu người., lang: vi }
+    answer:
+      correct_option_id: m4a
+    explanation:
+      vi: 介護の現場 - ngành, nơi làm việc chăm sóc; 人手不足 - thiếu nhân lực; 深刻 - nghiêm trọng.
+    display_answer: Trong ngành chăm sóc người cao tuổi, tình trạng thiếu nhân lực đang nghiêm trọng.
+
+  - key: ja:exercise:n2-news-society-review-mcq-taisaku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-taisaku
+    prompt:
+      stem: 'Chọn từ phù hợp: 政府は人手不足への＿＿として、外国人労働者の受け入れを拡大する方針だ。'
+      stem_lang: vi
+      options:
+        - { id: s5e, text: 対策, lang: ja }
+        - { id: g8w, text: 被害, lang: ja }
+        - { id: y2n, text: 例外, lang: ja }
+        - { id: d7h, text: 発生, lang: ja }
+    answer:
+      correct_option_id: s5e
+    explanation:
+      vi: ～への対策として - như một biện pháp đối phó với... 被害 (thiệt hại), 例外 (ngoại lệ), 発生 (xảy ra) không hợp nghĩa.
+    display_answer: 対策
+
+  - key: ja:exercise:n2-news-society-review-fill-susumu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-shoushi-koureika
+    prompt:
+      template: "日本では少子高齢化が{{b1}}います。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Ở Nhật, tình trạng giảm sinh và già hoá dân số đang tiến triển."
+        - "Gợi ý: động từ 'tiến triển' - すすむ, thể て."
+    answer:
+      blanks:
+        b1: [進んで, すすんで]
+    known_wrong:
+      - answer: 増えて
+        feedback_vi: 少子高齢化 là một quá trình - đi với 進む, không đi với 増える.
+        error_tag: collocation
+      - answer: 進めて
+        feedback_vi: 進める là tha động từ (thúc đẩy cái gì). Tự tiến triển - 進んでいる.
+        error_tag: transitivity
+    explanation:
+      vi: 少子高齢化が進んでいる - tình trạng giảm sinh và già hoá đang tiến triển.
+    display_answer: 日本では少子高齢化が進んでいます。
+
+  - key: ja:exercise:n2-news-society-review-wb-chousa
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-ni-yoru-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Theo một cuộc khảo sát, quá nửa số doanh nghiệp cảm thấy thiếu nhân lực.\""
+      tokens:
+        - { id: c3, text: 人手不足を }
+        - { id: c5, text: 感じるはずだ }
+        - { id: c1, text: ある調査によると、 }
+        - { id: c4, text: 感じているという }
+        - { id: c2, text: 企業の過半数が }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+    explanation:
+      vi: ～によると、～という - dẫn thông tin khảo sát. はずだ là suy luận của người viết, không hợp với によると.
+    display_answer: ある調査によると、企業の過半数が人手不足を感じているという。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-news-society-review-fill-hitode
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-hitode-busoku
+    prompt:
+      template: "介護の現場では{{b1}}が深刻だ。(thiếu nhân lực)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [人手不足, ひとでぶそく]
+    known_wrong:
+      - answer: ひとでふそく
+        feedback_vi: 不足 trong từ ghép đọc đục - ひとでぶそく.
+        error_tag: reading
+      - answer: 人出不足
+        feedback_vi: 人出 là lượng người ra đường. Người làm, sức người - 人手.
+        error_tag: kanji
+    explanation:
+      vi: 人手不足が深刻だ - thiếu nhân lực nghiêm trọng.
+    display_answer: 介護の現場では人手不足が深刻だ。
+
+  - key: ja:exercise:n2-news-society-review-translate-happyou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u4-zennenhi
+    prompt:
+      source_text: Theo công bố của chính phủ, số trẻ sinh ra đã giảm 5% so với năm trước. (dùng によると, 前年比 và một mẫu truyền đạt)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 政府の発表によると、生まれた子どもの数は前年比5%減少したそうです。
+        - 政府の発表によると、生まれた子どもの数は前年比5%減少したという。
+        - 政府の発表によると、生まれた子どもの数は前年比5%減少したとのことです。
+        - 政府の発表によると、生まれた子どもの数は前年比5%減ったそうです。
+        - 政府の発表によると、生まれた子どもの数は前年比5%減ったという。
+        - 政府の発表によると、生まれた子どもの数は前年比5%減ったとのことです。
+        - 政府の発表によると、生まれた子供の数は前年比5%減少したそうです。
+        - 政府の発表によると、生まれた子供の数は前年比5%減ったそうです。
+        - 政府の発表によると、生まれた子供の数は前年比5%減少したという。
+        - 政府の発表によると、出生数は前年比5%減少したそうです。
+        - 政府の発表によると、出生数は前年比5%減少したという。
+        - 政府の発表によると、出生数は前年比5%減少したとのことです。
+        - 政府の発表によると、出生数は前年比5%減ったそうです。
+        - 政府の発表によると、出生数は前年比5%減ったという。
+        - 政府の発表によれば、生まれた子どもの数は前年比5%減少したそうです。
+        - 政府の発表によれば、出生数は前年比5%減少したそうです。
+        - 政府の発表によれば、出生数は前年比5%減少したという。
+        - 政府の発表によると、生まれた子どもの数は前年比5％減少したそうです。
+        - 政府の発表によると、出生数は前年比5％減少したそうです。
+        - 政府の発表によると、生まれた子どもの数は前年比で5%減少したそうです。
+        - 政府の発表によると、出生数は前年比で5%減少したそうです。
+    known_wrong:
+      - answer: 政府の発表によると、出生数は前年比5%増加したそうです。
+        feedback_vi: 増加 là tăng; giảm là 減少 / 減る.
+        error_tag: vocab_meaning
+      - answer: 政府の発表によると、出生数は前年比5%減少しました。
+        feedback_vi: Câu có ～によると cần kết bằng mẫu truyền đạt - ～そうです / ～という / ～とのことです.
+        error_tag: hearsay_form
+    explanation:
+      vi: 政府の発表によると - theo công bố của chính phủ; 出生数 / 生まれた子どもの数 - số trẻ sinh ra; 前年比5%減少した - giảm 5% so với năm trước; ～そうです - nghe nói.
+    display_answer: 政府の発表によると、生まれた子どもの数は前年比5%減少したそうです。
+
+  - key: ja:exercise:n2-news-society-review-translate-shinkoku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-hitode-busoku
+    prompt:
+      source_text: Tình trạng thiếu nhân lực đang ngày càng nghiêm trọng. (dùng 人手不足 và 深刻)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 人手不足が深刻になっている。
+        - 人手不足が深刻になっています。
+        - 人手不足が深刻になってきている。
+        - 人手不足が深刻になってきています。
+        - 人手不足が深刻化している。
+        - 人手不足が深刻化しています。
+        - 人手不足がますます深刻になっている。
+        - 人手不足がますます深刻になっています。
+        - 人手不足がますます深刻化している。
+        - 人手不足がますます深刻化しています。
+        - 人手不足はますます深刻になっています。
+        - 人手不足は深刻になっています。
+        - 人手不足は深刻化しています。
+        - 人手不足がどんどん深刻になっています。
+        - ひとでぶそくがしんこくになっています。
+    known_wrong:
+      - answer: 人手不足が深刻しています。
+        feedback_vi: 深刻 là tính từ đuôi な - 深刻になる hoặc danh động từ 深刻化する.
+        error_tag: grammar_form
+      - answer: 人出不足が深刻になっています。
+        feedback_vi: 人出 là lượng người ra đường. Thiếu nhân lực - 人手不足.
+        error_tag: kanji
+    explanation:
+      vi: 深刻になっている / 深刻化している - đang trở nên nghiêm trọng. Thêm ますます để nhấn "ngày càng".
+    display_answer: 人手不足がますます深刻になっている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-news-society-review-mcq-author
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u4-gram-to-wa-kagiranai
+    prompt:
+      stem: "Đọc: 「政府は外国人労働者の受け入れを拡大する方針だ。ただ、受け入れを増やせば人手不足がすぐに解決するとは限らない。働きやすい環境を整えることも必要だろう。」 Ý kiến của người viết là gì?"
+      stem_lang: vi
+      options:
+        - { id: f4c, text: "Tăng tiếp nhận chưa chắc giải quyết ngay thiếu nhân lực, cần cả cải thiện môi trường làm việc.", lang: vi }
+        - { id: r8y, text: Chính phủ đã ngừng tiếp nhận lao động nước ngoài., lang: vi }
+        - { id: p1k, text: Chỉ cần tăng tiếp nhận lao động nước ngoài là đủ giải quyết vấn đề., lang: vi }
+        - { id: i6w, text: Tình trạng thiếu nhân lực đã được giải quyết., lang: vi }
+    answer:
+      correct_option_id: f4c
+    explanation:
+      vi: 方針だ - thông tin về chủ trương của chính phủ; ý người viết nằm sau ただ - ～とは限らない (chưa chắc), ～も必要だろう (cũng cần).
+    display_answer: Tăng tiếp nhận chưa chắc giải quyết ngay thiếu nhân lực, cần cả cải thiện môi trường làm việc.
+
+  - key: ja:exercise:n2-news-society-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-gram-ni-tomonatte
+    prompt:
+      source_text: 少子高齢化に伴って、働く人の数が減っている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cùng với tình trạng giảm sinh và già hóa dân số, số người lao động đang giảm.
+        - Cùng với tình trạng giảm sinh và già hóa dân số, số người lao động đang giảm đi.
+        - Cùng với tình trạng giảm sinh và già hóa dân số, số người đi làm đang giảm.
+        - Cùng với tình trạng ít con và già hóa dân số, số người lao động đang giảm.
+        - Cùng với tình trạng ít con và già hóa dân số, số người đi làm đang giảm.
+        - Cùng với việc giảm sinh và già hóa dân số, số người lao động đang giảm.
+        - Cùng với giảm sinh và già hóa dân số, số người lao động đang giảm.
+        - Cùng với giảm sinh và già hóa dân số, số người làm việc đang giảm.
+        - Cùng với tỉ lệ sinh giảm và dân số già hóa, số người lao động đang giảm.
+        - Cùng với tỷ lệ sinh giảm và dân số già hóa, số người lao động đang giảm.
+        - Cùng với tình trạng giảm sinh và già hóa dân số, lực lượng lao động đang giảm.
+        - Do tình trạng giảm sinh và già hóa dân số, số người lao động đang giảm.
+        - Theo đà giảm sinh và già hóa dân số, số người lao động đang giảm.
+        - Cùng với tình trạng giảm sinh và già hóa dân số, số người lao động đang giảm dần.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cùng với tình trạng giảm sinh và già hóa dân số, số người lao động đang tăng.
+        feedback_vi: 減っている - đang giảm, không phải tăng.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 少子高齢化に伴って - cùng với tình trạng giảm sinh và già hoá dân số; 働く人の数が減っている - số người lao động đang giảm.
+    display_answer: Cùng với tình trạng giảm sinh và già hóa dân số, số người lao động đang giảm.
+
+  - key: ja:exercise:n2-news-society-review-wb-taisaku
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-taisaku
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Như một biện pháp đối phó với thiếu nhân lực, chính phủ có chủ trương mở rộng tiếp nhận lao động nước ngoài.\""
+      tokens:
+        - { id: m3, text: 外国人労働者の受け入れを }
+        - { id: m5, text: 拡大した方針だ }
+        - { id: m1, text: 政府は }
+        - { id: m4, text: 拡大する方針だ }
+        - { id: m2, text: 人手不足への対策として、 }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: ～への対策として - như biện pháp đối phó với...; V thể từ điển + 方針だ - có chủ trương sẽ...
+    display_answer: 政府は人手不足への対策として、外国人労働者の受け入れを拡大する方針だ。
+
+  - key: ja:exercise:n2-news-society-review-mcq-headline
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-midashi
+    prompt:
+      stem: Bản tin nói chính phủ đã quyết định chủ trương mở rộng tiếp nhận lao động nước ngoài. Tiêu đề nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: t7b, text: 政府、外国人労働者の受け入れ拡大へ, lang: ja }
+        - { id: l3s, text: 政府、外国人労働者の受け入れ拡大か, lang: ja }
+        - { id: e9m, text: 外国人労働者の受け入れで被害拡大, lang: ja }
+        - { id: a5g, text: 政府、外国人労働者を逮捕, lang: ja }
+    answer:
+      correct_option_id: t7b
+    explanation:
+      vi: ～へ - sắp, có chủ trương (đã quyết định). ～か chỉ là nghi vấn, chưa xác nhận; 被害拡大 (thiệt hại lan rộng) và 逮捕 (bắt giữ) sai nội dung.
+    display_answer: 政府、外国人労働者の受け入れ拡大へ
