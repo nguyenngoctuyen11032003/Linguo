@@ -346,6 +346,10 @@ export function DiagnosticPage() {
       <SkipSkillSheet
         open={skipOpen}
         skillLabel={SKILL_LABELS[item.skill]}
+        last={
+          !!progress &&
+          !progress.skills.some((row) => row.skill !== item.skill && (row.status === 'pending' || row.status === 'active'))
+        }
         busy={busy}
         triggerRef={skipTriggerRef}
         onClose={() => setSkipOpen(false)}

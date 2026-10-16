@@ -10,6 +10,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { useAuth } from '@/features/auth/AuthProvider';
+import { useFocusFirstInvalid } from '@/features/auth/useFocusFirstInvalid';
 import { clearAllLocalLearnerData } from '@/features/account/service';
 import { useOutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvider';
 import { releasePushOnSignOut } from '@/features/notifications/push';
@@ -28,6 +29,7 @@ import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
+import { PasswordSection } from './settings/PasswordSection';
 import { RemindersSection } from './settings/RemindersSection';
 import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './settings/section-state';
 import { SettingsJumpList } from './settings/SettingsJumpList';
@@ -65,6 +67,7 @@ export function SettingsPage() {
   const [timezone, setTimezone] = useState(DEFAULT_TIMEZONE);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
+  const { formRef: profileFormRef, focusFirstInvalid } = useFocusFirstInvalid();
   const [signingOut, setSigningOut] = useState(false);
   /**
    * Sign-out was asked while lesson answers or review grades still wait in their outboxes: they only sync once this
@@ -96,6 +99,7 @@ export function SettingsPage() {
     const parsed = profileUpdateSchema.safeParse({ displayName, timezone });
     if (!parsed.success) {
       setErrors(fieldErrors(parsed.error));
+      focusFirstInvalid();
       return;
     }
     setErrors({});
@@ -212,7 +216,7 @@ export function SettingsPage() {
           )}
           {status === 'error' && <ErrorState title="Không tải được hồ sơ" onRetry={reload} />}
           {status === 'ready' && (
-            <form noValidate onSubmit={saveProfile} className="space-y-4">
+            <form ref={profileFormRef} noValidate onSubmit={saveProfile} className="space-y-4">
               <p className="text-sm text-muted">
                 Email: <span className="text-text">{user?.email}</span>
               </p>
@@ -338,6 +342,8 @@ export function SettingsPage() {
       <InstallAppSection />
 
       <MyReportsSection />
+
+      <PasswordSection />
 
       <AccountDataSection />
 

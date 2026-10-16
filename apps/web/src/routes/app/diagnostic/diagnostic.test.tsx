@@ -237,6 +237,30 @@ describe('DiagnosticPage — question', () => {
     expect(run.skip).toHaveBeenCalledWith('vocabulary', 'too_hard');
   });
 
+  it('says the other skills still follow when some are left', async () => {
+    renderAt(makeRun());
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua kỹ năng này' }));
+    expect(await screen.findByRole('dialog')).toHaveAccessibleDescription(/Bạn vẫn làm tiếp các phần còn lại\.$/);
+  });
+
+  it('says the test ends when the last skill is skipped', async () => {
+    const progress = {
+      ...PROGRESS,
+      skills: [
+        { skill: 'vocabulary' as const, status: 'active' as const, fill: 0.4 },
+        { skill: 'grammar' as const, status: 'done' as const, fill: 1 },
+        { skill: 'reading' as const, status: 'skipped' as const, fill: 0 },
+      ],
+    };
+    renderAt(makeRun({ progress }));
+    await userEvent.click(screen.getByRole('button', { name: 'Bỏ qua kỹ năng này' }));
+    const dialog = await screen.findByRole('dialog');
+    expect(dialog).toHaveAccessibleDescription(
+      'Kết quả sẽ ghi “chưa đủ dữ liệu” cho kỹ năng này. Đây là phần cuối nên bài kiểm tra sẽ kết thúc và bạn xem kết quả ngay.',
+    );
+    expect(within(dialog).queryByText(/các phần còn lại/)).toBeNull();
+  });
+
   it('closes the skip sheet without skipping', async () => {
     const run = makeRun();
     renderAt(run);

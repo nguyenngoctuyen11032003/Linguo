@@ -1,4 +1,4 @@
-import { Fragment, useMemo, useRef } from 'react';
+import { Fragment, useId, useMemo, useRef } from 'react';
 import type { AnswerLang, FillBlankPrompt } from '@linguo/shared';
 import { AnswerInput } from './AnswerInput';
 import { parseTemplate } from './exercise-utils';
@@ -17,6 +17,13 @@ export function FillBlankExercise({ prompt, lang, values, onChange, onSubmitRequ
   const parts = useMemo(() => parseTemplate(prompt.template), [prompt.template]);
   const inputs = useRef<Record<string, HTMLInputElement | null>>({});
   const blankIds = prompt.blanks.map((b) => b.id);
+  const sentenceId = useId();
+  /** The whole sentence with every blank as an ellipsis: each input's description, since its label is only its number. */
+  const sentence = parts
+    .map((part) => (part.kind === 'text' ? part.text : '…'))
+    .join('')
+    .replace(/\s+/g, ' ')
+    .trim();
 
   return (
     <p lang={lang} className="min-w-0 text-[18px] leading-[3.25rem] break-words">
@@ -32,6 +39,7 @@ export function FillBlankExercise({ prompt, lang, values, onChange, onSubmitRequ
               inputs.current[part.id] = el;
             }}
             aria-label={`Chỗ trống ${index + 1}`}
+            aria-describedby={sentenceId}
             lang={lang}
             value={values[part.id] ?? ''}
             onValueChange={(v) => onChange({ ...values, [part.id]: v })}
@@ -46,6 +54,9 @@ export function FillBlankExercise({ prompt, lang, values, onChange, onSubmitRequ
           />
         );
       })}
+      <span id={sentenceId} hidden>
+        {sentence}
+      </span>
     </p>
   );
 }

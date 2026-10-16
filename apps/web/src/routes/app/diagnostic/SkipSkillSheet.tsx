@@ -16,6 +16,8 @@ const REASONS = Object.entries(SKIP_REASON_LABELS).map(([id, text]) => ({
 interface Props {
   open: boolean;
   skillLabel: string;
+  /** No other skill is left to test: skipping this one ends the test. */
+  last?: boolean;
   busy: boolean;
   onClose: () => void;
   onSkip: (reason: SkipReason) => void;
@@ -23,7 +25,7 @@ interface Props {
 }
 
 /** Bottom sheet: pick why the skill is skipped; the report then shows it as "chưa đủ dữ liệu". */
-export function SkipSkillSheet({ open, skillLabel, busy, onClose, onSkip, triggerRef }: Props) {
+export function SkipSkillSheet({ open, skillLabel, last = false, busy, onClose, onSkip, triggerRef }: Props) {
   const { reduceMotion } = useMotionPrefs();
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -69,7 +71,8 @@ export function SkipSkillSheet({ open, skillLabel, busy, onClose, onSkip, trigge
               Bỏ qua phần {skillLabel.toLowerCase()}?
             </h2>
             <p id={descriptionId} className="mt-1 text-[15px] text-muted">
-              Kết quả sẽ ghi “chưa đủ dữ liệu” cho kỹ năng này. Bạn vẫn làm tiếp các phần còn lại.
+              Kết quả sẽ ghi “chưa đủ dữ liệu” cho kỹ năng này.{' '}
+              {last ? 'Đây là phần cuối nên bài kiểm tra sẽ kết thúc và bạn xem kết quả ngay.' : 'Bạn vẫn làm tiếp các phần còn lại.'}
             </p>
             <p id={legendId} className="mt-4 text-sm font-semibold">
               Vì sao bạn muốn bỏ qua?

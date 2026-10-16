@@ -3,8 +3,22 @@ import type { SessionMistake } from '@/features/session/service';
 
 const TAG_RE = /^[a-z][a-z0-9_]{0,39}$/;
 const clamp = (n: number, max: number) => Math.max(0, Math.min(max, Math.round(n)));
-/** Whole minutes; a started minute counts once something was done (same rule as the completion screen). */
+/** Whole minutes for display: rounded, and a started minute counts once something was done (at least 1). */
 const minutesOf = (seconds: number) => (seconds <= 0 ? 0 : Math.max(1, Math.round(seconds / 60)));
+
+/** Minutes spent in the session, as the completion screen, the AI request and its fallback all show them. */
+export function sessionMinutes(session: StudySession): number {
+  return minutesOf(session.plan.activities.reduce((sum, a) => sum + a.seconds_spent, 0));
+}
+
+/** What the learner still reads when the AI cannot write the recap: the completion screen's numbers, no AI. */
+export function sessionSummaryFallback(session: StudySession): { title: string; body: string } {
+  const { activities } = session.plan;
+  const done = activities.filter((a) => a.status === 'done').length;
+  const minutes = sessionMinutes(session);
+  const time = minutes > 0 ? `, khoảng ${minutes} phút` : '';
+  return { title: 'Phiên học hôm nay', body: `Bạn đã hoàn thành ${done}/${activities.length} hoạt động${time}.` };
+}
 
 /**
  * The compact summary `summarize_session` receives (spec 8.2 #9): per activity only its kind, status and minutes,
@@ -21,7 +35,6 @@ export function buildSessionSummaryRequest(
     status: a.status,
     minutes: clamp(a.status === 'done' ? minutesOf(a.seconds_spent) : a.minutes, 120),
   }));
-  const spent = session.plan.activities.reduce((sum, a) => sum + a.seconds_spent, 0);
 
   const counts = new Map<string, number>();
   for (const m of mistakes) {
@@ -36,7 +49,7 @@ export function buildSessionSummaryRequest(
     task: 'summarize_session',
     language: learner.language,
     level: learner.level,
-    minutes: clamp(minutesOf(spent), 300),
+    minutes: clamp(sessionMinutes(session), 300),
     activities,
     error_tags,
   };

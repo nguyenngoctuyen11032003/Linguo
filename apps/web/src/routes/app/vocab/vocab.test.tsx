@@ -163,6 +163,17 @@ describe('PersonalListPage', () => {
     expect(screen.getByRole('link', { name: 'Ôn danh sách này' })).toHaveAttribute('href', `/app/tu-vung-cua-toi/${LIST_ID}/on-tap`);
   });
 
+  it('shows the pronunciation column from sm up, with a placeholder when a word has none', async () => {
+    words = [personalWord({ term: '사과', meaning: 'quả táo', pronunciation: 'sagwa' }), personalWord({ term: '학교', meaning: 'trường học' })];
+    open();
+    const table = await screen.findByRole('table', { name: /Danh sách 2 từ/ });
+    const header = within(table).getByRole('columnheader', { name: 'Phát âm' });
+    expect(header).toHaveClass('hidden', 'sm:table-cell');
+    const cell = within(table).getByRole('cell', { name: 'sagwa' });
+    expect(cell).toHaveClass('hidden', 'sm:table-cell');
+    expect(within(table).getByRole('cell', { name: 'Chưa có' })).toHaveClass('hidden', 'sm:table-cell');
+  });
+
   it('shows a not-found state for an unknown list', async () => {
     renderWithProviders(
       <Routes>

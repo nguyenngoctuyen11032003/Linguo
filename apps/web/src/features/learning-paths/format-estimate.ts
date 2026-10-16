@@ -6,22 +6,32 @@ const WEEKS_PER_YEAR = 365.25 / 7;
 const MAX_WEEKS_AS_WEEKS = 12;
 const TWO_YEARS_IN_WEEKS = 104;
 
-function range(min: number, max: number, unit: string): string {
-  return min === max ? `khoảng ${min} ${unit}` : `khoảng ${min}–${max} ${unit}`;
+export interface EstimateRange {
+  min: number;
+  max: number;
+  unit: 'tuần' | 'tháng' | 'năm';
 }
 
 /**
- * Human-sized wording for a weeks range: "khoảng 8–12 tuần", "khoảng 6–9 tháng", "khoảng 5–8 năm". The unit follows
- * the upper bound so a long plan is never shown as hundreds of weeks. Still an estimate: the caller labels it as one.
- * `capitalize` upper-cases the first letter for use at the start of a sentence.
+ * The numbers and unit behind `formatEstimate`: weeks up to 12, months below two years, years beyond. The unit follows
+ * the upper bound so a long plan is never shown as hundreds of weeks.
  */
-export function formatEstimate(weeksMin: number, weeksMax: number, options: { capitalize?: boolean } = {}): string {
+export function estimateRange(weeksMin: number, weeksMax: number): EstimateRange {
   const lo = Math.min(weeksMin, weeksMax);
   const hi = Math.max(weeksMin, weeksMax);
-  let text: string;
-  if (hi <= MAX_WEEKS_AS_WEEKS) text = range(lo, hi, 'tuần');
-  else if (hi < TWO_YEARS_IN_WEEKS) text = range(Math.round(lo / WEEKS_PER_MONTH), Math.round(hi / WEEKS_PER_MONTH), 'tháng');
-  else text = range(Math.round(lo / WEEKS_PER_YEAR), Math.round(hi / WEEKS_PER_YEAR), 'năm');
+  if (hi <= MAX_WEEKS_AS_WEEKS) return { min: lo, max: hi, unit: 'tuần' };
+  if (hi < TWO_YEARS_IN_WEEKS) return { min: Math.round(lo / WEEKS_PER_MONTH), max: Math.round(hi / WEEKS_PER_MONTH), unit: 'tháng' };
+  return { min: Math.round(lo / WEEKS_PER_YEAR), max: Math.round(hi / WEEKS_PER_YEAR), unit: 'năm' };
+}
+
+/**
+ * Human-sized wording for a weeks range: "khoảng 8–12 tuần", "khoảng 6–9 tháng", "khoảng 5–8 năm" (see
+ * `estimateRange`). Still an estimate: the caller labels it as one. `capitalize` upper-cases the first letter for use
+ * at the start of a sentence.
+ */
+export function formatEstimate(weeksMin: number, weeksMax: number, options: { capitalize?: boolean } = {}): string {
+  const { min, max, unit } = estimateRange(weeksMin, weeksMax);
+  const text = min === max ? `khoảng ${min} ${unit}` : `khoảng ${min}–${max} ${unit}`;
   return options.capitalize ? text.charAt(0).toUpperCase() + text.slice(1) : text;
 }
 

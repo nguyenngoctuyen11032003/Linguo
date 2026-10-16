@@ -86,7 +86,7 @@ async function setup(page: Page, stubs: MediaStubs, path: Record<string, unknown
 
 async function openSpeaking(page: Page) {
   await page.goto('/app/luyen-noi');
-  await expect(page.getByRole('heading', { level: 1, name: 'Luyện nói' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Luyện nói' })).toBeVisible({ timeout: 15_000 }); // lazy chunk + paths load slowly on WebKit under load
   // Loading waits for the profile, the paths and the lesson RPCs; allow for slow CI devices.
   await expect(page.getByRole('heading', { level: 2, name: 'Nhắc lại câu' })).toBeVisible({ timeout: 15_000 });
   await settleAnimations(page);

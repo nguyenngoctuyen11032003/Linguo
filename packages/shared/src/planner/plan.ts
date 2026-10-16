@@ -19,6 +19,8 @@ const LONG_BREAK_DAYS = 4;
 const SHORT_SESSION = 15;
 const RECAP_FROM = 30;
 const FALLBACK_MINUTES = 5;
+/** Matches a focus line that quotes card counts. */
+const DIGIT = /\d/;
 
 const PRIORITY = { overdue: 90, inProgress: 80, due: 75, lesson: 60, weakBase: 50, recap: 10 } as const;
 
@@ -330,11 +332,48 @@ export function shortenPlan(plan: SessionPlan, minutes: number): SessionPlan {
     }
     const trimmed: SessionActivity = { ...a, minutes: remaining };
     if (a.kind === 'review' && a.review_limit !== null) {
-      trimmed.review_limit = Math.max(1, Math.floor((a.review_limit * remaining) / a.minutes));
+      const limit = Math.max(1, Math.floor((a.review_limit * remaining) / a.minutes));
+      if (limit !== a.review_limit) {
+        trimmed.review_limit = limit;
+        // The original reason quotes the card counts of the full plan (which the plan does not keep).
+        trimmed.reason_vi = trimmedReviewReason(limit);
+      }
     }
     kept.set(i, trimmed);
     remaining = 0;
   }
   const activities = [...kept.entries()].sort(([x], [y]) => x - y).map(([, a]) => a);
-  return { ...plan, minutes: clampMinutes(finishedMinutes + total), activities };
+  return {
+    ...plan,
+    minutes: clampMinutes(finishedMinutes + total),
+    activities,
+    focus_vi: shortenedFocus(plan, activities),
+  };
+}
+
+function trimmedReviewReason(limit: number): string {
+  return `Phiên đã rút gọn: hôm nay ôn ${limit} thẻ quan trọng nhất, phần còn lại để lần sau`;
+}
+
+/**
+ * The focus line of a shortened plan. A focus that quotes card counts ("Ôn 20 thẻ đến hạn…") no longer holds once
+ * the pending review is trimmed or dropped: rebuild it from the review that is left. Other focus lines stay.
+ */
+function shortenedFocus(plan: SessionPlan, activities: SessionActivity[]): string {
+  const before = plan.activities.find((a) => a.kind === 'review' && a.status === 'pending');
+  if (!before || !DIGIT.test(plan.focus_vi)) return plan.focus_vi;
+  const after = activities.find((a) => a.id === before.id);
+  if (after && after.review_limit === before.review_limit) return plan.focus_vi;
+  const pendingLessons = activities.filter((a) => a.status === 'pending' && (a.kind === 'lesson' || a.kind === 'practice'));
+  const resume = pendingLessons.some((a) => a.kind === 'lesson' && a.priority === PRIORITY.inProgress);
+  if (after && after.review_limit !== null) {
+    const cards = `${after.review_limit} thẻ quan trọng nhất`;
+    return pendingLessons.length > 0
+      ? `Ôn ${cards}, rồi ${resume ? 'học tiếp bài đang dở' : 'học bài mới'}`
+      : `Ôn ${cards} trước, phần còn lại để lần sau`;
+  }
+  if (pendingLessons.length > 0) {
+    return resume ? 'Phiên ngắn: học tiếp bài đang dở, thẻ ôn để lần sau' : 'Phiên ngắn: dành thời gian cho bài học, thẻ ôn để lần sau';
+  }
+  return 'Phiên ngắn: xem lại nhẹ nhàng là đủ, thẻ ôn để lần sau';
 }

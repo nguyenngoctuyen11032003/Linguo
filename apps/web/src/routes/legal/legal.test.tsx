@@ -27,7 +27,10 @@ describe('LegalPage', () => {
     expect(screen.getByText(/Hộp thông báo nhắc học tự xoá sau 90 ngày/)).toBeInTheDocument();
     expect(screen.getByText(/hết hạn sau 30 ngày/)).toBeInTheDocument();
     expect(screen.getByText(/tải toàn bộ dữ liệu của mình dưới dạng tệp JSON/)).toBeInTheDocument();
-    expect(screen.getByText(new RegExp(CONTACT_EMAIL.replace('.', '\\.')))).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: CONTACT_EMAIL })).toHaveAttribute('href', `mailto:${CONTACT_EMAIL}`);
+    expect(screen.getByRole('link', { name: CONTACT_EMAIL }).closest('p')).toHaveTextContent(
+      `Mọi câu hỏi hoặc yêu cầu về dữ liệu, hãy gửi email tới ${CONTACT_EMAIL}. Chúng tôi trả lời bằng tiếng Việt.`,
+    );
     expect(screen.queryByText(/Bản nháp/)).not.toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Xem Điều khoản sử dụng' })).toHaveAttribute('href', '/dieu-khoan');
     expect(screen.getByRole('link', { name: 'Trang chủ' })).toHaveAttribute('href', '/');
@@ -39,5 +42,6 @@ describe('LegalPage', () => {
     expect(screen.getByText(/là gợi ý học tập, không phải đáp án chính thức/)).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Giới hạn trách nhiệm' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Xem Quyền riêng tư' })).toHaveAttribute('href', '/quyen-rieng-tu');
+    expect(screen.getByRole('link', { name: CONTACT_EMAIL })).toHaveAttribute('href', `mailto:${CONTACT_EMAIL}`);
   });
 });

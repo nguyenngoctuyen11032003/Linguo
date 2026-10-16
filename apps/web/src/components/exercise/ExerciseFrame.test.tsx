@@ -278,6 +278,13 @@ describe('ExerciseFrame — fill_blank', () => {
     expect(onSubmit).toHaveBeenCalledWith({ blanks: { b1: 'am', b2: 'is' } }, expect.objectContaining({ hintCount: 0 }));
   });
 
+  it('describes every blank with the whole sentence, blanks shown as "…"', () => {
+    setup(makeExercise('fill_blank'));
+    for (const name of ['Chỗ trống 1', 'Chỗ trống 2']) {
+      expect(screen.getByRole('textbox', { name })).toHaveAccessibleDescription('I … a student and she … a teacher.');
+    }
+  });
+
   it('reveals hints progressively in recognition and counts them', async () => {
     const { onSubmit } = setup(makeExercise('fill_blank'));
     await userEvent.click(screen.getByRole('button', { name: 'Gợi ý (1/2)' }));

@@ -177,6 +177,9 @@ export function PersonalListPage() {
                 <th scope="col" className="px-3 py-3 font-semibold">
                   Từ
                 </th>
+                <th scope="col" className="hidden px-3 py-3 font-semibold sm:table-cell">
+                  Phát âm
+                </th>
                 <th scope="col" className="px-3 py-3 font-semibold">
                   Nghĩa
                 </th>
@@ -193,6 +196,14 @@ export function PersonalListPage() {
                 <tr key={word.id} className="border-t border-border align-top">
                   <td className="break-words px-3 py-3 font-semibold" lang={list.language_code}>
                     {word.term}
+                  </td>
+                  <td className="hidden break-words px-3 py-3 text-muted sm:table-cell">
+                    {word.pronunciation ?? (
+                      <>
+                        <span aria-hidden>—</span>
+                        <span className="sr-only">Chưa có</span>
+                      </>
+                    )}
                   </td>
                   <td className="break-words px-3 py-3">
                     {word.meaning}

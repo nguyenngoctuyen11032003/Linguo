@@ -26,7 +26,7 @@ export function setSectionOpen(id: string, open: boolean): void {
 }
 
 /** Settings sections that start folded. */
-export const COLLAPSIBLE_SECTION_IDS: readonly string[] = ['bao-loi', 'tai-khoan-du-lieu'];
+export const COLLAPSIBLE_SECTION_IDS: readonly string[] = ['bao-loi', 'mat-khau', 'tai-khoan-du-lieu'];
 
 /** Opens the section if it is folded, scrolls to it and puts keyboard focus on its heading. */
 export function jumpToSection(id: string): void {

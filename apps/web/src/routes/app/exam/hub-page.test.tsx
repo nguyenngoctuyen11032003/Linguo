@@ -2,7 +2,7 @@ import { screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { ExamFormSummary, ExamHistoryEntry } from '@linguo/shared';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { examAttempt, examHistory, topikIForm, topikIIForm } from '@/features/exam/exam-fixtures';
+import { examAttempt, examHistory, examHistoryAttemptId, topikIForm, topikIIForm } from '@/features/exam/exam-fixtures';
 import type { LearningPath } from '@/features/learning-paths/service';
 import { TEST_KO_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
@@ -190,6 +190,90 @@ describe('ExamHubPage', () => {
     renderWithProviders(<ExamHubPage />, { route: '/app/luyen-thi', paths: { paths: [], currentId: null } });
     expect(screen.getByRole('heading', { name: 'Bạn chưa có lộ trình' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Tạo lộ trình' })).toHaveAttribute('href', '/app/bat-dau');
+  });
+
+  describe('with an attempt in progress', () => {
+    const OPEN_ID = examHistoryAttemptId(9);
+    const openEntry: ExamHistoryEntry = {
+      attempt_id: OPEN_ID,
+      form_title_vi: 'TOPIK II — Đề mini số 1',
+      family: 'topik_ii',
+      mode: 'section',
+      section: 'listening',
+      status: 'in_progress',
+      started_at: '2026-10-12T08:00:00.000Z',
+      submitted_at: null,
+      total: null,
+      max: null,
+      estimated_level_code: null,
+      scoring_verified: false,
+    };
+
+    beforeEach(() => {
+      mocks.history = { status: 'ready', entries: [openEntry, ...examHistory()], error: null, reload: vi.fn() };
+    });
+
+    it('names the open attempt before a start would expire it, focusing "Làm tiếp bài đang dở"', async () => {
+      const user = userEvent.setup();
+      renderHub();
+      await user.click(screen.getByRole('button', { name: 'Luyện theo phần' }));
+      await user.click(screen.getByRole('button', { name: 'Luyện phần Đọc' }));
+      const dialog = screen.getByRole('alertdialog', { name: 'Bạn đang làm dở một bài' });
+      expect(dialog).toHaveAccessibleDescription(/TOPIK II — Đề mini số 1 · Luyện theo phần · Nghe/);
+      expect(mocks.startExam).not.toHaveBeenCalled();
+      const resume = within(dialog).getByRole('link', { name: 'Làm tiếp bài đang dở' });
+      expect(resume).toHaveFocus();
+      await user.click(resume);
+      await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(`/app/luyen-thi/lam-bai/${OPEN_ID}`));
+      expect(mocks.startExam).not.toHaveBeenCalled();
+    });
+
+    it('starts the new attempt on "Bắt đầu bài mới"', async () => {
+      const user = userEvent.setup();
+      mocks.startExam.mockResolvedValue(examAttempt({ mode: 'section', section: 'reading', deadline_at: null }));
+      renderHub();
+      await user.click(screen.getByRole('button', { name: 'Luyện theo phần' }));
+      await user.click(screen.getByRole('button', { name: 'Luyện phần Đọc' }));
+      await user.click(within(screen.getByRole('alertdialog')).getByRole('button', { name: 'Bắt đầu bài mới' }));
+      expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), expect.objectContaining({ mode: 'section', section: 'reading' }));
+      await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(`/app/luyen-thi/lam-bai/${examAttempt().attempt_id}`));
+    });
+
+    it('still asks about the clock of a timed full mock after "Bắt đầu bài mới"', async () => {
+      const user = userEvent.setup();
+      mocks.startExam.mockResolvedValue(examAttempt());
+      renderHub();
+      await user.click(screen.getByRole('button', { name: /Thi thử toàn bài/ }));
+      expect(screen.queryByRole('dialog', { name: 'Bắt đầu thi thử?' })).not.toBeInTheDocument();
+      await user.click(within(screen.getByRole('alertdialog')).getByRole('button', { name: 'Bắt đầu bài mới' }));
+      const timed = await screen.findByRole('dialog', { name: 'Bắt đầu thi thử?' });
+      expect(mocks.startExam).not.toHaveBeenCalled();
+      await user.click(within(timed).getByRole('button', { name: 'Bắt đầu' }));
+      expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), expect.objectContaining({ mode: 'full' }));
+    });
+
+    it('asks before a question type drill and returns focus to the trigger on Escape', async () => {
+      const user = userEvent.setup();
+      renderHub();
+      await user.click(screen.getByRole('button', { name: 'Luyện theo dạng câu' }));
+      const pick = within(screen.getByRole('region', { name: /Chọn dạng câu/ })).getByRole('button', { name: /Đọc — chủ đề/ });
+      await user.click(pick);
+      expect(screen.getByRole('alertdialog', { name: 'Bạn đang làm dở một bài' })).toBeInTheDocument();
+      await user.keyboard('{Escape}');
+      await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
+      expect(pick).toHaveFocus();
+      expect(mocks.startExam).not.toHaveBeenCalled();
+    });
+  });
+
+  it('starts directly when the history has no attempt in progress', async () => {
+    const user = userEvent.setup();
+    mocks.startExam.mockResolvedValue(examAttempt({ mode: 'section', section: 'reading', deadline_at: null }));
+    renderHub();
+    await user.click(screen.getByRole('button', { name: 'Luyện theo phần' }));
+    await user.click(screen.getByRole('button', { name: 'Luyện phần Đọc' }));
+    expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument();
+    expect(mocks.startExam).toHaveBeenCalled();
   });
 
   it('shows every family when the goal has no exam family', () => {

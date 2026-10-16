@@ -110,8 +110,10 @@ describe('SettingsPage', () => {
     await userEvent.click(name);
     await userEvent.paste('a'.repeat(61));
     await userEvent.click(screen.getByRole('button', { name: 'Lưu hồ sơ' }));
-    expect(screen.getByText('Tên hiển thị tối đa 60 ký tự.')).toBeInTheDocument();
+    expect(screen.getByText('Tên hiển thị tối đa 60 ký tự.')).toHaveAttribute('role', 'alert');
     expect(mocks.updateProfile).not.toHaveBeenCalled();
+    await waitFor(() => expect(name).toHaveFocus());
+    expect(name).toHaveAttribute('aria-invalid', 'true');
   });
 
   it('applies the theme immediately and persists it', async () => {
@@ -345,7 +347,7 @@ describe('SettingsPage', () => {
     const labels = within(nav)
       .getAllByRole('link')
       .map((link) => link.textContent);
-    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Báo lỗi của tôi', 'Tài khoản và dữ liệu']);
+    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Báo lỗi của tôi', 'Mật khẩu', 'Tài khoản và dữ liệu']);
     for (const label of labels) {
       expect(screen.getByRole('heading', { level: 2, name: label! })).toBeInTheDocument();
     }
@@ -372,7 +374,7 @@ describe('SettingsPage', () => {
 
   it('folds the rarely used sections behind labelled disclosure buttons', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
-    for (const name of ['Báo lỗi của tôi', 'Tài khoản và dữ liệu']) {
+    for (const name of ['Báo lỗi của tôi', 'Mật khẩu', 'Tài khoản và dữ liệu']) {
       const heading = screen.getByRole('heading', { level: 2, name });
       const details = heading.closest('details');
       expect(details).not.toBeNull();

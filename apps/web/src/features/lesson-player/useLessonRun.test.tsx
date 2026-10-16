@@ -91,7 +91,8 @@ describe('useLessonRun', () => {
     expect(hook.current.api.steps).toHaveLength(8);
     expect(hook.current.api.stepIndex).toBe(0);
     expect(hook.current.api.step).toEqual({ kind: 'objective' });
-    expect(hook.current.location.search).toBe('?buoc=1');
+    // The URL is mirrored by an effect after the run loads, so it can trail the ready state by a render.
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=1'));
   });
 
   it('starts a run when there is no open one', async () => {
@@ -154,7 +155,7 @@ describe('useLessonRun', () => {
     expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle');
     expect(hook.current.api.completeResult).toBeNull();
     expect(hook.current.api.stepIndex).toBe(0);
-    expect(hook.current.location.search).toBe('?buoc=1');
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=1'));
 
     // A later reload of the same lesson does not start yet another run.
     act(() => hook.current.api.retry());
@@ -202,6 +203,24 @@ describe('useLessonRun', () => {
     // Clamped to the summary: the next review step needs a completed lesson.
     expect(clamped.current.api.stepIndex).toBe(6);
     expect(clamped.current.location.search).toBe('?buoc=7');
+  });
+
+  it('replaces a ?buoc= changed after loading with the step it was clamped to', async () => {
+    installClient({ get_lesson: () => ({ data: payload() }), save_lesson_cursor: () => ({ data: null }) });
+    const { result: hook } = renderRun(`/app/hoc-tap/bai/${LESSON_ID}?buoc=2`);
+    await ready(hook);
+    // The next review step of an unfinished lesson lands on the summary, and the URL says so.
+    act(() => hook.current.navigate(`/app/hoc-tap/bai/${LESSON_ID}?buoc=8`));
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=7'));
+    expect(hook.current.api.stepIndex).toBe(6);
+    // Out of range: clamped, and replaced rather than pushed (back returns to ?buoc=2).
+    act(() => hook.current.navigate(`/app/hoc-tap/bai/${LESSON_ID}?buoc=99`));
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=7'));
+    act(() => hook.current.navigate(-1));
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=7'));
+    act(() => hook.current.navigate(-1));
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=2'));
+    expect(hook.current.api.stepIndex).toBe(1);
   });
 
   it('navigates steps, follows browser history and saves the cursor (debounced, only forward)', async () => {

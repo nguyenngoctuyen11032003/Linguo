@@ -288,9 +288,23 @@ export function useLessonRun(lessonId: string): LessonRunApi {
       if (value !== pendingStepParam.current) return;
       pendingStepParam.current = null;
     }
-    const { state: current } = latest.current;
+    const { state: current, setSearchParams: setParams } = latest.current;
     const index = parseStepParam(value, current.steps.length);
-    if (index !== null && index !== current.stepIndex) dispatch({ type: 'goto', index });
+    if (index === null) return;
+    const target = reachableStep(index, current.steps, current.completeResult !== null);
+    if (target !== current.stepIndex) dispatch({ type: 'goto', index: target });
+    // Out of range, or the next review step of an unfinished lesson: the URL names the step actually shown. Only
+    // while the loaded run is this lesson's (the loading effect clears the key first when the lesson changes).
+    if (value !== String(target + 1) && cacheKeyRef.current !== null) {
+      setParams(
+        (prev) => {
+          const next = new URLSearchParams(prev);
+          next.set(STEP_PARAM, String(target + 1));
+          return next;
+        },
+        { replace: true },
+      );
+    }
   }, [ready, searchParams]);
 
   const goTo = useCallback((index: number) => {

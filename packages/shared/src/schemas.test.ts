@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  changePasswordSchema,
   fieldErrors,
   isValidTimeZone,
   preferencesUpdateSchema,
@@ -79,5 +80,31 @@ describe('constants', () => {
     expect(SKILLS).toHaveLength(6);
     expect(LANGUAGES.en.available).toBe(true);
     expect(LANGUAGES.ko.available).toBe(true);
+  });
+});
+
+describe('changePasswordSchema', () => {
+  it('accepts a different new password of at least 8 characters, confirmed', () => {
+    expect(changePasswordSchema.safeParse({ current: 'old-secret', password: 'new-secret-1', confirm: 'new-secret-1' }).success).toBe(true);
+  });
+
+  it('asks for the current password and applies the sign-up length rule', () => {
+    const parsed = changePasswordSchema.safeParse({ current: '', password: 'short', confirm: 'short' });
+    expect(parsed.success).toBe(false);
+    if (!parsed.success) {
+      expect(fieldErrors(parsed.error)).toEqual({ current: 'Vui lòng nhập mật khẩu hiện tại.', password: 'Mật khẩu cần ít nhất 8 ký tự.' });
+    }
+  });
+
+  it('rejects a mismatched confirmation', () => {
+    const parsed = changePasswordSchema.safeParse({ current: 'old-secret', password: 'new-secret-1', confirm: 'new-secret-2' });
+    expect(parsed.success).toBe(false);
+    if (!parsed.success) expect(fieldErrors(parsed.error)).toEqual({ confirm: 'Mật khẩu nhập lại không khớp.' });
+  });
+
+  it('rejects a new password equal to the current one', () => {
+    const parsed = changePasswordSchema.safeParse({ current: 'old-secret', password: 'old-secret', confirm: 'old-secret' });
+    expect(parsed.success).toBe(false);
+    if (!parsed.success) expect(fieldErrors(parsed.error)).toEqual({ password: 'Mật khẩu mới phải khác mật khẩu hiện tại.' });
   });
 });

@@ -396,6 +396,65 @@ describe('shortenPlan', () => {
     expect(sr.review_limit).toBe(Math.floor((r.review_limit! * 10) / r.minutes));
   });
 
+  it('rewrites the review reason and the focus around the trimmed review_limit', () => {
+    const p = planSession(base({ due_count: 400, overdue_count: 300 }), 60);
+    const r = p.activities.find((a) => a.kind === 'review')!;
+    expect(p.focus_vi).toContain(`${r.review_limit} thẻ`);
+    const s = shortenPlan(p, 10);
+    const sr = s.activities[0]!;
+    expect(sr.review_limit).toBeLessThan(r.review_limit!);
+    expect(sr.reason_vi).toBe(`Phiên đã rút gọn: hôm nay ôn ${sr.review_limit} thẻ quan trọng nhất, phần còn lại để lần sau`);
+    expect(s.focus_vi).toBe(`Ôn ${sr.review_limit} thẻ quan trọng nhất trước, phần còn lại để lần sau`);
+    // Every number left in the texts is the new limit.
+    for (const text of [sr.reason_vi, s.focus_vi]) expect(text.match(/\d+/g)).toEqual([String(sr.review_limit)]);
+    // Shortening again keeps the texts in step.
+    const again = shortenPlan(s, 5);
+    expect(again.activities[0]!.reason_vi).toContain(`ôn ${again.activities[0]!.review_limit} thẻ`);
+    expect(again.focus_vi).toContain(`Ôn ${again.activities[0]!.review_limit} thẻ`);
+  });
+
+  it('mentions the lesson that follows a trimmed review', () => {
+    // An in-progress lesson outranks a review without overdue cards, so the review is the one trimmed.
+    const p = planSession(
+      base({ due_count: 100, overdue_count: 0, new_card_count: 0, next_lessons: [L(1, { run_status: 'in_progress' }), L(2)] }),
+      30,
+    );
+    const r = p.activities.find((a) => a.kind === 'review')!;
+    const lessonMinutes = p.activities.find((a) => a.kind === 'lesson')!.minutes;
+    const s = shortenPlan(p, lessonMinutes + Math.floor(r.minutes / 2));
+    const sr = s.activities.find((a) => a.kind === 'review');
+    expect(sr).toBeDefined();
+    expect(sr!.review_limit).toBeLessThan(r.review_limit!);
+    expect(s.activities.some((a) => a.kind === 'lesson')).toBe(true);
+    expect(s.focus_vi).toBe(`Ôn ${sr!.review_limit} thẻ quan trọng nhất, rồi học tiếp bài đang dở`);
+  });
+
+  it('drops the card count from the focus when the review itself is dropped', () => {
+    const p = planSession(base({ due_count: 20, overdue_count: 0, new_card_count: 0 }), 30);
+    expect(p.focus_vi).toMatch(/\d/);
+    const review = p.activities.find((a) => a.kind === 'review')!;
+    // Lessons outrank the review here, so a budget of one lesson leaves the review out.
+    const lessonFirst: SessionPlan = {
+      ...p,
+      activities: p.activities.map((a) => (a.kind === 'lesson' ? { ...a, priority: 99 } : a)),
+    };
+    const lessonMinutes = lessonFirst.activities.find((a) => a.kind === 'lesson')!.minutes;
+    const s = shortenPlan(lessonFirst, lessonMinutes);
+    expect(s.activities.some((a) => a.id === review.id)).toBe(false);
+    expect(s.focus_vi).not.toMatch(/\d/);
+    expect(s.focus_vi).toBe('Phiên ngắn: dành thời gian cho bài học, thẻ ôn để lần sau');
+  });
+
+  it('keeps the texts when the review keeps its limit', () => {
+    const p = planSession(base(), 60);
+    const s = shortenPlan(p, 30);
+    const r = p.activities.find((a) => a.kind === 'review')!;
+    const sr = s.activities.find((a) => a.id === r.id);
+    expect(sr?.review_limit).toBe(r.review_limit);
+    expect(sr!.reason_vi).toBe(r.reason_vi);
+    expect(s.focus_vi).toBe(p.focus_vi);
+  });
+
   it('is a no-op on the activities when the plan already fits', () => {
     const p = planSession(base(), 30);
     expect(shortenPlan(p, 30).activities).toEqual(p.activities);

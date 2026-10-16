@@ -1,6 +1,6 @@
 import { aiRequestSchema, type StudySession } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
-import { buildSessionSummaryRequest } from './session-summary';
+import { buildSessionSummaryRequest, sessionMinutes, sessionSummaryFallback } from './session-summary';
 import type { SessionMistake } from '@/features/session/service';
 
 const ID = '11111111-1111-4111-8111-111111111111';
@@ -98,5 +98,31 @@ describe('buildSessionSummaryRequest', () => {
     expect(req.activities.length).toBeLessThanOrEqual(12);
     expect(req.minutes).toBeLessThanOrEqual(300);
     expect(aiRequestSchema.safeParse(req).success).toBe(true);
+  });
+});
+
+describe('sessionSummaryFallback', () => {
+  it('shows the completion screen minutes: a short session is 1 minute, never "khoảng 0 phút"', () => {
+    const s = session([
+      { kind: 'review', status: 'done', minutes: 5, seconds: 20 },
+      { kind: 'lesson', status: 'skipped', minutes: 10, seconds: 0 },
+    ]);
+    expect(sessionMinutes(s)).toBe(1);
+    expect(sessionSummaryFallback(s)).toEqual({ title: 'Phiên học hôm nay', body: 'Bạn đã hoàn thành 1/2 hoạt động, khoảng 1 phút.' });
+    expect(buildSessionSummaryRequest(s, learner, []).minutes).toBe(1);
+  });
+
+  it('rounds like the completion screen', () => {
+    const s = session([
+      { kind: 'review', status: 'done', minutes: 5, seconds: 150 },
+      { kind: 'lesson', status: 'done', minutes: 10, seconds: 400 },
+    ]);
+    expect(sessionMinutes(s)).toBe(9);
+    expect(sessionSummaryFallback(s).body).toBe('Bạn đã hoàn thành 2/2 hoạt động, khoảng 9 phút.');
+  });
+
+  it('leaves the minutes out when no time was spent', () => {
+    const s = session([{ kind: 'review', status: 'skipped', minutes: 5, seconds: 0 }]);
+    expect(sessionSummaryFallback(s).body).toBe('Bạn đã hoàn thành 0/1 hoạt động.');
   });
 });
