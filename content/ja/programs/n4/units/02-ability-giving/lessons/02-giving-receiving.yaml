@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-giving-receiving
+order_index: 2
+level: n4
+title:
+  vi: Cho và nhận - あげる, もらう, くれる
+objectives:
+  - vi: Chọn đúng あげる, もらう, くれる theo hướng của món quà.
+  - vi: Dùng đúng trợ từ に, から, が với người cho và người nhận.
+  - vi: Kể về quà sinh nhật, quà lưu niệm.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, reading]
+prerequisites: [ja:lesson:n4-potential]
+items:
+  - item: ja:item:n4-gram-ageru
+  - item: ja:item:n4-gram-morau
+  - item: ja:item:n4-gram-kureru
+  - item: ja:item:n4-purezento
+  - item: ja:item:n4-tanjoubi
+  - item: ja:item:n4-omiyage
+  - item: ja:item:n4-hana
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "Tôi tặng hoa cho mẹ", "Tôi được bạn tặng đồng hồ" và "Bạn đã cho tôi quà Kyoto" mà không nhầm hướng cho - nhận.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần một chữ "cho/tặng", còn tiếng Nhật có ba động từ tùy theo món đồ đi về phía nào. Bạn cứ hỏi - người nhận có phải là "tôi" (hoặc người nhà tôi) không?
+  - type: explain
+    text:
+      vi: "あげる - tôi (hoặc ai đó) cho người khác: 私は友達に花をあげました. くれる - người khác cho tôi: 友達が(私に)お土産をくれました. Người nhận đi với に."
+  - type: explain
+    text:
+      vi: もらう - nói từ phía người nhận ("được ai cho"). Người cho đi với に hoặc から - 私は母に時計をもらいました. Nếu người cho là công ty, trường học thì dùng から.
+  - type: deep_explain
+    text:
+      vi: 友達がくれました và 友達にもらいました cùng một sự việc, chỉ khác chủ ngữ. Không bao giờ nói 友達が私にあげました - あげる đi "ra khỏi" tôi, không đi về phía tôi. Với người trên, あげる đổi thành さしあげる và くれる thành くださる - bạn sẽ học kỹ ở N3.
+  - type: example
+    target: 母の日に母に花をあげました。
+    target_lang: ja
+    translation:
+      vi: Ngày của Mẹ, tôi đã tặng hoa cho mẹ.
+    note:
+      vi: Tôi cho người khác → あげる; người nhận 母 đi với に.
+  - type: example
+    target: 誕生日に、姉に時計をもらいました。
+    target_lang: ja
+    translation:
+      vi: Sinh nhật, tôi được chị tặng đồng hồ.
+    note:
+      vi: Nói từ phía người nhận → もらう; người cho 姉 đi với に.
+  - type: example
+    target: 友達が京都のお土産をくれました。
+    target_lang: ja
+    translation:
+      vi: Bạn đã cho tôi quà lưu niệm Kyoto.
+    note:
+      vi: Người khác cho tôi → くれる; người cho là chủ ngữ với が, 私に có thể bỏ.
+  - type: example
+    target: 学校から手紙をもらいました。
+    target_lang: ja
+    translation:
+      vi: Tôi nhận được thư từ nhà trường.
+    note:
+      vi: Người cho là tổ chức nên dùng から.
+  - type: common_mistake
+    wrong: 友達は私にプレゼントをあげました。
+    right: 友達は私にプレゼントをくれました。
+    target_lang: ja
+    note:
+      vi: Người nhận là "tôi" thì phải dùng くれる, không dùng あげる.
+  - type: common_mistake
+    wrong: 私は母を時計をもらいました。
+    right: 私は母に時計をもらいました。
+    target_lang: ja
+    note:
+      vi: Người cho trong câu もらう đi với に (hoặc から), không phải を.
+  - type: common_mistake
+    wrong: 私は友達にプレゼントをくれました。
+    right: 私は友達にプレゼントをあげました。
+    target_lang: ja
+    note:
+      vi: Tôi cho người khác thì dùng あげる; くれる chỉ dùng khi đồ đi về phía tôi.
+  - type: summary
+    points:
+      - vi: あげる - (tôi) cho người khác. Người nhận + に.
+      - vi: くれる - người khác cho tôi. Người cho + が/は.
+      - vi: もらう - tôi nhận được. Người cho + に/から (tổ chức → から).
+      - vi: プレゼント quà · 誕生日 sinh nhật · お土産 quà lưu niệm · 花 hoa.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-give-mcq-kureru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-kureru
+    prompt:
+      stem: '"Bạn đã cho tôi quà lưu niệm." Chọn động từ đúng: 友達がお土産を ___ 。'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: くれました, lang: ja }
+        - { id: p8d, text: あげました, lang: ja }
+        - { id: w2s, text: もらいました, lang: ja }
+        - { id: m6q, text: かしました, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Đồ đi về phía tôi và người cho là chủ ngữ (友達が) nên dùng くれました. あげました là tôi cho đi; もらいました cần chủ ngữ là người nhận.
+    display_answer: くれました
+
+  - key: ja:exercise:n4-give-mcq-ageru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-ageru
+    prompt:
+      stem: '"Tôi đã tặng hoa cho mẹ." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 母に花をあげました。, lang: ja }
+        - { id: y1n, text: 母に花をくれました。, lang: ja }
+        - { id: e7c, text: 母を花をあげました。, lang: ja }
+        - { id: h4b, text: 母から花をあげました。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Tôi cho người khác → あげる, người nhận đi với に. くれました dùng khi đồ đến tay tôi; から dùng cho người cho, không phải người nhận.
+    display_answer: 母に花をあげました。
+
+  - key: ja:exercise:n4-give-listen-watch
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-morau
+    prompt:
+      audio_asset_id: null
+      fallback_text: 誕生日に、姉に時計をもらいました。
+      options:
+        - { id: a8u, text: "Sinh nhật, tôi được chị tặng đồng hồ.", lang: vi }
+        - { id: q2z, text: "Sinh nhật, tôi tặng đồng hồ cho chị.", lang: vi }
+        - { id: d6l, text: "Sinh nhật, chị tôi mua đồng hồ.", lang: vi }
+        - { id: s9f, text: "Sinh nhật, tôi được chị tặng hoa.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: もらいました là "tôi nhận được", 姉に là người cho. "Tôi tặng chị" sẽ dùng あげました; 時計 là đồng hồ, không phải hoa (花).
+    display_answer: Sinh nhật, tôi được chị tặng đồng hồ.
+
+  - key: ja:exercise:n4-give-fill-kara
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-morau
+    prompt:
+      template: "Tôi nhận được thư từ công ty. - 会社{{b1}}手紙をもらいました。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Người cho là một tổ chức.
+        - Trợ từ nghĩa là "từ".
+    answer:
+      blanks:
+        b1: [から]
+    known_wrong:
+      - answer: を
+        feedback_vi: を đã dùng cho món đồ (手紙を). Người cho dùng に hoặc から.
+        error_tag: particle_giving
+      - answer: が
+        feedback_vi: Trong câu もらう, chủ ngữ là người nhận (tôi), không phải công ty.
+        error_tag: particle_giving
+    explanation:
+      vi: Người cho là tổ chức (công ty, trường) thì dùng から. Với người, に hoặc から đều được.
+    display_answer: 会社から手紙をもらいました。
+
+  - key: ja:exercise:n4-give-mcq-omiyage
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-omiyage
+    prompt:
+      stem: Đi du lịch Hokkaido về, bạn mua bánh cho đồng nghiệp. Món đó gọi là gì?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: お土産, lang: ja }
+        - { id: j7r, text: 誕生日, lang: ja }
+        - { id: c1o, text: 手紙, lang: ja }
+        - { id: n5g, text: 時計, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: お土産 (おみやげ) là quà mang về sau chuyến đi - ở Nhật rất phổ biến mua cho đồng nghiệp. 誕生日 là sinh nhật, 手紙 là thư, 時計 là đồng hồ.
+    display_answer: お土産
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-give-fill-kureta
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-kureru
+    prompt:
+      template: "Anh Tanaka đã tặng quà sinh nhật cho tôi. - 田中さんが誕生日のプレゼントを{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [くれました, 下さいました, くださいました]
+    known_wrong:
+      - answer: あげました
+        feedback_vi: Người nhận là tôi nên không dùng あげる - phải là くれました.
+        error_tag: giving_direction
+      - answer: もらいました
+        feedback_vi: Chủ ngữ là 田中さんが (người cho) nên dùng くれました. もらう cần chủ ngữ là người nhận.
+        error_tag: giving_direction
+    explanation:
+      vi: Người khác (田中さん) cho tôi → くれました. Lịch sự hơn với người trên là くださいました.
+    display_answer: 田中さんが誕生日のプレゼントをくれました。
+
+  - key: ja:exercise:n4-give-fill-morau-ni
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tanjoubi
+    prompt:
+      template: "Sinh nhật, tôi được bố tặng sách. - 誕生日に、父{{b1}}本を{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [に, から]
+        b2: [もらいました]
+    known_wrong:
+      - answer: くれました
+        feedback_vi: Câu có 父に (người cho + に) nên nói từ phía người nhận - もらいました.
+        error_tag: giving_direction
+      - answer: あげました
+        feedback_vi: あげる là tôi cho người khác, ngược hướng.
+        error_tag: giving_direction
+      - answer: が
+        feedback_vi: Nếu bố là chủ ngữ (父が) thì động từ phải là くれました. Với もらう, bố đi với に/から.
+        error_tag: particle_giving
+    explanation:
+      vi: Tôi nhận được → もらいました; người cho 父 đi với に (hoặc から).
+    display_answer: 誕生日に、父に本をもらいました。
+
+  - key: ja:exercise:n4-give-translate-gave-friend
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-purezento
+    prompt:
+      source_text: Tôi đã tặng quà cho bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 友達にプレゼントをあげました。
+        - ともだちにプレゼントをあげました。
+        - 私は友達にプレゼントをあげました。
+        - わたしはともだちにプレゼントをあげました。
+        - 友だちにプレゼントをあげました。
+        - 私は友だちにプレゼントをあげました。
+        - 友達にプレゼントをあげた。
+    known_wrong:
+      - answer: 友達にプレゼントをくれました。
+        feedback_vi: Tôi cho người khác dùng あげる; くれる chỉ dùng khi đồ đến với tôi.
+        error_tag: giving_direction
+      - answer: 友達をプレゼントをあげました。
+        feedback_vi: Người nhận đi với に, không phải を.
+        error_tag: particle_giving
+      - answer: 友達にプレゼントをもらいました。
+        feedback_vi: もらいました là "tôi nhận được", ngược nghĩa.
+        error_tag: giving_direction
+    explanation:
+      vi: Tôi cho người khác → あげました; người nhận 友達 đi với に.
+    display_answer: 友達にプレゼントをあげました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-give-translate-story
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-gram-kureru
+    prompt:
+      source_text: 先週、友達が花をくれました。私は友達にお菓子をあげました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuần trước bạn đã tặng hoa cho tôi. Tôi đã tặng bánh kẹo cho bạn.
+        - Tuần trước bạn tặng hoa cho tôi. Tôi tặng bánh kẹo cho bạn.
+        - Tuần trước bạn tôi đã tặng hoa cho tôi. Tôi đã tặng bánh kẹo cho bạn.
+        - Tuần trước bạn tôi tặng hoa cho tôi. Tôi tặng bánh kẹo cho bạn.
+        - Tuần trước bạn đã tặng tôi hoa. Tôi đã tặng bạn bánh kẹo.
+        - Tuần trước bạn tặng tôi hoa. Tôi tặng bạn bánh kẹo.
+        - Tuần trước bạn đã cho tôi hoa. Tôi đã cho bạn bánh kẹo.
+        - Tuần trước bạn cho tôi hoa. Tôi cho bạn bánh kẹo.
+        - Tuần trước bạn đã tặng hoa cho tôi. Tôi đã tặng bánh cho bạn.
+        - Tuần trước bạn tặng hoa cho tôi. Tôi tặng bánh cho bạn.
+        - Tuần trước bạn đã tặng hoa cho tôi. Tôi đã tặng kẹo cho bạn.
+        - Tuần trước bạn tặng tôi hoa. Tôi tặng bạn bánh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tuần trước tôi đã tặng hoa cho bạn. Bạn đã tặng bánh kẹo cho tôi.
+        feedback_vi: Ngược hướng - くれました là bạn cho tôi, あげました là tôi cho bạn.
+        error_tag: giving_direction
+      - answer: Tuần sau bạn tặng hoa cho tôi. Tôi tặng bánh kẹo cho bạn.
+        feedback_vi: 先週 là "tuần trước", và động từ đều ở quá khứ.
+        error_tag: vocab_time_word
+    explanation:
+      vi: Câu 1 - 友達がくれました (bạn cho tôi). Câu 2 - 私はあげました (tôi cho bạn). お菓子 là bánh kẹo nói chung.
+    display_answer: Tuần trước bạn đã tặng hoa cho tôi. Tôi đã tặng bánh kẹo cho bạn.
+
+  - key: ja:exercise:n4-give-order-watch
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-morau
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Tôi được mẹ tặng đồng hồ."'
+      tokens:
+        - { id: t-moraimashita, text: もらいました }
+        - { id: t-tokei, text: 時計を }
+        - { id: t-haha, text: 母に }
+        - { id: t-watashi, text: 私は }
+        - { id: t-kuremashita, text: くれました }
+    answer:
+      orders:
+        - [t-watashi, t-haha, t-tokei, t-moraimashita]
+        - [t-haha, t-watashi, t-tokei, t-moraimashita]
+        - [t-watashi, t-tokei, t-haha, t-moraimashita]
+    explanation:
+      vi: Chủ ngữ 私は là người nhận, người cho 母に, món đồ 時計を, kết bằng もらいました. くれました cần người cho làm chủ ngữ (母が).
+    display_answer: 私は母に時計をもらいました。
+
+  - key: ja:exercise:n4-give-mcq-direction
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-kureru
+    prompt:
+      stem: Câu nào SAI ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: g3k, text: 山田さんは私に本をあげました。, lang: ja }
+        - { id: u9p, text: 山田さんは私に本をくれました。, lang: ja }
+        - { id: b2w, text: 私は山田さんに本をもらいました。, lang: ja }
+        - { id: x6e, text: 私は山田さんに本をあげました。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: あげる không bao giờ có người nhận là "tôi" - Yamada cho tôi phải dùng くれました. Ba câu còn lại đều đúng.
+    display_answer: 山田さんは私に本をあげました。
+
+  - key: ja:exercise:n4-give-translate-souvenir
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-kureru
+    prompt:
+      source_text: Anh Kimura đã cho tôi quà lưu niệm Kyoto.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 木村さんが京都のお土産をくれました。
+        - 木村さんは京都のお土産をくれました。
+        - 木村さんが私に京都のお土産をくれました。
+        - 木村さんは私に京都のお土産をくれました。
+        - きむらさんがきょうとのおみやげをくれました。
+        - きむらさんはきょうとのおみやげをくれました。
+        - 木村さんが京都のおみやげをくれました。
+        - 木村さんは京都のおみやげをくれました。
+        - 木村さんに京都のお土産をもらいました。
+        - 私は木村さんに京都のお土産をもらいました。
+        - 木村さんから京都のお土産をもらいました。
+    known_wrong:
+      - answer: 木村さんが京都のお土産をあげました。
+        feedback_vi: Người nhận là tôi nên dùng くれました, không dùng あげました.
+        error_tag: giving_direction
+      - answer: 木村さんが京都のお土産をもらいました。
+        feedback_vi: Câu này nghĩa là "anh Kimura nhận được quà", ngược nghĩa.
+        error_tag: giving_direction
+    explanation:
+      vi: Người khác cho tôi → 木村さんがくれました; hoặc nói từ phía tôi → 木村さんにもらいました. Cả hai đều đúng.
+    display_answer: 木村さんが京都のお土産をくれました。
