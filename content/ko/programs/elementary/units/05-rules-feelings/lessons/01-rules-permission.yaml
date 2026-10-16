@@ -1,0 +1,441 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:rules-permission
+order_index: 1
+level: topik2
+title:
+  vi: Được phép hay không được? - -아/어도 되다, -(으)면 안 되다
+objectives:
+  - vi: Xin phép và cho phép bằng V-아/어도 돼요? / 네, V-아/어도 돼요.
+  - vi: Nói điều bị cấm bằng V-(으)면 안 돼요 và "không cần… cũng được" bằng 안 V-아/어도 돼요.
+  - vi: Đọc hiểu nội quy ký túc xá, bảng thông báo ở bảo tàng và văn phòng - 규칙, 금지, 통금 시간, 허락을 받다.
+estimated_minutes: 18
+skills: [grammar, vocabulary, reading, speaking]
+prerequisites: [ko:lesson:travel-experiences-review]
+items:
+  - item: ko:item:rf-gram-ado-doeda
+  - item: ko:item:rf-gram-eumyeon-an-doeda
+  - item: ko:item:rf-gisuksa
+  - item: ko:item:rf-gyuchik
+  - item: ko:item:rf-geumji
+  - item: ko:item:rf-dambae-piuda
+  - item: ko:item:rf-manjida
+  - item: ko:item:rf-beotda
+  - item: ko:item:rf-tonggeum-sigan
+  - item: ko:item:rf-heorak-batda
+  - item: ko:item:bangmulgwan
+    role: reuse
+  - item: ko:item:sajin-jjikda
+    role: reuse
+  - item: ko:item:gram-an-negation
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "tôi làm việc này có được không?", hiểu câu trả lời "được" hay "không được", và đọc được nội quy ký túc xá hay biển báo trong bảo tàng.
+  - type: explain
+    text:
+      vi: "V-아/어도 되다 nghĩa đen là \"dù làm… thì cũng được\" - chính là cách xin phép và cho phép. Bạn ghép -아/어도 giống như khi chia -아/어요: 앉다 → 앉아도, 먹다 → 먹어도, 하다 → 해도, rồi thêm 돼요 hoặc 돼요? để hỏi."
+  - type: explain
+    text:
+      vi: "V-(으)면 안 되다 nghĩa đen là \"nếu làm… thì không được\" - tức là cấm. Thân có patchim thêm -으면 (먹으면 안 돼요), không có patchim thêm -면 (보면 안 돼요). Tiếng Việt chỉ cần đặt \"không được\" trước động từ, còn tiếng Hàn phải đổi cả cấu trúc, nên người Việt hay nói sai thành 안 -아도 돼요."
+  - type: explain
+    text:
+      vi: "Thêm 안 vào trước động từ của -아/어도 되다 thì thành \"không… cũng được\", tức là \"không cần…\": 안 와도 돼요 (không cần đến). Hãy phân biệt ba câu - 와도 돼요 (đến cũng được), 오면 안 돼요 (không được đến), 안 와도 돼요 (không đến cũng được)."
+  - type: deep_explain
+    text:
+      vi: "Muốn xin phép mềm mỏng hơn với cấp trên, người lạ, bạn dùng -아/어도 될까요? (먹어도 될까요?). Trong văn bản nội quy, thông báo dùng đuôi trang trọng -아/어도 됩니다 và -(으)면 안 됩니다. Biển báo thì ngắn gọn bằng danh từ + 금지: 촬영 금지, 출입 금지, 음식물 반입 금지. Ở ký túc xá Hàn Quốc, vi phạm nội quy (về muộn sau 통금 시간, hút thuốc trong phòng) thường bị trừ điểm (벌점), nhiều điểm có thể phải rời ký túc xá."
+  - type: example
+    target: 이 펜 좀 써도 돼요? - 네, 쓰세요.
+    target_lang: ko
+    translation:
+      vi: Tôi dùng cái bút này một chút được không? - Vâng, bạn cứ dùng đi.
+    note:
+      vi: 쓰다 là bất quy tắc ㅡ nên 써도. Khi đồng ý, người Hàn hay đáp ngắn bằng -(으)세요.
+  - type: example
+    target: 전시실 안에서는 음료수를 마시면 안 돼요.
+    target_lang: ko
+    translation:
+      vi: Trong phòng trưng bày không được uống nước ngọt.
+  - type: example
+    target: 주말에는 일찍 안 일어나도 돼요.
+    target_lang: ko
+    translation:
+      vi: Cuối tuần không cần dậy sớm cũng được.
+    note:
+      vi: 안 + -아/어도 되다 = không cần làm.
+  - type: example
+    target: 회의 중에는 전화를 받으면 안 돼요. 급한 일이 있으면 밖에 나가서 받으세요.
+    target_lang: ko
+    translation:
+      vi: Trong lúc họp không được nghe điện thoại. Nếu có việc gấp thì ra ngoài rồi nghe.
+  - type: example
+    target: 기숙사 규칙에 따라 방에서는 담배를 피우면 안 됩니다.
+    target_lang: ko
+    translation:
+      vi: Theo nội quy ký túc xá, không được hút thuốc trong phòng.
+    note:
+      vi: Văn bản nội quy dùng đuôi trang trọng -(으)면 안 됩니다.
+  - type: common_mistake
+    wrong: 여기 앉아도 되요?
+    right: 여기 앉아도 돼요?
+    target_lang: ko
+    note:
+      vi: 되어요 rút gọn thành 돼요. Mẹo thay bằng 하다 - nói được 해요 thì phải viết 돼요; nói 하 (như 하고, 하지만) thì viết 되 (되고, 되지만).
+  - type: common_mistake
+    wrong: 박물관에서 작품을 안 만져도 돼요.
+    right: 박물관에서 작품을 만지면 안 돼요.
+    target_lang: ko
+    note:
+      vi: Người Việt muốn nói "không được sờ" nhưng ghép 안 + -아도 돼요, thành ra nghĩa "không sờ cũng được". Cấm đoán phải là -(으)면 안 돼요.
+  - type: common_mistake
+    wrong: 사진을 찍으도 돼요?
+    right: 사진을 찍어도 돼요?
+    target_lang: ko
+    note:
+      vi: -아/어도 chọn 아/어 theo nguyên âm của thân giống như -아/어요 (찍어요 → 찍어도), không thêm 으 như -(으)면.
+  - type: summary
+    points:
+      - vi: V-아/어도 돼요? - xin phép; 네, V-아/어도 돼요 - cho phép; mềm hơn - V-아/어도 될까요?
+      - vi: V-(으)면 안 돼요 - không được, cấm; văn bản - -(으)면 안 됩니다; biển báo - N 금지.
+      - vi: 안 V-아/어도 돼요 - không cần…, không… cũng được.
+      - vi: Viết 돼요 (되어요), không viết 되요.
+      - vi: 기숙사 · 규칙을 지키다 · 통금 시간 · 허락을 받다 · 담배를 피우다 · 만지다 · 신발을 벗다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:rf-perm-mcq-photo-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      stem: "전시실 안에서 사진을 찍어도 돼요? nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q7d, text: "Trong phòng trưng bày tôi chụp ảnh được không?", lang: vi }
+        - { id: z2m, text: "Trong phòng trưng bày không được chụp ảnh.", lang: vi }
+        - { id: k9s, text: "Tôi phải chụp ảnh trong phòng trưng bày à?", lang: vi }
+        - { id: v4b, text: "Bạn đã chụp ảnh trong phòng trưng bày chưa?", lang: vi }
+    answer:
+      correct_option_id: q7d
+    explanation:
+      vi: -아/어도 돼요? ở cuối câu hỏi là xin phép - "làm… có được không?". "Không được" là -(으)면 안 돼요, "phải" là -아/어야 해요, còn "đã… chưa" cần thì quá khứ.
+    display_answer: "Trong phòng trưng bày tôi chụp ảnh được không?"
+
+  - key: ko:exercise:rf-perm-listen-dorm-laundry
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:rf-gisuksa
+    prompt:
+      audio_asset_id: null
+      fallback_text: 기숙사에서는 밤 열한 시 이후에 세탁기를 쓰면 안 돼요. 하지만 공용 부엌은 언제든지 써도 돼요.
+      options:
+        - { id: f3n, text: "Ở ký túc xá, sau 11 giờ đêm không được dùng máy giặt, nhưng bếp chung thì lúc nào cũng dùng được.", lang: vi }
+        - { id: w8c, text: "Ở ký túc xá, sau 11 giờ đêm không được dùng bếp chung.", lang: vi }
+        - { id: h1x, text: "Ở ký túc xá, lúc nào cũng dùng được máy giặt.", lang: vi }
+        - { id: p6r, text: "Ở ký túc xá, sau 11 giờ đêm phải dùng máy giặt.", lang: vi }
+    answer:
+      correct_option_id: f3n
+    explanation:
+      vi: 세탁기를 쓰면 안 돼요 là "không được dùng máy giặt" (sau 11 giờ), còn 부엌은 언제든지 써도 돼요 là "bếp thì lúc nào dùng cũng được". 하지만 đánh dấu hai quy định trái ngược nhau.
+    display_answer: "Ở ký túc xá, sau 11 giờ đêm không được dùng máy giặt, nhưng bếp chung thì lúc nào cũng dùng được."
+
+  - key: ko:exercise:rf-perm-fill-meeting-room-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      template: "회의실 컴퓨터는 직원이면 누구나 {{b1}} 돼요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Máy tính phòng họp thì ai là nhân viên cũng dùng được."
+        - "Gợi ý: 쓰다 hoặc 사용하다 + -아/어도."
+    answer:
+      blanks:
+        b1: [써도, 사용해도, 이용해도]
+    known_wrong:
+      - answer: 쓰도
+        feedback_vi: 쓰다 là bất quy tắc ㅡ - ㅡ rơi rồi ghép 어 thành 써도.
+        error_tag: eu_irregular
+      - answer: 쓰면
+        feedback_vi: Sau chỗ trống là 돼요, nghĩa "được phép" cần -아/어도 - 써도 돼요. 쓰면 돼요 là "chỉ cần dùng là được".
+        error_tag: permission_form
+      - answer: 써서
+        feedback_vi: -아/어서 chỉ lý do hoặc trình tự, không ghép với 되다 để cho phép.
+        error_tag: connector_meaning
+    explanation:
+      vi: Cho phép là V-아/어도 돼요. 쓰다 → 써도 (bất quy tắc ㅡ), 사용하다 → 사용해도.
+    display_answer: 회의실 컴퓨터는 직원이면 누구나 써도 돼요.
+
+  - key: ko:exercise:rf-perm-wb-no-smoking
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-dambae-piuda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Ở trước cổng trường không được hút thuốc.\""
+      tokens:
+        - { id: t4, text: 안 돼요 }
+        - { id: t2, text: 담배를 }
+        - { id: t5, text: 피워도 }
+        - { id: t3, text: 피우면 }
+        - { id: t1, text: 학교 정문 앞에서 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: Cấm là 피우면 안 돼요. Nơi chốn 학교 정문 앞에서 có thể đứng trước hoặc sau tân ngữ 담배를. 피워도 là token thừa - 피워도 안 돼요 không phải cách nói cấm.
+    display_answer: 학교 정문 앞에서 담배를 피우면 안 돼요.
+
+  - key: ko:exercise:rf-perm-mcq-three-meanings
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      stem: "Chọn nghĩa đúng của câu: 내일은 도시락을 안 가져와도 돼요."
+      stem_lang: vi
+      options:
+        - { id: a9u, text: "Ngày mai không cần mang cơm hộp.", lang: vi }
+        - { id: e3l, text: "Ngày mai không được mang cơm hộp.", lang: vi }
+        - { id: o6p, text: "Ngày mai nhất định phải mang cơm hộp.", lang: vi }
+        - { id: i2w, text: "Ngày mai mang cơm hộp cũng được.", lang: vi }
+    answer:
+      correct_option_id: a9u
+    explanation:
+      vi: 안 + -아/어도 돼요 = "không… cũng được", tức là không cần. "Không được mang" là 가져오면 안 돼요; "mang cũng được" là 가져와도 돼요 (không có 안).
+    display_answer: "Ngày mai không cần mang cơm hộp."
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:rf-perm-fill-shoes
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-beotda
+    prompt:
+      template: "(Ở phòng khám này không cần cởi giày cũng được.) 이 진료실에서는 신발을 안 {{b1}} 돼요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [벗어도]
+    known_wrong:
+      - answer: 버서도
+        feedback_vi: Viết theo thân từ - 벗 + 어도 = 벗어도; [버서도] chỉ là cách đọc nối âm.
+        error_tag: spelling_liaison
+      - answer: 벗으면
+        feedback_vi: 안 벗으면 돼요 là "chỉ cần không cởi là được" - ý khác. "Không cần cởi" là 안 벗어도 돼요.
+        error_tag: permission_form
+      - answer: 버어도
+        feedback_vi: 벗다 là động từ có quy tắc, giữ ㅅ - 벗어도 (khác 낫다 → 나아도).
+        error_tag: s_irregular_overuse
+    explanation:
+      vi: 안 + V-아/어도 돼요 = không cần làm. 벗다 có nguyên âm ㅓ nên ghép 어도 → 벗어도.
+    display_answer: 이 진료실에서는 신발을 안 벗어도 돼요.
+
+  - key: ko:exercise:rf-perm-translate-window
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      source_text: Tôi mở cửa sổ một chút có được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 창문을 좀 열어도 돼요?
+        - 창문 좀 열어도 돼요?
+        - 창문을 조금 열어도 돼요?
+        - 창문 조금 열어도 돼요?
+        - 제가 창문을 좀 열어도 돼요?
+        - 제가 창문 좀 열어도 돼요?
+        - 창문을 좀 열어도 될까요?
+        - 창문 좀 열어도 될까요?
+        - 창문을 조금 열어도 될까요?
+        - 제가 창문을 좀 열어도 될까요?
+        - 창문을 잠깐 열어도 돼요?
+        - 창문 잠깐 열어도 돼요?
+        - 창문을 좀 열어도 됩니까?
+    known_wrong:
+      - answer: 창문을 좀 열어도 되요?
+        feedback_vi: 되어요 rút gọn là 돼요 - viết 열어도 돼요?.
+        error_tag: doeyo_spelling
+      - answer: 창문을 좀 열어 주세요.
+        feedback_vi: -아/어 주세요 là nhờ người khác mở giúp; câu gốc là bạn xin phép tự mở - 열어도 돼요?.
+        error_tag: request_vs_permission
+      - answer: 창문을 좀 열으도 돼요?
+        feedback_vi: 열다 + 어도 = 열어도, không thêm 으.
+        error_tag: ado_form
+      - answer: changmuneul jom yeoreodo dwaeyo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Xin phép là V-아/어도 돼요? (mềm hơn - 될까요?). 열다 → 열어도; "một chút" là 좀 / 조금.
+    display_answer: 창문을 좀 열어도 돼요?
+
+  - key: ko:exercise:rf-perm-translate-dorm-cooking
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-eumyeon-an-doeda
+    prompt:
+      source_text: Trong phòng ký túc xá không được nấu ăn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 기숙사 방에서 요리하면 안 돼요.
+        - 기숙사 방에서는 요리하면 안 돼요.
+        - 기숙사 방에서 요리를 하면 안 돼요.
+        - 기숙사 방에서는 요리를 하면 안 돼요.
+        - 기숙사 방 안에서 요리하면 안 돼요.
+        - 기숙사 방 안에서는 요리하면 안 돼요.
+        - 기숙사 방에서 음식을 만들면 안 돼요.
+        - 기숙사 방에서는 음식을 만들면 안 돼요.
+        - 기숙사 방에서 요리하면 안 됩니다.
+        - 기숙사 방에서는 요리하면 안 됩니다.
+        - 기숙사 방에서 요리를 하면 안 됩니다.
+    known_wrong:
+      - answer: 기숙사 방에서 요리해도 돼요.
+        feedback_vi: -아/어도 돼요 là cho phép - nghĩa ngược với "không được".
+        error_tag: permission_vs_prohibition
+      - answer: 기숙사 방에서 요리 안 해도 돼요.
+        feedback_vi: 안 -아/어도 돼요 là "không cần nấu"; cấm phải là 요리하면 안 돼요.
+        error_tag: an_ado_confusion
+      - answer: 기숙사 방에 요리하면 안 돼요.
+        feedback_vi: Nơi diễn ra hành động dùng 에서 - 방에서 요리하다.
+        error_tag: particle_eseo
+    explanation:
+      vi: Cấm là V-(으)면 안 돼요; 요리하다 không có patchim nên -면. Nơi diễn ra hành động là 에서, 는 nhấn mạnh "ở trong phòng thì…".
+    display_answer: 기숙사 방에서 요리하면 안 돼요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:rf-perm-mcq-leave-early
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      stem: "Chiều nay bạn phải đến bệnh viện và muốn xin trưởng phòng cho về sớm một cách lịch sự. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: g8h, text: "부장님, 병원에 가야 해서 오늘 좀 일찍 가도 될까요?", lang: ko }
+        - { id: r2v, text: "부장님, 병원에 가야 해서 오늘 좀 일찍 가면 안 돼요.", lang: ko }
+        - { id: m5z, text: "부장님, 병원에 가야 해서 오늘 좀 일찍 가도 돼.", lang: ko }
+        - { id: t7q, text: "부장님, 병원에 가야 해서 오늘 좀 일찍 안 가도 돼요?", lang: ko }
+    answer:
+      correct_option_id: g8h
+    explanation:
+      vi: Xin phép cấp trên nên dùng -아/어도 될까요? cho mềm mỏng. Câu kết bằng 가면 안 돼요. là câu khẳng định "không được về"; 가도 돼 là 반말, vô lễ với 부장님; 안 가도 돼요? lại hỏi "không về cũng được à?".
+    display_answer: "부장님, 병원에 가야 해서 오늘 좀 일찍 가도 될까요?"
+
+  - key: ko:exercise:rf-perm-mcq-reading-dorm-rules
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:rf-heorak-batda
+    prompt:
+      stem: "다음 안내문을 읽고 맞는 것을 고르십시오.\n[기숙사 생활 규칙]\n1. 통금 시간은 밤 12시입니다.\n2. 방에서 담배를 피우면 안 됩니다.\n3. 친구는 1층 휴게실까지 들어와도 됩니다. 방에 데려오려면 사감 선생님께 허락을 받아야 합니다.\n4. 밤 10시 이후에는 세탁실을 이용하면 안 됩니다."
+      stem_lang: ko
+      options:
+        - { id: b3w, text: 사감 선생님이 허락하면 친구를 방에 데려와도 돼요., lang: ko }
+        - { id: d9e, text: 친구는 허락 없이 방에 들어와도 돼요., lang: ko }
+        - { id: s1y, text: 밤 11시에 세탁실을 써도 돼요., lang: ko }
+        - { id: x6k, text: 통금 시간이 없어서 늦게 들어와도 돼요., lang: ko }
+    answer:
+      correct_option_id: b3w
+    explanation:
+      vi: Mục 3 nói muốn dẫn bạn vào phòng thì phải được 사감 선생님 (người quản lý ký túc xá) cho phép - tức là được phép nếu có sự đồng ý. Bạn bè không có phép chỉ được vào phòng nghỉ tầng 1; sau 10 giờ không được dùng phòng giặt; giờ đóng cửa là 12 giờ.
+    display_answer: 사감 선생님이 허락하면 친구를 방에 데려와도 돼요.
+
+  - key: ko:exercise:rf-perm-translate-flash-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-gram-eumyeon-an-doeda
+    prompt:
+      source_text: 이 박물관에서는 사진을 찍어도 되지만 플래시를 쓰면 안 돼요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở bảo tàng này được chụp ảnh nhưng không được dùng đèn flash.
+        - Ở bảo tàng này có thể chụp ảnh nhưng không được dùng đèn flash.
+        - Trong bảo tàng này được chụp ảnh nhưng không được dùng đèn flash.
+        - Ở bảo tàng này chụp ảnh cũng được nhưng không được dùng đèn flash.
+        - Ở bảo tàng này được chụp ảnh nhưng không được dùng flash.
+        - Bảo tàng này cho chụp ảnh nhưng không được dùng đèn flash.
+        - Ở bảo tàng này bạn được chụp ảnh nhưng không được dùng đèn flash.
+        - Ở bảo tàng này được phép chụp ảnh nhưng không được dùng đèn flash.
+        - Ở bảo tàng này được chụp hình nhưng không được dùng đèn flash.
+        - Ở bảo tàng này được chụp ảnh nhưng cấm dùng đèn flash.
+        - Ở bảo tàng này được chụp ảnh nhưng không được bật đèn flash.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở bảo tàng này không được chụp ảnh và không được dùng đèn flash.
+        feedback_vi: 찍어도 되지만 là "được chụp, nhưng…" - chụp ảnh thì được phép.
+        error_tag: permission_vs_prohibition
+      - answer: Ở bảo tàng này được chụp ảnh và được dùng đèn flash.
+        feedback_vi: 쓰면 안 돼요 là "không được dùng".
+        error_tag: negation_missed
+    explanation:
+      vi: -아/어도 되지만 = được… nhưng; -(으)면 안 돼요 = không được. 쓰다 ở đây là "dùng".
+    display_answer: Ở bảo tàng này được chụp ảnh nhưng không được dùng đèn flash.
+
+  - key: ko:exercise:rf-perm-translate-no-need-office
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      source_text: Hôm nay bạn không cần đến văn phòng cũng được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘은 사무실에 안 와도 돼요.
+        - 오늘 사무실에 안 와도 돼요.
+        - 오늘은 사무실에 안 나와도 돼요.
+        - 오늘 사무실에 안 나와도 돼요.
+        - 오늘은 사무실에 오지 않아도 돼요.
+        - 오늘 사무실에 오지 않아도 돼요.
+        - 오늘은 사무실에 안 오셔도 돼요.
+        - 오늘 사무실에 안 오셔도 돼요.
+        - 오늘은 사무실에 안 가도 돼요.
+        - 오늘 사무실에 안 가도 돼요.
+        - 오늘은 회사에 안 와도 돼요.
+        - 오늘은 사무실에 안 와도 됩니다.
+    known_wrong:
+      - answer: 오늘은 사무실에 오면 안 돼요.
+        feedback_vi: -(으)면 안 돼요 là cấm "không được đến"; câu gốc là "không cần đến" - 안 와도 돼요.
+        error_tag: an_ado_confusion
+      - answer: 오늘은 사무실에 안 오면 안 돼요.
+        feedback_vi: Hai lần phủ định - "không đến thì không được", tức là phải đến.
+        error_tag: double_negation
+      - answer: 오늘은 사무실에 와도 돼요.
+        feedback_vi: Thiếu 안 - câu này nghĩa là "đến cũng được".
+        error_tag: negation_missed
+    explanation:
+      vi: '"Không cần làm" = 안 + V-아/어도 돼요. 오다 → 와도; lịch sự hơn với người trên - 안 오셔도 돼요.'
+    display_answer: 오늘은 사무실에 안 와도 돼요.

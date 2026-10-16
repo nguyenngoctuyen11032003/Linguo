@@ -1,0 +1,439 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:rules-feelings-review
+order_index: 5
+level: topik2
+title:
+  vi: Ôn tập - Ngày đầu ở phòng gym gần ký túc xá
+objectives:
+  - vi: Hiểu nhân viên phòng gym giới thiệu nội quy (-아/어도 돼요, -(으)면 안 돼요, -지 마세요, -아/어야 해요).
+  - vi: Trò chuyện tự nhiên với bạn cùng phòng bằng -네요, -지요?, -겠어요.
+  - vi: Chia đúng các động từ bất quy tắc của unit trong câu thật - 걸어요, 들어요, 몰라요, 불러요, 사세요, 나아요.
+estimated_minutes: 20
+skills: [listening, reading, speaking, grammar]
+prerequisites: [ko:lesson:more-irregulars]
+items:
+  - item: ko:item:rf-helseujang
+  - item: ko:item:rf-samulham
+  - item: ko:item:rf-gram-ado-doeda
+    role: reuse
+  - item: ko:item:rf-gram-eumyeon-an-doeda
+    role: reuse
+  - item: ko:item:rf-gram-ji-maseyo
+    role: reuse
+  - item: ko:item:rf-gram-neyo
+    role: reuse
+  - item: ko:item:rf-gram-jiyo
+    role: reuse
+  - item: ko:item:rf-gram-gesseoyo
+    role: reuse
+  - item: ko:item:rf-gram-d-irregular
+    role: reuse
+  - item: ko:item:rf-gram-reu-irregular
+    role: reuse
+  - item: ko:item:rf-gram-l-drop
+    role: reuse
+  - item: ko:item:rf-gram-s-irregular
+    role: reuse
+  - item: ko:item:rf-moreuda
+    role: reuse
+  - item: ko:item:rf-gisuksa
+    role: reuse
+  - item: ko:item:gram-a-eo-ya-haeyo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Linh, du học sinh Việt Nam, vừa đăng ký phòng gym cạnh ký túc xá. Bạn sẽ nghe nhân viên giới thiệu nội quy, đọc bảng hướng dẫn và nói chuyện với bạn cùng phòng - dùng lại mọi cấu trúc của unit.
+  - type: explain
+    text:
+      vi: "Bảng hướng dẫn trong phòng gym viết theo đuôi trang trọng: -아/어도 됩니다 (được), -(으)면 안 됩니다 (không được), -지 마십시오 (xin đừng), -아/어 주십시오 (xin hãy). Khi nói chuyện trực tiếp, nhân viên chuyển sang 해요체 lịch sự: -아/어도 돼요, -지 마세요."
+  - type: explain
+    text:
+      vi: "Giữa bạn bè cùng phòng, những đuôi -네요, -죠?, -겠어요 làm câu nói có cảm xúc: 헬스장이 넓네요! (ôi rộng quá), 내일 아침에도 가죠? (sáng mai cũng đi chứ?), 다리가 아프겠어요 (chắc chân đau lắm). Hãy chú ý chúng khi nghe và đọc."
+  - type: deep_explain
+    text:
+      vi: "Ở Hàn Quốc, phòng gym (헬스장) thường cho thuê tủ đồ (사물함) và áo tập theo tháng, yêu cầu đi giày trong nhà riêng (실내화 / 실내 운동화) và để dụng cụ về chỗ cũ sau khi dùng. Hội thoại trong bài dùng nhiều động từ bất quy tắc của bài 4 - khi đọc, bạn thử đoán dạng từ điển: 걸어요 → 걷다, 몰라요 → 모르다, 사세요 → 살다, 나았어요 → 낫다."
+  - type: example
+    target: 처음 오셨죠? 신발은 여기에서 갈아 신으시고 사물함 열쇠는 잃어버리지 마세요.
+    target_lang: ko
+    translation:
+      vi: Lần đầu bạn đến phải không? Hãy thay giày ở đây và đừng làm mất chìa khoá tủ đồ nhé.
+  - type: example
+    target: 수건은 안 가져와도 돼요. 안내 데스크에서 빌려 드려요.
+    target_lang: ko
+    translation:
+      vi: Không cần mang khăn đâu. Ở quầy hướng dẫn có cho mượn.
+  - type: example
+    target: 운동 기구를 쓴 다음에는 제자리에 갖다 놓아야 해요.
+    target_lang: ko
+    translation:
+      vi: Dùng dụng cụ tập xong thì phải mang về chỗ cũ.
+  - type: example
+    target: 룸메이트가 매일 아침 헬스장까지 걸어서 다니네요. 정말 부지런하네요.
+    target_lang: ko
+    translation:
+      vi: Bạn cùng phòng sáng nào cũng đi bộ đến phòng gym. Chăm chỉ thật đấy.
+  - type: common_mistake
+    wrong: 샤워실은 열 시까지 써도 되요.
+    right: 샤워실은 열 시까지 써도 돼요.
+    target_lang: ko
+    note:
+      vi: Lỗi chính tả quen thuộc - 되어요 luôn viết là 돼요.
+  - type: common_mistake
+    wrong: 운동 기구를 함부로 안 옮기세요.
+    right: 운동 기구를 함부로 옮기지 마세요.
+    target_lang: ko
+    note:
+      vi: Lời nhắc "đừng…" là -지 마세요; 안 + -(으)세요 là câu kể kính ngữ.
+  - type: common_mistake
+    wrong: 사장님은 이 건물 위층에 살으세요.
+    right: 사장님은 이 건물 위층에 사세요.
+    target_lang: ko
+    note:
+      vi: 살다 gốc ㄹ - ㄹ rơi trước ㅅ, không thêm 으.
+  - type: summary
+    points:
+      - vi: Nội quy - -아/어도 돼요 (được), -(으)면 안 돼요 (không được), 안 -아/어도 돼요 (không cần), -지 마세요 (đừng), -아/어야 해요 (phải).
+      - vi: Văn bản trang trọng - -아/어도 됩니다, -(으)면 안 됩니다, -지 마십시오.
+      - vi: Cảm xúc trong hội thoại - -네요 (phát hiện), -죠? (xác nhận), -겠어요 (phỏng đoán, đồng cảm).
+      - vi: Bất quy tắc - 걸어요 · 들어요 · 몰라요 · 불러요 · 사세요 · 만드세요 · 나아요 · 지어요.
+      - vi: 헬스장 · 사물함 · 기숙사 · 규칙.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:rf-rev-listen-gym-staff
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-samulham
+    prompt:
+      audio_asset_id: null
+      fallback_text: 회원님, 운동화는 여기에서 갈아 신으세요. 그리고 사물함 열쇠는 잃어버리지 마세요. 잃어버리면 오천 원을 내야 해요.
+      options:
+        - { id: k4p, text: "Hãy thay giày ở đây và đừng làm mất chìa khoá tủ đồ; nếu mất phải trả 5.000 won.", lang: vi }
+        - { id: z7w, text: "Không cần thay giày; chìa khoá tủ đồ mất cũng không sao.", lang: vi }
+        - { id: c3m, text: "Hãy thay giày ở đây; chìa khoá tủ đồ giá 5.000 won.", lang: vi }
+        - { id: e8f, text: "Đừng thay giày ở đây; nếu mất chìa khoá phải trả 50.000 won.", lang: vi }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: 갈아 신으세요 = hãy thay (giày); 잃어버리지 마세요 = đừng làm mất; 잃어버리면 오천 원을 내야 해요 = nếu mất phải trả 5.000 won (오천 = 5.000, 오만 mới là 50.000).
+    display_answer: "Hãy thay giày ở đây và đừng làm mất chìa khoá tủ đồ; nếu mất phải trả 5.000 won."
+
+  - key: ko:exercise:rf-rev-mcq-reading-gym-guide
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:rf-helseujang
+    prompt:
+      stem: "다음 안내문을 읽고 맞는 것을 고르십시오.\n[헬스장 이용 안내]\n1. 운동 기구를 사용한 후에는 제자리에 놓아 주십시오.\n2. 샤워실에서 너무 오래 있지 마십시오.\n3. 개인 수건은 가져오지 않아도 됩니다. 수건은 안내 데스크에서 빌릴 수 있습니다.\n4. 밤 11시 이후에는 음악을 크게 틀면 안 됩니다."
+      stem_lang: ko
+      options:
+        - { id: r5d, text: 수건은 집에서 안 가져와도 돼요., lang: ko }
+        - { id: y2h, text: 운동 기구는 쓴 후에 그냥 두면 돼요., lang: ko }
+        - { id: o9k, text: 샤워실은 시간 제한 없이 오래 써도 돼요., lang: ko }
+        - { id: u1s, text: 밤 11시 이후에 음악을 크게 틀어도 돼요., lang: ko }
+    answer:
+      correct_option_id: r5d
+    explanation:
+      vi: Mục 3 - 가져오지 않아도 됩니다 = không cần mang (khăn có thể mượn ở quầy). Mục 1 yêu cầu để dụng cụ về chỗ cũ; mục 2 nhắc đừng ở phòng tắm lâu; mục 4 cấm mở nhạc to sau 11 giờ.
+    display_answer: 수건은 집에서 안 가져와도 돼요.
+
+  - key: ko:exercise:rf-rev-mcq-homemade-bread
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-neyo
+    prompt:
+      stem: "Bạn cùng phòng mang ra một ổ bánh mì tự nướng. Bạn ngạc nhiên. Chọn câu đúng: 와, 이 빵을 직접 ___!"
+      stem_lang: vi
+      options:
+        - { id: f6t, text: 만들었네요, lang: ko }
+        - { id: i3b, text: 만들었지 마세요, lang: ko }
+        - { id: n8v, text: 만들었도 돼요, lang: ko }
+        - { id: w2q, text: 만들어겠어요, lang: ko }
+    answer:
+      correct_option_id: f6t
+    explanation:
+      vi: Vừa phát hiện bạn đã tự làm bánh → quá khứ + -네요 → 만들었네요. Các phương án còn lại sai cả nghĩa lẫn hình thức (-지 마세요, -아/어도 돼요, -겠어요 không gắn như vậy).
+    display_answer: 만들었네요
+
+  - key: ko:exercise:rf-rev-wb-valuables
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-samulham
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Đừng để đồ quý giá trong tủ đồ.\""
+      tokens:
+        - { id: t3, text: 넣지 }
+        - { id: t5, text: 않아요 }
+        - { id: t2, text: 귀중품을 }
+        - { id: t4, text: 마세요 }
+        - { id: t1, text: 사물함에 }
+        - { id: t6, text: 넣어도 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: '"Đừng" = -지 마세요 → 넣지 마세요. 사물함에 (vào tủ) và 귀중품을 (đồ quý) đổi chỗ cho nhau được. 않아요 và 넣어도 là token thừa.'
+    display_answer: 사물함에 귀중품을 넣지 마세요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:rf-rev-fill-treadmill
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-d-irregular
+    prompt:
+      template: "(Ở phòng gym, tôi vừa đi bộ trên máy chạy vừa nghe nhạc.) 헬스장에서 러닝머신 위를 {{b1}} 음악을 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [걸으면서]
+        b2: [들어요]
+    known_wrong:
+      - answer: 걷으면서
+        feedback_vi: 걷다 là bất quy tắc ㄷ - trước 으 ㄷ đổi thành ㄹ → 걸으면서.
+        error_tag: d_irregular
+      - answer: 걸면서
+        feedback_vi: Thân 걸- (từ 걷다) có patchim ㄹ mới sinh nhưng vẫn thêm 으 - 걸으면서. 걸면서 là của 걸다 (treo).
+        error_tag: d_irregular
+      - answer: 듣어요
+        feedback_vi: 듣다 + 어요 → 들어요.
+        error_tag: d_irregular
+    explanation:
+      vi: 걷다 + -(으)면서 → 걸으면서 (ㄷ → ㄹ trước 으); 듣다 + 어요 → 들어요. Hai hành động cùng lúc dùng -(으)면서.
+    display_answer: 헬스장에서 러닝머신 위를 걸으면서 음악을 들어요.
+
+  - key: ko:exercise:rf-rev-fill-towel-clothes
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-ado-doeda
+    prompt:
+      template: "(Khăn thì không cần mang cũng được. Nhưng nhất định phải mặc đồ tập.) 수건은 안 {{b1}} 돼요. 하지만 운동복은 꼭 {{b2}} 해요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [가져와도, 가지고 와도, 챙겨 와도]
+        b2: [입어야]
+    known_wrong:
+      - answer: 가져오면
+        feedback_vi: 안 가져오면 돼요 là "chỉ cần không mang là được" - khác ý. "Không cần mang" là 안 가져와도 돼요.
+        error_tag: an_ado_confusion
+      - answer: 입어도
+        feedback_vi: Câu gốc là "phải mặc" - -아/어야 해요 → 입어야 해요.
+        error_tag: obligation_form
+      - answer: 입으면
+        feedback_vi: '"Phải" là -아/어야 해요; 입으면 해요 không có nghĩa.'
+        error_tag: obligation_form
+    explanation:
+      vi: 안 + -아/어도 돼요 = không cần; -아/어야 해요 = phải. Hai cấu trúc trông giống nhau (-아/어도 / -아/어야) nhưng nghĩa ngược nhau.
+    display_answer: 수건은 안 가져와도 돼요. 하지만 운동복은 꼭 입어야 해요.
+
+  - key: ko:exercise:rf-rev-translate-machine
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-moreuda
+    prompt:
+      source_text: Tôi không biết cách dùng cái máy này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 기계 사용법을 몰라요.
+        - 이 기계 사용 방법을 몰라요.
+        - 이 기계 쓰는 방법을 몰라요.
+        - 이 기계를 쓰는 방법을 몰라요.
+        - 이 기계를 사용하는 방법을 몰라요.
+        - 저는 이 기계 사용법을 몰라요.
+        - 저는 이 기계 사용 방법을 몰라요.
+        - 저는 이 기계를 쓰는 방법을 몰라요.
+        - 이 기계 사용법을 잘 몰라요.
+        - 이 기계 쓰는 법을 몰라요.
+        - 이 기계를 쓰는 법을 몰라요.
+        - 이 기계 사용법을 모르겠어요.
+        - 이 기계 사용 방법을 모르겠어요.
+    known_wrong:
+      - answer: 이 기계 사용법을 모라요.
+        feedback_vi: 모르다 là bất quy tắc 르 - 몰라요 (hai ㄹ).
+        error_tag: reu_irregular
+      - answer: 이 기계 사용법을 안 알아요.
+        feedback_vi: '"Không biết" dùng động từ riêng 모르다 - 몰라요; không nói 안 알아요.'
+        error_tag: an_alda
+      - answer: 이 기계 사용법을 모르어요.
+        feedback_vi: 르 + 어요 → ㅡ rơi và thêm ㄹ → 몰라요.
+        error_tag: reu_irregular
+    explanation:
+      vi: '"Không biết" = 모르다 → 몰라요 (르 bất quy tắc). "Cách dùng" = 사용법 / 사용 방법 / 쓰는 방법. 모르겠어요 nghe mềm hơn, rất hay dùng khi nhờ giúp.'
+    display_answer: 이 기계 사용법을 몰라요.
+
+  - key: ko:exercise:rf-rev-translate-newcomer
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-jiyo
+    prompt:
+      source_text: (Nhân viên nói lịch sự với khách) Bạn mới đến lần đầu đúng không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 처음 오셨죠?
+        - 처음 오셨지요?
+        - 오늘 처음 오셨죠?
+        - 오늘 처음 오셨지요?
+        - 처음 오신 거죠?
+        - 처음 오신 분이죠?
+        - 처음 오신 분이지요?
+        - 여기 처음 오셨죠?
+        - 여기 처음 오셨지요?
+        - 처음 오셨죠, 회원님?
+        - 회원님, 처음 오셨죠?
+        - 회원님, 처음 오셨지요?
+    known_wrong:
+      - answer: 처음 오세요?
+        feedback_vi: Việc khách đến đã xảy ra rồi nên dùng quá khứ - 오셨죠?.
+        error_tag: tense
+      - answer: 처음 오셨겠어요?
+        feedback_vi: -겠어요 là phỏng đoán, không dùng để hỏi xác nhận trực tiếp người nghe - 오셨죠?.
+        error_tag: jiyo_vs_gesseoyo
+      - answer: 처음 오지 마세요.
+        feedback_vi: -지 마세요 là "đừng đến" - hoàn toàn khác nghĩa.
+        error_tag: ji_maseyo_misuse
+    explanation:
+      vi: Hỏi xác nhận điều mình đoán chắc → -죠? / -지요?; với khách dùng kính ngữ quá khứ 오셨-.
+    display_answer: 처음 오셨죠?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:rf-rev-mcq-two-hours
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-gesseoyo
+    prompt:
+      stem: "Bạn cùng phòng kể: \"오늘 처음 헬스장에 가서 두 시간 동안 운동했어요.\" Bạn muốn nói \"Ngay buổi đầu mà hai tiếng á? Mai chắc đau khắp người đấy.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: d4x, text: 처음부터 두 시간이요? 내일 온몸이 아프겠어요., lang: ko }
+        - { id: g7c, text: 처음부터 두 시간이요? 내일 온몸이 아팠지요?, lang: ko }
+        - { id: j1r, text: 처음부터 두 시간이요? 내일 온몸이 아파도 돼요., lang: ko }
+        - { id: q6n, text: 처음부터 두 시간이요? 내일 온몸이 안 아파요., lang: ko }
+    answer:
+      correct_option_id: d4x
+    explanation:
+      vi: Đoán chuyện ngày mai từ điều vừa nghe → -겠어요 (아프겠어요). 아팠지요? là hỏi xác nhận chuyện quá khứ - không hợp với 내일; 아파도 돼요 là "đau cũng được"; 안 아파요 là khẳng định không đau.
+    display_answer: 처음부터 두 시간이요? 내일 온몸이 아프겠어요.
+
+  - key: ko:exercise:rf-rev-mcq-correct-conjugation
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:rf-gram-reu-irregular
+    prompt:
+      stem: Câu nào chia động từ đúng?
+      stem_lang: vi
+      options:
+        - { id: s9e, text: 룸메이트가 노래를 정말 잘 불러요., lang: ko }
+        - { id: a5u, text: 길을 몰라서 경비 아저씨에게 묻었어요., lang: ko }
+        - { id: v8l, text: 할머니는 혼자 부산에 살으세요., lang: ko }
+        - { id: h3o, text: 푹 자면 감기가 금방 낫아요., lang: ko }
+    answer:
+      correct_option_id: s9e
+    explanation:
+      vi: 부르다 (르) → 불러요 là đúng. 묻다 "hỏi" là bất quy tắc ㄷ → 물었어요; 살다 + -(으)세요 → 사세요; 낫다 (ㅅ) → 나아요.
+    display_answer: 룸메이트가 노래를 정말 잘 불러요.
+
+  - key: ko:exercise:rf-rev-translate-shower-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-helseujang
+    prompt:
+      source_text: 헬스장 샤워실은 써도 되지만 수건은 직접 가져와야 해요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Được dùng phòng tắm của phòng gym nhưng phải tự mang khăn.
+        - Có thể dùng phòng tắm ở phòng gym nhưng phải tự mang khăn.
+        - Phòng tắm của phòng gym thì dùng được nhưng khăn thì phải tự mang.
+        - Phòng tắm ở phòng gym dùng được nhưng khăn phải tự mang theo.
+        - Bạn được dùng phòng tắm của phòng gym nhưng phải tự mang khăn.
+        - Bạn có thể dùng phòng tắm ở phòng gym nhưng phải tự mang khăn theo.
+        - Được dùng nhà tắm của phòng gym nhưng phải tự mang khăn tắm.
+        - Phòng tắm của phòng tập thì được dùng nhưng khăn thì phải tự mang.
+        - Được sử dụng phòng tắm ở phòng gym nhưng phải tự mang khăn.
+        - Phòng tắm phòng gym dùng cũng được nhưng phải tự mang khăn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không được dùng phòng tắm của phòng gym và phải tự mang khăn.
+        feedback_vi: 써도 되지만 là "được dùng, nhưng…".
+        error_tag: permission_vs_prohibition
+      - answer: Được dùng phòng tắm của phòng gym và không cần mang khăn.
+        feedback_vi: 가져와야 해요 là "phải mang", không phải "không cần mang".
+        error_tag: obligation_missed
+    explanation:
+      vi: -아/어도 되지만 = được… nhưng; -아/어야 해요 = phải; 직접 = tự mình.
+    display_answer: Được dùng phòng tắm của phòng gym nhưng phải tự mang khăn.
+
+  - key: ko:exercise:rf-rev-translate-spacious-gym
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-neyo
+    prompt:
+      source_text: (Lần đầu bước vào) Ôi, phòng gym này rộng thật đấy!
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 와, 이 헬스장 정말 넓네요!
+        - 와, 이 헬스장은 정말 넓네요!
+        - 와, 이 헬스장이 정말 넓네요!
+        - 와, 헬스장이 정말 넓네요!
+        - 와, 이 헬스장 진짜 넓네요!
+        - 와, 헬스장이 진짜 넓네요!
+        - 이 헬스장 정말 넓네요!
+        - 이 헬스장은 정말 넓네요!
+        - 이 헬스장이 정말 넓네요!
+        - 헬스장이 정말 넓네요!
+        - 이 헬스장 진짜 넓네요!
+        - 와, 이 헬스장 너무 넓네요!
+        - 우와, 이 헬스장 정말 넓네요!
+    known_wrong:
+      - answer: 와, 이 헬스장 정말 넓으네요!
+        feedback_vi: -네요 không thêm 으 - 넓네요 [널레요].
+        error_tag: neyo_form
+      - answer: 와, 이 헬스장 정말 넓지요?
+        feedback_vi: -지요? là hỏi xác nhận; bạn vừa bước vào và thốt lên → -네요.
+        error_tag: neyo_vs_jiyo
+      - answer: 와, 이 헬스장 정말 넓겠어요!
+        feedback_vi: Bạn đang tận mắt thấy, không cần đoán - dùng -네요.
+        error_tag: neyo_vs_gesseoyo
+    explanation:
+      vi: Vừa nhìn thấy và thốt lên → -네요. 넓다 + 네요 → 넓네요, đọc [널레요] (ㄼ đọc ㄹ, ㄴ gặp ㄹ thành ㄹ).
+    display_answer: 와, 이 헬스장 정말 넓네요!

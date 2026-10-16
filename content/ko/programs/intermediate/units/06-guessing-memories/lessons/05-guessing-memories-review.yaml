@@ -1,0 +1,435 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:guessing-memories-review
+order_index: 5
+level: topik4
+title:
+  vi: Ôn tập - Họp lớp sau mười lăm năm & chuyện phiếm ở văn phòng
+objectives:
+  - vi: Hiểu cuộc gặp lại bạn cũ ở buổi họp lớp (반말 giữa bạn bè) và một bài nhật ký kể lại buổi họp (văn viết -다).
+  - vi: Nghe hiểu và tham gia chuyện phiếm ở văn phòng bằng các mức phỏng đoán - -(으)ㄹ지도 모르다, -(으)ㄹ 리가 없다, -(으)ㄴ/는 모양이다.
+  - vi: Dùng lại -아/어 보이다, -(으)ㄴ/는 척하다, -(으)ㄴ/는 줄 알았다, -는지, -던, -았/었던, -더니.
+estimated_minutes: 25
+skills: [reading, listening, grammar, speaking]
+prerequisites: [ko:lesson:recollection]
+items:
+  - item: ko:item:gm-orenmanida
+  - item: ko:item:gm-dongchanghoe
+  - item: ko:item:gm-gram-a-boida
+    role: reuse
+  - item: ko:item:gm-gram-neun-cheokada
+    role: reuse
+  - item: ko:item:gm-gram-eulji-do-moreuda
+    role: reuse
+  - item: ko:item:gm-gram-eul-riga-eopda
+    role: reuse
+  - item: ko:item:gm-gram-neun-moyangida
+    role: reuse
+  - item: ko:item:gm-gram-neun-jul-alda
+    role: reuse
+  - item: ko:item:gm-gram-neunji
+    role: reuse
+  - item: ko:item:gm-gram-deon
+    role: reuse
+  - item: ko:item:gm-gram-atdeon
+    role: reuse
+  - item: ko:item:gm-gram-deoni
+    role: reuse
+  - item: ko:item:gm-dongchang
+    role: reuse
+  - item: ko:item:gm-somun
+    role: reuse
+  - item: ko:item:gm-seungjinhada
+    role: reuse
+  - item: ko:item:gm-jollida
+    role: reuse
+  - item: ko:item:gm-gieongnada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sora đi họp lớp cấp ba sau mười lăm năm và gặp lại người bạn thân Minho. Hôm sau ở công ty, cả phòng lại xôn xao vì một tin đồn. Bài ôn dùng lại toàn bộ cấu trúc phỏng đoán, nhầm tưởng và hồi tưởng của unit.
+  - type: explain
+    text:
+      vi: "Bạn cũ gặp lại thường nói 반말: 진짜 오랜만이다! 하나도 안 변했네. Hãy để ý đuôi -네 (= -네요 bỏ 요) và cách kể \"cứ tưởng\" - 네가 아직 부산에 사는 줄 알았어."
+  - type: explain
+    text:
+      vi: "Chuyện phiếm ở văn phòng là nơi các mức độ chắc chắn được dùng nhiều nhất: -는 모양이에요 (có dấu hiệu), -(으)ㄹ지도 몰라요 (có thể), -(으)ㄹ 리가 없어요 (không đời nào), 설마요! (làm gì có). Người Hàn giữ ý (눈치) nên ít khi khẳng định thẳng về chuyện của người khác."
+  - type: deep_explain
+    text:
+      vi: "Nhật ký và bài viết về kỷ niệm thường dùng văn viết -다 kết hợp -던 / -았/었던 để gợi hoài niệm: 늘 조용하던 친구, 반장이었던 민호. Khi đọc, hãy hỏi - việc này lặp lại (-던), đã kết thúc hẳn (-았/었던), hay là thay đổi người viết đã quan sát (-더니)? Trả lời được câu đó là bạn hiểu dòng thời gian của cả đoạn văn."
+  - type: example
+    target: 진짜 오랜만이다! 너는 하나도 안 변했네.
+    target_lang: ko
+    translation:
+      vi: Lâu quá rồi nhỉ! Cậu chẳng thay đổi gì cả.
+    note:
+      vi: 반말 giữa bạn cũ - 오랜만이다, -네.
+  - type: example
+    target: 나는 네가 아직 부산에서 일하는 줄 알았어.
+    target_lang: ko
+    translation:
+      vi: Mình cứ tưởng cậu vẫn đang làm việc ở Busan.
+  - type: example
+    target: 반장이었던 민호가 지금은 작은 카페를 운영하고 있었다.
+    target_lang: ko
+    translation:
+      vi: Minho - người từng là lớp trưởng - giờ đang kinh doanh một quán cà phê nhỏ.
+  - type: example
+    target: 김 과장님이 아침부터 계속 웃으시네요. 좋은 소식이 있는 모양이에요.
+    target_lang: ko
+    translation:
+      vi: Anh Kim cứ cười suốt từ sáng. Hình như có tin vui.
+  - type: common_mistake
+    wrong: 그 친구가 거기에서 일하는지 줄 알았어요.
+    right: 그 친구가 거기에서 일하는 줄 알았어요.
+    target_lang: ko
+    note:
+      vi: Không trộn hai mẫu - "cứ tưởng" là -는 줄 알았다, câu hỏi lồng là -는지 알다. Hai mẫu không ghép với nhau.
+  - type: common_mistake
+    wrong: 제가 동창회에 가더니 옛날 친구들이 다 있었어요.
+    right: 제가 동창회에 갔더니 옛날 친구들이 다 있었어요.
+    target_lang: ko
+    note:
+      vi: Hành động của chính mình → phát hiện dùng -았/었더니; -더니 chỉ dành cho điều mình quan sát ở người khác.
+  - type: summary
+    points:
+      - vi: Ấn tượng - A-아/어 보이다; giả vờ - -(으)ㄴ/는 척하다.
+      - vi: Mức độ chắc chắn - -(으)ㄹ 리가 없다 < -(으)ㄹ지도 모르다 < -는 모양이다.
+      - vi: Nhầm tưởng - -(으)ㄴ/는 줄 알았다 / 몰랐다; câu hỏi lồng - -는지 / -(으)ㄴ지 / N인지.
+      - vi: Hồi tưởng - -던 (lặp lại, dở dang), -았/었던 (đã xong, nay khác), -더니 (quan sát → thay đổi).
+      - vi: 오랜만이에요 · 동창회 · 동창 · 소문 · 승진하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:gm-rev-listen-reunion
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-orenmanida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 어머, 진짜 오랜만이다! 하나도 안 변했네. 나는 네가 아직 부산에 사는 줄 알았어.
+      options:
+        - { id: u3f, text: "Ôi, lâu quá rồi! Cậu chẳng thay đổi gì. Mình cứ tưởng cậu vẫn sống ở Busan.", lang: vi }
+        - { id: j7a, text: "Ôi, lâu quá rồi! Cậu thay đổi nhiều quá. Mình biết cậu vẫn sống ở Busan.", lang: vi }
+        - { id: e2y, text: "Ôi, mới gặp hôm qua mà! Mình không biết cậu sống ở Busan.", lang: vi }
+        - { id: b8m, text: "Ôi, lâu quá rồi! Cậu có biết mình đang sống ở Busan không?", lang: vi }
+    answer:
+      correct_option_id: u3f
+    explanation:
+      vi: 오랜만이다 = lâu rồi mới gặp; 하나도 안 변했네 = chẳng thay đổi chút nào; 사는 줄 알았어 = cứ tưởng (cậu) đang sống - nghĩa là thực tế không còn sống ở Busan.
+    display_answer: "Ôi, lâu quá rồi! Cậu chẳng thay đổi gì. Mình cứ tưởng cậu vẫn sống ở Busan."
+
+  - key: ko:exercise:gm-rev-mcq-reading-diary
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-dongchanghoe
+    prompt:
+      stem: "다음 글을 읽고 내용과 같은 것을 고르십시오.\n어제 고등학교 동창회에 갔다. 십오 년 만에 만난 친구들은 모두 많이 변해 있었다. 반장이었던 민호는 회사를 그만두고 작은 카페를 운영하고 있었다. 학교 다닐 때 늘 조용하던 지수는 그날 제일 말을 많이 했다. 지수가 그렇게 재미있는 사람인 줄 몰랐다."
+      stem_lang: ko
+      options:
+        - { id: r6c, text: 민호는 학교 다닐 때 반장이었다., lang: ko }
+        - { id: h4t, text: 민호는 지금도 회사에 다니고 있다., lang: ko }
+        - { id: l9e, text: 지수는 학교 다닐 때 말이 많았다., lang: ko }
+        - { id: w1o, text: 글쓴이는 지수가 재미있는 사람인 것을 원래 알고 있었다., lang: ko }
+    answer:
+      correct_option_id: r6c
+    explanation:
+      vi: 반장이었던 민호 = Minho, người từng là lớp trưởng. Minho đã nghỉ việc mở quán cà phê; Jisu ngày xưa luôn ít nói (조용하던); 재미있는 사람인 줄 몰랐다 = trước đây không biết Jisu vui tính.
+    display_answer: 민호는 학교 다닐 때 반장이었다.
+
+  - key: ko:exercise:gm-rev-mcq-yawning
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-jollida
+    prompt:
+      stem: "Đồng nghiệp ngáp liên tục trong cuộc họp. Bạn nói nhỏ: \"Hôm nay trông bạn buồn ngủ lắm.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: i5p, text: 오늘 많이 졸려 보여요., lang: ko }
+        - { id: o2s, text: 오늘 많이 졸리 보여요., lang: ko }
+        - { id: z8k, text: 오늘 많이 졸린 보여요., lang: ko }
+        - { id: c3d, text: 오늘 많이 졸려 봐요., lang: ko }
+    answer:
+      correct_option_id: i5p
+    explanation:
+      vi: 졸리다 + -아/어 보이다 → 졸려 보여요. 졸리 / 졸린 không ghép trực tiếp với 보이다; 졸려 봐요 là "thử buồn ngủ" - sai nghĩa.
+    display_answer: 오늘 많이 졸려 보여요.
+
+  - key: ko:exercise:gm-rev-wb-didnt-know-married
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-neun-jul-alda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi hoàn toàn không biết là bạn cùng trường đó đã kết hôn.\""
+      tokens:
+        - { id: t3, text: 결혼한 줄 }
+        - { id: t5, text: 결혼할 리가 }
+        - { id: t1, text: 그 동창이 }
+        - { id: t4, text: 몰랐어요 }
+        - { id: t2, text: 전혀 }
+        - { id: t6, text: 결혼하더니 }
+    answer:
+      orders:
+        - [t1, t3, t2, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: '"Không biết là đã…" = V-(으)ㄴ 줄 몰랐어요. 전혀 đứng ngay trước 몰랐어요 hoặc ở đầu câu. 결혼할 리가 và 결혼하더니 là token thừa.'
+    display_answer: 그 동창이 결혼한 줄 전혀 몰랐어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:gm-rev-fill-changed-job
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-neun-moyangida
+    prompt:
+      template: "(Dạo này Jisu không đến công ty. Hình như cô ấy đã chuyển chỗ làm.) 지수 씨가 요즘 회사에 안 나와요. 회사를 {{b1}} 모양이에요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [옮긴, 그만둔, 바꾼]
+    known_wrong:
+      - answer: 옮기는
+        feedback_vi: Việc đã xảy ra rồi → -(으)ㄴ 모양이다 (옮긴); -는 là đang diễn ra.
+        error_tag: moyang_tense
+      - answer: 옮길
+        feedback_vi: -(으)ㄹ 모양이다 là dự định sắp tới; cô ấy đã không đến công ty nữa → 옮긴.
+        error_tag: moyang_tense
+      - answer: 옮겼는
+        feedback_vi: Định ngữ quá khứ của động từ là -(으)ㄴ - 옮긴 모양이에요.
+        error_tag: adnominal_past
+    explanation:
+      vi: Đoán một việc đã xảy ra từ dấu hiệu (không đến công ty) → V-(으)ㄴ 모양이다. 회사를 옮기다 = chuyển công ty.
+    display_answer: 지수 씨가 요즘 회사에 안 나와요. 회사를 옮긴 모양이에요.
+
+  - key: ko:exercise:gm-rev-fill-manager-knows
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-eul-riga-eopda
+    prompt:
+      template: "(Không lẽ nào trưởng phòng lại không biết chuyện đó.) 부장님이 그 일을 {{b1}} 리가 없어요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [모르실, 모를]
+    known_wrong:
+      - answer: 모르시는
+        feedback_vi: 리가 없다 chỉ đi với -(으)ㄹ - 모르실 리가 없어요.
+        error_tag: riga_form
+      - answer: 몰를
+        feedback_vi: 르 bất quy tắc chỉ xảy ra trước -아/어; trước -(으)ㄹ giữ nguyên - 모를.
+        error_tag: reu_irregular_overuse
+      - answer: 모르실지도
+        feedback_vi: -(으)ㄹ지도 đi với 모르다; trước 리가 없어요 chỉ cần 모르실.
+        error_tag: structure_mix
+    explanation:
+      vi: V-(으)ㄹ 리가 없다 + kính ngữ với 부장님 → 모르실 리가 없어요. 모르다 + -(으)ㄹ → 모를 (không đổi 르).
+    display_answer: 부장님이 그 일을 모르실 리가 없어요.
+
+  - key: ko:exercise:gm-rev-translate-abroad
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-neun-jul-alda
+    prompt:
+      source_text: Lâu lắm rồi mới gặp! Tôi cứ tưởng bạn đang ở nước ngoài.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 정말 오랜만이에요! 외국에 있는 줄 알았어요.
+        - 정말 오랜만이에요! 해외에 있는 줄 알았어요.
+        - 정말 오랜만이에요! 외국에 계신 줄 알았어요.
+        - 정말 오랜만이에요! 해외에 계신 줄 알았어요.
+        - 오랜만이에요! 외국에 있는 줄 알았어요.
+        - 오랜만이에요! 해외에 있는 줄 알았어요.
+        - 진짜 오랜만이에요! 외국에 있는 줄 알았어요.
+        - 정말 오랜만이에요! 저는 외국에 있는 줄 알았어요.
+        - 정말 오랜만이에요! 아직 외국에 있는 줄 알았어요.
+        - 정말 오랜만이에요! 외국에 사는 줄 알았어요.
+        - 정말 오랜만이에요! 해외에 사는 줄 알았어요.
+        - 정말 오랜만이에요! 외국에 사시는 줄 알았어요.
+        - 정말 오랜만이네요! 외국에 있는 줄 알았어요.
+    known_wrong:
+      - answer: 정말 오랜만이에요! 외국에 있는지 알았어요.
+        feedback_vi: '"Cứ tưởng" là -는 줄 알았어요; -는지 là câu hỏi lồng.'
+        error_tag: jul_vs_neunji
+      - answer: 정말 오랫만이에요! 외국에 있는 줄 알았어요.
+        feedback_vi: Viết 오랜만 (rút từ 오래간만), không phải 오랫만.
+        error_tag: spelling_oraenman
+      - answer: 정말 오랜만이에요! 외국에 있는 줄 몰랐어요.
+        feedback_vi: 줄 몰랐어요 là "không biết là (bạn) ở nước ngoài" - ngược ý "cứ tưởng".
+        error_tag: jul_alda_molda
+    explanation:
+      vi: 오랜만이에요 = lâu rồi mới gặp; V-는 줄 알았어요 = cứ tưởng (đang ở nước ngoài, nhưng thực ra không). 있다 dùng -는 줄.
+    display_answer: 정말 오랜만이에요! 외국에 있는 줄 알았어요.
+
+  - key: ko:exercise:gm-rev-translate-first-met
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gieongnada
+    prompt:
+      source_text: Bạn có nhớ chúng ta gặp nhau lần đầu ở đâu không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 우리가 처음 어디에서 만났는지 기억나요?
+        - 우리가 처음 어디서 만났는지 기억나요?
+        - 우리 처음 어디에서 만났는지 기억나요?
+        - 우리 처음 어디서 만났는지 기억나요?
+        - 우리가 어디에서 처음 만났는지 기억나요?
+        - 우리가 어디서 처음 만났는지 기억나요?
+        - 우리가 처음 어디에서 만났는지 기억해요?
+        - 우리가 어디에서 처음 만났는지 기억해요?
+        - 우리가 처음 어디에서 만났는지 기억나세요?
+        - 우리가 어디에서 처음 만났는지 기억하세요?
+        - 우리가 처음 만난 곳이 어디인지 기억나요?
+        - 우리가 처음 만난 곳이 어딘지 기억나요?
+    known_wrong:
+      - answer: 우리가 처음 어디에서 만났어요 기억나요?
+        feedback_vi: Câu hỏi lồng phải đổi đuôi - 만났는지 기억나요?.
+        error_tag: embedded_question
+      - answer: 우리가 처음 어디에서 만난지 기억나요?
+        feedback_vi: Câu hỏi lồng về việc đã xảy ra với động từ dùng -았/었는지 - 만났는지.
+        error_tag: embedded_tense
+      - answer: 우리가 처음 어디에서 만난 줄 기억나요?
+        feedback_vi: -(으)ㄴ 줄 là "tưởng là"; hỏi "ở đâu" cần -는지.
+        error_tag: jul_vs_neunji
+    explanation:
+      vi: '"Ở đâu đã gặp?" lồng trước 기억나다 → 어디에서 만났는지 (-았/었는지). 기억나요? (có nhớ ra không) hoặc 기억해요? đều tự nhiên.'
+    display_answer: 우리가 처음 어디에서 만났는지 기억나요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:gm-rev-mcq-office-rumor
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-somun
+    prompt:
+      stem: "Đồng nghiệp nói: \"박 대리님이 회사를 그만두신대요!\" Bạn không tin vì anh Park vừa được thăng chức tháng trước. Câu nào thể hiện đúng thái độ đó?"
+      stem_lang: vi
+      options:
+        - { id: k6w, text: 설마요. 지난달에 승진하셨는데 그만두실 리가 없어요., lang: ko }
+        - { id: f1x, text: 그렇군요. 지난달에 승진하셨는데 그만두실지도 몰라요., lang: ko }
+        - { id: q4b, text: 설마요. 지난달에 승진하셨는데 그만두는 척하세요., lang: ko }
+        - { id: y9r, text: 설마요. 지난달에 승진하셨는데 그만두신 줄 알았어요., lang: ko }
+    answer:
+      correct_option_id: k6w
+    explanation:
+      vi: Không tin → 설마요 + -(으)ㄹ 리가 없어요. -(으)ㄹ지도 몰라요 là chấp nhận khả năng; -는 척하세요 là bảo "hãy giả vờ"; -(으)ㄴ 줄 알았어요 là "tôi cứ tưởng anh ấy đã nghỉ" - mâu thuẫn với 설마요.
+    display_answer: 설마요. 지난달에 승진하셨는데 그만두실 리가 없어요.
+
+  - key: ko:exercise:gm-rev-mcq-correct-sentence
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:gm-gram-deoni
+    prompt:
+      stem: Câu nào đúng ngữ pháp và tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: s2g, text: 제가 자주 가던 빵집이 지난달에 문을 닫았어요., lang: ko }
+        - { id: d5n, text: 제가 어제 늦게까지 공부하더니 오늘 피곤해요., lang: ko }
+        - { id: m7j, text: 동생이 열심히 공부했더니 장학금을 받았어요., lang: ko }
+        - { id: a4h, text: 그 친구는 지금 조용하던 사람이에요., lang: ko }
+    answer:
+      correct_option_id: s2g
+    explanation:
+      vi: 자주 가던 빵집 - thói quen lặp lại trong quá khứ → -던 đúng. -더니 không dùng cho chính mình (제가); -았/었더니 không dùng cho người khác (동생이); -던 nói về quá khứ nên mâu thuẫn với 지금.
+    display_answer: 제가 자주 가던 빵집이 지난달에 문을 닫았어요.
+
+  - key: ko:exercise:gm-rev-translate-comedian-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gm-gram-deon
+    prompt:
+      source_text: 학교 다닐 때 그렇게 조용하던 친구가 지금은 유명한 개그맨이 됐대요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nghe nói người bạn hồi đi học trầm tính như thế giờ đã trở thành diễn viên hài nổi tiếng.
+        - Nghe nói cậu bạn hồi đi học ít nói như thế mà giờ đã thành diễn viên hài nổi tiếng.
+        - Nghe nói người bạn từng rất trầm lặng hồi đi học nay đã trở thành diễn viên hài nổi tiếng.
+        - Nghe nói người bạn hồi đi học rất ít nói giờ đã thành nghệ sĩ hài nổi tiếng.
+        - Nghe nói người bạn trầm tính hồi đi học bây giờ đã trở thành diễn viên hài nổi tiếng.
+        - Nghe bảo người bạn hồi đi học ít nói như vậy giờ đã thành diễn viên hài nổi tiếng.
+        - Nghe nói đứa bạn hồi đi học trầm như thế giờ đã thành diễn viên hài nổi tiếng.
+        - Nghe nói người bạn hồi còn đi học rất trầm tính giờ là diễn viên hài nổi tiếng.
+        - Nghe nói người bạn hồi đi học im lặng như thế giờ đã trở thành danh hài nổi tiếng.
+        - Nghe nói người bạn hồi đi học ít nói như thế giờ đã thành một diễn viên hài nổi tiếng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người bạn hồi đi học rất ồn ào giờ đã trở thành diễn viên hài nổi tiếng.
+        feedback_vi: 조용하던 là "từng trầm tính, ít nói", không phải "ồn ào"; và 됐대요 là "nghe nói".
+        error_tag: meaning_mismatch
+      - answer: Nghe nói người bạn hồi đi học trầm tính như thế sẽ trở thành diễn viên hài nổi tiếng.
+        feedback_vi: 됐대요 là "đã trở thành" (nghe nói), không phải "sẽ".
+        error_tag: tense
+    explanation:
+      vi: A-던 N - người bạn hồi đó (từng) trầm tính; 개그맨 = diễn viên hài; -이/가 됐대요 = nghe nói đã trở thành.
+    display_answer: Nghe nói người bạn hồi đi học trầm tính như thế giờ đã trở thành diễn viên hài nổi tiếng.
+
+  - key: ko:exercise:gm-rev-translate-pretend-rumor
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:gm-gram-neun-cheokada
+    prompt:
+      source_text: Anh ấy giả vờ không biết, nhưng hình như đã nghe tin đồn rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 그 사람은 모르는 척했지만 소문을 들은 모양이에요.
+        - 그 사람은 모르는 척했지만 벌써 소문을 들은 모양이에요.
+        - 그 사람은 모르는 척했지만 이미 소문을 들은 모양이에요.
+        - 그 사람은 모르는 척하지만 소문을 들은 모양이에요.
+        - 그 사람은 모르는 척하지만 이미 소문을 들은 모양이에요.
+        - 그분은 모르는 척했지만 소문을 들은 모양이에요.
+        - 그분은 모르는 척하셨지만 소문을 들으신 모양이에요.
+        - 그 사람은 모르는 척했지만 소문을 들었나 봐요.
+        - 그 사람은 모르는 척했지만 이미 소문을 들었나 봐요.
+        - 그 사람은 모르는 척했지만 소문을 들은 것 같아요.
+        - 그 사람은 모르는 척했지만 이미 소문을 들은 것 같아요.
+        - 그 사람은 모르는 척했는데 소문을 들은 모양이에요.
+        - 그 남자는 모르는 척했지만 소문을 들은 모양이에요.
+    known_wrong:
+      - answer: 그 사람은 모른 척했지만 소문을 듣은 모양이에요.
+        feedback_vi: 듣다 là bất quy tắc ㄷ - 들은 모양이에요.
+        error_tag: d_irregular
+      - answer: 그 사람은 모르는 척했지만 소문을 듣는 모양이에요.
+        feedback_vi: Việc nghe tin đồn đã xảy ra → 들은 모양이에요 (-(으)ㄴ).
+        error_tag: moyang_tense
+      - answer: 그 사람은 몰라 보였지만 소문을 들은 모양이에요.
+        feedback_vi: '"Giả vờ không biết" là 모르는 척하다; -아/어 보이다 chỉ gắn vào tính từ.'
+        error_tag: boida_vs_cheok
+    explanation:
+      vi: '"Giả vờ không biết" = 모르는 척하다; "hình như đã nghe" = 들은 모양이에요 (듣다 → 들은, ㄷ bất quy tắc). -나 보다, -것 같다 cũng diễn đạt được ý "hình như".'
+    display_answer: 그 사람은 모르는 척했지만 소문을 들은 모양이에요.

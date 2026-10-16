@@ -1,0 +1,422 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:probability-guesses
+order_index: 2
+level: topik3
+title:
+  vi: Biết đâu…, không lẽ nào…, hình như… - -(으)ㄹ지도 모르다, -(으)ㄹ 리가 없다, -(으)ㄴ/는 모양이다
+objectives:
+  - vi: Nói khả năng "biết đâu, có khi" bằng V/A-(으)ㄹ지도 모르다 (cả quá khứ -았/었을지도).
+  - vi: Phủ nhận mạnh "không lẽ nào, làm gì có chuyện" bằng V/A-(으)ㄹ 리가 없다.
+  - vi: Đoán dựa trên dấu hiệu bằng V/A-(으)ㄴ/는 모양이다, so sánh với -나 보다 và -것 같다; từ vựng chuyện công sở - 소문, 승진하다, 퇴사하다, 사귀다, 헤어지다, 설마, 눈치.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading, speaking]
+prerequisites: [ko:lesson:looks-pretend]
+items:
+  - item: ko:item:gm-gram-eulji-do-moreuda
+  - item: ko:item:gm-gram-eul-riga-eopda
+  - item: ko:item:gm-gram-neun-moyangida
+  - item: ko:item:gm-somun
+  - item: ko:item:gm-seungjinhada
+  - item: ko:item:gm-toesahada
+  - item: ko:item:gm-sagwida
+  - item: ko:item:gm-heeojida
+  - item: ko:item:gm-seolma
+  - item: ko:item:gm-nunchi
+  - item: ko:item:gram-na-boda
+    role: reuse
+  - item: ko:item:gram-geot-gatda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn diễn đạt được các mức độ chắc chắn khác nhau - "biết đâu…", "không đời nào…", "hình như (nhìn là biết)…" - và hiểu những câu "buôn chuyện" quen thuộc ở công sở Hàn Quốc.
+  - type: explain
+    text:
+      vi: "V/A-(으)ㄹ지도 모르다 = \"có thể…, biết đâu…, có khi… cũng nên\": 비가 올지도 몰라요. Dù có 모르다 nhưng câu không có nghĩa \"không biết\" - người Việt hay dịch nhầm thành \"không biết có mưa không\". Việc có thể đã xảy ra dùng -았/었을지도 몰라요."
+  - type: explain
+    text:
+      vi: "V/A-(으)ㄹ 리가 없다 = \"không lẽ nào…, chắc chắn không thể…\" - người nói gần như 100% tin điều đó không xảy ra: 그 사람이 거짓말할 리가 없어요. Câu phản ứng ngắn rất hay gặp: 그럴 리가요! / 그럴 리가 없어요! (làm gì có chuyện đó!)."
+  - type: explain
+    text:
+      vi: "V-는 모양이다 / A-(으)ㄴ 모양이다 = \"hình như, chắc là\" khi đoán từ dấu hiệu nhìn thấy: 불이 꺼졌어요 → 다들 퇴근한 모양이에요. Giống -나 보다 đã học, nhưng nghe khách quan, trang trọng hơn; không dùng để nói về chính mình."
+  - type: deep_explain
+    text:
+      vi: "Thang độ chắc chắn từ thấp đến cao: -(으)ㄹ 리가 없다 (gần như không thể) → -(으)ㄹ지도 모르다 (có khả năng) → -(으)ㄹ 것 같다 (tôi nghĩ là) → -는 모양이다 / -나 보다 (có dấu hiệu rõ) → -(으)ㄹ 거예요 / 틀림없어요 (chắc chắn). Định ngữ trong 모양이다 theo thì: việc đang diễn ra -는 (오는 모양이다), việc đã xảy ra -(으)ㄴ (온 모양이다), dự định -(으)ㄹ (이사할 모양이다); 있다/없다 luôn đi với -는 (맛있는 모양이다). Trạng từ hay đi kèm - 혹시, 어쩌면 + -(으)ㄹ지도 모르다; 설마 + -(으)ㄹ 리가 없다."
+  - type: example
+    target: 금요일 저녁이라서 길이 많이 막힐지도 몰라요. 일찍 출발하세요.
+    target_lang: ko
+    translation:
+      vi: Tối thứ Sáu nên biết đâu đường tắc lắm. Bạn xuất phát sớm nhé.
+  - type: example
+    target: 어쩌면 우산을 지하철에 두고 내렸을지도 몰라요.
+    target_lang: ko
+    translation:
+      vi: Có khi tôi để quên ô trên tàu điện ngầm rồi xuống cũng nên.
+    note:
+      vi: Việc có thể đã xảy ra → -았/었을지도 몰라요.
+  - type: example
+    target: 설마 그 두 사람이 사귈 리가 없어요. 만나기만 하면 싸우잖아요.
+    target_lang: ko
+    translation:
+      vi: Không lẽ nào hai người đó lại hẹn hò. Cứ gặp nhau là cãi nhau còn gì.
+  - type: example
+    target: 김 대리님 표정이 요즘 아주 밝아요. 좋은 일이 있는 모양이에요.
+    target_lang: ko
+    translation:
+      vi: Dạo này nét mặt anh Kim rất tươi. Hình như có chuyện vui.
+    note:
+      vi: 있다 → 있는 모양이다 (있다/없다 dùng -는).
+  - type: example
+    target: 아이가 밥을 거의 안 먹었네요. 배가 안 고픈 모양이에요.
+    target_lang: ko
+    translation:
+      vi: Đứa bé gần như không ăn cơm. Chắc nó không đói.
+  - type: common_mistake
+    wrong: 내일 눈이 올 지도 몰라요.
+    right: 내일 눈이 올지도 몰라요.
+    target_lang: ko
+    note:
+      vi: -(으)ㄹ지도 viết liền thành một khối; chỉ cách trước 모르다.
+  - type: common_mistake
+    wrong: 저는 배가 고픈 모양이에요.
+    right: 저는 배가 고파요.
+    target_lang: ko
+    note:
+      vi: 모양이다 là đoán từ bên ngoài, không dùng cho cảm giác của chính mình - bạn biết rõ mình đói hay không.
+  - type: common_mistake
+    wrong: 민수 씨가 또 지각하는 리가 없어요.
+    right: 민수 씨가 또 지각할 리가 없어요.
+    target_lang: ko
+    note:
+      vi: 리가 없다 chỉ đi với định ngữ -(으)ㄹ (지각할, 갔을); không dùng -는 hay -(으)ㄴ.
+  - type: summary
+    points:
+      - vi: V/A-(으)ㄹ지도 모르다 - biết đâu, có khi; quá khứ -았/었을지도; hay đi với 혹시, 어쩌면.
+      - vi: V/A-(으)ㄹ 리가 없다 - không lẽ nào; 그럴 리가요! - làm gì có chuyện đó.
+      - vi: V-는 / A-(으)ㄴ / V-(으)ㄴ 모양이다 - hình như (dựa vào dấu hiệu); không dùng cho bản thân.
+      - vi: Mức chắc chắn - 리가 없다 < 지도 모르다 < 것 같다 < 모양이다 / 나 보다 < 거예요.
+      - vi: 소문 · 승진하다 · 퇴사하다 · 사귀다 · 헤어지다 · 설마 · 눈치가 빠르다 / 없다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:gm-prob-mcq-cancel-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-gram-eulji-do-moreuda
+    prompt:
+      stem: "내일 워크숍이 취소될지도 몰라요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: t2k, text: "Biết đâu buổi hội thảo ngày mai bị huỷ.", lang: vi }
+        - { id: g6n, text: "Tôi không biết buổi hội thảo ngày mai có bị huỷ không.", lang: vi }
+        - { id: z4e, text: "Buổi hội thảo ngày mai chắc chắn bị huỷ.", lang: vi }
+        - { id: u8w, text: "Buổi hội thảo ngày mai không thể bị huỷ.", lang: vi }
+    answer:
+      correct_option_id: t2k
+    explanation:
+      vi: -(으)ㄹ지도 모르다 là "có thể, biết đâu" - không phải "tôi không biết". "Không biết có… không" là -(으)ㄹ지 모르겠어요 (câu hỏi lồng); "không thể" là -(으)ㄹ 리가 없다.
+    display_answer: "Biết đâu buổi hội thảo ngày mai bị huỷ."
+
+  - key: ko:exercise:gm-prob-listen-empty-office
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-gram-neun-moyangida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 어? 사무실에 아무도 없네요. 다들 점심을 먹으러 간 모양이에요.
+      options:
+        - { id: c5r, text: "Ơ, văn phòng không có ai. Hình như mọi người đi ăn trưa rồi.", lang: vi }
+        - { id: i9a, text: "Ơ, văn phòng không có ai. Mọi người không thể đi ăn trưa được.", lang: vi }
+        - { id: x3h, text: "Ơ, văn phòng đông người quá. Chắc mọi người vừa ăn trưa xong.", lang: vi }
+        - { id: l7v, text: "Ơ, văn phòng không có ai. Tôi định đi ăn trưa.", lang: vi }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: 아무도 없네요 = không có ai cả; 간 모양이에요 = hình như đã đi (đoán từ việc văn phòng trống). -(으)ㄴ 모양이다 với động từ là việc đã xảy ra.
+    display_answer: "Ơ, văn phòng không có ai. Hình như mọi người đi ăn trưa rồi."
+
+  - key: ko:exercise:gm-prob-mcq-honest-friend
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-eul-riga-eopda
+    prompt:
+      stem: "Có người nói Sujin - người bạn cực kỳ thật thà của bạn - đã nói dối. Bạn hoàn toàn không tin. Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: o4d, text: 수진 씨가 거짓말을 했을 리가 없어요., lang: ko }
+        - { id: e1s, text: 수진 씨가 거짓말을 했을지도 몰라요., lang: ko }
+        - { id: r8y, text: 수진 씨가 거짓말을 한 모양이에요., lang: ko }
+        - { id: b5q, text: 수진 씨가 거짓말을 하는 척했어요., lang: ko }
+    answer:
+      correct_option_id: o4d
+    explanation:
+      vi: Phủ nhận mạnh → -(으)ㄹ 리가 없다; việc đã xảy ra → 했을 리가 없어요. -(으)ㄹ지도 몰라요 và -(으)ㄴ 모양이에요 là cho rằng có thể/hình như đúng - ngược thái độ của bạn.
+    display_answer: 수진 씨가 거짓말을 했을 리가 없어요.
+
+  - key: ko:exercise:gm-prob-fill-long-line-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-neun-moyangida
+    prompt:
+      template: "그 식당 앞에 사람들이 줄을 길게 서 있어요. 음식이 {{b1}} 모양이에요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Trước nhà hàng đó người ta xếp hàng dài. Hình như đồ ăn ngon."
+        - "Gợi ý: 맛있다 - 있다/없다 luôn dùng -는 trước 모양이다."
+    answer:
+      blanks:
+        b1: [맛있는]
+    known_wrong:
+      - answer: 맛있은
+        feedback_vi: Từ có 있다/없다 dùng định ngữ -는 - 맛있는.
+        error_tag: adnominal_itda
+      - answer: 맛있을
+        feedback_vi: -(으)ㄹ 모양이다 dùng cho dự định trong tương lai; ở đây đoán hiện tại - 맛있는.
+        error_tag: moyang_tense
+      - answer: 맛있어
+        feedback_vi: Trước 모양이다 cần định ngữ - 맛있는 모양이에요.
+        error_tag: moyang_form
+    explanation:
+      vi: Đoán từ dấu hiệu (hàng dài) → -는 모양이다. 맛있다 có 있다 nên dùng -는 → 맛있는 모양이에요.
+    display_answer: 그 식당 앞에 사람들이 줄을 길게 서 있어요. 음식이 맛있는 모양이에요.
+
+  - key: ko:exercise:gm-prob-wb-baby-asleep
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-eulji-do-moreuda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Có khi đứa bé đang ngủ cũng nên.\""
+      tokens:
+        - { id: t4, text: 몰라요 }
+        - { id: t5, text: 잘 리가 }
+        - { id: t2, text: 지금 }
+        - { id: t3, text: 자고 있을지도 }
+        - { id: t1, text: 아기가 }
+        - { id: t6, text: 알아요 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: '"Có khi… cũng nên" = -(으)ㄹ지도 몰라요; "đang ngủ" = 자고 있다 → 자고 있을지도 몰라요. 지금 đứng trước hoặc sau chủ ngữ đều được. 잘 리가 và 알아요 là token thừa.'
+    display_answer: 아기가 지금 자고 있을지도 몰라요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:gm-prob-fill-punctual
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-eul-riga-eopda
+    prompt:
+      template: "(Anh ấy rất đúng giờ, không lẽ nào lại đến muộn.) 그 사람은 시간을 잘 지키니까 {{b1}} 리가 없어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [늦을, 지각할]
+    known_wrong:
+      - answer: 늦는
+        feedback_vi: 리가 없다 chỉ đi với -(으)ㄹ - 늦을 리가 없어요.
+        error_tag: riga_form
+      - answer: 늦은
+        feedback_vi: 리가 없다 chỉ đi với -(으)ㄹ; việc đã xảy ra dùng 늦었을 리가.
+        error_tag: riga_form
+      - answer: 늦을지도
+        feedback_vi: -(으)ㄹ지도 đi với 모르다, không đi với 리가 없다.
+        error_tag: structure_mix
+    explanation:
+      vi: V-(으)ㄹ 리가 없다 - 늦다 có patchim nên 늦을. -(으)니까 nêu căn cứ cho sự chắc chắn.
+    display_answer: 그 사람은 시간을 잘 지키니까 늦을 리가 없어요.
+
+  - key: ko:exercise:gm-prob-fill-forgot-plan
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-eulji-do-moreuda
+    prompt:
+      template: "(Bạn ấy vẫn chưa đến. Biết đâu bạn ấy đã quên cuộc hẹn rồi.) 친구가 아직 안 왔어요. 약속을 {{b1}} 몰라요."
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [잊어버렸을지도, 잊었을지도, 까먹었을지도]
+    known_wrong:
+      - answer: 잊어버릴지도
+        feedback_vi: Câu gốc là "đã quên" - việc có thể đã xảy ra → -았/었을지도.
+        error_tag: tense
+      - answer: 잊어버린지도
+        feedback_vi: Mẫu đúng là -(으)ㄹ지도 모르다 (quá khứ -았/었을지도), không phải -(으)ㄴ지도.
+        error_tag: jido_form
+      - answer: 잊어버렸을 리가
+        feedback_vi: 리가 đi với 없다; trước 몰라요 cần -(으)ㄹ지도.
+        error_tag: structure_mix
+    explanation:
+      vi: Đoán một việc có thể đã xảy ra → V-았/었을지도 몰라요. 잊어버리다 → 잊어버렸을지도 몰라요.
+    display_answer: 친구가 아직 안 왔어요. 약속을 잊어버렸을지도 몰라요.
+
+  - key: ko:exercise:gm-prob-translate-breakup
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-heeojida
+    prompt:
+      source_text: Không lẽ nào Minsu đã chia tay bạn gái.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 민수 씨가 여자 친구하고 헤어졌을 리가 없어요.
+        - 민수 씨가 여자 친구와 헤어졌을 리가 없어요.
+        - 민수 씨가 여자 친구랑 헤어졌을 리가 없어요.
+        - 민수 씨가 여자친구하고 헤어졌을 리가 없어요.
+        - 민수 씨가 여자친구와 헤어졌을 리가 없어요.
+        - 민수 씨가 여자친구랑 헤어졌을 리가 없어요.
+        - 설마 민수 씨가 여자 친구하고 헤어졌을 리가 없어요.
+        - 설마 민수 씨가 여자 친구와 헤어졌을 리가 없어요.
+        - 설마 민수 씨가 여자친구랑 헤어졌을 리가 없어요.
+        - 민수 씨가 여자 친구하고 헤어졌을 리가 없습니다.
+        - 민수가 여자 친구하고 헤어졌을 리가 없어요.
+        - 민수가 여자친구랑 헤어졌을 리가 없어요.
+    known_wrong:
+      - answer: 민수 씨가 여자 친구를 헤어졌을 리가 없어요.
+        feedback_vi: 헤어지다 đi với 와/과/하고/랑, không dùng 을/를.
+        error_tag: particle_with
+      - answer: 민수 씨가 여자 친구하고 헤어졌을지도 몰라요.
+        feedback_vi: -(으)ㄹ지도 몰라요 là "biết đâu đã chia tay" - ngược với "không lẽ nào".
+        error_tag: riga_vs_jido
+      - answer: 민수 씨가 여자 친구하고 헤어진 리가 없어요.
+        feedback_vi: 리가 없다 đi với -(으)ㄹ; việc đã xảy ra là 헤어졌을 리가 없어요.
+        error_tag: riga_form
+    explanation:
+      vi: Phủ nhận mạnh việc đã xảy ra → V-았/었을 리가 없다. 헤어지다 đi với 하고 / 와 / 랑; 설마 nhấn mạnh sự không tin.
+    display_answer: 민수 씨가 여자 친구하고 헤어졌을 리가 없어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:gm-prob-mcq-no-answer
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-eulji-do-moreuda
+    prompt:
+      stem: "Đồng nghiệp hỏi: \"수진 씨가 왜 전화를 안 받죠?\" Bạn nghĩ có thể Sujin đang họp và gợi ý gọi lại sau. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: h6t, text: 지금 회의 중일지도 몰라요. 조금 이따가 다시 걸어 보세요., lang: ko }
+        - { id: a3m, text: 지금 회의 중일 리가 없어요. 조금 이따가 다시 걸어 보세요., lang: ko }
+        - { id: w9c, text: 지금 회의 중인 척해요. 조금 이따가 다시 걸어 보세요., lang: ko }
+        - { id: n2f, text: 지금 회의 중이지 마세요. 조금 이따가 다시 걸어 보세요., lang: ko }
+    answer:
+      correct_option_id: h6t
+    explanation:
+      vi: Nêu một khả năng → N일지도 몰라요 (회의 중 + 이다). 회의 중일 리가 없어요 là phủ nhận; 회의 중인 척해요 là "giả vờ đang họp"; 이지 마세요 không có nghĩa.
+    display_answer: 지금 회의 중일지도 몰라요. 조금 이따가 다시 걸어 보세요.
+
+  - key: ko:exercise:gm-prob-mcq-reading-messenger
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-somun
+    prompt:
+      stem: "다음 대화를 읽고 내용과 같은 것을 고르십시오.\n지훈: 요즘 박 과장님이 매일 정시에 퇴근하세요. 무슨 일이 있으신 모양이에요.\n수아: 아, 지난달에 아기가 태어났대요.\n지훈: 그래요? 저는 전혀 몰랐어요. 설마 회사를 그만두시는 건 아니겠죠?\n수아: 그럴 리가요. 오히려 다음 달에 부장으로 승진하실지도 모른다는 소문이 있어요."
+      stem_lang: ko
+      options:
+        - { id: s4z, text: 박 과장님이 다음 달에 승진할 수도 있어요., lang: ko }
+        - { id: d8k, text: 박 과장님은 곧 회사를 그만둘 거예요., lang: ko }
+        - { id: y1p, text: 지훈 씨는 박 과장님 아기에 대해 이미 알고 있었어요., lang: ko }
+        - { id: k5o, text: 박 과장님은 요즘 밤늦게까지 일해요., lang: ko }
+    answer:
+      correct_option_id: s4z
+    explanation:
+      vi: 승진하실지도 모른다는 소문 = tin đồn rằng có thể ông ấy được thăng chức → có khả năng. 그럴 리가요 phủ nhận chuyện nghỉ việc; 지훈 nói 전혀 몰랐어요 (hoàn toàn không biết); ông ấy về đúng giờ (정시에 퇴근), không làm khuya.
+    display_answer: 박 과장님이 다음 달에 승진할 수도 있어요.
+
+  - key: ko:exercise:gm-prob-translate-neighbor-move-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-gram-neun-moyangida
+    prompt:
+      source_text: 옆집 사람들이 상자에 짐을 싸고 있네요. 곧 이사 가는 모양이에요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhà bên cạnh đang đóng đồ vào thùng. Hình như họ sắp chuyển nhà.
+        - Người nhà bên cạnh đang đóng gói đồ vào thùng. Hình như sắp chuyển nhà.
+        - Hàng xóm đang xếp đồ vào thùng. Hình như họ sắp chuyển nhà.
+        - Nhà bên đang đóng đồ vào thùng. Chắc là sắp chuyển nhà.
+        - Nhà bên cạnh đang đóng đồ vào hộp. Hình như họ sắp chuyển đi.
+        - Mọi người nhà bên cạnh đang đóng đồ vào thùng. Có vẻ họ sắp chuyển nhà.
+        - Hàng xóm đang gói đồ vào thùng. Chắc họ sắp chuyển nhà.
+        - Nhà bên cạnh đang đóng gói đồ đạc. Hình như sắp chuyển nhà.
+        - Người nhà bên đang cho đồ vào thùng. Hình như họ sắp dọn nhà.
+        - Nhà bên cạnh đang đóng đồ vào thùng. Có lẽ họ sắp chuyển nhà.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhà bên cạnh đang đóng đồ vào thùng. Họ không thể chuyển nhà được.
+        feedback_vi: -는 모양이에요 là "hình như" (đoán có), không phải phủ định.
+        error_tag: moyang_meaning
+      - answer: Nhà bên cạnh đã chuyển nhà rồi.
+        feedback_vi: 싸고 있네요 là đang đóng đồ; 곧 이사 가는 모양이에요 là sắp chuyển - chưa chuyển.
+        error_tag: tense
+    explanation:
+      vi: 짐을 싸다 = đóng gói đồ; -네요 = vừa nhận thấy; -는 모양이에요 = hình như, đoán từ dấu hiệu (đồ đạc trong thùng).
+    display_answer: Nhà bên cạnh đang đóng đồ vào thùng. Hình như họ sắp chuyển nhà.
+
+  - key: ko:exercise:gm-prob-translate-cold-tomorrow
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-eulji-do-moreuda
+    prompt:
+      source_text: Có khi ngày mai trời lạnh đấy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 내일은 추울지도 몰라요.
+        - 내일 추울지도 몰라요.
+        - 내일은 날씨가 추울지도 몰라요.
+        - 내일 날씨가 추울지도 몰라요.
+        - 어쩌면 내일은 추울지도 몰라요.
+        - 어쩌면 내일 추울지도 몰라요.
+        - 어쩌면 내일 날씨가 추울지도 몰라요.
+        - 혹시 내일 추울지도 몰라요.
+        - 내일은 추울지도 모릅니다.
+        - 내일 날씨가 추울지도 모릅니다.
+        - 내일은 쌀쌀할지도 몰라요.
+    known_wrong:
+      - answer: 내일은 춥을지도 몰라요.
+        feedback_vi: 춥다 là bất quy tắc ㅂ - 추울지도.
+        error_tag: b_irregular
+      - answer: 내일은 추울 리가 없어요.
+        feedback_vi: -(으)ㄹ 리가 없다 là "không thể nào lạnh" - ngược nghĩa.
+        error_tag: riga_vs_jido
+      - answer: 내일은 추운지 몰라요.
+        feedback_vi: -(으)ㄴ지 몰라요 là "không biết có lạnh không"; "có khi lạnh" là 추울지도 몰라요.
+        error_tag: neunji_vs_jido
+    explanation:
+      vi: '"Có khi, biết đâu" = -(으)ㄹ지도 몰라요; 춥다 (ㅂ) → 추울지도. 어쩌면 / 혹시 làm câu mềm hơn.'
+    display_answer: 내일은 추울지도 몰라요.

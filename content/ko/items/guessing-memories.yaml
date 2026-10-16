@@ -1,0 +1,925 @@
+# Học liệu unit "Phỏng đoán, ấn tượng & hồi tưởng" (TOPIK 3-4). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+# Key dùng tiền tố gm- để không trùng với unit khác. -나 보다, -것 같다, -(으)ㄹ 줄 알다 (kỹ năng), -았/었더니, -더라고요 đã có ở unit trước - ở đây chỉ dùng lại.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: trông có vẻ / giả vờ ----------------
+  - key: ko:item:gm-gram-a-boida
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: A-아/어 보이다
+      romanization: -a/eo boida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "trông (có vẻ)… - nhận xét dựa vào vẻ bề ngoài mình nhìn thấy. Gắn vào tính từ: 피곤하다 → 피곤해 보여요, 젊다 → 젊어 보여요."
+      examples:
+        - target: 새로 산 운동화가 아주 편해 보여요.
+          translation:
+            vi: Đôi giày thể thao mới mua trông rất thoải mái.
+        - target: 오늘 팀장님 기분이 좋아 보이지 않아요.
+          translation:
+            vi: Hôm nay tâm trạng trưởng nhóm trông không tốt.
+      pronunciation_note:
+        vi: 보여요 đọc [보여요]; 좋아 보여요 nối âm [조아 보여요].
+      confusion:
+        vi: "Tiếng Việt \"trông\" đi được với cả động từ, nhưng -아/어 보이다 chỉ gắn vào tính từ. Muốn nói \"trông như đang ngủ\" phải dùng -는 것 같다 (자는 것 같아요). Đừng nhầm với -아/어 보다 \"thử làm\" - 먹어 봐요 (ăn thử) khác 맛있어 보여요 (trông ngon)."
+
+  - key: ko:item:gm-gram-neun-cheokada
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-는 척하다 · A-(으)ㄴ 척하다 · V-(으)ㄴ 척하다
+      romanization: -neun cheokada
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "giả vờ…, làm như… - động từ hiện tại -는 척하다 (자는 척), tính từ -(으)ㄴ 척하다 (바쁜 척), hành động đã xong -(으)ㄴ 척하다 (못 들은 척, 먹은 척)."
+      examples:
+        - target: 동생이 엄마가 들어오자 공부하는 척했어요.
+          translation:
+            vi: Mẹ vừa bước vào là em tôi giả vờ học bài.
+        - target: 그 사람이 말을 걸었는데 못 들은 척했어요.
+          translation:
+            vi: Người đó bắt chuyện nhưng tôi giả vờ không nghe thấy.
+      pronunciation_note:
+        vi: 척하다 đọc [처카다] - ㄱ gặp ㅎ thành ㅋ; 척했어요 [처캐써요].
+      confusion:
+        vi: "Viết liền 척하다 (= 체하다), cách với định ngữ phía trước - 아는 척하다. Với 알다/모르다 chú ý: 아는 척 (giả vờ biết), 모르는 척 (giả vờ không biết) - không dùng -(으)ㄴ vì đây là trạng thái hiện tại."
+
+  - key: ko:item:gm-pyojeong
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 표정
+      romanization: pyojeong
+      pos: danh từ
+    back:
+      meaning:
+        vi: nét mặt, vẻ mặt
+      examples:
+        - target: 면접이 끝나고 나온 친구의 표정이 밝았어요.
+          translation:
+            vi: Nét mặt người bạn bước ra sau buổi phỏng vấn trông tươi tỉnh.
+      pronunciation_note:
+        vi: Đọc [표정]; ㅍ bật hơi mạnh.
+      confusion:
+        vi: '"Vẻ mặt khó chịu" là 표정이 안 좋다 hoặc 표정이 어둡다; "giữ nét mặt" là 표정을 짓다 (짓다 bất quy tắc ㅅ).'
+
+  - key: ko:item:gm-ansaek
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 안색
+      romanization: ansaek
+      pos: danh từ
+    back:
+      meaning:
+        vi: sắc mặt (biểu hiện sức khoẻ)
+      examples:
+        - target: 안색이 창백한데 병원에 가 보는 게 어때요?
+          translation:
+            vi: Sắc mặt bạn tái nhợt, đi khám thử xem sao?
+      pronunciation_note:
+        vi: Đọc [안색]; patchim ㄱ cuối đọc tắc.
+      confusion:
+        vi: Gốc Hán "nhan sắc" (顔色) nhưng nghĩa là "sắc mặt", không phải "vẻ đẹp". 안색이 안 좋다 = sắc mặt kém; 표정 là cảm xúc, còn 안색 là sức khoẻ.
+
+  - key: ko:item:gm-jollida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 졸리다
+      romanization: jollida
+      pos: tính từ
+    back:
+      meaning:
+        vi: buồn ngủ
+      examples:
+        - target: 점심을 많이 먹어서 오후 회의 시간에 너무 졸렸어요.
+          translation:
+            vi: Ăn trưa nhiều nên giờ họp buổi chiều tôi buồn ngủ kinh khủng.
+      pronunciation_note:
+        vi: Đọc [졸리다]; 졸려요 [졸려요].
+      confusion:
+        vi: 졸리다 là tính từ "buồn ngủ"; 졸다 là động từ "ngủ gật" - 수업 시간에 졸았어요. 자다 là ngủ thật sự.
+
+  - key: ko:item:gm-eosaekada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 어색하다
+      romanization: eosaekada
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngượng ngùng, gượng gạo; (câu văn) không tự nhiên
+      examples:
+        - target: 처음 만난 사람들과 밥을 먹으니까 좀 어색했어요.
+          translation:
+            vi: Ăn cơm với những người mới gặp lần đầu nên hơi ngượng.
+      pronunciation_note:
+        vi: Đọc [어새카다] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: 어색하다 dùng được cho cả không khí (분위기가 어색하다) và câu chữ (문장이 어색하다 - câu văn gượng). "Xấu hổ vì làm sai" thì là 창피하다.
+
+  - key: ko:item:gm-uulhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 우울하다
+      romanization: uulhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: buồn bã, u uất, chán nản
+      examples:
+        - target: 비가 일주일 내내 와서 기분이 우울해요.
+          translation:
+            vi: Mưa suốt cả tuần nên tâm trạng tôi u ám.
+      pronunciation_note:
+        vi: Đọc [우울하다]; hai 우 tròn môi.
+      confusion:
+        vi: 우울하다 là buồn kéo dài, nặng nề; 슬프다 là buồn vì một chuyện cụ thể. 우울증 là "bệnh trầm cảm".
+
+  - key: ko:item:gm-ginjanghada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 긴장하다
+      romanization: ginjanghada
+      pos: động từ
+    back:
+      meaning:
+        vi: căng thẳng, hồi hộp
+      examples:
+        - target: 발표하기 전에 너무 긴장해서 손이 떨렸어요.
+          translation:
+            vi: Trước khi thuyết trình tôi căng thẳng quá nên tay run.
+      pronunciation_note:
+        vi: Đọc [긴장하다].
+      confusion:
+        vi: Gốc Hán "khẩn trương" (緊張) nhưng nghĩa là "căng thẳng, hồi hộp", không phải "nhanh chóng" như tiếng Việt. Là động từ - 긴장했어요, 긴장하지 마세요.
+
+  - key: ko:item:gm-haengbokada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 행복하다
+      romanization: haengbokada
+      pos: tính từ
+    back:
+      meaning:
+        vi: hạnh phúc
+      examples:
+        - target: 가족과 같이 저녁을 먹는 시간이 제일 행복해요.
+          translation:
+            vi: Lúc ăn tối cùng gia đình là lúc tôi hạnh phúc nhất.
+      pronunciation_note:
+        vi: Đọc [행보카다] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: Gốc Hán "hạnh phúc" (幸福) - nghĩa giống tiếng Việt. Câu chúc thường gặp là 행복하세요.
+
+  - key: ko:item:gm-deulkida
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 들키다
+      romanization: deulkida
+      pos: động từ
+    back:
+      meaning:
+        vi: bị phát hiện, bị lộ (điều mình muốn giấu)
+      examples:
+        - target: 몰래 게임을 하다가 아빠한테 들켰어요.
+          translation:
+            vi: Đang lén chơi game thì bị bố phát hiện.
+      pronunciation_note:
+        vi: Đọc [들키다]; ㅋ bật hơi.
+      confusion:
+        vi: Người phát hiện đi với 에게/한테 - 선생님한테 들키다. Tiếng Việt cần "bị", còn 들키다 tự mang nghĩa bị động, không cần thêm gì.
+
+  # ---------------- bài 2: có lẽ / không thể nào / hình như ----------------
+  - key: ko:item:gm-gram-eulji-do-moreuda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V/A-(으)ㄹ지도 모르다
+      romanization: -(eu)ljido moreuda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "có thể…, biết đâu… (khả năng có, nhưng không chắc). Quá khứ: -았/었을지도 몰라요."
+      examples:
+        - target: 주말에는 그 식당에 자리가 없을지도 몰라요.
+          translation:
+            vi: Cuối tuần biết đâu nhà hàng đó hết chỗ.
+        - target: 민지 씨가 벌써 집에 갔을지도 몰라요.
+          translation:
+            vi: Có khi Minji đã về nhà rồi cũng nên.
+      pronunciation_note:
+        vi: ㅈ sau -ㄹ căng lên - 없을지도 [업쓸찌도], 갈지도 [갈찌도].
+      confusion:
+        vi: "Dù có 모르다 nhưng câu không có nghĩa \"không biết\". Viết liền -(으)ㄹ지도 (không cách 지 và 도). Thường đi với 혹시, 어쩌면 (biết đâu) ở đầu câu."
+
+  - key: ko:item:gm-gram-eul-riga-eopda
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V/A-(으)ㄹ 리가 없다
+      romanization: -(eu)l liga eopda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "không lẽ nào…, chắc chắn không thể… (người nói tin rằng điều đó không thể xảy ra). Quá khứ: -았/었을 리가 없다."
+      examples:
+        - target: 그렇게 꼼꼼한 사람이 실수했을 리가 없어요.
+          translation:
+            vi: Người cẩn thận như thế không lẽ nào lại mắc lỗi.
+        - target: 이 시간에 가게가 문을 닫았을 리가 없어요.
+          translation:
+            vi: Giờ này cửa hàng không thể nào đã đóng cửa.
+      pronunciation_note:
+        vi: 리가 sau -ㄹ đọc [리가]; 갈 리가 [갈 리가], 없어요 [업써요].
+      confusion:
+        vi: Người Việt hay dùng -지 않을 거예요 (chắc sẽ không) - nghe nhẹ hơn nhiều. -(으)ㄹ 리가 없다 là phủ nhận mạnh, thường kèm sự ngạc nhiên; câu hỏi tu từ 그럴 리가요? = "làm gì có chuyện đó!".
+
+  - key: ko:item:gm-gram-neun-moyangida
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-는 모양이다 · A-(으)ㄴ 모양이다 · V-(으)ㄴ 모양이다
+      romanization: -neun moyangida
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "hình như…, chắc là… - đoán dựa trên dấu hiệu khách quan mình thấy. Động từ hiện tại -는 모양이다, tính từ -(으)ㄴ 모양이다, việc đã xảy ra -(으)ㄴ 모양이다."
+      examples:
+        - target: 사무실 불이 꺼져 있네요. 다들 퇴근한 모양이에요.
+          translation:
+            vi: Đèn văn phòng tắt rồi. Hình như mọi người tan làm hết rồi.
+        - target: 길에 우산을 쓴 사람이 많아요. 밖에 비가 오는 모양이에요.
+          translation:
+            vi: Ngoài đường nhiều người che ô. Chắc bên ngoài đang mưa.
+      pronunciation_note:
+        vi: 모양이에요 đọc nối [모양이에요]; ㅇ đầu âm tiết câm.
+      confusion:
+        vi: "Gần nghĩa với -나 보다 nhưng trang trọng hơn một chút và không dùng cho chính mình. Khác -것 같다: -것 같다 dùng được cả cho cảm giác chủ quan, còn -는 모양이다 cần dấu hiệu nhìn thấy được."
+
+  - key: ko:item:gm-somun
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 소문
+      romanization: somun
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin đồn, lời đồn
+      examples:
+        - target: 그 가수가 결혼한다는 소문이 인터넷에 퍼졌어요.
+          translation:
+            vi: Tin đồn ca sĩ đó sắp kết hôn đã lan khắp mạng.
+      pronunciation_note:
+        vi: Đọc [소문].
+      confusion:
+        vi: '"Có tin đồn" là 소문이 나다 hoặc 소문이 돌다; "tung tin đồn" là 소문을 내다. Câu "nghe đồn là…" thường là -다는 소문을 들었어요.'
+
+  - key: ko:item:gm-seungjinhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 승진하다
+      romanization: seungjinhada
+      pos: động từ
+    back:
+      meaning:
+        vi: được thăng chức
+      examples:
+        - target: 김 대리님이 이번에 과장으로 승진하셨어요.
+          translation:
+            vi: Anh Kim (trợ lý trưởng phòng) lần này được thăng lên trưởng ban.
+      pronunciation_note:
+        vi: Đọc [승진하다].
+      confusion:
+        vi: Gốc Hán "thăng tiến" (昇進). Chức mới đi với (으)로 - 부장으로 승진하다. Tiếng Việt cần "được", nhưng 승진하다 là động từ chủ động, không thêm 되다.
+
+  - key: ko:item:gm-toesahada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 퇴사하다
+      romanization: toesahada
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ việc, rời công ty
+      examples:
+        - target: 박 선배가 다음 달에 퇴사한다고 해요.
+          translation:
+            vi: Nghe nói anh Park (tiền bối) tháng sau nghỉ việc.
+      pronunciation_note:
+        vi: Đọc [퇴사하다]; ㅚ gần như [웨].
+      confusion:
+        vi: 퇴사하다 là rời hẳn công ty; 퇴근하다 là tan làm hằng ngày. Ngược nghĩa là 입사하다 (vào công ty).
+
+  - key: ko:item:gm-sagwida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 사귀다
+      romanization: sagwida
+      pos: động từ
+    back:
+      meaning:
+        vi: hẹn hò, quen (người yêu); kết bạn
+      examples:
+        - target: 두 사람은 대학교 때부터 사귀었어요.
+          translation:
+            vi: Hai người đó hẹn hò từ hồi đại học.
+      pronunciation_note:
+        vi: 사귀어요 đọc [사귀어요]; không rút gọn thành một âm.
+      confusion:
+        vi: Hẹn hò với ai dùng 와/과 hoặc 하고 - 민수 씨하고 사귀다 (không dùng 을/를 khi là người yêu). 친구를 사귀다 là "kết bạn".
+
+  - key: ko:item:gm-heeojida
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 헤어지다
+      romanization: heeojida
+      pos: động từ
+    back:
+      meaning:
+        vi: chia tay; chia tay nhau (sau khi gặp)
+      examples:
+        - target: 역 앞에서 친구와 헤어지고 혼자 집에 왔어요.
+          translation:
+            vi: Tôi chia tay bạn ở trước ga rồi về nhà một mình.
+      pronunciation_note:
+        vi: 헤어져요 [헤어저요].
+      confusion:
+        vi: 헤어지다 vừa là chia tay người yêu vừa là "tạm biệt nhau" sau buổi gặp. Đi với 와/과/하고, không dùng 을/를.
+
+  - key: ko:item:gm-seolma
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 설마
+      romanization: seolma
+      pos: trạng từ
+    back:
+      meaning:
+        vi: lẽ nào, không lẽ (không tin điều gì đó là thật)
+      examples:
+        - target: 설마 오늘 회식에 부장님이 안 오시겠어요?
+          translation:
+            vi: Lẽ nào hôm nay trưởng phòng lại không đến buổi liên hoan?
+      pronunciation_note:
+        vi: Đọc [설마]; nhấn giọng ở 설 khi ngạc nhiên.
+      confusion:
+        vi: 설마 thường đi với -(으)ㄹ 리가 없다, -겠어요? hoặc đứng một mình (설마! - không thể nào!). Không dùng cho câu chắc chắn khẳng định.
+
+  - key: ko:item:gm-nunchi
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 눈치
+      romanization: nunchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng đọc tình huống, hiểu ý người khác qua thái độ; sự để ý dò xét
+      examples:
+        - target: 수진 씨는 눈치가 빨라서 분위기를 금방 알아차려요.
+          translation:
+            vi: Sujin rất tinh ý nên nhận ra bầu không khí ngay.
+      pronunciation_note:
+        vi: Đọc [눈치]; ㅊ bật hơi.
+      confusion:
+        vi: 눈치가 빠르다 = tinh ý; 눈치가 없다 = vô duyên, không biết ý; 눈치를 보다 = dè chừng, nhìn sắc mặt người khác. Đây là khái niệm văn hoá rất quan trọng ở nơi làm việc Hàn Quốc.
+
+  # ---------------- bài 3: cứ tưởng / câu hỏi lồng ----------------
+  - key: ko:item:gm-gram-neun-jul-alda
+    type: grammar_point
+    level: topik3
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V/A-(으)ㄴ/는 줄 알았다 · 몰랐다
+      romanization: -(eu)n/neun jul aratda · mollatda
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "cứ tưởng là… (nhưng hoá ra không phải) / không biết là… (giờ mới biết). Động từ hiện tại -는 줄, tính từ -(으)ㄴ 줄, việc đã xảy ra -(으)ㄴ 줄, N인 줄."
+      examples:
+        - target: 오늘이 마감인 줄 알았는데 내일이었어요.
+          translation:
+            vi: Tôi cứ tưởng hôm nay là hạn chót, hoá ra là ngày mai.
+        - target: 두 사람이 형제인 줄 몰랐어요.
+          translation:
+            vi: Tôi không biết hai người đó là anh em.
+      pronunciation_note:
+        vi: 줄 sau -는 đọc [줄]; sau -ㄹ đọc căng [쭐] - 갈 줄 [갈쭐].
+      confusion:
+        vi: "Khác -(으)ㄹ 줄 알다 \"biết cách làm\" (수영할 줄 알아요). Ở mẫu này 알았다 thường ở quá khứ và mang nghĩa \"tưởng nhầm\": 학생인 줄 알았어요 = cứ tưởng là học sinh (nhưng không phải)."
+
+  - key: ko:item:gm-gram-neunji
+    type: grammar_point
+    level: topik3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-는지 · A-(으)ㄴ지 · N인지 + 알다/모르다
+      romanization: -neunji · -(eu)nji · inji
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "(có biết) … không / ai / ở đâu / thế nào - lồng một câu hỏi vào câu lớn: 어디에 있는지 몰라요 (không biết ở đâu). Quá khứ -았/었는지, tương lai -(으)ㄹ지."
+      examples:
+        - target: 이 버스가 시청에 가는지 아세요?
+          translation:
+            vi: Bạn có biết xe buýt này có đi đến toà thị chính không?
+        - target: 회의가 몇 시에 끝날지 아직 몰라요.
+          translation:
+            vi: Vẫn chưa biết cuộc họp mấy giờ sẽ kết thúc.
+      pronunciation_note:
+        vi: 있는지 [인는지] - ㅆ trước ㄴ biến âm mũi; 가는지 [가는지].
+      confusion:
+        vi: "Tiếng Việt chỉ cần đặt câu hỏi vào giữa (\"không biết anh ấy ở đâu\"), nhưng tiếng Hàn phải đổi đuôi câu hỏi thành -는지/-(으)ㄴ지. Không nói 어디에 있어요 몰라요. Ngoài 알다/모르다 còn đi với 궁금하다, 물어보다, 기억나다."
+
+  - key: ko:item:gm-chakgakhada
+    type: vocab
+    level: topik4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 착각하다
+      romanization: chakgakada
+      pos: động từ
+    back:
+      meaning:
+        vi: nhầm tưởng, ảo tưởng, nhầm lẫn
+      examples:
+        - target: 약속 날짜를 착각해서 하루 일찍 갔어요.
+          translation:
+            vi: Tôi nhầm ngày hẹn nên đến sớm một ngày.
+      pronunciation_note:
+        vi: Đọc [착까카다] - ㄱ sau ㄱ căng, ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: Gốc Hán "thác giác" (錯覺). Hay đi với -(으)ㄴ/는 줄 알았다 - 오늘이 금요일인 줄 착각했어요. 오해하다 là hiểu lầm ý người khác, còn 착각하다 là chính mình nhầm sự việc.
+
+  - key: ko:item:gm-ohaehada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 오해하다
+      romanization: ohaehada
+      pos: động từ
+    back:
+      meaning:
+        vi: hiểu lầm
+      examples:
+        - target: 제 말을 오해하지 마세요. 그런 뜻이 아니었어요.
+          translation:
+            vi: Đừng hiểu lầm lời tôi. Tôi không có ý đó.
+      pronunciation_note:
+        vi: Đọc [오해하다]; ㅎ giữa từ rất nhẹ.
+      confusion:
+        vi: Gốc Hán "ngộ giải" (誤解). "Hiểu lầm được giải toả" là 오해가 풀리다; "giải thích để xoá hiểu lầm" là 오해를 풀다.
+
+  - key: ko:item:gm-donggap
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 동갑
+      romanization: donggap
+      pos: danh từ
+    back:
+      meaning:
+        vi: cùng tuổi, bằng tuổi
+      examples:
+        - target: 우리 둘은 동갑이니까 말을 놓을까요?
+          translation:
+            vi: Hai chúng ta bằng tuổi, mình nói chuyện thân mật nhé?
+      pronunciation_note:
+        vi: Đọc [동갑]; patchim ㅂ cuối đọc tắc, mím môi.
+      confusion:
+        vi: Ở Hàn, biết là 동갑 thì thường chuyển sang 반말 sau khi hỏi ý (말을 놓다). Tiếng Việt cũng xưng hô theo tuổi nên ý này khá gần với người Việt.
+
+  - key: ko:item:gm-gieongnada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 기억나다
+      romanization: gieongnada
+      pos: động từ
+    back:
+      meaning:
+        vi: nhớ ra, chợt nhớ
+      examples:
+        - target: 그 영화 제목이 잘 기억나지 않아요.
+          translation:
+            vi: Tôi không nhớ rõ tên bộ phim đó.
+      pronunciation_note:
+        vi: Đọc [기엉나다] - ㄱ trước ㄴ thành ㅇ.
+      confusion:
+        vi: 기억나다 là "nhớ ra" (ký ức tự hiện lên, chủ ngữ là điều được nhớ với 이/가); 기억하다 là "ghi nhớ" (có tân ngữ 을/를). 이름이 기억나요 nhưng 이름을 기억해요.
+
+  - key: ko:item:gm-hwaksilhada
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 확실하다
+      romanization: hwaksilhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: chắc chắn, rõ ràng
+      examples:
+        - target: 내일 비가 올지 아직 확실하지 않아요.
+          translation:
+            vi: Ngày mai có mưa hay không vẫn chưa chắc chắn.
+      pronunciation_note:
+        vi: Đọc [확씰하다] - ㅅ sau ㄱ căng thành ㅆ.
+      confusion:
+        vi: 확실히 là trạng từ "chắc chắn là" - 확실히 그 사람이었어요. Khi không chắc người Hàn hay nói 확실하지 않아요 hoặc 잘 모르겠어요.
+
+  - key: ko:item:gm-hetgallida
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 헷갈리다
+      romanization: hetgallida
+      pos: động từ
+    back:
+      meaning:
+        vi: nhầm lẫn, lẫn lộn, rối (không phân biệt được)
+      examples:
+        - target: 쌍둥이라서 누가 언니인지 자주 헷갈려요.
+          translation:
+            vi: Vì là sinh đôi nên tôi hay lẫn ai là chị.
+      pronunciation_note:
+        vi: Đọc [헫깔리다] - ㄱ sau patchim căng.
+      confusion:
+        vi: Chủ ngữ là điều gây nhầm với 이/가 hoặc người bị rối với 은/는 - 이 두 단어가 헷갈려요. 헛갈리다 cũng là từ chuẩn, nhưng 헷갈리다 phổ biến hơn nhiều.
+
+  - key: ko:item:gm-gunggeumhada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 궁금하다
+      romanization: gunggeumhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: tò mò, muốn biết
+      examples:
+        - target: 시험 결과가 언제 나오는지 궁금해요.
+          translation:
+            vi: Tôi tò mò không biết khi nào có kết quả thi.
+      pronunciation_note:
+        vi: Đọc [궁금하다].
+      confusion:
+        vi: 궁금하다 hay đi với câu hỏi lồng -는지 (뭐 하는지 궁금해요). Người Việt hay dịch "tôi muốn biết" thành 알고 싶어요 - cũng đúng, nhưng 궁금해요 tự nhiên hơn khi chỉ là tò mò.
+
+  - key: ko:item:gm-jeonhyeo
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 전혀
+      romanization: jeonhyeo
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hoàn toàn (không), chẳng… chút nào
+      examples:
+        - target: 그 사람이 거짓말을 하는 줄 전혀 몰랐어요.
+          translation:
+            vi: Tôi hoàn toàn không biết người đó đang nói dối.
+      pronunciation_note:
+        vi: Đọc [저녀] - ㅎ giữa hai âm gần như câm.
+      confusion:
+        vi: 전혀 luôn đi với phủ định (안, 못, 없다, 모르다). Không nói 전혀 알아요; muốn nói "hoàn toàn biết" thì dùng 완전히 / 잘 알아요.
+
+  # ---------------- bài 4: hồi tưởng ----------------
+  - key: ko:item:gm-gram-deon
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V/A-던 N
+      romanization: -deon
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "N mà (trước đây) từng/hay… - định ngữ hồi tưởng: việc lặp đi lặp lại trong quá khứ (자주 가던 식당) hoặc việc đang làm dở (먹던 빵 - cái bánh đang ăn dở)."
+      examples:
+        - target: 학생 때 자주 가던 분식집이 아직도 있어요.
+          translation:
+            vi: Quán ăn vặt hồi đi học tôi hay ghé vẫn còn đấy.
+        - target: 책상 위에 마시던 커피가 그대로 있네요.
+          translation:
+            vi: Ly cà phê uống dở trên bàn vẫn còn nguyên kìa.
+      pronunciation_note:
+        vi: 던 sau patchim đọc căng - 먹던 [먹떤], 읽던 [익떤].
+      confusion:
+        vi: "-(으)ㄴ (định ngữ quá khứ) là việc đã xong một lần: 어제 먹은 빵 (cái bánh đã ăn). -던 là việc lặp lại hoặc chưa xong: 먹던 빵 (bánh đang ăn dở). Tiếng Việt dùng chung \"đã/từng\" nên rất dễ lẫn."
+
+  - key: ko:item:gm-gram-atdeon
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V/A-았/었던 N
+      romanization: -at/eotdeon
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "N mà (đã) từng… - nhớ lại một việc đã xong, thường chỉ một lần hoặc một trạng thái nay đã khác: 작년에 갔던 바다, 날씬했던 시절."
+      examples:
+        - target: 신혼여행 때 묵었던 호텔에 다시 가 보고 싶어요.
+          translation:
+            vi: Tôi muốn quay lại khách sạn từng ở hồi đi tuần trăng mật.
+        - target: 조용했던 동네가 지금은 관광지가 됐어요.
+          translation:
+            vi: Khu phố từng yên tĩnh giờ đã thành điểm du lịch.
+      pronunciation_note:
+        vi: 았던 đọc [앋떤]; 갔던 [갇떤], 했던 [핻떤].
+      confusion:
+        vi: Với tính từ, -던 và -았/었던 gần nghĩa nhau, nhưng -았/었던 nhấn mạnh "bây giờ không còn như vậy". Với động từ, -았/었던 là việc đã kết thúc hoàn toàn; -던 là việc lặp lại hoặc dở dang.
+
+  - key: ko:item:gm-gram-deoni
+    type: grammar_point
+    level: topik4
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V/A-더니
+      romanization: -deoni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "(Tôi đã thấy) A, rồi thì B - kể lại điều mình từng quan sát được ở người khác/sự việc, sau đó nó thay đổi hoặc dẫn tới kết quả B. Chủ ngữ vế trước thường là ngôi thứ ba và giống vế sau."
+      examples:
+        - target: 아침에는 맑더니 오후부터 바람이 세게 불어요.
+          translation:
+            vi: Buổi sáng trời trong, vậy mà từ chiều gió thổi mạnh.
+        - target: 동생이 매일 밤새워 공부하더니 결국 장학금을 받았어요.
+          translation:
+            vi: Em tôi ngày nào cũng thức đêm học, cuối cùng đã nhận được học bổng.
+      pronunciation_note:
+        vi: 더니 sau patchim đọc căng - 맑더니 [막떠니], 먹더니 [먹떠니].
+      confusion:
+        vi: "-더니 không có 았: người nói quan sát người khác (동생이 공부하더니…). -았/었더니: hành động của chính người nói rồi phát hiện (제가 창문을 열었더니…). Không dùng -더니 cho hành động của chính mình (제가 공부하더니 là sai)."
+
+  - key: ko:item:gm-chueok
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 추억
+      romanization: chueok
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỷ niệm, hồi ức (đẹp)
+      examples:
+        - target: 이 사진을 보면 대학 시절 추억이 떠올라요.
+          translation:
+            vi: Cứ nhìn bức ảnh này là kỷ niệm thời đại học lại hiện về.
+      pronunciation_note:
+        vi: Đọc [추억]; ㅊ bật hơi.
+      confusion:
+        vi: 추억 là kỷ niệm về con người, thời gian; 기념품 là đồ lưu niệm (vật). "Tạo kỷ niệm" là 추억을 만들다.
+
+  - key: ko:item:gm-eorin-sijeol
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 어린 시절
+      romanization: eorin sijeol
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời thơ ấu
+      examples:
+        - target: 어린 시절을 시골 외갓집에서 보냈어요.
+          translation:
+            vi: Tôi đã trải qua tuổi thơ ở nhà ngoại dưới quê.
+      pronunciation_note:
+        vi: Đọc [어린 시절]; 절 có ㅈ không bật hơi.
+      confusion:
+        vi: Cũng nói 어렸을 때 (hồi nhỏ) trong khẩu ngữ. "Trải qua thời thơ ấu" dùng 보내다, không dùng 살다.
+
+  - key: ko:item:gm-dangol
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 단골
+      romanization: dangol
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách quen; (quán) quen
+      examples:
+        - target: 이 미용실은 십 년 넘게 다닌 제 단골이에요.
+          translation:
+            vi: Tiệm làm tóc này là chỗ quen tôi đi hơn mười năm rồi.
+      pronunciation_note:
+        vi: Đọc [단골].
+      confusion:
+        vi: 단골 vừa chỉ khách quen (단골손님) vừa chỉ quán quen (단골집). Tiếng Việt "mối" cũng có hai nghĩa tương tự.
+
+  - key: ko:item:gm-dongchang
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 동창
+      romanization: dongchang
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn cùng trường, bạn học cũ
+      examples:
+        - target: 지하철에서 고등학교 동창을 우연히 만났어요.
+          translation:
+            vi: Tôi tình cờ gặp bạn học cấp ba trên tàu điện ngầm.
+      pronunciation_note:
+        vi: Đọc [동창]; ㅊ bật hơi.
+      confusion:
+        vi: Gốc Hán "đồng song" (同窓) - cùng cửa sổ lớp học. 동창 là bạn cùng trường (có thể khác lớp); bạn cùng lớp hiện tại là 반 친구.
+
+  - key: ko:item:gm-yejeon
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 예전
+      romanization: yejeon
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày trước, trước đây
+      examples:
+        - target: 예전에는 이 길에 나무가 정말 많았어요.
+          translation:
+            vi: Ngày trước con đường này có rất nhiều cây.
+      pronunciation_note:
+        vi: Đọc [예전]; 예 đọc rõ [예].
+      confusion:
+        vi: Thường đi với 에 hoặc 에는 - 예전에, 예전에는; định ngữ là 예전의 / 예전 (예전 모습). 옛날 nghe xa xưa hơn.
+
+  - key: ko:item:gm-byeonhada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 변하다
+      romanization: byeonhada
+      pos: động từ
+    back:
+      meaning:
+        vi: thay đổi, biến đổi (tự thay đổi)
+      examples:
+        - target: 십 년 만에 갔는데 고향이 많이 변했어요.
+          translation:
+            vi: Mười năm mới về, quê đã thay đổi nhiều.
+      pronunciation_note:
+        vi: Đọc [변하다].
+      confusion:
+        vi: 변하다 là "tự thay đổi" (không có tân ngữ); "thay đổi cái gì" là 바꾸다 - 계획을 바꾸다. Không nói 계획을 변했어요.
+
+  - key: ko:item:gm-joreopada
+    type: vocab
+    level: topik3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 졸업하다
+      romanization: joreopada
+      pos: động từ
+    back:
+      meaning:
+        vi: tốt nghiệp
+      examples:
+        - target: 형은 작년에 대학원을 졸업하고 연구소에 들어갔어요.
+          translation:
+            vi: Anh tôi tốt nghiệp cao học năm ngoái rồi vào làm ở viện nghiên cứu.
+      pronunciation_note:
+        vi: Đọc [조러파다] - nối âm và ㅂ gặp ㅎ thành ㅍ.
+      confusion:
+        vi: Trường đi với 을/를 - 대학교를 졸업하다 (không dùng 에서). Người Việt hay nói 대학교에서 졸업했어요 theo kiểu "tốt nghiệp ở trường…".
+
+  # ---------------- bài 5: ôn tập ----------------
+  - key: ko:item:gm-orenmanida
+    type: phrase
+    level: topik3
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 오랜만이에요
+      romanization: oraenmanieyo
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Lâu rồi mới gặp! / Lâu quá rồi nhỉ!
+      examples:
+        - target: 정말 오랜만이에요. 그동안 어떻게 지냈어요?
+          translation:
+            vi: Lâu lắm rồi mới gặp. Dạo này bạn thế nào?
+      pronunciation_note:
+        vi: Đọc nối [오랜마니에요].
+      confusion:
+        vi: Viết 오랜만 (rút từ 오래간만), không viết 오랫만. "Lâu rồi mới làm gì" là 오랜만에 + V - 오랜만에 영화를 봤어요.
+
+  - key: ko:item:gm-dongchanghoe
+    type: vocab
+    level: topik3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 동창회
+      romanization: dongchanghoe
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi họp lớp, hội cựu học sinh
+      examples:
+        - target: 이번 토요일에 중학교 동창회가 있어요.
+          translation:
+            vi: Thứ Bảy này có buổi họp lớp cấp hai.
+      pronunciation_note:
+        vi: Đọc [동창회] hoặc [동창훼].
+      confusion:
+        vi: 동창회 là buổi gặp mặt bạn học cũ; 송년회 là tiệc cuối năm, 회식 là liên hoan công ty.

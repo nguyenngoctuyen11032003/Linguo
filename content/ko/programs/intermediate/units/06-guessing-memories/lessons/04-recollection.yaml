@@ -1,0 +1,431 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:recollection
+order_index: 4
+level: topik4
+title:
+  vi: Nhớ lại ngày xưa - -던, -았/었던, -더니
+objectives:
+  - vi: Gợi lại kỷ niệm bằng định ngữ hồi tưởng V/A-던 (việc lặp lại, dở dang) và V/A-았/었던 (việc đã xong, trạng thái nay đã khác).
+  - vi: Kể sự thay đổi mình đã quan sát được bằng V/A-더니, phân biệt với -았/었더니 và -더라고요 đã học.
+  - vi: Từ vựng hồi ức - 추억, 어린 시절, 단골, 동창, 예전, 변하다, 졸업하다.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading, writing]
+prerequisites: [ko:lesson:mistaken-belief]
+items:
+  - item: ko:item:gm-gram-deon
+  - item: ko:item:gm-gram-atdeon
+  - item: ko:item:gm-gram-deoni
+  - item: ko:item:gm-chueok
+  - item: ko:item:gm-eorin-sijeol
+  - item: ko:item:gm-dangol
+  - item: ko:item:gm-dongchang
+  - item: ko:item:gm-yejeon
+  - item: ko:item:gm-byeonhada
+  - item: ko:item:gm-joreopada
+  - item: ko:item:gram-at-deoni
+    role: reuse
+  - item: ko:item:gram-deoragoyo
+    role: reuse
+  - item: ko:item:gram-adnominal
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được về "quán quen hồi sinh viên", "khu phố tuổi thơ", "người bạn ngày xưa", và nói được "trước thì thế này, vậy mà bây giờ…" một cách tự nhiên như người Hàn.
+  - type: explain
+    text:
+      vi: "V-던 N là định ngữ hồi tưởng: việc trong quá khứ diễn ra lặp đi lặp lại (자주 가던 카페 - quán cà phê hay đến) hoặc đang làm dở (읽던 책 - cuốn sách đang đọc dở). So với -(으)ㄴ (어제 읽은 책 - cuốn đã đọc xong), -던 nhấn mạnh việc chưa kết thúc hoặc là thói quen."
+  - type: explain
+    text:
+      vi: "V/A-았/었던 N là việc đã kết thúc hẳn, thường chỉ một lần (작년에 갔던 바다), hoặc trạng thái trước đây nay không còn (날씬했던 시절). Tiếng Việt dùng chung \"từng, đã\" cho mọi trường hợp, nên người Việt hay dùng lẫn -던 / -았/었던 / -(으)ㄴ; hãy tự hỏi - việc đó lặp lại, dở dang, hay đã xong hẳn?"
+  - type: explain
+    text:
+      vi: "V/A-더니 = \"(tôi đã thấy) A, rồi/vậy mà B\": người nói kể điều mình quan sát được ở người khác hay sự việc, sau đó có thay đổi hoặc kết quả. Chủ ngữ thường là ngôi thứ ba và giống nhau ở hai vế: 동생이 열심히 공부하더니 합격했어요. Khác với -았/었더니 (hành động của chính mình → phát hiện) và -더라고요 (kể lại điều mình thấy, kết thúc câu)."
+  - type: deep_explain
+    text:
+      vi: "So sánh ba mẫu dùng 더: 제가 창문을 열었더니 바람이 시원했어요 (tôi mở cửa → thấy mát); 동생이 창문을 열더니 밖으로 나갔어요 (tôi thấy em mở cửa → rồi em đi ra ngoài); 밖에 바람이 시원하더라고요 (tôi thấy bên ngoài gió mát - kể lại). Với danh từ: 학생이던 시절 / 학생이었던 시절 (thời còn là học sinh) - cả hai đều dùng, -이었던 nhấn mạnh hơn \"giờ không còn\". Văn hồi ký, bài hát hay dùng -던 vì nó gợi cảm giác hoài niệm."
+  - type: example
+    target: 어렸을 때 살던 동네에 이십 년 만에 가 봤어요.
+    target_lang: ko
+    translation:
+      vi: Hai mươi năm rồi tôi mới quay lại khu phố hồi nhỏ từng sống.
+    note:
+      vi: Sống ở đó một thời gian dài (trạng thái kéo dài) → 살던.
+  - type: example
+    target: 제가 마시던 커피 버리지 마세요! 아직 반이나 남았어요.
+    target_lang: ko
+    translation:
+      vi: Đừng đổ ly cà phê tôi đang uống dở! Vẫn còn tận một nửa.
+    note:
+      vi: Dở dang → -던.
+  - type: example
+    target: 대학교 때 같이 살았던 룸메이트가 다음 달에 결혼해요.
+    target_lang: ko
+    translation:
+      vi: Người bạn cùng phòng hồi đại học tháng sau kết hôn.
+    note:
+      vi: Chuyện đã kết thúc (giờ không sống chung nữa) → -았/었던.
+  - type: example
+    target: 민수 씨가 매일 아침 달리기를 하더니 몸이 정말 가벼워 보여요.
+    target_lang: ko
+    translation:
+      vi: Minsu ngày nào cũng chạy bộ buổi sáng, giờ trông người nhẹ nhõm hẳn.
+    note:
+      vi: Người nói quan sát Minsu rồi thấy kết quả → -더니.
+  - type: example
+    target: 그렇게 조용하던 형이 결혼하더니 말이 많아졌어요.
+    target_lang: ko
+    translation:
+      vi: Anh tôi vốn ít nói như thế, vậy mà lấy vợ xong lại nói nhiều hẳn.
+  - type: common_mistake
+    wrong: 제가 열심히 공부하더니 시험에 합격했어요.
+    right: 제가 열심히 공부해서 시험에 합격했어요.
+    target_lang: ko
+    note:
+      vi: -더니 kể điều mình quan sát ở người khác, không dùng cho hành động của chính mình. Với bản thân dùng -아/어서 (lý do) hoặc -았/었더니 (làm rồi phát hiện).
+  - type: common_mistake
+    wrong: 지난번에 한 번 가던 식당 이름이 뭐였죠?
+    right: 지난번에 한 번 갔던 식당 이름이 뭐였죠?
+    target_lang: ko
+    note:
+      vi: Chỉ đến một lần, việc đã xong → -았/었던. -던 dành cho việc lặp lại hoặc dở dang.
+  - type: common_mistake
+    wrong: 책상 위에 제가 먹은 빵을 누가 먹었어요?
+    right: 책상 위에 제가 먹던 빵을 누가 먹었어요?
+    target_lang: ko
+    note:
+      vi: Nếu bánh đã ăn hết (먹은) thì không ai ăn được nữa. Bánh đang ăn dở phải là 먹던 빵.
+  - type: summary
+    points:
+      - vi: V-던 N - việc lặp lại trong quá khứ (자주 가던) hoặc đang dở (읽던, 마시던).
+      - vi: V/A-았/었던 N - việc đã xong hẳn, một lần (작년에 갔던), trạng thái nay đã khác (날씬했던).
+      - vi: V/A-더니 - đã thấy A (ở người khác/sự việc), rồi/vậy mà B; chủ ngữ hai vế giống nhau, không phải "tôi".
+      - vi: -았/었더니 - tôi làm A → phát hiện B; -더라고요 - kể lại điều đã thấy.
+      - vi: 추억 · 어린 시절 · 단골 · 동창 · 예전 · 변하다 · 졸업하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:gm-mem-mcq-unfinished-book
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-gram-deon
+    prompt:
+      stem: "침대 옆에 읽던 소설책이 있어요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n4s, text: "Cạnh giường có cuốn tiểu thuyết tôi đang đọc dở.", lang: vi }
+        - { id: y8c, text: "Cạnh giường có cuốn tiểu thuyết tôi đã đọc xong.", lang: vi }
+        - { id: t1g, text: "Cạnh giường có cuốn tiểu thuyết tôi sẽ đọc.", lang: vi }
+        - { id: h5k, text: "Cạnh giường có cuốn tiểu thuyết tôi chưa từng đọc.", lang: vi }
+    answer:
+      correct_option_id: n4s
+    explanation:
+      vi: V-던 N có thể chỉ việc đang làm dở - 읽던 책 là sách đang đọc chưa xong. Đọc xong là 읽은 책; sẽ đọc là 읽을 책.
+    display_answer: "Cạnh giường có cuốn tiểu thuyết tôi đang đọc dở."
+
+  - key: ko:exercise:gm-mem-listen-sister-mood
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gm-gram-deoni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 언니가 아침에는 기분이 좋더니 저녁에는 아무 말도 안 해요.
+      options:
+        - { id: q2r, text: "Buổi sáng chị tôi tâm trạng vui vẻ, vậy mà buổi tối chẳng nói câu nào.", lang: vi }
+        - { id: d7j, text: "Buổi sáng tôi tâm trạng vui vẻ nên buổi tối không nói gì với chị.", lang: vi }
+        - { id: m9x, text: "Chị tôi buổi sáng và buổi tối đều vui vẻ, nói chuyện nhiều.", lang: vi }
+        - { id: b3w, text: "Buổi sáng chị tôi không nói gì, nhưng buổi tối thì vui vẻ.", lang: vi }
+    answer:
+      correct_option_id: q2r
+    explanation:
+      vi: A-더니 B - người nói đã thấy chị vui buổi sáng (좋더니), rồi buổi tối thay đổi (아무 말도 안 해요). Chủ ngữ hai vế đều là 언니, không phải "tôi".
+    display_answer: "Buổi sáng chị tôi tâm trạng vui vẻ, vậy mà buổi tối chẳng nói câu nào."
+
+  - key: ko:exercise:gm-mem-mcq-pho-shop
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-dangol
+    prompt:
+      stem: "Chọn từ đúng: \"Đây là quán phở tôi hay đến hồi sinh viên.\" 여기는 대학생 때 자주 ___ 쌀국수집이에요."
+      stem_lang: vi
+      options:
+        - { id: c6e, text: 가던, lang: ko }
+        - { id: f2p, text: 갈, lang: ko }
+        - { id: w8u, text: 가더니, lang: ko }
+        - { id: k4m, text: 가는, lang: ko }
+    answer:
+      correct_option_id: c6e
+    explanation:
+      vi: Thói quen lặp lại trong quá khứ (자주 - thường xuyên, 대학생 때 - hồi sinh viên) → 가던. 갈 là tương lai, 가는 là hiện tại, 가더니 là liên từ, không đứng trước danh từ.
+    display_answer: 가던
+
+  - key: ko:exercise:gm-mem-fill-half-coffee-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-deon
+    prompt:
+      template: "아까 제가 {{b1}} 커피 어디 갔어요? 반쯤 남아 있었는데요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Ly cà phê lúc nãy tôi đang uống dở đâu rồi? Còn khoảng một nửa mà."
+        - "Gợi ý: 마시다 + định ngữ hồi tưởng (việc đang dở)."
+    answer:
+      blanks:
+        b1: [마시던]
+    known_wrong:
+      - answer: 마신
+        feedback_vi: 마신 커피 là cà phê đã uống xong; còn một nửa thì là đang uống dở - 마시던.
+        error_tag: deon_vs_eun
+      - answer: 마실
+        feedback_vi: 마실 là "sẽ uống"; câu nói về ly đang uống dở lúc nãy - 마시던.
+        error_tag: adnominal_tense
+      - answer: 마시더니
+        feedback_vi: -더니 là liên từ nối hai vế câu, không đứng trước danh từ.
+        error_tag: deoni_vs_deon
+    explanation:
+      vi: Việc đang dở dang trong quá khứ → V-던 N - 마시던 커피 (cà phê đang uống dở).
+    display_answer: 아까 제가 마시던 커피 어디 갔어요? 반쯤 남아 있었는데요.
+
+  - key: ko:exercise:gm-mem-wb-dalat-photo
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-atdeon
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Đây là bức ảnh tôi đã chụp ở Đà Lạt năm ngoái.\""
+      tokens:
+        - { id: t4, text: 찍었던 }
+        - { id: t2, text: 작년에 }
+        - { id: t6, text: 찍더니 }
+        - { id: t5, text: 사진이에요 }
+        - { id: t3, text: 달랏에서 }
+        - { id: t1, text: 이건 }
+        - { id: t7, text: 찍을 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4, t5]
+        - [t1, t3, t2, t4, t5]
+    explanation:
+      vi: Việc đã xong, một lần (chụp năm ngoái) → 찍었던 사진. 작년에 và 달랏에서 đổi chỗ được. 찍더니 (liên từ) và 찍을 (tương lai) là token thừa.
+    display_answer: 이건 작년에 달랏에서 찍었던 사진이에요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:gm-mem-fill-baby-cried
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-deoni
+    prompt:
+      template: "(Lúc nãy em bé khóc rất to, vậy mà giờ đã ngủ say.) 아기가 아까는 크게 {{b1}} 지금은 푹 자요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [울더니]
+    known_wrong:
+      - answer: 울었더니
+        feedback_vi: -았/었더니 dùng cho hành động của chính người nói. Ở đây người nói quan sát em bé → 울더니.
+        error_tag: deoni_vs_atdeoni
+      - answer: 울어서
+        feedback_vi: -아서 là "vì… nên"; câu gốc là sự thay đổi trái ngược (khóc to → giờ ngủ) - -더니.
+        error_tag: connector_meaning
+      - answer: 울던
+        feedback_vi: -던 là định ngữ, phải đứng trước danh từ. Nối hai vế câu dùng 울더니.
+        error_tag: deoni_vs_deon
+    explanation:
+      vi: Người nói đã thấy A (em bé khóc to), rồi tình hình thay đổi (giờ ngủ say) → V-더니. Chủ ngữ hai vế đều là 아기.
+    display_answer: 아기가 아까는 크게 울더니 지금은 푹 자요.
+
+  - key: ko:exercise:gm-mem-fill-graduation-song
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-atdeon
+    prompt:
+      template: "(Bài hát này là bài tôi đã hát ở lễ tốt nghiệp cấp ba.) 이 노래는 고등학교 졸업식 때 제가 {{b1}} 노래예요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [불렀던]
+    known_wrong:
+      - answer: 부르던
+        feedback_vi: Lễ tốt nghiệp chỉ diễn ra một lần, việc đã xong hẳn → 불렀던. -던 hợp với việc lặp đi lặp lại.
+        error_tag: deon_vs_atdeon
+      - answer: 부렀던
+        feedback_vi: 부르다 là bất quy tắc 르 - 불렀던 (hai ㄹ).
+        error_tag: reu_irregular
+      - answer: 불렀더니
+        feedback_vi: -았/었더니 là liên từ; trước danh từ 노래 cần định ngữ 불렀던.
+        error_tag: atdeoni_vs_atdeon
+    explanation:
+      vi: Việc đã xong một lần trong quá khứ → V-았/었던 N. 부르다 (르) → 불렀던.
+    display_answer: 이 노래는 고등학교 졸업식 때 제가 불렀던 노래예요.
+
+  - key: ko:exercise:gm-mem-translate-old-cafe
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-yejeon
+    prompt:
+      source_text: Tôi muốn quay lại quán cà phê mà ngày trước chúng ta hay đến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 예전에 우리가 자주 가던 카페에 다시 가고 싶어요.
+        - 우리가 예전에 자주 가던 카페에 다시 가고 싶어요.
+        - 예전에 자주 가던 카페에 다시 가고 싶어요.
+        - 예전에 우리가 자주 갔던 카페에 다시 가고 싶어요.
+        - 우리가 예전에 자주 갔던 카페에 다시 가고 싶어요.
+        - 예전에 자주 갔던 카페에 다시 가고 싶어요.
+        - 예전에 우리가 자주 가던 카페에 다시 가 보고 싶어요.
+        - 우리가 예전에 자주 가던 카페에 다시 가 보고 싶어요.
+        - 예전에 우리가 자주 가던 커피숍에 다시 가고 싶어요.
+        - 옛날에 우리가 자주 가던 카페에 다시 가고 싶어요.
+        - 예전에 우리가 자주 가던 카페에 또 가고 싶어요.
+        - 예전에 우리가 자주 가던 카페에 다시 가고 싶습니다.
+        - 예전에 우리가 늘 가던 카페에 다시 가고 싶어요.
+    known_wrong:
+      - answer: 예전에 우리가 자주 갈 카페에 다시 가고 싶어요.
+        feedback_vi: -(으)ㄹ là định ngữ tương lai; việc hay đến ngày trước dùng 가던 / 갔던.
+        error_tag: adnominal_tense
+      - answer: 예전에 우리가 자주 가더니 카페에 다시 가고 싶어요.
+        feedback_vi: -더니 là liên từ, không đứng trước danh từ 카페 - dùng định ngữ 가던.
+        error_tag: deoni_vs_deon
+      - answer: 예전에 우리가 자주 가는 카페에 다시 가고 싶어요.
+        feedback_vi: -는 là hiện tại; "ngày trước hay đến" cần định ngữ hồi tưởng 가던.
+        error_tag: adnominal_tense
+    explanation:
+      vi: Thói quen lặp lại trong quá khứ → 자주 가던 카페 (자주 갔던 cũng tự nhiên). 예전에 = ngày trước; "muốn quay lại" = 다시 가고 싶어요.
+    display_answer: 예전에 우리가 자주 가던 카페에 다시 가고 싶어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:gm-mem-mcq-brother-exercise
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-gram-deoni
+    prompt:
+      stem: "Bạn kể: \"Em trai tôi ngày nào cũng tập thể dục, giờ người khoẻ hẳn.\" Câu nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: a7v, text: 남동생이 매일 운동하더니 몸이 아주 건강해졌어요., lang: ko }
+        - { id: l3n, text: 제가 매일 운동하더니 몸이 아주 건강해졌어요., lang: ko }
+        - { id: g5h, text: 남동생이 매일 운동했더니 몸이 아주 건강해졌어요., lang: ko }
+        - { id: s9b, text: 남동생이 매일 운동하던 몸이 아주 건강해졌어요., lang: ko }
+    answer:
+      correct_option_id: a7v
+    explanation:
+      vi: Kể điều quan sát được ở người khác rồi có kết quả → -더니 (chủ ngữ 남동생 ở cả hai vế). -더니 không dùng với 제가; -았/었더니 dùng cho hành động của chính mình; 운동하던 là định ngữ, phải có danh từ đúng nghĩa đi sau.
+    display_answer: 남동생이 매일 운동하더니 몸이 아주 건강해졌어요.
+
+  - key: ko:exercise:gm-mem-mcq-reading-hometown
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:gm-eorin-sijeol
+    prompt:
+      stem: "다음 글을 읽고 내용과 같은 것을 고르십시오.\n고향에 십 년 만에 다녀왔다. 어린 시절 친구들과 매일 놀던 강가에는 이제 높은 아파트가 서 있었다. 내가 다녔던 초등학교는 그대로였지만 자주 가던 문구점은 없어졌다. 할머니께서는 \"옛날에는 이 동네가 참 조용하더니 이제 사람이 많아졌지\" 하고 말씀하셨다. 많이 변했지만 고향은 여전히 따뜻한 추억이 있는 곳이다."
+      stem_lang: ko
+      options:
+        - { id: x2d, text: 글쓴이가 다녔던 초등학교는 아직 남아 있다., lang: ko }
+        - { id: e5q, text: 글쓴이는 해마다 고향에 간다., lang: ko }
+        - { id: i8t, text: 글쓴이가 자주 가던 문구점은 지금도 장사를 한다., lang: ko }
+        - { id: o1y, text: 옛날에도 이 동네에는 사람이 많았다., lang: ko }
+    answer:
+      correct_option_id: x2d
+    explanation:
+      vi: 다녔던 초등학교는 그대로였지만 = trường tiểu học từng học vẫn như cũ. Người viết mười năm mới về (십 년 만에); hiệu văn phòng phẩm hay đến đã biến mất (없어졌다); bà nói ngày xưa khu này yên tĩnh (조용하더니), giờ mới đông người.
+    display_answer: 글쓴이가 다녔던 초등학교는 아직 남아 있다.
+
+  - key: ko:exercise:gm-mem-translate-snack-bar-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gm-gram-atdeon
+    prompt:
+      source_text: 대학 때 단골이었던 분식집이 없어져서 너무 아쉬웠어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Quán ăn vặt quen hồi đại học đã không còn nữa nên tôi rất tiếc.
+        - Quán ăn vặt tôi hay ăn hồi đại học đã biến mất nên tôi tiếc lắm.
+        - Quán ăn vặt quen thời đại học đã đóng cửa nên tôi rất tiếc.
+        - Quán ăn vặt từng là chỗ quen của tôi hồi đại học không còn nữa nên tôi rất tiếc.
+        - Quán ăn nhẹ quen hồi đại học đã không còn nên tôi thấy tiếc quá.
+        - Quán ăn vặt quen hồi đại học đã biến mất nên tôi rất tiếc nuối.
+        - Quán quen hồi đại học đã không còn nữa nên tôi tiếc lắm.
+        - Vì quán ăn vặt quen hồi đại học đã biến mất nên tôi rất tiếc.
+        - Quán ăn vặt quen hồi học đại học không còn nữa nên tôi rất tiếc.
+        - Quán ăn vặt mà tôi hay đến hồi đại học đã không còn nên tôi rất tiếc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Quán ăn vặt quen hồi đại học vẫn còn nên tôi rất vui.
+        feedback_vi: 없어져서 là "đã biến mất, không còn"; 아쉬웠어요 là "tiếc".
+        error_tag: meaning_mismatch
+      - answer: Tôi sẽ mở một quán ăn vặt giống hồi đại học.
+        feedback_vi: Câu gốc nói về quán quen ngày trước đã không còn, không phải dự định.
+        error_tag: meaning_mismatch
+    explanation:
+      vi: N이었던 = từng là N (nay không còn); 단골 = quán quen; 없어지다 = biến mất; 아쉽다 = tiếc.
+    display_answer: Quán ăn vặt quen hồi đại học đã không còn nữa nên tôi rất tiếc.
+
+  - key: ko:exercise:gm-mem-translate-salad-sister
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:gm-gram-deoni
+    prompt:
+      source_text: Chị tôi ngày trước rất ghét rau, vậy mà dạo này ngày nào cũng ăn salad.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 언니가 예전에는 채소를 아주 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니는 예전에는 채소를 아주 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니가 예전에는 채소를 정말 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니는 예전에는 채소를 정말 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니가 예전에는 야채를 아주 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니는 예전에는 야채를 정말 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니가 예전에 채소를 아주 싫어하더니 요즘 매일 샐러드를 먹어요.
+        - 언니가 예전에는 채소를 너무 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 누나가 예전에는 채소를 아주 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 누나는 예전에는 채소를 정말 싫어하더니 요즘은 매일 샐러드를 먹어요.
+        - 언니가 예전에는 채소를 아주 싫어하더니 요즘은 날마다 샐러드를 먹어요.
+        - 언니가 옛날에는 채소를 아주 싫어하더니 요즘은 매일 샐러드를 먹어요.
+    known_wrong:
+      - answer: 언니가 예전에는 채소를 아주 싫어했더니 요즘은 매일 샐러드를 먹어요.
+        feedback_vi: -았/었더니 dùng cho hành động của chính người nói; quan sát chị → 싫어하더니.
+        error_tag: deoni_vs_atdeoni
+      - answer: 언니가 예전에는 채소를 아주 싫어해서 요즘은 매일 샐러드를 먹어요.
+        feedback_vi: -아서 là "vì… nên" - vô lý về nghĩa; câu gốc là sự thay đổi trái ngược → -더니.
+        error_tag: connector_meaning
+      - answer: 언니가 예전에는 채소를 아주 싫어하던 요즘은 매일 샐러드를 먹어요.
+        feedback_vi: -던 là định ngữ, cần danh từ phía sau; nối hai vế dùng -더니.
+        error_tag: deoni_vs_deon
+    explanation:
+      vi: Người nói quan sát chị trước đây (ghét rau) → giờ thay đổi (ăn salad mỗi ngày) → V-더니. "Chị" là 언니 (người nói nữ) hoặc 누나 (người nói nam).
+    display_answer: 언니가 예전에는 채소를 아주 싫어하더니 요즘은 매일 샐러드를 먹어요.

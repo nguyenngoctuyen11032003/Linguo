@@ -1,0 +1,430 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:feelings-confirmation
+order_index: 3
+level: topik2
+title:
+  vi: Ồ, hay quá nhỉ! - -네요, -지요(죠)?, -겠어요
+objectives:
+  - vi: Thốt lên khi vừa phát hiện điều gì bằng A/V-네요 và N(이)네요.
+  - vi: Hỏi lại để xác nhận điều mình đã biết bằng A/V-지요? / -죠?.
+  - vi: Đoán và đồng cảm ngay tại chỗ bằng -겠어요 (맛있겠어요, 힘들겠어요) và nói về cảm xúc - 부럽다, 신기하다, 귀엽다, 기쁘다, 서운하다, 심심하다, 대단하다, 놀라다.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ko:lesson:rules-negative-requests]
+items:
+  - item: ko:item:rf-gram-neyo
+  - item: ko:item:rf-gram-jiyo
+  - item: ko:item:rf-gram-gesseoyo
+  - item: ko:item:rf-bureopda
+  - item: ko:item:rf-singihada
+  - item: ko:item:rf-gwiyeopda
+  - item: ko:item:rf-gippeuda
+  - item: ko:item:rf-seounhada
+  - item: ko:item:rf-simsimhada
+  - item: ko:item:rf-daedanhada
+  - item: ko:item:rf-nollada
+  - item: ko:item:gram-eul-geoyeyo
+    role: reuse
+  - item: ko:item:pigonhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn phản ứng tự nhiên như người Hàn trong hội thoại - khen "giỏi quá!", hỏi lại "đúng không?", và đồng cảm "chắc mệt lắm nhỉ" thay vì chỉ nói câu kể khô khan.
+  - type: explain
+    text:
+      vi: "A/V-네요 dùng khi bạn vừa thấy, vừa nghe, vừa cảm nhận một điều - giống \"…quá!\", \"…thế!\", \"…nhỉ!\" của tiếng Việt: 비가 오네요! (ôi, mưa kìa!). Danh từ dùng N(이)네요 - 벌써 금요일이네요. Nếu kể một sự thật bình thường thì vẫn dùng -아/어요."
+  - type: explain
+    text:
+      vi: "A/V-지요? (khẩu ngữ -죠?) là hỏi để người nghe xác nhận điều bạn nghĩ cả hai đều biết - giống \"…đúng không?\", \"…phải không nhỉ?\": 내일 시험이죠? Người Việt hay dùng -아/어요? cho mọi câu hỏi; nhưng khi đã đoán trước câu trả lời, người Hàn dùng -지요? nghe tự nhiên và thân thiện hơn."
+  - type: explain
+    text:
+      vi: "-겠어요 là đoán ngay khi nhìn, nghe thấy điều gì - \"chắc là…\": 맛있겠어요 (nhìn món ăn), 힘들겠어요 (nghe bạn kể làm việc vất vả). Nó vừa là phỏng đoán, vừa là cách đồng cảm với người nghe. Đoán chuyện đã xảy ra thì dùng -았/었겠어요 - 힘들었겠어요 (chắc đã vất vả lắm)."
+  - type: deep_explain
+    text:
+      vi: "So sánh ba đuôi với cùng một tính từ: 춥네요 (tôi vừa cảm thấy lạnh), 춥죠? (lạnh nhỉ? - mong bạn đồng ý), 춥겠어요 (chắc là lạnh - tôi đoán, ví dụ khi thấy bạn mặc áo mỏng). Với -(으)ㄹ 거예요, phỏng đoán thường dựa trên suy luận hay thông tin có sẵn (내일 비가 올 거예요 - theo dự báo), còn -겠어요 là phản ứng tức thì. Lưu ý -겠- còn có nghĩa ý định trang trọng (제가 하겠습니다) và xuất hiện trong câu chào cố định (처음 뵙겠습니다) - đó là cách dùng khác."
+  - type: example
+    target: 와, 이 집 떡볶이가 생각보다 훨씬 맵네요!
+    target_lang: ko
+    translation:
+      vi: Ôi, bánh gạo cay quán này cay hơn tôi nghĩ nhiều!
+    note:
+      vi: Vừa ăn và cảm nhận ngay → -네요.
+  - type: example
+    target: 이 사진 속 아기가 민수 씨 딸이죠? 눈이 아빠를 닮았네요.
+    target_lang: ko
+    translation:
+      vi: Em bé trong ảnh này là con gái anh Minsu đúng không? Mắt giống bố quá.
+    note:
+      vi: -죠? hỏi xác nhận; -았네요 là vừa phát hiện một kết quả (닮았다 - giống).
+  - type: example
+    target: 세 시간 동안 줄을 섰어요? 다리가 많이 아팠겠어요.
+    target_lang: ko
+    translation:
+      vi: Bạn xếp hàng ba tiếng à? Chắc chân đau lắm.
+    note:
+      vi: -았/었겠어요 - đoán chuyện đã xảy ra, thể hiện sự đồng cảm.
+  - type: example
+    target: 다음 주에 고향에 가요? 가족들이 정말 기뻐하겠어요.
+    target_lang: ko
+    translation:
+      vi: Tuần sau bạn về quê à? Chắc gia đình bạn mừng lắm.
+    note:
+      vi: Nói về cảm xúc của người thứ ba thường dùng A-아/어하다 (기뻐하다).
+  - type: example
+    target: 같은 반 친구들이 모두 시험에 합격했어요? 대단하네요!
+    target_lang: ko
+    translation:
+      vi: Các bạn cùng lớp đều đỗ kỳ thi à? Giỏi thật đấy!
+  - type: common_mistake
+    wrong: 오늘 날씨가 정말 좋으네요.
+    right: 오늘 날씨가 정말 좋네요.
+    target_lang: ko
+    note:
+      vi: -네요 gắn thẳng vào thân, không thêm 으 dù có patchim (좋네요, 먹네요). 좋네요 đọc [존네요].
+  - type: common_mistake
+    wrong: 회사가 집에서 정말 멀네요.
+    right: 회사가 집에서 정말 머네요.
+    target_lang: ko
+    note:
+      vi: Thân gốc ㄹ mất ㄹ trước ㄴ - 멀다 → 머네요, 살다 → 사네요, 알다 → 아네요.
+  - type: common_mistake
+    wrong: 제 고향은 하노이네요.
+    right: 제 고향은 하노이예요.
+    target_lang: ko
+    note:
+      vi: Bạn không thể "vừa phát hiện" quê mình ở đâu. Sự thật đã biết từ trước dùng câu kể bình thường, không dùng -네요.
+  - type: summary
+    points:
+      - vi: A/V-네요 · N(이)네요 - cảm thán khi vừa phát hiện; không thêm 으; gốc ㄹ bỏ ㄹ (머네요).
+      - vi: A/V-지요? · -죠? · N(이)죠? - hỏi xác nhận điều mình đã biết hoặc đoán chắc.
+      - vi: A/V-겠어요 - chắc là… (phản ứng tức thì, đồng cảm); quá khứ -았/었겠어요.
+      - vi: Cảm xúc người thứ ba - 기뻐하다, 부러워하다, 서운해하다.
+      - vi: 부럽다 · 신기하다 · 귀엽다 · 기쁘다 · 서운하다 · 심심하다 · 대단하다 · 놀라다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:rf-feel-mcq-snow-discovery
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 1
+    item: ko:item:rf-gram-neyo
+    prompt:
+      stem: "Sáng thức dậy, bạn kéo rèm và bất ngờ thấy tuyết đang rơi. Bạn thốt lên câu nào?"
+      stem_lang: vi
+      options:
+        - { id: p3z, text: "어, 눈이 오네요!", lang: ko }
+        - { id: a6k, text: "어, 눈이 오지요?", lang: ko }
+        - { id: r9m, text: "어, 눈이 오지 마세요!", lang: ko }
+        - { id: e2v, text: "어, 눈이 와도 돼요!", lang: ko }
+    answer:
+      correct_option_id: p3z
+    explanation:
+      vi: Vừa nhìn thấy điều mới → -네요. -지요? là hỏi xác nhận với người khác; -지 마세요 là "đừng"; -아/어도 돼요 là cho phép - không hợp ngữ cảnh.
+    display_answer: 어, 눈이 오네요!
+
+  - key: ko:exercise:rf-feel-listen-birthday
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:rf-gram-jiyo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이번 주 금요일이 민지 씨 생일이죠? 그래서 제가 어제 케이크를 주문했어요.
+      options:
+        - { id: n7c, text: "Thứ Sáu tuần này là sinh nhật Minji đúng không? Vì vậy hôm qua tôi đã đặt bánh kem.", lang: vi }
+        - { id: o1f, text: "Thứ Sáu tuần này là sinh nhật Minji à? Tôi không biết gì cả.", lang: vi }
+        - { id: s4w, text: "Sinh nhật Minji là thứ Sáu tuần trước. Tôi đã mua bánh kem.", lang: vi }
+        - { id: i8u, text: "Thứ Sáu tuần này Minji sẽ đặt bánh kem.", lang: vi }
+    answer:
+      correct_option_id: n7c
+    explanation:
+      vi: 생일이죠? là hỏi xác nhận điều người nói đã biết (không phải không biết gì). 이번 주 = tuần này; 제가 어제 주문했어요 = hôm qua tôi đã đặt.
+    display_answer: "Thứ Sáu tuần này là sinh nhật Minji đúng không? Vì vậy hôm qua tôi đã đặt bánh kem."
+
+  - key: ko:exercise:rf-feel-mcq-puppy-photo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gwiyeopda
+    prompt:
+      stem: "Bạn của bạn khoe ảnh con chó mới nuôi, bạn nhìn thấy lần đầu. Câu khen nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: t5h, text: "와, 강아지가 정말 귀엽네요!", lang: ko }
+        - { id: b8x, text: "와, 강아지가 정말 귀엽으네요!", lang: ko }
+        - { id: k3q, text: "와, 강아지가 정말 귀엽지 않아요!", lang: ko }
+        - { id: w6d, text: "와, 강아지가 정말 귀엽어요지요!", lang: ko }
+    answer:
+      correct_option_id: t5h
+    explanation:
+      vi: Vừa nhìn thấy → -네요, gắn thẳng vào thân 귀엽- (không thêm 으, không đổi ㅂ vì sau là phụ âm ㄴ). 귀엽지 않아요 là "không dễ thương"; 귀엽어요지요 không phải dạng đúng.
+    display_answer: 와, 강아지가 정말 귀엽네요!
+
+  - key: ko:exercise:rf-feel-fill-long-shift-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-gesseoyo
+    prompt:
+      template: "A: 오늘 열두 시간 동안 쉬지 않고 일했어요. B: 정말 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: A - Hôm nay tôi làm việc 12 tiếng không nghỉ. B - Chắc bạn mệt lắm."
+        - "Gợi ý: 피곤하다 hoặc 힘들다 + -겠어요."
+    answer:
+      blanks:
+        b1: [피곤하겠어요, 힘들겠어요, 힘들었겠어요, 피곤했겠어요]
+    known_wrong:
+      - answer: 피곤하네요
+        feedback_vi: -네요 là cảm nhận của chính mình; B đang đoán cảm giác của A → -겠어요.
+        error_tag: neyo_vs_gesseoyo
+      - answer: 힘들으겠어요
+        feedback_vi: -겠어요 gắn thẳng vào thân, không thêm 으 - 힘들겠어요.
+        error_tag: gesseoyo_form
+      - answer: 피곤하지 마세요
+        feedback_vi: Không dùng -지 마세요 với tính từ cảm giác; B cần đồng cảm "chắc mệt lắm".
+        error_tag: ji_maseyo_misuse
+    explanation:
+      vi: Nghe người khác kể và đoán cảm giác của họ → -겠어요 (hoặc -았/었겠어요 vì việc đã xảy ra). Đây là câu đồng cảm rất tự nhiên.
+    display_answer: "A: 오늘 열두 시간 동안 쉬지 않고 일했어요. B: 정말 피곤하겠어요."
+
+  - key: ko:exercise:rf-feel-wb-hanoi
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-jiyo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Anh Tuấn là người Hà Nội đúng không?\""
+      tokens:
+        - { id: t4, text: 사람이네요 }
+        - { id: t3, text: 사람이죠 }
+        - { id: t2, text: 하노이 }
+        - { id: t5, text: 사람이겠어요 }
+        - { id: t1, text: 투안 씨는 }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: Hỏi xác nhận điều mình đoán chắc → N이죠? (사람 có patchim nên 이). 사람이네요 là cảm thán khi vừa phát hiện; 사람이겠어요 là phỏng đoán - không phải câu hỏi xác nhận.
+    display_answer: 투안 씨는 하노이 사람이죠?
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:rf-feel-fill-korean-skill
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-neyo
+    prompt:
+      template: "(Lần đầu nghe ông Park nói tiếng Việt) 와, 베트남어를 정말 잘{{b1}}!"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [하시네요, 하네요]
+    known_wrong:
+      - answer: 하시지요
+        feedback_vi: -지요 là hỏi xác nhận điều đã biết; ở đây bạn vừa nghe lần đầu và thốt lên → -네요.
+        error_tag: neyo_vs_jiyo
+      - answer: 하겠어요
+        feedback_vi: Bạn đã nghe trực tiếp, không cần đoán - dùng -네요.
+        error_tag: neyo_vs_gesseoyo
+      - answer: 해요
+        feedback_vi: 잘해요 chỉ là câu kể; muốn thể hiện ngạc nhiên khi vừa nghe thì dùng 잘하시네요.
+        error_tag: neyo_missing
+    explanation:
+      vi: Vừa phát hiện → -네요; khen người lớn tuổi nên thêm kính ngữ -시- - 잘하시네요.
+    display_answer: 와, 베트남어를 정말 잘하시네요!
+
+  - key: ko:exercise:rf-feel-fill-far-home
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-neyo
+    prompt:
+      template: "(Vừa biết nhà bạn cách trường hai tiếng) 집이 학교에서 정말 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [머네요]
+    known_wrong:
+      - answer: 멀네요
+        feedback_vi: Gốc ㄹ mất ㄹ trước ㄴ - 멀다 → 머네요.
+        error_tag: l_drop
+      - answer: 멀으네요
+        feedback_vi: -네요 không thêm 으; gốc ㄹ lại còn mất ㄹ - 머네요.
+        error_tag: l_drop
+      - answer: 멀지요
+        feedback_vi: Bạn vừa mới biết, chưa phải điều đã biết để hỏi xác nhận - dùng -네요.
+        error_tag: neyo_vs_jiyo
+    explanation:
+      vi: 멀다 (xa) gốc ㄹ + -네요 → ㄹ rơi → 머네요. Vừa nghe thông tin mới → -네요.
+    display_answer: 집이 학교에서 정말 머네요.
+
+  - key: ko:exercise:rf-feel-translate-saturday
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-jiyo
+    prompt:
+      source_text: Ngày mai là thứ Bảy đúng không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 내일은 토요일이죠?
+        - 내일이 토요일이죠?
+        - 내일 토요일이죠?
+        - 내일은 토요일이지요?
+        - 내일이 토요일이지요?
+        - 내일 토요일이지요?
+        - 내일은 토요일 맞죠?
+        - 내일 토요일 맞죠?
+        - 내일이 토요일 맞죠?
+        - 내일은 토요일 맞지요?
+    known_wrong:
+      - answer: 내일은 토요일이네요.
+        feedback_vi: -네요 là cảm thán khi vừa phát hiện ("ồ, mai là thứ Bảy!"), không phải hỏi xác nhận.
+        error_tag: neyo_vs_jiyo
+      - answer: 내일은 토요일죠?
+        feedback_vi: 토요일 có patchim nên cần 이 - 토요일이죠?.
+        error_tag: copula_after_consonant
+      - answer: 내일은 토요일이겠어요?
+        feedback_vi: -겠어요 là phỏng đoán; hỏi xác nhận dùng -지요? / -죠?.
+        error_tag: jiyo_vs_gesseoyo
+      - answer: naeireun toyoirijyo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Danh từ + 이지요? / 이죠? để hỏi xác nhận; 토요일 có patchim nên dùng 이. 맞죠? (đúng chứ?) cũng rất tự nhiên.
+    display_answer: 내일은 토요일이죠?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:rf-feel-mcq-all-nighter
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-gesseoyo
+    prompt:
+      stem: "Đồng nghiệp nói: \"어젯밤에 보고서 때문에 한숨도 못 잤어요.\" Bạn muốn đồng cảm. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: q4y, text: 밤을 새웠어요? 오늘 많이 피곤하겠어요., lang: ko }
+        - { id: h7e, text: 밤을 새웠어요? 오늘 많이 피곤하지 마세요., lang: ko }
+        - { id: z1n, text: 밤을 새웠어요? 오늘 많이 피곤해도 돼요., lang: ko }
+        - { id: m8r, text: 밤을 새웠어요? 오늘 많이 피곤하지 않아요., lang: ko }
+    answer:
+      correct_option_id: q4y
+    explanation:
+      vi: Đồng nghiệp không ngủ cả đêm (한숨도 못 잤어요) → bạn đoán và đồng cảm "chắc hôm nay mệt lắm" - 피곤하겠어요. Ba câu còn lại là "đừng mệt", "mệt cũng được", "không mệt" - không hợp ý.
+    display_answer: 밤을 새웠어요? 오늘 많이 피곤하겠어요.
+
+  - key: ko:exercise:rf-feel-mcq-reading-message
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:rf-gram-neyo
+    prompt:
+      stem: "다음 메시지를 읽고 맞는 것을 고르십시오.\n수진 씨, 보내 준 사진 잘 받았어요. 제주도 바다 색깔이 정말 예쁘네요! 날씨도 계속 좋았죠? 수진 씨는 다음 주 월요일에 돌아오죠? 돌아오면 같이 밥 먹어요. 여행 이야기가 정말 재미있겠어요."
+      stem_lang: ko
+      options:
+        - { id: c2j, text: 수진 씨가 제주도에서 사진을 보냈어요., lang: ko }
+        - { id: l9t, text: 메시지를 쓴 사람은 지금 제주도에 있어요., lang: ko }
+        - { id: u6b, text: 메시지를 쓴 사람은 수진 씨와 같이 여행했어요., lang: ko }
+        - { id: f3s, text: 수진 씨는 이번 주 월요일에 돌아왔어요., lang: ko }
+    answer:
+      correct_option_id: c2j
+    explanation:
+      vi: 보내 준 사진 잘 받았어요 - người viết đã nhận ảnh Sujin gửi, và 예쁘네요 cho thấy họ mới thấy biển Jeju qua ảnh, tức là không đi cùng. Sujin sẽ về vào thứ Hai tuần sau (다음 주 - 돌아오죠? là hỏi xác nhận).
+    display_answer: 수진 씨가 제주도에서 사진을 보냈어요.
+
+  - key: ko:exercise:rf-feel-translate-time-flies-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-gram-neyo
+    prompt:
+      source_text: 와, 벌써 열한 시네요. 시간이 정말 빨리 가네요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ôi, đã 11 giờ rồi. Thời gian trôi nhanh thật.
+        - Ôi, đã 11 giờ rồi. Thời gian trôi nhanh quá.
+        - Ồ, đã 11 giờ rồi. Thời gian trôi nhanh thật.
+        - Ồ, mới đó đã 11 giờ rồi. Thời gian trôi nhanh thật.
+        - Ôi, đã mười một giờ rồi. Thời gian trôi nhanh thật.
+        - Ôi, 11 giờ rồi. Thời gian trôi nhanh quá.
+        - Ôi, đã 11 giờ rồi à. Thời gian trôi nhanh thật đấy.
+        - Ôi, đã 11 giờ rồi. Thời gian đi nhanh thật.
+        - Wow, đã 11 giờ rồi. Thời gian trôi nhanh thật.
+        - Ôi, đã 11 giờ rồi. Thời gian qua nhanh thật.
+        - Chà, đã 11 giờ rồi. Thời gian trôi nhanh thật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ôi, đã 11 giờ rồi. Thời gian trôi chậm thật.
+        feedback_vi: 빨리 là "nhanh", không phải "chậm".
+        error_tag: vocab_meaning
+      - answer: Bây giờ là 11 giờ phải không? Thời gian trôi nhanh thật.
+        feedback_vi: 열한 시네요 là cảm thán khi vừa nhận ra, không phải câu hỏi xác nhận.
+        error_tag: neyo_vs_jiyo
+    explanation:
+      vi: N(이)네요 và -네요 thể hiện sự ngạc nhiên khi vừa nhận ra - "ôi, đã… rồi", "…thật/quá". 시간이 빨리 가다 = thời gian trôi nhanh.
+    display_answer: Ôi, đã 11 giờ rồi. Thời gian trôi nhanh thật.
+
+  - key: ko:exercise:rf-feel-translate-looks-tasty
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-gesseoyo
+    prompt:
+      source_text: (Nhìn món ăn bạn vừa nấu) Món này chắc ngon lắm đây!
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 음식 정말 맛있겠어요!
+        - 이 음식이 정말 맛있겠어요!
+        - 이거 정말 맛있겠어요!
+        - 이거 진짜 맛있겠어요!
+        - 이 음식 진짜 맛있겠어요!
+        - 이 음식은 정말 맛있겠어요!
+        - 정말 맛있겠어요!
+        - 진짜 맛있겠어요!
+        - 와, 정말 맛있겠어요!
+        - 이거 맛있겠어요!
+        - 이 음식 맛있겠어요!
+        - 이 요리 정말 맛있겠어요!
+        - 이 요리가 정말 맛있겠어요!
+        - 이 음식 너무 맛있겠어요!
+    known_wrong:
+      - answer: 이 음식 정말 맛있네요!
+        feedback_vi: -네요 là khi bạn đã ăn và cảm nhận; bạn mới nhìn nên đoán - 맛있겠어요.
+        error_tag: neyo_vs_gesseoyo
+      - answer: 이 음식 정말 맛있을게요!
+        feedback_vi: -(으)ㄹ게요 là lời hứa của người nói, không dùng với tính từ để đoán.
+        error_tag: eulgeyo_misuse
+      - answer: 이 음식 정말 맛있지 않아요!
+        feedback_vi: Câu này nghĩa là "món này không ngon".
+        error_tag: negation_misuse
+    explanation:
+      vi: Nhìn món ăn rồi đoán ngay → 맛있겠어요. Đây là câu khen rất quen thuộc khi ai đó mời bạn ăn.
+    display_answer: 이 음식 정말 맛있겠어요!

@@ -1,0 +1,425 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:looks-pretend
+order_index: 1
+level: topik3
+title:
+  vi: Trông có vẻ… hay chỉ giả vờ? - A-아/어 보이다, -(으)ㄴ/는 척하다
+objectives:
+  - vi: Nhận xét vẻ bề ngoài bằng A-아/어 보이다 (피곤해 보여요, 맛있어 보여요) và biết vì sao không gắn được vào động từ.
+  - vi: Nói "giả vờ…" bằng V-는 척하다 / A-(으)ㄴ 척하다 / V-(으)ㄴ 척하다 (자는 척, 바쁜 척, 못 들은 척).
+  - vi: Miêu tả nét mặt và cảm xúc - 표정, 안색, 졸리다, 어색하다, 우울하다, 긴장하다, 행복하다, 들키다.
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking, reading]
+prerequisites: [ko:lesson:housing-advice-review]
+items:
+  - item: ko:item:gm-gram-a-boida
+  - item: ko:item:gm-gram-neun-cheokada
+  - item: ko:item:gm-pyojeong
+  - item: ko:item:gm-ansaek
+  - item: ko:item:gm-jollida
+  - item: ko:item:gm-eosaekada
+  - item: ko:item:gm-uulhada
+  - item: ko:item:gm-ginjanghada
+  - item: ko:item:gm-haengbokada
+  - item: ko:item:gm-deulkida
+  - item: ko:item:gram-geot-gatda
+    role: reuse
+  - item: ko:item:gram-a-eo-boda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "hôm nay bạn trông mệt", "cái này trông ngon quá", và kể chuyện ai đó "giả vờ ngủ", "giả vờ không biết" - những câu xuất hiện rất nhiều trong phim và đời sống.
+  - type: explain
+    text:
+      vi: "A-아/어 보이다 là \"trông (có vẻ)…\", chia giống -아/어요: 피곤하다 → 피곤해 보여요, 젊다 → 젊어 보여요, 맛있다 → 맛있어 보여요. Kính ngữ với người trên - 피곤해 보이세요. Bạn chỉ nói về điều nhìn thấy bên ngoài, không khẳng định bên trong."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"trông như đang ngủ\", \"trông như sắp mưa\" - nhưng -아/어 보이다 chỉ gắn vào tính từ. Với động từ, bạn dùng -는 것 같다: 자는 것 같아요, 비가 올 것 같아요. Với danh từ dùng N처럼 보이다 - 학생처럼 보여요."
+  - type: explain
+    text:
+      vi: "-척하다 là \"giả vờ\". Động từ ở hiện tại dùng -는 척하다 (자는 척하다 - giả vờ ngủ), tính từ dùng -(으)ㄴ 척하다 (바쁜 척하다 - giả vờ bận), hành động đã xong dùng -(으)ㄴ 척하다 (못 들은 척하다 - giả vờ không nghe thấy). Chọn đuôi định ngữ đúng như khi đứng trước danh từ."
+  - type: deep_explain
+    text:
+      vi: "So sánh: 바빠 보여요 (trông có vẻ bận - người nói đoán thật lòng) và 바쁜 척해요 (giả vờ bận - thực ra không bận). 척하다 có dạng tương đương 체하다 (바쁜 체하다) hay gặp trong văn viết. Viết liền 척하다, nhưng cách với định ngữ phía trước: 아는 척하다. Thành ngữ hay gặp - 못 본 척하다 (làm như không thấy), 아는 척하다 (tỏ ra biết / chào hỏi người quen), 모르는 척하다 (làm lơ)."
+  - type: example
+    target: 오늘 안색이 안 좋아 보여요. 어디 아파요?
+    target_lang: ko
+    translation:
+      vi: Hôm nay sắc mặt bạn trông không tốt. Bạn bị đau ở đâu à?
+  - type: example
+    target: 할머니께서 사진보다 훨씬 젊어 보이세요.
+    target_lang: ko
+    translation:
+      vi: Bà trông trẻ hơn trong ảnh nhiều.
+    note:
+      vi: Khen người lớn tuổi dùng kính ngữ - 보이세요.
+  - type: example
+    target: 수업 시간에 너무 졸렸지만 선생님 앞에서는 안 졸린 척했어요.
+    target_lang: ko
+    translation:
+      vi: Trong giờ học tôi buồn ngủ kinh khủng nhưng trước mặt thầy thì giả vờ không buồn ngủ.
+    note:
+      vi: 졸리다 là tính từ nên 안 졸린 척 (-(으)ㄴ).
+  - type: example
+    target: 그 선배는 모르는 문제가 나와도 늘 아는 척해요.
+    target_lang: ko
+    translation:
+      vi: Anh tiền bối đó dù gặp câu không biết vẫn luôn tỏ ra biết.
+  - type: example
+    target: 처음 만난 날 우리는 둘 다 어색해 보였대요.
+    target_lang: ko
+    translation:
+      vi: Nghe nói hôm đầu gặp nhau, cả hai chúng tôi trông đều ngượng ngùng.
+    note:
+      vi: Ấn tượng trong quá khứ - 보였어요; người khác kể lại - 보였대요.
+  - type: common_mistake
+    wrong: 아기가 자 보여요.
+    right: 아기가 자는 것 같아요.
+    target_lang: ko
+    note:
+      vi: -아/어 보이다 không gắn vào động từ (자다). Người Việt dịch thẳng "trông như đang ngủ" nên hay sai; với động từ dùng -는 것 같다.
+  - type: common_mistake
+    wrong: 오늘 많이 피곤하 보여요.
+    right: 오늘 많이 피곤해 보여요.
+    target_lang: ko
+    note:
+      vi: Thân tính từ phải chia -아/어 như -아/어요 trước 보이다 - 하다 → 해 보여요.
+  - type: common_mistake
+    wrong: 시험 전날 동생이 아프는 척했어요.
+    right: 시험 전날 동생이 아픈 척했어요.
+    target_lang: ko
+    note:
+      vi: 아프다 là tính từ nên dùng -(으)ㄴ 척하다 - 아픈 척. -는 척 chỉ dành cho động từ ở hiện tại.
+  - type: summary
+    points:
+      - vi: A-아/어 보이다 - trông có vẻ…; kính ngữ 보이세요; quá khứ 보였어요.
+      - vi: Với động từ dùng -는 것 같다; với danh từ dùng N처럼 보이다.
+      - vi: V-는 척하다 (자는 척) · A-(으)ㄴ 척하다 (바쁜 척) · V-(으)ㄴ 척하다 (못 들은 척) - giả vờ.
+      - vi: 보이다 = ấn tượng thật; 척하다 = cố tình tạo ấn tượng giả.
+      - vi: 표정 · 안색 · 졸리다 · 어색하다 · 우울하다 · 긴장하다 · 행복하다 · 들키다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:gm-look-mcq-gloomy-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:gm-gram-a-boida
+    prompt:
+      stem: "친구가 오늘 좀 우울해 보여요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k3v, text: "Hôm nay bạn tôi trông hơi buồn.", lang: vi }
+        - { id: e7q, text: "Hôm nay bạn tôi giả vờ buồn.", lang: vi }
+        - { id: n1x, text: "Hôm nay bạn tôi thử làm người buồn.", lang: vi }
+        - { id: s5j, text: "Hôm nay bạn tôi chắc chắn rất buồn.", lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: A-아/어 보이다 = trông có vẻ, nhận xét qua vẻ ngoài - không chắc chắn. "Giả vờ" là -(으)ㄴ 척하다; "thử làm" là -아/어 보다 (không dùng với tính từ).
+    display_answer: "Hôm nay bạn tôi trông hơi buồn."
+
+  - key: ko:exercise:gm-look-listen-meeting-doze
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-gram-neun-cheokada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 민수 씨는 회의 시간에 열심히 듣는 척했지만 사실은 졸고 있었어요.
+      options:
+        - { id: w4d, text: "Trong giờ họp Minsu giả vờ chăm chú nghe, nhưng thực ra đang ngủ gật.", lang: vi }
+        - { id: h8m, text: "Trong giờ họp Minsu nghe rất chăm chú và không ngủ gật.", lang: vi }
+        - { id: a2r, text: "Trong giờ họp Minsu trông buồn ngủ nhưng thực ra đang nghe.", lang: vi }
+        - { id: y6c, text: "Trong giờ họp Minsu giả vờ ngủ gật để không phải phát biểu.", lang: vi }
+    answer:
+      correct_option_id: w4d
+    explanation:
+      vi: 듣는 척했지만 = giả vờ nghe nhưng…; 사실은 졸고 있었어요 = thực ra đang ngủ gật (졸다). Điều được giả vờ là "nghe", không phải "ngủ".
+    display_answer: "Trong giờ họp Minsu giả vờ chăm chú nghe, nhưng thực ra đang ngủ gật."
+
+  - key: ko:exercise:gm-look-mcq-sofa
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:gm-gram-a-boida
+    prompt:
+      stem: "Ở cửa hàng nội thất, bạn chỉ vào chiếc ghế sofa: \"Cái sofa này trông thoải mái thật.\" Chọn từ đúng: 이 소파 정말 ___."
+      stem_lang: vi
+      options:
+        - { id: p9f, text: 편해 보여요, lang: ko }
+        - { id: b2t, text: 편하 보여요, lang: ko }
+        - { id: l6k, text: 편한 보여요, lang: ko }
+        - { id: q3z, text: 편해 봐요, lang: ko }
+    answer:
+      correct_option_id: p9f
+    explanation:
+      vi: 편하다 + -아/어 보이다 → 편해 보여요 (chia như 편해요). 편하 / 편한 không ghép được với 보이다; 편해 봐요 là -아/어 보다 "thử", sai nghĩa.
+    display_answer: 편해 보여요
+
+  - key: ko:exercise:gm-look-fill-sleep-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-neun-cheokada
+    prompt:
+      template: "아이가 숙제를 안 해서 엄마가 방에 들어오자 {{b1}} 척했어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Đứa bé chưa làm bài tập nên mẹ vừa vào phòng là nó giả vờ ngủ."
+        - "Gợi ý: 자다 (động từ, hiện tại) + -는."
+    answer:
+      blanks:
+        b1: [자는]
+    known_wrong:
+      - answer: 자
+        feedback_vi: Trước 척하다 cần định ngữ - động từ hiện tại dùng -는 → 자는 척.
+        error_tag: cheok_form
+      - answer: 잘
+        feedback_vi: -(으)ㄹ là định ngữ tương lai; "giả vờ đang ngủ" dùng 자는 척.
+        error_tag: cheok_form
+      - answer: 자서
+        feedback_vi: -아서 là liên từ, không đứng trước 척하다.
+        error_tag: cheok_form
+    explanation:
+      vi: Giả vờ đang làm một hành động → V-는 척하다. 자다 → 자는 척했어요.
+    display_answer: 아이가 숙제를 안 해서 엄마가 방에 들어오자 자는 척했어요.
+
+  - key: ko:exercise:gm-look-wb-ignore-me
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-neun-cheokada
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Ở bữa tiệc, anh ấy giả vờ không quen tôi.\""
+      tokens:
+        - { id: t4, text: 척했어요 }
+        - { id: t6, text: 몰라 }
+        - { id: t2, text: 저를 }
+        - { id: t5, text: 보였어요 }
+        - { id: t1, text: 파티에서 그 사람은 }
+        - { id: t3, text: 모르는 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: '"Giả vờ không biết" = 모르는 척하다 (모르다 là động từ). 몰라 và 보였어요 là token thừa - 몰라 보이다 không phải cách nói đúng.'
+    display_answer: 파티에서 그 사람은 저를 모르는 척했어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:gm-look-fill-happy-sister
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-haengbokada
+    prompt:
+      template: "(Từ khi lấy chồng, chị tôi trông rất hạnh phúc.) 결혼한 후에 언니가 정말 {{b1}} 보여요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [행복해]
+    known_wrong:
+      - answer: 행복하
+        feedback_vi: Tính từ phải chia -아/어 trước 보이다 - 행복해 보여요.
+        error_tag: boida_form
+      - answer: 행복한
+        feedback_vi: -(으)ㄴ là định ngữ, dùng trước 척하다 hay danh từ; trước 보이다 cần 행복해.
+        error_tag: boida_form
+      - answer: 행복해서
+        feedback_vi: -아서 là liên từ "vì"; ở đây cần 행복해 보여요.
+        error_tag: boida_form
+    explanation:
+      vi: 행복하다 + -아/어 보이다 → 행복해 보여요 (trông hạnh phúc).
+    display_answer: 결혼한 후에 언니가 정말 행복해 보여요.
+
+  - key: ko:exercise:gm-look-fill-pretend-busy
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-neun-cheokada
+    prompt:
+      template: "(Tôi không muốn đi liên hoan nên giả vờ bận.) 회식에 가기 싫어서 {{b1}} 척했어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [바쁜]
+    known_wrong:
+      - answer: 바쁘는
+        feedback_vi: 바쁘다 là tính từ - định ngữ là 바쁜, không dùng -는.
+        error_tag: adnominal_adjective
+      - answer: 바빠
+        feedback_vi: Trước 척하다 cần định ngữ - 바쁜 척.
+        error_tag: cheok_form
+      - answer: 바쁠
+        feedback_vi: -(으)ㄹ là định ngữ tương lai; giả vờ đang bận là 바쁜 척.
+        error_tag: cheok_form
+    explanation:
+      vi: Tính từ + -(으)ㄴ 척하다 → 바쁜 척했어요. Tiếng Việt "giả vờ bận" không phân biệt từ loại, còn tiếng Hàn phải chọn đuôi định ngữ theo tính từ/động từ.
+    display_answer: 회식에 가기 싫어서 바쁜 척했어요.
+
+  - key: ko:exercise:gm-look-translate-pale
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-ansaek
+    prompt:
+      source_text: Hôm nay sắc mặt anh trông không tốt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘 안색이 안 좋아 보여요.
+        - 오늘은 안색이 안 좋아 보여요.
+        - 오늘 안색이 좋지 않아 보여요.
+        - 오늘은 안색이 좋지 않아 보여요.
+        - 오늘 안색이 나빠 보여요.
+        - 오늘은 안색이 나빠 보여요.
+        - 오늘 안색이 안 좋아 보이네요.
+        - 오늘 안색이 안 좋아 보이세요.
+        - 오늘은 안색이 안 좋아 보이세요.
+        - 오늘 얼굴이 안 좋아 보여요.
+        - 오늘 얼굴색이 안 좋아 보여요.
+        - 안색이 안 좋아 보여요.
+        - 오늘 안색이 별로 안 좋아 보여요.
+    known_wrong:
+      - answer: 오늘 안색이 안 좋 보여요.
+        feedback_vi: Thân phải chia -아/어 trước 보이다 - 좋아 보여요.
+        error_tag: boida_form
+      - answer: 오늘 안색이 안 좋은 척해요.
+        feedback_vi: -(으)ㄴ 척하다 là "giả vờ"; câu gốc là nhận xét "trông" - 좋아 보여요.
+        error_tag: boida_vs_cheok
+      - answer: 오늘 안색을 안 좋아 보여요.
+        feedback_vi: 좋다 là tính từ, chủ ngữ dùng 이/가 - 안색이.
+        error_tag: particle_subject
+    explanation:
+      vi: Sắc mặt = 안색 (cũng nói 얼굴, 얼굴색); "trông không tốt" = 안 좋아 보여요 / 좋지 않아 보여요. Với người trên thêm kính ngữ - 보이세요.
+    display_answer: 오늘 안색이 안 좋아 보여요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:gm-look-mcq-dont-pretend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-pyojeong
+    prompt:
+      stem: "Bạn thân nói \"Tôi ổn mà\" nhưng nét mặt rõ ràng đang lo lắng. Bạn muốn nói \"Đừng giả vờ ổn nữa. Nhìn nét mặt là biết có chuyện lo rồi.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: v7a, text: 괜찮은 척하지 마. 표정을 보니까 걱정이 있는 것 같아., lang: ko }
+        - { id: d3o, text: 괜찮아 보이지 마. 표정을 보니까 걱정이 있는 것 같아., lang: ko }
+        - { id: m6e, text: 괜찮은 척해. 표정을 보니까 걱정이 있는 것 같아., lang: ko }
+        - { id: r1u, text: 괜찮아 척하지 마. 표정을 보니까 걱정이 있는 것 같아., lang: ko }
+    answer:
+      correct_option_id: v7a
+    explanation:
+      vi: '"Đừng giả vờ ổn" = 괜찮은 척하지 마 (tính từ → -(으)ㄴ 척; 반말 với bạn thân). 괜찮아 보이지 마 sai vì "trông có vẻ" không phải việc mình ra lệnh được; 괜찮은 척해 là bảo "hãy giả vờ"; 괜찮아 척 sai dạng.'
+    display_answer: 괜찮은 척하지 마. 표정을 보니까 걱정이 있는 것 같아.
+
+  - key: ko:exercise:gm-look-mcq-reading-interview
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gm-ginjanghada
+    prompt:
+      stem: "다음 글을 읽고 내용과 같은 것을 고르십시오.\n어제 회사 면접을 봤다. 면접장에 들어가기 전에 너무 긴장했지만 일부러 안 긴장한 척했다. 면접관들은 처음에 무서워 보였는데 이야기를 해 보니까 친절했다. 면접이 끝나고 같이 면접을 본 사람이 나에게 \"아까 정말 여유 있어 보였어요\"라고 했다. 내가 떨고 있었던 것을 들키지 않아서 다행이었다."
+      stem_lang: ko
+      options:
+        - { id: c8i, text: 면접관들은 겉으로는 무서워 보였지만 실제로는 친절했다., lang: ko }
+        - { id: j5y, text: 나는 면접 전에 전혀 긴장하지 않았다., lang: ko }
+        - { id: o2b, text: 면접관들은 처음부터 친절해 보였다., lang: ko }
+        - { id: f9s, text: 같이 면접을 본 사람은 내가 긴장한 것을 알았다., lang: ko }
+    answer:
+      correct_option_id: c8i
+    explanation:
+      vi: 처음에 무서워 보였는데 … 친절했다 - lúc đầu trông đáng sợ nhưng thực ra tử tế. Người viết rất căng thẳng nhưng giả vờ bình tĩnh (안 긴장한 척), và người kia không phát hiện (들키지 않아서 다행이었다).
+    display_answer: 면접관들은 겉으로는 무서워 보였지만 실제로는 친절했다.
+
+  - key: ko:exercise:gm-look-translate-injection-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:gm-gram-neun-cheokada
+    prompt:
+      source_text: 아이가 주사를 맞을 때 안 아픈 척했지만 눈물이 났어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lúc tiêm, đứa bé giả vờ không đau nhưng nước mắt đã chảy ra.
+        - Lúc bị tiêm, đứa bé giả vờ không đau nhưng nước mắt vẫn chảy ra.
+        - Khi tiêm, đứa trẻ giả vờ không đau nhưng đã chảy nước mắt.
+        - Khi bị tiêm, đứa bé giả vờ không đau nhưng nước mắt cứ chảy ra.
+        - Lúc tiêm, bé giả vờ không đau nhưng nước mắt chảy ra.
+        - Lúc tiêm, đứa bé làm như không đau nhưng nước mắt đã trào ra.
+        - Khi tiêm, đứa bé giả vờ không đau nhưng vẫn rơi nước mắt.
+        - Lúc bị tiêm, đứa trẻ giả vờ không đau nhưng đã khóc.
+        - Khi tiêm, con giả vờ không đau nhưng nước mắt đã chảy ra.
+        - Lúc tiêm, đứa bé tỏ ra không đau nhưng nước mắt đã chảy ra.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Lúc tiêm, đứa bé trông không đau nhưng nước mắt đã chảy ra.
+        feedback_vi: -(으)ㄴ 척했지만 là "giả vờ… nhưng", không phải "trông có vẻ".
+        error_tag: boida_vs_cheok
+      - answer: Lúc tiêm, đứa bé giả vờ đau nhưng nước mắt đã chảy ra.
+        feedback_vi: 안 아픈 척 là giả vờ KHÔNG đau.
+        error_tag: negation_missed
+    explanation:
+      vi: 주사를 맞다 = bị tiêm; 안 아픈 척했지만 = giả vờ không đau nhưng; 눈물이 나다 = chảy nước mắt.
+    display_answer: Lúc tiêm, đứa bé giả vờ không đau nhưng nước mắt đã chảy ra.
+
+  - key: ko:exercise:gm-look-translate-cheap-bag
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:gm-gram-a-boida
+    prompt:
+      source_text: Cái túi này trông đắt nhưng thực ra rẻ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이 가방은 비싸 보이지만 사실은 싸요.
+        - 이 가방은 비싸 보이지만 사실 싸요.
+        - 이 가방은 비싸 보이는데 사실은 싸요.
+        - 이 가방은 비싸 보이는데 사실 싸요.
+        - 이 가방이 비싸 보이지만 사실은 싸요.
+        - 이 가방 비싸 보이지만 사실은 싸요.
+        - 이 가방 비싸 보이는데 사실은 싸요.
+        - 이 가방은 비싸 보이지만 실제로는 싸요.
+        - 이 가방은 비싸 보이지만 사실은 저렴해요.
+        - 이 가방은 비싸 보이지만 사실은 안 비싸요.
+        - 이 가방은 비싸 보이지만 사실은 비싸지 않아요.
+        - 이 가방은 비싸 보이지만 사실은 쌉니다.
+    known_wrong:
+      - answer: 이 가방은 비싼 척하지만 사실은 싸요.
+        feedback_vi: -(으)ㄴ 척하다 là "giả vờ" - đồ vật không giả vờ được. Nhận xét bề ngoài dùng 비싸 보이다.
+        error_tag: boida_vs_cheok
+      - answer: 이 가방은 비싸 봐요 사실은 싸요.
+        feedback_vi: 비싸 봐요 là -아/어 보다 (thử); "trông đắt" là 비싸 보여요, và cần nối "nhưng" bằng -지만.
+        error_tag: boida_form
+      - answer: 이 가방은 비싼 보이지만 사실은 싸요.
+        feedback_vi: Trước 보이다 tính từ chia -아/어 - 비싸 보이지만.
+        error_tag: boida_form
+    explanation:
+      vi: '"Trông đắt" = 비싸 보이다; "nhưng" = -지만 hoặc -는데; "thực ra" = 사실(은) / 실제로는.'
+    display_answer: 이 가방은 비싸 보이지만 사실은 싸요.

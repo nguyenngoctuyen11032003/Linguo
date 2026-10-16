@@ -1,0 +1,453 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:more-irregulars
+order_index: 4
+level: topik2
+title:
+  vi: Thêm động từ bất quy tắc - ㄷ, 르, ㄹ rơi, ㅅ
+objectives:
+  - vi: Chia đúng động từ bất quy tắc ㄷ (듣다 → 들어요, 걷다 → 걸어요, 묻다 → 물어요) và 르 (모르다 → 몰라요, 빠르다 → 빨라요, 부르다 → 불러요).
+  - vi: Chia động từ gốc ㄹ với -(으)세요, -(으)ㅂ니다, -는 (살다 → 사세요, 삽니다, 사는) và bất quy tắc ㅅ (낫다 → 나아요, 짓다 → 지어요).
+  - vi: Phân biệt với các từ có quy tắc dễ nhầm (받다, 닫다, 웃다, 씻다, 벗다) và với bất quy tắc ㅂ, ㅡ đã học.
+estimated_minutes: 22
+skills: [grammar, vocabulary, writing]
+prerequisites: [ko:lesson:feelings-confirmation]
+items:
+  - item: ko:item:rf-gram-d-irregular
+  - item: ko:item:rf-gram-reu-irregular
+  - item: ko:item:rf-gram-l-drop
+  - item: ko:item:rf-gram-s-irregular
+  - item: ko:item:rf-deutda
+  - item: ko:item:rf-geotda
+  - item: ko:item:rf-moreuda
+  - item: ko:item:rf-ppareuda
+  - item: ko:item:rf-salda
+  - item: ko:item:rf-alda
+  - item: ko:item:rf-natda
+  - item: ko:item:rf-jitda
+  - item: ko:item:gram-b-irregular
+    role: reuse
+  - item: ko:item:gram-eu-irregular
+    role: reuse
+  - item: ko:item:mandeulda
+    role: reuse
+  - item: ko:item:norae-bureuda
+    role: reuse
+  - item: ko:item:rf-beotda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chia được những động từ rất hay dùng nhưng "lạ" - nghe nhạc, đi bộ, không biết, sống ở đâu, khỏi bệnh - và biết vì sao 들어요, 몰라요, 사세요, 나아요 lại viết như vậy.
+  - type: explain
+    text:
+      vi: "Bất quy tắc ㄷ: một số động từ gốc ㄷ đổi ㄷ thành ㄹ khi gặp nguyên âm - 듣다 → 들어요, 들으세요; 걷다 → 걸어요; 묻다 (hỏi) → 물어요. Gặp phụ âm thì vẫn giữ ㄷ - 듣고, 걷지만. Giống bất quy tắc ㅂ bạn đã học (덥다 → 더워요): patchim chỉ đổi khi phía sau là nguyên âm."
+  - type: explain
+    text:
+      vi: "Bất quy tắc 르: thân kết thúc bằng 르 gặp -아/어 thì ㅡ rơi và mọc thêm một ㄹ - 모르다 → 몰라요, 빠르다 → 빨라요, 부르다 → 불러요. Bạn có thể coi nó là bất quy tắc ㅡ (아프다 → 아파요) cộng thêm một ㄹ; người Việt hay quên ㄹ thứ hai và viết 모라요."
+  - type: explain
+    text:
+      vi: "ㄹ rơi: thân gốc ㄹ (살다, 만들다, 알다, 놀다, 멀다) mất ㄹ trước ㄴ, ㅂ, ㅅ và không bao giờ thêm 으 - 사세요, 삽니다, 사는 사람. Trước -아/어요 thì giữ ㄹ - 살아요, 만들어요."
+  - type: explain
+    text:
+      vi: "Bất quy tắc ㅅ: 낫다, 짓다, 붓다 mất ㅅ trước nguyên âm nhưng hai nguyên âm không gộp lại - 나아요, 지어요, 나으세요. Còn 웃다, 씻다, 벗다 giữ ㅅ - 웃어요, 씻어요, 벗어요."
+  - type: deep_explain
+    text:
+      vi: "Tiếng Việt không chia động từ nên người Việt thường học \"gốc + đuôi\" rồi ghép máy móc. Với động từ bất quy tắc, cách nhớ tốt nhất là học thuộc theo cặp ba dạng: 듣다 - 들어요 - 들으세요; 모르다 - 몰라요 - 모르세요; 살다 - 살아요 - 사세요; 낫다 - 나아요 - 나으세요. Từ điển Hàn đánh dấu những từ này là 불규칙 (bất quy tắc); những từ cùng patchim nhưng có quy tắc (받다, 닫다, 믿다, 웃다, 씻다, 입다) cũng rất phổ biến, nên đừng đoán - hãy tra khi gặp từ mới."
+  - type: example
+    target: 요즘 버스에서 한국어 팟캐스트를 들어요.
+    target_lang: ko
+    translation:
+      vi: Dạo này tôi nghe podcast tiếng Hàn trên xe buýt.
+    note:
+      vi: 듣다 + 어요 → 들어요 (ㄷ → ㄹ).
+  - type: example
+    target: 길을 잘 모르면 저한테 물어보세요.
+    target_lang: ko
+    translation:
+      vi: Nếu không rành đường thì cứ hỏi tôi nhé.
+    note:
+      vi: 모르면 - 르 gặp -면 (phụ âm) nên không đổi.
+  - type: example
+    target: 부모님은 지금 베트남 다낭에 사세요.
+    target_lang: ko
+    translation:
+      vi: Bố mẹ tôi hiện đang sống ở Đà Nẵng, Việt Nam.
+    note:
+      vi: 살다 + -(으)세요 → ㄹ rơi trước ㅅ → 사세요.
+  - type: example
+    target: 이 노래는 박자가 너무 빨라서 부르기 어려워요.
+    target_lang: ko
+    translation:
+      vi: Bài hát này nhịp nhanh quá nên khó hát.
+    note:
+      vi: 빠르다 → 빨라서 (르); 어렵다 → 어려워요 (ㅂ).
+  - type: example
+    target: 푹 쉬면 몸살이 금방 나아요.
+    target_lang: ko
+    translation:
+      vi: Nghỉ ngơi đầy đủ thì cơn ê ẩm người sẽ khỏi nhanh thôi.
+    note:
+      vi: 낫다 + 아요 → 나아요 (ㅅ rơi, không gộp nguyên âm).
+  - type: common_mistake
+    wrong: 저는 매일 음악을 듣어요.
+    right: 저는 매일 음악을 들어요.
+    target_lang: ko
+    note:
+      vi: 듣다 là bất quy tắc ㄷ - trước nguyên âm ㄷ đổi thành ㄹ. Nhưng 받다 → 받아요, 닫다 → 닫아요 thì có quy tắc.
+  - type: common_mistake
+    wrong: 이 단어 뜻을 모라요.
+    right: 이 단어 뜻을 몰라요.
+    target_lang: ko
+    note:
+      vi: Bất quy tắc 르 cần thêm một ㄹ - 몰라요, 빨라요, 불러요.
+  - type: common_mistake
+    wrong: 선생님은 어디에 살으세요?
+    right: 선생님은 어디에 사세요?
+    target_lang: ko
+    note:
+      vi: Gốc ㄹ không thêm 으 và mất ㄹ trước ㅅ - 사세요. Tương tự 만드세요, 아세요.
+  - type: common_mistake
+    wrong: 감기가 다 낳았어요.
+    right: 감기가 다 나았어요.
+    target_lang: ko
+    note:
+      vi: 낫다 (khỏi bệnh) → 나았어요; 낳다 là "sinh con" (아기를 낳았어요). Hai từ đọc gần giống nhau nên rất hay viết nhầm.
+  - type: summary
+    points:
+      - vi: ㄷ bất quy tắc - 듣다 → 들어요, 걷다 → 걸어요, 묻다 → 물어요; có quy tắc - 받다, 닫다, 믿다.
+      - vi: 르 bất quy tắc - 모르다 → 몰라요, 빠르다 → 빨라요, 부르다 → 불러요, 다르다 → 달라요.
+      - vi: ㄹ rơi trước ㄴ, ㅂ, ㅅ, không thêm 으 - 사세요, 삽니다, 사는; 만드세요; 아세요.
+      - vi: ㅅ bất quy tắc - 낫다 → 나아요, 짓다 → 지어요; có quy tắc - 웃다, 씻다, 벗다.
+      - vi: Nhắc lại - ㅂ (덥다 → 더워요), ㅡ (아프다 → 아파요).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:rf-irr-mcq-geotda-form
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-d-irregular
+    prompt:
+      stem: "Chọn câu viết đúng: \"Tôi đi bộ đến công ty.\""
+      stem_lang: vi
+      options:
+        - { id: j8s, text: 저는 회사까지 걸어요., lang: ko }
+        - { id: d1n, text: 저는 회사까지 걷어요., lang: ko }
+        - { id: p5k, text: 저는 회사까지 거러요., lang: ko }
+        - { id: y3w, text: 저는 회사까지 걸러요., lang: ko }
+    answer:
+      correct_option_id: j8s
+    explanation:
+      vi: 걷다 là bất quy tắc ㄷ - ㄷ đổi thành ㄹ trước 어요 → 걸어요. 거러요 chỉ là cách đọc nối âm, không phải chính tả; 걸러요 thừa một ㄹ.
+    display_answer: 저는 회사까지 걸어요.
+
+  - key: ko:exercise:rf-irr-listen-evening-walk
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:rf-geotda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 저는 매일 저녁 강아지와 같이 한 시간쯤 걸어요. 그리고 집에 와서 라디오를 들어요.
+      options:
+        - { id: g6e, text: "Tối nào tôi cũng đi bộ với chó khoảng một tiếng, rồi về nhà nghe đài.", lang: vi }
+        - { id: v2a, text: "Tối nào tôi cũng chạy với chó khoảng một tiếng, rồi về nhà xem tivi.", lang: vi }
+        - { id: c9h, text: "Tối nào tôi cũng nghe đài khoảng một tiếng với chó.", lang: vi }
+        - { id: r4x, text: "Sáng nào tôi cũng đi bộ với chó, rồi đến công ty nghe đài.", lang: vi }
+    answer:
+      correct_option_id: g6e
+    explanation:
+      vi: 걸어요 là từ 걷다 (đi bộ), 들어요 là từ 듣다 (nghe) - cả hai đều là bất quy tắc ㄷ. 매일 저녁 = mỗi tối; 집에 와서 = về nhà rồi.
+    display_answer: "Tối nào tôi cũng đi bộ với chó khoảng một tiếng, rồi về nhà nghe đài."
+
+  - key: ko:exercise:rf-irr-mcq-side-dish
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-l-drop
+    prompt:
+      stem: "Bạn khen món ăn kèm của bà chủ quán và hỏi: \"Món này bà làm thế nào ạ?\" Chọn từ đúng: 이 반찬은 어떻게 ___?"
+      stem_lang: vi
+      options:
+        - { id: k2t, text: 만드세요, lang: ko }
+        - { id: o8b, text: 만들으세요, lang: ko }
+        - { id: e5z, text: 만들세요, lang: ko }
+        - { id: w7m, text: 만들어세요, lang: ko }
+    answer:
+      correct_option_id: k2t
+    explanation:
+      vi: 만들다 gốc ㄹ + -(으)세요 → không thêm 으, ㄹ rơi trước ㅅ → 만드세요. 만들으세요, 만들세요, 만들어세요 đều là dạng sai mà người học hay viết.
+    display_answer: 만드세요
+
+  - key: ko:exercise:rf-irr-fill-cold-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-natda
+    prompt:
+      template: "A: 감기는 다 {{b1}}? B: 네, 이제 괜찮아요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: A - Bạn khỏi cảm hẳn chưa? B - Rồi, giờ ổn rồi."
+        - "Gợi ý: 낫다 (khỏi) + -았어요; ㅅ rơi."
+    answer:
+      blanks:
+        b1: [나았어요]
+    known_wrong:
+      - answer: 낫았어요
+        feedback_vi: 낫다 là bất quy tắc ㅅ - ㅅ rơi trước nguyên âm → 나았어요.
+        error_tag: s_irregular
+      - answer: 낳았어요
+        feedback_vi: 낳다 là "sinh con". Khỏi bệnh là 낫다 → 나았어요.
+        error_tag: natda_nata
+      - answer: 났어요
+        feedback_vi: Sau khi ㅅ rơi, hai nguyên âm không gộp lại - 나았어요, không phải 났어요 (났어요 là quá khứ của 나다 "phát ra, xảy ra").
+        error_tag: s_irregular_contraction
+    explanation:
+      vi: 낫다 + -았어요 → ㅅ rơi → 나았어요; hai chữ 나 và 았 giữ nguyên, không gộp.
+    display_answer: "A: 감기는 다 나았어요? B: 네, 이제 괜찮아요."
+
+  - key: ko:exercise:rf-irr-wb-phone-number
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-moreuda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi không biết số điện thoại của anh ấy.\""
+      tokens:
+        - { id: t4, text: 모라요 }
+        - { id: t2, text: 그 사람 전화번호를 }
+        - { id: t5, text: 안 알아요 }
+        - { id: t3, text: 몰라요 }
+        - { id: t1, text: 저는 }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: '"Không biết" là động từ riêng 모르다, bất quy tắc 르 → 몰라요. 모라요 thiếu một ㄹ; 안 알아요 là cách nói sai, người Hàn không dùng.'
+    display_answer: 저는 그 사람 전화번호를 몰라요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:rf-irr-fill-baby-name
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-jitda
+    prompt:
+      template: "(Tên con chúng tôi là do hai vợ chồng tôi tự đặt.) 아이 이름은 저희 부부가 직접 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [지었어요]
+    known_wrong:
+      - answer: 짓었어요
+        feedback_vi: 짓다 là bất quy tắc ㅅ - ㅅ rơi → 지었어요.
+        error_tag: s_irregular
+      - answer: 졌어요
+        feedback_vi: Sau khi ㅅ rơi, 이 và 어 không gộp - 지었어요. 졌어요 là quá khứ của 지다 (thua).
+        error_tag: s_irregular_contraction
+      - answer: 지어요
+        feedback_vi: Việc đặt tên đã xong nên dùng quá khứ - 지었어요.
+        error_tag: tense
+    explanation:
+      vi: '"Đặt tên" là 이름을 짓다; 짓다 + -었어요 → ㅅ rơi → 지었어요.'
+    display_answer: 아이 이름은 저희 부부가 직접 지었어요.
+
+  - key: ko:exercise:rf-irr-fill-karaoke
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-reu-irregular
+    prompt:
+      template: "(Hôm qua ở quán karaoke tôi hát nhiều bài, và cũng nghe bạn bè hát.) 어제 노래방에서 노래를 많이 {{b1}}. 친구들 노래도 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [불렀어요]
+        b2: [들었어요]
+    known_wrong:
+      - answer: 부렀어요
+        feedback_vi: Bất quy tắc 르 cần thêm một ㄹ - 불렀어요.
+        error_tag: reu_irregular
+      - answer: 부르었어요
+        feedback_vi: Trước -었어요, 르 đổi thành ㄹㄹ - 불렀어요.
+        error_tag: reu_irregular
+      - answer: 듣었어요
+        feedback_vi: 듣다 là bất quy tắc ㄷ - 들었어요.
+        error_tag: d_irregular
+    explanation:
+      vi: 부르다 (르) → 불렀어요; 듣다 (ㄷ) → 들었어요. Cả hai đều là chuyện hôm qua nên chia quá khứ.
+    display_answer: 어제 노래방에서 노래를 많이 불렀어요. 친구들 노래도 들었어요.
+
+  - key: ko:exercise:rf-irr-translate-parents-live
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-salda
+    prompt:
+      source_text: Bố mẹ bạn sống ở đâu? (lịch sự, kính trọng bố mẹ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 부모님은 어디에 사세요?
+        - 부모님은 어디 사세요?
+        - 부모님은 어디에서 사세요?
+        - 부모님은 어디서 사세요?
+        - 부모님께서는 어디에 사세요?
+        - 부모님께서는 어디 사세요?
+        - 부모님께서는 어디에서 사세요?
+        - 부모님이 어디에 사세요?
+        - 부모님은 어디에 사십니까?
+        - 부모님께서는 어디에 사십니까?
+        - 부모님은 어디에 살고 계세요?
+        - 부모님은 어디에서 살고 계세요?
+    known_wrong:
+      - answer: 부모님은 어디에 살으세요?
+        feedback_vi: Gốc ㄹ không thêm 으 và ㄹ rơi trước ㅅ - 사세요.
+        error_tag: l_drop
+      - answer: 부모님은 어디에 살세요?
+        feedback_vi: ㄹ phải rơi trước ㅅ - 사세요.
+        error_tag: l_drop
+      - answer: 부모님은 어디에 사요?
+        feedback_vi: 살다 + 아요 vẫn giữ ㄹ (살아요); và nói về bố mẹ nên dùng kính ngữ 사세요.
+        error_tag: honorific_missing
+      - answer: bumonimeun eodie saseyo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Nói về bố mẹ thì dùng kính ngữ -(으)세요; 살다 + -(으)세요 → ㄹ rơi → 사세요. 살고 계세요 (đang sống) cũng tự nhiên.
+    display_answer: 부모님은 어디에 사세요?
+
+  # ---------------- application ----------------
+  - key: ko:exercise:rf-irr-mcq-didnt-hear
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-deutda
+    prompt:
+      stem: "Giảng viên vừa hỏi bạn nhưng bạn không nghe rõ. Bạn muốn xin thầy nói lại. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: x5c, text: 죄송합니다. 잘 못 들었어요. 다시 한번 말씀해 주시겠어요?, lang: ko }
+        - { id: a1g, text: 죄송합니다. 잘 못 듣었어요. 다시 한번 말씀해 주시겠어요?, lang: ko }
+        - { id: l4v, text: 죄송합니다. 잘 못 들어었어요. 다시 한번 말씀해 주시겠어요?, lang: ko }
+        - { id: m9q, text: 죄송합니다. 잘 안 몰라요. 다시 한번 말씀해 주시겠어요?, lang: ko }
+    answer:
+      correct_option_id: x5c
+    explanation:
+      vi: 듣다 + -었어요 → 들었어요 (ㄷ → ㄹ). 듣었어요 giữ ㄷ sai; 들어었어요 thừa 어; 안 몰라요 là phủ định kép sai và cũng không phải "không nghe rõ".
+    display_answer: 죄송합니다. 잘 못 들었어요. 다시 한번 말씀해 주시겠어요?
+
+  - key: ko:exercise:rf-irr-mcq-reading-new-town
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:rf-gram-l-drop
+    prompt:
+      stem: "다음 글을 읽고 맞는 것을 고르십시오.\n저는 지난달에 학교 근처로 이사했어요. 지금 사는 집은 학교에서 걸어서 십 분쯤 걸려요. 집 앞에 작은 공원이 있어서 저녁마다 거기를 걸어요. 동네에 아는 사람이 아직 없어서 조금 심심해요. 하지만 옆집 할머니가 아주 친절하세요. 어제는 할머니께서 직접 만드신 김치를 주셨어요."
+      stem_lang: ko
+      options:
+        - { id: h2y, text: 이 사람은 집에서 학교까지 걸어서 다녀요., lang: ko }
+        - { id: s6u, text: 이 사람은 동네에 친구가 많아요., lang: ko }
+        - { id: b9e, text: 이 사람은 공원에서 먼 곳에 살아요., lang: ko }
+        - { id: n3r, text: 이 사람은 옆집 할머니께 김치를 만들어 드렸어요., lang: ko }
+    answer:
+      correct_option_id: h2y
+    explanation:
+      vi: 학교에서 걸어서 십 분 = đi bộ 10 phút đến trường. Người viết chưa quen ai (아는 사람이 없어서), nhà ngay trước công viên, và chính bà hàng xóm cho kimchi do bà làm (만드신 - 만들다 + kính ngữ, ㄹ rơi).
+    display_answer: 이 사람은 집에서 학교까지 걸어서 다녀요.
+
+  - key: ko:exercise:rf-irr-translate-medicine-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-natda
+    prompt:
+      source_text: 이 약을 먹으면 감기가 빨리 나을 거예요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu uống thuốc này thì cảm sẽ nhanh khỏi.
+        - Uống thuốc này thì cảm sẽ nhanh khỏi.
+        - Nếu uống thuốc này thì bệnh cảm sẽ khỏi nhanh.
+        - Nếu uống thuốc này, cảm sẽ nhanh khỏi.
+        - Uống thuốc này vào thì cảm sẽ nhanh khỏi thôi.
+        - Nếu bạn uống thuốc này thì cảm sẽ nhanh khỏi.
+        - Uống thuốc này thì bạn sẽ nhanh khỏi cảm.
+        - Nếu uống thuốc này thì sẽ nhanh khỏi cảm.
+        - Nếu uống thuốc này thì chắc cảm sẽ nhanh khỏi.
+        - Nếu uống thuốc này thì cảm cúm sẽ nhanh khỏi.
+        - Uống thuốc này thì cảm sẽ mau khỏi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nếu uống thuốc này thì sẽ nhanh bị cảm.
+        feedback_vi: 낫다 là "khỏi bệnh", không phải "bị bệnh".
+        error_tag: vocab_meaning
+      - answer: Tôi đã uống thuốc này nên khỏi cảm rồi.
+        feedback_vi: -(으)면 là "nếu", -(으)ㄹ 거예요 là dự đoán tương lai - câu gốc chưa xảy ra.
+        error_tag: tense
+    explanation:
+      vi: 낫다 + -(으)ㄹ 거예요 → ㅅ rơi → 나을 거예요 (sẽ khỏi). 먹으면 = nếu uống; với thuốc, tiếng Hàn dùng 먹다.
+    display_answer: Nếu uống thuốc này thì cảm sẽ nhanh khỏi.
+
+  - key: ko:exercise:rf-irr-translate-know-person
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-alda
+    prompt:
+      source_text: Thầy có biết người đó không ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 선생님, 그 사람을 아세요?
+        - 선생님은 그 사람을 아세요?
+        - 선생님, 그 사람 아세요?
+        - 선생님, 그분을 아세요?
+        - 선생님, 그분 아세요?
+        - 선생님은 그분을 아세요?
+        - 선생님께서는 그 사람을 아세요?
+        - 선생님께서는 그분을 아세요?
+        - 선생님, 그 사람을 아십니까?
+        - 선생님, 그분을 아십니까?
+        - 그 사람을 아세요?
+        - 그분을 아세요?
+    known_wrong:
+      - answer: 선생님, 그 사람을 알으세요?
+        feedback_vi: Gốc ㄹ không thêm 으 và mất ㄹ trước ㅅ - 아세요.
+        error_tag: l_drop
+      - answer: 선생님, 그 사람을 알세요?
+        feedback_vi: ㄹ phải rơi trước ㅅ - 아세요.
+        error_tag: l_drop
+      - answer: 선생님, 그 사람을 알아요?
+        feedback_vi: Hỏi thầy giáo nên dùng kính ngữ - 아세요?.
+        error_tag: honorific_missing
+      - answer: 선생님, 그 사람을 몰라요?
+        feedback_vi: 몰라요 là "không biết"; câu gốc hỏi "có biết không" - 아세요?.
+        error_tag: vocab_meaning
+    explanation:
+      vi: Hỏi người trên → kính ngữ -(으)세요; 알다 → ㄹ rơi trước ㅅ → 아세요. Nói về người thứ ba lịch sự có thể dùng 그분.
+    display_answer: 선생님, 그 사람을 아세요?

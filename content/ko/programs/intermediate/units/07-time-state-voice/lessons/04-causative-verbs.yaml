@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:causative-verbs
+order_index: 4
+level: topik4
+title:
+  vi: Bắt, cho, làm cho - -게 하다 và động từ sai khiến -이/히/리/기/우/추
+objectives:
+  - vi: Nói "bắt/cho/khiến ai làm gì" bằng V-게 하다 với người được sai khiến đi kèm 에게/한테.
+  - vi: Dùng động từ sai khiến từ vựng - 먹이다, 입히다, 앉히다, 울리다, 웃기다, 씻기다, 태우다, 깨우다, 낮추다 - và phân biệt với -게 하다.
+  - vi: Kể việc chăm con, việc nhà bằng động từ sai khiến; nhận ra những từ trùng hình thức với bị động.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading, speaking]
+prerequisites: [ko:lesson:passive-verbs]
+items:
+  - item: ko:item:tv-gram-ge-hada
+  - item: ko:item:tv-gram-causative
+  - item: ko:item:tv-meogida
+  - item: ko:item:tv-iphida
+  - item: ko:item:tv-anchida
+  - item: ko:item:tv-ullida
+  - item: ko:item:tv-utgida
+  - item: ko:item:tv-ssitgida
+  - item: ko:item:tv-taeuda
+  - item: ko:item:tv-kkaeuda
+  - item: ko:item:tv-natchuda
+  - item: ko:item:gram-ge-doeda
+    role: reuse
+  - item: ko:item:tv-gram-passive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một buổi tối chăm con (cho con ăn, tắm cho con, ru con ngủ), nói "xin lỗi đã để bạn phải chờ", "bộ phim làm tôi khóc" - những câu người Việt hay dịch sai vì tiếng Việt chỉ dùng một chữ "cho" hoặc "làm".
+  - type: explain
+    text:
+      vi: "V-게 하다 = \"bắt / cho / khiến (ai) làm…\": 아이에게 채소를 먹게 했어요 (bắt con ăn rau). Người được sai khiến thường đi với 에게/한테 (đôi khi 을/를), còn hành động là của người đó. Cách này dùng được với gần như mọi động từ, và cả tính từ - 걱정하게 하다, 슬프게 하다."
+  - type: explain
+    text:
+      vi: "Một số động từ có dạng sai khiến riêng bằng hậu tố: -이- (먹이다), -히- (입히다, 앉히다), -리- (울리다), -기- (웃기다, 씻기다), -우- (태우다, 깨우다), -추- (낮추다). Câu thường có dạng N이/가 N에게 N을/를 V - 엄마가 아기에게 우유를 먹여요."
+  - type: explain
+    text:
+      vi: "Hai cách có sắc thái khác nhau: 먹이다 là tự tay cho ăn (đút cho em bé), còn 먹게 하다 là để/bắt người kia tự ăn. Tiếng Việt nói \"cho ăn\" cho cả hai, nên người Việt cần chú ý: với trẻ nhỏ, người già cần giúp - dùng động từ sai khiến; với người tự làm được - dùng -게 하다."
+  - type: deep_explain
+    text:
+      vi: "Một số dạng trùng với bị động bài trước: 보이다 (được nhìn thấy / cho xem), 안기다 (được ôm / đưa cho bế), 읽히다 (được đọc / bắt đọc). Mẹo phân biệt: câu sai khiến có tân ngữ 을/를 (사진을 보여 주다), câu bị động thì không (산이 보이다). Đừng nhầm -게 하다 (bắt, cho làm) với -게 되다 (trở nên, rốt cuộc phải) đã học. Bạn đã gặp 줄이다, 늘리다 ở chương trình cao cấp - đó cũng là động từ sai khiến (làm giảm, làm tăng)."
+  - type: example
+    target: 엄마가 아기에게 이유식을 먹이고 있어요.
+    target_lang: ko
+    translation:
+      vi: Mẹ đang cho em bé ăn dặm.
+    note:
+      vi: Tự tay đút cho bé → 먹이다.
+  - type: example
+    target: 선생님이 학생들을 한 줄로 서게 하셨어요.
+    target_lang: ko
+    translation:
+      vi: Thầy giáo bắt học sinh đứng thành một hàng.
+  - type: example
+    target: 할머니가 손녀에게 직접 만든 한복을 입혀 주셨어요.
+    target_lang: ko
+    translation:
+      vi: Bà mặc cho cháu gái bộ hanbok do chính tay bà may.
+  - type: example
+    target: 주말 아침에는 아이들이 아빠를 깨워요.
+    target_lang: ko
+    translation:
+      vi: Sáng cuối tuần bọn trẻ đánh thức bố dậy.
+  - type: example
+    target: 엘리베이터에서는 통화 소리를 좀 낮춰 주시면 좋겠어요.
+    target_lang: ko
+    translation:
+      vi: Trong thang máy mong mọi người nói chuyện điện thoại nhỏ tiếng một chút.
+  - type: common_mistake
+    wrong: 아이를 밥을 먹여요.
+    right: 아이에게 밥을 먹여요.
+    target_lang: ko
+    note:
+      vi: Câu đã có tân ngữ 밥을, người được cho ăn đi với 에게/한테. Hai 을/를 liền nhau làm câu rối.
+  - type: common_mistake
+    wrong: 오빠가 장난을 쳐서 동생을 울었어요.
+    right: 오빠가 장난을 쳐서 동생을 울렸어요.
+    target_lang: ko
+    note:
+      vi: 울다 là "khóc" (không có tân ngữ); "làm ai khóc" là 울리다. Người Việt thêm 을/를 vào 울다 vì tiếng Việt chỉ cần "làm em khóc".
+  - type: common_mistake
+    wrong: 음악 소리 좀 낮아 주세요.
+    right: 음악 소리 좀 낮춰 주세요.
+    target_lang: ko
+    note:
+      vi: 낮다 là tính từ "thấp"; "hạ thấp, vặn nhỏ" là động từ sai khiến 낮추다 → 낮춰 주세요.
+  - type: summary
+    points:
+      - vi: V-게 하다 - bắt / cho / khiến làm; người được sai khiến + 에게/한테.
+      - vi: -이- 먹이다 | -히- 입히다 · 앉히다 | -리- 울리다 | -기- 웃기다 · 씻기다 | -우- 태우다 · 깨우다 | -추- 낮추다.
+      - vi: Sai khiến từ vựng = tự tay làm cho (먹이다); -게 하다 = để người kia tự làm (먹게 하다).
+      - vi: Có tân ngữ → sai khiến (사진을 보여 주다); không tân ngữ → bị động (산이 보이다).
+      - vi: -게 하다 (bắt làm) ≠ -게 되다 (trở nên, rốt cuộc).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:tv-caus-mcq-homework-first
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tv-gram-ge-hada
+    prompt:
+      stem: "언니가 동생에게 숙제를 먼저 하게 했어요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s3k, text: "Chị bắt em làm bài tập trước.", lang: vi }
+        - { id: w9d, text: "Chị làm bài tập giúp em trước.", lang: vi }
+        - { id: h2u, text: "Em bắt chị làm bài tập trước.", lang: vi }
+        - { id: z6o, text: "Chị làm bài tập trước rồi đi chơi với em.", lang: vi }
+    answer:
+      correct_option_id: s3k
+    explanation:
+      vi: V-게 하다 = bắt/cho ai làm; người làm bài tập là 동생 (đi với 에게), người sai khiến là 언니 (chủ ngữ). "Làm giúp" là -아/어 주다.
+    display_answer: "Chị bắt em làm bài tập trước."
+
+  - key: ko:exercise:tv-caus-listen-bath-time
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tv-ssitgida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 아빠가 아이를 씻기는 동안 엄마는 아이가 먹을 죽을 끓였어요.
+      options:
+        - { id: f4p, text: "Trong lúc bố tắm cho con, mẹ nấu cháo cho con ăn.", lang: vi }
+        - { id: a8e, text: "Trong lúc con tự tắm, bố mẹ nấu cháo.", lang: vi }
+        - { id: m1y, text: "Bố vừa tắm xong là mẹ cho con ăn cháo.", lang: vi }
+        - { id: r5b, text: "Trong lúc bố tắm, con ăn cháo mẹ nấu.", lang: vi }
+    answer:
+      correct_option_id: f4p
+    explanation:
+      vi: 아이를 씻기다 = tắm cho con (sai khiến của 씻다). -는 동안 = trong lúc; 아이가 먹을 죽 = cháo cho con ăn.
+    display_answer: "Trong lúc bố tắm cho con, mẹ nấu cháo cho con ăn."
+
+  - key: ko:exercise:tv-caus-mcq-wake-roommate
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-kkaeuda
+    prompt:
+      stem: "Bạn nhờ bạn cùng phòng: \"Mai mình có tiết sớm, cậu đánh thức mình dậy nhé?\" Chọn từ đúng: 내일 수업이 일찍 있으니까 나 좀 ___ 줄래?"
+      stem_lang: vi
+      options:
+        - { id: q7t, text: 깨워, lang: ko }
+        - { id: e2m, text: 깨어, lang: ko }
+        - { id: x5j, text: 일어나, lang: ko }
+        - { id: d8n, text: 깨게, lang: ko }
+    answer:
+      correct_option_id: q7t
+    explanation:
+      vi: '"Đánh thức người khác" = 깨우다 → 깨워 주다. 깨다 / 일어나다 là tự tỉnh, tự dậy - 깨어 주다, 일어나 주다 nghĩa là "bạn tự dậy giùm"; 깨게 줄래 sai cấu trúc.'
+    display_answer: 깨워
+
+  - key: ko:exercise:tv-caus-fill-hanbok-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-iphida
+    prompt:
+      template: "설날 아침에 엄마가 아이들에게 색동 한복을 {{b1}} 주셨어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Sáng Tết, mẹ mặc cho các con bộ hanbok sặc sỡ."
+        - "Gợi ý: 입다 → sai khiến -히- → -아/어 주다."
+    answer:
+      blanks:
+        b1: [입혀]
+    known_wrong:
+      - answer: 입어
+        feedback_vi: 입어 주다 là "mặc giúp (cho ai xem)" - người mặc là mẹ. "Mặc cho con" là 입히다 → 입혀 주셨어요.
+        error_tag: causative_missing
+      - answer: 입게
+        feedback_vi: 입게 주다 sai cấu trúc; -게 đi với 하다 (입게 하다). Tự tay mặc cho con dùng 입혀 주다.
+        error_tag: ge_hada_form
+      - answer: 입혀서
+        feedback_vi: Trước 주다 cần dạng -아/어 - 입혀 주셨어요.
+        error_tag: a_eo_juda_form
+    explanation:
+      vi: 입다 + -히- → 입히다 (mặc cho ai); + -아/어 주다 → 입혀 주다.
+    display_answer: 설날 아침에 엄마가 아이들에게 색동 한복을 입혀 주셨어요.
+
+  - key: ko:exercise:tv-caus-wb-comedian
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-utgida
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Diễn viên hài đó lúc nào cũng làm khán giả cười.\""
+      tokens:
+        - { id: t3, text: 관객들을 }
+        - { id: t5, text: 웃어요 }
+        - { id: t1, text: 그 개그맨은 }
+        - { id: t4, text: 웃겨요 }
+        - { id: t2, text: 늘 }
+        - { id: t6, text: 관객들이 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t1, t3, t2, t4]
+    explanation:
+      vi: '"Làm cho cười" = 웃기다 (sai khiến của 웃다) với tân ngữ 관객들을. 늘 đứng trước hoặc sau tân ngữ. 웃어요 (tự cười) và 관객들이 là token thừa.'
+    display_answer: 그 개그맨은 늘 관객들을 웃겨요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:tv-caus-fill-weekend-prices
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-natchuda
+    prompt:
+      template: "(Cuối tuần quán này hạ giá đồ ăn.) 이 식당은 주말마다 음식 가격을 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [낮춰요, 낮추어요, 낮춥니다, 내려요]
+    known_wrong:
+      - answer: 낮아요
+        feedback_vi: 낮다 là tính từ "thấp", không có tân ngữ. "Hạ giá" (có tân ngữ 가격을) là 낮추다 → 낮춰요.
+        error_tag: causative_missing
+      - answer: 낮혀요
+        feedback_vi: 낮다 dùng hậu tố -추- → 낮추다 → 낮춰요.
+        error_tag: causative_suffix
+      - answer: 낮어요
+        feedback_vi: Không có dạng 낮어요; "hạ thấp" là 낮춰요.
+        error_tag: causative_suffix
+    explanation:
+      vi: 낮다 (thấp) + -추- → 낮추다 (hạ thấp); 낮추어요 rút gọn thành 낮춰요. 내리다 (hạ, giảm) cũng dùng được với giá.
+    display_answer: 이 식당은 주말마다 음식 가격을 낮춰요.
+
+  - key: ko:exercise:tv-caus-fill-lap
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-anchida
+    prompt:
+      template: "(Bố cho con ngồi lên đùi rồi đọc truyện.) 아빠가 아이를 무릎 위에 {{b1}} 동화책을 읽어 줬어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [앉히고, 앉혀서, 앉혀 놓고]
+    known_wrong:
+      - answer: 앉고
+        feedback_vi: 앉다 là tự ngồi; bố đặt con ngồi → sai khiến 앉히다 → 앉히고.
+        error_tag: causative_missing
+      - answer: 앉게
+        feedback_vi: Câu cần nối hai hành động; -게 phải đi với 하다 (앉게 하고). Tự tay đặt con ngồi dùng 앉히고.
+        error_tag: ge_hada_form
+      - answer: 앉혀지고
+        feedback_vi: Không thêm -아/어지다; chỉ cần 앉히고.
+        error_tag: double_suffix
+    explanation:
+      vi: 앉다 + -히- → 앉히다 (cho ngồi, đặt ngồi), đọc [안치다]; nối với hành động sau bằng -고 hoặc -아서.
+    display_answer: 아빠가 아이를 무릎 위에 앉히고 동화책을 읽어 줬어요.
+
+  - key: ko:exercise:tv-caus-translate-clean-room
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-ge-hada
+    prompt:
+      source_text: Hồi nhỏ, cuối tuần nào mẹ cũng bắt tôi dọn phòng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 어렸을 때 엄마는 주말마다 저에게 방을 청소하게 했어요.
+        - 어렸을 때 엄마는 주말마다 저한테 방을 청소하게 했어요.
+        - 어렸을 때 엄마는 주말마다 제게 방을 청소하게 했어요.
+        - 어렸을 때 엄마는 주말마다 저에게 방을 청소하게 하셨어요.
+        - 어렸을 때 엄마는 주말마다 저한테 방을 청소하게 하셨어요.
+        - 어렸을 때 엄마가 주말마다 저에게 방을 청소하게 했어요.
+        - 어렸을 때 엄마가 주말마다 저한테 방을 청소하게 했어요.
+        - 어렸을 때 엄마는 주말마다 저에게 방 청소를 하게 했어요.
+        - 어렸을 때 엄마는 주말마다 저한테 방 청소를 하게 했어요.
+        - 어렸을 때 어머니는 주말마다 저에게 방을 청소하게 하셨어요.
+        - 어릴 때 엄마는 주말마다 저에게 방을 청소하게 했어요.
+        - 어렸을 때 엄마는 매주 주말에 저에게 방을 청소하게 했어요.
+    known_wrong:
+      - answer: 어렸을 때 엄마는 주말마다 저에게 방을 청소하게 됐어요.
+        feedback_vi: -게 되다 là "trở nên, rốt cuộc"; "bắt làm" là -게 하다.
+        error_tag: ge_hada_vs_ge_doeda
+      - answer: 어렸을 때 엄마는 주말마다 방을 청소했어요.
+        feedback_vi: Câu này là "mẹ dọn phòng"; câu gốc là mẹ bắt TÔI dọn - cần 저에게 … 청소하게 했어요.
+        error_tag: causative_missing
+      - answer: 어렸을 때 엄마는 주말마다 저에게 방을 청소해 줬어요.
+        feedback_vi: -아/어 주다 là "làm giúp tôi" - ngược ý "bắt tôi làm".
+        error_tag: juda_vs_ge_hada
+    explanation:
+      vi: '"Bắt ai làm" = N에게 V-게 하다. Người được sai khiến 저에게 / 저한테; nói về mẹ có thể dùng kính ngữ 하셨어요.'
+    display_answer: 어렸을 때 엄마는 주말마다 저에게 방을 청소하게 했어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:tv-caus-mcq-babysitting
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-meogida
+    prompt:
+      stem: "Bạn trông cháu giúp chị gái và nhắn: \"Em đã cho bé ăn cháo rồi tắm cho bé.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k8g, text: 아기에게 죽을 먹이고 아기를 씻겼어요., lang: ko }
+        - { id: o4w, text: 아기에게 죽을 먹고 아기를 씻었어요., lang: ko }
+        - { id: j1c, text: 아기가 죽을 먹이고 아기가 씻겼어요., lang: ko }
+        - { id: u6r, text: 아기에게 죽을 먹게 되고 아기를 씻게 됐어요., lang: ko }
+    answer:
+      correct_option_id: k8g
+    explanation:
+      vi: Tự tay cho bé ăn và tắm cho bé → sai khiến 먹이다, 씻기다; bé là người nhận (아기에게, 아기를). 먹고/씻었어요 là chính bạn ăn và tắm; 아기가 biến bé thành người làm; -게 되다 là "rốt cuộc trở nên".
+    display_answer: 아기에게 죽을 먹이고 아기를 씻겼어요.
+
+  - key: ko:exercise:tv-caus-mcq-reading-daycare-note
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-causative
+    prompt:
+      stem: "다음 알림장을 읽고 내용과 같은 것을 고르십시오.\n오늘 민준이는 점심을 남기지 않고 잘 먹었습니다. 낮잠 시간에는 선생님이 동화책을 읽어 주면서 아이들을 재웠습니다. 날씨가 추워서 밖에 나갈 때 아이들에게 모자를 씌우고 장갑을 끼웠습니다. 내일은 체육 시간이 있으니까 민준이에게 편한 옷을 입혀서 보내 주세요."
+      stem_lang: ko
+      options:
+        - { id: n9h, text: 내일 민준이는 편한 옷을 입고 가야 해요., lang: ko }
+        - { id: c3s, text: 민준이는 오늘 점심을 많이 남겼어요., lang: ko }
+        - { id: y7f, text: 아이들은 낮잠 시간에 혼자 책을 읽었어요., lang: ko }
+        - { id: g2x, text: 오늘은 날씨가 따뜻해서 모자를 쓰지 않았어요., lang: ko }
+    answer:
+      correct_option_id: n9h
+    explanation:
+      vi: 편한 옷을 입혀서 보내 주세요 = hãy mặc đồ thoải mái cho bé rồi cho đi học (ngày mai có giờ thể dục). Bé ăn hết cơm (남기지 않고); cô giáo đọc truyện ru bọn trẻ ngủ (재웠습니다); trời lạnh nên cô đội mũ, đeo găng cho các bé (씌우고, 끼웠습니다).
+    display_answer: 내일 민준이는 편한 옷을 입고 가야 해요.
+
+  - key: ko:exercise:tv-caus-translate-movie-tears-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:tv-ullida
+    prompt:
+      source_text: 그 영화는 관객들을 울리기도 하고 웃기기도 했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ phim đó vừa làm khán giả khóc vừa làm khán giả cười.
+        - Bộ phim đó lúc thì làm khán giả khóc, lúc thì làm khán giả cười.
+        - Bộ phim đó vừa khiến khán giả khóc vừa khiến khán giả cười.
+        - Bộ phim ấy khi thì làm khán giả khóc, khi thì làm khán giả cười.
+        - Bộ phim đó có lúc làm khán giả khóc, có lúc làm khán giả cười.
+        - Bộ phim đó vừa làm người xem khóc vừa làm người xem cười.
+        - Bộ phim đó làm khán giả vừa khóc vừa cười.
+        - Bộ phim đó khiến khán giả vừa khóc vừa cười.
+        - Phim đó vừa làm khán giả khóc vừa làm khán giả cười.
+        - Bộ phim đó đã làm khán giả khóc và cũng làm khán giả cười.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khán giả vừa khóc vừa cười khi làm bộ phim đó.
+        feedback_vi: Chủ ngữ là 그 영화 (bộ phim) làm khán giả khóc/cười; khán giả không làm phim.
+        error_tag: causative_meaning
+      - answer: Bộ phim đó không làm khán giả khóc cũng không làm cười.
+        feedback_vi: -기도 하고 -기도 했어요 là "vừa… vừa…, lúc… lúc…" - khẳng định cả hai.
+        error_tag: negation_misuse
+    explanation:
+      vi: 울리다 = làm khóc, 웃기다 = làm cười (sai khiến của 울다, 웃다); -기도 하고 -기도 하다 = lúc thì…, lúc thì… / vừa… vừa….
+    display_answer: Bộ phim đó vừa làm khán giả khóc vừa làm khán giả cười.
+
+  - key: ko:exercise:tv-caus-translate-kept-waiting
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-ge-hada
+    prompt:
+      source_text: Xin lỗi vì đã để anh phải chờ lâu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오래 기다리게 해서 죄송해요.
+        - 오래 기다리게 해서 죄송합니다.
+        - 오래 기다리게 해서 미안해요.
+        - 많이 기다리게 해서 죄송해요.
+        - 많이 기다리게 해서 죄송합니다.
+        - 너무 오래 기다리게 해서 죄송해요.
+        - 너무 오래 기다리게 해서 죄송합니다.
+        - 오래 기다리시게 해서 죄송해요.
+        - 오래 기다리시게 해서 죄송합니다.
+        - 오래 기다리게 해 드려서 죄송해요.
+        - 오래 기다리게 해 드려서 죄송합니다.
+        - 기다리게 해서 죄송해요.
+        - 기다리게 해서 죄송합니다.
+    known_wrong:
+      - answer: 오래 기다려서 죄송해요.
+        feedback_vi: Câu này nghĩa là "xin lỗi vì TÔI đã chờ lâu". Để người khác chờ → 기다리게 하다.
+        error_tag: causative_missing
+      - answer: 오래 기다리게 돼서 죄송해요.
+        feedback_vi: -게 되다 là "rốt cuộc phải chờ"; lỗi do mình gây ra → -게 해서.
+        error_tag: ge_hada_vs_ge_doeda
+      - answer: 오래 기다려 줘서 죄송해요.
+        feedback_vi: -아/어 줘서 đi với 고마워요 (cảm ơn vì đã chờ); xin lỗi vì để chờ là 기다리게 해서.
+        error_tag: juda_vs_ge_hada
+    explanation:
+      vi: '"Để/khiến ai phải chờ" = 기다리게 하다; "vì… nên xin lỗi" = -아/어서 죄송해요. Câu xin lỗi rất hay dùng khi đến muộn.'
+    display_answer: 오래 기다리게 해서 죄송해요.

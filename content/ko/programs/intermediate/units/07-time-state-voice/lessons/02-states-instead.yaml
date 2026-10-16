@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:states-instead
+order_index: 2
+level: topik4
+title:
+  vi: Đang mở sẵn hay đang mở? - -아/어 있다, -(으)ㄴ 채로, 대신(에)
+objectives:
+  - vi: Phân biệt trạng thái V-아/어 있다 (문이 열려 있다) với hành động đang diễn ra V-고 있다 (문을 열고 있다), và trường hợp đặc biệt của 입다/신다/쓰다.
+  - vi: Nói "để nguyên… mà…" bằng V-(으)ㄴ 채(로).
+  - vi: Nói "thay cho, thay vì, bù lại" bằng N 대신(에) / V-는 대신(에) / A-(으)ㄴ 대신(에); từ vựng - 눕다, 신다, 켜지다, 꺼지다, 붙다, 남다.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading, writing]
+prerequisites: [ko:lesson:time-moments]
+items:
+  - item: ko:item:tv-gram-a-itda
+  - item: ko:item:tv-gram-eun-chae
+  - item: ko:item:tv-gram-daesine
+  - item: ko:item:tv-nupda
+  - item: ko:item:tv-sinda
+  - item: ko:item:tv-kyeojida
+  - item: ko:item:tv-kkeojida
+  - item: ko:item:tv-butda
+  - item: ko:item:tv-namda
+  - item: ko:item:gram-go-isseoyo
+    role: reuse
+  - item: ko:item:ha-gram-a-nota
+    role: reuse
+  - item: ko:item:rf-kkeuda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được một căn phòng như người Hàn - đèn đang bật, cửa đang mở, giấy dán trên tủ lạnh, ai đang ngồi đâu - và nói "đi nguyên giày vào", "thay vì taxi thì đi xe buýt".
+  - type: explain
+    text:
+      vi: "V-고 있다 là hành động đang diễn ra, thường có tân ngữ: 문을 열고 있어요 (ai đó đang mở cửa). V-아/어 있다 là trạng thái còn lại sau khi việc đã xong, dùng với động từ không có tân ngữ: 문이 열려 있어요 (cửa đang mở sẵn). Tiếng Việt nói \"đang mở\" cho cả hai, nên người Việt hay nhầm - hãy hỏi \"có người đang làm, hay chỉ là trạng thái?\""
+  - type: explain
+    text:
+      vi: "Nhiều cặp động từ có tân ngữ / không có tân ngữ: 켜다 → 켜지다, 끄다 → 꺼지다, 열다 → 열리다, 붙이다 → 붙다. Dạng không có tân ngữ đi với -아/어 있다: 불이 켜져 있어요, 종이가 붙어 있어요. Riêng việc mặc, mang (입다, 신다, 쓰다, 끼다) lại dùng -고 있다 cho trạng thái: 운동화를 신고 있어요 (đang đi giày)."
+  - type: explain
+    text:
+      vi: "V-(으)ㄴ 채(로) = \"để nguyên (trạng thái)… mà…\", thường là việc không nên: 불을 켠 채로 잤어요. N 대신(에) = \"thay cho N\"; V-는 대신(에) = \"thay vì làm…\" hoặc \"đổi lại…\"; A-(으)ㄴ 대신 = \"…nhưng bù lại\": 집이 좁은 대신 역에서 가까워요."
+  - type: deep_explain
+    text:
+      vi: "Động từ hay đi với -아/어 있다: 앉다, 서다, 눕다 (누워 있다), 남다, 붙다, 살다 (살아 있다 - còn sống), 켜지다, 꺼지다, 열리다, 닫히다, 놓이다. Kính ngữ là -아/어 계시다 (앉아 계세요). So sánh với -아/어 놓다 đã học: 문을 열어 놓았어요 nhấn mạnh có người làm sẵn, còn 문이 열려 있어요 chỉ tả trạng thái. Với -(으)ㄴ 채, động từ luôn ở định ngữ quá khứ -(으)ㄴ vì trạng thái đã hình thành."
+  - type: example
+    target: 회의실 불이 아직 켜져 있어요. 안에 누가 있나 봐요.
+    target_lang: ko
+    translation:
+      vi: Đèn phòng họp vẫn đang bật. Hình như có ai ở trong.
+  - type: example
+    target: 수아 씨가 창문을 닦고 있어요. 그래서 창문이 다 열려 있어요.
+    target_lang: ko
+    translation:
+      vi: Sua đang lau cửa sổ. Vì vậy cửa sổ đều đang mở.
+    note:
+      vi: 닦고 있어요 - hành động đang diễn ra; 열려 있어요 - trạng thái.
+  - type: example
+    target: 손님들이 오시기 전부터 사장님은 입구에 서 계셨어요.
+    target_lang: ko
+    translation:
+      vi: Ông chủ đã đứng ở lối vào từ trước khi khách đến.
+    note:
+      vi: Kính ngữ của -아/어 있다 là -아/어 계시다.
+  - type: example
+    target: 너무 피곤해서 안경을 쓴 채로 잠이 들었어요.
+    target_lang: ko
+    translation:
+      vi: Mệt quá nên tôi ngủ thiếp đi khi vẫn đeo nguyên kính.
+  - type: example
+    target: 이 동네는 교통이 조금 불편한 대신 공기가 좋아요.
+    target_lang: ko
+    translation:
+      vi: Khu này giao thông hơi bất tiện nhưng bù lại không khí trong lành.
+  - type: common_mistake
+    wrong: 누가 현관문을 열어 있어요.
+    right: 현관문이 열려 있어요.
+    target_lang: ko
+    note:
+      vi: -아/어 있다 không dùng với động từ có tân ngữ (열다). Trạng thái "cửa đang mở" dùng động từ 열리다 và chủ ngữ 문이.
+  - type: common_mistake
+    wrong: 그 사람은 빨간 원피스를 입어 있어요.
+    right: 그 사람은 빨간 원피스를 입고 있어요.
+    target_lang: ko
+    note:
+      vi: Mặc, mang (입다, 신다, 쓰다, 끼다) dùng -고 있다 để nói trạng thái "đang mặc". Đây là ngoại lệ người học hay quên.
+  - type: common_mistake
+    wrong: 불을 켜는 채로 나갔어요.
+    right: 불을 켠 채로 나갔어요.
+    target_lang: ko
+    note:
+      vi: -채 luôn đi với định ngữ quá khứ -(으)ㄴ, vì đèn đã được bật trước rồi.
+  - type: summary
+    points:
+      - vi: V-고 있다 - đang làm (có tân ngữ); V-아/어 있다 - đang ở trạng thái (không có tân ngữ).
+      - vi: 켜다/켜지다 · 끄다/꺼지다 · 열다/열리다 · 붙이다/붙다 - cặp có tân ngữ / không tân ngữ.
+      - vi: Ngoại lệ - 입고 / 신고 / 쓰고 있다 = đang mặc / đi / đội.
+      - vi: V-(으)ㄴ 채(로) - để nguyên… mà….
+      - vi: N 대신(에) · V-는 대신(에) · A-(으)ㄴ 대신(에) - thay cho, thay vì, bù lại.
+      - vi: 눕다 (누워 있다) · 신다 · 켜지다 · 꺼지다 · 붙다 · 남다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:tv-state-mcq-window-open
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-a-itda
+    prompt:
+      stem: "Bạn về nhà và thấy cửa sổ đang mở (không có ai ở đó). Câu nào mô tả đúng?"
+      stem_lang: vi
+      options:
+        - { id: g7n, text: 창문이 열려 있어요., lang: ko }
+        - { id: b4s, text: 창문을 열고 있어요., lang: ko }
+        - { id: y1e, text: 창문이 열고 있어요., lang: ko }
+        - { id: q9a, text: 창문을 열어 있어요., lang: ko }
+    answer:
+      correct_option_id: g7n
+    explanation:
+      vi: Không có ai đang làm, chỉ là trạng thái → 열리다 + -아/어 있다 → 열려 있어요. 창문을 열고 있어요 là "ai đó đang mở"; hai câu còn lại sai trợ từ hoặc sai cấu trúc.
+    display_answer: 창문이 열려 있어요.
+
+  - key: ko:exercise:tv-state-listen-fridge-note
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tv-butda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 냉장고 문에 엄마가 쓴 쪽지가 붙어 있었어요. 저녁은 식탁 위에 있으니까 먼저 먹으래요.
+      options:
+        - { id: e5w, text: "Trên cửa tủ lạnh có dán mảnh giấy mẹ viết. Mẹ bảo bữa tối ở trên bàn, cứ ăn trước.", lang: vi }
+        - { id: r2k, text: "Mẹ đang dán mảnh giấy lên tủ lạnh và bảo cùng ăn tối.", lang: vi }
+        - { id: m8v, text: "Mảnh giấy mẹ viết đã rơi khỏi tủ lạnh, nên không biết bữa tối ở đâu.", lang: vi }
+        - { id: t6c, text: "Bữa tối ở trong tủ lạnh, mẹ bảo đợi mẹ về rồi ăn.", lang: vi }
+    answer:
+      correct_option_id: e5w
+    explanation:
+      vi: 쪽지가 붙어 있었어요 = mảnh giấy đã được dán sẵn (trạng thái), không phải mẹ đang dán. 먼저 먹으래요 = mẹ bảo ăn trước (-(으)래요 là câu mệnh lệnh được kể lại).
+    display_answer: "Trên cửa tủ lạnh có dán mảnh giấy mẹ viết. Mẹ bảo bữa tối ở trên bàn, cứ ăn trước."
+
+  - key: ko:exercise:tv-state-mcq-white-shirt
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-a-itda
+    prompt:
+      stem: "Bạn tả người mình hẹn qua điện thoại: \"Tôi đang mặc áo sơ mi trắng.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: h3d, text: 저는 하얀 셔츠를 입고 있어요., lang: ko }
+        - { id: v6o, text: 저는 하얀 셔츠를 입어 있어요., lang: ko }
+        - { id: k2u, text: 저는 하얀 셔츠가 입혀 있어요., lang: ko }
+        - { id: c8f, text: 저는 하얀 셔츠를 입은 채 있어요., lang: ko }
+    answer:
+      correct_option_id: h3d
+    explanation:
+      vi: Mặc, mang (입다, 신다, 쓰다) dùng -고 있다 cho cả trạng thái "đang mặc". 입어 있어요 là lỗi rất hay gặp; 입혀 있어요 và 입은 채 있어요 không tự nhiên.
+    display_answer: 저는 하얀 셔츠를 입고 있어요.
+
+  - key: ko:exercise:tv-state-fill-tv-on-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-eun-chae
+    prompt:
+      template: "아이가 텔레비전을 {{b1}} 채로 소파에서 잠이 들었어요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Đứa bé để nguyên tivi đang bật mà ngủ thiếp đi trên sofa."
+        - "Gợi ý: 켜다 + định ngữ quá khứ -(으)ㄴ."
+    answer:
+      blanks:
+        b1: [켠, 켜 놓은, 켜 둔]
+    known_wrong:
+      - answer: 켜는
+        feedback_vi: 채 luôn đi với định ngữ quá khứ -(으)ㄴ - 켠 채로.
+        error_tag: chae_form
+      - answer: 켜져
+        feedback_vi: Trước 채 cần định ngữ; và có tân ngữ 텔레비전을 nên dùng 켜다 → 켠.
+        error_tag: chae_form
+      - answer: 켜고
+        feedback_vi: -고 là liên từ, không đứng trước 채.
+        error_tag: chae_form
+    explanation:
+      vi: V-(으)ㄴ 채(로) - để nguyên trạng thái. 켜다 + -ㄴ → 켠 채로 (켜 놓은 채로 cũng tự nhiên).
+    display_answer: 아이가 텔레비전을 켠 채로 소파에서 잠이 들었어요.
+
+  - key: ko:exercise:tv-state-wb-tea-instead
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:tv-gram-daesine
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Hôm nay tôi uống trà thay cho cà phê.\""
+      tokens:
+        - { id: t3, text: 차를 }
+        - { id: t5, text: 커피 동안 }
+        - { id: t1, text: 오늘은 }
+        - { id: t4, text: 마셨어요 }
+        - { id: t2, text: 커피 대신 }
+        - { id: t6, text: 마시는 대신 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: '"Thay cho N" = N 대신 (커피 대신). 오늘은 đứng đầu hoặc sau 커피 대신 đều được. 커피 동안 vô nghĩa; 마시는 대신 thiếu tân ngữ phía trước.'
+    display_answer: 오늘은 커피 대신 차를 마셨어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:tv-state-fill-grandpa-lying
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-nupda
+    prompt:
+      template: "(Ông đang nằm trên sofa.) 할아버지께서 소파에 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [누워 계세요, 누워계세요]
+    known_wrong:
+      - answer: 눕고 계세요
+        feedback_vi: '"Đang nằm" là trạng thái → -아/어 있다 (kính ngữ -아/어 계시다), không phải -고 계시다.'
+        error_tag: a_itda_vs_go_itda
+      - answer: 눕어 계세요
+        feedback_vi: 눕다 là bất quy tắc ㅂ - 누워 계세요.
+        error_tag: b_irregular
+      - answer: 누워 있어요
+        feedback_vi: Chủ ngữ là 할아버지께서 nên cần kính ngữ - 누워 계세요.
+        error_tag: honorific_missing
+    explanation:
+      vi: Trạng thái nằm → 눕다 + -아/어 있다; kính ngữ → 누워 계세요 (ㅂ bất quy tắc).
+    display_answer: 할아버지께서 소파에 누워 계세요.
+
+  - key: ko:exercise:tv-state-fill-bus-seats
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-namda
+    prompt:
+      template: "(Trên xe buýt vẫn còn ba chỗ trống.) 버스에 빈자리가 아직 세 개 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [남아 있어요, 남아있어요, 남았어요]
+    known_wrong:
+      - answer: 남고 있어요
+        feedback_vi: Trạng thái "còn lại" dùng -아/어 있다 - 남아 있어요.
+        error_tag: a_itda_vs_go_itda
+      - answer: 남겨 있어요
+        feedback_vi: 남기다 là "để lại" (có tân ngữ), không đi với -아/어 있다. "Còn lại" là 남다 → 남아 있어요.
+        error_tag: transitive_a_itda
+      - answer: 남어 있어요
+        feedback_vi: 남다 có nguyên âm ㅏ nên ghép 아 - 남아 있어요.
+        error_tag: a_eo_choice
+    explanation:
+      vi: 남다 (còn lại, không có tân ngữ) + -아/어 있다 → 남아 있어요; 남았어요 (đã còn lại → còn) cũng rất tự nhiên.
+    display_answer: 버스에 빈자리가 아직 세 개 남아 있어요.
+
+  - key: ko:exercise:tv-state-translate-lights-off
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-kkeojida
+    prompt:
+      source_text: Đèn ở phòng họp đang tắt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 회의실 불이 꺼져 있어요.
+        - 회의실 불은 꺼져 있어요.
+        - 회의실에 불이 꺼져 있어요.
+        - 회의실의 불이 꺼져 있어요.
+        - 지금 회의실 불이 꺼져 있어요.
+        - 회의실 불이 지금 꺼져 있어요.
+        - 회의실 전등이 꺼져 있어요.
+        - 회의실 조명이 꺼져 있어요.
+        - 회의실 불이 꺼져 있습니다.
+        - 회의실에는 불이 꺼져 있어요.
+    known_wrong:
+      - answer: 회의실 불을 끄고 있어요.
+        feedback_vi: -고 있다 là "ai đó đang tắt"; trạng thái "đèn đang tắt" là 불이 꺼져 있어요.
+        error_tag: a_itda_vs_go_itda
+      - answer: 회의실 불이 꺼 있어요.
+        feedback_vi: 끄다 có tân ngữ, không đi với -아/어 있다; dùng 꺼지다 → 꺼져 있어요.
+        error_tag: transitive_a_itda
+      - answer: 회의실 불을 꺼져 있어요.
+        feedback_vi: 꺼지다 không có tân ngữ - chủ ngữ 불이.
+        error_tag: particle_subject
+    explanation:
+      vi: Trạng thái → động từ không tân ngữ 꺼지다 + -아/어 있다 → 불이 꺼져 있어요.
+    display_answer: 회의실 불이 꺼져 있어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:tv-state-mcq-temple-shoes
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-sinda
+    prompt:
+      stem: "Ở chùa có biển nhắc: \"Xin đừng đi nguyên giày vào trong điện.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z3h, text: 신발을 신은 채로 법당에 들어가지 마세요., lang: ko }
+        - { id: a6x, text: 신발을 신는 채로 법당에 들어가지 마세요., lang: ko }
+        - { id: o8m, text: 신발을 신어 있는 채로 법당에 들어가지 마세요., lang: ko }
+        - { id: i4t, text: 신발을 신는 대신 법당에 들어가지 마세요., lang: ko }
+    answer:
+      correct_option_id: z3h
+    explanation:
+      vi: '"Để nguyên giày" → 신다 + -(으)ㄴ 채로 → 신은 채로. 신는 채로 sai định ngữ; 신어 있는 sai vì 신다 dùng -고 있다; 신는 대신 nghĩa là "thay vì đi giày" - sai ý.'
+    display_answer: 신발을 신은 채로 법당에 들어가지 마세요.
+
+  - key: ko:exercise:tv-state-mcq-reading-studio
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-daesine
+    prompt:
+      stem: "다음 안내문을 읽고 내용과 같은 것을 고르십시오.\n[입주 안내]\n방은 3층 302호입니다. 현관문 옆에 비밀번호가 적힌 종이가 붙어 있습니다. 외출할 때 에어컨을 켜 둔 채로 나가지 마십시오. 이 건물은 관리비가 없는 대신 인터넷은 직접 신청하셔야 합니다."
+      stem_lang: ko
+      options:
+        - { id: l5j, text: 관리비는 안 내지만 인터넷은 직접 신청해야 해요., lang: ko }
+        - { id: d1r, text: 에어컨을 켜 놓고 외출해도 돼요., lang: ko }
+        - { id: u9g, text: 비밀번호는 집주인에게 전화해서 물어봐야 해요., lang: ko }
+        - { id: n2b, text: 관리비를 내는 대신 인터넷이 무료예요., lang: ko }
+    answer:
+      correct_option_id: l5j
+    explanation:
+      vi: 관리비가 없는 대신 인터넷은 직접 신청 = không có phí quản lý nhưng bù lại phải tự đăng ký Internet. Mật khẩu được dán sẵn cạnh cửa (붙어 있습니다); thông báo cấm để nguyên điều hoà bật rồi ra ngoài (켜 둔 채로 나가지 마십시오).
+    display_answer: 관리비는 안 내지만 인터넷은 직접 신청해야 해요.
+
+  - key: ko:exercise:tv-state-translate-big-portions-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tv-gram-daesine
+    prompt:
+      source_text: 이 식당은 값이 좀 비싼 대신 양이 아주 많아요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhà hàng này giá hơi đắt nhưng bù lại phần ăn rất nhiều.
+        - Quán này giá hơi đắt nhưng bù lại đồ ăn rất nhiều.
+        - Nhà hàng này hơi đắt nhưng bù lại suất ăn rất nhiều.
+        - Nhà hàng này giá hơi đắt, đổi lại phần ăn rất nhiều.
+        - Nhà hàng này giá hơi cao nhưng bù lại lượng đồ ăn rất nhiều.
+        - Giá ở nhà hàng này hơi đắt nhưng bù lại phần ăn rất lớn.
+        - Nhà hàng này tuy giá hơi đắt nhưng bù lại phần ăn rất nhiều.
+        - Nhà hàng này hơi đắt nhưng được cái phần ăn rất nhiều.
+        - Quán ăn này giá hơi đắt nhưng bù lại ăn rất nhiều.
+        - Nhà hàng này giá hơi mắc nhưng bù lại phần ăn rất nhiều.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhà hàng này giá rẻ nhưng phần ăn rất ít.
+        feedback_vi: 비싼 là "đắt", 양이 많아요 là "nhiều" - ngược hoàn toàn.
+        error_tag: meaning_mismatch
+      - answer: Thay vì nhà hàng này, phần ăn rất nhiều.
+        feedback_vi: A-(으)ㄴ 대신 ở đây là "bù lại", không phải "thay vì N".
+        error_tag: daesin_meaning
+    explanation:
+      vi: A-(으)ㄴ 대신 = …nhưng bù lại / đổi lại; 양 = lượng, phần ăn.
+    display_answer: Nhà hàng này giá hơi đắt nhưng bù lại phần ăn rất nhiều.
+
+  - key: ko:exercise:tv-state-translate-walk-instead
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-daesine
+    prompt:
+      source_text: Hôm nay thay vì đi xe buýt, tôi đi bộ đến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 오늘은 버스를 타는 대신 걸어서 왔어요.
+        - 오늘은 버스를 타는 대신에 걸어서 왔어요.
+        - 오늘 버스를 타는 대신 걸어서 왔어요.
+        - 오늘은 버스 대신 걸어서 왔어요.
+        - 오늘 버스 대신 걸어서 왔어요.
+        - 오늘은 버스를 타는 대신 걸어왔어요.
+        - 오늘은 버스 대신 걸어왔어요.
+        - 오늘은 버스를 타는 대신 걸어서 갔어요.
+        - 오늘은 버스를 타지 않고 걸어서 왔어요.
+        - 오늘은 버스를 안 타고 걸어서 왔어요.
+        - 오늘은 버스를 타는 대신 걸었어요.
+        - 오늘은 버스를 타는 대신 걸어서 왔습니다.
+    known_wrong:
+      - answer: 오늘은 버스를 탄 대신 걸어서 왔어요.
+        feedback_vi: '"Thay vì làm" dùng V-는 대신 (타는 대신); 탄 대신 nghe như "đổi lại việc đã đi xe buýt".'
+        error_tag: daesin_form
+      - answer: 오늘은 버스를 타는 동안 걸어서 왔어요.
+        feedback_vi: -는 동안 là "trong lúc" - vô lý về nghĩa.
+        error_tag: dongan_vs_daesin
+      - answer: 오늘은 버스 대신 걷어서 왔어요.
+        feedback_vi: 걷다 là bất quy tắc ㄷ - 걸어서.
+        error_tag: d_irregular
+    explanation:
+      vi: '"Thay vì làm A" = V-는 대신(에); "thay cho N" = N 대신. 걷다 → 걸어서 (ㄷ bất quy tắc).'
+    display_answer: 오늘은 버스를 타는 대신 걸어서 왔어요.

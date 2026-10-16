@@ -1,0 +1,419 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:passive-verbs
+order_index: 3
+level: topik3
+title:
+  vi: Bị, được trong tiếng Hàn - động từ bị động -이/히/리/기
+objectives:
+  - vi: Nhận ra và dùng động từ bị động -이/히/리/기 - 보이다, 놓이다, 닫히다, 잡히다, 막히다, 열리다, 팔리다, 들리다, 안기다, 쫓기다.
+  - vi: Đổi câu chủ động sang bị động - tân ngữ 을/를 thành chủ ngữ 이/가, người gây ra hành động đi với 에게/한테 hoặc 에.
+  - vi: Hiểu vì sao tiếng Hàn hay dùng bị động cho việc "tự xảy ra" (소리가 들려요, 산이 보여요) trong khi tiếng Việt dùng câu chủ động.
+estimated_minutes: 24
+skills: [grammar, vocabulary, listening, reading]
+prerequisites: [ko:lesson:states-instead]
+items:
+  - item: ko:item:tv-gram-passive
+  - item: ko:item:tv-boida
+  - item: ko:item:tv-deullida
+  - item: ko:item:tv-noida
+  - item: ko:item:tv-dachida
+  - item: ko:item:tv-yeollida
+  - item: ko:item:tv-japida
+  - item: ko:item:tv-pallida
+  - item: ko:item:tv-angida
+  - item: ko:item:tv-jjotgida
+  - item: ko:item:giri-makhida
+    role: reuse
+  - item: ko:item:tv-gram-a-itda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "nghe thấy tiếng…", "nhìn thấy núi", "cửa tự đóng", "bị cảnh sát bắt", "bán chạy" bằng đúng động từ bị động tiếng Hàn - thay vì cố tìm một từ tương đương với "bị/được".
+  - type: explain
+    text:
+      vi: "Tiếng Việt tạo câu bị động bằng cách thêm \"bị\" hoặc \"được\" trước động từ. Tiếng Hàn thì đổi chính động từ bằng hậu tố -이-, -히-, -리-, -기-: 보다 → 보이다, 닫다 → 닫히다, 열다 → 열리다, 안다 → 안기다. Mỗi động từ có hậu tố riêng, nên bạn phải học thuộc theo từng từ."
+  - type: explain
+    text:
+      vi: "Khi đổi câu: tân ngữ 을/를 thành chủ ngữ 이/가; người gây ra hành động đi với 에게/한테 (người, con vật), sự vật/lực tự nhiên đi với 에. 경찰이 도둑을 잡았어요 → 도둑이 경찰에게 잡혔어요; 바람이 문을 닫았어요 → 문이 바람에 닫혔어요."
+  - type: explain
+    text:
+      vi: "Bị động tiếng Hàn trung tính, không mang sắc thái xấu như \"bị\". Người Hàn dùng nó cho mọi việc tự xảy ra, không cần biết ai làm: 문이 열렸어요, 길이 막혀요, 음악 소리가 들려요. Người Việt hay nói kiểu chủ động 저는 산을 보여요 - sai; đúng là 산이 보여요 (núi được nhìn thấy)."
+  - type: deep_explain
+    text:
+      vi: "Nhóm hậu tố: -이- (보이다, 놓이다, 쓰이다), -히- (닫히다, 잡히다, 막히다, 먹히다, 읽히다), -리- (열리다, 팔리다, 들리다, 걸리다), -기- (안기다, 쫓기다, 끊기다). Bị động kết hợp -아/어 있다 để tả trạng thái - 책이 놓여 있다, 문이 닫혀 있다. Đừng ghép thêm -아/어지다 vào động từ đã bị động (닫혀지다 là thừa). Nhiều động từ không có dạng -이/히/리/기 (주다, 만나다, 배우다…); bị động bằng 되다 hay -아/어지다 trong văn viết là mẫu khác, học ở trình độ cao hơn."
+  - type: example
+    target: 날씨가 맑은 날에는 여기서 바다까지 보여요.
+    target_lang: ko
+    translation:
+      vi: Những hôm trời trong, từ đây nhìn thấy được cả biển.
+    note:
+      vi: Thứ được thấy là chủ ngữ - 바다가 / 바다까지.
+  - type: example
+    target: 어디선가 아기 우는 소리가 들려요.
+    target_lang: ko
+    translation:
+      vi: Có tiếng em bé khóc vọng lại từ đâu đó.
+  - type: example
+    target: 출근 시간이라서 시내 도로가 꽉 막혔어요.
+    target_lang: ko
+    translation:
+      vi: Đang giờ đi làm nên đường nội thành tắc cứng.
+  - type: example
+    target: 그 작가의 새 소설은 한 달 만에 오만 권이 팔렸어요.
+    target_lang: ko
+    translation:
+      vi: Cuốn tiểu thuyết mới của nhà văn đó bán được năm mươi nghìn bản chỉ trong một tháng.
+  - type: example
+    target: 쥐가 고양이에게 쫓겨서 구멍 속으로 숨었어요.
+    target_lang: ko
+    translation:
+      vi: Con chuột bị mèo đuổi nên trốn vào trong hang.
+    note:
+      vi: Kẻ đuổi là con vật → 에게.
+  - type: common_mistake
+    wrong: 제 방 창문에서 남산을 보여요.
+    right: 제 방 창문에서 남산이 보여요.
+    target_lang: ko
+    note:
+      vi: 보이다 là bị động - thứ được nhìn thấy là chủ ngữ (이/가). Người Việt nghĩ "tôi nhìn thấy núi" nên giữ 을/를.
+  - type: common_mistake
+    wrong: 도둑이 경찰을 잡혔어요.
+    right: 도둑이 경찰에게 잡혔어요.
+    target_lang: ko
+    note:
+      vi: Trong câu bị động, người thực hiện hành động đi với 에게/한테, không phải 을/를. Câu sai nghe như "tên trộm bắt cảnh sát".
+  - type: common_mistake
+    wrong: 바람 때문에 문이 닫혀졌어요.
+    right: 바람 때문에 문이 닫혔어요.
+    target_lang: ko
+    note:
+      vi: 닫히다 đã là bị động; thêm -아/어지다 thành bị động kép, thừa và sai chuẩn.
+  - type: summary
+    points:
+      - vi: -이- 보이다 · 놓이다 | -히- 닫히다 · 잡히다 · 막히다 | -리- 열리다 · 팔리다 · 들리다 | -기- 안기다 · 쫓기다.
+      - vi: Chủ động → bị động - 을/를 → 이/가; người làm + 에게/한테; sự vật, lực tự nhiên + 에.
+      - vi: Bị động tiếng Hàn trung tính - dùng cho việc tự xảy ra (소리가 들려요, 산이 보여요).
+      - vi: Trạng thái - bị động + -아/어 있다 (놓여 있다, 닫혀 있다); không thêm -아/어지다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:tv-pass-mcq-yeolda-form
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:tv-yeollida
+    prompt:
+      stem: "Chọn dạng bị động đúng của 열다 trong câu: 아침 9시에 은행 문이 ___."
+      stem_lang: vi
+      options:
+        - { id: f8q, text: 열려요, lang: ko }
+        - { id: w3c, text: 열혀요, lang: ko }
+        - { id: j6u, text: 열겨요, lang: ko }
+        - { id: n1d, text: 열어요, lang: ko }
+    answer:
+      correct_option_id: f8q
+    explanation:
+      vi: 열다 nhận hậu tố -리- → 열리다 → 열려요. 열혀요, 열겨요 không tồn tại; 열어요 là chủ động "(ai) mở", không có tân ngữ nên sai.
+    display_answer: 열려요
+
+  - key: ko:exercise:tv-pass-listen-piano
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tv-deullida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 밤마다 위층에서 피아노 치는 소리가 들려서 잠을 잘 못 자요.
+      options:
+        - { id: o5h, text: "Đêm nào cũng nghe thấy tiếng đàn piano từ tầng trên nên tôi ngủ không ngon.", lang: vi }
+        - { id: e9t, text: "Đêm nào tôi cũng chơi piano ở tầng trên nên hàng xóm không ngủ được.", lang: vi }
+        - { id: x2b, text: "Đêm nào tôi cũng nghe nhạc piano để dễ ngủ.", lang: vi }
+        - { id: a7m, text: "Tầng trên ghé qua nhà tôi mỗi đêm để chơi piano.", lang: vi }
+    answer:
+      correct_option_id: o5h
+    explanation:
+      vi: 소리가 들려서 = vì nghe thấy tiếng (âm thanh tự vọng tới, không cố ý nghe). Người chơi đàn ở tầng trên, không phải "tôi"; 들리다 khác 들르다 (ghé qua).
+    display_answer: "Đêm nào cũng nghe thấy tiếng đàn piano từ tầng trên nên tôi ngủ không ngon."
+
+  - key: ko:exercise:tv-pass-mcq-cat-chased
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-jjotgida
+    prompt:
+      stem: "Chọn trợ từ đúng: \"Con mèo bị con chó đuổi.\" 고양이가 개___ 쫓겼어요."
+      stem_lang: vi
+      options:
+        - { id: k4r, text: 에게, lang: ko }
+        - { id: s7e, text: 를, lang: ko }
+        - { id: g1y, text: 가, lang: ko }
+        - { id: d9v, text: 에서, lang: ko }
+    answer:
+      correct_option_id: k4r
+    explanation:
+      vi: Trong câu bị động, con vật/người gây ra hành động đi với 에게 (한테). 를 biến 개 thành tân ngữ; 가 tạo hai chủ ngữ; 에서 là nơi chốn hoặc "từ".
+    display_answer: 에게
+
+  - key: ko:exercise:tv-pass-fill-door-wind-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-dachida
+    prompt:
+      template: "바람이 세게 불어서 베란다 문이 쾅 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Gió thổi mạnh nên cửa ban công đóng sập một cái."
+        - "Gợi ý: 닫다 → bị động -히- → quá khứ."
+    answer:
+      blanks:
+        b1: [닫혔어요]
+    known_wrong:
+      - answer: 닫았어요
+        feedback_vi: 닫았어요 là chủ động "(ai) đã đóng"; cửa tự đóng vì gió → 닫혔어요.
+        error_tag: active_vs_passive
+      - answer: 닫혀졌어요
+        feedback_vi: 닫히다 đã là bị động; không thêm -아/어지다.
+        error_tag: double_passive
+      - answer: 닫겼어요
+        feedback_vi: 닫다 dùng hậu tố -히-, không phải -기- → 닫혔어요.
+        error_tag: passive_suffix
+    explanation:
+      vi: 닫다 + -히- → 닫히다; quá khứ 닫혔어요 (đọc [다쳐써요]). Nguyên nhân tự nhiên (gió) → câu bị động.
+    display_answer: 바람이 세게 불어서 베란다 문이 쾅 닫혔어요.
+
+  - key: ko:exercise:tv-pass-wb-see-mountain
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:tv-boida
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Từ ký túc xá của tôi nhìn thấy được núi Bukhan.\""
+      tokens:
+        - { id: t3, text: 보여요 }
+        - { id: t5, text: 북한산을 }
+        - { id: t1, text: 우리 기숙사에서 }
+        - { id: t4, text: 봐요 }
+        - { id: t2, text: 북한산이 }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: 보이다 (được nhìn thấy) - thứ được thấy là chủ ngữ 북한산이. 북한산을 và 봐요 thuộc câu chủ động 보다 - không hợp với nghĩa "nhìn thấy được".
+    display_answer: 우리 기숙사에서 북한산이 보여요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:tv-pass-fill-padding-sells
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-pallida
+    prompt:
+      template: "(Dạo này áo phao này bán rất chạy.) 이 패딩은 요즘 아주 잘 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [팔려요, 팔립니다]
+    known_wrong:
+      - answer: 팔아요
+        feedback_vi: Chủ ngữ là sản phẩm (패딩은) nên dùng bị động 팔리다 → 팔려요.
+        error_tag: active_vs_passive
+      - answer: 팔혀요
+        feedback_vi: 팔다 dùng hậu tố -리- → 팔리다 → 팔려요.
+        error_tag: passive_suffix
+      - answer: 팔려 있어요
+        feedback_vi: '"Bán chạy" là hành động lặp lại, không phải trạng thái - 잘 팔려요.'
+        error_tag: a_itda_misuse
+    explanation:
+      vi: 팔다 + -리- → 팔리다; 잘 팔리다 = bán chạy.
+    display_answer: 이 패딩은 요즘 아주 잘 팔려요.
+
+  - key: ko:exercise:tv-pass-fill-bike-thief
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-japida
+    prompt:
+      template: "(Tên trộm xe đạp đã bị cảnh sát bắt.) 자전거 도둑이 경찰{{b1}} {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [에게, 한테]
+        b2: [잡혔어요]
+    known_wrong:
+      - answer: 을
+        feedback_vi: Người bắt trong câu bị động đi với 에게/한테; 을 làm câu thành "tên trộm bắt cảnh sát".
+        error_tag: passive_agent
+      - answer: 잡았어요
+        feedback_vi: Chủ ngữ là 도둑 (người bị bắt) nên cần bị động - 잡혔어요.
+        error_tag: active_vs_passive
+      - answer: 잡혀졌어요
+        feedback_vi: 잡히다 đã là bị động; không thêm -아/어지다.
+        error_tag: double_passive
+    explanation:
+      vi: 경찰이 도둑을 잡았어요 → 도둑이 경찰에게 잡혔어요. 잡다 + -히- → 잡히다.
+    display_answer: 자전거 도둑이 경찰에게 잡혔어요.
+
+  - key: ko:exercise:tv-pass-translate-bouquet
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-noida
+    prompt:
+      source_text: Trên bàn làm việc có đặt một bó hoa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 책상 위에 꽃다발이 놓여 있어요.
+        - 책상 위에 꽃다발 하나가 놓여 있어요.
+        - 책상 위에 꽃 한 다발이 놓여 있어요.
+        - 책상에 꽃다발이 놓여 있어요.
+        - 책상 위에는 꽃다발이 놓여 있어요.
+        - 책상 위에 꽃다발이 하나 놓여 있어요.
+        - 책상 위에 꽃다발이 놓여 있었어요.
+        - 책상 위에 꽃다발이 놓여 있습니다.
+        - 사무실 책상 위에 꽃다발이 놓여 있어요.
+        - 책상 위에 꽃다발이 있어요.
+        - 책상 위에 꽃 한 다발이 있어요.
+    known_wrong:
+      - answer: 책상 위에 꽃다발을 놓여 있어요.
+        feedback_vi: 놓이다 là bị động - 꽃다발이 (chủ ngữ).
+        error_tag: particle_subject
+      - answer: 책상 위에 꽃다발이 놓아 있어요.
+        feedback_vi: 놓다 có tân ngữ nên không đi với -아/어 있다; dùng bị động 놓이다 → 놓여 있어요.
+        error_tag: transitive_a_itda
+      - answer: 책상 위에 꽃다발이 놓고 있어요.
+        feedback_vi: -고 있다 là hành động đang diễn ra; tả vị trí đồ vật dùng 놓여 있어요.
+        error_tag: a_itda_vs_go_itda
+    explanation:
+      vi: Tả đồ vật đang được đặt ở đâu → 놓이다 + -아/어 있다 → 놓여 있어요. 있어요 đơn giản cũng đúng nhưng không nói rõ "được đặt".
+    display_answer: 책상 위에 꽃다발이 놓여 있어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:tv-pass-mcq-phone-bad-line
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-deullida
+    prompt:
+      stem: "Đang gọi điện mà sóng yếu, bạn không nghe rõ đối phương. Bạn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: p2s, text: 여보세요? 잘 안 들려요. 조금 크게 말씀해 주세요., lang: ko }
+        - { id: h6n, text: 여보세요? 잘 안 들어요. 조금 크게 말씀해 주세요., lang: ko }
+        - { id: c4j, text: 여보세요? 잘 안 들러요. 조금 크게 말씀해 주세요., lang: ko }
+        - { id: y8w, text: 여보세요? 잘 안 보여요. 조금 크게 말씀해 주세요., lang: ko }
+    answer:
+      correct_option_id: p2s
+    explanation:
+      vi: Âm thanh không đến tai rõ → 들리다 → 잘 안 들려요. 안 들어요 là "tôi không nghe (không chịu nghe)"; 들러요 là "ghé qua"; 안 보여요 là "không nhìn thấy".
+    display_answer: 여보세요? 잘 안 들려요. 조금 크게 말씀해 주세요.
+
+  - key: ko:exercise:tv-pass-mcq-reading-cctv
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-japida
+    prompt:
+      stem: "다음 기사를 읽고 내용과 같은 것을 고르십시오.\n어젯밤 시내의 한 편의점에서 돈을 훔친 이십 대 남성이 경찰에게 잡혔습니다. 이 남성은 직원이 창고에 간 사이에 열려 있는 계산대에서 돈을 꺼냈습니다. 그러나 가게 안 CCTV에 얼굴이 그대로 찍혀서 두 시간 만에 붙잡혔습니다."
+      stem_lang: ko
+      options:
+        - { id: v1x, text: 남자의 얼굴이 CCTV에 찍혔다., lang: ko }
+        - { id: m5k, text: 경찰이 남자에게 잡혔다., lang: ko }
+        - { id: b8h, text: 남자는 직원이 가게에 있을 때 돈을 꺼냈다., lang: ko }
+        - { id: t3z, text: 남자는 아직 잡히지 않았다., lang: ko }
+    answer:
+      correct_option_id: v1x
+    explanation:
+      vi: 얼굴이 CCTV에 찍혀서 = khuôn mặt bị camera ghi lại (찍다 → 찍히다). Chính người đàn ông bị cảnh sát bắt (경찰에게 잡혔습니다), sau hai tiếng; anh ta lấy tiền trong lúc nhân viên vào kho (창고에 간 사이에).
+    display_answer: 남자의 얼굴이 CCTV에 찍혔다.
+
+  - key: ko:exercise:tv-pass-translate-baby-hug-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:tv-angida
+    prompt:
+      source_text: 아기가 아빠 품에 안기자마자 울음을 그쳤어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Em bé vừa được bố ôm vào lòng là nín khóc.
+        - Em bé vừa được bố bế vào lòng là nín khóc ngay.
+        - Vừa được bố ôm vào lòng, em bé liền nín khóc.
+        - Em bé vừa nằm trong vòng tay bố là nín khóc.
+        - Đứa bé vừa được bố ôm là nín khóc.
+        - Em bé vừa được bố ôm vào lòng là thôi khóc.
+        - Bé vừa được bố ôm vào lòng là nín ngay.
+        - Em bé vừa được bố bế là ngừng khóc.
+        - Vừa được bố ôm, em bé đã nín khóc.
+        - Em bé vừa được ba ôm vào lòng là nín khóc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Em bé vừa ôm bố là nín khóc.
+        feedback_vi: 안기다 là bị động - em bé được bố ôm, không phải em bé ôm bố.
+        error_tag: active_vs_passive
+      - answer: Em bé vừa được bố ôm vào lòng là bắt đầu khóc.
+        feedback_vi: 울음을 그치다 là "nín khóc, thôi khóc".
+        error_tag: meaning_mismatch
+    explanation:
+      vi: 안기다 = được ôm (bị động của 안다); N 품에 안기다 = nằm trong vòng tay N; -자마자 = vừa… là; 울음을 그치다 = nín khóc.
+    display_answer: Em bé vừa được bố ôm vào lòng là nín khóc.
+
+  - key: ko:exercise:tv-pass-translate-han-river
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-boida
+    prompt:
+      source_text: Qua cửa sổ văn phòng nhìn thấy được sông Hàn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 사무실 창문으로 한강이 보여요.
+        - 사무실 창문에서 한강이 보여요.
+        - 사무실 창문 밖으로 한강이 보여요.
+        - 사무실 창으로 한강이 보여요.
+        - 사무실 창문으로 한강이 보입니다.
+        - 사무실 창문에서 한강이 보입니다.
+        - 사무실 창문으로는 한강이 보여요.
+        - 사무실 창문 너머로 한강이 보여요.
+        - 우리 사무실 창문으로 한강이 보여요.
+        - 사무실 창밖으로 한강이 보여요.
+    known_wrong:
+      - answer: 사무실 창문으로 한강을 보여요.
+        feedback_vi: 보이다 là bị động - 한강이 (chủ ngữ).
+        error_tag: particle_subject
+      - answer: 사무실 창문으로 한강이 봐요.
+        feedback_vi: 보다 là chủ động "xem, nhìn"; "nhìn thấy được" là 보이다 → 보여요.
+        error_tag: active_vs_passive
+      - answer: 사무실 창문으로 한강이 보여져요.
+        feedback_vi: 보이다 đã là bị động; không thêm -아/어지다.
+        error_tag: double_passive
+    explanation:
+      vi: 보다 + -이- → 보이다 (được nhìn thấy); thứ được thấy làm chủ ngữ với 이/가. "Qua cửa sổ" = 창문으로 / 창문 밖으로.
+    display_answer: 사무실 창문으로 한강이 보여요.

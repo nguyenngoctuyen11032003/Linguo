@@ -1,0 +1,426 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:time-moments
+order_index: 1
+level: topik3
+title:
+  vi: Vừa… là, trong lúc, nhân tiện - -자마자, -는 동안, -는 사이에, -는 김에
+objectives:
+  - vi: Nói hai việc xảy ra liền nhau bằng V-자마자 và hai việc song song bằng V-는 동안(에) / N 동안.
+  - vi: Kể chuyện bất ngờ xảy ra "trong lúc sơ ý" bằng V-는 사이(에), và việc làm "nhân tiện" bằng V-는 김에 / V-(으)ㄴ 김에.
+  - vi: Từ vựng sinh hoạt hằng ngày - 들르다, 장을 보다, 잠이 들다, 빨래하다, 퇴근하다, 도둑, 낮잠.
+estimated_minutes: 22
+skills: [grammar, vocabulary, listening, reading]
+prerequisites: [ko:lesson:guessing-memories-review]
+items:
+  - item: ko:item:tv-gram-jamaja
+  - item: ko:item:tv-gram-neun-dongan
+  - item: ko:item:tv-gram-neun-sai
+  - item: ko:item:tv-gram-neun-gime
+  - item: ko:item:tv-deulleuda
+  - item: ko:item:tv-jangeul-boda
+  - item: ko:item:tv-jami-deulda
+  - item: ko:item:tv-ppallaehada
+  - item: ko:item:tv-toegeunhada
+  - item: ko:item:tv-doduk
+  - item: ko:item:tv-natjam
+  - item: ko:item:gram-eumyeonseo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một ngày bận rộn với các mốc thời gian chính xác - "vừa về đến nhà là…", "trong lúc con ngủ…", "chỉ trong lúc tôi đi vắng…", "nhân tiện ra ngoài…" - thay vì chỉ nối câu bằng -고.
+  - type: explain
+    text:
+      vi: "V-자마자 = \"vừa… là (ngay)…\": 집에 오자마자 잤어요. Thì quá khứ chỉ đặt ở cuối câu - không nói 왔자마자. Tiếng Việt có \"vừa… là\" rất giống, nên chỉ cần nhớ đừng chia thì ở vế trước."
+  - type: explain
+    text:
+      vi: "V-는 동안(에) = \"trong lúc / trong suốt thời gian…\", luôn dùng -는 kể cả khi kể chuyện quá khứ (기다리는 동안). Với danh từ chỉ khoảng thời gian dùng N 동안 - 방학 동안, 두 시간 동안. V-는 사이(에) cũng là \"trong lúc\", nhưng nhấn mạnh khoảng thời gian ngắn, sơ ý, và hay đi với chuyện bất ngờ: 잠깐 나간 사이에 도둑이 들었어요."
+  - type: explain
+    text:
+      vi: "V-는 김에 = \"nhân tiện…, tiện thể…\": đang làm việc A (mình định làm thật) thì làm luôn B. Việc A đã xong rồi dùng -(으)ㄴ 김에 (시장에 간 김에). Tiếng Việt \"nhân tiện\" cũng dùng để chuyển chủ đề (\"nhân tiện, cho tôi hỏi…\") - nghĩa đó không dùng -는 김에."
+  - type: deep_explain
+    text:
+      vi: "So sánh các cách nói thời gian: -(으)면서 (một người làm hai việc cùng lúc - 음악을 들으면서 걸어요), -는 동안 (một khoảng thời gian, thường hai chủ thể - 내가 요리하는 동안 남편은 청소했어요), -는 사이에 (khoảng hở ngắn, chuyện bất ngờ), -자마자 (nối tiếp tức thì), -고 나서 (làm xong rồi mới). Với -는 사이에, việc đã xong trước đó dùng -(으)ㄴ 사이에 (잠든 사이에 - trong lúc đã ngủ say)."
+  - type: example
+    target: 집에 들어오자마자 샤워부터 했어요.
+    target_lang: ko
+    translation:
+      vi: Vừa vào đến nhà là tôi đi tắm trước tiên.
+  - type: example
+    target: 제가 저녁을 준비하는 동안 남편은 빨래를 했어요.
+    target_lang: ko
+    translation:
+      vi: Trong lúc tôi chuẩn bị bữa tối, chồng tôi giặt đồ.
+    note:
+      vi: Hai người, hai việc trong cùng khoảng thời gian → -는 동안.
+  - type: example
+    target: 지하철에서 잠깐 조는 사이에 내릴 역을 지나쳤어요.
+    target_lang: ko
+    translation:
+      vi: Chỉ trong lúc ngủ gật một chút trên tàu điện ngầm, tôi đã đi quá ga cần xuống.
+  - type: example
+    target: 시장에 간 김에 제철 과일도 좀 샀어요.
+    target_lang: ko
+    translation:
+      vi: Nhân tiện đi chợ, tôi mua luôn ít trái cây theo mùa.
+    note:
+      vi: Việc đi chợ đã xảy ra → -(으)ㄴ 김에.
+  - type: example
+    target: 겨울 방학 동안 운전면허를 땄어요.
+    target_lang: ko
+    translation:
+      vi: Trong kỳ nghỉ đông tôi đã lấy được bằng lái xe.
+  - type: common_mistake
+    wrong: 공항에 도착했자마자 엄마한테 전화했어요.
+    right: 공항에 도착하자마자 엄마한테 전화했어요.
+    target_lang: ko
+    note:
+      vi: -자마자 không nhận thì quá khứ; thì của cả câu nằm ở động từ cuối (전화했어요).
+  - type: common_mistake
+    wrong: 친구를 기다린 동안 책을 읽었어요.
+    right: 친구를 기다리는 동안 책을 읽었어요.
+    target_lang: ko
+    note:
+      vi: -는 동안 luôn dùng định ngữ -는, dù câu kể chuyện quá khứ. Người Việt hay đổi sang -(으)ㄴ vì nghĩ "đã chờ".
+  - type: common_mistake
+    wrong: 비가 오는 김에 우산을 샀어요.
+    right: 비가 와서 우산을 샀어요.
+    target_lang: ko
+    note:
+      vi: -는 김에 cần việc A là hành động mình chủ động làm. Mưa không phải việc của bạn, nên chỉ là lý do - dùng -아/어서.
+  - type: summary
+    points:
+      - vi: V-자마자 - vừa… là ngay; không chia quá khứ ở vế trước.
+      - vi: V-는 동안(에) · N 동안 - trong lúc, trong suốt; luôn -는.
+      - vi: V-는 사이(에) · V-(으)ㄴ 사이(에) - trong lúc ngắn, sơ ý (hay có chuyện bất ngờ).
+      - vi: V-는 김에 · V-(으)ㄴ 김에 - nhân tiện làm A thì làm luôn B.
+      - vi: 들르다 (들러요) · 장을 보다 · 잠이 들다 · 빨래하다 · 퇴근하다 · 도둑이 들다 · 낮잠을 자다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:tv-time-mcq-parttime-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ko:item:tv-gram-jamaja
+    prompt:
+      stem: "수업이 끝나자마자 아르바이트하러 갔어요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: v5h, text: "Vừa tan học là tôi đi làm thêm ngay.", lang: vi }
+        - { id: c2n, text: "Trong lúc học, tôi đi làm thêm.", lang: vi }
+        - { id: p8t, text: "Nhân tiện tan học, tôi đi làm thêm.", lang: vi }
+        - { id: r3w, text: "Tan học được một lúc lâu tôi mới đi làm thêm.", lang: vi }
+    answer:
+      correct_option_id: v5h
+    explanation:
+      vi: -자마자 = vừa… là ngay. "Trong lúc" là -는 동안; "nhân tiện" là -는 김에; "một lúc lâu sau" trái với nghĩa tức thì của -자마자.
+    display_answer: "Vừa tan học là tôi đi làm thêm ngay."
+
+  - key: ko:exercise:tv-time-listen-playground
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:tv-jangeul-boda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 제가 마트에서 장을 보는 동안 아이는 아빠랑 놀이터에서 놀았어요.
+      options:
+        - { id: k9e, text: "Trong lúc tôi đi siêu thị mua đồ ăn, con chơi ở sân chơi với bố.", lang: vi }
+        - { id: a4j, text: "Tôi và con đi siêu thị, còn bố chơi ở sân chơi.", lang: vi }
+        - { id: m1s, text: "Vừa đi siêu thị về là con ra sân chơi với bố.", lang: vi }
+        - { id: z6q, text: "Nhân tiện đi siêu thị, con chơi ở sân chơi.", lang: vi }
+    answer:
+      correct_option_id: k9e
+    explanation:
+      vi: 장을 보는 동안 = trong lúc (tôi) đi chợ, mua đồ; vế sau là việc của người khác (아이는 아빠랑 놀았어요) diễn ra cùng khoảng thời gian.
+    display_answer: "Trong lúc tôi đi siêu thị mua đồ ăn, con chơi ở sân chơi với bố."
+
+  - key: ko:exercise:tv-time-mcq-buy-milk
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-neun-gime
+    prompt:
+      stem: "Bạn cùng phòng sắp ra cửa hàng tiện lợi. Bạn nhờ: \"Nhân tiện ra cửa hàng thì mua giúp mình sữa nhé.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: u7f, text: 편의점에 가는 김에 우유 좀 사다 줄래?, lang: ko }
+        - { id: d2g, text: 편의점에 가자마자 우유 좀 사다 줄래?, lang: ko }
+        - { id: h5b, text: 편의점에 가는 사이에 우유 좀 사다 줄래?, lang: ko }
+        - { id: o3y, text: 편의점에 갔는 김에 우유 좀 사다 줄래?, lang: ko }
+    answer:
+      correct_option_id: u7f
+    explanation:
+      vi: Bạn ấy đằng nào cũng đi (việc A) → nhờ làm thêm việc B → -는 김에. -자마자 nhấn mạnh "ngay khi"; -는 사이에 là "trong lúc sơ ý"; 갔는 김에 sai dạng (đã đi rồi thì là 간 김에).
+    display_answer: 편의점에 가는 김에 우유 좀 사다 줄래?
+
+  - key: ko:exercise:tv-time-fill-parcel-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-neun-sai
+    prompt:
+      template: "제가 샤워하는 {{b1}} 택배 기사님이 다녀가셨어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Trong lúc tôi đang tắm thì anh giao hàng đã đến rồi đi."
+        - "Gợi ý: -는 사이에 hoặc -는 동안에."
+    answer:
+      blanks:
+        b1: [사이에, 사이, 동안에, 동안, 새에]
+    known_wrong:
+      - answer: 김에
+        feedback_vi: -는 김에 là "nhân tiện"; ở đây là chuyện xảy ra trong lúc bạn đang tắm - 사이에.
+        error_tag: gime_vs_sai
+      - answer: 때문에
+        feedback_vi: Câu không nói lý do; cần "trong lúc" - 사이에 / 동안에.
+        error_tag: connector_meaning
+      - answer: 자마자
+        feedback_vi: -자마자 gắn thẳng vào thân (샤워하자마자), không đứng sau -는.
+        error_tag: jamaja_form
+    explanation:
+      vi: Việc bất ngờ chen vào lúc mình đang bận → V-는 사이에 (hoặc -는 동안에). Khẩu ngữ hay rút 사이에 thành 새에.
+    display_answer: 제가 샤워하는 사이에 택배 기사님이 다녀가셨어요.
+
+  - key: ko:exercise:tv-time-wb-fell-asleep
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-jami-deulda
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Tôi vừa nằm xuống giường là ngủ thiếp đi.\""
+      tokens:
+        - { id: t3, text: 잠이 }
+        - { id: t5, text: 누웠자마자 }
+        - { id: t1, text: 침대에 }
+        - { id: t4, text: 들었어요 }
+        - { id: t2, text: 눕자마자 }
+        - { id: t6, text: 눕는 김에 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: 눕다 + -자마자 → 눕자마자 (không chia quá khứ ở vế trước, nên 누웠자마자 sai). 잠이 들다 = ngủ thiếp đi. 눕는 김에 (nhân tiện nằm) sai nghĩa.
+    display_answer: 침대에 눕자마자 잠이 들었어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:tv-time-fill-library-stop
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-deulleuda
+    prompt:
+      template: "(Nhân tiện đã ra ngoài, tôi ghé thư viện luôn.) 밖에 {{b1}} 김에 도서관에도 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [나온, 나간]
+        b2: [들렀어요]
+    known_wrong:
+      - answer: 나와서
+        feedback_vi: Trước 김에 cần định ngữ - việc đã xảy ra → 나온 김에.
+        error_tag: gime_form
+      - answer: 나왔는
+        feedback_vi: Định ngữ quá khứ của động từ là -(으)ㄴ - 나온 김에.
+        error_tag: adnominal_past
+      - answer: 들렸어요
+        feedback_vi: 들리다 là "được nghe thấy". "Ghé qua" là 들르다 → 들렀어요 (bất quy tắc ㅡ).
+        error_tag: deulleuda_deullida
+      - answer: 들럴렀어요
+        feedback_vi: 들르다 chia theo bất quy tắc ㅡ, không phải 르 - 들렀어요.
+        error_tag: eu_irregular
+    explanation:
+      vi: Đã ra ngoài rồi → -(으)ㄴ 김에 (나온 / 나간 김에). 들르다 là bất quy tắc ㅡ → 들렀어요.
+    display_answer: 밖에 나온 김에 도서관에도 들렀어요.
+
+  - key: ko:exercise:tv-time-fill-summer-driving
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-neun-dongan
+    prompt:
+      template: "(Trong suốt kỳ nghỉ hè tôi đã học bơi.) 여름 방학 {{b1}} 수영을 배웠어요."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [동안, 동안에]
+    known_wrong:
+      - answer: 사이에
+        feedback_vi: -는 사이에 là khoảng thời gian ngắn, sơ ý; cả kỳ nghỉ dài dùng N 동안.
+        error_tag: sai_vs_dongan
+      - answer: 김에
+        feedback_vi: 김에 cần một hành động phía trước (-는 김에); "trong kỳ nghỉ" là 방학 동안.
+        error_tag: gime_form
+      - answer: 자마자
+        feedback_vi: -자마자 gắn vào thân động từ (끝나자마자), không đi sau danh từ 방학.
+        error_tag: jamaja_form
+    explanation:
+      vi: Danh từ chỉ khoảng thời gian + 동안(에) = trong suốt N.
+    display_answer: 여름 방학 동안 수영을 배웠어요.
+
+  - key: ko:exercise:tv-time-translate-home-after-work
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-toegeunhada
+    prompt:
+      source_text: Vừa tan làm là tôi về nhà ngay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 퇴근하자마자 바로 집에 갔어요.
+        - 퇴근하자마자 집에 갔어요.
+        - 퇴근하자마자 바로 집에 왔어요.
+        - 퇴근하자마자 집에 왔어요.
+        - 퇴근하자마자 바로 집으로 갔어요.
+        - 퇴근하자마자 집으로 갔어요.
+        - 저는 퇴근하자마자 바로 집에 갔어요.
+        - 저는 퇴근하자마자 집에 갔어요.
+        - 퇴근하자마자 곧바로 집에 갔어요.
+        - 퇴근하자마자 바로 집에 가요.
+        - 퇴근하자마자 집에 가요.
+        - 퇴근하자마자 바로 집에 들어갔어요.
+    known_wrong:
+      - answer: 퇴근했자마자 바로 집에 갔어요.
+        feedback_vi: -자마자 không nhận quá khứ - 퇴근하자마자.
+        error_tag: jamaja_tense
+      - answer: 퇴근하는 동안 바로 집에 갔어요.
+        feedback_vi: -는 동안 là "trong lúc"; "vừa… là ngay" là -자마자.
+        error_tag: jamaja_vs_dongan
+      - answer: 퇴근하는 김에 집에 갔어요.
+        feedback_vi: -는 김에 là "nhân tiện" - không hợp ý "vừa tan làm là về ngay".
+        error_tag: jamaja_vs_gime
+    explanation:
+      vi: V-자마자 = vừa… là; 바로 / 곧바로 nhấn mạnh "ngay". Thì quá khứ (hoặc hiện tại cho thói quen) đặt ở động từ cuối.
+    display_answer: 퇴근하자마자 바로 집에 갔어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:tv-time-mcq-thief-nap
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-doduk
+    prompt:
+      stem: "Bạn khai với cảnh sát: \"Chỉ trong lúc tôi ngủ trưa một chút thì trộm đã vào nhà.\" Câu nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: x8c, text: 제가 잠깐 낮잠을 자는 사이에 도둑이 들었어요., lang: ko }
+        - { id: e1v, text: 제가 잠깐 낮잠을 자는 김에 도둑이 들었어요., lang: ko }
+        - { id: l4p, text: 제가 잠깐 낮잠을 잤자마자 도둑이 들었어요., lang: ko }
+        - { id: n7r, text: 제가 잠깐 낮잠을 잔 동안 도둑이 들었어요., lang: ko }
+    answer:
+      correct_option_id: x8c
+    explanation:
+      vi: Chuyện bất ngờ trong khoảng thời gian ngắn, sơ hở → -는 사이에. -는 김에 là "nhân tiện" (vô lý ở đây); 잤자마자 sai vì -자마자 không chia quá khứ; 잔 동안 sai vì -는 동안 luôn dùng -는.
+    display_answer: 제가 잠깐 낮잠을 자는 사이에 도둑이 들었어요.
+
+  - key: ko:exercise:tv-time-mcq-reading-saturday
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-ppallaehada
+    prompt:
+      stem: "다음 글을 읽고 내용과 같은 것을 고르십시오.\n토요일 아침에 일어나자마자 빨래를 해서 베란다에 널었다. 빨래가 마르는 동안 장을 보러 마트에 갔다. 마트에 간 김에 약국에도 들러서 감기약을 샀다. 그런데 내가 밖에 있는 사이에 갑자기 비가 와서 빨래가 다 젖어 버렸다."
+      stem_lang: ko
+      options:
+        - { id: s6k, text: 글쓴이가 밖에 있을 때 비가 왔다., lang: ko }
+        - { id: f9m, text: 글쓴이는 장을 본 후에 빨래를 했다., lang: ko }
+        - { id: j3d, text: 글쓴이는 감기약을 사려고 일부러 외출했다., lang: ko }
+        - { id: w5a, text: 비 때문에 글쓴이는 빨래를 하지 못했다., lang: ko }
+    answer:
+      correct_option_id: s6k
+    explanation:
+      vi: 내가 밖에 있는 사이에 비가 와서 = mưa đúng lúc người viết đang ở ngoài. Người viết giặt đồ ngay khi thức dậy (일어나자마자), rồi mới đi chợ; ghé hiệu thuốc là "nhân tiện" (간 김에), không phải mục đích chính; đồ đã giặt xong nhưng bị ướt.
+    display_answer: 글쓴이가 밖에 있을 때 비가 왔다.
+
+  - key: ko:exercise:tv-time-translate-missed-calls-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:tv-gram-neun-sai
+    prompt:
+      source_text: 회의하는 사이에 부재중 전화가 다섯 통이나 왔어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong lúc họp thì có tận năm cuộc gọi nhỡ.
+        - Trong lúc tôi họp đã có tận năm cuộc gọi nhỡ.
+        - Trong lúc đang họp, tôi có tới năm cuộc gọi nhỡ.
+        - Chỉ trong lúc họp mà có tận năm cuộc gọi nhỡ.
+        - Trong lúc họp, có đến năm cuộc gọi nhỡ.
+        - Trong lúc tôi đang họp thì có tận 5 cuộc gọi nhỡ.
+        - Trong khi họp, có tận năm cuộc gọi nhỡ gọi đến.
+        - Trong lúc họp tôi bị nhỡ tận năm cuộc gọi.
+        - Trong lúc đang họp thì đã có những năm cuộc gọi nhỡ.
+        - Lúc đang họp thì có tận năm cuộc gọi nhỡ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vừa họp xong là có năm cuộc gọi nhỡ.
+        feedback_vi: -는 사이에 là "trong lúc (đang họp)", không phải "vừa xong là" (-자마자).
+        error_tag: sai_vs_jamaja
+      - answer: Trong lúc họp tôi đã gọi năm cuộc điện thoại.
+        feedback_vi: 부재중 전화가 왔어요 là có cuộc gọi nhỡ đến, không phải mình gọi đi.
+        error_tag: meaning_mismatch
+    explanation:
+      vi: -는 사이에 = trong lúc (ngắn, không để ý); 부재중 전화 = cuộc gọi nhỡ; 통 là đơn vị đếm cuộc gọi; -이나 nhấn mạnh "tận, những".
+    display_answer: Trong lúc họp thì có tận năm cuộc gọi nhỡ.
+
+  - key: ko:exercise:tv-time-translate-haeundae
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-neun-gime
+    prompt:
+      source_text: Nhân tiện đã đến Busan, tôi muốn đi biển Haeundae thử.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 부산에 온 김에 해운대에 가 보고 싶어요.
+        - 부산에 간 김에 해운대에 가 보고 싶어요.
+        - 부산에 온 김에 해운대 바다에 가 보고 싶어요.
+        - 부산에 온 김에 해운대 해수욕장에 가 보고 싶어요.
+        - 부산에 온 김에 해운대에도 가 보고 싶어요.
+        - 부산에 간 김에 해운대에도 가 보고 싶어요.
+        - 부산에 온 김에 해운대에 한번 가 보고 싶어요.
+        - 부산에 온 김에 해운대 바다에도 가 보고 싶어요.
+        - 부산까지 온 김에 해운대에 가 보고 싶어요.
+        - 부산에 온 김에 해운대에 가 보고 싶습니다.
+        - 부산에 온 김에 해운대에 가고 싶어요.
+        - 부산에 온 김에 해운대 바다를 보고 싶어요.
+    known_wrong:
+      - answer: 부산에 왔는 김에 해운대에 가 보고 싶어요.
+        feedback_vi: Định ngữ quá khứ của động từ là -(으)ㄴ - 온 김에.
+        error_tag: adnominal_past
+      - answer: 부산에 오자마자 해운대에 가 보고 싶어요.
+        feedback_vi: -자마자 là "vừa đến là đi ngay" - khác ý "nhân tiện".
+        error_tag: jamaja_vs_gime
+      - answer: 부산에 오는 동안 해운대에 가 보고 싶어요.
+        feedback_vi: -는 동안 là "trong lúc đang đến" - không hợp ý.
+        error_tag: dongan_vs_gime
+    explanation:
+      vi: Đã đến Busan rồi → -(으)ㄴ 김에 (온 김에 / 간 김에); "muốn đi thử" = 가 보고 싶어요.
+    display_answer: 부산에 온 김에 해운대에 가 보고 싶어요.

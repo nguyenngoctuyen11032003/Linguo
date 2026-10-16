@@ -1,0 +1,435 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:rules-negative-requests
+order_index: 2
+level: topik2
+title:
+  vi: Xin đừng…! - -지 마세요, phủ định dài -지 않다 / -지 못하다
+objectives:
+  - vi: Khuyên, nhắc "đừng làm…" bằng V-지 마세요 và hiểu thông báo trang trọng V-지 마십시오.
+  - vi: Dùng phủ định dài V/A-지 않아요 và V-지 못해요, so sánh với 안 / 못 đã học.
+  - vi: Hiểu các lời nhắc nơi công cộng - thư viện, bể bơi, rạp hát - 떠들다, 뛰다, 끄다, 함부로, 미루다.
+estimated_minutes: 18
+skills: [grammar, vocabulary, listening, reading]
+prerequisites: [ko:lesson:rules-permission]
+items:
+  - item: ko:item:rf-gram-ji-maseyo
+  - item: ko:item:rf-gram-ji-anta
+  - item: ko:item:rf-gram-ji-motada
+  - item: ko:item:rf-tteodeulda
+  - item: ko:item:rf-ttwida
+  - item: ko:item:rf-kkeuda
+  - item: ko:item:rf-hamburo
+  - item: ko:item:rf-neutda
+  - item: ko:item:rf-miruda
+  - item: ko:item:rf-geokjeonghada
+  - item: ko:item:gram-an-negation
+    role: reuse
+  - item: ko:item:gram-mot
+    role: reuse
+  - item: ko:item:rf-gram-ado-doeda
+    role: reuse
+  - item: ko:item:rf-gram-eumyeon-an-doeda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "đừng lo", "đừng đến muộn", hiểu lời nhắc trong thư viện hay thông báo ở rạp hát, và nói "không / không thể" theo cách thứ hai - phủ định dài.
+  - type: explain
+    text:
+      vi: "\"Đừng làm…\" là V-지 마세요: gắn -지 vào thân động từ rồi thêm 마세요 - 떠들지 마세요 (đừng làm ồn). Tiếng Việt đặt \"đừng\" trước động từ, nên người Việt hay đặt 안 trước động từ rồi thêm -(으)세요; nhưng 안 가세요 chỉ là câu kính ngữ \"(ông ấy) không đi\", không phải lời khuyên."
+  - type: explain
+    text:
+      vi: "Trên biển báo, trong thông báo ở ga, rạp hát, bệnh viện, bạn sẽ gặp dạng trang trọng V-지 마십시오. Với bạn thân thì nói V-지 마 (반말). Ba dạng cùng nghĩa, chỉ khác mức độ lịch sự."
+  - type: explain
+    text:
+      vi: "Phủ định dài: V/A-지 않아요 = 안 + V/A, V-지 못해요 = 못 + V. Nghĩa không đổi, nhưng dạng dài nghe nhẹ nhàng, trang trọng hơn và rất hay gặp trong văn viết, email. Dạng dài còn giúp bạn tránh lỗi đặt 안 / 못 sai chỗ với động từ \"danh từ + 하다\": 공부하지 않아요, 운동하지 못해요."
+  - type: deep_explain
+    text:
+      vi: "마세요 đến từ động từ 말다 (thôi, ngừng) + -(으)세요; ㄹ rơi trước ㅅ như 살다 → 사세요. Vì vậy dạng trang trọng là 마십시오 (không phải 말으십시오), và viết 마십시오 chứ không phải 마십시요. Muốn nói \"đừng A mà hãy B\", bạn dùng V-지 말고: 택시를 타지 말고 지하철을 타세요. Lưu ý 못 và -지 못하다 hầu như chỉ đi với động từ; với tính từ (크다, 비싸다) trong khẩu ngữ, bạn dùng 안 hoặc -지 않아요."
+  - type: example
+    target: 열람실에서는 친구와 떠들지 마세요.
+    target_lang: ko
+    translation:
+      vi: Trong phòng đọc đừng nói chuyện ồn ào với bạn.
+    note:
+      vi: 떠들다 gốc ㄹ nhưng trước -지 vẫn giữ ㄹ - 떠들지.
+  - type: example
+    target: 수영장 주변에서는 뛰지 마십시오.
+    target_lang: ko
+    translation:
+      vi: Xin đừng chạy xung quanh bể bơi.
+    note:
+      vi: Dạng trang trọng trên biển báo, thông báo.
+  - type: example
+    target: 저는 저녁에는 커피를 마시지 않아요. 잠을 못 자거든요.
+    target_lang: ko
+    translation:
+      vi: Buổi tối tôi không uống cà phê. Vì tôi sẽ không ngủ được.
+  - type: example
+    target: 목이 너무 아파서 노래를 부르지 못했어요.
+    target_lang: ko
+    translation:
+      vi: Họng đau quá nên tôi đã không hát được.
+    note:
+      vi: Không hát vì không thể (do đau họng) → -지 못하다, không phải -지 않다.
+  - type: example
+    target: 택시를 타지 말고 지하철을 타세요. 지금은 길이 많이 막혀요.
+    target_lang: ko
+    translation:
+      vi: Đừng đi taxi mà hãy đi tàu điện ngầm. Bây giờ đường tắc lắm.
+  - type: common_mistake
+    wrong: 도서관에서 안 떠드세요.
+    right: 도서관에서 떠들지 마세요.
+    target_lang: ko
+    note:
+      vi: '"Đừng…" không phải 안 + -(으)세요. Câu sai nghe như "(người đó) không làm ồn ở thư viện" (kính ngữ). Lời khuyên, lời nhắc phải là -지 마세요.'
+  - type: common_mistake
+    wrong: 안전선을 넘지 마십시요.
+    right: 안전선을 넘지 마십시오.
+    target_lang: ko
+    note:
+      vi: Đuôi trang trọng là -십시오 (오), dù khi nói nghe gần giống 요. Đây là lỗi chính tả rất phổ biến, cả người Hàn cũng mắc.
+  - type: common_mistake
+    wrong: 이 가방은 못 비싸요.
+    right: 이 가방은 비싸지 않아요.
+    target_lang: ko
+    note:
+      vi: 못 nói về khả năng nên đi với động từ. Tính từ "không đắt" dùng 안 비싸요 hoặc 비싸지 않아요.
+  - type: summary
+    points:
+      - vi: V-지 마세요 - đừng…; trang trọng V-지 마십시오; bạn thân V-지 마.
+      - vi: V-지 말고 V-(으)세요 - đừng… mà hãy….
+      - vi: V/A-지 않아요 = 안 + V/A (không, theo ý muốn hoặc mô tả).
+      - vi: V-지 못해요 = 못 + V (không thể); không dùng 못 với tính từ.
+      - vi: 떠들다 · 뛰다 · 끄다 (꺼요) · 함부로 · 늦다 · 미루다 · 걱정하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:rf-neg-mcq-exam-talk
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ko:item:rf-gram-ji-maseyo
+    prompt:
+      stem: "시험 시간에는 옆 사람과 이야기하지 마세요. nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: m2c, text: "Trong giờ thi đừng nói chuyện với người bên cạnh.", lang: vi }
+        - { id: x8p, text: "Trong giờ thi bạn không nói chuyện được với người bên cạnh.", lang: vi }
+        - { id: d5j, text: "Trong giờ thi hãy nói chuyện với người bên cạnh.", lang: vi }
+        - { id: w3h, text: "Trong giờ thi người bên cạnh không nói chuyện.", lang: vi }
+    answer:
+      correct_option_id: m2c
+    explanation:
+      vi: V-지 마세요 là lời nhắc "đừng…". "Không nói chuyện được" là -지 못해요; "hãy nói chuyện" là 이야기하세요; câu cuối mô tả người khác, không phải lời nhắc.
+    display_answer: "Trong giờ thi đừng nói chuyện với người bên cạnh."
+
+  - key: ko:exercise:rf-neg-listen-theater
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-kkeuda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 관객 여러분, 공연 중에는 휴대폰을 꺼 주시고 사진을 찍지 마십시오.
+      options:
+        - { id: u4n, text: "Thưa quý khán giả, trong khi biểu diễn xin hãy tắt điện thoại và đừng chụp ảnh.", lang: vi }
+        - { id: k7r, text: "Thưa quý khán giả, trong khi biểu diễn xin hãy bật điện thoại để chụp ảnh.", lang: vi }
+        - { id: b1y, text: "Thưa quý khán giả, trong khi biểu diễn có thể chụp ảnh nhưng phải tắt điện thoại.", lang: vi }
+        - { id: e9t, text: "Thưa quý khán giả, buổi biểu diễn đã kết thúc, xin hãy chụp ảnh.", lang: vi }
+    answer:
+      correct_option_id: u4n
+    explanation:
+      vi: 꺼 주시고 = xin hãy tắt (끄다 → 꺼); 찍지 마십시오 = xin đừng chụp, dạng trang trọng của thông báo. Câu không cho phép chụp ảnh.
+    display_answer: "Thưa quý khán giả, trong khi biểu diễn xin hãy tắt điện thoại và đừng chụp ảnh."
+
+  - key: ko:exercise:rf-neg-mcq-dont-worry
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-geokjeonghada
+    prompt:
+      stem: "Đồng nghiệp lo vì làm sai một con số trong báo cáo. Bạn muốn nói \"Đừng lo, tôi sửa rồi\". Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: v6q, text: 걱정하지 마세요. 제가 벌써 고쳤어요., lang: ko }
+        - { id: h3f, text: 걱정 안 하세요. 제가 벌써 고쳤어요., lang: ko }
+        - { id: z9b, text: 걱정하지 못해요. 제가 벌써 고쳤어요., lang: ko }
+        - { id: l2s, text: 걱정하세요. 제가 벌써 고쳤어요., lang: ko }
+    answer:
+      correct_option_id: v6q
+    explanation:
+      vi: '"Đừng lo" là 걱정하지 마세요. 걱정 안 하세요 nghe như mô tả "(người đó) không lo"; 걱정하지 못해요 là "không thể lo"; 걱정하세요 là "hãy lo đi" - ngược ý.'
+    display_answer: 걱정하지 마세요. 제가 벌써 고쳤어요.
+
+  - key: ko:exercise:rf-neg-fill-washer-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-ji-maseyo
+    prompt:
+      template: "밤늦게 세탁기를 {{b1}} 마세요. 아래층 사람들이 자요."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Đêm khuya đừng chạy máy giặt. Người tầng dưới đang ngủ."
+        - "Gợi ý: 돌리다 (chạy máy) hoặc 쓰다 + -지."
+    answer:
+      blanks:
+        b1: [돌리지, 쓰지, 사용하지]
+    known_wrong:
+      - answer: 돌려
+        feedback_vi: Trước 마세요 cần đuôi -지 - 돌리지 마세요.
+        error_tag: ji_maseyo_form
+      - answer: 안 돌리
+        feedback_vi: '"Đừng" không dùng 안; chỉ cần 돌리지 마세요.'
+        error_tag: an_maseyo
+      - answer: 돌리면
+        feedback_vi: -(으)면 đi với 안 돼요; trước 마세요 phải là -지.
+        error_tag: ji_maseyo_form
+    explanation:
+      vi: V-지 마세요 - gắn -지 vào thân động từ. 세탁기를 돌리다 là cách nói tự nhiên của "chạy máy giặt".
+    display_answer: 밤늦게 세탁기를 돌리지 마세요. 아래층 사람들이 자요.
+
+  - key: ko:exercise:rf-neg-wb-sister-tv
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 2
+    item: ko:item:rf-gram-ji-anta
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn (phủ định dài): \"Dạo này em gái tôi không xem tivi.\""
+      tokens:
+        - { id: t5, text: 않아요 }
+        - { id: t3, text: 텔레비전을 }
+        - { id: t6, text: 마세요 }
+        - { id: t2, text: 여동생은 }
+        - { id: t4, text: 보지 }
+        - { id: t1, text: 요즘 }
+        - { id: t7, text: 안 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4, t5]
+        - [t2, t1, t3, t4, t5]
+    explanation:
+      vi: Phủ định dài là V-지 않아요 - 보지 않아요. 요즘 có thể đứng đầu câu hoặc sau chủ ngữ. 마세요 (đừng) và 안 là token thừa.
+    display_answer: 요즘 여동생은 텔레비전을 보지 않아요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:rf-neg-fill-call-mom
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-ji-motada
+    prompt:
+      template: "(Hôm qua bận quá nên tôi không gọi điện cho mẹ được.) 어제 너무 바빠서 엄마한테 전화하지 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [못했어요]
+    known_wrong:
+      - answer: 않았어요
+        feedback_vi: '-지 않았어요 là "không gọi" (do mình chọn). Câu gốc là "không gọi được" vì bận - -지 못했어요.'
+        error_tag: an_vs_mot
+      - answer: 못해요
+        feedback_vi: Chuyện hôm qua (어제) nên chia quá khứ - 못했어요.
+        error_tag: tense
+      - answer: 마세요
+        feedback_vi: 마세요 là "đừng", không dùng để kể chuyện của mình.
+        error_tag: ji_maseyo_misuse
+    explanation:
+      vi: Không làm được vì hoàn cảnh (bận) → -지 못하다; chuyện hôm qua → 못했어요.
+    display_answer: 어제 너무 바빠서 엄마한테 전화하지 못했어요.
+
+  - key: ko:exercise:rf-neg-fill-short-to-long
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-ji-anta
+    prompt:
+      template: "Đổi sang phủ định dài: 오늘은 안 추워요 → 오늘은 춥지 {{b1}}. · 아직 운전 못 해요 → 아직 운전하지 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [않아요]
+        b2: [못해요]
+    known_wrong:
+      - answer: 안아요
+        feedback_vi: Viết 않아요 (patchim ㄶ); 안아요 là "ôm".
+        error_tag: spelling_anta
+      - answer: 않워요
+        feedback_vi: Bất quy tắc ㅂ chỉ xảy ra ở thân 춥-; sau -지 luôn là 않아요.
+        error_tag: b_irregular_overuse
+      - answer: 못 해요
+        feedback_vi: Trong -지 못하다, 못하다 viết liền - 운전하지 못해요.
+        error_tag: spacing_motada
+    explanation:
+      vi: 안 + A = A-지 않아요 (안 추워요 → 춥지 않아요); 못 + V = V-지 못해요 (운전 못 해요 → 운전하지 못해요).
+    display_answer: 오늘은 춥지 않아요. · 아직 운전하지 못해요.
+
+  - key: ko:exercise:rf-neg-translate-litter
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-hamburo
+    prompt:
+      source_text: Xin đừng vứt rác bừa bãi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 쓰레기를 함부로 버리지 마세요.
+        - 함부로 쓰레기를 버리지 마세요.
+        - 쓰레기 함부로 버리지 마세요.
+        - 쓰레기를 함부로 버리지 마십시오.
+        - 함부로 쓰레기를 버리지 마십시오.
+        - 쓰레기를 아무 데나 버리지 마세요.
+        - 아무 데나 쓰레기를 버리지 마세요.
+        - 쓰레기를 아무 데나 버리지 마십시오.
+        - 쓰레기를 함부로 버리지 말아 주세요.
+        - 쓰레기를 함부로 버리지 말아 주십시오.
+    known_wrong:
+      - answer: 쓰레기를 함부로 안 버리세요.
+        feedback_vi: '"Đừng" là -지 마세요, không phải 안 + -(으)세요.'
+        error_tag: an_maseyo
+      - answer: 쓰레기를 함부로 버리지 말세요.
+        feedback_vi: ㄹ của 말다 rơi trước ㅅ - 마세요, không viết 말세요.
+        error_tag: l_drop
+      - answer: 쓰레기를 함부로 버리지 않아요.
+        feedback_vi: -지 않아요 là kể "không vứt", không phải lời nhắc "đừng vứt".
+        error_tag: statement_vs_request
+    explanation:
+      vi: Lời nhắc "đừng…" là V-지 마세요 (trang trọng - 마십시오). 함부로 = bừa bãi, tuỳ tiện; 아무 데나 = bất cứ chỗ nào.
+    display_answer: 쓰레기를 함부로 버리지 마세요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:rf-neg-mcq-fever-friend
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-gram-ji-maseyo
+    prompt:
+      stem: "Bạn của bạn đang sốt cao nhưng vẫn muốn đi làm thêm. Bạn khuyên bạn ấy đừng cố, ở nhà nghỉ. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: c8w, text: 무리하지 말고 오늘은 집에서 쉬세요., lang: ko }
+        - { id: n5e, text: 무리하고 오늘은 집에서 쉬세요., lang: ko }
+        - { id: j1o, text: 무리하지 못하고 오늘은 집에서 쉬세요., lang: ko }
+        - { id: f4i, text: 무리하지 않고 오늘은 아르바이트에 가세요., lang: ko }
+    answer:
+      correct_option_id: c8w
+    explanation:
+      vi: '"Đừng A mà hãy B" là V-지 말고 V-(으)세요. 무리하고 là "cố sức rồi…" (ngược ý); -지 못하고 là "không thể cố"; câu cuối lại khuyên đi làm thêm.'
+    display_answer: 무리하지 말고 오늘은 집에서 쉬세요.
+
+  - key: ko:exercise:rf-neg-mcq-reading-library
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:rf-gram-ji-maseyo
+    prompt:
+      stem: "다음 안내문을 읽고 맞는 것을 고르십시오.\n[열람실 이용 안내]\n- 열람실에서는 음식을 드시지 마십시오. 뚜껑이 있는 물병은 괜찮습니다.\n- 휴대폰은 꺼 주시거나 진동으로 바꿔 주십시오.\n- 자리를 맡아 놓고 오랫동안 비우지 마십시오."
+      stem_lang: ko
+      options:
+        - { id: s7a, text: 열람실에서 뚜껑이 있는 물병의 물은 마셔도 돼요., lang: ko }
+        - { id: g2u, text: 열람실에서 간단한 음식은 먹어도 돼요., lang: ko }
+        - { id: y5m, text: 휴대폰은 꼭 소리로 켜 놓아야 해요., lang: ko }
+        - { id: o3d, text: 자리를 맡고 오래 나가 있어도 괜찮아요., lang: ko }
+    answer:
+      correct_option_id: s7a
+    explanation:
+      vi: Thông báo cấm ăn (음식을 드시지 마십시오) nhưng nói chai nước có nắp thì không sao (괜찮습니다). Điện thoại phải tắt hoặc để rung; không được giữ chỗ rồi bỏ đi lâu.
+    display_answer: 열람실에서 뚜껑이 있는 물병의 물은 마셔도 돼요.
+
+  - key: ko:exercise:rf-neg-translate-meeting-place-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:rf-gram-ji-motada
+    prompt:
+      source_text: 갑자기 급한 일이 생겨서 약속 장소에 가지 못했어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đột nhiên có việc gấp nên tôi đã không đến chỗ hẹn được.
+        - Đột nhiên có việc gấp nên tôi không đến chỗ hẹn được.
+        - Đột nhiên có việc gấp nên tôi không thể đến chỗ hẹn.
+        - Tự nhiên có việc gấp nên tôi không đến được chỗ hẹn.
+        - Đột nhiên có việc gấp nên tôi không đến được chỗ hẹn.
+        - Bỗng nhiên có việc gấp nên tôi không thể đến chỗ hẹn.
+        - Đột nhiên có việc gấp nên tôi đã không thể đến nơi hẹn.
+        - Đột nhiên có việc gấp nên tôi không đến nơi hẹn được.
+        - Vì đột nhiên có việc gấp nên tôi không thể đến chỗ hẹn.
+        - Tự nhiên có chuyện gấp nên tôi không đến chỗ hẹn được.
+        - Đột nhiên có việc gấp nên tôi không đi đến chỗ hẹn được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đột nhiên có việc gấp nên tôi không muốn đến chỗ hẹn.
+        feedback_vi: -지 못했어요 là "không thể", không phải "không muốn".
+        error_tag: an_vs_mot
+      - answer: Đột nhiên có việc gấp nên tôi đã đến chỗ hẹn.
+        feedback_vi: Câu gốc là phủ định - 가지 못했어요 (không đến được).
+        error_tag: negation_missed
+    explanation:
+      vi: -아서 chỉ lý do (có việc gấp nên…); -지 못했어요 là "đã không thể…", do hoàn cảnh chứ không phải do không muốn.
+    display_answer: Đột nhiên có việc gấp nên tôi đã không đến chỗ hẹn được.
+
+  - key: ko:exercise:rf-neg-translate-next-time-late
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:rf-neutda
+    prompt:
+      source_text: Lần sau đừng đến muộn nữa nhé.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 다음에는 늦지 마세요.
+        - 다음부터는 늦지 마세요.
+        - 다음부터 늦지 마세요.
+        - 다음번에는 늦지 마세요.
+        - 다음에는 늦게 오지 마세요.
+        - 다음부터는 늦게 오지 마세요.
+        - 다음부터 늦게 오지 마세요.
+        - 다음에는 지각하지 마세요.
+        - 다음부터는 지각하지 마세요.
+        - 다음에는 다시 늦지 마세요.
+        - 다시는 늦지 마세요.
+        - 다음에는 늦지 마십시오.
+        - 다음부터는 늦지 마십시오.
+    known_wrong:
+      - answer: 다음에는 안 늦으세요.
+        feedback_vi: '"Đừng" là -지 마세요, không phải 안 + -(으)세요.'
+        error_tag: an_maseyo
+      - answer: 다음에는 늦지 않아요.
+        feedback_vi: -지 않아요 là câu kể "không muộn"; lời nhắc phải là 늦지 마세요.
+        error_tag: statement_vs_request
+      - answer: 다음에는 늦지 못해요.
+        feedback_vi: -지 못해요 là "không thể muộn" - không phải lời nhắc.
+        error_tag: an_vs_mot
+      - answer: daeumeneun neutji maseyo
+        feedback_vi: Hãy viết bằng Hangul, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: '"Lần sau / từ lần sau" = 다음에는 / 다음부터는; "đừng đến muộn" = 늦지 마세요 hoặc 늦게 오지 마세요.'
+    display_answer: 다음에는 늦지 마세요.

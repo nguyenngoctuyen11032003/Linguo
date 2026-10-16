@@ -1,0 +1,435 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:time-state-voice-review
+order_index: 5
+level: topik4
+title:
+  vi: Ôn tập - Ngày chuyển nhà, gửi con đi nhà trẻ & bản tin giao thông
+objectives:
+  - vi: Hiểu hội thoại của một gia đình trong ngày chuyển nhà và tin nhắn với nhà trẻ - -자마자, -는 동안, -는 사이에, -는 김에, -아/어 있다, -(으)ㄴ 채로, 대신.
+  - vi: Nghe hiểu bản tin giao thông trang trọng (-습니다) có động từ bị động - 막히다, 닫히다, 실리다.
+  - vi: Dùng đúng động từ bị động và sai khiến trong cùng một câu chuyện - 안기다 / 안다, 재우다, 먹이다, 앉히다.
+estimated_minutes: 25
+skills: [listening, reading, grammar, writing]
+prerequisites: [ko:lesson:causative-verbs]
+items:
+  - item: ko:item:tv-eorinijip
+  - item: ko:item:tv-isatjim
+  - item: ko:item:tv-gram-jamaja
+    role: reuse
+  - item: ko:item:tv-gram-neun-dongan
+    role: reuse
+  - item: ko:item:tv-gram-neun-sai
+    role: reuse
+  - item: ko:item:tv-gram-neun-gime
+    role: reuse
+  - item: ko:item:tv-gram-a-itda
+    role: reuse
+  - item: ko:item:tv-gram-eun-chae
+    role: reuse
+  - item: ko:item:tv-gram-daesine
+    role: reuse
+  - item: ko:item:tv-gram-passive
+    role: reuse
+  - item: ko:item:tv-gram-causative
+    role: reuse
+  - item: ko:item:tv-gram-ge-hada
+    role: reuse
+  - item: ko:item:tv-angida
+    role: reuse
+  - item: ko:item:tv-anchida
+    role: reuse
+  - item: ko:item:tv-deullida
+    role: reuse
+  - item: ko:item:giri-makhida
+    role: reuse
+  - item: ko:item:ha-isahada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Gia đình anh Junho chuyển nhà vào sáng thứ Bảy - vừa phải dọn đồ, vừa đưa con đi nhà trẻ, vừa theo dõi tình hình giao thông. Bài ôn gồm ba văn bản ngắn dùng lại toàn bộ cấu trúc của unit.
+  - type: explain
+    text:
+      vi: "Hội thoại vợ chồng dùng 반말 thân mật (-아/어, -지?). Khi đọc, hãy để ý cách họ chia việc theo thời gian: 내가 냉장고를 정리하는 동안 (trong lúc anh dọn tủ lạnh), 가는 김에 (nhân tiện đi), 도착하자마자 (vừa đến là)."
+  - type: explain
+    text:
+      vi: "Bản tin giao thông dùng đuôi trang trọng -습니다 và rất nhiều động từ bị động: 길이 막히다, 차로가 닫히다 (làn đường bị đóng), 병원으로 실려 가다 (được chở đến bệnh viện). Tiếng Việt dùng \"bị/được\" ở những chỗ này, còn tiếng Hàn đổi động từ."
+  - type: deep_explain
+    text:
+      vi: "Một câu chuyện chăm con thường có cả bị động lẫn sai khiến: 아기가 엄마에게 안겨 있어요 (bé được mẹ bế - bị động), 엄마가 아기를 할머니께 안겼어요 (mẹ đưa bé cho bà bế - sai khiến), 아기를 재웠어요 (ru bé ngủ - sai khiến). Mẹo cũ vẫn đúng - xem câu có tân ngữ 을/를 không, và ai là người thực sự làm hành động."
+  - type: example
+    target: 이삿짐 트럭이 도착하자마자 비가 오기 시작했어요.
+    target_lang: ko
+    translation:
+      vi: Xe tải chở đồ chuyển nhà vừa đến là trời bắt đầu mưa.
+  - type: example
+    target: 내가 냉장고를 정리하는 동안 너는 아이를 어린이집에 데려다줘.
+    target_lang: ko
+    translation:
+      vi: Trong lúc anh dọn tủ lạnh, em đưa con đến nhà trẻ nhé.
+  - type: example
+    target: 아이는 아직 잠옷을 입은 채로 소파에 누워 있어요.
+    target_lang: ko
+    translation:
+      vi: Con vẫn mặc nguyên đồ ngủ nằm trên sofa.
+  - type: example
+    target: 현재 사고 처리 때문에 2차로가 닫혀 있습니다.
+    target_lang: ko
+    translation:
+      vi: Hiện tại làn 2 đang bị đóng do xử lý tai nạn.
+    note:
+      vi: 닫히다 + -아/어 있다 - trạng thái, văn phong bản tin.
+  - type: common_mistake
+    wrong: 아기가 엄마를 안겨서 자고 있어요.
+    right: 아기가 엄마에게 안겨서 자고 있어요.
+    target_lang: ko
+    note:
+      vi: Bị động 안기다 - người ôm đi với 에게/한테, không phải 을/를.
+  - type: common_mistake
+    wrong: 이사한 김에 새 냉장고가 샀어요.
+    right: 이사한 김에 새 냉장고를 샀어요.
+    target_lang: ko
+    note:
+      vi: 사다 là động từ có tân ngữ - 냉장고를. Ở vế sau của -는 김에 vẫn chia câu bình thường, đừng để cấu trúc mới làm bạn quên trợ từ.
+  - type: summary
+    points:
+      - vi: Thời điểm - -자마자 · -는 동안 · -는 사이에 · -는 김에 / -(으)ㄴ 김에.
+      - vi: Trạng thái - -아/어 있다 (≠ -고 있다) · -(으)ㄴ 채로 · 대신(에).
+      - vi: Bị động -이/히/리/기 - 막히다, 닫히다, 들리다, 안기다, 실리다; người làm + 에게 / sự vật + 에.
+      - vi: Sai khiến - -게 하다; 먹이다, 입히다, 앉히다, 재우다, 깨우다, 태우다.
+      - vi: 이삿짐 · 어린이집 · 이사하다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:tv-rev-listen-traffic-news
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:giri-makhida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 현재 경부고속도로 서울 방향은 사고 때문에 차가 많이 막히고 있습니다. 사고 처리가 끝날 때까지 국도를 이용해 주시기 바랍니다.
+      options:
+        - { id: c7y, text: "Hiện đường cao tốc Gyeongbu hướng Seoul đang tắc nặng vì tai nạn. Xin hãy đi quốc lộ cho đến khi xử lý xong tai nạn.", lang: vi }
+        - { id: h3a, text: "Hiện đường cao tốc Gyeongbu hướng Seoul thông thoáng. Xin hãy đi cao tốc.", lang: vi }
+        - { id: w6s, text: "Đường cao tốc Gyeongbu đã bị đóng hoàn toàn và không ai được đi quốc lộ.", lang: vi }
+        - { id: p1k, text: "Tai nạn trên quốc lộ đã được xử lý xong, xe cộ đi lại bình thường.", lang: vi }
+    answer:
+      correct_option_id: c7y
+    explanation:
+      vi: 막히고 있습니다 = đang bị tắc (bị động 막히다 + -고 있다 vì tình trạng đang diễn biến); 끝날 때까지 = cho đến khi kết thúc; 국도를 이용해 주시기 바랍니다 = mong (quý vị) đi quốc lộ.
+    display_answer: "Hiện đường cao tốc Gyeongbu hướng Seoul đang tắc nặng vì tai nạn. Xin hãy đi quốc lộ cho đến khi xử lý xong tai nạn."
+
+  - key: ko:exercise:tv-rev-mcq-reading-moving-day
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-isatjim
+    prompt:
+      stem: "다음 대화를 읽고 내용과 같은 것을 고르십시오.\n준호: 이삿짐 센터 직원들이 아홉 시에 온다고 했지?\n아내: 응. 그런데 아직 냉장고 안에 음식이 많이 남아 있어.\n준호: 그럼 내가 냉장고를 정리하는 동안 너는 서준이를 어린이집에 데려다줘. 가는 김에 우유도 좀 사 오고.\n아내: 알았어. 서준이 옷은 벌써 입혀 놓았어."
+      stem_lang: ko
+      options:
+        - { id: r4n, text: 아내는 서준이에게 이미 옷을 입혔어요., lang: ko }
+        - { id: e8q, text: 냉장고는 이미 비어 있어요., lang: ko }
+        - { id: z2v, text: 준호가 서준이를 어린이집에 데려다줘요., lang: ko }
+        - { id: b5d, text: 이삿짐 센터 직원들은 벌써 도착했어요., lang: ko }
+    answer:
+      correct_option_id: r4n
+    explanation:
+      vi: 옷은 벌써 입혀 놓았어 = đã mặc sẵn quần áo cho con (입히다 - sai khiến). Tủ lạnh vẫn còn nhiều đồ (남아 있어); người đưa con đi nhà trẻ là vợ; nhân viên chuyển nhà hẹn 9 giờ mới đến.
+    display_answer: 아내는 서준이에게 이미 옷을 입혔어요.
+
+  - key: ko:exercise:tv-rev-mcq-held-by-grandma
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-angida
+    prompt:
+      stem: "Chọn câu đúng với nghĩa \"Em bé đang nằm trong vòng tay bà.\""
+      stem_lang: vi
+      options:
+        - { id: s9w, text: 아기가 할머니에게 안겨 있어요., lang: ko }
+        - { id: k1e, text: 아기가 할머니를 안겨 있어요., lang: ko }
+        - { id: m4h, text: 할머니가 아기에게 안겨 있어요., lang: ko }
+        - { id: g6t, text: 아기가 할머니에게 안아 있어요., lang: ko }
+    answer:
+      correct_option_id: s9w
+    explanation:
+      vi: Bé được bà ôm → bị động 안기다 + -아/어 있다, người ôm đi với 에게. 할머니를 sai trợ từ; câu thứ ba đảo vai (bà nằm trong vòng tay bé); 안아 있어요 sai vì 안다 có tân ngữ.
+    display_answer: 아기가 할머니에게 안겨 있어요.
+
+  - key: ko:exercise:tv-rev-wb-cried-at-daycare
+    type: word_bank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-eorinijip
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Vừa đến nhà trẻ là con bắt đầu khóc.\""
+      tokens:
+        - { id: t4, text: 울기 시작했어요 }
+        - { id: t2, text: 어린이집에 }
+        - { id: t5, text: 도착했자마자 }
+        - { id: t1, text: 아이가 }
+        - { id: t3, text: 도착하자마자 }
+        - { id: t6, text: 울렸어요 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: -자마자 không nhận quá khứ → 도착하자마자. Con tự khóc (울다), không phải làm ai khóc (울리다). 아이가 và 어린이집에 đổi chỗ được.
+    display_answer: 아이가 어린이집에 도착하자마자 울기 시작했어요.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:tv-rev-fill-boxes
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-eun-chae
+    prompt:
+      template: "(Chuyển nhà đã ba ngày mà chúng tôi vẫn để nguyên đồ trong thùng mà sống.) 이사한 지 사흘이 지났는데 아직 짐을 상자에 {{b1}} 채로 살고 있어요."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [넣은, 넣어 둔, 넣어 놓은, 담은]
+    known_wrong:
+      - answer: 넣는
+        feedback_vi: 채 luôn đi với định ngữ quá khứ -(으)ㄴ - 넣은 채로.
+        error_tag: chae_form
+      - answer: 넣어
+        feedback_vi: Trước 채 cần định ngữ - 넣은 / 넣어 둔.
+        error_tag: chae_form
+      - answer: 넣었는
+        feedback_vi: Định ngữ quá khứ của động từ là -(으)ㄴ, không phải -었는.
+        error_tag: adnominal_past
+    explanation:
+      vi: V-(으)ㄴ 채(로) - để nguyên trạng thái. 넣다 → 넣은 채로 (넣어 둔 채로 nhấn mạnh để sẵn đó).
+    display_answer: 이사한 지 사흘이 지났는데 아직 짐을 상자에 넣은 채로 살고 있어요.
+
+  - key: ko:exercise:tv-rev-fill-quiet-house
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-causative
+    prompt:
+      template: "(Ru con ngủ xong thì nhà yên tĩnh, chỉ nghe thấy tiếng đồng hồ.) 아이를 {{b1}} 나니까 집이 조용해서 시계 소리만 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [재우고]
+        b2: [들려요]
+    known_wrong:
+      - answer: 자고
+        feedback_vi: 아이를 (tân ngữ) + "ru ngủ" → sai khiến 재우다 → 재우고. 자다 là tự ngủ.
+        error_tag: causative_missing
+      - answer: 들어요
+        feedback_vi: Âm thanh tự vọng tới → bị động 들리다 → 들려요. 들어요 là chủ động lắng nghe.
+        error_tag: active_vs_passive
+      - answer: 들러요
+        feedback_vi: 들러요 là của 들르다 (ghé qua). "Nghe thấy" là 들려요.
+        error_tag: deulleuda_deullida
+    explanation:
+      vi: 자다 → 재우다 (ru ngủ, sai khiến); -고 나니까 = làm xong rồi thì. 듣다 → 들리다 (được nghe thấy, bị động) → 소리가 들려요.
+    display_answer: 아이를 재우고 나니까 집이 조용해서 시계 소리만 들려요.
+
+  - key: ko:exercise:tv-rev-translate-old-clothes
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-neun-gime
+    prompt:
+      source_text: Nhân tiện chuyển nhà, tôi đã vứt hết quần áo cũ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 이사하는 김에 오래된 옷을 다 버렸어요.
+        - 이사하는 김에 헌 옷을 다 버렸어요.
+        - 이사하는 김에 낡은 옷을 다 버렸어요.
+        - 이사하는 김에 옛날 옷을 다 버렸어요.
+        - 이사한 김에 오래된 옷을 다 버렸어요.
+        - 이사한 김에 헌 옷을 다 버렸어요.
+        - 이사하는 김에 오래된 옷들을 다 버렸어요.
+        - 이사하는 김에 오래된 옷을 전부 버렸어요.
+        - 이사하는 김에 헌 옷을 전부 버렸어요.
+        - 이사하는 김에 오래된 옷은 다 버렸어요.
+        - 이사하는 김에 오래된 옷을 모두 버렸어요.
+        - 이삿짐을 싸는 김에 오래된 옷을 다 버렸어요.
+    known_wrong:
+      - answer: 이사하자마자 오래된 옷을 다 버렸어요.
+        feedback_vi: -자마자 là "vừa chuyển là vứt ngay"; câu gốc là "nhân tiện" - -는 김에.
+        error_tag: jamaja_vs_gime
+      - answer: 이사하는 동안 오래된 옷을 다 버렸어요.
+        feedback_vi: -는 동안 là "trong lúc"; ý "nhân tiện" cần -는 김에.
+        error_tag: dongan_vs_gime
+      - answer: 이사했는 김에 오래된 옷을 다 버렸어요.
+        feedback_vi: Định ngữ quá khứ là -(으)ㄴ (이사한 김에), không phải -었는.
+        error_tag: adnominal_past
+    explanation:
+      vi: '"Nhân tiện chuyển nhà" = 이사하는 김에 (hoặc 이사한 김에); "quần áo cũ" = 오래된 옷 / 헌 옷; "vứt hết" = 다 버렸어요.'
+    display_answer: 이사하는 김에 오래된 옷을 다 버렸어요.
+
+  - key: ko:exercise:tv-rev-translate-husband-babysat
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-gram-neun-dongan
+    prompt:
+      source_text: Trong lúc tôi sắp xếp đồ chuyển nhà, chồng tôi trông con.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 제가 이삿짐을 정리하는 동안 남편이 아이를 봤어요.
+        - 제가 이삿짐을 정리하는 동안 남편은 아이를 봤어요.
+        - 제가 이삿짐을 정리하는 동안 남편이 아이를 돌봤어요.
+        - 제가 이삿짐을 정리하는 동안 남편은 아이를 돌봤어요.
+        - 제가 이삿짐을 정리하는 동안 남편이 아이를 봐 줬어요.
+        - 제가 이삿짐을 정리하는 동안에 남편이 아이를 봤어요.
+        - 제가 이삿짐을 정리하는 동안 남편이 애를 봤어요.
+        - 제가 이삿짐을 푸는 동안 남편이 아이를 봤어요.
+        - 제가 이삿짐을 푸는 동안 남편은 아이를 돌봤어요.
+        - 내가 이삿짐을 정리하는 동안 남편이 아이를 봤어요.
+        - 제가 이삿짐을 정리하는 동안 남편이 아이를 보고 있었어요.
+        - 제가 이삿짐을 정리하는 동안 남편이 아이를 돌봐 줬어요.
+    known_wrong:
+      - answer: 제가 이삿짐을 정리한 동안 남편이 아이를 봤어요.
+        feedback_vi: -는 동안 luôn dùng -는, kể cả khi kể chuyện quá khứ - 정리하는 동안.
+        error_tag: dongan_form
+      - answer: 제가 이삿짐을 정리하자마자 남편이 아이를 봤어요.
+        feedback_vi: -자마자 là "vừa… là"; hai việc diễn ra song song → -는 동안.
+        error_tag: jamaja_vs_dongan
+      - answer: 제가 이사짐을 정리하는 동안 남편이 아이를 봤어요.
+        feedback_vi: Viết 이삿짐 (có ㅅ chen giữa), không viết 이사짐.
+        error_tag: spelling_saisiot
+    explanation:
+      vi: Hai người làm hai việc trong cùng khoảng thời gian → V-는 동안. "Trông con" = 아이를 보다 / 돌보다; đồ chuyển nhà = 이삿짐.
+    display_answer: 제가 이삿짐을 정리하는 동안 남편이 아이를 봤어요.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:tv-rev-mcq-late-traffic
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:tv-gram-passive
+    prompt:
+      stem: "Bạn gọi cho trưởng phòng báo sẽ đến muộn vì tai nạn làm tắc đường. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a2c, text: 부장님 죄송합니다. 사고 때문에 길이 너무 막혀서 조금 늦을 것 같습니다., lang: ko }
+        - { id: o7y, text: 부장님 죄송합니다. 사고 때문에 길이 너무 막아서 조금 늦을 것 같습니다., lang: ko }
+        - { id: i3f, text: 부장님 죄송합니다. 사고 때문에 길을 너무 막혀서 조금 늦을 것 같습니다., lang: ko }
+        - { id: u9m, text: 부장님 죄송합니다. 사고 때문에 길이 너무 막게 해서 조금 늦을 것 같습니다., lang: ko }
+    answer:
+      correct_option_id: a2c
+    explanation:
+      vi: '"Đường bị tắc" = 길이 막히다 (bị động, chủ ngữ 길이). 막아서 là chủ động "chặn"; 길을 막혀서 sai trợ từ; 막게 해서 là sai khiến "bắt chặn".'
+    display_answer: 부장님 죄송합니다. 사고 때문에 길이 너무 막혀서 조금 늦을 것 같습니다.
+
+  - key: ko:exercise:tv-rev-mcq-reading-accident-news
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:tv-gram-passive
+    prompt:
+      stem: "다음 뉴스를 읽고 내용과 같은 것을 고르십시오.\n오늘 오전 8시쯤 강남역 근처에서 버스와 승용차가 부딪히는 사고가 났습니다. 이 사고로 승용차 운전자가 다쳐서 구급차에 실려 병원으로 갔습니다. 버스 승객들은 크게 다치지 않았습니다. 현재 사고 처리 때문에 강남대로 2차로가 닫혀 있어서 한동안 차가 많이 막히겠습니다."
+      stem_lang: ko
+      options:
+        - { id: x6b, text: 승용차 운전자가 다쳐서 병원에 갔어요., lang: ko }
+        - { id: f2r, text: 버스 승객들이 크게 다쳤어요., lang: ko }
+        - { id: l8u, text: 사고는 저녁 8시쯤 났어요., lang: ko }
+        - { id: d4e, text: 지금 강남대로는 차가 잘 다녀요., lang: ko }
+    answer:
+      correct_option_id: x6b
+    explanation:
+      vi: 승용차 운전자가 다쳐서 구급차에 실려 병원으로 갔습니다 = tài xế ô tô con bị thương, được chở lên xe cấp cứu đến bệnh viện (실리다 - bị động của 싣다). Hành khách xe buýt không bị thương nặng; tai nạn lúc 8 giờ sáng (오전); làn 2 đang bị đóng nên đường sẽ còn tắc.
+    display_answer: 승용차 운전자가 다쳐서 병원에 갔어요.
+
+  - key: ko:exercise:tv-rev-translate-grandma-feeds-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:tv-gram-neun-sai
+    prompt:
+      source_text: 할머니께서 아이에게 밥을 먹이시는 사이에 저는 잠깐 낮잠을 잤어요.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong lúc bà cho con ăn, tôi tranh thủ ngủ trưa một chút.
+        - Trong lúc bà cho cháu ăn cơm, tôi ngủ trưa một lát.
+        - Trong lúc bà cho bé ăn, tôi chợp mắt một chút.
+        - Trong khi bà cho con ăn cơm, tôi ngủ trưa một chút.
+        - Trong lúc bà cho đứa bé ăn, tôi đã ngủ một giấc ngắn.
+        - Trong lúc bà đút cơm cho con, tôi tranh thủ chợp mắt một lát.
+        - Trong lúc bà cho con ăn, tôi đã ngủ trưa một lát.
+        - Lúc bà cho con ăn, tôi tranh thủ ngủ trưa một chút.
+        - Trong lúc bà cho cháu ăn, tôi tranh thủ chợp mắt một chút.
+        - Nhân lúc bà cho con ăn, tôi ngủ trưa một chút.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trong lúc bà ăn cơm, tôi ngủ trưa một chút.
+        feedback_vi: 먹이시다 là "cho (con) ăn" - sai khiến; người ăn là đứa bé, không phải bà.
+        error_tag: causative_meaning
+      - answer: Bà vừa cho con ăn xong là tôi đi ngủ trưa.
+        feedback_vi: -는 사이에 là "trong lúc", không phải "vừa xong là" (-자마자).
+        error_tag: sai_vs_jamaja
+    explanation:
+      vi: 먹이다 = cho ăn (kính ngữ 먹이시다); -는 사이에 = trong lúc (ngắn); 잠깐 낮잠을 자다 = ngủ trưa một lát.
+    display_answer: Trong lúc bà cho con ăn, tôi tranh thủ ngủ trưa một chút.
+
+  - key: ko:exercise:tv-rev-translate-front-seat
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:tv-anchida
+    prompt:
+      source_text: Không được cho trẻ em ngồi ở ghế trước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 아이를 앞자리에 앉히면 안 돼요.
+        - 아이를 앞좌석에 앉히면 안 돼요.
+        - 아이들을 앞자리에 앉히면 안 돼요.
+        - 아이들을 앞좌석에 앉히면 안 돼요.
+        - 아이를 조수석에 앉히면 안 돼요.
+        - 어린이를 앞좌석에 앉히면 안 돼요.
+        - 어린이를 앞자리에 앉히면 안 돼요.
+        - 아이는 앞자리에 앉히면 안 돼요.
+        - 아이를 앞자리에 앉히면 안 됩니다.
+        - 어린이를 앞좌석에 앉히면 안 됩니다.
+        - 아이를 앞자리에 앉게 하면 안 돼요.
+        - 아이를 앞좌석에 앉게 하면 안 돼요.
+    known_wrong:
+      - answer: 아이를 앞자리에 앉으면 안 돼요.
+        feedback_vi: 앉다 không có tân ngữ; "cho trẻ ngồi" là sai khiến 앉히다 → 앉히면 안 돼요.
+        error_tag: causative_missing
+      - answer: 아이를 앞자리에 앉혀도 돼요.
+        feedback_vi: -아/어도 돼요 là "được phép"; câu gốc là cấm - -(으)면 안 돼요.
+        error_tag: permission_vs_prohibition
+      - answer: 아이를 앞자리에 앉혀지면 안 돼요.
+        feedback_vi: Không thêm -아/어지다; chỉ cần 앉히면 안 돼요.
+        error_tag: double_suffix
+    explanation:
+      vi: '"Cho/đặt trẻ ngồi" = 앉히다 (hoặc 앉게 하다); "không được" = -(으)면 안 돼요. Ghế trước = 앞자리 / 앞좌석 / 조수석.'
+    display_answer: 아이를 앞자리에 앉히면 안 돼요.
