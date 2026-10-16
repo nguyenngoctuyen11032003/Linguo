@@ -7,6 +7,9 @@ import { useAuth } from '@/features/auth/AuthProvider';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { Avatar } from '@/components/ui/Avatar';
+import { avatarUrl } from '@/features/profile/avatar';
+import { getSupabase } from '@/lib/supabase';
 import { Wordmark } from './Wordmark';
 
 export function AppBar() {
@@ -42,9 +45,9 @@ export function AppBar() {
           <Link
             to="/app/cai-dat"
             aria-label="Tài khoản và cài đặt"
-            className="inline-flex size-11 items-center justify-center rounded-full bg-[conic-gradient(from_200deg,var(--primary),var(--accent),var(--primary))] p-[2px]"
+            className="inline-flex size-11 items-center justify-center rounded-full"
           >
-            <span className="inline-flex size-full items-center justify-center rounded-full bg-surface-solid text-[15px] font-extrabold">{initial}</span>
+            <Avatar src={avatarUrl(getSupabase(), profile?.avatarPath)} initial={initial} className="size-11" initialClassName="text-[15px]" />
           </Link>
         </div>
       </div>

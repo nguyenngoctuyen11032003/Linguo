@@ -823,14 +823,14 @@ isOneToOne: false
                   ]
                 },"profiles": {
                   Row: {
-                    "created_at": string,"current_learning_path_id": string | null,"display_name": string | null,"id": string,"locale": string,"timezone": string,"timezone_changed_at": string | null,"updated_at": string
+                    "avatar_path": string | null,"created_at": string,"current_learning_path_id": string | null,"display_name": string | null,"id": string,"locale": string,"timezone": string,"timezone_changed_at": string | null,"updated_at": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "created_at"?: string,"current_learning_path_id"?: string | null,"display_name"?: string | null,"id": string,"locale"?: string,"timezone"?: string,"timezone_changed_at"?: string | null,"updated_at"?: string
+                    "avatar_path"?: string | null,"created_at"?: string,"current_learning_path_id"?: string | null,"display_name"?: string | null,"id": string,"locale"?: string,"timezone"?: string,"timezone_changed_at"?: string | null,"updated_at"?: string
                   }
                   Update: {
-                    "created_at"?: string,"current_learning_path_id"?: string | null,"display_name"?: string | null,"id"?: string,"locale"?: string,"timezone"?: string,"timezone_changed_at"?: string | null,"updated_at"?: string
+                    "avatar_path"?: string | null,"created_at"?: string,"current_learning_path_id"?: string | null,"display_name"?: string | null,"id"?: string,"locale"?: string,"timezone"?: string,"timezone_changed_at"?: string | null,"updated_at"?: string
                   }
                   Relationships: [
                     {

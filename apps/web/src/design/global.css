@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './tokens.css';
+@import './styles.css';
 
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
@@ -142,10 +143,12 @@
 }
 /* Raised content surface: soft gradient, hairline border, top sheen. */
 @utility card {
-  border-radius: 1.75rem;
+  border-radius: var(--radius-card, 1.75rem);
   border: 1px solid var(--border);
   background: var(--card-bg);
   box-shadow: var(--card-sheen), var(--shadow-card);
+  -webkit-backdrop-filter: blur(var(--card-blur, 0px));
+  backdrop-filter: blur(var(--card-blur, 0px));
 }
 /* Display heading (F1 / CARGOX): condensed, uppercase, tight. */
 @utility page-title {

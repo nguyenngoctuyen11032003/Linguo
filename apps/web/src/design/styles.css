@@ -1,0 +1,120 @@
+/*
+ * Optional visual styles, layered over tokens.css. Selected with <html data-style="glass|warm"> and combined with
+ * data-theme (light|dark), so each style has a light and a dark palette. "default" has no rules here.
+ * Text/muted/primary pairs are kept at WCAG AA on their surfaces.
+ */
+
+/* ---------- Kính lỏng: slate-blue frosted glass ---------- */
+[data-style='glass'] {
+  --radius-card: 2rem;
+  --card-blur: 14px;
+}
+[data-style='glass'][data-theme='dark'] {
+  --bg: #1b2631;
+  --surface: rgb(40 56 72 / 0.55);
+  --surface-solid: #26364a;
+  --card-bg: rgb(255 255 255 / 0.08);
+  --card-sheen: inset 0 1px 1px rgb(255 255 255 / 0.18);
+  --border: rgb(255 255 255 / 0.16);
+  --input-border: rgb(255 255 255 / 0.5);
+  --text: #f4f8fb;
+  --muted: #b3c2d0;
+  --primary: #8fd0f0;
+  --primary-strong: #62b8e2;
+  --primary-depth: #3b83a8;
+  --on-primary: #08202f;
+  --accent: #e6cf5a;
+  --accent-depth: #a8943a;
+  --accent-text: #efd978;
+  --on-accent: #231d03;
+  --shadow-card: 0 18px 40px -22px rgb(0 0 0 / 0.55);
+  --glass-blur: 22px;
+  --ambient: radial-gradient(ellipse 70% 45% at 8% -5%, rgb(138 154 170 / 0.55), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 95% 30%, rgb(110 150 170 / 0.3), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgb(220 200 80 / 0.22), transparent 70%);
+  --hero-bg: linear-gradient(155deg, #2b3d4f 0%, #3d566b 55%, #6d6a3a 130%);
+  --focus-ring: #a9dcf5;
+}
+[data-style='glass'][data-theme='light'] {
+  --bg: #dbe3ea;
+  --surface: rgb(255 255 255 / 0.6);
+  --surface-solid: #f3f7fa;
+  --card-bg: rgb(255 255 255 / 0.55);
+  --card-sheen: inset 0 1px 1px rgb(255 255 255 / 0.9);
+  --border: rgb(255 255 255 / 0.85);
+  --input-border: #6b7c8c;
+  --text: #121d28;
+  --muted: #4b5b69;
+  --primary: #28607f;
+  --primary-strong: #1d4c66;
+  --primary-depth: #163a4e;
+  --on-primary: #ffffff;
+  --accent: #d6b92e;
+  --accent-depth: #9c8620;
+  --accent-text: #7d6a0a;
+  --on-accent: #231d03;
+  --shadow-card: 0 14px 34px -20px rgb(40 70 100 / 0.4);
+  --glass-blur: 22px;
+  --ambient: radial-gradient(ellipse 70% 45% at 8% -5%, rgb(138 154 170 / 0.6), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 95% 35%, rgb(150 190 215 / 0.45), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgb(230 210 100 / 0.3), transparent 70%);
+  --hero-bg: linear-gradient(155deg, #2b4a63 0%, #3f6683 55%, #8d8441 135%);
+  --focus-ring: #28607f;
+}
+
+/* ---------- Cà phê ấm: espresso browns, latte accents ---------- */
+[data-style='warm'] {
+  --radius-card: 1.5rem;
+  --card-blur: 6px;
+}
+[data-style='warm'][data-theme='dark'] {
+  --bg: #180a06;
+  --surface: rgb(36 20 14 / 0.8);
+  --surface-solid: #26150e;
+  --card-bg: rgb(255 255 255 / 0.06);
+  --card-sheen: inset 0 1px 0 rgb(255 255 255 / 0.07);
+  --border: rgb(255 255 255 / 0.09);
+  --input-border: rgb(235 220 205 / 0.5);
+  --text: #ede4d8;
+  --muted: #bda996;
+  --primary: #e2a56c;
+  --primary-strong: #cf8c4e;
+  --primary-depth: #8f5a2c;
+  --on-primary: #1d0e05;
+  --accent: #d9773a;
+  --accent-depth: #94501f;
+  --accent-text: #f0a06a;
+  --on-accent: #1d0e05;
+  --gold: #e3b062;
+  --shadow-card: 0 18px 40px -22px rgb(0 0 0 / 0.8);
+  --ambient: radial-gradient(ellipse 65% 55% at 15% 52%, rgb(168 78 10 / 0.22), transparent 70%),
+    radial-gradient(ellipse 52% 48% at 83% 26%, rgb(122 52 8 / 0.17), transparent 70%),
+    radial-gradient(ellipse 44% 52% at 56% 92%, rgb(98 36 5 / 0.14), transparent 70%);
+  --hero-bg: linear-gradient(155deg, #2a140b 0%, #4a2412 50%, #7a4217 130%);
+  --focus-ring: #f0b98a;
+}
+[data-style='warm'][data-theme='light'] {
+  --bg: #f6ede2;
+  --surface: rgb(255 250 243 / 0.88);
+  --surface-solid: #fffaf3;
+  --card-bg: #fffaf3;
+  --card-sheen: inset 0 1px 0 rgb(255 255 255 / 0.9);
+  --border: #e6d6c3;
+  --input-border: #8a7360;
+  --text: #2a1710;
+  --muted: #6b5646;
+  --primary: #92521f;
+  --primary-strong: #763f14;
+  --primary-depth: #5c3010;
+  --on-primary: #ffffff;
+  --accent: #d9773a;
+  --accent-depth: #a85a26;
+  --accent-text: #a44a14;
+  --on-accent: #1d0e05;
+  --gold: #8f5f12;
+  --shadow-card: 0 1px 0 rgb(42 23 16 / 0.05), 0 10px 30px -14px rgb(90 50 20 / 0.25);
+  --ambient: radial-gradient(ellipse 65% 50% at 10% 0%, rgb(217 119 58 / 0.14), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 100% 100%, rgb(146 82 31 / 0.1), transparent 70%);
+  --hero-bg: linear-gradient(155deg, #3a1d0f 0%, #5c3118 50%, #a35f26 135%);
+  --focus-ring: #92521f;
+}

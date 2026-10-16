@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
-import { LogOut, Monitor, Moon, Sun } from 'lucide-react';
+import { Camera, LogOut, Monitor, Moon, Sun, Trash2 } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router';
 import { DEFAULT_TIMEZONE, fieldErrors, profileUpdateSchema, type ThemePreference } from '@linguo/shared';
+import { Avatar } from '@/components/ui/Avatar';
 import { Button } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { FormField } from '@/components/ui/FormField';
@@ -18,10 +19,12 @@ import { markLocalPreferenceEdit } from '@/features/preferences/local-edits';
 import { updatePreferences } from '@/features/preferences/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { profileSaveErrorMessage } from '@/features/profile/errors';
+import { avatarErrorMessage, avatarUrl, prepareAvatar, removeAvatar, uploadAvatar } from '@/features/profile/avatar';
 import { updateProfile } from '@/features/profile/service';
 import { InstallAppSection } from '@/features/pwa/InstallAppSection';
 import { cn } from '@/lib/cn';
-import { requireSupabase } from '@/lib/supabase';
+import type { AppStyle } from '@/lib/app-style';
+import { getSupabase, requireSupabase } from '@/lib/supabase';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { useTheme } from '@/providers/ThemeProvider';
 import { AccountDataSection } from './settings/AccountDataSection';
@@ -40,6 +43,19 @@ const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; short?: stri
   { value: 'dark', label: 'Tối', icon: Moon },
   { value: 'system', label: 'Theo hệ thống', short: 'Hệ thống', icon: Monitor },
 ];
+
+const STYLE_OPTIONS: Array<{ value: AppStyle; label: string; hint: string }> = [
+  { value: 'default', label: 'Mặc định', hint: 'Giao diện hiện tại của Linguo' },
+  { value: 'glass', label: 'Kính lỏng', hint: 'Thẻ kính mờ, nền xanh xám và điểm nhấn vàng' },
+  { value: 'warm', label: 'Cà phê ấm', hint: 'Tông nâu espresso ấm, thẻ trong mờ' },
+];
+
+/** Mini preview of each style (drawn in the current light/dark theme). */
+const STYLE_SWATCH: Record<AppStyle, { light: string; dark: string; dot: string }> = {
+  default: { light: 'bg-[#f3f1ec]', dark: 'bg-[#070b12]', dot: 'bg-[#f37d25]' },
+  glass: { light: 'bg-[linear-gradient(160deg,#dbe3ea,#b9c9d6)]', dark: 'bg-[linear-gradient(160deg,#1b2631,#3d566b)]', dot: 'bg-[#e6cf5a]' },
+  warm: { light: 'bg-[linear-gradient(160deg,#f6ede2,#e9d3b8)]', dark: 'bg-[linear-gradient(160deg,#180a06,#4a2412)]', dot: 'bg-[#e2a56c]' },
+};
 
 /** Mini preview of each theme in the picker. */
 const THEME_SWATCH: Record<ThemePreference, string> = {
@@ -88,6 +104,8 @@ export function SettingsPage() {
    */
   const [confirmSignOut, setConfirmSignOut] = useState(false);
   const [syncing, setSyncing] = useState(false);
+  const [avatarBusy, setAvatarBusy] = useState(false);
+  const avatarInput = useRef<HTMLInputElement>(null);
   const prefSeq = useRef(0);
   const prefQueue = useRef<Promise<void>>(Promise.resolve());
   const systemForcesMotion = motionPrefs.reduceMotion && !motionPrefs.userReduceMotion;
@@ -119,7 +137,7 @@ export function SettingsPage() {
     setSaving(true);
     try {
       await updateProfile(requireSupabase(), userId, parsed.data);
-      setProfile({ id: userId, ...parsed.data });
+      setProfile({ ...profile, id: userId, ...parsed.data });
       setDisplayName(parsed.data.displayName);
       toast.show({ tone: 'success', message: 'Đã lưu hồ sơ.' });
     } catch (error) {
@@ -145,6 +163,36 @@ export function SettingsPage() {
         toast.show({ tone: 'error', message: 'Chưa đồng bộ được tuỳ chọn lên máy chủ. Thay đổi vẫn áp dụng trên thiết bị này.' });
       }
     });
+  }
+
+  async function onAvatarFile(file: File | undefined) {
+    if (!file || avatarBusy || !user || !profile) return;
+    setAvatarBusy(true);
+    try {
+      const blob = await prepareAvatar(file);
+      const path = await uploadAvatar(requireSupabase(), userId, blob, profile.avatarPath ?? null);
+      setProfile({ ...profile, avatarPath: path });
+      toast.show({ tone: 'success', message: 'Đã cập nhật ảnh đại diện.' });
+    } catch (error) {
+      toast.show({ tone: 'error', message: avatarErrorMessage(error) });
+    } finally {
+      setAvatarBusy(false);
+      if (avatarInput.current) avatarInput.current.value = '';
+    }
+  }
+
+  async function onAvatarRemove() {
+    if (avatarBusy || !user || !profile?.avatarPath) return;
+    setAvatarBusy(true);
+    try {
+      await removeAvatar(requireSupabase(), userId, profile.avatarPath);
+      setProfile({ ...profile, avatarPath: null });
+      toast.show({ tone: 'success', message: 'Đã xoá ảnh đại diện.' });
+    } catch (error) {
+      toast.show({ tone: 'error', message: avatarErrorMessage(error) });
+    } finally {
+      setAvatarBusy(false);
+    }
   }
 
   function chooseTheme(value: ThemePreference) {
@@ -231,20 +279,40 @@ export function SettingsPage() {
           {status === 'ready' && (
             <form ref={profileFormRef} noValidate onSubmit={saveProfile} className="space-y-4">
               <div className="flex items-center gap-3 rounded-[1.25rem] bg-text/[0.04] p-3">
-                <span
-                  aria-hidden="true"
-                  className="inline-flex size-12 shrink-0 rounded-full bg-[conic-gradient(from_200deg,var(--primary),var(--accent),var(--primary))] p-[2px]"
-                >
-                  <span className="stat-num inline-flex size-full items-center justify-center rounded-full bg-surface-solid text-[24px]">
-                    {(displayName || user?.email || '?').trim().charAt(0).toUpperCase()}
-                  </span>
-                </span>
-                <p className="min-w-0 flex-1">
+                <Avatar
+                  src={avatarUrl(getSupabase(), profile?.avatarPath)}
+                  initial={(displayName || user?.email || '?').trim().charAt(0).toUpperCase()}
+                  className="size-16"
+                  initialClassName="stat-num text-[30px]"
+                />
+$1<p className="min-w-0 flex-1">
                   <span className="eyebrow block">
                     Email<span className="sr-only">:</span>
                   </span>
                   <span className="mt-0.5 block truncate text-[15px] font-medium">{user?.email}</span>
                 </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <input
+                  ref={avatarInput}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  className="sr-only"
+                  tabIndex={-1}
+                  aria-label="Chọn ảnh đại diện"
+                  onChange={(e) => void onAvatarFile(e.target.files?.[0])}
+                />
+                <Button type="button" variant="glass" loading={avatarBusy} onClick={() => avatarInput.current?.click()}>
+                  <Camera aria-hidden className="size-5" />
+                  {profile?.avatarPath ? 'Đổi ảnh đại diện' : 'Tải ảnh đại diện'}
+                </Button>
+                {profile?.avatarPath && (
+                  <Button type="button" variant="ghost" disabled={avatarBusy} onClick={() => void onAvatarRemove()}>
+                    <Trash2 aria-hidden className="size-5" />
+                    Xoá ảnh
+                  </Button>
+                )}
+                <p className="w-full text-sm text-muted">JPG, PNG hoặc WebP, tối đa 10 MB. Ảnh được cắt vuông tự động.</p>
               </div>
               <FormField label="Tên hiển thị" error={errors.displayName}>
                 {({ invalid, ...a11y }) => (
@@ -328,6 +396,51 @@ export function SettingsPage() {
                 </div>
               ))}
             </div>
+          </fieldset>
+          <fieldset>
+            <legend className="mb-2 text-sm font-medium text-muted">Phong cách</legend>
+            <div className="grid grid-cols-3 gap-2">
+              {STYLE_OPTIONS.map(({ value, label, hint }) => (
+                <div key={value} className="relative">
+                  <input
+                    type="radio"
+                    name="app-style"
+                    id={`style-${value}`}
+                    value={value}
+                    checked={theme.style === value}
+                    onChange={() => theme.setStyle(value)}
+                    aria-describedby={`style-${value}-hint`}
+                    className="peer sr-only"
+                  />
+                  <label
+                    htmlFor={`style-${value}`}
+                    className={cn(
+                      'flex min-h-16 cursor-pointer flex-col items-center justify-center gap-2 rounded-[1.25rem] border p-1.5 pb-2.5 text-center text-[13px] font-semibold leading-tight whitespace-nowrap min-[380px]:p-2 transition-[background-color,border-color,scale] duration-150 active:scale-[0.97] min-[380px]:text-sm',
+                      'border-border hover:bg-text/5 peer-checked:border-primary peer-checked:bg-primary/12 peer-checked:text-primary',
+                      'peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-(--focus-ring)',
+                    )}
+                  >
+                    <span
+                      aria-hidden="true"
+                      className={cn(
+                        'relative block h-12 w-full overflow-hidden rounded-xl ring-1 ring-border ring-inset',
+                        theme.resolved === 'dark' ? STYLE_SWATCH[value].dark : STYLE_SWATCH[value].light,
+                      )}
+                    >
+                      <span className={cn('absolute inset-x-2 top-2 h-2 rounded-full opacity-25', theme.resolved === 'dark' ? 'bg-white' : 'bg-black')} />
+                      <span className={cn('absolute bottom-2 left-2 h-3 w-8 rounded-full', STYLE_SWATCH[value].dot)} />
+                    </span>
+                    <span>{label}</span>
+                  </label>
+                  <span id={`style-${value}-hint`} className="sr-only">
+                    {hint}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-2 text-sm text-muted" aria-live="polite">
+              {STYLE_OPTIONS.find((o) => o.value === theme.style)?.hint}. Áp dụng cho cả chế độ sáng và tối, lưu trên thiết bị này.
+            </p>
           </fieldset>
           <div className="flex items-center justify-between gap-4">
             <div>

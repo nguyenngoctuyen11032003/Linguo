@@ -5,12 +5,14 @@ export interface Profile {
   id: string;
   displayName: string;
   timezone: string;
+  /** Object path in the avatars bucket; null/absent = initial-letter avatar. */
+  avatarPath?: string | null;
 }
 
 export async function fetchProfile(client: AppSupabaseClient, userId: string): Promise<Profile> {
-  const { data, error } = await client.from('profiles').select('id, display_name, timezone').eq('id', userId).single();
+  const { data, error } = await client.from('profiles').select('id, display_name, timezone, avatar_path').eq('id', userId).single();
   if (error) throw error;
-  return { id: data.id, displayName: data.display_name ?? '', timezone: data.timezone };
+  return { id: data.id, displayName: data.display_name ?? '', timezone: data.timezone, avatarPath: data.avatar_path };
 }
 
 export async function updateProfile(client: AppSupabaseClient, userId: string, input: ProfileUpdateInput): Promise<void> {
