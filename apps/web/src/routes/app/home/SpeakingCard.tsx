@@ -11,6 +11,7 @@ export function SpeakingCard() {
       description="Nói theo mẫu, đóng vai. Không lưu giọng nói."
       to="/app/luyen-noi"
       label="Vào luyện nói"
+      shortLabel="Bắt đầu"
     />
   );
 }

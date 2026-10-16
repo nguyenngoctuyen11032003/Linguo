@@ -30,7 +30,7 @@ function PhonePreview() {
           <p className="page-title mt-1 text-[44px]">Chào bạn</p>
         </div>
         <div className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white ring-1 ring-white/10 ring-inset">
-          <div className="absolute -bottom-20 -left-12 -z-10 size-52 rounded-full bg-accent/30 blur-3xl" />
+          <div className="absolute -bottom-20 -left-12 -z-10 size-52 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white/70">Bắt đầu</p>
           <p className="mt-3 font-display text-[40px] font-extrabold uppercase leading-[0.95]">
             Lộ trình
@@ -137,7 +137,7 @@ export function ShowcaseSection() {
           </ul>
         </div>
         <div className="relative isolate flex justify-center" aria-hidden="true">
-          <div className="absolute left-1/2 top-1/2 -z-10 size-[min(420px,90vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(76_162_209/0.35),transparent_65%)] blur-2xl" />
+          <div className="absolute left-1/2 top-1/2 -z-10 size-[min(420px,90vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(76_162_209/0.35),transparent_65%)]" />
           <PhoneFrame />
         </div>
       </div>

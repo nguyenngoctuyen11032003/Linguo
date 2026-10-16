@@ -8,8 +8,8 @@ export function FinalCtaSection() {
     <>
       <section aria-labelledby="final-cta" className="overflow-x-clip bg-bg px-3 pb-6">
         <div className="relative isolate mx-auto max-w-5xl overflow-hidden rounded-[2.25rem] bg-[image:var(--hero-bg)] px-6 py-[clamp(48px,9vh,88px)] ring-1 ring-white/10 ring-inset sm:px-12">
-          <div aria-hidden="true" className="absolute -bottom-32 -right-16 -z-10 size-96 rounded-full bg-accent/35 blur-3xl" />
-          <div aria-hidden="true" className="absolute -left-24 -top-24 -z-10 size-72 rounded-full bg-primary/30 blur-3xl" />
+          <div aria-hidden="true" className="absolute -bottom-32 -right-16 -z-10 size-96 rounded-full bg-radial from-accent/35 to-transparent to-70%" />
+          <div aria-hidden="true" className="absolute -left-24 -top-24 -z-10 size-72 rounded-full bg-radial from-primary/30 to-transparent to-70%" />
           <div className="max-w-3xl space-y-6">
             <h2 id="final-cta" className="font-display text-[clamp(48px,14vw,96px)] font-extrabold uppercase leading-[0.95] text-white">
               <span className="block">Bắt đầu</span> <span className="block">lộ trình</span>{' '}

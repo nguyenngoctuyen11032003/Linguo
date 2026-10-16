@@ -43,7 +43,7 @@ export function MoreSheet({
         <div className="fixed inset-0 z-50 lg:hidden">
           <motion.div
             aria-hidden="true"
-            className="absolute inset-0 bg-black/55 backdrop-blur-[2px]"
+            className="absolute inset-0 bg-black/55"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

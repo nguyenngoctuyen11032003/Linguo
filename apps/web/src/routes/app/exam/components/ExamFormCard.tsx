@@ -35,7 +35,7 @@ export function ExamFormCard({ form, warningVi, onStart, busy }: ExamFormCardPro
 
   return (
     <SolidCard role="article" aria-labelledby={titleId} className="relative isolate min-w-0 space-y-4 overflow-hidden">
-      <div aria-hidden="true" className="absolute -right-16 -top-16 -z-10 size-44 rounded-full bg-primary/10 blur-3xl" />
+      <div aria-hidden="true" className="absolute -right-16 -top-16 -z-10 size-44 rounded-full bg-radial from-primary/10 to-transparent to-70%" />
       <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-text px-3 py-1 font-display text-[15px] font-extrabold uppercase leading-none tracking-wide text-bg">
           {FAMILY_LABELS[form.family]}

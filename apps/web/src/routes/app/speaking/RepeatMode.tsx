@@ -37,7 +37,7 @@ export function RepeatMode({ lang, sentences, tts, transcribe, onSaveReflection 
         </p>
       </div>
       <div className="relative isolate space-y-2 overflow-hidden rounded-[1.75rem] bg-[image:var(--hero-bg)] p-5 text-white ring-1 ring-white/10 ring-inset">
-        <div aria-hidden="true" className="absolute -bottom-20 -right-12 -z-10 size-48 rounded-full bg-accent/25 blur-3xl" />
+        <div aria-hidden="true" className="absolute -bottom-20 -right-12 -z-10 size-48 rounded-full bg-radial from-accent/25 to-transparent to-70%" />
         <p lang={lang} className="text-[26px] font-bold leading-snug tracking-[-0.02em] [overflow-wrap:anywhere]">
           {sentence.text}
         </p>

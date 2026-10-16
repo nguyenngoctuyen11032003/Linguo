@@ -101,7 +101,7 @@ export function TodayCard({ pathId }: { pathId: string }) {
       aria-labelledby="today-title"
       className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
     >
-      <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-accent/30 blur-3xl" />
+      <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
       <RouteMotif />
 
       <div className="relative flex items-center justify-between gap-3">

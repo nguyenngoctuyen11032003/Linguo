@@ -80,7 +80,7 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
           aria-labelledby="lesson-stats"
           className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
         >
-          <span aria-hidden="true" className="absolute -bottom-24 -right-16 -z-10 size-64 rounded-full bg-accent/30 blur-3xl" />
+          <span aria-hidden="true" className="absolute -bottom-24 -right-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
           <div className="flex items-center justify-between gap-3">
             <h3 id="lesson-stats" className="text-xs font-semibold uppercase tracking-[0.12em] text-white/70">
               Kết quả của bạn

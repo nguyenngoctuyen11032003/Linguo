@@ -270,7 +270,7 @@ export function LearnPage() {
             aria-label={`${next.run_status === 'in_progress' ? 'Học tiếp' : 'Bắt đầu'}: ${next.title.vi}`}
             className="group relative isolate flex items-center gap-4 overflow-hidden rounded-[1.75rem] bg-[image:var(--hero-bg)] p-4 pl-5 text-white shadow-[0_20px_50px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/60"
           >
-            <span aria-hidden="true" className="absolute -right-10 -top-16 -z-10 size-48 rounded-full bg-accent/35 blur-3xl" />
+            <span aria-hidden="true" className="absolute -right-10 -top-16 -z-10 size-48 rounded-full bg-radial from-accent/35 to-transparent to-70%" />
             <span className="min-w-0 flex-1 break-words">
               <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-white/65">
                 {next.run_status === 'in_progress' ? 'Tiếp tục' : 'Bắt đầu'}

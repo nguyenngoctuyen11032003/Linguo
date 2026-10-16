@@ -41,7 +41,7 @@ export function RecapView({
   return (
     <div className="space-y-4">
       <header className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset">
-        <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-accent/30 blur-3xl" />
+        <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
         <h2 ref={headingRef} tabIndex={-1} className="font-display text-[34px] font-extrabold uppercase leading-[0.95] focus:outline-none">
           Tóm tắt buổi đóng vai
         </h2>

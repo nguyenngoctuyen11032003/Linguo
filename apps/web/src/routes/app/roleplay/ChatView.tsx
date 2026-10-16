@@ -318,7 +318,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
       {over ? (
         <div ref={tailRef}>
           <SolidCard className="relative isolate space-y-3 overflow-hidden p-5">
-            <div aria-hidden="true" className="absolute -right-12 -top-12 -z-10 size-40 rounded-full bg-accent/20 blur-3xl" />
+            <div aria-hidden="true" className="absolute -right-12 -top-12 -z-10 size-40 rounded-full bg-radial from-accent/20 to-transparent to-70%" />
             <p className="font-display text-[28px] font-extrabold uppercase leading-none">Buổi trò chuyện đã xong, bạn làm tốt lắm!</p>
             <p className="text-[15px] text-muted">
               {session.goals.length >= scenario.goals.length

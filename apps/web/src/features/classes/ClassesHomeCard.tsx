@@ -8,9 +8,10 @@ export function ClassesHomeCard() {
       icon={Users}
       titleId="classes-card-title"
       title="Lớp học"
-      description="Tham gia lớp bằng mã giáo viên gửi và xem bài được giao."
+      description="Vào lớp bằng mã giáo viên, xem bài được giao."
       to="/app/lop-hoc"
       label="Mở lớp học"
+      shortLabel="Mở lớp"
     />
   );
 }

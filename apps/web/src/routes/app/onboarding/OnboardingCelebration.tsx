@@ -58,7 +58,7 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
       {/* The estimate counts up (spec onboarding step 6); CountUp shows the final numbers at once under reduced motion. */}
       <p
         data-testid="celebration-estimate"
-        className="card relative isolate flex w-full flex-col items-center overflow-hidden px-5 pb-5 pt-4 text-[15px] font-semibold text-muted before:absolute before:-top-16 before:left-1/2 before:-z-10 before:size-48 before:-translate-x-1/2 before:rounded-full before:bg-accent/20 before:blur-3xl"
+        className="card relative isolate flex w-full flex-col items-center overflow-hidden px-5 pb-5 pt-4 text-[15px] font-semibold text-muted before:absolute before:-top-16 before:left-1/2 before:-z-10 before:size-48 before:-translate-x-1/2 before:rounded-full before:bg-radial before:from-accent/20 before:to-transparent before:to-70%"
       >
         <span className="eyebrow">Ước lượng khoảng </span>
         <span className="stat-num mt-3 pr-1 text-[clamp(64px,22vw,96px)] text-text">

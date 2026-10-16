@@ -18,8 +18,8 @@ export function AuthCard({ title, subtitle, children, footer }: AuthCardProps) {
         {subtitle && <p className="max-w-sm pt-1.5 text-pretty text-[15px] leading-relaxed text-muted">{subtitle}</p>}
       </div>
       <div className="relative isolate">
-        <div aria-hidden="true" className="absolute -right-10 -top-10 -z-10 size-48 rounded-full bg-primary/25 blur-3xl" />
-        <div aria-hidden="true" className="absolute -bottom-12 -left-8 -z-10 size-40 rounded-full bg-accent/20 blur-3xl" />
+        <div aria-hidden="true" className="absolute -right-10 -top-10 -z-10 size-48 rounded-full bg-radial from-primary/25 to-transparent to-70%" />
+        <div aria-hidden="true" className="absolute -bottom-12 -left-8 -z-10 size-40 rounded-full bg-radial from-accent/20 to-transparent to-70%" />
         <div className="glass space-y-5 rounded-[1.75rem] p-5 shadow-[var(--card-sheen),var(--shadow-dock)] min-[380px]:p-6">{children}</div>
       </div>
       {footer && <div className="text-center text-[15px] text-muted">{footer}</div>}

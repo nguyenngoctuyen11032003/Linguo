@@ -276,14 +276,29 @@ function ImportBody({ existingCount, onClose, onImport }: Pick<ImportDialogProps
         <label htmlFor={fileId} className="block px-1 text-sm font-medium">
           Chọn file CSV
         </label>
+        {/* The native control (with its browser-language "Choose File") stays for keyboard and assistive tech but is
+            visually replaced by the drop zone below, which is a second label for the same input. */}
         <input
           ref={fileRef}
           id={fileId}
           type="file"
           accept=".csv,.tsv,.txt,text/csv,text/plain"
           onChange={(e) => void onFile(e)}
-          className="block w-full rounded-2xl border border-border bg-surface-solid p-3 text-[15px] file:mr-3 file:rounded-full file:border-0 file:bg-primary file:px-4 file:py-2 file:font-semibold file:text-on-primary"
+          className="peer sr-only"
         />
+        <label
+          htmlFor={fileId}
+          aria-hidden="true"
+          className="flex min-h-24 cursor-pointer items-center gap-3.5 rounded-2xl border-2 border-dashed border-border bg-text/[0.02] px-4 py-4 transition-colors hover:border-primary/50 hover:bg-primary/5 active:scale-[0.99] peer-focus-visible:border-primary peer-focus-visible:ring-4 peer-focus-visible:ring-primary/40"
+        >
+          <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-primary/12 text-primary">
+            <FileUp className="size-5" />
+          </span>
+          <span className="min-w-0">
+            <span className="block font-semibold">Chạm để chọn file</span>
+            <span className="block text-[13px] text-muted">.csv · .tsv · .txt</span>
+          </span>
+        </label>
         <p className="px-1 text-sm text-muted">Tối đa 1 MB, {L.maxRowsPerImport} dòng mỗi lần. File được đọc ngay trên máy bạn.</p>
       </div>
 
