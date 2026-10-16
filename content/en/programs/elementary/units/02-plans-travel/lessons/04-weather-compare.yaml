@@ -55,10 +55,10 @@ body:
     text:
       vi: "Quy tắc chính tả khi thêm -er/-est: tính từ một âm tiết kết thúc bằng một nguyên âm + một phụ âm thì gấp đôi phụ âm (hot → hotter, big → biggest); tận cùng -e chỉ thêm -r/-st (nice → nicer); tận cùng -y đổi thành -ier/-iest (sunny → sunnier, easy → the easiest). Một số tính từ hai âm tiết như crowded, famous, boring luôn dùng more/the most. Sau than, tiếng Anh nói chuyện thường dùng me/him (She is older than me), không cần I am."
   - type: example
-    target: "What's the weather like in Da Lat? - It's cool and a bit cloudy."
+    target: "What's the weather like in Sa Pa in January? - It's cold and quite windy."
     target_lang: en
     translation:
-      vi: Thời tiết ở Đà Lạt thế nào? - Trời mát và hơi nhiều mây.
+      vi: Thời tiết ở Sa Pa vào tháng Một thế nào? - Trời lạnh và khá nhiều gió.
     note:
       vi: Hỏi What's the weather like…?, trả lời bắt đầu bằng It's.
   - type: example

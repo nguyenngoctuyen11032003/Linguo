@@ -156,30 +156,30 @@ exercises:
     difficulty: 2
     item: en:item:frequency-adverbs
     prompt:
-      template: "She usually {{b1}} up early, and then she {{b2}} a shower."
+      template: "He usually {{b1}} home at six, and then he {{b2}} dinner with his family."
       blanks:
         - { id: b1, width_hint: 4 }
         - { id: b2, width_hint: 5 }
       hint_levels:
-        - "Nghĩa của câu: Cô ấy thường dậy sớm, rồi đi tắm."
-        - "Gợi ý: she → động từ thêm -s, kể cả khi có usually đứng trước."
+        - "Nghĩa của câu: Anh ấy thường về nhà lúc sáu giờ, rồi ăn tối cùng gia đình."
+        - "Gợi ý: he → động từ thêm -s/-es, kể cả khi có usually đứng trước."
     answer:
       blanks:
-        b1: [gets]
-        b2: [takes, has]
+        b1: [goes, gets]
+        b2: [has, eats]
     known_wrong:
-      - answer: get
-        feedback_vi: Chủ ngữ she nên phải là gets - usually không làm mất -s.
+      - answer: go
+        feedback_vi: Chủ ngữ he nên phải là goes (go thêm -es) - usually không làm mất -s.
         error_tag: third_person_s
-      - answer: take
-        feedback_vi: Chủ ngữ she nên phải là takes.
+      - answer: have
+        feedback_vi: Chủ ngữ he nên have đổi thành has.
         error_tag: third_person_s
-      - answer: "is get"
-        feedback_vi: Câu có động từ thường thì không thêm is - She usually gets up.
+      - answer: "is go"
+        feedback_vi: Câu có động từ thường thì không thêm is - He usually goes home.
         error_tag: be_with_verb
     explanation:
-      vi: Chủ ngữ she nên cả hai động từ đều thêm -s. Usually đứng giữa chủ ngữ và động từ nhưng không thay đổi quy tắc -s.
-    display_answer: She usually gets up early, and then she takes a shower.
+      vi: Chủ ngữ he nên cả hai động từ đều đổi dạng (go → goes, have → has). Usually đứng giữa chủ ngữ và động từ nhưng không thay đổi quy tắc -s.
+    display_answer: He usually goes home at six, and then he has dinner with his family.
 
   - key: en:exercise:daily-routine-review-order-question
     type: word_bank

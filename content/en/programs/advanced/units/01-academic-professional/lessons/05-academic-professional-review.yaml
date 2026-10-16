@@ -390,169 +390,272 @@ exercises:
     difficulty: 5
     item: en:item:significant-increase
     prompt:
-      source_text: Tóm lại, doanh số trực tuyến tăng đáng kể, trong khi doanh số tại cửa hàng giảm nhẹ.
+      source_text: Tóm lại, số lượng khiếu nại của khách hàng tăng đáng kể, trong khi mức độ hài lòng của khách hàng giảm nhẹ.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - In summary, online sales increased significantly, whereas in-store sales decreased slightly.
-        - In summary, online sales rose significantly, whereas in-store sales fell slightly.
-        - In summary, online sales increased significantly, whereas in-store sales fell slightly.
-        - In summary, online sales increased considerably, whereas in-store sales decreased slightly.
-        - In summary, online sales rose considerably, whereas in-store sales declined slightly.
-        - In summary, there was a significant increase in online sales, whereas in-store sales decreased slightly.
-        - In summary, there was a significant increase in online sales, whereas in-store sales fell slightly.
-        - In summary, there was a significant increase in online sales, while in-store sales fell slightly.
-        - In summary, online sales increased significantly, while in-store sales decreased slightly.
-        - In summary, online sales rose significantly, while in-store sales fell slightly.
-        - To summarise, online sales increased significantly, whereas in-store sales decreased slightly.
-        - To summarize, online sales increased significantly, whereas in-store sales decreased slightly.
-        - In summary, online sales increased significantly, whereas sales in stores decreased slightly.
-        - In summary, online sales increased significantly, whereas store sales decreased slightly.
-        - In summary, online sales grew significantly, whereas in-store sales fell slightly.
-        - In summary, online sales increased significantly, whereas in-store sales declined slightly.
-        - In summary, online sales increased significantly, whereas sales in stores fell slightly.
-        - In summary, online sales increased significantly, whereas sales in stores declined slightly.
-        - In summary, online sales increased significantly, while sales in stores decreased slightly.
-        - In summary, online sales increased significantly, while in-store sales fell slightly.
-        - In summary, online sales increased significantly, while sales in stores fell slightly.
-        - In summary, online sales increased significantly, while in-store sales declined slightly.
-        - In summary, online sales increased significantly, while sales in stores declined slightly.
-        - In summary, online sales increased considerably, whereas sales in stores decreased slightly.
-        - In summary, online sales increased considerably, whereas in-store sales fell slightly.
-        - In summary, online sales increased considerably, whereas sales in stores fell slightly.
-        - In summary, online sales increased considerably, whereas in-store sales declined slightly.
-        - In summary, online sales increased considerably, whereas sales in stores declined slightly.
-        - In summary, online sales increased considerably, while in-store sales decreased slightly.
-        - In summary, online sales increased considerably, while sales in stores decreased slightly.
-        - In summary, online sales increased considerably, while in-store sales fell slightly.
-        - In summary, online sales increased considerably, while sales in stores fell slightly.
-        - In summary, online sales increased considerably, while in-store sales declined slightly.
-        - In summary, online sales increased considerably, while sales in stores declined slightly.
-        - In summary, online sales rose significantly, whereas in-store sales decreased slightly.
-        - In summary, online sales rose significantly, whereas sales in stores decreased slightly.
-        - In summary, online sales rose significantly, whereas sales in stores fell slightly.
-        - In summary, online sales rose significantly, whereas in-store sales declined slightly.
-        - In summary, online sales rose significantly, whereas sales in stores declined slightly.
-        - In summary, online sales rose significantly, while in-store sales decreased slightly.
-        - In summary, online sales rose significantly, while sales in stores decreased slightly.
-        - In summary, online sales rose significantly, while sales in stores fell slightly.
-        - In summary, online sales rose significantly, while in-store sales declined slightly.
-        - In summary, online sales rose significantly, while sales in stores declined slightly.
-        - In summary, online sales rose considerably, whereas in-store sales decreased slightly.
-        - In summary, online sales rose considerably, whereas sales in stores decreased slightly.
-        - In summary, online sales rose considerably, whereas in-store sales fell slightly.
-        - In summary, online sales rose considerably, whereas sales in stores fell slightly.
-        - In summary, online sales rose considerably, whereas sales in stores declined slightly.
-        - In summary, online sales rose considerably, while in-store sales decreased slightly.
-        - In summary, online sales rose considerably, while sales in stores decreased slightly.
-        - In summary, online sales rose considerably, while in-store sales fell slightly.
-        - In summary, online sales rose considerably, while sales in stores fell slightly.
-        - In summary, online sales rose considerably, while in-store sales declined slightly.
-        - In summary, online sales rose considerably, while sales in stores declined slightly.
-        - To summarise, online sales increased significantly, whereas sales in stores decreased slightly.
-        - To summarise, online sales increased significantly, whereas in-store sales fell slightly.
-        - To summarise, online sales increased significantly, whereas sales in stores fell slightly.
-        - To summarise, online sales increased significantly, whereas in-store sales declined slightly.
-        - To summarise, online sales increased significantly, whereas sales in stores declined slightly.
-        - To summarise, online sales increased significantly, while in-store sales decreased slightly.
-        - To summarise, online sales increased significantly, while sales in stores decreased slightly.
-        - To summarise, online sales increased significantly, while in-store sales fell slightly.
-        - To summarise, online sales increased significantly, while sales in stores fell slightly.
-        - To summarise, online sales increased significantly, while in-store sales declined slightly.
-        - To summarise, online sales increased significantly, while sales in stores declined slightly.
-        - To summarise, online sales increased considerably, whereas in-store sales decreased slightly.
-        - To summarise, online sales increased considerably, whereas sales in stores decreased slightly.
-        - To summarise, online sales increased considerably, whereas in-store sales fell slightly.
-        - To summarise, online sales increased considerably, whereas sales in stores fell slightly.
-        - To summarise, online sales increased considerably, whereas in-store sales declined slightly.
-        - To summarise, online sales increased considerably, whereas sales in stores declined slightly.
-        - To summarise, online sales increased considerably, while in-store sales decreased slightly.
-        - To summarise, online sales increased considerably, while sales in stores decreased slightly.
-        - To summarise, online sales increased considerably, while in-store sales fell slightly.
-        - To summarise, online sales increased considerably, while sales in stores fell slightly.
-        - To summarise, online sales increased considerably, while in-store sales declined slightly.
-        - To summarise, online sales increased considerably, while sales in stores declined slightly.
-        - To summarise, online sales rose significantly, whereas in-store sales decreased slightly.
-        - To summarise, online sales rose significantly, whereas sales in stores decreased slightly.
-        - To summarise, online sales rose significantly, whereas in-store sales fell slightly.
-        - To summarise, online sales rose significantly, whereas sales in stores fell slightly.
-        - To summarise, online sales rose significantly, whereas in-store sales declined slightly.
-        - To summarise, online sales rose significantly, whereas sales in stores declined slightly.
-        - To summarise, online sales rose significantly, while in-store sales decreased slightly.
-        - To summarise, online sales rose significantly, while sales in stores decreased slightly.
-        - To summarise, online sales rose significantly, while in-store sales fell slightly.
-        - To summarise, online sales rose significantly, while sales in stores fell slightly.
-        - To summarise, online sales rose significantly, while in-store sales declined slightly.
-        - To summarise, online sales rose significantly, while sales in stores declined slightly.
-        - To summarise, online sales rose considerably, whereas in-store sales decreased slightly.
-        - To summarise, online sales rose considerably, whereas sales in stores decreased slightly.
-        - To summarise, online sales rose considerably, whereas in-store sales fell slightly.
-        - To summarise, online sales rose considerably, whereas sales in stores fell slightly.
-        - To summarise, online sales rose considerably, whereas in-store sales declined slightly.
-        - To summarise, online sales rose considerably, whereas sales in stores declined slightly.
-        - To summarise, online sales rose considerably, while in-store sales decreased slightly.
-        - To summarise, online sales rose considerably, while sales in stores decreased slightly.
-        - To summarise, online sales rose considerably, while in-store sales fell slightly.
-        - To summarise, online sales rose considerably, while sales in stores fell slightly.
-        - To summarise, online sales rose considerably, while in-store sales declined slightly.
-        - To summarise, online sales rose considerably, while sales in stores declined slightly.
-        - To summarize, online sales increased significantly, whereas sales in stores decreased slightly.
-        - To summarize, online sales increased significantly, whereas in-store sales fell slightly.
-        - To summarize, online sales increased significantly, whereas sales in stores fell slightly.
-        - To summarize, online sales increased significantly, whereas in-store sales declined slightly.
-        - To summarize, online sales increased significantly, whereas sales in stores declined slightly.
-        - To summarize, online sales increased significantly, while in-store sales decreased slightly.
-        - To summarize, online sales increased significantly, while sales in stores decreased slightly.
-        - To summarize, online sales increased significantly, while in-store sales fell slightly.
-        - To summarize, online sales increased significantly, while sales in stores fell slightly.
-        - To summarize, online sales increased significantly, while in-store sales declined slightly.
-        - To summarize, online sales increased significantly, while sales in stores declined slightly.
-        - To summarize, online sales increased considerably, whereas in-store sales decreased slightly.
-        - To summarize, online sales increased considerably, whereas sales in stores decreased slightly.
-        - To summarize, online sales increased considerably, whereas in-store sales fell slightly.
-        - To summarize, online sales increased considerably, whereas sales in stores fell slightly.
-        - To summarize, online sales increased considerably, whereas in-store sales declined slightly.
-        - To summarize, online sales increased considerably, whereas sales in stores declined slightly.
-        - To summarize, online sales increased considerably, while in-store sales decreased slightly.
-        - To summarize, online sales increased considerably, while sales in stores decreased slightly.
-        - To summarize, online sales increased considerably, while in-store sales fell slightly.
-        - To summarize, online sales increased considerably, while sales in stores fell slightly.
-        - To summarize, online sales increased considerably, while in-store sales declined slightly.
-        - To summarize, online sales increased considerably, while sales in stores declined slightly.
-        - To summarize, online sales rose significantly, whereas in-store sales decreased slightly.
-        - To summarize, online sales rose significantly, whereas sales in stores decreased slightly.
-        - To summarize, online sales rose significantly, whereas in-store sales fell slightly.
-        - To summarize, online sales rose significantly, whereas sales in stores fell slightly.
-        - To summarize, online sales rose significantly, whereas in-store sales declined slightly.
-        - To summarize, online sales rose significantly, whereas sales in stores declined slightly.
-        - To summarize, online sales rose significantly, while in-store sales decreased slightly.
-        - To summarize, online sales rose significantly, while sales in stores decreased slightly.
-        - To summarize, online sales rose significantly, while in-store sales fell slightly.
-        - To summarize, online sales rose significantly, while sales in stores fell slightly.
-        - To summarize, online sales rose significantly, while in-store sales declined slightly.
-        - To summarize, online sales rose significantly, while sales in stores declined slightly.
-        - To summarize, online sales rose considerably, whereas in-store sales decreased slightly.
-        - To summarize, online sales rose considerably, whereas sales in stores decreased slightly.
-        - To summarize, online sales rose considerably, whereas in-store sales fell slightly.
-        - To summarize, online sales rose considerably, whereas sales in stores fell slightly.
-        - To summarize, online sales rose considerably, whereas in-store sales declined slightly.
-        - To summarize, online sales rose considerably, whereas sales in stores declined slightly.
-        - To summarize, online sales rose considerably, while in-store sales decreased slightly.
-        - To summarize, online sales rose considerably, while sales in stores decreased slightly.
-        - To summarize, online sales rose considerably, while in-store sales fell slightly.
-        - To summarize, online sales rose considerably, while sales in stores fell slightly.
-        - To summarize, online sales rose considerably, while in-store sales declined slightly.
-        - To summarize, online sales rose considerably, while sales in stores declined slightly.
+        - In summary, customer complaints increased significantly, whereas customer satisfaction decreased slightly.
+        - In summary, customer complaints increased significantly, whereas customer satisfaction fell slightly.
+        - In summary, customer complaints increased significantly, whereas customer satisfaction declined slightly.
+        - In summary, customer complaints increased significantly, whereas customer satisfaction dropped slightly.
+        - In summary, customer complaints increased significantly, whereas satisfaction levels fell slightly.
+        - In summary, customer complaints increased significantly, whereas satisfaction levels decreased slightly.
+        - In summary, customer complaints increased significantly, while customer satisfaction decreased slightly.
+        - In summary, customer complaints increased significantly, while customer satisfaction fell slightly.
+        - In summary, customer complaints increased significantly, while customer satisfaction declined slightly.
+        - In summary, customer complaints increased significantly, while customer satisfaction dropped slightly.
+        - In summary, customer complaints increased significantly, while satisfaction levels fell slightly.
+        - In summary, customer complaints increased significantly, while satisfaction levels decreased slightly.
+        - In summary, customer complaints rose significantly, whereas customer satisfaction decreased slightly.
+        - In summary, customer complaints rose significantly, whereas customer satisfaction fell slightly.
+        - In summary, customer complaints rose significantly, whereas customer satisfaction declined slightly.
+        - In summary, customer complaints rose significantly, whereas customer satisfaction dropped slightly.
+        - In summary, customer complaints rose significantly, whereas satisfaction levels fell slightly.
+        - In summary, customer complaints rose significantly, whereas satisfaction levels decreased slightly.
+        - In summary, customer complaints rose significantly, while customer satisfaction decreased slightly.
+        - In summary, customer complaints rose significantly, while customer satisfaction fell slightly.
+        - In summary, customer complaints rose significantly, while customer satisfaction declined slightly.
+        - In summary, customer complaints rose significantly, while customer satisfaction dropped slightly.
+        - In summary, customer complaints rose significantly, while satisfaction levels fell slightly.
+        - In summary, customer complaints rose significantly, while satisfaction levels decreased slightly.
+        - In summary, customer complaints increased considerably, whereas customer satisfaction decreased slightly.
+        - In summary, customer complaints increased considerably, whereas customer satisfaction fell slightly.
+        - In summary, customer complaints increased considerably, whereas customer satisfaction declined slightly.
+        - In summary, customer complaints increased considerably, whereas customer satisfaction dropped slightly.
+        - In summary, customer complaints increased considerably, whereas satisfaction levels fell slightly.
+        - In summary, customer complaints increased considerably, whereas satisfaction levels decreased slightly.
+        - In summary, customer complaints increased considerably, while customer satisfaction decreased slightly.
+        - In summary, customer complaints increased considerably, while customer satisfaction fell slightly.
+        - In summary, customer complaints increased considerably, while customer satisfaction declined slightly.
+        - In summary, customer complaints increased considerably, while customer satisfaction dropped slightly.
+        - In summary, customer complaints increased considerably, while satisfaction levels fell slightly.
+        - In summary, customer complaints increased considerably, while satisfaction levels decreased slightly.
+        - In summary, customer complaints rose considerably, whereas customer satisfaction decreased slightly.
+        - In summary, customer complaints rose considerably, whereas customer satisfaction fell slightly.
+        - In summary, customer complaints rose considerably, whereas customer satisfaction declined slightly.
+        - In summary, customer complaints rose considerably, whereas customer satisfaction dropped slightly.
+        - In summary, customer complaints rose considerably, whereas satisfaction levels fell slightly.
+        - In summary, customer complaints rose considerably, whereas satisfaction levels decreased slightly.
+        - In summary, customer complaints rose considerably, while customer satisfaction decreased slightly.
+        - In summary, customer complaints rose considerably, while customer satisfaction fell slightly.
+        - In summary, customer complaints rose considerably, while customer satisfaction declined slightly.
+        - In summary, customer complaints rose considerably, while customer satisfaction dropped slightly.
+        - In summary, customer complaints rose considerably, while satisfaction levels fell slightly.
+        - In summary, customer complaints rose considerably, while satisfaction levels decreased slightly.
+        - In summary, the number of customer complaints increased significantly, whereas customer satisfaction decreased slightly.
+        - In summary, the number of customer complaints increased significantly, whereas customer satisfaction fell slightly.
+        - In summary, the number of customer complaints increased significantly, whereas customer satisfaction declined slightly.
+        - In summary, the number of customer complaints increased significantly, whereas customer satisfaction dropped slightly.
+        - In summary, the number of customer complaints increased significantly, whereas satisfaction levels fell slightly.
+        - In summary, the number of customer complaints increased significantly, whereas satisfaction levels decreased slightly.
+        - In summary, the number of customer complaints increased significantly, while customer satisfaction decreased slightly.
+        - In summary, the number of customer complaints increased significantly, while customer satisfaction fell slightly.
+        - In summary, the number of customer complaints increased significantly, while customer satisfaction declined slightly.
+        - In summary, the number of customer complaints increased significantly, while customer satisfaction dropped slightly.
+        - In summary, the number of customer complaints increased significantly, while satisfaction levels fell slightly.
+        - In summary, the number of customer complaints increased significantly, while satisfaction levels decreased slightly.
+        - In summary, the number of customer complaints rose significantly, whereas customer satisfaction decreased slightly.
+        - In summary, the number of customer complaints rose significantly, whereas customer satisfaction fell slightly.
+        - In summary, the number of customer complaints rose significantly, whereas customer satisfaction declined slightly.
+        - In summary, the number of customer complaints rose significantly, whereas customer satisfaction dropped slightly.
+        - In summary, the number of customer complaints rose significantly, whereas satisfaction levels fell slightly.
+        - In summary, the number of customer complaints rose significantly, whereas satisfaction levels decreased slightly.
+        - In summary, the number of customer complaints rose significantly, while customer satisfaction decreased slightly.
+        - In summary, the number of customer complaints rose significantly, while customer satisfaction fell slightly.
+        - In summary, the number of customer complaints rose significantly, while customer satisfaction declined slightly.
+        - In summary, the number of customer complaints rose significantly, while customer satisfaction dropped slightly.
+        - In summary, the number of customer complaints rose significantly, while satisfaction levels fell slightly.
+        - In summary, the number of customer complaints rose significantly, while satisfaction levels decreased slightly.
+        - In summary, there was a significant increase in customer complaints, whereas customer satisfaction decreased slightly.
+        - In summary, there was a significant increase in customer complaints, whereas customer satisfaction fell slightly.
+        - In summary, there was a significant increase in customer complaints, whereas customer satisfaction declined slightly.
+        - In summary, there was a significant increase in customer complaints, whereas customer satisfaction dropped slightly.
+        - In summary, there was a significant increase in customer complaints, whereas satisfaction levels fell slightly.
+        - In summary, there was a significant increase in customer complaints, whereas satisfaction levels decreased slightly.
+        - In summary, there was a significant increase in customer complaints, while customer satisfaction decreased slightly.
+        - In summary, there was a significant increase in customer complaints, while customer satisfaction fell slightly.
+        - In summary, there was a significant increase in customer complaints, while customer satisfaction declined slightly.
+        - In summary, there was a significant increase in customer complaints, while customer satisfaction dropped slightly.
+        - In summary, there was a significant increase in customer complaints, while satisfaction levels fell slightly.
+        - In summary, there was a significant increase in customer complaints, while satisfaction levels decreased slightly.
+        - To summarise, customer complaints increased significantly, whereas customer satisfaction decreased slightly.
+        - To summarise, customer complaints increased significantly, whereas customer satisfaction fell slightly.
+        - To summarise, customer complaints increased significantly, whereas customer satisfaction declined slightly.
+        - To summarise, customer complaints increased significantly, whereas customer satisfaction dropped slightly.
+        - To summarise, customer complaints increased significantly, whereas satisfaction levels fell slightly.
+        - To summarise, customer complaints increased significantly, whereas satisfaction levels decreased slightly.
+        - To summarise, customer complaints increased significantly, while customer satisfaction decreased slightly.
+        - To summarise, customer complaints increased significantly, while customer satisfaction fell slightly.
+        - To summarise, customer complaints increased significantly, while customer satisfaction declined slightly.
+        - To summarise, customer complaints increased significantly, while customer satisfaction dropped slightly.
+        - To summarise, customer complaints increased significantly, while satisfaction levels fell slightly.
+        - To summarise, customer complaints increased significantly, while satisfaction levels decreased slightly.
+        - To summarise, customer complaints rose significantly, whereas customer satisfaction decreased slightly.
+        - To summarise, customer complaints rose significantly, whereas customer satisfaction fell slightly.
+        - To summarise, customer complaints rose significantly, whereas customer satisfaction declined slightly.
+        - To summarise, customer complaints rose significantly, whereas customer satisfaction dropped slightly.
+        - To summarise, customer complaints rose significantly, whereas satisfaction levels fell slightly.
+        - To summarise, customer complaints rose significantly, whereas satisfaction levels decreased slightly.
+        - To summarise, customer complaints rose significantly, while customer satisfaction decreased slightly.
+        - To summarise, customer complaints rose significantly, while customer satisfaction fell slightly.
+        - To summarise, customer complaints rose significantly, while customer satisfaction declined slightly.
+        - To summarise, customer complaints rose significantly, while customer satisfaction dropped slightly.
+        - To summarise, customer complaints rose significantly, while satisfaction levels fell slightly.
+        - To summarise, customer complaints rose significantly, while satisfaction levels decreased slightly.
+        - To summarise, customer complaints increased considerably, whereas customer satisfaction decreased slightly.
+        - To summarise, customer complaints increased considerably, whereas customer satisfaction fell slightly.
+        - To summarise, customer complaints increased considerably, whereas customer satisfaction declined slightly.
+        - To summarise, customer complaints increased considerably, whereas customer satisfaction dropped slightly.
+        - To summarise, customer complaints increased considerably, whereas satisfaction levels fell slightly.
+        - To summarise, customer complaints increased considerably, whereas satisfaction levels decreased slightly.
+        - To summarise, customer complaints increased considerably, while customer satisfaction decreased slightly.
+        - To summarise, customer complaints increased considerably, while customer satisfaction fell slightly.
+        - To summarise, customer complaints increased considerably, while customer satisfaction declined slightly.
+        - To summarise, customer complaints increased considerably, while customer satisfaction dropped slightly.
+        - To summarise, customer complaints increased considerably, while satisfaction levels fell slightly.
+        - To summarise, customer complaints increased considerably, while satisfaction levels decreased slightly.
+        - To summarise, customer complaints rose considerably, whereas customer satisfaction decreased slightly.
+        - To summarise, customer complaints rose considerably, whereas customer satisfaction fell slightly.
+        - To summarise, customer complaints rose considerably, whereas customer satisfaction declined slightly.
+        - To summarise, customer complaints rose considerably, whereas customer satisfaction dropped slightly.
+        - To summarise, customer complaints rose considerably, whereas satisfaction levels fell slightly.
+        - To summarise, customer complaints rose considerably, whereas satisfaction levels decreased slightly.
+        - To summarise, customer complaints rose considerably, while customer satisfaction decreased slightly.
+        - To summarise, customer complaints rose considerably, while customer satisfaction fell slightly.
+        - To summarise, customer complaints rose considerably, while customer satisfaction declined slightly.
+        - To summarise, customer complaints rose considerably, while customer satisfaction dropped slightly.
+        - To summarise, customer complaints rose considerably, while satisfaction levels fell slightly.
+        - To summarise, customer complaints rose considerably, while satisfaction levels decreased slightly.
+        - To summarise, the number of customer complaints increased significantly, whereas customer satisfaction decreased slightly.
+        - To summarise, the number of customer complaints increased significantly, whereas customer satisfaction fell slightly.
+        - To summarise, the number of customer complaints increased significantly, whereas customer satisfaction declined slightly.
+        - To summarise, the number of customer complaints increased significantly, whereas customer satisfaction dropped slightly.
+        - To summarise, the number of customer complaints increased significantly, whereas satisfaction levels fell slightly.
+        - To summarise, the number of customer complaints increased significantly, whereas satisfaction levels decreased slightly.
+        - To summarise, the number of customer complaints increased significantly, while customer satisfaction decreased slightly.
+        - To summarise, the number of customer complaints increased significantly, while customer satisfaction fell slightly.
+        - To summarise, the number of customer complaints increased significantly, while customer satisfaction declined slightly.
+        - To summarise, the number of customer complaints increased significantly, while customer satisfaction dropped slightly.
+        - To summarise, the number of customer complaints increased significantly, while satisfaction levels fell slightly.
+        - To summarise, the number of customer complaints increased significantly, while satisfaction levels decreased slightly.
+        - To summarise, the number of customer complaints rose significantly, whereas customer satisfaction decreased slightly.
+        - To summarise, the number of customer complaints rose significantly, whereas customer satisfaction fell slightly.
+        - To summarise, the number of customer complaints rose significantly, whereas customer satisfaction declined slightly.
+        - To summarise, the number of customer complaints rose significantly, whereas customer satisfaction dropped slightly.
+        - To summarise, the number of customer complaints rose significantly, whereas satisfaction levels fell slightly.
+        - To summarise, the number of customer complaints rose significantly, whereas satisfaction levels decreased slightly.
+        - To summarise, the number of customer complaints rose significantly, while customer satisfaction decreased slightly.
+        - To summarise, the number of customer complaints rose significantly, while customer satisfaction fell slightly.
+        - To summarise, the number of customer complaints rose significantly, while customer satisfaction declined slightly.
+        - To summarise, the number of customer complaints rose significantly, while customer satisfaction dropped slightly.
+        - To summarise, the number of customer complaints rose significantly, while satisfaction levels fell slightly.
+        - To summarise, the number of customer complaints rose significantly, while satisfaction levels decreased slightly.
+        - To summarise, there was a significant increase in customer complaints, whereas customer satisfaction decreased slightly.
+        - To summarise, there was a significant increase in customer complaints, whereas customer satisfaction fell slightly.
+        - To summarise, there was a significant increase in customer complaints, whereas customer satisfaction declined slightly.
+        - To summarise, there was a significant increase in customer complaints, whereas customer satisfaction dropped slightly.
+        - To summarise, there was a significant increase in customer complaints, whereas satisfaction levels fell slightly.
+        - To summarise, there was a significant increase in customer complaints, whereas satisfaction levels decreased slightly.
+        - To summarise, there was a significant increase in customer complaints, while customer satisfaction decreased slightly.
+        - To summarise, there was a significant increase in customer complaints, while customer satisfaction fell slightly.
+        - To summarise, there was a significant increase in customer complaints, while customer satisfaction declined slightly.
+        - To summarise, there was a significant increase in customer complaints, while customer satisfaction dropped slightly.
+        - To summarise, there was a significant increase in customer complaints, while satisfaction levels fell slightly.
+        - To summarise, there was a significant increase in customer complaints, while satisfaction levels decreased slightly.
+        - To summarize, customer complaints increased significantly, whereas customer satisfaction decreased slightly.
+        - To summarize, customer complaints increased significantly, whereas customer satisfaction fell slightly.
+        - To summarize, customer complaints increased significantly, whereas customer satisfaction declined slightly.
+        - To summarize, customer complaints increased significantly, whereas customer satisfaction dropped slightly.
+        - To summarize, customer complaints increased significantly, whereas satisfaction levels fell slightly.
+        - To summarize, customer complaints increased significantly, whereas satisfaction levels decreased slightly.
+        - To summarize, customer complaints increased significantly, while customer satisfaction decreased slightly.
+        - To summarize, customer complaints increased significantly, while customer satisfaction fell slightly.
+        - To summarize, customer complaints increased significantly, while customer satisfaction declined slightly.
+        - To summarize, customer complaints increased significantly, while customer satisfaction dropped slightly.
+        - To summarize, customer complaints increased significantly, while satisfaction levels fell slightly.
+        - To summarize, customer complaints increased significantly, while satisfaction levels decreased slightly.
+        - To summarize, customer complaints rose significantly, whereas customer satisfaction decreased slightly.
+        - To summarize, customer complaints rose significantly, whereas customer satisfaction fell slightly.
+        - To summarize, customer complaints rose significantly, whereas customer satisfaction declined slightly.
+        - To summarize, customer complaints rose significantly, whereas customer satisfaction dropped slightly.
+        - To summarize, customer complaints rose significantly, whereas satisfaction levels fell slightly.
+        - To summarize, customer complaints rose significantly, whereas satisfaction levels decreased slightly.
+        - To summarize, customer complaints rose significantly, while customer satisfaction decreased slightly.
+        - To summarize, customer complaints rose significantly, while customer satisfaction fell slightly.
+        - To summarize, customer complaints rose significantly, while customer satisfaction declined slightly.
+        - To summarize, customer complaints rose significantly, while customer satisfaction dropped slightly.
+        - To summarize, customer complaints rose significantly, while satisfaction levels fell slightly.
+        - To summarize, customer complaints rose significantly, while satisfaction levels decreased slightly.
+        - To summarize, customer complaints increased considerably, whereas customer satisfaction decreased slightly.
+        - To summarize, customer complaints increased considerably, whereas customer satisfaction fell slightly.
+        - To summarize, customer complaints increased considerably, whereas customer satisfaction declined slightly.
+        - To summarize, customer complaints increased considerably, whereas customer satisfaction dropped slightly.
+        - To summarize, customer complaints increased considerably, whereas satisfaction levels fell slightly.
+        - To summarize, customer complaints increased considerably, whereas satisfaction levels decreased slightly.
+        - To summarize, customer complaints increased considerably, while customer satisfaction decreased slightly.
+        - To summarize, customer complaints increased considerably, while customer satisfaction fell slightly.
+        - To summarize, customer complaints increased considerably, while customer satisfaction declined slightly.
+        - To summarize, customer complaints increased considerably, while customer satisfaction dropped slightly.
+        - To summarize, customer complaints increased considerably, while satisfaction levels fell slightly.
+        - To summarize, customer complaints increased considerably, while satisfaction levels decreased slightly.
+        - To summarize, customer complaints rose considerably, whereas customer satisfaction decreased slightly.
+        - To summarize, customer complaints rose considerably, whereas customer satisfaction fell slightly.
+        - To summarize, customer complaints rose considerably, whereas customer satisfaction declined slightly.
+        - To summarize, customer complaints rose considerably, whereas customer satisfaction dropped slightly.
+        - To summarize, customer complaints rose considerably, whereas satisfaction levels fell slightly.
+        - To summarize, customer complaints rose considerably, whereas satisfaction levels decreased slightly.
+        - To summarize, customer complaints rose considerably, while customer satisfaction decreased slightly.
+        - To summarize, customer complaints rose considerably, while customer satisfaction fell slightly.
+        - To summarize, customer complaints rose considerably, while customer satisfaction declined slightly.
+        - To summarize, customer complaints rose considerably, while customer satisfaction dropped slightly.
+        - To summarize, customer complaints rose considerably, while satisfaction levels fell slightly.
+        - To summarize, customer complaints rose considerably, while satisfaction levels decreased slightly.
+        - To summarize, the number of customer complaints increased significantly, whereas customer satisfaction decreased slightly.
+        - To summarize, the number of customer complaints increased significantly, whereas customer satisfaction fell slightly.
+        - To summarize, the number of customer complaints increased significantly, whereas customer satisfaction declined slightly.
+        - To summarize, the number of customer complaints increased significantly, whereas customer satisfaction dropped slightly.
+        - To summarize, the number of customer complaints increased significantly, whereas satisfaction levels fell slightly.
+        - To summarize, the number of customer complaints increased significantly, whereas satisfaction levels decreased slightly.
+        - To summarize, the number of customer complaints increased significantly, while customer satisfaction decreased slightly.
+        - To summarize, the number of customer complaints increased significantly, while customer satisfaction fell slightly.
+        - To summarize, the number of customer complaints increased significantly, while customer satisfaction declined slightly.
+        - To summarize, the number of customer complaints increased significantly, while customer satisfaction dropped slightly.
+        - To summarize, the number of customer complaints increased significantly, while satisfaction levels fell slightly.
+        - To summarize, the number of customer complaints increased significantly, while satisfaction levels decreased slightly.
+        - To summarize, the number of customer complaints rose significantly, whereas customer satisfaction decreased slightly.
+        - To summarize, the number of customer complaints rose significantly, whereas customer satisfaction fell slightly.
+        - To summarize, the number of customer complaints rose significantly, whereas customer satisfaction declined slightly.
+        - To summarize, the number of customer complaints rose significantly, whereas customer satisfaction dropped slightly.
+        - To summarize, the number of customer complaints rose significantly, whereas satisfaction levels fell slightly.
+        - To summarize, the number of customer complaints rose significantly, whereas satisfaction levels decreased slightly.
+        - To summarize, the number of customer complaints rose significantly, while customer satisfaction decreased slightly.
+        - To summarize, the number of customer complaints rose significantly, while customer satisfaction fell slightly.
+        - To summarize, the number of customer complaints rose significantly, while customer satisfaction declined slightly.
+        - To summarize, the number of customer complaints rose significantly, while customer satisfaction dropped slightly.
+        - To summarize, the number of customer complaints rose significantly, while satisfaction levels fell slightly.
+        - To summarize, the number of customer complaints rose significantly, while satisfaction levels decreased slightly.
+        - To summarize, there was a significant increase in customer complaints, whereas customer satisfaction decreased slightly.
+        - To summarize, there was a significant increase in customer complaints, whereas customer satisfaction fell slightly.
+        - To summarize, there was a significant increase in customer complaints, whereas customer satisfaction declined slightly.
+        - To summarize, there was a significant increase in customer complaints, whereas customer satisfaction dropped slightly.
+        - To summarize, there was a significant increase in customer complaints, whereas satisfaction levels fell slightly.
+        - To summarize, there was a significant increase in customer complaints, whereas satisfaction levels decreased slightly.
+        - To summarize, there was a significant increase in customer complaints, while customer satisfaction decreased slightly.
+        - To summarize, there was a significant increase in customer complaints, while customer satisfaction fell slightly.
+        - To summarize, there was a significant increase in customer complaints, while customer satisfaction declined slightly.
+        - To summarize, there was a significant increase in customer complaints, while customer satisfaction dropped slightly.
+        - To summarize, there was a significant increase in customer complaints, while satisfaction levels fell slightly.
+        - To summarize, there was a significant increase in customer complaints, while satisfaction levels decreased slightly.
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: In summary, there was a significant increase of online sales, whereas in-store sales decreased slightly.
-        feedback_vi: An increase in + cái tăng (online sales); of dùng cho mức tăng (an increase of 10%).
+      - answer: In summary, there was a significant increase of customer complaints, whereas customer satisfaction decreased slightly.
+        feedback_vi: An increase in + cái tăng (customer complaints); of dùng cho mức tăng (an increase of 10%).
         error_tag: preposition
-      - answer: In summarise, online sales increased significantly, whereas in-store sales decreased slightly.
+      - answer: In summarise, customer complaints increased significantly, whereas customer satisfaction decreased slightly.
         feedback_vi: Viết In summary hoặc To summarise, không phải In summarise.
         error_tag: fixed_phrase
     explanation:
-      vi: In summary mở đầu phần tóm tắt; tăng/giảm dùng động từ kèm trạng từ chính xác (increased significantly, decreased slightly) hoặc danh từ hoá a significant increase in. Whereas/while đối chiếu hai xu hướng.
-    display_answer: In summary, online sales increased significantly, whereas in-store sales decreased slightly.
+      vi: In summary mở đầu phần tóm tắt; tăng/giảm dùng động từ kèm trạng từ chính xác (increased significantly, decreased slightly) hoặc danh từ hoá a significant increase in. Bài trước tóm tắt doanh số; ở đây bạn áp dụng cùng khuôn cho số liệu dịch vụ khách hàng. Whereas/while đối chiếu hai xu hướng.
+    display_answer: In summary, customer complaints increased significantly, whereas customer satisfaction decreased slightly.

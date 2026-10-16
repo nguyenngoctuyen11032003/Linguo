@@ -198,20 +198,20 @@ exercises:
     difficulty: 1
     item: en:item:is-there-are-there
     prompt:
-      template: "{{b1}} there a pharmacy near here? - Yes, there {{b2}}."
+      template: "{{b1}} there a post office on this street? - Yes, there {{b2}}."
       blanks:
         - { id: b1, width_hint: 2 }
         - { id: b2, width_hint: 2 }
       hint_levels:
-        - "Nghĩa của câu: Gần đây có hiệu thuốc nào không? - Có."
-        - "Gợi ý: một hiệu thuốc là số ít; câu trả lời ngắn lặp lại cùng động từ."
+        - "Nghĩa của câu: Trên con phố này có bưu điện không? - Có."
+        - "Gợi ý: một bưu điện là số ít; câu trả lời ngắn lặp lại cùng động từ."
     answer:
       blanks:
         b1: [Is]
         b2: [is]
     known_wrong:
       - answer: Are
-        feedback_vi: A pharmacy là số ít nên hỏi Is there, trả lời there is.
+        feedback_vi: A post office là số ít nên hỏi Is there, trả lời there is.
         error_tag: there_be_agreement
       - answer: Have
         feedback_vi: Hỏi "có… không?" về sự tồn tại dùng Is there, không dùng have.
@@ -220,8 +220,8 @@ exercises:
         feedback_vi: Trả lời câu Is there…? là Yes, there is, không dùng has.
         error_tag: have_for_there_is
     explanation:
-      vi: Một hiệu thuốc là số ít nên hỏi Is there…? Câu trả lời ngắn lặp lại is - Yes, there is.
-    display_answer: Is there a pharmacy near here? - Yes, there is.
+      vi: Một bưu điện là số ít nên hỏi Is there…? Câu trả lời ngắn lặp lại is - Yes, there is.
+    display_answer: Is there a post office on this street? - Yes, there is.
 
   # ---------------- recall ----------------
   - key: en:exercise:places-directions-review-fill-route
@@ -231,7 +231,7 @@ exercises:
     difficulty: 2
     item: en:item:on-your-left-right
     prompt:
-      template: "Go straight {{b1}}, turn left {{b2}} the bank, and it's {{b3}} your right."
+      template: "Go straight {{b1}}, turn left {{b2}} the supermarket, and it's {{b3}} your right."
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 2 }
@@ -243,7 +243,7 @@ exercises:
         b3: [on]
     known_wrong:
       - answer: to
-        feedback_vi: Turn left không cần to; rẽ ở ngân hàng dùng at.
+        feedback_vi: Turn left không cần to; rẽ ở siêu thị dùng at.
         error_tag: turn_to
       - answer: in
         feedback_vi: Rẽ ở một điểm mốc dùng at; bên tay phải dùng on your right.
@@ -252,8 +252,8 @@ exercises:
         feedback_vi: Straight vừa là tính từ vừa là trạng từ, không thêm -ly. Đi thẳng là go straight on.
         error_tag: go_straight
     explanation:
-      vi: Đi thẳng là go straight on (hoặc go straight ahead). Rẽ ở một điểm mốc dùng at the bank, và bên tay phải là on your right.
-    display_answer: Go straight on, turn left at the bank, and it's on your right.
+      vi: Đi thẳng là go straight on (hoặc go straight ahead). Rẽ ở một điểm mốc dùng at the supermarket, và bên tay phải là on your right.
+    display_answer: Go straight on, turn left at the supermarket, and it's on your right.
 
   - key: en:exercise:places-directions-review-translate-any-bank
     type: translate
@@ -301,33 +301,33 @@ exercises:
     difficulty: 2
     item: en:item:between
     prompt:
-      source_text: Bưu điện ở giữa ngân hàng và hiệu thuốc.
+      source_text: Thư viện ở giữa công viên và bến xe buýt.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - The post office is between the bank and the pharmacy.
-        - The post office is between the bank and the drugstore.
-        - The post office is between the bank and the chemist's.
-        - The post office is between the pharmacy and the bank.
+        - The library is between the park and the bus station.
+        - The library is between the bus station and the park.
+        - The library is between the park and the bus stop.
+        - The library is between the bus stop and the park.
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: The post office is between the bank with the pharmacy.
+      - answer: The library is between the park with the bus station.
         feedback_vi: Between nối hai nơi bằng and, không dùng with.
         error_tag: between_and
-      - answer: The post office between the bank and the pharmacy.
-        feedback_vi: Thiếu is - The post office is between…
+      - answer: The library between the park and the bus station.
+        feedback_vi: Thiếu is - The library is between…
         error_tag: missing_be
-      - answer: The post office is in the middle the bank and the pharmacy.
+      - answer: The library is in the middle the park and the bus station.
         feedback_vi: Ở giữa hai nơi là between, không dùng in the middle.
         error_tag: preposition_place
-      - answer: The post office is between the bank or the pharmacy.
+      - answer: The library is between the park or the bus station.
         feedback_vi: Between A and B dùng and, không dùng or.
         error_tag: between_and
     explanation:
-      vi: Chủ ngữ the post office + is + between the bank and the pharmacy. Between luôn nối hai nơi bằng and.
-    display_answer: The post office is between the bank and the pharmacy.
+      vi: Chủ ngữ the library + is + between the park and the bus station. Between luôn nối hai nơi bằng and.
+    display_answer: The library is between the park and the bus station.
 
   # ---------------- application ----------------
   - key: en:exercise:places-directions-review-translate-cross
@@ -365,42 +365,42 @@ exercises:
     difficulty: 3
     item: en:item:can-cant
     prompt:
-      source_text: Không xa đâu. Bạn có thể đi bộ đến đó.
+      source_text: Bệnh viện không xa đâu. Bạn có thể đi bộ đến đó.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - It isn't far. You can walk there.
-        - It's not far. You can walk there.
-        - It isn't far. You can go there on foot.
-        - It's not far. You can go there on foot.
-        - It isn't far. You can walk.
-        - It's not far. You can walk.
-        - It isn't far. You can get there on foot.
-        - It's not far. You can get there on foot.
-        - It isn't far away. You can walk there.
-        - It's not far away. You can walk there.
+        - The hospital isn't far. You can walk there.
+        - The hospital's not far. You can walk there.
+        - The hospital isn't far. You can go there on foot.
+        - The hospital's not far. You can go there on foot.
+        - The hospital isn't far. You can walk.
+        - The hospital's not far. You can walk.
+        - The hospital isn't far. You can get there on foot.
+        - The hospital's not far. You can get there on foot.
+        - The hospital isn't far away. You can walk there.
+        - The hospital's not far away. You can walk there.
     rubric:
       typo_tolerance: 1
     known_wrong:
-      - answer: It isn't far. You can to walk there.
+      - answer: The hospital isn't far. You can to walk there.
         feedback_vi: Sau can không có to - You can walk there.
         error_tag: can_to
-      - answer: It not far. You can walk there.
-        feedback_vi: Thiếu is - It isn't far (It is not far).
+      - answer: The hospital not far. You can walk there.
+        feedback_vi: Thiếu is - The hospital isn't far (The hospital is not far).
         error_tag: missing_be
-      - answer: It isn't far. You can go there by foot.
+      - answer: The hospital isn't far. You can go there by foot.
         feedback_vi: Đi bộ nói chuẩn là on foot, không phải by foot.
         error_tag: on_foot
-      - answer: It isn't far. You can walking there.
+      - answer: The hospital isn't far. You can walking there.
         feedback_vi: Sau can dùng động từ nguyên mẫu walk, không dùng walking.
         error_tag: can_verb_form
-      - answer: It isn't far. You can walk to there.
+      - answer: The hospital isn't far. You can walk to there.
         feedback_vi: There đã có nghĩa "đến đó", không thêm to - walk there.
         error_tag: go_to_there
     explanation:
-      vi: "\"Không xa\" cần be - It isn't far. \"Có thể đi bộ\" là can + walk (nguyên mẫu), hoặc go there on foot."
-    display_answer: It isn't far. You can walk there.
+      vi: "\"Không xa\" cần be - The hospital isn't far. \"Có thể đi bộ\" là can + walk (nguyên mẫu), hoặc go there on foot."
+    display_answer: The hospital isn't far. You can walk there.
 
   - key: en:exercise:places-directions-review-mcq-reply
     type: mcq

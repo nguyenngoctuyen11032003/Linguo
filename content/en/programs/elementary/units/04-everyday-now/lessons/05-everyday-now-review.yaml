@@ -112,8 +112,8 @@ body:
     note:
       vi: "Bài tả ảnh phần 2: look + tính từ (looks busy, look happy) và I think để đoán."
   - type: common_mistake
-    wrong: "A: Can I speak to Mr Hill? B: Yes, I am."
-    right: "A: Can I speak to Mr Hill? B: Speaking. / This is Tom Hill."
+    wrong: "A: Could I speak to Ms Carter, please? B: Yes, I am."
+    right: "A: Could I speak to Ms Carter, please? B: Speaking. / Yes, this is Anna Carter."
     target_lang: en
     note:
       vi: Người được hỏi trả lời Speaking hoặc This is…, không trả lời "Yes, I am".
