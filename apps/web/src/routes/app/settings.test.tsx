@@ -345,7 +345,7 @@ describe('SettingsPage', () => {
     const labels = within(nav)
       .getAllByRole('link')
       .map((link) => link.textContent);
-    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Báo lỗi của tôi', 'Tài khoản và dữ liệu']);
+    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Báo lỗi của tôi', 'Mật khẩu', 'Tài khoản và dữ liệu']);
     for (const label of labels) {
       expect(screen.getByRole('heading', { level: 2, name: label! })).toBeInTheDocument();
     }
@@ -372,7 +372,7 @@ describe('SettingsPage', () => {
 
   it('folds the rarely used sections behind labelled disclosure buttons', () => {
     renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
-    for (const name of ['Báo lỗi của tôi', 'Tài khoản và dữ liệu']) {
+    for (const name of ['Báo lỗi của tôi', 'Mật khẩu', 'Tài khoản và dữ liệu']) {
       const heading = screen.getByRole('heading', { level: 2, name });
       const details = heading.closest('details');
       expect(details).not.toBeNull();

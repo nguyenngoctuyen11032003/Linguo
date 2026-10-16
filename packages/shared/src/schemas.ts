@@ -62,6 +62,15 @@ export const resetPasswordSchema = z
   .object({ password: passwordSchema, confirm: z.string() })
   .refine((v) => v.password === v.confirm, { message: 'Mật khẩu nhập lại không khớp.', path: ['confirm'] });
 
+/** Settings "Mật khẩu": the current password (checked by re-authenticating), then the sign-up rules for the new one. */
+export const changePasswordSchema = z
+  .object({ current: z.string().min(1, { message: 'Vui lòng nhập mật khẩu hiện tại.' }), password: passwordSchema, confirm: z.string() })
+  .refine((v) => v.password === v.confirm, { message: 'Mật khẩu nhập lại không khớp.', path: ['confirm'] })
+  .refine((v) => v.current.length === 0 || v.password !== v.current, {
+    message: 'Mật khẩu mới phải khác mật khẩu hiện tại.',
+    path: ['password'],
+  });
+
 export const profileUpdateSchema = z.object({
   displayName: displayNameSchema,
   timezone: timezoneSchema,

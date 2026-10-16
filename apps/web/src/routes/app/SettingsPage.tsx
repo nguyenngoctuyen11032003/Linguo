@@ -28,6 +28,7 @@ import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
+import { PasswordSection } from './settings/PasswordSection';
 import { RemindersSection } from './settings/RemindersSection';
 import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './settings/section-state';
 import { SettingsJumpList } from './settings/SettingsJumpList';
@@ -338,6 +339,8 @@ export function SettingsPage() {
       <InstallAppSection />
 
       <MyReportsSection />
+
+      <PasswordSection />
 
       <AccountDataSection />
 
