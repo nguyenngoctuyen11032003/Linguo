@@ -124,7 +124,7 @@ Hành vi:
 - **Xoay VAPID** làm mọi subscription cũ hết hiệu lực (push service từ chối); chúng tự bị xoá sau vài lần thất bại và người học cần bật lại thông báo trên thiết bị. Chỉ xoay khi private key bị lộ.
 
 ## Quy trình hằng ngày
-1. Tạo nhánh → code → mở PR → CI phải xanh (xem artifact `playwright-report` để duyệt ảnh chụp mobile).
+1. Tạo nhánh → code → mở PR → CI phải xanh (xem các artifact `playwright-report-1`…`-3`, mỗi shard e2e một artifact, để duyệt ảnh chụp mobile).
 2. Merge vào `main` → Deploy tự chạy; bạn **Approve** `production` cho từng job (xem bên dưới). Có migration mới thì sau khi `migrate` xanh nhớ ghi checksum (mục Quy tắc an toàn database).
    - **Những job chờ duyệt** (theo `deploy.yml`, mọi job khai báo `environment: production` đều dừng chờ Required reviewers): `migrate` (khi `supabase/migrations` đổi hoặc chạy tay với `migrate = true`), `functions` (khi `supabase/functions` đổi hoặc chạy tay với `functions = true`) và `build`. Vì vậy mỗi lần push vào `main` cần ít nhất **một** lần duyệt (cho `build`), cộng thêm một lần cho mỗi job `migrate`/`functions` có chạy. Job `pages` dùng environment `github-pages` (không có reviewer). Thứ tự: `verify` (CI) → `migrate` → `functions` và `build` (chạy song song, đều chờ `migrate` xong hoặc bị bỏ qua; `build` không đợi `functions`) → `pages`. Migrate thất bại thì cả `functions` lẫn `build` không chạy; `functions` thất bại không chặn việc đưa web lên.
    - **Lần deploy đầu tiên:** chưa có Edge Function nào thì job `functions` được bỏ qua (job `changes` đặt cờ functions = false khi `supabase/functions` không có `*/index.ts`, kể cả khi chạy tay với `functions = true`).
