@@ -268,6 +268,6 @@ test('the entry links from the tutor and speaking pages lead to the role-play sc
   await page.getByRole('link', { name: 'Đóng vai hội thoại với AI' }).click();
   await expect(page).toHaveURL(/\/app\/dong-vai$/);
   await page.goto('/app/luyen-noi');
-  await page.getByRole('link', { name: /Thử Đóng vai với AI/ }).click();
+  await page.getByRole('link', { name: 'Luyện hội thoại với đối tác AI' }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Đóng vai với AI' })).toBeVisible();
 });
