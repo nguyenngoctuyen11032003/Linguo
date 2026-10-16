@@ -28,15 +28,26 @@ const TRACKS: RouteTrack[] = [
       { x: 292, y: 186, label: 'Cấp 5–6', labelPosition: 'bottom', anchor: 'end' },
     ],
   },
+  {
+    id: 'ja',
+    color: '#E85D8A',
+    d: 'M28 290 C72 320 110 250 150 275 C190 300 230 240 270 260 C284 270 290 282 292 296',
+    stops: [
+      { x: 28, y: 290, label: 'Kana', labelPosition: 'top', anchor: 'start' },
+      { x: 150, y: 275, label: 'JLPT N5–N4', labelPosition: 'bottom' },
+      { x: 270, y: 260, label: 'N3–N2', labelPosition: 'top' },
+      { x: 292, y: 296, label: 'N1', labelPosition: 'bottom', anchor: 'end' },
+    ],
+  },
 ];
 
 // Badge centres as % of the 320x240 viewBox (x/320, y/240). Each sits in an empty pocket of the map, clear of both
 // tracks, every stop and every stop label by >= ~26 viewBox units (badge radius <= 17.6 + 8px float travel).
 //   Đọc (150,16) above the EN track; Nghe (212,118) and Nói (62,118) in the gap between the two tracks.
 const FLOATERS: Array<{ icon: LucideIcon; label: string; left: string; top: string; duration: number }> = [
-  { icon: BookOpen, label: 'Đọc', left: '46.9%', top: '6.7%', duration: 2.8 },
-  { icon: Headphones, label: 'Nghe', left: '66.3%', top: '49.2%', duration: 3.3 },
-  { icon: MessageCircle, label: 'Nói', left: '19.4%', top: '49.2%', duration: 2.5 },
+  { icon: BookOpen, label: 'Đọc', left: '46.9%', top: '4.8%', duration: 2.8 },
+  { icon: Headphones, label: 'Nghe', left: '66.3%', top: '35.8%', duration: 3.3 },
+  { icon: MessageCircle, label: 'Nói', left: '19.4%', top: '35.8%', duration: 2.5 },
 ];
 
 export function RouteSection() {
@@ -51,7 +62,7 @@ export function RouteSection() {
       aria-labelledby="route-title"
       className="relative overflow-x-clip bg-[linear-gradient(180deg,#0B1420_0%,#10283C_45%,#173E5B_75%,#3A2A2A_100%)] px-safe py-[clamp(64px,12vh,120px)]"
     >
-      <div ref={ref} className="mx-auto max-w-3xl">
+      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:grid min-[1024px]:max-w-5xl min-[1024px]:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] min-[1024px]:items-center min-[1024px]:gap-x-16">
         <motion.div variants={reveal('slideLeft', reduceMotion)} initial="hidden" animate={state}>
           <h2 id="route-title" className="font-display text-[clamp(48px,14vw,88px)] font-extrabold uppercase leading-[0.92] text-white">
             Một lộ trình
@@ -63,8 +74,8 @@ export function RouteSection() {
           </p>
         </motion.div>
 
-        <div className="relative -mx-2 mt-10 text-white">
-          <RouteLine title="Lộ trình tiếng Anh và tiếng Hàn: từ nền tảng tới C1–C2 và từ Hangul tới TOPIK II" viewBox="0 0 320 240" tracks={TRACKS} />
+        <div className="relative -mx-2 mt-10 text-white min-[1024px]:row-span-2 min-[1024px]:col-start-2 min-[1024px]:row-start-1 min-[1024px]:mt-0 min-[1024px]:mx-0">
+          <RouteLine title="Lộ trình tiếng Anh, tiếng Hàn và tiếng Nhật: từ nền tảng tới C1–C2, từ Hangul tới TOPIK II và từ Kana tới JLPT N1" viewBox="0 0 320 330" tracks={TRACKS} />
           {FLOATERS.map(({ icon: Icon, label, left, top, duration }, i) => (
             <motion.span
               key={label}
@@ -84,7 +95,7 @@ export function RouteSection() {
           ))}
         </div>
 
-        <ul className="mt-8 flex flex-wrap gap-3 text-sm font-medium text-white">
+        <ul className="mt-8 flex flex-wrap gap-3 text-sm font-medium text-white min-[1024px]:col-start-1 min-[1024px]:row-start-2 min-[1024px]:self-start">
           <li className="glass inline-flex min-h-10 items-center gap-2 rounded-full px-4">
             <span aria-hidden="true" className="size-2.5 rounded-full bg-[#4CA2D1]" />
             EN · Tiếng Anh (CEFR)
@@ -92,6 +103,10 @@ export function RouteSection() {
           <li className="glass inline-flex min-h-10 items-center gap-2 rounded-full px-4">
             <span aria-hidden="true" className="size-2.5 rounded-full bg-[#F37D25]" />
             KO · Tiếng Hàn (TOPIK)
+          </li>
+          <li className="glass inline-flex min-h-10 items-center gap-2 rounded-full px-4">
+            <span aria-hidden="true" className="size-2.5 rounded-full bg-[#E85D8A]" />
+            JA · Tiếng Nhật (JLPT)
           </li>
         </ul>
       </div>

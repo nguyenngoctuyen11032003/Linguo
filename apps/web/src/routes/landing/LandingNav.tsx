@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router';
 import { EXPO_OUT, reveal } from '@/design/motion';
 import { asset } from '@/lib/asset';
+import { InstallButton } from '@/features/pwa/InstallButton';
 import { useModalDialog } from '@/lib/useModalDialog';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
@@ -42,6 +43,7 @@ export function LandingNav({ ready }: { ready: boolean }) {
             </span>
           </Link>
           <div className="flex items-center gap-1">
+            <InstallButton className="hidden min-[560px]:inline-flex" />
             <Link
               to="/dang-nhap"
               className="hidden min-h-11 items-center rounded-full px-4 text-[14px] font-semibold text-white/85 transition-colors hover:text-white min-[380px]:inline-flex"

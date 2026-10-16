@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { m as motion } from 'motion/react';
 import { Link } from 'react-router';
+import { InstallButton } from '@/features/pwa/InstallButton';
 import { ArrowCTA } from '@/components/ui/ArrowCTA';
 import { reveal } from '@/design/motion';
 import { cn } from '@/lib/cn';
@@ -49,8 +50,9 @@ export function HeroSection() {
           <span className="inline-flex gap-1" aria-hidden="true">
             <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-primary">EN</span>
             <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-accent">KO</span>
+            <span className="rounded-full bg-[#E85D8A] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">JA</span>
           </span>
-          Tiếng Anh · Tiếng Hàn
+          Tiếng Anh · Hàn · Nhật
         </motion.p>
         <h1 id="hero-title" className="font-display text-[clamp(40px,14vw,136px)] font-extrabold uppercase leading-[0.92] tracking-[-0.01em]">
           <motion.span className="block whitespace-nowrap" variants={reveal('slideLeft', reduceMotion, 0)} initial="hidden" animate={state}>
@@ -71,7 +73,7 @@ export function HeroSection() {
           initial="hidden"
           animate={state}
         >
-          Lộ trình tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt — học bằng{' '}
+          Lộ trình tiếng Anh, tiếng Hàn và tiếng Nhật cá nhân hoá cho người Việt — học bằng{' '}
           <em className="font-serif text-[1.08em] text-text">nhớ lại chủ động</em>, ôn tập ngắt quãng và phản hồi có giải thích.
         </motion.p>
         <motion.div
@@ -84,6 +86,7 @@ export function HeroSection() {
           <Link to="/dang-nhap" className="inline-flex min-h-11 items-center px-2 text-[15px] font-semibold underline-offset-4 hover:underline">
             Tôi đã có tài khoản
           </Link>
+          <InstallButton className="min-[560px]:hidden" />
         </motion.div>
       </div>
     </section>

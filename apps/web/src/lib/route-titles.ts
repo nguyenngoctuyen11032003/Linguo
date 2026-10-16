@@ -2,7 +2,7 @@ import { matchPath } from 'react-router';
 
 export const APP_NAME = 'Linguo';
 /** Landing page title; keep it identical to `<title>` in index.html. */
-export const DEFAULT_TITLE = 'Linguo — Học tiếng Anh & tiếng Hàn thông minh';
+export const DEFAULT_TITLE = 'Linguo — Học tiếng Anh, Hàn, Nhật thông minh';
 export const NOT_FOUND_NAME = 'Không tìm thấy trang';
 
 /** Page names by route pattern (basename already stripped); the first match wins. `null` = the landing default. */

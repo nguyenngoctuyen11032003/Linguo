@@ -117,7 +117,7 @@ describe('LandingPage', () => {
     renderWithProviders(<LandingPage />, signedOut);
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Học thông minh/i);
     expect(screen.getAllByRole('link', { name: 'Bắt đầu miễn phí' })[0]).toHaveAttribute('href', '/dang-ky');
-    expect(screen.getByRole('img', { name: /Lộ trình tiếng Anh và tiếng Hàn/ })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: /Lộ trình tiếng Anh, tiếng Hàn và tiếng Nhật/ })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Nhớ lại chủ động' })).toBeInTheDocument();
     expect(screen.getByText(/không hứa “thành thạo siêu tốc”/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Quyền riêng tư' })).toHaveAttribute('href', '/quyen-rieng-tu');

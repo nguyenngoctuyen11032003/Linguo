@@ -60,7 +60,7 @@ export function SignUpPage() {
   return (
     <AuthCard
       title="Tạo tài khoản"
-      subtitle="Miễn phí. Bạn có thể học tiếng Anh và tiếng Hàn trên cùng một tài khoản."
+      subtitle="Miễn phí. Bạn có thể học tiếng Anh, tiếng Hàn và tiếng Nhật trên cùng một tài khoản."
       footer={
         <>
           Đã có tài khoản?{' '}

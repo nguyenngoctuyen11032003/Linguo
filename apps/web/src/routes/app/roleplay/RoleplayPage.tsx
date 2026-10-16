@@ -141,7 +141,7 @@ export function RoleplayPage() {
       <EmptyState
         icon={MessagesSquare}
         title="Chưa có tình huống cho ngôn ngữ này"
-        description="Đóng vai hội thoại hiện có cho tiếng Anh và tiếng Hàn."
+        description="Đóng vai hội thoại hiện có cho tiếng Anh, tiếng Hàn và tiếng Nhật."
       />
     );
   }

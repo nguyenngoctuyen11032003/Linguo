@@ -21,5 +21,6 @@ export { useSwUpdate, type SwUpdate } from './useSwUpdate';
 export { UpdateToast, type UpdateToastProps } from './UpdateToast';
 export { captureInstallPrompt, useInstallPrompt, type InstallPrompt, type InstallStatus } from './useInstallPrompt';
 export { InstallAppSection } from './InstallAppSection';
+export { InstallButton } from './InstallButton';
 export { onNotificationClicked, type NotificationClick } from './notification-click';
 export { isBusyRoute } from './busy-route';
