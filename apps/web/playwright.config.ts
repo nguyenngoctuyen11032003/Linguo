@@ -18,6 +18,9 @@ export default defineConfig({
     // The preview build registers the spec 10 service worker; page.route() mocks cannot see requests a worker makes,
     // so every spec runs without it. pwa.spec.ts opts back in with test.use({ serviceWorkers: 'allow' }).
     serviceWorkers: 'block',
+    // No spec depends on motion, and the looping loader/skeleton/ambient animations kept CI runners busy enough
+    // to be shut down mid-run; specs that call emulateMedia() still get reduced motion.
+    contextOptions: { reducedMotion: 'reduce' },
   },
   projects: [
     { name: 'iphone-se', use: { ...devices['iPhone SE'] } }, // 320px wide: the narrowest supported width
