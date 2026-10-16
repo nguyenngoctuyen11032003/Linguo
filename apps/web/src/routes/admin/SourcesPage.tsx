@@ -64,7 +64,7 @@ export function SourcesPage() {
                   <tr key={source.id} className="border-t border-border align-top">
                     <th scope="row" className="px-4 py-3 font-normal">
                       {href ? (
-                        <a href={href} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline-offset-4 hover:underline">
+                        <a href={href} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 min-w-11 items-center rounded-lg font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40">
                           {source.name}
                         </a>
                       ) : (

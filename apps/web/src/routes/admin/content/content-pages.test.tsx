@@ -23,7 +23,10 @@ describe('ContentListPage', () => {
     renderAdmin('/quan-tri/noi-dung?ngon-ngu=en&trang=2');
     const table = await screen.findByRole('table', { name: 'Bài học, trang 2' });
     expect(listCalls()[0]).toEqual({ p_kind: 'lesson', p_language: 'en', p_status: null, p_search: null, p_limit: 25, p_offset: 25 });
-    expect(within(table).getByRole('link', { name: 'Bài 1' })).toHaveAttribute('href', '/quan-tri/noi-dung/lesson/e0000000-0000-4000-8000-100000000000');
+    const rowLink = within(table).getByRole('link', { name: 'Bài 1' });
+    expect(rowLink).toHaveAttribute('href', '/quan-tri/noi-dung/lesson/e0000000-0000-4000-8000-100000000000');
+    // Each row's primary link is a ≥44px touch target (UX audit).
+    expect(rowLink).toHaveClass('min-h-11', 'min-w-11');
     expect(screen.getByText('Hiển thị 26–50 trên 60 mục')).toBeInTheDocument();
     expect(screen.getByText('Trang 2 / 3')).toBeInTheDocument();
   });

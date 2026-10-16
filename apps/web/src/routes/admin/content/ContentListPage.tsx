@@ -212,7 +212,7 @@ export function ContentListPage() {
                     <Link
                       to={contentDetailPath(row.kind, row.id)}
                       state={{ openReports: row.open_reports }}
-                      className="font-semibold text-primary underline-offset-2 hover:underline"
+                      className="inline-flex min-h-11 min-w-11 items-center rounded-lg font-semibold text-primary underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
                     >
                       {row.label}
                     </Link>

@@ -8,7 +8,7 @@ export interface NavItem {
   end?: boolean;
 }
 
-/** Bottom bar (mobile) shows these 4 + "Thêm". Sidebar (desktop ≥1024px) shows all 8 (PRD 12.2). */
+/** Bottom bar (mobile) shows these 4 + "Thêm" (MORE_NAV). Sidebar (desktop ≥1024px) shows every PRIMARY_NAV and MORE_NAV item, plus TEACHER_NAV_ITEM for teachers (PRD 12.2). */
 export const PRIMARY_NAV: NavItem[] = [
   { to: '/app', label: 'Trang chủ', icon: House, end: true },
   { to: '/app/hoc-tap', label: 'Học tập', icon: BookOpen },

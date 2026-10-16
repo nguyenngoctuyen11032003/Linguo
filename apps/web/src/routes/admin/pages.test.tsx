@@ -48,7 +48,10 @@ describe('SourcesPage', () => {
     });
     renderAdmin('/quan-tri/nguon');
     const table = await screen.findByRole('table', { name: 'Danh sách nguồn nội dung' });
-    expect(within(table).getByRole('link', { name: 'Tatoeba' })).toHaveAttribute('href', 'https://tatoeba.org/');
+    const link = within(table).getByRole('link', { name: 'Tatoeba' });
+    expect(link).toHaveAttribute('href', 'https://tatoeba.org/');
+    // Each row's primary link is a ≥44px touch target (UX audit).
+    expect(link).toHaveClass('min-h-11', 'min-w-11');
     expect(within(table).queryByRole('link', { name: 'Lạ' })).not.toBeInTheDocument();
     expect(within(table).getByText('Chưa khai báo')).toBeInTheDocument();
   });

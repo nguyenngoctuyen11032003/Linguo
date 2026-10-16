@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { StaffRole } from '@linguo/shared';
 import { ArrowLeft, BarChart3, BookOpen, Flag, LayoutDashboard, Library, ScrollText, Users, type LucideIcon } from 'lucide-react';
-import { Link, NavLink, Outlet } from 'react-router';
+import { Link, NavLink, Outlet, useLocation } from 'react-router';
 import { breakOutOfFrame, isFramed } from '@/features/admin/frame-guard';
 import { STAFF_ROLE_LABELS_VI, hasStaffRole } from '@/features/admin/service';
 import { useAdminRole } from '@/features/admin/useStaffRole';
@@ -46,6 +46,25 @@ function useNoIndex() {
   }, []);
 }
 
+/**
+ * On phones the admin nav is one sideways-scrolling row; after each navigation, scroll that row (never the page) so
+ * the current tab is fully visible. A no-op when the row fits or is a column (desktop).
+ */
+function useCurrentTabInView(list: HTMLUListElement | null, pathname: string, itemCount: number) {
+  useEffect(() => {
+    if (!list || list.scrollWidth <= list.clientWidth) return;
+    const active = list.querySelector<HTMLElement>('[aria-current="page"]');
+    if (!active) return;
+    const start = active.offsetLeft;
+    const end = start + active.offsetWidth;
+    if (start >= list.scrollLeft && end <= list.scrollLeft + list.clientWidth) return;
+    const left = Math.max(0, start - (list.clientWidth - active.offsetWidth) / 2);
+    const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+    if (typeof list.scrollTo === 'function') list.scrollTo({ left, behavior: reduceMotion ? 'auto' : 'smooth' });
+    else list.scrollLeft = left;
+  }, [list, pathname, itemCount]);
+}
+
 /** What an embedded copy shows instead of the admin pages: nothing sensitive, only a way to open the real page. */
 function FramedNotice() {
   useEffect(() => {
@@ -64,11 +83,15 @@ function FramedNotice() {
 /** Compact staff layout: desktop first (side nav), a scrolling tab row on small screens. */
 export function AdminLayout() {
   const role = useAdminRole();
+  const { pathname } = useLocation();
+  const [navList, setNavList] = useState<HTMLUListElement | null>(null);
+  const items = ADMIN_NAV.filter((item) => !item.minRole || hasStaffRole(role, item.minRole));
   useNoIndex();
+  // Re-run when the role arrives too: admin-only tabs (and so the current one) may appear after the first render.
+  useCurrentTabInView(navList, pathname, items.length);
   // Evaluated once per mount: a page cannot move between being framed and not.
   const [framed] = useState(() => isFramed());
   if (framed) return <FramedNotice />;
-  const items = ADMIN_NAV.filter((item) => !item.minRole || hasStaffRole(role, item.minRole));
 
   return (
     <div className="min-h-hero bg-bg">
@@ -92,7 +115,12 @@ export function AdminLayout() {
       </header>
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-6 lg:px-safe">
         <nav aria-label="Điều hướng quản trị" className="border-b border-border lg:border-b-0 lg:py-6">
-          <ul className="flex flex-wrap gap-1 px-safe py-2 lg:flex-col lg:p-0">
+          {/* Below lg: one row that scrolls sideways (the page itself never does). `relative` makes the row the links'
+              offsetParent for useCurrentTabInView; the vertical padding keeps focus rings unclipped. */}
+          <ul
+            ref={setNavList}
+            className="relative flex flex-nowrap gap-1 overflow-x-auto overscroll-x-contain px-safe py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-col lg:overflow-visible lg:p-0"
+          >
             {items.map((item) => (
               <li key={item.to} className="shrink-0">
                 <NavLink
@@ -112,7 +140,7 @@ export function AdminLayout() {
             ))}
           </ul>
         </nav>
-        <main id="main" className="min-w-0 px-safe pb-12 pt-5 lg:px-0 lg:pt-6">
+        <main id="main" tabIndex={-1} className="min-w-0 focus:outline-none px-safe pb-12 pt-5 lg:px-0 lg:pt-6">
           <Outlet />
         </main>
       </div>

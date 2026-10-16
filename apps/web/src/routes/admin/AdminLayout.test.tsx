@@ -21,8 +21,50 @@ describe('AdminLayout frame guard', () => {
     renderAdmin('/quan-tri');
     expect(await screen.findByRole('navigation', { name: 'Điều hướng quản trị' })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Tổng quan' })).toHaveAttribute('aria-current', 'page');
-    expect(screen.getByRole('navigation', { name: 'Điều hướng quản trị' }).querySelector('ul')).toHaveClass('flex-wrap');
+    // One sideways-scrolling row on phones, never wrapped into several rows (UX audit, 320px).
+    const list = screen.getByRole('navigation', { name: 'Điều hướng quản trị' }).querySelector('ul');
+    expect(list).toHaveClass('flex-nowrap', 'overflow-x-auto', 'lg:flex-col');
+    expect(list).not.toHaveClass('flex-wrap');
     expect(mocks.breakOutOfFrame).not.toHaveBeenCalled();
+  });
+
+  it('makes the skip-link target focusable from script but not a tab stop', async () => {
+    routeRpcs(mocks.rpc, { staff_role: { data: 'editor' }, admin_content_overview: { data: null, error: { message: 'x', code: 'X' } } });
+    renderAdmin('/quan-tri');
+    await screen.findByRole('navigation', { name: 'Điều hướng quản trị' });
+    expect(screen.getByRole('link', { name: 'Bỏ qua tới nội dung' })).toHaveAttribute('href', '#main');
+    const main = document.getElementById('main');
+    expect(main?.tagName).toBe('MAIN');
+    expect(main).toHaveAttribute('tabindex', '-1');
+  });
+
+  it('scrolls the tab row (not the page) so the current tab is visible when the row overflows', async () => {
+    const scrollTo = vi.fn();
+    const proto = HTMLElement.prototype as HTMLElement & { scrollTo?: unknown };
+    const originalScrollTo = proto.scrollTo;
+    proto.scrollTo = scrollTo;
+    const isActive = (el: HTMLElement) => el.getAttribute('aria-current') === 'page';
+    const spies = [
+      vi.spyOn(HTMLElement.prototype, 'scrollWidth', 'get').mockReturnValue(800),
+      vi.spyOn(HTMLElement.prototype, 'clientWidth', 'get').mockReturnValue(320),
+      vi.spyOn(HTMLElement.prototype, 'offsetLeft', 'get').mockImplementation(function (this: HTMLElement) {
+        return isActive(this) ? 600 : 0;
+      }),
+      vi.spyOn(HTMLElement.prototype, 'offsetWidth', 'get').mockReturnValue(100),
+    ];
+    try {
+      routeRpcs(mocks.rpc, { staff_role: { data: 'admin' } });
+      renderAdmin('/quan-tri/nhat-ky');
+      expect(await screen.findByRole('link', { name: 'Nhật ký' })).toHaveAttribute('aria-current', 'page');
+      await vi.waitFor(() => expect(scrollTo).toHaveBeenCalled());
+      // Centred in a 320px row: 600 - (320 - 100) / 2.
+      expect(scrollTo).toHaveBeenLastCalledWith(expect.objectContaining({ left: 490 }));
+      expect(scrollTo.mock.contexts.at(-1)).toBe(screen.getByRole('navigation', { name: 'Điều hướng quản trị' }).querySelector('ul'));
+    } finally {
+      spies.forEach((spy) => spy.mockRestore());
+      if (originalScrollTo === undefined) delete proto.scrollTo;
+      else proto.scrollTo = originalScrollTo;
+    }
   });
 
   it('renders nothing sensitive inside a frame, breaks out and does not load admin data', async () => {
