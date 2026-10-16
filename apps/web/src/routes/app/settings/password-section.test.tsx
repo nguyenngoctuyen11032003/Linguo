@@ -36,10 +36,17 @@ function render(user: User = EMAIL_USER) {
   return renderWithProviders(<PasswordSection />, { route: '/app/cai-dat', auth: { user } });
 }
 
+/** Pastes rather than types each value: one input event per field keeps the test fast under load. */
+async function enter(label: string, value: string) {
+  if (!value) return;
+  await userEvent.click(screen.getByLabelText(label));
+  await userEvent.paste(value);
+}
+
 async function fill(current: string, password: string, confirm = password) {
-  if (current) await userEvent.type(screen.getByLabelText('Mật khẩu hiện tại'), current);
-  if (password) await userEvent.type(screen.getByLabelText('Mật khẩu mới'), password);
-  if (confirm) await userEvent.type(screen.getByLabelText('Nhập lại mật khẩu mới'), confirm);
+  await enter('Mật khẩu hiện tại', current);
+  await enter('Mật khẩu mới', password);
+  await enter('Nhập lại mật khẩu mới', confirm);
   await userEvent.click(screen.getByRole('button', { name: 'Đổi mật khẩu' }));
 }
 
