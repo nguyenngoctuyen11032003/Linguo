@@ -8,3 +8,4 @@ afd37deee0d0ce20bf7361699ad8feebc1d643bc:scripts/content-import.test.mjs:generic
 c6e88e1faed905c70b814a76f784d888b15a8fb1:scripts/check-public-env.test.mjs:generic-api-key:34
 1dc1e9002349032adbe964418834a4481c748acf:scripts/check-public-env.test.mjs:generic-api-key:6
 12aa46dde5f4b715e8cf04480c276147837cac2a:docs/superpowers/plans/2026-10-13-lexipath-foundation.md:generic-api-key:6481
+2505af7ec7555d4ec506f2eefd95871726e29a87:apps/web/src/features/personal-vocab/outbox.test.tsx:generic-api-key:191
