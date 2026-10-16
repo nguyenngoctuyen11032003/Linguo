@@ -9,7 +9,7 @@ language: en
 title:
   vi: Tiếng Anh cao cấp (C1-C2)
 description:
-  vi: Bốn unit cho trình độ C1-C2. Unit 1 - văn phong học thuật và chuyên nghiệp - rào đón, danh từ hoá, collocation, câu chẻ, đảo ngữ, từ nối trang trọng, email và tóm tắt báo cáo. Unit 2 - sắc thái và thành ngữ - từ gần nghĩa khác sắc thái khen chê, thành ngữ và cụm động từ nhiều nghĩa, giả định cách, tỉnh lược, nói giảm và nhấn mạnh. Unit 3 - thuyết trình, thuyết phục và tranh luận - signposting, biện pháp tu từ, nhượng bộ, trạng từ quan điểm, hỏi đáp và phản bác. Unit 4 - đọc phản biện và viết luận - tóm tắt, diễn đạt lại, đánh giá lập luận và ngụy biện, bài luận nghị luận, chuyển đổi văn phong.
+  vi: Sáu unit cho trình độ C1-C2. Unit 1 - văn phong học thuật và chuyên nghiệp - rào đón, danh từ hoá, collocation, câu chẻ, đảo ngữ, từ nối trang trọng, email và tóm tắt báo cáo. Unit 2 - sắc thái và thành ngữ - từ gần nghĩa khác sắc thái khen chê, thành ngữ và cụm động từ nhiều nghĩa, giả định cách, tỉnh lược, nói giảm và nhấn mạnh. Unit 3 - thuyết trình, thuyết phục và tranh luận - signposting, biện pháp tu từ, nhượng bộ, trạng từ quan điểm, hỏi đáp và phản bác. Unit 4 - đọc phản biện và viết luận - tóm tắt, diễn đạt lại, đánh giá lập luận và ngụy biện, bài luận nghị luận, chuyển đổi văn phong. Unit 5 - diễn ngôn và sắc thái trong giao tiếp - từ đánh dấu diễn ngôn khi nói, sắc thái của động từ khuyết thiếu (bound to, may well, might as well), câu điều kiện không dùng if (were to, but for, supposing, in the event of), đảo ngữ nhượng bộ (Strange as it may seem). Unit 6 - khoa học, đạo đức và tranh luận xã hội - cụm danh từ phức, cấu tạo từ nâng cao, thành ngữ về rủi ro và thay đổi, ngôn ngữ tranh luận đạo đức.
 kind: core
 goal_types: []
 level_from: c1
