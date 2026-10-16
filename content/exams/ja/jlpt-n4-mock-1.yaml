@@ -1,0 +1,731 @@
+# Bài luyện mô phỏng JLPT N4 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
+# không chép đề thật hay sách luyện thi có bản quyền. Nghe: lời thoại trong `script`, ứng dụng đọc bằng giọng máy
+# khi chưa có audio (audio_asset_id: null).
+#
+# Giả định về cấu trúc và thang điểm (ghi lại để người duyệt kiểm tra):
+# - JLPT N4 thật có 2 phần tính điểm: "Kiến thức ngôn ngữ (chữ, từ vựng, ngữ pháp) · Đọc hiểu" 0–120 và "Nghe" 0–60,
+#   tổng 180; đỗ khi tổng ≥ 90 và mỗi phần đạt điểm liệt (38/120, 19/60). Schema đề chỉ có listening/reading/writing,
+#   nên toàn bộ phần chữ – từ vựng – ngữ pháp – đọc hiểu nằm ở `reading` (section_max 120), phần nghe ở `listening` (60).
+# - Ứng dụng chỉ xếp bậc theo tổng điểm quy đổi; điểm liệt từng phần KHÔNG được kiểm tra (ghi trong source_note_vi).
+#   Đề N4 chỉ có một bậc (n4): đề JLPT thật không xếp N5 cho người trượt N4.
+# - Điểm mỗi câu (`points`) là trọng số do Linguo đặt: JLPT dùng thang điểm quy đổi (equating) và không công bố điểm
+#   từng câu. Câu đọc đoạn văn nặng hơn câu từ vựng vì mất nhiều thời gian hơn.
+# - Thứ tự phần trong app là nghe → đọc (quy ước chung của mọi đề), còn đề thật thi chữ – từ vựng, ngữ pháp – đọc trước,
+#   nghe sau.
+# - Thời gian rút gọn theo số câu: đề thật N4 có 25 + 55 phút cho kiến thức ngôn ngữ · đọc hiểu và 35 phút nghe.
+# - Câu chữ theo lối đề N4: có khoảng trắng giữa các cụm từ, Kanji đến cấp N4. Kanji vượt cấp được viết bằng kana thay
+#   cho furigana (đề không hỗ trợ furigana).
+# - Câu bị hỏi trong đoạn được đánh dấu bằng 【 】 thay cho gạch chân của đề giấy; chỗ trống là （　）, vị trí hỏi
+#   trong câu sắp xếp là ★.
+# - Câu "nói gì trong tình huống" và "đáp lại ngay" có 3 phương án như đề thật; các câu khác có 4.
+schema_version: 1
+demo: false
+language: ja
+form:
+  key: ja:exam:jlpt-n4-mock-1
+  family: jlpt
+  title_vi: JLPT N4 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng rút gọn theo cấu trúc JLPT N4: 10 câu nghe và 21 câu chữ Hán – từ vựng – ngữ pháp – đọc hiểu.
+    Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo.
+  level_from: n4
+  level_to: n4
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 15
+    reading: 35
+  scoring:
+    verified: true
+    source_note_vi: >-
+      Đã đối chiếu ngày 16/10/2026 với jlpt.jp (mục kết quả thi): N4 gồm Kiến thức ngôn ngữ · Đọc hiểu 0–120 và Nghe
+      0–60, tổng 180, đỗ từ 90 điểm và mỗi phần phải đạt điểm liệt (38 và 19). Ứng dụng chỉ quy đổi tổng điểm, không
+      xét điểm liệt từng phần.
+    section_max:
+      listening: 60
+      reading: 120
+    bands:
+      - { level_code: n4, min_total: 90 }
+    pass_ratio: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+questions:
+  # ============================== NGHE (聴解) ==============================
+  # --- Hiểu yêu cầu (課題理解) ---
+  - key: ja:examq:jlpt-n4-m1-l01
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n4
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại giữa sinh viên và giáo viên, chọn việc sinh viên làm ĐẦU TIÊN.
+      stem: 男の 学生は まず 何を しますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の学生：先生、レポートを 持って きました。
+        先生：ありがとう。あれ、名前が 書いて ありませんね。
+        男の学生：あ、すみません。
+        先生：それから、3ページ目の 字が 小さくて 読みにくいので、大きく 書きなおして ください。でも、それは 来週まででいいですよ。
+        男の学生：はい。じゃあ、今 すぐ 名前を 書きます。
+      options:
+        - { id: a, text: "レポートに 名前を 書く", lang: ja }
+        - { id: b, text: "3ページ目を 書きなおす", lang: ja }
+        - { id: c, text: "レポートを 先生に 持って くる", lang: ja }
+        - { id: d, text: "来週 先生に 会いに 行く", lang: ja }
+    answer: a
+    explanation:
+      vi: "Sinh viên nói “今 すぐ 名前を 書きます” (tôi viết tên ngay bây giờ), nên việc đầu tiên là ghi tên. Viết lại trang 3 cũng phải làm, nhưng giáo viên cho hạn “来週まで” (đến tuần sau), nên đó không phải việc làm trước."
+
+  - key: ja:examq:jlpt-n4-m1-l02
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n4
+    points: 3
+    prompt:
+      instruction_vi: Nghe cuộc gọi điện thoại và chọn những thứ người đàn ông sẽ mua về.
+      stem: 男の 人は 何を 買って 帰りますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：もしもし、今 スーパーに いるんだけど、何か 買って 帰ろうか。
+        女の人：ありがとう。じゃあ、たまごと 牛乳、お願い。
+        男の人：パンは？ たしか もう なかったよね。
+        女の人：パンは けさ 買ったから、だいじょうぶ。あ、それから、トマトも 三つ お願い。
+        男の人：わかった。
+      options:
+        - { id: a, text: "たまごと 牛乳と トマト", lang: ja }
+        - { id: b, text: "たまごと 牛乳と パン", lang: ja }
+        - { id: c, text: "たまごと パンと トマト", lang: ja }
+        - { id: d, text: "牛乳と パンと トマト", lang: ja }
+    answer: a
+    explanation:
+      vi: "Người vợ nhờ mua trứng và sữa, rồi thêm 3 quả cà chua. Bánh mì là bẫy: người chồng hỏi, nhưng vợ trả lời “けさ 買ったから、だいじょうぶ” (sáng nay mua rồi nên không cần)."
+
+  - key: ja:examq:jlpt-n4-m1-l03
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n4
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại ở cơ quan hành chính và chọn nơi người phụ nữ đến TRƯỚC TIÊN.
+      stem: 女の 人は まず どこへ 行きますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：すみません、パスポートを 作りたいんですが、どこへ 行けば いいですか。
+        男の人：パスポートは 2階の 5番の まどぐちです。でも、その 前に 1階で 写真を とって ください。
+        女の人：写真は もう 持って います。
+        男の人：あ、そうですか。じゃあ、そのまま 2階へ どうぞ。
+      options:
+        - { id: a, text: "2階の 5番の まどぐち", lang: ja }
+        - { id: b, text: "1階の 写真を とる ところ", lang: ja }
+        - { id: c, text: "5階の 2番の まどぐち", lang: ja }
+        - { id: d, text: "1階の 5番の まどぐち", lang: ja }
+    answer: a
+    explanation:
+      vi: "Thông thường phải chụp ảnh ở tầng 1 trước, nhưng người phụ nữ đã có ảnh nên được bảo “そのまま 2階へ どうぞ” (cứ lên thẳng tầng 2). Phương án b là bẫy cho người chỉ nghe nửa đầu; phương án c đảo số tầng và số quầy."
+
+  # --- Hiểu điểm chính (ポイント理解) ---
+  - key: ja:examq:jlpt-n4-m1-l04
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n4
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại và chọn lý do người đàn ông chuyển nhà.
+      stem: 男の 人は どうして 引っ越しますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：木村さん、来月 引っ越すんですって？ 今の アパート、駅から 近くて 便利でしょう。
+        男の人：ええ、便利なんですけど、となりの 部屋の 人が 夜 おそくまで うるさくて、よく ねられないんです。
+        女の人：それは 大変ですね。
+        男の人：新しい アパートは 駅から 少し 遠いですけど、しずかなんですよ。
+      options:
+        - { id: a, text: "となりの 人が うるさいから", lang: ja }
+        - { id: b, text: "駅から 遠いから", lang: ja }
+        - { id: c, text: "部屋が せまいから", lang: ja }
+        - { id: d, text: "家賃が 高いから", lang: ja }
+    answer: a
+    explanation:
+      vi: "Anh ấy nói người phòng bên ồn đến khuya nên “よく ねられないんです” (không ngủ được): đó là lý do chuyển nhà. “駅から 遠い” là bẫy: chính căn hộ MỚI mới xa ga, còn căn hiện tại thì gần ga và tiện."
+
+  - key: ja:examq:jlpt-n4-m1-l05
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n4
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại và chọn việc người phụ nữ đã làm vào thứ Bảy.
+      stem: 女の 人は 土曜日に 何を しましたか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：週末は どうでしたか。山に 登ると 言って いましたね。
+        女の人：ええ、そのつもりだったんですが、土曜日は 雨が ひどくて…。それで、友だちと 映画を 見に 行きました。
+        男の人：日曜日は？
+        女の人：日曜日は 晴れましたけど、つかれて いたので、一日中 家で 休みました。
+      options:
+        - { id: a, text: "映画を 見に 行った", lang: ja }
+        - { id: b, text: "山に 登った", lang: ja }
+        - { id: c, text: "家で 休んだ", lang: ja }
+        - { id: d, text: "友だちの 家へ 行った", lang: ja }
+    answer: a
+    explanation:
+      vi: "Thứ Bảy mưa to nên cô ấy không leo núi mà “友だちと 映画を 見に 行きました” (đi xem phim với bạn). “家で 休んだ” là việc của Chủ nhật; leo núi chỉ là dự định (つもり) không thực hiện."
+
+  - key: ja:examq:jlpt-n4-m1-l06
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n4
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại ở công ty và chọn ngày cuộc họp được dời sang.
+      stem: 会議は 何曜日に なりましたか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：部長、来週の 会議ですが、月曜日の 予定でしたよね。
+        男の人：ああ、月曜日は 出張が 入ったので、水曜日に して もらえますか。
+        女の人：すみません、水曜日は 会議室が 使えないんです。木曜日は どうでしょうか。
+        男の人：じゃあ、木曜日に しましょう。
+      options:
+        - { id: a, text: "月曜日", lang: ja }
+        - { id: b, text: "火曜日", lang: ja }
+        - { id: c, text: "水曜日", lang: ja }
+        - { id: d, text: "木曜日", lang: ja }
+    answer: d
+    explanation:
+      vi: "Thứ Hai trưởng phòng đi công tác, thứ Tư phòng họp không dùng được, nên hai người chốt “木曜日に しましょう” (thứ Năm). 水曜日 là bẫy vì được đề nghị trước nhưng bị từ chối."
+
+  # --- Nói gì trong tình huống (発話表現) ---
+  - key: ja:examq:jlpt-n4-m1-l07
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_utterance
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Nghe tình huống và chọn câu nói phù hợp.
+      stem: この とき、何と 言いますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        友だちの ノートを 借りたいです。友だちに 何と 言いますか。
+      options:
+        - { id: a, text: "ノート、貸して くれない？", lang: ja }
+        - { id: b, text: "ノート、借りて くれない？", lang: ja }
+        - { id: c, text: "ノート、貸して あげようか。", lang: ja }
+    answer: a
+    explanation:
+      vi: "貸す là “cho mượn”, 借りる là “mượn”; bạn muốn bạn mình CHO mượn nên nói “貸して くれない？”. “借りて くれない？” nghĩa là “mượn giùm mình nhé?”, còn “貸して あげようか” là mình đề nghị cho bạn mượn, ngược hướng."
+
+  - key: ja:examq:jlpt-n4-m1-l08
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_utterance
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Nghe tình huống và chọn câu nói phù hợp.
+      stem: この とき、何と 言いますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        先生の 部屋で 話が 終わりました。これから 部屋を 出ます。何と 言いますか。
+      options:
+        - { id: a, text: "失礼しました。", lang: ja }
+        - { id: b, text: "いらっしゃいませ。", lang: ja }
+        - { id: c, text: "お待たせしました。", lang: ja }
+    answer: a
+    explanation:
+      vi: "Khi rời phòng giáo viên hoặc cấp trên, người Nhật nói “失礼しました” (xin phép, tôi đã làm phiền). “いらっしゃいませ” là câu nhân viên cửa hàng chào khách, còn “お待たせしました” là xin lỗi vì để người khác chờ."
+
+  # --- Đáp lại ngay (即時応答) ---
+  - key: ja:examq:jlpt-n4-m1-l09
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: ただしい こたえを えらんで ください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：すみません、この 荷物、ちょっと 持って いただけませんか。
+      options:
+        - { id: a, text: "ええ、いいですよ。", lang: ja }
+        - { id: b, text: "はい、持って いただきます。", lang: ja }
+        - { id: c, text: "いいえ、持って いません。", lang: ja }
+    answer: a
+    explanation:
+      vi: "“〜て いただけませんか” là lời nhờ lịch sự (anh/chị cầm giúp được không?), nên đồng ý bằng “ええ、いいですよ”. “持って いただきます” dùng sai hướng: いただく là mình nhận việc người khác làm cho, không dùng để nói mình làm giúp."
+
+  - key: ja:examq:jlpt-n4-m1-l10
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: ただしい こたえを えらんで ください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：すみません、ここで たばこを 吸っても いいですか。
+      options:
+        - { id: a, text: "すみません、ここは きんえんなんです。", lang: ja }
+        - { id: b, text: "ええ、吸って いました。", lang: ja }
+        - { id: c, text: "いいえ、たばこです。", lang: ja }
+    answer: a
+    explanation:
+      vi: "“〜ても いいですか” là xin phép, nên từ chối lịch sự bằng “すみません、ここは きんえんなんです” (xin lỗi, ở đây cấm hút thuốc). “吸って いました” kể việc đã xảy ra, không trả lời câu xin phép."
+
+  # ============================== CHỮ – TỪ VỰNG – NGỮ PHÁP – ĐỌC (言語知識・読解) ==============================
+  # --- Đọc Kanji (漢字読み) ---
+  - key: ja:examq:jlpt-n4-m1-r01
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の ことばは ひらがなで どう かきますか。
+      stem_lang: ja
+      passage: 【近所】の スーパーは 夜 10時まで 開いて います。
+      options:
+        - { id: a, text: "きんじょ", lang: ja }
+        - { id: b, text: "きんしょ", lang: ja }
+        - { id: c, text: "きんじょう", lang: ja }
+        - { id: d, text: "ちかしょ", lang: ja }
+    answer: a
+    explanation:
+      vi: "近所 (hàng xóm, khu gần nhà) đọc là きんじょ: 所 ở đây đục thành じょ và không có trường âm. ちかしょ ghép cách đọc thuần Nhật của 近 (ちかい) một cách sai, vì từ Hán ghép này đọc theo âm Hán."
+
+  - key: ja:examq:jlpt-n4-m1-r02
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の ことばは ひらがなで どう かきますか。
+      stem_lang: ja
+      passage: この 料理は 【味】が うすいです。
+      options:
+        - { id: a, text: "あじ", lang: ja }
+        - { id: b, text: "あし", lang: ja }
+        - { id: c, text: "み", lang: ja }
+        - { id: d, text: "いろ", lang: ja }
+    answer: a
+    explanation:
+      vi: "味 đứng một mình đọc là あじ (vị), 味が うすい là “vị nhạt”. み cũng là cách đọc của 味 nhưng chỉ dùng trong từ ghép như 意味 (いみ, ý nghĩa); あし là “chân”, いろ là “màu”."
+
+  - key: ja:examq:jlpt-n4-m1-r03
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の ことばは ひらがなで どう かきますか。
+      stem_lang: ja
+      passage: 【急行】に 乗れば、30分で 着きます。
+      options:
+        - { id: a, text: "きゅうこう", lang: ja }
+        - { id: b, text: "きゅうごう", lang: ja }
+        - { id: c, text: "きょうこう", lang: ja }
+        - { id: d, text: "きゅこう", lang: ja }
+    answer: a
+    explanation:
+      vi: "急行 (tàu tốc hành) đọc là きゅうこう, cả hai âm đều có trường âm và こう không đục. Hãy phân biệt きゅう (急) với きょう: hai âm này khác nhau, người Việt dễ nghe lẫn."
+
+  # --- Viết bằng Kanji (表記) ---
+  - key: ja:examq:jlpt-n4-m1-r04
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_writing
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách viết đúng của từ trong ngoặc 【 】.
+      stem: 【 】の ことばは どう かきますか。
+      stem_lang: ja
+      passage: きのうの 【しあい】に 負けて、とても ざんねんでした。
+      options:
+        - { id: a, text: "試合", lang: ja }
+        - { id: b, text: "試会", lang: ja }
+        - { id: c, text: "式合", lang: ja }
+        - { id: d, text: "誠合", lang: ja }
+    answer: a
+    explanation:
+      vi: "しあい (trận đấu) viết là 試合: 試 (thử) + 合 (hợp). 会 (かい, あう — gặp) gần nghĩa nên dễ nhầm, nhưng từ này dùng 合; 式 (しき, nghi thức) thiếu bộ ngôn 言 bên trái."
+
+  - key: ja:examq:jlpt-n4-m1-r05
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_writing
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách viết đúng của từ trong ngoặc 【 】.
+      stem: 【 】の ことばは どう かきますか。
+      stem_lang: ja
+      passage: 毎朝 30分 【はしって】 います。
+      options:
+        - { id: a, text: "走って", lang: ja }
+        - { id: b, text: "歩って", lang: ja }
+        - { id: c, text: "足って", lang: ja }
+        - { id: d, text: "起って", lang: ja }
+    answer: a
+    explanation:
+      vi: "はしる (chạy) viết là 走る, nên はしって là 走って. 歩 là chữ của あるく (đi bộ, 歩いて), còn 足 (あし) là “chân”: cùng chủ đề vận động nên dễ nhầm."
+
+  - key: ja:examq:jlpt-n4-m1-r06
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_writing
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách viết đúng của từ trong ngoặc 【 】.
+      stem: 【 】の ことばは どう かきますか。
+      stem_lang: ja
+      passage: 駅の 前で 友だちを 1時間 【まちました】。
+      options:
+        - { id: a, text: "待ちました", lang: ja }
+        - { id: b, text: "持ちました", lang: ja }
+        - { id: c, text: "特ちました", lang: ja }
+        - { id: d, text: "時ちました", lang: ja }
+    answer: a
+    explanation:
+      vi: "まつ (chờ) viết là 待つ, bộ bên trái là 彳 (bước đi). 持つ (もつ, cầm) có bộ tay 扌 và cùng phần 寺 bên phải nên rất dễ nhầm; 特 và 時 không phải chữ của động từ nào ở đây."
+
+  # --- Từ hợp ngữ cảnh (文脈規定) ---
+  - key: ja:examq:jlpt-n4-m1-r07
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_vocab
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: ねる 前に、かならず 歯を （　） ください。
+      options:
+        - { id: a, text: "みがいて", lang: ja }
+        - { id: b, text: "ぬって", lang: ja }
+        - { id: c, text: "ひいて", lang: ja }
+        - { id: d, text: "おって", lang: ja }
+    answer: a
+    explanation:
+      vi: "“Đánh răng” trong tiếng Nhật là 歯を みがく (nghĩa đen: đánh bóng răng), nên điền みがいて. ぬる là “bôi, sơn”, ひく là “kéo”, おる là “gập, bẻ”: không đi với 歯 trong nghĩa này."
+
+  - key: ja:examq:jlpt-n4-m1-r08
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_vocab
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: 熱が あったので、くすりを （　） 早く ねました。
+      options:
+        - { id: a, text: "のんで", lang: ja }
+        - { id: b, text: "たべて", lang: ja }
+        - { id: c, text: "かけて", lang: ja }
+        - { id: d, text: "ぬいで", lang: ja }
+    answer: a
+    explanation:
+      vi: "Uống thuốc là くすりを のむ, kể cả thuốc viên, nên điền のんで. たべて là bẫy với người học quen “ăn” cho đồ rắn; tiếng Nhật không nói くすりを たべる."
+
+  - key: ja:examq:jlpt-n4-m1-r09
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_vocab
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: 電車の 中に かさを （　） しまいました。
+      options:
+        - { id: a, text: "わすれて", lang: ja }
+        - { id: b, text: "おちて", lang: ja }
+        - { id: c, text: "こわれて", lang: ja }
+        - { id: d, text: "まちがえて", lang: ja }
+    answer: a
+    explanation:
+      vi: "〜に かさを わすれる là “để quên ô ở…”, ghép với 〜て しまいました để nói việc lỡ xảy ra. おちる và こわれる là nội động từ nên không đi với を (かさを); まちがえる là “nhầm”, không hợp nghĩa."
+
+  # --- Câu đồng nghĩa (言い換え類義) ---
+  - key: ja:examq:jlpt-n4-m1-r10
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_paraphrase
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn câu có nghĩa gần nhất với câu trong ngoặc 【 】.
+      stem: 【 】の ぶんと だいたい おなじ いみの ぶんは どれですか。
+      stem_lang: ja
+      passage: 【この 町は とても にぎやかです。】
+      options:
+        - { id: a, text: "この 町には 人や 店が 多いです。", lang: ja }
+        - { id: b, text: "この 町は とても しずかです。", lang: ja }
+        - { id: c, text: "この 町は とても きれいです。", lang: ja }
+        - { id: d, text: "この 町には 人が あまり いません。", lang: ja }
+    answer: a
+    explanation:
+      vi: "にぎやか là “đông vui, náo nhiệt”: nhiều người, nhiều cửa hàng. しずか (yên tĩnh) và “人が あまり いません” (ít người) đều ngược nghĩa; きれい (đẹp, sạch) không liên quan đến độ đông đúc."
+
+  - key: ja:examq:jlpt-n4-m1-r11
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_paraphrase
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn câu có nghĩa gần nhất với câu trong ngoặc 【 】.
+      stem: 【 】の ぶんと だいたい おなじ いみの ぶんは どれですか。
+      stem_lang: ja
+      passage: 【田中さんは 先生に しかられました。】
+      options:
+        - { id: a, text: "先生は 田中さんを しかりました。", lang: ja }
+        - { id: b, text: "田中さんは 先生を しかりました。", lang: ja }
+        - { id: c, text: "先生は 田中さんを ほめました。", lang: ja }
+        - { id: d, text: "田中さんは 先生に ほめられました。", lang: ja }
+    answer: a
+    explanation:
+      vi: "しかられました là bị động của しかる (mắng): Tanaka bị thầy mắng, tức là thầy mắng Tanaka. Phương án b đảo người mắng và người bị mắng; ほめる là “khen”, ngược nghĩa."
+
+  # --- Cách dùng từ (用法) ---
+  - key: ja:examq:jlpt-n4-m1-r12
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_usage
+    level_code: n4
+    points: 1
+    prompt:
+      instruction_vi: Chọn câu dùng từ trong ngoặc 【 】 đúng nhất.
+      stem: 【ねっしん】の つかいかたで いちばん いい ものは どれですか。
+      stem_lang: ja
+      options:
+        - { id: a, text: "弟は 毎日 ねっしんに サッカーの 練習を して います。", lang: ja }
+        - { id: b, text: "きょうは ねっしんが あるので、学校を 休みます。", lang: ja }
+        - { id: c, text: "この スープは ねっしんですから、気を つけて ください。", lang: ja }
+        - { id: d, text: "夏は ねっしんな 日が 続きます。", lang: ja }
+    answer: a
+    explanation:
+      vi: "ねっしん (熱心) nghĩa là “nhiệt tình, chăm chỉ”, dùng cho thái độ làm việc, học tập: ねっしんに 練習する. Các câu còn lại nhầm với chữ 熱 (nóng, sốt): bị sốt là 熱が ある, súp nóng là あつい, ngày nóng là あつい 日."
+
+  # --- Ngữ pháp (文法形式の判断) ---
+  - key: ja:examq:jlpt-n4-m1-r13
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: つぎの ぶんの （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: 空が 暗く なって きましたね。雨が 降り（　）ですね。
+      options:
+        - { id: a, text: "そう", lang: ja }
+        - { id: b, text: "よう", lang: ja }
+        - { id: c, text: "らしい", lang: ja }
+        - { id: d, text: "たい", lang: ja }
+    answer: a
+    explanation:
+      vi: "Thân động từ thể ます + そうです diễn tả phán đoán từ những gì nhìn thấy: 降りそうです (trông như sắp mưa). ようです và らしい cũng là phỏng đoán nhưng phải đi sau thể thường (降る ようです, 降る らしい), không gắn vào 降り."
+
+  - key: ja:examq:jlpt-n4-m1-r14
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: つぎの ぶんの （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: どんなに 練習（　）、この 曲は うまく ひけません。
+      options:
+        - { id: a, text: "しても", lang: ja }
+        - { id: b, text: "したら", lang: ja }
+        - { id: c, text: "すれば", lang: ja }
+        - { id: d, text: "するので", lang: ja }
+    answer: a
+    explanation:
+      vi: "どんなに 〜ても là “dù … thế nào đi nữa (cũng không)”, và vế sau phủ định ひけません khớp với nghĩa này. したら và すれば là điều kiện “nếu”, nên vế sau phải là kết quả đạt được, không đi với どんなに."
+
+  - key: ja:examq:jlpt-n4-m1-r15
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: つぎの ぶんの （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: |-
+        A「すみません、この 辞書、ちょっと （　）も いいですか。」
+        B「ええ、どうぞ。」
+      options:
+        - { id: a, text: "使って", lang: ja }
+        - { id: b, text: "使い", lang: ja }
+        - { id: c, text: "使う", lang: ja }
+        - { id: d, text: "使った", lang: ja }
+    answer: a
+    explanation:
+      vi: "Mẫu xin phép là động từ thể て + も いいですか: 使っても いいですか (tôi dùng có được không?). B trả lời “どうぞ” (xin mời) cũng cho thấy A đang xin phép."
+
+  - key: ja:examq:jlpt-n4-m1-r16
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: つぎの ぶんの （　）に 何を 入れますか。
+      stem_lang: ja
+      passage: 弟は 母に 「早く ねなさい」と （　）、しかたなく 自分の 部屋に 入りました。
+      options:
+        - { id: a, text: "言われて", lang: ja }
+        - { id: b, text: "言って", lang: ja }
+        - { id: c, text: "言わせて", lang: ja }
+        - { id: d, text: "言えて", lang: ja }
+    answer: a
+    explanation:
+      vi: "“ねなさい” là câu mẹ ra lệnh cho con, và しかたなく (đành phải) cho thấy em trai bị bảo, nên dùng bị động 言われて (bị mẹ nói). 言って sẽ thành em trai ra lệnh cho mẹ, còn 言わせて là “bắt mẹ nói”: đều không hợp."
+
+  # --- Sắp xếp câu (文の組み立て) ---
+  - key: ja:examq:jlpt-n4-m1-r17
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_order
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Sắp xếp bốn phương án thành câu đúng và chọn từ đứng ở vị trí ★.
+      stem: ★に 入る ものは どれですか。
+      stem_lang: ja
+      passage: これは 母が ＿＿ ＿＿ ★ ＿＿ です。
+      options:
+        - { id: a, text: "去年", lang: ja }
+        - { id: b, text: "作って", lang: ja }
+        - { id: c, text: "くれた", lang: ja }
+        - { id: d, text: "セーター", lang: ja }
+    answer: c
+    explanation:
+      vi: "Câu đúng là “これは 母が 去年 作って くれた セーター です” (đây là chiếc áo len mẹ đan cho tôi năm ngoái): cả cụm “去年 作って くれた” bổ nghĩa cho セーター. Vị trí ★ (thứ ba) là くれた."
+
+  - key: ja:examq:jlpt-n4-m1-r18
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_order
+    level_code: n4
+    points: 2
+    prompt:
+      instruction_vi: Sắp xếp bốn phương án thành câu đúng và chọn từ đứng ở vị trí ★.
+      stem: ★に 入る ものは どれですか。
+      stem_lang: ja
+      passage: あした 雨が ＿＿ ＿＿ ★ ＿＿ 中止です。
+      options:
+        - { id: a, text: "降ったら", lang: ja }
+        - { id: b, text: "サッカー", lang: ja }
+        - { id: c, text: "の", lang: ja }
+        - { id: d, text: "試合は", lang: ja }
+    answer: c
+    explanation:
+      vi: "Câu đúng là “あした 雨が 降ったら サッカー の 試合は 中止です” (nếu mai mưa thì trận bóng đá bị hủy): 雨が phải đi ngay với động từ 降ったら, rồi đến “サッカーの 試合は”. Vị trí ★ là の."
+
+  # --- Đọc hiểu đoạn ngắn (内容理解) ---
+  - key: ja:examq:jlpt-n4-m1-r19
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n4
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và trả lời câu hỏi.
+      stem: 「わたし」は 日本語が 上手に なるために、何を しましたか。
+      stem_lang: ja
+      passage: |-
+        わたしは 去年の 春から 日本の 会社で 働いて います。はじめは 日本語が あまり わからなくて、会議で 何も 話せませんでした。それで、毎朝 会社へ 行く 電車の 中で、日本語の ニュースを 聞くように しました。半年ぐらい たつと、少しずつ ニュースが わかるように なりました。今は 会議で 自分の 意見を 言う ことが できます。
+      options:
+        - { id: a, text: "毎朝 電車の 中で 日本語の ニュースを 聞いた。", lang: ja }
+        - { id: b, text: "会議で たくさん 話すように した。", lang: ja }
+        - { id: c, text: "毎晩 日本語の 学校に 通った。", lang: ja }
+        - { id: d, text: "会社の 人に 日本語を 教えて もらった。", lang: ja }
+    answer: a
+    explanation:
+      vi: "Sau từ それで (vì vậy), người viết nói đã tập “毎朝…電車の 中で、日本語の ニュースを 聞くように しました” (cố gắng nghe tin tức tiếng Nhật trên tàu mỗi sáng). Phương án b là bẫy: phát biểu trong họp là KẾT QUẢ hiện nay, không phải cách luyện tập."
+
+  - key: ja:examq:jlpt-n4-m1-r20
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n4
+    points: 4
+    prompt:
+      instruction_vi: Đọc email và trả lời câu hỏi.
+      stem: 山下さんは 何を しなければ なりませんか。
+      stem_lang: ja
+      passage: |-
+        山下さん
+        来週の 土曜日の バーベキューですが、天気よほうで 雨だと 言って いたので、場所を 公園から わたしの 家に 変えました。時間は 同じで、11時からです。飲み物は わたしが 用意しますから、何か 食べ物を 一つ 持って きて ください。
+        キム
+      options:
+        - { id: a, text: "食べ物を 一つ 持って いく。", lang: ja }
+        - { id: b, text: "飲み物を 買って いく。", lang: ja }
+        - { id: c, text: "11時に 公園へ 行く。", lang: ja }
+        - { id: d, text: "キムさんに 天気よほうを 知らせる。", lang: ja }
+    answer: a
+    explanation:
+      vi: "Kim nhờ “何か 食べ物を 一つ 持って きて ください” (mang theo một món ăn). Đồ uống thì Kim tự chuẩn bị (わたしが 用意します), và địa điểm đã đổi từ công viên sang nhà Kim nên c sai."
+
+  # --- Tìm thông tin (情報検索) ---
+  - key: ja:examq:jlpt-n4-m1-r21
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_info
+    level_code: n4
+    points: 4
+    prompt:
+      instruction_vi: Đọc thông báo và trả lời câu hỏi.
+      stem: 40さいの 父と 10さいの 子どもが 二人で プールに 入ります。二人とも 水泳ぼうしを 持って いません。全部で いくら はらいますか。
+      stem_lang: ja
+      passage: |-
+        さくら市 スポーツセンター プール
+        ・利用時間：9:00～21:00（月曜日は 休み）
+        ・料金：大人 400円 ／ 中学生以下 200円 ／ 65さい以上 200円
+        ・小学生は 大人と いっしょに 入って ください。
+        ・水泳ぼうしを かならず かぶって ください。（受付で 一つ 100円で 買えます）
+      options:
+        - { id: a, text: "600円", lang: ja }
+        - { id: b, text: "700円", lang: ja }
+        - { id: c, text: "800円", lang: ja }
+        - { id: d, text: "1000円", lang: ja }
+    answer: c
+    explanation:
+      vi: "Bố là người lớn 400 yên, con 10 tuổi thuộc “中学生以下” 200 yên, cộng 2 mũ bơi × 100 yên = 800 yên. 600円 là bẫy nếu quên mũ bơi, còn 700円 nếu chỉ tính một mũ."
