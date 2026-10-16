@@ -1,0 +1,362 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:jobs-skills-could-good-at
+order_index: 2
+level: a2
+title:
+  vi: I couldn't type, but now I can - could và be good at
+objectives:
+  - vi: Nói điều mình làm được và không làm được trong quá khứ bằng could / couldn't + V.
+  - vi: Hỏi Could you… when you were…? và trả lời ngắn Yes, I could / No, I couldn't.
+  - vi: Nói điểm mạnh, điểm yếu bằng be good at / not very good at + danh từ hoặc V-ing.
+estimated_minutes: 15
+skills: [grammar, speaking]
+prerequisites: [en:lesson:jobs-skills-workplaces]
+items:
+  - item: en:item:could-past-ability
+  - item: en:item:couldnt-past-ability
+  - item: en:item:be-good-at
+  - item: en:item:be-bad-at
+  - item: en:item:skill
+  - item: en:item:fix
+  - item: en:item:use-a-computer
+  - item: en:item:type-fast
+  - item: en:item:learn-how-to
+  - item: en:item:can-cant
+    role: reuse
+  - item: en:item:mechanic
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được mình đã tiến bộ thế nào trong công việc - hồi trước chưa làm được gì, giờ làm được gì - và nói về điểm mạnh của mình như trong một buổi phỏng vấn đơn giản.
+  - type: explain
+    text:
+      vi: "Could là quá khứ của can. Hiện tại - I can type fast. Quá khứ - When I was at school, I couldn't type fast. Could giống nhau với mọi chủ ngữ và luôn đi với động từ nguyên mẫu, không có to."
+  - type: explain
+    text:
+      vi: "Câu hỏi đảo could lên đầu - Could you use a computer when you were ten? Trả lời ngắn - Yes, I could. / No, I couldn't. Tiếng Việt chỉ thêm \"hồi đó\", còn tiếng Anh phải đổi can thành could."
+  - type: explain
+    text:
+      vi: "Giỏi về cái gì dùng be good at + danh từ (good at maths) hoặc + V-ing (good at fixing things). Muốn khiêm tốn khi nói về điểm yếu, dùng I'm not very good at… thay vì I'm bad at…."
+  - type: deep_explain
+    text:
+      vi: "Could còn dùng để nhờ lịch sự (Could you help me?) - đó là hiện tại, không phải quá khứ; nhìn ngữ cảnh có when I was…, ten years ago… hay không để phân biệt. Khi nói về một lần làm được việc khó trong quá khứ, người bản ngữ hay dùng managed to hoặc was able to (I was able to fix it in the end) - bạn sẽ học kỹ ở cấp sau."
+  - type: example
+    target: Ten years ago, I couldn't use a computer. Now I teach basic computer skills to older people.
+    target_lang: en
+    translation:
+      vi: Mười năm trước tôi không biết dùng máy tính. Giờ tôi dạy kỹ năng máy tính cơ bản cho người lớn tuổi.
+    note:
+      vi: Couldn't cho quá khứ; hiện tại dùng thì hiện tại đơn.
+  - type: example
+    target: "A: Could you swim when you were a child? B: No, I couldn't. I learned how to swim at university."
+    target_lang: en
+    translation:
+      vi: "A: Hồi nhỏ bạn biết bơi không? B: Không. Mình học bơi hồi đại học."
+    note:
+      vi: Câu hỏi đảo could; trả lời ngắn No, I couldn't; learn how to + V.
+  - type: example
+    target: Tuan is very good at fixing motorbikes, but he's not very good at talking to customers.
+    target_lang: en
+    translation:
+      vi: Tuấn sửa xe máy rất giỏi, nhưng nói chuyện với khách hàng thì không giỏi lắm.
+    note:
+      vi: Sau at là V-ing - fixing, talking.
+  - type: common_mistake
+    wrong: When I was five, I could to read.
+    right: When I was five, I could read.
+    target_lang: en
+    note:
+      vi: Sau could là động từ nguyên mẫu, không có to - giống can.
+  - type: common_mistake
+    wrong: I'm good at speak English.
+    right: I'm good at speaking English.
+    target_lang: en
+    note:
+      vi: Sau giới từ at, động từ phải thêm -ing. Tiếng Việt "giỏi nói" không đổi dạng động từ nên người Việt hay quên.
+  - type: common_mistake
+    wrong: Last year I can't drive, but now I can.
+    right: Last year I couldn't drive, but now I can.
+    target_lang: en
+    note:
+      vi: Có last year thì phải dùng quá khứ couldn't, không dùng can't.
+  - type: summary
+    points:
+      - vi: could / couldn't + V nguyên mẫu - làm được / không làm được trong quá khứ.
+      - vi: Could you + V…? - Yes, I could. / No, I couldn't.
+      - vi: be good at + danh từ / V-ing · not very good at… (khiêm tốn hơn bad at).
+      - vi: learn (how) to + V - học làm gì; type fast, fix, use a computer.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:jobskl-could-mcq-past
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:could-past-ability
+    prompt:
+      stem: "Chọn đáp án đúng: When my grandfather was young, he ___ ride a horse."
+      stem_lang: vi
+      options:
+        - { id: a4h, text: could, lang: en }
+        - { id: n8e, text: can, lang: en }
+        - { id: v2s, text: could to, lang: en }
+        - { id: d6y, text: coulds, lang: en }
+    answer:
+      correct_option_id: a4h
+    explanation:
+      vi: When he was young là quá khứ nên dùng could (quá khứ của can). Could không có to phía sau và không thêm -s cho he.
+    display_answer: could
+
+  - key: en:exercise:jobskl-could-mcq-good-at
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-good-at
+    prompt:
+      stem: "Chọn đáp án đúng: Mai is very good ___ with numbers, so she wants to be an accountant."
+      stem_lang: vi
+      options:
+        - { id: p3c, text: at working, lang: en }
+        - { id: l7f, text: at work, lang: en }
+        - { id: x1q, text: in working, lang: en }
+        - { id: o5b, text: to work, lang: en }
+    answer:
+      correct_option_id: p3c
+    explanation:
+      vi: Mẫu cố định là good at, và sau giới từ at động từ phải ở dạng -ing - good at working. Good in và good to work đều sai giới từ hoặc dạng động từ.
+    display_answer: at working
+
+  - key: en:exercise:jobskl-could-listen-type
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:type-fast
+    prompt:
+      audio_asset_id: null
+      fallback_text: I couldn't type fast when I started this job, but now I can type without looking at the keyboard.
+      options:
+        - { id: j6w, text: "Lúc mới làm công việc này tôi không đánh máy nhanh được, nhưng giờ tôi đánh máy được mà không cần nhìn bàn phím.", lang: vi }
+        - { id: s9k, text: "Lúc mới làm công việc này tôi đánh máy rất nhanh, nhưng giờ tôi phải nhìn bàn phím.", lang: vi }
+        - { id: c2t, text: "Tôi không thể làm công việc này vì tôi không biết dùng bàn phím.", lang: vi }
+        - { id: u8m, text: "Giờ tôi đang học đánh máy nhanh để bắt đầu công việc mới.", lang: vi }
+    answer:
+      correct_option_id: j6w
+    explanation:
+      vi: Couldn't type fast là trước đây không làm được; but now I can là bây giờ làm được. Phương án thứ hai đảo ngược hai mốc thời gian.
+    display_answer: "Lúc mới làm công việc này tôi không đánh máy nhanh được, nhưng giờ tôi đánh máy được mà không cần nhìn bàn phím."
+
+  - key: en:exercise:jobskl-could-fill-short-answer-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:couldnt-past-ability
+    prompt:
+      template: "{{b1}} you speak English when you were at high school? - No, I {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Hồi cấp ba bạn nói được tiếng Anh không? - Không, mình không nói được."
+        - "Gợi ý: quá khứ của can đứng đầu câu hỏi; câu trả lời ngắn dùng dạng phủ định của nó."
+    answer:
+      blanks:
+        b1: [Could]
+        b2: [couldn't, could not]
+    known_wrong:
+      - answer: Can
+        feedback_vi: Có when you were at high school (quá khứ) nên dùng Could.
+        error_tag: could_past
+      - answer: can't
+        feedback_vi: Câu hỏi ở quá khứ nên câu trả lời ngắn là No, I couldn't.
+        error_tag: could_past
+      - answer: didn't
+        feedback_vi: Câu hỏi bằng could thì trả lời bằng could - No, I couldn't.
+        error_tag: short_answer
+    explanation:
+      vi: Hỏi về khả năng trong quá khứ thì đảo Could lên đầu câu. Câu trả lời ngắn lặp lại trợ động từ của câu hỏi - No, I couldn't.
+    display_answer: Could you speak English when you were at high school? - No, I couldn't.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:jobskl-could-fill-couldnt-fix
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:fix
+    prompt:
+      template: "The mechanic tried for two hours, but he {{b1}} {{b2}} my car, so he called a colleague."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [couldn't, could not]
+        b2: [fix, repair]
+    known_wrong:
+      - answer: can't
+        feedback_vi: Câu kể chuyện đã xảy ra (tried, called) nên dùng couldn't.
+        error_tag: could_past
+      - answer: fixed
+        feedback_vi: Sau couldn't là động từ nguyên mẫu - fix, không thêm -ed.
+        error_tag: modal_verb_form
+      - answer: didn't
+        feedback_vi: Nói về khả năng (không làm nổi) thì dùng couldn't, không phải didn't.
+        error_tag: could_past
+    explanation:
+      vi: Cả câu ở quá khứ (tried, called), và ý là "không sửa được" - dùng couldn't + động từ nguyên mẫu fix (hoặc repair).
+    display_answer: The mechanic tried for two hours, but he couldn't fix my car, so he called a colleague.
+
+  - key: en:exercise:jobskl-could-translate-learn-drive
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:learn-how-to
+    prompt:
+      source_text: Năm ngoái tôi không biết lái xe ô tô. Tôi học lái xe vào tháng Ba.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Last year I couldn't drive a car. I learned to drive in March.
+        - Last year I couldn't drive a car. I learned how to drive in March.
+        - Last year I couldn't drive a car. I learnt to drive in March.
+        - Last year I couldn't drive a car. I learnt how to drive in March.
+        - Last year I couldn't drive. I learned to drive in March.
+        - Last year I couldn't drive. I learned how to drive in March.
+        - Last year I could not drive a car. I learned to drive in March.
+        - Last year, I couldn't drive a car. I learned to drive in March.
+        - Last year, I couldn't drive a car. I learned how to drive in March.
+        - I couldn't drive a car last year. I learned to drive in March.
+        - I couldn't drive a car last year. I learned how to drive in March.
+        - Last year I couldn't drive. I learnt to drive in March.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Last year I can't drive a car. I learned to drive in March.
+        feedback_vi: Có last year nên dùng quá khứ couldn't.
+        error_tag: could_past
+      - answer: Last year I couldn't to drive a car. I learned to drive in March.
+        feedback_vi: Sau couldn't không có to - couldn't drive.
+        error_tag: modal_to
+      - answer: Last year I couldn't drive a car. I learned driving in March.
+        feedback_vi: Học một kỹ năng mới dùng learn to + V hoặc learn how to + V - learned to drive.
+        error_tag: learn_to
+    explanation:
+      vi: "\"Không biết lái\" ở quá khứ là couldn't drive. \"Học lái xe\" là learn (how) to drive; quá khứ của learn là learned (US, UK) hoặc learnt (UK)."
+    display_answer: Last year I couldn't drive a car. I learned to drive in March.
+
+  - key: en:exercise:jobskl-could-translate-skill
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-bad-at
+    prompt:
+      source_text: Tôi giỏi lắng nghe, nhưng tôi không giỏi nói trước đám đông lắm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'm good at listening, but I'm not very good at speaking in public.
+        - I am good at listening, but I am not very good at speaking in public.
+        - I'm good at listening, but I'm not very good at public speaking.
+        - I'm good at listening but I'm not very good at speaking in public.
+        - I'm good at listening, but I'm not very good at speaking in front of people.
+        - I'm good at listening, but I'm not very good at speaking in front of a crowd.
+        - I'm good at listening, but I'm not very good at speaking in front of a lot of people.
+        - I'm good at listening, but I'm not so good at speaking in public.
+        - I'm good at listening, but I'm not that good at speaking in public.
+        - I'm good at listening, but I'm not good at speaking in public.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'm good at listen, but I'm not very good at speak in public.
+        feedback_vi: Sau at, động từ phải thêm -ing - listening, speaking.
+        error_tag: preposition_ing
+      - answer: I good at listening, but I not very good at speaking in public.
+        feedback_vi: Thiếu am - I'm good at…, I'm not very good at….
+        error_tag: missing_be
+      - answer: I'm good in listening, but I'm not very good in speaking in public.
+        feedback_vi: Giỏi về cái gì dùng good at, không dùng good in.
+        error_tag: good_at
+    explanation:
+      vi: Be good at + V-ing - I'm good at listening. Not very good at nghe khiêm tốn và tự nhiên khi nói về điểm yếu, hợp với tình huống phỏng vấn.
+    display_answer: I'm good at listening, but I'm not very good at speaking in public.
+
+  # ---------------- application ----------------
+  - key: en:exercise:jobskl-could-mcq-interview
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:skill
+    prompt:
+      stem: "Trong buổi phỏng vấn, người tuyển dụng hỏi \"What are your skills?\". Câu trả lời nào đúng ngữ pháp và tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: e4z, text: "I'm good at working in a team, and I can use most design software.", lang: en }
+        - { id: k9u, text: "I'm good at work in a team, and I can to use most design software.", lang: en }
+        - { id: i2r, text: "I good in working in a team, and I could use most design software now.", lang: en }
+        - { id: t6o, text: "I'm good for working in a team, and I can using most design software.", lang: en }
+    answer:
+      correct_option_id: e4z
+    explanation:
+      vi: Good at + V-ing (working) và can + động từ nguyên mẫu (use) là hai mẫu đúng. Các phương án khác sai giới từ (in, for), thiếu am, hoặc dùng could cho hiện tại (now).
+    display_answer: "I'm good at working in a team, and I can use most design software."
+
+  - key: en:exercise:jobskl-could-order-computer
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:use-a-computer
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Mẹ tôi không biết dùng máy tính cho đến năm ngoái.\""
+      tokens:
+        - { id: t-until, text: until last year }
+        - { id: t-use, text: use a computer }
+        - { id: t-mother, text: My mother }
+        - { id: t-couldnt, text: "couldn't" }
+        - { id: t-cant, text: "can't" }
+        - { id: t-to, text: to }
+    answer:
+      orders:
+        - [t-mother, t-couldnt, t-use, t-until]
+    explanation:
+      vi: Until last year là quá khứ nên dùng couldn't, không dùng can't. Sau couldn't là use (nguyên mẫu), không có to.
+    display_answer: My mother couldn't use a computer until last year.
+
+  - key: en:exercise:jobskl-could-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:could-past-ability
+    prompt:
+      source_text: When I moved to Saigon, I couldn't understand the southern accent, but now I can.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi tôi chuyển vào Sài Gòn, tôi không hiểu được giọng miền Nam, nhưng bây giờ thì tôi hiểu được.
+        - Khi mới chuyển vào Sài Gòn, tôi không hiểu được giọng miền Nam, nhưng giờ thì tôi hiểu được rồi.
+        - Lúc chuyển vào Sài Gòn, tôi không nghe hiểu được giọng miền Nam, nhưng bây giờ thì hiểu được.
+        - Khi tôi chuyển vào Sài Gòn, tôi không hiểu giọng miền Nam, nhưng bây giờ tôi hiểu được.
+        - Khi chuyển vào Sài Gòn, tôi không hiểu được giọng miền Nam, nhưng giờ tôi hiểu được.
+        - Khi mình chuyển vào Sài Gòn, mình không hiểu được giọng miền Nam, nhưng giờ thì mình hiểu được.
+        - Hồi mới chuyển vào Sài Gòn, tôi không hiểu được giọng miền Nam, nhưng bây giờ thì tôi hiểu được.
+        - Khi tôi chuyển đến Sài Gòn, tôi không hiểu được giọng miền Nam, nhưng bây giờ thì tôi hiểu được.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Couldn't understand là "không hiểu được" ở quá khứ; but now I can là cách nói gọn của but now I can understand it - "giờ thì hiểu được". Tiếng Việt cần nói rõ "hiểu được" ở vế sau cho tự nhiên.
+    display_answer: Khi tôi chuyển vào Sài Gòn, tôi không hiểu được giọng miền Nam, nhưng bây giờ thì tôi hiểu được.

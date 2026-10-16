@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:jobs-skills-review
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập - Email xin việc làm thêm và chỉ đường đến buổi phỏng vấn
+objectives:
+  - vi: Đọc hiểu một tin tuyển dụng việc làm thêm và viết email ngắn giới thiệu nghề, kỹ năng, thời gian rảnh.
+  - vi: Kết hợp could, be good at, giới từ chuyển động và đại từ bất định trong một tình huống liền mạch.
+  - vi: Hiểu và đưa ra chỉ dẫn đường đi đến nơi phỏng vấn.
+estimated_minutes: 20
+skills: [reading, writing, speaking]
+prerequisites: [en:lesson:jobs-skills-something-anyone]
+items:
+  - item: en:item:part-time-full-time
+  - item: en:item:be-available
+  - item: en:item:what-do-you-do
+    role: reuse
+  - item: en:item:work-as-a
+    role: reuse
+  - item: en:item:work-in-at-for
+    role: reuse
+  - item: en:item:could-past-ability
+    role: reuse
+  - item: en:item:be-good-at
+    role: reuse
+  - item: en:item:skill
+    role: reuse
+  - item: en:item:prepositions-of-movement
+    role: reuse
+  - item: en:item:get-on-off
+    role: reuse
+  - item: en:item:past-preposition
+    role: reuse
+  - item: en:item:indefinite-pronouns
+    role: reuse
+  - item: en:item:anything
+    role: reuse
+  - item: en:item:everyone-everybody
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đặt bạn vào một tình huống trọn vẹn - thấy tin tuyển nhân viên bán thời gian ở một quán cà phê sách, viết email ứng tuyển, rồi đọc chỉ dẫn đường đến buổi phỏng vấn.
+  - type: explain
+    text:
+      vi: "Một email ứng tuyển ngắn ở trình độ A2 có bốn ý - bạn là ai và làm gì (I'm a student / I work as…), bạn giỏi gì (I'm good at…), kinh nghiệm hoặc điều bạn đã làm được (Last summer I could… / I worked as…), và thời gian bạn có thể làm (I'm available on…)."
+  - type: explain
+    text:
+      vi: "Khi đọc chỉ dẫn đường, chú ý động từ + giới từ chuyển động - get off the bus, walk along, go past, go into. Mỗi giới từ là một bước, nên hãy đọc chậm từng cụm."
+  - type: deep_explain
+    text:
+      vi: "Part-time có gạch nối khi đứng trước danh từ (a part-time job) nhưng thường bỏ gạch nối sau động từ (I work part time). Available đi với on + ngày (on Saturdays), in + buổi (in the evenings), from… to… (from 6 to 10 p.m.) - giống các giới từ thời gian bạn đã học."
+  - type: example
+    target: "PART-TIME STAFF WANTED. Are you good at talking to customers? Can you work at the weekend? Everyone is welcome - no experience needed!"
+    target_lang: en
+    translation:
+      vi: "CẦN TUYỂN NHÂN VIÊN BÁN THỜI GIAN. Bạn giỏi giao tiếp với khách hàng? Bạn làm được vào cuối tuần? Ai cũng có thể ứng tuyển - không cần kinh nghiệm!"
+    note:
+      vi: Tin tuyển dụng dùng câu ngắn, câu hỏi trực tiếp; everyone + is.
+  - type: example
+    target: "Dear Ms Hanh, I'm a second-year student and I'm available on Saturdays and Sundays. Last year I worked as a waiter, so I'm good at working quickly."
+    target_lang: en
+    translation:
+      vi: "Kính gửi chị Hạnh, em là sinh viên năm hai và em có thể làm vào thứ Bảy, Chủ nhật. Năm ngoái em làm phục vụ bàn nên em làm việc nhanh nhẹn."
+    note:
+      vi: Available on + ngày; worked as a + nghề; good at + V-ing.
+  - type: example
+    target: "Take bus number 32 and get off at the post office. Walk along Tran Phu Street, go past the bank, and the café is on your right."
+    target_lang: en
+    translation:
+      vi: "Đi xe buýt số 32 và xuống ở bưu điện. Đi dọc phố Trần Phú, đi qua ngân hàng, quán cà phê ở bên tay phải bạn."
+    note:
+      vi: Get off + điểm xuống; walk along; go past.
+  - type: common_mistake
+    wrong: I'm available in Saturdays.
+    right: I'm available on Saturdays.
+    target_lang: en
+    note:
+      vi: Ngày trong tuần đi với on, kể cả khi đứng sau available.
+  - type: common_mistake
+    wrong: I have a part time job. I work as waiter.
+    right: I have a part-time job. I work as a waiter.
+    target_lang: en
+    note:
+      vi: Part-time trước danh từ có gạch nối; sau work as vẫn cần a.
+  - type: summary
+    points:
+      - vi: Email ứng tuyển - bạn là ai, giỏi gì, đã làm gì, rảnh lúc nào.
+      - vi: I'm available on + ngày / in the evenings / from… to….
+      - vi: a part-time / full-time job · work part time.
+      - vi: Đọc chỉ đường theo từng cụm động từ + giới từ (get off, walk along, go past, go into).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:jobskl-review-mcq-available
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-available
+    prompt:
+      stem: "Chọn đáp án đúng để điền vào email: I'm a student, so I'm only available ___ the evenings and at weekends."
+      stem_lang: vi
+      options:
+        - { id: n6c, text: in, lang: en }
+        - { id: h2u, text: on, lang: en }
+        - { id: b5o, text: at, lang: en }
+        - { id: m9y, text: for, lang: en }
+    answer:
+      correct_option_id: n6c
+    explanation:
+      vi: Buổi trong ngày đi với in - in the evenings, in the morning. On dùng cho ngày (on Mondays), at weekends là cách nói của UK.
+    display_answer: in
+
+  - key: en:exercise:jobskl-review-mcq-read-ad
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:part-time-full-time
+    prompt:
+      stem: "Đọc tin tuyển dụng: \"Part-time receptionist wanted. Mornings only, Monday to Friday. You must be good at using a computer.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: u3e, text: "Công việc bán thời gian, chỉ buổi sáng các ngày trong tuần, cần biết dùng máy tính tốt.", lang: vi }
+        - { id: z8k, text: "Công việc toàn thời gian, làm cả cuối tuần, không cần biết dùng máy tính.", lang: vi }
+        - { id: d1s, text: "Công việc bán thời gian, chỉ làm cuối tuần, cần biết sửa máy tính.", lang: vi }
+        - { id: l4p, text: "Công việc buổi tối, từ thứ Hai đến thứ Sáu, cần có kinh nghiệm lễ tân.", lang: vi }
+    answer:
+      correct_option_id: u3e
+    explanation:
+      vi: Part-time là bán thời gian; mornings only, Monday to Friday là chỉ buổi sáng từ thứ Hai đến thứ Sáu; good at using a computer là dùng máy tính tốt (không phải sửa máy tính).
+    display_answer: "Công việc bán thời gian, chỉ buổi sáng các ngày trong tuần, cần biết dùng máy tính tốt."
+
+  - key: en:exercise:jobskl-review-listen-directions
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:get-on-off
+    prompt:
+      audio_asset_id: null
+      fallback_text: Get off the tram at the museum, walk through the small park and go into the building with the green door.
+      options:
+        - { id: a7w, text: "Xuống tàu điện ở bảo tàng, đi xuyên qua công viên nhỏ rồi vào toà nhà có cửa màu xanh lá.", lang: vi }
+        - { id: q2r, text: "Lên tàu điện ở bảo tàng, đi vòng quanh công viên nhỏ rồi ra khỏi toà nhà có cửa xanh.", lang: vi }
+        - { id: f5n, text: "Xuống tàu điện ở công viên, đi qua bảo tàng rồi vào toà nhà cạnh cửa xanh.", lang: vi }
+        - { id: x9h, text: "Đi bộ đến bảo tàng, đi dọc công viên nhỏ rồi đợi trước cửa màu xanh lá.", lang: vi }
+    answer:
+      correct_option_id: a7w
+    explanation:
+      vi: Get off the tram là xuống tàu điện (không phải lên - get on); walk through the park là đi xuyên qua công viên; go into là đi vào trong toà nhà.
+    display_answer: "Xuống tàu điện ở bảo tàng, đi xuyên qua công viên nhỏ rồi vào toà nhà có cửa màu xanh lá."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:jobskl-review-fill-email
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-good-at
+    prompt:
+      template: "Last summer I worked {{b1}} a waiter in a busy restaurant, so I'm good {{b2}} {{b3}} with customers."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [as]
+        b2: [at]
+        b3: [dealing, talking, working]
+    known_wrong:
+      - answer: like
+        feedback_vi: Làm nghề gì dùng work as, không dùng like.
+        error_tag: work_as
+      - answer: in
+        feedback_vi: Giỏi về cái gì dùng good at.
+        error_tag: good_at
+      - answer: deal
+        feedback_vi: Sau at, động từ phải thêm -ing - dealing.
+        error_tag: preposition_ing
+    explanation:
+      vi: Worked as a + nghề nói về công việc đã làm. Good at + V-ing nói về điểm mạnh - good at dealing/talking/working with customers.
+    display_answer: Last summer I worked as a waiter in a busy restaurant, so I'm good at dealing with customers.
+
+  - key: en:exercise:jobskl-review-translate-available
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-available
+    prompt:
+      source_text: Tôi muốn tìm một công việc bán thời gian. Tôi có thể làm vào thứ Bảy và Chủ nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I want to find a part-time job. I'm available on Saturdays and Sundays.
+        - I want to find a part-time job. I am available on Saturdays and Sundays.
+        - I'd like to find a part-time job. I'm available on Saturdays and Sundays.
+        - I would like to find a part-time job. I'm available on Saturdays and Sundays.
+        - I want to find a part-time job. I can work on Saturdays and Sundays.
+        - I'd like to find a part-time job. I can work on Saturdays and Sundays.
+        - I want to find a part-time job. I'm available on Saturday and Sunday.
+        - I want to find a part-time job. I can work on Saturday and Sunday.
+        - I'm looking for a part-time job. I'm available on Saturdays and Sundays.
+        - I'm looking for a part-time job. I can work on Saturdays and Sundays.
+        - I want to find a part time job. I'm available on Saturdays and Sundays.
+        - I want to find a part-time job. I'm available at weekends.
+        - I want to find a part-time job. I'm available on weekends.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I want to find a part-time job. I'm available in Saturdays and Sundays.
+        feedback_vi: Ngày trong tuần đi với on - on Saturdays.
+        error_tag: preposition_time
+      - answer: I want find a part-time job. I'm available on Saturdays and Sundays.
+        feedback_vi: Sau want cần to - want to find.
+        error_tag: want_to
+      - answer: I want to find a part-time job. I available on Saturdays and Sundays.
+        feedback_vi: Available là tính từ nên cần am - I'm available.
+        error_tag: missing_be
+    explanation:
+      vi: "\"Có thể làm vào…\" trong email xin việc nói tự nhiên là I'm available on… (hoặc I can work on…). Available là tính từ nên cần be; ngày trong tuần đi với on."
+    display_answer: I want to find a part-time job. I'm available on Saturdays and Sundays.
+
+  - key: en:exercise:jobskl-review-translate-could
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:could-past-ability
+    prompt:
+      source_text: Hồi tôi bắt đầu làm ở quán cà phê, tôi không pha được cà phê, nhưng ai cũng giúp tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - When I started working at the café, I couldn't make coffee, but everyone helped me.
+        - When I started working at the cafe, I couldn't make coffee, but everyone helped me.
+        - When I started working at the café, I couldn't make coffee, but everybody helped me.
+        - When I started working at the cafe, I couldn't make coffee, but everybody helped me.
+        - When I started work at the café, I couldn't make coffee, but everyone helped me.
+        - When I started work at the cafe, I couldn't make coffee, but everyone helped me.
+        - When I started to work at the café, I couldn't make coffee, but everyone helped me.
+        - When I started to work at the cafe, I couldn't make coffee, but everyone helped me.
+        - When I started working at the coffee shop, I couldn't make coffee, but everyone helped me.
+        - When I began working at the café, I couldn't make coffee, but everyone helped me.
+        - When I began working at the cafe, I couldn't make coffee, but everyone helped me.
+        - When I started working at the café, I could not make coffee, but everyone helped me.
+        - When I started working at the cafe, I could not make coffee, but everyone helped me.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: When I started working at the café, I can't make coffee, but everyone helped me.
+        feedback_vi: Câu kể chuyện quá khứ nên dùng couldn't, không dùng can't.
+        error_tag: could_past
+      - answer: When I started working at the café, I couldn't made coffee, but everyone helped me.
+        feedback_vi: Sau couldn't là động từ nguyên mẫu - make.
+        error_tag: modal_verb_form
+      - answer: When I started working at the café, I couldn't make coffee, but everyone help me.
+        feedback_vi: Việc đã xảy ra nên dùng quá khứ - helped.
+        error_tag: past_tense
+    explanation:
+      vi: Cả câu kể chuyện quá khứ - started, couldn't make, helped. "Ai cũng" là everyone/everybody, số ít, nhưng ở quá khứ đơn động từ không đổi - helped.
+    display_answer: When I started working at the café, I couldn't make coffee, but everyone helped me.
+
+  # ---------------- application ----------------
+  - key: en:exercise:jobskl-review-mcq-best-email
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:work-as-a
+    prompt:
+      stem: "Bạn trả lời tin tuyển nhân viên bán thời gian ở hiệu sách. Đoạn email nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: c6t, text: "I'm a nurse, but I work part time, so I'm available on Tuesday and Thursday afternoons. I'm good at helping people find what they need.", lang: en }
+        - { id: o8j, text: "I'm nurse, but I work part-time, so I'm available in Tuesday and Thursday afternoons. I'm good at help people find what they need.", lang: en }
+        - { id: y3v, text: "I'm a nurse, but I work part time, so I available on Tuesday and Thursday afternoons. I'm good in helping people find anything they need.", lang: en }
+        - { id: k1w, text: "I work as nurse, but I work part time, so I'm available on Tuesday and Thursday afternoons. I'm good at helping nobody find what they need.", lang: en }
+    answer:
+      correct_option_id: c6t
+    explanation:
+      vi: Phương án đúng có a trước nurse, I'm available on + ngày và good at + V-ing. Các phương án khác thiếu a, sai giới từ (in Tuesday, good in), thiếu am hoặc dùng nobody làm câu sai nghĩa.
+    display_answer: "I'm a nurse, but I work part time, so I'm available on Tuesday and Thursday afternoons. I'm good at helping people find what they need."
+
+  - key: en:exercise:jobskl-review-order-directions
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-preposition
+    prompt:
+      instruction: "Sắp xếp thành câu chỉ đường: \"Xuống xe buýt ở trường học và đi bộ qua nhà thờ.\""
+      tokens:
+        - { id: t-walk, text: and walk }
+        - { id: t-church, text: the church }
+        - { id: t-get, text: Get off }
+        - { id: t-past, text: past }
+        - { id: t-school, text: at the school }
+        - { id: t-bus, text: the bus }
+        - { id: t-out, text: out of }
+    answer:
+      orders:
+        - [t-get, t-bus, t-school, t-walk, t-past, t-church]
+    explanation:
+      vi: Xuống xe buýt là get off the bus; ở một trạm cụ thể dùng at. Đi ngang qua nhà thờ là walk past the church. Out of dùng cho taxi, ô tô hoặc toà nhà.
+    display_answer: Get off the bus at the school and walk past the church.
+
+  - key: en:exercise:jobskl-review-translate-anyone
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:anything
+    prompt:
+      source_text: Tôi có cần mang theo gì đến buổi phỏng vấn không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Do I need to bring anything to the interview?
+        - Do I need to take anything to the interview?
+        - Do I have to bring anything to the interview?
+        - Do I need to bring anything with me to the interview?
+        - Do I need to bring anything for the interview?
+        - Should I bring anything to the interview?
+        - Do I need to bring anything to the job interview?
+        - Do I have to bring anything with me to the interview?
+        - Do I need to take anything with me to the interview?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Do I need to bring something to the interview?
+        feedback_vi: Câu hỏi thông thường (không biết có cần hay không) dùng anything.
+        error_tag: some_any
+      - answer: Do I need bring anything to the interview?
+        feedback_vi: Sau need cần to - need to bring.
+        error_tag: need_to
+      - answer: I need to bring anything to the interview?
+        feedback_vi: Câu hỏi hiện tại đơn cần Do ở đầu - Do I need to…?
+        error_tag: question_form
+    explanation:
+      vi: Đây là câu hỏi bình thường, bạn không biết có cần hay không, nên dùng anything. Câu hỏi hiện tại đơn - Do I need to + V…?
+    display_answer: Do I need to bring anything to the interview?
+
+  - key: en:exercise:jobskl-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:everyone-everybody
+    prompt:
+      source_text: Everyone in the shop was very kind, and nobody laughed when I made a mistake.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mọi người trong cửa hàng đều rất tốt bụng, và không ai cười khi tôi mắc lỗi.
+        - Mọi người ở cửa hàng đều rất tốt, và không ai cười khi tôi mắc lỗi.
+        - Ai trong cửa hàng cũng rất tốt bụng, và không ai cười khi tôi mắc lỗi.
+        - Mọi người trong cửa hàng rất tử tế, và không ai cười khi tôi mắc lỗi.
+        - Mọi người trong cửa hàng đều rất tốt bụng và không ai cười khi tôi làm sai.
+        - Mọi người trong cửa hàng đều rất tốt bụng, không ai cười khi tôi mắc lỗi.
+        - Mọi người trong tiệm đều rất tốt bụng, và không ai cười khi tôi mắc lỗi.
+        - Mọi người trong cửa hàng đều rất tốt bụng, và chẳng ai cười khi tôi mắc lỗi.
+        - Mọi người trong cửa hàng đều rất tốt bụng, và không ai cười khi tôi mắc sai lầm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Everyone ... was là "mọi người đều" (everyone số ít nên dùng was); nobody laughed là "không ai cười"; made a mistake là "mắc lỗi".
+    display_answer: Mọi người trong cửa hàng đều rất tốt bụng, và không ai cười khi tôi mắc lỗi.

@@ -1,0 +1,360 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:jobs-skills-workplaces
+order_index: 1
+level: a2
+title:
+  vi: What do you do? - nghề nghiệp và nơi làm việc
+objectives:
+  - vi: Hỏi và trả lời về nghề nghiệp bằng What do you do? và I'm a/an…, I work as a/an….
+  - vi: Chọn đúng giới từ sau work - work in (lĩnh vực, loại nơi chốn), at (địa điểm cụ thể), for (công ty).
+  - vi: Gọi tên một số nghề phổ biến - nurse, chef, receptionist, accountant, mechanic, shop assistant.
+estimated_minutes: 15
+skills: [vocabulary, speaking]
+prerequisites: [en:lesson:everyday-now-review]
+items:
+  - item: en:item:what-do-you-do
+  - item: en:item:work-as-a
+  - item: en:item:work-in-at-for
+  - item: en:item:nurse
+  - item: en:item:chef
+  - item: en:item:receptionist
+  - item: en:item:accountant
+  - item: en:item:mechanic
+  - item: en:item:shop-assistant
+  - item: en:item:earn
+  - item: en:item:a-an
+    role: reuse
+  - item: en:item:work-verb
+    role: reuse
+  - item: en:item:hospital
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giới thiệu được công việc của mình và hỏi người mới quen làm nghề gì, ở đâu, cho công ty nào - đúng như trong một buổi gặp mặt hay ngày đầu đi làm.
+  - type: explain
+    text:
+      vi: "Câu hỏi tự nhiên nhất về nghề là What do you do? Trả lời bằng I'm a/an + nghề (I'm a nurse) hoặc I work as a/an + nghề. Tiếng Việt nói \"tôi là y tá\" không có \"một\", nhưng tiếng Anh luôn cần a/an trước nghề số ít."
+  - type: explain
+    text:
+      vi: "Sau work, giới từ cho biết bạn đang nói gì - work in + lĩnh vực hoặc loại nơi chốn (in a hotel, in marketing), work at + một địa điểm cụ thể (at the airport, at Bach Mai Hospital), work for + công ty trả lương cho bạn (for Viettel)."
+  - type: explain
+    text:
+      vi: Muốn nói về tiền lương, dùng earn (kiếm được) - She earns a good salary. Khi mới quen, người nói tiếng Anh thường không hỏi lương trực tiếp vì coi đó là chuyện riêng.
+  - type: deep_explain
+    text:
+      vi: Một câu có thể dùng cả ba giới từ - I work for a hotel chain, I work in the kitchen, and this month I work at the Da Nang branch. Từ chỉ nghề thường tạo bằng đuôi -er, -or, -ist, -ant (teacher, actor, receptionist, accountant), nhưng cũng có nhiều từ phải học riêng như nurse, chef, mechanic.
+  - type: example
+    target: "A: What do you do? B: I'm a receptionist. I work at a hotel near the beach."
+    target_lang: en
+    translation:
+      vi: "A: Bạn làm nghề gì? B: Mình là lễ tân. Mình làm ở một khách sạn gần biển."
+    note:
+      vi: I'm a + nghề; at + một nơi cụ thể.
+  - type: example
+    target: My cousin works for a bank in Hanoi. She's an accountant.
+    target_lang: en
+    translation:
+      vi: Em họ mình làm cho một ngân hàng ở Hà Nội. Em ấy là kế toán.
+    note:
+      vi: Work for + nơi trả lương; an accountant vì accountant bắt đầu bằng nguyên âm.
+  - type: example
+    target: Before he opened his own garage, he worked as a mechanic for ten years.
+    target_lang: en
+    translation:
+      vi: Trước khi mở xưởng sửa xe riêng, anh ấy làm thợ sửa xe mười năm.
+    note:
+      vi: Work as a + nghề - nhấn vào vị trí công việc.
+  - type: common_mistake
+    wrong: My mother is nurse.
+    right: My mother is a nurse.
+    target_lang: en
+    note:
+      vi: Nghề số ít luôn cần a/an. Tiếng Việt "mẹ tôi là y tá" không có mạo từ nên người Việt rất hay quên.
+  - type: common_mistake
+    wrong: He works in Samsung.
+    right: He works for Samsung.
+    target_lang: en
+    note:
+      vi: Với tên công ty (người trả lương cho bạn), dùng work for. Work in dùng cho lĩnh vực hoặc loại nơi chốn.
+  - type: common_mistake
+    wrong: "A: What do you do? B: I'm working on my laptop."
+    right: "A: What do you do? B: I'm a shop assistant."
+    target_lang: en
+    note:
+      vi: What do you do? hỏi về nghề nghiệp, không hỏi bạn đang làm gì lúc này (What are you doing?).
+  - type: summary
+    points:
+      - vi: What do you do? - I'm a/an… / I work as a/an….
+      - vi: work in + lĩnh vực, loại nơi chốn · work at + địa điểm cụ thể · work for + công ty.
+      - vi: Nghề số ít luôn có a/an (an accountant, a chef).
+      - vi: earn - kiếm (tiền) bằng công việc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:jobskl-work-mcq-what-do-you-do
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:what-do-you-do
+    prompt:
+      stem: "Một người mới quen hỏi \"What do you do?\". Câu trả lời nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: q7d, text: "I'm a chef at a Japanese restaurant.", lang: en }
+        - { id: m2k, text: "I'm doing my homework.", lang: en }
+        - { id: z5p, text: "I do it every day.", lang: en }
+        - { id: h3w, text: "I'm fine, thank you.", lang: en }
+    answer:
+      correct_option_id: q7d
+    explanation:
+      vi: What do you do? hỏi về nghề nghiệp, nên trả lời bằng I'm a + nghề. I'm doing my homework trả lời cho What are you doing? (đang làm gì).
+    display_answer: "I'm a chef at a Japanese restaurant."
+
+  - key: en:exercise:jobskl-work-mcq-an-accountant
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 1
+    item: en:item:accountant
+    prompt:
+      stem: "Chọn câu đúng: \"Bố tôi là kế toán.\""
+      stem_lang: vi
+      options:
+        - { id: c8r, text: "My father is an accountant.", lang: en }
+        - { id: u4n, text: "My father is a accountant.", lang: en }
+        - { id: e1v, text: "My father is accountant.", lang: en }
+        - { id: s6j, text: "My father an accountant.", lang: en }
+    answer:
+      correct_option_id: c8r
+    explanation:
+      vi: Accountant bắt đầu bằng nguyên âm /ə/ nên dùng an. Câu cần is và không được bỏ mạo từ như trong tiếng Việt.
+    display_answer: "My father is an accountant."
+
+  - key: en:exercise:jobskl-work-listen-nurse
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:nurse
+    prompt:
+      audio_asset_id: null
+      fallback_text: My aunt works as a nurse in a children's hospital, and she often works at night.
+      options:
+        - { id: b9t, text: "Dì mình làm y tá ở một bệnh viện nhi và thường làm ca đêm.", lang: vi }
+        - { id: k2g, text: "Dì mình làm bác sĩ ở một bệnh viện nhi và thường làm ca ngày.", lang: vi }
+        - { id: w5a, text: "Dì mình đưa con đến bệnh viện nhi vào ban đêm.", lang: vi }
+        - { id: f7x, text: "Dì mình muốn làm y tá nhưng chưa tìm được việc.", lang: vi }
+    answer:
+      correct_option_id: b9t
+    explanation:
+      vi: Works as a nurse là "làm y tá" (nurse khác doctor - bác sĩ); often works at night là "thường làm ban đêm". Câu ở hiện tại đơn nên đây là công việc hiện tại, không phải mong muốn.
+    display_answer: "Dì mình làm y tá ở một bệnh viện nhi và thường làm ca đêm."
+
+  - key: en:exercise:jobskl-work-fill-in-at-for-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:work-in-at-for
+    prompt:
+      template: "Hoa works {{b1}} an airline. She works {{b2}} Tan Son Nhat Airport."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Hoa làm cho một hãng hàng không. Cô ấy làm việc ở sân bay Tân Sơn Nhất."
+        - "Gợi ý: công ty trả lương → một giới từ; một địa điểm cụ thể → một giới từ khác."
+    answer:
+      blanks:
+        b1: [for]
+        b2: [at]
+    known_wrong:
+      - answer: in
+        feedback_vi: Với công ty dùng work for; với một địa điểm cụ thể như sân bay Tân Sơn Nhất dùng at.
+        error_tag: work_preposition
+      - answer: to
+        feedback_vi: Work không đi với to khi nói nơi làm việc.
+        error_tag: work_preposition
+    explanation:
+      vi: Hãng hàng không là nơi trả lương cho Hoa nên dùng work for. Sân bay Tân Sơn Nhất là một địa điểm cụ thể nên dùng work at.
+    display_answer: Hoa works for an airline. She works at Tan Son Nhat Airport.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:jobskl-work-fill-as-a
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:work-as-a
+    prompt:
+      template: "Last summer, my brother worked {{b1}} {{b2}} shop assistant in a shoe shop."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [as]
+        b2: [a]
+    known_wrong:
+      - answer: like
+        feedback_vi: Làm nghề gì dùng work as, không dùng like (like = giống như).
+        error_tag: work_as
+      - answer: an
+        feedback_vi: Shop bắt đầu bằng phụ âm /ʃ/ nên dùng a.
+        error_tag: article
+      - answer: is
+        feedback_vi: Sau worked không thêm is. Dùng worked as a….
+        error_tag: be_with_verb
+    explanation:
+      vi: Work as a/an + nghề nói về vị trí công việc. Shop assistant bắt đầu bằng âm phụ âm nên dùng a, và vẫn phải có mạo từ.
+    display_answer: Last summer, my brother worked as a shop assistant in a shoe shop.
+
+  - key: en:exercise:jobskl-work-translate-mechanic
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 2
+    item: en:item:mechanic
+    prompt:
+      source_text: Anh trai tôi là thợ sửa xe. Anh ấy làm ở một xưởng gần nhà tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My brother is a mechanic. He works at a garage near my house.
+        - My brother's a mechanic. He works at a garage near my house.
+        - My older brother is a mechanic. He works at a garage near my house.
+        - My brother is a mechanic. He works in a garage near my house.
+        - My brother is a mechanic. He works at a garage near my home.
+        - My brother is a mechanic. He works in a garage near my home.
+        - My older brother is a mechanic. He works in a garage near my house.
+        - My brother is a mechanic. He works at a workshop near my house.
+        - My brother is a mechanic. He works in a workshop near my house.
+        - My big brother is a mechanic. He works at a garage near my house.
+        - My elder brother is a mechanic. He works at a garage near my house.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My brother is mechanic. He works at a garage near my house.
+        feedback_vi: Nghề số ít cần a - a mechanic.
+        error_tag: article
+      - answer: My brother is a mechanic. He work at a garage near my house.
+        feedback_vi: Chủ ngữ he nên động từ thêm -s - works.
+        error_tag: third_person_s
+      - answer: My brother is a mechanic. He is work at a garage near my house.
+        feedback_vi: Câu có động từ thường thì không thêm is - He works at….
+        error_tag: be_with_verb
+    explanation:
+      vi: "\"Là thợ sửa xe\" cần is + a mechanic. Xưởng sửa xe là một nơi cụ thể nên dùng at a garage (in a garage cũng được vì làm bên trong xưởng)."
+    display_answer: My brother is a mechanic. He works at a garage near my house.
+
+  - key: en:exercise:jobskl-work-translate-work-for
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:work-in-at-for
+    prompt:
+      source_text: Tôi làm cho một công ty phần mềm, nhưng tôi làm việc ở nhà ba ngày một tuần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I work for a software company, but I work at home three days a week.
+        - I work for a software company, but I work from home three days a week.
+        - I work for a software company but I work at home three days a week.
+        - I work for a software company but I work from home three days a week.
+        - I work for a software company, but I work at home three days per week.
+        - I work for a software company, but I work from home three days per week.
+        - I work for a software company, but three days a week I work from home.
+        - I work for a software company, but three days a week I work at home.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I work in a software company, but I work at home three days a week.
+        feedback_vi: Công ty trả lương cho bạn thì dùng work for a software company.
+        error_tag: work_preposition
+      - answer: I work for a software company, but I work in home three days a week.
+        feedback_vi: Ở nhà là at home (hoặc work from home), không nói in home.
+        error_tag: at_home
+      - answer: I am work for a software company, but I work at home three days a week.
+        feedback_vi: Không thêm am trước động từ thường - I work for….
+        error_tag: be_with_verb
+    explanation:
+      vi: Công ty là người trả lương nên dùng work for. "Làm việc ở nhà" là work at home hoặc work from home (cách nói phổ biến hiện nay). "Một tuần" là a week, đặt cuối câu.
+    display_answer: I work for a software company, but I work from home three days a week.
+
+  # ---------------- application ----------------
+  - key: en:exercise:jobskl-work-mcq-introduce
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:chef
+    prompt:
+      stem: "Ở một buổi gặp mặt, bạn muốn nói: bạn là đầu bếp, làm cho một chuỗi khách sạn, hiện làm ở chi nhánh Đà Nẵng. Câu nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: r3m, text: "I'm a chef. I work for a hotel chain, and right now I work at their Da Nang branch.", lang: en }
+        - { id: y8c, text: "I'm chef. I work in a hotel chain, and right now I work for their Da Nang branch.", lang: en }
+        - { id: g6s, text: "I'm a cooker. I work for a hotel chain, and right now I work at their Da Nang branch.", lang: en }
+        - { id: o1l, text: "I'm a chef. I work at a hotel chain, and right now I'm work in their Da Nang branch.", lang: en }
+    answer:
+      correct_option_id: r3m
+    explanation:
+      vi: Cần a trước chef, work for với công ty (hotel chain) và work at với địa điểm cụ thể (Da Nang branch). Cooker là cái bếp, không phải người nấu; I'm work thừa am.
+    display_answer: "I'm a chef. I work for a hotel chain, and right now I work at their Da Nang branch."
+
+  - key: en:exercise:jobskl-work-order-earn
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:earn
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Một lễ tân ở thành phố này kiếm được bao nhiêu tiền?\""
+      tokens:
+        - { id: t-earn, text: earn }
+        - { id: t-city, text: in this city }
+        - { id: t-how, text: How much }
+        - { id: t-rec, text: a receptionist }
+        - { id: t-does, text: does }
+        - { id: t-earns, text: earns }
+    answer:
+      orders:
+        - [t-how, t-does, t-rec, t-earn, t-city]
+    explanation:
+      vi: Câu hỏi hiện tại đơn với chủ ngữ số ít - How much + does + a receptionist + earn (động từ nguyên mẫu vì does đã mang -s). Earns là bẫy - có does thì không thêm -s nữa.
+    display_answer: How much does a receptionist earn in this city?
+
+  - key: en:exercise:jobskl-work-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:receptionist
+    prompt:
+      source_text: She works as a receptionist at a dental clinic, but she wants to become a nurse.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô ấy làm lễ tân ở một phòng khám nha khoa, nhưng cô ấy muốn trở thành y tá.
+        - Cô ấy làm lễ tân ở một phòng khám nha khoa nhưng muốn trở thành y tá.
+        - Cô ấy làm lễ tân tại một phòng khám nha khoa, nhưng cô ấy muốn trở thành y tá.
+        - Chị ấy làm lễ tân ở một phòng khám nha khoa, nhưng chị ấy muốn trở thành y tá.
+        - Cô ấy làm lễ tân ở một phòng khám răng, nhưng cô ấy muốn trở thành y tá.
+        - Cô ấy làm lễ tân ở một phòng khám nha khoa, nhưng cô ấy muốn làm y tá.
+        - Cô ấy làm lễ tân ở một phòng khám nha khoa nhưng muốn làm y tá.
+        - Cô ấy làm lễ tân ở phòng khám nha khoa, nhưng cô ấy muốn trở thành điều dưỡng.
+        - Cô ấy là lễ tân ở một phòng khám nha khoa, nhưng cô ấy muốn trở thành y tá.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Works as a receptionist là "làm lễ tân"; at a dental clinic là "ở một phòng khám nha khoa"; wants to become a nurse là "muốn trở thành y tá". Tiếng Việt không cần dịch "một" trước nghề.
+    display_answer: Cô ấy làm lễ tân ở một phòng khám nha khoa, nhưng cô ấy muốn trở thành y tá.

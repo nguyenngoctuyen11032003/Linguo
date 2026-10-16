@@ -1,0 +1,362 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:jobs-skills-commute
+order_index: 3
+level: a2
+title:
+  vi: Across the bridge, through the park - đường đi làm và giới từ chuyển động
+objectives:
+  - vi: Tả đường đi làm bằng động từ chuyển động + across, along, through, past, into, out of, up, down.
+  - vi: Phân biệt cross (động từ) với across (giới từ), và get on/off với get into/out of.
+  - vi: Nói về quãng đường đi làm hằng ngày bằng commute và take + thời gian.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:jobs-skills-could-good-at]
+items:
+  - item: en:item:prepositions-of-movement
+  - item: en:item:across
+  - item: en:item:along
+  - item: en:item:through
+  - item: en:item:past-preposition
+  - item: en:item:into-out-of
+  - item: en:item:up-down
+  - item: en:item:get-on-off
+  - item: en:item:commute
+  - item: en:item:cross
+    role: reuse
+  - item: en:item:by-bus
+    role: reuse
+  - item: en:item:on-foot
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được hành trình đi làm của mình - đi qua cầu, dọc bờ sông, xuyên qua công viên, lên xuống xe buýt - bằng câu ngắn, rõ ràng.
+  - type: explain
+    text:
+      vi: "Tiếng Việt hay dùng hai động từ liền nhau - \"đi qua\", \"chạy vào\", \"bước ra\". Tiếng Anh dùng một động từ chuyển động + một giới từ chỉ hướng - walk across, run into, step out of."
+  - type: explain
+    text:
+      vi: "Across là từ bên này sang bên kia (across the road, across the bridge); along là dọc theo (along the river); through là đi bên trong một không gian (through the park, through the tunnel); past là đi ngang qua mà không dừng (go past the bank)."
+  - type: explain
+    text:
+      vi: "Into / out of là vào trong / ra khỏi (into the lift, out of the building); up / down là lên / xuống (up the stairs). Lên xuống xe buýt, tàu, xe máy dùng get on / get off; còn ô tô, taxi dùng get into / get out of."
+  - type: deep_explain
+    text:
+      vi: "In, on, at chỉ vị trí đứng yên (She's in the office); into chỉ chuyển động vào bên trong (She walked into the office). Cross là động từ (cross the street), across là giới từ (walk across the street), nên không nói cross across. Hỏi thời gian đi làm dùng How long does your commute take? - It takes about thirty minutes."
+  - type: example
+    target: Every morning I cycle along the river, go across the Long Bien Bridge and get to the office at eight.
+    target_lang: en
+    translation:
+      vi: Sáng nào mình cũng đạp xe dọc bờ sông, đi qua cầu Long Biên và đến văn phòng lúc tám giờ.
+    note:
+      vi: Along - dọc theo; across - từ đầu cầu bên này sang bên kia.
+  - type: example
+    target: Get off the bus at the market, walk through the market and the office is on your left.
+    target_lang: en
+    translation:
+      vi: Xuống xe buýt ở chợ, đi xuyên qua chợ, văn phòng ở bên tay trái bạn.
+    note:
+      vi: Get off - xuống xe buýt; through - đi bên trong khu chợ.
+  - type: example
+    target: She got out of the taxi, ran into the building and went up the stairs to the third floor.
+    target_lang: en
+    translation:
+      vi: Cô ấy xuống taxi, chạy vào toà nhà rồi đi lên cầu thang tới tầng ba.
+    note:
+      vi: Taxi dùng get out of; into - vào trong; up the stairs - lên cầu thang.
+  - type: common_mistake
+    wrong: I cross across the road at the traffic lights.
+    right: I cross the road at the traffic lights. / I walk across the road at the traffic lights.
+    target_lang: en
+    note:
+      vi: Cross đã là động từ "băng qua" nên không thêm across. Across là giới từ, cần một động từ khác như walk, go.
+  - type: common_mistake
+    wrong: I get off the taxi in front of the hotel.
+    right: I get out of the taxi in front of the hotel.
+    target_lang: en
+    note:
+      vi: Ô tô, taxi dùng get into / get out of. Get on / get off dùng cho xe buýt, tàu, máy bay, xe máy, xe đạp.
+  - type: common_mistake
+    wrong: We walked across the forest.
+    right: We walked through the forest.
+    target_lang: en
+    note:
+      vi: Rừng là một không gian có cây bao quanh, nên đi bên trong nó là through. Across dùng cho bề mặt phẳng như đường, cầu, quảng trường.
+  - type: summary
+    points:
+      - vi: across - băng qua · along - dọc theo · through - xuyên qua · past - đi ngang qua.
+      - vi: into / out of - vào / ra khỏi · up / down - lên / xuống.
+      - vi: get on / off - xe buýt, tàu, xe máy · get into / out of - ô tô, taxi.
+      - vi: cross the road = walk across the road (không nói cross across).
+      - vi: My commute takes … minutes.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:jobskl-move-mcq-through
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:through
+    prompt:
+      stem: "Chọn giới từ đúng: The train goes ___ a long tunnel before it reaches the station."
+      stem_lang: vi
+      options:
+        - { id: h5n, text: through, lang: en }
+        - { id: b8q, text: across, lang: en }
+        - { id: w3y, text: along, lang: en }
+        - { id: m1x, text: on, lang: en }
+    answer:
+      correct_option_id: h5n
+    explanation:
+      vi: Đường hầm là một không gian kín, tàu đi bên trong nó nên dùng through. Across dùng cho bề mặt (đường, cầu), along dùng khi đi dọc theo một đường thẳng dài.
+    display_answer: through
+
+  - key: en:exercise:jobskl-move-mcq-get-off
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:get-on-off
+    prompt:
+      stem: "Bạn muốn nói \"Xuống xe buýt ở trạm thứ hai\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z4c, text: "Get off the bus at the second stop.", lang: en }
+        - { id: f9l, text: "Get out of the bus at the second stop.", lang: en }
+        - { id: r2d, text: "Get down the bus at the second stop.", lang: en }
+        - { id: g7v, text: "Go off the bus in the second stop.", lang: en }
+    answer:
+      correct_option_id: z4c
+    explanation:
+      vi: Với xe buýt, tàu, xe máy, "xuống xe" là get off. Get out of dùng cho ô tô, taxi; get down không mang nghĩa xuống xe buýt. Ở một trạm dùng at.
+    display_answer: "Get off the bus at the second stop."
+
+  - key: en:exercise:jobskl-move-listen-route
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:past-preposition
+    prompt:
+      audio_asset_id: null
+      fallback_text: Walk along this street, go past the petrol station and then go into the tall glass building.
+      options:
+        - { id: y6t, text: "Đi dọc con phố này, đi qua cây xăng rồi đi vào toà nhà kính cao tầng.", lang: vi }
+        - { id: o3p, text: "Đi qua bên kia đường, dừng ở cây xăng rồi đi ra khỏi toà nhà kính.", lang: vi }
+        - { id: q8a, text: "Đi dọc con phố này rồi rẽ vào cây xăng cạnh toà nhà kính.", lang: vi }
+        - { id: e5j, text: "Đi xuyên qua toà nhà kính rồi đi dọc theo cây xăng.", lang: vi }
+    answer:
+      correct_option_id: y6t
+    explanation:
+      vi: Along this street - dọc con phố; go past - đi ngang qua (không dừng, không rẽ vào); go into - đi vào trong toà nhà. Phương án rẽ vào cây xăng hiểu sai past.
+    display_answer: "Đi dọc con phố này, đi qua cây xăng rồi đi vào toà nhà kính cao tầng."
+
+  - key: en:exercise:jobskl-move-fill-across-up-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:across
+    prompt:
+      template: "Walk {{b1}} the square, and then go {{b2}} the stairs to the second floor."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Đi bộ băng qua quảng trường, rồi đi lên cầu thang tới tầng hai."
+        - "Gợi ý: từ bên này sang bên kia của quảng trường → một giới từ; lên cầu thang → một giới từ ngắn."
+    answer:
+      blanks:
+        b1: [across]
+        b2: [up]
+    known_wrong:
+      - answer: cross
+        feedback_vi: Sau walk cần giới từ across. Cross là động từ, không đứng sau walk.
+        error_tag: cross_across
+      - answer: on
+        feedback_vi: On chỉ vị trí đứng yên. Đi lên cầu thang là go up the stairs.
+        error_tag: movement_preposition
+      - answer: down
+        feedback_vi: Lên tầng hai là đi lên - go up the stairs.
+        error_tag: movement_preposition
+    explanation:
+      vi: Băng qua quảng trường (bề mặt phẳng) là walk across the square. Đi lên cầu thang là go up the stairs.
+    display_answer: Walk across the square, and then go up the stairs to the second floor.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:jobskl-move-fill-into-out
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:into-out-of
+    prompt:
+      template: "When the fire alarm rang, everyone ran {{b1}} {{b2}} the building and waited in the car park."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [out]
+        b2: [of]
+    known_wrong:
+      - answer: into
+        feedback_vi: Khi chuông báo cháy reo, người ta chạy ra khỏi toà nhà - out of, không phải into.
+        error_tag: movement_preposition
+      - answer: from
+        feedback_vi: Chạy ra khỏi toà nhà dùng run out of the building.
+        error_tag: movement_preposition
+    explanation:
+      vi: Mọi người chạy ra ngoài và đợi ở bãi đỗ xe, nên đây là chuyển động ra khỏi một nơi - run out of the building. Out of luôn có hai chữ.
+    display_answer: When the fire alarm rang, everyone ran out of the building and waited in the car park.
+
+  - key: en:exercise:jobskl-move-translate-along
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:along
+    prompt:
+      source_text: Tôi đi bộ dọc bờ biển mỗi tối sau giờ làm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I walk along the beach every evening after work.
+        - I walk along the beach every night after work.
+        - I walk along the coast every evening after work.
+        - I walk along the seafront every evening after work.
+        - I walk along the shore every evening after work.
+        - Every evening after work, I walk along the beach.
+        - Every evening after work I walk along the beach.
+        - I go for a walk along the beach every evening after work.
+        - I walk along the beach after work every evening.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I walk on the beach every evening after work.
+        feedback_vi: On the beach chỉ vị trí. "Dọc bờ biển" là along the beach.
+        error_tag: movement_preposition
+      - answer: I walk across the beach every evening after work.
+        feedback_vi: Across là từ bên này sang bên kia. Đi dọc theo là along.
+        error_tag: movement_preposition
+      - answer: I am walk along the beach every evening after work.
+        feedback_vi: Không thêm am trước động từ thường - I walk….
+        error_tag: be_with_verb
+    explanation:
+      vi: "\"Dọc\" theo một đường dài (bờ biển, bờ sông, con phố) là along. Thói quen mỗi tối dùng hiện tại đơn - I walk."
+    display_answer: I walk along the beach every evening after work.
+
+  - key: en:exercise:jobskl-move-translate-commute
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:commute
+    prompt:
+      source_text: Đường đi làm của tôi mất khoảng bốn mươi lăm phút.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My commute takes about forty-five minutes.
+        - My commute takes about 45 minutes.
+        - My commute takes around forty-five minutes.
+        - My commute takes around 45 minutes.
+        - My commute takes approximately forty-five minutes.
+        - My commute is about forty-five minutes.
+        - My commute is about 45 minutes.
+        - My commute to work takes about forty-five minutes.
+        - My commute to work takes about 45 minutes.
+        - It takes me about forty-five minutes to get to work.
+        - It takes me about 45 minutes to get to work.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My commute take about forty-five minutes.
+        feedback_vi: My commute là số ít nên động từ thêm -s - takes.
+        error_tag: third_person_s
+      - answer: My commute is take about forty-five minutes.
+        feedback_vi: Không dùng is cùng động từ thường take - My commute takes….
+        error_tag: be_with_verb
+      - answer: My commute spends about forty-five minutes.
+        feedback_vi: Thời gian một việc "mất" dùng take; spend dùng với người (I spend 45 minutes…).
+        error_tag: take_spend
+    explanation:
+      vi: "\"Mất (thời gian)\" khi chủ ngữ là việc làm hoặc quãng đường dùng take - My commute takes…. Commute ở đây là danh từ (quãng đường đi làm), số ít nên takes có -s."
+    display_answer: My commute takes about forty-five minutes.
+
+  # ---------------- application ----------------
+  - key: en:exercise:jobskl-move-mcq-directions-email
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:prepositions-of-movement
+    prompt:
+      stem: "Bạn viết email chỉ đường cho đồng nghiệp mới từ ga tàu đến văn phòng. Câu nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: d3k, text: "Get off the train, go out of the station, walk past the bookshop and cross the road at the lights.", lang: en }
+        - { id: l8s, text: "Get out the train, go out the station, walk past of the bookshop and cross across the road.", lang: en }
+        - { id: u5w, text: "Get off the train, go into the station, walk along of the bookshop and across the road.", lang: en }
+        - { id: n2h, text: "Get down the train, go out of the station, walk through the bookshop and cross on the road.", lang: en }
+    answer:
+      correct_option_id: d3k
+    explanation:
+      vi: Xuống tàu là get off; ra khỏi ga là go out of; đi ngang qua hiệu sách là walk past (không có of); sang đường là cross the road. Các phương án khác thiếu of, thừa across hoặc dùng sai get down.
+    display_answer: "Get off the train, go out of the station, walk past the bookshop and cross the road at the lights."
+
+  - key: en:exercise:jobskl-move-order-get-into
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:get-on-off
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Anh ấy lên taxi và đi qua cầu.\""
+      tokens:
+        - { id: t-and, text: and went }
+        - { id: t-into, text: got into }
+        - { id: t-bridge, text: the bridge }
+        - { id: t-he, text: He }
+        - { id: t-across, text: across }
+        - { id: t-taxi, text: a taxi }
+        - { id: t-on, text: got on }
+    answer:
+      orders:
+        - [t-he, t-into, t-taxi, t-and, t-across, t-bridge]
+    explanation:
+      vi: Taxi là xe nhỏ nên lên taxi là get into (quá khứ got into), không dùng got on. Đi qua cầu là go across the bridge.
+    display_answer: He got into a taxi and went across the bridge.
+
+  - key: en:exercise:jobskl-move-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:up-down
+    prompt:
+      source_text: The lift was broken, so we walked up the stairs to the ninth floor.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thang máy bị hỏng nên chúng tôi đi bộ lên cầu thang tới tầng chín.
+        - Thang máy bị hỏng, nên chúng tôi đi bộ lên cầu thang tới tầng chín.
+        - Thang máy hỏng nên chúng tôi leo cầu thang bộ lên tầng chín.
+        - Thang máy bị hỏng nên chúng tôi phải đi cầu thang bộ lên tầng chín.
+        - Thang máy bị hỏng nên chúng tôi đi cầu thang bộ lên tầng chín.
+        - Thang máy bị hư nên chúng tôi đi bộ lên cầu thang tới tầng chín.
+        - Thang máy bị hỏng nên bọn mình đi bộ lên cầu thang tới tầng chín.
+        - Thang máy bị hỏng nên chúng tôi đi bộ lên tầng chín bằng cầu thang.
+        - Thang máy bị hỏng nên chúng tôi leo cầu thang lên tầng chín.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Lift (UK) là thang máy (US gọi elevator); walked up the stairs là "đi bộ lên cầu thang"; to the ninth floor là "tới tầng chín". So là "nên".
+    display_answer: Thang máy bị hỏng nên chúng tôi đi bộ lên cầu thang tới tầng chín.

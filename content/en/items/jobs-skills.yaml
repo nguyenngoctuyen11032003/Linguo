@@ -1,0 +1,758 @@
+# Học liệu unit "Việc làm & kỹ năng" (A2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: nghề nghiệp và nơi làm việc ----------------
+  - key: en:item:what-do-you-do
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: What do you do?
+      ipa: UK /wɒt də jə ˈduː/ · US /wɑːt də jə ˈduː/
+      pos: câu hỏi nghề nghiệp
+    back:
+      meaning:
+        vi: Bạn làm nghề gì? (câu hỏi lịch sự, tự nhiên nhất khi mới quen)
+      examples:
+        - target: "A: What do you do? B: I'm an accountant at a small company."
+          translation:
+            vi: "A: Bạn làm nghề gì? B: Mình là kế toán ở một công ty nhỏ."
+      pronunciation_note:
+        vi: Khi nói nhanh, do you đọc lướt thành /də jə/, chỉ nhấn mạnh chữ do cuối câu.
+      confusion:
+        vi: "Câu này hỏi về nghề, không hỏi \"bạn đang làm gì\" (đó là What are you doing?). Trả lời bằng I'm a/an + nghề hoặc I work in/at/for…"
+
+  - key: en:item:work-as-a
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: work as a / an + nghề
+      ipa: /ˈwɜːk əz ə/ · US /ˈwɝːk əz ə/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: Làm (công việc) là… - cách khác để nói nghề của mình, thường dùng khi công việc là tạm thời hoặc khi muốn nói rõ vị trí.
+      examples:
+        - target: My sister works as a nurse in a children's hospital.
+          translation:
+            vi: Chị gái mình làm y tá ở một bệnh viện nhi.
+      confusion:
+        vi: Sau as vẫn cần a/an trước nghề số ít - works as a nurse, không nói works as nurse. Tiếng Việt "làm y tá" không có mạo từ nên người Việt hay quên.
+
+  - key: en:item:work-in-at-for
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: work in / at / for…
+      pos: giới từ sau work
+    back:
+      meaning:
+        vi: "work in + lĩnh vực hoặc loại nơi chốn (work in a hotel, work in sales); work at + một địa điểm cụ thể (work at Vietcombank, work at the airport); work for + công ty, người chủ (work for Samsung)."
+      examples:
+        - target: He works for a travel company, but he works at the airport.
+          translation:
+            vi: Anh ấy làm cho một công ty du lịch, nhưng làm việc ở sân bay.
+        - target: I work in marketing.
+          translation:
+            vi: Mình làm trong ngành marketing.
+      confusion:
+        vi: Tiếng Việt chỉ có "làm ở", nên người Việt hay nói work in Samsung. Với công ty (người trả lương cho bạn), dùng work for.
+
+  - key: en:item:nurse
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: nurse
+      ipa: UK /nɜːs/ · US /nɝːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: y tá, điều dưỡng
+      examples:
+        - target: The nurse checked my blood pressure.
+          translation:
+            vi: Cô y tá đo huyết áp cho tôi.
+      pronunciation_note:
+        vi: Âm /ɜː/ giống "ơ" kéo dài; US có thêm âm r cuộn nhẹ. Không đọc thành "nớt-sờ".
+
+  - key: en:item:chef
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: chef
+      ipa: /ʃef/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu bếp (chuyên nghiệp, ở nhà hàng, khách sạn)
+      examples:
+        - target: She is a chef at a seafood restaurant in Nha Trang.
+          translation:
+            vi: Cô ấy là đầu bếp ở một nhà hàng hải sản tại Nha Trang.
+      pronunciation_note:
+        vi: Ch ở đây đọc /ʃ/ như "s" uốn lưỡi (gốc tiếng Pháp), không đọc /tʃ/ như chair.
+      confusion:
+        vi: Cook vừa là động từ (nấu) vừa là danh từ (người nấu ăn). Đừng nói cooker - cooker là cái bếp, nồi nấu.
+
+  - key: en:item:receptionist
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: receptionist
+      ipa: /rɪˈsepʃənɪst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lễ tân, nhân viên tiếp tân
+      examples:
+        - target: The receptionist gave us our room keys.
+          translation:
+            vi: Lễ tân đưa chìa khoá phòng cho chúng tôi.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai - re-CEP-tion-ist.
+
+  - key: en:item:accountant
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: accountant
+      ipa: /əˈkaʊntənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kế toán (người làm nghề kế toán)
+      examples:
+        - target: My uncle is an accountant, so he is very busy in December.
+          translation:
+            vi: Chú mình là kế toán nên tháng Mười Hai chú rất bận.
+      confusion:
+        vi: Accountant bắt đầu bằng nguyên âm nên dùng an - an accountant.
+
+  - key: en:item:mechanic
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: mechanic
+      ipa: /məˈkænɪk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thợ sửa máy, thợ sửa xe
+      examples:
+        - target: The mechanic says my motorbike needs new brakes.
+          translation:
+            vi: Thợ sửa xe nói xe máy của tôi cần thay phanh mới.
+      pronunciation_note:
+        vi: Ch đọc /k/ - me-CHAN-ic đọc như "mơ-KHE-nic", trọng âm ở âm giữa.
+
+  - key: en:item:shop-assistant
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: shop assistant (UK) / salesclerk (US)
+      ipa: UK /ˈʃɒp əˌsɪstənt/ · US /ˈʃɑːp əˌsɪstənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên bán hàng (trong cửa hàng)
+      examples:
+        - target: She worked as a shop assistant during the summer holidays.
+          translation:
+            vi: Cô ấy làm nhân viên bán hàng trong kỳ nghỉ hè.
+
+  - key: en:item:earn
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: earn
+      ipa: UK /ɜːn/ · US /ɝːn/
+      pos: động từ
+    back:
+      meaning:
+        vi: kiếm (tiền) bằng công việc
+      examples:
+        - target: How much does a nurse earn in your country?
+          translation:
+            vi: Ở nước bạn, y tá kiếm được bao nhiêu tiền?
+      confusion:
+        vi: "Earn là kiếm tiền do làm việc; win là thắng (win money trong cuộc thi). Không nói \"make a salary\" - nói earn a salary hoặc earn money."
+
+  # ---------------- Bài 2: could, couldn't và be good at ----------------
+  - key: en:item:could-past-ability
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: could + V (khả năng trong quá khứ)
+      ipa: /kʊd/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: "Could là quá khứ của can - nói điều bạn biết làm, làm được trong quá khứ: I could read when I was four. Could giống nhau cho mọi chủ ngữ, theo sau là động từ nguyên mẫu."
+      examples:
+        - target: My grandmother could sew her own clothes.
+          translation:
+            vi: Bà mình hồi đó tự may được quần áo.
+      pronunciation_note:
+        vi: Chữ l trong could là âm câm - đọc /kʊd/ như "cụt" nhẹ, không đọc "cu-lờ-đ".
+      confusion:
+        vi: Sau could không có to và không thêm -ed - could swim, không phải could to swim hay could swam.
+
+  - key: en:item:couldnt-past-ability
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: couldn't + V / Could you…?
+      ipa: /ˈkʊdnt/
+      pos: phủ định và câu hỏi
+    back:
+      meaning:
+        vi: "Phủ định - couldn't (could not) + V: không làm được trong quá khứ. Câu hỏi - đảo could lên đầu: Could you swim when you were a child?"
+      examples:
+        - target: I couldn't find a job for six months after university.
+          translation:
+            vi: Sáu tháng sau khi tốt nghiệp, mình không tìm được việc.
+        - target: "Could you speak English when you started this job? - No, I couldn't."
+          translation:
+            vi: Lúc mới bắt đầu công việc này bạn nói được tiếng Anh không? - Không, mình không nói được.
+      confusion:
+        vi: "Could you…? còn dùng để nhờ lịch sự ở hiện tại (Could you help me?). Có chữ when you were… thì đó là câu hỏi về khả năng trong quá khứ."
+
+  - key: en:item:be-good-at
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: be good at + danh từ / V-ing
+      ipa: /bi ˈɡʊd ət/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: giỏi về…, làm… giỏi. Sau at là danh từ (good at maths) hoặc động từ thêm -ing (good at drawing).
+      examples:
+        - target: Linh is really good at solving problems.
+          translation:
+            vi: Linh giải quyết vấn đề rất giỏi.
+      confusion:
+        vi: "Tiếng Việt nói \"giỏi vẽ\", nên người Việt hay viết good at draw hoặc good in drawing. Đúng là good at + V-ing - good at drawing."
+
+  - key: en:item:be-bad-at
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: be bad at / not very good at…
+      ipa: /bi ˈbæd ət/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: kém về…, làm… không giỏi. Not very good at nghe nhẹ nhàng, lịch sự hơn bad at.
+      examples:
+        - target: I'm not very good at remembering names.
+          translation:
+            vi: Mình nhớ tên người khác không giỏi lắm.
+      confusion:
+        vi: Khi nói về bản thân trong phỏng vấn, người bản ngữ thường dùng not very good at thay vì bad at để nghe khiêm tốn mà không tiêu cực.
+
+  - key: en:item:skill
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: skill
+      ipa: /skɪl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ năng
+      examples:
+        - target: Good communication skills are important in every job.
+          translation:
+            vi: Kỹ năng giao tiếp tốt quan trọng trong mọi công việc.
+      confusion:
+        vi: Skill đếm được - a useful skill, computer skills. Thường đi với have, learn, improve.
+
+  - key: en:item:fix
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fix / repair
+      ipa: /fɪks/ · repair UK /rɪˈpeə/ · US /rɪˈper/
+      pos: động từ
+    back:
+      meaning:
+        vi: sửa (máy móc, đồ hỏng). Fix thân mật, phổ biến trong văn nói; repair trang trọng hơn.
+      examples:
+        - target: Can you fix my laptop? The screen doesn't work.
+          translation:
+            vi: Bạn sửa giúp mình cái laptop được không? Màn hình không lên.
+      confusion:
+        vi: Sửa bài viết, sửa lỗi chính tả thì dùng correct, không dùng repair.
+
+  - key: en:item:use-a-computer
+    type: phrase
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: use a computer / use software
+      ipa: /ˈjuːz ə kəmˈpjuːtə/ · US /ˈjuːz ə kəmˈpjuːtɚ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: dùng máy tính / dùng phần mềm
+      examples:
+        - target: My father couldn't use a computer ten years ago, but now he sends emails every day.
+          translation:
+            vi: Mười năm trước bố mình không biết dùng máy tính, nhưng giờ ngày nào bố cũng gửi email.
+      pronunciation_note:
+        vi: Use động từ đọc /juːz/ (âm z), còn danh từ use đọc /juːs/ (âm s).
+
+  - key: en:item:type-fast
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: type (fast)
+      ipa: /taɪp/
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh máy (nhanh)
+      examples:
+        - target: She can type very fast without looking at the keyboard.
+          translation:
+            vi: Cô ấy đánh máy rất nhanh mà không cần nhìn bàn phím.
+      confusion:
+        vi: Fast vừa là tính từ vừa là trạng từ - type fast, không nói type fastly.
+
+  - key: en:item:learn-how-to
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: learn (how) to + V
+      ipa: UK /ˈlɜːn haʊ tə/ · US /ˈlɝːn haʊ tə/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: học (cách) làm gì
+      examples:
+        - target: I learned how to drive when I was eighteen.
+          translation:
+            vi: Mình học lái xe năm mười tám tuổi.
+      confusion:
+        vi: Sau learn dùng to + V (learn to drive) hoặc how to + V, không dùng learn driving để nói học một kỹ năng mới.
+
+  # ---------------- Bài 3: giới từ chỉ chuyển động ----------------
+  - key: en:item:prepositions-of-movement
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: động từ chuyển động + across / along / through / past / into / out of
+      pos: giới từ chỉ chuyển động
+    back:
+      meaning:
+        vi: "Giới từ chỉ hướng đi, đứng sau động từ chuyển động (walk, drive, go, run, ride). Tiếng Việt thường dùng hai động từ (\"đi qua\", \"chạy vào\"); tiếng Anh dùng một động từ + một giới từ."
+      examples:
+        - target: I walk through the park and then go into the office building.
+          translation:
+            vi: Mình đi bộ xuyên qua công viên rồi đi vào toà nhà văn phòng.
+      confusion:
+        vi: In, on, at chỉ vị trí đứng yên; into, out of, across chỉ chuyển động. Đi vào phòng là go into the room, không nói go in the room khi muốn nhấn mạnh hướng đi.
+
+  - key: en:item:across
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: across
+      ipa: UK /əˈkrɒs/ · US /əˈkrɑːs/
+      pos: giới từ
+    back:
+      meaning:
+        vi: băng qua, sang bên kia (từ bên này sang bên kia của đường, sông, cầu)
+      examples:
+        - target: We walked across the bridge to the old town.
+          translation:
+            vi: Chúng tôi đi bộ qua cầu sang phố cổ.
+      confusion:
+        vi: Cross là động từ (cross the road), across là giới từ (walk across the road). Không nói cross across.
+
+  - key: en:item:along
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: along
+      ipa: UK /əˈlɒŋ/ · US /əˈlɑːŋ/
+      pos: giới từ
+    back:
+      meaning:
+        vi: dọc theo (con đường, bờ sông, bãi biển)
+      examples:
+        - target: I cycle along the river every morning.
+          translation:
+            vi: Sáng nào mình cũng đạp xe dọc bờ sông.
+
+  - key: en:item:through
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: through
+      ipa: /θruː/
+      pos: giới từ
+    back:
+      meaning:
+        vi: xuyên qua, đi qua bên trong (công viên, đường hầm, khu chợ)
+      examples:
+        - target: The bus goes through the city centre.
+          translation:
+            vi: Xe buýt đi xuyên qua trung tâm thành phố.
+      pronunciation_note:
+        vi: Th đọc /θ/ - đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi; "-ough" ở đây đọc /uː/. Không đọc "thờ-râu".
+      confusion:
+        vi: Across là qua bề mặt từ bên này sang bên kia; through là đi bên trong một không gian (through the forest, through the tunnel).
+
+  - key: en:item:past-preposition
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: past (go past)
+      ipa: UK /pɑːst/ · US /pæst/
+      pos: giới từ
+    back:
+      meaning:
+        vi: đi ngang qua (một địa điểm, không dừng lại)
+      examples:
+        - target: Go past the petrol station and turn left.
+          translation:
+            vi: Đi qua cây xăng rồi rẽ trái.
+      confusion:
+        vi: "Đừng nhầm với passed (quá khứ của pass): I passed the bank = I went past the bank. Khi chỉ đường dùng go past."
+
+  - key: en:item:into-out-of
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: into / out of
+      ipa: /ˈɪntuː/ · /ˈaʊt əv/
+      pos: giới từ
+    back:
+      meaning:
+        vi: vào trong / ra khỏi (một toà nhà, căn phòng, chiếc xe)
+      examples:
+        - target: She ran out of the meeting room to answer her phone.
+          translation:
+            vi: Cô ấy chạy ra khỏi phòng họp để nghe điện thoại.
+      confusion:
+        vi: Out of có hai chữ - nói go out of the room, không nói go out the room trong văn viết chuẩn (UK).
+
+  - key: en:item:up-down
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: up / down
+      ipa: /ʌp/ · /daʊn/
+      pos: giới từ, trạng từ
+    back:
+      meaning:
+        vi: lên / xuống (cầu thang, đồi, con dốc)
+      examples:
+        - target: I always walk up the stairs to the fifth floor.
+          translation:
+            vi: Mình luôn đi bộ lên cầu thang tới tầng năm.
+
+  - key: en:item:get-on-off
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: get on / get off (the bus, the train)
+      ipa: UK /ɡet ˈɒn/ · US /ɡet ˈɑːn/ · /ɡet ˈɒf/ · US /ɡet ˈɔːf/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: lên / xuống (xe buýt, tàu, máy bay, xe máy)
+      examples:
+        - target: Get off the bus at the third stop.
+          translation:
+            vi: Xuống xe buýt ở trạm thứ ba.
+      confusion:
+        vi: "Với ô tô, taxi dùng get into / get out of (get into a taxi). Với xe buýt, tàu, xe máy, xe đạp dùng get on / get off. Tiếng Việt chỉ có \"lên/xuống\" cho tất cả."
+
+  - key: en:item:commute
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: commute
+      ipa: /kəˈmjuːt/
+      pos: động từ, danh từ
+    back:
+      meaning:
+        vi: đi lại hằng ngày giữa nhà và nơi làm (động từ); quãng đường đi làm (danh từ)
+      examples:
+        - target: My commute takes forty minutes because of the traffic.
+          translation:
+            vi: Đường đi làm của mình mất bốn mươi phút vì kẹt xe.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai - com-MUTE, đọc "cơ-MIU-t".
+
+  # ---------------- Bài 4: something, anyone, nobody ----------------
+  - key: en:item:indefinite-pronouns
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: some- / any- / no- / every- + thing / one / body / where
+      pos: đại từ bất định
+    back:
+      meaning:
+        vi: "Ghép some, any, no, every với thing (vật), one/body (người), where (nơi chốn). Some- cho câu khẳng định và lời mời; any- cho câu hỏi và câu phủ định với not; no- đã mang nghĩa phủ định; every- là tất cả."
+      examples:
+        - target: Is there anything in the fridge? - No, there's nothing.
+          translation:
+            vi: Trong tủ lạnh có gì không? - Không, chẳng có gì cả.
+      confusion:
+        vi: Một câu tiếng Anh chỉ có một từ phủ định. "I don't know nothing" sai - nói I don't know anything hoặc I know nothing.
+
+  - key: en:item:something
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: something
+      ipa: /ˈsʌmθɪŋ/
+      pos: đại từ
+    back:
+      meaning:
+        vi: một cái gì đó, một điều gì đó
+      examples:
+        - target: I need to tell you something about tomorrow's meeting.
+          translation:
+            vi: Mình cần nói với bạn một chuyện về cuộc họp ngày mai.
+      confusion:
+        vi: "Trong lời mời, lời đề nghị vẫn dùng something dù là câu hỏi: Would you like something to drink?"
+
+  - key: en:item:anything
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: anything
+      ipa: /ˈeniθɪŋ/
+      pos: đại từ
+    back:
+      meaning:
+        vi: bất cứ cái gì (trong câu hỏi); không… gì (với not)
+      examples:
+        - target: I didn't buy anything at the market.
+          translation:
+            vi: Mình không mua gì ở chợ cả.
+      pronunciation_note:
+        vi: Any đọc /ˈeni/ như "e-ni", không đọc "a-ni".
+
+  - key: en:item:nothing
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: nothing
+      ipa: /ˈnʌθɪŋ/
+      pos: đại từ
+    back:
+      meaning:
+        vi: không có gì, chẳng có gì
+      examples:
+        - target: There's nothing on my desk except my laptop.
+          translation:
+            vi: Trên bàn mình chẳng có gì ngoài cái laptop.
+      confusion:
+        vi: Nothing đã là phủ định nên động từ đi kèm ở dạng khẳng định - There is nothing, không nói There isn't nothing.
+
+  - key: en:item:someone-somebody
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: someone / somebody
+      ipa: /ˈsʌmwʌn/ · /ˈsʌmbədi/ · US /ˈsʌmbɑːdi/
+      pos: đại từ
+    back:
+      meaning:
+        vi: ai đó, một người nào đó (hai từ cùng nghĩa; somebody thân mật hơn một chút)
+      examples:
+        - target: Someone left an umbrella in the meeting room.
+          translation:
+            vi: Có ai đó để quên cái ô trong phòng họp.
+      confusion:
+        vi: Someone là số ít nên động từ hiện tại thêm -s - Someone is waiting, Somebody wants to see you.
+
+  - key: en:item:anyone-anybody
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: anyone / anybody
+      ipa: /ˈeniwʌn/ · /ˈenibədi/ · US /ˈenibɑːdi/
+      pos: đại từ
+    back:
+      meaning:
+        vi: có ai…không (câu hỏi); không… ai (với not)
+      examples:
+        - target: Does anyone have a charger I can borrow?
+          translation:
+            vi: Có ai có sạc cho mình mượn không?
+
+  - key: en:item:nobody-no-one
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: nobody / no one
+      ipa: /ˈnəʊbədi/ · US /ˈnoʊbɑːdi/ · UK /ˈnəʊ wʌn/ · US /ˈnoʊ wʌn/
+      pos: đại từ
+    back:
+      meaning:
+        vi: không ai, chẳng ai
+      examples:
+        - target: Nobody answered the phone at the reception desk.
+          translation:
+            vi: Không ai nghe điện thoại ở quầy lễ tân.
+      confusion:
+        vi: No one viết rời hai chữ. Nobody/no one đi với động từ khẳng định - Nobody knows, không nói Nobody doesn't know.
+
+  - key: en:item:everyone-everybody
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: everyone / everybody
+      ipa: /ˈevriwʌn/ · /ˈevribədi/ · US /ˈevribɑːdi/
+      pos: đại từ
+    back:
+      meaning:
+        vi: mọi người, ai cũng
+      examples:
+        - target: Everyone in my team speaks a little Japanese.
+          translation:
+            vi: Ai trong nhóm mình cũng nói được một chút tiếng Nhật.
+      confusion:
+        vi: "Tiếng Việt \"mọi người\" nghe như số nhiều, nhưng everyone là số ít - Everyone is here, Everyone speaks, không nói Everyone are."
+
+  - key: en:item:somewhere-anywhere
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: somewhere / anywhere / nowhere / everywhere
+      ipa: UK /ˈsʌmweə/ · US /ˈsʌmwer/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở đâu đó / bất cứ đâu, không… đâu cả / không nơi nào / khắp nơi
+      examples:
+        - target: I can't find my keys anywhere. I looked everywhere!
+          translation:
+            vi: Mình không tìm thấy chìa khoá ở đâu cả. Mình tìm khắp nơi rồi!
+      confusion:
+        vi: Như các từ khác, câu phủ định dùng not… anywhere hoặc nowhere, không dùng cả hai.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:part-time-full-time
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: part-time / full-time
+      ipa: UK /ˌpɑːt ˈtaɪm/ · US /ˌpɑːrt ˈtaɪm/ · /ˌfʊl ˈtaɪm/
+      pos: tính từ, trạng từ
+    back:
+      meaning:
+        vi: bán thời gian / toàn thời gian
+      examples:
+        - target: I have a part-time job in a bookshop at the weekend.
+          translation:
+            vi: Cuối tuần mình làm thêm bán thời gian ở một hiệu sách.
+      confusion:
+        vi: Trước danh từ có gạch nối (a part-time job); sau động từ có thể bỏ gạch nối (She works part time).
+
+  - key: en:item:be-available
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: be available (at / on / from…)
+      ipa: /bi əˈveɪləbl/
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: rảnh, có thể làm việc / có mặt (vào lúc nào đó) - rất hay dùng trong đơn xin việc và khi xếp lịch
+      examples:
+        - target: I'm available on weekday evenings and on Saturdays.
+          translation:
+            vi: Tôi có thể làm vào các buổi tối trong tuần và thứ Bảy.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai - a-VAI-la-ble.
+      confusion:
+        vi: Available nói về thời gian bạn sẵn sàng làm việc; free thân mật hơn và thường nói về thời gian rảnh rỗi (Are you free tonight?).

@@ -1,0 +1,358 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:jobs-skills-something-anyone
+order_index: 4
+level: a2
+title:
+  vi: Someone, anything, nobody - đại từ bất định ở văn phòng
+objectives:
+  - vi: Dùng something, someone, somewhere trong câu khẳng định và lời mời.
+  - vi: Dùng anything, anyone, anywhere trong câu hỏi và câu phủ định với not.
+  - vi: Dùng nothing, nobody, no one và everyone với động từ đúng (một từ phủ định, động từ số ít).
+estimated_minutes: 15
+skills: [grammar, speaking]
+prerequisites: [en:lesson:jobs-skills-commute]
+items:
+  - item: en:item:indefinite-pronouns
+  - item: en:item:something
+  - item: en:item:anything
+  - item: en:item:nothing
+  - item: en:item:someone-somebody
+  - item: en:item:anyone-anybody
+  - item: en:item:nobody-no-one
+  - item: en:item:everyone-everybody
+  - item: en:item:somewhere-anywhere
+  - item: en:item:some-any
+    role: reuse
+  - item: en:item:receptionist
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và trả lời tự nhiên trong những tình huống văn phòng quen thuộc - có ai gọi không, có gì cần mang không, chẳng ai biết mật khẩu wifi - mà không mắc lỗi "hai lần phủ định".
+  - type: explain
+    text:
+      vi: "Ghép some / any / no / every với thing (vật), one hoặc body (người), where (nơi chốn) - something, anyone, nobody, everywhere. Quy tắc giống some và any bạn đã học - some- cho câu khẳng định, any- cho câu hỏi và câu có not."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"tôi không biết gì cả\" với hai từ phủ định (không, gì cả). Tiếng Anh chỉ dùng một - I don't know anything hoặc I know nothing. Không bao giờ nói I don't know nothing."
+  - type: explain
+    text:
+      vi: "Everyone, someone, nobody đều là số ít nên động từ hiện tại thêm -s - Everyone likes the new manager. Tiếng Việt \"mọi người\" nghe như số nhiều nên người Việt hay nói Everyone like."
+  - type: deep_explain
+    text:
+      vi: "Trong lời mời và lời đề nghị, dùng some- dù là câu hỏi, vì bạn mong câu trả lời là có - Would you like something to drink? Can I help you with something? Từ -one và -body cùng nghĩa; -one hơi trang trọng hơn trong văn viết. Sau các từ này có thể thêm tính từ hoặc to + V - something important, nothing to do, somewhere quiet."
+  - type: example
+    target: "Someone called while you were at lunch. - Did they leave a message? - No, they didn't say anything."
+    target_lang: en
+    translation:
+      vi: Có ai đó gọi khi bạn đi ăn trưa. - Họ có để lại lời nhắn không? - Không, họ chẳng nói gì cả.
+    note:
+      vi: Someone trong câu khẳng định; didn't + anything trong câu phủ định. Với someone, người bản ngữ dùng they khi không biết là nam hay nữ.
+  - type: example
+    target: Nobody knows the new wifi password. Can anyone ask the receptionist?
+    target_lang: en
+    translation:
+      vi: Không ai biết mật khẩu wifi mới. Có ai hỏi lễ tân được không?
+    note:
+      vi: Nobody + động từ khẳng định knows (số ít); anyone trong câu hỏi.
+  - type: example
+    target: I'm looking for somewhere quiet to make a phone call. Everywhere is so noisy today!
+    target_lang: en
+    translation:
+      vi: Mình đang tìm chỗ nào đó yên tĩnh để gọi điện. Hôm nay chỗ nào cũng ồn quá!
+    note:
+      vi: Somewhere + tính từ (quiet); everywhere là số ít nên đi với is.
+  - type: common_mistake
+    wrong: I didn't see nobody in the office.
+    right: I didn't see anybody in the office. / I saw nobody in the office.
+    target_lang: en
+    note:
+      vi: Một câu chỉ có một từ phủ định. Đã có didn't thì dùng anybody; muốn dùng nobody thì bỏ didn't.
+  - type: common_mistake
+    wrong: Everyone are ready for the presentation.
+    right: Everyone is ready for the presentation.
+    target_lang: en
+    note:
+      vi: Everyone là số ít nên dùng is, dù tiếng Việt "mọi người" nghe như số nhiều.
+  - type: common_mistake
+    wrong: Would you like anything to eat? (khi mời khách)
+    right: Would you like something to eat?
+    target_lang: en
+    note:
+      vi: Khi mời, dùng something để nghe thân thiện và chờ đợi câu trả lời có. Anything trong lời mời không sai hẳn nhưng nghe kém nhiệt tình hơn.
+  - type: summary
+    points:
+      - vi: some- (khẳng định, lời mời) · any- (câu hỏi, câu có not) · no- (đã phủ định) · every- (tất cả).
+      - vi: -thing = vật · -one / -body = người · -where = nơi chốn.
+      - vi: Một từ phủ định mỗi câu - I don't know anything = I know nothing.
+      - vi: everyone, someone, nobody + động từ số ít (is, knows).
+      - vi: something + tính từ / to + V (something important, nothing to do).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:jobskl-indef-mcq-anything
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:anything
+    prompt:
+      stem: "Chọn đáp án đúng: I checked my inbox, but there wasn't ___ from the client."
+      stem_lang: vi
+      options:
+        - { id: k4r, text: anything, lang: en }
+        - { id: c7m, text: nothing, lang: en }
+        - { id: x2w, text: something, lang: en }
+        - { id: j9e, text: everything, lang: en }
+    answer:
+      correct_option_id: k4r
+    explanation:
+      vi: Câu đã có wasn't (phủ định), nên chỉ dùng anything. Nothing sẽ tạo hai lần phủ định - lỗi rất hay gặp khi dịch "không có gì cả".
+    display_answer: anything
+
+  - key: en:exercise:jobskl-indef-mcq-everyone-is
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:everyone-everybody
+    prompt:
+      stem: "Câu nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: s3f, text: "Everyone in our department works from home on Fridays.", lang: en }
+        - { id: v6b, text: "Everyone in our department work from home on Fridays.", lang: en }
+        - { id: p1n, text: "Everyone in our department are working from home on Fridays.", lang: en }
+        - { id: a8z, text: "Every people in our department work from home on Fridays.", lang: en }
+    answer:
+      correct_option_id: s3f
+    explanation:
+      vi: Everyone là số ít nên động từ hiện tại thêm -s - works. Every không đi với people (danh từ số nhiều); nói everyone hoặc every person.
+    display_answer: "Everyone in our department works from home on Fridays."
+
+  - key: en:exercise:jobskl-indef-listen-nobody
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: en:item:nobody-no-one
+    prompt:
+      audio_asset_id: null
+      fallback_text: I knocked on the door, but nobody answered, so I left the documents with the security guard.
+      options:
+        - { id: g5h, text: "Tôi gõ cửa nhưng không ai trả lời, nên tôi để tài liệu lại cho bảo vệ.", lang: vi }
+        - { id: t8d, text: "Tôi gõ cửa và có người trả lời, rồi tôi đưa tài liệu cho bảo vệ.", lang: vi }
+        - { id: o2c, text: "Không ai gõ cửa, nên bảo vệ mang tài liệu đến cho tôi.", lang: vi }
+        - { id: y7s, text: "Tôi gõ cửa nhưng bảo vệ không cho tôi để lại tài liệu.", lang: vi }
+    answer:
+      correct_option_id: g5h
+    explanation:
+      vi: Nobody answered là "không ai trả lời" - nobody đi với động từ khẳng định nhưng nghĩa là phủ định. Left the documents with là "để tài liệu lại cho (ai đó giữ)".
+    display_answer: "Tôi gõ cửa nhưng không ai trả lời, nên tôi để tài liệu lại cho bảo vệ."
+
+  - key: en:exercise:jobskl-indef-fill-someone-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:someone-somebody
+    prompt:
+      template: "{{b1}} left a black umbrella in the lift. Does {{b2}} know whose it is?"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Có ai đó để quên cái ô màu đen trong thang máy. Có ai biết nó là của ai không?"
+        - "Gợi ý: câu khẳng định → some-; câu hỏi → any-; cả hai đều chỉ người."
+    answer:
+      blanks:
+        b1: [Someone, Somebody]
+        b2: [anyone, anybody]
+    known_wrong:
+      - answer: Nobody
+        feedback_vi: Câu đầu là câu khẳng định (đã có người để quên ô), nên dùng Someone.
+        error_tag: some_any
+      - answer: nothing
+        feedback_vi: Câu thứ hai hỏi về người (có ai biết không), nên dùng anyone.
+        error_tag: thing_one
+      - answer: Something
+        feedback_vi: Người để quên ô là người, nên dùng -one hoặc -body, không dùng -thing.
+        error_tag: thing_one
+    explanation:
+      vi: Câu đầu khẳng định nên dùng Someone/Somebody. Câu sau là câu hỏi nên dùng anyone/anybody. Cả hai chỉ người nên đuôi là -one hoặc -body.
+    display_answer: Someone left a black umbrella in the lift. Does anyone know whose it is?
+
+  # ---------------- recall ----------------
+  - key: en:exercise:jobskl-indef-fill-nothing-anywhere
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:somewhere-anywhere
+    prompt:
+      template: "I can't find my staff card {{b1}}. I've looked {{b2}} - in my bag, on my desk, in the car."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [anywhere]
+        b2: [everywhere]
+    known_wrong:
+      - answer: nowhere
+        feedback_vi: Câu đã có can't nên dùng anywhere. Nowhere sẽ thành hai lần phủ định.
+        error_tag: double_negative
+      - answer: somewhere
+        feedback_vi: Câu phủ định với can't dùng any-, không dùng some-.
+        error_tag: some_any
+    explanation:
+      vi: Câu đầu có can't nên dùng anywhere (không… ở đâu cả). Câu sau liệt kê nhiều nơi đã tìm, nghĩa là "khắp nơi" - everywhere.
+    display_answer: I can't find my staff card anywhere. I've looked everywhere - in my bag, on my desk, in the car.
+
+  - key: en:exercise:jobskl-indef-translate-nothing
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:nothing
+    prompt:
+      source_text: Chiều nay tôi không có việc gì để làm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I have nothing to do this afternoon.
+        - I don't have anything to do this afternoon.
+        - I do not have anything to do this afternoon.
+        - I haven't got anything to do this afternoon.
+        - I've got nothing to do this afternoon.
+        - I have got nothing to do this afternoon.
+        - This afternoon I have nothing to do.
+        - This afternoon I don't have anything to do.
+        - This afternoon, I have nothing to do.
+        - This afternoon, I don't have anything to do.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I don't have nothing to do this afternoon.
+        feedback_vi: Hai lần phủ định. Dùng I don't have anything… hoặc I have nothing….
+        error_tag: double_negative
+      - answer: I have anything to do this afternoon.
+        feedback_vi: Anything trong câu khẳng định không mang nghĩa "không có gì". Dùng nothing hoặc don't have anything.
+        error_tag: some_any
+      - answer: I don't have something to do this afternoon.
+        feedback_vi: Câu phủ định dùng anything, không dùng something.
+        error_tag: some_any
+    explanation:
+      vi: "\"Không có gì để làm\" có hai cách - I have nothing to do (nothing đã phủ định) hoặc I don't have anything to do. Something/nothing/anything + to + V nói việc để làm."
+    display_answer: I have nothing to do this afternoon.
+
+  - key: en:exercise:jobskl-indef-translate-anyone
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:anyone-anybody
+    prompt:
+      source_text: Có ai trong nhóm bạn nói được tiếng Hàn không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Can anyone in your team speak Korean?
+        - Can anybody in your team speak Korean?
+        - Does anyone in your team speak Korean?
+        - Does anybody in your team speak Korean?
+        - Can anyone on your team speak Korean?
+        - Does anyone on your team speak Korean?
+        - Is there anyone in your team who can speak Korean?
+        - Is there anyone in your team who speaks Korean?
+        - Is there anybody in your team who speaks Korean?
+        - Is there anyone on your team who speaks Korean?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Does anyone in your team speaks Korean?
+        feedback_vi: Có does thì động từ chính ở dạng nguyên mẫu - speak.
+        error_tag: does_verb_form
+      - answer: Do anyone in your team speak Korean?
+        feedback_vi: Anyone là số ít nên dùng Does.
+        error_tag: do_does
+      - answer: Can someone in your team speak Korean?
+        feedback_vi: Câu hỏi thông thường (không biết có hay không) dùng anyone.
+        error_tag: some_any
+    explanation:
+      vi: Câu hỏi "có ai… không" dùng anyone/anybody. Anyone là số ít nên đi với Does + V nguyên mẫu, hoặc dùng Can anyone… speak. UK nói in your team, US hay nói on your team.
+    display_answer: Can anyone in your team speak Korean?
+
+  # ---------------- application ----------------
+  - key: en:exercise:jobskl-indef-mcq-offer
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:something
+    prompt:
+      stem: "Một khách hàng đến văn phòng sớm và phải chờ. Bạn là lễ tân, muốn mời họ uống gì đó. Câu nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: w4q, text: "Would you like something to drink while you wait?", lang: en }
+        - { id: e9t, text: "Would you like nothing to drink while you wait?", lang: en }
+        - { id: i6g, text: "Do you want anything drink while you wait?", lang: en }
+        - { id: r1u, text: "Would you like somewhere to drink while you wait?", lang: en }
+    answer:
+      correct_option_id: w4q
+    explanation:
+      vi: Lời mời dùng something vì bạn mong câu trả lời có; something + to drink. Nothing biến lời mời thành vô nghĩa, anything drink thiếu to, còn somewhere là nơi chốn.
+    display_answer: "Would you like something to drink while you wait?"
+
+  - key: en:exercise:jobskl-indef-order-nobody
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:indefinite-pronouns
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Không ai ở văn phòng biết mật khẩu mới.\""
+      tokens:
+        - { id: t-password, text: the new password }
+        - { id: t-knows, text: knows }
+        - { id: t-office, text: in the office }
+        - { id: t-nobody, text: Nobody }
+        - { id: t-doesnt, text: "doesn't" }
+        - { id: t-know, text: know }
+    answer:
+      orders:
+        - [t-nobody, t-office, t-knows, t-password]
+    explanation:
+      vi: Nobody đã mang nghĩa phủ định, nên động từ ở dạng khẳng định số ít - knows. Thêm doesn't sẽ thành hai lần phủ định.
+    display_answer: Nobody in the office knows the new password.
+
+  - key: en:exercise:jobskl-indef-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:someone-somebody
+    prompt:
+      source_text: Is there somewhere quiet I can work? Someone is playing loud music next to my desk.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có chỗ nào yên tĩnh để tôi làm việc không? Có ai đó đang bật nhạc to cạnh bàn tôi.
+        - Có chỗ nào yên tĩnh mà tôi có thể làm việc không? Có ai đó đang mở nhạc to ngay cạnh bàn tôi.
+        - Có chỗ nào yên tĩnh cho tôi làm việc không? Ai đó đang bật nhạc to cạnh bàn làm việc của tôi.
+        - Có nơi nào yên tĩnh để tôi làm việc không? Có người đang bật nhạc to cạnh bàn tôi.
+        - Có chỗ nào yên tĩnh để mình làm việc không? Có ai đó đang bật nhạc to cạnh bàn mình.
+        - Có chỗ nào yên tĩnh tôi làm việc được không? Có ai đó đang mở nhạc to cạnh bàn tôi.
+        - Có chỗ nào yên tĩnh để tôi làm việc không? Có người đang mở nhạc to cạnh bàn của tôi.
+        - Có chỗ nào yên tĩnh để tôi làm việc không? Ai đó đang mở nhạc rất to cạnh bàn tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Somewhere quiet là "chỗ nào đó yên tĩnh" (tính từ đứng sau somewhere); someone is playing loud music là "có ai đó đang bật nhạc to". Tiếng Việt hay thêm "có" trước "ai đó" cho tự nhiên.
+    display_answer: Có chỗ nào yên tĩnh để tôi làm việc không? Có ai đó đang bật nhạc to cạnh bàn tôi.
