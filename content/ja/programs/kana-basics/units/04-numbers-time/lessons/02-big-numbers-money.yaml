@@ -237,6 +237,7 @@ exercises:
         - あれはいくらですか。
         - あれはいくらですか？
         - あれ、いくらですか。
+        - あれいくらですか。
     known_wrong:
       - answer: あれはいくつですか。
         feedback_vi: いくつ hỏi số lượng; hỏi giá tiền dùng いくら.
