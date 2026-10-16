@@ -13,10 +13,19 @@ import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvide
 import { cn } from '@/lib/cn';
 import { ExamFormCard, ExamHistoryList, FAMILY_LABELS, QuestionTypePicker } from './components';
 import { fullMockMinutes, goalFamily, structureWarning } from './exam-page-utils';
+import { OpenAttemptDialog } from './OpenAttemptDialog';
 import { StartExamDialog } from './StartExamDialog';
 import { useStartExam } from './useStartExam';
 
 type Filter = ExamFamily | 'all';
+
+/** A start held back by the open-attempt confirmation. */
+interface PendingStart {
+  formId: string;
+  mode: ExamMode;
+  section?: ExamSection;
+  questionType?: string;
+}
 
 const HISTORY_LIMIT = 5;
 
@@ -42,6 +51,12 @@ export function ExamHubPage() {
   const [pickerFormId, setPickerFormId] = useState<string | null>(null);
   /** A timed full mock waiting for the learner's confirmation: its clock starts the moment the attempt exists. */
   const [confirmFormId, setConfirmFormId] = useState<string | null>(null);
+  /** A start that would expire the open attempt, waiting for "Bắt đầu bài mới". */
+  const [pending, setPending] = useState<PendingStart | null>(null);
+  /** The mode button that asked for a start: focus goes back to it when the confirmation is dismissed. */
+  const triggerRef = useRef<HTMLElement | null>(null);
+  /** start_exam silently expires the path's open attempt; the history (newest first) lists it as "Đang làm". */
+  const openAttempt = history.status === 'ready' ? (history.entries.find((e) => e.status === 'in_progress') ?? null) : null;
 
   let content;
   if (!path) {
@@ -81,6 +96,24 @@ export function ExamHubPage() {
     const visible = forms.forms.filter((f) => filter === 'all' || f.family === filter);
 
     const confirmForm = forms.forms.find((f) => f.form_id === confirmFormId) ?? null;
+    /** A start past the open-attempt check: a timed full mock still asks about its clock first. */
+    const proceed = (form: ExamFormSummary, mode: ExamMode, section?: ExamSection, questionType?: string) => {
+      if (mode === 'full' && fullMockMinutes(form) > 0) {
+        starter.clearError();
+        setConfirmFormId(form.form_id);
+        return;
+      }
+      start(form, mode, section, questionType);
+    };
+    const request = (form: ExamFormSummary, mode: ExamMode, section?: ExamSection, questionType?: string) => {
+      if (openAttempt) {
+        starter.clearError();
+        setPending({ formId: form.form_id, mode, section, questionType });
+        return;
+      }
+      proceed(form, mode, section, questionType);
+    };
+    const pendingForm = pending ? (forms.forms.find((f) => f.form_id === pending.formId) ?? null) : null;
     const start = (form: ExamFormSummary, mode: ExamMode, section?: ExamSection, questionType?: string) => {
       void starter.start({
         pathId: path.id,
@@ -102,7 +135,14 @@ export function ExamHubPage() {
         )}
         <ul className="grid gap-4 lg:grid-cols-2">
           {visible.map((form) => (
-            <li key={form.form_id} className="min-w-0 space-y-3">
+            <li
+              key={form.form_id}
+              className="min-w-0 space-y-3"
+              onClickCapture={(e) => {
+                const button = e.target instanceof Element ? e.target.closest('button') : null;
+                if (button) triggerRef.current = button;
+              }}
+            >
               <ExamFormCard
                 form={form}
                 warningVi={structureWarning(path.goalType, form.family)}
@@ -113,20 +153,26 @@ export function ExamHubPage() {
                     setPickerFormId(form.form_id);
                     return;
                   }
-                  if (mode === 'full' && fullMockMinutes(form) > 0) {
-                    starter.clearError();
-                    setConfirmFormId(form.form_id);
-                    return;
-                  }
-                  start(form, mode, section);
+                  request(form, mode, section);
                 }}
               />
               {pickerFormId === form.form_id && (
-                <PickerPanel form={form} busy={starter.busy} onClose={() => setPickerFormId(null)} onPick={(type) => start(form, 'question_type', undefined, type)} />
+                <PickerPanel form={form} busy={starter.busy} onClose={() => setPickerFormId(null)} onPick={(type) => request(form, 'question_type', undefined, type)} />
               )}
             </li>
           ))}
         </ul>
+        <OpenAttemptDialog
+          attempt={pendingForm ? openAttempt : null}
+          busy={starter.busy}
+          triggerRef={triggerRef}
+          onCancel={() => setPending(null)}
+          onStartNew={() => {
+            if (!pending || !pendingForm) return;
+            setPending(null);
+            proceed(pendingForm, pending.mode, pending.section, pending.questionType);
+          }}
+        />
         <StartExamDialog
           open={confirmForm !== null}
           minutes={confirmForm ? fullMockMinutes(confirmForm) : 0}
