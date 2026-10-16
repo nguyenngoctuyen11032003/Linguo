@@ -1,0 +1,361 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:spoken-discourse-review
+order_index: 5
+level: c2
+title:
+  vi: "Ôn tập: Bản ghi một podcast phỏng vấn & thư phản hồi"
+objectives:
+  - vi: Theo dõi một cuộc phỏng vấn podcast về du lịch bền vững và nhận ra chức năng của từng từ đánh dấu diễn ngôn.
+  - vi: Kết hợp cụm khuyết thiếu, câu điều kiện không dùng if và đảo ngữ nhượng bộ trong lời nói liền mạch.
+  - vi: Viết một thư phản hồi ngắn cho chương trình, vừa nhượng bộ vừa phản biện một cách tinh tế.
+estimated_minutes: 30
+skills: [listening, speaking, writing, grammar]
+prerequisites: [en:lesson:spoken-discourse-concession]
+items:
+  - item: en:item:sd-off-the-top-of-my-head
+  - item: en:item:sd-fair-enough
+  - item: en:item:sd-mind-you
+    role: reuse
+  - item: en:item:sd-if-anything
+    role: reuse
+  - item: en:item:sd-as-i-was-saying
+    role: reuse
+  - item: en:item:sd-be-bound-to
+    role: reuse
+  - item: en:item:sd-may-well
+    role: reuse
+  - item: en:item:sd-were-to
+    role: reuse
+  - item: en:item:sd-otherwise
+    role: reuse
+  - item: en:item:sd-much-as
+    role: reuse
+  - item: en:item:sd-for-all
+    role: reuse
+  - item: en:item:sd-strange-as-it-may-seem
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này đặt mọi thứ của unit vào một bản ghi podcast - người dẫn chương trình phỏng vấn chủ một homestay ở Hà Giang về du lịch bền vững - rồi bạn viết thư phản hồi gửi chương trình.
+  - type: explain
+    text:
+      vi: "Trong phỏng vấn, người được hỏi hay rào trước khi đưa số liệu (Off the top of my head…), chấp nhận một phần câu hỏi khó (Fair enough…), rồi điều chỉnh bằng Mind you hoặc If anything. Hãy để ý mỗi cụm đang \"dẫn\" ý tiếp theo đi đâu."
+  - type: explain
+    text:
+      vi: "Khi viết phản hồi, mở bằng nhượng bộ mạnh (Much as I enjoyed…, For all its…), nêu dự đoán có mức độ (may well, be bound to) và kịch bản giả định (Were the province to…, otherwise…). Đây là khung lập luận tinh tế của trình độ C2."
+  - type: deep_explain
+    text:
+      vi: Bản ghi hội thoại thật đầy những từ đánh dấu, nhưng thư phản hồi là văn viết bán trang trọng - giữ lại các cấu trúc đảo nhượng bộ và cụm khuyết thiếu, còn bớt các cụm rất khẩu ngữ như Mind you hay Fair enough. Biết chuyển giữa hai văn phong chính là kỹ năng mà unit này nhắm tới.
+  - type: example
+    target: "Host: How many visitors do you get a year? Guest: Off the top of my head, around three thousand - and, if anything, that's too many for the village."
+    target_lang: en
+    translation:
+      vi: "Dẫn chương trình: Mỗi năm chị đón bao nhiêu khách? Khách mời: Nói nhanh theo trí nhớ thì khoảng ba nghìn - mà nếu có thì con số đó còn quá nhiều với cái bản."
+    note:
+      vi: Off the top of my head rào trước con số; if anything điều chỉnh hướng nhìn của người nghe.
+  - type: example
+    target: "Host: Isn't 'eco-tourism' just a marketing label? Guest: Fair enough, a lot of it is. Mind you, some operators really do reinvest in the community."
+    target_lang: en
+    translation:
+      vi: "Dẫn chương trình: 'Du lịch sinh thái' chẳng phải chỉ là nhãn tiếp thị sao? Khách mời: Cũng đúng, phần lớn là vậy. Nhưng phải nói là có những đơn vị thật sự tái đầu tư cho cộng đồng."
+    note:
+      vi: Fair enough chấp nhận một phần lập luận, Mind you đưa ra ý điều chỉnh.
+  - type: example
+    target: Were the province to cap visitor numbers, some guesthouses may well close; otherwise, the rice terraces will keep eroding.
+    target_lang: en
+    translation:
+      vi: Giả sử tỉnh giới hạn lượng khách thì rất có thể vài nhà nghỉ sẽ đóng cửa; nhưng nếu không làm vậy, ruộng bậc thang sẽ tiếp tục bị xói mòn.
+    note:
+      vi: Đảo ngữ were to, may well và otherwise trong cùng một lập luận.
+  - type: common_mistake
+    wrong: For all the province caps visitor numbers, tourism will grow.
+    right: Even if the province caps visitor numbers, tourism will grow.
+    target_lang: en
+    note:
+      vi: For all chỉ đi với danh từ (For all its efforts). Với mệnh đề, dùng even if hoặc although.
+  - type: common_mistake
+    wrong: "Off the top of my head, the exact figure is 2,947 visitors, I checked it this morning."
+    right: "I checked this morning - the exact figure is 2,947 visitors."
+    target_lang: en
+    note:
+      vi: Off the top of my head chỉ dùng khi bạn đang ước lượng theo trí nhớ, không dùng khi đưa con số đã kiểm chứng.
+  - type: summary
+    points:
+      - vi: Phỏng vấn - rào trước (off the top of my head), chấp nhận một phần (fair enough), điều chỉnh (mind you, if anything).
+      - vi: Dự đoán có mức độ - be bound to, may well; kịch bản - were to, otherwise, but for.
+      - vi: Nhượng bộ mạnh - Much as, For all + N, Strange as it may seem.
+      - vi: Thư phản hồi giữ cấu trúc nhượng bộ, bớt từ đánh dấu quá khẩu ngữ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:sdisc-review-listen-top-of-head
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-off-the-top-of-my-head
+    prompt:
+      audio_asset_id: null
+      fallback_text: Off the top of my head, I'd say about a third of our guests come back a second time.
+      options:
+        - { id: k3a, text: "Nói nhanh theo trí nhớ thì khoảng một phần ba khách quay lại lần thứ hai.", lang: vi }
+        - { id: d6e, text: "Theo số liệu đã kiểm tra, đúng một phần ba khách quay lại lần thứ hai.", lang: vi }
+        - { id: w2u, text: "Tôi đau đầu vì một phần ba khách quay lại lần thứ hai.", lang: vi }
+        - { id: p9o, text: "Tôi không nghĩ có khách nào quay lại lần thứ hai.", lang: vi }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: Off the top of my head báo hiệu con số ước lượng theo trí nhớ, chưa kiểm chứng. Phương án "đã kiểm tra" ngược nghĩa; "đau đầu" là hiểu sát chữ head.
+    display_answer: "Nói nhanh theo trí nhớ thì khoảng một phần ba khách quay lại lần thứ hai."
+
+  - key: en:exercise:sdisc-review-mcq-fair-enough
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-fair-enough
+    prompt:
+      stem: "Người dẫn chương trình nói: \"Homestays raise prices for local people.\" Khách mời muốn chấp nhận một phần rồi bổ sung ý ngược. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: s8l, text: "Fair enough. Mind you, they also create jobs for young people who'd otherwise leave.", lang: en }
+        - { id: j1f, text: "As I was saying, they also create jobs for young people who'd otherwise leave.", lang: en }
+        - { id: b4c, text: "Off the top of my head, they also create jobs for young people who'd otherwise leave.", lang: en }
+        - { id: z6r, text: "So to speak, they also create jobs for young people who'd otherwise leave.", lang: en }
+    answer:
+      correct_option_id: s8l
+    explanation:
+      vi: Fair enough chấp nhận phần đúng của lời phê bình, Mind you bổ sung ý cân bằng. As I was saying cần chủ đề đang dở; off the top of my head dùng cho số liệu ước lượng; so to speak không đứng đầu câu.
+    display_answer: "Fair enough. Mind you, they also create jobs for young people who'd otherwise leave."
+
+  - key: en:exercise:sdisc-review-fill-if-anything-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-if-anything
+    prompt:
+      template: "Social media hasn't ruined the village. If {{b1}}, it has brought back young people who left years ago."
+      blanks:
+        - { id: b1, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa: Mạng xã hội không phá hỏng ngôi làng. Nếu có thì nó còn kéo những người trẻ đã đi từ lâu quay về."
+        - "Gợi ý: If + một đại từ bất định bắt đầu bằng any-."
+    answer:
+      blanks:
+        b1: [anything]
+    known_wrong:
+      - answer: something
+        feedback_vi: Cụm cố định là If anything, không phải If something.
+        error_tag: fixed_phrase
+      - answer: not
+        feedback_vi: If not là "nếu không"; ở đây cần If anything để bác nhận định và nói điều ngược lại.
+        error_tag: discourse_marker
+    explanation:
+      vi: Câu đầu bác nhận định "phá hỏng", câu sau nói thực tế còn tích cực hơn - đúng chức năng của If anything.
+    display_answer: Social media hasn't ruined the village. If anything, it has brought back young people who left years ago.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:sdisc-review-fill-were-to
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-were-to
+    prompt:
+      template: "{{b1}} the government {{b2}} build a highway through the valley, the landscape would change forever."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [Were]
+        b2: [to]
+    known_wrong:
+      - answer: If
+        feedback_vi: Với If phải nói If the government were to build; ở đây trật tự đã đảo nên bắt đầu bằng Were.
+        error_tag: conditional_inversion
+      - answer: Was
+        feedback_vi: Đảo ngữ giả định luôn dùng Were cho mọi chủ ngữ.
+        error_tag: were_was
+    explanation:
+      vi: Were + S + to + V là bản đảo ngữ trang trọng của If + S + were to + V - giả định xa về một dự án gây tranh cãi. Vế sau dùng would change.
+    display_answer: Were the government to build a highway through the valley, the landscape would change forever.
+
+  - key: en:exercise:sdisc-review-translate-bound-to
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-be-bound-to
+    prompt:
+      source_text: Nếu đường cao tốc được xây, giá đất chắc chắn sẽ tăng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - If the highway is built, land prices are bound to rise.
+        - If the highway is built, land prices are bound to go up.
+        - If the highway is built, land prices are bound to increase.
+        - If the motorway is built, land prices are bound to rise.
+        - If the motorway is built, land prices are bound to go up.
+        - If the expressway is built, land prices are bound to rise.
+        - If the expressway is built, land prices are bound to go up.
+        - If the highway gets built, land prices are bound to rise.
+        - If they build the highway, land prices are bound to rise.
+        - If they build the highway, land prices are bound to go up.
+        - If the highway is built, the price of land is bound to rise.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: If the highway will be built, land prices are bound to rise.
+        feedback_vi: Mệnh đề if dùng hiện tại cho tương lai - is built.
+        error_tag: conditional_tense
+      - answer: If the highway is built, land prices are bound to rising.
+        feedback_vi: Sau bound to là động từ nguyên mẫu - rise.
+        error_tag: verb_form
+    explanation:
+      vi: "\"Chắc chắn sẽ\" (dự đoán dựa trên kinh nghiệm) là be bound to + V. Đường được xây nên mệnh đề if dùng bị động hiện tại is built."
+    display_answer: If the highway is built, land prices are bound to rise.
+
+  - key: en:exercise:sdisc-review-translate-for-all
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-for-all
+    prompt:
+      source_text: Dù nổi tiếng đến mấy, ngôi làng vẫn không có bệnh viện nào.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - For all its fame, the village still has no hospital.
+        - For all its fame, the village still doesn't have a hospital.
+        - For all its fame, the village still does not have a hospital.
+        - For all its popularity, the village still has no hospital.
+        - For all its popularity, the village still doesn't have a hospital.
+        - For all its fame, the village has no hospital.
+        - For all its fame, the village doesn't have a hospital.
+        - Famous as it is, the village still has no hospital.
+        - Famous as it is, the village still doesn't have a hospital.
+        - Famous though it is, the village still has no hospital.
+        - However famous it is, the village still has no hospital.
+        - However famous it is, the village still doesn't have a hospital.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: For all it is famous, the village still has no hospital.
+        feedback_vi: For all + danh từ (its fame); với tính từ thì dùng Famous as it is.
+        error_tag: for_all_noun
+      - answer: Very famous as it is, the village still has no hospital.
+        feedback_vi: Không đặt very trước tính từ bị đảo.
+        error_tag: concessive_inversion
+    explanation:
+      vi: Có thể dùng For all + danh từ (its fame) hoặc cấu trúc đảo Famous as it is. Cả hai đều nhấn mạnh sự tương phản giữa danh tiếng và việc thiếu bệnh viện.
+    display_answer: For all its fame, the village still has no hospital.
+
+  # ---------------- application ----------------
+  - key: en:exercise:sdisc-review-mcq-reply-opening
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-much-as
+    prompt:
+      stem: "Bạn viết thư phản hồi chương trình: muốn khen tập podcast trước rồi phản đối đề xuất giới hạn khách. Câu mở đầu nào tinh tế và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: f8z, text: "Much as I enjoyed last week's episode, I can't agree that capping visitor numbers is the answer.", lang: en }
+        - { id: m4q, text: "Although much as I enjoyed last week's episode, I can't agree that capping visitor numbers is the answer.", lang: en }
+        - { id: c2x, text: "Fair enough, I enjoyed last week's episode, so to speak, capping visitor numbers is the answer.", lang: en }
+        - { id: t7k, text: "For all I enjoyed last week's episode, I can't agree that capping visitor numbers is the answer.", lang: en }
+    answer:
+      correct_option_id: f8z
+    explanation:
+      vi: Much as + mệnh đề cảm xúc là cách nhượng bộ tinh tế trong thư. Không thêm although; For all cần danh từ; phương án Fair enough… so to speak vừa khẩu ngữ vừa sai nghĩa.
+    display_answer: "Much as I enjoyed last week's episode, I can't agree that capping visitor numbers is the answer."
+
+  - key: en:exercise:sdisc-review-order-otherwise
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-otherwise
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Khách du lịch cần được hướng dẫn về phong tục địa phương; nếu không, căng thẳng có thể tăng.\""
+      tokens:
+        - { id: o-could, text: tensions could grow }
+        - { id: o-other, text: otherwise, }
+        - { id: o-unless, text: unless }
+        - { id: o-visit, text: "Visitors need to be briefed on local customs;" }
+    answer:
+      orders:
+        - [o-visit, o-other, o-could]
+    explanation:
+      vi: Otherwise đứng sau dấu chấm phẩy, mở đầu vế hậu quả. Unless là "trừ khi" nên không hợp ý "nếu không thì".
+    display_answer: "Visitors need to be briefed on local customs; otherwise, tensions could grow."
+
+  - key: en:exercise:sdisc-review-translate-strange-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-strange-as-it-may-seem
+    prompt:
+      source_text: Strange as it may seem, the villages with fewer tourists earn more per visitor.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nghe có vẻ lạ, nhưng những ngôi làng ít khách du lịch hơn lại kiếm được nhiều tiền hơn trên mỗi du khách.
+        - Nghe thì lạ, nhưng các bản ít khách hơn lại thu được nhiều hơn trên mỗi du khách.
+        - Nghe có vẻ lạ, nhưng những làng ít du khách hơn lại thu nhiều tiền hơn trên mỗi khách.
+        - Lạ là những ngôi làng có ít khách du lịch hơn lại kiếm được nhiều hơn trên mỗi du khách.
+        - Dù nghe có vẻ lạ, những ngôi làng ít khách hơn lại kiếm được nhiều tiền hơn từ mỗi du khách.
+        - Nghe thì có vẻ lạ, nhưng làng nào ít khách du lịch hơn lại kiếm được nhiều hơn trên mỗi du khách.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Strange as it may seem báo trước một sự thật trái kỳ vọng ("nghe có vẻ lạ, nhưng… lại…"). Per visitor là "trên mỗi du khách".
+    display_answer: Nghe có vẻ lạ, nhưng những ngôi làng ít khách du lịch hơn lại kiếm được nhiều tiền hơn trên mỗi du khách.
+
+  - key: en:exercise:sdisc-review-translate-may-well
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-may-well
+    prompt:
+      source_text: Rất có thể khách sẽ chấp nhận trả nhiều hơn nếu tiền đó được dùng cho trường học địa phương.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Visitors may well be willing to pay more if the money goes to local schools.
+        - Visitors might well be willing to pay more if the money goes to local schools.
+        - Tourists may well be willing to pay more if the money goes to local schools.
+        - Tourists might well be willing to pay more if the money goes to local schools.
+        - Visitors may well accept paying more if the money goes to local schools.
+        - Guests may well be willing to pay more if the money goes to local schools.
+        - Visitors may well be willing to pay more if the money is used for local schools.
+        - Tourists may well be willing to pay more if the money is used for local schools.
+        - Visitors may well be prepared to pay more if the money goes to local schools.
+        - Visitors may well agree to pay more if the money goes to local schools.
+        - Tourists may well agree to pay more if the money goes to local schools.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Visitors might as well be willing to pay more if the money goes to local schools.
+        feedback_vi: Might as well là "thôi thì cứ"; "rất có thể" là may well.
+        error_tag: modal_nuance
+      - answer: Visitors may well be willing to pay more if the money will go to local schools.
+        feedback_vi: Mệnh đề if dùng hiện tại cho tương lai - goes.
+        error_tag: conditional_tense
+    explanation:
+      vi: "\"Rất có thể\" là may well + V; điều kiện có thật nên dùng if + hiện tại đơn (goes / is used)."
+    display_answer: Visitors may well be willing to pay more if the money goes to local schools.

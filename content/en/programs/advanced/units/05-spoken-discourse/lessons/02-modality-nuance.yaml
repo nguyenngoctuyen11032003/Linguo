@@ -1,0 +1,334 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:spoken-discourse-modality
+order_index: 2
+level: c1
+title:
+  vi: Bound to, may well, might as well - đo độ chắc chắn bằng cụm khuyết thiếu
+objectives:
+  - vi: Xếp được các cụm khuyết thiếu theo độ chắc chắn - be bound to, there's every chance, may well, be liable to, can't possibly.
+  - vi: Phân biệt may well (rất có thể) với might as well (thôi thì cứ…).
+  - vi: Dùng could hardly và can't possibly để từ chối hoặc phủ định lịch sự mà dứt khoát.
+  - vi: Đưa ra dự đoán trong công việc mà không nghe quá chắc hoặc quá mơ hồ.
+estimated_minutes: 25
+skills: [grammar, speaking, writing]
+prerequisites: [en:lesson:spoken-discourse-markers]
+items:
+  - item: en:item:sd-modal-nuance
+  - item: en:item:sd-be-bound-to
+  - item: en:item:sd-may-well
+  - item: en:item:sd-might-as-well
+  - item: en:item:sd-could-hardly
+  - item: en:item:sd-cant-possibly
+  - item: en:item:sd-be-liable-to
+  - item: en:item:sd-theres-every-chance
+  - item: en:item:sd-then-again
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dự đoán rủi ro dự án, từ chối khéo một lời đề nghị và đưa ra lựa chọn "thôi thì cứ" bằng những cụm khuyết thiếu mà người bản ngữ dùng hằng ngày.
+  - type: explain
+    text:
+      vi: "Hình dung một thang độ: be bound to (gần như chắc chắn) → there's every chance / may well (khả năng cao) → may / might (có thể) → could hardly / can't possibly (gần như không thể). Tiếng Việt chủ yếu dùng \"chắc\", \"có lẽ\", nên bạn cần chú ý chọn đúng nấc."
+  - type: explain
+    text:
+      vi: "May well + V nghĩa là \"rất có thể\": The client may well cancel. Might as well + V lại là lời gợi ý \"thôi thì cứ làm luôn\" vì chẳng có lựa chọn nào tốt hơn: We might as well start without him. Chỉ khác nhau chữ as nhưng nghĩa khác hẳn."
+  - type: explain
+    text:
+      vi: "Be liable to + V chỉ xu hướng xảy ra điều không mong muốn (máy dễ hỏng, giá dễ biến động). Could hardly và can't possibly đã mang nghĩa phủ định - không thêm not."
+  - type: deep_explain
+    text:
+      vi: Be bound to và be liable to đều theo sau bởi động từ nguyên mẫu, nhưng be bound to nói về niềm tin của người nói, còn be liable to nói về tính chất của sự vật. Couldn't possibly là cách từ chối rất lịch sự (I couldn't possibly accept), trong khi can't possibly ở hiện tại thường là suy luận logic (That can't possibly be right). Ở dạng quá khứ, may well have + V3 nghĩa là "rất có thể đã".
+  - type: example
+    target: With three suppliers in the same flood zone, we're bound to see shortages this autumn.
+    target_lang: en
+    translation:
+      vi: Ba nhà cung cấp đều nằm trong vùng lũ, nên mùa thu này chắc chắn ta sẽ thiếu hàng.
+    note:
+      vi: Be bound to - dự đoán gần như chắc chắn dựa trên bằng chứng.
+  - type: example
+    target: The board may well approve the budget, but they'll want a detailed breakdown first.
+    target_lang: en
+    translation:
+      vi: Rất có thể hội đồng quản trị sẽ duyệt ngân sách, nhưng họ sẽ muốn bảng chi tiết trước đã.
+    note:
+      vi: May well - khả năng cao, nhưng chưa chắc chắn.
+  - type: example
+    target: The meeting's been moved to Friday, so we might as well finish the slides tomorrow.
+    target_lang: en
+    translation:
+      vi: Cuộc họp dời sang thứ Sáu, nên thôi mai hãy làm nốt slide.
+    note:
+      vi: Might as well - lựa chọn hợp lý vì chẳng có lý do làm khác.
+  - type: example
+    target: Cheap chargers are liable to damage your phone battery over time.
+    target_lang: en
+    translation:
+      vi: Bộ sạc rẻ tiền dễ làm hỏng pin điện thoại theo thời gian.
+    note:
+      vi: Be liable to - xu hướng gây hậu quả xấu.
+  - type: common_mistake
+    wrong: The new system is bound to causing a few problems at first.
+    right: The new system is bound to cause a few problems at first.
+    target_lang: en
+    note:
+      vi: To trong bound to là một phần của động từ nguyên mẫu, nên theo sau là V nguyên thể, không phải V-ing.
+  - type: common_mistake
+    wrong: I couldn't hardly hear the speaker from the back row.
+    right: I could hardly hear the speaker from the back row.
+    target_lang: en
+    note:
+      vi: Hardly đã là phủ định; thêm not tạo thành phủ định kép, sai trong tiếng Anh chuẩn.
+  - type: common_mistake
+    wrong: It's raining anyway, so we may well stay in and watch a film.
+    right: It's raining anyway, so we might as well stay in and watch a film.
+    target_lang: en
+    note:
+      vi: Người nói đang gợi ý một lựa chọn "thôi thì cứ", không dự đoán khả năng - cần might as well.
+  - type: summary
+    points:
+      - vi: Thang độ - be bound to > there's every chance / may well > may/might > could hardly / can't possibly.
+      - vi: May well = rất có thể; might as well = thôi thì cứ (gợi ý).
+      - vi: Be liable to + V - dễ xảy ra điều không mong muốn.
+      - vi: Could hardly, can't possibly đã phủ định - không thêm not; couldn't possibly là từ chối lịch sự.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:sdisc-modal-mcq-bound-to
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-be-bound-to
+    prompt:
+      stem: "Câu nào nói rằng việc chậm trễ GẦN NHƯ CHẮC CHẮN sẽ xảy ra?"
+      stem_lang: vi
+      options:
+        - { id: p4n, text: "With half the team on leave, there are bound to be delays.", lang: en }
+        - { id: d7s, text: "With half the team on leave, there could hardly be delays.", lang: en }
+        - { id: u2e, text: "With half the team on leave, there might as well be delays.", lang: en }
+        - { id: g9x, text: "With half the team on leave, there might be delays.", lang: en }
+    answer:
+      correct_option_id: p4n
+    explanation:
+      vi: Be bound to là nấc cao nhất - gần như chắc chắn. Might chỉ là "có thể", could hardly là "khó mà", còn might as well là lời gợi ý nên không hợp nghĩa.
+    display_answer: "With half the team on leave, there are bound to be delays."
+
+  - key: en:exercise:sdisc-modal-listen-might-as-well
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:sd-might-as-well
+    prompt:
+      audio_asset_id: null
+      fallback_text: The client has cancelled lunch, so we might as well eat at our desks.
+      options:
+        - { id: f6h, text: "Khách huỷ bữa trưa rồi, nên thôi mình ăn luôn ở bàn làm việc.", lang: vi }
+        - { id: b3q, text: "Khách huỷ bữa trưa rồi, nên rất có thể mình sẽ ăn ở bàn làm việc.", lang: vi }
+        - { id: o8t, text: "Khách huỷ bữa trưa, nên mình không thể ăn ở bàn làm việc.", lang: vi }
+        - { id: y1m, text: "Khách huỷ bữa trưa vì mình ăn ở bàn làm việc.", lang: vi }
+    answer:
+      correct_option_id: f6h
+    explanation:
+      vi: Might as well là gợi ý "thôi thì cứ" khi không còn lý do làm khác. Phương án "rất có thể" là nghĩa của may well - dễ nhầm vì chỉ khác chữ as.
+    display_answer: "Khách huỷ bữa trưa rồi, nên thôi mình ăn luôn ở bàn làm việc."
+
+  - key: en:exercise:sdisc-modal-fill-liable-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-be-liable-to
+    prompt:
+      template: "Exchange rates are {{b1}} {{b2}} change suddenly after an election."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tỷ giá dễ thay đổi đột ngột sau một cuộc bầu cử."
+        - "Gợi ý: tính từ chỉ xu hướng xấu + giới từ trước động từ nguyên mẫu."
+    answer:
+      blanks:
+        b1: [liable, likely, apt]
+        b2: [to]
+    known_wrong:
+      - answer: for
+        feedback_vi: Be liable for là "chịu trách nhiệm pháp lý về"; ở đây cần be liable to + V.
+        error_tag: preposition
+      - answer: bound
+        feedback_vi: Bound to là niềm tin chắc chắn của người nói; câu này nói về xu hướng của tỷ giá - dùng liable to.
+        error_tag: modal_nuance
+    explanation:
+      vi: Be liable to + V diễn tả sự vật có xu hướng xảy ra điều không mong muốn. Likely to và apt to cũng chấp nhận được vì cùng chỉ xu hướng.
+    display_answer: Exchange rates are liable to change suddenly after an election.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:sdisc-modal-fill-could-hardly
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-could-hardly
+    prompt:
+      template: "After the CEO praised the project in public, we {{b1}} {{b2}} cancel it the following week."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [could]
+        b2: [hardly]
+    known_wrong:
+      - answer: couldn't
+        feedback_vi: Hardly đã mang nghĩa phủ định - dùng could hardly, không dùng couldn't hardly.
+        error_tag: double_negative
+      - answer: hard
+        feedback_vi: Hard là "chăm chỉ, khó"; trạng từ nghĩa "khó mà" là hardly.
+        error_tag: hard_hardly
+    explanation:
+      vi: Ý câu là "đâu thể nào huỷ" vì như vậy sẽ rất khó coi - could hardly + V. Không thêm not vì hardly đã phủ định.
+    display_answer: After the CEO praised the project in public, we could hardly cancel it the following week.
+
+  - key: en:exercise:sdisc-modal-translate-may-well
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-may-well
+    prompt:
+      source_text: Rất có thể giá thuê nhà sẽ tăng vào năm tới.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Rents may well go up next year.
+        - Rents may well rise next year.
+        - Rents might well go up next year.
+        - Rents might well rise next year.
+        - Rents may well increase next year.
+        - Rents might well increase next year.
+        - The rent may well go up next year.
+        - The rent may well rise next year.
+        - The rent might well go up next year.
+        - The rent might well rise next year.
+        - The rent may well increase next year.
+        - Rent prices may well rise next year.
+        - Rent prices may well go up next year.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Rents might as well go up next year.
+        feedback_vi: Might as well là "thôi thì cứ", không chỉ khả năng - dùng may well hoặc might well.
+        error_tag: modal_nuance
+      - answer: Rents may well going up next year.
+        feedback_vi: Sau may well là động từ nguyên mẫu - go up.
+        error_tag: verb_form
+    explanation:
+      vi: "\"Rất có thể\" là khả năng cao hơn may đơn thuần, nên dùng may well / might well + V. Đừng nhầm với might as well."
+    display_answer: Rents may well go up next year.
+
+  - key: en:exercise:sdisc-modal-translate-couldnt-possibly
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-cant-possibly
+    prompt:
+      source_text: Cảm ơn anh, nhưng tôi không thể nào nhận thêm dự án nào nữa trong tháng này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Thank you, but I couldn't possibly take on another project this month.
+        - Thank you, but I could not possibly take on another project this month.
+        - Thanks, but I couldn't possibly take on another project this month.
+        - Thank you, but I can't possibly take on another project this month.
+        - Thank you, but I cannot possibly take on another project this month.
+        - Thanks, but I can't possibly take on another project this month.
+        - Thank you, but I couldn't possibly take on any more projects this month.
+        - Thank you, but I can't possibly take on any more projects this month.
+        - Thank you, but I couldn't possibly take another project this month.
+        - Thank you, but I couldn't possibly accept another project this month.
+        - Thank you, but I can't possibly accept another project this month.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Thank you, but I can possibly take on another project this month.
+        feedback_vi: Câu khẳng định can possibly nghĩa là "có thể"; muốn nói "không thể nào" phải là can't/couldn't possibly.
+        error_tag: negation
+      - answer: Thank you, but I couldn't possible take on another project this month.
+        feedback_vi: Cần trạng từ possibly, không dùng tính từ possible.
+        error_tag: adverb_form
+    explanation:
+      vi: "\"Không thể nào\" khi từ chối lịch sự là couldn't possibly (hoặc can't possibly). Take on a project là \"nhận thêm việc\"."
+    display_answer: Thank you, but I couldn't possibly take on another project this month.
+
+  # ---------------- application ----------------
+  - key: en:exercise:sdisc-modal-mcq-every-chance
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-theres-every-chance
+    prompt:
+      stem: "Bạn báo cho khách hàng rằng đơn hàng RẤT CÓ KHẢ NĂNG đến đúng hạn, nhưng không muốn hứa chắc. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: n2w, text: "There's every chance your order will arrive on schedule.", lang: en }
+        - { id: j5c, text: "Your order is bound to arrive on schedule, I promise.", lang: en }
+        - { id: l8v, text: "Your order could hardly arrive on schedule.", lang: en }
+        - { id: i4a, text: "Your order might as well arrive on schedule.", lang: en }
+    answer:
+      correct_option_id: n2w
+    explanation:
+      vi: There's every chance thể hiện khả năng cao mà vẫn chừa đường lui - đúng ý "không hứa chắc". Bound to… I promise là cam kết chắc chắn; could hardly lại nói gần như không thể.
+    display_answer: "There's every chance your order will arrive on schedule."
+
+  - key: en:exercise:sdisc-modal-order-bound-to
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-be-bound-to
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu chúng ta bỏ qua khâu kiểm thử, người dùng chắc chắn sẽ phát hiện ra lỗi.\""
+      tokens:
+        - { id: b-users, text: users }
+        - { id: b-notice, text: notice the bugs }
+        - { id: b-skip, text: If we skip testing, }
+        - { id: b-bound, text: are bound to }
+        - { id: b-noticing, text: noticing the bugs }
+    answer:
+      orders:
+        - [b-skip, b-users, b-bound, b-notice]
+    explanation:
+      vi: Be bound to + V nguyên mẫu (notice), không dùng V-ing (noticing) dù có chữ to. Mệnh đề If ở hiện tại vì đây là tình huống có thể xảy ra thật.
+    display_answer: If we skip testing, users are bound to notice the bugs.
+
+  - key: en:exercise:sdisc-modal-translate-liable-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-be-liable-to
+    prompt:
+      source_text: Then again, a cheaper contractor may well cut costs, but they are liable to miss deadlines.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhưng mặt khác, một nhà thầu rẻ hơn rất có thể giúp cắt giảm chi phí, nhưng họ dễ bị trễ hạn.
+        - Nhưng nghĩ lại thì, nhà thầu rẻ hơn rất có thể giảm được chi phí, nhưng họ dễ trễ hạn.
+        - Mặt khác, một nhà thầu rẻ hơn rất có thể cắt giảm chi phí, nhưng họ dễ lỡ thời hạn.
+        - Nhưng mặt khác, nhà thầu rẻ hơn rất có thể tiết kiệm chi phí, nhưng lại dễ trễ hạn.
+        - Nhưng nghĩ lại, một nhà thầu rẻ hơn rất có thể giảm chi phí, nhưng họ hay bị trễ hạn.
+        - Mặt khác, nhà thầu giá rẻ hơn rất có thể cắt giảm chi phí, nhưng họ dễ trễ tiến độ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Then again là tự cân nhắc mặt ngược lại ("nhưng mặt khác/nghĩ lại"); may well là "rất có thể"; be liable to là "dễ (xảy ra điều xấu)".
+    display_answer: Nhưng mặt khác, một nhà thầu rẻ hơn rất có thể giúp cắt giảm chi phí, nhưng họ dễ bị trễ hạn.

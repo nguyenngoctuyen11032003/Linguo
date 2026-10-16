@@ -1,0 +1,332 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:spoken-discourse-concession
+order_index: 4
+level: c2
+title:
+  vi: Strange as it may seem… - đảo ngữ nhượng bộ và nhấn mạnh
+objectives:
+  - vi: Dùng cấu trúc tính từ/trạng từ + as/though + S + V để nói "dù… đến mấy" một cách nhấn mạnh.
+  - vi: Dùng Much as, Try as… might, However + tính từ để nhượng bộ trước khi phản đối hoặc kể thất bại.
+  - vi: Dùng For all + danh từ và Even so để nối các ý nhượng bộ trong bài nói và bài viết.
+  - vi: Tránh các lỗi thêm mạo từ, very hoặc although trong cấu trúc đảo.
+estimated_minutes: 25
+skills: [grammar, writing, speaking]
+prerequisites: [en:lesson:spoken-discourse-conditionals]
+items:
+  - item: en:item:sd-concessive-fronting
+  - item: en:item:sd-strange-as-it-may-seem
+  - item: en:item:sd-much-as
+  - item: en:item:sd-try-as-might
+  - item: en:item:sd-however-adjective
+  - item: en:item:sd-adjective-though
+  - item: en:item:sd-even-so
+  - item: en:item:sd-for-all
+  - item: en:item:be-that-as-it-may
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thừa nhận một điểm của người khác thật mạnh mẽ rồi mới đưa ra ý của mình - kỹ năng then chốt khi phát biểu, viết xã luận hoặc từ chối khéo.
+  - type: explain
+    text:
+      vi: "Thay vì Although the plan is ambitious, …, bạn đưa tính từ lên đầu: Ambitious as the plan is, … hoặc Ambitious though the plan is, …. Nghĩa vẫn là \"dù\", nhưng phần bị đảo được nhấn mạnh hơn. Không có mạo từ hay very trước tính từ bị đảo."
+  - type: explain
+    text:
+      vi: "Much as + mệnh đề cảm xúc (Much as I'd love to help…) dùng để từ chối khéo. Try as + S + might (Try as I might, I couldn't…) kể một nỗ lực thất bại. However + tính từ/trạng từ + S + V (However tempting it is…) nghĩa \"dù… đến đâu\"."
+  - type: explain
+    text:
+      vi: "For all + danh từ (For all its flaws, …) là \"dù có… bao nhiêu\". Even so đứng đầu câu mới để nói \"dù vậy\". Tiếng Việt chỉ cần \"dù\" ở mọi chỗ, nên người học hay viết although ở khắp nơi - các cấu trúc này giúp văn bạn đa dạng hơn."
+  - type: deep_explain
+    text:
+      vi: Cấu trúc đảo với as/though hợp với văn viết và bài phát biểu; trong hội thoại hằng ngày dùng Strange as it may seem hay Much as I'd like to là tự nhiên, còn Exhausted though she was nghe văn chương hơn. Có thể đảo cả động từ - Try as he might, Search as they did. Lưu ý trong tiếng Anh-Mỹ đôi khi gặp As strange as it may seem (có as ở đầu) - cả hai đều được chấp nhận, nhưng không bao giờ dùng although trong cấu trúc đảo.
+  - type: example
+    target: Strange as it may seem, the most profitable branch is the smallest one.
+    target_lang: en
+    translation:
+      vi: Nghe có vẻ lạ, nhưng chi nhánh lãi nhất lại là chi nhánh nhỏ nhất.
+    note:
+      vi: Báo trước một sự thật trái kỳ vọng.
+  - type: example
+    target: Much as I'd like to join you in Hoi An, I've promised to finish the audit this weekend.
+    target_lang: en
+    translation:
+      vi: Dù rất muốn đi Hội An với các bạn, tôi đã hứa làm xong đợt kiểm toán cuối tuần này.
+    note:
+      vi: Much as - từ chối khéo bằng cách nhấn mạnh mong muốn trước.
+  - type: example
+    target: Try as she might, the translator couldn't find an English word for "duyên".
+    target_lang: en
+    translation:
+      vi: Dù cố đến mấy, người dịch vẫn không tìm được từ tiếng Anh nào cho chữ "duyên".
+    note:
+      vi: Try as + S + might - nỗ lực nhưng thất bại; vế sau phủ định.
+  - type: example
+    target: For all its charm, the old quarter is struggling with overtourism.
+    target_lang: en
+    translation:
+      vi: Dù có duyên đến mấy, khu phố cổ đang vật lộn với tình trạng quá tải du lịch.
+    note:
+      vi: For all + danh từ - thừa nhận ưu điểm nhưng nêu vấn đề.
+  - type: common_mistake
+    wrong: A talented engineer as he is, he struggles to explain his ideas.
+    right: Talented engineer though he is, he struggles to explain his ideas.
+    target_lang: en
+    note:
+      vi: Khi đảo danh từ hoặc tính từ lên đầu, bỏ mạo từ a/an. Cách tự nhiên hơn là Talented as he is, ….
+  - type: common_mistake
+    wrong: Although tired as we were, we kept walking.
+    right: Tired as we were, we kept walking.
+    target_lang: en
+    note:
+      vi: Cấu trúc đảo đã mang nghĩa "dù", không thêm although.
+  - type: common_mistake
+    wrong: However you work hard, the deadline is impossible.
+    right: However hard you work, the deadline is impossible.
+    target_lang: en
+    note:
+      vi: Trạng từ hoặc tính từ phải đứng ngay sau however.
+  - type: summary
+    points:
+      - vi: Adj/Adv + as/though + S + V = dù… (nhấn mạnh); không mạo từ, không very, không although.
+      - vi: Strange as it may seem - nghe lạ nhưng; Much as I'd like to - dù rất muốn (từ chối khéo).
+      - vi: Try as + S + might - cố mấy cũng không; However + adj/adv + S + V - dù… đến đâu.
+      - vi: For all + N - dù có…; Even so / Be that as it may - dù vậy (đầu câu mới).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:sdisc-conc-mcq-much-as
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-much-as
+    prompt:
+      stem: "Chọn đáp án đúng: ___ I sympathise with the tenants, the landlord is legally within his rights."
+      stem_lang: vi
+      options:
+        - { id: x8c, text: Much as, lang: en }
+        - { id: f3w, text: Even so, lang: en }
+        - { id: o6j, text: For all, lang: en }
+        - { id: l1n, text: Try as, lang: en }
+    answer:
+      correct_option_id: x8c
+    explanation:
+      vi: Theo sau là mệnh đề cảm xúc (I sympathise), nên dùng Much as. For all cần danh từ, Even so đứng đầu câu độc lập, còn Try as cần cấu trúc Try as + S + might.
+    display_answer: Much as
+
+  - key: en:exercise:sdisc-conc-listen-try-as
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-try-as-might
+    prompt:
+      audio_asset_id: null
+      fallback_text: Try as we might, we couldn't persuade the council to keep the night market open.
+      options:
+        - { id: u5s, text: "Dù cố đến mấy, chúng tôi vẫn không thuyết phục được hội đồng giữ chợ đêm hoạt động.", lang: vi }
+        - { id: g2m, text: "Chúng tôi đã thử thuyết phục và hội đồng đồng ý giữ chợ đêm hoạt động.", lang: vi }
+        - { id: c9i, text: "Nếu cố hơn, chúng tôi có thể thuyết phục được hội đồng giữ chợ đêm.", lang: vi }
+        - { id: y4h, text: "Chúng tôi có thể thử, nhưng hội đồng muốn đóng chợ đêm.", lang: vi }
+    answer:
+      correct_option_id: u5s
+    explanation:
+      vi: Try as we might là "dù cố đến mấy", và vế couldn't persuade cho thấy nỗ lực thất bại. Might ở đây không phải "có thể".
+    display_answer: "Dù cố đến mấy, chúng tôi vẫn không thuyết phục được hội đồng giữ chợ đêm hoạt động."
+
+  - key: en:exercise:sdisc-conc-fill-strange-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-strange-as-it-may-seem
+    prompt:
+      template: "Strange {{b1}} it may {{b2}}, the cheapest phone in the test had the best camera."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Nghe thì lạ, nhưng chiếc điện thoại rẻ nhất trong bài thử lại có camera tốt nhất."
+        - "Gợi ý: tính từ + as + it may + động từ \"có vẻ\"."
+    answer:
+      blanks:
+        b1: [as, though]
+        b2: [seem, sound]
+    known_wrong:
+      - answer: although
+        feedback_vi: Cấu trúc đảo dùng as hoặc though, không dùng although.
+        error_tag: concessive_inversion
+      - answer: seems
+        feedback_vi: Sau may là động từ nguyên mẫu - seem.
+        error_tag: modal_verb_form
+    explanation:
+      vi: Strange as it may seem là cụm báo trước một sự thật trái kỳ vọng. Sau may luôn là động từ nguyên mẫu seem (hoặc sound).
+    display_answer: Strange as it may seem, the cheapest phone in the test had the best camera.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:sdisc-conc-fill-however
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-however-adjective
+    prompt:
+      template: "However {{b1}} the offer {{b2}}, we shouldn't sign anything before legal has checked it."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [tempting, attractive, generous, appealing, good]
+        b2: [is, seems, looks, sounds]
+    known_wrong:
+      - answer: temptingly
+        feedback_vi: Sau however + động từ be/seem cần tính từ (tempting), không phải trạng từ.
+        error_tag: adjective_adverb
+      - answer: will be
+        feedback_vi: Mệnh đề nhượng bộ nói về hiện tại - dùng is.
+        error_tag: tense
+    explanation:
+      vi: However + tính từ + S + V nghĩa "dù… đến đâu". Động từ là is/seems nên phần đứng sau however là tính từ như tempting, attractive.
+    display_answer: However tempting the offer is, we shouldn't sign anything before legal has checked it.
+
+  - key: en:exercise:sdisc-conc-translate-much-as
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-much-as
+    prompt:
+      source_text: Dù rất muốn giúp bạn, tôi không thể chia sẻ dữ liệu khách hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Much as I'd like to help you, I can't share customer data.
+        - Much as I would like to help you, I can't share customer data.
+        - Much as I'd like to help you, I cannot share customer data.
+        - Much as I would like to help you, I cannot share customer data.
+        - Much as I'd love to help you, I can't share customer data.
+        - Much as I would love to help you, I can't share customer data.
+        - Much as I want to help you, I can't share customer data.
+        - Much as I'd like to help, I can't share customer data.
+        - Much as I would like to help, I can't share customer data.
+        - Much as I'd like to help you, I can't share client data.
+        - Much as I would like to help you, I can't share client data.
+        - Much as I'd like to help you, I can't share the customer data.
+        - Much as I'd like to help you, I'm not able to share customer data.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Although much as I'd like to help you, I can't share customer data.
+        feedback_vi: Much as đã mang nghĩa "dù rất"; không thêm although.
+        error_tag: concessive_inversion
+      - answer: As much I'd like to help you, I can't share customer data.
+        feedback_vi: Trật tự đúng là Much as, không phải As much.
+        error_tag: word_order
+    explanation:
+      vi: "\"Dù rất muốn\" để từ chối khéo là Much as I'd like to. Vế sau giữ nguyên lời từ chối dứt khoát I can't."
+    display_answer: Much as I'd like to help you, I can't share customer data.
+
+  - key: en:exercise:sdisc-conc-translate-for-all
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-for-all
+    prompt:
+      source_text: Dù có nhiều tính năng đến mấy, ứng dụng này vẫn rất khó dùng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - For all its features, this app is still very hard to use.
+        - For all its features, the app is still very hard to use.
+        - For all its features, this app is still very difficult to use.
+        - For all its features, the app is still very difficult to use.
+        - For all its features, this app is still really hard to use.
+        - For all its features, this app is very hard to use.
+        - For all its features, this app is very difficult to use.
+        - For all its many features, this app is still very hard to use.
+        - For all its features, this app remains very hard to use.
+        - For all its features, this app is still extremely hard to use.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: For all it has features, this app is still very hard to use.
+        feedback_vi: For all + cụm danh từ (its features), không đặt mệnh đề sau.
+        error_tag: for_all_noun
+      - answer: For all it's features, this app is still very hard to use.
+        feedback_vi: Tính từ sở hữu là its (không có dấu nháy); it's là it is.
+        error_tag: its_its
+    explanation:
+      vi: "\"Dù có… đến mấy\" kèm danh từ là For all + its features. Chú ý its (của nó) khác it's (it is)."
+    display_answer: For all its features, this app is still very hard to use.
+
+  # ---------------- application ----------------
+  - key: en:exercise:sdisc-conc-mcq-correct-inversion
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-adjective-though
+    prompt:
+      stem: "Bạn viết bài phát biểu chia tay một đồng nghiệp: \"Dù rất đau lòng khi chia tay, chúng tôi chúc chị ấy mọi điều tốt đẹp.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h4t, text: "Sad though it is to say goodbye, we wish her every success.", lang: en }
+        - { id: q2b, text: "Although sad as it is to say goodbye, we wish her every success.", lang: en }
+        - { id: e7v, text: "Very sad as it is to say goodbye, we wish her every success.", lang: en }
+        - { id: n5y, text: "A sad though it is to say goodbye, we wish her every success.", lang: en }
+    answer:
+      correct_option_id: h4t
+    explanation:
+      vi: Cấu trúc đảo chỉ gồm tính từ + though/as + S + V. Không thêm although, very hay mạo từ a trước tính từ bị đảo.
+    display_answer: "Sad though it is to say goodbye, we wish her every success."
+
+  - key: en:exercise:sdisc-conc-order-even-so
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-even-so
+    prompt:
+      instruction: "Sắp xếp đoạn văn: \"Kết quả khảo sát rất khả quan. Dù vậy, chúng ta không nên chủ quan.\""
+      tokens:
+        - { id: e-so, text: Even so, }
+        - { id: e-comp, text: we shouldn't become complacent. }
+        - { id: e-results, text: The survey results are very encouraging. }
+        - { id: e-although, text: Although }
+    answer:
+      orders:
+        - [e-results, e-so, e-comp]
+    explanation:
+      vi: Even so mở đầu câu mới sau khi đã thừa nhận ý trước. Although là liên từ nối mệnh đề trong cùng một câu, không đứng một mình đầu câu thứ hai.
+    display_answer: The survey results are very encouraging. Even so, we shouldn't become complacent.
+
+  - key: en:exercise:sdisc-conc-translate-tired-as-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-concessive-fronting
+    prompt:
+      source_text: Exhausted as the volunteers were, they stayed until every family had a place to sleep.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù đã kiệt sức, các tình nguyện viên vẫn ở lại cho đến khi mọi gia đình đều có chỗ ngủ.
+        - Dù kiệt sức, các tình nguyện viên vẫn ở lại đến khi gia đình nào cũng có chỗ ngủ.
+        - Mặc dù kiệt sức, các tình nguyện viên vẫn ở lại cho đến khi mọi gia đình có chỗ ngủ.
+        - Dù mệt lả, các tình nguyện viên vẫn ở lại cho tới khi mọi gia đình đều có chỗ để ngủ.
+        - Tuy đã kiệt sức, các tình nguyện viên vẫn ở lại cho đến khi mọi gia đình đều có chỗ ngủ.
+        - Dù đã kiệt sức nhưng các tình nguyện viên vẫn ở lại đến khi mọi gia đình đều có chỗ ngủ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Exhausted as the volunteers were = Although the volunteers were exhausted ("dù đã kiệt sức"). Had a place to sleep dùng had vì cả câu kể ở quá khứ.
+    display_answer: Dù đã kiệt sức, các tình nguyện viên vẫn ở lại cho đến khi mọi gia đình đều có chỗ ngủ.

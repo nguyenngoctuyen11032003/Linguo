@@ -1,0 +1,334 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:spoken-discourse-conditionals
+order_index: 3
+level: c1
+title:
+  vi: Were to, but for, supposing… - câu điều kiện không cần if
+objectives:
+  - vi: Dùng were to để nêu giả định xa hoặc nhạy cảm một cách dè dặt.
+  - vi: Dùng but for + danh từ và otherwise để nói "nếu không có/nếu không thì".
+  - vi: Phân biệt supposing, assuming, on condition that, in the event of theo mức độ chắc chắn và văn phong.
+  - vi: Viết điều khoản và kịch bản rủi ro trong hợp đồng, kế hoạch dự án.
+estimated_minutes: 25
+skills: [grammar, writing, speaking]
+prerequisites: [en:lesson:spoken-discourse-modality]
+items:
+  - item: en:item:sd-conditional-alternatives
+  - item: en:item:sd-were-to
+  - item: en:item:sd-but-for
+  - item: en:item:sd-supposing
+  - item: en:item:sd-otherwise
+  - item: en:item:sd-assuming-that
+  - item: en:item:sd-in-the-event-of
+  - item: en:item:sd-on-condition-that
+  - item: en:item:inversion-conditional
+    role: reuse
+  - item: en:item:provided-that
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được các kịch bản "nếu… thì…" trong kế hoạch kinh doanh, hợp đồng và tranh luận mà không lặp lại if ở mọi câu.
+  - type: explain
+    text:
+      vi: "If + S + were to + V nêu một giả định xa hoặc khó nói thẳng: If the factory were to close, 2,000 people would lose their jobs. Dùng were cho mọi ngôi, vế sau dùng would/could. Bản đảo ngữ trang trọng là Were the factory to close…"
+  - type: explain
+    text:
+      vi: "But for + danh từ = If it weren't/hadn't been for: But for the loan, we would have gone bankrupt. Otherwise (nếu không thì) đứng ở câu sau, nêu hậu quả: Sign today; otherwise, the offer expires."
+  - type: explain
+    text:
+      vi: "Supposing/Suppose mời người nghe tưởng tượng (hay dùng trong câu hỏi); Assuming (that) đặt một tiền đề mình cho là đúng; On condition that là điều kiện bắt buộc; In the event of + danh từ dùng trong quy định, hợp đồng. Giống if, sau các cụm này dùng hiện tại cho tương lai, không dùng will."
+  - type: deep_explain
+    text:
+      vi: Người Việt thường dịch "giả sử" bằng if ở mọi chỗ, nên văn bản tiếng Anh nghe đơn điệu. Hãy chọn theo mục đích - thương lượng (on condition that, provided that), lập kế hoạch dự phòng (in the event of, assuming), tranh luận giả định (supposing, were to). But for luôn đi với danh từ hoặc cụm danh từ, còn otherwise là trạng từ nên cần dấu chấm phẩy hoặc dấu chấm phía trước khi nối hai mệnh đề.
+  - type: example
+    target: If the central bank were to cut rates next month, mortgage holders would breathe a sigh of relief.
+    target_lang: en
+    translation:
+      vi: Giả sử tháng sau ngân hàng trung ương giảm lãi suất thì những người vay mua nhà sẽ thở phào nhẹ nhõm.
+    note:
+      vi: Were to - giả định chưa chắc xảy ra, nói một cách dè dặt.
+  - type: example
+    target: But for the quick thinking of a flight attendant, the incident could have been far worse.
+    target_lang: en
+    translation:
+      vi: Nếu không nhờ sự nhanh trí của một tiếp viên, sự cố đã có thể tồi tệ hơn nhiều.
+    note:
+      vi: But for + cụm danh từ, vế sau dùng could have + V3 vì nói về quá khứ.
+  - type: example
+    target: In the event of a data breach, customers must be notified within 72 hours.
+    target_lang: en
+    translation:
+      vi: Trong trường hợp rò rỉ dữ liệu, khách hàng phải được thông báo trong vòng 72 giờ.
+    note:
+      vi: In the event of + danh từ - văn phong quy định, hợp đồng.
+  - type: example
+    target: "Supposing the venue cancels at the last minute - do we have a plan B?"
+    target_lang: en
+    translation:
+      vi: Giả sử địa điểm huỷ vào phút chót - mình có phương án B không?
+    note:
+      vi: Supposing mở đầu một câu hỏi giả định trong lúc bàn kế hoạch.
+  - type: common_mistake
+    wrong: But for the bank lent us money, we would have closed.
+    right: But for the bank loan, we would have closed.
+    target_lang: en
+    note:
+      vi: Sau but for là danh từ, không phải mệnh đề. Muốn dùng mệnh đề thì nói If the bank hadn't lent us money.
+  - type: common_mistake
+    wrong: Assuming the shipment will arrive on Monday, we can open on Tuesday.
+    right: Assuming the shipment arrives on Monday, we can open on Tuesday.
+    target_lang: en
+    note:
+      vi: Như if, sau assuming dùng hiện tại đơn để nói về tương lai.
+  - type: common_mistake
+    wrong: Book the tickets now, otherwise they sell out.
+    right: Book the tickets now; otherwise, they'll sell out.
+    target_lang: en
+    note:
+      vi: Otherwise là trạng từ, cần dấu chấm phẩy hoặc dấu chấm trước nó; vế hậu quả nói về tương lai nên dùng will.
+  - type: summary
+    points:
+      - vi: If + were to + V → would - giả định xa, dè dặt; đảo ngữ Were + S + to + V.
+      - vi: But for + danh từ = nếu không có; otherwise = nếu không thì (trạng từ).
+      - vi: Supposing - tưởng tượng; Assuming - tiền đề; On condition that - điều kiện bắt buộc; In the event of + N - quy định.
+      - vi: Sau các liên từ điều kiện, dùng hiện tại cho tương lai, không dùng will.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:sdisc-cond-mcq-but-for
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-but-for
+    prompt:
+      stem: "Chọn đáp án đúng: ___ , the hospital would have run out of oxygen during the storm."
+      stem_lang: vi
+      options:
+        - { id: v5k, text: But for the backup generators, lang: en }
+        - { id: c1z, text: But for the generators worked, lang: en }
+        - { id: h7p, text: Otherwise the backup generators, lang: en }
+        - { id: m3r, text: Supposing the backup generators, lang: en }
+    answer:
+      correct_option_id: v5k
+    explanation:
+      vi: But for + cụm danh từ nghĩa là "nếu không nhờ có", hợp với vế would have run out. Không đặt mệnh đề (the generators worked) sau but for; otherwise và supposing cần cấu trúc khác.
+    display_answer: But for the backup generators
+
+  - key: en:exercise:sdisc-cond-listen-were-to
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-were-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: If the airline were to ban carry-on bags, business travellers would switch to its rivals.
+      options:
+        - { id: r2d, text: "Giả sử hãng bay cấm hành lý xách tay, khách đi công tác sẽ chuyển sang hãng đối thủ.", lang: vi }
+        - { id: e8f, text: "Hãng bay đã cấm hành lý xách tay, nên khách đi công tác chuyển sang hãng đối thủ.", lang: vi }
+        - { id: s4l, text: "Hãng bay sẽ cấm hành lý xách tay khi khách đi công tác chuyển sang hãng đối thủ.", lang: vi }
+        - { id: w9b, text: "Nếu khách đi công tác chuyển sang hãng đối thủ, hãng bay sẽ cấm hành lý xách tay.", lang: vi }
+    answer:
+      correct_option_id: r2d
+    explanation:
+      vi: Were to + V là giả định chưa xảy ra ("giả sử"), không phải sự thật đã xảy ra. Vế would switch là hậu quả tưởng tượng.
+    display_answer: "Giả sử hãng bay cấm hành lý xách tay, khách đi công tác sẽ chuyển sang hãng đối thủ."
+
+  - key: en:exercise:sdisc-cond-fill-event-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-in-the-event-of
+    prompt:
+      template: "In the {{b1}} {{b2}} a fire alarm, please leave the building by the nearest exit."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Trong trường hợp có chuông báo cháy, vui lòng rời toà nhà qua lối ra gần nhất."
+        - "Gợi ý: cụm trang trọng In the ... + giới từ + danh từ."
+    answer:
+      blanks:
+        b1: [event]
+        b2: [of]
+    known_wrong:
+      - answer: case
+        feedback_vi: In case of cũng có nhưng ít trang trọng hơn; cụm chuẩn của văn bản quy định là In the event of.
+        error_tag: formal_phrase
+      - answer: that
+        feedback_vi: In the event that + mệnh đề; ở đây theo sau là danh từ (a fire alarm) nên dùng of.
+        error_tag: preposition
+    explanation:
+      vi: Biển báo an toàn dùng văn phong trang trọng In the event of + danh từ. Dùng that khi theo sau là cả mệnh đề có chủ ngữ và động từ.
+    display_answer: In the event of a fire alarm, please leave the building by the nearest exit.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:sdisc-cond-fill-assuming
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-assuming-that
+    prompt:
+      template: "{{b1}} the visa {{b2}} through in time, I'll start the new job in Berlin on 1 March."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Assuming, Supposing, Provided, Providing]
+        b2: [comes, goes]
+    known_wrong:
+      - answer: will come
+        feedback_vi: Sau assuming dùng hiện tại cho tương lai - comes, không dùng will come.
+        error_tag: conditional_tense
+      - answer: come
+        feedback_vi: The visa là số ít nên động từ cần -s - comes.
+        error_tag: subject_verb_agreement
+    explanation:
+      vi: Người nói đặt tiền đề "giả định visa kịp" rồi nói kế hoạch - Assuming (hoặc Provided). Giống if, mệnh đề điều kiện dùng hiện tại đơn comes through cho tương lai.
+    display_answer: Assuming the visa comes through in time, I'll start the new job in Berlin on 1 March.
+
+  - key: en:exercise:sdisc-cond-translate-otherwise
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-otherwise
+    prompt:
+      source_text: Hãy cập nhật phần mềm ngay; nếu không thì máy tính của bạn có thể bị tấn công.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Update the software now; otherwise, your computer could be attacked.
+        - Update the software now; otherwise your computer could be attacked.
+        - Update the software now. Otherwise, your computer could be attacked.
+        - Update the software now; otherwise, your computer might be attacked.
+        - Update the software now; otherwise, your computer may be attacked.
+        - Update the software now; otherwise, your computer could be hacked.
+        - Update the software now; otherwise, your computer might be hacked.
+        - Update your software now; otherwise, your computer could be attacked.
+        - Update your software now; otherwise, your computer could be hacked.
+        - Please update the software now; otherwise, your computer could be attacked.
+        - Update the software immediately; otherwise, your computer could be attacked.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Update the software now; unless your computer could be attacked.
+        feedback_vi: Unless nghĩa là "trừ khi", không phải "nếu không thì"; dùng otherwise.
+        error_tag: otherwise_unless
+      - answer: Update the software now; if not your computer could attacked.
+        feedback_vi: Cần bị động could be attacked, và nên dùng otherwise để nối tự nhiên.
+        error_tag: passive_form
+    explanation:
+      vi: "\"Nếu không thì\" nêu hậu quả của việc không làm theo lời khuyên - otherwise. Máy tính bị tấn công nên dùng bị động could be attacked."
+    display_answer: Update the software now; otherwise, your computer could be attacked.
+
+  - key: en:exercise:sdisc-cond-translate-on-condition
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:sd-on-condition-that
+    prompt:
+      source_text: Công ty đồng ý tài trợ với điều kiện là logo của họ xuất hiện trên mọi áp phích.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The company agreed to sponsor the event on condition that its logo appeared on every poster.
+        - The company agreed to sponsor the event on condition that their logo appeared on every poster.
+        - The company agreed to sponsor the event on the condition that its logo appeared on every poster.
+        - The company agreed to sponsor the event on the condition that their logo appeared on every poster.
+        - The company agreed to sponsor on condition that its logo appeared on every poster.
+        - The company agreed to sponsor on condition that their logo appeared on every poster.
+        - The company agreed to sponsor it on condition that its logo appeared on every poster.
+        - The company agreed to sponsor the event on condition that its logo appeared on all the posters.
+        - The company agreed to sponsor the event on condition that its logo would appear on every poster.
+        - The company agreed to sponsor us on condition that its logo appeared on every poster.
+        - The company agreed to sponsor us on condition that their logo appeared on every poster.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The company agreed to sponsor the event on condition of its logo appeared on every poster.
+        feedback_vi: Theo sau là mệnh đề nên dùng on condition that, không dùng of.
+        error_tag: conjunction
+      - answer: The company agreed to sponsor the event in condition that its logo appeared on every poster.
+        feedback_vi: Giới từ đúng là on - on condition that.
+        error_tag: preposition
+    explanation:
+      vi: "\"Với điều kiện là\" (điều kiện bắt buộc) là on condition that + mệnh đề. Câu kể ở quá khứ (agreed) nên mệnh đề sau lùi về appeared."
+    display_answer: The company agreed to sponsor the event on condition that its logo appeared on every poster.
+
+  # ---------------- application ----------------
+  - key: en:exercise:sdisc-cond-mcq-negotiation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-were-to
+    prompt:
+      stem: "Bạn muốn thăm dò khéo đối tác: GIẢ SỬ bên bạn đặt hàng gấp đôi thì họ có giảm giá không. Câu nào dè dặt và đúng ngữ pháp nhất?"
+      stem_lang: vi
+      options:
+        - { id: t6g, text: "If we were to double our order, would you be able to offer a discount?", lang: en }
+        - { id: a9u, text: "If we will double our order, will you offer a discount?", lang: en }
+        - { id: k2o, text: "If we would double our order, would you offer a discount?", lang: en }
+        - { id: z7e, text: "But for we double our order, would you offer a discount?", lang: en }
+    answer:
+      correct_option_id: t6g
+    explanation:
+      vi: Were to + V đưa ra giả định mà không cam kết - rất hợp khi thương lượng. Mệnh đề if không dùng will hay would; but for không đi với mệnh đề.
+    display_answer: "If we were to double our order, would you be able to offer a discount?"
+
+  - key: en:exercise:sdisc-cond-order-supposing
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-supposing
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Giả sử nhà đầu tư rút lui thì chúng ta làm gì?\""
+      tokens:
+        - { id: p-do, text: what would we do }
+        - { id: p-withdrew, text: withdrew }
+        - { id: p-will, text: will withdraw }
+        - { id: p-sup, text: Supposing }
+        - { id: p-inv, text: the investor }
+    answer:
+      orders:
+        - [p-sup, p-inv, p-withdrew, p-do]
+    explanation:
+      vi: Supposing + quá khứ đơn (withdrew) cho giả định xa, vế sau dùng would. Không dùng will withdraw sau supposing, giống như sau if.
+    display_answer: Supposing the investor withdrew, what would we do?
+
+  - key: en:exercise:sdisc-cond-translate-but-for-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-but-for
+    prompt:
+      source_text: But for a last-minute donation, the shelter would have closed its doors in December.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu không nhờ một khoản quyên góp vào phút chót, trại cứu trợ đã phải đóng cửa vào tháng Mười Hai.
+        - Nếu không có khoản quyên góp phút chót, nhà tạm trú đã đóng cửa vào tháng Mười Hai.
+        - Nếu không nhờ khoản tài trợ phút chót, mái ấm đã phải đóng cửa vào tháng Mười Hai.
+        - Nếu không có một khoản quyên góp vào phút cuối, mái ấm đã đóng cửa vào tháng 12.
+        - Nếu không nhờ một khoản quyên góp phút chót thì nhà tạm trú đã phải đóng cửa vào tháng 12.
+        - Nếu không nhờ khoản quyên góp vào phút chót, trại cứu trợ đã đóng cửa hồi tháng Mười Hai.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: But for + danh từ là "nếu không nhờ/nếu không có"; would have closed là điều đã không xảy ra trong quá khứ ("đã phải đóng cửa").
+    display_answer: Nếu không nhờ một khoản quyên góp vào phút chót, trại cứu trợ đã phải đóng cửa vào tháng Mười Hai.

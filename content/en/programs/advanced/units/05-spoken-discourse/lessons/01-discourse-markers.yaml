@@ -1,0 +1,339 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:spoken-discourse-markers
+order_index: 1
+level: c1
+title:
+  vi: Mind you, then again… - từ đánh dấu diễn ngôn trong văn nói
+objectives:
+  - vi: Hiểu chức năng của các từ đánh dấu diễn ngôn trong hội thoại tự nhiên - thêm ý ngược, tự phản biện, quay lại chủ đề.
+  - vi: Phân biệt mind you, then again, all the same, if anything theo hướng lập luận.
+  - vi: Dùng as it happens, come to think of it, as I was saying để hội thoại trôi chảy như người bản ngữ.
+  - vi: Nhận biết khi nào nên đổi sang từ nối trang trọng trong văn viết.
+estimated_minutes: 25
+skills: [speaking, listening, vocabulary]
+prerequisites: [en:lesson:critical-reading-writing-review]
+items:
+  - item: en:item:sd-discourse-marker
+  - item: en:item:sd-mind-you
+  - item: en:item:sd-as-it-happens
+  - item: en:item:sd-come-to-think-of-it
+  - item: en:item:sd-then-again
+  - item: en:item:sd-so-to-speak
+  - item: en:item:sd-as-i-was-saying
+  - item: en:item:sd-all-the-same
+  - item: en:item:sd-if-anything
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dẫn dắt được một cuộc trò chuyện dài bằng tiếng Anh - biết lúc nào thêm một "nhưng mà", lúc nào tự cân nhắc lại, và cách kéo câu chuyện về đúng chủ đề.
+  - type: explain
+    text:
+      vi: "Từ đánh dấu diễn ngôn không thêm thông tin mới mà cho người nghe biết hướng đi của ý sắp tới. Mind you thêm một ý điều chỉnh (thường ngược chiều), then again là tự phản biện, all the same nghĩa là \"dù vậy vẫn\"."
+  - type: explain
+    text:
+      vi: "If anything dùng để bác một nhận định và nói sự thật còn theo chiều ngược lại: It hasn't slowed us down. If anything, it's made us faster. Người Việt hay dịch sát chữ thành \"nếu có gì\", nên dễ dùng sai chỗ."
+  - type: explain
+    text:
+      vi: "As it happens giới thiệu một sự trùng hợp có ích; come to think of it là chợt nhớ ra; as I was saying kéo câu chuyện về sau khi bị ngắt lời. Tiếng Việt có \"à mà\", \"nghĩ lại thì\", \"như mình đang nói\" - chức năng gần giống."
+  - type: deep_explain
+    text:
+      vi: Vị trí rất quan trọng. Mind you, then again, if anything, come to think of it thường đứng đầu câu và có dấu phẩy; all the same và so to speak thường đứng cuối. Trong văn bản trang trọng, đổi mind you → however, then again → on the other hand, all the same → nevertheless, as it happens → in fact. Dùng quá nhiều từ đánh dấu trong một đoạn ngắn sẽ khiến bạn nghe lúng túng thay vì lưu loát.
+  - type: example
+    target: The hotel was miles from the centre. Mind you, the breakfast alone was worth the trip.
+    target_lang: en
+    translation:
+      vi: Khách sạn cách trung tâm rất xa. Nhưng phải nói là riêng bữa sáng đã đáng công đi rồi.
+    note:
+      vi: Mind you thêm một ý tích cực làm nhẹ lời chê trước đó.
+  - type: example
+    target: I could take the promotion in Da Nang. Then again, my kids have just settled into their school here.
+    target_lang: en
+    translation:
+      vi: Tôi có thể nhận vị trí thăng chức ở Đà Nẵng. Nhưng nghĩ lại thì bọn trẻ vừa mới quen trường ở đây.
+    note:
+      vi: Then again - người nói tự cân nhắc mặt ngược lại của chính ý mình.
+  - type: example
+    target: "\"Is anyone free to cover the night shift?\" \"As it happens, I've got nothing on tonight.\""
+    target_lang: en
+    translation:
+      vi: “Có ai rảnh trực ca đêm không?” “Tình cờ là tối nay tôi không bận gì.”
+    note:
+      vi: As it happens - thông tin trùng hợp, đúng lúc người kia cần.
+  - type: example
+    target: The new rules haven't reduced paperwork. If anything, we're filling in more forms than before.
+    target_lang: en
+    translation:
+      vi: Quy định mới không giảm giấy tờ. Nếu có thì còn phải điền nhiều mẫu hơn trước.
+    note:
+      vi: If anything bác nhận định "giảm giấy tờ" và nói thực tế còn ngược lại.
+  - type: common_mistake
+    wrong: As I said, the line went dead. Anyway, the report is due on Monday.
+    right: Sorry, the line went dead. As I was saying, the report is due on Monday.
+    target_lang: en
+    note:
+      vi: Khi quay lại ý đang nói dở, dùng As I was saying (quá khứ tiếp diễn). As I said là nhắc lại điều đã nói trọn vẹn.
+  - type: common_mistake
+    wrong: Coming to think of it, I left my badge at reception.
+    right: Come to think of it, I left my badge at reception.
+    target_lang: en
+    note:
+      vi: Come to think of it là cụm cố định, động từ come không đổi dạng.
+  - type: common_mistake
+    wrong: The traffic wasn't bad. If anything, it was terrible.
+    right: The traffic wasn't bad. If anything, it was lighter than usual.
+    target_lang: en
+    note:
+      vi: If anything đưa ra ý ngược với nhận định bị bác (bad), nên ý sau phải tốt hơn, không phải tệ hơn.
+  - type: summary
+    points:
+      - vi: Mind you - thêm ý điều chỉnh; Then again - tự phản biện; All the same - dù vậy vẫn (cuối câu).
+      - vi: If anything - bác một nhận định, sự thật còn theo chiều ngược lại.
+      - vi: As it happens - trùng hợp có ích; Come to think of it - chợt nhớ ra; As I was saying - quay lại chủ đề.
+      - vi: So to speak đứng sau một hình ảnh ví von.
+      - vi: Văn viết trang trọng thay bằng however, on the other hand, nevertheless, in fact.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:sdisc-dm-mcq-then-again
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-then-again
+    prompt:
+      stem: "Chọn cụm phù hợp: Freelancing would give me more freedom. ___, I'd lose my health insurance."
+      stem_lang: vi
+      options:
+        - { id: q7f, text: Then again, lang: en }
+        - { id: m2k, text: As it happens, lang: en }
+        - { id: z4c, text: As I was saying, lang: en }
+        - { id: h8u, text: So to speak, lang: en }
+    answer:
+      correct_option_id: q7f
+    explanation:
+      vi: Người nói tự cân nhắc mặt trái của chính ý mình (tự do hơn nhưng mất bảo hiểm), đó là chức năng của Then again. As it happens là trùng hợp, As I was saying là quay lại chủ đề - không hợp ngữ cảnh.
+    display_answer: Then again
+
+  - key: en:exercise:sdisc-dm-listen-if-anything
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-if-anything
+    prompt:
+      audio_asset_id: null
+      fallback_text: Working from home hasn't made the team lazy. If anything, they're answering emails at midnight.
+      options:
+        - { id: c5r, text: "Làm việc ở nhà không khiến cả nhóm lười đi. Ngược lại, họ còn trả lời email lúc nửa đêm.", lang: vi }
+        - { id: w1n, text: "Làm việc ở nhà khiến cả nhóm lười đi, nên họ trả lời email lúc nửa đêm.", lang: vi }
+        - { id: e9d, text: "Nếu có gì, cả nhóm sẽ trả lời email lúc nửa đêm khi làm ở nhà.", lang: vi }
+        - { id: t3b, text: "Làm việc ở nhà không lười, trừ khi họ phải trả lời email lúc nửa đêm.", lang: vi }
+    answer:
+      correct_option_id: c5r
+    explanation:
+      vi: If anything bác nhận định "lười đi" và cho thấy thực tế ngược lại (làm cả nửa đêm). Phương án "Nếu có gì" dịch sát chữ nên sai nghĩa.
+    display_answer: "Làm việc ở nhà không khiến cả nhóm lười đi. Ngược lại, họ còn trả lời email lúc nửa đêm."
+
+  - key: en:exercise:sdisc-dm-fill-mind-you-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-mind-you
+    prompt:
+      template: "The flight was delayed for three hours. {{b1}} {{b2}}, the airline gave everyone a meal voucher."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Chuyến bay trễ ba tiếng. Nhưng phải nói là hãng đã phát phiếu ăn cho mọi người."
+        - "Gợi ý: hai từ, nghĩa đen là \"bạn để ý\", dùng để thêm ý điều chỉnh."
+    answer:
+      blanks:
+        b1: [Mind]
+        b2: ["you"]
+    known_wrong:
+      - answer: Then
+        feedback_vi: Then again là tự phản biện ý mình; ở đây chỉ thêm một chi tiết làm nhẹ lời chê - dùng Mind you.
+        error_tag: discourse_marker
+      - answer: again
+        feedback_vi: Cụm cần dùng là Mind you, không phải Then again.
+        error_tag: discourse_marker
+    explanation:
+      vi: Câu đầu là lời chê, câu sau thêm một điểm tích cực để cân bằng - chức năng điển hình của Mind you.
+    display_answer: The flight was delayed for three hours. Mind you, the airline gave everyone a meal voucher.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:sdisc-dm-fill-as-i-was-saying
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sd-as-i-was-saying
+    prompt:
+      template: "Sorry, the delivery driver was at the door. As I {{b1}} {{b2}}, the budget needs another review."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [was]
+        b2: [saying]
+    known_wrong:
+      - answer: said
+        feedback_vi: Lời nói trước bị bỏ dở nên dùng quá khứ tiếp diễn - was saying.
+        error_tag: discourse_marker_tense
+      - answer: am
+        feedback_vi: Câu nói kia đã bị ngắt trong quá khứ - dùng was, không dùng am.
+        error_tag: discourse_marker_tense
+      - answer: told
+        feedback_vi: Cụm cố định là As I was saying; tell cần tân ngữ chỉ người.
+        error_tag: say_tell
+    explanation:
+      vi: Bạn đang nói thì bị ngắt (người giao hàng), giờ quay lại ý cũ - đó là As I was saying. Thì quá khứ tiếp diễn diễn tả hành động nói đang dở dang.
+    display_answer: Sorry, the delivery driver was at the door. As I was saying, the budget needs another review.
+
+  - key: en:exercise:sdisc-dm-translate-come-to-think
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-come-to-think-of-it
+    prompt:
+      source_text: Nghĩ lại thì tôi chưa bao giờ gặp sếp mới của bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Come to think of it, I have never met your new boss.
+        - Come to think of it, I've never met your new boss.
+        - Come to think of it, I have never met your new manager.
+        - Come to think of it, I've never met your new manager.
+        - Come to think of it, I never met your new boss.
+        - Come to think of it, I've never actually met your new boss.
+        - Come to think of it, I have never actually met your new boss.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Coming to think of it, I have never met your new boss.
+        feedback_vi: Cụm cố định là Come to think of it - come không đổi dạng.
+        error_tag: fixed_phrase
+      - answer: Come to think about it, I have never met your new boss.
+        feedback_vi: Cụm chuẩn là Come to think of it (dùng of).
+        error_tag: fixed_phrase
+      - answer: Think again, I have never met your new boss.
+        feedback_vi: Think again là câu mệnh lệnh "nghĩ lại đi"; muốn nói "nghĩ lại thì" dùng Come to think of it.
+        error_tag: literal_translation
+    explanation:
+      vi: "\"Nghĩ lại thì\" là chợt nhận ra điều gì khi đang nói, tương đương Come to think of it. Kinh nghiệm cả đời đến giờ nên dùng hiện tại hoàn thành have never met."
+    display_answer: Come to think of it, I've never met your new boss.
+
+  - key: en:exercise:sdisc-dm-translate-all-the-same
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-all-the-same
+    prompt:
+      source_text: Tôi biết anh ấy có kinh nghiệm. Dù vậy, tôi vẫn muốn kiểm tra người giới thiệu của anh ấy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I know he's experienced. I'd like to check his references all the same.
+        - I know he is experienced. I'd like to check his references all the same.
+        - I know he's experienced. I would like to check his references all the same.
+        - I know he is experienced. I would like to check his references all the same.
+        - I know he's experienced. All the same, I'd like to check his references.
+        - I know he is experienced. All the same, I'd like to check his references.
+        - I know he's experienced. All the same, I would like to check his references.
+        - I know he is experienced. All the same, I would like to check his references.
+        - I know he has experience. All the same, I'd like to check his references.
+        - I know he has experience. All the same, I would like to check his references.
+        - I know he has experience. I'd like to check his references all the same.
+        - I know he has experience. I would like to check his references all the same.
+        - I know he's experienced. All the same, I want to check his references.
+        - I know he is experienced. All the same, I want to check his references.
+        - I know he's experienced. I want to check his references all the same.
+        - I know he is experienced. I want to check his references all the same.
+        - I know he's experienced. I'd still like to check his references all the same.
+        - I know he is experienced. I would still like to check his references all the same.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I know he's experienced. It's all the same, I'd like to check his references.
+        feedback_vi: It's all the same nghĩa là "thế nào cũng được"; chỉ cần All the same.
+        error_tag: fixed_phrase
+    explanation:
+      vi: "\"Dù vậy (vẫn)\" sau khi thừa nhận một ý là chức năng của all the same, thường đặt cuối câu hoặc đầu câu. Không thêm It's vì It's all the same mang nghĩa khác."
+    display_answer: I know he's experienced. I'd like to check his references all the same.
+
+  # ---------------- application ----------------
+  - key: en:exercise:sdisc-dm-mcq-as-it-happens-situation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-as-it-happens
+    prompt:
+      stem: "Đồng nghiệp hỏi có ai biết tiếng Hàn để đọc một hợp đồng không. Bạn vừa học xong khoá tiếng Hàn. Câu đáp nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: k6p, text: "As it happens, I've just finished a Korean course.", lang: en }
+        - { id: a2y, text: "As I was saying, I've just finished a Korean course.", lang: en }
+        - { id: r8g, text: "If anything, I've just finished a Korean course.", lang: en }
+        - { id: x3j, text: "Then again, I've just finished a Korean course.", lang: en }
+    answer:
+      correct_option_id: k6p
+    explanation:
+      vi: Bạn đưa ra một sự trùng hợp có ích cho người hỏi - đúng chức năng của As it happens. As I was saying cần một chủ đề đang nói dở; If anything và Then again cần một ý trước để phản bác.
+    display_answer: "As it happens, I've just finished a Korean course."
+
+  - key: en:exercise:sdisc-dm-order-so-to-speak
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:sd-so-to-speak
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nói nôm na thì startup này đang chạy bằng hơi xăng cuối cùng.\""
+      tokens:
+        - { id: s-fumes, text: on fumes }
+        - { id: s-speak, text: so to speak }
+        - { id: s-start, text: This start-up }
+        - { id: s-running, text: is running }
+        - { id: s-then, text: then again }
+    answer:
+      orders:
+        - [s-start, s-running, s-fumes, s-speak]
+    explanation:
+      vi: So to speak đứng ngay sau hình ảnh ví von (running on fumes - chạy bằng hơi xăng, tức sắp cạn tiền) để báo đó là nghĩa bóng. Then again là token nhiễu vì câu không tự phản biện.
+    display_answer: This start-up is running on fumes, so to speak.
+
+  - key: en:exercise:sdisc-dm-translate-mind-you-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:sd-mind-you
+    prompt:
+      source_text: The workshop ran over by an hour. Mind you, nobody seemed to mind.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Buổi hội thảo kéo dài quá một tiếng. Nhưng mà hình như chẳng ai phiền lòng.
+        - Buổi hội thảo kéo dài quá một tiếng. Nhưng phải nói là có vẻ chẳng ai phiền cả.
+        - Buổi workshop kéo dài quá một tiếng. Nhưng mà có vẻ không ai thấy phiền.
+        - Buổi hội thảo bị lố một tiếng. Nhưng mà dường như không ai phiền lòng.
+        - Buổi hội thảo kéo dài hơn dự kiến một tiếng. Nhưng có vẻ không ai thấy phiền.
+        - Hội thảo kéo dài quá giờ một tiếng. Dù vậy, có vẻ chẳng ai phiền lòng.
+        - Buổi hội thảo kéo dài quá một tiếng. Nhưng có vẻ không ai phiền lòng cả.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Mind you đầu câu thứ hai thêm một ý làm nhẹ điều vừa chê ("nhưng mà/phải nói là"). Chú ý chữ mind thứ hai là động từ "phiền lòng" - cùng chữ nhưng khác chức năng.
+    display_answer: Buổi hội thảo kéo dài quá một tiếng. Nhưng mà hình như chẳng ai phiền lòng.

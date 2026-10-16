@@ -1,0 +1,682 @@
+# Học liệu unit "Diễn ngôn & sắc thái trong giao tiếp" (C1-C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: từ đánh dấu diễn ngôn trong văn nói ----------------
+  - key: en:item:sd-discourse-marker
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, listening]
+    front:
+      text: spoken discourse markers
+      ipa: UK /ˈdɪskɔːs ˌmɑːkəz/ · US /ˈdɪskɔːrs ˌmɑːrkɚz/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Những cụm ngắn như mind you, then again, as it happens giúp người nói rẽ hướng, thêm ý ngược hay quay lại chủ đề; chúng không đổi nghĩa câu nhưng cho người nghe biết bạn đang "định làm gì" với ý tiếp theo.
+      examples:
+        - target: The flat is tiny. Mind you, the rent is a steal for this part of town.
+          translation:
+            vi: Căn hộ bé tí. Nhưng mà phải nói là tiền thuê rẻ bất ngờ so với khu này.
+      confusion:
+        vi: Đa số các cụm này thuộc văn nói hoặc email thân mật; trong báo cáo trang trọng nên đổi sang however, nevertheless, in fact.
+
+  - key: en:item:sd-mind-you
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: Mind you, …
+      ipa: /ˈmaɪnd juː/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Nhưng mà nói thật… / Phải nói là… (thêm một ý làm nhẹ hoặc điều chỉnh điều vừa nói)
+      examples:
+        - target: The conference was badly organised. Mind you, the keynote speaker was brilliant.
+          translation:
+            vi: Hội nghị tổ chức kém. Nhưng phải công nhận diễn giả chính rất xuất sắc.
+      pronunciation_note:
+        vi: Hai từ đọc liền, nhấn vào mind; you thường đọc yếu /jə/.
+      confusion:
+        vi: Không phải câu ra lệnh "hãy để ý bạn"; nó chỉ báo hiệu một ý bổ sung, thường là ngược chiều.
+
+  - key: en:item:sd-as-it-happens
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: As it happens, …
+      ipa: /əz ɪt ˈhæpənz/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Thật tình cờ là… / Hoá ra là… (đưa ra một thông tin bất ngờ, thường liên quan trực tiếp đến người nghe)
+      examples:
+        - target: "\"Do you know anyone in logistics?\" \"As it happens, my cousin runs a freight company.\""
+          translation:
+            vi: “Anh có quen ai làm logistics không?” “Tình cờ là anh họ tôi điều hành một công ty vận tải.”
+      confusion:
+        vi: Gần nghĩa by coincidence nhưng tự nhiên hơn khi đáp lời. Khi kể chuyện quá khứ thì dùng As it happened.
+
+  - key: en:item:sd-come-to-think-of-it
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: Come to think of it, …
+      ipa: /ˌkʌm tə ˈθɪŋk əv ɪt/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Nghĩ lại thì… (người nói chợt nhận ra hoặc nhớ ra điều gì ngay lúc đang nói)
+      examples:
+        - target: Come to think of it, nobody has replied to my invoice since March.
+          translation:
+            vi: Nghĩ lại mới thấy, từ tháng Ba đến giờ chưa ai trả lời hoá đơn của tôi.
+      confusion:
+        vi: Không chia động từ come (không nói Coming to think of it). Đây là cụm cố định.
+
+  - key: en:item:sd-then-again
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Then again, …
+      ipa: /ðen əˈɡen/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Nhưng mặt khác thì… (tự cân nhắc thêm một khía cạnh ngược lại với ý mình vừa nói)
+      examples:
+        - target: A remote job would save me two hours a day. Then again, I'd miss my team.
+          translation:
+            vi: Làm từ xa sẽ giúp tôi đỡ hai tiếng mỗi ngày. Nhưng nghĩ lại thì tôi sẽ nhớ cả nhóm.
+      pronunciation_note:
+        vi: Again có hai cách đọc /əˈɡen/ và /əˈɡeɪn/; cả hai đều chuẩn.
+      confusion:
+        vi: Then again thường dùng khi bạn tự phản biện chính mình; On the other hand trung tính và trang trọng hơn.
+
+  - key: en:item:sd-so-to-speak
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: …, so to speak
+      ipa: /ˌsəʊ tə ˈspiːk/ · US /ˌsoʊ tə ˈspiːk/
+      pos: cụm rào đón
+    back:
+      meaning:
+        vi: Nói theo kiểu ví von thì… (báo hiệu từ vừa dùng mang nghĩa bóng, không hiểu sát chữ)
+      examples:
+        - target: The new manager inherited a sinking ship, so to speak.
+          translation:
+            vi: Nói nôm na thì người quản lý mới nhận về một con tàu đang chìm.
+      confusion:
+        vi: Đặt ngay sau từ hoặc cụm mang nghĩa bóng. Nếu câu không có hình ảnh ví von nào thì so to speak nghe vô nghĩa.
+
+  - key: en:item:sd-as-i-was-saying
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: As I was saying, …
+      ipa: /əz aɪ wəz ˈseɪɪŋ/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Như tôi đang nói dở… (quay lại chủ đề chính sau khi bị ngắt lời hoặc lạc đề)
+      examples:
+        - target: Sorry, the line dropped. As I was saying, the shipment should clear customs by Friday.
+          translation:
+            vi: Xin lỗi, vừa mất sóng. Như tôi đang nói, lô hàng sẽ thông quan trước thứ Sáu.
+      confusion:
+        vi: Dùng thì quá khứ tiếp diễn was saying vì lời nói trước bị bỏ dở. As I said (quá khứ đơn) nghĩa là "như tôi đã nói" - nhắc lại ý đã nói xong.
+
+  - key: en:item:sd-all-the-same
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: all the same
+      ipa: /ˌɔːl ðə ˈseɪm/
+      pos: trạng từ nhượng bộ
+    back:
+      meaning:
+        vi: Dù vậy vẫn… (thừa nhận lý do vừa nêu nhưng quyết định hoặc cảm xúc không đổi)
+      examples:
+        - target: I know the contract is standard. I'd like our lawyer to read it all the same.
+          translation:
+            vi: Tôi biết hợp đồng này là mẫu chuẩn. Dù vậy tôi vẫn muốn luật sư bên mình đọc qua.
+      confusion:
+        vi: Thường đứng cuối câu. It's all the same to me lại có nghĩa khác - "với tôi thế nào cũng được".
+
+  - key: en:item:sd-if-anything
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: If anything, …
+      ipa: /ɪf ˈeniθɪŋ/
+      pos: từ đánh dấu diễn ngôn
+    back:
+      meaning:
+        vi: Nếu có thì ngược lại… / Thậm chí còn… (bác một nhận định và nói rằng sự thật còn theo chiều ngược lại)
+      examples:
+        - target: The price rise hasn't hurt sales. If anything, demand has gone up.
+          translation:
+            vi: Tăng giá không làm doanh số giảm. Nếu có thì nhu cầu còn tăng lên.
+      confusion:
+        vi: Dùng sau một câu phủ định hoặc một nhận định bị bác bỏ. Đừng nhầm với anything else (còn gì nữa không).
+
+  # ---------------- Bài 2: sắc thái của động từ khuyết thiếu ----------------
+  - key: en:item:sd-modal-nuance
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: degrees of certainty with modal expressions
+      pos: sắc thái khả năng
+    back:
+      meaning:
+        vi: Ở C1, người nói chọn cụm khuyết thiếu để đo độ chắc chắn - từ gần như chắc (be bound to) đến có khả năng cao (may well) và gần như không thể (can't possibly).
+      examples:
+        - target: "The merger is bound to cause some anxiety. → It may well cause anxiety. → It can't possibly please everyone."
+          translation:
+            vi: "Vụ sáp nhập chắc chắn gây lo lắng. → Rất có thể gây lo lắng. → Không đời nào làm hài lòng tất cả."
+      confusion:
+        vi: Tiếng Việt thường chỉ có "chắc", "có lẽ"; tiếng Anh phân tầng tinh hơn, nên chọn sai cụm có thể làm bạn nghe quá chắc hoặc quá mơ hồ.
+
+  - key: en:item:sd-be-bound-to
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: be bound to + V
+      ipa: /bi ˈbaʊnd tə/
+      pos: cấu trúc khả năng
+    back:
+      meaning:
+        vi: Chắc chắn sẽ… (người nói rất tin điều đó sẽ xảy ra, thường dựa vào kinh nghiệm)
+      examples:
+        - target: If you launch on a public holiday, there are bound to be delays.
+          translation:
+            vi: Nếu ra mắt vào ngày lễ thì chắc chắn sẽ có chậm trễ.
+      confusion:
+        vi: Sau bound to là động từ nguyên mẫu, không phải V-ing. Be bound to khác be bound by (bị ràng buộc bởi luật, hợp đồng).
+
+  - key: en:item:sd-may-well
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: may well / might well + V
+      ipa: /meɪ ˈwel/ · /maɪt ˈwel/
+      pos: cấu trúc khả năng
+    back:
+      meaning:
+        vi: Rất có thể… (khả năng cao hơn may/might đơn thuần)
+      examples:
+        - target: The regulator may well reject the proposal in its current form.
+          translation:
+            vi: Rất có thể cơ quan quản lý sẽ bác đề xuất ở dạng hiện tại.
+      pronunciation_note:
+        vi: Nhấn vào well để thể hiện khả năng cao; nếu nhấn may thì nghe như đang nghi ngờ.
+      confusion:
+        vi: Well ở đây không có nghĩa "tốt"; nó là từ tăng mức độ khả năng.
+
+  - key: en:item:sd-might-as-well
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: might as well / may as well + V
+      ipa: /maɪt əz ˈwel/
+      pos: cấu trúc gợi ý
+    back:
+      meaning:
+        vi: Thôi thì cứ… cũng được (không có lý do tốt hơn để làm khác, nên chọn việc này)
+      examples:
+        - target: The next train isn't for an hour, so we might as well grab dinner here.
+          translation:
+            vi: Một tiếng nữa mới có chuyến tàu tiếp, nên thôi mình ăn tối ở đây luôn.
+      confusion:
+        vi: Khác hẳn may well (rất có thể). Might as well không nói về khả năng mà về lựa chọn "chẳng mất gì".
+
+  - key: en:item:sd-could-hardly
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: could hardly + V
+      ipa: UK /kʊd ˈhɑːdli/ · US /kʊd ˈhɑːrdli/
+      pos: cấu trúc khả năng
+    back:
+      meaning:
+        vi: Khó mà… / Đâu thể nào… (gần như không thể hoặc không hợp lý)
+      examples:
+        - target: We could hardly refuse after they had flown in from Singapore to meet us.
+          translation:
+            vi: Họ đã bay từ Singapore sang gặp, chúng tôi đâu thể từ chối.
+      confusion:
+        vi: Hardly đã mang nghĩa phủ định, nên không thêm not (could not hardly là sai).
+
+  - key: en:item:sd-cant-possibly
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: can't possibly / couldn't possibly
+      ipa: UK /kɑːnt ˈpɒsəbli/ · US /kænt ˈpɑːsəbli/
+      pos: cấu trúc nhấn mạnh
+    back:
+      meaning:
+        vi: Không đời nào… / Tuyệt đối không thể… (nhấn mạnh sự bất khả thi, hoặc từ chối lịch sự)
+      examples:
+        - target: I couldn't possibly accept such an expensive gift from a client.
+          translation:
+            vi: Tôi không thể nào nhận món quà đắt như vậy từ khách hàng.
+      confusion:
+        vi: Possibly trong câu phủ định làm mạnh thêm, không có nghĩa "có thể" như khi đứng một mình.
+
+  - key: en:item:sd-be-liable-to
+    type: phrase
+    level: c1
+    difficulty: 5
+    skill_tags: [writing]
+    front:
+      text: be liable to + V
+      ipa: /bi ˈlaɪəbl tə/
+      pos: cấu trúc khả năng
+    back:
+      meaning:
+        vi: Dễ… / Có xu hướng… (thường là điều không mong muốn)
+      examples:
+        - target: Older laptops are liable to overheat when several video calls run at once.
+          translation:
+            vi: Laptop cũ dễ quá nóng khi chạy nhiều cuộc gọi video cùng lúc.
+      confusion:
+        vi: Be liable for (chịu trách nhiệm pháp lý về) khác be liable to (dễ xảy ra). Chỉ dùng cho điều tiêu cực.
+
+  - key: en:item:sd-theres-every-chance
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: There's every chance (that) …
+      ipa: /ðeəz ˈevri ˈtʃɑːns/ · US /ðerz ˈevri ˈtʃæns/
+      pos: cụm khả năng
+    back:
+      meaning:
+        vi: Rất có khả năng… (dự đoán tích cực hoặc trung tính, khá tự tin)
+      examples:
+        - target: There's every chance the vaccine will be approved before winter.
+          translation:
+            vi: Rất có khả năng vắc-xin sẽ được phê duyệt trước mùa đông.
+      confusion:
+        vi: Trái nghĩa là There's little chance hoặc There's no chance. Không nói "There's all chance".
+
+  # ---------------- Bài 3: câu điều kiện nâng cao ----------------
+  - key: en:item:sd-conditional-alternatives
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: alternatives to if
+      pos: liên từ điều kiện
+    back:
+      meaning:
+        vi: Ngoài if, tiếng Anh có nhiều cách nêu điều kiện với sắc thái riêng - giả định xa (were to, supposing), điều kiện chặt (on condition that), tình huống bất ngờ (in the event of), hoặc "nếu không thì" (otherwise, but for).
+      examples:
+        - target: "Assuming the figures are correct, we will break even in May."
+          translation:
+            vi: Giả sử số liệu chính xác thì tháng Năm chúng ta sẽ hoà vốn.
+      confusion:
+        vi: Các liên từ này đều theo quy tắc thì của câu điều kiện - không dùng will ngay sau assuming, supposing hay on condition that.
+
+  - key: en:item:sd-were-to
+    type: grammar_point
+    level: c1
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: If + S + were to + V, … would …
+      ipa: /wɜː tə/ · US /wɝː tə/
+      pos: điều kiện giả định
+    back:
+      meaning:
+        vi: Nếu (giả sử) mà… - nêu tình huống giả định xa, khó xảy ra hoặc nhạy cảm, nghe lịch sự và dè dặt hơn loại 2 thường.
+      examples:
+        - target: If the bank were to raise interest rates again, many small firms would struggle.
+          translation:
+            vi: Giả sử ngân hàng lại tăng lãi suất thì nhiều doanh nghiệp nhỏ sẽ gặp khó.
+      confusion:
+        vi: Luôn dùng were cho mọi ngôi (I were to, it were to). Không dùng were to với động từ trạng thái như know, like (không nói If I were to know).
+
+  - key: en:item:sd-but-for
+    type: phrase
+    level: c1
+    difficulty: 5
+    skill_tags: [writing]
+    front:
+      text: But for + noun, …
+      ipa: UK /ˈbʌt fɔː/ · US /ˈbʌt fɔːr/
+      pos: giới từ điều kiện
+    back:
+      meaning:
+        vi: Nếu không nhờ có… / Nếu không vì… (theo sau là danh từ, không phải mệnh đề)
+      examples:
+        - target: But for the volunteers, the festival would have been cancelled.
+          translation:
+            vi: Nếu không có các tình nguyện viên thì lễ hội đã bị huỷ.
+      confusion:
+        vi: Nghĩa như If it hadn't been for / Were it not for nhưng ngắn gọn hơn. Sau but for không đặt chủ ngữ + động từ.
+
+  - key: en:item:sd-supposing
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: Supposing / Suppose (that) …
+      ipa: UK /səˈpəʊzɪŋ/ · US /səˈpoʊzɪŋ/
+      pos: liên từ điều kiện
+    back:
+      meaning:
+        vi: Giả sử là… thì sao? (mời người nghe tưởng tượng một tình huống, hay dùng trong câu hỏi)
+      examples:
+        - target: Suppose the client refuses to pay the deposit - what's our fallback?
+          translation:
+            vi: Giả sử khách từ chối trả tiền cọc - phương án dự phòng của mình là gì?
+      confusion:
+        vi: Có thể dùng thì hiện tại (khả năng thật) hoặc quá khứ (giả định xa) - Supposing he refuses / Supposing he refused.
+
+  - key: en:item:sd-otherwise
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: otherwise
+      ipa: UK /ˈʌðəwaɪz/ · US /ˈʌðɚwaɪz/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: Nếu không thì… (nêu hậu quả khi điều vừa nói không xảy ra)
+      examples:
+        - target: Back up the files tonight; otherwise, we could lose a week's work.
+          translation:
+            vi: Tối nay hãy sao lưu tệp; nếu không, chúng ta có thể mất công cả tuần.
+      confusion:
+        vi: Otherwise là trạng từ, không nối hai mệnh đề bằng dấu phẩy một mình - dùng dấu chấm phẩy, dấu chấm, hoặc and/or trước nó.
+
+  - key: en:item:sd-assuming-that
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: Assuming (that) …
+      ipa: UK /əˈsjuːmɪŋ/ · US /əˈsuːmɪŋ/
+      pos: liên từ điều kiện
+    back:
+      meaning:
+        vi: Giả định rằng… (đặt một tiền đề mà người nói cho là đúng để tính toán tiếp)
+      examples:
+        - target: Assuming that the permit comes through, construction will start in June.
+          translation:
+            vi: Giả định giấy phép được cấp thì tháng Sáu sẽ khởi công.
+      pronunciation_note:
+        vi: UK thường đọc /əˈsjuː-/ có âm /j/, US đọc /əˈsuː-/.
+      confusion:
+        vi: Sau assuming dùng hiện tại cho tương lai (comes through), không dùng will come through.
+
+  - key: en:item:sd-in-the-event-of
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, writing]
+    front:
+      text: in the event of + noun / in the event that …
+      ipa: /ɪn ði ɪˈvent əv/
+      pos: cụm điều kiện trang trọng
+    back:
+      meaning:
+        vi: Trong trường hợp… (dùng nhiều trong quy định, hợp đồng, hướng dẫn an toàn)
+      examples:
+        - target: In the event of a power cut, the servers switch to backup generators.
+          translation:
+            vi: Trong trường hợp mất điện, máy chủ tự chuyển sang máy phát dự phòng.
+      confusion:
+        vi: In the event of + danh từ; in the event that + mệnh đề. Đừng viết in the event of the power goes off.
+
+  - key: en:item:sd-on-condition-that
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing, speaking]
+    front:
+      text: on condition that …
+      ipa: /ɒn kənˈdɪʃn ðət/ · US /ɑːn kənˈdɪʃn ðət/
+      pos: liên từ điều kiện
+    back:
+      meaning:
+        vi: Với điều kiện là… (điều kiện bắt buộc, chặt chẽ hơn provided that)
+      examples:
+        - target: The journalist agreed to the interview on condition that her source remained anonymous.
+          translation:
+            vi: Nhà báo đồng ý phỏng vấn với điều kiện nguồn tin của cô được giấu tên.
+      confusion:
+        vi: Tiếng Anh-Anh thường nói on condition that (không mạo từ); tiếng Anh-Mỹ hay dùng on the condition that. Sau cụm này dùng hiện tại cho tương lai, không dùng will.
+
+  # ---------------- Bài 4: đảo ngữ nhượng bộ & nhấn mạnh ----------------
+  - key: en:item:sd-concessive-fronting
+    type: grammar_point
+    level: c2
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: "Adjective/Adverb/Verb + as/though + S + V"
+      pos: đảo ngữ nhượng bộ
+    back:
+      meaning:
+        vi: Đưa tính từ, trạng từ hoặc động từ lên đầu rồi thêm as/though để nói "dù… đến mấy", nhấn mạnh mạnh hơn although.
+      examples:
+        - target: "Although it is expensive, … → Expensive as it is, the software pays for itself within a year."
+          translation:
+            vi: "Dù đắt… → Đắt thật đấy, nhưng phần mềm tự hoàn vốn trong vòng một năm."
+      confusion:
+        vi: Không đặt mạo từ hay very trước tính từ bị đảo (không nói A strange as it seems hay Very tired as I was).
+
+  - key: en:item:sd-strange-as-it-may-seem
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: Strange as it may seem, …
+      ipa: /ˈstreɪndʒ əz ɪt meɪ ˈsiːm/
+      pos: cụm nhượng bộ
+    back:
+      meaning:
+        vi: Nghe thì lạ, nhưng… (báo trước một sự thật trái với kỳ vọng)
+      examples:
+        - target: Strange as it may seem, the four-day week increased our output.
+          translation:
+            vi: Nghe có vẻ lạ, nhưng tuần làm bốn ngày lại tăng năng suất của chúng tôi.
+      confusion:
+        vi: Có thể thay strange bằng surprising, odd, ironic. Không thêm but sau mệnh đề này.
+
+  - key: en:item:sd-much-as
+    type: phrase
+    level: c2
+    difficulty: 5
+    skill_tags: [speaking, writing]
+    front:
+      text: Much as + S + V, …
+      ipa: /ˈmʌtʃ əz/
+      pos: liên từ nhượng bộ
+    back:
+      meaning:
+        vi: Dù rất… (dù rất muốn, rất thích, rất tôn trọng) - thường dùng để từ chối hoặc phản đối khéo
+      examples:
+        - target: Much as I admire her vision, I can't support a plan without a budget.
+          translation:
+            vi: Dù rất ngưỡng mộ tầm nhìn của chị ấy, tôi không thể ủng hộ một kế hoạch không có ngân sách.
+      confusion:
+        vi: Chỉ đi với động từ chỉ cảm xúc, mong muốn (like, want, admire, sympathise). Không nói Much as it rains.
+
+  - key: en:item:sd-try-as-might
+    type: phrase
+    level: c2
+    difficulty: 5
+    skill_tags: [writing]
+    front:
+      text: Try as + S + might, …
+      ipa: /ˈtraɪ əz … maɪt/
+      pos: cấu trúc nhượng bộ
+    back:
+      meaning:
+        vi: Dù có cố gắng đến đâu… (kết quả vẫn không đạt)
+      examples:
+        - target: Try as they might, the engineers couldn't trace the source of the leak.
+          translation:
+            vi: Dù cố đến mấy, các kỹ sư vẫn không tìm ra nguồn rò rỉ.
+      confusion:
+        vi: Động từ try ở dạng nguyên mẫu, không chia (không nói Tried as they might). Vế sau thường là phủ định.
+
+  - key: en:item:sd-however-adjective
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: However + adj/adv + S + V, …
+      ipa: UK /haʊˈevə/ · US /haʊˈevɚ/
+      pos: mệnh đề nhượng bộ
+    back:
+      meaning:
+        vi: Dù… đến đâu đi nữa (bất kể mức độ)
+      examples:
+        - target: However carefully you plan a move abroad, something will go wrong.
+          translation:
+            vi: Dù bạn lên kế hoạch chuyển ra nước ngoài kỹ đến đâu, vẫn sẽ có chuyện trục trặc.
+      confusion:
+        vi: Tính từ hoặc trạng từ phải đứng ngay sau however. Không viết However you plan carefully.
+
+  - key: en:item:sd-adjective-though
+    type: grammar_point
+    level: c2
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: Adjective + though + S + be, …
+      ipa: /ðəʊ/ · US /ðoʊ/
+      pos: đảo ngữ nhượng bộ
+    back:
+      meaning:
+        vi: Dù… (như cấu trúc với as nhưng nghe văn chương hơn một chút)
+      examples:
+        - target: Exhausted though she was, the surgeon stayed to brief the night team.
+          translation:
+            vi: Dù đã kiệt sức, nữ bác sĩ phẫu thuật vẫn ở lại dặn dò ca đêm.
+      confusion:
+        vi: Có thể đổi though thành as mà nghĩa không đổi. Although không dùng được trong cấu trúc đảo này.
+
+  - key: en:item:sd-even-so
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: Even so, …
+      ipa: UK /ˈiːvn səʊ/ · US /ˈiːvn soʊ/
+      pos: từ nối nhượng bộ
+    back:
+      meaning:
+        vi: Dù vậy, … (thừa nhận ý trước nhưng vẫn khẳng định ý sau)
+      examples:
+        - target: The forecast was clear. Even so, the pilots carried extra fuel.
+          translation:
+            vi: Dự báo thời tiết quang đãng. Dù vậy, phi công vẫn mang thêm nhiên liệu.
+      confusion:
+        vi: Đứng đầu câu mới, có dấu phẩy sau. Không dùng even so để nối hai mệnh đề như although.
+
+  - key: en:item:sd-for-all
+    type: phrase
+    level: c2
+    difficulty: 5
+    skill_tags: [writing, speaking]
+    front:
+      text: For all + noun, …
+      ipa: UK /fər ˈɔːl/ · US /fɚ ˈɔːl/
+      pos: giới từ nhượng bộ
+    back:
+      meaning:
+        vi: Dù có… (bao nhiêu đi nữa) - thường hàm ý điều đó không giúp được gì
+      examples:
+        - target: For all its marketing budget, the app never gained a loyal user base.
+          translation:
+            vi: Dù chi bao nhiêu tiền tiếp thị, ứng dụng vẫn không có được nhóm người dùng trung thành.
+      confusion:
+        vi: For all I know lại có nghĩa khác - "biết đâu đấy, tôi cũng chẳng rõ".
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:sd-off-the-top-of-my-head
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [speaking]
+    front:
+      text: off the top of my head
+      ipa: UK /ˌɒf ðə ˈtɒp əv maɪ ˈhed/ · US /ˌɔːf ðə ˈtɑːp əv maɪ ˈhed/
+      pos: cụm rào đón
+    back:
+      meaning:
+        vi: Nói nhanh theo trí nhớ, chưa kiểm tra lại (dùng khi trả lời ngay mà không có số liệu trong tay)
+      examples:
+        - target: Off the top of my head, I'd say around forty per cent of our users are overseas.
+          translation:
+            vi: Nói nhanh theo trí nhớ thì khoảng bốn mươi phần trăm người dùng của chúng tôi ở nước ngoài.
+      confusion:
+        vi: Giúp bạn tránh bị bắt bẻ khi đưa con số chưa chắc chắn; trong văn bản trang trọng dùng approximately hoặc preliminary figures suggest.
+
+  - key: en:item:sd-fair-enough
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: Fair enough.
+      ipa: UK /ˌfeər ɪˈnʌf/ · US /ˌfer ɪˈnʌf/
+      pos: câu đáp
+    back:
+      meaning:
+        vi: Cũng hợp lý. / Được thôi. (chấp nhận lập luận của người kia, dù có thể chưa hoàn toàn đồng ý)
+      examples:
+        - target: "\"We need another month to test it properly.\" \"Fair enough - but not a day longer.\""
+          translation:
+            vi: “Bọn tôi cần thêm một tháng để thử nghiệm cho kỹ.” “Cũng hợp lý - nhưng không thêm ngày nào nữa.”
+      confusion:
+        vi: Nghe thân mật; trong cuộc họp trang trọng có thể nói That's a reasonable point.
