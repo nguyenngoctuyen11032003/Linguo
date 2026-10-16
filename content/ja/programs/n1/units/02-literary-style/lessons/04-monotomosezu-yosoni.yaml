@@ -1,0 +1,371 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u2-monotomosezu-yosoni
+order_index: 4
+level: n1
+title:
+  vi: Bất chấp và mặc kệ - ～をものともせず, ～をよそに
+objectives:
+  - vi: Kể việc ai đó vượt qua trở ngại bằng ～をものともせず(に).
+  - vi: Nói "mặc kệ sự lo lắng, phản đối của người xung quanh" bằng ～をよそに.
+  - vi: Phân biệt sắc thái khen (ものともせず) và phê phán (よそに).
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-u2-tarumono-narini]
+items:
+  - item: ja:item:n1-u2-gyakkyou
+  - item: ja:item:n1-u2-kenen
+  - item: ja:item:n1-u2-kakan
+  - item: ja:item:n1-u2-gram-monotomosezu
+  - item: ja:item:n1-u2-gram-wo-yoso-ni
+body:
+  - type: objective
+    text:
+      vi: 'Tin thể thao, phóng sự và tiểu sử rất hay dùng hai mẫu này: "bất chấp chấn thương, anh ấy vẫn chạy về đích" (をものともせず) và "mặc cho cha mẹ lo lắng, cậu ấy vẫn ra đi" (をよそに).'
+  - type: explain
+    text:
+      vi: '～をものともせず(に) - N (trở ngại: けが, 嵐, 批判, 逆境) + をものともせず: "không coi... ra gì, bất chấp". Thường kể về người khác với sắc thái khâm phục: 彼は足のけがをものともせず、最後まで走り抜いた.'
+  - type: explain
+    text:
+      vi: '～をよそに - N (thái độ của người xung quanh: 心配, 反対, 期待, 批判) + をよそに: "mặc kệ, bỏ ngoài tai". Thường mang ý phê phán hoặc trung tính: 住民の反対をよそに、工事は進められた.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo phân biệt: ものともせず nhìn vào TRỞ NGẠI khách quan và người chiến thắng nó (khen). よそに nhìn vào NGƯỜI XUNG QUANH bị phớt lờ (thường chê). Cả hai hầu như không dùng cho bản thân và không đi với ý chí, mệnh lệnh ở vế sau. Danh từ trước ものともせず phải là điều bất lợi - 応援をものともせず là vô nghĩa.'
+  - type: example
+    target: 彼は足のけがをものともせず、最後まで走り抜いた。
+    target_lang: ja
+    translation:
+      vi: Bất chấp vết thương ở chân, anh ấy đã chạy đến cùng.
+  - type: example
+    target: 激しい雨をものともせずに、大勢のファンが会場に詰めかけた。
+    target_lang: ja
+    translation:
+      vi: Bất chấp mưa lớn, rất đông người hâm mộ đã kéo đến hội trường.
+  - type: example
+    target: 親の心配をよそに、息子は一人で世界一周の旅に出た。
+    target_lang: ja
+    translation:
+      vi: Mặc cho bố mẹ lo lắng, cậu con trai đã một mình lên đường đi vòng quanh thế giới.
+  - type: example
+    target: 住民の反対をよそに、工事は着々と進められた。
+    target_lang: ja
+    translation:
+      vi: Mặc kệ sự phản đối của cư dân, công trình vẫn được tiến hành đều đặn.
+  - type: example
+    target: 専門家は景気の悪化を懸念している。
+    target_lang: ja
+    translation:
+      vi: Các chuyên gia đang lo ngại kinh tế suy thoái.
+  - type: common_mistake
+    wrong: 私は熱をものともせず、会社に行きました。
+    right: 彼は高熱をものともせず、会社に来た。
+    target_lang: ja
+    note:
+      vi: をものともせず là lời khâm phục người khác; tự nói về mình nghe như khoe khoang. Kể về bản thân dùng 熱があったが、会社に行った.
+  - type: common_mistake
+    wrong: 周囲の応援をものともせず、彼は優勝した。
+    right: 周囲の期待をよそに、彼は一回戦で敗れた。
+    target_lang: ja
+    note:
+      vi: Trước ものともせず phải là trở ngại, không phải sự cổ vũ. Muốn nói "trái với kỳ vọng của mọi người" dùng 期待をよそに.
+  - type: summary
+    points:
+      - vi: N(trở ngại) + をものともせず(に) - bất chấp, không nao núng (khen).
+      - vi: N(thái độ người khác) + をよそに - mặc kệ, phớt lờ (thường chê).
+      - vi: Cả hai thường kể về người khác, vế sau không là ý chí, mệnh lệnh.
+      - vi: 逆境 (nghịch cảnh), 懸念 (lo ngại), 果敢 (quả cảm).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-mcq-yoso
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u2-gram-wo-yoso-ni
+    prompt:
+      stem: Câu 「親の心配をよそに、息子は一人で旅に出た。」 có nghĩa gì?
+      stem_lang: vi
+      options:
+        - { id: a7k, text: "Mặc cho bố mẹ lo lắng, cậu con trai đã một mình lên đường.", lang: vi }
+        - { id: g3e, text: "Vì bố mẹ lo lắng nên cậu con trai không đi một mình.", lang: vi }
+        - { id: o8v, text: "Bố mẹ lo lắng khi đi du lịch cùng con trai.", lang: vi }
+        - { id: w5p, text: "Để bố mẹ không lo, cậu con trai đã đi cùng bạn.", lang: vi }
+    answer:
+      correct_option_id: a7k
+    explanation:
+      vi: 心配をよそに - mặc kệ sự lo lắng; 一人で旅に出た - đã một mình lên đường.
+    display_answer: "Mặc cho bố mẹ lo lắng, cậu con trai đã một mình lên đường."
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-listen-monotomo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-monotomosezu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 激しい雨をものともせずに、大勢のファンが会場に詰めかけた。
+      options:
+        - { id: t6b, text: "Bất chấp mưa lớn, rất đông người hâm mộ đã kéo đến hội trường.", lang: vi }
+        - { id: i2x, text: "Vì mưa lớn nên rất ít người hâm mộ đến hội trường.", lang: vi }
+        - { id: y9c, text: "Mưa lớn khiến buổi biểu diễn ở hội trường bị huỷ.", lang: vi }
+        - { id: e1m, text: "Người hâm mộ chờ mưa tạnh rồi mới vào hội trường.", lang: vi }
+    answer:
+      correct_option_id: t6b
+    explanation:
+      vi: 激しい雨をものともせずに - bất chấp mưa lớn; 詰めかけた - kéo đến đông nghẹt.
+    display_answer: "Bất chấp mưa lớn, rất đông người hâm mộ đã kéo đến hội trường."
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-monotomosezu
+    prompt:
+      stem: 'Chọn mẫu phù hợp: 彼は足のけが＿＿、最後まで走り抜いた。'
+      stem_lang: vi
+      options:
+        - { id: n4q, text: をものともせず, lang: ja }
+        - { id: s8f, text: をよそに, lang: ja }
+        - { id: d2h, text: たるもの, lang: ja }
+        - { id: l6r, text: ともなると, lang: ja }
+    answer:
+      correct_option_id: n4q
+    explanation:
+      vi: けが là trở ngại khách quan và người chạy đã vượt qua - khen bằng をものともせず. をよそに dùng với thái độ người khác (心配, 反対).
+    display_answer: をものともせず
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-fill-yoso
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-wo-yoso-ni
+    prompt:
+      template: "住民の反対を{{b1}}、工事は着々と進められた。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Mặc kệ sự phản đối của cư dân, công trình vẫn được tiến hành đều đặn."
+        - "Gợi ý: を＿＿に - 'mặc kệ'."
+    answer:
+      blanks:
+        b1: [よそに, 余所に]
+    known_wrong:
+      - answer: ものともせず
+        feedback_vi: ものともせず là "bất chấp trở ngại" với ý khen; sự phản đối của cư dân bị phớt lờ - dùng をよそに.
+        error_tag: yoso_monotomo
+      - answer: よそで
+        feedback_vi: Mẫu cố định là をよそに.
+        error_tag: grammar_form
+    explanation:
+      vi: 反対をよそに - mặc kệ sự phản đối (sắc thái phê phán).
+    display_answer: 住民の反対をよそに、工事は着々と進められた。
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-wb-gyakkyou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gyakkyou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Bất chấp nghịch cảnh, cô ấy đã vực dậy công ty.\""
+      tokens:
+        - { id: g3, text: 会社を立て直した }
+        - { id: g1, text: 彼女は }
+        - { id: g4, text: 逆境をよそに、 }
+        - { id: g2, text: 逆境をものともせず、 }
+    answer:
+      orders:
+        - [g1, g2, g3]
+    explanation:
+      vi: 逆境 là trở ngại khách quan - đi với をものともせず. をよそに cần thái độ của người khác.
+    display_answer: 彼女は逆境をものともせず、会社を立て直した。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-fill-kenen
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-kenen
+    prompt:
+      template: "専門家は景気の悪化を{{b1}}している。(lo ngại - từ trang trọng)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [懸念, けねん, 危惧, きぐ]
+    known_wrong:
+      - answer: けんねん
+        feedback_vi: 懸念 đọc けねん, không có ん thứ nhất.
+        error_tag: reading
+      - answer: 心配
+        feedback_vi: 心配 đúng nghĩa nhưng là từ thường ngày; bài yêu cầu từ trang trọng - 懸念.
+        error_tag: vocab_register
+    explanation:
+      vi: ～を懸念する - lo ngại (tin tức, văn bản). 危惧する cũng trang trọng và gần nghĩa.
+    display_answer: 専門家は景気の悪化を懸念している。
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-fill-kakan
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-kakan
+    prompt:
+      template: "選手たちは強豪相手に{{b1}}挑んだ。(một cách quả cảm)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [果敢に, かかんに]
+    known_wrong:
+      - answer: 無謀に
+        feedback_vi: 無謀 là liều lĩnh thiếu suy nghĩ (chê); quả cảm (khen) là 果敢に.
+        error_tag: vocab_meaning
+      - answer: 果敢な
+        feedback_vi: Bổ nghĩa cho động từ 挑む cần dạng phó từ - 果敢に.
+        error_tag: grammar_form
+    explanation:
+      vi: 果敢に挑む - quả cảm đương đầu. な形容詞 + に thành phó từ.
+    display_answer: 選手たちは強豪相手に果敢に挑んだ。
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-translate-yoso
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-wo-yoso-ni
+    prompt:
+      source_text: Mặc cho bố mẹ lo lắng, cậu con trai đã một mình đi du lịch nước ngoài. (dùng をよそに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 親の心配をよそに、息子は一人で海外旅行に出かけた。
+        - 親の心配をよそに、息子は一人で海外旅行に行った。
+        - 親の心配をよそに、息子は一人で海外旅行に出た。
+        - 親の心配をよそに、息子は一人で海外へ旅行に行った。
+        - 親の心配をよそに、息子は一人で海外に旅行に行った。
+        - 親の心配をよそに、息子は一人で海外旅行に出かけました。
+        - 親の心配をよそに、息子は一人で海外旅行に行きました。
+        - 両親の心配をよそに、息子は一人で海外旅行に出かけた。
+        - 両親の心配をよそに、息子は一人で海外旅行に行った。
+        - 親の心配をよそに、息子は一人で海外へ旅立った。
+        - 親の心配をよそに、息子は一人で外国へ旅行に行った。
+        - 息子は親の心配をよそに、一人で海外旅行に出かけた。
+        - 息子は親の心配をよそに、一人で海外旅行に行った。
+        - おやのしんぱいをよそに、むすこはひとりでかいがいりょこうにいった。
+    known_wrong:
+      - answer: 親の心配をものともせず、息子は一人で海外旅行に行った。
+        feedback_vi: ものともせず đi với trở ngại khách quan và mang ý khen; sự lo lắng của bố mẹ bị phớt lờ - dùng をよそに.
+        error_tag: yoso_monotomo
+      - answer: 親が心配をよそに、息子は一人で海外旅行に行った。
+        feedback_vi: をよそに đi sau danh từ - 親の心配をよそに.
+        error_tag: particle
+    explanation:
+      vi: 親の心配をよそに - mặc cho bố mẹ lo lắng; 一人で海外旅行に出かけた - một mình đi du lịch nước ngoài.
+    display_answer: 親の心配をよそに、息子は一人で海外旅行に出かけた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-mcq-nuance
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-wo-yoso-ni
+    prompt:
+      stem: Bạn viết bài bình luận phê phán chính phủ vẫn tăng thuế dù người dân phản đối. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: k8s, text: 国民の反発をよそに、政府は増税に踏み切った。, lang: ja }
+        - { id: z2n, text: 国民の反発をものともせず、政府は見事に増税に踏み切った。, lang: ja }
+        - { id: p5a, text: 国民たるもの、政府は増税に踏み切った。, lang: ja }
+        - { id: h7v, text: 国民の反発なりに、政府は増税に踏み切った。, lang: ja }
+    answer:
+      correct_option_id: k8s
+    explanation:
+      vi: 反発をよそに - phớt lờ sự phản đối, sắc thái phê phán đúng ý bài. ものともせず + 見事に nghe như khen ngợi chính phủ; たるもの, なりに sai nghĩa.
+    display_answer: 国民の反発をよそに、政府は増税に踏み切った。
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-monotomosezu
+    prompt:
+      source_text: 彼は足のけがをものともせず、最後まで走り抜いた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bất chấp vết thương ở chân, anh ấy đã chạy đến cùng.
+        - Bất chấp vết thương ở chân, anh ấy đã chạy đến cuối cùng.
+        - Bất chấp chấn thương ở chân, anh ấy đã chạy đến cùng.
+        - Bất chấp chấn thương ở chân, anh ấy đã chạy đến cuối cùng.
+        - Bất chấp vết thương ở chân, anh ấy đã chạy về đích.
+        - Bất chấp chấn thương ở chân, anh ấy đã chạy về đích.
+        - Bất chấp vết thương ở chân, anh ấy vẫn chạy đến cùng.
+        - Bất chấp chấn thương ở chân, anh ấy vẫn chạy đến cùng.
+        - Bất chấp chân bị thương, anh ấy đã chạy đến cùng.
+        - Mặc dù bị thương ở chân, anh ấy vẫn chạy đến cùng.
+        - Dù bị thương ở chân, anh ấy vẫn chạy đến cùng.
+        - Không ngại vết thương ở chân, anh ấy đã chạy đến cùng.
+        - Anh ấy đã chạy đến cùng bất chấp vết thương ở chân.
+        - Anh ấy đã chạy đến cuối cùng bất chấp chấn thương ở chân.
+        - Bất chấp vết thương ở chân, anh ta đã chạy đến cùng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì bị thương ở chân nên anh ấy đã bỏ cuộc giữa chừng.
+        feedback_vi: をものともせず là "bất chấp, không nao núng", và 走り抜いた là chạy trọn đến cùng.
+        error_tag: monotomo_meaning
+    explanation:
+      vi: 足のけがをものともせず - bất chấp vết thương ở chân; 走り抜いた - đã chạy đến cùng.
+    display_answer: Bất chấp vết thương ở chân, anh ấy đã chạy đến cùng.
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-mcq-kakan
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-kakan
+    prompt:
+      stem: 'Bạn viết tin thể thao: "Bất chấp cái nóng gay gắt, các cầu thủ đã quả cảm tấn công đến phút cuối." Câu nào đúng và tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: m3c, text: 厳しい暑さをものともせず、選手たちは最後まで果敢に攻め続けた。, lang: ja }
+        - { id: f9x, text: 厳しい暑さをよそに、選手たちは最後まで果敢に攻め続けた。, lang: ja }
+        - { id: u4w, text: 厳しい暑さをものともせず、選手たちは最後まで無謀に攻め続けた。, lang: ja }
+        - { id: b1y, text: 厳しい暑さをものともせず、選手たちは最後まで果敢な攻め続けた。, lang: ja }
+    answer:
+      correct_option_id: m3c
+    explanation:
+      vi: 暑さ là trở ngại khách quan - ものともせず; 果敢に là phó từ "quả cảm". よそに cần thái độ của người khác; 無謀 là "liều lĩnh" (chê); 果敢な không bổ nghĩa cho động từ.
+    display_answer: 厳しい暑さをものともせず、選手たちは最後まで果敢に攻め続けた。
+
+  - key: ja:exercise:n1-u2-monotomosezu-yosoni-wb-kenen
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-kenen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Mặc kệ mối lo ngại của các chuyên gia, công ty đã triển khai kế hoạch.\""
+      tokens:
+        - { id: k3, text: 計画を実行に移した }
+        - { id: k4, text: 懸念をものともせず、 }
+        - { id: k1, text: 専門家の }
+        - { id: k2, text: 懸念をよそに、会社は }
+    answer:
+      orders:
+        - [k1, k2, k3]
+    explanation:
+      vi: 専門家の懸念をよそに - mặc kệ mối lo ngại của chuyên gia (thái độ người khác bị phớt lờ). ものともせず dùng cho trở ngại khách quan.
+    display_answer: 専門家の懸念をよそに、会社は計画を実行に移した。
