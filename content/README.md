@@ -14,7 +14,7 @@ content/
   en/programs/<program>/units/<nn>-<unit>/unit.yaml
   en/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<lesson>.yaml
   ko/...                                         # giống en
-  ja/...                                         # giống en (tiếng Nhật: kana-basics, n4, n3)
+  ja/...                                         # giống en (tiếng Nhật: kana-basics = Kana→N5, n4, n3, n2, n1)
   diagnostic/<en|ko|ja>/<kỹ-năng>.yaml            # kho câu hỏi kiểm tra đầu vào (spec 4)
   exams/<en|ko|ja>/<tên-đề>.yaml                  # đề luyện thi mô phỏng (spec 9)
 ```

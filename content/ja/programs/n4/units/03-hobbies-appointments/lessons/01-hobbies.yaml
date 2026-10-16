@@ -7,10 +7,11 @@ key: ja:lesson:n4-hobbies
 order_index: 1
 level: n4
 title:
-  vi: Sở thích - ことです và のが好きです
+  vi: Sở thích - ことです, のが好きです và lý do với ～し
 objectives:
   - vi: Giới thiệu sở thích bằng 趣味は V辞書形 + ことです.
   - vi: Nói thích, giỏi, kém việc gì bằng V + のが 好き・上手・下手です.
+  - vi: Kể vài lý do vì sao mình thích bằng ～し、～し.
   - vi: Hỏi và trả lời về sở thích một cách tự nhiên, khiêm tốn.
 estimated_minutes: 15
 skills: [grammar, vocabulary, speaking, listening]
@@ -18,6 +19,7 @@ prerequisites: [ja:lesson:n4-ability-giving-review]
 items:
   - item: ja:item:n4-gram-shumi-koto
   - item: ja:item:n4-gram-no-ga-suki
+  - item: ja:item:n4-gram-shi
   - item: ja:item:n4-shumi
   - item: ja:item:n4-tsuri
   - item: ja:item:n4-toru
@@ -36,6 +38,9 @@ body:
   - type: explain
     text:
       vi: 好き, 上手, 下手 là tính từ đuôi な, nên vật được thích đi với が. Muốn nói người giỏi là ai, chủ ngữ dùng は (兄は絵をかくのが上手です).
+  - type: explain
+    text:
+      vi: 'Muốn kể vài lý do, nối chúng bằng し: 釣りは静かだし、楽しいし、好きです (câu cá vừa yên tĩnh vừa vui nên tôi thích). Gắn sau thể thường; tính từ đuôi な và danh từ cần だ - 静かだし. Giống "vừa... lại vừa..." của tiếng Việt, các lý do phải cùng một hướng.'
   - type: deep_explain
     text:
       vi: Người Nhật hiếm khi tự khen mình 上手. Khi được khen 日本語が上手ですね, câu trả lời tự nhiên là いいえ、まだまだです (đâu có, còn kém lắm). Nói về sở trường của mình dùng 得意 (とくい) - 料理が得意です.
@@ -67,6 +72,19 @@ body:
       vi: Cuối tuần tôi đi câu cá với bố.
     note:
       vi: Danh từ hoạt động + に + 行く - đi để làm gì.
+  - type: example
+    target: テニスは体にいいし、友だちもできるし、毎週やっています。
+    target_lang: ja
+    translation:
+      vi: Quần vợt vừa tốt cho sức khoẻ, lại có thêm bạn, nên tuần nào tôi cũng chơi.
+    note:
+      vi: Hai lý do nối bằng し; も ở lý do sau mang nghĩa "lại còn".
+  - type: common_mistake
+    wrong: この公園は静かし、きれいし、好きです。
+    right: この公園は静かだし、きれいだし、好きです。
+    target_lang: ja
+    note:
+      vi: 静か, きれい là tính từ đuôi な - phải thêm だ trước し. Tính từ đuôi い thì gắn thẳng (広いし).
   - type: common_mistake
     wrong: 趣味は写真を撮りますことです。
     right: 趣味は写真を撮ることです。
@@ -89,6 +107,7 @@ body:
     points:
       - vi: 趣味は + V辞書形 + ことです - sở thích là làm V.
       - vi: V辞書形 + のが + 好き・上手・下手です - thích / giỏi / kém làm V.
+      - vi: Thể thường + し、～し - vừa... lại vừa... (kể lý do); な / N cần だし.
       - vi: Được khen thì khiêm tốn - いいえ、まだまだです.
       - vi: 趣味 sở thích · 釣り câu cá · 撮る chụp · 上手 giỏi · 下手 kém.
 exercises:
@@ -200,7 +219,51 @@ exercises:
       vi: 撮る → 撮って + もいいですか (xin phép).
     display_answer: ここで写真を撮ってもいいですか。
 
+  - key: ja:exercise:n4-hob-mcq-shi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-shi
+    prompt:
+      stem: '"Thư viện vừa yên tĩnh, lại rộng, nên tôi thích." Chọn câu đúng.'
+      stem_lang: vi
+      options:
+        - { id: s4h, text: 図書館は静かだし、広いし、好きです。, lang: ja }
+        - { id: t9k, text: 図書館は静かし、広いし、好きです。, lang: ja }
+        - { id: u2m, text: 図書館は静かだし、広いだし、好きです。, lang: ja }
+        - { id: v7p, text: 図書館は静かだし、狭いし、好きです。, lang: ja }
+    answer:
+      correct_option_id: s4h
+    explanation:
+      vi: 静か là tính từ đuôi な nên cần だし; 広い là tính từ đuôi い nên gắn thẳng し (không thêm だ). 狭い (chật) ngược nghĩa và không cùng hướng với "thích".
+    display_answer: 図書館は静かだし、広いし、好きです。
+
   # ---------------- recall ----------------
+  - key: ja:exercise:n4-hob-fill-shi
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-shi
+    prompt:
+      template: "Hôm nay trời mưa, tôi lại mệt nên sẽ ở nhà. - 今日は雨{{b1}}、疲れているし、家にいます。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [だし]
+    known_wrong:
+      - answer: し
+        feedback_vi: 雨 là danh từ - trước し phải có だ (雨だし).
+        error_tag: shi_da
+      - answer: なし
+        feedback_vi: な chỉ dùng khi tính từ đuôi な đứng trước danh từ; trước し dùng だ - 雨だし.
+        error_tag: shi_da
+    explanation:
+      vi: N + だし - "vừa là... (lý do 1)"; 疲れているし - lại đang mệt (lý do 2). Hai lý do cùng hướng dẫn tới quyết định 家にいます.
+    display_answer: 今日は雨だし、疲れているし、家にいます。
+
   - key: ja:exercise:n4-hob-fill-swim-heta
     type: fill_blank
     stage: recall
@@ -397,3 +460,35 @@ exercises:
     explanation:
       vi: V辞書形 + のは/のが + 好きですが、下手です. のは làm nổi bật sự đối lập "thích nhưng kém".
     display_answer: 料理を作るのは好きですが、下手です。
+
+  - key: ja:exercise:n4-hob-translate-shi
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-shi
+    prompt:
+      source_text: Tôi thích đi bộ đường núi vì vừa được ngắm cảnh đẹp, lại tốt cho sức khoẻ. (dùng し)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 山登りは景色がきれいだし、体にもいいし、好きです。
+        - 山登りは景色がきれいだし、体にいいし、好きです。
+        - 山登りは景色がきれいだし、健康にもいいし、好きです。
+        - 山登りは景色がきれいだし、体にもいいから、好きです。
+        - 山登りは景色がきれいだし、体にもいいので、好きです。
+        - 山登りは景色がきれいですし、体にもいいですし、好きです。
+        - 山に登るのは景色がきれいだし、体にもいいし、好きです。
+        - 私は山登りが好きです。景色がきれいだし、体にもいいし。
+        - やまのぼりはけしきがきれいだし、からだにもいいし、すきです。
+    known_wrong:
+      - answer: 山登りは景色がきれいし、体にもいいし、好きです。
+        feedback_vi: きれい là tính từ đuôi な - cần だ trước し (きれいだし).
+        error_tag: shi_da
+      - answer: 山登りは景色がきれいだし、体にもいいだし、好きです。
+        feedback_vi: いい là tính từ đuôi い - gắn thẳng し, không thêm だ (いいし).
+        error_tag: shi_da
+    explanation:
+      vi: 景色がきれいだし (cảnh đẹp - tính từ な + だし) + 体にもいいし (lại tốt cho sức khoẻ - tính từ い + し) + 好きです. Câu cuối có thể dùng から / ので thay し ở lý do cuối.
+    display_answer: 山登りは景色がきれいだし、体にもいいし、好きです。

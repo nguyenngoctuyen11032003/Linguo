@@ -54,6 +54,27 @@ items:
       confusion:
         vi: 好き・上手・下手 đều là tính từ đuôi な nên vật được thích đi với が, không phải を. Trước 好きです dùng の hoặc こと đều được, nhưng sau 趣味は chỉ dùng ことです.
 
+  - key: ja:item:n4-gram-shi
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường + し、(thể thường + し、) ～
+      romanization: shi
+      pos: liệt kê lý do
+    back:
+      meaning:
+        vi: '"Vừa... lại vừa..., nên..." - kể hai, ba lý do (hoặc đặc điểm) cùng hướng rồi đi tới kết luận. Gắn sau thể thường: 安いし, 静かだし, 近いし. Câu lịch sự có thể gắn sau です/ます: 安いですし.'
+      examples:
+        - target: このアパートは駅から近いし、家賃も安いし、とても気に入っています。
+          translation:
+            vi: Căn hộ này vừa gần ga, tiền thuê lại rẻ, nên tôi rất ưng.
+      pronunciation_note:
+        vi: し đọc ngắn, ngắt nhẹ sau mỗi lý do - "chi-kai-shi, ya-sui-shi".
+      confusion:
+        vi: Tính từ đuôi な và danh từ cần だ trước し - 静かだし, 雨だし (không nói ×静かし). Các lý do phải cùng hướng (đều tốt hoặc đều xấu); も thường đi kèm ở lý do sau (家賃も).
+
   - key: ja:item:n4-shumi
     type: vocab
     level: n4
