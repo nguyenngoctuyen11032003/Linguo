@@ -32,7 +32,7 @@ export function ExamHistoryList({ entries, compact = false }: ExamHistoryListPro
   }
 
   return (
-    <ul className={cn('min-w-0', compact ? 'divide-y divide-border' : 'grid gap-2')}>
+    <ul className={cn('min-w-0', compact ? 'divide-y divide-border' : 'grid gap-2.5')}>
       {entries.map((entry) => {
         const status = STATUS_UI[entry.status];
         const Icon = status.icon;
@@ -42,13 +42,30 @@ export function ExamHistoryList({ entries, compact = false }: ExamHistoryListPro
         return (
           <li
             key={entry.attempt_id}
-            className={cn('flex min-w-0 items-center gap-3', compact ? 'py-2' : 'rounded-2xl border border-border bg-surface-solid px-4 py-3')}
+            className={cn('flex min-w-0 items-center gap-3', compact ? 'py-2.5' : 'card rounded-3xl py-3 pl-3 pr-2')}
           >
+            <span
+              aria-hidden="true"
+              className={cn(
+                'flex shrink-0 flex-col items-center justify-center rounded-2xl ring-1 ring-inset',
+                compact ? 'size-12' : 'size-14',
+                open ? 'bg-primary/12 ring-primary/30' : entry.total !== null ? 'bg-text/[0.04] ring-border' : 'bg-text/[0.03] ring-border',
+              )}
+            >
+              {entry.total !== null && entry.max !== null ? (
+                <>
+                  <span className={cn('stat-num', compact ? 'text-[22px]' : 'text-[26px]')}>{formatScore(entry.total)}</span>
+                  <span className="mt-0.5 text-[11px] font-semibold leading-none text-muted">/{formatScore(entry.max)}</span>
+                </>
+              ) : (
+                <Icon className={cn('size-5', status.tone)} />
+              )}
+            </span>
             <div className="min-w-0 flex-1">
-              <p className={cn('font-semibold break-words', compact ? 'text-[15px]' : 'text-base')}>
+              <p className={cn('font-semibold leading-snug break-words', compact ? 'text-[15px]' : 'text-base')}>
                 {compact ? `${FAMILY_LABELS[entry.family]} · ${mode}` : entry.form_title_vi}
               </p>
-              <p className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm text-muted">
+              <p className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[13px] text-muted">
                 {!compact && <span>{mode}</span>}
                 <span>{formatDate(entry.submitted_at ?? entry.started_at)}</span>
                 <span className={cn('inline-flex items-center gap-1 font-medium', status.tone)}>
@@ -57,10 +74,12 @@ export function ExamHistoryList({ entries, compact = false }: ExamHistoryListPro
                 </span>
               </p>
               {(score || entry.estimated_level_code) && (
-                <p className="mt-0.5 text-sm">
-                  {score && <span className="font-semibold">{score}</span>}
-                  {score && entry.estimated_level_code && ' · '}
-                  {entry.estimated_level_code && <span>{levelLabel(entry.estimated_level_code)} (tham khảo)</span>}
+                <p className="mt-0.5 text-[13px]">
+                  {score && <span className="sr-only">{score}</span>}
+                  {score && entry.estimated_level_code && <span className="sr-only"> · </span>}
+                  {entry.estimated_level_code && (
+                    <span className="inline-flex rounded-full bg-gold/12 px-2 py-0.5 font-semibold text-gold">{levelLabel(entry.estimated_level_code)} (tham khảo)</span>
+                  )}
                 </p>
               )}
             </div>

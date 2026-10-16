@@ -1,4 +1,5 @@
 import { useId, useRef, type RefObject } from 'react';
+import { Save } from 'lucide-react';
 import { AnimatePresence, m as motion } from 'motion/react';
 import { Button } from '@/components/ui/Button';
 import { functionalTransition } from '@/design/motion';
@@ -48,13 +49,16 @@ export function ExitSheet({ open, onClose, onExit, pendingCount, triggerRef }: P
             animate={{ y: 0, opacity: 1 }}
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}
-            className="absolute inset-x-0 bottom-0 mx-auto max-w-xl rounded-t-[28px] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3 sm:bottom-6 sm:rounded-[28px] sm:border"
+            className="absolute inset-x-0 bottom-0 mx-auto max-w-xl rounded-t-[2rem] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3 shadow-[var(--shadow-dock)] sm:bottom-6 sm:rounded-[2rem] sm:border"
           >
             <div aria-hidden="true" className="mx-auto mb-3 h-1.5 w-10 rounded-full bg-text/20" />
-            <h2 id={titleId} className="text-lg font-bold">
+            <span aria-hidden="true" className="mb-3 grid size-12 place-items-center rounded-2xl bg-success/12 text-success-text">
+              <Save className="size-6" />
+            </span>
+            <h2 id={titleId} className="font-display text-[28px] font-extrabold uppercase leading-none">
               Tiến độ đã được lưu
             </h2>
-            <div id={descriptionId} className="mt-1 space-y-1 text-[15px] text-muted">
+            <div id={descriptionId} className="mt-2 space-y-1 text-[15px] text-muted">
               <p>Lần sau bạn sẽ học tiếp từ đúng bước đang dừng.</p>
               {pendingCount > 0 && <p>Còn {pendingCount} câu đang chờ đồng bộ — sẽ được chấm khi có mạng.</p>}
             </div>

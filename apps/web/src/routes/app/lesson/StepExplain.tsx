@@ -7,13 +7,13 @@ export function StepExplain({ blocks }: { blocks: LessonBlock[] }) {
   return (
     <div className="space-y-4">
       {explains.map((text, i) => (
-        <p key={i} className="whitespace-pre-line">
+        <p key={i} className={i === 0 ? 'whitespace-pre-line text-[19px] font-medium leading-relaxed' : 'whitespace-pre-line'}>
           {text}
         </p>
       ))}
       {deep.length > 0 && (
-        <details className="group rounded-2xl border border-border bg-surface-solid px-4">
-          <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 font-semibold [&::-webkit-details-marker]:hidden">
+        <details className="card group px-5">
+          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-3 font-bold [&::-webkit-details-marker]:hidden">
             Giải thích sâu hơn
             <ChevronDown aria-hidden className="size-5 shrink-0 text-muted transition-transform group-open:rotate-180" />
           </summary>

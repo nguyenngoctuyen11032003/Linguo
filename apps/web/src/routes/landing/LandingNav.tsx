@@ -12,6 +12,9 @@ const MENU = [
   { href: '#phuong-phap', label: 'Phương pháp' },
 ];
 
+const MENU_ITEM =
+  'inline-flex min-h-14 items-center font-display text-[clamp(44px,13vw,64px)] font-extrabold uppercase leading-none text-white transition-colors hover:text-accent';
+
 export function LandingNav({ ready }: { ready: boolean }) {
   const { reduceMotion } = useMotionPrefs();
   const [open, setOpen] = useState(false);
@@ -24,18 +27,25 @@ export function LandingNav({ ready }: { ready: boolean }) {
 
   return (
     <>
-      <header className="absolute inset-x-0 top-0 z-20 pt-safe">
-        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-safe">
-          <motion.div variants={reveal('slideLeft', reduceMotion)} initial="hidden" animate={state}>
-            <Link to="/" className="inline-flex min-h-11 items-center gap-2" aria-label="Linguo — trang chủ">
-              <img src={asset('brand/logo-mark.svg')} alt="" width={34} height={34} className="size-[34px]" />
-              <span className="font-display text-[clamp(22px,6vw,30px)] uppercase leading-none tracking-wide">
-                Lin<span className="text-primary">guo</span>
-              </span>
-            </Link>
-          </motion.div>
-          <motion.div className="flex items-center gap-1" variants={reveal('slideRight', reduceMotion)} initial="hidden" animate={state}>
-            <Link to="/dang-nhap" className="hidden min-h-11 items-center rounded-full px-4 text-[15px] font-semibold min-[380px]:inline-flex">
+      {/* Floating glass pill: stays reachable while scrolling the long page. */}
+      <header className="fixed inset-x-0 top-0 z-30 px-3 pt-[max(0.75rem,env(safe-area-inset-top,0px))]">
+        <motion.div
+          className="glass mx-auto flex h-14 max-w-5xl items-center justify-between rounded-full pl-3 pr-1.5 shadow-[var(--shadow-dock)]"
+          variants={reveal('drop', reduceMotion)}
+          initial="hidden"
+          animate={state}
+        >
+          <Link to="/" className="inline-flex min-h-11 items-center gap-2" aria-label="Linguo — trang chủ">
+            <img src={asset('brand/logo-mark.svg')} alt="" width={30} height={30} className="size-[30px]" />
+            <span className="font-display text-[26px] font-extrabold uppercase leading-none tracking-wide">
+              Lin<span className="text-primary">guo</span>
+            </span>
+          </Link>
+          <div className="flex items-center gap-1">
+            <Link
+              to="/dang-nhap"
+              className="hidden min-h-11 items-center rounded-full px-4 text-[14px] font-semibold text-white/85 transition-colors hover:text-white min-[380px]:inline-flex"
+            >
               Đăng nhập
             </Link>
             <button
@@ -45,12 +55,12 @@ export function LandingNav({ ready }: { ready: boolean }) {
               aria-expanded={open}
               aria-haspopup="dialog"
               onClick={() => setOpen(true)}
-              className="inline-flex size-11 items-center justify-center rounded-full"
+              className="inline-flex size-11 items-center justify-center rounded-full bg-white/10 transition-[background-color,scale] hover:bg-white/15 active:scale-95"
             >
-              <Menu aria-hidden className="size-7" />
+              <Menu aria-hidden className="size-6" />
             </button>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </header>
 
       <AnimatePresence>
@@ -61,43 +71,50 @@ export function LandingNav({ ready }: { ready: boolean }) {
             aria-modal="true"
             aria-label="Menu"
             tabIndex={-1}
-            className="fixed inset-0 z-[99] flex flex-col bg-[linear-gradient(160deg,#0B1420_0%,#12324A_45%,#2F7FB5_100%)] px-safe pb-safe pt-safe"
+            className="fixed inset-0 z-[99] flex flex-col overflow-hidden bg-[image:var(--hero-bg)] px-safe pb-safe pt-[max(0.75rem,env(safe-area-inset-top,0px))]"
             initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
             transition={{ duration: 0.35, ease: EXPO_OUT }}
           >
-            <div className="flex h-16 items-center justify-end">
+            <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 -left-16 size-80 rounded-full bg-accent/25 blur-3xl" />
+            <div className="relative flex h-14 items-center justify-end">
               <button
                 type="button"
                 aria-label="Đóng menu"
                 onClick={() => setOpen(false)}
-                className="inline-flex size-11 items-center justify-center rounded-full"
+                className="inline-flex size-11 items-center justify-center rounded-full bg-white/10 transition-[background-color,scale] hover:bg-white/15 active:scale-95"
               >
-                <X aria-hidden className="size-7" />
+                <X aria-hidden className="size-6" />
               </button>
             </div>
-            <nav aria-label="Menu" className="flex flex-1 flex-col items-center justify-center gap-6">
-              {[...MENU.map((m) => ({ ...m, kind: 'anchor' as const })), { href: '/dang-nhap', label: 'Đăng nhập', kind: 'route' as const }, { href: '/dang-ky', label: 'Đăng ký', kind: 'route' as const }].map(
-                (item, i) => (
-                  <motion.div
-                    key={item.href}
-                    initial={{ opacity: 0, y: reduceMotion ? 0 : 24 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: EXPO_OUT, delay: reduceMotion ? 0 : 0.08 + i * 0.07 }}
-                  >
-                    {item.kind === 'anchor' ? (
-                      <a href={item.href} onClick={() => setOpen(false)} className="inline-flex min-h-12 items-center text-2xl font-semibold text-white">
-                        {item.label}
-                      </a>
-                    ) : (
-                      <Link to={item.href} onClick={() => setOpen(false)} className="inline-flex min-h-12 items-center text-2xl font-semibold text-white">
-                        {item.label}
-                      </Link>
-                    )}
-                  </motion.div>
-                ),
-              )}
+            <nav aria-label="Menu" className="relative flex flex-1 flex-col justify-center gap-1">
+              {[
+                ...MENU.map((m) => ({ ...m, kind: 'anchor' as const })),
+                { href: '/dang-nhap', label: 'Đăng nhập', kind: 'route' as const },
+                { href: '/dang-ky', label: 'Đăng ký', kind: 'route' as const },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.href}
+                  className="flex items-baseline gap-4 border-b border-white/10 py-1"
+                  initial={{ opacity: 0, y: reduceMotion ? 0 : 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: EXPO_OUT, delay: reduceMotion ? 0 : 0.08 + i * 0.07 }}
+                >
+                  <span aria-hidden="true" className="stat-num w-8 text-[18px] text-white/40">
+                    0{i + 1}
+                  </span>
+                  {item.kind === 'anchor' ? (
+                    <a href={item.href} onClick={() => setOpen(false)} className={MENU_ITEM}>
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link to={item.href} onClick={() => setOpen(false)} className={MENU_ITEM}>
+                      {item.label}
+                    </Link>
+                  )}
+                </motion.div>
+              ))}
             </nav>
           </motion.div>
         )}

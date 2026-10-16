@@ -38,7 +38,7 @@ export function GoogleButton({ next, onError }: { next: string; onError: (messag
         </svg>
         Tiếp tục với Google
       </Button>
-      <div className="flex items-center gap-3 text-sm text-muted">
+      <div className="eyebrow flex items-center gap-3">
         <span className="h-px flex-1 bg-border" />
         hoặc
         <span className="h-px flex-1 bg-border" />

@@ -15,8 +15,12 @@ export function HintReveal({ levels, shown, onReveal, disabled = false }: HintRe
       {visible.length > 0 && (
         <ol aria-label="Gợi ý" className="mb-2 space-y-1">
           {visible.map((hint, i) => (
-            <li key={i} className="rounded-2xl bg-primary/10 px-4 py-2 text-[16px] break-words">
-              {hint}
+            <li
+              key={i}
+              className="flex gap-2.5 rounded-2xl bg-gold/10 px-4 py-2.5 text-[16px] font-medium break-words ring-1 ring-gold/25 ring-inset"
+            >
+              <Lightbulb aria-hidden className="mt-1 size-4 shrink-0 text-gold" />
+              <span className="min-w-0">{hint}</span>
             </li>
           ))}
         </ol>
@@ -26,7 +30,7 @@ export function HintReveal({ levels, shown, onReveal, disabled = false }: HintRe
           type="button"
           onClick={onReveal}
           disabled={disabled}
-          className="inline-flex min-h-11 items-center gap-2 rounded-full px-3 text-[15px] font-semibold text-primary not-disabled:hover:bg-primary/10 disabled:cursor-not-allowed disabled:text-muted disabled:outline-2 disabled:-outline-offset-2 disabled:outline-dashed disabled:outline-muted"
+          className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-border bg-surface-solid px-4 text-[15px] font-bold text-gold not-disabled:hover:bg-gold/10 disabled:cursor-not-allowed disabled:text-muted disabled:outline-2 disabled:-outline-offset-2 disabled:outline-dashed disabled:outline-muted"
         >
           <Lightbulb aria-hidden className="size-4" />
           {shown === 0 ? 'Gợi ý' : 'Gợi ý thêm'} ({shown + 1}/{levels.length})

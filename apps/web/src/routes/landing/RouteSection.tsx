@@ -53,7 +53,7 @@ export function RouteSection() {
     >
       <div ref={ref} className="mx-auto max-w-3xl">
         <motion.div variants={reveal('slideLeft', reduceMotion)} initial="hidden" animate={state}>
-          <h2 id="route-title" className="font-display text-[clamp(44px,13vw,80px)] uppercase leading-[0.95] text-white">
+          <h2 id="route-title" className="font-display text-[clamp(48px,14vw,88px)] font-extrabold uppercase leading-[0.92] text-white">
             Một lộ trình
           </h2>
           <p className="mt-2 text-[clamp(18px,5vw,26px)] leading-snug text-[#C9D6E2]">

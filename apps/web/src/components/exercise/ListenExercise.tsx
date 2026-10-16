@@ -15,7 +15,7 @@ export function ListenExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & 
 
   return (
     <div className="min-w-0">
-      <p id={labelId} className="mb-3 text-[18px] font-semibold leading-snug">
+      <p id={labelId} className="mb-4 text-[19px] font-bold leading-snug">
         Nghe và chọn nghĩa đúng
       </p>
       {prompt.audio_asset_id !== null && <ContentAudio key={prompt.audio_asset_id} assetId={prompt.audio_asset_id} fallbackText={prompt.fallback_text} onFailedChange={setFailed} className="mb-3" />}
@@ -30,8 +30,8 @@ export function ListenExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & 
         />
       )}
       {(noAudio || failed) && (
-        <p className="mb-4 rounded-2xl border border-border bg-surface-solid px-4 py-3 text-[17px] break-words">
-          <span className="block text-sm font-medium text-muted">Đọc thay vì nghe</span>
+        <p className="card mb-5 rounded-[1.25rem] px-4 py-3 text-[17px] font-medium break-words">
+          <span className="eyebrow block">Đọc thay vì nghe</span>
           <span>{prompt.fallback_text}</span>
         </p>
       )}

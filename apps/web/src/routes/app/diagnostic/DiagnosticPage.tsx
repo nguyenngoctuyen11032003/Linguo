@@ -40,8 +40,8 @@ function Shell({ header, children, footer }: { header: ReactNode; children: Reac
         {children}
       </main>
       {footer && (
-        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
-          <div className="mx-auto w-full max-w-xl px-safe py-3">{footer}</div>
+        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
+          <div className="mx-auto w-full max-w-xl px-safe py-4">{footer}</div>
         </footer>
       )}
     </div>
@@ -87,17 +87,17 @@ function Intro({ mode, resumable, retakeAfter }: IntroProps) {
       </h1>
       <p className="mt-2 text-muted">Giúp Linguo chọn bài học vừa sức với bạn.</p>
       {resumable && (
-        <p className="mt-4 rounded-2xl bg-primary/10 p-3 text-[15px]">
+        <p className="mt-4 rounded-2xl bg-primary/10 p-4 text-[15px] ring-1 ring-primary/20 ring-inset">
           Bạn đang làm dở bài kiểm tra. Các câu đã trả lời được giữ lại, bạn sẽ làm tiếp từ câu đang dừng.
         </p>
       )}
       {!resumable && retakeAfter && (
-        <p className="mt-4 rounded-2xl bg-text/5 p-3 text-[15px]">Bạn có thể làm lại bài kiểm tra từ ngày {formatDate(retakeAfter)}.</p>
+        <p className="mt-4 rounded-2xl bg-text/5 p-4 text-[15px] ring-1 ring-border ring-inset">Bạn có thể làm lại bài kiểm tra từ ngày {formatDate(retakeAfter)}.</p>
       )}
-      <ul className="mt-6 space-y-4">
+      <ul className="card mt-6 divide-y divide-border px-5 py-1">
         {points.map(({ icon: Icon, text }) => (
-          <li key={text} className="flex gap-3">
-            <Icon aria-hidden className="mt-0.5 size-6 shrink-0 text-primary" />
+          <li key={text} className="flex gap-3.5 py-4 text-[16px]">
+            <Icon aria-hidden className="mt-0.5 size-6 shrink-0 text-accent" />
             <span>{text}</span>
           </li>
         ))}
@@ -134,18 +134,18 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
         animate={{ opacity: 1, y: 0 }}
         transition={functionalTransition}
       >
-        <h1 ref={headingRef} tabIndex={-1} className="text-sm font-semibold text-muted focus:outline-none">
+        <h1 ref={headingRef} tabIndex={-1} className="eyebrow focus:outline-none">
           {SKILL_LABELS[item.skill]}
           {nearEnd && <span className="font-normal"> · Sắp xong</span>}
         </h1>
         {prompt.passage && (
-          <section aria-label="Đoạn văn" className="mt-3 rounded-2xl border border-border bg-surface-solid p-4">
+          <section aria-label="Đoạn văn" className="card mt-3 rounded-[1.5rem] p-5">
             <p lang={passageLang} className="whitespace-pre-line text-[17px] leading-relaxed">
               {prompt.passage}
             </p>
           </section>
         )}
-        <p id={stemId} lang={prompt.stem_lang} className="mt-3 text-[20px] font-semibold leading-snug">
+        <p id={stemId} lang={prompt.stem_lang} className="mt-4 text-[21px] font-bold leading-snug">
           {prompt.stem}
         </p>
         <div className="mt-5">
@@ -166,9 +166,9 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
         </div>
       </motion.div>
       {/* Outside the animated block: a transformed ancestor would break `position: fixed`. */}
-      <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
+      <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
         {/* Below 360 px the buttons stack (primary on top) so "Tiếp tục" never wraps beside the ghost one. */}
-        <div className="mx-auto flex w-full max-w-xl flex-col-reverse gap-2 px-safe py-3 min-[360px]:flex-row min-[360px]:gap-3">
+        <div className="mx-auto flex w-full max-w-xl flex-col-reverse gap-2 px-safe py-4 min-[360px]:flex-row min-[360px]:gap-3">
           <Button
             variant="ghost"
             size="lg"

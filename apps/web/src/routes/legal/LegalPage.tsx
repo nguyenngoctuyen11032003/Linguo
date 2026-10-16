@@ -36,22 +36,28 @@ export function LegalPage({ kind }: { kind: keyof typeof DOCUMENTS }) {
       id="main"
       className="mx-auto max-w-2xl space-y-5 px-safe pb-[max(2rem,env(safe-area-inset-bottom,0px))] pt-[max(1.5rem,env(safe-area-inset-top,0px))]"
     >
-      <Link to="/" className="inline-flex min-h-11 items-center gap-2 font-semibold text-primary">
+      <Link
+        to="/"
+        className="glass inline-flex min-h-11 items-center gap-2 rounded-full pl-3 pr-4 text-[14px] font-semibold text-text transition-[scale] active:scale-95"
+      >
         <ArrowLeft aria-hidden className="size-4" />
         Trang chủ
       </Link>
-      <div className="space-y-2">
-        <h1 className="text-[32px] font-bold tracking-[-0.03em]">{doc.title}</h1>
+      <div className="space-y-3 pt-2">
+        <h1 className="page-title">{doc.title}</h1>
         <p className="text-[16px] leading-relaxed">{doc.intro}</p>
-        <p className="text-sm text-muted">Cập nhật lần cuối: {doc.updated}</p>
+        <p className="eyebrow">Cập nhật lần cuối: {doc.updated}</p>
       </div>
       {doc.sections.map((section, index) => (
         <SolidCard key={section.heading} role="region" aria-labelledby={`${kind}-${index}`} className="space-y-3 text-[16px] leading-relaxed">
-          <h2 id={`${kind}-${index}`} className="text-lg font-bold">
-            {section.heading}
+          <h2 id={`${kind}-${index}`} className="flex items-baseline gap-3 text-lg font-bold tracking-[-0.01em]">
+            <span aria-hidden="true" className="stat-num text-[28px] text-primary">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <span>{section.heading}</span>
           </h2>
           {section.items && (
-            <ul className="list-disc space-y-1.5 pl-5">
+            <ul className="list-disc space-y-1.5 pl-5 marker:text-primary">
               {section.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

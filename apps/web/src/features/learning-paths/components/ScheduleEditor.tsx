@@ -82,7 +82,7 @@ export function ScheduleEditor({ value, onChange, labelledBy, error }: ScheduleE
           ))}
         </div>
       )}
-      <p className="px-1 text-sm text-muted">Tổng: {formatMinutes(total)} mỗi tuần</p>
+      <p className="px-1 text-sm font-semibold text-muted">Tổng: {formatMinutes(total)} mỗi tuần</p>
       {error && (
         <p id={errorId} role="alert" className="px-1 text-sm text-error">
           {error}

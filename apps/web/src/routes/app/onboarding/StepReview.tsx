@@ -38,10 +38,10 @@ export function StepReview({ input, estimate, today, onEdit, onApplyMinutes, onA
       <SolidCard>
         <dl className="divide-y divide-border">
           {rows.map((row) => (
-            <div key={row.label} className="flex items-center justify-between gap-3 py-2">
-              <div className="min-w-0">
-                <dt className="text-sm text-muted">{row.label}</dt>
-                <dd className="font-semibold">{row.value}</dd>
+            <div key={row.label} className="flex items-center justify-between gap-3 py-2.5">
+              <div className="min-w-0 space-y-0.5">
+                <dt className="eyebrow">{row.label}</dt>
+                <dd className="text-[16px] font-bold">{row.value}</dd>
               </div>
               <button
                 type="button"

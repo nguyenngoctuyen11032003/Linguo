@@ -126,7 +126,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
               onBlur={(e) => {
                 if (!e.currentTarget.contains(e.relatedTarget as Node | null)) release(t.id, t.tone, 'focus');
               }}
-              className="pointer-events-auto flex w-full max-w-sm items-start gap-2.5 rounded-2xl border border-border bg-surface-solid py-1 pl-4 pr-1 text-[15px] shadow-[var(--shadow-card)]"
+              className="glass pointer-events-auto flex w-full max-w-sm items-start gap-2.5 rounded-[1.5rem] py-1 pl-4 pr-1 text-[15px] font-medium shadow-[var(--shadow-dock)]"
             >
               <Icon aria-hidden className={cn('mt-3 size-5 shrink-0', TONE_CLASS[t.tone])} />
               <span className="flex-1 py-2.5">{t.message}</span>

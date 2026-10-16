@@ -61,7 +61,7 @@ export function AiTextarea({
         onChange={(e: ChangeEvent<HTMLTextAreaElement>) => onValueChange(e.target.value)}
         onKeyDown={handleKeyDown}
         className={cn(
-          'block w-full min-h-12 max-h-[9.5rem] resize-none overflow-y-auto rounded-3xl border bg-surface-solid px-5 py-3 text-base leading-6 text-text placeholder:text-muted',
+          'block w-full min-h-12 max-h-[9.5rem] resize-none overflow-y-auto rounded-[1.5rem] border bg-surface-solid px-5 py-3 text-base leading-6 text-text shadow-[var(--card-sheen)] placeholder:text-muted',
           'transition-[border-color,box-shadow] duration-200 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/45',
           invalid ? 'border-error' : 'border-border',
           className,

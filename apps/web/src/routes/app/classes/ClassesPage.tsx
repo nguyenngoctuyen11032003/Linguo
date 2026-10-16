@@ -54,14 +54,14 @@ export function ClassesPage() {
       </div>
 
       {!online && (
-        <p className="rounded-2xl border border-warn/60 bg-warn/10 px-4 py-3 text-[15px]">
+        <p className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
           Bạn đang ngoại tuyến. Danh sách lớp có thể chưa mới nhất; tham gia hoặc rời lớp cần có mạng. Trang sẽ tự tải lại khi có mạng.
         </p>
       )}
 
       <SolidCard>
         <section aria-labelledby="join-class-title" className="space-y-3">
-          <h2 id="join-class-title" className="text-lg font-bold tracking-[-0.02em]">
+          <h2 id="join-class-title" className="text-xl font-extrabold tracking-[-0.02em]">
             Tham gia lớp mới
           </h2>
           {atLimit ? (
@@ -137,7 +137,7 @@ function ClassList({ api, timeZone, currentLanguage, online, onLeave }: ClassLis
   return (
     <div className="space-y-4">
       {api.status === 'error' && (
-        <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+        <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
           {api.error}{' '}
           <button type="button" onClick={api.reload} className="min-h-11 font-semibold underline">
             Thử lại

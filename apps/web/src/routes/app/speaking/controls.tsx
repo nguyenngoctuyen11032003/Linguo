@@ -18,7 +18,7 @@ export function ChoiceGroup<T extends string>({
   const labelId = useId();
   return (
     <div className="space-y-1.5">
-      <p id={labelId} className="px-1 text-sm font-medium">
+      <p id={labelId} className="eyebrow px-1">
         {label}
       </p>
       <div role="group" aria-labelledby={labelId} className="flex flex-wrap gap-2">
@@ -29,9 +29,9 @@ export function ChoiceGroup<T extends string>({
             aria-pressed={o.id === value}
             onClick={() => onChange(o.id)}
             className={cn(
-              'min-h-11 rounded-full border px-4 text-[15px] font-semibold transition-colors',
+              'min-h-11 rounded-full border-2 px-4 text-[15px] font-bold transition-[translate,box-shadow,background-color] active:translate-y-[2px]',
               FOCUS_RING,
-              o.id === value ? 'border-primary bg-primary/12 text-primary' : 'border-input-border hover:bg-text/5',
+              o.id === value ? 'border-primary bg-primary/12 text-primary shadow-[0_3px_0_var(--primary-depth)] active:shadow-[0_1px_0_var(--primary-depth)]' : 'border-border bg-surface-solid shadow-[0_3px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
             )}
           >
             {o.label}
@@ -56,14 +56,14 @@ export function SelectField({
   const id = useId();
   return (
     <div className="space-y-1.5">
-      <label htmlFor={id} className="block px-1 text-sm font-medium">
+      <label htmlFor={id} className="eyebrow block px-1">
         {label}
       </label>
       <select
         id={id}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className={cn('min-h-11 w-full rounded-2xl border border-input-border bg-surface-solid px-3 text-[15px] text-text', FOCUS_RING)}
+        className={cn('min-h-12 w-full rounded-full border border-input-border bg-surface-solid px-4 text-[15px] font-semibold text-text', FOCUS_RING)}
       >
         {children}
       </select>

@@ -295,7 +295,7 @@ export function OnboardingPage() {
   return (
     <div className="flex min-h-hero flex-col bg-bg">
       <header className="pt-safe">
-        <div className="mx-auto flex h-14 w-full max-w-xl items-center gap-2 px-safe">
+        <div className="mx-auto flex h-16 w-full max-w-xl items-center gap-2 px-safe">
           {index > 0 || paths.paths.length > 0 ? (
             <button
               type="button"
@@ -319,17 +319,22 @@ export function OnboardingPage() {
         </div>
       </header>
       <main id="main" className="mx-auto w-full max-w-xl flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3">
-        <p className="text-sm text-muted">
+        <p className="eyebrow tabular-nums">
           Bước {index + 1}/{steps.length}
         </p>
-        <h1 id="onboarding-title" ref={titleRef} tabIndex={-1} className="mt-1 text-[26px] font-extrabold leading-tight tracking-[-0.03em] focus:outline-none">
+        <h1
+          id="onboarding-title"
+          ref={titleRef}
+          tabIndex={-1}
+          className="mt-2 font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.02] focus:outline-none"
+        >
           {TITLES[step]}
         </h1>
-        <div className="mt-5">{body}</div>
+        <div className="mt-6">{body}</div>
       </main>
       {step !== 6 && (
-        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
-          <div className="mx-auto w-full max-w-xl px-safe py-3">
+        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
+          <div className="mx-auto w-full max-w-xl px-safe py-4">
             {step === 1 && allTaken ? (
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <p className="text-[15px] text-muted">Bạn đã có lộ trình cho mọi ngôn ngữ hiện có.</p>

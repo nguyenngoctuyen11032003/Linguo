@@ -43,7 +43,7 @@ export function PersonalReviewPage() {
       <Link
         to={listUrl}
         aria-label={list ? `Về danh sách ${list.name}` : 'Về danh sách'}
-        className="flex min-h-11 w-fit max-w-full items-center gap-1.5 text-[15px] font-medium text-muted hover:text-text"
+        className="flex min-h-11 w-fit max-w-full items-center gap-1.5 rounded-full bg-text/5 pl-3 pr-4 text-[14px] font-semibold text-muted transition-[background-color,color,scale] hover:bg-text/10 hover:text-text active:scale-95"
       >
         <ArrowLeft aria-hidden className="size-4 shrink-0" />
         <span className="min-w-0 truncate">{list ? list.name : 'Về danh sách'}</span>
@@ -97,11 +97,18 @@ export function PersonalReviewPage() {
     return (
       <div className="space-y-6">
         {heading}
-        <SolidCard className="flex flex-col items-center gap-4 px-6 py-10 text-center">
-          <span className="inline-flex size-14 items-center justify-center rounded-2xl bg-primary/12 text-primary">
-            <PartyPopper aria-hidden className="size-7" />
+        <SolidCard className="relative isolate flex flex-col items-center gap-4 overflow-hidden px-6 py-10 text-center">
+          <div aria-hidden="true" className="absolute -top-16 left-1/2 -z-10 size-56 -translate-x-1/2 rounded-full bg-accent/20 blur-3xl" />
+          <span className="inline-flex size-16 items-center justify-center rounded-full bg-accent text-on-accent shadow-[0_4px_0_var(--accent-depth)]">
+            <PartyPopper aria-hidden className="size-8" />
           </span>
-          <h2 ref={summaryRef} tabIndex={-1} className="text-xl font-bold tracking-[-0.02em] focus:outline-none">
+          {reviewed > 0 && (
+            <p aria-hidden="true" className="flex items-end gap-2">
+              <span className="stat-num text-gradient-fade pr-1 text-[96px]">{reviewed}</span>
+              <span className="pb-3 text-[15px] font-semibold text-muted">từ</span>
+            </p>
+          )}
+          <h2 ref={summaryRef} tabIndex={-1} className="page-title text-[clamp(2rem,9vw,2.5rem)] focus:outline-none">
             Xong phiên ôn
           </h2>
           <p role="status" className="max-w-sm text-[15px] text-muted">
@@ -138,7 +145,7 @@ export function PersonalReviewPage() {
     <div className="space-y-5">
       {heading}
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 ref={cardHeadingRef} tabIndex={-1} className="text-sm font-semibold text-muted focus:outline-none">
+        <h2 ref={cardHeadingRef} tabIndex={-1} className="eyebrow tabular-nums focus:outline-none">
           Thẻ {Math.min(position + 1, Math.max(total, 1))}/{Math.max(total, 1)}
         </h2>
         {pendingCount > 0 && (
@@ -157,9 +164,9 @@ export function PersonalReviewPage() {
         aria-valuemin={0}
         aria-valuemax={Math.max(total, 1)}
         aria-valuenow={Math.min(position, total)}
-        className="h-2 overflow-hidden rounded-full bg-text/10"
+        className="h-2.5 overflow-hidden rounded-full bg-text/10"
       >
-        <div className="h-full rounded-full bg-primary" style={{ width: `${total ? (Math.min(position, total) / total) * 100 : 0}%` }} />
+        <div className="h-full rounded-full bg-gradient-to-r from-primary to-accent transition-[width] duration-500 ease-[var(--ease-expo)]" style={{ width: `${total ? (Math.min(position, total) / total) * 100 : 0}%` }} />
       </div>
 
       <Flashcard key={cardKey} card={card} flipped={flipped} onFlip={flip} disabled={cardState === 'submitting'} />

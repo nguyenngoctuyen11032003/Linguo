@@ -154,21 +154,42 @@ function ExamRunner({ attemptId, onRetry }: { attemptId: string; onRetry(): void
   );
 }
 
-function Shell({ title, onExit, children, header }: { title: string; onExit(): void; children: ReactNode; header?: ReactNode }) {
+function Shell({
+  title,
+  onExit,
+  children,
+  header,
+  progress,
+}: {
+  title: string;
+  onExit(): void;
+  children: ReactNode;
+  header?: ReactNode;
+  /** Share of questions answered (0..1): a hairline bar along the header bottom. */
+  progress?: number;
+}) {
   return (
-    <div className="flex min-h-dvh flex-col bg-bg">
-      <header className="sticky top-0 z-30 border-b border-border bg-surface-solid/95 pt-safe backdrop-blur-md">
+    <div className="flex min-h-dvh flex-col">
+      <header className="glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
         <div className="mx-auto flex min-h-14 w-full max-w-5xl items-center gap-2 px-safe py-2">
           <button
             type="button"
             onClick={onExit}
             aria-label="Thoát bài thi"
-            className="inline-flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-text/5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+            className="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-text/5 transition-[background-color,scale] hover:bg-text/10 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
           >
             <X aria-hidden className="size-5" />
           </button>
           {header ?? <h1 className="min-w-0 flex-1 truncate text-base font-bold">{title}</h1>}
         </div>
+        {progress !== undefined && (
+          <div aria-hidden="true" className="h-1 bg-text/8">
+            <div
+              className="h-full rounded-r-full bg-gradient-to-r from-primary to-accent transition-[width] duration-500 ease-[var(--ease-expo)]"
+              style={{ width: `${Math.round(progress * 100)}%` }}
+            />
+          </div>
+        )}
       </header>
       <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-safe pt-4 pb-[calc(8rem+env(safe-area-inset-bottom,0px))]">
         {children}
@@ -233,8 +254,8 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
       <div className="min-w-0 flex-1">
         {/* Below 380 px the title line is visually dropped (still the page heading for screen readers) so the
             "Phần X · Câu n/N" position keeps the room. */}
-        <h1 className="text-base font-bold leading-tight max-[379px]:sr-only min-[380px]:truncate">{attempt.form_title_vi}</h1>
-        <p className="text-sm text-muted max-[379px]:text-balance max-[379px]:text-[13px] min-[380px]:truncate">
+        <h1 className="text-[15px] font-bold leading-tight max-[379px]:sr-only min-[380px]:truncate">{attempt.form_title_vi}</h1>
+        <p className="text-[13px] font-semibold text-muted max-[379px]:text-balance min-[380px]:truncate">
           Phần {SECTION_LABELS[current.section]} · Câu {index + 1}/{questions.length}
         </p>
       </div>
@@ -243,18 +264,18 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
   );
 
   return (
-    <Shell title={attempt.form_title_vi} onExit={onExit} header={header}>
+    <Shell title={attempt.form_title_vi} onExit={onExit} header={header} progress={(questions.length - unanswered) / Math.max(1, questions.length)}>
       <div className="space-y-4 md:grid md:grid-cols-[minmax(0,1fr)_16rem] md:items-start md:gap-8 md:space-y-0">
         <div className="min-w-0 space-y-4">
           <SaveStatus state={run.saveState} />
           {run.error && (
-            <p role="alert" className="flex items-start gap-2 rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+            <p role="alert" className="flex items-start gap-2 rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
               <AlertTriangle aria-hidden className="mt-0.5 size-4 shrink-0" />
               <span className="min-w-0">{run.error}</span>
             </p>
           )}
           {attempt.structure_warning_vi && (
-            <p role="note" className="flex items-start gap-2 rounded-2xl border border-warn/60 bg-warn/10 px-3 py-2 text-sm">
+            <p role="note" className="flex items-start gap-2 rounded-2xl bg-warn/10 px-3 py-2 text-sm ring-1 ring-warn/40 ring-inset">
               <AlertTriangle aria-hidden className="mt-0.5 size-4 shrink-0 text-gold" />
               <span className="min-w-0">{attempt.structure_warning_vi}</span>
             </p>
@@ -274,13 +295,13 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
             />
           </fieldset>
         </div>
-        <aside aria-label="Điều hướng câu hỏi" className="min-w-0 card p-4 md:sticky md:top-20">
+        <aside aria-label="Điều hướng câu hỏi" className="card min-w-0 p-4 md:sticky md:top-24">
           <QuestionNavigator questions={questions} currentId={current.question_id} onGo={go} />
         </aside>
       </div>
 
-      <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-5xl items-center gap-2 px-safe py-3">
+      <footer className="pointer-events-none fixed inset-x-0 bottom-0 z-30 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))]">
+        <div className="glass pointer-events-auto mx-auto flex w-full max-w-3xl items-center gap-2 rounded-[1.75rem] p-2 shadow-[var(--shadow-dock)]">
           <Button variant="ghost" aria-label="Câu trước" disabled={!prev || submitting} onClick={() => prev && go(prev.question_id)} className="px-3">
             <ChevronLeft aria-hidden className="size-5" />
             <span className="hidden sm:inline">Câu trước</span>

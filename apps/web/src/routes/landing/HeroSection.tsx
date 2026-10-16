@@ -40,11 +40,28 @@ export function HeroSection() {
       <LandingNav ready={ready} />
 
       <div className="mx-auto mt-auto w-full max-w-5xl px-safe pb-[max(2.5rem,env(safe-area-inset-bottom,0px))] pt-28">
-        <h1 id="hero-title" className="font-display text-[clamp(48px,14.5vw,124px)] uppercase leading-[0.95]">
+        <motion.p
+          className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/8 py-1.5 pl-1.5 pr-3.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/80 ring-1 ring-white/12 ring-inset backdrop-blur"
+          variants={reveal('fadeUp', reduceMotion, 0)}
+          initial="hidden"
+          animate={state}
+        >
+          <span className="inline-flex gap-1" aria-hidden="true">
+            <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-primary">EN</span>
+            <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-accent">KO</span>
+          </span>
+          Tiếng Anh · Tiếng Hàn
+        </motion.p>
+        <h1 id="hero-title" className="font-display text-[clamp(52px,15vw,136px)] font-extrabold uppercase leading-[0.9] tracking-[-0.01em]">
           <motion.span className="block" variants={reveal('slideLeft', reduceMotion, 0)} initial="hidden" animate={state}>
             Học thông minh
           </motion.span>
-          <motion.span className="block text-right text-primary" variants={reveal('slideRight', reduceMotion, 0.13)} initial="hidden" animate={state}>
+          <motion.span
+            className="block bg-gradient-to-r from-primary via-[#8fd0f2] to-accent bg-clip-text pb-[0.04em] text-right text-transparent"
+            variants={reveal('slideRight', reduceMotion, 0.13)}
+            initial="hidden"
+            animate={state}
+          >
             Nhớ lâu hơn
           </motion.span>
         </h1>

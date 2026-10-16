@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type FormEvent, type KeyboardEvent, type ReactNode, type Ref } from 'react';
-import { Compass, Flag, RefreshCw } from 'lucide-react';
+import { ChevronRight, Compass, Flag, MessagesSquare, RefreshCw, Sparkles } from 'lucide-react';
 import { Link } from 'react-router';
 import { ANALYZE_SENTENCE_MAX_CHARS, LANGUAGES, LEVEL_INFO, type AiRequestInput, type AiSuccess, type LevelCode } from '@linguo/shared';
 import {
@@ -131,9 +131,9 @@ function TabButton({
       onClick={onSelect}
       onKeyDown={onKeyDown}
       className={cn(
-        'min-h-11 flex-1 rounded-full px-4 text-[15px] font-semibold transition-colors',
+        'min-h-11 flex-1 rounded-full px-2 text-[14px] font-bold whitespace-nowrap transition-[background-color,color,scale] active:scale-95 min-[380px]:px-4 min-[380px]:text-[15px]',
         'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
-        selected ? 'bg-primary text-on-primary' : 'text-muted hover:bg-text/5',
+        selected ? 'bg-primary text-on-primary shadow-[0_6px_16px_-6px_var(--primary)]' : 'text-muted hover:bg-text/5 hover:text-text',
       )}
     >
       {tab.label}
@@ -155,7 +155,7 @@ function Segmented<T extends string | number>({
   const labelId = useId();
   return (
     <div className="space-y-1.5">
-      <p id={labelId} className="px-1 text-sm font-medium">
+      <p id={labelId} className="eyebrow px-1">
         {label}
       </p>
       <div role="group" aria-labelledby={labelId} className="flex flex-wrap gap-2">
@@ -166,9 +166,11 @@ function Segmented<T extends string | number>({
             aria-pressed={o.id === value}
             onClick={() => onChange(o.id)}
             className={cn(
-              'min-h-11 min-w-11 rounded-full border px-4 text-[15px] font-semibold transition-colors',
-              'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
-              o.id === value ? 'border-primary bg-primary/12 text-primary' : 'border-border hover:bg-text/5',
+              'min-h-11 min-w-11 rounded-full border-2 px-4 text-[15px] font-bold transition-[translate,box-shadow,background-color]',
+              'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 active:translate-y-[2px]',
+              o.id === value
+                ? 'border-primary bg-primary/12 text-primary shadow-[0_3px_0_var(--primary-depth)] active:shadow-[0_1px_0_var(--primary-depth)]'
+                : 'border-border bg-surface-solid shadow-[0_3px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
             )}
           >
             {o.label}
@@ -204,20 +206,29 @@ function ResultCard({
   );
   if (latest) {
     return (
-      <article className="space-y-3 card p-4">
-        <header className="space-y-1">
-          <h3 ref={headingRef} tabIndex={-1} lang={titleLang} className="scroll-mt-24 break-words font-semibold focus:outline-none">
-            {entry.title}
-          </h3>
-          <p className="text-sm text-muted">{AI_LABEL}</p>
+      <article className="card space-y-3 rounded-tl-lg p-4">
+        <header className="flex items-start gap-3">
+          <span
+            aria-hidden="true"
+            className="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-strong text-on-primary shadow-[0_6px_16px_-6px_var(--primary)]"
+          >
+            <Sparkles className="size-4" />
+          </span>
+          <div className="min-w-0 flex-1 space-y-0.5">
+            <h3 ref={headingRef} tabIndex={-1} lang={titleLang} className="scroll-mt-24 break-words text-[17px] font-bold leading-snug focus:outline-none">
+              {entry.title}
+            </h3>
+            <p className="text-[13px] text-muted">{AI_LABEL}</p>
+          </div>
         </header>
         {content}
       </article>
     );
   }
   return (
-    <details className="group card px-4 py-3">
-      <summary lang={titleLang} className="flex min-h-11 cursor-pointer items-center break-words font-semibold">
+    <details className="group card rounded-3xl px-4 py-2">
+      <summary lang={titleLang} className="flex min-h-11 cursor-pointer items-center gap-2 break-words font-semibold">
+        <Sparkles aria-hidden className="size-4 shrink-0 text-primary" />
         {entry.title}
       </summary>
       <div className="pt-2">
@@ -326,6 +337,7 @@ function SubmitButton({ quotaGate, busy, children }: { quotaGate: QuotaGate; bus
       <Button
         type="submit"
         variant="accent"
+        block
         loading={busy}
         disabled={quotaGate.exhausted}
         aria-describedby={quotaGate.hint ? hintId : undefined}
@@ -378,8 +390,8 @@ function ExplainTab({ language, level, notice, quota, onReport }: PanelProps) {
         onReport={onReport}
         loadingLabel="Đang soạn giải thích…"
         form={
-          <form onSubmit={submit} noValidate className="space-y-3">
-            <label htmlFor={inputId} className="block px-1 text-sm font-medium">
+          <form onSubmit={submit} noValidate className="card space-y-3 p-4">
+            <label htmlFor={inputId} className="eyebrow block px-1">
               Bạn muốn hiểu điều gì?
             </label>
             <AiTextarea
@@ -453,11 +465,11 @@ function PracticeTab({ language, level, notice, quota, onReport }: PanelProps) {
         onReport={onReport}
         loadingLabel="Đang soạn bài luyện…"
         form={
-          <form onSubmit={submit} noValidate className="space-y-4">
+          <form onSubmit={submit} noValidate className="card space-y-4 p-4">
             <Segmented label="Kỹ năng" options={SKILLS} value={skill} onChange={setSkill} />
             <Segmented label="Số câu" options={COUNTS} value={count} onChange={setCount} />
             <div className="space-y-1.5">
-              <label htmlFor={focusId} className="block px-1 text-sm font-medium">
+              <label htmlFor={focusId} className="eyebrow block px-1">
                 Chủ đề (không bắt buộc)
               </label>
               <Input
@@ -516,8 +528,8 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
         loadingLabel="Đang phân tích câu…"
         titleLang={language}
         form={
-          <form onSubmit={submit} noValidate className="space-y-3">
-            <label htmlFor={inputId} className="block px-1 text-sm font-medium">
+          <form onSubmit={submit} noValidate className="card space-y-3 p-4">
+            <label htmlFor={inputId} className="eyebrow block px-1">
               Câu bạn muốn phân tích
             </label>
             <AiTextarea
@@ -617,7 +629,7 @@ export function TutorPage() {
     };
     content = (
       <div className="space-y-5">
-        <div role="tablist" aria-label="Chế độ gia sư" className="glass flex gap-1 rounded-full p-1">
+        <div role="tablist" aria-label="Chế độ gia sư" className="glass flex gap-1 rounded-full p-1 shadow-[var(--shadow-card)]">
           {TABS.map((t) => (
             <TabButton
               key={t.id}
@@ -650,15 +662,19 @@ export function TutorPage() {
           <AiQuotaChip quota={quota.quota} />
         </div>
         {path && (
-          <p className="text-[15px] text-muted">
+          <p className="text-[14px] text-muted">
             {LANGUAGES[path.language].nameVi} · trình độ {levelLabel}. Câu trả lời do AI tạo, có thể chưa chính xác.
           </p>
         )}
         <Link
           to="/app/dong-vai"
-          className="inline-flex min-h-11 items-center text-[15px] font-semibold text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+          className="group mt-1 flex min-h-14 items-center gap-3 rounded-full bg-accent/10 py-1.5 pl-1.5 pr-4 text-[15px] font-bold ring-1 ring-accent/25 ring-inset transition-[background-color,scale] hover:bg-accent/15 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
         >
-          Đóng vai hội thoại với AI
+          <span aria-hidden="true" className="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-accent text-on-accent">
+            <MessagesSquare className="size-5" />
+          </span>
+          <span className="min-w-0 flex-1">Đóng vai hội thoại với AI</span>
+          <ChevronRight aria-hidden className="size-5 shrink-0 text-accent-text transition-transform group-hover:translate-x-0.5" />
         </Link>
       </header>
       {content}

@@ -1,6 +1,7 @@
 import { Dumbbell } from 'lucide-react';
 import type { ExamResult } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
+import { cn } from '@/lib/cn';
 import { SECTION_LABELS, questionTypeLabel } from './labels';
 
 export interface QuestionTypeBreakdownProps {
@@ -28,25 +29,34 @@ export function QuestionTypeBreakdown({ result, onDrill }: QuestionTypeBreakdown
         const graded = row.total > 0;
         const percent = graded ? Math.round((row.correct / row.total) * 100) : 0;
         return (
-          <li key={row.question_type} className="min-w-0 rounded-2xl border border-border bg-surface-solid px-4 py-3">
-            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+          <li key={row.question_type} className="card min-w-0 rounded-3xl px-4 py-3.5">
+            <div className="flex items-start gap-3">
+              <span
+                aria-hidden="true"
+                className={cn('stat-num w-14 shrink-0 pt-1 text-[34px]', !graded ? 'text-muted' : percent < 50 ? 'text-error-text' : 'text-success-text')}
+              >
+                {graded ? percent : '—'}
+                {graded && <span className="text-[16px]">%</span>}
+              </span>
               <div className="min-w-0 flex-1">
-                <h3 className="font-semibold break-words">{label}</h3>
-                <p className="text-sm text-muted">
+                <h3 className="font-semibold leading-snug break-words">{label}</h3>
+                <p className="mt-0.5 text-[13px] text-muted">
                   {SECTION_LABELS[row.section]} ·{' '}
                   {graded ? `${row.correct}/${row.total} câu đúng (${percent}%)` : 'Không chấm tự động'}
                 </p>
+                {graded && (
+                  <div aria-hidden="true" className="mt-2 h-1.5 overflow-hidden rounded-full bg-text/8">
+                    <div className={cn('h-full rounded-full', percent < 50 ? 'bg-error' : 'bg-success')} style={{ width: `${percent}%` }} />
+                  </div>
+                )}
               </div>
+            </div>
+            <div className="mt-3 flex justify-end">
               <Button variant="ghost" aria-label={`Luyện dạng này: ${label}`} onClick={() => onDrill(row.question_type)}>
                 <Dumbbell aria-hidden className="size-4" />
                 Luyện dạng này
               </Button>
             </div>
-            {graded && (
-              <div aria-hidden="true" className="mt-2 h-1.5 overflow-hidden rounded-full bg-text/10">
-                <div className={percent < 50 ? 'h-full rounded-full bg-error' : 'h-full rounded-full bg-success'} style={{ width: `${percent}%` }} />
-              </div>
-            )}
           </li>
         );
       })}

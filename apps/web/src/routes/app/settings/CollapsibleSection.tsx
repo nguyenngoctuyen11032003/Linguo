@@ -31,13 +31,13 @@ export function CollapsibleSection({ id, headingId, title, contentClassName, chi
       <SolidCard className="p-0">
         <details open={open} onToggle={(event) => setSectionOpen(id, event.currentTarget.open)} className="group">
           <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-3 rounded-3xl px-5 py-3 [&::-webkit-details-marker]:hidden">
-            <h2 id={headingId} tabIndex={-1} className="text-lg font-bold focus:outline-none">
+            <h2 id={headingId} tabIndex={-1} className="text-lg font-extrabold tracking-[-0.02em] focus:outline-none">
               {title}
             </h2>
             <span aria-hidden="true" className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-muted">
-              <span className="group-open:hidden">Mở</span>
-              <span className="hidden group-open:inline">Thu gọn</span>
-              <ChevronDown className="size-5 transition-transform group-open:rotate-180" />
+              <span className="sr-only group-open:hidden">Mở</span>
+              <span className="hidden">Thu gọn</span>
+              <span className="inline-flex size-9 items-center justify-center rounded-full bg-text/6"><ChevronDown className="size-5 transition-transform group-open:rotate-180" /></span>
             </span>
           </summary>
           <div className={cn('px-5 pb-5', contentClassName)}>{children}</div>

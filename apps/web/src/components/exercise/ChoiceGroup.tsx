@@ -65,7 +65,7 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
   };
 
   return (
-    <div ref={groupRef} role="radiogroup" aria-labelledby={labelledBy} onKeyDown={onKeyDown} className="grid min-w-0 gap-2">
+    <div ref={groupRef} role="radiogroup" aria-labelledby={labelledBy} onKeyDown={onKeyDown} className="grid min-w-0 gap-3 pb-1">
       {options.map((option, i) => {
         const checked = option.id === selectedId;
         const chosen = marks?.chosenId === option.id;
@@ -83,23 +83,29 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
             disabled={disabled}
             onClick={() => onSelect(option.id)}
             className={cn(
-              'flex min-h-14 w-full min-w-0 items-center gap-3 rounded-2xl border px-4 py-3 text-left transition-colors',
+              'flex min-h-16 w-full min-w-0 items-center gap-3.5 rounded-[1.25rem] border-2 px-4 py-3 text-left',
+              'transition-[translate,box-shadow,background-color,border-color] duration-150 not-disabled:active:translate-y-[3px]',
               'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 disabled:cursor-default',
-              checked ? 'border-primary bg-primary/10' : 'border-border bg-surface-solid not-disabled:hover:bg-text/5',
-              correct && 'border-success',
+              checked
+                ? 'border-primary bg-primary/10 shadow-[0_4px_0_var(--primary)] not-disabled:active:shadow-[0_1px_0_var(--primary)]'
+                : 'border-border bg-surface-solid shadow-[0_4px_0_var(--border)] not-disabled:hover:bg-text/[0.03] not-disabled:active:shadow-[0_1px_0_var(--border)]',
+              chosen && !correct && 'border-error bg-error/10 shadow-[0_4px_0_var(--error)]',
+              correct && 'border-success bg-success/10 shadow-[0_4px_0_var(--success)]',
             )}
           >
             <span
               aria-hidden="true"
               className={cn(
-                'inline-flex size-7 shrink-0 items-center justify-center rounded-full border text-sm font-semibold',
-                checked ? 'border-primary bg-primary text-on-primary' : 'border-input-border text-muted',
+                'inline-flex size-8 shrink-0 items-center justify-center rounded-[0.65rem] border-2 text-sm font-bold tabular-nums',
+                checked ? 'border-primary bg-primary text-on-primary' : 'border-border text-muted',
+                chosen && !correct && 'border-error bg-error text-bg',
+                correct && 'border-success bg-success text-bg',
               )}
             >
-              {i + 1}
+              {correct ? <Check className="size-4" strokeWidth={3} /> : i + 1}
             </span>
             <span className="min-w-0 flex-1 break-words">
-              <span lang={option.lang} className="block text-[17px] font-medium">
+              <span lang={option.lang} className="block text-[17px] font-semibold leading-snug">
                 {option.text}
               </span>
               {(chosen || correct) && (

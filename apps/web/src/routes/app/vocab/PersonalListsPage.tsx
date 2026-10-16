@@ -7,6 +7,7 @@ import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { cn } from '@/lib/cn';
 import { useToast } from '@/components/ui/Toast';
 import { usePersonalLists } from '@/features/personal-vocab/usePersonalLists';
 import { ListFormDialog } from './ListFormDialog';
@@ -49,7 +50,7 @@ export function PersonalListsPage() {
     content = (
       <>
         {api.status === 'error' && (
-          <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+          <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
             {api.error}{' '}
             <button type="button" onClick={api.reload} className="-my-2 inline-flex min-h-11 min-w-11 items-center justify-center px-1 font-semibold underline">
               Thử lại
@@ -57,22 +58,35 @@ export function PersonalListsPage() {
           </p>
         )}
         <section aria-labelledby={listsHeadingId} className="space-y-3">
-          <h2 id={listsHeadingId} className="text-lg font-semibold tracking-[-0.01em]">
+          <h2 id={listsHeadingId} className="eyebrow px-1">
             Danh sách của tôi
           </h2>
           <ul className="grid gap-3 sm:grid-cols-2">
             {api.lists.map((list) => (
               <li key={list.id} className="min-w-0">
                 <SolidCard className="p-0">
-                  <Link to={`/app/tu-vung-cua-toi/${list.id}`} className="flex min-h-20 items-center gap-3 rounded-3xl p-5 hover:bg-text/5">
+                  <Link
+                    to={`/app/tu-vung-cua-toi/${list.id}`}
+                    className="group flex min-h-20 items-center gap-4 rounded-[1.75rem] p-4 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className={cn(
+                        'flex size-16 shrink-0 flex-col items-center justify-center rounded-2xl ring-1 ring-inset',
+                        list.due_count > 0 ? 'bg-accent/12 text-accent-text ring-accent/30' : 'bg-text/[0.04] ring-border',
+                      )}
+                    >
+                      <span className="stat-num text-[30px]">{list.due_count > 0 ? list.due_count : list.word_count}</span>
+                      <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.06em] text-muted">{list.due_count > 0 ? 'cần ôn' : 'từ'}</span>
+                    </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block break-words text-[17px] font-semibold">{list.name}</span>
-                      <span className="mt-0.5 block text-sm text-muted">
+                      <span className="block break-words text-[17px] font-bold leading-snug tracking-[-0.01em]">{list.name}</span>
+                      <span className="mt-0.5 block text-[13px] text-muted">
                         {LANGUAGES[list.language_code].nameVi} · {list.word_count} từ
                         {list.due_count > 0 ? ` · ${list.due_count} từ cần ôn` : list.word_count > 0 ? ' · hôm nay đã ôn xong' : ''}
                       </span>
                     </span>
-                    <ChevronRight aria-hidden className="size-5 shrink-0 text-muted" />
+                    <ChevronRight aria-hidden className="size-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5" />
                   </Link>
                 </SolidCard>
               </li>

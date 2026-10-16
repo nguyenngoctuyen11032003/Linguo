@@ -41,6 +41,13 @@ const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof
   { value: 'system', label: 'Theo hệ thống', icon: Monitor },
 ];
 
+/** Mini preview of each theme in the picker. */
+const THEME_SWATCH: Record<ThemePreference, string> = {
+  light: 'bg-[#f3f1ec] text-[#0d1622]',
+  dark: 'bg-[#070b12] text-white',
+  system: 'bg-[linear-gradient(135deg,#f3f1ec_50%,#070b12_50%)] text-[#59646f]',
+};
+
 /** "3 câu trả lời", "2 lượt chấm thẻ ôn tập" or both: what still waits in the offline outboxes. */
 function pendingSummary(answers: number, grades: number): string {
   const parts: string[] = [];
@@ -217,9 +224,19 @@ export function SettingsPage() {
           {status === 'error' && <ErrorState title="Không tải được hồ sơ" onRetry={reload} />}
           {status === 'ready' && (
             <form ref={profileFormRef} noValidate onSubmit={saveProfile} className="space-y-4">
-              <p className="text-sm text-muted">
-                Email: <span className="text-text">{user?.email}</span>
-              </p>
+              <div className="flex items-center gap-3 rounded-2xl bg-text/[0.04] p-3 ring-1 ring-border ring-inset">
+                <span
+                  aria-hidden="true"
+                  className="inline-flex size-12 shrink-0 rounded-full bg-[conic-gradient(from_200deg,var(--primary),var(--accent),var(--primary))] p-[2px]"
+                >
+                  <span className="stat-num inline-flex size-full items-center justify-center rounded-full bg-surface-solid text-[24px]">
+                    {(displayName || user?.email || '?').trim().charAt(0).toUpperCase()}
+                  </span>
+                </span>
+                <p className="min-w-0 truncate text-sm text-muted">
+                  Email: <span className="text-text">{user?.email}</span>
+                </p>
+              </div>
               <FormField label="Tên hiển thị" error={errors.displayName}>
                 {({ invalid, ...a11y }) => (
                   <Input {...a11y} invalid={invalid} autoComplete="nickname" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />
@@ -278,13 +295,19 @@ export function SettingsPage() {
                   <label
                     htmlFor={`theme-${value}`}
                     className={cn(
-                      'flex min-h-16 cursor-pointer flex-col items-center justify-center gap-1 rounded-2xl border px-2 py-2 text-center text-sm font-medium',
+                      'flex min-h-16 cursor-pointer flex-col items-center justify-center gap-2 rounded-2xl border p-2 pb-2.5 text-center text-sm font-semibold',
                       'border-border hover:bg-text/5 peer-checked:border-primary peer-checked:bg-primary/12 peer-checked:text-primary',
                       'peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-(--focus-ring)',
                     )}
                   >
-                    <Icon aria-hidden className="size-5" />
-                    {label}
+                    <span aria-hidden="true" className={cn('relative block h-12 w-full overflow-hidden rounded-xl ring-1 ring-border ring-inset', THEME_SWATCH[value])}>
+                      <span className="absolute inset-x-2 top-2 h-2 rounded-full bg-current opacity-25" />
+                      <span className="absolute bottom-2 left-2 h-3 w-8 rounded-full bg-[#f37d25]" />
+                    </span>
+                    <span className="inline-flex items-center gap-1">
+                      <Icon aria-hidden className="size-4" />
+                      {label}
+                    </span>
                   </label>
                 </div>
               ))}

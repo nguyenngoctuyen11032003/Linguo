@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import { m as motion, useInView } from 'motion/react';
 import { BrainCircuit, CalendarClock, MessageSquareText } from 'lucide-react';
-import { GlassCard } from '@/components/ui/GlassCard';
 import { reveal, VIEWPORT_ONCE } from '@/design/motion';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
@@ -22,24 +21,33 @@ export function MethodSection() {
       <div ref={ref} className="mx-auto max-w-5xl">
         <motion.h2
           id="method-title"
-          className="max-w-2xl text-[clamp(30px,8vw,52px)] font-bold leading-[1.08] tracking-[-0.03em]"
+          className="max-w-2xl font-display text-[clamp(40px,12vw,72px)] font-extrabold uppercase leading-[0.95]"
           variants={reveal('speed', reduceMotion)}
           initial="hidden"
           animate={state}
         >
-          Phương pháp có <em className="font-serif font-normal text-primary">cơ sở nghiên cứu</em>
+          Phương pháp có <em className="font-serif text-[0.82em] font-normal normal-case text-primary">cơ sở nghiên cứu</em>
         </motion.h2>
-        <ul className="mt-10 grid gap-4 md:grid-cols-3">
+        <ol className="mt-10 grid gap-3 md:grid-cols-3">
           {METHODS.map(({ icon: Icon, title, text }, i) => (
-            <motion.li key={title} variants={reveal('blurUp', reduceMotion, 0.1 + i * 0.1)} initial="hidden" animate={state}>
-              <GlassCard className="h-full space-y-3 p-6">
-                <Icon aria-hidden className="size-8 text-primary" />
-                <h3 className="text-lg font-bold">{title}</h3>
-                <p className="text-[15px] leading-relaxed text-muted">{text}</p>
-              </GlassCard>
+            <motion.li
+              key={title}
+              className="card relative isolate overflow-hidden p-5"
+              variants={reveal('blurUp', reduceMotion, 0.1 + i * 0.1)}
+              initial="hidden"
+              animate={state}
+            >
+              <span aria-hidden="true" className="stat-num text-gradient-fade absolute -right-1 -top-2 -z-10 text-[112px] opacity-40">
+                0{i + 1}
+              </span>
+              <span className="inline-flex size-11 items-center justify-center rounded-full bg-primary/15 text-primary ring-1 ring-primary/25 ring-inset">
+                <Icon aria-hidden className="size-5" />
+              </span>
+              <h3 className="mt-6 text-[19px] font-bold tracking-[-0.02em]">{title}</h3>
+              <p className="mt-1.5 text-[15px] leading-relaxed text-muted">{text}</p>
             </motion.li>
           ))}
-        </ul>
+        </ol>
         <p className="mt-8 max-w-2xl border-l-2 border-gold pl-4 text-[15px] leading-relaxed text-muted">
           Linguo không hứa “thành thạo siêu tốc”. Mọi dự báo tiến độ là ước lượng từ kết quả học thật của bạn và được cập nhật
           liên tục.

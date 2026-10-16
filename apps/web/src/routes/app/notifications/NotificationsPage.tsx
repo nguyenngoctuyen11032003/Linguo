@@ -20,8 +20,18 @@ const KIND_META: Record<NotificationKind, { icon: LucideIcon; label: string }> =
 /** action_url is always an internal /app/ path (contract); anything else falls back to Home. */
 const safeTarget = (url: string) => (url.startsWith('/app/') && !url.startsWith('//') ? url : '/app');
 
-function Title() {
-  return <h1 className="page-title">Thông báo</h1>;
+function Title({ unread = 0 }: { unread?: number }) {
+  return (
+    <div className="flex items-end justify-between gap-3">
+      <h1 className="page-title">Thông báo</h1>
+      {unread > 0 && (
+        <p aria-hidden="true" className="flex shrink-0 flex-col items-end pb-1">
+          <span className="stat-num text-[40px] text-primary">{unread}</span>
+          <span className="eyebrow mt-1">chưa đọc</span>
+        </p>
+      )}
+    </div>
+  );
 }
 
 function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (item: AppNotification) => void }) {
@@ -35,15 +45,15 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
         data-notification-id={item.id}
         onClick={() => onOpen(item)}
         className={cn(
-          'flex min-h-11 w-full items-start gap-3 rounded-2xl px-4 py-3 text-left transition-colors hover:bg-text/5',
+          'flex min-h-11 w-full items-start gap-3 rounded-[1.25rem] px-3 py-3 text-left transition-[background-color,scale] hover:bg-text/5 active:scale-[0.99]',
           'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
           unread && 'bg-primary/8',
         )}
       >
         <span
           className={cn(
-            'relative mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-xl',
-            unread ? 'bg-primary/15 text-primary' : 'bg-text/8 text-muted',
+            'relative mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-full',
+            unread ? 'bg-gradient-to-br from-primary to-primary-strong text-on-primary shadow-[0_6px_16px_-6px_var(--primary)]' : 'bg-text/8 text-muted',
           )}
         >
           <Icon aria-hidden className="size-5" />
@@ -52,7 +62,7 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
             <span
               data-testid="unread-dot"
               aria-hidden="true"
-              className="absolute -right-1 -top-1 size-3 rounded-full bg-primary ring-2 ring-surface-solid"
+              className="absolute -right-0.5 -top-0.5 size-3 rounded-full bg-accent ring-2 ring-surface-solid"
             />
           )}
         </span>
@@ -61,8 +71,8 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
             {item.title_vi}
             {unread && <span className="sr-only"> — Chưa đọc</span>}
           </span>
-          <span className="mt-0.5 block text-sm text-muted">{item.body_vi}</span>
-          <span className="mt-1 block text-xs text-muted">
+          <span className="mt-0.5 block text-[13px] leading-snug text-muted">{item.body_vi}</span>
+          <span className="mt-1 block text-xs font-semibold text-muted">
             <span className="sr-only">{meta.label} · </span>
             <time dateTime={item.created_at}>{formatRelativeTimeVi(item.created_at)}</time>
           </span>
@@ -149,8 +159,8 @@ export function NotificationsPage() {
 
   return (
     <div className="space-y-6">
-      <Title />
-      <ul ref={listRef} aria-label="Danh sách thông báo" className="space-y-1 card p-2">
+      <Title unread={items.filter((i) => !i.read_at).length} />
+      <ul ref={listRef} aria-label="Danh sách thông báo" className="card space-y-1 p-2">
         {items.map((item) => (
           <NotificationRow key={item.id} item={item} onOpen={open} />
         ))}

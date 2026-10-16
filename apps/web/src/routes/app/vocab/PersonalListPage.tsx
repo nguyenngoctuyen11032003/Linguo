@@ -7,6 +7,7 @@ import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
+import { cn } from '@/lib/cn';
 import { usePersonalLists } from '@/features/personal-vocab/usePersonalLists';
 import { usePersonalWords } from '@/features/personal-vocab/usePersonalWords';
 import { ConfirmDeleteDialog } from './ConfirmDeleteDialog';
@@ -58,7 +59,10 @@ export function PersonalListPage() {
   }, [removing]);
 
   const back = (
-    <Link to="/app/tu-vung-cua-toi" className="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-medium text-muted hover:text-text">
+    <Link
+      to="/app/tu-vung-cua-toi"
+      className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-text/5 pl-3 pr-4 text-[14px] font-semibold text-muted transition-[background-color,color,scale] hover:bg-text/10 hover:text-text active:scale-95"
+    >
       <ArrowLeft aria-hidden className="size-4" />
       Từ vựng của tôi
     </Link>
@@ -120,6 +124,16 @@ export function PersonalListPage() {
         <p className="text-[15px] text-muted">
           {language.nameVi} · {wordCount} từ{dueCount > 0 ? ` · ${dueCount} từ cần ôn hôm nay` : ''}
         </p>
+        <div aria-hidden="true" className="flex gap-6 pt-3">
+          <span>
+            <span className="eyebrow block">Từ</span>
+            <span className="stat-num mt-1.5 block text-[48px]">{wordCount}</span>
+          </span>
+          <span>
+            <span className="eyebrow block">Cần ôn</span>
+            <span className={cn('stat-num mt-1.5 block text-[48px]', dueCount > 0 ? 'text-accent-text' : 'text-muted')}>{dueCount}</span>
+          </span>
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-2">
@@ -161,7 +175,7 @@ export function PersonalListPage() {
       )}
 
       {words.status === 'ready' && items.length > 0 && dueCount === 0 && (
-        <p role="status" className="rounded-2xl bg-primary/10 px-4 py-3 text-[15px]">
+        <p role="status" className="rounded-2xl bg-success/10 px-4 py-3 text-[15px] ring-1 ring-success/25 ring-inset">
           Hôm nay bạn đã ôn xong danh sách này. Quay lại vào lúc khác nhé, Linguo sẽ nhắc đúng lúc.
         </p>
       )}
@@ -172,7 +186,7 @@ export function PersonalListPage() {
             <caption className="sr-only">
               Danh sách {items.length} từ của “{list.name}”
             </caption>
-            <thead className="bg-text/5 text-sm">
+            <thead className="bg-text/[0.04] text-xs uppercase tracking-[0.06em] text-muted">
               <tr>
                 <th scope="col" className="px-3 py-3 font-semibold">
                   Từ

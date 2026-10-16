@@ -7,7 +7,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export const inputClasses = (invalid = false) =>
   cn(
-    'block w-full min-h-12 rounded-full border bg-surface-solid px-5 text-base text-text placeholder:text-muted',
+    'block w-full min-h-13 rounded-2xl border bg-surface-solid px-4 text-base font-medium text-text placeholder:font-normal placeholder:text-muted',
     'transition-[border-color,box-shadow] duration-200 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/45',
     invalid ? 'border-error' : 'border-input-border',
   );

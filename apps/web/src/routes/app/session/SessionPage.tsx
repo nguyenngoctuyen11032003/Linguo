@@ -269,9 +269,9 @@ function PathSession() {
       <div className="space-y-5">
         <SolidCard className="space-y-4">
           <section aria-labelledby="session-plan-title" className="space-y-4">
-            <div className="space-y-1">
-              <p className="text-sm text-muted">Phiên {session.plan.minutes} phút</p>
-              <h2 id="session-plan-title" className="text-xl font-bold tracking-[-0.02em] break-words">
+            <div className="space-y-1.5">
+              <p className="eyebrow">Phiên {session.plan.minutes} phút</p>
+              <h2 id="session-plan-title" className="text-[22px] font-extrabold leading-tight tracking-[-0.02em] break-words">
                 {session.plan.focus_vi}
               </h2>
               {session.plan.backlog_mode && (
@@ -281,9 +281,17 @@ function PathSession() {
                 </p>
               )}
             </div>
-            <div className="space-y-1.5">
-              <p className="text-sm font-medium">
+            <div className="space-y-2">
+              <p className="sr-only">
                 Tiến độ: {finished}/{total} hoạt động
+              </p>
+              <p aria-hidden="true" className="flex items-end gap-2">
+                <span className="stat-num text-[56px] text-gradient-fade pr-1">{finished}</span>
+                <span className="pb-1 text-[15px] font-semibold leading-tight text-muted">
+                  /{total}
+                  <br />
+                  hoạt động
+                </span>
               </p>
               <div
                 role="progressbar"
@@ -292,9 +300,12 @@ function PathSession() {
                 aria-valuemax={total}
                 aria-valuenow={finished}
                 aria-valuetext={`${finished}/${total} hoạt động`}
-                className="h-2 overflow-hidden rounded-full bg-text/10"
+                className="h-3 overflow-hidden rounded-full bg-text/10"
               >
-                <div className="h-full rounded-full bg-primary transition-[width]" style={{ width: `${total ? (finished / total) * 100 : 0}%` }} />
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-primary to-accent transition-[width] duration-500 ease-[var(--ease-expo)]"
+                  style={{ width: `${total ? (finished / total) * 100 : 0}%` }}
+                />
               </div>
             </div>
             {pending.length > 0 ? (
@@ -332,13 +343,13 @@ function PathSession() {
         )}
 
         <section ref={activitiesSection} aria-labelledby="session-activities-title" className="space-y-3">
-          <h2 id="session-activities-title" className="text-lg font-bold">
+          <h2 id="session-activities-title" className="eyebrow">
             Các hoạt động
           </h2>
           {undo && (
             <div
               data-testid="undo-bar"
-              className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-surface-solid p-3 pl-4"
+              className="glass flex items-center justify-between gap-3 rounded-2xl p-3 pl-4 shadow-[var(--shadow-dock)]"
               onMouseEnter={() => setUndoHeld((h) => ({ ...h, hover: true }))}
               onMouseLeave={() => setUndoHeld((h) => ({ ...h, hover: false }))}
               onFocus={() => setUndoHeld((h) => ({ ...h, focus: true }))}
@@ -389,7 +400,7 @@ function PathSession() {
       <SolidCard className="space-y-4">
         <section aria-labelledby="session-new-title" className="space-y-4">
           <div className="space-y-1">
-            <h2 id="session-new-title" className="text-xl font-bold tracking-[-0.02em]">
+            <h2 id="session-new-title" className="text-[22px] font-extrabold leading-tight tracking-[-0.02em]">
               {planningAgain ? 'Thêm một phiên nữa?' : 'Lập kế hoạch hôm nay'}
             </h2>
             {goal > 0 ? (

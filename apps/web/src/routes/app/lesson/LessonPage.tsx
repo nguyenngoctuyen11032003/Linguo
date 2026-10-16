@@ -88,19 +88,19 @@ export function LessonPage() {
 
   const header = (
     <header className="pt-safe">
-      <div className="mx-auto flex min-h-14 w-full max-w-xl items-center gap-3 px-safe py-2">
+      <div className="mx-auto flex min-h-16 w-full max-w-xl items-center gap-2 px-safe py-2">
         <button
           ref={closeRef}
           type="button"
           onClick={() => (run.pendingCount > 0 ? setExitOpen(true) : leave())}
           aria-label="Thoát bài học"
-          className="inline-flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-text/5"
+          className="-ml-2 inline-flex size-11 shrink-0 items-center justify-center rounded-full text-muted transition-colors hover:bg-text/5 hover:text-text"
         >
-          <X aria-hidden className="size-5" />
+          <X aria-hidden className="size-6" strokeWidth={2.5} />
         </button>
-        <div className="min-w-0 flex-1 space-y-1">
+        <div className="min-w-0 flex-1 space-y-1.5">
           {status === 'ready' && lesson && (
-            <h1 className="truncate text-base font-bold leading-tight" title={lesson.title.vi}>
+            <h1 className="truncate text-[13px] font-semibold leading-tight text-muted" title={lesson.title.vi}>
               {lesson.title.vi}
             </h1>
           )}
@@ -276,7 +276,10 @@ export function LessonPage() {
         <div className="flex flex-wrap items-center gap-2">
           {lesson.is_demo && <DemoBadge />}
           {step.kind === 'exercise' && step.recheck && (
-            <span className="rounded-full bg-warn/15 px-3 py-1 text-sm font-semibold">Làm lại câu sai</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-warn/15 px-3 py-1 text-sm font-bold ring-1 ring-warn/40 ring-inset">
+              <RotateCcw aria-hidden className="size-3.5" />
+              Làm lại câu sai
+            </span>
           )}
         </div>
         {step.kind === 'exercise' ? (
@@ -284,7 +287,7 @@ export function LessonPage() {
             ref={titleRef}
             tabIndex={-1}
             aria-live="polite"
-            className="mt-2 text-sm font-semibold text-muted focus:outline-none"
+            className="eyebrow mt-2 focus:outline-none"
           >
             {stepTitle(run, step)}
           </p>
@@ -292,7 +295,7 @@ export function LessonPage() {
           <h2
             ref={titleRef}
             tabIndex={-1}
-            className="mt-2 text-[26px] font-extrabold leading-tight tracking-[-0.03em] focus:outline-none"
+            className="mt-2 font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.02] focus:outline-none"
           >
             {stepTitle(run, step)}
           </h2>
@@ -300,8 +303,8 @@ export function LessonPage() {
         <div className="mt-5">{body}</div>
       </main>
       {footer && (
-        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-surface-solid/95 pb-safe backdrop-blur-md">
-          <div className="mx-auto w-full max-w-xl px-safe py-3">{footer}</div>
+        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
+          <div className="mx-auto w-full max-w-xl px-safe py-4">{footer}</div>
         </footer>
       )}
       {exitSheet}

@@ -14,8 +14,8 @@ export interface WordBankExerciseProps {
 }
 
 const tokenClasses =
-  'inline-flex min-h-11 min-w-11 max-w-full items-center justify-center rounded-xl border px-4 text-[17px] font-medium break-words ' +
-  'transition-[scale,background-color] duration-150 not-disabled:active:scale-[0.97] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40';
+  'inline-flex min-h-12 min-w-12 max-w-full items-center justify-center rounded-2xl border-2 px-4 text-[17px] font-semibold break-words ' +
+  'transition-[translate,box-shadow,background-color] duration-150 not-disabled:active:translate-y-[3px] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40';
 
 type FocusAfter = { bankIndex: number } | { bankId: string };
 
@@ -61,7 +61,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
 
   return (
     <div className="min-w-0">
-      <p className="mb-4 text-[18px] font-semibold leading-snug break-words">{prompt.instruction}</p>
+      <p className="mb-5 text-[19px] font-bold leading-snug break-words">{prompt.instruction}</p>
       <p id={answerLabel} className="sr-only">
         Câu trả lời của bạn
       </p>
@@ -70,7 +70,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
         role="group"
         aria-labelledby={answerLabel}
         lang={lang}
-        className="flex min-h-16 min-w-0 flex-wrap content-start gap-2 rounded-2xl border-2 border-dashed border-border p-2"
+        className="flex min-h-[7.5rem] min-w-0 flex-wrap content-start gap-2 rounded-[1.25rem] bg-[repeating-linear-gradient(to_bottom,transparent_0,transparent_3.6rem,var(--border)_3.6rem,var(--border)_calc(3.6rem+2px))] px-1 pt-1.5 pb-3"
       >
         {tokenIds.length === 0 && <span className="self-center px-2 text-[15px] text-muted">Chạm vào các thẻ bên dưới để ghép câu</span>}
         {tokenIds.map((id, i) => {
@@ -82,14 +82,14 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
               aria-label={`Bỏ '${text}', vị trí ${i + 1}/${tokenIds.length}`}
               disabled={disabled}
               onClick={() => remove(i)}
-              className={cn(tokenClasses, 'border-primary bg-primary/10')}
+              className={cn(tokenClasses, 'border-primary/60 bg-surface-solid shadow-[0_4px_0_color-mix(in_srgb,var(--primary)_45%,transparent)] not-disabled:active:shadow-[0_1px_0_var(--primary)]')}
             >
               {text}
             </button>
           );
         })}
       </div>
-      <div role="group" aria-label="Các thẻ từ" lang={lang} className="mt-4 flex min-w-0 flex-wrap gap-2">
+      <div role="group" aria-label="Các thẻ từ" lang={lang} className="mt-6 flex min-w-0 flex-wrap justify-center gap-2.5 pb-1">
         {bank.map((token) => {
           const used = placed.has(token.id);
           return (
@@ -104,7 +104,11 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
               tabIndex={used ? -1 : undefined}
               disabled={disabled || used}
               onClick={() => add(token.id)}
-              className={cn(tokenClasses, 'border-border bg-surface-solid not-disabled:hover:bg-text/5', used && 'invisible')}
+              className={cn(
+                tokenClasses,
+                'border-border bg-surface-solid shadow-[0_4px_0_var(--border)] not-disabled:hover:bg-text/[0.03] not-disabled:active:shadow-[0_1px_0_var(--border)]',
+                used && 'invisible',
+              )}
             >
               {token.text}
             </button>

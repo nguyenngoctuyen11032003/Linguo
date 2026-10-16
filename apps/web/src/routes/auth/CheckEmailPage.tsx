@@ -66,11 +66,13 @@ export function CheckEmailPage() {
         </Link>
       }
     >
-      <MailCheck aria-hidden className="mx-auto size-12 text-primary" />
+      <span className="mx-auto flex size-20 items-center justify-center rounded-full bg-primary/12 text-primary ring-1 ring-primary/25 ring-inset shadow-[0_0_40px_-8px_var(--primary)]">
+        <MailCheck aria-hidden className="size-9" />
+      </span>
       <p className="text-center text-[15px] text-muted">Không thấy email? Kiểm tra mục Spam hoặc Quảng cáo.</p>
       {message?.tone === 'error' && <FormAlert>{message.text}</FormAlert>}
       {message?.tone === 'ok' && (
-        <p role="status" className="text-center text-[15px] text-success">
+        <p role="status" className="text-center text-[15px] font-semibold text-success-text">
           {message.text}
         </p>
       )}

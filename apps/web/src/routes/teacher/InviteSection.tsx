@@ -38,7 +38,7 @@ export function InviteSection({ cls, archived, api }: { cls: TeacherClass; archi
     <section aria-labelledby="invites-title" className="space-y-3">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0">
-          <h2 id="invites-title" className="text-lg font-bold">
+          <h2 id="invites-title" className="text-xl font-extrabold tracking-[-0.02em]">
             Mã mời
           </h2>
           <p className="text-[15px] text-muted">Gửi mã cho học viên: họ đăng nhập Linguo và nhập mã để vào lớp.</p>
@@ -67,10 +67,10 @@ export function InviteSection({ cls, archived, api }: { cls: TeacherClass; archi
               <li key={invite.code} className="min-w-0">
                 <SolidCard className="space-y-3 p-5">
                   <div>
-                    <p className="font-mono text-2xl font-bold tracking-[0.12em]">
+                    <p className="font-mono text-[28px] font-bold tracking-[0.12em]">
                       {code}
                     </p>
-                    <p className="mt-1 text-sm text-muted">
+                    <p className="mt-2 text-[13px] text-muted">
                       Hết hạn {formatDayTime(invite.expires_at)} ({expiryLabel(invite.expires_at)}) ·{' '}
                       {invite.max_uses === null ? `${invite.uses} lượt dùng` : `đã dùng ${invite.uses}/${invite.max_uses}`}
                       {archived ? ' · tạm ngừng vì lớp đã lưu trữ' : ''}

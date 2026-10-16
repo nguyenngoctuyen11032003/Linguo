@@ -17,7 +17,8 @@ export interface MachineSpeechButtonProps {
   className?: string;
 }
 
-const base = 'inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-[15px] font-semibold';
+const base =
+  'inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border-2 px-5 text-[15px] font-bold transition-[translate,box-shadow] duration-150 active:translate-y-[3px]';
 
 /** Machine-voice button(s). Renders nothing when the browser has no voice for the language. */
 export function MachineSpeechButton({ text, lang, label, slow = false, compact = false, note = true, className }: MachineSpeechButtonProps) {
@@ -34,7 +35,9 @@ export function MachineSpeechButton({ text, lang, label, slow = false, compact =
         aria-label={active ? `Dừng đọc: ${text}` : failed ? `Không đọc được. Thử lại: ${text}` : `${name}: ${text}`}
         className={cn(
           base,
-          active || failed ? 'border border-primary bg-surface-solid text-text' : 'border border-border bg-surface-solid text-text hover:bg-text/5',
+          active || failed
+            ? 'border-primary bg-primary/10 text-text shadow-[0_4px_0_var(--primary)] active:shadow-[0_1px_0_var(--primary)]'
+            : 'border-border bg-surface-solid text-text shadow-[0_4px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
         )}
       >
         {active ? (

@@ -44,10 +44,10 @@ function Layer({ title, intro, children }: { title: string; intro: string; child
     <SolidCard>
       <section aria-labelledby={headingId} className="space-y-4">
         <div>
-          <h2 id={headingId} className="text-lg font-bold tracking-[-0.02em]">
+          <h2 id={headingId} className="text-xl font-extrabold tracking-[-0.02em]">
             {title}
           </h2>
-          <p className="text-sm text-muted">{intro}</p>
+          <p className="mt-0.5 text-[13px] leading-snug text-muted">{intro}</p>
         </div>
         {children}
       </section>
@@ -173,10 +173,10 @@ export function ProgressPage() {
 
   return (
     <div className="space-y-6">
-      <header className="flex flex-wrap items-end justify-between gap-3">
+      <header className="space-y-3">
         <div className="min-w-0 space-y-1">
           <h1 className="page-title">Tiến độ</h1>
-          <p className="text-sm text-muted">Thời gian học, kết quả và trình độ ước lượng được tính riêng.</p>
+          <p className="text-[13px] text-muted">Thời gian học, kết quả và trình độ ước lượng được tính riêng.</p>
         </div>
         {paths.current && <RangeToggle value={range} onChange={changeRange} />}
       </header>

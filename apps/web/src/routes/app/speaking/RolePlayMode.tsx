@@ -45,7 +45,7 @@ export function RolePlayMode({ lang, tts, transcribe, onSaveReflection }: Props)
 
   return (
     <SolidCard className="space-y-5">
-      <h2 ref={headingRef} tabIndex={-1} className="text-xl font-bold tracking-[-0.02em] focus:outline-none">
+      <h2 ref={headingRef} tabIndex={-1} className="text-xl font-extrabold tracking-[-0.02em] focus:outline-none">
         Hội thoại mẫu
       </h2>
       <SelectField label="Tình huống" value={script.id} onChange={change}>
@@ -63,8 +63,8 @@ export function RolePlayMode({ lang, tts, transcribe, onSaveReflection }: Props)
             <li
               key={i}
               className={cn(
-                'max-w-[90%] rounded-2xl px-4 py-2 text-[15px]',
-                t.speaker === 'you' ? 'ml-auto bg-primary/12' : 'bg-text/5',
+                'w-fit max-w-[86%] rounded-[1.5rem] px-4 py-2.5 text-[15px]',
+                t.speaker === 'you' ? 'ml-auto rounded-tr-md bg-primary/12 ring-1 ring-primary/20 ring-inset' : 'rounded-tl-md border border-border bg-surface-solid shadow-[var(--shadow-card)]',
               )}
             >
               <span className="block text-xs font-semibold text-muted">{t.speaker === 'you' ? 'Bạn' : 'Đối phương'}</span>

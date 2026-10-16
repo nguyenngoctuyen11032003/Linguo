@@ -16,13 +16,13 @@ import { parseAiResult } from './parse';
 type Lang = 'en' | 'ko' | 'ja';
 
 function SectionTitle({ children }: { children: string }) {
-  return <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{children}</h3>;
+  return <h3 className="eyebrow">{children}</h3>;
 }
 
 export function ExplainView({ data, language }: { data: ExplainConceptOutput; language: Lang }) {
   return (
     <div className="space-y-4 text-[15px] leading-relaxed">
-      {data.summary && <p className="text-[17px] font-semibold">{data.summary}</p>}
+      {data.summary && <p className="text-[17px] font-bold leading-snug tracking-[-0.01em]">{data.summary}</p>}
       {data.uncertainty && (
         <p className="flex items-start gap-2 rounded-2xl bg-warn/12 px-3 py-2 text-sm">
           <AlertTriangle aria-hidden className="mt-0.5 size-4 shrink-0 text-warn" />
@@ -37,7 +37,7 @@ export function ExplainView({ data, language }: { data: ExplainConceptOutput; la
           <SectionTitle>Ví dụ</SectionTitle>
           <ul className="space-y-2">
             {data.examples.map((ex, i) => (
-              <li key={i} className="rounded-2xl border border-border px-3 py-2">
+              <li key={i} className="rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
                 <span lang={language} className="block font-medium">
                   {ex.target}
                 </span>
@@ -79,7 +79,7 @@ export function AnalyzeView({ data, language }: { data: AnalyzeErrorOutput; lang
       {data.corrected && (
         <section className="space-y-1">
           <SectionTitle>Câu đúng</SectionTitle>
-          <p lang={language} className="rounded-2xl border border-success/40 px-3 py-2 font-medium">
+          <p lang={language} className="rounded-2xl bg-success/8 px-3.5 py-2.5 ring-1 ring-success/35 ring-inset font-medium">
             {data.corrected}
           </p>
         </section>
@@ -100,7 +100,7 @@ function PracticeItem({ item, index, language }: { item: GeneratePracticeOutput[
   const isCorrect = (option: string) => option.trim() === item.answer.trim();
   const right = answered && isCorrect(item.options[chosen] ?? '');
   return (
-    <li className="space-y-2 rounded-2xl border border-border p-3">
+    <li className="space-y-2 rounded-2xl bg-text/[0.03] p-3.5 ring-1 ring-border ring-inset">
       <p className="font-semibold">
         <span className="text-muted">Câu {index + 1}. </span>
         <span lang={language}>{item.question}</span>
@@ -117,9 +117,10 @@ function PracticeItem({ item, index, language }: { item: GeneratePracticeOutput[
               disabled={answered}
               onClick={() => setChosen(i)}
               className={cn(
-                'flex min-h-12 w-full items-center gap-2 rounded-xl border px-3 py-2 text-left transition-colors',
+                'flex min-h-12 w-full items-center gap-2 rounded-2xl border-2 bg-surface-solid px-3.5 py-2 text-left font-medium shadow-[0_3px_0_var(--border)] transition-[translate,box-shadow,background-color]',
+                'not-disabled:active:translate-y-[2px] not-disabled:active:shadow-[0_1px_0_var(--border)]',
                 'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 disabled:cursor-default',
-                correct ? 'border-success bg-success/10' : picked ? 'border-error bg-error/10' : 'border-border not-disabled:hover:bg-text/5',
+                correct ? 'border-success bg-success/10 shadow-none' : picked ? 'border-error bg-error/10 shadow-none' : 'border-border not-disabled:hover:bg-text/5',
               )}
             >
               <span lang={language} className="min-w-0 flex-1 break-words">
@@ -184,7 +185,7 @@ export function ReviewWritingView({ data, language, rubric = [] }: { data: Revie
         <SectionTitle>Theo tiêu chí</SectionTitle>
         <ul aria-label="Nhận xét theo tiêu chí" className="space-y-2">
           {rows.map((row) => (
-            <li key={row.key} className="space-y-1 rounded-2xl border border-border px-3 py-2">
+            <li key={row.key} className="space-y-1 rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
               <p className="flex flex-wrap items-baseline justify-between gap-x-2">
                 <span className="font-semibold">{row.rubric?.label_vi ?? row.key}</span>
                 <span className="text-sm font-semibold text-muted">
@@ -203,7 +204,7 @@ export function ReviewWritingView({ data, language, rubric = [] }: { data: Revie
       </section>
       <section className="space-y-1">
         <SectionTitle>Bài đã sửa</SectionTitle>
-        <p lang={language} className="rounded-2xl border border-success/40 px-3 py-2 whitespace-pre-wrap break-words">
+        <p lang={language} className="rounded-2xl bg-success/8 px-3.5 py-2.5 ring-1 ring-success/35 ring-inset whitespace-pre-wrap break-words">
           {data.corrected_version}
         </p>
       </section>

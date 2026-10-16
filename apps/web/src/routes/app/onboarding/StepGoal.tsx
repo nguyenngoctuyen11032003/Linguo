@@ -23,7 +23,7 @@ export function StepGoal({ language, currentLevel, goalType, targetLevel, onGoal
       />
       {goalType && (
         <section className="space-y-3">
-          <h2 id="target-heading" className="text-lg font-bold">
+          <h2 id="target-heading" className="eyebrow">
             Bậc bạn muốn đạt
           </h2>
           {targets.length === 0 ? (

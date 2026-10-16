@@ -33,9 +33,12 @@ export function RouteError({ inMain = false }: Props) {
 
   const body = (
     <div className="flex min-h-[60dvh] items-center justify-center px-safe py-10">
-      <SolidCard role="alert" className="flex w-full max-w-md flex-col items-center gap-3 px-6 py-8 text-center">
-        <AlertTriangle aria-hidden className="size-8 text-error" />
-        <h1 className="text-xl font-bold">Có lỗi xảy ra</h1>
+      <SolidCard role="alert" className="relative isolate flex w-full max-w-md flex-col gap-3 overflow-hidden px-6 py-7">
+        <div aria-hidden="true" className="absolute -right-12 -top-12 -z-10 size-40 rounded-full bg-error/20 blur-3xl" />
+        <span className="inline-flex size-12 items-center justify-center rounded-full bg-error/12 text-error ring-1 ring-error/25 ring-inset">
+          <AlertTriangle aria-hidden className="size-6" />
+        </span>
+        <h1 className="page-title text-[clamp(2.25rem,10vw,2.75rem)]">Có lỗi xảy ra</h1>
         <p className="text-[15px] text-muted">Màn hình này gặp sự cố. Dữ liệu đã lưu không bị mất; hãy thử lại hoặc về trang chủ.</p>
         {detail && (
           <pre data-testid="route-error-detail" className="max-h-40 w-full overflow-auto rounded-xl bg-text/5 p-3 text-left text-xs">

@@ -48,8 +48,8 @@ export function AudioPlayButton({ path, className, onFailedChange }: AudioPlayBu
       type="button"
       onClick={play}
       className={cn(
-        'inline-flex min-h-12 items-center gap-2 rounded-full px-5 text-[15px] font-semibold',
-        failed ? 'border border-border bg-surface-solid text-text hover:bg-text/5' : 'bg-primary text-on-primary hover:bg-primary-strong',
+        'inline-flex min-h-13 items-center gap-2.5 rounded-2xl px-5 text-[16px] font-bold transition-[translate,box-shadow] duration-150',
+        failed ? 'border-2 border-border bg-surface-solid text-text hover:bg-text/5' : 'press-primary bg-primary text-on-primary hover:bg-primary-strong',
         className,
       )}
     >

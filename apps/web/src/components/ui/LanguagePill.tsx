@@ -70,7 +70,7 @@ export function LanguagePill({ paths, currentId, pending = false, onSelect, onAd
         aria-busy={pending || undefined}
         aria-label={lang ? `${lang.short} – Ngôn ngữ đang học: ${lang.nameVi}. Đổi ngôn ngữ` : 'Chọn ngôn ngữ học'}
         onClick={() => setOpen((v) => !v)}
-        className="glass inline-flex min-h-11 border border-input-border items-center gap-1.5 rounded-full px-4 text-sm font-semibold"
+        className="glass inline-flex min-h-11 items-center gap-1.5 rounded-full px-3.5 text-sm font-bold tracking-wide"
       >
         {lang ? lang.short : 'Ngôn ngữ'}
         {pending ? <Spinner /> : <ChevronDown aria-hidden className="size-4" />}
@@ -78,7 +78,7 @@ export function LanguagePill({ paths, currentId, pending = false, onSelect, onAd
       <ul
         id={panelId}
         hidden={!open}
-        className="z-50 rounded-2xl border border-border bg-surface-solid p-1.5 shadow-[var(--shadow-card)] max-sm:fixed max-sm:inset-x-4 max-sm:top-[calc(3.5rem+env(safe-area-inset-top,0px))] max-sm:w-auto sm:absolute sm:right-0 sm:top-full sm:mt-2 sm:w-64"
+        className="z-50 rounded-[1.5rem] border border-border bg-surface-solid p-1.5 shadow-[var(--shadow-dock)] max-sm:fixed max-sm:inset-x-4 max-sm:top-[calc(3.5rem+env(safe-area-inset-top,0px))] max-sm:w-auto sm:absolute sm:right-0 sm:top-full sm:mt-2 sm:w-64"
       >
         {paths.map((path) => {
           const item = LANGUAGES[path.language];

@@ -47,9 +47,9 @@ export function PostponeAllDialog({ open, count, onKeep, onConfirm, triggerRef }
             animate={{ opacity: 1, y: 0 }}
             exit={offscreen}
             transition={functionalTransition}
-            className="relative w-full max-w-md rounded-t-[28px] border-t border-border bg-surface-solid px-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-5 focus:outline-none sm:rounded-[28px] sm:border"
+            className="relative w-full max-w-md rounded-t-[2rem] border-t border-border bg-surface-solid px-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-5 shadow-[var(--shadow-dock)] focus:outline-none sm:rounded-[2rem] sm:border"
           >
-            <h2 id={titleId} className="text-lg font-bold">
+            <h2 id={titleId} className="font-display text-[28px] font-extrabold uppercase leading-none">
               Hoãn {count} thẻ còn lại?
             </h2>
             <p id={descriptionId} className="mt-2 text-[15px]">

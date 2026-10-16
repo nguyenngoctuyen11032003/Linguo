@@ -18,10 +18,10 @@ export function RecallConfidence({ value, onChange }: Props) {
   const labelId = useId();
   return (
     <div role="group" aria-labelledby={labelId} className="min-w-0">
-      <p id={labelId} className="mb-2 text-sm font-medium text-muted">
+      <p id={labelId} className="mb-2.5 text-center text-[13px] font-semibold text-muted">
         Bạn nhớ chắc đến đâu? (không bắt buộc)
       </p>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-3 gap-2 pb-1">
         {LEVELS.map((level) => {
           const pressed = value === level;
           return (
@@ -31,9 +31,11 @@ export function RecallConfidence({ value, onChange }: Props) {
               aria-pressed={pressed}
               onClick={() => onChange(pressed ? null : level)}
               className={cn(
-                'inline-flex min-h-12 min-w-0 items-center justify-center rounded-full px-2 text-center text-[15px] font-semibold leading-tight',
-                'transition-[scale,background-color] duration-200 active:scale-[0.97]',
-                pressed ? 'bg-primary text-on-primary hover:bg-primary-strong' : 'border border-border bg-surface-solid text-text hover:bg-text/5',
+                'inline-flex min-h-12 min-w-0 items-center justify-center rounded-2xl border-2 px-2 text-center text-[15px] font-bold leading-tight',
+                'transition-[translate,box-shadow,background-color] duration-150 active:translate-y-[3px]',
+                pressed
+                  ? 'border-primary bg-primary/12 text-text shadow-[0_4px_0_var(--primary)] active:shadow-[0_1px_0_var(--primary)]'
+                  : 'border-border bg-surface-solid text-text shadow-[0_4px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
               )}
             >
               {CONFIDENCE_LABELS[level]}

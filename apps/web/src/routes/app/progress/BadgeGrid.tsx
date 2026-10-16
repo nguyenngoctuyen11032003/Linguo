@@ -48,10 +48,10 @@ export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
 
   return (
     <section aria-labelledby={headingId}>
-      <h3 id={headingId} className="font-bold">
+      <h3 id={headingId} className="eyebrow">
         Huy hiệu ({earned.length}/{BADGE_KEYS.length})
       </h3>
-      <ul className="mt-3 grid grid-cols-1 gap-2 min-[400px]:grid-cols-2 lg:grid-cols-3">
+      <ul className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-4 lg:grid-cols-6">
         {[...earned, ...locked].map((key) => {
           const info = BADGES[key];
           const date = earnedAt.get(key);
@@ -64,26 +64,29 @@ export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
               key={key}
               aria-label={label}
               className={cn(
-                'flex min-w-0 items-start gap-3 rounded-2xl p-3',
-                date ? 'border border-gold/40 bg-gold/10' : 'border border-dashed border-border',
+                'flex min-w-0 flex-col items-center gap-2 rounded-2xl p-2.5 pt-3 text-center',
+                date ? 'bg-gold/10 ring-1 ring-gold/30 ring-inset' : 'bg-text/[0.03]',
               )}
             >
               <span
                 aria-hidden="true"
                 className={cn(
-                  'inline-flex size-9 shrink-0 items-center justify-center rounded-xl',
-                  date ? 'bg-gold/20 text-gold' : 'bg-text/5 text-muted',
+                  'inline-flex size-12 shrink-0 items-center justify-center rounded-full',
+                  date
+                    ? 'bg-gradient-to-b from-[#f6cf6a] to-[#c98a1b] text-[#3a2604] shadow-[0_4px_0_#8f6417,0_8px_18px_-8px_#c98a1b]'
+                    : 'border-2 border-dashed border-border text-muted',
                 )}
               >
-                <Icon className="size-5" />
+                <Icon className="size-5" strokeWidth={2.2} />
               </span>
               <div className="min-w-0">
-                <p className={cn('font-semibold leading-snug', !date && 'text-muted')}>{info.title_vi}</p>
+                <p className={cn('text-[13px] font-bold leading-tight', !date && 'text-muted')}>{info.title_vi}</p>
                 {date ? (
-                  <p className="text-xs text-muted">Đã đạt ngày {formatDay(date, timeZone)}</p>
+                  <p className="mt-0.5 text-xs text-muted">Đã đạt ngày {formatDay(date, timeZone)}</p>
                 ) : (
-                  <p className="text-xs text-muted">
-                    <span className="font-semibold">Chưa đạt</span> · {info.description_vi}
+                  <p className="mt-0.5 line-clamp-2 text-xs leading-snug text-muted">
+                    <span className="sr-only">Chưa đạt · </span>
+                    {info.description_vi}
                   </p>
                 )}
               </div>

@@ -23,7 +23,7 @@ export function AssignmentSection({ roster, archived, api }: { roster: TeacherRo
     <section aria-labelledby="assignments-title" className="space-y-3">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0">
-          <h2 id="assignments-title" className="text-lg font-bold">
+          <h2 id="assignments-title" className="text-xl font-extrabold tracking-[-0.02em]">
             Bài đã giao ({roster.assignments.length})
           </h2>
           <p className="text-[15px] text-muted">Hoàn thành được tính tự động từ việc học của học viên trong Linguo.</p>
@@ -54,9 +54,9 @@ export function AssignmentSection({ roster, archived, api }: { roster: TeacherRo
                 <SolidCard className="space-y-3 p-5">
                   <div className="flex items-start gap-3">
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm font-semibold text-muted">{ASSIGNMENT_KIND_LABELS[a.kind]}</p>
-                      <h3 className="break-words text-[17px] font-semibold">{title}</h3>
-                      <p className="mt-0.5 text-sm text-muted">
+                      <p className="eyebrow">{ASSIGNMENT_KIND_LABELS[a.kind]}</p>
+                      <h3 className="mt-0.5 break-words text-[17px] font-bold leading-snug">{title}</h3>
+                      <p className="mt-0.5 text-[13px] text-muted">
                         {a.due_at ? (
                           <>
                             Hạn {formatDay(a.due_at)}
@@ -81,15 +81,21 @@ export function AssignmentSection({ roster, archived, api }: { roster: TeacherRo
                       <Trash2 aria-hidden className="size-5" />
                     </button>
                   </div>
-                  <div>
-                    <p className="text-[15px]">
-                      <span className="font-semibold">
-                        {a.completed_count}/{a.member_count}
-                      </span>{' '}
-                      học viên đã hoàn thành ({percent}%)
-                    </p>
-                    <div aria-hidden className="mt-1.5 h-2 overflow-hidden rounded-full bg-text/10">
-                      <div className={cn('h-full rounded-full', percent === 100 ? 'bg-success' : 'bg-primary')} style={{ width: `${percent}%` }} />
+                  <div className="flex items-end gap-3">
+                    <span aria-hidden="true" className={cn('stat-num shrink-0 text-[44px]', percent === 100 ? 'text-success-text' : 'text-text')}>
+                      {percent}
+                      <span className="text-[20px] text-muted">%</span>
+                    </span>
+                    <div className="min-w-0 flex-1 pb-1">
+                      <p className="text-[13px] text-muted">
+                        <span className="font-semibold text-text">
+                          {a.completed_count}/{a.member_count}
+                        </span>{' '}
+                        học viên đã hoàn thành ({percent}%)
+                      </p>
+                      <div aria-hidden className="mt-1.5 h-2 overflow-hidden rounded-full bg-text/10">
+                        <div className={cn('h-full rounded-full bg-gradient-to-r', percent === 100 ? 'from-success to-[#7ee2ae]' : 'from-primary-strong to-primary')} style={{ width: `${percent}%` }} />
+                      </div>
                     </div>
                   </div>
                 </SolidCard>

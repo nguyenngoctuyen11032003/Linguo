@@ -55,12 +55,12 @@ export function ExamTimer({ remainingMs }: ExamTimerProps) {
         aria-label={`Thời gian còn lại ${formatClock(remainingMs)}`}
         data-warning={warning || undefined}
         className={cn(
-          'inline-flex min-h-9 items-center gap-1.5 rounded-full border px-2.5 font-mono min-[380px]:px-3 text-[15px] font-bold tabular-nums',
-          warning ? 'border-error/60 bg-error/10 text-error-text' : 'border-border bg-surface-solid text-text',
+          'inline-flex min-h-10 items-center gap-1.5 rounded-full px-3 ring-1 ring-inset min-[380px]:px-3.5',
+          warning ? 'bg-error/12 text-error-text ring-error/50' : 'bg-text/5 text-text ring-border',
         )}
       >
         {warning ? <AlertTriangle aria-hidden className="size-4" /> : <Clock aria-hidden className="size-4" />}
-        {formatClock(remainingMs)}
+        <span className="stat-num pt-0.5 text-[22px] leading-none">{formatClock(remainingMs)}</span>
       </span>
       {warning && <span className="sr-only sm:not-sr-only sm:text-sm sm:font-medium sm:text-error-text">Sắp hết giờ</span>}
       <span role="status" aria-live="polite" className="sr-only">

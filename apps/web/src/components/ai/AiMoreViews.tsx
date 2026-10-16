@@ -9,7 +9,7 @@ import { tagLabel } from './tag-labels';
 type Lang = 'en' | 'ko' | 'ja';
 
 function SectionTitle({ children }: { children: string }) {
-  return <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">{children}</h3>;
+  return <h3 className="eyebrow">{children}</h3>;
 }
 
 const POS_LABELS: Record<AnalyzeSentenceOutput['tokens'][number]['pos'], string> = {
@@ -54,7 +54,7 @@ export function AnalyzeSentenceView({ data, language }: { data: AnalyzeSentenceO
       )}
       <section className="space-y-1">
         <SectionTitle>Nghĩa tự nhiên</SectionTitle>
-        <p className="text-[17px] font-semibold break-words">{data.translation_vi}</p>
+        <p className="text-[17px] font-bold leading-snug tracking-[-0.01em] break-words">{data.translation_vi}</p>
         {data.alternative_meanings.length > 0 && (
           <ul aria-label="Nghĩa khác" className="list-disc space-y-1 pl-5 text-muted">
             {data.alternative_meanings.map((m, i) => (
@@ -67,7 +67,7 @@ export function AnalyzeSentenceView({ data, language }: { data: AnalyzeSentenceO
         <SectionTitle>Từng từ</SectionTitle>
         <ul aria-label="Từ loại từng từ" className="space-y-2">
           {data.tokens.map((t, i) => (
-            <li key={i} className="flex flex-wrap items-baseline gap-x-2 rounded-2xl border border-border px-3 py-2">
+            <li key={i} className="flex flex-wrap items-baseline gap-x-2 rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
               <span lang={language} className="font-semibold break-words">
                 {t.text}
               </span>
@@ -82,7 +82,7 @@ export function AnalyzeSentenceView({ data, language }: { data: AnalyzeSentenceO
           <SectionTitle>Thành phần câu</SectionTitle>
           <ul aria-label="Thành phần câu" className="space-y-2">
             {data.components.map((c, i) => (
-              <li key={i} className="rounded-2xl border border-border px-3 py-2">
+              <li key={i} className="rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
                 <p>
                   <span className="font-semibold">{COMPONENT_LABELS[c.label]}: </span>
                   <span lang={language} className="break-words">
@@ -118,13 +118,13 @@ export function AnalyzeSentenceView({ data, language }: { data: AnalyzeSentenceO
 export function SessionSummaryView({ data }: { data: SummarizeSessionOutput }) {
   return (
     <div className="space-y-4 text-[15px] leading-relaxed">
-      <p className="text-[17px] font-semibold break-words">{data.recap_vi}</p>
+      <p className="text-[17px] font-bold leading-snug tracking-[-0.01em] break-words">{data.recap_vi}</p>
       {data.errors_to_remember.length > 0 && (
         <section className="space-y-2">
           <SectionTitle>Cần nhớ</SectionTitle>
           <ul aria-label="Lỗi cần nhớ" className="space-y-2">
             {data.errors_to_remember.map((e, i) => (
-              <li key={i} className="rounded-2xl border border-border px-3 py-2">
+              <li key={i} className="rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
                 <p className="font-semibold">{tagLabel(e.tag)}</p>
                 <p className="break-words">{e.note_vi}</p>
               </li>
@@ -165,12 +165,12 @@ export function PlanReviewView({ data, request }: { data: PlanReviewOutput; requ
   });
   return (
     <div className="space-y-4 text-[15px] leading-relaxed">
-      <p className="text-[17px] font-semibold break-words">{data.summary_vi}</p>
+      <p className="text-[17px] font-bold leading-snug tracking-[-0.01em] break-words">{data.summary_vi}</p>
       <section className="space-y-2">
         <SectionTitle>Kế hoạch ôn</SectionTitle>
         <ol aria-label="Các bước ôn tập" className="space-y-2">
           {steps.map(({ step, gap }, i) => (
-            <li key={i} className="space-y-1 rounded-2xl border border-border px-3 py-2">
+            <li key={i} className="space-y-1 rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
               <p className="font-semibold break-words">
                 <span className="text-muted">Bước {i + 1}. </span>
                 {step.kind === 'redo_lesson' ? `Học lại bài ${gap.label}` : `Ôn ${step.cards ?? 10} thẻ: ${gap.label}`}

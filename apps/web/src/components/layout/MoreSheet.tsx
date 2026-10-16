@@ -43,7 +43,7 @@ export function MoreSheet({
         <div className="fixed inset-0 z-50 lg:hidden">
           <motion.div
             aria-hidden="true"
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/55 backdrop-blur-[2px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -60,11 +60,11 @@ export function MoreSheet({
             animate={{ y: 0, opacity: 1 }}
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}
-            className="absolute inset-x-0 bottom-0 max-h-[85dvh] overflow-y-auto overscroll-contain rounded-t-[28px] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
+            className="absolute inset-x-0 bottom-0 max-h-[85dvh] overflow-y-auto overscroll-contain rounded-t-[2rem] border-t border-border bg-surface-solid px-safe shadow-[0_-20px_60px_-20px_rgb(0_0_0/0.5)] pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3"
           >
             <div aria-hidden="true" className="mx-auto mb-2 h-1.5 w-10 rounded-full bg-text/20" />
             <div className="flex items-center justify-between">
-              <h2 id={titleId} className="text-lg font-bold">
+              <h2 id={titleId} className="font-display text-[32px] font-extrabold uppercase leading-none">
                 Thêm
               </h2>
               <button
@@ -76,19 +76,26 @@ export function MoreSheet({
                 <X aria-hidden className="size-5" />
               </button>
             </div>
-            <ul className="mt-2 space-y-1">
+            <ul className="mt-3 grid grid-cols-2 gap-2.5">
               {[...MORE_NAV, ...teacherNav].map((item) => (
                 <li key={item.to}>
                   <NavLink
                     to={item.to}
                     onClick={onClose}
                     className={({ isActive }) =>
-                      cn('flex min-h-13 items-center gap-3 rounded-2xl px-3 text-[16px] font-medium', isActive ? 'bg-primary/12 text-primary' : 'hover:bg-text/5')
+                      cn(
+                        'flex h-full min-h-24 flex-col justify-between gap-3 rounded-[1.25rem] p-3.5 text-[15px] font-bold leading-snug ring-1 ring-inset transition-colors',
+                        isActive ? 'bg-primary/12 text-primary ring-primary/30' : 'bg-text/[0.04] ring-border hover:bg-text/8',
+                      )
                     }
                   >
-                    <item.icon aria-hidden className="size-5" />
-                    <span className="flex-1">{item.label}</span>
-                    <ChevronRight aria-hidden className="size-4 text-muted" />
+                    <span className="flex items-center justify-between">
+                      <span className="inline-flex size-10 items-center justify-center rounded-2xl bg-primary/12 text-primary">
+                        <item.icon aria-hidden className="size-5" />
+                      </span>
+                      <ChevronRight aria-hidden className="size-4 text-muted" />
+                    </span>
+                    <span>{item.label}</span>
                   </NavLink>
                 </li>
               ))}

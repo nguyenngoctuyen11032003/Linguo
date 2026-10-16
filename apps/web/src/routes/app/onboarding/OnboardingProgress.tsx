@@ -12,10 +12,10 @@ export function OnboardingProgress({ current, total }: { current: number; total:
       aria-valuemax={total}
       aria-valuenow={current}
       aria-valuetext={`Bước ${current} trên ${total}`}
-      className="h-2 min-w-0 flex-1 overflow-hidden rounded-full bg-text/10"
+      className="h-4 min-w-0 flex-1 overflow-hidden rounded-full bg-text/10"
     >
       <motion.div
-        className="h-full rounded-full bg-primary"
+        className="relative h-full min-w-4 rounded-full bg-gradient-to-r from-primary to-accent after:absolute after:inset-x-2 after:top-1 after:h-1 after:rounded-full after:bg-white/35"
         initial={false}
         animate={{ width: `${(current / total) * 100}%` }}
         transition={reduceMotion ? { duration: 0 } : { duration: 0.2, ease: EASE_OUT }}

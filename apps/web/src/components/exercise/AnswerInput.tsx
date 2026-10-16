@@ -13,8 +13,8 @@ export interface AnswerInputProps
 }
 
 const answerInputClasses =
-  'block w-full min-h-12 rounded-2xl border border-input-border bg-surface-solid px-4 text-[17px] text-text placeholder:text-muted ' +
-  'transition-[border-color,box-shadow] duration-200 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/45 ' +
+  'block w-full min-h-14 rounded-2xl border-2 border-input-border bg-surface-solid px-4 text-[17px] font-medium text-text placeholder:font-normal placeholder:text-muted ' +
+  'transition-[border-color,box-shadow] duration-200 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/30 ' +
   'disabled:cursor-not-allowed disabled:opacity-70';
 
 /** Single-line answer field: no autocorrect/capitalisation, ≥ 16px text, IME-safe Enter. */

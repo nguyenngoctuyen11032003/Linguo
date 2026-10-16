@@ -70,7 +70,7 @@ export function AiFallback({ state, error, quota, fallback, onRetry }: AiFallbac
 
   return (
     <div className="space-y-4">
-      <div role="alert" className="flex items-start gap-3 rounded-2xl border border-border px-4 py-3">
+      <div role="alert" className="flex items-start gap-3 rounded-2xl bg-text/[0.03] px-4 py-3 ring-1 ring-border ring-inset">
         <Icon aria-hidden className="mt-0.5 size-5 shrink-0 text-muted" />
         <div className="min-w-0 space-y-1">
           <p className="font-semibold">{title}</p>

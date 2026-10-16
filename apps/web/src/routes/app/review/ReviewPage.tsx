@@ -264,13 +264,25 @@ export function ReviewPage() {
   const flipped = cardState.status !== 'front';
   const showConfidence = card.direction === 'recall' && front;
   const counter = `Thẻ ${Math.min(position + 1, Math.max(total, 1))}/${Math.max(total, 1)}`;
+  const remaining = Math.max(total - position, 0);
 
   return (
     <div className="space-y-5">
-      <Heading />
+      <div className="flex items-end justify-between gap-4">
+        <Heading />
+        <p className="shrink-0 text-right">
+          <span className="sr-only">Còn {remaining} thẻ cần ôn</span>
+          <span aria-hidden="true" className="stat-num block text-[64px] text-gradient-fade pr-1">
+            {remaining}
+          </span>
+          <span aria-hidden="true" className="eyebrow mt-1 block">
+            thẻ cần ôn
+          </span>
+        </p>
+      </div>
 
       {totals?.recovery_mode && (
-        <p role="note" className="flex gap-2 rounded-2xl bg-primary/10 px-4 py-3 text-[15px]">
+        <p role="note" className="flex gap-2.5 rounded-2xl bg-primary/10 px-4 py-3 text-[15px] ring-1 ring-primary/20 ring-inset">
           <Info aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
           <span>
             Bạn có nhiều thẻ tồn đọng. Mình chia đều {totals.backlog_remaining} thẻ cho mấy ngày tới, hôm nay chỉ ôn những
@@ -280,13 +292,13 @@ export function ReviewPage() {
       )}
 
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 ref={cardHeadingRef} tabIndex={-1} className="text-sm font-semibold text-muted focus:outline-none">
+        <h2 ref={cardHeadingRef} tabIndex={-1} className="text-[13px] font-bold tabular-nums text-muted focus:outline-none">
           {counter}
         </h2>
         {pendingCount > 0 && (
           <span
             role="status"
-            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-solid px-3 py-1 text-sm font-medium"
+            className="inline-flex items-center gap-1.5 rounded-full bg-text/[0.05] px-3 py-1 text-sm font-semibold ring-1 ring-border ring-inset"
           >
             <CloudOff aria-hidden className="size-4 shrink-0 text-muted" />
             Đang chờ đồng bộ {pendingCount} thẻ
@@ -299,9 +311,12 @@ export function ReviewPage() {
         aria-valuemin={0}
         aria-valuemax={Math.max(total, 1)}
         aria-valuenow={Math.min(position, total)}
-        className="h-2 overflow-hidden rounded-full bg-text/10"
+        className="h-4 overflow-hidden rounded-full bg-text/10"
       >
-        <div className="h-full rounded-full bg-primary" style={{ width: `${total ? (Math.min(position, total) / total) * 100 : 0}%` }} />
+        <div
+          className="relative h-full rounded-full bg-gradient-to-r from-primary to-accent transition-[width] duration-500 ease-[var(--ease-expo)] after:absolute after:inset-x-2 after:top-1 after:h-1 after:rounded-full after:bg-white/35"
+          style={{ width: `${total ? (Math.min(position, total) / total) * 100 : 0}%` }}
+        />
       </div>
 
       <Flashcard
@@ -335,7 +350,7 @@ export function ReviewPage() {
         data-testid="rating-dock"
         className={cn(
           flipped &&
-            'sticky bottom-[calc(3.5rem+env(safe-area-inset-bottom,0px))] z-10 -mx-5 border-t border-border bg-bg/95 px-5 py-3 backdrop-blur-md lg:bottom-0',
+            'sticky bottom-[calc(3.5rem+env(safe-area-inset-bottom,0px))] z-10 -mx-5 rounded-t-[1.5rem] border-t border-border bg-bg/95 px-5 pb-3 pt-4 backdrop-blur-md lg:bottom-0',
         )}
       >
         <RatingBar

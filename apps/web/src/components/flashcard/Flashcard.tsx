@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { RefreshCw } from 'lucide-react';
 import { m as motion } from 'motion/react';
 import type { ReviewCard } from '@linguo/shared';
 import { ReportContentButton } from '@/components/report';
@@ -80,15 +81,22 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       tabIndex={flipped ? -1 : undefined}
       data-testid="flashcard-front"
       className={cn(
-        'glass flex min-h-60 w-full min-w-0 flex-col items-center justify-center gap-3 rounded-3xl px-5 py-6 text-center break-words sm:min-h-72 sm:py-8',
-        'transition-[scale] duration-200 not-disabled:active:scale-[0.99] disabled:cursor-not-allowed',
+        FACE,
+        'shadow-[var(--card-sheen),0_6px_0_var(--border),var(--shadow-card)] transition-[translate,box-shadow] duration-150',
+        'not-disabled:active:translate-y-[3px] not-disabled:active:shadow-[var(--card-sheen),0_3px_0_var(--border)] disabled:cursor-not-allowed',
       )}
     >
-      <span className="text-sm font-medium text-muted">
+      <FaceGlow />
+      <span className="eyebrow">
         {card.direction === 'recognize' ? 'Nghĩa của từ này là gì?' : `Nói bằng ${LANGUAGE_NAMES[content.lang]}`}
       </span>
-      {card.direction === 'recognize' ? <TargetWord content={content} /> : <Meaning content={content} />}
-      <span className="mt-2 text-sm font-medium text-muted">Chạm hoặc nhấn Space để lật</span>
+      <span className="flex flex-1 items-center justify-center py-2">
+        {card.direction === 'recognize' ? <TargetWord content={content} /> : <Meaning content={content} big />}
+      </span>
+      <span className="inline-flex items-center gap-1.5 rounded-full bg-text/[0.05] px-3 py-1.5 text-[13px] font-semibold text-muted">
+        <RefreshCw aria-hidden className="size-3.5" />
+        Chạm hoặc nhấn Space để lật
+      </span>
     </button>
   );
 
@@ -97,14 +105,15 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       ref={backRef}
       tabIndex={-1}
       data-testid="flashcard-back"
-      className="glass flex min-h-60 w-full min-w-0 flex-col items-center justify-center gap-3 rounded-3xl px-5 py-6 text-center break-words sm:min-h-72 sm:py-8 focus:outline-none"
+      className={cn(FACE, 'shadow-[var(--card-sheen),0_6px_0_var(--border),var(--shadow-card)] focus:outline-none')}
     >
+      <FaceGlow />
       {card.direction === 'recognize' ? (
         <>
           <span lang={content.lang} className="text-[17px] font-semibold text-muted">
             {content.text}
           </span>
-          <Meaning content={content} />
+          <Meaning content={content} big />
         </>
       ) : (
         <>
@@ -115,8 +124,8 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
         </>
       )}
       {content.example && (
-        <p className="mt-2 w-full rounded-2xl border border-border bg-surface-solid px-4 py-3 text-left">
-          <span lang={content.lang} className="block text-[17px] font-medium">
+        <p className="mt-2 w-full rounded-2xl border-l-4 border-accent bg-text/[0.04] px-4 py-3 text-left">
+          <span lang={content.lang} className="block text-[17px] font-semibold">
             {content.example.target}
           </span>
           {content.example.translationVi && (
@@ -178,10 +187,23 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
   );
 }
 
+const FACE =
+  'card relative isolate flex min-h-72 w-full min-w-0 flex-col items-center justify-center gap-3 overflow-hidden px-5 py-6 text-center break-words sm:min-h-80 sm:py-8';
+
+/** Soft brand glow in the card's top corner, purely decorative. */
+function FaceGlow() {
+  return (
+    <span
+      aria-hidden="true"
+      className="pointer-events-none absolute -right-16 -top-20 -z-10 size-56 rounded-full bg-[radial-gradient(circle,color-mix(in_srgb,var(--primary)_22%,transparent),transparent_70%)]"
+    />
+  );
+}
+
 function TargetWord({ content }: { content: CardContent }) {
   return (
-    <span className="flex flex-col items-center gap-1">
-      <span lang={content.lang} className="text-[clamp(26px,8.5vw,34px)] font-bold leading-tight">
+    <span className="flex flex-col items-center gap-1.5">
+      <span lang={content.lang} className="text-[clamp(36px,12vw,56px)] font-extrabold leading-[1.1] tracking-[-0.02em]">
         {content.text}
       </span>
       {content.reading && (
@@ -196,9 +218,12 @@ function TargetWord({ content }: { content: CardContent }) {
   );
 }
 
-function Meaning({ content }: { content: CardContent }) {
+function Meaning({ content, big = false }: { content: CardContent; big?: boolean }) {
   return (
-    <span lang="vi" className="text-[clamp(22px,7vw,28px)] font-bold leading-tight">
+    <span
+      lang="vi"
+      className={cn('font-extrabold leading-tight tracking-[-0.015em]', big ? 'text-[clamp(28px,9vw,40px)]' : 'text-[clamp(22px,7vw,28px)]')}
+    >
       {content.meaningVi}
     </span>
   );

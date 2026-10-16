@@ -22,12 +22,12 @@ function resultFromState(state: unknown): ExamResult | null {
 
 function Page({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-dvh flex-col bg-bg">
-      <header className="sticky top-0 z-30 border-b border-border bg-surface-solid/95 pt-safe backdrop-blur-md">
+    <div className="flex min-h-dvh flex-col">
+      <header className="glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
         <div className="mx-auto flex min-h-14 w-full max-w-3xl items-center gap-2 px-safe py-2">
           <Link
             to={EXAM_HUB_PATH}
-            className="inline-flex min-h-11 shrink-0 items-center gap-1 rounded-full pr-3 pl-2 text-[15px] font-semibold hover:bg-text/5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
+            className="inline-flex min-h-11 shrink-0 items-center gap-1 rounded-full bg-text/5 pr-4 pl-2 text-[15px] font-semibold transition-[background-color,scale] hover:bg-text/10 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40"
           >
             <ChevronLeft aria-hidden className="size-5" />
             Về Luyện thi
@@ -92,12 +92,12 @@ export function ExamResultPage() {
 
       {result.by_question_type.length > 0 && (
         <section aria-labelledby="exam-breakdown-title" aria-busy={starter.busy || undefined} className="space-y-3">
-          <h2 id="exam-breakdown-title" className="text-xl font-bold tracking-[-0.02em]">
+          <h2 id="exam-breakdown-title" className="text-xl font-extrabold tracking-[-0.02em]">
             Phân tích dạng câu
           </h2>
           <p className="text-sm text-muted">Dạng câu sai nhiều nhất ở trên cùng. Luyện thêm tối đa 10 câu cùng dạng, không tính giờ.</p>
           {starter.error && (
-            <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+            <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
               {starter.error}
             </p>
           )}
@@ -109,7 +109,7 @@ export function ExamResultPage() {
       )}
 
       <section aria-labelledby="exam-review-title" className="space-y-3">
-        <h2 id="exam-review-title" className="text-xl font-bold tracking-[-0.02em]">
+        <h2 id="exam-review-title" className="text-xl font-extrabold tracking-[-0.02em]">
           Xem lại đáp án
         </h2>
         <ReviewList

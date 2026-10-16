@@ -51,7 +51,7 @@ export function TeacherClassesPage() {
     content = (
       <>
         {api.status === 'error' && (
-          <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+          <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
             {api.error}{' '}
             <button type="button" onClick={api.reload} className="min-h-11 font-semibold underline">
               Thử lại
@@ -60,7 +60,7 @@ export function TeacherClassesPage() {
         )}
         {active.length > 0 ? (
           <section aria-labelledby="active-classes-title" className="space-y-3">
-            <h2 id="active-classes-title" className="text-lg font-bold">
+            <h2 id="active-classes-title" className="eyebrow px-1">
               Lớp đang hoạt động ({active.length})
             </h2>
             <ClassList classes={active} />
@@ -122,15 +122,22 @@ function ClassList({ classes }: { classes: TeacherClass[] }) {
       {classes.map((c) => (
         <li key={c.id} className="min-w-0">
           <SolidCard className="p-0">
-            <Link to={`/giao-vien/lop/${c.id}`} className="flex min-h-20 items-center gap-3 rounded-3xl p-5 hover:bg-text/5">
+            <Link
+              to={`/giao-vien/lop/${c.id}`}
+              className="group flex min-h-20 items-center gap-4 rounded-[1.75rem] p-4 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
+            >
+              <span aria-hidden="true" className="flex size-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 ring-inset">
+                <span className="stat-num text-[30px]">{c.member_count}</span>
+                <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.06em] text-muted">học viên</span>
+              </span>
               <span className="min-w-0 flex-1">
-                <span className="block break-words text-[17px] font-semibold">{c.name}</span>
-                <span className="mt-0.5 block text-sm text-muted">
+                <span className="block break-words text-[17px] font-bold leading-snug tracking-[-0.01em]">{c.name}</span>
+                <span className="mt-0.5 block text-[13px] text-muted">
                   {CLASS_LANGUAGE_LABELS[c.language_code]} · {c.member_count} học viên · {c.assignment_count} bài giao
                   {c.archived_at === null && c.invites.length > 0 ? ` · ${c.invites.length} mã mời` : ''}
                 </span>
               </span>
-              <ChevronRight aria-hidden className="size-5 shrink-0 text-muted" />
+              <ChevronRight aria-hidden className="size-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5" />
             </Link>
           </SolidCard>
         </li>

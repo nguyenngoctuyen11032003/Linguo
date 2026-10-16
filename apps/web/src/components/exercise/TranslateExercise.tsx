@@ -18,7 +18,7 @@ export function TranslateExercise({ prompt, lang, text, onChange, onSubmitReques
       <p
         id={sourceId}
         lang={prompt.source_lang}
-        className="mb-4 rounded-2xl border border-border bg-surface-solid px-4 py-3 text-[18px] font-medium leading-snug break-words"
+        className="card mb-5 rounded-[1.5rem] px-5 py-4 text-[20px] font-semibold leading-snug break-words"
       >
         {prompt.source_text}
       </p>

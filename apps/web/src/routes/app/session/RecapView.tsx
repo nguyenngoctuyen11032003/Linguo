@@ -68,7 +68,7 @@ export function RecapView({ sessionId, learner, saving, onDone, onBack }: Props)
           <ArrowLeft aria-hidden className="size-4" />
           Quay lại kế hoạch
         </button>
-        <h2 id="recap-title" ref={headingRef} tabIndex={-1} className="text-xl font-bold tracking-[-0.02em] focus:outline-none">
+        <h2 id="recap-title" ref={headingRef} tabIndex={-1} className="text-[22px] font-extrabold leading-tight tracking-[-0.02em] focus:outline-none">
           Tổng kết: lỗi sai hôm nay
         </h2>
         <p className="text-[15px] text-muted">Xem lại từng lỗi một chút. Hiểu vì sao sai giúp bạn nhớ lâu hơn.</p>
@@ -94,7 +94,7 @@ export function RecapView({ sessionId, learner, saving, onDone, onBack }: Props)
             const state = learner ? recapAiState(mistake, learner) : null;
             return (
               <li key={mistake.attempt_id}>
-                <SolidCard className="space-y-2">
+                <SolidCard className="relative space-y-2 overflow-hidden pl-6 before:absolute before:inset-y-5 before:left-0 before:w-1 before:rounded-r-full before:bg-error">
                   <h3 className="text-[17px] font-bold leading-snug break-words">{mistake.prompt_text || `Lỗi ${index + 1}`}</h3>
                   <dl className="space-y-1 text-[15px]">
                     {mistake.expected_answer !== null && (

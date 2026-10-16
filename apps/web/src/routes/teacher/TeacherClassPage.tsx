@@ -25,7 +25,7 @@ export function TeacherClassPage() {
   const archiveRef = useRef<HTMLButtonElement>(null);
 
   const back = (
-    <Link to="/giao-vien" className="inline-flex min-h-11 items-center gap-1.5 text-[15px] font-medium text-muted hover:text-text">
+    <Link to="/giao-vien" className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-text/5 pl-3 pr-4 text-[14px] font-semibold text-muted transition-[background-color,color,scale] hover:bg-text/10 hover:text-text active:scale-95">
       <ArrowLeft aria-hidden className="size-4" />
       Tất cả lớp
     </Link>
@@ -49,7 +49,7 @@ export function TeacherClassPage() {
       <div className="space-y-4">
         {back}
         <SolidCard className="flex flex-col items-center gap-3 px-6 py-10 text-center">
-          <h1 className="text-xl font-bold">Không tìm thấy lớp</h1>
+          <h1 className="page-title text-[clamp(2rem,9vw,2.5rem)]">Không tìm thấy lớp</h1>
           <p className="text-[15px] text-muted">Lớp này không tồn tại hoặc không thuộc về bạn.</p>
           <Link to="/giao-vien" className={buttonClasses('primary')}>
             Xem các lớp của tôi
@@ -95,7 +95,7 @@ export function TeacherClassPage() {
           </div>
         </div>
         {api.status === 'error' && (
-          <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+          <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
             {api.error}{' '}
             <button type="button" onClick={api.reload} className="min-h-11 font-semibold underline">
               Thử lại
@@ -103,7 +103,7 @@ export function TeacherClassPage() {
           </p>
         )}
         {archived && (
-          <p className="rounded-2xl border border-border bg-surface-solid px-4 py-3 text-[15px]">
+          <p className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/35 ring-inset">
             Lớp đã được lưu trữ ngày {formatDay(cls.archived_at ?? '')}. Học viên không còn thấy lớp; bạn không thể tạo mã mời hay giao bài mới cho
             tới khi khôi phục.
           </p>

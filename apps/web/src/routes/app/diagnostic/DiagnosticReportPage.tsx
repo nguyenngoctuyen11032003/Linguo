@@ -42,9 +42,9 @@ function SkillCard({ row }: { row: SkillRow }) {
   const range = rangeLabel(row.range);
   return (
     <li>
-      <SolidCard className="p-4">
+      <SolidCard className="h-full p-5">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="font-semibold">{SKILL_LABELS[row.skill]}</h3>
+          <h3 className="eyebrow text-text">{SKILL_LABELS[row.skill]}</h3>
           {estimated ? (
             <span className="inline-flex items-center gap-1 text-sm text-muted">
               <CircleCheck aria-hidden className="size-4" />
@@ -58,10 +58,10 @@ function SkillCard({ row }: { row: SkillRow }) {
           )}
         </div>
         {estimated ? (
-          <div className="mt-2 space-y-2">
+          <div className="mt-3 space-y-3">
             <p>
-              <span className="text-[26px] font-bold leading-none tracking-[-0.02em]">{levelLabel(row.level_code)}</span>
-              {range && <span className="ml-2 text-[15px] text-muted">khoảng {range}</span>}
+              <span className="stat-num text-[48px] text-gradient-fade pr-1">{levelLabel(row.level_code)}</span>
+              {range && <span className="ml-2 text-[14px] font-semibold text-muted">khoảng {range}</span>}
             </p>
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
               {row.confidence && <ConfidenceChip confidence={row.confidence} />}
@@ -317,7 +317,7 @@ export function DiagnosticReportPage() {
           </ul>
         )}
         <section aria-labelledby="skills-heading">
-          <h2 id="skills-heading" className="text-lg font-bold">
+          <h2 id="skills-heading" className="eyebrow">
             Theo từng kỹ năng
           </h2>
           <ul className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -327,7 +327,7 @@ export function DiagnosticReportPage() {
           </ul>
         </section>
         <section aria-labelledby="placement-heading">
-          <h2 id="placement-heading" className="text-lg font-bold">
+          <h2 id="placement-heading" className="eyebrow">
             Trình độ lộ trình
           </h2>
           <div className="mt-3">

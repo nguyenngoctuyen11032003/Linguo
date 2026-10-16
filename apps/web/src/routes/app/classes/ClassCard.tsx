@@ -18,9 +18,9 @@ import { cn } from '@/lib/cn';
 const KIND_ICONS: Record<AssignmentKind, LucideIcon> = { lesson: BookOpen, exam: GraduationCap, review: RotateCcw };
 
 const STATE_CLASSES: Record<LearnerAssignment['state'], string> = {
-  done: 'bg-success/10 text-success-text',
-  overdue: 'bg-error/10 text-error-text',
-  pending: 'bg-text/5 text-muted',
+  done: 'bg-success/12 text-success-text',
+  overdue: 'bg-error/12 text-error-text',
+  pending: 'bg-text/6 text-muted',
 };
 
 export interface ClassCardProps {
@@ -43,13 +43,21 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
     <SolidCard>
       <section aria-labelledby={titleId} className="space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-          <div className="min-w-0 flex-1 break-words">
-            <h2 id={titleId} className="text-lg font-bold tracking-[-0.02em]">
-              {klass.name}
-            </h2>
-            <p className="mt-0.5 text-sm text-muted">
-              {language} · Giáo viên: {klass.teacher_name?.trim() || 'chưa đặt tên'} · Vào lớp {formatJoined(klass.joined_at, timeZone)}
-            </p>
+          <div className="flex min-w-0 flex-1 items-start gap-3">
+            <div className="min-w-0 flex-1 break-words">
+              <h2 id={titleId} className="text-[19px] font-extrabold leading-snug tracking-[-0.02em]">
+                {klass.name}
+              </h2>
+              <p className="mt-0.5 text-[13px] text-muted">
+                {language} · Giáo viên: {klass.teacher_name?.trim() || 'chưa đặt tên'} · Vào lớp {formatJoined(klass.joined_at, timeZone)}
+              </p>
+            </div>
+            {assignments.length > 0 && (
+              <span aria-hidden="true" className="flex shrink-0 flex-col items-end">
+                <span className={cn('stat-num text-[44px]', open > 0 ? 'text-accent-text' : 'text-success-text')}>{open}</span>
+                <span className="eyebrow mt-1">còn lại</span>
+              </span>
+            )}
           </div>
           <Button
             variant="ghost"
@@ -62,12 +70,12 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
           </Button>
         </div>
         {currentLanguage !== null && currentLanguage !== klass.language_code && assignments.length > 0 && (
-          <p className="rounded-2xl border border-warn/60 bg-warn/10 px-4 py-3 text-[15px]">
+          <p className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
             Lớp này học {inline}, khác lộ trình bạn đang mở. Bài giao chỉ được tính khi bạn học trên lộ trình {inline}.
           </p>
         )}
         <div className="space-y-2">
-          <h3 className="text-[15px] font-semibold">
+          <h3 className="eyebrow">
             {assignments.length === 0 ? 'Bài được giao' : open > 0 ? `Bài được giao · còn ${open} bài` : 'Bài được giao · đã xong hết'}
           </h3>
           {assignments.length === 0 ? (
@@ -91,16 +99,16 @@ function AssignmentRow({ assignment: a, timeZone }: { assignment: LearnerAssignm
   const action = assignmentAction(a);
   const done = a.state === 'done';
   return (
-    <li className="flex flex-col gap-3 rounded-2xl border border-border p-4 sm:flex-row sm:items-center">
+    <li className={cn('flex flex-col gap-3 rounded-2xl p-4 ring-1 ring-inset sm:flex-row sm:items-center', a.state === 'overdue' ? 'bg-error/[0.04] ring-error/25' : 'bg-text/[0.03] ring-border')}>
       <div className="flex min-w-0 flex-1 items-start gap-3">
-        <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/12 text-primary">
+        <span className={cn('inline-flex size-10 shrink-0 items-center justify-center rounded-full', done ? 'bg-success/15 text-success-text' : 'bg-primary/12 text-primary')}>
           <Icon aria-hidden className="size-5" />
         </span>
         <div className="min-w-0 flex-1 break-words">
-          <p className="text-sm text-muted">{ASSIGNMENT_KIND_LABELS[a.kind]}</p>
-          <p className={cn('font-semibold', done && 'text-muted')}>{title}</p>
+          <p className="eyebrow">{ASSIGNMENT_KIND_LABELS[a.kind]}</p>
+          <p className={cn('mt-0.5 font-bold leading-snug', done && 'text-muted line-through decoration-1')}>{title}</p>
           <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-            <span className={cn('rounded-full px-2.5 py-0.5 font-medium', STATE_CLASSES[a.state])}>{assignmentStatus(a)}</span>
+            <span className={cn('rounded-full px-2.5 py-0.5 text-[13px] font-semibold', STATE_CLASSES[a.state])}>{assignmentStatus(a)}</span>
             <span className="text-muted">{formatDue(a.due_at, timeZone)}</span>
           </p>
           {a.note && (

@@ -31,16 +31,24 @@ export function RepeatMode({ lang, sentences, tts, transcribe, onSaveReflection 
   return (
     <SolidCard className="space-y-5">
       <div className="flex items-center justify-between gap-3">
-        <h2 className="text-xl font-bold tracking-[-0.02em]">Nhắc lại câu</h2>
-        <p className="text-sm text-muted" aria-live="polite">
+        <h2 className="text-xl font-extrabold tracking-[-0.02em]">Nhắc lại câu</h2>
+        <p className="rounded-full bg-text/5 px-3 py-1 text-[13px] font-bold tabular-nums" aria-live="polite">
           Câu {at + 1}/{sentences.length}
         </p>
       </div>
-      <div className="space-y-2 rounded-2xl bg-primary/8 p-4">
-        <p lang={lang} className="text-2xl font-bold leading-snug tracking-[-0.02em] [overflow-wrap:anywhere]">
+      <div className="relative isolate space-y-2 overflow-hidden rounded-[1.75rem] bg-[image:var(--hero-bg)] p-5 text-white ring-1 ring-white/10 ring-inset">
+        <div aria-hidden="true" className="absolute -bottom-20 -right-12 -z-10 size-48 rounded-full bg-accent/25 blur-3xl" />
+        <p lang={lang} className="text-[26px] font-bold leading-snug tracking-[-0.02em] [overflow-wrap:anywhere]">
           {sentence.text}
         </p>
-        <p className="text-[15px] text-muted">{sentence.translation}</p>
+        <p className="text-[15px] text-white/75">{sentence.translation}</p>
+        {sentences.length > 1 && (
+          <div aria-hidden="true" className="flex gap-1 pt-2">
+            {sentences.map((s, i) => (
+              <span key={s.id} className={i <= at ? 'h-1 flex-1 rounded-full bg-white' : 'h-1 flex-1 rounded-full bg-white/20'} />
+            ))}
+          </div>
+        )}
       </div>
       <ListenButton text={sentence.text} lang={lang} tts={tts} />
       <PracticePanel

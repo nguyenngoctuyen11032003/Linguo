@@ -129,7 +129,7 @@ export function ExamHubPage() {
       <div className="space-y-4">
         {families.length > 1 && <FamilyFilter families={families} value={filter} onChange={setChosen} />}
         {starter.error && (
-          <p role="alert" className="rounded-2xl border border-error/50 bg-error/10 px-4 py-3 text-[15px] text-error-text">
+          <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
             {starter.error}
           </p>
         )}
@@ -218,9 +218,9 @@ function FamilyFilter({ families, value, onChange }: { families: readonly ExamFa
           />
           <span
             className={cn(
-              'pointer-events-none inline-flex min-h-11 items-center rounded-full border px-4 text-[15px] font-semibold transition-colors',
+              'pointer-events-none inline-flex min-h-11 items-center rounded-full border px-4 text-[15px] font-bold transition-[background-color,color,scale] peer-active:scale-95',
               'peer-focus-visible:ring-4 peer-focus-visible:ring-primary/40',
-              value === o.value ? 'border-primary bg-primary text-on-primary' : 'border-border bg-surface-solid text-text',
+              value === o.value ? 'press-primary border-primary bg-primary text-on-primary' : 'border-border bg-text/[0.03] text-text',
             )}
           >
             {o.label}
@@ -264,7 +264,7 @@ function PickerPanel({ form, busy, onPick, onClose }: { form: ExamFormSummary; b
 function HistorySection({ status, entries, error, reload }: ReturnType<typeof useExamHistory>) {
   return (
     <section aria-labelledby="exam-history-title" className="space-y-3">
-      <h2 id="exam-history-title" className="text-xl font-bold tracking-[-0.02em]">
+      <h2 id="exam-history-title" className="text-xl font-extrabold tracking-[-0.02em]">
         Lịch sử thi gần đây
       </h2>
       {status === 'error' ? (

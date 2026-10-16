@@ -17,9 +17,11 @@ export function EstimateSummary({ estimate, compact = false }: EstimateSummaryPr
   const exactWeeks = weeksMin === weeksMax ? `${weeksMin}` : `${weeksMin}–${weeksMax}`;
   return (
     <div className="space-y-3">
-      <div className="space-y-1">
-        <p className="text-sm text-muted">Ước lượng</p>
-        <p className="text-2xl font-bold tracking-[-0.02em]">{formatEstimate(weeksMin, weeksMax, { capitalize: true })}</p>
+      <div className="space-y-2">
+        <p className="eyebrow">Ước lượng</p>
+        <p className="font-display text-[clamp(32px,10vw,42px)] font-extrabold uppercase leading-none tracking-[-0.005em]">
+          {formatEstimate(weeksMin, weeksMax, { capitalize: true })}
+        </p>
       </div>
       {nudge !== null && (
         <p data-testid="estimate-nudge" className="text-[15px]">

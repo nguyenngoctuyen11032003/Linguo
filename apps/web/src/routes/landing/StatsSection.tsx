@@ -7,9 +7,9 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 
 /** Product facts only — never user counts or outcomes we cannot back up. */
 const STATS = [
-  { value: 2, label: 'ngôn ngữ — tiếng Anh và tiếng Hàn', indent: false, gold: false },
-  { value: 6, label: 'kỹ năng theo dõi riêng: từ vựng, ngữ pháp, đọc, nghe, viết, nói', indent: true, gold: false },
-  { value: 12, label: 'cấp độ mục tiêu: CEFR A1–C2 và TOPIK 1–6', indent: false, gold: true },
+  { value: 2, tag: 'Ngôn ngữ', label: 'ngôn ngữ — tiếng Anh và tiếng Hàn', gold: false },
+  { value: 6, tag: 'Kỹ năng', label: 'kỹ năng theo dõi riêng: từ vựng, ngữ pháp, đọc, nghe, viết, nói', gold: false },
+  { value: 12, tag: 'Cấp độ', label: 'cấp độ mục tiêu: CEFR A1–C2 và TOPIK 1–6', gold: true },
 ];
 
 export function StatsSection() {
@@ -20,23 +20,36 @@ export function StatsSection() {
 
   return (
     <section aria-label="Linguo trong con số" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
-      <div ref={ref} className="mx-auto flex max-w-3xl flex-col gap-8">
-        {STATS.map((s, i) => (
-          <motion.div
-            key={s.value}
-            className={cn('flex items-end gap-4', s.indent && 'pl-[clamp(40px,12vw,120px)]')}
-            variants={reveal(i % 2 ? 'slideRight' : 'slideLeft', reduceMotion, i * 0.12)}
-            initial="hidden"
-            animate={state}
-          >
-            <CountUp
-              to={s.value}
-              delayMs={i * 200}
-              className={cn('font-display text-[clamp(84px,26vw,160px)] leading-[0.8]', s.gold ? 'text-gold' : 'text-gradient-fade')}
-            />
-            <p className="max-w-[14rem] pb-2 text-[clamp(14px,3.8vw,18px)] leading-snug text-muted">{s.label}</p>
-          </motion.div>
-        ))}
+      <div ref={ref} className="mx-auto max-w-3xl">
+        <p aria-hidden="true" className="eyebrow mb-4">
+          Trong con số
+        </p>
+        <ul className="divide-y divide-white/10 border-y border-white/10">
+          {STATS.map((s, i) => (
+            <motion.li
+              key={s.value}
+              className={cn('grid grid-cols-[minmax(0,auto)_1fr] items-end gap-x-5 py-6', i === 1 && 'sm:pl-[clamp(40px,12vw,120px)]')}
+              variants={reveal(i % 2 ? 'slideRight' : 'slideLeft', reduceMotion, i * 0.12)}
+              initial="hidden"
+              animate={state}
+            >
+              <CountUp
+                to={s.value}
+                delayMs={i * 200}
+                className={cn(
+                  'stat-num min-w-[1.1ch] pr-1 text-[clamp(96px,30vw,176px)]',
+                  s.gold ? 'bg-gradient-to-b from-gold to-gold/25 bg-clip-text text-transparent' : 'text-gradient-fade',
+                )}
+              />
+              <div className="pb-2">
+                <p aria-hidden="true" className={cn('font-display text-[22px] font-extrabold uppercase leading-none', s.gold ? 'text-gold' : 'text-text')}>
+                  {s.tag}
+                </p>
+                <p className="mt-1.5 max-w-[16rem] text-[clamp(13px,3.6vw,16px)] leading-snug text-muted">{s.label}</p>
+              </div>
+            </motion.li>
+          ))}
+        </ul>
       </div>
     </section>
   );

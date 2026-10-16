@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, Trophy, Waves } from 'lucide-react';
 import type { CompleteResult, LessonBlock } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { Spinner } from '@/components/ui/Spinner';
@@ -65,10 +65,10 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
   return (
     <div className="space-y-6">
       {points.length > 0 && (
-        <ul className="space-y-2">
+        <ul className="card divide-y divide-border px-5 py-1">
           {points.map((point, i) => (
-            <li key={i} className="flex gap-3">
-              <CheckCircle2 aria-hidden className="mt-1 size-4 shrink-0 text-primary" />
+            <li key={i} className="flex gap-3 py-3">
+              <CheckCircle2 aria-hidden className="mt-1 size-5 shrink-0 text-success-text" />
               <span>{point}</span>
             </li>
           ))}
@@ -76,28 +76,62 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
       )}
 
       {result ? (
-        <section aria-labelledby="lesson-stats" className="space-y-3 rounded-2xl border border-border bg-surface-solid p-4">
-          <h3 id="lesson-stats" className="text-base font-bold">
-            Kết quả của bạn
-          </h3>
-          <dl className="grid grid-cols-3 gap-3">
+        <section
+          aria-labelledby="lesson-stats"
+          className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
+        >
+          <span aria-hidden="true" className="absolute -bottom-24 -right-16 -z-10 size-64 rounded-full bg-accent/30 blur-3xl" />
+          <div className="flex items-center justify-between gap-3">
+            <h3 id="lesson-stats" className="text-xs font-semibold uppercase tracking-[0.12em] text-white/70">
+              Kết quả của bạn
+            </h3>
+            <span aria-hidden="true" className="grid size-10 place-items-center rounded-full bg-white/12 text-[#ffc06b]">
+              <Trophy className="size-5" />
+            </span>
+          </div>
+          <dl className="mt-4 grid grid-cols-3 gap-3">
             {STAGE_LABELS.map(([stage, label]) => {
               const accuracy = result.accuracy_by_stage[stage];
               if (accuracy === null) return null;
+              const pct = Math.round(accuracy * 100);
               return (
-                <div key={stage}>
-                  <dt className="text-sm text-muted">{label}</dt>
-                  <dd className="text-xl font-bold">{Math.round(accuracy * 100)}%</dd>
+                <div key={stage} className="min-w-0 space-y-2">
+                  <dt className="truncate text-xs font-semibold uppercase tracking-[0.08em] text-white/70">{label}</dt>
+                  <dd className="space-y-2.5">
+                    <span className="stat-num block bg-gradient-to-b from-white to-white/60 bg-clip-text pr-1 text-[clamp(38px,12vw,56px)] text-transparent">
+                      {pct}%
+                    </span>
+                    <span aria-hidden="true" className="block h-1.5 overflow-hidden rounded-full bg-white/15">
+                      <span
+                        className={pct >= 80 ? 'block h-full rounded-full bg-[#7ee2ae]' : 'block h-full rounded-full bg-gradient-to-r from-accent to-[#ffc06b]'}
+                        style={{ width: `${pct}%` }}
+                      />
+                    </span>
+                  </dd>
                 </div>
               );
             })}
           </dl>
-          {result.confident_wrong > 0 && <p className="text-[15px]">{result.confident_wrong} câu bạn tin là đúng nhưng chưa đúng — đáng ôn lại</p>}
-          {result.almost_count > 0 && <p className="text-[15px]">{result.almost_count} câu gần đúng</p>}
+          {(result.confident_wrong > 0 || result.almost_count > 0) && (
+            <div className="mt-5 space-y-2 border-t border-white/12 pt-4 text-[14px] leading-snug text-white/85">
+              {result.confident_wrong > 0 && (
+                <p className="flex items-start gap-2">
+                  <AlertTriangle aria-hidden className="mt-0.5 size-4 shrink-0 text-[#ffc06b]" />
+                  <span>{result.confident_wrong} câu bạn tin là đúng nhưng chưa đúng — đáng ôn lại</span>
+                </p>
+              )}
+              {result.almost_count > 0 && (
+                <p className="flex items-start gap-2">
+                  <Waves aria-hidden className="mt-0.5 size-4 shrink-0 text-white/70" />
+                  <span>{result.almost_count} câu gần đúng</span>
+                </p>
+              )}
+            </div>
+          )}
         </section>
       ) : !canComplete ? (
         <div className="space-y-3">
-          <p role="status" className="rounded-2xl bg-warn/15 px-4 py-3 text-[15px]">
+          <p role="status" className="rounded-2xl bg-warn/15 px-4 py-3 text-[15px] font-medium ring-1 ring-warn/40 ring-inset">
             {pendingCount > 0
               ? `Còn ${pendingCount} câu đang chờ đồng bộ`
               : unresolved.length > 0
@@ -105,9 +139,9 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
                 : 'Chưa thể hoàn thành bài học.'}
           </p>
           {unresolved.length > 0 && (
-            <ul aria-label="Câu chưa có kết quả" className="divide-y divide-border rounded-2xl border border-border bg-surface-solid">
+            <ul aria-label="Câu chưa có kết quả" className="card divide-y divide-border overflow-hidden p-0">
               {unresolved.map(({ stepIndex, label }) => (
-                <li key={stepIndex} className="flex items-center justify-between gap-3 px-4 py-2">
+                <li key={stepIndex} className="flex items-center justify-between gap-3 px-4 py-2.5">
                   <span className="font-medium">{label}</span>
                   <Button variant="ghost" aria-label={`Làm tiếp ${label}`} onClick={() => onResume(stepIndex)}>
                     Làm tiếp

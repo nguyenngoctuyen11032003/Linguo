@@ -69,7 +69,7 @@ export function AiModal({
         <div className={cn('fixed inset-0', stacked ? 'z-[60]' : 'z-50')}>
           <motion.div
             aria-hidden="true"
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/55 backdrop-blur-[2px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -88,16 +88,16 @@ export function AiModal({
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}
             className={cn(
-              'absolute inset-x-0 bottom-0 mx-auto flex max-h-[90dvh] max-w-xl flex-col overflow-hidden rounded-t-[28px] border-t border-border bg-surface-solid focus:outline-none',
+              'absolute inset-x-0 bottom-0 mx-auto flex max-h-[90dvh] max-w-xl flex-col overflow-hidden rounded-t-[2rem] border-t border-border bg-surface-solid shadow-[var(--card-sheen),var(--shadow-dock)] focus:outline-none',
               layout === 'panel'
                 ? 'md:inset-y-0 md:left-auto md:right-0 md:mx-0 md:max-h-none md:w-[min(30rem,100%)] md:max-w-none md:rounded-none md:rounded-l-[28px] md:border-l md:border-t-0'
-                : 'sm:bottom-6 sm:rounded-[28px] sm:border',
+                : 'sm:bottom-6 sm:rounded-[2rem] sm:border',
             )}
           >
             <div className="shrink-0 px-safe pt-3">
               <div aria-hidden="true" className={cn('mx-auto mb-3 h-1.5 w-10 rounded-full bg-text/20', layout === 'panel' && 'md:hidden')} />
               <div className={cn('flex items-start justify-between gap-3', layout === 'panel' && 'md:pt-4')}>
-                <h2 id={titleId} className="min-w-0 text-lg font-bold leading-snug">
+                <h2 id={titleId} className="min-w-0 text-[19px] font-extrabold leading-snug tracking-[-0.02em]">
                   {title}
                 </h2>
                 {headerExtra}

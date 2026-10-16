@@ -8,7 +8,7 @@ const listeners = new Set<() => void>();
 export const SECTION_SCROLL_MARGIN = 'scroll-mt-[calc(4.5rem+env(safe-area-inset-top,0px))]';
 
 /** Section h2 that the jump list focuses (tabIndex={-1}): no outline on a pointer jump, a ring on a keyboard one. */
-export const SECTION_HEADING_CLASS = 'rounded-lg text-lg font-bold focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/45';
+export const SECTION_HEADING_CLASS = 'rounded-lg text-lg font-extrabold tracking-[-0.02em] focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/45';
 
 export function subscribeSections(listener: () => void): () => void {
   listeners.add(listener);

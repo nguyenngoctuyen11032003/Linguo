@@ -10,9 +10,11 @@ import {
   type McqPrompt,
   type PublicExercise,
   type TranslatePrompt,
+  type Verdict,
   type WordBankPrompt,
 } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
+import { cn } from '@/lib/cn';
 import type { Confidence, ExerciseUiState, SubmitMeta } from '@/features/lesson-player/types';
 import { exercisePromptText, responseText, type LessonAiContext } from './ai-context';
 import { CompositionGateContext, createCompositionGate } from './compositionGate';
@@ -325,19 +327,22 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
     <CompositionGateContext.Provider value={gate}>
       <section aria-labelledby={titleId} className="flex min-w-0 flex-col">
         <div className="min-w-0 pb-4">
-          <p className="flex flex-wrap items-center gap-2 text-sm font-medium text-muted">
-            <span>{STAGE_LABELS[exercise.stage]}</span>
+          <p className="flex flex-wrap items-center gap-2">
+            <span className="eyebrow inline-flex items-center gap-1.5">
+              <span aria-hidden="true" className="size-1.5 rounded-full bg-accent" />
+              {STAGE_LABELS[exercise.stage]}
+            </span>
             {recheck && (
-              <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-xs font-semibold text-text">
+              <span className="inline-flex items-center gap-1 rounded-full bg-accent/12 px-2.5 py-0.5 text-xs font-bold text-accent-text">
                 <RotateCcw aria-hidden className="size-3" />
                 Làm lại
               </span>
             )}
           </p>
-          <h2 id={titleId} className="mt-1 text-[22px] font-bold leading-tight tracking-[-0.02em]">
+          <h2 id={titleId} className="mt-2 text-[26px] font-extrabold leading-[1.15] tracking-[-0.025em]">
             {instructionFor(parsed, exercise.answer_lang)}
           </h2>
-          <div ref={bodyRef} className="mt-4 min-w-0">
+          <div ref={bodyRef} className="mt-5 min-w-0">
             {body}
           </div>
           {hintLevels.length > 0 && (
@@ -354,16 +359,28 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
             answerLang={exercise.answer_lang}
           />
         </div>
-        <ActionBar>{actions}</ActionBar>
+        <ActionBar verdict={showResult ? result.verdict : null}>{actions}</ActionBar>
       </section>
     </CompositionGateContext.Provider>
   );
 }
 
-function ActionBar({ children }: { children: ReactNode }) {
+const BAR_TONE: Record<Verdict, string> = {
+  correct: 'border-success/45 bg-[color-mix(in_srgb,var(--success)_14%,var(--bg))]',
+  almost: 'border-warn/50 bg-[color-mix(in_srgb,var(--warn)_14%,var(--bg))]',
+  incorrect: 'border-error/45 bg-[color-mix(in_srgb,var(--error)_12%,var(--bg))]',
+};
+
+/** Sticky bottom bar holding the main action; it takes the verdict's tint once an answer is graded. */
+function ActionBar({ children, verdict = null }: { children: ReactNode; verdict?: Verdict | null }) {
   return (
-    <div className="sticky bottom-0 z-10 mt-auto border-t border-border bg-bg/95 pb-safe backdrop-blur-md">
-      <div className="py-3">{children}</div>
+    <div
+      className={cn(
+        'sticky bottom-0 z-10 mt-auto rounded-t-[1.5rem] border-t-2 px-3 pb-safe backdrop-blur-md transition-colors duration-300',
+        verdict ? BAR_TONE[verdict] : 'border-border bg-bg/95',
+      )}
+    >
+      <div className="py-4">{children}</div>
     </div>
   );
 }

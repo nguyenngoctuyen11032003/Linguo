@@ -9,7 +9,7 @@ interface RangeToggleProps {
 /** Segmented 7 / 14 / 28-day picker; the selected range is exposed with aria-pressed. */
 export function RangeToggle({ value, onChange }: RangeToggleProps) {
   return (
-    <div role="group" aria-label="Khoảng thời gian" className="inline-flex rounded-full border border-border bg-surface-solid p-1">
+    <div role="group" aria-label="Khoảng thời gian" className="glass inline-flex rounded-full p-1">
       {PROGRESS_RANGES.map((range) => {
         const selected = range === value;
         return (
@@ -21,8 +21,8 @@ export function RangeToggle({ value, onChange }: RangeToggleProps) {
               if (!selected) onChange(range);
             }}
             className={cn(
-              'min-h-11 rounded-full px-4 text-[15px] font-semibold transition-colors duration-200',
-              selected ? 'bg-primary text-on-primary' : 'text-muted hover:bg-text/5 hover:text-text',
+              'min-h-11 rounded-full px-3.5 text-[14px] font-bold tabular-nums transition-colors duration-200',
+              selected ? 'bg-text text-bg shadow-sm' : 'text-muted hover:bg-text/5 hover:text-text',
             )}
           >
             {range} ngày

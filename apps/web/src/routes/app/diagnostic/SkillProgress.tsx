@@ -36,9 +36,12 @@ export function SkillProgress({ progress }: { progress: DiagnosticProgress }) {
           const fill = row.status === 'done' ? 1 : row.status === 'skipped' ? 0 : row.fill;
           return (
             <li key={row.skill} className="min-w-0" aria-current={row.status === 'active' ? 'step' : undefined}>
-              <div aria-hidden="true" className="h-2 overflow-hidden rounded-full bg-text/10">
+              <div aria-hidden="true" className="h-3 overflow-hidden rounded-full bg-text/10">
                 <motion.div
-                  className={cn('h-full rounded-full', row.status === 'active' ? 'bg-primary' : 'bg-primary/60')}
+                  className={cn(
+                    'h-full rounded-full',
+                    row.status === 'active' ? 'bg-gradient-to-r from-primary to-accent' : row.status === 'done' ? 'bg-success' : 'bg-primary/60',
+                  )}
                   initial={false}
                   animate={{ width: `${Math.round(fill * 100)}%` }}
                   transition={reduceMotion ? { duration: 0 } : { duration: 0.3, ease: EASE_OUT }}
@@ -46,8 +49,8 @@ export function SkillProgress({ progress }: { progress: DiagnosticProgress }) {
               </div>
               <p
                 className={cn(
-                  'mt-1 flex items-center gap-1 text-xs leading-tight',
-                  row.status === 'active' ? 'font-semibold text-text' : 'font-medium text-muted',
+                  'mt-1.5 flex items-center gap-1 text-xs leading-tight',
+                  row.status === 'active' ? 'font-bold text-text' : 'font-semibold text-muted',
                 )}
               >
                 {row.status === 'done' && <Check aria-hidden className="size-3.5 shrink-0" />}

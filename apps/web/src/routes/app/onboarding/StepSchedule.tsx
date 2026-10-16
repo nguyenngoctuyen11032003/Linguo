@@ -33,7 +33,7 @@ export function StepSchedule({ schedule, onSchedule, mode, onMode, targetDate, o
     <div className="space-y-6">
       <ScheduleEditor value={schedule} onChange={onSchedule} labelledBy="onboarding-title" error={noDays ? 'Hãy chọn ít nhất một ngày học.' : undefined} />
       <section className="space-y-3">
-        <h2 id="deadline-heading" className="text-lg font-bold">
+        <h2 id="deadline-heading" className="eyebrow">
           Thời hạn
         </h2>
         <p className="text-[15px] text-muted">Không bắt buộc. Linguo sẽ cho biết thời hạn có khả thi không, không hứa chắc kết quả.</p>

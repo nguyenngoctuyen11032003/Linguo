@@ -32,8 +32,10 @@ const MODES: { id: SpeakingMode; label: string }[] = [
 
 function PrivacyNote() {
   return (
-    <p className="flex items-start gap-2 rounded-2xl border border-border px-4 py-3 text-sm text-muted">
-      <Lock aria-hidden className="mt-0.5 size-4 shrink-0" />
+    <p className="flex items-start gap-3 rounded-2xl bg-success/8 px-4 py-3 text-[13px] text-muted ring-1 ring-success/25 ring-inset">
+      <span aria-hidden="true" className="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-success/15 text-success-text">
+        <Lock className="size-4" />
+      </span>
       <span>
         Giọng nói của bạn chỉ nằm trong bộ nhớ của trình duyệt lúc luyện và sẽ biến mất khi bạn rời trang này. Linguo không tải lên hay lưu bản ghi nào.
       </span>

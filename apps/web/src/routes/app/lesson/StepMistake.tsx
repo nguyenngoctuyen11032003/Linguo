@@ -8,22 +8,22 @@ export function StepMistake({ blocks }: { blocks: LessonBlock[] }) {
   return (
     <ul className="space-y-3">
       {mistakes.map((mistake, i) => (
-        <li key={i} className="space-y-3 rounded-2xl border border-border bg-surface-solid p-4">
-          <p className="flex items-start gap-2">
+        <li key={i} className="card space-y-2.5 p-4">
+          <p className="flex items-start gap-2 rounded-2xl bg-error/8 px-3 py-2.5">
             <X aria-hidden className="mt-1 size-4 shrink-0 text-error" />
             <span className="font-semibold text-error-text">Sai:</span>
             <s lang={mistake.target_lang} className="decoration-error/60">
               {mistake.wrong}
             </s>
           </p>
-          <p className="flex items-start gap-2">
+          <p className="flex items-start gap-2 rounded-2xl bg-success/10 px-3 py-2.5">
             <Check aria-hidden className="mt-1 size-4 shrink-0 text-success" />
             <span className="font-semibold text-success-text">Đúng:</span>
             <span lang={mistake.target_lang} className="font-semibold">
               {mistake.right}
             </span>
           </p>
-          <p className="text-[15px] text-muted">{mistake.note.vi}</p>
+          <p className="px-1 text-[15px] text-muted">{mistake.note.vi}</p>
         </li>
       ))}
     </ul>

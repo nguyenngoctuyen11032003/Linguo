@@ -81,7 +81,7 @@ export function ActivityChart({ days }: { days: ActivityDay[] }) {
                   y={HEIGHT - h}
                   width={BAR}
                   height={h}
-                  rx={2}
+                  rx={4}
                   className={cn(isToday ? 'fill-accent' : rest ? 'fill-primary/45' : 'fill-primary')}
                   style={{ transformBox: 'fill-box', transformOrigin: 'bottom' }}
                   initial={reduceMotion ? false : { scaleY: 0 }}
@@ -110,7 +110,7 @@ export function ActivityChart({ days }: { days: ActivityDay[] }) {
       <div
         data-testid="activity-axis"
         aria-hidden="true"
-        className="mt-1 grid text-[11px] leading-tight text-muted"
+        className="mt-1.5 grid text-xs leading-tight text-muted"
         style={{ gridTemplateColumns: `repeat(${Math.max(1, count)}, minmax(0, 1fr))` }}
       >
         {days.map((day, i) => {

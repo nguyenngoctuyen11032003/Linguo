@@ -7,7 +7,7 @@ export function StepObjective({ lesson }: { lesson: LessonPayload['lesson'] }) {
   const intro = lesson.body.filter((b): b is Objective => b.type === 'objective');
   return (
     <div className="space-y-5">
-      <p className="inline-flex items-center gap-2 text-[15px] text-muted">
+      <p className="inline-flex items-center gap-2 rounded-full bg-text/[0.05] px-3 py-1.5 text-[14px] font-semibold text-muted ring-1 ring-border ring-inset">
         <Clock aria-hidden className="size-4" />
         Khoảng {lesson.estimated_minutes} phút
       </p>
@@ -15,18 +15,21 @@ export function StepObjective({ lesson }: { lesson: LessonPayload['lesson'] }) {
         <p key={i}>{block.text.vi}</p>
       ))}
       {lesson.objectives.length > 0 && (
-        <section aria-labelledby="lesson-objectives" className="space-y-2">
-          <h3 id="lesson-objectives" className="text-base font-bold">
+        <section aria-labelledby="lesson-objectives" className="card space-y-3 p-5">
+          <h3 id="lesson-objectives" className="eyebrow flex items-center gap-1.5">
+            <Target aria-hidden className="size-3.5 text-accent" />
             Mục tiêu bài học
           </h3>
-          <ul className="space-y-2">
+          <ol className="space-y-3">
             {lesson.objectives.map((objective, i) => (
               <li key={i} className="flex gap-3">
-                <Target aria-hidden className="mt-1 size-4 shrink-0 text-primary" />
-                <span>{objective.vi}</span>
+                <span aria-hidden="true" className="stat-num w-7 shrink-0 pt-1 text-[24px] text-primary">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span className="font-medium">{objective.vi}</span>
               </li>
             ))}
-          </ul>
+          </ol>
         </section>
       )}
     </div>

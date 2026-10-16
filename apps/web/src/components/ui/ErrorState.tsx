@@ -21,8 +21,10 @@ export function ErrorState({
   const Heading = headingLevel;
   return (
     <SolidCard role="alert" className="flex flex-col items-center gap-3 px-6 py-8 text-center">
-      <AlertTriangle aria-hidden className="size-8 text-error" />
-      <Heading className="text-lg font-bold">{title}</Heading>
+      <span className="inline-flex size-14 items-center justify-center rounded-full bg-error/12 text-error ring-1 ring-error/25 ring-inset">
+        <AlertTriangle aria-hidden className="size-7" />
+      </span>
+      <Heading className="text-lg font-extrabold tracking-[-0.01em]">{title}</Heading>
       <p className="max-w-sm text-[15px] text-muted">{description}</p>
       {onRetry && (
         <Button variant="ghost" onClick={onRetry}>

@@ -64,17 +64,17 @@ export function SkipSkillSheet({ open, skillLabel, last = false, busy, onClose, 
             animate={{ y: 0, opacity: 1 }}
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}
-            className="absolute inset-x-0 bottom-0 mx-auto max-h-[90dvh] max-w-xl overflow-y-auto rounded-t-[28px] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3 sm:bottom-6 sm:rounded-[28px] sm:border"
+            className="absolute inset-x-0 bottom-0 mx-auto max-h-[90dvh] max-w-xl overflow-y-auto rounded-t-[2rem] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3 shadow-[var(--shadow-dock)] sm:bottom-6 sm:rounded-[2rem] sm:border"
           >
             <div aria-hidden="true" className="mx-auto mb-3 h-1.5 w-10 rounded-full bg-text/20" />
-            <h2 id={titleId} className="text-lg font-bold">
+            <h2 id={titleId} className="font-display text-[28px] font-extrabold uppercase leading-none">
               Bỏ qua phần {skillLabel.toLowerCase()}?
             </h2>
-            <p id={descriptionId} className="mt-1 text-[15px] text-muted">
+            <p id={descriptionId} className="mt-2 text-[15px] text-muted">
               Kết quả sẽ ghi “chưa đủ dữ liệu” cho kỹ năng này.{' '}
               {last ? 'Đây là phần cuối nên bài kiểm tra sẽ kết thúc và bạn xem kết quả ngay.' : 'Bạn vẫn làm tiếp các phần còn lại.'}
             </p>
-            <p id={legendId} className="mt-4 text-sm font-semibold">
+            <p id={legendId} className="eyebrow mt-5 text-text">
               Vì sao bạn muốn bỏ qua?
             </p>
             <div className="mt-2">

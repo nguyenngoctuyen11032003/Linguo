@@ -26,31 +26,31 @@ export function PrivacyNote({ headingLevel = 'h2' }: { headingLevel?: 'h2' | 'h3
     <SolidCard>
       <section aria-labelledby="class-privacy-title" className="space-y-4">
         <div>
-          <Heading id="class-privacy-title" className="text-lg font-bold tracking-[-0.02em]">
+          <Heading id="class-privacy-title" className="text-[19px] font-extrabold tracking-[-0.02em]">
             Giáo viên thấy gì về bạn?
           </Heading>
           <p className="mt-1 text-[15px] text-muted">
             Chỉ các con số tổng hợp về việc học trong ngôn ngữ của lớp, và chỉ khi bạn còn ở trong lớp.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div className="space-y-2">
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div className="space-y-2 rounded-2xl bg-primary/8 p-4 ring-1 ring-primary/20 ring-inset">
             <h3 className="flex items-center gap-2 text-[15px] font-semibold">
               <Eye aria-hidden className="size-5 shrink-0 text-primary" />
               Giáo viên thấy
             </h3>
-            <ul className="list-disc space-y-1 pl-6 text-[15px]">
+            <ul className="list-disc space-y-1 pl-5 text-[15px] marker:text-muted">
               {SEEN.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-2 rounded-2xl bg-success/8 p-4 ring-1 ring-success/20 ring-inset">
             <h3 className="flex items-center gap-2 text-[15px] font-semibold">
-              <EyeOff aria-hidden className="size-5 shrink-0 text-primary" />
+              <EyeOff aria-hidden className="size-5 shrink-0 text-success-text" />
               Giáo viên không thấy
             </h3>
-            <ul className="list-disc space-y-1 pl-6 text-[15px]">
+            <ul className="list-disc space-y-1 pl-5 text-[15px] marker:text-muted">
               {NOT_SEEN.map((item) => (
                 <li key={item}>{item}</li>
               ))}

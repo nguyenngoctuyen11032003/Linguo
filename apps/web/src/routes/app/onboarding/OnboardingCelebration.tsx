@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Check } from 'lucide-react';
 import { useNavigate } from 'react-router';
 import { LEVEL_INFO, type LevelCode } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
@@ -28,6 +29,9 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
 
   return (
     <main id="main" className="mx-auto flex min-h-hero w-full max-w-md flex-col items-center justify-center gap-6 px-safe py-10 text-center">
+      <span aria-hidden="true" className="grid size-16 place-items-center rounded-full bg-success text-bg shadow-[0_5px_0_color-mix(in_srgb,var(--success)_55%,black)] ring-8 ring-success/15">
+        <Check className="size-8" strokeWidth={3.5} />
+      </span>
       <RouteLine
         title={`Lộ trình từ ${from} tới ${to}`}
         viewBox="0 0 240 70"
@@ -44,18 +48,30 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
           },
         ]}
       />
-      <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
+      <h1
+        ref={headingRef}
+        tabIndex={-1}
+        className="font-display text-[clamp(44px,14vw,64px)] font-extrabold uppercase leading-[0.95] tracking-[-0.005em] focus:outline-none"
+      >
         Lộ trình đã sẵn sàng!
       </h1>
       {/* The estimate counts up (spec onboarding step 6); CountUp shows the final numbers at once under reduced motion. */}
-      <p data-testid="celebration-estimate" className="text-[17px] text-muted">
-        Ước lượng khoảng <CountUp to={estimate.min} durationMs={COUNT_MS} className="tabular-nums" />
-        {estimate.min !== estimate.max && (
-          <>
-            –<CountUp to={estimate.max} durationMs={COUNT_MS} className="tabular-nums" />
-          </>
-        )}{' '}
-        {estimate.unit} để đạt {to}.
+      <p
+        data-testid="celebration-estimate"
+        className="card relative isolate flex w-full flex-col items-center overflow-hidden px-5 pb-5 pt-4 text-[15px] font-semibold text-muted before:absolute before:-top-16 before:left-1/2 before:-z-10 before:size-48 before:-translate-x-1/2 before:rounded-full before:bg-accent/20 before:blur-3xl"
+      >
+        <span className="eyebrow">Ước lượng khoảng </span>
+        <span className="stat-num mt-3 pr-1 text-[clamp(64px,22vw,96px)] text-text">
+          <CountUp to={estimate.min} durationMs={COUNT_MS} />
+          {estimate.min !== estimate.max && (
+            <>
+              –<CountUp to={estimate.max} durationMs={COUNT_MS} />
+            </>
+          )}
+        </span>{' '}
+        <span className="mt-2">
+          {estimate.unit} để đạt <span className="font-bold text-accent-text">{to}</span>.
+        </span>
       </p>
       {unsure ? (
         <>

@@ -37,7 +37,7 @@ export function SettingsJumpList() {
             <a
               href={`#${item.id}`}
               onClick={(event) => onClick(event, item.id)}
-              className="inline-flex min-h-11 items-center whitespace-nowrap rounded-full border border-border bg-surface-solid px-4 text-sm font-semibold text-primary hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45"
+              className="glass inline-flex min-h-11 items-center whitespace-nowrap rounded-full px-4 text-sm font-semibold text-text hover:bg-primary/10 hover:text-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45"
             >
               {item.label}
             </a>

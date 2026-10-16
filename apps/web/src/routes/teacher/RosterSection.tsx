@@ -21,7 +21,7 @@ export function RosterSection({ roster, api }: { roster: TeacherRoster; api: Cla
   return (
     <section aria-labelledby="roster-title" className="space-y-3">
       <div>
-        <h2 id="roster-title" className="text-lg font-bold">
+        <h2 id="roster-title" className="text-xl font-extrabold tracking-[-0.02em]">
           Học viên ({members.length})
         </h2>
         <p className="mt-1 flex items-start gap-2 text-[15px] text-muted">
@@ -40,7 +40,7 @@ export function RosterSection({ roster, api }: { roster: TeacherRoster; api: Cla
             <caption className="sr-only">
               Tiến độ của {members.length} học viên. Số phút và số bài tính trong 7 ngày gần nhất; tỉ lệ ôn đúng tính trong 30 ngày.
             </caption>
-            <thead className="border-b border-border text-sm text-muted">
+            <thead className="border-b border-border bg-text/[0.03] text-xs uppercase tracking-[0.06em] text-muted">
               <tr>
                 <th scope="col" className={TH}>
                   Học viên

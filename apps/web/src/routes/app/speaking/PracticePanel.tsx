@@ -59,9 +59,9 @@ function RatingGroup({
           <label
             key={n}
             className={cn(
-              'inline-flex min-h-11 cursor-pointer items-center rounded-full border px-4 text-[15px] font-medium transition-colors',
+              'inline-flex min-h-11 cursor-pointer items-center rounded-full border-2 px-4 text-[15px] font-bold transition-[translate,box-shadow,background-color] active:translate-y-[2px]',
               'has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/40',
-              value === n ? 'border-primary bg-primary/12 text-primary' : 'border-border hover:bg-text/5',
+              value === n ? 'border-primary bg-primary/12 text-primary shadow-[0_3px_0_var(--primary-depth)] active:shadow-[0_1px_0_var(--primary-depth)]' : 'border-border bg-surface-solid shadow-[0_3px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
             )}
           >
             <input
@@ -152,7 +152,13 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
               </Button>
             )}
             {status === 'recording' && (
-              <span className="text-[15px] font-medium tabular-nums text-muted">Đang ghi: {recorder.seconds} giây</span>
+              <span className="inline-flex items-center gap-2 text-[15px] font-semibold tabular-nums text-error-text">
+                <span aria-hidden="true" className="relative flex size-2.5">
+                  <span className="absolute inline-flex size-full rounded-full bg-error opacity-70 motion-safe:animate-ping" />
+                  <span className="relative inline-flex size-2.5 rounded-full bg-error" />
+                </span>
+                Đang ghi: {recorder.seconds} giây
+              </span>
             )}
           </div>
           {status === 'idle' && <p className="text-sm text-muted">Nhấn nút, cho phép micro và nói thật tự nhiên. Không cần hoàn hảo.</p>}
@@ -189,10 +195,10 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
             rows={3}
             value={stt.transcript}
             onChange={(e) => stt.setTranscript(e.target.value)}
-            className={cn('block w-full rounded-2xl border border-border bg-surface-solid p-3 text-base text-text', FOCUS_RING)}
+            className={cn('block w-full rounded-2xl border border-input-border bg-surface-solid p-3 text-base text-text', FOCUS_RING)}
           />
           {hint && (
-            <div className="rounded-2xl bg-primary/8 p-3 text-sm" data-testid="overlap-hint">
+            <div className="rounded-2xl bg-primary/8 p-3.5 text-sm ring-1 ring-primary/20 ring-inset" data-testid="overlap-hint">
               <p>{OVERLAP_TEXT[hint.level]}</p>
               {hint.missing.length > 0 && hint.level !== 'close' && (
                 <p className="mt-1 text-muted">
@@ -208,7 +214,7 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
       )}
 
       {selfPractice && (
-        <section aria-labelledby={`${transcriptId}-self`} className="space-y-3 rounded-2xl border border-border p-4">
+        <section aria-labelledby={`${transcriptId}-self`} className="space-y-3 rounded-2xl bg-text/[0.03] p-4 ring-1 ring-border ring-inset">
           <h3 id={`${transcriptId}-self`} className="text-lg font-bold tracking-[-0.02em]">
             Nghe và tự luyện
           </h3>

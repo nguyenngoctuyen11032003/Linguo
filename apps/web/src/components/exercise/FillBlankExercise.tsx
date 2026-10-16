@@ -26,7 +26,7 @@ export function FillBlankExercise({ prompt, lang, values, onChange, onSubmitRequ
     .trim();
 
   return (
-    <p lang={lang} className="min-w-0 text-[18px] leading-[3.25rem] break-words">
+    <p lang={lang} className="min-w-0 text-[20px] font-medium leading-[3.5rem] break-words">
       {parts.map((part, i) => {
         if (part.kind === 'text') return <Fragment key={i}>{part.text}</Fragment>;
         const index = blankIds.indexOf(part.id);

@@ -20,8 +20,18 @@ export function QuestionNavigator({ questions, currentId, onGo }: QuestionNaviga
 
   return (
     <nav aria-label="Danh sách câu hỏi" className="min-w-0">
-      <p className="mb-2 text-sm text-muted">
-        Đã trả lời {answered}/{questions.length} câu
+      <p className="mb-3 flex items-end gap-2">
+        <span className="sr-only">
+          Đã trả lời {answered}/{questions.length} câu
+        </span>
+        <span aria-hidden="true" className="stat-num text-[40px]">
+          {answered}
+        </span>
+        <span aria-hidden="true" className="pb-0.5 text-[13px] font-semibold leading-tight text-muted">
+          /{questions.length}
+          <br />
+          đã trả lời
+        </span>
       </p>
       <div className="max-h-[40vh] space-y-3 overflow-y-auto overscroll-contain p-1 md:max-h-none">
         {EXAM_SECTIONS.map((section) => {
@@ -30,7 +40,7 @@ export function QuestionNavigator({ questions, currentId, onGo }: QuestionNaviga
           const labelId = `${baseId}-${section}`;
           return (
             <div key={section} role="group" aria-labelledby={labelId}>
-              <h3 id={labelId} className="mb-1.5 text-xs font-bold uppercase tracking-wide text-muted">
+              <h3 id={labelId} className="eyebrow mb-1.5">
                 {SECTION_LABELS[section]}
               </h3>
               <ul className="grid grid-cols-[repeat(auto-fill,minmax(2.75rem,1fr))] gap-1.5">
@@ -48,10 +58,10 @@ export function QuestionNavigator({ questions, currentId, onGo }: QuestionNaviga
                         aria-current={current ? 'step' : undefined}
                         aria-label={`Câu ${q.seq}: ${states}`}
                         className={cn(
-                          'relative flex h-11 w-full flex-col items-center justify-center rounded-xl border text-sm font-semibold tabular-nums transition-colors',
+                          'relative flex h-11 w-full flex-col items-center justify-center rounded-2xl border text-sm font-bold tabular-nums transition-[background-color,scale] active:scale-95',
                           'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
-                          done ? 'border-primary/50 bg-primary/10' : 'border-dashed border-input-border bg-surface-solid',
-                          current && 'ring-2 ring-text ring-offset-2 ring-offset-bg',
+                          done ? 'border-primary/40 bg-primary/12' : 'border-dashed border-input-border bg-surface-solid',
+                          current && 'border-primary ring-2 ring-primary ring-offset-2 ring-offset-bg',
                         )}
                       >
                         <span aria-hidden="true">{q.seq}</span>
@@ -82,7 +92,7 @@ export function QuestionNavigator({ questions, currentId, onGo }: QuestionNaviga
           Đánh dấu
         </li>
         <li className="inline-flex items-center gap-1">
-          <span className="inline-block size-3 rounded-sm ring-2 ring-text" />
+          <span className="inline-block size-3 rounded-sm ring-2 ring-primary" />
           Đang làm
         </li>
       </ul>

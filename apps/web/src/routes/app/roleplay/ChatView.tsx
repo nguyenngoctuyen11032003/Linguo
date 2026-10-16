@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
-import { Check, Circle, Flag, Lightbulb, Mic, Pencil, Square, Volume2 } from 'lucide-react';
+import { Check, Flag, Lightbulb, Mic, Pencil, Sparkles, Square, Volume2 } from 'lucide-react';
 import type { RoleplayScenario } from '@linguo/shared';
 import { AiFallback, AiLoading, AiTextarea, type QuotaGate } from '@/components/ai';
 import { Button } from '@/components/ui/Button';
@@ -29,13 +29,21 @@ export const ROLEPLAY_AI_NOTE =
 
 function GoalChecklist({ scenario, reached }: { scenario: RoleplayScenario; reached: string[] }) {
   return (
-    <ul aria-label="Mục tiêu của tình huống" className="space-y-1">
+    <ul aria-label="Mục tiêu của tình huống" className="space-y-1.5">
       {scenario.goals.map((g) => {
         const done = reached.includes(g.key);
         return (
-          <li key={g.key} className="flex items-start gap-2 text-[15px]">
-            {done ? <Check aria-hidden className="mt-0.5 size-4 shrink-0 text-success" /> : <Circle aria-hidden className="mt-0.5 size-4 shrink-0 text-muted" />}
-            <span className={cn(done && 'font-medium')}>
+          <li key={g.key} className="flex items-start gap-2.5 text-[15px]">
+            <span
+              aria-hidden="true"
+              className={cn(
+                'mt-0.5 inline-flex size-5 shrink-0 items-center justify-center rounded-full transition-colors',
+                done ? 'bg-success text-white' : 'ring-2 ring-border ring-inset',
+              )}
+            >
+              {done && <Check className="size-3.5" strokeWidth={3} />}
+            </span>
+            <span className={cn(done ? 'font-semibold' : 'text-muted')}>
               {g.label_vi}
               <span className="sr-only">{done ? ' (đã đạt)' : ' (chưa đạt)'}</span>
             </span>
@@ -49,9 +57,9 @@ function GoalChecklist({ scenario, reached }: { scenario: RoleplayScenario; reac
 function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' | 'ko' | 'ja' }) {
   if (message.corrections.length === 0) return null;
   return (
-    <section aria-label="Gợi ý sửa câu" className="mt-1.5 space-y-1.5 rounded-2xl border border-border px-3 py-2 text-sm">
+    <section aria-label="Gợi ý sửa câu" className="mt-1.5 space-y-1.5 rounded-2xl bg-warn/8 px-3.5 py-2.5 text-sm ring-1 ring-warn/30 ring-inset">
       <h3 className="flex items-center gap-1.5 font-semibold">
-        <Pencil aria-hidden className="size-3.5 text-primary" />
+        <Pencil aria-hidden className="size-3.5 text-gold" />
         Gợi ý sửa câu
       </h3>
       <ul className="space-y-1.5">
@@ -91,15 +99,25 @@ function Bubble({
   const partner = message.role === 'partner';
   const playing = tts.speakingText === message.text;
   return (
-    <li className={cn('flex flex-col', partner ? 'items-start' : 'items-end')}>
-      <div className={cn('max-w-[92%] space-y-1', partner ? '' : 'items-end')}>
-        <p className="px-1 text-xs font-medium text-muted">{partner ? 'Đối tác AI' : 'Bạn'}</p>
+    <li className={cn('flex gap-2', partner ? 'justify-start' : 'justify-end')}>
+      {partner && (
+        <span
+          aria-hidden="true"
+          className="mt-5 inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-strong text-on-primary shadow-[0_6px_16px_-6px_var(--primary)]"
+        >
+          <Sparkles className="size-4" />
+        </span>
+      )}
+      <div className={cn('flex min-w-0 max-w-[86%] flex-col space-y-1', partner ? 'items-start' : 'items-end')}>
+        <p className="px-1 text-xs font-semibold text-muted">{partner ? 'Đối tác AI' : 'Bạn'}</p>
         <p
           lang={lang}
           className={cn(
-            'whitespace-pre-wrap break-words rounded-3xl px-4 py-2.5 text-base leading-relaxed',
-            partner ? 'rounded-tl-lg border border-border bg-surface-solid' : 'rounded-tr-lg bg-primary/12',
-            message.status === 'failed' && 'border border-dashed border-error',
+            'whitespace-pre-wrap break-words rounded-[1.5rem] px-4 py-2.5 text-base leading-relaxed',
+            partner
+              ? 'rounded-tl-md border border-border bg-surface-solid shadow-[var(--card-sheen),var(--shadow-card)]'
+              : 'rounded-tr-md bg-primary text-on-primary shadow-[0_8px_20px_-10px_var(--primary)]',
+            message.status === 'failed' && 'border-2 border-dashed border-error bg-error/10 text-text shadow-none',
           )}
         >
           {message.text}
@@ -124,7 +142,7 @@ function Bubble({
           </div>
         )}
         {partner && latestPartner && message.hint_vi && (
-          <p className="flex items-start gap-1.5 rounded-2xl bg-primary/10 px-3 py-2 text-sm">
+          <p className="flex items-start gap-1.5 rounded-2xl bg-primary/10 px-3.5 py-2.5 text-sm ring-1 ring-primary/20 ring-inset">
             <Lightbulb aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
             <span className="break-words">
               <span className="font-semibold">Gợi ý cách trả lời: </span>
@@ -231,22 +249,36 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
 
   return (
     <div className="space-y-4">
-      <SolidCard className="space-y-3 p-4">
-        <div className="flex flex-wrap items-start justify-between gap-2">
+      <SolidCard className="space-y-4 p-4">
+        <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <h2 ref={headingRef} tabIndex={-1} className="text-lg font-bold leading-snug focus:outline-none">
+            <h2 ref={headingRef} tabIndex={-1} className="text-[19px] font-extrabold leading-snug tracking-[-0.02em] focus:outline-none">
               {scenario.title_vi}
             </h2>
-            <p className="text-sm text-muted">Đối tác: {scenario.partner_role_vi} · nói {LANGUAGE_NAME[lang]}</p>
+            <p className="mt-0.5 text-[13px] text-muted">Đối tác: {scenario.partner_role_vi} · nói {LANGUAGE_NAME[lang]}</p>
           </div>
-          <p className="shrink-0 rounded-full bg-text/5 px-3 py-1 text-sm font-semibold tabular-nums">
-            Lượt {Math.min(turns, MAX_TURNS)}/{MAX_TURNS}
-          </p>
+          <div className="shrink-0 text-right">
+            <p className="sr-only">
+              Lượt {Math.min(turns, MAX_TURNS)}/{MAX_TURNS}
+            </p>
+            <p aria-hidden="true" className="flex items-baseline justify-end gap-0.5">
+              <span className="stat-num text-[40px]">{Math.min(turns, MAX_TURNS)}</span>
+              <span className="text-[13px] font-semibold text-muted">/{MAX_TURNS}</span>
+            </p>
+            <p aria-hidden="true" className="eyebrow mt-1">
+              Lượt
+            </p>
+          </div>
+        </div>
+        <div aria-hidden="true" className="flex gap-1">
+          {Array.from({ length: MAX_TURNS }, (_, i) => (
+            <span key={i} className={cn('h-1 flex-1 rounded-full', i < turns ? 'bg-accent' : 'bg-text/10')} />
+          ))}
         </div>
         <GoalChecklist scenario={scenario} reached={session.goals} />
       </SolidCard>
 
-      <p className="px-1 text-sm text-muted">{ROLEPLAY_AI_NOTE}</p>
+      <p className="px-1 text-[13px] text-muted">{ROLEPLAY_AI_NOTE}</p>
 
       <div role="log" aria-label="Cuộc trò chuyện" aria-live="polite" aria-relevant="additions">
         <ol className="space-y-3">
@@ -274,8 +306,9 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
 
       {over ? (
         <div ref={tailRef}>
-          <SolidCard className="space-y-3 p-4">
-            <p className="font-semibold">Buổi trò chuyện đã xong, bạn làm tốt lắm!</p>
+          <SolidCard className="relative isolate space-y-3 overflow-hidden p-5">
+            <div aria-hidden="true" className="absolute -right-12 -top-12 -z-10 size-40 rounded-full bg-accent/20 blur-3xl" />
+            <p className="font-display text-[28px] font-extrabold uppercase leading-none">Buổi trò chuyện đã xong, bạn làm tốt lắm!</p>
             <p className="text-[15px] text-muted">
               {session.goals.length >= scenario.goals.length
                 ? 'Bạn đã đạt mọi mục tiêu của tình huống.'
@@ -289,9 +322,9 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
         </div>
       ) : (
         <form onSubmit={submit} noValidate className="space-y-3">
-          <div ref={tailRef} className="space-y-3">
+          <div ref={tailRef} className="glass space-y-2.5 rounded-[1.75rem] p-2.5 shadow-[var(--shadow-dock)]">
             <div ref={composerRef} className="space-y-1.5">
-              <label htmlFor={`${voiceId}-msg`} className="block px-1 text-sm font-medium">
+              <label htmlFor={`${voiceId}-msg`} className="eyebrow block px-2 pt-1">
                 Tin nhắn của bạn (bằng {LANGUAGE_NAME[lang]})
               </label>
               <AiTextarea

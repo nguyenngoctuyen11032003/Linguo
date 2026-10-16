@@ -12,10 +12,28 @@ import { feedbackAiRequests, type AiSheetState, type ExerciseAiInput } from './a
 import { ERROR_TAG_MESSAGES } from './exercise-utils';
 import { JAPANESE_SCRIPT_RE } from './machine-speech';
 
-const VERDICT_UI: Record<Verdict, { icon: string; label: string; tone: string; iconTone: string }> = {
-  correct: { icon: '✓', label: 'Chính xác', tone: 'border-success/50 bg-success/10', iconTone: 'bg-success text-bg' },
-  almost: { icon: '≈', label: 'Gần đúng', tone: 'border-warn/60 bg-warn/10', iconTone: 'bg-warn text-on-warn' },
-  incorrect: { icon: '✗', label: 'Chưa đúng', tone: 'border-error/50 bg-error/10', iconTone: 'bg-error text-bg' },
+const VERDICT_UI: Record<Verdict, { icon: string; label: string; tone: string; iconTone: string; titleTone: string }> = {
+  correct: {
+    icon: '✓',
+    label: 'Chính xác',
+    tone: 'border-success/45 bg-success/12 shadow-[0_4px_0_color-mix(in_srgb,var(--success)_35%,transparent)]',
+    iconTone: 'bg-success text-bg shadow-[0_3px_0_color-mix(in_srgb,var(--success)_55%,black)]',
+    titleTone: 'text-success-text',
+  },
+  almost: {
+    icon: '≈',
+    label: 'Gần đúng',
+    tone: 'border-warn/55 bg-warn/12 shadow-[0_4px_0_color-mix(in_srgb,var(--warn)_35%,transparent)]',
+    iconTone: 'bg-warn text-on-warn shadow-[0_3px_0_color-mix(in_srgb,var(--warn)_55%,black)]',
+    titleTone: 'text-text',
+  },
+  incorrect: {
+    icon: '✗',
+    label: 'Chưa đúng',
+    tone: 'border-error/45 bg-error/10 shadow-[0_4px_0_color-mix(in_srgb,var(--error)_35%,transparent)]',
+    iconTone: 'bg-error text-bg shadow-[0_3px_0_color-mix(in_srgb,var(--error)_55%,black)]',
+    titleTone: 'text-error-text',
+  },
 };
 
 export interface FeedbackPanelProps {
@@ -131,37 +149,41 @@ function FeedbackCard({
       variants={reveal('fadeUp', reduceMotion)}
       initial="hidden"
       animate="shown"
-      className={cn('min-w-0 rounded-3xl border p-4 break-words', ui.tone)}
+      className={cn('min-w-0 rounded-[1.75rem] border-2 p-5 break-words', ui.tone)}
     >
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3.5">
         <span
           aria-hidden="true"
-          className={cn('inline-flex size-9 shrink-0 items-center justify-center rounded-full text-lg font-bold', ui.iconTone)}
+          className={cn('inline-flex size-12 shrink-0 items-center justify-center rounded-full text-2xl font-black', ui.iconTone)}
         >
           {ui.icon}
         </span>
-        <h3 ref={headingRef} tabIndex={-1} className="text-xl font-bold leading-tight focus:outline-none">
+        <h3
+          ref={headingRef}
+          tabIndex={-1}
+          className={cn('font-display text-[30px] font-extrabold uppercase leading-none tracking-[0.005em] focus:outline-none', ui.titleTone)}
+        >
           {ui.label}
         </h3>
       </div>
       {tagMessages.length > 0 && (
-        <ul className="mt-3 space-y-1 text-[16px] font-medium">
+        <ul className="mt-4 space-y-1.5 text-[16px] font-semibold">
           {tagMessages.map((message) => (
             <li key={message}>{withLanguageSpans(message)}</li>
           ))}
         </ul>
       )}
-      {result.feedback_vi && <p className="mt-2 text-[16px]">{result.feedback_vi}</p>}
+      {result.feedback_vi && <p className="mt-2 text-[16px] leading-relaxed">{result.feedback_vi}</p>}
       {result.display_answer && (
-        <p className="mt-3 text-[17px]">
-          <span className="block text-sm font-semibold text-text">Đáp án</span>
-          <span lang={answerLang} className="font-semibold">
+        <p className="mt-4 rounded-2xl bg-surface-solid/70 px-4 py-3 text-[18px] ring-1 ring-border ring-inset">
+          <span className="block text-xs font-bold uppercase tracking-[0.08em] text-text">Đáp án</span>
+          <span lang={answerLang} className="mt-1 block font-bold leading-snug">
             {result.display_answer}
           </span>
         </p>
       )}
-      {result.explanation && <p className="mt-2 text-[16px] text-text">{result.explanation.vi}</p>}
-      {canRetry && <p className="mt-3 text-sm text-text">Bạn còn một lần thử. Thử lại hoặc xem đáp án.</p>}
+      {result.explanation && <p className="mt-3 text-[16px] leading-relaxed text-text">{result.explanation.vi}</p>}
+      {canRetry && <p className="mt-3 text-sm font-medium text-text">Bạn còn một lần thử. Thử lại hoặc xem đáp án.</p>}
     </motion.div>
   );
 }

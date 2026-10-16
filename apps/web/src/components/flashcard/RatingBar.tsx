@@ -15,6 +15,14 @@ export interface RatingBarProps {
   className?: string;
 }
 
+/** Each grade gets its own tint and ledge; the word, interval and key still carry the meaning without colour. */
+const TONES: Record<Rating, string> = {
+  1: 'border-error/55 bg-error/10 text-error-text shadow-[0_4px_0_var(--error)] not-disabled:hover:bg-error/15 not-disabled:active:shadow-[0_1px_0_var(--error)]',
+  2: 'border-warn/60 bg-warn/12 text-gold shadow-[0_4px_0_var(--warn)] not-disabled:hover:bg-warn/18 not-disabled:active:shadow-[0_1px_0_var(--warn)]',
+  3: 'border-success/55 bg-success/12 text-success-text shadow-[0_4px_0_var(--success)] not-disabled:hover:bg-success/18 not-disabled:active:shadow-[0_1px_0_var(--success)]',
+  4: 'border-primary/55 bg-primary/10 text-primary shadow-[0_4px_0_var(--primary)] not-disabled:hover:bg-primary/15 not-disabled:active:shadow-[0_1px_0_var(--primary)]',
+};
+
 function isTextEntry(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
   return target.isContentEditable || target.closest('input, textarea, select') !== null;
@@ -44,10 +52,10 @@ export function RatingBar({ previews, onRate, revealed, submitting = false, clas
 
   return (
     <div role="group" aria-labelledby={labelId} aria-busy={submitting || undefined} className={cn('min-w-0', className)}>
-      <p id={labelId} className="mb-2 text-sm font-medium text-muted">
+      <p id={labelId} className="mb-2.5 text-center text-[13px] font-semibold text-muted">
         {revealed ? 'Bạn nhớ thẻ này thế nào?' : 'Lật thẻ để chấm'}
       </p>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-4 gap-2 pb-1">
         {RATINGS.map((rating) => {
           const interval = formatInterval(previews[RATING_PREVIEW_KEY[rating]].interval_minutes);
           return (
@@ -60,18 +68,15 @@ export function RatingBar({ previews, onRate, revealed, submitting = false, clas
               aria-label={`${RATING_LABELS[rating]}, ôn lại sau ${interval}`}
               data-rating={rating}
               className={cn(
-                'flex min-h-14 min-w-0 flex-col items-center justify-center rounded-2xl px-1 py-2 text-center leading-tight',
-                'transition-[scale,background-color] duration-200 not-disabled:active:scale-[0.97]',
+                'flex min-h-14 min-w-0 flex-col items-center justify-center gap-1 rounded-[1.25rem] border-2 px-1 pb-2.5 pt-2 text-center leading-tight',
+                'transition-[translate,box-shadow,background-color] duration-150 not-disabled:active:translate-y-[3px] disabled:shadow-none',
                 DISABLED_NEUTRAL,
-                rating === 3
-                  ? 'bg-primary text-on-primary not-disabled:hover:bg-primary-strong'
-                  : 'border border-input-border bg-surface-solid text-text not-disabled:hover:bg-text/5',
-                rating === 1 && 'border-error/60',
+                TONES[rating],
               )}
             >
-              <span className="text-[16px] font-semibold">{RATING_LABELS[rating]}</span>
-              <span className="text-[13px] font-medium">{interval}</span>
-              <span aria-hidden="true" className="hidden text-[11px] font-medium sm:block">
+              <span className="text-[15px] font-extrabold">{RATING_LABELS[rating]}</span>
+              <span className="stat-num text-[22px] text-text">{interval}</span>
+              <span aria-hidden="true" className="hidden text-xs font-semibold opacity-80 sm:block">
                 Phím {rating}
               </span>
             </button>
