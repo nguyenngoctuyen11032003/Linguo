@@ -81,6 +81,34 @@ describe('ExamHubPage', () => {
     expect(within(topikII!).queryByRole('note')).not.toBeInTheDocument();
   });
 
+  it('opens on the form a teacher assigned (?de=) and can go back to every form', async () => {
+    const user = userEvent.setup();
+    mocks.startExam.mockResolvedValue(examAttempt({ mode: 'section', section: 'reading', deadline_at: null }));
+    renderWithProviders(<ExamHubPage />, { route: `/app/luyen-thi?de=${topikIForm().form_id}`, paths: { paths: [KO_TOPIK_II] } });
+    expect(screen.getByText('Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.')).toBeInTheDocument();
+    // Only the assigned form, even though the path goal prefers TOPIK II; no family filter.
+    expect(screen.getAllByRole('article').map((a) => within(a).getByRole('heading', { level: 2 }).textContent)).toEqual([topikIForm().title_vi]);
+    expect(screen.queryByRole('radiogroup', { name: 'Lọc theo loại đề' })).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Luyện theo phần' }));
+    await user.click(screen.getByRole('button', { name: 'Luyện phần Đọc' }));
+    expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), expect.objectContaining({ formId: topikIForm().form_id, mode: 'section' }));
+  });
+
+  it('goes back to every form from an assigned form', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<ExamHubPage />, { route: `/app/luyen-thi?de=${topikIForm().form_id}`, paths: { paths: [KO_TOPIK_II] } });
+    await user.click(screen.getByRole('button', { name: 'Xem tất cả đề' }));
+    expect(screen.queryByText(/Đề giáo viên giao cho bạn/)).not.toBeInTheDocument();
+    expect(screen.getByRole('radiogroup', { name: 'Lọc theo loại đề' })).toBeInTheDocument();
+  });
+
+  it('explains when the assigned form is not available and keeps every form', () => {
+    renderWithProviders(<ExamHubPage />, { route: '/app/luyen-thi?de=00000000-0000-4000-8000-00000000dead', paths: { paths: [KO_TOPIK_II] } });
+    expect(screen.getByText(/^Không mở được đề giáo viên giao/)).toHaveAttribute('role', 'status');
+    expect(screen.getByRole('radiogroup', { name: 'Lọc theo loại đề' })).toBeInTheDocument();
+    expect(screen.getAllByRole('article')).toHaveLength(1);
+  });
+
   it('asks before starting a timed full mock, then tracks exam_started and opens the runner', async () => {
     const user = userEvent.setup();
     mocks.startExam.mockResolvedValue(examAttempt());

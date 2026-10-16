@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
-import { Compass, FileQuestion, X } from 'lucide-react';
-import { Link } from 'react-router';
+import { Compass, FileQuestion, Users, X } from 'lucide-react';
+import { Link, useSearchParams } from 'react-router';
 import { EXAM_FAMILIES, type ExamFamily, type ExamFormSummary, type ExamMode, type ExamSection } from '@linguo/shared';
 import { buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -29,6 +29,9 @@ interface PendingStart {
 
 const HISTORY_LIMIT = 5;
 
+/** `?de=<exam form id>`: a class assignment ("Làm đề" in /app/lop-hoc) opens the hub on that one form. */
+const ASSIGNED_FORM_PARAM = 'de';
+
 function LoadingForms() {
   return (
     <div role="status" className="space-y-3">
@@ -47,6 +50,17 @@ export function ExamHubPage() {
   const forms = useExamForms(path?.language ?? null);
   const history = useExamHistory(path?.id ?? null, HISTORY_LIMIT);
   const starter = useStartExam();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const assignedFormId = searchParams.get(ASSIGNED_FORM_PARAM)?.trim() || null;
+  const showAllForms = () =>
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        next.delete(ASSIGNED_FORM_PARAM);
+        return next;
+      },
+      { replace: true },
+    );
   const [chosen, setChosen] = useState<Filter | null>(null);
   const [pickerFormId, setPickerFormId] = useState<string | null>(null);
   /** A timed full mock waiting for the learner's confirmation: its clock starts the moment the attempt exists. */
@@ -93,7 +107,9 @@ export function ExamHubPage() {
     const preferred = goalFamily(path.goalType);
     const fallback: Filter = preferred && families.includes(preferred) ? preferred : 'all';
     const filter: Filter = chosen !== null && (chosen === 'all' || families.includes(chosen)) ? chosen : fallback;
-    const visible = forms.forms.filter((f) => filter === 'all' || f.family === filter);
+    // The assigned form is only listed when it is published in the language of the current path.
+    const assignedForm = assignedFormId ? (forms.forms.find((f) => f.form_id === assignedFormId) ?? null) : null;
+    const visible = assignedForm ? [assignedForm] : forms.forms.filter((f) => filter === 'all' || f.family === filter);
 
     const confirmForm = forms.forms.find((f) => f.form_id === confirmFormId) ?? null;
     /** A start past the open-attempt check: a timed full mock still asks about its clock first. */
@@ -127,7 +143,8 @@ export function ExamHubPage() {
 
     content = (
       <div className="space-y-4">
-        {families.length > 1 && <FamilyFilter families={families} value={filter} onChange={setChosen} />}
+        {assignedFormId && <AssignedFormNotice found={assignedForm !== null} onShowAll={showAllForms} />}
+        {!assignedForm && families.length > 1 && <FamilyFilter families={families} value={filter} onChange={setChosen} />}
         {starter.error && (
           <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
             {starter.error}
@@ -197,6 +214,32 @@ export function ExamHubPage() {
       </div>
       {content}
       {path && <HistorySection status={history.status} entries={history.entries} error={history.error} reload={history.reload} />}
+    </div>
+  );
+}
+
+/**
+ * Banner of a hub opened from a class assignment. When the form is not listed (unpublished, removed, or in another
+ * language than the current path) the learner is told so and every form stays available.
+ */
+function AssignedFormNotice({ found, onShowAll }: { found: boolean; onShowAll(): void }) {
+  if (!found) {
+    return (
+      <p role="status" className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
+        Không mở được đề giáo viên giao: đề này đã được gỡ, hoặc thuộc ngôn ngữ khác với lộ trình bạn đang mở. Bạn vẫn có
+        thể chọn một đề khác bên dưới, hoặc đổi sang lộ trình của lớp rồi mở lại bài giao.
+      </p>
+    );
+  }
+  return (
+    <div className="flex flex-col gap-3 rounded-2xl bg-primary/8 px-4 py-3 ring-1 ring-primary/20 ring-inset sm:flex-row sm:items-center">
+      <p className="flex min-w-0 flex-1 items-start gap-2 text-[15px]">
+        <Users aria-hidden strokeWidth={1.75} className="mt-0.5 size-5 shrink-0 text-primary" />
+        <span>Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.</span>
+      </p>
+      <button type="button" onClick={onShowAll} className={cn(buttonClasses('ghost', 'md'), 'self-start sm:self-auto sm:shrink-0')}>
+        Xem tất cả đề
+      </button>
     </div>
   );
 }
