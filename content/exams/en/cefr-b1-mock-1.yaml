@@ -1,0 +1,564 @@
+# Bài luyện mô phỏng trình độ CEFR B1 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi của
+# Cambridge hay bất kỳ tổ chức nào, không chép đề thật. CEFR không quy đổi điểm: chỉ đánh giá "đạt mức" theo phần.
+schema_version: 1
+demo: false
+language: en
+form:
+  key: en:exam:cefr-b1-mock-1
+  family: cefr
+  title_vi: CEFR B1 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng trình độ B1: 10 câu nghe, 12 câu đọc và 1 email khoảng 100 từ. Nội dung do Linguo tự soạn, không
+    phải đề thi chính thức; kết quả cho biết bạn đạt mức B1 ở từng phần hay chưa, không quy đổi sang điểm của kỳ thi nào.
+  level_from: a2
+  level_to: b1
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 20
+    reading: 30
+    writing: 25
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng “đạt mức B1” (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập. CEFR chỉ mô tả trình độ, không
+      quy định thang điểm hay ngưỡng đạt cho bài thi, nên ngưỡng này không có căn cứ chính thức. Bài email không được chấm
+      tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Listening) ==============================
+  - key: en:examq:cefr-b1-m1-l01
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: When is the man's new appointment?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Good morning, Park Road Dental Surgery.
+        Man: Hello, I've got an appointment on Thursday at ten, but I'm afraid I can't make Thursday morning any more. Have you got anything on Friday?
+        Woman: Let me see... Friday's fully booked, I'm afraid. I could offer you Thursday afternoon at four, or next Monday at nine.
+        Man: I'd rather not leave work early, so Monday would be better.
+        Woman: Fine, Monday at nine it is.
+      options:
+        - { id: a, text: "Thursday at 10:00", lang: en }
+        - { id: b, text: "Thursday at 4:00", lang: en }
+        - { id: c, text: "Monday at 9:00", lang: en }
+    answer: c
+    explanation:
+      vi: "Người nam không muốn phải về sớm (“I'd rather not leave work early”) nên chọn sáng thứ Hai lúc 9 giờ, và lễ tân xác nhận “Monday at nine it is”. Thứ Năm 10 giờ là lịch cũ anh muốn đổi; thứ Năm 4 giờ chiều là phương án được đề nghị nhưng anh từ chối."
+
+  - key: en:examq:cefr-b1-m1-l02
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: How did the woman get to work this morning?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: You're late. Did the train break down again?
+        Woman: No, the trains were fine for once. My car wouldn't start, so I was going to cycle in, but it was pouring with rain.
+        Man: Oh no. So what did you do?
+        Woman: Luckily my neighbour was driving into town anyway, so she gave me a lift.
+      options:
+        - { id: a, text: "by train", lang: en }
+        - { id: b, text: "by bike", lang: en }
+        - { id: c, text: "in her neighbour's car", lang: en }
+    answer: c
+    explanation:
+      vi: "“She gave me a lift” nghĩa là người hàng xóm cho cô đi nhờ xe. Tàu được nhắc đến nhưng cô không đi tàu; còn đi xe đạp chỉ là dự định (“I was going to cycle”) bị hủy vì trời mưa to. Cấu trúc “was going to” thường báo hiệu một kế hoạch không thành."
+
+  - key: en:examq:cefr-b1-m1-l03
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: What will the man buy for his sister?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Have you decided what to get your sister for her birthday?
+        Man: I was thinking of a book, like last year, but she hardly reads these days. She's really into running now.
+        Woman: What about some new running shoes, then?
+        Man: She's very fussy about shoes. She'd want to try them on first. I think I'll get her some wireless headphones, so she can listen to music while she runs.
+      options:
+        - { id: a, text: "a book", lang: en }
+        - { id: b, text: "running shoes", lang: en }
+        - { id: c, text: "headphones", lang: en }
+    answer: c
+    explanation:
+      vi: "Người nam quyết định mua tai nghe không dây (“I'll get her some wireless headphones”). Sách là món quà năm ngoái và em gái giờ ít đọc (“hardly reads”); giày chạy là gợi ý của người nữ nhưng anh gạt đi vì em gái rất kén giày (“fussy about shoes”)."
+
+  - key: en:examq:cefr-b1-m1-l04
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu đúng với cảm nghĩ của người nói.
+      stem: How does the woman feel about her new job?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: So how's the new job going?
+        Woman: Well, the people are lovely, and the office is right next to the station, which is great. But to be honest, the work itself isn't what I expected. I spend most of the day answering emails, and I hardly use my design skills at all. I'll give it a few more months, but I've already started looking at other jobs.
+      options:
+        - { id: a, text: "She is happy with everything about it.", lang: en }
+        - { id: b, text: "She is disappointed with the work she does.", lang: en }
+        - { id: c, text: "She doesn't get on with her colleagues.", lang: en }
+    answer: b
+    explanation:
+      vi: "“The work itself isn't what I expected” (công việc không như cô mong đợi) và việc cô đã bắt đầu tìm việc khác cho thấy cô thất vọng về nội dung công việc. Phương án c sai vì cô khen đồng nghiệp (“the people are lovely”); phương án a sai vì có chữ “But” mở ra điều cô không hài lòng."
+
+  - key: en:examq:cefr-b1-m1-l05
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn điều mà cả hai người cùng đồng ý.
+      stem: What do the two friends agree about?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: What did you think of the film?
+        Woman: The acting was brilliant, especially the main actor. But it was far too long. I nearly fell asleep in the middle.
+        Man: I know what you mean. Two and a half hours is a lot. I quite liked the story, though.
+        Woman: Really? I thought the ending was a bit silly.
+      options:
+        - { id: a, text: "The story was excellent.", lang: en }
+        - { id: b, text: "The film was too long.", lang: en }
+        - { id: c, text: "The ending was silly.", lang: en }
+    answer: b
+    explanation:
+      vi: "Người nữ chê phim quá dài và người nam đồng tình (“I know what you mean. Two and a half hours is a lot”). Câu chuyện chỉ người nam thích, còn cái kết chỉ người nữ chê (“Really?” cho thấy cô không đồng ý với anh), nên a và c không phải ý kiến chung."
+
+  - key: en:examq:cefr-b1-m1-l06
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn mục đích của cuộc gọi.
+      stem: Why is Daniel calling?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: Hello, this is Daniel from Brightway Furniture. I'm calling about the sofa you ordered last month. Unfortunately, the delivery company has had a problem with one of its lorries, so we won't be able to deliver it on Wednesday as planned. We can bring it on Friday morning instead, or if that isn't convenient, you can choose another day on our website. I'm very sorry for the inconvenience.
+      options:
+        - { id: a, text: "to say that a delivery has to change", lang: en }
+        - { id: b, text: "to ask the customer to pay for the sofa", lang: en }
+        - { id: c, text: "to offer the customer a different sofa", lang: en }
+    answer: a
+    explanation:
+      vi: "Daniel báo không giao được ghế sofa vào thứ Tư như dự kiến (“won't be able to deliver it on Wednesday as planned”) và đề nghị ngày khác, tức là lịch giao hàng phải thay đổi. Cuộc gọi không nhắc đến việc thanh toán hay đổi sang mẫu sofa khác."
+
+  - key: en:examq:cefr-b1-m1-l07
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo và chọn đáp án đúng cho câu hỏi.
+      stem: Where will passengers board flight BA 274?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        This is an announcement for passengers on flight BA 274 to Rome. We regret to announce that this flight is delayed by approximately forty minutes because of bad weather at Rome airport. Boarding will now begin at a quarter past two from gate twelve, not gate eight as shown on your boarding card. Passengers are reminded that only one piece of hand luggage is allowed on board. Thank you.
+      options:
+        - { id: a, text: "at gate 8", lang: en }
+        - { id: b, text: "at gate 12", lang: en }
+        - { id: c, text: "at gate 40", lang: en }
+    answer: b
+    explanation:
+      vi: "“From gate twelve, not gate eight as shown on your boarding card” nghĩa là hành khách lên máy bay ở cửa 12, không phải cửa 8 như in trên thẻ lên máy bay. Cửa 8 là bẫy vì được nhắc đến; còn 40 là số phút chuyến bay bị hoãn."
+
+  - key: en:examq:cefr-b1-m1-l08
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn giới thiệu trên đài và chọn đáp án đúng cho câu hỏi.
+      stem: What is new at this year's festival?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        And now some news for food lovers. This year's Riverside Food Festival runs from Friday to Sunday in Victoria Park. As always, there'll be more than fifty food stalls and live music every evening. What's different this year is the cooking school: for the first time, children aged eight to fourteen can join free cooking classes with local chefs. Adult tickets cost five pounds, the same as last year, and under-sixteens get in free.
+      options:
+        - { id: a, text: "live music every evening", lang: en }
+        - { id: b, text: "free cooking classes for children", lang: en }
+        - { id: c, text: "cheaper tickets for adults", lang: en }
+    answer: b
+    explanation:
+      vi: "“What's different this year…” và “for the first time” đều báo hiệu điểm mới: các lớp nấu ăn miễn phí cho trẻ 8–14 tuổi. Nhạc sống có từ trước (“As always”), còn vé người lớn vẫn 5 bảng như năm ngoái (“the same as last year”), không hề rẻ hơn."
+
+  - key: en:examq:cefr-b1-m1-l09
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lời hướng dẫn viên và chọn đáp án đúng cho câu hỏi.
+      stem: Where are visitors not allowed to take photos?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Good morning, and welcome to our walking tour of the old town. The tour lasts about two hours, and we'll stop for a coffee break in the market square at around eleven. Please stay with the group, especially when we cross the main road near the cathedral. If you do get lost, my phone number is on the back of your map. Oh, and you're welcome to take photos everywhere except inside the cathedral, because there's a service going on this morning.
+      options:
+        - { id: a, text: "in the market square", lang: en }
+        - { id: b, text: "inside the cathedral", lang: en }
+        - { id: c, text: "near the main road", lang: en }
+    answer: b
+    explanation:
+      vi: "“Everywhere except inside the cathedral” nghĩa là chụp ảnh ở đâu cũng được, trừ bên trong nhà thờ lớn, vì sáng nay đang có lễ. Quảng trường chợ là chỗ nghỉ uống cà phê; con đường lớn là nơi cần đi theo đoàn khi qua đường, không phải nơi cấm chụp ảnh."
+
+  - key: en:examq:cefr-b1-m1-l10
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn nói và chọn ý chính mà người nói muốn truyền đạt.
+      stem: What is the speaker's main point?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Last summer I worked in a hotel kitchen. The pay wasn't great and the hours were long, but I learnt so much: how to work in a team, how to stay calm when things go wrong, how to talk to customers who are angry. I'd tell anyone at university to get a summer job, even if it's got nothing to do with what they're studying. The experience is worth much more than the money.
+      options:
+        - { id: a, text: "Summer jobs are badly paid.", lang: en }
+        - { id: b, text: "Working in a kitchen is very stressful.", lang: en }
+        - { id: c, text: "A summer job gives students useful experience.", lang: en }
+    answer: c
+    explanation:
+      vi: "Người nói kết luận “The experience is worth much more than the money” và khuyên sinh viên nên đi làm hè, nên ý chính là việc làm hè mang lại kinh nghiệm quý. Lương thấp là chi tiết có thật (phương án a) nhưng chỉ là ý phụ được “but” gạt đi; bài nói không khẳng định làm bếp căng thẳng."
+
+  # ============================== ĐỌC (Reading) ==============================
+  - key: en:examq:cefr-b1-m1-r01
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo và chọn câu có nghĩa giống nhất.
+      stem: What does the notice say?
+      stem_lang: en
+      passage: |-
+        GYM MEMBERS
+        From 1 March, the changing rooms will be closed for repairs between 6 and 9 a.m. You are welcome to use the gym during these hours, but please arrive ready to exercise.
+      options:
+        - { id: a, text: "The gym will be closed in the mornings from 1 March.", lang: en }
+        - { id: b, text: "Early-morning members should come already dressed for exercise.", lang: en }
+        - { id: c, text: "Members cannot use the changing rooms after 9 a.m.", lang: en }
+    answer: b
+    explanation:
+      vi: "Phòng thay đồ đóng cửa từ 6 đến 9 giờ sáng, nên ai tập giờ đó phải mặc sẵn đồ tập (“arrive ready to exercise”). Phương án a sai vì phòng gym vẫn mở (“You are welcome to use the gym”); phương án c ngược thời gian: phòng thay đồ chỉ đóng trước 9 giờ."
+
+  - key: en:examq:cefr-b1-m1-r02
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tin nhắn và chọn việc người nhận cần làm.
+      stem: What does Kate want Jo to do?
+      stem_lang: en
+      passage: |-
+        Hi Jo, my train's been cancelled, so I'll be about an hour late. Don't wait for me – go ahead and order dinner. I'll have something when I get there. Kate
+      options:
+        - { id: a, text: "wait for her before ordering", lang: en }
+        - { id: b, text: "start dinner without her", lang: en }
+        - { id: c, text: "cancel the dinner", lang: en }
+    answer: b
+    explanation:
+      vi: "“Don't wait for me – go ahead and order dinner” nghĩa là đừng chờ, cứ gọi món trước. “Go ahead” là cụm hay gặp, mang nghĩa “cứ làm đi”. Phương án c là bẫy vì có chữ “cancelled”, nhưng thứ bị hủy là chuyến tàu chứ không phải bữa tối."
+
+  - key: en:examq:cefr-b1-m1-r03
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc hướng dẫn trên hộp thuốc và chọn câu đúng.
+      stem: Which sentence is true?
+      stem_lang: en
+      passage: |-
+        Take two tablets twice a day after meals.
+        Do not take more than eight tablets in 24 hours.
+        Not suitable for children under 12.
+      options:
+        - { id: a, text: "You should take the tablets before eating.", lang: en }
+        - { id: b, text: "You can take as many tablets as you need.", lang: en }
+        - { id: c, text: "A ten-year-old should not take these tablets.", lang: en }
+    answer: c
+    explanation:
+      vi: "“Not suitable for children under 12” nghĩa là không dùng cho trẻ dưới 12 tuổi, nên trẻ 10 tuổi không được uống. Phương án a sai vì phải uống sau bữa ăn (“after meals”); phương án b sai vì có giới hạn tối đa 8 viên trong 24 giờ."
+
+  - key: en:examq:cefr-b1-m1-r04
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ hoặc cụm từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word or phrase that best fits the gap.
+      stem_lang: en
+      passage: If I ___ more free time, I would learn to play the guitar.
+      options:
+        - { id: a, text: "had", lang: en }
+        - { id: b, text: "have", lang: en }
+        - { id: c, text: "will have", lang: en }
+    answer: a
+    explanation:
+      vi: "Đây là câu điều kiện loại 2 (giả định điều không có thật ở hiện tại): If + quá khứ đơn, … would + động từ. Vì vế sau dùng “would learn”, vế If phải là “had”. “Have” dùng cho câu loại 1 (đi với will), còn “will” không đứng sau If trong câu điều kiện."
+
+  - key: en:examq:cefr-b1-m1-r05
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ hoặc cụm từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word or phrase that best fits the gap.
+      stem_lang: en
+      passage: The museum ___ in 1890, and today it is one of the most popular in the country.
+      options:
+        - { id: a, text: "was built", lang: en }
+        - { id: b, text: "built", lang: en }
+        - { id: c, text: "has built", lang: en }
+    answer: a
+    explanation:
+      vi: "Bảo tàng không tự xây mà “được xây”, nên cần câu bị động quá khứ: was + V3 (was built). “Built” và “has built” là chủ động, nghĩa là bảo tàng xây một thứ gì đó; ngoài ra mốc “in 1890” đã kết thúc nên không dùng hiện tại hoàn thành."
+
+  - key: en:examq:cefr-b1-m1-r06
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ hoặc cụm từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word or phrase that best fits the gap.
+      stem_lang: en
+      passage: I'm not used to ___ up so early, so I'm always tired on Monday mornings.
+      options:
+        - { id: a, text: "getting", lang: en }
+        - { id: b, text: "get", lang: en }
+        - { id: c, text: "got", lang: en }
+    answer: a
+    explanation:
+      vi: "“Be used to” (quen với) có “to” là giới từ, nên động từ theo sau phải ở dạng -ing: “I'm not used to getting up”. Người học hay nhầm với “used to + động từ nguyên mẫu” (đã từng làm trong quá khứ), ví dụ “I used to get up early”."
+
+  - key: en:examq:cefr-b1-m1-r07
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ hoặc cụm từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word or phrase that best fits the gap.
+      stem_lang: en
+      passage: We had to ___ the meeting until next week because the manager was ill.
+      options:
+        - { id: a, text: "put off", lang: en }
+        - { id: b, text: "put on", lang: en }
+        - { id: c, text: "put up with", lang: en }
+    answer: a
+    explanation:
+      vi: "“Put off” = hoãn lại (postpone), hợp với “until next week” và lý do quản lý bị ốm. “Put on” là mặc vào hoặc tổ chức (put on a show); “put up with” là chịu đựng, đều không hợp nghĩa câu."
+
+  - key: en:examq:cefr-b1-m1-r08
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ hoặc cụm từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word or phrase that best fits the gap.
+      stem_lang: en
+      passage: You ___ wear a suit to the party. It's very informal, so jeans are fine.
+      options:
+        - { id: a, text: "don't have to", lang: en }
+        - { id: b, text: "mustn't", lang: en }
+        - { id: c, text: "can't", lang: en }
+    answer: a
+    explanation:
+      vi: "“Don't have to” = không cần, không bắt buộc, hợp với ý bữa tiệc thoải mái, mặc quần jeans cũng được. “Mustn't” và “can't” mang nghĩa cấm, trong khi mặc com-lê vẫn được, chỉ là không cần thiết. Người Việt hay dịch cả hai thành “không phải” nên dễ nhầm."
+
+  - key: en:examq:cefr-b1-m1-r09
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: Why did Hannah repair her vacuum cleaner herself?
+      stem_lang: en
+      passage: |-
+        THE REPAIR CAFÉ
+        When Hannah Clarke's vacuum cleaner stopped working two years ago, the shop told her it would cost more to repair it than to buy a new one. "I hated the idea of throwing it away," she says. "So I watched a few videos online, opened it up and found that a small belt had broken. The new part cost three pounds."
+        That experience gave Hannah, a 27-year-old nurse from Leeds, an idea. She persuaded the manager of her local community centre to let her use a room on the first Saturday of every month, and she put up posters asking for volunteers who were good at fixing things. Six people came to the first meeting. Now there are more than twenty, including a retired electrician, two students who repair laptops and a woman who can mend almost any piece of clothing.
+        Visitors bring their broken items and sit with a volunteer while the repair is done, so they can learn how to do it themselves next time. The service is free, although most people leave a small donation, which pays for tea, cake and spare parts. Not everything can be saved – about one item in five is beyond repair – but last year the café fixed over 600 things that would otherwise have ended up in the rubbish.
+        "People think it's all about saving money, and that's part of it," Hannah explains. "But for me, the best thing is that neighbours who would never normally meet are sitting together, chatting and learning from each other."
+      options:
+        - { id: a, text: "The shop was too far from her home.", lang: en }
+        - { id: b, text: "She didn't want to throw it away.", lang: en }
+        - { id: c, text: "She used to work as an electrician.", lang: en }
+        - { id: d, text: "A new vacuum cleaner cost only three pounds.", lang: en }
+    answer: b
+    explanation:
+      vi: "Hannah nói “I hated the idea of throwing it away” (cô ghét phải vứt nó đi), nên cô tự tìm cách sửa. Phương án d là bẫy: 3 bảng là giá của linh kiện thay thế, không phải máy mới; người thợ điện đã nghỉ hưu là một tình nguyện viên khác, còn Hannah là y tá."
+
+  - key: en:examq:cefr-b1-m1-r10
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: How did the repair café start?
+      stem_lang: en
+      passage: |-
+        THE REPAIR CAFÉ
+        When Hannah Clarke's vacuum cleaner stopped working two years ago, the shop told her it would cost more to repair it than to buy a new one. "I hated the idea of throwing it away," she says. "So I watched a few videos online, opened it up and found that a small belt had broken. The new part cost three pounds."
+        That experience gave Hannah, a 27-year-old nurse from Leeds, an idea. She persuaded the manager of her local community centre to let her use a room on the first Saturday of every month, and she put up posters asking for volunteers who were good at fixing things. Six people came to the first meeting. Now there are more than twenty, including a retired electrician, two students who repair laptops and a woman who can mend almost any piece of clothing.
+        Visitors bring their broken items and sit with a volunteer while the repair is done, so they can learn how to do it themselves next time. The service is free, although most people leave a small donation, which pays for tea, cake and spare parts. Not everything can be saved – about one item in five is beyond repair – but last year the café fixed over 600 things that would otherwise have ended up in the rubbish.
+        "People think it's all about saving money, and that's part of it," Hannah explains. "But for me, the best thing is that neighbours who would never normally meet are sitting together, chatting and learning from each other."
+      options:
+        - { id: a, text: "The manager of the community centre asked Hannah to organise it.", lang: en }
+        - { id: b, text: "A group of students suggested the idea to Hannah.", lang: en }
+        - { id: c, text: "Hannah found volunteers by putting up posters.", lang: en }
+        - { id: d, text: "Six of Hannah's colleagues offered to help her.", lang: en }
+    answer: c
+    explanation:
+      vi: "Hannah dán áp phích tìm tình nguyện viên giỏi sửa đồ (“put up posters asking for volunteers”). Phương án a ngược chiều: chính Hannah thuyết phục (“persuaded”) người quản lý cho mượn phòng; sáu người đến buổi đầu là người đọc áp phích, không phải đồng nghiệp của cô."
+
+  - key: en:examq:cefr-b1-m1-r11
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: Which sentence about the repair café is true?
+      stem_lang: en
+      passage: |-
+        THE REPAIR CAFÉ
+        When Hannah Clarke's vacuum cleaner stopped working two years ago, the shop told her it would cost more to repair it than to buy a new one. "I hated the idea of throwing it away," she says. "So I watched a few videos online, opened it up and found that a small belt had broken. The new part cost three pounds."
+        That experience gave Hannah, a 27-year-old nurse from Leeds, an idea. She persuaded the manager of her local community centre to let her use a room on the first Saturday of every month, and she put up posters asking for volunteers who were good at fixing things. Six people came to the first meeting. Now there are more than twenty, including a retired electrician, two students who repair laptops and a woman who can mend almost any piece of clothing.
+        Visitors bring their broken items and sit with a volunteer while the repair is done, so they can learn how to do it themselves next time. The service is free, although most people leave a small donation, which pays for tea, cake and spare parts. Not everything can be saved – about one item in five is beyond repair – but last year the café fixed over 600 things that would otherwise have ended up in the rubbish.
+        "People think it's all about saving money, and that's part of it," Hannah explains. "But for me, the best thing is that neighbours who would never normally meet are sitting together, chatting and learning from each other."
+      options:
+        - { id: a, text: "Visitors pay a fixed price for each repair.", lang: en }
+        - { id: b, text: "Volunteers keep the broken items for a month.", lang: en }
+        - { id: c, text: "Almost every item that people bring can be repaired.", lang: en }
+        - { id: d, text: "Visitors watch and learn while their item is fixed.", lang: en }
+    answer: d
+    explanation:
+      vi: "Khách ngồi cùng tình nguyện viên trong lúc sửa để lần sau tự làm được (“sit with a volunteer … so they can learn”). Phương án a sai vì dịch vụ miễn phí, chỉ có quyên góp tùy ý; phương án c sai vì cứ năm món thì có một món không sửa được (“one item in five is beyond repair”)."
+
+  - key: en:examq:cefr-b1-m1-r12
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gist
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn ý kiến đúng của nhân vật.
+      stem: What does Hannah think is the best thing about the repair café?
+      stem_lang: en
+      passage: |-
+        THE REPAIR CAFÉ
+        When Hannah Clarke's vacuum cleaner stopped working two years ago, the shop told her it would cost more to repair it than to buy a new one. "I hated the idea of throwing it away," she says. "So I watched a few videos online, opened it up and found that a small belt had broken. The new part cost three pounds."
+        That experience gave Hannah, a 27-year-old nurse from Leeds, an idea. She persuaded the manager of her local community centre to let her use a room on the first Saturday of every month, and she put up posters asking for volunteers who were good at fixing things. Six people came to the first meeting. Now there are more than twenty, including a retired electrician, two students who repair laptops and a woman who can mend almost any piece of clothing.
+        Visitors bring their broken items and sit with a volunteer while the repair is done, so they can learn how to do it themselves next time. The service is free, although most people leave a small donation, which pays for tea, cake and spare parts. Not everything can be saved – about one item in five is beyond repair – but last year the café fixed over 600 things that would otherwise have ended up in the rubbish.
+        "People think it's all about saving money, and that's part of it," Hannah explains. "But for me, the best thing is that neighbours who would never normally meet are sitting together, chatting and learning from each other."
+      options:
+        - { id: a, text: "It helps people to save money.", lang: en }
+        - { id: b, text: "It brings people in the neighbourhood together.", lang: en }
+        - { id: c, text: "It reduces the amount of rubbish.", lang: en }
+        - { id: d, text: "It teaches young people how to get a job.", lang: en }
+    answer: b
+    explanation:
+      vi: "Hannah nói “for me, the best thing is that neighbours who would never normally meet are sitting together” – điều cô quý nhất là hàng xóm được gặp gỡ, trò chuyện với nhau. Tiết kiệm tiền chỉ là “part of it” (một phần), và giảm rác là thông tin của người viết chứ không phải điều Hannah cho là quan trọng nhất."
+
+  # ============================== VIẾT (Writing) ==============================
+  - key: en:examq:cefr-b1-m1-w01
+    section: writing
+    kind: essay
+    question_type: cefr_write_email
+    level_code: b1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Đọc email của bạn và viết thư trả lời bằng tiếng Anh (khoảng 100 từ), trả lời đủ các ý được ghi chú. Viết thành
+        đoạn văn mạch lạc, có lời chào và lời kết.
+      stem: |-
+        Read this email from your English friend, Chris, and the notes you have made.
+
+        Hi!
+        Great news – I'm coming to your country for two weeks in July! I'd love to spend a weekend in your town. (Notes: Great! / Tell Chris)
+        Which is better for me: staying in a hotel or staying with your family? (Notes: Explain)
+        What can we do together while I'm there? (Notes: Suggest…)
+        What's the best way to get to your town from the airport? (Notes: Tell Chris)
+        Write soon,
+        Chris
+
+        Write your email to Chris using all the notes. Write about 100 words.
+      stem_lang: en
+      min_chars: 400
+      max_chars: 1200
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Trả lời đủ bốn ý theo ghi chú (vui mừng, chỗ ở có lý do, gợi ý hoạt động, cách đi từ sân bay); mỗi ý được phát triển thêm một chi tiết, thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có lời chào và lời kết phù hợp với thư cho bạn bè; các ý sắp xếp hợp lý, nối bằng because, so, although, as well as, and then; chia đoạn rõ ràng.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng được cấu trúc mức B1 như đề nghị (Why don't we…?, You could…), so sánh (better, cheaper than), thì tương lai (will, be going to) và từ vựng du lịch; lỗi ngữ pháp, chính tả không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Hi Chris,
+      That's fantastic news! I can't wait to show you my town.
+      I think you should stay with my family rather than in a hotel. We've got a spare room, and my mum will be really happy to cook Vietnamese food for you. It'll be cheaper too!
+      On Saturday, why don't we go to the night market? The street food there is amazing. Then on Sunday we could rent bikes and ride along the river, as long as it isn't too hot.
+      The easiest way to get here from the airport is by bus. It takes about forty minutes, and I'll meet you at the bus station.
+      See you soon,
+      Linh
+    explanation:
+      vi: "Bài email B1 được chấm trước hết ở việc trả lời đủ cả bốn ghi chú và nói thêm lý do hoặc chi tiết cho mỗi ý, chứ không chỉ liệt kê. Lỗi hay gặp là bỏ sót ý cuối (cách đi từ sân bay), viết “I suggest you to stay” thay vì “I suggest (that) you stay”, hoặc dùng sai “will” sau “if” (“if it will be hot”)."

@@ -1308,12 +1308,18 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
   const count = (form, section, kind) => form.questions.filter((q) => q.section === section && (!kind || q.kind === kind)).length;
   const expected = {
     'ko:exam:topik-i-mock-1': { listening: 10, reading: 14, time: { listening: 15, reading: 25 } },
+    'ko:exam:topik-i-mock-2': { listening: 10, reading: 14, time: { listening: 15, reading: 25 } },
     'ko:exam:topik-ii-mock-1': { listening: 8, reading: 10, time: { listening: 20, reading: 25, writing: 20 } },
     'ko:exam:topik-ii-mock-2': { listening: 8, reading: 10, time: { listening: 20, reading: 25, writing: 20 } },
     'en:exam:cefr-a2-mock-1': { listening: 8, reading: 10, time: { listening: 15, reading: 20, writing: 20 } },
+    'en:exam:cefr-b1-mock-1': { listening: 10, reading: 12, time: { listening: 20, reading: 30, writing: 25 } },
+    'en:exam:cefr-b2-mock-1': { listening: 10, reading: 12, time: { listening: 20, reading: 35, writing: 40 } },
+    'en:exam:cefr-c1-mock-1': { listening: 10, reading: 12, time: { listening: 30, reading: 45, writing: 45 } },
     'ja:exam:jlpt-n5-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 30 } },
     'ja:exam:jlpt-n4-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 35 } },
     'ja:exam:jlpt-n3-mock-1': { listening: 8, reading: 14, time: { listening: 15, reading: 30 } },
+    'ja:exam:jlpt-n2-mock-1': { listening: 8, reading: 14, time: { listening: 15, reading: 35 } },
+    'ja:exam:jlpt-n1-mock-1': { listening: 8, reading: 14, time: { listening: 20, reading: 40 } },
   };
   assert.deepEqual([...byKey.keys()].sort(), Object.keys(expected).sort());
   for (const [key, want] of Object.entries(expected)) {
@@ -1353,12 +1359,14 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     assert.ok(essay53.rubric.length >= 3);
     assert.ok(essay53.sample_answer.length >= 200 && essay53.sample_answer.length <= 300, `53 sample answer is ${essay53.sample_answer.length} chars`);
   }
-  const cefr = byKey.get('en:exam:cefr-a2-mock-1');
-  assert.equal(count(cefr, 'writing', 'essay'), 1);
-  assert.deepEqual([cefr.scoring.bands, cefr.scoring.pass_ratio], [[], 0.6]);
-  assert.ok(cefr.questions.find((q) => q.kind === 'essay').rubric.length >= 3);
+  for (const key of ['en:exam:cefr-a2-mock-1', 'en:exam:cefr-b1-mock-1', 'en:exam:cefr-b2-mock-1', 'en:exam:cefr-c1-mock-1']) {
+    const cefr = byKey.get(key);
+    assert.equal(count(cefr, 'writing', 'essay'), 1, `${key} essay`);
+    assert.deepEqual([cefr.scoring.bands, cefr.scoring.pass_ratio], [[], 0.6], `${key} scoring`);
+    assert.ok(cefr.questions.find((q) => q.kind === 'essay').rubric.length >= 3, `${key} rubric`);
+  }
   // JLPT (jlpt.jp): total 0–180, language knowledge · reading folded into `reading` (120), one pass band per form.
-  for (const [key, level, pass] of [['ja:exam:jlpt-n5-mock-1', 'n5', 80], ['ja:exam:jlpt-n4-mock-1', 'n4', 90], ['ja:exam:jlpt-n3-mock-1', 'n3', 95]]) {
+  for (const [key, level, pass] of [['ja:exam:jlpt-n5-mock-1', 'n5', 80], ['ja:exam:jlpt-n4-mock-1', 'n4', 90], ['ja:exam:jlpt-n3-mock-1', 'n3', 95], ['ja:exam:jlpt-n2-mock-1', 'n2', 90], ['ja:exam:jlpt-n1-mock-1', 'n1', 100]]) {
     const jlpt = byKey.get(key);
     assert.equal(count(jlpt, 'writing'), 0, `${key} writing`);
     assert.deepEqual(jlpt.scoring.section_max, { listening: 60, reading: 120 }, `${key} section_max`);
