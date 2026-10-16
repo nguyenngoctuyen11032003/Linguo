@@ -1,0 +1,642 @@
+# Học liệu unit "Nêu ý kiến, suy đoán và so sánh" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: nêu ý kiến, ～べきだ, ～に対して =================
+  - key: ja:item:n3-iken
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 意見
+      reading: いけん
+      romanization: iken
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý kiến; 意見を言う - nêu ý kiến
+      examples:
+        - target: この問題について、皆さんの意見を聞かせてください。
+          translation:
+            vi: Về vấn đề này, xin cho tôi nghe ý kiến của mọi người.
+      pronunciation_note:
+        vi: Đọc "i-kên".
+      confusion:
+        vi: 意見 là quan điểm về một vấn đề; 考え là suy nghĩ, ý tưởng nói chung. "Theo ý kiến của tôi" - 私の意見では.
+
+  - key: ja:item:n3-sansei
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 賛成
+      reading: さんせい
+      romanization: sansei
+      pos: danh từ
+    back:
+      meaning:
+        vi: tán thành, đồng ý; ～に賛成する
+      examples:
+        - target: 私はその計画に賛成です。
+          translation:
+            vi: Tôi tán thành kế hoạch đó.
+      pronunciation_note:
+        vi: せい đọc gần "xê-ê" - "xan-xê-ê".
+      confusion:
+        vi: Tán thành cái gì dùng に - 計画に賛成する (không dùng を).
+
+  - key: ja:item:n3-hantai
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 反対
+      reading: はんたい
+      romanization: hantai
+      pos: danh từ
+    back:
+      meaning:
+        vi: phản đối; ngược lại; ～に反対する
+      examples:
+        - target: 父は私の留学に反対しています。
+          translation:
+            vi: Bố tôi phản đối việc tôi đi du học.
+      pronunciation_note:
+        vi: Đọc "han-tai".
+      confusion:
+        vi: Phản đối cái gì dùng に - 留学に反対する. 反対 còn có nghĩa "ngược" - 反対側 (phía đối diện).
+
+  - key: ja:item:n3-tashikani
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 確かに
+      reading: たしかに
+      romanization: tashika ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: quả thật, đúng là (công nhận một phần ý kiến người khác)
+      examples:
+        - target: 確かに便利ですが、値段が高すぎると思います。
+          translation:
+            vi: Đúng là tiện thật, nhưng tôi nghĩ giá đắt quá.
+      pronunciation_note:
+        vi: Đọc "ta-si-ka-ni", し đọc rất nhẹ.
+      confusion:
+        vi: Thường dùng theo khuôn 確かに A が、B - công nhận A rồi đưa ra ý kiến B. Đây là cách phản bác mềm mỏng của người Nhật.
+
+  - key: ja:item:n3-gram-beki
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển) + べきだ / べきではない
+      romanization: beki da
+      pos: nên / không nên (ý kiến)
+    back:
+      meaning:
+        vi: '"Nên...", "phải..." theo lẽ phải, đạo lý - ý kiến mạnh của người nói. 約束は守るべきだ; 人の悪口を言うべきではない.'
+      examples:
+        - target: 若い人はもっと選挙に行くべきだと思います。
+          translation:
+            vi: Tôi nghĩ người trẻ nên đi bầu cử nhiều hơn.
+      pronunciation_note:
+        vi: Đọc "bê-ki-đa".
+      confusion:
+        vi: する → するべき hoặc すべき (cả hai đều đúng). べきだ mạnh hơn ほうがいい; khuyên bạn bè chuyện cá nhân dùng ほうがいい cho mềm.
+
+  - key: ja:item:n3-gram-ni-taishite
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + に対して / に対する + N
+      reading: にたいして
+      romanization: ni taishite
+      pos: đối với, nhắm vào
+    back:
+      meaning:
+        vi: '"Đối với...", "hướng tới..." - đối tượng của thái độ, hành động. 先生に対して失礼だ; 意見に対する反論.'
+      examples:
+        - target: 住民の意見に対して、市はまだ何も答えていません。
+          translation:
+            vi: Đối với ý kiến của cư dân, thành phố vẫn chưa trả lời gì.
+      pronunciation_note:
+        vi: たい đọc "tai" - "ni-tai-si-tê".
+      confusion:
+        vi: について - nói về chủ đề; に対して - thái độ, hành động nhắm vào đối tượng. 環境について話す (nói về môi trường) / 客に対して丁寧だ (lịch sự với khách).
+
+  # ================= bài 2: suy đoán - らしい, ようだ / みたい, そうだ (nghe nói) =================
+  - key: ja:item:n3-uwasa
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 噂
+      reading: うわさ
+      romanization: uwasa
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin đồn, lời đồn
+      examples:
+        - target: 駅前に新しいカフェができるという噂です。
+          translation:
+            vi: Có tin đồn là trước ga sắp mở một quán cà phê mới.
+      pronunciation_note:
+        vi: Đọc "ư-wa-xa".
+      confusion:
+        vi: Thường viết bằng kana うわさ. "Nghe đồn rằng" - ～という噂だ / ～と噂されている.
+
+  - key: ja:item:n3-yousu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 様子
+      reading: ようす
+      romanization: yōsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: dáng vẻ, tình hình, tình trạng (quan sát được)
+      examples:
+        - target: 田中さんは疲れている様子でした。
+          translation:
+            vi: Anh Tanaka trông có vẻ mệt.
+      pronunciation_note:
+        vi: よう kéo dài - "yô-ô-xư".
+      confusion:
+        vi: 様子を見る - theo dõi tình hình (chưa hành động ngay). Bác sĩ hay nói 少し様子を見ましょう.
+
+  - key: ja:item:n3-hyoujou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 表情
+      reading: ひょうじょう
+      romanization: hyōjō
+      pos: danh từ
+    back:
+      meaning:
+        vi: nét mặt, biểu cảm
+      examples:
+        - target: 彼女の表情を見ると、何かあったようです。
+          translation:
+            vi: Nhìn nét mặt cô ấy thì có vẻ đã có chuyện gì đó.
+      pronunciation_note:
+        vi: Hai âm dài - "hyô-ô-jô-ô".
+      confusion:
+        vi: 表情 là biểu cảm trên mặt; 顔 là khuôn mặt; 感情 (かんじょう) là cảm xúc bên trong.
+
+  - key: ja:item:n3-gram-rashii
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: thể thường (なA / N bỏ だ) + らしい
+      romanization: rashii
+      pos: nghe nói, hình như (căn cứ bên ngoài)
+    back:
+      meaning:
+        vi: '"Hình như / nghe nói..." - suy đoán dựa trên thông tin nghe, đọc được, người nói ít chịu trách nhiệm. 山田さんは会社を辞めるらしい.'
+      examples:
+        - target: 駅前に新しいスーパーができるらしいですよ。
+          translation:
+            vi: Nghe nói trước ga sắp mở siêu thị mới đấy.
+      pronunciation_note:
+        vi: Đọc "ra-si-i".
+      confusion:
+        vi: N + らしい còn có nghĩa "đúng chất, ra dáng" - 男らしい (nam tính), 春らしい天気 (thời tiết đúng kiểu mùa xuân). Dựa vào ngữ cảnh để phân biệt.
+
+  - key: ja:item:n3-gram-you-da
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: thể thường (なAな / Nの) + ようだ · みたいだ
+      romanization: yō da / mitai da
+      pos: có vẻ như (căn cứ quan sát)
+    back:
+      meaning:
+        vi: '"Có vẻ như..." - suy đoán từ điều chính mình thấy, nghe, cảm nhận. 誰もいないようだ (có vẻ không có ai). みたいだ là dạng văn nói của ようだ.'
+      examples:
+        - target: 電気が消えているので、誰もいないようです。
+          translation:
+            vi: Đèn tắt nên có vẻ như không có ai.
+      pronunciation_note:
+        vi: ようです - "yô-ô-đê-xư"; みたい - "mi-tai".
+      confusion:
+        vi: Nối với danh từ - ようだ cần の (学生のようだ), みたいだ không cần の (学生みたいだ). ようだ dựa trên quan sát của mình; らしい dựa trên thông tin nghe được.
+
+  - key: ja:item:n3-gram-sou-da-denbun
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: thể thường + そうだ (伝聞)
+      romanization: sō da
+      pos: nghe nói (truyền đạt lại)
+    back:
+      meaning:
+        vi: '"Nghe nói / theo... thì" - thuật lại nguyên thông tin, thường kèm nguồn: 天気予報によると、明日は雪が降るそうです.'
+      examples:
+        - target: ニュースによると、来月から電気代が上がるそうです。
+          translation:
+            vi: Theo tin tức thì từ tháng sau giá điện sẽ tăng.
+      pronunciation_note:
+        vi: そう kéo dài - "xô-ô-đê-xư".
+      confusion:
+        vi: 'Phân biệt hai そうだ: 降るそうだ (thể thường + そうだ - nghe nói sẽ rơi) và 降りそうだ (V bỏ ます + そうだ - trông như sắp rơi). Với tính từ: 高いそうだ (nghe nói đắt) / 高そうだ (trông có vẻ đắt).'
+
+  # ================= bài 3: so sánh - ～に比べて, ～ほど～ない, ～一方で =================
+  - key: ja:item:n3-tokai
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 都会
+      reading: とかい
+      romanization: tokai
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành phố lớn, đô thị
+      examples:
+        - target: 都会は便利ですが、家賃が高いです。
+          translation:
+            vi: Thành phố lớn thì tiện nhưng tiền nhà đắt.
+      pronunciation_note:
+        vi: Đọc "tô-kai".
+      confusion:
+        vi: 都会 nhấn cuộc sống đô thị (đối lập 田舎); 都市 (とし) là từ hành chính, học thuật (都市計画 - quy hoạch đô thị).
+
+  - key: ja:item:n3-inaka
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 田舎
+      reading: いなか
+      romanization: inaka
+      pos: danh từ
+    back:
+      meaning:
+        vi: nông thôn, quê; quê nhà
+      examples:
+        - target: 田舎は都会ほど便利ではありませんが、自然が豊かです。
+          translation:
+            vi: Nông thôn không tiện bằng thành phố nhưng thiên nhiên phong phú.
+      pronunciation_note:
+        vi: Đọc "i-na-ka". Cách đọc đặc biệt - không đọc theo từng chữ Hán.
+      confusion:
+        vi: 田舎 vừa là "nông thôn" vừa là "quê nhà" - 田舎に帰る (về quê).
+
+  - key: ja:item:n3-bukka
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 物価
+      reading: ぶっか
+      romanization: bukka
+      pos: danh từ
+    back:
+      meaning:
+        vi: vật giá, mức giá cả sinh hoạt
+      examples:
+        - target: 東京は大阪に比べて物価が高いです。
+          translation:
+            vi: Tokyo có vật giá cao hơn so với Osaka.
+      pronunciation_note:
+        vi: っ là âm ngắt - "bư(k)-ka".
+      confusion:
+        vi: 物価が高い / 安い - vật giá cao / thấp (không nói 物価が多い). Giá một món hàng là 値段.
+
+  - key: ja:item:n3-kankyou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 環境
+      reading: かんきょう
+      romanization: kankyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: môi trường (tự nhiên, sống, làm việc)
+      examples:
+        - target: 子どもを育てるには、田舎のほうが環境がいいと思います。
+          translation:
+            vi: Tôi nghĩ để nuôi dạy con thì môi trường ở nông thôn tốt hơn.
+      pronunciation_note:
+        vi: きょう kéo dài - "kan-kyô-ô".
+      confusion:
+        vi: 環境 dùng cả cho môi trường tự nhiên (環境問題) lẫn môi trường sống, làm việc (職場の環境).
+
+  - key: ja:item:n3-gram-ni-kurabete
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + に比べて / と比べて
+      reading: にくらべて
+      romanization: ni kurabete
+      pos: so với
+    back:
+      meaning:
+        vi: '"So với..." - đặt hai đối tượng cạnh nhau: 去年に比べて、今年は雪が多い.'
+      examples:
+        - target: 東京は大阪に比べて物価が高いです。
+          translation:
+            vi: Tokyo có vật giá cao hơn so với Osaka.
+      pronunciation_note:
+        vi: Đọc "ni ku-ra-bê-tê".
+      confusion:
+        vi: に比べて hay dùng trong văn viết, báo cáo; văn nói đơn giản dùng より (大阪より東京のほうが高い).
+
+  - key: ja:item:n3-gram-hodo-nai
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: A は B ほど ～ない
+      romanization: hodo ... nai
+      pos: A không ... bằng B
+    back:
+      meaning:
+        vi: '"A không ... bằng B" - so sánh phủ định. 今年の夏は去年ほど暑くない.'
+      examples:
+        - target: 田舎は都会ほど便利ではありません。
+          translation:
+            vi: Nông thôn không tiện bằng thành phố.
+      pronunciation_note:
+        vi: ほど đọc "hô-đô".
+      confusion:
+        vi: ほど luôn đi với phủ định trong cấu trúc này. Không nói 都会ほど便利です; câu khẳng định dùng より～ほうが.
+
+  - key: ja:item:n3-gram-ippou-de
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: thể thường (なAな / Nである) + 一方(で)
+      reading: いっぽうで
+      romanization: ippō de
+      pos: mặt khác, trong khi đó
+    back:
+      meaning:
+        vi: '"Một mặt... mặt khác...", "trong khi..." - đặt hai mặt đối lập cạnh nhau, hay dùng trong bài luận.'
+      examples:
+        - target: 都会は便利な一方で、ストレスも多いです。
+          translation:
+            vi: Thành phố lớn thì tiện lợi, nhưng mặt khác cũng nhiều căng thẳng.
+      pronunciation_note:
+        vi: っ là âm ngắt - "i(p)-pô-ô-đê".
+      confusion:
+        vi: 一方で trang trọng hơn けど / が; đầu câu có thể dùng 一方、... (mặt khác, ...). Không dùng trong lời nói thân mật.
+
+  # ================= bài 4: ～はずだ, ～わけだ, ～わけではない =================
+  - key: ja:item:n3-touzen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 当然
+      reading: とうぜん
+      romanization: tōzen
+      pos: phó từ / tính từ な
+    back:
+      meaning:
+        vi: đương nhiên, lẽ dĩ nhiên
+      examples:
+        - target: 毎日練習したのだから、上手になったのは当然です。
+          translation:
+            vi: Ngày nào cũng luyện tập nên giỏi lên là đương nhiên.
+      pronunciation_note:
+        vi: とう kéo dài - "tô-ô-dên".
+      confusion:
+        vi: 当然 trang trọng hơn もちろん; thường dùng để nói kết quả hợp lẽ - 当然だ, 当然のことだ.
+
+  - key: ja:item:n3-kanarazushimo
+    type: vocab
+    level: n3
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 必ずしも
+      reading: かならずしも
+      romanization: kanarazushimo
+      pos: phó từ
+    back:
+      meaning:
+        vi: không hẳn, không nhất thiết (luôn đi với phủ định)
+      examples:
+        - target: 高い物が必ずしもいい物だというわけではありません。
+          translation:
+            vi: Đồ đắt không hẳn là đồ tốt.
+      pronunciation_note:
+        vi: Đọc "ka-na-ra-dư-si-mô".
+      confusion:
+        vi: 必ず - chắc chắn, nhất định (khẳng định); 必ずしも～ない - không nhất thiết. Đừng bỏ phần phủ định ở cuối câu.
+
+  - key: ja:item:n3-jijou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 事情
+      reading: じじょう
+      romanization: jijō
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoàn cảnh, lý do riêng, tình hình
+      examples:
+        - target: 家庭の事情で、会社を辞めることになりました。
+          translation:
+            vi: Vì hoàn cảnh gia đình, tôi phải nghỉ việc.
+      pronunciation_note:
+        vi: じょう kéo dài - "ji-jô-ô".
+      confusion:
+        vi: 事情 là lý do, hoàn cảnh không tiện nói chi tiết; 理由 là lý do cụ thể. 家庭の事情 là cách nói lịch sự khi không muốn giải thích.
+
+  - key: ja:item:n3-gram-hazu-da
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: thể thường (なAな / Nの) + はずだ / はずがない
+      romanization: hazu da
+      pos: chắc chắn là (theo suy luận)
+    back:
+      meaning:
+        vi: '"Chắc chắn là..." - kết luận có căn cứ, logic. はずがない - "không thể nào...". 彼は来るはずだ; そんなはずがない.'
+      examples:
+        - target: 荷物は昨日送ったので、今日届くはずです。
+          translation:
+            vi: Hành lý đã gửi hôm qua nên chắc chắn hôm nay sẽ đến.
+      pronunciation_note:
+        vi: Đọc "ha-dư đê-xư".
+      confusion:
+        vi: はずだ là suy luận của người nói (có căn cứ); べきだ là "nên" theo đạo lý. 来るはずだ (chắc sẽ đến) khác 来るべきだ (nên đến).
+
+  - key: ja:item:n3-gram-wake-da
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: thể thường (なAな / Nの・である) + わけだ
+      romanization: wake da
+      pos: thảo nào, thì ra là
+    back:
+      meaning:
+        vi: '"Thảo nào / thì ra..." - kết luận hợp lý khi đã biết lý do. 10年も住んでいたんですか。日本語が上手なわけですね.'
+      examples:
+        - target: 毎日3時間も練習しているんですか。上手なわけですね。
+          translation:
+            vi: Ngày nào cũng luyện những 3 tiếng à? Thảo nào giỏi thế.
+      pronunciation_note:
+        vi: Đọc "wa-kê đa".
+      confusion:
+        vi: わけだ - kết luận khi đã biết nguyên nhân (thảo nào); はずだ - suy đoán trước khi biết kết quả (chắc là).
+
+  - key: ja:item:n3-gram-wake-dewa-nai
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: thể thường (なAな / Nだ・という) + わけではない
+      romanization: wake de wa nai
+      pos: không hẳn là, không phải là
+    back:
+      meaning:
+        vi: '"Không hẳn là / không phải là..." - phủ định một phần, tránh hiểu lầm. 嫌いなわけではない (không phải là ghét).'
+      examples:
+        - target: 肉が嫌いなわけではありませんが、最近はあまり食べません。
+          translation:
+            vi: Không phải tôi ghét thịt, nhưng dạo này tôi ít ăn.
+      pronunciation_note:
+        vi: わけでは - "wa-kê-đê-wa".
+      confusion:
+        vi: 嫌いではない - không ghét (phủ định hoàn toàn); 嫌いなわけではない - không hẳn là ghét (còn lý do khác). Hay đi với 必ずしも.
+
+  # ================= bài 5: ôn tập (đọc bài luận ý kiến) =================
+  - key: ja:item:n3-chousa
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 調査
+      reading: ちょうさ
+      romanization: chōsa
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc khảo sát, điều tra; 調査する
+      examples:
+        - target: ある調査によると、若者の半分以上が毎日料理をしないそうです。
+          translation:
+            vi: Theo một cuộc khảo sát, hơn một nửa giới trẻ không nấu ăn hằng ngày.
+      pronunciation_note:
+        vi: ちょう kéo dài - "chô-ô-xa".
+      confusion:
+        vi: 調査 là khảo sát, điều tra có hệ thống; điều tra tội phạm của cảnh sát là 捜査 (そうさ).
+
+  - key: ja:item:n3-wariai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 割合
+      reading: わりあい
+      romanization: wariai
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỉ lệ
+      examples:
+        - target: 在宅勤務をする人の割合が増えています。
+          translation:
+            vi: Tỉ lệ người làm việc tại nhà đang tăng.
+      pronunciation_note:
+        vi: Đọc "wa-ri-a-i".
+      confusion:
+        vi: 割合が高い / 低い (cao / thấp) hoặc 増える / 減る (tăng / giảm). Phần trăm là パーセント; 割 là 10% (3割 = 30%).
+
+  - key: ja:item:n3-keikou
+    type: vocab
+    level: n3
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 傾向
+      reading: けいこう
+      romanization: keikō
+      pos: danh từ
+    back:
+      meaning:
+        vi: xu hướng, khuynh hướng; ～傾向がある
+      examples:
+        - target: 最近、結婚しない人が増える傾向があります。
+          translation:
+            vi: Gần đây có xu hướng người không kết hôn tăng lên.
+      pronunciation_note:
+        vi: Hai âm dài - "kê-ê-kô-ô".
+      confusion:
+        vi: 傾向 là xu hướng quan sát được qua số liệu; trào lưu thời thượng là 流行 (りゅうこう) hoặc ブーム.
+
+  - key: ja:item:n3-ketsuron
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 結論
+      reading: けつろん
+      romanization: ketsuron
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết luận; 結論から言うと - nói kết luận trước
+      examples:
+        - target: 結論から言うと、私はこの意見に反対です。
+          translation:
+            vi: Nói kết luận trước, tôi phản đối ý kiến này.
+      pronunciation_note:
+        vi: Đọc "kê-tsư-rôn".
+      confusion:
+        vi: 結論 là kết luận của lập luận; 結果 là kết quả của sự việc, thí nghiệm.

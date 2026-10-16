@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-public-services-review
+order_index: 5
+level: n3
+title:
+  vi: "Ôn tập: đọc thông báo và hướng dẫn thủ tục"
+objectives:
+  - vi: Đọc hiểu thông báo ở bảng tin và hướng dẫn đăng ký của cơ quan.
+  - vi: Tìm nhanh thông tin quan trọng - hạn, nơi nộp, giấy tờ cần mang.
+  - vi: Ôn ～について, ～場合は, ～ように, ～ことになっている, ～ずに.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n3-local-rules]
+items:
+  - item: ja:item:n3-keijiban
+  - item: ja:item:n3-moushikomu
+  - item: ja:item:n3-teishutsu
+  - item: ja:item:n3-kigen
+  - item: ja:item:n3-gram-ni-tsuite
+    role: reuse
+  - item: ja:item:n3-gram-baai
+    role: reuse
+  - item: ja:item:n3-gram-you-ni-purpose
+    role: reuse
+  - item: ja:item:n3-gram-koto-ni-natte-iru
+    role: reuse
+  - item: ja:item:n3-gram-zuni
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập luyện kỹ năng thực tế nhất khi sống ở Nhật - đọc お知らせ trên 掲示板 và tờ hướng dẫn của uỷ ban, rồi biết mình phải làm gì, trước khi nào.
+  - type: explain
+    text:
+      vi: 'Thông báo thường có khung: tiêu đề (～のお知らせ), thời gian (日時), địa điểm (場所), đối tượng (対象), cách đăng ký (申し込み方法), hạn (期限 / 締め切り), liên hệ (問い合わせ). Đọc tiêu đề và các mục này trước.'
+  - type: explain
+    text:
+      vi: 'Từ hay gặp: 申し込む (đăng ký), 提出する (nộp), 期限 (thời hạn), 必要なもの (đồ cần mang), 事前に (trước), 以内 (trong vòng), 以降 (từ... trở đi), ～までに (trước...).'
+  - type: deep_explain
+    text:
+      vi: Văn thông báo dùng nhiều thể trang trọng - ～ずに, ～場合は, ～ことになっています, ご～ください, và bị động (回収されません). Gặp câu dài, hãy tìm đuôi câu trước để biết đây là yêu cầu (ください), quy định (ことになっています) hay cấm (できません / いけません).
+  - type: example
+    target: 掲示板に水道工事のお知らせが貼ってあります。
+    target_lang: ja
+    translation:
+      vi: Trên bảng tin có dán thông báo sửa đường ống nước.
+  - type: example
+    target: 日本語教室に申し込みたいんですが、どうすればいいですか。
+    target_lang: ja
+    translation:
+      vi: Tôi muốn đăng ký lớp tiếng Nhật, phải làm thế nào ạ?
+  - type: example
+    target: 申込書は今月20日までに窓口に提出してください。
+    target_lang: ja
+    translation:
+      vi: Đơn đăng ký hãy nộp ở quầy trước ngày 20 tháng này.
+  - type: example
+    target: 在留カードの有効期限を確認してください。
+    target_lang: ja
+    translation:
+      vi: Hãy kiểm tra thời hạn hiệu lực của thẻ cư trú.
+  - type: common_mistake
+    wrong: 日本語教室を申し込みました。
+    right: 日本語教室に申し込みました。
+    target_lang: ja
+    note:
+      vi: Đăng ký tham gia cái gì dùng に - 教室に申し込む. を dùng cho thứ được đăng ký như 参加を申し込む.
+  - type: common_mistake
+    wrong: 書類を窓口で提出してください。
+    right: 書類を窓口に提出してください。
+    target_lang: ja
+    note:
+      vi: 提出する hướng tới nơi nhận - dùng に. で chỉ nơi diễn ra hành động, nghe không tự nhiên với 提出.
+  - type: summary
+    points:
+      - vi: 掲示板 (bảng tin), 申し込む (đăng ký), 提出する (nộp), 期限 (thời hạn).
+      - vi: Đọc thông báo - tiêu đề, 日時, 場所, 申し込み方法, 締め切り.
+      - vi: 教室に申し込む; 窓口に提出する.
+      - vi: Ôn các mẫu ～について, ～場合は, ～ように, ～ことになっている, ～ずに.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-public-services-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-keijiban
+    prompt:
+      stem: "Đọc thông báo trên bảng tin: 「水道工事のお知らせ　10月25日（水）9時～15時、工事のため水が使えません。事前に水をためておいてください。」 Cư dân cần làm gì?"
+      stem_lang: vi
+      options:
+        - { id: h3w, text: Trữ sẵn nước trước ngày 25 tháng 10., lang: vi }
+        - { id: n6z, text: Đăng ký sửa đường ống nước trước ngày 25., lang: vi }
+        - { id: c1k, text: Không dùng nước sau 15 giờ ngày 25., lang: vi }
+        - { id: v8p, text: Đến uỷ ban lấy nước vào ngày 25., lang: vi }
+    answer:
+      correct_option_id: h3w
+    explanation:
+      vi: 9時～15時、水が使えません - không dùng được nước từ 9 đến 15 giờ; 事前に水をためておいてください - hãy trữ nước sẵn từ trước.
+    display_answer: Trữ sẵn nước trước ngày 25 tháng 10.
+
+  - key: ja:exercise:n3-public-services-review-listen-teishutsu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-teishutsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 申込書は今月20日までに窓口に提出してください。
+      options:
+        - { id: b7r, text: Đơn đăng ký hãy nộp ở quầy trước ngày 20 tháng này., lang: vi }
+        - { id: m2e, text: Đơn đăng ký hãy nhận ở quầy từ ngày 20 tháng này., lang: vi }
+        - { id: x4y, text: Đơn đăng ký hãy nộp ở quầy trước ngày 20 tháng sau., lang: vi }
+        - { id: f9a, text: Đơn đăng ký hãy gửi qua bưu điện trước ngày 20 tháng này., lang: vi }
+    answer:
+      correct_option_id: b7r
+    explanation:
+      vi: 今月 - tháng này; 20日までに - trước ngày 20; 窓口に提出する - nộp ở quầy.
+    display_answer: Đơn đăng ký hãy nộp ở quầy trước ngày 20 tháng này.
+
+  - key: ja:exercise:n3-public-services-review-mcq-moushikomu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-moushikomu
+    prompt:
+      stem: 'Chọn trợ từ đúng: 来月の日本語教室＿＿申し込みました。'
+      stem_lang: vi
+      options:
+        - { id: s5d, text: に, lang: ja }
+        - { id: o2g, text: で, lang: ja }
+        - { id: k8m, text: から, lang: ja }
+        - { id: z3v, text: が, lang: ja }
+    answer:
+      correct_option_id: s5d
+    explanation:
+      vi: Đăng ký vào lớp, sự kiện - に申し込む.
+    display_answer: に
+
+  - key: ja:exercise:n3-public-services-review-fill-kigen
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kigen
+    prompt:
+      template: "在留カードの有効{{b1}}を確認してください。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Hãy kiểm tra thời hạn hiệu lực của thẻ cư trú."
+        - "Gợi ý: 'thời hạn' - きげん."
+    answer:
+      blanks:
+        b1: [期限, きげん]
+    known_wrong:
+      - answer: 締め切り
+        feedback_vi: 締め切り là hạn chót nộp; thời hạn hiệu lực của thẻ là 有効期限.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 有効期限 - thời hạn hiệu lực. Hết hạn là 期限が切れる.
+    display_answer: 在留カードの有効期限を確認してください。
+
+  - key: ja:exercise:n3-public-services-review-wb-teishutsu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-teishutsu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đơn đăng ký hãy nộp ở quầy trước ngày 20.\""
+      tokens:
+        - { id: e4, text: 提出してください }
+        - { id: e2, text: 20日までに }
+        - { id: e1, text: 申込書は }
+        - { id: e5, text: 窓口を }
+        - { id: e3, text: 窓口に }
+    answer:
+      orders:
+        - [e1, e2, e3, e4]
+        - [e1, e3, e2, e4]
+    explanation:
+      vi: 窓口に提出する - nộp ở quầy (に chỉ nơi nhận). 窓口を không đúng.
+    display_answer: 申込書は20日までに窓口に提出してください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-public-services-review-fill-moushikomi
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-moushikomu
+    prompt:
+      template: "日本語教室に{{b1}}たいんですが、どうすればいいですか。(đăng ký)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [申し込み, もうしこみ, 申込み]
+    known_wrong:
+      - answer: 申し込む
+        feedback_vi: Trước たい dùng dạng ます bỏ ます - 申し込み.
+        error_tag: verb_conjugation
+      - answer: 提出し
+        feedback_vi: 提出する là nộp giấy tờ; đăng ký tham gia lớp là 申し込む.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 申し込む → 申し込みたい (muốn đăng ký). 教室に申し込む - đăng ký lớp.
+    display_answer: 日本語教室に申し込みたいんですが、どうすればいいですか。
+
+  - key: ja:exercise:n3-public-services-review-translate-teishutsu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-teishutsu
+    prompt:
+      source_text: Trường hợp nộp muộn thì hãy liên lạc trước. (dùng 場合は)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 提出が遅れる場合は、事前に連絡してください。
+        - 提出が遅れる場合は、事前にご連絡ください。
+        - 提出が遅れる場合は事前に連絡してください。
+        - 提出が遅れる場合は、前もって連絡してください。
+        - 提出が遅れる場合は、先に連絡してください。
+        - 提出が遅れる場合は、事前に連絡をしてください。
+        - 提出が遅くなる場合は、事前に連絡してください。
+        - 提出が遅くなる場合は、事前にご連絡ください。
+        - 提出が遅れる場合、事前に連絡してください。
+        - 遅れて提出する場合は、事前に連絡してください。
+        - 締め切りに遅れる場合は、事前に連絡してください。
+        - ていしゅつがおくれるばあいは、じぜんにれんらくしてください。
+    known_wrong:
+      - answer: 提出が遅れた場合は、事前に連絡してください。
+        feedback_vi: Liên lạc trước khi muộn nên dùng thể từ điển 遅れる場合; 遅れた場合 là sau khi đã muộn, mâu thuẫn với 事前に.
+        error_tag: baai_tense
+      - answer: 提出が遅れる場合は、事前にご連絡してください。
+        feedback_vi: Nhờ người kia - ご連絡ください hoặc 連絡してください, không có ご～してください.
+        error_tag: go_kudasai_form
+    explanation:
+      vi: 提出が遅れる場合は - trường hợp nộp muộn; 事前に - trước; 連絡してください / ご連絡ください - hãy liên lạc.
+    display_answer: 提出が遅れる場合は、事前に連絡してください。
+
+  - key: ja:exercise:n3-public-services-review-translate-keijiban
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-keijiban
+    prompt:
+      source_text: Trên bảng tin có dán thông báo về lớp tiếng Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 掲示板に日本語教室についてのお知らせが貼ってあります。
+        - 掲示板に日本語教室のお知らせが貼ってあります。
+        - 掲示板に日本語教室についてのお知らせが貼られています。
+        - 掲示板に日本語教室のお知らせが貼られています。
+        - 掲示板に日本語教室についてのお知らせがはってあります。
+        - 掲示板に日本語教室のお知らせがはってあります。
+        - 掲示板には日本語教室についてのお知らせが貼ってあります。
+        - 掲示板には日本語教室のお知らせが貼ってあります。
+        - 日本語教室についてのお知らせが掲示板に貼ってあります。
+        - 日本語教室のお知らせが掲示板に貼ってあります。
+        - 掲示板に日本語教室についてのお知らせがあります。
+        - けいじばんににほんごきょうしつについてのおしらせがはってあります。
+    known_wrong:
+      - answer: 掲示板に日本語教室についてお知らせが貼ってあります。
+        feedback_vi: Trước danh từ お知らせ, について phải thành についての.
+        error_tag: ni_tsuite_no
+      - answer: 掲示板で日本語教室についてのお知らせが貼ってあります。
+        feedback_vi: Vị trí của vật được dán dùng に - 掲示板に貼ってある.
+        error_tag: particle_ni_de
+    explanation:
+      vi: 掲示板に - trên bảng tin; 日本語教室についてのお知らせ - thông báo về lớp tiếng Nhật; 貼ってあります - đang được dán (trạng thái).
+    display_answer: 掲示板に日本語教室についてのお知らせが貼ってあります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-public-services-review-mcq-reading2
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-kigen
+    prompt:
+      stem: "Đọc hướng dẫn: 「在留カードの期限が切れる3か月前から更新の申請ができます。期限が切れた場合は、すぐに入管に相談してください。」 Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: q7j, text: Có thể xin gia hạn từ 3 tháng trước khi thẻ hết hạn., lang: vi }
+        - { id: u3c, text: Chỉ được xin gia hạn sau khi thẻ đã hết hạn., lang: vi }
+        - { id: a9n, text: Thẻ hết hạn thì phải đợi 3 tháng mới được xin lại., lang: vi }
+        - { id: d6t, text: Thẻ cư trú có hạn 3 tháng., lang: vi }
+    answer:
+      correct_option_id: q7j
+    explanation:
+      vi: 期限が切れる3か月前から - từ 3 tháng trước khi hết hạn; 更新の申請 - xin gia hạn. Nếu đã hết hạn thì 入管 (cục xuất nhập cảnh) cần được hỏi ngay.
+    display_answer: Có thể xin gia hạn từ 3 tháng trước khi thẻ hết hạn.
+
+  - key: ja:exercise:n3-public-services-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-zuni
+    prompt:
+      source_text: 申し込みをせずに参加することはできません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không thể tham gia mà không đăng ký.
+        - Không được tham gia mà không đăng ký.
+        - Không thể tham gia nếu không đăng ký.
+        - Không được tham gia nếu không đăng ký.
+        - Nếu không đăng ký thì không thể tham gia.
+        - Nếu không đăng ký thì không được tham gia.
+        - Không đăng ký thì không thể tham gia.
+        - Không đăng ký thì không tham gia được.
+        - Bạn không thể tham gia mà không đăng ký.
+        - Bạn không thể tham gia nếu không đăng ký.
+        - Phải đăng ký mới được tham gia.
+        - Phải đăng ký mới có thể tham gia.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có thể tham gia mà không cần đăng ký.
+        feedback_vi: できません là phủ định - không thể. せずに - mà không (đăng ký).
+        error_tag: negation
+    explanation:
+      vi: 申し込みをせずに - mà không đăng ký; 参加することはできません - không thể tham gia.
+    display_answer: Không thể tham gia mà không đăng ký.
+
+  - key: ja:exercise:n3-public-services-review-wb-youni
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-purpose
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Để không quên hạn nộp, tôi đã viết vào lịch.\""
+      tokens:
+        - { id: c3, text: カレンダーに }
+        - { id: c5, text: 忘れないために }
+        - { id: c1, text: 提出の期限を }
+        - { id: c4, text: 書いておきました }
+        - { id: c2, text: 忘れないように }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+    explanation:
+      vi: 忘れない là trạng thái mong muốn, không chủ ý - dùng ように, không dùng ために.
+    display_answer: 提出の期限を忘れないように、カレンダーに書いておきました。
+
+  - key: ja:exercise:n3-public-services-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ni-tsuite
+    prompt:
+      stem: Bạn gọi đến uỷ ban để hỏi về lớp tiếng Nhật miễn phí đã thấy trên bảng tin. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: r5h, text: 掲示板で見た日本語教室について伺いたいんですが。, lang: ja }
+        - { id: i2w, text: 掲示板で見た日本語教室を申し込まれたいんですが。, lang: ja }
+        - { id: g8x, text: 掲示板で見た日本語教室によって伺いたいんですが。, lang: ja }
+        - { id: p4b, text: 掲示板で見た日本語教室についておっしゃりたいんですが。, lang: ja }
+    answer:
+      correct_option_id: r5h
+    explanation:
+      vi: について (về) + 伺いたい (khiêm nhường - muốn hỏi). 申し込まれたい sai dạng; によって là "bởi/tuỳ"; おっしゃる là tôn kính, không dùng cho mình.
+    display_answer: 掲示板で見た日本語教室について伺いたいんですが。

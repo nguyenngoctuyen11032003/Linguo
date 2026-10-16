@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-sonkeigo
+order_index: 2
+level: n3
+title:
+  vi: Tôn kính ngữ - nâng hành động của người trên
+objectives:
+  - vi: Biến động từ thường thành tôn kính ngữ bằng お～になる và ～(ら)れる.
+  - vi: Dùng đúng các động từ tôn kính riêng - いらっしゃる, 召し上がる, おっしゃる, ご覧になる.
+  - vi: Không dùng tôn kính ngữ cho hành động của chính mình.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n3-workplace]
+items:
+  - item: ja:item:n3-gram-sonkeigo
+  - item: ja:item:n3-irassharu
+  - item: ja:item:n3-meshiagaru
+  - item: ja:item:n3-ossharu
+  - item: ja:item:n3-goran-ni-naru
+  - item: ja:item:n3-joushi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "giám đốc đang ở phòng họp", "mời anh/chị dùng", "xin mời xem tài liệu" bằng tôn kính ngữ (尊敬語) đúng chuẩn công sở.
+  - type: explain
+    text:
+      vi: 'Kính ngữ tiếng Nhật có ba lớp: 丁寧語 (です/ます - lịch sự chung), 尊敬語 (tôn kính - nâng người kia lên) và 謙譲語 (khiêm nhường - hạ mình xuống, bài sau). 尊敬語 chỉ dùng cho hành động của sếp, khách, thầy cô.'
+  - type: explain
+    text:
+      vi: 'Cách lập thông dụng: お + V(bỏ ます) + になる - 帰る → お帰りになる, 待つ → お待ちになる. Cách nhẹ hơn, dễ lập: dạng ～(ら)れる giống bị động - 帰られる, 書かれる, 来られる.'
+  - type: explain
+    text:
+      vi: 'Động từ hay dùng có từ riêng, phải học thuộc: 行く/来る/いる → いらっしゃる; 食べる/飲む → 召し上がる; 言う → おっしゃる; 見る → ご覧になる; する → なさる; 知っている → ご存じだ.'
+  - type: deep_explain
+    text:
+      vi: いらっしゃる và おっしゃる chia thể ます bất quy tắc - いらっしゃいます, おっしゃいます (không phải ～ります). Mệnh lệnh lịch sự cũng theo kiểu này - いらっしゃい(ませ). Còn お～ください (お待ちください, お座りください) là lời mời/yêu cầu lịch sự xây từ cùng khuôn お～.
+  - type: example
+    target: 社長は今、会議室にいらっしゃいます。
+    target_lang: ja
+    translation:
+      vi: Giám đốc hiện đang ở phòng họp ạ.
+  - type: example
+    target: 部長はもうお帰りになりました。
+    target_lang: ja
+    translation:
+      vi: Trưởng phòng đã về rồi ạ.
+  - type: example
+    target: どうぞ、温かいうちに召し上がってください。
+    target_lang: ja
+    translation:
+      vi: Xin mời dùng khi còn nóng ạ.
+  - type: example
+    target: 先生がおっしゃったとおりにやってみます。
+    target_lang: ja
+    translation:
+      vi: Em sẽ thử làm đúng như thầy đã nói.
+  - type: example
+    target: こちらの資料をご覧ください。
+    target_lang: ja
+    translation:
+      vi: Xin mời xem tài liệu này ạ.
+  - type: common_mistake
+    wrong: 私は明日、会社にいらっしゃいます。
+    right: 私は明日、会社に参ります。
+    target_lang: ja
+    note:
+      vi: Tôn kính ngữ không bao giờ dùng cho chính mình. Nói về mình dùng khiêm nhường ngữ (参ります) hoặc đơn giản 行きます.
+  - type: common_mistake
+    wrong: 部長、この資料をお見になりましたか。
+    right: 部長、この資料をご覧になりましたか。
+    target_lang: ja
+    note:
+      vi: 見る có từ tôn kính riêng là ご覧になる; không lập お見になる.
+  - type: summary
+    points:
+      - vi: 尊敬語 - nâng hành động của người trên; không dùng cho mình.
+      - vi: お + V(bỏ ます) + になる; hoặc ～(ら)れる (nhẹ hơn).
+      - vi: Từ riêng - いらっしゃる, 召し上がる, おっしゃる, ご覧になる, なさる.
+      - vi: Thể ます - いらっしゃいます, おっしゃいます.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-sonkeigo-mcq-meshiagaru
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-meshiagaru
+    prompt:
+      stem: 「召し上がる」 là tôn kính ngữ của động từ nào?
+      stem_lang: vi
+      options:
+        - { id: k2m, text: 食べる / 飲む (ăn / uống), lang: vi }
+        - { id: u7d, text: 行く / 来る (đi / đến), lang: vi }
+        - { id: b4x, text: 見る (xem), lang: vi }
+        - { id: f9q, text: 言う (nói), lang: vi }
+    answer:
+      correct_option_id: k2m
+    explanation:
+      vi: 召し上がる - (tôn kính) ăn, uống. 行く/来る → いらっしゃる; 見る → ご覧になる; 言う → おっしゃる.
+    display_answer: 食べる / 飲む (ăn / uống)
+
+  - key: ja:exercise:n3-sonkeigo-listen-irassharu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-irassharu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 社長は今、会議室にいらっしゃいます。
+      options:
+        - { id: p5s, text: Giám đốc hiện đang ở phòng họp ạ., lang: vi }
+        - { id: w1e, text: Giám đốc sắp đi đến phòng họp ạ., lang: vi }
+        - { id: c8t, text: Giám đốc hiện không có ở phòng họp ạ., lang: vi }
+        - { id: y3h, text: Tôi đang ở phòng họp với giám đốc ạ., lang: vi }
+    answer:
+      correct_option_id: p5s
+    explanation:
+      vi: 今 - bây giờ; 会議室に - ở phòng họp; いらっしゃいます ở đây thay cho います (đang ở). Không có phủ định, cũng không nói về "tôi".
+    display_answer: Giám đốc hiện đang ở phòng họp ạ.
+
+  - key: ja:exercise:n3-sonkeigo-mcq-goran
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-goran-ni-naru
+    prompt:
+      stem: 'Bạn hỏi trưởng phòng đã xem email chưa: 部長、メールを＿＿か。'
+      stem_lang: vi
+      options:
+        - { id: g6n, text: ご覧になりました, lang: ja }
+        - { id: a3r, text: お見になりました, lang: ja }
+        - { id: z8v, text: 拝見しました, lang: ja }
+        - { id: m2j, text: 見させました, lang: ja }
+    answer:
+      correct_option_id: g6n
+    explanation:
+      vi: Người trên xem - ご覧になる. お見になる không tồn tại; 拝見する là khiêm nhường (mình xem); 見させる là sai khiến "bắt/cho xem".
+    display_answer: ご覧になりました
+
+  - key: ja:exercise:n3-sonkeigo-fill-okaeri
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sonkeigo
+    prompt:
+      template: "部長はもう{{b1}}になりました。(帰る)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Trưởng phòng đã về rồi ạ."
+        - "Gợi ý: お + 帰る bỏ ます (帰り) + になる."
+    answer:
+      blanks:
+        b1: [お帰り, おかえり]
+    known_wrong:
+      - answer: お帰る
+        feedback_vi: Sau お dùng dạng ます bỏ ます - 帰り, không dùng thể từ điển.
+        error_tag: sonkeigo_form
+      - answer: 帰り
+        feedback_vi: Thiếu お ở đầu - お帰りになる.
+        error_tag: sonkeigo_form
+    explanation:
+      vi: お + V(bỏ ます) + になる - お帰りになりました (đã về). Đây là khuôn tôn kính ngữ dùng được với hầu hết động từ không có từ riêng.
+    display_answer: 部長はもうお帰りになりました。
+
+  - key: ja:exercise:n3-sonkeigo-wb-goran
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-goran-ni-naru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Xin mời xem tài liệu này ạ.\""
+      tokens:
+        - { id: t3, text: ご覧ください }
+        - { id: t1, text: こちらの }
+        - { id: t4, text: 拝見ください }
+        - { id: t2, text: 資料を }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: ご覧ください - xin mời (anh/chị) xem. 拝見 là khiêm nhường, chỉ dùng cho mình nên không ghép với ください.
+    display_answer: こちらの資料をご覧ください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-sonkeigo-fill-ossharu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-ossharu
+    prompt:
+      template: "先生が{{b1}}とおりにやってみます。(言う - tôn kính, quá khứ)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [おっしゃった]
+    known_wrong:
+      - answer: 言った
+        feedback_vi: Thầy là người trên nên dùng tôn kính ngữ - おっしゃった.
+        error_tag: missing_sonkeigo
+      - answer: 申した
+        feedback_vi: 申す là khiêm nhường (mình nói). Thầy nói - おっしゃる.
+        error_tag: sonkeigo_kenjougo
+      - answer: おっしゃりた
+        feedback_vi: おっしゃる là động từ nhóm 1 - thể た là おっしゃった.
+        error_tag: verb_conjugation
+    explanation:
+      vi: 言う → おっしゃる; thể た - おっしゃった. ～とおりに - đúng như.
+    display_answer: 先生がおっしゃったとおりにやってみます。
+
+  - key: ja:exercise:n3-sonkeigo-translate-meshiagaru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-meshiagaru
+    prompt:
+      source_text: Xin mời dùng khi còn nóng ạ. (mời khách ăn)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - どうぞ、温かいうちに召し上がってください。
+        - どうぞ温かいうちに召し上がってください。
+        - 温かいうちに召し上がってください。
+        - 温かいうちにどうぞ召し上がってください。
+        - どうぞ、熱いうちに召し上がってください。
+        - どうぞ熱いうちに召し上がってください。
+        - 熱いうちに召し上がってください。
+        - 温かいうちにお召し上がりください。
+        - どうぞ、温かいうちにお召し上がりください。
+        - どうぞ温かいうちにお召し上がりください。
+        - 熱いうちにお召し上がりください。
+        - どうぞ、熱いうちにお召し上がりください。
+        - どうぞ熱いうちにお召し上がりください。
+        - あたたかいうちにめしあがってください。
+        - どうぞ、あたたかいうちにめしあがってください。
+    known_wrong:
+      - answer: 温かいうちに食べてください。
+        feedback_vi: Mời khách thì dùng tôn kính ngữ 召し上がってください.
+        error_tag: missing_sonkeigo
+      - answer: 温かいうちにいただいてください。
+        feedback_vi: いただく là khiêm nhường (mình ăn); không dùng để mời người khác.
+        error_tag: sonkeigo_kenjougo
+    explanation:
+      vi: 召し上がってください - xin mời dùng; ～うちに - trong khi còn (nóng). お召し上がりください cũng đúng và rất hay gặp trong nhà hàng.
+    display_answer: どうぞ、温かいうちに召し上がってください。
+
+  - key: ja:exercise:n3-sonkeigo-translate-irassharu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-irassharu
+    prompt:
+      source_text: Giám đốc hiện đang ở phòng họp ạ. (tôn kính)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 社長は今、会議室にいらっしゃいます。
+        - 社長は今会議室にいらっしゃいます。
+        - 社長はただいま会議室にいらっしゃいます。
+        - 社長は今、会議室にいらっしゃいますよ。
+        - 今、社長は会議室にいらっしゃいます。
+        - 今社長は会議室にいらっしゃいます。
+        - 社長は会議室にいらっしゃいます。
+        - しゃちょうはいま、かいぎしつにいらっしゃいます。
+        - しゃちょうはいまかいぎしつにいらっしゃいます。
+    known_wrong:
+      - answer: 社長は今、会議室にいます。
+        feedback_vi: Câu đúng ngữ pháp nhưng thiếu kính ngữ; nói về giám đốc dùng いらっしゃいます.
+        error_tag: missing_sonkeigo
+      - answer: 社長は今、会議室にいらっしゃります。
+        feedback_vi: Thể ます của いらっしゃる là いらっしゃいます.
+        error_tag: verb_conjugation
+      - answer: 社長は今、会議室におります。
+        feedback_vi: おります là khiêm nhường; chỉ dùng cho mình hoặc người phe mình khi nói với khách.
+        error_tag: sonkeigo_kenjougo
+    explanation:
+      vi: いる → いらっしゃる → いらっしゃいます. 社長 (giám đốc) đã là danh xưng kính trọng, không thêm さん.
+    display_answer: 社長は今、会議室にいらっしゃいます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-sonkeigo-mcq-self
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sonkeigo
+    prompt:
+      stem: Câu nào dùng kính ngữ ĐÚNG?
+      stem_lang: vi
+      options:
+        - { id: h7c, text: 部長は何時ごろお戻りになりますか。, lang: ja }
+        - { id: e1w, text: 私は明日10時に会社にいらっしゃいます。, lang: ja }
+        - { id: s5k, text: 私はもう昼ご飯を召し上がりました。, lang: ja }
+        - { id: v9b, text: 部長、この資料をお見になりましたか。, lang: ja }
+    answer:
+      correct_option_id: h7c
+    explanation:
+      vi: お戻りになる - (trưởng phòng) quay lại, đúng khuôn お～になる cho người trên. Hai câu dùng tôn kính ngữ cho chính mình là sai; お見になる không tồn tại (dùng ご覧になる).
+    display_answer: 部長は何時ごろお戻りになりますか。
+
+  - key: ja:exercise:n3-sonkeigo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-ossharu
+    prompt:
+      source_text: 部長がおっしゃったことをメモしておきました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đã ghi chú lại những gì trưởng phòng nói.
+        - Tôi đã ghi lại những gì trưởng phòng nói.
+        - Tôi đã ghi chú sẵn những gì trưởng phòng đã nói.
+        - Tôi đã ghi lại những gì trưởng phòng đã nói.
+        - Tôi đã ghi chú lại những điều trưởng phòng nói.
+        - Tôi đã ghi lại những điều trưởng phòng đã nói.
+        - Tôi đã ghi chép lại những gì trưởng phòng nói.
+        - Tôi đã note lại những gì trưởng phòng nói.
+        - Em đã ghi chú lại những gì trưởng phòng nói.
+        - Tôi đã ghi lại lời trưởng phòng nói.
+        - Tôi đã ghi lại lời trưởng phòng.
+        - Tôi đã ghi chú lại lời trưởng phòng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trưởng phòng đã ghi chú lại những gì tôi nói.
+        feedback_vi: おっしゃった là hành động của trưởng phòng (nói); người ghi chú (メモしておきました) là tôi.
+        error_tag: subject_confusion
+    explanation:
+      vi: 部長がおっしゃったこと - điều trưởng phòng đã nói (tôn kính); メモしておく - ghi chú sẵn, ghi lại để dùng sau.
+    display_answer: Tôi đã ghi chú lại những gì trưởng phòng nói.
+
+  - key: ja:exercise:n3-sonkeigo-wb-omachi
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sonkeigo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Khách hàng đang đợi ở sảnh ạ.\""
+      tokens:
+        - { id: k4, text: お待ちになっています }
+        - { id: k1, text: お客様が }
+        - { id: k5, text: お待ちしています }
+        - { id: k2, text: ロビーで }
+    answer:
+      orders:
+        - [k1, k2, k4]
+        - [k2, k1, k4]
+    explanation:
+      vi: Khách đợi - hành động của khách nên dùng tôn kính お待ちになっています. お待ちしています là khiêm nhường - "tôi đang đợi (anh/chị)".
+    display_answer: お客様がロビーでお待ちになっています。
+
+  - key: ja:exercise:n3-sonkeigo-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-irassharu
+    prompt:
+      stem: Khách đến công ty, bạn muốn hỏi "Anh/chị đến đây bằng gì ạ?". Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: n6a, text: 何でいらっしゃいましたか。, lang: ja }
+        - { id: d2f, text: 何で参りましたか。, lang: ja }
+        - { id: r8u, text: 何で来ましたか。, lang: ja }
+        - { id: q3z, text: 何で伺いましたか。, lang: ja }
+    answer:
+      correct_option_id: n6a
+    explanation:
+      vi: Khách đến - dùng tôn kính いらっしゃる. 参る, 伺う là khiêm nhường cho chính mình; 来ましたか đúng ngữ pháp nhưng thiếu lịch sự với khách.
+    display_answer: 何でいらっしゃいましたか。

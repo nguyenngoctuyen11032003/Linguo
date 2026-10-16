@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-causative
+order_index: 3
+level: n3
+title:
+  vi: Bắt làm, cho làm, xin phép - thể sai khiến ～(さ)せる
+objectives:
+  - vi: Chia thể sai khiến của ba nhóm động từ.
+  - vi: Nói "bắt ai làm" và "cho phép ai làm"; "làm ai lo, làm ai cười".
+  - vi: Xin phép lịch sự bằng ～(さ)せてください / ～(さ)せていただけませんか.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-meiwaku-ukemi]
+items:
+  - item: ja:item:n3-gram-causative
+  - item: ja:item:n3-gram-sasete-kudasai
+  - item: ja:item:n3-naraigoto
+  - item: ja:item:n3-shinpai
+  - item: ja:item:n3-jiyuu
+  - item: ja:item:n3-gram-node
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "mẹ bắt con ăn rau", "tôi cho con học piano", "tôi đã làm bố mẹ lo", và biết xin phép sếp "cho tôi về sớm được không ạ".
+  - type: explain
+    text:
+      vi: 'Cách chia - nhóm 1 đổi u thành a rồi thêm せる: 行く → 行かせる, 言う → 言わせる, 習う → 習わせる. Nhóm 2 bỏ る thêm させる: 食べる → 食べさせる. Bất quy tắc: する → させる, 来る → 来させる.'
+  - type: explain
+    text:
+      vi: 'Người bị bắt/được cho phép thường đi với に khi câu có tân ngữ (子どもに野菜を食べさせる). Với động từ không có tân ngữ, dùng を hoặc に - 子どもを公園で遊ばせる. Cảm xúc (lo, cười, khóc) dùng を - 両親を心配させる.'
+  - type: explain
+    text:
+      vi: Xin phép làm việc của mình - thể sai khiến + てください. 休ませてください (cho tôi nghỉ), 説明させてください (cho tôi giải thích). Lịch sự hơn - ～させていただけませんか.
+  - type: deep_explain
+    text:
+      vi: Thể sai khiến thể hiện quan hệ trên - dưới. Bạn không nói 部長に資料を読ませる (bắt trưởng phòng đọc) - thay vào đó dùng 読んでいただけませんか. Ngược lại, ～させていただきます rất phổ biến ở công sở để nói khiêm tốn về việc mình sắp làm.
+  - type: example
+    target: 母は子どもに野菜を食べさせました。
+    target_lang: ja
+    translation:
+      vi: Mẹ bắt con ăn rau.
+  - type: example
+    target: 子どもにピアノを習わせています。
+    target_lang: ja
+    translation:
+      vi: Tôi đang cho con học piano.
+    note:
+      vi: Nghĩa "cho phép/tạo điều kiện".
+  - type: example
+    target: 連絡しなかったので、両親を心配させてしまいました。
+    target_lang: ja
+    translation:
+      vi: Vì không liên lạc nên tôi đã làm bố mẹ lo.
+  - type: example
+    target: 体調が悪いので、早く帰らせていただけませんか。
+    target_lang: ja
+    translation:
+      vi: Tôi không khoẻ, có thể cho tôi về sớm được không ạ?
+  - type: common_mistake
+    wrong: 体調が悪いので、早く帰ってください。
+    right: 体調が悪いので、早く帰らせてください。
+    target_lang: ja
+    note:
+      vi: 帰ってください là bảo người nghe về. Xin cho mình về dùng 帰らせてください. Tiếng Việt "cho tôi về" có chữ "cho" - hãy nhớ nó ứng với させる.
+  - type: common_mistake
+    wrong: 両親に心配しました。
+    right: 両親を心配させました。
+    target_lang: ja
+    note:
+      vi: '"Làm bố mẹ lo" - bố mẹ là người lo, bạn là người gây ra, nên dùng thể sai khiến 心配させる với を. 両親を心配しました là "tôi lo cho bố mẹ".'
+  - type: summary
+    points:
+      - vi: Nhóm 1 - u → a + せる (う → わ); nhóm 2 - る → させる; する → させる; 来る → 来させる.
+      - vi: Bắt/cho ai làm việc gì - 人に～を～させる; cảm xúc - 人を～させる.
+      - vi: Xin phép - ～させてください, ～させていただけませんか.
+      - vi: Không dùng thể sai khiến với người trên.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-causative-mcq-ikaseru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-causative
+    prompt:
+      stem: Thể sai khiến của 行く là gì?
+      stem_lang: vi
+      options:
+        - { id: f4c, text: 行かせる, lang: ja }
+        - { id: j8r, text: 行かれる, lang: ja }
+        - { id: q2m, text: 行きさせる, lang: ja }
+        - { id: w6t, text: 行けさせる, lang: ja }
+    answer:
+      correct_option_id: f4c
+    explanation:
+      vi: Nhóm 1 - く đổi thành か rồi thêm せる - 行かせる. 行かれる là bị động; hai dạng còn lại không tồn tại.
+    display_answer: 行かせる
+
+  - key: ja:exercise:n3-causative-listen-yasai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-gram-causative
+    prompt:
+      audio_asset_id: null
+      fallback_text: 母は子どもに野菜を食べさせました。
+      options:
+        - { id: h1x, text: Mẹ bắt con ăn rau., lang: vi }
+        - { id: k5p, text: Con bắt mẹ ăn rau., lang: vi }
+        - { id: e3v, text: Mẹ bị con bắt ăn rau., lang: vi }
+        - { id: s8a, text: Mẹ ăn rau cùng con., lang: vi }
+    answer:
+      correct_option_id: h1x
+    explanation:
+      vi: 母は - người ra lệnh; 子どもに - người bị bắt làm; 食べさせました - bắt ăn. Nếu mẹ bị bắt thì sẽ là bị động sai khiến 食べさせられました.
+    display_answer: Mẹ bắt con ăn rau.
+
+  - key: ja:exercise:n3-causative-mcq-yasumasete
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-sasete-kudasai
+    prompt:
+      stem: Bạn muốn xin sếp cho nghỉ ngày mai. Chọn cách nói đúng.
+      stem_lang: vi
+      options:
+        - { id: c2n, text: 明日、休ませてください。, lang: ja }
+        - { id: l7y, text: 明日、休んでください。, lang: ja }
+        - { id: z4o, text: 明日、休まれてください。, lang: ja }
+        - { id: a9g, text: 明日、休みさせてください。, lang: ja }
+    answer:
+      correct_option_id: c2n
+    explanation:
+      vi: Xin cho mình nghỉ - 休む → 休ませる + てください. 休んでください là bảo sếp nghỉ; hai dạng còn lại sai.
+    display_answer: 明日、休ませてください。
+
+  - key: ja:exercise:n3-causative-fill-narawasete
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-naraigoto
+    prompt:
+      template: "子どもにピアノを{{b1}}います。(習う)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Tôi đang cho con học piano."
+        - "Gợi ý: 習う đuôi う → わ + せる, rồi chia thể て."
+    answer:
+      blanks:
+        b1: [習わせて, ならわせて]
+    known_wrong:
+      - answer: 習あせて
+        feedback_vi: Động từ đuôi う đổi thành わ, không phải あ - 習わせる.
+        error_tag: causative_form
+      - answer: 習われて
+        feedback_vi: 習われる là bị động. "Cho con học" dùng sai khiến 習わせる.
+        error_tag: passive_causative
+    explanation:
+      vi: 習う → 習わせる → 習わせています (đang cho học). Người được cho học (子ども) + に, môn học (ピアノ) + を.
+    display_answer: 子どもにピアノを習わせています。
+
+  - key: ja:exercise:n3-causative-wb-shinpai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shinpai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi đã làm bố mẹ lo lắng.\""
+      tokens:
+        - { id: q3, text: 心配させてしまいました }
+        - { id: q4, text: 心配してしまいました }
+        - { id: q1, text: 両親を }
+    answer:
+      orders:
+        - [q1, q3]
+    explanation:
+      vi: Bố mẹ lo vì mình - thể sai khiến 心配させる với を. 両親を心配してしまいました nghĩa là "tôi lỡ lo cho bố mẹ".
+    display_answer: 両親を心配させてしまいました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-causative-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-causative
+    prompt:
+      template: "先生は学生に作文を{{b1}}。それから、意見を{{b2}}。(書く / 言う)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [書かせました, かかせました, 書かせた, かかせた]
+        b2: [言わせました, いわせました, 言わせた, いわせた]
+    known_wrong:
+      - answer: 書かれました
+        feedback_vi: 書かれる là bị động. Thầy bắt học sinh viết - sai khiến 書かせる.
+        error_tag: passive_causative
+      - answer: 言あせました
+        feedback_vi: Đuôi う đổi thành わ - 言わせる.
+        error_tag: causative_form
+    explanation:
+      vi: 書く → 書かせる; 言う → 言わせる. Thầy (người ra lệnh) は, học sinh (người làm) に.
+    display_answer: 先生は学生に作文を書かせました。それから、意見を言わせました。
+
+  - key: ja:exercise:n3-causative-translate-kaerasete
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sasete-kudasai
+    prompt:
+      source_text: Tôi không khoẻ nên xin cho tôi về sớm. (lịch sự, dùng てください)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 体調が悪いので、早く帰らせてください。
+        - 体調が悪いので早く帰らせてください。
+        - 体調が悪いので、早めに帰らせてください。
+        - 体調が悪いので早めに帰らせてください。
+        - 具合が悪いので、早く帰らせてください。
+        - 具合が悪いので早く帰らせてください。
+        - 気分が悪いので、早く帰らせてください。
+        - 気分が悪いので早く帰らせてください。
+        - 体調が悪いので、今日は早く帰らせてください。
+        - 体調が悪いので今日は早く帰らせてください。
+        - 体調がよくないので、早く帰らせてください。
+        - 体調がよくないので早く帰らせてください。
+        - 体の調子が悪いので、早く帰らせてください。
+        - 体の調子が悪いので早く帰らせてください。
+    known_wrong:
+      - answer: 体調が悪いので、早く帰ってください。
+        feedback_vi: 帰ってください là bảo người nghe về. Xin cho mình về - 帰らせてください.
+        error_tag: causative_request
+      - answer: 体調が悪いので、早く帰りさせてください。
+        feedback_vi: 帰る là nhóm 1 - る → ら + せる - 帰らせる.
+        error_tag: causative_form
+    explanation:
+      vi: 帰る (nhóm 1, dù đuôi る) → 帰らせる → 帰らせてください. ので nêu lý do lịch sự.
+    display_answer: 体調が悪いので、早く帰らせてください。
+
+  - key: ja:exercise:n3-causative-translate-jiyuu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-jiyuu
+    prompt:
+      source_text: Cuối tuần tôi cho bọn trẻ chơi tự do ở công viên. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 週末は子どもたちを公園で自由に遊ばせます。
+        - 週末は、子どもたちを公園で自由に遊ばせます。
+        - 週末は子どもたちに公園で自由に遊ばせます。
+        - 週末は、子どもたちに公園で自由に遊ばせます。
+        - 週末は子どもを公園で自由に遊ばせます。
+        - 週末は、子どもを公園で自由に遊ばせます。
+        - 週末は子供たちを公園で自由に遊ばせます。
+        - 週末は子供を公園で自由に遊ばせます。
+        - 週末、子どもたちを公園で自由に遊ばせます。
+        - 週末は公園で子どもたちを自由に遊ばせます。
+        - 週末は公園で子どもを自由に遊ばせます。
+        - 週末は子どもたちを公園で自由に遊ばせています。
+        - 週末は子どもを公園で自由に遊ばせています。
+    known_wrong:
+      - answer: 週末は子どもたちを公園で自由に遊びます。
+        feedback_vi: 遊びます là "tôi chơi". Cho bọn trẻ chơi dùng thể sai khiến 遊ばせます.
+        error_tag: causative_needed
+    explanation:
+      vi: 遊ぶ → 遊ばせる (cho chơi). Động từ không có tân ngữ nên người được cho phép đi với を (に cũng được). 自由に - tự do.
+    display_answer: 週末は子どもたちを公園で自由に遊ばせます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-causative-mcq-boss
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sasete-kudasai
+    prompt:
+      stem: Trong cuộc họp, bạn muốn xin trưởng phòng cho mình giải thích kế hoạch. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: b6w, text: 私に説明させていただけませんか。, lang: ja }
+        - { id: v1q, text: 部長に説明させてください。, lang: ja }
+        - { id: d8p, text: 私が説明されてください。, lang: ja }
+        - { id: n3j, text: 部長、説明してください。, lang: ja }
+    answer:
+      correct_option_id: b6w
+    explanation:
+      vi: Xin phép cho mình làm - 説明させていただけませんか (rất lịch sự). Câu 部長に説明させて là bắt trưởng phòng giải thích; 説明されてください sai; câu cuối là nhờ sếp giải thích.
+    display_answer: 私に説明させていただけませんか。
+
+  - key: ja:exercise:n3-causative-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-causative
+    prompt:
+      source_text: 彼はいつも面白い話をして、みんなを笑わせます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy lúc nào cũng kể chuyện vui làm mọi người cười.
+        - Anh ấy luôn kể chuyện vui làm mọi người cười.
+        - Anh ấy lúc nào cũng kể chuyện thú vị làm mọi người cười.
+        - Anh ấy luôn kể chuyện thú vị làm mọi người cười.
+        - Anh ấy lúc nào cũng kể chuyện hài làm mọi người cười.
+        - Anh ấy luôn kể chuyện vui khiến mọi người cười.
+        - Anh ấy lúc nào cũng kể chuyện vui khiến mọi người cười.
+        - Anh ấy lúc nào cũng nói chuyện vui làm mọi người cười.
+        - Anh ấy lúc nào cũng kể chuyện cười làm mọi người cười.
+        - Lúc nào anh ấy cũng kể chuyện vui làm mọi người cười.
+        - Anh ấy luôn kể những chuyện thú vị làm mọi người cười.
+        - Anh ấy lúc nào cũng kể chuyện vui để mọi người cười.
+        - Anh ấy luôn làm mọi người cười bằng những câu chuyện thú vị.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh ấy lúc nào cũng kể chuyện vui và bị mọi người cười.
+        feedback_vi: 笑わせる là làm cho người khác cười (sai khiến), không phải bị cười (笑われる).
+        error_tag: passive_causative
+    explanation:
+      vi: みんなを笑わせる - làm mọi người cười. Cảm xúc, phản ứng (cười, khóc, lo) dùng thể sai khiến với を.
+    display_answer: Anh ấy lúc nào cũng kể chuyện vui làm mọi người cười.
+
+  - key: ja:exercise:n3-causative-wb-tsukawasete
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sasete-kudasai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cho tôi dùng máy tính này một chút được không ạ?\""
+      tokens:
+        - { id: r4, text: 使わせていただけませんか }
+        - { id: r2, text: ちょっと }
+        - { id: r5, text: 使われていただけませんか }
+        - { id: r1, text: このパソコンを }
+    answer:
+      orders:
+        - [r1, r2, r4]
+        - [r2, r1, r4]
+    explanation:
+      vi: Xin phép dùng - 使う (う → わ) → 使わせる + ていただけませんか. 使われて là bị động, không dùng để xin phép.
+    display_answer: このパソコンをちょっと使わせていただけませんか。
+
+  - key: ja:exercise:n3-causative-mcq-wrong
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-causative
+    prompt:
+      stem: Câu nào KHÔNG phù hợp khi nói ở công ty?
+      stem_lang: vi
+      options:
+        - { id: x5k, text: 部長にこの書類を読ませました。, lang: ja }
+        - { id: g2e, text: 新入社員にコピーをさせました。, lang: ja }
+        - { id: i9c, text: 部長にこの書類を読んでいただきました。, lang: ja }
+        - { id: m6s, text: この件は私に担当させてください。, lang: ja }
+    answer:
+      correct_option_id: x5k
+    explanation:
+      vi: Thể sai khiến thể hiện người trên bắt người dưới; "bắt trưởng phòng đọc" là thất lễ. Với sếp dùng ～ていただきました. Hai câu còn lại (giao việc cho nhân viên mới, xin phụ trách) đều tự nhiên.
+    display_answer: 部長にこの書類を読ませました。

@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-opinions-review
+order_index: 5
+level: n3
+title:
+  vi: "Ôn tập: đọc bài viết nêu ý kiến"
+objectives:
+  - vi: Đọc hiểu đoạn văn ý kiến có số liệu khảo sát, so sánh và kết luận.
+  - vi: Tìm ý chính của tác giả qua các từ nối 一方, つまり, 確かに～が.
+  - vi: Viết câu nêu ý kiến có lý do, so sánh và kết luận.
+estimated_minutes: 24
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n3-hazu-wake]
+items:
+  - item: ja:item:n3-chousa
+  - item: ja:item:n3-wariai
+  - item: ja:item:n3-keikou
+  - item: ja:item:n3-ketsuron
+  - item: ja:item:n3-gram-beki
+    role: reuse
+  - item: ja:item:n3-gram-sou-da-denbun
+    role: reuse
+  - item: ja:item:n3-gram-ni-kurabete
+    role: reuse
+  - item: ja:item:n3-gram-ippou-de
+    role: reuse
+  - item: ja:item:n3-gram-wake-dewa-nai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn cuối chương trình N3 đưa bạn vào dạng đọc hay gặp trong đề JLPT - một đoạn văn ngắn trình bày số liệu rồi nêu quan điểm của tác giả.
+  - type: explain
+    text:
+      vi: 'Bài ý kiến thường có bốn phần: số liệu (ある調査によると、～割合が～), so sánh (～に比べて, 一方), công nhận phản biện (確かに～が), kết luận (つまり / 結論として ～べきだ / ～のではないだろうか).'
+  - type: explain
+    text:
+      vi: 'Từ hay gặp: 調査 (khảo sát), 割合 (tỉ lệ), 傾向 (xu hướng), 結論 (kết luận), 増える / 減る (tăng / giảm), 半分 (một nửa), 以上 / 以下 (trên / dưới).'
+  - type: deep_explain
+    text:
+      vi: 'Ý của tác giả thường nằm sau 一方, しかし, つまり hoặc ở câu cuối. Câu có ～のではないだろうか (chẳng phải là... sao) là ý kiến của tác giả được nói mềm, không phải câu hỏi thật. Còn ～そうだ, ～によると là thông tin dẫn lại, chưa phải ý kiến.'
+  - type: example
+    target: ある調査によると、若者の半分以上が毎日料理をしないそうです。
+    target_lang: ja
+    translation:
+      vi: Theo một cuộc khảo sát, hơn một nửa giới trẻ không nấu ăn hằng ngày.
+  - type: example
+    target: 在宅勤務をする人の割合が増えています。
+    target_lang: ja
+    translation:
+      vi: Tỉ lệ người làm việc tại nhà đang tăng.
+  - type: example
+    target: 最近、結婚しない人が増える傾向があります。
+    target_lang: ja
+    translation:
+      vi: Gần đây có xu hướng người không kết hôn tăng lên.
+  - type: example
+    target: 結論から言うと、私はこの意見に反対です。
+    target_lang: ja
+    translation:
+      vi: Nói kết luận trước, tôi phản đối ý kiến này.
+  - type: common_mistake
+    wrong: 在宅勤務をする人の割合が多くなっています。
+    right: 在宅勤務をする人の割合が高くなっています。
+    target_lang: ja
+    note:
+      vi: Tỉ lệ đi với 高い / 低い hoặc 増える / 減る; 割合が多い nghe không tự nhiên.
+  - type: common_mistake
+    wrong: 結婚しない人が増える傾向がします。
+    right: 結婚しない人が増える傾向があります。
+    target_lang: ja
+    note:
+      vi: Có xu hướng - 傾向がある (hoặc 傾向にある), không dùng する.
+  - type: summary
+    points:
+      - vi: 調査, 割合 (高い/低い, 増える/減る), 傾向がある, 結論.
+      - vi: Dẫn số liệu - ～によると、～そうだ.
+      - vi: Ý tác giả - sau 一方, しかし, つまり, và ～べきだ / ～のではないだろうか.
+      - vi: Ôn に比べて, 一方で, わけではない.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-opinions-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-chousa
+    prompt:
+      stem: "Đọc: 「ある調査によると、在宅勤務をする人の割合は5年前に比べて3倍に増えたそうだ。通勤がない分、自由な時間が増える一方で、同僚と話す機会が減ったと感じる人も多い。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: v4k, text: Làm việc tại nhà tăng thời gian rảnh nhưng nhiều người thấy ít dịp trò chuyện với đồng nghiệp., lang: vi }
+        - { id: h8c, text: Tỉ lệ làm việc tại nhà đã giảm còn một phần ba so với 5 năm trước., lang: vi }
+        - { id: o2y, text: Tác giả khẳng định mọi người nên làm việc tại nhà., lang: vi }
+        - { id: s6n, text: Người làm việc tại nhà nói chuyện với đồng nghiệp nhiều hơn trước., lang: vi }
+    answer:
+      correct_option_id: v4k
+    explanation:
+      vi: 3倍に増えた - tăng gấp 3; 自由な時間が増える一方で、同僚と話す機会が減った - thời gian rảnh tăng, nhưng mặt khác ít dịp nói chuyện. Đoạn văn không có ý kiến べきだ.
+    display_answer: Làm việc tại nhà tăng thời gian rảnh nhưng nhiều người thấy ít dịp trò chuyện với đồng nghiệp.
+
+  - key: ja:exercise:n3-opinions-review-listen-keikou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-keikou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 最近、結婚しない人が増える傾向があります。
+      options:
+        - { id: q1d, text: Gần đây có xu hướng người không kết hôn tăng lên., lang: vi }
+        - { id: z7a, text: Gần đây có xu hướng người kết hôn tăng lên., lang: vi }
+        - { id: f3m, text: Gần đây người không kết hôn đã giảm đi., lang: vi }
+        - { id: j9t, text: Gần đây nhiều người kết hôn muộn., lang: vi }
+    answer:
+      correct_option_id: q1d
+    explanation:
+      vi: 結婚しない人 - người không kết hôn; 増える傾向がある - có xu hướng tăng.
+    display_answer: Gần đây có xu hướng người không kết hôn tăng lên.
+
+  - key: ja:exercise:n3-opinions-review-mcq-wariai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-wariai
+    prompt:
+      stem: 'Chọn từ phù hợp: 在宅勤務をする人の＿＿が年々高くなっています。'
+      stem_lang: vi
+      options:
+        - { id: b6w, text: 割合, lang: ja }
+        - { id: m2r, text: 結論, lang: ja }
+        - { id: e5h, text: 意見, lang: ja }
+        - { id: x8v, text: 事情, lang: ja }
+    answer:
+      correct_option_id: b6w
+    explanation:
+      vi: 割合が高くなる - tỉ lệ tăng. 結論 (kết luận), 意見 (ý kiến), 事情 (hoàn cảnh) không đi với 高くなる theo nghĩa này.
+    display_answer: 割合
+
+  - key: ja:exercise:n3-opinions-review-fill-ketsuron
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-ketsuron
+    prompt:
+      template: "{{b1}}から言うと、私はこの意見に反対です。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Nói kết luận trước, tôi phản đối ý kiến này."
+        - "Gợi ý: 'kết luận' - けつろん."
+    answer:
+      blanks:
+        b1: [結論, けつろん]
+    known_wrong:
+      - answer: 結果
+        feedback_vi: 結果 là kết quả (của sự việc). Kết luận của lập luận là 結論.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 結論から言うと - nói kết luận trước. Cách mở đầu này giúp người nghe nắm ý chính ngay.
+    display_answer: 結論から言うと、私はこの意見に反対です。
+
+  - key: ja:exercise:n3-opinions-review-wb-chousa
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-chousa
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Theo một cuộc khảo sát, hơn một nửa giới trẻ không nấu ăn hằng ngày.\""
+      tokens:
+        - { id: a4, text: 毎日料理をしないそうです }
+        - { id: a2, text: 若者の }
+        - { id: a5, text: 毎日料理をしないべきです }
+        - { id: a1, text: ある調査によると、 }
+        - { id: a3, text: 半分以上が }
+    answer:
+      orders:
+        - [a1, a2, a3, a4]
+    explanation:
+      vi: ～によると、～そうです - dẫn thông tin từ nguồn. べきです là ý kiến "nên", không hợp với việc dẫn số liệu.
+    display_answer: ある調査によると、若者の半分以上が毎日料理をしないそうです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-opinions-review-fill-keikou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-keikou
+    prompt:
+      template: "最近、結婚しない人が増える{{b1}}があります。(xu hướng)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [傾向, けいこう]
+    known_wrong:
+      - answer: 割合
+        feedback_vi: 割合 là tỉ lệ; "có xu hướng" là 傾向がある.
+        error_tag: vocab_meaning
+      - answer: けいこ
+        feedback_vi: こう là âm dài - けいこう. けいこ (稽古) là "luyện tập".
+        error_tag: long_vowel
+    explanation:
+      vi: V + 傾向がある - có xu hướng.
+    display_answer: 最近、結婚しない人が増える傾向があります。
+
+  - key: ja:exercise:n3-opinions-review-translate-wariai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-wariai
+    prompt:
+      source_text: So với 10 năm trước, tỉ lệ người đi làm bằng xe đạp đã tăng. (dùng に比べて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 10年前に比べて、自転車で通勤する人の割合が増えました。
+        - 10年前に比べて自転車で通勤する人の割合が増えました。
+        - 10年前に比べて、自転車で通勤する人の割合が増えています。
+        - 10年前に比べて、自転車で通勤する人の割合が高くなりました。
+        - 10年前に比べて、自転車で通勤する人の割合が高くなっています。
+        - 10年前と比べて、自転車で通勤する人の割合が増えました。
+        - 10年前と比べて、自転車で通勤する人の割合が高くなりました。
+        - 十年前に比べて、自転車で通勤する人の割合が増えました。
+        - 10年前に比べて、自転車で会社に行く人の割合が増えました。
+        - 10年前に比べて、自転車通勤の人の割合が増えました。
+        - 10年前に比べて、自転車で通勤する人の割合が上がりました。
+        - 10年前に比べると、自転車で通勤する人の割合が増えました。
+        - じゅうねんまえにくらべて、じてんしゃでつうきんするひとのわりあいがふえました。
+    known_wrong:
+      - answer: 10年前に比べて、自転車で通勤する人の割合が多くなりました。
+        feedback_vi: 割合 đi với 増える / 高くなる; 多くなる không tự nhiên với tỉ lệ.
+        error_tag: collocation
+      - answer: 10年前に比べて、自転車で通勤する人の割合が減りました。
+        feedback_vi: 減る là giảm; tăng là 増える.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 10年前に比べて - so với 10 năm trước; 自転車で通勤する人 - người đi làm bằng xe đạp; 割合が増えました - tỉ lệ đã tăng.
+    display_answer: 10年前に比べて、自転車で通勤する人の割合が増えました。
+
+  - key: ja:exercise:n3-opinions-review-translate-beki
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-beki
+    prompt:
+      source_text: Tôi nghĩ công ty nên tăng thêm việc làm tại nhà. (dùng べき)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会社は在宅勤務を増やすべきだと思います。
+        - 会社はもっと在宅勤務を増やすべきだと思います。
+        - 会社は在宅勤務をもっと増やすべきだと思います。
+        - 会社は在宅勤務を増やすべきだと思う。
+        - 会社はもっと在宅勤務を増やすべきだと思う。
+        - 会社は在宅勤務を増やすべきです。
+        - 私は会社は在宅勤務を増やすべきだと思います。
+        - 会社は在宅ワークを増やすべきだと思います。
+        - 会社はリモートワークを増やすべきだと思います。
+        - 会社はテレワークを増やすべきだと思います。
+        - 会社が在宅勤務を増やすべきだと思います。
+        - かいしゃはざいたくきんむをふやすべきだとおもいます。
+    known_wrong:
+      - answer: 会社は在宅勤務を増えるべきだと思います。
+        feedback_vi: Công ty làm cho tăng - tha động từ 増やす (を増やす). 増える là tự động từ.
+        error_tag: transitivity
+      - answer: 会社は在宅勤務を増やすはずだと思います。
+        feedback_vi: はずだ là "chắc chắn là"; ý kiến "nên" dùng べきだ.
+        error_tag: beki_hazu
+    explanation:
+      vi: 在宅勤務を増やす - tăng việc làm tại nhà (tha động từ); ～べきだと思います - tôi nghĩ nên.
+    display_answer: 会社は在宅勤務を増やすべきだと思います。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-opinions-review-mcq-author
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-wake-dewa-nai
+    prompt:
+      stem: "Đọc: 「確かにスマートフォンは便利だ。しかし、子どもに長時間使わせるのは問題ではないだろうか。スマホが悪いわけではないが、使う時間のルールを家族で決めるべきだと思う。」 Ý của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: c5j, text: Gia đình nên cùng đặt quy tắc về thời gian dùng điện thoại cho trẻ., lang: vi }
+        - { id: w2p, text: Điện thoại thông minh có hại nên trẻ em không được dùng., lang: vi }
+        - { id: k7e, text: Trẻ em nên được dùng điện thoại bao lâu tuỳ thích vì nó tiện lợi., lang: vi }
+        - { id: d1s, text: Tác giả không biết điện thoại có tiện hay không., lang: vi }
+    answer:
+      correct_option_id: c5j
+    explanation:
+      vi: 確かに～しかし - công nhận rồi phản bác; スマホが悪いわけではない - không phải điện thoại xấu; 家族で決めるべきだ - gia đình nên cùng quyết định (ý chính ở cuối đoạn).
+    display_answer: Gia đình nên cùng đặt quy tắc về thời gian dùng điện thoại cho trẻ.
+
+  - key: ja:exercise:n3-opinions-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-ippou-de
+    prompt:
+      source_text: ネットで買い物をする人が増える一方で、町の小さな店は減っています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong khi người mua sắm trên mạng tăng lên thì các cửa hàng nhỏ trong thị trấn đang giảm đi.
+        - Trong khi người mua sắm trên mạng tăng thì các cửa hàng nhỏ trong thị trấn đang giảm.
+        - Trong khi số người mua sắm trên mạng tăng lên thì các cửa hàng nhỏ trong thị trấn đang giảm đi.
+        - Trong khi số người mua sắm trên mạng tăng thì các cửa hàng nhỏ trong phố đang giảm.
+        - Người mua sắm trên mạng tăng lên, mặt khác các cửa hàng nhỏ trong thị trấn đang giảm đi.
+        - Người mua sắm trên mạng tăng lên, trong khi đó các cửa hàng nhỏ trong thị trấn đang giảm đi.
+        - Số người mua hàng trên mạng tăng lên, mặt khác các cửa hàng nhỏ trong thị trấn đang giảm.
+        - Trong khi người mua hàng qua mạng tăng lên thì các cửa hàng nhỏ trong thị trấn đang giảm đi.
+        - Trong khi người mua sắm online tăng lên thì các cửa hàng nhỏ trong thị trấn đang giảm đi.
+        - Trong khi người mua sắm trên mạng tăng lên thì các cửa hàng nhỏ ở thị trấn đang giảm đi.
+        - Trong khi người mua sắm trên mạng tăng lên thì các cửa hàng nhỏ trong khu phố đang giảm đi.
+        - Trong khi người mua sắm trên mạng ngày càng tăng thì các cửa hàng nhỏ trong thị trấn đang giảm đi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì người mua sắm trên mạng tăng lên nên các cửa hàng nhỏ trong thị trấn cũng tăng.
+        feedback_vi: 一方で là đối lập (trong khi... thì...), và 減っています là đang giảm.
+        error_tag: ippou_meaning
+    explanation:
+      vi: ～増える一方で - trong khi ... tăng; 町の小さな店 - cửa hàng nhỏ trong thị trấn; 減っています - đang giảm.
+    display_answer: Trong khi người mua sắm trên mạng tăng lên thì các cửa hàng nhỏ trong thị trấn đang giảm đi.
+
+  - key: ja:exercise:n3-opinions-review-wb-ketsuron
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-ketsuron
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Kết luận là, tôi nghĩ chúng ta nên giảm rác hơn nữa.\""
+      tokens:
+        - { id: r4, text: 減らすべきだと思います }
+        - { id: r2, text: 私たちは }
+        - { id: r5, text: 減るべきだと思います }
+        - { id: r1, text: 結論として、 }
+        - { id: r3, text: ゴミをもっと }
+    answer:
+      orders:
+        - [r1, r2, r3, r4]
+    explanation:
+      vi: ゴミを減らす - giảm rác (tha động từ đi với を). 減る là tự động từ, không đi với ゴミを.
+    display_answer: 結論として、私たちはゴミをもっと減らすべきだと思います。
+
+  - key: ja:exercise:n3-opinions-review-mcq-write
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ni-kurabete
+    prompt:
+      stem: Bạn viết câu mở đầu bài luận so sánh xe buýt và tàu điện, nêu cả hai mặt. Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: g3x, text: バスは電車に比べて安い一方で、時間がかかります。, lang: ja }
+        - { id: y9m, text: バスは電車ほど安い一方で、時間がかかります。, lang: ja }
+        - { id: l4f, text: バスは電車に対して安いわけで、時間がかかります。, lang: ja }
+        - { id: p8b, text: バスは電車に比べて安いべきで、時間がかかります。, lang: ja }
+    answer:
+      correct_option_id: g3x
+    explanation:
+      vi: に比べて (so với) + 安い一方で (rẻ nhưng mặt khác) - đúng. ほど cần phủ định; に対して không dùng để so sánh giá; べき không gắn sau tính từ như thế.
+    display_answer: バスは電車に比べて安い一方で、時間がかかります。

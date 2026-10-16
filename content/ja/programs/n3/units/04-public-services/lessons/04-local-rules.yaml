@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-local-rules
+order_index: 4
+level: n3
+title:
+  vi: Quy định khu dân cư - ～ことになっている và ～ずに
+objectives:
+  - vi: Hiểu quy định đổ rác và sơ tán khi có thiên tai.
+  - vi: Nói quy định bằng ～ことになっている.
+  - vi: Dùng ～ずに (= ～ないで) trong văn hướng dẫn.
+estimated_minutes: 20
+skills: [vocabulary, grammar, reading]
+prerequisites: [ja:lesson:n3-hospital]
+items:
+  - item: ja:item:n3-bunbetsu
+  - item: ja:item:n3-moeru-gomi
+  - item: ja:item:n3-sodai-gomi
+  - item: ja:item:n3-hinan
+  - item: ja:item:n3-kisoku
+  - item: ja:item:n3-gram-koto-ni-natte-iru
+  - item: ja:item:n3-gram-zuni
+  - item: ja:item:n3-gram-koto-ni-naru
+    role: reuse
+  - item: ja:item:n3-gram-baai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu lịch đổ rác của khu mình, biết sơ tán đi đâu khi động đất, và giải thích quy định cho người mới đến.
+  - type: explain
+    text:
+      vi: 'Rác ở Nhật phải 分別する (phân loại): 燃えるゴミ (rác cháy được), 燃えないゴミ (rác không cháy), 資源ごみ (chai, lon tái chế), 粗大ごみ (rác cồng kềnh - phải đăng ký). Mỗi loại có ngày thu riêng.'
+  - type: explain
+    text:
+      vi: '～ことになっている - quy định đã có sẵn: ゴミは朝8時までに出すことになっています. Phủ định: ～ないことになっている - 夜は洗濯機を使わないことになっています.'
+  - type: explain
+    text:
+      vi: '～ずに = ～ないで (mà không...), trang trọng hơn: 分別せずに出す, 何も持たずに避難する. Lưu ý する → せずに, 来る → こずに.'
+  - type: deep_explain
+    text:
+      vi: Phân biệt ba dạng của ことになる - ことになりました (quyết định mới), ことになっています (quy định đang áp dụng), ことにしています (thói quen tự đặt). Thông báo khu dân cư, nội quy công ty gần như luôn dùng ことになっています.
+  - type: example
+    target: 燃えるゴミは月曜日と木曜日の朝に出します。
+    target_lang: ja
+    translation:
+      vi: Rác cháy được đem ra vào sáng thứ Hai và thứ Năm.
+  - type: example
+    target: このアパートでは、夜10時以降は洗濯機を使わないことになっています。
+    target_lang: ja
+    translation:
+      vi: Ở khu nhà này, theo quy định sau 10 giờ tối không dùng máy giặt.
+  - type: example
+    target: ゴミを分別せずに出すと、回収されません。
+    target_lang: ja
+    translation:
+      vi: Nếu đem rác ra mà không phân loại thì sẽ không được thu gom.
+  - type: example
+    target: 地震のときは、近くの小学校に避難することになっています。
+    target_lang: ja
+    translation:
+      vi: Khi có động đất, theo quy định sẽ sơ tán đến trường tiểu học gần đó.
+  - type: common_mistake
+    wrong: ゴミを分別しずに出さないでください。
+    right: ゴミを分別せずに出さないでください。
+    target_lang: ja
+    note:
+      vi: する → せずに. しずに là lỗi rất phổ biến.
+  - type: common_mistake
+    wrong: このマンションでは、ペットを飼わないことにしています。
+    right: このマンションでは、ペットを飼わないことになっています。
+    target_lang: ja
+    note:
+      vi: Nội quy của toà nhà - ことになっています. ことにしています là quy tắc cá nhân tự đặt.
+  - type: summary
+    points:
+      - vi: 分別する, 燃えるゴミ, 粗大ごみ, 避難する, 規則.
+      - vi: ～ことになっている - theo quy định.
+      - vi: ～ずに = ～ないで; する → せずに.
+      - vi: ことになった (quyết định mới) / ことになっている (quy định) / ことにしている (thói quen).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-local-rules-mcq-sodai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-sodai-gomi
+    prompt:
+      stem: Bạn muốn bỏ một chiếc bàn cũ. Đó là loại rác nào?
+      stem_lang: vi
+      options:
+        - { id: w8e, text: 粗大ごみ, lang: ja }
+        - { id: c4n, text: 燃えるゴミ, lang: ja }
+        - { id: j1p, text: 資源ごみ, lang: ja }
+        - { id: t6s, text: 生ゴミ, lang: ja }
+    answer:
+      correct_option_id: w8e
+    explanation:
+      vi: Đồ nội thất lớn là 粗大ごみ (rác cồng kềnh) - phải đăng ký trước. 資源ごみ là chai, lon; 生ゴミ là rác bếp.
+    display_answer: 粗大ごみ
+
+  - key: ja:exercise:n3-local-rules-listen-hinan
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-hinan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 地震のときは、近くの小学校に避難することになっています。
+      options:
+        - { id: q3a, text: "Khi có động đất, theo quy định sẽ sơ tán đến trường tiểu học gần đó.", lang: vi }
+        - { id: e7m, text: "Khi có động đất, trường tiểu học gần đó sẽ đóng cửa.", lang: vi }
+        - { id: u5y, text: Hôm qua đã có động đất ở trường tiểu học gần đó., lang: vi }
+        - { id: r9k, text: "Khi có động đất, không được đến trường tiểu học.", lang: vi }
+    answer:
+      correct_option_id: q3a
+    explanation:
+      vi: 避難する - sơ tán; ことになっています - theo quy định. 小学校に - đến trường tiểu học (nơi sơ tán).
+    display_answer: Khi có động đất, theo quy định sẽ sơ tán đến trường tiểu học gần đó.
+
+  - key: ja:exercise:n3-local-rules-mcq-kotoninatteiru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-natte-iru
+    prompt:
+      stem: 'Giải thích nội quy chung cư cho người mới: このマンションでは、ペットを飼わない＿＿。'
+      stem_lang: vi
+      options:
+        - { id: k2d, text: ことになっています, lang: ja }
+        - { id: z7h, text: ことにしています, lang: ja }
+        - { id: a4c, text: ようにしています, lang: ja }
+        - { id: m8w, text: ことになりました, lang: ja }
+    answer:
+      correct_option_id: k2d
+    explanation:
+      vi: Nội quy đang áp dụng - ことになっています. ことにしています / ようにしています là thói quen cá nhân; ことになりました là quyết định mới vừa có.
+    display_answer: ことになっています
+
+  - key: ja:exercise:n3-local-rules-fill-sezuni
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-zuni
+    prompt:
+      template: "ゴミを分別{{b1}}出すと、回収されません。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Nếu đem rác ra mà không phân loại thì sẽ không được thu gom."
+        - "Gợi ý: する → dạng ずに đặc biệt."
+    answer:
+      blanks:
+        b1: [せずに]
+    known_wrong:
+      - answer: しずに
+        feedback_vi: する → せずに, không phải しずに.
+        error_tag: zuni_suru
+      - answer: しないで
+        feedback_vi: 分別しないで cũng đúng nghĩa, nhưng bài này luyện dạng trang trọng ずに - せずに.
+        error_tag: zuni_naide
+    explanation:
+      vi: ～ずに = ～ないで. する → せずに; 分別せずに - mà không phân loại.
+    display_answer: ゴミを分別せずに出すと、回収されません。
+
+  - key: ja:exercise:n3-local-rules-wb-moeru
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-moeru-gomi
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Rác cháy được đem ra vào sáng thứ Hai và thứ Năm.\""
+      tokens:
+        - { id: b3, text: 出します }
+        - { id: b4, text: 燃えないゴミは }
+        - { id: b2, text: 月曜日と木曜日の朝に }
+        - { id: b1, text: 燃えるゴミは }
+    answer:
+      orders:
+        - [b1, b2, b3]
+    explanation:
+      vi: 燃えるゴミ - rác cháy được; 燃えないゴミ - rác không cháy được (ngược nghĩa).
+    display_answer: 燃えるゴミは月曜日と木曜日の朝に出します。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-local-rules-fill-bunbetsu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-bunbetsu
+    prompt:
+      template: "ゴミはきちんと{{b1}}して出してください。(phân loại)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [分別, ぶんべつ]
+    known_wrong:
+      - answer: ふんべつ
+        feedback_vi: Phân loại rác đọc ぶんべつ; ふんべつ là "sự chín chắn".
+        error_tag: reading
+      - answer: 分類
+        feedback_vi: 分類 là phân loại nói chung (khoa học, tài liệu); với rác người Nhật dùng 分別.
+        error_tag: collocation
+    explanation:
+      vi: ゴミを分別する - phân loại rác. Đọc ぶんべつ.
+    display_answer: ゴミはきちんと分別して出してください。
+
+  - key: ja:exercise:n3-local-rules-translate-kisoku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-koto-ni-natte-iru
+    prompt:
+      source_text: Theo quy định, rác phải đem ra trước 8 giờ sáng. (lịch sự, dùng ことになっている)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ゴミは朝8時までに出すことになっています。
+        - ごみは朝8時までに出すことになっています。
+        - ゴミは朝八時までに出すことになっています。
+        - ゴミは午前8時までに出すことになっています。
+        - ごみは午前8時までに出すことになっています。
+        - 規則では、ゴミは朝8時までに出すことになっています。
+        - 規則で、ゴミは朝8時までに出すことになっています。
+        - ゴミは朝の8時までに出すことになっています。
+        - 朝8時までにゴミを出すことになっています。
+        - 朝8時までにごみを出すことになっています。
+        - 午前8時までにゴミを出すことになっています。
+        - ごみはあさはちじまでにだすことになっています。
+    known_wrong:
+      - answer: ゴミは朝8時までに出すことになりました。
+        feedback_vi: ことになりました là quyết định mới; quy định đang áp dụng dùng ことになっています.
+        error_tag: koto_ni_natte_iru
+      - answer: ゴミは朝8時までに出すことにしています。
+        feedback_vi: ことにしています là thói quen cá nhân, không phải quy định chung.
+        error_tag: koto_ni_natte_iru
+      - answer: ゴミは朝8時まで出すことになっています。
+        feedback_vi: Hạn chót "trước 8 giờ" dùng までに; まで là "liên tục cho đến 8 giờ".
+        error_tag: made_ni
+    explanation:
+      vi: 朝8時までに - trước 8 giờ sáng; 出すことになっています - theo quy định thì đem ra.
+    display_answer: ゴミは朝8時までに出すことになっています。
+
+  - key: ja:exercise:n3-local-rules-translate-zuni
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-zuni
+    prompt:
+      source_text: Khi có động đất, hãy sơ tán mà không dùng thang máy. (dùng ずに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 地震のときは、エレベーターを使わずに避難してください。
+        - 地震のときはエレベーターを使わずに避難してください。
+        - 地震の時は、エレベーターを使わずに避難してください。
+        - 地震の時はエレベーターを使わずに避難してください。
+        - 地震のときは、エレベーターに乗らずに避難してください。
+        - 地震のときはエレベーターに乗らずに避難してください。
+        - 地震の時は、エレベーターに乗らずに避難してください。
+        - 地震が起きたら、エレベーターを使わずに避難してください。
+        - 地震が起きたときは、エレベーターを使わずに避難してください。
+        - 地震があったら、エレベーターを使わずに避難してください。
+        - 地震の場合は、エレベーターを使わずに避難してください。
+        - じしんのときは、エレベーターをつかわずにひなんしてください。
+    known_wrong:
+      - answer: 地震のときは、エレベーターを使わないに避難してください。
+        feedback_vi: Bỏ ない rồi thêm ずに - 使わずに.
+        error_tag: zuni_form
+      - answer: 地震のときは、エレベーターを使わずに非難してください。
+        feedback_vi: 非難 là "chỉ trích" (đồng âm). Sơ tán viết 避難.
+        error_tag: kanji_homophone
+    explanation:
+      vi: 使う → 使わない → 使わずに. 避難してください - hãy sơ tán.
+    display_answer: 地震のときは、エレベーターを使わずに避難してください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-local-rules-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-kisoku
+    prompt:
+      stem: "Đọc nội quy: 「粗大ごみを出す場合は、事前に申し込んでください。申し込みをせずに出された粗大ごみは回収しません。」 Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: p6v, text: Rác cồng kềnh không đăng ký trước sẽ không được thu gom., lang: vi }
+        - { id: d2x, text: Rác cồng kềnh có thể đem ra bất cứ lúc nào., lang: vi }
+        - { id: h9b, text: Chỉ cần đăng ký sau khi đã đem rác ra., lang: vi }
+        - { id: s5t, text: Khu này không thu gom rác cồng kềnh., lang: vi }
+    answer:
+      correct_option_id: p6v
+    explanation:
+      vi: 事前に申し込む - đăng ký trước; 申し込みをせずに出された - bị đem ra mà không đăng ký; 回収しません - không thu gom.
+    display_answer: Rác cồng kềnh không đăng ký trước sẽ không được thu gom.
+
+  - key: ja:exercise:n3-local-rules-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-natte-iru
+    prompt:
+      source_text: この会社では、毎朝9時に会議をすることになっています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở công ty này, theo quy định mỗi sáng họp lúc 9 giờ.
+        - Ở công ty này, theo quy định sáng nào cũng họp lúc 9 giờ.
+        - Ở công ty này, theo quy định mỗi sáng có cuộc họp lúc 9 giờ.
+        - Ở công ty này, mỗi sáng họp lúc 9 giờ theo quy định.
+        - Ở công ty này, theo quy định thì mỗi sáng họp lúc 9 giờ.
+        - Ở công ty này, quy định là mỗi sáng họp lúc 9 giờ.
+        - Ở công ty này, theo quy định 9 giờ mỗi sáng sẽ họp.
+        - Ở công ty này, theo quy định mỗi sáng sẽ họp lúc 9 giờ.
+        - Tại công ty này, theo quy định mỗi sáng họp lúc 9 giờ.
+        - Công ty này quy định mỗi sáng họp lúc 9 giờ.
+        - Ở công ty này, theo lệ thì mỗi sáng họp lúc 9 giờ.
+        - Ở công ty này, mỗi sáng đều họp lúc 9 giờ theo quy định.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở công ty này, tôi đã quyết định mỗi sáng họp lúc 9 giờ.
+        feedback_vi: ことになっています là quy định chung, không phải tôi tự quyết định.
+        error_tag: koto_ni_natte_iru
+    explanation:
+      vi: 毎朝9時に - lúc 9 giờ mỗi sáng; 会議をすることになっています - theo quy định thì họp.
+    display_answer: Ở công ty này, theo quy định mỗi sáng họp lúc 9 giờ.
+
+  - key: ja:exercise:n3-local-rules-wb-baai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-sodai-gomi
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Trường hợp bỏ rác cồng kềnh thì phải đăng ký trước.\""
+      tokens:
+        - { id: s4, text: 申し込まなければなりません }
+        - { id: s2, text: 出す場合は、 }
+        - { id: s5, text: 出したら、 }
+        - { id: s3, text: 事前に }
+        - { id: s1, text: 粗大ごみを }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: Đăng ký xảy ra trước khi bỏ rác nên dùng 出す場合は (giả định về tương lai). 出したら nghĩa là "sau khi đã đem ra" - mâu thuẫn với 事前に.
+    display_answer: 粗大ごみを出す場合は、事前に申し込まなければなりません。
+
+  - key: ja:exercise:n3-local-rules-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-moeru-gomi
+    prompt:
+      stem: Hàng xóm nhắc bạn vì bạn để chai nhựa vào túi rác cháy được. Họ nói gì?
+      stem_lang: vi
+      options:
+        - { id: y3f, text: ペットボトルは燃えるゴミに入れないことになっていますよ。, lang: ja }
+        - { id: l8r, text: ペットボトルは燃えるゴミに入れることになっていますよ。, lang: ja }
+        - { id: o1w, text: ペットボトルは粗大ごみに申し込むことになっていますよ。, lang: ja }
+        - { id: g5k, text: ペットボトルは燃えるゴミに入れずにことになっていますよ。, lang: ja }
+    answer:
+      correct_option_id: y3f
+    explanation:
+      vi: Quy định "không bỏ vào" - 入れないことになっています. ずに không đứng trước こと; chai nhựa không phải rác cồng kềnh.
+    display_answer: ペットボトルは燃えるゴミに入れないことになっていますよ。

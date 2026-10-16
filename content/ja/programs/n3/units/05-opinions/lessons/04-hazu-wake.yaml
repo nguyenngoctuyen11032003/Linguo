@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-hazu-wake
+order_index: 4
+level: n3
+title:
+  vi: Lập luận - ～はずだ, ～わけだ, ～わけではない
+objectives:
+  - vi: Kết luận có căn cứ bằng ～はずだ / ～はずがない.
+  - vi: Nói "thảo nào" bằng ～わけだ.
+  - vi: Phủ định một phần bằng ～わけではない, 必ずしも～ない.
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n3-comparing]
+items:
+  - item: ja:item:n3-touzen
+  - item: ja:item:n3-kanarazushimo
+  - item: ja:item:n3-jijou
+  - item: ja:item:n3-gram-hazu-da
+  - item: ja:item:n3-gram-wake-da
+  - item: ja:item:n3-gram-wake-dewa-nai
+  - item: ja:item:n3-gram-beki
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn lập luận chặt hơn - "chắc chắn hôm nay sẽ đến", "thảo nào anh ấy giỏi", "không phải là tôi ghét, chỉ là..." - và tránh bị hiểu lầm khi từ chối.
+  - type: explain
+    text:
+      vi: '～はずだ - "chắc chắn là" theo suy luận có căn cứ: 昨日送ったので、今日届くはずです. ～はずがない - "không thể nào": 彼がそんなことを言うはずがない.'
+  - type: explain
+    text:
+      vi: '～わけだ - "thảo nào, thì ra" khi đã biết lý do: 10年も日本に住んでいたんですか。日本語が上手なわけですね. Nối: thể thường, なAな, Nの / Nである.'
+  - type: explain
+    text:
+      vi: '～わけではない - "không hẳn là": 嫌いなわけではありません (không phải là ghét). Hay đi với 必ずしも: 高い物が必ずしもいいわけではない (đồ đắt không hẳn là tốt).'
+  - type: deep_explain
+    text:
+      vi: 'Ba mẫu dễ lẫn: はずだ - người nói suy luận trước khi biết kết quả; わけだ - người nói hiểu ra sau khi biết nguyên nhân; べきだ - người nói phán xét điều nên làm. Khi từ chối lời mời, ～わけではないんですが、ちょっと事情があって… là cách rất Nhật để không làm người kia phật lòng.'
+  - type: example
+    target: 荷物は昨日送ったので、今日届くはずです。
+    target_lang: ja
+    translation:
+      vi: Hành lý đã gửi hôm qua nên chắc chắn hôm nay sẽ đến.
+  - type: example
+    target: 毎日3時間も練習しているんですか。上手なわけですね。
+    target_lang: ja
+    translation:
+      vi: Ngày nào cũng luyện những 3 tiếng à? Thảo nào giỏi thế.
+  - type: example
+    target: 肉が嫌いなわけではありませんが、最近はあまり食べません。
+    target_lang: ja
+    translation:
+      vi: Không phải tôi ghét thịt, nhưng dạo này tôi ít ăn.
+  - type: example
+    target: 高い物が必ずしもいい物だというわけではありません。
+    target_lang: ja
+    translation:
+      vi: Đồ đắt không hẳn là đồ tốt.
+  - type: example
+    target: 家庭の事情で、会社を辞めることになりました。
+    target_lang: ja
+    translation:
+      vi: Vì hoàn cảnh gia đình, tôi phải nghỉ việc.
+  - type: common_mistake
+    wrong: 田中さんは今日休みのはずがあります。
+    right: 田中さんは今日休みのはずです。
+    target_lang: ja
+    note:
+      vi: Khẳng định dùng はずです; はずがある gần như không dùng - chỉ có dạng phủ định はずがない (không thể nào).
+  - type: common_mistake
+    wrong: 必ずしも高い物はいい物です。
+    right: 高い物が必ずしもいい物だというわけではありません。
+    target_lang: ja
+    note:
+      vi: 必ずしも luôn đi với phủ định ở cuối câu (～わけではない, ～とは限らない).
+  - type: summary
+    points:
+      - vi: はずだ - chắc chắn là (suy luận); はずがない - không thể nào.
+      - vi: わけだ - thảo nào (đã biết lý do).
+      - vi: わけではない - không hẳn là; 必ずしも～ない - không nhất thiết.
+      - vi: 当然 (đương nhiên), 事情 (hoàn cảnh, lý do riêng).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-hazu-wake-mcq-kanarazushimo
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-kanarazushimo
+    prompt:
+      stem: 「必ずしも～ない」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: x6a, text: "không nhất thiết, không hẳn", lang: vi }
+        - { id: p3f, text: nhất định phải, lang: vi }
+        - { id: c9k, text: không bao giờ, lang: vi }
+        - { id: g4w, text: đương nhiên, lang: vi }
+    answer:
+      correct_option_id: x6a
+    explanation:
+      vi: 必ずしも～ない - không nhất thiết. 必ず là nhất định; không bao giờ là 決して～ない; đương nhiên là 当然.
+    display_answer: không nhất thiết, không hẳn
+
+  - key: ja:exercise:n3-hazu-wake-listen-hazu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-hazu-da
+    prompt:
+      audio_asset_id: null
+      fallback_text: 荷物は昨日送ったので、今日届くはずです。
+      options:
+        - { id: s8j, text: Hành lý đã gửi hôm qua nên chắc chắn hôm nay sẽ đến., lang: vi }
+        - { id: a2m, text: Hành lý đã gửi hôm qua nhưng hôm nay vẫn chưa đến., lang: vi }
+        - { id: o7e, text: Hành lý nên được gửi trước hôm nay., lang: vi }
+        - { id: w5r, text: Nghe nói hành lý gửi hôm qua sẽ đến hôm nay., lang: vi }
+    answer:
+      correct_option_id: s8j
+    explanation:
+      vi: 送ったので - vì đã gửi; 届くはずです - chắc chắn sẽ đến (suy luận của người nói, không phải nghe nói).
+    display_answer: Hành lý đã gửi hôm qua nên chắc chắn hôm nay sẽ đến.
+
+  - key: ja:exercise:n3-hazu-wake-mcq-wake
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-wake-da
+    prompt:
+      stem: 'Bạn vừa biết đồng nghiệp từng sống ở Mỹ 10 năm. Bạn nói: 10年もアメリカに住んでいたんですか。英語が上手な＿＿ね。'
+      stem_lang: vi
+      options:
+        - { id: n4c, text: わけです, lang: ja }
+        - { id: e1t, text: はずです, lang: ja }
+        - { id: j8v, text: べきです, lang: ja }
+        - { id: r6b, text: わけではありません, lang: ja }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: Đã biết lý do (sống ở Mỹ 10 năm) rồi mới hiểu ra - わけです (thảo nào). はずです là đoán trước kết quả; べきです là "nên".
+    display_answer: わけです
+
+  - key: ja:exercise:n3-hazu-wake-fill-hazuganai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-hazu-da
+    prompt:
+      template: "あんなに真面目な彼が、そんなことを言う{{b1}}がありません。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Anh ấy nghiêm túc như vậy, không thể nào nói điều như thế."
+        - "Gợi ý: ～＿＿がない - 'không thể nào'."
+    answer:
+      blanks:
+        b1: [はず]
+    known_wrong:
+      - answer: わけ
+        feedback_vi: わけがない cũng có nghĩa gần, nhưng bài này luyện mẫu はずがない.
+        error_tag: hazu_wake
+      - answer: べき
+        feedback_vi: べきがない không tồn tại.
+        error_tag: grammar_form
+    explanation:
+      vi: ～はずがない - không thể nào (phủ định mạnh theo suy luận).
+    display_answer: あんなに真面目な彼が、そんなことを言うはずがありません。
+
+  - key: ja:exercise:n3-hazu-wake-wb-wakedewanai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-wake-dewa-nai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Không phải tôi ghét thịt, nhưng dạo này tôi ít ăn.\""
+      tokens:
+        - { id: w3, text: 最近はあまり食べません }
+        - { id: w1, text: 肉が嫌いな }
+        - { id: w4, text: はずではありませんが、 }
+        - { id: w2, text: わけではありませんが、 }
+    answer:
+      orders:
+        - [w1, w2, w3]
+    explanation:
+      vi: なA + な + わけではない - không phải là... はずではない không dùng với nghĩa này.
+    display_answer: 肉が嫌いなわけではありませんが、最近はあまり食べません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-hazu-wake-fill-touzen
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-touzen
+    prompt:
+      template: "毎日練習したのだから、上手になったのは{{b1}}です。(đương nhiên)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [当然, とうぜん, 当たり前, あたりまえ]
+    known_wrong:
+      - answer: とぜん
+        feedback_vi: とう là âm dài - とうぜん.
+        error_tag: long_vowel
+      - answer: 必ず
+        feedback_vi: 必ず là phó từ "nhất định"; không đứng trước です như tính từ. "Đương nhiên" - 当然.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～のは当然です - việc ～ là đương nhiên. 当たり前 là cách nói thân mật hơn.
+    display_answer: 毎日練習したのだから、上手になったのは当然です。
+
+  - key: ja:exercise:n3-hazu-wake-translate-hazu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-hazu-da
+    prompt:
+      source_text: Cuộc họp chắc chắn bắt đầu lúc 3 giờ. (dùng はず, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会議は3時に始まるはずです。
+        - 会議は3時から始まるはずです。
+        - 会議は三時に始まるはずです。
+        - 会議は三時から始まるはずです。
+        - 会議は3時からのはずです。
+        - 会議は3時のはずです。
+        - 会議は午後3時に始まるはずです。
+        - 会議は午後3時から始まるはずです。
+        - 会議は3時に始まるはずですよ。
+        - 会議は3時開始のはずです。
+        - 会議は3時に始まるはず。
+        - かいぎはさんじにはじまるはずです。
+    known_wrong:
+      - answer: 会議は3時に始まるべきです。
+        feedback_vi: べきです là "nên"; "chắc chắn là" theo suy luận dùng はずです.
+        error_tag: beki_hazu
+      - answer: 会議は3時に始まったはずです。
+        feedback_vi: Câu nói về cuộc họp sắp diễn ra - dùng thể từ điển 始まる.
+        error_tag: tense
+    explanation:
+      vi: 3時に始まる - bắt đầu lúc 3 giờ; ～はずです - chắc chắn là. 3時のはずです (N + の + はず) cũng đúng.
+    display_answer: 会議は3時に始まるはずです。
+
+  - key: ja:exercise:n3-hazu-wake-translate-wakedewanai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-wake-dewa-nai
+    prompt:
+      source_text: Đồ đắt không hẳn là đồ tốt. (dùng 必ずしも và わけではない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 高い物が必ずしもいい物だというわけではありません。
+        - 高い物が必ずしもいい物だというわけではない。
+        - 高い物が必ずしもいい物だというわけではないです。
+        - 高い物が必ずしもいいわけではありません。
+        - 高い物が必ずしもいいわけではない。
+        - 高い物が必ずしもいいというわけではありません。
+        - 高い物は必ずしもいい物だというわけではありません。
+        - 高い物は必ずしもいいわけではありません。
+        - 高いものが必ずしもいいものだというわけではありません。
+        - 高いものが必ずしもいいわけではありません。
+        - 高いものは必ずしもいいわけではありません。
+        - 高い物が必ずしも良い物だというわけではありません。
+        - 高い物が必ずしも良いわけではありません。
+        - たかいものがかならずしもいいものだというわけではありません。
+    known_wrong:
+      - answer: 高い物が必ずいい物です。
+        feedback_vi: 必ず là "nhất định" - ngược nghĩa. "Không hẳn" là 必ずしも～わけではない.
+        error_tag: kanarazushimo
+      - answer: 高い物が必ずしもいい物です。
+        feedback_vi: 必ずしも phải đi với phủ định ở cuối câu - ～わけではありません.
+        error_tag: kanarazushimo
+    explanation:
+      vi: 必ずしも～わけではない - không hẳn là. Danh từ / なA nối bằng だという hoặc な - いい物だというわけではない, いいわけではない.
+    display_answer: 高い物が必ずしもいい物だというわけではありません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-hazu-wake-mcq-refuse
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-jijou
+    prompt:
+      stem: Đồng nghiệp mời bạn đi uống sau giờ làm. Bạn không ghét đi nhưng hôm nay có việc nhà. Câu từ chối nào khéo nhất?
+      stem_lang: vi
+      options:
+        - { id: d7p, text: 行きたくないわけではないんですが、今日はちょっと家の事情があって…。, lang: ja }
+        - { id: m3h, text: 行くはずがありません。家の事情があります。, lang: ja }
+        - { id: u9a, text: 行くべきではないので、行きません。, lang: ja }
+        - { id: k2s, text: 行きたくないわけです。家の事情があるからです。, lang: ja }
+    answer:
+      correct_option_id: d7p
+    explanation:
+      vi: 行きたくないわけではない - không phải là không muốn đi; 事情があって… - có chút việc riêng (bỏ lửng câu). Các câu kia nghe phũ hoặc sai nghĩa.
+    display_answer: 行きたくないわけではないんですが、今日はちょっと家の事情があって…。
+
+  - key: ja:exercise:n3-hazu-wake-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-wake-da
+    prompt:
+      source_text: 毎日3時間も練習しているんですか。上手なわけですね。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày nào cũng luyện những 3 tiếng à? Thảo nào giỏi thế.
+        - Ngày nào cũng luyện tập những 3 tiếng à? Thảo nào giỏi thế.
+        - Ngày nào cũng luyện tập 3 tiếng à? Thảo nào giỏi như vậy.
+        - Mỗi ngày luyện tập tới 3 tiếng sao? Thảo nào giỏi vậy.
+        - Mỗi ngày luyện những 3 tiếng à? Thảo nào giỏi thế.
+        - Mỗi ngày luyện tập những 3 tiếng à? Thảo nào giỏi thế.
+        - Ngày nào cũng tập những 3 tiếng à? Thảo nào giỏi thế.
+        - Ngày nào cũng luyện tận 3 tiếng à? Thảo nào giỏi thế.
+        - Ngày nào cũng luyện những 3 tiếng à? Hèn gì giỏi thế.
+        - Ngày nào cũng luyện tập những 3 tiếng à? Hèn chi giỏi thế.
+        - Bạn luyện tập 3 tiếng mỗi ngày à? Thảo nào giỏi thế.
+        - Ngày nào cũng luyện những 3 tiếng sao? Thì ra vì vậy mà giỏi thế.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngày nào cũng luyện những 3 tiếng à? Chắc chắn sẽ giỏi.
+        feedback_vi: わけですね - thảo nào (đã thấy giỏi và hiểu ra lý do), không phải dự đoán tương lai.
+        error_tag: wake_hazu
+    explanation:
+      vi: 3時間も - những 3 tiếng (nhấn mạnh nhiều); 上手なわけですね - thảo nào giỏi.
+    display_answer: Ngày nào cũng luyện những 3 tiếng à? Thảo nào giỏi thế.
+
+  - key: ja:exercise:n3-hazu-wake-wb-hazu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-hazu-da
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi chắc chắn đã khoá cửa rồi, vậy mà cửa lại mở.\""
+      tokens:
+        - { id: q3, text: 開いていました }
+        - { id: q4, text: かけるべきですが、 }
+        - { id: q1, text: 鍵を }
+        - { id: q2, text: かけたはずですが、 }
+    answer:
+      orders:
+        - [q1, q2, q3]
+    explanation:
+      vi: かけたはずですが - (theo trí nhớ) chắc chắn đã khoá, nhưng... Mẫu này diễn tả kết quả trái với điều mình tin chắc.
+    display_answer: 鍵をかけたはずですが、開いていました。
+
+  - key: ja:exercise:n3-hazu-wake-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-wake-dewa-nai
+    prompt:
+      stem: 'Bạn bè hỏi: 「日本の生活、嫌いなの？」 Bạn không ghét, chỉ thấy nhớ nhà. Câu nào phù hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: y5e, text: 嫌いなわけじゃないよ。ただ、ちょっと家族に会いたいだけ。, lang: ja }
+        - { id: c2r, text: 嫌いなはずだよ。ただ、ちょっと家族に会いたいだけ。, lang: ja }
+        - { id: l7n, text: 嫌いなわけだよ。ただ、ちょっと家族に会いたいだけ。, lang: ja }
+        - { id: b8g, text: 嫌いになるべきだよ。ただ、ちょっと家族に会いたいだけ。, lang: ja }
+    answer:
+      correct_option_id: y5e
+    explanation:
+      vi: わけじゃない (văn nói của わけではない) - không phải là ghét. はずだ / わけだ đều khẳng định là ghét; べきだ là "nên".
+    display_answer: 嫌いなわけじゃないよ。ただ、ちょっと家族に会いたいだけ。

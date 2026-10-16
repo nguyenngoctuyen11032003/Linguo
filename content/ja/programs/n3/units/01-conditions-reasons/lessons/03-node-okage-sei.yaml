@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-node-okage-sei
+order_index: 3
+level: n3
+title:
+  vi: Vì, nhờ, tại - ～ので, ～おかげで, ～せいで
+objectives:
+  - vi: Dùng ～ので để nêu lý do lịch sự khi xin phép, xin lỗi.
+  - vi: Phân biệt ～おかげで (nhờ - kết quả tốt) và ～せいで (tại - kết quả xấu).
+  - vi: Nối đúng danh từ và tính từ な với なので, のおかげで, のせいで.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-to-nara]
+items:
+  - item: ja:item:n3-gram-node
+  - item: ja:item:n3-gram-okagede
+  - item: ja:item:n3-gram-seide
+  - item: ja:item:n3-juutai
+  - item: ja:item:n3-goukaku
+  - item: ja:item:n3-renraku
+    role: reuse
+  - item: ja:item:n3-maniau
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn xin nghỉ, xin lỗi vì đến muộn bằng lý do lịch sự, và cảm ơn hoặc than phiền đúng sắc thái - "nhờ thầy mà tôi đỗ", "tại tắc đường mà tôi muộn".
+  - type: explain
+    text:
+      vi: 'ので nêu lý do một cách khách quan, mềm mại: 熱があるので、休みます. Danh từ và tính từ な thêm な - 雨なので, 暇なので. Khi xin phép, xin lỗi người trên, ので lịch sự hơn から.'
+  - type: explain
+    text:
+      vi: 'おかげで - "nhờ... mà", kết quả tốt, có ý biết ơn: 先生のおかげで合格しました. せいで - "tại... mà", kết quả xấu, có ý trách: 雨のせいで試合が中止になった.'
+  - type: explain
+    text:
+      vi: 'Cách nối giống nhau: danh từ + の (先生のおかげで, 事故のせいで), động từ/tính từ thể thường (手伝ってくれたおかげで, 寝不足のせいで, 忙しいせいで).'
+  - type: deep_explain
+    text:
+      vi: Người Nhật ít đổ lỗi thẳng cho người khác, nên あなたのせいで nghe rất nặng. Khi báo cáo với sếp, chỉ cần nêu nguyên nhân khách quan - 電車が遅れたので、遅くなりました - và xin lỗi, đừng dùng せいで để đổ lỗi.
+  - type: example
+    target: 熱があるので、今日は休ませてください。
+    target_lang: ja
+    translation:
+      vi: Vì tôi bị sốt nên xin cho tôi nghỉ hôm nay.
+  - type: example
+    target: 先生のおかげで、N3に合格しました。
+    target_lang: ja
+    translation:
+      vi: Nhờ thầy mà em đã đỗ N3.
+    note:
+      vi: Kết quả tốt, kèm lời cảm ơn.
+  - type: example
+    target: 渋滞のせいで、会議に遅れてしまいました。
+    target_lang: ja
+    translation:
+      vi: Tại tắc đường mà tôi bị muộn họp.
+    note:
+      vi: ～てしまいました nhấn thêm sự tiếc nuối.
+  - type: example
+    target: 電車が遅れたので、遅くなりました。申し訳ありません。
+    target_lang: ja
+    translation:
+      vi: Tàu đến muộn nên tôi đến trễ. Tôi xin lỗi.
+  - type: common_mistake
+    wrong: 雨だので、試合は中止です。
+    right: 雨なので、試合は中止です。
+    target_lang: ja
+    note:
+      vi: Danh từ và tính từ な dùng なので, không phải だので. Người Việt hay giữ だ vì nghĩ だ là "là".
+  - type: common_mistake
+    wrong: 台風のおかげで、飛行機が飛びませんでした。
+    right: 台風のせいで、飛行機が飛びませんでした。
+    target_lang: ja
+    note:
+      vi: Máy bay không bay là kết quả xấu nên dùng せいで. Tiếng Việt "do bão" trung tính, nhưng tiếng Nhật buộc bạn chọn sắc thái tốt hay xấu.
+  - type: summary
+    points:
+      - vi: ので - lý do khách quan, lịch sự; danh từ/tính từ な + なので.
+      - vi: おかげで - nhờ, kết quả tốt; せいで - tại, kết quả xấu.
+      - vi: Danh từ + の + おかげで/せいで; động từ, tính từ thể thường + おかげで/せいで.
+      - vi: Báo cáo lỗi với sếp - nêu nguyên nhân bằng ので rồi xin lỗi, tránh đổ lỗi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-node-okage-sei-mcq-okage
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-okagede
+    prompt:
+      stem: '"Nhờ bạn giúp mà tôi xong sớm." Chọn từ điền vào: 友だちが手伝ってくれた＿＿、早く終わりました。'
+      stem_lang: vi
+      options:
+        - { id: h3k, text: おかげで, lang: ja }
+        - { id: v8p, text: せいで, lang: ja }
+        - { id: b1r, text: のに, lang: ja }
+        - { id: z6m, text: ても, lang: ja }
+    answer:
+      correct_option_id: h3k
+    explanation:
+      vi: Xong sớm là kết quả tốt và có ý cảm ơn bạn - おかげで. せいで dùng cho kết quả xấu; のに là "vậy mà"; ても là "dù".
+    display_answer: おかげで
+
+  - key: ja:exercise:n3-node-okage-sei-listen-late
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-juutai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 渋滞のせいで、会議に遅れてしまいました。
+      options:
+        - { id: q4t, text: Tại tắc đường mà tôi bị muộn họp., lang: vi }
+        - { id: j7c, text: Nhờ đường thông thoáng mà tôi kịp họp., lang: vi }
+        - { id: m5n, text: Tắc đường nhưng tôi vẫn kịp họp., lang: vi }
+        - { id: r2s, text: Cuộc họp bị hoãn vì tắc đường., lang: vi }
+    answer:
+      correct_option_id: q4t
+    explanation:
+      vi: 渋滞 - tắc đường; せいで - tại (kết quả xấu); 遅れてしまいました - đã bị muộn. Không có ý cuộc họp bị hoãn (延期).
+    display_answer: Tại tắc đường mà tôi bị muộn họp.
+
+  - key: ja:exercise:n3-node-okage-sei-mcq-nanode
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-node
+    prompt:
+      stem: 'Chọn dạng đúng: 明日は休み＿＿、ゆっくり寝ます。'
+      stem_lang: vi
+      options:
+        - { id: c9w, text: なので, lang: ja }
+        - { id: f3a, text: だので, lang: ja }
+        - { id: k6o, text: ので, lang: ja }
+        - { id: x2u, text: のので, lang: ja }
+    answer:
+      correct_option_id: c9w
+    explanation:
+      vi: 休み là danh từ nên nối bằng なので. だので và のので không tồn tại; ので gắn thẳng sau danh từ là thiếu な.
+    display_answer: なので
+
+  - key: ja:exercise:n3-node-okage-sei-fill-sei
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-seide
+    prompt:
+      template: "事故{{b1}}、電車が一時間も止まりました。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tại tai nạn mà tàu điện dừng đến một tiếng."
+        - "Gợi ý: danh từ + の + từ chỉ nguyên nhân xấu."
+    answer:
+      blanks:
+        b1: [のせいで, で]
+    known_wrong:
+      - answer: のおかげで
+        feedback_vi: Tàu dừng một tiếng là kết quả xấu - dùng せいで, không dùng おかげで.
+        error_tag: okage_sei
+      - answer: せいで
+        feedback_vi: Sau danh từ phải có の - 事故のせいで.
+        error_tag: missing_no
+    explanation:
+      vi: Kết quả xấu nên dùng のせいで. Chỉ dùng で (事故で) cũng đúng - đó là cách nêu nguyên nhân trung tính.
+    display_answer: 事故のせいで、電車が一時間も止まりました。
+
+  - key: ja:exercise:n3-node-okage-sei-wb-goukaku
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-goukaku
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nhờ thầy mà em đã đỗ N3.\""
+      tokens:
+        - { id: g4, text: 合格しました }
+        - { id: g2, text: N3に }
+        - { id: g5, text: N3を }
+        - { id: g1, text: 先生のおかげで }
+    answer:
+      orders:
+        - [g1, g2, g4]
+        - [g2, g1, g4]
+    explanation:
+      vi: 合格する đi với に - N3に合格する, không dùng を. 先生のおかげで và N3に có thể đổi chỗ.
+    display_answer: 先生のおかげで、N3に合格しました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-node-okage-sei-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-okagede
+    prompt:
+      template: "薬を飲んだ{{b1}}、熱が下がりました。でも、寝不足の{{b2}}、頭が痛いです。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [おかげで]
+        b2: [せいで, せいか]
+    known_wrong:
+      - answer: のおかげで
+        feedback_vi: Sau động từ (飲んだ) gắn thẳng おかげで, không thêm の.
+        error_tag: extra_no
+    explanation:
+      vi: Hạ sốt là kết quả tốt - おかげで; đau đầu là kết quả xấu - せいで (せいか - "có lẽ tại" cũng tự nhiên). Sau động từ không cần の, sau danh từ 寝不足 đã có の sẵn.
+    display_answer: 薬を飲んだおかげで、熱が下がりました。でも、寝不足のせいで、頭が痛いです。
+
+  - key: ja:exercise:n3-node-okage-sei-translate-yasumi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-node
+    prompt:
+      source_text: Vì tôi bị sốt nên xin cho tôi nghỉ hôm nay. (nói với sếp)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 熱があるので、今日は休ませてください。
+        - 熱があるので今日は休ませてください。
+        - 熱があるので、今日は休ませていただけませんか。
+        - 熱があるので今日は休ませていただけませんか。
+        - 熱があるので、今日は休ませていただきたいです。
+        - 熱があるので今日は休ませていただきたいです。
+        - 熱があるので、今日休ませてください。
+        - 熱があるので今日休ませてください。
+        - 熱があるので、きょうは休ませてください。
+        - 熱があるので、今日はお休みさせてください。
+        - 熱があるので今日はお休みさせてください。
+        - 熱が出たので、今日は休ませてください。
+        - 熱が出たので今日は休ませてください。
+        - ねつがあるので、きょうはやすませてください。
+    known_wrong:
+      - answer: 熱があるから、今日は休みます。
+        feedback_vi: Câu hiểu được nhưng như thông báo, không xin phép, và から nghe chủ quan. Với sếp dùng ので + 休ませてください.
+        error_tag: politeness
+      - answer: 熱があるので、今日は休んでください。
+        feedback_vi: 休んでください là bảo người khác nghỉ. Xin cho mình nghỉ dùng thể sai khiến 休ませてください.
+        error_tag: causative_request
+    explanation:
+      vi: ので - lý do lịch sự; 休ませてください - "xin cho tôi được nghỉ" (thể sai khiến + てください, sẽ học kỹ ở unit 2).
+    display_answer: 熱があるので、今日は休ませてください。
+
+  - key: ja:exercise:n3-node-okage-sei-translate-juutai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-juutai
+    prompt:
+      source_text: Buổi sáng đường tắc nên tôi đi tàu điện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 朝は道が渋滞しているので、電車で行きます。
+        - 朝は道が渋滞しているので電車で行きます。
+        - 朝は渋滞しているので、電車で行きます。
+        - 朝は渋滞しているので電車で行きます。
+        - 朝は道が渋滞するので、電車で行きます。
+        - 朝は道が渋滞するので電車で行きます。
+        - 朝は渋滞するので、電車で行きます。
+        - 朝は渋滞するので電車で行きます。
+        - 朝は道が混んでいるので、電車で行きます。
+        - 朝は道が混んでいるので電車で行きます。
+        - 朝は渋滞なので、電車で行きます。
+        - 朝は渋滞なので電車で行きます。
+        - 朝は道が渋滞しているから、電車で行きます。
+        - 朝は道が渋滞しているから電車で行きます。
+        - 朝は渋滞しているから、電車で行きます。
+        - 朝は渋滞しているから電車で行きます。
+    known_wrong:
+      - answer: 朝は渋滞だので、電車で行きます。
+        feedback_vi: Danh từ đi với なので, không phải だので.
+        error_tag: nanode_form
+      - answer: 朝は渋滞のおかげで、電車で行きます。
+        feedback_vi: Tắc đường không phải điều tốt nên không dùng おかげで; ở đây chỉ cần ので.
+        error_tag: okage_sei
+    explanation:
+      vi: 渋滞している - đang tắc; ので nối lý do; 電車で行く - đi bằng tàu điện. Thói quen hằng ngày dùng thể ます hiện tại.
+    display_answer: 朝は道が渋滞しているので、電車で行きます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-node-okage-sei-mcq-report
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-node
+    prompt:
+      stem: Bạn đến công ty muộn vì tàu trễ. Câu nào phù hợp nhất để nói với trưởng phòng?
+      stem_lang: vi
+      options:
+        - { id: d5h, text: 電車が遅れたので、遅くなりました。申し訳ありません。, lang: ja }
+        - { id: p8e, text: 電車のせいで遅れたんです。私は悪くないです。, lang: ja }
+        - { id: w3j, text: 電車が遅れたおかげで、遅くなりました。, lang: ja }
+        - { id: n1y, text: 電車が遅れたのに、遅くなりました。, lang: ja }
+    answer:
+      correct_option_id: d5h
+    explanation:
+      vi: Nêu nguyên nhân khách quan bằng ので rồi xin lỗi là cách chuẩn ở công sở. Câu せいで kèm "tôi không có lỗi" nghe đổ lỗi; おかげで sai sắc thái; のに vô nghĩa ở đây.
+    display_answer: 電車が遅れたので、遅くなりました。申し訳ありません。
+
+  - key: ja:exercise:n3-node-okage-sei-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-okagede
+    prompt:
+      source_text: 皆さんが応援してくれたおかげで、最後まで頑張れました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhờ mọi người cổ vũ mà tôi đã cố gắng được đến cùng.
+        - Nhờ mọi người cổ vũ mà tôi đã cố gắng được đến phút cuối.
+        - Nhờ mọi người cổ vũ nên tôi đã cố gắng được đến cùng.
+        - Nhờ có mọi người cổ vũ mà tôi đã cố gắng được đến cùng.
+        - Nhờ mọi người ủng hộ mà tôi đã cố gắng được đến cùng.
+        - Nhờ mọi người cổ vũ mà tôi đã cố được đến cùng.
+        - Nhờ mọi người cổ vũ mà tôi đã có thể cố gắng đến cùng.
+        - Nhờ mọi người cổ vũ mà tôi cố gắng được đến cùng.
+        - Nhờ sự cổ vũ của mọi người mà tôi đã cố gắng được đến cùng.
+        - Nhờ mọi người cổ vũ mà tôi đã nỗ lực được đến cùng.
+        - Nhờ các bạn cổ vũ mà tôi đã cố gắng được đến cùng.
+        - Nhờ mọi người động viên mà tôi đã cố gắng được đến cùng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tại mọi người cổ vũ mà tôi đã cố gắng đến cùng.
+        feedback_vi: おかげで mang nghĩa tích cực "nhờ", không phải "tại".
+        error_tag: okage_sei
+    explanation:
+      vi: 応援してくれた - đã cổ vũ cho tôi; おかげで - nhờ; 頑張れました - đã có thể cố gắng (thể khả năng của 頑張る).
+    display_answer: Nhờ mọi người cổ vũ mà tôi đã cố gắng được đến cùng.
+
+  - key: ja:exercise:n3-node-okage-sei-wb-taifuu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-seide
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tại bão mà máy bay không bay được.\""
+      tokens:
+        - { id: f3, text: 飛びませんでした }
+        - { id: f4, text: 台風のおかげで }
+        - { id: f2, text: 飛行機が }
+        - { id: f1, text: 台風のせいで }
+    answer:
+      orders:
+        - [f1, f2, f3]
+        - [f2, f1, f3]
+    explanation:
+      vi: Máy bay không bay là kết quả xấu nên dùng 台風のせいで. 飛行機が và 台風のせいで có thể đổi chỗ.
+    display_answer: 台風のせいで、飛行機が飛びませんでした。

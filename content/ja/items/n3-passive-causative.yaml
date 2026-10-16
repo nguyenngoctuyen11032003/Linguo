@@ -1,0 +1,512 @@
+# Học liệu unit "Bị động và sai khiến" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: bị động trực tiếp =================
+  - key: ja:item:n3-gram-passive
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(ら)れる (受身)
+      romanization: -(ra)reru
+      pos: thể bị động
+    back:
+      meaning:
+        vi: 'Thể bị động "bị/được ...". Nhóm 1 - âm u → a + れる (叱る → 叱られる, 言う → 言われる); nhóm 2 - る → られる (褒める → 褒められる); する → される, 来る → 来られる. Người làm hành động đánh dấu bằng に.'
+      examples:
+        - target: 子どものとき、よく母に叱られました。
+          translation:
+            vi: Hồi nhỏ tôi hay bị mẹ mắng.
+      pronunciation_note:
+        vi: 言われる đọc "i-wa-rê-rư" - う biến thành わ, không phải あ.
+      confusion:
+        vi: Tiếng Việt chia "được" (tốt) và "bị" (xấu), còn tiếng Nhật chỉ có một dạng (ら)れる cho cả hai - 褒められた (được khen), 叱られた (bị mắng). Động từ nhóm 2 thể bị động trùng với thể khả năng (食べられる), phải dựa vào ngữ cảnh.
+
+  - key: ja:item:n3-gram-niyotte
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N-によって (受身)
+      romanization: ni yotte
+      pos: tác nhân trong câu bị động
+    back:
+      meaning:
+        vi: '"Bởi..." - chỉ người tạo ra, phát minh, viết, xây... trong câu bị động mang tính thông tin: この寺は800年前に建てられた, 「源氏物語」は紫式部によって書かれた.'
+      examples:
+        - target: 電話はベルによって発明されました。
+          translation:
+            vi: Điện thoại được phát minh bởi Bell.
+      pronunciation_note:
+        vi: よって có âm ngắt っ - "yô(t)-tê".
+      confusion:
+        vi: Với động từ tạo ra (書く, 建てる, 発明する) dùng によって, không dùng に - ベルに発明された nghe sai. Với 叱る, 褒める, 頼む thì dùng に.
+
+  - key: ja:item:n3-homeru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 褒める
+      reading: ほめる
+      romanization: homeru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: khen; 褒められる - được khen
+      examples:
+        - target: 発表がよかったと、部長に褒められました。
+          translation:
+            vi: Tôi được trưởng phòng khen là bài thuyết trình tốt.
+      pronunciation_note:
+        vi: Đọc "hô-mê-rư", ほ bật hơi nhẹ.
+      confusion:
+        vi: Thường viết bằng hiragana ほめる. Khen ai dùng を - 子どもを褒める; được ai khen dùng に - 先生に褒められる.
+
+  - key: ja:item:n3-shikaru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 叱る
+      reading: しかる
+      romanization: shikaru
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: mắng, la rầy (người trên mắng người dưới để dạy)
+      examples:
+        - target: 遅刻して、先生に叱られました。
+          translation:
+            vi: Tôi đi muộn nên bị thầy mắng.
+      pronunciation_note:
+        vi: Đọc "si-ka-rư", thể bị động 叱られる - "si-ka-ra-rê-rư".
+      confusion:
+        vi: 叱る là mắng để dạy bảo; 怒る (おこる) là nổi giận. Trẻ con nói 怒られた nhiều hơn, nhưng trong văn viết và ở công sở hay dùng 叱られた hoặc 注意された.
+
+  - key: ja:item:n3-tanomu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 頼む
+      reading: たのむ
+      romanization: tanomu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: nhờ, giao (việc); gọi (món ăn); 頼まれる - được nhờ
+      examples:
+        - target: 課長に資料のコピーを頼まれました。
+          translation:
+            vi: Tôi được trưởng nhóm nhờ photo tài liệu.
+      pronunciation_note:
+        vi: Đọc "ta-nô-mư"; thể bị động 頼まれる - む → ま + れる.
+      confusion:
+        vi: Nhờ ai dùng に - 友だちに頼む; nhờ việc gì dùng を - コピーを頼む. Trong nhà hàng, 頼む còn có nghĩa là gọi món - ラーメンを頼む.
+
+  # ================= bài 2: bị động "bị làm phiền" =================
+  - key: ja:item:n3-gram-meiwaku-ukemi
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: (người bị hại)は N に V-(ら)れる (迷惑の受身)
+      romanization: meiwaku no ukemi
+      pos: bị động gián tiếp
+    back:
+      meaning:
+        vi: 'Bị động "bị làm phiền": người nói chịu ảnh hưởng xấu từ hành động của người khác, kể cả với động từ không có tân ngữ - 雨に降られた (bị mưa), 隣の人に騒がれた (bị hàng xóm làm ồn). Đồ vật của mình giữ trợ từ を - 足を踏まれた, 財布を盗まれた.'
+      examples:
+        - target: 電車の中で、足を踏まれました。
+          translation:
+            vi: Trên tàu điện tôi bị giẫm vào chân.
+      pronunciation_note:
+        vi: 踏まれる đọc "fư-ma-rê-rư"; ふ nhẹ giữa "f" và "h".
+      confusion:
+        vi: Tiếng Việt nói "chân tôi bị giẫm", người Việt hay dịch thành 私の足が踏まれました - nghe không tự nhiên. Tiếng Nhật lấy người làm chủ ngữ - (私は) 足を踏まれました.
+
+  - key: ja:item:n3-fumu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 踏む
+      reading: ふむ
+      romanization: fumu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: giẫm, đạp lên; 足を踏まれる - bị giẫm chân
+      examples:
+        - target: 満員電車で、誰かに足を踏まれました。
+          translation:
+            vi: Trên tàu chật cứng, tôi bị ai đó giẫm vào chân.
+      pronunciation_note:
+        vi: ふ là âm môi nhẹ, không cắn răng vào môi như "ph" tiếng Việt.
+      confusion:
+        vi: 踏む là giẫm bằng chân; đạp xe là 自転車をこぐ, không dùng 踏む.
+
+  - key: ja:item:n3-nusumu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 盗む
+      reading: ぬすむ
+      romanization: nusumu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: lấy trộm, ăn cắp; 盗まれる - bị lấy trộm
+      examples:
+        - target: 駅で自転車を盗まれました。
+          translation:
+            vi: Tôi bị trộm xe đạp ở ga.
+      pronunciation_note:
+        vi: Đọc "nư-xư-mư", các âm う đều tròn môi rất nhẹ.
+      confusion:
+        vi: Báo mất trộm luôn nói (私は) 自転車を盗まれた. Câu 自転車が盗まれた cũng đúng nhưng nghe như tin tức, không nhấn người bị hại.
+
+  - key: ja:item:n3-sawagu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 騒ぐ
+      reading: さわぐ
+      romanization: sawagu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: làm ồn, ồn ào
+      examples:
+        - target: 夜遅くまで隣の人に騒がれて、寝られませんでした。
+          translation:
+            vi: Bị hàng xóm làm ồn đến khuya nên tôi không ngủ được.
+      pronunciation_note:
+        vi: Đọc "xa-wa-gư"; thể bị động 騒がれる - ぐ → が + れる.
+      confusion:
+        vi: 騒ぐ là hành động của người; nói "chỗ này ồn" dùng tính từ うるさい hoặc にぎやか (náo nhiệt, nghĩa tốt).
+
+  - key: ja:item:n3-okosu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 起こす
+      reading: おこす
+      romanization: okosu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: đánh thức (ai đó); gây ra (sự cố)
+      examples:
+        - target: 朝早く、赤ちゃんに起こされました。
+          translation:
+            vi: Sáng sớm tôi bị em bé đánh thức.
+      pronunciation_note:
+        vi: Đọc "ô-kô-xư"; thể bị động 起こされる - す → さ + れる.
+      confusion:
+        vi: 起きる là tự thức dậy (nội động từ); 起こす là đánh thức người khác (ngoại động từ). 事故を起こす - gây tai nạn.
+
+  # ================= bài 3: thể sai khiến =================
+  - key: ja:item:n3-gram-causative
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-(さ)せる (使役)
+      romanization: -(sa)seru
+      pos: thể sai khiến
+    back:
+      meaning:
+        vi: 'Bắt/cho ai làm gì. Nhóm 1 - u → a + せる (行く → 行かせる, 言う → 言わせる); nhóm 2 - る → させる (食べる → 食べさせる); する → させる, 来る → 来させる. Người bị bắt/được cho phép đánh dấu bằng に (hoặc を với nội động từ).'
+      examples:
+        - target: 母は子どもに野菜を食べさせました。
+          translation:
+            vi: Mẹ bắt con ăn rau.
+      pronunciation_note:
+        vi: させる đọc "xa-xê-rư"; 行かせる - "i-ka-xê-rư".
+      confusion:
+        vi: Cùng một dạng có thể là "bắt" hoặc "cho phép" - 子どもを遊ばせる (cho con chơi). Thể sai khiến dùng cho người trên với người dưới; dùng với người trên (部長に行かせる) là thất lễ.
+
+  - key: ja:item:n3-gram-sasete-kudasai
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-(さ)せてください · V-(さ)せていただけませんか
+      romanization: -(sa)sete kudasai
+      pos: xin phép làm gì
+    back:
+      meaning:
+        vi: '"Xin cho tôi được ..." - xin phép một cách lịch sự: 休ませてください, 説明させていただけませんか. Đây là thể sai khiến + てください (xin hãy cho phép tôi).'
+      examples:
+        - target: 体調が悪いので、早く帰らせていただけませんか。
+          translation:
+            vi: Tôi không khoẻ, có thể cho tôi về sớm được không ạ?
+      pronunciation_note:
+        vi: 帰らせて đọc "ka-ê-ra-xê-tê".
+      confusion:
+        vi: 休んでください là bảo người khác nghỉ; 休ませてください mới là xin cho mình nghỉ. Người Việt hay nói 休みたいです - đúng nhưng nghe như thông báo, kém lịch sự.
+
+  - key: ja:item:n3-naraigoto
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 習い事
+      reading: ならいごと
+      romanization: naraigoto
+      pos: danh từ
+    back:
+      meaning:
+        vi: lớp học thêm năng khiếu ngoài giờ (piano, bơi, thư pháp...)
+      examples:
+        - target: 子どもにピアノを習わせています。
+          translation:
+            vi: Tôi đang cho con học piano.
+      pronunciation_note:
+        vi: Đọc "na-ra-i-gô-tô", い và ご tách rõ.
+      confusion:
+        vi: 習い事 là học kỹ năng, sở thích; học thêm các môn ở trường là 塾 (じゅく). Cho con học dùng thể sai khiến - 習わせる.
+
+  - key: ja:item:n3-shinpai
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 心配する
+      reading: しんぱいする
+      romanization: shinpai suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: lo lắng; 心配させる - làm (ai) lo lắng
+      examples:
+        - target: 連絡しなかったので、両親を心配させてしまいました。
+          translation:
+            vi: Vì không liên lạc nên tôi đã làm bố mẹ lo lắng.
+      pronunciation_note:
+        vi: ん trước ぱ đọc như "m" - "sim-pai".
+      confusion:
+        vi: Làm ai lo, làm ai buồn, làm ai cười dùng thể sai khiến với を - 両親を心配させる, 友だちを笑わせる. Tiếng Việt "làm" ở đây không dịch bằng する.
+
+  - key: ja:item:n3-jiyuu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 自由
+      reading: じゆう
+      romanization: jiyū
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: tự do; 自由に - một cách tự do, tuỳ ý
+      examples:
+        - target: 週末は子どもたちを公園で自由に遊ばせます。
+          translation:
+            vi: Cuối tuần tôi cho bọn trẻ chơi tự do ở công viên.
+      pronunciation_note:
+        vi: ゆう là âm dài "yư-ư"; đọc thiếu thành じゆ là sai.
+      confusion:
+        vi: ご自由にお取りください - "xin mời lấy tự do" (đồ miễn phí). Đừng nhầm 自由 (tự do) với 理由 (りゆう - lý do).
+
+  # ================= bài 4: bị động sai khiến =================
+  - key: ja:item:n3-gram-causative-passive
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-(さ)せられる · V-される (使役受身)
+      romanization: -(sa)serareru · -sareru
+      pos: bị động sai khiến
+    back:
+      meaning:
+        vi: '"Bị bắt phải làm" (không muốn mà vẫn phải làm). Nhóm 1 - u → a + せられる hoặc dạng rút gọn a + される (飲む → 飲ませられる / 飲まされる); nhóm 2 - させられる (食べる → 食べさせられる); する → させられる.'
+      examples:
+        - target: 飲み会で、先輩にお酒を飲まされました。
+          translation:
+            vi: Ở buổi nhậu tôi bị tiền bối bắt uống rượu.
+      pronunciation_note:
+        vi: 飲まされる đọc "nô-ma-xa-rê-rư".
+      confusion:
+        vi: Động từ đuôi す không có dạng rút gọn - 話す → 話させられる (không nói 話さされる). Người bắt làm đánh dấu bằng に.
+
+  - key: ja:item:n3-nomikai
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 飲み会
+      reading: のみかい
+      romanization: nomikai
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi nhậu, buổi đi uống (với đồng nghiệp, bạn bè)
+      examples:
+        - target: 今週の金曜日、部の飲み会があります。
+          translation:
+            vi: Thứ Sáu tuần này phòng có buổi nhậu.
+      pronunciation_note:
+        vi: Đọc "nô-mi-ka-i", かい hai âm tách nhau.
+      confusion:
+        vi: 飲み会 là buổi uống giao lưu; tiệc lớn cuối năm là 忘年会 (ぼうねんかい), tiệc chào người mới là 歓迎会 (かんげいかい).
+
+  - key: ja:item:n3-katazukeru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 片付ける
+      reading: かたづける
+      romanization: katazukeru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: dọn dẹp, cất gọn; giải quyết xong (việc)
+      examples:
+        - target: 子どものころ、毎日部屋を片付けさせられました。
+          translation:
+            vi: Hồi nhỏ ngày nào tôi cũng bị bắt dọn phòng.
+      pronunciation_note:
+        vi: づ đọc giống ず - "ka-ta-dư-kê-rư".
+      confusion:
+        vi: 片付ける là sắp xếp, cất đồ cho gọn; lau chùi là 掃除する (そうじ). Viết づ, không viết ず.
+
+  - key: ja:item:n3-muriyari
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 無理やり
+      reading: むりやり
+      romanization: muriyari
+      pos: phó từ
+    back:
+      meaning:
+        vi: ép buộc, cưỡng ép, bất chấp ý người khác
+      examples:
+        - target: 嫌いなピーマンを無理やり食べさせられました。
+          translation:
+            vi: Tôi bị ép ăn ớt chuông dù ghét nó.
+      pronunciation_note:
+        vi: Đọc "mư-ri-ya-ri".
+      confusion:
+        vi: 無理やり hay đi với thể sai khiến hoặc bị động sai khiến. 無理 một mình là "quá sức, không thể" - 無理しないで (đừng cố quá).
+
+  # ================= bài 5: ôn tập (tin tức, giới thiệu) =================
+  - key: ja:item:n3-kaisai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 開催する
+      reading: かいさいする
+      romanization: kaisai suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: tổ chức (sự kiện lớn, hội nghị, thế vận hội); 開催される - được tổ chức
+      examples:
+        - target: オリンピックは2021年に東京で開催されました。
+          translation:
+            vi: Thế vận hội được tổ chức ở Tokyo năm 2021.
+      pronunciation_note:
+        vi: Đọc "ka-i-xa-i", hai âm い đọc rõ.
+      confusion:
+        vi: 開催 dùng trong tin tức, văn bản trang trọng; nói thường dùng 行う hoặc やる. Lễ khai mạc là 開会式, đừng nhầm với 開催.
+
+  - key: ja:item:n3-honyaku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 翻訳する
+      reading: ほんやくする
+      romanization: hon'yaku suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: dịch (văn bản); 翻訳される - được dịch
+      examples:
+        - target: この小説は30か国語に翻訳されています。
+          translation:
+            vi: Cuốn tiểu thuyết này đã được dịch ra 30 thứ tiếng.
+      pronunciation_note:
+        vi: ん và や tách rõ - "hon-ya-ku", không đọc dính thành "ho-nya-ku".
+      confusion:
+        vi: 翻訳 là dịch viết; phiên dịch nói là 通訳 (つうやく). Dịch sang tiếng nào dùng に - 日本語に翻訳する.
+
+  - key: ja:item:n3-sekaijuu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 世界中
+      reading: せかいじゅう
+      romanization: sekaijū
+      pos: danh từ
+    back:
+      meaning:
+        vi: khắp thế giới; 世界中で - trên khắp thế giới
+      examples:
+        - target: この歌は世界中で愛されています。
+          translation:
+            vi: Bài hát này được yêu thích trên khắp thế giới.
+      pronunciation_note:
+        vi: 中 ở đây đọc じゅう (dài), không phải ちゅう.
+      confusion:
+        vi: ～中 (じゅう) là "khắp/suốt" - 一日中 (suốt ngày), 日本中 (khắp Nhật). ～中 (ちゅう) là "đang" - 会議中 (đang họp).
+
+  - key: ja:item:n3-tateru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 建てる
+      reading: たてる
+      romanization: tateru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: xây (nhà, toà nhà); 建てられる - được xây
+      examples:
+        - target: このお寺は約800年前に建てられました。
+          translation:
+            vi: Ngôi chùa này được xây khoảng 800 năm trước.
+      pronunciation_note:
+        vi: Đọc "ta-tê-rư".
+      confusion:
+        vi: 建てる (xây) khác 立てる (dựng đứng, lập kế hoạch) dù cùng đọc たてる. 建つ là tự động từ - nhà được dựng lên.

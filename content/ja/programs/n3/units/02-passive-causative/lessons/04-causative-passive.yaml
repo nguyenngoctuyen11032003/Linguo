@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-causative-passive
+order_index: 4
+level: n3
+title:
+  vi: Bị bắt phải làm - bị động sai khiến ～(さ)せられる
+objectives:
+  - vi: Chia thể bị động sai khiến, cả dạng đầy đủ (～せられる) và dạng rút gọn (～される).
+  - vi: Kể chuyện bị bắt làm điều không muốn - bị bắt uống rượu, bị bắt dọn dẹp, bị bắt chờ.
+  - vi: Phân biệt bị động, sai khiến và bị động sai khiến.
+estimated_minutes: 20
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-causative]
+items:
+  - item: ja:item:n3-gram-causative-passive
+  - item: ja:item:n3-nomikai
+  - item: ja:item:n3-katazukeru
+  - item: ja:item:n3-muriyari
+  - item: ja:item:n3-gram-passive
+    role: reuse
+  - item: ja:item:n3-gram-causative
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn than được "ở buổi nhậu tôi bị bắt uống rượu", "hồi nhỏ ngày nào cũng bị bắt dọn phòng", "tôi bị bắt chờ cả tiếng" - chủ ngữ là người phải làm, và có ý không muốn.
+  - type: explain
+    text:
+      vi: 'Cách tạo - lấy thể sai khiến rồi chia bị động: 食べる → 食べさせる → 食べさせられる; する → させられる; 来る → 来させられる. Nhóm 1: 飲む → 飲ませられる, và dạng rút gọn phổ biến hơn trong hội thoại - 飲まされる.'
+  - type: explain
+    text:
+      vi: 'Người bắt làm dùng に, người phải làm là chủ ngữ: (私は) 先輩にお酒を飲まされました. Câu luôn ngầm ý "tôi không muốn mà vẫn phải làm".'
+  - type: explain
+    text:
+      vi: 'Động từ đuôi す không có dạng rút gọn: 話す → 話させられる, 出す → 出させられる (không nói 話さされる).'
+  - type: deep_explain
+    text:
+      vi: So sánh ba câu với 待つ - 友だちを待たせた (tôi bắt bạn chờ - sai khiến); 友だちに待たれた (tôi bị bạn chờ - bị động, ít dùng); 友だちに待たされた (tôi bị bạn bắt chờ - bị động sai khiến). Câu thứ ba rất hay gặp khi than người khác đến muộn.
+  - type: example
+    target: 飲み会で、先輩にお酒を飲まされました。
+    target_lang: ja
+    translation:
+      vi: Ở buổi nhậu tôi bị tiền bối bắt uống rượu.
+  - type: example
+    target: 子どものころ、毎日部屋を片付けさせられました。
+    target_lang: ja
+    translation:
+      vi: Hồi nhỏ ngày nào tôi cũng bị bắt dọn phòng.
+  - type: example
+    target: 友だちに1時間も待たされました。
+    target_lang: ja
+    translation:
+      vi: Tôi bị bạn bắt chờ đến cả tiếng đồng hồ.
+    note:
+      vi: ～も nhấn mạnh con số lớn.
+  - type: example
+    target: 嫌いなピーマンを無理やり食べさせられました。
+    target_lang: ja
+    translation:
+      vi: Tôi bị ép ăn ớt chuông dù ghét nó.
+  - type: common_mistake
+    wrong: 先輩にお酒を飲ませました。
+    right: 先輩にお酒を飲まされました。
+    target_lang: ja
+    note:
+      vi: 飲ませました là "tôi bắt tiền bối uống" - ngược hoàn toàn. Bạn là người bị bắt nên cần thêm phần bị động - 飲まされました / 飲ませられました.
+  - type: common_mistake
+    wrong: 会議で意見を話さされました。
+    right: 会議で意見を話させられました。
+    target_lang: ja
+    note:
+      vi: Động từ đuôi す không rút gọn được; chỉ có dạng đầy đủ 話させられる.
+  - type: summary
+    points:
+      - vi: Sai khiến + bị động - ～(さ)せられる; nhóm 1 rút gọn - ～される (trừ đuôi す).
+      - vi: Người phải làm là chủ ngữ; người bắt + に.
+      - vi: Luôn ngầm ý "không muốn mà vẫn phải làm".
+      - vi: 待たせた (bắt chờ) / 待たされた (bị bắt chờ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-causative-passive-mcq-form
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      stem: Thể bị động sai khiến của 食べる là gì?
+      stem_lang: vi
+      options:
+        - { id: k3s, text: 食べさせられる, lang: ja }
+        - { id: d7f, text: 食べられさせる, lang: ja }
+        - { id: o1m, text: 食べさされる, lang: ja }
+        - { id: y5b, text: 食べさせる, lang: ja }
+    answer:
+      correct_option_id: k3s
+    explanation:
+      vi: Sai khiến trước, bị động sau - 食べる → 食べさせる → 食べさせられる. Dạng rút gọn ～される chỉ có ở nhóm 1; 食べさせる là sai khiến đơn thuần.
+    display_answer: 食べさせられる
+
+  - key: ja:exercise:n3-causative-passive-listen-nomikai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-nomikai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 飲み会で、先輩にお酒を飲まされました。
+      options:
+        - { id: t6w, text: Ở buổi nhậu tôi bị tiền bối bắt uống rượu., lang: vi }
+        - { id: g9a, text: Ở buổi nhậu tôi bắt tiền bối uống rượu., lang: vi }
+        - { id: p2e, text: Ở buổi nhậu tiền bối mời tôi uống nước., lang: vi }
+        - { id: z8x, text: Tôi không đi nhậu với tiền bối., lang: vi }
+    answer:
+      correct_option_id: t6w
+    explanation:
+      vi: 飲まされました - bị bắt uống (bị động sai khiến dạng rút gọn); 先輩に - người bắt. Nếu tôi bắt tiền bối uống thì sẽ là 先輩に飲ませました.
+    display_answer: Ở buổi nhậu tôi bị tiền bối bắt uống rượu.
+
+  - key: ja:exercise:n3-causative-passive-mcq-matasareta
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      stem: '"Tôi bị bạn bắt chờ cả tiếng." Chọn dạng đúng: 友だちに1時間も＿＿。'
+      stem_lang: vi
+      options:
+        - { id: r3h, text: 待たされました, lang: ja }
+        - { id: e7c, text: 待たせました, lang: ja }
+        - { id: w2v, text: 待ちました, lang: ja }
+        - { id: n5j, text: 待たさせました, lang: ja }
+    answer:
+      correct_option_id: r3h
+    explanation:
+      vi: Bị bắt chờ - 待つ → 待たせる → 待たせられる, rút gọn 待たされる. 待たせました là "tôi bắt bạn chờ" - ngược nghĩa; 待ちました không có ý bị bắt.
+    display_answer: 待たされました
+
+  - key: ja:exercise:n3-causative-passive-fill-katazuke
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-katazukeru
+    prompt:
+      template: "子どものころ、毎日部屋を{{b1}}。(片付ける)"
+      blanks:
+        - { id: b1, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa: Hồi nhỏ ngày nào tôi cũng bị bắt dọn phòng."
+        - "Gợi ý: nhóm 2 - る → させられる, chia quá khứ lịch sự."
+    answer:
+      blanks:
+        b1: [片付けさせられました, かたづけさせられました, 片づけさせられました, 片付けさせられた, かたづけさせられた]
+    known_wrong:
+      - answer: 片付けさせました
+        feedback_vi: Đây là "tôi bắt (ai đó) dọn". Bạn là người bị bắt nên cần thêm られ - 片付けさせられました.
+        error_tag: causative_passive_needed
+      - answer: 片付けられました
+        feedback_vi: Đây là bị động thường (phòng bị dọn). Bị bắt dọn là 片付けさせられました.
+        error_tag: causative_passive_needed
+      - answer: 片付けさされました
+        feedback_vi: Dạng rút gọn ～される chỉ có ở động từ nhóm 1. Nhóm 2 dùng ～させられる.
+        error_tag: causative_passive_form
+    explanation:
+      vi: 片付ける (nhóm 2) → 片付けさせる → 片付けさせられる → 片付けさせられました.
+    display_answer: 子どものころ、毎日部屋を片付けさせられました。
+
+  - key: ja:exercise:n3-causative-passive-wb-muriyari
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-muriyari
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi bị ép ăn ớt chuông mà tôi ghét.\""
+      tokens:
+        - { id: m3, text: 無理やり }
+        - { id: m5, text: 食べさせました }
+        - { id: m1, text: 嫌いな }
+        - { id: m4, text: 食べさせられました }
+        - { id: m2, text: ピーマンを }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+        - [m3, m1, m2, m4]
+    explanation:
+      vi: 嫌いなピーマン - ớt chuông mà tôi ghét (嫌いな bổ nghĩa cho danh từ, phải đứng liền trước). 無理やり đứng trước cụm động từ. Bị ép ăn - 食べさせられました; 食べさせました là "bắt người khác ăn".
+    display_answer: 嫌いなピーマンを無理やり食べさせられました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-causative-passive-fill-hanasaserareta
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      template: "会議で、急に英語で意見を{{b1}}。(話す)"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [話させられました, はなさせられました, 話させられた, はなさせられた]
+    known_wrong:
+      - answer: 話さされました
+        feedback_vi: Động từ đuôi す không có dạng rút gọn. Dùng 話させられました.
+        error_tag: causative_passive_form
+      - answer: 話されました
+        feedback_vi: 話される là bị động thường (được nói đến). Bị bắt nói là 話させられる.
+        error_tag: causative_passive_needed
+    explanation:
+      vi: 話す → 話させる → 話させられる. Đuôi す chỉ có dạng đầy đủ.
+    display_answer: 会議で、急に英語で意見を話させられました。
+
+  - key: ja:exercise:n3-causative-passive-translate-nomasareta
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      source_text: Tôi bị tiền bối bắt uống rượu. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 先輩にお酒を飲まされました。
+        - 先輩にお酒を飲ませられました。
+        - 私は先輩にお酒を飲まされました。
+        - 私は先輩にお酒を飲ませられました。
+        - 先輩に酒を飲まされました。
+        - 先輩に酒を飲ませられました。
+        - せんぱいにおさけをのまされました。
+        - せんぱいにおさけをのませられました。
+        - 先輩にお酒をのまされました。
+        - 先輩にお酒をのませられました。
+        - 先輩にお酒を飲まされたんです。
+    known_wrong:
+      - answer: 先輩にお酒を飲ませました。
+        feedback_vi: Câu này là "tôi bắt tiền bối uống". Bị bắt phải dùng 飲まされました / 飲ませられました.
+        error_tag: causative_passive_needed
+      - answer: 先輩にお酒を飲まれました。
+        feedback_vi: 飲まれる là bị động thường (bị uống mất rượu). Bị bắt uống là 飲まされる.
+        error_tag: causative_passive_needed
+    explanation:
+      vi: 飲む → 飲ませる → 飲ませられる, rút gọn 飲まされる. Người bắt (先輩) + に.
+    display_answer: 先輩にお酒を飲まされました。
+
+  - key: ja:exercise:n3-causative-passive-translate-matasareta
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      source_text: Tôi bị bạn bắt chờ đến cả tiếng đồng hồ. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 友だちに1時間も待たされました。
+        - 友達に1時間も待たされました。
+        - 友だちに一時間も待たされました。
+        - 友達に一時間も待たされました。
+        - 友だちに1時間も待たせられました。
+        - 友達に1時間も待たせられました。
+        - 友だちに一時間も待たせられました。
+        - 友達に一時間も待たせられました。
+        - 私は友だちに1時間も待たされました。
+        - 私は友達に1時間も待たされました。
+        - ともだちにいちじかんもまたされました。
+        - 友だちに1時間もまたされました。
+        - 友だちに１時間も待たされました。
+        - 友達に１時間も待たされました。
+    known_wrong:
+      - answer: 友だちを1時間も待たせました。
+        feedback_vi: Câu này là "tôi bắt bạn chờ một tiếng". Bạn là người phải chờ - 待たされました.
+        error_tag: causative_passive_needed
+    explanation:
+      vi: 待つ → 待たされる (bị bắt chờ); 1時間も - đến cả một tiếng (も nhấn mạnh nhiều).
+    display_answer: 友だちに1時間も待たされました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-causative-passive-mcq-three
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      stem: '「母に野菜を食べさせられた」 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: i4n, text: Tôi bị mẹ bắt ăn rau., lang: vi }
+        - { id: u8d, text: Tôi bắt mẹ ăn rau., lang: vi }
+        - { id: f2r, text: Rau của tôi bị mẹ ăn mất., lang: vi }
+        - { id: c6g, text: Mẹ cho tôi ăn rau khi tôi muốn., lang: vi }
+    answer:
+      correct_option_id: i4n
+    explanation:
+      vi: させられる - bị bắt làm (không muốn). Bắt mẹ ăn là 母に食べさせた; rau bị mẹ ăn mất là 母に野菜を食べられた; câu cuối mất ý "không muốn".
+    display_answer: Tôi bị mẹ bắt ăn rau.
+
+  - key: ja:exercise:n3-causative-passive-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-nomikai
+    prompt:
+      source_text: 新入社員のころ、飲み会でよく歌を歌わされました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hồi còn là nhân viên mới, tôi hay bị bắt hát ở các buổi nhậu.
+        - Hồi là nhân viên mới, tôi hay bị bắt hát ở các buổi nhậu.
+        - Hồi mới vào công ty, tôi hay bị bắt hát ở các buổi nhậu.
+        - Hồi còn là nhân viên mới, ở các buổi nhậu tôi hay bị bắt hát.
+        - Hồi là nhân viên mới, ở buổi nhậu tôi thường bị bắt hát.
+        - Khi còn là nhân viên mới, tôi thường bị bắt hát ở các buổi nhậu.
+        - Khi là nhân viên mới, tôi hay bị bắt hát ở buổi nhậu.
+        - Hồi còn là nhân viên mới, tôi thường bị bắt hát ở buổi nhậu.
+        - Hồi còn là nhân viên mới, tôi hay bị bắt hát trong các buổi nhậu.
+        - Thời còn là nhân viên mới, tôi hay bị bắt hát ở các buổi nhậu.
+        - Hồi mới vào làm, tôi hay bị bắt hát ở các buổi nhậu.
+        - Hồi còn là lính mới, tôi hay bị bắt hát ở các buổi nhậu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hồi còn là nhân viên mới, tôi hay bắt mọi người hát ở các buổi nhậu.
+        feedback_vi: 歌わされました là bị bắt hát, không phải bắt người khác hát.
+        error_tag: causative_passive_meaning
+    explanation:
+      vi: 新入社員のころ - hồi còn là nhân viên mới; 歌わされる - bị bắt hát (歌う → 歌わせる → 歌わされる); よく - hay, thường.
+    display_answer: Hồi còn là nhân viên mới, tôi hay bị bắt hát ở các buổi nhậu.
+
+  - key: ja:exercise:n3-causative-passive-wb-zangyou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Hôm qua tôi bị trưởng phòng bắt làm thêm giờ đến 10 giờ.\""
+      tokens:
+        - { id: z4, text: 残業させられました }
+        - { id: z2, text: 部長に }
+        - { id: z5, text: 残業させました }
+        - { id: z1, text: 昨日 }
+        - { id: z3, text: 10時まで }
+    answer:
+      orders:
+        - [z1, z2, z3, z4]
+        - [z1, z3, z2, z4]
+        - [z2, z1, z3, z4]
+    explanation:
+      vi: 残業する → 残業させる → 残業させられる (bị bắt làm thêm). Người bắt (部長) + に. 残業させました là "tôi bắt ai đó làm thêm".
+    display_answer: 昨日部長に10時まで残業させられました。
+
+  - key: ja:exercise:n3-causative-passive-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-causative-passive
+    prompt:
+      stem: 'Bạn bè hỏi: 「どうしてそんなに疲れているの?」 Bạn trả lời "Hôm qua bị bắt dọn cả cái kho".'
+      stem_lang: vi
+      options:
+        - { id: h9t, text: 昨日、倉庫を全部片付けさせられたんだ。, lang: ja }
+        - { id: a3k, text: 昨日、倉庫を全部片付けさせたんだ。, lang: ja }
+        - { id: s7p, text: 昨日、倉庫が全部片付けたんだ。, lang: ja }
+        - { id: b1w, text: 昨日、倉庫を全部片付けられたんだ。, lang: ja }
+    answer:
+      correct_option_id: h9t
+    explanation:
+      vi: Bị bắt dọn - 片付けさせられた. 片付けさせた là bắt người khác dọn; 倉庫が片付けた sai chủ ngữ; 片付けられた là "được dọn" hoặc "dọn được", không có ý bị ép.
+    display_answer: 昨日、倉庫を全部片付けさせられたんだ。

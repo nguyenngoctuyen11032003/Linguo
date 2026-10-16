@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-bank
+order_index: 2
+level: n3
+title:
+  vi: Ở ngân hàng - ～ように (mục đích)
+objectives:
+  - vi: Nắm từ vựng ngân hàng - 口座, 振り込む, 引き出す, 手数料, 暗証番号.
+  - vi: Nói mục đích bằng ～ように với thể khả năng, thể ない.
+  - vi: Phân biệt ～ように và ～ために.
+estimated_minutes: 18
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ja:lesson:n3-city-office]
+items:
+  - item: ja:item:n3-kouza
+  - item: ja:item:n3-furikomu
+  - item: ja:item:n3-hikidasu
+  - item: ja:item:n3-tesuuryou
+  - item: ja:item:n3-anshou-bangou
+  - item: ja:item:n3-gram-you-ni-purpose
+  - item: ja:item:n3-juuminhyou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mở tài khoản, chuyển tiền nhà, rút tiền ATM và nói "tôi ghi lại để không quên".
+  - type: explain
+    text:
+      vi: 'Từ vựng: 口座 (tài khoản), 振り込む (chuyển khoản), 引き出す / 下ろす (rút tiền), 手数料 (phí), 暗証番号 (mã PIN). Mở tài khoản thường cần 在留カード, con dấu (印鑑) và số điện thoại Nhật.'
+  - type: explain
+    text:
+      vi: '～ように - "để (cho)...": mục đích là một trạng thái, khả năng, không trực tiếp do ý chí. Đi với thể khả năng (わかるように, 使えるように), thể ない (忘れないように), tự động từ (見えるように).'
+  - type: explain
+    text:
+      vi: '～ために - "để" với động từ chủ ý, cùng chủ ngữ: 家を買うために貯金します. So sánh: 家が買えるように貯金します (để có thể mua được nhà). Cùng nghĩa "để" nhưng dạng động từ trước khác nhau.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo nhanh: nếu động từ trước "để" là thứ bạn có thể quyết làm ngay (買う, 行く, 勉強する) - ために; nếu là kết quả bạn mong (買える, 忘れない, 間に合う, わかる) - ように. ように còn dùng khi chủ ngữ hai vế khác nhau - 子どもにもわかるように、やさしく説明する.'
+  - type: example
+    target: 給料はこの口座に振り込まれます。
+    target_lang: ja
+    translation:
+      vi: Lương được chuyển vào tài khoản này.
+  - type: example
+    target: 暗証番号を忘れないように、手帳に書いておきました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã ghi mã PIN vào sổ tay để không quên.
+  - type: example
+    target: 夜8時以降は、ATMの手数料がかかります。
+    target_lang: ja
+    translation:
+      vi: Sau 8 giờ tối thì rút ATM mất phí.
+  - type: example
+    target: 海外でも使えるように、カードの設定を変えました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã đổi cài đặt thẻ để dùng được cả ở nước ngoài.
+  - type: common_mistake
+    wrong: 暗証番号を忘れないために、メモしておきました。
+    right: 暗証番号を忘れないように、メモしておきました。
+    target_lang: ja
+    note:
+      vi: Quên/không quên không do ý chí điều khiển trực tiếp nên dùng ように. ために dùng với động từ chủ ý.
+  - type: common_mistake
+    wrong: 家賃を大家さんの口座を振り込みました。
+    right: 家賃を大家さんの口座に振り込みました。
+    target_lang: ja
+    note:
+      vi: Chuyển vào tài khoản nào dùng に - 口座に振り込む; tiền được chuyển dùng を.
+  - type: summary
+    points:
+      - vi: 口座, 振り込む, 引き出す (下ろす), 手数料, 暗証番号.
+      - vi: ～ように + thể khả năng / ない / tự động từ - để (cho)...
+      - vi: ～ために + động từ chủ ý - để (làm)...
+      - vi: 口座に振り込む; 手数料がかかる.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-bank-mcq-furikomu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-furikomu
+    prompt:
+      stem: 「振り込む」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a6j, text: chuyển khoản, lang: vi }
+        - { id: r3u, text: rút tiền, lang: vi }
+        - { id: z8w, text: đổi tiền, lang: vi }
+        - { id: l1f, text: vay tiền, lang: vi }
+    answer:
+      correct_option_id: a6j
+    explanation:
+      vi: 振り込む - chuyển khoản vào tài khoản người khác. Rút tiền là 引き出す / 下ろす, đổi tiền là 両替する, vay tiền là 借りる.
+    display_answer: chuyển khoản
+
+  - key: ja:exercise:n3-bank-listen-tesuuryou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-tesuuryou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 夜8時以降は、ATMの手数料がかかります。
+      options:
+        - { id: b5m, text: Sau 8 giờ tối thì rút ATM mất phí., lang: vi }
+        - { id: e9c, text: Trước 8 giờ tối thì rút ATM mất phí., lang: vi }
+        - { id: v2h, text: Sau 8 giờ tối thì ATM ngừng hoạt động., lang: vi }
+        - { id: k7s, text: Sau 8 giờ tối thì rút ATM miễn phí., lang: vi }
+    answer:
+      correct_option_id: b5m
+    explanation:
+      vi: 以降 - từ (mốc) trở đi; 手数料がかかります - mất phí. Không có từ nào nghĩa "ngừng" hay "miễn phí".
+    display_answer: Sau 8 giờ tối thì rút ATM mất phí.
+
+  - key: ja:exercise:n3-bank-mcq-youni
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-purpose
+    prompt:
+      stem: 'Chọn từ đúng: 暗証番号を忘れない＿＿、手帳に書いておきました。'
+      stem_lang: vi
+      options:
+        - { id: p4d, text: ように, lang: ja }
+        - { id: y8k, text: ために, lang: ja }
+        - { id: c1r, text: ことに, lang: ja }
+        - { id: m5z, text: のに, lang: ja }
+    answer:
+      correct_option_id: p4d
+    explanation:
+      vi: 忘れない (không quên) là trạng thái mong muốn, không phải hành động chủ ý - dùng ように. のに là "mặc dù", ことに là "quyết định".
+    display_answer: ように
+
+  - key: ja:exercise:n3-bank-fill-kouza
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-kouza
+    prompt:
+      template: "銀行で{{b1}}を作りたいんですが、何が必要ですか。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi muốn mở tài khoản ở ngân hàng, cần những gì ạ?"
+        - "Gợi ý: 'tài khoản' - こうざ."
+    answer:
+      blanks:
+        b1: [口座, こうざ]
+    known_wrong:
+      - answer: アカウント
+        feedback_vi: アカウント là tài khoản đăng nhập web. Tài khoản ngân hàng là 口座.
+        error_tag: vocab_meaning
+      - answer: こざ
+        feedback_vi: こう là âm dài - こうざ.
+        error_tag: long_vowel
+    explanation:
+      vi: 口座を作る - mở tài khoản ngân hàng.
+    display_answer: 銀行で口座を作りたいんですが、何が必要ですか。
+
+  - key: ja:exercise:n3-bank-wb-furikomu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-furikomu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi đã chuyển tiền nhà vào tài khoản của chủ nhà.\""
+      tokens:
+        - { id: f3, text: 大家さんの口座に }
+        - { id: f4, text: 振り込みました }
+        - { id: f5, text: 引き出しました }
+        - { id: f1, text: 家賃を }
+    answer:
+      orders:
+        - [f1, f3, f4]
+        - [f3, f1, f4]
+    explanation:
+      vi: 家賃を (tiền nhà) + 大家さんの口座に (vào tài khoản chủ nhà) + 振り込みました (đã chuyển khoản). 引き出す là rút ra.
+    display_answer: 家賃を大家さんの口座に振り込みました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-bank-fill-hikidasu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hikidasu
+    prompt:
+      template: "コンビニのATMでお金を{{b1}}ました。(rút)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [引き出し, ひきだし, 下ろし, おろし, 引出し]
+    known_wrong:
+      - answer: 振り込み
+        feedback_vi: 振り込む là chuyển khoản. Rút tiền là 引き出す / 下ろす.
+        error_tag: vocab_meaning
+      - answer: 取り
+        feedback_vi: お金を取る nghe như "lấy (trộm) tiền". Rút tiền - 引き出す / 下ろす.
+        error_tag: vocab_meaning
+    explanation:
+      vi: お金を引き出す / お金を下ろす - rút tiền. Thể ます - 引き出します / 下ろします.
+    display_answer: コンビニのATMでお金を引き出しました。
+
+  - key: ja:exercise:n3-bank-translate-youni
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-purpose
+    prompt:
+      source_text: Tôi đã ghi mã PIN vào sổ tay để không quên. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 暗証番号を忘れないように、手帳に書いておきました。
+        - 暗証番号を忘れないように手帳に書いておきました。
+        - 暗証番号を忘れないように、手帳に書きました。
+        - 暗証番号を忘れないように手帳に書きました。
+        - 暗証番号を忘れないように、手帳にメモしておきました。
+        - 暗証番号を忘れないように、手帳にメモしました。
+        - 忘れないように、暗証番号を手帳に書いておきました。
+        - 忘れないように暗証番号を手帳に書いておきました。
+        - 忘れないように、暗証番号を手帳に書きました。
+        - 忘れないように、暗証番号を手帳にメモしました。
+        - 暗証番号を忘れないように、手帳に書いておいたんです。
+        - あんしょうばんごうをわすれないように、てちょうにかいておきました。
+    known_wrong:
+      - answer: 暗証番号を忘れないために、手帳に書いておきました。
+        feedback_vi: 忘れない không phải hành động chủ ý - dùng ように.
+        error_tag: you_ni_tame_ni
+      - answer: 暗証番号を忘れるように、手帳に書いておきました。
+        feedback_vi: Thiếu phủ định - "để không quên" là 忘れないように.
+        error_tag: negation
+    explanation:
+      vi: 忘れないように - để không quên; 手帳に書いておく - ghi sẵn vào sổ tay.
+    display_answer: 暗証番号を忘れないように、手帳に書いておきました。
+
+  - key: ja:exercise:n3-bank-translate-tesuuryou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tesuuryou
+    prompt:
+      source_text: Chuyển khoản có mất phí không ạ? (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 振り込みの手数料はかかりますか。
+        - 振り込みは手数料がかかりますか。
+        - 振り込みに手数料はかかりますか。
+        - 振り込みに手数料がかかりますか。
+        - 振込の手数料はかかりますか。
+        - 振込は手数料がかかりますか。
+        - 振り込むとき、手数料はかかりますか。
+        - 振り込むとき、手数料がかかりますか。
+        - 振り込むのに手数料はかかりますか。
+        - 振り込むのに手数料がかかりますか。
+        - 振り込みの手数料はかかるんですか。
+        - ふりこみのてすうりょうはかかりますか。
+    known_wrong:
+      - answer: 振り込みの手数料はありますか。
+        feedback_vi: Hiểu được, nhưng "mất phí" người Nhật nói 手数料がかかる.
+        error_tag: collocation
+      - answer: 振り込みの手数料はしますか。
+        feedback_vi: 手数料 đi với かかる, không đi với する.
+        error_tag: collocation
+    explanation:
+      vi: 振り込み - việc chuyển khoản; 手数料がかかる - mất phí. Câu hỏi có/không - かかりますか.
+    display_answer: 振り込みの手数料はかかりますか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-bank-mcq-tame-you
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-purpose
+    prompt:
+      stem: Câu nào dùng ように / ために ĐÚNG?
+      stem_lang: vi
+      options:
+        - { id: s7a, text: 海外でも使えるように、カードの設定を変えました。, lang: ja }
+        - { id: h2q, text: 海外でも使えるために、カードの設定を変えました。, lang: ja }
+        - { id: w6x, text: 家を買うように、毎月貯金しています。, lang: ja }
+        - { id: n9e, text: 遅れないために、早く家を出ました。, lang: ja }
+    answer:
+      correct_option_id: s7a
+    explanation:
+      vi: 使える là thể khả năng - đi với ように. 家を買う là hành động chủ ý - ために; 遅れない (không muộn) - ように.
+    display_answer: 海外でも使えるように、カードの設定を変えました。
+
+  - key: ja:exercise:n3-bank-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-kouza
+    prompt:
+      source_text: 口座を作るときは、在留カードと印鑑を持ってきてください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi mở tài khoản, hãy mang theo thẻ cư trú và con dấu.
+        - Khi mở tài khoản thì hãy mang theo thẻ cư trú và con dấu.
+        - Khi mở tài khoản, hãy mang thẻ cư trú và con dấu đến.
+        - Khi mở tài khoản, hãy mang thẻ cư trú và con dấu theo.
+        - Khi mở tài khoản, xin hãy mang theo thẻ cư trú và con dấu.
+        - Khi làm tài khoản, hãy mang theo thẻ cư trú và con dấu.
+        - Khi mở tài khoản, vui lòng mang theo thẻ cư trú và con dấu.
+        - Khi mở tài khoản ngân hàng, hãy mang theo thẻ cư trú và con dấu.
+        - Khi mở tài khoản, hãy mang theo thẻ cư trú và con dấu cá nhân.
+        - Khi mở tài khoản, hãy mang thẻ cư trú và con dấu.
+        - Khi mở tài khoản, hãy đem theo thẻ cư trú và con dấu.
+        - Khi mở tài khoản, bạn hãy mang theo thẻ cư trú và con dấu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi mở tài khoản, hãy mang theo giấy chứng nhận cư trú và con dấu.
+        feedback_vi: 在留カード là thẻ cư trú; giấy chứng nhận cư trú là 住民票.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 口座を作る - mở tài khoản; 在留カード - thẻ cư trú; 印鑑 - con dấu; 持ってくる - mang đến.
+    display_answer: Khi mở tài khoản, hãy mang theo thẻ cư trú và con dấu.
+
+  - key: ja:exercise:n3-bank-wb-anshou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-anshou-bangou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Hãy nhập mã PIN để người khác không nhìn thấy.\""
+      tokens:
+        - { id: g4, text: 入力してください }
+        - { id: g3, text: 暗証番号を }
+        - { id: g5, text: 見えるために }
+        - { id: g1, text: 他の人に見えないように }
+    answer:
+      orders:
+        - [g1, g3, g4]
+        - [g3, g1, g4]
+    explanation:
+      vi: 見えない (không bị nhìn thấy) là trạng thái - ように. 見えるために sai cả nghĩa lẫn ngữ pháp.
+    display_answer: 他の人に見えないように暗証番号を入力してください。
+
+  - key: ja:exercise:n3-bank-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hikidasu
+    prompt:
+      stem: Bạn muốn rút tiền nhưng không biết cây ATM gần nhất. Bạn hỏi người qua đường thế nào?
+      stem_lang: vi
+      options:
+        - { id: t8b, text: すみません、お金を下ろしたいんですが、この近くにATMはありますか。, lang: ja }
+        - { id: o3n, text: すみません、お金を振り込みたいんですが、この近くに口座はありますか。, lang: ja }
+        - { id: d6y, text: すみません、お金を貸したいんですが、この近くにATMはありますか。, lang: ja }
+        - { id: u1c, text: すみません、お金を預けられたいんですが、この近くに銀行はありますか。, lang: ja }
+    answer:
+      correct_option_id: t8b
+    explanation:
+      vi: お金を下ろす - rút tiền (văn nói của 引き出す). 振り込む là chuyển khoản, 貸す là cho vay; 預けられたい không đúng ngữ pháp.
+    display_answer: すみません、お金を下ろしたいんですが、この近くにATMはありますか。

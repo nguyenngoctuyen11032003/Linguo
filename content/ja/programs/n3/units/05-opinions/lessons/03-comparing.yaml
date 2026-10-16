@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-comparing
+order_index: 3
+level: n3
+title:
+  vi: So sánh thành phố và nông thôn - ～に比べて, ～ほど～ない, ～一方で
+objectives:
+  - vi: Nắm từ vựng 都会, 田舎, 物価, 環境.
+  - vi: So sánh bằng ～に比べて và ～ほど～ない.
+  - vi: Nêu hai mặt đối lập bằng ～一方で.
+estimated_minutes: 20
+skills: [vocabulary, grammar, writing]
+prerequisites: [ja:lesson:n3-guessing]
+items:
+  - item: ja:item:n3-tokai
+  - item: ja:item:n3-inaka
+  - item: ja:item:n3-bukka
+  - item: ja:item:n3-kankyou
+  - item: ja:item:n3-gram-ni-kurabete
+  - item: ja:item:n3-gram-hodo-nai
+  - item: ja:item:n3-gram-ippou-de
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được đoạn ngắn so sánh sống ở thành phố và nông thôn - giá cả, môi trường, tiện lợi - với cả mặt tốt lẫn mặt xấu.
+  - type: explain
+    text:
+      vi: 'N + に比べて - "so với": 東京は大阪に比べて物価が高い. Văn nói hay dùng より～ほうが: 大阪より東京のほうが物価が高い.'
+  - type: explain
+    text:
+      vi: 'A は B ほど ～ない - "A không ... bằng B": 田舎は都会ほど便利ではない; 今年の夏は去年ほど暑くない. ほど luôn đi với phủ định trong mẫu này.'
+  - type: explain
+    text:
+      vi: '～一方(で) - "trong khi, mặt khác": 都会は便利な一方で、ストレスも多い. Nối: V / いA thể thường, なAな, Nである. Đầu câu: 一方、... (Mặt khác, ...).'
+  - type: deep_explain
+    text:
+      vi: Khi viết bài luận so sánh (dạng hay gặp ở đề đọc N3), khung thông dụng là - nêu mặt A (～は～に比べて...), chuyển bằng 一方 (mặt khác), nêu mặt B, rồi kết bằng ý kiến (～と思う / ～べきだ). Dùng ほど～ない để nói nhẹ nhàng thay cho "kém hơn".
+  - type: example
+    target: 東京は大阪に比べて物価が高いです。
+    target_lang: ja
+    translation:
+      vi: Tokyo có vật giá cao hơn so với Osaka.
+  - type: example
+    target: 田舎は都会ほど便利ではありませんが、自然が豊かです。
+    target_lang: ja
+    translation:
+      vi: Nông thôn không tiện bằng thành phố nhưng thiên nhiên phong phú.
+  - type: example
+    target: 都会は便利な一方で、ストレスも多いです。
+    target_lang: ja
+    translation:
+      vi: Thành phố lớn thì tiện lợi, nhưng mặt khác cũng nhiều căng thẳng.
+  - type: example
+    target: 子どもを育てるには、田舎のほうが環境がいいと思います。
+    target_lang: ja
+    translation:
+      vi: Tôi nghĩ để nuôi dạy con thì môi trường ở nông thôn tốt hơn.
+  - type: common_mistake
+    wrong: 田舎は都会ほど便利です。
+    right: 田舎は都会ほど便利ではありません。
+    target_lang: ja
+    note:
+      vi: Mẫu so sánh ほど phải đi với phủ định. Muốn nói khẳng định dùng より～ほうが.
+  - type: common_mistake
+    wrong: 東京は物価が多いです。
+    right: 東京は物価が高いです。
+    target_lang: ja
+    note:
+      vi: 物価 đi với 高い / 安い, không đi với 多い / 少ない.
+  - type: summary
+    points:
+      - vi: 都会, 田舎, 物価 (高い/安い), 環境.
+      - vi: N に比べて - so với; より～ほうが trong văn nói.
+      - vi: A は B ほど～ない - A không ... bằng B.
+      - vi: ～一方で - mặt khác; なAな一方で.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-comparing-mcq-bukka
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-bukka
+    prompt:
+      stem: 「物価」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: e2w, text: "vật giá, giá cả sinh hoạt", lang: vi }
+        - { id: n6k, text: "đồ vật, hàng hoá", lang: vi }
+        - { id: u3a, text: tiền lương, lang: vi }
+        - { id: g9x, text: tiền nhà, lang: vi }
+    answer:
+      correct_option_id: e2w
+    explanation:
+      vi: 物価 - vật giá (Hán Việt). Đồ vật là 物 / 品物, lương là 給料, tiền nhà là 家賃.
+    display_answer: vật giá, giá cả sinh hoạt
+
+  - key: ja:exercise:n3-comparing-listen-hodo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-hodo-nai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 田舎は都会ほど便利ではありませんが、自然が豊かです。
+      options:
+        - { id: k5s, text: Nông thôn không tiện bằng thành phố nhưng thiên nhiên phong phú., lang: vi }
+        - { id: d1h, text: Nông thôn tiện hơn thành phố và thiên nhiên phong phú., lang: vi }
+        - { id: y7c, text: Thành phố không tiện bằng nông thôn nhưng thiên nhiên phong phú., lang: vi }
+        - { id: b4m, text: Nông thôn tiện như thành phố nhưng ít thiên nhiên., lang: vi }
+    answer:
+      correct_option_id: k5s
+    explanation:
+      vi: 田舎は都会ほど便利ではない - nông thôn (A) không tiện bằng thành phố (B); 自然が豊か - thiên nhiên phong phú.
+    display_answer: Nông thôn không tiện bằng thành phố nhưng thiên nhiên phong phú.
+
+  - key: ja:exercise:n3-comparing-mcq-ippou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ippou-de
+    prompt:
+      stem: 'Chọn dạng đúng: 都会は便利＿＿、ストレスも多いです。'
+      stem_lang: vi
+      options:
+        - { id: f4r, text: な一方で, lang: ja }
+        - { id: l8j, text: の一方で, lang: ja }
+        - { id: s2d, text: だ一方で, lang: ja }
+        - { id: o6t, text: 一方で, lang: ja }
+    answer:
+      correct_option_id: f4r
+    explanation:
+      vi: なA + な + 一方で - 便利な一方で. Danh từ dùng である一方で; không nối bằng の hay だ.
+    display_answer: な一方で
+
+  - key: ja:exercise:n3-comparing-fill-kurabete
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ni-kurabete
+    prompt:
+      template: "東京は大阪{{b1}}物価が高いです。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tokyo có vật giá cao hơn so với Osaka."
+        - "Gợi ý: に + 比べる (so sánh) dạng て."
+    answer:
+      blanks:
+        b1: [に比べて, と比べて, にくらべて, とくらべて, に比べると, と比べると]
+    known_wrong:
+      - answer: に対して
+        feedback_vi: に対して là thái độ "đối với"; so sánh dùng に比べて.
+        error_tag: kurabete_taishite
+      - answer: ほど
+        feedback_vi: ほど cần phủ định (ほど高くない). Câu khẳng định "cao hơn so với" dùng に比べて hoặc より.
+        error_tag: hodo_negative
+    explanation:
+      vi: N + に比べて / と比べて - so với N. に比べると cũng đúng.
+    display_answer: 東京は大阪に比べて物価が高いです。
+
+  - key: ja:exercise:n3-comparing-wb-kankyou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kankyou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi nghĩ để nuôi dạy con thì môi trường ở nông thôn tốt hơn.\""
+      tokens:
+        - { id: c3, text: 環境がいいと }
+        - { id: c1, text: 子どもを育てるには、 }
+        - { id: c5, text: 都会ほど }
+        - { id: c4, text: 思います }
+        - { id: c2, text: 田舎のほうが }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+    explanation:
+      vi: 田舎のほうが環境がいい - môi trường ở nông thôn tốt hơn. 都会ほど cần phủ định nên không dùng được ở đây.
+    display_answer: 子どもを育てるには、田舎のほうが環境がいいと思います。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-comparing-fill-inaka
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-inaka
+    prompt:
+      template: "お正月は{{b1}}に帰って、家族と過ごします。(quê)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [田舎, いなか, 実家]
+    known_wrong:
+      - answer: 都会
+        feedback_vi: 都会 là thành phố lớn. Về quê - 田舎に帰る.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 田舎に帰る - về quê. 実家 (nhà bố mẹ) cũng dùng được trong câu này.
+    display_answer: お正月は田舎に帰って、家族と過ごします。
+
+  - key: ja:exercise:n3-comparing-translate-hodo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-hodo-nai
+    prompt:
+      source_text: Mùa hè năm nay không nóng bằng năm ngoái. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今年の夏は去年ほど暑くないです。
+        - 今年の夏は去年ほど暑くありません。
+        - 今年の夏は去年の夏ほど暑くないです。
+        - 今年の夏は去年の夏ほど暑くありません。
+        - 今年の夏は昨年ほど暑くないです。
+        - 今年の夏は昨年ほど暑くありません。
+        - 今年の夏は去年ほどは暑くないです。
+        - 今年の夏は去年ほどは暑くありません。
+        - 今年の夏は去年ほど暑くない。
+        - 今年は去年ほど暑くないです。
+        - 今年は去年ほど暑くありません。
+        - ことしのなつはきょねんほどあつくないです。
+    known_wrong:
+      - answer: 今年の夏は去年ほど暑いです。
+        feedback_vi: ほど trong mẫu so sánh phải đi với phủ định - 暑くない.
+        error_tag: hodo_negative
+      - answer: 去年の夏は今年ほど暑くないです。
+        feedback_vi: Đảo ngược - câu này nói năm ngoái không nóng bằng năm nay.
+        error_tag: comparison_order
+    explanation:
+      vi: A は B ほど～ない - A không ... bằng B. 今年の夏 (A) は 去年 (B) ほど 暑くない.
+    display_answer: 今年の夏は去年ほど暑くないです。
+
+  - key: ja:exercise:n3-comparing-translate-ippou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ippou-de
+    prompt:
+      source_text: Thành phố lớn thì tiện lợi, nhưng mặt khác cũng nhiều căng thẳng. (dùng 一方で)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 都会は便利な一方で、ストレスも多いです。
+        - 都会は便利な一方で、ストレスも多い。
+        - 都会は便利な一方でストレスも多いです。
+        - 都会は便利な一方で、ストレスが多いです。
+        - 都会は便利な一方で、ストレスも多くあります。
+        - 都会は便利である一方で、ストレスも多いです。
+        - 都会は便利である一方で、ストレスも多い。
+        - 都会は便利な一方、ストレスも多いです。
+        - 都会は便利な一方、ストレスも多い。
+        - 都会の生活は便利な一方で、ストレスも多いです。
+        - 都市は便利な一方で、ストレスも多いです。
+        - とかいはべんりないっぽうで、ストレスもおおいです。
+    known_wrong:
+      - answer: 都会は便利の一方で、ストレスも多いです。
+        feedback_vi: なA nối với 一方で bằng な (hoặc である) - 便利な一方で.
+        error_tag: ippou_form
+      - answer: 都会は便利な一方で、ストレスも少ないです。
+        feedback_vi: Nhiều căng thẳng là 多い; 少ない là ít.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 便利な一方で - tiện lợi, nhưng mặt khác; ストレスも多い - cũng nhiều căng thẳng.
+    display_answer: 都会は便利な一方で、ストレスも多いです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-comparing-mcq-correct
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-hodo-nai
+    prompt:
+      stem: Câu nào ĐÚNG ngữ pháp và tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: z3n, text: 私の町は東京ほど物価が高くありません。, lang: ja }
+        - { id: q7f, text: 私の町は東京ほど物価が高いです。, lang: ja }
+        - { id: w5b, text: 私の町は東京に比べて物価が多いです。, lang: ja }
+        - { id: h1y, text: 私の町は東京の一方で物価が安いです。, lang: ja }
+    answer:
+      correct_option_id: z3n
+    explanation:
+      vi: ほど + phủ định - đúng. ほど + khẳng định sai; 物価 đi với 高い / 安い chứ không với 多い; 東京の一方で sai cách nối.
+    display_answer: 私の町は東京ほど物価が高くありません。
+
+  - key: ja:exercise:n3-comparing-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-ni-kurabete
+    prompt:
+      source_text: 10年前に比べて、この町の人口はずいぶん減りました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - So với 10 năm trước, dân số thị trấn này đã giảm đi nhiều.
+        - So với 10 năm trước, dân số thị trấn này đã giảm nhiều.
+        - So với 10 năm trước, dân số của thị trấn này đã giảm đi nhiều.
+        - So với 10 năm trước, dân số của thị trấn này đã giảm nhiều.
+        - So với 10 năm trước, dân số thành phố này đã giảm đi nhiều.
+        - So với 10 năm trước, dân số thành phố này đã giảm nhiều.
+        - So với 10 năm trước, dân số thị trấn này đã giảm đáng kể.
+        - So với 10 năm trước, dân số khu này đã giảm đi nhiều.
+        - So với mười năm trước, dân số thị trấn này đã giảm đi nhiều.
+        - So với 10 năm trước, dân số ở thị trấn này đã giảm đi nhiều.
+        - So với 10 năm trước, dân số ở thị trấn này đã giảm nhiều.
+        - Dân số thị trấn này đã giảm đi nhiều so với 10 năm trước.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: So với 10 năm trước, dân số thị trấn này đã tăng lên nhiều.
+        feedback_vi: 減る là giảm; tăng là 増える.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 10年前に比べて - so với 10 năm trước; 人口 - dân số; ずいぶん減りました - đã giảm đi nhiều.
+    display_answer: So với 10 năm trước, dân số thị trấn này đã giảm đi nhiều.
+
+  - key: ja:exercise:n3-comparing-wb-tokai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-tokai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Thành phố lớn có nhiều việc làm, nhưng mặt khác tiền nhà đắt.\""
+      tokens:
+        - { id: k4, text: 家賃が高いです }
+        - { id: k2, text: 仕事が多い }
+        - { id: k5, text: 家賃が安いです }
+        - { id: k1, text: 都会は }
+        - { id: k3, text: 一方で、 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: いA thể thường + 一方で - 仕事が多い一方で. Mặt đối lập là tiền nhà đắt (高い), không phải rẻ.
+    display_answer: 都会は仕事が多い一方で、家賃が高いです。
+
+  - key: ja:exercise:n3-comparing-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-inaka
+    prompt:
+      stem: Bạn bè Nhật hỏi bạn thích sống ở đâu hơn. Bạn thích nông thôn vì không khí trong lành. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: v6m, text: 都会より田舎のほうが好きです。空気がきれいだからです。, lang: ja }
+        - { id: r3p, text: 都会ほど田舎のほうが好きです。空気がきれいだからです。, lang: ja }
+        - { id: i8d, text: 田舎は都会に比べて好きではありません。空気がきれいだからです。, lang: ja }
+        - { id: m2c, text: 田舎より都会のほうが好きです。空気がきれいだからです。, lang: ja }
+    answer:
+      correct_option_id: v6m
+    explanation:
+      vi: A より B のほうが好き - thích B hơn A. ほど không đi với のほうが; phương án 3 và 4 ngược ý.
+    display_answer: 都会より田舎のほうが好きです。空気がきれいだからです。

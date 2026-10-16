@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-hospital
+order_index: 3
+level: n3
+title:
+  vi: Đi khám bệnh - ～ように言われる
+objectives:
+  - vi: Nắm từ vựng khám bệnh - 保険証, 症状, 診察, 処方箋.
+  - vi: Mô tả triệu chứng với bác sĩ.
+  - vi: Thuật lại lời dặn của bác sĩ bằng ～ように言われました.
+estimated_minutes: 18
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ja:lesson:n3-bank]
+items:
+  - item: ja:item:n3-hokenshou
+  - item: ja:item:n3-shoujou
+  - item: ja:item:n3-shinsatsu
+  - item: ja:item:n3-shohousen
+  - item: ja:item:n3-gram-you-ni-iu
+  - item: ja:item:n3-kinyuu
+    role: reuse
+  - item: ja:item:n3-gram-passive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự đi khám ở phòng khám Nhật - đưa thẻ bảo hiểm, nói triệu chứng, lấy thuốc theo đơn và kể lại cho người khác bác sĩ đã dặn gì.
+  - type: explain
+    text:
+      vi: 'Quy trình: 受付 (quầy tiếp đón) - đưa 保険証 (thẻ bảo hiểm), điền 問診票 (phiếu hỏi bệnh) → 診察 (khám) → nhận 処方箋 (đơn thuốc) → mang đến 薬局 (hiệu thuốc) lấy thuốc.'
+  - type: explain
+    text:
+      vi: 'Nói triệu chứng: 熱があります (sốt), 喉が痛いです (đau họng), 咳が出ます (ho), 吐き気がします (buồn nôn), 3日前から (từ 3 ngày trước). Bác sĩ hỏi: どんな症状がありますか.'
+  - type: explain
+    text:
+      vi: 'Thuật lại lời dặn: V(từ điển / ない) + ように言う. Bác sĩ dặn bạn → bị động: 医者に薬を飲むように言われました; お酒を飲まないように言われました.'
+  - type: deep_explain
+    text:
+      vi: 'Lời nói gốc 「薬を飲んでください」 khi thuật lại gián tiếp sẽ bỏ てください và thêm ように: 薬を飲むように言われた. Ngoài 言う, khuôn này dùng với 頼む (nhờ), 注意する (nhắc nhở), 伝える (nhắn) - 田中さんに電話するように伝えてください.'
+  - type: example
+    target: 受付で保険証を出してください。
+    target_lang: ja
+    translation:
+      vi: Hãy đưa thẻ bảo hiểm ở quầy tiếp đón.
+  - type: example
+    target: 3日前から熱があって、喉も痛いです。
+    target_lang: ja
+    translation:
+      vi: Tôi sốt từ 3 ngày trước, họng cũng đau.
+  - type: example
+    target: 医者に一日3回薬を飲むように言われました。
+    target_lang: ja
+    translation:
+      vi: Tôi được bác sĩ dặn uống thuốc ngày 3 lần.
+  - type: example
+    target: この処方箋を持って、薬局で薬をもらってください。
+    target_lang: ja
+    translation:
+      vi: Hãy cầm đơn thuốc này ra hiệu thuốc để lấy thuốc.
+  - type: common_mistake
+    wrong: 医者に薬を飲んでくださいように言われました。
+    right: 医者に薬を飲むように言われました。
+    target_lang: ja
+    note:
+      vi: Thuật lại gián tiếp thì bỏ てください, dùng thể từ điển + ように.
+  - type: common_mistake
+    wrong: 医者がお酒を飲まないように言われました。
+    right: 医者にお酒を飲まないように言われました。
+    target_lang: ja
+    note:
+      vi: Câu bị động - người nói lời dặn đánh dấu bằng に, không phải が.
+  - type: summary
+    points:
+      - vi: 保険証, 症状, 診察, 処方箋; 受付, 薬局.
+      - vi: 熱がある, 喉が痛い, 咳が出る - mô tả triệu chứng.
+      - vi: V(từ điển / ない) + ように言われました - được dặn...
+      - vi: Lời gốc ～てください → thuật lại ～ように.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-hospital-mcq-shohousen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-shohousen
+    prompt:
+      stem: 「処方箋」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: j4w, text: đơn thuốc, lang: vi }
+        - { id: c7b, text: thẻ bảo hiểm, lang: vi }
+        - { id: x2m, text: phiếu hỏi bệnh, lang: vi }
+        - { id: f9d, text: giấy nhập viện, lang: vi }
+    answer:
+      correct_option_id: j4w
+    explanation:
+      vi: 処方箋 - đơn thuốc. Thẻ bảo hiểm là 保険証, phiếu hỏi bệnh là 問診票, nhập viện là 入院.
+    display_answer: đơn thuốc
+
+  - key: ja:exercise:n3-hospital-listen-youniiu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-iu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 医者にお酒を飲まないように言われました。
+      options:
+        - { id: s3k, text: Tôi bị bác sĩ dặn không được uống rượu., lang: vi }
+        - { id: a8v, text: Tôi đã dặn bác sĩ đừng uống rượu., lang: vi }
+        - { id: h5r, text: Bác sĩ nói tôi nên uống một chút rượu., lang: vi }
+        - { id: y1z, text: Bác sĩ không nói gì về rượu cả., lang: vi }
+    answer:
+      correct_option_id: s3k
+    explanation:
+      vi: 医者に～言われました - bị/được bác sĩ nói (bác sĩ là người nói); 飲まないように - (dặn) không uống.
+    display_answer: Tôi bị bác sĩ dặn không được uống rượu.
+
+  - key: ja:exercise:n3-hospital-mcq-shoujou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-shoujou
+    prompt:
+      stem: 'Bác sĩ hỏi: どんな症状がありますか。 Câu trả lời nào phù hợp?'
+      stem_lang: vi
+      options:
+        - { id: o6p, text: 昨日から熱があって、咳も出ます。, lang: ja }
+        - { id: e3t, text: 保険証を持ってきました。, lang: ja }
+        - { id: l9g, text: 薬局はあちらです。, lang: ja }
+        - { id: b4j, text: 診察は10時からです。, lang: ja }
+    answer:
+      correct_option_id: o6p
+    explanation:
+      vi: 症状 - triệu chứng. Trả lời bằng mô tả triệu chứng - 熱がある (sốt), 咳が出る (ho).
+    display_answer: 昨日から熱があって、咳も出ます。
+
+  - key: ja:exercise:n3-hospital-fill-hokenshou
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-hokenshou
+    prompt:
+      template: "受付で{{b1}}を出してください。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Hãy đưa thẻ bảo hiểm ở quầy tiếp đón."
+        - "Gợi ý: 保険 (bảo hiểm) + 証 (giấy chứng)."
+    answer:
+      blanks:
+        b1: [保険証, ほけんしょう]
+    known_wrong:
+      - answer: 処方箋
+        feedback_vi: 処方箋 là đơn thuốc, nhận sau khi khám. Ở quầy tiếp đón đưa 保険証.
+        error_tag: vocab_meaning
+      - answer: ほけんしょ
+        feedback_vi: しょう là âm dài - ほけんしょう.
+        error_tag: long_vowel
+    explanation:
+      vi: 保険証 - thẻ bảo hiểm y tế, đưa ở quầy tiếp đón (受付) mỗi lần khám.
+    display_answer: 受付で保険証を出してください。
+
+  - key: ja:exercise:n3-hospital-wb-shohousen
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shohousen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Hãy cầm đơn thuốc này ra hiệu thuốc để lấy thuốc.\""
+      tokens:
+        - { id: d3, text: 薬局で }
+        - { id: d1, text: この処方箋を持って、 }
+        - { id: d5, text: 受付で }
+        - { id: d4, text: 薬をもらってください }
+    answer:
+      orders:
+        - [d1, d3, d4]
+    explanation:
+      vi: Đơn thuốc mang đến 薬局 (hiệu thuốc) để lấy thuốc. 受付 là quầy tiếp đón của phòng khám.
+    display_answer: この処方箋を持って、薬局で薬をもらってください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-hospital-fill-youni
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-iu
+    prompt:
+      template: "医者に一日3回薬を{{b1}}ように言われました。(飲む)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [飲む, のむ]
+    known_wrong:
+      - answer: 飲んで
+        feedback_vi: Trước ように dùng thể từ điển - 飲むように.
+        error_tag: you_ni_form
+      - answer: 飲みます
+        feedback_vi: Trước ように dùng thể thường (từ điển), không dùng thể ます.
+        error_tag: you_ni_form
+    explanation:
+      vi: V thể từ điển + ように言われる - được dặn làm gì. Lời gốc là 「一日3回薬を飲んでください」.
+    display_answer: 医者に一日3回薬を飲むように言われました。
+
+  - key: ja:exercise:n3-hospital-translate-shoujou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shoujou
+    prompt:
+      source_text: Tôi sốt từ 3 ngày trước, họng cũng đau. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 3日前から熱があって、喉も痛いです。
+        - 3日前から熱があって喉も痛いです。
+        - 三日前から熱があって、喉も痛いです。
+        - 三日前から熱があって喉も痛いです。
+        - 3日前から熱があり、喉も痛いです。
+        - 三日前から熱があり、喉も痛いです。
+        - 3日前から熱があって、のども痛いです。
+        - 三日前から熱があって、のども痛いです。
+        - 3日前から熱があります。喉も痛いです。
+        - 三日前から熱があります。喉も痛いです。
+        - 3日前から熱が出て、喉も痛いです。
+        - みっかまえからねつがあって、のどもいたいです。
+    known_wrong:
+      - answer: 3日前に熱があって、喉も痛いです。
+        feedback_vi: Nghĩa "từ 3 ngày trước (đến giờ)" dùng から; 前に chỉ một thời điểm.
+        error_tag: kara_ni
+      - answer: 3日前から熱がして、喉も痛いです。
+        feedback_vi: Sốt là 熱がある (hoặc 熱が出る), không dùng 熱がする.
+        error_tag: collocation
+    explanation:
+      vi: 3日前から - từ 3 ngày trước; 熱がある - sốt; 喉も痛い - họng cũng đau. Nối hai câu bằng thể て.
+    display_answer: 3日前から熱があって、喉も痛いです。
+
+  - key: ja:exercise:n3-hospital-translate-youni
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-iu
+    prompt:
+      source_text: Tôi bị bác sĩ dặn không được uống rượu. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 医者にお酒を飲まないように言われました。
+        - 医者に酒を飲まないように言われました。
+        - お医者さんにお酒を飲まないように言われました。
+        - 医者からお酒を飲まないように言われました。
+        - お医者さんからお酒を飲まないように言われました。
+        - 医者にお酒を飲まないように注意されました。
+        - お医者さんにお酒を飲まないように注意されました。
+        - 医師にお酒を飲まないように言われました。
+        - 私は医者にお酒を飲まないように言われました。
+        - 医者にお酒は飲まないように言われました。
+        - お医者さんにお酒は飲まないように言われました。
+        - いしゃにおさけをのまないようにいわれました。
+    known_wrong:
+      - answer: 医者がお酒を飲まないように言われました。
+        feedback_vi: Câu bị động - người dặn dùng に (hoặc から), không dùng が.
+        error_tag: passive_agent
+      - answer: 医者にお酒を飲まないように言いました。
+        feedback_vi: 言いました là "tôi đã nói (với bác sĩ)". Bị dặn - 言われました.
+        error_tag: passive_form
+      - answer: 医者にお酒を飲まないでくださいように言われました。
+        feedback_vi: Thuật lại gián tiếp bỏ てください - 飲まないように.
+        error_tag: you_ni_form
+    explanation:
+      vi: 医者に - bởi bác sĩ; 飲まないように - (dặn) không uống; 言われました - bị nói, được dặn.
+    display_answer: 医者にお酒を飲まないように言われました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-hospital-mcq-report
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-iu
+    prompt:
+      stem: 'Bác sĩ nói với bạn: 「一週間、運動はしないでください。」 Về nhà bạn kể lại cho bạn cùng phòng. Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: r2c, text: 一週間、運動しないように言われたよ。, lang: ja }
+        - { id: m6u, text: 一週間、運動するように言われたよ。, lang: ja }
+        - { id: z4f, text: 一週間、運動しないように言ったよ。, lang: ja }
+        - { id: g8h, text: 一週間、運動しないでくださいように言われたよ。, lang: ja }
+    answer:
+      correct_option_id: r2c
+    explanation:
+      vi: しないでください → しないように; bác sĩ nói với mình → 言われた. 言った là mình nói; するように ngược nghĩa.
+    display_answer: 一週間、運動しないように言われたよ。
+
+  - key: ja:exercise:n3-hospital-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-shinsatsu
+    prompt:
+      source_text: 診察の前に、この問診票に記入してください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước khi khám, hãy điền vào phiếu hỏi bệnh này.
+        - Trước khi khám bệnh, hãy điền vào phiếu hỏi bệnh này.
+        - Trước khi khám, hãy điền phiếu hỏi bệnh này.
+        - Trước khi khám, xin hãy điền vào phiếu hỏi bệnh này.
+        - Trước khi khám, vui lòng điền vào phiếu hỏi bệnh này.
+        - Trước khi khám thì hãy điền vào phiếu hỏi bệnh này.
+        - Trước khi được khám, hãy điền vào phiếu hỏi bệnh này.
+        - Trước khi khám, hãy điền vào phiếu khai bệnh này.
+        - Trước khi khám, hãy điền vào tờ phiếu hỏi bệnh này.
+        - Trước khi khám, hãy ghi vào phiếu hỏi bệnh này.
+        - Trước khi khám, bạn hãy điền vào phiếu hỏi bệnh này.
+        - Hãy điền vào phiếu hỏi bệnh này trước khi khám.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi khám, hãy điền vào phiếu hỏi bệnh này.
+        feedback_vi: 前に là "trước khi"; sau khi là 後で.
+        error_tag: mae_ato
+    explanation:
+      vi: 診察の前に - trước khi khám; 問診票 - phiếu hỏi bệnh; 記入してください - hãy điền.
+    display_answer: Trước khi khám, hãy điền vào phiếu hỏi bệnh này.
+
+  - key: ja:exercise:n3-hospital-wb-tanomu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-iu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi đã nhờ bạn đưa thẻ bảo hiểm đến bệnh viện.\""
+      tokens:
+        - { id: h4, text: 頼みました }
+        - { id: h2, text: 保険証を病院に }
+        - { id: h5, text: 頼まれました }
+        - { id: h1, text: 友だちに }
+        - { id: h3, text: 持ってくるように }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: Mình nhờ bạn - 友だちに～ように頼みました (chủ động). 頼まれました là "tôi bị/được nhờ", ngược hướng.
+    display_answer: 友だちに保険証を病院に持ってくるように頼みました。
+
+  - key: ja:exercise:n3-hospital-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hokenshou
+    prompt:
+      stem: Bạn quên mang thẻ bảo hiểm khi đi khám. Nhân viên quầy nói gì?
+      stem_lang: vi
+      options:
+        - { id: k5x, text: 保険証がない場合は、今日は全額お支払いいただきます。, lang: ja }
+        - { id: v1d, text: 保険証がない場合は、薬が無料になります。, lang: ja }
+        - { id: n7q, text: 保険証がない場合は、処方箋を記入してください。, lang: ja }
+        - { id: i3s, text: 保険証がない場合は、診察が早くなります。, lang: ja }
+    answer:
+      correct_option_id: k5x
+    explanation:
+      vi: Không có 保険証 thì hôm đó phải trả toàn bộ (全額) chi phí, sau mang thẻ đến sẽ được hoàn lại phần chênh. Các phương án kia không hợp lý.
+    display_answer: 保険証がない場合は、今日は全額お支払いいただきます。
