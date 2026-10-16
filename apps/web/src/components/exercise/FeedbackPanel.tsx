@@ -118,7 +118,7 @@ function FeedbackCard({
 }: {
   result: SubmitResult;
   reduceMotion: boolean;
-  headingRef: RefObject<HTMLHeadingElement>;
+  headingRef: RefObject<HTMLHeadingElement | null>;
   answerLang?: AnswerLang;
 }) {
   const ui = VERDICT_UI[result.verdict];

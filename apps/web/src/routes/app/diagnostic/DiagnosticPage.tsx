@@ -113,7 +113,7 @@ interface QuestionProps {
   nearEnd: boolean;
   onAnswer: (choice: string | null) => void;
   onOpenSkip: () => void;
-  skipTriggerRef: RefObject<HTMLButtonElement>;
+  skipTriggerRef: RefObject<HTMLButtonElement | null>;
 }
 
 /** One question per screen; remounted per item so the selection resets and the heading takes focus. */

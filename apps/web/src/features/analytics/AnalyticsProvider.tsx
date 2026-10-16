@@ -10,7 +10,7 @@ import { configureAnalytics, flushAnalytics, setAnalyticsRoute } from './client'
  * nothing for an opted-out user), then disabled if `analytics_opt_out` turns out to be set. Flushes when the page
  * is hidden or unloaded.
  */
-export function AnalyticsProvider({ children }: { children: ReactNode }): JSX.Element {
+export function AnalyticsProvider({ children }: { children: ReactNode }): ReactNode {
   const { user } = useAuth();
   const userId = user?.id ?? null;
   const client = getSupabase();
