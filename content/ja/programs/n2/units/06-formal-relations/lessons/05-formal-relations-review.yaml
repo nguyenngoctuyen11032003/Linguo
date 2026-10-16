@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-formal-relations-review
+order_index: 5
+level: n2
+title:
+  vi: Ôn tập - bản tin về dự án cải tạo khu trước nhà ga
+objectives:
+  - vi: Đọc hiểu một bản tin địa phương dùng において, をめぐって, に基づいて, 末に.
+  - vi: Chọn đúng あげく / 末に / 上で và に応じて / に基づいて theo ngữ cảnh.
+  - vi: Viết lại tin ngắn bằng văn phong báo chí.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n2-u6-gachi-gimi]
+items:
+  - item: ja:item:n2-u6-saikaihatsu
+  - item: ja:item:n2-u6-goui
+  - item: ja:item:n2-u6-miokuru
+  - item: ja:item:n2-u6-gram-wo-megutte
+    role: reuse
+  - item: ja:item:n2-u6-gram-ni-oite
+    role: reuse
+  - item: ja:item:n2-u6-gram-ni-motozuite
+    role: reuse
+  - item: ja:item:n2-u6-gram-sue-ni
+    role: reuse
+  - item: ja:item:n2-u6-gram-ageku
+    role: reuse
+  - item: ja:item:n2-u6-gram-ni-oujite
+    role: reuse
+  - item: ja:item:n2-u6-gram-gachi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Bài ôn tập này là một bản tin địa phương: thành phố muốn cải tạo khu trước nhà ga, cư dân tranh cãi, và sau nhiều cuộc họp hai bên đi đến thoả thuận. Bạn sẽ thấy cả unit gói trong vài câu tin tức.'
+  - type: explain
+    text:
+      vi: 'Tin tức Nhật ưa câu dài nối bằng các mẫu trang trọng: において (tại), をめぐって (xoay quanh), に基づいて (dựa trên), 末に (sau... cuối cùng). Đọc theo từng khối "N + mẫu" sẽ nhanh hơn đọc từng chữ.'
+  - type: explain
+    text:
+      vi: 'Ba từ mới của tin này: 再開発 (cải tạo, tái phát triển khu vực), 合意 (thoả thuận giữa các bên), 見送る (gác lại, hoãn - nghĩa trong tin tức, không phải "tiễn").'
+  - type: deep_explain
+    text:
+      vi: 'Báo chí thường bỏ に và dùng dạng liên dụng: 話し合いの末, 調査に基づき, 計画をめぐり. Đây không phải lỗi mà là văn viết gọn - khi tự viết email hay bài luận N2, dùng đầy đủ 末に, に基づいて, をめぐって vẫn an toàn hơn.'
+  - type: example
+    target: 駅前の再開発をめぐり、市と商店街の意見が対立していた。
+    target_lang: ja
+    translation:
+      vi: Xoay quanh dự án cải tạo khu trước nhà ga, thành phố và khu phố buôn bán từng có ý kiến đối lập.
+    note:
+      vi: をめぐり là dạng văn viết của をめぐって.
+  - type: example
+    target: 市は住民アンケートの結果に基づき、計画の一部を見直した。
+    target_lang: ja
+    translation:
+      vi: Thành phố đã xem xét lại một phần kế hoạch dựa trên kết quả khảo sát cư dân.
+  - type: example
+    target: 半年に及ぶ話し合いの末、両者はようやく合意に達した。
+    target_lang: ja
+    translation:
+      vi: Sau các cuộc thương lượng kéo dài nửa năm, cuối cùng hai bên đã đạt được thoả thuận.
+  - type: example
+    target: 高層ビルの建設は、反対意見が多かったため見送られた。
+    target_lang: ja
+    translation:
+      vi: Việc xây toà nhà cao tầng đã bị gác lại vì có nhiều ý kiến phản đối.
+  - type: common_mistake
+    wrong: 両者は合意を達した。
+    right: 両者は合意に達した。
+    target_lang: ja
+    note:
+      vi: 達する (đạt tới) đi với に - 合意に達する. Tiếng Việt "đạt thoả thuận" không có giới từ nên người Việt hay dùng nhầm を.
+  - type: common_mistake
+    wrong: 計画は見送ったため、工事は始まらない。
+    right: 計画は見送られたため、工事は始まらない。
+    target_lang: ja
+    note:
+      vi: Kế hoạch là thứ bị gác lại nên dùng bị động 見送られる. 見送る dạng chủ động cần người làm (市は計画を見送った).
+  - type: summary
+    points:
+      - vi: をめぐり / に基づき / の末 - dạng gọn của báo chí.
+      - vi: 合意に達する - đạt được thoả thuận (に, không phải を).
+      - vi: 見送る - gác lại (kế hoạch); bị động 見送られる.
+      - vi: 再開発 - cải tạo, tái phát triển khu vực.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u6-review-listen-goui
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-goui
+    prompt:
+      audio_asset_id: null
+      fallback_text: 長い交渉の末、労働組合と会社は賃上げで合意した。
+      options:
+        - { id: a5b, text: "Sau thời gian dài đàm phán, công đoàn và công ty đã thoả thuận tăng lương.", lang: vi }
+        - { id: c1d, text: Công đoàn và công ty đàm phán lâu nhưng vẫn chưa thoả thuận được., lang: vi }
+        - { id: e7f, text: Công ty đã quyết định giảm lương mà không đàm phán với công đoàn., lang: vi }
+        - { id: g3h, text: Công đoàn đã hoãn cuộc đàm phán về tăng lương., lang: vi }
+    answer:
+      correct_option_id: a5b
+    explanation:
+      vi: 長い交渉の末 - sau thời gian dài đàm phán; 賃上げで合意した - đã thoả thuận về việc tăng lương. 末 cho biết có kết quả cuối cùng, không phải "vẫn chưa".
+    display_answer: Sau thời gian dài đàm phán, công đoàn và công ty đã thoả thuận tăng lương.
+
+  - key: ja:exercise:n2-u6-review-mcq-miokuru
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-miokuru
+    prompt:
+      stem: 'Trong tin tức 新しい図書館の建設は、予算不足のため来年度に見送られた。, 見送られた nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: i8j, text: bị gác lại (sang năm tài khoá sau), lang: vi }
+        - { id: k4l, text: được tiễn đưa, lang: vi }
+        - { id: m9n, text: bị huỷ bỏ hoàn toàn, lang: vi }
+        - { id: o5p, text: được hoàn thành sớm, lang: vi }
+    answer:
+      correct_option_id: i8j
+    explanation:
+      vi: Trong tin tức, 見送る là "chưa làm, để sau" - ở đây gác sang năm tài khoá sau vì thiếu ngân sách. Huỷ hẳn là 中止; "tiễn" là nghĩa đời thường (駅で友達を見送る).
+    display_answer: bị gác lại (sang năm tài khoá sau)
+
+  - key: ja:exercise:n2-u6-review-fill-mix
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-oite
+    prompt:
+      template: "説明会は市役所{{b1}}行われ、再開発{{b2}}住民の質問が相次いだ。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Buổi giới thiệu được tổ chức tại toà thị chính, và cư dân liên tục đặt câu hỏi về dự án cải tạo."
+        - "Gợi ý: chỗ 1 là bản trang trọng của で; chỗ 2 là dạng \"về...\" đứng trước danh từ 住民の質問."
+    answer:
+      blanks:
+        b1: [において]
+        b2: [に関する, についての, をめぐる]
+    known_wrong:
+      - answer: における
+        feedback_vi: における chỉ đứng trước danh từ; trước động từ 行われ dùng において.
+        error_tag: noun_modifier_form
+      - answer: に関して
+        feedback_vi: Ngay trước danh từ 住民の質問 cần dạng nối danh từ に関する.
+        error_tag: noun_modifier_form
+    explanation:
+      vi: 市役所において行われる - được tổ chức tại toà thị chính; 再開発に関する質問 - câu hỏi về dự án cải tạo. をめぐる cũng đúng vì dự án đang gây tranh cãi.
+    display_answer: 説明会は市役所において行われ、再開発に関する住民の質問が相次いだ。
+
+  - key: ja:exercise:n2-u6-review-wb-saikaihatsu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-saikaihatsu
+    prompt:
+      instruction: "Sắp xếp thành tiêu đề tin: \"Thoả thuận về dự án cải tạo khu trước ga, sau nửa năm thương lượng\""
+      tokens:
+        - { id: r3, text: 再開発で合意 }
+        - { id: r1, text: 半年の話し合いの末 }
+        - { id: r4, text: 半年の話し合いのあげく }
+        - { id: r2, text: 駅前 }
+    answer:
+      orders:
+        - [r1, r2, r3]
+    explanation:
+      vi: Tiêu đề báo hay rút gọn - N の末 + nội dung chính. Kết quả là thoả thuận (tích cực, trung tính) nên dùng 末, không dùng あげく vốn mang giọng than phiền.
+    display_answer: 半年の話し合いの末、駅前再開発で合意
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u6-review-fill-choose
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ageku
+    prompt:
+      template: "二時間も並んだ{{b1}}、チケットは目の前で売り切れた。(rốt cuộc lại, giọng than phiền)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [あげく]
+    known_wrong:
+      - answer: 末に
+        feedback_vi: Kết cục đáng bực (xếp hàng mãi mà hết vé) hợp với あげく; 末に kể kết quả một cách trung tính.
+        error_tag: ageku_sue
+      - answer: 上で
+        feedback_vi: 上で là "làm xong A rồi mới B" theo dự tính; ở đây là kết cục ngoài ý muốn.
+        error_tag: ue_ageku
+    explanation:
+      vi: V-た + あげく - sau bao nhiêu..., rốt cuộc lại... 目の前で売り切れた - hết vé ngay trước mắt, đúng kiểu kết cục khiến người nói bực mình.
+    display_answer: 二時間も並んだあげく、チケットは目の前で売り切れた。
+
+  - key: ja:exercise:n2-u6-review-write-goui
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-goui
+    prompt:
+      source_text: Sau nhiều lần thảo luận, cuối cùng hai nước đã đạt được thoả thuận. (dùng 末に và 合意に達する)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 何度も話し合った末に、両国はようやく合意に達した。
+        - 何度も話し合った末に、両国は合意に達した。
+        - 何度も話し合った末、両国はようやく合意に達した。
+        - 話し合いを重ねた末に、両国はようやく合意に達した。
+        - 話し合いを重ねた末、両国は合意に達した。
+        - 両国は何度も話し合った末に、ようやく合意に達した。
+        - 何度も協議した末に、両国はようやく合意に達した。
+        - 何度も話し合った末に、二つの国はようやく合意に達した。
+        - 何度も話し合った末に、両国はようやく合意に達しました。
+        - なんどもはなしあったすえに、りょうこくはようやくごういにたっした。
+    known_wrong:
+      - answer: 何度も話し合った末に、両国はようやく合意を達した。
+        feedback_vi: 達する đi với に - 合意に達する.
+        error_tag: particle
+      - answer: 何度も話し合う末に、両国はようやく合意に達した。
+        feedback_vi: 末に gắn vào thể た - 話し合った末に.
+        error_tag: sue_form
+    explanation:
+      vi: V-た + 末に - sau quá trình dài, cuối cùng...; 合意に達する - đạt được thoả thuận; ようやく - mãi mới, cuối cùng cũng. 両国 - hai nước.
+    display_answer: 何度も話し合った末に、両国はようやく合意に達した。
+
+  - key: ja:exercise:n2-u6-review-write-oujite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-oujite
+    prompt:
+      source_text: Tiền hỗ trợ sẽ được chi tuỳ theo số thành viên trong gia đình. (dùng に応じて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 支援金は、家族の人数に応じて支払われる。
+        - 支援金は、家族の人数に応じて支払われます。
+        - 支援金は、家族の人数に応じて支給される。
+        - 支援金は、家族の人数に応じて支給されます。
+        - 補助金は、家族の人数に応じて支払われる。
+        - 補助金は、家族の人数に応じて支給されます。
+        - 家族の人数に応じて、支援金が支払われる。
+        - 家族の人数に応じて、支援金が支給されます。
+        - しえんきんは、かぞくのにんずうにおうじてしはらわれる。
+    known_wrong:
+      - answer: 支援金は、家族の人数に応じた支払われる。
+        feedback_vi: Trước động từ 支払われる dùng に応じて; に応じた chỉ đứng trước danh từ.
+        error_tag: noun_modifier_form
+      - answer: 支援金は、家族の人数に基づいて支払われる。
+        feedback_vi: Số tiền thay đổi theo từng mức số người - dùng に応じて; に基づいて là căn cứ cố định.
+        error_tag: oujite_motozuite
+    explanation:
+      vi: N に応じて + V - tuỳ theo N mà... 家族の人数 - số người trong gia đình; 支払われる / 支給される - được chi trả (bị động, văn thông báo).
+    display_answer: 支援金は、家族の人数に応じて支払われる。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u6-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u6-gram-wo-megutte
+    prompt:
+      source_text: 公園の木を切るかどうかをめぐって、住民の意見は二つに分かれている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xoay quanh việc có chặt cây trong công viên hay không, ý kiến của cư dân đang chia làm hai.
+        - Xoay quanh chuyện có chặt cây ở công viên hay không, ý kiến người dân đang chia thành hai phe.
+        - Về việc có chặt cây trong công viên hay không, ý kiến cư dân đang chia làm hai phe.
+        - Xung quanh việc có nên chặt cây trong công viên không, ý kiến của người dân chia làm hai.
+        - Xoay quanh việc có chặt cây công viên hay không, cư dân đang chia thành hai luồng ý kiến.
+        - Quanh chuyện có chặt cây trong công viên hay không, ý kiến cư dân đang bị chia làm hai.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cư dân đã đồng ý chặt cây trong công viên.
+        feedback_vi: 意見は二つに分かれている là "ý kiến chia làm hai", chưa có ai đồng ý cả.
+        error_tag: meaning
+    explanation:
+      vi: ～かどうかをめぐって - xoay quanh việc có... hay không; 意見が二つに分かれる - ý kiến chia làm hai. をめぐって báo hiệu có tranh cãi, nên "chia phe" là dịch tự nhiên.
+    display_answer: Xoay quanh việc có chặt cây trong công viên hay không, ý kiến của cư dân đang chia làm hai.
+
+  - key: ja:exercise:n2-u6-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-motozuite
+    prompt:
+      stem: Bạn viết câu mở đầu cho báo cáo gửi sếp, nói rằng đề xuất này được lập dựa trên kết quả khảo sát khách hàng. Câu nào đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: q2r, text: 本提案は、顧客アンケートの結果に基づいて作成いたしました。, lang: ja }
+        - { id: s7t, text: 本提案は、顧客アンケートの結果をめぐって作成いたしました。, lang: ja }
+        - { id: u3v, text: 本提案は、顧客アンケートの結果に応じた作成いたしました。, lang: ja }
+        - { id: w8x, text: 本提案は、顧客アンケートの結果のあげく作成いたしました。, lang: ja }
+    answer:
+      correct_option_id: q2r
+    explanation:
+      vi: Kết quả khảo sát là căn cứ khách quan - に基づいて + 作成いたしました (khiêm nhường). をめぐって cần tranh cãi; に応じた phải đứng trước danh từ; のあげく mang giọng than phiền.
+    display_answer: 本提案は、顧客アンケートの結果に基づいて作成いたしました。
+
+  - key: ja:exercise:n2-u6-review-write-miokuru
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u6-miokuru
+    prompt:
+      source_text: Vì nhiều ý kiến phản đối của cư dân, việc xây sân vận động đã bị gác lại. (dùng bị động của 見送る)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 住民の反対意見が多かったため、スタジアムの建設は見送られた。
+        - 住民の反対意見が多かったので、スタジアムの建設は見送られた。
+        - 住民の反対意見が多かったため、スタジアムの建設は見送られました。
+        - 住民の反対が多かったため、スタジアムの建設は見送られた。
+        - 住民からの反対意見が多かったため、スタジアムの建設は見送られた。
+        - 住民の反対意見が多く、スタジアムの建設は見送られた。
+        - 住民の反対意見が多かったため、競技場の建設は見送られた。
+        - スタジアムの建設は、住民の反対意見が多かったため見送られた。
+        - じゅうみんのはんたいいけんがおおかったため、スタジアムのけんせつはみおくられた。
+    known_wrong:
+      - answer: 住民の反対意見が多かったため、スタジアムの建設は見送った。
+        feedback_vi: Việc xây dựng là thứ bị gác lại - dùng bị động 見送られた.
+        error_tag: passive_needed
+      - answer: 住民の反対意見が多かったため、スタジアムの建設は中止された。
+        feedback_vi: 中止 là huỷ hẳn; "gác lại, để sau" là 見送られた.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～ため (văn viết của から/ので) - vì; 建設は見送られた - việc xây dựng bị gác lại. Bị động là cách tin tức hay dùng khi không cần nói rõ ai quyết định.
+    display_answer: 住民の反対意見が多かったため、スタジアムの建設は見送られた。
+
+  - key: ja:exercise:n2-u6-review-mcq-gachi
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-gachi
+    prompt:
+      stem: Trong bản tin, phóng viên muốn nói "Những cuộc họp như vậy dễ chỉ có người cao tuổi tham gia." Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: y4z, text: こうした説明会は、参加者が高齢者に偏りがちだ。, lang: ja }
+        - { id: b9c, text: こうした説明会は、参加者が高齢者だらけになる気味だ。, lang: ja }
+        - { id: d5e, text: こうした説明会は、参加者が高齢者っぽい。, lang: ja }
+        - { id: f1g, text: こうした説明会は、参加者が高齢者に偏る上でだ。, lang: ja }
+    answer:
+      correct_option_id: y4z
+    explanation:
+      vi: Khuynh hướng không mong muốn, hay lặp lại - 偏りがち (dễ bị lệch về). だらけ mang sắc thái chê bai thô, ghép với 気味 cũng sai; っぽい là "trông giống"; 上でだ không tồn tại.
+    display_answer: こうした説明会は、参加者が高齢者に偏りがちだ。

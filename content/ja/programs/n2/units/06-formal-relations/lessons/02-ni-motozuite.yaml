@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u6-ni-motozuite
+order_index: 2
+level: n2
+title:
+  vi: Căn cứ, kênh và mức tương ứng - ～に基づいて, ～を通じて, ～に応じて
+objectives:
+  - vi: Nói "dựa trên dữ liệu, quy định" bằng に基づいて / に基づく.
+  - vi: Nói "thông qua (kênh, người)" và "suốt (thời gian)" bằng を通じて.
+  - vi: Nói "tuỳ theo (mức độ)" bằng に応じて / に応じた.
+estimated_minutes: 20
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-u6-ni-oite-meguru]
+items:
+  - item: ja:item:n2-u6-gram-ni-motozuite
+  - item: ja:item:n2-u6-gram-wo-tsuujite
+  - item: ja:item:n2-u6-gram-ni-oujite
+  - item: ja:item:n2-u6-kitei
+  - item: ja:item:n2-u6-yosan
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu và viết được những câu kiểu báo cáo, quy định - "dựa trên kết quả khảo sát", "thông qua người quen", "phí thay đổi tuỳ theo số người" - thay cho cách nói đời thường.
+  - type: explain
+    text:
+      vi: 'に基づいて - "dựa trên" một căn cứ có sẵn, khách quan: dữ liệu, luật, quy định, sự thật. Trước danh từ là に基づく hoặc に基づいた: 事実に基づく話 (câu chuyện dựa trên sự thật).'
+  - type: explain
+    text:
+      vi: 'を通じて có hai nghĩa: "thông qua" một kênh, người trung gian (友人を通じて知り合う) và "suốt" một khoảng thời gian (一年を通じて). を通して gần như cùng nghĩa, nhấn hơn vào hành động chủ ý qua tay ai.'
+  - type: explain
+    text:
+      vi: 'に応じて - "tuỳ theo, tương ứng với" một thứ có nhiều mức (tuổi, trình độ, ngân sách, số người): kết quả thay đổi theo mức đó. Trước danh từ là に応じた: レベルに応じたクラス.'
+  - type: deep_explain
+    text:
+      vi: 'Ba mẫu dễ lẫn vì tiếng Việt đều có thể dịch là "theo": căn cứ cố định → に基づいて; kênh truyền đi → を通じて; thay đổi theo từng mức → に応じて. Làm theo lời ai đó (chỉ thị, hướng dẫn) lại là に従って - một mẫu bạn đã gặp ở unit 1.'
+  - type: example
+    target: この映画は実際の事件に基づいて作られた。
+    target_lang: ja
+    translation:
+      vi: Bộ phim này được làm dựa trên một vụ án có thật.
+  - type: example
+    target: 会社の規定に基づき、退職金が支払われる。
+    target_lang: ja
+    translation:
+      vi: Căn cứ theo quy định của công ty, tiền trợ cấp thôi việc sẽ được chi trả.
+    note:
+      vi: に基づき là dạng văn viết của に基づいて.
+  - type: example
+    target: 私たちは共通の友人を通じて知り合いました。
+    target_lang: ja
+    translation:
+      vi: Chúng tôi quen nhau thông qua một người bạn chung.
+  - type: example
+    target: 予算に応じて、旅行のプランを選べます。
+    target_lang: ja
+    translation:
+      vi: Bạn có thể chọn gói du lịch tuỳ theo ngân sách.
+  - type: common_mistake
+    wrong: 先生の指示に基づいて、教科書を開いてください。
+    right: 先生の指示に従って、教科書を開いてください。
+    target_lang: ja
+    note:
+      vi: Làm theo lời chỉ dẫn của ai đó dùng に従って. に基づいて cần một căn cứ khách quan, có sẵn như dữ liệu hay luật.
+  - type: common_mistake
+    wrong: 年齢に対して、料金が違います。
+    right: 年齢に応じて、料金が違います。
+    target_lang: ja
+    note:
+      vi: Giá thay đổi theo từng mức tuổi - dùng に応じて. に対して là hướng hành động tới một đối tượng (お客様に対して丁寧に話す).
+  - type: summary
+    points:
+      - vi: N に基づいて / に基づく N - dựa trên căn cứ có sẵn (dữ liệu, luật, sự thật).
+      - vi: N を通じて - thông qua (kênh, người); suốt (khoảng thời gian).
+      - vi: N に応じて / に応じた N - tuỳ theo, tương ứng với từng mức.
+      - vi: 規定 - quy định thành văn; 予算 - ngân sách.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u6-moto-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ni-oujite
+    prompt:
+      stem: 'Chọn từ hợp nhất: このジムでは、体力 ＿＿ トレーニングメニューを作ってくれる。 ("Phòng tập này lên thực đơn luyện tập phù hợp với thể lực của từng người.")'
+      stem_lang: vi
+      options:
+        - { id: r3s, text: に応じた, lang: ja }
+        - { id: u8v, text: をめぐる, lang: ja }
+        - { id: x2y, text: を通じた, lang: ja }
+        - { id: b7c, text: に対して, lang: ja }
+    answer:
+      correct_option_id: r3s
+    explanation:
+      vi: Thể lực mỗi người một mức, thực đơn thay đổi theo mức đó - dùng に応じた, dạng nối thẳng vào danh từ トレーニングメニュー. をめぐる cần chuyện tranh cãi; を通じた là kênh truyền; に対して là hướng tới đối tượng.
+    display_answer: に応じた
+
+  - key: ja:exercise:n2-u6-moto-listen-tsuujite
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-gram-wo-tsuujite
+    prompt:
+      audio_asset_id: null
+      fallback_text: この島は一年を通じて暖かく、冬でも海で泳げる。
+      options:
+        - { id: d4e, text: "Hòn đảo này ấm áp quanh năm, mùa đông vẫn bơi biển được.", lang: vi }
+        - { id: g9h, text: Hòn đảo này chỉ ấm vào mùa đông nên có thể bơi biển., lang: vi }
+        - { id: k1l, text: Đi qua hòn đảo này mất một năm và mùa đông không bơi được., lang: vi }
+        - { id: n6o, text: Năm nay hòn đảo này ấm hơn mọi năm., lang: vi }
+    answer:
+      correct_option_id: d4e
+    explanation:
+      vi: 一年を通じて - suốt cả năm, quanh năm (nghĩa thứ hai của を通じて); 冬でも - kể cả mùa đông. Không có nghĩa "đi xuyên qua" như 通る.
+    display_answer: Hòn đảo này ấm áp quanh năm, mùa đông vẫn bơi biển được.
+
+  - key: ja:exercise:n2-u6-moto-fill-motozuku
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ni-motozuite
+    prompt:
+      template: "調査データ{{b1}}分析によると、若者の読書時間は減っていない。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Theo phân tích dựa trên dữ liệu khảo sát, thời gian đọc sách của giới trẻ không hề giảm."
+        - "Gợi ý: dạng nối danh từ của に基づいて, đứng ngay trước 分析."
+    answer:
+      blanks:
+        b1: [に基づく, にもとづく, に基づいた, にもとづいた]
+    known_wrong:
+      - answer: に基づいて
+        feedback_vi: Ngay trước danh từ 分析 phải là に基づく (hoặc に基づいた).
+        error_tag: noun_modifier_form
+      - answer: に従う
+        feedback_vi: に従う là làm theo lệnh, quy tắc; dữ liệu là căn cứ khách quan - に基づく.
+        error_tag: motozuku_shitagau
+    explanation:
+      vi: N に基づく + N - N dựa trên ~. 調査データに基づく分析 - phân tích dựa trên dữ liệu khảo sát. によると ở cuối vế là "theo (nguồn tin)".
+    display_answer: 調査データに基づく分析によると、若者の読書時間は減っていない。
+
+  - key: ja:exercise:n2-u6-moto-mcq-kitei
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-kitei
+    prompt:
+      stem: 'Câu 規定の時間を過ぎた場合、申し込みは受け付けられません。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: q5r, text: Nếu quá thời gian quy định thì đơn đăng ký sẽ không được nhận., lang: vi }
+        - { id: t1u, text: Nếu đến sớm hơn thời gian quy định thì đơn sẽ không được nhận., lang: vi }
+        - { id: w6x, text: Quy định về thời gian đăng ký đã được thay đổi., lang: vi }
+        - { id: z3a, text: Có thể đăng ký bất cứ lúc nào mà không cần theo quy định., lang: vi }
+    answer:
+      correct_option_id: q5r
+    explanation:
+      vi: 規定の時間 - thời gian quy định; 過ぎた場合 - trường hợp đã quá; 受け付けられません - không thể tiếp nhận. 過ぎる là "quá, vượt", không phải "sớm hơn".
+    display_answer: Nếu quá thời gian quy định thì đơn đăng ký sẽ không được nhận.
+
+  - key: ja:exercise:n2-u6-moto-wb-tsuujite
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-wo-tsuujite
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thông qua công việc tình nguyện, tôi đã học được nhiều điều.\""
+      tokens:
+        - { id: t3, text: 多くのことを }
+        - { id: t5, text: に応じて }
+        - { id: t1, text: ボランティア活動 }
+        - { id: t4, text: 学んだ }
+        - { id: t2, text: を通じて }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: N を通じて - thông qua N (trải nghiệm là kênh giúp học được). に応じて là "tuỳ theo mức", không hợp với hoạt động tình nguyện.
+    display_answer: ボランティア活動を通じて多くのことを学んだ。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u6-moto-fill-oujite
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-oujite
+    prompt:
+      template: "給料は、仕事の成果{{b1}}決められる。(tuỳ theo)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [に応じて, におうじて]
+    known_wrong:
+      - answer: に応じた
+        feedback_vi: Phía sau là động từ 決められる, không phải danh từ - dùng に応じて.
+        error_tag: noun_modifier_form
+      - answer: に対して
+        feedback_vi: Lương thay đổi theo mức thành tích - dùng に応じて; に対して là hướng tới một đối tượng.
+        error_tag: oujite_taishite
+    explanation:
+      vi: N に応じて + động từ - tuỳ theo N mà... 成果 (thành quả) có nhiều mức nên lương thay đổi tương ứng.
+    display_answer: 給料は、仕事の成果に応じて決められる。
+
+  - key: ja:exercise:n2-u6-moto-write-yosan
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-yosan
+    prompt:
+      source_text: Chúng tôi sẽ đề xuất căn phòng phù hợp với ngân sách của quý khách. (dùng に応じた)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お客様の予算に応じたお部屋をご提案します。
+        - お客様の予算に応じたお部屋をご提案いたします。
+        - お客様のご予算に応じたお部屋をご提案します。
+        - お客様のご予算に応じたお部屋をご提案いたします。
+        - お客様の予算に応じた部屋をご提案します。
+        - お客様の予算に応じた部屋を提案します。
+        - ご予算に応じたお部屋をご提案いたします。
+        - おきゃくさまのよさんにおうじたおへやをごていあんします。
+    known_wrong:
+      - answer: お客様の予算に応じてお部屋をご提案します。
+        feedback_vi: Câu tiếng Việt nói "căn phòng phù hợp với ngân sách" - に応じた nối thẳng vào お部屋. に応じて làm câu thành "tuỳ ngân sách mà đề xuất".
+        error_tag: noun_modifier_form
+      - answer: お客様の予算に基づいたお部屋をご提案します。
+        feedback_vi: Ngân sách mỗi người một mức, phòng thay đổi theo mức đó - dùng に応じた.
+        error_tag: oujite_motozuite
+    explanation:
+      vi: N に応じた + N - N phù hợp với từng mức ~. ご提案します / いたします là khiêm nhường, hợp với lời nói với khách.
+    display_answer: お客様の予算に応じたお部屋をご提案します。
+
+  - key: ja:exercise:n2-u6-moto-write-motozuite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-motozuite
+    prompt:
+      source_text: Bản báo cáo này được viết dựa trên dữ liệu của năm ngoái. (dùng に基づいて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この報告書は、去年のデータに基づいて書かれている。
+        - この報告書は、去年のデータに基づいて書かれています。
+        - この報告書は、昨年のデータに基づいて書かれている。
+        - この報告書は、昨年のデータに基づいて書かれています。
+        - この報告書は、去年のデータに基づいて書かれた。
+        - この報告書は、昨年のデータに基づいて作成された。
+        - この報告書は、昨年のデータに基づいて作成されています。
+        - このレポートは、去年のデータに基づいて書かれている。
+        - このほうこくしょは、きょねんのデータにもとづいてかかれている。
+    known_wrong:
+      - answer: この報告書は、去年のデータに基づく書かれている。
+        feedback_vi: Trước động từ 書かれている dùng に基づいて; に基づく chỉ đứng trước danh từ.
+        error_tag: noun_modifier_form
+      - answer: この報告書は、去年のデータに従って書かれている。
+        feedback_vi: Dữ liệu là căn cứ, không phải mệnh lệnh để "làm theo" - dùng に基づいて.
+        error_tag: motozuku_shitagau
+    explanation:
+      vi: N に基づいて + V - làm V dựa trên N. 書かれている (bị động) - "được viết"; văn báo cáo hay dùng 昨年 thay 去年 và 作成する thay 書く.
+    display_answer: この報告書は、去年のデータに基づいて書かれている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u6-moto-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u6-gram-wo-tsuujite
+    prompt:
+      source_text: 留学生との交流を通じて、子どもたちは外国の文化に興味を持つようになった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thông qua giao lưu với du học sinh, bọn trẻ đã bắt đầu quan tâm đến văn hoá nước ngoài.
+        - Thông qua việc giao lưu với du học sinh, các em đã trở nên quan tâm đến văn hoá nước ngoài.
+        - Nhờ giao lưu với du học sinh, bọn trẻ đã bắt đầu thích tìm hiểu văn hoá nước ngoài.
+        - Qua giao lưu với du học sinh, trẻ em đã bắt đầu quan tâm đến văn hoá nước ngoài.
+        - Thông qua giao lưu với các du học sinh, lũ trẻ đã bắt đầu có hứng thú với văn hoá nước ngoài.
+        - Qua việc giao lưu với du học sinh, các em nhỏ đã trở nên hứng thú với văn hoá nước ngoài.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thông qua giao lưu với du học sinh, bọn trẻ đã đi du học nước ngoài.
+        feedback_vi: 興味を持つようになった là "bắt đầu quan tâm", không phải "đi du học".
+        error_tag: meaning
+    explanation:
+      vi: 交流を通じて - thông qua giao lưu (kênh); 興味を持つ - quan tâm, có hứng thú; ようになった - đã trở nên (thay đổi dần). "Nhờ" cũng tự nhiên vì kết quả tốt.
+    display_answer: Thông qua giao lưu với du học sinh, bọn trẻ đã bắt đầu quan tâm đến văn hoá nước ngoài.
+
+  - key: ja:exercise:n2-u6-moto-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-motozuite
+    prompt:
+      stem: Bạn là nhân viên nhân sự, viết thông báo rằng việc chi trả tiền làm thêm giờ sẽ được thực hiện căn cứ theo quy định công ty. Câu nào đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: c2d, text: 残業代は、社内規定に基づいて支払われます。, lang: ja }
+        - { id: f7g, text: 残業代は、社内規定を通じて支払われます。, lang: ja }
+        - { id: j3k, text: 残業代は、社内規定に応じて支払います。, lang: ja }
+        - { id: m8n, text: 残業代は、社内規定に基づく支払われます。, lang: ja }
+    answer:
+      correct_option_id: c2d
+    explanation:
+      vi: Quy định là căn cứ cố định - に基づいて + động từ 支払われます. を通じて là kênh truyền; に応じて cần thứ có nhiều mức; に基づく không đứng trước động từ.
+    display_answer: 残業代は、社内規定に基づいて支払われます。
+
+  - key: ja:exercise:n2-u6-moto-write-tsuujite
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u6-gram-wo-tsuujite
+    prompt:
+      source_text: Thông qua mạng xã hội, tin đó đã lan ra khắp cả nước chỉ trong một ngày. (dùng を通じて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - SNSを通じて、そのニュースはたった一日で全国に広がった。
+        - SNSを通じて、そのニュースは一日で全国に広がった。
+        - SNSを通じて、その知らせはたった一日で全国に広まった。
+        - SNSを通じて、そのニュースはたった一日で全国に広まった。
+        - SNSを通じて、そのニュースはわずか一日で全国に広がった。
+        - SNSを通じて、そのニュースは一日で日本中に広がった。
+        - そのニュースはSNSを通じて、たった一日で全国に広がった。
+        - そのニュースはSNSを通じて、一日で全国に広まった。
+        - ソーシャルメディアを通じて、そのニュースはたった一日で全国に広がった。
+        - SNSを通じて、そのニュースはたった一日で全国に広がりました。
+    known_wrong:
+      - answer: SNSを通じて、そのニュースはたった一日で全国を広がった。
+        feedback_vi: 広がる là nội động từ - lan ra "tới" cả nước dùng に (全国に広がる).
+        error_tag: particle
+      - answer: SNSに応じて、そのニュースはたった一日で全国に広がった。
+        feedback_vi: Mạng xã hội là kênh truyền tin - dùng を通じて, không phải に応じて.
+        error_tag: tsuujite_oujite
+    explanation:
+      vi: N を通じて - thông qua kênh N; 全国に広がる / 広まる - lan ra khắp cả nước; たった / わずか一日で - chỉ trong một ngày. Người Nhật gọi mạng xã hội là SNS.
+    display_answer: SNSを通じて、そのニュースはたった一日で全国に広がった。
+
+  - key: ja:exercise:n2-u6-moto-wb-oujite
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-oujite
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Số lượng nhân viên sẽ được điều chỉnh tuỳ theo lượng khách.\""
+      tokens:
+        - { id: u4, text: 調整します }
+        - { id: u2, text: に応じて }
+        - { id: u5, text: に基づく }
+        - { id: u1, text: お客様の数 }
+        - { id: u3, text: スタッフの人数を }
+    answer:
+      orders:
+        - [u1, u2, u3, u4]
+        - [u3, u1, u2, u4]
+    explanation:
+      vi: N に応じて + 調整します - điều chỉnh tuỳ theo N. Lượng khách thay đổi từng ngày nên dùng に応じて; に基づく phải đứng trước danh từ và chỉ căn cứ cố định.
+    display_answer: お客様の数に応じてスタッフの人数を調整します。

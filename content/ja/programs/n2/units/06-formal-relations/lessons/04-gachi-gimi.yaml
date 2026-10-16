@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u6-gachi-gimi
+order_index: 4
+level: n2
+title:
+  vi: Hay bị, hơi bị, có vẻ, đầy - ～がち, ～気味, ～っぽい, ～だらけ
+objectives:
+  - vi: Nói khuynh hướng xấu hay lặp lại bằng ～がち.
+  - vi: Nói trạng thái nhẹ hiện tại bằng ～気味.
+  - vi: Phân biệt ～っぽい (có vẻ, hay) và ～だらけ (đầy thứ không mong muốn).
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u6-ageku-sueni]
+items:
+  - item: ja:item:n2-u6-gram-gachi
+  - item: ja:item:n2-u6-gram-gimi
+  - item: ja:item:n2-u6-gram-ppoi
+  - item: ja:item:n2-u6-gram-darake
+  - item: ja:item:n2-u6-nebusoku
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả sức khoẻ và tính cách tinh tế hơn - "dạo này hơi cảm", "mùa đông dễ lười vận động", "anh ấy hay quên", "bài văn đầy lỗi" - thay vì chỉ dùng よく hay たくさん.
+  - type: explain
+    text:
+      vi: 'Vます-gốc / N + がち - "hay (bị), dễ..." cho chuyện không tốt lặp đi lặp lại: 遅れがち, 忘れがち, 病気がち, 曇りがち. Tiếng Việt nói "hay bị", tiếng Nhật gói vào một hậu tố và chia như tính từ đuôi な.'
+  - type: explain
+    text:
+      vi: 'Vます-gốc / N + 気味 (ぎみ) - "hơi bị..., có dấu hiệu..." ở mức nhẹ, ngay bây giờ: 風邪気味, 疲れ気味, 太り気味. Khác がち: がち là chuyện hay lặp lại, 気味 là tình trạng hiện tại.'
+  - type: explain
+    text:
+      vi: '～っぽい (khẩu ngữ): "trông giống, mang vẻ" (子どもっぽい, 白っぽい) hoặc "hay..." (忘れっぽい, 怒りっぽい). N + だらけ - "đầy, toàn là" thứ không mong muốn: 間違いだらけ, 傷だらけ, 泥だらけ.'
+  - type: deep_explain
+    text:
+      vi: 'Cả bốn hậu tố đều nghiêng về nghĩa xấu, nên không dùng để khen. Thứ tốt đầy ắp nói いっぱい (花がいっぱい), không nói 花だらけ. っぽい khác らしい: 大人っぽい là "trông chín chắn (dù chưa phải người lớn)", 大人らしい là "người lớn cư xử đúng chất người lớn".'
+  - type: example
+    target: 一人暮らしを始めると、食事が偏りがちになる。
+    target_lang: ja
+    translation:
+      vi: Bắt đầu sống một mình thì dễ ăn uống thiếu cân bằng.
+  - type: example
+    target: 昨日から少し風邪気味なので、今日は早めに寝ます。
+    target_lang: ja
+    translation:
+      vi: Từ hôm qua tôi hơi bị cảm nên hôm nay sẽ ngủ sớm.
+  - type: example
+    target: 祖父は最近忘れっぽくなって、同じ話を何度もする。
+    target_lang: ja
+    translation:
+      vi: Dạo này ông tôi hay quên, cứ kể đi kể lại một chuyện.
+  - type: example
+    target: 急いで書いたレポートは、間違いだらけだった。
+    target_lang: ja
+    translation:
+      vi: Bản báo cáo viết vội đầy lỗi sai.
+  - type: common_mistake
+    wrong: 彼は毎日よく勉強しがちだ。
+    right: 彼は毎日よく勉強する。
+    target_lang: ja
+    note:
+      vi: がち chỉ dùng cho khuynh hướng không tốt. Thói quen tốt thì nói thẳng bằng động từ, hoặc dùng よく / いつも.
+  - type: common_mistake
+    wrong: この公園は春になると花だらけで、とてもきれいだ。
+    right: この公園は春になると花がいっぱいで、とてもきれいだ。
+    target_lang: ja
+    note:
+      vi: だらけ mang nghĩa "đầy thứ phiền phức", không hợp với lời khen. Thứ tốt, đẹp đầy ắp dùng いっぱい.
+  - type: summary
+    points:
+      - vi: Vます / N + がち - hay bị (chuyện xấu lặp lại); chia như tính từ な.
+      - vi: Vます / N + 気味 - hơi bị (trạng thái nhẹ, hiện tại).
+      - vi: ～っぽい - trông giống / hay...; N + だらけ - đầy thứ không mong muốn.
+      - vi: 寝不足 - thiếu ngủ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u6-gachi-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-gimi
+    prompt:
+      stem: 'Chọn từ hợp nhất: 面接の前なので、少し緊張 ＿＿ です。 ("Vì sắp phỏng vấn nên tôi hơi căng thẳng.")'
+      stem_lang: vi
+      options:
+        - { id: f3g, text: 気味, lang: ja }
+        - { id: i8j, text: だらけ, lang: ja }
+        - { id: m4n, text: っぽさ, lang: ja }
+        - { id: p9q, text: がちだけ, lang: ja }
+    answer:
+      correct_option_id: f3g
+    explanation:
+      vi: Một trạng thái nhẹ, xảy ra ngay lúc này - 緊張気味 (hơi căng thẳng). だらけ là "đầy" thứ gì đó trên bề mặt; っぽさ là danh từ "vẻ giống"; がちだけ không có.
+    display_answer: 気味
+
+  - key: ja:exercise:n2-u6-gachi-listen-gachi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-gram-gachi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 梅雨の時期は、電車が遅れがちなので早めに家を出ます。
+      options:
+        - { id: s2t, text: Mùa mưa tàu hay bị trễ nên tôi ra khỏi nhà sớm., lang: vi }
+        - { id: v7w, text: Mùa mưa tàu luôn chạy đúng giờ nên tôi ra khỏi nhà muộn., lang: vi }
+        - { id: y3z, text: Hôm nay tàu bị trễ một lần nên tôi đến muộn., lang: vi }
+        - { id: c8d, text: Mùa mưa tôi hay quên mang ô khi ra khỏi nhà., lang: vi }
+    answer:
+      correct_option_id: s2t
+    explanation:
+      vi: 遅れがち - hay bị trễ (khuynh hướng lặp lại, không phải một lần); 梅雨の時期 - mùa mưa; 早めに - sớm hơn một chút.
+    display_answer: Mùa mưa tàu hay bị trễ nên tôi ra khỏi nhà sớm.
+
+  - key: ja:exercise:n2-u6-gachi-fill-darake
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-darake
+    prompt:
+      template: "雨の中でサッカーをして、ユニフォームが泥{{b1}}になった。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Chơi bóng dưới mưa nên bộ đồng phục lấm lem toàn bùn."
+        - "Gợi ý: hậu tố \"đầy, toàn là (thứ bẩn, không mong muốn)\", ba chữ kana."
+    answer:
+      blanks:
+        b1: [だらけ]
+    known_wrong:
+      - answer: いっぱい
+        feedback_vi: いっぱい dùng cho thứ tốt hoặc trung tính; bị phủ đầy bùn bẩn là だらけ, nối thẳng vào danh từ (泥だらけ).
+        error_tag: darake_ippai
+      - answer: 気味
+        feedback_vi: 気味 là "hơi bị" (trạng thái cơ thể, cảm xúc), không dùng cho bùn đất phủ trên áo.
+        error_tag: darake_gimi
+    explanation:
+      vi: 泥だらけ - toàn bùn đất. だらけ chỉ một bề mặt bị phủ kín bởi thứ không mong muốn; になる ở cuối là "trở nên".
+    display_answer: 雨の中でサッカーをして、ユニフォームが泥だらけになった。
+
+  - key: ja:exercise:n2-u6-gachi-mcq-ppoi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ppoi
+    prompt:
+      stem: 'Câu 彼女は中学生なのに、話し方が大人っぽい。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: g4h, text: Cô ấy mới học cấp hai mà cách nói chuyện đã chững chạc như người lớn., lang: vi }
+        - { id: k9l, text: Cô ấy là người lớn nhưng nói chuyện như học sinh cấp hai., lang: vi }
+        - { id: n5o, text: Cô ấy học cấp hai và không thích nói chuyện với người lớn., lang: vi }
+        - { id: r1s, text: Cô ấy nói chuyện rất trẻ con so với tuổi., lang: vi }
+    answer:
+      correct_option_id: g4h
+    explanation:
+      vi: 大人っぽい - trông, nghe giống người lớn (dù thực ra chưa phải). なのに - vậy mà, cho thấy điều bất ngờ so với tuổi. Trẻ con là 子どもっぽい.
+    display_answer: Cô ấy mới học cấp hai mà cách nói chuyện đã chững chạc như người lớn.
+
+  - key: ja:exercise:n2-u6-gachi-wb-nebusoku
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-nebusoku
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vì đang mùa thi nên dạo này tôi hơi thiếu ngủ.\""
+      tokens:
+        - { id: n3, text: 寝不足気味です }
+        - { id: n1, text: 試験の前なので }
+        - { id: n4, text: 寝不足だらけです }
+        - { id: n2, text: 最近 }
+    answer:
+      orders:
+        - [n1, n2, n3]
+        - [n2, n1, n3]
+    explanation:
+      vi: 寝不足気味 - hơi thiếu ngủ (trạng thái nhẹ, hiện tại). だらけ chỉ dùng cho thứ phủ đầy trên bề mặt (泥, 傷, 間違い), không gắn vào 寝不足.
+    display_answer: 試験の前なので、最近寝不足気味です。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u6-gachi-fill-gachi
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-gachi
+    prompt:
+      template: "忙しいと、つい家族との約束を{{b1}}がちだ。(忘れる)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [忘れ, わすれ]
+    known_wrong:
+      - answer: 忘れる
+        feedback_vi: がち gắn vào gốc ます của động từ - 忘れます → 忘れがち.
+        error_tag: gachi_form
+      - answer: 忘れて
+        feedback_vi: Không dùng thể て trước がち; dùng gốc ます - 忘れがち.
+        error_tag: gachi_form
+    explanation:
+      vi: Vます-gốc + がち - hay bị... (忘れがち = hay quên). つい - lỡ, vô tình; khuynh hướng không tốt và lặp lại nên dùng がち.
+    display_answer: 忙しいと、つい家族との約束を忘れがちだ。
+
+  - key: ja:exercise:n2-u6-gachi-write-gimi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-gimi
+    prompt:
+      source_text: Dạo này tôi hơi tăng cân nên đã bắt đầu chạy bộ. (dùng 気味)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 最近太り気味なので、ジョギングを始めました。
+        - 最近太り気味なので、ジョギングを始めた。
+        - 最近少し太り気味なので、ジョギングを始めました。
+        - 最近太り気味だから、ジョギングを始めました。
+        - 最近太り気味なので、ランニングを始めました。
+        - 最近ちょっと太り気味なので、ジョギングを始めました。
+        - 最近太り気味なので、走り始めました。
+        - さいきんふとりぎみなので、ジョギングをはじめました。
+    known_wrong:
+      - answer: 最近太る気味なので、ジョギングを始めました。
+        feedback_vi: 気味 gắn vào gốc ます - 太ります → 太り気味, không dùng thể từ điển.
+        error_tag: gimi_form
+      - answer: 最近太りがちなので、ジョギングを始めました。
+        feedback_vi: Tăng cân lúc này là trạng thái hiện tại ở mức nhẹ - 太り気味. がち là chuyện hay lặp đi lặp lại.
+        error_tag: gachi_gimi
+    explanation:
+      vi: 太り気味 - hơi béo lên (trạng thái hiện tại, mức nhẹ). Người Nhật dùng 気味 để nói về cơ thể một cách nhẹ nhàng, không quá nặng nề như 太った.
+    display_answer: 最近太り気味なので、ジョギングを始めました。
+
+  - key: ja:exercise:n2-u6-gachi-write-ppoi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ppoi
+    prompt:
+      source_text: Trưởng phòng của tôi dễ nổi nóng nhưng là người tốt. (dùng っぽい)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - うちの部長は怒りっぽいけど、いい人です。
+        - うちの部長は怒りっぽいけど、いい人だ。
+        - うちの部長は怒りっぽいですが、いい人です。
+        - 私の部長は怒りっぽいけど、いい人です。
+        - 部長は怒りっぽいけど、いい人です。
+        - 部長は怒りっぽいですが、いい人です。
+        - 部長は怒りっぽいが、いい人だ。
+        - うちの部長は怒りっぽいけれど、いい人です。
+        - ぶちょうはおこりっぽいけど、いいひとです。
+    known_wrong:
+      - answer: 部長は怒るっぽいけど、いい人です。
+        feedback_vi: っぽい nghĩa "hay..." gắn vào gốc ます - 怒ります → 怒りっぽい.
+        error_tag: ppoi_form
+      - answer: 部長は怒りだらけだけど、いい人です。
+        feedback_vi: だらけ chỉ thứ phủ đầy trên bề mặt; tính hay nổi nóng dùng 怒りっぽい.
+        error_tag: ppoi_darake
+    explanation:
+      vi: 'Vます-gốc + っぽい - hay..., dễ... (tính cách): 怒りっぽい, 忘れっぽい, 飽きっぽい. Người Nhật hay nói うちの部長 khi kể về sếp mình với người ngoài.'
+    display_answer: うちの部長は怒りっぽいけど、いい人です。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u6-gachi-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u6-gram-darake
+    prompt:
+      source_text: 引っ越したばかりの部屋は段ボールだらけで、座る場所もない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Căn phòng vừa chuyển đến toàn thùng các-tông, đến chỗ ngồi cũng không có.
+        - Căn phòng mới chuyển đến đầy thùng các-tông, không có cả chỗ để ngồi.
+        - Căn phòng vừa dọn đến chất đầy thùng giấy, chẳng có chỗ mà ngồi.
+        - Phòng vừa chuyển tới toàn là thùng các tông, không có chỗ ngồi.
+        - Căn phòng mới dọn vào toàn thùng carton, đến chỗ ngồi cũng chẳng có.
+        - Căn phòng vừa chuyển nhà đến đầy thùng carton, không còn chỗ để ngồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Căn phòng vừa chuyển đến rất rộng, có nhiều chỗ ngồi.
+        feedback_vi: 段ボールだらけ là "toàn thùng các-tông"; 座る場所もない là "đến chỗ ngồi cũng không có".
+        error_tag: meaning
+    explanation:
+      vi: 引っ越したばかり - vừa mới chuyển đến; 段ボールだらけ - toàn thùng các-tông (phiền, bừa bộn); 座る場所もない - đến chỗ ngồi cũng không có.
+    display_answer: Căn phòng vừa chuyển đến toàn thùng các-tông, đến chỗ ngồi cũng không có.
+
+  - key: ja:exercise:n2-u6-gachi-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-gimi
+    prompt:
+      stem: Bạn gọi điện cho trưởng phòng xin nghỉ buổi sáng vì thấy hơi mệt, không quá nặng. Câu nào tự nhiên và lịch sự nhất?
+      stem_lang: vi
+      options:
+        - { id: d6e, text: 少し疲れ気味なので、午前中はお休みをいただけないでしょうか。, lang: ja }
+        - { id: h1i, text: 疲れだらけなので、午前中はお休みをいただけないでしょうか。, lang: ja }
+        - { id: l7m, text: 少し疲れっぽいから、午前中休むね。, lang: ja }
+        - { id: o2p, text: 少し疲れがちなので、今日の午前中はお休みをいただけないでしょうか。, lang: ja }
+    answer:
+      correct_option_id: d6e
+    explanation:
+      vi: Mệt nhẹ ngay lúc này - 疲れ気味; お休みをいただけないでしょうか là lời xin phép lịch sự. 疲れだらけ không có; 疲れっぽいから…ね quá suồng sã; 疲れがち nói về khuynh hướng hay mệt, không hợp với lý do xin nghỉ hôm nay.
+    display_answer: 少し疲れ気味なので、午前中はお休みをいただけないでしょうか。
+
+  - key: ja:exercise:n2-u6-gachi-write-gachi
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u6-gram-gachi
+    prompt:
+      source_text: Người làm việc ở nhà dễ bị thiếu vận động. (dùng がち)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 在宅勤務の人は運動不足になりがちだ。
+        - 在宅勤務の人は運動不足になりがちです。
+        - 在宅で働く人は運動不足になりがちだ。
+        - 在宅で働く人は運動不足になりがちです。
+        - 家で働く人は運動不足になりがちだ。
+        - 家で働く人は運動不足になりがちです。
+        - 家で仕事をする人は運動不足になりがちです。
+        - テレワークの人は運動不足になりがちです。
+        - ざいたくきんむのひとはうんどうぶそくになりがちだ。
+    known_wrong:
+      - answer: 在宅勤務の人は運動不足になるがちだ。
+        feedback_vi: がち gắn vào gốc ます - なります → なりがち.
+        error_tag: gachi_form
+      - answer: 在宅勤務の人は運動不足気味だ。
+        feedback_vi: 気味 tả tình trạng của một người lúc này; nói khuynh hướng chung của cả một nhóm người dùng がち.
+        error_tag: gachi_gimi
+    explanation:
+      vi: N になりがち - dễ trở thành N (khuynh hướng xấu chung). 運動不足 - thiếu vận động; 在宅勤務 / テレワーク - làm việc tại nhà.
+    display_answer: 在宅勤務の人は運動不足になりがちだ。
+
+  - key: ja:exercise:n2-u6-gachi-wb-darake
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-darake
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bản dịch của máy toàn lỗi nên tôi đã sửa lại hết.\""
+      tokens:
+        - { id: d4, text: 全部直した }
+        - { id: d2, text: 間違いだらけだったので }
+        - { id: d5, text: 間違いっぽかったので }
+        - { id: d1, text: 機械の翻訳は }
+    answer:
+      orders:
+        - [d1, d2, d4]
+    explanation:
+      vi: 間違いだらけ - toàn là lỗi. 間違いっぽい chỉ là "có vẻ sai", không đủ mạnh để "sửa lại hết" và không khớp nghĩa "toàn lỗi".
+    display_answer: 機械の翻訳は間違いだらけだったので、全部直した。

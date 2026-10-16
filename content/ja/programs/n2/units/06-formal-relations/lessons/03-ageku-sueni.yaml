@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u6-ageku-sueni
+order_index: 3
+level: n2
+title:
+  vi: Kết cục sau một quá trình - ～あげく, ～末に, ～上で
+objectives:
+  - vi: Kể kết cục đáng thất vọng sau quá trình dài bằng ～あげく.
+  - vi: Kể kết quả sau nhiều cân nhắc, cố gắng bằng ～末に.
+  - vi: Nói "sau khi đã... rồi mới..." bằng ～上で.
+estimated_minutes: 20
+skills: [grammar, writing]
+prerequisites: [ja:lesson:n2-u6-ni-motozuite]
+items:
+  - item: ja:item:n2-u6-gram-ageku
+  - item: ja:item:n2-u6-gram-sue-ni
+  - item: ja:item:n2-u6-gram-ue-de
+  - item: ja:item:n2-u6-nayamu
+  - item: ja:item:n2-u6-keiyaku
+  - item: ja:item:n2-u3-kentou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "chờ mãi rốt cuộc bị huỷ", "suy nghĩ kỹ cuối cùng quyết định chuyển việc" và hiểu dòng chữ "xin đọc kỹ rồi mới ký" trên hợp đồng.
+  - type: explain
+    text:
+      vi: 'V-た / N-の + あげく - "sau bao nhiêu..., rốt cuộc lại...". Quá trình dài, mệt mỏi và kết quả đáng thất vọng; người nói thường đang than phiền: さんざん迷ったあげく、何も買わなかった.'
+  - type: explain
+    text:
+      vi: 'V-た / N-の + 末(に) - "sau khi... mãi, cuối cùng...". Cũng là quá trình dài (suy nghĩ, bàn bạc, cố gắng) nhưng trung tính, kết quả có thể tốt: 悩んだ末に、留学を決めた. Văn viết, báo chí dùng rất nhiều.'
+  - type: explain
+    text:
+      vi: 'V-た / N-の + 上で - "sau khi đã... (rồi mới)...". Bước 1 là điều kiện cần cho bước 2: よく読んだ上で署名してください. Văn bản hành chính hay viết gọn: ご確認の上、お申し込みください.'
+  - type: deep_explain
+    text:
+      vi: 'Cả ba đều nối "quá trình → kết quả", khác nhau ở cảm xúc và mục đích. あげく = than phiền ("rốt cuộc lại..."), 末に = kể khách quan ("cuối cùng thì..."), 上で = khuyên làm đúng thứ tự ("làm A cho kỹ đã rồi hãy B"). V-る + 上で lại mang nghĩa khác - "trong việc...": 外国で暮らす上で大切なこと (điều quan trọng khi sống ở nước ngoài).'
+  - type: example
+    target: 店員に一時間も説明させたあげく、その客は何も買わずに帰った。
+    target_lang: ja
+    translation:
+      vi: Bắt nhân viên giải thích suốt cả tiếng đồng hồ, rốt cuộc vị khách đó lại về mà không mua gì.
+  - type: example
+    target: 三年間の研究の末、新しい薬が完成した。
+    target_lang: ja
+    translation:
+      vi: Sau ba năm nghiên cứu, cuối cùng loại thuốc mới đã hoàn thành.
+    note:
+      vi: N-の + 末 - không cần に khi đứng giữa câu văn viết.
+  - type: example
+    target: 何度も検討を重ねた末に、計画は中止された。
+    target_lang: ja
+    translation:
+      vi: Sau nhiều lần cân nhắc, cuối cùng kế hoạch đã bị dừng lại.
+  - type: example
+    target: 契約書の内容をよく確認した上で、サインしてください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy kiểm tra kỹ nội dung hợp đồng rồi mới ký.
+  - type: common_mistake
+    wrong: 一生懸命練習したあげく、優勝できました。
+    right: 一生懸命練習した末に、優勝できました。
+    target_lang: ja
+    note:
+      vi: Kết quả tốt đẹp không đi với あげく - nó mang giọng than phiền. Kể thành công sau cố gắng dùng 末に.
+  - type: common_mistake
+    wrong: 確認する上で、ご連絡ください。
+    right: 確認した上で、ご連絡ください。
+    target_lang: ja
+    note:
+      vi: Nghĩa "sau khi đã... rồi" cần thể た - 確認した上で (hoặc ご確認の上). V-る + 上で là "trong việc...", nghĩa khác hẳn.
+  - type: summary
+    points:
+      - vi: V-た / Nの + あげく - rốt cuộc lại... (kết cục đáng than phiền).
+      - vi: V-た / Nの + 末(に) - sau... mãi, cuối cùng... (trung tính, văn viết).
+      - vi: V-た / Nの + 上で - sau khi đã... rồi mới...; V-る + 上で - trong việc....
+      - vi: 悩む - băn khoăn, day dứt; 契約 - hợp đồng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u6-ageku-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ageku
+    prompt:
+      stem: 'Chọn từ hợp nhất: 道に迷って一時間も歩き回った ＿＿、結局タクシーを呼ぶことになった。 ("Lạc đường đi lòng vòng cả tiếng, rốt cuộc lại phải gọi taxi.")'
+      stem_lang: vi
+      options:
+        - { id: e2f, text: あげく, lang: ja }
+        - { id: h7i, text: 上で, lang: ja }
+        - { id: l3m, text: うちに, lang: ja }
+        - { id: o8p, text: 最中に, lang: ja }
+    answer:
+      correct_option_id: e2f
+    explanation:
+      vi: Quá trình dài, vất vả và kết quả không như ý (phải gọi taxi) - đúng sắc thái than phiền của あげく. 上で là "làm xong A rồi mới B"; うちに và 最中に chỉ thời điểm.
+    display_answer: あげく
+
+  - key: ja:exercise:n2-u6-ageku-listen-sueni
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-gram-sue-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 家族と何度も相談した末に、彼は田舎に帰ることを決めた。
+      options:
+        - { id: q4r, text: "Sau nhiều lần bàn bạc với gia đình, cuối cùng anh ấy quyết định về quê.", lang: vi }
+        - { id: t9u, text: Anh ấy về quê rồi mới bàn bạc với gia đình., lang: vi }
+        - { id: w5x, text: Gia đình đã bàn nhiều lần nhưng anh ấy vẫn chưa quyết định., lang: vi }
+        - { id: z1a, text: Anh ấy quyết định về quê mà không bàn với gia đình., lang: vi }
+    answer:
+      correct_option_id: q4r
+    explanation:
+      vi: 何度も相談した末に - sau khi bàn bạc nhiều lần, cuối cùng...; 帰ることを決めた - đã quyết định về. 末に luôn có quá trình đi trước rồi mới đến kết quả.
+    display_answer: Sau nhiều lần bàn bạc với gia đình, cuối cùng anh ấy quyết định về quê.
+
+  - key: ja:exercise:n2-u6-ageku-fill-uede
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ue-de
+    prompt:
+      template: "ご注文の内容をご確認{{b1}}、「購入する」ボタンを押してください。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Xin kiểm tra nội dung đơn hàng rồi mới bấm nút \"Mua\"."
+        - "Gợi ý: N + の + 上 - dạng gọn hay gặp trên web và giấy tờ."
+    answer:
+      blanks:
+        b1: [の上, のうえ, の上で]
+    known_wrong:
+      - answer: の末
+        feedback_vi: 末 là kết quả sau quá trình dài; ở đây là bước cần làm trước - の上.
+        error_tag: ue_sue
+      - answer: のあげく
+        feedback_vi: あげく mang giọng than phiền, không dùng trong lời hướng dẫn.
+        error_tag: ue_ageku
+    explanation:
+      vi: ご確認の上 - sau khi kiểm tra (rồi mới...). Đây là cách viết rút gọn của 確認した上で, rất hay gặp trên trang mua hàng và đơn đăng ký.
+    display_answer: ご注文の内容をご確認の上、「購入する」ボタンを押してください。
+
+  - key: ja:exercise:n2-u6-ageku-mcq-nayamu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u6-nayamu
+    prompt:
+      stem: 'Câu 姉は長い間、肩こりに悩んでいる。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: b6c, text: Chị tôi đã khổ sở vì chứng đau mỏi vai từ lâu., lang: vi }
+        - { id: e1f, text: Chị tôi đang suy nghĩ có nên đi mát xa vai không., lang: vi }
+        - { id: h8i, text: Chị tôi lâu rồi không bị đau vai nữa., lang: vi }
+        - { id: k3l, text: Chị tôi lo lắng cho vai của người khác., lang: vi }
+    answer:
+      correct_option_id: b6c
+    explanation:
+      vi: N に悩む - khổ sở, phiền não vì N (bệnh, rắc rối). 肩こり - mỏi vai; ている ở đây là tình trạng kéo dài đến nay.
+    display_answer: Chị tôi đã khổ sở vì chứng đau mỏi vai từ lâu.
+
+  - key: ja:exercise:n2-u6-ageku-wb-sueni
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-sue-ni
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Sau khi băn khoăn mãi, tôi đã quyết định không ký hợp đồng.\""
+      tokens:
+        - { id: s3, text: 契約しないことにした }
+        - { id: s1, text: さんざん }
+        - { id: s4, text: 悩む上で }
+        - { id: s2, text: 悩んだ末に }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: さんざん悩んだ末に - sau khi băn khoăn hết mức, cuối cùng... 末に cần thể た (悩んだ); 悩む上で là "trong việc băn khoăn", sai nghĩa.
+    display_answer: さんざん悩んだ末に、契約しないことにした。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u6-ageku-fill-ageku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ageku
+    prompt:
+      template: "彼は会議で一時間も文句を{{b1}}あげく、何も提案しなかった。(言う)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [言った, いった]
+    known_wrong:
+      - answer: 言う
+        feedback_vi: あげく gắn vào thể た - 言ったあげく.
+        error_tag: ageku_form
+      - answer: 言って
+        feedback_vi: Trước あげく phải là thể た, không phải thể て.
+        error_tag: ageku_form
+    explanation:
+      vi: V-た + あげく - sau khi (làm) mãi, rốt cuộc lại... Phàn nàn cả tiếng mà không đề xuất gì - đúng kiểu kết cục đáng bực của あげく.
+    display_answer: 彼は会議で一時間も文句を言ったあげく、何も提案しなかった。
+
+  - key: ja:exercise:n2-u6-ageku-write-keiyaku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-keiyaku
+    prompt:
+      source_text: Tôi sẽ bàn với cấp trên rồi mới ký hợp đồng. (dùng 上で)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 上司と相談した上で、契約します。
+        - 上司と相談した上で契約します。
+        - 上司に相談した上で、契約します。
+        - 上司と相談した上で、契約いたします。
+        - 上司と相談した上で、契約を結びます。
+        - 上司に相談した上で、契約を結びます。
+        - 上司と相談の上、契約します。
+        - 上司と相談の上、契約いたします。
+        - じょうしとそうだんしたうえで、けいやくします。
+    known_wrong:
+      - answer: 上司と相談する上で、契約します。
+        feedback_vi: Nghĩa "sau khi đã bàn" cần thể た - 相談した上で. V-る + 上で là "trong việc...".
+        error_tag: ue_de_form
+      - answer: 上司と相談した末に、契約します。
+        feedback_vi: 末に kể kết quả đã xảy ra sau quá trình dài; nói kế hoạch "bàn rồi mới ký" dùng 上で.
+        error_tag: ue_sue
+    explanation:
+      vi: V-た + 上で - làm bước 1 (bàn với cấp trên) làm cơ sở rồi mới bước 2 (ký). 相談の上 là dạng gọn trang trọng; 契約する / 契約を結ぶ đều là "ký hợp đồng".
+    display_answer: 上司と相談した上で、契約します。
+
+  - key: ja:exercise:n2-u6-ageku-write-kentou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-kentou
+    prompt:
+      source_text: Sau nhiều lần cân nhắc, cuối cùng công ty đã quyết định mở chi nhánh ở Việt Nam. (dùng 末に)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 何度も検討した末に、会社はベトナムに支店を出すことを決めた。
+        - 何度も検討した末に、会社はベトナムに支店を出すことにした。
+        - 何度も検討した末に、会社はベトナムに支店を開くことを決めた。
+        - 何度も検討した末、会社はベトナムに支店を出すことを決めた。
+        - 検討を重ねた末に、会社はベトナムに支店を出すことを決めた。
+        - 検討を重ねた末、会社はベトナムに支店を出すことを決めた。
+        - 会社は何度も検討した末に、ベトナムに支店を出すことを決めた。
+        - 会社は検討を重ねた末に、ベトナムに支店を出すことを決めた。
+        - 何度も検討した末に、会社はベトナムに支店を出すことを決めました。
+        - 何度も検討した末に、会社はベトナムに支店を開設することを決めた。
+    known_wrong:
+      - answer: 何度も検討するの末に、会社はベトナムに支店を出すことを決めた。
+        feedback_vi: Động từ trước 末に dùng thể た (検討した); の chỉ đi sau danh từ (検討の末に).
+        error_tag: sue_form
+      - answer: 何度も検討したあげく、会社はベトナムに支店を出すことを決めた。
+        feedback_vi: Mở chi nhánh là kết quả bình thường, không có gì phải than phiền - dùng 末に.
+        error_tag: ageku_sue
+    explanation:
+      vi: V-た + 末に - sau quá trình dài (検討 = cân nhắc kỹ) cuối cùng đi đến kết quả. 検討を重ねる - cân nhắc nhiều lần; 支店を出す / 開く - mở chi nhánh.
+    display_answer: 何度も検討した末に、会社はベトナムに支店を出すことを決めた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u6-ageku-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ageku
+    prompt:
+      source_text: 弟はさんざん親に心配をかけたあげく、大学を辞めてしまった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Em trai tôi làm bố mẹ lo lắng đủ điều, rốt cuộc lại bỏ đại học.
+        - Em trai tôi khiến bố mẹ lo lắng đủ điều, cuối cùng lại bỏ học đại học.
+        - Em trai tôi làm bố mẹ lo đủ đường, rốt cuộc vẫn bỏ đại học.
+        - Em tôi làm cha mẹ lo lắng hết mức, rốt cuộc lại bỏ đại học.
+        - Em trai tôi đã làm bố mẹ lo lắng rất nhiều, rốt cuộc lại thôi học đại học.
+        - Em trai tôi làm bố mẹ phiền lòng đủ điều, rốt cuộc lại bỏ đại học mất.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Em trai tôi làm bố mẹ lo lắng đủ điều, rốt cuộc đã tốt nghiệp đại học.
+        feedback_vi: 大学を辞める là bỏ học đại học, không phải tốt nghiệp (卒業する).
+        error_tag: meaning
+    explanation:
+      vi: さんざん～たあげく - sau bao nhiêu..., rốt cuộc lại...; 心配をかける - làm (ai) lo lắng; 辞めてしまった - lỡ bỏ mất (てしまう thêm tiếc nuối).
+    display_answer: Em trai tôi làm bố mẹ lo lắng đủ điều, rốt cuộc lại bỏ đại học.
+
+  - key: ja:exercise:n2-u6-ageku-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ue-de
+    prompt:
+      stem: Bạn nhận được lời mời làm việc nhưng muốn bàn với gia đình trước khi trả lời. Bạn nói gì với người tuyển dụng một cách lịch sự?
+      stem_lang: vi
+      options:
+        - { id: n2o, text: 家族と相談した上で、改めてお返事いたします。, lang: ja }
+        - { id: r7s, text: 家族と相談したあげく、改めてお返事いたします。, lang: ja }
+        - { id: v3w, text: 家族と相談する上で、改めてお返事いたします。, lang: ja }
+        - { id: y8z, text: 家族と相談の末、改めて返事するよ。, lang: ja }
+    answer:
+      correct_option_id: n2o
+    explanation:
+      vi: Kế hoạch "bàn xong rồi mới trả lời" - V-た + 上で, kèm khiêm nhường お返事いたします. あげく là than phiền; 相談する上で sai thể; phương án cuối dùng 末 cho việc chưa xảy ra và kết bằng giọng suồng sã.
+    display_answer: 家族と相談した上で、改めてお返事いたします。
+
+  - key: ja:exercise:n2-u6-ageku-write-nayamu
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u6-nayamu
+    prompt:
+      source_text: Băn khoăn suốt nửa năm, rốt cuộc tôi lại không đi du học được. (giọng tiếc nuối, dùng あげく)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 半年も悩んだあげく、結局留学できなかった。
+        - 半年も悩んだあげく、留学できなかった。
+        - 半年間悩んだあげく、結局留学できなかった。
+        - 半年も悩んだあげく、結局留学に行けなかった。
+        - 半年も悩んだあげく、結局留学できませんでした。
+        - 半年も悩んだあげくに、結局留学できなかった。
+        - 半年も迷ったあげく、結局留学できなかった。
+        - はんとしもなやんだあげく、けっきょくりゅうがくできなかった。
+    known_wrong:
+      - answer: 半年も悩むあげく、結局留学できなかった。
+        feedback_vi: あげく gắn vào thể た - 悩んだあげく.
+        error_tag: ageku_form
+      - answer: 半年も悩んだ上で、結局留学できなかった。
+        feedback_vi: 上で là "làm xong A rồi mới B" theo kế hoạch; kết cục đáng tiếc sau thời gian dài dùng あげく.
+        error_tag: ue_ageku
+    explanation:
+      vi: 半年も - tận nửa năm (も nhấn mạnh thời gian dài); 悩んだあげく、結局… - băn khoăn mãi rốt cuộc lại...; 結局 rất hay đi cùng あげく.
+    display_answer: 半年も悩んだあげく、結局留学できなかった。
+
+  - key: ja:exercise:n2-u6-ageku-wb-uede
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ue-de
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Xin hãy đọc kỹ điều khoản rồi mới đăng ký.\""
+      tokens:
+        - { id: w3, text: 上で }
+        - { id: w5, text: 末に }
+        - { id: w1, text: 規約をよく }
+        - { id: w4, text: お申し込みください }
+        - { id: w2, text: 読んだ }
+    answer:
+      orders:
+        - [w1, w2, w3, w4]
+    explanation:
+      vi: V-た + 上で + lời nhờ - đọc kỹ rồi mới đăng ký. 末に kể kết quả đã xảy ra, không đi với lời nhờ ～ください.
+    display_answer: 規約をよく読んだ上でお申し込みください。

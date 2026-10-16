@@ -1,0 +1,512 @@
+# Học liệu unit "Quan hệ, căn cứ và kết cục trong văn viết" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～において / ～に関して / ～をめぐって =================
+  - key: ja:item:n2-u6-gram-ni-oite
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N + において / N + における + N
+      romanization: ni oite
+      pos: nơi chốn, lĩnh vực (văn viết)
+    back:
+      meaning:
+        vi: '"Tại, trong (lĩnh vực)..." - bản trang trọng của で. Dùng cho nơi tổ chức sự kiện (会場において), thời đại, lĩnh vực (医療において). Trước danh từ dùng における: 日本における外国人労働者.'
+      examples:
+        - target: 式典は市民ホールにおいて行われます。
+          translation:
+            vi: Buổi lễ được tổ chức tại hội trường thành phố.
+      pronunciation_note:
+        vi: おいて đọc "o-i-te", ba âm rõ ràng; không đọc dính thành "ôi-te".
+      confusion:
+        vi: において chỉ thay で "nơi chốn, phạm vi", không thay で "phương tiện" - nói バスで行く, không nói バスにおいて行く. Hội thoại hằng ngày dùng で là đủ; において nghe như thông báo, báo cáo.
+
+  - key: ja:item:n2-u6-gram-ni-kanshite
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + に関して / N + に関する + N
+      reading: にかんして
+      romanization: ni kanshite
+      pos: đề tài
+    back:
+      meaning:
+        vi: '"Liên quan đến, về..." - bản trang trọng của について. Trước danh từ dùng に関する: 環境に関する調査 (cuộc điều tra về môi trường).'
+      examples:
+        - target: この件に関して、何かご質問はありますか。
+          translation:
+            vi: Liên quan đến việc này, quý vị có câu hỏi gì không?
+      pronunciation_note:
+        vi: かん có âm mũi ん cuối - "kan", không đọc "ka".
+      confusion:
+        vi: に関して và について gần như cùng nghĩa; に関して trang trọng hơn và hợp văn bản, について tự nhiên hơn trong nói chuyện. Không nói 環境に関しての話 sai, nhưng に関する話 gọn hơn.
+
+  - key: ja:item:n2-u6-gram-wo-megutte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + をめぐって / N + をめぐる + N
+      romanization: o megutte
+      pos: tâm điểm tranh luận
+    back:
+      meaning:
+        vi: '"Xoay quanh (vấn đề)..." - N là tâm điểm mà nhiều người tranh cãi, đối lập. Vế sau thường là 議論, 対立, 争い, 意見が分かれる.'
+      examples:
+        - target: 新しい駅の場所をめぐって、住民の意見が分かれている。
+          translation:
+            vi: Xoay quanh vị trí nhà ga mới, ý kiến của cư dân đang chia rẽ.
+      pronunciation_note:
+        vi: めぐって có âm ngắt っ - "me-gu-t-te", ngừng một nhịp trước て.
+      confusion:
+        vi: をめぐって khác に関して - に関して chỉ nêu đề tài trung tính, をめぐって ngầm có tranh cãi, nhiều bên. Không dùng をめぐって cho một người tự nói về đề tài (×私をめぐって発表します).
+
+  - key: ja:item:n2-u6-giron
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 議論
+      reading: ぎろん
+      romanization: giron
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: cuộc thảo luận, tranh luận; 議論する - tranh luận; 議論を呼ぶ - gây tranh cãi
+      examples:
+        - target: その問題については、まだ議論が続いている。
+          translation:
+            vi: Về vấn đề đó, cuộc tranh luận vẫn đang tiếp diễn.
+      pronunciation_note:
+        vi: ぎ là âm đục "gi" (cổ họng rung), ろん có ん cuối.
+      confusion:
+        vi: 議論 là bàn luận có lý lẽ, nghiêm túc; cãi nhau vì cảm xúc là 口げんか. Hán Việt "nghị luận" giúp nhớ nghĩa.
+
+  - key: ja:item:n2-u6-tairitsu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 対立
+      reading: たいりつ
+      romanization: tairitsu
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự đối lập, đối đầu; 意見が対立する - ý kiến đối lập nhau
+      examples:
+        - target: 二つの党が税金の問題で対立している。
+          translation:
+            vi: Hai đảng đang đối đầu nhau về vấn đề thuế.
+      pronunciation_note:
+        vi: りつ đọc "ri-tsư", つ không phải "tư".
+      confusion:
+        vi: 対立 là hai bên đứng ở hai phía (Hán Việt "đối lập"); 反対 là một người phản đối một ý kiến. 対立 không có tân ngữ với を.
+
+  # ================= bài 2: ～に基づいて / ～を通じて / ～に応じて =================
+  - key: ja:item:n2-u6-gram-ni-motozuite
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N + に基づいて / N + に基づく + N
+      reading: にもとづいて
+      romanization: ni motozuite
+      pos: căn cứ
+    back:
+      meaning:
+        vi: '"Dựa trên, căn cứ vào..." - N là nền móng có sẵn (dữ liệu, luật, kinh nghiệm, câu chuyện có thật) để làm hoặc đánh giá việc gì. 事実に基づく映画 - phim dựa trên sự thật.'
+      examples:
+        - target: アンケートの結果に基づいて、メニューを見直した。
+          translation:
+            vi: Dựa trên kết quả khảo sát, chúng tôi đã xem lại thực đơn.
+      pronunciation_note:
+        vi: づ đọc giống ず - "mo-to-zu-i-te".
+      confusion:
+        vi: に基づいて cần một căn cứ cụ thể, khách quan. Làm theo lệnh, chỉ dẫn của ai thì dùng に従って (先生の指示に従って), không dùng に基づいて.
+
+  - key: ja:item:n2-u6-gram-wo-tsuujite
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + を通じて / N + を通して
+      reading: をつうじて / をとおして
+      romanization: o tsūjite / o tōshite
+      pos: phương tiện, khoảng thời gian
+    back:
+      meaning:
+        vi: '(1) "Thông qua..." - kênh, trung gian: 友人を通じて知り合った. (2) "Suốt cả (thời gian)": 一年を通じて暖かい (ấm áp quanh năm).'
+      examples:
+        - target: このアプリを通じて、世界中の人と話せる。
+          translation:
+            vi: Thông qua ứng dụng này, bạn có thể nói chuyện với mọi người trên khắp thế giới.
+      pronunciation_note:
+        vi: つう và とお đều là âm dài - "tsư-u", "tô-ô".
+      confusion:
+        vi: を通じて hay dùng cho kênh trừu tượng (truyền thông, người giới thiệu); を通して nhấn hành động chủ ý "qua tay ai". Đi bộ xuyên qua công viên là 公園を通る, không dùng を通じて.
+
+  - key: ja:item:n2-u6-gram-ni-oujite
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + に応じて / N + に応じた + N
+      reading: におうじて
+      romanization: ni ōjite
+      pos: tương ứng
+    back:
+      meaning:
+        vi: '"Tuỳ theo, tương ứng với..." - kết quả thay đổi theo N (年齢, レベル, 必要, 予算). 予算に応じたプラン - gói dịch vụ phù hợp với ngân sách.'
+      examples:
+        - target: 料金は利用時間に応じて変わります。
+          translation:
+            vi: Phí thay đổi tuỳ theo thời gian sử dụng.
+      pronunciation_note:
+        vi: おう là âm dài - "ô-ô-ji-te".
+      confusion:
+        vi: に応じて đi với danh từ có nhiều mức (tuổi, trình độ, số lượng); に対して là hướng tới một đối tượng. "Trả lương theo năng lực" là 能力に応じて, không phải 能力に対して.
+
+  - key: ja:item:n2-u6-kitei
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 規定
+      reading: きてい
+      romanization: kitei
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định (thành văn của tổ chức); 規定に基づいて - căn cứ theo quy định
+      examples:
+        - target: 会社の規定により、交通費は全額支給されます。
+          translation:
+            vi: Theo quy định của công ty, chi phí đi lại được thanh toán toàn bộ.
+      pronunciation_note:
+        vi: てい đọc "tê-ê", hơi kéo dài.
+      confusion:
+        vi: 規定 là điều khoản viết thành văn bản; 規則 là nội quy chung (trường, khu dân cư). Hán Việt "quy định" trùng nghĩa tiếng Việt.
+
+  - key: ja:item:n2-u6-yosan
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 予算
+      reading: よさん
+      romanization: yosan
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngân sách, số tiền dự tính chi; 予算オーバー - vượt ngân sách
+      examples:
+        - target: 旅行の予算は一人五万円です。
+          translation:
+            vi: Ngân sách cho chuyến du lịch là 50.000 yên một người.
+      pronunciation_note:
+        vi: よ ngắn, không kéo dài thành "yô-ô".
+      confusion:
+        vi: 予算 là tiền định chi trước (Hán Việt "dự toán"); 費用 là chi phí thực tế phải trả.
+
+  # ================= bài 3: ～あげく / ～末に / ～上で =================
+  - key: ja:item:n2-u6-gram-ageku
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-た / N-の + あげく(に)
+      romanization: ageku
+      pos: kết cục (xấu)
+    back:
+      meaning:
+        vi: '"Sau bao nhiêu..., rốt cuộc lại..." - sau một quá trình dài, mệt mỏi, kết quả lại đáng thất vọng hoặc không như ý. さんざん迷ったあげく、何も買わなかった.'
+      examples:
+        - target: 二時間も待たされたあげく、試合は中止になった。
+          translation:
+            vi: Bị bắt chờ tận hai tiếng, rốt cuộc trận đấu lại bị huỷ.
+      pronunciation_note:
+        vi: あげく đọc "a-ge-ku", trọng âm nhẹ đều.
+      confusion:
+        vi: あげく mang sắc thái tiêu cực, than phiền; kết quả tốt đẹp sau cố gắng dùng 末に. Thường đi với さんざん, 長い間, 何度も.
+
+  - key: ja:item:n2-u6-gram-sue-ni
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-た / N-の + 末(に)
+      reading: すえに
+      romanization: sue ni
+      pos: kết cục sau quá trình
+    back:
+      meaning:
+        vi: '"Sau khi... mãi, cuối cùng..." - nhấn quá trình dài (suy nghĩ, bàn bạc, cố gắng) rồi đi đến kết quả; kết quả có thể tốt hoặc trung tính. 話し合いの末, 悩んだ末に.'
+      examples:
+        - target: 何度も話し合った末に、二人は別れることにした。
+          translation:
+            vi: Sau nhiều lần nói chuyện, cuối cùng hai người quyết định chia tay.
+      pronunciation_note:
+        vi: すえ đọc "su-ê", hai nguyên âm tách rõ.
+      confusion:
+        vi: 末に trung tính, hợp văn viết; あげく than phiền. Không dùng 末に cho việc ngắn, đơn giản (×5分考えた末に).
+
+  - key: ja:item:n2-u6-gram-ue-de
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-た / N-の + 上で
+      reading: うえで
+      romanization: ue de
+      pos: điều kiện trước
+    back:
+      meaning:
+        vi: '"Sau khi đã... (rồi mới)..." - làm bước 1 cẩn thận làm cơ sở cho bước 2: よく考えた上で決めてください. Văn bản hướng dẫn rất hay dùng: 内容をご確認の上、ご署名ください.'
+      examples:
+        - target: 家族と相談した上で、お返事します。
+          translation:
+            vi: Sau khi bàn với gia đình, tôi sẽ trả lời anh.
+      pronunciation_note:
+        vi: うえ đọc "u-ê"; で đọc ngắn.
+      confusion:
+        vi: '上で khác てから - てから chỉ thứ tự thời gian, 上で nhấn bước 1 là điều kiện cần cho bước 2. V-る + 上で lại là "trong quá trình làm...": 日本語を学ぶ上で大切なこと.'
+
+  - key: ja:item:n2-u6-nayamu
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 悩む
+      reading: なやむ
+      romanization: nayamu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: băn khoăn, phiền não, đau đầu suy nghĩ; ～に悩む - khổ sở vì ~; 悩み - nỗi lo
+      examples:
+        - target: どちらの大学に行くか、まだ悩んでいます。
+          translation:
+            vi: Tôi vẫn đang băn khoăn không biết nên vào trường đại học nào.
+      pronunciation_note:
+        vi: なや đọc liền "na-ya", không chen âm "i".
+      confusion:
+        vi: 悩む là suy nghĩ day dứt vì khó chọn hoặc có rắc rối; 迷う là lưỡng lự giữa các lựa chọn hoặc lạc đường. 頭痛に悩む là khổ vì đau đầu.
+
+  - key: ja:item:n2-u6-keiyaku
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 契約
+      reading: けいやく
+      romanization: keiyaku
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: hợp đồng, ký kết; 契約を結ぶ - ký hợp đồng; 契約書 - bản hợp đồng
+      examples:
+        - target: 来月、新しい部屋の契約をします。
+          translation:
+            vi: Tháng sau tôi sẽ ký hợp đồng thuê căn phòng mới.
+      pronunciation_note:
+        vi: けい đọc "kê-ê"; やく có く cuối nhẹ.
+      confusion:
+        vi: Hán Việt "khế ước". Hợp đồng thuê nhà, điện thoại, việc làm đều dùng 契約; "ký" là 結ぶ hoặc する, không dùng 書く.
+
+  # ================= bài 4: ～がち / ～気味 / ～っぽい / ～だらけ =================
+  - key: ja:item:n2-u6-gram-gachi
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc / N + がち
+      romanization: gachi
+      pos: hay bị (khuynh hướng xấu)
+    back:
+      meaning:
+        vi: '"Hay (bị)..., dễ..." - việc không tốt xảy ra thường xuyên: 忘れがち, 遅れがち, 病気がち, 曇りがちの天気. Là tính từ đuôi な: 忘れがちな人.'
+      examples:
+        - target: 冬は運動不足になりがちだ。
+          translation:
+            vi: Mùa đông dễ bị thiếu vận động.
+      pronunciation_note:
+        vi: がち là âm đục "ga", không đọc "ka-chi".
+      confusion:
+        vi: がち chỉ khuynh hướng lặp lại, thường xấu; một lần thì không dùng. Thói quen tốt không dùng がち (×よく勉強しがちだ).
+
+  - key: ja:item:n2-u6-gram-gimi
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc / N + 気味
+      reading: ぎみ
+      romanization: gimi
+      pos: hơi có dấu hiệu
+    back:
+      meaning:
+        vi: '"Hơi bị..., có vẻ hơi..." - một trạng thái (thường xấu) ở mức nhẹ, ngay bây giờ: 風邪気味, 疲れ気味, 太り気味, 緊張気味.'
+      examples:
+        - target: 最近、少し疲れ気味です。
+          translation:
+            vi: Dạo này tôi hơi mệt.
+      pronunciation_note:
+        vi: 気味 đọc "gi-mi" (âm đục) khi làm hậu tố; đứng riêng 気味が悪い thì đọc きみ.
+      confusion:
+        vi: 気味 là trạng thái hiện tại ở mức nhẹ; がち là chuyện hay lặp lại. 風邪気味 = hơi cảm; 風邪をひきがち = hay bị cảm.
+
+  - key: ja:item:n2-u6-gram-ppoi
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: N / Vます-gốc / A-gốc + っぽい
+      romanization: ppoi
+      pos: có vẻ, hay (khẩu ngữ)
+    back:
+      meaning:
+        vi: '(1) "Trông giống, mang tính..." - 子どもっぽい (trẻ con), 白っぽい (trắng trắng). (2) "Hay..." - 忘れっぽい (hay quên), 怒りっぽい (dễ nổi nóng). Khẩu ngữ, chia như tính từ đuôi い.'
+      examples:
+        - target: 彼は怒りっぽいけど、根は優しい。
+          translation:
+            vi: Anh ấy dễ nổi nóng nhưng bản chất là người tốt.
+      pronunciation_note:
+        vi: っぽい có âm ngắt - ngừng một nhịp trước ぽ.
+      confusion:
+        vi: っぽい là "giống mà không phải" - 大人っぽい (trông chín chắn) nói về người chưa phải người lớn. らしい là "đúng chất" - 大人らしい là người lớn cư xử ra dáng người lớn.
+
+  - key: ja:item:n2-u6-gram-darake
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + だらけ
+      romanization: darake
+      pos: đầy (thứ không mong muốn)
+    back:
+      meaning:
+        vi: '"Đầy..., toàn là..." - bề mặt hoặc nội dung bị phủ kín bởi thứ không mong muốn: 間違いだらけ, 傷だらけ, 泥だらけ, ゴミだらけ.'
+      examples:
+        - target: 子どもたちは泥だらけになって帰ってきた。
+          translation:
+            vi: Bọn trẻ về nhà người lấm lem toàn bùn đất.
+      pronunciation_note:
+        vi: だらけ đọc "da-ra-ke"; だ là âm "d" nhẹ của tiếng Nhật, không phải "đ" tiếng Việt.
+      confusion:
+        vi: だらけ mang nghĩa tiêu cực; thứ tốt đầy ắp dùng いっぱい (花がいっぱい). Không nói ×お金だらけ để khen giàu có.
+
+  - key: ja:item:n2-u6-nebusoku
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 寝不足
+      reading: ねぶそく
+      romanization: nebusoku
+      pos: danh từ / な
+    back:
+      meaning:
+        vi: thiếu ngủ; 寝不足気味 - hơi thiếu ngủ
+      examples:
+        - target: 寝不足で、授業中に何度もあくびをした。
+          translation:
+            vi: Vì thiếu ngủ nên tôi ngáp mấy lần trong giờ học.
+      pronunciation_note:
+        vi: ぶ là âm đục "bu"; そく có く cuối nhẹ.
+      confusion:
+        vi: '寝不足 = 寝る (ngủ) + 不足 (thiếu). Cùng kiểu: 運動不足 (thiếu vận động), 人手不足 (thiếu nhân lực).'
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n2-u6-saikaihatsu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 再開発
+      reading: さいかいはつ
+      romanization: saikaihatsu
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: tái phát triển, cải tạo quy hoạch lại một khu vực
+      examples:
+        - target: 駅前の再開発で、古い商店街がなくなった。
+          translation:
+            vi: Vì dự án cải tạo khu trước nhà ga, khu phố buôn bán cũ đã biến mất.
+      pronunciation_note:
+        vi: Năm âm tiết đều nhau "sai-kai-ha-tsư"; はつ có つ cuối nhẹ.
+      confusion:
+        vi: 再 (tái) + 開発 (khai phát). 開発 một mình là phát triển sản phẩm, đất đai mới; 再開発 là làm lại khu đã có.
+
+  - key: ja:item:n2-u6-goui
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 合意
+      reading: ごうい
+      romanization: gōi
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự đồng thuận, thoả thuận giữa các bên; 合意に達する - đi đến thoả thuận
+      examples:
+        - target: 両社は来年の協力について合意した。
+          translation:
+            vi: Hai công ty đã đạt thoả thuận về việc hợp tác năm sau.
+      pronunciation_note:
+        vi: ごう là âm dài - "gô-ô-i", ba nhịp.
+      confusion:
+        vi: 合意 là nhiều bên cùng đồng ý (Hán Việt "hợp ý"); 賛成 là một người tán thành một đề xuất.
+
+  - key: ja:item:n2-u6-miokuru
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 見送る
+      reading: みおくる
+      romanization: miokuru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: (1) tiễn (ai); (2) hoãn lại, gác lại (kế hoạch, quyết định) - nghĩa hay gặp trong tin tức
+      examples:
+        - target: 反対意見が多く、計画は見送られた。
+          translation:
+            vi: Vì nhiều ý kiến phản đối, kế hoạch đã bị gác lại.
+      pronunciation_note:
+        vi: みおくる đọc "mi-o-ku-ru", không nuốt âm お.
+      confusion:
+        vi: Trong tin tức, 見送る là "chưa làm, để sau" chứ không phải huỷ hẳn (中止). 駅で友達を見送る lại là tiễn bạn ở ga.

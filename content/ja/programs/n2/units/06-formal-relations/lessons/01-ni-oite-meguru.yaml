@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u6-ni-oite-meguru
+order_index: 1
+level: n2
+title:
+  vi: Nơi chốn, đề tài và tâm điểm tranh luận - ～において, ～に関して, ～をめぐって
+objectives:
+  - vi: Thay で bằng において / における trong thông báo, báo cáo.
+  - vi: Nêu đề tài trang trọng bằng に関して / に関する.
+  - vi: Nói về vấn đề gây tranh cãi bằng をめぐって / をめぐる.
+estimated_minutes: 20
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-certainty-obligation-review]
+items:
+  - item: ja:item:n2-u6-gram-ni-oite
+  - item: ja:item:n2-u6-gram-ni-kanshite
+  - item: ja:item:n2-u6-gram-wo-megutte
+  - item: ja:item:n2-u6-giron
+  - item: ja:item:n2-u6-tairitsu
+  - item: ja:item:n3-kaisai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu thông báo kiểu "Hội nghị được tổ chức tại...", "Về vấn đề..., xin liên hệ..." và tin tức "Xoay quanh dự án..., cư dân đang tranh cãi" - ba mẫu xuất hiện dày đặc trong văn bản N2.
+  - type: explain
+    text:
+      vi: 'において là bản trang trọng của で chỉ nơi chốn, lĩnh vực: 会議室で → 会議室において. Trước danh từ đổi thành における: 日本における少子化 (tình trạng ít trẻ em ở Nhật). Nói chuyện hằng ngày vẫn dùng で; において nghe như thông báo.'
+  - type: explain
+    text:
+      vi: 'に関して giống について ("về..."), nhưng trang trọng hơn; trước danh từ là に関する: 個人情報に関する規則. Tiếng Việt chỉ có một chữ "về", tiếng Nhật chọn theo mức trang trọng.'
+  - type: explain
+    text:
+      vi: 'をめぐって nghĩa là "xoay quanh" - N là tâm điểm mà nhiều bên tranh cãi, đối lập. Vế sau hầu như luôn là 議論, 対立, 争い, 意見が分かれる; nếu chỉ nêu đề tài trung tính thì dùng に関して.'
+  - type: deep_explain
+    text:
+      vi: 'Cách nhớ: において trả lời "ở đâu/trong lĩnh vực nào", に関して trả lời "về cái gì", をめぐって trả lời "người ta đang cãi nhau vì cái gì". Cả ba có dạng nối danh từ: における / に関する / をめぐる + N - rất hay gặp trong tiêu đề báo và đề thi đọc hiểu.'
+  - type: example
+    target: 卒業式は大学の講堂において行われる。
+    target_lang: ja
+    translation:
+      vi: Lễ tốt nghiệp được tổ chức tại giảng đường lớn của trường.
+    note:
+      vi: において thay で trong thông báo.
+  - type: example
+    target: 医療における AI の役割は、ますます大きくなっている。
+    target_lang: ja
+    translation:
+      vi: Vai trò của AI trong y tế ngày càng lớn.
+    note:
+      vi: における + danh từ (役割).
+  - type: example
+    target: 新しい制度に関するご質問は、窓口までお問い合わせください。
+    target_lang: ja
+    translation:
+      vi: Câu hỏi về chế độ mới, xin vui lòng liên hệ quầy tiếp nhận.
+  - type: example
+    target: ゴミ処理場の建設をめぐって、市と住民が対立している。
+    target_lang: ja
+    translation:
+      vi: Xoay quanh việc xây nhà máy xử lý rác, thành phố và cư dân đang đối đầu nhau.
+    note:
+      vi: をめぐって + 対立 - có hai phía tranh chấp.
+  - type: common_mistake
+    wrong: 私は電車において会社へ行きます。
+    right: 私は電車で会社へ行きます。
+    target_lang: ja
+    note:
+      vi: において chỉ thay で "nơi chốn, phạm vi", không thay で "phương tiện". Dùng nó trong câu đời thường cũng làm câu nghe cứng như văn bản.
+  - type: common_mistake
+    wrong: 来週の旅行をめぐって、友達にメールを書いた。
+    right: 来週の旅行に関して、友達にメールを書いた。
+    target_lang: ja
+    note:
+      vi: Viết thư về chuyến đi là nêu đề tài trung tính, không có ai tranh cãi - dùng に関して (hoặc について). をめぐって cần một vấn đề gây đối lập.
+  - type: summary
+    points:
+      - vi: N において / における N - tại, trong (lĩnh vực); bản trang trọng của で.
+      - vi: N に関して / に関する N - về, liên quan đến; trang trọng hơn について.
+      - vi: N をめぐって / をめぐる N - xoay quanh vấn đề gây tranh cãi.
+      - vi: 議論 - tranh luận; 対立 - đối lập, đối đầu.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u6-oite-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-wo-megutte
+    prompt:
+      stem: 'Chọn từ hợp nhất: 消費税の引き上げ ＿＿、国会で激しい議論が続いている。 ("Xoay quanh việc tăng thuế tiêu dùng, Quốc hội vẫn đang tranh luận gay gắt.")'
+      stem_lang: vi
+      options:
+        - { id: k2m, text: をめぐって, lang: ja }
+        - { id: p7q, text: において, lang: ja }
+        - { id: s4t, text: に対して, lang: ja }
+        - { id: w9x, text: によって, lang: ja }
+    answer:
+      correct_option_id: k2m
+    explanation:
+      vi: Tăng thuế là tâm điểm gây tranh cãi, vế sau là 激しい議論 - đúng chỗ của をめぐって. において chỉ nơi chốn; に対して là hướng tới một đối tượng; によって là nguyên nhân, phương tiện.
+    display_answer: をめぐって
+
+  - key: ja:exercise:n2-u6-oite-listen-kaisai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ni-oite
+    prompt:
+      audio_asset_id: null
+      fallback_text: 次回の説明会は、本社の三階会議室において開催いたします。
+      options:
+        - { id: a3c, text: Buổi giới thiệu lần tới sẽ được tổ chức tại phòng họp tầng 3 của trụ sở chính., lang: vi }
+        - { id: d8f, text: Buổi giới thiệu lần tới sẽ bị huỷ vì phòng họp tầng 3 đang sửa chữa., lang: vi }
+        - { id: g1h, text: Buổi giới thiệu lần trước đã được tổ chức tại trụ sở chính., lang: vi }
+        - { id: j6k, text: Buổi giới thiệu lần tới sẽ bàn về việc xây phòng họp mới., lang: vi }
+    answer:
+      correct_option_id: a3c
+    explanation:
+      vi: 次回 - lần tới; 三階会議室において - tại phòng họp tầng 3; 開催いたします - (chúng tôi) xin tổ chức. において ở đây chỉ đơn giản là "tại", bản trang trọng của で.
+    display_answer: Buổi giới thiệu lần tới sẽ được tổ chức tại phòng họp tầng 3 của trụ sở chính.
+
+  - key: ja:exercise:n2-u6-oite-fill-kansuru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ni-kanshite
+    prompt:
+      template: "個人情報の扱い{{b1}}規則が、来月から変わります。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Quy định về việc xử lý thông tin cá nhân sẽ thay đổi từ tháng sau."
+        - "Gợi ý: dạng của に関して đứng ngay trước danh từ 規則."
+    answer:
+      blanks:
+        b1: [に関する, にかんする, についての]
+    known_wrong:
+      - answer: に関して
+        feedback_vi: Ngay trước danh từ phải dùng dạng nối danh từ に関する; に関して đứng trước động từ, cả cụm vế sau.
+        error_tag: noun_modifier_form
+      - answer: をめぐって
+        feedback_vi: Quy định không phải tâm điểm tranh cãi, và trước danh từ phải là dạng ～る.
+        error_tag: megutte_kanshite
+    explanation:
+      vi: N に関する + N - "N về ~". 個人情報の扱いに関する規則 - quy định về việc xử lý thông tin cá nhân. についての cũng đúng nhưng ít trang trọng hơn.
+    display_answer: 個人情報の扱いに関する規則が、来月から変わります。
+
+  - key: ja:exercise:n2-u6-oite-mcq-giron
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u6-giron
+    prompt:
+      stem: 'Câu 増税の是非について、議論が分かれている。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: m5n, text: "Về việc có nên tăng thuế hay không, các ý kiến tranh luận đang chia rẽ.", lang: vi }
+        - { id: q2r, text: "Về việc tăng thuế, mọi người đã nhất trí.", lang: vi }
+        - { id: t8u, text: Việc tăng thuế đã được quyết định sau khi tranh luận., lang: vi }
+        - { id: x4y, text: Mọi người không muốn tranh luận về thuế., lang: vi }
+    answer:
+      correct_option_id: m5n
+    explanation:
+      vi: 是非 - nên hay không; 議論が分かれる - tranh luận chia thành nhiều phía, chưa ngã ngũ. Ngược với 合意 (đồng thuận) hay 決まる (được quyết định).
+    display_answer: Về việc có nên tăng thuế hay không, các ý kiến tranh luận đang chia rẽ.
+
+  - key: ja:exercise:n2-u6-oite-wb-oite
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u6-gram-ni-oite
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ở Nhật, số người cao tuổi sống một mình đang tăng lên.\""
+      tokens:
+        - { id: o2, text: 増えている }
+        - { id: o4, text: 日本をめぐって }
+        - { id: o3, text: 一人暮らしの高齢者が }
+        - { id: o1, text: 日本において }
+    answer:
+      orders:
+        - [o1, o3, o2]
+        - [o3, o1, o2]
+    explanation:
+      vi: において bổ nghĩa cho cả vế câu (増えている), nên đứng đầu câu hoặc ngay trước động từ đều được. をめぐって cần một vấn đề gây tranh cãi, không dùng để chỉ nơi chốn như "ở Nhật".
+    display_answer: 日本において一人暮らしの高齢者が増えている。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u6-oite-fill-meguru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-wo-megutte
+    prompt:
+      template: "遺産{{b1}}争いで、兄弟は十年も口をきいていない。(xoay quanh, trước danh từ)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [をめぐる]
+    known_wrong:
+      - answer: をめぐって
+        feedback_vi: Ngay trước danh từ 争い phải dùng dạng nối danh từ をめぐる.
+        error_tag: noun_modifier_form
+      - answer: に関する
+        feedback_vi: Tranh chấp tài sản thừa kế là chuyện các bên giành giật - dùng をめぐる cho đúng sắc thái.
+        error_tag: megutte_kanshite
+    explanation:
+      vi: N をめぐる + 争い - cuộc tranh chấp xoay quanh N. 遺産 - tài sản thừa kế; 口をきかない - không nói chuyện với nhau.
+    display_answer: 遺産をめぐる争いで、兄弟は十年も口をきいていない。
+
+  - key: ja:exercise:n2-u6-oite-write-kanshite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-kanshite
+    prompt:
+      source_text: Về lịch trình chuyến công tác, tôi sẽ liên lạc lại sau. (lịch sự, dùng に関して)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 出張の日程に関して、後ほどご連絡いたします。
+        - 出張の日程に関して、後ほどご連絡します。
+        - 出張の日程に関して、あとでご連絡します。
+        - 出張の日程に関して、後で連絡します。
+        - 出張の日程に関しては、後ほどご連絡いたします。
+        - 出張のスケジュールに関して、後ほどご連絡いたします。
+        - 出張の日程に関して、改めてご連絡いたします。
+        - しゅっちょうのにっていにかんして、のちほどごれんらくいたします。
+    known_wrong:
+      - answer: 出張の日程に関する、後ほどご連絡いたします。
+        feedback_vi: に関する chỉ đứng trước danh từ. Trước cả vế "sẽ liên lạc" dùng に関して.
+        error_tag: noun_modifier_form
+      - answer: 出張の日程をめぐって、後ほどご連絡いたします。
+        feedback_vi: Lịch trình không phải chuyện tranh cãi; nêu đề tài trung tính dùng に関して.
+        error_tag: megutte_kanshite
+    explanation:
+      vi: N に関して + vế câu - "về N, ...". 後ほど là bản lịch sự của あとで; ご連絡いたします là khiêm nhường, hợp email công việc.
+    display_answer: 出張の日程に関して、後ほどご連絡いたします。
+
+  - key: ja:exercise:n2-u6-oite-write-tairitsu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-tairitsu
+    prompt:
+      source_text: Xoay quanh giá vé tàu, công ty đường sắt và hành khách đang đối lập nhau. (dùng をめぐって)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 運賃をめぐって、鉄道会社と乗客が対立している。
+        - 運賃をめぐって、鉄道会社と乗客の意見が対立している。
+        - 運賃をめぐって、鉄道会社と利用者が対立している。
+        - 電車の運賃をめぐって、鉄道会社と乗客が対立している。
+        - 電車の料金をめぐって、鉄道会社と乗客が対立している。
+        - 運賃をめぐって、鉄道会社と乗客が対立しています。
+        - 運賃をめぐり、鉄道会社と乗客が対立している。
+        - うんちんをめぐって、てつどうがいしゃとじょうきゃくがたいりつしている。
+    known_wrong:
+      - answer: 運賃をめぐって、鉄道会社と乗客を対立している。
+        feedback_vi: 対立する là nội động từ, không có tân ngữ を. Hai bên làm chủ ngữ với が.
+        error_tag: particle
+      - answer: 運賃において、鉄道会社と乗客が対立している。
+        feedback_vi: において chỉ nơi chốn, lĩnh vực; tâm điểm tranh chấp dùng をめぐって.
+        error_tag: megutte_oite
+    explanation:
+      vi: N をめぐって + A と B が対立している - A và B đối đầu xoay quanh N. 運賃 - giá vé tàu xe; をめぐり là dạng văn viết của をめぐって.
+    display_answer: 運賃をめぐって、鉄道会社と乗客が対立している。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u6-oite-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-oite
+    prompt:
+      source_text: 現代社会における家族の形は、昔とは大きく異なる。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hình thức gia đình trong xã hội hiện đại khác xa so với ngày xưa.
+        - Hình thức gia đình trong xã hội hiện đại rất khác so với ngày xưa.
+        - Hình thức gia đình trong xã hội hiện đại khác rất nhiều so với trước đây.
+        - Mô hình gia đình trong xã hội hiện đại khác xa ngày xưa.
+        - Mô hình gia đình trong xã hội hiện đại khác nhiều so với trước kia.
+        - Kiểu gia đình trong xã hội ngày nay khác xa so với ngày xưa.
+        - Hình thức gia đình trong xã hội ngày nay khác rất nhiều so với xưa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hình thức gia đình trong xã hội hiện đại giống như ngày xưa.
+        feedback_vi: 異なる là "khác", ngược với 同じ (giống).
+        error_tag: meaning
+    explanation:
+      vi: 現代社会における家族の形 - hình thức gia đình trong xã hội hiện đại (における nối danh từ); 大きく異なる - khác rất nhiều. 異なる là bản văn viết của 違う.
+    display_answer: Hình thức gia đình trong xã hội hiện đại khác xa so với ngày xưa.
+
+  - key: ja:exercise:n2-u6-oite-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-kanshite
+    prompt:
+      stem: Bạn viết dòng cuối của một thông báo gửi khách hàng, mời họ liên hệ nếu có câu hỏi về sản phẩm mới. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: c5e, text: 新製品に関するお問い合わせは、こちらまでお願いいたします。, lang: ja }
+        - { id: f2h, text: 新製品をめぐるお問い合わせは、こちらまでお願いいたします。, lang: ja }
+        - { id: i9k, text: 新製品に関してのお問い合わせは、こっちに聞いて。, lang: ja }
+        - { id: l4n, text: 新製品におけるお問い合わせは、こちらまでお願いいたします。, lang: ja }
+    answer:
+      correct_option_id: c5e
+    explanation:
+      vi: Câu hỏi về sản phẩm là đề tài trung tính - に関する + お問い合わせ, kết bằng lời nhờ lịch sự. をめぐる gợi ý có tranh cãi; における chỉ phạm vi nơi chốn; こっちに聞いて quá suồng sã với khách.
+    display_answer: 新製品に関するお問い合わせは、こちらまでお願いいたします。
+
+  - key: ja:exercise:n2-u6-oite-write-giron
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u6-giron
+    prompt:
+      source_text: Xoay quanh việc cấm điện thoại trong trường học, các cuộc tranh luận vẫn đang tiếp diễn. (dùng をめぐって và 議論)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 学校でのスマホ禁止をめぐって、議論が続いている。
+        - 学校でのスマートフォン禁止をめぐって、議論が続いている。
+        - 学校での携帯電話の禁止をめぐって、議論が続いている。
+        - 学校でスマホを禁止することをめぐって、議論が続いている。
+        - 学校でのスマホの禁止をめぐって、議論が続いている。
+        - 学校でのスマホ禁止をめぐって、議論が続いています。
+        - 学校でのスマホ禁止をめぐって、今も議論が続いている。
+        - 学校におけるスマホ禁止をめぐって、議論が続いている。
+        - 学校でのスマホ禁止をめぐり、議論が続いている。
+    known_wrong:
+      - answer: 学校でのスマホ禁止をめぐって、議論を続いている。
+        feedback_vi: 続く là nội động từ - 議論が続いている. Dùng を thì phải là 議論を続けている.
+        error_tag: transitivity
+      - answer: 学校でのスマホ禁止に関する、議論が続いている。
+        feedback_vi: に関する phải dính liền danh từ (に関する議論); có dấu phẩy chen giữa là dùng sai dạng.
+        error_tag: noun_modifier_form
+    explanation:
+      vi: N をめぐって + 議論が続いている - cuộc tranh luận xoay quanh N vẫn tiếp diễn. 学校での + N là cách nối "ở trường" vào danh từ; 学校における cũng đúng và trang trọng hơn.
+    display_answer: 学校でのスマホ禁止をめぐって、議論が続いている。
+
+  - key: ja:exercise:n2-u6-oite-wb-meguru
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-wo-megutte
+    prompt:
+      instruction: "Sắp xếp thành tiêu đề bài báo: \"Mâu thuẫn xoay quanh việc mở lại nhà máy điện hạt nhân ngày càng sâu sắc.\""
+      tokens:
+        - { id: m3, text: 対立が }
+        - { id: m1, text: 原発の再稼働 }
+        - { id: m4, text: 深まる }
+        - { id: m2, text: をめぐる }
+        - { id: m5, text: によると }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: N + をめぐる + 対立 - mâu thuẫn xoay quanh N; tiêu đề báo hay kết bằng thể từ điển (深まる). によると chỉ nguồn tin ("theo..."), không nói được tâm điểm của mâu thuẫn.
+    display_answer: 原発の再稼働をめぐる対立が深まる
