@@ -1,0 +1,621 @@
+# Học liệu unit "Công sở và kính ngữ" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: từ vựng công sở, ～ことになる, ～ようにする =================
+  - key: ja:item:n3-shiryou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 資料
+      reading: しりょう
+      romanization: shiryō
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài liệu (cho cuộc họp, nghiên cứu)
+      examples:
+        - target: 会議の資料を10部コピーしてください。
+          translation:
+            vi: Hãy photo 10 bộ tài liệu họp.
+      pronunciation_note:
+        vi: りょう là một âm "ryô" kéo dài; đọc tách thành "ri-yô" là sai.
+      confusion:
+        vi: 資料 là tài liệu tham khảo, trình bày; giấy tờ cần điền, nộp là 書類 (しょるい).
+
+  - key: ja:item:n3-shimekiri
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 締め切り
+      reading: しめきり
+      romanization: shimekiri
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạn chót (nộp bài, nộp hồ sơ)
+      examples:
+        - target: 報告書の締め切りは金曜日です。
+          translation:
+            vi: Hạn nộp báo cáo là thứ Sáu.
+      pronunciation_note:
+        vi: Đọc "si-mê-ki-ri".
+      confusion:
+        vi: Trước hạn chót dùng までに - 締め切りまでに出す. Cũng hay viết 締切.
+
+  - key: ja:item:n3-zangyou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 残業
+      reading: ざんぎょう
+      romanization: zangyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: làm thêm giờ; 残業する - làm thêm giờ
+      examples:
+        - target: 今日は仕事が多いので、残業します。
+          translation:
+            vi: Hôm nay nhiều việc nên tôi làm thêm giờ.
+      pronunciation_note:
+        vi: ん trước ぎ đọc "ng" - "zang-gyô", ぎょう kéo dài.
+      confusion:
+        vi: 残業 là ở lại làm sau giờ; làm vào ngày nghỉ là 休日出勤 (きゅうじつしゅっきん).
+
+  - key: ja:item:n3-shucchou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 出張
+      reading: しゅっちょう
+      romanization: shutchō
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến công tác; 出張する - đi công tác
+      examples:
+        - target: 来週、大阪に出張することになりました。
+          translation:
+            vi: Tuần sau tôi được cử đi công tác Osaka.
+      pronunciation_note:
+        vi: っ là âm ngắt - "shư(t)-chô-ô".
+      confusion:
+        vi: 出張 là đi vì công việc; đi chơi là 旅行. Đi công tác ở đâu dùng に hoặc へ.
+
+  - key: ja:item:n3-joushi
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 上司
+      reading: じょうし
+      romanization: jōshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: cấp trên, sếp
+      examples:
+        - target: 上司に相談してから決めます。
+          translation:
+            vi: Tôi sẽ quyết định sau khi bàn với sếp.
+      pronunciation_note:
+        vi: じょう kéo dài - "jô-ô-si".
+      confusion:
+        vi: Khi gọi trực tiếp không dùng 上司 mà gọi chức vụ - 部長, 課長 (không thêm さん). Cấp dưới là 部下 (ぶか).
+
+  - key: ja:item:n3-douryou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 同僚
+      reading: どうりょう
+      romanization: dōryō
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng nghiệp (ngang cấp)
+      examples:
+        - target: 同僚と一緒に昼ご飯を食べます。
+          translation:
+            vi: Tôi ăn trưa cùng đồng nghiệp.
+      pronunciation_note:
+        vi: Hai âm dài - "đô-ô-ryô-ô".
+      confusion:
+        vi: Người vào công ty trước mình là 先輩, sau mình là 後輩; 同僚 dùng chung cho người cùng làm.
+
+  - key: ja:item:n3-torihikisaki
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 取引先
+      reading: とりひきさき
+      romanization: torihikisaki
+      pos: danh từ
+    back:
+      meaning:
+        vi: đối tác kinh doanh, khách hàng (công ty có giao dịch)
+      examples:
+        - target: 午後は取引先との打ち合わせがあります。
+          translation:
+            vi: Buổi chiều tôi có buổi trao đổi với đối tác.
+      pronunciation_note:
+        vi: Đọc "tô-ri-hi-ki-xa-ki", き và さ đọc nhẹ.
+      confusion:
+        vi: 取引先 là công ty đối tác; khách mua hàng cá nhân là お客様. Cuộc họp nhỏ để trao đổi gọi là 打ち合わせ.
+
+  - key: ja:item:n3-gram-koto-ni-naru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển/ない)-ことになる
+      romanization: koto ni naru
+      pos: quyết định (không do mình)
+    back:
+      meaning:
+        vi: '"Được quyết định là...", "hoá ra sẽ..." - kết quả do công ty, tổ chức hoặc hoàn cảnh quyết định. 来月から大阪で働くことになりました.'
+      examples:
+        - target: 来週、大阪に出張することになりました。
+          translation:
+            vi: Tuần sau tôi được cử đi công tác Osaka.
+      pronunciation_note:
+        vi: ことに đọc liền "kô-tô-ni".
+      confusion:
+        vi: Tự mình quyết định dùng ことにする; người khác/hoàn cảnh quyết định dùng ことになる. Báo tin vui với người trên (kết hôn, chuyển việc) người Nhật hay dùng ことになりました cho khiêm tốn.
+
+  - key: ja:item:n3-gram-you-ni-suru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển/ない)-ようにする
+      romanization: yō ni suru
+      pos: cố gắng tạo thói quen
+    back:
+      meaning:
+        vi: '"Cố gắng (để)...", "chú ý (để)..." - nỗ lực đều đặn. 毎日早く寝るようにしています; 遅刻しないようにしてください.'
+      examples:
+        - target: 締め切りの前日までに出すようにしています。
+          translation:
+            vi: Tôi luôn cố gắng nộp trước hạn một ngày.
+      pronunciation_note:
+        vi: よう kéo dài "yô-ô".
+      confusion:
+        vi: ようにしています - thói quen đang duy trì; ようにします - quyết tâm từ nay. Khác ことにする (quyết định một lần).
+
+  # ================= bài 2: tôn kính ngữ =================
+  - key: ja:item:n3-gram-sonkeigo
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: お V(ます bỏ ます) になる · V-(ら)れる (尊敬語)
+      romanization: o ... ni naru
+      pos: tôn kính ngữ
+    back:
+      meaning:
+        vi: 'Nâng hành động của người trên, khách: お帰りになる, お待ちになる; nhẹ hơn - 帰られる, 書かれる (cùng dạng với bị động). Động từ có từ riêng thì dùng từ riêng (いらっしゃる, 召し上がる...).'
+      examples:
+        - target: 部長はもうお帰りになりました。
+          translation:
+            vi: Trưởng phòng đã về rồi ạ.
+      pronunciation_note:
+        vi: お và động từ đọc liền - "ô-ka-ê-ri ni na-ri-ma-si-ta".
+      confusion:
+        vi: Không dùng お～になる với động từ một âm tiết gốc (見る, 寝る) hay động từ có từ riêng - không nói お見になる mà nói ご覧になる. Tôn kính ngữ chỉ dùng cho hành động của người khác, không bao giờ cho mình.
+
+  - key: ja:item:n3-irassharu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: いらっしゃる
+      romanization: irassharu
+      pos: động từ tôn kính
+    back:
+      meaning:
+        vi: (tôn kính) đi / đến / ở - thay cho 行く, 来る, いる. Thể ます - いらっしゃいます.
+      examples:
+        - target: 社長は今、会議室にいらっしゃいます。
+          translation:
+            vi: Giám đốc hiện đang ở phòng họp ạ.
+      pronunciation_note:
+        vi: っ là âm ngắt - "i-ra(t)-sha-rư".
+      confusion:
+        vi: Thể ます là いらっしゃいます (không phải いらっしゃります). いらっしゃいませ là câu chào khách trong cửa hàng.
+
+  - key: ja:item:n3-meshiagaru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 召し上がる
+      reading: めしあがる
+      romanization: meshiagaru
+      pos: động từ tôn kính
+    back:
+      meaning:
+        vi: (tôn kính) ăn / uống - thay cho 食べる, 飲む
+      examples:
+        - target: どうぞ、温かいうちに召し上がってください。
+          translation:
+            vi: Xin mời dùng khi còn nóng ạ.
+      pronunciation_note:
+        vi: Đọc "mê-si-a-ga-rư".
+      confusion:
+        vi: Mời khách ăn dùng 召し上がってください; tự nói mình ăn dùng いただきます (khiêm nhường), không dùng 召し上がる.
+
+  - key: ja:item:n3-ossharu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: おっしゃる
+      romanization: ossharu
+      pos: động từ tôn kính
+    back:
+      meaning:
+        vi: (tôn kính) nói - thay cho 言う. Thể ます - おっしゃいます.
+      examples:
+        - target: 先生がおっしゃったとおりにやってみます。
+          translation:
+            vi: Em sẽ thử làm đúng như thầy đã nói.
+      pronunciation_note:
+        vi: っ là âm ngắt - "ô(t)-sha-rư".
+      confusion:
+        vi: Thể ます là おっしゃいます. Câu hỏi lịch sự "Xin lỗi, anh nói gì ạ?" - もう一度おっしゃっていただけますか.
+
+  - key: ja:item:n3-goran-ni-naru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: ご覧になる
+      reading: ごらんになる
+      romanization: goran ni naru
+      pos: động từ tôn kính
+    back:
+      meaning:
+        vi: (tôn kính) xem - thay cho 見る
+      examples:
+        - target: こちらの資料をご覧ください。
+          translation:
+            vi: Xin mời xem tài liệu này ạ.
+      pronunciation_note:
+        vi: ん trước に - "gô-ran-ni".
+      confusion:
+        vi: ご覧ください là lời mời xem rất hay dùng khi thuyết trình. Không nói お見になる.
+
+  # ================= bài 3: khiêm nhường ngữ =================
+  - key: ja:item:n3-gram-kenjougo
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: お V(ます bỏ ます) する · ご N する (謙譲語)
+      romanization: o ... suru
+      pos: khiêm nhường ngữ
+    back:
+      meaning:
+        vi: 'Hạ thấp hành động của mình khi việc đó liên quan, hướng về người trên/khách: お持ちします (tôi xin cầm giúp), お送りします, ご案内します, ご連絡します.'
+      examples:
+        - target: 荷物をお持ちしましょうか。
+          translation:
+            vi: Để tôi cầm hành lý giúp anh/chị nhé?
+      pronunciation_note:
+        vi: Đọc liền "ô-mô-chi si-ma-sho-ô-ka".
+      confusion:
+        vi: Từ Hán (連絡, 案内, 説明) dùng ご, từ thuần Nhật dùng お. Không dùng お～する cho việc không liên quan đến người kia - 私がお寝します là sai.
+
+  - key: ja:item:n3-mairu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 参る
+      reading: まいる
+      romanization: mairu
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: (khiêm nhường) đi / đến - thay cho 行く, 来る khi nói về mình
+      examples:
+        - target: 明日の10時にそちらへ参ります。
+          translation:
+            vi: 10 giờ sáng mai tôi sẽ đến chỗ anh/chị ạ.
+      pronunciation_note:
+        vi: Đọc "ma-i-rư".
+      confusion:
+        vi: Thông báo ở ga - 電車が参ります - cũng dùng 参る để lịch sự với hành khách. Khi đến nhà/công ty người trên, 伺う tôn trọng nơi đến hơn.
+
+  - key: ja:item:n3-mousu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 申す
+      reading: もうす
+      romanization: mōsu
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: (khiêm nhường) nói, tên là - thay cho 言う. 私はグエンと申します - tôi tên là Nguyễn.
+      examples:
+        - target: はじめまして。ABC社のグエンと申します。
+          translation:
+            vi: Xin chào, tôi là Nguyễn của công ty ABC.
+      pronunciation_note:
+        vi: もう kéo dài - "mô-ô-xư".
+      confusion:
+        vi: Tự giới thiệu trang trọng dùng ～と申します. 申し上げる còn khiêm hơn, dùng khi nói với người rất trên - お礼を申し上げます.
+
+  - key: ja:item:n3-ukagau
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 伺う
+      reading: うかがう
+      romanization: ukagau
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: (khiêm nhường) đến thăm; hỏi; nghe - thay cho 訪ねる, 聞く
+      examples:
+        - target: 少し伺いたいことがあるのですが…。
+          translation:
+            vi: Tôi có chút việc muốn hỏi ạ…
+      pronunciation_note:
+        vi: Đọc "ư-ka-ga-ư".
+      confusion:
+        vi: 伺う có ba nghĩa - đến thăm (明日伺います), hỏi (伺ってもいいですか), nghe (お話は伺っています). Dựa vào ngữ cảnh để hiểu.
+
+  - key: ja:item:n3-haiken
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 拝見する
+      reading: はいけんする
+      romanization: haiken suru
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: (khiêm nhường) xem - thay cho 見る khi mình xem đồ của người trên
+      examples:
+        - target: 資料を拝見しました。
+          translation:
+            vi: Tôi đã xem tài liệu rồi ạ.
+      pronunciation_note:
+        vi: Đọc "hai-kên", ん cuối mũi.
+      confusion:
+        vi: Mình xem - 拝見する; người trên xem - ご覧になる. Đổi chỗ hai từ này là lỗi kính ngữ rất hay gặp.
+
+  # ================= bài 4: điện thoại và email =================
+  - key: ja:item:n3-osewa
+    type: phrase
+    level: n3
+    difficulty: 2
+    skill_tags: [speaking, culture]
+    front:
+      text: お世話になっております
+      reading: おせわになっております
+      romanization: osewa ni natte orimasu
+      pos: câu chào công việc
+    back:
+      meaning:
+        vi: '"Cảm ơn anh/chị luôn giúp đỡ" - câu mở đầu cố định khi gọi điện, viết email cho đối tác.'
+      examples:
+        - target: お世話になっております。ABC社のグエンです。
+          translation:
+            vi: Cảm ơn anh/chị luôn giúp đỡ. Tôi là Nguyễn của công ty ABC.
+      pronunciation_note:
+        vi: せわ đọc "xê-wa"; おります - "ô-ri-ma-xư".
+      confusion:
+        vi: Đây là câu xã giao, không cần dịch sát nghĩa. Không dùng với đồng nghiệp trong cùng công ty - nội bộ dùng お疲れ様です.
+
+  - key: ja:item:n3-shoushou
+    type: phrase
+    level: n3
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 少々お待ちください
+      reading: しょうしょうおまちください
+      romanization: shōshō omachi kudasai
+      pos: câu cố định
+    back:
+      meaning:
+        vi: xin vui lòng chờ một chút (lịch sự hơn ちょっと待ってください)
+      examples:
+        - target: 担当者に代わりますので、少々お待ちください。
+          translation:
+            vi: Tôi xin chuyển máy cho người phụ trách, xin vui lòng chờ một chút.
+      pronunciation_note:
+        vi: しょうしょう - hai âm dài "shô-ô-shô-ô".
+      confusion:
+        vi: 少々 là cách nói trang trọng của ちょっと; dùng với khách, đối tác. Với bạn bè nói ちょっと待って.
+
+  - key: ja:item:n3-orikaeshi
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 折り返し
+      reading: おりかえし
+      romanization: orikaeshi
+      pos: danh từ / phó từ
+    back:
+      meaning:
+        vi: gọi lại (sau khi nhận cuộc gọi nhỡ hoặc lời nhắn); 折り返し電話する
+      examples:
+        - target: 戻りましたら、折り返しお電話いたします。
+          translation:
+            vi: Khi anh ấy quay lại, chúng tôi sẽ gọi lại cho anh/chị ạ.
+      pronunciation_note:
+        vi: Đọc "ô-ri-ka-ê-si".
+      confusion:
+        vi: 折り返し nghĩa gốc là "gập lại, quay đầu". Trong điện thoại công việc, 折り返し luôn hiểu là gọi lại.
+
+  - key: ja:item:n3-seki-wo-hazusu
+    type: phrase
+    level: n3
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: 席を外しております
+      reading: せきをはずしております
+      romanization: seki o hazushite orimasu
+      pos: câu cố định
+    back:
+      meaning:
+        vi: (người đó) đang không có ở chỗ ngồi - câu trả lời điện thoại khi người được gọi tạm vắng
+      examples:
+        - target: 申し訳ございません。田中はただいま席を外しております。
+          translation:
+            vi: Xin lỗi, anh Tanaka hiện không có ở chỗ ạ.
+      pronunciation_note:
+        vi: 外して - "ha-dư-si-tê".
+      confusion:
+        vi: Nói về người cùng công ty với khách bên ngoài - gọi họ không có さん (田中は) và dùng khiêm nhường おります, kể cả khi đó là sếp của bạn.
+
+  - key: ja:item:n3-gram-te-itadakemasenka
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-ていただけませんか · V-ていただけますか
+      romanization: -te itadakemasen ka
+      pos: nhờ vả lịch sự
+    back:
+      meaning:
+        vi: '"Anh/chị có thể ... giúp tôi được không ạ?" - cách nhờ người trên, khách hàng rất lịch sự. もう一度説明していただけませんか.'
+      examples:
+        - target: お名前をもう一度教えていただけませんか。
+          translation:
+            vi: Anh/chị có thể cho tôi biết lại tên được không ạ?
+      pronunciation_note:
+        vi: いただけません - "i-ta-đa-kê-ma-xên".
+      confusion:
+        vi: Mức lịch sự tăng dần - ～てください < ～てくれませんか < ～ていただけますか < ～ていただけませんか. Với khách hàng tránh ～てください khi là nhờ vả.
+
+  # ================= bài 5: ôn tập (email công việc) =================
+  - key: ja:item:n3-kakunin
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 確認する
+      reading: かくにんする
+      romanization: kakunin suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: kiểm tra, xác nhận; ご確認ください - xin vui lòng kiểm tra
+      examples:
+        - target: 添付の資料をご確認ください。
+          translation:
+            vi: Xin vui lòng kiểm tra tài liệu đính kèm.
+      pronunciation_note:
+        vi: Đọc "ka-kư-nin", く đọc rất nhẹ.
+      confusion:
+        vi: 確認 là kiểm tra cho chắc; kiểm tra kỹ lỗi, chất lượng là チェックする hoặc 点検する.
+
+  - key: ja:item:n3-shouchi
+    type: phrase
+    level: n3
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: 承知しました
+      reading: しょうちしました
+      romanization: shōchi shimashita
+      pos: câu cố định
+    back:
+      meaning:
+        vi: Tôi đã rõ / Vâng, tôi hiểu rồi ạ (trang trọng hơn わかりました)
+      examples:
+        - target: 承知しました。明日までに準備いたします。
+          translation:
+            vi: Tôi rõ rồi ạ. Tôi sẽ chuẩn bị xong trước ngày mai.
+      pronunciation_note:
+        vi: しょう kéo dài "shô-ô-chi".
+      confusion:
+        vi: Với sếp, khách - 承知しました hoặc かしこまりました; わかりました nghe hơi suồng sã trong công việc. 了解です chỉ nên dùng với đồng nghiệp ngang cấp.
+
+  - key: ja:item:n3-moushiwake
+    type: phrase
+    level: n3
+    difficulty: 3
+    skill_tags: [speaking, writing]
+    front:
+      text: 申し訳ございません
+      reading: もうしわけございません
+      romanization: mōshiwake gozaimasen
+      pos: câu xin lỗi
+    back:
+      meaning:
+        vi: Tôi vô cùng xin lỗi (mức trang trọng cao nhất, dùng với khách, đối tác)
+      examples:
+        - target: ご迷惑をおかけして、申し訳ございません。
+          translation:
+            vi: Tôi vô cùng xin lỗi vì đã gây phiền phức cho anh/chị.
+      pronunciation_note:
+        vi: もうし kéo dài - "mô-ô-si-wa-kê".
+      confusion:
+        vi: Mức tăng dần - すみません < 申し訳ありません < 申し訳ございません. Không nói 申し訳ないです với khách vì nghe thiếu trang trọng.
+
+  - key: ja:item:n3-tenpu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 添付
+      reading: てんぷ
+      romanization: tenpu
+      pos: danh từ
+    back:
+      meaning:
+        vi: đính kèm (tệp trong email); 添付ファイル - tệp đính kèm
+      examples:
+        - target: 見積書を添付いたしました。
+          translation:
+            vi: Tôi đã đính kèm bảng báo giá.
+      pronunciation_note:
+        vi: ん trước ぷ đọc như "m" - "tem-pư".
+      confusion:
+        vi: Đừng nhầm với 天ぷら (てんぷら - món tempura). Trong email, 添付 thường đi với いたします hoặc ご確認ください.

@@ -1,0 +1,390 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-workplace
+order_index: 1
+level: n3
+title:
+  vi: Từ vựng công sở - ～ことになる và ～ようにする
+objectives:
+  - vi: Nắm từ vựng công sở cơ bản - tài liệu, hạn chót, làm thêm giờ, công tác, sếp, đồng nghiệp, đối tác.
+  - vi: Báo tin được công ty quyết định bằng ～ことになりました.
+  - vi: Nói về nỗ lực, thói quen ở chỗ làm bằng ～ようにしています / ～ようにしてください.
+estimated_minutes: 18
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ja:lesson:n3-passive-causative-review]
+items:
+  - item: ja:item:n3-shiryou
+  - item: ja:item:n3-shimekiri
+  - item: ja:item:n3-zangyou
+  - item: ja:item:n3-shucchou
+  - item: ja:item:n3-joushi
+  - item: ja:item:n3-douryou
+  - item: ja:item:n3-torihikisaki
+  - item: ja:item:n3-gram-koto-ni-naru
+  - item: ja:item:n3-gram-you-ni-suru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được công việc hằng ngày ở công ty Nhật, báo tin "tôi được cử đi công tác", và nói "tôi luôn cố nộp trước hạn".
+  - type: explain
+    text:
+      vi: 'Từ vựng cốt lõi: 資料 (tài liệu), 締め切り (hạn chót), 残業 (làm thêm giờ), 出張 (công tác), 上司 (sếp), 同僚 (đồng nghiệp), 取引先 (đối tác). Nhiều từ là Hán Việt - 資料 "tư liệu", 出張 "xuất trương" - nhớ âm Hán Việt giúp bạn đoán nghĩa nhanh hơn.'
+  - type: explain
+    text:
+      vi: 'ことになる - việc được quyết định bởi công ty, hoàn cảnh, không phải bởi mình: 来月から大阪で働くことになりました. So với ことにする (tự mình quyết định): 来月から毎朝走ることにしました.'
+  - type: explain
+    text:
+      vi: 'ようにする - cố gắng duy trì, chú ý làm: 毎朝早く来るようにしています (tôi luôn cố đến sớm). Nhắc người khác: 遅れないようにしてください (chú ý đừng đến muộn).'
+  - type: deep_explain
+    text:
+      vi: Người Nhật hay báo cả quyết định của chính mình bằng ことになりました (kết hôn, nghỉ việc) để nghe khiêm tốn, như thể đó là kết quả tự nhiên chứ không phải ý muốn riêng. Khi đọc thông báo nội bộ, ～ことになっています còn có nghĩa là "theo quy định thì..." - sẽ gặp lại ở unit 4.
+  - type: example
+    target: 来週、大阪に出張することになりました。
+    target_lang: ja
+    translation:
+      vi: Tuần sau tôi được cử đi công tác Osaka.
+  - type: example
+    target: 締め切りの前日までに出すようにしています。
+    target_lang: ja
+    translation:
+      vi: Tôi luôn cố gắng nộp trước hạn một ngày.
+  - type: example
+    target: 会議の資料を10部コピーしてください。
+    target_lang: ja
+    translation:
+      vi: Hãy photo 10 bộ tài liệu họp.
+  - type: example
+    target: 午後は取引先との打ち合わせがあるので、残業はできません。
+    target_lang: ja
+    translation:
+      vi: Chiều nay tôi có buổi trao đổi với đối tác nên không làm thêm giờ được.
+  - type: common_mistake
+    wrong: 会社の命令で、来月から東京で働くことにしました。
+    right: 会社の命令で、来月から東京で働くことになりました。
+    target_lang: ja
+    note:
+      vi: Công ty quyết định thì dùng ことになる. ことにする chỉ dùng khi chính bạn quyết định.
+  - type: common_mistake
+    wrong: 部長さん、資料ができました。
+    right: 部長、資料ができました。
+    target_lang: ja
+    note:
+      vi: Chức vụ (部長, 課長, 社長) đã là kính ngữ, không thêm さん. Người Việt hay thêm さん vì nghĩ thêm vào cho lịch sự.
+  - type: summary
+    points:
+      - vi: 資料, 締め切り, 残業, 出張, 上司, 同僚, 取引先.
+      - vi: ことになる - được quyết định (bởi người khác/hoàn cảnh); ことにする - tự quyết định.
+      - vi: ようにしている - thói quen cố duy trì; ようにしてください - nhắc người khác chú ý.
+      - vi: Gọi sếp bằng chức vụ, không thêm さん.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-workplace-mcq-shimekiri
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-shimekiri
+    prompt:
+      stem: 「締め切り」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: v3w, text: hạn chót, lang: vi }
+        - { id: k8d, text: cuộc họp, lang: vi }
+        - { id: e5n, text: làm thêm giờ, lang: vi }
+        - { id: p1s, text: tài liệu, lang: vi }
+    answer:
+      correct_option_id: v3w
+    explanation:
+      vi: 締め切り - hạn chót. Cuộc họp là 会議, làm thêm giờ là 残業, tài liệu là 資料.
+    display_answer: hạn chót
+
+  - key: ja:exercise:n3-workplace-listen-shucchou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-shucchou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 来週、大阪に出張することになりました。
+      options:
+        - { id: g6h, text: Tuần sau tôi được cử đi công tác Osaka., lang: vi }
+        - { id: q2b, text: Tuần sau tôi quyết định đi du lịch Osaka., lang: vi }
+        - { id: z9t, text: Tuần trước tôi đã đi công tác Osaka., lang: vi }
+        - { id: r4m, text: Tuần sau đối tác ở Osaka sẽ đến công ty., lang: vi }
+    answer:
+      correct_option_id: g6h
+    explanation:
+      vi: 来週 - tuần sau; 出張 - công tác (không phải 旅行 - du lịch); ことになりました - đã được quyết định (thường là do công ty).
+    display_answer: Tuần sau tôi được cử đi công tác Osaka.
+
+  - key: ja:exercise:n3-workplace-mcq-kotoninaru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-naru
+    prompt:
+      stem: 'Công ty quyết định chuyển bạn sang chi nhánh Nagoya. Bạn báo: 来月から名古屋支店で働く＿＿。'
+      stem_lang: vi
+      options:
+        - { id: d7c, text: ことになりました, lang: ja }
+        - { id: m3y, text: ことにしました, lang: ja }
+        - { id: w8f, text: ようにしました, lang: ja }
+        - { id: h1k, text: ようになりました, lang: ja }
+    answer:
+      correct_option_id: d7c
+    explanation:
+      vi: Quyết định của công ty - ことになりました. ことにしました là tự mình quyết định; ようにしました là cố gắng; ようになりました là "đã trở nên (có thể)".
+    display_answer: ことになりました
+
+  - key: ja:exercise:n3-workplace-fill-younishite
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-you-ni-suru
+    prompt:
+      template: "明日の会議には遅れない{{b1}}してください。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Hãy chú ý đừng đến muộn cuộc họp ngày mai."
+        - "Gợi ý: thể ない + từ chỉ 'cố gắng, chú ý' + に."
+    answer:
+      blanks:
+        b1: [ように]
+    known_wrong:
+      - answer: ことに
+        feedback_vi: ことにする là quyết định một lần; nhắc người khác chú ý dùng ようにしてください.
+        error_tag: you_ni_koto_ni
+      - answer: ために
+        feedback_vi: ために thường đi với động từ chủ ý (vì mục đích); với thể ない như 遅れない dùng ように.
+        error_tag: you_ni_tame_ni
+    explanation:
+      vi: V-ないようにしてください - hãy chú ý để không... Đây là cách nhắc nhở lịch sự ở công sở.
+    display_answer: 明日の会議には遅れないようにしてください。
+
+  - key: ja:exercise:n3-workplace-wb-torihikisaki
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-torihikisaki
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Chiều nay tôi có buổi trao đổi với đối tác.\""
+      tokens:
+        - { id: t4, text: あります }
+        - { id: t2, text: 取引先との }
+        - { id: t5, text: 取引先を }
+        - { id: t1, text: 午後は }
+        - { id: t3, text: 打ち合わせが }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: 取引先との打ち合わせ - buổi trao đổi với đối tác (と + の để nối vào danh từ). 取引先を không nối được với 打ち合わせ.
+    display_answer: 午後は取引先との打ち合わせがあります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-workplace-fill-zangyou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-zangyou
+    prompt:
+      template: "今日は仕事が多いので、{{b1}}します。(làm thêm giờ)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [残業, ざんぎょう]
+    known_wrong:
+      - answer: 出張
+        feedback_vi: 出張 là đi công tác. Làm thêm giờ là 残業.
+        error_tag: vocab_meaning
+      - answer: ざんぎょ
+        feedback_vi: ぎょう là âm dài - ざんぎょう.
+        error_tag: long_vowel
+    explanation:
+      vi: 残業する - làm thêm giờ. Âm ぎょう kéo dài, viết thiếu う là sai chính tả.
+    display_answer: 今日は仕事が多いので、残業します。
+
+  - key: ja:exercise:n3-workplace-translate-kotoninaru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-naru
+    prompt:
+      source_text: Tuần sau tôi được cử đi công tác Osaka. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 来週、大阪に出張することになりました。
+        - 来週大阪に出張することになりました。
+        - 来週、大阪へ出張することになりました。
+        - 来週大阪へ出張することになりました。
+        - 来週、大阪に出張に行くことになりました。
+        - 来週大阪に出張に行くことになりました。
+        - 来週、大阪へ出張に行くことになりました。
+        - 来週大阪へ出張に行くことになりました。
+        - 来週、大阪出張に行くことになりました。
+        - 来週大阪出張に行くことになりました。
+        - 来週、大阪に出張することになっています。
+        - 来週大阪に出張することになっています。
+        - 来週、私は大阪に出張することになりました。
+        - 来週私は大阪に出張することになりました。
+        - らいしゅう、おおさかにしゅっちょうすることになりました。
+        - らいしゅうおおさかにしゅっちょうすることになりました。
+    known_wrong:
+      - answer: 来週、大阪に出張することにしました。
+        feedback_vi: Được công ty cử nên dùng ことになりました; ことにしました là tự mình quyết định.
+        error_tag: koto_ni_naru_suru
+      - answer: 来週、大阪に旅行することになりました。
+        feedback_vi: 旅行 là du lịch. Đi công tác là 出張.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 出張する - đi công tác; ～ことになりました - đã được quyết định. Nơi đến dùng に hoặc へ.
+    display_answer: 来週、大阪に出張することになりました。
+
+  - key: ja:exercise:n3-workplace-translate-younishiteiru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-suru
+    prompt:
+      source_text: Tôi luôn cố gắng nộp trước hạn chót. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 締め切りまでに出すようにしています。
+        - 締め切りまでに提出するようにしています。
+        - 締め切りの前に出すようにしています。
+        - 締め切りの前に提出するようにしています。
+        - 締め切り前に出すようにしています。
+        - 締め切り前に提出するようにしています。
+        - 締切までに出すようにしています。
+        - 締切までに提出するようにしています。
+        - 締め切りより前に出すようにしています。
+        - 締め切りより早く出すようにしています。
+        - いつも締め切りまでに出すようにしています。
+        - いつも締め切りまでに提出するようにしています。
+        - 私は締め切りまでに出すようにしています。
+        - 私はいつも締め切りまでに出すようにしています。
+        - しめきりまでにだすようにしています。
+    known_wrong:
+      - answer: 締め切りまでに出すことにしています。
+        feedback_vi: ことにしている cũng là thói quen nhưng nhấn "quy tắc tự đặt ra"; câu này muốn nói nỗ lực "cố gắng" - dùng ようにしています.
+        error_tag: you_ni_koto_ni
+      - answer: 締め切りまでに出すようになっています。
+        feedback_vi: ようになる là "trở nên"; nỗ lực của bản thân dùng ようにする.
+        error_tag: you_ni_naru_suru
+    explanation:
+      vi: ～ようにしています - đang cố gắng duy trì; 締め切りまでに - trước hạn chót; 出す / 提出する - nộp.
+    display_answer: 締め切りまでに出すようにしています。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-workplace-mcq-busho
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-joushi
+    prompt:
+      stem: Bạn mang tài liệu đến bàn trưởng phòng Yamada. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: c8r, text: 山田部長、資料ができました。, lang: ja }
+        - { id: a5j, text: 山田部長さん、資料ができました。, lang: ja }
+        - { id: o2v, text: 上司さん、資料ができました。, lang: ja }
+        - { id: l6p, text: 山田くん、資料ができました。, lang: ja }
+    answer:
+      correct_option_id: c8r
+    explanation:
+      vi: Gọi bằng tên + chức vụ, không thêm さん. 上司 là danh từ chung, không dùng để gọi; くん dùng cho cấp dưới, nam giới trẻ.
+    display_answer: 山田部長、資料ができました。
+
+  - key: ja:exercise:n3-workplace-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-douryou
+    prompt:
+      source_text: 同僚が手伝ってくれたおかげで、締め切りに間に合いました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhờ đồng nghiệp giúp mà tôi đã kịp hạn chót.
+        - Nhờ đồng nghiệp giúp đỡ mà tôi đã kịp hạn chót.
+        - Nhờ đồng nghiệp giúp nên tôi đã kịp hạn chót.
+        - Nhờ có đồng nghiệp giúp mà tôi đã kịp hạn chót.
+        - Nhờ đồng nghiệp giúp mà tôi đã kịp hạn.
+        - Nhờ đồng nghiệp giúp mà tôi kịp hạn chót.
+        - Nhờ đồng nghiệp giúp mà tôi đã kịp deadline.
+        - Nhờ đồng nghiệp giúp đỡ nên tôi đã kịp hạn chót.
+        - Nhờ đồng nghiệp giúp mà tôi đã nộp kịp hạn.
+        - Nhờ đồng nghiệp giúp mà tôi đã hoàn thành kịp hạn chót.
+        - Nhờ có đồng nghiệp giúp đỡ mà tôi đã kịp hạn chót.
+        - Nhờ đồng nghiệp đã giúp mà tôi kịp hạn chót.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tại đồng nghiệp mà tôi bị trễ hạn chót.
+        feedback_vi: おかげで là "nhờ" (kết quả tốt), và 間に合いました là đã kịp.
+        error_tag: okage_sei
+    explanation:
+      vi: 同僚 - đồng nghiệp; 手伝ってくれた - đã giúp tôi; 締め切りに間に合う - kịp hạn chót (ôn lại おかげで và 間に合う).
+    display_answer: Nhờ đồng nghiệp giúp mà tôi đã kịp hạn chót.
+
+  - key: ja:exercise:n3-workplace-wb-kotonishita
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-naru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Theo lệnh của công ty, từ tháng sau tôi sẽ làm việc ở Tokyo.\""
+      tokens:
+        - { id: c4, text: 働くことになりました }
+        - { id: c2, text: 来月から }
+        - { id: c5, text: 働くことにしました }
+        - { id: c1, text: 会社の命令で }
+        - { id: c3, text: 東京で }
+    answer:
+      orders:
+        - [c1, c2, c3, c4]
+        - [c2, c1, c3, c4]
+        - [c1, c3, c2, c4]
+    explanation:
+      vi: Công ty ra lệnh - ことになりました. ことにしました là chính bạn quyết định, mâu thuẫn với 会社の命令で.
+    display_answer: 会社の命令で、来月から東京で働くことになりました。
+
+  - key: ja:exercise:n3-workplace-mcq-shiryou
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shiryou
+    prompt:
+      stem: Trước cuộc họp, sếp bảo bạn photo tài liệu cho 10 người. Sếp nói câu nào?
+      stem_lang: vi
+      options:
+        - { id: y4g, text: 会議の資料を10部コピーしてください。, lang: ja }
+        - { id: n7x, text: 会議の書類を10人書いてください。, lang: ja }
+        - { id: f2u, text: 会議の資料を10回読んでください。, lang: ja }
+        - { id: j9e, text: 会議の締め切りを10日にしてください。, lang: ja }
+    answer:
+      correct_option_id: y4g
+    explanation:
+      vi: 資料を10部コピーする - photo 10 bộ tài liệu (部 là đơn vị đếm bản, bộ tài liệu). Các câu còn lại nói về viết, đọc 10 lần, hay đặt hạn chót.
+    display_answer: 会議の資料を10部コピーしてください。
