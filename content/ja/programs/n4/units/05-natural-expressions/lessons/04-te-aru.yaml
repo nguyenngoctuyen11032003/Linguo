@@ -1,0 +1,399 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-te-aru
+order_index: 4
+level: n4
+title:
+  vi: Tự động từ, tha động từ - ている và てある
+objectives:
+  - vi: Phân biệt cặp tự / tha động từ - 開く / 開ける, 閉まる / 閉める, つく / つける, 消える / 消す, 始まる / 始める.
+  - vi: Tả trạng thái bằng tự động từ + ています (電気がついています).
+  - vi: Nói "đã được làm sẵn" bằng tha động từ + てあります (窓が開けてあります).
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading, speaking]
+prerequisites: [ja:lesson:n4-ka-douka]
+items:
+  - item: ja:item:n4-gram-jidoushi-tadoushi
+  - item: ja:item:n4-gram-te-aru
+  - item: ja:item:n4-aku
+  - item: ja:item:n4-shimaru
+  - item: ja:item:n4-tsuku-tsukeru
+  - item: ja:item:n4-kieru-kesu
+  - item: ja:item:n4-hajimaru
+  - item: ja:item:n4-akeru
+    role: reuse
+  - item: ja:item:n4-shimeru
+    role: reuse
+  - item: ja:item:n4-hajimeru
+    role: reuse
+  - item: ja:item:n4-gram-te-iru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả được căn phòng, văn phòng đang thế nào - "đèn đang sáng", "cửa sổ đã được mở sẵn", "cuộc họp bắt đầu rồi" - và không còn nhầm が với を trước các động từ đi theo cặp.
+  - type: explain
+    text:
+      vi: 'Nhiều động từ tiếng Nhật đi theo cặp. Tự động từ kể việc tự xảy ra, đi với が: ドアが開く (cửa mở). Tha động từ kể việc có người làm, đi với を: ドアを開ける (mở cửa).'
+  - type: explain
+    text:
+      vi: 'Tiếng Việt dùng chung một từ "mở", "tắt", "bắt đầu" cho cả hai nghĩa, nên người Việt hay nói 電気を消えて. Hãy nhớ theo cặp: 開く/開ける, 閉まる/閉める, つく/つける, 消える/消す, 始まる/始める.'
+  - type: explain
+    text:
+      vi: 'Tả trạng thái hiện tại: tự động từ + ています - 電気がついています (đèn đang sáng, không nói ai bật). Tha động từ + てあります - 電気がつけてあります (đèn đã được ai đó bật sẵn, có chủ ý). Với てある, đối tượng chuyển sang が.'
+  - type: deep_explain
+    text:
+      vi: 'てある nhấn vào mục đích: việc được làm sẵn để chuẩn bị cho sau này - パーティーの前に飲み物が買ってあります. Tha động từ + ています thì chỉ là hành động đang diễn ra: 田中さんが窓を開けています (anh Tanaka đang mở cửa sổ). Vì thế 窓が開けています là sai - hoặc 窓が開いています, hoặc 窓が開けてあります.'
+  - type: example
+    target: 部屋の電気がついています。だれかいるのかな。
+    target_lang: ja
+    translation:
+      vi: Đèn trong phòng đang sáng. Không biết có ai ở trong không nhỉ.
+    note:
+      vi: Tự động từ つく + ています - chỉ tả trạng thái.
+  - type: example
+    target: お客さんが来るので、玄関の電気がつけてあります。
+    target_lang: ja
+    translation:
+      vi: Vì có khách đến nên đèn ở lối vào đã được bật sẵn.
+    note:
+      vi: Tha động từ つける + てあります - có người bật với mục đích.
+  - type: example
+    target: 机の上にメモが置いてあります。
+    target_lang: ja
+    translation:
+      vi: Trên bàn có để sẵn một mẩu ghi chú.
+    note:
+      vi: 置く (đặt) là tha động từ; メモが置いてある - ai đó đã đặt ở đó.
+  - type: example
+    target: もう授業が始まっています。急ぎましょう。
+    target_lang: ja
+    translation:
+      vi: Tiết học bắt đầu rồi. Nhanh lên nào.
+    note:
+      vi: 始まる (tự động từ) + ています - tiết học đang trong trạng thái đã bắt đầu.
+  - type: common_mistake
+    wrong: 窓が開いてあります。
+    right: 窓が開けてあります。 / 窓が開いています。
+    target_lang: ja
+    note:
+      vi: てある chỉ đi với tha động từ (開ける). Với tự động từ 開く dùng ています.
+  - type: common_mistake
+    wrong: 寒いので、エアコンを消えてください。
+    right: 寒いので、エアコンを消してください。
+    target_lang: ja
+    note:
+      vi: Bạn nhờ người khác làm - cần tha động từ 消す (消して), đi với を.
+  - type: common_mistake
+    wrong: 授業は毎朝9時に始めます。
+    right: 授業は毎朝9時に始まります。
+    target_lang: ja
+    note:
+      vi: Nói lịch chung của sự việc thì dùng tự động từ 始まる; 始める cần người khởi động - 部長が会議を始めます.
+  - type: summary
+    points:
+      - vi: Tự động từ - N が V (開く, 閉まる, つく, 消える, 始まる).
+      - vi: Tha động từ - N を V (開ける, 閉める, つける, 消す, 始める).
+      - vi: Tự động từ + ています - trạng thái, không nói ai làm.
+      - vi: Tha động từ + てあります (N が) - đã được làm sẵn, có chủ ý.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-tearu-mcq-kieru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-kieru-kesu
+    prompt:
+      stem: 'Bạn muốn nói "Đèn bỗng dưng tắt." 突然、電気が＿＿。'
+      stem_lang: vi
+      options:
+        - { id: q4m, text: "消えました", lang: ja }
+        - { id: w8n, text: "消しました", lang: ja }
+        - { id: e3b, text: "消してありました", lang: ja }
+        - { id: r6v, text: "消えてありました", lang: ja }
+    answer:
+      correct_option_id: q4m
+    explanation:
+      vi: Đèn tự tắt, không ai làm - tự động từ 消える đi với が. 消す cần người làm và を; てある không ghép với tự động từ.
+    display_answer: 消えました
+
+  - key: ja:exercise:n4-tearu-listen-window
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-aru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 窓が開けてありますから、少し寒いですね。
+      options:
+        - { id: t2c, text: "Cửa sổ đã được mở sẵn nên hơi lạnh nhỉ.", lang: vi }
+        - { id: y5x, text: "Hơi lạnh nên hãy mở cửa sổ ra.", lang: vi }
+        - { id: u9z, text: "Cửa sổ đóng nên hơi nóng nhỉ.", lang: vi }
+        - { id: i1l, text: "Hơi lạnh nên tôi sẽ đóng cửa sổ.", lang: vi }
+    answer:
+      correct_option_id: t2c
+    explanation:
+      vi: 開けてあります - đã được (ai đó) mở sẵn; から - nên; 少し寒い - hơi lạnh. Câu không phải lời nhờ hay lời hứa.
+    display_answer: Cửa sổ đã được mở sẵn nên hơi lạnh nhỉ.
+
+  - key: ja:exercise:n4-tearu-fill-tv
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tsuku-tsukeru
+    prompt:
+      template: "Ai đó đã bật sẵn tivi - テレビが{{b1}}て{{b2}}ます。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Gợi ý: tha động từ 'bật' ở thể て + động từ 'có (đồ vật)'."
+        - "Chỗ 1: つける → ?; chỗ 2: あります bỏ ます."
+    answer:
+      blanks:
+        b1: [つけ]
+        b2: [あり]
+    known_wrong:
+      - answer: つい
+        feedback_vi: ついて là tự động từ; てある cần tha động từ - つけてあります.
+        error_tag: transitive_intransitive
+      - answer: い
+        feedback_vi: Tha động từ + ています với が không dùng; "đã được bật sẵn" là てあります.
+        error_tag: te_aru_te_iru
+    explanation:
+      vi: つける (tha động từ) → つけて + あります - đã được ai đó bật sẵn.
+    display_answer: テレビがつけてあります。
+
+  - key: ja:exercise:n4-tearu-mcq-hotel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-te-aru
+    prompt:
+      stem: 'Câu ホテルの部屋はもう予約してあります。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: a6s, text: "Phòng khách sạn đã được đặt sẵn rồi.", lang: vi }
+        - { id: f3d, text: "Tôi đang đặt phòng khách sạn.", lang: vi }
+        - { id: g7h, text: "Hãy đặt phòng khách sạn đi.", lang: vi }
+        - { id: j2k, text: "Phòng khách sạn vẫn chưa đặt.", lang: vi }
+    answer:
+      correct_option_id: a6s
+    explanation:
+      vi: 予約してあります - việc đặt phòng đã làm xong từ trước và kết quả vẫn còn (chuẩn bị sẵn cho chuyến đi).
+    display_answer: Phòng khách sạn đã được đặt sẵn rồi.
+
+  - key: ja:exercise:n4-tearu-wb-light
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-kieru-kesu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Trước khi ngủ, hãy tắt đèn.”"
+      tokens:
+        - { id: l1, text: ください }
+        - { id: l2, text: 消えて }
+        - { id: l3, text: 電気を }
+        - { id: l4, text: 寝る前に、 }
+        - { id: l5, text: 消して }
+    answer:
+      orders:
+        - [l4, l3, l5, l1]
+    explanation:
+      vi: Có người tắt đèn nên dùng tha động từ 消す → 消して, đi với 電気を. 消えて là tự động từ.
+    display_answer: 寝る前に、電気を消してください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-tearu-fill-pairs
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-jidoushi-tadoushi
+    prompt:
+      template: "Viết thể từ điển - ドアが{{b1}} (cửa mở) ⇔ ドアを{{b2}} (mở cửa) · 授業が{{b3}} (giờ học bắt đầu) ⇔ 授業を{{b4}} (bắt đầu giờ học)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 4 }
+        - { id: b4, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [開く, あく]
+        b2: [開ける, あける]
+        b3: [始まる, はじまる]
+        b4: [始める, はじめる]
+    explanation:
+      vi: が đi với tự động từ (開く, 始まる); を đi với tha động từ (開ける, 始める). Nhìn trợ từ để chọn động từ.
+    display_answer: 開く / 開ける · 始まる / 始める
+
+  - key: ja:exercise:n4-tearu-write-light-on
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tsuku-tsukeru
+    prompt:
+      source_text: Đèn trong bếp đang sáng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 台所の電気がついています。
+        - だいどころの電気がついています。
+        - だいどころのでんきがついています。
+        - キッチンの電気がついています。
+        - キッチンのでんきがついています。
+        - 台所の電気がついている。
+    known_wrong:
+      - answer: 台所の電気がつけています。
+        feedback_vi: Tả trạng thái không nói ai làm - tự động từ つく + ています.
+        error_tag: transitive_intransitive
+      - answer: 台所の電気をついています。
+        feedback_vi: つく là tự động từ, đi với が.
+        error_tag: particle_choice
+    explanation:
+      vi: 電気がつく (đèn sáng) + ています - trạng thái hiện tại.
+    display_answer: 台所の電気がついています。
+
+  - key: ja:exercise:n4-tearu-write-name
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-aru
+    prompt:
+      source_text: Trên quyển vở có viết (sẵn) tên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ノートに名前が書いてあります。
+        - ノートになまえがかいてあります。
+        - ノートには名前が書いてあります。
+        - 名前がノートに書いてあります。
+        - ノートに名前が書いてある。
+        - ノートに名前が書いてありますよ。
+    known_wrong:
+      - answer: ノートに名前が書いています。
+        feedback_vi: 書く là tha động từ; trạng thái "có viết sẵn" dùng 書いてあります.
+        error_tag: te_aru_te_iru
+      - answer: ノートに名前が書きてあります。
+        feedback_vi: Thể て của 書く là 書いて.
+        error_tag: te_form
+    explanation:
+      vi: 書く (tha động từ) → 書いて + あります; thứ được viết (名前) đi với が.
+    display_answer: ノートに名前が書いてあります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-tearu-translate-aircon
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-aru
+    prompt:
+      source_text: 会議室のエアコンはもうつけてあります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Điều hoà phòng họp đã được bật sẵn rồi.
+        - Máy lạnh phòng họp đã được bật sẵn rồi.
+        - Điều hoà ở phòng họp đã được bật sẵn rồi.
+        - Điều hoà trong phòng họp đã bật sẵn rồi.
+        - Điều hòa phòng họp đã được bật sẵn rồi.
+        - Điều hoà phòng họp đã bật sẵn rồi.
+        - Máy lạnh phòng họp đã bật sẵn rồi.
+        - Điều hoà phòng họp đã được mở sẵn rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Điều hoà phòng họp đang tự bật.
+        feedback_vi: つけてあります là "đã được (ai đó) bật sẵn", có chủ ý chuẩn bị.
+        error_tag: te_aru_meaning
+    explanation:
+      vi: エアコンをつける → つけてあります - đã được bật sẵn (để chuẩn bị cho cuộc họp).
+    display_answer: Điều hoà phòng họp đã được bật sẵn rồi.
+
+  - key: ja:exercise:n4-tearu-mcq-teacher
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-akeru
+    prompt:
+      stem: 'Trước giờ học, cô giáo hỏi: 「窓はどうしましたか。」 Bạn đã chủ động mở cửa sổ cho thoáng từ trước. Bạn trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: z4p, text: "もう開けてあります。", lang: ja }
+        - { id: x8o, text: "もう開いてあります。", lang: ja }
+        - { id: c5i, text: "もう開けてしまいましょう。", lang: ja }
+        - { id: v1u, text: "窓をもう開いています。", lang: ja }
+    answer:
+      correct_option_id: z4p
+    explanation:
+      vi: Bạn đã cố ý mở sẵn - tha động từ 開ける + てあります. てある không đi với tự động từ 開く; 開く cũng không đi với を.
+    display_answer: もう開けてあります。
+
+  - key: ja:exercise:n4-tearu-wb-meeting
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-hajimaru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Cuộc họp bắt đầu rồi đấy.”"
+      tokens:
+        - { id: m1, text: 始めていますよ }
+        - { id: m2, text: もう }
+        - { id: m3, text: 始まっていますよ }
+        - { id: m4, text: 会議が }
+    answer:
+      orders:
+        - [m4, m2, m3]
+        - [m2, m4, m3]
+    explanation:
+      vi: 会議が + tự động từ 始まる → 始まっています (đã bắt đầu, đang diễn ra). 始める cần người làm và を.
+    display_answer: 会議がもう始まっていますよ。
+
+  - key: ja:exercise:n4-tearu-write-door-open
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-aku
+    prompt:
+      source_text: Sáng nay khi tôi đến công ty thì cửa đã mở rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今朝会社に来たとき、ドアが開いていました。
+        - 今朝会社に着いたとき、ドアが開いていました。
+        - 今朝会社に来たとき、もうドアが開いていました。
+        - 今朝会社に着いたとき、もうドアが開いていました。
+        - 今朝会社に来たら、ドアが開いていました。
+        - 今朝会社に着いたら、ドアが開いていました。
+        - 今朝会社に来たら、もうドアが開いていました。
+        - 今朝会社に着いたら、もうドアが開いていました。
+        - けさかいしゃにきたとき、ドアがあいていました。
+        - けさかいしゃについたら、ドアがあいていました。
+    known_wrong:
+      - answer: 今朝会社に来たとき、ドアが開けていました。
+        feedback_vi: Tả trạng thái của cửa - tự động từ 開く → 開いていました.
+        error_tag: transitive_intransitive
+      - answer: 今朝会社に来たとき、ドアを開いていました。
+        feedback_vi: 開く là tự động từ, đi với が.
+        error_tag: particle_choice
+    explanation:
+      vi: ドアが開いていました - (lúc đó) cửa đang ở trạng thái mở; người nói không biết ai mở nên dùng tự động từ.
+    display_answer: 今朝会社に来たとき、ドアが開いていました。

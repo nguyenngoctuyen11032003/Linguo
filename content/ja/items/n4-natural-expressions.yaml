@@ -1,0 +1,523 @@
+# Học liệu unit "Diễn đạt tự nhiên hằng ngày" (JLPT N4). reading là cách đọc bằng kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: てしまう =================
+  - key: ja:item:n4-gram-te-shimau
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + しまいます
+      romanization: -te shimaimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: '(1) Làm xong hẳn, làm hết: 宿題を全部やってしまいました. (2) Lỡ làm, chẳng may - kèm cảm giác tiếc nuối, ân hận: 電車に傘を忘れてしまいました.'
+      examples:
+        - target: このケーキ、一人で全部食べてしまいました。
+          translation:
+            vi: Cái bánh này tôi đã ăn hết một mình mất rồi.
+        - target: 寝坊して、バスに乗り遅れてしまいました。
+          translation:
+            vi: Tôi ngủ quên nên lỡ mất chuyến xe buýt.
+      confusion:
+        vi: Tiếng Việt thêm "mất", "mất rồi", "lỡ" - tiếng Nhật thêm しまう. Câu 忘れました chỉ kể sự việc; 忘れてしまいました cho thấy người nói tiếc hoặc thấy có lỗi.
+
+  - key: ja:item:n4-gram-chau
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: ～ちゃう / ～じゃう (văn nói của てしまう)
+      romanization: -chau / -jau
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Dạng nói nhanh, thân mật của てしまう: てしまう → ちゃう, でしまう → じゃう. Quá khứ: ちゃった / じゃった - 忘れちゃった, 飲んじゃった.'
+      examples:
+        - target: あ、ジュースこぼしちゃった！
+          translation:
+            vi: Á, làm đổ nước ép mất rồi!
+        - target: 薬、もう飲んじゃった？
+          translation:
+            vi: Uống thuốc rồi à?
+      confusion:
+        vi: Chỉ dùng với bạn bè, gia đình. Với cấp trên, khách hàng nói đủ ～てしまいました.
+
+  - key: ja:item:n4-saifu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 財布
+      reading: さいふ
+      romanization: saifu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ví
+      examples:
+        - target: 新しい財布を買いました。
+          translation:
+            vi: Tôi đã mua một cái ví mới.
+
+  - key: ja:item:n4-otosu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 落とす
+      reading: おとす
+      romanization: otosu
+      pos: động từ nhóm 1 (tha động từ)
+    back:
+      meaning:
+        vi: làm rơi, đánh rơi
+      examples:
+        - target: スマホを床に落としました。
+          translation:
+            vi: Tôi làm rơi điện thoại xuống sàn.
+      confusion:
+        vi: 落とす là "làm rơi" (có người làm, đi với を); 落ちる là "rơi" (tự rơi, đi với が).
+
+  - key: ja:item:n4-kowasu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 壊す
+      reading: こわす
+      romanization: kowasu
+      pos: động từ nhóm 1 (tha động từ)
+    back:
+      meaning:
+        vi: làm hỏng, làm vỡ
+      examples:
+        - target: 弟がおもちゃを壊しました。
+          translation:
+            vi: Em trai làm hỏng đồ chơi.
+      confusion:
+        vi: 壊す - làm hỏng (を); 壊れる - bị hỏng, tự hỏng (が) - パソコンが壊れました.
+
+  # ================= bài 2: すぎる / やすい / にくい =================
+  - key: ja:item:n4-gram-sugiru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc / A-い bỏ い / Na + すぎます
+      romanization: sugimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: '"Quá..." - vượt mức, thường là không tốt: 食べすぎました (ăn quá nhiều), 高すぎます (đắt quá), 静かすぎます (yên tĩnh quá).'
+      examples:
+        - target: 昨日お酒を飲みすぎて、頭が痛いです。
+          translation:
+            vi: Hôm qua uống rượu quá nhiều nên giờ đau đầu.
+        - target: この部屋は狭すぎます。
+          translation:
+            vi: Căn phòng này chật quá.
+      confusion:
+        vi: とても高い chỉ là "rất đắt" (có thể vẫn mua); 高すぎる là "đắt quá mức" (không mua nổi). いい → よすぎる (không nói いすぎる).
+
+  - key: ja:item:n4-gram-yasui-nikui
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc + やすい / にくい
+      romanization: yasui / nikui
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Vます-gốc + やすい - dễ làm V; + にくい - khó làm V. Kết quả là tính từ đuôi い: 読みやすい本, 使いにくいです.'
+      examples:
+        - target: この辞書は字が大きくて、読みやすいです。
+          translation:
+            vi: Cuốn từ điển này chữ to nên dễ đọc.
+        - target: この靴は重くて歩きにくいです。
+          translation:
+            vi: Đôi giày này nặng nên khó đi.
+      confusion:
+        vi: やすい ở đây không phải 安い (rẻ). Nói "khó làm" dùng にくい, không dùng 難しい sau động từ (không nói 読み難しい).
+
+  - key: ja:item:n4-karai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 辛い
+      reading: からい
+      romanization: karai
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: cay; mặn (với nghĩa nêm muối nhiều)
+      examples:
+        - target: タイ料理は辛いですか。
+          translation:
+            vi: Món Thái có cay không?
+      confusion:
+        vi: Cùng chữ 辛 nhưng đọc つらい là "vất vả, khổ sở". Món ăn cay luôn đọc からい.
+
+  - key: ja:item:n4-kutsu
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 靴
+      reading: くつ
+      romanization: kutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: giày
+      examples:
+        - target: 玄関で靴を脱いでください。
+          translation:
+            vi: Xin hãy cởi giày ở lối vào.
+      pronunciation_note:
+        vi: つ đọc gần "tsư", lưỡi chạm răng rồi bật hơi nhẹ - khác "chư" tiếng Việt.
+
+  - key: ja:item:n4-tsukau
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 使う
+      reading: つかう
+      romanization: tsukau
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: dùng, sử dụng
+      examples:
+        - target: このパソコンを使ってもいいですか。
+          translation:
+            vi: Tôi dùng máy tính này được không?
+      confusion:
+        vi: Thể て là 使って (う → って), thể ない là 使わない (う → わ, không phải あ).
+
+  # ================= bài 3: か / かどうか =================
+  - key: ja:item:n4-gram-embedded-ka
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Từ để hỏi + thể thường + か + 分かりません / 教えてください
+      romanization: ... ka
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Câu hỏi lồng trong câu lớn - "không biết mấy giờ...", "cho tôi biết ở đâu...": 会議が何時に始まるか分かりません. Câu nhỏ dùng thể thường; danh từ và なA bỏ だ: どこか, 何の日か.'
+      examples:
+        - target: 駅までどのぐらいかかるか教えてください。
+          translation:
+            vi: Xin cho tôi biết đến ga mất khoảng bao lâu.
+        - target: 誰が来るか知っていますか。
+          translation:
+            vi: Bạn có biết ai sẽ đến không?
+      confusion:
+        vi: Không giữ です/ます trong câu nhỏ - nói 何時に始まるか, không nói 何時に始まりますか分かりません.
+
+  - key: ja:item:n4-gram-ka-douka
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Thể thường + かどうか
+      romanization: ka dou ka
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: '"Có... hay không" - câu hỏi có/không lồng vào câu lớn: 明日晴れるかどうか分かりません. Danh từ và なA bỏ だ: 本当かどうか.'
+      examples:
+        - target: このお店が日曜日に開いているかどうか調べます。
+          translation:
+            vi: Tôi sẽ tra xem cửa hàng này chủ nhật có mở cửa hay không.
+        - target: 参加するかどうか、明日までに決めてください。
+          translation:
+            vi: Có tham gia hay không, hãy quyết định trước ngày mai.
+      confusion:
+        vi: Câu có từ để hỏi (何, どこ, いつ...) chỉ dùng か; câu không có từ để hỏi mới dùng かどうか. Không nói 何時に来るかどうか.
+
+  - key: ja:item:n4-shiraberu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 調べる
+      reading: しらべる
+      romanization: shiraberu
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: tra cứu, tìm hiểu, điều tra
+      examples:
+        - target: 分からない言葉は辞書で調べます。
+          translation:
+            vi: Từ nào không biết thì tôi tra từ điển.
+
+  - key: ja:item:n4-oboeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 覚える
+      reading: おぼえる
+      romanization: oboeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: nhớ, ghi nhớ; học thuộc
+      examples:
+        - target: 毎日漢字を五つ覚えます。
+          translation:
+            vi: Mỗi ngày tôi học thuộc năm chữ Hán.
+      confusion:
+        vi: '"Còn nhớ" (trạng thái) dùng 覚えています; 覚えます là hành động ghi nhớ. "Nhớ nhung ai đó" không dùng 覚える.'
+
+  - key: ja:item:n4-kaigi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 会議
+      reading: かいぎ
+      romanization: kaigi
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc họp, hội nghị
+      examples:
+        - target: 午後二時から会議があります。
+          translation:
+            vi: Từ 2 giờ chiều có cuộc họp.
+
+  # ================= bài 4: tự / tha động từ, ている / てある =================
+  - key: ja:item:n4-gram-jidoushi-tadoushi
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Tự động từ (N が V) / tha động từ (N を V)
+      romanization: jidōshi / tadōshi
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Nhiều động từ đi theo cặp: tự động từ kể việc tự xảy ra (ドアが開く - cửa mở), tha động từ kể việc có người làm (ドアを開ける - mở cửa). 開く/開ける, 閉まる/閉める, つく/つける, 消える/消す, 始まる/始める.'
+      examples:
+        - target: 風で窓が閉まりました。
+          translation:
+            vi: Cửa sổ đóng lại vì gió.
+        - target: 寒いから、窓を閉めてください。
+          translation:
+            vi: Lạnh nên hãy đóng cửa sổ lại.
+      confusion:
+        vi: Tiếng Việt dùng chung "mở", "tắt" cho cả hai nghĩa; tiếng Nhật đổi động từ và trợ từ. Thấy が → tự động từ, thấy を → tha động từ.
+
+  - key: ja:item:n4-gram-te-aru
+    type: grammar_point
+    level: n4
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N が + tha động từ-て + あります
+      romanization: -te arimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Trạng thái do ai đó cố ý làm ra và vẫn còn: 窓が開けてあります (cửa sổ đã được mở sẵn). So với tự động từ + ている - chỉ tả trạng thái, không nói ai làm: 窓が開いています (cửa sổ đang mở).'
+      examples:
+        - target: 会議室にお茶が用意してあります。
+          translation:
+            vi: Trà đã được chuẩn bị sẵn trong phòng họp.
+        - target: 壁にカレンダーがはってあります。
+          translation:
+            vi: Trên tường có dán sẵn tờ lịch.
+      confusion:
+        vi: てある luôn dùng tha động từ và đối tượng đổi thành が. Không nói 窓が開いてあります (開く là tự động từ).
+
+  - key: ja:item:n4-aku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 開く
+      reading: あく
+      romanization: aku
+      pos: động từ nhóm 1 (tự động từ)
+    back:
+      meaning:
+        vi: (tự) mở, được mở
+      examples:
+        - target: このドアは自動で開きます。
+          translation:
+            vi: Cánh cửa này tự động mở.
+      confusion:
+        vi: Cặp với 開ける (mở - tha động từ). Cùng chữ 開 nhưng đọc khác - あく / あける.
+
+  - key: ja:item:n4-shimaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 閉まる
+      reading: しまる
+      romanization: shimaru
+      pos: động từ nhóm 1 (tự động từ)
+    back:
+      meaning:
+        vi: (tự) đóng, được đóng
+      examples:
+        - target: 銀行は三時に閉まります。
+          translation:
+            vi: Ngân hàng đóng cửa lúc 3 giờ.
+      confusion:
+        vi: Cặp với 閉める (đóng - tha động từ). Cửa hàng đóng cửa cũng nói 店が閉まる.
+
+  - key: ja:item:n4-tsuku-tsukeru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: つく / つける
+      romanization: tsuku / tsukeru
+      pos: cặp động từ tự / tha
+    back:
+      meaning:
+        vi: (đèn, máy) bật lên / bật (đèn, máy)
+      examples:
+        - target: 電気がつきました。
+          translation:
+            vi: Đèn sáng lên rồi.
+        - target: エアコンをつけてもいいですか。
+          translation:
+            vi: Tôi bật điều hoà được không?
+
+  - key: ja:item:n4-kieru-kesu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 消える / 消す
+      reading: きえる / けす
+      romanization: kieru / kesu
+      pos: cặp động từ tự / tha
+    back:
+      meaning:
+        vi: (đèn, lửa) tắt, biến mất / tắt (đèn, máy), xoá
+      examples:
+        - target: 急に電気が消えました。
+          translation:
+            vi: Đèn bỗng nhiên tắt.
+        - target: 出かける前にテレビを消してください。
+          translation:
+            vi: Trước khi ra ngoài hãy tắt tivi.
+      confusion:
+        vi: Cùng chữ 消 nhưng đọc khác - きえる (tự) / けす (tha).
+
+  - key: ja:item:n4-hajimaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 始まる
+      reading: はじまる
+      romanization: hajimaru
+      pos: động từ nhóm 1 (tự động từ)
+    back:
+      meaning:
+        vi: (sự việc) bắt đầu
+      examples:
+        - target: 映画は七時に始まります。
+          translation:
+            vi: Phim bắt đầu lúc 7 giờ.
+      confusion:
+        vi: 映画が始まる (phim bắt đầu) - tự động từ; 会議を始める (bắt đầu cuộc họp - có người khởi động) - tha động từ.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n4-kanrinin
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 管理人
+      reading: かんりにん
+      romanization: kanrinin
+      pos: danh từ
+    back:
+      meaning:
+        vi: người quản lý (chung cư, toà nhà)
+      examples:
+        - target: 鍵をなくしたので、管理人さんに電話しました。
+          translation:
+            vi: Vì làm mất chìa khoá nên tôi gọi cho người quản lý.
+
+  - key: ja:item:n4-reizouko
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 冷蔵庫
+      reading: れいぞうこ
+      romanization: reizōko
+      pos: danh từ
+    back:
+      meaning:
+        vi: tủ lạnh
+      examples:
+        - target: 牛乳は冷蔵庫に入れてあります。
+          translation:
+            vi: Sữa đã được cất trong tủ lạnh.
+      pronunciation_note:
+        vi: ぞう là âm dài - "rê-i-dô-ô-cô"; đọc ngắn thành れいぞこ là sai.
+
+  - key: ja:item:n4-komaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 困る
+      reading: こまる
+      romanization: komaru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: gặp khó khăn, bối rối, không biết làm sao
+      examples:
+        - target: 道が分からなくて困っています。
+          translation:
+            vi: Tôi không biết đường nên đang bối rối.
+      confusion:
+        vi: Trạng thái đang gặp khó dùng 困っています; 困りました là "gay rồi" lúc vừa gặp chuyện.

@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-time-decisions-review
+order_index: 5
+level: n3
+title:
+  vi: 'Ôn tập: blog "Tôi bắt đầu tự nấu ăn"'
+objectives:
+  - vi: Đọc hiểu một bài blog kể sự thay đổi lối sống.
+  - vi: Dùng lại たばかり, ようになる, ことにする, たびに, ついでに, わりに, かわりに trong một câu chuyện.
+  - vi: Viết vài câu kể thói quen mới của chính mình.
+estimated_minutes: 22
+skills: [reading, grammar, vocabulary, writing]
+prerequisites: [ja:lesson:n3-wari-kawari]
+items:
+  - item: ja:item:n3-jisui
+  - item: ja:item:n3-setsuyaku
+  - item: ja:item:n3-ki-ga-tsuku
+  - item: ja:item:n3-gram-ta-bakari
+    role: reuse
+  - item: ja:item:n3-gram-you-ni-naru
+    role: reuse
+  - item: ja:item:n3-gram-koto-ni-suru
+    role: reuse
+  - item: ja:item:n3-gram-tabi-ni
+    role: reuse
+  - item: ja:item:n3-gram-tsuide-ni
+    role: reuse
+  - item: ja:item:n3-gram-wari-ni
+    role: reuse
+  - item: ja:item:n3-gram-kawari-ni
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đi theo blog của Hà - một du học sinh ở Tokyo chuyển từ ăn cơm hộp cửa hàng tiện lợi sang tự nấu ăn. Bạn đọc từng đoạn, nhận ra mẫu ngữ pháp của unit và tự viết lại câu chuyện của mình.
+  - type: explain
+    text:
+      vi: 'Blog kể chuyện thay đổi thường đi theo trình tự: lúc mới (たばかりのころ) → nhận ra vấn đề (～ことに気がつく) → quyết định (ことにする) → kết quả (ようになる). Nắm trình tự này giúp bạn đọc nhanh bài đọc N3.'
+  - type: explain
+    text:
+      vi: 'Phần nhận xét hay dùng わりに (so với kỳ vọng) và かわりに (cái được - cái mất); thói quen dùng たびに, việc tiện thể dùng ついでに. Gặp các mẫu này, hãy hỏi: người viết đang so sánh, đánh đổi hay kể thói quen?'
+  - type: deep_explain
+    text:
+      vi: 'Văn blog tiếng Nhật thường ở thể ます cho thân thiện nhưng lịch sự, xen câu cảm thán ngắn ở thể thường. Khi tự viết, bạn có thể theo khung - ～たばかりのころは… でも、～ことに気がついて、～ことにしました。今では～ようになりました - để có một đoạn văn tự nhiên.'
+  - type: example
+    target: 一人暮らしを始めたばかりのころは、毎日コンビニ弁当を食べていました。
+    target_lang: ja
+    translation:
+      vi: Hồi mới bắt đầu sống một mình, ngày nào tôi cũng ăn cơm hộp của cửa hàng tiện lợi.
+    note:
+      vi: たばかりのころ - hồi mới...
+  - type: example
+    target: でも、食費がかかりすぎることに気がついて、自炊することにしました。
+    target_lang: ja
+    translation:
+      vi: Nhưng tôi nhận ra tiền ăn tốn quá nhiều nên quyết định tự nấu.
+    note:
+      vi: ～ことに気がつく - nhận ra rằng; ことにしました - tự quyết.
+  - type: example
+    target: 最初は下手でしたが、今では簡単な料理なら作れるようになりました。
+    target_lang: ja
+    translation:
+      vi: Lúc đầu tôi nấu dở, nhưng giờ thì món đơn giản tôi đã nấu được.
+    note:
+      vi: 作れる + ようになる - khả năng thay đổi.
+  - type: example
+    target: スーパーに行くたびに、安い野菜を探しています。
+    target_lang: ja
+    translation:
+      vi: Mỗi lần đi siêu thị, tôi đều tìm rau rẻ.
+  - type: example
+    target: 自炊は時間がかかるかわりに、お金が節約できます。
+    target_lang: ja
+    translation:
+      vi: Tự nấu ăn tốn thời gian nhưng bù lại tiết kiệm được tiền.
+    note:
+      vi: かわりに - bù lại; 節約 - tiết kiệm.
+  - type: common_mistake
+    wrong: 料金の間違いを気がつきました。
+    right: 料金の間違いに気がつきました。
+    target_lang: ja
+    note:
+      vi: Điều được nhận ra đi với に - ～に気がつく.
+  - type: common_mistake
+    wrong: お金がないので、自分で自炊することになりました。
+    right: お金がないので、自炊することにしました。
+    target_lang: ja
+    note:
+      vi: Tự mình quyết - ことにしました. 自炊 đã có nghĩa "tự nấu", không cần thêm 自分で.
+  - type: summary
+    points:
+      - vi: 'Trình tự blog: たばかりのころ → ～に気がつく → ことにする → ようになる.'
+      - vi: Nhận xét - わりに (so với kỳ vọng), かわりに (bù lại).
+      - vi: Thói quen - たびに; việc tiện thể - ついでに.
+      - vi: 自炊 tự nấu ăn · 節約 tiết kiệm · 気がつく nhận ra.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-time-decisions-review-mcq-eating-out
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-kawari-ni
+    prompt:
+      stem: 'Blog viết: 「外食は楽なかわりに、お金がかかります。」 Người viết nghĩ gì về việc ăn ngoài?'
+      stem_lang: vi
+      options:
+        - { id: r2b, text: "Ăn ngoài nhàn nhưng bù lại tốn tiền.", lang: vi }
+        - { id: e5n, text: "Ăn ngoài vừa nhàn vừa rẻ.", lang: vi }
+        - { id: w8m, text: "Ăn ngoài tốn tiền nên không nhàn chút nào.", lang: vi }
+        - { id: q1c, text: "Người viết thay việc ăn ngoài bằng việc tiết kiệm tiền.", lang: vi }
+    answer:
+      correct_option_id: r2b
+    explanation:
+      vi: 楽なかわりに - nhàn nhưng bù lại (mặt tốt kèm mặt xấu); お金がかかります - tốn tiền.
+    display_answer: Ăn ngoài nhàn nhưng bù lại tốn tiền.
+
+  - key: ja:exercise:n3-time-decisions-review-listen-electricity
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-setsuyaku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 毎月の電気代を節約するために、エアコンをあまり使わないようにしています。
+      options:
+        - { id: t4x, text: "Để tiết kiệm tiền điện hằng tháng, tôi cố gắng không dùng điều hoà nhiều.", lang: vi }
+        - { id: y7z, text: "Tiền điện hằng tháng cao vì tôi dùng điều hoà nhiều.", lang: vi }
+        - { id: u3a, text: "Để tiết kiệm tiền điện, tôi đã bán điều hoà.", lang: vi }
+        - { id: i6s, text: "Tôi được bảo phải dùng điều hoà ít đi.", lang: vi }
+    answer:
+      correct_option_id: t4x
+    explanation:
+      vi: 節約するために - để tiết kiệm; あまり使わないようにしています - cố gắng không dùng nhiều (thói quen do mình giữ).
+    display_answer: Để tiết kiệm tiền điện hằng tháng, tôi cố gắng không dùng điều hoà nhiều.
+
+  - key: ja:exercise:n3-time-decisions-review-fill-notice
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-ki-ga-tsuku
+    prompt:
+      template: "料理を始めてから、野菜の値段の違いに気が{{b1}}ようになりました。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Từ khi bắt đầu nấu ăn, tôi đã biết để ý sự khác nhau về giá rau."
+        - "Gợi ý: 気が＿ - 'nhận ra, để ý', thể từ điển trước ようになる."
+    answer:
+      blanks:
+        b1: [つく, 付く]
+    known_wrong:
+      - answer: つける
+        feedback_vi: 気をつける là "chú ý, cẩn thận"; "nhận ra" là 気がつく.
+        error_tag: ki_ga_tsuku
+      - answer: ついた
+        feedback_vi: Trước ようになる dùng thể từ điển - つく.
+        error_tag: you_ni_naru_form
+    explanation:
+      vi: ～に気がつく - nhận ra; つく + ようになりました - đã bắt đầu để ý được.
+    display_answer: 料理を始めてから、野菜の値段の違いに気がつくようになりました。
+
+  - key: ja:exercise:n3-time-decisions-review-wb-just-started
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-jisui
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi mới bắt đầu tự nấu ăn thôi.”"
+      tokens:
+        - { id: j1, text: ばかりです }
+        - { id: j2, text: 始める }
+        - { id: j3, text: 自炊を }
+        - { id: j4, text: 始めた }
+    answer:
+      orders:
+        - [j3, j4, j1]
+    explanation:
+      vi: '"Mới (làm)" - thể た + ばかり: 始めたばかりです. Thể từ điển 始める không đi với ばかり theo nghĩa này.'
+    display_answer: 自炊を始めたばかりです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-time-decisions-review-fill-mix
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-tabi-ni
+    prompt:
+      template: "Mỗi lần đi siêu thị tôi đều xem giá - スーパーに行く{{b1}}、値段を確認します。 Tôi nấu bữa tối thay cho mẹ - 母の{{b2}}、私が晩ご飯を作りました。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [たびに, 度に]
+        b2: [代わりに, かわりに]
+    known_wrong:
+      - answer: ついでに
+        feedback_vi: '"Mỗi lần" là たびに; ついでに là "nhân tiện".'
+        error_tag: tabi_tsuide
+      - answer: わりに
+        feedback_vi: '"Thay cho" là 代わりに; わりに là "so với".'
+        error_tag: wari_kawari
+    explanation:
+      vi: 行くたびに - mỗi lần đi; 母の代わりに - thay cho mẹ.
+    display_answer: スーパーに行くたびに、値段を確認します。 / 母の代わりに、私が晩ご飯を作りました。
+
+  - key: ja:exercise:n3-time-decisions-review-write-spent
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-ki-ga-tsuku
+    prompt:
+      source_text: Tôi đã nhận ra là mình đang tiêu quá nhiều tiền.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お金を使いすぎていることに気がつきました。
+        - お金を使いすぎていることに気づきました。
+        - 自分がお金を使いすぎていることに気がつきました。
+        - 自分がお金を使いすぎていることに気づきました。
+        - お金を使いすぎていることに気が付きました。
+        - おかねをつかいすぎていることにきがつきました。
+        - お金を使いすぎていることに気がついた。
+        - お金を使いすぎていることに気づいた。
+    known_wrong:
+      - answer: お金を使いすぎていることを気がつきました。
+        feedback_vi: Điều được nhận ra đi với に - ～ことに気がつく.
+        error_tag: particle_choice
+      - answer: お金を使いすぎていることに気をつけました。
+        feedback_vi: 気をつける là "cẩn thận"; "nhận ra" là 気がつく.
+        error_tag: ki_ga_tsuku
+    explanation:
+      vi: 使いすぎている - đang tiêu quá nhiều; ～ことに気がつきました - đã nhận ra rằng.
+    display_answer: お金を使いすぎていることに気がつきました。
+
+  - key: ja:exercise:n3-time-decisions-review-write-five-days
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-jisui
+    prompt:
+      source_text: Tôi đã quyết định mỗi tuần tự nấu ăn 5 ngày.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 週に5日自炊することにしました。
+        - 週に五日自炊することにしました。
+        - 週5日自炊することにしました。
+        - 一週間に5日自炊することにしました。
+        - 毎週5日自炊することにしました。
+        - しゅうにいつかじすいすることにしました。
+        - 週に5日は自炊することにしました。
+        - 週に5日自炊することにした。
+    known_wrong:
+      - answer: 週に5日自炊することになりました。
+        feedback_vi: Bạn tự quyết - ことにしました; ことになりました là do người khác / hoàn cảnh quyết.
+        error_tag: koto_ni_naru_suru
+      - answer: 週に5日自炊するようになりました。
+        feedback_vi: ようになりました là thay đổi tự nhiên; "quyết định" là ことにしました.
+        error_tag: you_ni_koto_ni
+    explanation:
+      vi: 週に5日 - mỗi tuần 5 ngày; 自炊することにしました - quyết định tự nấu.
+    display_answer: 週に5日自炊することにしました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-time-decisions-review-translate-savings
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-naru
+    prompt:
+      source_text: 自炊するようになってから、外食が減って、お金もたまるようになった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ khi tự nấu ăn, tôi ít ăn ngoài hơn và cũng để dành được tiền.
+        - Từ khi bắt đầu tự nấu ăn, tôi ăn ngoài ít đi và cũng tích được tiền.
+        - Từ khi tự nấu ăn, số lần ăn ngoài giảm và tôi cũng để dành được tiền.
+        - Từ lúc tự nấu ăn, việc ăn ngoài giảm đi và tôi cũng dành dụm được tiền.
+        - Kể từ khi tự nấu ăn, tôi ít ăn ngoài hơn và cũng tiết kiệm được tiền.
+        - Từ khi tự nấu ăn, tôi ăn ngoài ít hơn và tiền cũng bắt đầu dư ra.
+        - Từ khi bắt đầu tự nấu, tôi ít ăn ngoài và cũng để dành được tiền.
+        - Từ khi tự nấu ăn, tôi đi ăn ngoài ít hơn và cũng để dành được tiền.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi quyết định tự nấu ăn để ít ăn ngoài và để dành tiền.
+        feedback_vi: ようになってから kể thay đổi đã xảy ra, không phải quyết định hay mục đích.
+        error_tag: you_ni_naru_meaning
+    explanation:
+      vi: 自炊するようになってから - từ khi bắt đầu tự nấu; 外食が減って - ăn ngoài giảm; お金もたまるようになった - tiền cũng bắt đầu tích lại.
+    display_answer: Từ khi tự nấu ăn, tôi ít ăn ngoài hơn và cũng để dành được tiền.
+
+  - key: ja:exercise:n3-time-decisions-review-mcq-healthier
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-ni-naru
+    prompt:
+      stem: 'Bạn bè hỏi: 「最近、元気そうだね。何かあったの？」 Bạn muốn nói: "Tớ bắt đầu tự nấu ăn, giờ nấu được khoảng 10 món rồi." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: h9d, text: "自炊を始めて、10種類くらい作れるようになったんだ。", lang: ja }
+        - { id: j2f, text: "自炊を始めて、10種類くらい作ることにしたんだ。", lang: ja }
+        - { id: k5g, text: "自炊を始めて、10種類くらい作れることになったんだ。", lang: ja }
+        - { id: l8h, text: "自炊を始めて、10種類くらい作るところなんだ。", lang: ja }
+    answer:
+      correct_option_id: h9d
+    explanation:
+      vi: Khả năng thay đổi - 作れる + ようになった. ことにした là quyết định; ことになった là do người khác quyết; 作るところ là "sắp nấu".
+    display_answer: 自炊を始めて、10種類くらい作れるようになったんだ。
+
+  - key: ja:exercise:n3-time-decisions-review-wb-gym
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tsuide-ni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Nhân tiện đi tập gym, tôi mua rau về.”"
+      tokens:
+        - { id: y1, text: 買ってきました }
+        - { id: y2, text: ジムに行くたびに、 }
+        - { id: y3, text: 野菜を }
+        - { id: y4, text: ジムに行ったついでに、 }
+    answer:
+      orders:
+        - [y4, y3, y1]
+    explanation:
+      vi: 行ったついでに - nhân tiện đi (việc chính); 野菜を買ってきました - mua rau về (việc phụ). たびに là "mỗi lần".
+    display_answer: ジムに行ったついでに、野菜を買ってきました。
+
+  - key: ja:exercise:n3-time-decisions-review-write-walk
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-setsuyaku
+    prompt:
+      source_text: Để tiết kiệm tiền, tôi đi bộ thay vì đi xe buýt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お金を節約するために、バスに乗る代わりに歩いています。
+        - お金を節約するために、バスに乗るかわりに歩いています。
+        - お金を節約するために、バスの代わりに歩いています。
+        - お金を節約するために、バスのかわりに歩いています。
+        - お金を節約するために、バスに乗る代わりに歩きます。
+        - お金を節約するために、バスに乗らないで歩いています。
+        - 交通費を節約するために、バスに乗る代わりに歩いています。
+        - 節約のために、バスに乗る代わりに歩いています。
+        - おかねをせつやくするために、バスにのるかわりにあるいています。
+        - お金を節約するために、バスに乗る代わりに歩いている。
+    known_wrong:
+      - answer: お金を節約するために、バスに乗るわりに歩いています。
+        feedback_vi: '"Thay vì" là 代わりに; わりに là "so với".'
+        error_tag: wari_kawari
+      - answer: お金を節約するために、バスに乗ったついでに歩いています。
+        feedback_vi: ついでに là "nhân tiện"; "thay vì" là 代わりに.
+        error_tag: kawari_tsuide
+    explanation:
+      vi: 節約するために - để tiết kiệm; バスに乗る代わりに - thay vì đi xe buýt; 歩いています - (thói quen) đi bộ.
+    display_answer: お金を節約するために、バスに乗る代わりに歩いています。

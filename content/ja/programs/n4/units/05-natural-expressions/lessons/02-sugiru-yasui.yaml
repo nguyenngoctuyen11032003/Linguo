@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-sugiru-yasui
+order_index: 2
+level: n4
+title:
+  vi: Quá, dễ, khó - すぎる, やすい, にくい
+objectives:
+  - vi: Nói "quá mức" bằng Vます-gốc / tính từ bỏ đuôi + すぎます.
+  - vi: Nói "dễ làm / khó làm" bằng Vます-gốc + やすい / にくい.
+  - vi: Phân biệt やすい (dễ) với 安い (rẻ), にくい với 難しい.
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking, reading]
+prerequisites: [ja:lesson:n4-te-shimau]
+items:
+  - item: ja:item:n4-gram-sugiru
+  - item: ja:item:n4-gram-yasui-nikui
+  - item: ja:item:n4-karai
+  - item: ja:item:n4-kutsu
+  - item: ja:item:n4-tsukau
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn than phiền và nhận xét tự nhiên khi mua sắm, ăn uống - "cay quá không ăn nổi", "đôi giày này dễ đi", "chữ nhỏ quá khó đọc".
+  - type: explain
+    text:
+      vi: 'すぎます gắn vào gốc ます của động từ hoặc tính từ bỏ đuôi: 食べます → 食べすぎます (ăn quá nhiều), 高い → 高すぎます (đắt quá), 静か → 静かすぎます. Nó mang ý "vượt mức, không tốt", nên khác とても (rất).'
+  - type: explain
+    text:
+      vi: 'Gốc ます + やすい là "dễ làm", + にくい là "khó làm": 読みやすい (dễ đọc), 使いにくい (khó dùng). Kết quả là tính từ đuôi い, nên chia như い-tính từ: 読みやすくないです, 読みやすい本.'
+  - type: explain
+    text:
+      vi: 'Người Việt hay nhầm vì cùng âm "yasui": やすい sau động từ là "dễ", còn 安い đứng một mình là "rẻ". Tiếng Việt nói "khó đọc" nhưng tiếng Nhật không ghép 難しい sau động từ - phải dùng にくい.'
+  - type: deep_explain
+    text:
+      vi: 'すぎる chia như động từ nhóm 2: すぎて (nối câu), すぎた (quá khứ), すぎない (không quá). Hai trường hợp đặc biệt: いい → よすぎる, ない → なさすぎる (自信がなさすぎる - quá thiếu tự tin). やすい / にくい cũng hay tả đồ vật: 割れやすいコップ (cốc dễ vỡ), 汚れにくい服 (áo khó bẩn).'
+  - type: example
+    target: このカレーは辛すぎて、食べられません。
+    target_lang: ja
+    translation:
+      vi: Món cà ri này cay quá, tôi không ăn nổi.
+    note:
+      vi: 辛い → 辛すぎる → 辛すぎて (nối với vế sau).
+  - type: example
+    target: 昨日はゲームをしすぎて、寝るのが遅くなりました。
+    target_lang: ja
+    translation:
+      vi: Hôm qua chơi game quá nhiều nên đi ngủ muộn.
+    note:
+      vi: します → し + すぎます.
+  - type: example
+    target: このスマホは画面が大きくて使いやすいです。
+    target_lang: ja
+    translation:
+      vi: Chiếc điện thoại này màn hình to nên dễ dùng.
+    note:
+      vi: 使います → 使い + やすい.
+  - type: example
+    target: 新しい靴はまだ硬くて、歩きにくいです。
+    target_lang: ja
+    translation:
+      vi: Giày mới còn cứng nên khó đi.
+    note:
+      vi: 歩きます → 歩き + にくい.
+  - type: common_mistake
+    wrong: この部屋は暑いすぎます。
+    right: この部屋は暑すぎます。
+    target_lang: ja
+    note:
+      vi: Tính từ đuôi い bỏ い rồi mới thêm すぎます - 暑い → 暑すぎます.
+  - type: common_mistake
+    wrong: このペンは書き難しいです。
+    right: このペンは書きにくいです。
+    target_lang: ja
+    note:
+      vi: '"Khó làm V" dùng gốc ます + にくい; 難しい không ghép sau động từ.'
+  - type: common_mistake
+    wrong: この本は読み安いです。
+    right: この本は読みやすいです。
+    target_lang: ja
+    note:
+      vi: やすい nghĩa "dễ" viết bằng kana; chữ 安い là "rẻ".
+  - type: summary
+    points:
+      - vi: Vます-gốc / A bỏ い / Na + すぎます - quá mức (thường không tốt).
+      - vi: いい → よすぎる; すぎる chia như động từ nhóm 2 (すぎて, すぎた).
+      - vi: Vます-gốc + やすい (dễ) / にくい (khó) - chia như tính từ đuôi い.
+      - vi: 辛い cay · 靴 giày · 使う dùng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-sugi-mcq-form
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-sugiru
+    prompt:
+      stem: 'Bạn muốn nói "Cái áo này to quá." この服は＿＿。'
+      stem_lang: vi
+      options:
+        - { id: f3k, text: "大きすぎます", lang: ja }
+        - { id: n8a, text: "大きいすぎます", lang: ja }
+        - { id: v2q, text: "大きくすぎます", lang: ja }
+        - { id: j6w, text: "大きなすぎます", lang: ja }
+    answer:
+      correct_option_id: f3k
+    explanation:
+      vi: Tính từ đuôi い bỏ い rồi thêm すぎます - 大きい → 大き + すぎます.
+    display_answer: 大きすぎます
+
+  - key: ja:exercise:n4-sugi-listen-dark
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-yasui-nikui
+    prompt:
+      audio_asset_id: null
+      fallback_text: この道は暗くて、夜は歩きにくいです。
+      options:
+        - { id: o4b, text: "Con đường này tối nên ban đêm khó đi.", lang: vi }
+        - { id: e7m, text: "Con đường này sáng nên ban đêm dễ đi.", lang: vi }
+        - { id: l1z, text: "Con đường này ban đêm tối quá nên tôi không đi.", lang: vi }
+        - { id: x5p, text: "Con đường này rẻ nên ban đêm nhiều người đi.", lang: vi }
+    answer:
+      correct_option_id: o4b
+    explanation:
+      vi: 暗くて - tối nên; 歩きにくい - khó đi bộ. にくい là "khó làm", không phải "không làm".
+    display_answer: Con đường này tối nên ban đêm khó đi.
+
+  - key: ja:exercise:n4-sugi-fill-quiet
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-sugiru
+    prompt:
+      template: "この公園は夜になると静か{{b1}}て、ちょっとこわいです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Công viên này về đêm yên tĩnh quá nên hơi sợ."
+        - "Gợi ý: tính từ đuôi な + từ chỉ 'quá', ở thể て."
+    answer:
+      blanks:
+        b1: [すぎ]
+    known_wrong:
+      - answer: なすぎ
+        feedback_vi: Tính từ đuôi な ghép thẳng - 静かすぎて, không thêm な.
+        error_tag: sugiru_form
+      - answer: すぎる
+        feedback_vi: Trước て là gốc - すぎ + て.
+        error_tag: te_form
+    explanation:
+      vi: 静か + すぎ + て - yên tĩnh quá nên... Ý "quá mức" khiến người nói thấy sợ.
+    display_answer: この公園は夜になると静かすぎて、ちょっとこわいです。
+
+  - key: ja:exercise:n4-sugi-mcq-app
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-tsukau
+    prompt:
+      stem: 'Câu このアプリは使いやすいです。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: c9t, text: "Ứng dụng này dễ dùng.", lang: vi }
+        - { id: h2r, text: "Ứng dụng này rẻ.", lang: vi }
+        - { id: s6d, text: "Ứng dụng này khó dùng.", lang: vi }
+        - { id: y4g, text: "Ứng dụng này dùng quá nhiều.", lang: vi }
+    answer:
+      correct_option_id: c9t
+    explanation:
+      vi: 使い (gốc ます của 使う) + やすい - dễ dùng. Đây không phải 安い (rẻ); khó dùng là 使いにくい.
+    display_answer: Ứng dụng này dễ dùng.
+
+  - key: ja:exercise:n4-sugi-wb-stomach
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-sugiru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tối qua ăn quá nhiều nên bây giờ đau bụng.”"
+      tokens:
+        - { id: k1, text: 今おなかが }
+        - { id: k2, text: 昨日の夜、 }
+        - { id: k3, text: 痛いです }
+        - { id: k4, text: 食べるすぎて、 }
+        - { id: k5, text: 食べすぎて、 }
+    answer:
+      orders:
+        - [k2, k5, k1, k3]
+    explanation:
+      vi: 食べます → 食べ + すぎて (nối câu). Không ghép すぎる vào thể từ điển (食べるすぎ).
+    display_answer: 昨日の夜、食べすぎて、今おなかが痛いです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-sugi-fill-yasui-nikui
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-yasui-nikui
+    prompt:
+      template: "Thuốc này dễ uống - この薬は飲み{{b1}}です。 Chữ này khó viết - この字は書き{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [やすい]
+        b2: [にくい]
+    known_wrong:
+      - answer: 安い
+        feedback_vi: 安い là "rẻ"; "dễ làm" viết bằng kana - やすい.
+        error_tag: yasui_kanji
+      - answer: 難しい
+        feedback_vi: 難しい không ghép sau động từ; "khó làm" là にくい.
+        error_tag: nikui_muzukashii
+    explanation:
+      vi: Gốc ます + やすい (dễ) / にくい (khó). 飲み + やすい, 書き + にくい.
+    display_answer: この薬は飲みやすいです。 / この字は書きにくいです。
+
+  - key: ja:exercise:n4-sugi-write-heavy
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-sugiru
+    prompt:
+      source_text: Cái túi này nặng quá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - このかばんは重すぎます。
+        - このカバンは重すぎます。
+        - このかばんはおもすぎます。
+        - このカバンはおもすぎます。
+        - このかばんは重すぎる。
+        - このバッグは重すぎます。
+    known_wrong:
+      - answer: このかばんは重いすぎます。
+        feedback_vi: Bỏ い của tính từ trước すぎます - 重すぎます.
+        error_tag: sugiru_form
+      - answer: このかばんはとても重いです。
+        feedback_vi: とても là "rất"; "quá (đến mức không ổn)" dùng すぎます.
+        error_tag: sugiru_totemo
+    explanation:
+      vi: 重い (nặng) → 重 + すぎます. すぎます cho thấy nặng vượt mức, khó mang.
+    display_answer: このかばんは重すぎます。
+
+  - key: ja:exercise:n4-sugi-write-shoes
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kutsu
+    prompt:
+      source_text: Đôi giày này dễ đi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この靴は歩きやすいです。
+        - このくつは歩きやすいです。
+        - このくつはあるきやすいです。
+        - この靴ははきやすいです。
+        - このくつははきやすいです。
+        - この靴は歩きやすい。
+    known_wrong:
+      - answer: この靴は歩き安いです。
+        feedback_vi: 安い là "rẻ"; "dễ đi" viết 歩きやすい bằng kana.
+        error_tag: yasui_kanji
+      - answer: この靴は歩くやすいです。
+        feedback_vi: やすい ghép với gốc ます - 歩き + やすい.
+        error_tag: masu_stem
+    explanation:
+      vi: 歩きます → 歩き + やすい - dễ đi bộ. はきやすい (dễ xỏ, dễ mang) cũng tự nhiên với giày.
+    display_answer: この靴は歩きやすいです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-sugi-translate-explanation
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-yasui-nikui
+    prompt:
+      source_text: この説明は長すぎて、分かりにくいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lời giải thích này dài quá nên khó hiểu.
+        - Phần giải thích này dài quá nên khó hiểu.
+        - Lời giải thích này quá dài nên khó hiểu.
+        - Phần giải thích này quá dài nên khó hiểu.
+        - Lời giải thích này dài quá, khó hiểu.
+        - Bản hướng dẫn này dài quá nên khó hiểu.
+        - Phần hướng dẫn này quá dài nên khó hiểu.
+        - Lời giải thích này dài quá nên khó hiểu quá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Lời giải thích này dài nhưng dễ hiểu.
+        feedback_vi: 分かりにくい là "khó hiểu", không phải "dễ hiểu" (分かりやすい).
+        error_tag: yasui_nikui
+    explanation:
+      vi: 長すぎて - dài quá nên; 分かりにくい - khó hiểu. すぎて nối nguyên nhân với kết quả.
+    display_answer: Lời giải thích này dài quá nên khó hiểu.
+
+  - key: ja:exercise:n4-sugi-mcq-shop
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kutsu
+    prompt:
+      stem: Bạn thử một đôi giày ở cửa hàng nhưng nó chật quá. Bạn nói gì với nhân viên?
+      stem_lang: vi
+      options:
+        - { id: u3e, text: "ちょっと小さすぎます。もう少し大きいのはありますか。", lang: ja }
+        - { id: i7n, text: "ちょっと小さいすぎます。もう少し大きいのはありますか。", lang: ja }
+        - { id: w1c, text: "ちょっと小さにくいです。もう少し大きいのはありますか。", lang: ja }
+        - { id: r8v, text: "ちょっと小さすぎましょう。もう少し大きいのはありますか。", lang: ja }
+    answer:
+      correct_option_id: u3e
+    explanation:
+      vi: 小さい → 小さすぎます (nhỏ quá); もう少し大きいの - cái to hơn một chút. にくい chỉ ghép với động từ; ましょう là rủ rê.
+    display_answer: ちょっと小さすぎます。もう少し大きいのはありますか。
+
+  - key: ja:exercise:n4-sugi-wb-board
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-yasui-nikui
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Chữ trên bảng nhỏ quá nên khó đọc.”"
+      tokens:
+        - { id: b1, text: 読みにくいです }
+        - { id: b2, text: 小さすぎて、 }
+        - { id: b3, text: 読みやすいです }
+        - { id: b4, text: 黒板の字が }
+    answer:
+      orders:
+        - [b4, b2, b1]
+    explanation:
+      vi: 小さすぎて (nhỏ quá nên) dẫn tới kết quả xấu - 読みにくい (khó đọc). 読みやすい (dễ đọc) trái nghĩa.
+    display_answer: 黒板の字が小さすぎて、読みにくいです。
+
+  - key: ja:exercise:n4-sugi-write-eyes
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-tsukau
+    prompt:
+      source_text: Tôi dùng điện thoại quá nhiều nên mỏi mắt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - スマホを使いすぎて、目が疲れました。
+        - スマホを使いすぎて、目が疲れています。
+        - スマホを使いすぎて、目がつかれました。
+        - スマートフォンを使いすぎて、目が疲れました。
+        - 携帯を使いすぎて、目が疲れました。
+        - けいたいを使いすぎて、目が疲れました。
+        - スマホをつかいすぎて、めがつかれました。
+        - スマホを使いすぎたので、目が疲れました。
+        - スマホを使いすぎて、目が疲れた。
+    known_wrong:
+      - answer: スマホを使うすぎて、目が疲れました。
+        feedback_vi: すぎる ghép với gốc ます - 使い + すぎて.
+        error_tag: masu_stem
+      - answer: スマホを使いやすくて、目が疲れました。
+        feedback_vi: 使いやすい là "dễ dùng"; "dùng quá nhiều" là 使いすぎる.
+        error_tag: yasui_sugiru
+    explanation:
+      vi: 使います → 使い + すぎて (dùng quá nhiều nên); 目が疲れました - mắt mỏi.
+    display_answer: スマホを使いすぎて、目が疲れました。

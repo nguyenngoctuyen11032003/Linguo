@@ -1,0 +1,394 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-you-ni-naru
+order_index: 2
+level: n3
+title:
+  vi: Thay đổi và quyết định - ～ようになる, ～ことにする
+objectives:
+  - vi: Kể sự thay đổi dần về khả năng, thói quen bằng ～ようになる.
+  - vi: Nói quyết định của chính mình bằng ～ことにする, quy tắc riêng bằng ～ことにしている.
+  - vi: Phân biệt ことにする (mình quyết) với ことになる (người khác / hoàn cảnh quyết).
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:n3-tokoro]
+items:
+  - item: ja:item:n3-gram-you-ni-naru
+  - item: ja:item:n3-gram-koto-ni-suru
+  - item: ja:item:n3-shuukan
+  - item: ja:item:n3-kenkou
+  - item: ja:item:n3-hayaoki
+  - item: ja:item:n3-gram-koto-ni-naru
+    role: reuse
+  - item: ja:item:n3-gram-you-ni-suru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được mình đã thay đổi thế nào từ khi sang Nhật - "đã đọc được báo", "bắt đầu hay nấu ăn" - và nói rõ quyết định nào là của mình, quyết định nào do công ty đưa ra.
+  - type: explain
+    text:
+      vi: '～ようになる tả thay đổi dần dần: thể khả năng + ようになる - "đã có thể" (漢字が読めるようになった); thể từ điển + ようになる - "bắt đầu có thói quen" (毎朝走るようになった). Đó là kết quả tự nhiên, không nhấn ý chí.'
+  - type: explain
+    text:
+      vi: '～ことにする là "quyết định (làm)" do chính mình chọn: 来年帰国することにしました. ～ことにしている là quy tắc riêng đã giữ lâu: 毎晩日記を書くことにしています. Tiếng Việt đều nói "quyết định", nên hãy hỏi "ai quyết?".'
+  - type: explain
+    text:
+      vi: 'Nếu công ty, trường hay hoàn cảnh quyết, dùng ～ことになる (đã học): 転勤することになりました - tôi được điều chuyển. Còn ～ようにする (đã học) là "cố gắng để": 野菜を食べるようにしています.'
+  - type: deep_explain
+    text:
+      vi: 'Bốn mẫu xếp theo hai trục: thay đổi tự nhiên (ようになる) ↔ cố gắng (ようにする); mình quyết (ことにする) ↔ bị quyết (ことになる). Khi báo tin với người trên, người Nhật hay chọn ことになりました dù chính mình quyết, để nghe khiêm tốn - nhưng với bạn bè thì nói thẳng ことにした. Phủ định thay đổi có hai cách: 飲まないようになった hoặc tự nhiên hơn 飲まなくなった.'
+  - type: example
+    target: 日本に来て一年で、新聞が読めるようになりました。
+    target_lang: ja
+    translation:
+      vi: Sang Nhật được một năm, tôi đã đọc được báo.
+    note:
+      vi: Thể khả năng 読める + ようになる - khả năng thay đổi.
+  - type: example
+    target: 最近、子どもが自分から野菜を食べるようになりました。
+    target_lang: ja
+    translation:
+      vi: Dạo này con tôi đã tự giác ăn rau.
+    note:
+      vi: Thói quen mới xuất hiện dần.
+  - type: example
+    target: 来月から毎朝30分歩くことにしました。
+    target_lang: ja
+    translation:
+      vi: Tôi quyết định từ tháng sau mỗi sáng đi bộ 30 phút.
+    note:
+      vi: Mình tự quyết - ことにする.
+  - type: example
+    target: 夜9時以降はスマホを見ないことにしています。
+    target_lang: ja
+    translation:
+      vi: Tôi có quy tắc là sau 9 giờ tối không xem điện thoại.
+    note:
+      vi: Quy tắc riêng giữ lâu - ことにしている.
+  - type: example
+    target: 会社の方針で、来年から在宅勤務をすることになりました。
+    target_lang: ja
+    translation:
+      vi: Theo chính sách của công ty, từ năm sau tôi sẽ làm việc tại nhà.
+    note:
+      vi: Công ty quyết - ことになる.
+  - type: common_mistake
+    wrong: 毎日練習して、日本語が上手に話すようになりました。
+    right: 毎日練習して、日本語が上手に話せるようになりました。
+    target_lang: ja
+    note:
+      vi: Nói "đã có thể" phải dùng thể khả năng (話せる) trước ようになる.
+  - type: common_mistake
+    wrong: 会社を辞めることになったよ。
+    right: 会社を辞めることにしたよ。
+    target_lang: ja
+    note:
+      vi: Khi chính bạn chọn nghỉ việc và nói với bạn bè, quyết định của chính mình thì nói ことにした; ことになった nghe như bị công ty bắt nghỉ.
+  - type: summary
+    points:
+      - vi: V(khả năng) + ようになる - đã có thể; V-る + ようになる - bắt đầu có thói quen.
+      - vi: V-る / V-ない + ことにする - mình quyết định; ことにしている - quy tắc riêng.
+      - vi: ことになる - người khác / hoàn cảnh quyết; ようにする - cố gắng để.
+      - vi: 習慣 thói quen · 健康 sức khoẻ · 早起き dậy sớm.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-younaru-mcq-decide
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-suru
+    prompt:
+      stem: 'Bạn tự quyết định (không ai bảo) và nói với bạn thân: "Tớ quyết định năm sau đi du học." 来年留学する＿＿。'
+      stem_lang: vi
+      options:
+        - { id: k2u, text: "ことにした", lang: ja }
+        - { id: a7j, text: "ようになった", lang: ja }
+        - { id: z5r, text: "ことがあった", lang: ja }
+        - { id: n8e, text: "ようだった", lang: ja }
+    answer:
+      correct_option_id: k2u
+    explanation:
+      vi: Quyết định của chính mình - ことにする → ことにした. ようになった là thay đổi tự nhiên; ことがあった là "đã từng có lúc"; ようだった là "có vẻ".
+    display_answer: ことにした
+
+  - key: ja:exercise:n3-younaru-listen-guitar
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-naru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 毎日練習して、ギターが弾けるようになりました。
+      options:
+        - { id: g4w, text: "Nhờ luyện tập mỗi ngày, tôi đã chơi được guitar.", lang: vi }
+        - { id: t1o, text: "Tôi quyết định luyện guitar mỗi ngày.", lang: vi }
+        - { id: f9p, text: "Tôi đang cố gắng luyện guitar mỗi ngày.", lang: vi }
+        - { id: l3s, text: "Tôi bị bắt phải luyện guitar mỗi ngày.", lang: vi }
+    answer:
+      correct_option_id: g4w
+    explanation:
+      vi: 弾ける (thể khả năng) + ようになりました - đã có thể chơi. Không có ý quyết định (ことにする) hay cố gắng (ようにする).
+    display_answer: Nhờ luyện tập mỗi ngày, tôi đã chơi được guitar.
+
+  - key: ja:exercise:n3-younaru-fill-rule
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hayaoki
+    prompt:
+      template: "健康のために、毎朝早起きする{{b1}}しています。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Vì sức khoẻ, tôi giữ quy tắc (cố gắng) mỗi sáng dậy sớm."
+        - "Gợi ý: ～＿＿しています - quy tắc riêng hoặc sự cố gắng giữ lâu."
+    answer:
+      blanks:
+        b1: [ことに, ように]
+    known_wrong:
+      - answer: ことが
+        feedback_vi: ことがしています không tồn tại; quy tắc riêng là ことにしています.
+        error_tag: koto_ni_suru_form
+      - answer: ことを
+        feedback_vi: Mẫu cố định dùng に - ことにしています.
+        error_tag: particle_choice
+    explanation:
+      vi: ことにしています - quy tắc tự đặt ra; ようにしています - cố gắng giữ thói quen. Cả hai đều tự nhiên ở đây.
+    display_answer: 健康のために、毎朝早起きすることにしています。
+
+  - key: ja:exercise:n3-younaru-mcq-transfer
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-naru
+    prompt:
+      stem: 'Câu 部長の指示で、来月から大阪に転勤することになりました。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: q6c, text: "Theo chỉ thị của trưởng phòng, từ tháng sau tôi sẽ chuyển công tác đến Osaka.", lang: vi }
+        - { id: x2v, text: "Tôi tự quyết định từ tháng sau chuyển đến Osaka.", lang: vi }
+        - { id: h8b, text: "Từ tháng sau tôi đã quen với việc làm ở Osaka.", lang: vi }
+        - { id: y4m, text: "Tôi định xin trưởng phòng cho chuyển đến Osaka.", lang: vi }
+    answer:
+      correct_option_id: q6c
+    explanation:
+      vi: 指示で - theo chỉ thị; ことになりました - được (người khác) quyết định. Đây không phải quyết định của người nói.
+    display_answer: Theo chỉ thị của trưởng phòng, từ tháng sau tôi sẽ chuyển công tác đến Osaka.
+
+  - key: ja:exercise:n3-younaru-wb-child
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-naru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Dạo này con tôi đã tự dậy một mình được.”"
+      tokens:
+        - { id: c1, text: 起きることにしました }
+        - { id: c2, text: 一人で }
+        - { id: c3, text: 子どもが }
+        - { id: c4, text: 起きられるようになりました }
+        - { id: c5, text: 最近、 }
+    answer:
+      orders:
+        - [c5, c3, c2, c4]
+    explanation:
+      vi: Khả năng thay đổi - thể khả năng 起きられる + ようになりました. ことにしました là quyết định, không hợp với đứa trẻ "tự dậy được".
+    display_answer: 最近、子どもが一人で起きられるようになりました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-younaru-fill-suru-naru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koto-ni-suru
+    prompt:
+      template: "Tôi tự quyết bỏ thuốc lá - タバコをやめることに{{b1}}ました。 Công ty cử tôi đi công tác - 出張することに{{b2}}ました。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [し]
+        b2: [なり]
+    explanation:
+      vi: Mình quyết - ことにしました; người khác quyết - ことになりました. Chỉ khác する / なる nhưng ý nghĩa đổi hẳn.
+    display_answer: タバコをやめることにしました。 / 出張することになりました。
+
+  - key: ja:exercise:n3-younaru-write-sashimi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-naru
+    prompt:
+      source_text: Từ khi sang Nhật, tôi đã ăn được sashimi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本に来てから、刺身が食べられるようになりました。
+        - 日本に来てから、刺身を食べられるようになりました。
+        - 日本に来てから、さしみが食べられるようになりました。
+        - 日本に来てから、さしみを食べられるようになりました。
+        - にほんにきてから、さしみがたべられるようになりました。
+        - 日本に来てから、刺身が食べられるようになった。
+        - 日本へ来てから、刺身が食べられるようになりました。
+        - 日本に来て、刺身が食べられるようになりました。
+    known_wrong:
+      - answer: 日本に来てから、刺身を食べるようになりました。
+        feedback_vi: Câu nói về khả năng ("ăn được") - cần thể khả năng 食べられる.
+        error_tag: potential_you_ni_naru
+      - answer: 日本に来てから、刺身が食べられることになりました。
+        feedback_vi: Thay đổi tự nhiên của bản thân dùng ようになる, không phải ことになる.
+        error_tag: you_ni_koto_ni
+    explanation:
+      vi: 来てから - từ khi đến; 食べられる + ようになりました - đã có thể ăn được.
+    display_answer: 日本に来てから、刺身が食べられるようになりました。
+
+  - key: ja:exercise:n3-younaru-write-call-parents
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-shuukan
+    prompt:
+      source_text: Tôi có quy tắc riêng là mỗi tuần gọi điện cho bố mẹ một lần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 毎週一回、両親に電話することにしています。
+        - 毎週1回、両親に電話することにしています。
+        - 週に一回、両親に電話することにしています。
+        - 週に1回、両親に電話することにしています。
+        - 毎週一度、両親に電話することにしています。
+        - 週に一度、両親に電話することにしています。
+        - 毎週一回、親に電話することにしています。
+        - 週に一回、親に電話することにしています。
+        - まいしゅういっかい、りょうしんにでんわすることにしています。
+        - 毎週一回両親に電話することにしている。
+    known_wrong:
+      - answer: 毎週一回、両親に電話することになっています。
+        feedback_vi: ことになっている là quy định do người khác đặt; quy tắc của riêng bạn là ことにしています.
+        error_tag: koto_ni_naru_suru
+      - answer: 毎週一回、両親に電話するようになりました。
+        feedback_vi: ようになりました là thay đổi tự nhiên; "quy tắc riêng" là ことにしています.
+        error_tag: you_ni_koto_ni
+    explanation:
+      vi: 毎週一回 / 週に一回 - mỗi tuần một lần; 電話することにしています - quy tắc tự đặt, giữ lâu.
+    display_answer: 毎週一回、両親に電話することにしています。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-younaru-translate-neighbors
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-you-ni-naru
+    prompt:
+      source_text: 引っ越してから、近所の人とよく話すようになった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ khi chuyển nhà, tôi bắt đầu hay nói chuyện với hàng xóm.
+        - Từ khi chuyển nhà, tôi hay nói chuyện với hàng xóm hơn.
+        - Từ khi chuyển nhà, tôi đã hay trò chuyện với hàng xóm.
+        - Sau khi chuyển nhà, tôi bắt đầu hay nói chuyện với hàng xóm.
+        - Từ lúc chuyển nhà, tôi bắt đầu thường xuyên nói chuyện với hàng xóm.
+        - Từ khi chuyển nhà, tôi trở nên hay nói chuyện với hàng xóm.
+        - Từ khi chuyển nhà, tôi thường nói chuyện với người hàng xóm.
+        - Chuyển nhà xong, tôi bắt đầu hay nói chuyện với hàng xóm.
+        - Từ khi chuyển nhà, tôi bắt đầu hay nói chuyện với những người hàng xóm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Từ khi chuyển nhà, tôi quyết định hay nói chuyện với hàng xóm.
+        feedback_vi: ようになった là thay đổi tự nhiên ("bắt đầu hay..."), không phải quyết định.
+        error_tag: you_ni_naru_meaning
+    explanation:
+      vi: 引っ越してから - từ khi chuyển nhà; よく話すようになった - bắt đầu hay nói chuyện (thói quen mới hình thành).
+    display_answer: Từ khi chuyển nhà, tôi bắt đầu hay nói chuyện với hàng xóm.
+
+  - key: ja:exercise:n3-younaru-mcq-job-change
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-koto-ni-suru
+    prompt:
+      stem: Sau nhiều tháng suy nghĩ, bạn tự quyết định đổi việc. Bạn báo với bạn thân thế nào cho đúng ý?
+      stem_lang: vi
+      options:
+        - { id: w5d, text: "いろいろ考えて、転職することにしたよ。", lang: ja }
+        - { id: e1h, text: "いろいろ考えて、転職するようになったよ。", lang: ja }
+        - { id: r7k, text: "いろいろ考えて、転職することにしているよ。", lang: ja }
+        - { id: u3f, text: "いろいろ考えて、転職するようにしたよ。", lang: ja }
+    answer:
+      correct_option_id: w5d
+    explanation:
+      vi: Một quyết định của chính mình - ことにした. ことにしている là quy tắc lặp lại; ようになった là thay đổi tự nhiên; ようにした là "cố gắng để".
+    display_answer: いろいろ考えて、転職することにしたよ。
+
+  - key: ja:exercise:n3-younaru-wb-sweets
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-kenkou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Vì sức khoẻ, tôi quyết định không ăn đồ ngọt sau 8 giờ tối.”"
+      tokens:
+        - { id: s1, text: 食べないようになりました }
+        - { id: s2, text: 甘いものを }
+        - { id: s3, text: 健康のために、 }
+        - { id: s4, text: 食べないことにしました }
+        - { id: s5, text: 夜8時以降は }
+    answer:
+      orders:
+        - [s3, s5, s2, s4]
+        - [s3, s2, s5, s4]
+    explanation:
+      vi: Quyết định của mình - V-ない + ことにしました. 食べないようになりました là thay đổi tự nhiên, không phải quyết định.
+    display_answer: 健康のために、夜8時以降は甘いものを食べないことにしました。
+
+  - key: ja:exercise:n3-younaru-write-wake-early
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hayaoki
+    prompt:
+      source_text: Tôi đã quyết định từ ngày mai sẽ dậy sớm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 明日から早起きすることにしました。
+        - 明日から早起きをすることにしました。
+        - 明日から早く起きることにしました。
+        - あしたから早起きすることにしました。
+        - あしたからはやおきすることにしました。
+        - あしたからはやくおきることにしました。
+        - 明日から早起きすることにした。
+        - 私は明日から早起きすることにしました。
+    known_wrong:
+      - answer: 明日から早起きすることになりました。
+        feedback_vi: Bạn tự quyết nên dùng ことにしました; ことになりました là do người khác / hoàn cảnh quyết.
+        error_tag: koto_ni_naru_suru
+      - answer: 明日から早起きするようになりました。
+        feedback_vi: ようになる là thay đổi đã xảy ra dần dần, không dùng cho quyết định về ngày mai.
+        error_tag: you_ni_koto_ni
+    explanation:
+      vi: 明日から - từ ngày mai; 早起きする + ことにしました - đã quyết định dậy sớm.
+    display_answer: 明日から早起きすることにしました。

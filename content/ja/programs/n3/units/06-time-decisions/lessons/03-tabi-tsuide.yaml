@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-tabi-tsuide
+order_index: 3
+level: n3
+title:
+  vi: Mỗi lần, nhân tiện - ～たびに, ～ついでに
+objectives:
+  - vi: Nói "mỗi lần... là lại..." bằng V-る / Nの + たびに.
+  - vi: Nói "nhân tiện, tiện thể" bằng V-る / V-た / Nの + ついでに.
+  - vi: Nhờ người khác làm giúp việc nhỏ một cách tự nhiên với ついでに.
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n3-you-ni-naru]
+items:
+  - item: ja:item:n3-gram-tabi-ni
+  - item: ja:item:n3-gram-tsuide-ni
+  - item: ja:item:n3-omoidasu
+  - item: ja:item:n3-yoru
+  - item: ja:item:n3-yuubinkyoku
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được thói quen gắn với kỷ niệm - "mỗi lần nghe bài này lại nhớ thời sinh viên" - và nhờ đồng nghiệp "tiện đi bưu điện thì gửi giúp" mà không nghe nặng nề.
+  - type: explain
+    text:
+      vi: '～たびに là "mỗi lần... là (lại)...": V-る + たびに (見るたびに), N + の + たびに (旅行のたびに). Vế sau là việc luôn xảy ra theo, giống "hễ... là..." trong tiếng Việt.'
+  - type: explain
+    text:
+      vi: '～ついでに là "nhân tiện, tiện thể": việc trước ついでに là việc chính đã định, việc sau là việc phụ làm thêm. Nối: V-る / V-た / Nの + ついでに - 買い物のついでに, 駅に行ったついでに.'
+  - type: explain
+    text:
+      vi: 'Người Việt hay quên の sau danh từ (旅行たびに) hoặc thêm の sau động từ (見るのたびに). Quy tắc giống nhau cho cả hai mẫu: động từ nối thẳng, danh từ cần の.'
+  - type: deep_explain
+    text:
+      vi: 'ついでに rất hay dùng khi nhờ vả: 〜ついでに、…てもらえませんか. Vì việc nhờ chỉ là "tiện tay", người nghe thấy nhẹ nhàng hơn câu nhờ thẳng. Còn たびに mang sắc thái hơi trang trọng hoặc cảm xúc; trong hội thoại thường ngày người ta cũng nói ～と、いつも.'
+  - type: example
+    target: この写真を見るたびに、大学時代を思い出します。
+    target_lang: ja
+    translation:
+      vi: Mỗi lần xem bức ảnh này, tôi lại nhớ về thời đại học.
+    note:
+      vi: V-る + たびに; 思い出す - nhớ lại.
+  - type: example
+    target: 出張のたびに、その町の名物を食べるようにしています。
+    target_lang: ja
+    translation:
+      vi: Mỗi lần đi công tác, tôi đều cố ăn món đặc sản của thành phố đó.
+    note:
+      vi: N + の + たびに.
+  - type: example
+    target: 散歩のついでに、パンを買ってきました。
+    target_lang: ja
+    translation:
+      vi: Nhân tiện đi dạo, tôi mua bánh mì về.
+    note:
+      vi: Việc chính là đi dạo; mua bánh mì là việc phụ.
+  - type: example
+    target: 郵便局に行ったついでに、銀行にも寄りました。
+    target_lang: ja
+    translation:
+      vi: Nhân tiện đi bưu điện, tôi ghé luôn ngân hàng.
+    note:
+      vi: 寄る - ghé qua; nơi ghé đi với に.
+  - type: common_mistake
+    wrong: この歌を聞くのたびに、泣いてしまいます。
+    right: この歌を聞くたびに、泣いてしまいます。
+    target_lang: ja
+    note:
+      vi: Động từ nối thẳng với たびに, không thêm の.
+  - type: common_mistake
+    wrong: 旅行たびに、お土産を買います。
+    right: 旅行のたびに、お土産を買います。
+    target_lang: ja
+    note:
+      vi: Danh từ cần の trước たびに / ついでに.
+  - type: summary
+    points:
+      - vi: V-る / Nの + たびに - mỗi lần... là lại...
+      - vi: V-る / V-た / Nの + ついでに - nhân tiện (việc chính → việc phụ).
+      - vi: 〜ついでに、〜てもらえませんか - nhờ vả nhẹ nhàng.
+      - vi: 思い出す nhớ lại · 寄る ghé qua · 郵便局 bưu điện.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-tabi-mcq-hometown
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tabi-ni
+    prompt:
+      stem: '"Mỗi lần về quê là tôi lại tăng cân." 実家に帰る＿＿、太ってしまいます。'
+      stem_lang: vi
+      options:
+        - { id: d3r, text: "たびに", lang: ja }
+        - { id: m8c, text: "ついでに", lang: ja }
+        - { id: k5x, text: "ところで", lang: ja }
+        - { id: b1v, text: "わりに", lang: ja }
+    answer:
+      correct_option_id: d3r
+    explanation:
+      vi: '"Mỗi lần... là lại..." - たびに. ついでに là "nhân tiện"; ところで là "nhân tiện (đổi chủ đề)"; わりに là "so với... thì".'
+    display_answer: たびに
+
+  - key: ja:exercise:n3-tabi-listen-milk
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-tsuide-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: コンビニに行くついでに、牛乳を買ってきてくれない？
+      options:
+        - { id: p6z, text: "Tiện ra cửa hàng tiện lợi thì mua giúp tớ sữa được không?", lang: vi }
+        - { id: e4n, text: "Mỗi lần ra cửa hàng tiện lợi, cậu đều mua sữa à?", lang: vi }
+        - { id: j9q, text: "Cậu ra cửa hàng tiện lợi chỉ để mua sữa à?", lang: vi }
+        - { id: w2l, text: "Đừng mua sữa ở cửa hàng tiện lợi nhé.", lang: vi }
+    answer:
+      correct_option_id: p6z
+    explanation:
+      vi: 行くついでに - nhân tiện đi; 買ってきてくれない？ - mua về giúp tớ được không. Đi cửa hàng là việc chính, mua sữa là việc phụ.
+    display_answer: Tiện ra cửa hàng tiện lợi thì mua giúp tớ sữa được không?
+
+  - key: ja:exercise:n3-tabi-fill-song
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-omoidasu
+    prompt:
+      template: "この曲を聞く{{b1}}、高校時代の友だちを思い出します。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Mỗi lần nghe bản nhạc này, tôi lại nhớ đến bạn bè thời cấp ba."
+        - "Gợi ý: 'mỗi lần... là lại...'."
+    answer:
+      blanks:
+        b1: [たびに, 度に]
+    known_wrong:
+      - answer: ついでに
+        feedback_vi: Nghe nhạc không phải "việc chính" để "tiện thể" nhớ bạn; "mỗi lần... lại..." là たびに.
+        error_tag: tabi_tsuide
+      - answer: のたびに
+        feedback_vi: Động từ 聞く nối thẳng - 聞くたびに.
+        error_tag: no_after_verb
+    explanation:
+      vi: 聞く + たびに - mỗi lần nghe; 思い出します - lại nhớ đến.
+    display_answer: この曲を聞くたびに、高校時代の友だちを思い出します。
+
+  - key: ja:exercise:n3-tabi-mcq-post
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-yuubinkyoku
+    prompt:
+      stem: 'Câu ジョギングのついでに、郵便局に寄りました。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: f7h, text: "Nhân tiện chạy bộ, tôi ghé qua bưu điện.", lang: vi }
+        - { id: s2t, text: "Mỗi lần chạy bộ tôi đều ghé bưu điện.", lang: vi }
+        - { id: a5y, text: "Tôi đi bưu điện xong rồi mới chạy bộ.", lang: vi }
+        - { id: o8u, text: "Tôi chạy bộ đến bưu điện để gửi thư.", lang: vi }
+    answer:
+      correct_option_id: f7h
+    explanation:
+      vi: ジョギングのついでに - nhân tiện chạy bộ (việc chính); 郵便局に寄りました - ghé qua bưu điện (việc phụ). "Mỗi lần" là たびに.
+    display_answer: Nhân tiện chạy bộ, tôi ghé qua bưu điện.
+
+  - key: ja:exercise:n3-tabi-wb-meet
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tabi-ni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Mỗi lần gặp tôi, anh ấy đều nói chuyện công việc.”"
+      tokens:
+        - { id: m1, text: 仕事の話をします }
+        - { id: m2, text: 会うついでに、 }
+        - { id: m3, text: 彼は }
+        - { id: m4, text: 会うたびに、 }
+    answer:
+      orders:
+        - [m3, m4, m1]
+        - [m4, m3, m1]
+    explanation:
+      vi: 会う + たびに - mỗi lần gặp. Gặp nhau không phải "việc chính để tiện thể", nên không dùng ついでに.
+    display_answer: 彼は会うたびに、仕事の話をします。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-tabi-fill-supermarket
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-yoru
+    prompt:
+      template: "Nhân tiện ra ngoài, tôi đã ghé siêu thị - 出かけた{{b1}}、スーパーに{{b2}}ました。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [ついでに]
+        b2: [寄り, より]
+    known_wrong:
+      - answer: たびに
+        feedback_vi: たびに đi với thể từ điển và chỉ việc lặp lại; "nhân tiện" là ついでに.
+        error_tag: tabi_tsuide
+      - answer: 寄る
+        feedback_vi: Trước ました là gốc ます - 寄り.
+        error_tag: masu_stem
+    explanation:
+      vi: 出かけたついでに - nhân tiện ra ngoài; スーパーに寄りました - ghé siêu thị.
+    display_answer: 出かけたついでに、スーパーに寄りました。
+
+  - key: ja:exercise:n3-tabi-write-books
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tabi-ni
+    prompt:
+      source_text: Mỗi lần đến Nhật, tôi đều mua sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本に来るたびに、本を買います。
+        - 日本へ来るたびに、本を買います。
+        - 日本に行くたびに、本を買います。
+        - 日本へ行くたびに、本を買います。
+        - 日本に来るたびに、いつも本を買います。
+        - 日本に行くたびに、いつも本を買います。
+        - にほんにくるたびに、ほんをかいます。
+        - にほんにいくたびに、ほんをかいます。
+        - 日本に来るたびに本を買う。
+        - 日本に行くたびに本を買う。
+    known_wrong:
+      - answer: 日本に来たたびに、本を買います。
+        feedback_vi: Thói quen lặp lại dùng thể từ điển - 来るたびに.
+        error_tag: tabi_form
+      - answer: 日本に来るついでに、本を買います。
+        feedback_vi: '"Mỗi lần... đều..." là たびに; ついでに là "nhân tiện".'
+        error_tag: tabi_tsuide
+    explanation:
+      vi: 来る / 行く + たびに - mỗi lần đến / đi; 本を買います - mua sách (thói quen).
+    display_answer: 日本に来るたびに、本を買います。
+
+  - key: ja:exercise:n3-tabi-write-library
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tsuide-ni
+    prompt:
+      source_text: Nhân tiện đi mua sắm, tôi đã ghé qua thư viện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 買い物のついでに、図書館に寄りました。
+        - 買い物に行ったついでに、図書館に寄りました。
+        - 買い物に行くついでに、図書館に寄りました。
+        - 買い物のついでに、図書館へ寄りました。
+        - かいもののついでに、としょかんによりました。
+        - 買い物のついでに、図書館に寄った。
+        - 買物のついでに、図書館に寄りました。
+        - 買い物したついでに、図書館に寄りました。
+    known_wrong:
+      - answer: 買い物ついでに、図書館を寄りました。
+        feedback_vi: Nơi ghé qua đi với に - 図書館に寄る.
+        error_tag: particle_choice
+      - answer: 買い物のたびに、図書館に寄りました。
+        feedback_vi: たびに là "mỗi lần"; câu này là "nhân tiện" - ついでに.
+        error_tag: tabi_tsuide
+    explanation:
+      vi: 買い物のついでに - nhân tiện đi mua sắm (N + の); 図書館に寄りました - ghé thư viện.
+    display_answer: 買い物のついでに、図書館に寄りました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-tabi-translate-moving
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-tabi-ni
+    prompt:
+      source_text: 引っ越しのたびに、いらない物を捨てるようにしている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mỗi lần chuyển nhà, tôi cố gắng vứt bỏ những đồ không cần thiết.
+        - Mỗi lần chuyển nhà, tôi cố vứt những đồ không cần.
+        - Mỗi lần chuyển nhà, tôi đều cố gắng vứt đồ không cần thiết.
+        - Mỗi khi chuyển nhà, tôi cố gắng bỏ những thứ không cần thiết.
+        - Mỗi lần chuyển nhà, tôi cố gắng vứt những thứ không cần dùng.
+        - Mỗi lần chuyển nhà là tôi cố gắng vứt bỏ đồ không cần thiết.
+        - Cứ mỗi lần chuyển nhà, tôi lại cố vứt bỏ những đồ không cần thiết.
+        - Mỗi lần chuyển nhà, tôi cố gắng vứt bỏ những đồ không cần.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhân tiện chuyển nhà, tôi vứt đồ không cần thiết.
+        feedback_vi: のたびに là "mỗi lần"; ようにしている là "cố gắng (thành thói quen)".
+        error_tag: tabi_meaning
+    explanation:
+      vi: 引っ越しのたびに - mỗi lần chuyển nhà; いらない物 - đồ không cần; 捨てるようにしている - cố gắng vứt (thói quen).
+    display_answer: Mỗi lần chuyển nhà, tôi cố gắng vứt bỏ những đồ không cần thiết.
+
+  - key: ja:exercise:n3-tabi-mcq-parcel
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-yuubinkyoku
+    prompt:
+      stem: Đồng nghiệp sắp ra bưu điện. Bạn muốn nhờ anh ấy tiện thể gửi giúp gói hàng của mình một cách lịch sự. Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: c4j, text: "郵便局に行くついでに、この荷物も出してもらえませんか。", lang: ja }
+        - { id: n7g, text: "郵便局に行くたびに、この荷物も出してもらえませんか。", lang: ja }
+        - { id: v2d, text: "郵便局に行くのついでに、この荷物も出してもらえませんか。", lang: ja }
+        - { id: y6s, text: "郵便局に行くついでに、この荷物も出してあげませんか。", lang: ja }
+    answer:
+      correct_option_id: c4j
+    explanation:
+      vi: 行くついでに - tiện đi; 出してもらえませんか - nhờ lịch sự. たびに là "mỗi lần"; động từ không thêm の; てあげる là mình làm cho người khác - sai vai.
+    display_answer: 郵便局に行くついでに、この荷物も出してもらえませんか。
+
+  - key: ja:exercise:n3-tabi-wb-rain
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tabi-ni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Cứ mỗi lần trời mưa là xe buýt lại trễ.”"
+      tokens:
+        - { id: r1, text: 遅れます }
+        - { id: r2, text: 雨が降るついでに、 }
+        - { id: r3, text: バスが }
+        - { id: r4, text: 雨が降るたびに、 }
+    answer:
+      orders:
+        - [r4, r3, r1]
+    explanation:
+      vi: 降る + たびに - mỗi lần mưa; vế sau là việc luôn xảy ra theo. Trời mưa không phải "việc chính" để dùng ついでに.
+    display_answer: 雨が降るたびに、バスが遅れます。
+
+  - key: ja:exercise:n3-tabi-write-osaka
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-yoru
+    prompt:
+      source_text: Nhân tiện đi công tác Osaka, tôi đã ghé nhà bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 大阪に出張したついでに、友だちの家に寄りました。
+        - 大阪に出張したついでに、友達の家に寄りました。
+        - 大阪へ出張したついでに、友だちの家に寄りました。
+        - 大阪出張のついでに、友だちの家に寄りました。
+        - 大阪出張のついでに、友達の家に寄りました。
+        - 大阪に出張したついでに、友人の家に寄りました。
+        - 大阪に出張に行ったついでに、友だちの家に寄りました。
+        - おおさかにしゅっちょうしたついでに、ともだちのいえによりました。
+        - 大阪に出張したついでに、友だちの家に寄った。
+    known_wrong:
+      - answer: 大阪に出張したついでに、友だちの家を寄りました。
+        feedback_vi: Nơi ghé qua đi với に - 家に寄る.
+        error_tag: particle_choice
+      - answer: 大阪に出張したたびに、友だちの家に寄りました。
+        feedback_vi: Đây là một lần "nhân tiện" - ついでに; たびに dùng cho việc lặp lại với thể từ điển.
+        error_tag: tabi_tsuide
+    explanation:
+      vi: 出張したついでに / 出張のついでに - nhân tiện đi công tác (việc chính); 友だちの家に寄りました - ghé nhà bạn (việc phụ).
+    display_answer: 大阪に出張したついでに、友だちの家に寄りました。

@@ -1,0 +1,400 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-wari-kawari
+order_index: 4
+level: n3
+title:
+  vi: So với... thì, thay vì / đổi lại - ～わりに, ～かわりに
+objectives:
+  - vi: Nói kết quả khác kỳ vọng bằng ～わりに(は).
+  - vi: Nói "thay cho, thay vì" và "đổi lại, bù lại" bằng ～かわりに.
+  - vi: Không nhầm わりに với かわりに và với のに.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading, speaking]
+prerequisites: [ja:lesson:n3-tabi-tsuide]
+items:
+  - item: ja:item:n3-gram-wari-ni
+  - item: ja:item:n3-gram-kawari-ni
+  - item: ja:item:n3-hinshitsu
+  - item: ja:item:n3-kyuuryou
+  - item: ja:item:n3-keiken
+  - item: ja:item:n3-shuukan
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nhận xét như người Nhật - "so với giá thì ngon", "ăn nhiều mà không béo" - và nói được chuyện đổi chác, thay thế, cái được cái mất khi chọn việc làm hay nhà ở.
+  - type: explain
+    text:
+      vi: '～わりに(は) là "so với... thì (lại)...": kết quả lệch khỏi điều người ta thường nghĩ từ A. 値段のわりにおいしい - giá rẻ thế mà ngon. Nối: thể thường, Aい, Naな, Nの + わりに.'
+  - type: explain
+    text:
+      vi: '～かわりに (代わりに) có ba nghĩa: thay cho (部長の代わりに私が出ます), đổi lại (教えてもらう代わりに教えます), bù lại - mặt tốt đi kèm mặt xấu (給料が高い代わりに休みが少ない). Nối: Nの, V-る, thể thường.'
+  - type: explain
+    text:
+      vi: 'Hai mẫu chỉ khác một chữ か nhưng nghĩa khác hẳn. わりに so mức độ với kỳ vọng; かわりに đổi một thứ lấy một thứ. Khi hai sự thật trái ngược hoàn toàn (mưa mà vẫn thi đấu), dùng のに chứ không phải わりに.'
+  - type: deep_explain
+    text:
+      vi: 'わりに thường kèm đánh giá chủ quan, nên vế sau hay là tính từ (おいしい, 若い, 安い) hoặc kết quả bất ngờ. Đừng viết 変わりに (変わる - thay đổi); "thay thế" là 代わり (代わる). Trong văn nói, わりと / わりに đứng một mình còn là phó từ "khá là" - わりと簡単だった (khá dễ).'
+  - type: example
+    target: このレストランは値段のわりに、料理がおいしいです。
+    target_lang: ja
+    translation:
+      vi: Nhà hàng này so với giá thì đồ ăn rất ngon.
+    note:
+      vi: N + の + わりに.
+  - type: example
+    target: 弟はたくさん食べるわりに、全然太りません。
+    target_lang: ja
+    translation:
+      vi: Em trai tôi ăn nhiều thế mà chẳng béo chút nào.
+    note:
+      vi: V-る + わりに - kết quả trái kỳ vọng.
+  - type: example
+    target: 今日は田中さんの代わりに、私が会議に出ます。
+    target_lang: ja
+    translation:
+      vi: Hôm nay tôi sẽ dự họp thay cho anh Tanaka.
+    note:
+      vi: Nghĩa (1) - thay cho.
+  - type: example
+    target: 友だちに日本語を教えてもらう代わりに、ベトナム語を教えています。
+    target_lang: ja
+    translation:
+      vi: Bạn dạy tôi tiếng Nhật, đổi lại tôi dạy bạn ấy tiếng Việt.
+    note:
+      vi: Nghĩa (2) - đổi lại.
+  - type: example
+    target: この仕事は給料が高いかわりに、休みが少ないです。
+    target_lang: ja
+    translation:
+      vi: Công việc này lương cao nhưng bù lại ít ngày nghỉ.
+    note:
+      vi: Nghĩa (3) - bù lại; 給料 - tiền lương.
+  - type: common_mistake
+    wrong: このかばんは値段にわりに、軽いです。
+    right: このかばんは値段のわりに、軽いです。
+    target_lang: ja
+    note:
+      vi: Danh từ nối với わりに bằng の.
+  - type: common_mistake
+    wrong: 雨が降ったわりに、試合が行われました。
+    right: 雨が降ったのに、試合が行われました。
+    target_lang: ja
+    note:
+      vi: Đây là sự thật trái ngược, không phải so mức độ - dùng のに.
+  - type: common_mistake
+    wrong: 母の変わりに、私が料理をします。
+    right: 母の代わりに、私が料理をします。
+    target_lang: ja
+    note:
+      vi: '"Thay cho" viết 代わり (代わる - thay thế), không phải 変わり (変わる - thay đổi).'
+  - type: summary
+    points:
+      - vi: Thể thường / Aい / Naな / Nの + わりに - so với... thì (lệch kỳ vọng).
+      - vi: Nの / V-る + 代わりに - thay cho / đổi lại / bù lại.
+      - vi: Sự thật trái ngược hoàn toàn - dùng のに, không dùng わりに.
+      - vi: 品質 chất lượng · 給料 tiền lương · 経験 kinh nghiệm.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-wari-mcq-study
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-wari-ni
+    prompt:
+      stem: '"Anh ấy học ít thế mà điểm lại cao." 彼はあまり勉強しない＿＿、成績がいい。'
+      stem_lang: vi
+      options:
+        - { id: x3a, text: "わりに", lang: ja }
+        - { id: q8s, text: "かわりに", lang: ja }
+        - { id: l5d, text: "たびに", lang: ja }
+        - { id: h1f, text: "ついでに", lang: ja }
+    answer:
+      correct_option_id: x3a
+    explanation:
+      vi: Kết quả (điểm cao) vượt kỳ vọng so với việc học ít - わりに. かわりに là "thay cho / đổi lại"; たびに "mỗi lần"; ついでに "nhân tiện".
+    display_answer: わりに
+
+  - key: ja:exercise:n3-wari-listen-guide
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-kawari-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 今日は部長の代わりに、私がお客様を案内します。
+      options:
+        - { id: t6g, text: "Hôm nay tôi sẽ hướng dẫn khách thay cho trưởng phòng.", lang: vi }
+        - { id: y2h, text: "Hôm nay trưởng phòng sẽ hướng dẫn khách cùng tôi.", lang: vi }
+        - { id: u7j, text: "So với trưởng phòng, tôi hướng dẫn khách giỏi hơn.", lang: vi }
+        - { id: i4k, text: "Nhân tiện gặp trưởng phòng, tôi sẽ đón khách.", lang: vi }
+    answer:
+      correct_option_id: t6g
+    explanation:
+      vi: 部長の代わりに - thay cho trưởng phòng; お客様を案内します - hướng dẫn khách.
+    display_answer: Hôm nay tôi sẽ hướng dẫn khách thay cho trưởng phòng.
+
+  - key: ja:exercise:n3-wari-fill-bag
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hinshitsu
+    prompt:
+      template: "このかばんは安い{{b1}}、品質がいいです。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Cái túi này rẻ thế mà chất lượng lại tốt."
+        - "Gợi ý: 'so với... thì (lại)...' - kết quả hơn kỳ vọng."
+    answer:
+      blanks:
+        b1: [わりに, わりには, 割に, 割には]
+    known_wrong:
+      - answer: かわりに
+        feedback_vi: Rẻ và chất lượng tốt đều là điểm tốt - không phải "đổi lại". "So với... thì" là わりに.
+        error_tag: wari_kawari
+      - answer: のわりに
+        feedback_vi: Tính từ đuôi い nối thẳng - 安いわりに.
+        error_tag: no_after_adjective
+    explanation:
+      vi: 安い + わりに - rẻ mà...; 品質がいい - chất lượng tốt, vượt kỳ vọng so với giá.
+    display_answer: このかばんは安いわりに、品質がいいです。
+
+  - key: ja:exercise:n3-wari-mcq-rent
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-kawari-ni
+    prompt:
+      stem: 'Câu この部屋は駅から遠いかわりに、家賃が安いです。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: o9z, text: "Căn phòng này xa ga nhưng bù lại tiền thuê rẻ.", lang: vi }
+        - { id: p3x, text: "Căn phòng này xa ga nên tiền thuê đắt.", lang: vi }
+        - { id: a7c, text: "Căn phòng này gần ga thay vì rẻ.", lang: vi }
+        - { id: s1v, text: "So với ga, căn phòng này rẻ hơn.", lang: vi }
+    answer:
+      correct_option_id: o9z
+    explanation:
+      vi: かわりに nối mặt xấu (xa ga) với mặt tốt bù lại (tiền thuê rẻ) - nghĩa "bù lại".
+    display_answer: Căn phòng này xa ga nhưng bù lại tiền thuê rẻ.
+
+  - key: ja:exercise:n3-wari-wb-tea
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-kawari-ni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Hôm nay tôi uống trà thay cho cà phê.”"
+      tokens:
+        - { id: w1, text: お茶を飲みました }
+        - { id: w2, text: わりに、 }
+        - { id: w3, text: コーヒーの }
+        - { id: w4, text: 今日は }
+        - { id: w5, text: 代わりに、 }
+    answer:
+      orders:
+        - [w4, w3, w5, w1]
+    explanation:
+      vi: コーヒーの代わりに - thay cho cà phê (N + の + 代わりに). わりに là "so với", sai nghĩa.
+    display_answer: 今日はコーヒーの代わりに、お茶を飲みました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-wari-fill-two
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-wari-ni
+    prompt:
+      template: "So với tuổi thì trông trẻ - 年の{{b1}}、若く見えます。 Thay vì đi taxi, tôi đi bộ - タクシーに乗る{{b2}}、歩きました。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [わりに, わりには, 割に, 割には]
+        b2: [かわりに, 代わりに]
+    known_wrong:
+      - answer: たびに
+        feedback_vi: たびに là "mỗi lần" - không hợp với cả hai câu.
+        error_tag: grammar_choice
+    explanation:
+      vi: 年のわりに - so với tuổi; 乗る代わりに - thay vì đi (taxi). Một chữ か làm đổi hẳn nghĩa.
+    display_answer: 年のわりに、若く見えます。 / タクシーに乗る代わりに、歩きました。
+
+  - key: ja:exercise:n3-wari-write-phone
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hinshitsu
+    prompt:
+      source_text: Chiếc điện thoại này so với giá thì chất lượng tốt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - このスマホは値段のわりに品質がいいです。
+        - このスマホは値段のわりには品質がいいです。
+        - このスマホは値段の割に品質がいいです。
+        - このスマートフォンは値段のわりに品質がいいです。
+        - この携帯は値段のわりに品質がいいです。
+        - このスマホは値段のわりに品質が良いです。
+        - このスマホはねだんのわりにひんしつがいいです。
+        - このスマホは値段のわりに品質がいい。
+    known_wrong:
+      - answer: このスマホは値段のかわりに品質がいいです。
+        feedback_vi: 値段のかわりに là "thay cho giá" - sai nghĩa; "so với giá" là 値段のわりに.
+        error_tag: wari_kawari
+      - answer: このスマホは値段にわりに品質がいいです。
+        feedback_vi: Danh từ nối với わりに bằng の.
+        error_tag: particle_choice
+    explanation:
+      vi: 値段のわりに - so với giá; 品質がいい - chất lượng tốt (vượt kỳ vọng).
+    display_answer: このスマホは値段のわりに品質がいいです。
+
+  - key: ja:exercise:n3-wari-write-experience
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-kyuuryou
+    prompt:
+      source_text: Công việc này lương thấp nhưng bù lại là một trải nghiệm tốt. (dùng かわりに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この仕事は給料が安いかわりに、いい経験になります。
+        - この仕事は給料が安い代わりに、いい経験になります。
+        - この仕事は給料が低いかわりに、いい経験になります。
+        - この仕事は給料が低い代わりに、いい経験になります。
+        - この仕事は給料が安いかわりに、いい経験ができます。
+        - この仕事は給料が安い代わりに、いい経験ができます。
+        - この仕事は給料が低いかわりに、いい経験ができます。
+        - この仕事は給料が低い代わりに、いい経験ができます。
+        - このしごとはきゅうりょうがやすいかわりに、いいけいけんになります。
+        - この仕事は給料が安いかわりに、良い経験になります。
+    known_wrong:
+      - answer: この仕事は給料が安いわりに、いい経験になります。
+        feedback_vi: Câu nói "cái mất - cái được" - dùng かわりに (bù lại); わりに là so với kỳ vọng.
+        error_tag: wari_kawari
+      - answer: この仕事は給料が安いのかわりに、いい経験になります。
+        feedback_vi: Tính từ đuôi い nối thẳng - 安いかわりに.
+        error_tag: no_after_adjective
+    explanation:
+      vi: 給料が安い (mặt xấu) + かわりに + いい経験になります (mặt tốt bù lại).
+    display_answer: この仕事は給料が安いかわりに、いい経験になります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-wari-translate-customs
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-keiken
+    prompt:
+      source_text: 彼は日本に住んだ経験がないわりに、日本の習慣をよく知っている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy chưa từng sống ở Nhật mà lại rất hiểu phong tục Nhật.
+        - Anh ấy chưa từng sống ở Nhật thế mà lại biết rõ phong tục Nhật Bản.
+        - So với việc chưa từng sống ở Nhật thì anh ấy biết rất rõ phong tục Nhật.
+        - Dù chưa từng sống ở Nhật nhưng anh ấy rất hiểu phong tục Nhật.
+        - Anh ấy không có kinh nghiệm sống ở Nhật mà lại rất hiểu phong tục Nhật.
+        - Anh ấy chưa sống ở Nhật bao giờ mà lại biết rất rõ tập quán Nhật.
+        - Anh ấy chưa từng sống ở Nhật mà lại hiểu rõ phong tục Nhật Bản.
+        - Anh ấy chưa từng sống ở Nhật vậy mà lại rất hiểu phong tục tập quán Nhật.
+        - Anh ta chưa từng sống ở Nhật mà lại rất hiểu phong tục Nhật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh ấy chưa từng sống ở Nhật nên không biết phong tục Nhật.
+        feedback_vi: わりに báo kết quả trái kỳ vọng - "mà lại biết rõ", không phải "nên không biết".
+        error_tag: wari_meaning
+    explanation:
+      vi: 住んだ経験がない - không có kinh nghiệm sống; わりに - vậy mà; よく知っている - biết rõ.
+    display_answer: Anh ấy chưa từng sống ở Nhật mà lại rất hiểu phong tục Nhật.
+
+  - key: ja:exercise:n3-wari-mcq-exam
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-wari-ni
+    prompt:
+      stem: Bài thi rất khó nhưng bạn được điểm khá cao. Bạn kể với bạn bè thế nào?
+      stem_lang: vi
+      options:
+        - { id: g2m, text: "テストが難しかったわりに、いい点が取れたよ。", lang: ja }
+        - { id: k6n, text: "テストが難しかったかわりに、いい点が取れたよ。", lang: ja }
+        - { id: f8b, text: "テストが難しいのわりに、いい点が取れたよ。", lang: ja }
+        - { id: d4v, text: "テストが難しかったたびに、いい点が取れたよ。", lang: ja }
+    answer:
+      correct_option_id: g2m
+    explanation:
+      vi: So với độ khó, điểm cao hơn kỳ vọng - 難しかったわりに. かわりに là "đổi lại"; tính từ đuôi い không thêm の; たびに dùng cho việc lặp lại.
+    display_answer: テストが難しかったわりに、いい点が取れたよ。
+
+  - key: ja:exercise:n3-wari-wb-dishes
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-kawari-ni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Bạn cùng phòng nấu ăn cho tôi, đổi lại tôi rửa bát.”"
+      tokens:
+        - { id: k1, text: 私が皿を洗います }
+        - { id: k2, text: わりに、 }
+        - { id: k3, text: ルームメイトが料理を作ってくれる }
+        - { id: k4, text: 代わりに、 }
+    answer:
+      orders:
+        - [k3, k4, k1]
+    explanation:
+      vi: V-る + 代わりに - đổi lại. Hai việc được trao đổi qua lại nên dùng かわりに, không dùng わりに.
+    display_answer: ルームメイトが料理を作ってくれる代わりに、私が皿を洗います。
+
+  - key: ja:exercise:n3-wari-write-august
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-wari-ni
+    prompt:
+      source_text: Hôm nay so với tháng Tám thì mát mẻ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今日は8月のわりに涼しいです。
+        - 今日は8月のわりには涼しいです。
+        - 今日は八月のわりに涼しいです。
+        - 今日は八月のわりには涼しいです。
+        - 今日は8月の割に涼しいです。
+        - きょうははちがつのわりにすずしいです。
+        - 今日は8月にしては涼しいです。
+        - 今日は8月のわりに涼しい。
+    known_wrong:
+      - answer: 今日は8月のかわりに涼しいです。
+        feedback_vi: 8月のかわりに là "thay cho tháng Tám" - sai nghĩa; "so với" là わりに.
+        error_tag: wari_kawari
+      - answer: 今日は8月わりに涼しいです。
+        feedback_vi: Danh từ cần の trước わりに - 8月のわりに.
+        error_tag: particle_choice
+    explanation:
+      vi: 8月のわりに - so với (thường lệ của) tháng Tám; 涼しい - mát. 8月にしては cũng cùng nghĩa.
+    display_answer: 今日は8月のわりに涼しいです。

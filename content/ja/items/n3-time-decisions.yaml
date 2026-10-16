@@ -1,0 +1,469 @@
+# Học liệu unit "Thời điểm, thay đổi và quyết định" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～ところだ, ～たばかり =================
+  - key: ja:item:n3-gram-tokoro-da
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る / V-ている / V-た + ところだ
+      romanization: tokoro da
+      pos: thời điểm của hành động
+    back:
+      meaning:
+        vi: 'Chỉ đúng thời điểm trong một hành động: V-るところ - sắp sửa (今から出かけるところです); V-ているところ - đang giữa chừng (今ご飯を作っているところです); V-たところ - vừa mới xong (今駅に着いたところです).'
+      examples:
+        - target: ちょうど今、家を出るところです。
+          translation:
+            vi: Tôi đang chuẩn bị ra khỏi nhà đây.
+        - target: 今、資料をコピーしているところです。
+          translation:
+            vi: Bây giờ tôi đang photo tài liệu.
+      pronunciation_note:
+        vi: ところ đọc "tô-cô-rô", ろ là âm r nhẹ gần "đ" lướt, không rung lưỡi.
+      confusion:
+        vi: ところ ở đây không phải "nơi chốn" mà là "thời điểm". Mẫu này nói về khoảnh khắc ngay trước, trong hoặc sau hành động - thường đi với 今, ちょうど.
+
+  - key: ja:item:n3-gram-ta-bakari
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-た + ばかりだ
+      romanization: -ta bakari da
+      pos: thời điểm của hành động
+    back:
+      meaning:
+        vi: '"Vừa mới..." theo cảm nhận của người nói - có thể đã vài ngày, vài tháng nhưng người nói thấy còn mới: 先月日本に来たばかりです.'
+      examples:
+        - target: このパソコンは買ったばかりなのに、もう壊れた。
+          translation:
+            vi: Cái máy tính này mới mua mà đã hỏng rồi.
+      confusion:
+        vi: たところ chỉ khoảnh khắc ngay sau khi xong (vài phút trước); たばかり là "mới" theo cảm giác, dùng được cho cả tháng trước. 先月来たところです là sai - nói 先月来たばかりです.
+
+  - key: ja:item:n3-dekakeru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 出かける
+      reading: でかける
+      romanization: dekakeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: ra ngoài, đi ra ngoài (có việc, đi chơi)
+      examples:
+        - target: 週末は家族と出かけることが多いです。
+          translation:
+            vi: Cuối tuần tôi hay đi ra ngoài với gia đình.
+      confusion:
+        vi: 出かける nhấn việc rời nhà để đi đâu đó; 出る (ra) chỉ hành động bước ra khỏi một nơi - 部屋を出る.
+
+  - key: ja:item:n3-todoku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 届く
+      reading: とどく
+      romanization: todoku
+      pos: động từ nhóm 1 (tự động từ)
+    back:
+      meaning:
+        vi: (thư, hàng) đến nơi, được giao tới; với tới
+      examples:
+        - target: 昨日注文した本がもう届きました。
+          translation:
+            vi: Cuốn sách tôi đặt hôm qua đã được giao tới rồi.
+      confusion:
+        vi: 届く là tự động từ (荷物が届く); "gửi đến, giao" là tha động từ 届ける (荷物を届ける).
+
+  - key: ja:item:n3-nyuusha
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 入社
+      reading: にゅうしゃ
+      romanization: nyūsha
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: vào làm ở công ty (gia nhập công ty)
+      examples:
+        - target: 去年の四月に今の会社に入社しました。
+          translation:
+            vi: Tôi vào làm ở công ty hiện tại từ tháng Tư năm ngoái.
+      pronunciation_note:
+        vi: にゅう là âm dài - "nyư-ư-sha"; đọc ngắn thành にゅしゃ là sai.
+
+  # ================= bài 2: ～ようになる, ～ことにする =================
+  - key: ja:item:n3-gram-you-ni-naru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る / V-ない / V(khả năng) + ようになる
+      romanization: yō ni naru
+      pos: thay đổi dần
+    back:
+      meaning:
+        vi: '"Trở nên (có thể / có thói quen)..." - thay đổi dần về khả năng hoặc thói quen: 日本語が話せるようになりました, 毎朝運動するようになった. Phủ định: V-ないようになる hoặc V-なくなる.'
+      examples:
+        - target: 練習して、自転車に乗れるようになりました。
+          translation:
+            vi: Nhờ luyện tập mà tôi đã đi được xe đạp.
+        - target: 子どもが生まれてから、お酒を飲まないようになりました。
+          translation:
+            vi: Từ khi có con, tôi không còn uống rượu nữa.
+      confusion:
+        vi: ようになる tả kết quả tự nhiên thay đổi; ようにする là cố gắng làm cho thành thói quen (ý chí). Tiếng Việt đều nói "bắt đầu, dần dần", nên hãy hỏi "có cố gắng không?".
+
+  - key: ja:item:n3-gram-koto-ni-suru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る / V-ない + ことにする / ことにしている
+      romanization: koto ni suru
+      pos: quyết định (do mình)
+    back:
+      meaning:
+        vi: '"Quyết định (làm / không làm)..." do chính người nói chọn: 来年留学することにしました. ことにしている là quy tắc riêng đã giữ lâu: 毎晩11時に寝ることにしています.'
+      examples:
+        - target: 健康のために、エレベーターを使わないことにしました。
+          translation:
+            vi: Vì sức khoẻ, tôi quyết định không đi thang máy.
+      confusion:
+        vi: ことにする - mình tự quyết; ことになる - người khác, công ty, hoàn cảnh quyết định. "Tôi quyết định nghỉ việc" là 辞めることにしました; "Tôi bị điều chuyển" là 転勤することになりました.
+
+  - key: ja:item:n3-shuukan
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 習慣
+      reading: しゅうかん
+      romanization: shūkan
+      pos: danh từ
+    back:
+      meaning:
+        vi: thói quen, tập quán
+      examples:
+        - target: 寝る前に本を読むのが習慣です。
+          translation:
+            vi: Đọc sách trước khi ngủ là thói quen của tôi.
+      confusion:
+        vi: Hán Việt "tập quán" - vừa là thói quen cá nhân vừa là phong tục của một nước (日本の習慣).
+
+  - key: ja:item:n3-kenkou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 健康
+      reading: けんこう
+      romanization: kenkō
+      pos: danh từ / tính từ đuôi な
+    back:
+      meaning:
+        vi: sức khoẻ; khoẻ mạnh
+      examples:
+        - target: 健康のために、毎日野菜を食べています。
+          translation:
+            vi: Vì sức khoẻ, ngày nào tôi cũng ăn rau.
+      confusion:
+        vi: Hán Việt "kiện khang". 健康に気をつける - giữ gìn sức khoẻ; 健康な人 - người khoẻ mạnh.
+
+  - key: ja:item:n3-hayaoki
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 早起き
+      reading: はやおき
+      romanization: hayaoki
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: việc dậy sớm
+      examples:
+        - target: 早起きは苦手です。
+          translation:
+            vi: Tôi rất kém khoản dậy sớm.
+
+  # ================= bài 3: ～たびに, ～ついでに =================
+  - key: ja:item:n3-gram-tabi-ni
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る / Nの + たびに
+      romanization: tabi ni
+      pos: lặp lại
+    back:
+      meaning:
+        vi: '"Mỗi lần... là (lại)..." - hễ việc A xảy ra thì việc B cũng xảy ra: この歌を聞くたびに、故郷を思い出す.'
+      examples:
+        - target: 旅行のたびに、母にお土産を買います。
+          translation:
+            vi: Mỗi lần đi du lịch, tôi đều mua quà cho mẹ.
+      confusion:
+        vi: たびに nghe trang trọng hơn ～とき、いつも. Vế sau là việc lặp lại, không dùng cho việc chỉ xảy ra một lần.
+
+  - key: ja:item:n3-gram-tsuide-ni
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る / V-た / Nの + ついでに
+      romanization: tsuide ni
+      pos: tiện thể
+    back:
+      meaning:
+        vi: '"Nhân tiện, tiện thể" - đang làm việc chính A thì làm thêm việc phụ B: 買い物のついでに、銀行に寄りました.'
+      examples:
+        - target: 駅に行くついでに、この手紙を出してくれる？
+          translation:
+            vi: Tiện đi ra ga, cậu gửi giúp tớ lá thư này nhé?
+      confusion:
+        vi: Việc trước ついでに là việc chính đã định; việc sau là việc phụ. Không dùng ついでに khi hai việc ngang nhau hoặc việc sau là mục đích chính.
+
+  - key: ja:item:n3-omoidasu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 思い出す
+      reading: おもいだす
+      romanization: omoidasu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: nhớ ra, nhớ lại
+      examples:
+        - target: あの人の名前がどうしても思い出せない。
+          translation:
+            vi: Tôi không tài nào nhớ ra tên người đó.
+      confusion:
+        vi: 思い出す là "nhớ ra / nhớ lại" điều đã quên hoặc chuyện cũ; 覚える là "ghi nhớ, học thuộc". Danh từ 思い出 là "kỷ niệm".
+
+  - key: ja:item:n3-yoru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 寄る
+      reading: よる
+      romanization: yoru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: ghé qua, tạt vào (một nơi trên đường đi)
+      examples:
+        - target: 帰りにコンビニに寄ります。
+          translation:
+            vi: Trên đường về tôi sẽ ghé cửa hàng tiện lợi.
+      confusion:
+        vi: Nơi ghé vào đi với に (コンビニに寄る). Đừng nhầm với 夜 (よる - buổi tối) cùng cách đọc.
+
+  - key: ja:item:n3-yuubinkyoku
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 郵便局
+      reading: ゆうびんきょく
+      romanization: yūbinkyoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu điện
+      examples:
+        - target: 郵便局で小包を送りました。
+          translation:
+            vi: Tôi đã gửi bưu kiện ở bưu điện.
+      pronunciation_note:
+        vi: ゆう là âm dài và きょく là âm ghép - "yư-ư-bin-kyô-kư".
+
+  # ================= bài 4: ～わりに, ～かわりに =================
+  - key: ja:item:n3-gram-wari-ni
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Thể thường / Aい / Naな / Nの + わりに(は)
+      romanization: wari ni
+      pos: tương phản với kỳ vọng
+    back:
+      meaning:
+        vi: '"So với... thì (lại)..." - kết quả khác với điều người ta thường nghĩ từ A: 値段のわりにおいしい (so với giá thì ngon), 勉強しなかったわりにはいい点だった.'
+      examples:
+        - target: この店は駅前のわりに、静かです。
+          translation:
+            vi: Quán này ở ngay trước ga mà lại yên tĩnh.
+      confusion:
+        vi: わりに dùng khi mức độ lệch kỳ vọng (tốt hơn hoặc tệ hơn). Không dùng cho sự thật trái ngược tuyệt đối - "Trời mưa mà vẫn đi" là 雨なのに行った, không dùng わりに.
+
+  - key: ja:item:n3-gram-kawari-ni
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Nの / V-る / thể thường + かわりに
+      reading: 代わりに
+      romanization: kawari ni
+      pos: thay thế / đổi lại
+    back:
+      meaning:
+        vi: '(1) "Thay vì, thay cho": 部長の代わりに私が出席します. (2) "Đổi lại": 日本語を教えてもらうかわりに、ベトナム語を教えます. (3) "Bù lại" (mặt tốt - mặt xấu): 給料が高いかわりに、休みが少ない.'
+      examples:
+        - target: 今日はご飯のかわりにパンを食べました。
+          translation:
+            vi: Hôm nay tôi ăn bánh mì thay cho cơm.
+      confusion:
+        vi: かわりに (đổi chỗ, đổi lại) khác わりに (so với kỳ vọng) dù chỉ hơn một chữ か. Người Việt hay viết 変わりに - đúng là 代わりに (thay thế).
+
+  - key: ja:item:n3-hinshitsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 品質
+      reading: ひんしつ
+      romanization: hinshitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất lượng (sản phẩm)
+      examples:
+        - target: この会社の製品は品質がいいです。
+          translation:
+            vi: Sản phẩm của công ty này chất lượng tốt.
+      confusion:
+        vi: Hán Việt "phẩm chất", nhưng nghĩa là chất lượng hàng hoá, không phải phẩm chất con người (人柄).
+
+  - key: ja:item:n3-kyuuryou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 給料
+      reading: きゅうりょう
+      romanization: kyūryō
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền lương
+      examples:
+        - target: 給料は毎月25日に入ります。
+          translation:
+            vi: Lương được chuyển vào ngày 25 hằng tháng.
+      pronunciation_note:
+        vi: Hai âm dài - "kyư-ư-ryô-ô". Đọc ngắn thành きゅりょ là sai.
+
+  - key: ja:item:n3-keiken
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 経験
+      reading: けいけん
+      romanization: keiken
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: kinh nghiệm, trải nghiệm
+      examples:
+        - target: 海外で働いた経験があります。
+          translation:
+            vi: Tôi có kinh nghiệm làm việc ở nước ngoài.
+      confusion:
+        vi: Hán Việt "kinh nghiệm" - dùng cả cho "trải nghiệm" một lần (いい経験になった - là một trải nghiệm tốt).
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n3-jisui
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 自炊
+      reading: じすい
+      romanization: jisui
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: tự nấu ăn (ở nhà, thay vì ăn ngoài)
+      examples:
+        - target: 一人暮らしを始めてから、自炊しています。
+          translation:
+            vi: Từ khi bắt đầu sống một mình, tôi tự nấu ăn.
+
+  - key: ja:item:n3-setsuyaku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 節約
+      reading: せつやく
+      romanization: setsuyaku
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: tiết kiệm (tiêu ít tiền, điện, nước...)
+      examples:
+        - target: 電気代を節約しています。
+          translation:
+            vi: Tôi đang tiết kiệm tiền điện.
+      confusion:
+        vi: 節約 là tiêu dùng ít đi; "để dành tiền" là 貯金 (ちょきん).
+
+  - key: ja:item:n3-ki-ga-tsuku
+    type: phrase
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 気がつく
+      reading: きがつく
+      romanization: ki ga tsuku
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nhận ra, để ý thấy
+      examples:
+        - target: 電車を降りてから、傘を忘れたことに気がつきました。
+          translation:
+            vi: Xuống tàu rồi tôi mới nhận ra là đã quên ô.
+      confusion:
+        vi: Điều được nhận ra đi với に - ～ことに気がつく. Cách nói ngắn hơn là 気づく.

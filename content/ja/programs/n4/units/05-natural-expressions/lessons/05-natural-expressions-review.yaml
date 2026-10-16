@@ -1,0 +1,367 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-natural-expressions-review
+order_index: 5
+level: n4
+title:
+  vi: Ôn tập - ngày đầu ở căn hộ mới
+objectives:
+  - vi: Kể chuyện sự cố bằng てしまう / ちゃう và than phiền bằng すぎる, にくい.
+  - vi: Hỏi thông tin lịch sự bằng ～か / ～かどうか教えていただけますか.
+  - vi: Tả căn phòng bằng tự động từ + ている và tha động từ + てある.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading, speaking]
+prerequisites: [ja:lesson:n4-te-aru]
+items:
+  - item: ja:item:n4-kanrinin
+  - item: ja:item:n4-reizouko
+  - item: ja:item:n4-komaru
+  - item: ja:item:n4-gram-te-shimau
+    role: reuse
+  - item: ja:item:n4-gram-chau
+    role: reuse
+  - item: ja:item:n4-gram-sugiru
+    role: reuse
+  - item: ja:item:n4-gram-yasui-nikui
+    role: reuse
+  - item: ja:item:n4-gram-embedded-ka
+    role: reuse
+  - item: ja:item:n4-gram-ka-douka
+    role: reuse
+  - item: ja:item:n4-gram-te-aru
+    role: reuse
+  - item: ja:item:n4-tsuku-tsukeru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đi theo nhật ký của Minh - ngày đầu chuyển đến căn hộ mới ở Nhật với đủ chuyện rắc rối. Bạn dùng lại cả bốn mẫu của unit trong một tình huống thật.
+  - type: explain
+    text:
+      vi: 'Kể sự cố: てしまいました (lịch sự) / ちゃった (thân mật) - 鍵をなくしてしまいました. Than phiền: すぎる (quá mức), にくい (khó làm) - 部屋が狭すぎて、住みにくいです.'
+  - type: explain
+    text:
+      vi: 'Hỏi người quản lý (管理人さん) cho lịch sự: câu hỏi lồng + 教えていただけますか - ゴミを何曜日に出すか教えていただけますか. Tả phòng: 電気がついています (trạng thái), メモがはってあります (ai đó đã dán sẵn).'
+  - type: deep_explain
+    text:
+      vi: 'Người Nhật hiếm khi phàn nàn thẳng. Thay vì nói "phòng tệ", họ nói ～すぎて、ちょっと困っています (… quá nên hơi khó xử) để người nghe tự hiểu và giúp. Khi nhờ người quản lý, câu hỏi lồng (～かどうか教えていただけますか) nghe mềm và lễ phép hơn câu hỏi thẳng ～ですか.'
+  - type: example
+    target: 新しいアパートの冷蔵庫は小さすぎて、あまり入りません。
+    target_lang: ja
+    translation:
+      vi: Tủ lạnh ở căn hộ mới nhỏ quá, không chứa được mấy.
+  - type: example
+    target: ガスがつくかどうか分からなかったので、管理人さんに聞きました。
+    target_lang: ja
+    translation:
+      vi: Tôi không biết bếp ga có bật được không nên đã hỏi người quản lý.
+  - type: example
+    target: 部屋に帰ったら、管理人さんのメモがドアにはってありました。
+    target_lang: ja
+    translation:
+      vi: Về đến phòng thì thấy mẩu ghi chú của người quản lý đã được dán sẵn trên cửa.
+  - type: example
+    target: 引っ越しの荷物が多すぎて、困ってしまいました。
+    target_lang: ja
+    translation:
+      vi: Đồ chuyển nhà nhiều quá nên tôi đã rất khổ sở.
+  - type: common_mistake
+    wrong: 管理人さん、ゴミは何曜日に出しますか教えていただけますか。
+    right: 管理人さん、ゴミは何曜日に出すか教えていただけますか。
+    target_lang: ja
+    note:
+      vi: Câu hỏi lồng dùng thể thường - 出すか, không giữ ます.
+  - type: common_mistake
+    wrong: 鍵がなくてしまいました。
+    right: 鍵をなくしてしまいました。
+    target_lang: ja
+    note:
+      vi: なくす (làm mất) là tha động từ, đi với を; thể て là なくして.
+  - type: summary
+    points:
+      - vi: Sự cố - てしまいました / ちゃった.
+      - vi: Than phiền - すぎて、ちょっと困っています; にくい (khó làm).
+      - vi: Hỏi lịch sự - ～か / ～かどうか教えていただけますか.
+      - vi: Tả phòng - tự động từ + ている, tha động từ + てある. 管理人 · 冷蔵庫 · 困る.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-nexrev-mcq-fridge
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-reizouko
+    prompt:
+      stem: 'Câu 冷蔵庫に何が入っているか見てください。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: k3w, text: "Hãy xem trong tủ lạnh có gì.", lang: vi }
+        - { id: p6e, text: "Hãy xem tủ lạnh có bật hay không.", lang: vi }
+        - { id: n9r, text: "Hãy cho đồ vào tủ lạnh.", lang: vi }
+        - { id: b2t, text: "Trong tủ lạnh có gì vậy?", lang: vi }
+    answer:
+      correct_option_id: k3w
+    explanation:
+      vi: 何が入っているか - (xem) có gì ở trong; 見てください - hãy xem. Đây là câu nhờ có câu hỏi lồng, không phải câu hỏi thẳng.
+    display_answer: Hãy xem trong tủ lạnh có gì.
+
+  - key: ja:exercise:n4-nexrev-listen-manager
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-komaru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 管理人さんに電話したけど、だれも出なくて困っています。
+      options:
+        - { id: y7u, text: "Tôi gọi cho người quản lý nhưng không ai nghe máy nên đang bối rối.", lang: vi }
+        - { id: i4o, text: "Người quản lý gọi cho tôi nhưng tôi không nghe máy.", lang: vi }
+        - { id: o1a, text: "Tôi đã gặp người quản lý và hết lo rồi.", lang: vi }
+        - { id: s8d, text: "Tôi không muốn gọi cho người quản lý.", lang: vi }
+    answer:
+      correct_option_id: y7u
+    explanation:
+      vi: 電話したけど - đã gọi nhưng; だれも出なくて - không ai nghe máy nên; 困っています - đang bối rối, khó xử.
+    display_answer: Tôi gọi cho người quản lý nhưng không ai nghe máy nên đang bối rối.
+
+  - key: ja:exercise:n4-nexrev-fill-egg
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-chau
+    prompt:
+      template: "あ、卵を床に落と{{b1}}！"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Á, lỡ làm rơi quả trứng xuống sàn mất rồi! (thân mật)"
+        - "Gợi ý: 落として + しまった, nói tắt."
+    answer:
+      blanks:
+        b1: [しちゃった]
+    known_wrong:
+      - answer: しじゃった
+        feedback_vi: 落として kết thúc bằng て nên rút gọn thành ちゃった.
+        error_tag: chau_jau
+      - answer: ちゃった
+        feedback_vi: Phải giữ し của 落として - 落と + し + ちゃった.
+        error_tag: chau_form
+    explanation:
+      vi: 落として + しまった → 落としちゃった (văn nói). Câu kêu lên lúc vừa gặp sự cố.
+    display_answer: あ、卵を床に落としちゃった！
+
+  - key: ja:exercise:n4-nexrev-wb-garbage
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-embedded-ka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi không biết vứt rác vào thứ mấy.”"
+      tokens:
+        - { id: g1, text: 分かりません }
+        - { id: g2, text: 出すかどうか }
+        - { id: g3, text: 何曜日に }
+        - { id: g4, text: 出すか }
+        - { id: g5, text: ゴミを }
+    answer:
+      orders:
+        - [g5, g3, g4, g1]
+        - [g3, g5, g4, g1]
+    explanation:
+      vi: 何曜日 là từ để hỏi nên chỉ dùng 出すか. ゴミを và 何曜日に có thể đổi chỗ.
+    display_answer: ゴミを何曜日に出すか分かりません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-nexrev-fill-hallway
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-aru
+    prompt:
+      template: "Đèn hành lang đang sáng - 廊下の電気が{{b1}}います。 Hoa đã được cắm sẵn trên bàn - テーブルに花が飾って{{b2}}ます。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [ついて]
+        b2: [あり]
+    known_wrong:
+      - answer: つけて
+        feedback_vi: Tả trạng thái của đèn, không nói ai bật - tự động từ つく → ついています.
+        error_tag: transitive_intransitive
+      - answer: い
+        feedback_vi: 飾る là tha động từ; "đã được cắm sẵn" là 飾ってあります.
+        error_tag: te_aru_te_iru
+    explanation:
+      vi: Tự động từ つく + ています - trạng thái. Tha động từ 飾る + てあります - ai đó đã cố ý cắm sẵn.
+    display_answer: 廊下の電気がついています。 / テーブルに花が飾ってあります。
+
+  - key: ja:exercise:n4-nexrev-write-small-room
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-sugiru
+    prompt:
+      source_text: Căn phòng này chật quá nên khó sống.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この部屋は狭すぎて、住みにくいです。
+        - このへやはせますぎて、すみにくいです。
+        - この部屋はせますぎて、住みにくいです。
+        - この部屋は狭すぎるので、住みにくいです。
+        - この部屋は狭すぎて、住みにくい。
+        - この部屋は小さすぎて、住みにくいです。
+    known_wrong:
+      - answer: この部屋は狭いすぎて、住みにくいです。
+        feedback_vi: Bỏ い của tính từ trước すぎ - 狭すぎて.
+        error_tag: sugiru_form
+      - answer: この部屋は狭すぎて、住み難しいです。
+        feedback_vi: '"Khó làm V" là gốc ます + にくい - 住みにくい.'
+        error_tag: nikui_muzukashii
+    explanation:
+      vi: 狭い → 狭すぎて (chật quá nên); 住む → 住み + にくい (khó sống).
+    display_answer: この部屋は狭すぎて、住みにくいです。
+
+  - key: ja:exercise:n4-nexrev-write-washing-machine
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-komaru
+    prompt:
+      source_text: Tôi không biết cách dùng máy giặt nên đang bối rối.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 洗濯機の使い方が分からなくて、困っています。
+        - 洗濯機の使い方が分からないので、困っています。
+        - 洗濯機をどう使うか分からなくて、困っています。
+        - 洗濯機をどうやって使うか分からなくて、困っています。
+        - 洗濯機をどう使うか分からないので、困っています。
+        - せんたくきのつかいかたがわからなくて、こまっています。
+        - 洗濯機の使い方がわからなくて、困っています。
+        - 洗濯機の使い方が分からなくて困っている。
+    known_wrong:
+      - answer: 洗濯機の使い方が分からなくて、困りています。
+        feedback_vi: 困る là động từ nhóm 1 - thể て là 困って.
+        error_tag: te_form
+      - answer: 洗濯機をどう使いますか分からなくて、困っています。
+        feedback_vi: Câu hỏi lồng dùng thể thường - どう使うか.
+        error_tag: embedded_masu
+    explanation:
+      vi: 使い方 (cách dùng) hoặc câu hỏi lồng どう使うか; 分からなくて - không biết nên; 困っています - đang khó xử.
+    display_answer: 洗濯機の使い方が分からなくて、困っています。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-nexrev-translate-far
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-sugiru
+    prompt:
+      source_text: 新しい部屋は駅から遠すぎて、ちょっと不便です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phòng mới xa ga quá nên hơi bất tiện.
+        - Phòng mới cách ga xa quá nên hơi bất tiện.
+        - Căn phòng mới xa ga quá nên hơi bất tiện.
+        - Phòng mới quá xa ga nên hơi bất tiện.
+        - Căn phòng mới quá xa nhà ga nên hơi bất tiện.
+        - Phòng mới xa nhà ga quá nên hơi bất tiện.
+        - Phòng mới xa ga quá, hơi bất tiện.
+        - Phòng mới xa ga quá nên có hơi bất tiện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Phòng mới gần ga nên rất tiện.
+        feedback_vi: 遠すぎて là "xa quá", 不便 là "bất tiện".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 遠すぎて - xa quá nên; ちょっと不便です - hơi bất tiện. Người Nhật hay dùng ちょっと để than phiền nhẹ nhàng.
+    display_answer: Phòng mới xa ga quá nên hơi bất tiện.
+
+  - key: ja:exercise:n4-nexrev-mcq-bicycle
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-kanrinin
+    prompt:
+      stem: Bạn muốn hỏi người quản lý một cách lịch sự xem có được để xe đạp ở đây không. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: d5f, text: "すみません、ここに自転車を置いてもいいかどうか、教えていただけますか。", lang: ja }
+        - { id: h1g, text: "すみません、ここに自転車を置いてもいいですかどうか、教えていただけますか。", lang: ja }
+        - { id: j4h, text: "すみません、ここに自転車を置いてもいいかどうか、教えてあげますか。", lang: ja }
+        - { id: l9j, text: "すみません、ここに自転車が置いてあるかどうか、教えていただけますか。", lang: ja }
+    answer:
+      correct_option_id: d5f
+    explanation:
+      vi: 置いてもいいかどうか - có được để hay không (thể thường); 教えていただけますか - nhờ rất lịch sự. 教えてあげますか là "tôi chỉ cho bạn nhé"; 置いてあるかどうか hỏi chuyện khác (xe có được để sẵn không).
+    display_answer: すみません、ここに自転車を置いてもいいかどうか、教えていただけますか。
+
+  - key: ja:exercise:n4-nexrev-wb-cup
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-chau
+    prompt:
+      instruction: "Nói với bạn cùng phòng: “Xin lỗi, tớ lỡ làm vỡ cái cốc mới mất rồi.”"
+      tokens:
+        - { id: c1, text: 割れちゃった }
+        - { id: c2, text: 新しいコップを }
+        - { id: c3, text: ごめん、 }
+        - { id: c4, text: 割っちゃった }
+    answer:
+      orders:
+        - [c3, c2, c4]
+    explanation:
+      vi: Mình làm vỡ (có người làm, đi với を) - tha động từ 割る → 割っちゃった. 割れる là "tự vỡ", đi với が.
+    display_answer: ごめん、新しいコップを割っちゃった。
+
+  - key: ja:exercise:n4-nexrev-write-food
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-reizouko
+    prompt:
+      source_text: Đồ ăn cho ngày mai đã được cho sẵn vào tủ lạnh rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 明日の食べ物は冷蔵庫に入れてあります。
+        - 明日の食べ物はもう冷蔵庫に入れてあります。
+        - 明日の食べ物が冷蔵庫に入れてあります。
+        - 明日の料理は冷蔵庫に入れてあります。
+        - 明日の料理はもう冷蔵庫に入れてあります。
+        - 明日のご飯は冷蔵庫に入れてあります。
+        - あしたのたべものはれいぞうこにいれてあります。
+        - 明日の食べ物は冷蔵庫に入れてある。
+    known_wrong:
+      - answer: 明日の食べ物は冷蔵庫に入ってあります。
+        feedback_vi: てある cần tha động từ - 入れる → 入れてあります.
+        error_tag: transitive_intransitive
+      - answer: 明日の食べ物は冷蔵庫に入れてしまいましょう。
+        feedback_vi: Câu tả việc đã chuẩn bị sẵn - てあります, không phải lời rủ.
+        error_tag: te_aru_meaning
+    explanation:
+      vi: 入れる (cho vào - tha động từ) + てあります - đã được cho sẵn vào để chuẩn bị cho ngày mai.
+    display_answer: 明日の食べ物は冷蔵庫に入れてあります。

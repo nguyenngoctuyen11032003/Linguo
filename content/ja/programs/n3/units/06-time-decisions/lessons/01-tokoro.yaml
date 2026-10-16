@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-tokoro
+order_index: 1
+level: n3
+title:
+  vi: Sắp, đang, vừa mới - ～ところだ và ～たばかり
+objectives:
+  - vi: Nói đúng thời điểm của hành động bằng V-る / V-ている / V-たところだ.
+  - vi: Nói "vừa mới" theo cảm nhận bằng V-たばかり.
+  - vi: Phân biệt たところ (ngay sau khi xong) với たばかり (còn mới với người nói).
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n3-opinions-review]
+items:
+  - item: ja:item:n3-gram-tokoro-da
+  - item: ja:item:n3-gram-ta-bakari
+  - item: ja:item:n3-dekakeru
+  - item: ja:item:n3-todoku
+  - item: ja:item:n3-nyuusha
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời điện thoại, tin nhắn tự nhiên - "mình đang nấu cơm", "vừa đến nơi", "sắp ra khỏi nhà" - và giải thích "tôi mới vào công ty nên chưa quen".
+  - type: explain
+    text:
+      vi: 'ところ ở đây là "thời điểm", gắn vào ba dạng động từ: V-るところ - sắp sửa (今から出かけるところです); V-ているところ - đang giữa chừng (今ご飯を作っているところです); V-たところ - vừa mới xong (今駅に着いたところです).'
+  - type: explain
+    text:
+      vi: 'Tiếng Việt chỉ cần thêm "sắp", "đang", "vừa" trước động từ; tiếng Nhật đổi dạng động từ trước ところ. Mẫu này hay đi với 今, ちょうど, これから để chỉ khoảnh khắc rất gần.'
+  - type: explain
+    text:
+      vi: 'V-たばかり cũng là "vừa mới", nhưng theo cảm nhận của người nói: 先月日本に来たばかりです (tháng trước mới sang Nhật - với tôi vẫn còn mới). たところ thì chỉ dùng cho việc vừa xong ngay trước đó.'
+  - type: deep_explain
+    text:
+      vi: 'たばかり hay đi với なのに / なので: 買ったばかりなのに壊れた (mới mua mà đã hỏng), 入社したばかりなので分かりません (mới vào nên chưa biết). Đó là lý do nó dùng để xin thông cảm hoặc than phiền. Còn ところ chủ yếu để báo tình hình hiện tại cho người nghe, như khi nghe điện thoại.'
+  - type: example
+    target: これから晩ご飯を作るところです。
+    target_lang: ja
+    translation:
+      vi: Bây giờ tôi chuẩn bị nấu bữa tối đây.
+    note:
+      vi: V-る + ところ - sắp làm.
+  - type: example
+    target: 今、メールを書いているところなので、少し待ってください。
+    target_lang: ja
+    translation:
+      vi: Bây giờ tôi đang viết email dở, chờ tôi một chút nhé.
+    note:
+      vi: V-ている + ところ - đang giữa chừng.
+  - type: example
+    target: たった今、空港に着いたところです。
+    target_lang: ja
+    translation:
+      vi: Tôi vừa mới đến sân bay xong.
+    note:
+      vi: V-た + ところ - vừa xong ngay lúc này.
+  - type: example
+    target: 先週入社したばかりなので、まだ分からないことが多いです。
+    target_lang: ja
+    translation:
+      vi: Tôi mới vào công ty tuần trước nên còn nhiều điều chưa biết.
+    note:
+      vi: たばかり - với người nói, một tuần vẫn là "mới".
+  - type: common_mistake
+    wrong: 去年日本に来たところです。
+    right: 去年日本に来たばかりです。
+    target_lang: ja
+    note:
+      vi: たところ chỉ khoảnh khắc ngay sau khi xong; khoảng thời gian dài (năm ngoái) dùng たばかり.
+  - type: common_mistake
+    wrong: 今、出かけたところです。
+    right: 今、出かけるところです。
+    target_lang: ja
+    note:
+      vi: Khi bạn còn đang đi giày ở cửa, tức là chưa đi - "sắp" - V-る + ところ. 出かけたところ là "vừa đi khỏi".
+  - type: summary
+    points:
+      - vi: V-るところ - sắp; V-ているところ - đang; V-たところ - vừa xong.
+      - vi: V-たばかり - vừa mới (theo cảm nhận, dùng được cho cả tuần, tháng trước).
+      - vi: たばかりなのに (mới... mà đã) / たばかりなので (mới... nên).
+      - vi: 出かける ra ngoài · 届く được giao tới · 入社 vào công ty.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-tokoro-mcq-shower
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      stem: 'Bạn thân gọi đúng lúc bạn đang tắm dở. Bạn nói: 今、シャワーを＿＿ところだから、あとで電話するね。'
+      stem_lang: vi
+      options:
+        - { id: s4k, text: "浴びている", lang: ja }
+        - { id: p9a, text: "浴びた", lang: ja }
+        - { id: e2m, text: "浴びる", lang: ja }
+        - { id: w7c, text: "浴びたばかり", lang: ja }
+    answer:
+      correct_option_id: s4k
+    explanation:
+      vi: Đang tắm dở - V-ている + ところ. 浴びるところ là "sắp tắm", 浴びたところ là "vừa tắm xong"; たばかり không đứng trước ところ.
+    display_answer: 浴びている
+
+  - key: ja:exercise:n3-tokoro-listen-delivered
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-todoku
+    prompt:
+      audio_asset_id: null
+      fallback_text: ちょうど今、注文した荷物が届いたところです。
+      options:
+        - { id: n5h, text: "Món hàng tôi đặt vừa mới được giao tới đúng lúc này.", lang: vi }
+        - { id: d1q, text: "Món hàng tôi đặt sắp được giao tới.", lang: vi }
+        - { id: y8v, text: "Món hàng tôi đặt đang được giao.", lang: vi }
+        - { id: j3x, text: "Món hàng tôi đặt vẫn chưa được giao tới.", lang: vi }
+    answer:
+      correct_option_id: n5h
+    explanation:
+      vi: 届いた + ところ - vừa được giao tới; ちょうど今 nhấn "đúng lúc này". "Sắp" là 届くところ, "đang" là 届いているところ (ít dùng với 届く).
+    display_answer: Món hàng tôi đặt vừa mới được giao tới đúng lúc này.
+
+  - key: ja:exercise:n3-tokoro-fill-train
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      template: "電車がもうすぐ出る{{b1}}です。急いで！"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Tàu sắp chạy rồi. Nhanh lên!"
+        - "Gợi ý: V-る + từ chỉ 'thời điểm' (không phải nơi chốn)."
+    answer:
+      blanks:
+        b1: [ところ]
+    known_wrong:
+      - answer: ばかり
+        feedback_vi: ばかり đi sau thể た (vừa mới); "sắp chạy" là V-る + ところ.
+        error_tag: tokoro_bakari
+      - answer: とき
+        feedback_vi: ～ときです không diễn tả "sắp sửa"; dùng ところです.
+        error_tag: tokoro_toki
+    explanation:
+      vi: 出る (thể từ điển) + ところ - sắp chạy. もうすぐ cũng chỉ thời điểm rất gần.
+    display_answer: 電車がもうすぐ出るところです。
+
+  - key: ja:exercise:n3-tokoro-mcq-moved
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-ta-bakari
+    prompt:
+      stem: 'Câu 先月この町に引っ越したばかりです。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: r6t, text: "Tôi mới chuyển đến thị trấn này hồi tháng trước.", lang: vi }
+        - { id: u2g, text: "Tháng sau tôi sẽ chuyển đến thị trấn này.", lang: vi }
+        - { id: i9b, text: "Tôi đang chuyển đến thị trấn này.", lang: vi }
+        - { id: o4f, text: "Tôi chuyển nhà suốt, tháng trước cũng chuyển.", lang: vi }
+    answer:
+      correct_option_id: r6t
+    explanation:
+      vi: 引っ越した + ばかり - mới chuyển đến (theo cảm nhận, dù đã một tháng). ばかり ở đây không phải "toàn là, suốt".
+    display_answer: Tôi mới chuyển đến thị trấn này hồi tháng trước.
+
+  - key: ja:exercise:n3-tokoro-wb-going-out
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-dekakeru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Bây giờ tôi chuẩn bị đi ra ngoài.”"
+      tokens:
+        - { id: o1, text: ところです }
+        - { id: o2, text: 出かけた }
+        - { id: o3, text: 今から }
+        - { id: o4, text: 出かける }
+    answer:
+      orders:
+        - [o3, o4, o1]
+    explanation:
+      vi: Chưa đi - "sắp" - nên dùng thể từ điển 出かける + ところです. 出かけたところ là "vừa đi khỏi".
+    display_answer: 今から出かけるところです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-tokoro-fill-three
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      template: "Sắp ăn - 食べる{{b1}}です。 Đang ăn - 食べて{{b2}}ところです。 Vừa ăn xong - 食べ{{b3}}ところです。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [ところ]
+        b2: [いる]
+        b3: [た]
+    known_wrong:
+      - answer: ばかり
+        feedback_vi: ばかり đi sau thể た và không dùng cho "sắp"; ở đây là ところ.
+        error_tag: tokoro_bakari
+      - answer: ます
+        feedback_vi: Trước ところ dùng thể thường - 食べている, 食べた.
+        error_tag: plain_form
+    explanation:
+      vi: Thể từ điển → sắp; ている → đang; た → vừa xong. Chỉ dạng động từ đổi, ところ giữ nguyên.
+    display_answer: 食べるところです / 食べているところです / 食べたところです
+
+  - key: ja:exercise:n3-tokoro-write-new-employee
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-nyuusha
+    prompt:
+      source_text: Tôi mới vào công ty nên chưa quen với công việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 入社したばかりなので、まだ仕事に慣れていません。
+        - 入社したばかりだから、まだ仕事に慣れていません。
+        - 入社したばかりなので、仕事にまだ慣れていません。
+        - 私は入社したばかりなので、まだ仕事に慣れていません。
+        - にゅうしゃしたばかりなので、まだしごとになれていません。
+        - 入社したばかりなので、まだ仕事になれていません。
+        - 入社したばかりなので、まだ仕事に慣れていないです。
+        - 入社したばかりで、まだ仕事に慣れていません。
+    known_wrong:
+      - answer: 入社するばかりなので、まだ仕事に慣れていません。
+        feedback_vi: '"Vừa mới" là thể た + ばかり - 入社したばかり.'
+        error_tag: ta_bakari_form
+      - answer: 入社したばかりなので、まだ仕事に慣れません。
+        feedback_vi: '"Chưa quen" (trạng thái) là まだ慣れていません.'
+        error_tag: te_iru_state
+    explanation:
+      vi: 入社した + ばかりなので - vì mới vào công ty; まだ慣れていません - vẫn chưa quen.
+    display_answer: 入社したばかりなので、まだ仕事に慣れていません。
+
+  - key: ja:exercise:n3-tokoro-write-meeting
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      source_text: Bây giờ tôi đang họp nên lát nữa tôi sẽ gọi lại. (dùng ところ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今会議をしているところなので、後で電話します。
+        - 今会議をしているところなので、あとで電話します。
+        - 今会議をしているところなので、後でかけ直します。
+        - 今会議をしているところなので、後で折り返し電話します。
+        - 今会議しているところなので、後で電話します。
+        - 今会議をしているところだから、後で電話します。
+        - いまかいぎをしているところなので、あとででんわします。
+        - 今会議をしているところなので、後でまた電話します。
+    known_wrong:
+      - answer: 今会議をするところなので、後で電話します。
+        feedback_vi: 会議をするところ là "sắp họp"; đang họp là しているところ.
+        error_tag: tokoro_form
+      - answer: 今会議をしたところなので、後で電話します。
+        feedback_vi: したところ là "vừa họp xong"; đang họp là しているところ.
+        error_tag: tokoro_form
+    explanation:
+      vi: 会議をしている + ところなので - vì đang họp dở; 後で電話します - lát nữa gọi lại.
+    display_answer: 今会議をしているところなので、後で電話します。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-tokoro-translate-homework
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      source_text: 宿題が終わったところだから、これから遊びに行けるよ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tớ vừa làm xong bài tập nên giờ đi chơi được rồi.
+        - Bài tập vừa xong nên bây giờ tớ đi chơi được đấy.
+        - Mình vừa làm xong bài tập nên giờ đi chơi được rồi.
+        - Tôi vừa làm xong bài tập nên bây giờ có thể đi chơi được.
+        - Bài tập vừa xong rồi nên bây giờ tớ đi chơi được.
+        - Vừa làm xong bài tập nên giờ tớ đi chơi được rồi.
+        - Mình vừa xong bài tập nên bây giờ đi chơi được đấy.
+        - Tớ vừa xong bài tập nên giờ có thể đi chơi rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tớ sắp làm xong bài tập nên giờ đi chơi được rồi.
+        feedback_vi: 終わったところ là "vừa xong", không phải "sắp xong" (終わるところ).
+        error_tag: tokoro_meaning
+    explanation:
+      vi: 終わったところ - vừa xong; だから - nên; 遊びに行ける - đi chơi được (thể khả năng).
+    display_answer: Tớ vừa làm xong bài tập nên giờ đi chơi được rồi.
+
+  - key: ja:exercise:n3-tokoro-mcq-boss
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      stem: 'Trưởng phòng hỏi: 「資料はもう送りましたか。」 Đúng lúc đó bạn đang gửi dở. Bạn trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: c8z, text: "今、送っているところです。", lang: ja }
+        - { id: v3n, text: "今、送ったばかりです。", lang: ja }
+        - { id: b6l, text: "今、送るばかりです。", lang: ja }
+        - { id: m1k, text: "今、送っているばかりです。", lang: ja }
+    answer:
+      correct_option_id: c8z
+    explanation:
+      vi: Đang làm dở - V-ている + ところです. 送ったばかり là "vừa gửi xong" (sai tình huống); ばかり không đi với thể từ điển hay ている theo nghĩa này.
+    display_answer: 今、送っているところです。
+
+  - key: ja:exercise:n3-tokoro-wb-hungry
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ta-bakari
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Vừa nãy mới ăn trưa mà đã đói bụng rồi.”"
+      tokens:
+        - { id: h1, text: もうおなかがすいた }
+        - { id: h2, text: 食べるところなのに、 }
+        - { id: h3, text: 昼ご飯を }
+        - { id: h4, text: 食べたばかりなのに、 }
+        - { id: h5, text: さっき }
+    answer:
+      orders:
+        - [h5, h3, h4, h1]
+        - [h3, h5, h4, h1]
+    explanation:
+      vi: 食べたばかりなのに - mới ăn mà...; たばかり hay đi với なのに để than "mới... mà đã...". 食べるところ là "sắp ăn" - không hợp.
+    display_answer: さっき昼ご飯を食べたばかりなのに、もうおなかがすいた。
+
+  - key: ja:exercise:n3-tokoro-write-woke-up
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-tokoro-da
+    prompt:
+      source_text: Tôi vừa mới ngủ dậy nên vẫn chưa ăn sáng. (dùng ところ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今起きたところなので、まだ朝ご飯を食べていません。
+        - 起きたところなので、まだ朝ご飯を食べていません。
+        - 今起きたところだから、まだ朝ご飯を食べていません。
+        - 今起きたところなので、まだ朝ごはんを食べていません。
+        - 今起きたところなので、朝ご飯はまだ食べていません。
+        - いまおきたところなので、まだあさごはんをたべていません。
+        - 今起きたところなので、まだ朝食を食べていません。
+        - 今起きたところなので、まだ朝ご飯を食べていないです。
+    known_wrong:
+      - answer: 今起きるところなので、まだ朝ご飯を食べていません。
+        feedback_vi: 起きるところ là "sắp dậy"; vừa dậy là 起きたところ.
+        error_tag: tokoro_form
+      - answer: 今起きたところなので、まだ朝ご飯を食べません。
+        feedback_vi: '"Chưa ăn" (đến lúc này) là まだ食べていません.'
+        error_tag: mada_te_inai
+    explanation:
+      vi: 起きた + ところなので - vì vừa dậy; まだ～ていません - vẫn chưa làm.
+    display_answer: 今起きたところなので、まだ朝ご飯を食べていません。

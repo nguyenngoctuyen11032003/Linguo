@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-ka-douka
+order_index: 3
+level: n4
+title:
+  vi: Câu hỏi lồng trong câu - ～か và ～かどうか
+objectives:
+  - vi: Lồng câu hỏi có từ để hỏi vào câu lớn - 何時に始まるか分かりません.
+  - vi: Lồng câu hỏi có/không bằng ～かどうか.
+  - vi: Hỏi thông tin lịch sự bằng ～か教えてください.
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-sugiru-yasui]
+items:
+  - item: ja:item:n4-gram-embedded-ka
+  - item: ja:item:n4-gram-ka-douka
+  - item: ja:item:n4-shiraberu
+  - item: ja:item:n4-oboeru
+  - item: ja:item:n4-kaigi
+  - item: ja:item:kagi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "tôi không biết mấy giờ...", "cho tôi biết ở đâu...", "tôi chưa biết có đi hay không" - kiểu câu dùng hằng ngày khi hỏi đường, hỏi lịch, hỏi nhân viên.
+  - type: explain
+    text:
+      vi: 'Câu hỏi có từ để hỏi (何, どこ, いつ, だれ, どう...) lồng vào câu lớn bằng thể thường + か: 田中さんがどこに住んでいるか知っていますか. Sau か là 分かりません, 知っていますか, 教えてください, 調べます...'
+  - type: explain
+    text:
+      vi: 'Câu hỏi có/không (không có từ để hỏi) dùng かどうか: 明日のパーティーに行くかどうか分かりません. Tiếng Việt nói "có... hay không"; tiếng Nhật gói cả cụm đó vào かどうか.'
+  - type: explain
+    text:
+      vi: 'Câu nhỏ luôn ở thể thường, không giữ です/ます - nói 何時に始まるか, không nói 何時に始まりますか. Danh từ và tính từ đuôi な bỏ だ trước か: いつか, 本当かどうか, 便利かどうか.'
+  - type: deep_explain
+    text:
+      vi: 'Câu lớn mới quyết định lịch sự: ～か教えてください (lịch sự), ～か教えていただけますか (lịch sự hơn), ～か分からない (thân mật). Người Nhật hay dùng mẫu này thay cho câu hỏi thẳng để nghe mềm hơn: 駅はどこですか → 駅がどこか教えていただけますか. Trong câu nhỏ, chủ ngữ thường đi với が, không phải は.'
+  - type: example
+    target: 次の会議がいつか、まだ決まっていません。
+    target_lang: ja
+    translation:
+      vi: Cuộc họp tới là khi nào thì vẫn chưa được quyết định.
+    note:
+      vi: Danh từ いつ + か (bỏ だ).
+  - type: example
+    target: 田中さんがどこに住んでいるか知っていますか。
+    target_lang: ja
+    translation:
+      vi: Bạn có biết anh Tanaka sống ở đâu không?
+    note:
+      vi: Có từ để hỏi どこ → chỉ dùng か.
+  - type: example
+    target: 明日のパーティーに行くかどうか、まだ分かりません。
+    target_lang: ja
+    translation:
+      vi: Tôi vẫn chưa biết ngày mai có đi dự tiệc hay không.
+    note:
+      vi: Câu có/không → かどうか.
+  - type: example
+    target: 電車が動いているかどうか、駅に電話して調べます。
+    target_lang: ja
+    translation:
+      vi: Tôi sẽ gọi điện đến ga để tìm hiểu xem tàu có chạy hay không.
+    note:
+      vi: 調べる - tra cứu, tìm hiểu.
+  - type: common_mistake
+    wrong: 映画が何時に始まりますか分かりません。
+    right: 映画が何時に始まるか分かりません。
+    target_lang: ja
+    note:
+      vi: Câu nhỏ dùng thể thường - 始まる + か.
+  - type: common_mistake
+    wrong: 先生がいつ来るかどうか知りません。
+    right: 先生がいつ来るか知りません。
+    target_lang: ja
+    note:
+      vi: Đã có từ để hỏi いつ thì chỉ dùng か; かどうか dành cho câu có/không.
+  - type: common_mistake
+    wrong: その話は本当だかどうか分かりません。
+    right: その話は本当かどうか分かりません。
+    target_lang: ja
+    note:
+      vi: Danh từ, tính từ đuôi な bỏ だ trước かどうか.
+  - type: summary
+    points:
+      - vi: Từ để hỏi + thể thường + か + 分かりません / 知っていますか / 教えてください.
+      - vi: Câu có/không - thể thường + かどうか.
+      - vi: N / Na bỏ だ - いつか, 本当かどうか.
+      - vi: 調べる tra cứu · 覚える nhớ · 会議 cuộc họp.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-kadouka-mcq-who
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-embedded-ka
+    prompt:
+      stem: 'Chọn câu đúng: "Tôi không biết người kia là ai."'
+      stem_lang: vi
+      options:
+        - { id: a5h, text: "あの人がだれか分かりません。", lang: ja }
+        - { id: t8u, text: "あの人がだれですか分かりません。", lang: ja }
+        - { id: g2e, text: "あの人がだれかどうか分かりません。", lang: ja }
+        - { id: m9o, text: "あの人がだれのか分かりません。", lang: ja }
+    answer:
+      correct_option_id: a5h
+    explanation:
+      vi: だれ (danh từ để hỏi) + か, bỏ だ / です. Có từ để hỏi nên không dùng かどうか.
+    display_answer: あの人がだれか分かりません。
+
+  - key: ja:exercise:n4-kadouka-listen-restaurant
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-shiraberu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 新しいレストランがどこにあるか調べてください。
+      options:
+        - { id: d4n, text: "Hãy tra xem nhà hàng mới ở đâu.", lang: vi }
+        - { id: z7k, text: "Hãy tra xem nhà hàng mới có mở cửa hay không.", lang: vi }
+        - { id: p1s, text: "Nhà hàng mới ở đâu vậy?", lang: vi }
+        - { id: b6w, text: "Hãy đặt bàn ở nhà hàng mới.", lang: vi }
+    answer:
+      correct_option_id: d4n
+    explanation:
+      vi: どこにあるか - (xem) ở đâu; 調べてください - hãy tra cứu. Đây là lời nhờ, không phải câu hỏi thẳng.
+    display_answer: Hãy tra xem nhà hàng mới ở đâu.
+
+  - key: ja:exercise:n4-kadouka-fill-airport
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ka-douka
+    prompt:
+      template: "このバスが空港まで行く{{b1}}、運転手さんに聞きましょう。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Mình hỏi bác tài xem xe buýt này có đi đến sân bay hay không nhé."
+        - "Gợi ý: câu có/không lồng vào câu lớn - 'có... hay không'."
+    answer:
+      blanks:
+        b1: [かどうか]
+    known_wrong:
+      - answer: ですか
+        feedback_vi: Câu nhỏ không giữ です; câu có/không lồng vào dùng かどうか.
+        error_tag: embedded_masu
+    explanation:
+      vi: Không có từ để hỏi (không có どこ, いつ...) nên dùng かどうか - "có đi đến sân bay hay không".
+    display_answer: このバスが空港まで行くかどうか、運転手さんに聞きましょう。
+
+  - key: ja:exercise:n4-kadouka-mcq-email
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-kaigi
+    prompt:
+      stem: 'Câu 会議に出るかどうか、メールで教えてください。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: f2c, text: "Hãy báo qua email cho tôi biết bạn có dự họp hay không.", lang: vi }
+        - { id: k8x, text: "Hãy báo qua email cho tôi biết cuộc họp ở đâu.", lang: vi }
+        - { id: v5j, text: "Bạn có dự họp không? Tôi sẽ gửi email.", lang: vi }
+        - { id: n3q, text: "Hãy dự họp rồi gửi email cho tôi.", lang: vi }
+    answer:
+      correct_option_id: f2c
+    explanation:
+      vi: 会議に出る - dự họp; かどうか - có... hay không; メールで教えてください - hãy cho biết qua email.
+    display_answer: Hãy báo qua email cho tôi biết bạn có dự họp hay không.
+
+  - key: ja:exercise:n4-kadouka-wb-station
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-embedded-ka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Bạn có biết ga gần nhất ở đâu không?”"
+      tokens:
+        - { id: e1, text: 知っていますか }
+        - { id: e2, text: どこですか }
+        - { id: e3, text: 一番近い駅が }
+        - { id: e4, text: どこか }
+    answer:
+      orders:
+        - [e3, e4, e1]
+    explanation:
+      vi: どこ + か (bỏ です) rồi mới đến 知っていますか. どこですか là câu hỏi độc lập, không lồng được.
+    display_answer: 一番近い駅がどこか知っていますか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-kadouka-fill-movie
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shiraberu
+    prompt:
+      template: "Tôi sẽ tra xem phim kết thúc lúc mấy giờ - 映画が何時に終わる{{b1}}{{b2}}ます。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [か]
+        b2: [調べ, しらべ]
+    known_wrong:
+      - answer: かどうか
+        feedback_vi: Câu có từ để hỏi 何時 nên chỉ dùng か.
+        error_tag: ka_douka
+      - answer: 調べる
+        feedback_vi: Trước ます là gốc ます - 調べ + ます.
+        error_tag: masu_stem
+    explanation:
+      vi: 何時に終わるか (mấy giờ kết thúc) + 調べます (tra cứu).
+    display_answer: 映画が何時に終わるか調べます。
+
+  - key: ja:exercise:n4-kadouka-write-lock
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-oboeru
+    prompt:
+      source_text: Tôi không nhớ là đã khoá cửa hay chưa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 鍵をかけたかどうか覚えていません。
+        - かぎをかけたかどうか覚えていません。
+        - かぎをかけたかどうかおぼえていません。
+        - ドアに鍵をかけたかどうか覚えていません。
+        - ドアの鍵をかけたかどうか覚えていません。
+        - 鍵をかけたかどうか覚えていない。
+        - 鍵を閉めたかどうか覚えていません。
+        - 鍵をかけたかどうか、覚えていないです。
+    known_wrong:
+      - answer: 鍵をかけたかどうか覚えません。
+        feedback_vi: '"Không nhớ" (trạng thái) là 覚えていません; 覚えません là "không học thuộc".'
+        error_tag: te_iru_state
+      - answer: 鍵をかけましたかどうか覚えていません。
+        feedback_vi: Câu nhỏ dùng thể thường - かけたかどうか.
+        error_tag: embedded_masu
+    explanation:
+      vi: かけたかどうか - đã khoá hay chưa (câu có/không); 覚えていません - không còn nhớ.
+    display_answer: 鍵をかけたかどうか覚えていません。
+
+  - key: ja:exercise:n4-kadouka-write-meeting
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kaigi
+    prompt:
+      source_text: Xin hãy cho tôi biết cuộc họp bắt đầu lúc mấy giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会議が何時に始まるか教えてください。
+        - 会議は何時に始まるか教えてください。
+        - 会議が何時から始まるか教えてください。
+        - 会議は何時からか教えてください。
+        - かいぎがなんじにはじまるかおしえてください。
+        - 会議が何時に始まるか教えていただけますか。
+        - 会議が何時に始まるか、教えてくださいませんか。
+    known_wrong:
+      - answer: 会議が何時に始まりますか教えてください。
+        feedback_vi: Câu nhỏ dùng thể thường - 始まるか.
+        error_tag: embedded_masu
+      - answer: 会議が何時に始まるかどうか教えてください。
+        feedback_vi: Có từ để hỏi 何時 nên chỉ dùng か.
+        error_tag: ka_douka
+    explanation:
+      vi: 何時に始まるか (bắt đầu lúc mấy giờ) + 教えてください (xin cho biết).
+    display_answer: 会議が何時に始まるか教えてください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-kadouka-translate-nobody
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-ka-douka
+    prompt:
+      source_text: 彼が本当に来るかどうか、だれも知りません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không ai biết anh ấy có thực sự đến hay không.
+        - Không ai biết anh ấy có thật sự đến hay không.
+        - Không ai biết anh ấy thực sự có đến hay không.
+        - Không ai biết anh ấy có đến thật hay không.
+        - Chẳng ai biết anh ấy có thực sự đến hay không.
+        - Không ai biết là anh ấy có thực sự đến hay không.
+        - Không ai biết liệu anh ấy có thực sự đến hay không.
+        - Không ai biết anh ta có thực sự đến hay không.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ai cũng biết anh ấy sẽ đến.
+        feedback_vi: だれも知りません là "không ai biết"; かどうか là "có... hay không".
+        error_tag: dare_mo_negative
+    explanation:
+      vi: 本当に来るかどうか - có thực sự đến hay không; だれも + phủ định - không ai.
+    display_answer: Không ai biết anh ấy có thực sự đến hay không.
+
+  - key: ja:exercise:n4-kadouka-mcq-train
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ka-douka
+    prompt:
+      stem: Ở nhà ga, bạn muốn hỏi nhân viên một cách lịch sự xem tàu này có dừng ở Kyoto không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: h4y, text: "すみません、この電車が京都に止まるかどうか、教えてください。", lang: ja }
+        - { id: c7r, text: "すみません、この電車が京都に止まりますかどうか、教えてください。", lang: ja }
+        - { id: o2m, text: "すみません、この電車が京都に止まるかどうか、教えましょう。", lang: ja }
+        - { id: s9b, text: "すみません、この電車がどこ京都に止まるか、教えてください。", lang: ja }
+    answer:
+      correct_option_id: h4y
+    explanation:
+      vi: 止まるかどうか - có dừng hay không (thể thường); 教えてください - xin cho biết. 教えましょう là "mình sẽ chỉ cho", sai vai.
+    display_answer: すみません、この電車が京都に止まるかどうか、教えてください。
+
+  - key: ja:exercise:n4-kadouka-wb-decide
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-embedded-ka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi vẫn chưa quyết định sẽ mua cái nào.”"
+      tokens:
+        - { id: d1, text: 決めていません }
+        - { id: d2, text: 買うか }
+        - { id: d3, text: まだ }
+        - { id: d4, text: 買うかどうか }
+        - { id: d5, text: どれを }
+    answer:
+      orders:
+        - [d5, d2, d3, d1]
+        - [d3, d5, d2, d1]
+    explanation:
+      vi: どれ là từ để hỏi nên dùng 買うか, không dùng かどうか. まだ có thể đứng đầu câu hoặc trước 決めていません.
+    display_answer: どれを買うか、まだ決めていません。
+
+  - key: ja:exercise:n4-kadouka-write-meaning
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-shiraberu
+    prompt:
+      source_text: Hãy tra từ điển xem từ này có nghĩa là gì.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この言葉がどういう意味か、辞書で調べてください。
+        - この言葉はどういう意味か、辞書で調べてください。
+        - この言葉がどんな意味か、辞書で調べてください。
+        - この言葉はどんな意味か、辞書で調べてください。
+        - 辞書でこの言葉がどういう意味か調べてください。
+        - 辞書でこの言葉はどういう意味か調べてください。
+        - 辞書でこの言葉がどんな意味か調べてください。
+        - このことばがどういういみか、じしょでしらべてください。
+        - この単語がどういう意味か、辞書で調べてください。
+        - この言葉の意味を辞書で調べてください。
+    known_wrong:
+      - answer: この言葉がどういう意味ですか、辞書で調べてください。
+        feedback_vi: Câu nhỏ bỏ です - どういう意味か.
+        error_tag: embedded_masu
+      - answer: この言葉がどういう意味かどうか、辞書で調べてください。
+        feedback_vi: Có từ để hỏi どういう nên chỉ dùng か.
+        error_tag: ka_douka
+    explanation:
+      vi: どういう意味か - nghĩa là gì (danh từ bỏ だ); 辞書で調べてください - hãy tra từ điển.
+    display_answer: この言葉がどういう意味か、辞書で調べてください。

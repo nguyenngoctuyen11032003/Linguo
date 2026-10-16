@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-te-shimau
+order_index: 1
+level: n4
+title:
+  vi: Lỡ làm, làm xong hẳn - てしまう và ちゃう
+objectives:
+  - vi: Nói "làm xong hẳn" bằng V-てしまいます.
+  - vi: Nói "lỡ làm, chẳng may" kèm cảm giác tiếc nuối bằng V-てしまいました.
+  - vi: Nhận ra và dùng dạng nói thân mật ～ちゃう / ～じゃう với bạn bè.
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-travel-comparing-review]
+items:
+  - item: ja:item:n4-gram-te-shimau
+  - item: ja:item:n4-gram-chau
+  - item: ja:item:n4-saifu
+  - item: ja:item:n4-otosu
+  - item: ja:item:n4-kowasu
+  - item: ja:item:n4-wasureru
+    role: reuse
+  - item: ja:item:kagi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được những sự cố nhỏ hằng ngày như "lỡ quên ví", "làm hỏng máy ảnh của bạn" và nói được "làm xong hết rồi" một cách tự nhiên như người Nhật.
+  - type: explain
+    text:
+      vi: 'Thể て + しまいます có hai nghĩa. Nghĩa (1) là "làm xong hẳn, làm hết": 宿題をやってしまいました - đã làm xong hết bài tập. Nghĩa (2) là "lỡ, chẳng may" - việc đã xảy ra ngoài ý muốn và người nói thấy tiếc.'
+  - type: explain
+    text:
+      vi: 'Tiếng Việt thêm "mất", "mất rồi", "lỡ" để tỏ ý tiếc; tiếng Nhật thêm しまう. 財布を忘れました chỉ kể việc quên ví, còn 財布を忘れてしまいました cho người nghe thấy bạn tiếc hoặc thấy có lỗi.'
+  - type: explain
+    text:
+      vi: 'Khi nói chuyện thân mật, てしまう rút gọn thành ちゃう, でしまう thành じゃう: 忘れてしまった → 忘れちゃった, 飲んでしまった → 飲んじゃった. Với cấp trên hay khách hàng, luôn nói đủ ～てしまいました.'
+  - type: deep_explain
+    text:
+      vi: 'Dạng hiện tại ～てしまう nói về việc sắp xảy ra mà mình lo: 急がないと遅れてしまいます (không nhanh lên là trễ mất). Khi xin lỗi, dùng てしまいました vì nó thừa nhận "đã lỡ gây ra" - nghe thành khẩn hơn câu kể trống ～ました. Lưu ý động từ phải đúng tự / tha: 財布を落とす (làm rơi ví) chứ không nói 財布を落ちる.'
+  - type: example
+    target: 宿題はもう全部やってしまいました。
+    target_lang: ja
+    translation:
+      vi: Bài tập thì tôi đã làm xong hết rồi.
+    note:
+      vi: Nghĩa (1) - làm xong hẳn; もう và 全部 làm rõ ý "hết, xong".
+  - type: example
+    target: 電車の中に財布を忘れてしまいました。
+    target_lang: ja
+    translation:
+      vi: Tôi lỡ để quên ví trên tàu mất rồi.
+    note:
+      vi: Nghĩa (2) - lỡ làm, tiếc nuối.
+  - type: example
+    target: 友だちのカメラを壊してしまいました。
+    target_lang: ja
+    translation:
+      vi: Tôi lỡ làm hỏng máy ảnh của bạn.
+    note:
+      vi: 壊す (làm hỏng) là tha động từ, đi với を.
+  - type: example
+    target: もう10時だ。急がないと、遅れちゃう。
+    target_lang: ja
+    translation:
+      vi: 10 giờ rồi. Không nhanh lên là trễ mất.
+    note:
+      vi: Văn nói thân mật - 遅れてしまう → 遅れちゃう, nói về việc sắp xảy ra.
+  - type: common_mistake
+    wrong: 財布を落ちてしまいました。
+    right: 財布を落としてしまいました。
+    target_lang: ja
+    note:
+      vi: 落ちる là "tự rơi" (đi với が); có người làm rơi thì dùng 落とす với を.
+  - type: common_mistake
+    wrong: 部長、資料を忘れちゃいました。
+    right: 部長、資料を忘れてしまいました。申し訳ありません。
+    target_lang: ja
+    note:
+      vi: ちゃう là văn nói thân mật; với trưởng phòng nên nói đủ てしまいました và xin lỗi rõ ràng.
+  - type: common_mistake
+    wrong: 飲んちゃった。
+    right: 飲んじゃった。
+    target_lang: ja
+    note:
+      vi: Thể て kết thúc bằng で (飲んで, 読んで, 遊んで) thì rút gọn thành じゃう, không phải ちゃう.
+  - type: summary
+    points:
+      - vi: V-てしまいます - (1) làm xong hẳn, (2) lỡ làm, tiếc nuối.
+      - vi: Văn nói - てしまう → ちゃう, でしまう → じゃう; quá khứ ちゃった / じゃった.
+      - vi: Xin lỗi người trên - ～てしまいました。申し訳ありません。
+      - vi: 財布 cái ví · 落とす làm rơi · 壊す làm hỏng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-shimau-mcq-otosu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-otosu
+    prompt:
+      stem: 'Câu バスの中で財布を落としてしまいました。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: q7d, text: "Tôi lỡ đánh rơi ví trên xe buýt mất rồi.", lang: vi }
+        - { id: a2k, text: "Tôi nhặt được một cái ví trên xe buýt.", lang: vi }
+        - { id: m5x, text: "Tôi định mua ví ở trên xe buýt.", lang: vi }
+        - { id: z8f, text: "Ví rơi trên xe buýt nhưng tôi đã tìm thấy.", lang: vi }
+    answer:
+      correct_option_id: q7d
+    explanation:
+      vi: 落とす - làm rơi; てしまいました cho thấy việc ngoài ý muốn và người nói tiếc. Câu không nói gì về nhặt được hay tìm thấy.
+    display_answer: Tôi lỡ đánh rơi ví trên xe buýt mất rồi.
+
+  - key: ja:exercise:n4-shimau-listen-pudding
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-te-shimau
+    prompt:
+      audio_asset_id: null
+      fallback_text: 弟が冷たいプリンを全部食べてしまいました。
+      options:
+        - { id: w3e, text: "Em trai ăn hết sạch bánh pudding lạnh mất rồi.", lang: vi }
+        - { id: h6r, text: "Em trai muốn ăn bánh pudding lạnh.", lang: vi }
+        - { id: c1t, text: "Em trai chưa ăn bánh pudding lạnh.", lang: vi }
+        - { id: u9y, text: "Em trai làm bánh pudding lạnh cho cả nhà.", lang: vi }
+    answer:
+      correct_option_id: w3e
+    explanation:
+      vi: 全部食べてしまいました - ăn hết sạch (nghĩa "xong hẳn") và người nói hơi tiếc vì không còn phần mình.
+    display_answer: Em trai ăn hết sạch bánh pudding lạnh mất rồi.
+
+  - key: ja:exercise:n4-shimau-fill-plate
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-te-shimau
+    prompt:
+      template: "母の大切なお皿を割って{{b1}}ました。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Tôi lỡ làm vỡ cái đĩa quý của mẹ mất rồi."
+        - "Gợi ý: thể ます của しまう, bỏ ます."
+    answer:
+      blanks:
+        b1: [しまい]
+    known_wrong:
+      - answer: しまう
+        feedback_vi: Trước ました phải là gốc ます - しまい + ました.
+        error_tag: masu_stem
+      - answer: あり
+        feedback_vi: てありました là "đã được làm sẵn"; lỡ làm vỡ thì dùng てしまいました.
+        error_tag: te_aru_shimau
+    explanation:
+      vi: 割ってしまいました - lỡ làm vỡ. しまう chia như động từ nhóm 1 - しまいます, しまいました.
+    display_answer: 母の大切なお皿を割ってしまいました。
+
+  - key: ja:exercise:n4-shimau-mcq-chau
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-chau
+    prompt:
+      stem: 'Bạn nhắn cho bạn thân: "Tớ lỡ ngủ quên mất rồi!" Câu nào đúng và tự nhiên?'
+      stem_lang: vi
+      options:
+        - { id: k4n, text: "寝坊しちゃった！", lang: ja }
+        - { id: d8s, text: "寝坊しじゃった！", lang: ja }
+        - { id: p2v, text: "寝坊しちゃう！", lang: ja }
+        - { id: g6b, text: "寝坊してちゃった！", lang: ja }
+    answer:
+      correct_option_id: k4n
+    explanation:
+      vi: して + しまった → しちゃった. じゃう chỉ dùng khi thể て kết thúc bằng で; ちゃう (hiện tại) là "sắp ngủ quên mất", còn してちゃった thừa て.
+    display_answer: 寝坊しちゃった！
+
+  - key: ja:exercise:n4-shimau-wb-kowasu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-kowasu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi lỡ làm hỏng máy tính của anh trai.”"
+      tokens:
+        - { id: t1, text: しまいました }
+        - { id: t2, text: パソコンを }
+        - { id: t3, text: 壊れて }
+        - { id: t4, text: 兄の }
+        - { id: t5, text: 壊して }
+    answer:
+      orders:
+        - [t4, t2, t5, t1]
+    explanation:
+      vi: Có người làm hỏng nên dùng tha động từ 壊す → 壊して, đi với パソコンを. 壊れる là "tự hỏng", đi với が.
+    display_answer: 兄のパソコンを壊してしまいました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-shimau-fill-casual
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-chau
+    prompt:
+      template: "Đổi sang văn nói thân mật - 飲んでしまった → {{b1}} · 見てしまった → {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [飲んじゃった, のんじゃった]
+        b2: [見ちゃった, みちゃった]
+    known_wrong:
+      - answer: 飲んちゃった
+        feedback_vi: 飲んで kết thúc bằng で nên rút gọn thành じゃった.
+        error_tag: chau_jau
+      - answer: 見じゃった
+        feedback_vi: 見て kết thúc bằng て nên rút gọn thành ちゃった.
+        error_tag: chau_jau
+    explanation:
+      vi: てしまった → ちゃった; でしまった → じゃった. Nhìn chữ cuối của thể て để chọn.
+    display_answer: 飲んじゃった · 見ちゃった
+
+  - key: ja:exercise:n4-shimau-write-password
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-wasureru
+    prompt:
+      source_text: Tôi lỡ quên mật khẩu mất rồi. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - パスワードを忘れてしまいました。
+        - パスワードをわすれてしまいました。
+        - 私はパスワードを忘れてしまいました。
+        - わたしはパスワードをわすれてしまいました。
+        - パスワードを忘れちゃいました。
+        - パスワードをわすれちゃいました。
+    known_wrong:
+      - answer: パスワードが忘れてしまいました。
+        feedback_vi: 忘れる là tha động từ - thứ bị quên đi với を.
+        error_tag: particle_choice
+      - answer: パスワードを忘れてしまいます。
+        feedback_vi: Việc đã xảy ra nên dùng quá khứ しまいました.
+        error_tag: tense
+    explanation:
+      vi: 忘れる → 忘れて + しまいました. てしまいました thể hiện bạn thấy tiếc vì đã quên.
+    display_answer: パスワードを忘れてしまいました。
+
+  - key: ja:exercise:n4-shimau-write-finish-book
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-shimau
+    prompt:
+      source_text: Cuốn sách này tôi đã đọc hết rồi. (dùng てしまう, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この本はもう全部読んでしまいました。
+        - この本は全部読んでしまいました。
+        - この本はもう読んでしまいました。
+        - この本を全部読んでしまいました。
+        - この本をもう全部読んでしまいました。
+        - このほんはもうぜんぶよんでしまいました。
+        - このほんはぜんぶよんでしまいました。
+        - このほんをぜんぶよんでしまいました。
+    known_wrong:
+      - answer: この本は全部読みでしまいました。
+        feedback_vi: Thể て của 読む là 読んで.
+        error_tag: te_form
+      - answer: この本は全部読んでしまいます。
+        feedback_vi: Việc đã làm xong nên dùng quá khứ しまいました.
+        error_tag: tense
+    explanation:
+      vi: 読む → 読んで + しまいました - đọc xong hẳn. 全部, もう nhấn ý "hết, xong rồi".
+    display_answer: この本はもう全部読んでしまいました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-shimau-translate-cold
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-shimau
+    prompt:
+      source_text: 傘を持っていなかったので、かぜをひいてしまいました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì không mang ô nên tôi bị cảm mất rồi.
+        - Vì không mang ô nên tôi bị cảm mất.
+        - Vì không mang ô nên tôi đã bị cảm.
+        - Tôi không mang ô nên bị cảm mất rồi.
+        - Tôi không mang ô nên bị cảm mất.
+        - Do không mang ô nên tôi bị cảm mất rồi.
+        - Vì không mang dù nên tôi bị cảm mất rồi.
+        - Tôi không mang dù nên bị cảm mất rồi.
+        - Vì không có ô nên tôi bị cảm mất rồi.
+        - Vì không mang ô nên tôi lỡ bị cảm rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì không mang ô nên tôi sẽ bị cảm.
+        feedback_vi: てしまいました là quá khứ - việc bị cảm đã xảy ra.
+        error_tag: tense
+    explanation:
+      vi: 持っていなかったので - vì (đã) không mang; かぜをひいてしまいました - bị cảm mất rồi, có ý tiếc.
+    display_answer: Vì không mang ô nên tôi bị cảm mất rồi.
+
+  - key: ja:exercise:n4-shimau-mcq-apology
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-te-shimau
+    prompt:
+      stem: Bạn lỡ làm đổ (こぼす) cà phê lên tài liệu của trưởng phòng. Câu xin lỗi nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: r5m, text: "申し訳ありません。資料にコーヒーをこぼしてしまいました。", lang: ja }
+        - { id: e9c, text: "ごめん、資料にコーヒーこぼしちゃった。", lang: ja }
+        - { id: y3h, text: "申し訳ありません。資料にコーヒーをこぼしてしまいましょう。", lang: ja }
+        - { id: b7w, text: "申し訳ありません。資料にコーヒーがこぼしてしまいました。", lang: ja }
+    answer:
+      correct_option_id: r5m
+    explanation:
+      vi: Với người trên dùng 申し訳ありません + てしまいました. ちゃった quá thân mật; ましょう là rủ rê; こぼす là tha động từ nên đi với を.
+    display_answer: 申し訳ありません。資料にコーヒーをこぼしてしまいました。
+
+  - key: ja:exercise:n4-shimau-wb-bus
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-chau
+    prompt:
+      instruction: "Nói với bạn thân: “Mải nói chuyện nên xe buýt đi mất rồi.”"
+      tokens:
+        - { id: s1, text: 行っちゃった }
+        - { id: s2, text: バスが }
+        - { id: s3, text: 話していたら、 }
+        - { id: s4, text: 行っじゃった }
+    answer:
+      orders:
+        - [s3, s2, s1]
+    explanation:
+      vi: 行って + しまった → 行っちゃった (て → ちゃ). 行っじゃった không tồn tại vì 行って kết thúc bằng て.
+    display_answer: 話していたら、バスが行っちゃった。
+
+  - key: ja:exercise:n4-shimau-write-key
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:kagi
+    prompt:
+      source_text: Tôi lỡ đánh rơi chìa khoá nhà ở đâu đó mất rồi. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 家の鍵をどこかに落としてしまいました。
+        - 家の鍵をどこかで落としてしまいました。
+        - うちの鍵をどこかに落としてしまいました。
+        - うちの鍵をどこかで落としてしまいました。
+        - 家のかぎをどこかに落としてしまいました。
+        - 家のかぎをどこかで落としてしまいました。
+        - うちのかぎをどこかでおとしてしまいました。
+        - うちのかぎをどこかにおとしてしまいました。
+        - いえのかぎをどこかでおとしてしまいました。
+        - いえのかぎをどこかにおとしてしまいました。
+        - 家の鍵をどこかで落としちゃいました。
+    known_wrong:
+      - answer: 家の鍵をどこかに落ちてしまいました。
+        feedback_vi: Bạn là người làm rơi nên dùng tha động từ 落とす (落として), không dùng 落ちる.
+        error_tag: transitive_intransitive
+      - answer: 家の鍵がどこかに落としてしまいました。
+        feedback_vi: Thứ bị làm rơi đi với を - 鍵を落とす.
+        error_tag: particle_choice
+    explanation:
+      vi: どこかに / どこかで - ở đâu đó; 落として + しまいました - lỡ đánh rơi, tiếc nuối.
+    display_answer: 家の鍵をどこかに落としてしまいました。
