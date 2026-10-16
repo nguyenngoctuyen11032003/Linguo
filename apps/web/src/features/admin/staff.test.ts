@@ -1,10 +1,20 @@
-import { adminFoundUserSchema, adminStaffMemberSchema } from '@linguo/shared';
+import { adminFoundUserSchema, adminStaffMemberSchema, adminTeacherSchema } from '@linguo/shared';
 import { describe, expect, it, vi } from 'vitest';
 import type { AppSupabaseClient } from '@/lib/supabase';
 import { ADMIN_USER_ID } from './admin-fixtures';
 import { adminErrorMessage } from './error-map';
-import { canManageMember, findAdminUser, grantStaffRole, listAdminStaff, staffDisplayName, staffQueryKind } from './staff';
-import { LEARNER_ID, STAFF_EDITOR_ID, foundUserFixture, staffListFixture, staffMemberFixture } from './staff-fixtures';
+import {
+  canManageMember,
+  findAdminUser,
+  grantStaffRole,
+  listAdminStaff,
+  listAdminTeachers,
+  setTeacherStatus,
+  staffDisplayName,
+  staffQueryKind,
+  teacherClassesLabel,
+} from './staff';
+import { LEARNER_ID, STAFF_EDITOR_ID, TEACHER_ID, foundUserFixture, staffListFixture, staffMemberFixture, teacherFixture } from './staff-fixtures';
 
 function clientReturning(data: unknown, error: unknown = null) {
   const rpc = vi.fn(() => Promise.resolve({ data, error }));
@@ -15,6 +25,35 @@ describe('staff fixtures', () => {
   it('match the shared contract', () => {
     expect(adminStaffMemberSchema.array().safeParse(staffListFixture()).success).toBe(true);
     expect(adminFoundUserSchema.safeParse(foundUserFixture()).success).toBe(true);
+    expect(adminTeacherSchema.safeParse(teacherFixture()).success).toBe(true);
+  });
+});
+
+describe('teacher service', () => {
+  it('lists teachers through admin_list_teachers', async () => {
+    const { rpc, client } = clientReturning([teacherFixture()]);
+    await expect(listAdminTeachers(client)).resolves.toEqual([teacherFixture()]);
+    expect(rpc).toHaveBeenCalledWith('admin_list_teachers', {});
+    await expect(listAdminTeachers(clientReturning(null).client)).resolves.toEqual([]);
+  });
+
+  it('rejects a malformed teacher payload', async () => {
+    const { client } = clientReturning([{ ...teacherFixture(), active_classes: -1 }]);
+    await expect(listAdminTeachers(client)).rejects.toThrow('invalid_payload');
+  });
+
+  it('grants and revokes through grant_teacher_role', async () => {
+    const grant = clientReturning({ user_id: TEACHER_ID, is_teacher: true });
+    await expect(setTeacherStatus(grant.client, TEACHER_ID, true)).resolves.toEqual({ user_id: TEACHER_ID, is_teacher: true });
+    expect(grant.rpc).toHaveBeenCalledWith('grant_teacher_role', { p_user_id: TEACHER_ID, p_grant: true });
+    const revoke = clientReturning({ user_id: TEACHER_ID, is_teacher: false });
+    await expect(setTeacherStatus(revoke.client, TEACHER_ID, false)).resolves.toEqual({ user_id: TEACHER_ID, is_teacher: false });
+    expect(revoke.rpc).toHaveBeenCalledWith('grant_teacher_role', { p_user_id: TEACHER_ID, p_grant: false });
+  });
+
+  it('words the class count', () => {
+    expect(teacherClassesLabel(0)).toBe('Chưa mở lớp nào');
+    expect(teacherClassesLabel(3)).toBe('3 lớp đang mở');
   });
 });
 

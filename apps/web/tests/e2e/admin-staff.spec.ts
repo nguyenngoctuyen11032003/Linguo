@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { staffListFixture } from '../../src/features/admin/staff-fixtures';
+import { staffListFixture, teacherFixture } from '../../src/features/admin/staff-fixtures';
 import { expectNoHorizontalScroll, mockSupabase, settleAnimations, signIn, USER_ID } from './fixtures';
 
 // /quan-tri/nhan-su: staff list, grant by email, change and revoke (with confirmation). The admin_list_staff /
@@ -14,9 +14,20 @@ async function setup(page: Page) {
   await mockSupabase(page, { admin: { staffRole: 'admin' } });
   let staff: Member[] = staffListFixture().map((m, i) => (i === 0 ? { ...m, user_id: USER_ID } : m));
   const grants: Array<Record<string, unknown>> = [];
+  let teachers = [teacherFixture()];
+  const teacherGrants: Array<Record<string, unknown>> = [];
   const json = (body: unknown) => ({ status: 200, contentType: 'application/json', body: JSON.stringify(body) });
 
   await page.route('**/rest/v1/rpc/admin_list_staff', (route) => route.fulfill(json(staff)));
+  await page.route('**/rest/v1/rpc/admin_list_teachers', (route) => route.fulfill(json(teachers)));
+  await page.route('**/rest/v1/rpc/grant_teacher_role', (route) => {
+    const b = route.request().postDataJSON() as { p_user_id: string; p_grant: boolean };
+    teacherGrants.push(b);
+    if (!b.p_grant) teachers = teachers.filter((t) => t.user_id !== b.p_user_id);
+    else if (!teachers.some((t) => t.user_id === b.p_user_id))
+      teachers = [...teachers, teacherFixture({ user_id: b.p_user_id, email: 'mai@example.com', display_name: 'Mai Trần', granted_by: USER_ID, granted_by_email: 'staff@example.com', active_classes: 0 })];
+    return route.fulfill(json({ user_id: b.p_user_id, is_teacher: b.p_grant }));
+  });
   await page.route('**/rest/v1/rpc/admin_find_user', (route) => {
     const q = String((route.request().postDataJSON() as Record<string, unknown>).p_query).toLowerCase();
     const hit = q === 'mai@example.com' ? { user_id: '50000000-0000-4000-8000-0000000000aa', email: 'mai@example.com', display_name: 'Mai Trần', role: null } : null;
@@ -35,7 +46,7 @@ async function setup(page: Page) {
     return route.fulfill(json({ user_id: b.p_user_id, role: b.p_role }));
   });
   await signIn(page);
-  return { grants: () => [...grants] };
+  return { grants: () => [...grants], teacherGrants: () => [...teacherGrants] };
 }
 
 async function open(page: Page) {
@@ -74,6 +85,33 @@ test('an admin grants, changes and revokes staff roles', async ({ page }) => {
   await expect(list.getByText('Lan Phạm')).toHaveCount(0);
 
   expect(backend.grants().map((g) => g.p_role)).toEqual(['reviewer', 'reviewer', null]);
+});
+
+test('an admin grants and revokes teacher status', async ({ page }) => {
+  const backend = await setup(page);
+  await open(page);
+  const teachers = page.getByRole('list', { name: 'Danh sách giáo viên' });
+  await expect(teachers.getByRole('listitem')).toHaveCount(1);
+  await expect(teachers.getByText(/2 lớp đang mở/)).toBeVisible();
+
+  await page.getByLabel('Email hoặc mã người dùng').fill('mai@example.com');
+  await page.getByRole('button', { name: 'Tìm tài khoản' }).click();
+  await expect(page.getByText('Quyền giáo viên: Chưa có')).toBeVisible();
+  await page.getByRole('button', { name: 'Cấp quyền giáo viên' }).click();
+  await expect(page.getByText('Đã cấp quyền giáo viên cho Mai Trần.')).toBeVisible();
+  await expect(teachers.getByRole('listitem')).toHaveCount(2);
+
+  await page.getByRole('button', { name: 'Thu hồi quyền giáo viên của Cô Lan' }).click();
+  const dialog = page.getByRole('alertdialog', { name: 'Thu hồi quyền giáo viên?' });
+  await expect(dialog).toBeVisible();
+  await expectNoHorizontalScroll(page);
+  await dialog.getByRole('button', { name: 'Thu hồi' }).click();
+  await expect(dialog).toBeHidden();
+  await expect(page.getByText('Đã thu hồi quyền giáo viên của Cô Lan.')).toBeVisible();
+  await expect(teachers.getByRole('listitem')).toHaveCount(1);
+
+  expect(backend.teacherGrants().map((g) => g.p_grant)).toEqual([true, false]);
+  expect(backend.grants()).toEqual([]);
 });
 
 test('/quan-tri/nhan-su: no horizontal scroll and no serious a11y violations', async ({ page }, testInfo) => {

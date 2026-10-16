@@ -1,4 +1,4 @@
-import { useId, useState, type FormEvent } from 'react';
+import { useId, useMemo, useState, type FormEvent } from 'react';
 import { STAFF_ROLES, type AdminFoundUser, type AdminStaffMember, type StaffRole } from '@linguo/shared';
 import { Search, Users } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -8,10 +8,11 @@ import { inputClasses } from '@/components/ui/Input';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { STAFF_ROLE_LABELS_VI } from '@/features/admin/service';
 import { STAFF_ROLE_DESCRIPTIONS_VI, canManageMember, staffDisplayName, staffQueryKind } from '@/features/admin/staff';
-import { useAdminStaff } from '@/features/admin/useAdminStaff';
+import { useAdminStaff, useAdminTeachers } from '@/features/admin/useAdminStaff';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { cn } from '@/lib/cn';
 import { RevokeRoleDialog } from './RevokeRoleDialog';
+import { TeacherSection } from './TeacherSection';
 
 const selectClasses = cn(inputClasses(false), 'min-h-11 appearance-none py-2 pr-8 text-[15px]');
 
@@ -48,10 +49,14 @@ interface GrantSectionProps {
   saving: boolean;
   findUser: ReturnType<typeof useAdminStaff>['findUser'];
   setRole: ReturnType<typeof useAdminStaff>['setRole'];
+  /** User ids with teacher status, or null while the teacher list loads. */
+  teacherIds: ReadonlySet<string> | null;
+  savingTeacher: boolean;
+  setTeacher: ReturnType<typeof useAdminTeachers>['setTeacher'];
 }
 
-/** Look an account up by email or user id, then grant (or change) its role. */
-function GrantSection({ currentUserId, saving, findUser, setRole }: GrantSectionProps) {
+/** Look an account up by email or user id, then grant (or change) its role, or grant teacher status. */
+function GrantSection({ currentUserId, saving, findUser, setRole, teacherIds, savingTeacher, setTeacher }: GrantSectionProps) {
   const ids = useId();
   const [query, setQuery] = useState('');
   const [searching, setSearching] = useState(false);
@@ -95,13 +100,27 @@ function GrantSection({ currentUserId, saving, findUser, setRole }: GrantSection
     setQuery('');
   };
 
+  const grantTeacher = async () => {
+    if (!found) return;
+    setMessage(null);
+    const outcome = await setTeacher(found.user_id, true);
+    if (!outcome.ok) {
+      setMessage({ tone: 'error', text: outcome.message });
+      return;
+    }
+    setMessage({ tone: 'ok', text: `Đã cấp quyền giáo viên cho ${staffDisplayName(found)}.` });
+    setFound(null);
+    setQuery('');
+  };
+
   const self = found ? !canManageMember(found, currentUserId) : false;
   const unchanged = found?.role === role;
+  const isTeacher = found && teacherIds ? teacherIds.has(found.user_id) : null;
 
   return (
     <section aria-labelledby={`${ids}-title`} className="space-y-3 rounded-3xl border border-border bg-surface-solid p-4">
       <h2 id={`${ids}-title`} className="font-semibold">
-        Thêm nhân sự
+        Thêm nhân sự hoặc giáo viên
       </h2>
       <form onSubmit={(e) => void search(e)} className="flex flex-col gap-2 sm:flex-row sm:items-end">
         <div className="min-w-0 flex-1">
@@ -149,6 +168,16 @@ function GrantSection({ currentUserId, saving, findUser, setRole }: GrantSection
               </Button>
             </div>
           )}
+          <div className="flex flex-col gap-2 border-t border-border pt-3 sm:flex-row sm:items-center">
+            <p className="min-w-0 flex-1 text-sm text-muted">
+              Quyền giáo viên: {isTeacher === null ? 'đang kiểm tra…' : isTeacher ? 'Đã có' : 'Chưa có'}
+            </p>
+            {isTeacher === false && (
+              <Button variant="ghost" disabled={savingTeacher} onClick={() => void grantTeacher()} className="self-start sm:self-auto sm:shrink-0">
+                Cấp quyền giáo viên
+              </Button>
+            )}
+          </div>
         </div>
       )}
       <Feedback message={message} />
@@ -213,6 +242,8 @@ export function StaffPage() {
   const currentUserId = user?.id ?? null;
   const staff = useAdminStaff();
   const { status, data, error, reload, setRole, findUser, savingUserId } = staff;
+  const teachers = useAdminTeachers();
+  const teacherIds = useMemo(() => (teachers.data ? new Set(teachers.data.map((t) => t.user_id)) : null), [teachers.data]);
   const [revoking, setRevoking] = useState<AdminStaffMember | null>(null);
   const [message, setMessage] = useState<Message | null>(null);
   const saving = savingUserId !== null;
@@ -246,10 +277,18 @@ export function StaffPage() {
     <div className="space-y-5">
       <div className="space-y-1">
         <h1 className="text-2xl font-bold tracking-[-0.02em]">Nhân sự</h1>
-        <p className="text-[15px] text-muted">Cấp, đổi hoặc thu hồi vai trò trong khu quản trị. Mọi thay đổi được ghi vào nhật ký.</p>
+        <p className="text-[15px] text-muted">Cấp, đổi hoặc thu hồi vai trò trong khu quản trị và quyền giáo viên. Mọi thay đổi được ghi vào nhật ký.</p>
       </div>
 
-      <GrantSection currentUserId={currentUserId} saving={saving} findUser={findUser} setRole={setRole} />
+      <GrantSection
+        currentUserId={currentUserId}
+        saving={saving}
+        findUser={findUser}
+        setRole={setRole}
+        teacherIds={teacherIds}
+        savingTeacher={teachers.savingTeacherId !== null}
+        setTeacher={teachers.setTeacher}
+      />
 
       <section aria-labelledby={listTitleId} className="space-y-3">
         <h2 id={listTitleId} className="text-lg font-semibold">
@@ -282,6 +321,8 @@ export function StaffPage() {
           </ul>
         )}
       </section>
+
+      <TeacherSection teachers={teachers} currentUserId={currentUserId} />
 
       <RevokeRoleDialog
         name={revoking ? staffDisplayName(revoking) : null}

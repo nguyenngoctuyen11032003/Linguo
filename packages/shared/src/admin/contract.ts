@@ -308,6 +308,23 @@ export const adminFoundUserSchema = z.object({
 export type AdminFoundUser = z.infer<typeof adminFoundUserSchema>;
 export const ADMIN_USER_QUERY_MAX = 320;
 
+/**
+ * admin_list_teachers() → array of this, oldest grant first (20261018150000_admin_teachers.sql). Teachers are granted
+ * and revoked with grant_teacher_role (grantTeacherResultSchema in teacher/contract.ts), separate from staff roles.
+ */
+export const adminTeacherSchema = z.object({
+  user_id: z.string().uuid(),
+  email: z.string().nullable(),
+  display_name: z.string().nullable(),
+  /** The admin who granted teacher status; null when it was granted by SQL. */
+  granted_by: z.string().uuid().nullable(),
+  granted_by_email: z.string().nullable(),
+  granted_at: z.string(),
+  /** Classes the teacher runs that are not archived (they stay when teacher status is revoked). */
+  active_classes: z.number().int().nonnegative(),
+});
+export type AdminTeacher = z.infer<typeof adminTeacherSchema>;
+
 /** admin_grant_role(p_user_id, p_role: StaffRole | null) → this (role null = revoked). */
 export const adminGrantRoleResultSchema = z.object({
   user_id: z.string().uuid(),
