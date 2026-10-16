@@ -2,10 +2,10 @@ import { z } from 'zod';
 import { findRoleplayScenario } from '@linguo/shared';
 import type { RoleplaySession } from './session';
 
-// An unfinished session is kept in localStorage, per user, so closing the tab or reloading does not lose the
-// conversation. It expires ROLEPLAY_TTL_MS after the last saved message, and it is removed when the learner finishes
-// or leaves the session, signs out or deletes the account (account/service.ts wipes both prefixes below). Nothing
-// here is sent anywhere.
+// The last session is kept in localStorage, per user, so closing the tab or reloading does not lose the
+// conversation (a finished one too, until its recap is done). It expires ROLEPLAY_TTL_MS after the last saved
+// message, and it is removed when the learner leaves the session or the recap is done, signs out or deletes the
+// account (account/service.ts wipes both prefixes below). Nothing here is sent anywhere.
 
 export const KEY_PREFIX = 'linguo:roleplay:v2:';
 /** v1 lived in sessionStorage (this tab only) with the bare session as the value; read once, then moved to v2. */
@@ -56,14 +56,9 @@ function read(get: () => string | null): string | null {
 }
 
 /**
- * Stores only confirmed messages: an in-flight or failed turn is not part of the saved conversation. A finished
- * session has nothing left to resume, so saving one clears the key instead.
+ * Stores only confirmed messages: an in-flight or failed turn is not part of the saved conversation.
  */
 export function saveSession(userId: string, session: RoleplaySession, now: number = Date.now()): void {
-  if (session.finished) {
-    clearSession(userId);
-    return;
-  }
   try {
     const messages = session.messages.filter((m) => m.status === 'ok');
     localStorage.setItem(keyOf(userId), JSON.stringify({ savedAt: now, session: { ...session, messages } }));
@@ -94,7 +89,7 @@ function readSaved(userId: string, now: number): unknown {
 }
 
 /**
- * The saved session when it is valid, unfinished, not expired and still fits the current path's language (else null;
+ * The saved session when it is valid, not expired and still fits the current path's language (else null;
  * an unusable entry is cleared).
  */
 export function loadSession(userId: string, language: string, now: number = Date.now()): RoleplaySession | null {
@@ -106,7 +101,6 @@ export function loadSession(userId: string, language: string, now: number = Date
     if (
       !parsed.success ||
       !session ||
-      session.finished ||
       now - parsed.data.savedAt > ROLEPLAY_TTL_MS ||
       session.language !== language ||
       !findRoleplayScenario(session.language, session.scenarioKey)
