@@ -1,0 +1,408 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u1-kake-tsutsu-ippou
+order_index: 4
+level: n2
+title:
+  vi: Dở dang, đang dần, ngày càng - ～かけ, ～つつある, ～一方だ
+objectives:
+  - vi: Dùng V-ます(bỏ ます)+かけ để nói việc đang làm dở (食べかけのパン, 言いかけてやめた).
+  - vi: Dùng ～つつある để nói một thay đổi đang dần tiến triển, và chỉ dùng với động từ thay đổi.
+  - vi: Dùng V-る+一方だ để nói xu hướng một chiều không dừng, thường là chiều xấu.
+estimated_minutes: 22
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-u1-tsurete-totomoni]
+items:
+  - item: ja:item:n2-u1-gram-kake
+  - item: ja:item:n2-u1-gram-tsutsuaru
+  - item: ja:item:n2-u1-gram-ippouda
+  - item: ja:item:n2-u1-genshou
+  - item: ja:item:n2-u1-kaifuku
+  - item: ja:item:n2-u1-akka
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "cuốn sách đang đọc dở", hiểu được câu tin tức "kinh tế đang dần hồi phục" và than được "vật giá cứ tăng mãi".
+  - type: explain
+    text:
+      vi: 'かけ - gốc ます + かけ: 食べ(ます) → 食べかけ, 読み(ます) → 読みかけ. Trước danh từ thêm の - 食べかけのパン (bánh mì ăn dở). Dạng động từ かける: 言いかける (định nói), 言いかけてやめた (định nói rồi thôi).'
+  - type: explain
+    text:
+      vi: 'つつある - gốc ます + つつある: 回復しつつある, 減りつつある, 変わりつつある. Một thay đổi đang diễn ra và chưa xong. Giọng văn viết, tin tức, báo cáo.'
+  - type: explain
+    text:
+      vi: '一方だ - thể từ điển + 一方だ: 増える一方だ, 悪化する一方だ, 上がる一方だ. Thay đổi chỉ theo một chiều và không có dấu hiệu dừng, người nói thường lo lắng hoặc than phiền.'
+  - type: deep_explain
+    text:
+      vi: 'つつある và 一方だ đều nói về thay đổi đang diễn ra, nhưng つつある trung tính và hay dùng cho chiều tốt lẫn xấu (景気は回復しつつある), còn 一方だ nhấn "cứ thế mãi" và hầu như dùng cho chiều xấu. Cả hai chỉ đi với động từ chỉ thay đổi - không nói 本を読みつつある hay 本を読む一方だ. Lưu ý: với động từ tức thời như 死ぬ, 消える, かける nghĩa là "suýt, sắp" - 死にかけた (suýt chết).'
+  - type: example
+    target: 机の上に読みかけの本が置いてある。
+    target_lang: ja
+    translation:
+      vi: Trên bàn có cuốn sách đang đọc dở.
+  - type: example
+    target: 彼は何か言いかけて、やめた。
+    target_lang: ja
+    translation:
+      vi: Anh ấy định nói gì đó rồi thôi.
+  - type: example
+    target: 景気は少しずつ回復しつつある。
+    target_lang: ja
+    translation:
+      vi: Kinh tế đang dần dần hồi phục.
+  - type: example
+    target: この村の人口は減少しつつある。
+    target_lang: ja
+    translation:
+      vi: Dân số ngôi làng này đang dần giảm.
+  - type: example
+    target: 駅前の渋滞は悪化する一方だ。
+    target_lang: ja
+    translation:
+      vi: Tình trạng kẹt xe trước ga ngày càng tệ.
+  - type: common_mistake
+    wrong: 物価は上がっている一方だ。
+    right: 物価は上がる一方だ。
+    target_lang: ja
+    note:
+      vi: 一方だ luôn gắn vào thể từ điển. Tiếng Việt "đang tăng mãi" dễ khiến người học thêm ている.
+  - type: common_mistake
+    wrong: 今、晩ご飯を食べつつある。
+    right: 今、晩ご飯を食べている。
+    target_lang: ja
+    note:
+      vi: つつある chỉ dùng cho quá trình thay đổi (増える, 回復する). Hành động thường ngày đang làm dùng ～ている.
+  - type: common_mistake
+    wrong: 飲みかけコーヒーを捨てないで。
+    right: 飲みかけのコーヒーを捨てないで。
+    target_lang: ja
+    note:
+      vi: かけ đứng trước danh từ cần の.
+  - type: summary
+    points:
+      - vi: V-ます(bỏ ます) + かけ(の N) - làm dở; V-かける - định làm, suýt.
+      - vi: V-ます(bỏ ます) + つつある - đang dần thay đổi (văn viết, trung tính).
+      - vi: V-る + 一方だ - ngày càng..., cứ thế mãi (thường chiều xấu).
+      - vi: つつある và 一方だ chỉ đi với động từ thay đổi.
+      - vi: 減少 - giảm; 回復 - hồi phục; 悪化 - xấu đi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u1-kake-mcq-yomikake
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-gram-kake
+    prompt:
+      stem: '"Cuốn sách đang đọc dở" là gì?'
+      stem_lang: vi
+      options:
+        - { id: n5p, text: 読みかけの本, lang: ja }
+        - { id: a2s, text: 読むかけの本, lang: ja }
+        - { id: z7k, text: 読みかけ本, lang: ja }
+        - { id: u4e, text: 読んだかけの本, lang: ja }
+    answer:
+      correct_option_id: n5p
+    explanation:
+      vi: かけ gắn vào gốc ます (読み) và cần の trước danh từ - 読みかけの本.
+    display_answer: 読みかけの本
+
+  - key: ja:exercise:n2-u1-kake-listen-keiki
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u1-gram-tsutsuaru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 景気は少しずつ回復しつつある。
+      options:
+        - { id: k3m, text: Kinh tế đang dần dần hồi phục., lang: vi }
+        - { id: f8w, text: Kinh tế đã hồi phục hoàn toàn., lang: vi }
+        - { id: p6c, text: Kinh tế ngày càng xấu đi., lang: vi }
+        - { id: d1y, text: Kinh tế sắp bắt đầu suy thoái., lang: vi }
+    answer:
+      correct_option_id: k3m
+    explanation:
+      vi: 回復しつつある - đang dần hồi phục, quá trình chưa xong (không phải "đã hồi phục hoàn toàn"). 少しずつ - từng chút một.
+    display_answer: Kinh tế đang dần dần hồi phục.
+
+  - key: ja:exercise:n2-u1-kake-fill-ippou
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-ippouda
+    prompt:
+      template: "最近、物価は{{b1}}一方だ。(上がる)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Dạo này vật giá cứ tăng mãi."
+        - "Gợi ý: 一方だ gắn vào thể từ điển."
+    answer:
+      blanks:
+        b1: [上がる, あがる]
+    known_wrong:
+      - answer: 上がっている
+        feedback_vi: 一方だ không đi với ている - 上がる一方だ.
+        error_tag: ippou_form
+      - answer: 上がった
+        feedback_vi: 一方だ không đi với thể た - 上がる一方だ.
+        error_tag: ippou_form
+    explanation:
+      vi: 上がる一方だ - cứ tăng mãi, không có dấu hiệu dừng. Câu có giọng than phiền.
+    display_answer: 最近、物価は上がる一方だ。
+
+  - key: ja:exercise:n2-u1-kake-wb-genshou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-genshou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Dân số ngôi làng này đang dần giảm.\""
+      tokens:
+        - { id: g3, text: 減少しつつある }
+        - { id: g1, text: この村の }
+        - { id: g4, text: 減少するつつある }
+        - { id: g2, text: 人口は }
+    answer:
+      orders:
+        - [g1, g2, g3]
+    explanation:
+      vi: つつある gắn vào gốc ます - 減少し(ます) → 減少しつつある. 減少するつつある sai dạng.
+    display_answer: この村の人口は減少しつつある。
+
+  - key: ja:exercise:n2-u1-kake-mcq-akka
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-akka
+    prompt:
+      stem: 「祖母の病気が悪化した。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r4j, text: Bệnh của bà trở nặng hơn., lang: vi }
+        - { id: s9d, text: Bệnh của bà đã khỏi., lang: vi }
+        - { id: e2q, text: Bà bị bệnh đột ngột., lang: vi }
+        - { id: l6b, text: Bệnh của bà đang dần hồi phục., lang: vi }
+    answer:
+      correct_option_id: r4j
+    explanation:
+      vi: 悪化する - trở nên xấu đi, nặng hơn. Ngược nghĩa là 回復する (hồi phục).
+    display_answer: Bệnh của bà trở nặng hơn.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u1-kake-fill-kaifuku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-kaifuku
+    prompt:
+      template: "父の体調は少しずつ{{b1}}つつある。(回復する)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [回復し, かいふくし]
+    known_wrong:
+      - answer: 回復する
+        feedback_vi: つつある gắn vào gốc ます - 回復しつつある.
+        error_tag: tsutsu_form
+      - answer: 回復して
+        feedback_vi: つつある không đi với thể て - 回復しつつある.
+        error_tag: tsutsu_form
+    explanation:
+      vi: 回復します → 回復し + つつある - đang dần hồi phục.
+    display_answer: 父の体調は少しずつ回復しつつある。
+
+  - key: ja:exercise:n2-u1-kake-translate-iikake
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-kake
+    prompt:
+      source_text: Anh ấy định nói gì đó rồi thôi. (dùng かけ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は何か言いかけて、やめた。
+        - 彼は何か言いかけて、やめました。
+        - 彼は何か言いかけたが、やめた。
+        - 彼は何か言いかけたが、やめました。
+        - 彼は何か言いかけたけど、やめた。
+        - 彼は何かを言いかけて、やめた。
+        - 彼は何かを言いかけて、やめました。
+        - 彼は何か言いかけて、黙った。
+        - 彼は何か言いかけて、黙ってしまった。
+        - 彼は何か言いかけてやめてしまった。
+        - 彼は何か言いかけて、口を閉じた。
+        - かれはなにかいいかけて、やめた。
+        - かれはなにかいいかけて、やめました。
+    known_wrong:
+      - answer: 彼は何か言うかけて、やめた。
+        feedback_vi: かける gắn vào gốc ます - 言いかけて.
+        error_tag: kake_form
+      - answer: 彼は何か言って、やめた。
+        feedback_vi: 言って là đã nói ra; "định nói rồi thôi" cần 言いかけて.
+        error_tag: kake_meaning
+    explanation:
+      vi: 言いかける - bắt đầu nói / định nói; ～てやめた - rồi thôi. 黙る (im lặng) cũng diễn đạt được ý "thôi không nói".
+    display_answer: 彼は何か言いかけて、やめた。
+
+  - key: ja:exercise:n2-u1-kake-translate-juutai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-ippouda
+    prompt:
+      source_text: Tình trạng kẹt xe trước ga ngày càng tệ. (dùng 一方だ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 駅前の渋滞は悪化する一方だ。
+        - 駅前の渋滞は悪化する一方です。
+        - 駅前の渋滞はひどくなる一方だ。
+        - 駅前の渋滞はひどくなる一方です。
+        - 駅前の渋滞は悪くなる一方だ。
+        - 駅前の渋滞は悪くなる一方です。
+        - 駅前の渋滞が悪化する一方だ。
+        - 駅前の渋滞が悪化する一方です。
+        - 駅前の渋滞がひどくなる一方だ。
+        - 駅前の渋滞がひどくなる一方です。
+        - 駅前の交通渋滞は悪化する一方だ。
+        - 駅前の交通渋滞は悪化する一方です。
+        - 駅前の交通渋滞はひどくなる一方だ。
+        - 駅の前の渋滞は悪化する一方だ。
+        - 駅の前の渋滞はひどくなる一方だ。
+        - えきまえのじゅうたいはあっかするいっぽうだ。
+    known_wrong:
+      - answer: 駅前の渋滞は悪化している一方だ。
+        feedback_vi: 一方だ gắn vào thể từ điển - 悪化する一方だ.
+        error_tag: ippou_form
+      - answer: 駅前の渋滞は回復する一方だ。
+        feedback_vi: 回復 là hồi phục; "tệ đi" là 悪化する / ひどくなる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 渋滞 - kẹt xe; 悪化する / ひどくなる + 一方だ - ngày càng tệ, không dừng.
+    display_answer: 駅前の渋滞は悪化する一方だ。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u1-kake-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-tsutsuaru
+    prompt:
+      stem: Câu nào dùng ～つつある tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: c5t, text: 日本に住む外国人の数は増えつつある。, lang: ja }
+        - { id: h7v, text: 弟は今、部屋でゲームをしつつある。, lang: ja }
+        - { id: y2n, text: 私は毎朝コーヒーを飲みつつある。, lang: ja }
+        - { id: m9f, text: 人口が減るつつある。, lang: ja }
+    answer:
+      correct_option_id: c5t
+    explanation:
+      vi: 増える là động từ thay đổi, số người nước ngoài đang dần tăng. Chơi game, uống cà phê là hành động bình thường - dùng ている; 減るつつある sai dạng (phải là 減りつつある).
+    display_answer: 日本に住む外国人の数は増えつつある。
+
+  - key: ja:exercise:n2-u1-kake-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u1-gram-kake
+    prompt:
+      source_text: 飲みかけのコーヒーを捨てないでください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin đừng đổ cốc cà phê đang uống dở.
+        - Xin đừng đổ cà phê đang uống dở.
+        - Đừng đổ cốc cà phê đang uống dở.
+        - Đừng đổ cà phê đang uống dở.
+        - Xin đừng vứt cốc cà phê đang uống dở.
+        - Xin đừng vứt cà phê đang uống dở.
+        - Đừng vứt cốc cà phê đang uống dở.
+        - Đừng vứt cà phê đang uống dở.
+        - Xin đừng đổ cốc cà phê uống dở.
+        - Đừng đổ cà phê uống dở.
+        - Đừng vứt cà phê uống dở.
+        - Đừng đổ đi cốc cà phê đang uống dở nhé.
+        - Làm ơn đừng đổ cốc cà phê đang uống dở.
+        - Xin đừng bỏ cốc cà phê đang uống dở.
+        - Xin đừng đổ cốc cà phê tôi đang uống dở.
+        - Đừng đổ cốc cà phê tôi đang uống dở.
+        - Đừng vứt ly cà phê đang uống dở.
+        - Xin đừng đổ ly cà phê đang uống dở.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin đừng uống cốc cà phê này.
+        feedback_vi: 捨てる là vứt, đổ bỏ - không phải uống. 飲みかけ chỉ "đang uống dở".
+        error_tag: vocab_meaning
+      - answer: Xin đừng đổ cốc cà phê chưa uống.
+        feedback_vi: 飲みかけ là đã uống một phần, còn dở - không phải "chưa uống".
+        error_tag: kake_meaning
+    explanation:
+      vi: 飲みかけのコーヒー - cà phê đang uống dở; 捨てないでください - xin đừng vứt / đổ đi.
+    display_answer: Xin đừng đổ cốc cà phê đang uống dở.
+
+  - key: ja:exercise:n2-u1-kake-mcq-ippou
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-ippouda
+    prompt:
+      stem: 'Bạn than với đồng nghiệp: "Việc thì cứ tăng mãi, mệt quá." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: w3a, text: 仕事は増える一方で、疲れたよ。, lang: ja }
+        - { id: b8e, text: 仕事は増えかけで、疲れたよ。, lang: ja }
+        - { id: i1g, text: 仕事は増えた一方で、疲れたよ。, lang: ja }
+        - { id: t6r, text: 仕事は増え次第で、疲れたよ。, lang: ja }
+    answer:
+      correct_option_id: w3a
+    explanation:
+      vi: 増える一方で - cứ tăng mãi (dạng nối của 一方だ), có giọng than phiền. 増えかけ là "tăng dở", 増えた一方 sai dạng, 増え次第 là "ngay khi tăng".
+    display_answer: 仕事は増える一方で、疲れたよ。
+
+  - key: ja:exercise:n2-u1-kake-fill-mix
+    type: fill_blank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-tsutsuaru
+    prompt:
+      template: "この町の人口は減り{{b1}}。一方で、高齢者の数は増える{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [つつある]
+        b2: [一方だ, いっぽうだ, 一方です, いっぽうです]
+    known_wrong:
+      - answer: かけだ
+        feedback_vi: かけ là "dở dang", không dùng cho dân số đang thay đổi. Sau gốc ます 減り dùng つつある.
+        error_tag: kake_tsutsu
+      - answer: 次第だ
+        feedback_vi: 次第 là "ngay khi... sẽ", không nói thay đổi đang diễn ra.
+        error_tag: shidai_meaning
+    explanation:
+      vi: 減り (gốc ます) + つつある - đang dần giảm; 増える (thể từ điển) + 一方だ - cứ tăng mãi. Dạng của động từ đứng trước cho biết mẫu nào phù hợp.
+    display_answer: この町の人口は減りつつある。一方で、高齢者の数は増える一方だ。

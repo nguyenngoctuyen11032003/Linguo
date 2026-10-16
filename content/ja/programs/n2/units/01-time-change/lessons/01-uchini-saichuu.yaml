@@ -1,0 +1,401 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u1-uchini-saichuu
+order_index: 1
+level: n2
+title:
+  vi: Nhân lúc còn..., đang giữa chừng... - ～うちに và ～最中に
+objectives:
+  - vi: Dùng ～うちに để nói "nhân lúc còn..." và V-ないうちに để nói "trước khi... xảy ra".
+  - vi: Dùng V-ているうちに để kể một thay đổi xảy ra lúc nào không hay.
+  - vi: Dùng ～最中に cho sự việc bất ngờ xen vào đúng lúc đang làm dở, và tránh lỗi gắn 最中 vào thể từ điển.
+estimated_minutes: 20
+skills: [grammar, speaking]
+prerequisites: []
+items:
+  - item: ja:item:n2-u1-gram-uchini
+  - item: ja:item:n2-u1-gram-saichuuni
+  - item: ja:item:n2-u1-teiden
+  - item: ja:item:n2-u1-sameru
+  - item: ja:item:n2-u1-muchuu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "ăn đi kẻo nguội", "về thôi trước khi trời mưa", "đang họp thì mất điện" một cách tự nhiên như người Nhật.
+  - type: explain
+    text:
+      vi: 'うちに nghĩa 1 - "nhân lúc còn...": tình trạng hiện tại sẽ mất đi, nên làm ngay. Gắn vào tính từ, danh từ + の, V-ている: 熱いうちに, 元気なうちに, 学生のうちに, 日本にいるうちに.'
+  - type: explain
+    text:
+      vi: 'V-ないうちに - "trước khi... xảy ra": 雨が降らないうちに (trước khi mưa), 暗くならないうちに (trước khi trời tối). Câu không mang nghĩa phủ định. Nghĩa 2 - V-ているうちに + thay đổi: "đang... thì... lúc nào không hay": 話しているうちに眠くなった.'
+  - type: explain
+    text:
+      vi: '最中に - "đúng lúc đang giữa chừng... thì...": N の最中に hoặc V-ている最中に. Vế sau thường là chuyện bất ngờ cắt ngang: 電話が鳴った, 停電した, 雨が降り出した.'
+  - type: deep_explain
+    text:
+      vi: うちに nói một khoảng có thể kéo dài và hàm ý "kẻo lỡ"; 最中 chỉ khoảnh khắc bận rộn nhất của một việc cụ thể. Vì vậy 学生のうちに (khi còn là sinh viên) tự nhiên, còn 学生の最中に thì sai. Ngược lại, khi kể "đang ăn thì có khách", 食事の最中に nghe sống động hơn 食事のうちに (câu này sai).
+  - type: example
+    target: 熱いうちに、どうぞ召し上がってください。
+    target_lang: ja
+    translation:
+      vi: Mời anh dùng khi còn nóng.
+    note:
+      vi: 召し上がる là tôn kính ngữ của 食べる.
+  - type: example
+    target: 雨が降らないうちに、帰りましょう。
+    target_lang: ja
+    translation:
+      vi: Về thôi trước khi trời mưa.
+    note:
+      vi: V-ないうちに - trước khi điều đó xảy ra.
+  - type: example
+    target: 友達と話しているうちに、外が暗くなっていた。
+    target_lang: ja
+    translation:
+      vi: Đang nói chuyện với bạn thì bên ngoài đã tối lúc nào không hay.
+  - type: example
+    target: 会議の最中に、停電した。
+    target_lang: ja
+    translation:
+      vi: Đang họp giữa chừng thì mất điện.
+  - type: example
+    target: 料理をしている最中に、電話が鳴った。
+    target_lang: ja
+    translation:
+      vi: Đang nấu ăn dở thì điện thoại reo.
+  - type: common_mistake
+    wrong: 雨が降るうちに、帰りましょう。
+    right: 雨が降らないうちに、帰りましょう。
+    target_lang: ja
+    note:
+      vi: '"Trước khi mưa" dùng V-ないうちに (hoặc 降る前に). 降るうちに không có nghĩa. Người Việt nghĩ "trước khi" không có chữ "không" nên hay bỏ ない.'
+  - type: common_mistake
+    wrong: 食事する最中に、お客さんが来た。
+    right: 食事の最中に、お客さんが来た。
+    target_lang: ja
+    note:
+      vi: 最中 không gắn vào thể từ điển. Dùng N の最中に (食事の最中に) hoặc V-ている最中に (食事をしている最中に).
+  - type: summary
+    points:
+      - vi: うちに - nhân lúc còn... (熱いうちに, 学生のうちに, 日本にいるうちに).
+      - vi: V-ないうちに - trước khi... xảy ra; V-ているうちに - đang... thì... lúc nào không hay.
+      - vi: N の / V-ている + 最中に - đúng lúc đang giữa chừng thì có chuyện xen vào.
+      - vi: 停電 - mất điện; 冷める - nguội; ～に夢中になる - mải mê.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u1-uchini-mcq-atsui
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-gram-uchini
+    prompt:
+      stem: '"Mời anh dùng khi còn nóng." Chọn dạng đúng điền vào: ＿＿、どうぞ召し上がってください。'
+      stem_lang: vi
+      options:
+        - { id: h3k, text: 熱いうちに, lang: ja }
+        - { id: p8w, text: 熱い最中に, lang: ja }
+        - { id: d5r, text: 熱いのうちに, lang: ja }
+        - { id: z2m, text: 熱くなるうちに, lang: ja }
+    answer:
+      correct_option_id: h3k
+    explanation:
+      vi: Tính từ い gắn thẳng vào うちに - 熱いうちに. Không thêm の sau tính từ い; 最中 không dùng với tính từ.
+    display_answer: 熱いうちに
+
+  - key: ja:exercise:n2-u1-uchini-listen-teiden
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-gram-saichuuni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 会議の最中に、停電した。
+      options:
+        - { id: a7c, text: Đang họp giữa chừng thì mất điện., lang: vi }
+        - { id: m4t, text: Họp xong thì mất điện., lang: vi }
+        - { id: e9s, text: Vì mất điện nên cuộc họp bị huỷ., lang: vi }
+        - { id: k1v, text: Trước khi họp thì đã mất điện., lang: vi }
+    answer:
+      correct_option_id: a7c
+    explanation:
+      vi: 会議の最中に - đúng lúc cuộc họp đang diễn ra; 停電した - mất điện. Câu không có ý "sau khi" hay "vì nên".
+    display_answer: Đang họp giữa chừng thì mất điện.
+
+  - key: ja:exercise:n2-u1-uchini-fill-samenai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-sameru
+    prompt:
+      template: "スープが{{b1}}うちに、飲んでください。(冷める)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Hãy uống canh trước khi nó nguội."
+        - "Gợi ý: \"trước khi... xảy ra\" dùng thể ない + うちに."
+    answer:
+      blanks:
+        b1: [冷めない, さめない]
+    known_wrong:
+      - answer: 冷める
+        feedback_vi: '"Trước khi nguội" phải dùng thể ない - 冷めないうちに. 冷めるうちに không có nghĩa.'
+        error_tag: naiuchini
+      - answer: 冷めた
+        feedback_vi: うちに không đi với thể た. Dùng 冷めないうちに (trước khi nguội).
+        error_tag: uchini_form
+    explanation:
+      vi: 冷めないうちに - nhân lúc chưa nguội, tức "trước khi nguội". Ý câu là uống ngay kẻo mất cơ hội uống nóng.
+    display_answer: スープが冷めないうちに、飲んでください。
+
+  - key: ja:exercise:n2-u1-uchini-wb-ryouri
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-gram-saichuuni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đang nấu ăn dở thì điện thoại reo.\""
+      tokens:
+        - { id: r3, text: 電話が鳴った }
+        - { id: r4, text: 料理をする }
+        - { id: r2, text: 最中に }
+        - { id: r1, text: 料理をしている }
+    answer:
+      orders:
+        - [r1, r2, r3]
+    explanation:
+      vi: Động từ trước 最中に phải ở dạng ている - 料理をしている最中に. 料理をする最中に là lỗi hay gặp.
+    display_answer: 料理をしている最中に、電話が鳴った。
+
+  - key: ja:exercise:n2-u1-uchini-mcq-muchuu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-muchuu
+    prompt:
+      stem: 「弟はゲームに夢中になっている。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: g6n, text: Em trai đang mải mê chơi game., lang: vi }
+        - { id: b2x, text: Em trai đã chán chơi game., lang: vi }
+        - { id: u5j, text: Em trai bị cấm chơi game., lang: vi }
+        - { id: o8q, text: Em trai đang mơ thấy game., lang: vi }
+    answer:
+      correct_option_id: g6n
+    explanation:
+      vi: ～に夢中になる - mải mê, say mê với ... Chữ 夢 (mơ) dễ khiến người học nghĩ đến "giấc mơ", nhưng 夢中 là say mê.
+    display_answer: Em trai đang mải mê chơi game.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u1-uchini-fill-jugyou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-saichuuni
+    prompt:
+      template: "授業の{{b1}}に、携帯電話が鳴ってしまった。(đúng lúc đang giữa chừng)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [最中, さいちゅう]
+    known_wrong:
+      - answer: うち
+        feedback_vi: うちに mang ý "nhân lúc còn..."; chuyện xen vào cắt ngang đúng lúc đang học dùng 最中に.
+        error_tag: uchini_saichuu
+      - answer: 間
+        feedback_vi: 授業の間に là "trong khoảng giờ học", không nhấn "đúng lúc đang giữa chừng". Gợi ý trong ngoặc cần 最中.
+        error_tag: aida_saichuu
+    explanation:
+      vi: 授業の最中に - đúng lúc đang học thì điện thoại reo (chuyện ngoài ý muốn, nên có てしまった).
+    display_answer: 授業の最中に、携帯電話が鳴ってしまった。
+
+  - key: ja:exercise:n2-u1-uchini-translate-wakai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-uchini
+    prompt:
+      source_text: Tôi muốn đi nhiều nước khi còn trẻ. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 若いうちに、いろいろな国へ行きたいです。
+        - 若いうちに、いろいろな国に行きたいです。
+        - 若いうちに、色々な国へ行きたいです。
+        - 若いうちに、色々な国に行きたいです。
+        - 若いうちに、たくさんの国へ行きたいです。
+        - 若いうちに、たくさんの国に行きたいです。
+        - 若いうちに、いろいろな国へ行ってみたいです。
+        - 若いうちに、いろいろな国に行ってみたいです。
+        - 若いうちに、いろいろな国を旅行したいです。
+        - 若いうちに、たくさんの国を旅行したいです。
+        - 若いうちに、いろいろな国へ行っておきたいです。
+        - 若いうちに、いろいろな国に行っておきたいです。
+        - 私は若いうちに、いろいろな国へ行きたいです。
+        - 私は若いうちに、いろいろな国に行きたいです。
+        - わかいうちに、いろいろなくにへいきたいです。
+        - わかいうちに、いろいろなくににいきたいです。
+        - 若いうちにいろんな国へ行きたいです。
+        - 若いうちにいろんな国に行きたいです。
+    known_wrong:
+      - answer: 若い最中に、いろいろな国へ行きたいです。
+        feedback_vi: 最中 không dùng với tính từ hay cả một giai đoạn dài. "Khi còn trẻ" là 若いうちに.
+        error_tag: uchini_saichuu
+      - answer: 若いのうちに、いろいろな国へ行きたいです。
+        feedback_vi: Tính từ い gắn thẳng vào うちに, không thêm の - 若いうちに.
+        error_tag: uchini_form
+    explanation:
+      vi: 若いうちに - nhân lúc còn trẻ (sau này sẽ khó hơn). ～へ/に行きたいです - muốn đi đến ...
+    display_answer: 若いうちに、いろいろな国へ行きたいです。
+
+  - key: ja:exercise:n2-u1-uchini-translate-teiden
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-teiden
+    prompt:
+      source_text: Đang họp giữa chừng thì mất điện. (dùng 最中)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会議の最中に、停電した。
+        - 会議の最中に、停電しました。
+        - 会議の最中に、停電になった。
+        - 会議の最中に、停電になりました。
+        - 会議をしている最中に、停電した。
+        - 会議をしている最中に、停電しました。
+        - 会議をしている最中に、停電になった。
+        - 会議をしている最中に、停電になりました。
+        - ミーティングの最中に、停電した。
+        - ミーティングの最中に、停電しました。
+        - 会議の最中、停電した。
+        - 会議の最中、停電しました。
+        - かいぎのさいちゅうに、ていでんした。
+        - かいぎのさいちゅうに、ていでんしました。
+    known_wrong:
+      - answer: 会議する最中に、停電した。
+        feedback_vi: 最中 không gắn vào thể từ điển. Dùng 会議の最中に hoặc 会議をしている最中に.
+        error_tag: saichuu_form
+      - answer: 会議のうちに、停電した。
+        feedback_vi: 会議のうちに không tự nhiên; chuyện bất ngờ xen vào đúng lúc đang họp dùng 最中に.
+        error_tag: uchini_saichuu
+    explanation:
+      vi: 会議の最中に (N + の + 最中に) hoặc 会議をしている最中に; 停電する / 停電になる - mất điện.
+    display_answer: 会議の最中に、停電した。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u1-uchini-mcq-ame
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-uchini
+    prompt:
+      stem: 'Trời đầy mây đen. Bạn rủ bạn thân: "Về thôi trước khi trời mưa." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: f4b, text: 雨が降らないうちに、帰ろう。, lang: ja }
+        - { id: w7e, text: 雨が降るうちに、帰ろう。, lang: ja }
+        - { id: n1h, text: 雨が降っている最中に、帰ろう。, lang: ja }
+        - { id: c9y, text: 雨が降らない最中に、帰ろう。, lang: ja }
+    answer:
+      correct_option_id: f4b
+    explanation:
+      vi: '"Trước khi mưa" - 降らないうちに. 降るうちに sai dạng; 降っている最中に là "đúng lúc đang mưa", ngược ý; 最中 không đi với thể ない.'
+    display_answer: 雨が降らないうちに、帰ろう。
+
+  - key: ja:exercise:n2-u1-uchini-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u1-gram-uchini
+    prompt:
+      source_text: 友達と話しているうちに、外が暗くなっていた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đang nói chuyện với bạn thì bên ngoài đã tối lúc nào không hay.
+        - Đang nói chuyện với bạn thì bên ngoài đã tối.
+        - Đang nói chuyện với bạn thì ngoài trời đã tối lúc nào không hay.
+        - Đang nói chuyện với bạn thì ngoài trời đã tối.
+        - Đang nói chuyện với bạn thì trời đã tối lúc nào không hay.
+        - Đang nói chuyện với bạn thì trời đã tối.
+        - Trong lúc nói chuyện với bạn thì bên ngoài đã tối.
+        - Trong lúc nói chuyện với bạn thì trời đã tối lúc nào không hay.
+        - Trong lúc nói chuyện với bạn, bên ngoài đã tối lúc nào không hay.
+        - Trong lúc nói chuyện với bạn, trời đã tối.
+        - Mải nói chuyện với bạn, trời tối lúc nào không hay.
+        - Mải nói chuyện với bạn mà trời đã tối lúc nào không hay.
+        - Mải nói chuyện với bạn nên trời tối lúc nào không biết.
+        - Nói chuyện với bạn một hồi thì bên ngoài đã tối.
+        - Đang nói chuyện với bạn bè thì bên ngoài đã tối.
+        - Đang trò chuyện với bạn thì bên ngoài đã tối.
+        - Đang trò chuyện với bạn thì trời đã tối lúc nào không hay.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nói chuyện với bạn xong thì trời tối.
+        feedback_vi: ているうちに là "trong lúc đang nói chuyện", không phải "nói xong rồi".
+        error_tag: uchini_meaning
+      - answer: Đang nói chuyện với bạn thì bên ngoài sáng lên.
+        feedback_vi: 暗くなる là tối đi; sáng lên là 明るくなる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: V-ているうちに + 変化 - đang làm gì đó thì một thay đổi xảy ra lúc nào không hay. 暗くなっていた - đã tối (người nói nhận ra sau).
+    display_answer: Đang nói chuyện với bạn thì bên ngoài đã tối lúc nào không hay.
+
+  - key: ja:exercise:n2-u1-uchini-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-saichuuni
+    prompt:
+      stem: Câu nào dùng ～最中に tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: s5d, text: 試験の最中に、地震が起きた。, lang: ja }
+        - { id: l3g, text: 学生の最中に、日本語を勉強したい。, lang: ja }
+        - { id: y8p, text: 若い最中に、旅行しよう。, lang: ja }
+        - { id: i6f, text: 食べる最中に、話さないでください。, lang: ja }
+    answer:
+      correct_option_id: s5d
+    explanation:
+      vi: 試験の最中に - đúng lúc đang thi thì động đất (chuyện bất ngờ xen vào). 学生, 若い là cả một giai đoạn - dùng うちに; 食べる最中 sai dạng (phải là 食べている最中).
+    display_answer: 試験の最中に、地震が起きた。
+
+  - key: ja:exercise:n2-u1-uchini-wb-muchuu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-muchuu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Mải mê chơi game, sáng lúc nào không hay.\""
+      tokens:
+        - { id: m4, text: 朝になっていた }
+        - { id: m2, text: 夢中になっている }
+        - { id: m5, text: ゲームを }
+        - { id: m3, text: うちに }
+        - { id: m1, text: ゲームに }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: 夢中 đi với に - ゲームに夢中になる. V-ているうちに + 朝になっていた - đang mải mê thì trời sáng lúc nào không hay.
+    display_answer: ゲームに夢中になっているうちに、朝になっていた。
