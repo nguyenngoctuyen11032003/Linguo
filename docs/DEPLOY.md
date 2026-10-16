@@ -135,6 +135,14 @@ Hành vi:
 3. Site: `https://nguyenngoctuyen11032003.github.io/Linguo/`.
    - Sau khi Deploy thành công, workflow **Smoke** tự kiểm tra site và Supabase thật (cũng chạy hằng ngày 02:30 UTC). Cần repository variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` (và tuỳ chọn `VITE_SITE_URL`); thiếu thì bỏ qua kèm cảnh báo. Chi tiết: `docs/RUNBOOK.md` → *Kiểm tra sau deploy (smoke)*.
 
+**Đưa đợt P2 lên production (các bước tay, theo thứ tự):** đợt này gồm migration `20261017000200_content_audio.sql`, `20261017000400_teacher_tools.sql`, `20261017000500_admin_staff.sql`, `20261018090000_db_hardening.sql`, `20261018130000_japanese.sql` (cùng `20261016000700`, `20261016000800` nếu chưa áp; danh sách ở HANDOFF mục 5).
+1. Merge `integrate/p2-batch` vào `main` → Deploy chạy.
+2. **Approve** `production` cho `migrate` (xem SQL trong diff), rồi `functions` và `build`.
+3. `migrate` xanh → ghi các migration vừa áp bằng `node scripts/check-migrations-immutable.mjs --record <file…>` và commit (mục Quy tắc an toàn database).
+4. Actions → **Publish content** → Approve: chương trình ja, kho kiểm tra đầu vào và đề JLPT chỉ nhập được sau khi `20261018130000_japanese.sql` đã áp (mục Xuất bản nội dung).
+5. Tạo audio bài nghe từ máy (`pnpm audio:generate`, cần `GEMINI_API_KEY` + `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`; mục Audio bài nghe), commit YAML và manifest, rồi chạy lại Publish content. Chưa làm thì bài nghe vẫn dùng giọng máy.
+6. Cấp quyền giáo viên đầu tiên: SQL vào `public.teacher_profiles` hoặc RPC `grant_teacher_role(p_user_id, p_grant)` bằng phiên admin (mục Giáo viên).
+
 ## Xuất bản nội dung
 Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nhập nội dung vào database hosted; việc này chạy tay qua workflow riêng.
 

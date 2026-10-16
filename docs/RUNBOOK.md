@@ -180,7 +180,9 @@ Theo PRD §19 (điều kiện tối thiểu), §20.3 (bảo mật) và §22 (đ�
 - [ ] Nhắc học: environment `notify` có `NOTIFY_CRON_SECRET`; Actions → Notify chạy tay trả `HTTP 200`; nếu bật Web Push thì `VITE_VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` đã đặt và một thiết bị thật nhận được thông báo thử.
 - [ ] Quản trị: đã bootstrap admin đầu tiên (DEPLOY.md → Quản trị nội dung) và đăng nhập `/quan-tri` được; tài khoản thường mở `/quan-tri` thấy 404. Nên có ít nhất hai admin (trang Nhân sự), vì admin cuối cùng không bị hạ và không xoá được tài khoản.
 - [ ] Giáo viên (nếu dùng lớp học): đã cấp `teacher_profiles` cho giáo viên đầu tiên (DEPLOY.md → Giáo viên); tài khoản đó thấy "Lớp học (giáo viên)" và tạo được mã mời; học viên vào lớp bằng mã.
+- [ ] Đợt P2 đã lên production theo đúng thứ tự: merge → Approve Deploy (`migrate`, `functions`, `build`) → `--record` các migration vừa áp → Publish content → tạo audio (`pnpm audio:generate`) → cấp giáo viên đầu tiên (DEPLOY.md → Quy trình hằng ngày, *Đưa đợt P2 lên production*).
 - [ ] Nội dung tiếng Nhật đã được Publish content sau khi migration `20261018130000_japanese.sql` được áp (DEPLOY.md → Xuất bản nội dung).
+- [ ] Audio bài nghe: đã chạy `pnpm audio:generate` ít nhất cho một ngôn ngữ và `supabase/content-audio-manifest.json` đã được commit; nếu chưa, chấp nhận giọng máy của trình duyệt cho bài nghe (DEPLOY.md → Audio bài nghe).
 - [ ] Actions → Maintenance chạy tay (Approve `production`) trả `HTTP 200` cho cả `purge_expired_data` lẫn `purge_analytics`, xem DEPLOY.md → Bảo trì dữ liệu.
 - [ ] Mọi migration đã deploy đều có trong `supabase/migrations-applied.json` (`node scripts/check-migrations-immutable.mjs` xanh).
 

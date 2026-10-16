@@ -163,7 +163,7 @@ questions:
 
 ## Tiếng Nhật (ja)
 
-`LANGUAGES.ja.available` là `true` (`packages/shared/src/constants.ts`): đã có chương trình Kana → N5 (`kana-basics`), N4, N3, kho kiểm tra đầu vào và đề JLPT N5/N4/N3. Nội dung vẫn là bản DEMO chưa kiểm duyệt như en/ko.
+`LANGUAGES.ja.available` là `true` (`packages/shared/src/constants.ts`): đã có chương trình Kana → N5 (`kana-basics`), N4, N3, kho kiểm tra đầu vào và đề JLPT N5/N4/N3. Các file ja ghi `demo: false`, `status: published` với người duyệt là AI do chủ dự án ủy quyền (như en/ko, xem đầu file này); chưa qua giáo viên bản ngữ, và chưa có nội dung N2/N1.
 
 - Học liệu: `ja/items/<chủ-đề>.yaml`, key `ja:item:<tên>`. `type`: `vocab`, `phrase`, `grammar_point`, `kana` (chữ Hiragana/Katakana, như `hangul` của KO).
 - `front.text` viết bằng chữ Nhật (kana/kanji); `front.reading` là cách đọc bằng kana khi từ có kanji (学校 → がっこう, dùng làm furigana); `front.romanization` là Hepburn, chỉ để tham khảo.
