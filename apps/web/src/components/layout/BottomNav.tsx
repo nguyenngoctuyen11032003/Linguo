@@ -1,8 +1,10 @@
-import type { Ref } from 'react';
+import { useEffect, type Ref } from 'react';
 import { LayoutGrid, type LucideIcon } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router';
 import { cn } from '@/lib/cn';
 import { MORE_NAV, PRIMARY_NAV } from './nav';
+import { useHideOnScroll } from './useHideOnScroll';
+import './bottom-nav.css';
 
 const TAB = 'group flex min-h-14 w-full flex-col items-center justify-center gap-1 whitespace-nowrap px-0.5 text-xs font-semibold leading-tight transition-colors';
 
@@ -38,10 +40,25 @@ export function BottomNav({
 }) {
   const { pathname } = useLocation();
   const moreActive = MORE_NAV.some((item) => pathname.startsWith(item.to));
+  // Slides away while scrolling down so it covers less of the page; back on scroll up, at the top/bottom of the
+  // page, on route change and while the "Thêm" sheet is open.
+  const [hidden, reveal] = useHideOnScroll({ disabled: moreOpen, resetKey: pathname });
+
+  // Lets things parked above the dock (toasts, .dock-follow) follow it down while it is hidden.
+  useEffect(() => {
+    const root = document.documentElement;
+    root.dataset.bottomNav = hidden ? 'hidden' : 'shown';
+    return () => {
+      delete root.dataset.bottomNav;
+    };
+  }, [hidden]);
+
   return (
     <nav
       aria-label="Điều hướng chính"
-      className={cn('vt-dock pointer-events-none fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))]', className)}
+      data-hidden={hidden ? 'true' : 'false'}
+      onFocus={reveal}
+      className={cn('vt-dock bottom-nav pointer-events-none fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))]', className)}
     >
       <ul className="glass pointer-events-auto mx-auto grid max-w-md grid-cols-5 rounded-[1.75rem] px-1 py-1 shadow-[var(--shadow-dock)]">
         {PRIMARY_NAV.map((item) => (

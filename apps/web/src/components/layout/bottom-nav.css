@@ -1,0 +1,20 @@
+/* Mobile bottom nav: slides out of view while scrolling down, back in on scroll up (useHideOnScroll).
+   It stays in the DOM and focusable; focus inside it always brings it back. Reduced motion (system or the
+   in-app toggle) is handled globally in design/global.css: the transition collapses to an instant swap. */
+.bottom-nav {
+  transition: transform 220ms var(--ease-expo, cubic-bezier(0.16, 1, 0.3, 1));
+}
+.bottom-nav[data-hidden='true']:not(:focus-within) {
+  transform: translateY(calc(100% + env(safe-area-inset-bottom, 0px)));
+}
+
+/* Fixed things parked above the dock (toasts) follow it down while it is hidden, instead of floating
+   over an empty gap. <html data-bottom-nav> is set by BottomNav. Desktop has no dock. */
+@media (max-width: 1023.98px) {
+  .dock-follow {
+    transition: transform 220ms var(--ease-expo, cubic-bezier(0.16, 1, 0.3, 1));
+  }
+  html[data-bottom-nav='hidden'] .dock-follow {
+    transform: translateY(4.75rem);
+  }
+}

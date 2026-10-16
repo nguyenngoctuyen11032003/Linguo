@@ -1,4 +1,4 @@
-import { screen, waitFor } from '@testing-library/react';
+import { act, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useRef, useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router';
@@ -27,6 +27,33 @@ describe('BottomNav', () => {
     const nav = screen.getByRole('navigation', { name: 'Điều hướng chính' });
     for (const tab of nav.querySelectorAll('a, button')) expect(tab.className).not.toMatch(/text-\[1[01]px\]/);
     expect(screen.getByRole('link', { name: 'Ôn tập' }).className).toContain('text-xs');
+  });
+
+  it('slides away on scroll down, mirrors it on <html>, and comes back on focus', () => {
+    vi.stubGlobal('requestAnimationFrame', (cb: FrameRequestCallback) => {
+      cb(0);
+      return 0;
+    });
+    Object.defineProperty(window, 'innerHeight', { configurable: true, value: 800 });
+    Object.defineProperty(document.documentElement, 'scrollHeight', { configurable: true, value: 5000 });
+    Object.defineProperty(window, 'scrollY', { configurable: true, value: 0 });
+    try {
+      renderWithProviders(<BottomNav onMore={() => {}} />, { route: '/app' });
+      const nav = screen.getByRole('navigation', { name: 'Điều hướng chính' });
+      expect(nav).toHaveAttribute('data-hidden', 'false');
+      act(() => {
+        Object.defineProperty(window, 'scrollY', { configurable: true, value: 600 });
+        window.dispatchEvent(new Event('scroll'));
+      });
+      expect(nav).toHaveAttribute('data-hidden', 'true');
+      expect(document.documentElement.dataset.bottomNav).toBe('hidden');
+      act(() => screen.getByRole('link', { name: 'Ôn tập' }).focus());
+      expect(nav).toHaveAttribute('data-hidden', 'false');
+      expect(document.documentElement.dataset.bottomNav).toBe('shown');
+    } finally {
+      vi.unstubAllGlobals();
+      Object.defineProperty(window, 'scrollY', { configurable: true, value: 0 });
+    }
   });
 
   it('opens "Thêm"', async () => {

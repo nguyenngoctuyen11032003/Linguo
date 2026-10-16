@@ -21,7 +21,7 @@ export function NotificationOpenToast({ open, onOpen, onDismiss }: NotificationO
     <div
       role="status"
       aria-live="polite"
-      className="pointer-events-none fixed inset-x-0 bottom-[calc(10.5rem+env(safe-area-inset-bottom,0px))] z-[91] flex justify-center px-4 lg:bottom-[6.5rem]"
+      className="dock-follow pointer-events-none fixed inset-x-0 bottom-[calc(10.5rem+env(safe-area-inset-bottom,0px))] z-[91] flex justify-center px-4 lg:bottom-[6.5rem]"
     >
       {open && (
         <div

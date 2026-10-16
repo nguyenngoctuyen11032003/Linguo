@@ -113,7 +113,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
         role="status"
         aria-live="polite"
         data-lift={lift}
-        className={cn('pointer-events-none fixed inset-x-0 z-[90] flex flex-col items-center gap-2 px-4', LIFT_CLASS[lift])}
+        className={cn('dock-follow pointer-events-none fixed inset-x-0 z-[90] flex flex-col items-center gap-2 px-4', LIFT_CLASS[lift])}
       >
         {items.map((t) => {
           const Icon = ICONS[t.tone];

@@ -23,7 +23,7 @@ export function UpdateToast({ pathname }: UpdateToastProps) {
     <div
       role="status"
       aria-live="polite"
-      className="pointer-events-none fixed inset-x-0 bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] z-[91] flex justify-center px-4 lg:bottom-6"
+      className="dock-follow pointer-events-none fixed inset-x-0 bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] z-[91] flex justify-center px-4 lg:bottom-6"
     >
       {updateAvailable && (
         <div
