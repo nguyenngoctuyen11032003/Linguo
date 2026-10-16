@@ -8,8 +8,7 @@ import { env } from '@/lib/env';
 import { useSaveData } from '@/lib/useSaveData';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { HeroBackdrop } from './HeroBackdrop';
-import { LandingNav } from './LandingNav';
-import { useHeroReady, useVideoVisible } from './useHeroReady';
+import { useVideoVisible } from './useHeroReady';
 
 const LANG_CARDS = [
   { code: 'EN', name: 'Tiếng Anh', exam: 'CEFR', range: 'A1 → C2', dot: 'bg-primary' },
@@ -44,17 +43,17 @@ function LanguageCards({ state, reduceMotion }: { state: 'shown' | 'hidden'; red
   );
 }
 
-export function HeroSection() {
+/** `ready` is owned by LandingPage (it also gates the nav entrance); the nav lives outside this section on purpose. */
+export function HeroSection({ ready }: { ready: boolean }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const { reduceMotion } = useMotionPrefs();
   const saveData = useSaveData();
   const videoUrl = !reduceMotion && !saveData ? env.heroVideoUrl : null;
-  const ready = useHeroReady();
   const videoVisible = useVideoVisible(videoRef, Boolean(videoUrl));
   const state = ready ? 'shown' : 'hidden';
 
   return (
-    <section aria-labelledby="hero-title" className="relative isolate flex min-h-hero flex-col overflow-x-clip">
+    <section aria-labelledby="hero-title" className="relative isolate flex min-h-hero flex-col overflow-x-clip pt-[calc(4.5rem+env(safe-area-inset-top,0px))] min-[1024px]:pt-0">
       <HeroBackdrop />
       {videoUrl && (
         <video
@@ -70,9 +69,9 @@ export function HeroSection() {
         />
       )}
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-b from-transparent to-bg" />
-      <LandingNav ready={ready} />
 
-      <div className="mx-auto mt-auto w-full max-w-5xl px-safe pb-[max(2.5rem,env(safe-area-inset-bottom,0px))] pt-28 min-[1024px]:grid min-[1024px]:max-w-[1180px] min-[1280px]:max-w-[1280px] min-[1024px]:grid-cols-[minmax(0,1fr)_340px] min-[1024px]:items-end min-[1024px]:gap-x-14 min-[1024px]:pb-14 min-[1024px]:pt-32">
+      <div className="mt-auto w-full px-safe pb-[max(2.5rem,env(safe-area-inset-bottom,0px))] pt-10 min-[1024px]:pb-14 min-[1024px]:pt-32">
+        <div className="mx-auto max-w-5xl min-[1024px]:grid min-[1024px]:grid-cols-[minmax(0,1fr)_340px] min-[1024px]:items-end min-[1024px]:gap-x-14 min-[1280px]:max-w-[1200px]">
         <div className="min-w-0">
         <motion.p
           className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/8 py-1.5 pl-1.5 pr-3.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/80 ring-1 ring-white/12 ring-inset backdrop-blur"
@@ -122,6 +121,7 @@ export function HeroSection() {
         </motion.div>
         </div>
         <LanguageCards state={state} reduceMotion={reduceMotion} />
+        </div>
       </div>
     </section>
   );

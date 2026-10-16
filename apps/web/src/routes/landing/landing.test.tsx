@@ -75,7 +75,7 @@ describe('HeroSection video', () => {
   });
 
   it('fades the video in on its own when it starts playing, without gating the headline', () => {
-    const { container } = renderWithProviders(<HeroSection />, signedOut);
+    const { container } = renderWithProviders(<HeroSection ready />, signedOut);
     const video = container.querySelector('video');
     expect(video).not.toBeNull();
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Học thông minh/i);
@@ -89,7 +89,7 @@ describe('HeroSection video', () => {
   });
 
   it('also reveals the video on canplay and hides it again on error', () => {
-    const { container } = renderWithProviders(<HeroSection />, signedOut);
+    const { container } = renderWithProviders(<HeroSection ready />, signedOut);
     const video = container.querySelector('video')!;
     act(() => {
       fireEvent(video, new Event('canplay'));
@@ -103,7 +103,7 @@ describe('HeroSection video', () => {
 
   it('ignores a refused autoplay promise', async () => {
     play.mockRejectedValue(new DOMException('blocked', 'NotAllowedError'));
-    const { container } = renderWithProviders(<HeroSection />, signedOut);
+    const { container } = renderWithProviders(<HeroSection ready />, signedOut);
     await act(async () => {
       await Promise.resolve();
     });
