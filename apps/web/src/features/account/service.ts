@@ -76,11 +76,11 @@ const LEARNER_EXACT_KEYS = [DRAFT_KEY];
 // flag (no personal data) and the shared media cache (`linguo-media-v1`).
 
 /**
- * Kept on sign-out: the queued, not yet synced answers (lesson and review outboxes, scoped by user id, sent after the
- * next sign-in; queued personal vocabulary grades are NOT kept) and cached lesson text of OTHER users (curated content, not personal; the signing-out user's own cache
+ * Kept on sign-out: the queued, not yet synced answers (lesson, review and personal vocabulary outboxes, scoped by user
+ * id, sent after the next sign-in) and cached lesson text of OTHER users (curated content, not personal; the signing-out user's own cache
  * is cleared by exact key below).
  */
-const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
+const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, PERSONAL_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
 
 function wipeStore(store: Storage, signOut: boolean): void {
   const keys: string[] = [];
@@ -113,8 +113,9 @@ export function clearAllLocalLearnerData(userId?: string | null, options: { mode
   }
   if (userId) {
     const exact: Array<() => void> = [
-      ...(signOut ? [] : [() => removeKey(outboxKey(userId)), () => removeKey(reviewOutboxKey(userId))]),
-      () => removeKey(personalOutboxKey(userId)),
+      ...(signOut
+        ? []
+        : [() => removeKey(outboxKey(userId)), () => removeKey(reviewOutboxKey(userId)), () => removeKey(personalOutboxKey(userId))]),
       () => clearLessonCache(userId),
       () => clearSession(userId),
       () => clearReflections(userId),

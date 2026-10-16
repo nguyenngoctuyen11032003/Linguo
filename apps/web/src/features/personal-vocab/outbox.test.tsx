@@ -82,15 +82,14 @@ describe('personal vocabulary outbox', () => {
     expect(mocks.rpc).toHaveBeenCalledWith('grade_personal_word', a);
   });
 
-  it('is wiped on sign-out, while the lesson and review outboxes stay for the next sign-in', () => {
+  it('stays on sign-out like the lesson and review outboxes, to be sent after the next sign-in', () => {
     createPersonalOutbox(USER_ID).add({ args: args(1), queueIndex: 0 });
     createPersonalOutbox('other-user').add({ args: args(2), queueIndex: 0 });
     createOutbox(USER_ID).add({ args: submitArgs(), queueIndex: 0 });
     createReviewOutbox(USER_ID).add({ args: reviewGradeArgs(1), queueIndex: 0 });
     clearAllLocalLearnerData(USER_ID, { mode: 'sign-out' });
-    expect(createPersonalOutbox(USER_ID).list()).toEqual([]);
-    expect(createPersonalOutbox('other-user').list()).toEqual([]);
-    expect(localStorage.getItem(personalOutboxKey(USER_ID))).toBeNull();
+    expect(createPersonalOutbox(USER_ID).list()).toHaveLength(1);
+    expect(createPersonalOutbox('other-user').list()).toHaveLength(1);
     expect(createOutbox(USER_ID).list()).toHaveLength(1);
     expect(createReviewOutbox(USER_ID).list()).toHaveLength(1);
   });
