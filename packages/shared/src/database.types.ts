@@ -317,6 +317,20 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"audio_assets": {
+                  Row: {
+                    "byte_size": number,"created_at": string,"duration_ms": number,"id": string,"lang": string,"mime_type": string,"model": string,"storage_path": string,"text_sha256": string,"voice": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "byte_size": number,"created_at"?: string,"duration_ms": number,"id": string,"lang": string,"mime_type"?: string,"model": string,"storage_path": string,"text_sha256": string,"voice": string
+                  }
+                  Update: {
+                    "byte_size"?: number,"created_at"?: string,"duration_ms"?: number,"id"?: string,"lang"?: string,"mime_type"?: string,"model"?: string,"storage_path"?: string,"text_sha256"?: string,"voice"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"class_invites": {
                   Row: {
                     "class_id": string,"code": string,"created_at": string,"expires_at": string,"max_uses": number | null,"revoked_at": string | null,"uses": number
@@ -1134,6 +1148,9 @@ isOneToOne: false
 "admin_content_overview":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
+"admin_find_user":
+{ Args: { "p_query": string }; Returns: Json
+                           },
 "admin_get_content":
 { Args: { "p_id": string,"p_kind": string }; Returns: Json
                            },
@@ -1147,6 +1164,9 @@ isOneToOne: false
 { Args: { "p_kind"?: string,"p_limit"?: number,"p_offset"?: number,"p_status"?: string }; Returns: Json
                            },
 "admin_list_sources":
+{ Args: Record<PropertyKey, never>; Returns: Json
+                           },
+"admin_list_staff":
 { Args: Record<PropertyKey, never>; Returns: Json
                            },
 "admin_resolve_report":
