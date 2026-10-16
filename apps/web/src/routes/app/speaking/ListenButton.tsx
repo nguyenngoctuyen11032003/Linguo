@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/Button';
 import type { SpeakingLanguage } from '@/features/speaking/ratings';
 import type { TtsApi } from '@/features/speaking/useTts';
 
-const LANGUAGE_NAME: Record<SpeakingLanguage, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn' };
+const LANGUAGE_NAME: Record<SpeakingLanguage, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
 
 /** Reads `text` aloud with the browser voice; without a voice it says so and the script stays the way to practise. */
 export function ListenButton({ text, lang, tts, label = 'Nghe mẫu' }: { text: string; lang: SpeakingLanguage; tts: TtsApi; label?: string }) {

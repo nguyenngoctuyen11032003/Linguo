@@ -121,7 +121,7 @@ select throws_ok($$select public.estimate_learning_path('en', 'a1', 'a2', array[
 set local role anon;
 select set_config('request.jwt.claims', '{"role": "anon"}', true);
 select throws_ok($$select public.estimate_learning_path('en', 'a1', 'a2', array[30,30,30,30,30,30,30]::smallint[], null, current_date)$$, '42501', null, 'anon cannot call estimate_learning_path');
-select is((select count(*)::int from public.level_reference_hours), 14, 'anon can read the reference table');
+select is((select count(*)::int from public.level_reference_hours), 20, 'anon can read the reference table');
 select throws_ok($$select public.create_learning_path('en', 'new', 'foundation', 'pre_a1', 'a1', array[30,30,30,30,30,30,30]::smallint[])$$, '42501', null, 'anon cannot create paths');
 
 select * from finish();

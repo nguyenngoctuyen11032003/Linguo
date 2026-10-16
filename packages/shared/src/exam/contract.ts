@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { LANGUAGE_CODES } from '../constants';
 import { contentKeySchema, localizedTextSchema } from '../content/authoring';
 
-// Spec 9: exam practice (PRD §9). Authoring schema for content/exams/<en|ko>/*.yaml,
+// Spec 9: exam practice (PRD §9). Authoring schema for content/exams/<en|ko|ja>/*.yaml,
 // the bundle for content_private.import_exam_bundle(jsonb), and the JSON exchanged
 // with the exam RPCs. snake_case mirrors the SQL jsonb exactly.
 
@@ -10,7 +10,7 @@ export const EXAM_SCHEMA_VERSION = 1;
 export const EXAM_BUNDLE_VERSION = 1;
 
 /** Exam families. Forms are always "bài luyện mô phỏng", never official papers. */
-export const EXAM_FAMILIES = ['topik_i', 'topik_ii', 'cefr'] as const;
+export const EXAM_FAMILIES = ['topik_i', 'topik_ii', 'cefr', 'jlpt'] as const;
 export type ExamFamily = (typeof EXAM_FAMILIES)[number];
 
 export const EXAM_SECTIONS = ['listening', 'reading', 'writing'] as const;
@@ -51,7 +51,7 @@ export const EXAM_DRILL_SIZE = 10;
 
 const text = z.string().trim().min(1);
 const optionId = z.string().regex(/^[a-z0-9]{1,8}$/);
-const targetLang = z.enum(['en', 'ko', 'vi']);
+const targetLang = z.enum(['en', 'ko', 'ja', 'vi']);
 
 // ---------------------------------------------------------------------------
 // Scoring config — versioned data, never hard-coded in SQL or UI (PRD §9.2).
@@ -61,7 +61,7 @@ export const examScoringSchema = z.strictObject({
   verified: z.boolean(),
   /** Where the scale comes from, shown under the result ("Nguồn thang điểm"). */
   source_note_vi: text.max(300),
-  /** Official full-paper max points per section (e.g. TOPIK I: listening 100, reading 100). */
+  /** Official full-paper max points per section (e.g. TOPIK I: listening 100, reading 100; JLPT N3: reading 120, listening 60). */
   section_max: z.partialRecord(z.enum(EXAM_SECTIONS), z.number().int().positive()),
   /**
    * Level bands on the full-paper total, ascending. A mini mock's raw score is scaled
@@ -232,7 +232,7 @@ export const examResultSchema = z.object({
   max: z.number(),
   by_section: z.array(z.object({ section: z.enum(EXAM_SECTIONS), ...scoreRow, scaled: z.number().nullable() })),
   by_question_type: z.array(z.object({ question_type: z.string(), section: z.enum(EXAM_SECTIONS), ...scoreRow })),
-  /** TOPIK full mock only: band on the scaled total; null otherwise. */
+  /** TOPIK and JLPT full mocks only: band on the scaled total; null otherwise. */
   estimated_level: z.object({ level_code: z.string().nullable(), scaled_total: z.number(), label_vi: z.string() }).nullable(),
   /** CEFR: per-section "đạt mức" judgement (no score conversion). */
   cefr_sections: z.array(z.object({ section: z.enum(EXAM_SECTIONS), level_code: z.string(), reached: z.boolean() })).nullable(),

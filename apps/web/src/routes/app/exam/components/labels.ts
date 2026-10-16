@@ -9,6 +9,7 @@ export const FAMILY_LABELS: Record<ExamFamily, string> = {
   topik_i: 'TOPIK I',
   topik_ii: 'TOPIK II',
   cefr: 'CEFR',
+  jlpt: 'JLPT',
 };
 
 export const SECTION_LABELS: Record<ExamSection, string> = {
@@ -24,8 +25,9 @@ export const MODE_LABELS: Record<ExamMode, string> = {
 };
 
 /** Target language of a family: what the learner reads, hears and writes. */
-export function familyLanguage(family: ExamFamily): 'en' | 'ko' {
-  return family === 'cefr' ? 'en' : 'ko';
+export function familyLanguage(family: ExamFamily): 'en' | 'ko' | 'ja' {
+  if (family === 'cefr') return 'en';
+  return family === 'jlpt' ? 'ja' : 'ko';
 }
 
 /** Curated names for the drill tags used by the demo forms; anything else goes through the fallback. */
@@ -90,7 +92,7 @@ export function questionTypeLabel(tag: string): string {
   const known = QUESTION_TYPE_LABELS[tag];
   if (known) return known;
   const parts = tag
-    .replace(/^(topik_ii|topik_i|cefr)_/, '')
+    .replace(/^(topik_ii|topik_i|cefr|jlpt)_/, '')
     .split('_')
     .filter(Boolean);
   const head = parts[0] !== undefined ? TAG_SECTIONS[parts[0]] : undefined;

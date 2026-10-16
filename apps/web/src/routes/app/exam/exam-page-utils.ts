@@ -2,13 +2,13 @@ import type { ExamFamily, ExamFormSummary, ExamMode, ExamSection, GoalType } fro
 
 /** The exam family a path goal prepares for, if any: the hub filter starts there. */
 export function goalFamily(goal: GoalType | null | undefined): ExamFamily | null {
-  if (goal === 'topik_i' || goal === 'topik_ii' || goal === 'cefr') return goal;
+  if (goal === 'topik_i' || goal === 'topik_ii' || goal === 'cefr' || goal === 'jlpt') return goal;
   return null;
 }
 
 /**
  * PRD §9.2 warning on a hub card when the form does not match the path goal. Mirrors
- * public.exam_structure_warning (supabase/migrations/20261015000200_exams.sql), which start_exam returns as
+ * public.exam_structure_warning (latest: supabase/migrations/20261018100000_japanese.sql), which start_exam returns as
  * structure_warning_vi once the attempt exists.
  */
 export function structureWarning(goal: GoalType | null | undefined, family: ExamFamily): string | null {
@@ -20,6 +20,9 @@ export function structureWarning(goal: GoalType | null | undefined, family: Exam
   }
   if (goal === 'cefr' && family !== 'cefr') {
     return 'Đề này không theo khung CEFR, khác mục tiêu CEFR của lộ trình. Kết quả chỉ để tham khảo.';
+  }
+  if (goal === 'jlpt' && family !== 'jlpt') {
+    return 'Đề này không theo cấu trúc JLPT, khác mục tiêu JLPT của lộ trình. Kết quả chỉ để tham khảo.';
   }
   return null;
 }

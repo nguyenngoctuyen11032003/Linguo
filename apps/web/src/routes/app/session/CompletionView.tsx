@@ -10,7 +10,7 @@ interface Props {
   session: StudySession;
   onPlanAgain: () => void;
   /** Learner language and level for the AI recap; omitted hides "Tóm tắt phiên bằng AI". */
-  learner?: { language: 'en' | 'ko'; level: string } | null;
+  learner?: { language: 'en' | 'ko' | 'ja'; level: string } | null;
 }
 
 /** Whole minutes for display; a started minute counts once something was done. */

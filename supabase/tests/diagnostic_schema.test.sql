@@ -77,7 +77,7 @@ select is(
 
 -- ===== Seed =====
 select is((select array_agg(language_code order by language_code) from public.assessments where is_published and assessment_type = 'diagnostic'),
-  array['en', 'ko'], 'published diagnostic for en and ko');
+  array['en', 'ja', 'ko'], 'published diagnostic for en, ja and ko');
 select is(
   (select config from public.assessments where key = 'en:assessment:diagnostic:v1'),
   '{"cooldown_days": 14, "abandon_days": 7, "max_items": 30, "foundation_max_items": 8, "foundation_max_b": 1.5,
