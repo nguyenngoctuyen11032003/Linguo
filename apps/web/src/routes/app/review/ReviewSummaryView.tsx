@@ -38,7 +38,7 @@ export function ReviewSummaryView({ reviewedCount, droppedCount = 0, graded, pen
   return (
     <section aria-labelledby="review-summary-title" className="space-y-5">
       <div className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset">
-        <span aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-accent/30 blur-3xl" />
+        <span aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0 space-y-1.5">
             <h2

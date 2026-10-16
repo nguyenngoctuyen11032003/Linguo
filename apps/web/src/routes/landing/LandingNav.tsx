@@ -77,7 +77,7 @@ export function LandingNav({ ready }: { ready: boolean }) {
             exit={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }}
             transition={{ duration: 0.35, ease: EXPO_OUT }}
           >
-            <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 -left-16 size-80 rounded-full bg-accent/25 blur-3xl" />
+            <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 -left-16 size-80 rounded-full bg-radial from-accent/25 to-transparent to-70%" />
             <div className="relative flex h-14 items-center justify-end">
               <button
                 type="button"

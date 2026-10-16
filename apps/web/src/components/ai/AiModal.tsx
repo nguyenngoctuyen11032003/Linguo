@@ -69,7 +69,7 @@ export function AiModal({
         <div className={cn('fixed inset-0', stacked ? 'z-[60]' : 'z-50')}>
           <motion.div
             aria-hidden="true"
-            className="absolute inset-0 bg-black/55 backdrop-blur-[2px]"
+            className="absolute inset-0 bg-black/55"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

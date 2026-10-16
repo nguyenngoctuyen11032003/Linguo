@@ -98,7 +98,7 @@ export function PersonalReviewPage() {
       <div className="space-y-6">
         {heading}
         <SolidCard className="relative isolate flex flex-col items-center gap-4 overflow-hidden px-6 py-10 text-center">
-          <div aria-hidden="true" className="absolute -top-16 left-1/2 -z-10 size-56 -translate-x-1/2 rounded-full bg-accent/20 blur-3xl" />
+          <div aria-hidden="true" className="absolute -top-16 left-1/2 -z-10 size-56 -translate-x-1/2 rounded-full bg-radial from-accent/20 to-transparent to-70%" />
           <span className="inline-flex size-16 items-center justify-center rounded-full bg-accent text-on-accent shadow-[0_4px_0_var(--accent-depth)]">
             <PartyPopper aria-hidden className="size-8" />
           </span>

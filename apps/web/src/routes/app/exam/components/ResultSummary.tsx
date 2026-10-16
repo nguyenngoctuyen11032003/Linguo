@@ -68,8 +68,8 @@ export function ResultSummary({ result }: ResultSummaryProps) {
   return (
     <div className="min-w-0 space-y-4">
       <section className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset">
-        <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-accent/30 blur-3xl" />
-        <div aria-hidden="true" className="absolute -right-10 -top-16 -z-10 size-48 rounded-full bg-primary/30 blur-3xl" />
+        <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
+        <div aria-hidden="true" className="absolute -right-10 -top-16 -z-10 size-48 rounded-full bg-radial from-primary/30 to-transparent to-70%" />
         <SimulatedBadge onDark />
         <h2 className="mt-3 text-[19px] font-bold leading-snug tracking-[-0.01em] break-words">{result.form_title_vi}</h2>
         <p className="mt-0.5 text-[13px] text-white/70">

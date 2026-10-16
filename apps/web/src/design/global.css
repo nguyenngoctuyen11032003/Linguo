@@ -47,12 +47,22 @@
     margin: 0;
     min-height: 100vh;
     min-height: 100dvh;
-    background: var(--ambient) fixed, var(--bg);
+    background: var(--bg);
     color: var(--text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
     overflow-wrap: break-word;
+  }
+  /* Ambient glow on its own fixed compositor layer: `background-attachment: fixed` repaints on every scroll frame. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: var(--ambient);
+    transform: translateZ(0);
   }
   h1,
   h2,
@@ -122,6 +132,13 @@
   border: 1px solid var(--border);
   -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
   backdrop-filter: blur(var(--glass-blur)) saturate(1.4);
+  /* Touch devices: a live backdrop blur over scrolling content is the main source of scroll jank, so the chrome
+     becomes a (near) opaque surface instead. */
+  @media (hover: none) and (pointer: coarse) {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: color-mix(in srgb, var(--surface-solid) 96%, transparent);
+  }
 }
 /* Raised content surface: soft gradient, hairline border, top sheen. */
 @utility card {
