@@ -1,0 +1,667 @@
+# Học liệu unit "Thủ tục và dịch vụ công" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ở uỷ ban thành phố, ～について, ～場合は =================
+  - key: ja:item:n3-shiyakusho
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 市役所
+      reading: しやくしょ
+      romanization: shiyakusho
+      pos: danh từ
+    back:
+      meaning:
+        vi: uỷ ban (toà thị chính) thành phố
+      examples:
+        - target: 引っ越したら、14日以内に市役所で手続きをします。
+          translation:
+            vi: Sau khi chuyển nhà, trong vòng 14 ngày phải làm thủ tục ở uỷ ban thành phố.
+      pronunciation_note:
+        vi: Đọc "si-ya-kư-sho", く đọc rất nhẹ.
+      confusion:
+        vi: Ở quận của Tokyo là 区役所 (くやくしょ); ở thị trấn là 町役場 (まちやくば). Gọi chung là 役所.
+
+  - key: ja:item:n3-tetsuzuki
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 手続き
+      reading: てつづき
+      romanization: tetsuzuki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủ tục (hành chính, giấy tờ); 手続きをする - làm thủ tục
+      examples:
+        - target: ビザの更新の手続きはどこでできますか。
+          translation:
+            vi: Thủ tục gia hạn visa làm ở đâu được ạ?
+      pronunciation_note:
+        vi: つづ đọc "tsư-dư" - "tê-tsư-dư-ki".
+      confusion:
+        vi: Viết bằng kana là てつづき, không phải てつずき (づ do つ biến âm).
+
+  - key: ja:item:n3-madoguchi
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 窓口
+      reading: まどぐち
+      romanization: madoguchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy tiếp nhận, quầy giao dịch (ở cơ quan, ngân hàng, ga)
+      examples:
+        - target: 住民票は2番の窓口でもらえます。
+          translation:
+            vi: Giấy chứng nhận cư trú nhận ở quầy số 2.
+      pronunciation_note:
+        vi: ぐ là âm g đục - "ma-đô-gư-chi".
+      confusion:
+        vi: Nghĩa đen là "cửa sổ + miệng". 窓口 cũng dùng nghĩa bóng - "đầu mối liên lạc" (担当窓口).
+
+  - key: ja:item:n3-juuminhyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 住民票
+      reading: じゅうみんひょう
+      romanization: jūminhyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy chứng nhận cư trú (bản trích lục đăng ký cư trú)
+      examples:
+        - target: 銀行で口座を作るとき、住民票が必要な場合があります。
+          translation:
+            vi: Khi mở tài khoản ở ngân hàng, có trường hợp cần giấy chứng nhận cư trú.
+      pronunciation_note:
+        vi: Hai âm dài - "jư-ư-min-hyô-ô".
+      confusion:
+        vi: 住民票 là giấy cư trú do uỷ ban cấp; thẻ cư trú của người nước ngoài là 在留カード (do Cục xuất nhập cảnh cấp).
+
+  - key: ja:item:n3-zairyuu-kaado
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 在留カード
+      reading: ざいりゅうカード
+      romanization: zairyū kādo
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ cư trú (người nước ngoài sống dài hạn ở Nhật)
+      examples:
+        - target: 在留カードはいつも持っていなければなりません。
+          translation:
+            vi: Lúc nào cũng phải mang theo thẻ cư trú.
+      pronunciation_note:
+        vi: りゅう là một âm "ryư" kéo dài - "dai-ryư-ư ka-a-đô".
+      confusion:
+        vi: Khi chuyển nhà, địa chỉ mới được ghi vào mặt sau 在留カード tại 市役所 - không phải tại cục xuất nhập cảnh.
+
+  - key: ja:item:n3-kinyuu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 記入する
+      reading: きにゅうする
+      romanization: kinyū suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: điền (vào mẫu đơn, phiếu)
+      examples:
+        - target: この用紙に名前と住所を記入してください。
+          translation:
+            vi: Hãy điền tên và địa chỉ vào tờ này.
+      pronunciation_note:
+        vi: にゅう kéo dài - "ki-nyư-ư".
+      confusion:
+        vi: 記入 là điền vào ô có sẵn; viết tự do là 書く. Nơi điền dùng に - 用紙に記入する.
+
+  - key: ja:item:n3-gram-ni-tsuite
+    type: grammar_point
+    level: n3
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N + について
+      romanization: ni tsuite
+      pos: về, liên quan đến
+    back:
+      meaning:
+        vi: '"Về..." - chủ đề của hỏi, nói, điều tra. Trước danh từ dùng についての - 手続きについての説明.'
+      examples:
+        - target: 引っ越しの手続きについて聞きたいんですが。
+          translation:
+            vi: Tôi muốn hỏi về thủ tục chuyển nhà.
+      pronunciation_note:
+        vi: Đọc liền "ni-tsư-i-tê".
+      confusion:
+        vi: 'Người Việt hay dùng を thay cho について: 手続きを聞きたい nghe như "muốn nghe cái thủ tục". Hỏi về chủ đề dùng について.'
+
+  - key: ja:item:n3-gram-baai
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V / いA / なAな / Nの + 場合(は)
+      reading: ばあい
+      romanization: baai wa
+      pos: trường hợp
+    back:
+      meaning:
+        vi: '"Trong trường hợp...", "nếu..." - hay gặp trong hướng dẫn, quy định. 来られない場合は、ご連絡ください.'
+      examples:
+        - target: 本人が来られない場合は、委任状が必要です。
+          translation:
+            vi: Trường hợp đương sự không đến được thì cần giấy uỷ quyền.
+      pronunciation_note:
+        vi: ばあい đọc rõ hai âm a - "ba-a-i".
+      confusion:
+        vi: 場合は mang tính giả định, hướng dẫn chung; với sự việc cụ thể vừa xảy ra dùng たら. Không dùng 場合 cho chuyện đã xảy ra trong quá khứ.
+
+  # ================= bài 2: ngân hàng, bưu điện, ～ように (mục đích) =================
+  - key: ja:item:n3-kouza
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 口座
+      reading: こうざ
+      romanization: kōza
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài khoản (ngân hàng); 口座を作る / 開く - mở tài khoản
+      examples:
+        - target: 給料はこの口座に振り込まれます。
+          translation:
+            vi: Lương được chuyển vào tài khoản này.
+      pronunciation_note:
+        vi: こう kéo dài - "kô-ô-da".
+      confusion:
+        vi: Tài khoản đăng nhập web là アカウント, không dùng 口座.
+
+  - key: ja:item:n3-furikomu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 振り込む
+      reading: ふりこむ
+      romanization: furikomu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: chuyển khoản; danh từ 振り込み
+      examples:
+        - target: 家賃は毎月25日までに振り込んでください。
+          translation:
+            vi: Tiền nhà hãy chuyển khoản trước ngày 25 hằng tháng.
+      pronunciation_note:
+        vi: Đọc "phư-ri-kô-mư".
+      confusion:
+        vi: 振り込む là chuyển vào tài khoản người khác; rút tiền ra là 引き出す (下ろす); gửi tiền vào tài khoản mình là 預ける.
+
+  - key: ja:item:n3-hikidasu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 引き出す
+      reading: ひきだす
+      romanization: hikidasu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: rút (tiền khỏi tài khoản); văn nói hay dùng お金を下ろす
+      examples:
+        - target: コンビニのATMでお金を引き出しました。
+          translation:
+            vi: Tôi đã rút tiền ở cây ATM trong cửa hàng tiện lợi.
+      pronunciation_note:
+        vi: Đọc "hi-ki-đa-xư", き đọc nhẹ.
+      confusion:
+        vi: 引き出し (danh từ) còn có nghĩa là "ngăn kéo". Rút tiền - お金を引き出す; ngăn kéo - 机の引き出し.
+
+  - key: ja:item:n3-tesuuryou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 手数料
+      reading: てすうりょう
+      romanization: tesūryō
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí dịch vụ, phí giao dịch
+      examples:
+        - target: 夜8時以降は、ATMの手数料がかかります。
+          translation:
+            vi: Sau 8 giờ tối thì rút ATM mất phí.
+      pronunciation_note:
+        vi: Hai âm dài - "tê-xư-ư-ryô-ô".
+      confusion:
+        vi: Phí "mất, tốn" dùng かかる - 手数料がかかる. Miễn phí là 無料 hoặc 手数料なし.
+
+  - key: ja:item:n3-anshou-bangou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 暗証番号
+      reading: あんしょうばんごう
+      romanization: anshō bangō
+      pos: danh từ
+    back:
+      meaning:
+        vi: mã PIN, mật mã (thẻ ngân hàng)
+      examples:
+        - target: 暗証番号を忘れないように、気をつけてください。
+          translation:
+            vi: Hãy cẩn thận để không quên mã PIN.
+      pronunciation_note:
+        vi: Đọc "an-shô-ô ban-gô-ô".
+      confusion:
+        vi: 暗証番号 là mã số (thẻ); mật khẩu đăng nhập web là パスワード.
+
+  - key: ja:item:n3-gram-you-ni-purpose
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(khả năng / ない / tự động từ) + ように
+      romanization: yō ni
+      pos: để (mục đích)
+    back:
+      meaning:
+        vi: '"Để (có thể)...", "để không..." - mục đích không nằm trong tầm kiểm soát trực tiếp: 忘れないようにメモする; よく見えるように前に座る.'
+      examples:
+        - target: 暗証番号を忘れないように、手帳に書いておきました。
+          translation:
+            vi: Tôi đã ghi mã PIN vào sổ tay để không quên.
+      pronunciation_note:
+        vi: よう kéo dài - "yô-ô-ni".
+      confusion:
+        vi: ために đi với động từ chủ ý (家を買うために貯金する); ように đi với thể khả năng, thể ない, tự động từ (家が買えるように貯金する).
+
+  # ================= bài 3: bệnh viện, ～ように言う =================
+  - key: ja:item:n3-hokenshou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 保険証
+      reading: ほけんしょう
+      romanization: hokenshō
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ bảo hiểm y tế
+      examples:
+        - target: 受付で保険証を出してください。
+          translation:
+            vi: Hãy đưa thẻ bảo hiểm ở quầy tiếp đón.
+      pronunciation_note:
+        vi: Đọc "hô-kên-shô-ô".
+      confusion:
+        vi: Có 保険証, người bệnh chỉ trả 30% chi phí. Không mang theo thì phải trả 100% trước.
+
+  - key: ja:item:n3-shoujou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 症状
+      reading: しょうじょう
+      romanization: shōjō
+      pos: danh từ
+    back:
+      meaning:
+        vi: triệu chứng (bệnh)
+      examples:
+        - target: どんな症状がありますか。
+          translation:
+            vi: Bạn có triệu chứng gì?
+      pronunciation_note:
+        vi: Hai âm dài, âm đầu "sh", âm sau "j" - "shô-ô-jô-ô".
+      confusion:
+        vi: Dễ nhầm cách đọc với 賞状 (しょうじょう - giấy khen) và 少女 (しょうじょ - thiếu nữ, không có âm dài cuối).
+
+  - key: ja:item:n3-shinsatsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 診察
+      reading: しんさつ
+      romanization: shinsatsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: khám bệnh; 診察を受ける - được khám
+      examples:
+        - target: 診察の前に、この問診票に記入してください。
+          translation:
+            vi: Trước khi khám, hãy điền vào phiếu hỏi bệnh này.
+      pronunciation_note:
+        vi: Đọc "shin-xa-tsư".
+      confusion:
+        vi: Bác sĩ khám - 診察する; bệnh nhân được khám - 診察を受ける. Không nói 診察をもらう.
+
+  - key: ja:item:n3-shohousen
+    type: vocab
+    level: n3
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 処方箋
+      reading: しょほうせん
+      romanization: shohōsen
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn thuốc
+      examples:
+        - target: この処方箋を持って、薬局で薬をもらってください。
+          translation:
+            vi: Hãy cầm đơn thuốc này ra hiệu thuốc để lấy thuốc.
+      pronunciation_note:
+        vi: ほう kéo dài - "shô-hô-ô-xên".
+      confusion:
+        vi: Ở Nhật thường khám ở phòng khám rồi cầm 処方箋 sang 薬局 (hiệu thuốc) bên ngoài để lấy thuốc. 処方せん cũng là cách viết phổ biến.
+
+  - key: ja:item:n3-gram-you-ni-iu
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển / ない) + ように言う / 頼む / 注意する
+      romanization: yō ni iu
+      pos: lời dặn, lời nhờ gián tiếp
+    back:
+      meaning:
+        vi: '"Bảo / dặn / nhờ (ai) làm..." - thuật lại mệnh lệnh, lời khuyên. Bị động: 医者にお酒を飲まないように言われました (bị bác sĩ dặn không uống rượu).'
+      examples:
+        - target: 医者に一日3回薬を飲むように言われました。
+          translation:
+            vi: Tôi được bác sĩ dặn uống thuốc ngày 3 lần.
+      pronunciation_note:
+        vi: ように言われました - "yô-ni i-wa-rê-ma-si-ta".
+      confusion:
+        vi: Thuật lại nguyên văn dùng 「～てください」と言われた; thuật gián tiếp dùng ～ように言われた (bỏ てください).
+
+  # ================= bài 4: quy định khu dân cư, ～ことになっている, ～ずに =================
+  - key: ja:item:n3-bunbetsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 分別する
+      reading: ぶんべつする
+      romanization: bunbetsu suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: phân loại (rác)
+      examples:
+        - target: ゴミはきちんと分別して出してください。
+          translation:
+            vi: Hãy phân loại rác cẩn thận rồi mới đem ra.
+      pronunciation_note:
+        vi: Đọc "bưn-bê-tsư".
+      confusion:
+        vi: Cùng chữ 分別 nhưng đọc ふんべつ lại là "sự hiểu biết, chín chắn". Phân loại rác luôn đọc ぶんべつ.
+
+  - key: ja:item:n3-moeru-gomi
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 燃えるゴミ
+      reading: もえるゴミ
+      romanization: moeru gomi
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác cháy được (rác sinh hoạt, rác bếp, giấy vụn)
+      examples:
+        - target: 燃えるゴミは月曜日と木曜日の朝に出します。
+          translation:
+            vi: Rác cháy được đem ra vào sáng thứ Hai và thứ Năm.
+      pronunciation_note:
+        vi: Đọc "mô-ê-rư gô-mi".
+      confusion:
+        vi: Rác không cháy được là 燃えないゴミ; nhiều nơi gọi là 可燃ごみ / 不燃ごみ. Chai nhựa (ペットボトル), lon, chai thuỷ tinh (資源ごみ) thường thu riêng.
+
+  - key: ja:item:n3-sodai-gomi
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, culture]
+    front:
+      text: 粗大ごみ
+      reading: そだいごみ
+      romanization: sodai gomi
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác cồng kềnh (đồ nội thất, xe đạp, đồ điện lớn)
+      examples:
+        - target: 粗大ごみを出す場合は、事前に申し込まなければなりません。
+          translation:
+            vi: Trường hợp bỏ rác cồng kềnh thì phải đăng ký trước.
+      pronunciation_note:
+        vi: Đọc "xô-đai gô-mi".
+      confusion:
+        vi: Rác cồng kềnh phải đăng ký và mua phiếu thu phí (シール), không được để ra cùng ngày rác thường.
+
+  - key: ja:item:n3-hinan
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 避難する
+      reading: ひなんする
+      romanization: hinan suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: sơ tán, lánh nạn; 避難所 - nơi sơ tán
+      examples:
+        - target: 地震のときは、近くの小学校に避難することになっています。
+          translation:
+            vi: Khi có động đất, theo quy định sẽ sơ tán đến trường tiểu học gần đó.
+      pronunciation_note:
+        vi: Đọc "hi-nan".
+      confusion:
+        vi: Đồng âm với 非難 (ひなん - chỉ trích). Trong thông báo thiên tai luôn là 避難.
+
+  - key: ja:item:n3-kisoku
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 規則
+      reading: きそく
+      romanization: kisoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định, nội quy; 規則を守る - tuân thủ quy định
+      examples:
+        - target: このマンションの規則では、ペットを飼ってはいけません。
+          translation:
+            vi: Theo nội quy chung cư này, không được nuôi thú cưng.
+      pronunciation_note:
+        vi: Đọc "ki-xô-kư".
+      confusion:
+        vi: 規則 là quy định thành văn; ルール dùng thân mật hơn; luật pháp là 法律.
+
+  - key: ja:item:n3-gram-koto-ni-natte-iru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển / ない) + ことになっている
+      romanization: koto ni natte iru
+      pos: theo quy định
+    back:
+      meaning:
+        vi: '"Theo quy định thì...", "đã được định là..." - quy tắc, lịch đã định sẵn. ゴミは朝8時までに出すことになっています.'
+      examples:
+        - target: このアパートでは、夜10時以降は洗濯機を使わないことになっています。
+          translation:
+            vi: Ở khu nhà này, theo quy định sau 10 giờ tối không dùng máy giặt.
+      pronunciation_note:
+        vi: Đọc liền "kô-tô-ni nat-tê i-ma-xư".
+      confusion:
+        vi: ことになった - quyết định vừa được đưa ra (thay đổi); ことになっている - quy định đã có, đang có hiệu lực.
+
+  - key: ja:item:n3-gram-zuni
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V(ない bỏ ない) + ずに
+      romanization: zu ni
+      pos: mà không...
+    back:
+      meaning:
+        vi: '"Mà không..." - giống ～ないで nhưng trang trọng hơn, hay gặp trong văn viết, thông báo. 分別せずに出す (đem ra mà không phân loại).'
+      examples:
+        - target: ゴミを分別せずに出すと、回収されません。
+          translation:
+            vi: Nếu đem rác ra mà không phân loại thì sẽ không được thu gom.
+      pronunciation_note:
+        vi: ずに - "dư-ni".
+      confusion:
+        vi: する → せずに (không phải しずに); 来る → こずに. Các động từ khác bỏ ない rồi thêm ずに - 食べずに, 行かずに.
+
+  # ================= bài 5: ôn tập (đọc thông báo) =================
+  - key: ja:item:n3-keijiban
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 掲示板
+      reading: けいじばん
+      romanization: keijiban
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng tin, bảng thông báo (ở chung cư, trường, cơ quan; cả diễn đàn mạng)
+      examples:
+        - target: 掲示板に水道工事のお知らせが貼ってあります。
+          translation:
+            vi: Trên bảng tin có dán thông báo sửa đường ống nước.
+      pronunciation_note:
+        vi: けい đọc gần "kê-ê" - "kê-ê-ji-ban".
+      confusion:
+        vi: 掲示板 là tấm bảng; nội dung dán lên là お知らせ (thông báo). Trên mạng, 掲示板 là diễn đàn.
+
+  - key: ja:item:n3-moushikomu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 申し込む
+      reading: もうしこむ
+      romanization: mōshikomu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: đăng ký (tham gia, sử dụng dịch vụ); danh từ 申し込み
+      examples:
+        - target: 日本語教室に申し込みたいんですが、どうすればいいですか。
+          translation:
+            vi: Tôi muốn đăng ký lớp tiếng Nhật, phải làm thế nào ạ?
+      pronunciation_note:
+        vi: もう kéo dài - "mô-ô-si-kô-mư".
+      confusion:
+        vi: 申し込む - đăng ký (tham gia); 登録する - đăng ký thông tin vào hệ thống (tài khoản, con dấu). Đăng ký cái gì dùng に - 教室に申し込む.
+
+  - key: ja:item:n3-teishutsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 提出する
+      reading: ていしゅつする
+      romanization: teishutsu suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: nộp (giấy tờ, bài, báo cáo)
+      examples:
+        - target: 申込書は窓口に提出してください。
+          translation:
+            vi: Đơn đăng ký hãy nộp ở quầy.
+      pronunciation_note:
+        vi: てい đọc gần "tê-ê" - "tê-ê-shư-tsư".
+      confusion:
+        vi: 提出する trang trọng hơn 出す. Nộp ở đâu dùng に - 窓口に提出する.
+
+  - key: ja:item:n3-kigen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 期限
+      reading: きげん
+      romanization: kigen
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời hạn; 有効期限 - hạn sử dụng (thẻ), 提出期限 - hạn nộp
+      examples:
+        - target: 在留カードの有効期限を確認してください。
+          translation:
+            vi: Hãy kiểm tra thời hạn hiệu lực của thẻ cư trú.
+      pronunciation_note:
+        vi: Đọc "ki-gên".
+      confusion:
+        vi: 期限 là thời hạn chung (giấy tờ, thẻ); 締め切り là hạn chót nộp bài, nộp hồ sơ. Hạn sử dụng thực phẩm là 賞味期限 / 消費期限.

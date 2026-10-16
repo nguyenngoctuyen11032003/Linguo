@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-city-office
+order_index: 1
+level: n3
+title:
+  vi: Ở uỷ ban thành phố - ～について và ～場合は
+objectives:
+  - vi: Nắm từ vựng thủ tục hành chính - 市役所, 手続き, 窓口, 住民票, 在留カード, 記入する.
+  - vi: Hỏi về một thủ tục bằng ～について.
+  - vi: Hiểu và dùng hướng dẫn dạng ～場合は.
+estimated_minutes: 18
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ja:lesson:n3-work-keigo-review]
+items:
+  - item: ja:item:n3-shiyakusho
+  - item: ja:item:n3-tetsuzuki
+  - item: ja:item:n3-madoguchi
+  - item: ja:item:n3-juuminhyou
+  - item: ja:item:n3-zairyuu-kaado
+  - item: ja:item:n3-kinyuu
+  - item: ja:item:n3-gram-ni-tsuite
+  - item: ja:item:n3-gram-baai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự đi làm thủ tục chuyển nhà ở uỷ ban - hỏi đúng quầy, hiểu hướng dẫn điền đơn và các trường hợp đặc biệt.
+  - type: explain
+    text:
+      vi: 'Từ vựng cốt lõi: 市役所 (uỷ ban thành phố), 手続き (thủ tục), 窓口 (quầy), 住民票 (giấy chứng nhận cư trú), 在留カード (thẻ cư trú), 記入する (điền). Người nước ngoài chuyển nhà phải báo ở 市役所 trong vòng 14 ngày.'
+  - type: explain
+    text:
+      vi: 'N + について - "về...": 引っ越しの手続きについて聞きたいんですが (tôi muốn hỏi về thủ tục chuyển nhà). Trước danh từ dùng についての - 保険についての説明.'
+  - type: explain
+    text:
+      vi: '～場合は - "trường hợp...": 本人が来られない場合は、委任状が必要です. Nối với động từ thể thường, いA, なAな, Nの - 病気の場合, 必要な場合.'
+  - type: deep_explain
+    text:
+      vi: 'Câu hỏi ở quầy thường mở bằng ～んですが (～のですが) để dẫn vào chuyện một cách mềm mỏng, rồi để câu lửng: 住民票が欲しいんですが…. Nhân viên hiểu bạn đang nhờ giúp, không cần nói hết câu.'
+  - type: example
+    target: 引っ越しの手続きについて聞きたいんですが。
+    target_lang: ja
+    translation:
+      vi: Tôi muốn hỏi về thủ tục chuyển nhà.
+  - type: example
+    target: この用紙に名前と住所を記入してください。
+    target_lang: ja
+    translation:
+      vi: Hãy điền tên và địa chỉ vào tờ này.
+  - type: example
+    target: 住民票は2番の窓口でもらえます。
+    target_lang: ja
+    translation:
+      vi: Giấy chứng nhận cư trú nhận ở quầy số 2.
+  - type: example
+    target: 本人が来られない場合は、委任状が必要です。
+    target_lang: ja
+    translation:
+      vi: Trường hợp đương sự không đến được thì cần giấy uỷ quyền.
+  - type: common_mistake
+    wrong: 引っ越しの手続きを聞きたいんですが。
+    right: 引っ越しの手続きについて聞きたいんですが。
+    target_lang: ja
+    note:
+      vi: Hỏi về một chủ đề dùng について. Dùng を nghe như muốn "nghe" chính cái thủ tục.
+  - type: common_mistake
+    wrong: 用紙を名前を記入してください。
+    right: 用紙に名前を記入してください。
+    target_lang: ja
+    note:
+      vi: Nơi điền vào dùng に, thứ được điền dùng を - 用紙に名前を記入する.
+  - type: summary
+    points:
+      - vi: 市役所, 手続き, 窓口, 住民票, 在留カード, 記入する.
+      - vi: N + について - về; についての + N.
+      - vi: ～場合は - trường hợp; Nの場合, なAな場合.
+      - vi: ～んですが… - mở lời hỏi, nhờ mềm mỏng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-city-office-mcq-madoguchi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-madoguchi
+    prompt:
+      stem: 「窓口」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: q4c, text: quầy tiếp nhận, lang: vi }
+        - { id: h8z, text: cửa ra vào, lang: vi }
+        - { id: b2n, text: phòng chờ, lang: vi }
+        - { id: t6k, text: mẫu đơn, lang: vi }
+    answer:
+      correct_option_id: q4c
+    explanation:
+      vi: 窓口 - quầy tiếp nhận, giao dịch. Cửa ra vào là 入り口 / 出口, phòng chờ là 待合室, mẫu đơn là 用紙.
+    display_answer: quầy tiếp nhận
+
+  - key: ja:exercise:n3-city-office-listen-juuminhyou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-juuminhyou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 住民票は2番の窓口でもらえます。
+      options:
+        - { id: x5d, text: Giấy chứng nhận cư trú nhận ở quầy số 2., lang: vi }
+        - { id: m1r, text: Thẻ cư trú nhận ở quầy số 2., lang: vi }
+        - { id: f7w, text: Giấy chứng nhận cư trú nộp ở quầy số 2., lang: vi }
+        - { id: j3s, text: Quầy số 2 không cấp giấy chứng nhận cư trú., lang: vi }
+    answer:
+      correct_option_id: x5d
+    explanation:
+      vi: 住民票 - giấy chứng nhận cư trú (thẻ cư trú là 在留カード); もらえます - có thể nhận (không phải nộp).
+    display_answer: Giấy chứng nhận cư trú nhận ở quầy số 2.
+
+  - key: ja:exercise:n3-city-office-mcq-nitsuite
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-ni-tsuite
+    prompt:
+      stem: 'Bạn muốn hỏi nhân viên về thủ tục bảo hiểm: 保険の手続き＿＿聞きたいんですが。'
+      stem_lang: vi
+      options:
+        - { id: c9e, text: について, lang: ja }
+        - { id: y2p, text: によって, lang: ja }
+        - { id: k6a, text: のために, lang: ja }
+        - { id: s4v, text: の場合, lang: ja }
+    answer:
+      correct_option_id: c9e
+    explanation:
+      vi: について - về (chủ đề hỏi). によって - bởi/tuỳ theo; のために - vì, để; の場合 - trường hợp.
+    display_answer: について
+
+  - key: ja:exercise:n3-city-office-fill-baai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-baai
+    prompt:
+      template: "本人が来られない{{b1}}は、委任状が必要です。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Trường hợp đương sự không đến được thì cần giấy uỷ quyền."
+        - "Gợi ý: danh từ nghĩa 'trường hợp', đọc ばあい."
+    answer:
+      blanks:
+        b1: [場合, ばあい]
+    known_wrong:
+      - answer: とき
+        feedback_vi: ときは hiểu được nhưng văn hướng dẫn chính thức dùng 場合は cho tình huống giả định.
+        error_tag: baai_toki
+    explanation:
+      vi: V-ない + 場合は - trường hợp không... Văn bản hướng dẫn ở cơ quan dùng 場合は rất nhiều.
+    display_answer: 本人が来られない場合は、委任状が必要です。
+
+  - key: ja:exercise:n3-city-office-wb-kinyuu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-kinyuu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Hãy điền tên và địa chỉ vào tờ này.\""
+      tokens:
+        - { id: a3, text: 名前と住所を }
+        - { id: a5, text: この用紙を }
+        - { id: a1, text: この用紙に }
+        - { id: a4, text: 記入してください }
+    answer:
+      orders:
+        - [a1, a3, a4]
+    explanation:
+      vi: 用紙に (điền vào đâu) + 名前と住所を (điền cái gì) + 記入してください. この用紙を sẽ trùng hai を trong một câu.
+    display_answer: この用紙に名前と住所を記入してください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-city-office-fill-tetsuzuki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tetsuzuki
+    prompt:
+      template: "ビザの更新の{{b1}}はどこでできますか。(thủ tục)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [手続き, てつづき, 手続]
+    known_wrong:
+      - answer: てつずき
+        feedback_vi: づ (biến âm từ つ), không phải ず - てつづき.
+        error_tag: zu_du_spelling
+      - answer: 窓口
+        feedback_vi: 窓口 là quầy; "thủ tục" là 手続き.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 手続き - thủ tục. 更新の手続き - thủ tục gia hạn.
+    display_answer: ビザの更新の手続きはどこでできますか。
+
+  - key: ja:exercise:n3-city-office-translate-nitsuite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ni-tsuite
+    prompt:
+      source_text: Tôi muốn hỏi về thủ tục chuyển nhà. (mở lời mềm mỏng)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 引っ越しの手続きについて聞きたいんですが。
+        - 引っ越しの手続きについて聞きたいのですが。
+        - 引っ越しの手続きについて聞きたいんですが…。
+        - 引っ越しの手続きについて伺いたいんですが。
+        - 引っ越しの手続きについて伺いたいのですが。
+        - 引っ越しの手続きについてお聞きしたいんですが。
+        - 引っ越しの手続きについてお聞きしたいのですが。
+        - 引越しの手続きについて聞きたいんですが。
+        - 引越の手続きについて聞きたいんですが。
+        - 引っ越しの手続きについて質問したいんですが。
+        - 引っ越しの手続きについて聞きたいです。
+        - ひっこしのてつづきについてききたいんですが。
+    known_wrong:
+      - answer: 引っ越しの手続きを聞きたいんですが。
+        feedback_vi: Hỏi về chủ đề dùng について, không dùng を.
+        error_tag: ni_tsuite
+      - answer: 引っ越しの手続きによって聞きたいんですが。
+        feedback_vi: によって là "bởi/tuỳ theo". "Về" là について.
+        error_tag: ni_tsuite
+    explanation:
+      vi: 引っ越しの手続き - thủ tục chuyển nhà; について - về; 聞きたいんですが - tôi muốn hỏi (mở lời).
+    display_answer: 引っ越しの手続きについて聞きたいんですが。
+
+  - key: ja:exercise:n3-city-office-translate-zairyuu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-zairyuu-kaado
+    prompt:
+      source_text: Trường hợp mất thẻ cư trú thì hãy liên lạc ngay. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 在留カードをなくした場合は、すぐに連絡してください。
+        - 在留カードをなくした場合は、すぐ連絡してください。
+        - 在留カードをなくした場合は、すぐにご連絡ください。
+        - 在留カードをなくした場合は、すぐご連絡ください。
+        - 在留カードを失くした場合は、すぐに連絡してください。
+        - 在留カードを無くした場合は、すぐに連絡してください。
+        - 在留カードを紛失した場合は、すぐに連絡してください。
+        - 在留カードを紛失した場合は、すぐにご連絡ください。
+        - 在留カードをなくした場合、すぐに連絡してください。
+        - 在留カードをなくした場合、すぐにご連絡ください。
+        - 在留カードをなくした場合はすぐに連絡してください。
+        - 在留カードをなくす場合は、すぐに連絡してください。
+        - ざいりゅうカードをなくしたばあいは、すぐにれんらくしてください。
+    known_wrong:
+      - answer: 在留カードをなくした場合は、すぐにご連絡してください。
+        feedback_vi: ご連絡する là khiêm nhường; nhờ người kia - ご連絡ください hoặc 連絡してください.
+        error_tag: go_kudasai_form
+      - answer: 住民票をなくした場合は、すぐに連絡してください。
+        feedback_vi: 住民票 là giấy chứng nhận cư trú; thẻ cư trú là 在留カード.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 在留カードをなくした場合は - trường hợp đã mất thẻ cư trú (dùng thể た vì việc mất xảy ra trước việc liên lạc); すぐに連絡してください - hãy liên lạc ngay.
+    display_answer: 在留カードをなくした場合は、すぐに連絡してください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-city-office-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shiyakusho
+    prompt:
+      stem: Bạn vừa chuyển đến thành phố mới và muốn làm thủ tục đăng ký địa chỉ. Bạn nói gì ở quầy hướng dẫn của uỷ ban?
+      stem_lang: vi
+      options:
+        - { id: w3h, text: 引っ越してきたので、住所の手続きをしたいんですが。, lang: ja }
+        - { id: d8m, text: 引っ越してきたので、住所の手続きをしてあげたいんですが。, lang: ja }
+        - { id: o5g, text: 引っ越してきたので、住所の手続きをさせられたいんですが。, lang: ja }
+        - { id: e1y, text: 引っ越してきたので、住所の手続きをしなさい。, lang: ja }
+    answer:
+      correct_option_id: w3h
+    explanation:
+      vi: ～たいんですが - mở lời muốn làm gì. てあげたい là "làm cho (ai)"; させられたい không có nghĩa; しなさい là ra lệnh.
+    display_answer: 引っ越してきたので、住所の手続きをしたいんですが。
+
+  - key: ja:exercise:n3-city-office-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-baai
+    prompt:
+      source_text: 書き方がわからない場合は、窓口で聞いてください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trường hợp không biết cách viết thì hãy hỏi ở quầy.
+        - Trường hợp không biết cách điền thì hãy hỏi ở quầy.
+        - Nếu không biết cách viết thì hãy hỏi ở quầy.
+        - Nếu không biết cách điền thì hãy hỏi ở quầy.
+        - Nếu không biết cách viết, hãy hỏi ở quầy.
+        - Nếu không biết cách điền, hãy hỏi ở quầy.
+        - Trường hợp không biết cách viết, hãy hỏi ở quầy.
+        - Trường hợp không biết cách ghi thì hãy hỏi ở quầy.
+        - Nếu không biết viết thế nào thì hãy hỏi ở quầy.
+        - Nếu không biết cách viết thì hãy hỏi tại quầy.
+        - Trường hợp bạn không biết cách viết thì hãy hỏi ở quầy.
+        - Nếu bạn không biết cách viết thì hãy hỏi ở quầy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trường hợp biết cách viết thì hãy hỏi ở quầy.
+        feedback_vi: わからない là phủ định - không biết.
+        error_tag: negation
+    explanation:
+      vi: 書き方 - cách viết; わからない場合は - trường hợp không biết; 窓口で聞いてください - hãy hỏi ở quầy.
+    display_answer: Trường hợp không biết cách viết thì hãy hỏi ở quầy.
+
+  - key: ja:exercise:n3-city-office-wb-nitsuite
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ni-tsuite
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Hãy xem giải thích về thủ tục ở trang web.\""
+      tokens:
+        - { id: w4, text: 説明を }
+        - { id: w2, text: 手続きについての }
+        - { id: w6, text: 手続きについて }
+        - { id: w5, text: 見てください }
+        - { id: w1, text: ホームページで }
+    answer:
+      orders:
+        - [w1, w2, w4, w5]
+        - [w2, w4, w1, w5]
+    explanation:
+      vi: Đứng trước danh từ 説明, について phải thành についての - 手続きについての説明 (giải thích về thủ tục).
+    display_answer: ホームページで手続きについての説明を見てください。
+
+  - key: ja:exercise:n3-city-office-mcq-kinyuu
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kinyuu
+    prompt:
+      stem: Nhân viên đưa bạn một tờ đơn và bảo điền thông tin. Câu nào nhân viên có thể nói?
+      stem_lang: vi
+      options:
+        - { id: n2v, text: こちらの用紙にご記入ください。, lang: ja }
+        - { id: g7c, text: こちらの用紙をご記入いたします。, lang: ja }
+        - { id: u4b, text: こちらの用紙に記入されてください。, lang: ja }
+        - { id: i9t, text: こちらの用紙でご記入になります。, lang: ja }
+    answer:
+      correct_option_id: n2v
+    explanation:
+      vi: ご + từ Hán + ください - ご記入ください (xin vui lòng điền). ご記入いたします là "tôi sẽ điền" (khiêm nhường); 記入されてください không tự nhiên; ご記入になります là trần thuật, không phải lời nhờ.
+    display_answer: こちらの用紙にご記入ください。
