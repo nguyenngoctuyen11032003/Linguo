@@ -19,31 +19,70 @@ const ICONS = { success: CheckCircle2, error: XCircle, info: Info } as const;
 const TONE_CLASS: Record<ToastTone, string> = { success: 'text-success', error: 'text-error', info: 'text-primary' };
 /** Errors stay longer so they can be read; everything else is transient. */
 const DURATION_MS: Record<ToastTone, number> = { success: 4000, info: 4000, error: 8000 };
+type Hold = 'hover' | 'focus';
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<ToastItem[]>([]);
   const nextId = useRef(1);
   const timers = useRef(new Map<number, number>());
+  /** Why a toast is held open (WCAG 2.2.1): pointer over it or focus inside it. Its timer restarts once released. */
+  const holds = useRef(new Map<number, Set<Hold>>());
 
-  const dismiss = useCallback((id: number) => {
+  const clearTimer = useCallback((id: number) => {
     const timer = timers.current.get(id);
     if (timer !== undefined) {
       window.clearTimeout(timer);
       timers.current.delete(id);
     }
-    setItems((list) => list.filter((t) => t.id !== id));
   }, []);
 
-  const show = useCallback<ToastApi['show']>(
-    ({ tone, message }) => {
-      const id = nextId.current++;
-      setItems((list) => [...list, { id, tone, message }]);
+  const dismiss = useCallback(
+    (id: number) => {
+      clearTimer(id);
+      holds.current.delete(id);
+      setItems((list) => list.filter((t) => t.id !== id));
+    },
+    [clearTimer],
+  );
+
+  const startTimer = useCallback(
+    (id: number, tone: ToastTone) => {
+      clearTimer(id);
       timers.current.set(
         id,
         window.setTimeout(() => dismiss(id), DURATION_MS[tone]),
       );
     },
-    [dismiss],
+    [clearTimer, dismiss],
+  );
+
+  const hold = useCallback(
+    (id: number, reason: Hold) => {
+      const set = holds.current.get(id) ?? new Set<Hold>();
+      set.add(reason);
+      holds.current.set(id, set);
+      clearTimer(id);
+    },
+    [clearTimer],
+  );
+
+  const release = useCallback(
+    (id: number, tone: ToastTone, reason: Hold) => {
+      const set = holds.current.get(id);
+      if (!set?.delete(reason) || set.size > 0) return;
+      holds.current.delete(id);
+      startTimer(id, tone);
+    },
+    [startTimer],
+  );
+
+  const show = useCallback<ToastApi['show']>(
+    ({ tone, message }) => {
+      const id = nextId.current++;
+      setItems((list) => [...list, { id, tone, message }]);
+      startTimer(id, tone);
+    },
+    [startTimer],
   );
 
   useEffect(() => {
@@ -81,6 +120,12 @@ export function ToastProvider({ children }: { children: ReactNode }) {
           return (
             <div
               key={t.id}
+              onPointerEnter={() => hold(t.id, 'hover')}
+              onPointerLeave={() => release(t.id, t.tone, 'hover')}
+              onFocus={() => hold(t.id, 'focus')}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget as Node | null)) release(t.id, t.tone, 'focus');
+              }}
               className="pointer-events-auto flex w-full max-w-sm items-start gap-2.5 rounded-2xl border border-border bg-surface-solid py-1 pl-4 pr-1 text-[15px] shadow-[var(--shadow-card)]"
             >
               <Icon aria-hidden className={cn('mt-3 size-5 shrink-0', TONE_CLASS[t.tone])} />

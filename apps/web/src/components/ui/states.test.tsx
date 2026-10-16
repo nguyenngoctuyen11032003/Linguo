@@ -1,4 +1,4 @@
-import { act, render, screen } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Hourglass } from 'lucide-react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
@@ -95,6 +95,57 @@ describe('Toast', () => {
       vi.advanceTimersByTime(2000); // t=8.1s
     });
     expect(screen.queryByText('Có lỗi.')).not.toBeInTheDocument();
+  });
+
+  // WCAG 2.2.1: a toast must not vanish while the learner is reading it (pointer over it) or is on its close button.
+  it('pauses the auto-dismiss while focused or hovered, and restarts it after', () => {
+    vi.useFakeTimers();
+    render(
+      <ToastProvider>
+        <ToastTrigger />
+      </ToastProvider>,
+    );
+    act(() => screen.getByText('Hiện').click());
+    const close = screen.getByRole('button', { name: 'Đóng thông báo' });
+    act(() => close.focus());
+    act(() => {
+      vi.advanceTimersByTime(10_000);
+    });
+    expect(screen.getByText('Đã lưu thay đổi.')).toBeInTheDocument();
+    act(() => close.blur());
+    act(() => {
+      vi.advanceTimersByTime(3000);
+    });
+    expect(screen.getByText('Đã lưu thay đổi.')).toBeInTheDocument();
+    const toast = close.parentElement!;
+    act(() => {
+      fireEvent.pointerEnter(toast);
+      vi.advanceTimersByTime(10_000);
+    });
+    expect(screen.getByText('Đã lưu thay đổi.')).toBeInTheDocument();
+    act(() => {
+      fireEvent.pointerLeave(toast);
+      vi.advanceTimersByTime(4100);
+    });
+    expect(screen.queryByText('Đã lưu thay đổi.')).not.toBeInTheDocument();
+  });
+
+  it('keeps the toast while the pointer is over it even if focus leaves', () => {
+    vi.useFakeTimers();
+    render(
+      <ToastProvider>
+        <ToastTrigger />
+      </ToastProvider>,
+    );
+    act(() => screen.getByText('Hiện').click());
+    const close = screen.getByRole('button', { name: 'Đóng thông báo' });
+    act(() => {
+      fireEvent.pointerEnter(close.parentElement!);
+      close.focus();
+      close.blur();
+      vi.advanceTimersByTime(10_000);
+    });
+    expect(screen.getByText('Đã lưu thay đổi.')).toBeInTheDocument();
   });
 
   it('clears pending timers on unmount', () => {
