@@ -15,6 +15,8 @@ const KO_PATH = pathRow({ id: 'path-ko', language_code: 'ko', goal_type: 'topik_
 const TOPIK_I = examForm('ko:exam:topik-i-mock-1');
 const EN_PATH = pathRow({ id: 'path-en', language_code: 'en', goal_type: 'cefr', current_level: 'a2', target_level: 'b1' });
 const CEFR_A2 = examForm('en:exam:cefr-a2-mock-1');
+// The forms these specs were written against; later demo forms are left out so the hub stays one card per family.
+const KO_FORM_KEYS = ['ko:exam:topik-i-mock-1', 'ko:exam:topik-ii-mock-1'];
 const A11Y_PROJECTS = ['iphone-15-pro', 'pixel-7'];
 
 type Row = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -27,7 +29,7 @@ async function setup(page: Page, exam: ExamMockOptions = {}) {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   // Reloading the runner triggers its beforeunload guard; accept it like a learner who confirms.
   page.on('dialog', (dialog) => void dialog.accept());
-  const mock = await mockSupabase(page, { paths: [KO_PATH], exam });
+  const mock = await mockSupabase(page, { paths: [KO_PATH], exam: { formKeys: KO_FORM_KEYS, ...exam } });
   await signIn(page);
   return mock;
 }
@@ -144,7 +146,7 @@ test('drills one question type without a clock', async ({ page }) => {
 test('AI practice feedback on a written essay (spec 9 X6)', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   page.on('dialog', (dialog) => void dialog.accept());
-  const mock = await mockSupabase(page, { paths: [EN_PATH], ai: { ackAt: '2026-10-01T00:00:00Z' } });
+  const mock = await mockSupabase(page, { paths: [EN_PATH], ai: { ackAt: '2026-10-01T00:00:00Z' }, exam: { formKeys: [CEFR_A2.key] } });
   await signIn(page);
   await openHub(page);
   await page.getByRole('button', { name: 'Luyện theo phần' }).click();

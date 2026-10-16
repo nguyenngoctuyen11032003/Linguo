@@ -1428,6 +1428,8 @@ export function examForm(key: string): Row {
 export interface ExamMockOptions {
   /** Overrides the length of a timed full mock (default: the form's time limits). */
   deadlineSeconds?: number;
+  /** Lists only these form keys (default: every form of the language), so a spec stays stable as content grows. */
+  formKeys?: string[];
 }
 
 interface MockExamAttempt {
@@ -1610,7 +1612,7 @@ function createExamBackend(paths: Array<Record<string, unknown>>, opts: ExamMock
       case '/rest/v1/rpc/list_exam_forms':
         return {
           json: EXAM_BUNDLE.forms
-            .filter((f) => f.language_code === b.p_language)
+            .filter((f) => f.language_code === b.p_language && (!opts.formKeys || opts.formKeys.includes(f.key)))
             .sort((x, y) => EXAM_FAMILY_ORDER.indexOf(x.family) - EXAM_FAMILY_ORDER.indexOf(y.family) || x.key.localeCompare(y.key))
             .map((f) => {
               const qs = f.questions as Row[];
