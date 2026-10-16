@@ -1,0 +1,402 @@
+# Học liệu unit "Nhấn mạnh, mức độ và hồi tưởng" (JLPT N3). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～さえ / ～さえ～ば =================
+  - key: ja:item:n3-gram-sae
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + (で)さえ
+      romanization: sae
+      pos: nhấn mạnh "ngay cả"
+    back:
+      meaning:
+        vi: '"Ngay cả..., đến cả..." - đưa ra ví dụ cực đoan để ngầm nói "huống chi cái khác": 先生でさえ分からない (đến thầy còn không biết). さえ thay は/が/を; với trợ từ khác thì đứng sau: 家族にさえ言わなかった.'
+      examples:
+        - target: 忙しくて、水を飲む時間さえなかった。
+          translation:
+            vi: Bận đến mức cả thời gian uống nước cũng không có.
+      pronunciation_note:
+        vi: さえ đọc "sa-ê", hai nguyên âm tách rõ.
+      confusion:
+        vi: さえ gần nghĩa も (ひらがなも読めない) nhưng nhấn mạnh hơn. Văn viết N1 có すら cùng nghĩa, cứng hơn.
+
+  - key: ja:item:n3-gram-sae-ba
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + さえ + V-ば / Vます-gốc + さえすれば
+      romanization: sae ... ba
+      pos: chỉ cần... là đủ
+    back:
+      meaning:
+        vi: '"Chỉ cần... là (đủ để)..." - một điều kiện duy nhất là đủ: 時間さえあれば (chỉ cần có thời gian), 薬を飲みさえすれば (chỉ cần uống thuốc).'
+      examples:
+        - target: この道具さえあれば、どこでもキャンプができる。
+          translation:
+            vi: Chỉ cần có dụng cụ này là cắm trại ở đâu cũng được.
+      pronunciation_note:
+        vi: さえすれば đọc liền "sa-ê-su-rê-ba".
+      confusion:
+        vi: 'Cùng chữ さえ nhưng có ば phía sau thì nghĩa đổi thành "chỉ cần". Với động từ, さえ chen vào giữa: 練習しさえすれば, không nói ×練習するさえば.'
+
+  - key: ja:item:n3-zairyou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 材料
+      reading: ざいりょう
+      romanization: zairyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên liệu, vật liệu (nấu ăn, làm đồ)
+      examples:
+        - target: カレーの材料を買いにスーパーへ行った。
+          translation:
+            vi: Tôi đi siêu thị mua nguyên liệu nấu cà ri.
+      pronunciation_note:
+        vi: りょう là âm ghép dài - "ryô-ô".
+      confusion:
+        vi: Hán Việt "tài liệu" nhưng nghĩa là nguyên liệu, vật liệu. "Tài liệu" giấy tờ tiếng Nhật là 資料 (しりょう).
+
+  - key: ja:item:n3-dougu
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 道具
+      reading: どうぐ
+      romanization: dōgu
+      pos: danh từ
+    back:
+      meaning:
+        vi: dụng cụ, đồ nghề
+      examples:
+        - target: 祖父は古い道具を大切に使っている。
+          translation:
+            vi: Ông tôi giữ gìn và dùng những dụng cụ cũ.
+      pronunciation_note:
+        vi: どう là âm dài - "do-o-gu"; ど là âm "d" nhẹ, không phải "đ" tiếng Việt.
+      confusion:
+        vi: Hán Việt "đạo cụ" nhưng nghĩa rộng hơn sân khấu - mọi dụng cụ, đồ nghề. Máy móc có động cơ thường gọi là 機械.
+
+  # ================= bài 2: ～こそ / ～とおり =================
+  - key: ja:item:n3-gram-koso
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: N + こそ
+      romanization: koso
+      pos: nhấn mạnh "chính"
+    back:
+      meaning:
+        vi: '"Chính... (chứ không phải cái khác)" - làm nổi bật một từ: 今年こそ合格したい (năm nay nhất định...). Câu đáp lễ quen thuộc: こちらこそ (chính tôi mới phải cảm ơn).'
+      examples:
+        - target: 今度こそ、遅刻しないようにします。
+          translation:
+            vi: Lần này nhất định tôi sẽ không đến muộn nữa.
+      pronunciation_note:
+        vi: こそ đọc "kô-sô", hai âm ngắn.
+      confusion:
+        vi: こそ thay は/が/を (hoặc đứng sau trợ từ khác - 日本でこそ), thường mang sắc thái quyết tâm, đáp lễ hoặc khẳng định "chính cái này". Nó mạnh hơn は nhiều, nên chỉ dùng khi thật sự muốn nhấn.
+
+  - key: ja:item:n3-gram-toori
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る / V-た / N-の + とおり(に) · N + どおり(に)
+      reading: とおり / どおり
+      romanization: tōri / dōri
+      pos: đúng như
+    back:
+      meaning:
+        vi: '"Đúng như, theo đúng..." - làm giống hệt một mẫu, lời nói, kế hoạch: 説明書のとおりに組み立てる, 予定どおり, 言ったとおり.'
+      examples:
+        - target: 先生が言ったとおりに、もう一度書いてみてください。
+          translation:
+            vi: Hãy thử viết lại một lần nữa đúng như thầy đã nói.
+      pronunciation_note:
+        vi: とおり là âm dài "tô-ô-ri"; nối thẳng sau danh từ thì đục thành どおり.
+      confusion:
+        vi: N + のとおり và N + どおり cùng nghĩa (説明書のとおり = 説明書どおり). V-る とおり là "theo cách sắp làm", V-た とおり là "theo đúng điều đã xảy ra / đã nói".
+
+  - key: ja:item:n3-setsumeisho
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 説明書
+      reading: せつめいしょ
+      romanization: setsumeisho
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách hướng dẫn sử dụng, tờ hướng dẫn
+      examples:
+        - target: 使う前に、説明書をよく読んでください。
+          translation:
+            vi: Trước khi dùng, xin hãy đọc kỹ sách hướng dẫn.
+      pronunciation_note:
+        vi: めい đọc "mê-ê"; しょ là âm ghép ngắn.
+      confusion:
+        vi: 説明 (giải thích) + 書 (sách, giấy). Sách hướng dẫn trong hộp đồ điện tử còn gọi là 取扱説明書 hoặc マニュアル.
+
+  - key: ja:item:n3-yotei
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 予定
+      reading: よてい
+      romanization: yotei
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự định, lịch trình đã định; 予定どおり - đúng như dự kiến
+      examples:
+        - target: 来週の予定はまだ決まっていません。
+          translation:
+            vi: Lịch tuần sau vẫn chưa được quyết định.
+      pronunciation_note:
+        vi: てい đọc "tê-ê", hơi kéo dài.
+      confusion:
+        vi: 予定 là việc đã lên lịch (khách quan); つもり là ý định trong đầu. 会議は三時の予定です là "cuộc họp dự kiến lúc 3 giờ".
+
+  # ================= bài 3: ～ば～ほど =================
+  - key: ja:item:n3-gram-ba-hodo
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-ば + V-る + ほど · A-ければ + A-い + ほど · Na-なら + Na-な + ほど
+      romanization: ba ... hodo
+      pos: càng... càng...
+    back:
+      meaning:
+        vi: '"Càng... càng..." - mức độ của vế trước tăng thì vế sau cũng tăng theo: 練習すればするほど上手になる. Lặp cùng một từ hai lần: 安ければ安いほど, 静かなら静かなほど.'
+      examples:
+        - target: 考えれば考えるほど、分からなくなる。
+          translation:
+            vi: Càng nghĩ càng không hiểu.
+      pronunciation_note:
+        vi: ほど đọc "ho-do"; ど là âm "d" nhẹ, không phải "đ" tiếng Việt.
+      confusion:
+        vi: Có thể bỏ vế ば - 練習するほど上手になる vẫn đúng. Khác につれて (N2) - ば～ほど nói quy luật chung, につれて nói thay đổi dần theo thời gian.
+
+  - key: ja:item:n3-joutatsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 上達
+      reading: じょうたつ
+      romanization: jōtatsu
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự tiến bộ (về kỹ năng); 日本語が上達する - tiếng Nhật tiến bộ
+      examples:
+        - target: 毎日話しているので、会話が上達した。
+          translation:
+            vi: Vì ngày nào cũng nói nên khả năng hội thoại đã tiến bộ.
+      pronunciation_note:
+        vi: じょう là âm ghép dài - "jô-ô-ta-tsư".
+      confusion:
+        vi: 上達 dùng cho kỹ năng (ngoại ngữ, thể thao, đàn); điểm số, công việc tốt lên thì dùng 良くなる hoặc 向上する.
+
+  - key: ja:item:n3-nareru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 慣れる
+      reading: なれる
+      romanization: nareru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: quen (với); ～に慣れる - quen với ~
+      examples:
+        - target: 日本の生活にもう慣れましたか。
+          translation:
+            vi: Bạn đã quen với cuộc sống ở Nhật chưa?
+      pronunciation_note:
+        vi: なれる đọc ngắn, không kéo dài.
+      confusion:
+        vi: Quen với cái gì dùng に, không dùng を (×生活を慣れる). Đừng nhầm với なる (trở thành) - 慣れる là động từ khác.
+
+  # ================= bài 4: ～っけ / ～ようとする =================
+  - key: ja:item:n3-gram-kke
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường (quá khứ) / ～でした + っけ
+      romanization: kke
+      pos: hỏi lại điều quên
+    back:
+      meaning:
+        vi: '"...nhỉ? (tôi quên mất)" - hỏi lại hoặc tự hỏi một điều mình từng biết mà quên: 会議は何時からだっけ, 田中さんの誕生日、いつでしたっけ. Hội thoại thân mật hoặc lịch sự nhẹ.'
+      examples:
+        - target: あれ、鍵をどこに置いたっけ。
+          translation:
+            vi: Ơ, mình để chìa khoá ở đâu rồi nhỉ.
+      pronunciation_note:
+        vi: っけ có âm ngắt - ngừng một nhịp trước け.
+      confusion:
+        vi: っけ chỉ hỏi về điều mình đã từng biết; câu hỏi thông tin mới dùng か. Không dùng っけ trong văn bản trang trọng hay với khách.
+
+  - key: ja:item:n3-gram-you-to-suru
+    type: grammar_point
+    level: n3
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-ý chí (行こう・食べよう) + とする / としない
+      romanization: yō to suru
+      pos: định làm, cố làm
+    back:
+      meaning:
+        vi: '(1) "Định..., sắp... thì" - 出かけようとしたとき、雨が降り出した. (2) "Cố..." - 思い出そうとしても思い出せない. (3) ようとしない - "nhất quyết không chịu" (người khác): 息子は野菜を食べようとしない.'
+      examples:
+        - target: 電車に乗ろうとしたら、ドアが閉まってしまった。
+          translation:
+            vi: Vừa định lên tàu thì cửa đóng mất.
+      pronunciation_note:
+        vi: ようと đọc "yô-ô-tô", âm よう kéo dài.
+      confusion:
+        vi: ようとする khác ようと思う (N4) - ようと思う là ý định trong đầu, ようとする là lúc bắt tay vào làm. ようとしない chỉ dùng cho người khác, không nói về chính mình.
+
+  - key: ja:item:n3-nemuru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 眠る
+      reading: ねむる
+      romanization: nemuru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: ngủ (chìm vào giấc ngủ); 眠い - buồn ngủ
+      examples:
+        - target: 赤ちゃんがやっと眠った。
+          translation:
+            vi: Em bé cuối cùng cũng đã ngủ.
+      pronunciation_note:
+        vi: ねむる đọc "nê-mư-rư", ba nhịp đều.
+      confusion:
+        vi: 寝る là đi ngủ, lên giường (hành động); 眠る là trạng thái chìm vào giấc ngủ. 寝ても眠れない - nằm rồi mà không ngủ được.
+
+  - key: ja:item:n3-tashika
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 確か
+      reading: たしか
+      romanization: tashika
+      pos: phó từ / tính từ な
+    back:
+      meaning:
+        vi: (phó từ) hình như, nếu tôi nhớ không nhầm; (な) chắc chắn, đáng tin
+      examples:
+        - target: 確か、駅の近くに郵便局がありました。
+          translation:
+            vi: Nếu tôi nhớ không nhầm thì gần ga có bưu điện.
+      pronunciation_note:
+        vi: たしか - し rất nhẹ, gần như "tash-ka".
+      confusion:
+        vi: Đầu câu, 確か là "hình như (theo trí nhớ)", hay đi với っけ. 確かな情報 lại là "thông tin chắc chắn". Khác 確かに (đúng là vậy).
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n3-mokuhyou
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 目標
+      reading: もくひょう
+      romanization: mokuhyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: mục tiêu; 目標を立てる - đặt mục tiêu; 目標を達成する - đạt mục tiêu
+      examples:
+        - target: 今年の目標は、毎月本を二冊読むことです。
+          translation:
+            vi: Mục tiêu năm nay của tôi là mỗi tháng đọc hai cuốn sách.
+      pronunciation_note:
+        vi: ひょう là âm ghép dài - "hyô-ô".
+      confusion:
+        vi: Hán Việt "mục tiêu" - trùng nghĩa. 目的 (mục đích) là lý do làm việc gì; 目標 là cái mốc cụ thể muốn đạt.
+
+  - key: ja:item:n3-tsuzukeru
+    type: vocab
+    level: n3
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 続ける
+      reading: つづける
+      romanization: tsuzukeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: tiếp tục (làm gì); Vます-gốc + 続ける - làm liên tục (走り続ける)
+      examples:
+        - target: ピアノを十年続けています。
+          translation:
+            vi: Tôi đã theo đuổi piano mười năm nay.
+      pronunciation_note:
+        vi: づ đọc như ず - "tsư-zư-kê-rư".
+      confusion:
+        vi: '続ける là tha động từ (mình tiếp tục việc gì - を); 続く là tự động từ (việc gì đó kéo dài - が): 雨が続く.'
+
+  - key: ja:item:n3-chousen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 挑戦
+      reading: ちょうせん
+      romanization: chōsen
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự thử thách, thử sức; ～に挑戦する - thử sức với ~
+      examples:
+        - target: 来年はフルマラソンに挑戦するつもりです。
+          translation:
+            vi: Năm sau tôi định thử sức với marathon toàn chặng.
+      pronunciation_note:
+        vi: ちょう là âm ghép dài "chô-ô"; せん có ん cuối.
+      confusion:
+        vi: Hán Việt "khiêu chiến" nhưng nghĩa gần "thử sức" hơn "gây chiến". Thử sức với cái gì dùng に, không dùng を.

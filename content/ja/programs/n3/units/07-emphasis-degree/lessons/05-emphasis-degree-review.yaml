@@ -1,0 +1,360 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-emphasis-degree-review
+order_index: 5
+level: n3
+title:
+  vi: Ôn tập - nhật ký "Năm nay nhất định chạy được 10 km"
+objectives:
+  - vi: Đọc hiểu một đoạn nhật ký dùng こそ, さえ～ば, ば～ほど, とおり, ようとする.
+  - vi: Chọn đúng さえ (ngay cả) / さえ～ば (chỉ cần) và とおり / どおり theo ngữ cảnh.
+  - vi: Viết vài câu kể về mục tiêu và quá trình cố gắng của mình.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n3-kke-you-to-suru]
+items:
+  - item: ja:item:n3-mokuhyou
+  - item: ja:item:n3-tsuzukeru
+  - item: ja:item:n3-chousen
+  - item: ja:item:n3-gram-koso
+    role: reuse
+  - item: ja:item:n3-gram-sae
+    role: reuse
+  - item: ja:item:n3-gram-sae-ba
+    role: reuse
+  - item: ja:item:n3-gram-ba-hodo
+    role: reuse
+  - item: ja:item:n3-gram-toori
+    role: reuse
+  - item: ja:item:n3-gram-you-to-suru
+    role: reuse
+  - item: ja:item:n3-gram-kke
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Bài ôn tập là nhật ký của một người quyết tâm chạy bộ: đặt mục tiêu, cố gắng, có lúc muốn bỏ, rồi tiến bộ dần. Mỗi câu trong nhật ký dùng ít nhất một mẫu của unit này.'
+  - type: explain
+    text:
+      vi: 'Ba từ mới: 目標 (mục tiêu - 目標を立てる), 続ける (tiếp tục - Vます + 続ける: 走り続ける), 挑戦 (thử sức - ～に挑戦する).'
+  - type: explain
+    text:
+      vi: 'Khi đọc, tìm dấu hiệu: có ば phía sau さえ → "chỉ cần"; từ lặp hai lần quanh ば～ほど → "càng... càng"; こそ ở đầu câu → quyết tâm; ようとした → khoảnh khắc ngay trước hành động.'
+  - type: deep_explain
+    text:
+      vi: 'Nhật ký tiếng Nhật thường viết ở thể thường (だ / る / た), không dùng です・ます, vì là viết cho chính mình. Khi chuyển sang kể cho người khác nghe, bạn đổi lại sang です・ます.'
+  - type: example
+    target: 今年こそ、十キロを走れるようになりたい。それが今年の目標だ。
+    target_lang: ja
+    translation:
+      vi: Năm nay nhất định tôi muốn chạy được 10 km. Đó là mục tiêu năm nay của tôi.
+  - type: example
+    target: 最初の日は、一キロさえ走れなかった。
+    target_lang: ja
+    translation:
+      vi: Ngày đầu tiên, đến một cây số tôi cũng không chạy nổi.
+  - type: example
+    target: でも、走れば走るほど体が軽くなってきた。
+    target_lang: ja
+    translation:
+      vi: Nhưng càng chạy, cơ thể càng nhẹ nhõm hơn.
+  - type: example
+    target: 来月は市民マラソンに挑戦するつもりだ。
+    target_lang: ja
+    translation:
+      vi: Tháng sau tôi định thử sức với giải marathon của thành phố.
+  - type: common_mistake
+    wrong: 毎日運動をし続けるさえば、健康になれる。
+    right: 毎日運動を続けさえすれば、健康になれる。
+    target_lang: ja
+    note:
+      vi: Với động từ, さえ chen vào giữa gốc ます và すれば - 続けさえすれば.
+  - type: common_mistake
+    wrong: マラソンを挑戦する。
+    right: マラソンに挑戦する。
+    target_lang: ja
+    note:
+      vi: 挑戦する đi với に (thử sức "với"). Tiếng Việt "thử sức với marathon" có chữ "với", tương ứng với に.
+  - type: summary
+    points:
+      - vi: こそ - quyết tâm; さえ - ngay cả; さえ～ば - chỉ cần.
+      - vi: ば～ほど - càng... càng; とおり / どおり - đúng như.
+      - vi: ようとする - vừa định / cố; っけ - hỏi lại điều quên.
+      - vi: 目標 - mục tiêu; 続ける - tiếp tục; 挑戦 - thử sức.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-emph-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-sae-ba
+    prompt:
+      stem: 'Đọc: 「コーチに言われた。『毎日少しずつ続けさえすれば、必ず走れるようになる。』」 Huấn luyện viên muốn nói gì?'
+      stem_lang: vi
+      options:
+        - { id: x2c, text: Chỉ cần mỗi ngày kiên trì một chút là chắc chắn sẽ chạy được., lang: vi }
+        - { id: v6b, text: Ngay cả kiên trì mỗi ngày cũng không chạy được., lang: vi }
+        - { id: n1m, text: Phải chạy thật nhiều trong một ngày mới được., lang: vi }
+        - { id: q8w, text: "Không cần kiên trì, chạy vài lần là đủ.", lang: vi }
+    answer:
+      correct_option_id: x2c
+    explanation:
+      vi: 続けさえすれば - chỉ cần tiếp tục là; 必ず - chắc chắn; 走れるようになる - sẽ chạy được (thay đổi khả năng).
+    display_answer: Chỉ cần mỗi ngày kiên trì một chút là chắc chắn sẽ chạy được.
+
+  - key: ja:exercise:n3-emph-review-listen-tsuzukeru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-tsuzukeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 雨の日も休まずに、三か月走り続けた。
+      options:
+        - { id: e5r, text: "Tôi đã chạy liên tục suốt ba tháng, ngày mưa cũng không nghỉ.", lang: vi }
+        - { id: t9y, text: "Ngày mưa tôi nghỉ chạy, còn lại chạy ba tháng.", lang: vi }
+        - { id: u3i, text: Tôi đã chạy ba ngày dưới mưa rồi nghỉ., lang: vi }
+        - { id: o7p, text: Ba tháng nay trời mưa nên tôi không chạy., lang: vi }
+    answer:
+      correct_option_id: e5r
+    explanation:
+      vi: 休まずに - không nghỉ (ずに học ở unit 4); 走り続けた - đã chạy liên tục (Vます + 続ける).
+    display_answer: Tôi đã chạy liên tục suốt ba tháng, ngày mưa cũng không nghỉ.
+
+  - key: ja:exercise:n3-emph-review-fill-mix
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-toori
+    prompt:
+      template: "コーチに教えてもらった{{b1}}走ったら、足が痛くなくなった。今度{{b2}}、最後まで走りたい。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Chạy đúng như huấn luyện viên đã chỉ thì chân hết đau. Lần này nhất định tôi muốn chạy đến cuối."
+        - "Gợi ý: chỗ 1 là \"đúng như\" sau động từ thể た; chỗ 2 là trợ từ nhấn mạnh quyết tâm."
+    answer:
+      blanks:
+        b1: [とおりに, とおり, 通りに]
+        b2: [こそ]
+    known_wrong:
+      - answer: さえ
+        feedback_vi: さえ là "ngay cả / chỉ cần"; quyết tâm "lần này nhất định" dùng こそ.
+        error_tag: koso_sae
+    explanation:
+      vi: 教えてもらったとおりに - đúng như đã được chỉ; 今度こそ - lần này nhất định. Hai mẫu cùng xuất hiện rất tự nhiên khi kể về luyện tập.
+    display_answer: コーチに教えてもらったとおりに走ったら、足が痛くなくなった。今度こそ、最後まで走りたい。
+
+  - key: ja:exercise:n3-emph-review-wb-chousen
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-chousen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Năm sau tôi muốn thử sức với kỳ thi N2.\""
+      tokens:
+        - { id: r3, text: 挑戦したい }
+        - { id: r1, text: 来年は }
+        - { id: r4, text: N2を }
+        - { id: r2, text: N2に }
+    answer:
+      orders:
+        - [r1, r2, r3]
+    explanation:
+      vi: 挑戦する đi với に - N2に挑戦したい. N2を挑戦 sai trợ từ.
+    display_answer: 来年はN2に挑戦したい。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-emph-review-fill-hodo
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      template: "目標が{{b1}}高いほど、やる気が出る人もいる。(cao - càng cao)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [高ければ, たかければ]
+    known_wrong:
+      - answer: 高いなら
+        feedback_vi: 高い là tính từ đuôi い - dạng điều kiện là 高ければ.
+        error_tag: ba_form
+      - answer: 高くて
+        feedback_vi: Nửa đầu của ば～ほど là dạng điều kiện ければ.
+        error_tag: ba_form
+    explanation:
+      vi: 高ければ高いほど - càng cao càng...; やる気が出る - có động lực. ～人もいる - cũng có người (không phải ai cũng vậy).
+    display_answer: 目標が高ければ高いほど、やる気が出る人もいる。
+
+  - key: ja:exercise:n3-emph-review-write-mokuhyou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-mokuhyou
+    prompt:
+      source_text: Năm nay nhất định tôi sẽ đạt được mục tiêu. (dùng こそ và 目標)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今年こそ、目標を達成します。
+        - 今年こそ目標を達成します。
+        - 今年こそ、目標を達成したい。
+        - 今年こそ、目標を達成したいです。
+        - 今年こそ、目標を達成する。
+        - 今年こそ、目標を達成するつもりです。
+        - 今年こそ、目標を達成してみせます。
+        - ことしこそ、もくひょうをたっせいします。
+    known_wrong:
+      - answer: 今年はこそ、目標を達成します。
+        feedback_vi: こそ thay luôn は - 今年こそ.
+        error_tag: koso_position
+      - answer: 今年こそ、目標に達成します。
+        feedback_vi: 達成する là tha động từ - mục tiêu đi với を (目標を達成する).
+        error_tag: particle
+    explanation:
+      vi: 今年こそ - năm nay nhất định; 目標を達成する - đạt được mục tiêu. てみせます thêm sắc thái "sẽ làm cho mọi người thấy".
+    display_answer: 今年こそ、目標を達成します。
+
+  - key: ja:exercise:n3-emph-review-write-yamete
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-to-suru
+    prompt:
+      source_text: Đã mấy lần tôi định bỏ, nhưng vẫn tiếp tục chạy. (dùng ようとする và 続ける)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 何度もやめようとしたが、走り続けた。
+        - 何度もやめようとしましたが、走り続けました。
+        - 何度もやめようとしたけど、走り続けた。
+        - 何度もやめようとしたけれど、走り続けた。
+        - 何回もやめようとしたが、走り続けた。
+        - 何度もやめようとしたが、それでも走り続けた。
+        - 何度も辞めようとしたが、走り続けた。
+        - なんどもやめようとしたが、はしりつづけた。
+    known_wrong:
+      - answer: 何度もやめるようとしたが、走り続けた。
+        feedback_vi: Trước とする dùng thể ý chí - やめよう.
+        error_tag: you_to_suru_form
+      - answer: 何度もやめようとしたが、走って続けた。
+        feedback_vi: Muốn nói "tiếp tục làm V" thì dùng Vます-gốc + 続ける - 走り続けた.
+        error_tag: tsuzukeru_form
+    explanation:
+      vi: やめようとした - đã định bỏ (sắp làm thì dừng); 走り続けた - vẫn tiếp tục chạy. が / けど nối hai vế trái ngược.
+    display_answer: 何度もやめようとしたが、走り続けた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-emph-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-sae
+    prompt:
+      source_text: 始めたころは、靴の選び方さえ知らなかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hồi mới bắt đầu, đến cách chọn giày tôi cũng không biết.
+        - Lúc mới bắt đầu, ngay cả cách chọn giày tôi cũng không biết.
+        - Hồi mới bắt đầu, tôi đến cách chọn giày cũng chẳng biết.
+        - Khi mới bắt đầu, tôi ngay cả cách chọn giày cũng không biết.
+        - Lúc mới bắt đầu, tôi còn không biết cả cách chọn giày.
+        - Hồi mới bắt đầu, đến cách chọn giày mình cũng không biết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hồi mới bắt đầu, chỉ cần biết cách chọn giày là đủ.
+        feedback_vi: Không có ば phía sau さえ nên nghĩa là "ngay cả", không phải "chỉ cần".
+        error_tag: sae_ba_meaning
+    explanation:
+      vi: 始めたころ - hồi mới bắt đầu; 靴の選び方さえ知らなかった - đến cách chọn giày cũng không biết. Ví dụ "đơn giản nhất" cho thấy lúc đó mình chưa biết gì.
+    display_answer: Hồi mới bắt đầu, đến cách chọn giày tôi cũng không biết.
+
+  - key: ja:exercise:n3-emph-review-mcq-kke
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-kke
+    prompt:
+      stem: Bạn từng nghe bạn chạy cùng nói ngày giải marathon nhưng quên mất. Bạn hỏi lại (thân mật). Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: w4e, text: マラソン大会って、いつだっけ。, lang: ja }
+        - { id: s8d, text: マラソン大会って、いつっけ。, lang: ja }
+        - { id: f3g, text: マラソン大会って、いつだっけでした。, lang: ja }
+        - { id: h7j, text: マラソン大会って、いつさえ。, lang: ja }
+    answer:
+      correct_option_id: w4e
+    explanation:
+      vi: いつ + だっけ - khi nào ấy nhỉ. Từ để hỏi cần だ trước っけ; だっけでした sai; さえ không dùng để hỏi.
+    display_answer: マラソン大会って、いつだっけ。
+
+  - key: ja:exercise:n3-emph-review-write-hodo
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      source_text: Càng tập luyện, tôi càng thấy chạy vui hơn. (dùng ば～ほど)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 練習すればするほど、走るのが楽しくなる。
+        - 練習すればするほど、走るのが楽しくなります。
+        - 練習すればするほど、走るのが楽しくなってきた。
+        - 練習すればするほど、走ることが楽しくなる。
+        - 練習すればするほど、走るのが楽しくなった。
+        - 練習するほど、走るのが楽しくなる。
+        - 練習すればするほど、ランニングが楽しくなる。
+        - れんしゅうすればするほど、はしるのがたのしくなる。
+    known_wrong:
+      - answer: 練習すればしたほど、走るのが楽しくなる。
+        feedback_vi: Nửa sau dùng thể từ điển - するほど.
+        error_tag: hodo_tense
+      - answer: 練習するなら練習するほど、走るのが楽しくなる。
+        feedback_vi: Động từ dùng dạng ば ở nửa đầu - 練習すれば.
+        error_tag: ba_form
+    explanation:
+      vi: '練習すればするほど - càng tập càng...; 走るのが楽しくなる - chạy trở nên vui (の biến 走る thành danh từ). Có thể bỏ nửa đầu: 練習するほど.'
+    display_answer: 練習すればするほど、走るのが楽しくなる。
+
+  - key: ja:exercise:n3-emph-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sae-ba
+    prompt:
+      stem: Bạn động viên người bạn đang lo không chạy hết giải. Bạn muốn nói "Chỉ cần đừng bỏ cuộc giữa chừng là được." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: z9x, text: 途中であきらめさえしなければ、大丈夫だよ。, lang: ja }
+        - { id: c4v, text: 途中であきらめさえすれば、大丈夫だよ。, lang: ja }
+        - { id: b8n, text: 途中であきらめるさえなければ、大丈夫だよ。, lang: ja }
+        - { id: m2q, text: 途中であきらめこそしなければ、大丈夫だよ。, lang: ja }
+    answer:
+      correct_option_id: z9x
+    explanation:
+      vi: Vます-gốc + さえしなければ - chỉ cần không (làm V) là... さえすれば ngược nghĩa (chỉ cần bỏ cuộc); あきらめるさえ sai dạng; こそ không dùng trong mẫu điều kiện này.
+    display_answer: 途中であきらめさえしなければ、大丈夫だよ。

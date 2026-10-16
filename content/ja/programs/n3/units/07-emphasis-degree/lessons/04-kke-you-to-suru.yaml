@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-kke-you-to-suru
+order_index: 4
+level: n3
+title:
+  vi: Hỏi lại điều quên và định làm - ～っけ, ～ようとする
+objectives:
+  - vi: Hỏi lại điều mình từng biết mà quên bằng ～っけ.
+  - vi: Nói "vừa định... thì" và "cố... mà không được" bằng ～ようとする.
+  - vi: Nói người khác "nhất quyết không chịu" bằng ～ようとしない.
+estimated_minutes: 18
+skills: [grammar, speaking, listening]
+prerequisites: [ja:lesson:n3-ba-hodo]
+items:
+  - item: ja:item:n3-gram-kke
+  - item: ja:item:n3-gram-you-to-suru
+  - item: ja:item:n3-nemuru
+  - item: ja:item:n3-tashika
+  - item: ja:item:n4-gram-volitional
+    role: reuse
+  - item: ja:item:n3-omoidasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được "Cuộc họp mấy giờ ấy nhỉ?" khi lỡ quên, kể "vừa định ra khỏi nhà thì điện thoại reo" và than "con tôi nhất quyết không chịu ăn rau".
+  - type: explain
+    text:
+      vi: 'Thể thường + っけ - "...nhỉ? (tôi quên mất)": hỏi lại điều mình từng biết. Danh từ / tính từ な dùng だっけ (会議は何時だっけ); lịch sự hơn là でしたっけ. Hay đi cùng 確か (hình như) và あれ (ơ).'
+  - type: explain
+    text:
+      vi: 'Thể ý chí (行こう, 食べよう - N4) + とする: (1) "vừa định... thì" - 出かけようとしたとき; (2) "cố..." - 思い出そうとしても思い出せない. ようとしない - "nhất quyết không chịu", chỉ dùng cho người khác.'
+  - type: deep_explain
+    text:
+      vi: 'っけ chỉ hỏi điều đã biết mà quên; câu hỏi thông tin mới dùng か. Với cấp trên, っけ nghe hơi thân - nói lịch sự: 何時からでしたっけ. ようとする khác ようと思う (N4): ようと思う là ý định trong đầu, ようとする là lúc bắt tay vào làm thật.'
+  - type: example
+    target: あれ、田中さんの部屋は何階だっけ。
+    target_lang: ja
+    translation:
+      vi: Ơ, phòng anh Tanaka ở tầng mấy ấy nhỉ.
+  - type: example
+    target: 確か、次の授業は休講でしたっけ。
+    target_lang: ja
+    translation:
+      vi: Hình như tiết học tới được nghỉ phải không nhỉ.
+  - type: example
+    target: 家を出ようとしたら、急に雨が降り出した。
+    target_lang: ja
+    translation:
+      vi: Vừa định ra khỏi nhà thì trời bỗng đổ mưa.
+  - type: example
+    target: 何度起こしても、弟は起きようとしない。
+    target_lang: ja
+    translation:
+      vi: Gọi dậy bao nhiêu lần mà em trai tôi vẫn nhất quyết không chịu dậy.
+  - type: common_mistake
+    wrong: 私は野菜を食べようとしない。
+    right: 私は野菜をあまり食べない。
+    target_lang: ja
+    note:
+      vi: ようとしない tả thái độ "không chịu" của người khác mà mình quan sát. Nói về chính mình thì dùng thể phủ định bình thường.
+  - type: common_mistake
+    wrong: 会議は何時っけ。
+    right: 会議は何時だっけ。
+    target_lang: ja
+    note:
+      vi: 'Sau danh từ (何時) phải có だ - だっけ. Động từ, tính từ い thì gắn thẳng: 行ったっけ, 高かったっけ.'
+  - type: summary
+    points:
+      - vi: Thể thường + っけ / N だっけ / でしたっけ - ...nhỉ? (hỏi lại điều quên).
+      - vi: V-ý chí + とする - vừa định...; cố...; ようとしない - (người khác) không chịu.
+      - vi: 確か - hình như (theo trí nhớ); 眠る - ngủ (chìm vào giấc ngủ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-kke-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-kke
+    prompt:
+      stem: 'Đồng nghiệp hỏi 「明日の飲み会、どこだっけ。」 Ý họ là gì?'
+      stem_lang: vi
+      options:
+        - { id: p4a, text: Họ đã biết địa điểm nhưng quên nên hỏi lại., lang: vi }
+        - { id: s9d, text: Họ chưa bao giờ nghe về buổi liên hoan., lang: vi }
+        - { id: f2g, text: Họ muốn đổi địa điểm buổi liên hoan., lang: vi }
+        - { id: j6k, text: Họ không muốn đi liên hoan., lang: vi }
+    answer:
+      correct_option_id: p4a
+    explanation:
+      vi: っけ là hỏi lại điều từng biết mà quên. Nếu chưa từng biết, người ta hỏi bằng か - どこですか.
+    display_answer: Họ đã biết địa điểm nhưng quên nên hỏi lại.
+
+  - key: ja:exercise:n3-kke-listen-nemuru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-you-to-suru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 早く眠ろうとしても、明日の試験のことを考えて眠れなかった。
+      options:
+        - { id: l1z, text: Dù cố ngủ sớm nhưng vì nghĩ đến bài thi ngày mai nên tôi không ngủ được., lang: vi }
+        - { id: x5c, text: Tôi ngủ sớm nên không lo về bài thi ngày mai., lang: vi }
+        - { id: v8b, text: Tôi định thức khuya để ôn thi., lang: vi }
+        - { id: n3m, text: Tôi không muốn ngủ vì bài thi đã xong., lang: vi }
+    answer:
+      correct_option_id: l1z
+    explanation:
+      vi: 眠ろうとしても - dù cố ngủ; 眠れなかった - đã không ngủ được. ようとする + ても cho thấy nỗ lực không thành.
+    display_answer: Dù cố ngủ sớm nhưng vì nghĩ đến bài thi ngày mai nên tôi không ngủ được.
+
+  - key: ja:exercise:n3-kke-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-kke
+    prompt:
+      template: "あの映画のタイトル、何{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Tên bộ phim đó là gì ấy nhỉ."
+        - "Gợi ý: sau danh từ cần だ, rồi thêm っけ."
+    answer:
+      blanks:
+        b1: [だっけ, でしたっけ]
+    known_wrong:
+      - answer: っけ
+        feedback_vi: Sau danh từ / từ để hỏi 何 phải có だ - 何だっけ.
+        error_tag: kke_da
+      - answer: ですか
+        feedback_vi: ですか là hỏi thông tin mới; câu này là tự hỏi lại điều đã quên - だっけ.
+        error_tag: kke_ka
+    explanation:
+      vi: 何だっけ - là gì ấy nhỉ. Người nói từng biết tên phim nhưng quên mất, nên dùng っけ.
+    display_answer: あの映画のタイトル、何だっけ。
+
+  - key: ja:exercise:n3-kke-mcq-tashika
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-tashika
+    prompt:
+      stem: 'Trong câu 確か、山田さんは大阪の出身です。, 確か nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: r7t, text: "hình như, nếu tôi nhớ không nhầm", lang: vi }
+        - { id: y3u, text: chắc chắn một trăm phần trăm, lang: vi }
+        - { id: i8o, text: đúng là (đồng ý với người nói), lang: vi }
+        - { id: e4w, text: có lẽ không phải, lang: vi }
+    answer:
+      correct_option_id: r7t
+    explanation:
+      vi: Đứng đầu câu, 確か là "hình như (theo trí nhớ của tôi)". 確かに mới là "đúng là"; 確かな情報 là "thông tin chắc chắn".
+    display_answer: hình như, nếu tôi nhớ không nhầm
+
+  - key: ja:exercise:n3-kke-wb-you-to-shinai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-to-suru
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Con mèo nhất quyết không chịu ra khỏi hộp.\""
+      tokens:
+        - { id: k3, text: 出ようとしない }
+        - { id: k1, text: 猫は }
+        - { id: k4, text: 出るようとしない }
+        - { id: k2, text: 箱から }
+    answer:
+      orders:
+        - [k1, k2, k3]
+        - [k2, k1, k3]
+    explanation:
+      vi: 出る → thể ý chí 出よう + としない - nhất quyết không chịu ra. 出るようとしない sai vì phải dùng thể ý chí.
+    display_answer: 猫は箱から出ようとしない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-kke-fill-kaeru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-to-suru
+    prompt:
+      template: "会社から{{b1}}としたとき、部長に呼ばれた。(帰る)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [帰ろう, かえろう]
+    known_wrong:
+      - answer: 帰る
+        feedback_vi: Trước とする dùng thể ý chí - 帰ろう.
+        error_tag: you_to_suru_form
+      - answer: 帰りよう
+        feedback_vi: 帰る là động từ nhóm 1 - thể ý chí là 帰ろう (う → おう).
+        error_tag: volitional_form
+    explanation:
+      vi: 帰る → 帰ろう + としたとき - đúng lúc vừa định về thì... Động từ nhóm 1 đổi đuôi う thành お + う.
+    display_answer: 会社から帰ろうとしたとき、部長に呼ばれた。
+
+  - key: ja:exercise:n3-kke-write-kke
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-kke
+    prompt:
+      source_text: Bài tập hạn nộp là thứ Sáu ấy nhỉ? (hỏi lại vì quên, thân mật)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 宿題の締め切りは金曜日だっけ。
+        - 宿題の締め切りは金曜日だっけ？
+        - 宿題の締め切り、金曜日だっけ。
+        - 宿題は金曜日までだっけ。
+        - 宿題の締め切りって金曜日だっけ。
+        - 宿題の締切は金曜日だっけ。
+        - しゅくだいのしめきりはきんようびだっけ。
+    known_wrong:
+      - answer: 宿題の締め切りは金曜日っけ。
+        feedback_vi: Sau danh từ 金曜日 cần だ - 金曜日だっけ.
+        error_tag: kke_da
+      - answer: 宿題の締め切りは金曜日ですか。
+        feedback_vi: Câu đúng ngữ pháp nhưng là hỏi thông tin mới; hỏi lại điều đã quên dùng だっけ.
+        error_tag: kke_ka
+    explanation:
+      vi: N + だっけ - ...ấy nhỉ (hỏi lại). 締め切り - hạn chót (đã học ở N4). Thân mật nên không dùng です.
+    display_answer: 宿題の締め切りは金曜日だっけ。
+
+  - key: ja:exercise:n3-kke-write-omoidasu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-omoidasu
+    prompt:
+      source_text: Tôi cố nhớ lại tên của người đó nhưng không nhớ ra được. (dùng ようとする)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あの人の名前を思い出そうとしたが、思い出せなかった。
+        - あの人の名前を思い出そうとしましたが、思い出せませんでした。
+        - あの人の名前を思い出そうとしても、思い出せなかった。
+        - あの人の名前を思い出そうとしても、思い出せませんでした。
+        - あの人の名前を思い出そうとしたけど、思い出せなかった。
+        - その人の名前を思い出そうとしたが、思い出せなかった。
+        - あのひとのなまえをおもいだそうとしたが、おもいだせなかった。
+    known_wrong:
+      - answer: あの人の名前を思い出すようとしたが、思い出せなかった。
+        feedback_vi: Trước とする dùng thể ý chí - 思い出そう.
+        error_tag: you_to_suru_form
+      - answer: あの人の名前を思い出そうと思ったが、思い出せなかった。
+        feedback_vi: ようと思う là ý định trong đầu; "cố (làm thật)" dùng ようとする.
+        error_tag: you_to_omou_suru
+    explanation:
+      vi: 思い出す → 思い出そう + とした - đã cố nhớ lại; 思い出せなかった - không nhớ ra được (thể khả năng).
+    display_answer: あの人の名前を思い出そうとしたが、思い出せなかった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-kke-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-you-to-suru
+    prompt:
+      source_text: バスに乗ろうとしたとき、財布がないことに気がついた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đúng lúc định lên xe buýt thì tôi nhận ra mình không có ví.
+        - Vừa định lên xe buýt thì tôi nhận ra không có ví.
+        - Lúc sắp lên xe buýt, tôi phát hiện ra mình không mang ví.
+        - Khi định lên xe buýt, tôi nhận ra là không có ví.
+        - Vừa định lên xe buýt thì tôi phát hiện ví không còn.
+        - Đúng lúc định lên xe buýt tôi mới nhận ra là mất ví.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi lên xe buýt, tôi nhận ra không có ví.
+        feedback_vi: 乗ろうとしたとき là "vừa định lên" (chưa lên), không phải "sau khi lên".
+        error_tag: meaning
+    explanation:
+      vi: 乗ろうとしたとき - đúng lúc định lên; 財布がないことに気がついた - nhận ra không có ví. ようとする nhấn khoảnh khắc ngay trước hành động.
+    display_answer: Đúng lúc định lên xe buýt thì tôi nhận ra mình không có ví.
+
+  - key: ja:exercise:n3-kke-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-kke
+    prompt:
+      stem: Bạn từng được trưởng phòng cho biết giờ họp nhưng lỡ quên. Bạn hỏi lại trưởng phòng một cách lịch sự. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: a5s, text: 部長、会議は何時からでしたっけ。, lang: ja }
+        - { id: d9f, text: 部長、会議は何時からっけ。, lang: ja }
+        - { id: g1h, text: 部長、会議は何時からだっけ。, lang: ja }
+        - { id: k7l, text: 部長、会議は何時からでしたか知りません。, lang: ja }
+    answer:
+      correct_option_id: a5s
+    explanation:
+      vi: Với cấp trên dùng でしたっけ - vừa lịch sự vừa cho thấy mình từng biết. だっけ quá thân mật; からっけ thiếu だ; phương án cuối không phải câu hỏi.
+    display_answer: 部長、会議は何時からでしたっけ。
+
+  - key: ja:exercise:n3-kke-write-shinai
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-you-to-suru
+    prompt:
+      source_text: Bố tôi nhất quyết không chịu đi bệnh viện. (dùng ようとしない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 父は病院に行こうとしない。
+        - 父は病院へ行こうとしない。
+        - 父は病院に行こうとしません。
+        - 父はなかなか病院に行こうとしない。
+        - 父は病院に行こうとしないんです。
+        - 父はどうしても病院に行こうとしない。
+        - ちちはびょういんにいこうとしない。
+    known_wrong:
+      - answer: 父は病院に行くようとしない。
+        feedback_vi: Trước としない dùng thể ý chí - 行こう.
+        error_tag: you_to_suru_form
+      - answer: お父さんは病院に行こうとしない。
+        feedback_vi: Kể về bố mình với người ngoài dùng 父, không dùng お父さん.
+        error_tag: uchi_soto
+    explanation:
+      vi: 行く → 行こう + としない - nhất quyết không chịu đi. Người nói quan sát thái độ của bố nên dùng ようとしない hợp lý.
+    display_answer: 父は病院に行こうとしない。
+
+  - key: ja:exercise:n3-kke-wb-situation
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-tashika
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hình như cửa hàng đó hôm nay nghỉ ấy nhỉ.\""
+      tokens:
+        - { id: q4, text: 休みだっけ }
+        - { id: q2, text: あの店は }
+        - { id: q5, text: 休みっけ }
+        - { id: q1, text: 確か }
+        - { id: q3, text: 今日 }
+    answer:
+      orders:
+        - [q1, q2, q3, q4]
+        - [q2, q1, q3, q4]
+        - [q1, q3, q2, q4]
+        - [q2, q3, q1, q4]
+        - [q3, q1, q2, q4]
+        - [q3, q2, q1, q4]
+    explanation:
+      vi: 確か (hình như) + ... + 休みだっけ. 休み là danh từ nên cần だ trước っけ; 休みっけ sai.
+    display_answer: 確か、あの店は今日休みだっけ。

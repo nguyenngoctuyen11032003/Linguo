@@ -1,0 +1,368 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-koso-toori
+order_index: 2
+level: n3
+title:
+  vi: Chính là, đúng như - ～こそ và ～とおり(に)
+objectives:
+  - vi: Nhấn "chính cái này" và nói quyết tâm bằng ～こそ.
+  - vi: Làm "đúng như" lời nói, hướng dẫn, kế hoạch bằng ～とおり(に) / ～どおり(に).
+  - vi: Đáp lễ tự nhiên bằng こちらこそ.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-sae-ba]
+items:
+  - item: ja:item:n3-gram-koso
+  - item: ja:item:n3-gram-toori
+  - item: ja:item:n3-setsumeisho
+  - item: ja:item:n3-yotei
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Năm nay nhất định tôi sẽ đỗ", "Chính tôi mới phải cảm ơn" và "Hãy làm đúng như hướng dẫn" - những câu rất hay gặp ở trường và nơi làm việc.
+  - type: explain
+    text:
+      vi: 'N + こそ - "chính (là)...": làm nổi bật một từ, như dấu gạch dưới. Hay gặp nhất: 今年こそ / 今度こそ (lần này nhất định), こちらこそ (chính tôi mới phải...). こそ thay は/が/を.'
+  - type: explain
+    text:
+      vi: 'V-る / V-た / N-の + とおり(に) - "đúng như": 言ったとおり (đúng như đã nói), 説明書のとおりに. Danh từ cũng có thể nối thẳng, khi đó đọc đục thành どおり: 予定どおり, 説明書どおり.'
+  - type: deep_explain
+    text:
+      vi: 'V-る とおり là "theo cách (tôi) sắp làm": 私が今からやるとおりにやってください. V-た とおり là "đúng điều đã xảy ra, đã nói": 思ったとおり (đúng như tôi nghĩ). こそ có thể đứng sau trợ từ khác: 日本でこそ, 今だからこそ (chính vì bây giờ).'
+  - type: example
+    target: 来年こそ、日本語能力試験のN2に合格したい。
+    target_lang: ja
+    translation:
+      vi: Năm sau nhất định tôi muốn đỗ kỳ thi năng lực tiếng Nhật N2.
+  - type: example
+    target: 「いつもありがとうございます。」「いえ、こちらこそ。」
+    target_lang: ja
+    translation:
+      vi: "\"Lúc nào cũng cảm ơn anh.\" - \"Không, chính tôi mới phải cảm ơn.\""
+  - type: example
+    target: 地図のとおりに歩いたら、すぐに駅に着きました。
+    target_lang: ja
+    translation:
+      vi: Đi đúng như bản đồ chỉ, tôi đến ga ngay.
+  - type: example
+    target: 工事は予定どおり、来月終わります。
+    target_lang: ja
+    translation:
+      vi: Công trình sẽ xong vào tháng sau như dự kiến.
+    note:
+      vi: N + どおり (âm đục) khi nối thẳng sau danh từ.
+  - type: common_mistake
+    wrong: 予定のどおり、会議が始まった。
+    right: 予定どおり、会議が始まった。
+    target_lang: ja
+    note:
+      vi: Có の thì dùng とおり (予定のとおり); nối thẳng thì dùng どおり (予定どおり). Không trộn の với どおり.
+  - type: common_mistake
+    wrong: 今度をこそ頑張ります。
+    right: 今度こそ頑張ります。
+    target_lang: ja
+    note:
+      vi: こそ thay luôn は/が/を, không đứng sau を.
+  - type: summary
+    points:
+      - vi: N + こそ - chính (là); 今年こそ / 今度こそ - lần này nhất định.
+      - vi: こちらこそ - chính tôi mới phải (đáp lễ).
+      - vi: V-る / V-た / N-の + とおり(に); N + どおり(に) - đúng như.
+      - vi: 説明書 - sách hướng dẫn; 予定 - dự định, lịch trình.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-koso-toori-mcq-reply
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-koso
+    prompt:
+      stem: 'Đối tác nói 「先日はお世話になりました。」 (Hôm trước được anh giúp đỡ nhiều.) Bạn cũng muốn cảm ơn họ. Đáp lại thế nào?'
+      stem_lang: vi
+      options:
+        - { id: p2a, text: こちらこそ、お世話になりました。, lang: ja }
+        - { id: s7d, text: こちらさえ、お世話になりました。, lang: ja }
+        - { id: f3g, text: こちらを、お世話になりました。, lang: ja }
+        - { id: j8k, text: こちらどおり、お世話になりました。, lang: ja }
+    answer:
+      correct_option_id: p2a
+    explanation:
+      vi: こちらこそ - "chính tôi mới phải (cảm ơn)", câu đáp lễ cố định. さえ là "ngay cả", どおり là "đúng như" - đều không hợp.
+    display_answer: こちらこそ、お世話になりました。
+
+  - key: ja:exercise:n3-koso-toori-listen-setsumeisho
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-toori
+    prompt:
+      audio_asset_id: null
+      fallback_text: 説明書に書いてあるとおりに組み立てたのに、うまく動かない。
+      options:
+        - { id: l4z, text: "Tôi đã lắp đúng như sách hướng dẫn ghi, vậy mà máy không chạy được.", lang: vi }
+        - { id: x9c, text: Tôi không đọc sách hướng dẫn nên máy không chạy., lang: vi }
+        - { id: v5b, text: Sách hướng dẫn viết sai nên tôi lắp theo cách khác., lang: vi }
+        - { id: n1m, text: Tôi lắp đúng hướng dẫn và máy chạy tốt., lang: vi }
+    answer:
+      correct_option_id: l4z
+    explanation:
+      vi: 書いてあるとおりに - đúng như (đã được) ghi; 組み立てる - lắp ráp; のに - vậy mà; うまく動かない - không chạy tốt.
+    display_answer: Tôi đã lắp đúng như sách hướng dẫn ghi, vậy mà máy không chạy được.
+
+  - key: ja:exercise:n3-koso-toori-fill-doori
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-toori
+    prompt:
+      template: "飛行機は時間{{b1}}に到着しました。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Máy bay đã hạ cánh đúng giờ."
+        - "Gợi ý: nối thẳng sau danh từ 時間, âm đầu đục."
+    answer:
+      blanks:
+        b1: [どおり]
+    known_wrong:
+      - answer: とおり
+        feedback_vi: Nối thẳng sau danh từ (không có の) thì đọc đục - 時間どおり.
+        error_tag: toori_doori
+      - answer: のどおり
+        feedback_vi: Có の thì dùng とおり; không trộn の với どおり.
+        error_tag: toori_doori
+    explanation:
+      vi: '時間どおりに - đúng giờ (đúng như thời gian đã định). Danh từ + どおり là cách nói rất hay gặp: 予定どおり, 計画どおり.'
+    display_answer: 飛行機は時間どおりに到着しました。
+
+  - key: ja:exercise:n3-koso-toori-mcq-yotei
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-yotei
+    prompt:
+      stem: 'Câu 週末の予定はもう決まりましたか。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: r6t, text: Bạn đã có lịch cho cuối tuần chưa?, lang: vi }
+        - { id: y2u, text: Cuối tuần bạn có rảnh không?, lang: vi }
+        - { id: i7o, text: Cuối tuần này bạn đã đi đâu?, lang: vi }
+        - { id: e3w, text: Bạn có thích cuối tuần không?, lang: vi }
+    answer:
+      correct_option_id: r6t
+    explanation:
+      vi: 予定 - lịch trình, dự định đã lên; 決まりましたか - đã được quyết định chưa. Hỏi rảnh là 暇ですか.
+    display_answer: Bạn đã có lịch cho cuối tuần chưa?
+
+  - key: ja:exercise:n3-koso-toori-wb-koso
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koso
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lần này nhất định tôi sẽ không thua.\""
+      tokens:
+        - { id: c3, text: 負けません }
+        - { id: c1, text: 今度 }
+        - { id: c4, text: をこそ }
+        - { id: c2, text: こそ }
+    answer:
+      orders:
+        - [c1, c2, c3]
+    explanation:
+      vi: 今度こそ - lần này nhất định; こそ thay luôn trợ từ nên không có をこそ.
+    display_answer: 今度こそ負けません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-koso-toori-fill-itta
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-toori
+    prompt:
+      template: "ほら、私が{{b1}}とおり、雨が降ってきたでしょう。(言う)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [言った, いった]
+    known_wrong:
+      - answer: 言う
+        feedback_vi: 'Điều "đã nói" trước đó - dùng thể た: 言ったとおり.'
+        error_tag: toori_tense
+      - answer: 言って
+        feedback_vi: Trước とおり dùng thể る hoặc た, không dùng thể て.
+        error_tag: toori_form
+    explanation:
+      vi: V-た + とおり - đúng như điều đã (nói, nghĩ). 言ったとおり - đúng như tôi đã nói; ほら và でしょう thể hiện "thấy chưa".
+    display_answer: ほら、私が言ったとおり、雨が降ってきたでしょう。
+
+  - key: ja:exercise:n3-koso-toori-write-koso
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-koso
+    prompt:
+      source_text: Năm nay nhất định tôi sẽ bỏ thuốc lá. (dùng こそ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今年こそ、たばこをやめます。
+        - 今年こそたばこをやめます。
+        - 今年こそ、タバコをやめます。
+        - 今年こそ、たばこを止めます。
+        - 今年こそ、禁煙します。
+        - 今年こそ、たばこをやめるつもりです。
+        - 今年こそ、たばこをやめたいです。
+        - 今年こそ、たばこをやめる。
+        - ことしこそ、たばこをやめます。
+    known_wrong:
+      - answer: 今年はこそ、たばこをやめます。
+        feedback_vi: こそ thay luôn は - 今年こそ.
+        error_tag: koso_position
+      - answer: 今年さえ、たばこをやめます。
+        feedback_vi: さえ là "ngay cả" - không mang nghĩa quyết tâm "nhất định".
+        error_tag: koso_sae
+    explanation:
+      vi: '今年こそ - năm nay nhất định (ngầm: những năm trước đã thất bại); たばこをやめる - bỏ thuốc lá. 禁煙する cũng đúng nghĩa.'
+    display_answer: 今年こそ、たばこをやめます。
+
+  - key: ja:exercise:n3-koso-toori-write-plan
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-yotei
+    prompt:
+      source_text: Chuyến du lịch đã kết thúc đúng như dự định. (dùng どおり)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 旅行は予定どおりに終わりました。
+        - 旅行は予定どおり終わりました。
+        - 旅行は予定通りに終わりました。
+        - 旅行は予定通り終わりました。
+        - 旅行は予定どおりに終わった。
+        - 旅行は予定どおり終わった。
+        - 旅行は計画どおりに終わりました。
+        - りょこうはよていどおりにおわりました。
+    known_wrong:
+      - answer: 旅行は予定のどおりに終わりました。
+        feedback_vi: Có の thì dùng とおり; nối thẳng sau danh từ mới dùng どおり.
+        error_tag: toori_doori
+      - answer: 旅行は予定とおりに終わりました。
+        feedback_vi: Nối thẳng sau danh từ thì đục thành どおり (予定どおり).
+        error_tag: toori_doori
+    explanation:
+      vi: 予定どおり(に) - đúng như dự định; に có thể bỏ. Viết bằng chữ Hán là 予定通り.
+    display_answer: 旅行は予定どおりに終わりました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-koso-toori-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-koso
+    prompt:
+      source_text: 失敗したからこそ、分かったこともある。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chính vì đã thất bại nên cũng có những điều tôi hiểu ra.
+        - Chính vì thất bại nên mới có những điều hiểu ra được.
+        - Chính nhờ thất bại mà có những điều tôi mới hiểu.
+        - Có những điều phải thất bại rồi mới hiểu được.
+        - Chính vì đã thất bại mà cũng có những điều mình hiểu ra.
+        - Cũng có những điều chính vì thất bại nên mới hiểu được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì thất bại nên tôi chẳng hiểu gì cả.
+        feedback_vi: ことがある là "cũng có (những điều)", câu mang ý tích cực - thất bại giúp hiểu ra.
+        error_tag: meaning
+    explanation:
+      vi: からこそ - chính vì (nhấn mạnh lý do); 分かったこともある - cũng có những điều đã hiểu ra. こそ sau から biến lý do bình thường thành lý do "đặc biệt".
+    display_answer: Chính vì đã thất bại nên cũng có những điều tôi hiểu ra.
+
+  - key: ja:exercise:n3-koso-toori-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-toori
+    prompt:
+      stem: Bạn hướng dẫn nhân viên mới làm thủ tục và muốn họ làm theo đúng cách bạn sắp làm mẫu. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: a6s, text: 今から私がやるとおりに、やってみてください。, lang: ja }
+        - { id: d1f, text: 今から私がやったどおりに、やってみてください。, lang: ja }
+        - { id: g5h, text: 今から私がやるこそ、やってみてください。, lang: ja }
+        - { id: k8l, text: 今から私がやってとおりに、やってみてください。, lang: ja }
+    answer:
+      correct_option_id: a6s
+    explanation:
+      vi: Việc sắp làm mẫu - V-る + とおりに. どおり chỉ nối sau danh từ; こそ không gắn sau động từ như vậy; thể て không đứng trước とおり.
+    display_answer: 今から私がやるとおりに、やってみてください。
+
+  - key: ja:exercise:n3-koso-toori-write-omotta
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-toori
+    prompt:
+      source_text: Đúng như tôi đã nghĩ, bài kiểm tra hôm nay rất khó. (dùng とおり)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 思ったとおり、今日のテストはとても難しかった。
+        - 思ったとおり、今日のテストはとても難しかったです。
+        - 思ったとおり、今日の試験はとても難しかった。
+        - 思ったとおり、今日の試験はとても難しかったです。
+        - 思った通り、今日のテストはとても難しかった。
+        - 私が思ったとおり、今日のテストはとても難しかった。
+        - 思っていたとおり、今日のテストはとても難しかった。
+        - おもったとおり、きょうのテストはとてもむずかしかった。
+    known_wrong:
+      - answer: 思うとおり、今日のテストはとても難しかった。
+        feedback_vi: 'Điều đã nghĩ từ trước - thể た: 思ったとおり.'
+        error_tag: toori_tense
+    explanation:
+      vi: 思ったとおり - đúng như tôi đã nghĩ; 難しかった - đã khó (quá khứ của tính từ い).
+    display_answer: 思ったとおり、今日のテストはとても難しかった。
+
+  - key: ja:exercise:n3-koso-toori-wb-toori
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-setsumeisho
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hãy cài đặt đúng như sách hướng dẫn.\""
+      tokens:
+        - { id: t4, text: 設定してください }
+        - { id: t2, text: のとおりに }
+        - { id: t5, text: のどおりに }
+        - { id: t1, text: 説明書 }
+    answer:
+      orders:
+        - [t1, t2, t4]
+    explanation:
+      vi: 説明書のとおりに - đúng như sách hướng dẫn; 設定する - cài đặt. のどおり sai vì どおり không đi sau の.
+    display_answer: 説明書のとおりに設定してください。

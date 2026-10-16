@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-ba-hodo
+order_index: 3
+level: n3
+title:
+  vi: Càng... càng... - ～ば～ほど
+objectives:
+  - vi: Nói "càng... càng..." bằng ～ば～ほど với động từ, tính từ い và な.
+  - vi: Rút gọn thành V-る + ほど khi muốn nói ngắn.
+  - vi: Phân biệt ほど trong "càng... càng" với ほど～ない (không... bằng).
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-koso-toori]
+items:
+  - item: ja:item:n3-gram-ba-hodo
+  - item: ja:item:n3-joutatsu
+  - item: ja:item:n3-nareru
+  - item: ja:item:n3-gram-ba
+    role: reuse
+  - item: ja:item:n3-gram-hodo-nai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "càng luyện càng giỏi", "càng rẻ càng tốt" và "càng nghĩ càng không hiểu" - một mẫu giống hệt cặp "càng... càng..." của tiếng Việt.
+  - type: explain
+    text:
+      vi: 'Lặp lại cùng một từ hai lần: dạng ば + dạng thường + ほど. Động từ - 読めば読むほど; tính từ い - 安ければ安いほど; tính từ な - 静かなら静かなほど (hoặc 静かであればあるほど).'
+  - type: explain
+    text:
+      vi: 'Có thể bỏ nửa đầu và chỉ giữ V-る + ほど: 練習するほど上手になる. Vế sau là kết quả thay đổi theo, thường đi với なる, 増える, 難しくなる.'
+  - type: deep_explain
+    text:
+      vi: 'ほど còn xuất hiện trong ～ほど～ない (không... bằng) mà bạn đã học: 東京ほど物価は高くない. Dấu hiệu nhận biết: ば～ほど luôn lặp lại cùng một từ, còn ほど～ない đứng sau danh từ và kết thúc bằng phủ định. Vế sau của ば～ほど không dùng quá khứ của một lần cụ thể.'
+  - type: example
+    target: 日本語は勉強すればするほど、面白くなります。
+    target_lang: ja
+    translation:
+      vi: Tiếng Nhật càng học càng thấy thú vị.
+  - type: example
+    target: 部屋は広ければ広いほどいいですが、家賃も高くなります。
+    target_lang: ja
+    translation:
+      vi: Phòng càng rộng càng tốt, nhưng tiền thuê cũng đắt hơn.
+  - type: example
+    target: 仕事は簡単なら簡単なほど、すぐ飽きてしまう。
+    target_lang: ja
+    translation:
+      vi: Công việc càng đơn giản thì tôi càng nhanh chán.
+    note:
+      vi: Tính từ đuôi な - なら + な + ほど.
+  - type: example
+    target: 新しい町に慣れるほど、一人で出かけるのが楽しくなった。
+    target_lang: ja
+    translation:
+      vi: Càng quen với thành phố mới, tôi càng thấy vui khi đi chơi một mình.
+    note:
+      vi: Dạng rút gọn - chỉ giữ V-る + ほど.
+  - type: common_mistake
+    wrong: 練習すれば練習したほど、上手になる。
+    right: 練習すれば練習するほど、上手になる。
+    target_lang: ja
+    note:
+      vi: Nửa sau dùng thể từ điển (するほど), không dùng thể た. ば～ほど nói quy luật chung, không phải chuyện một lần.
+  - type: common_mistake
+    wrong: 静かければ静かなほど、よく眠れる。
+    right: 静かなら静かなほど、よく眠れる。
+    target_lang: ja
+    note:
+      vi: 静か là tính từ đuôi な - dạng điều kiện là なら, không phải ければ.
+  - type: summary
+    points:
+      - vi: V-ば + V-る + ほど; A-ければ + A-い + ほど; Na-なら + Na-な + ほど - càng... càng....
+      - vi: Rút gọn - V-る + ほど.
+      - vi: Khác ～ほど～ない (không... bằng).
+      - vi: 上達 - tiến bộ (kỹ năng); 慣れる - quen.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-ba-hodo-mcq-form
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      stem: '"Rau càng tươi càng ngon." Chọn câu đúng.'
+      stem_lang: vi
+      options:
+        - { id: v2b, text: 野菜は新鮮なら新鮮なほどおいしい。, lang: ja }
+        - { id: n6m, text: 野菜は新鮮ければ新鮮なほどおいしい。, lang: ja }
+        - { id: q1w, text: 野菜は新鮮なら新鮮だほどおいしい。, lang: ja }
+        - { id: e5r, text: 野菜は新鮮ほど新鮮ならおいしい。, lang: ja }
+    answer:
+      correct_option_id: v2b
+    explanation:
+      vi: 新鮮 là tính từ đuôi な - なら + 新鮮な + ほど. ければ chỉ dùng cho tính từ い; trước ほど cần な, không phải だ.
+    display_answer: 野菜は新鮮なら新鮮なほどおいしい。
+
+  - key: ja:exercise:n3-ba-hodo-listen-joutatsu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-joutatsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: ギターは弾けば弾くほど上達するので、毎日触ってください。
+      options:
+        - { id: t3y, text: Đàn guitar càng chơi càng tiến bộ nên hãy cầm đàn mỗi ngày., lang: vi }
+        - { id: u8i, text: Chơi guitar nhiều quá sẽ hỏng đàn nên đừng chạm mỗi ngày., lang: vi }
+        - { id: o4p, text: Guitar khó tiến bộ dù chơi mỗi ngày., lang: vi }
+        - { id: a9s, text: Chỉ cần chơi một lần là tiến bộ ngay., lang: vi }
+    answer:
+      correct_option_id: t3y
+    explanation:
+      vi: 弾けば弾くほど - càng chơi (đàn) càng...; 上達する - tiến bộ; 触る - chạm, cầm. Mẫu lặp lại cùng động từ 弾く hai lần.
+    display_answer: Đàn guitar càng chơi càng tiến bộ nên hãy cầm đàn mỗi ngày.
+
+  - key: ja:exercise:n3-ba-hodo-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      template: "パソコンは軽{{b1}}軽いほど便利だ。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Máy tính càng nhẹ càng tiện."
+        - "Gợi ý: dạng ば của tính từ い (軽い → 軽…)."
+    answer:
+      blanks:
+        b1: [ければ]
+    known_wrong:
+      - answer: いなら
+        feedback_vi: 軽い là tính từ đuôi い - dạng điều kiện là 軽ければ.
+        error_tag: ba_form
+      - answer: くて
+        feedback_vi: Nửa đầu của ば～ほど phải là dạng điều kiện ければ.
+        error_tag: ba_form
+    explanation:
+      vi: 軽い → 軽ければ + 軽いほど - càng nhẹ càng... Tính từ い bỏ い thêm ければ.
+    display_answer: パソコンは軽ければ軽いほど便利だ。
+
+  - key: ja:exercise:n3-ba-hodo-mcq-hodo-nai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-hodo-nai
+    prompt:
+      stem: 'Câu 今年の夏は去年ほど暑くない。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: d6f, text: Mùa hè năm nay không nóng bằng năm ngoái., lang: vi }
+        - { id: g2h, text: Mùa hè năm nay càng ngày càng nóng hơn năm ngoái., lang: vi }
+        - { id: j7k, text: Mùa hè năm ngoái không nóng bằng năm nay., lang: vi }
+        - { id: l3z, text: Mùa hè năm nay nóng y như năm ngoái., lang: vi }
+    answer:
+      correct_option_id: d6f
+    explanation:
+      vi: N + ほど + phủ định - "không... bằng N". Không lặp từ nên đây không phải ば～ほど "càng... càng".
+    display_answer: Mùa hè năm nay không nóng bằng năm ngoái.
+
+  - key: ja:exercise:n3-ba-hodo-wb-nareru
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-nareru
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Công việc càng quen thì càng nhanh.\""
+      tokens:
+        - { id: h3, text: 慣れるほど }
+        - { id: h1, text: 仕事は }
+        - { id: h5, text: 慣れれば慣れたほど }
+        - { id: h4, text: 早くなる }
+        - { id: h2, text: 慣れれば慣れるほど }
+    answer:
+      orders:
+        - [h1, h2, h4]
+        - [h1, h3, h4]
+    explanation:
+      vi: 慣れれば慣れるほど - càng quen càng...; cũng có thể rút gọn 慣れるほど (chỉ chọn một trong hai). Nửa sau dùng thể từ điển nên 慣れれば慣れたほど sai.
+    display_answer: 仕事は慣れれば慣れるほど早くなる。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-ba-hodo-fill-yomu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      template: "この小説は{{b1}}{{b2}}ほど、面白くなる。(読む - càng đọc)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [読めば, よめば]
+        b2: [読む, よむ]
+    known_wrong:
+      - answer: 読んだ
+        feedback_vi: Nửa sau dùng thể từ điển - 読むほど.
+        error_tag: hodo_tense
+      - answer: 読むと
+        feedback_vi: Nửa đầu dùng dạng ば - 読めば, không dùng と.
+        error_tag: ba_form
+    explanation:
+      vi: 読む → 読めば (điều kiện) + 読む + ほど - càng đọc càng... Động từ nhóm 1 đổi đuôi う thành え + ば.
+    display_answer: この小説は読めば読むほど、面白くなる。
+
+  - key: ja:exercise:n3-ba-hodo-write-hayai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      source_text: Nộp hồ sơ càng sớm càng tốt. (dùng ば～ほど)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 書類は早ければ早いほどいい。
+        - 書類は早ければ早いほどいいです。
+        - 書類は早く出せば出すほどいい。
+        - 書類は早く提出すればするほどいい。
+        - 書類の提出は早ければ早いほどいい。
+        - 書類の提出は早ければ早いほどいいです。
+        - 書類は早ければ早いほど良い。
+        - しょるいははやければはやいほどいい。
+    known_wrong:
+      - answer: 書類は早いなら早いほどいい。
+        feedback_vi: 早い là tính từ đuôi い - dạng điều kiện là 早ければ.
+        error_tag: ba_form
+      - answer: 書類は早ければ早かったほどいい。
+        feedback_vi: Nửa sau dùng thể thường hiện tại - 早いほど.
+        error_tag: hodo_tense
+    explanation:
+      vi: '早ければ早いほどいい - càng sớm càng tốt, câu cửa miệng khi nhắc hạn nộp. Tính từ い lặp hai lần: ければ rồi い + ほど.'
+    display_answer: 書類は早ければ早いほどいい。
+
+  - key: ja:exercise:n3-ba-hodo-write-joutatsu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-joutatsu
+    prompt:
+      source_text: Càng nói chuyện với người Nhật, khả năng hội thoại càng tiến bộ. (dùng ば～ほど và 上達)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本人と話せば話すほど、会話が上達する。
+        - 日本人と話せば話すほど、会話が上達します。
+        - 日本人と話せば話すほど、会話力が上達する。
+        - 日本人と話せば話すほど、会話は上達する。
+        - 日本人と話すほど、会話が上達する。
+        - 日本人と話せば話すほど、会話が上手になる。
+        - にほんじんとはなせばはなすほど、かいわがじょうたつする。
+    known_wrong:
+      - answer: 日本人と話せば話したほど、会話が上達する。
+        feedback_vi: Nửa sau của ば～ほど dùng thể từ điển - 話すほど.
+        error_tag: hodo_tense
+      - answer: 日本人と話せば話すほど、会話を上達する。
+        feedback_vi: 上達する là nội động từ - kỹ năng làm chủ ngữ với が (会話が上達する).
+        error_tag: particle
+    explanation:
+      vi: 話せば話すほど - càng nói càng...; 会話が上達する - khả năng hội thoại tiến bộ. Rút gọn 話すほど cũng đúng.
+    display_answer: 日本人と話せば話すほど、会話が上達する。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-ba-hodo-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      source_text: 説明を聞けば聞くほど、分からなくなってきた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Càng nghe giải thích tôi càng thấy không hiểu.
+        - Càng nghe giải thích càng không hiểu.
+        - Càng nghe giải thích, tôi càng trở nên không hiểu gì.
+        - Càng nghe giải thích, tôi lại càng không hiểu.
+        - Nghe giải thích càng nhiều tôi càng không hiểu.
+        - Càng nghe giải thích thì tôi càng thấy rối.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nghe giải thích xong thì tôi đã hiểu.
+        feedback_vi: 分からなくなってきた là "dần dần trở nên không hiểu" - ngược với "đã hiểu".
+        error_tag: meaning
+    explanation:
+      vi: 聞けば聞くほど - càng nghe càng...; 分からなくなってきた - dần dần trở nên không hiểu (てきた là thay đổi tới hiện tại).
+    display_answer: Càng nghe giải thích tôi càng thấy không hiểu.
+
+  - key: ja:exercise:n3-ba-hodo-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      stem: Bạn tư vấn cho bạn mới học tiếng Nhật rằng chữ Hán càng viết nhiều thì càng nhớ. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: z4x, text: 漢字は書けば書くほど覚えられるよ。, lang: ja }
+        - { id: c9v, text: 漢字は書けば書いたほど覚えられるよ。, lang: ja }
+        - { id: b5n, text: 漢字は書くなら書くほど覚えられるよ。, lang: ja }
+        - { id: m1q, text: 漢字は書いて書くほど覚えられるよ。, lang: ja }
+    answer:
+      correct_option_id: z4x
+    explanation:
+      vi: 書く → 書けば + 書く + ほど. Nửa sau không dùng thể た; なら và thể て không thay được ば trong mẫu này.
+    display_answer: 漢字は書けば書くほど覚えられるよ。
+
+  - key: ja:exercise:n3-ba-hodo-write-shizuka
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      source_text: Thư viện càng yên tĩnh thì càng dễ tập trung. (dùng ば～ほど)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 図書館は静かなら静かなほど、集中しやすい。
+        - 図書館は静かなら静かなほど、集中しやすいです。
+        - 図書館は静かであればあるほど、集中しやすい。
+        - 図書館は静かであればあるほど、集中しやすいです。
+        - 図書館は静かなほど、集中しやすい。
+        - 図書館は静かなら静かなほど集中できる。
+        - としょかんはしずかならしずかなほど、しゅうちゅうしやすい。
+    known_wrong:
+      - answer: 図書館は静かければ静かなほど、集中しやすい。
+        feedback_vi: 静か là tính từ đuôi な - dạng điều kiện là なら (hoặc であれば).
+        error_tag: ba_form
+      - answer: 図書館は静かなら静かだほど、集中しやすい。
+        feedback_vi: Trước ほど, tính từ な giữ な - 静かなほど.
+        error_tag: hodo_form
+    explanation:
+      vi: Na-なら + Na-な + ほど - càng (yên tĩnh) càng...; 集中しやすい - dễ tập trung (やすい học ở N4).
+    display_answer: 図書館は静かなら静かなほど、集中しやすい。
+
+  - key: ja:exercise:n3-ba-hodo-wb-situation
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-ba-hodo
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Càng lên cao, không khí càng lạnh.\""
+      tokens:
+        - { id: w4, text: 空気が冷たくなる }
+        - { id: w3, text: 登れば登るほど }
+        - { id: w5, text: 登れば登ったほど }
+        - { id: w1, text: 山は }
+        - { id: w2, text: 高く }
+    answer:
+      orders:
+        - [w1, w2, w3, w4]
+    explanation:
+      vi: 登れば登るほど - càng leo càng...; vế sau là kết quả thay đổi theo (冷たくなる). Nửa sau dùng thể từ điển nên 登ったほど sai.
+    display_answer: 山は高く登れば登るほど空気が冷たくなる。

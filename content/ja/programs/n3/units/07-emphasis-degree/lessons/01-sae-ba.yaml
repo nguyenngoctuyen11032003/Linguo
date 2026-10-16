@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-sae-ba
+order_index: 1
+level: n3
+title:
+  vi: Ngay cả, chỉ cần - ～さえ và ～さえ～ば
+objectives:
+  - vi: Nhấn mạnh ví dụ cực đoan bằng ～さえ ("ngay cả").
+  - vi: Nói điều kiện duy nhất là đủ bằng ～さえ～ば ("chỉ cần... là").
+  - vi: Đặt さえ đúng chỗ với danh từ, trợ từ và động từ.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n3-time-decisions-review]
+items:
+  - item: ja:item:n3-gram-sae
+  - item: ja:item:n3-gram-sae-ba
+  - item: ja:item:n3-zairyou
+  - item: ja:item:n3-dougu
+  - item: ja:item:n3-gram-ba
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "bận đến mức cơm cũng không kịp ăn", "đến trẻ con cũng biết" và "chỉ cần có thời gian là tôi đi" - hai cách dùng rất khác nhau của cùng một chữ さえ.
+  - type: explain
+    text:
+      vi: 'N + さえ - "ngay cả, đến cả": đưa ra trường hợp cực đoan để ngầm nói "huống chi cái khác". さえ thay は/が/を: 子どもさえ知っている. Với trợ từ khác thì さえ đứng sau: 親にさえ言わなかった (đến bố mẹ cũng không nói).'
+  - type: explain
+    text:
+      vi: 'N + さえ + V-ば - "chỉ cần... là": 時間さえあれば, 地図さえあれば. Với động từ, chen さえ vào giữa: Vます-gốc + さえすれば - 練習しさえすれば, 薬を飲みさえすれば. Tiếng Việt cũng có cặp "chỉ cần... là..." đúng y như vậy.'
+  - type: deep_explain
+    text:
+      vi: 'Cách phân biệt nhanh: phía sau có ば thì là "chỉ cần", không có ば (thường là phủ định hoặc câu ngạc nhiên) thì là "ngay cả". Chủ ngữ là người hay thêm で: 先生でさえ分からない. Văn N1 có すら cùng nghĩa "ngay cả" nhưng cứng hơn.'
+  - type: example
+    target: 引っ越したばかりで、近くのスーパーの場所さえ知らない。
+    target_lang: ja
+    translation:
+      vi: Mới chuyển đến nên tôi đến chỗ siêu thị gần nhà cũng chưa biết.
+  - type: example
+    target: この問題は、先生でさえ難しいと言っていた。
+    target_lang: ja
+    translation:
+      vi: Bài này đến thầy cũng nói là khó.
+    note:
+      vi: Chủ ngữ là người - でさえ.
+  - type: example
+    target: 材料さえそろえば、この料理は十分で作れます。
+    target_lang: ja
+    translation:
+      vi: Chỉ cần đủ nguyên liệu là món này nấu trong mười phút.
+  - type: example
+    target: 毎日少しずつ練習しさえすれば、必ず上手になります。
+    target_lang: ja
+    translation:
+      vi: Chỉ cần mỗi ngày luyện tập một chút là chắc chắn sẽ giỏi lên.
+    note:
+      vi: Động từ - Vます-gốc + さえすれば.
+  - type: common_mistake
+    wrong: 時間がさえあれば、旅行に行きたい。
+    right: 時間さえあれば、旅行に行きたい。
+    target_lang: ja
+    note:
+      vi: さえ thay luôn が, không đứng sau が. Chỉ với trợ từ khác như に, で mới giữ lại - 家族にさえ.
+  - type: common_mistake
+    wrong: 毎日練習するさえば、上手になる。
+    right: 毎日練習しさえすれば、上手になる。
+    target_lang: ja
+    note:
+      vi: Với động từ, さえ chen vào giữa gốc ます và すれば - 練習しさえすれば. Không gắn さえば vào thể từ điển.
+  - type: summary
+    points:
+      - vi: N + (で)さえ - ngay cả, đến cả (ví dụ cực đoan); thay は/が/を.
+      - vi: N + さえ + V-ば - chỉ cần... là.
+      - vi: Vます-gốc + さえすれば - chỉ cần làm V là.
+      - vi: 材料 - nguyên liệu; 道具 - dụng cụ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-sae-ba-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-sae
+    prompt:
+      stem: 'Câu 疲れて、シャワーを浴びる元気さえなかった。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: q3w, text: Mệt đến mức đến sức để tắm cũng không còn., lang: vi }
+        - { id: e8r, text: Chỉ cần tắm là hết mệt ngay., lang: vi }
+        - { id: t2y, text: Dù mệt nhưng tôi vẫn đi tắm., lang: vi }
+        - { id: u7i, text: Tôi mệt vì tắm quá lâu., lang: vi }
+    answer:
+      correct_option_id: q3w
+    explanation:
+      vi: さえ không có ば phía sau và vế cuối phủ định (なかった) - nghĩa "ngay cả... cũng không". 元気 ở đây là sức lực để làm việc gì.
+    display_answer: Mệt đến mức đến sức để tắm cũng không còn.
+
+  - key: ja:exercise:n3-sae-ba-listen-dougu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-sae-ba
+    prompt:
+      audio_asset_id: null
+      fallback_text: スマホさえあれば、道に迷うことはありません。
+      options:
+        - { id: o5p, text: Chỉ cần có điện thoại là sẽ không bị lạc đường., lang: vi }
+        - { id: a1s, text: Ngay cả có điện thoại cũng vẫn bị lạc đường., lang: vi }
+        - { id: d6f, text: Nếu không có điện thoại thì không thể đi đâu., lang: vi }
+        - { id: g4h, text: Điện thoại hay làm tôi lạc đường., lang: vi }
+    answer:
+      correct_option_id: o5p
+    explanation:
+      vi: N さえ + あれば - chỉ cần có N là...; 道に迷う - lạc đường; ことはありません - sẽ không có chuyện đó.
+    display_answer: Chỉ cần có điện thoại là sẽ không bị lạc đường.
+
+  - key: ja:exercise:n3-sae-ba-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sae
+    prompt:
+      template: "弟はとても忙しくて、家族{{b1}}連絡しない。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Em trai tôi bận đến mức ngay cả gia đình cũng không liên lạc."
+        - "Gợi ý: trợ từ chỉ người nhận (に) + さえ."
+    answer:
+      blanks:
+        b1: [にさえ]
+    known_wrong:
+      - answer: さえに
+        feedback_vi: Với trợ từ に, さえ đứng sau - にさえ.
+        error_tag: sae_position
+      - answer: がさえ
+        feedback_vi: Liên lạc "với" gia đình dùng に; さえ không đứng sau が.
+        error_tag: sae_position
+    explanation:
+      vi: 家族に連絡する - liên lạc với gia đình; thêm さえ sau に - 家族にさえ (đến cả gia đình). Đây là ví dụ cực đoan, ngầm nói "huống chi bạn bè".
+    display_answer: 弟はとても忙しくて、家族にさえ連絡しない。
+
+  - key: ja:exercise:n3-sae-ba-mcq-zairyou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-zairyou
+    prompt:
+      stem: '"Nguyên liệu làm bánh" nói thế nào?'
+      stem_lang: vi
+      options:
+        - { id: h9j, text: ケーキの材料, lang: ja }
+        - { id: k2l, text: ケーキの資料, lang: ja }
+        - { id: z5x, text: ケーキの道具, lang: ja }
+        - { id: c8v, text: ケーキの予定, lang: ja }
+    answer:
+      correct_option_id: h9j
+    explanation:
+      vi: 材料 (ざいりょう) - nguyên liệu. 資料 là tài liệu giấy tờ (dễ nhầm vì Hán Việt "tài liệu" lại là 材料); 道具 là dụng cụ; 予定 là dự định.
+    display_answer: ケーキの材料
+
+  - key: ja:exercise:n3-sae-ba-wb-sae
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-sae-ba
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chỉ cần trời đẹp là ngày mai sẽ đi biển.\""
+      tokens:
+        - { id: s3, text: 明日は海へ行きます }
+        - { id: s1, text: 天気さえ }
+        - { id: s4, text: よくさえ }
+        - { id: s2, text: よければ }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: N さえ + A-ければ - chỉ cần (thời tiết) tốt là... いい → よければ. よくさえ thiếu ば và không đi với 天気さえ nên sai.
+    display_answer: 天気さえよければ、明日は海へ行きます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-sae-ba-fill-suru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sae-ba
+    prompt:
+      template: "この書類にサイン{{b1}}すれば、手続きは終わりです。(chỉ cần)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [しさえ]
+    known_wrong:
+      - answer: さえ
+        feedback_vi: Động từ サインする cần gốc ます trước さえ - サインしさえすれば.
+        error_tag: sae_suru_form
+      - answer: するさえ
+        feedback_vi: Không gắn さえ sau thể từ điển; dùng gốc ます - し + さえ + すれば.
+        error_tag: sae_suru_form
+    explanation:
+      vi: サインする → サインし (gốc ます) + さえすれば - chỉ cần ký là... Cấu trúc "chen さえ vào giữa" chỉ có ở động từ.
+    display_answer: この書類にサインしさえすれば、手続きは終わりです。
+
+  - key: ja:exercise:n3-sae-ba-write-kanji
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sae
+    prompt:
+      source_text: Học tiếng Nhật một năm rồi mà tôi đến hiragana cũng viết sai. (dùng さえ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本語を一年勉強したのに、ひらがなさえ間違える。
+        - 日本語を一年勉強したのに、ひらがなさえ間違えます。
+        - 日本語を一年勉強したのに、ひらがなさえ間違えてしまう。
+        - 日本語を一年勉強しているのに、ひらがなさえ間違える。
+        - 一年も日本語を勉強したのに、ひらがなさえ間違える。
+        - 日本語を一年勉強したのに、ひらがなさえ書き間違える。
+        - 日本語を一年勉強したのに、まだひらがなさえ間違える。
+        - にほんごをいちねんべんきょうしたのに、ひらがなさえまちがえる。
+    known_wrong:
+      - answer: 日本語を一年勉強したのに、ひらがなをさえ間違える。
+        feedback_vi: さえ thay luôn を - ひらがなさえ.
+        error_tag: sae_position
+      - answer: 日本語を一年勉強したのに、ひらがなさえ間違えれば。
+        feedback_vi: Thêm ば làm câu thành "chỉ cần sai hiragana là..." - sai nghĩa. "Ngay cả" thì không có ば.
+        error_tag: sae_ba_meaning
+    explanation:
+      vi: のに - vậy mà; ひらがなさえ間違える - đến hiragana cũng sai. ひらがな là ví dụ "dễ nhất", nên nhấn bằng さえ cho thấy mức độ tệ.
+    display_answer: 日本語を一年勉強したのに、ひらがなさえ間違える。
+
+  - key: ja:exercise:n3-sae-ba-write-dougu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-dougu
+    prompt:
+      source_text: Chỉ cần có dụng cụ thì tôi có thể tự sửa xe đạp. (dùng さえ～ば)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 道具さえあれば、自分で自転車を直せます。
+        - 道具さえあれば、自分で自転車を直すことができます。
+        - 道具さえあれば、自転車は自分で直せます。
+        - 道具さえあれば、自分で自転車を修理できます。
+        - 道具さえあれば、自分で自転車が直せます。
+        - 道具さえあれば、自分で自転車を直せる。
+        - どうぐさえあれば、じぶんでじてんしゃをなおせます。
+    known_wrong:
+      - answer: 道具がさえあれば、自分で自転車を直せます。
+        feedback_vi: さえ thay luôn が - 道具さえあれば.
+        error_tag: sae_position
+      - answer: 道具さえあると、自分で自転車を直せます。
+        feedback_vi: Nghĩa "chỉ cần... là" dùng さえ + ば (あれば), không dùng と.
+        error_tag: sae_ba_form
+    explanation:
+      vi: 道具さえあれば - chỉ cần có dụng cụ; 直せます - sửa được (thể khả năng của 直す). 自分で - tự mình.
+    display_answer: 道具さえあれば、自分で自転車を直せます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-sae-ba-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-sae-ba
+    prompt:
+      source_text: パスポートさえ忘れなければ、ほかの物は空港でも買えますよ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chỉ cần không quên hộ chiếu thì những thứ khác mua ở sân bay cũng được.
+        - Chỉ cần không quên hộ chiếu, đồ khác có thể mua ở sân bay.
+        - Chỉ cần đừng quên hộ chiếu là được, những thứ khác ở sân bay cũng mua được đấy.
+        - Miễn là không quên hộ chiếu thì đồ khác mua ở sân bay cũng được.
+        - Chỉ cần bạn không quên hộ chiếu thì những thứ khác có thể mua ở sân bay.
+        - Chỉ cần không quên hộ chiếu thì các thứ khác có thể mua ở sân bay đấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngay cả hộ chiếu cũng quên thì không mua được gì ở sân bay.
+        feedback_vi: Có ば phía sau (忘れなければ) nên さえ là "chỉ cần", không phải "ngay cả".
+        error_tag: sae_ba_meaning
+    explanation:
+      vi: N さえ + V-なければ - chỉ cần không...; 空港でも買えます - ở sân bay cũng mua được. Điều kiện duy nhất là hộ chiếu, mọi thứ khác không quan trọng.
+    display_answer: Chỉ cần không quên hộ chiếu thì những thứ khác mua ở sân bay cũng được.
+
+  - key: ja:exercise:n3-sae-ba-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sae
+    prompt:
+      stem: Bạn kể với đồng nghiệp rằng tuần này bận đến mức ngay cả thời gian ngủ cũng không có. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: b3n, text: 今週は忙しくて、寝る時間さえありませんでした。, lang: ja }
+        - { id: m7q, text: 今週は忙しくて、寝る時間さえあれば、ありませんでした。, lang: ja }
+        - { id: w4e, text: 今週は忙しくて、寝る時間がさえありませんでした。, lang: ja }
+        - { id: r9t, text: 今週は忙しくて、寝る時間さえありました。, lang: ja }
+    answer:
+      correct_option_id: b3n
+    explanation:
+      vi: Nghĩa "ngay cả... cũng không" là N さえ + phủ định. あれば biến câu thành "chỉ cần" và mâu thuẫn; がさえ sai vị trí; ありました là khẳng định, mất nghĩa "bận".
+    display_answer: 今週は忙しくて、寝る時間さえありませんでした。
+
+  - key: ja:exercise:n3-sae-ba-write-zairyou
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-zairyou
+    prompt:
+      source_text: Món này chỉ cần nguyên liệu tươi là ai làm cũng ngon. (dùng さえ～ば)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この料理は、材料さえ新鮮なら、誰が作ってもおいしい。
+        - この料理は、材料さえ新鮮なら、誰が作ってもおいしいです。
+        - この料理は、材料さえ新鮮であれば、誰が作ってもおいしい。
+        - この料理は、材料さえ新鮮であれば、誰が作ってもおいしいです。
+        - この料理は材料さえ新鮮なら、だれが作ってもおいしい。
+        - この料理は、材料さえ新しければ、誰が作ってもおいしい。
+        - このりょうりは、ざいりょうさえしんせんなら、だれがつくってもおいしい。
+    known_wrong:
+      - answer: この料理は、材料さえ新鮮だ、誰が作ってもおいしい。
+        feedback_vi: Thiếu dạng điều kiện - tính từ な dùng なら hoặc であれば sau さえ.
+        error_tag: sae_ba_form
+      - answer: この料理は、材料が新鮮さえなら、誰が作ってもおいしい。
+        feedback_vi: さえ gắn sau danh từ được nhấn (材料さえ), không gắn vào tính từ.
+        error_tag: sae_position
+    explanation:
+      vi: N さえ + Na-なら / であれば - chỉ cần N (ở trạng thái)... là; 誰が作っても - dù ai làm. Với tính từ đuôi な, "ば" có dạng なら hoặc であれば.
+    display_answer: この料理は、材料さえ新鮮なら、誰が作ってもおいしい。
+
+  - key: ja:exercise:n3-sae-ba-wb-situation
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sae
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chuyện đó tôi đến bạn thân cũng chưa kể.\""
+      tokens:
+        - { id: k4, text: 話していません }
+        - { id: k2, text: 親友にさえ }
+        - { id: k5, text: 親友さえに }
+        - { id: k1, text: その話は }
+    answer:
+      orders:
+        - [k1, k2, k4]
+    explanation:
+      vi: 親友に話す - kể cho bạn thân; さえ đứng sau に - 親友にさえ (đến cả bạn thân). さえに sai thứ tự.
+    display_answer: その話は親友にさえ話していません。
