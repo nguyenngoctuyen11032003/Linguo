@@ -1,0 +1,614 @@
+# Học liệu unit "So sánh & du lịch" (JLPT N4). reading là cách đọc bằng kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: 前に / 後で / てから =================
+  - key: ja:item:n4-gram-mae-ni
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V辞書形 / Nの + 前に
+      romanization: mae ni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trước khi (làm) V / trước N.
+      examples:
+        - target: 出発する前に、荷物を確認してください。
+          translation:
+            vi: Trước khi khởi hành, hãy kiểm tra hành lý.
+        - target: 旅行の前に、ホテルを予約しました。
+          translation:
+            vi: Trước chuyến đi, tôi đã đặt khách sạn.
+      confusion:
+        vi: Trước 前に luôn là thể từ điển, kể cả khi cả câu ở quá khứ (寝る前に歯を磨きました - không nói 寝た前に).
+
+  - key: ja:item:n4-gram-ato-de
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V-た / Nの + 後で
+      reading: あとで
+      romanization: ato de
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Sau khi (làm) V / sau N.
+      examples:
+        - target: 旅館に着いた後で、温泉に入りました。
+          translation:
+            vi: Sau khi đến lữ quán, tôi đã ngâm suối nước nóng.
+        - target: 食事の後で、散歩しましょう。
+          translation:
+            vi: Sau bữa ăn mình đi dạo nhé.
+      confusion:
+        vi: Ngược với 前に, trước 後で luôn là thể た - kể cả việc trong tương lai (着いた後で電話します).
+
+  - key: ja:item:n4-gram-te-kara
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + から
+      romanization: -te kara
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm V xong rồi mới … - nhấn mạnh thứ tự, việc sau chỉ bắt đầu khi việc trước xong.
+      examples:
+        - target: チェックインしてから、町を観光しましょう。
+          translation:
+            vi: Nhận phòng xong rồi mình đi tham quan thành phố nhé.
+        - target: 日本に来てから、料理を始めました。
+          translation:
+            vi: Từ khi đến Nhật, tôi mới bắt đầu nấu ăn.
+      confusion:
+        vi: てから khác から (vì). 食べてから là "ăn xong rồi"; 食べるから là "vì ăn".
+
+  - key: ja:item:n4-shuppatsu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 出発
+      reading: しゅっぱつ
+      romanization: shuppatsu
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự khởi hành, xuất phát
+      examples:
+        - target: バスは八時に出発します。
+          translation:
+            vi: Xe buýt khởi hành lúc 8 giờ.
+      pronunciation_note:
+        vi: Có âm ngắt っ - [shup-pa-tsu].
+      confusion:
+        vi: Nơi xuất phát đi với を (東京を出発する), giống 出る.
+
+  - key: ja:item:n4-tsuku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 着く
+      reading: つく
+      romanization: tsuku
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: đến nơi, tới
+      examples:
+        - target: 京都に何時に着きますか。
+          translation:
+            vi: Mấy giờ thì đến Kyoto?
+      confusion:
+        vi: Nơi đến đi với に (駅に着く). Thể て là 着いて, thể た là 着いた.
+
+  - key: ja:item:n4-nimotsu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 荷物
+      reading: にもつ
+      romanization: nimotsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành lý, đồ đạc
+      examples:
+        - target: 荷物をロッカーに預けました。
+          translation:
+            vi: Tôi đã gửi hành lý vào tủ khóa.
+      confusion:
+        vi: Gửi đồ (để người khác giữ) là 預ける (あずける); gửi đi xa là 送る.
+
+  - key: ja:item:n4-ryokan
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 旅館
+      reading: りょかん
+      romanization: ryokan
+      pos: danh từ
+    back:
+      meaning:
+        vi: lữ quán (nhà trọ kiểu Nhật, thường có phòng chiếu tatami)
+      examples:
+        - target: 旅館で浴衣を着て、晩ご飯を食べました。
+          translation:
+            vi: Ở lữ quán, tôi mặc yukata và ăn tối.
+      confusion:
+        vi: 旅館 là kiểu Nhật truyền thống; khách sạn kiểu Tây là ホテル.
+
+  # ================= bài 2: とき / ながら =================
+  - key: ja:item:n4-gram-toki
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Thể thường / Aい / Naな / Nの + とき
+      romanization: toki
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Khi … - đứng sau thể thường của động từ, tính từ đuôi い, tính từ đuôi な + な, danh từ + の.
+      examples:
+        - target: 道がわからないとき、地図アプリを使います。
+          translation:
+            vi: Khi không biết đường, tôi dùng ứng dụng bản đồ.
+        - target: 子どものとき、よく海で泳ぎました。
+          translation:
+            vi: Hồi nhỏ, tôi hay bơi ở biển.
+        - target: 暇なとき、何をしますか。
+          translation:
+            vi: Khi rảnh bạn làm gì?
+      confusion:
+        vi: 行くとき là "lúc đang đi (chưa đến)", 行ったとき là "lúc đã đến nơi" - 日本へ行くとき、カメラを買いました (mua trước khi đi/ trên đường) khác 日本へ行ったとき (mua ở Nhật).
+
+  - key: ja:item:n4-gram-nagara
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc + ながら
+      romanization: -nagara
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Vừa làm V1 vừa làm V2 (cùng một người, cùng lúc).
+      examples:
+        - target: 音楽を聞きながら、歩きます。
+          translation:
+            vi: Tôi vừa nghe nhạc vừa đi bộ.
+        - target: 景色を見ながら、お弁当を食べました。
+          translation:
+            vi: Tôi vừa ngắm cảnh vừa ăn cơm hộp.
+      confusion:
+        vi: Hành động chính đứng ở vế sau. 食べながらテレビを見る là chủ yếu xem TV, vừa ăn.
+
+  - key: ja:item:n4-kankou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 観光
+      reading: かんこう
+      romanization: kankou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: tham quan, du lịch ngắm cảnh
+      examples:
+        - target: 午後は奈良を観光する予定です。
+          translation:
+            vi: Buổi chiều tôi dự định tham quan Nara.
+      confusion:
+        vi: Khách du lịch là 観光客 (かんこうきゃく). Đi tham quan là 観光に行く.
+
+  - key: ja:item:n4-chizu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 地図
+      reading: ちず
+      romanization: chizu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản đồ
+      examples:
+        - target: この地図を見ながら行きましょう。
+          translation:
+            vi: Mình vừa xem bản đồ này vừa đi nhé.
+      confusion:
+        vi: Chỉ đường trên bản đồ là 地図を書いて教える.
+
+  - key: ja:item:n4-mayou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 道に迷う
+      reading: みちにまよう
+      romanization: michi ni mayou
+      pos: cụm động từ (nhóm 1)
+    back:
+      meaning:
+        vi: lạc đường
+      examples:
+        - target: 道に迷ったとき、駅員さんに聞きました。
+          translation:
+            vi: Khi bị lạc đường, tôi đã hỏi nhân viên nhà ga.
+      confusion:
+        vi: 迷う đuôi う → 迷って, 迷った. Trợ từ là に - 道に迷う.
+
+  - key: ja:item:n4-keshiki
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 景色
+      reading: けしき
+      romanization: keshiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong cảnh
+      examples:
+        - target: 山の上から見た景色はとてもきれいでした。
+          translation:
+            vi: Phong cảnh nhìn từ trên núi rất đẹp.
+      confusion:
+        vi: Khen cảnh - 景色がいい / きれい; không dùng 上手.
+
+  # ================= bài 3: so sánh - より / ほうが / 一番 =================
+  - key: ja:item:n4-gram-yori-hou-ga
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: A は B より ～ / B より A のほうが ～
+      romanization: yori / no hou ga
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: A … hơn B. より đánh dấu cái đem ra so (B); ほうが đánh dấu cái hơn (A).
+      examples:
+        - target: 新幹線はバスより速いです。
+          translation:
+            vi: Tàu Shinkansen nhanh hơn xe buýt.
+        - target: バスより新幹線のほうが速いです。
+          translation:
+            vi: Tàu Shinkansen nhanh hơn xe buýt.
+      confusion:
+        vi: Tính từ không đổi dạng khi so sánh (速い giữ nguyên). Đừng nhầm - より đứng sau cái KÉM hơn.
+
+  - key: ja:item:n4-gram-dochira
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: A と B と どちらが ～ですか
+      romanization: dochira ga ... desu ka
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Giữa A và B, cái nào … hơn? Trả lời - A のほうが ～です / どちらも ～です.
+      examples:
+        - target: 飛行機と新幹線とどちらが安いですか。 - 新幹線のほうが安いです。
+          translation:
+            vi: Máy bay và Shinkansen, cái nào rẻ hơn? - Shinkansen rẻ hơn.
+      confusion:
+        vi: So hai thứ dùng どちら; ba thứ trở lên dùng どれ / 何 / どこ / だれ với 一番.
+
+  - key: ja:item:n4-gram-ichiban
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N の中で 何・どこ・だれ が 一番 ～ですか
+      reading: いちばん
+      romanization: ichiban
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trong nhóm N, cái gì / đâu / ai … nhất?
+      examples:
+        - target: 日本の町の中で、どこが一番好きですか。 - 京都が一番好きです。
+          translation:
+            vi: Trong các thành phố Nhật, bạn thích nơi nào nhất? - Tôi thích Kyoto nhất.
+      confusion:
+        vi: Từ để hỏi theo loại - đồ vật 何, nơi chốn どこ, người だれ, thời gian いつ. Câu trả lời giữ が (京都が一番).
+
+  - key: ja:item:n4-shinkansen
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 新幹線
+      reading: しんかんせん
+      romanization: shinkansen
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu cao tốc Shinkansen
+      examples:
+        - target: 東京から大阪まで新幹線で二時間半ぐらいです。
+          translation:
+            vi: Từ Tokyo đến Osaka đi Shinkansen mất khoảng hai tiếng rưỡi.
+      confusion:
+        vi: Phương tiện đi với で (新幹線で行く); lên tàu là 新幹線に乗る.
+
+  - key: ja:item:n4-hikouki
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 飛行機
+      reading: ひこうき
+      romanization: hikouki
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy bay
+      examples:
+        - target: 飛行機は新幹線より速いですが、高いです。
+          translation:
+            vi: Máy bay nhanh hơn Shinkansen nhưng đắt.
+      pronunciation_note:
+        vi: こう là âm dài - [hi-koo-ki].
+      confusion:
+        vi: Sân bay là 空港 (くうこう).
+
+  - key: ja:item:n4-benri
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 便利
+      reading: べんり
+      romanization: benri
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: tiện lợi
+      examples:
+        - target: 駅に近いホテルのほうが便利です。
+          translation:
+            vi: Khách sạn gần ga thì tiện hơn.
+      confusion:
+        vi: Trái nghĩa - 不便 (ふべん). Bổ nghĩa cho danh từ - 便利な場所.
+
+  - key: ja:item:n4-nedan
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 値段
+      reading: ねだん
+      romanization: nedan
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá cả
+      examples:
+        - target: この旅館は値段が安くて、サービスもいいです。
+          translation:
+            vi: Lữ quán này giá rẻ mà phục vụ cũng tốt.
+      confusion:
+        vi: Giá cao / thấp - 値段が高い / 安い (không dùng 大きい / 小さい).
+
+  # ================= bài 4: đặt phòng - たほうがいい / ておく =================
+  - key: ja:item:n4-gram-ta-hou-ga-ii
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-た / V-ない + ほうがいいです
+      romanization: -ta hou ga ii desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nên làm V / không nên làm V - lời khuyên.
+      examples:
+        - target: 週末は混むから、早く予約したほうがいいですよ。
+          translation:
+            vi: Cuối tuần đông nên bạn nên đặt sớm đấy.
+        - target: 夜は一人で歩かないほうがいいです。
+          translation:
+            vi: Buổi tối không nên đi bộ một mình.
+      confusion:
+        vi: Khẳng định dùng thể た (したほうがいい), phủ định dùng thể ない (しないほうがいい) - không nói しなかったほうがいい.
+
+  - key: ja:item:n4-gram-te-oku
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + おきます
+      romanization: -te okimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm sẵn V (chuẩn bị trước cho việc sau), hoặc để nguyên trạng thái.
+      examples:
+        - target: 旅行の前に、ホテルを予約しておきます。
+          translation:
+            vi: Trước chuyến đi, tôi đặt sẵn khách sạn.
+        - target: 窓は開けておいてください。
+          translation:
+            vi: Cứ để cửa sổ mở nhé.
+      pronunciation_note:
+        vi: Trong hội thoại ておく thường rút thành とく - 予約しとく.
+      confusion:
+        vi: おく viết bằng hiragana, chia nhóm 1 (おいて, おいた).
+
+  - key: ja:item:n4-yoyaku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 予約
+      reading: よやく
+      romanization: yoyaku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: đặt trước (phòng, chỗ, vé)
+      examples:
+        - target: 今晩、二人で予約したいんですが。
+          translation:
+            vi: Tôi muốn đặt chỗ cho hai người tối nay.
+      confusion:
+        vi: Đặt phòng khách sạn - ホテルを予約する; có đặt trước - 予約があります.
+
+  - key: ja:item:n4-tomaru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 泊まる
+      reading: とまる
+      romanization: tomaru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: trọ lại, nghỉ qua đêm
+      examples:
+        - target: 京都では旅館に二晩泊まりました。
+          translation:
+            vi: Ở Kyoto tôi trọ hai đêm ở lữ quán.
+      confusion:
+        vi: Nơi trọ đi với に (ホテルに泊まる). 止まる (cùng đọc とまる) là dừng lại.
+
+  - key: ja:item:n4-chekku-in
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: チェックイン
+      romanization: chekku in
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: nhận phòng (check-in)
+      examples:
+        - target: チェックインは何時からですか。
+          translation:
+            vi: Nhận phòng từ mấy giờ ạ?
+      confusion:
+        vi: Trả phòng là チェックアウト.
+
+  - key: ja:item:n4-kyanseru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: キャンセル
+      romanization: kyanseru
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: hủy (đặt chỗ)
+      examples:
+        - target: 予約をキャンセルしたいんですが。
+          translation:
+            vi: Tôi muốn hủy đặt chỗ.
+      confusion:
+        vi: Đổi ngày đặt là 予約を変更する (へんこうする), khác hủy.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n4-phrase-osusume
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: おすすめは何ですか
+      romanization: osusume wa nan desu ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Có gì nên thử / món gì được gợi ý?
+      examples:
+        - target: この町のおすすめは何ですか。
+          translation:
+            vi: Thị trấn này có gì đáng đi / đáng thử?
+      confusion:
+        vi: Dùng ở nhà hàng, cửa hàng, quầy du lịch. Trả lời - ～がおすすめです.
+
+  - key: ja:item:n4-omoide
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 思い出
+      reading: おもいで
+      romanization: omoide
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỷ niệm
+      examples:
+        - target: 北海道の旅行はいい思い出になりました。
+          translation:
+            vi: Chuyến đi Hokkaido đã trở thành một kỷ niệm đẹp.
+      confusion:
+        vi: Trở thành kỷ niệm - 思い出になる. Nhớ lại - 思い出す (おもいだす).
+
+  - key: ja:item:n4-ki-ni-iru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 気に入る
+      reading: きにいる
+      romanization: ki ni iru
+      pos: cụm động từ (nhóm 1)
+    back:
+      meaning:
+        vi: ưng ý, thích (sau khi thấy, dùng thử)
+      examples:
+        - target: この旅館がとても気に入りました。
+          translation:
+            vi: Tôi rất ưng lữ quán này.
+      confusion:
+        vi: 入る ở đây là nhóm 1 - 気に入りました, 気に入って. Thứ được ưng đi với が.

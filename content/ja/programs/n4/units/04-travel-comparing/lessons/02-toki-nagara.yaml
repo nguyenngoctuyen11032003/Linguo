@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-toki-nagara
+order_index: 2
+level: n4
+title:
+  vi: Khi và vừa - とき, ながら
+objectives:
+  - vi: Nói "khi …" bằng とき sau động từ, tính từ và danh từ.
+  - vi: Nói "vừa … vừa …" bằng Vます-gốc + ながら.
+  - vi: Kể chuyện đi tham quan, lạc đường, ngắm cảnh.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-before-after]
+items:
+  - item: ja:item:n4-gram-toki
+  - item: ja:item:n4-gram-nagara
+  - item: ja:item:n4-kankou
+  - item: ja:item:n4-chizu
+  - item: ja:item:n4-mayou
+  - item: ja:item:n4-keshiki
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể "Khi bị lạc đường, tôi đã hỏi nhân viên nhà ga", "Hồi nhỏ tôi hay bơi ở biển" và "Tôi vừa ngắm cảnh vừa ăn cơm hộp".
+  - type: explain
+    text:
+      vi: "とき (khi) đứng sau thể thường của động từ (行くとき, 行ったとき, わからないとき), tính từ đuôi い (寒いとき), tính từ đuôi な + な (暇なとき), danh từ + の (子どものとき)."
+  - type: explain
+    text:
+      vi: ながら gắn vào gốc ます (聞きます → 聞きながら) - một người làm hai việc cùng lúc. Việc chính đặt ở cuối câu.
+  - type: explain
+    text:
+      vi: Thì của cả câu do động từ cuối quyết định; とき chỉ là mốc thời gian, và ながら không mang thì.
+  - type: deep_explain
+    text:
+      vi: 行くとき và 行ったとき khác nhau về thứ tự - 日本へ行くとき、空港で本を買いました (mua ở sân bay, trước khi tới Nhật); 日本へ行ったとき、着物を買いました (mua khi đã ở Nhật). Hai mẫu này hay xuất hiện trong đề JLPT.
+  - type: example
+    target: 道に迷ったとき、駅員さんに聞きました。
+    target_lang: ja
+    translation:
+      vi: Khi bị lạc đường, tôi đã hỏi nhân viên nhà ga.
+    note:
+      vi: 迷った (thể た) + とき.
+  - type: example
+    target: 子どものとき、よく海で泳ぎました。
+    target_lang: ja
+    translation:
+      vi: Hồi nhỏ, tôi hay bơi ở biển.
+    note:
+      vi: Danh từ + の + とき.
+  - type: example
+    target: 景色を見ながら、お弁当を食べました。
+    target_lang: ja
+    translation:
+      vi: Tôi vừa ngắm cảnh vừa ăn cơm hộp.
+    note:
+      vi: 見ます → 見ながら; việc chính là 食べました.
+  - type: example
+    target: 暇なとき、地図を見ながら町を散歩します。
+    target_lang: ja
+    translation:
+      vi: Lúc rảnh, tôi vừa xem bản đồ vừa đi dạo phố.
+    note:
+      vi: Tính từ đuôi な giữ な trước とき.
+  - type: common_mistake
+    wrong: 暇とき、何をしますか。
+    right: 暇なとき、何をしますか。
+    target_lang: ja
+    note:
+      vi: Tính từ đuôi な cần な trước とき.
+  - type: common_mistake
+    wrong: 子どもとき、よく泳ぎました。
+    right: 子どものとき、よく泳ぎました。
+    target_lang: ja
+    note:
+      vi: Danh từ cần の trước とき.
+  - type: common_mistake
+    wrong: 音楽を聞くながら、歩きます。
+    right: 音楽を聞きながら、歩きます。
+    target_lang: ja
+    note:
+      vi: ながら gắn vào gốc ます (聞き), không gắn vào thể từ điển.
+  - type: summary
+    points:
+      - vi: Thể thường / Aい / Naな / Nの + とき - khi.
+      - vi: 行くとき (trước khi đến) khác 行ったとき (khi đã đến).
+      - vi: Vます-gốc + ながら - vừa … vừa (việc chính ở cuối).
+      - vi: 観光 tham quan · 地図 bản đồ · 道に迷う lạc đường · 景色 phong cảnh.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-tkn-mcq-hima
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-toki
+    prompt:
+      stem: '"Khi rảnh bạn làm gì?" ___ とき、何をしますか。'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 暇な, lang: ja }
+        - { id: p8d, text: 暇, lang: ja }
+        - { id: w2s, text: 暇の, lang: ja }
+        - { id: m6q, text: 暇い, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 暇 là tính từ đuôi な - cần な trước とき (暇なとき).
+    display_answer: 暇な
+
+  - key: ja:exercise:n4-tkn-mcq-nagara
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-nagara
+    prompt:
+      stem: '"Tôi vừa nghe nhạc vừa đi bộ." 音楽を ___ 歩きます。'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 聞きながら, lang: ja }
+        - { id: y1n, text: 聞くながら, lang: ja }
+        - { id: e7c, text: 聞いてながら, lang: ja }
+        - { id: h4b, text: 聞きたながら, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: ながら gắn vào gốc ます - 聞きます → 聞きながら.
+    display_answer: 聞きながら
+
+  - key: ja:exercise:n4-tkn-listen-lost
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-mayou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 道に迷ったとき、駅員さんに聞きました。
+      options:
+        - { id: a8u, text: "Khi bị lạc đường, tôi đã hỏi nhân viên nhà ga.", lang: vi }
+        - { id: q2z, text: "Khi bị lạc đường, nhân viên nhà ga đã hỏi tôi.", lang: vi }
+        - { id: d6l, text: "Khi đến ga, tôi đã hỏi đường.", lang: vi }
+        - { id: s9f, text: "Tôi không bị lạc vì đã hỏi nhân viên nhà ga.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 道に迷ったとき - khi lạc đường; 駅員さんに聞きました - (tôi) đã hỏi nhân viên nhà ga (に là người được hỏi).
+    display_answer: Khi bị lạc đường, tôi đã hỏi nhân viên nhà ga.
+
+  - key: ja:exercise:n4-tkn-fill-child
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-toki
+    prompt:
+      template: "Hồi nhỏ, tôi hay bơi ở biển. - 子ども{{b1}}とき、よく海で泳ぎました。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - 子ども là danh từ.
+        - Danh từ nối với とき bằng một trợ từ.
+    answer:
+      blanks:
+        b1: [の]
+    known_wrong:
+      - answer: な
+        feedback_vi: な dành cho tính từ đuôi な. Danh từ dùng の.
+        error_tag: toki_form
+      - answer: だ
+        feedback_vi: Danh từ + の + とき.
+        error_tag: toki_form
+    explanation:
+      vi: Danh từ + の + とき - 子どものとき (hồi còn nhỏ).
+    display_answer: 子どものとき、よく海で泳ぎました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-tkn-fill-keshiki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-keshiki
+    prompt:
+      template: "Tôi vừa ngắm cảnh vừa ăn cơm hộp. - 景色を{{b1}}、お弁当を食べました。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [見ながら, みながら]
+    known_wrong:
+      - answer: 見るながら
+        feedback_vi: ながら gắn vào gốc ます - 見ます → 見ながら.
+        error_tag: nagara_form
+      - answer: 見て
+        feedback_vi: 見て là "xem rồi" (nối tiếp), không phải "vừa xem vừa".
+        error_tag: nagara_form
+    explanation:
+      vi: 見ます → 見ながら; việc chính 食べました ở cuối.
+    display_answer: 景色を見ながら、お弁当を食べました。
+
+  - key: ja:exercise:n4-tkn-translate-map
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-chizu
+    prompt:
+      source_text: Khi không biết đường, tôi dùng bản đồ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 道がわからないとき、地図を使います。
+        - 道がわからないとき地図を使います。
+        - みちがわからないとき、ちずをつかいます。
+        - 道が分からないとき、地図を使います。
+        - 道がわからない時、地図を使います。
+        - 道が分からない時、地図を使います。
+        - 道がわからないときは、地図を使います。
+        - 道がわからないとき、地図を見ます。
+        - 道が分からないとき、地図を見ます。
+    known_wrong:
+      - answer: 道がわからなかったとき、地図を使います。
+        feedback_vi: Thói quen chung dùng わからないとき (hiện tại).
+        error_tag: toki_form
+      - answer: 道をわからないとき、地図を使います。
+        feedback_vi: わかる đi với が - 道がわからない.
+        error_tag: particle_ga_wakaru
+    explanation:
+      vi: わからない (thể thường phủ định) + とき; 地図を使います - dùng bản đồ.
+    display_answer: 道がわからないとき、地図を使います。
+
+  - key: ja:exercise:n4-tkn-fill-kankou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kankou
+    prompt:
+      template: "Khi đi tham quan Nara, tôi đã cho hươu ăn. - 奈良を{{b1}}とき、鹿にえさをあげました。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [観光した, かんこうした]
+    known_wrong:
+      - answer: 観光する
+        feedback_vi: Việc cho hươu ăn xảy ra khi đang ở Nara (đã đến nơi) - dùng 観光したとき.
+        error_tag: toki_tense
+      - answer: 観光の
+        feedback_vi: Đã có tân ngữ 奈良を nên cần động từ - 観光したとき.
+        error_tag: toki_form
+    explanation:
+      vi: Việc ở vế sau xảy ra khi đã đến và đang tham quan nên dùng 観光したとき.
+    display_answer: 奈良を観光したとき、鹿にえさをあげました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-tkn-mcq-iku-itta
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-gram-toki
+    prompt:
+      stem: 'Câu 日本へ行くとき、空港で本を買いました。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: "Trên đường sang Nhật, tôi mua sách ở sân bay.", lang: vi }
+        - { id: j7r, text: "Khi đã ở Nhật, tôi mua sách ở sân bay Nhật.", lang: vi }
+        - { id: c1o, text: Tôi định mua sách khi sang Nhật., lang: vi }
+        - { id: n5g, text: "Sau khi về từ Nhật, tôi mua sách ở sân bay.", lang: vi }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 行くとき - lúc đang đi, chưa tới Nhật, nên sách mua ở sân bay nơi xuất phát. Nếu đã tới Nhật sẽ dùng 行ったとき.
+    display_answer: Trên đường sang Nhật, tôi mua sách ở sân bay.
+
+  - key: ja:exercise:n4-tkn-translate-phone
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-nagara
+    prompt:
+      source_text: 歩きながらスマホを見ないほうがいいですよ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không nên vừa đi vừa xem điện thoại đâu.
+        - Không nên vừa đi bộ vừa xem điện thoại đâu.
+        - Bạn không nên vừa đi vừa xem điện thoại đâu.
+        - Bạn không nên vừa đi bộ vừa xem điện thoại đâu.
+        - Không nên vừa đi vừa xem điện thoại.
+        - Không nên vừa đi bộ vừa xem điện thoại.
+        - Bạn không nên vừa đi vừa xem điện thoại.
+        - Bạn không nên vừa đi bộ vừa xem điện thoại.
+        - Không nên vừa đi vừa nhìn điện thoại đâu.
+        - Bạn không nên vừa đi vừa nhìn điện thoại đâu.
+        - Đừng vừa đi vừa xem điện thoại nhé.
+        - Không nên vừa đi vừa xem điện thoại đấy.
+        - Bạn không nên vừa đi vừa xem điện thoại đấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn nên vừa đi vừa xem điện thoại.
+        feedback_vi: 見ないほうがいい là "không nên xem".
+        error_tag: negation
+      - answer: Không nên đi bộ sau khi xem điện thoại.
+        feedback_vi: ながら là "vừa … vừa", không phải "sau khi".
+        error_tag: nagara_form
+    explanation:
+      vi: 歩きながら - vừa đi bộ; 見ないほうがいい - không nên xem (bài sau sẽ học kỹ mẫu này).
+    display_answer: Không nên vừa đi vừa xem điện thoại đâu.
+
+  - key: ja:exercise:n4-tkn-order-stroll
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-nagara
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Lúc rảnh, tôi vừa xem bản đồ vừa đi dạo phố."'
+      tokens:
+        - { id: t-sanpo, text: 町を散歩します }
+        - { id: t-chizu, text: 地図を }
+        - { id: t-hima, text: 暇なとき、 }
+        - { id: t-minagara, text: 見ながら }
+        - { id: t-mirunagara, text: 見るながら }
+    answer:
+      orders:
+        - [t-hima, t-chizu, t-minagara, t-sanpo]
+    explanation:
+      vi: Mốc thời gian 暇なとき đứng đầu; 見ながら (gốc ます) + việc chính 町を散歩します ở cuối.
+    display_answer: 暇なとき、地図を見ながら町を散歩します。
+
+  - key: ja:exercise:n4-tkn-translate-cold
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-toki
+    prompt:
+      source_text: Khi trời lạnh, tôi uống trà nóng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 寒いとき、温かいお茶を飲みます。
+        - 寒いとき温かいお茶を飲みます。
+        - さむいとき、あたたかいおちゃをのみます。
+        - 寒い時、温かいお茶を飲みます。
+        - 寒いときは、温かいお茶を飲みます。
+        - 寒いとき、熱いお茶を飲みます。
+        - 寒い時、熱いお茶を飲みます。
+        - 寒いときは、熱いお茶を飲みます。
+        - 寒いとき、あたたかいお茶を飲みます。
+        - 寒いとき、温かいお茶を飲む。
+    known_wrong:
+      - answer: 寒いなとき、温かいお茶を飲みます。
+        feedback_vi: Tính từ đuôi い nối thẳng với とき - 寒いとき.
+        error_tag: toki_form
+      - answer: 寒くとき、温かいお茶を飲みます。
+        feedback_vi: Giữ nguyên 寒い trước とき.
+        error_tag: toki_form
+    explanation:
+      vi: Tính từ đuôi い + とき - 寒いとき; 温かい / 熱い お茶 - trà nóng.
+    display_answer: 寒いとき、温かいお茶を飲みます。
