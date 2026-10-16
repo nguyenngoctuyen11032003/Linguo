@@ -1,0 +1,365 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:law-justice-crime-vocabulary
+order_index: 1
+level: b2
+title:
+  vi: Tội phạm & toà án - accuse of, charge with, sentence to
+objectives:
+  - vi: Đọc hiểu tin tức về tội phạm và xét xử với các từ suspect, court, trial, plead guilty.
+  - vi: Dùng đúng giới từ đi kèm - accuse of, charge with, arrest for, sentence to, blame for/on.
+  - vi: Phân biệt các bước của một vụ án - bị bắt, bị khởi tố, ra toà, bị tuyên án.
+estimated_minutes: 25
+skills: [vocabulary, reading, grammar]
+prerequisites: [en:lesson:media-technology-review]
+items:
+  - item: en:item:commit-a-crime
+  - item: en:item:accuse-of
+  - item: en:item:charge-with
+  - item: en:item:arrest-for
+  - item: en:item:sentence-to
+  - item: en:item:blame-for
+  - item: en:item:be-found-guilty-of
+  - item: en:item:suspect-noun
+  - item: en:item:court-trial
+  - item: en:item:plead-guilty
+  - item: en:item:witness
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một bản tin về vụ án từ lúc nghi phạm bị bắt đến khi toà tuyên án, và tự kể lại bằng đúng các cụm động từ + giới từ.
+  - type: explain
+    text:
+      vi: "Tin pháp luật tiếng Anh đi theo một chuỗi cố định: arrested for (bị bắt vì) → charged with (bị khởi tố về) → go on trial (ra toà) → plead guilty / not guilty (nhận / không nhận tội) → found guilty of (bị tuyên có tội) → sentenced to (bị tuyên án). Nắm chuỗi này, bạn đoán được ý cả bài báo."
+  - type: explain
+    text:
+      vi: "Mỗi động từ đi với một giới từ riêng: accuse OF, charge WITH, arrest FOR, sentence TO, blame FOR. Tiếng Việt chỉ nói \"vì\" hoặc \"về\" cho tất cả, nên người Việt hay dùng for ở mọi chỗ - đây là lỗi bị trừ điểm nhiều nhất trong bài viết B2."
+  - type: explain
+    text:
+      vi: "Sau các giới từ này, động từ phải ở dạng V-ing: accused of stealing, arrested for driving, blamed for causing. Không dùng to + V sau giới từ."
+  - type: deep_explain
+    text:
+      vi: Blame có hai khuôn đảo nhau - blame the driver for the crash và blame the crash on the driver, cùng một nghĩa. Báo chí thích bị động (was charged, was sentenced) vì người thực hiện hành động (cảnh sát, toà) đã rõ. Lưu ý the police luôn là số nhiều (The police are…), còn crime vừa đếm được (a crime) vừa không đếm được (crime is falling).
+  - type: example
+    target: A 34-year-old man was arrested for shoplifting and later charged with assaulting a security guard.
+    target_lang: en
+    translation:
+      vi: Một người đàn ông 34 tuổi bị bắt vì trộm đồ trong cửa hàng và sau đó bị khởi tố tội hành hung nhân viên bảo vệ.
+    note:
+      vi: Arrest đi với for, charge đi với with - hai giới từ khác nhau trong cùng một câu.
+  - type: example
+    target: The former accountant pleaded not guilty, but the court found her guilty of forging invoices.
+    target_lang: en
+    translation:
+      vi: Cựu kế toán không nhận tội, nhưng toà vẫn tuyên bà có tội làm giả hoá đơn.
+    note:
+      vi: Plead (not) guilty là lời của bị cáo; found guilty of là kết luận của toà. Sau of dùng V-ing (forging).
+  - type: example
+    target: Online shoppers blamed the delivery company for the missing parcels.
+    target_lang: en
+    translation:
+      vi: Người mua hàng online đổ lỗi cho công ty giao hàng về những gói hàng bị thất lạc.
+    note:
+      vi: Có thể viết lại là blamed the missing parcels on the delivery company.
+  - type: common_mistake
+    wrong: The director was accused for taking bribes.
+    right: The director was accused of taking bribes.
+    target_lang: en
+    note:
+      vi: Accuse luôn đi với of. "Bị buộc tội vì…" khiến người Việt chọn for, nhưng for chỉ đi với arrest và blame.
+  - type: common_mistake
+    wrong: He was sentenced for ten years in prison.
+    right: He was sentenced to ten years in prison.
+    target_lang: en
+    note:
+      vi: Trước mức án dùng to. For chỉ dùng trước tội danh - sentenced to ten years for fraud.
+  - type: summary
+    points:
+      - vi: Chuỗi vụ án - arrested for → charged with → on trial → plead guilty/not guilty → found guilty of → sentenced to.
+      - vi: Accuse of, charge with, arrest for, sentence to, blame for (hoặc blame something on).
+      - vi: Sau giới từ dùng V-ing - accused of stealing.
+      - vi: Commit a crime (không dùng do/make); a suspect (nhấn âm đầu) - to suspect (nhấn âm sau).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:lawj-crime-mcq-accused-of
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:accuse-of
+    prompt:
+      stem: "Chọn giới từ đúng: The chief executive was accused ___ misleading investors about the company's debts."
+      stem_lang: vi
+      options:
+        - { id: q7f, text: of, lang: en }
+        - { id: m2k, text: for, lang: en }
+        - { id: z5d, text: about, lang: en }
+        - { id: h8w, text: with, lang: en }
+    answer:
+      correct_option_id: q7f
+    explanation:
+      vi: Accuse luôn đi với of (accuse somebody of doing something). For chỉ đi với arrest hoặc blame; with đi với charge.
+    display_answer: of
+
+  - key: en:exercise:lawj-crime-mcq-charged-with
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:charge-with
+    prompt:
+      stem: "Chọn giới từ đúng: Two port officials have been charged ___ accepting bribes from importers."
+      stem_lang: vi
+      options:
+        - { id: c4r, text: with, lang: en }
+        - { id: u9a, text: of, lang: en }
+        - { id: e1n, text: for, lang: en }
+        - { id: t6y, text: by, lang: en }
+    answer:
+      correct_option_id: c4r
+    explanation:
+      vi: Charge somebody with something là khởi tố chính thức về một tội. Of đi với accuse; for ở đây sẽ thành "tính tiền cho việc gì", sai nghĩa.
+    display_answer: with
+
+  - key: en:exercise:lawj-crime-listen-sentenced
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:sentence-to
+    prompt:
+      audio_asset_id: null
+      fallback_text: A local businessman has been found guilty of tax fraud and sentenced to three years in prison.
+      options:
+        - { id: k3p, text: "Một doanh nhân địa phương bị tuyên có tội gian lận thuế và lĩnh án ba năm tù.", lang: vi }
+        - { id: w8s, text: "Một doanh nhân địa phương bị bắt vì gian lận thuế và bị giam ba năm trước khi ra toà.", lang: vi }
+        - { id: b5g, text: "Một doanh nhân địa phương được tuyên vô tội sau ba năm điều tra về thuế.", lang: vi }
+        - { id: y2j, text: "Một doanh nhân địa phương đã tố cáo hành vi gian lận thuế kéo dài ba năm.", lang: vi }
+    answer:
+      correct_option_id: k3p
+    explanation:
+      vi: Found guilty of là toà tuyên có tội; sentenced to three years in prison là mức án ba năm tù. Câu không hề nói tới việc bị bắt hay tố cáo người khác.
+    display_answer: "Một doanh nhân địa phương bị tuyên có tội gian lận thuế và lĩnh án ba năm tù."
+
+  - key: en:exercise:lawj-crime-fill-blame-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:blame-for
+    prompt:
+      template: "Many residents {{b1}} the city council {{b2}} the flooding in their neighbourhood."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Nhiều cư dân đổ lỗi cho hội đồng thành phố về việc khu phố của họ bị ngập."
+        - "Gợi ý: động từ \"đổ lỗi\" + người + giới từ + việc."
+    answer:
+      blanks:
+        b1: [blame, blamed]
+        b2: [for]
+    known_wrong:
+      - answer: "on"
+        feedback_vi: Khi người đứng ngay sau blame thì dùng for; on chỉ dùng trong blame something on somebody.
+        error_tag: preposition
+      - answer: accuse
+        feedback_vi: Accuse đi với of, không đi với for - ở đây cần blame.
+        error_tag: collocation
+    explanation:
+      vi: Khuôn blame somebody for something - người (the city council) đứng ngay sau blame, việc (the flooding) đứng sau for.
+    display_answer: Many residents blame the city council for the flooding in their neighbourhood.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:lawj-crime-fill-plead
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:plead-guilty
+    prompt:
+      template: "On the first day of the trial, the defendant {{b1}} guilty {{b2}} all three charges."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [pleaded, pled]
+        b2: [to]
+    known_wrong:
+      - answer: of
+        feedback_vi: Plead guilty đi với to; of đi với found guilty.
+        error_tag: preposition
+      - answer: was
+        feedback_vi: Câu nói về lời nhận tội của bị cáo, cần động từ plead - pleaded guilty to.
+        error_tag: collocation
+    explanation:
+      vi: Bị cáo tự nhận tội trước toà là plead guilty TO something. Quá khứ là pleaded (Anh) hoặc pled (Mỹ).
+    display_answer: On the first day of the trial, the defendant pleaded guilty to all three charges.
+
+  - key: en:exercise:lawj-crime-translate-arrested
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:arrest-for
+    prompt:
+      source_text: Anh ta bị bắt vì lái xe khi say rượu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He was arrested for drink-driving.
+        - He was arrested for drink driving.
+        - He was arrested for drunk driving.
+        - He was arrested for driving while drunk.
+        - He was arrested for driving drunk.
+        - He was arrested for driving under the influence.
+        - He was arrested for driving under the influence of alcohol.
+        - He got arrested for drink-driving.
+        - He got arrested for drunk driving.
+        - He got arrested for driving while drunk.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He was arrested of drink-driving.
+        feedback_vi: Arrest đi với for, không đi với of.
+        error_tag: preposition
+      - answer: He was arrested for drive drunk.
+        feedback_vi: Sau giới từ for, động từ phải ở dạng V-ing - driving.
+        error_tag: gerund_after_preposition
+      - answer: He arrested for drink-driving.
+        feedback_vi: Anh ta là người bị bắt nên dùng bị động - was arrested.
+        error_tag: passive_missing_be
+    explanation:
+      vi: "\"Bị bắt\" là bị động (was arrested), và lý do đứng sau for. Drink-driving (Anh) và drunk driving (Mỹ) đều đúng."
+    display_answer: He was arrested for drink-driving.
+
+  - key: en:exercise:lawj-crime-translate-accused-data
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:accuse-of
+    prompt:
+      source_text: Bà ấy bị cáo buộc ăn cắp dữ liệu khách hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - She was accused of stealing customer data.
+        - She has been accused of stealing customer data.
+        - She's been accused of stealing customer data.
+        - She is accused of stealing customer data.
+        - She's accused of stealing customer data.
+        - She was accused of stealing customers' data.
+        - She was accused of stealing client data.
+        - She has been accused of stealing client data.
+        - She was accused of stealing data from customers.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: She was accused for stealing customer data.
+        feedback_vi: Accuse đi với of, không đi với for.
+        error_tag: preposition
+      - answer: She was accused of steal customer data.
+        feedback_vi: Sau of phải dùng V-ing - stealing.
+        error_tag: gerund_after_preposition
+      - answer: She was accused to steal customer data.
+        feedback_vi: Accuse không đi với to + V; dùng of + V-ing.
+        error_tag: gerund_after_preposition
+    explanation:
+      vi: Accuse somebody of doing something; ở bị động là be accused of + V-ing. "She's" ở đây là She has (She's been accused) hoặc She is (She's accused) - cả hai đều đúng.
+    display_answer: She was accused of stealing customer data.
+
+  # ---------------- application ----------------
+  - key: en:exercise:lawj-crime-mcq-headline
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sentence-to
+    prompt:
+      stem: "Bạn biên tập một bản tin tiếng Anh: tài xế gây tai nạn bị toà phạt năm năm tù. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r6x, text: "The court sentenced the driver to five years in prison for causing the crash.", lang: en }
+        - { id: d3m, text: "The court sentenced the driver for five years in prison to causing the crash.", lang: en }
+        - { id: f9l, text: "The court sentenced the driver to five years in prison for cause the crash.", lang: en }
+        - { id: n1v, text: "The court was sentenced the driver to five years in prison for causing the crash.", lang: en }
+    answer:
+      correct_option_id: r6x
+    explanation:
+      vi: Mức án đứng sau to (to five years), tội đứng sau for + V-ing (for causing). Toà là người tuyên án nên dùng chủ động, không có was.
+    display_answer: "The court sentenced the driver to five years in prison for causing the crash."
+
+  - key: en:exercise:lawj-crime-order-blame
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:blame-for
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Nhân chứng đổ lỗi cho tài xế xe tải về vụ va chạm.\""
+      tokens:
+        - { id: t-coll, text: the collision }
+        - { id: t-on, text: "on" }
+        - { id: t-wit, text: The witness }
+        - { id: t-for, text: for }
+        - { id: t-blamed, text: blamed }
+        - { id: t-drv, text: the lorry driver }
+    answer:
+      orders:
+        - [t-wit, t-blamed, t-drv, t-for, t-coll]
+        - [t-wit, t-blamed, t-coll, t-on, t-drv]
+    explanation:
+      vi: Có hai cách đúng - blamed the lorry driver for the collision (người trước, for) hoặc blamed the collision on the lorry driver (việc trước, on). Không trộn hai khuôn với nhau.
+    display_answer: The witness blamed the lorry driver for the collision.
+
+  - key: en:exercise:lawj-crime-translate-not-guilty
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:be-found-guilty-of
+    prompt:
+      source_text: The case went to court, and the businessman was found not guilty of fraud.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vụ án được đưa ra toà và doanh nhân đó được tuyên vô tội về tội lừa đảo.
+        - Vụ việc được đưa ra toà, và doanh nhân được tuyên không phạm tội lừa đảo.
+        - Vụ án được đưa ra xét xử và doanh nhân đó được tuyên vô tội đối với tội lừa đảo.
+        - Vụ án ra toà và doanh nhân được tuyên vô tội về tội gian lận.
+        - Vụ án được đưa ra toà và người doanh nhân được tuyên vô tội về tội lừa đảo.
+        - Vụ án được đưa ra toà, và doanh nhân đó được tuyên trắng án về tội lừa đảo.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Go to court là "được đưa ra toà"; found not guilty of là toà tuyên vô tội (không phải "bị tìm thấy"). Fraud là lừa đảo, gian lận.
+    display_answer: Vụ án được đưa ra toà và doanh nhân đó được tuyên vô tội về tội lừa đảo.
+
+  - key: en:exercise:lawj-crime-mcq-commit
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:commit-a-crime
+    prompt:
+      stem: "Bạn viết bài luận về tội phạm thanh thiếu niên. Câu nào dùng collocation tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: s8b, text: "Teenagers who commit a crime often come from schools with no after-class activities.", lang: en }
+        - { id: a4c, text: "Teenagers who do a crime often come from schools with no after-class activities.", lang: en }
+        - { id: g7h, text: "Teenagers who make a crime often come from schools with no after-class activities.", lang: en }
+        - { id: o2e, text: "Teenagers who crime often come from schools with no after-class activities.", lang: en }
+    answer:
+      correct_option_id: s8b
+    explanation:
+      vi: Commit a crime là collocation cố định. Do / make không đi với crime, và crime là danh từ chứ không phải động từ.
+    display_answer: "Teenagers who commit a crime often come from schools with no after-class activities."

@@ -1,0 +1,756 @@
+# Học liệu unit "Pháp luật, tội phạm & trách nhiệm" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: tội phạm & giới từ đi kèm ----------------
+  - key: en:item:commit-a-crime
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: commit a crime
+      ipa: /kəˈmɪt ə ˈkraɪm/
+      pos: collocation
+    back:
+      meaning:
+        vi: phạm tội, gây ra một tội (cũng dùng commit fraud, commit an offence)
+      examples:
+        - target: Most people who commit a crime for the first time are under twenty-five.
+          translation:
+            vi: Phần lớn những người phạm tội lần đầu đều dưới hai mươi lăm tuổi.
+      pronunciation_note:
+        vi: Commit nhấn âm thứ hai /kəˈmɪt/; âm đầu đọc nhẹ /kə/, không đọc "com".
+      confusion:
+        vi: Không nói do a crime hay make a crime. Tiếng Việt "phạm tội" không có động từ riêng, nên hãy học cả cụm commit a crime.
+
+  - key: en:item:accuse-of
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: accuse somebody of (doing) something
+      ipa: /əˈkjuːz ... əv/
+      pos: động từ + giới từ
+    back:
+      meaning:
+        vi: buộc tội, cáo buộc ai đã làm gì (sau of là danh từ hoặc V-ing)
+      examples:
+        - target: The manager was accused of hiding losses from the shareholders.
+          translation:
+            vi: Người quản lý bị cáo buộc che giấu khoản lỗ với các cổ đông.
+      confusion:
+        vi: Giới từ luôn là of, không dùng for hay about. Sau of động từ phải ở dạng V-ing (accused of stealing), không dùng to steal.
+
+  - key: en:item:charge-with
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: charge somebody with something
+      ipa: UK /tʃɑːdʒ ... wɪð/ · US /tʃɑːrdʒ ... wɪð/
+      pos: động từ + giới từ
+    back:
+      meaning:
+        vi: (cảnh sát, công tố) chính thức khởi tố ai về tội gì
+      examples:
+        - target: Two men have been charged with fraud after a six-month investigation.
+          translation:
+            vi: Hai người đàn ông đã bị khởi tố về tội lừa đảo sau sáu tháng điều tra.
+      confusion:
+        vi: Charge with là bước pháp lý chính thức; accuse of chỉ là lời buộc tội, ai cũng có thể nói. Đừng nhầm với charge somebody for something (tính tiền).
+
+  - key: en:item:arrest-for
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: arrest somebody for something
+      ipa: /əˈrest ... fə/
+      pos: động từ + giới từ
+    back:
+      meaning:
+        vi: bắt giữ ai vì (tình nghi) tội gì; thường ở bị động be arrested for
+      examples:
+        - target: A tourist was arrested for flying a drone over the airport.
+          translation:
+            vi: Một du khách bị bắt vì cho flycam bay trên khu vực sân bay.
+      confusion:
+        vi: Arrest đi với for, còn charge đi với with và accuse đi với of. Ba động từ gần nghĩa nhưng giới từ khác nhau, nên hãy học cả cụm.
+
+  - key: en:item:sentence-to
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: sentence somebody to (five years in prison)
+      ipa: /ˈsentəns ... tə/
+      pos: động từ + giới từ
+    back:
+      meaning:
+        vi: (toà) tuyên án ai bao nhiêu năm tù / hình phạt gì; danh từ a sentence là bản án
+      examples:
+        - target: The driver was sentenced to two years in prison for causing the crash.
+          translation:
+            vi: Tài xế bị tuyên phạt hai năm tù vì gây ra vụ tai nạn.
+      confusion:
+        vi: Sentence ở đây không phải "câu văn". Dùng to trước hình phạt (sentenced to life imprisonment), và for trước tội (for causing the crash).
+
+  - key: en:item:blame-for
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: blame somebody for something / blame something on somebody
+      ipa: /bleɪm ... fə/
+      pos: động từ + giới từ
+    back:
+      meaning:
+        vi: đổ lỗi cho ai về việc gì; hai cấu trúc cùng nghĩa nhưng đảo vị trí người và việc
+      examples:
+        - target: Residents blame the council for the lack of street lighting.
+          translation:
+            vi: Cư dân đổ lỗi cho chính quyền địa phương vì thiếu đèn đường.
+      confusion:
+        vi: Blame somebody FOR something nhưng blame something ON somebody. Người Việt hay nói blame on the council for…, trộn cả hai cấu trúc.
+
+  - key: en:item:be-found-guilty-of
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: be found guilty / not guilty of something
+      ipa: /bi ˌfaʊnd ˈɡɪlti əv/
+      pos: cụm bị động
+    back:
+      meaning:
+        vi: bị toà tuyên có tội / vô tội về tội gì
+      examples:
+        - target: She was found not guilty of all charges and walked free.
+          translation:
+            vi: Cô ấy được tuyên vô tội với mọi cáo buộc và được trả tự do.
+      pronunciation_note:
+        vi: Guilty đọc /ˈɡɪlti/, chữ u câm - gần "ghin-ti".
+      confusion:
+        vi: Luôn dùng found (V3 của find) và giới từ of. Không nói was guilty for; "bị kết tội" trong tiếng Việt không có động từ find, nên người học hay bỏ mất found.
+
+  - key: en:item:suspect-noun
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: a suspect / to suspect
+      ipa: "danh từ /ˈsʌspekt/ · động từ /səˈspekt/"
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: nghi phạm (danh từ); nghi ngờ (động từ - suspect somebody of something)
+      examples:
+        - target: Police are questioning a suspect who was seen near the warehouse.
+          translation:
+            vi: Cảnh sát đang thẩm vấn một nghi phạm từng bị nhìn thấy gần nhà kho.
+      pronunciation_note:
+        vi: Danh từ nhấn âm đầu SUS-pect, động từ nhấn âm sau sus-PECT - như record, present.
+      confusion:
+        vi: Động từ suspect đi với of giống accuse - suspected of taking bribes. Suspect cũng có nghĩa "đoán là" (I suspect he's lying).
+
+  - key: en:item:court-trial
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: court / trial
+      ipa: UK /kɔːt/ · US /kɔːrt/ ; /ˈtraɪəl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: toà án (nơi xét xử) / phiên toà, việc xét xử (go on trial = bị đưa ra xét xử)
+      examples:
+        - target: The case will go to court next spring, and the trial could last a month.
+          translation:
+            vi: Vụ án sẽ được đưa ra toà vào mùa xuân tới, và phiên xét xử có thể kéo dài một tháng.
+      confusion:
+        vi: Nói in court (tại toà) và on trial (đang bị xét xử), không có the. Trial còn có nghĩa "dùng thử" (a free trial), nên cần nhìn ngữ cảnh.
+
+  - key: en:item:plead-guilty
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: plead guilty / not guilty (to something)
+      ipa: /ˌpliːd ˈɡɪlti/
+      pos: collocation
+    back:
+      meaning:
+        vi: (bị cáo) nhận tội / không nhận tội trước toà
+      examples:
+        - target: The former director pleaded guilty to tax evasion on the first day.
+          translation:
+            vi: Cựu giám đốc đã nhận tội trốn thuế ngay ngày đầu tiên.
+      confusion:
+        vi: Plead guilty TO something (giới từ to), khác found guilty OF. Quá khứ là pleaded (Anh) hoặc pled (Mỹ).
+
+  # ---------------- Bài 2: động từ khuyết thiếu quá khứ - phê bình, tiếc nuối ----------------
+  - key: en:item:should-have-done
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: should have + V3
+      ipa: /ˈʃʊd əv/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: lẽ ra nên làm (nhưng đã không làm) - phê bình hoặc tiếc nuối về quá khứ
+      examples:
+        - target: You should have kept the receipt; now the bank won't refund you.
+          translation:
+            vi: Lẽ ra bạn nên giữ biên lai; giờ ngân hàng sẽ không hoàn tiền cho bạn.
+      pronunciation_note:
+        vi: Khi nói nhanh should have đọc /ˈʃʊdəv/ (should've), nghe như "should of" nhưng không bao giờ viết là of.
+      confusion:
+        vi: Tiếng Việt chỉ thêm "lẽ ra" mà động từ không đổi, nên người học hay nói you should keep the receipt cho chuyện đã qua. Với quá khứ phải dùng have + V3.
+
+  - key: en:item:shouldnt-have-done
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: shouldn't have + V3
+      ipa: /ˈʃʊdnt əv/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: lẽ ra không nên làm (nhưng đã làm) - nhận lỗi hoặc trách ai
+      examples:
+        - target: I shouldn't have clicked that link - it installed something on my laptop.
+          translation:
+            vi: Lẽ ra tôi không nên bấm vào đường link đó - nó đã cài thứ gì đó lên máy tôi.
+      confusion:
+        vi: Phủ định đặt not sau should (shouldn't have), không phải should have not trong văn nói thông thường.
+
+  - key: en:item:could-have-done-unrealised
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: could have + V3 (khả năng không thành hiện thực)
+      ipa: /ˈkʊd əv/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: đã có thể (làm/xảy ra) nhưng thực tế không - dùng khi trách nhẹ hoặc nói về điều may mắn tránh được
+      examples:
+        - target: You could have told me the meeting was cancelled - I drove all the way there.
+          translation:
+            vi: Lẽ ra bạn đã có thể báo tôi là cuộc họp bị huỷ - tôi đã lái xe tới tận nơi.
+      confusion:
+        vi: Could have khác might have done (suy đoán chưa chắc chuyện gì đã xảy ra). Ở đây người nói biết chắc việc đã không xảy ra.
+
+  - key: en:item:neednt-have-done
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: needn't have + V3
+      ipa: /ˈniːdnt əv/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: đã làm một việc mà hoá ra không cần thiết (công sức bỏ phí)
+      examples:
+        - target: We needn't have hired a lawyer - the landlord returned the deposit anyway.
+          translation:
+            vi: Lẽ ra chúng tôi không cần thuê luật sư - đằng nào chủ nhà cũng trả lại tiền cọc.
+      confusion:
+        vi: Needn't have hired nghĩa là ĐÃ thuê rồi mới biết không cần. Nếu không thuê vì biết trước là không cần thì dùng didn't need to hire.
+
+  - key: en:item:didnt-need-to-vs-neednt
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: didn't need to + V vs needn't have + V3
+      ipa: /ˈdɪdnt ˈniːd tə/
+      pos: so sánh cấu trúc
+    back:
+      meaning:
+        vi: didn't need to - không cần làm (thường là đã không làm); needn't have - đã làm nhưng hoá ra thừa
+      examples:
+        - target: I didn't need to queue because I had booked online.
+          translation:
+            vi: Tôi không cần xếp hàng vì đã đặt trước trên mạng.
+      confusion:
+        vi: Tiếng Việt đều nói "không cần", nên người học dùng lẫn lộn. Hãy tự hỏi - việc đó có thực sự được làm không? Có thì dùng needn't have.
+
+  - key: en:item:scam
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: a scam / to scam somebody
+      ipa: /skæm/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: trò lừa đảo (thường để lấy tiền); lừa đảo ai
+      examples:
+        - target: The "prize" text message was a scam designed to steal bank details.
+          translation:
+            vi: Tin nhắn "trúng thưởng" đó là một trò lừa đảo nhằm đánh cắp thông tin ngân hàng.
+      confusion:
+        vi: Scam mang tính thân mật hơn fraud (tội gian lận, dùng trong văn bản pháp lý). Người bị lừa là a scam victim.
+
+  - key: en:item:fall-for
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: fall for something
+      ipa: UK /ˈfɔːl fə/ · US /ˈfɑːl fɚ/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mắc bẫy, bị lừa bởi (một mánh khoé, lời nói dối)
+      examples:
+        - target: My uncle nearly fell for a fake call from "his bank".
+          translation:
+            vi: Chú tôi suýt nữa mắc bẫy một cuộc gọi giả danh "ngân hàng của chú".
+      confusion:
+        vi: Fall for somebody lại có nghĩa "phải lòng ai". Quá khứ là fell for, V3 là fallen for.
+
+  - key: en:item:report-to-the-police
+    type: phrase
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: report something to the police
+      ipa: UK /rɪˈpɔːt ... tə ðə pəˈliːs/ · US /rɪˈpɔːrt ... tə ðə pəˈliːs/
+      pos: collocation
+    back:
+      meaning:
+        vi: trình báo việc gì với công an / cảnh sát
+      examples:
+        - target: If your phone is stolen, report it to the police and get a reference number.
+          translation:
+            vi: Nếu bị mất trộm điện thoại, hãy trình báo với cảnh sát và lấy số biên nhận.
+      confusion:
+        vi: The police là danh từ số nhiều - The police are investigating, không phải is. Giới từ là to, không phải with.
+
+  # ---------------- Bài 3: quá khứ hoàn thành tiếp diễn ----------------
+  - key: en:item:past-perfect-continuous
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: had been + V-ing
+      ipa: /həd ˈbiːn/
+      pos: thì quá khứ hoàn thành tiếp diễn
+    back:
+      meaning:
+        vi: một hành động đã kéo dài liên tục đến (hoặc ngay trước) một mốc trong quá khứ
+      examples:
+        - target: The accountant had been moving money for months before anyone noticed.
+          translation:
+            vi: Người kế toán đã chuyển tiền suốt nhiều tháng trước khi có ai phát hiện.
+      pronunciation_note:
+        vi: Had been đọc lướt /əd bɪn/ - had gần như mất âm h.
+      confusion:
+        vi: Tiếng Việt chỉ dùng "đã... suốt", nên người học hay dùng quá khứ đơn. Khi có mốc quá khứ khác và nhấn mạnh độ dài (for months, all night) thì dùng had been + V-ing.
+
+  - key: en:item:ppc-vs-past-perfect
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: had been doing vs had done
+      ipa: /həd ˈbiːn ˈduːɪŋ/ · /həd ˈdʌn/
+      pos: so sánh thì
+    back:
+      meaning:
+        vi: had been doing nhấn mạnh quá trình, thời gian kéo dài; had done nhấn mạnh kết quả, số lượng đã xong
+      examples:
+        - target: She had been interviewing witnesses all morning and had spoken to twelve of them.
+          translation:
+            vi: Cô ấy đã phỏng vấn nhân chứng suốt buổi sáng và đã nói chuyện với mười hai người.
+      confusion:
+        vi: Có con số đếm được (twelve, three times) thì dùng had done, không dùng had been doing. Động từ trạng thái (know, believe) không dùng dạng tiếp diễn - had known, không phải had been knowing.
+
+  - key: en:item:ppc-evidence
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: had been + V-ing để giải thích dấu vết
+      ipa: /həd ˈbiːn/
+      pos: cách dùng
+    back:
+      meaning:
+        vi: giải thích một dấu hiệu nhìn thấy ở quá khứ bằng hoạt động đã diễn ra ngay trước đó
+      examples:
+        - target: The floor was wet because someone had been cleaning the office.
+          translation:
+            vi: Sàn nhà ướt vì ai đó vừa lau dọn văn phòng.
+      confusion:
+        vi: Giống has been doing ở hiện tại (Your eyes are red - have you been crying?), nhưng lùi về quá khứ. Hoạt động có thể vừa mới kết thúc.
+
+  - key: en:item:investigate
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: investigate / an investigation
+      ipa: /ɪnˈvestɪɡeɪt/ · /ɪnˌvestɪˈɡeɪʃn/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: điều tra / cuộc điều tra (launch / carry out an investigation into something)
+      examples:
+        - target: The authorities have launched an investigation into the missing funds.
+          translation:
+            vi: Nhà chức trách đã mở một cuộc điều tra về khoản tiền bị thất thoát.
+      pronunciation_note:
+        vi: Động từ nhấn âm hai in-VES-ti-gate; danh từ nhấn âm bốn in-ves-ti-GA-tion.
+      confusion:
+        vi: Investigate không cần giới từ (investigate the case), nhưng an investigation INTO the case.
+
+  - key: en:item:detective
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: detective
+      ipa: /dɪˈtektɪv/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thám tử, điều tra viên
+      examples:
+        - target: The detective noticed that the back door had been left unlocked.
+          translation:
+            vi: Viên thám tử để ý thấy cửa sau đã không được khoá.
+      confusion:
+        vi: Detective là người; detection là việc phát hiện. A private detective là thám tử tư.
+
+  - key: en:item:crime-scene
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: crime scene / the scene of the crime
+      ipa: /ˈkraɪm siːn/
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: hiện trường vụ án
+      examples:
+        - target: Nobody was allowed near the crime scene until the experts arrived.
+          translation:
+            vi: Không ai được lại gần hiện trường cho tới khi các chuyên gia đến.
+      pronunciation_note:
+        vi: Scene đọc /siːn/, chữ c câm - giống seen.
+      confusion:
+        vi: Trật tự từ ngược tiếng Việt - "hiện trường (của) vụ án" thành crime scene; danh từ bổ nghĩa đứng trước.
+
+  - key: en:item:fingerprints
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fingerprints
+      ipa: UK /ˈfɪŋɡəprɪnts/ · US /ˈfɪŋɡɚprɪnts/
+      pos: danh từ số nhiều
+    back:
+      meaning:
+        vi: dấu vân tay
+      examples:
+        - target: They found the suspect's fingerprints on the broken window.
+          translation:
+            vi: Họ tìm thấy dấu vân tay của nghi phạm trên ô cửa sổ vỡ.
+      confusion:
+        vi: Thường dùng số nhiều. Động từ là take somebody's fingerprints (lấy dấu vân tay).
+
+  - key: en:item:cctv-footage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: CCTV footage
+      ipa: /ˌsiː siː tiː ˈviː ˈfʊtɪdʒ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hình ảnh, đoạn phim từ camera an ninh
+      examples:
+        - target: CCTV footage shows two people leaving the shop just after midnight.
+          translation:
+            vi: Hình ảnh camera an ninh cho thấy hai người rời cửa hàng ngay sau nửa đêm.
+      confusion:
+        vi: Footage là danh từ không đếm được - không nói a footage hay footages; dùng a piece of footage hoặc some footage.
+
+  - key: en:item:alibi
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: alibi
+      ipa: /ˈæləbaɪ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng cứ ngoại phạm (bằng chứng mình ở nơi khác khi vụ việc xảy ra)
+      examples:
+        - target: His alibi fell apart when the hotel had no record of his stay.
+          translation:
+            vi: Chứng cứ ngoại phạm của anh ta sụp đổ khi khách sạn không có dữ liệu lưu trú của anh ta.
+      pronunciation_note:
+        vi: Đọc /ˈæləbaɪ/ - âm cuối là "bai", nhấn âm đầu.
+      confusion:
+        vi: Have / provide an alibi; trong văn nói alibi đôi khi chỉ một lời bào chữa nói chung.
+
+  # ---------------- Bài 4: had better, would rather, it's time, be supposed to ----------------
+  - key: en:item:had-better
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: had better (not) + V
+      ipa: UK /həd ˈbetə/ · US /həd ˈbetɚ/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: tốt hơn hết là nên (nếu không sẽ có hậu quả) - mạnh hơn should
+      examples:
+        - target: You'd better read the contract carefully before you sign it.
+          translation:
+            vi: Tốt nhất bạn nên đọc kỹ hợp đồng trước khi ký.
+      pronunciation_note:
+        vi: Thường rút gọn You'd better /juːd ˈbetə/; khi nói nhanh âm 'd gần như mất nhưng vẫn phải viết.
+      confusion:
+        vi: Dù có had nhưng nói về hiện tại/tương lai. Sau had better là V nguyên mẫu (không có to), phủ định là had better not, không phải hadn't better.
+
+  - key: en:item:would-rather
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: would rather + V (than + V)
+      ipa: UK /wʊd ˈrɑːðə/ · US /wʊd ˈræðɚ/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: thích (làm gì) hơn, thà... còn hơn
+      examples:
+        - target: I'd rather settle the dispute privately than go to court.
+          translation:
+            vi: Tôi thà giải quyết tranh chấp riêng còn hơn ra toà.
+      confusion:
+        vi: Sau would rather là V nguyên mẫu, không có to (I'd rather to go là sai). So sánh dùng than + V, không dùng than + V-ing.
+
+  - key: en:item:would-rather-someone-did
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: would rather + somebody + quá khứ đơn
+      ipa: UK /wʊd ˈrɑːðə/ · US /wʊd ˈræðɚ/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: muốn người khác làm (hoặc không làm) gì ở hiện tại/tương lai - lịch sự, gián tiếp
+      examples:
+        - target: I'd rather you didn't share the details of the case online.
+          translation:
+            vi: Tôi mong bạn đừng chia sẻ chi tiết vụ việc lên mạng.
+      confusion:
+        vi: Khi có chủ ngữ thứ hai, động từ lùi về quá khứ (you didn't share) dù nói về bây giờ - giống sau wish. Không nói I'd rather you don't share.
+
+  - key: en:item:its-high-time
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: It's (high / about) time + somebody + quá khứ đơn
+      ipa: /ɪts ˌhaɪ ˈtaɪm/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: đã đến lúc (lẽ ra phải làm rồi) ai đó làm gì - phê bình việc bị chậm trễ
+      examples:
+        - target: It's high time the city introduced tougher penalties for drink-driving.
+          translation:
+            vi: Đã đến lúc thành phố phải áp dụng hình phạt nặng hơn với lái xe khi say rượu.
+      confusion:
+        vi: Động từ ở quá khứ (introduced) nhưng nghĩa là hiện tại. It's time to + V dùng khi chỉ nói "đến giờ làm gì", không mang ý chê trách.
+
+  - key: en:item:be-supposed-to
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: be supposed to + V
+      ipa: UK /bi səˈpəʊzd tə/ · US /bi səˈpoʊzd tə/
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: được cho là phải / theo quy định thì phải (nhưng thường không làm đúng); was supposed to - lẽ ra đã phải
+      examples:
+        - target: Drivers are supposed to stop at the zebra crossing, but many don't.
+          translation:
+            vi: Theo luật tài xế phải dừng ở vạch qua đường, nhưng nhiều người không làm vậy.
+      pronunciation_note:
+        vi: Supposed to đọc liền /səˈpəʊs tə/ - âm d gần như biến mất trước to, nhưng khi viết vẫn có d.
+      confusion:
+        vi: Người học hay viết suppose to (thiếu d) hoặc bỏ be. Luôn là be + supposed + to.
+
+  - key: en:item:community-service
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: community service
+      ipa: UK /kəˈmjuːnəti ˈsɜːvɪs/ · US /kəˈmjuːnəti ˈsɝːvɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lao động công ích (hình phạt thay cho án tù với tội nhẹ)
+      examples:
+        - target: The teenagers were given 100 hours of community service for the graffiti.
+          translation:
+            vi: Các thiếu niên bị phạt 100 giờ lao động công ích vì vẽ bậy.
+      confusion:
+        vi: Không đếm được, không có a. Do community service là collocation thường gặp.
+
+  - key: en:item:reoffend
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: reoffend
+      ipa: /ˌriːəˈfend/
+      pos: động từ
+    back:
+      meaning:
+        vi: tái phạm
+      examples:
+        - target: Young people who find steady work are far less likely to reoffend.
+          translation:
+            vi: Người trẻ có việc làm ổn định ít có khả năng tái phạm hơn nhiều.
+      confusion:
+        vi: Nội động từ, không có tân ngữ. Danh từ là reoffending; người phạm tội là an offender.
+
+  - key: en:item:deter
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: deter somebody (from doing something)
+      ipa: UK /dɪˈtɜː/ · US /dɪˈtɝː/
+      pos: động từ
+    back:
+      meaning:
+        vi: răn đe, ngăn cản ai làm gì; danh từ a deterrent - biện pháp răn đe
+      examples:
+        - target: Higher fines alone will not deter people from speeding.
+          translation:
+            vi: Chỉ tăng tiền phạt thôi sẽ không ngăn được người ta chạy quá tốc độ.
+      confusion:
+        vi: Đi với from + V-ing, không dùng to + V. Quá khứ gấp đôi r - deterred.
+
+  - key: en:item:rehabilitation
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: rehabilitation
+      ipa: /ˌriːəˌbɪlɪˈteɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cải tạo, giúp người phạm tội tái hoà nhập (cũng là phục hồi chức năng trong y tế)
+      examples:
+        - target: Supporters argue that prisons should focus on rehabilitation, not just punishment.
+          translation:
+            vi: Những người ủng hộ cho rằng nhà tù nên tập trung vào cải tạo chứ không chỉ trừng phạt.
+      pronunciation_note:
+        vi: Nhấn âm chính ở -TA- (re-ha-bi-li-TA-tion).
+      confusion:
+        vi: Hay đi cặp với punishment (trừng phạt) trong bài luận về nhà tù.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:jury
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: jury
+      ipa: UK /ˈdʒʊəri/ · US /ˈdʒʊri/
+      pos: danh từ tập hợp
+    back:
+      meaning:
+        vi: bồi thẩm đoàn (nhóm công dân quyết định có tội hay không)
+      examples:
+        - target: After two days of discussion, the jury reached a unanimous decision.
+          translation:
+            vi: Sau hai ngày thảo luận, bồi thẩm đoàn đã đi đến quyết định nhất trí.
+      confusion:
+        vi: Việt Nam không có bồi thẩm đoàn như Anh, Mỹ (có hội thẩm nhân dân). Trong tiếng Anh Anh, jury có thể đi với động từ số nhiều (the jury are…).
+
+  - key: en:item:verdict
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: verdict
+      ipa: UK /ˈvɜːdɪkt/ · US /ˈvɝːdɪkt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phán quyết (có tội / vô tội); nghĩa rộng - nhận định cuối cùng về điều gì
+      examples:
+        - target: The family welcomed the verdict but said nothing could bring their son back.
+          translation:
+            vi: Gia đình hoan nghênh phán quyết nhưng nói rằng không gì có thể mang con trai họ trở lại.
+      confusion:
+        vi: Verdict (có tội hay không) khác sentence (mức án). Collocation - reach / deliver a verdict.

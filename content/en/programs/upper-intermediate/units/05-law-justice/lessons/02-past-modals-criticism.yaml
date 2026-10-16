@@ -1,0 +1,371 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:law-justice-past-modals
+order_index: 2
+level: b2
+title:
+  vi: Lẽ ra đã nên… - should have, could have, needn't have
+objectives:
+  - vi: Phê bình và tự nhận lỗi về quá khứ bằng should have / shouldn't have + V3.
+  - vi: Nói về điều đã có thể xảy ra (nhưng không) bằng could have + V3.
+  - vi: Phân biệt needn't have done (đã làm mà hoá ra thừa) với didn't need to (không cần làm).
+  - vi: Nói về các vụ lừa đảo trực tuyến - scam, fall for, report to the police.
+estimated_minutes: 25
+skills: [grammar, speaking, vocabulary]
+prerequisites: [en:lesson:law-justice-crime-vocabulary]
+items:
+  - item: en:item:should-have-done
+  - item: en:item:shouldnt-have-done
+  - item: en:item:could-have-done-unrealised
+  - item: en:item:neednt-have-done
+  - item: en:item:didnt-need-to-vs-neednt
+  - item: en:item:scam
+  - item: en:item:fall-for
+  - item: en:item:report-to-the-police
+  - item: en:item:might-have-done
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nhận xét được một sự cố đã qua - ai đã làm sai, lẽ ra nên làm gì, việc gì hoá ra không cần - qua câu chuyện về các vụ lừa đảo qua mạng.
+  - type: explain
+    text:
+      vi: "Để nói về quá khứ, động từ khuyết thiếu đi với have + V3: You should have checked (lẽ ra bạn nên kiểm tra - nhưng bạn không làm). Tiếng Việt chỉ thêm \"lẽ ra\" mà động từ giữ nguyên, nên người Việt hay nói You should check cho chuyện đã qua - nghe như lời khuyên cho tương lai."
+  - type: explain
+    text:
+      vi: "Shouldn't have + V3 là đã làm một việc sai (I shouldn't have clicked). Could have + V3 là đã có khả năng làm nhưng không làm - thường dùng để trách nhẹ: You could have told me!"
+  - type: explain
+    text:
+      vi: "Needn't have + V3 nghĩa là bạn ĐÃ làm, rồi mới biết việc đó không cần (We needn't have hurried - the hearing was postponed). Didn't need to + V thường nghĩa là bạn không làm vì biết trước là không cần."
+  - type: deep_explain
+    text:
+      vi: Must have / might have / can't have + V3 là suy đoán (bạn không chắc chuyện gì đã xảy ra), còn should have / could have trong bài này là nhận xét về điều bạn đã biết chắc. Khi nói nhanh, have đọc yếu thành /əv/ - should've, could've - vì thế người bản ngữ đôi khi viết nhầm "should of"; bạn đừng bắt chước. Ought to have + V3 trang trọng hơn should have, cùng nghĩa.
+  - type: example
+    target: The bank says I should have reported the stolen card within 24 hours.
+    target_lang: en
+    translation:
+      vi: Ngân hàng nói lẽ ra tôi phải báo mất thẻ trong vòng 24 giờ.
+    note:
+      vi: Should have reported - một việc đúng đắn đã không được làm.
+  - type: example
+    target: She shouldn't have shared her one-time password with the "delivery agent".
+    target_lang: en
+    translation:
+      vi: Lẽ ra cô ấy không nên đưa mã OTP cho "nhân viên giao hàng" đó.
+    note:
+      vi: Shouldn't have shared - cô ấy đã làm, và đó là sai lầm.
+  - type: example
+    target: Thousands of people fell for the scam; it could have been stopped much earlier.
+    target_lang: en
+    translation:
+      vi: Hàng nghìn người đã mắc bẫy trò lừa đảo; lẽ ra nó đã có thể bị chặn sớm hơn nhiều.
+    note:
+      vi: Could have been stopped - bị động của could have + V3, khả năng không thành hiện thực.
+  - type: example
+    target: I needn't have changed all my passwords - the warning email was just a test from IT.
+    target_lang: en
+    translation:
+      vi: Hoá ra tôi không cần đổi hết mật khẩu - email cảnh báo chỉ là bài kiểm tra của phòng IT.
+    note:
+      vi: Needn't have changed - đã đổi rồi, sau đó mới biết là thừa.
+  - type: common_mistake
+    wrong: You should check the website before you paid.
+    right: You should have checked the website before you paid.
+    target_lang: en
+    note:
+      vi: Việc trả tiền đã xảy ra, nên lời phê bình phải ở quá khứ - should have + V3.
+  - type: common_mistake
+    wrong: I needn't bring my passport - nobody asked to see it.
+    right: I needn't have brought my passport - nobody asked to see it.
+    target_lang: en
+    note:
+      vi: Đã mang theo rồi mới thấy thừa thì dùng needn't have + V3, không dùng needn't + V nguyên mẫu.
+  - type: common_mistake
+    wrong: He should of called the police.
+    right: He should have called the police.
+    target_lang: en
+    note:
+      vi: Should've nghe giống "should of" nhưng luôn viết là have.
+  - type: summary
+    points:
+      - vi: Should have + V3 - lẽ ra nên làm (nhưng không làm); shouldn't have + V3 - lẽ ra không nên làm (nhưng đã làm).
+      - vi: Could have + V3 - đã có thể (nhưng không xảy ra), dùng để trách nhẹ hoặc nói về rủi ro tránh được.
+      - vi: Needn't have + V3 - đã làm mà hoá ra thừa; didn't need to + V - không cần làm.
+      - vi: Từ vựng - a scam, fall for a scam, report something to the police.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:lawj-modals-mcq-shouldnt-have
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:shouldnt-have-done
+    prompt:
+      stem: "Chọn đáp án đúng: That parcel message was obviously fake. You ___ your card number."
+      stem_lang: vi
+      options:
+        - { id: x4b, text: shouldn't have given, lang: en }
+        - { id: p7c, text: shouldn't give, lang: en }
+        - { id: l2n, text: mustn't have given, lang: en }
+        - { id: j9u, text: didn't have to give, lang: en }
+    answer:
+      correct_option_id: x4b
+    explanation:
+      vi: Việc đưa số thẻ đã xảy ra và đó là sai lầm, nên dùng shouldn't have + V3. Shouldn't give là lời khuyên cho hiện tại/tương lai.
+    display_answer: shouldn't have given
+
+  - key: en:exercise:lawj-modals-mcq-neednt-printed
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:neednt-have-done
+    prompt:
+      stem: "Bạn đã in 50 trang hồ sơ, rồi luật sư nói toà chấp nhận bản điện tử. Câu nào diễn đạt đúng ý này?"
+      stem_lang: vi
+      options:
+        - { id: v5e, text: "I needn't have printed all those pages.", lang: en }
+        - { id: k1t, text: "I didn't need to print all those pages, so I didn't print them.", lang: en }
+        - { id: r8o, text: "I mustn't have printed all those pages.", lang: en }
+        - { id: h3a, text: "I shouldn't print all those pages.", lang: en }
+    answer:
+      correct_option_id: v5e
+    explanation:
+      vi: Bạn ĐÃ in rồi mới biết là thừa - đó chính là needn't have + V3. Phương án didn't need to… so I didn't nói rằng bạn không in, trái với tình huống.
+    display_answer: "I needn't have printed all those pages."
+
+  - key: en:exercise:lawj-modals-listen-could-have
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:could-have-done-unrealised
+    prompt:
+      audio_asset_id: null
+      fallback_text: You could have warned me that the contract had a hidden cancellation fee.
+      options:
+        - { id: u6m, text: "Lẽ ra bạn đã có thể báo trước cho tôi rằng hợp đồng có phí huỷ ẩn.", lang: vi }
+        - { id: e2w, text: "Có lẽ bạn đã báo cho tôi rằng hợp đồng có phí huỷ ẩn.", lang: vi }
+        - { id: s9q, text: "Bạn có thể báo cho tôi nếu hợp đồng có phí huỷ ẩn.", lang: vi }
+        - { id: g4d, text: "Bạn đã báo cho tôi rằng hợp đồng có phí huỷ ẩn.", lang: vi }
+    answer:
+      correct_option_id: u6m
+    explanation:
+      vi: Could have warned nghĩa là bạn đã có khả năng báo nhưng không làm - một lời trách nhẹ. Đây không phải suy đoán (might have) hay lời đề nghị cho tương lai (can).
+    display_answer: "Lẽ ra bạn đã có thể báo trước cho tôi rằng hợp đồng có phí huỷ ẩn."
+
+  - key: en:exercise:lawj-modals-fill-should-have-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:should-have-done
+    prompt:
+      template: "Your bike was stolen last week? You {{b1}} {{b2}} reported it to the police straight away."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Xe đạp của bạn bị mất tuần trước à? Lẽ ra bạn nên trình báo cảnh sát ngay."
+        - "Gợi ý: lời phê bình về quá khứ - động từ khuyết thiếu + have + V3."
+    answer:
+      blanks:
+        b1: [should]
+        b2: [have]
+    known_wrong:
+      - answer: of
+        feedback_vi: Should've chỉ nghe giống "should of"; khi viết luôn là have.
+        error_tag: should_of
+      - answer: must
+        feedback_vi: Must have + V3 là suy đoán, không phải lời phê bình. Ở đây cần should.
+        error_tag: modal_choice
+    explanation:
+      vi: Việc trình báo đã không được làm, nên lời phê bình là should have + V3 (should have reported).
+    display_answer: Your bike was stolen last week? You should have reported it to the police straight away.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:lawj-modals-fill-neednt-worried
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:neednt-have-done
+    prompt:
+      template: "I {{b1}} {{b2}} been so worried about the speeding fine - the council cancelled it the next day."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [needn't, "need not"]
+        b2: [have]
+    known_wrong:
+      - answer: mustn't
+        feedback_vi: Mustn't là cấm đoán; ở đây ý là "lo lắng hoá ra là thừa" - needn't have.
+        error_tag: modal_choice
+      - answer: shouldn't
+        feedback_vi: Shouldn't have là "lẽ ra không nên" (trách); ý ở đây là việc lo lắng hoá ra không cần thiết - needn't have.
+        error_tag: modal_choice
+    explanation:
+      vi: Bạn đã lo rồi, sau đó mới biết khoản phạt bị huỷ - nỗi lo hoá ra thừa, nên dùng needn't have + V3 (needn't have been).
+    display_answer: I needn't have been so worried about the speeding fine - the council cancelled it the next day.
+
+  - key: en:exercise:lawj-modals-translate-stranger
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:shouldnt-have-done
+    prompt:
+      source_text: Lẽ ra tôi không nên tin lời người lạ đó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I shouldn't have trusted that stranger.
+        - I should not have trusted that stranger.
+        - I shouldn't have believed that stranger.
+        - I should not have believed that stranger.
+        - I shouldn't have believed what that stranger said.
+        - I should not have believed what that stranger said.
+        - I shouldn't have trusted what that stranger said.
+        - I shouldn't have believed that stranger's words.
+        - I shouldn't have trusted the stranger.
+        - I shouldn't have believed the stranger.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I shouldn't trust that stranger.
+        feedback_vi: Việc tin đã xảy ra trong quá khứ - cần shouldn't have + V3.
+        error_tag: past_modal_form
+      - answer: I shouldn't have trust that stranger.
+        feedback_vi: Sau have phải dùng V3 - trusted.
+        error_tag: past_participle
+    explanation:
+      vi: "\"Lẽ ra không nên\" + việc đã làm = shouldn't have + V3. Trust và believe đều đúng; believe what he said nhấn vào lời nói."
+    display_answer: I shouldn't have trusted that stranger.
+
+  - key: en:exercise:lawj-modals-translate-fined
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:could-have-done-unrealised
+    prompt:
+      source_text: Anh ấy đã có thể bị phạt rất nặng (nhưng may là không).
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - He could have been fined heavily.
+        - He could have been heavily fined.
+        - He could've been fined heavily.
+        - He could've been heavily fined.
+        - He could have got a heavy fine.
+        - He could have gotten a heavy fine.
+        - He could have received a heavy fine.
+        - He could have been given a heavy fine.
+        - He could have been fined a lot.
+        - He could have been fined very heavily.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: He could be fined heavily.
+        feedback_vi: Could be nói về khả năng ở hiện tại/tương lai; chuyện đã qua cần could have been.
+        error_tag: past_modal_form
+      - answer: He could have fined heavily.
+        feedback_vi: Anh ấy là người bị phạt nên cần bị động - could have been fined.
+        error_tag: passive_missing_be
+    explanation:
+      vi: Khả năng ở quá khứ không thành hiện thực dùng could have + V3; vì anh ấy là người bị phạt nên dùng bị động could have been fined.
+    display_answer: He could have been fined heavily.
+
+  # ---------------- application ----------------
+  - key: en:exercise:lawj-modals-mcq-supplier
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:should-have-done
+    prompt:
+      stem: "Một đồng nghiệp đã chuyển tiền cho một \"nhà cung cấp\" giả mà không kiểm tra. Bạn muốn nhận xét lỗi của anh ấy trong buổi họp rút kinh nghiệm. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: w3k, text: "He should have checked the supplier's bank details first.", lang: en }
+        - { id: b8f, text: "He must have checked the supplier's bank details first.", lang: en }
+        - { id: n6r, text: "He should check the supplier's bank details first.", lang: en }
+        - { id: q1z, text: "He needn't have checked the supplier's bank details first.", lang: en }
+    answer:
+      correct_option_id: w3k
+    explanation:
+      vi: Phê bình một việc đã không được làm trong quá khứ là should have + V3. Must have checked là suy đoán (chắc là đã kiểm tra), needn't have checked lại nói việc kiểm tra là thừa.
+    display_answer: "He should have checked the supplier's bank details first."
+
+  - key: en:exercise:lawj-modals-order-told-me
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:could-have-done-unrealised
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Lẽ ra bạn đã có thể nói với tôi sớm hơn.\""
+      tokens:
+        - { id: k-told, text: told me }
+        - { id: k-earlier, text: earlier }
+        - { id: k-can, text: can }
+        - { id: k-have, text: have }
+        - { id: k-you, text: You }
+        - { id: k-could, text: could }
+    answer:
+      orders:
+        - [k-you, k-could, k-have, k-told, k-earlier]
+    explanation:
+      vi: Could have + V3 (could have told) cho lời trách nhẹ về quá khứ. Can không có dạng quá khứ hoàn thành, nên không dùng can have told ở đây.
+    display_answer: You could have told me earlier.
+
+  - key: en:exercise:lawj-modals-translate-camera-fine
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:neednt-have-done
+    prompt:
+      source_text: She needn't have paid the fine, because the speed camera turned out to be faulty.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lẽ ra cô ấy không cần nộp phạt, vì hoá ra camera tốc độ bị lỗi.
+        - Cô ấy đã nộp phạt mà không cần thiết, vì hoá ra camera bắn tốc độ bị hỏng.
+        - Hoá ra cô ấy không cần phải nộp tiền phạt, vì camera tốc độ bị lỗi.
+        - Cô ấy không cần phải nộp phạt đâu, vì hoá ra camera tốc độ bị lỗi.
+        - Lẽ ra cô ấy không cần trả tiền phạt vì camera tốc độ hoá ra bị hỏng.
+        - Cô ấy đã không cần nộp phạt, vì camera tốc độ hoá ra bị lỗi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Needn't have paid nghĩa là cô ấy ĐÃ nộp phạt nhưng việc đó hoá ra không cần. Turned out to be là "hoá ra là".
+    display_answer: Lẽ ra cô ấy không cần nộp phạt, vì hoá ra camera tốc độ bị lỗi.
+
+  - key: en:exercise:lawj-modals-mcq-fell-for
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:fall-for
+    prompt:
+      stem: "Bạn kể với đồng nghiệp rằng mẹ bạn suýt bị lừa bởi một cuộc gọi giả danh công an. Câu nào tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: c5j, text: "My mum nearly fell for a phone scam from someone pretending to be a police officer.", lang: en }
+        - { id: i2p, text: "My mum nearly fell in a phone scam from someone pretending to be a police officer.", lang: en }
+        - { id: t7s, text: "My mum nearly fell down a phone scam from someone pretending to be a police officer.", lang: en }
+        - { id: y4l, text: "My mum nearly fallen for a phone scam from someone pretending to be a police officer.", lang: en }
+    answer:
+      correct_option_id: c5j
+    explanation:
+      vi: Fall for a scam là "mắc bẫy lừa đảo" - giới từ cố định là for. Quá khứ là fell, không phải fallen (V3 cần has/had đứng trước).
+    display_answer: "My mum nearly fell for a phone scam from someone pretending to be a police officer."

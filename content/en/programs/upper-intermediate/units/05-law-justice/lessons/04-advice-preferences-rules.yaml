@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:law-justice-advice-preferences
+order_index: 4
+level: b2
+title:
+  vi: Had better, would rather, it's time & be supposed to - bàn về hình phạt
+objectives:
+  - vi: Cảnh báo bằng had better (not) + V và phân biệt với should.
+  - vi: Nói lựa chọn ưu tiên bằng would rather + V và would rather + somebody + quá khứ đơn.
+  - vi: Phê bình việc chậm trễ bằng It's (high) time + quá khứ đơn; nói quy định bằng be supposed to.
+  - vi: Thảo luận về hình phạt - community service, deter, reoffend, rehabilitation.
+estimated_minutes: 25
+skills: [grammar, speaking, writing]
+prerequisites: [en:lesson:law-justice-investigation]
+items:
+  - item: en:item:had-better
+  - item: en:item:would-rather
+  - item: en:item:would-rather-someone-did
+  - item: en:item:its-high-time
+  - item: en:item:be-supposed-to
+  - item: en:item:community-service
+  - item: en:item:reoffend
+  - item: en:item:deter
+  - item: en:item:rehabilitation
+  - item: en:item:should-advice
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tham gia được một cuộc thảo luận về luật lệ và hình phạt - cảnh báo, nêu lựa chọn ưu tiên, chê trách sự chậm trễ và nói về điều "theo quy định thì phải".
+  - type: explain
+    text:
+      vi: "Had better + V (thường viết You'd better) là lời cảnh báo mạnh: nếu không làm sẽ có hậu quả. Dù có had, cấu trúc nói về hiện tại hoặc tương lai; sau nó là V nguyên mẫu không có to, phủ định là had better not."
+  - type: explain
+    text:
+      vi: "Would rather + V = thích hơn, thà (I'd rather pay the fine than go to court). Khi muốn NGƯỜI KHÁC làm gì, dùng would rather + somebody + quá khứ đơn: I'd rather you didn't film this. Tương tự, It's (high/about) time + somebody + quá khứ đơn chê trách việc lẽ ra phải làm từ lâu."
+  - type: explain
+    text:
+      vi: "Be supposed to + V là điều mà quy định, kế hoạch hoặc mọi người mong đợi - thường ngầm ý thực tế không như vậy. Was/were supposed to là \"lẽ ra đã phải\". Người Việt hay viết thiếu be hoặc thiếu chữ d (suppose to)."
+  - type: deep_explain
+    text:
+      vi: Việc lùi về quá khứ sau would rather somebody và It's time giống sau wish - thì quá khứ ở đây là "không có thật", không phải thời gian đã qua. Had better mạnh hơn should và nghe như cảnh báo, nên tránh dùng với cấp trên (You'd better send me the report có thể nghe như đe doạ); khi cần lịch sự, dùng should hoặc It might be a good idea to. It's time to + V chỉ nói "đến lúc làm gì" một cách trung tính.
+  - type: example
+    target: You'd better not drive home - the police are checking every car on this road tonight.
+    target_lang: en
+    translation:
+      vi: Tốt nhất bạn đừng lái xe về - tối nay cảnh sát kiểm tra mọi xe trên đường này.
+    note:
+      vi: Had better not + V - lời cảnh báo có hậu quả rõ ràng.
+  - type: example
+    target: Most victims would rather receive compensation than see the offender go to prison.
+    target_lang: en
+    translation:
+      vi: Phần lớn nạn nhân muốn được bồi thường hơn là thấy người phạm tội vào tù.
+    note:
+      vi: Would rather + V + than + V - cả hai động từ ở dạng nguyên mẫu.
+  - type: example
+    target: It's high time the government took cybercrime seriously.
+    target_lang: en
+    translation:
+      vi: Đã đến lúc chính phủ phải xem tội phạm mạng là chuyện nghiêm túc.
+    note:
+      vi: Took ở quá khứ nhưng nghĩa là bây giờ - lời chê trách sự chậm trễ.
+  - type: example
+    target: Prisons are supposed to prepare people for life outside, but many leave with no skills at all.
+    target_lang: en
+    translation:
+      vi: Nhà tù lẽ ra phải chuẩn bị cho người ta cuộc sống bên ngoài, nhưng nhiều người ra tù mà không có kỹ năng gì.
+    note:
+      vi: Be supposed to - điều được mong đợi khác với thực tế.
+  - type: common_mistake
+    wrong: You had better to keep a copy of the contract.
+    right: You had better keep a copy of the contract.
+    target_lang: en
+    note:
+      vi: Sau had better là V nguyên mẫu không có to - giống sau should.
+  - type: common_mistake
+    wrong: I'd rather you don't post the video online.
+    right: I'd rather you didn't post the video online.
+    target_lang: en
+    note:
+      vi: Có chủ ngữ thứ hai sau would rather thì động từ lùi về quá khứ đơn.
+  - type: common_mistake
+    wrong: We suppose to wear ID badges at all times.
+    right: We're supposed to wear ID badges at all times.
+    target_lang: en
+    note:
+      vi: Cần đủ be + supposed (có d) + to.
+  - type: summary
+    points:
+      - vi: Had better (not) + V - cảnh báo mạnh hơn should; không có to.
+      - vi: Would rather + V (than + V); would rather + somebody + quá khứ đơn.
+      - vi: It's (high/about) time + somebody + quá khứ đơn - chê trách việc chậm trễ.
+      - vi: Be supposed to + V - theo quy định / lẽ ra phải; was supposed to - lẽ ra đã phải.
+      - vi: Từ vựng - community service, deter somebody from doing, reoffend, rehabilitation.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:lawj-rather-mcq-had-better-not
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:had-better
+    prompt:
+      stem: "Chọn đáp án đúng: You ___ park in the disabled bay - the fine is two hundred pounds."
+      stem_lang: vi
+      options:
+        - { id: s3f, text: had better not, lang: en }
+        - { id: y8a, text: hadn't better, lang: en }
+        - { id: c6w, text: had better not to, lang: en }
+        - { id: m1r, text: would rather not to, lang: en }
+    answer:
+      correct_option_id: s3f
+    explanation:
+      vi: Phủ định của had better là had better not + V nguyên mẫu. Không có dạng hadn't better và không dùng to sau had better hay would rather.
+    display_answer: had better not
+
+  - key: en:exercise:lawj-rather-mcq-didnt-mention
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-rather-someone-did
+    prompt:
+      stem: "Chọn đáp án đúng: I'd rather you ___ my name in the incident report."
+      stem_lang: vi
+      options:
+        - { id: e7p, text: didn't mention, lang: en }
+        - { id: n2c, text: don't mention, lang: en }
+        - { id: t5j, text: not mention, lang: en }
+        - { id: g9k, text: to not mention, lang: en }
+    answer:
+      correct_option_id: e7p
+    explanation:
+      vi: Would rather + một chủ ngữ khác (you) thì động từ lùi về quá khứ đơn - didn't mention, dù câu nói về hiện tại.
+    display_answer: didn't mention
+
+  - key: en:exercise:lawj-rather-listen-high-time
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:its-high-time
+    prompt:
+      audio_asset_id: null
+      fallback_text: It's high time the authorities did something about online fraud.
+      options:
+        - { id: o4h, text: "Đã đến lúc nhà chức trách phải làm gì đó với nạn lừa đảo trực tuyến.", lang: vi }
+        - { id: z8m, text: "Nhà chức trách đã làm rất nhiều để chống lừa đảo trực tuyến.", lang: vi }
+        - { id: a3v, text: "Có lúc nhà chức trách đã từng xử lý nạn lừa đảo trực tuyến.", lang: vi }
+        - { id: i6b, text: "Nhà chức trách cần nhiều thời gian hơn để chống lừa đảo trực tuyến.", lang: vi }
+    answer:
+      correct_option_id: o4h
+    explanation:
+      vi: It's high time + quá khứ đơn (did) không nói về quá khứ, mà chê trách rằng việc này lẽ ra phải làm từ lâu.
+    display_answer: "Đã đến lúc nhà chức trách phải làm gì đó với nạn lừa đảo trực tuyến."
+
+  - key: en:exercise:lawj-rather-fill-supposed-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-supposed-to
+    prompt:
+      template: "Cyclists {{b1}} {{b2}} to wear helmets in this city, but hardly anyone does."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Theo quy định người đi xe đạp ở thành phố này phải đội mũ bảo hiểm, nhưng hầu như không ai làm vậy."
+        - "Gợi ý: be + V3 của suppose + to."
+    answer:
+      blanks:
+        b1: [are]
+        b2: [supposed]
+    known_wrong:
+      - answer: suppose
+        feedback_vi: Cấu trúc là be supposed to - phải có d.
+        error_tag: supposed_spelling
+      - answer: is
+        feedback_vi: Cyclists là số nhiều nên dùng are.
+        error_tag: be_form
+    explanation:
+      vi: Be supposed to + V diễn tả quy định mà thực tế không ai tuân theo (but hardly anyone does). Chủ ngữ số nhiều nên dùng are.
+    display_answer: Cyclists are supposed to wear helmets in this city, but hardly anyone does.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:lawj-rather-fill-than-go
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-rather
+    prompt:
+      template: "Honestly, I'd rather pay the parking fine {{b1}} {{b2}} to court over forty pounds."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [than]
+        b2: [go]
+    known_wrong:
+      - answer: going
+        feedback_vi: Sau would rather … than dùng V nguyên mẫu - go, không dùng V-ing.
+        error_tag: rather_than_form
+      - answer: to go
+        feedback_vi: Không dùng to sau than trong cấu trúc would rather.
+        error_tag: rather_than_form
+    explanation:
+      vi: Would rather + V + than + V - hai động từ đều ở dạng nguyên mẫu không to (pay … than go).
+    display_answer: Honestly, I'd rather pay the parking fine than go to court over forty pounds.
+
+  - key: en:exercise:lawj-rather-translate-time-law
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:its-high-time
+    prompt:
+      source_text: Đã đến lúc chúng ta thay đổi luật này rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It's time we changed this law.
+        - It is time we changed this law.
+        - It's high time we changed this law.
+        - It is high time we changed this law.
+        - It's about time we changed this law.
+        - It is about time we changed this law.
+        - It's time for us to change this law.
+        - It is time for us to change this law.
+        - It's high time we changed the law.
+        - It's time we changed the law.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It's time we change this law.
+        feedback_vi: Sau It's time + chủ ngữ, động từ lùi về quá khứ đơn - changed.
+        error_tag: its_time_tense
+      - answer: It's high time we will change this law.
+        feedback_vi: Không dùng will sau It's high time; dùng quá khứ đơn - changed.
+        error_tag: its_time_tense
+    explanation:
+      vi: "\"Đã đến lúc… rồi\" mang ý chê việc chậm trễ - It's (high) time + we + quá khứ đơn. It's time for us to change cũng đúng nhưng trung tính hơn."
+    display_answer: It's high time we changed this law.
+
+  - key: en:exercise:lawj-rather-translate-press
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:had-better
+    prompt:
+      source_text: Tốt hơn hết bạn đừng nói gì với báo chí.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You'd better not say anything to the press.
+        - You had better not say anything to the press.
+        - You'd better not say anything to the media.
+        - You had better not say anything to the media.
+        - You'd better not talk to the press.
+        - You had better not talk to the press.
+        - You'd better say nothing to the press.
+        - You had better say nothing to the press.
+        - You'd better not tell the press anything.
+        - You had better not tell the press anything.
+        - You'd better not speak to the press.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You'd better not to say anything to the press.
+        feedback_vi: Sau had better (not) không dùng to.
+        error_tag: had_better_to
+      - answer: You hadn't better say anything to the press.
+        feedback_vi: Phủ định là had better not, không phải hadn't better.
+        error_tag: had_better_negative
+    explanation:
+      vi: "\"Tốt hơn hết đừng…\" là lời cảnh báo - had better not + V nguyên mẫu. You'd = You had."
+    display_answer: You'd better not say anything to the press.
+
+  # ---------------- application ----------------
+  - key: en:exercise:lawj-rather-mcq-rent
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-supposed-to
+    prompt:
+      stem: "Hợp đồng thuê nhà ghi phải trả tiền trước ngày 5, nhưng hôm nay đã là ngày 8. Chủ nhà nhắn cho bạn. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: b6d, text: "You were supposed to pay the rent by the 5th.", lang: en }
+        - { id: f1x, text: "You supposed to pay the rent by the 5th.", lang: en }
+        - { id: w9t, text: "You were suppose to pay the rent by the 5th.", lang: en }
+        - { id: j4n, text: "You'd rather pay the rent by the 5th.", lang: en }
+    answer:
+      correct_option_id: b6d
+    explanation:
+      vi: Was/were supposed to là "lẽ ra đã phải" - đúng với việc trễ hạn. Cần đủ were + supposed (có d) + to; would rather lại là nói sở thích.
+    display_answer: "You were supposed to pay the rent by the 5th."
+
+  - key: en:exercise:lawj-rather-order-record
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-rather-someone-did
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi mong anh đừng ghi âm cuộc trò chuyện này.\""
+      tokens:
+        - { id: r-rec, text: record }
+        - { id: r-dont, text: "don't" }
+        - { id: r-conv, text: this conversation }
+        - { id: r-you, text: you }
+        - { id: r-rather, text: "I'd rather" }
+        - { id: r-didnt, text: "didn't" }
+    answer:
+      orders:
+        - [r-rather, r-you, r-didnt, r-rec, r-conv]
+    explanation:
+      vi: Lời đề nghị lịch sự với người khác - I'd rather + you + quá khứ đơn (didn't record). Don't không đúng vì sau would rather + chủ ngữ phải lùi thì.
+    display_answer: "I'd rather you didn't record this conversation."
+
+  - key: en:exercise:lawj-rather-translate-deter
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:deter
+    prompt:
+      source_text: Many experts believe community service deters young offenders more effectively than prison.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhiều chuyên gia tin rằng lao động công ích răn đe người phạm tội trẻ tuổi hiệu quả hơn nhà tù.
+        - Nhiều chuyên gia cho rằng lao động công ích răn đe những người phạm tội trẻ hiệu quả hơn án tù.
+        - Nhiều chuyên gia tin rằng lao động công ích có tác dụng răn đe người phạm tội trẻ tuổi tốt hơn nhà tù.
+        - Nhiều chuyên gia tin rằng lao động công ích ngăn chặn người phạm tội trẻ tuổi hiệu quả hơn nhà tù.
+        - Nhiều chuyên gia tin là lao động công ích răn đe tội phạm trẻ tuổi hiệu quả hơn nhà tù.
+        - Nhiều chuyên gia tin rằng lao động công ích răn đe người phạm tội trẻ hiệu quả hơn việc đi tù.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Deter là "răn đe, ngăn không cho làm"; community service là "lao động công ích"; young offenders là người phạm tội trẻ tuổi.
+    display_answer: Nhiều chuyên gia tin rằng lao động công ích răn đe người phạm tội trẻ tuổi hiệu quả hơn nhà tù.
+
+  - key: en:exercise:lawj-rather-mcq-rehabilitation
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:rehabilitation
+    prompt:
+      stem: "Chọn từ đúng cho bài luận: Without proper ___, many former prisoners reoffend within a year of their release."
+      stem_lang: vi
+      options:
+        - { id: u3e, text: rehabilitation, lang: en }
+        - { id: h7s, text: rehabilitate, lang: en }
+        - { id: q2l, text: rehabilitated, lang: en }
+        - { id: d5o, text: rehabilitating, lang: en }
+    answer:
+      correct_option_id: u3e
+    explanation:
+      vi: Sau tính từ proper cần một danh từ - rehabilitation (sự cải tạo). Các phương án khác là động từ hoặc phân từ, không đứng sau tính từ như danh từ được.
+    display_answer: rehabilitation

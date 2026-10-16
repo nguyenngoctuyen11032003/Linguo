@@ -1,0 +1,344 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:law-justice-review
+order_index: 5
+level: b2
+title:
+  vi: "Ôn tập: Bản tin phiên toà & thư gửi toà soạn"
+objectives:
+  - vi: Đọc hiểu một bản tin về phiên toà - bồi thẩm đoàn, phán quyết, mức án.
+  - vi: Viết thư gửi toà soạn phê bình chính quyền bằng should have, it's high time, be supposed to.
+  - vi: Kết hợp động từ + giới từ, quá khứ hoàn thành tiếp diễn và các cấu trúc phê bình trong văn bản liền mạch.
+estimated_minutes: 25
+skills: [reading, writing, grammar, vocabulary]
+prerequisites: [en:lesson:law-justice-advice-preferences]
+items:
+  - item: en:item:jury
+  - item: en:item:verdict
+  - item: en:item:be-found-guilty-of
+    role: reuse
+  - item: en:item:accuse-of
+    role: reuse
+  - item: en:item:blame-for
+    role: reuse
+  - item: en:item:sentence-to
+    role: reuse
+  - item: en:item:plead-guilty
+    role: reuse
+  - item: en:item:should-have-done
+    role: reuse
+  - item: en:item:past-perfect-continuous
+    role: reuse
+  - item: en:item:its-high-time
+    role: reuse
+  - item: en:item:community-service
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đặt bạn vào hai vai - người đọc một bản tin phiên toà và người viết thư gửi toà soạn về an ninh khu phố - để dùng lại toàn bộ ngữ pháp và từ vựng của unit.
+  - type: explain
+    text:
+      vi: "Bản tin phiên toà thường theo thứ tự: tội danh (charged with / accused of) → diễn biến (had been doing…) → phán quyết (the jury found him guilty of…) → mức án (sentenced to…). Khi đọc, hãy tìm verdict (có tội hay không) trước rồi mới tới sentence (bị phạt bao nhiêu)."
+  - type: explain
+    text:
+      vi: "Thư gửi toà soạn là văn trang trọng nhưng có quan điểm rõ ràng. Should have + V3 nêu điều chính quyền đã không làm; It is high time + quá khứ đơn đòi hỏi hành động ngay; be supposed to chỉ ra khoảng cách giữa quy định và thực tế."
+  - type: deep_explain
+    text:
+      vi: Trong thư trang trọng, viết đầy đủ It is high time thay vì It's, và tránh had better vì nghe như đe doạ. Để giọng văn bớt gay gắt, thêm I would argue that hoặc It seems to me that trước lời phê bình. Lưu ý jury (bồi thẩm đoàn) quyết định verdict, còn judge (thẩm phán) quyết định sentence.
+  - type: example
+    target: After a three-week trial, the jury found the former mayor guilty of accepting bribes from developers.
+    target_lang: en
+    translation:
+      vi: Sau ba tuần xét xử, bồi thẩm đoàn tuyên cựu thị trưởng có tội nhận hối lộ từ các chủ đầu tư.
+    note:
+      vi: Jury + found … guilty of + V-ing - đây là phán quyết (verdict).
+  - type: example
+    target: The court heard that he had been taking payments for nearly a decade before a junior clerk raised the alarm.
+    target_lang: en
+    translation:
+      vi: Toà được nghe rằng ông ta đã nhận tiền suốt gần mười năm trước khi một nhân viên cấp dưới lên tiếng cảnh báo.
+    note:
+      vi: Had been taking - quá trình kéo dài tới một mốc quá khứ.
+  - type: example
+    target: It is high time the council installed proper lighting in Riverside Park; residents have been complaining for years.
+    target_lang: en
+    translation:
+      vi: Đã đến lúc hội đồng thành phố phải lắp đèn chiếu sáng tử tế ở công viên Riverside; cư dân đã phàn nàn nhiều năm nay.
+    note:
+      vi: Câu mở đầu điển hình của thư gửi toà soạn - It is high time + quá khứ đơn.
+  - type: common_mistake
+    wrong: The jury sentenced him to four years in prison.
+    right: The judge sentenced him to four years in prison.
+    target_lang: en
+    note:
+      vi: Bồi thẩm đoàn chỉ ra phán quyết (verdict); thẩm phán mới tuyên mức án (sentence).
+  - type: common_mistake
+    wrong: The police should investigated the burglaries earlier.
+    right: The police should have investigated the burglaries earlier.
+    target_lang: en
+    note:
+      vi: Phê bình về quá khứ cần should have + V3; thiếu have là sai.
+  - type: summary
+    points:
+      - vi: Jury quyết định verdict (guilty / not guilty); judge quyết định sentence (sentenced to…).
+      - vi: Bản tin - charged with / accused of → had been doing → found guilty of → sentenced to.
+      - vi: Thư phê bình - should have + V3, It is high time + quá khứ đơn, be supposed to.
+      - vi: Văn trang trọng - viết đầy đủ, tránh had better.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:lawj-review-listen-mayor
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:jury
+    prompt:
+      audio_asset_id: null
+      fallback_text: After two days of deliberation, the jury found the hospital director not guilty of fraud.
+      options:
+        - { id: p8v, text: "Sau hai ngày nghị án, bồi thẩm đoàn tuyên giám đốc bệnh viện vô tội về tội gian lận.", lang: vi }
+        - { id: c2f, text: "Sau hai ngày nghị án, bồi thẩm đoàn không tìm thấy giám đốc bệnh viện.", lang: vi }
+        - { id: m6w, text: "Sau hai ngày nghị án, bồi thẩm đoàn tuyên giám đốc bệnh viện có tội gian lận.", lang: vi }
+        - { id: y3r, text: "Sau hai ngày, giám đốc bệnh viện cáo buộc bồi thẩm đoàn gian lận.", lang: vi }
+    answer:
+      correct_option_id: p8v
+    explanation:
+      vi: Found … not guilty of là được tuyên vô tội; found ở đây không có nghĩa "tìm thấy". Người tuyên là bồi thẩm đoàn (the jury).
+    display_answer: "Sau hai ngày nghị án, bồi thẩm đoàn tuyên giám đốc bệnh viện vô tội về tội gian lận."
+
+  - key: en:exercise:lawj-review-mcq-verdict
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:verdict
+    prompt:
+      stem: "Chọn từ đúng: The judge will announce the sentence on Friday, but the ___ has already been delivered: guilty on all counts."
+      stem_lang: vi
+      options:
+        - { id: k5n, text: verdict, lang: en }
+        - { id: e9a, text: jury, lang: en }
+        - { id: s1t, text: trial, lang: en }
+        - { id: w4h, text: suspect, lang: en }
+    answer:
+      correct_option_id: k5n
+    explanation:
+      vi: Kết luận "có tội trên mọi tội danh" là verdict (phán quyết), được deliver. Jury là người đưa ra phán quyết, trial là cả phiên toà.
+    display_answer: verdict
+
+  - key: en:exercise:lawj-review-mcq-letter-should
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:should-have-done
+    prompt:
+      stem: "Trong thư gửi toà soạn, người viết phê bình cảnh sát vì đã không coi trọng báo cáo của cư dân ngay từ đầu. Chọn đáp án: \"The police ___ our reports seriously from the very beginning.\""
+      stem_lang: vi
+      options:
+        - { id: a7d, text: should have taken, lang: en }
+        - { id: g3u, text: must have taken, lang: en }
+        - { id: n8x, text: needn't have taken, lang: en }
+        - { id: l6q, text: would rather take, lang: en }
+    answer:
+      correct_option_id: a7d
+    explanation:
+      vi: Phê bình một việc đã không làm trong quá khứ - should have + V3. Must have taken là suy đoán (chắc là đã làm), ngược với ý người viết.
+    display_answer: should have taken
+
+  # ---------------- recall ----------------
+  - key: en:exercise:lawj-review-fill-emails
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-perfect-continuous
+    prompt:
+      template: "The defendant {{b1}} been sending threatening emails to his former employer for months before he {{b2}} arrested."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [had]
+        b2: [was]
+    known_wrong:
+      - answer: has
+        feedback_vi: Mốc là quá khứ (was arrested), nên dùng had been sending.
+        error_tag: tense_backshift
+      - answer: is
+        feedback_vi: Việc bị bắt đã xảy ra - dùng bị động quá khứ was arrested.
+        error_tag: tense_choice
+    explanation:
+      vi: Hành động gửi email kéo dài nhiều tháng tới mốc bị bắt - had been sending; việc bị bắt là quá khứ đơn bị động - was arrested.
+    display_answer: The defendant had been sending threatening emails to his former employer for months before he was arrested.
+
+  - key: en:exercise:lawj-review-translate-jury
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:verdict
+    prompt:
+      source_text: Bồi thẩm đoàn mất hai ngày để đưa ra phán quyết.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The jury took two days to reach a verdict.
+        - The jury took two days to reach its verdict.
+        - The jury took two days to reach their verdict.
+        - It took the jury two days to reach a verdict.
+        - It took the jury two days to reach its verdict.
+        - It took the jury two days to reach their verdict.
+        - The jury took two days to deliver a verdict.
+        - The jury took two days to deliver its verdict.
+        - The jury needed two days to reach a verdict.
+        - The jury took two days to return a verdict.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The jury took two days to make a sentence.
+        feedback_vi: Bồi thẩm đoàn đưa ra verdict (phán quyết), không tuyên sentence (mức án).
+        error_tag: verdict_sentence
+      - answer: The jury spent two days to reach a verdict.
+        feedback_vi: Spend + thời gian + V-ing (spent two days reaching); với to + V hãy dùng took.
+        error_tag: spend_take
+    explanation:
+      vi: Reach / deliver / return a verdict là collocation chuẩn. "Mất bao lâu để làm gì" dùng take - The jury took two days to… hoặc It took the jury two days to…
+    display_answer: The jury took two days to reach a verdict.
+
+  - key: en:exercise:lawj-review-fill-on-of
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:blame-for
+    prompt:
+      template: "Local residents blamed the burglaries {{b1}} poor street lighting and accused the council {{b2}} ignoring their complaints."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: ["on"]
+        b2: [of]
+    known_wrong:
+      - answer: for
+        feedback_vi: Khi việc (the burglaries) đứng ngay sau blame thì dùng on; accuse luôn đi với of.
+        error_tag: preposition
+      - answer: with
+        feedback_vi: With đi với charge, không đi với blame hay accuse.
+        error_tag: preposition
+    explanation:
+      vi: Blame something ON somebody/something (việc đứng trước), accuse somebody OF doing something. Đây là hai khuôn giới từ hay bị nhầm nhất.
+    display_answer: Local residents blamed the burglaries on poor street lighting and accused the council of ignoring their complaints.
+
+  # ---------------- application ----------------
+  - key: en:exercise:lawj-review-mcq-letter-opening
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:its-high-time
+    prompt:
+      stem: "Bạn mở đầu thư gửi toà soạn, đòi chính quyền hành động ngay về an ninh ở công viên. Câu nào đúng ngữ pháp và đúng văn phong?"
+      stem_lang: vi
+      options:
+        - { id: v1m, text: "It is high time the council installed better lighting in our park.", lang: en }
+        - { id: o5c, text: "It is high time the council installs better lighting in our park.", lang: en }
+        - { id: z2s, text: "It is high time for the council installed better lighting in our park.", lang: en }
+        - { id: h8g, text: "The council had better install better lighting in our park, or else.", lang: en }
+    answer:
+      correct_option_id: v1m
+    explanation:
+      vi: It is high time + chủ ngữ + quá khứ đơn (installed). Phương án had better… or else nghe như đe doạ, không hợp thư trang trọng.
+    display_answer: "It is high time the council installed better lighting in our park."
+
+  - key: en:exercise:lawj-review-translate-bank-clerk
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:plead-guilty
+    prompt:
+      source_text: The clerk, who had been working at the bank for twenty years, pleaded guilty to stealing from elderly customers.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người nhân viên, người đã làm việc ở ngân hàng hai mươi năm, đã nhận tội ăn cắp tiền của các khách hàng lớn tuổi.
+        - Người nhân viên đã làm việc tại ngân hàng hai mươi năm đã nhận tội lấy cắp tiền của khách hàng cao tuổi.
+        - Nhân viên ngân hàng đã làm việc hai mươi năm ở đó đã nhận tội ăn cắp tiền của khách hàng lớn tuổi.
+        - Người nhân viên, vốn đã làm ở ngân hàng hai mươi năm, đã nhận tội trộm tiền của những khách hàng lớn tuổi.
+        - Nhân viên ngân hàng, người đã làm việc ở đó suốt hai mươi năm, đã nhận tội ăn cắp của khách hàng cao tuổi.
+        - Người nhân viên đã làm ở ngân hàng hai mươi năm đã nhận tội ăn cắp tiền của các khách hàng cao tuổi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Mệnh đề who had been working … for twenty years mô tả quá trình kéo dài trước thời điểm nhận tội; pleaded guilty to stealing là "nhận tội ăn cắp".
+    display_answer: Người nhân viên, người đã làm việc ở ngân hàng hai mươi năm, đã nhận tội ăn cắp tiền của các khách hàng lớn tuổi.
+
+  - key: en:exercise:lawj-review-order-community
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:community-service
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Lẽ ra cậu ấy nên bị phạt lao động công ích (chứ không phải đi tù).\""
+      tokens:
+        - { id: c-cs, text: community service }
+        - { id: c-sent, text: sentenced }
+        - { id: c-for, text: for }
+        - { id: c-he, text: He }
+        - { id: c-to, text: to }
+        - { id: c-shb, text: should have been }
+    answer:
+      orders:
+        - [c-he, c-shb, c-sent, c-to, c-cs]
+    explanation:
+      vi: Phê bình về quá khứ ở dạng bị động - should have been + V3 (sentenced). Mức án đứng sau to, không phải for.
+    display_answer: He should have been sentenced to community service.
+
+  - key: en:exercise:lawj-review-translate-investigate
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:should-have-done
+    prompt:
+      source_text: Lẽ ra cảnh sát phải điều tra vụ này sớm hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The police should have investigated this case earlier.
+        - The police should have investigated this case sooner.
+        - The police should have investigated the case earlier.
+        - The police should have investigated the case sooner.
+        - The police should've investigated this case earlier.
+        - The police should've investigated the case earlier.
+        - The police ought to have investigated this case earlier.
+        - The police ought to have investigated the case sooner.
+        - The police should have started investigating this case earlier.
+        - The police should have looked into this case earlier.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The police should investigate this case earlier.
+        feedback_vi: Việc điều tra đã bị chậm trong quá khứ - cần should have + V3.
+        error_tag: past_modal_form
+      - answer: The police should of investigated this case earlier.
+        feedback_vi: Luôn viết should have, không viết should of.
+        error_tag: should_of
+      - answer: The police should has investigated this case earlier.
+        feedback_vi: Sau should luôn là have, không chia theo chủ ngữ.
+        error_tag: modal_form
+    explanation:
+      vi: "\"Lẽ ra phải… sớm hơn\" là phê bình về quá khứ - should have + V3. Ought to have trang trọng hơn, cùng nghĩa; look into là cụm động từ đồng nghĩa với investigate."
+    display_answer: The police should have investigated this case earlier.

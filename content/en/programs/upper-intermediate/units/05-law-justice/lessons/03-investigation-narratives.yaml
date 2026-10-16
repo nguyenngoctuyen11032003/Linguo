@@ -1,0 +1,368 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:law-justice-investigation
+order_index: 3
+level: b2
+title:
+  vi: Hồ sơ điều tra - quá khứ hoàn thành tiếp diễn (had been doing)
+objectives:
+  - vi: Dùng had been + V-ing cho hành động kéo dài trước một mốc trong quá khứ.
+  - vi: Chọn had been doing (quá trình) hay had done (kết quả, số lượng).
+  - vi: Giải thích dấu vết ở hiện trường bằng hoạt động đã diễn ra trước đó.
+  - vi: Dùng từ vựng điều tra - investigation into, detective, crime scene, fingerprints, CCTV footage, alibi.
+estimated_minutes: 25
+skills: [grammar, writing, reading]
+prerequisites: [en:lesson:law-justice-past-modals]
+items:
+  - item: en:item:past-perfect-continuous
+  - item: en:item:ppc-vs-past-perfect
+  - item: en:item:ppc-evidence
+  - item: en:item:investigate
+  - item: en:item:detective
+  - item: en:item:crime-scene
+  - item: en:item:fingerprints
+  - item: en:item:cctv-footage
+  - item: en:item:alibi
+  - item: en:item:had-past-participle
+    role: reuse
+  - item: en:item:suspect-noun
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết lại được diễn biến một vụ điều tra - điều gì đã kéo dài bao lâu trước khi bị phát hiện, và vì sao hiện trường lại trông như vậy.
+  - type: explain
+    text:
+      vi: "Had been + V-ing nói về một hoạt động đã kéo dài liên tục tới một mốc trong quá khứ: The cashier had been stealing small amounts for two years before the audit. Tiếng Việt chỉ nói \"đã… suốt hai năm\", nên người học thường dùng quá khứ đơn và làm mất ý \"kéo dài tới lúc đó\"."
+  - type: explain
+    text:
+      vi: "So sánh: had been interviewing (nhấn mạnh quá trình, thời lượng) và had interviewed twelve people (nhấn mạnh kết quả, con số). Có số lượng đếm được thì dùng had + V3."
+  - type: explain
+    text:
+      vi: "Thì này còn giải thích dấu vết nhìn thấy trong quá khứ: The window was open and the floor was wet - it had been raining in. Hoạt động có thể vừa mới dừng."
+  - type: deep_explain
+    text:
+      vi: Động từ trạng thái (know, own, believe, belong) không dùng dạng tiếp diễn, nên nói had known him for years, không nói had been knowing. Trong văn kể chuyện, thường mở đầu bằng quá khứ đơn (When the detective arrived…), rồi lùi về had been doing để kể bối cảnh trước đó; dùng quá nhiều had khiến câu nặng nề, nên khi trình tự đã rõ (with before/after) có thể quay về quá khứ đơn.
+  - type: example
+    target: By the time the auditors arrived, the cashier had been taking small amounts for almost two years.
+    target_lang: en
+    translation:
+      vi: Đến lúc kiểm toán viên tới, thủ quỹ đã lấy những khoản tiền nhỏ suốt gần hai năm.
+    note:
+      vi: Had been taking - hành động lặp đi lặp lại kéo dài tới mốc auditors arrived.
+  - type: example
+    target: The detective had been studying the CCTV footage for hours when she spotted a familiar face.
+    target_lang: en
+    translation:
+      vi: Nữ thám tử đã xem đi xem lại đoạn phim camera an ninh hàng giờ thì phát hiện một gương mặt quen.
+    note:
+      vi: When + quá khứ đơn cắt ngang một quá trình dài - had been studying.
+  - type: example
+    target: The suspect's shoes were muddy; he had obviously been walking through the fields.
+    target_lang: en
+    translation:
+      vi: Giày của nghi phạm dính đầy bùn; rõ ràng hắn đã đi băng qua cánh đồng.
+    note:
+      vi: Dùng had been + V-ing để giải thích dấu vết.
+  - type: common_mistake
+    wrong: When police finally caught him, he was using a false name for six years.
+    right: When police finally caught him, he had been using a false name for six years.
+    target_lang: en
+    note:
+      vi: For six years + một mốc quá khứ (when police caught him) - cần had been + V-ing, không dùng quá khứ tiếp diễn.
+  - type: common_mistake
+    wrong: By lunchtime, the officers had been questioning nine neighbours.
+    right: By lunchtime, the officers had questioned nine neighbours.
+    target_lang: en
+    note:
+      vi: Có con số kết quả (nine neighbours) thì dùng had + V3, không dùng dạng tiếp diễn.
+  - type: common_mistake
+    wrong: She had been knowing the victim since university.
+    right: She had known the victim since university.
+    target_lang: en
+    note:
+      vi: Know là động từ trạng thái, không có dạng tiếp diễn.
+  - type: summary
+    points:
+      - vi: Had been + V-ing - hoạt động kéo dài liên tục tới một mốc quá khứ (thường có for / since / all day).
+      - vi: Had + V3 khi nhấn mạnh kết quả hoặc có con số; had been doing khi nhấn mạnh quá trình.
+      - vi: Had been doing giải thích dấu vết (giày dính bùn, mắt đỏ, sàn ướt).
+      - vi: Không dùng tiếp diễn với know, believe, own.
+      - vi: Từ vựng - launch an investigation into, crime scene, fingerprints, CCTV footage (không đếm được), alibi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:lawj-ppc-mcq-safe
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-perfect-continuous
+    prompt:
+      stem: "Chọn đáp án đúng: By the time the security guard returned, the thieves ___ to open the safe for over an hour."
+      stem_lang: vi
+      options:
+        - { id: d6t, text: had been trying, lang: en }
+        - { id: a1v, text: have been trying, lang: en }
+        - { id: m8c, text: are trying, lang: en }
+        - { id: z3h, text: try, lang: en }
+    answer:
+      correct_option_id: d6t
+    explanation:
+      vi: Có mốc quá khứ (by the time… returned) và thời lượng (for over an hour) nên dùng had been + V-ing. Have been trying chỉ dùng khi mốc là hiện tại.
+    display_answer: had been trying
+
+  - key: en:exercise:lawj-ppc-mcq-fifteen
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ppc-vs-past-perfect
+    prompt:
+      stem: "Chọn đáp án đúng: By noon, the detective ___ fifteen people who lived on the street."
+      stem_lang: vi
+      options:
+        - { id: f2q, text: had interviewed, lang: en }
+        - { id: o9l, text: had been interviewing, lang: en }
+        - { id: e5y, text: has been interviewing, lang: en }
+        - { id: w7g, text: interviews, lang: en }
+    answer:
+      correct_option_id: f2q
+    explanation:
+      vi: Câu nêu kết quả có con số (fifteen people), nên dùng had + V3. Dạng tiếp diễn had been interviewing chỉ nhấn mạnh quá trình, không đi với con số hoàn tất.
+    display_answer: had interviewed
+
+  - key: en:exercise:lawj-ppc-listen-guard
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:ppc-evidence
+    prompt:
+      audio_asset_id: null
+      fallback_text: The guard's hands were shaking because he had been standing in the cold all night.
+      options:
+        - { id: n4a, text: "Tay người bảo vệ run lên vì anh ấy đã đứng ngoài trời lạnh suốt cả đêm.", lang: vi }
+        - { id: j8r, text: "Tay người bảo vệ run lên nên anh ấy sẽ đứng ngoài trời lạnh cả đêm.", lang: vi }
+        - { id: b2x, text: "Người bảo vệ đang đứng ngoài trời lạnh và tay anh ấy bắt đầu run.", lang: vi }
+        - { id: u5k, text: "Người bảo vệ run tay cả đêm nên không thể đứng gác ngoài trời lạnh.", lang: vi }
+    answer:
+      correct_option_id: n4a
+    explanation:
+      vi: Had been standing all night giải thích nguyên nhân của dấu hiệu nhìn thấy (tay run) - việc đứng kéo dài trước thời điểm đó.
+    display_answer: "Tay người bảo vệ run lên vì anh ấy đã đứng ngoài trời lạnh suốt cả đêm."
+
+  - key: en:exercise:lawj-ppc-fill-false-name-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-perfect-continuous
+    prompt:
+      template: "The man {{b1}} {{b2}} using a false passport for years before he was finally caught at the border."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Người đàn ông đã dùng hộ chiếu giả suốt nhiều năm trước khi cuối cùng bị bắt ở biên giới."
+        - "Gợi ý: quá khứ hoàn thành tiếp diễn - ___ + ___ + V-ing."
+    answer:
+      blanks:
+        b1: [had]
+        b2: [been]
+    known_wrong:
+      - answer: has
+        feedback_vi: Mốc là quá khứ (was caught), nên dùng had, không dùng has.
+        error_tag: tense_backshift
+      - answer: was
+        feedback_vi: Was using không thể hiện việc kéo dài tới mốc quá khứ khác; cần had been using.
+        error_tag: tense_choice
+    explanation:
+      vi: For years + một mốc quá khứ (before he was caught) - hành động kéo dài tới mốc đó dùng had been + V-ing.
+    display_answer: The man had been using a false passport for years before he was finally caught at the border.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:lawj-ppc-fill-crying
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:ppc-evidence
+    prompt:
+      template: "The witness's eyes were red when she came into the station. She {{b1}} {{b2}} {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [had]
+        b2: [been]
+        b3: [crying]
+    known_wrong:
+      - answer: cried
+        feedback_vi: Sau been cần V-ing - crying.
+        error_tag: ppc_form
+      - answer: have
+        feedback_vi: Câu ở quá khứ (were red, came) nên dùng had.
+        error_tag: tense_backshift
+    explanation:
+      vi: Mắt đỏ là dấu vết nhìn thấy ở quá khứ; nguyên nhân là hoạt động kéo dài ngay trước đó - had been crying.
+    display_answer: The witness's eyes were red when she came into the station. She had been crying.
+
+  - key: en:exercise:lawj-ppc-translate-following
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:past-perfect-continuous
+    prompt:
+      source_text: Họ đã theo dõi anh ta suốt ba tuần trước khi bắt giữ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - They had been following him for three weeks before they arrested him.
+        - They'd been following him for three weeks before they arrested him.
+        - They had been watching him for three weeks before they arrested him.
+        - They'd been watching him for three weeks before they arrested him.
+        - They had been following him for three weeks before arresting him.
+        - They had been watching him for three weeks before arresting him.
+        - They'd been following him for three weeks before arresting him.
+        - They'd been watching him for three weeks before arresting him.
+        - They had been following him for three weeks before the arrest.
+        - They had been monitoring him for three weeks before they arrested him.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: They have been following him for three weeks before they arrested him.
+        feedback_vi: Mốc là quá khứ (arrested), nên dùng had been, không dùng have been.
+        error_tag: tense_backshift
+      - answer: They had following him for three weeks before they arrested him.
+        feedback_vi: Thiếu been - cấu trúc là had been + V-ing.
+        error_tag: ppc_form
+    explanation:
+      vi: Việc theo dõi kéo dài ba tuần tới mốc bắt giữ trong quá khứ, nên dùng had been following. They'd = They had.
+    display_answer: They had been following him for three weeks before they arrested him.
+
+  - key: en:exercise:lawj-ppc-translate-camera
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cctv-footage
+    prompt:
+      source_text: Đoạn phim camera an ninh cho thấy chiếc xe đã đỗ ở đó suốt cả buổi chiều.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The CCTV footage showed that the car had been parked there all afternoon.
+        - CCTV footage showed that the car had been parked there all afternoon.
+        - The CCTV footage showed the car had been parked there all afternoon.
+        - CCTV footage showed the car had been parked there all afternoon.
+        - The CCTV footage showed that the car had been parked there the whole afternoon.
+        - The security camera footage showed that the car had been parked there all afternoon.
+        - The CCTV footage showed that the car had been parked there for the whole afternoon.
+        - The CCTV footage showed that the car had been sitting there all afternoon.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The CCTV footages showed that the car had been parked there all afternoon.
+        feedback_vi: Footage không đếm được, không thêm -s.
+        error_tag: uncountable
+      - answer: The CCTV footage showed that the car has been parked there all afternoon.
+        feedback_vi: Showed ở quá khứ nên lùi về had been.
+        error_tag: tense_backshift
+    explanation:
+      vi: Footage là danh từ không đếm được. Trạng thái "đã đỗ suốt" kéo dài tới mốc quá khứ dùng had been parked (bị động) hoặc had been sitting.
+    display_answer: The CCTV footage showed that the car had been parked there all afternoon.
+
+  # ---------------- application ----------------
+  - key: en:exercise:lawj-ppc-mcq-report
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:ppc-evidence
+    prompt:
+      stem: "Bạn viết báo cáo sự việc: 8 giờ sáng nhân viên phát hiện két sắt mở, dụng cụ vương vãi khắp sàn, cho thấy kẻ trộm đã loay hoay ở đó nhiều giờ. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: l5w, text: "When staff arrived at 8 a.m., the safe was open; the thieves had clearly been working on it for hours.", lang: en }
+        - { id: h9e, text: "When staff arrived at 8 a.m., the safe was open; the thieves have clearly been working on it for hours.", lang: en }
+        - { id: p3s, text: "When staff arrived at 8 a.m., the safe was open; the thieves were clearly worked on it for hours.", lang: en }
+        - { id: x6n, text: "When staff arrived at 8 a.m., the safe was open; the thieves had clearly being working on it for hours.", lang: en }
+    answer:
+      correct_option_id: l5w
+    explanation:
+      vi: Dấu vết (két mở, dụng cụ) ở mốc quá khứ được giải thích bằng hoạt động kéo dài trước đó - had been working. Have been không hợp với mốc quá khứ; had being sai cấu trúc.
+    display_answer: "When staff arrived at 8 a.m., the safe was open; the thieves had clearly been working on it for hours."
+
+  - key: en:exercise:lawj-ppc-order-how-long
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:past-perfect-continuous
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Anh: \"(Trước khi bị phát hiện) cô ta đã làm việc ở đó được bao lâu?\""
+      tokens:
+        - { id: q-work, text: working there }
+        - { id: q-been, text: been }
+        - { id: q-howlong, text: How long }
+        - { id: q-has, text: has }
+        - { id: q-she, text: she }
+        - { id: q-had, text: had }
+    answer:
+      orders:
+        - [q-howlong, q-had, q-she, q-been, q-work]
+    explanation:
+      vi: Câu hỏi đảo had lên trước chủ ngữ - How long had she been working there? Has không hợp vì câu nói về khoảng thời gian trước một mốc quá khứ.
+    display_answer: How long had she been working there?
+
+  - key: en:exercise:lawj-ppc-translate-lying
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:detective
+    prompt:
+      source_text: The detective realised that the witness had been lying from the start.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thám tử nhận ra rằng nhân chứng đã nói dối ngay từ đầu.
+        - Viên thám tử nhận ra nhân chứng đã nói dối ngay từ đầu.
+        - Thám tử nhận ra là nhân chứng đã nói dối từ đầu.
+        - Viên thám tử nhận ra rằng người làm chứng đã nói dối ngay từ đầu.
+        - Thám tử nhận ra nhân chứng đã nói dối suốt từ đầu.
+        - Viên thám tử nhận ra rằng nhân chứng đã nói dối từ đầu đến giờ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Had been lying from the start - việc nói dối kéo dài từ đầu tới lúc thám tử nhận ra (realised). Tiếng Việt chỉ cần "đã nói dối ngay từ đầu".
+    display_answer: Thám tử nhận ra rằng nhân chứng đã nói dối ngay từ đầu.
+
+  - key: en:exercise:lawj-ppc-mcq-known
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:ppc-vs-past-perfect
+    prompt:
+      stem: "Trong lời khai, bạn cần nói: \"Tôi đã quen nghi phạm mười năm trước khi vụ việc xảy ra.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g1b, text: "I had known the suspect for ten years before the incident.", lang: en }
+        - { id: r4u, text: "I had been knowing the suspect for ten years before the incident.", lang: en }
+        - { id: k7i, text: "I have known the suspect for ten years before the incident.", lang: en }
+        - { id: v2o, text: "I was knowing the suspect for ten years before the incident.", lang: en }
+    answer:
+      correct_option_id: g1b
+    explanation:
+      vi: Know là động từ trạng thái nên không dùng dạng tiếp diễn; thời lượng tới mốc quá khứ dùng had known. Have known không hợp với before the incident.
+    display_answer: "I had known the suspect for ten years before the incident."
