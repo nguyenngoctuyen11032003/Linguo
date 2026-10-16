@@ -1,0 +1,411 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-plain-nai
+order_index: 3
+level: n4
+title:
+  vi: Thể thường hiện tại, thể ない và ないでください
+objectives:
+  - vi: Đổi câu です・ます sang thể thường để nói chuyện thân mật.
+  - vi: Chia thể ない cho ba nhóm động từ (書かない, 食べない, しない, 来ない).
+  - vi: Nhờ người khác đừng làm gì bằng V-ないでください.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-te-iru-permission]
+items:
+  - item: ja:item:n4-gram-plain-nonpast
+  - item: ja:item:n4-gram-nai-form
+  - item: ja:item:n4-gram-naide-kudasai
+  - item: ja:item:n4-wasureru
+  - item: ja:item:n4-shinpai-suru
+  - item: ja:item:n4-sawaru
+  - item: ja:item:n4-suteru
+  - item: ja:item:n4-okureru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói chuyện thân mật kiểu "Mai cậu đi không? - Ừ, đi." và nhắc được người khác "Đừng quên ô", "Đừng lo".
+  - type: explain
+    text:
+      vi: Tiếng Việt đổi xưng hô (tôi - bạn, tớ - cậu) để thân mật, còn tiếng Nhật đổi đuôi câu. Với bạn bè, gia đình, người Nhật bỏ です・ます và dùng thể thường - 行きます → 行く, 行きません → 行かない.
+  - type: explain
+    text:
+      vi: "Thể ない (phủ định thường): nhóm 1 đổi âm cuối sang hàng あ rồi thêm ない - 書く → 書かない, 飲む → 飲まない; riêng đuôi う → わない (買う → 買わない). Nhóm 2 bỏ る + ない (食べない). する → しない, 来る → 来ない (こない)."
+  - type: explain
+    text:
+      vi: Muốn nhờ ai đừng làm gì - V-ない + でください (忘れないでください). Câu này nhẹ nhàng hơn てはいけません.
+  - type: deep_explain
+    text:
+      vi: Danh từ và tính từ đuôi な ở thể thường dùng だ (学生だ, 暇だ), nhưng trong hội thoại người ta hay bỏ luôn だ - 暇？ Tính từ đuôi い chỉ bỏ です - 高い. Câu hỏi thân mật không dùng か mà lên giọng ở cuối - 行く？
+  - type: example
+    target: 明日、学校に行く？ - うん、行く。
+    target_lang: ja
+    translation:
+      vi: Mai cậu có đi học không? - Ừ, có đi.
+    note:
+      vi: Thể thường của 行きます là 行く. Câu hỏi chỉ cần lên giọng.
+  - type: example
+    target: 今日はお酒を飲まない。
+    target_lang: ja
+    translation:
+      vi: Hôm nay tớ không uống rượu.
+    note:
+      vi: 飲む đuôi む → 飲ま + ない.
+  - type: example
+    target: 傘を忘れないでください。
+    target_lang: ja
+    translation:
+      vi: Đừng quên ô nhé.
+    note:
+      vi: 忘れる nhóm 2 → 忘れない + でください.
+  - type: example
+    target: 大丈夫です。心配しないでください。
+    target_lang: ja
+    translation:
+      vi: Không sao đâu. Đừng lo.
+    note:
+      vi: する → しない, nên 心配する → 心配しない.
+  - type: common_mistake
+    wrong: 明日は買あない。
+    right: 明日は買わない。
+    target_lang: ja
+    note:
+      vi: Động từ đuôi う không đổi thành あ mà thành わ - 買わない, 会わない.
+  - type: common_mistake
+    wrong: 友達は来らない。
+    right: 友達は来ない。
+    target_lang: ja
+    note:
+      vi: 来る là bất quy tắc - phủ định là 来ない (こない).
+  - type: common_mistake
+    wrong: ごみを捨てないてください。
+    right: ごみを捨てないでください。
+    target_lang: ja
+    note:
+      vi: Mẫu là ないで (có dấu ゛), không phải ないて.
+  - type: common_mistake
+    wrong: 先生、明日来る？
+    right: 先生、明日いらっしゃいますか。
+    target_lang: ja
+    note:
+      vi: Thể thường chỉ dùng với người thân; với thầy cô, cấp trên phải dùng thể lịch sự (ở đây là kính ngữ いらっしゃいますか, hoặc ít nhất 来ますか).
+  - type: summary
+    points:
+      - vi: 行きます → 行く; 行きません → 行かない; 学生です → 学生だ; 高いです → 高い.
+      - vi: "Thể ない: nhóm 1 âm cuối → hàng あ + ない (う → わない); nhóm 2 bỏ る + ない; しない; 来ない (こない)."
+      - vi: Đừng … - V-ないでください (không phải ないて).
+      - vi: 忘れる quên · 心配する lo · 触る chạm · 捨てる vứt · 遅れる trễ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-plain-mcq-kau-nai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-nai-form
+    prompt:
+      stem: Thể ない của 買う (mua) là gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 買わない, lang: ja }
+        - { id: p8d, text: 買あない, lang: ja }
+        - { id: w2s, text: 買いない, lang: ja }
+        - { id: m6q, text: 買らない, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Nhóm 1 đổi âm cuối sang hàng あ, nhưng đuôi う đặc biệt thành わ - 買わない.
+    display_answer: 買わない
+
+  - key: ja:exercise:n4-plain-mcq-kuru-nai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-nai-form
+    prompt:
+      stem: Thể ない của 来る (đến) đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: こない, lang: ja }
+        - { id: y1n, text: きない, lang: ja }
+        - { id: e7c, text: くらない, lang: ja }
+        - { id: h4b, text: きらない, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 来る là bất quy tắc - phủ định 来ない đọc là こない. Âm き chỉ xuất hiện ở 来ます, 来て.
+    display_answer: こない
+
+  - key: ja:exercise:n4-plain-listen-umbrella
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-wasureru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 傘を忘れないでください。
+      options:
+        - { id: a8u, text: Đừng quên ô nhé., lang: vi }
+        - { id: q2z, text: Tôi quên ô rồi., lang: vi }
+        - { id: d6l, text: Hãy mang ô theo nhé., lang: vi }
+        - { id: s9f, text: Đừng vứt ô đi nhé., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 忘れない là "không quên", thêm でください thành lời nhắc "đừng quên". "Vứt" là 捨てる.
+    display_answer: Đừng quên ô nhé.
+
+  - key: ja:exercise:n4-plain-fill-casual-go
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-plain-nonpast
+    prompt:
+      template: "(Nói với bạn thân) Mai cậu có đi học không? - 明日、学校に{{b1}}？"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Thể thường của 行きます.
+        - Là thể từ điển (dạng gốc trong từ điển).
+    answer:
+      blanks:
+        b1: [行く, いく]
+    known_wrong:
+      - answer: 行きます
+        feedback_vi: 行きます là thể lịch sự. Với bạn thân dùng thể thường 行く.
+        error_tag: plain_form
+      - answer: 行き
+        feedback_vi: Phần 行き chưa phải câu. Thể thường đầy đủ là 行く.
+        error_tag: plain_form
+    explanation:
+      vi: Thể thường hiện tại chính là thể từ điển - 行く. Câu hỏi thân mật không cần か, chỉ lên giọng ở cuối.
+    display_answer: 明日、学校に行く？
+
+  - key: ja:exercise:n4-plain-mcq-sawaru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-sawaru
+    prompt:
+      stem: Biển ở bảo tàng ghi "Xin đừng chạm vào tác phẩm." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 作品に触らないでください。, lang: ja }
+        - { id: j7r, text: 作品に触りないでください。, lang: ja }
+        - { id: c1o, text: 作品に触ってください。, lang: ja }
+        - { id: n5g, text: 作品に触るないでください。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 触る là nhóm 1 (dù đuôi る) nên る → ら - 触らない + でください. 触ってください là "hãy chạm"; 触るないで sai vì phải đổi sang thể ない trước.
+    display_answer: 作品に触らないでください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-plain-fill-nomu-nai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-nai-form
+    prompt:
+      template: "(Nói với bạn) Hôm nay tớ không uống rượu. - 今日はお酒を{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [飲まない, のまない]
+    known_wrong:
+      - answer: 飲みない
+        feedback_vi: Nhóm 1 đổi む → ま rồi thêm ない - 飲まない.
+        error_tag: nai_form
+      - answer: 飲みません
+        feedback_vi: 飲みません là thể lịch sự. Nói với bạn dùng 飲まない.
+        error_tag: plain_form
+      - answer: 飲むない
+        feedback_vi: Không thêm ない vào thể từ điển. 飲む → 飲まない.
+        error_tag: nai_form
+    explanation:
+      vi: 飲む thuộc nhóm 1, đuôi む đổi sang hàng あ (ま) rồi thêm ない - 飲まない.
+    display_answer: 今日はお酒を飲まない。
+
+  - key: ja:exercise:n4-plain-fill-shinpai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shinpai-suru
+    prompt:
+      template: "Không sao đâu. Đừng lo. - 大丈夫です。心配{{b1}}ください。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [しないで]
+    known_wrong:
+      - answer: しないて
+        feedback_vi: Mẫu là ないで (có dấu ゛) - しないで.
+        error_tag: naide_form
+      - answer: しなくて
+        feedback_vi: Nhờ "đừng làm" dùng ないでください, không dùng なくて.
+        error_tag: naide_form
+      - answer: して
+        feedback_vi: してください là "hãy lo". Cần phủ định - しないでください.
+        error_tag: naide_form
+      - answer: さないで
+        feedback_vi: する là bất quy tắc - phủ định là しない.
+        error_tag: nai_form
+    explanation:
+      vi: する → しない, thêm でください thành "đừng …". 心配しないでください là "đừng lo".
+    display_answer: 大丈夫です。心配しないでください。
+
+  - key: ja:exercise:n4-plain-translate-dont-be-late
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-okureru
+    prompt:
+      source_text: Xin đừng đến muộn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 遅れないでください。
+        - おくれないでください。
+        - 遅れないで下さい。
+        - 遅刻しないでください。
+        - ちこくしないでください。
+    known_wrong:
+      - answer: 遅れないてください。
+        feedback_vi: Mẫu là ないで, không phải ないて.
+        error_tag: naide_form
+      - answer: 遅れらないでください。
+        feedback_vi: 遅れる thuộc nhóm 2 - chỉ bỏ る + ない (遅れない).
+        error_tag: nai_form
+      - answer: 遅いないでください。
+        feedback_vi: 遅い là tính từ "chậm"; "đến muộn" là động từ 遅れる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 遅れる (nhóm 2) → 遅れない + でください. 遅刻する (đi trễ) cũng đúng.
+    display_answer: 遅れないでください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-plain-translate-casual
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-plain-nonpast
+    prompt:
+      source_text: 今日は暇だ。でも、どこにも行かない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm nay tớ rảnh. Nhưng tớ không đi đâu cả.
+        - Hôm nay tôi rảnh. Nhưng tôi không đi đâu cả.
+        - Hôm nay tớ rảnh. Nhưng không đi đâu cả.
+        - Hôm nay tôi rảnh. Nhưng không đi đâu cả.
+        - Hôm nay tớ rảnh. Nhưng tớ chẳng đi đâu cả.
+        - Hôm nay tôi rảnh. Nhưng tôi chẳng đi đâu cả.
+        - Hôm nay tôi rảnh nhưng không đi đâu cả.
+        - Hôm nay tớ rảnh nhưng không đi đâu cả.
+        - Hôm nay tôi rảnh. Nhưng tôi không đi đâu.
+        - Hôm nay tớ rảnh. Nhưng tớ không đi đâu.
+        - Hôm nay mình rảnh. Nhưng mình không đi đâu cả.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay tớ bận. Nhưng tớ không đi đâu cả.
+        feedback_vi: 暇 là "rảnh", "bận" là 忙しい.
+        error_tag: vocab_meaning
+      - answer: Hôm nay tớ rảnh. Nhưng tớ đi đâu đó.
+        feedback_vi: 行かない là phủ định - "không đi". どこにも + phủ định nghĩa là "không đi đâu cả".
+        error_tag: negation
+    explanation:
+      vi: 暇だ là thể thường của 暇です; 行かない là phủ định thường của 行きます. どこにも đi với phủ định nghĩa là "không … đâu cả".
+    display_answer: Hôm nay tớ rảnh. Nhưng tớ không đi đâu cả.
+
+  - key: ja:exercise:n4-plain-order-garbage
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-suteru
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Xin đừng vứt rác ở đây."'
+      tokens:
+        - { id: t-kudasai, text: ください }
+        - { id: t-sutenaide, text: 捨てないで }
+        - { id: t-koko, text: ここに }
+        - { id: t-gomi, text: ごみを }
+        - { id: t-sutete, text: 捨てて }
+    answer:
+      orders:
+        - [t-koko, t-gomi, t-sutenaide, t-kudasai]
+        - [t-gomi, t-koko, t-sutenaide, t-kudasai]
+    explanation:
+      vi: Chỗ vứt vào dùng に, rác đi với を, rồi 捨てないでください. 捨ててください là "hãy vứt" - ngược nghĩa.
+    display_answer: ここにごみを捨てないでください。
+
+  - key: ja:exercise:n4-plain-mcq-teacher
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-plain-nonpast
+    prompt:
+      stem: Bạn muốn hỏi thầy giáo "Ngày mai thầy có đến không ạ?". Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: g3k, text: 先生、明日来ますか。, lang: ja }
+        - { id: u9p, text: 先生、明日来る？, lang: ja }
+        - { id: b2w, text: 先生、明日来ない？, lang: ja }
+        - { id: x6e, text: 先生、明日来るだ？, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: Với thầy cô phải dùng thể lịch sự 来ますか. 来る？ và 来ない？ là thể thường, chỉ dùng với bạn bè; 来るだ sai vì động từ không thêm だ.
+    display_answer: 先生、明日来ますか。
+
+  - key: ja:exercise:n4-plain-translate-dont-eat
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nai-form
+    prompt:
+      source_text: (Nói với bạn) Tớ không ăn thịt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 肉を食べない。
+        - にくをたべない。
+        - 肉は食べない。
+        - にくはたべない。
+        - 私は肉を食べない。
+        - 私は肉は食べない。
+        - 僕は肉を食べない。
+        - 僕は肉は食べない。
+        - 肉、食べない。
+    known_wrong:
+      - answer: 肉を食べません。
+        feedback_vi: 食べません là thể lịch sự. Với bạn dùng thể thường 食べない.
+        error_tag: plain_form
+      - answer: 肉を食べらない。
+        feedback_vi: 食べる thuộc nhóm 2 - bỏ る + ない (食べない).
+        error_tag: nai_form
+      - answer: 肉を食べるない。
+        feedback_vi: Không thêm ない vào thể từ điển. 食べる → 食べない.
+        error_tag: nai_form
+    explanation:
+      vi: 食べる (nhóm 2) → 食べない. Dùng 肉は khi muốn nhấn "riêng thịt thì không ăn" cũng tự nhiên.
+    display_answer: 肉を食べない。

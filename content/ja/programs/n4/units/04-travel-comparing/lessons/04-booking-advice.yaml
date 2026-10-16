@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-booking-advice
+order_index: 4
+level: n4
+title:
+  vi: Đặt phòng và lời khuyên - たほうがいい, ておく
+objectives:
+  - vi: Khuyên nên / không nên bằng V-た / V-ない + ほうがいいです.
+  - vi: Nói chuẩn bị sẵn bằng V-ておきます.
+  - vi: Đặt phòng, hỏi giờ nhận phòng và hủy đặt chỗ.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-comparing]
+items:
+  - item: ja:item:n4-gram-ta-hou-ga-ii
+  - item: ja:item:n4-gram-te-oku
+  - item: ja:item:n4-yoyaku
+  - item: ja:item:n4-tomaru
+  - item: ja:item:n4-chekku-in
+  - item: ja:item:n4-kyanseru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn khuyên bạn bè "Cuối tuần đông nên đặt sớm", tự chuẩn bị "Tôi đặt sẵn khách sạn rồi" và nói chuyện ở quầy lễ tân - "Nhận phòng từ mấy giờ ạ?", "Tôi muốn hủy đặt chỗ".
+  - type: explain
+    text:
+      vi: "Lời khuyên: nên làm - thể た + ほうがいいです (予約したほうがいい); không nên - thể ない + ほうがいいです (歩かないほうがいい). Phủ định không dùng thể た."
+  - type: explain
+    text:
+      vi: V-ておきます là làm sẵn để chuẩn bị cho việc sau (予約しておく - đặt sẵn), hoặc để nguyên một trạng thái (開けておく - cứ để mở).
+  - type: explain
+    text:
+      vi: Nói muốn gì ở quầy dịch vụ, người Nhật hay dùng ～たいんですが (予約したいんですが) - câu bỏ lửng nghe mềm mỏng, chờ nhân viên hỗ trợ.
+  - type: deep_explain
+    text:
+      vi: たほうがいい khá mạnh, như "tốt nhất là nên". Với người trên hoặc khi không chắc, hãy làm mềm - ～たほうがいいと思いますよ. Trong hội thoại, ておく thường rút thành とく (予約しとく, 買っとく).
+  - type: example
+    target: 週末は混むから、早く予約したほうがいいですよ。
+    target_lang: ja
+    translation:
+      vi: Cuối tuần đông nên bạn nên đặt sớm đấy.
+    note:
+      vi: 予約する → 予約した + ほうがいい.
+  - type: example
+    target: 旅行の前に、ホテルを予約しておきました。
+    target_lang: ja
+    translation:
+      vi: Trước chuyến đi, tôi đã đặt sẵn khách sạn.
+    note:
+      vi: しておきました - đã làm sẵn.
+  - type: example
+    target: すみません、チェックインは何時からですか。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, nhận phòng từ mấy giờ ạ?
+    note:
+      vi: 何時から - từ mấy giờ.
+  - type: example
+    target: 申し訳ありませんが、予約をキャンセルしたいんですが。
+    target_lang: ja
+    translation:
+      vi: Thành thật xin lỗi, tôi muốn hủy đặt chỗ.
+    note:
+      vi: ～たいんですが - nêu mong muốn một cách mềm mỏng.
+  - type: common_mistake
+    wrong: 夜は一人で歩かなかったほうがいいです。
+    right: 夜は一人で歩かないほうがいいです。
+    target_lang: ja
+    note:
+      vi: Lời khuyên phủ định dùng thể ない, không dùng thể た.
+  - type: common_mistake
+    wrong: ホテルを予約して置きました。
+    right: ホテルを予約しておきました。
+    target_lang: ja
+    note:
+      vi: ておく viết bằng hiragana; 置く (kanji) là "đặt, để" đồ vật.
+  - type: common_mistake
+    wrong: ホテルで泊まりました。
+    right: ホテルに泊まりました。
+    target_lang: ja
+    note:
+      vi: Nơi trọ lại đi với に.
+  - type: summary
+    points:
+      - vi: V-た + ほうがいい - nên; V-ない + ほうがいい - không nên.
+      - vi: V-ておく - làm sẵn / để nguyên; thân mật - とく.
+      - vi: ～たいんですが - nêu yêu cầu mềm mỏng ở quầy dịch vụ.
+      - vi: 予約 đặt trước · 泊まる trọ · チェックイン nhận phòng · キャンセル hủy.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-bka-mcq-advice
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-ta-hou-ga-ii
+    prompt:
+      stem: '"Bạn nên đặt sớm." Chọn câu đúng.'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 早く予約したほうがいいです。, lang: ja }
+        - { id: p8d, text: 早く予約するほうがいいでした。, lang: ja }
+        - { id: w2s, text: 早く予約しないほうがいいです。, lang: ja }
+        - { id: m6q, text: 早く予約してほうがいいです。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Khuyên nên làm - thể た + ほうがいいです. しないほうがいい là "không nên"; して không dùng trước ほうがいい.
+    display_answer: 早く予約したほうがいいです。
+
+  - key: ja:exercise:n4-bka-mcq-oku
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-te-oku
+    prompt:
+      stem: 旅行の前に、ホテルを予約しておきました。 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: "Trước chuyến đi, tôi đã đặt sẵn khách sạn.", lang: vi }
+        - { id: y1n, text: "Sau chuyến đi, tôi đã đặt khách sạn.", lang: vi }
+        - { id: e7c, text: "Trước chuyến đi, tôi đã hủy khách sạn.", lang: vi }
+        - { id: h4b, text: "Trước chuyến đi, tôi định đặt khách sạn.", lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: しておきました - đã làm sẵn để chuẩn bị. 前に - trước.
+    display_answer: Trước chuyến đi, tôi đã đặt sẵn khách sạn.
+
+  - key: ja:exercise:n4-bka-listen-checkin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-chekku-in
+    prompt:
+      audio_asset_id: null
+      fallback_text: チェックインは三時からです。
+      options:
+        - { id: a8u, text: Nhận phòng từ 3 giờ., lang: vi }
+        - { id: q2z, text: Trả phòng lúc 3 giờ., lang: vi }
+        - { id: d6l, text: Nhận phòng đến 3 giờ., lang: vi }
+        - { id: s9f, text: Nhận phòng từ 4 giờ., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: チェックイン - nhận phòng; 三時から - từ 3 giờ (đến 3 giờ là 三時まで; 4 giờ là 四時).
+    display_answer: Nhận phòng từ 3 giờ.
+
+  - key: ja:exercise:n4-bka-fill-tomaru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tomaru
+    prompt:
+      template: "Ở Kyoto tôi trọ ở lữ quán. - 京都では旅館{{b1}}泊まりました。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - Nơi trọ lại là điểm đến của hành động.
+        - Trợ từ giống 住む (住んでいる).
+    answer:
+      blanks:
+        b1: [に]
+    known_wrong:
+      - answer: で
+        feedback_vi: 泊まる giống 住む - nơi chốn đi với に.
+        error_tag: particle_ni_de
+      - answer: を
+        feedback_vi: 泊まる không nhận tân ngữ を. Dùng に.
+        error_tag: particle_ni_de
+    explanation:
+      vi: N + に泊まる - trọ lại ở N.
+    display_answer: 京都では旅館に泊まりました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-bka-fill-not-walk
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ta-hou-ga-ii
+    prompt:
+      template: "Buổi tối không nên đi bộ một mình. - 夜は一人で{{b1}}ほうがいいです。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [歩かない, あるかない]
+    known_wrong:
+      - answer: 歩かなかった
+        feedback_vi: Lời khuyên phủ định dùng thể ない, không dùng thể た.
+        error_tag: hou_ga_ii_form
+      - answer: 歩いた
+        feedback_vi: 歩いたほうがいい là "nên đi bộ" - ngược nghĩa.
+        error_tag: negation
+      - answer: 歩きない
+        feedback_vi: 歩く → 歩かない (く → か).
+        error_tag: nai_form
+    explanation:
+      vi: V-ない + ほうがいいです - không nên. 歩く → 歩かない.
+    display_answer: 夜は一人で歩かないほうがいいです。
+
+  - key: ja:exercise:n4-bka-fill-buy-ticket
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-oku
+    prompt:
+      template: "Mình mua sẵn vé tàu nhé. - 電車の切符を{{b1}}おきましょう。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [買って, かって]
+    known_wrong:
+      - answer: 買いて
+        feedback_vi: 買う (đuôi う) → 買って.
+        error_tag: te_form
+      - answer: 買た
+        feedback_vi: ておく cần thể て - 買って.
+        error_tag: te_form
+    explanation:
+      vi: 買う → 買って + おきましょう - rủ cùng làm sẵn.
+    display_answer: 電車の切符を買っておきましょう。
+
+  - key: ja:exercise:n4-bka-translate-cancel
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kyanseru
+    prompt:
+      source_text: Tôi muốn hủy đặt chỗ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 予約をキャンセルしたいんですが。
+        - よやくをキャンセルしたいんですが。
+        - 予約をキャンセルしたいです。
+        - 予約をキャンセルしたいのですが。
+        - 予約をキャンセルしたいんですけど。
+        - 予約をキャンセルしたいんですが…。
+        - すみません、予約をキャンセルしたいんですが。
+        - 予約を取り消したいんですが。
+        - 予約を取り消したいです。
+    known_wrong:
+      - answer: 予約をキャンセルしたほうがいいです。
+        feedback_vi: たほうがいい là lời khuyên "nên hủy", không phải "tôi muốn hủy".
+        error_tag: hou_ga_ii_form
+      - answer: 予約をキャンセルしておきます。
+        feedback_vi: ておきます là "hủy sẵn", không nói mong muốn.
+        error_tag: te_oku
+    explanation:
+      vi: キャンセルする → キャンセルしたい (muốn) + んですが (mềm mỏng).
+    display_answer: 予約をキャンセルしたいんですが。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-bka-translate-crowded
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-yoyaku
+    prompt:
+      source_text: 週末は混むから、早く予約したほうがいいですよ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần đông nên bạn nên đặt sớm đấy.
+        - Cuối tuần đông nên bạn nên đặt trước sớm đấy.
+        - Cuối tuần đông nên nên đặt sớm đấy.
+        - Cuối tuần đông người nên bạn nên đặt sớm đấy.
+        - Cuối tuần đông nên bạn nên đặt sớm.
+        - Cuối tuần đông nên bạn nên đặt chỗ sớm đấy.
+        - Cuối tuần đông nên bạn nên đặt phòng sớm đấy.
+        - Vì cuối tuần đông nên bạn nên đặt sớm đấy.
+        - Vì cuối tuần đông nên bạn nên đặt sớm.
+        - Cuối tuần đông lắm nên bạn nên đặt sớm đấy.
+        - Cuối tuần đông nên đặt sớm thì hơn đấy.
+        - Cuối tuần đông nên bạn nên đặt sớm nhé.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần vắng nên không cần đặt sớm.
+        feedback_vi: 混む là đông đúc; たほうがいい là "nên".
+        error_tag: vocab_meaning
+      - answer: Cuối tuần đông nên tôi đã đặt sớm.
+        feedback_vi: Câu gốc là lời khuyên cho người nghe, không phải kể việc đã làm.
+        error_tag: hou_ga_ii_form
+    explanation:
+      vi: 混むから - vì đông; 予約したほうがいい - nên đặt trước; よ - nhấn mạnh thông tin cho người nghe.
+    display_answer: Cuối tuần đông nên bạn nên đặt sớm đấy.
+
+  - key: ja:exercise:n4-bka-order-window
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-oku
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Phòng nóng nên cứ để cửa sổ mở nhé."'
+      tokens:
+        - { id: t-kudasai, text: ください }
+        - { id: t-mado, text: 窓を }
+        - { id: t-atsui, text: 部屋が暑いから、 }
+        - { id: t-akete, text: 開けて }
+        - { id: t-oite, text: おいて }
+        - { id: t-oita, text: おいた }
+    answer:
+      orders:
+        - [t-atsui, t-mado, t-akete, t-oite, t-kudasai]
+    explanation:
+      vi: 開けておいてください - cứ để nguyên trạng thái mở. おく → おいて + ください.
+    display_answer: 部屋が暑いから、窓を開けておいてください。
+
+  - key: ja:exercise:n4-bka-mcq-reception
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-yoyaku
+    prompt:
+      stem: Bạn gọi điện cho nhà hàng, muốn đặt chỗ hai người tối nay. Câu mở đầu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: すみません、今晩二人で予約したいんですが。, lang: ja }
+        - { id: j7r, text: 今晩二人で予約したほうがいいです。, lang: ja }
+        - { id: c1o, text: 今晩二人で予約しておいてください。, lang: ja }
+        - { id: n5g, text: 今晩二人で予約しましたか。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: ～たいんですが nêu mong muốn mềm mỏng, chờ nhân viên hỗ trợ. Các câu khác là khuyên, ra lệnh hoặc hỏi lại.
+    display_answer: すみません、今晩二人で予約したいんですが。
+
+  - key: ja:exercise:n4-bka-translate-umbrella
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-ta-hou-ga-ii
+    prompt:
+      source_text: Chiều nay có lẽ sẽ mưa nên bạn nên mang ô theo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 午後は雨が降るでしょうから、傘を持って行ったほうがいいです。
+        - 午後は雨が降るかもしれないから、傘を持って行ったほうがいいです。
+        - 午後は雨が降りそうだから、傘を持って行ったほうがいいです。
+        - 午後は雨が降りそうですから、傘を持って行ったほうがいいです。
+        - 午後は雨が降るでしょうから、傘を持って行ったほうがいいですよ。
+        - 午後は雨が降りそうだから、傘を持って行ったほうがいいですよ。
+        - 午後は雨だから、傘を持って行ったほうがいいです。
+        - 午後は雨でしょうから、傘を持って行ったほうがいいです。
+        - 午後から雨が降るでしょうから、傘を持って行ったほうがいいです。
+        - 午後から雨が降りそうだから、傘を持って行ったほうがいいです。
+        - 午後は雨が降るでしょうから、傘を持っていったほうがいいです。
+        - 午後は雨が降りそうだから、傘を持っていったほうがいいです。
+        - 午後は雨が降るでしょうから、傘を持って行ったほうがいいと思います。
+        - 午後は雨が降るでしょうから、傘を持っていったほうがいいですよ。
+    known_wrong:
+      - answer: 午後は雨が降るでしょうから、傘を持って行かないほうがいいです。
+        feedback_vi: 行かないほうがいい là "không nên mang" - ngược nghĩa.
+        error_tag: negation
+      - answer: 午後は雨が降るでしょうから、傘を持って行くほうがいいでした。
+        feedback_vi: Lời khuyên dùng 持って行ったほうがいいです (hiện tại).
+        error_tag: hou_ga_ii_form
+    explanation:
+      vi: 降るでしょう / 降りそう - có lẽ mưa; 持って行ったほうがいい - nên mang theo.
+    display_answer: 午後は雨が降るでしょうから、傘を持って行ったほうがいいです。

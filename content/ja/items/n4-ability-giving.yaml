@@ -1,0 +1,646 @@
+# Học liệu unit "Khả năng, cho - nhận & bắt buộc" (JLPT N4). reading là cách đọc bằng kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: thể khả năng =================
+  - key: ja:item:n4-gram-potential
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Thể khả năng (書ける・食べられる・できる・来られる)
+      romanization: kanoukei
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Có thể / biết làm V. Nhóm 1: âm cuối đổi sang hàng え + る (書く → 書ける, 話す → 話せる). Nhóm 2: bỏ る + られる (食べられる). する → できる, 来る → 来られる (こられる)."
+      examples:
+        - target: 漢字が読めます。
+          translation:
+            vi: Tôi đọc được chữ Hán.
+        - target: 納豆が食べられません。
+          translation:
+            vi: Tôi không ăn được natto.
+        - target: 明日は来られますか。
+          translation:
+            vi: Ngày mai bạn đến được không?
+      confusion:
+        vi: Tân ngữ thường đổi を → が (日本語が話せます). Thể khả năng chia như động từ nhóm 2 - 書けます, 書けない, 書けた.
+
+  - key: ja:item:n4-gram-koto-ga-dekiru
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V辞書形 + ことができます
+      romanization: koto ga dekimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Có thể làm V - cách nói tương đương thể khả năng, hơi trang trọng hơn; với danh từ chỉ hoạt động dùng N + ができます.
+      examples:
+        - target: このカードで切符を買うことができます。
+          translation:
+            vi: Có thể mua vé bằng thẻ này.
+        - target: 妹はピアノを弾くことができます。
+          translation:
+            vi: Em gái tôi biết chơi piano.
+        - target: 私はテニスができます。
+          translation:
+            vi: Tôi biết chơi tennis.
+      confusion:
+        vi: Trước ことができます là thể từ điển (買う), không phải thể ます (買います). Với mẫu này tân ngữ vẫn giữ を.
+
+  - key: ja:item:n4-oyogu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 泳ぐ
+      reading: およぐ
+      romanization: oyogu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: bơi
+      examples:
+        - target: 弟は百メートル泳げます。
+          translation:
+            vi: Em trai tôi bơi được một trăm mét.
+      confusion:
+        vi: Thể khả năng là 泳げる (ぐ → げ); thể て là 泳いで.
+
+  - key: ja:item:n4-unten-suru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 運転する
+      reading: うんてんする
+      romanization: unten suru
+      pos: động từ する
+    back:
+      meaning:
+        vi: lái (xe)
+      examples:
+        - target: 車の運転ができますか。
+          translation:
+            vi: Bạn biết lái ô tô không?
+      confusion:
+        vi: Thể khả năng của 運転する là 運転できる, không phải 運転される. Xe máy là バイク.
+
+  - key: ja:item:n4-hiku
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 弾く
+      reading: ひく
+      romanization: hiku
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: chơi, đánh, gảy (nhạc cụ có phím, dây)
+      examples:
+        - target: ギターが弾けます。
+          translation:
+            vi: Tôi chơi được guitar.
+      confusion:
+        vi: Piano, guitar dùng 弾く; sáo, kèn dùng 吹く (ふく); trống dùng たたく. Tiếng Việt chỉ nói chung "chơi".
+
+  - key: ja:item:n4-kanji
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 漢字
+      reading: かんじ
+      romanization: kanji
+      pos: danh từ
+    back:
+      meaning:
+        vi: chữ Hán
+      examples:
+        - target: 漢字が少し読めます。
+          translation:
+            vi: Tôi đọc được một chút chữ Hán.
+      confusion:
+        vi: Người Việt có lợi thế âm Hán Việt (漢字 - hán tự), nhưng cách đọc tiếng Nhật khác hẳn, cần học riêng.
+
+  - key: ja:item:n4-mieru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 見える / 聞こえる
+      reading: みえる / きこえる
+      romanization: mieru / kikoeru
+      pos: động từ nhóm 2
+    back:
+      meaning:
+        vi: nhìn thấy được / nghe thấy được (tự nhiên lọt vào mắt, tai)
+      examples:
+        - target: 窓から富士山が見えます。
+          translation:
+            vi: Từ cửa sổ nhìn thấy núi Phú Sĩ.
+        - target: 隣の部屋から音楽が聞こえます。
+          translation:
+            vi: Nghe thấy tiếng nhạc từ phòng bên cạnh.
+      confusion:
+        vi: 見える là tự nhiên thấy; 見られる là "có thể xem" (có điều kiện, ví dụ 映画が見られる). Vật được thấy đi với が.
+
+  # ================= bài 2: あげる・もらう・くれる =================
+  - key: ja:item:n4-gram-ageru
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: A は B に N を あげます
+      romanization: agemasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: A cho/tặng B cái N - người cho là mình hoặc người khác, người nhận không phải "tôi".
+      examples:
+        - target: 私は友達に花をあげました。
+          translation:
+            vi: Tôi đã tặng hoa cho bạn.
+        - target: 田中さんは山田さんに本をあげました。
+          translation:
+            vi: Anh Tanaka đã tặng sách cho chị Yamada.
+      confusion:
+        vi: Không dùng あげる khi người nhận là "tôi" - lúc đó phải dùng くれる.
+
+  - key: ja:item:n4-gram-morau
+    type: grammar_point
+    level: n4
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: A は B に/から N を もらいます
+      romanization: moraimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: A nhận được N từ B - đứng ở phía người nhận để nói.
+      examples:
+        - target: 私は母に時計をもらいました。
+          translation:
+            vi: Tôi được mẹ tặng đồng hồ.
+        - target: 会社から手紙をもらいました。
+          translation:
+            vi: Tôi nhận được thư từ công ty.
+      confusion:
+        vi: Người cho đi với に hoặc から; nếu người cho là tổ chức (công ty, trường) thì dùng から.
+
+  - key: ja:item:n4-gram-kureru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: B は (私に) N を くれます
+      romanization: kuremasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: B cho tôi (hoặc người nhà tôi) cái N - người nhận là phía "tôi".
+      examples:
+        - target: 友達が私にお土産をくれました。
+          translation:
+            vi: Bạn đã cho tôi quà lưu niệm.
+        - target: 兄が妹に本をくれました。
+          translation:
+            vi: Anh trai đã cho em gái tôi quyển sách.
+      confusion:
+        vi: Tiếng Việt chỉ có một chữ "cho", nhưng tiếng Nhật chọn động từ theo hướng. Cho tôi → くれる; tôi cho người khác → あげる. Không nói 友達は私にあげました.
+
+  - key: ja:item:n4-purezento
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: プレゼント
+      romanization: purezento
+      pos: danh từ
+    back:
+      meaning:
+        vi: quà tặng
+      examples:
+        - target: 誕生日にプレゼントをもらいました。
+          translation:
+            vi: Tôi nhận được quà vào ngày sinh nhật.
+      confusion:
+        vi: Viết bằng katakana vì là từ mượn tiếng Anh "present"; trường âm không có - プレゼント, không phải プレーゼント.
+
+  - key: ja:item:n4-tanjoubi
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 誕生日
+      reading: たんじょうび
+      romanization: tanjoubi
+      pos: danh từ
+    back:
+      meaning:
+        vi: sinh nhật
+      examples:
+        - target: 誕生日おめでとうございます。
+          translation:
+            vi: Chúc mừng sinh nhật.
+      pronunciation_note:
+        vi: じょう là trường âm - kéo dài [tan-joo-bi].
+      confusion:
+        vi: Viết thiếu う (たんじょび) là sai chính tả.
+
+  - key: ja:item:n4-omiyage
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: お土産
+      reading: おみやげ
+      romanization: omiyage
+      pos: danh từ
+    back:
+      meaning:
+        vi: quà lưu niệm, quà mang về sau chuyến đi
+      examples:
+        - target: 京都のお土産をもらいました。
+          translation:
+            vi: Tôi được tặng quà Kyoto.
+      confusion:
+        vi: お土産 là quà mang về từ chuyến đi; quà sinh nhật là プレゼント. Cách đọc đặc biệt, không đọc theo từng chữ.
+
+  - key: ja:item:n4-hana
+    type: vocab
+    level: n4
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 花
+      reading: はな
+      romanization: hana
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoa
+      examples:
+        - target: 母の日に花をあげました。
+          translation:
+            vi: Tôi tặng hoa vào Ngày của Mẹ.
+      pronunciation_note:
+        vi: 花 (hoa) và 鼻 (mũi) đều đọc はな, chỉ khác ngữ điệu.
+      confusion:
+        vi: Đừng nhầm 花 (はな, hoa) với 話 (はなし, câu chuyện).
+
+  # ================= bài 3: てあげる・てもらう・てくれる =================
+  - key: ja:item:n4-gram-te-ageru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + あげます
+      romanization: -te agemasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm V giúp/cho người khác.
+      examples:
+        - target: 友達に道を教えてあげました。
+          translation:
+            vi: Tôi đã chỉ đường giúp bạn.
+      confusion:
+        vi: Nói với người trên "tôi làm giúp ông" bằng てあげます nghe kể công, bất lịch sự. Khi đề nghị giúp, hãy dùng ましょうか (持ちましょうか).
+
+  - key: ja:item:n4-gram-te-morau
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + もらいます
+      romanization: -te moraimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Được ai làm V cho mình (nhờ ai làm V) - người làm đi với に.
+      examples:
+        - target: 先輩に日本語を教えてもらいました。
+          translation:
+            vi: Tôi được đàn anh dạy tiếng Nhật.
+        - target: 友達に引っ越しを手伝ってもらいました。
+          translation:
+            vi: Tôi được bạn giúp chuyển nhà.
+      confusion:
+        vi: Chủ ngữ là người nhận lợi ích (tôi), người làm đi với に. Đừng đảo - 先輩が教えてもらいました là sai nghĩa.
+
+  - key: ja:item:n4-gram-te-kureru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-て + くれます
+      romanization: -te kuremasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Ai đó làm V cho tôi - người làm là chủ ngữ (が), thể hiện lòng biết ơn.
+      examples:
+        - target: 友達が駅まで送ってくれました。
+          translation:
+            vi: Bạn đã đưa tôi ra tận ga.
+        - target: 母が料理を作ってくれました。
+          translation:
+            vi: Mẹ đã nấu ăn cho tôi.
+      confusion:
+        vi: てくれる và てもらう cùng nghĩa "được làm cho", chỉ khác chủ ngữ - 友達が手伝ってくれた = 友達に手伝ってもらった.
+
+  - key: ja:item:n4-tetsudau
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 手伝う
+      reading: てつだう
+      romanization: tetsudau
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: giúp (một việc cụ thể)
+      examples:
+        - target: ちょっと手伝ってくれませんか。
+          translation:
+            vi: Giúp tôi một chút được không?
+      confusion:
+        vi: 手伝う là giúp làm việc gì đó bằng tay chân; 助ける (たすける) là cứu, giúp khi gặp nguy.
+
+  - key: ja:item:n4-naosu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 直す
+      reading: なおす
+      romanization: naosu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: sửa (đồ hỏng, lỗi sai)
+      examples:
+        - target: 先生に作文を直してもらいました。
+          translation:
+            vi: Tôi được thầy sửa bài văn.
+      confusion:
+        vi: 直す đuôi す → 直して. Chữ 治す (cùng cách đọc) là chữa bệnh.
+
+  - key: ja:item:n4-annai-suru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 案内する
+      reading: あんないする
+      romanization: annai suru
+      pos: động từ する
+    back:
+      meaning:
+        vi: dẫn đường, hướng dẫn (tham quan)
+      examples:
+        - target: 友達が町を案内してくれました。
+          translation:
+            vi: Bạn đã dẫn tôi đi tham quan thành phố.
+      confusion:
+        vi: Nơi được dẫn đi tham quan đi với を (町を案内する).
+
+  - key: ja:item:n4-okuru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 送る
+      reading: おくる
+      romanization: okuru
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: gửi (đồ, thư); đưa, tiễn (người)
+      examples:
+        - target: 駅まで送ります。
+          translation:
+            vi: Tôi đưa bạn ra ga nhé.
+      confusion:
+        vi: 送る đuôi る nhưng thuộc nhóm 1 - 送って.
+
+  # ================= bài 4: なければなりません / なくてもいいです =================
+  - key: ja:item:n4-gram-nakereba-naranai
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-ない → なければなりません
+      romanization: -nakereba narimasen
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Phải làm V - bỏ い của thể ない rồi thêm ければなりません (行かない → 行かなければなりません).
+      examples:
+        - target: 明日までにレポートを出さなければなりません。
+          translation:
+            vi: Tôi phải nộp báo cáo trước ngày mai.
+        - target: 毎日薬を飲まなければなりません。
+          translation:
+            vi: Ngày nào tôi cũng phải uống thuốc.
+      pronunciation_note:
+        vi: Trong hội thoại thường rút gọn thành なきゃ - 行かなきゃ.
+      confusion:
+        vi: Dù có hai lần phủ định ("nếu không làm thì không được"), nghĩa là khẳng định "phải làm". Đừng bắt đầu từ thể ます (行きなければ là sai).
+
+  - key: ja:item:n4-gram-nakute-mo-ii
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-ない → なくてもいいです
+      romanization: -nakute mo ii desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không cần làm V cũng được - bỏ い của thể ない, thêm くてもいいです.
+      examples:
+        - target: 明日は来なくてもいいです。
+          translation:
+            vi: Ngày mai bạn không cần đến cũng được.
+        - target: 靴を脱がなくてもいいですよ。
+          translation:
+            vi: Không cần cởi giày đâu.
+      confusion:
+        vi: なくてもいい là "không cần", khác ないでください (đừng làm). 来なくてもいい là được đến hay không đều được.
+
+  - key: ja:item:n4-repooto
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: レポート
+      romanization: repooto
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài báo cáo, tiểu luận
+      examples:
+        - target: レポートを書かなければなりません。
+          translation:
+            vi: Tôi phải viết báo cáo.
+      pronunciation_note:
+        vi: ー kéo dài âm ポ - [re-poo-to].
+      confusion:
+        vi: Nộp báo cáo là レポートを出す (だす), không dùng あげる.
+
+  - key: ja:item:n4-shimekiri
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 締め切り
+      reading: しめきり
+      romanization: shimekiri
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạn chót, hạn nộp
+      examples:
+        - target: 締め切りは金曜日です。
+          translation:
+            vi: Hạn chót là thứ Sáu.
+      confusion:
+        vi: '"Trước (hạn) ngày X" dùng までに (金曜日までに出す); まで là "đến tận" cho hành động kéo dài.'
+
+  - key: ja:item:n4-zangyou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 残業
+      reading: ざんぎょう
+      romanization: zangyou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: làm thêm giờ, tăng ca
+      examples:
+        - target: 今日は残業しなければなりません。
+          translation:
+            vi: Hôm nay tôi phải tăng ca.
+      confusion:
+        vi: 残業 là làm thêm giờ ở chỗ làm chính; "làm thêm" kiểu việc part-time là アルバイト.
+
+  - key: ja:item:n4-kusuri
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 薬
+      reading: くすり
+      romanization: kusuri
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc
+      examples:
+        - target: 食事の後で薬を飲んでください。
+          translation:
+            vi: Hãy uống thuốc sau bữa ăn.
+      confusion:
+        vi: Uống thuốc là 薬を飲む - cùng động từ với uống nước, không dùng 食べる.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n4-hikkoshi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 引っ越し
+      reading: ひっこし
+      romanization: hikkoshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chuyển nhà
+      examples:
+        - target: 来週、引っ越しをします。
+          translation:
+            vi: Tuần sau tôi chuyển nhà.
+      pronunciation_note:
+        vi: Có âm ngắt っ - [hik-ko-shi].
+      confusion:
+        vi: Động từ là 引っ越す (ひっこす) - 東京に引っ越しました.
+
+  - key: ja:item:n4-phrase-tasukarimashita
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: 助かりました
+      reading: たすかりました
+      romanization: tasukarimashita
+      pos: cụm từ
+    back:
+      meaning:
+        vi: May quá, bạn đã giúp tôi rất nhiều (cảm ơn khi được giúp).
+      examples:
+        - target: 手伝ってくれて、ありがとう。助かりました。
+          translation:
+            vi: Cảm ơn bạn đã giúp. Đỡ cho tôi quá.
+      confusion:
+        vi: Thường đi sau lời cảm ơn để nói sự giúp đỡ có ích thật sự; thân mật nói 助かった.
+
+  - key: ja:item:n4-phrase-enryo-naku
+    type: phrase
+    level: n4
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: 遠慮なく
+      reading: えんりょなく
+      romanization: enryo naku
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Đừng ngại, cứ tự nhiên.
+      examples:
+        - target: 何かあったら、遠慮なく言ってください。
+          translation:
+            vi: Có chuyện gì thì cứ nói, đừng ngại nhé.
+      confusion:
+        vi: Đáp lại lời mời, người nhận nói では、遠慮なく (vậy tôi không khách sáo nhé).

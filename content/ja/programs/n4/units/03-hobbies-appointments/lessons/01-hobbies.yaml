@@ -1,0 +1,399 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-hobbies
+order_index: 1
+level: n4
+title:
+  vi: Sở thích - ことです và のが好きです
+objectives:
+  - vi: Giới thiệu sở thích bằng 趣味は V辞書形 + ことです.
+  - vi: Nói thích, giỏi, kém việc gì bằng V + のが 好き・上手・下手です.
+  - vi: Hỏi và trả lời về sở thích một cách tự nhiên, khiêm tốn.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:n4-ability-giving-review]
+items:
+  - item: ja:item:n4-gram-shumi-koto
+  - item: ja:item:n4-gram-no-ga-suki
+  - item: ja:item:n4-shumi
+  - item: ja:item:n4-tsuri
+  - item: ja:item:n4-toru
+  - item: ja:item:n4-jouzu
+  - item: ja:item:n4-heta
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Sở thích của tôi là chụp ảnh", "Tôi thích hát nhưng hát dở" và khen "Bạn vẽ giỏi quá".
+  - type: explain
+    text:
+      vi: Muốn dùng động từ như một danh từ ("việc chụp ảnh"), tiếng Nhật thêm こと hoặc の sau thể từ điển - 撮る → 撮ること / 撮るの.
+  - type: explain
+    text:
+      vi: "Giới thiệu sở thích - 趣味は + V辞書形 + ことです. Nói thích, giỏi, kém - V辞書形 + のが + 好き・上手・下手です. Danh từ thì nối thẳng - サッカーが好きです."
+  - type: explain
+    text:
+      vi: 好き, 上手, 下手 là tính từ đuôi な, nên vật được thích đi với が. Muốn nói người giỏi là ai, chủ ngữ dùng は (兄は絵をかくのが上手です).
+  - type: deep_explain
+    text:
+      vi: Người Nhật hiếm khi tự khen mình 上手. Khi được khen 日本語が上手ですね, câu trả lời tự nhiên là いいえ、まだまだです (đâu có, còn kém lắm). Nói về sở trường của mình dùng 得意 (とくい) - 料理が得意です.
+  - type: example
+    target: 私の趣味は写真を撮ることです。
+    target_lang: ja
+    translation:
+      vi: Sở thích của tôi là chụp ảnh.
+    note:
+      vi: 撮る (thể từ điển) + こと = việc chụp.
+  - type: example
+    target: 歌を歌うのは好きですが、下手です。
+    target_lang: ja
+    translation:
+      vi: Tôi thích hát nhưng hát dở.
+    note:
+      vi: のは nhấn mạnh đối lập với vế sau; が ở giữa câu là "nhưng".
+  - type: example
+    target: 兄は絵をかくのが上手です。
+    target_lang: ja
+    translation:
+      vi: Anh trai tôi vẽ giỏi.
+    note:
+      vi: Người giỏi đi với は, việc giỏi (かくの) đi với が.
+  - type: example
+    target: 週末は父と釣りに行きます。
+    target_lang: ja
+    translation:
+      vi: Cuối tuần tôi đi câu cá với bố.
+    note:
+      vi: Danh từ hoạt động + に + 行く - đi để làm gì.
+  - type: common_mistake
+    wrong: 趣味は写真を撮りますことです。
+    right: 趣味は写真を撮ることです。
+    target_lang: ja
+    note:
+      vi: Trước こと là thể từ điển (撮る), không phải thể ます.
+  - type: common_mistake
+    wrong: 私は泳ぐのを好きです。
+    right: 私は泳ぐのが好きです。
+    target_lang: ja
+    note:
+      vi: 好き là tính từ đuôi な; thứ được thích đi với が, không phải を.
+  - type: common_mistake
+    wrong: 私の趣味は本を読むのです。
+    right: 私の趣味は本を読むことです。
+    target_lang: ja
+    note:
+      vi: Sau 趣味は dùng ことです, không dùng のです (のです mang nghĩa giải thích).
+  - type: summary
+    points:
+      - vi: 趣味は + V辞書形 + ことです - sở thích là làm V.
+      - vi: V辞書形 + のが + 好き・上手・下手です - thích / giỏi / kém làm V.
+      - vi: Được khen thì khiêm tốn - いいえ、まだまだです.
+      - vi: 趣味 sở thích · 釣り câu cá · 撮る chụp · 上手 giỏi · 下手 kém.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-hob-mcq-koto
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-shumi-koto
+    prompt:
+      stem: '"Sở thích của tôi là chụp ảnh." Chọn câu đúng.'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 私の趣味は写真を撮ることです。, lang: ja }
+        - { id: p8d, text: 私の趣味は写真を撮りますことです。, lang: ja }
+        - { id: w2s, text: 私の趣味は写真を撮ったです。, lang: ja }
+        - { id: m6q, text: 私の趣味は写真が撮ることです。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Mẫu 趣味は + V辞書形 + ことです; tân ngữ của 撮る vẫn dùng を. Các phương án khác dùng sai thể hoặc sai trợ từ.
+    display_answer: 私の趣味は写真を撮ることです。
+
+  - key: ja:exercise:n4-hob-mcq-ga
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-no-ga-suki
+    prompt:
+      stem: 'Điền trợ từ: 私は料理を作るの ___ 好きです。'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: が, lang: ja }
+        - { id: y1n, text: を, lang: ja }
+        - { id: e7c, text: に, lang: ja }
+        - { id: h4b, text: で, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 好き là tính từ đuôi な, thứ được thích (作るの) đi với が.
+    display_answer: が
+
+  - key: ja:exercise:n4-hob-listen-fishing
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-tsuri
+    prompt:
+      audio_asset_id: null
+      fallback_text: 週末は父と釣りに行きます。
+      options:
+        - { id: a8u, text: Cuối tuần tôi đi câu cá với bố., lang: vi }
+        - { id: q2z, text: Cuối tuần bố tôi đi leo núi., lang: vi }
+        - { id: d6l, text: Cuối tuần tôi đi chợ mua cá với bố., lang: vi }
+        - { id: s9f, text: Cuối tuần trước tôi đi câu cá với bố., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 釣りに行きます là "đi câu cá"; 父と là "với bố"; 行きます là hiện tại / tương lai, không phải "tuần trước".
+    display_answer: Cuối tuần tôi đi câu cá với bố.
+
+  - key: ja:exercise:n4-hob-mcq-praise
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-jouzu
+    prompt:
+      stem: Người Nhật khen 日本語が上手ですね。. Câu trả lời nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: いいえ、まだまだです。, lang: ja }
+        - { id: j7r, text: はい、私は上手です。, lang: ja }
+        - { id: c1o, text: はい、下手です。, lang: ja }
+        - { id: n5g, text: いいえ、好きじゃないです。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Được khen, người Nhật khiêm tốn đáp いいえ、まだまだです. Tự nhận 上手 nghe kiêu; 好きじゃない lạc đề.
+    display_answer: いいえ、まだまだです。
+
+  - key: ja:exercise:n4-hob-fill-toru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-toru
+    prompt:
+      template: "Tôi chụp ảnh ở đây được không? - ここで写真を{{b1}}もいいですか。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - 撮る thuộc nhóm 1, đuôi る.
+        - る → って.
+    answer:
+      blanks:
+        b1: [撮って, とって]
+    known_wrong:
+      - answer: 撮りて
+        feedback_vi: Nhóm 1 đuôi る → って, không lấy thể ます thêm て.
+        error_tag: te_form
+      - answer: 撮て
+        feedback_vi: 撮る là nhóm 1 (dù đuôi る) - thể て là 撮って.
+        error_tag: te_form
+    explanation:
+      vi: 撮る → 撮って + もいいですか (xin phép).
+    display_answer: ここで写真を撮ってもいいですか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-hob-fill-swim-heta
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-heta
+    prompt:
+      template: "Tôi bơi kém. - 私は泳ぐ{{b1}}{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [のが]
+        b2: [下手, へた]
+    known_wrong:
+      - answer: のを
+        feedback_vi: 下手 là tính từ đuôi な - việc kém đi với が.
+        error_tag: particle_ga_suki
+      - answer: 上手
+        feedback_vi: 上手 là giỏi - ngược nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: V辞書形 + のが + 下手です - kém (việc) làm V.
+    display_answer: 私は泳ぐのが下手です。
+
+  - key: ja:exercise:n4-hob-translate-hobby
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shumi
+    prompt:
+      source_text: Sở thích của tôi là đọc sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 私の趣味は本を読むことです。
+        - わたしのしゅみはほんをよむことです。
+        - 趣味は本を読むことです。
+        - しゅみはほんをよむことです。
+        - 私の趣味は読書です。
+        - 趣味は読書です。
+    known_wrong:
+      - answer: 私の趣味は本を読みますことです。
+        feedback_vi: Trước こと là thể từ điển - 読む.
+        error_tag: koto_nominalizer
+      - answer: 私の趣味は本を読むです。
+        feedback_vi: Động từ cần こと để thành danh từ - 読むことです.
+        error_tag: koto_nominalizer
+    explanation:
+      vi: 趣味は + 読む + ことです. Dùng danh từ 読書 (どくしょ - đọc sách) cũng đúng.
+    display_answer: 私の趣味は本を読むことです。
+
+  - key: ja:exercise:n4-hob-fill-jouzu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-no-ga-suki
+    prompt:
+      template: "Anh trai tôi vẽ giỏi. - 兄は絵をかく{{b1}}{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [のが]
+        b2: [上手, じょうず]
+    known_wrong:
+      - answer: ことを
+        feedback_vi: 上手 đi với が. Ở đây dùng のが.
+        error_tag: particle_ga_suki
+      - answer: 下手
+        feedback_vi: 下手 là kém - ngược nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: V辞書形 + のが + 上手です. Nói về người khác thì dùng 上手 là lời khen tự nhiên.
+    display_answer: 兄は絵をかくのが上手です。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-hob-translate-sing
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-no-ga-suki
+    prompt:
+      source_text: 歌を歌うのは好きですが、下手です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích hát nhưng hát dở.
+        - Tôi thích hát nhưng hát kém.
+        - Tôi thích hát nhưng tôi hát dở.
+        - Tôi thích hát nhưng tôi hát kém.
+        - Tôi thích hát, nhưng hát dở.
+        - Tôi thích hát, nhưng hát kém.
+        - Tôi thích hát, nhưng tôi hát dở.
+        - Tôi thích hát, nhưng tôi hát kém.
+        - Tôi thích hát nhưng không giỏi.
+        - Tôi thích hát nhưng hát không hay.
+        - Tôi thích hát nhưng tôi hát không hay.
+        - Thích hát nhưng hát dở.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi hát giỏi nhưng không thích hát.
+        feedback_vi: 好き là thích, 下手 là kém - câu gốc là "thích nhưng kém".
+        error_tag: vocab_meaning
+      - answer: Tôi không thích hát vì hát dở.
+        feedback_vi: Câu gốc nói vẫn thích (好きです); が là "nhưng".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 歌うのは好き - thích hát; が - nhưng; 下手です - kém, dở.
+    display_answer: Tôi thích hát nhưng hát dở.
+
+  - key: ja:exercise:n4-hob-order-photo
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-no-ga-suki
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Em gái tôi thích chụp ảnh hoa."'
+      tokens:
+        - { id: t-suki, text: 好きです }
+        - { id: t-toru, text: 撮るのが }
+        - { id: t-imouto, text: 妹は }
+        - { id: t-hana, text: 花の写真を }
+        - { id: t-torimasu, text: 撮りますのが }
+    answer:
+      orders:
+        - [t-imouto, t-hana, t-toru, t-suki]
+    explanation:
+      vi: Người (妹は) + việc (花の写真を撮るのが) + 好きです. Trước の dùng thể từ điển, không dùng 撮ります.
+    display_answer: 妹は花の写真を撮るのが好きです。
+
+  - key: ja:exercise:n4-hob-mcq-ask
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shumi
+    prompt:
+      stem: Bạn muốn hỏi giám đốc (người lớn tuổi) về sở thích một cách lịch sự. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: g3k, text: ご趣味は何ですか。, lang: ja }
+        - { id: u9p, text: 趣味、何？, lang: ja }
+        - { id: b2w, text: 趣味は何をしますか。, lang: ja }
+        - { id: x6e, text: 何が趣味をしますか。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: ご趣味は何ですか là cách hỏi lịch sự với người trên. 趣味、何？ quá thân mật; hai câu còn lại sai cấu trúc.
+    display_answer: ご趣味は何ですか。
+
+  - key: ja:exercise:n4-hob-translate-cook
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-no-ga-suki
+    prompt:
+      source_text: Tôi thích nấu ăn nhưng nấu dở.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 料理を作るのは好きですが、下手です。
+        - 料理を作るのが好きですが、下手です。
+        - 料理を作るのは好きですが下手です。
+        - 料理を作るのが好きですが下手です。
+        - りょうりをつくるのはすきですが、へたです。
+        - りょうりをつくるのがすきですが、へたです。
+        - 料理は好きですが、下手です。
+        - 料理が好きですが、下手です。
+        - 料理するのは好きですが、下手です。
+        - 料理するのが好きですが、下手です。
+        - 私は料理を作るのが好きですが、下手です。
+        - 私は料理を作るのは好きですが、下手です。
+        - 料理を作るのは好きですが、上手じゃないです。
+        - 料理を作るのは好きですが、上手ではありません。
+    known_wrong:
+      - answer: 料理を作るのを好きですが、下手です。
+        feedback_vi: 好き đi với が (hoặc は để đối lập), không dùng を.
+        error_tag: particle_ga_suki
+      - answer: 料理を作りますのが好きですが、下手です。
+        feedback_vi: Trước の dùng thể từ điển 作る.
+        error_tag: koto_nominalizer
+    explanation:
+      vi: V辞書形 + のは/のが + 好きですが、下手です. のは làm nổi bật sự đối lập "thích nhưng kém".
+    display_answer: 料理を作るのは好きですが、下手です。

@@ -1,0 +1,411 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-potential
+order_index: 1
+level: n4
+title:
+  vi: Thể khả năng và ことができます
+objectives:
+  - vi: Chia thể khả năng cho ba nhóm động từ (書ける, 食べられる, できる, 来られる).
+  - vi: Nói "biết/có thể làm" bằng thể khả năng hoặc V-ことができます.
+  - vi: Dùng が với thể khả năng và phân biệt 見える・聞こえる.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:n4-te-plain-review]
+items:
+  - item: ja:item:n4-gram-potential
+  - item: ja:item:n4-gram-koto-ga-dekiru
+  - item: ja:item:n4-oyogu
+  - item: ja:item:n4-unten-suru
+  - item: ja:item:n4-hiku
+  - item: ja:item:n4-kanji
+  - item: ja:item:n4-mieru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi đọc được chữ Hán", "Tôi không ăn được natto", "Bạn biết lái xe không?" và hiểu "Từ cửa sổ nhìn thấy núi Phú Sĩ".
+  - type: explain
+    text:
+      vi: Tiếng Việt thêm "được", "có thể", "biết" quanh động từ; tiếng Nhật đổi chính động từ sang thể khả năng. Thể này luôn có đuôi -eru nên chia tiếp như động từ nhóm 2 (書けます, 書けない, 書けた).
+  - type: explain
+    text:
+      vi: "Nhóm 1 - âm cuối đổi sang hàng え + る: 書く → 書ける, 話す → 話せる, 泳ぐ → 泳げる, 買う → 買える. Nhóm 2 - bỏ る + られる: 食べる → 食べられる, 見る → 見られる. する → できる, 来る → 来られる (こられる)."
+  - type: explain
+    text:
+      vi: Với thể khả năng, tân ngữ thường đổi を thành が (漢字が読めます). Cách khác là V辞書形 + ことができます (読むことができます) - nghĩa như nhau, hơi trang trọng hơn.
+  - type: deep_explain
+    text:
+      vi: Trong hội thoại, người Nhật trẻ hay nói 食べれる, 見れる (bỏ ら) - bạn sẽ nghe thấy, nhưng khi viết và thi JLPT hãy dùng 食べられる. 見える・聞こえる là "tự nhiên thấy, nghe", khác 見られる・聞ける là "có điều kiện để xem, nghe" (このサイトで映画が見られる).
+  - type: example
+    target: 漢字が少し読めます。
+    target_lang: ja
+    translation:
+      vi: Tôi đọc được một chút chữ Hán.
+    note:
+      vi: 読む → 読める; tân ngữ dùng が.
+  - type: example
+    target: 納豆が食べられません。
+    target_lang: ja
+    translation:
+      vi: Tôi không ăn được natto.
+    note:
+      vi: 食べる nhóm 2 → 食べられる → 食べられません.
+  - type: example
+    target: 車の運転ができますか。 - はい、できます。
+    target_lang: ja
+    translation:
+      vi: Bạn biết lái ô tô không? - Có, tôi biết.
+    note:
+      vi: Danh từ hoạt động + ができます; 運転する → 運転できる cũng được.
+  - type: example
+    target: 窓から富士山が見えます。
+    target_lang: ja
+    translation:
+      vi: Từ cửa sổ nhìn thấy núi Phú Sĩ.
+    note:
+      vi: 見える - tự nhiên thấy được, vật thấy đi với が.
+  - type: common_mistake
+    wrong: 日本語が話されます。
+    right: 日本語が話せます。
+    target_lang: ja
+    note:
+      vi: 話す thuộc nhóm 1 - す → せ + る (話せる). られる chỉ dành cho nhóm 2 và 来る.
+  - type: common_mistake
+    wrong: 私はテニスをできます。
+    right: 私はテニスができます。
+    target_lang: ja
+    note:
+      vi: Danh từ + できます dùng が (テニスができます), không dùng を.
+  - type: common_mistake
+    wrong: ピアノを弾けることができます。
+    right: ピアノを弾くことができます。
+    target_lang: ja
+    note:
+      vi: Trước ことができます là thể từ điển (弾く), không dùng lại thể khả năng - sẽ thành "có thể" hai lần.
+  - type: common_mistake
+    wrong: 明日、来れられますか。
+    right: 明日、来られますか。
+    target_lang: ja
+    note:
+      vi: Thể khả năng của 来る là 来られる (こられる) - không thêm chồng hai đuôi.
+  - type: summary
+    points:
+      - vi: Nhóm 1 - hàng え + る (書ける, 話せる, 泳げる, 買える). Nhóm 2 - られる (食べられる).
+      - vi: する → できる, 来る → 来られる (こられる).
+      - vi: Tân ngữ thường đổi を → が. Cách khác - V辞書形 + ことができます.
+      - vi: 見える・聞こえる - tự nhiên thấy, nghe được.
+      - vi: 泳ぐ bơi · 運転する lái xe · 弾く chơi (đàn) · 漢字 chữ Hán.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-pot-mcq-hanasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-potential
+    prompt:
+      stem: Thể khả năng của 話す (nói) là gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 話せる, lang: ja }
+        - { id: p8d, text: 話される, lang: ja }
+        - { id: w2s, text: 話られる, lang: ja }
+        - { id: m6q, text: 話しれる, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 話す thuộc nhóm 1, đuôi す đổi sang せ rồi thêm る - 話せる. 話される là thể bị động/kính ngữ, không phải khả năng.
+    display_answer: 話せる
+
+  - key: ja:exercise:n4-pot-mcq-taberu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-potential
+    prompt:
+      stem: '"Tôi không ăn được natto." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 納豆が食べられません。, lang: ja }
+        - { id: y1n, text: 納豆が食べせません。, lang: ja }
+        - { id: e7c, text: 納豆を食べることができるません。, lang: ja }
+        - { id: h4b, text: 納豆が食べりません。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 食べる thuộc nhóm 2 → 食べられる, phủ định lịch sự 食べられません. Các phương án khác chia sai.
+    display_answer: 納豆が食べられません。
+
+  - key: ja:exercise:n4-pot-listen-fuji
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-mieru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 窓から富士山が見えます。
+      options:
+        - { id: a8u, text: Từ cửa sổ nhìn thấy núi Phú Sĩ., lang: vi }
+        - { id: q2z, text: Tôi muốn xem núi Phú Sĩ từ cửa sổ., lang: vi }
+        - { id: d6l, text: Từ cửa sổ không thấy núi Phú Sĩ., lang: vi }
+        - { id: s9f, text: Tôi đã leo núi Phú Sĩ., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 見えます là "nhìn thấy được" (khẳng định), から là "từ". "Muốn xem" sẽ là 見たいです; "không thấy" là 見えません.
+    display_answer: Từ cửa sổ nhìn thấy núi Phú Sĩ.
+
+  - key: ja:exercise:n4-pot-fill-oyogu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-oyogu
+    prompt:
+      template: "Em trai tôi bơi được một trăm mét. - 弟は百メートル{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - 泳ぐ thuộc nhóm 1.
+        - ぐ → げ, rồi thêm ます.
+    answer:
+      blanks:
+        b1: [泳げます, およげます]
+    known_wrong:
+      - answer: 泳がれます
+        feedback_vi: られる/れる không dùng cho nhóm 1. 泳ぐ → 泳げる → 泳げます.
+        error_tag: potential_form
+      - answer: 泳ぎます
+        feedback_vi: 泳ぎます chỉ là "bơi", chưa có nghĩa "bơi được".
+        error_tag: potential_form
+      - answer: 泳げれます
+        feedback_vi: Không thêm れ - 泳げる chia như nhóm 2 → 泳げます.
+        error_tag: potential_form
+    explanation:
+      vi: 泳ぐ → 泳げる (ぐ → げ + る). Thể khả năng chia như nhóm 2 nên bỏ る thêm ます - 泳げます.
+    display_answer: 弟は百メートル泳げます。
+
+  - key: ja:exercise:n4-pot-mcq-hiku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-hiku
+    prompt:
+      stem: '"Tôi biết chơi guitar." Chọn động từ đúng: ギターが ___ 。'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 弾けます, lang: ja }
+        - { id: j7r, text: 吹けます, lang: ja }
+        - { id: c1o, text: しられます, lang: ja }
+        - { id: n5g, text: 弾きます, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Đàn dây, đàn phím dùng 弾く; thể khả năng là 弾ける → 弾けます. 吹く dành cho sáo, kèn; 弾きます thiếu nghĩa "biết/được".
+    display_answer: 弾けます
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-pot-fill-kanji
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kanji
+    prompt:
+      template: "Tôi đọc được một chút chữ Hán. - 漢字{{b1}}少し{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [が, を]
+        b2: [読めます, よめます]
+    known_wrong:
+      - answer: 読まれます
+        feedback_vi: 読む thuộc nhóm 1 - む → め + る (読める), không dùng られる.
+        error_tag: potential_form
+      - answer: 読みます
+        feedback_vi: 読みます chỉ là "đọc". "Đọc được" là 読めます.
+        error_tag: potential_form
+      - answer: は
+        feedback_vi: Với thể khả năng, tân ngữ thường dùng が.
+        error_tag: particle_ga_potential
+    explanation:
+      vi: 読む → 読める → 読めます. Tân ngữ của thể khả năng thường dùng が; を cũng được chấp nhận trong văn nói hiện đại.
+    display_answer: 漢字が少し読めます。
+
+  - key: ja:exercise:n4-pot-fill-kuru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-potential
+    prompt:
+      template: "Ngày mai bạn đến được không? - 明日、{{b1}}か。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [来られます, こられます]
+    known_wrong:
+      - answer: 来れます
+        feedback_vi: 来れます là khẩu ngữ (bỏ ら). Khi viết hãy dùng 来られます.
+        error_tag: ra_nuki
+      - answer: 来ます
+        feedback_vi: 来ます chỉ là "đến", chưa có nghĩa "đến được".
+        error_tag: potential_form
+      - answer: 来えます
+        feedback_vi: 来る là bất quy tắc - thể khả năng là 来られる (こられる).
+        error_tag: potential_form
+    explanation:
+      vi: 来る → 来られる (こられる) → 来られます. Đây là dạng chuẩn dùng khi viết và thi.
+    display_answer: 明日、来られますか。
+
+  - key: ja:exercise:n4-pot-translate-drive
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-unten-suru
+    prompt:
+      source_text: Bạn biết lái ô tô không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 車の運転ができますか。
+        - くるまのうんてんができますか。
+        - 車を運転できますか。
+        - くるまをうんてんできますか。
+        - 車を運転することができますか。
+        - 車が運転できますか。
+        - 運転ができますか。
+        - 運転できますか。
+    known_wrong:
+      - answer: 車の運転をできますか。
+        feedback_vi: Danh từ + できます dùng が - 運転ができますか.
+        error_tag: particle_ga_potential
+      - answer: 車を運転されますか。
+        feedback_vi: Thể khả năng của 運転する là 運転できる.
+        error_tag: potential_form
+      - answer: 車を運転しますか。
+        feedback_vi: 運転しますか là "bạn có lái không", chưa có nghĩa "biết lái".
+        error_tag: potential_form
+    explanation:
+      vi: する → できる, nên 運転する → 運転できる; hoặc danh từ 運転 + ができます.
+    display_answer: 車の運転ができますか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-pot-translate-library
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-koto-ga-dekiru
+    prompt:
+      source_text: この図書館では、日本の映画を見ることができます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở thư viện này có thể xem phim Nhật.
+        - Ở thư viện này bạn có thể xem phim Nhật.
+        - Ở thư viện này có thể xem phim Nhật Bản.
+        - Ở thư viện này bạn có thể xem phim Nhật Bản.
+        - Tại thư viện này có thể xem phim Nhật.
+        - Tại thư viện này có thể xem phim Nhật Bản.
+        - Ở thư viện này xem được phim Nhật.
+        - Ở thư viện này xem được phim Nhật Bản.
+        - Có thể xem phim Nhật ở thư viện này.
+        - Có thể xem phim Nhật Bản ở thư viện này.
+        - Ở thư viện này, có thể xem phim Nhật.
+        - Ở thư viện này, có thể xem phim Nhật Bản.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở thư viện này không được xem phim Nhật.
+        feedback_vi: ことができます là khẳng định "có thể", không phải cấm.
+        error_tag: negation
+      - answer: Ở thư viện này tôi đã xem phim Nhật.
+        feedback_vi: 見ることができます là "có thể xem", không phải "đã xem".
+        error_tag: potential_form
+    explanation:
+      vi: 見ることができます = "có thể xem". では nhấn mạnh "ở chỗ này thì".
+    display_answer: Ở thư viện này có thể xem phim Nhật.
+
+  - key: ja:exercise:n4-pot-order-piano
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-koto-ga-dekiru
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Em gái tôi biết chơi piano."'
+      tokens:
+        - { id: t-dekimasu, text: ことができます }
+        - { id: t-hiku, text: 弾く }
+        - { id: t-imouto, text: 妹は }
+        - { id: t-piano, text: ピアノを }
+        - { id: t-hikemasu, text: 弾けます }
+    answer:
+      orders:
+        - [t-imouto, t-piano, t-hiku, t-dekimasu]
+    explanation:
+      vi: Mẫu là V辞書形 + ことができます - 弾くことができます. 弾けます không ghép với ことができます vì sẽ thành "có thể" hai lần.
+    display_answer: 妹はピアノを弾くことができます。
+
+  - key: ja:exercise:n4-pot-mcq-swim-reply
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-potential
+    prompt:
+      stem: 'Bạn được hỏi 泳げますか。 Bạn chỉ bơi được một chút. Trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: g3k, text: 少しだけ泳げます。, lang: ja }
+        - { id: u9p, text: 少しだけ泳ぎます。, lang: ja }
+        - { id: b2w, text: 少しだけ泳がれます。, lang: ja }
+        - { id: x6e, text: 少しだけ泳いでいます。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: Hỏi khả năng thì trả lời bằng thể khả năng 泳げます. 泳ぎます là "bơi" (hành động), 泳いでいます là "đang bơi".
+    display_answer: 少しだけ泳げます。
+
+  - key: ja:exercise:n4-pot-translate-cannot-sleep
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-mieru
+    prompt:
+      source_text: Tôi nghe thấy tiếng nhạc từ phòng bên cạnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 隣の部屋から音楽が聞こえます。
+        - となりのへやからおんがくがきこえます。
+        - 隣の部屋から音楽が聞こえる。
+        - 隣の部屋から音が聞こえます。
+    known_wrong:
+      - answer: 隣の部屋から音楽を聞きます。
+        feedback_vi: 聞きます là chủ động "nghe". Tiếng nhạc tự lọt vào tai dùng 聞こえます.
+        error_tag: vocab_kikoeru
+      - answer: 隣の部屋から音楽が聞けます。
+        feedback_vi: 聞ける là "có thể nghe" (có điều kiện). Tự nhiên nghe thấy dùng 聞こえます.
+        error_tag: vocab_kikoeru
+      - answer: 隣の部屋から音楽を聞こえます。
+        feedback_vi: 聞こえる đi với が - 音楽が聞こえます.
+        error_tag: particle_ga_potential
+    explanation:
+      vi: Âm thanh tự lọt vào tai dùng 聞こえる, thứ được nghe đi với が. から là "từ".
+    display_answer: 隣の部屋から音楽が聞こえます。

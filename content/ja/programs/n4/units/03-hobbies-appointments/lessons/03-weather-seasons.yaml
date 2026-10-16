@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-weather-seasons
+order_index: 3
+level: n4
+title:
+  vi: Thời tiết và mùa - そうです, なります, でしょう
+objectives:
+  - vi: Đoán từ những gì nhìn thấy bằng Vます-gốc / A-gốc + そうです.
+  - vi: Nói sự thay đổi bằng A-く / Na-に / N-に + なります.
+  - vi: Hiểu dự báo thời tiết với でしょう.
+estimated_minutes: 15
+skills: [grammar, vocabulary, listening, speaking]
+prerequisites: [ja:lesson:n4-try-intend]
+items:
+  - item: ja:item:n4-gram-sou-looks
+  - item: ja:item:n4-gram-naru
+  - item: ja:item:n4-gram-deshou
+  - item: ja:item:n4-tenki-yohou
+  - item: ja:item:n4-kisetsu
+  - item: ja:item:n4-tsuyu
+  - item: ja:item:n4-suzushii
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Trời có vẻ sắp mưa", "Sang thu trời mát hơn rồi" và nghe hiểu "Ngày mai có lẽ trời nắng" trên bản tin thời tiết.
+  - type: explain
+    text:
+      vi: "そうです (trông có vẻ) gắn vào gốc từ: động từ bỏ ます (降ります → 降りそう), tính từ đuôi い bỏ い (おいしい → おいしそう), tính từ đuôi な bỏ な (元気 → 元気そう). Riêng いい → よさそう."
+  - type: explain
+    text:
+      vi: "Sự thay đổi dùng なります: tính từ đuôi い đổi い → く (暖かい → 暖かくなる), tính từ đuôi な và danh từ thêm に (静かになる, 春になる). いい → よくなる."
+  - type: explain
+    text:
+      vi: でしょう là "có lẽ, chắc là" - đứng sau thể thường, danh từ và tính từ đuôi な thì nối thẳng (雨でしょう). Bản tin thời tiết dùng mẫu này rất nhiều.
+  - type: deep_explain
+    text:
+      vi: Có hai mẫu そうです khác nhau. Gắn vào gốc (降りそうです) là "trông có vẻ" - mình tự nhìn thấy. Đứng sau thể thường (降るそうです) là "nghe nói" - thông tin từ người khác, ví dụ 天気予報によると、明日は雪が降るそうです.
+  - type: example
+    target: 空が暗いですね。雨が降りそうです。
+    target_lang: ja
+    translation:
+      vi: Trời tối quá nhỉ. Có vẻ sắp mưa.
+    note:
+      vi: 降ります → 降り + そうです - đoán từ bầu trời mình thấy.
+  - type: example
+    target: 秋になって、涼しくなりました。
+    target_lang: ja
+    translation:
+      vi: Sang thu, trời đã mát hơn.
+    note:
+      vi: 秋 + になる; 涼しい → 涼しく + なる.
+  - type: example
+    target: 明日は全国的に晴れるでしょう。
+    target_lang: ja
+    translation:
+      vi: Ngày mai có lẽ trời nắng trên cả nước.
+    note:
+      vi: Câu kiểu bản tin thời tiết - 晴れる + でしょう.
+  - type: example
+    target: 梅雨は毎日雨が降って、じめじめします。
+    target_lang: ja
+    translation:
+      vi: Mùa mưa ngày nào cũng mưa, ẩm ướt khó chịu.
+    note:
+      vi: じめじめ là từ tượng thái, tả sự ẩm ướt.
+  - type: common_mistake
+    wrong: このケーキはおいしいそうです。
+    right: このケーキはおいしそうです。
+    target_lang: ja
+    note:
+      vi: '"Trông ngon" bỏ い rồi thêm そう. おいしいそうです lại thành "nghe nói ngon".'
+  - type: common_mistake
+    wrong: だんだん暖かいになりました。
+    right: だんだん暖かくなりました。
+    target_lang: ja
+    note:
+      vi: Tính từ đuôi い đổi い → く trước なる.
+  - type: common_mistake
+    wrong: 明日は雨だでしょう。
+    right: 明日は雨でしょう。
+    target_lang: ja
+    note:
+      vi: Danh từ nối thẳng với でしょう, không có だ.
+  - type: summary
+    points:
+      - vi: Gốc từ + そうです - trông có vẻ (いい → よさそう).
+      - vi: A-く / Na-に / N-に + なります - trở nên.
+      - vi: Thể thường + でしょう - có lẽ (danh từ, Na bỏ だ).
+      - vi: 天気予報 dự báo thời tiết · 季節 mùa · 梅雨 mùa mưa · 涼しい mát.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-wea-mcq-looks
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-sou-looks
+    prompt:
+      stem: '"Cái bánh này trông ngon nhỉ." Chọn câu đúng.'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: このケーキはおいしそうですね。, lang: ja }
+        - { id: p8d, text: このケーキはおいしいそうですね。, lang: ja }
+        - { id: w2s, text: このケーキはおいしくそうですね。, lang: ja }
+        - { id: m6q, text: このケーキはおいしでしょうね。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Tính từ đuôi い bỏ い + そう - おいしそう. おいしいそう là "nghe nói ngon"; hai phương án còn lại chia sai.
+    display_answer: このケーキはおいしそうですね。
+
+  - key: ja:exercise:n4-wea-mcq-naru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-naru
+    prompt:
+      stem: '"Trời dần dần ấm lên rồi." だんだん ___ 。'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 暖かくなりました, lang: ja }
+        - { id: y1n, text: 暖かいになりました, lang: ja }
+        - { id: e7c, text: 暖かになりました, lang: ja }
+        - { id: h4b, text: 暖かくでした, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 暖かい là tính từ đuôi い - đổi い → く rồi thêm なりました.
+    display_answer: 暖かくなりました
+
+  - key: ja:exercise:n4-wea-listen-forecast
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-tenki-yohou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 天気予報によると、明日は雪が降るそうです。
+      options:
+        - { id: a8u, text: "Theo dự báo thời tiết, ngày mai nghe nói có tuyết.", lang: vi }
+        - { id: q2z, text: "Theo dự báo thời tiết, hôm nay trời có vẻ sắp có tuyết.", lang: vi }
+        - { id: d6l, text: "Theo dự báo thời tiết, ngày mai trời mưa.", lang: vi }
+        - { id: s9f, text: "Theo dự báo thời tiết, ngày mai không có tuyết.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 天気予報によると - theo dự báo; 降るそうです (sau thể thường) - nghe nói; 雪 là tuyết, 明日 là ngày mai.
+    display_answer: Theo dự báo thời tiết, ngày mai nghe nói có tuyết.
+
+  - key: ja:exercise:n4-wea-fill-rain
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-sou-looks
+    prompt:
+      template: "Trời tối quá. Có vẻ sắp mưa. - 空が暗いですね。雨が{{b1}}です。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Lấy thể ます của 降る rồi bỏ ます.
+        - 降ります → 降り + そう.
+    answer:
+      blanks:
+        b1: [降りそう, ふりそう]
+    known_wrong:
+      - answer: 降るそう
+        feedback_vi: 降るそうです là "nghe nói sẽ mưa". Mình tự nhìn thấy thì dùng gốc 降り + そう.
+        error_tag: sou_looks_hearsay
+      - answer: 降りでしょう
+        feedback_vi: でしょう đứng sau thể thường - 降るでしょう. Ở đây đã có です, cần そう.
+        error_tag: sou_looks_hearsay
+    explanation:
+      vi: 降ります → 降り + そうです - đoán từ bầu trời tối mà mình đang thấy.
+    display_answer: 空が暗いですね。雨が降りそうです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-wea-fill-suzushii
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-suzushii
+    prompt:
+      template: "Sang thu, trời đã mát hơn. - 秋{{b1}}なって、{{b2}}なりました。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [に]
+        b2: [涼しく, すずしく]
+    known_wrong:
+      - answer: 涼しい
+        feedback_vi: Tính từ đuôi い đổi い → く trước なる - 涼しく.
+        error_tag: naru_form
+      - answer: 涼しいに
+        feedback_vi: Chỉ tính từ đuôi な và danh từ mới thêm に. 涼しい → 涼しく.
+        error_tag: naru_form
+      - answer: が
+        feedback_vi: Danh từ + になる - 秋になる.
+        error_tag: naru_form
+    explanation:
+      vi: Danh từ + になる (秋になって); tính từ đuôi い - い → く + なる (涼しくなりました).
+    display_answer: 秋になって、涼しくなりました。
+
+  - key: ja:exercise:n4-wea-fill-deshou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-deshou
+    prompt:
+      template: "Từ chiều có lẽ sẽ mưa. - 午後から{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [雨でしょう, あめでしょう, 雨が降るでしょう, あめがふるでしょう]
+    known_wrong:
+      - answer: 雨だでしょう
+        feedback_vi: Danh từ nối thẳng với でしょう - 雨でしょう.
+        error_tag: deshou_form
+      - answer: 雨が降りでしょう
+        feedback_vi: でしょう đứng sau thể thường - 降るでしょう.
+        error_tag: deshou_form
+    explanation:
+      vi: 雨でしょう hoặc 雨が降るでしょう - có lẽ sẽ mưa.
+    display_answer: 午後から雨でしょう。
+
+  - key: ja:exercise:n4-wea-translate-season
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kisetsu
+    prompt:
+      source_text: Bạn thích mùa nào nhất?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - どの季節が一番好きですか。
+        - どのきせつがいちばんすきですか。
+        - どの季節がいちばん好きですか。
+        - 季節の中でどれが一番好きですか。
+        - 季節の中で、どれが一番好きですか。
+        - 季節の中でいつが一番好きですか。
+        - 季節の中で、いつが一番好きですか。
+        - 一番好きな季節は何ですか。
+        - 一番好きな季節はいつですか。
+        - いちばんすきなきせつはなんですか。
+    known_wrong:
+      - answer: どの季節を一番好きですか。
+        feedback_vi: 好き đi với が - どの季節が.
+        error_tag: particle_ga_suki
+      - answer: 何の季節が一番好きですか。
+        feedback_vi: Chọn một trong nhóm có sẵn dùng どの (どの季節).
+        error_tag: question_word
+    explanation:
+      vi: どの + N が一番好きですか - chọn một trong số nhiều; hoặc 一番好きな季節は何ですか.
+    display_answer: どの季節が一番好きですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-wea-translate-tsuyu
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-tsuyu
+    prompt:
+      source_text: 梅雨になったら、毎日雨が降るでしょう。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi vào mùa mưa, có lẽ ngày nào cũng mưa.
+        - Khi vào mùa mưa thì có lẽ ngày nào cũng mưa.
+        - Vào mùa mưa thì có lẽ ngày nào cũng mưa.
+        - Vào mùa mưa, có lẽ ngày nào cũng mưa.
+        - Đến mùa mưa thì có lẽ ngày nào cũng mưa.
+        - Đến mùa mưa, có lẽ ngày nào cũng mưa.
+        - Khi đến mùa mưa, chắc là ngày nào cũng mưa.
+        - Vào mùa mưa thì chắc là ngày nào cũng mưa.
+        - Đến mùa mưa thì chắc ngày nào cũng mưa.
+        - Khi vào mùa mưa, có lẽ trời mưa mỗi ngày.
+        - Vào mùa mưa thì có lẽ trời mưa mỗi ngày.
+        - Đến mùa mưa thì có lẽ trời mưa mỗi ngày.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mùa mưa đã qua, ngày nào cũng nắng.
+        feedback_vi: 梅雨になったら là "khi vào mùa mưa", 雨が降る là mưa.
+        error_tag: vocab_meaning
+      - answer: Khi vào mùa mưa, nghe nói ngày nào cũng mưa.
+        feedback_vi: でしょう là "có lẽ" (phỏng đoán), không phải "nghe nói".
+        error_tag: sou_looks_hearsay
+    explanation:
+      vi: 梅雨になったら - khi vào mùa mưa; 降るでしょう - có lẽ sẽ mưa; 毎日 - mỗi ngày.
+    display_answer: Khi vào mùa mưa, có lẽ ngày nào cũng mưa.
+
+  - key: ja:exercise:n4-wea-order-quiet
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-naru
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Buổi tối thị trấn trở nên yên tĩnh."'
+      tokens:
+        - { id: t-narimasu, text: なります }
+        - { id: t-shizukani, text: 静かに }
+        - { id: t-machi, text: 町が }
+        - { id: t-yoru, text: 夜は }
+        - { id: t-shizukaku, text: 静かく }
+    answer:
+      orders:
+        - [t-yoru, t-machi, t-shizukani, t-narimasu]
+    explanation:
+      vi: 静か là tính từ đuôi な - thêm に trước なります. 静かく là cách chia của tính từ đuôi い, sai ở đây.
+    display_answer: 夜は町が静かになります。
+
+  - key: ja:exercise:n4-wea-mcq-genki
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-sou-looks
+    prompt:
+      stem: Bạn gặp lại thầy giáo cũ, thấy thầy trông khỏe mạnh. Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 先生、お元気そうですね。, lang: ja }
+        - { id: j7r, text: 先生、お元気だそうですね。, lang: ja }
+        - { id: c1o, text: 先生、お元気になりましたね。, lang: ja }
+        - { id: n5g, text: 先生、お元気でしょうね。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Nhìn thấy mà đoán - 元気そう. 元気だそう là "nghe nói khỏe"; 元気になりました là "đã khỏe lại" (sau ốm); でしょうね là phỏng đoán khi không nhìn thấy.
+    display_answer: 先生、お元気そうですね。
+
+  - key: ja:exercise:n4-wea-translate-cold
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-deshou
+    prompt:
+      source_text: Ngày mai có lẽ sẽ lạnh hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 明日はもっと寒くなるでしょう。
+        - あしたはもっとさむくなるでしょう。
+        - 明日はもっと寒いでしょう。
+        - あしたはもっとさむいでしょう。
+        - 明日は今日より寒くなるでしょう。
+        - 明日は今日より寒いでしょう。
+        - 明日はもう少し寒くなるでしょう。
+        - 明日はさらに寒くなるでしょう。
+        - 明日はもっと寒くなると思います。
+        - 明日は寒くなるでしょう。
+    known_wrong:
+      - answer: 明日はもっと寒いになるでしょう。
+        feedback_vi: Tính từ đuôi い - 寒い → 寒く + なる.
+        error_tag: naru_form
+      - answer: 明日はもっと寒いだでしょう。
+        feedback_vi: Tính từ đuôi い nối thẳng - 寒いでしょう.
+        error_tag: deshou_form
+    explanation:
+      vi: 寒い → 寒くなる (trở nên lạnh) + でしょう (có lẽ). もっと là "hơn nữa".
+    display_answer: 明日はもっと寒くなるでしょう。

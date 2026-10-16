@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-before-after
+order_index: 1
+level: n4
+title:
+  vi: Trước và sau - 前に, 後で, てから
+objectives:
+  - vi: Nói "trước khi" bằng V辞書形 / Nの + 前に.
+  - vi: Nói "sau khi" bằng V-た / Nの + 後で.
+  - vi: Nhấn mạnh thứ tự "làm xong rồi mới" bằng V-てから.
+estimated_minutes: 15
+skills: [grammar, vocabulary, listening, writing]
+prerequisites: [ja:lesson:n4-hobbies-appointments-review]
+items:
+  - item: ja:item:n4-gram-mae-ni
+  - item: ja:item:n4-gram-ato-de
+  - item: ja:item:n4-gram-te-kara
+  - item: ja:item:n4-shuppatsu
+  - item: ja:item:n4-tsuku
+  - item: ja:item:n4-nimotsu
+  - item: ja:item:n4-ryokan
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể lịch trình chuyến đi - "Trước khi khởi hành, tôi kiểm tra hành lý", "Sau khi đến lữ quán, tôi ngâm suối nước nóng", "Nhận phòng xong rồi mình đi tham quan".
+  - type: explain
+    text:
+      vi: "前に (trước khi) luôn đi sau thể từ điển: 出発する前に, 寝る前に - kể cả khi câu ở quá khứ. Với danh từ thêm の: 旅行の前に."
+  - type: explain
+    text:
+      vi: "後で (sau khi) luôn đi sau thể た: 着いた後で, 食べた後で - kể cả khi nói về tương lai. Với danh từ: 食事の後で."
+  - type: explain
+    text:
+      vi: V-てから cũng là "sau khi" nhưng nhấn mạnh "xong việc này rồi mới làm việc kia". Nó cũng dùng cho mốc thời gian - 日本に来てから (từ khi đến Nhật).
+  - type: deep_explain
+    text:
+      vi: Mẹo nhớ - việc ở vế 前に chưa xảy ra khi vế sau diễn ra nên dùng thể từ điển; việc ở vế 後で đã xong nên dùng thể た. Thì của cả câu chỉ do động từ cuối câu quyết định.
+  - type: example
+    target: 出発する前に、荷物を確認してください。
+    target_lang: ja
+    translation:
+      vi: Trước khi khởi hành, hãy kiểm tra hành lý.
+    note:
+      vi: 出発する (thể từ điển) + 前に.
+  - type: example
+    target: 旅館に着いた後で、温泉に入りました。
+    target_lang: ja
+    translation:
+      vi: Sau khi đến lữ quán, tôi đã ngâm suối nước nóng.
+    note:
+      vi: 着く → 着いた + 後で.
+  - type: example
+    target: チェックインしてから、町を観光しましょう。
+    target_lang: ja
+    translation:
+      vi: Nhận phòng xong rồi mình đi tham quan thành phố nhé.
+    note:
+      vi: してから - xong việc này rồi mới đến việc kia.
+  - type: example
+    target: 寝る前に、明日の切符を確認しました。
+    target_lang: ja
+    translation:
+      vi: Trước khi ngủ, tôi đã kiểm tra vé ngày mai.
+    note:
+      vi: Câu quá khứ nhưng trước 前に vẫn là 寝る.
+  - type: common_mistake
+    wrong: 寝た前に、シャワーを浴びました。
+    right: 寝る前に、シャワーを浴びました。
+    target_lang: ja
+    note:
+      vi: Trước 前に luôn là thể từ điển.
+  - type: common_mistake
+    wrong: 駅に着く後で、電話します。
+    right: 駅に着いた後で、電話します。
+    target_lang: ja
+    note:
+      vi: Trước 後で luôn là thể た, kể cả việc trong tương lai.
+  - type: common_mistake
+    wrong: ご飯を食べます前に、手を洗います。
+    right: ご飯を食べる前に、手を洗います。
+    target_lang: ja
+    note:
+      vi: Không dùng thể ます trước 前に - dùng thể từ điển 食べる.
+  - type: summary
+    points:
+      - vi: V辞書形 / Nの + 前に - trước khi.
+      - vi: V-た / Nの + 後で - sau khi.
+      - vi: V-てから - làm xong rồi mới; từ khi.
+      - vi: 出発 khởi hành · 着く đến nơi · 荷物 hành lý · 旅館 lữ quán.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-bfa-mcq-mae
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-mae-ni
+    prompt:
+      stem: '"Trước khi ngủ, tôi đã tắm vòi sen." ___ 前に、シャワーを浴びました。'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 寝る, lang: ja }
+        - { id: p8d, text: 寝た, lang: ja }
+        - { id: w2s, text: 寝て, lang: ja }
+        - { id: m6q, text: 寝ます, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Trước 前に luôn là thể từ điển (寝る), dù cả câu ở quá khứ.
+    display_answer: 寝る
+
+  - key: ja:exercise:n4-bfa-mcq-ato
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-ato-de
+    prompt:
+      stem: '"Đến ga xong tôi sẽ gọi điện." 駅に ___ 後で、電話します。'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 着いた, lang: ja }
+        - { id: y1n, text: 着く, lang: ja }
+        - { id: e7c, text: 着きた, lang: ja }
+        - { id: h4b, text: 着いて, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Trước 後で luôn là thể た. 着く → 着いた (không phải 着きた).
+    display_answer: 着いた
+
+  - key: ja:exercise:n4-bfa-listen-onsen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-ryokan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 旅館に着いた後で、温泉に入りました。
+      options:
+        - { id: a8u, text: "Sau khi đến lữ quán, tôi đã ngâm suối nước nóng.", lang: vi }
+        - { id: q2z, text: "Trước khi đến lữ quán, tôi đã ngâm suối nước nóng.", lang: vi }
+        - { id: d6l, text: "Sau khi ngâm suối nước nóng, tôi đến lữ quán.", lang: vi }
+        - { id: s9f, text: "Tôi đã đặt lữ quán có suối nước nóng.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 着いた後で - sau khi đến; 温泉に入りました - đã ngâm suối nước nóng.
+    display_answer: Sau khi đến lữ quán, tôi đã ngâm suối nước nóng.
+
+  - key: ja:exercise:n4-bfa-fill-tekara
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-kara
+    prompt:
+      template: "Gửi hành lý xong rồi mình đi ăn nhé. - 荷物を{{b1}}から、ご飯を食べに行きましょう。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - 預ける (gửi) thuộc nhóm 2.
+        - Bỏ る thêm て.
+    answer:
+      blanks:
+        b1: [預けて, あずけて]
+    known_wrong:
+      - answer: 預ける
+        feedback_vi: 預けるから là "vì gửi". "Xong rồi mới" cần thể て - 預けてから.
+        error_tag: te_kara
+      - answer: 預けた
+        feedback_vi: 預けたから là "vì đã gửi". Dùng 預けてから.
+        error_tag: te_kara
+    explanation:
+      vi: 預ける → 預けて + から - gửi xong rồi mới đi ăn.
+    display_answer: 荷物を預けてから、ご飯を食べに行きましょう。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-bfa-fill-shuppatsu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shuppatsu
+    prompt:
+      template: "Trước khi khởi hành, hãy kiểm tra hành lý. - {{b1}}前に、荷物を確認してください。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [出発する, しゅっぱつする]
+    known_wrong:
+      - answer: 出発した
+        feedback_vi: Trước 前に là thể từ điển - 出発する.
+        error_tag: mae_ni_form
+      - answer: 出発
+        feedback_vi: Danh từ cần の - 出発の前に; hoặc dùng động từ 出発する前に.
+        error_tag: mae_ni_form
+    explanation:
+      vi: 出発する + 前に. Cũng có thể nói 出発の前に.
+    display_answer: 出発する前に、荷物を確認してください。
+
+  - key: ja:exercise:n4-bfa-translate-arrive
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tsuku
+    prompt:
+      source_text: Mấy giờ thì đến Kyoto?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 京都に何時に着きますか。
+        - きょうとになんじにつきますか。
+        - 何時に京都に着きますか。
+        - 京都には何時に着きますか。
+        - 京都に何時ごろ着きますか。
+        - 何時ごろ京都に着きますか。
+        - 京都へ何時に着きますか。
+    known_wrong:
+      - answer: 京都を何時に着きますか。
+        feedback_vi: Nơi đến đi với に - 京都に着く.
+        error_tag: particle_ni_de
+      - answer: 京都に何時を着きますか。
+        feedback_vi: Mốc giờ đi với に - 何時に.
+        error_tag: particle_ni_de
+    explanation:
+      vi: 着く - đến nơi, nơi đến đi với に; 何時に - lúc mấy giờ.
+    display_answer: 京都に何時に着きますか。
+
+  - key: ja:exercise:n4-bfa-fill-after-meal
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ato-de
+    prompt:
+      template: "Sau bữa ăn mình đi dạo nhé. - 食事{{b1}}後で、散歩しましょう。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [の]
+    known_wrong:
+      - answer: た
+        feedback_vi: 食事 là danh từ - nối bằng の (食事の後で).
+        error_tag: ato_de_form
+      - answer: に
+        feedback_vi: Danh từ + の + 後で.
+        error_tag: ato_de_form
+    explanation:
+      vi: Danh từ + の + 後で - sau N.
+    display_answer: 食事の後で、散歩しましょう。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-bfa-translate-since
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-kara
+    prompt:
+      source_text: 日本に来てから、料理を始めました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ khi đến Nhật, tôi mới bắt đầu nấu ăn.
+        - Từ khi đến Nhật tôi mới bắt đầu nấu ăn.
+        - Từ khi đến Nhật, tôi bắt đầu nấu ăn.
+        - Từ khi đến Nhật tôi bắt đầu nấu ăn.
+        - Sau khi đến Nhật, tôi bắt đầu nấu ăn.
+        - Sau khi đến Nhật tôi bắt đầu nấu ăn.
+        - Sau khi đến Nhật, tôi mới bắt đầu nấu ăn.
+        - Từ khi sang Nhật, tôi mới bắt đầu nấu ăn.
+        - Từ khi sang Nhật, tôi bắt đầu nấu ăn.
+        - Sau khi sang Nhật, tôi bắt đầu nấu ăn.
+        - Đến Nhật rồi tôi mới bắt đầu nấu ăn.
+        - Sang Nhật rồi tôi mới bắt đầu nấu ăn.
+        - Từ khi đến Nhật Bản, tôi bắt đầu nấu ăn.
+        - Từ khi đến Nhật Bản, tôi mới bắt đầu nấu ăn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trước khi đến Nhật, tôi đã bắt đầu nấu ăn.
+        feedback_vi: 来てから là "từ khi / sau khi đến", không phải "trước khi".
+        error_tag: te_kara
+      - answer: Vì đến Nhật nên tôi bắt đầu nấu ăn.
+        feedback_vi: てから chỉ thứ tự thời gian, không phải lý do (lý do là 来たから).
+        error_tag: te_kara
+    explanation:
+      vi: 来てから - từ khi đến; 始めました - đã bắt đầu.
+    display_answer: Từ khi đến Nhật, tôi mới bắt đầu nấu ăn.
+
+  - key: ja:exercise:n4-bfa-order-checkin
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-kara
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Nhận phòng xong rồi mình đi tham quan thành phố nhé."'
+      tokens:
+        - { id: t-kankou, text: 観光しましょう }
+        - { id: t-machi, text: 町を }
+        - { id: t-checkin, text: チェックインして }
+        - { id: t-kara, text: から、 }
+        - { id: t-checkin-suru, text: チェックインする }
+    answer:
+      orders:
+        - [t-checkin, t-kara, t-machi, t-kankou]
+    explanation:
+      vi: V-て + から - xong việc trước rồi mới làm việc sau. チェックインするから sẽ thành "vì nhận phòng".
+    display_answer: チェックインしてから、町を観光しましょう。
+
+  - key: ja:exercise:n4-bfa-mcq-order
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-mae-ni
+    prompt:
+      stem: 'Trong câu 旅館に泊まる前に、浴衣の着方を調べました。, việc nào xảy ra trước?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: Tìm hiểu cách mặc yukata, lang: vi }
+        - { id: j7r, text: Trọ ở lữ quán, lang: vi }
+        - { id: c1o, text: Hai việc cùng lúc, lang: vi }
+        - { id: n5g, text: Mua yukata, lang: vi }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: 泊まる前に - trước khi trọ, nên việc 調べました (tìm hiểu) xảy ra trước. 着方 là cách mặc.
+    display_answer: Tìm hiểu cách mặc yukata
+
+  - key: ja:exercise:n4-bfa-translate-reserve
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-mae-ni
+    prompt:
+      source_text: Trước chuyến đi, tôi đã đặt lữ quán.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 旅行の前に、旅館を予約しました。
+        - 旅行の前に旅館を予約しました。
+        - りょこうのまえに、りょかんをよやくしました。
+        - 旅行する前に、旅館を予約しました。
+        - 旅行する前に旅館を予約しました。
+        - 旅行の前に、旅館を予約しておきました。
+        - 旅行する前に、旅館を予約しておきました。
+        - 旅行に行く前に、旅館を予約しました。
+        - 旅行に行く前に、旅館を予約しておきました。
+    known_wrong:
+      - answer: 旅行した前に、旅館を予約しました。
+        feedback_vi: Trước 前に là thể từ điển - 旅行する前に.
+        error_tag: mae_ni_form
+      - answer: 旅行の後で、旅館を予約しました。
+        feedback_vi: 後で là "sau". "Trước" là 前に.
+        error_tag: vocab_time_word
+    explanation:
+      vi: 旅行の前に / 旅行する前に + 予約しました.
+    display_answer: 旅行の前に、旅館を予約しました。

@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-comparing
+order_index: 3
+level: n4
+title:
+  vi: So sánh - より, のほうが, 一番
+objectives:
+  - vi: So sánh hai thứ bằng より và のほうが.
+  - vi: Hỏi "cái nào hơn" bằng AとBとどちらが.
+  - vi: Nói "nhất" trong một nhóm bằng Nの中で～が一番.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, reading]
+prerequisites: [ja:lesson:n4-toki-nagara]
+items:
+  - item: ja:item:n4-gram-yori-hou-ga
+  - item: ja:item:n4-gram-dochira
+  - item: ja:item:n4-gram-ichiban
+  - item: ja:item:n4-shinkansen
+  - item: ja:item:n4-hikouki
+  - item: ja:item:n4-benri
+  - item: ja:item:n4-nedan
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn so sánh phương tiện, khách sạn khi lên kế hoạch du lịch - "Shinkansen nhanh hơn xe buýt", "Máy bay và Shinkansen, cái nào rẻ hơn?", "Bạn thích thành phố nào nhất?".
+  - type: explain
+    text:
+      vi: "Tiếng Nhật không đổi tính từ khi so sánh. Thêm より sau cái đem ra so: 新幹線はバスより速いです (Shinkansen nhanh hơn xe buýt). Hoặc nhấn cái hơn bằng のほうが: バスより新幹線のほうが速いです."
+  - type: explain
+    text:
+      vi: Hỏi giữa hai thứ - AとBとどちらが～ですか; trả lời - Aのほうが～です, hoặc どちらも～です khi như nhau.
+  - type: explain
+    text:
+      vi: Ba thứ trở lên - Nの中で + 何 / どこ / だれ / いつ + が一番～ですか. Trả lời - Xが一番～です.
+  - type: deep_explain
+    text:
+      vi: Khi so sánh phủ định "A không … bằng B" dùng ほど - バスは新幹線ほど速くないです. ほど luôn đi với phủ định; nói khẳng định thì quay về より.
+  - type: example
+    target: 新幹線はバスより速いです。
+    target_lang: ja
+    translation:
+      vi: Tàu Shinkansen nhanh hơn xe buýt.
+    note:
+      vi: より đứng sau cái kém hơn (バス).
+  - type: example
+    target: 飛行機と新幹線とどちらが安いですか。 - 新幹線のほうが安いです。
+    target_lang: ja
+    translation:
+      vi: Máy bay và Shinkansen, cái nào rẻ hơn? - Shinkansen rẻ hơn.
+    note:
+      vi: Hỏi どちらが, trả lời のほうが.
+  - type: example
+    target: 日本の町の中で、どこが一番好きですか。 - 京都が一番好きです。
+    target_lang: ja
+    translation:
+      vi: Trong các thành phố Nhật, bạn thích nơi nào nhất? - Tôi thích Kyoto nhất.
+    note:
+      vi: Nơi chốn hỏi bằng どこ.
+  - type: example
+    target: 駅に近いホテルのほうが便利ですが、値段が高いです。
+    target_lang: ja
+    translation:
+      vi: Khách sạn gần ga thì tiện hơn nhưng giá đắt.
+    note:
+      vi: のほうが có thể dùng khi cái kia đã rõ từ ngữ cảnh.
+  - type: common_mistake
+    wrong: 新幹線はバスよりもっと速いです。
+    right: 新幹線はバスより速いです。
+    target_lang: ja
+    note:
+      vi: Câu so sánh cơ bản không cần もっと. Dùng もっと khi không có より (もっと速い電車).
+  - type: common_mistake
+    wrong: 飛行機と新幹線と何が安いですか。
+    right: 飛行機と新幹線とどちらが安いですか。
+    target_lang: ja
+    note:
+      vi: Hỏi giữa hai thứ dùng どちら.
+  - type: common_mistake
+    wrong: 果物の中で、何が一番好きですか。 - りんごは一番好きです。
+    right: 果物の中で、何が一番好きですか。 - りんごが一番好きです。
+    target_lang: ja
+    note:
+      vi: Câu hỏi dùng 何が thì câu trả lời giữ が.
+  - type: summary
+    points:
+      - vi: AはBより～ / BよりAのほうが～ - A hơn B.
+      - vi: AとBとどちらが～ですか - cái nào hơn? → Aのほうが～です.
+      - vi: Nの中で 何・どこ・だれ・いつ が一番～ - nhất.
+      - vi: 新幹線 Shinkansen · 飛行機 máy bay · 便利 tiện lợi · 値段 giá cả.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-cmp-mcq-yori
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-yori-hou-ga
+    prompt:
+      stem: 'Câu バスは新幹線より安いです。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: Xe buýt rẻ hơn Shinkansen., lang: vi }
+        - { id: p8d, text: Shinkansen rẻ hơn xe buýt., lang: vi }
+        - { id: w2s, text: Xe buýt đắt hơn Shinkansen., lang: vi }
+        - { id: m6q, text: Xe buýt rẻ như Shinkansen., lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: より đứng sau cái đem ra so (新幹線). Chủ ngữ バス là cái "hơn" - rẻ hơn.
+    display_answer: Xe buýt rẻ hơn Shinkansen.
+
+  - key: ja:exercise:n4-cmp-mcq-dochira
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-dochira
+    prompt:
+      stem: 'Hỏi "Đi máy bay và đi Shinkansen, cách nào tiện hơn?" 飛行機と新幹線と ___ が便利ですか。'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: どちら, lang: ja }
+        - { id: y1n, text: 何, lang: ja }
+        - { id: e7c, text: どこ, lang: ja }
+        - { id: h4b, text: だれ, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: So sánh hai thứ dùng どちら.
+    display_answer: どちら
+
+  - key: ja:exercise:n4-cmp-listen-cheaper
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-hikouki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 飛行機は新幹線より速いですが、値段が高いです。
+      options:
+        - { id: a8u, text: "Máy bay nhanh hơn Shinkansen nhưng giá đắt.", lang: vi }
+        - { id: q2z, text: "Shinkansen nhanh hơn máy bay nhưng giá đắt.", lang: vi }
+        - { id: d6l, text: "Máy bay nhanh hơn Shinkansen và giá rẻ.", lang: vi }
+        - { id: s9f, text: "Máy bay chậm hơn Shinkansen nhưng giá rẻ.", lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 飛行機は新幹線より速い - máy bay nhanh hơn; が - nhưng; 値段が高い - giá đắt.
+    display_answer: Máy bay nhanh hơn Shinkansen nhưng giá đắt.
+
+  - key: ja:exercise:n4-cmp-fill-ichiban
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ichiban
+    prompt:
+      template: "Trong các thành phố Nhật, bạn thích nơi nào nhất? - 日本の町の中で、{{b1}}が一番好きですか。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Hỏi về nơi chốn.
+        - Từ để hỏi "ở đâu".
+    answer:
+      blanks:
+        b1: [どこ]
+    known_wrong:
+      - answer: どちら
+        feedback_vi: どちら dùng khi so hai thứ. Nhiều nơi dùng どこ.
+        error_tag: question_word
+      - answer: 何
+        feedback_vi: Hỏi nơi chốn dùng どこ.
+        error_tag: question_word
+    explanation:
+      vi: Nの中で + どこ (nơi chốn) + が一番～ですか.
+    display_answer: 日本の町の中で、どこが一番好きですか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-cmp-fill-hou-ga
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-yori-hou-ga
+    prompt:
+      template: "Shinkansen nhanh hơn xe buýt. - バス{{b1}}新幹線{{b2}}速いです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [より]
+        b2: [のほうが, の方が]
+    known_wrong:
+      - answer: のほうは
+        feedback_vi: Mẫu cố định là のほうが.
+        error_tag: comparison
+      - answer: から
+        feedback_vi: So sánh dùng より, không dùng から.
+        error_tag: comparison
+    explanation:
+      vi: B より A のほうが～ - A hơn B. Ở đây A là 新幹線.
+    display_answer: バスより新幹線のほうが速いです。
+
+  - key: ja:exercise:n4-cmp-translate-benri
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-benri
+    prompt:
+      source_text: Khách sạn gần ga thì tiện hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 駅に近いホテルのほうが便利です。
+        - えきにちかいホテルのほうがべんりです。
+        - 駅に近いホテルの方が便利です。
+        - 駅から近いホテルのほうが便利です。
+        - 駅から近いホテルの方が便利です。
+        - 駅の近くのホテルのほうが便利です。
+        - 駅の近くのホテルの方が便利です。
+        - 駅に近いホテルのほうが便利だ。
+    known_wrong:
+      - answer: 駅に近いホテルのほうが便利なです。
+        feedback_vi: Tính từ đuôi な đứng cuối câu bỏ な - 便利です.
+        error_tag: na_adjective
+      - answer: 駅に近いホテルのほうが不便です。
+        feedback_vi: 不便 là bất tiện - ngược nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: のほうが nhấn cái hơn khi cái kia đã rõ từ ngữ cảnh; 便利です - tiện lợi.
+    display_answer: 駅に近いホテルのほうが便利です。
+
+  - key: ja:exercise:n4-cmp-fill-answer
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-dochira
+    prompt:
+      template: "Máy bay và Shinkansen, cái nào rẻ hơn? - Shinkansen rẻ hơn. - 飛行機と新幹線とどちらが安いですか。 - 新幹線{{b1}}安いです。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [のほうが, の方が]
+    known_wrong:
+      - answer: より
+        feedback_vi: 新幹線より安い là "rẻ hơn Shinkansen" - ngược nghĩa.
+        error_tag: comparison
+      - answer: は
+        feedback_vi: Trả lời câu hỏi どちらが dùng のほうが.
+        error_tag: comparison
+    explanation:
+      vi: Hỏi どちらが → trả lời Aのほうが～です.
+    display_answer: 新幹線のほうが安いです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-cmp-translate-nedan
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-nedan
+    prompt:
+      source_text: この旅館はあのホテルより値段が安くて、サービスもいいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lữ quán này giá rẻ hơn khách sạn kia mà phục vụ cũng tốt.
+        - Lữ quán này giá rẻ hơn khách sạn kia, phục vụ cũng tốt.
+        - Lữ quán này giá rẻ hơn khách sạn kia và phục vụ cũng tốt.
+        - Lữ quán này rẻ hơn khách sạn kia, phục vụ cũng tốt.
+        - Lữ quán này rẻ hơn khách sạn kia mà phục vụ cũng tốt.
+        - Lữ quán này rẻ hơn khách sạn kia và dịch vụ cũng tốt.
+        - Lữ quán này giá rẻ hơn khách sạn kia, dịch vụ cũng tốt.
+        - Lữ quán này giá rẻ hơn khách sạn kia mà dịch vụ cũng tốt.
+        - Nhà trọ này giá rẻ hơn khách sạn kia mà phục vụ cũng tốt.
+        - Nhà trọ này rẻ hơn khách sạn kia, dịch vụ cũng tốt.
+        - Ryokan này giá rẻ hơn khách sạn kia mà phục vụ cũng tốt.
+        - Ryokan này rẻ hơn khách sạn kia, dịch vụ cũng tốt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khách sạn kia giá rẻ hơn lữ quán này mà phục vụ cũng tốt.
+        feedback_vi: より đứng sau cái đem ra so (あのホテル) - lữ quán này mới là cái rẻ hơn.
+        error_tag: comparison
+      - answer: Lữ quán này đắt hơn khách sạn kia mà phục vụ cũng tốt.
+        feedback_vi: 安い là rẻ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: この旅館は あのホテルより 値段が安くて - lữ quán này rẻ hơn khách sạn kia; サービスもいい - phục vụ cũng tốt.
+    display_answer: Lữ quán này giá rẻ hơn khách sạn kia mà phục vụ cũng tốt.
+
+  - key: ja:exercise:n4-cmp-order-season
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ichiban
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Trong một năm, bạn thích khi nào nhất?"'
+      tokens:
+        - { id: t-suki, text: 好きですか }
+        - { id: t-itsu, text: いつが }
+        - { id: t-ichinen, text: 一年の中で、 }
+        - { id: t-ichiban, text: 一番 }
+        - { id: t-dochira, text: どちらが }
+    answer:
+      orders:
+        - [t-ichinen, t-itsu, t-ichiban, t-suki]
+    explanation:
+      vi: Thời gian hỏi bằng いつ; nhóm nhiều thứ (một năm) không dùng どちら.
+    display_answer: 一年の中で、いつが一番好きですか。
+
+  - key: ja:exercise:n4-cmp-mcq-same
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-dochira
+    prompt:
+      stem: 'Bạn được hỏi 東京と大阪とどちらが好きですか。 Bạn thích cả hai như nhau. Trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: どちらも好きです。, lang: ja }
+        - { id: j7r, text: どちらが好きです。, lang: ja }
+        - { id: c1o, text: 何も好きです。, lang: ja }
+        - { id: n5g, text: 東京のほうが大阪です。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Như nhau giữa hai thứ - どちらも～です. 何も đi với phủ định (何も好きじゃない).
+    display_answer: どちらも好きです。
+
+  - key: ja:exercise:n4-cmp-translate-train
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-shinkansen
+    prompt:
+      source_text: Đi Shinkansen nhanh hơn đi xe buýt nhưng đắt hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 新幹線はバスより速いですが、高いです。
+        - 新幹線はバスより速いですが高いです。
+        - しんかんせんはバスよりはやいですが、たかいです。
+        - 新幹線のほうがバスより速いですが、高いです。
+        - バスより新幹線のほうが速いですが、高いです。
+        - 新幹線はバスより速いですが、値段が高いです。
+        - バスより新幹線のほうが速いですが、値段が高いです。
+        - 新幹線で行くほうがバスで行くより速いですが、高いです。
+        - 新幹線はバスより速いけど、高いです。
+    known_wrong:
+      - answer: バスは新幹線より速いですが、高いです。
+        feedback_vi: より đứng sau cái chậm hơn (バス). Câu này nói xe buýt nhanh hơn.
+        error_tag: comparison
+      - answer: 新幹線はバスより速いですが、安いです。
+        feedback_vi: Đắt là 高い.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 新幹線はバスより速い - Shinkansen nhanh hơn xe buýt; ですが - nhưng; 高いです - đắt.
+    display_answer: 新幹線はバスより速いですが、高いです。

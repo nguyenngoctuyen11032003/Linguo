@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-travel-comparing-review
+order_index: 5
+level: n4
+title:
+  vi: Ôn tập - lên kế hoạch và kể lại chuyến đi
+objectives:
+  - vi: Phối hợp so sánh, lời khuyên và chuẩn bị sẵn khi lên kế hoạch du lịch.
+  - vi: Kể lại chuyến đi bằng 前に, 後で, とき, ながら.
+  - vi: Hỏi gợi ý và nói cảm nghĩ về chuyến đi.
+estimated_minutes: 15
+skills: [grammar, reading, speaking, writing]
+prerequisites: [ja:lesson:n4-booking-advice]
+items:
+  - item: ja:item:n4-phrase-osusume
+  - item: ja:item:n4-omoide
+  - item: ja:item:n4-ki-ni-iru
+  - item: ja:item:n4-gram-mae-ni
+    role: reuse
+  - item: ja:item:n4-gram-toki
+    role: reuse
+  - item: ja:item:n4-gram-nagara
+    role: reuse
+  - item: ja:item:n4-gram-yori-hou-ga
+    role: reuse
+  - item: ja:item:n4-gram-ichiban
+    role: reuse
+  - item: ja:item:n4-gram-ta-hou-ga-ii
+    role: reuse
+  - item: ja:item:n4-gram-te-oku
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi quầy du lịch "Có gì nên đi?", so sánh để chọn phương tiện, và viết vài câu kể lại chuyến đi đã trở thành kỷ niệm đẹp.
+  - type: explain
+    text:
+      vi: "Lên kế hoạch: so sánh (より, のほうが, 一番), khuyên (たほうがいい) và chuẩn bị sẵn (ておく). Kể lại: thứ tự (前に, 後で, てから), thời điểm (とき) và hai việc cùng lúc (ながら)."
+  - type: explain
+    text:
+      vi: Hỏi gợi ý - おすすめは何ですか; trả lời - ～がおすすめです. Nói ưng ý - ～が気に入りました.
+  - type: explain
+    text:
+      vi: Khi kể lại, giữ thì quá khứ ở động từ cuối câu; các mẫu 前に, ながら không mang thì.
+  - type: deep_explain
+    text:
+      vi: 'Đoạn kể mẫu: 京都へ行く前に、旅館を予約しておきました。新幹線はバスより高いですが、速いので、新幹線で行きました。着いた後で、地図を見ながらお寺を観光しました。旅館がとても気に入りました。いい思い出になりました。'
+  - type: example
+    target: この町のおすすめは何ですか。 - 夜の川がおすすめです。
+    target_lang: ja
+    translation:
+      vi: Thị trấn này có gì nên đi? - Nên đi xem dòng sông về đêm.
+    note:
+      vi: ～がおすすめです - gợi ý.
+  - type: example
+    target: 新幹線はバスより高いですが、速いので、新幹線で行きました。
+    target_lang: ja
+    translation:
+      vi: Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đã đi Shinkansen.
+    note:
+      vi: So sánh + lý do (ので) + quyết định.
+  - type: example
+    target: 旅館がとても気に入りました。
+    target_lang: ja
+    translation:
+      vi: Tôi rất ưng lữ quán đó.
+    note:
+      vi: Thứ được ưng đi với が.
+  - type: example
+    target: 北海道の旅行はいい思い出になりました。
+    target_lang: ja
+    translation:
+      vi: Chuyến đi Hokkaido đã trở thành một kỷ niệm đẹp.
+    note:
+      vi: N + になりました - đã trở thành.
+  - type: common_mistake
+    wrong: 旅館をとても気に入りました。
+    right: 旅館がとても気に入りました。
+    target_lang: ja
+    note:
+      vi: Mẫu cơ bản là Nが気に入る. (Nを気に入る cũng gặp trong văn nói, nhưng ở N4 hãy dùng が.)
+  - type: common_mistake
+    wrong: 京都へ行った前に、旅館を予約しておきました。
+    right: 京都へ行く前に、旅館を予約しておきました。
+    target_lang: ja
+    note:
+      vi: Trước 前に luôn là thể từ điển.
+  - type: common_mistake
+    wrong: いい思い出がなりました。
+    right: いい思い出になりました。
+    target_lang: ja
+    note:
+      vi: Trở thành N - N + になる.
+  - type: summary
+    points:
+      - vi: Kế hoạch - より / のほうが / 一番; たほうがいい; ておく.
+      - vi: Kể lại - 前に / 後で / てから; とき; ながら.
+      - vi: おすすめは何ですか - có gì nên thử; ～が気に入りました - ưng ý.
+      - vi: 思い出 kỷ niệm - いい思い出になりました.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-tcr-mcq-osusume
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-phrase-osusume
+    prompt:
+      stem: Ở nhà hàng, bạn muốn hỏi "Món nào ngon, nên gọi?". Chọn câu tự nhiên nhất.
+      stem_lang: vi
+      options:
+        - { id: k3v, text: おすすめは何ですか。, lang: ja }
+        - { id: p8d, text: 何が食べたほうがいいでした。, lang: ja }
+        - { id: w2s, text: 一番何ですか。, lang: ja }
+        - { id: m6q, text: 何を予約しておきますか。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: おすすめは何ですか là câu hỏi gợi ý tự nhiên ở nhà hàng, cửa hàng. Các câu khác sai ngữ pháp hoặc lạc nghĩa.
+    display_answer: おすすめは何ですか。
+
+  - key: ja:exercise:n4-tcr-listen-memory
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-omoide
+    prompt:
+      audio_asset_id: null
+      fallback_text: 北海道の旅行はいい思い出になりました。
+      options:
+        - { id: a8u, text: Chuyến đi Hokkaido đã trở thành một kỷ niệm đẹp., lang: vi }
+        - { id: q2z, text: Tôi muốn đi Hokkaido để có kỷ niệm đẹp., lang: vi }
+        - { id: d6l, text: Tôi đã quên chuyến đi Hokkaido., lang: vi }
+        - { id: s9f, text: Chuyến đi Hokkaido không vui lắm., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: いい思い出 - kỷ niệm đẹp; になりました - đã trở thành.
+    display_answer: Chuyến đi Hokkaido đã trở thành một kỷ niệm đẹp.
+
+  - key: ja:exercise:n4-tcr-mcq-ki-ni-iru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-ki-ni-iru
+    prompt:
+      stem: '"Tôi rất ưng lữ quán đó." Chọn câu đúng.'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: その旅館がとても気に入りました。, lang: ja }
+        - { id: y1n, text: その旅館がとても気に入れました。, lang: ja }
+        - { id: e7c, text: その旅館がとても気に入ていました。, lang: ja }
+        - { id: h4b, text: その旅館がとても気が入りました。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 気に入る - 入る chia nhóm 1 → 気に入りました. Trợ từ trong cụm cố định là 気に.
+    display_answer: その旅館がとても気に入りました。
+
+  - key: ja:exercise:n4-tcr-fill-before
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-oku
+    prompt:
+      template: "Trước khi đi Kyoto, tôi đã đặt sẵn lữ quán. - 京都へ行く前に、旅館を予約して{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - Làm sẵn để chuẩn bị - mẫu ておく.
+        - Quá khứ lịch sự của おく.
+    answer:
+      blanks:
+        b1: [おきました]
+    known_wrong:
+      - answer: 置きました
+        feedback_vi: ておく viết bằng hiragana - おきました.
+        error_tag: te_oku
+      - answer: おきます
+        feedback_vi: Việc đã làm xong trước chuyến đi - dùng quá khứ おきました.
+        error_tag: tense_past
+    explanation:
+      vi: 予約しておきました - đã đặt sẵn. 前に đi với 行く (thể từ điển).
+    display_answer: 京都へ行く前に、旅館を予約しておきました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-tcr-fill-temple
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nagara
+    prompt:
+      template: "Sau khi đến nơi, tôi vừa xem bản đồ vừa tham quan chùa. - 着いた後で、地図を{{b1}}お寺を観光しました。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [見ながら, みながら]
+    known_wrong:
+      - answer: 見るながら
+        feedback_vi: ながら gắn vào gốc ます - 見ながら.
+        error_tag: nagara_form
+      - answer: 見たながら
+        feedback_vi: ながら không mang thì - 見ながら.
+        error_tag: nagara_form
+    explanation:
+      vi: 見ます → 見ながら; thì quá khứ nằm ở 観光しました.
+    display_answer: 着いた後で、地図を見ながらお寺を観光しました。
+
+  - key: ja:exercise:n4-tcr-translate-best
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ichiban
+    prompt:
+      source_text: Trong chuyến đi, bạn thích nơi nào nhất?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 旅行の中で、どこが一番好きでしたか。
+        - 旅行の中でどこが一番好きでしたか。
+        - りょこうのなかで、どこがいちばんすきでしたか。
+        - 旅行の中で、どこが一番好きですか。
+        - 旅行の中で、どこが一番よかったですか。
+        - 旅行の中で、どこが一番気に入りましたか。
+        - 旅行で、どこが一番好きでしたか。
+        - 旅行で、どこが一番よかったですか。
+        - 旅行で行った所の中で、どこが一番好きでしたか。
+        - 旅行で行ったところの中で、どこが一番好きでしたか。
+    known_wrong:
+      - answer: 旅行の中で、どちらが一番好きでしたか。
+        feedback_vi: どちら chỉ dùng cho hai thứ. Nhiều nơi dùng どこ.
+        error_tag: question_word
+      - answer: 旅行の中で、どこを一番好きでしたか。
+        feedback_vi: 好き đi với が - どこが.
+        error_tag: particle_ga_suki
+    explanation:
+      vi: Nの中で + どこが一番～ - nơi nào nhất. Hỏi về chuyến đi đã qua có thể dùng 好きでしたか / よかったですか.
+    display_answer: 旅行の中で、どこが一番好きでしたか。
+
+  - key: ja:exercise:n4-tcr-fill-advice
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ta-hou-ga-ii
+    prompt:
+      template: "Lữ quán đó rất được ưa chuộng nên bạn nên đặt sớm. - あの旅館は人気があるから、早く{{b1}}ほうがいいです。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [予約した, よやくした]
+    known_wrong:
+      - answer: 予約して
+        feedback_vi: Trước ほうがいい dùng thể た - 予約した.
+        error_tag: hou_ga_ii_form
+      - answer: 予約しない
+        feedback_vi: しないほうがいい là "không nên đặt" - ngược nghĩa.
+        error_tag: negation
+    explanation:
+      vi: 予約する → 予約した + ほうがいいです - nên đặt.
+    display_answer: あの旅館は人気があるから、早く予約したほうがいいです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-tcr-translate-story
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-gram-yori-hou-ga
+    prompt:
+      source_text: 新幹線はバスより高いですが、速いので、新幹線で行きました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đã đi Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đi Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng nhanh, nên tôi đã đi Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng nhanh, nên tôi đi Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng nhanh hơn nên tôi đã đi Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng nhanh hơn nên tôi đi Shinkansen.
+        - Tàu Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đã đi tàu Shinkansen.
+        - Tàu Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đi tàu Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng vì nhanh nên tôi đã đi Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng vì nhanh nên tôi đi bằng Shinkansen.
+        - Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đã đi bằng Shinkansen.
+        - Tàu cao tốc đắt hơn xe buýt nhưng nhanh nên tôi đã đi tàu cao tốc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xe buýt đắt hơn Shinkansen nhưng nhanh nên tôi đã đi xe buýt.
+        feedback_vi: より đứng sau cái đem ra so - Shinkansen mới là cái đắt hơn.
+        error_tag: comparison
+      - answer: Shinkansen rẻ hơn xe buýt và nhanh nên tôi đã đi Shinkansen.
+        feedback_vi: 高い là đắt.
+        error_tag: vocab_meaning
+    explanation:
+      vi: バスより高い - đắt hơn xe buýt; 速いので - vì nhanh; 新幹線で行きました - đã đi bằng Shinkansen.
+    display_answer: Shinkansen đắt hơn xe buýt nhưng nhanh nên tôi đã đi Shinkansen.
+
+  - key: ja:exercise:n4-tcr-order-when
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-toki
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Khi đi Kyoto, tôi đã mặc kimono."'
+      tokens:
+        - { id: t-kimashita, text: 着ました }
+        - { id: t-kimono, text: 着物を }
+        - { id: t-itta, text: 京都へ行ったとき、 }
+        - { id: t-iku, text: 京都へ行くとき、 }
+    answer:
+      orders:
+        - [t-itta, t-kimono, t-kimashita]
+    explanation:
+      vi: Mặc kimono khi đã ở Kyoto nên dùng 行ったとき. 行くとき là lúc đang trên đường, chưa tới.
+    display_answer: 京都へ行ったとき、着物を着ました。
+
+  - key: ja:exercise:n4-tcr-mcq-recommend
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-phrase-osusume
+    prompt:
+      stem: 'Khách hỏi bạn: この町のおすすめは何ですか。 Bạn muốn giới thiệu chợ buổi sáng. Trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 朝市がおすすめです。, lang: ja }
+        - { id: j7r, text: 朝市をおすすめは何ですか。, lang: ja }
+        - { id: c1o, text: 朝市に行かないほうがいいです。, lang: ja }
+        - { id: n5g, text: 朝市が気に入りました。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Trả lời gợi ý - ～がおすすめです. 気に入りました là kể mình đã ưng, không phải gợi ý cho khách.
+    display_answer: 朝市がおすすめです。
+
+  - key: ja:exercise:n4-tcr-translate-diary
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-mae-ni
+    prompt:
+      source_text: Trước khi ngủ, tôi đã vừa nghe nhạc vừa viết nhật ký.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 寝る前に、音楽を聞きながら日記を書きました。
+        - 寝る前に音楽を聞きながら日記を書きました。
+        - ねるまえに、おんがくをききながらにっきをかきました。
+        - 寝る前に、音楽を聞きながら、日記を書きました。
+        - 寝る前に、音楽を聴きながら日記を書きました。
+        - 寝る前に、音楽を聴きながら、日記を書きました。
+        - 寝る前に、音楽を聞きながら日記を書いた。
+    known_wrong:
+      - answer: 寝た前に、音楽を聞きながら日記を書きました。
+        feedback_vi: Trước 前に luôn là thể từ điển - 寝る前に.
+        error_tag: mae_ni_form
+      - answer: 寝る前に、音楽を聞くながら日記を書きました。
+        feedback_vi: ながら gắn vào gốc ます - 聞きながら.
+        error_tag: nagara_form
+    explanation:
+      vi: 寝る前に - trước khi ngủ; 聞きながら - vừa nghe; 日記を書きました - (việc chính) đã viết nhật ký.
+    display_answer: 寝る前に、音楽を聞きながら日記を書きました。

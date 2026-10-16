@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-ta-form-experience
+order_index: 4
+level: n4
+title:
+  vi: Thể た, たことがあります và たり～たりします
+objectives:
+  - vi: Chia quá khứ thể thường (書いた, 読んだ, 食べなかった).
+  - vi: Kể kinh nghiệm "đã từng" bằng V-たことがあります.
+  - vi: Liệt kê vài việc tiêu biểu bằng V-たり、V-たりします.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:n4-plain-nai]
+items:
+  - item: ja:item:n4-gram-ta-form
+  - item: ja:item:n4-gram-ta-koto-ga-aru
+  - item: ja:item:n4-gram-tari-tari
+  - item: ja:item:n4-noboru
+  - item: ja:item:n4-souji
+  - item: ja:item:n4-sentaku
+  - item: ja:item:n4-kimono
+  - item: ja:item:n4-gram-te-form
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "Tớ đã xem phim, hay lắm", nói "Tôi đã từng leo núi Phú Sĩ" và "Cuối tuần tôi dọn dẹp, giặt giũ các thứ".
+  - type: explain
+    text:
+      vi: Biết thể て là có ngay thể た - chỉ đổi て → た, で → だ. 書いて → 書いた, 読んで → 読んだ, 行って → 行った, して → した.
+  - type: explain
+    text:
+      vi: Phủ định quá khứ - đổi ない → なかった (行かない → 行かなかった). Tính từ い - 高い → 高かった; danh từ - 学生だ → 学生だった.
+  - type: explain
+    text:
+      vi: V-たことがあります là "đã từng" - kể kinh nghiệm trong đời, giống "tôi từng…" của tiếng Việt. "Chưa từng" là V-たことがありません.
+  - type: explain
+    text:
+      vi: V1-たり、V2-たりします là "làm những việc như V1, V2…" - chỉ nêu ví dụ, không theo thứ tự. Cuối mẫu luôn có します và thì đặt ở đó.
+  - type: deep_explain
+    text:
+      vi: たことがあります không dùng cho việc vừa làm hôm qua - kinh nghiệm phải mang tính "trong đời". Khác với て (kể theo thứ tự), たり chỉ chọn vài ví dụ và ngầm hiểu còn việc khác. Với bạn bè, たことがある, たりする là dạng thân mật.
+  - type: example
+    target: 昨日、映画を見た。おもしろかった。
+    target_lang: ja
+    translation:
+      vi: Hôm qua tớ xem phim. Hay lắm.
+    note:
+      vi: 見て → 見た. Tính từ おもしろい → おもしろかった.
+  - type: example
+    target: 富士山に登ったことがあります。
+    target_lang: ja
+    translation:
+      vi: Tôi đã từng leo núi Phú Sĩ.
+    note:
+      vi: 登る (nhóm 1, đuôi る) → 登って → 登った.
+  - type: example
+    target: 着物を着たことがありません。
+    target_lang: ja
+    translation:
+      vi: Tôi chưa từng mặc kimono.
+    note:
+      vi: Phủ định nằm ở ありません, phần 着た giữ nguyên.
+  - type: example
+    target: 週末は掃除をしたり、洗濯をしたりします。
+    target_lang: ja
+    translation:
+      vi: Cuối tuần tôi dọn dẹp, giặt giũ các thứ.
+    note:
+      vi: Hai たり, cuối cùng là します.
+  - type: common_mistake
+    wrong: 日本に行くことがあります。
+    right: 日本に行ったことがあります。
+    target_lang: ja
+    note:
+      vi: '"Đã từng" bắt buộc dùng thể た. 行くことがあります nghĩa là "thỉnh thoảng có đi".'
+  - type: common_mistake
+    wrong: 昨日の映画はおもしろいだった。
+    right: 昨日の映画はおもしろかった。
+    target_lang: ja
+    note:
+      vi: Tính từ đuôi い tự chia quá khứ - い → かった, không thêm だった.
+  - type: common_mistake
+    wrong: 週末は掃除をしたり、洗濯をします。
+    right: 週末は掃除をしたり、洗濯をしたりします。
+    target_lang: ja
+    note:
+      vi: Mẫu cần đủ hai たり rồi mới đến します.
+  - type: common_mistake
+    wrong: 本を読みだ。
+    right: 本を読んだ。
+    target_lang: ja
+    note:
+      vi: Lấy thể て (読んで) đổi で → だ, không lấy thể ます.
+  - type: summary
+    points:
+      - vi: て → た, で → だ (書いた, 読んだ, 行った, した, 来た). ない → なかった.
+      - vi: Tính từ い → かった; danh từ, tính từ な → だった.
+      - vi: Đã từng - V-たことがあります; chưa từng - V-たことがありません.
+      - vi: Liệt kê - V1-たり、V2-たりします (đủ hai たり + します).
+      - vi: 登る leo · 掃除 dọn dẹp · 洗濯 giặt giũ · 着物 kimono.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-ta-mcq-yomu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-ta-form
+    prompt:
+      stem: Thể た của 読む (đọc) là gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 読んだ, lang: ja }
+        - { id: p8d, text: 読みた, lang: ja }
+        - { id: w2s, text: 読った, lang: ja }
+        - { id: m6q, text: 読いた, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 読む → 読んで (đuôi む → んで), đổi で → だ thành 読んだ.
+    display_answer: 読んだ
+
+  - key: ja:exercise:n4-ta-mcq-experience
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-ta-koto-ga-aru
+    prompt:
+      stem: '"Tôi đã từng leo núi Phú Sĩ." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 富士山に登ったことがあります。, lang: ja }
+        - { id: y1n, text: 富士山に登ることがあります。, lang: ja }
+        - { id: e7c, text: 富士山に登りたことがあります。, lang: ja }
+        - { id: h4b, text: 富士山に登ってことがあります。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Kinh nghiệm dùng thể た + ことがあります. 登る là nhóm 1 → 登った. 登ることがあります là "thỉnh thoảng có leo".
+    display_answer: 富士山に登ったことがあります。
+
+  - key: ja:exercise:n4-ta-listen-weekend
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-tari-tari
+    prompt:
+      audio_asset_id: null
+      fallback_text: 週末は掃除をしたり、洗濯をしたりします。
+      options:
+        - { id: a8u, text: "Cuối tuần tôi dọn dẹp, giặt giũ các thứ.", lang: vi }
+        - { id: q2z, text: Cuối tuần tôi đã dọn dẹp xong rồi đi giặt đồ., lang: vi }
+        - { id: d6l, text: Cuối tuần tôi không dọn dẹp và không giặt đồ., lang: vi }
+        - { id: s9f, text: Cuối tuần tôi đi mua sắm và nấu ăn., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 掃除 là dọn dẹp, 洗濯 là giặt giũ; たり～たりします liệt kê vài việc thường làm. Câu ở hiện tại (します) nên không phải "đã … xong".
+    display_answer: Cuối tuần tôi dọn dẹp, giặt giũ các thứ.
+
+  - key: ja:exercise:n4-ta-fill-nakatta
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ta-form
+    prompt:
+      template: "(Nói với bạn) Sáng nay tớ không ăn sáng. - 今朝、朝ご飯を{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - Bắt đầu từ thể ない của 食べる.
+        - ない → なかった.
+    answer:
+      blanks:
+        b1: [食べなかった, たべなかった]
+    known_wrong:
+      - answer: 食べないだった
+        feedback_vi: ない chia như tính từ い - ない → なかった, không thêm だった.
+        error_tag: ta_form
+      - answer: 食べませんでした
+        feedback_vi: Đó là dạng lịch sự. Nói với bạn dùng 食べなかった.
+        error_tag: plain_form
+      - answer: 食べない
+        feedback_vi: 食べない là hiện tại. Sáng nay đã qua nên dùng 食べなかった.
+        error_tag: tense_past
+    explanation:
+      vi: 食べる → 食べない → 食べなかった. ない đổi như tính từ い.
+    display_answer: 今朝、朝ご飯を食べなかった。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-ta-fill-kimono
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kimono
+    prompt:
+      template: "Tôi chưa từng mặc kimono. - 着物を{{b1}}ことがありません。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [着た, きた]
+    known_wrong:
+      - answer: 着る
+        feedback_vi: Mẫu kinh nghiệm cần thể た - 着たことがありません.
+        error_tag: ta_form
+      - answer: 着なかった
+        feedback_vi: Phủ định đặt ở ありません, phần trước giữ khẳng định 着た.
+        error_tag: ta_form
+      - answer: 着て
+        feedback_vi: ことがあります đi sau thể た, không phải thể て.
+        error_tag: ta_form
+    explanation:
+      vi: 着る (mặc) thuộc nhóm 2 → 着た. "Chưa từng" chỉ cần đổi あります → ありません.
+    display_answer: 着物を着たことがありません。
+
+  - key: ja:exercise:n4-ta-fill-tari
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-tari-tari
+    prompt:
+      template: "Hôm qua tôi đọc sách, nghe nhạc các thứ. - 昨日は本を{{b1}}、音楽を{{b2}}しました。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [読んだり, よんだり]
+        b2: [聞いたり, きいたり]
+    known_wrong:
+      - answer: 読みたり
+        feedback_vi: たり lấy từ thể た - 読んだ → 読んだり.
+        error_tag: tari_form
+      - answer: 聞きたり
+        feedback_vi: 聞く → 聞いた → 聞いたり.
+        error_tag: tari_form
+      - answer: 読んで
+        feedback_vi: Mẫu liệt kê cần たり ở cả hai động từ.
+        error_tag: tari_form
+    explanation:
+      vi: Lấy thể た rồi thêm り - 読んだり, 聞いたり. Thì quá khứ đặt ở しました cuối câu.
+    display_answer: 昨日は本を読んだり、音楽を聞いたりしました。
+
+  - key: ja:exercise:n4-ta-translate-been-japan
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-ta-koto-ga-aru
+    prompt:
+      source_text: Tôi đã từng đi Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本に行ったことがあります。
+        - にほんにいったことがあります。
+        - 日本へ行ったことがあります。
+        - にほんへいったことがあります。
+        - 私は日本に行ったことがあります。
+        - 私は日本へ行ったことがあります。
+        - わたしはにほんにいったことがあります。
+        - 日本に行ったことがある。
+    known_wrong:
+      - answer: 日本に行くことがあります。
+        feedback_vi: '"Đã từng" cần thể た - 行った. 行くことがあります là "thỉnh thoảng có đi".'
+        error_tag: ta_form
+      - answer: 日本に行きたことがあります。
+        feedback_vi: 行く là ngoại lệ - thể た là 行った.
+        error_tag: ta_form
+      - answer: 日本に行ったことがありました。
+        feedback_vi: Kinh nghiệm đến hiện tại dùng あります, không cần ありました.
+        error_tag: tense_past
+    explanation:
+      vi: 行く → 行って → 行った, thêm ことがあります. Đích đến dùng に hoặc へ đều đúng.
+    display_answer: 日本に行ったことがあります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-ta-translate-casual-movie
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-ta-form
+    prompt:
+      source_text: 昨日、映画を見た。でも、あまりおもしろくなかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm qua tớ xem phim. Nhưng không hay lắm.
+        - Hôm qua tôi xem phim. Nhưng không hay lắm.
+        - Hôm qua tớ đã xem phim. Nhưng không hay lắm.
+        - Hôm qua tôi đã xem phim. Nhưng không hay lắm.
+        - Hôm qua tớ xem phim. Nhưng nó không hay lắm.
+        - Hôm qua tôi xem phim. Nhưng nó không hay lắm.
+        - Hôm qua tớ xem phim nhưng không hay lắm.
+        - Hôm qua tôi xem phim nhưng không hay lắm.
+        - Hôm qua tớ xem phim. Nhưng không thú vị lắm.
+        - Hôm qua tôi xem phim. Nhưng không thú vị lắm.
+        - Hôm qua tớ đi xem phim. Nhưng không hay lắm.
+        - Hôm qua mình xem phim. Nhưng không hay lắm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm qua tớ xem phim. Phim rất hay.
+        feedback_vi: あまり + phủ định nghĩa là "không … lắm". おもしろくなかった là "đã không hay".
+        error_tag: negation
+      - answer: Ngày mai tớ xem phim. Nhưng không hay lắm.
+        feedback_vi: 昨日 là "hôm qua" và 見た là quá khứ.
+        error_tag: tense_past
+    explanation:
+      vi: 見た là quá khứ thường của 見る. おもしろい → おもしろくない → おもしろくなかった; đi với あまり nghĩa là "không … lắm".
+    display_answer: Hôm qua tớ xem phim. Nhưng không hay lắm.
+
+  - key: ja:exercise:n4-ta-order-sunday
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-sentaku
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Chủ nhật tôi giặt giũ, dọn dẹp các thứ."'
+      tokens:
+        - { id: t-shimasu, text: します }
+        - { id: t-souji, text: 掃除をしたり }
+        - { id: t-nichiyoubi, text: 日曜日は }
+        - { id: t-sentaku, text: 洗濯をしたり、 }
+        - { id: t-shite, text: 洗濯をして、 }
+    answer:
+      orders:
+        - [t-nichiyoubi, t-sentaku, t-souji, t-shimasu]
+    explanation:
+      vi: Chủ đề 日曜日は đứng đầu; hai vế たり nối nhau rồi kết bằng します. 洗濯をして、 là kể theo thứ tự, không ghép với たり được.
+    display_answer: 日曜日は洗濯をしたり、掃除をしたりします。
+
+  - key: ja:exercise:n4-ta-mcq-answer-experience
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-noboru
+    prompt:
+      stem: 'Bạn Nhật hỏi 富士山に登ったことがありますか。 Bạn chưa từng leo. Trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: g3k, text: いいえ、一度もありません。, lang: ja }
+        - { id: u9p, text: いいえ、登りません。, lang: ja }
+        - { id: b2w, text: いいえ、登りませんでした。, lang: ja }
+        - { id: x6e, text: はい、ありません。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: Câu hỏi kinh nghiệm trả lời bằng あります/ありません; 一度も + phủ định là "chưa lần nào". 登りません là "(sẽ) không leo"; 登りませんでした là "(lần đó) đã không leo".
+    display_answer: いいえ、一度もありません。
+
+  - key: ja:exercise:n4-ta-translate-never-eaten
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-ta-koto-ga-aru
+    prompt:
+      source_text: Tôi chưa từng ăn sushi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - すしを食べたことがありません。
+        - すしをたべたことがありません。
+        - 寿司を食べたことがありません。
+        - おすしを食べたことがありません。
+        - お寿司を食べたことがありません。
+        - 私はすしを食べたことがありません。
+        - 私は寿司を食べたことがありません。
+        - 私はお寿司を食べたことがありません。
+        - すしは食べたことがありません。
+        - お寿司は食べたことがありません。
+        - すしを食べたことがない。
+    known_wrong:
+      - answer: すしを食べなかったことがあります。
+        feedback_vi: '"Chưa từng" là phủ định ở ありません - 食べたことがありません.'
+        error_tag: ta_form
+      - answer: すしを食べることがありません。
+        feedback_vi: Thiếu thể た. 食べることがありません là "không bao giờ (có lúc) ăn".
+        error_tag: ta_form
+      - answer: すしを食べませんでした。
+        feedback_vi: Đây là "đã không ăn (lần đó)", không nói về kinh nghiệm.
+        error_tag: ta_form
+    explanation:
+      vi: 食べる → 食べた + ことがありません. すし viết bằng kana hay chữ Hán 寿司 đều được.
+    display_answer: すしを食べたことがありません。
