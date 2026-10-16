@@ -141,7 +141,7 @@ Hành vi:
 3. `migrate` xanh → ghi các migration vừa áp bằng `node scripts/check-migrations-immutable.mjs --record <file…>` và commit (mục Quy tắc an toàn database).
 4. Actions → **Publish content** → Approve: chương trình ja, kho kiểm tra đầu vào và đề JLPT chỉ nhập được sau khi `20261018130000_japanese.sql` đã áp (mục Xuất bản nội dung).
 5. Tạo audio bài nghe từ máy (`pnpm audio:generate`, cần `GEMINI_API_KEY` + `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`; mục Audio bài nghe), commit YAML và manifest, rồi chạy lại Publish content. Chưa làm thì bài nghe vẫn dùng giọng máy.
-6. Cấp quyền giáo viên đầu tiên: SQL vào `public.teacher_profiles` hoặc RPC `grant_teacher_role(p_user_id, p_grant)` bằng phiên admin (mục Giáo viên).
+6. Cấp quyền giáo viên đầu tiên: trang **Nhân sự** `/quan-tri/nhan-su` (cần `20261018150000_admin_teachers.sql` đã áp), hoặc SQL vào `public.teacher_profiles` (mục Giáo viên).
 
 ## Xuất bản nội dung
 Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nhập nội dung vào database hosted; việc này chạy tay qua workflow riêng.
@@ -187,15 +187,17 @@ Trang `/quan-tri` (spec 11) chỉ mở cho tài khoản có vai trò trong bản
 - **Báo lỗi** (`/quan-tri/bao-loi`): hàng đợi báo lỗi của người học, gộp theo nội dung bị báo; chọn nhiều mục rồi xử lý (`fixed`, `rejected`, `duplicate` là trạng thái cuối, kèm ghi chú). Lý do báo: `wrong_answer`, `unclear`, `typo`, `audio`, `translation`, `offensive`, `other`. Chuyển một mục sang `published` khi còn báo lỗi "Đáp án sai" chưa xử lý bị từ chối (`open_wrong_answer_reports`) trừ khi admin ép (`p_force`).
 - **Nguồn** (`/quan-tri/nguon`): các nguồn và giấy phép khai báo trong `content/sources.yaml`.
 - **Thống kê** (`/quan-tri/thong-ke`, admin): người dùng hoạt động mỗi ngày, phễu người dùng mới, mức dùng AI (số request theo tác vụ và trạng thái, báo cáo câu trả lời AI theo lý do). Chỉ số tổng hợp, không có id hay email; khoảng thời gian chọn được.
-- **Nhật ký** (`/quan-tri/nhat-ky`, admin): các thao tác thay đổi dữ liệu gần đây của quản trị viên (đổi trạng thái, xử lý báo lỗi, cấp/thu hồi vai trò và quyền giáo viên, xem danh sách nhân sự, tìm tài khoản).
-- **Nhân sự** (`/quan-tri/nhan-su`, admin): danh sách nhân sự kèm email, vai trò, người cấp và ngày cấp; tìm tài khoản để cấp vai trò; đổi hoặc thu hồi vai trò.
+- **Nhật ký** (`/quan-tri/nhat-ky`, admin): các thao tác thay đổi dữ liệu gần đây của quản trị viên (đổi trạng thái, xử lý báo lỗi, cấp/thu hồi vai trò và quyền giáo viên, xem danh sách nhân sự hoặc giáo viên, tìm tài khoản).
+- **Nhân sự** (`/quan-tri/nhan-su`, admin): danh sách nhân sự kèm email, vai trò, người cấp và ngày cấp; tìm tài khoản để cấp vai trò hoặc quyền giáo viên; đổi hoặc thu hồi vai trò; danh sách giáo viên (số lớp đang mở) và thu hồi quyền giáo viên (mục Giáo viên).
 
 **Trạng thái duyệt và import nội dung:** reviewer chuyển trạng thái trên trang quản trị (`admin_set_status`, ghi `reviewed_by`/`reviewed_at`). Khi chạy lại **Publish content**, dòng có nội dung không đổi (cùng `content_hash`) chỉ nhận trạng thái từ YAML nếu đó là đúng một bước hợp lệ từ trạng thái hiện tại; nếu không, trạng thái trong database được giữ (migration `20261015000420_import_keep_published.sql`). Vì vậy import không bao giờ hạ một dòng `published` xuống `draft`/`in_review`/`approved`; lưu trữ (`archived`, hoặc xoá khỏi `content/`) vẫn hoạt động. Nội dung đã sửa (hash đổi) luôn nhận trạng thái ghi trong YAML, nên hãy cập nhật YAML theo quyết định duyệt khi sửa nội dung.
 
 ## Giáo viên
-Khu `/giao-vien` (công cụ giáo viên, cần migration `20261017000400_teacher_tools.sql`) chỉ mở cho tài khoản có một dòng trong `public.teacher_profiles`. Quyền giáo viên tách khỏi vai trò quản trị (`staff_roles`) và **chưa có giao diện cấp**.
+Khu `/giao-vien` (công cụ giáo viên, cần migration `20261017000400_teacher_tools.sql`) chỉ mở cho tài khoản có một dòng trong `public.teacher_profiles`. Quyền giáo viên tách khỏi vai trò quản trị (`staff_roles`).
 
-**Cấp quyền bằng SQL** (Supabase Dashboard → SQL Editor, quyền `postgres`), sau khi người đó đã đăng nhập Linguo một lần:
+**Cấp quyền trên giao diện (cách nên dùng, có nhật ký):** admin vào **Nhân sự** (`/quan-tri/nhan-su`, cần thêm migration `20261018150000_admin_teachers.sql`). Ô "Email hoặc mã người dùng" tìm tài khoản (người đó phải đăng nhập Linguo ít nhất một lần), thẻ kết quả ghi "Quyền giáo viên: Đã có / Chưa có" và có nút **Cấp quyền giáo viên**. Phần **Giáo viên** bên dưới liệt kê mọi giáo viên kèm email, người cấp, ngày cấp và số lớp đang mở; nút **Thu hồi** hỏi xác nhận trước. Cả hai đi qua `grant_teacher_role` (nhật ký `grant_teacher` / `revoke_teacher`); xem danh sách ghi `list_teachers` tối đa một lần mỗi 10 phút. Thu hồi không xoá lớp: học viên vẫn thấy lớp và bài giao, giáo viên chỉ không mở được `/giao-vien` cho tới khi được cấp lại.
+
+**Cấp quyền bằng SQL** (khi chưa có admin nào, hoặc migration `20261018150000` chưa áp; Supabase Dashboard → SQL Editor, quyền `postgres`), sau khi người đó đã đăng nhập Linguo một lần:
 ```sql
 insert into public.teacher_profiles (user_id)
 select id from auth.users where email = 'giaovien@example.com'
@@ -203,7 +205,7 @@ on conflict (user_id) do nothing;
 ```
 Kiểm tra: `select t.granted_at, u.email from public.teacher_profiles t join auth.users u on u.id = t.user_id;`. Thu hồi: `delete from public.teacher_profiles where user_id = '<uuid>';` (lớp của giáo viên vẫn còn nhưng họ không mở được `/giao-vien` nữa). Cách này **không** ghi nhật ký và để trống `granted_by`.
 
-**Cấp quyền bằng RPC** (có nhật ký `grant_teacher` / `revoke_teacher`): `grant_teacher_role(p_user_id uuid, p_grant boolean)`, chỉ admin gọi được và cần phiên đăng nhập của admin (như `admin_grant_role`, không chạy được từ SQL Editor), ví dụ qua REST `POST {SUPABASE_URL}/rest/v1/rpc/grant_teacher_role` với access token của admin và body `{"p_user_id": "<uuid>", "p_grant": true}`.
+**Cấp quyền bằng RPC** (có nhật ký `grant_teacher` / `revoke_teacher`; trang Nhân sự gọi chính RPC này): `grant_teacher_role(p_user_id uuid, p_grant boolean)`, chỉ admin gọi được và cần phiên đăng nhập của admin (như `admin_grant_role`, không chạy được từ SQL Editor), ví dụ qua REST `POST {SUPABASE_URL}/rest/v1/rpc/grant_teacher_role` với access token của admin và body `{"p_user_id": "<uuid>", "p_grant": true}`.
 
 Người được cấp tải lại trang là thấy mục "Lớp học (giáo viên)" trong thanh điều hướng. Học viên vào lớp bằng mã mời hoặc liên kết `/app/lop-hoc/tham-gia?ma=<mã>` do giáo viên tạo.
 
