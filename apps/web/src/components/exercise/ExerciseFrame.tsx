@@ -382,6 +382,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
             ai={aiInput}
             report={reportable ? { kind: 'exercise', id: exercise.id } : undefined}
             answerLang={exercise.answer_lang}
+            course={ai?.language ?? null}
           />
         </div>
         <ActionBar bleed={bleed} verdict={showResult ? result.verdict : null}>

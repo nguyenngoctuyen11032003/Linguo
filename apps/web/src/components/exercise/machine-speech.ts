@@ -13,6 +13,44 @@ export function detectScriptLang(text: string): TtsLanguage {
   return JAPANESE_SCRIPT_RE.test(text) ? 'ja' : 'en';
 }
 
+/** `en`/`ko`/`ja` pass through; Vietnamese and anything unknown is not read aloud. */
+export function toTtsLanguage(lang: string | null | undefined): TtsLanguage | null {
+  return lang === 'en' || lang === 'ko' || lang === 'ja' ? lang : null;
+}
+
+/** The language of a lesson's foreign text, taken from its example / mistake blocks. */
+export function lessonLanguage(blocks: ReadonlyArray<{ type: string; target_lang?: string }>): TtsLanguage | null {
+  return toTtsLanguage(blocks.find((b) => (b.type === 'example' || b.type === 'common_mistake') && b.target_lang)?.target_lang);
+}
+
+/**
+ * The part of `text` worth reading: drops markdown emphasis, blank placeholders ("____", "…") and spacing so the
+ * voice does not say "underscore underscore".
+ */
+export function speechText(text: string): string {
+  return text
+    .replace(/[*_`~]{1,}/g, (m) => (m.length >= 2 && /^_+$/.test(m) ? ' ' : ''))
+    .replace(/\{\{[^}]*\}\}/g, ' ')
+    .replace(/…|\.{3,}/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** Whether the browser has a voice for `lang` (voices can load late, so this can turn true after mount). */
+export function useVoiceAvailable(lang: TtsLanguage | null): boolean {
+  const [available, setAvailable] = useState(() => (lang ? canSpeak(lang) : false));
+  useEffect(() => {
+    if (!lang) {
+      setAvailable(false);
+      return;
+    }
+    const refresh = () => setAvailable(canSpeak(lang));
+    refresh();
+    return onVoicesChanged(refresh);
+  }, [lang]);
+  return available;
+}
+
 export type MachineSpeechState = 'idle' | 'speaking' | 'error';
 
 export interface MachineSpeech {

@@ -8,6 +8,7 @@ import type {
   GeneratePracticeOutput,
   ReviewWritingOutput,
 } from '@linguo/shared';
+import { SpeakButton } from '@/components/exercise/SpeakButton';
 import { cn } from '@/lib/cn';
 import { AnalyzeSentenceView, PlanReviewView, SessionSummaryView } from './AiMoreViews';
 import { MarkdownLite } from './MarkdownLite';
@@ -37,11 +38,14 @@ export function ExplainView({ data, language }: { data: ExplainConceptOutput; la
           <SectionTitle>Ví dụ</SectionTitle>
           <ul className="space-y-2">
             {data.examples.map((ex, i) => (
-              <li key={i} className="rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
-                <span lang={language} className="block font-medium">
-                  {ex.target}
+              <li key={i} className="flex items-center gap-3 rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
+                <span className="min-w-0 flex-1">
+                  <span lang={language} className="block font-medium">
+                    {ex.target}
+                  </span>
+                  <span className="block text-muted">{ex.vi}</span>
                 </span>
-                <span className="block text-muted">{ex.vi}</span>
+                <SpeakButton text={ex.target} lang={language} label="Nghe câu ví dụ" size="sm" />
               </li>
             ))}
           </ul>
@@ -79,9 +83,12 @@ export function AnalyzeView({ data, language }: { data: AnalyzeErrorOutput; lang
       {data.corrected && (
         <section className="space-y-1">
           <SectionTitle>Câu đúng</SectionTitle>
-          <p lang={language} className="rounded-2xl bg-success/8 px-3.5 py-2.5 ring-1 ring-success/35 ring-inset font-medium">
-            {data.corrected}
-          </p>
+          <div className="flex items-center gap-3 rounded-2xl bg-success/8 px-3.5 py-2.5 ring-1 ring-success/35 ring-inset">
+            <p lang={language} className="min-w-0 flex-1 font-medium">
+              {data.corrected}
+            </p>
+            <SpeakButton text={data.corrected} lang={language} label="Nghe câu đúng" size="sm" />
+          </div>
         </section>
       )}
       {data.tip_vi && (
@@ -103,7 +110,8 @@ function PracticeItem({ item, index, language }: { item: GeneratePracticeOutput[
     <li className="space-y-2 rounded-2xl bg-text/[0.03] p-3.5 ring-1 ring-border ring-inset">
       <p className="font-semibold">
         <span className="text-muted">Câu {index + 1}. </span>
-        <span lang={language}>{item.question}</span>
+        <span lang={language}>{item.question}</span>{' '}
+        <SpeakButton text={item.question} lang={language} label="Nghe câu hỏi" size="sm" className="align-middle" />
       </p>
       <div role="group" aria-label={`Lựa chọn câu ${index + 1}`} className="grid gap-2">
         {item.options.map((option, i) => {
@@ -204,9 +212,12 @@ export function ReviewWritingView({ data, language, rubric = [] }: { data: Revie
       </section>
       <section className="space-y-1">
         <SectionTitle>Bài đã sửa</SectionTitle>
-        <p lang={language} className="rounded-2xl bg-success/8 px-3.5 py-2.5 ring-1 ring-success/35 ring-inset whitespace-pre-wrap break-words">
-          {data.corrected_version}
-        </p>
+        <div className="flex items-start gap-3 rounded-2xl bg-success/8 px-3.5 py-2.5 ring-1 ring-success/35 ring-inset">
+          <p lang={language} className="min-w-0 flex-1 whitespace-pre-wrap break-words">
+            {data.corrected_version}
+          </p>
+          <SpeakButton text={data.corrected_version} lang={language} label="Nghe bài đã sửa" size="sm" />
+        </div>
       </section>
     </div>
   );

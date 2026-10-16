@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, FileUp, NotebookPen, Pencil, Play, Trash2 } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { LANGUAGES, type PersonalWord } from '@linguo/shared';
+import { SpeakButton } from '@/components/exercise/SpeakButton';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -219,8 +220,13 @@ export function PersonalListPage() {
             <tbody>
               {visible.map((word) => (
                 <tr key={word.id} className="border-t border-border align-top">
-                  <td className="break-words px-3 py-3 font-semibold" lang={list.language_code}>
-                    {word.term}
+                  <td className="break-words px-3 py-3 font-semibold">
+                    <div className="flex items-center gap-2">
+                      <span lang={list.language_code} className="min-w-0">
+                        {word.term}
+                      </span>
+                      <SpeakButton text={word.term} lang={list.language_code} label="Nghe từ" size="sm" />
+                    </div>
                   </td>
                   <td className="hidden break-words px-3 py-3 text-muted sm:table-cell">
                     {word.pronunciation ?? (
@@ -233,8 +239,11 @@ export function PersonalListPage() {
                   <td className="break-words px-3 py-3">
                     {word.meaning}
                     {word.example && (
-                      <span lang={list.language_code} className="mt-0.5 block text-sm text-muted">
-                        {word.example}
+                      <span className="mt-0.5 flex items-center gap-2 text-sm text-muted">
+                        <span lang={list.language_code} className="min-w-0">
+                          {word.example}
+                        </span>
+                        <SpeakButton text={word.example} lang={list.language_code} label="Nghe câu ví dụ" size="sm" />
                       </span>
                     )}
                     {word.note && <span className="mt-0.5 block text-sm text-muted">{word.note}</span>}

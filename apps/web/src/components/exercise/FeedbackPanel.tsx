@@ -10,7 +10,10 @@ import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { feedbackAiRequests, type AiSheetState, type ExerciseAiInput } from './ai-context';
 import { ERROR_TAG_MESSAGES } from './exercise-utils';
-import { JAPANESE_SCRIPT_RE } from './machine-speech';
+import type { TtsLanguage } from '@/features/exam/tts';
+import { ForeignText } from './ForeignText';
+import { JAPANESE_SCRIPT_RE, toTtsLanguage } from './machine-speech';
+import { SpeakButton } from './SpeakButton';
 
 const VERDICT_UI: Record<Verdict, { icon: LucideIcon; label: string; tone: string; iconTone: string; titleTone: string }> = {
   correct: {
@@ -45,13 +48,15 @@ export interface FeedbackPanelProps {
   report?: { kind: ReportTargetKind; id: string };
   /** The exercise's `answer_lang`: screen readers read the revealed answer in that language, not as Vietnamese. */
   answerLang?: AnswerLang;
+  /** The course language, so English phrases quoted in the Vietnamese feedback can be played. Defaults to `answerLang`. */
+  course?: TtsLanguage | null;
 }
 
 /**
  * Verdict feedback. The `role="status"` wrapper stays mounted so screen readers register it before content
  * appears; focus moves to the heading when a new result arrives (not on mount, e.g. when resuming).
  */
-export function FeedbackPanel({ result, className, ai, report, answerLang }: FeedbackPanelProps) {
+export function FeedbackPanel({ result, className, ai, report, answerLang, course }: FeedbackPanelProps) {
   const { reduceMotion } = useMotionPrefs();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -70,7 +75,14 @@ export function FeedbackPanel({ result, className, ai, report, answerLang }: Fee
     <div className={className}>
       <div ref={cardRef} role="status" aria-live="polite" className="scroll-mb-[calc(7rem+env(safe-area-inset-bottom,0px))]">
         {result && (
-          <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} answerLang={answerLang} />
+          <FeedbackCard
+            key={result.attempt_id}
+            result={result}
+            reduceMotion={reduceMotion}
+            headingRef={headingRef}
+            answerLang={answerLang}
+            course={course ?? toTtsLanguage(answerLang)}
+          />
         )}
       </div>
       {result && (ai || report) && (
@@ -132,11 +144,13 @@ function FeedbackCard({
   reduceMotion,
   headingRef,
   answerLang,
+  course,
 }: {
   result: SubmitResult;
   reduceMotion: boolean;
   headingRef: RefObject<HTMLHeadingElement | null>;
   answerLang?: AnswerLang;
+  course: TtsLanguage | null;
 }) {
   const ui = VERDICT_UI[result.verdict];
   const Icon = ui.icon;
@@ -178,16 +192,27 @@ function FeedbackCard({
           ))}
         </ul>
       )}
-      {result.feedback_vi && <p className="mt-2 text-[16px] leading-relaxed">{result.feedback_vi}</p>}
-      {result.display_answer && (
-        <p className="mt-4 rounded-2xl bg-surface-solid/70 px-4 py-3 text-[18px] ring-1 ring-border ring-inset">
-          <span className="block text-xs font-bold uppercase tracking-[0.08em] text-text">Đáp án</span>
-          <span lang={answerLang} className="mt-1 block font-bold leading-snug">
-            {result.display_answer}
-          </span>
+      {result.feedback_vi && (
+        <p className="mt-2 text-[16px] leading-relaxed">
+          <ForeignText course={course}>{result.feedback_vi}</ForeignText>
         </p>
       )}
-      {result.explanation && <p className="mt-3 text-[16px] leading-relaxed text-text">{result.explanation.vi}</p>}
+      {result.display_answer && (
+        <div className="mt-4 flex items-center gap-3 rounded-2xl bg-surface-solid/70 px-4 py-3 text-[18px] ring-1 ring-border ring-inset">
+          <p className="min-w-0 flex-1">
+            <span className="block text-xs font-bold uppercase tracking-[0.08em] text-text">Đáp án</span>
+            <span lang={answerLang} className="mt-1 block font-bold leading-snug">
+              {result.display_answer}
+            </span>
+          </p>
+          <SpeakButton text={result.display_answer} lang={answerLang} label="Nghe đáp án" />
+        </div>
+      )}
+      {result.explanation && (
+        <p className="mt-3 text-[16px] leading-relaxed text-text">
+          <ForeignText course={course}>{result.explanation.vi}</ForeignText>
+        </p>
+      )}
       {canRetry && <p className="mt-3 text-sm font-medium text-text">Bạn còn một lần thử. Thử lại hoặc xem đáp án.</p>}
     </motion.div>
   );

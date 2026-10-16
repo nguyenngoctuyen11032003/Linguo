@@ -1,6 +1,7 @@
 import { AlertTriangle, ArrowRight, Lightbulb } from 'lucide-react';
 import { Link } from 'react-router';
 import type { AiRequestInput, AnalyzeSentenceOutput, PlanReviewOutput, SummarizeSessionOutput } from '@linguo/shared';
+import { SpeakButton } from '@/components/exercise/SpeakButton';
 import { cn } from '@/lib/cn';
 import { tagLabel } from './tag-labels';
 
@@ -67,10 +68,11 @@ export function AnalyzeSentenceView({ data, language }: { data: AnalyzeSentenceO
         <SectionTitle>Từng từ</SectionTitle>
         <ul aria-label="Từ loại từng từ" className="space-y-2">
           {data.tokens.map((t, i) => (
-            <li key={i} className="flex flex-wrap items-baseline gap-x-2 rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
+            <li key={i} className="flex flex-wrap items-center gap-x-2 rounded-2xl bg-text/[0.03] px-3.5 py-2.5 ring-1 ring-border ring-inset">
               <span lang={language} className="font-semibold break-words">
                 {t.text}
               </span>
+              <SpeakButton text={t.text} lang={language} label="Nghe từ" size="sm" className="-my-1" />
               <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-semibold text-primary">{POS_LABELS[t.pos]}</span>
               <span className="min-w-0 break-words text-muted">{t.meaning_vi}</span>
             </li>

@@ -68,6 +68,36 @@ function bell(v: Voice, freq: number, at: number, dur: number, gain: number): vo
   v.tone({ freq: freq * 3.98, at, dur: dur * 0.3, type: 'sine', gain: gain * 0.12, attack: 0.002 });
 }
 
+/**
+ * A small crowd clapping: a few short band-passed noise bursts that thin out and decay, so a cue ends on applause.
+ * `size` 1 is a handful of claps, 2 a room full.
+ */
+function applause(v: Voice, at: number, size: 1 | 2 = 1): void {
+  const claps = size === 1 ? 5 : 9;
+  const gaps = [0, 0.045, 0.085, 0.14, 0.18, 0.25, 0.29, 0.36, 0.43];
+  for (let i = 0; i < claps; i += 1) {
+    v.noise({
+      at: at + gaps[i]!,
+      dur: 0.05,
+      gain: (size === 1 ? 0.07 : 0.085) * (1 - i / (claps + 2)),
+      filter: 'bandpass',
+      freq: 1500 + ((i * 487) % 1400),
+      q: 0.9,
+      echo: true,
+    });
+  }
+}
+
+/** A bright rising "pa-pa-PING" run: the shared cheer of every positive verdict. Returns when its last note lands. */
+function cheerRun(v: Voice, notes: number[], step: number, gain: number): number {
+  notes.forEach((f, i) => {
+    v.tone({ freq: f, at: i * step, dur: 0.11, type: 'triangle', gain: gain * (0.8 + i * 0.1), attack: 0.003, echo: true });
+    // A soft octave "shine" over each pluck makes the run sparkle instead of beep.
+    v.tone({ freq: f * 2, at: i * step, dur: 0.07, type: 'sine', gain: gain * 0.25, attack: 0.002 });
+  });
+  return (notes.length - 1) * step + step;
+}
+
 export interface CueDef {
   /** Loudness relative to the user's volume (0..1). */
   level: number;
@@ -94,33 +124,45 @@ export const CUES: Record<SoundCue, CueDef> = {
     minGap: 40,
     play: (v) => v.tone({ freq: N.A5, dur: 0.06, type: 'triangle', gain: 0.22, attack: 0.003, glideTo: N.C6 }),
   },
-  // Classic two-note "ding-ding" rising a major third.
+  // "Pa-pa-PING!" An upbeat rising run that lands on a bright major chord with a shimmer and a ripple of applause:
+  // the sound of someone cheering the learner on.
   correct: {
-    level: 0.7,
-    haptic: [14],
+    level: 0.78,
+    haptic: [14, 30, 18],
     play: (v) => {
-      bell(v, N.C6, 0, 0.18, 0.26);
-      bell(v, N.E6, 0.085, 0.42, 0.3);
+      const landing = cheerRun(v, [N.G5, N.C6, N.E6], 0.07, 0.24);
+      v.tone({ freq: 196, dur: 0.12, type: 'sine', gain: 0.16, attack: 0.004, glideTo: 392 });
+      [N.C6, N.E6, N.G6].forEach((f, i) => bell(v, f, landing, 0.7 - i * 0.1, 0.2 - i * 0.02));
+      v.noise({ at: landing, dur: 0.4, gain: 0.03, filter: 'highpass', freq: 6500, echo: true });
+      applause(v, landing + 0.03, 1);
     },
   },
-  // Correct while on a streak of answers: arpeggio that climbs one step per combo level (intensity 0..1).
+  // Correct while on a streak of answers: a longer, higher run that climbs one step per combo level (intensity
+  // 0..1), a ringing chord, a rising whoosh and a bigger round of applause.
   combo: {
-    level: 0.72,
-    haptic: [10, 40, 14],
+    level: 0.82,
+    haptic: [10, 40, 14, 40, 18],
     play: (v, intensity) => {
       const lift = 2 ** (Math.round(intensity * 5) / 12); // up to +5 semitones
-      const notes = [N.C6, N.E6, N.G6, N.C7];
-      notes.forEach((f, i) => bell(v, f * lift, i * 0.06, i === notes.length - 1 ? 0.5 : 0.16, 0.2 + i * 0.03));
-      v.noise({ at: 0.18, dur: 0.35, gain: 0.025, filter: 'highpass', freq: 6000, echo: true });
+      const run = [N.C5, N.E5, N.G5, N.C6, N.E6, N.G6].map((f) => f * lift);
+      const landing = cheerRun(v, run, 0.06, 0.22);
+      v.tone({ freq: 261.63 * lift, dur: 0.3, type: 'sine', gain: 0.14, glideTo: 523.25 * lift });
+      [N.C6, N.E6, N.G6, N.C7].forEach((f, i) => bell(v, f * lift, landing, 0.95 - i * 0.12, 0.2 - i * 0.02));
+      v.noise({ dur: 0.36, gain: 0.04, filter: 'bandpass', freq: 800, sweepTo: 7000, q: 1.2, echo: true });
+      v.noise({ at: landing, dur: 0.55, gain: 0.035, filter: 'highpass', freq: 6000, sweepTo: 10000, echo: true });
+      applause(v, landing + 0.02, 2);
     },
   },
-  // Accepted with a small slip (typo, accent): one warm note that lifts slightly. Positive, but less than correct.
+  // Accepted with a small slip (typo, accent): still an encouraging "nice!", two lifting notes, a little lighter than
+  // correct and without the applause.
   almost: {
-    level: 0.6,
-    haptic: [12],
+    level: 0.68,
+    haptic: [12, 30, 12],
     play: (v) => {
-      v.tone({ freq: N.G5, dur: 0.14, type: 'triangle', gain: 0.22 });
-      v.tone({ freq: N.A5, at: 0.1, dur: 0.3, type: 'sine', gain: 0.22, echo: true });
+      v.tone({ freq: N.G5, dur: 0.12, type: 'triangle', gain: 0.24, attack: 0.003, echo: true });
+      v.tone({ freq: N.C6, at: 0.08, dur: 0.12, type: 'triangle', gain: 0.24, attack: 0.003, echo: true });
+      bell(v, N.E6, 0.16, 0.5, 0.2);
+      bell(v, N.G6, 0.16, 0.35, 0.1);
     },
   },
   // Soft descending "bwom-bwom": low, filtered, gentle. Never a buzzer.
@@ -150,6 +192,7 @@ export const CUES: Record<SoundCue, CueDef> = {
       [N.C6, N.E6, N.G6].forEach((f) => bell(v, f, 0.38, 1.1, 0.16));
       v.tone({ freq: N.C4, at: 0.38, dur: 0.9, type: 'sine', gain: 0.14 });
       v.noise({ at: 0.38, dur: 0.9, gain: 0.03, filter: 'highpass', freq: 5000, sweepTo: 9000, echo: true });
+      applause(v, 0.42, 1);
     },
   },
   // 100% accuracy on a lesson or exam: the complete fanfare's bigger sibling with a high bell on top.
@@ -161,6 +204,7 @@ export const CUES: Record<SoundCue, CueDef> = {
       [N.C6, N.E6, N.G6, N.C7].forEach((f) => bell(v, f, 0.4, 1.3, 0.13));
       bell(v, N.G6 * 2, 0.75, 0.9, 0.08);
       v.noise({ at: 0.4, dur: 1.1, gain: 0.035, filter: 'highpass', freq: 5000, sweepTo: 10000, echo: true });
+      applause(v, 0.45, 2);
     },
   },
   // Badge unlocked, level up, milestone: upward shimmer resolving on a bright bell.
@@ -329,6 +373,7 @@ export const CUES: Record<SoundCue, CueDef> = {
       [N.C6, N.E6, N.G6, N.C7].forEach((f) => bell(v, f, 0.55, 1.4, 0.12));
       v.tone({ freq: N.C4, at: 0.55, dur: 1.2, type: 'sine', gain: 0.12 });
       v.noise({ at: 0.5, dur: 1.2, gain: 0.035, filter: 'highpass', freq: 5000, sweepTo: 11000, echo: true });
+      applause(v, 0.55, 2);
     },
   },
   // Exam time ran out: three firm, descending notes. Clear and final, but not alarming.
