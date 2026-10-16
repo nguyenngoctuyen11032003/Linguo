@@ -1,0 +1,328 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:particles-invitations-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Nhắn tin hẹn đi chơi cuối tuần
+objectives:
+  - vi: Nhắn tin rủ bạn đi chơi - hỏi rảnh không, rủ, hẹn giờ và nơi gặp.
+  - vi: Dùng đúng と, から〜まで, も, が trong một đoạn hội thoại.
+  - vi: Nhận lời, từ chối khéo và hỏi ý bằng ませんか / ましょう / ましょうか.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading, speaking, writing]
+prerequisites: [ja:lesson:invitations]
+items:
+  - item: ja:item:kouen
+  - item: ja:item:hima
+  - item: ja:item:isogashii
+  - item: ja:item:masenka
+    role: reuse
+  - item: ja:item:mashou
+    role: reuse
+  - item: ja:item:mashouka
+    role: reuse
+  - item: ja:item:particle-to-with
+    role: reuse
+  - item: ja:item:kara-made
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hẹn được một buổi đi chơi cuối tuần qua tin nhắn - từ câu hỏi "Thứ Bảy bạn rảnh không?" đến "10 giờ gặp ở ga nhé".
+  - type: explain
+    text:
+      vi: Một cuộc hẹn thường đi theo bốn bước - hỏi rảnh không (ひまですか), rủ (V ませんか), nhận lời (いいですね。V ましょう) và chốt giờ, nơi (なんじにしましょうか). Mỗi bước dùng một mẫu bạn đã học trong unit.
+  - type: explain
+    text:
+      vi: ひま (rảnh) là tính từ な - ひまじゃありません; いそがしい (bận) là tính từ い - いそがしくないです. Hai từ trái nghĩa nhưng chia theo hai khuôn khác nhau.
+  - type: deep_explain
+    text:
+      vi: Trong tin nhắn với bạn bè, người Nhật hay rút gọn và dùng ね, よ để câu mềm hơn - じゃ、じゅうじにえきでね (vậy 10 giờ ở ga nhé). Mẫu N にしましょう nghĩa là "chọn N nhé" - じゅうじにしましょう (chốt 10 giờ nhé). Khi bận, nói lý do ngắn rồi đề nghị ngày khác - どようびはいそがしいです。にちようびはどうですか.
+  - type: example
+    target: どようびはひまですか。 - はい、ひまです。
+    target_lang: ja
+    translation:
+      vi: Thứ Bảy bạn rảnh không? - Có, mình rảnh.
+    note:
+      vi: ひま - tính từ な.
+  - type: example
+    target: にちようびはいそがしいです。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tôi bận.
+    note:
+      vi: いそがしい - tính từ い.
+  - type: example
+    target: こうえんでピクニックをしませんか。 - いいですね。
+    target_lang: ja
+    translation:
+      vi: Đi picnic ở công viên không? - Hay đấy.
+    note:
+      vi: こうえん - công viên.
+  - type: example
+    target: なんじにしましょうか。 - じゅうじはどうですか。
+    target_lang: ja
+    translation:
+      vi: Mình hẹn mấy giờ nhỉ? - 10 giờ thì sao?
+    note:
+      vi: ましょうか hỏi ý; どうですか gợi ý.
+  - type: common_mistake
+    wrong: きょうはひまくないです。
+    right: きょうはひまじゃありません。
+    target_lang: ja
+    note:
+      vi: ひま là tính từ な - phủ định じゃありません.
+  - type: common_mistake
+    wrong: こえんへいきませんか。
+    right: こうえんへいきませんか。
+    target_lang: ja
+    note:
+      vi: こうえん có âm dài こう - viết thiếu う là sai chính tả.
+  - type: summary
+    points:
+      - vi: ひまですか → V ませんか → いいですね。V ましょう → なんじにしましょうか.
+      - vi: ひま (な) · いそがしい (い) · こうえん công viên.
+      - vi: と cùng với · から〜まで từ... đến... · も cũng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:pi-review-mcq-free
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hima
+    prompt:
+      stem: "Bạn nhắn hỏi \"Chủ nhật bạn có rảnh không?\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z2q, text: にちようびはひまですか。, lang: ja }
+        - { id: x6w, text: にちようびはひまいですか。, lang: ja }
+        - { id: c1e, text: にちようびはひまなですか。, lang: ja }
+        - { id: v5r, text: にちようびはいそがしいですか。, lang: ja }
+    answer:
+      correct_option_id: z2q
+    explanation:
+      vi: ひま là tính từ な, trước です giữ nguyên - ひまですか. Không có ひまい; な chỉ đứng trước danh từ; いそがしいですか là hỏi "bận không".
+    display_answer: にちようびはひまですか。
+
+  - key: ja:exercise:pi-review-listen-bento
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kouen
+    prompt:
+      audio_asset_id: null
+      fallback_text: こうえんでいっしょにおべんとうをたべましょう。
+      options:
+        - { id: b9t, text: Cùng ăn cơm hộp ở công viên nào., lang: vi }
+        - { id: n3y, text: Tôi đã ăn cơm hộp ở công viên., lang: vi }
+        - { id: m7u, text: Cùng ăn cơm hộp ở nhà nào., lang: vi }
+        - { id: l2i, text: Bạn có ăn cơm hộp ở công viên không?, lang: vi }
+    answer:
+      correct_option_id: b9t
+    explanation:
+      vi: こうえんで - ở công viên; おべんとう - cơm hộp; たべましょう - cùng ăn nào.
+    display_answer: Cùng ăn cơm hộp ở công viên nào.
+
+  - key: ja:exercise:pi-review-mcq-busy
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:isogashii
+    prompt:
+      stem: "Bạn hỏi きょうはいそがしいですか。 Bạn không bận. Trả lời - いいえ、___ 。"
+      stem_lang: vi
+      options:
+        - { id: k4o, text: いそがしくないです, lang: ja }
+        - { id: j8p, text: いそがしいじゃありません, lang: ja }
+        - { id: h3a, text: いそがしくです, lang: ja }
+        - { id: g7s, text: ひまくないです, lang: ja }
+    answer:
+      correct_option_id: k4o
+    explanation:
+      vi: いそがしい là tính từ い - phủ định いそがしくないです. じゃありません dành cho tính từ な; ひま là tính từ な nên không có ひまくない.
+    display_answer: いそがしくないです
+
+  - key: ja:exercise:pi-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-to-with
+    prompt:
+      template: "どようびはともだち{{b1}}こうえん{{b2}}いきます。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Thứ Bảy tôi đi công viên cùng bạn."
+        - Chỗ thứ nhất là "cùng với", chỗ thứ hai là trợ từ chỉ hướng.
+    answer:
+      blanks:
+        b1: [と]
+        b2: [へ, に]
+    known_wrong:
+      - answer: を
+        feedback_vi: を chỉ tân ngữ; người đi cùng dùng と, nơi đến dùng へ hoặc に.
+        error_tag: particle_choice
+      - answer: や
+        feedback_vi: や dùng để kể ví dụ đồ vật, không dùng cho người đi cùng.
+        error_tag: to_ya
+    explanation:
+      vi: ともだちと - cùng bạn; こうえんへ - đến công viên.
+    display_answer: どようびはともだちとこうえんへいきます。
+
+  - key: ja:exercise:pi-review-order-meet
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mashouka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Ngày mai mình gặp nhau lúc mấy giờ nhỉ?” (あいます - gặp)"
+      tokens:
+        - { id: t1, text: なんじに }
+        - { id: t2, text: あいましょうか }
+        - { id: t3, text: あした }
+    answer:
+      orders:
+        - [t3, t1, t2]
+    explanation:
+      vi: あした (ngày mai) đứng đầu; なんじに - lúc mấy giờ (giờ đi với に); ましょうか hỏi ý người kia.
+    display_answer: あしたなんじにあいましょうか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:pi-review-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kouen
+    prompt:
+      template: "Công viên - {{b1}}. Rảnh - {{b2}}. Bận - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [こうえん, 公園]
+        b2: [ひま, 暇]
+        b3: [いそがしい, 忙しい]
+    known_wrong:
+      - answer: こえん
+        feedback_vi: こう là âm dài - こうえん.
+        error_tag: long_vowel
+      - answer: ひまい
+        feedback_vi: ひま là tính từ な, không có đuôi い.
+        error_tag: adjective_type
+    explanation:
+      vi: こうえん (công viên, âm dài), ひま (rảnh, tính từ な), いそがしい (bận, tính từ い).
+    display_answer: こうえん / ひま / いそがしい
+
+  - key: ja:exercise:pi-review-write-busy-free
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hima
+    prompt:
+      source_text: Hôm nay tôi bận. Nhưng ngày mai thì rảnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きょうはいそがしいです。でも、あしたはひまです。
+        - 今日は忙しいです。でも、明日は暇です。
+        - きょうはいそがしいですが、あしたはひまです。
+        - 今日は忙しいですが、明日は暇です。
+        - きょうはいそがしいです。あしたはひまです。
+        - 今日は忙しいです。明日は暇です。
+        - わたしはきょうはいそがしいです。でも、あしたはひまです。
+    known_wrong:
+      - answer: きょうはいそがしいです。でも、あしたはひまいです。
+        feedback_vi: ひま là tính từ な - ひまです.
+        error_tag: adjective_type
+      - answer: きょうはいそがしいなです。でも、あしたはひまです。
+        feedback_vi: Tính từ い không thêm な trước です.
+        error_tag: adjective_type
+    explanation:
+      vi: きょうは いそがしいです (tính từ い) + でも + あしたは ひまです (tính từ な). は sau きょう, あした làm nổi bật sự đối lập.
+    display_answer: きょうはいそがしいです。でも、あしたはひまです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:pi-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:masenka
+    prompt:
+      source_text: にちようびはひまですか。いっしょにこうえんへいきませんか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chủ nhật bạn rảnh không? Cùng đi công viên không?
+        - Chủ nhật bạn có rảnh không? Cùng đi công viên không?
+        - Chủ nhật bạn có rảnh không? Cùng đi công viên nhé?
+        - Chủ nhật bạn rảnh không? Mình cùng đi công viên nhé?
+        - Chủ nhật bạn có rảnh không? Đi công viên cùng mình không?
+        - Chủ nhật có rảnh không? Cùng đi công viên không?
+        - Chủ nhật bạn rảnh không? Cùng nhau đi công viên không?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chủ nhật bạn bận không? Cùng đi công viên không?
+        feedback_vi: ひま là "rảnh"; bận là いそがしい.
+        error_tag: vocab_antonym
+    explanation:
+      vi: ひまですか - rảnh không?; いっしょに ... いきませんか - cùng đi ... không? (lời rủ).
+    display_answer: Chủ nhật bạn rảnh không? Cùng đi công viên không?
+
+  - key: ja:exercise:pi-review-mcq-agree
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:mashou
+    prompt:
+      stem: "Bạn nhắn じゅうじにえきでまちましょうか。 (10 giờ mình đợi nhau ở ga nhé?) Bạn đồng ý. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: f6d, text: ええ、そうしましょう。, lang: ja }
+        - { id: d1f, text: いいえ、まちましょう。, lang: ja }
+        - { id: s5g, text: ええ、まちませんか。, lang: ja }
+        - { id: a9h, text: ええ、まちました。, lang: ja }
+    answer:
+      correct_option_id: f6d
+    explanation:
+      vi: そうしましょう - "cứ làm vậy đi", câu đồng ý rất tự nhiên. いいえ mâu thuẫn với ましょう; まちませんか là rủ lại; まちました là quá khứ.
+    display_answer: ええ、そうしましょう。
+
+  - key: ja:exercise:pi-review-order-family-beach
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:particle-to-with
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Thứ Bảy tôi đi biển cùng gia đình.”"
+      tokens:
+        - { id: t1, text: うみへ }
+        - { id: t2, text: かぞくと }
+        - { id: t3, text: いきます }
+        - { id: t4, text: どようびは }
+    answer:
+      orders:
+        - [t4, t2, t1, t3]
+        - [t4, t1, t2, t3]
+    explanation:
+      vi: どようびは (chủ đề thời gian) đứng đầu; かぞくと và うみへ đổi chỗ được; いきます cuối câu.
+    display_answer: どようびはかぞくとうみへいきます。

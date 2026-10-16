@@ -1,0 +1,338 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:to-ya
+order_index: 2
+level: n5
+title:
+  vi: Và, cùng với - と, や〜など, いっしょに, ひとりで
+objectives:
+  - vi: Nối danh từ bằng と (kể đủ) và や〜など (kể ví dụ).
+  - vi: Nói làm việc cùng ai bằng N と (いっしょに).
+  - vi: Nói làm một mình bằng ひとりで.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:ga-mo]
+items:
+  - item: ja:item:particle-to-and
+  - item: ja:item:particle-to-with
+  - item: ja:item:tomodachi
+  - item: ja:item:issho-ni
+  - item: ja:item:particle-ya-nado
+  - item: ja:item:hitori-de
+  - item: ja:item:kazoku
+    role: reuse
+  - item: ja:item:mashita-masendeshita
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể mình ăn gì, mua gì, đi với ai - "Tôi ăn bánh mì và trứng", "Tôi đi siêu thị cùng bạn", "Tôi đi Nhật một mình".
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ có một chữ "và"; tiếng Nhật chia hai - と khi kể đủ hết (パンとたまご - đúng hai thứ đó), や khi chỉ kể vài ví dụ (パンやたまご - bánh mì, trứng... và thứ khác). Thêm など sau từ cuối để nhấn "vân vân".
+  - type: explain
+    text:
+      vi: Người + と + động từ = làm cùng ai - ともだちとたべます (ăn cùng bạn). Thêm いっしょに cho rõ "cùng nhau" - ともだちといっしょにたべます. Làm một mình - ひとりで.
+  - type: explain
+    text:
+      vi: と, や chỉ nối danh từ. Muốn nói "tôi ăn và uống" không dùng と để nối hai động từ - đó là việc của thể て ở trình độ sau.
+  - type: deep_explain
+    text:
+      vi: ひとり (1 người), ふたり (2 người) là cách đếm người đặc biệt; từ 3 người trở lên dùng số + にん. Thêm で để nói "bằng số người đó" - ひとりで (một mình), ふたりで (hai người cùng nhau). や không dùng cho người làm cùng mình - ともだちやいきます là sai.
+  - type: example
+    target: パンとたまごをたべました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã ăn bánh mì và trứng.
+    note:
+      vi: と - kể đủ (chỉ hai món).
+  - type: example
+    target: ともだちとレストランへいきました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã đi nhà hàng cùng bạn.
+    note:
+      vi: Người + と - cùng với.
+  - type: example
+    target: かぞくといっしょにごはんをたべます。
+    target_lang: ja
+    translation:
+      vi: Tôi ăn cơm cùng gia đình.
+    note:
+      vi: いっしょに nhấn "cùng nhau".
+  - type: example
+    target: かばんにさいふやかぎなどがあります。
+    target_lang: ja
+    translation:
+      vi: Trong cặp có ví, chìa khóa, v.v.
+    note:
+      vi: や〜など - kể vài thứ tiêu biểu. さいふ - ví.
+  - type: example
+    target: ひとりでにほんへいきました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã đi Nhật một mình.
+    note:
+      vi: ひとりで - một mình.
+  - type: common_mistake
+    wrong: ともだちやいっしょにいきます。
+    right: ともだちといっしょにいきます。
+    target_lang: ja
+    note:
+      vi: "\"Cùng với ai\" luôn dùng と, không dùng や."
+  - type: common_mistake
+    wrong: ひとりにいきました。
+    right: ひとりでいきました。
+    target_lang: ja
+    note:
+      vi: Một mình là ひとりで - dùng で, không dùng に.
+  - type: summary
+    points:
+      - vi: N と N - và (kể đủ); N や N など - và... v.v. (kể ví dụ).
+      - vi: (người) と (いっしょに) V - làm cùng ai.
+      - vi: ひとりで - một mình; ふたりで - hai người.
+      - vi: ともだち - bạn bè.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:to-ya-mcq-family
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-to-with
+    prompt:
+      stem: "Câu nào nghĩa là \"Tôi đi Nhật cùng gia đình.\"?"
+      stem_lang: vi
+      options:
+        - { id: p3m, text: かぞくとにほんへいきます。, lang: ja }
+        - { id: o8n, text: かぞくやにほんへいきます。, lang: ja }
+        - { id: i2b, text: かぞくをにほんへいきます。, lang: ja }
+        - { id: u6v, text: かぞくににほんへいきます。, lang: ja }
+    answer:
+      correct_option_id: p3m
+    explanation:
+      vi: Đi cùng ai - người + と. や chỉ dùng để liệt kê đồ vật; を và に không mang nghĩa "cùng với".
+    display_answer: かぞくとにほんへいきます。
+
+  - key: ja:exercise:to-ya-mcq-ya
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-ya-nado
+    prompt:
+      stem: "Bạn chỉ kể vài món ví dụ: \"Tôi đã mua rau, thịt, v.v.\" - やさい ___ にくなどをかいました。"
+      stem_lang: vi
+      options:
+        - { id: y4c, text: や, lang: ja }
+        - { id: t9x, text: を, lang: ja }
+        - { id: r1z, text: で, lang: ja }
+        - { id: e5l, text: へ, lang: ja }
+    answer:
+      correct_option_id: y4c
+    explanation:
+      vi: や〜など kể vài thứ tiêu biểu, ngầm hiểu còn thứ khác. を, で, へ không nối được hai danh từ.
+    display_answer: や
+
+  - key: ja:exercise:to-ya-listen-library
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:issho-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: ともだちといっしょにとしょかんでべんきょうしました。
+      options:
+        - { id: w7k, text: Tôi đã học ở thư viện cùng với bạn., lang: vi }
+        - { id: q2j, text: Tôi đã học ở thư viện một mình., lang: vi }
+        - { id: a6h, text: Tôi đã học ở nhà cùng với bạn., lang: vi }
+        - { id: s1g, text: Tôi đã đọc sách ở thư viện cùng với bạn., lang: vi }
+    answer:
+      correct_option_id: w7k
+    explanation:
+      vi: ともだちといっしょに - cùng với bạn; としょかんで - ở thư viện; べんきょうしました - đã học.
+    display_answer: Tôi đã học ở thư viện cùng với bạn.
+
+  - key: ja:exercise:to-ya-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-to-and
+    prompt:
+      template: "あさごはんはパン{{b1}}コーヒーでした。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Bữa sáng là bánh mì và cà phê (chỉ hai thứ đó)."
+        - Kể đủ hai danh từ - dùng trợ từ "và" kể hết.
+    answer:
+      blanks:
+        b1: [と]
+    known_wrong:
+      - answer: や
+        feedback_vi: や là kể ví dụ, ngầm còn thứ khác; đề bài nói chỉ có hai thứ - dùng と.
+        error_tag: to_ya
+      - answer: を
+        feedback_vi: を chỉ tân ngữ, không nối hai danh từ.
+        error_tag: particle_choice
+    explanation:
+      vi: パンとコーヒー - bánh mì và cà phê (đủ hai thứ). あさごはん - bữa sáng.
+    display_answer: あさごはんはパンとコーヒーでした。
+
+  - key: ja:exercise:to-ya-order-alone
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hitori-de
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi đi Đà Nẵng một mình.”"
+      tokens:
+        - { id: t1, text: ダナンへ }
+        - { id: t2, text: いきます }
+        - { id: t3, text: ひとりで }
+    answer:
+      orders:
+        - [t3, t1, t2]
+        - [t1, t3, t2]
+    explanation:
+      vi: ひとりで có thể đứng trước hoặc sau ダナンへ; động từ いきます luôn ở cuối.
+    display_answer: ひとりでダナンへいきます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:to-ya-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:tomodachi
+    prompt:
+      template: "Bạn bè - {{b1}}. Cùng nhau - {{b2}}. Một mình - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ともだち, 友達]
+        b2: [いっしょに, 一緒に]
+        b3: [ひとりで, 一人で]
+    known_wrong:
+      - answer: いしょに
+        feedback_vi: Có âm ngắt っ - いっしょに.
+        error_tag: sokuon
+      - answer: ひとりに
+        feedback_vi: Một mình là ひとりで.
+        error_tag: particle_choice
+    explanation:
+      vi: ともだち (bạn bè), いっしょに (cùng nhau, có っ), ひとりで (một mình).
+    display_answer: ともだち / いっしょに / ひとりで
+
+  - key: ja:exercise:to-ya-write-teacher-lunch
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:particle-to-with
+    prompt:
+      source_text: Tôi đã ăn trưa cùng với thầy giáo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - せんせいとひるごはんをたべました。
+        - 先生と昼ご飯を食べました。
+        - 先生と昼ごはんを食べました。
+        - せんせいといっしょにひるごはんをたべました。
+        - 先生と一緒に昼ご飯を食べました。
+        - 先生と一緒に昼ごはんを食べました。
+        - わたしはせんせいとひるごはんをたべました。
+        - 私は先生と昼ご飯を食べました。
+        - 私は先生と一緒に昼ご飯を食べました。
+    known_wrong:
+      - answer: せんせいやひるごはんをたべました。
+        feedback_vi: "\"Cùng với\" người dùng と, không dùng や."
+        error_tag: to_ya
+      - answer: せんせいとひるごはんをたべます。
+        feedback_vi: Việc đã làm - たべました.
+        error_tag: tense
+    explanation:
+      vi: せんせいと (cùng thầy) + ひるごはんを + たべました. いっしょに có thể thêm sau と.
+    display_answer: せんせいとひるごはんをたべました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:to-ya-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:particle-ya-nado
+    prompt:
+      source_text: スーパーでりんごやバナナなどをかいました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đã mua táo, chuối, v.v. ở siêu thị.
+        - Tôi đã mua táo, chuối ở siêu thị.
+        - Tôi mua táo, chuối v.v. ở siêu thị.
+        - Tôi đã mua táo và chuối v.v. ở siêu thị.
+        - Ở siêu thị tôi đã mua táo, chuối, v.v.
+        - Ở siêu thị tôi đã mua táo, chuối.
+        - Tôi đã mua táo, chuối và vài thứ khác ở siêu thị.
+        - Ở siêu thị tôi đã mua táo, chuối và vài thứ khác.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã bán táo, chuối ở siêu thị.
+        feedback_vi: かいました là "đã mua", không phải bán.
+        error_tag: verb_choice
+    explanation:
+      vi: スーパーで - ở siêu thị; りんごやバナナなど - táo, chuối, v.v. (kể ví dụ); かいました - đã mua.
+    display_answer: Tôi đã mua táo, chuối, v.v. ở siêu thị.
+
+  - key: ja:exercise:to-ya-mcq-alone
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hitori-de
+    prompt:
+      stem: "Đồng nghiệp hỏi về chuyến đi của bạn - だれといきましたか。 Bạn đi một mình. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: h8d, text: ひとりでいきました。, lang: ja }
+        - { id: j3f, text: ひとりといきました。, lang: ja }
+        - { id: k7g, text: ひとりがいきました。, lang: ja }
+        - { id: l2h, text: ひとりでいきます。, lang: ja }
+    answer:
+      correct_option_id: h8d
+    explanation:
+      vi: Một mình - ひとりで; chuyến đi đã qua - いきました. ひとりと nghĩa là "cùng với một người"; いきます là hiện tại.
+    display_answer: ひとりでいきました。
+
+  - key: ja:exercise:to-ya-order-supermarket
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:issho-ni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi đã đi siêu thị cùng với bạn.”"
+      tokens:
+        - { id: t1, text: スーパーへ }
+        - { id: t2, text: いきました }
+        - { id: t3, text: いっしょに }
+        - { id: t4, text: ともだちと }
+    answer:
+      orders:
+        - [t4, t3, t1, t2]
+        - [t1, t4, t3, t2]
+    explanation:
+      vi: ともだちと いっしょに luôn đi liền nhau (と trước いっしょに); スーパーへ có thể đứng trước hoặc sau cụm đó; động từ cuối câu.
+    display_answer: ともだちといっしょにスーパーへいきました。

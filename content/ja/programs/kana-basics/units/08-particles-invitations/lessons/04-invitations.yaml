@@ -1,0 +1,332 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:invitations
+order_index: 4
+level: n5
+title:
+  vi: Rủ rê và đề nghị - ませんか・ましょう・ましょうか, ね・よ
+objectives:
+  - vi: Rủ ai đó lịch sự bằng V ませんか và nhận lời bằng V ましょう.
+  - vi: Đề nghị giúp đỡ bằng V ましょうか.
+  - vi: Dùng ね (nhỉ) và よ (đấy) ở cuối câu; từ chối khéo bằng ちょっと….
+estimated_minutes: 15
+skills: [grammar, speaking, listening]
+prerequisites: [ja:lesson:kara-made]
+items:
+  - item: ja:item:masenka
+  - item: ja:item:mashou
+  - item: ja:item:mashouka
+  - item: ja:item:ne-yo
+  - item: ja:item:chotto
+  - item: ja:item:eiga
+  - item: ja:item:issho-ni
+    role: reuse
+  - item: ja:item:masu-masen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn rủ bạn bè đi ăn, đi xem phim, nhận lời hoặc từ chối khéo, và đề nghị giúp người khác.
+  - type: explain
+    text:
+      vi: Rủ rê - đổi ます thành ませんか - いっしょにたべませんか (Cùng ăn không?). Dạng phủ định nghe nhẹ nhàng, để người nghe dễ từ chối - giống tiếng Việt "đi ăn với mình không?". Nhận lời - ええ、V ましょう (Ừ, cùng ... nào).
+  - type: explain
+    text:
+      vi: V ましょうか có hai nghĩa - đề nghị làm giúp (にもつをもちましょうか - để tôi xách đồ giúp nhé?) hoặc hỏi ý nhóm (なにをたべましょうか - mình ăn gì nhỉ?). Đề nghị giúp không dùng ませんか.
+  - type: explain
+    text:
+      vi: ね cuối câu tìm sự đồng tình như "nhỉ"; よ báo điều người nghe chưa biết như "đấy". Từ chối - người Nhật hiếm khi nói いいえ thẳng, mà nói すみません、(ngày) はちょっと… và bỏ lửng.
+  - type: deep_explain
+    text:
+      vi: いいですね (hay đấy nhỉ) là câu nhận lời rất hay dùng trước ましょう - いいですね。いきましょう. Khi từ chối, câu bỏ lửng ちょっと… đã đủ hiểu; giải thích dài dòng hay nói いきません thẳng thừng nghe khá cộc. Với cấp trên, dùng よ cẩn thận vì dễ nghe như đang dạy đời.
+  - type: example
+    target: いっしょにひるごはんをたべませんか。 - ええ、いいですね。
+    target_lang: ja
+    translation:
+      vi: Cùng ăn trưa không? - Ừ, hay đấy.
+    note:
+      vi: ませんか - lời rủ; いいですね - nhận lời.
+  - type: example
+    target: ちょっとやすみましょう。
+    target_lang: ja
+    translation:
+      vi: Nghỉ một chút nào.
+    note:
+      vi: ましょう - đề nghị cùng làm.
+  - type: example
+    target: にもつをもちましょうか。 - ありがとうございます。
+    target_lang: ja
+    translation:
+      vi: Để tôi xách hành lý giúp nhé? - Cảm ơn anh.
+    note:
+      vi: ましょうか - đề nghị giúp.
+  - type: example
+    target: あのレストランはおいしいですよ。
+    target_lang: ja
+    translation:
+      vi: Nhà hàng kia ngon đấy.
+    note:
+      vi: よ - báo thông tin mới cho người nghe.
+  - type: example
+    target: すみません、きょうはちょっと…。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, hôm nay thì hơi khó...
+    note:
+      vi: Từ chối khéo - bỏ lửng sau ちょっと.
+  - type: common_mistake
+    wrong: にもつをもちませんか。
+    right: にもつをもちましょうか。
+    target_lang: ja
+    note:
+      vi: Đề nghị làm giúp dùng ましょうか; もちませんか nghe như rủ người kia cùng xách.
+  - type: common_mistake
+    wrong: いいえ、いきません。
+    right: すみません、ちょっと…。
+    target_lang: ja
+    note:
+      vi: Từ chối lời mời bằng いいえ、いきません nghe rất thẳng và lạnh lùng; nói ちょっと… lịch sự hơn.
+  - type: summary
+    points:
+      - vi: V ませんか - rủ (... không?).
+      - vi: V ましょう - cùng ... nào; ええ、V ましょう - nhận lời.
+      - vi: V ましょうか - để tôi ... giúp nhé? / mình ... nhỉ?
+      - vi: ね nhỉ · よ đấy · ちょっと… từ chối khéo · えいが phim.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:invitations-mcq-coffee
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:masenka
+    prompt:
+      stem: "Bạn muốn rủ đồng nghiệp \"Cùng uống cà phê không?\" Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: r8b, text: いっしょにコーヒーをのみませんか。, lang: ja }
+        - { id: e3n, text: いっしょにコーヒーをのみましたか。, lang: ja }
+        - { id: w7m, text: いっしょにコーヒーをのみません。, lang: ja }
+        - { id: q1v, text: いっしょにコーヒーをのみたいですか。, lang: ja }
+    answer:
+      correct_option_id: r8b
+    explanation:
+      vi: Lời rủ lịch sự là ませんか. ましたか hỏi việc đã qua; ません không có か là câu phủ định; たいですか hỏi thẳng mong muốn của người khác nghe thiếu tế nhị.
+    display_answer: いっしょにコーヒーをのみませんか。
+
+  - key: ja:exercise:invitations-mcq-ne
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:ne-yo
+    prompt:
+      stem: "Câu きょうはさむいですね。 nghĩa gần nhất là gì?"
+      stem_lang: vi
+      options:
+        - { id: t5c, text: Hôm nay lạnh nhỉ., lang: vi }
+        - { id: y9x, text: Hôm nay lạnh đấy (bạn chưa biết à)., lang: vi }
+        - { id: u2z, text: Hôm nay có lạnh không?, lang: vi }
+        - { id: i6l, text: Hôm nay không lạnh., lang: vi }
+    answer:
+      correct_option_id: t5c
+    explanation:
+      vi: ね tìm sự đồng tình - "nhỉ". Báo tin cho người chưa biết là よ; câu hỏi cần か.
+    display_answer: Hôm nay lạnh nhỉ.
+
+  - key: ja:exercise:invitations-listen-photo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:mashouka
+    prompt:
+      audio_asset_id: null
+      fallback_text: しゃしんをとりましょうか。
+      options:
+        - { id: o4k, text: Để tôi chụp ảnh giúp bạn nhé?, lang: vi }
+        - { id: p8j, text: Bạn chụp ảnh giúp tôi nhé?, lang: vi }
+        - { id: a3h, text: Tôi đã chụp ảnh rồi., lang: vi }
+        - { id: s7g, text: Chúng ta không chụp ảnh à?, lang: vi }
+    answer:
+      correct_option_id: o4k
+    explanation:
+      vi: しゃしんをとります - chụp ảnh; ましょうか - đề nghị làm giúp. Nhờ người khác làm là cách nói khác (てください, học sau).
+    display_answer: Để tôi chụp ảnh giúp bạn nhé?
+
+  - key: ja:exercise:invitations-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:masenka
+    prompt:
+      template: "あした、いっしょにテニスをし{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Ngày mai cùng chơi tennis không?"
+        - Đuôi rủ rê lịch sự - phủ định + từ để hỏi.
+    answer:
+      blanks:
+        b1: [ませんか]
+    known_wrong:
+      - answer: ました
+        feedback_vi: ました là quá khứ; rủ việc ngày mai dùng ませんか.
+        error_tag: tense
+      - answer: ません
+        feedback_vi: Thiếu か thì thành câu "không chơi"; lời rủ là ませんか.
+        error_tag: invitation_form
+    explanation:
+      vi: します → しませんか - lời rủ. テニスをします - chơi tennis.
+    display_answer: あした、いっしょにテニスをしませんか。
+
+  - key: ja:exercise:invitations-order-restaurant
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mashou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Chúng ta cùng ăn ở nhà hàng kia nào.”"
+      tokens:
+        - { id: t1, text: たべましょう }
+        - { id: t2, text: いっしょに }
+        - { id: t3, text: あのレストランで }
+    answer:
+      orders:
+        - [t3, t2, t1]
+        - [t2, t3, t1]
+    explanation:
+      vi: あのレストランで (ở nhà hàng kia) và いっしょに đổi chỗ được; たべましょう - cùng ăn nào - đứng cuối.
+    display_answer: あのレストランでいっしょにたべましょう。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:invitations-fill-reply
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mashou
+    prompt:
+      template: "Đi cùng không? - いっしょにいき{{b1}}。 Ừ, đi thôi. - ええ、いき{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ませんか]
+        b2: [ましょう]
+    known_wrong:
+      - answer: ました
+        feedback_vi: ました là quá khứ - không dùng để rủ hay nhận lời.
+        error_tag: tense
+      - answer: ません
+        feedback_vi: ません là "không đi"; rủ là ませんか, nhận lời là ましょう.
+        error_tag: invitation_form
+    explanation:
+      vi: Rủ - いきませんか; nhận lời - ええ、いきましょう.
+    display_answer: いっしょにいきませんか。 / ええ、いきましょう。
+
+  - key: ja:exercise:invitations-write-window
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:mashouka
+    prompt:
+      source_text: Để tôi mở cửa sổ giúp nhé?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - まどをあけましょうか。
+        - 窓を開けましょうか。
+        - 窓をあけましょうか。
+        - わたしがまどをあけましょうか。
+        - 私が窓を開けましょうか。
+    known_wrong:
+      - answer: まどをあけませんか。
+        feedback_vi: あけませんか là rủ người kia cùng mở; đề nghị làm giúp dùng ましょうか.
+        error_tag: offer_form
+      - answer: まどをあけましょう。
+        feedback_vi: Thiếu か thì thành "cùng mở cửa sổ nào", không còn là lời hỏi ý.
+        error_tag: offer_form
+    explanation:
+      vi: まど (cửa sổ) + を + あけます (mở) → あけましょうか - để tôi mở giúp nhé?
+    display_answer: まどをあけましょうか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:invitations-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:eiga
+    prompt:
+      source_text: どようびにいっしょにえいがをみませんか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thứ Bảy cùng đi xem phim không?
+        - Thứ Bảy cùng xem phim không?
+        - Thứ Bảy mình cùng xem phim nhé?
+        - Thứ Bảy cùng nhau xem phim không?
+        - Thứ Bảy bạn có muốn xem phim cùng tôi không?
+        - Thứ Bảy xem phim cùng nhau không?
+        - Thứ Bảy cùng đi xem phim nhé?
+        - Thứ Bảy bạn xem phim cùng mình không?
+        - Thứ Bảy này cùng đi xem phim không?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thứ Bảy bạn không xem phim à?
+        feedback_vi: ませんか ở đây là lời rủ, không phải câu hỏi phủ định.
+        error_tag: invitation_meaning
+    explanation:
+      vi: どようびに - vào thứ Bảy; いっしょに - cùng nhau; えいがをみませんか - xem phim không? (lời rủ).
+    display_answer: Thứ Bảy cùng đi xem phim không?
+
+  - key: ja:exercise:invitations-mcq-decline
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:chotto
+    prompt:
+      stem: "Bạn Nhật rủ にちようびにうみへいきませんか。 Chủ nhật bạn bận. Bạn từ chối lịch sự thế nào?"
+      stem_lang: vi
+      options:
+        - { id: d1f, text: すみません、にちようびはちょっと…。, lang: ja }
+        - { id: f5g, text: いいえ、いきません。, lang: ja }
+        - { id: g9h, text: ええ、いきましょう。, lang: ja }
+        - { id: h4j, text: すみません、いきましょう。, lang: ja }
+    answer:
+      correct_option_id: d1f
+    explanation:
+      vi: Người Nhật từ chối bằng lời xin lỗi + ちょっと… bỏ lửng. いいえ、いきません quá thẳng; いきましょう là nhận lời.
+    display_answer: すみません、にちようびはちょっと…。
+
+  - key: ja:exercise:invitations-order-ramen
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:ne-yo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Ramen của quán đó rất ngon đấy.”"
+      tokens:
+        - { id: t1, text: とても }
+        - { id: t2, text: おいしいですよ }
+        - { id: t3, text: ラーメンは }
+        - { id: t4, text: そのみせの }
+    answer:
+      orders:
+        - [t4, t3, t1, t2]
+    explanation:
+      vi: そのみせの ラーメン - ramen của quán đó; とても đứng trước tính từ; よ ở cuối báo tin mới cho người nghe.
+    display_answer: そのみせのラーメンはとてもおいしいですよ。

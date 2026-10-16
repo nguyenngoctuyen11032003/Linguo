@@ -1,0 +1,338 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:adjective-past
+order_index: 4
+level: n5
+title:
+  vi: Hôm qua thế nào? - かったです・でした・どうでしたか
+objectives:
+  - vi: Nói tính từ い ở quá khứ - かったです / くなかったです (いい → よかった).
+  - vi: Nói tính từ な ở quá khứ - でした / じゃありませんでした.
+  - vi: Hỏi và kể cảm nghĩ về việc đã qua bằng どうでしたか.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:past-masu]
+items:
+  - item: ja:item:i-adjective-past
+  - item: ja:item:na-adjective-past
+  - item: ja:item:dou-deshita
+  - item: ja:item:tanoshii
+  - item: ja:item:ii-yokunai
+    role: reuse
+  - item: ja:item:deshita
+    role: reuse
+  - item: ja:item:shizuka-nigiyaka
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời câu hỏi "... thế nào?" về chuyện đã qua - "Rất vui", "Không khó", "Khách sạn đẹp nhưng đắt".
+  - type: explain
+    text:
+      vi: Tính từ い tự mang thì quá khứ - bỏ い, thêm かった - たのしい → たのしかったです (đã vui). Phủ định quá khứ - くない → くなかった - たのしくなかったです. Riêng いい → よかったです.
+  - type: explain
+    text:
+      vi: Tính từ な đổi giống danh từ - しずかでした (đã yên tĩnh), しずかじゃありませんでした (đã không yên tĩnh). Vì vậy bạn chỉ cần nhớ hai "khuôn" - khuôn tính từ い và khuôn danh từ.
+  - type: explain
+    text:
+      vi: Hỏi cảm nghĩ - (N は) どうでしたか (... thế nào?). Tiếng Việt chỉ hỏi "thế nào", tiếng Nhật dùng でした vì sự việc đã kết thúc.
+  - type: deep_explain
+    text:
+      vi: Lỗi rất phổ biến là nói たのしいでした - người học nghĩ です đổi thành でした như danh từ. Với tính từ い, です chỉ để lịch sự, còn thì quá khứ nằm trong かった. Vì thế bạn cũng nghe dạng たのしくありませんでした - nghĩa giống たのしくなかったです.
+  - type: example
+    target: きのうはあつかったです。
+    target_lang: ja
+    translation:
+      vi: Hôm qua trời nóng.
+    note:
+      vi: あつい → あつかった.
+  - type: example
+    target: きのうのパーティーはたのしくなかったです。
+    target_lang: ja
+    translation:
+      vi: Bữa tiệc hôm qua không vui.
+    note:
+      vi: たのしくない → たのしくなかった.
+  - type: example
+    target: まえのアパートはしずかじゃありませんでした。
+    target_lang: ja
+    translation:
+      vi: Căn hộ trước đây (của tôi) không yên tĩnh.
+    note:
+      vi: Tính từ な - じゃありませんでした. まえの - trước đây.
+  - type: example
+    target: にほんはどうでしたか。 - とてもたのしかったです。
+    target_lang: ja
+    translation:
+      vi: Nhật Bản thế nào? - Rất vui.
+    note:
+      vi: Hỏi どうでしたか, trả lời bằng tính từ quá khứ.
+  - type: common_mistake
+    wrong: しけんはむずかしいでした。
+    right: しけんはむずかしかったです。
+    target_lang: ja
+    note:
+      vi: Tính từ い không dùng でした - đổi い thành かった.
+  - type: common_mistake
+    wrong: きのうはいかったです。
+    right: きのうはよかったです。
+    target_lang: ja
+    note:
+      vi: いい biến đổi từ よい - quá khứ là よかった.
+  - type: common_mistake
+    wrong: そのまちはしずかかったです。
+    right: そのまちはしずかでした。
+    target_lang: ja
+    note:
+      vi: しずか là tính từ な - không thêm かった.
+  - type: summary
+    points:
+      - vi: Aい → Aかったです / Aくなかったです.
+      - vi: いい → よかったです / よくなかったです.
+      - vi: Na → Naでした / Naじゃありませんでした.
+      - vi: (N は) どうでしたか - ... thế nào? · たのしい - vui.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:adjective-past-mcq-takakatta
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:i-adjective-past
+    prompt:
+      stem: "Quá khứ của たかいです (đắt) là gì?"
+      stem_lang: vi
+      options:
+        - { id: b7q, text: たかかったです, lang: ja }
+        - { id: n3w, text: たかいでした, lang: ja }
+        - { id: m8e, text: たかでした, lang: ja }
+        - { id: l2r, text: たかくでした, lang: ja }
+    answer:
+      correct_option_id: b7q
+    explanation:
+      vi: Tính từ い - bỏ い thêm かった, rồi giữ です. でした chỉ đi với danh từ và tính từ な.
+    display_answer: たかかったです
+
+  - key: ja:exercise:adjective-past-mcq-shizuka
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:na-adjective-past
+    prompt:
+      stem: "Quá khứ của しずかです (yên tĩnh) là gì?"
+      stem_lang: vi
+      options:
+        - { id: k9t, text: しずかでした, lang: ja }
+        - { id: j4y, text: しずかかったです, lang: ja }
+        - { id: h1u, text: しずかいでした, lang: ja }
+        - { id: g6i, text: しずかなでした, lang: ja }
+    answer:
+      correct_option_id: k9t
+    explanation:
+      vi: しずか là tính từ な nên đổi như danh từ - です → でした. かった chỉ dùng cho tính từ い; な chỉ đứng trước danh từ.
+    display_answer: しずかでした
+
+  - key: ja:exercise:adjective-past-listen-test
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:i-adjective-past
+    prompt:
+      audio_asset_id: null
+      fallback_text: きのうのテストはやさしかったです。
+      options:
+        - { id: f5o, text: Bài kiểm tra hôm qua dễ., lang: vi }
+        - { id: d9p, text: Bài kiểm tra hôm qua khó., lang: vi }
+        - { id: s3a, text: Bài kiểm tra hôm nay dễ., lang: vi }
+        - { id: a7s, text: Bài kiểm tra hôm qua không dễ., lang: vi }
+    answer:
+      correct_option_id: f5o
+    explanation:
+      vi: きのうの - của hôm qua; やさしかった - đã dễ (やさしい → やさしかった). Khó là むずかしい; "không dễ" là やさしくなかった.
+    display_answer: Bài kiểm tra hôm qua dễ.
+
+  - key: ja:exercise:adjective-past-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:i-adjective-past
+    prompt:
+      template: "りょうりはおいし{{b1}}です。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Món ăn (hôm đó) ngon."
+        - Bỏ い của おいしい, thêm đuôi quá khứ của tính từ い.
+    answer:
+      blanks:
+        b1: [かった]
+    known_wrong:
+      - answer: い
+        feedback_vi: おいしいです là hiện tại; món ăn đã ăn rồi nên dùng かった.
+        error_tag: tense
+      - answer: くない
+        feedback_vi: くない là phủ định "không ngon"; câu này khen ngon ở quá khứ.
+        error_tag: negation
+      - answer: いでした
+        feedback_vi: Tính từ い không dùng でした.
+        error_tag: adjective_past
+    explanation:
+      vi: おいしい → おいしかった + です. りょうり - món ăn.
+    display_answer: りょうりはおいしかったです。
+
+  - key: ja:exercise:adjective-past-order-summer
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:tanoshii
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Kỳ nghỉ hè rất vui.” (なつやすみ - kỳ nghỉ hè)"
+      tokens:
+        - { id: t1, text: たのしかったです }
+        - { id: t2, text: なつやすみは }
+        - { id: t3, text: とても }
+    answer:
+      orders:
+        - [t2, t3, t1]
+    explanation:
+      vi: Chủ đề なつやすみは đứng đầu; とても (rất) đứng ngay trước tính từ たのしかったです.
+    display_answer: なつやすみはとてもたのしかったです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:adjective-past-fill-forms
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:na-adjective-past
+    prompt:
+      template: "Hôm qua trời lạnh. - きのうはさむ{{b1}}です。 Thị trấn đó (khi ấy) không nhộn nhịp. - そのまちはにぎやか{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [かった]
+        b2: [じゃありませんでした, ではありませんでした]
+    known_wrong:
+      - answer: くなかった
+        feedback_vi: くなかった là "đã không lạnh"; câu thứ nhất là "đã lạnh" - かった.
+        error_tag: negation
+      - answer: でした
+        feedback_vi: でした là "đã nhộn nhịp"; câu thứ hai cần phủ định - じゃありませんでした.
+        error_tag: negation
+      - answer: くなかったです
+        feedback_vi: にぎやか là tính từ な - không dùng くなかった.
+        error_tag: adjective_type
+    explanation:
+      vi: さむい (い) → さむかった; にぎやか (な) → にぎやかじゃありませんでした.
+    display_answer: きのうはさむかったです。 / そのまちはにぎやかじゃありませんでした。
+
+  - key: ja:exercise:adjective-past-write-exam
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:i-adjective-past
+    prompt:
+      source_text: Bài thi hôm qua không khó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きのうのしけんはむずかしくなかったです。
+        - 昨日の試験は難しくなかったです。
+        - きのうのしけんはむずかしくありませんでした。
+        - 昨日の試験は難しくありませんでした。
+        - きのうのテストはむずかしくなかったです。
+        - 昨日のテストは難しくなかったです。
+        - きのうのテストはむずかしくありませんでした。
+    known_wrong:
+      - answer: きのうのしけんはむずかしいでした。
+        feedback_vi: Tính từ い không dùng でした; và câu cần phủ định - むずかしくなかったです.
+        error_tag: adjective_past
+      - answer: きのうのしけんはむずかしくないでした。
+        feedback_vi: Quá khứ phủ định là くなかったです, không phải くないでした.
+        error_tag: adjective_past
+      - answer: きのうのしけんはむずかしくないです。
+        feedback_vi: Bài thi hôm qua đã qua - くなかったです.
+        error_tag: tense
+    explanation:
+      vi: きのうの (của hôm qua) + しけん + は + むずかしくなかったです. Cả phủ định lẫn quá khứ đều nằm trong tính từ.
+    display_answer: きのうのしけんはむずかしくなかったです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:adjective-past-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:na-adjective-past
+    prompt:
+      source_text: ホテルはきれいでした。でも、たかかったです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khách sạn đẹp nhưng đắt.
+        - Khách sạn sạch đẹp nhưng đắt.
+        - Khách sạn sạch nhưng đắt.
+        - Khách sạn sạch sẽ nhưng đắt.
+        - Khách sạn đẹp nhưng mà đắt.
+        - Khách sạn đẹp nhưng giá đắt.
+        - Khách sạn đẹp. Nhưng đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khách sạn đẹp nhưng rẻ.
+        feedback_vi: たかかった là "đã đắt"; rẻ là やすい.
+        error_tag: vocab_antonym
+    explanation:
+      vi: きれいでした - (đã) đẹp, sạch; でも - nhưng; たかかったです - (đã) đắt. Tiếng Việt không cần chữ "đã" vì ngữ cảnh rõ.
+    display_answer: Khách sạn đẹp nhưng đắt.
+
+  - key: ja:exercise:adjective-past-mcq-party
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:dou-deshita
+    prompt:
+      stem: "Đồng nghiệp hỏi きのうのパーティーはどうでしたか。 Bạn thấy rất vui. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: z5d, text: とてもたのしかったです。, lang: ja }
+        - { id: x1f, text: とてもたのしいでした。, lang: ja }
+        - { id: c6g, text: とてもたのしかったでした。, lang: ja }
+        - { id: v2h, text: とてもたのしくなかったです。, lang: ja }
+    answer:
+      correct_option_id: z5d
+    explanation:
+      vi: Chuyện đã qua - たのしい → たのしかったです. たのしいでした và かったでした đều sai khuôn; くなかった nghĩa ngược lại.
+    display_answer: とてもたのしかったです。
+
+  - key: ja:exercise:adjective-past-order-lunch
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:i-adjective-past
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Bữa trưa hôm qua không ngon.” (ひるごはん - bữa trưa)"
+      tokens:
+        - { id: t1, text: おいしくなかったです }
+        - { id: t2, text: ひるごはんは }
+        - { id: t3, text: きのうの }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: きのうの + ひるごはん - bữa trưa của hôm qua (の nối hai danh từ); おいしい → おいしくなかった.
+    display_answer: きのうのひるごはんはおいしくなかったです。

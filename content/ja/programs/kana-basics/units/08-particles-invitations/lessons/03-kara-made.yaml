@@ -1,0 +1,350 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kara-made
+order_index: 3
+level: n5
+title:
+  vi: Từ... đến... - から・まで, 〜じかん, 〜ぐらい
+objectives:
+  - vi: Nói khoảng thời gian và quãng đường bằng から〜まで.
+  - vi: Phân biệt 〜じ (lúc mấy giờ) với 〜じかん (bao nhiêu tiếng).
+  - vi: Hỏi "bao lâu" bằng どのくらい và trả lời "khoảng" bằng 〜ぐらい.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:to-ya]
+items:
+  - item: ja:item:kara-made
+  - item: ja:item:jikan
+  - item: ja:item:gurai
+  - item: ja:item:donokurai
+  - item: ja:item:ji-hours
+    role: reuse
+  - item: ja:item:fun-minutes
+    role: reuse
+  - item: ja:item:youbi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói giờ mở cửa, giờ học, thời gian đi lại - "Từ 9 giờ đến 12 giờ", "Từ nhà đến trường khoảng 10 phút", "Mỗi ngày tôi học 2 tiếng".
+  - type: explain
+    text:
+      vi: から = "từ" (điểm bắt đầu), まで = "đến" (điểm kết thúc), đặt sau danh từ chỉ giờ, ngày hoặc nơi chốn - くじからごじまで, うちからえきまで. Thứ tự giống tiếng Việt "từ A đến B", chỉ khác là trợ từ đứng sau.
+  - type: explain
+    text:
+      vi: 〜じ là thời điểm (にじ - lúc 2 giờ), 〜じかん là độ dài (にじかん - 2 tiếng). Độ dài thời gian không đi với に - にじかんべんきょうします.
+  - type: explain
+    text:
+      vi: Hỏi bao lâu, bao xa - どのくらい (hoặc どのぐらい) + かかりますか (mất bao lâu?). Trả lời ước chừng - số + ぐらい (khoảng) - さんじゅっぷんぐらい.
+  - type: deep_explain
+    text:
+      vi: Giờ mở cửa thường nói gọn - ぎんこうはくじからさんじまでです (ngân hàng làm từ 9 đến 3 giờ), không cần động từ. Khi chỉ mốc thời gian chính xác, ぐらい đổi thành ごろ (くじごろ - khoảng 9 giờ); ぐらい dùng cho số lượng, độ dài. かかります - mất (thời gian, tiền).
+  - type: example
+    target: じゅぎょうはくじからじゅうにじまでです。
+    target_lang: ja
+    translation:
+      vi: Giờ học từ 9 giờ đến 12 giờ.
+    note:
+      vi: Câu nói giờ giấc không cần động từ.
+  - type: example
+    target: とうきょうからおおさかまでしんかんせんでいきます。
+    target_lang: ja
+    translation:
+      vi: Tôi đi từ Tokyo đến Osaka bằng tàu Shinkansen.
+    note:
+      vi: から〜まで cho nơi chốn; で ở đây là "bằng" (phương tiện).
+  - type: example
+    target: まいにちにじかんぐらいにほんごをべんきょうします。
+    target_lang: ja
+    translation:
+      vi: Mỗi ngày tôi học tiếng Nhật khoảng 2 tiếng.
+    note:
+      vi: にじかん - 2 tiếng; ぐらい - khoảng.
+  - type: example
+    target: えきからびょういんまでどのくらいかかりますか。 - ごふんぐらいです。
+    target_lang: ja
+    translation:
+      vi: Từ ga đến bệnh viện mất bao lâu? - Khoảng 5 phút.
+    note:
+      vi: どのくらい hỏi độ dài; びょういん - bệnh viện.
+  - type: common_mistake
+    wrong: まいにちはちじにかんねます。
+    right: まいにちはちじかんねます。
+    target_lang: ja
+    note:
+      vi: Độ dài thời gian (はちじかん - 8 tiếng) không dùng に.
+  - type: common_mistake
+    wrong: うちまでがっこうからあるきます。
+    right: うちからがっこうまであるきます。
+    target_lang: ja
+    note:
+      vi: から đánh dấu điểm xuất phát (nhà), まで đánh dấu điểm đến (trường) - đặt nhầm là đổi nghĩa.
+  - type: common_mistake
+    wrong: えきまでいくらかかりますか。
+    right: えきまでどのくらいかかりますか。
+    target_lang: ja
+    note:
+      vi: Muốn hỏi mất bao lâu mà dùng いくら thì thành hỏi giá tiền; thời gian dùng どのくらい.
+  - type: summary
+    points:
+      - vi: N から N まで - từ... đến... (giờ, ngày, nơi chốn).
+      - vi: 〜じ lúc mấy giờ · 〜じかん bao nhiêu tiếng (không に).
+      - vi: どのくらいかかりますか - mất bao lâu?
+      - vi: số + ぐらい / くらい - khoảng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kara-made-mcq-nine-five
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kara-made
+    prompt:
+      stem: "\"Từ 9 giờ đến 5 giờ\" nói thế nào?"
+      stem_lang: vi
+      options:
+        - { id: m2q, text: くじからごじまで, lang: ja }
+        - { id: n6w, text: くじまでごじから, lang: ja }
+        - { id: b9e, text: くじにごじまで, lang: ja }
+        - { id: v3r, text: くじからごじに, lang: ja }
+    answer:
+      correct_option_id: m2q
+    explanation:
+      vi: から (từ) đi sau giờ bắt đầu, まで (đến) đi sau giờ kết thúc. に chỉ một mốc, không diễn tả "từ... đến...".
+    display_answer: くじからごじまで
+
+  - key: ja:exercise:kara-made-mcq-hours
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:jikan
+    prompt:
+      stem: "Câu nào nghĩa là \"Mỗi ngày tôi ngủ 7 tiếng.\"?"
+      stem_lang: vi
+      options:
+        - { id: c7t, text: まいにちしちじかんねます。, lang: ja }
+        - { id: x4y, text: まいにちしちじにねます。, lang: ja }
+        - { id: z8u, text: まいにちしちじかんにねます。, lang: ja }
+        - { id: l1i, text: まいにちしちじねます。, lang: ja }
+    answer:
+      correct_option_id: c7t
+    explanation:
+      vi: Độ dài - しちじかん (7 tiếng), không có に. しちじにねます là "ngủ lúc 7 giờ" - nghĩa khác hẳn.
+    display_answer: まいにちしちじかんねます。
+
+  - key: ja:exercise:kara-made-listen-department
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kara-made
+    prompt:
+      audio_asset_id: null
+      fallback_text: デパートはじゅうじからはちじまでです。
+      options:
+        - { id: k5o, text: Trung tâm thương mại mở cửa từ 10 giờ đến 8 giờ., lang: vi }
+        - { id: j9p, text: Trung tâm thương mại mở cửa từ 8 giờ đến 10 giờ., lang: vi }
+        - { id: h4a, text: Trung tâm thương mại mở cửa từ 10 giờ đến 4 giờ., lang: vi }
+        - { id: g8s, text: Ngân hàng mở cửa từ 10 giờ đến 8 giờ., lang: vi }
+    answer:
+      correct_option_id: k5o
+    explanation:
+      vi: デパート - trung tâm thương mại; じゅうじから - từ 10 giờ; はちじまで - đến 8 giờ. 4 giờ là よじ, ngân hàng là ぎんこう.
+    display_answer: Trung tâm thương mại mở cửa từ 10 giờ đến 8 giờ.
+
+  - key: ja:exercise:kara-made-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kara-made
+    prompt:
+      template: "えき{{b1}}ホテル{{b2}}タクシーでいきました。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi đã đi taxi từ ga đến khách sạn."
+        - Chỗ thứ nhất là "từ", chỗ thứ hai là "đến".
+    answer:
+      blanks:
+        b1: [から]
+        b2: [まで, へ, に]
+    known_wrong:
+      - answer: で
+        feedback_vi: で là "ở" hoặc "bằng" (phương tiện, như タクシーで); điểm xuất phát dùng から.
+        error_tag: particle_choice
+      - answer: を
+        feedback_vi: を không chỉ điểm đầu hay điểm cuối của quãng đường.
+        error_tag: particle_choice
+    explanation:
+      vi: えきから (từ ga) + ホテルまで (đến khách sạn) + タクシーで (bằng taxi). ホテルへ / ホテルに cũng nói được.
+    display_answer: えきからホテルまでタクシーでいきました。
+
+  - key: ja:exercise:kara-made-order-weekdays
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kara-made
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi làm việc từ thứ Hai đến thứ Sáu.”"
+      tokens:
+        - { id: t1, text: はたらきます }
+        - { id: t2, text: きんようびまで }
+        - { id: t3, text: げつようびから }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: げつようびから (từ thứ Hai) + きんようびまで (đến thứ Sáu) + はたらきます.
+    display_answer: げつようびからきんようびまではたらきます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kara-made-fill-how-long
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:donokurai
+    prompt:
+      template: "Từ nhà đến ga mất bao lâu? - うちからえきまで{{b1}}かかりますか。 Khoảng 15 phút. - じゅうごふん{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [どのくらい, どのぐらい]
+        b2: [ぐらい, くらい]
+    known_wrong:
+      - answer: いくら
+        feedback_vi: いくら hỏi giá tiền; hỏi mất bao lâu dùng どのくらい.
+        error_tag: question_word
+      - answer: いくつ
+        feedback_vi: いくつ hỏi số lượng đồ vật hoặc tuổi.
+        error_tag: question_word
+      - answer: ごろ
+        feedback_vi: ごろ dùng cho mốc giờ (くじごろ); độ dài 15 phút dùng ぐらい.
+        error_tag: gurai_goro
+    explanation:
+      vi: どのくらいかかりますか - mất bao lâu; じゅうごふんぐらい - khoảng 15 phút.
+    display_answer: うちからえきまでどのくらいかかりますか。 / じゅうごふんぐらいです。
+
+  - key: ja:exercise:kara-made-write-study
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kara-made
+    prompt:
+      source_text: Tôi học tiếng Nhật từ 8 giờ đến 10 giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はちじからじゅうじまでにほんごをべんきょうします。
+        - 八時から十時まで日本語を勉強します。
+        - 8時から10時まで日本語を勉強します。
+        - わたしははちじからじゅうじまでにほんごをべんきょうします。
+        - 私は8時から10時まで日本語を勉強します。
+        - にほんごをはちじからじゅうじまでべんきょうします。
+        - はちじからじゅうじまでにほんごをべんきょうしました。
+        - 8時から10時まで日本語を勉強しました。
+    known_wrong:
+      - answer: はちじにからじゅうじまでにほんごをべんきょうします。
+        feedback_vi: Đã có から thì không thêm に.
+        error_tag: particle_ni_time
+      - answer: はちじまでじゅうじからにほんごをべんきょうします。
+        feedback_vi: から đi với giờ bắt đầu (8 giờ), まで với giờ kết thúc (10 giờ).
+        error_tag: kara_made_order
+    explanation:
+      vi: はちじから + じゅうじまで + にほんごを + べんきょうします.
+    display_answer: はちじからじゅうじまでにほんごをべんきょうします。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kara-made-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:kara-made
+    prompt:
+      source_text: このみせはあさしちじからよるじゅういちじまでです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng này mở cửa từ 7 giờ sáng đến 11 giờ đêm.
+        - Cửa hàng này mở từ 7 giờ sáng đến 11 giờ đêm.
+        - Cửa hàng này mở cửa từ 7 giờ sáng đến 11 giờ tối.
+        - Cửa hàng này mở từ 7 giờ sáng đến 11 giờ tối.
+        - Cửa hàng này từ 7 giờ sáng đến 11 giờ đêm.
+        - Cửa hàng này làm việc từ 7 giờ sáng đến 11 giờ đêm.
+        - Cửa hàng này bán từ 7 giờ sáng đến 11 giờ đêm.
+        - Cửa hàng này mở cửa từ bảy giờ sáng đến mười một giờ đêm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cửa hàng này mở cửa từ 7 giờ sáng đến 1 giờ đêm.
+        feedback_vi: じゅういちじ là 11 giờ; 1 giờ là いちじ.
+        error_tag: number
+    explanation:
+      vi: あさしちじから - từ 7 giờ sáng; よるじゅういちじまで - đến 11 giờ đêm. Câu giờ mở cửa không cần động từ.
+    display_answer: Cửa hàng này mở cửa từ 7 giờ sáng đến 11 giờ đêm.
+
+  - key: ja:exercise:kara-made-mcq-flight
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:donokurai
+    prompt:
+      stem: "Bạn muốn hỏi đồng nghiệp người Nhật \"Từ Hà Nội đến Tokyo đi máy bay mất bao lâu?\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f3d, text: ハノイからとうきょうまでひこうきでどのくらいかかりますか。, lang: ja }
+        - { id: d7f, text: ハノイまでとうきょうからひこうきでどのくらいかかりますか。, lang: ja }
+        - { id: s2g, text: ハノイからとうきょうまでひこうきでいくらかかりますか。, lang: ja }
+        - { id: a6h, text: ハノイからとうきょうまでひこうきでなんじかかりますか。, lang: ja }
+    answer:
+      correct_option_id: f3d
+    explanation:
+      vi: Hà Nội là điểm đi - から, Tokyo là điểm đến - まで; hỏi thời gian dùng どのくらい. いくら hỏi tiền vé; なんじ hỏi "mấy giờ".
+    display_answer: ハノイからとうきょうまでひこうきでどのくらいかかりますか。
+
+  - key: ja:exercise:kara-made-write-ten-minutes
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:gurai
+    prompt:
+      source_text: Từ nhà tôi đến trường khoảng 10 phút.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - うちからがっこうまでじゅっぷんぐらいです。
+        - うちからがっこうまでじゅっぷんくらいです。
+        - うちからがっこうまでじっぷんぐらいです。
+        - 家から学校まで10分ぐらいです。
+        - 家から学校まで10分くらいです。
+        - 家から学校まで十分ぐらいです。
+        - わたしのうちからがっこうまでじゅっぷんぐらいです。
+        - 私の家から学校まで10分ぐらいです。
+        - うちからがっこうまでじゅっぷんぐらいかかります。
+        - 家から学校まで10分ぐらいかかります。
+    known_wrong:
+      - answer: うちまでがっこうからじゅっぷんぐらいです。
+        feedback_vi: Nhà là điểm xuất phát - うちから; trường là điểm đến - がっこうまで.
+        error_tag: kara_made_order
+      - answer: うちからがっこうまでじゅうふんぐらいです。
+        feedback_vi: 10 phút đọc là じゅっぷん (hoặc じっぷん), không phải じゅうふん.
+        error_tag: counter_reading
+    explanation:
+      vi: うちから + がっこうまで + じゅっぷんぐらいです. ぐらい đứng sau con số để nói "khoảng".
+    display_answer: うちからがっこうまでじゅっぷんぐらいです。

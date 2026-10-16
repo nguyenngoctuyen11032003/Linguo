@@ -1,0 +1,445 @@
+# Học liệu unit "Tính từ và thì quá khứ" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: tính từ đuôi い ----------------
+  - key: ja:item:i-adjective
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: Aいです / Aくないです
+      romanization: A-i desu / A-ku nai desu
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: Tính từ đuôi い đứng trước です để miêu tả (おおきいです - to). Phủ định đổi い cuối thành くない (おおきくないです - không to). Đứng trước danh từ thì giữ nguyên - おおきいいえ (ngôi nhà to).
+      examples:
+        - target: このへやはちいさくないです。
+          translation:
+            vi: Căn phòng này không nhỏ.
+      confusion:
+        vi: Không thêm な hay の giữa tính từ い và danh từ - nói おおきいいえ, không nói おおきいないえ.
+
+  - key: ja:item:ookii-chiisai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 大きい / 小さい
+      reading: おおきい / ちいさい
+      romanization: ōkii / chiisai
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: おおきい - to, lớn; ちいさい - nhỏ, bé.
+      examples:
+        - target: ちいさいねこがいます。
+          translation:
+            vi: Có một con mèo nhỏ.
+      pronunciation_note:
+        vi: おお là âm "ô" kéo dài hai nhịp - "ô-ô-ki-i".
+
+  - key: ja:item:atarashii-furui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 新しい / 古い
+      reading: あたらしい / ふるい
+      romanization: atarashii / furui
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: あたらしい - mới; ふるい - cũ (đồ vật, nhà cửa). Không dùng ふるい cho người già.
+      examples:
+        - target: あたらしいくるまです。
+          translation:
+            vi: Đó là chiếc ô tô mới.
+
+  - key: ja:item:muzukashii-yasashii
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 難しい / 易しい
+      reading: むずかしい / やさしい
+      romanization: muzukashii / yasashii
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: むずかしい - khó; やさしい - dễ. やさしい viết chữ Hán khác (優しい) còn có nghĩa "hiền, tốt bụng".
+      examples:
+        - target: かんじはむずかしいです。
+          translation:
+            vi: Chữ Hán khó.
+      confusion:
+        vi: Nói "dễ" trong hội thoại người Nhật cũng hay dùng かんたん (đơn giản) - đó là tính từ đuôi な.
+
+  - key: ja:item:atsui-samui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 暑い / 寒い
+      reading: あつい / さむい
+      romanization: atsui / samui
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: あつい - nóng (thời tiết); さむい - lạnh (thời tiết). Đồ ăn, nước nóng cũng đọc あつい nhưng viết 熱い.
+      examples:
+        - target: にほんのふゆはさむいです。
+          translation:
+            vi: Mùa đông ở Nhật lạnh.
+      confusion:
+        vi: Nước, đồ uống lạnh dùng つめたい chứ không dùng さむい - さむい chỉ cảm giác lạnh của không khí, cơ thể.
+
+  - key: ja:item:ii-yokunai
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: いい → よくない
+      romanization: ii → yokunai
+      pos: tính từ bất quy tắc
+    back:
+      meaning:
+        vi: いい nghĩa là "tốt, được". Đây là tính từ đặc biệt - mọi dạng biến đổi đều dựa trên よい - phủ định よくないです, quá khứ よかったです.
+      examples:
+        - target: このカメラはよくないです。
+          translation:
+            vi: Cái máy ảnh này không tốt.
+      confusion:
+        vi: Không nói いくない hay いかった - người Nhật nghe sẽ thấy sai ngay.
+
+  # ---------------- bài 2: tính từ đuôi な ----------------
+  - key: ja:item:na-adjective
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: Naです / Naじゃありません / Na な N
+      romanization: Na desu / Na ja arimasen / Na na N
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: Tính từ đuôi な biến đổi giống danh từ - しずかです, phủ định しずかじゃありません. Khi đứng trước danh từ phải thêm な - しずかなまち (thị trấn yên tĩnh).
+      examples:
+        - target: このこうえんはしずかじゃありません。
+          translation:
+            vi: Công viên này không yên tĩnh.
+      confusion:
+        vi: Không đổi đuôi thành くない như tính từ い - nói しずかじゃありません, không nói しずかくないです.
+
+  - key: ja:item:kirei
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: きれい
+      romanization: kirei
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: Đẹp; sạch sẽ. きれいなへや có thể là "căn phòng đẹp" hoặc "căn phòng sạch".
+      examples:
+        - target: きれいなはなですね。
+          translation:
+            vi: Bông hoa đẹp nhỉ.
+      confusion:
+        vi: きれい kết thúc bằng い nhưng là tính từ đuôi な - phủ định きれいじゃありません, không phải きれくない.
+
+  - key: ja:item:shizuka-nigiyaka
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 静か / にぎやか
+      reading: しずか / にぎやか
+      romanization: shizuka / nigiyaka
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: しずか - yên tĩnh; にぎやか - nhộn nhịp, náo nhiệt (phố xá, bữa tiệc).
+      examples:
+        - target: よるのとしょかんはしずかです。
+          translation:
+            vi: Thư viện buổi tối yên tĩnh.
+
+  - key: ja:item:yuumei
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 有名
+      reading: ゆうめい
+      romanization: yūmei
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: Nổi tiếng. Hán Việt "hữu danh" - "có tên tuổi".
+      examples:
+        - target: ここはゆうめいなみせです。
+          translation:
+            vi: Đây là cửa hàng nổi tiếng.
+      confusion:
+        vi: Trước danh từ cần な - ゆうめいなひと (người nổi tiếng), không nói ゆうめいひと.
+
+  - key: ja:item:shinsetsu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 親切
+      reading: しんせつ
+      romanization: shinsetsu
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: Tử tế, tốt bụng (với người khác). Hán Việt "thân thiết" nhưng nghĩa là "tử tế", không phải "thân".
+      examples:
+        - target: たなかさんはしんせつなひとです。
+          translation:
+            vi: Anh Tanaka là người tốt bụng.
+      confusion:
+        vi: Người Việt dễ hiểu しんせつ là "thân thiết"; muốn nói "thân" dùng なかがいい.
+
+  - key: ja:item:genki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 元気
+      reading: げんき
+      romanization: genki
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: Khỏe mạnh, khỏe khoắn, tràn đầy sức sống. おげんきですか - Bạn có khỏe không?
+      examples:
+        - target: こどもたちはげんきです。
+          translation:
+            vi: Bọn trẻ khỏe mạnh.
+
+  # ---------------- bài 3: quá khứ ました ----------------
+  - key: ja:item:mashita-masendeshita
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V ました / V ませんでした
+      romanization: V-mashita / V-masen deshita
+      pos: thì quá khứ lịch sự
+    back:
+      meaning:
+        vi: Quá khứ của động từ lịch sự - ます → ました (đã làm), ません → ませんでした (đã không làm). Tiếng Việt thêm "đã", tiếng Nhật đổi đuôi động từ.
+      examples:
+        - target: きのうテレビをみませんでした。
+          translation:
+            vi: Hôm qua tôi không xem tivi.
+      confusion:
+        vi: Có từ chỉ thời gian quá khứ như きのう thì động từ vẫn phải đổi sang ました - tiếng Nhật không bỏ được đuôi quá khứ như tiếng Việt bỏ "đã".
+
+  - key: ja:item:deshita
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N でした / N じゃありませんでした
+      romanization: N deshita / N ja arimasen deshita
+      pos: quá khứ của です
+    back:
+      meaning:
+        vi: Quá khứ của です là でした (đã là); phủ định quá khứ là じゃありませんでした (đã không phải là).
+      examples:
+        - target: きのうはにちようびでした。
+          translation:
+            vi: Hôm qua là Chủ nhật.
+
+  - key: ja:item:senshuu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 先週 / 今週 / 来週
+      reading: せんしゅう / こんしゅう / らいしゅう
+      romanization: senshū / konshū / raishū
+      pos: danh từ thời gian
+    back:
+      meaning:
+        vi: せんしゅう - tuần trước; こんしゅう - tuần này; らいしゅう - tuần sau. Giống きのう, các từ này không đi với に.
+      examples:
+        - target: らいしゅうにほんへいきます。
+          translation:
+            vi: Tuần sau tôi đi Nhật.
+      pronunciation_note:
+        vi: しゅう là âm dài "shư-u", kéo hai nhịp.
+
+  - key: ja:item:kesa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 今朝
+      reading: けさ
+      romanization: kesa
+      pos: danh từ thời gian
+    back:
+      meaning:
+        vi: Sáng nay. Chữ Hán là 今 (nay) + 朝 (sáng) nhưng đọc đặc biệt là けさ.
+      examples:
+        - target: けさはパンをたべました。
+          translation:
+            vi: Sáng nay tôi ăn bánh mì.
+
+  # ---------------- bài 4: quá khứ của tính từ ----------------
+  - key: ja:item:i-adjective-past
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Aかったです / Aくなかったです
+      romanization: A-katta desu / A-ku nakatta desu
+      pos: quá khứ tính từ đuôi い
+    back:
+      meaning:
+        vi: Quá khứ tính từ い - đổi い thành かった (たかい → たかかったです - đã đắt). Phủ định quá khứ - くなかった (たかくなかったです). いい thành よかったです.
+      examples:
+        - target: きのうはさむかったです。
+          translation:
+            vi: Hôm qua trời lạnh.
+      confusion:
+        vi: Không nói たかいでした - です đứng sau tính từ い không đổi thành でした; phần quá khứ nằm ở かった.
+
+  - key: ja:item:na-adjective-past
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: Naでした / Naじゃありませんでした
+      romanization: Na deshita / Na ja arimasen deshita
+      pos: quá khứ tính từ đuôi な
+    back:
+      meaning:
+        vi: Tính từ な đổi giống danh từ - しずかでした (đã yên tĩnh), しずかじゃありませんでした (đã không yên tĩnh).
+      examples:
+        - target: むかし、このまちはにぎやかでした。
+          translation:
+            vi: Ngày xưa thị trấn này nhộn nhịp.
+
+  - key: ja:item:dou-deshita
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: どうでしたか
+      romanization: dō deshita ka
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: (N は) どうでしたか - "... thế nào?" hỏi cảm nghĩ về việc đã qua (chuyến đi, bài thi, bộ phim). Trả lời bằng tính từ quá khứ.
+      examples:
+        - target: しけんはどうでしたか。
+          translation:
+            vi: Bài thi thế nào?
+
+  - key: ja:item:tanoshii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 楽しい
+      reading: たのしい
+      romanization: tanoshii
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: Vui (khi chính mình trải qua - chuyến đi, bữa tiệc). Quá khứ たのしかったです - đã rất vui.
+      examples:
+        - target: にほんごのクラスはたのしいです。
+          translation:
+            vi: Lớp tiếng Nhật vui.
+      confusion:
+        vi: Nói về một câu chuyện, bộ phim "hay, thú vị" thì người Nhật dùng おもしろい; たのしい là niềm vui mình được trải nghiệm.
+
+  # ---------------- bài 5: ôn tập ----------------
+  - key: ja:item:shuumatsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 週末
+      reading: しゅうまつ
+      romanization: shūmatsu
+      pos: danh từ thời gian
+    back:
+      meaning:
+        vi: Cuối tuần. Hán Việt "chu mạt" - cuối (mạt) tuần (chu).
+      examples:
+        - target: しゅうまつはなにをしますか。
+          translation:
+            vi: Cuối tuần bạn làm gì?
+
+  - key: ja:item:ryokou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 旅行
+      reading: りょこう
+      romanization: ryokō
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: Du lịch. りょこうします - đi du lịch; (nơi) へりょこうにいきます - đi du lịch đến....
+      examples:
+        - target: なつにりょこうします。
+          translation:
+            vi: Mùa hè tôi đi du lịch.
+      pronunciation_note:
+        vi: りょ là âm ghép một nhịp "ryô", こう kéo dài "kô-ô".
+
+  - key: ja:item:umi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 海
+      reading: うみ
+      romanization: umi
+      pos: danh từ
+    back:
+      meaning:
+        vi: Biển. うみへいきます - đi biển.
+      examples:
+        - target: うみはあおいです。
+          translation:
+            vi: Biển xanh.

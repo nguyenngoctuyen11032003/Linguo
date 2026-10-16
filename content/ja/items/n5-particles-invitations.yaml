@@ -1,0 +1,442 @@
+# Học liệu unit "Trợ từ & lời rủ" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: が và も ----------------
+  - key: ja:item:particle-ga-question
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: だれ / なに / どれ + が
+      romanization: dare ga / nani ga / dore ga
+      pos: trợ từ chủ ngữ
+    back:
+      meaning:
+        vi: Từ để hỏi làm chủ ngữ luôn đi với が, không đi với は - だれがきますか (Ai đến?). Câu trả lời giữ が - たなかさんがきます.
+      examples:
+        - target: どれがあなたのかさですか。
+          translation:
+            vi: Cái nào là ô của bạn?
+      confusion:
+        vi: は giới thiệu chủ đề đã biết; が chỉ đúng "ai/cái gì" là thông tin mới. Vì từ để hỏi luôn là thông tin chưa biết, không bao giờ nói だれはきますか.
+
+  - key: ja:item:particle-mo
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N も
+      romanization: N mo
+      pos: trợ từ "cũng"
+    back:
+      meaning:
+        vi: も nghĩa là "cũng", thay chỗ cho は, が hoặc を - わたしもがくせいです (tôi cũng là sinh viên). Với へ, に, で thì thêm も sau - にほんへもいきます.
+      examples:
+        - target: いぬもねこもすきです。
+          translation:
+            vi: Tôi thích cả chó lẫn mèo.
+      confusion:
+        vi: Không nói わたしはもがくせいです - も đã thay cho は, không đứng chồng lên nó.
+
+  - key: ja:item:nanimo-daremo
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: なにも / だれも / どこへも + phủ định
+      romanization: nani mo / dare mo / doko e mo
+      pos: phủ định hoàn toàn
+    back:
+      meaning:
+        vi: Từ để hỏi + も + động từ phủ định = "không ... gì cả / không ai / không đâu cả" - なにもたべません (không ăn gì cả).
+      examples:
+        - target: へやにだれもいません。
+          translation:
+            vi: Trong phòng không có ai.
+      confusion:
+        vi: Phải đi với phủ định - なにもたべます là câu sai. Tiếng Việt "không... gì" cũng cần chữ "không", giống vậy.
+
+  - key: ja:item:dare
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 誰
+      reading: だれ
+      romanization: dare
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: Ai. Lịch sự hơn là どなた. だれのかばんですか - Cặp của ai?
+      examples:
+        - target: あのひとはだれですか。
+          translation:
+            vi: Người kia là ai?
+
+  # ---------------- bài 2: と và や ----------------
+  - key: ja:item:particle-to-and
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N1 と N2
+      romanization: N1 to N2
+      pos: trợ từ "và"
+    back:
+      meaning:
+        vi: と nối hai danh từ, nghĩa "và", khi bạn kể đủ hết - パンとたまご (bánh mì và trứng, chỉ hai thứ đó).
+      examples:
+        - target: えんぴつとノートをかいました。
+          translation:
+            vi: Tôi đã mua bút chì và vở.
+      confusion:
+        vi: と chỉ nối danh từ; không dùng と để nối hai câu hay hai động từ như "và" tiếng Việt.
+
+  - key: ja:item:particle-to-with
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N と (いっしょに) V
+      romanization: N to (issho ni) V
+      pos: trợ từ "cùng với"
+    back:
+      meaning:
+        vi: Người + と + động từ = làm cùng với ai - かぞくとたべます (ăn cùng gia đình). Thêm いっしょに để nhấn "cùng nhau".
+      examples:
+        - target: せんせいとはなしました。
+          translation:
+            vi: Tôi đã nói chuyện với thầy giáo.
+
+  - key: ja:item:tomodachi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 友達
+      reading: ともだち
+      romanization: tomodachi
+      pos: danh từ
+    back:
+      meaning:
+        vi: Bạn, bạn bè. ともだちのいえ - nhà của bạn.
+      examples:
+        - target: ともだちがにほんにいます。
+          translation:
+            vi: Tôi có bạn ở Nhật.
+
+  - key: ja:item:issho-ni
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 一緒に
+      reading: いっしょに
+      romanization: issho ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: Cùng nhau. いっしょにいきましょう - Cùng đi nào.
+      examples:
+        - target: いっしょにべんきょうします。
+          translation:
+            vi: Chúng tôi học cùng nhau.
+      pronunciation_note:
+        vi: っ là âm ngắt - dừng một nhịp trước しょ - "i(t)-shô-ni".
+
+  - key: ja:item:particle-ya-nado
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N1 や N2 (など)
+      romanization: N1 ya N2 (nado)
+      pos: liệt kê không đủ
+    back:
+      meaning:
+        vi: や nối danh từ khi chỉ kể vài ví dụ tiêu biểu, còn những thứ khác nữa - "... và ... (vân vân)". など ở cuối nhấn ý "vân vân".
+      examples:
+        - target: かばんのなかにほんやノートなどがあります。
+          translation:
+            vi: Trong cặp có sách, vở, v.v.
+      confusion:
+        vi: と là kể đủ, や là kể một phần. Không dùng や để nối người làm cùng mình - nói ともだちとたべます.
+
+  - key: ja:item:hitori-de
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 一人で
+      reading: ひとりで
+      romanization: hitori de
+      pos: cụm phó từ
+    back:
+      meaning:
+        vi: Một mình. ひとりでいきます - đi một mình. Hai người cùng nhau là ふたりで.
+      examples:
+        - target: ひとりでりょうりをつくります。
+          translation:
+            vi: Tôi nấu ăn một mình.
+      confusion:
+        vi: ひとり là cách đếm đặc biệt cho 1 người (không phải いちにん).
+
+  # ---------------- bài 3: から / まで ----------------
+  - key: ja:item:kara-made
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N から N まで
+      romanization: N kara N made
+      pos: trợ từ "từ... đến..."
+    back:
+      meaning:
+        vi: から - từ (điểm bắt đầu), まで - đến (điểm kết thúc), dùng cho cả thời gian lẫn nơi chốn - くじからごじまで (từ 9 giờ đến 5 giờ).
+      examples:
+        - target: ぎんこうはさんじまでです。
+          translation:
+            vi: Ngân hàng làm việc đến 3 giờ.
+      confusion:
+        vi: Có thể dùng riêng から hoặc まで; không cần đủ cả cặp. Đi với giờ thì không thêm に - くじからはじまります.
+
+  - key: ja:item:jikan
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 〜時間
+      reading: 〜じかん
+      romanization: -jikan
+      pos: hậu tố đếm
+    back:
+      meaning:
+        vi: Số + じかん = số giờ đồng hồ (khoảng thời gian) - にじかん (2 tiếng). Khác với 〜じ là "lúc mấy giờ".
+      examples:
+        - target: まいにちはちじかんねます。
+          translation:
+            vi: Mỗi ngày tôi ngủ 8 tiếng.
+      confusion:
+        vi: にじ là "2 giờ" (thời điểm), にじかん là "2 tiếng" (độ dài). Người Việt dễ quên じかん khi nói độ dài.
+
+  - key: ja:item:gurai
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: 〜ぐらい / 〜くらい
+      romanization: gurai / kurai
+      pos: khoảng
+    back:
+      meaning:
+        vi: Đặt sau số lượng, nghĩa "khoảng" - さんじゅっぷんぐらい (khoảng 30 phút). ぐらい và くらい dùng như nhau.
+      examples:
+        - target: ごにんぐらいきます。
+          translation:
+            vi: Khoảng 5 người sẽ đến.
+
+  - key: ja:item:donokurai
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: どのくらい / どのぐらい
+      romanization: dono kurai / dono gurai
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: Bao lâu, bao xa, bao nhiêu (mức độ). うちからえきまでどのくらいかかりますか - Từ nhà đến ga mất bao lâu?
+      examples:
+        - target: にほんごをどのくらいべんきょうしましたか。
+          translation:
+            vi: Bạn đã học tiếng Nhật bao lâu rồi?
+
+  # ---------------- bài 4: rủ rê ----------------
+  - key: ja:item:masenka
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: V ませんか
+      romanization: V-masen ka
+      pos: lời mời
+    back:
+      meaning:
+        vi: Rủ ai đó một cách lịch sự - "... không?" - いっしょにいきませんか (Đi cùng không?). Dạng phủ định để người nghe dễ từ chối, nên rất nhã nhặn.
+      examples:
+        - target: こんどいっしょにおちゃをのみませんか。
+          translation:
+            vi: Lần tới cùng đi uống trà không?
+      confusion:
+        vi: いきませんか ở đây không phải "bạn không đi à?" mà là lời mời; đọc lên giọng ở か.
+
+  - key: ja:item:mashou
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: V ましょう
+      romanization: V-mashō
+      pos: đề nghị cùng làm
+    back:
+      meaning:
+        vi: 'Nghĩa "cùng ... nào!" - đề nghị cả nhóm làm, hoặc nhận lời rủ - ええ、いきましょう (Ừ, đi thôi).'
+      examples:
+        - target: じゃ、はじめましょう。
+          translation:
+            vi: Vậy bắt đầu nào.
+      pronunciation_note:
+        vi: しょう là âm dài "shô-ô".
+
+  - key: ja:item:mashouka
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V ましょうか
+      romanization: V-mashō ka
+      pos: đề nghị giúp / hỏi ý
+    back:
+      meaning:
+        vi: (1) Đề nghị làm giúp - でんきをつけましょうか (Tôi bật đèn giúp nhé?). (2) Hỏi ý cả nhóm - どこでたべましょうか (Mình ăn ở đâu nhỉ?).
+      examples:
+        - target: かばんをもちましょうか。
+          translation:
+            vi: Để tôi cầm cặp giúp nhé?
+      confusion:
+        vi: ましょうか hỏi ý người nghe; ませんか là mời người nghe tham gia. Đề nghị giúp không dùng ませんか.
+
+  - key: ja:item:ne-yo
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: 〜ね / 〜よ
+      romanization: ne / yo
+      pos: trợ từ cuối câu
+    back:
+      meaning:
+        vi: ね - tìm sự đồng tình, giống "nhỉ, nhé" (いいてんきですね - Trời đẹp nhỉ). よ - báo cho người nghe điều họ chưa biết, giống "đấy, đó" (あのみせはやすいですよ - Quán đó rẻ đấy).
+      examples:
+        - target: このケーキ、おいしいですね。
+          translation:
+            vi: Cái bánh này ngon nhỉ.
+      confusion:
+        vi: Dùng よ quá nhiều với người trên nghe như lên lớp; với điều cả hai cùng biết thì dùng ね.
+
+  - key: ja:item:chotto
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: ちょっと…
+      romanization: chotto
+      pos: từ chối khéo
+    back:
+      meaning:
+        vi: Nghĩa gốc là "một chút", nhưng nói ngập ngừng ちょっと… là cách từ chối khéo - người Nhật hiếm khi nói thẳng "không".
+      examples:
+        - target: どようびはちょっと…。
+          translation:
+            vi: Thứ Bảy thì hơi khó...
+      confusion:
+        vi: Người Việt hay từ chối thẳng いいえ、いきません - nghe rất cộc. Nói すみません、ちょっと… là đủ lịch sự.
+
+  - key: ja:item:eiga
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 映画
+      reading: えいが
+      romanization: eiga
+      pos: danh từ
+    back:
+      meaning:
+        vi: Phim (điện ảnh). えいがをみます - xem phim; えいがかん - rạp chiếu phim.
+      examples:
+        - target: このえいがはながいです。
+          translation:
+            vi: Bộ phim này dài.
+      pronunciation_note:
+        vi: えい đọc gần như "ê-ê" kéo dài.
+
+  # ---------------- bài 5: ôn tập ----------------
+  - key: ja:item:kouen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 公園
+      reading: こうえん
+      romanization: kōen
+      pos: danh từ
+    back:
+      meaning:
+        vi: Công viên. Hán Việt "công viên" - gần như giống hệt tiếng Việt.
+      examples:
+        - target: こうえんにおおきいきがあります。
+          translation:
+            vi: Trong công viên có cái cây to.
+
+  - key: ja:item:hima
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 暇
+      reading: ひま
+      romanization: hima
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: Rảnh, có thời gian rảnh. ひまですか - Bạn rảnh không?
+      examples:
+        - target: きょうはひまじゃありません。
+          translation:
+            vi: Hôm nay tôi không rảnh.
+
+  - key: ja:item:isogashii
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 忙しい
+      reading: いそがしい
+      romanization: isogashii
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: Bận. Trái nghĩa với ひま. Phủ định いそがしくないです.
+      examples:
+        - target: せんせいはいつもいそがしいです。
+          translation:
+            vi: Thầy giáo lúc nào cũng bận.

@@ -1,0 +1,323 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:adjectives-past-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Kể chuyện cuối tuần
+objectives:
+  - vi: Kể lại một chuyến đi cuối tuần bằng động từ quá khứ ました / ませんでした.
+  - vi: Tả cảm nghĩ bằng tính từ い và な ở hiện tại và quá khứ.
+  - vi: Hỏi và trả lời どうでしたか một cách tự nhiên.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading, speaking, writing]
+prerequisites: [ja:lesson:adjective-past]
+items:
+  - item: ja:item:shuumatsu
+  - item: ja:item:ryokou
+  - item: ja:item:umi
+  - item: ja:item:i-adjective-past
+    role: reuse
+  - item: ja:item:na-adjective-past
+    role: reuse
+  - item: ja:item:mashita-masendeshita
+    role: reuse
+  - item: ja:item:dou-deshita
+    role: reuse
+  - item: ja:item:kirei
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một cuối tuần đi chơi - đi đâu, làm gì, thấy thế nào - chỉ với những gì đã học trong unit.
+  - type: explain
+    text:
+      vi: Một câu chuyện ngắn thường gồm ba ý - (khi nào) đi đâu - いきました; làm gì - V ました; thấy thế nào - Aかったです / Naでした. Nối hai ý trái ngược bằng でも (nhưng) ở đầu câu sau.
+  - type: explain
+    text:
+      vi: Kiểm tra loại tính từ trước khi chia - い thì かった / くなかった; な thì でした / じゃありませんでした. Danh từ (あめ, やすみ) chia giống tính từ な.
+  - type: deep_explain
+    text:
+      vi: Người Nhật thường mở đầu câu chuyện bằng thời gian - しゅうまつに, せんしゅう - rồi mới nói việc. しゅうまつ có thể đi với に (しゅうまつに) hoặc không, vì nó vừa là khoảng thời gian vừa giống một mốc. Khi kể cho bạn bè, kết thúc bằng một câu cảm nghĩ (たのしかったです) nghe rất tự nhiên.
+  - type: example
+    target: しゅうまつはうみへいきました。
+    target_lang: ja
+    translation:
+      vi: Cuối tuần tôi đã đi biển.
+    note:
+      vi: しゅうまつ - cuối tuần; うみ - biển.
+  - type: example
+    target: りょこうはたのしかったです。
+    target_lang: ja
+    translation:
+      vi: Chuyến du lịch rất vui.
+    note:
+      vi: たのしい → たのしかった.
+  - type: example
+    target: ホテルはあたらしくなかったです。でも、しずかでした。
+    target_lang: ja
+    translation:
+      vi: Khách sạn không mới. Nhưng yên tĩnh.
+    note:
+      vi: Tính từ い và tính từ な trong cùng một đoạn.
+  - type: common_mistake
+    wrong: うみはきれかったです。
+    right: うみはきれいでした。
+    target_lang: ja
+    note:
+      vi: きれい là tính từ な - quá khứ là きれいでした.
+  - type: common_mistake
+    wrong: しゅうまつはうみをいきました。
+    right: しゅうまつはうみへいきました。
+    target_lang: ja
+    note:
+      vi: Nơi đến đi với へ hoặc に, không dùng を.
+  - type: summary
+    points:
+      - vi: Kể chuyện - (khi nào) + (nơi) へ いきました + cảm nghĩ.
+      - vi: Aい → かった / くなかった; Na, N → でした / じゃありませんでした.
+      - vi: でも - nhưng (đầu câu sau).
+      - vi: しゅうまつ cuối tuần · りょこう du lịch · うみ biển.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:adjpast-review-mcq-beach
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:shuumatsu
+    prompt:
+      stem: "Câu nào nghĩa là \"Cuối tuần trước tôi đã đi biển.\"?"
+      stem_lang: vi
+      options:
+        - { id: w3m, text: せんしゅうのしゅうまつはうみへいきました。, lang: ja }
+        - { id: e7n, text: せんしゅうのしゅうまつはうみへいきます。, lang: ja }
+        - { id: r2b, text: せんしゅうのしゅうまつはうみをいきました。, lang: ja }
+        - { id: t6v, text: らいしゅうのしゅうまつはうみへいきました。, lang: ja }
+    answer:
+      correct_option_id: w3m
+    explanation:
+      vi: せんしゅう - tuần trước; いきました - đã đi; nơi đến dùng へ. らいしゅう là tuần sau, không đi với quá khứ.
+    display_answer: せんしゅうのしゅうまつはうみへいきました。
+
+  - key: ja:exercise:adjpast-review-listen-hotel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:ryokou
+    prompt:
+      audio_asset_id: null
+      fallback_text: りょこうのホテルはふるかったです。
+      options:
+        - { id: y8c, text: Khách sạn trong chuyến du lịch cũ., lang: vi }
+        - { id: u4x, text: Khách sạn trong chuyến du lịch mới., lang: vi }
+        - { id: i1z, text: Khách sạn trong chuyến du lịch không cũ., lang: vi }
+        - { id: o5l, text: Khách sạn trong chuyến du lịch đắt., lang: vi }
+    answer:
+      correct_option_id: y8c
+    explanation:
+      vi: りょこうの - của chuyến du lịch; ふるかった - đã cũ (ふるい → ふるかった). Mới là あたらしい, đắt là たかい.
+    display_answer: Khách sạn trong chuyến du lịch cũ.
+
+  - key: ja:exercise:adjpast-review-mcq-kirei
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kirei
+    prompt:
+      stem: "Điền vào chỗ trống để nói \"Biển (hôm đó) rất đẹp.\" - うみはとても ___ 。"
+      stem_lang: vi
+      options:
+        - { id: p9k, text: きれいでした, lang: ja }
+        - { id: a4j, text: きれかったです, lang: ja }
+        - { id: s8h, text: きれいかったです, lang: ja }
+        - { id: d3g, text: きれいなでした, lang: ja }
+    answer:
+      correct_option_id: p9k
+    explanation:
+      vi: きれい là tính từ な - quá khứ là でした. かった chỉ dành cho tính từ い thật sự.
+    display_answer: きれいでした
+
+  - key: ja:exercise:adjpast-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:dou-deshita
+    prompt:
+      template: "しゅうまつはどう{{b1}}か。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Cuối tuần (vừa rồi) của bạn thế nào?"
+        - Hỏi về việc đã qua - quá khứ của です.
+    answer:
+      blanks:
+        b1: [でした]
+    known_wrong:
+      - answer: です
+        feedback_vi: Cuối tuần đã qua - hỏi どうでしたか.
+        error_tag: tense
+      - answer: ました
+        feedback_vi: ました là đuôi động từ; sau どう dùng でした.
+        error_tag: copula_past
+    explanation:
+      vi: どうでしたか - "... thế nào?" về chuyện đã kết thúc.
+    display_answer: しゅうまつはどうでしたか。
+
+  - key: ja:exercise:adjpast-review-order-kyoto
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ryokou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Chuyến du lịch Kyoto không vui.”"
+      tokens:
+        - { id: t1, text: たのしくなかったです }
+        - { id: t2, text: きょうとの }
+        - { id: t3, text: りょこうは }
+    answer:
+      orders:
+        - [t2, t3, t1]
+    explanation:
+      vi: きょうとの りょこう - chuyến du lịch Kyoto (の nối danh từ); たのしい → たのしくなかった.
+    display_answer: きょうとのりょこうはたのしくなかったです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:adjpast-review-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:umi
+    prompt:
+      template: "Cuối tuần - {{b1}}. Du lịch - {{b2}}. Biển - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [しゅうまつ, 週末]
+        b2: [りょこう, 旅行]
+        b3: [うみ, 海]
+    known_wrong:
+      - answer: やま
+        feedback_vi: やま là núi; biển là うみ.
+        error_tag: vocab_choice
+      - answer: しゅまつ
+        feedback_vi: しゅう là âm dài - しゅうまつ.
+        error_tag: long_vowel
+    explanation:
+      vi: しゅうまつ (cuối tuần, âm dài しゅう), りょこう (du lịch, âm dài こう), うみ (biển).
+    display_answer: しゅうまつ / りょこう / うみ
+
+  - key: ja:exercise:adjpast-review-write-no-beach
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mashita-masendeshita
+    prompt:
+      source_text: Hôm qua tôi đã không đi biển.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きのううみへいきませんでした。
+        - きのううみにいきませんでした。
+        - きのうはうみへいきませんでした。
+        - きのうはうみにいきませんでした。
+        - 昨日海へ行きませんでした。
+        - 昨日海に行きませんでした。
+        - 昨日は海へ行きませんでした。
+        - 昨日は海に行きませんでした。
+        - わたしはきのううみへいきませんでした。
+        - 私は昨日海へ行きませんでした。
+        - 私は昨日海に行きませんでした。
+    known_wrong:
+      - answer: きのううみへいきません。
+        feedback_vi: Hôm qua đã qua - いきませんでした.
+        error_tag: tense
+      - answer: きのううみをいきませんでした。
+        feedback_vi: Nơi đến đi với へ hoặc に.
+        error_tag: particle_choice
+    explanation:
+      vi: きのう (không に) + うみへ + いきませんでした.
+    display_answer: きのううみへいきませんでした。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:adjpast-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:ryokou
+    prompt:
+      source_text: しゅうまつにりょこうしました。とてもたのしかったです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần tôi đã đi du lịch. Rất vui.
+        - Cuối tuần tôi đi du lịch. Rất vui.
+        - Cuối tuần tôi đã đi du lịch, vui lắm.
+        - Cuối tuần tôi đã đi du lịch. Đã rất vui.
+        - Cuối tuần tôi đã đi du lịch và rất vui.
+        - Cuối tuần tôi đi du lịch và rất vui.
+        - Cuối tuần tôi đi du lịch, vui lắm.
+        - Cuối tuần tôi đã đi du lịch. Chuyến đi rất vui.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần tôi sẽ đi du lịch. Rất vui.
+        feedback_vi: りょこうしました là quá khứ - "đã đi du lịch".
+        error_tag: tense
+    explanation:
+      vi: しゅうまつに - vào cuối tuần; りょこうしました - đã đi du lịch; とてもたのしかったです - rất vui.
+    display_answer: Cuối tuần tôi đã đi du lịch. Rất vui.
+
+  - key: ja:exercise:adjpast-review-mcq-restaurant
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:i-adjective-past
+    prompt:
+      stem: "Đồng nghiệp hỏi về nhà hàng bạn đến hôm qua - そのレストランはどうでしたか。 Món ăn không ngon nhưng rẻ. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: f2s, text: おいしくなかったです。でも、やすかったです。, lang: ja }
+        - { id: g7a, text: おいしいじゃありませんでした。でも、やすかったです。, lang: ja }
+        - { id: h3q, text: おいしくなかったです。でも、やすいでした。, lang: ja }
+        - { id: j8w, text: おいしかったです。でも、たかかったです。, lang: ja }
+    answer:
+      correct_option_id: f2s
+    explanation:
+      vi: Hai tính từ い ở quá khứ - おいしくなかった (không ngon), やすかった (rẻ). Tính từ い không dùng じゃありませんでした hay でした.
+    display_answer: おいしくなかったです。でも、やすかったです。
+
+  - key: ja:exercise:adjpast-review-order-hokkaido
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:i-adjective-past
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Hokkaido (hồi đó) rất lạnh.”"
+      tokens:
+        - { id: t1, text: さむかったです }
+        - { id: t2, text: とても }
+        - { id: t3, text: ほっかいどうは }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: ほっかいどうは (chủ đề) + とても + さむかったです. さむい → さむかった.
+    display_answer: ほっかいどうはとてもさむかったです。

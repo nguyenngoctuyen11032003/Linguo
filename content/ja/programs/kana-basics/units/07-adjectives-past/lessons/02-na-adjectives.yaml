@@ -1,0 +1,334 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:na-adjectives
+order_index: 2
+level: n5
+title:
+  vi: Tính từ đuôi な - しずかです・しずかなまち
+objectives:
+  - vi: Miêu tả nơi chốn, con người bằng tính từ đuôi な + です.
+  - vi: Phủ định tính từ な bằng じゃありません (giống danh từ).
+  - vi: Thêm な khi tính từ đứng trước danh từ - しずかなまち.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:i-adjectives]
+items:
+  - item: ja:item:na-adjective
+  - item: ja:item:kirei
+  - item: ja:item:shizuka-nigiyaka
+  - item: ja:item:yuumei
+  - item: ja:item:shinsetsu
+  - item: ja:item:genki
+  - item: ja:item:i-adjective
+    role: reuse
+  - item: ja:item:suki
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả thành phố, căn phòng, con người - "Thị trấn này yên tĩnh", "Đó là ngọn núi nổi tiếng", "Phòng tôi không sạch".
+  - type: explain
+    text:
+      vi: Tiếng Nhật có loại tính từ thứ hai - tính từ đuôi な. Ở cuối câu nó hoạt động y như danh từ - しずかです (yên tĩnh), phủ định しずかじゃありません. Vì vậy không đổi đuôi thành くない như tính từ い.
+  - type: explain
+    text:
+      vi: Khi đứng trước danh từ, phải chen な vào giữa - しずかなまち (thị trấn yên tĩnh), ゆうめいなやま (ngọn núi nổi tiếng). Chữ な này chính là lý do nhóm được gọi là "tính từ đuôi な".
+  - type: explain
+    text:
+      vi: Bẫy lớn nhất - きれい (đẹp, sạch) kết thúc bằng い nhưng là tính từ な. Bạn đã gặp すき, きらい - cũng là tính từ な (すきなたべもの - món ăn yêu thích).
+  - type: deep_explain
+    text:
+      vi: Cách nhớ - phần lớn tính từ な là từ gốc Hán (ゆうめい "hữu danh", しんせつ "thân thiết", げんき "nguyên khí"), nên chúng giống danh từ. Trong văn viết hoặc khi trang trọng, じゃありません được nói là ではありません - nghĩa như nhau. Từ điển thường ghi tính từ な là [な形容詞] hoặc "na-adj".
+  - type: example
+    target: このまちはしずかです。
+    target_lang: ja
+    translation:
+      vi: Thị trấn này yên tĩnh.
+    note:
+      vi: Ở cuối câu, tính từ な + です - không có な.
+  - type: example
+    target: ハノイはにぎやかなまちです。
+    target_lang: ja
+    translation:
+      vi: Hà Nội là một thành phố nhộn nhịp.
+    note:
+      vi: Trước danh từ まち phải có な.
+  - type: example
+    target: このへやはきれいじゃありません。
+    target_lang: ja
+    translation:
+      vi: Căn phòng này không sạch.
+    note:
+      vi: きれい là tính từ な - phủ định じゃありません.
+  - type: example
+    target: ふじさんはゆうめいなやまです。
+    target_lang: ja
+    translation:
+      vi: Núi Phú Sĩ là ngọn núi nổi tiếng.
+    note:
+      vi: ゆうめい + な + やま.
+  - type: common_mistake
+    wrong: このへやはきれくないです。
+    right: このへやはきれいじゃありません。
+    target_lang: ja
+    note:
+      vi: きれい trông giống tính từ い nhưng là tính từ な - không đổi い thành くない.
+  - type: common_mistake
+    wrong: ゆうめいひとです。
+    right: ゆうめいなひとです。
+    target_lang: ja
+    note:
+      vi: Tính từ な đứng trước danh từ bắt buộc có な.
+  - type: common_mistake
+    wrong: このまちはしずかなです。
+    right: このまちはしずかです。
+    target_lang: ja
+    note:
+      vi: な chỉ xuất hiện khi theo sau là danh từ; trước です thì bỏ な.
+  - type: summary
+    points:
+      - vi: N は Na です / Na じゃありません - giống danh từ.
+      - vi: Na + な + N - しずかなまち.
+      - vi: きれい, すき, きらい là tính từ な dù có い ở cuối.
+      - vi: きれい đẹp/sạch · しずか yên tĩnh · にぎやか nhộn nhịp · ゆうめい nổi tiếng · しんせつ tốt bụng · げんき khỏe.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:na-adjectives-mcq-which-na
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kirei
+    prompt:
+      stem: Từ nào dưới đây là tính từ đuôi な?
+      stem_lang: vi
+      options:
+        - { id: k2m, text: きれい, lang: ja }
+        - { id: l7n, text: おおきい, lang: ja }
+        - { id: z3b, text: あたらしい, lang: ja }
+        - { id: x8v, text: ちいさい, lang: ja }
+    answer:
+      correct_option_id: k2m
+    explanation:
+      vi: きれい kết thúc bằng い nhưng là tính từ な (きれいなへや, きれいじゃありません). Ba từ còn lại là tính từ い thật sự.
+    display_answer: きれい
+
+  - key: ja:exercise:na-adjectives-mcq-kind-person
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:shinsetsu
+    prompt:
+      stem: "Câu nào nghĩa là \"Chị Yamada là người tốt bụng.\"?"
+      stem_lang: vi
+      options:
+        - { id: c5x, text: やまださんはしんせつなひとです。, lang: ja }
+        - { id: v9c, text: やまださんはしんせつのひとです。, lang: ja }
+        - { id: b4z, text: やまださんはしんせついひとです。, lang: ja }
+        - { id: n1q, text: やまださんはしんせつひとです。, lang: ja }
+    answer:
+      correct_option_id: c5x
+    explanation:
+      vi: しんせつ là tính từ な, nối với danh từ ひと bằng な. の dùng cho danh từ + danh từ; không có dạng しんせつい.
+    display_answer: やまださんはしんせつなひとです。
+
+  - key: ja:exercise:na-adjectives-listen-shop
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:shizuka-nigiyaka
+    prompt:
+      audio_asset_id: null
+      fallback_text: そのみせはにぎやかじゃありません。
+      options:
+        - { id: m6w, text: Cửa hàng đó không đông vui., lang: vi }
+        - { id: j2e, text: Cửa hàng đó đông vui., lang: vi }
+        - { id: h7r, text: Cửa hàng đó không yên tĩnh., lang: vi }
+        - { id: g3t, text: Cửa hàng kia không đông vui., lang: vi }
+    answer:
+      correct_option_id: m6w
+    explanation:
+      vi: その - đó; にぎやかじゃありません - không nhộn nhịp, không đông vui. "Kia" là あの; yên tĩnh là しずか.
+    display_answer: Cửa hàng đó không đông vui.
+
+  - key: ja:exercise:na-adjectives-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:na-adjective
+    prompt:
+      template: "わたしのまちはきれい{{b1}}まちです。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Thị trấn của tôi là một thị trấn đẹp."
+        - Tính từ な đứng trước danh từ cần một chữ nối.
+    answer:
+      blanks:
+        b1: [な]
+    known_wrong:
+      - answer: の
+        feedback_vi: の nối hai danh từ; tính từ な nối với danh từ bằng な.
+        error_tag: na_adjective_link
+      - answer: い
+        feedback_vi: きれい đã có い sẵn; nó là tính từ な nên cần な trước danh từ.
+        error_tag: adjective_type
+    explanation:
+      vi: きれい + な + まち - thị trấn đẹp. Nếu thiếu な thì câu sai ngữ pháp.
+    display_answer: わたしのまちはきれいなまちです。
+
+  - key: ja:exercise:na-adjectives-order-famous-doctor
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:yuumei
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Người kia là bác sĩ nổi tiếng.”"
+      tokens:
+        - { id: t1, text: ゆうめいな }
+        - { id: t2, text: いしゃです }
+        - { id: t3, text: あのひとは }
+    answer:
+      orders:
+        - [t3, t1, t2]
+    explanation:
+      vi: あのひとは (người kia) đứng đầu; ゆうめいな đứng trước danh từ いしゃ - "bác sĩ nổi tiếng".
+    display_answer: あのひとはゆうめいないしゃです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:na-adjectives-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:genki
+    prompt:
+      template: "Yên tĩnh - {{b1}}. Khỏe - {{b2}}. Tốt bụng - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [しずか, 静か]
+        b2: [げんき, 元気]
+        b3: [しんせつ, 親切]
+    known_wrong:
+      - answer: にぎやか
+        feedback_vi: にぎやか là "nhộn nhịp" - trái nghĩa với しずか.
+        error_tag: vocab_antonym
+      - answer: しずかい
+        feedback_vi: しずか là tính từ な, không có đuôi い.
+        error_tag: adjective_type
+    explanation:
+      vi: しずか (yên tĩnh), げんき (khỏe), しんせつ (tốt bụng) đều là tính từ な.
+    display_answer: しずか / げんき / しんせつ
+
+  - key: ja:exercise:na-adjectives-write-room
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kirei
+    prompt:
+      source_text: Căn phòng của tôi không đẹp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしのへやはきれいじゃありません。
+        - 私の部屋はきれいじゃありません。
+        - わたしのへやはきれいではありません。
+        - 私の部屋はきれいではありません。
+        - 私の部屋は綺麗じゃありません。
+        - 私の部屋は綺麗ではありません。
+    known_wrong:
+      - answer: わたしのへやはきれくないです。
+        feedback_vi: きれい là tính từ な - phủ định là きれいじゃありません.
+        error_tag: adjective_type
+      - answer: わたしのへやはきれいくないです。
+        feedback_vi: Tính từ な không dùng くない.
+        error_tag: adjective_type
+      - answer: わたしのへやはきれいです。
+        feedback_vi: Câu cần phủ định - じゃありません.
+        error_tag: negation
+    explanation:
+      vi: わたしのへや (phòng của tôi) + は + きれいじゃありません. きれい vừa là "đẹp" vừa là "sạch".
+    display_answer: わたしのへやはきれいじゃありません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:na-adjectives-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:yuumei
+    prompt:
+      source_text: あそこはゆうめいながっこうです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đằng kia là trường học nổi tiếng.
+        - Đằng kia là ngôi trường nổi tiếng.
+        - Đằng kia là một trường nổi tiếng.
+        - Chỗ kia là trường học nổi tiếng.
+        - Chỗ đằng kia là ngôi trường nổi tiếng.
+        - Kia là trường nổi tiếng.
+        - Đằng kia là trường nổi tiếng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đằng kia là trường học yên tĩnh.
+        feedback_vi: ゆうめい là "nổi tiếng"; yên tĩnh là しずか.
+        error_tag: vocab_choice
+    explanation:
+      vi: あそこ - chỗ đằng kia; ゆうめいな + がっこう - trường học nổi tiếng.
+    display_answer: Đằng kia là trường học nổi tiếng.
+
+  - key: ja:exercise:na-adjectives-mcq-genki
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:genki
+    prompt:
+      stem: "Thầy giáo cũ gặp lại bạn và hỏi おげんきですか。 Bạn khỏe. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: f8y, text: はい、げんきです。, lang: ja }
+        - { id: d2u, text: はい、げんきいです。, lang: ja }
+        - { id: s6i, text: はい、げんきなです。, lang: ja }
+        - { id: a1o, text: いいえ、げんきです。, lang: ja }
+    answer:
+      correct_option_id: f8y
+    explanation:
+      vi: げんき là tính từ な, trước です giữ nguyên - げんきです. Không có げんきい; な chỉ dùng trước danh từ; いいえ mâu thuẫn với "khỏe".
+    display_answer: はい、げんきです。
+
+  - key: ja:exercise:na-adjectives-order-hanoi
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:na-adjective
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Đà Lạt không phải là thành phố nhộn nhịp.”"
+      tokens:
+        - { id: t1, text: ありません }
+        - { id: t2, text: にぎやかな }
+        - { id: t3, text: ダラットは }
+        - { id: t4, text: まちじゃ }
+    answer:
+      orders:
+        - [t3, t2, t4, t1]
+    explanation:
+      vi: ダラットは + にぎやかな まち (thành phố nhộn nhịp) + じゃありません. Phủ định ở đây phủ định cả cụm danh từ "thành phố nhộn nhịp".
+    display_answer: ダラットはにぎやかなまちじゃありません。

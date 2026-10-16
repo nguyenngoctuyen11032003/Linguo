@@ -1,0 +1,324 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:ga-mo
+order_index: 1
+level: n5
+title:
+  vi: Ai? Cũng vậy! - trợ từ が và も
+objectives:
+  - vi: Dùng が sau từ để hỏi làm chủ ngữ (だれが, なにが, どれが) và giữ が khi trả lời.
+  - vi: Nói "cũng" bằng も thay cho は, が, を.
+  - vi: Phủ định hoàn toàn bằng なにも / だれも / どこへも + ません.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:adjectives-past-review]
+items:
+  - item: ja:item:particle-ga-question
+  - item: ja:item:particle-mo
+  - item: ja:item:nanimo-daremo
+  - item: ja:item:dare
+  - item: ja:item:topic-wa
+    role: reuse
+  - item: ja:item:mashita-masendeshita
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi "Ai đã đến?", nói "Tôi cũng là người Việt", "Tôi không ăn gì cả" một cách chính xác.
+  - type: explain
+    text:
+      vi: は nói "về chủ đề này thì..." - phần quan trọng nằm sau は. が chỉ ra chính xác "ai / cái gì" - phần quan trọng nằm trước が. Vì từ để hỏi (だれ, なに, どれ) luôn là thông tin cần biết, nó đi với が - だれがきましたか.
+  - type: explain
+    text:
+      vi: も nghĩa là "cũng" và đứng vào đúng chỗ của は, が, を - わたしはがくせいです → わたしもがくせいです. Với へ, に, で thì giữ trợ từ đó rồi thêm も - にほんへもいきます.
+  - type: explain
+    text:
+      vi: Từ để hỏi + も + phủ định = "không ... gì cả" - なにもたべません (không ăn gì), だれもいません (không có ai), どこへもいきません (không đi đâu). Giống tiếng Việt "không ... gì", câu phải có phủ định.
+  - type: deep_explain
+    text:
+      vi: Khi trả lời câu hỏi có が, người Nhật giữ が - なにがすきですか → すしがすきです. Dùng は ở câu trả lời sẽ nghe như đang so sánh ("sushi thì thích, còn món khác thì không"). も đứng sau danh từ, nên わたしも, ねこも - không bao giờ đứng một mình đầu câu như "cũng" tiếng Việt.
+  - type: example
+    target: だれがきましたか。 - やまださんがきました。
+    target_lang: ja
+    translation:
+      vi: Ai đã đến? - Anh Yamada đã đến.
+    note:
+      vi: Câu hỏi và câu trả lời đều dùng が.
+  - type: example
+    target: わたしもベトナムじんです。
+    target_lang: ja
+    translation:
+      vi: Tôi cũng là người Việt Nam.
+    note:
+      vi: も thay cho は.
+  - type: example
+    target: きのうはなにもかいませんでした。
+    target_lang: ja
+    translation:
+      vi: Hôm qua tôi không mua gì cả.
+    note:
+      vi: なにも + phủ định.
+  - type: example
+    target: なにがいちばんすきですか。
+    target_lang: ja
+    translation:
+      vi: Bạn thích cái gì nhất?
+    note:
+      vi: なに làm chủ ngữ của すき - đi với が. いちばん - nhất.
+  - type: common_mistake
+    wrong: だれはきましたか。
+    right: だれがきましたか。
+    target_lang: ja
+    note:
+      vi: Từ để hỏi làm chủ ngữ không bao giờ đi với は.
+  - type: common_mistake
+    wrong: わたしはもがくせいです。
+    right: わたしもがくせいです。
+    target_lang: ja
+    note:
+      vi: も thay hẳn cho は, không đứng chồng lên nhau.
+  - type: common_mistake
+    wrong: なにもたべます。
+    right: なにもたべません。
+    target_lang: ja
+    note:
+      vi: なにも chỉ đi với động từ phủ định - "không ăn gì cả".
+  - type: summary
+    points:
+      - vi: だれが / なにが / どれが ... か - trả lời giữ が.
+      - vi: N も - cũng (thay は, が, を); へも, にも, でも với trợ từ khác.
+      - vi: なにも / だれも / どこへも + ません - không ... gì / ai / đâu cả.
+      - vi: だれ - ai.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:ga-mo-mcq-who-teacher
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-ga-question
+    prompt:
+      stem: "Câu nào nghĩa là \"Ai là giáo viên?\"?"
+      stem_lang: vi
+      options:
+        - { id: n4c, text: だれがせんせいですか。, lang: ja }
+        - { id: m9x, text: だれはせんせいですか。, lang: ja }
+        - { id: b2z, text: だれをせんせいですか。, lang: ja }
+        - { id: v7l, text: だれもせんせいですか。, lang: ja }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: だれ là từ để hỏi làm chủ ngữ nên đi với が. は không đi sau từ để hỏi; を là tân ngữ; だれも cần phủ định.
+    display_answer: だれがせんせいですか。
+
+  - key: ja:exercise:ga-mo-mcq-also
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-mo
+    prompt:
+      stem: "Anh Tanaka là người Nhật. Bạn muốn nói \"Chị Suzuki cũng là người Nhật.\" - すずきさん ___ にほんじんです。"
+      stem_lang: vi
+      options:
+        - { id: c3k, text: も, lang: ja }
+        - { id: x8j, text: を, lang: ja }
+        - { id: z1h, text: へ, lang: ja }
+        - { id: l5g, text: の, lang: ja }
+    answer:
+      correct_option_id: c3k
+    explanation:
+      vi: "\"Cũng\" là も, đứng ở chỗ của は. を chỉ tân ngữ, へ chỉ hướng, の là \"của\" - không hợp ở đây."
+    display_answer: も
+
+  - key: ja:exercise:ga-mo-listen-nobody
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:nanimo-daremo
+    prompt:
+      audio_asset_id: null
+      fallback_text: へやにはだれもいませんでした。
+      options:
+        - { id: k8f, text: Lúc đó trong phòng không có ai., lang: vi }
+        - { id: j3d, text: Lúc đó trong phòng có mọi người., lang: vi }
+        - { id: h6s, text: Lúc đó trong phòng không có gì., lang: vi }
+        - { id: g2a, text: Lúc đó trong phòng có một người., lang: vi }
+    answer:
+      correct_option_id: k8f
+    explanation:
+      vi: だれも + いませんでした - đã không có ai. "Không có gì" là なにもありません (đồ vật dùng あります).
+    display_answer: Lúc đó trong phòng không có ai.
+
+  - key: ja:exercise:ga-mo-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-ga-question
+    prompt:
+      template: "だれ{{b1}}このケーキをつくりましたか。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Ai đã làm cái bánh này? (つくります - làm, nấu)"
+        - Từ để hỏi làm chủ ngữ cần trợ từ chỉ chủ ngữ.
+    answer:
+      blanks:
+        b1: [が]
+    known_wrong:
+      - answer: は
+        feedback_vi: Sau từ để hỏi làm chủ ngữ không dùng は - dùng が.
+        error_tag: wa_ga
+      - answer: を
+        feedback_vi: Cái bánh mới là tân ngữ (ケーキを); だれ là người làm - chủ ngữ.
+        error_tag: particle_choice
+    explanation:
+      vi: だれが - ai (là người) làm. Câu trả lời cũng sẽ dùng が - ははがつくりました.
+    display_answer: だれがこのケーキをつくりましたか。
+
+  - key: ja:exercise:ga-mo-order-coffee
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-mo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi cũng thích cà phê.”"
+      tokens:
+        - { id: t1, text: すきです }
+        - { id: t2, text: コーヒーが }
+        - { id: t3, text: わたしも }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: わたしも - tôi cũng (thay cho わたしは); cái được thích đi với が; すきです cuối câu.
+    display_answer: わたしもコーヒーがすきです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:ga-mo-fill-particles
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:nanimo-daremo
+    prompt:
+      template: "Tôi không ăn gì cả. - なに{{b1}}たべません。 Ai đã đến vậy? - だれ{{b2}}きましたか。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [も]
+        b2: [が]
+    known_wrong:
+      - answer: を
+        feedback_vi: なにを + phủ định là "không ăn cái gì?"; "không ăn gì cả" dùng なにも.
+        error_tag: nanimo
+      - answer: は
+        feedback_vi: Từ để hỏi không đi với は.
+        error_tag: wa_ga
+    explanation:
+      vi: なにも + ません - không ... gì cả; だれが - ai (chủ ngữ).
+    display_answer: なにもたべません。 / だれがきましたか。
+
+  - key: ja:exercise:ga-mo-write-doctor-too
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-mo
+    prompt:
+      source_text: Tôi cũng là bác sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしもいしゃです。
+        - 私も医者です。
+        - わたしも医者です。
+        - 私もいしゃです。
+    known_wrong:
+      - answer: わたしはもいしゃです。
+        feedback_vi: も thay cho は, không đứng sau は.
+        error_tag: mo_position
+      - answer: わたしはいしゃです。
+        feedback_vi: Câu này thiếu "cũng" - đổi は thành も.
+        error_tag: missing_mo
+    explanation:
+      vi: わたし + も + いしゃです. も đứng đúng chỗ của は.
+    display_answer: わたしもいしゃです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:ga-mo-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:particle-ga-question
+    prompt:
+      source_text: どれがランさんのかばんですか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái nào là cặp của chị Lan?
+        - Cặp của chị Lan là cái nào?
+        - Cái nào là túi của chị Lan?
+        - Túi của chị Lan là cái nào?
+        - Cái nào là cặp của Lan?
+        - Cặp của Lan là cái nào?
+        - Chiếc nào là cặp của chị Lan?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái này là cặp của chị Lan.
+        feedback_vi: どれ là "cái nào" (câu hỏi); "cái này" là これ.
+        error_tag: question_word
+    explanation:
+      vi: どれが - cái nào (chọn trong nhiều cái); ランさんのかばん - cặp của chị Lan.
+    display_answer: Cái nào là cặp của chị Lan?
+
+  - key: ja:exercise:ga-mo-mcq-nowhere
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:nanimo-daremo
+    prompt:
+      stem: "Bạn hỏi しゅうまつ、どこへいきましたか。 Bạn ở nhà cả cuối tuần, không đi đâu cả. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: f9w, text: どこへもいきませんでした。, lang: ja }
+        - { id: d4e, text: どこへいきませんでした。, lang: ja }
+        - { id: s7r, text: どこもへいきませんでした。, lang: ja }
+        - { id: a5t, text: どこへもいきました。, lang: ja }
+    answer:
+      correct_option_id: f9w
+    explanation:
+      vi: Không đi đâu cả - どこ + へ + も + phủ định. も đứng sau へ; thiếu も thì thành câu hỏi lạ; どこへも phải đi với ません.
+    display_answer: どこへもいきませんでした。
+
+  - key: ja:exercise:ga-mo-order-nothing
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:nanimo-daremo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Sáng nay tôi không uống gì cả.”"
+      tokens:
+        - { id: t1, text: のみませんでした }
+        - { id: t2, text: けさ }
+        - { id: t3, text: なにも }
+    answer:
+      orders:
+        - [t2, t3, t1]
+    explanation:
+      vi: けさ (sáng nay) đứng đầu; なにも + のみませんでした - đã không uống gì cả.
+    display_answer: けさなにものみませんでした。

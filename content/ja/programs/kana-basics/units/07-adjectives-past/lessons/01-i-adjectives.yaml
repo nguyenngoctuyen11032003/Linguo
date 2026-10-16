@@ -1,0 +1,338 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:i-adjectives
+order_index: 1
+level: n5
+title:
+  vi: Tính từ đuôi い - おおきいです・おおきくないです
+objectives:
+  - vi: Miêu tả đồ vật, thời tiết bằng tính từ đuôi い + です.
+  - vi: Đổi tính từ い sang phủ định くないです, kể cả いい → よくないです.
+  - vi: Đặt tính từ い ngay trước danh từ - ちいさいかばん.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:food-shopping-review]
+items:
+  - item: ja:item:i-adjective
+  - item: ja:item:ookii-chiisai
+  - item: ja:item:atarashii-furui
+  - item: ja:item:muzukashii-yasashii
+  - item: ja:item:atsui-samui
+  - item: ja:item:ii-yokunai
+  - item: ja:item:takai-yasui
+    role: reuse
+  - item: ja:item:oishii
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn khen chê đồ vật và thời tiết - "Cái cặp này to", "Tiếng Nhật không khó", "Hôm nay không lạnh".
+  - type: explain
+    text:
+      vi: Bạn đã gặp たかい, やすい, おいしい - đó đều là tính từ đuôi い, vì chúng kết thúc bằng い. Mẫu câu - N は + Aい + です. Khác tiếng Việt, tính từ tiếng Nhật đứng ở cuối câu, ngay trước です.
+  - type: explain
+    text:
+      vi: Phủ định - bỏ い cuối, thêm くない - おおきい → おおきくないです (không to). Lý do - tính từ い tự biến đổi giống động từ, nên không dùng じゃありません như danh từ.
+  - type: explain
+    text:
+      vi: Đứng trước danh từ thì giữ nguyên, không thêm gì - ちいさいかばん (cái cặp nhỏ), あたらしいとけい (đồng hồ mới). Thứ tự ngược tiếng Việt - tính từ đứng trước, danh từ đứng sau.
+  - type: deep_explain
+    text:
+      vi: いい (tốt) là ngoại lệ duy nhất - mọi dạng biến đổi đều đi từ よい, nên phủ định là よくないです. Ngoài くないです, bạn còn gặp dạng くありません (おおきくありません) - nghĩa như nhau, hơi trang trọng hơn. です sau tính từ い chỉ để câu lịch sự, không mang nghĩa "là".
+  - type: example
+    target: にほんごのほんはむずかしいです。
+    target_lang: ja
+    translation:
+      vi: Sách tiếng Nhật khó.
+    note:
+      vi: Tính từ むずかしい đứng cuối, trước です.
+  - type: example
+    target: このくつはおおきくないです。
+    target_lang: ja
+    translation:
+      vi: Đôi giày này không to.
+    note:
+      vi: おおきい → おおきくない. くつ - giày.
+  - type: example
+    target: ちいさいかばんをかいます。
+    target_lang: ja
+    translation:
+      vi: Tôi mua một cái cặp nhỏ.
+    note:
+      vi: Tính từ い đứng ngay trước danh từ, không cần の hay な.
+  - type: example
+    target: これはいいじしょです。
+    target_lang: ja
+    translation:
+      vi: Đây là cuốn từ điển tốt.
+    note:
+      vi: じしょ - từ điển. Phủ định của いい là よくない.
+  - type: common_mistake
+    wrong: このかばんはおおきいじゃありません。
+    right: このかばんはおおきくないです。
+    target_lang: ja
+    note:
+      vi: じゃありません chỉ dùng cho danh từ; tính từ い đổi い thành くない.
+  - type: common_mistake
+    wrong: このじしょはいくないです。
+    right: このじしょはよくないです。
+    target_lang: ja
+    note:
+      vi: いい biến đổi từ よい - phủ định là よくない.
+  - type: common_mistake
+    wrong: おおきいのいえ
+    right: おおきいいえ
+    target_lang: ja
+    note:
+      vi: Người Việt hay thêm の vì nghĩ "của". Tính từ い nối thẳng với danh từ.
+  - type: summary
+    points:
+      - vi: N は Aい です - miêu tả.
+      - vi: Phủ định - い → くないです (おおきくないです).
+      - vi: いい → よくないです (ngoại lệ).
+      - vi: Aい + N - ちいさいかばん, không thêm の.
+      - vi: おおきい/ちいさい · あたらしい/ふるい · むずかしい/やさしい · あつい/さむい.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:i-adjectives-mcq-not-big
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:i-adjective
+    prompt:
+      stem: "Câu nào nghĩa là \"Cái cặp này không to.\"?"
+      stem_lang: vi
+      options:
+        - { id: q4r, text: このかばんはおおきくないです。, lang: ja }
+        - { id: w8t, text: このかばんはおおきいじゃありません。, lang: ja }
+        - { id: e2y, text: このかばんはおおきくです。, lang: ja }
+        - { id: r6u, text: このかばんはちいさいです。, lang: ja }
+    answer:
+      correct_option_id: q4r
+    explanation:
+      vi: Phủ định tính từ い là đổi い thành くない - おおきくないです. じゃありません chỉ dùng cho danh từ; ちいさいです nghĩa là "nhỏ", gần nghĩa nhưng không phải câu được hỏi.
+    display_answer: このかばんはおおきくないです。
+
+  - key: ja:exercise:i-adjectives-mcq-yokunai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ii-yokunai
+    prompt:
+      stem: Phủ định đúng của いいです (tốt) là gì?
+      stem_lang: vi
+      options:
+        - { id: t3i, text: よくないです, lang: ja }
+        - { id: y7o, text: いくないです, lang: ja }
+        - { id: u1p, text: いいじゃありません, lang: ja }
+        - { id: i5a, text: よいないです, lang: ja }
+    answer:
+      correct_option_id: t3i
+    explanation:
+      vi: いい là ngoại lệ - nó biến đổi từ よい, nên よい → よくない. いくない nghe sai ngay với người Nhật.
+    display_answer: よくないです
+
+  - key: ja:exercise:i-adjectives-listen-not-new
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:atarashii-furui
+    prompt:
+      audio_asset_id: null
+      fallback_text: このほんはあたらしくないです。
+      options:
+        - { id: o9s, text: Cuốn sách này không mới., lang: vi }
+        - { id: p4d, text: Cuốn sách này mới., lang: vi }
+        - { id: a8f, text: Cuốn sách này không cũ., lang: vi }
+        - { id: s2g, text: Cái ô này không mới., lang: vi }
+    answer:
+      correct_option_id: o9s
+    explanation:
+      vi: ほん - sách; あたらしくない - không mới (あたらしい đổi い → くない). Cũ là ふるい, ô là かさ.
+    display_answer: Cuốn sách này không mới.
+
+  - key: ja:exercise:i-adjectives-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:atsui-samui
+    prompt:
+      template: "きょうはさむ{{b1}}です。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Hôm nay trời không lạnh."
+        - Bỏ い của さむい, thêm đuôi phủ định của tính từ い.
+    answer:
+      blanks:
+        b1: [くない]
+    known_wrong:
+      - answer: い
+        feedback_vi: さむいです là "lạnh" (khẳng định); câu cần phủ định - くない.
+        error_tag: negation
+      - answer: いじゃありません
+        feedback_vi: じゃありません chỉ dùng cho danh từ và tính từ な; tính từ い dùng くない.
+        error_tag: adjective_type
+    explanation:
+      vi: さむい → さむくない. Tính từ い tự đổi đuôi để phủ định, rồi giữ です cho lịch sự.
+    display_answer: きょうはさむくないです。
+
+  - key: ja:exercise:i-adjectives-order-old-house
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:atarashii-furui
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Đó là một ngôi nhà cũ.”"
+      tokens:
+        - { id: t1, text: いえ }
+        - { id: t2, text: です }
+        - { id: t3, text: それは }
+        - { id: t4, text: ふるい }
+    answer:
+      orders:
+        - [t3, t4, t1, t2]
+    explanation:
+      vi: それは (đó là) đứng đầu; tính từ ふるい đứng ngay trước danh từ いえ, ngược với tiếng Việt "nhà cũ".
+    display_answer: それはふるいいえです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:i-adjectives-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:muzukashii-yasashii
+    prompt:
+      template: "Khó - {{b1}}. Dễ - {{b2}}. Nóng (thời tiết) - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [むずかしい, 難しい]
+        b2: [やさしい, 易しい]
+        b3: [あつい, 暑い]
+    known_wrong:
+      - answer: さむい
+        feedback_vi: さむい là "lạnh"; "nóng" (thời tiết) là あつい.
+        error_tag: vocab_antonym
+      - answer: むずかしくない
+        feedback_vi: むずかしくない là "không khó" - đề bài chỉ hỏi dạng gốc.
+        error_tag: negation
+    explanation:
+      vi: むずかしい (khó) ↔ やさしい (dễ); あつい (nóng) ↔ さむい (lạnh).
+    display_answer: むずかしい / やさしい / あつい
+
+  - key: ja:exercise:i-adjectives-write-not-difficult
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:i-adjective
+    prompt:
+      source_text: Tiếng Nhật không khó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - にほんごはむずかしくないです。
+        - 日本語は難しくないです。
+        - にほんごはむずかしくありません。
+        - 日本語は難しくありません。
+        - 日本語はむずかしくないです。
+    known_wrong:
+      - answer: にほんごはむずかしいじゃありません。
+        feedback_vi: Tính từ い không dùng じゃありません - đổi い thành くない.
+        error_tag: adjective_type
+      - answer: にほんごはむずかしいです。
+        feedback_vi: Câu này là "khó"; cần phủ định むずかしくないです.
+        error_tag: negation
+      - answer: にほんごはむずかしくないでした。
+        feedback_vi: Câu ở hiện tại - むずかしくないです.
+        error_tag: tense
+    explanation:
+      vi: にほんご (tiếng Nhật) + は + むずかしくない + です. Phủ định nằm trong tính từ, です giữ nguyên.
+    display_answer: にほんごはむずかしくないです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:i-adjectives-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:ookii-chiisai
+    prompt:
+      source_text: あのおおきいみせはやすいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng to kia rẻ.
+        - Cửa hàng lớn kia rẻ.
+        - Cái cửa hàng to kia rẻ.
+        - Cửa hàng to đằng kia rẻ.
+        - Cửa hàng lớn đằng kia rẻ.
+        - Cửa hàng to kia bán rẻ.
+        - Cửa hàng lớn kia bán rẻ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cửa hàng nhỏ kia rẻ.
+        feedback_vi: おおきい là "to, lớn"; nhỏ là ちいさい.
+        error_tag: vocab_antonym
+      - answer: Cửa hàng to kia đắt.
+        feedback_vi: やすい là "rẻ"; đắt là たかい.
+        error_tag: vocab_antonym
+    explanation:
+      vi: あの + おおきい + みせ - cửa hàng to kia (tính từ đứng trước danh từ); やすいです - rẻ.
+    display_answer: Cửa hàng to kia rẻ.
+
+  - key: ja:exercise:i-adjectives-mcq-hanoi-summer
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:atsui-samui
+    prompt:
+      stem: "Bạn Nhật hỏi về mùa hè (なつ) ở Hà Nội. Bạn muốn nói \"Mùa hè ở Hà Nội rất nóng.\" (とても - rất). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: d6h, text: ハノイのなつはとてもあついです。, lang: ja }
+        - { id: f1j, text: ハノイのなつはとてもさむいです。, lang: ja }
+        - { id: g5k, text: ハノイのなつはとてもあついなです。, lang: ja }
+        - { id: h9l, text: ハノイのなつはとてもあつくです。, lang: ja }
+    answer:
+      correct_option_id: d6h
+    explanation:
+      vi: Thời tiết nóng là あつい, đặt nguyên dạng trước です. Tính từ い không thêm な, và あつく chỉ dùng khi ghép với ない.
+    display_answer: ハノイのなつはとてもあついです。
+
+  - key: ja:exercise:i-adjectives-order-watch
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:ii-yokunai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Cái đồng hồ mới này không tốt.”"
+      tokens:
+        - { id: t1, text: よくないです }
+        - { id: t2, text: とけいは }
+        - { id: t3, text: この }
+        - { id: t4, text: あたらしい }
+    answer:
+      orders:
+        - [t3, t4, t2, t1]
+    explanation:
+      vi: この + あたらしい + とけい - cái đồng hồ mới này (この và tính từ đều đứng trước danh từ); いい phủ định thành よくないです.
+    display_answer: このあたらしいとけいはよくないです。

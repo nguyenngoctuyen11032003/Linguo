@@ -1,0 +1,346 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:past-masu
+order_index: 3
+level: n5
+title:
+  vi: Hôm qua tôi đã... - ました・ませんでした・でした
+objectives:
+  - vi: Kể việc đã làm bằng ました và việc đã không làm bằng ませんでした.
+  - vi: Nói "đã là / đã không phải là" bằng でした / じゃありませんでした.
+  - vi: Dùng từ thời gian quá khứ - きのう, けさ, せんしゅう.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:na-adjectives]
+items:
+  - item: ja:item:mashita-masendeshita
+  - item: ja:item:deshita
+  - item: ja:item:senshuu
+  - item: ja:item:kesa
+  - item: ja:item:masu-masen
+    role: reuse
+  - item: ja:item:kyou-ashita
+    role: reuse
+  - item: ja:item:youbi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể lại một ngày đã qua - "Sáng nay tôi dậy lúc 7 giờ", "Tuần trước tôi không đi làm", "Hôm qua là thứ Bảy".
+  - type: explain
+    text:
+      vi: Tiếng Việt thêm "đã" trước động từ; tiếng Nhật đổi đuôi động từ - ます → ました (đã làm), ません → ませんでした (đã không làm). おきます → おきました, いきません → いきませんでした.
+  - type: explain
+    text:
+      vi: Với danh từ, です → でした (đã là), じゃありません → じゃありませんでした (đã không phải là) - きのうはどようびでした (hôm qua là thứ Bảy).
+  - type: explain
+    text:
+      vi: Khác tiếng Việt, có きのう rồi vẫn phải đổi đuôi - tiếng Việt nói "hôm qua tôi đi học" được, nhưng tiếng Nhật bắt buộc いきました. きのう, けさ, せんしゅう không đi với に.
+  - type: deep_explain
+    text:
+      vi: ました chỉ việc đã xảy ra và kết thúc. Câu hỏi "đã làm chưa?" mà câu trả lời là "chưa" thì người Nhật hay nói まだです (vẫn chưa), còn ませんでした nghĩa là "(lúc đó) đã không làm". Đuôi quá khứ của です và ます đều có でした, nên ませんでした dễ nhớ - ません + でした.
+  - type: example
+    target: きのうとしょかんでほんをよみました。
+    target_lang: ja
+    translation:
+      vi: Hôm qua tôi đọc sách ở thư viện.
+    note:
+      vi: よみます → よみました.
+  - type: example
+    target: けさはコーヒーをのみませんでした。
+    target_lang: ja
+    translation:
+      vi: Sáng nay tôi không uống cà phê.
+    note:
+      vi: のみません → のみませんでした. は sau けさ nhấn "sáng nay thì (khác mọi khi)".
+  - type: example
+    target: せんしゅうのにちようびはあめでした。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tuần trước trời mưa.
+    note:
+      vi: あめ - mưa (danh từ) + でした.
+  - type: example
+    target: きのうはかようびじゃありませんでした。
+    target_lang: ja
+    translation:
+      vi: Hôm qua không phải thứ Ba.
+    note:
+      vi: じゃありません + でした.
+  - type: common_mistake
+    wrong: きのうがっこうへいきます。
+    right: きのうがっこうへいきました。
+    target_lang: ja
+    note:
+      vi: Có きのう thì động từ phải ở quá khứ - không bỏ được như chữ "đã" tiếng Việt.
+  - type: common_mistake
+    wrong: きのうにテレビをみました。
+    right: きのうテレビをみました。
+    target_lang: ja
+    note:
+      vi: きのう, けさ, せんしゅう là thời gian tương đối - không thêm に.
+  - type: common_mistake
+    wrong: きのうはにちようびました。
+    right: きのうはにちようびでした。
+    target_lang: ja
+    note:
+      vi: ました chỉ dùng cho động từ; danh từ dùng でした.
+  - type: summary
+    points:
+      - vi: V ます → V ました (đã làm).
+      - vi: V ません → V ませんでした (đã không làm).
+      - vi: N です → N でした; N じゃありません → N じゃありませんでした.
+      - vi: きのう hôm qua · けさ sáng nay · せんしゅう tuần trước - không đi với に.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:past-masu-mcq-studied
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:mashita-masendeshita
+    prompt:
+      stem: "Câu nào nghĩa là \"Hôm qua tôi đã học tiếng Nhật.\"?"
+      stem_lang: vi
+      options:
+        - { id: r3k, text: きのうにほんごをべんきょうしました。, lang: ja }
+        - { id: e8j, text: きのうにほんごをべんきょうします。, lang: ja }
+        - { id: w5h, text: きのうにほんごをべんきょうしませんでした。, lang: ja }
+        - { id: q1g, text: きのうにほんごをべんきょうでした。, lang: ja }
+    answer:
+      correct_option_id: r3k
+    explanation:
+      vi: Việc đã làm - します → しました. します là hiện tại, しませんでした là "đã không học"; でした chỉ dùng cho danh từ.
+    display_answer: きのうにほんごをべんきょうしました。
+
+  - key: ja:exercise:past-masu-mcq-negative
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mashita-masendeshita
+    prompt:
+      stem: "Quá khứ phủ định (\"đã không đi\") của いきます là gì?"
+      stem_lang: vi
+      options:
+        - { id: y2f, text: いきませんでした, lang: ja }
+        - { id: u6d, text: いきません, lang: ja }
+        - { id: i9s, text: いきました, lang: ja }
+        - { id: o4a, text: いきませんです, lang: ja }
+    answer:
+      correct_option_id: y2f
+    explanation:
+      vi: ません + でした = ませんでした. いきません là hiện tại (không đi), いきました là "đã đi"; không có dạng ませんです.
+    display_answer: いきませんでした
+
+  - key: ja:exercise:past-masu-listen-last-week
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:senshuu
+    prompt:
+      audio_asset_id: null
+      fallback_text: せんしゅうははたらきませんでした。
+      options:
+        - { id: p7z, text: Tuần trước tôi không làm việc., lang: vi }
+        - { id: a3x, text: Tuần trước tôi đã làm việc., lang: vi }
+        - { id: s8c, text: Tuần sau tôi không làm việc., lang: vi }
+        - { id: d1v, text: Tuần trước tôi không học., lang: vi }
+    answer:
+      correct_option_id: p7z
+    explanation:
+      vi: せんしゅう - tuần trước (tuần sau là らいしゅう); はたらきませんでした - đã không làm việc.
+    display_answer: Tuần trước tôi không làm việc.
+
+  - key: ja:exercise:past-masu-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:deshita
+    prompt:
+      template: "きのうはどようび{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Hôm qua là thứ Bảy."
+        - Đây là danh từ - dùng quá khứ của です.
+    answer:
+      blanks:
+        b1: [でした]
+    known_wrong:
+      - answer: です
+        feedback_vi: です là hiện tại; hôm qua đã qua nên dùng でした.
+        error_tag: tense
+      - answer: ました
+        feedback_vi: ました là đuôi động từ; sau danh từ どようび dùng でした.
+        error_tag: copula_past
+    explanation:
+      vi: Danh từ + でした = "đã là". きのう là quá khứ nên です đổi thành でした.
+    display_answer: きのうはどようびでした。
+
+  - key: ja:exercise:past-masu-order-water
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kesa
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Sáng nay tôi đã uống nước.”"
+      tokens:
+        - { id: t1, text: のみました }
+        - { id: t2, text: みずを }
+        - { id: t3, text: けさ }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: Từ thời gian けさ đứng đầu, không có に; みずを (tân ngữ) rồi động từ quá khứ のみました ở cuối.
+    display_answer: けさみずをのみました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:past-masu-fill-forms
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mashita-masendeshita
+    prompt:
+      template: "Tôi đã dậy lúc 6 giờ. - ろくじにおき{{b1}}。 Hôm qua tôi không ngủ. - きのうはね{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [ました]
+        b2: [ませんでした]
+    known_wrong:
+      - answer: ます
+        feedback_vi: ます là hiện tại hoặc việc sắp làm; việc đã qua dùng ました.
+        error_tag: tense
+      - answer: ません
+        feedback_vi: ません là "không (làm)" ở hiện tại; đã không làm là ませんでした.
+        error_tag: tense
+    explanation:
+      vi: おきます → おきました (đã dậy); ねません → ねませんでした (đã không ngủ).
+    display_answer: ろくじにおきました。 / きのうはねませんでした。
+
+  - key: ja:exercise:past-masu-write-japan
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:senshuu
+    prompt:
+      source_text: Tuần trước tôi đã đi Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - せんしゅうにほんへいきました。
+        - せんしゅうにほんにいきました。
+        - 先週日本へ行きました。
+        - 先週日本に行きました。
+        - わたしはせんしゅうにほんへいきました。
+        - わたしはせんしゅうにほんにいきました。
+        - 私は先週日本へ行きました。
+        - 私は先週日本に行きました。
+    known_wrong:
+      - answer: せんしゅうにほんへいきます。
+        feedback_vi: Việc tuần trước đã qua - いきました.
+        error_tag: tense
+      - answer: せんしゅうににほんへいきました。
+        feedback_vi: せんしゅう là thời gian tương đối, không đi với に.
+        error_tag: particle_ni_time
+    explanation:
+      vi: せんしゅう (không に) + にほんへ + いきました.
+    display_answer: せんしゅうにほんへいきました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:past-masu-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:mashita-masendeshita
+    prompt:
+      source_text: きのうはかいしゃへいきませんでした。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm qua tôi không đi làm.
+        - Hôm qua tôi đã không đi làm.
+        - Hôm qua tôi không đến công ty.
+        - Hôm qua tôi đã không đến công ty.
+        - Hôm qua tôi không đi đến công ty.
+        - Hôm qua tôi không đi công ty.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay tôi không đi làm.
+        feedback_vi: きのう là hôm qua; hôm nay là きょう.
+        error_tag: time_word
+      - answer: Hôm qua tôi đã đi làm.
+        feedback_vi: ませんでした là phủ định - "đã không đi".
+        error_tag: negation
+    explanation:
+      vi: きのうは - hôm qua thì; かいしゃへいきませんでした - đã không đến công ty (không đi làm).
+    display_answer: Hôm qua tôi không đi làm.
+
+  - key: ja:exercise:past-masu-mcq-homework
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:mashita-masendeshita
+    prompt:
+      stem: "Thầy hỏi しゅくだいをしましたか (Em đã làm bài tập chưa?). Tối qua bạn đã không làm. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: g6n, text: すみません、しませんでした。, lang: ja }
+        - { id: h2m, text: すみません、しません。, lang: ja }
+        - { id: j8b, text: はい、しませんでした。, lang: ja }
+        - { id: k4v, text: すみません、しましたでした。, lang: ja }
+    answer:
+      correct_option_id: g6n
+    explanation:
+      vi: Việc tối qua đã không làm - しませんでした. しません nghe như "em sẽ không làm"; はい đi với phủ định thì mâu thuẫn; しましたでした không tồn tại.
+    display_answer: すみません、しませんでした。
+
+  - key: ja:exercise:past-masu-write-breakfast
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kesa
+    prompt:
+      source_text: Sáng nay tôi không ăn cơm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - けさごはんをたべませんでした。
+        - けさはごはんをたべませんでした。
+        - 今朝ご飯を食べませんでした。
+        - 今朝はご飯を食べませんでした。
+        - わたしはけさごはんをたべませんでした。
+        - 私は今朝ご飯を食べませんでした。
+        - 今朝ごはんを食べませんでした。
+    known_wrong:
+      - answer: けさごはんをたべません。
+        feedback_vi: Sáng nay đã qua - たべませんでした.
+        error_tag: tense
+      - answer: けさごはんをたべないでした。
+        feedback_vi: Dạng lịch sự quá khứ phủ định là たべませんでした.
+        error_tag: verb_form
+      - answer: けさにごはんをたべませんでした。
+        feedback_vi: けさ không đi với に.
+        error_tag: particle_ni_time
+    explanation:
+      vi: けさ (sáng nay, không に) + ごはんを + たべませんでした. Tiếng Việt "không ăn" đủ hiểu là quá khứ, tiếng Nhật phải ghi rõ ませんでした.
+    display_answer: けさごはんをたべませんでした。
