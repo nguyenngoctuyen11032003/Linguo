@@ -155,12 +155,12 @@ exercises:
     difficulty: 3
     item: ja:item:n1-u5-yurai
     prompt:
-      template: "「一期一会」という言葉は茶道{{b1}}{{b2}}する。"
+      template: "「カステラ」という言葉はポルトガル語{{b1}}{{b2}}する。"
       blanks:
         - { id: b1, width_hint: 1 }
         - { id: b2, width_hint: 2 }
       hint_levels:
-        - "Nghĩa: Cụm từ \"nhất kỳ nhất hội\" bắt nguồn từ trà đạo."
+        - "Nghĩa: Từ \"kasutera\" (bánh bông lan kiểu Nagasaki) bắt nguồn từ tiếng Bồ Đào Nha."
         - "Gợi ý: trợ từ + từ Hán 'do lai' (nguồn gốc) - ゆらい."
     answer:
       blanks:
@@ -168,14 +168,14 @@ exercises:
         b2: [由来, ゆらい]
     known_wrong:
       - answer: を
-        feedback_vi: 由来する đi với に - 茶道に由来する.
+        feedback_vi: 由来する đi với に - ポルトガル語に由来する.
         error_tag: particle_ni
       - answer: 原因
         feedback_vi: 原因 là nguyên nhân của sự việc. Nguồn gốc của từ ngữ là 由来.
         error_tag: vocab_meaning
     explanation:
       vi: ～に由来する - bắt nguồn từ ~.
-    display_answer: 「一期一会」という言葉は茶道に由来する。
+    display_answer: 「カステラ」という言葉はポルトガル語に由来する。
 
   - key: ja:exercise:n1-idiom-culture-review-wb-kotowaza
     type: word_bank

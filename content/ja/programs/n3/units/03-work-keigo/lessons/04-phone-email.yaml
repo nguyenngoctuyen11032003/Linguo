@@ -222,34 +222,27 @@ exercises:
     difficulty: 4
     item: ja:item:n3-seki-wo-hazusu
     prompt:
-      source_text: Xin lỗi, (anh) Tanaka hiện không có ở chỗ ạ. (nói với khách, Tanaka là đồng nghiệp)
+      source_text: Xin lỗi, trưởng phòng Suzuki hiện đang không có ở chỗ ạ. (nói với khách, Suzuki là trưởng phòng công ty mình)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 申し訳ございません。田中はただいま席を外しております。
-        - 申し訳ございません、田中はただいま席を外しております。
-        - 申し訳ございません。田中は今、席を外しております。
-        - 申し訳ございません。田中は今席を外しております。
-        - 申し訳ありません。田中はただいま席を外しております。
-        - 申し訳ありません、田中はただいま席を外しております。
-        - 申し訳ありません。田中は今、席を外しております。
-        - 申し訳ありません。田中は今席を外しております。
-        - 申し訳ございません。ただいま田中は席を外しております。
-        - 申し訳ありません。ただいま田中は席を外しております。
-        - すみません。田中はただいま席を外しております。
-        - 申し訳ございません。田中は席を外しております。
-        - もうしわけございません。たなかはただいませきをはずしております。
+        - 申し訳ございません。部長の鈴木はただいま席を外しております。
+        - 申し訳ございません。部長の鈴木は今、席を外しております。
+        - 申し訳ありません。部長の鈴木はただいま席を外しております。
+        - 申し訳ございません。部長の鈴木は、ただいま席を外しております。
+        - 申し訳ございません。鈴木はただいま席を外しております。
+        - もうしわけございません。ぶちょうのすずきはただいませきをはずしております。
     known_wrong:
-      - answer: 申し訳ございません。田中さんはただいま席を外しております。
-        feedback_vi: Với khách, đồng nghiệp là người nhà - gọi 田中, không thêm さん.
+      - answer: 申し訳ございません。鈴木部長はただいま席を外しております。
+        feedback_vi: 鈴木部長 (tên + chức vụ) là cách gọi tôn trọng; với khách, sếp mình cũng là "người nhà" - nói 部長の鈴木.
         error_tag: san_uchi
-      - answer: 申し訳ございません。田中はただいま席を外していらっしゃいます。
-        feedback_vi: いらっしゃる tôn đồng nghiệp mình trước mặt khách là sai; dùng おります.
+      - answer: 申し訳ございません。部長の鈴木はただいま席を外していらっしゃいます。
+        feedback_vi: Không dùng tôn kính ngữ cho người công ty mình trước mặt khách; dùng おります.
         error_tag: sonkeigo_kenjougo
     explanation:
-      vi: Đồng nghiệp trước mặt khách - 田中 (trống tên) + 席を外しております (khiêm nhường).
-    display_answer: 申し訳ございません。田中はただいま席を外しております。
+      vi: Với khách, cả sếp mình cũng không được nâng - chức vụ đặt trước tên (部長の鈴木), động từ dùng khiêm nhường (席を外しております). Ngược hẳn tiếng Việt, nơi ta vẫn gọi "anh trưởng phòng Suzuki" với khách.
+    display_answer: 申し訳ございません。部長の鈴木はただいま席を外しております。
 
   - key: ja:exercise:n3-phone-email-translate-itadake
     type: translate
@@ -369,15 +362,15 @@ exercises:
     difficulty: 3
     item: ja:item:n3-shoushou
     prompt:
-      stem: Khách gọi đến hỏi về đơn hàng, bạn cần chuyển máy cho người phụ trách. Bạn nói gì?
+      stem: Khách gọi đến hỏi về hợp đồng, bạn cần nối máy sang phòng kinh doanh. Bạn nói gì?
       stem_lang: vi
       options:
-        - { id: r6x, text: 担当者に代わりますので、少々お待ちください。, lang: ja }
-        - { id: j3l, text: 担当者に代わりますので、ちょっと待って。, lang: ja }
-        - { id: a9g, text: 担当者に代わりますので、少々お待ちしてください。, lang: ja }
-        - { id: y1n, text: 担当者に代わりますので、少々待たれます。, lang: ja }
+        - { id: r6x, text: 営業部におつなぎしますので、少々お待ちください。, lang: ja }
+        - { id: j3l, text: 営業部につなぎますから、ちょっと待って。, lang: ja }
+        - { id: a9g, text: 営業部におつなぎしますので、少々お待ちしてください。, lang: ja }
+        - { id: y1n, text: 営業部におつなぎになりますので、少々お待ちください。, lang: ja }
     answer:
       correct_option_id: r6x
     explanation:
-      vi: お + V(bỏ ます) + ください - お待ちください. お待ちしてください trộn khiêm nhường với yêu cầu nên sai; ちょっと待って quá suồng sã; 待たれます không phải lời yêu cầu.
-    display_answer: 担当者に代わりますので、少々お待ちください。
+      vi: Hành động của mình (nối máy) dùng khiêm nhường おつなぎします; nhờ khách chờ dùng お待ちください. お待ちしてください trộn khiêm nhường với lời nhờ, おつなぎになる lại tôn kính chính mình, còn ちょっと待って quá suồng sã với khách.
+    display_answer: 営業部におつなぎしますので、少々お待ちください。

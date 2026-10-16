@@ -369,15 +369,15 @@ exercises:
     difficulty: 3
     item: ja:item:kore-sore-are
     prompt:
-      stem: Lan và Tanaka đứng cạnh nhau, nhìn một tòa nhà ở xa. Lan muốn hỏi "Kia là cái gì?". Câu nào đúng?
+      stem: Lan và Tanaka đứng cạnh nhau, nhìn một chiếc đồng hồ treo ở cuối phòng. Lan muốn hỏi "Kia là đồng hồ của thầy giáo phải không?". Câu nào đúng?
       stem_lang: vi
       options:
-        - { id: n5x, text: あれはなんですか。, lang: ja }
-        - { id: a7g, text: それはなんですか。, lang: ja }
-        - { id: u2s, text: あれはなにですか。, lang: ja }
-        - { id: o9d, text: これはなんですか。, lang: ja }
+        - { id: n5x, text: あれはせんせいのとけいですか。, lang: ja }
+        - { id: a7g, text: それはせんせいのとけいですか。, lang: ja }
+        - { id: u2s, text: あれはとけいのせんせいですか。, lang: ja }
+        - { id: o9d, text: あれはせんせいのとけいです。, lang: ja }
     answer:
       correct_option_id: n5x
     explanation:
-      vi: Vật xa cả hai người dùng あれ. Trước です, なに đổi thành なん. それ là vật gần người nghe, これ là vật gần mình.
-    display_answer: あれはなんですか。
+      vi: Vật xa cả hai người dùng あれ; それ là vật gần người nghe. Người sở hữu đứng trước の - せんせいのとけい (đồng hồ của thầy), đảo lại thành "thầy của đồng hồ". Câu hỏi phải có か ở cuối.
+    display_answer: あれはせんせいのとけいですか。

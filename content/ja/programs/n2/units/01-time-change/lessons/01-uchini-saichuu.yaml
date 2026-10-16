@@ -266,35 +266,35 @@ exercises:
     difficulty: 3
     item: ja:item:n2-u1-teiden
     prompt:
-      source_text: Đang họp giữa chừng thì mất điện. (dùng 最中)
+      source_text: Đang nấu ăn giữa chừng thì bị mất điện. (dùng 最中)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 会議の最中に、停電した。
-        - 会議の最中に、停電しました。
-        - 会議の最中に、停電になった。
-        - 会議の最中に、停電になりました。
-        - 会議をしている最中に、停電した。
-        - 会議をしている最中に、停電しました。
-        - 会議をしている最中に、停電になった。
-        - 会議をしている最中に、停電になりました。
-        - ミーティングの最中に、停電した。
-        - ミーティングの最中に、停電しました。
-        - 会議の最中、停電した。
-        - 会議の最中、停電しました。
-        - かいぎのさいちゅうに、ていでんした。
-        - かいぎのさいちゅうに、ていでんしました。
+        - 料理をしている最中に、停電した。
+        - 料理をしている最中に、停電しました。
+        - 料理をしている最中に、停電になった。
+        - 料理をしている最中に、停電になりました。
+        - 料理の最中に、停電した。
+        - 料理の最中に、停電しました。
+        - 料理の最中に、停電になった。
+        - 料理の最中に、停電になりました。
+        - 料理を作っている最中に、停電した。
+        - 料理を作っている最中に、停電しました。
+        - 料理をしている最中、停電した。
+        - 料理の最中、停電した。
+        - りょうりをしているさいちゅうに、ていでんした。
+        - りょうりのさいちゅうに、ていでんした。
     known_wrong:
-      - answer: 会議する最中に、停電した。
-        feedback_vi: 最中 không gắn vào thể từ điển. Dùng 会議の最中に hoặc 会議をしている最中に.
+      - answer: 料理をする最中に、停電した。
+        feedback_vi: 最中 không gắn vào thể từ điển. Dùng 料理の最中に hoặc 料理をしている最中に.
         error_tag: saichuu_form
-      - answer: 会議のうちに、停電した。
-        feedback_vi: 会議のうちに không tự nhiên; chuyện bất ngờ xen vào đúng lúc đang họp dùng 最中に.
+      - answer: 料理のうちに、停電した。
+        feedback_vi: うちに là "nhân lúc còn..."; chuyện bất ngờ xen vào đúng lúc đang làm dở dùng 最中に.
         error_tag: uchini_saichuu
     explanation:
-      vi: 会議の最中に (N + の + 最中に) hoặc 会議をしている最中に; 停電する / 停電になる - mất điện.
-    display_answer: 会議の最中に、停電した。
+      vi: N + の + 最中に hoặc V-ている + 最中に - đúng lúc đang làm dở thì có chuyện xen vào; 停電する / 停電になる - mất điện. Giống "đang... giữa chừng thì..." của tiếng Việt, vế sau thường là sự cố ngoài ý muốn.
+    display_answer: 料理をしている最中に、停電した。
 
   # ---------------- application ----------------
   - key: ja:exercise:n2-u1-uchini-mcq-ame

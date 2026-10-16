@@ -219,34 +219,35 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-fumu
+    item: ja:item:n3-gram-meiwaku-ukemi
     prompt:
-      source_text: Trên tàu điện tôi bị giẫm vào chân. (lịch sự)
+      source_text: Tôi bị em trai ăn mất cái bánh ngọt. (lịch sự)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 電車の中で足を踏まれました。
-        - 電車の中で、足を踏まれました。
-        - 電車で足を踏まれました。
-        - 電車で、足を踏まれました。
-        - 私は電車の中で足を踏まれました。
-        - 電車の中で誰かに足を踏まれました。
-        - 電車の中で、誰かに足を踏まれました。
-        - 電車で誰かに足を踏まれました。
-        - でんしゃのなかであしをふまれました。
-        - 電車の中で足をふまれました。
-        - 電車の中で足を踏まれたんです。
+        - 弟にケーキを食べられました。
+        - 弟に、ケーキを食べられました。
+        - 私は弟にケーキを食べられました。
+        - 弟にケーキを食べられてしまいました。
+        - 私は弟にケーキを食べられてしまいました。
+        - 弟に私のケーキを食べられました。
+        - 弟に私のケーキを食べられてしまいました。
+        - おとうとにケーキをたべられました。
+        - 弟にケーキをたべられました。
     known_wrong:
-      - answer: 電車の中で私の足が踏まれました。
-        feedback_vi: Tiếng Nhật lấy người làm chủ ngữ và giữ を cho bộ phận cơ thể - 足を踏まれました.
+      - answer: 弟がケーキを食べられました。
+        feedback_vi: Người gây phiền trong câu bị động đi với に, không dùng が - 弟に.
         error_tag: meiwaku_particle
-      - answer: 電車の中で足を踏みました。
-        feedback_vi: 踏みました là "tôi giẫm". Bị giẫm phải dùng 踏まれました.
+      - answer: 弟にケーキを食べました。
+        feedback_vi: Thiếu thể bị động - "bị ăn mất" là 食べられました.
         error_tag: passive_needed
+      - answer: 私のケーキが弟に食べられました。
+        feedback_vi: Câu này chỉ tả sự việc khách quan. Muốn nói mình chịu thiệt, lấy người chịu thiệt làm chủ ngữ và giữ を - 弟にケーキを食べられました.
+        error_tag: meiwaku_particle
     explanation:
-      vi: 足を踏まれる - bị giẫm chân. 電車の中で hoặc 電車で - trên tàu.
-    display_answer: 電車の中で足を踏まれました。
+      vi: (người gây phiền) に + N を + V bị động - mình là người chịu thiệt, đúng như "bị... mất" của tiếng Việt. てしまいました thêm sắc thái tiếc nuối.
+    display_answer: 弟にケーキを食べられました。
 
   - key: ja:exercise:n3-meiwaku-ukemi-translate-saifu
     type: translate

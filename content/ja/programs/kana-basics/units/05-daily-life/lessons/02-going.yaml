@@ -239,32 +239,35 @@ exercises:
     difficulty: 2
     item: ja:item:kaisha
     prompt:
-      source_text: Tôi đi đến công ty.
+      source_text: Tôi đi đến nhà ga.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - かいしゃへいきます。
-        - かいしゃにいきます。
-        - 会社へ行きます。
-        - 会社に行きます。
-        - わたしはかいしゃへいきます。
-        - わたしはかいしゃにいきます。
-        - 私は会社へ行きます。
-        - 私は会社に行きます。
+        - えきへいきます。
+        - えきにいきます。
+        - 駅へ行きます。
+        - 駅に行きます。
+        - わたしはえきへいきます。
+        - わたしはえきにいきます。
+        - 私は駅へ行きます。
+        - 私は駅に行きます。
     known_wrong:
-      - answer: かいしゃえいきます。
+      - answer: えきえいきます。
         feedback_vi: Trợ từ chỉ hướng viết へ.
         error_tag: particle_e_spelling
-      - answer: いきますかいしゃへ。
-        feedback_vi: Động từ đứng cuối câu - かいしゃへいきます.
+      - answer: いきますえきへ。
+        feedback_vi: Động từ đứng cuối câu - えきへいきます.
         error_tag: word_order
-      - answer: かいしゃをいきます。
+      - answer: えきをいきます。
         feedback_vi: Nơi đến đi với へ hoặc に.
         error_tag: particle_choice
+      - answer: えきへきます。
+        feedback_vi: Bạn rời chỗ mình để đến ga nên dùng いきます; きます là "đến chỗ người nói".
+        error_tag: verb_choice
     explanation:
-      vi: かいしゃ + へ (hoặc に) + いきます.
-    display_answer: かいしゃへいきます。
+      vi: えき (nhà ga) + へ (hoặc に) + いきます. Tiếng Việt nói "đi đến ga" với hai động từ, tiếng Nhật chỉ cần trợ từ へ để chỉ hướng.
+    display_answer: えきへいきます。
 
   # ---------------- application ----------------
   - key: ja:exercise:going-translate-vi

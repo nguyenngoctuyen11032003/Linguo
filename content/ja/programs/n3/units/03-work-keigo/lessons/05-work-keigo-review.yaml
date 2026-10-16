@@ -197,7 +197,7 @@ exercises:
     difficulty: 3
     item: ja:item:n3-moushiwake
     prompt:
-      template: "ご迷惑をおかけして、申し訳{{b1}}。(trang trọng nhất)"
+      template: "お待たせして、申し訳{{b1}}。(trang trọng nhất)"
       blanks:
         - { id: b1, width_hint: 5 }
     answer:
@@ -211,8 +211,8 @@ exercises:
         feedback_vi: 申し訳ありません lịch sự nhưng đề bài yêu cầu mức trang trọng nhất - ございません.
         error_tag: register
     explanation:
-      vi: すみません < 申し訳ありません < 申し訳ございません. ご迷惑をおかけして - vì đã gây phiền.
-    display_answer: ご迷惑をおかけして、申し訳ございません。
+      vi: すみません < 申し訳ありません < 申し訳ございません. お待たせして - vì đã để (quý khách) phải chờ; người Nhật xin lỗi cả khi chỉ để khách chờ vài phút.
+    display_answer: お待たせして、申し訳ございません。
 
   - key: ja:exercise:n3-work-keigo-review-translate-shouchi
     type: translate

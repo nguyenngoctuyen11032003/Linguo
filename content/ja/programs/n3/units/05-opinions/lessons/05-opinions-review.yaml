@@ -196,7 +196,7 @@ exercises:
     difficulty: 4
     item: ja:item:n3-keikou
     prompt:
-      template: "最近、結婚しない人が増える{{b1}}があります。(xu hướng)"
+      template: "都会の若者は、車を買わない{{b1}}があります。(xu hướng)"
       blanks:
         - { id: b1, width_hint: 2 }
     answer:
@@ -210,8 +210,8 @@ exercises:
         feedback_vi: こう là âm dài - けいこう. けいこ (稽古) là "luyện tập".
         error_tag: long_vowel
     explanation:
-      vi: V + 傾向がある - có xu hướng.
-    display_answer: 最近、結婚しない人が増える傾向があります。
+      vi: V + 傾向がある - có xu hướng (nói về số đông, không phải một người). Văn nêu ý kiến hay dùng 傾向 để nhận định chung mà không quơ đũa cả nắm.
+    display_answer: 都会の若者は、車を買わない傾向があります。
 
   - key: ja:exercise:n3-opinions-review-translate-wariai
     type: translate

@@ -223,37 +223,29 @@ exercises:
     difficulty: 3
     item: ja:item:n3-gram-koto-ni-naru
     prompt:
-      source_text: Tuần sau tôi được cử đi công tác Osaka. (lịch sự)
+      source_text: Từ tháng Tư tôi được giao phụ trách dự án mới. (lịch sự)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 来週、大阪に出張することになりました。
-        - 来週大阪に出張することになりました。
-        - 来週、大阪へ出張することになりました。
-        - 来週大阪へ出張することになりました。
-        - 来週、大阪に出張に行くことになりました。
-        - 来週大阪に出張に行くことになりました。
-        - 来週、大阪へ出張に行くことになりました。
-        - 来週大阪へ出張に行くことになりました。
-        - 来週、大阪出張に行くことになりました。
-        - 来週大阪出張に行くことになりました。
-        - 来週、大阪に出張することになっています。
-        - 来週大阪に出張することになっています。
-        - 来週、私は大阪に出張することになりました。
-        - 来週私は大阪に出張することになりました。
-        - らいしゅう、おおさかにしゅっちょうすることになりました。
-        - らいしゅうおおさかにしゅっちょうすることになりました。
+        - 4月から新しいプロジェクトを担当することになりました。
+        - 4月から、新しいプロジェクトを担当することになりました。
+        - 四月から新しいプロジェクトを担当することになりました。
+        - 4月から私が新しいプロジェクトを担当することになりました。
+        - 4月から、私は新しいプロジェクトを担当することになりました。
+        - 4月から新しいプロジェクトの担当をすることになりました。
+        - 4月から新しいプロジェクトを担当することになっています。
+        - しがつからあたらしいプロジェクトをたんとうすることになりました。
     known_wrong:
-      - answer: 来週、大阪に出張することにしました。
-        feedback_vi: Được công ty cử nên dùng ことになりました; ことにしました là tự mình quyết định.
+      - answer: 4月から新しいプロジェクトを担当することにしました。
+        feedback_vi: Được công ty giao nên dùng ことになりました; ことにしました là tự mình quyết định.
         error_tag: koto_ni_naru_suru
-      - answer: 来週、大阪に旅行することになりました。
-        feedback_vi: 旅行 là du lịch. Đi công tác là 出張.
-        error_tag: vocab_meaning
+      - answer: 4月から新しいプロジェクトを担当することになります。
+        feedback_vi: Việc đã được quyết định xong dùng quá khứ ことになりました.
+        error_tag: tense
     explanation:
-      vi: 出張する - đi công tác; ～ことになりました - đã được quyết định. Nơi đến dùng に hoặc へ.
-    display_answer: 来週、大阪に出張することになりました。
+      vi: 担当する - phụ trách; ～ことになりました - (việc này) đã được quyết định, không phải do mình chọn. Người Nhật hay dùng mẫu này để báo tin công việc vì nghe khiêm tốn, không khoe "tôi được chọn".
+    display_answer: 4月から新しいプロジェクトを担当することになりました。
 
   - key: ja:exercise:n3-workplace-translate-younishiteiru
     type: translate

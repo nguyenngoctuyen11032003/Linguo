@@ -277,18 +277,18 @@ exercises:
     difficulty: 3
     item: ja:item:kata-choon
     prompt:
-      stem: Bạn muốn viết "bánh mì Việt Nam" trên thực đơn. Cách viết nào đúng?
+      stem: Bạn muốn viết "khách sạn ở Việt Nam" trên một tấm biển. Cách viết nào đúng?
       stem_lang: vi
       options:
-        - { id: m2i, text: ベトナムのパン, lang: ja }
-        - { id: n6j, text: べとなむのぱん, lang: ja }
-        - { id: o1k, text: ベトナムノパン, lang: ja }
-        - { id: p5l, text: ベトナンのパン, lang: ja }
+        - { id: m2i, text: ベトナムのホテル, lang: ja }
+        - { id: n6j, text: べとなむのほてる, lang: ja }
+        - { id: o1k, text: ベトナムノホテル, lang: ja }
+        - { id: p5l, text: ベトナンのホテル, lang: ja }
     answer:
       correct_option_id: m2i
     explanation:
-      vi: ベトナム và パン là từ ngoại lai nên viết Katakana; の là ngữ pháp nên viết Hiragana. ベトナン sai âm cuối - "Nam" là ナム.
-    display_answer: ベトナムのパン
+      vi: ベトナム và ホテル là từ ngoại lai nên viết Katakana; の là ngữ pháp nên viết Hiragana. ベトナン sai âm cuối - "Nam" là ナム.
+    display_answer: ベトナムのホテル
 
   - key: ja:exercise:kanarev-build-coffee
     type: word_bank

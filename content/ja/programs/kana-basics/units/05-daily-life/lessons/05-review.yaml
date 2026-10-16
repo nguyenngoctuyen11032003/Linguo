@@ -201,7 +201,7 @@ exercises:
     difficulty: 3
     item: ja:item:particle-ni-time
     prompt:
-      template: "Tôi về nhà lúc 6 giờ - ろくじ{{b1}}うち{{b2}}かえります。"
+      template: "Anh Tanaka đến công ty lúc 9 giờ - たなかさんはくじ{{b1}}かいしゃ{{b2}}いきます。"
       blanks:
         - { id: b1, width_hint: 1 }
         - { id: b2, width_hint: 1 }
@@ -211,14 +211,14 @@ exercises:
         b2: [へ, に]
     known_wrong:
       - answer: で
-        feedback_vi: Thời điểm dùng に; nơi về dùng へ / に. で chỉ nơi hành động.
+        feedback_vi: Thời điểm dùng に; nơi đến dùng へ / に. で chỉ nơi diễn ra hành động.
         error_tag: particle_choice
       - answer: え
         feedback_vi: Trợ từ chỉ hướng viết へ.
         error_tag: particle_e_spelling
     explanation:
-      vi: ろくじに (lúc 6 giờ) + うちへ (về nhà) + かえります.
-    display_answer: ろくじにうちへかえります。
+      vi: くじに (lúc 9 giờ - giờ có số đi với に) + かいしゃへ (đến công ty - nơi đến đi với へ hoặc に) + いきます. Hai trợ từ khác nhau vì một cái chỉ thời điểm, một cái chỉ hướng đi.
+    display_answer: たなかさんはくじにかいしゃへいきます。
 
   - key: ja:exercise:dl-review-write-not-study
     type: translate

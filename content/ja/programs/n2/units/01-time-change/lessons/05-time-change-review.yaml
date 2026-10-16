@@ -128,17 +128,17 @@ exercises:
     item: ja:item:n3-bukka
     prompt:
       audio_asset_id: null
-      fallback_text: 最近、物価は上がる一方だ。
+      fallback_text: 物価が上がり続けているので、生活は苦しくなる一方だ。
       options:
-        - { id: b6t, text: Dạo này vật giá cứ tăng mãi., lang: vi }
-        - { id: k9w, text: Dạo này vật giá đang dần ổn định., lang: vi }
-        - { id: g3s, text: Dạo này vật giá đã giảm một chút., lang: vi }
-        - { id: o1p, text: Dạo này hàng hoá ngày càng nhiều., lang: vi }
+        - { id: b6t, text: Vì vật giá cứ tăng nên cuộc sống ngày càng khó khăn., lang: vi }
+        - { id: k9w, text: Vì vật giá giảm nên cuộc sống ngày càng dễ thở., lang: vi }
+        - { id: g3s, text: Dù vật giá tăng nhưng cuộc sống vẫn ổn định., lang: vi }
+        - { id: o1p, text: Vì lương tăng nên cuộc sống ngày càng khá hơn., lang: vi }
     answer:
       correct_option_id: b6t
     explanation:
-      vi: 物価 - vật giá (không phải "hàng hoá"); 上がる一方だ - cứ tăng mãi, không dừng.
-    display_answer: Dạo này vật giá cứ tăng mãi.
+      vi: 物価 - vật giá; 上がり続けている - cứ tăng liên tục; 苦しくなる一方だ - ngày càng khó khăn, chỉ theo một chiều xấu đi. ので nối nguyên nhân với kết quả, nên phương án "dù... nhưng" sai.
+    display_answer: Vì vật giá cứ tăng nên cuộc sống ngày càng khó khăn.
 
   - key: ja:exercise:n2-u1-review-fill-keikou
     type: fill_blank

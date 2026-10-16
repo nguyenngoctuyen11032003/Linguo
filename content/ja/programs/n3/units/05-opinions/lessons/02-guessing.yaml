@@ -194,22 +194,22 @@ exercises:
     difficulty: 4
     item: ja:item:n3-gram-sou-da-denbun
     prompt:
-      template: "天気予報によると、明日は雪が{{b1}}そうです。(降る - nghe nói)"
+      template: "ニュースによると、来月から電気代が{{b1}}そうです。(上がる - nghe nói)"
       blanks:
-        - { id: b1, width_hint: 2 }
+        - { id: b1, width_hint: 3 }
     answer:
       blanks:
-        b1: [降る, ふる]
+        b1: [上がる, あがる]
     known_wrong:
-      - answer: 降り
-        feedback_vi: 降りそうです là "trông như sắp rơi". Có nguồn tin - 降るそうです.
+      - answer: 上がり
+        feedback_vi: 上がりそうです là "trông như sắp tăng" (tự mình đoán). Có nguồn tin - 上がるそうです.
         error_tag: souda_type
-      - answer: 降って
-        feedback_vi: Trước そうだ truyền đạt dùng thể thường - 降る.
+      - answer: 上がって
+        feedback_vi: Trước そうだ truyền đạt dùng thể thường - 上がる.
         error_tag: souda_form
     explanation:
-      vi: 天気予報によると - theo dự báo thời tiết; thể thường 降る + そうです - nghe nói sẽ rơi.
-    display_answer: 天気予報によると、明日は雪が降るそうです。
+      vi: ニュースによると - theo tin tức; thể thường 上がる + そうです - nghe nói sẽ tăng. Có nguồn tin rõ ràng (によると) là dấu hiệu chắc chắn của そうだ truyền đạt.
+    display_answer: ニュースによると、来月から電気代が上がるそうです。
 
   - key: ja:exercise:n3-guessing-translate-youda
     type: translate

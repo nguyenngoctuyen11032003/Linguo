@@ -255,36 +255,33 @@ exercises:
     difficulty: 4
     item: ja:item:n3-gram-you-ni-iu
     prompt:
-      source_text: Tôi bị bác sĩ dặn không được uống rượu. (lịch sự)
+      source_text: Tôi được y tá dặn uống thuốc sau bữa ăn. (lịch sự)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 医者にお酒を飲まないように言われました。
-        - 医者に酒を飲まないように言われました。
-        - お医者さんにお酒を飲まないように言われました。
-        - 医者からお酒を飲まないように言われました。
-        - お医者さんからお酒を飲まないように言われました。
-        - 医者にお酒を飲まないように注意されました。
-        - お医者さんにお酒を飲まないように注意されました。
-        - 医師にお酒を飲まないように言われました。
-        - 私は医者にお酒を飲まないように言われました。
-        - 医者にお酒は飲まないように言われました。
-        - お医者さんにお酒は飲まないように言われました。
-        - いしゃにおさけをのまないようにいわれました。
+        - 看護師に、食後に薬を飲むように言われました。
+        - 看護師に食後に薬を飲むように言われました。
+        - 看護師さんに、食後に薬を飲むように言われました。
+        - 看護師から、食後に薬を飲むように言われました。
+        - 看護師に、食事の後で薬を飲むように言われました。
+        - 看護師に、食事の後に薬を飲むように言われました。
+        - 看護師に、ご飯の後で薬を飲むように言われました。
+        - 看護師さんに、ご飯の後で薬を飲むように言われました。
+        - かんごしに、しょくごにくすりをのむようにいわれました。
     known_wrong:
-      - answer: 医者がお酒を飲まないように言われました。
+      - answer: 看護師が、食後に薬を飲むように言われました。
         feedback_vi: Câu bị động - người dặn dùng に (hoặc から), không dùng が.
         error_tag: passive_agent
-      - answer: 医者にお酒を飲まないように言いました。
-        feedback_vi: 言いました là "tôi đã nói (với bác sĩ)". Bị dặn - 言われました.
+      - answer: 看護師に、食後に薬を飲むように言いました。
+        feedback_vi: 言いました là "tôi đã nói (với y tá)". Được dặn - 言われました.
         error_tag: passive_form
-      - answer: 医者にお酒を飲まないでくださいように言われました。
-        feedback_vi: Thuật lại gián tiếp bỏ てください - 飲まないように.
+      - answer: 看護師に、食後に薬を飲んでくださいように言われました。
+        feedback_vi: Thuật lại gián tiếp bỏ てください - 飲むように.
         error_tag: you_ni_form
     explanation:
-      vi: 医者に - bởi bác sĩ; 飲まないように - (dặn) không uống; 言われました - bị nói, được dặn.
-    display_answer: 医者にお酒を飲まないように言われました。
+      vi: 看護師に - bởi y tá; 食後に - sau bữa ăn; 飲むように言われました - được dặn (hãy) uống. ように biến lời nhờ trực tiếp "飲んでください" thành lời thuật lại, giống "dặn (tôi) uống" trong tiếng Việt.
+    display_answer: 看護師に、食後に薬を飲むように言われました。
 
   # ---------------- application ----------------
   - key: ja:exercise:n3-hospital-mcq-report

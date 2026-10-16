@@ -255,31 +255,34 @@ exercises:
     difficulty: 4
     item: ja:item:n1-u1-kaketsukeru
     prompt:
-      source_text: Vừa nghe tin là mẹ tôi đã vội vã đến bệnh viện. (dùng や否や)
+      source_text: Vừa nhận được cuộc gọi là anh ấy lập tức chạy tới hiện trường. (dùng や否や)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 知らせを聞くや否や、母は病院に駆けつけた。
-        - 知らせを聞くや否や、母は病院へ駆けつけた。
-        - 知らせを聞くや否や、母は病院に駆け付けた。
-        - 知らせを聞くや否や、母は病院に駆けつけました。
-        - 母は知らせを聞くや否や、病院に駆けつけた。
-        - 母は知らせを聞くや否や、病院へ駆けつけた。
-        - 母は知らせを聞くや否や、病院に駆け付けた。
-        - 母は知らせを聞くや否や、病院に駆けつけました。
-        - 知らせを聞くやいなや、母は病院に駆けつけた。
-        - 母は知らせを聞くやいなや、病院に駆けつけた。
-        - ニュースを聞くや否や、母は病院に駆けつけた。
-        - 連絡を受けるや否や、母は病院に駆けつけた。
-        - しらせをきくやいなや、はははびょういんにかけつけた。
+        - 電話を受けるや否や、彼は現場に駆けつけた。
+        - 電話を受けるや否や、彼は現場へ駆けつけた。
+        - 電話を受けるや否や、彼は現場に駆け付けた。
+        - 電話を受けるや否や、彼は現場に駆けつけました。
+        - 彼は電話を受けるや否や、現場に駆けつけた。
+        - 彼は電話を受けるや否や、現場へ駆けつけた。
+        - 彼は電話を受けるや否や、現場に駆け付けた。
+        - 彼は電話を受けるや否や、現場に駆けつけました。
+        - 電話を受けるやいなや、彼は現場に駆けつけた。
+        - 彼は電話を受けるやいなや、現場に駆けつけた。
+        - 連絡を受けるや否や、彼は現場に駆けつけた。
+        - 彼は連絡を受けるや否や、現場に駆けつけた。
+        - でんわをうけるやいなや、かれはげんばにかけつけた。
     known_wrong:
-      - answer: 知らせを聞いたや否や、母は病院に駆けつけた。
-        feedback_vi: や否や gắn vào thể từ điển - 聞くや否や.
+      - answer: 電話を受けたや否や、彼は現場に駆けつけた。
+        feedback_vi: や否や gắn vào thể từ điển - 受けるや否や, không dùng thể た.
         error_tag: yainaya_form
+      - answer: 電話を受けるや否や、現場に駆けつけてください。
+        feedback_vi: や否や chỉ kể lại sự việc đã xảy ra; vế sau không được là lời nhờ hay mệnh lệnh.
+        error_tag: yainaya_request
     explanation:
-      vi: 聞くや否や - ngay khi vừa nghe; 病院に駆けつける - vội vã đến bệnh viện.
-    display_answer: 知らせを聞くや否や、母は病院に駆けつけた。
+      vi: 受けるや否や - ngay khi vừa nhận (thể từ điển + や否や); 現場に駆けつける - vội vã chạy tới hiện trường. Giống "vừa... là đã..." của tiếng Việt, や否や nhấn hai việc gần như xảy ra cùng lúc và chỉ dùng để kể.
+    display_answer: 電話を受けるや否や、彼は現場に駆けつけた。
 
   # ---------------- application ----------------
   - key: ja:exercise:n1-u1-gahayaika-nari-mcq-natural

@@ -268,33 +268,31 @@ exercises:
     difficulty: 3
     item: ja:item:n4-renraku
     prompt:
-      source_text: Đến ga thì liên lạc cho tôi nhé. (lịch sự)
+      source_text: Nếu có điều gì không hiểu thì hãy liên lạc với tôi. (lịch sự)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 駅に着いたら、連絡してください。
-        - 駅に着いたら連絡してください。
-        - 駅についたら、連絡してください。
-        - 駅についたら連絡してください。
-        - 駅に着いたら、連絡ください。
-        - 駅に着いたら連絡ください。
-        - 駅に着いたら、連絡して下さい。
-        - 駅に着いたら連絡して下さい。
-        - 駅に着いたら、私に連絡してください。
-        - 駅に着いたら私に連絡してください。
-        - えきについたら、れんらくしてください。
-        - えきについたられんらくしてください。
+        - 分からないことがあったら、連絡してください。
+        - わからないことがあったら、連絡してください。
+        - 分からないことがあったら、ご連絡ください。
+        - わからないことがあったら、ご連絡ください。
+        - 分からないことがあったら、私に連絡してください。
+        - 分からないことがあれば、連絡してください。
+        - わからないことがあれば、連絡してください。
+        - 分からないことがあれば、ご連絡ください。
+        - 分からないことがあったら、連絡して下さい。
+        - わからないことがあったら、れんらくしてください。
     known_wrong:
-      - answer: 駅に着けば、連絡してください。
-        feedback_vi: 着く là hành động và vế sau là lời nhờ, nên phải dùng たら, không dùng ば.
-        error_tag: ba_request
-      - answer: 駅に着くと、連絡してください。
-        feedback_vi: と không đi với lời nhờ ở vế sau. Dùng 着いたら.
+      - answer: 分からないことがあると、連絡してください。
+        feedback_vi: と không đi với lời nhờ ở vế sau. Dùng あったら (hoặc あれば).
         error_tag: to_request
+      - answer: 分からないことがあったら、連絡しました。
+        feedback_vi: Câu này là lời nhờ cho tương lai - vế sau dùng ～てください, không dùng quá khứ.
+        error_tag: tense
     explanation:
-      vi: 着く → 着いた → 着いたら (sau khi đến). Vế sau là lời nhờ ～てください nên chỉ たら tự nhiên.
-    display_answer: 駅に着いたら、連絡してください。
+      vi: ある → あった → あったら - "nếu có (chuyện đó)". Vế sau là lời nhờ nên たら luôn an toàn; あれば cũng được vì ある chỉ trạng thái chứ không phải hành động.
+    display_answer: 分からないことがあったら、連絡してください。
 
   # ---------------- application ----------------
   - key: ja:exercise:n3-tara-ba-mcq-mail

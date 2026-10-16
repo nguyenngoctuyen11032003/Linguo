@@ -232,33 +232,32 @@ exercises:
     difficulty: 5
     item: ja:item:n1-u4-teigen
     prompt:
-      source_text: Hội đồng chuyên gia đã kiến nghị chính phủ xem xét lại chế độ giáo dục. (dùng 提言)
+      source_text: Nhóm nghiên cứu đã kiến nghị với Bộ trưởng việc rút ngắn thời gian làm việc. (dùng 提言)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 専門家会議は、教育制度の見直しを政府に提言した。
-        - 専門家会議は教育制度の見直しを政府に提言した。
-        - 専門家会議は、政府に教育制度の見直しを提言した。
-        - 専門家会議は政府に教育制度の見直しを提言した。
-        - 専門家会議は、教育制度の見直しを政府に提言しました。
-        - 専門家会議は、政府に教育制度の見直しを提言しました。
-        - 専門家会議は、教育制度を見直すよう政府に提言した。
-        - 専門家会議は、政府に教育制度を見直すよう提言した。
-        - 専門家会議は、教育制度を見直すべきだと政府に提言した。
-        - 専門家会議は、政府に対して教育制度の見直しを提言した。
-        - 専門家会議が、教育制度の見直しを政府に提言した。
-        - せんもんかかいぎは、きょういくせいどのみなおしをせいふにていげんした。
+        - 研究チームは、労働時間の短縮を大臣に提言した。
+        - 研究チームは、大臣に労働時間の短縮を提言した。
+        - 研究チームは、労働時間の短縮を大臣に提言しました。
+        - 研究チームは、大臣に労働時間の短縮を提言しました。
+        - 研究チームは、労働時間を短縮するよう大臣に提言した。
+        - 研究チームは、大臣に労働時間を短縮するよう提言した。
+        - 研究チームは、労働時間を短縮すべきだと大臣に提言した。
+        - 研究チームは、大臣に対して労働時間の短縮を提言した。
+        - 研究チームが、労働時間の短縮を大臣に提言した。
+        - 研究グループは、労働時間の短縮を大臣に提言した。
+        - けんきゅうチームは、ろうどうじかんのたんしゅくをだいじんにていげんした。
     known_wrong:
-      - answer: 専門家会議は、教育制度の見直しを政府を提言した。
-        feedback_vi: Đối tượng nhận kiến nghị đi với に - 政府に提言する.
+      - answer: 研究チームは、労働時間の短縮を大臣を提言した。
+        feedback_vi: Người nhận kiến nghị đi với に - 大臣に提言する; を đã dành cho nội dung kiến nghị.
         error_tag: particle
-      - answer: 政府は、教育制度の見直しを専門家会議に提言した。
-        feedback_vi: Đảo chủ thể - người kiến nghị là hội đồng chuyên gia.
+      - answer: 大臣は、労働時間の短縮を研究チームに提言した。
+        feedback_vi: Đảo chủ thể - người kiến nghị là nhóm nghiên cứu, người nhận là Bộ trưởng.
         error_tag: meaning
     explanation:
-      vi: N を + 人 に + 提言する - kiến nghị N với ai; 見直し - sự xem xét lại.
-    display_answer: 専門家会議は、教育制度の見直しを政府に提言した。
+      vi: (nội dung) を + (người nhận) に + 提言する - kiến nghị điều gì với ai; 短縮 - sự rút ngắn. 提言 trang trọng hơn 提案 (đề xuất) - thường là chuyên gia gửi lên cơ quan có thẩm quyền.
+    display_answer: 研究チームは、労働時間の短縮を大臣に提言した。
 
   - key: ja:exercise:n1-academic-review-translate-oite
     type: translate

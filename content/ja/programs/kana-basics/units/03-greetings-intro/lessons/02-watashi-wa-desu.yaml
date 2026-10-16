@@ -245,33 +245,34 @@ exercises:
     difficulty: 2
     item: ja:item:isha
     prompt:
-      source_text: Tôi là bác sĩ.
+      source_text: Chị Lan là bác sĩ.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - わたしはいしゃです。
-        - 私は医者です。
-        - わたしは医者です。
-        - 私はいしゃです。
-        - いしゃです。
-        - 医者です。
+        - ランさんはいしゃです。
+        - ランさんは医者です。
+        - ランさんはおいしゃさんです。
+        - ランさんはお医者さんです。
     known_wrong:
-      - answer: わたしわいしゃです。
-        feedback_vi: Trợ từ đọc "wa" nhưng viết は - わたしは.
+      - answer: ランさんわいしゃです。
+        feedback_vi: Trợ từ đọc "wa" nhưng viết は - ランさんは.
         error_tag: particle_wa_spelling
-      - answer: わたしはいしゃ。
+      - answer: ランさんはいしゃ。
         feedback_vi: Thiếu です ở cuối - câu lịch sự cần です.
         error_tag: missing_desu
-      - answer: わたしはですいしゃ。
-        feedback_vi: です đứng cuối câu - わたしはいしゃです.
+      - answer: ランさんはですいしゃ。
+        feedback_vi: です đứng cuối câu - ランさんはいしゃです.
         error_tag: word_order
-      - answer: watashi wa isha desu
-        feedback_vi: Hãy gõ bằng kana (わたしはいしゃです), không dùng phiên âm Latinh.
+      - answer: わたしはいしゃです。
+        feedback_vi: Câu nói về chị Lan, nên chủ đề là ランさん, không phải わたし.
+        error_tag: wrong_subject
+      - answer: ran san wa isha desu
+        feedback_vi: Hãy gõ bằng kana (ランさんはいしゃです), không dùng phiên âm Latinh.
         error_tag: romanization
     explanation:
-      vi: わたし (tôi) + は (thì) + いしゃ (bác sĩ) + です (là). Có thể bỏ わたしは khi đã rõ.
-    display_answer: わたしはいしゃです。
+      vi: ランさん (chị Lan) + は (thì) + いしゃ (bác sĩ) + です (là). Mẫu "A は B です" giống hệt khi nói về mình, chỉ thay わたし bằng tên người; tên người khác luôn kèm さん.
+    display_answer: ランさんはいしゃです。
 
   # ---------------- application ----------------
   - key: ja:exercise:watashi-translate-vi

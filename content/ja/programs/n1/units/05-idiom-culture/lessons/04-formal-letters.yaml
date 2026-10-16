@@ -241,33 +241,28 @@ exercises:
     difficulty: 5
     item: ja:item:n1-u5-heiso
     prompt:
-      source_text: Xin chân thành cảm ơn quý vị đã luôn đặc biệt ưu ái. (câu cố định trong thư thương mại, mở đầu bằng 平素)
+      source_text: Thường ngày chúng tôi luôn nhận được nhiều sự giúp đỡ của quý vị. (câu chào mở đầu email công việc, dùng 平素)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
-        - 平素は格別のお引き立てを賜り厚く御礼申し上げます。
-        - 平素は格別のお引き立てをいただき、厚く御礼申し上げます。
-        - 平素は格別のお引き立てを賜り、厚くお礼申し上げます。
-        - 平素は格別のお引き立てをいただき、厚くお礼申し上げます。
-        - 平素は格別のご愛顧を賜り、厚く御礼申し上げます。
-        - 平素は格別のご高配を賜り、厚く御礼申し上げます。
-        - 平素は格別のお引き立てを賜り、心より御礼申し上げます。
-        - 平素は格別のお引き立てを賜り、誠にありがとうございます。
-        - 平素より格別のお引き立てを賜り、厚く御礼申し上げます。
-        - 平素は格別のお引立てを賜り、厚く御礼申し上げます。
-        - へいそはかくべつのおひきたてをたまわり、あつくおんれいもうしあげます。
+        - 平素より大変お世話になっております。
+        - 平素は大変お世話になっております。
+        - 平素よりたいへんお世話になっております。
+        - 平素は大変お世話になっています。
+        - 平素より大変お世話になっています。
+        - 平素よりお世話になっております。
+        - へいそよりたいへんおせわになっております。
     known_wrong:
-      - answer: 平素は格別のお引き立てをもらい、厚く御礼申し上げます。
-        feedback_vi: もらう quá thân mật trong văn thư; dùng khiêm nhường ngữ 賜り hoặc いただき.
-        error_tag: keigo_level
-      - answer: 平素は格別のお引き立てを賜り、厚くお詫び申し上げます。
-        feedback_vi: お詫び là xin lỗi; cảm ơn là 御礼.
+      - answer: 平素より大変お世話になります。
+        feedback_vi: お世話になります là "sẽ nhờ quý vị giúp đỡ" (sắp tới); lời chào về sự giúp đỡ vẫn đang tiếp diễn dùng ～ております.
+        error_tag: aspect
+      - answer: 平素より大変お世話しております。
+        feedback_vi: お世話する là mình chăm lo cho người khác - ngược nghĩa. Mình nhận sự giúp đỡ thì nói お世話になる.
         error_tag: vocab_meaning
     explanation:
-      vi: 平素は - thường ngày; 格別のお引き立て - sự ưu ái đặc biệt; 賜り - được ban (khiêm nhường của もらう); 厚く御礼申し上げます - xin chân thành cảm ơn.
-    display_answer: 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
+      vi: 平素より / 平素は - thường ngày (văn viết của いつも); お世話になっております - đang nhận sự giúp đỡ (おる là khiêm nhường của いる). Đây là bản trang trọng của いつもお世話になっております, câu mở đầu gần như bắt buộc trong email gửi đối tác.
+    display_answer: 平素より大変お世話になっております。
 
   # ---------------- application ----------------
   - key: ja:exercise:n1-u5-formal-letters-mcq-order

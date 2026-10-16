@@ -357,15 +357,15 @@ exercises:
     difficulty: 4
     item: ja:item:n1-u2-gram-narini
     prompt:
-      instruction: "Sắp xếp thành câu tiếng Nhật: \"Trẻ con cũng lo cho bố mẹ theo cách của trẻ con.\""
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Người mới cũng đã dốc hết sức theo cách của người mới.\""
       tokens:
-        - { id: c4, text: 子どもたるもの、 }
-        - { id: c2, text: 子どもなりに、 }
-        - { id: c3, text: 親のことを心配している }
-        - { id: c1, text: 子どもは }
+        - { id: c4, text: 新人たるもの、 }
+        - { id: c2, text: 新人なりに、 }
+        - { id: c3, text: 精一杯頑張った }
+        - { id: c1, text: 新人は }
     answer:
       orders:
         - [c1, c2, c3]
     explanation:
-      vi: N は N なりに - (ai) theo cách của riêng mình. たるもの đòi hỏi vế sau là chuẩn mực, không hợp ở đây.
-    display_answer: 子どもは子どもなりに、親のことを心配している。
+      vi: N は N なりに - (ai) làm theo khả năng, cách của riêng mình, ngầm thừa nhận giới hạn nhưng ghi nhận nỗ lực. たるもの đòi hỏi vế sau là chuẩn mực "phải như thế", không hợp với câu kể lại việc đã làm.
+    display_answer: 新人は新人なりに、精一杯頑張った。

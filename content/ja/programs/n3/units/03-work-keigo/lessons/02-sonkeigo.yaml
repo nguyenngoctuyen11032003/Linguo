@@ -264,33 +264,31 @@ exercises:
     difficulty: 3
     item: ja:item:n3-irassharu
     prompt:
-      source_text: Giám đốc hiện đang ở phòng họp ạ. (tôn kính)
+      source_text: Ngày mai giám đốc có đến công ty không ạ? (tôn kính)
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 社長は今、会議室にいらっしゃいます。
-        - 社長は今会議室にいらっしゃいます。
-        - 社長はただいま会議室にいらっしゃいます。
-        - 社長は今、会議室にいらっしゃいますよ。
-        - 今、社長は会議室にいらっしゃいます。
-        - 今社長は会議室にいらっしゃいます。
-        - 社長は会議室にいらっしゃいます。
-        - しゃちょうはいま、かいぎしつにいらっしゃいます。
-        - しゃちょうはいまかいぎしつにいらっしゃいます。
+        - 社長は明日、会社にいらっしゃいますか。
+        - 社長は明日会社にいらっしゃいますか。
+        - 明日、社長は会社にいらっしゃいますか。
+        - 社長は明日、会社へいらっしゃいますか。
+        - 社長は明日、いらっしゃいますか。
+        - 社長はあした、会社にいらっしゃいますか。
+        - しゃちょうはあした、かいしゃにいらっしゃいますか。
     known_wrong:
-      - answer: 社長は今、会議室にいます。
-        feedback_vi: Câu đúng ngữ pháp nhưng thiếu kính ngữ; nói về giám đốc dùng いらっしゃいます.
+      - answer: 社長は明日、会社に来ますか。
+        feedback_vi: Đúng ngữ pháp nhưng thiếu kính ngữ; hành động của giám đốc dùng いらっしゃる.
         error_tag: missing_sonkeigo
-      - answer: 社長は今、会議室にいらっしゃります。
+      - answer: 社長は明日、会社にいらっしゃりますか。
         feedback_vi: Thể ます của いらっしゃる là いらっしゃいます.
         error_tag: verb_conjugation
-      - answer: 社長は今、会議室におります。
-        feedback_vi: おります là khiêm nhường; chỉ dùng cho mình hoặc người phe mình khi nói với khách.
+      - answer: 社長は明日、会社に参りますか。
+        feedback_vi: 参る là khiêm nhường - chỉ dùng cho mình. Nâng người trên dùng いらっしゃる.
         error_tag: sonkeigo_kenjougo
     explanation:
-      vi: いる → いらっしゃる → いらっしゃいます. 社長 (giám đốc) đã là danh xưng kính trọng, không thêm さん.
-    display_answer: 社長は今、会議室にいらっしゃいます。
+      vi: 来る (đến) → いらっしゃる → いらっしゃいますか. Một từ いらっしゃる thay cho cả いる, 行く, 来る - ngữ cảnh cho biết nghĩa nào.
+    display_answer: 社長は明日、会社にいらっしゃいますか。
 
   # ---------------- application ----------------
   - key: ja:exercise:n3-sonkeigo-mcq-self
