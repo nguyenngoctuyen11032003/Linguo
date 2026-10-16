@@ -305,7 +305,7 @@
   width: 100%;
   max-width: 48rem;
   margin-inline: auto;
-  padding: 1.25rem max(var(--page-gutter), env(safe-area-inset-left, 0px)) calc(6rem + env(safe-area-inset-bottom, 0px));
+  padding: 1rem max(var(--page-gutter), env(safe-area-inset-left, 0px)) calc(6rem + env(safe-area-inset-bottom, 0px));
 }
 .shell__route {
   animation: rise-in var(--dur-slow) var(--ease-expo) both;
@@ -334,10 +334,13 @@
   border-bottom: 1px solid var(--hairline);
 }
 @media (hover: none) and (pointer: coarse) {
+  /* Phones: the bar is the page colour (= theme-color, which tints the browser / status-bar chrome), so the
+     status-bar band it pads with env(safe-area-inset-top) reads as one surface with the bar instead of a
+     lighter strip above it (surface-solid is white in the light theme). */
   .appbar {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    background: color-mix(in srgb, var(--surface-solid) 96%, transparent);
+    background: var(--bg);
   }
 }
 .appbar__inner {
@@ -379,6 +382,30 @@
 @media (hover: hover) {
   .appbar__avatar:hover {
     transform: scale(1.06);
+  }
+}
+/* Phones/tablets: a compact 52px bar. Controls keep a 44px tap box (bell, avatar link) but draw smaller, and the
+   tool row is pulled out by the avatar's inner inset so its visible edge lines up with the content gutter. */
+@media (max-width: 1023.98px) {
+  .appbar__inner {
+    height: 3.25rem;
+    gap: 0.25rem;
+  }
+  .appbar__brand {
+    min-height: 2.75rem;
+  }
+  .appbar__brand .font-display {
+    font-size: 22px;
+  }
+  .appbar__tools {
+    gap: 0;
+    margin-right: -0.25rem;
+  }
+  .appbar__tools button[aria-controls] {
+    min-height: 2.25rem;
+    margin-right: 0.25rem;
+    padding-inline: 0.75rem 0.5rem;
+    font-size: 0.8125rem;
   }
 }
 @media (min-width: 1024px) {

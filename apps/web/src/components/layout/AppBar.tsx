@@ -27,7 +27,7 @@ export function AppBar() {
     <header className="appbar vt-appbar sticky top-0 z-30 pt-safe">
       <div className="appbar__inner">
         <Link to="/app" aria-label="Linguo" className="appbar__brand focus-ring">
-          <Wordmark compact />
+          <Wordmark compact size={24} />
         </Link>
         <nav aria-label="Vị trí hiện tại" className="appbar__crumb">
           <span aria-hidden className="appbar__crumb-root">Linguo</span>
@@ -59,7 +59,7 @@ export function AppBar() {
             aria-label="Tài khoản và cài đặt"
             className="appbar__avatar focus-ring"
           >
-            <Avatar src={avatarUrl(getSupabase(), profile?.avatarPath)} initial={initial} className="size-11" initialClassName="text-[15px]" />
+            <Avatar src={avatarUrl(getSupabase(), profile?.avatarPath)} initial={initial} className="size-9 lg:size-11" initialClassName="text-[13px] lg:text-[15px]" />
           </Link>
         </div>
       </div>
