@@ -95,8 +95,10 @@ describe('helpers', () => {
   });
 
   it('formats a timestamp in the viewer time zone, a plain date as written', () => {
-    const tz = process.env.TZ;
-    process.env.TZ = 'Asia/Ho_Chi_Minh';
+    // Node re-reads TZ on assignment; the web tsconfig has no Node types, hence the cast.
+    const env = (globalThis as { process?: { env: Record<string, string | undefined> } }).process!.env;
+    const tz = env.TZ;
+    env.TZ = 'Asia/Ho_Chi_Minh';
     try {
       // 20:05 UTC is already the next day in Vietnam (UTC+7).
       expect(formatAdminDate('2026-10-10T20:05:00+00:00')).toBe('11/10/2026');
@@ -104,8 +106,8 @@ describe('helpers', () => {
       expect(formatAdminDate('2026-10-31')).toBe('31/10/2026');
       expect(formatAdminDate('not a date')).toBe('not a date');
     } finally {
-      if (tz === undefined) delete process.env.TZ;
-      else process.env.TZ = tz;
+      if (tz === undefined) delete env.TZ;
+      else env.TZ = tz;
     }
   });
 
