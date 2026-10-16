@@ -35,7 +35,7 @@ const TRACKS: RouteTrack[] = [
     stops: [
       { x: 28, y: 290, label: 'Kana', labelPosition: 'top', anchor: 'start' },
       { x: 150, y: 275, label: 'JLPT N5–N4', labelPosition: 'bottom' },
-      { x: 270, y: 260, label: 'N3–N2', labelPosition: 'top' },
+      { x: 270, y: 260, label: 'N3–N1', labelPosition: 'top' },
       { x: 292, y: 296, label: 'N1', labelPosition: 'bottom', anchor: 'end' },
     ],
   },
