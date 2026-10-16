@@ -1,4 +1,4 @@
-import { act, fireEvent, renderHook, screen } from '@testing-library/react';
+import { act, fireEvent, renderHook, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { renderWithProviders } from '../../../tests/unit/render';
@@ -134,10 +134,10 @@ describe('LandingPage', () => {
     const close = screen.getByRole('button', { name: 'Đóng menu' });
     expect(close).toHaveFocus();
 
-    const links = Array.from(dialog.querySelectorAll<HTMLElement>('a[href]'));
-    expect(links.length).toBeGreaterThan(0);
+    expect(dialog.querySelectorAll('a[href]').length).toBeGreaterThan(0);
+    // The install button is the last focusable element of the menu.
     await userEvent.tab({ shift: true });
-    expect(links[links.length - 1]).toHaveFocus();
+    expect(within(dialog).getByRole('button', { name: 'Tải ứng dụng' })).toHaveFocus();
     await userEvent.tab();
     expect(close).toHaveFocus();
 
