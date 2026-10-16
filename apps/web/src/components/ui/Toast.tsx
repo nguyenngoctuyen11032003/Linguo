@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { CheckCircle2, Info, X, XCircle } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { playSound, type SoundCue } from '@/lib/sound';
 import { LIFT_CLASS, ToastLiftContext, type RegisterLift, type ToastLiftLevel } from './toast-lift';
 
 export type ToastTone = 'success' | 'error' | 'info';
@@ -10,7 +11,8 @@ interface ToastItem {
   message: string;
 }
 interface ToastApi {
-  show: (toast: { tone: ToastTone; message: string }) => void;
+  /** `sound` replaces the tone's cue (e.g. a badge toast plays "achievement"); null keeps the toast silent. */
+  show: (toast: { tone: ToastTone; message: string; sound?: SoundCue | null }) => void;
 }
 
 const ToastContext = createContext<ToastApi | null>(null);
@@ -19,6 +21,8 @@ const ICONS = { success: CheckCircle2, error: XCircle, info: Info } as const;
 const TONE_CLASS: Record<ToastTone, string> = { success: 'text-success', error: 'text-error', info: 'text-primary' };
 /** Errors stay longer so they can be read; everything else is transient. */
 const DURATION_MS: Record<ToastTone, number> = { success: 4000, info: 4000, error: 8000 };
+/** Info toasts are chatter and stay silent; the cues' own minGap keeps a burst of toasts from stacking sounds. */
+const TONE_SOUND: Record<ToastTone, SoundCue | null> = { success: 'success', error: 'error', info: null };
 type Hold = 'hover' | 'focus';
 
 export function ToastProvider({ children }: { children: ReactNode }) {
@@ -77,7 +81,9 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   );
 
   const show = useCallback<ToastApi['show']>(
-    ({ tone, message }) => {
+    ({ tone, message, sound }) => {
+      const cue = sound === undefined ? TONE_SOUND[tone] : sound;
+      if (cue) playSound(cue);
       const id = nextId.current++;
       setItems((list) => [...list, { id, tone, message }]);
       startTimer(id, tone);

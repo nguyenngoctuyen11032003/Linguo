@@ -10,6 +10,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson, type UnitGroup } from './grouping';
 import '../home/home.css';
 import { readUnitOpen, writeUnitOpen, type UnitOpenState } from './unit-open';
@@ -100,6 +101,7 @@ function LessonRow({ lesson, lessons, nextId, index }: { lesson: PathLesson; les
   return (
     <Link
       to={`/app/hoc-tap/bai/${lesson.lesson_id}`}
+      onClick={() => playSound('tap')}
       className={cn(
         'group flex min-h-16 items-center gap-3 rounded-[1.25rem] py-2 pl-1 pr-2 sm:gap-4 sm:pr-3 transition-colors hover:bg-text/[0.04] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
         isNext && 'bg-accent/[0.07] ring-1 ring-accent/25 ring-inset',
@@ -270,6 +272,7 @@ export function LearnPage() {
           <Link
             to={`/app/hoc-tap/bai/${next.lesson_id}`}
             aria-label={`${next.run_status === 'in_progress' ? 'Học tiếp' : 'Bắt đầu'}: ${next.title.vi}`}
+            onClick={() => playSound('tap')}
             className="group relative isolate flex items-center gap-4 overflow-hidden rounded-[1.75rem] bg-[image:var(--hero-bg)] p-4 pl-5 text-white transition-transform duration-500 ease-[var(--ease-expo)] hover:-translate-y-0.5 lg:min-h-56 lg:flex-col-reverse lg:items-stretch lg:justify-between lg:gap-8 lg:rounded-[2rem] lg:p-7 shadow-[0_20px_50px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/60"
           >
             <span aria-hidden="true" className="absolute -right-10 -top-16 -z-10 size-48 rounded-full bg-radial from-accent/35 to-transparent to-70%" />

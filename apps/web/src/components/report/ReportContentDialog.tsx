@@ -6,6 +6,7 @@ import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
 import { Button } from '@/components/ui/Button';
 import { useReportContent } from '@/features/content-reports/useReportContent';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { useModalDialog } from '@/lib/useModalDialog';
 
 const OPTIONS = REPORT_REASONS.map((id) => ({ id, text: REPORT_REASON_LABELS_VI[id], lang: 'vi' as const }));
@@ -64,7 +65,9 @@ export function ReportContentDialog({ open, onClose, targetKind, targetId, onRep
   const submit = async () => {
     if (!reason) return;
     const result = await report.submit({ targetKind, targetId, reason, note });
-    if (result) onReported?.(result.status);
+    if (!result) return;
+    playSound('success');
+    onReported?.(result.status);
   };
 
   // Global shortcuts listen on window; Escape and Tab must still reach useModalDialog's document listener.

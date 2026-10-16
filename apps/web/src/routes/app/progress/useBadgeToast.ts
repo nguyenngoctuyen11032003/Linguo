@@ -34,6 +34,6 @@ export function useBadgeToast(pathId: string | null, motivation: Motivation | nu
       celebrated.add(`${pathId}:${key}`);
       track('badge_earned', { badge: key });
     }
-    toast.show({ tone: 'success', message: badgeToastMessage(keys) });
+    toast.show({ tone: 'success', message: badgeToastMessage(keys), sound: 'achievement' });
   }, [pathId, fresh, toast]);
 }

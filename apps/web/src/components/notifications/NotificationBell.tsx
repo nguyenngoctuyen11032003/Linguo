@@ -1,14 +1,23 @@
+import { useEffect, useRef } from 'react';
 import { Bell } from 'lucide-react';
 import { Link } from 'react-router';
 import { unreadBadgeText, unreadLabel } from '@/features/notifications/format';
 import { useUnreadNotificationCount } from '@/features/notifications/useNotifications';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 
 export const NOTIFICATIONS_PATH = '/app/thong-bao';
 
 /** Header/sidebar bell linking to the inbox, with an unread badge (1…9, then 9+) polled while the tab is visible. */
 export function NotificationBell({ className }: { className?: string }) {
-  const { count } = useUnreadNotificationCount();
+  const { status, count } = useUnreadNotificationCount();
+  // Chime only when the unread count grows after the first load, i.e. something new arrived while the app is open.
+  const lastCount = useRef<number | null>(null);
+  useEffect(() => {
+    if (status !== 'ready') return;
+    if (lastCount.current !== null && count > lastCount.current) playSound('notify');
+    lastCount.current = count;
+  }, [status, count]);
   return (
     <Link
       to={NOTIFICATIONS_PATH}

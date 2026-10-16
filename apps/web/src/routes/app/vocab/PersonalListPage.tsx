@@ -8,6 +8,7 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { usePersonalLists } from '@/features/personal-vocab/usePersonalLists';
 import { usePersonalWords } from '@/features/personal-vocab/usePersonalWords';
 import { ConfirmDeleteDialog } from './ConfirmDeleteDialog';
@@ -289,6 +290,7 @@ export function PersonalListPage() {
         onClose={() => setImporting(false)}
         onImport={async (rows) => {
           const result = await words.importRows(rows);
+          if (result.added + result.updated > 0) playSound('save');
           lists.reload();
           return result;
         }}
@@ -319,7 +321,7 @@ export function PersonalListPage() {
         onClose={() => setDeleting(false)}
         onConfirm={async () => {
           await lists.remove(list.id);
-          toast.show({ tone: 'success', message: 'Đã xoá danh sách.' });
+          toast.show({ tone: 'success', message: 'Đã xoá danh sách.', sound: 'remove' });
           navigate('/app/tu-vung-cua-toi');
         }}
       />
@@ -345,6 +347,7 @@ export function PersonalListPage() {
           const index = visible.findIndex((w) => w.id === removing.id);
           const neighbour = visible[index + 1] ?? visible[index - 1] ?? null;
           await words.remove(removing.id);
+          playSound('remove');
           focusAfterDelete.current = { wordId: neighbour?.id ?? null };
           lists.reload();
         }}

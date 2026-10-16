@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 
 export interface Choice<T extends string> {
   value: T;
@@ -42,7 +43,10 @@ export function ChoiceList<T extends string>({ name, options, value, onChange, l
             value={option.value}
             checked={value === option.value}
             disabled={option.disabled}
-            onChange={() => onChange(option.value)}
+            onChange={() => {
+              playSound('select');
+              onChange(option.value);
+            }}
             className="mt-0.5 size-6 shrink-0 cursor-[inherit] appearance-none rounded-full border-2 border-input-border bg-surface-solid transition-[background-color,border-color,box-shadow] duration-150 checked:border-primary checked:bg-primary checked:shadow-[inset_0_0_0_4px_var(--surface-solid)] focus-visible:outline-none"
           />
           <span className="min-w-0 flex-1">

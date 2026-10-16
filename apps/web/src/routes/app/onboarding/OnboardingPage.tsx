@@ -27,6 +27,7 @@ import { useReferenceHours } from '@/features/learning-paths/useReferenceHours';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { cn } from '@/lib/cn';
 import { todayIso } from '@/lib/dates';
+import { playSound } from '@/lib/sound';
 import { requireSupabase } from '@/lib/supabase';
 import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, stepHint, visibleSteps, type StepNumber } from './logic';
 import { OnboardingCelebration } from './OnboardingCelebration';
@@ -150,7 +151,9 @@ export function OnboardingPage() {
   };
   const goNext = () => {
     const nextStep = steps[index + 1];
-    if (nextStep) go(nextStep);
+    if (!nextStep) return;
+    playSound('next');
+    go(nextStep);
   };
   const goBack = () => {
     const prev = steps[index - 1];

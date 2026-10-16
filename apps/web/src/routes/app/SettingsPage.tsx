@@ -23,6 +23,7 @@ import { avatarErrorMessage, avatarUrl, prepareAvatar, removeAvatar, uploadAvata
 import { updateProfile } from '@/features/profile/service';
 import { InstallAppSection } from '@/features/pwa/InstallAppSection';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import type { AppStyle } from '@/lib/app-style';
 import { getSupabase, requireSupabase } from '@/lib/supabase';
 import { useMotionPrefs } from '@/providers/MotionProvider';
@@ -199,6 +200,7 @@ export function SettingsPage() {
   }
 
   function chooseTheme(value: ThemePreference) {
+    playSound('select');
     markLocalPreferenceEdit();
     theme.setPreference(value);
     persistPreferences({ theme: value, reduceMotion: motionPrefs.userReduceMotion });
@@ -206,6 +208,7 @@ export function SettingsPage() {
 
   function toggleMotion() {
     const value = !motionPrefs.userReduceMotion;
+    playSound(value ? 'toggleOn' : 'toggleOff');
     markLocalPreferenceEdit();
     motionPrefs.setUserReduceMotion(value);
     persistPreferences({ theme: theme.preference, reduceMotion: value });
@@ -415,7 +418,10 @@ export function SettingsPage() {
                     id={`style-${value}`}
                     value={value}
                     checked={theme.style === value}
-                    onChange={() => theme.setStyle(value)}
+                    onChange={() => {
+                      playSound('select');
+                      theme.setStyle(value);
+                    }}
                     aria-describedby={`style-${value}-hint`}
                     className="peer sr-only"
                   />

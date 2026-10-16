@@ -20,6 +20,7 @@ import {
   type ReminderDraft,
 } from '@/features/notifications/validation';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './section-state';
 import { DISABLED_NEUTRAL, DISABLED_NEUTRAL_TRACK } from '@/components/ui/disabled-styles';
 
@@ -59,7 +60,10 @@ function SwitchRow({ label, description, checked, disabled = false, onToggle }: 
         aria-labelledby={labelId}
         aria-describedby={descId}
         disabled={disabled}
-        onClick={onToggle}
+        onClick={() => {
+          playSound(checked ? 'toggleOff' : 'toggleOn');
+          onToggle();
+        }}
         className="group inline-flex min-h-11 min-w-14 shrink-0 items-center justify-center rounded-full disabled:cursor-wait"
       >
         <span
@@ -241,7 +245,10 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
                   type="button"
                   aria-pressed={on}
                   aria-label={DAY_LABELS[day].long}
-                  onClick={() => change({ remind_days: toggleDay(draft.remind_days, day) })}
+                  onClick={() => {
+                    playSound(on ? 'toggleOff' : 'toggleOn');
+                    change({ remind_days: toggleDay(draft.remind_days, day) });
+                  }}
                   className={chipClasses(on)}
                 >
                   {DAY_LABELS[day].short}
@@ -297,7 +304,10 @@ function ReminderForm({ prefs, saving, onSave }: { prefs: NotificationPrefs; sav
                   name="max_per_day"
                   value={n}
                   checked={draft.max_per_day === n}
-                  onChange={() => change({ max_per_day: n })}
+                  onChange={() => {
+                    playSound('select');
+                    change({ max_per_day: n });
+                  }}
                   className="sr-only"
                 />
                 {n} lần

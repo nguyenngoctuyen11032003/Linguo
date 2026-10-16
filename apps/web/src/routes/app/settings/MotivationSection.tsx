@@ -3,6 +3,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useMotivationPrefs } from '@/features/progress/useMotivationPrefs';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './section-state';
 import { DISABLED_NEUTRAL_TRACK } from '@/components/ui/disabled-styles';
 
@@ -35,7 +36,10 @@ function ToggleRow({ label, description, checked, disabled, onToggle }: ToggleRo
         aria-labelledby={labelId}
         aria-describedby={descId}
         disabled={disabled}
-        onClick={onToggle}
+        onClick={() => {
+          playSound(checked ? 'toggleOff' : 'toggleOn');
+          onToggle();
+        }}
         className="group inline-flex min-h-11 min-w-14 shrink-0 items-center justify-center rounded-full disabled:cursor-wait"
       >
         <span

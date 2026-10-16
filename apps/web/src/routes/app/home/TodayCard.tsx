@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ArrowRight, Target, Zap } from 'lucide-react';
 import { Link } from 'react-router';
 import type { StudySession } from '@linguo/shared';
@@ -6,8 +7,29 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { SESSION_PAGE_PATH } from '@/features/session-link/params';
 import { useTodaySession } from '@/features/session-link/useTodaySession';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
+import { readString, writeString } from '@/lib/storage';
 
 const SHORT_SESSION_PATH = `${SESSION_PAGE_PATH}?phut=10`;
+/** Local date (YYYY-MM-DD) on which this device last celebrated the daily goal. */
+const GOAL_SOUND_KEY = 'linguo-goal-sound-day';
+
+/**
+ * Plays "streak" the first time this device sees today's goal met, e.g. back on Home after the lesson that reached
+ * it. The day is stored only when the cue fires, so StrictMode's discarded first effect cannot swallow it.
+ */
+function useGoalReachedSound(goalMet: boolean): void {
+  useEffect(() => {
+    if (!goalMet) return;
+    const timer = window.setTimeout(() => {
+      const today = new Date().toLocaleDateString('en-CA');
+      if (readString(GOAL_SOUND_KEY) === today) return;
+      writeString(GOAL_SOUND_KEY, today);
+      playSound('streak');
+    }, 600);
+    return () => window.clearTimeout(timer);
+  }, [goalMet]);
+}
 
 function isOpen(session: StudySession | null): session is StudySession {
   return !!session && (session.status === 'planned' || session.status === 'in_progress');
@@ -49,6 +71,9 @@ function RouteMotif() {
  */
 export function TodayCard({ pathId }: { pathId: string }) {
   const { status, data, reload } = useTodaySession(pathId);
+  useGoalReachedSound(
+    status === 'ready' && !!data && data.daily_goal_minutes > 0 && Math.floor(data.studied_seconds_today / 60) >= data.daily_goal_minutes,
+  );
 
   if (status === 'unavailable') return null;
 
