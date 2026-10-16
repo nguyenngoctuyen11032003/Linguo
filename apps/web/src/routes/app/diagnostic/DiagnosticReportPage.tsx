@@ -269,8 +269,8 @@ export function DiagnosticReportPage() {
   }, [rawReport]);
 
   const header = (
-    <header className="pt-safe">
-      <div className="mx-auto flex min-h-14 w-full max-w-xl items-center px-safe py-2">
+    <header className="pt-safe min-[1024px]:border-b min-[1024px]:border-[var(--hairline)]">
+      <div className="mx-auto flex min-h-14 w-full max-w-xl min-[1024px]:max-w-[42rem] items-center px-safe py-2">
         <Link to={HOME} aria-label="Đóng kết quả" className="inline-flex size-11 items-center justify-center rounded-full hover:bg-text/5">
           <X aria-hidden className="size-5" />
         </Link>
@@ -377,7 +377,7 @@ export function DiagnosticReportPage() {
       {header}
       <main
         id="main"
-        className="mx-auto w-full max-w-xl flex-1 px-safe pb-[max(2rem,env(safe-area-inset-bottom,0px))] pt-3 text-[17px] leading-relaxed"
+        className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 px-safe pb-[max(2rem,env(safe-area-inset-bottom,0px))] pt-3 text-[17px] leading-relaxed min-[1024px]:pt-10"
       >
         {body}
       </main>

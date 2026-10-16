@@ -34,7 +34,7 @@ export function AuthLayout() {
               Học thông minh
               <span className="block bg-gradient-to-r from-primary via-[#8fd0f2] to-accent bg-clip-text text-transparent">Nhớ lâu hơn</span>
             </p>
-            <ul className="space-y-3">
+            <ul className="reveal-stagger space-y-3">
               {POINTS.map(({ icon: Icon, text }) => (
                 <li key={text} className="glass flex max-w-md items-center gap-4 rounded-2xl px-5 py-4 text-[15px]">
                   <Icon aria-hidden className="size-5 shrink-0 text-primary" strokeWidth={1.75} />

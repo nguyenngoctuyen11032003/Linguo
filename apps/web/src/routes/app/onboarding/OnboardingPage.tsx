@@ -294,8 +294,8 @@ export function OnboardingPage() {
 
   return (
     <div className="flex min-h-hero flex-col bg-bg">
-      <header className="pt-safe">
-        <div className="mx-auto flex h-16 w-full max-w-xl items-center gap-2 px-safe">
+      <header className="pt-safe min-[1024px]:border-b min-[1024px]:border-[var(--hairline)]">
+        <div className="mx-auto flex h-16 w-full max-w-xl min-[1024px]:max-w-[42rem] items-center gap-2 px-safe">
           {index > 0 || paths.paths.length > 0 ? (
             <button
               type="button"
@@ -318,7 +318,7 @@ export function OnboardingPage() {
           )}
         </div>
       </header>
-      <main id="main" className="mx-auto w-full max-w-xl flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3">
+      <main id="main" className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3 min-[1024px]:pt-10">
         <p className="eyebrow tabular-nums">
           Bước {index + 1}/{steps.length}
         </p>
@@ -326,15 +326,15 @@ export function OnboardingPage() {
           id="onboarding-title"
           ref={titleRef}
           tabIndex={-1}
-          className="mt-2 font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.1] focus:outline-none"
+          className="mt-2 font-display text-[clamp(34px,10vw,44px)] min-[1024px]:text-[52px] font-extrabold uppercase leading-[1.1] focus:outline-none"
         >
           {TITLES[step]}
         </h1>
-        <div className="mt-6">{body}</div>
+        <div key={step} className="reveal mt-6">{body}</div>
       </main>
       {step !== 6 && (
         <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
-          <div className="mx-auto w-full max-w-xl px-safe pt-3 pb-4">
+          <div className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] px-safe pt-3 pb-4">
             {step === 1 && allTaken ? (
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <p className="text-[15px] text-muted">Bạn đã có lộ trình cho mọi ngôn ngữ hiện có.</p>

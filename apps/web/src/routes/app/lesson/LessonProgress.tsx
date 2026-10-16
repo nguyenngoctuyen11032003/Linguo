@@ -18,7 +18,7 @@ export function LessonProgress({ steps, stepIndex }: { steps: LessonStep[]; step
         aria-valuemax={total}
         aria-valuenow={current}
         aria-valuetext={label}
-        className="h-4 min-w-0 flex-1 overflow-hidden rounded-full bg-text/10"
+        className="h-4 min-[1024px]:h-3 min-w-0 flex-1 overflow-hidden rounded-full bg-text/10"
       >
         <motion.div
           className="relative h-full min-w-4 rounded-full bg-gradient-to-r from-primary to-accent after:absolute after:inset-x-2 after:top-1 after:h-1 after:rounded-full after:bg-white/35"

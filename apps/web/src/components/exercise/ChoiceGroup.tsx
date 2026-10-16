@@ -101,8 +101,8 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
             disabled={disabled}
             onClick={() => onSelect(option.id)}
             className={cn(
-              'flex min-h-16 w-full min-w-0 items-center gap-3.5 rounded-[1.25rem] border-2 px-4 py-3 text-left',
-              'transition-[translate,box-shadow,background-color,border-color] duration-150 not-disabled:active:translate-y-[3px]',
+              'flex min-h-16 min-[1024px]:min-h-[4.5rem] min-[1024px]:px-5 w-full min-w-0 items-center gap-3.5 rounded-[1.25rem] border-2 px-4 py-3 text-left',
+              'transition-[translate,box-shadow,background-color,border-color] duration-150 motion-safe:not-disabled:hover:-translate-y-px not-disabled:active:translate-y-[3px]',
               'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 disabled:cursor-default',
               CHOICE_TONE[tone],
             )}
@@ -117,7 +117,7 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
               {tone === 'correct' ? <Check className="size-4" strokeWidth={3} /> : tone === 'wrong' ? <X className="size-4" strokeWidth={3} /> : i + 1}
             </span>
             <span className="min-w-0 flex-1 break-words">
-              <span lang={option.lang} className="block text-[17px] font-semibold leading-snug">
+              <span lang={option.lang} className="block text-[17px] min-[1024px]:text-[19px] font-semibold leading-snug">
                 {option.text}
               </span>
               {(chosen || correct) && (

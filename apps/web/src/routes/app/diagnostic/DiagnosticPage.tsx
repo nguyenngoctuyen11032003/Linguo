@@ -35,13 +35,13 @@ function Shell({ header, children, footer }: { header: ReactNode; children: Reac
       {header}
       <main
         id="main"
-        className="mx-auto w-full max-w-xl flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3 text-[17px] leading-relaxed"
+        className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3 text-[17px] leading-relaxed min-[1024px]:pt-10"
       >
         {children}
       </main>
       {footer && (
         <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
-          <div className="mx-auto w-full max-w-xl px-safe pt-3 pb-4">{footer}</div>
+          <div className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] px-safe pt-3 pb-4">{footer}</div>
         </footer>
       )}
     </div>
@@ -168,7 +168,7 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
       {/* Outside the animated block: a transformed ancestor would break `position: fixed`. */}
       <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
         {/* Below 360 px the buttons stack (primary on top) so "Tiếp tục" never wraps beside the ghost one. */}
-        <div className="mx-auto flex w-full max-w-xl flex-col-reverse gap-2 px-safe pt-3 pb-4 min-[360px]:flex-row min-[360px]:gap-3">
+        <div className="mx-auto flex w-full max-w-xl min-[1024px]:max-w-[42rem] flex-col-reverse gap-2 px-safe pt-3 pb-4 min-[360px]:flex-row min-[360px]:gap-3">
           <Button
             variant="ghost"
             size="lg"
@@ -232,8 +232,8 @@ export function DiagnosticPage() {
   };
 
   const header = (
-    <header className="pt-safe">
-      <div className="mx-auto flex min-h-14 w-full max-w-xl flex-wrap items-center gap-x-3 gap-y-1 px-safe py-2">
+    <header className="pt-safe min-[1024px]:border-b min-[1024px]:border-[var(--hairline)]">
+      <div className="mx-auto flex min-h-14 w-full max-w-xl min-[1024px]:max-w-[42rem] flex-wrap items-center gap-x-3 gap-y-1 px-safe py-2">
         {inTest ? (
           <button
             type="button"

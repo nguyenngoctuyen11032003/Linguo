@@ -11,7 +11,7 @@ interface AuthCardProps {
 /** Display title over a glass panel; the layout's ambient glow shows through behind it. */
 export function AuthCard({ title, subtitle, children, footer }: AuthCardProps) {
   return (
-    <div className="space-y-6">
+    <div className="reveal space-y-6">
       <div className="space-y-2.5">
         <span aria-hidden="true" className="block h-1 w-10 rounded-full bg-gradient-to-r from-primary to-accent" />
         <h1 className="page-title">{title}</h1>

@@ -88,8 +88,8 @@ export function LessonPage() {
   }
 
   const header = (
-    <header className="pt-safe">
-      <div className="mx-auto flex min-h-16 w-full max-w-xl items-center gap-2 px-safe py-2">
+    <header className="pt-safe min-[1024px]:border-b min-[1024px]:border-[var(--hairline)]">
+      <div className="mx-auto flex min-h-16 w-full max-w-xl min-[1024px]:max-w-[42rem] items-center gap-2 px-safe py-2">
         <button
           ref={closeRef}
           type="button"
@@ -125,7 +125,7 @@ export function LessonPage() {
     return (
       <div className="flex min-h-dvh flex-col bg-bg">
         {header}
-        <main id="main" className="mx-auto w-full max-w-xl flex-1 px-safe pt-3">
+        <main id="main" className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 px-safe pt-3">
           <div role="status" className="space-y-4">
             <span className="sr-only">Đang tải bài học…</span>
             <Skeleton className="block h-8 w-2/3" />
@@ -142,7 +142,7 @@ export function LessonPage() {
     return (
       <div className="flex min-h-dvh flex-col bg-bg">
         {header}
-        <main id="main" className="mx-auto w-full max-w-xl flex-1 space-y-4 px-safe pt-3">
+        <main id="main" className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 space-y-4 px-safe pt-3">
           <h1 className="sr-only">Bài học</h1>
           <ErrorState
             title="Không tải được bài học"
@@ -275,7 +275,7 @@ export function LessonPage() {
       <main
         id="main"
         className={cn(
-          'mx-auto flex w-full max-w-xl flex-1 flex-col px-safe pt-2 text-[17px] leading-relaxed',
+          'mx-auto flex w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 flex-col px-safe pt-2 text-[17px] leading-relaxed min-[1024px]:pt-8 min-[1024px]:text-[18px]',
           // Content steps sit above the fixed footer; an exercise brings its own sticky bar (no extra space under it).
           !isExercise && 'pb-[calc(7.5rem+env(safe-area-inset-bottom,0px))]',
         )}
@@ -293,16 +293,16 @@ export function LessonPage() {
           <h2
             ref={titleRef}
             tabIndex={-1}
-            className="mt-3 font-display text-[clamp(36px,11vw,46px)] font-extrabold uppercase leading-[1.08] tracking-[-0.005em] focus:outline-none"
+            className="mt-3 font-display text-[clamp(36px,11vw,46px)] min-[1024px]:text-[52px] font-extrabold uppercase leading-[1.08] tracking-[-0.005em] focus:outline-none"
           >
             {stepTitle(run, step)}
           </h2>
         )}
-        <div className={cn('flex min-w-0 flex-col', isExercise ? 'mt-3 flex-1' : 'mt-6')}>{body}</div>
+        <div key={stepIndex} className={cn('reveal flex min-w-0 flex-col', isExercise ? 'mt-3 flex-1' : 'mt-6')}>{body}</div>
       </main>
       {footer && (
         <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
-          <div className="mx-auto w-full max-w-xl px-safe pt-3 pb-4">{footer}</div>
+          <div className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] px-safe pt-3 pb-4">{footer}</div>
         </footer>
       )}
       {exitSheet}

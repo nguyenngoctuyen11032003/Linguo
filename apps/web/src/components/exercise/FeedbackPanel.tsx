@@ -149,7 +149,7 @@ function FeedbackCard({
       variants={reveal('fadeUp', reduceMotion)}
       initial="hidden"
       animate="shown"
-      className={cn('min-w-0 rounded-[1.5rem] border-2 p-4 break-words min-[360px]:p-5', ui.tone)}
+      className={cn('min-w-0 rounded-[1.5rem] border-2 p-4 break-words min-[360px]:p-5 min-[1024px]:p-6', ui.tone)}
     >
       <div className="flex items-center gap-3.5">
         {/* A short spring pop on the badge: the "ding" moment, skipped with reduced motion. */}
