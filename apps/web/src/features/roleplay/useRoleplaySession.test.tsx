@@ -35,6 +35,7 @@ function deferred<T>() {
 
 beforeEach(() => {
   mocks.client = { functions: { invoke: mocks.invoke }, rpc: vi.fn(), from: vi.fn() };
+  localStorage.clear();
   sessionStorage.clear();
 });
 afterEach(() => mocks.invoke.mockReset());
@@ -165,7 +166,7 @@ describe('useRoleplaySession', () => {
     });
   });
 
-  it('keeps the confirmed conversation in sessionStorage, restores it, and clears it on discard', async () => {
+  it('keeps the confirmed conversation in localStorage, restores it, and clears it on discard', async () => {
     const hook = await startedSession();
     expect(loadSession(USER, 'en')?.messages).toHaveLength(1);
     const restored = render();

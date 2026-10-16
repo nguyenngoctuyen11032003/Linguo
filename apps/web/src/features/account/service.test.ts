@@ -108,6 +108,18 @@ describe('clearAllLocalLearnerData', () => {
     expect(sessionStorage.length).toBe(0);
   });
 
+  it('wipes the saved role-play conversation (localStorage v2 and legacy v1) on sign-out and on deletion', () => {
+    for (const mode of ['sign-out', 'delete'] as const) {
+      localStorage.setItem('linguo:roleplay:v2:u1', 'chat');
+      localStorage.setItem('linguo:roleplay:v2:u2', 'chat');
+      sessionStorage.setItem('linguo:roleplay:v1:u1', 'chat');
+      clearAllLocalLearnerData('u1', { mode });
+      expect(localStorage.getItem('linguo:roleplay:v2:u1')).toBeNull();
+      expect(localStorage.getItem('linguo:roleplay:v2:u2')).toBeNull();
+      expect(sessionStorage.getItem('linguo:roleplay:v1:u1')).toBeNull();
+    }
+  });
+
   it('works without a user id and is also what account deletion runs', () => {
     localStorage.setItem('linguo-speaking-v1:u9', 'x');
     clearLocalAccountData('u9');

@@ -11,6 +11,10 @@ import { RoleplayPage } from './RoleplayPage';
 
 type Body = Record<string, unknown>;
 
+/** Saved role-play entries in either storage (v2 lives in localStorage, legacy v1 in sessionStorage). */
+const roleplayKeys = () =>
+  [localStorage, sessionStorage].reduce((n, store) => n + Object.keys(store).filter((k) => k.startsWith('linguo:roleplay:')).length, 0);
+
 const mocks = vi.hoisted(() => ({
   invoke: vi.fn(),
   notice: null as unknown as AiNoticeState,
@@ -38,6 +42,7 @@ function notice(acknowledged: boolean, ack: AiNoticeState['ack'] = vi.fn().mockR
 }
 
 beforeEach(() => {
+  localStorage.clear();
   sessionStorage.clear();
   mocks.invoke.mockReset();
   mocks.notice = notice(true);
@@ -202,20 +207,21 @@ describe('RoleplayPage: conversation', () => {
     expect(await screen.findByRole('dialog', { name: 'Báo lỗi giải thích AI' })).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Huỷ' }));
     expect(screen.getByRole('region', { name: 'Những chỗ nên sửa' })).toHaveTextContent('I would like');
-    expect(sessionStorage.length).toBe(0);
+    expect(roleplayKeys()).toBe(0);
     await userEvent.click(screen.getByRole('button', { name: 'Luyện tình huống khác' }));
     expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
   });
 
-  it('keeps the conversation after a reload (same tab) and leaves cleanly', async () => {
+  it('keeps the conversation after a reload or closing the tab and leaves cleanly', async () => {
     const first = render();
     await begin();
     first.unmount();
+    sessionStorage.clear(); // closing the tab drops sessionStorage; the conversation is in localStorage
     render();
     expect(screen.getByText(/Welcome to Sunny Café/)).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: 'Chọn tình huống khác' }));
     expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
-    expect(sessionStorage.length).toBe(0);
+    expect(roleplayKeys()).toBe(0);
   });
 });
 
@@ -282,13 +288,13 @@ describe('RoleplayPage: UX polish', () => {
     await userEvent.click(within(dialog).getByRole('button', { name: 'Ở lại trò chuyện' }));
     await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
     expect(screen.getByText('A latte')).toBeInTheDocument();
-    expect(sessionStorage.length).toBeGreaterThan(0);
+    expect(roleplayKeys()).toBeGreaterThan(0);
     expect(leave).toHaveFocus();
 
     await userEvent.click(leave);
     await userEvent.click(screen.getByRole('button', { name: 'Bỏ cuộc trò chuyện' }));
     expect(screen.getByRole('region', { name: 'Hợp trình độ của bạn' })).toBeInTheDocument();
-    expect(sessionStorage.length).toBe(0);
+    expect(roleplayKeys()).toBe(0);
   });
 
   it('switches every "Bắt đầu" off with the quota hint when today is used up', () => {

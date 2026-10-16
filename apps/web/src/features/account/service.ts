@@ -1,7 +1,7 @@
 import { clearLessonCache, LESSON_CACHE_PREFIX } from '@/features/lesson-player/lessonCache';
 import { OUTBOX_CHANGE_EVENT, OUTBOX_KEY_PREFIX, outboxKey } from '@/features/lesson-player/outbox';
 import { REVIEW_OUTBOX_KEY_PREFIX, reviewOutboxKey } from '@/features/reviews/outbox';
-import { clearSession, KEY_PREFIX as ROLEPLAY_KEY_PREFIX } from '@/features/roleplay/storage';
+import { clearSession, KEY_PREFIX as ROLEPLAY_KEY_PREFIX, LEGACY_KEY_PREFIX as ROLEPLAY_LEGACY_KEY_PREFIX } from '@/features/roleplay/storage';
 import { clearReflections, REFLECTION_KEY_PREFIX } from '@/features/speaking/ratings';
 import { DRAFT_KEY } from '@/routes/app/onboarding/useOnboardingDraft';
 import { isNetworkError } from '@/lib/network-error';
@@ -58,10 +58,17 @@ export function downloadJson(data: unknown, fileName: string): void {
 
 /**
  * Every per-learner store this app keeps in the browser, by key prefix (localStorage and sessionStorage alike):
- * lesson + review outboxes, cached lesson text, role-play conversation, speaking self-ratings. Keys are suffixed
- * with the user id.
+ * lesson + review outboxes, cached lesson text, role-play conversation (v2 in localStorage, legacy v1 in
+ * sessionStorage), speaking self-ratings. Keys are suffixed with the user id.
  */
-const LEARNER_KEY_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX, ROLEPLAY_KEY_PREFIX, REFLECTION_KEY_PREFIX];
+const LEARNER_KEY_PREFIXES = [
+  OUTBOX_KEY_PREFIX,
+  REVIEW_OUTBOX_KEY_PREFIX,
+  LESSON_CACHE_PREFIX,
+  ROLEPLAY_KEY_PREFIX,
+  ROLEPLAY_LEGACY_KEY_PREFIX,
+  REFLECTION_KEY_PREFIX,
+];
 /** Per-device (not per-user) key that still holds a learner's input: the onboarding draft. */
 const LEARNER_EXACT_KEYS = [DRAFT_KEY];
 // Kept on purpose: non-personal device preferences (`linguo-theme`, `linguo-reduce-motion`), the recovery-pending
