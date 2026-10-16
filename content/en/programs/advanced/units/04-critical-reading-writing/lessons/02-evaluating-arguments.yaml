@@ -1,0 +1,624 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:crw-evaluating-arguments
+order_index: 2
+level: c1
+title:
+  vi: Đánh giá lập luận, nguồn tin & nhận diện ngụy biện
+objectives:
+  - vi: Đánh giá độ tin cậy của nguồn - credible, biased, peer-reviewed, anecdotal evidence.
+  - vi: Gọi tên sáu ngụy biện phổ biến - straw man, ad hominem, false dilemma, slippery slope, hasty generalisation, nhầm tương quan với nhân quả.
+  - vi: Nhận xét lập luận bằng tiếng Anh lịch sự - It does not necessarily follow that…, The evidence is largely anecdotal….
+estimated_minutes: 20
+skills: [reading, vocabulary, speaking, writing]
+prerequisites: [en:lesson:crw-summarising-paraphrasing]
+items:
+  - item: en:item:crw-fallacy
+  - item: en:item:crw-straw-man
+  - item: en:item:crw-ad-hominem
+  - item: en:item:crw-false-dilemma
+  - item: en:item:crw-slippery-slope
+  - item: en:item:crw-hasty-generalisation
+  - item: en:item:crw-correlation-causation
+  - item: en:item:crw-credible-source
+  - item: en:item:crw-biased
+  - item: en:item:crw-anecdotal-evidence
+  - item: en:item:crw-peer-reviewed
+  - item: en:item:crw-does-not-follow
+  - item: en:item:flawed-reasoning
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Đọc phản biện nghĩa là không tin ngay - hỏi nguồn có đáng tin không, bằng chứng có đủ không, kết luận có thật sự suy ra từ bằng chứng không. Sau bài này, bạn nhận ra những lỗ hổng lập luận thường gặp trong báo chí, quảng cáo, mạng xã hội và gọi tên chúng bằng tiếng Anh.
+  - type: explain
+    text:
+      vi: Đánh giá nguồn bằng bốn câu hỏi - Ai viết? Viết khi nào? Ai tài trợ? Đã qua bình duyệt (peer-reviewed) chưa? Nguồn tốt là a credible / reliable source; nguồn bị lợi ích chi phối là biased. Vài câu chuyện cá nhân chỉ là anecdotal evidence - bằng chứng giai thoại, không đủ để khái quát.
+  - type: explain
+    text:
+      vi: Sáu ngụy biện (fallacies) phổ biến - straw man (bóp méo ý đối phương rồi bác bỏ bản méo), ad hominem (công kích con người thay vì lập luận), false dilemma (chỉ đưa hai lựa chọn cực đoan), slippery slope (một bước nhỏ ắt dẫn tới thảm họa), hasty generalisation (khái quát từ vài trường hợp), và nhầm tương quan với nhân quả - correlation does not imply causation.
+  - type: explain
+    text:
+      vi: Nhận xét lập luận một cách lịch sự, nhắm vào lập luận chứ không vào người - It does not necessarily follow that… (không nhất thiết suy ra…), The argument rests on the assumption that… (lập luận dựa trên giả định…), The evidence is largely anecdotal, This is a classic straw man.
+  - type: deep_explain
+    text:
+      vi: Lỗi từ loại hay gặp - bias là danh từ/động từ, tính từ là biased (the article is biased); necessary là tính từ, cụm phản biện cần trạng từ necessarily; anecdote là danh từ, anecdotal là tính từ. Evidence không đếm được - little / much evidence, a piece of evidence, không nói many evidences. Khi gọi tên ngụy biện, nói That's a straw man hoặc That's an ad hominem attack, không nói "a fallacy of straw man".
+  - type: example
+    target: "\"My opponent wants to cut the military budget. Clearly, he wants to leave the country defenceless.\" - This is a straw man: nobody proposed abolishing the army."
+    target_lang: en
+    translation:
+      vi: "\"Đối thủ của tôi muốn cắt ngân sách quân sự. Rõ ràng ông ta muốn bỏ mặc đất nước không có gì phòng thủ.\" - Đây là ngụy biện người rơm: không ai đề xuất giải tán quân đội."
+    note:
+      vi: Straw man thổi phồng đề xuất "cắt giảm" thành "bỏ mặc", rồi tấn công phiên bản cực đoan đó.
+  - type: example
+    target: "\"Either we ban cars from the city centre completely, or we accept that our children will breathe toxic air.\" - a false dilemma, since there are many options in between."
+    target_lang: en
+    translation:
+      vi: "\"Hoặc cấm hoàn toàn ô tô vào trung tâm, hoặc chấp nhận để con cái chúng ta hít không khí độc hại.\" - một lưỡng nan giả, vì còn rất nhiều phương án ở giữa."
+    note:
+      vi: Dấu hiệu Either… or… với hai cực đoan; các phương án như thu phí, giới hạn giờ bị lờ đi.
+  - type: example
+    target: Crime has fallen since the cameras were installed, but it does not necessarily follow that the cameras caused the fall.
+    target_lang: en
+    translation:
+      vi: Tội phạm đã giảm từ khi lắp camera, nhưng không nhất thiết vì thế mà camera là nguyên nhân.
+    note:
+      vi: Hai sự việc xảy ra cùng lúc chưa chứng minh được nhân quả - có thể còn yếu tố khác.
+  - type: example
+    target: The study is not peer-reviewed, it was funded by a sugar company, and its evidence is largely anecdotal. It is hardly a credible source.
+    target_lang: en
+    translation:
+      vi: Nghiên cứu chưa qua bình duyệt, được một công ty đường tài trợ, và bằng chứng phần lớn mang tính giai thoại. Khó có thể coi là một nguồn đáng tin cậy.
+    note:
+      vi: Ba câu hỏi đánh giá nguồn trong một đoạn - bình duyệt, nguồn tài trợ, chất lượng bằng chứng.
+  - type: common_mistake
+    wrong: The newspaper is very bias, so I don't trust it.
+    right: The newspaper is heavily biased, so I don't trust it.
+    target_lang: en
+    note:
+      vi: Sau be cần tính từ biased; bias là danh từ (a bias towards the government). Biased thường đi với heavily / clearly / slightly.
+  - type: common_mistake
+    wrong: The author gives many evidences for his claim.
+    right: The author gives a lot of evidence for his claim.
+    target_lang: en
+    note:
+      vi: Evidence không đếm được - a lot of / much / little evidence, a piece of evidence.
+  - type: common_mistake
+    wrong: Sales rose after the advert, but it doesn't necessary follow that the advert worked.
+    right: Sales rose after the advert, but it doesn't necessarily follow that the advert worked.
+    target_lang: en
+    note:
+      vi: Bổ nghĩa cho động từ follow cần trạng từ necessarily, không phải tính từ necessary.
+  - type: summary
+    points:
+      - vi: Đánh giá nguồn - ai viết, khi nào, ai tài trợ, peer-reviewed chưa; credible / reliable ↔ biased.
+      - vi: Anecdotal evidence - vài câu chuyện cá nhân, không đủ để khái quát; evidence không đếm được.
+      - vi: Ngụy biện - straw man, ad hominem, false dilemma, slippery slope, hasty generalisation; correlation does not imply causation.
+      - vi: Phản biện lịch sự - It does not necessarily follow that…; The argument rests on the assumption that….
+      - vi: Từ loại - biased (tính từ), necessarily (trạng từ), anecdotal (tính từ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:crw-eval-mcq-straw-man
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-straw-man
+    prompt:
+      stem: "\"My opponent wants to cut the military budget. Clearly, he wants to leave the country defenceless.\" Đây là kiểu ngụy biện nào?"
+      stem_lang: vi
+      options:
+        - { id: s3m, text: "a straw man", lang: en }
+        - { id: a7h, text: "an ad hominem attack", lang: en }
+        - { id: d1f, text: "a false dilemma", lang: en }
+        - { id: l5p, text: "a slippery slope", lang: en }
+    answer:
+      correct_option_id: s3m
+    explanation:
+      vi: Người nói bóp méo đề xuất "cắt ngân sách" thành "bỏ mặc đất nước" rồi tấn công phiên bản méo đó - ngụy biện người rơm. Không có công kích cá nhân, không có hai lựa chọn cực đoan, cũng không có chuỗi hệ quả.
+    display_answer: "a straw man"
+
+  - key: en:exercise:crw-eval-listen-false-dilemma
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:crw-false-dilemma
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Either we ban cars from the city centre completely, or we accept that our children will breathe toxic air."
+      options:
+        - { id: x6b, text: "Người nói chỉ đưa ra hai lựa chọn cực đoan và bỏ qua mọi phương án ở giữa.", lang: vi }
+        - { id: e2n, text: "Người nói đưa ra số liệu đo chất lượng không khí ở trung tâm.", lang: vi }
+        - { id: i8c, text: "Người nói công kích cá nhân những người lái ô tô.", lang: vi }
+        - { id: o4w, text: "Người nói đề xuất thu phí ô tô vào trung tâm vào giờ cao điểm.", lang: vi }
+    answer:
+      correct_option_id: x6b
+    explanation:
+      vi: Either… or… với hai cực đoan (cấm hoàn toàn hoặc chấp nhận không khí độc) là dấu hiệu của false dilemma. Câu nói không có số liệu, không nhắm vào người lái xe và không nêu phương án thu phí.
+    display_answer: "Người nói chỉ đưa ra hai lựa chọn cực đoan và bỏ qua mọi phương án ở giữa."
+
+  - key: en:exercise:crw-eval-fill-source-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-peer-reviewed
+    prompt:
+      template: "The study was never {{b1}}-reviewed, and the author's evidence is largely {{b2}} - just a few stories from friends and neighbours."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 10 }
+      hint_levels:
+        - "Nghĩa: Nghiên cứu chưa bao giờ được bình duyệt, và bằng chứng của tác giả phần lớn mang tính giai thoại - chỉ là vài câu chuyện của bạn bè và hàng xóm."
+        - "Gợi ý: ô 1 là \"người cùng ngành\" (p…); ô 2 là tính từ của anecdote."
+    answer:
+      blanks:
+        b1: [peer]
+        b2: [anecdotal]
+    known_wrong:
+      - answer: pair
+        feedback_vi: Pair là "cặp"; người cùng ngành là peer - peer-reviewed.
+        error_tag: spelling
+      - answer: anecdote
+        feedback_vi: Sau is largely cần tính từ - anecdotal; anecdote là danh từ.
+        error_tag: word_form
+    explanation:
+      vi: Peer-reviewed = đã qua bình duyệt của các chuyên gia cùng ngành. Anecdotal evidence = bằng chứng dựa trên chuyện cá nhân.
+    display_answer: The study was never peer-reviewed, and the author's evidence is largely anecdotal - just a few stories from friends and neighbours.
+
+  - key: en:exercise:crw-eval-mcq-error-free
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-biased
+    prompt:
+      stem: Câu nào KHÔNG có lỗi?
+      stem_lang: vi
+      options:
+        - { id: b6r, text: "The report is clearly biased: it was funded by the company whose product it praises.", lang: en }
+        - { id: t2k, text: "The report is clearly bias: it was funded by the company whose product it praises.", lang: en }
+        - { id: g9v, text: "The report gives many evidences that the product is safe.", lang: en }
+        - { id: m3z, text: "The report proves the product is safe, but it doesn't necessary follow that it works.", lang: en }
+    answer:
+      correct_option_id: b6r
+    explanation:
+      vi: Biased là tính từ đúng sau is. Bias là danh từ; evidence không đếm được nên không có evidences; cụm phản biện cần trạng từ necessarily.
+    display_answer: "The report is clearly biased: it was funded by the company whose product it praises."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:crw-eval-fill-causation
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-correlation-causation
+    prompt:
+      template: "Umbrella sales and colds both rise in winter, but it does not {{b1}} follow that umbrellas cause colds. Correlation does not {{b2}} causation. Attacking the researcher's age instead of her data is an {{b3}} hominem argument."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [necessarily]
+        b2: [imply, mean, prove, equal, establish, entail]
+        b3: [ad]
+    known_wrong:
+      - answer: necessary
+        feedback_vi: Bổ nghĩa cho động từ follow cần trạng từ - necessarily.
+        error_tag: word_form
+      - answer: implies
+        feedback_vi: Sau does not dùng động từ nguyên mẫu - does not imply.
+        error_tag: verb_form
+    explanation:
+      vi: It does not necessarily follow that… = không nhất thiết suy ra…. Correlation does not imply causation = tương quan không có nghĩa là nhân quả. Ad hominem = công kích cá nhân.
+    display_answer: Umbrella sales and colds both rise in winter, but it does not necessarily follow that umbrellas cause colds. Correlation does not imply causation. Attacking the researcher's age instead of her data is an ad hominem argument.
+
+  - key: en:exercise:crw-eval-translate-biased
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-biased
+    prompt:
+      source_text: Nguồn này không đáng tin cậy vì nó thiên lệch.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This source is not reliable because it is biased.
+        - This source is not reliable because it's biased.
+        - This source is not reliable as it is biased.
+        - This source is not reliable as it's biased.
+        - This source is not reliable since it is biased.
+        - This source is not reliable since it's biased.
+        - This source is unreliable because it is biased.
+        - This source is unreliable because it's biased.
+        - This source is unreliable as it is biased.
+        - This source is unreliable as it's biased.
+        - This source is unreliable since it is biased.
+        - This source is unreliable since it's biased.
+        - This source is not credible because it is biased.
+        - This source is not credible because it's biased.
+        - This source is not credible as it is biased.
+        - This source is not credible as it's biased.
+        - This source is not credible since it is biased.
+        - This source is not credible since it's biased.
+        - This source is not trustworthy because it is biased.
+        - This source is not trustworthy because it's biased.
+        - This source is not trustworthy as it is biased.
+        - This source is not trustworthy as it's biased.
+        - This source is not trustworthy since it is biased.
+        - This source is not trustworthy since it's biased.
+        - This source is untrustworthy because it is biased.
+        - This source is untrustworthy because it's biased.
+        - This source is untrustworthy as it is biased.
+        - This source is untrustworthy as it's biased.
+        - This source is untrustworthy since it is biased.
+        - This source is untrustworthy since it's biased.
+        - This source cannot be trusted because it is biased.
+        - This source cannot be trusted because it's biased.
+        - This source cannot be trusted as it is biased.
+        - This source cannot be trusted as it's biased.
+        - This source cannot be trusted since it is biased.
+        - This source cannot be trusted since it's biased.
+        - The source is not reliable because it is biased.
+        - The source is not reliable because it's biased.
+        - The source is not reliable as it is biased.
+        - The source is not reliable as it's biased.
+        - The source is not reliable since it is biased.
+        - The source is not reliable since it's biased.
+        - The source is unreliable because it is biased.
+        - The source is unreliable because it's biased.
+        - The source is unreliable as it is biased.
+        - The source is unreliable as it's biased.
+        - The source is unreliable since it is biased.
+        - The source is unreliable since it's biased.
+        - The source is not credible because it is biased.
+        - The source is not credible because it's biased.
+        - The source is not credible as it is biased.
+        - The source is not credible as it's biased.
+        - The source is not credible since it is biased.
+        - The source is not credible since it's biased.
+        - The source is not trustworthy because it is biased.
+        - The source is not trustworthy because it's biased.
+        - The source is not trustworthy as it is biased.
+        - The source is not trustworthy as it's biased.
+        - The source is not trustworthy since it is biased.
+        - The source is not trustworthy since it's biased.
+        - The source is untrustworthy because it is biased.
+        - The source is untrustworthy because it's biased.
+        - The source is untrustworthy as it is biased.
+        - The source is untrustworthy as it's biased.
+        - The source is untrustworthy since it is biased.
+        - The source is untrustworthy since it's biased.
+        - The source cannot be trusted because it is biased.
+        - The source cannot be trusted because it's biased.
+        - The source cannot be trusted as it is biased.
+        - The source cannot be trusted as it's biased.
+        - The source cannot be trusted since it is biased.
+        - The source cannot be trusted since it's biased.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This source is not reliable because it is bias.
+        feedback_vi: Sau is cần tính từ biased; bias là danh từ.
+        error_tag: word_form
+      - answer: This source is not reliable because it biased.
+        feedback_vi: Thiếu động từ to be - because it is biased.
+        error_tag: verb_form
+      - answer: This source is not credulous because it is biased.
+        feedback_vi: Credulous là "cả tin"; nguồn đáng tin là credible hoặc reliable.
+        error_tag: word_choice
+    explanation:
+      vi: Reliable / credible = đáng tin cậy; biased = thiên lệch (tính từ). Có thể nối bằng because, as hoặc since.
+    display_answer: This source is not reliable because it is biased.
+
+  - key: en:exercise:crw-eval-translate-to-vi-anecdotal
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-anecdotal-evidence
+    prompt:
+      source_text: The evidence is largely anecdotal, so we cannot draw firm conclusions.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bằng chứng phần lớn mang tính giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn mang tính giai thoại, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là giai thoại, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn dựa trên chuyện cá nhân, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng phần lớn là những câu chuyện cá nhân, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu mang tính giai thoại, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là giai thoại, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu dựa trên chuyện cá nhân, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng chủ yếu là những câu chuyện cá nhân, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần mang tính giai thoại, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là giai thoại, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần dựa trên chuyện cá nhân, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, nên chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, nên ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, nên chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, vì vậy chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, vì vậy chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, vì vậy ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, vì vậy chúng ta chưa thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, do đó chúng ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, do đó chúng ta không thể rút ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, do đó ta không thể đưa ra kết luận chắc chắn.
+        - Bằng chứng đa phần là những câu chuyện cá nhân, do đó chúng ta chưa thể đưa ra kết luận chắc chắn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bằng chứng rất lớn và mang tính giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+        feedback_vi: Largely ở đây là "phần lớn, chủ yếu", không phải "rất lớn".
+        error_tag: literal_translation
+      - answer: Bằng chứng phần lớn đáng tin cậy, nên chúng ta có thể đưa ra kết luận chắc chắn.
+        feedback_vi: Anecdotal là "giai thoại, dựa trên chuyện cá nhân" - bằng chứng yếu, nên không thể kết luận chắc chắn.
+        error_tag: meaning
+    explanation:
+      vi: Largely = phần lớn; anecdotal = mang tính giai thoại, dựa trên chuyện cá nhân; draw a conclusion = rút ra / đưa ra kết luận.
+    display_answer: Bằng chứng phần lớn mang tính giai thoại, nên chúng ta không thể đưa ra kết luận chắc chắn.
+
+  # ---------------- application ----------------
+  - key: en:exercise:crw-eval-order-does-not-follow
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-does-not-follow
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Không nhất thiết vì thế mà giá sẽ giảm.\""
+      tokens:
+        - { id: f-fall, text: will fall }
+        - { id: f-nec, text: necessarily }
+        - { id: f-it, text: It does not }
+        - { id: f-necy, text: necessary }
+        - { id: f-that, text: that prices }
+        - { id: f-fol, text: follow }
+    answer:
+      orders:
+        - [f-it, f-nec, f-fol, f-that, f-fall]
+    explanation:
+      vi: It does not necessarily follow that + mệnh đề. Necessary là token thừa - bổ nghĩa cho động từ follow phải là trạng từ necessarily.
+    display_answer: It does not necessarily follow that prices will fall.
+
+  - key: en:exercise:crw-eval-mcq-respond-anecdote
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-anecdotal-evidence
+    prompt:
+      stem: "Một người bạn nói: \"My grandfather smoked every day and lived to 95, so smoking can't be that harmful.\" Câu phản hồi nào chỉ ra lỗ hổng lập luận mà không mắc ngụy biện?"
+      stem_lang: vi
+      options:
+        - { id: k7a, text: "That's anecdotal evidence - one case can't outweigh decades of large-scale studies.", lang: en }
+        - { id: w3e, text: "You're just too stupid to understand science.", lang: en }
+        - { id: c9u, text: "So you think everyone should start smoking?", lang: en }
+        - { id: p1o, text: "Either you quit smoking today, or you'll die young like everyone else.", lang: en }
+    answer:
+      correct_option_id: k7a
+    explanation:
+      vi: Câu đúng gọi tên vấn đề - một trường hợp cá nhân (anecdotal evidence) không thể bác bỏ nghiên cứu quy mô lớn. Các câu khác lần lượt là ad hominem, straw man và false dilemma.
+    display_answer: "That's anecdotal evidence - one case can't outweigh decades of large-scale studies."
+
+  - key: en:exercise:crw-eval-mcq-credible-source
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-credible-source
+    prompt:
+      stem: Bạn viết bài luận về tác động của cà phê đối với sức khỏe. Nguồn nào đáng tin cậy nhất (the most credible source)?
+      stem_lang: vi
+      options:
+        - { id: r5c, text: "Một nghiên cứu đã qua bình duyệt trên tạp chí y khoa, công khai nguồn tài trợ.", lang: vi }
+        - { id: y8g, text: "Bài blog trên trang web của một hãng cà phê lớn.", lang: vi }
+        - { id: n6s, text: "Bình luận của một người nói mình uống mười cốc mỗi ngày mà vẫn khỏe.", lang: vi }
+        - { id: h2t, text: "Một video lan truyền trên mạng xã hội không rõ tác giả.", lang: vi }
+    answer:
+      correct_option_id: r5c
+    explanation:
+      vi: Nghiên cứu peer-reviewed, minh bạch tài trợ là nguồn credible. Blog của hãng cà phê có thể biased; lời kể cá nhân là anecdotal evidence; video không rõ tác giả không kiểm chứng được.
+    display_answer: "Một nghiên cứu đã qua bình duyệt trên tạp chí y khoa, công khai nguồn tài trợ."
+
+  - key: en:exercise:crw-eval-translate-ad-hominem
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-ad-hominem
+    prompt:
+      source_text: Công kích tác giả không giống với việc bác bỏ lập luận của cô ấy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Attacking the author is not the same as refuting her argument.
+        - Attacking the author is not the same as refuting her arguments.
+        - Attacking the author is not the same as rebutting her argument.
+        - Attacking the author is not the same as rebutting her arguments.
+        - Attacking the author is not the same as disproving her argument.
+        - Attacking the author is not the same as disproving her arguments.
+        - Attacking the author is not the same as countering her argument.
+        - Attacking the author is not the same as countering her arguments.
+        - Attacking the author is not the same as answering her argument.
+        - Attacking the author is not the same as answering her arguments.
+        - Attacking the author is different from refuting her argument.
+        - Attacking the author is different from refuting her arguments.
+        - Attacking the author is different from rebutting her argument.
+        - Attacking the author is different from rebutting her arguments.
+        - Attacking the author is different from disproving her argument.
+        - Attacking the author is different from disproving her arguments.
+        - Attacking the author is different from countering her argument.
+        - Attacking the author is different from countering her arguments.
+        - Attacking the author is different from answering her argument.
+        - Attacking the author is different from answering her arguments.
+        - Attacking the writer is not the same as refuting her argument.
+        - Attacking the writer is not the same as refuting her arguments.
+        - Attacking the writer is not the same as rebutting her argument.
+        - Attacking the writer is not the same as rebutting her arguments.
+        - Attacking the writer is not the same as disproving her argument.
+        - Attacking the writer is not the same as disproving her arguments.
+        - Attacking the writer is not the same as countering her argument.
+        - Attacking the writer is not the same as countering her arguments.
+        - Attacking the writer is not the same as answering her argument.
+        - Attacking the writer is not the same as answering her arguments.
+        - Attacking the writer is different from refuting her argument.
+        - Attacking the writer is different from refuting her arguments.
+        - Attacking the writer is different from rebutting her argument.
+        - Attacking the writer is different from rebutting her arguments.
+        - Attacking the writer is different from disproving her argument.
+        - Attacking the writer is different from disproving her arguments.
+        - Attacking the writer is different from countering her argument.
+        - Attacking the writer is different from countering her arguments.
+        - Attacking the writer is different from answering her argument.
+        - Attacking the writer is different from answering her arguments.
+        - Attacking the author is not refuting her argument.
+        - Attacking the author does not refute her argument.
+        - Attacking the author is not the same thing as refuting her argument.
+        - Attacking the writer does not refute her argument.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Attack the author is not the same as refuting her argument.
+        feedback_vi: Chủ ngữ là một hành động cần V-ing - Attacking the author.
+        error_tag: verb_form
+      - answer: Attacking the author is not the same as refute her argument.
+        feedback_vi: Sau giới từ as cần V-ing - the same as refuting.
+        error_tag: verb_form
+      - answer: Attacking the author is not the same with refuting her argument.
+        feedback_vi: Cụm cố định là the same as, không phải the same with.
+        error_tag: preposition
+    explanation:
+      vi: V-ing làm chủ ngữ (Attacking the author); the same as + V-ing. Refute / rebut an argument = bác bỏ một lập luận - đó là điểm khác biệt giữa phản biện và công kích cá nhân (ad hominem).
+    display_answer: Attacking the author is not the same as refuting her argument.

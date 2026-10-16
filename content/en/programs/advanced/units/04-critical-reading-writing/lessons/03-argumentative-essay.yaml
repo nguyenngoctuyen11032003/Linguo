@@ -1,0 +1,588 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:crw-argumentative-essay
+order_index: 3
+level: c1
+title:
+  vi: Viết luận nghị luận - luận điểm, phản đề, kết luận
+objectives:
+  - vi: Viết câu luận điểm (thesis statement) rõ lập trường và câu chủ đề (topic sentence) cho từng đoạn thân bài.
+  - vi: Nêu phản đề bằng It could be argued that… / Opponents of… contend that… rồi bác bỏ bằng However, this view overlooks….
+  - vi: Kết bài bằng On balance / In conclusion, thể hiện mức độ đồng ý (to a large extent) và tránh At last, In my opinion I think.
+estimated_minutes: 22
+skills: [writing, reading, grammar, vocabulary]
+prerequisites: [en:lesson:crw-evaluating-arguments]
+items:
+  - item: en:item:crw-thesis-statement
+  - item: en:item:crw-topic-sentence
+  - item: en:item:crw-it-could-be-argued-that
+  - item: en:item:crw-opponents-contend
+  - item: en:item:crw-this-view-overlooks
+  - item: en:item:crw-it-follows-that
+  - item: en:item:crw-on-balance
+  - item: en:item:crw-in-conclusion
+  - item: en:item:crw-weigh-up
+  - item: en:item:crw-to-a-large-extent
+  - item: en:item:counter-argument
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài luận nghị luận (argumentative essay) thuyết phục người đọc bằng cấu trúc chứ không bằng cảm xúc. Sau bài này, bạn dựng khung một bài luận C1 hoàn chỉnh - mở bài có luận điểm, thân bài có phản đề và bác bỏ, kết bài cân nhắc hai phía.
+  - type: explain
+    text:
+      vi: Mở bài - một hai câu bối cảnh, rồi câu luận điểm (thesis statement) nêu rõ lập trường và lý do chính, ví dụ This essay argues that… because…. Tránh câu chỉ giới thiệu chủ đề như In this essay I will talk about….
+  - type: explain
+    text:
+      vi: Thân bài - mỗi đoạn mở bằng một câu chủ đề (topic sentence), sau đó giải thích và cho ví dụ. Một đoạn dành cho phản đề (counter-argument) - It could be argued that… / Opponents of X contend that… - rồi bác bỏ - However, this view overlooks…. Dẫn hệ quả logic bằng It follows that….
+  - type: explain
+    text:
+      vi: Kết bài - On balance, … hoặc In conclusion, … nhắc lại luận điểm bằng lời khác, cho thấy bạn đã cân nhắc (weigh up) cả hai phía, không đưa ý mới. Mức độ đồng ý - I agree to a large extent / to some extent, although….
+  - type: deep_explain
+    text:
+      vi: Lỗi người Việt hay mắc - (1) At last để kết bài - at last là "cuối cùng thì (sau khi chờ đợi)"; kết bài dùng In conclusion / On balance; (2) In my opinion, I think… - lặp ý, chỉ cần một trong hai; (3) to some extents / in a large extent - extent số ít, đi với to; (4) I am agree - agree là động từ; (5) On the other hand dùng như "thêm nữa" - cụm này chỉ dùng khi đưa ra mặt đối lập.
+  - type: example
+    target: Short-haul flights account for a growing share of transport emissions. This essay argues that cities should replace them with high-speed rail, because rail is cleaner, faster door to door and cheaper in the long run.
+    target_lang: en
+    translation:
+      vi: Các chuyến bay chặng ngắn chiếm tỉ trọng ngày càng lớn trong lượng khí thải giao thông. Bài luận này cho rằng các thành phố nên thay chúng bằng đường sắt cao tốc, vì đường sắt sạch hơn, nhanh hơn nếu tính từ cửa đến cửa và rẻ hơn về lâu dài.
+    note:
+      vi: Câu bối cảnh + thesis statement có lập trường rõ và ba lý do - ba lý do này sẽ thành ba đoạn thân bài.
+  - type: example
+    target: Opponents of the tax contend that it hurts small businesses. However, this view overlooks the fact that the smallest firms are exempt.
+    target_lang: en
+    translation:
+      vi: Những người phản đối loại thuế này cho rằng nó gây hại cho doanh nghiệp nhỏ. Tuy nhiên, quan điểm này bỏ qua thực tế là các doanh nghiệp nhỏ nhất được miễn thuế.
+    note:
+      vi: Nêu phản đề công bằng rồi bác bỏ bằng một dữ kiện - mạnh hơn nhiều so với lờ đi phía bên kia.
+  - type: example
+    target: Class sizes are rising and fewer graduates are training as teachers. It follows that, without action, the shortage will only get worse.
+    target_lang: en
+    translation:
+      vi: Sĩ số lớp đang tăng và ngày càng ít sinh viên theo ngành sư phạm. Từ đó suy ra rằng, nếu không hành động, tình trạng thiếu giáo viên sẽ chỉ tệ hơn.
+    note:
+      vi: It follows that… nối hai tiền đề với kết luận - người đọc thấy rõ mạch suy luận.
+  - type: example
+    target: On balance, while banning cars from city centres has real costs, the benefits for public health are far greater.
+    target_lang: en
+    translation:
+      vi: Xét về tổng thể, dù việc cấm ô tô vào trung tâm có cái giá thật sự, lợi ích cho sức khỏe cộng đồng lớn hơn nhiều.
+    note:
+      vi: Kết bài thừa nhận mặt trái (while…) rồi khẳng định lại luận điểm - không đưa ý mới.
+  - type: common_mistake
+    wrong: At last, I believe that public transport should be free.
+    right: In conclusion, I believe that public transport should be free.
+    target_lang: en
+    note:
+      vi: At last = cuối cùng thì (sau khi chờ đợi lâu); để mở kết bài dùng In conclusion / On balance / To conclude.
+  - type: common_mistake
+    wrong: I agree with this statement to some extents.
+    right: I agree with this statement to some extent.
+    target_lang: en
+    note:
+      vi: Extent luôn ở số ít trong cụm này - to some / a large / a certain extent.
+  - type: common_mistake
+    wrong: In my opinion, I think that homework should be banned.
+    right: In my opinion, homework should be banned.
+    target_lang: en
+    note:
+      vi: In my opinion và I think cùng nghĩa - chọn một. Trong bài luận học thuật, nhiều khi chỉ cần nêu lập trường trực tiếp.
+  - type: summary
+    points:
+      - vi: Mở bài - bối cảnh + thesis statement (This essay argues that… because…).
+      - vi: Thân bài - topic sentence + giải thích + ví dụ; It follows that… cho hệ quả logic.
+      - vi: Phản đề - It could be argued that… / Opponents of… contend that…; bác bỏ - However, this view overlooks….
+      - vi: Kết bài - On balance / In conclusion, cân nhắc (weigh up) hai phía, không thêm ý mới; to a large / some extent.
+      - vi: Tránh - At last để kết bài, In my opinion I think, to some extents, I am agree.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:crw-essay-mcq-thesis
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-thesis-statement
+    prompt:
+      stem: Đề bài - "Should cities replace short-haul flights with high-speed rail?" Câu nào là thesis statement tốt nhất?
+      stem_lang: vi
+      options:
+        - { id: t4q, text: "This essay argues that cities should replace short-haul flights with high-speed rail, because rail is cleaner and cheaper in the long run.", lang: en }
+        - { id: i9w, text: "In this essay, I will talk about trains and planes.", lang: en }
+        - { id: e3s, text: "Trains are good and planes are also good in some ways.", lang: en }
+        - { id: u6d, text: "There are many advantages and disadvantages of transport nowadays.", lang: en }
+    answer:
+      correct_option_id: t4q
+    explanation:
+      vi: Thesis statement tốt nêu lập trường rõ (should replace) và lý do chính. Các câu khác chỉ giới thiệu chủ đề hoặc nói chung chung, không có lập trường.
+    display_answer: "This essay argues that cities should replace short-haul flights with high-speed rail, because rail is cleaner and cheaper in the long run."
+
+  - key: en:exercise:crw-essay-listen-overlooks
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:crw-this-view-overlooks
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Opponents of the tax contend that it hurts small businesses. However, this view overlooks the fact that the smallest firms are exempt."
+      options:
+        - { id: q2f, text: "Người nói nêu lập luận của phía phản đối rồi bác bỏ - các doanh nghiệp nhỏ nhất được miễn thuế.", lang: vi }
+        - { id: z5j, text: "Người nói đồng ý rằng loại thuế này gây hại cho doanh nghiệp nhỏ.", lang: vi }
+        - { id: b8y, text: "Người nói cho rằng nên miễn thuế cho tất cả doanh nghiệp.", lang: vi }
+        - { id: v1m, text: "Người nói giám sát việc thu thuế của các doanh nghiệp nhỏ.", lang: vi }
+    answer:
+      correct_option_id: q2f
+    explanation:
+      vi: Opponents… contend that… nêu phản đề; However, this view overlooks… bác bỏ bằng dữ kiện bị bỏ sót. Overlook là "bỏ sót", không phải oversee (giám sát).
+    display_answer: "Người nói nêu lập luận của phía phản đối rồi bác bỏ - các doanh nghiệp nhỏ nhất được miễn thuế."
+
+  - key: en:exercise:crw-essay-fill-argued-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-it-could-be-argued-that
+    prompt:
+      template: "It could be {{b1}} that homework puts too much pressure on young children. {{b2}} balance, however, its benefits outweigh its drawbacks."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Có thể lập luận rằng bài tập về nhà gây quá nhiều áp lực cho trẻ nhỏ. Tuy nhiên, xét về tổng thể, lợi ích của nó lớn hơn hạn chế."
+        - "Gợi ý: ô 1 là quá khứ phân từ của argue; ô 2 là giới từ trong cụm \"xét về tổng thể\"."
+    answer:
+      blanks:
+        b1: [argued, claimed, contended, maintained, suggested, said]
+        b2: ["On"]
+    known_wrong:
+      - answer: argue
+        feedback_vi: Cấu trúc bị động It could be + quá khứ phân từ - argued.
+        error_tag: verb_form
+      - answer: In
+        feedback_vi: Cụm cố định là on balance; in balance nghĩa là "ở trạng thái cân bằng".
+        error_tag: preposition
+    explanation:
+      vi: It could be argued that… nêu phản đề một cách khách quan. On balance = xét về tổng thể, sau khi cân nhắc.
+    display_answer: It could be argued that homework puts too much pressure on young children. On balance, however, its benefits outweigh its drawbacks.
+
+  - key: en:exercise:crw-essay-mcq-conclusion
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-in-conclusion
+    prompt:
+      stem: Câu nào là câu mở kết bài phù hợp nhất cho bài luận ủng hộ việc cấm ô tô vào trung tâm thành phố?
+      stem_lang: vi
+      options:
+        - { id: c7n, text: "In conclusion, while banning cars has costs, the benefits for public health are greater.", lang: en }
+        - { id: a4x, text: "At last, banning cars is good.", lang: en }
+        - { id: g1h, text: "In conclusion, another reason is that cars are very noisy at night.", lang: en }
+        - { id: k8e, text: "Finally, I will now talk about my opinion.", lang: en }
+    answer:
+      correct_option_id: c7n
+    explanation:
+      vi: Kết bài nhắc lại luận điểm và cân nhắc hai phía. At last không dùng để kết bài; kết bài không đưa lý do mới; câu cuối chỉ thông báo chứ không kết luận.
+    display_answer: "In conclusion, while banning cars has costs, the benefits for public health are greater."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:crw-essay-fill-contend
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-opponents-contend
+    prompt:
+      template: "Opponents of the policy {{b1}} that it is too expensive. However, this view {{b2}} the long-term savings. I therefore agree with the statement to a large {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [contend, argue, claim, maintain, insist, assert, believe, say, feel]
+        b2: [overlooks, ignores, neglects, disregards, underestimates, misses]
+        b3: [extent, degree]
+    known_wrong:
+      - answer: contends
+        feedback_vi: Opponents là số nhiều - contend, không có s.
+        error_tag: subject_verb_agreement
+      - answer: overlook
+        feedback_vi: Chủ ngữ this view số ít - overlooks.
+        error_tag: subject_verb_agreement
+      - answer: extents
+        feedback_vi: Trong cụm to a large extent, extent ở số ít.
+        error_tag: word_form
+      - answer: oversees
+        feedback_vi: Oversee là "giám sát"; "bỏ qua, bỏ sót" là overlook.
+        error_tag: word_choice
+    explanation:
+      vi: Opponents (số nhiều) + contend; this view (số ít) + overlooks; to a large extent / degree = phần lớn.
+    display_answer: Opponents of the policy contend that it is too expensive. However, this view overlooks the long-term savings. I therefore agree with the statement to a large extent.
+
+  - key: en:exercise:crw-essay-translate-could-be-argued
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-it-could-be-argued-that
+    prompt:
+      source_text: Có thể lập luận rằng mạng xã hội gắn kết con người hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It could be argued that social media brings people closer together.
+        - It could be argued that social media brings people closer.
+        - It could be argued that social media connects people more.
+        - It could be argued that social media connects people more closely.
+        - It could be argued that social media makes people more connected.
+        - It could be argued that social media bring people closer together.
+        - It can be argued that social media brings people closer together.
+        - It can be argued that social media brings people closer.
+        - It can be argued that social media connects people more.
+        - It can be argued that social media connects people more closely.
+        - It can be argued that social media makes people more connected.
+        - It can be argued that social media bring people closer together.
+        - It might be argued that social media brings people closer together.
+        - It might be argued that social media brings people closer.
+        - It might be argued that social media connects people more.
+        - It might be argued that social media connects people more closely.
+        - It might be argued that social media makes people more connected.
+        - It might be argued that social media bring people closer together.
+        - One could argue that social media brings people closer together.
+        - One could argue that social media brings people closer.
+        - One could argue that social media connects people more.
+        - One could argue that social media connects people more closely.
+        - One could argue that social media makes people more connected.
+        - One could argue that social media bring people closer together.
+        - Some might argue that social media brings people closer together.
+        - Some might argue that social media brings people closer.
+        - Some might argue that social media connects people more.
+        - Some might argue that social media connects people more closely.
+        - Some might argue that social media makes people more connected.
+        - Some might argue that social media bring people closer together.
+        - Some would argue that social media brings people closer together.
+        - Some would argue that social media brings people closer.
+        - Some would argue that social media connects people more.
+        - Some would argue that social media connects people more closely.
+        - Some would argue that social media makes people more connected.
+        - Some would argue that social media bring people closer together.
+        - Arguably, social media brings people closer together.
+        - Arguably, social media brings people closer.
+        - Arguably, social media connects people more.
+        - Arguably, social media connects people more closely.
+        - Arguably, social media makes people more connected.
+        - Arguably, social media bring people closer together.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It could be argue that social media brings people closer together.
+        feedback_vi: Bị động cần quá khứ phân từ - It could be argued.
+        error_tag: verb_form
+      - answer: It could argue that social media brings people closer together.
+        feedback_vi: Chủ ngữ giả it không tự "lập luận" được - dùng bị động It could be argued that….
+        error_tag: passive
+    explanation:
+      vi: It could be argued that… (hoặc One could argue that…) nêu một quan điểm mà không gán cho ai - cách mở phản đề khách quan.
+    display_answer: It could be argued that social media brings people closer together.
+
+  - key: en:exercise:crw-essay-translate-to-vi-on-balance
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-on-balance
+    prompt:
+      source_text: On balance, the advantages of working from home outweigh the disadvantages.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xét về tổng thể, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+        - Xét về tổng thể, lợi ích của việc làm việc tại nhà nhiều hơn bất lợi.
+        - Xét về tổng thể, lợi ích của việc làm việc tại nhà vượt trội hơn bất lợi.
+        - Xét về tổng thể, lợi ích của làm việc tại nhà lớn hơn bất lợi.
+        - Xét về tổng thể, lợi ích của làm việc tại nhà nhiều hơn bất lợi.
+        - Xét về tổng thể, lợi ích của làm việc tại nhà vượt trội hơn bất lợi.
+        - Xét về tổng thể, lợi ích của việc làm việc ở nhà lớn hơn bất lợi.
+        - Xét về tổng thể, lợi ích của việc làm việc ở nhà nhiều hơn bất lợi.
+        - Xét về tổng thể, lợi ích của việc làm việc ở nhà vượt trội hơn bất lợi.
+        - Xét về tổng thể, ưu điểm của việc làm việc tại nhà lớn hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của việc làm việc tại nhà nhiều hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của việc làm việc tại nhà vượt trội hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của làm việc tại nhà lớn hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của làm việc tại nhà nhiều hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của làm việc tại nhà vượt trội hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của việc làm việc ở nhà lớn hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của việc làm việc ở nhà nhiều hơn nhược điểm.
+        - Xét về tổng thể, ưu điểm của việc làm việc ở nhà vượt trội hơn nhược điểm.
+        - Xét về tổng thể, những lợi ích của việc làm việc tại nhà lớn hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của việc làm việc tại nhà nhiều hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của việc làm việc tại nhà vượt trội hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của làm việc tại nhà lớn hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của làm việc tại nhà nhiều hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của làm việc tại nhà vượt trội hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của việc làm việc ở nhà lớn hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của việc làm việc ở nhà nhiều hơn những bất lợi.
+        - Xét về tổng thể, những lợi ích của việc làm việc ở nhà vượt trội hơn những bất lợi.
+        - Xét về tổng thể, những ưu điểm của việc làm việc tại nhà lớn hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của việc làm việc tại nhà nhiều hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của việc làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của làm việc tại nhà lớn hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của làm việc tại nhà nhiều hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của việc làm việc ở nhà lớn hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của việc làm việc ở nhà nhiều hơn những nhược điểm.
+        - Xét về tổng thể, những ưu điểm của việc làm việc ở nhà vượt trội hơn những nhược điểm.
+        - Xét tổng thể, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+        - Xét tổng thể, lợi ích của việc làm việc tại nhà nhiều hơn bất lợi.
+        - Xét tổng thể, lợi ích của việc làm việc tại nhà vượt trội hơn bất lợi.
+        - Xét tổng thể, lợi ích của làm việc tại nhà lớn hơn bất lợi.
+        - Xét tổng thể, lợi ích của làm việc tại nhà nhiều hơn bất lợi.
+        - Xét tổng thể, lợi ích của làm việc tại nhà vượt trội hơn bất lợi.
+        - Xét tổng thể, lợi ích của việc làm việc ở nhà lớn hơn bất lợi.
+        - Xét tổng thể, lợi ích của việc làm việc ở nhà nhiều hơn bất lợi.
+        - Xét tổng thể, lợi ích của việc làm việc ở nhà vượt trội hơn bất lợi.
+        - Xét tổng thể, ưu điểm của việc làm việc tại nhà lớn hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của việc làm việc tại nhà nhiều hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của việc làm việc tại nhà vượt trội hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của làm việc tại nhà lớn hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của làm việc tại nhà nhiều hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của làm việc tại nhà vượt trội hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của việc làm việc ở nhà lớn hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của việc làm việc ở nhà nhiều hơn nhược điểm.
+        - Xét tổng thể, ưu điểm của việc làm việc ở nhà vượt trội hơn nhược điểm.
+        - Xét tổng thể, những lợi ích của việc làm việc tại nhà lớn hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của việc làm việc tại nhà nhiều hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của việc làm việc tại nhà vượt trội hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của làm việc tại nhà lớn hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của làm việc tại nhà nhiều hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của làm việc tại nhà vượt trội hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của việc làm việc ở nhà lớn hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của việc làm việc ở nhà nhiều hơn những bất lợi.
+        - Xét tổng thể, những lợi ích của việc làm việc ở nhà vượt trội hơn những bất lợi.
+        - Xét tổng thể, những ưu điểm của việc làm việc tại nhà lớn hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của việc làm việc tại nhà nhiều hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của việc làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của làm việc tại nhà lớn hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của làm việc tại nhà nhiều hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của việc làm việc ở nhà lớn hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của việc làm việc ở nhà nhiều hơn những nhược điểm.
+        - Xét tổng thể, những ưu điểm của việc làm việc ở nhà vượt trội hơn những nhược điểm.
+        - Nhìn chung, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+        - Nhìn chung, lợi ích của việc làm việc tại nhà nhiều hơn bất lợi.
+        - Nhìn chung, lợi ích của việc làm việc tại nhà vượt trội hơn bất lợi.
+        - Nhìn chung, lợi ích của làm việc tại nhà lớn hơn bất lợi.
+        - Nhìn chung, lợi ích của làm việc tại nhà nhiều hơn bất lợi.
+        - Nhìn chung, lợi ích của làm việc tại nhà vượt trội hơn bất lợi.
+        - Nhìn chung, lợi ích của việc làm việc ở nhà lớn hơn bất lợi.
+        - Nhìn chung, lợi ích của việc làm việc ở nhà nhiều hơn bất lợi.
+        - Nhìn chung, lợi ích của việc làm việc ở nhà vượt trội hơn bất lợi.
+        - Nhìn chung, ưu điểm của việc làm việc tại nhà lớn hơn nhược điểm.
+        - Nhìn chung, ưu điểm của việc làm việc tại nhà nhiều hơn nhược điểm.
+        - Nhìn chung, ưu điểm của việc làm việc tại nhà vượt trội hơn nhược điểm.
+        - Nhìn chung, ưu điểm của làm việc tại nhà lớn hơn nhược điểm.
+        - Nhìn chung, ưu điểm của làm việc tại nhà nhiều hơn nhược điểm.
+        - Nhìn chung, ưu điểm của làm việc tại nhà vượt trội hơn nhược điểm.
+        - Nhìn chung, ưu điểm của việc làm việc ở nhà lớn hơn nhược điểm.
+        - Nhìn chung, ưu điểm của việc làm việc ở nhà nhiều hơn nhược điểm.
+        - Nhìn chung, ưu điểm của việc làm việc ở nhà vượt trội hơn nhược điểm.
+        - Nhìn chung, những lợi ích của việc làm việc tại nhà lớn hơn những bất lợi.
+        - Nhìn chung, những lợi ích của việc làm việc tại nhà nhiều hơn những bất lợi.
+        - Nhìn chung, những lợi ích của việc làm việc tại nhà vượt trội hơn những bất lợi.
+        - Nhìn chung, những lợi ích của làm việc tại nhà lớn hơn những bất lợi.
+        - Nhìn chung, những lợi ích của làm việc tại nhà nhiều hơn những bất lợi.
+        - Nhìn chung, những lợi ích của làm việc tại nhà vượt trội hơn những bất lợi.
+        - Nhìn chung, những lợi ích của việc làm việc ở nhà lớn hơn những bất lợi.
+        - Nhìn chung, những lợi ích của việc làm việc ở nhà nhiều hơn những bất lợi.
+        - Nhìn chung, những lợi ích của việc làm việc ở nhà vượt trội hơn những bất lợi.
+        - Nhìn chung, những ưu điểm của việc làm việc tại nhà lớn hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của việc làm việc tại nhà nhiều hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của việc làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của làm việc tại nhà lớn hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của làm việc tại nhà nhiều hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của việc làm việc ở nhà lớn hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của việc làm việc ở nhà nhiều hơn những nhược điểm.
+        - Nhìn chung, những ưu điểm của việc làm việc ở nhà vượt trội hơn những nhược điểm.
+        - Cân nhắc mọi mặt, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của việc làm việc tại nhà nhiều hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của việc làm việc tại nhà vượt trội hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của làm việc tại nhà lớn hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của làm việc tại nhà nhiều hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của làm việc tại nhà vượt trội hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của việc làm việc ở nhà lớn hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của việc làm việc ở nhà nhiều hơn bất lợi.
+        - Cân nhắc mọi mặt, lợi ích của việc làm việc ở nhà vượt trội hơn bất lợi.
+        - Cân nhắc mọi mặt, ưu điểm của việc làm việc tại nhà lớn hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của việc làm việc tại nhà nhiều hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của việc làm việc tại nhà vượt trội hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của làm việc tại nhà lớn hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của làm việc tại nhà nhiều hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của làm việc tại nhà vượt trội hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của việc làm việc ở nhà lớn hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của việc làm việc ở nhà nhiều hơn nhược điểm.
+        - Cân nhắc mọi mặt, ưu điểm của việc làm việc ở nhà vượt trội hơn nhược điểm.
+        - Cân nhắc mọi mặt, những lợi ích của việc làm việc tại nhà lớn hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của việc làm việc tại nhà nhiều hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của việc làm việc tại nhà vượt trội hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của làm việc tại nhà lớn hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của làm việc tại nhà nhiều hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của làm việc tại nhà vượt trội hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của việc làm việc ở nhà lớn hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của việc làm việc ở nhà nhiều hơn những bất lợi.
+        - Cân nhắc mọi mặt, những lợi ích của việc làm việc ở nhà vượt trội hơn những bất lợi.
+        - Cân nhắc mọi mặt, những ưu điểm của việc làm việc tại nhà lớn hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của việc làm việc tại nhà nhiều hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của việc làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của làm việc tại nhà lớn hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của làm việc tại nhà nhiều hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của làm việc tại nhà vượt trội hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của việc làm việc ở nhà lớn hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của việc làm việc ở nhà nhiều hơn những nhược điểm.
+        - Cân nhắc mọi mặt, những ưu điểm của việc làm việc ở nhà vượt trội hơn những nhược điểm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trên sự cân bằng, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+        feedback_vi: On balance là cụm cố định "xét về tổng thể", không dịch sát "trên sự cân bằng".
+        error_tag: literal_translation
+      - answer: Xét về tổng thể, bất lợi của việc làm việc tại nhà lớn hơn lợi ích.
+        feedback_vi: Câu gốc nói lợi ích (advantages) lớn hơn bất lợi, không phải ngược lại.
+        error_tag: meaning
+    explanation:
+      vi: On balance = xét về tổng thể, cân nhắc mọi mặt; outweigh = lớn hơn, nặng ký hơn.
+    display_answer: Xét về tổng thể, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+
+  # ---------------- application ----------------
+  - key: en:exercise:crw-essay-order-overlooks
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-this-view-overlooks
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tuy nhiên, quan điểm này bỏ qua thực tế là đa số người lao động thích sự linh hoạt.\""
+      tokens:
+        - { id: o-fact, text: the fact that }
+        - { id: o-prefer, text: prefer flexibility }
+        - { id: o-over, text: overlooks }
+        - { id: o-how, text: "However," }
+        - { id: o-most, text: most workers }
+        - { id: o-overs, text: oversees }
+        - { id: o-view, text: this view }
+    answer:
+      orders:
+        - [o-how, o-view, o-over, o-fact, o-most, o-prefer]
+    explanation:
+      vi: However, this view overlooks the fact that + mệnh đề. Oversees (giám sát) là token thừa, dễ nhầm với overlooks (bỏ sót).
+    display_answer: However, this view overlooks the fact that most workers prefer flexibility.
+
+  - key: en:exercise:crw-essay-mcq-topic-sentence
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-topic-sentence
+    prompt:
+      stem: "Đoạn thân bài sau thiếu câu chủ đề: \"___ For example, LED street lights use half as much power, and solar panels on public buildings now pay for themselves within six years.\" Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: l3g, text: "Firstly, green technology saves cities a considerable amount of money.", lang: en }
+        - { id: f6r, text: "Solar panels were invented in the nineteenth century.", lang: en }
+        - { id: s9b, text: "In conclusion, green technology is too expensive for most cities.", lang: en }
+        - { id: d2c, text: "I like green technology very much.", lang: en }
+    answer:
+      correct_option_id: l3g
+    explanation:
+      vi: Câu chủ đề phải khái quát được các ví dụ phía sau (tiết kiệm điện, hoàn vốn) - tức là tiết kiệm tiền. Các câu khác lạc đề, mâu thuẫn với ví dụ, hoặc chỉ là cảm xúc cá nhân.
+    display_answer: "Firstly, green technology saves cities a considerable amount of money."
+
+  - key: en:exercise:crw-essay-mcq-extent
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-to-a-large-extent
+    prompt:
+      stem: Bạn đồng ý phần lớn với đề bài nhưng không hoàn toàn. Câu nào diễn đạt đúng?
+      stem_lang: vi
+      options:
+        - { id: m5v, text: "I agree with this view to a large extent, although it does not apply to every country.", lang: en }
+        - { id: h8p, text: "I agree with this view in a large extent, although it does not apply to every country.", lang: en }
+        - { id: j3w, text: "I agree with this view to some extents, although it does not apply to every country.", lang: en }
+        - { id: x7k, text: "I am agree with this view to a large extent, although it does not apply to every country.", lang: en }
+    answer:
+      correct_option_id: m5v
+    explanation:
+      vi: To a large extent - giới từ to, extent số ít; agree là động từ nên không có am. Mệnh đề although… cho thấy bạn đã cân nhắc giới hạn của quan điểm.
+    display_answer: "I agree with this view to a large extent, although it does not apply to every country."
+
+  - key: en:exercise:crw-essay-translate-it-follows
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-it-follows-that
+    prompt:
+      source_text: Từ đó suy ra rằng chúng ta cần thêm giáo viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It follows that we need more teachers.
+        - It follows that we need additional teachers.
+        - It follows that more teachers are needed.
+        - It follows that we require more teachers.
+        - It therefore follows that we need more teachers.
+        - It therefore follows that we need additional teachers.
+        - It therefore follows that more teachers are needed.
+        - It therefore follows that we require more teachers.
+        - From this it follows that we need more teachers.
+        - From this it follows that we need additional teachers.
+        - From this it follows that more teachers are needed.
+        - From this it follows that we require more teachers.
+        - It follows from this that we need more teachers.
+        - It follows from this that we need additional teachers.
+        - It follows from this that more teachers are needed.
+        - It follows from this that we require more teachers.
+        - Therefore, we need more teachers.
+        - Therefore, we need additional teachers.
+        - Therefore, more teachers are needed.
+        - Therefore, we require more teachers.
+        - Thus, we need more teachers.
+        - Thus, we need additional teachers.
+        - Thus, more teachers are needed.
+        - Thus, we require more teachers.
+        - Hence, we need more teachers.
+        - Hence, we need additional teachers.
+        - Hence, more teachers are needed.
+        - Hence, we require more teachers.
+        - Consequently, we need more teachers.
+        - Consequently, we need additional teachers.
+        - Consequently, more teachers are needed.
+        - Consequently, we require more teachers.
+        - This means that we need more teachers.
+        - This means that we need additional teachers.
+        - This means that more teachers are needed.
+        - This means that we require more teachers.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It is followed that we need more teachers.
+        feedback_vi: Dùng chủ động It follows that…, không có dạng bị động.
+        error_tag: verb_form
+      - answer: It follows that we needs more teachers.
+        feedback_vi: Chủ ngữ we - need, không có s.
+        error_tag: subject_verb_agreement
+      - answer: It follows that we need more teacher.
+        feedback_vi: More + danh từ đếm được số nhiều - more teachers.
+        error_tag: plural
+    explanation:
+      vi: It follows (from this) that… = từ đó suy ra rằng…; cũng có thể dùng Therefore / Hence / Consequently.
+    display_answer: It follows that we need more teachers.

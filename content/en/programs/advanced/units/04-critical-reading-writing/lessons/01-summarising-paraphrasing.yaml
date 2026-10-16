@@ -1,0 +1,756 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:crw-summarising-paraphrasing
+order_index: 1
+level: c1
+title:
+  vi: Tóm tắt & diễn đạt lại (summarising, paraphrasing)
+objectives:
+  - vi: Phân biệt tóm tắt (summarise) và diễn đạt lại (paraphrase), nắm đại ý (the gist) của một đoạn văn C1.
+  - vi: Diễn đạt lại bằng ba kỹ thuật - đổi từ đồng nghĩa có chọn lọc, đổi từ loại, đổi cấu trúc câu.
+  - vi: Tường thuật ý tác giả bằng argue, claim, acknowledge, dismiss… và tránh lỗi according to me, suggest to V, summary dùng làm động từ.
+estimated_minutes: 20
+skills: [reading, writing, vocabulary, grammar]
+prerequisites: [en:lesson:presenting-persuading-review]
+items:
+  - item: en:item:crw-paraphrase
+  - item: en:item:crw-summarise
+  - item: en:item:crw-in-other-words
+  - item: en:item:crw-reporting-verbs
+  - item: en:item:crw-the-author-argues-that
+  - item: en:item:crw-according-to
+  - item: en:item:crw-the-gist
+  - item: en:item:crw-main-thrust
+  - item: en:item:crw-change-word-class
+  - item: en:item:crw-plagiarism
+  - item: en:item:crw-verbatim
+  - item: en:item:in-summary
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Đọc phản biện bắt đầu từ việc hiểu đúng tác giả nói gì. Sau bài này, bạn tóm tắt và diễn đạt lại một đoạn văn tiếng Anh bằng lời của mình - ngắn gọn, đúng ý, không chép nguyên câu.
+  - type: explain
+    text:
+      vi: Paraphrase là diễn đạt lại một câu hay một đoạn bằng từ ngữ và cấu trúc khác, độ dài gần bằng bản gốc. Summarise là rút gọn, chỉ giữ đại ý (the gist) và hướng lập luận chính (the main thrust). Cả hai đều phải ghi nguồn; chép nguyên văn (verbatim) thì đặt trong ngoặc kép, nếu không là đạo văn (plagiarism).
+  - type: explain
+    text:
+      vi: Ba kỹ thuật diễn đạt lại - (1) đổi từ đồng nghĩa có chọn lọc (rise → increase, but → however); (2) đổi từ loại (Prices rose sharply → There was a sharp rise in prices); (3) đổi cấu trúc câu (chủ động ↔ bị động, đảo thứ tự mệnh đề, gộp hai câu). Giữ nguyên thuật ngữ chuyên môn, tên riêng và con số.
+  - type: explain
+    text:
+      vi: Bản tóm tắt thường mở bằng nguồn và động từ tường thuật - The author argues that…, According to the report, …. Chọn động từ đúng thái độ - claim (khẳng định, chưa chắc đúng), acknowledge (thừa nhận), dismiss … as … (gạt bỏ). Muốn giải thích lại cho dễ hiểu thì dùng In other words, ….
+  - type: deep_explain
+    text:
+      vi: Ba lỗi người Việt hay mắc khi tóm tắt - (1) According to me - according to chỉ dùng cho nguồn khác, ý mình thì dùng In my view; (2) suggest to V - đúng là suggest + V-ing hoặc suggest that + mệnh đề; (3) dùng summary làm động từ - summary là danh từ, động từ là summarise. Ngoài ra, chỉ thay từng chữ bằng từ đồng nghĩa mà giữ nguyên cấu trúc (patchwriting) vẫn bị coi là đạo văn và dễ sai collocation.
+  - type: example
+    target: "Original: Unemployment rose sharply after the factory closed. Paraphrase: The closure of the factory led to a sharp rise in unemployment."
+    target_lang: en
+    translation:
+      vi: "Bản gốc: Thất nghiệp tăng mạnh sau khi nhà máy đóng cửa. Diễn đạt lại: Việc nhà máy đóng cửa dẫn đến tình trạng thất nghiệp tăng mạnh."
+    note:
+      vi: Đổi từ loại (closed → the closure, rose sharply → a sharp rise) và đổi cấu trúc câu - nghĩa giữ nguyên.
+  - type: example
+    target: The author argues that mass tourism is harming the city, although she acknowledges that it brings in much-needed income.
+    target_lang: en
+    translation:
+      vi: Tác giả cho rằng du lịch đại trà đang làm hại thành phố, dù bà thừa nhận nó mang lại nguồn thu rất cần thiết.
+    note:
+      vi: Một câu tóm tắt gọn cả lập luận chính lẫn điều tác giả thừa nhận; dùng thì hiện tại đơn khi tường thuật văn bản.
+  - type: example
+    target: In other words, the author is not against tourism itself; she objects to the way it is currently managed.
+    target_lang: en
+    translation:
+      vi: Nói cách khác, tác giả không phản đối du lịch; bà phản đối cách nó đang được quản lý.
+    note:
+      vi: In other words giải thích lại một ý dễ hiểu nhầm bằng lời đơn giản hơn.
+  - type: example
+    target: The main thrust of the report is that remote work saves money without reducing productivity.
+    target_lang: en
+    translation:
+      vi: Ý cốt lõi của bản báo cáo là làm việc từ xa giúp tiết kiệm tiền mà không làm giảm năng suất.
+    note:
+      vi: The main thrust of… gói cả văn bản vào một ý - câu mở đầu lý tưởng của bản tóm tắt.
+  - type: common_mistake
+    wrong: According to me, the article is too one-sided.
+    right: In my view, the article is too one-sided.
+    target_lang: en
+    note:
+      vi: According to dùng để dẫn nguồn khác (according to the author); ý kiến của mình thì dùng In my view / I believe.
+  - type: common_mistake
+    wrong: The author suggests to raise taxes on sugary drinks.
+    right: The author suggests raising taxes on sugary drinks.
+    target_lang: en
+    note:
+      vi: Suggest + V-ing hoặc suggest that + mệnh đề (suggests that taxes should be raised); không dùng suggest to V.
+  - type: common_mistake
+    wrong: In this paragraph, I will summary the main points of the article.
+    right: In this paragraph, I will summarise the main points of the article.
+    target_lang: en
+    note:
+      vi: Summary là danh từ (write a summary); động từ là summarise / summarize.
+  - type: summary
+    points:
+      - vi: Paraphrase - đổi câu chữ, giữ nghĩa, dài gần bằng bản gốc; summarise - rút gọn, chỉ giữ the gist / the main thrust.
+      - vi: Kỹ thuật - đổi từ đồng nghĩa có chọn lọc, đổi từ loại (rose sharply → a sharp rise), đổi cấu trúc câu; giữ thuật ngữ, tên riêng, con số.
+      - vi: Động từ tường thuật - argue, claim, contend, acknowledge, dismiss … as …; dùng thì hiện tại đơn.
+      - vi: According to + nguồn khác; ý mình - In my view. Suggest + V-ing / that + mệnh đề.
+      - vi: Trích nguyên văn (verbatim) thì đặt trong ngoặc kép và ghi nguồn - nếu không là plagiarism.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:crw-sum-mcq-best-paraphrase
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-paraphrase
+    prompt:
+      stem: "Câu gốc: \"Unemployment rose sharply after the factory closed.\" Câu nào là bản diễn đạt lại tốt nhất - đổi cấu trúc mà vẫn giữ đúng nghĩa?"
+      stem_lang: vi
+      options:
+        - { id: p4k, text: "There was a sharp rise in unemployment following the closure of the factory.", lang: en }
+        - { id: z8m, text: "Unemployment rose sharply after the factory had closed.", lang: en }
+        - { id: c2w, text: "Unemployment fell slightly after the factory opened.", lang: en }
+        - { id: r6t, text: "The factory closed because unemployment rose sharply.", lang: en }
+    answer:
+      correct_option_id: p4k
+    explanation:
+      vi: Câu đúng đổi từ loại (rose sharply → a sharp rise, closed → the closure) và giữ quan hệ trước - sau. Câu thứ hai gần như chép nguyên; câu thứ ba sai nghĩa; câu cuối đảo ngược quan hệ nhân quả.
+    display_answer: "There was a sharp rise in unemployment following the closure of the factory."
+
+  - key: en:exercise:crw-sum-listen-in-other-words
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:crw-in-other-words
+    prompt:
+      audio_asset_id: null
+      fallback_text: "In other words, the author is not against tourism itself; she objects to the way it is currently managed."
+      options:
+        - { id: t3h, text: "Tác giả không phản đối du lịch, mà phản đối cách du lịch đang được quản lý.", lang: vi }
+        - { id: g7d, text: "Tác giả muốn cấm hoàn toàn du lịch ở thành phố.", lang: vi }
+        - { id: m1x, text: "Tác giả hài lòng với cách du lịch đang được quản lý.", lang: vi }
+        - { id: w9e, text: "Người nói đang trích nguyên văn lời của một khách du lịch.", lang: vi }
+    answer:
+      correct_option_id: t3h
+    explanation:
+      vi: In other words báo hiệu người nói đang giải thích lại ý tác giả. Not against tourism itself = không phản đối bản thân du lịch; objects to the way it is managed = phản đối cách quản lý.
+    display_answer: "Tác giả không phản đối du lịch, mà phản đối cách du lịch đang được quản lý."
+
+  - key: en:exercise:crw-sum-fill-argues-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-the-author-argues-that
+    prompt:
+      template: "The author {{b1}} that remote work increases productivity. In other {{b2}}, staff get more done at home than in the office."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Tác giả cho rằng làm việc từ xa làm tăng năng suất. Nói cách khác, nhân viên làm được nhiều việc ở nhà hơn ở văn phòng."
+        - "Gợi ý: ô 1 là động từ tường thuật \"lập luận\" (a…), chủ ngữ số ít; ô 2 nằm trong cụm \"nói cách khác\"."
+    answer:
+      blanks:
+        b1: [argues, claims, contends, maintains, suggests, asserts, believes, states, holds, insists]
+        b2: [words]
+    known_wrong:
+      - answer: argue
+        feedback_vi: Chủ ngữ the author số ít, thì hiện tại đơn - argues.
+        error_tag: subject_verb_agreement
+      - answer: word
+        feedback_vi: Cụm cố định luôn ở số nhiều - in other words.
+        error_tag: fixed_phrase
+      - answer: argued
+        feedback_vi: Khi tường thuật nội dung một văn bản, dùng thì hiện tại đơn - the author argues.
+        error_tag: verb_form
+    explanation:
+      vi: The author argues/claims that… là câu mở đầu chuẩn của bản tóm tắt, dùng hiện tại đơn. In other words luôn có words số nhiều.
+    display_answer: The author argues that remote work increases productivity. In other words, staff get more done at home than in the office.
+
+  - key: en:exercise:crw-sum-mcq-error-free
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:crw-according-to
+    prompt:
+      stem: Câu nào KHÔNG có lỗi?
+      stem_lang: vi
+      options:
+        - { id: f5s, text: "According to the report, sales fell by ten per cent last year.", lang: en }
+        - { id: k2b, text: "According to me, sales fell by ten per cent last year.", lang: en }
+        - { id: y7q, text: "The report suggests to cut costs by ten per cent.", lang: en }
+        - { id: n4j, text: "The report summaries last year's sales in one table.", lang: en }
+    answer:
+      correct_option_id: f5s
+    explanation:
+      vi: According to + nguồn khác là đúng. According to me sai (dùng In my view); suggest không đi với to V (suggests cutting); summary là danh từ, động từ là summarises.
+    display_answer: "According to the report, sales fell by ten per cent last year."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:crw-sum-fill-word-class
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-change-word-class
+    prompt:
+      template: "Original - \"Prices rose sharply in 2024.\" Paraphrase - \"There was a {{b1}} {{b2}} in prices in 2024.\" The {{b3}} of the article is that inflation hurts the poor most."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [sharp, steep, dramatic, marked, significant, substantial, considerable]
+        b2: [rise, increase, jump, surge]
+        b3: [gist, main point, main idea, key point, central point, main argument, central argument, essence, main thrust, thrust, crux]
+    known_wrong:
+      - answer: sharply
+        feedback_vi: Trước danh từ rise cần tính từ - a sharp rise; sharply là trạng từ.
+        error_tag: word_form
+      - answer: rose
+        feedback_vi: Sau a sharp cần danh từ - a sharp rise; rose là động từ quá khứ.
+        error_tag: word_form
+      - answer: content
+        feedback_vi: Content là "nội dung" nói chung; "ý chính" là the gist / the main point.
+        error_tag: word_choice
+    explanation:
+      vi: Đổi từ loại - rose sharply (động từ + trạng từ) → a sharp rise (tính từ + danh từ). The gist / the main point of the article = ý chính của bài báo.
+    display_answer: Original - "Prices rose sharply in 2024." Paraphrase - "There was a sharp rise in prices in 2024." The gist of the article is that inflation hurts the poor most.
+
+  - key: en:exercise:crw-sum-translate-in-other-words
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-in-other-words
+    prompt:
+      source_text: Nói cách khác, tác giả cho rằng mạng xã hội không phải là nguyên nhân chính.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In other words, the author argues that social media is not the main cause.
+        - In other words, the author argues that social media is not the primary cause.
+        - In other words, the author argues that social media is not the main reason.
+        - In other words, the author argues that social media is not the principal cause.
+        - In other words, the author claims that social media is not the main cause.
+        - In other words, the author claims that social media is not the primary cause.
+        - In other words, the author claims that social media is not the main reason.
+        - In other words, the author claims that social media is not the principal cause.
+        - In other words, the author believes that social media is not the main cause.
+        - In other words, the author believes that social media is not the primary cause.
+        - In other words, the author believes that social media is not the main reason.
+        - In other words, the author believes that social media is not the principal cause.
+        - In other words, the author suggests that social media is not the main cause.
+        - In other words, the author suggests that social media is not the primary cause.
+        - In other words, the author suggests that social media is not the main reason.
+        - In other words, the author suggests that social media is not the principal cause.
+        - In other words, the author contends that social media is not the main cause.
+        - In other words, the author contends that social media is not the primary cause.
+        - In other words, the author contends that social media is not the main reason.
+        - In other words, the author contends that social media is not the principal cause.
+        - In other words, the author maintains that social media is not the main cause.
+        - In other words, the author maintains that social media is not the primary cause.
+        - In other words, the author maintains that social media is not the main reason.
+        - In other words, the author maintains that social media is not the principal cause.
+        - In other words, the author thinks that social media is not the main cause.
+        - In other words, the author thinks that social media is not the primary cause.
+        - In other words, the author thinks that social media is not the main reason.
+        - In other words, the author thinks that social media is not the principal cause.
+        - To put it another way, the author argues that social media is not the main cause.
+        - To put it another way, the author argues that social media is not the primary cause.
+        - To put it another way, the author argues that social media is not the main reason.
+        - To put it another way, the author argues that social media is not the principal cause.
+        - To put it another way, the author claims that social media is not the main cause.
+        - To put it another way, the author claims that social media is not the primary cause.
+        - To put it another way, the author claims that social media is not the main reason.
+        - To put it another way, the author claims that social media is not the principal cause.
+        - To put it another way, the author believes that social media is not the main cause.
+        - To put it another way, the author believes that social media is not the primary cause.
+        - To put it another way, the author believes that social media is not the main reason.
+        - To put it another way, the author believes that social media is not the principal cause.
+        - To put it another way, the author suggests that social media is not the main cause.
+        - To put it another way, the author suggests that social media is not the primary cause.
+        - To put it another way, the author suggests that social media is not the main reason.
+        - To put it another way, the author suggests that social media is not the principal cause.
+        - To put it another way, the author contends that social media is not the main cause.
+        - To put it another way, the author contends that social media is not the primary cause.
+        - To put it another way, the author contends that social media is not the main reason.
+        - To put it another way, the author contends that social media is not the principal cause.
+        - To put it another way, the author maintains that social media is not the main cause.
+        - To put it another way, the author maintains that social media is not the primary cause.
+        - To put it another way, the author maintains that social media is not the main reason.
+        - To put it another way, the author maintains that social media is not the principal cause.
+        - To put it another way, the author thinks that social media is not the main cause.
+        - To put it another way, the author thinks that social media is not the primary cause.
+        - To put it another way, the author thinks that social media is not the main reason.
+        - To put it another way, the author thinks that social media is not the principal cause.
+        - Put differently, the author argues that social media is not the main cause.
+        - Put differently, the author argues that social media is not the primary cause.
+        - Put differently, the author argues that social media is not the main reason.
+        - Put differently, the author argues that social media is not the principal cause.
+        - Put differently, the author claims that social media is not the main cause.
+        - Put differently, the author claims that social media is not the primary cause.
+        - Put differently, the author claims that social media is not the main reason.
+        - Put differently, the author claims that social media is not the principal cause.
+        - Put differently, the author believes that social media is not the main cause.
+        - Put differently, the author believes that social media is not the primary cause.
+        - Put differently, the author believes that social media is not the main reason.
+        - Put differently, the author believes that social media is not the principal cause.
+        - Put differently, the author suggests that social media is not the main cause.
+        - Put differently, the author suggests that social media is not the primary cause.
+        - Put differently, the author suggests that social media is not the main reason.
+        - Put differently, the author suggests that social media is not the principal cause.
+        - Put differently, the author contends that social media is not the main cause.
+        - Put differently, the author contends that social media is not the primary cause.
+        - Put differently, the author contends that social media is not the main reason.
+        - Put differently, the author contends that social media is not the principal cause.
+        - Put differently, the author maintains that social media is not the main cause.
+        - Put differently, the author maintains that social media is not the primary cause.
+        - Put differently, the author maintains that social media is not the main reason.
+        - Put differently, the author maintains that social media is not the principal cause.
+        - Put differently, the author thinks that social media is not the main cause.
+        - Put differently, the author thinks that social media is not the primary cause.
+        - Put differently, the author thinks that social media is not the main reason.
+        - Put differently, the author thinks that social media is not the principal cause.
+        - That is to say, the author argues that social media is not the main cause.
+        - That is to say, the author argues that social media is not the primary cause.
+        - That is to say, the author argues that social media is not the main reason.
+        - That is to say, the author argues that social media is not the principal cause.
+        - That is to say, the author claims that social media is not the main cause.
+        - That is to say, the author claims that social media is not the primary cause.
+        - That is to say, the author claims that social media is not the main reason.
+        - That is to say, the author claims that social media is not the principal cause.
+        - That is to say, the author believes that social media is not the main cause.
+        - That is to say, the author believes that social media is not the primary cause.
+        - That is to say, the author believes that social media is not the main reason.
+        - That is to say, the author believes that social media is not the principal cause.
+        - That is to say, the author suggests that social media is not the main cause.
+        - That is to say, the author suggests that social media is not the primary cause.
+        - That is to say, the author suggests that social media is not the main reason.
+        - That is to say, the author suggests that social media is not the principal cause.
+        - That is to say, the author contends that social media is not the main cause.
+        - That is to say, the author contends that social media is not the primary cause.
+        - That is to say, the author contends that social media is not the main reason.
+        - That is to say, the author contends that social media is not the principal cause.
+        - That is to say, the author maintains that social media is not the main cause.
+        - That is to say, the author maintains that social media is not the primary cause.
+        - That is to say, the author maintains that social media is not the main reason.
+        - That is to say, the author maintains that social media is not the principal cause.
+        - That is to say, the author thinks that social media is not the main cause.
+        - That is to say, the author thinks that social media is not the primary cause.
+        - That is to say, the author thinks that social media is not the main reason.
+        - That is to say, the author thinks that social media is not the principal cause.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In other word, the author argues that social media is not the main cause.
+        feedback_vi: Cụm cố định luôn ở số nhiều - in other words.
+        error_tag: fixed_phrase
+      - answer: In other words, the author argue that social media is not the main cause.
+        feedback_vi: Chủ ngữ the author số ít - argues.
+        error_tag: subject_verb_agreement
+      - answer: In other words, according to me, social media is not the main cause.
+        feedback_vi: Câu gốc nói về ý của tác giả, và according to không dùng cho bản thân.
+        error_tag: according_to_me
+    explanation:
+      vi: In other words mở đầu câu diễn đạt lại; the author argues / claims / believes that… tường thuật ý tác giả ở thì hiện tại đơn. Social media thường đi với động từ số ít.
+    display_answer: In other words, the author argues that social media is not the main cause.
+
+  - key: en:exercise:crw-sum-translate-to-vi-acknowledges
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-reporting-verbs
+    prompt:
+      source_text: The author acknowledges that the data is limited but dismisses the criticism as exaggerated.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu có hạn nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận rằng số liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận dữ liệu có hạn nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận số liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả thừa nhận dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận rằng dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận rằng dữ liệu có hạn nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận rằng số liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận rằng dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận dữ liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận dữ liệu có hạn nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận số liệu còn hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích vì cho rằng nó phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích là phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng gạt đi lời chỉ trích vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng bác bỏ lời phê bình vì cho là phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng gạt bỏ lời chỉ trích, cho rằng đó là sự phóng đại.
+        - Tác giả công nhận dữ liệu bị hạn chế nhưng bác bỏ lời chỉ trích, cho rằng nó bị thổi phồng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tác giả biết rằng dữ liệu còn hạn chế và đồng ý với lời chỉ trích.
+        feedback_vi: Dismiss … as exaggerated là gạt bỏ lời chỉ trích vì cho là phóng đại, không phải đồng ý.
+        error_tag: meaning
+      - answer: Tác giả cảm ơn rằng dữ liệu còn hạn chế nhưng sa thải lời chỉ trích vì phóng đại.
+        feedback_vi: Acknowledge ở đây là "thừa nhận"; dismiss là "gạt bỏ", không phải "sa thải".
+        error_tag: literal_translation
+    explanation:
+      vi: Acknowledge that… = thừa nhận rằng…; dismiss something as… = gạt bỏ điều gì vì cho rằng nó…. Hai động từ cho thấy tác giả nhượng bộ một phần rồi phản bác.
+    display_answer: Tác giả thừa nhận rằng dữ liệu còn hạn chế nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+
+  # ---------------- application ----------------
+  - key: en:exercise:crw-sum-order-according-to
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-according-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Theo tác giả, du lịch đại trà đang làm hại thành phố.\""
+      tokens:
+        - { id: a-harm, text: is harming }
+        - { id: a-me, text: "me," }
+        - { id: a-city, text: the city }
+        - { id: a-acc, text: According to }
+        - { id: a-mass, text: mass tourism }
+        - { id: a-auth, text: "the author," }
+    answer:
+      orders:
+        - [a-acc, a-auth, a-mass, a-harm, a-city]
+    explanation:
+      vi: According to + nguồn (the author). Me là token thừa - không nói according to me; câu gốc cũng nói về ý của tác giả.
+    display_answer: According to the author, mass tourism is harming the city.
+
+  - key: en:exercise:crw-sum-mcq-one-sentence-summary
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-summarise
+    prompt:
+      stem: Bạn cần tóm tắt một bài báo về tuần làm việc bốn ngày trong MỘT câu cho báo cáo. Câu nào tốt nhất?
+      stem_lang: vi
+      options:
+        - { id: s8v, text: "The article argues that a four-day week raises productivity, although it acknowledges that most evidence comes from small firms.", lang: en }
+        - { id: h3n, text: "According to me, the four-day week is a great idea and every company should try it.", lang: en }
+        - { id: e6c, text: "The article summaries that a four-day week is good for productivity.", lang: en }
+        - { id: u1l, text: "The article mentions a study from 2019, then a survey of 300 managers, then a trial in Iceland, then interviews with staff.", lang: en }
+    answer:
+      correct_option_id: s8v
+    explanation:
+      vi: Câu đúng nêu lập luận chính và điều tác giả thừa nhận bằng động từ tường thuật. Các câu khác đưa ý kiến cá nhân (và according to me sai), dùng summary làm động từ, hoặc liệt kê chi tiết thay vì rút ra ý chính.
+    display_answer: "The article argues that a four-day week raises productivity, although it acknowledges that most evidence comes from small firms."
+
+  - key: en:exercise:crw-sum-mcq-verbatim
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-verbatim
+    prompt:
+      stem: Bạn muốn dùng nguyên văn (verbatim) một câu của tác giả trong bài luận. Cách nào đúng?
+      stem_lang: vi
+      options:
+        - { id: v2a, text: "Đặt câu đó trong ngoặc kép và ghi rõ nguồn.", lang: vi }
+        - { id: q5r, text: "Đổi một hai từ là đủ, không cần ghi nguồn.", lang: vi }
+        - { id: o9k, text: "Không cần ghi nguồn vì câu đó ngắn.", lang: vi }
+        - { id: j4p, text: "Dịch sang tiếng Việt rồi dịch ngược lại để thành câu của mình.", lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: Trích nguyên văn thì phải có ngoặc kép và nguồn. Đổi vài từ, bỏ nguồn hay dịch đi dịch lại đều vẫn là đạo văn (plagiarism) - muốn dùng lời mình thì phải paraphrase thật sự và vẫn ghi nguồn.
+    display_answer: "Đặt câu đó trong ngoặc kép và ghi rõ nguồn."
+
+  - key: en:exercise:crw-sum-translate-in-summary
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-summarise
+    prompt:
+      source_text: Tóm lại, bài báo cho rằng chính phủ nên đầu tư nhiều hơn vào giáo dục.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In summary, the article argues that the government should invest more in education.
+        - In summary, the article argues that the government ought to invest more in education.
+        - In summary, the article argues that the government should invest more money in education.
+        - In summary, the article argues that the government should spend more on education.
+        - In summary, the article claims that the government should invest more in education.
+        - In summary, the article claims that the government ought to invest more in education.
+        - In summary, the article claims that the government should invest more money in education.
+        - In summary, the article claims that the government should spend more on education.
+        - In summary, the article suggests that the government should invest more in education.
+        - In summary, the article suggests that the government ought to invest more in education.
+        - In summary, the article suggests that the government should invest more money in education.
+        - In summary, the article suggests that the government should spend more on education.
+        - In summary, the article contends that the government should invest more in education.
+        - In summary, the article contends that the government ought to invest more in education.
+        - In summary, the article contends that the government should invest more money in education.
+        - In summary, the article contends that the government should spend more on education.
+        - In summary, the article maintains that the government should invest more in education.
+        - In summary, the article maintains that the government ought to invest more in education.
+        - In summary, the article maintains that the government should invest more money in education.
+        - In summary, the article maintains that the government should spend more on education.
+        - In summary, the article states that the government should invest more in education.
+        - In summary, the article states that the government ought to invest more in education.
+        - In summary, the article states that the government should invest more money in education.
+        - In summary, the article states that the government should spend more on education.
+        - To summarise, the article argues that the government should invest more in education.
+        - To summarise, the article argues that the government ought to invest more in education.
+        - To summarise, the article argues that the government should invest more money in education.
+        - To summarise, the article argues that the government should spend more on education.
+        - To summarise, the article claims that the government should invest more in education.
+        - To summarise, the article claims that the government ought to invest more in education.
+        - To summarise, the article claims that the government should invest more money in education.
+        - To summarise, the article claims that the government should spend more on education.
+        - To summarise, the article suggests that the government should invest more in education.
+        - To summarise, the article suggests that the government ought to invest more in education.
+        - To summarise, the article suggests that the government should invest more money in education.
+        - To summarise, the article suggests that the government should spend more on education.
+        - To summarise, the article contends that the government should invest more in education.
+        - To summarise, the article contends that the government ought to invest more in education.
+        - To summarise, the article contends that the government should invest more money in education.
+        - To summarise, the article contends that the government should spend more on education.
+        - To summarise, the article maintains that the government should invest more in education.
+        - To summarise, the article maintains that the government ought to invest more in education.
+        - To summarise, the article maintains that the government should invest more money in education.
+        - To summarise, the article maintains that the government should spend more on education.
+        - To summarise, the article states that the government should invest more in education.
+        - To summarise, the article states that the government ought to invest more in education.
+        - To summarise, the article states that the government should invest more money in education.
+        - To summarise, the article states that the government should spend more on education.
+        - To summarize, the article argues that the government should invest more in education.
+        - To summarize, the article argues that the government ought to invest more in education.
+        - To summarize, the article argues that the government should invest more money in education.
+        - To summarize, the article argues that the government should spend more on education.
+        - To summarize, the article claims that the government should invest more in education.
+        - To summarize, the article claims that the government ought to invest more in education.
+        - To summarize, the article claims that the government should invest more money in education.
+        - To summarize, the article claims that the government should spend more on education.
+        - To summarize, the article suggests that the government should invest more in education.
+        - To summarize, the article suggests that the government ought to invest more in education.
+        - To summarize, the article suggests that the government should invest more money in education.
+        - To summarize, the article suggests that the government should spend more on education.
+        - To summarize, the article contends that the government should invest more in education.
+        - To summarize, the article contends that the government ought to invest more in education.
+        - To summarize, the article contends that the government should invest more money in education.
+        - To summarize, the article contends that the government should spend more on education.
+        - To summarize, the article maintains that the government should invest more in education.
+        - To summarize, the article maintains that the government ought to invest more in education.
+        - To summarize, the article maintains that the government should invest more money in education.
+        - To summarize, the article maintains that the government should spend more on education.
+        - To summarize, the article states that the government should invest more in education.
+        - To summarize, the article states that the government ought to invest more in education.
+        - To summarize, the article states that the government should invest more money in education.
+        - To summarize, the article states that the government should spend more on education.
+        - In short, the article argues that the government should invest more in education.
+        - In short, the article argues that the government ought to invest more in education.
+        - In short, the article argues that the government should invest more money in education.
+        - In short, the article argues that the government should spend more on education.
+        - In short, the article claims that the government should invest more in education.
+        - In short, the article claims that the government ought to invest more in education.
+        - In short, the article claims that the government should invest more money in education.
+        - In short, the article claims that the government should spend more on education.
+        - In short, the article suggests that the government should invest more in education.
+        - In short, the article suggests that the government ought to invest more in education.
+        - In short, the article suggests that the government should invest more money in education.
+        - In short, the article suggests that the government should spend more on education.
+        - In short, the article contends that the government should invest more in education.
+        - In short, the article contends that the government ought to invest more in education.
+        - In short, the article contends that the government should invest more money in education.
+        - In short, the article contends that the government should spend more on education.
+        - In short, the article maintains that the government should invest more in education.
+        - In short, the article maintains that the government ought to invest more in education.
+        - In short, the article maintains that the government should invest more money in education.
+        - In short, the article maintains that the government should spend more on education.
+        - In short, the article states that the government should invest more in education.
+        - In short, the article states that the government ought to invest more in education.
+        - In short, the article states that the government should invest more money in education.
+        - In short, the article states that the government should spend more on education.
+        - In brief, the article argues that the government should invest more in education.
+        - In brief, the article argues that the government ought to invest more in education.
+        - In brief, the article argues that the government should invest more money in education.
+        - In brief, the article argues that the government should spend more on education.
+        - In brief, the article claims that the government should invest more in education.
+        - In brief, the article claims that the government ought to invest more in education.
+        - In brief, the article claims that the government should invest more money in education.
+        - In brief, the article claims that the government should spend more on education.
+        - In brief, the article suggests that the government should invest more in education.
+        - In brief, the article suggests that the government ought to invest more in education.
+        - In brief, the article suggests that the government should invest more money in education.
+        - In brief, the article suggests that the government should spend more on education.
+        - In brief, the article contends that the government should invest more in education.
+        - In brief, the article contends that the government ought to invest more in education.
+        - In brief, the article contends that the government should invest more money in education.
+        - In brief, the article contends that the government should spend more on education.
+        - In brief, the article maintains that the government should invest more in education.
+        - In brief, the article maintains that the government ought to invest more in education.
+        - In brief, the article maintains that the government should invest more money in education.
+        - In brief, the article maintains that the government should spend more on education.
+        - In brief, the article states that the government should invest more in education.
+        - In brief, the article states that the government ought to invest more in education.
+        - In brief, the article states that the government should invest more money in education.
+        - In brief, the article states that the government should spend more on education.
+        - To sum up, the article argues that the government should invest more in education.
+        - To sum up, the article argues that the government ought to invest more in education.
+        - To sum up, the article argues that the government should invest more money in education.
+        - To sum up, the article argues that the government should spend more on education.
+        - To sum up, the article claims that the government should invest more in education.
+        - To sum up, the article claims that the government ought to invest more in education.
+        - To sum up, the article claims that the government should invest more money in education.
+        - To sum up, the article claims that the government should spend more on education.
+        - To sum up, the article suggests that the government should invest more in education.
+        - To sum up, the article suggests that the government ought to invest more in education.
+        - To sum up, the article suggests that the government should invest more money in education.
+        - To sum up, the article suggests that the government should spend more on education.
+        - To sum up, the article contends that the government should invest more in education.
+        - To sum up, the article contends that the government ought to invest more in education.
+        - To sum up, the article contends that the government should invest more money in education.
+        - To sum up, the article contends that the government should spend more on education.
+        - To sum up, the article maintains that the government should invest more in education.
+        - To sum up, the article maintains that the government ought to invest more in education.
+        - To sum up, the article maintains that the government should invest more money in education.
+        - To sum up, the article maintains that the government should spend more on education.
+        - To sum up, the article states that the government should invest more in education.
+        - To sum up, the article states that the government ought to invest more in education.
+        - To sum up, the article states that the government should invest more money in education.
+        - To sum up, the article states that the government should spend more on education.
+        - In summary, the article argues for more government investment in education.
+        - In summary, the article calls for more government investment in education.
+        - To summarise, the article argues for more government investment in education.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: In summary, the article suggests the government to invest more in education.
+        feedback_vi: Suggest không đi với tân ngữ + to V; dùng suggests that the government should invest….
+        error_tag: verb_pattern
+      - answer: To summary, the article argues that the government should invest more in education.
+        feedback_vi: Summary là danh từ - In summary hoặc To summarise.
+        error_tag: word_form
+      - answer: In summary, the article argues that the government should invest more on education.
+        feedback_vi: Invest đi với in - invest in education.
+        error_tag: preposition
+    explanation:
+      vi: In summary / To summarise / In short mở đầu câu tóm tắt; the article argues / suggests that + mệnh đề với should. Invest in + lĩnh vực.
+    display_answer: In summary, the article argues that the government should invest more in education.
