@@ -211,6 +211,56 @@ Deno.test('roleplay_turn.validate: the last turn and all goals finish the sessio
   assert(c.ok && (c.data as { finished: boolean }).finished === false);
 });
 
+const turnJa = req({
+  task: 'roleplay_turn',
+  language: 'ja',
+  level: 'n5',
+  scenario_key: 'cafe_order',
+  turn_index: 1,
+  history: [{ role: 'partner', text: 'いらっしゃいませ！ご注文はお決まりですか？' }],
+  learner_message: 'コーヒーをください。',
+});
+
+Deno.test('roleplay_turn (ja): every catalog scenario builds a Japanese prompt with the level register', () => {
+  for (const key of ['cafe_order', 'ask_directions', 'hotel_checkin', 'doctor_visit', 'job_interview', 'shopping_bargain', 'introductions']) {
+    const scenario = findRoleplayScenario('ja', key);
+    assert(scenario, `ja scenario ${key}`);
+    const r = req({ task: 'roleplay_turn', language: 'ja', level: scenario.level_min, scenario_key: key, turn_index: 0 });
+    const sys = P.buildSystem!(r);
+    assertStringIncludes(sys, scenario.persona);
+    for (const g of scenario.goals) assertStringIncludes(sys, `${g.key}: ${g.label_vi}`);
+    const user = P.buildUser(r, { lessonContext: null });
+    assertStringIncludes(user, 'Ngôn ngữ đích: tiếng Nhật');
+    assertStringIncludes(user, 'Lối nói tiếng Nhật:');
+    assertStringIncludes(user, scenario.opening_hint);
+  }
+  // Beginners: polite form only; advanced: keigo allowed.
+  assertStringIncludes(P.buildUser(turnJa, { lessonContext: null }), 'chỉ dùng thể lịch sự です/ます');
+  const n1 = req({ task: 'roleplay_turn', language: 'ja', level: 'n1', scenario_key: 'job_interview', turn_index: 0 });
+  assertStringIncludes(P.buildUser(n1, { lessonContext: null }), '尊敬語・謙譲語');
+});
+
+Deno.test('roleplay_turn.validate (ja): kana required, Hangul, romaji and kanji-only replies rejected', () => {
+  const ja = { partner_reply: 'ホットとアイス、どちらにしますか？', hint_vi: null, corrections: [], goal_progress: ['order_drink'], finished: false };
+  const ok = P.validate(ja, turnJa);
+  assert(ok.ok);
+  if (ok.ok) assertEquals((ok.data as { goal_progress: string[] }).goal_progress, ['order_drink']);
+  assertFalse(P.validate({ ...ja, partner_reply: 'Hotto to aisu, dochira ni shimasu ka?' }, turnJa).ok, 'romaji');
+  assertFalse(P.validate({ ...ja, partner_reply: '따뜻한 거요, 차가운 거요?' }, turnJa).ok, 'Korean');
+  const chinese = P.validate({ ...ja, partner_reply: '热的还是冰的？' }, turnJa);
+  assertFalse(chinese.ok, 'kanji only is a Chinese reply');
+  if (!chinese.ok) assertStringIncludes(chinese.error, 'kana');
+  assertFalse(P.validate({ ...goodEn, partner_reply: 'コーヒーはいかがですか？' }, turnEn).ok, 'no Japanese in an en reply');
+  // Corrections must quote the learner's Japanese message (whitespace and width differences ignored).
+  const corr = { original: 'コーヒー を ください', corrected: 'コーヒーをひとつください', note_vi: 'Thêm số lượng cho tự nhiên.' };
+  const c = P.validate({ ...ja, corrections: [corr] }, turnJa);
+  assert(c.ok);
+  if (c.ok) assertEquals((c.data as { corrections: unknown[] }).corrections, [corr]);
+  const invented = P.validate({ ...ja, corrections: [{ ...corr, original: '水をください' }] }, turnJa);
+  assert(invented.ok);
+  if (invented.ok) assertEquals((invented.data as { corrections: unknown[] }).corrections, []);
+});
+
 Deno.test('roleplay_turn.validate: blank hint becomes null', () => {
   const v = P.validate({ ...goodEn, hint_vi: '   ' }, turnEn);
   assert(v.ok && (v.data as { hint_vi: unknown }).hint_vi === null);

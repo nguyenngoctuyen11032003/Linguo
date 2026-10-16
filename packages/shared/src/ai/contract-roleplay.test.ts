@@ -135,6 +135,7 @@ describe('roleplay scenario catalog', () => {
       expect(order.indexOf(s.level_min)).toBeGreaterThanOrEqual(0);
       expect(order.indexOf(s.level_max)).toBeGreaterThanOrEqual(order.indexOf(s.level_min));
       if (s.language === 'ko') expect(s.opening_hint).toMatch(/[가-힯]/);
+      else if (s.language === 'ja') expect(s.opening_hint).toMatch(/[぀-ヿ]/);
       else expect(s.opening_hint).toMatch(/^[\x20-\x7Eé]+$/);
     }
   });

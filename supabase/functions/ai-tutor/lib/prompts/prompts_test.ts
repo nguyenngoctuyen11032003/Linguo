@@ -2,6 +2,7 @@ import { assert, assertEquals, assertFalse, assertMatch, assertStringIncludes, a
 import { z } from 'zod';
 import { AI_OUTPUT_SCHEMAS, AI_TASKS, type AiRequest, type AiRequestInput, aiRequestSchema } from '../../../_shared/ai-contract.ts';
 import { PROMPTS } from './index.ts';
+import { japaneseRegister } from './shared.ts';
 
 const req = (input: AiRequestInput): AiRequest => aiRequestSchema.parse(input);
 
@@ -442,4 +443,72 @@ Deno.test('ja outputs must contain kana or kanji', () => {
   const good = { verdict: 'minor_issue', error_type: 'trợ từ', explanation_md: 'Dùng は.', corrected: '私は学生です。', tip_vi: null };
   assert(ae(good, analyzeJa).ok);
   assertFalse(ae({ ...good, corrected: 'watashi wa gakusei desu' }, analyzeJa).ok, 'ja corrected needs kana or kanji');
+});
+
+Deno.test('ja header: politeness register follows the JLPT level, no romaji or furigana', () => {
+  const user = (level: string) =>
+    PROMPTS.explain_concept.buildUser(req({ task: 'explain_concept', language: 'ja', level, concept: 'keigo' }), { lessonContext: null });
+  for (const level of ['kana', 'n5', 'n4']) {
+    const u = user(level);
+    assertStringIncludes(u, 'Lối nói tiếng Nhật:');
+    assertStringIncludes(u, 'です/ます');
+    assertFalse(u.includes('尊敬語'), `${level}: no keigo for beginners`);
+    assertStringIncludes(u, 'không viết romaji');
+  }
+  assertStringIncludes(user('kana'), 'hiragana và katakana');
+  assertStringIncludes(user('n3'), 'mặc định dùng thể lịch sự');
+  for (const level of ['n2', 'n1']) assertStringIncludes(user(level), '尊敬語・謙譲語');
+  assertEquals(japaneseRegister('zz'), japaneseRegister('n5'), 'unknown level falls back to the beginner register');
+  // Only ja gets the register line.
+  assertFalse(PROMPTS.explain_concept.buildUser(explainKo, { lessonContext: null }).includes('Lối nói tiếng Nhật'));
+  assertFalse(PROMPTS.explain_concept.buildUser(explainEn, { lessonContext: null }).includes('Lối nói tiếng Nhật'));
+  // Every task that writes target-language text sees it.
+  assertStringIncludes(PROMPTS.generate_practice.buildUser(practiceJa, { lessonContext: null }), 'Lối nói tiếng Nhật');
+  assertStringIncludes(PROMPTS.analyze_error.buildUser(analyzeJa, { lessonContext: null }), 'Lối nói tiếng Nhật');
+});
+
+Deno.test('ja outputs must not mix in Hangul, ko outputs must not mix in kana', () => {
+  const ex = PROMPTS.explain_concept.validate;
+  const goodJa = { ...goodExplainKo, examples: [{ target: '私は学生です。', vi: 'Tôi là học sinh.' }] };
+  const mixed = ex({ ...goodJa, examples: [{ target: '私は학생です。', vi: 'Tôi là học sinh.' }] }, explainJa);
+  assertFalse(mixed.ok);
+  if (!mixed.ok) assertStringIncludes(mixed.error, 'Hangul');
+  // Kanji-only examples are fine for a word-level target (e.g. 日本語).
+  assert(ex({ ...goodJa, examples: [{ target: '日本語', vi: 'tiếng Nhật' }] }, explainJa).ok);
+  const koMixed = ex({ ...goodExplainKo, examples: [{ target: '저는 がくせい이에요.', vi: 'Tôi là học sinh.' }] }, explainKo);
+  assertFalse(koMixed.ok);
+  if (!koMixed.ok) assertStringIncludes(koMixed.error, 'kana');
+});
+
+const writingJa = req({
+  task: 'review_writing',
+  language: 'ja',
+  level: 'n4',
+  prompt: '週末にしたことを書いてください。',
+  answer: '週末に友達と映画を見ました。とても楽しいでした。',
+  rubric: [
+    { key: 'content', label_vi: 'Nội dung', description_vi: 'Kể đủ việc đã làm.', max_points: 5 },
+    { key: 'language', label_vi: 'Ngôn ngữ', description_vi: 'Chia thể quá khứ đúng.', max_points: 5 },
+  ],
+});
+
+Deno.test('review_writing.validate (ja): the rewrite is Japanese sentences with kana', () => {
+  const v = PROMPTS.review_writing.validate;
+  const good = {
+    criteria: [
+      { key: 'content', points: 4, comment_vi: 'Kể được việc đã làm.' },
+      { key: 'language', points: 3, comment_vi: 'たのしい là tính từ đuôi い: quá khứ là たのしかったです.' },
+    ],
+    overall_vi: 'Bài ngắn nhưng rõ ý.',
+    corrected_version: '週末に友達と映画を見ました。とても楽しかったです。',
+  };
+  assertEquals(v(good, writingJa), { ok: true, data: good });
+  assertFalse(v({ ...good, corrected_version: 'shuumatsu ni tomodachi to eiga wo mimashita' }, writingJa).ok, 'romaji');
+  // Kanji only (a Chinese answer) is not a Japanese rewrite.
+  const chinese = v({ ...good, corrected_version: '周末和朋友看电影。' }, writingJa);
+  assertFalse(chinese.ok);
+  if (!chinese.ok) assertStringIncludes(chinese.error, 'kana');
+  const user = PROMPTS.review_writing.buildUser(writingJa, { lessonContext: null });
+  assertStringIncludes(user, 'JLPT N4');
+  assertStringIncludes(user, 'です/ます');
 });

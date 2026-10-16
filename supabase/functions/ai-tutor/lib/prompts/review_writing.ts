@@ -1,5 +1,5 @@
 import { type ReviewWritingOutput, reviewWritingOutputSchema } from '../../../_shared/ai-contract.ts';
-import { dataField, header, parseWith, type PromptModule, requireTargetScript, s, systemPrompt, wrongTask } from './shared.ts';
+import { dataField, header, parseWith, type PromptModule, requireTargetSentence, s, systemPrompt, wrongTask } from './shared.ts';
 
 // Spec 9 X6: practice feedback on an exam essay against the form's rubric. The points are a practice
 // estimate, never an official exam score; the corrected version is the learner's own essay, fixed.
@@ -58,7 +58,7 @@ export const reviewWriting: PromptModule = {
         if (!rubric) return { ok: false, error: `criteria: unknown key ${c.key}` };
         if (c.points > rubric.max_points) return { ok: false, error: `criteria.${c.key}: points over max_points` };
       }
-      const err = requireTargetScript(req.language, out.corrected_version, 'corrected_version');
+      const err = requireTargetSentence(req.language, out.corrected_version, 'corrected_version');
       if (err) return { ok: false, error: err };
     }
     return { ok: true, data: out };
