@@ -1140,6 +1140,9 @@ isOneToOne: false
 "admin_grant_role":
 { Args: { "p_role": string,"p_user_id": string }; Returns: Json
                            },
+"admin_item_open_reports":
+{ Args: { "p_id": string,"p_kind": string }; Returns: number
+                           },
 "admin_list_content":
 { Args: { "p_kind"?: string,"p_language"?: string,"p_limit"?: number,"p_offset"?: number,"p_search"?: string,"p_status"?: string }; Returns: Json
                            },
