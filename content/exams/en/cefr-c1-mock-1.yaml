@@ -1,0 +1,592 @@
+# Bài luyện mô phỏng trình độ CEFR C1 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi của
+# Cambridge hay bất kỳ tổ chức nào, không chép đề thật. CEFR không quy đổi điểm: chỉ đánh giá "đạt mức" theo phần.
+schema_version: 1
+demo: false
+language: en
+form:
+  key: en:exam:cefr-c1-mock-1
+  family: cefr
+  title_vi: CEFR C1 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng trình độ C1: 10 câu nghe, 12 câu đọc và 1 bài luận nghị luận. Nội dung do Linguo tự soạn, không
+    phải đề thi chính thức; kết quả cho biết bạn đạt mức C1 ở từng phần hay chưa, không quy đổi sang điểm của kỳ thi nào.
+  level_from: b2
+  level_to: c1
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 30
+    reading: 45
+    writing: 45
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng “đạt mức C1” (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập. CEFR chỉ mô tả trình độ, không
+      quy định thang điểm hay ngưỡng đạt cho bài thi, nên ngưỡng này không có căn cứ chính thức. Bài luận không được chấm
+      tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Listening) ==============================
+  - key: en:examq:cefr-c1-m1-l01
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc trao đổi giữa hai đồng nghiệp trong một nhóm nghiên cứu và chọn đáp án đúng.
+      stem: Why will the study be delayed?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: Have you heard back from the ethics committee about the survey yet?
+        Woman: Only this morning. They've approved it in principle, but they want us to rewrite the consent form so that participants can withdraw their data at any point, not just before the analysis begins.
+        Man: That's hardly a major change, is it?
+        Woman: You'd think so. But it means the whole data-storage plan has to be redesigned, because at the moment the responses are anonymised the moment they come in. If we can't link a response to a person, we can't delete it on request.
+        Man: So we're looking at another month, at least.
+        Woman: I'd say so. Still, I'd rather we got it right now than had the whole study thrown out later.
+      options:
+        - { id: a, text: "The committee rejected the survey questions.", lang: en }
+        - { id: b, text: "Several participants have withdrawn from the study.", lang: en }
+        - { id: c, text: "The way the data is stored must allow individual responses to be removed.", lang: en }
+        - { id: d, text: "The analysis has to be repeated from the beginning.", lang: en }
+    answer: c
+    explanation:
+      vi: "Hội đồng đạo đức muốn người tham gia rút dữ liệu bất cứ lúc nào, nên phải thiết kế lại cách lưu trữ (“the whole data-storage plan has to be redesigned”) để xóa được từng câu trả lời. Phương án a sai vì bảng hỏi đã được duyệt về nguyên tắc (“approved it in principle”); b là bẫy vì có từ withdraw, nhưng chưa ai rút lui cả — đó chỉ là quyền được ghi vào phiếu đồng ý."
+
+  - key: en:examq:cefr-c1-m1-l02
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_attitude
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại cuộc trao đổi và chọn câu mô tả đúng thái độ của người nói.
+      stem: How does the woman feel about the committee's request?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: Have you heard back from the ethics committee about the survey yet?
+        Woman: Only this morning. They've approved it in principle, but they want us to rewrite the consent form so that participants can withdraw their data at any point, not just before the analysis begins.
+        Man: That's hardly a major change, is it?
+        Woman: You'd think so. But it means the whole data-storage plan has to be redesigned, because at the moment the responses are anonymised the moment they come in. If we can't link a response to a person, we can't delete it on request.
+        Man: So we're looking at another month, at least.
+        Woman: I'd say so. Still, I'd rather we got it right now than had the whole study thrown out later.
+      options:
+        - { id: a, text: "She accepts it as worthwhile despite the inconvenience.", lang: en }
+        - { id: b, text: "She considers it a minor change that will take little time.", lang: en }
+        - { id: c, text: "She thinks it is unreasonable and intends to challenge it.", lang: en }
+        - { id: d, text: "She is relieved that the study can now begin.", lang: en }
+    answer: a
+    explanation:
+      vi: "Câu cuối “I'd rather we got it right now than had the whole study thrown out later” (thà làm đúng ngay bây giờ còn hơn để cả nghiên cứu bị bác sau này) cho thấy cô chấp nhận yêu cầu dù mất thêm thời gian. Phương án b là ý của người nam (“hardly a major change”), còn cô đáp “You'd think so” — một cách lịch sự để nói “tưởng vậy thôi” — nghĩa là không đồng ý."
+
+  - key: en:examq:cefr-c1-m1-l03
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn phỏng vấn trên đài phát thanh và chọn đáp án đúng.
+      stem: According to Dr Okafor, why do teenagers find early mornings difficult?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Presenter: Dr Okafor, people often say teenagers are simply lazy in the mornings. Is there any truth in that?
+        Dr Okafor: Very little, I'm afraid. During adolescence the body clock shifts, so the hormone that makes us feel sleepy is released roughly two hours later than it is in adults. Asking a fifteen-year-old to be alert at eight a.m. is a bit like asking an adult to concentrate at six.
+        Presenter: So should schools start later?
+        Dr Okafor: The evidence points that way, although I'd be wary of presenting it as a cure-all. Schools that have moved their start time back by an hour do report better attendance, but the gains in exam results are modest, and they tend to disappear if students simply use the extra hour to stay up later on their phones.
+      options:
+        - { id: a, text: "They stay up too late using their phones.", lang: en }
+        - { id: b, text: "They produce less of the hormone that causes sleepiness.", lang: en }
+        - { id: c, text: "They are less motivated by school than younger children.", lang: en }
+        - { id: d, text: "Their internal clock runs later than an adult's.", lang: en }
+    answer: d
+    explanation:
+      vi: "Bà Okafor giải thích đồng hồ sinh học của thiếu niên bị lùi lại, hoóc-môn gây buồn ngủ tiết ra muộn hơn người lớn khoảng hai tiếng (“released roughly two hours later”). Phương án b là bẫy: hoóc-môn tiết ra muộn hơn chứ không phải ít hơn; a là bẫy vì điện thoại có được nhắc, nhưng chỉ ở phần nói về giới hạn của việc vào học muộn."
+
+  - key: en:examq:cefr-c1-m1-l04
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_attitude
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn phỏng vấn và chọn câu mô tả đúng quan điểm của người được phỏng vấn.
+      stem: What is Dr Okafor's view of later school start times?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Presenter: Dr Okafor, people often say teenagers are simply lazy in the mornings. Is there any truth in that?
+        Dr Okafor: Very little, I'm afraid. During adolescence the body clock shifts, so the hormone that makes us feel sleepy is released roughly two hours later than it is in adults. Asking a fifteen-year-old to be alert at eight a.m. is a bit like asking an adult to concentrate at six.
+        Presenter: So should schools start later?
+        Dr Okafor: The evidence points that way, although I'd be wary of presenting it as a cure-all. Schools that have moved their start time back by an hour do report better attendance, but the gains in exam results are modest, and they tend to disappear if students simply use the extra hour to stay up later on their phones.
+      options:
+        - { id: a, text: "They are the most effective way to raise exam results.", lang: en }
+        - { id: b, text: "They are helpful, but their benefits should not be exaggerated.", lang: en }
+        - { id: c, text: "They have no measurable effect on students.", lang: en }
+        - { id: d, text: "They should not be introduced until more research is done.", lang: en }
+    answer: b
+    explanation:
+      vi: "“The evidence points that way” (bằng chứng ủng hộ) nhưng “I'd be wary of presenting it as a cure-all” (tôi dè dặt khi coi đó là thuốc chữa bách bệnh): bà ủng hộ có chừng mực. Phương án c sai vì tỉ lệ đi học có cải thiện và điểm thi tăng “modest” (khiêm tốn) chứ không phải bằng không; a ngược hẳn với chữ modest."
+
+  - key: en:examq:cefr-c1-m1-l05
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn trích bài giảng và chọn ý chính.
+      stem: What is the main point of this part of the lecture?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Lecturer: The idea that the language we speak shapes the way we think is usually associated with Benjamin Lee Whorf. In its strong form – that language determines thought, so that speakers simply cannot conceive of anything their language has no word for – the hypothesis has been largely abandoned. After all, we're perfectly capable of grasping a new concept the first time someone explains it to us. What has survived is a far more modest claim: that language can nudge our attention and memory in particular directions. Speakers of languages that describe location using compass directions rather than "left" and "right", for instance, turn out to be remarkably good at keeping track of which way they are facing, even indoors. The question researchers now ask is not whether language influences thought, but how much, and under what conditions.
+      options:
+        - { id: a, text: "Whorf's ideas have been completely disproved.", lang: en }
+        - { id: b, text: "Language determines which concepts people are able to understand.", lang: en }
+        - { id: c, text: "A weaker version of the hypothesis is still taken seriously.", lang: en }
+        - { id: d, text: "Languages without words for left and right are harder to learn.", lang: en }
+    answer: c
+    explanation:
+      vi: "Giảng viên nói dạng mạnh của giả thuyết đã gần như bị bỏ (“largely abandoned”), nhưng một nhận định khiêm tốn hơn vẫn tồn tại (“What has survived is a far more modest claim”), và câu hỏi nay là ngôn ngữ ảnh hưởng “bao nhiêu”. Phương án a quá tuyệt đối: “largely” không phải “completely”, và một phần ý tưởng vẫn đứng vững; b chính là dạng mạnh đã bị bác bỏ."
+
+  - key: en:examq:cefr-c1-m1-l06
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn trích bài giảng và chọn đáp án đúng.
+      stem: What does the lecturer say about speakers of languages that use compass directions?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Lecturer: The idea that the language we speak shapes the way we think is usually associated with Benjamin Lee Whorf. In its strong form – that language determines thought, so that speakers simply cannot conceive of anything their language has no word for – the hypothesis has been largely abandoned. After all, we're perfectly capable of grasping a new concept the first time someone explains it to us. What has survived is a far more modest claim: that language can nudge our attention and memory in particular directions. Speakers of languages that describe location using compass directions rather than "left" and "right", for instance, turn out to be remarkably good at keeping track of which way they are facing, even indoors. The question researchers now ask is not whether language influences thought, but how much, and under what conditions.
+      options:
+        - { id: a, text: "They are unusually aware of which way they are facing.", lang: en }
+        - { id: b, text: "They cannot understand the ideas of left and right.", lang: en }
+        - { id: c, text: "They easily lose their sense of direction indoors.", lang: en }
+        - { id: d, text: "They have better memories than other speakers in general.", lang: en }
+    answer: a
+    explanation:
+      vi: "“Remarkably good at keeping track of which way they are facing, even indoors” nghĩa là họ luôn biết rõ mình đang quay về hướng nào, kể cả trong nhà. Phương án c đảo ngược ý (“even indoors” là vẫn giỏi chứ không phải bị lạc); b lặp lại dạng mạnh đã bị bác bỏ; d khái quát quá mức vì bài chỉ nói về trí nhớ định hướng."
+
+  - key: en:examq:cefr-c1-m1-l07
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_attitude
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn trích podcast và chọn đáp án đúng.
+      stem: What is the woman's main concern about remote work?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: What strikes me about the remote-work debate is how quickly it became tribal. You're either for the office or against it.
+        Man: Partly because the early studies were so contradictory. One found productivity went up, another that it collapsed.
+        Woman: But they were often measuring different things. If you count emails sent or tasks closed, remote workers look fantastic. What's much harder to measure is the stuff that happens by accident – the junior colleague who overhears how someone senior handles a difficult client.
+        Man: Mentoring, essentially.
+        Woman: Exactly. And that cost doesn't show up for a couple of years, by which point nobody connects it to the decision to go remote.
+        Man: So you'd haul everyone back into the office?
+        Woman: Not at all. I'd just like companies to be honest that they're making a trade-off, rather than pretending there's such a thing as a free lunch.
+      options:
+        - { id: a, text: "Remote workers send too many emails.", lang: en }
+        - { id: b, text: "Remote work always reduces productivity.", lang: en }
+        - { id: c, text: "Senior staff refuse to mentor colleagues online.", lang: en }
+        - { id: d, text: "Its effect on informal learning may go unnoticed.", lang: en }
+    answer: d
+    explanation:
+      vi: "Người nữ lo về những điều học được “tình cờ” — nhân viên trẻ nghe lỏm cách người có kinh nghiệm xử lý khách khó — tức là kèm cặp không chính thức, và cái giá này vài năm sau mới lộ ra nên không ai liên hệ lại (“nobody connects it to the decision”). Phương án a là bẫy vì số email chỉ là ví dụ về thứ dễ đo; b sai vì cô nói các nghiên cứu cho kết quả trái ngược nhau."
+
+  - key: en:examq:cefr-c1-m1-l08
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn trích podcast và chọn câu tóm tắt đúng nhất quan điểm của người nữ.
+      stem: Which statement best summarises the woman's position?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: What strikes me about the remote-work debate is how quickly it became tribal. You're either for the office or against it.
+        Man: Partly because the early studies were so contradictory. One found productivity went up, another that it collapsed.
+        Woman: But they were often measuring different things. If you count emails sent or tasks closed, remote workers look fantastic. What's much harder to measure is the stuff that happens by accident – the junior colleague who overhears how someone senior handles a difficult client.
+        Man: Mentoring, essentially.
+        Woman: Exactly. And that cost doesn't show up for a couple of years, by which point nobody connects it to the decision to go remote.
+        Man: So you'd haul everyone back into the office?
+        Woman: Not at all. I'd just like companies to be honest that they're making a trade-off, rather than pretending there's such a thing as a free lunch.
+      options:
+        - { id: a, text: "Companies should require all staff to return to the office.", lang: en }
+        - { id: b, text: "Choosing remote work involves costs that companies should acknowledge.", lang: en }
+        - { id: c, text: "Remote work has no real disadvantages for experienced staff.", lang: en }
+        - { id: d, text: "Early research on remote work was deliberately misleading.", lang: en }
+    answer: b
+    explanation:
+      vi: "Câu chốt “be honest that they're making a trade-off” (thừa nhận là đang đánh đổi) và thành ngữ “there's no such thing as a free lunch” (không có gì miễn phí) cho thấy cô muốn doanh nghiệp nói rõ cái giá phải trả. Phương án a bị cô bác thẳng (“Not at all”); d sai vì cô chỉ nói các nghiên cứu đo những thứ khác nhau, không hề nói họ cố tình đánh lừa."
+
+  - key: en:examq:cefr-c1-m1-l09
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo tại một hội nghị và chọn đáp án đúng.
+      stem: What will happen at nine thirty?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Good morning, delegates. A couple of changes to today's programme. Professor Lindqvist's keynote, originally scheduled for nine thirty in the main hall, has been pushed back to eleven, as her flight was diverted overnight. In its place, the panel discussion on research funding will go ahead at nine thirty, but in Room B rather than the main hall, which is being set up for this afternoon's session. Anyone who had registered for the eleven o'clock workshops should check the noticeboard, as two of them will now run at the same time as the keynote rather than being cancelled.
+      options:
+        - { id: a, text: "Professor Lindqvist will give her talk in the main hall.", lang: en }
+        - { id: b, text: "The funding panel will take place in the main hall.", lang: en }
+        - { id: c, text: "The funding panel will take place in Room B.", lang: en }
+        - { id: d, text: "Two of the workshops will begin.", lang: en }
+    answer: c
+    explanation:
+      vi: "Bài nói chính bị lùi sang 11 giờ, và vào lúc 9:30 buổi thảo luận về tài trợ nghiên cứu sẽ diễn ra “in Room B rather than the main hall”. Phương án b là bẫy vì nghe thấy “main hall”, nhưng hội trường chính đang được chuẩn bị cho buổi chiều; a là lịch cũ (“originally scheduled”)."
+
+  - key: en:examq:cefr-c1-m1-l10
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại thông báo và chọn đáp án đúng.
+      stem: What does the announcement say about the eleven o'clock workshops?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Good morning, delegates. A couple of changes to today's programme. Professor Lindqvist's keynote, originally scheduled for nine thirty in the main hall, has been pushed back to eleven, as her flight was diverted overnight. In its place, the panel discussion on research funding will go ahead at nine thirty, but in Room B rather than the main hall, which is being set up for this afternoon's session. Anyone who had registered for the eleven o'clock workshops should check the noticeboard, as two of them will now run at the same time as the keynote rather than being cancelled.
+      options:
+        - { id: a, text: "Two of them will clash with the keynote.", lang: en }
+        - { id: b, text: "All of them have been cancelled.", lang: en }
+        - { id: c, text: "They have been moved to the afternoon.", lang: en }
+        - { id: d, text: "They will now be held in Room B.", lang: en }
+    answer: a
+    explanation:
+      vi: "“Two of them will now run at the same time as the keynote rather than being cancelled” nghĩa là hai buổi workshop vẫn diễn ra và trùng giờ (clash) với bài nói chính lúc 11 giờ. Phương án b là bẫy vì nghe thấy “cancelled”, nhưng cấu trúc “rather than being cancelled” lại có nghĩa là KHÔNG bị hủy."
+
+  # ============================== ĐỌC (Reading) ==============================
+  - key: en:examq:cefr-c1-m1-r01
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo và chọn câu có nghĩa giống nhất.
+      stem: What does the notice mean?
+      stem_lang: en
+      passage: Applications received after the closing date will be considered only in exceptional circumstances, which must be documented in writing.
+      options:
+        - { id: a, text: "Late applications are not normally accepted.", lang: en }
+        - { id: b, text: "Any late application will be accepted if it is sent in writing.", lang: en }
+        - { id: c, text: "The closing date may be extended for all applicants.", lang: en }
+        - { id: d, text: "All applicants must explain in writing why they are applying.", lang: en }
+    answer: a
+    explanation:
+      vi: "“Only in exceptional circumstances” (chỉ trong trường hợp đặc biệt) nghĩa là thông thường hồ sơ nộp muộn không được xét. Phương án b là bẫy vì có “in writing”, nhưng giấy tờ chỉ để chứng minh hoàn cảnh đặc biệt, không làm mọi hồ sơ muộn được chấp nhận; d nhầm đối tượng của yêu cầu viết."
+
+  - key: en:examq:cefr-c1-m1-r02
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo và chọn câu có nghĩa giống nhất.
+      stem: What does the notice say?
+      stem_lang: en
+      passage: Residents are reminded that the communal laundry is for the use of tenants only, and that machines left running unattended after 10 p.m. may be switched off without notice.
+      options:
+        - { id: a, text: "The laundry room is locked at 10 p.m.", lang: en }
+        - { id: b, text: "Visitors may use the machines if a tenant is with them.", lang: en }
+        - { id: c, text: "Tenants will be warned before a machine is switched off.", lang: en }
+        - { id: d, text: "A machine running late at night with nobody nearby may be stopped.", lang: en }
+    answer: d
+    explanation:
+      vi: "“Unattended” là không có người trông, “may be switched off” là có thể bị tắt: máy chạy sau 10 giờ tối mà không ai ở bên cạnh có thể bị dừng. Phương án c ngược với “without notice” (không báo trước); a sai vì thông báo không nói phòng bị khóa; b sai vì chỉ người thuê nhà được dùng (“tenants only”)."
+
+  - key: en:examq:cefr-c1-m1-r03
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Đọc đoạn trích từ một email trang trọng và chọn câu diễn đạt đúng ý người viết.
+      stem: What is the writer telling the reader?
+      stem_lang: en
+      passage: While we appreciate the considerable effort that went into your proposal, we are not in a position to fund it in its current form.
+      options:
+        - { id: a, text: "The proposal has been accepted with minor changes.", lang: en }
+        - { id: b, text: "The proposal will not receive money as it stands.", lang: en }
+        - { id: c, text: "The organisation has not yet read the proposal.", lang: en }
+        - { id: d, text: "The organisation has no money left to give this year.", lang: en }
+    answer: b
+    explanation:
+      vi: "Đây là cách từ chối lịch sự: “not in a position to fund it in its current form” = không thể tài trợ cho đề xuất ở dạng hiện tại (“as it stands”). Câu mở đầu “While we appreciate…” chỉ là lời ghi nhận để làm mềm, nên a sai; d là suy diễn quá xa vì “not in a position to” không có nghĩa là hết tiền."
+
+  - key: en:examq:cefr-c1-m1-r04
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: Not until the final results were published ___ the true scale of the problem become clear.
+      options:
+        - { id: a, text: "does", lang: en }
+        - { id: b, text: "was", lang: en }
+        - { id: c, text: "did", lang: en }
+        - { id: d, text: "has", lang: en }
+    answer: c
+    explanation:
+      vi: "Khi câu mở đầu bằng “Not until…”, mệnh đề chính phải đảo trợ động từ lên trước chủ ngữ. Động từ chính “become” ở dạng nguyên mẫu và sự việc xảy ra trong quá khứ (khớp với “were published”), nên trợ động từ là “did”: “did the true scale… become clear”. “Does” sai thì; “was/has” không đi với động từ nguyên mẫu (phải là “was becoming” hay “has become”)."
+
+  - key: en:examq:cefr-c1-m1-r05
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: There is a growing ___ of evidence that regular exercise helps to protect the brain against memory loss.
+      options:
+        - { id: a, text: "mass", lang: en }
+        - { id: b, text: "body", lang: en }
+        - { id: c, text: "pile", lang: en }
+        - { id: d, text: "heap", lang: en }
+    answer: b
+    explanation:
+      vi: "“A (growing) body of evidence” là cụm từ cố định (collocation) trong văn học thuật, nghĩa là một lượng bằng chứng (ngày càng nhiều). “Mass/pile/heap” đều có nghĩa “đống, khối” nhưng không đi với evidence theo cách này; học từ theo cụm thay vì dịch từng chữ sẽ tránh được lỗi này."
+
+  - key: en:examq:cefr-c1-m1-r06
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: ___ its considerable cost, the project was approved by a large majority of the council.
+      options:
+        - { id: a, text: "Although", lang: en }
+        - { id: b, text: "However", lang: en }
+        - { id: c, text: "Albeit", lang: en }
+        - { id: d, text: "Despite", lang: en }
+    answer: d
+    explanation:
+      vi: "Sau chỗ trống là cụm danh từ (“its considerable cost”), nên cần giới từ “Despite” (mặc dù). “Although” phải đi với một mệnh đề có chủ ngữ và động từ (Although it was expensive…); “However” là trạng từ nối câu; “albeit” chỉ đứng sau mệnh đề chính và thường đi với tính từ (a success, albeit a modest one)."
+
+  - key: en:examq:cefr-c1-m1-r07
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the words that best fit the gap.
+      stem_lang: en
+      passage: Had it not been for her timely intervention, the negotiations ___ collapsed.
+      options:
+        - { id: a, text: "will have", lang: en }
+        - { id: b, text: "would", lang: en }
+        - { id: c, text: "had", lang: en }
+        - { id: d, text: "would have", lang: en }
+    answer: d
+    explanation:
+      vi: "“Had it not been for…” là câu điều kiện loại 3 đảo ngữ (= If it had not been for…), nói về quá khứ không có thật, nên mệnh đề chính dùng “would have + phân từ II”: “would have collapsed” (lẽ ra đã đổ vỡ). “Would collapsed” sai dạng động từ; “will have” là tương lai hoàn thành, không dùng trong câu điều kiện này."
+
+  - key: en:examq:cefr-c1-m1-r08
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gist
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài viết và chọn đáp án đúng cho câu hỏi.
+      stem: What is the writer's main purpose in the text?
+      stem_lang: en
+      passage: |-
+        Citizen science – the involvement of non-professionals in scientific research – is often celebrated as a straightforward good. Volunteers count birds, classify galaxies from telescope images or record the first flowering of plants each spring, and in doing so they generate data on a scale no university department could afford. Yet professional scientists have not always welcomed these contributions, and their reservations deserve to be taken seriously rather than dismissed as snobbery.
+        The most frequently voiced concern is data quality. An untrained observer may confuse two similar species or record a sighting in the wrong place. In practice, however, this problem has proved more manageable than critics predicted. Well-designed projects ask several volunteers to classify each item independently and treat only their consensus as reliable; studies comparing such pooled judgements with expert assessments have frequently found the two to be almost indistinguishable.
+        A subtler difficulty concerns where, rather than how well, volunteers observe. People tend to record wildlife close to their homes, along popular footpaths and at weekends. The resulting maps can show a species as abundant near cities and scarce in remote uplands, not because of any genuine difference in population, but because few observers ever go there. Correcting for this kind of bias requires statistical techniques that are considerably more demanding than simply checking individual records.
+        None of this suggests that citizen science should be scaled back. It does suggest that its value depends less on the enthusiasm of its volunteers than on the care with which projects are designed and their data interpreted.
+      options:
+        - { id: a, text: "to argue that data collected by volunteers is unreliable", lang: en }
+        - { id: b, text: "to defend professional scientists against accusations of snobbery", lang: en }
+        - { id: c, text: "to show that the usefulness of citizen science depends on careful design and analysis", lang: en }
+        - { id: d, text: "to persuade readers to volunteer for scientific projects", lang: en }
+    answer: c
+    explanation:
+      vi: "Đoạn kết nêu rõ luận điểm: giá trị của khoa học công dân phụ thuộc vào việc thiết kế dự án và diễn giải dữ liệu cẩn thận (“depends less on the enthusiasm… than on the care…”). Phương án a sai vì bài nói vấn đề chất lượng “more manageable than critics predicted”; b chỉ là một ý nhỏ ở đoạn đầu, không phải mục đích chính."
+
+  - key: en:examq:cefr-c1-m1-r09
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài viết và chọn đáp án đúng cho câu hỏi.
+      stem: According to the text, how do well-designed projects deal with mistakes made by individual volunteers?
+      stem_lang: en
+      passage: |-
+        Citizen science – the involvement of non-professionals in scientific research – is often celebrated as a straightforward good. Volunteers count birds, classify galaxies from telescope images or record the first flowering of plants each spring, and in doing so they generate data on a scale no university department could afford. Yet professional scientists have not always welcomed these contributions, and their reservations deserve to be taken seriously rather than dismissed as snobbery.
+        The most frequently voiced concern is data quality. An untrained observer may confuse two similar species or record a sighting in the wrong place. In practice, however, this problem has proved more manageable than critics predicted. Well-designed projects ask several volunteers to classify each item independently and treat only their consensus as reliable; studies comparing such pooled judgements with expert assessments have frequently found the two to be almost indistinguishable.
+        A subtler difficulty concerns where, rather than how well, volunteers observe. People tend to record wildlife close to their homes, along popular footpaths and at weekends. The resulting maps can show a species as abundant near cities and scarce in remote uplands, not because of any genuine difference in population, but because few observers ever go there. Correcting for this kind of bias requires statistical techniques that are considerably more demanding than simply checking individual records.
+        None of this suggests that citizen science should be scaled back. It does suggest that its value depends less on the enthusiasm of its volunteers than on the care with which projects are designed and their data interpreted.
+      options:
+        - { id: a, text: "They train every volunteer before the project starts.", lang: en }
+        - { id: b, text: "They rely only on judgements that several volunteers agree on.", lang: en }
+        - { id: c, text: "They ask experts to check every single record.", lang: en }
+        - { id: d, text: "They remove volunteers who make frequent errors.", lang: en }
+    answer: b
+    explanation:
+      vi: "Bài viết nói các dự án tốt cho nhiều tình nguyện viên phân loại độc lập và chỉ tin vào kết quả đồng thuận (“treat only their consensus as reliable”). Phương án c là bẫy vì có nhắc chuyên gia, nhưng đánh giá của chuyên gia chỉ được dùng trong các nghiên cứu so sánh, không phải để kiểm tra từng bản ghi."
+
+  - key: en:examq:cefr-c1-m1-r10
+    section: reading
+    kind: mcq
+    question_type: cefr_read_inference
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài viết và chọn điều có thể suy ra từ nội dung.
+      stem: What can be inferred about maps based on volunteers' records?
+      stem_lang: en
+      passage: |-
+        Citizen science – the involvement of non-professionals in scientific research – is often celebrated as a straightforward good. Volunteers count birds, classify galaxies from telescope images or record the first flowering of plants each spring, and in doing so they generate data on a scale no university department could afford. Yet professional scientists have not always welcomed these contributions, and their reservations deserve to be taken seriously rather than dismissed as snobbery.
+        The most frequently voiced concern is data quality. An untrained observer may confuse two similar species or record a sighting in the wrong place. In practice, however, this problem has proved more manageable than critics predicted. Well-designed projects ask several volunteers to classify each item independently and treat only their consensus as reliable; studies comparing such pooled judgements with expert assessments have frequently found the two to be almost indistinguishable.
+        A subtler difficulty concerns where, rather than how well, volunteers observe. People tend to record wildlife close to their homes, along popular footpaths and at weekends. The resulting maps can show a species as abundant near cities and scarce in remote uplands, not because of any genuine difference in population, but because few observers ever go there. Correcting for this kind of bias requires statistical techniques that are considerably more demanding than simply checking individual records.
+        None of this suggests that citizen science should be scaled back. It does suggest that its value depends less on the enthusiasm of its volunteers than on the care with which projects are designed and their data interpreted.
+      options:
+        - { id: a, text: "They show that many species are moving towards cities.", lang: en }
+        - { id: b, text: "They are more accurate for remote areas than for cities.", lang: en }
+        - { id: c, text: "Their errors cannot be corrected by any method.", lang: en }
+        - { id: d, text: "They may reflect where people go as much as where species live.", lang: en }
+    answer: d
+    explanation:
+      vi: "Bản đồ cho thấy loài vật “nhiều” gần thành phố và “ít” ở vùng xa “not because of any genuine difference in population, but because few observers ever go there”, tức là bản đồ phản ánh nơi con người hay đến chứ không chỉ nơi loài sinh sống. Phương án a nhầm sai lệch dữ liệu với sự di cư thật; c sai vì bài nói có thể hiệu chỉnh, chỉ là cần kỹ thuật thống kê phức tạp hơn."
+
+  - key: en:examq:cefr-c1-m1-r11
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài bình luận về giáo dục và chọn đáp án đúng cho câu hỏi.
+      stem: According to the text, how do students taught through "productive failure" compare with those taught conventionally?
+      stem_lang: en
+      passage: |-
+        For most of the last century, the standard model of teaching mathematics was simple: explain the method, demonstrate it with an example, then let students practise. A growing number of education researchers now argue that this sequence may be back to front. Under an approach known as "productive failure", students are first given a challenging problem they have not been taught how to solve. Most of them fail to reach the correct answer, often spectacularly. Only then does the teacher present the standard method.
+        The counter-intuitive claim is that the initial struggle is not wasted time. By attempting the problem on their own, students draw on what they already know, discover the limits of that knowledge and come to understand what a good solution would need to achieve. When the formal method is finally introduced, it answers a question they have already been asking. Several controlled studies have found that students taught in this way perform about as well on routine exercises as those taught conventionally, and noticeably better when asked to apply the idea to unfamiliar problems.
+        Enthusiasts, however, sometimes overlook how much depends on the design of the opening task. A problem that is too easy leads to premature success and little reflection; one that is too hard leaves students with nothing to build on and simply confirms their belief that they are "bad at maths". The failure, in other words, has to be the right kind of failure. That is a demanding standard, and one that cannot be met by simply withholding explanations and hoping for the best.
+      options:
+        - { id: a, text: "They perform better on every type of task.", lang: en }
+        - { id: b, text: "They perform worse on routine tasks but better on unfamiliar ones.", lang: en }
+        - { id: c, text: "They perform similarly on routine tasks and better on unfamiliar ones.", lang: en }
+        - { id: d, text: "They usually manage to solve the opening problem.", lang: en }
+    answer: c
+    explanation:
+      vi: "“About as well on routine exercises… and noticeably better… to unfamiliar problems”: ngang bằng ở bài tập quen thuộc, tốt hơn rõ rệt ở bài lạ. Phương án a khái quát quá mức; b sai ở vế đầu (“about as well” là ngang bằng chứ không kém hơn); d ngược với “Most of them fail to reach the correct answer”."
+
+  - key: en:examq:cefr-c1-m1-r12
+    section: reading
+    kind: mcq
+    question_type: cefr_read_inference
+    level_code: c1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài bình luận và chọn câu thể hiện đúng quan điểm của người viết.
+      stem: What does the writer suggest about the "productive failure" approach?
+      stem_lang: en
+      passage: |-
+        For most of the last century, the standard model of teaching mathematics was simple: explain the method, demonstrate it with an example, then let students practise. A growing number of education researchers now argue that this sequence may be back to front. Under an approach known as "productive failure", students are first given a challenging problem they have not been taught how to solve. Most of them fail to reach the correct answer, often spectacularly. Only then does the teacher present the standard method.
+        The counter-intuitive claim is that the initial struggle is not wasted time. By attempting the problem on their own, students draw on what they already know, discover the limits of that knowledge and come to understand what a good solution would need to achieve. When the formal method is finally introduced, it answers a question they have already been asking. Several controlled studies have found that students taught in this way perform about as well on routine exercises as those taught conventionally, and noticeably better when asked to apply the idea to unfamiliar problems.
+        Enthusiasts, however, sometimes overlook how much depends on the design of the opening task. A problem that is too easy leads to premature success and little reflection; one that is too hard leaves students with nothing to build on and simply confirms their belief that they are "bad at maths". The failure, in other words, has to be the right kind of failure. That is a demanding standard, and one that cannot be met by simply withholding explanations and hoping for the best.
+      options:
+        - { id: a, text: "Its success depends heavily on how the first problem is chosen.", lang: en }
+        - { id: b, text: "It should replace conventional teaching entirely.", lang: en }
+        - { id: c, text: "It is unsuitable for students who believe they are bad at maths.", lang: en }
+        - { id: d, text: "It works mainly because teachers explain less overall.", lang: en }
+    answer: a
+    explanation:
+      vi: "Đoạn cuối nhấn mạnh “how much depends on the design of the opening task”: bài toán mở đầu phải khó vừa phải, “the right kind of failure”. Phương án d bị câu cuối bác bỏ (không thể chỉ “withholding explanations and hoping for the best”); c là bẫy vì có cụm “bad at maths”, nhưng đó là hậu quả của bài toán quá khó chứ không phải nhóm học sinh bị loại trừ."
+
+  # ============================== VIẾT (Writing) ==============================
+  - key: en:examq:cefr-c1-m1-w01
+    section: writing
+    kind: essay
+    question_type: cefr_write_essay
+    level_code: c1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một bài luận nghị luận bằng tiếng Anh (khoảng 220–260 từ). Bàn về hai trong ba giải pháp nêu trong đề, nói rõ
+        giải pháp nào hiệu quả hơn và đưa ra lý lẽ; có mở bài, các đoạn thân bài và kết luận.
+      stem: |-
+        Your class has discussed how cities can reduce traffic congestion. You made the notes below.
+        Possible measures:
+        • charging drivers to enter the city centre
+        • improving public transport
+        • encouraging people to work from home
+        Some opinions expressed in the discussion:
+        "A charge is unfair on people with low incomes."
+        "Better buses won't help if they're stuck in the same traffic."
+        "Not every job can be done from home."
+        Write an essay for your teacher discussing two of the measures. Explain which measure you think would be more effective, giving reasons to support your opinion. You may use the opinions above, but express them in your own words.
+        Write 220–260 words.
+      stem_lang: en
+      min_chars: 1100
+      max_chars: 2400
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Bàn đúng hai giải pháp, nêu rõ giải pháp nào hiệu quả hơn và lập luận có lý do, ví dụ; xử lý được ít nhất một ý phản biện thay vì chỉ liệt kê ưu điểm.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục và mạch lạc
+        description_vi: Mở bài nêu vấn đề, mỗi đoạn thân bài một ý chính, kết luận khẳng định quan điểm; liên kết bằng However, By contrast, On balance, provided that… một cách tự nhiên.
+        max_points: 2
+      - key: range
+        label_vi: Vốn từ và cấu trúc
+        description_vi: Dùng từ vựng học thuật và collocation chính xác (tackle a problem, open to the objection, on balance), cấu trúc đa dạng như mệnh đề quan hệ, đảo ngữ, câu điều kiện; giọng văn trang trọng.
+        max_points: 2
+      - key: accuracy
+        label_vi: Độ chính xác
+        description_vi: Ngữ pháp, chính tả và dấu câu chính xác ở mức C1; lỗi nhỏ không làm cản trở việc hiểu.
+        max_points: 2
+    sample_answer: |-
+      Few problems frustrate city dwellers as consistently as traffic congestion, and two of the measures most often proposed are congestion charging and investment in public transport. Although both have merit, I would argue that the latter offers the more lasting benefit, provided it is designed well.
+
+      The case for charging drivers to enter the city centre is straightforward: once road space has a price, people make fewer unnecessary journeys. Cities that have introduced such schemes have seen traffic fall noticeably almost overnight. However, the measure is open to the objection that it penalises those who can least afford it, particularly shift workers with no realistic alternative to driving. Unless the revenue is visibly reinvested, a charge is likely to be seen as a tax rather than a solution.
+
+      Improving public transport, by contrast, tackles the reason many people drive in the first place. It is true that new buses achieve little if they sit in the same queues as cars. Yet this is an argument for dedicated bus lanes and more frequent services, not against public transport itself. When a reliable alternative exists, people leave their cars at home voluntarily, which makes the change far more sustainable than one imposed through cost alone.
+
+      On balance, therefore, I believe investment in public transport would prove the more effective approach. Ideally, the two measures would work together, with income from a modest charge funding better services; but if a city can afford only one, it should begin by giving people a genuine choice.
+    explanation:
+      vi: "Bài luận C1 được chấm chủ yếu ở khả năng lập luận: chọn đúng hai giải pháp, cân nhắc cả mặt mạnh lẫn ý phản biện rồi đưa ra kết luận rõ ràng. Lỗi hay gặp là bàn cả ba giải pháp (lạc đề), chép nguyên văn các ý kiến trong đề thay vì diễn đạt lại, hoặc dùng từ nối máy móc (Firstly, Secondly, In conclusion) mà các đoạn không thật sự liên kết với nhau."
