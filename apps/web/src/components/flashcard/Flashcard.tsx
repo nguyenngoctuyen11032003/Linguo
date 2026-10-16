@@ -172,12 +172,24 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
         </div>
       )}
       {showAudio && !card.item.audio_path && content.text && (
-        <div className="mt-3 flex flex-col items-center gap-2">
-          {/* Keyed by face so flipping cancels the speech in progress. */}
-          <MachineSpeechButton key={`${card.card_id}:w:${flipped}`} text={content.text} lang={content.lang} label="Nghe phát âm" compact />
-          {flipped && content.example && (
-            <MachineSpeechButton key={`${card.card_id}:e`} text={content.example.target} lang={content.lang} label="Nghe câu ví dụ" compact note={false} />
-          )}
+        <div className="mt-3 flex flex-col items-center gap-1">
+          {/* One row: two stacked buttons both reading "Nghe" looked like a duplicate, so with an example each says what it plays. */}
+          <div className="flex flex-wrap justify-center gap-2">
+            {/* Keyed by face so flipping cancels the speech in progress. */}
+            <MachineSpeechButton
+              key={`${card.card_id}:w:${flipped}`}
+              text={content.text}
+              lang={content.lang}
+              label="Nghe phát âm"
+              compact={!(flipped && content.example)}
+              note={false}
+            />
+            {flipped && content.example && (
+              <MachineSpeechButton key={`${card.card_id}:e`} text={content.example.target} lang={content.lang} label="Nghe câu ví dụ" note={false} />
+            )}
+          </div>
+          {/* Hidden when the browser has no voice and both buttons render nothing. */}
+          <p className="text-sm text-muted [div:empty+&]:hidden">Giọng đọc tự động — chỉ để luyện nghe</p>
         </div>
       )}
       <p role="status" aria-live="polite" className="sr-only">

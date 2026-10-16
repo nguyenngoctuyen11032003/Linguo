@@ -301,21 +301,24 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
         </aside>
       </div>
 
-      <footer className="pointer-events-none fixed inset-x-0 bottom-0 z-30 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))]">
-        <div className="glass pointer-events-auto mx-auto flex w-full max-w-3xl items-center gap-2 rounded-[1.75rem] p-2 shadow-[var(--shadow-dock)]">
-          <Button variant="ghost" aria-label="Câu trước" disabled={!prev || submitting} onClick={() => prev && go(prev.question_id)} className="px-3">
-            <ChevronLeft aria-hidden className="size-5" />
-            <span className="hidden sm:inline">Câu trước</span>
-          </Button>
-          <Button variant="ghost" aria-label="Câu tiếp" disabled={!next || submitting} onClick={() => next && go(next.question_id)} className="px-3">
-            <span className="hidden sm:inline">Câu tiếp</span>
-            <ChevronRight aria-hidden className="size-5" />
-          </Button>
-          <div className="min-w-0 flex-1">
-            <Button variant="accent" block loading={submitting} disabled={submitting} onClick={() => setSubmitOpen(true)}>
-              {!submitting && <Send aria-hidden className="size-5" />}
-              {submitting ? 'Đang nộp bài…' : 'Nộp bài'}
+      <footer className="pointer-events-none fixed inset-x-0 bottom-0 z-30 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] md:px-0">
+        {/* From md the dock lines up with the question column (the navigator card takes the right 16rem + 2rem gap). */}
+        <div className="mx-auto w-full max-w-5xl md:px-safe">
+          <div className="glass pointer-events-auto mx-auto flex w-full max-w-3xl items-center gap-2 rounded-[1.75rem] p-2 shadow-[var(--shadow-dock)] md:mr-[18rem] md:ml-0 md:w-auto md:max-w-none">
+            <Button variant="ghost" aria-label="Câu trước" disabled={!prev || submitting} onClick={() => prev && go(prev.question_id)} className="px-3">
+              <ChevronLeft aria-hidden className="size-5" />
+              <span className="hidden sm:inline">Câu trước</span>
             </Button>
+            <Button variant="ghost" aria-label="Câu tiếp" disabled={!next || submitting} onClick={() => next && go(next.question_id)} className="px-3">
+              <span className="hidden sm:inline">Câu tiếp</span>
+              <ChevronRight aria-hidden className="size-5" />
+            </Button>
+            <div className="min-w-0 flex-1">
+              <Button variant="accent" block loading={submitting} disabled={submitting} onClick={() => setSubmitOpen(true)}>
+                {!submitting && <Send aria-hidden className="size-5" />}
+                {submitting ? 'Đang nộp bài…' : 'Nộp bài'}
+              </Button>
+            </div>
           </div>
         </div>
       </footer>
