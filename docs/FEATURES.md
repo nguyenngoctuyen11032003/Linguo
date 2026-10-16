@@ -12,18 +12,21 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 | 4 | Kiểm tra đầu vào thích ứng | `/app/kiem-tra/:pathId` |
 | 5 | Kế hoạch phiên học | `/app/phien-hoc`, thẻ trên trang chủ |
 | 6 | Gia sư AI (8 tác vụ: thêm `review_writing`, `analyze_sentence`, `summarize_session`, `plan_review`, `roleplay_turn`) | `/app/gia-su`, nút "Giải thích AI", `/app/dong-vai` |
-| 7 | Luyện thi TOPIK / CEFR | `/app/luyen-thi` |
+| 7 | Luyện thi TOPIK / JLPT / CEFR | `/app/luyen-thi` |
 | 8 | Tiến độ, động lực, analytics | `/app/tien-do` |
 | 9 | Nhắc học, báo cáo tuần, Web Push | `/app/thong-bao`, cài đặt |
 | 10 | PWA: cài app, offline | toàn app |
 | 11 | Báo lỗi nội dung | nút trong bài/thẻ/đề, cài đặt |
-| 12 | Khu quản trị | `/quan-tri` |
+| 12 | Khu quản trị (gồm trang Nhân sự) | `/quan-tri`, `/quan-tri/nhan-su` |
 | 13 | Xuất và xoá dữ liệu tài khoản | cài đặt |
 | 14 | Quyền riêng tư và điều khoản | `/quyen-rieng-tu`, `/dieu-khoan` |
 | 15 | Luyện nói | `/app/luyen-noi` |
 | 16 | Đóng vai hội thoại với AI | `/app/dong-vai` |
 | 17 | Từ vựng của tôi (nhập CSV) | `/app/tu-vung-cua-toi` |
 | 18 | Quy ước hiệu năng, truy cập và thông báo lỗi | toàn app |
+| 19 | Audio thật cho bài nghe (tạo offline bằng Gemini TTS) | bài nghe, thẻ ôn, phần nghe của đề |
+| 20 | Công cụ giáo viên và lớp học | `/giao-vien`, `/app/lop-hoc` |
+| 21 | Tiếng Nhật (ngôn ngữ thứ ba) | toàn app |
 
 ## 1. Onboarding và lộ trình học (Spec 1)
 
@@ -43,7 +46,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Cấu trúc trang bài học (`web/routes/app/lesson/LessonPage.tsx`):** tên bài là `h1` của trang; bộ đếm câu hỏi là một đoạn `aria-live="polite"` (đọc lại khi sang câu mới); nút thoát chỉ hỏi xác nhận khi còn câu trả lời chưa gửi (`run.pendingCount > 0`).
 - **Chấm điểm:** chấm trên server theo `shared/content/grading.ts` (cùng thuật toán với hàm SQL `grade_exercise`); fixture dùng chung `grading.fixtures.json`.
 - **Database:** `20261014000100_content.sql` (chương trình, unit, bài, học liệu, bài tập, `content_private.exercise_keys`, `import_content_bundle`), `20261014000200_lesson_runs.sql` (`start_lesson`, `get_lesson`, `submit_exercise`, `grade_exercise`, `complete_lesson`, `save_lesson_cursor`, `path_lessons`, `lesson_for_path`), `20261014000600_spec2_sync.sql`, `20261015000800_answer_integrity.sql` (khoá đáp án theo phiên bản, kẹp `client_at`), `20261016000500_content_admin_hardening.sql` (quy tắc `client_at` 48 giờ), `20261016000800_progress_vocab_hardening.sql` (siết còn 12 giờ, chặn giả thời gian hoạt động); xem [HANDOFF](superpowers/HANDOFF.md) mục 2.
-- **Nội dung:** `content/<en|ko>/programs/...` và `content/<en|ko>/items/`; cách soạn và xuất bản ở [content/README.md](../content/README.md) và [DEPLOY.md](DEPLOY.md) mục "Xuất bản nội dung".
+- **Nội dung:** `content/<en|ko|ja>/programs/...` và `content/<en|ko|ja>/items/`; cách soạn và xuất bản ở [content/README.md](../content/README.md) và [DEPLOY.md](DEPLOY.md) mục "Xuất bản nội dung".
 - **Test:** `supabase/tests/lesson_runs.test.sql`, `grading.test.sql`, `answer_integrity.test.sql`, `content.test.sql`, `content_no_leak.test.sql`; `scripts/content-import.test.mjs`; `web/features/lesson-player/*.test.ts(x)`; `web/routes/app/lesson/*.test.tsx`; e2e `lesson.spec.ts`.
 
 ## 3. Flashcard và ôn tập FSRS (Spec 3)
@@ -60,7 +63,7 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Web:** `web/routes/app/diagnostic/`, `web/features/diagnostic/` (`useDiagnosticRun.ts`, `useDiagnosticStatus.ts`).
 - **Shared:** `shared/diagnostic/engine.ts` (ước lượng EAP, khoảng và độ tin cậy; fixture `engine.fixtures.json`).
 - **Database:** `20261014000400_diagnostic.sql` (assessments, items, attempts, responses), `20261014000410_diagnostic_engine.sql` (`diag_*`), `20261014000420_diagnostic_rpc.sql` (`start_diagnostic`, `answer_diagnostic`, `finish_diagnostic`, `accept_diagnostic_placement`, `skip_diagnostic_skill`, `diagnostic_status`), `20261014000430_diagnostic_import.sql`.
-- **Nội dung:** `content/diagnostic/<en|ko>/{vocabulary,grammar,reading}.yaml`. Nghe tự bỏ qua (`not_supported`) cho đến khi có audio; viết/nói không bao giờ được suy ra.
+- **Nội dung:** `content/diagnostic/<en|ko|ja>/{vocabulary,grammar,reading}.yaml`. Nghe tự bỏ qua (`not_supported`) cho đến khi có audio; viết/nói không bao giờ được suy ra.
 - **Test:** `supabase/tests/diagnostic_schema.test.sql`, `diagnostic_engine.test.sql`, `diagnostic_rpc.test.sql`; `pnpm fixtures:diagnostic`; `shared/diagnostic/engine.test.ts`, `simulation.test.ts`; `web/routes/app/diagnostic/*.test.tsx`; e2e `diagnostic.spec.ts`.
 
 ## 5. Kế hoạch phiên học (Spec 6)
@@ -88,13 +91,13 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 - **Nhãn:** phản hồi bài viết ghi "Phản hồi luyện tập — không phải điểm chính thức" (`WRITING_FEEDBACK_LABEL` trong `web/components/ai/AiResultView.tsx`); AI không bao giờ sinh câu hỏi trong lúc thi.
 - **Test:** `supabase/tests/ai_gateway.test.sql`, `ai_review_writing.test.sql`, `ai_more_tasks.test.sql`, `ai_roleplay.test.sql`; Deno `supabase/functions/ai-tutor/handler_test.ts` và `lib/*_test.ts` (CI job `functions`); `shared/ai/contract.test.ts`, `contract-more.test.ts`, `contract-roleplay.test.ts`; `web/components/ai/ai-ui.test.tsx`, `web/features/ai-tutor/*.test.ts(x)`, `web/routes/app/tutor/tutor.test.tsx`; e2e `ai.spec.ts`, `ai-more.spec.ts`.
 
-## 7. Luyện thi TOPIK I/II và CEFR (Spec 9)
+## 7. Luyện thi TOPIK I/II, JLPT và CEFR (Spec 9; JLPT ở mục 21)
 
 - **Route:** `/app/luyen-thi` (trung tâm: thi thử toàn bài có giờ, luyện theo phần, luyện theo dạng câu), `/app/luyen-thi/lam-bai/:attemptId`, `/app/luyen-thi/ket-qua/:attemptId`.
 - **Web:** `web/routes/app/exam/` (+ `components/`), `web/features/exam/` (service, `useExamAttempt.ts`, `tts.ts` đọc kịch bản nghe bằng TTS của trình duyệt khi chưa có audio).
 - **Shared:** `shared/exam/` (hợp đồng, `grading.ts`, `bundle.ts`, `grading.fixtures.json`).
 - **Database:** `20261015000200_exams.sql` (exam_forms, exam_questions, `content_private.exam_keys`, exam_attempts, exam_answers; `list_exam_forms`, `start_exam`, `save_exam_answer`, `submit_exam`, `get_exam_attempt`, `exam_history`, `import_exam_content_bundle`). Đáp án, giải thích, kịch bản nghe và rubric chỉ trả về sau khi bài đã đóng; server giữ hạn nộp (cho thêm 30 giây).
-- **Nội dung:** `content/exams/<en|ko>/*.yaml`. Thang điểm đọc từ khối `scoring` của đề; `scoring.verified = false` thì kết quả hiện cảnh báo "chưa đối chiếu" (`UNVERIFIED_SCORING_LABEL`), và mọi đề mang nhãn "Bài luyện mô phỏng — không phải đề thi chính thức" (`SimulatedBadge`). Hiện `content/exams/ko/topik-i-mock-1.yaml` và `topik-ii-mock-1.yaml` đặt `verified: true`, `content/exams/en/cefr-a2-mock-1.yaml` đặt `verified: false`.
+- **Nội dung:** `content/exams/<en|ko|ja>/*.yaml`. Thang điểm đọc từ khối `scoring` của đề; `scoring.verified = false` thì kết quả hiện cảnh báo "chưa đối chiếu" (`UNVERIFIED_SCORING_LABEL`), và mọi đề mang nhãn "Bài luyện mô phỏng — không phải đề thi chính thức" (`SimulatedBadge`). Hiện `content/exams/ko/topik-i-mock-1.yaml` và `topik-ii-mock-1.yaml` đặt `verified: true`, `content/exams/en/cefr-a2-mock-1.yaml` đặt `verified: false`; ba đề `content/exams/ja/jlpt-n{5,4,3}-mock-1.yaml` đặt `verified: true`. Câu nghe có `audio_asset_id` được phát bằng `playContentAudioOnce` (mục 19).
 - **Test:** `supabase/tests/exams.test.sql`, `exam_grading.test.sql`; `pnpm fixtures:exam`; `shared/exam/*.test.ts`; `web/features/exam/*.test.ts(x)`, `web/routes/app/exam/*.test.tsx`; e2e `exam.spec.ts`.
 
 ## 8. Tiến độ, động lực và analytics (Spec 8)
@@ -137,17 +140,18 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 
 ## 12. Khu quản trị `/quan-tri` (Spec 11)
 
-- **Route (tải lazy thành chunk riêng):** `/quan-tri` (tổng quan), `/quan-tri/noi-dung`, `/quan-tri/noi-dung/:kind/:id`, `/quan-tri/bao-loi`, `/quan-tri/nguon`, `/quan-tri/thong-ke` (admin), `/quan-tri/nhat-ky` (admin). Người không có vai trò thấy trang 404 như mọi đường dẫn lạ.
+- **Route (tải lazy thành chunk riêng):** `/quan-tri` (tổng quan), `/quan-tri/noi-dung`, `/quan-tri/noi-dung/:kind/:id`, `/quan-tri/bao-loi`, `/quan-tri/nguon`, `/quan-tri/thong-ke` (admin), `/quan-tri/nhat-ky` (admin), `/quan-tri/nhan-su` (admin). Người không có vai trò thấy trang 404 như mọi đường dẫn lạ. Thanh menu (`AdminLayout.tsx`) dưới breakpoint `lg` là một hàng cuộn ngang (không xuống dòng ở 320px, mục đang mở tự cuộn vào tầm nhìn bên trong hàng, không cuộn cả trang); liên kết chính của mỗi dòng ở Nội dung và Nguồn cao tối thiểu 44px.
 - **Web:** `web/routes/admin/` (`AdminGuard.tsx`, `AdminLayout.tsx`, `admin-routes.tsx`), `web/features/admin/`. Danh sách đường dẫn con ở `ADMIN_CHILD_PATHS` trong `web/app/router.tsx`, có test giữ đồng bộ với `adminRoutes` (`web/routes/admin/admin-route.test.tsx`).
 - **Vai trò (`public.staff_roles`):** `editor` < `reviewer` < `admin`. Cách đọc từng trang và cấp vai trò: [DEPLOY.md](DEPLOY.md) mục "Quản trị nội dung".
 - **Database:** `20261015000410_admin.sql` (`staff_role`, `admin_content_overview`, `admin_list_content`, `admin_get_content`, `admin_set_status`, `admin_list_reports`, `admin_resolve_report`, `admin_list_sources`, `admin_analytics`, `admin_ai_usage`, `admin_audit_log_recent`, `admin_grant_role`; helper trong schema `admin_private`), `20261015000420_import_keep_published.sql` (nhập lại nội dung không bao giờ hạ một dòng đã `published`).
 - **Gia cố (`20261016000500_content_admin_hardening.sql`):** báo lỗi chỉ là `duplicate` của báo lỗi chưa xử lý cùng lý do và cùng phiên bản nội dung (mỗi người một báo lỗi chưa xử lý cho mỗi mục); import không tự duyệt/xuất bản dòng còn báo lỗi chưa xử lý và giữ trạng thái do người duyệt đặt; `admin_grant_role` không gỡ hay hạ admin cuối cùng; `admin_audit_log` chỉ thêm, không sửa; đọc đáp án qua `admin_get_content` để lại một dòng nhật ký.
-- **Test:** `supabase/tests/admin.test.sql`, `content_no_leak.test.sql`; `web/routes/admin/*.test.tsx`, `web/features/admin/*.test.ts(x)`; e2e `admin.spec.ts` (404 cho người học, axe, không cuộn ngang).
+- **Nhân sự (`/quan-tri/nhan-su`, admin; `web/routes/admin/staff/StaffPage.tsx`, `RevokeRoleDialog.tsx`, `web/features/admin/staff.ts`, `useAdminStaff.ts`):** danh sách mọi dòng `staff_roles` kèm email, tên hiển thị, người cấp và ngày cấp (admin trước, rồi reviewer, editor); tìm một tài khoản theo email (khớp chính xác, không phân biệt hoa thường) hoặc user id rồi cấp/đổi vai trò; đổi vai trò hoặc thu hồi (hộp thoại xác nhận) ngay trên từng dòng. Mọi thay đổi đi qua `admin_grant_role` và vào nhật ký. Database: `20261017000500_admin_staff.sql` (`admin_list_staff`: tối đa một dòng nhật ký `list_staff` mỗi admin mỗi 10 phút; `admin_find_user`: một dòng `find_user` mỗi lần tìm, không ghi chữ đã tìm). Admin cuối cùng không thể bị hạ/gỡ (`20261016000500`) và không xoá được tài khoản của mình (`20261018090000_db_hardening.sql`, lỗi `last_admin_required`).
+- **Test:** `supabase/tests/admin.test.sql`, `admin_staff.test.sql`, `db_hardening.test.sql`, `content_no_leak.test.sql`; `web/routes/admin/*.test.tsx`, `web/routes/admin/staff/StaffPage.test.tsx`, `web/features/admin/*.test.ts(x)`; e2e `admin.spec.ts` (404 cho người học, axe, không cuộn ngang), `admin-staff.spec.ts`.
 
 ## 13. Xuất và xoá dữ liệu tài khoản (Spec 7)
 
 - **Route:** Cài đặt, mục "Tài khoản và dữ liệu" (`web/routes/app/settings/AccountDataSection.tsx`), `web/features/account/service.ts`.
-- **Database:** `20261014000910_account_data.sql`: `export_my_data()` (giới hạn 5 lần/giờ), `delete_my_account(text)` (cần gõ đúng cụm xác nhận, ghi một dòng ẩn danh vào `account_deletions`), `purge_expired_data()` (chỉ `service_role`, chạy bởi workflow Maintenance cùng `purge_analytics()`). Quy tắc bao phủ của bản xuất: `account_optional_tables()` (bản mới nhất ở `20261016000300_personal_vocab.sql`, thêm ba bảng từ vựng cá nhân), xem HANDOFF.
+- **Database:** `20261014000910_account_data.sql`: `export_my_data()` (giới hạn 5 lần/giờ), `delete_my_account(text)` (cần gõ đúng cụm xác nhận, ghi một dòng ẩn danh vào `account_deletions`), `purge_expired_data()` (chỉ `service_role`, chạy bởi workflow Maintenance cùng `purge_analytics()`). Quy tắc bao phủ của bản xuất: `account_optional_tables()` (bản mới nhất ở `20261017000400_teacher_tools.sql`, thêm `teacher_profiles`, `class_members`, `class_join_attempts` sau ba bảng từ vựng cá nhân của `20261016000300`), xem HANDOFF. Admin cuối cùng không xoá được tài khoản (`20261018090000_db_hardening.sql`, `last_admin_required`).
 - **Test:** `supabase/tests/account_data.test.sql`, `account_export_coverage.test.sql`; `web/features/account/service.test.ts`, `account-data-section.test.tsx`; e2e `hardening.spec.ts` (nhóm "account data").
 
 ## 14. Quyền riêng tư và điều khoản (Spec 7)
@@ -170,9 +174,9 @@ Mọi route của người học nằm dưới tiền tố base path của GitHu
 ## 16. Đóng vai hội thoại với AI (PRD §8.2 #6)
 
 - **Route:** `/app/dong-vai` (tiêu đề "Đóng vai với AI"): chọn kịch bản, trò chuyện, nhận xét sửa lỗi và tổng kết cuối buổi.
-- **Danh mục kịch bản cố định:** `shared/ai/roleplay-catalog.ts` (bảy kịch bản cho mỗi ngôn ngữ en/ko: `cafe_order`, `ask_directions`, `hotel_checkin`, `doctor_visit`, `job_interview`, `shopping_bargain`, `introductions`). Yêu cầu `roleplay_turn` chỉ mang khoá kịch bản; vai và mục tiêu do Edge Function lấy từ chính file này, không bao giờ từ chữ của client (chống prompt injection). File được sao nguyên văn sang `supabase/functions/_shared/roleplay-catalog.ts` bởi `pnpm ai:contract`.
+- **Danh mục kịch bản cố định:** `shared/ai/roleplay-catalog.ts` (bảy kịch bản cho mỗi ngôn ngữ en/ko/ja: `cafe_order`, `ask_directions`, `hotel_checkin`, `doctor_visit`, `job_interview`, `shopping_bargain`, `introductions`). Yêu cầu `roleplay_turn` chỉ mang khoá kịch bản; vai và mục tiêu do Edge Function lấy từ chính file này, không bao giờ từ chữ của client (chống prompt injection). File được sao nguyên văn sang `supabase/functions/_shared/roleplay-catalog.ts` bởi `pnpm ai:contract`.
 - **Giới hạn:** tối đa `ROLEPLAY_MAX_TURNS` = 12 lượt (lượt 0 là câu mở đầu của đối tác, lượt cuối khép hội thoại); mỗi request gửi tối đa `ROLEPLAY_HISTORY_MAX_TURNS` = 10 lượt gần nhất, mỗi lượt tối đa `ROLEPLAY_TURN_MAX_CHARS` = 300 ký tự; trả lời của đối tác tối đa `ROLEPLAY_REPLY_MAX_CHARS` = 400 ký tự và tối đa `ROLEPLAY_MAX_CORRECTIONS` = 2 sửa lỗi. **Mỗi lượt là một request, trừ một lượt quota AI** (cùng quota ngày với các tác vụ khác). Không cache.
-- **Không lưu lịch sử trên server:** hội thoại sống trong state React và `sessionStorage` của tab (`web/features/roleplay/storage.ts`, khoá `linguo:roleplay:v1:<userId>`) để tải lại trang không mất; xoá khi kết thúc hoặc rời buổi; log AI chỉ lưu siêu dữ liệu. Server kiểm đầu ra: trả lời tiếng Hàn phải có Hangul, tiếng Anh không được có Hangul (`supabase/functions/ai-tutor/lib/prompts/roleplay_turn.ts`).
+- **Không lưu lịch sử trên server:** hội thoại sống trong state React và `sessionStorage` của tab (`web/features/roleplay/storage.ts`, khoá `linguo:roleplay:v1:<userId>`) để tải lại trang không mất; xoá khi kết thúc hoặc rời buổi; log AI chỉ lưu siêu dữ liệu. Server kiểm đầu ra: trả lời tiếng Hàn phải có Hangul và không có kana, tiếng Nhật phải có kana và không có Hangul, tiếng Anh không được có Hangul hay chữ Nhật (`supabase/functions/ai-tutor/lib/prompts/roleplay_turn.ts`).
 - **Web:** `web/routes/app/roleplay/` (`ScenarioPicker.tsx`, `ChatView.tsx`, `RecapView.tsx`), `web/features/roleplay/` (`session.ts`, `useRoleplaySession.ts`).
 - **Database:** `20261016000600_ai_roleplay.sql` (thêm `roleplay_turn` vào danh sách tác vụ của `ai_cache`, `ai_usage`, `ai_reports` và các RPC liên quan).
 - **Test:** `supabase/tests/ai_roleplay.test.sql`; Deno `supabase/functions/ai-tutor/lib/prompts/prompts_roleplay_test.ts`; `shared/ai/contract-roleplay.test.ts`; `web/features/roleplay/*.test.ts(x)`, `web/routes/app/roleplay/roleplay.test.tsx`; e2e `roleplay.spec.ts` (mock `roleplay_turn` xác định), quét axe ở `a11y-routes.spec.ts`.
@@ -203,3 +207,34 @@ Quy ước áp dụng cho mọi route; nhiều điều trong đó có test hoặ
 - **Màu và trạng thái vô hiệu:** viền ô nhập dùng token `--input-border` (`web/design/tokens.css`, tương phản 3:1, ánh xạ thành `color-input-border` trong `global.css`); điều khiển tự làm dùng `DISABLED_NEUTRAL` và `DISABLED_NEUTRAL_TRACK` (`web/components/ui/disabled-styles.ts`) thay vì giảm độ mờ.
 - **Không hiện mã lỗi thô cho người học:** lỗi chưa có thông điệp tiếng Việt riêng dùng `GENERIC_ERROR_MESSAGE` hoặc `genericErrorMessage(code)` (`web/lib/error-fallback.ts`; mã chỉ được `console.debug` ở dev). `ErrorState` mặc định dùng thông điệp này.
 - **Bố cục hẹp:** không cuộn ngang ở 320px (e2e `layout.spec.ts`, `a11y-routes.spec.ts`).
+
+## 19. Audio thật cho bài nghe (PRD §19 P2)
+
+Hợp đồng đầy đủ và cách chạy: [AUDIO.md](AUDIO.md).
+
+- **Tạo offline, không bao giờ theo yêu cầu người học:** `scripts/generate-audio.mjs` (`pnpm audio:plan` chỉ in kế hoạch, `pnpm audio:check` đối chiếu YAML với manifest không cần mạng, `pnpm audio:generate` tạo thật) đọc `fallback_text` của bài `listen` và `script` của câu nghe trong đề, gọi Gemini TTS, tải WAV lên Storage rồi ghi `audio_asset_id` thẳng vào YAML. Cần `GEMINI_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` trong shell (tuỳ chọn `GEMINI_TTS_MODEL`); không chạy trong CI. Giọng theo ngôn ngữ ở `VOICES` (en, ko, ja); hội thoại hai người dùng hai giọng.
+- **Lưu trữ:** bucket `content-audio` đọc công khai, chỉ `service_role` ghi, không liệt kê được; file ở `<lang>/<audio_asset_id>.wav`. Id `<lang>-<32 hex>` tính từ ngôn ngữ, giọng và văn bản đã chuẩn hoá (`shared/content/audio.ts`: `audioAssetUrl`, `isAudioAssetId`, `AUDIO_ASSET_ID_RE`). Bảng `public.audio_assets` ghi các file đã tải lên (không chứa văn bản, chỉ sha256); bản sao trong repo là `supabase/content-audio-manifest.json` (chưa có cho tới lần tạo đầu tiên).
+- **Web:** `web/features/audio/` (`ContentAudio.tsx`, `useContentAudio.ts`, `content-audio.ts`, `sw-audio.ts`), dùng ở bài nghe của bài học, thẻ ôn và đề thi (`playContentAudioOnce` chỉ tính lượt nghe khi đã phát thật). Nút Nghe/Tạm dừng, nghe lại từ đầu, nghe chậm 0,75×, cao tối thiểu 48px; không tải trước lần bấm đầu. Tải lỗi thì hiện "Không phát được bản ghi âm", nút "Thử lại" và rơi về giọng đọc của máy. Service worker giữ tối đa 80 file trong 30 ngày (cache `linguo-content-audio-v1`), nên đoạn đã nghe nghe lại được khi offline.
+- **Hiện trạng:** chưa tạo file nào; mọi `audio_asset_id` trong `content/` vẫn là `null`, nên ứng dụng vẫn đọc bằng TTS của trình duyệt (HANDOFF mục 3).
+- **Database:** `20261017000200_content_audio.sql` (bucket, `audio_assets`).
+- **Test:** `supabase/tests/content_audio.test.sql`; `scripts/generate-audio.test.mjs` (trong `pnpm test`); `shared/content/audio.test.ts`; `web/features/audio/*.test.ts(x)`; e2e `content-audio.spec.ts`.
+
+## 20. Công cụ giáo viên và lớp học (PRD §19 P2 "Công cụ giáo viên")
+
+- **Giáo viên (`/giao-vien`, `/giao-vien/lop/:classId`):** chunk và khung giao diện riêng (`web/routes/teacher/TeacherRoute.tsx`), người học không tải. Chỉ người có dòng `teacher_profiles` dùng được (`is_teacher()`); người khác thấy thông báo không có quyền. Mục "Lớp học (giáo viên)" chỉ hiện trong thanh điều hướng của giáo viên (`TEACHER_NAV_ITEM` trong `web/components/layout/nav.ts`). Tạo, đổi tên và lưu trữ lớp ở `TeacherClassesPage.tsx`. Trang lớp (`TeacherClassPage.tsx`) có ba phần: mã mời (`InviteSection.tsx`: mã 8 ký tự có hạn và giới hạn lượt dùng tuỳ chọn, thu hồi được), bài giao (`AssignmentSection.tsx`: một bài học hoặc đề thi đã xuất bản của ngôn ngữ lớp, hoặc một số lượt ôn; hạn và ghi chú tuỳ chọn) và bảng tổng hợp (`RosterSection.tsx`).
+- **Người học (`/app/lop-hoc`, `/app/lop-hoc/tham-gia?ma=CODE`):** `web/routes/app/classes/` (danh sách lớp và bài giao kèm trạng thái hoàn thành, nhập mã, rời lớp có xác nhận, ghi chú quyền riêng tư nói rõ giáo viên thấy gì); thẻ trên trang chủ `web/features/classes/ClassesHomeCard.tsx`. Liên kết mời chỉ điền sẵn mã, người học phải tự bấm tham gia. Bài giao dạng đề thi dẫn tới trang Luyện thi chung.
+- **Quyền riêng tư:** giáo viên không đọc bảng của người học; `teacher_class_roster` chỉ trả số liệu tổng hợp cho thành viên hiện tại (chuỗi ngày, phút hoạt động, số bài xong, thẻ đến hạn, tỉ lệ đúng khi ôn, mức hoàn thành bài giao), không bao giờ có đáp án, hội thoại AI, từ vựng cá nhân hay email. Rời lớp xoá dòng thành viên nên giáo viên hết thấy ngay. Bài giao chỉ tính việc làm từ lúc giao.
+- **Giới hạn (`TEACHER_LIMITS` trong `shared/teacher/limits.ts`, trùng với SQL):** 30 lớp đang hoạt động/giáo viên, 200 thành viên/lớp, 20 lớp/người học, 10 mã mời còn hiệu lực/lớp, 300 bài giao/lớp, 10 lần nhập mã/giờ (tính cả lần sai; mã sai trả `invalid_code` chứ không báo lỗi), mã mời sống 1–720 giờ (mặc định 7 ngày).
+- **Cấp quyền giáo viên:** chưa có giao diện; dùng SQL hoặc `grant_teacher_role(p_user_id, p_grant)` bằng phiên của admin (DEPLOY.md, mục "Giáo viên").
+- **Database:** `20261017000400_teacher_tools.sql`: bảng `teacher_profiles`, `classes`, `class_members`, `class_invites`, `class_join_attempts`, `assignments`; RPC `teacher_*` (lớp, mã mời, bài giao, `teacher_class_roster`), `learner_join_class`, `learner_leave_class`, `learner_list_classes`, `learner_list_assignments`, `grant_teacher_role`, `is_teacher`. Ba bảng của người dùng vào `account_optional_tables()`; lớp của giáo viên là phần `teacher_classes` của bản xuất.
+- **Test:** `supabase/tests/teacher.test.sql`, `account_export_coverage.test.sql`; `shared/teacher/contract.test.ts`; `web/features/teacher/teacher.test.ts`, `web/features/classes/*.test.ts`, `web/routes/teacher/teacher.test.tsx`, `web/routes/app/classes/classes.test.tsx`; e2e `teacher.spec.ts`, `classes.spec.ts`.
+
+## 21. Tiếng Nhật (ngôn ngữ thứ ba)
+
+- **Bật cho người học:** `LANGUAGES.ja.available = true` (`shared/constants.ts`); onboarding, lộ trình, kiểm tra đầu vào, luyện thi, luyện nói, đóng vai, từ vựng cá nhân và lớp học đều nhận `ja`.
+- **Cấp độ và mục tiêu:** `kana` (ordinal 0) rồi `n5`, `n4`, `n3`, `n2`, `n1`; mục tiêu `kana_basics`, `communication`, `jlpt`, `skill_focus`. Giờ tham chiếu cho ja ước lượng theo FSI (ngôn ngữ nhóm IV), chưa kiểm duyệt.
+- **Nội dung:** `content/ja/programs/` gồm `kana-basics` (Kana → N5, 30 bài), `n4` (20 bài), `n3` (25 bài); `content/ja/items/` (loại `kana` cho Hiragana/Katakana; `front.reading` là furigana, `front.romanization` theo Hepburn chỉ để tham khảo); kho kiểm tra đầu vào `content/diagnostic/ja/` (90 câu, 6 cấp); đề `content/exams/ja/jlpt-n5-mock-1.yaml`, `jlpt-n4-mock-1.yaml`, `jlpt-n3-mock-1.yaml` (họ đề `jlpt`, chấm và xếp bậc như đề TOPIK đầy đủ, `verified: true`). Quy ước soạn: [content/README.md](../content/README.md) mục "Tiếng Nhật". Chưa có nội dung N2/N1.
+- **Luyện nói, đóng vai, giọng máy:** câu mẫu, đề trả lời mở và kịch bản đóng vai soạn sẵn tiếng Nhật trong `web/features/speaking/content.ts`; bảy kịch bản đóng vai AI ja trong `shared/ai/roleplay-catalog.ts` (mục 16); prompt của `ai-tutor` xử lý tiếng Nhật; TTS trình duyệt dùng `ja-JP` (`web/features/exam/tts.ts`). Tên tiếng Việt của 14 dạng câu `jlpt_*` ở `web/routes/app/exam/components/labels.ts`.
+- **Chấm đáp án:** dùng chung `shared/content/grading.ts`; vì chuẩn hoá giữ khoảng trắng và đổi `、` `。` thành khoảng trắng, bài ja khai thêm biến thể đáp án (HANDOFF mục 3).
+- **Database:** `20261018100000_japanese.sql` (CHECK `en|ko|ja`, giờ tham chiếu, mục tiêu, họ đề `jlpt`, bài kiểm tra `ja:assessment:diagnostic:v1`; tạo lại `learning_path_validate`, `create_personal_list`, `exam_structure_warning`, `exam_build_result`, `list_exam_forms`, `diagnostic_level_code`). Chú thích đầu file nói ja còn bị ẩn: đã cũ.
+- **Test:** `supabase/tests/japanese.test.sql`; `shared/japanese.test.ts`; `scripts/content-import.test.mjs` (đề JLPT thật); `web/routes/app/exam/components/labels.test.ts`; unit test onboarding và `LanguagePill` đếm đủ ba ngôn ngữ.

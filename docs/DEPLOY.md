@@ -75,6 +75,8 @@ Deploy xanh trên main ─► Smoke (.github/workflows/smoke.yml; cũng chạy h
 | `NOTIFY_CRON_SECRET` | Secret, environment `production` **và** environment `notify` (cùng giá trị) | Có, nếu muốn nhắc học | `functions` đẩy lên Supabase; `notify.yml` đọc từ environment `notify` |
 | `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` | Secret, environment `production` | Chỉ khi muốn Web Push | đẩy lên Supabase bởi `functions` |
 
+Không thuộc workflow nào (chỉ đặt trong shell khi chạy tay `pnpm audio:generate`, mục **Audio bài nghe**): `GEMINI_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, tuỳ chọn `GEMINI_TTS_MODEL`.
+
 Tự Supabase cấp cho Edge Functions, không cần đặt: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`. Mọi biến `VITE_*` đều đóng gói vào JavaScript công khai: chỉ đặt giá trị công khai (`scripts/check-public-env.mjs` chặn tên và giá trị giống secret). Secret chỉ đẩy lên Supabase khi job `functions` chạy; GitHub secret để trống không xoá giá trị đang có trên Supabase.
 
 ## Gia sư AI (Gemini)
@@ -145,6 +147,15 @@ Nội dung bài học nằm trong `content/**/*.yaml`. Deploy **không** tự nh
    - Không dùng `SUPABASE_ACCESS_TOKEN` (token cá nhân có quyền trên mọi project): token đó chỉ còn dùng cho `supabase db push`/`functions deploy` trong Deploy.
 4. Chạy `pnpm content:push` từ máy local chỉ khi thật cần: phải đặt **cả hai** biến môi trường `SUPABASE_URL` và `SUPABASE_SERVICE_ROLE_KEY` trong shell, không ghi vào file nào được commit (script từ chối chạy nếu thiếu và không bao giờ in key ra). Ví dụ (Git Bash): `SUPABASE_URL=https://<ref>.supabase.co SUPABASE_SERVICE_ROLE_KEY=sb_secret_… pnpm content:push`.
 5. **Không bao giờ** đặt token/khoá server vào biến `VITE_*` (chúng bị đóng gói vào JavaScript công khai). `scripts/check-public-env.mjs` chặn mọi biến `VITE_*` có tên chứa `SERVICE_ROLE`, `GEMINI`, `SECRET`, `ACCESS_TOKEN`…
+6. **Tiếng Nhật:** nội dung `content/ja/`, `content/diagnostic/ja/`, `content/exams/ja/` chỉ nhập được sau khi migration `20261018100000_japanese.sql` đã được Deploy áp (trước đó CHECK `en|ko` từ chối dòng `ja`). Thứ tự: Deploy xanh → **Publish content**.
+
+## Audio bài nghe
+Audio được tạo **tay từ máy**, không có workflow (gói miễn phí của Gemini TTS giới hạn request/phút và quota ngày). Hợp đồng, cờ và quy trình đầy đủ: [AUDIO.md](AUDIO.md).
+
+1. Migration `20261017000200_content_audio.sql` (bucket `content-audio`, bảng `audio_assets`) phải đã được Deploy áp.
+2. Trong shell (không ghi vào file nào được commit, script không in giá trị): `GEMINI_API_KEY` (key Google AI Studio, có thể dùng chung key của gia sư AI), `SUPABASE_URL=https://<ref>.supabase.co`, `SUPABASE_SERVICE_ROLE_KEY` (secret key của project); tuỳ chọn `GEMINI_TTS_MODEL` (mặc định trong script) hoặc cờ `--model`.
+3. `pnpm audio:plan -- --lang ko --limit 20` xem trước, rồi `pnpm audio:generate -- --lang ko --limit 15 --rpm 3`; lặp theo từng ngôn ngữ (`en`, `ko`, `ja`) qua nhiều ngày nếu hết quota (429 hết quota ngày dừng cả lần chạy; phần đã tạo được ghi vào manifest ngay).
+4. `pnpm content:check && pnpm audio:check && pnpm content:build`, commit `content/`, `supabase/content-audio-manifest.json` và `supabase/seed.sql`, merge, rồi chạy **Publish content** để `audio_asset_id` lên database.
 
 ## Quản trị nội dung
 Trang `/quan-tri` (spec 11) chỉ mở cho tài khoản có vai trò trong bảng `public.staff_roles`: `editor` (xem nội dung kèm đáp án, xử lý báo lỗi) < `reviewer` (thêm: chuyển trạng thái duyệt) < `admin` (thêm: thống kê, mức dùng AI, nhật ký, cấp vai trò, ép publish khi còn báo lỗi "Đáp án sai"). Người không có vai trò mở `/quan-tri` sẽ thấy trang 404.
@@ -160,17 +171,33 @@ Trang `/quan-tri` (spec 11) chỉ mở cho tài khoản có vai trò trong bản
    Kiểm tra: `select s.role, u.email from public.staff_roles s join auth.users u on u.id = s.user_id;`
 3. Đăng xuất rồi đăng nhập lại (hoặc tải lại trang) → `/quan-tri` hiện ra.
 
-**Cấp/thu hồi vai trò về sau:** admin gọi RPC `admin_grant_role(p_user_id uuid, p_role text)` (`p_role = null` để thu hồi; vai trò hợp lệ `editor`, `reviewer`, `admin`; `user_not_found` nếu mã người dùng không có trong `auth.users`); mỗi lần cấp/thu hồi được ghi vào `admin_audit_log` (xem ở trang "Nhật ký"). RPC này **chưa có giao diện** trong `/quan-tri` (web không gọi nó) và cần phiên đăng nhập của một admin, nên không chạy được từ SQL Editor (ở đó không có `auth.uid()`). Việc cấp vai trò cho người khác vì vậy làm bằng SQL như bootstrap ở trên (thay `'admin'` bằng `'editor'`/`'reviewer'`; thu hồi bằng `delete from public.staff_roles where user_id = '<uuid>';`), hoặc gọi RPC bằng phiên của admin (ví dụ qua REST với access token của admin). Thay đổi bằng SQL **không** được ghi vào nhật ký và để trống `granted_by`; hãy ghi lại trong issue/ghi chú vận hành. Không bao giờ cấp vai trò qua `service_role` từ code web.
+**Cấp/thu hồi vai trò về sau:** admin dùng trang **Nhân sự** (`/quan-tri/nhan-su`, cần migration `20261017000500_admin_staff.sql`): tìm người nhận theo email (khớp chính xác) hoặc user id, chọn vai trò rồi **Cấp vai trò**; đổi vai trò hoặc **Thu hồi** ngay trên dòng của người đó. Người nhận phải đã đăng nhập Linguo ít nhất một lần. Trang gọi RPC `admin_grant_role(p_user_id uuid, p_role text)` (`p_role = null` để thu hồi; vai trò hợp lệ `editor`, `reviewer`, `admin`); mỗi lần cấp/thu hồi, mỗi lần tìm tài khoản và việc xem danh sách (tối đa một dòng mỗi 10 phút) được ghi vào `admin_audit_log` (trang "Nhật ký"). Không thể hạ hay gỡ admin cuối cùng, và admin cuối cùng không xoá được tài khoản của mình (`last_admin_required`): cấp admin cho người khác trước. RPC cần phiên đăng nhập của một admin nên không chạy được từ SQL Editor (ở đó không có `auth.uid()`); SQL như bootstrap ở trên vẫn dùng được khi cần (thu hồi: `delete from public.staff_roles where user_id = '<uuid>';`), nhưng **không** được ghi vào nhật ký và để trống `granted_by`. Không bao giờ cấp vai trò qua `service_role` từ code web.
 
-**Cách đọc các trang quản trị** (menu "Tổng quan", "Nội dung", "Báo lỗi", "Nguồn" cho mọi vai trò; "Thống kê", "Nhật ký" chỉ admin):
+**Cách đọc các trang quản trị** (menu "Tổng quan", "Nội dung", "Báo lỗi", "Nguồn" cho mọi vai trò; "Thống kê", "Nhật ký", "Nhân sự" chỉ admin; trên điện thoại menu là một hàng cuộn ngang):
 - **Tổng quan** (`/quan-tri`): số mục nội dung theo trạng thái, số đã xuất bản, số nội dung demo, số báo lỗi đang mở (mở hoặc đã phân loại) và danh sách "Cần kiểm duyệt".
 - **Nội dung** (`/quan-tri/noi-dung`): lọc theo loại, ngôn ngữ, trạng thái, từ khoá. Trang chi tiết có bốn khối: Trạng thái (đổi trạng thái; reviewer trở lên), Xem trước (đúng như người học thấy), Đáp án và giải thích (đáp án đúng, `known_wrong`, rubric; không bao giờ lộ cho người học), Nguồn và giấy phép. Đường chuyển trạng thái hợp lệ: `draft → in_review`; `in_review → approved | draft`; `approved → published | in_review`; `published → archived | in_review`; `archived → draft` (`ADMIN_STATUS_TRANSITIONS`); riêng câu hỏi trong đề thi (`exam_question`) chỉ chuyển được `published → archived`. Chuyển sang `approved`/`published` ghi người thực hiện vào `reviewed_by` và giờ vào `reviewed_at`. Nội dung vẫn sửa trong repo (`content/**/*.yaml`); trang chỉ cho thấy đường dẫn file (`repo_path`) cần sửa.
 - **Báo lỗi** (`/quan-tri/bao-loi`): hàng đợi báo lỗi của người học, gộp theo nội dung bị báo; chọn nhiều mục rồi xử lý (`fixed`, `rejected`, `duplicate` là trạng thái cuối, kèm ghi chú). Lý do báo: `wrong_answer`, `unclear`, `typo`, `audio`, `translation`, `offensive`, `other`. Chuyển một mục sang `published` khi còn báo lỗi "Đáp án sai" chưa xử lý bị từ chối (`open_wrong_answer_reports`) trừ khi admin ép (`p_force`).
 - **Nguồn** (`/quan-tri/nguon`): các nguồn và giấy phép khai báo trong `content/sources.yaml`.
 - **Thống kê** (`/quan-tri/thong-ke`, admin): người dùng hoạt động mỗi ngày, phễu người dùng mới, mức dùng AI (số request theo tác vụ và trạng thái, báo cáo câu trả lời AI theo lý do). Chỉ số tổng hợp, không có id hay email; khoảng thời gian chọn được.
-- **Nhật ký** (`/quan-tri/nhat-ky`, admin): các thao tác thay đổi dữ liệu gần đây của quản trị viên (đổi trạng thái, xử lý báo lỗi, cấp/thu hồi vai trò).
+- **Nhật ký** (`/quan-tri/nhat-ky`, admin): các thao tác thay đổi dữ liệu gần đây của quản trị viên (đổi trạng thái, xử lý báo lỗi, cấp/thu hồi vai trò và quyền giáo viên, xem danh sách nhân sự, tìm tài khoản).
+- **Nhân sự** (`/quan-tri/nhan-su`, admin): danh sách nhân sự kèm email, vai trò, người cấp và ngày cấp; tìm tài khoản để cấp vai trò; đổi hoặc thu hồi vai trò.
 
 **Trạng thái duyệt và import nội dung:** reviewer chuyển trạng thái trên trang quản trị (`admin_set_status`, ghi `reviewed_by`/`reviewed_at`). Khi chạy lại **Publish content**, dòng có nội dung không đổi (cùng `content_hash`) chỉ nhận trạng thái từ YAML nếu đó là đúng một bước hợp lệ từ trạng thái hiện tại; nếu không, trạng thái trong database được giữ (migration `20261015000420_import_keep_published.sql`). Vì vậy import không bao giờ hạ một dòng `published` xuống `draft`/`in_review`/`approved`; lưu trữ (`archived`, hoặc xoá khỏi `content/`) vẫn hoạt động. Nội dung đã sửa (hash đổi) luôn nhận trạng thái ghi trong YAML, nên hãy cập nhật YAML theo quyết định duyệt khi sửa nội dung.
+
+## Giáo viên
+Khu `/giao-vien` (công cụ giáo viên, cần migration `20261017000400_teacher_tools.sql`) chỉ mở cho tài khoản có một dòng trong `public.teacher_profiles`. Quyền giáo viên tách khỏi vai trò quản trị (`staff_roles`) và **chưa có giao diện cấp**.
+
+**Cấp quyền bằng SQL** (Supabase Dashboard → SQL Editor, quyền `postgres`), sau khi người đó đã đăng nhập Linguo một lần:
+```sql
+insert into public.teacher_profiles (user_id)
+select id from auth.users where email = 'giaovien@example.com'
+on conflict (user_id) do nothing;
+```
+Kiểm tra: `select t.granted_at, u.email from public.teacher_profiles t join auth.users u on u.id = t.user_id;`. Thu hồi: `delete from public.teacher_profiles where user_id = '<uuid>';` (lớp của giáo viên vẫn còn nhưng họ không mở được `/giao-vien` nữa). Cách này **không** ghi nhật ký và để trống `granted_by`.
+
+**Cấp quyền bằng RPC** (có nhật ký `grant_teacher` / `revoke_teacher`): `grant_teacher_role(p_user_id uuid, p_grant boolean)`, chỉ admin gọi được và cần phiên đăng nhập của admin (như `admin_grant_role`, không chạy được từ SQL Editor), ví dụ qua REST `POST {SUPABASE_URL}/rest/v1/rpc/grant_teacher_role` với access token của admin và body `{"p_user_id": "<uuid>", "p_grant": true}`.
+
+Người được cấp tải lại trang là thấy mục "Lớp học (giáo viên)" trong thanh điều hướng. Học viên vào lớp bằng mã mời hoặc liên kết `/app/lop-hoc/tham-gia?ma=<mã>` do giáo viên tạo.
 
 ## Ghim phiên bản GitHub Actions
 Mọi action bên thứ ba trong `.github/workflows` được ghim theo **mã commit SHA đầy đủ** kèm phiên bản trong chú thích cuối dòng (ví dụ `uses: actions/checkout@<sha> # v7.0.1`). Các job có secret (`migrate`, `functions`, `build`, xuất bản nội dung, bảo trì, nhắc học) chạy các action này nên không dùng thẻ phiên bản trôi nổi như `@v7`. Dependabot mở PR hằng tuần, gộp bản minor/patch, để cập nhật các mã SHA; bản major đến thành PR riêng. Khi thêm action mới, luôn ghim bằng SHA (kiểm tra SHA đúng là commit của tag: `gh api repos/<owner>/<repo>/commits/<sha>`). Không đổi lại sang thẻ trôi nổi.
