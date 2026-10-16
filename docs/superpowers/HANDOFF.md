@@ -6,7 +6,7 @@ Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/sh
 
 ## 1. Trạng thái từng spec
 
-Tất cả spec và đợt bổ sung dưới đây đã được triển khai trong code (đợt P2 cuối bảng: đã merge vào `main`, migration của đợt này chưa được Deploy áp tại thời điểm viết). Tại thời điểm viết, 34 trên 45 migration trong `supabase/migrations/` đã được ghi vào `supabase/migrations-applied.json`; mười một file chưa được ghi (`20261016000700`, `20261016000800`, `20261017000200`, `20261017000400`, `20261017000500`, `20261018090000`, `20261018130000`, `20261018140000`, `20261018150000`, `20261018160000`, `20261018170000`, xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
+Tất cả spec và đợt bổ sung dưới đây đã được triển khai trong code (đợt P2 cuối bảng: đã merge vào `main`, migration của đợt này chưa được Deploy áp tại thời điểm viết). Tại thời điểm viết, 34 trên 46 migration trong `supabase/migrations/` đã được ghi vào `supabase/migrations-applied.json`; mười hai file chưa được ghi (`20261016000700`, `20261016000800`, `20261017000200`, `20261017000400`, `20261017000500`, `20261018090000`, `20261018130000`, `20261018140000`, `20261018150000`, `20261018160000`, `20261018170000`, `20261018180000`, xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
 
 | Spec | Chủ đề | Nằm ở đâu | Migration chính |
 |---|---|---|---|
@@ -117,7 +117,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 
 ## 5. Danh sách migration
 
-Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 45 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), mười một file từ `20261016000700` trở đi chưa được ghi. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
+Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 46 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), mười hai file từ `20261016000700` trở đi chưa được ghi. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
 
 ```bash
 for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
@@ -164,8 +164,9 @@ for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supa
 | `20261018150000` | `admin_teachers` | `admin_list_teachers` cho phần Giáo viên của trang Nhân sự | Chưa |
 | `20261018160000` | `session_shorten_keeps_start` | `save_session_plan`: rút ngắn phiên đã bắt đầu giữ dòng, `started_at` và trạng thái (đánh số lại từ `20261018110000`) | Chưa |
 | `20261018170000` | `admin_item_reports` | `admin_item_open_reports`: số báo lỗi đang mở của một dòng nội dung (đánh số lại từ `20261018120000`) | Chưa |
+| `20261018180000` | `avatars` | cột `profiles.avatar_path`, bucket `avatars` và policy thư mục riêng của từng người dùng (đánh số lại từ `20261018140000`, trùng số với `ja_grading_whitespace`) | Chưa |
 
-Migration mới phải có số lớn hơn `20261018170000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
+Migration mới phải có số lớn hơn `20261018180000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
 
 ## 6. Vận hành local và nhiều phiên làm việc song song
 

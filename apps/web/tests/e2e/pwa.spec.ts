@@ -33,20 +33,20 @@ test('the service worker controls the app after a reload and Supabase mocks stil
   await mockSupabase(page, { paths: [pathRow()] });
   await signIn(page);
   await page.goto('/app');
-  await expect(page.getByRole('heading', { level: 1, name: 'Chào Minh Anh' })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole('heading', { level: 1, name: 'Chào Anh' })).toBeVisible({ timeout: 15_000 });
   await waitForController(page);
 
   await page.reload();
   expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
   // Supabase is never cached nor handled by the worker: the page's route mocks keep answering.
-  await expect(page.getByRole('heading', { level: 1, name: 'Chào Minh Anh' })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole('heading', { level: 1, name: 'Chào Anh' })).toBeVisible({ timeout: 15_000 });
 });
 
 test('an offline reload of /app serves the app shell with the offline banner', async ({ page, context }) => {
   await mockSupabase(page, { paths: [pathRow()] });
   await signIn(page);
   await page.goto('/app');
-  await expect(page.getByRole('heading', { level: 1, name: 'Chào Minh Anh' })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole('heading', { level: 1, name: 'Chào Anh' })).toBeVisible({ timeout: 15_000 });
   await waitForController(page);
 
   await context.setOffline(true);

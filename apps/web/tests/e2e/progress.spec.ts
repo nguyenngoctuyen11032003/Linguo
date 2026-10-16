@@ -91,7 +91,7 @@ test('motivation can be switched off in Settings', async ({ page }) => {
   await expect(h2(page, 'Động lực')).toHaveCount(0);
 
   await page.goto('/app');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Chào Minh Anh', { timeout: 15_000 });
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Chào Anh', { timeout: 15_000 });
   await expect(page.getByRole('link', { name: 'Xem tiến độ' })).toHaveCount(0);
 });
 

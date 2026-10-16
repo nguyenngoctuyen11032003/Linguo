@@ -12,7 +12,7 @@ test('signed-in users see their name on home', async ({ page }) => {
   await mockSupabase(page);
   await signIn(page);
   await page.goto('/app');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Chào Minh Anh');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Chào Anh');
 });
 
 test('"Thêm" opens the sheet and navigates to settings', async ({ page, isMobile }) => {

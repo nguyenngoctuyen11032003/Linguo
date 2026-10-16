@@ -20,7 +20,7 @@ async function setup(page: Page, analyticsOptOut = false) {
 // A deep link would sit on the hydrate fallback; a client-side navigation (like tapping a link) shows the route error.
 async function openBrokenLesson(page: Page) {
   await page.goto('/app');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Chào Minh Anh', { timeout: 15_000 });
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Chào Anh', { timeout: 15_000 });
   await page.evaluate((url) => {
     history.pushState({}, '', url);
     window.dispatchEvent(new PopStateEvent('popstate'));
