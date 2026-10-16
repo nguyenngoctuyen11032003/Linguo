@@ -1,0 +1,402 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-te-giving
+order_index: 3
+level: n4
+title:
+  vi: Làm giúp - てあげる・てもらう・てくれる
+objectives:
+  - vi: Nói "làm giúp ai" bằng V-てあげます.
+  - vi: Nói "được ai làm cho" bằng V-てもらいます và V-てくれます.
+  - vi: Chọn đúng trợ từ に / が theo chủ ngữ và nhờ vả lịch sự bằng てくれませんか.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:n4-giving-receiving]
+items:
+  - item: ja:item:n4-gram-te-ageru
+  - item: ja:item:n4-gram-te-morau
+  - item: ja:item:n4-gram-te-kureru
+  - item: ja:item:n4-tetsudau
+  - item: ja:item:n4-naosu
+  - item: ja:item:n4-annai-suru
+  - item: ja:item:n4-okuru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "Bạn đã dẫn tôi đi tham quan thành phố", "Tôi được thầy sửa bài văn" và nhờ "Giúp tôi một chút được không?".
+  - type: explain
+    text:
+      vi: Ở bài trước, あげる・もらう・くれる dùng cho đồ vật. Gắn chúng sau thể て, bạn "cho" hoặc "nhận" một hành động - giống "làm giúp", "được làm cho" trong tiếng Việt.
+  - type: explain
+    text:
+      vi: "Hướng giữ nguyên như bài trước. 私が友達に教えてあげる - tôi làm cho người khác. 友達に教えてもらう - tôi (chủ ngữ) được bạn (に) làm cho. 友達が教えてくれる - bạn (chủ ngữ, が) làm cho tôi."
+  - type: explain
+    text:
+      vi: てもらう và てくれる cùng nói một sự việc nhưng nhìn từ hai phía, và đều thể hiện lòng biết ơn. Nhờ ai đó lịch sự dùng V-てくれませんか hoặc V-てもらえませんか.
+  - type: deep_explain
+    text:
+      vi: Kể việc mình làm giúp người trên bằng てあげました nghe như kể công. Khi muốn đề nghị giúp, người Nhật nói V-ましょうか (荷物を持ちましょうか). Với người dưới hoặc thú cưng, có thể dùng てやる thay てあげる - bạn sẽ gặp trong văn nói nam giới.
+  - type: example
+    target: 友達が町を案内してくれました。
+    target_lang: ja
+    translation:
+      vi: Bạn đã dẫn tôi đi tham quan thành phố.
+    note:
+      vi: Người làm (友達) là chủ ngữ với が; người nhận là tôi nên dùng くれました.
+  - type: example
+    target: 先生に作文を直してもらいました。
+    target_lang: ja
+    translation:
+      vi: Tôi được thầy sửa bài văn.
+    note:
+      vi: Chủ ngữ ẩn là tôi; người làm (先生) đi với に.
+  - type: example
+    target: 妹に日本の歌を教えてあげました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã dạy em gái một bài hát Nhật.
+    note:
+      vi: Tôi làm cho người ngang hàng hoặc người dưới - てあげました.
+  - type: example
+    target: すみません、ちょっと手伝ってくれませんか。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, giúp tôi một chút được không?
+    note:
+      vi: Nhờ vả dùng V-てくれませんか; lịch sự hơn nữa là V-ていただけませんか.
+  - type: common_mistake
+    wrong: 先生が作文を直してもらいました。
+    right: 先生に作文を直してもらいました。
+    target_lang: ja
+    note:
+      vi: Với てもらう, người làm hành động đi với に. 先生が…もらいました thành "thầy được sửa", sai nghĩa.
+  - type: common_mistake
+    wrong: 友達が私に駅まで送ってあげました。
+    right: 友達が駅まで送ってくれました。
+    target_lang: ja
+    note:
+      vi: Người khác làm cho tôi dùng くれました, không dùng あげました.
+  - type: common_mistake
+    wrong: 部長、荷物を持ってあげます。
+    right: 部長、荷物を持ちましょうか。
+    target_lang: ja
+    note:
+      vi: Nói với cấp trên てあげます nghe kể công. Đề nghị giúp dùng ましょうか.
+  - type: summary
+    points:
+      - vi: V-てあげる - tôi làm giúp người khác.
+      - vi: Aに V-てもらう - tôi được A làm cho. Aが V-てくれる - A làm cho tôi.
+      - vi: Nhờ vả - V-てくれませんか / V-てもらえませんか.
+      - vi: Với người trên, đề nghị giúp bằng V-ましょうか, tránh てあげます.
+      - vi: 手伝う giúp · 直す sửa · 案内する dẫn đường · 送る gửi, tiễn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-tgv-mcq-kureta
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-te-kureru
+    prompt:
+      stem: '"Mẹ đã nấu ăn cho tôi." Chọn phần đúng: 母が料理を ___ 。'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 作ってくれました, lang: ja }
+        - { id: p8d, text: 作ってあげました, lang: ja }
+        - { id: w2s, text: 作ってもらいました, lang: ja }
+        - { id: m6q, text: 作りてくれました, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Mẹ (chủ ngữ が) làm cho tôi nên dùng てくれました. てあげました là tôi làm cho người khác; てもらいました cần 母に; 作りて chia sai thể て.
+    display_answer: 作ってくれました
+
+  - key: ja:exercise:n4-tgv-mcq-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-te-morau
+    prompt:
+      stem: '"Tôi được thầy sửa bài văn." Điền trợ từ: 先生 ___ 作文を直してもらいました。'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: に, lang: ja }
+        - { id: y1n, text: が, lang: ja }
+        - { id: e7c, text: を, lang: ja }
+        - { id: h4b, text: で, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Trong mẫu てもらう, người làm hành động đi với に. が sẽ biến thầy thành người nhận - sai nghĩa.
+    display_answer: に
+
+  - key: ja:exercise:n4-tgv-listen-station
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-okuru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 友達が駅まで送ってくれました。
+      options:
+        - { id: a8u, text: Bạn đã đưa tôi ra tận ga., lang: vi }
+        - { id: q2z, text: Tôi đã đưa bạn ra tận ga., lang: vi }
+        - { id: d6l, text: Bạn đã gửi đồ cho tôi ở ga., lang: vi }
+        - { id: s9f, text: Tôi đã đợi bạn ở ga., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 友達が…くれました - bạn làm cho tôi. 送る với người là "đưa, tiễn"; まで là "đến tận".
+    display_answer: Bạn đã đưa tôi ra tận ga.
+
+  - key: ja:exercise:n4-tgv-fill-tetsudau
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tetsudau
+    prompt:
+      template: "Xin lỗi, giúp tôi một chút được không? - すみません、ちょっと{{b1}}くれませんか。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - 手伝う thuộc nhóm 1, đuôi う.
+        - う → って.
+    answer:
+      blanks:
+        b1: [手伝って, てつだって]
+    known_wrong:
+      - answer: 手伝いて
+        feedback_vi: Không lấy thể ます thêm て. 手伝う → 手伝って.
+        error_tag: te_form
+      - answer: 手伝んで
+        feedback_vi: んで dành cho đuôi む・ぶ・ぬ. Đuôi う → って.
+        error_tag: te_form
+    explanation:
+      vi: 手伝う → 手伝って. Mẫu V-てくれませんか dùng để nhờ ai làm giúp một cách lịch sự.
+    display_answer: すみません、ちょっと手伝ってくれませんか。
+
+  - key: ja:exercise:n4-tgv-mcq-who
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-ageru
+    prompt:
+      stem: 'Trong câu 私は弟に宿題を教えてあげました。, ai là người dạy?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: Tôi, lang: vi }
+        - { id: j7r, text: Em trai, lang: vi }
+        - { id: c1o, text: Thầy giáo, lang: vi }
+        - { id: n5g, text: Không rõ, lang: vi }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: てあげました - chủ ngữ (私は) làm giúp người khác (弟に). Câu nghĩa là "Tôi đã dạy bài tập cho em trai".
+    display_answer: Tôi
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-tgv-fill-naosu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-naosu
+    prompt:
+      template: "Tôi được bố sửa xe đạp. - 父{{b1}}自転車を{{b2}}もらいました。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [に]
+        b2: [直して, なおして]
+    known_wrong:
+      - answer: が
+        feedback_vi: Với てもらう, người làm đi với に - 父に.
+        error_tag: particle_giving
+      - answer: 直って
+        feedback_vi: 直る là tự động từ "(tự) được sửa". Sửa cái gì dùng 直す → 直して.
+        error_tag: te_form
+      - answer: 直しって
+        feedback_vi: Đuôi す → して, không thêm っ.
+        error_tag: te_form
+    explanation:
+      vi: 父に + 直してもらいました - tôi được bố sửa cho. 直す (đuôi す) → 直して.
+    display_answer: 父に自転車を直してもらいました。
+
+  - key: ja:exercise:n4-tgv-translate-guide
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-annai-suru
+    prompt:
+      source_text: Anh Tanaka đã dẫn tôi đi tham quan Tokyo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 田中さんが東京を案内してくれました。
+        - 田中さんは東京を案内してくれました。
+        - たなかさんがとうきょうをあんないしてくれました。
+        - たなかさんはとうきょうをあんないしてくれました。
+        - 田中さんに東京を案内してもらいました。
+        - 私は田中さんに東京を案内してもらいました。
+        - 田中さんが私に東京を案内してくれました。
+    known_wrong:
+      - answer: 田中さんが東京を案内してあげました。
+        feedback_vi: Người khác làm cho tôi dùng くれました.
+        error_tag: giving_direction
+      - answer: 田中さんが東京を案内してもらいました。
+        feedback_vi: Câu này nghĩa là anh Tanaka được người khác dẫn đi - ngược nghĩa.
+        error_tag: giving_direction
+      - answer: 田中さんが東京に案内してくれました。
+        feedback_vi: Nơi được dẫn đi tham quan đi với を - 東京を案内する.
+        error_tag: particle_wo
+    explanation:
+      vi: 案内する → 案内して + くれました (anh Tanaka làm cho tôi). Hoặc nhìn từ phía tôi - 田中さんに案内してもらいました.
+    display_answer: 田中さんが東京を案内してくれました。
+
+  - key: ja:exercise:n4-tgv-fill-taught
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-ageru
+    prompt:
+      template: "Tôi đã chỉ đường giúp một du khách. - 旅行者に道を{{b1}}あげました。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [教えて, おしえて]
+    known_wrong:
+      - answer: 教えりて
+        feedback_vi: 教える thuộc nhóm 2 - bỏ る thêm て (教えて).
+        error_tag: te_form
+      - answer: 教えって
+        feedback_vi: Nhóm 2 chỉ bỏ る thêm て, không có っ.
+        error_tag: te_form
+    explanation:
+      vi: Chỉ đường là 道を教える; 教える (nhóm 2) → 教えて + あげました vì tôi làm giúp người khác.
+    display_answer: 旅行者に道を教えてあげました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-tgv-translate-moved
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-te-morau
+    prompt:
+      source_text: 先輩に引っ越しを手伝ってもらいました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi được đàn anh giúp chuyển nhà.
+        - Tôi được anh khóa trên giúp chuyển nhà.
+        - Tôi được tiền bối giúp chuyển nhà.
+        - Tôi đã được đàn anh giúp chuyển nhà.
+        - Tôi đã được tiền bối giúp chuyển nhà.
+        - Đàn anh đã giúp tôi chuyển nhà.
+        - Tiền bối đã giúp tôi chuyển nhà.
+        - Anh khóa trên đã giúp tôi chuyển nhà.
+        - Đàn anh giúp tôi chuyển nhà.
+        - Tiền bối giúp tôi chuyển nhà.
+        - Tôi được đàn chị giúp chuyển nhà.
+        - Đàn chị đã giúp tôi chuyển nhà.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã giúp đàn anh chuyển nhà.
+        feedback_vi: てもらいました - tôi là người được giúp, đàn anh (に) là người giúp.
+        error_tag: giving_direction
+      - answer: Đàn anh nhờ tôi giúp chuyển nhà.
+        feedback_vi: Câu gốc không có nghĩa "nhờ tôi"; tôi là người nhận sự giúp đỡ.
+        error_tag: giving_direction
+    explanation:
+      vi: 先輩に…てもらいました - tôi được đàn anh (tiền bối) làm cho. 引っ越し là việc chuyển nhà.
+    display_answer: Tôi được đàn anh giúp chuyển nhà.
+
+  - key: ja:exercise:n4-tgv-order-kureta
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-kureru
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Bạn tôi đã gửi cho tôi ảnh chụp ở Nhật."'
+      tokens:
+        - { id: t-okutte, text: 送って }
+        - { id: t-shashin, text: 日本の写真を }
+        - { id: t-tomodachi, text: 友達が }
+        - { id: t-kureta, text: くれました }
+        - { id: t-ageta, text: あげました }
+    answer:
+      orders:
+        - [t-tomodachi, t-shashin, t-okutte, t-kureta]
+    explanation:
+      vi: Bạn (が) làm cho tôi nên kết thúc bằng 送ってくれました. あげました là tôi làm cho người khác.
+    display_answer: 友達が日本の写真を送ってくれました。
+
+  - key: ja:exercise:n4-tgv-mcq-offer
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-ageru
+    prompt:
+      stem: Thầy giáo đang xách nhiều sách. Bạn muốn đề nghị xách giúp. Nói thế nào là lịch sự nhất?
+      stem_lang: vi
+      options:
+        - { id: g3k, text: 先生、持ちましょうか。, lang: ja }
+        - { id: u9p, text: 先生、持ってあげます。, lang: ja }
+        - { id: b2w, text: 先生、持ってくれませんか。, lang: ja }
+        - { id: x6e, text: 先生、持ってもらいます。, lang: ja }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: Đề nghị giúp người trên dùng V-ましょうか. 持ってあげます nghe kể công; 持ってくれませんか là nhờ thầy xách; 持ってもらいます là "tôi được (ai đó) xách cho".
+    display_answer: 先生、持ちましょうか。
+
+  - key: ja:exercise:n4-tgv-translate-ask
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-te-kureru
+    prompt:
+      source_text: Sửa giúp tôi bài văn này được không ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この作文を直してくれませんか。
+        - このさくぶんをなおしてくれませんか。
+        - この作文を直してもらえませんか。
+        - このさくぶんをなおしてもらえませんか。
+        - この作文を直していただけませんか。
+        - この作文を直してくださいませんか。
+        - すみません、この作文を直してくれませんか。
+        - すみません、この作文を直してもらえませんか。
+        - すみません、この作文を直していただけませんか。
+        - この作文を直してくれますか。
+        - この作文を直してもらえますか。
+    known_wrong:
+      - answer: この作文を直してあげませんか。
+        feedback_vi: てあげませんか là rủ "mình cùng sửa cho ai đó nhé", không phải nhờ.
+        error_tag: giving_direction
+      - answer: この作文を直りてくれませんか。
+        feedback_vi: Sửa cái gì dùng 直す → 直して.
+        error_tag: te_form
+    explanation:
+      vi: Nhờ vả lịch sự - V-てくれませんか / V-てもらえませんか; với thầy cô càng lịch sự càng tốt - 直していただけませんか.
+    display_answer: この作文を直してくれませんか。

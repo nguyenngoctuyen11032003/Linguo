@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-ability-giving-review
+order_index: 5
+level: n4
+title:
+  vi: Ôn tập - nhờ bạn giúp chuyển nhà
+objectives:
+  - vi: Phối hợp thể khả năng, cho - nhận và なければなりません trong một tình huống.
+  - vi: Nhờ giúp, cảm ơn và mời người khác tự nhiên.
+  - vi: Kể lại ai đã làm gì cho mình.
+estimated_minutes: 15
+skills: [grammar, listening, speaking, writing]
+prerequisites: [ja:lesson:n4-obligation]
+items:
+  - item: ja:item:n4-hikkoshi
+  - item: ja:item:n4-phrase-tasukarimashita
+  - item: ja:item:n4-phrase-enryo-naku
+  - item: ja:item:n4-gram-potential
+    role: reuse
+  - item: ja:item:n4-gram-kureru
+    role: reuse
+  - item: ja:item:n4-gram-te-morau
+    role: reuse
+  - item: ja:item:n4-gram-te-kureru
+    role: reuse
+  - item: ja:item:n4-gram-nakereba-naranai
+    role: reuse
+  - item: ja:item:n4-gram-nakute-mo-ii
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nhờ bạn bè giúp chuyển nhà, nói mình không làm được gì, cảm ơn bằng 助かりました và kể lại "bạn đã giúp tôi".
+  - type: explain
+    text:
+      vi: "Unit này có ba nhóm mẫu: khả năng (書ける, ことができる), cho - nhận (あげる・もらう・くれる, kể cả sau thể て) và bắt buộc (なければならない, なくてもいい)."
+  - type: explain
+    text:
+      vi: Khi nhờ vả, người Nhật thường nói lý do trước rồi mới nhờ - 一人で運べないので、手伝ってくれませんか (Tôi không mang một mình được nên bạn giúp tôi được không?).
+  - type: explain
+    text:
+      vi: Sau khi được giúp, cảm ơn bằng V-てくれて、ありがとう và thêm 助かりました. Khi mời người khác dùng đồ ăn, đồ uống, nói 遠慮なく.
+  - type: deep_explain
+    text:
+      vi: 'Một đoạn hội thoại mẫu: A - 来週の土曜日、引っ越しをしなければならないんだ。一人で運べないから、手伝ってくれない？ B - いいよ。 Sau đó: A - 手伝ってくれて、ありがとう。本当に助かった。ジュース、遠慮なく飲んでね。'
+  - type: example
+    target: 来週、引っ越しをしなければなりません。
+    target_lang: ja
+    translation:
+      vi: Tuần sau tôi phải chuyển nhà.
+    note:
+      vi: 引っ越しをする → しなければなりません.
+  - type: example
+    target: 冷蔵庫は重くて、一人で運べません。
+    target_lang: ja
+    translation:
+      vi: Tủ lạnh nặng quá, tôi không khiêng một mình được.
+    note:
+      vi: 運ぶ → 運べる → 運べません; 重くて nêu lý do.
+  - type: example
+    target: 手伝ってくれて、ありがとう。助かりました。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn bạn đã giúp. Đỡ cho tôi quá.
+    note:
+      vi: V-てくれて、ありがとう - cảm ơn vì ai đó đã làm cho mình.
+  - type: example
+    target: 飲み物はたくさんあるから、遠慮なく飲んでください。
+    target_lang: ja
+    translation:
+      vi: Có nhiều đồ uống lắm, cứ tự nhiên uống nhé.
+    note:
+      vi: 遠慮なく đứng trước động từ, nghĩa là "đừng ngại".
+  - type: common_mistake
+    wrong: 手伝ってもらって、ありがとう。
+    right: 手伝ってくれて、ありがとう。
+    target_lang: ja
+    note:
+      vi: Cảm ơn trực tiếp người đã giúp dùng てくれて - người đó là chủ ngữ của hành động.
+  - type: common_mistake
+    wrong: 一人で運ぶことができません重いです。
+    right: 重くて、一人で運ぶことができません。
+    target_lang: ja
+    note:
+      vi: Nêu lý do trước bằng thể て của tính từ (重い → 重くて), rồi mới nói kết quả.
+  - type: common_mistake
+    wrong: 引っ越しの手伝いは来なくてもいいですか。
+    right: 引っ越しを手伝ってくれませんか。
+    target_lang: ja
+    note:
+      vi: Muốn nhờ thì dùng てくれませんか. なくてもいいですか là hỏi "không làm có được không".
+  - type: summary
+    points:
+      - vi: Khả năng - 運べる, 運ぶことができる. Bắt buộc - しなければならない; không cần - しなくてもいい.
+      - vi: Nhờ - 理由 + V-てくれませんか. Cảm ơn - V-てくれて、ありがとう。助かりました.
+      - vi: Kể lại - Aが V-てくれた = Aに V-てもらった.
+      - vi: 引っ越し chuyển nhà · 助かりました đỡ cho tôi quá · 遠慮なく cứ tự nhiên.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-agr-mcq-tasukaru
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-phrase-tasukarimashita
+    prompt:
+      stem: Bạn được đồng nghiệp giúp sửa máy in. Sau ありがとうございます, bạn nói thêm 助かりました. Câu này có nghĩa gì?
+      stem_lang: vi
+      options:
+        - { id: k3v, text: Anh đã giúp tôi nhiều lắm., lang: vi }
+        - { id: p8d, text: Tôi xin lỗi vì đã làm phiền., lang: vi }
+        - { id: w2s, text: Tôi tự làm được rồi., lang: vi }
+        - { id: m6q, text: Anh cứ tự nhiên., lang: vi }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 助かりました nói rằng sự giúp đỡ thật sự có ích - "đỡ cho tôi quá". Xin lỗi vì làm phiền là ご迷惑をおかけしました; "cứ tự nhiên" là 遠慮なく.
+    display_answer: Anh đã giúp tôi nhiều lắm.
+
+  - key: ja:exercise:n4-agr-listen-moving
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-hikkoshi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 来週、引っ越しをしなければなりません。
+      options:
+        - { id: a8u, text: Tuần sau tôi phải chuyển nhà., lang: vi }
+        - { id: q2z, text: Tuần trước tôi đã chuyển nhà., lang: vi }
+        - { id: d6l, text: Tuần sau tôi không cần chuyển nhà., lang: vi }
+        - { id: s9f, text: Tuần sau tôi muốn đi du lịch., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 来週 là tuần sau, 引っ越し là chuyển nhà, しなければなりません là "phải làm".
+    display_answer: Tuần sau tôi phải chuyển nhà.
+
+  - key: ja:exercise:n4-agr-mcq-enryo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-phrase-enryo-naku
+    prompt:
+      stem: Bạn mời khách ăn bánh và muốn nói "cứ tự nhiên ăn nhé". Chọn câu đúng.
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 遠慮なく食べてください。, lang: ja }
+        - { id: y1n, text: 遠慮して食べてください。, lang: ja }
+        - { id: e7c, text: 遠慮なく食べなければなりません。, lang: ja }
+        - { id: h4b, text: 遠慮なく食べないでください。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 遠慮なく + V-てください là lời mời "đừng ngại, cứ làm". 遠慮して là "giữ ý"; なければなりません là ép buộc; ないでください là cấm.
+    display_answer: 遠慮なく食べてください。
+
+  - key: ja:exercise:n4-agr-fill-carry
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-potential
+    prompt:
+      template: "Tủ lạnh nặng quá, tôi không khiêng một mình được. - 冷蔵庫は重くて、一人で{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - 運ぶ thuộc nhóm 1, đuôi ぶ.
+        - ぶ → べ + る, rồi chia phủ định lịch sự.
+    answer:
+      blanks:
+        b1: [運べません, はこべません]
+    known_wrong:
+      - answer: 運ばれません
+        feedback_vi: Nhóm 1 không dùng られる/れる cho khả năng - 運ぶ → 運べる.
+        error_tag: potential_form
+      - answer: 運びません
+        feedback_vi: 運びません chỉ là "không khiêng", chưa có nghĩa "không khiêng được".
+        error_tag: potential_form
+    explanation:
+      vi: 運ぶ → 運べる (ぶ → べ + る) → 運べません.
+    display_answer: 冷蔵庫は重くて、一人で運べません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-agr-fill-thanks
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-te-kureru
+    prompt:
+      template: "Cảm ơn bạn đã giúp. - 手伝って{{b1}}、ありがとう。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [くれて]
+    known_wrong:
+      - answer: もらって
+        feedback_vi: Cảm ơn trực tiếp người giúp dùng くれて (người đó làm cho mình).
+        error_tag: giving_direction
+      - answer: あげて
+        feedback_vi: あげて là mình làm cho người khác - ngược hướng.
+        error_tag: giving_direction
+      - answer: くれる
+        feedback_vi: Nối với ありがとう cần thể て - くれて.
+        error_tag: te_form
+    explanation:
+      vi: V-てくれて、ありがとう - cảm ơn vì bạn đã làm cho tôi. くれる → くれて.
+    display_answer: 手伝ってくれて、ありがとう。
+
+  - key: ja:exercise:n4-agr-translate-ask-help
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-hikkoshi
+    prompt:
+      source_text: Bạn giúp tôi chuyển nhà được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 引っ越しを手伝ってくれませんか。
+        - ひっこしをてつだってくれませんか。
+        - 引っ越しを手伝ってもらえませんか。
+        - ひっこしをてつだってもらえませんか。
+        - 引っ越しを手伝っていただけませんか。
+        - 引っ越しを手伝ってくれますか。
+        - 引っ越しを手伝ってもらえますか。
+        - 引っ越しを手伝ってくれない？
+        - 引っ越しを手伝ってくれる？
+        - 引っ越し、手伝ってくれませんか。
+        - 引っ越し、手伝ってくれない？
+    known_wrong:
+      - answer: 引っ越しを手伝ってあげませんか。
+        feedback_vi: てあげませんか là rủ "mình giúp ai đó nhé", không phải nhờ người nghe giúp mình.
+        error_tag: giving_direction
+      - answer: 引っ越しを手伝いてくれませんか。
+        feedback_vi: 手伝う → 手伝って.
+        error_tag: te_form
+    explanation:
+      vi: Nhờ vả - V-てくれませんか / V-てもらえませんか; với bạn thân - 手伝ってくれない？.
+    display_answer: 引っ越しを手伝ってくれませんか。
+
+  - key: ja:exercise:n4-agr-fill-no-need-bring
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nakute-mo-ii
+    prompt:
+      template: "Hộp các tông có nhiều rồi, bạn không cần mang đến đâu. - 箱はたくさんあるから、{{b1}}もいいですよ。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [持ってこなくて, もってこなくて, 持って来なくて]
+    known_wrong:
+      - answer: 持ってこないで
+        feedback_vi: ないで dùng cho "đừng". "Không cần" là なくてもいい.
+        error_tag: nakute_form
+      - answer: 持ってきなくて
+        feedback_vi: 来る → 来ない (こない), không phải きない.
+        error_tag: nai_form
+    explanation:
+      vi: 持ってくる (mang đến) → 持ってこない → 持ってこなくてもいいです.
+    display_answer: 箱はたくさんあるから、持ってこなくてもいいですよ。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-agr-translate-story
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-gram-te-morau
+    prompt:
+      source_text: 友達に冷蔵庫を運んでもらいました。本当に助かりました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi được bạn khiêng tủ lạnh giúp. Thật sự đỡ quá.
+        - Tôi được bạn khiêng giúp tủ lạnh. Thật sự đỡ quá.
+        - Bạn đã khiêng tủ lạnh giúp tôi. Thật sự đỡ quá.
+        - Bạn đã khiêng giúp tôi tủ lạnh. Thật sự đỡ quá.
+        - Tôi được bạn khiêng tủ lạnh giúp. Đỡ cho tôi quá.
+        - Bạn đã khiêng tủ lạnh giúp tôi. Đỡ cho tôi quá.
+        - Tôi được bạn chuyển tủ lạnh giúp. Thật sự đỡ quá.
+        - Bạn đã chuyển tủ lạnh giúp tôi. Thật sự đỡ quá.
+        - Tôi được bạn khiêng tủ lạnh giúp. Bạn giúp tôi nhiều lắm.
+        - Bạn đã khiêng tủ lạnh giúp tôi. Thật sự may quá.
+        - Tôi được bạn khiêng tủ lạnh giúp. Thật sự may quá.
+        - Tôi được bạn mang tủ lạnh giúp. Thật sự đỡ quá.
+        - Bạn đã mang tủ lạnh giúp tôi. Thật sự đỡ quá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã khiêng tủ lạnh giúp bạn. Thật sự đỡ quá.
+        feedback_vi: てもらいました - tôi được bạn (に) làm cho, không phải tôi giúp bạn.
+        error_tag: giving_direction
+      - answer: Tôi nhờ bạn khiêng tủ lạnh nhưng bạn không giúp.
+        feedback_vi: 運んでもらいました là đã được giúp xong, không có ý từ chối.
+        error_tag: giving_direction
+    explanation:
+      vi: 友達に…運んでもらいました - tôi được bạn khiêng giúp. 本当に助かりました - thật sự đỡ cho tôi quá.
+    display_answer: Tôi được bạn khiêng tủ lạnh giúp. Thật sự đỡ quá.
+
+  - key: ja:exercise:n4-agr-order-reason
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-potential
+    prompt:
+      instruction: 'Sắp xếp thành câu: "Tôi không khiêng một mình được nên bạn giúp tôi được không?"'
+      tokens:
+        - { id: t-tetsudatte, text: 手伝って }
+        - { id: t-hakobenai, text: 運べない }
+        - { id: t-node, text: ので、 }
+        - { id: t-hitori, text: 一人で }
+        - { id: t-kuremasenka, text: くれませんか。 }
+        - { id: t-hakobanai, text: 運ばない }
+    answer:
+      orders:
+        - [t-hitori, t-hakobenai, t-node, t-tetsudatte, t-kuremasenka]
+    explanation:
+      vi: Lý do (一人で運べないので) đứng trước lời nhờ (手伝ってくれませんか). 運ばない là "không khiêng" - thiếu nghĩa "không thể".
+    display_answer: 一人で運べないので、手伝ってくれませんか。
+
+  - key: ja:exercise:n4-agr-mcq-retell
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-kureru
+    prompt:
+      stem: 'Câu nào cùng nghĩa với 木村さんに荷物を運んでもらいました。?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: 木村さんが荷物を運んでくれました。, lang: ja }
+        - { id: j7r, text: 木村さんに荷物を運んであげました。, lang: ja }
+        - { id: c1o, text: 木村さんが荷物を運んでもらいました。, lang: ja }
+        - { id: n5g, text: 私が木村さんの荷物を運びました。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Aに V-てもらう = Aが V-てくれる - anh Kimura khiêng đồ giúp tôi. Các câu còn lại đổi hướng người làm, người nhận.
+    display_answer: 木村さんが荷物を運んでくれました。
+
+  - key: ja:exercise:n4-agr-translate-must-clean
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-nakereba-naranai
+    prompt:
+      source_text: Trước khi chuyển nhà, tôi phải dọn dẹp phòng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 引っ越しの前に、部屋を掃除しなければなりません。
+        - 引っ越しの前に部屋を掃除しなければなりません。
+        - ひっこしのまえに、へやをそうじしなければなりません。
+        - 引っ越す前に、部屋を掃除しなければなりません。
+        - 引っ越す前に部屋を掃除しなければなりません。
+        - 引っ越しの前に、部屋を掃除しなければいけません。
+        - 引っ越す前に、部屋を掃除しなければいけません。
+        - 引っ越しの前に、部屋を片付けなければなりません。
+        - 引っ越す前に、部屋を片付けなければなりません。
+        - 引っ越しの前に、部屋をきれいにしなければなりません。
+    known_wrong:
+      - answer: 引っ越しの前に、部屋を掃除しなくてもいいです。
+        feedback_vi: なくてもいい là "không cần" - ngược nghĩa.
+        error_tag: negation
+      - answer: 引っ越しの後で、部屋を掃除しなければなりません。
+        feedback_vi: 後で là "sau khi". "Trước khi" là の前に.
+        error_tag: vocab_time_word
+    explanation:
+      vi: Danh từ + の前に hoặc V辞書形 + 前に = trước khi. する → しない → しなければなりません.
+    display_answer: 引っ越しの前に、部屋を掃除しなければなりません。

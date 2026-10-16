@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n4-obligation
+order_index: 4
+level: n4
+title:
+  vi: Phải làm và không cần làm
+objectives:
+  - vi: Nói "phải làm V" bằng V-なければなりません.
+  - vi: Nói "không cần làm V" bằng V-なくてもいいです.
+  - vi: Dùng までに cho hạn chót và hiểu dạng rút gọn なきゃ.
+estimated_minutes: 15
+skills: [grammar, vocabulary, listening, writing]
+prerequisites: [ja:lesson:n4-te-giving]
+items:
+  - item: ja:item:n4-gram-nakereba-naranai
+  - item: ja:item:n4-gram-nakute-mo-ii
+  - item: ja:item:n4-repooto
+  - item: ja:item:n4-shimekiri
+  - item: ja:item:n4-zangyou
+  - item: ja:item:n4-kusuri
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi phải nộp báo cáo trước thứ Sáu", "Hôm nay tôi phải tăng ca" và "Ngày mai bạn không cần đến cũng được".
+  - type: explain
+    text:
+      vi: "Cả hai mẫu đều bắt đầu từ thể ない đã học ở unit 1. Phải làm: bỏ い, thêm ければなりません (行かない → 行かなければなりません). Không cần làm: bỏ い, thêm くてもいいです (行かない → 行かなくてもいいです)."
+  - type: explain
+    text:
+      vi: なければなりません dịch sát là "nếu không làm thì không được" - hai lần phủ định thành khẳng định "phải". なくてもいい là "không làm cũng được", tức "không cần".
+  - type: explain
+    text:
+      vi: Hạn chót dùng までに (金曜日までに - trước/chậm nhất thứ Sáu). Hỏi "có phải làm không?" thì trả lời はい、～なければなりません hoặc いいえ、～なくてもいいです.
+  - type: deep_explain
+    text:
+      vi: Trong hội thoại thân mật, なければ rút thành なきゃ (行かなきゃ - phải đi rồi), và なくてもいい thành なくていい. Còn có なければいけません - nghĩa gần như なければなりません, hơi mang tính cá nhân hơn; cả hai đều đúng trong bài thi.
+  - type: example
+    target: 金曜日までにレポートを出さなければなりません。
+    target_lang: ja
+    translation:
+      vi: Tôi phải nộp báo cáo trước thứ Sáu.
+    note:
+      vi: 出す → 出さない → 出さなければなりません; までに là hạn chót.
+  - type: example
+    target: 今日は残業しなければなりません。
+    target_lang: ja
+    translation:
+      vi: Hôm nay tôi phải tăng ca.
+    note:
+      vi: する → しない → しなければなりません.
+  - type: example
+    target: 明日は来なくてもいいです。
+    target_lang: ja
+    translation:
+      vi: Ngày mai bạn không cần đến cũng được.
+    note:
+      vi: 来る → 来ない (こない) → 来なくてもいいです.
+  - type: example
+    target: もう帰らなきゃ。
+    target_lang: ja
+    translation:
+      vi: Tớ phải về rồi.
+    note:
+      vi: Dạng thân mật của 帰らなければなりません.
+  - type: common_mistake
+    wrong: 薬を飲みなければなりません。
+    right: 薬を飲まなければなりません。
+    target_lang: ja
+    note:
+      vi: Bắt đầu từ thể ない (飲まない), không từ thể ます (飲み).
+  - type: common_mistake
+    wrong: 金曜日までレポートを出さなければなりません。
+    right: 金曜日までにレポートを出さなければなりません。
+    target_lang: ja
+    note:
+      vi: Hạn chót cho một hành động xảy ra một lần dùng までに. まで là "đến tận", cho việc kéo dài (金曜日まで休みます).
+  - type: common_mistake
+    wrong: 明日は来ないでもいいです。
+    right: 明日は来なくてもいいです。
+    target_lang: ja
+    note:
+      vi: Mẫu "không cần" là なくてもいい - い đổi thành くて. ないでください là "đừng làm", nghĩa khác.
+  - type: summary
+    points:
+      - vi: V-ない bỏ い + ければなりません - phải làm.
+      - vi: V-ない bỏ い + くてもいいです - không cần làm.
+      - vi: Hạn chót - までに. Thân mật - なきゃ, なくていい.
+      - vi: レポート báo cáo · 締め切り hạn chót · 残業 tăng ca · 薬 thuốc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n4-obl-mcq-must-go
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-gram-nakereba-naranai
+    prompt:
+      stem: '"Tôi phải đến bệnh viện." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: k3v, text: 病院へ行かなければなりません。, lang: ja }
+        - { id: p8d, text: 病院へ行きなければなりません。, lang: ja }
+        - { id: w2s, text: 病院へ行かなくてもいいです。, lang: ja }
+        - { id: m6q, text: 病院へ行かないでください。, lang: ja }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: 行く → 行かない → 行かなければなりません. 行きなければ chia sai (từ thể ます); なくてもいい là "không cần"; ないでください là "đừng".
+    display_answer: 病院へ行かなければなりません。
+
+  - key: ja:exercise:n4-obl-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-gram-nakute-mo-ii
+    prompt:
+      stem: 靴を脱がなくてもいいですよ。 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: Không cần cởi giày đâu., lang: vi }
+        - { id: y1n, text: Đừng cởi giày., lang: vi }
+        - { id: e7c, text: Phải cởi giày., lang: vi }
+        - { id: h4b, text: Cởi giày ra cũng được., lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: なくてもいい là "không làm cũng được" = không cần. "Đừng" là 脱がないでください; "phải" là 脱がなければなりません; "cởi cũng được" là 脱いでもいいです.
+    display_answer: Không cần cởi giày đâu.
+
+  - key: ja:exercise:n4-obl-listen-overtime
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-zangyou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 今日は残業しなければなりません。
+      options:
+        - { id: a8u, text: Hôm nay tôi phải tăng ca., lang: vi }
+        - { id: q2z, text: Hôm nay tôi không cần tăng ca., lang: vi }
+        - { id: d6l, text: Hôm nay tôi đã tăng ca., lang: vi }
+        - { id: s9f, text: Hôm nay tôi muốn nghỉ làm., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 残業 là tăng ca; しなければなりません là "phải làm". "Không cần" sẽ là しなくてもいいです.
+    display_answer: Hôm nay tôi phải tăng ca.
+
+  - key: ja:exercise:n4-obl-fill-deadline
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-shimekiri
+    prompt:
+      template: "Hạn chót là thứ Sáu. Phải nộp trước thứ Sáu. - 締め切りは金曜日です。金曜日{{b1}}出さなければなりません。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Hạn chót cho một hành động xảy ra một lần.
+        - まで + に.
+    answer:
+      blanks:
+        b1: [までに]
+    known_wrong:
+      - answer: まで
+        feedback_vi: まで là "đến tận" (hành động kéo dài). Hạn chót dùng までに.
+        error_tag: madeni
+      - answer: に
+        feedback_vi: 金曜日に là "vào thứ Sáu" - không nói "chậm nhất".
+        error_tag: madeni
+    explanation:
+      vi: までに = trước, chậm nhất là. Hành động nộp (出す) xảy ra một lần trước hạn nên dùng までに.
+    display_answer: 締め切りは金曜日です。金曜日までに出さなければなりません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n4-obl-fill-medicine
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-kusuri
+    prompt:
+      template: "Ngày nào tôi cũng phải uống thuốc. - 毎日薬を{{b1}}なりません。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [飲まなければ, のまなければ]
+    known_wrong:
+      - answer: 飲みなければ
+        feedback_vi: Bắt đầu từ thể ない - 飲まない → 飲まなければ.
+        error_tag: nakereba_form
+      - answer: 飲まないければ
+        feedback_vi: Bỏ い của ない rồi mới thêm ければ - 飲まなければ.
+        error_tag: nakereba_form
+      - answer: 食べなければ
+        feedback_vi: Uống thuốc dùng 飲む, không dùng 食べる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 飲む → 飲まない → 飲まなければなりません. Tiếng Nhật "uống" thuốc bằng 飲む giống uống nước.
+    display_answer: 毎日薬を飲まなければなりません。
+
+  - key: ja:exercise:n4-obl-fill-no-need
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nakute-mo-ii
+    prompt:
+      template: "Ngày mai không cần đến cũng được. - 明日は{{b1}}もいいです。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [来なくて, こなくて]
+    known_wrong:
+      - answer: 来ないで
+        feedback_vi: ないで dùng cho ないでください (đừng). "Không cần" là なくてもいい.
+        error_tag: nakute_form
+      - answer: 来なくで
+        feedback_vi: い đổi thành くて (có て, không có ゛).
+        error_tag: nakute_form
+      - answer: 来て
+        feedback_vi: 来てもいいです là "đến cũng được" - ý khác.
+        error_tag: negation
+    explanation:
+      vi: 来る → 来ない (こない) → 来なくて + もいいです.
+    display_answer: 明日は来なくてもいいです。
+
+  - key: ja:exercise:n4-obl-translate-report
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-repooto
+    prompt:
+      source_text: Tối nay tôi phải viết báo cáo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今晩レポートを書かなければなりません。
+        - 今晩、レポートを書かなければなりません。
+        - こんばんレポートをかかなければなりません。
+        - 今夜レポートを書かなければなりません。
+        - 今夜、レポートを書かなければなりません。
+        - 今晩レポートを書かなければいけません。
+        - 今晩、レポートを書かなければいけません。
+        - 今夜、レポートを書かなければいけません。
+        - 今晩はレポートを書かなければなりません。
+        - 今夜はレポートを書かなければなりません。
+    known_wrong:
+      - answer: 今晩レポートを書きなければなりません。
+        feedback_vi: Bắt đầu từ thể ない - 書かない → 書かなければ.
+        error_tag: nakereba_form
+      - answer: 今晩レポートを書かなくてもいいです。
+        feedback_vi: なくてもいい là "không cần" - ngược nghĩa.
+        error_tag: negation
+    explanation:
+      vi: 書く → 書かない → 書かなければなりません. 今晩 / 今夜 đều là "tối nay".
+    display_answer: 今晩レポートを書かなければなりません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n4-obl-mcq-answer
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nakute-mo-ii
+    prompt:
+      stem: 'Đồng nghiệp hỏi 土曜日も会社に来なければなりませんか。 Thứ Bảy được nghỉ. Bạn trả lời thế nào?'
+      stem_lang: vi
+      options:
+        - { id: v4x, text: いいえ、来なくてもいいです。, lang: ja }
+        - { id: j7r, text: いいえ、来てはいけません。, lang: ja }
+        - { id: c1o, text: はい、来なければなりません。, lang: ja }
+        - { id: n5g, text: いいえ、来ないでもいいです。, lang: ja }
+    answer:
+      correct_option_id: v4x
+    explanation:
+      vi: Hỏi "có phải … không" mà câu trả lời là không cần thì dùng なくてもいいです. 来てはいけません là cấm đến; 来ないでもいい sai mẫu.
+    display_answer: いいえ、来なくてもいいです。
+
+  - key: ja:exercise:n4-obl-translate-shoes
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-gram-nakereba-naranai
+    prompt:
+      source_text: この部屋に入る前に、靴を脱がなければなりません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước khi vào phòng này, phải cởi giày.
+        - Trước khi vào phòng này phải cởi giày.
+        - Trước khi vào phòng này, bạn phải cởi giày.
+        - Trước khi vào phòng này bạn phải cởi giày.
+        - Trước khi vào căn phòng này, phải cởi giày.
+        - Trước khi vào căn phòng này, bạn phải cởi giày.
+        - Phải cởi giày trước khi vào phòng này.
+        - Bạn phải cởi giày trước khi vào phòng này.
+        - Trước khi vào phòng này, phải bỏ giày ra.
+        - Trước khi vào phòng này, phải cởi giày ra.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trước khi vào phòng này, không cần cởi giày.
+        feedback_vi: なければなりません là "phải", không phải "không cần".
+        error_tag: negation
+      - answer: Sau khi vào phòng này, phải cởi giày.
+        feedback_vi: 入る前に là "trước khi vào".
+        error_tag: vocab_time_word
+    explanation:
+      vi: 入る前に = trước khi vào; 脱がなければなりません = phải cởi (脱ぐ → 脱がない).
+    display_answer: Trước khi vào phòng này, phải cởi giày.
+
+  - key: ja:exercise:n4-obl-order-casual
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-gram-nakereba-naranai
+    prompt:
+      instruction: 'Sắp xếp thành câu thân mật: "Muộn rồi, tớ phải về thôi."'
+      tokens:
+        - { id: t-kaerinakya, text: 帰りなきゃ。 }
+        - { id: t-kaeranakya, text: 帰らなきゃ。 }
+        - { id: t-osoi, text: もう遅いから、 }
+    answer:
+      orders:
+        - [t-osoi, t-kaeranakya]
+    explanation:
+      vi: 帰る (nhóm 1) → 帰らない → 帰らなければ → rút gọn 帰らなきゃ. 帰りなきゃ chia sai từ thể ます.
+    display_answer: もう遅いから、帰らなきゃ。
+
+  - key: ja:exercise:n4-obl-translate-no-need-pay
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-gram-nakute-mo-ii
+    prompt:
+      source_text: Trẻ em không cần trả tiền.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 子どもはお金を払わなくてもいいです。
+        - 子供はお金を払わなくてもいいです。
+        - こどもはおかねをはらわなくてもいいです。
+        - 子どもは払わなくてもいいです。
+        - 子供は払わなくてもいいです。
+        - 子どもはお金を払わなくてもいい。
+        - 子供はお金を払わなくてもいい。
+        - 子どもはお金を払わなくていいです。
+        - 子供はお金を払わなくていいです。
+    known_wrong:
+      - answer: 子どもはお金を払いなくてもいいです。
+        feedback_vi: 払う (nhóm 1, đuôi う) → 払わない, không phải 払いない.
+        error_tag: nai_form
+      - answer: 子どもはお金を払わないでください。
+        feedback_vi: ないでください là "đừng trả" - mang tính cấm, khác "không cần".
+        error_tag: nakute_form
+      - answer: 子どもはお金を払わなければなりません。
+        feedback_vi: なければなりません là "phải trả" - ngược nghĩa.
+        error_tag: negation
+    explanation:
+      vi: 払う → 払わない (う → わ) → 払わなくてもいいです. 子ども / 子供 đều được.
+    display_answer: 子どもはお金を払わなくてもいいです。
