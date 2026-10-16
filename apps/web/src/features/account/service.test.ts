@@ -58,6 +58,7 @@ describe('account service', () => {
   it('maps errors to Vietnamese', () => {
     expect(accountErrorMessage({ message: 'rate_limited', code: 'P0001' }, 'export')).toMatch(/nhiều lần/);
     expect(accountErrorMessage({ message: 'invalid_confirmation', code: 'P0001' }, 'delete')).toMatch(/XOA TAI KHOAN/);
+    expect(accountErrorMessage({ message: 'last_admin_required', code: 'P0001' }, 'delete')).toMatch(/quản trị viên cuối cùng/);
     expect(accountErrorMessage({ message: 'TypeError: Failed to fetch', code: '' }, 'export')).toMatch(/Không kết nối/);
     expect(accountErrorMessage(new Error('boom'), 'export')).toBe('Chưa tải được dữ liệu. Vui lòng thử lại.');
     expect(accountErrorMessage(new Error('boom'), 'delete')).toBe('Chưa xoá được tài khoản. Vui lòng thử lại.');

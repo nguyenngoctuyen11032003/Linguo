@@ -134,6 +134,7 @@ const MESSAGES: Record<string, string> = {
   rate_limited: 'Bạn đã tải dữ liệu nhiều lần trong giờ qua. Vui lòng thử lại sau ít phút.',
   invalid_confirmation: `Chuỗi xác nhận chưa đúng. Hãy gõ chính xác “${DELETE_CONFIRM_PHRASE}”.`,
   not_authenticated: 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.',
+  last_admin_required: 'Bạn là quản trị viên cuối cùng. Hãy cấp quyền quản trị cho người khác trong Quản trị → Nhân sự trước khi xoá tài khoản.',
 };
 
 /** Vietnamese message for an export/delete failure. */
