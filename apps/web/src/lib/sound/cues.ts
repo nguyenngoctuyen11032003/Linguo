@@ -1,0 +1,250 @@
+import type { Voice } from './engine';
+
+/**
+ * The sound kit. Design rules:
+ * - One tonal family (C major pentatonic, bright octave 5–7) so every positive cue sounds related.
+ * - Success rises, failure falls, neutral stays flat. Failure is soft and low, never a buzzer: a learner who just
+ *   got something wrong should feel "not quite", not punished.
+ * - Frequent cues (tap, select, flip) are quiet and under 80 ms; rare cues (lesson complete, badge) are allowed
+ *   to be rich and longer, because rarity is what makes them feel earned.
+ */
+export type SoundCue =
+  | 'tap'
+  | 'select'
+  | 'correct'
+  | 'almost'
+  | 'incorrect'
+  | 'reveal'
+  | 'combo'
+  | 'complete'
+  | 'perfect'
+  | 'achievement'
+  | 'streak'
+  | 'flip'
+  | 'next'
+  | 'send'
+  | 'receive'
+  | 'recordStart'
+  | 'recordStop'
+  | 'tick'
+  | 'warning'
+  | 'error'
+  | 'toggleOn'
+  | 'toggleOff';
+
+// Equal-tempered pitches used by the kit.
+const N = {
+  C4: 261.63,
+  G4: 392.0,
+  A4: 440.0,
+  C5: 523.25,
+  D5: 587.33,
+  E5: 659.25,
+  G5: 783.99,
+  A5: 880.0,
+  C6: 1046.5,
+  D6: 1174.66,
+  E6: 1318.51,
+  G6: 1567.98,
+  A6: 1760.0,
+  C7: 2093.0,
+} as const;
+
+/** A bell: fundamental plus slightly inharmonic partials, quick attack, long decay. */
+function bell(v: Voice, freq: number, at: number, dur: number, gain: number): void {
+  v.tone({ freq, at, dur, type: 'sine', gain, attack: 0.004, echo: true });
+  v.tone({ freq: freq * 2.01, at, dur: dur * 0.6, type: 'sine', gain: gain * 0.35, attack: 0.004 });
+  v.tone({ freq: freq * 3.98, at, dur: dur * 0.3, type: 'sine', gain: gain * 0.12, attack: 0.002 });
+}
+
+export interface CueDef {
+  /** Loudness relative to the user's volume (0..1). */
+  level: number;
+  /** Vibration pattern (ms) for devices that support it; omitted for cues too frequent to buzz. */
+  haptic?: number[];
+  /** Ignore repeats closer than this (ms), e.g. a key held down. */
+  minGap?: number;
+  play: (v: Voice, intensity: number) => void;
+}
+
+export const CUES: Record<SoundCue, CueDef> = {
+  // A barely-there click for buttons; only used on primary actions, not every link.
+  tap: {
+    level: 0.35,
+    minGap: 40,
+    play: (v) => {
+      v.tone({ freq: 1500, dur: 0.03, type: 'sine', gain: 0.18, attack: 0.002, glideTo: 1100 });
+      v.noise({ dur: 0.012, gain: 0.04, freq: 4000, q: 0.8 });
+    },
+  },
+  // Picking a choice / chip before checking it.
+  select: {
+    level: 0.4,
+    minGap: 40,
+    play: (v) => v.tone({ freq: N.A5, dur: 0.06, type: 'triangle', gain: 0.22, attack: 0.003, glideTo: N.C6 }),
+  },
+  // Classic two-note "ding-ding" rising a major third.
+  correct: {
+    level: 0.7,
+    haptic: [14],
+    play: (v) => {
+      bell(v, N.C6, 0, 0.18, 0.26);
+      bell(v, N.E6, 0.085, 0.42, 0.3);
+    },
+  },
+  // Correct while on a streak of answers: arpeggio that climbs one step per combo level (intensity 0..1).
+  combo: {
+    level: 0.72,
+    haptic: [10, 40, 14],
+    play: (v, intensity) => {
+      const lift = 2 ** (Math.round(intensity * 5) / 12); // up to +5 semitones
+      const notes = [N.C6, N.E6, N.G6, N.C7];
+      notes.forEach((f, i) => bell(v, f * lift, i * 0.06, i === notes.length - 1 ? 0.5 : 0.16, 0.2 + i * 0.03));
+      v.noise({ at: 0.18, dur: 0.35, gain: 0.025, filter: 'highpass', freq: 6000, echo: true });
+    },
+  },
+  // Accepted with a small slip (typo, accent): one warm note that lifts slightly. Positive, but less than correct.
+  almost: {
+    level: 0.6,
+    haptic: [12],
+    play: (v) => {
+      v.tone({ freq: N.G5, dur: 0.14, type: 'triangle', gain: 0.22 });
+      v.tone({ freq: N.A5, at: 0.1, dur: 0.3, type: 'sine', gain: 0.22, echo: true });
+    },
+  },
+  // Soft descending "bwom-bwom": low, filtered, gentle. Never a buzzer.
+  incorrect: {
+    level: 0.6,
+    haptic: [30, 60, 30],
+    play: (v) => {
+      v.tone({ freq: N.G4, dur: 0.16, type: 'triangle', gain: 0.26, attack: 0.01 });
+      v.tone({ freq: 349.23, at: 0.15, dur: 0.38, type: 'triangle', gain: 0.24, attack: 0.012, glideTo: 311.13 });
+      v.tone({ freq: 174.61, at: 0.15, dur: 0.38, type: 'sine', gain: 0.12, glideTo: 155.56 });
+    },
+  },
+  // The correct answer is revealed after the last try: neutral, informative.
+  reveal: {
+    level: 0.45,
+    play: (v) => {
+      v.tone({ freq: N.E5, dur: 0.12, type: 'sine', gain: 0.22 });
+      v.tone({ freq: N.E5, at: 0.12, dur: 0.22, type: 'sine', gain: 0.18 });
+    },
+  },
+  // Lesson / session / review finished: short fanfare then a held major chord with sparkle.
+  complete: {
+    level: 0.8,
+    haptic: [18, 70, 18, 70, 45],
+    play: (v) => {
+      [N.C5, N.E5, N.G5, N.C6].forEach((f, i) => v.tone({ freq: f, at: i * 0.09, dur: 0.16, type: 'triangle', gain: 0.24 }));
+      [N.C6, N.E6, N.G6].forEach((f) => bell(v, f, 0.38, 1.1, 0.16));
+      v.tone({ freq: N.C4, at: 0.38, dur: 0.9, type: 'sine', gain: 0.14 });
+      v.noise({ at: 0.38, dur: 0.9, gain: 0.03, filter: 'highpass', freq: 5000, sweepTo: 9000, echo: true });
+    },
+  },
+  // 100% accuracy on a lesson or exam: the complete fanfare's bigger sibling with a high bell on top.
+  perfect: {
+    level: 0.85,
+    haptic: [18, 60, 18, 60, 18, 60, 60],
+    play: (v) => {
+      [N.C5, N.E5, N.G5, N.C6, N.E6].forEach((f, i) => v.tone({ freq: f, at: i * 0.075, dur: 0.15, type: 'triangle', gain: 0.22 }));
+      [N.C6, N.E6, N.G6, N.C7].forEach((f) => bell(v, f, 0.4, 1.3, 0.13));
+      bell(v, N.G6 * 2, 0.75, 0.9, 0.08);
+      v.noise({ at: 0.4, dur: 1.1, gain: 0.035, filter: 'highpass', freq: 5000, sweepTo: 10000, echo: true });
+    },
+  },
+  // Badge unlocked, level up, milestone: upward shimmer resolving on a bright bell.
+  achievement: {
+    level: 0.8,
+    haptic: [20, 40, 20, 40, 70],
+    play: (v) => {
+      v.tone({ freq: N.G4, dur: 0.45, type: 'sine', gain: 0.12, glideTo: N.G6 });
+      [N.D6, N.G6, N.A6].forEach((f, i) => bell(v, f, 0.32 + i * 0.07, 0.9 - i * 0.15, 0.16));
+      v.noise({ dur: 0.45, gain: 0.03, filter: 'bandpass', freq: 1500, sweepTo: 8000, q: 2, echo: true });
+    },
+  },
+  // Daily goal hit / streak extended: warm low "whomp" lifting into two bright notes.
+  streak: {
+    level: 0.75,
+    haptic: [25, 50, 25],
+    play: (v) => {
+      v.tone({ freq: 196, dur: 0.22, type: 'sine', gain: 0.22, glideTo: 392 });
+      bell(v, N.G5, 0.14, 0.25, 0.2);
+      bell(v, N.D6, 0.24, 0.6, 0.22);
+    },
+  },
+  // Flashcard flip: a short airy swish.
+  flip: {
+    level: 0.4,
+    minGap: 80,
+    play: (v) => v.noise({ dur: 0.12, gain: 0.12, filter: 'bandpass', freq: 900, sweepTo: 3500, q: 1.4 }),
+  },
+  // Moving on to the next exercise / card.
+  next: {
+    level: 0.3,
+    minGap: 60,
+    play: (v) => v.tone({ freq: N.E5, dur: 0.07, type: 'sine', gain: 0.16, glideTo: N.A5 }),
+  },
+  // Chat message sent (tutor, role-play): quick upward whoosh.
+  send: {
+    level: 0.4,
+    play: (v) => {
+      v.tone({ freq: 520, dur: 0.09, type: 'sine', gain: 0.18, glideTo: 980 });
+      v.noise({ dur: 0.08, gain: 0.03, filter: 'highpass', freq: 2500, sweepTo: 6000 });
+    },
+  },
+  // Reply arrived: two soft pops.
+  receive: {
+    level: 0.4,
+    play: (v) => {
+      v.tone({ freq: N.A5, dur: 0.07, type: 'sine', gain: 0.18 });
+      v.tone({ freq: N.D6, at: 0.07, dur: 0.12, type: 'sine', gain: 0.16 });
+    },
+  },
+  // Microphone opens / closes (speaking practice).
+  recordStart: {
+    level: 0.45,
+    haptic: [15],
+    play: (v) => v.tone({ freq: N.A4, dur: 0.12, type: 'sine', gain: 0.22, glideTo: N.E5 }),
+  },
+  recordStop: {
+    level: 0.45,
+    play: (v) => v.tone({ freq: N.E5, dur: 0.12, type: 'sine', gain: 0.2, glideTo: N.A4 }),
+  },
+  // Exam countdown in the final seconds: dry woodblock.
+  tick: {
+    level: 0.35,
+    minGap: 400,
+    play: (v) => {
+      v.tone({ freq: 1200, dur: 0.035, type: 'triangle', gain: 0.2, attack: 0.001 });
+      v.noise({ dur: 0.02, gain: 0.05, filter: 'bandpass', freq: 2500, q: 3 });
+    },
+  },
+  // Attention without alarm (e.g. 5 minutes left, leaving with unsaved work).
+  warning: {
+    level: 0.55,
+    haptic: [40],
+    minGap: 1000,
+    play: (v) => {
+      v.tone({ freq: N.D5, dur: 0.14, type: 'triangle', gain: 0.22 });
+      v.tone({ freq: N.D5, at: 0.18, dur: 0.2, type: 'triangle', gain: 0.2 });
+    },
+  },
+  // Something failed (save, network): dull, low, short. Distinct from a wrong answer.
+  error: {
+    level: 0.5,
+    haptic: [50],
+    minGap: 1000,
+    play: (v) => {
+      v.tone({ freq: 220, dur: 0.12, type: 'triangle', gain: 0.24 });
+      v.tone({ freq: 207.65, at: 0.13, dur: 0.18, type: 'triangle', gain: 0.22 });
+    },
+  },
+  toggleOn: {
+    level: 0.4,
+    play: (v) => v.tone({ freq: N.E5, dur: 0.08, type: 'sine', gain: 0.2, glideTo: N.A5 }),
+  },
+  toggleOff: {
+    level: 0.4,
+    play: (v) => v.tone({ freq: N.A5, dur: 0.08, type: 'sine', gain: 0.18, glideTo: N.E5 }),
+  },
+};
