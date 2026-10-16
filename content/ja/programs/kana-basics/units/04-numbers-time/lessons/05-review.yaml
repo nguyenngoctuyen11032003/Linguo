@@ -1,0 +1,356 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:numbers-time-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Số, giá tiền và giờ giấc
+objectives:
+  - vi: Phân biệt ba câu hỏi - いくら (giá), いくつ / なんにん (số lượng), なんじ / なんようび (thời gian).
+  - vi: Nhớ các số đổi âm trong tiền, giờ, phút.
+  - vi: Dùng số trong tình huống thật - hỏi giá, nói giờ, nói số người.
+estimated_minutes: 15
+skills: [listening, speaking, vocabulary, writing]
+prerequisites: [ja:lesson:time-days]
+items:
+  - item: ja:item:num-tens
+    role: reuse
+  - item: ja:item:hyaku
+    role: reuse
+  - item: ja:item:sen
+    role: reuse
+  - item: ja:item:man
+    role: reuse
+  - item: ja:item:en
+    role: reuse
+  - item: ja:item:ikura
+    role: reuse
+  - item: ja:item:tsu-counter
+    role: reuse
+  - item: ja:item:ikutsu
+    role: reuse
+  - item: ja:item:nin-counter
+    role: reuse
+  - item: ja:item:ji-hours
+    role: reuse
+  - item: ja:item:fun-minutes
+    role: reuse
+  - item: ja:item:youbi
+    role: reuse
+  - item: ja:item:kyou-ashita
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng số tự tin trong các tình huống hằng ngày - ở cửa hàng, ở quán ăn, khi hẹn giờ.
+  - type: explain
+    text:
+      vi: Mỗi loại câu hỏi đi với một từ để hỏi riêng - いくら (bao nhiêu tiền), いくつ (mấy cái), なんにん (mấy người), なんじ (mấy giờ), なんようび (thứ mấy), なんばん (số mấy). Chọn đúng từ hỏi là bạn đã hiểu một nửa câu trả lời.
+  - type: explain
+    text:
+      vi: Các chỗ đổi âm thường gặp - さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん (tiền); よじ, しちじ, くじ (giờ); いっぷん, さんぷん, ろっぷん, じゅっぷん (phút); ひとり, ふたり, よにん (người).
+  - type: deep_explain
+    text:
+      vi: Khi nghe giá tiền, hãy bắt từ hàng lớn nhất trước (まん, せん, ひゃく) rồi ghép phần còn lại. Người bán hàng Nhật thường nói giá kèm でございます (cách nói rất lịch sự của です) - さんびゃくえんでございます. Chủ đề tiếp theo sẽ dùng giờ và thứ để kể lịch sinh hoạt hằng ngày.
+  - type: example
+    target: すみません、これはいくらですか。- にせんはっぴゃくえんです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, cái này bao nhiêu tiền? - 2.800 yên.
+    note:
+      vi: はっぴゃく - 800 đổi âm.
+  - type: example
+    target: なんにんですか。- さんにんです。
+    target_lang: ja
+    translation:
+      vi: Mấy người ạ? - Ba người.
+    note:
+      vi: Câu hỏi quen thuộc khi vào nhà hàng.
+  - type: example
+    target: きょうはもくようびです。いま、ごごよじです。
+    target_lang: ja
+    translation:
+      vi: Hôm nay là thứ Năm. Bây giờ là 4 giờ chiều.
+    note:
+      vi: ごご - buổi chiều; よじ - 4 giờ.
+  - type: common_mistake
+    wrong: これはいくつですか。- ひゃくえんです。
+    right: これはいくらですか。- ひゃくえんです。
+    target_lang: ja
+    note:
+      vi: Hỏi giá tiền dùng いくら; いくつ hỏi số lượng.
+  - type: common_mistake
+    wrong: いま、きゅうじです。
+    right: いま、くじです。
+    target_lang: ja
+    note:
+      vi: 9 giờ là くじ.
+  - type: summary
+    points:
+      - vi: いくら giá · いくつ mấy cái · なんにん mấy người · なんじ mấy giờ · なんようび thứ mấy.
+      - vi: Tiền - ひゃく, せん, まん + えん; nhớ さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん.
+      - vi: Giờ - よじ, しちじ, くじ; phút - ふん / ぷん; rưỡi - はん.
+      - vi: Người - ひとり, ふたり, よにん; đồ vật - ひとつ… とお.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:nt-review-mcq-question-word
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ikura
+    prompt:
+      stem: Bạn muốn hỏi giá một cái cặp. Từ để hỏi nào đúng?
+      stem_lang: vi
+      options:
+        - { id: a8x, text: いくら, lang: ja }
+        - { id: b3y, text: いくつ, lang: ja }
+        - { id: c7z, text: なんにん, lang: ja }
+        - { id: d2a, text: なんじ, lang: ja }
+    answer:
+      correct_option_id: a8x
+    explanation:
+      vi: いくら hỏi giá tiền. いくつ hỏi số lượng, なんにん hỏi số người, なんじ hỏi giờ.
+    display_answer: いくら
+
+  - key: ja:exercise:nt-review-listen-price
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:man
+    prompt:
+      audio_asset_id: null
+      fallback_text: いちまんさんぜんえんです。
+      options:
+        - { id: e6b, text: 13.000 yên, lang: vi }
+        - { id: f1c, text: 3.000 yên, lang: vi }
+        - { id: g5d, text: 10.300 yên, lang: vi }
+        - { id: h9e, text: 1.300 yên, lang: vi }
+    answer:
+      correct_option_id: e6b
+    explanation:
+      vi: いちまん (10.000) + さんぜん (3.000) = 13.000. 10.300 là いちまんさんびゃく; 1.300 là せんさんびゃく.
+    display_answer: 13.000 yên
+
+  - key: ja:exercise:nt-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:youbi
+    prompt:
+      template: "きょうは{{b1}}ようびですか。- どようびです。あしたは{{b2}}ようびです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Hôm nay thứ mấy? - Thứ Bảy. Ngày mai là Chủ nhật."
+        - Chỗ thứ nhất là "mấy / gì"; chỗ thứ hai là chữ đầu của "Chủ nhật" (mặt trời).
+    answer:
+      blanks:
+        b1: [なん, 何]
+        b2: [にち, 日]
+    known_wrong:
+      - answer: げつ
+        feedback_vi: げつようび là thứ Hai; sau thứ Bảy là Chủ nhật - にちようび.
+        error_tag: weekday
+      - answer: なに
+        feedback_vi: Trước ようび đọc なん - なんようび.
+        error_tag: nan_nani
+    explanation:
+      vi: なんようび - thứ mấy; sau どようび (thứ Bảy) là にちようび (Chủ nhật).
+    display_answer: きょうはなんようびですか。- どようびです。あしたはにちようびです。
+
+  - key: ja:exercise:nt-review-order-time
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:fun-minutes
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Bây giờ là 4 giờ 10 phút.”"
+      tokens:
+        - { id: t1, text: じゅっぷん }
+        - { id: t2, text: いま }
+        - { id: t3, text: です }
+        - { id: t4, text: よじ }
+        - { id: t5, text: よんじ }
+    answer:
+      orders:
+        - [t2, t4, t1, t3]
+    explanation:
+      vi: いま + よじ (4 giờ, không phải よんじ) + じゅっぷん (10 phút) + です.
+    display_answer: いまよじじゅっぷんです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:nt-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hyaku
+    prompt:
+      template: "600 yên - {{b1}}えん. 7 giờ - {{b2}}. 2 người - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [ろっぴゃく, 六百]
+        b2: [しちじ, 七時]
+        b3: [ふたり, 二人]
+    known_wrong:
+      - answer: ろくひゃく
+        feedback_vi: 600 đổi âm thành ろっぴゃく.
+        error_tag: sound_change
+      - answer: ななじ
+        feedback_vi: 7 giờ đọc しちじ.
+        error_tag: hour_reading
+      - answer: ふたつ
+        feedback_vi: ふたつ đếm đồ vật; hai người là ふたり.
+        error_tag: counter_type
+    explanation:
+      vi: ろっぴゃく (600), しちじ (7 giờ), ふたり (2 người) - ba chỗ đổi âm/ngoại lệ hay gặp.
+    display_answer: ろっぴゃくえん / しちじ / ふたり
+
+  - key: ja:exercise:nt-review-write-price
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:en
+    prompt:
+      source_text: Cái đó 800 yên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - それははっぴゃくえんです。
+        - それは八百円です。
+        - それは800円です。
+        - それは８００円です。
+        - はっぴゃくえんです。
+        - 八百円です。
+    known_wrong:
+      - answer: それははちひゃくえんです。
+        feedback_vi: 800 đổi âm thành はっぴゃく.
+        error_tag: sound_change
+      - answer: これははっぴゃくえんです。
+        feedback_vi: '"Cái đó" là それ.'
+        error_tag: demonstrative
+    explanation:
+      vi: それは + はっぴゃく (800) + えん + です.
+    display_answer: それははっぴゃくえんです。
+
+  - key: ja:exercise:nt-review-write-people
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nin-counter
+    prompt:
+      source_text: Có mấy người? - Bốn người.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - なんにんですか。よにんです。
+        - なんにんですか。- よにんです。
+        - 何人ですか。四人です。
+        - 何人ですか。- 四人です。
+        - なんにんですか？よにんです。
+        - 何人ですか？四人です。
+    known_wrong:
+      - answer: なんにんですか。よんにんです。
+        feedback_vi: 4 người là よにん.
+        error_tag: counter_reading
+      - answer: いくつですか。よっつです。
+        feedback_vi: いくつ / よっつ đếm đồ vật; đếm người dùng なんにん / よにん.
+        error_tag: counter_type
+    explanation:
+      vi: なんにんですか - mấy người? よにんです - bốn người.
+    display_answer: なんにんですか。- よにんです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:nt-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kyou-ashita
+    prompt:
+      source_text: きょうはすいようびです。あしたはもくようびです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm nay là thứ Tư. Ngày mai là thứ Năm.
+        - Hôm nay là thứ Tư, ngày mai là thứ Năm.
+        - Hôm nay thứ Tư. Ngày mai thứ Năm.
+        - Hôm nay là ngày thứ Tư. Ngày mai là ngày thứ Năm.
+        - Hôm nay là thứ 4. Ngày mai là thứ 5.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay là thứ Năm. Ngày mai là thứ Sáu.
+        feedback_vi: すいようび (水, nước) là thứ Tư, もくようび (木, cây) là thứ Năm.
+        error_tag: weekday
+    explanation:
+      vi: きょう - hôm nay; あした - ngày mai. すいようび - thứ Tư; もくようび - thứ Năm.
+    display_answer: Hôm nay là thứ Tư. Ngày mai là thứ Năm.
+
+  - key: ja:exercise:nt-review-mcq-shop
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:tsu-counter
+    prompt:
+      stem: Nhân viên hỏi bạn muốn mua mấy cái bánh - ケーキはいくつですか。 Bạn muốn mua 5 cái. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m3f, text: いつつです。, lang: ja }
+        - { id: n7g, text: ごにんです。, lang: ja }
+        - { id: o2h, text: ごひゃくえんです。, lang: ja }
+        - { id: p6i, text: むっつです。, lang: ja }
+    answer:
+      correct_option_id: m3f
+    explanation:
+      vi: 5 cái là いつつ. ごにん là năm người, ごひゃくえん là giá tiền, むっつ là 6 cái.
+    display_answer: いつつです。
+
+  - key: ja:exercise:nt-review-write-time
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:ji-hours
+    prompt:
+      source_text: Bây giờ là mấy giờ? - 4 giờ rưỡi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - いまなんじですか。よじはんです。
+        - いまなんじですか。- よじはんです。
+        - いま、なんじですか。よじはんです。
+        - 今何時ですか。四時半です。
+        - 今何時ですか。- 四時半です。
+        - 今何時ですか。4時半です。
+        - いまなんじですか？よじはんです。
+        - いまなんじですか。よじさんじゅっぷんです。
+    known_wrong:
+      - answer: いまなんじですか。よんじはんです。
+        feedback_vi: 4 giờ là よじ.
+        error_tag: hour_reading
+      - answer: いまいくつですか。よじはんです。
+        feedback_vi: Hỏi giờ dùng なんじ.
+        error_tag: question_word
+    explanation:
+      vi: いまなんじですか - bây giờ mấy giờ? よじはんです - 4 giờ rưỡi.
+    display_answer: いまなんじですか。- よじはんです。

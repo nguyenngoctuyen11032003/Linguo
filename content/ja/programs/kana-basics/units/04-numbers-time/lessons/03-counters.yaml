@@ -1,0 +1,347 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:counters
+order_index: 3
+level: n5
+title:
+  vi: Đếm đồ vật và đếm người
+objectives:
+  - vi: Đếm đồ vật từ 1 đến 10 bằng ひとつ, ふたつ… とお; hỏi bằng いくつ.
+  - vi: Đếm người bằng 〜にん, nhớ ひとり, ふたり, よにん; hỏi bằng なんにん.
+  - vi: Nói gia đình mình có bao nhiêu người.
+estimated_minutes: 15
+skills: [vocabulary, speaking, listening]
+prerequisites: [ja:lesson:big-numbers-money]
+items:
+  - item: ja:item:tsu-counter
+  - item: ja:item:ikutsu
+  - item: ja:item:nin-counter
+  - item: ja:item:kazoku
+  - item: ja:item:keeki
+    role: reuse
+  - item: ja:item:jin
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời được "mấy cái?", "mấy người?" và giới thiệu gia đình bạn có bao nhiêu người.
+  - type: explain
+    text:
+      vi: Tiếng Nhật có bộ số riêng để đếm đồ vật chung - ひとつ, ふたつ, みっつ, よっつ, いつつ, むっつ, ななつ, やっつ, ここのつ, とお. Hỏi "mấy cái?" - いくつですか. Từ 11 trở lên dùng lại số thường.
+  - type: explain
+    text:
+      vi: Đếm người dùng 〜にん - さんにん, ごにん, じゅうにん. Ba ngoại lệ phải học thuộc - ひとり (1 người), ふたり (2 người), よにん (4 người). Hỏi "mấy người?" - なんにんですか.
+  - type: explain
+    text:
+      vi: Khác tiếng Việt, số lượng không đứng trước danh từ mà thường đứng sau, như một thông tin riêng - ケーキはふたつです (Bánh thì hai cái), かぞくはごにんです (Gia đình có năm người).
+  - type: deep_explain
+    text:
+      vi: Chữ 人 có ba cách đọc bạn đã gặp - じん (quốc tịch, ベトナムじん), にん (đếm người, さんにん), và り trong ひとり, ふたり. Tiếng Nhật còn nhiều lượng từ riêng (まい cho vật mỏng, ほん cho vật dài…); khi chưa nhớ, bộ ひとつ… là lựa chọn an toàn cho đồ vật. Chữ Hán - 一つ, 二つ, 三人, 家族 (かぞく).
+  - type: example
+    target: ケーキはいくつですか。- ふたつです。
+    target_lang: ja
+    translation:
+      vi: Bánh ngọt mấy cái? - Hai cái.
+    note:
+      vi: いくつ hỏi số lượng, trả lời bằng bộ ひとつ, ふたつ….
+  - type: example
+    target: がくせいはなんにんですか。- さんにんです。
+    target_lang: ja
+    translation:
+      vi: Có mấy sinh viên? - Ba người.
+    note:
+      vi: Đếm người - số + にん.
+  - type: example
+    target: わたしのかぞくはよにんです。
+    target_lang: ja
+    translation:
+      vi: Gia đình tôi có bốn người.
+    note:
+      vi: 4 người là よにん, không phải よんにん.
+  - type: example
+    target: ひとりです。
+    target_lang: ja
+    translation:
+      vi: (Tôi đi) một mình. / Một người.
+    note:
+      vi: Câu quen thuộc khi vào quán ăn và nhân viên hỏi đi mấy người.
+  - type: common_mistake
+    wrong: いちにんです。
+    right: ひとりです。
+    target_lang: ja
+    note:
+      vi: 1 người là ひとり, 2 người là ふたり - không ghép với にん.
+  - type: common_mistake
+    wrong: ケーキはじゅうつです。
+    right: ケーキはとおです。
+    target_lang: ja
+    note:
+      vi: 10 cái là とお - không có つ.
+  - type: summary
+    points:
+      - vi: Đồ vật - ひとつ ふたつ みっつ よっつ いつつ むっつ ななつ やっつ ここのつ とお; hỏi いくつ.
+      - vi: Người - ひとり, ふたり, さんにん, よにん, ごにん…; hỏi なんにん.
+      - vi: Số lượng thường đứng sau danh từ - かぞくはごにんです.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:counters-mcq-three
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:tsu-counter
+    prompt:
+      stem: '"Ba cái" (đếm đồ vật chung) nói thế nào?'
+      stem_lang: vi
+      options:
+        - { id: a2r, text: みっつ, lang: ja }
+        - { id: b7s, text: さんつ, lang: ja }
+        - { id: c1t, text: むっつ, lang: ja }
+        - { id: d5u, text: やっつ, lang: ja }
+    answer:
+      correct_option_id: a2r
+    explanation:
+      vi: 3 cái là みっつ. むっつ là 6 cái, やっつ là 8 cái; không có cách nói さんつ.
+    display_answer: みっつ
+
+  - key: ja:exercise:counters-mcq-two-people
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:nin-counter
+    prompt:
+      stem: '"Hai người" nói thế nào?'
+      stem_lang: vi
+      options:
+        - { id: e4v, text: ふたり, lang: ja }
+        - { id: f8w, text: ににん, lang: ja }
+        - { id: g3x, text: ふたつ, lang: ja }
+        - { id: h9y, text: にじん, lang: ja }
+    answer:
+      correct_option_id: e4v
+    explanation:
+      vi: 2 người là ふたり (ngoại lệ). ふたつ đếm đồ vật; じん dùng cho quốc tịch.
+    display_answer: ふたり
+
+  - key: ja:exercise:counters-listen-family
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kazoku
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのかぞくはごにんです。
+      options:
+        - { id: i6z, text: Gia đình tôi có năm người., lang: vi }
+        - { id: j1a, text: Gia đình tôi có bốn người., lang: vi }
+        - { id: k5b, text: Gia đình tôi có năm cái bánh., lang: vi }
+        - { id: l9c, text: Tôi có năm người bạn., lang: vi }
+    answer:
+      correct_option_id: i6z
+    explanation:
+      vi: かぞく - gia đình; ごにん - năm người. Bốn người là よにん.
+    display_answer: Gia đình tôi có năm người.
+
+  - key: ja:exercise:counters-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ikutsu
+    prompt:
+      template: "ケーキは{{b1}}ですか。- {{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Bánh mấy cái? - Một cái."
+        - Chỗ thứ nhất hỏi số lượng; chỗ thứ hai là "một cái" trong bộ đếm đồ vật.
+    answer:
+      blanks:
+        b1: [いくつ]
+        b2: [ひとつ, 一つ]
+    known_wrong:
+      - answer: いくら
+        feedback_vi: いくら hỏi giá tiền; hỏi số lượng dùng いくつ.
+        error_tag: ikura_ikutsu
+      - answer: いちつ
+        feedback_vi: Một cái là ひとつ.
+        error_tag: counter_reading
+      - answer: ひとり
+        feedback_vi: ひとり là một người; đồ vật dùng ひとつ.
+        error_tag: counter_type
+    explanation:
+      vi: いくつですか - mấy cái? ひとつです - một cái.
+    display_answer: ケーキはいくつですか。- ひとつです。
+
+  - key: ja:exercise:counters-order-students
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nin-counter
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Nhật: “Có mấy sinh viên?”"
+      tokens:
+        - { id: t1, text: ですか }
+        - { id: t2, text: なんにん }
+        - { id: t3, text: は }
+        - { id: t4, text: がくせい }
+        - { id: t5, text: いくつ }
+    answer:
+      orders:
+        - [t4, t3, t2, t1]
+    explanation:
+      vi: がくせい + は + なんにん + ですか. Hỏi số người dùng なんにん, không dùng いくつ.
+    display_answer: がくせいはなんにんですか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:counters-fill-people
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nin-counter
+    prompt:
+      template: "1 người - {{b1}}. 4 người - {{b2}}. 6 người - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ひとり, 一人]
+        b2: [よにん, 四人]
+        b3: [ろくにん, 六人]
+    known_wrong:
+      - answer: いちにん
+        feedback_vi: 1 người là ひとり.
+        error_tag: counter_reading
+      - answer: よんにん
+        feedback_vi: 4 người là よにん (không có ん sau よ).
+        error_tag: counter_reading
+      - answer: ろくり
+        feedback_vi: Chỉ 1 và 2 người dùng り; 6 người là ろくにん.
+        error_tag: counter_reading
+    explanation:
+      vi: ひとり, ふたり là ngoại lệ; 4 người là よにん; còn lại số + にん.
+    display_answer: ひとり / よにん / ろくにん
+
+  - key: ja:exercise:counters-write-family
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kazoku
+    prompt:
+      source_text: Gia đình tôi có ba người.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしのかぞくはさんにんです。
+        - 私の家族は三人です。
+        - わたしの家族は三人です。
+        - かぞくはさんにんです。
+        - 家族は三人です。
+        - わたしのかぞくは三人です。
+        - 私の家族は３人です。
+        - 私の家族は3人です。
+    known_wrong:
+      - answer: わたしのかぞくはみっつです。
+        feedback_vi: みっつ đếm đồ vật; đếm người dùng さんにん.
+        error_tag: counter_type
+      - answer: わたしのかぞくはさんじんです。
+        feedback_vi: じん dùng cho quốc tịch; đếm người đọc にん.
+        error_tag: counter_reading
+    explanation:
+      vi: わたしのかぞく (gia đình tôi) + は + さんにん (ba người) + です.
+    display_answer: わたしのかぞくはさんにんです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:counters-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:tsu-counter
+    prompt:
+      source_text: ケーキはやっつです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có tám cái bánh.
+        - Bánh có tám cái.
+        - Bánh ngọt có tám cái.
+        - Có tám cái bánh ngọt.
+        - Có 8 cái bánh.
+        - Bánh là tám cái.
+        - Tám cái bánh.
+        - Có tám chiếc bánh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có sáu cái bánh.
+        feedback_vi: やっつ là 8 cái; 6 cái là むっつ.
+        error_tag: counter_reading
+    explanation:
+      vi: やっつ là tám cái (đếm đồ vật). Tiếng Việt nên đưa số lượng lên trước danh từ.
+    display_answer: Có tám cái bánh.
+
+  - key: ja:exercise:counters-mcq-restaurant
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:nin-counter
+    prompt:
+      stem: Bạn và một người bạn vào quán. Nhân viên hỏi なんめいさまですか (mấy vị?). Bạn trả lời thế nào?
+      stem_lang: vi
+      options:
+        - { id: m7d, text: ふたりです。, lang: ja }
+        - { id: n2e, text: ふたつです。, lang: ja }
+        - { id: o6f, text: ににんです。, lang: ja }
+        - { id: p1g, text: ひとりです。, lang: ja }
+    answer:
+      correct_option_id: m7d
+    explanation:
+      vi: Hai người là ふたり. ふたつ đếm đồ vật, ににん không tồn tại, ひとり là một người.
+    display_answer: ふたりです。
+
+  - key: ja:exercise:counters-write-how-many
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:ikutsu
+    prompt:
+      source_text: Bánh ngọt mấy cái? - Bốn cái.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ケーキはいくつですか。よっつです。
+        - ケーキはいくつですか。- よっつです。
+        - ケーキはいくつですか？よっつです。
+        - ケーキはいくつですか。四つです。
+        - ケーキはいくつですか。- 四つです。
+        - ケーキはいくつですか、よっつです。
+    known_wrong:
+      - answer: ケーキはいくらですか。よっつです。
+        feedback_vi: いくら hỏi giá tiền; hỏi số lượng dùng いくつ.
+        error_tag: ikura_ikutsu
+      - answer: ケーキはいくつですか。よんつです。
+        feedback_vi: 4 cái là よっつ.
+        error_tag: counter_reading
+      - answer: ケーキはいくつですか。よにんです。
+        feedback_vi: よにん là bốn người; đồ vật dùng よっつ.
+        error_tag: counter_type
+    explanation:
+      vi: いくつですか hỏi số lượng; bốn cái là よっつ.
+    display_answer: ケーキはいくつですか。- よっつです。
