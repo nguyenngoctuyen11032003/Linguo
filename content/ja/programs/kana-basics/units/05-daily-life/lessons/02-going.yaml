@@ -1,0 +1,356 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:going
+order_index: 2
+level: n5
+title:
+  vi: Đi, đến, về - いきます・きます・かえります
+objectives:
+  - vi: Nói đi đâu bằng nơi chốn + へ + いきます.
+  - vi: Phân biệt いきます (đi), きます (đến chỗ người nói), かえります (về).
+  - vi: Viết đúng trợ từ へ (đọc "e") và phủ định ません.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:places-existence]
+items:
+  - item: ja:item:ikimasu
+  - item: ja:item:kimasu
+  - item: ja:item:kaerimasu
+  - item: ja:item:particle-e
+  - item: ja:item:kaisha
+  - item: ja:item:uchi
+  - item: ja:item:gakkou
+    role: reuse
+  - item: ja:item:nihon
+    role: reuse
+  - item: ja:item:kyou-ashita
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói mình đi đâu, ai đến, khi nào về - あしたかいしゃへいきます (Mai tôi đi làm ở công ty).
+  - type: explain
+    text:
+      vi: Mẫu câu - (nơi chốn) へ + いきます / きます / かえります. Trợ từ へ chỉ hướng, viết へ nhưng đọc "e"; có thể thay bằng に - がっこうにいきます cũng đúng.
+  - type: explain
+    text:
+      vi: Ba động từ di chuyển - いきます (đi từ chỗ mình đến nơi khác), きます (đến chỗ người nói đang ở), かえります (trở về nhà, về nước). Phủ định thay ます bằng ません - いきません (không đi).
+  - type: explain
+    text:
+      vi: Động từ luôn đứng cuối câu. Từ thời gian như きょう, あした đứng đầu câu hoặc sau chủ đề, không cần trợ từ - あしたにほんへいきます.
+  - type: deep_explain
+    text:
+      vi: Đuôi ます vừa diễn tả thói quen vừa diễn tả việc sẽ làm - かいしゃへいきます có thể là "tôi đi làm (hằng ngày)" hoặc "tôi sẽ đi làm". Ngữ cảnh và từ thời gian cho biết nghĩa nào. Người Nhật ra khỏi nhà hay nói いってきます (tôi đi đây) và về nhà nói ただいま (tôi về rồi) - hai câu chào rất đời thường.
+  - type: example
+    target: あしたかいしゃへいきます。
+    target_lang: ja
+    translation:
+      vi: Ngày mai tôi đi đến công ty.
+    note:
+      vi: へ đọc "e" - "ka-i-sha e i-ki-mas".
+  - type: example
+    target: たなかさんはベトナムへきます。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka sẽ đến Việt Nam.
+    note:
+      vi: Người nói đang ở Việt Nam nên dùng きます.
+  - type: example
+    target: きょうはがっこうへいきません。
+    target_lang: ja
+    translation:
+      vi: Hôm nay tôi không đi học.
+    note:
+      vi: Phủ định - いきません.
+  - type: example
+    target: ろくじにうちへかえります。
+    target_lang: ja
+    translation:
+      vi: Tôi về nhà lúc 6 giờ.
+    note:
+      vi: Về nhà dùng かえります; giờ có số đi với に.
+  - type: common_mistake
+    wrong: がっこうえいきます。
+    right: がっこうへいきます。
+    target_lang: ja
+    note:
+      vi: Trợ từ đọc "e" nhưng viết へ.
+  - type: common_mistake
+    wrong: しごとのあと、うちへいきます。
+    right: しごとのあと、うちへかえります。
+    target_lang: ja
+    note:
+      vi: Tan làm về nhà mình thì dùng かえります - về nơi mình thuộc về (nhà, quê, nước mình). しごとのあと - sau giờ làm.
+  - type: summary
+    points:
+      - vi: (nơi) へ いきます / きます / かえります.
+      - vi: へ đọc "e"; có thể thay bằng に.
+      - vi: いきます đi · きます đến · かえります về.
+      - vi: Phủ định - ます → ません.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:going-mcq-kaerimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kaerimasu
+    prompt:
+      stem: "Tan học, bạn nói \"Tôi về nhà.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a7z, text: うちへかえります。, lang: ja }
+        - { id: b2a, text: うちへきます。, lang: ja }
+        - { id: c6b, text: うちをかえります。, lang: ja }
+        - { id: d1c, text: うちえかえります。, lang: ja }
+    answer:
+      correct_option_id: a7z
+    explanation:
+      vi: Về nhà dùng かえります với trợ từ へ (viết へ, đọc "e"). きます là "đến chỗ người nói"; を và え không đúng ở đây.
+    display_answer: うちへかえります。
+
+  - key: ja:exercise:going-mcq-e-reading
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-e
+    prompt:
+      stem: "Trong câu にほんへいきます, chữ へ đọc là gì?"
+      stem_lang: vi
+      options:
+        - { id: e5d, text: e, lang: vi }
+        - { id: f9e, text: he, lang: vi }
+        - { id: g4f, text: wa, lang: vi }
+        - { id: h8g, text: o, lang: vi }
+    answer:
+      correct_option_id: e5d
+    explanation:
+      vi: Khi làm trợ từ chỉ hướng, へ đọc "e". Trong từ thường (như へや - căn phòng) mới đọc "he".
+    display_answer: e
+
+  - key: ja:exercise:going-listen-tomorrow
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ikimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: あしたがっこうへいきません。
+      options:
+        - { id: i3h, text: Ngày mai tôi không đi học., lang: vi }
+        - { id: j7i, text: Ngày mai tôi đi học., lang: vi }
+        - { id: k2j, text: Hôm nay tôi không đi học., lang: vi }
+        - { id: l6k, text: Ngày mai tôi không về nhà., lang: vi }
+    answer:
+      correct_option_id: i3h
+    explanation:
+      vi: あした - ngày mai; がっこうへいきません - không đi đến trường. Hôm nay là きょう, về nhà là うちへかえります.
+    display_answer: Ngày mai tôi không đi học.
+
+  - key: ja:exercise:going-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-e
+    prompt:
+      template: "かいしゃ{{b1}}いき{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi đi đến công ty."
+        - Chỗ thứ nhất là trợ từ chỉ hướng (đọc "e"); chỗ thứ hai là đuôi lịch sự khẳng định.
+    answer:
+      blanks:
+        b1: [へ, に]
+        b2: [ます]
+    known_wrong:
+      - answer: え
+        feedback_vi: Trợ từ đọc "e" nhưng viết へ.
+        error_tag: particle_e_spelling
+      - answer: を
+        feedback_vi: Nơi đến đi với へ hoặc に, không dùng を.
+        error_tag: particle_choice
+      - answer: ません
+        feedback_vi: ません là phủ định ("không đi"); câu này là khẳng định - ます.
+        error_tag: negation
+    explanation:
+      vi: かいしゃへいきます - đi đến công ty. へ có thể thay bằng に.
+    display_answer: かいしゃへいきます。
+
+  - key: ja:exercise:going-order-japan
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kimasu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Ngày mai anh Tanaka đến Việt Nam.”"
+      tokens:
+        - { id: t1, text: きます }
+        - { id: t2, text: ベトナム }
+        - { id: t3, text: たなかさんは }
+        - { id: t4, text: へ }
+        - { id: t5, text: あした }
+    answer:
+      orders:
+        - [t5, t3, t2, t4, t1]
+        - [t3, t5, t2, t4, t1]
+    explanation:
+      vi: あした có thể đứng đầu câu hoặc sau chủ đề; ベトナム + へ + きます đứng cuối.
+    display_answer: あしたたなかさんはベトナムへきます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:going-fill-verbs
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kimasu
+    prompt:
+      template: "Đi - {{b1}}. Đến - {{b2}}. Về - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [いきます, 行きます]
+        b2: [きます, 来ます]
+        b3: [かえります, 帰ります]
+    known_wrong:
+      - answer: いきません
+        feedback_vi: いきません là "không đi"; khẳng định là いきます.
+        error_tag: negation
+    explanation:
+      vi: いきます (đi), きます (đến), かえります (về).
+    display_answer: いきます / きます / かえります
+
+  - key: ja:exercise:going-write-office
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kaisha
+    prompt:
+      source_text: Tôi đi đến công ty.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - かいしゃへいきます。
+        - かいしゃにいきます。
+        - 会社へ行きます。
+        - 会社に行きます。
+        - わたしはかいしゃへいきます。
+        - わたしはかいしゃにいきます。
+        - 私は会社へ行きます。
+        - 私は会社に行きます。
+    known_wrong:
+      - answer: かいしゃえいきます。
+        feedback_vi: Trợ từ chỉ hướng viết へ.
+        error_tag: particle_e_spelling
+      - answer: いきますかいしゃへ。
+        feedback_vi: Động từ đứng cuối câu - かいしゃへいきます.
+        error_tag: word_order
+      - answer: かいしゃをいきます。
+        feedback_vi: Nơi đến đi với へ hoặc に.
+        error_tag: particle_choice
+    explanation:
+      vi: かいしゃ + へ (hoặc に) + いきます.
+    display_answer: かいしゃへいきます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:going-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kaerimasu
+    prompt:
+      source_text: ランさんはあしたベトナムへかえります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày mai chị Lan về Việt Nam.
+        - Chị Lan ngày mai về Việt Nam.
+        - Ngày mai chị Lan sẽ về Việt Nam.
+        - Chị Lan ngày mai sẽ về Việt Nam.
+        - Ngày mai Lan về Việt Nam.
+        - Lan sẽ về Việt Nam vào ngày mai.
+        - Chị Lan sẽ về Việt Nam vào ngày mai.
+        - Ngày mai bạn Lan về Việt Nam.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngày mai chị Lan đi Việt Nam.
+        feedback_vi: かえります là "về" (trở về nơi của mình), không phải "đi".
+        error_tag: verb_choice
+    explanation:
+      vi: あした - ngày mai; ベトナムへかえります - về Việt Nam. ます ở đây chỉ việc sẽ làm.
+    display_answer: Ngày mai chị Lan về Việt Nam.
+
+  - key: ja:exercise:going-mcq-kimasu
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kimasu
+    prompt:
+      stem: Bạn đang ở trường và nói với bạn cùng lớp "Ngày mai thầy Tanaka đến (trường mình)." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m1l, text: あしたたなかせんせいがきます。, lang: ja }
+        - { id: n5m, text: あしたたなかせんせいがいきます。, lang: ja }
+        - { id: o9n, text: あしたたなかせんせいがかえります。, lang: ja }
+        - { id: p4o, text: あしたにたなかせんせいがきます。, lang: ja }
+    answer:
+      correct_option_id: m1l
+    explanation:
+      vi: Đến chỗ người nói đang ở (trường) dùng きます. いきます là đi nơi khác, かえります là về; あした không đi với に.
+    display_answer: あしたたなかせんせいがきます。
+
+  - key: ja:exercise:going-write-not-go
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:ikimasu
+    prompt:
+      source_text: Hôm nay tôi không đi đến trường.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きょうはがっこうへいきません。
+        - きょうはがっこうにいきません。
+        - きょうがっこうへいきません。
+        - きょうがっこうにいきません。
+        - 今日は学校へ行きません。
+        - 今日は学校に行きません。
+        - 今日学校へ行きません。
+        - 今日学校に行きません。
+        - わたしはきょうがっこうへいきません。
+        - わたしはきょうがっこうにいきません。
+        - 私は今日学校へ行きません。
+        - 私は今日学校に行きません。
+    known_wrong:
+      - answer: きょうはがっこうへいきます。
+        feedback_vi: Câu phủ định cần ません - いきません.
+        error_tag: negation
+      - answer: きょうにがっこうへいきません。
+        feedback_vi: きょう không đi với に.
+        error_tag: particle_ni_time
+      - answer: きょうはがっこうえいきません。
+        feedback_vi: Trợ từ chỉ hướng viết へ.
+        error_tag: particle_e_spelling
+    explanation:
+      vi: きょうは (hôm nay thì) + がっこうへ + いきません. は sau きょう nhấn ý "hôm nay thì (khác ngày thường)".
+    display_answer: きょうはがっこうへいきません。

@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:daily-life-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Một ngày của tôi
+objectives:
+  - vi: Kể lịch sinh hoạt hằng ngày bằng câu có thời gian, nơi chốn, đối tượng và động từ.
+  - vi: Chọn đúng trợ từ に (thời điểm, nơi tồn tại), へ (hướng), で (nơi hành động), を (đối tượng).
+  - vi: Phân biệt あります / います và ます / ません.
+estimated_minutes: 15
+skills: [grammar, speaking, listening, writing]
+prerequisites: [ja:lesson:object-de]
+items:
+  - item: ja:item:koko-soko-asoko
+    role: reuse
+  - item: ja:item:doko
+    role: reuse
+  - item: ja:item:arimasu-imasu
+    role: reuse
+  - item: ja:item:ikimasu
+    role: reuse
+  - item: ja:item:kaerimasu
+    role: reuse
+  - item: ja:item:particle-e
+    role: reuse
+  - item: ja:item:masu-masen
+    role: reuse
+  - item: ja:item:particle-ni-time
+    role: reuse
+  - item: ja:item:particle-o
+    role: reuse
+  - item: ja:item:particle-de-place
+    role: reuse
+  - item: ja:item:okimasu
+    role: reuse
+  - item: ja:item:benkyou-shimasu
+    role: reuse
+  - item: ja:item:toshokan
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể trọn một ngày - mấy giờ dậy, đi đâu, làm gì ở đâu, mấy giờ về - bằng tiếng Nhật lịch sự.
+  - type: explain
+    text:
+      vi: Câu tiếng Nhật xếp theo khung - (thời gian) (nơi) で (vật) を (động từ). Động từ luôn đứng cuối, còn các phần trước có trợ từ đi kèm nên có thể đổi chỗ.
+  - type: explain
+    text:
+      vi: Bốn trợ từ hay nhầm - に (lúc mấy giờ; nơi có người/vật), へ (hướng đi, đọc "e"), で (nơi diễn ra hành động), を (đối tượng, đọc "o"). Hỏi mình "động từ là gì?" trước rồi mới chọn trợ từ.
+  - type: deep_explain
+    text:
+      vi: Khi kể chuỗi việc trong ngày, người Nhật hay nối bằng それから (sau đó) - しちじにおきます。それから、かいしゃへいきます. Bạn cũng có thể nói thói quen hằng tuần với まいしゅう (mỗi tuần). Chủ đề tiếp theo - ăn uống và mua sắm - sẽ dùng lại を với たべます, のみます, かいます.
+  - type: example
+    target: まいにちろくじにおきます。それから、かいしゃへいきます。
+    target_lang: ja
+    translation:
+      vi: Hằng ngày tôi dậy lúc 6 giờ. Sau đó tôi đi đến công ty.
+    note:
+      vi: ろくじに (thời điểm), かいしゃへ (hướng đi).
+  - type: example
+    target: ひるやすみにとしょかんでほんをよみます。
+    target_lang: ja
+    translation:
+      vi: Giờ nghỉ trưa tôi đọc sách ở thư viện.
+    note:
+      vi: ひるやすみ - nghỉ trưa; としょかんで (nơi hành động), ほんを (đối tượng).
+  - type: example
+    target: しちじにうちへかえります。よるはうちでべんきょうします。
+    target_lang: ja
+    translation:
+      vi: Tôi về nhà lúc 7 giờ. Buổi tối tôi học ở nhà.
+    note:
+      vi: うちへ - về hướng nhà; うちで - ở nhà (làm gì đó).
+  - type: example
+    target: たなかさんはいまどこにいますか。- としょかんにいます。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka bây giờ đang ở đâu? - Đang ở thư viện.
+    note:
+      vi: Hỏi chỗ có mặt của người - どこにいますか.
+  - type: common_mistake
+    wrong: としょかんにほんをよみます。
+    right: としょかんでほんをよみます。
+    target_lang: ja
+    note:
+      vi: よみます là hành động → nơi chốn dùng で.
+  - type: common_mistake
+    wrong: うちでかえります。
+    right: うちへかえります。
+    target_lang: ja
+    note:
+      vi: かえります là di chuyển → nơi đến dùng へ (hoặc に).
+  - type: summary
+    points:
+      - vi: Khung câu - (thời gian に) (nơi で) (vật を) động từ.
+      - vi: に - giờ có số, nơi tồn tại · へ - hướng đi · で - nơi hành động · を - đối tượng.
+      - vi: あります đồ vật / います người, con vật.
+      - vi: ます khẳng định / ません phủ định.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:dl-review-mcq-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-e
+    prompt:
+      stem: "Chọn trợ từ đúng - しちじにかいしゃ ___ いきます。"
+      stem_lang: vi
+      options:
+        - { id: a3v, text: へ, lang: ja }
+        - { id: b7w, text: を, lang: ja }
+        - { id: c2x, text: で, lang: ja }
+        - { id: d6y, text: が, lang: ja }
+    answer:
+      correct_option_id: a3v
+    explanation:
+      vi: いきます là di chuyển nên nơi đến dùng へ (hoặc に). を là đối tượng, で là nơi hành động, が dùng với あります / います.
+    display_answer: へ
+
+  - key: ja:exercise:dl-review-listen-routine
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:okimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: まいにちしちじにおきます。はちじにがっこうへいきます。
+      options:
+        - { id: e1z, text: Hằng ngày tôi dậy lúc 7 giờ. Tôi đi học lúc 8 giờ., lang: vi }
+        - { id: f5a, text: Hằng ngày tôi dậy lúc 8 giờ. Tôi đi học lúc 7 giờ., lang: vi }
+        - { id: g9b, text: Hằng ngày tôi ngủ lúc 7 giờ. Tôi đi học lúc 8 giờ., lang: vi }
+        - { id: h4c, text: Hằng ngày tôi dậy lúc 7 giờ. Tôi về nhà lúc 8 giờ., lang: vi }
+    answer:
+      correct_option_id: e1z
+    explanation:
+      vi: しちじにおきます - dậy lúc 7 giờ; はちじにがっこうへいきます - 8 giờ đi học. Ngủ là ねます, về nhà là かえります.
+    display_answer: Hằng ngày tôi dậy lúc 7 giờ. Tôi đi học lúc 8 giờ.
+
+  - key: ja:exercise:dl-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-de-place
+    prompt:
+      template: "としょかん{{b1}}にほんご{{b2}}べんきょうします。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Tôi học tiếng Nhật ở thư viện."
+        - Chỗ thứ nhất - nơi diễn ra hành động; chỗ thứ hai - đối tượng của hành động.
+    answer:
+      blanks:
+        b1: [で]
+        b2: [を]
+    known_wrong:
+      - answer: に
+        feedback_vi: Nơi diễn ra hành động dùng で.
+        error_tag: particle_ni_de
+      - answer: お
+        feedback_vi: Trợ từ tân ngữ viết を.
+        error_tag: particle_o_spelling
+    explanation:
+      vi: としょかんで (ở thư viện) + にほんごを (tiếng Nhật) + べんきょうします.
+    display_answer: としょかんでにほんごをべんきょうします。
+
+  - key: ja:exercise:dl-review-order-where
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:doko
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Nhật: “Thầy giáo đang ở đâu?”"
+      tokens:
+        - { id: t1, text: いますか }
+        - { id: t2, text: どこ }
+        - { id: t3, text: せんせいは }
+        - { id: t4, text: に }
+        - { id: t5, text: ありますか }
+    answer:
+      orders:
+        - [t3, t2, t4, t1]
+    explanation:
+      vi: せんせいは + どこ + に + いますか. Người dùng います, không dùng あります.
+    display_answer: せんせいはどこにいますか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:dl-review-fill-particles
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:particle-ni-time
+    prompt:
+      template: "Tôi về nhà lúc 6 giờ - ろくじ{{b1}}うち{{b2}}かえります。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [に]
+        b2: [へ, に]
+    known_wrong:
+      - answer: で
+        feedback_vi: Thời điểm dùng に; nơi về dùng へ / に. で chỉ nơi hành động.
+        error_tag: particle_choice
+      - answer: え
+        feedback_vi: Trợ từ chỉ hướng viết へ.
+        error_tag: particle_e_spelling
+    explanation:
+      vi: ろくじに (lúc 6 giờ) + うちへ (về nhà) + かえります.
+    display_answer: ろくじにうちへかえります。
+
+  - key: ja:exercise:dl-review-write-not-study
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:masu-masen
+    prompt:
+      source_text: Hôm nay tôi không học.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きょうはべんきょうしません。
+        - 今日は勉強しません。
+        - きょうべんきょうしません。
+        - 今日勉強しません。
+        - わたしはきょうべんきょうしません。
+        - 私は今日勉強しません。
+        - わたしはきょうはべんきょうしません。
+        - 私は今日は勉強しません。
+    known_wrong:
+      - answer: きょうはべんきょうします。
+        feedback_vi: Câu phủ định cần ません.
+        error_tag: negation
+      - answer: きょうにべんきょうしません。
+        feedback_vi: きょう không đi với に.
+        error_tag: particle_ni_time
+      - answer: きょうはべんきょうじゃありません。
+        feedback_vi: Động từ phủ định bằng ません - べんきょうしません.
+        error_tag: negation_form
+    explanation:
+      vi: きょうは (hôm nay thì) + べんきょうしません (không học).
+    display_answer: きょうはべんきょうしません。
+
+  - key: ja:exercise:dl-review-write-dog
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:arimasu-imasu
+    prompt:
+      source_text: Ở đằng kia có con chó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あそこにいぬがいます。
+        - あそこに犬がいます。
+        - あそこにイヌがいます。
+    known_wrong:
+      - answer: あそこにいぬがあります。
+        feedback_vi: Con chó là động vật → います.
+        error_tag: aru_iru
+      - answer: あそこでいぬがいます。
+        feedback_vi: Nơi tồn tại dùng に.
+        error_tag: particle_ni_de
+      - answer: そこにいぬがいます。
+        feedback_vi: '"Đằng kia" (xa cả hai) là あそこ; そこ là chỗ gần người nghe.'
+        error_tag: demonstrative
+    explanation:
+      vi: あそこ + に (nơi tồn tại) + いぬ + が + います.
+    display_answer: あそこにいぬがいます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:dl-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:benkyou-shimasu
+    prompt:
+      source_text: まいにちくじにとしょかんへいきます。としょかんでべんきょうします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hằng ngày tôi đi đến thư viện lúc 9 giờ. Tôi học ở thư viện.
+        - Hằng ngày tôi đến thư viện lúc 9 giờ. Tôi học ở thư viện.
+        - Hằng ngày tôi đi thư viện lúc 9 giờ. Tôi học ở thư viện.
+        - Mỗi ngày tôi đi đến thư viện lúc 9 giờ. Tôi học ở thư viện.
+        - Mỗi ngày tôi đi thư viện lúc 9 giờ. Tôi học ở thư viện.
+        - Hằng ngày lúc 9 giờ tôi đi thư viện. Tôi học ở thư viện.
+        - Ngày nào tôi cũng đi thư viện lúc 9 giờ. Tôi học ở đó.
+        - Hằng ngày tôi đi đến thư viện lúc 9 giờ. Tôi học ở đó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hằng ngày tôi đi đến thư viện lúc 7 giờ. Tôi học ở thư viện.
+        feedback_vi: くじ là 9 giờ; 7 giờ là しちじ.
+        error_tag: hour_reading
+    explanation:
+      vi: まいにち - hằng ngày; くじに - lúc 9 giờ; としょかんへいきます - đi đến thư viện; としょかんでべんきょうします - học ở thư viện.
+    display_answer: Hằng ngày tôi đi đến thư viện lúc 9 giờ. Tôi học ở thư viện.
+
+  - key: ja:exercise:dl-review-mcq-full
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:particle-o
+    prompt:
+      stem: Câu nào đúng hoàn toàn?
+      stem_lang: vi
+      options:
+        - { id: m9d, text: よるうちでほんをよみます。, lang: ja }
+        - { id: n4e, text: よるにうちでほんをよみます。, lang: ja }
+        - { id: o8f, text: よるうちにほんをよみます。, lang: ja }
+        - { id: p3g, text: よるうちでほんおよみます。, lang: ja }
+    answer:
+      correct_option_id: m9d
+    explanation:
+      vi: よる (buổi tối) thường không đi với に; nơi hành động dùng で; trợ từ tân ngữ viết を. Chỉ phương án đầu đúng cả ba điểm.
+    display_answer: よるうちでほんをよみます。
+
+  - key: ja:exercise:dl-review-write-routine
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kaerimasu
+    prompt:
+      source_text: Tôi về nhà lúc 6 giờ rưỡi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ろくじはんにうちへかえります。
+        - ろくじはんにうちにかえります。
+        - 六時半に家へ帰ります。
+        - 六時半に家に帰ります。
+        - 六時半にうちへ帰ります。
+        - 六時半にうちに帰ります。
+        - 6時半に家へ帰ります。
+        - 6時半に家に帰ります。
+        - 6時半にうちへ帰ります。
+        - 6時半にうちに帰ります。
+        - わたしはろくじはんにうちへかえります。
+        - わたしはろくじはんにうちにかえります。
+        - 私は六時半に家に帰ります。
+        - 私は六時半に家へ帰ります。
+        - ろくじさんじゅっぷんにうちへかえります。
+        - ろくじさんじゅっぷんにうちにかえります。
+    known_wrong:
+      - answer: ろくじはんにうちへいきます。
+        feedback_vi: Về nhà dùng かえります.
+        error_tag: verb_choice
+      - answer: ろくじはんにうちでかえります。
+        feedback_vi: Nơi về dùng へ / に, không dùng で.
+        error_tag: particle_choice
+      - answer: ろくじはんうちへかえります。
+        feedback_vi: Giờ có số cần に - ろくじはんに.
+        error_tag: particle_ni_time
+    explanation:
+      vi: ろくじはんに (lúc 6 giờ rưỡi) + うちへ (về nhà) + かえります.
+    display_answer: ろくじはんにうちへかえります。
