@@ -1,0 +1,394 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-norms-sequence-review
+order_index: 5
+level: n1
+title:
+  vi: Ôn tập - xã luận về cải cách một câu lạc bộ thể thao
+objectives:
+  - vi: Đọc hiểu một bài xã luận dùng あるまじき, を皮切りに, を踏まえて, ゆえに, ばこそ.
+  - vi: Chọn đúng mẫu theo sắc thái - phê phán, trình tự, căn cứ, nguyên nhân.
+  - vi: Viết câu nhận định trang trọng về tổ chức và chuẩn mực.
+estimated_minutes: 25
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n1-u7-yue-bakoso]
+items:
+  - item: ja:item:n1-u7-jisseki
+  - item: ja:item:n1-u7-zenrei
+  - item: ja:item:n1-u7-kiritsu
+  - item: ja:item:n1-u7-gram-majiki
+    role: reuse
+  - item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    role: reuse
+  - item: ja:item:n1-u7-gram-wo-fumaete
+    role: reuse
+  - item: ja:item:n1-u7-gram-yue
+    role: reuse
+  - item: ja:item:n1-u7-gram-bakoso
+    role: reuse
+  - item: ja:item:n1-u7-fushouji
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Bài ôn tập là một bài xã luận: một câu lạc bộ bóng đá danh tiếng vướng bê bối, rồi rút kinh nghiệm để cải cách. Bạn sẽ thấy cả năm mẫu của unit đan vào nhau như trong bài đọc N1 thật.'
+  - type: explain
+    text:
+      vi: 'Xã luận Nhật hay đi theo trình tự: phê phán (～にあるまじき), nêu diễn biến (～を皮切りに), nêu căn cứ cho đề xuất (～を踏まえて), giải thích nguyên nhân (～ゆえに) và kết bằng nhận định giàu cảm xúc (～ばこそ…のだ).'
+  - type: explain
+    text:
+      vi: 'Ba từ mới: 実績 (thành tích thực tế), 前例 (tiền lệ - 前例のない: chưa từng có), 規律 (kỷ luật, nề nếp). Cả ba hay xuất hiện trong bài viết về tổ chức, thể thao, kinh doanh.'
+  - type: deep_explain
+    text:
+      vi: 'Khi đọc, hãy tìm "nhãn" của từng câu: あるまじき báo hiệu lời chê nặng, を皮切りに báo hiệu chuỗi sự kiện, を踏まえて báo hiệu đề xuất có căn cứ, ばこそ báo hiệu kết luận của tác giả. Câu hỏi đọc hiểu N1 thường hỏi đúng vào câu có ばこそ / のである vì đó là chủ trương của người viết.'
+  - type: example
+    target: 名門クラブで起きた暴力問題は、指導者にあるまじき行為として大きく報じられた。
+    target_lang: ja
+    translation:
+      vi: Vụ bạo lực ở câu lạc bộ danh tiếng được báo chí đưa tin rầm rộ như một hành vi không thể chấp nhận ở người huấn luyện.
+  - type: example
+    target: 一人の選手の告発を皮切りに、同様の訴えが相次いだ。
+    target_lang: ja
+    translation:
+      vi: Mở đầu bằng lời tố cáo của một cầu thủ, những lời khiếu nại tương tự liên tiếp xuất hiện.
+  - type: example
+    target: クラブは調査結果を踏まえ、前例のない改革に乗り出した。
+    target_lang: ja
+    translation:
+      vi: Có tính đến kết quả điều tra, câu lạc bộ bắt tay vào một cuộc cải cách chưa từng có.
+  - type: example
+    target: 長年の実績があるがゆえに、問題が見過ごされてきたのである。
+    target_lang: ja
+    translation:
+      vi: Chính vì có thành tích lâu năm nên vấn đề đã bị bỏ qua suốt thời gian dài.
+  - type: common_mistake
+    wrong: 前例がない改革に乗り出したことに、規律を守るべからず。
+    right: 前例のない改革に乗り出した以上、規律を守らなければならない。
+    target_lang: ja
+    note:
+      vi: べからず là "cấm", không phải "phải". Muốn nói nghĩa vụ dùng ～なければならない; 前例のない (の thay が) là cách nối danh từ tự nhiên hơn.
+  - type: common_mistake
+    wrong: 選手を思うゆえの、監督は厳しく指導した。
+    right: 選手を思えばこそ、監督は厳しく指導したのだ。
+    target_lang: ja
+    note:
+      vi: ゆえの phải đứng trước danh từ. Giải thích hành động nghiêm khắc bằng lý do tốt đẹp dùng ばこそ.
+  - type: summary
+    points:
+      - vi: Phê phán - にあるまじき; trình tự - を皮切りに; căn cứ - を踏まえて.
+      - vi: Nguyên nhân văn viết - ゆえに; lý do tốt đẹp nhấn mạnh - ばこそ.
+      - vi: 実績 - thành tích · 前例 - tiền lệ · 規律 - kỷ luật.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u7-review-listen-zenrei
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-zenrei
+    prompt:
+      audio_asset_id: null
+      fallback_text: 前例がないからといって、挑戦をやめる理由にはならない。
+      options:
+        - { id: a4k, text: Không có tiền lệ không phải là lý do để từ bỏ thử thách., lang: vi }
+        - { id: b9m, text: Vì không có tiền lệ nên phải từ bỏ thử thách., lang: vi }
+        - { id: c5n, text: Thử thách này đã có nhiều tiền lệ., lang: vi }
+        - { id: d1p, text: Không ai muốn thử thách khi đã có tiền lệ., lang: vi }
+    answer:
+      correct_option_id: a4k
+    explanation:
+      vi: 前例がない - không có tiền lệ; からといって～理由にはならない - không vì... mà thành lý do. Câu khuyến khích dám làm điều mới.
+    display_answer: Không có tiền lệ không phải là lý do để từ bỏ thử thách.
+
+  - key: ja:exercise:n1-u7-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u7-gram-bakoso
+    prompt:
+      stem: 'Đọc đoạn: 「規律の乱れを放置してきたことは、名門クラブにあるまじき失態である。しかし、クラブを愛すればこそ、ファンは厳しい声を上げているのだ。」 Ý chính của tác giả là gì?'
+      stem_lang: vi
+      options:
+        - { id: e8q, text: Người hâm mộ lên tiếng gay gắt chính vì họ yêu câu lạc bộ., lang: vi }
+        - { id: f2r, text: Người hâm mộ đã quay lưng vì ghét câu lạc bộ., lang: vi }
+        - { id: g7s, text: Câu lạc bộ luôn giữ kỷ luật rất tốt., lang: vi }
+        - { id: h3t, text: Tác giả cho rằng không nên phê phán câu lạc bộ., lang: vi }
+    answer:
+      correct_option_id: e8q
+    explanation:
+      vi: 愛すればこそ…のだ - chính vì yêu nên... đây là kết luận của tác giả. Câu trước phê phán việc bỏ mặc kỷ luật (あるまじき失態), nên phương án "luôn giữ kỷ luật tốt" sai.
+    display_answer: Người hâm mộ lên tiếng gay gắt chính vì họ yêu câu lạc bộ.
+
+  - key: ja:exercise:n1-u7-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      template: "今回の改革は、ユースチームの指導体制の見直し{{b1}}、クラブ全体に広がっていった。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Cuộc cải cách lần này, mở màn bằng việc xem lại hệ thống huấn luyện đội trẻ, đã lan ra toàn câu lạc bộ."
+        - "Gợi ý: mẫu \"mở màn bằng...\" của bài 2."
+    answer:
+      blanks:
+        b1: [を皮切りに, をかわきりに, を皮切りとして, を皮切りにして]
+    known_wrong:
+      - answer: を踏まえて
+        feedback_vi: Câu nói trình tự "bắt đầu từ đội trẻ rồi lan rộng" - dùng を皮切りに; を踏まえて là căn cứ cho suy nghĩ.
+        error_tag: kawakiri_fumaete
+      - answer: をはじめ
+        feedback_vi: をはじめ là nêu ví dụ tiêu biểu; ở đây có trình tự lan rộng theo thời gian.
+        error_tag: kawakiri_hajime
+    explanation:
+      vi: N を皮切りに + 広がっていった - mở màn bằng N rồi lan dần ra. ていった nhấn sự thay đổi tiếp diễn ra xa.
+    display_answer: 今回の改革は、ユースチームの指導体制の見直しを皮切りに、クラブ全体に広がっていった。
+
+  - key: ja:exercise:n1-u7-review-mcq-jisseki
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-jisseki
+    prompt:
+      stem: 'Chọn từ hợp nhất: 新しい監督は、海外のクラブで十分な ＿＿ を残してきた人物だ。 ("Huấn luyện viên mới là người đã để lại thành tích đáng kể ở các câu lạc bộ nước ngoài.")'
+      stem_lang: vi
+      options:
+        - { id: i6u, text: 実績, lang: ja }
+        - { id: j1v, text: 前例, lang: ja }
+        - { id: k7w, text: 規律, lang: ja }
+        - { id: l2x, text: 不祥事, lang: ja }
+    answer:
+      correct_option_id: i6u
+    explanation:
+      vi: 実績を残す - để lại thành tích. 前例 là tiền lệ, 規律 là kỷ luật, 不祥事 là bê bối - không hợp nghĩa "thành tích đáng kể".
+    display_answer: 実績
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u7-review-fill-majiki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      template: "試合中に審判を侮辱するのは、プロ選手に{{b1}}ふるまいだ。(không thể chấp nhận)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [あるまじき]
+    known_wrong:
+      - answer: あるべき
+        feedback_vi: あるべき là "nên có" - ngược nghĩa.
+        error_tag: meaning
+      - answer: あるべからず
+        feedback_vi: べからず không đứng trước danh từ ふるまい; dùng あるまじき.
+        error_tag: majiki_bekarazu
+    explanation:
+      vi: N にあるまじき + ふるまい - cách cư xử không thể chấp nhận ở N. 侮辱する - lăng mạ; ふるまい - cách cư xử.
+    display_answer: 試合中に審判を侮辱するのは、プロ選手にあるまじきふるまいだ。
+
+  - key: ja:exercise:n1-u7-review-write-kiritsu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-kiritsu
+    prompt:
+      source_text: Một đội có kỷ luật nghiêm thì mạnh khi vào những trận quyết định. (dùng 規律)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 規律の厳しいチームは、大事な試合に強い。
+        - 規律が厳しいチームは、大事な試合に強い。
+        - 規律の厳しいチームは大事な試合に強い。
+        - 規律の厳しいチームは、大一番に強い。
+        - 規律の厳しいチームは、大事な試合で強い。
+        - 規律の厳しいチームは、重要な試合に強い。
+        - 規律の厳しいチームは、大事な試合に強いです。
+        - 規律正しいチームは、大事な試合に強い。
+        - きりつのきびしいチームは、だいじなしあいにつよい。
+    known_wrong:
+      - answer: 規律の厳しいチームは、大事な試合を強い。
+        feedback_vi: Mạnh khi gặp trận nào đó dùng に (試合に強い), không dùng を.
+        error_tag: particle
+      - answer: 法則の厳しいチームは、大事な試合に強い。
+        feedback_vi: 法則 là quy luật (tự nhiên); kỷ luật của tập thể là 規律.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 規律の厳しい + チーム - đội có kỷ luật nghiêm (の thay が trong mệnh đề bổ nghĩa); N に強い - mạnh khi gặp N. 大一番 là "trận quyết định" kiểu báo thể thao.
+    display_answer: 規律の厳しいチームは、大事な試合に強い。
+
+  - key: ja:exercise:n1-u7-review-write-fumaete
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      source_text: Có tính đến kết quả điều tra, câu lạc bộ đã thay toàn bộ ban huấn luyện. (dùng を踏まえて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 調査の結果を踏まえて、クラブはコーチ陣を全員入れ替えた。
+        - 調査結果を踏まえて、クラブはコーチ陣を全員入れ替えた。
+        - 調査結果を踏まえ、クラブはコーチ陣を全員入れ替えた。
+        - 調査結果を踏まえて、クラブは指導陣を全員入れ替えた。
+        - 調査結果を踏まえて、クラブはコーチ陣を一新した。
+        - 調査結果を踏まえて、クラブは指導陣を一新した。
+        - 調査結果を踏まえて、クラブはコーチを全員交代させた。
+        - 調査結果を踏まえて、クラブはコーチ陣を全員入れ替えました。
+        - ちょうさけっかをふまえて、クラブはコーチじんをぜんいんいれかえた。
+    known_wrong:
+      - answer: 調査結果を踏まえた、クラブはコーチ陣を全員入れ替えた。
+        feedback_vi: Trước vế câu dùng を踏まえて; を踏まえた chỉ nối vào danh từ.
+        error_tag: fumaete_form
+      - answer: 調査結果を皮切りに、クラブはコーチ陣を全員入れ替えた。
+        feedback_vi: Kết quả điều tra là căn cứ cho quyết định, không phải sự kiện mở màn một chuỗi - dùng を踏まえて.
+        error_tag: fumaete_kawakiri
+    explanation:
+      vi: 調査結果を踏まえて - có tính đến kết quả điều tra; コーチ陣 / 指導陣 - ban huấn luyện; 入れ替える / 一新する - thay mới toàn bộ.
+    display_answer: 調査結果を踏まえて、クラブはコーチ陣を全員入れ替えた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u7-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u7-gram-yue
+    prompt:
+      source_text: 伝統あるクラブであるがゆえに、変化を恐れる声も少なくなかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chính vì là câu lạc bộ có truyền thống nên cũng không ít tiếng nói sợ thay đổi.
+        - Vì là một câu lạc bộ lâu đời nên có không ít ý kiến e ngại sự thay đổi.
+        - Do là câu lạc bộ có truyền thống nên không ít người sợ thay đổi.
+        - Vì là câu lạc bộ giàu truyền thống nên cũng có không ít ý kiến lo sợ thay đổi.
+        - Chính vì là câu lạc bộ có bề dày truyền thống nên không ít người e ngại thay đổi.
+        - Vì là câu lạc bộ có truyền thống, nên tiếng nói lo sợ sự thay đổi cũng không ít.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì là câu lạc bộ có truyền thống nên ai cũng muốn thay đổi.
+        feedback_vi: 変化を恐れる声 là "tiếng nói sợ thay đổi", ngược với "muốn thay đổi".
+        error_tag: meaning
+    explanation:
+      vi: 伝統あるクラブであるがゆえに - vì là câu lạc bộ có truyền thống; 変化を恐れる声 - tiếng nói sợ thay đổi; 少なくなかった - không ít (cách nói giảm của "nhiều").
+    display_answer: Chính vì là câu lạc bộ có truyền thống nên cũng không ít tiếng nói sợ thay đổi.
+
+  - key: ja:exercise:n1-u7-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      stem: Bạn viết câu kết cho bài xã luận, phê phán việc ban lãnh đạo che giấu vụ bê bối. Câu nào đúng ngữ pháp và đúng giọng văn nhất?
+      stem_lang: vi
+      options:
+        - { id: m4y, text: 不祥事を隠すなど、組織を率いる者にあるまじき行為である。, lang: ja }
+        - { id: n9z, text: 不祥事を隠すなど、組織を率いる者にあるまじきである。, lang: ja }
+        - { id: o3a, text: 不祥事を隠すなど、組織を率いる者に隠すべからざる行為である。, lang: ja }
+        - { id: p8b, text: 不祥事を隠すなど、組織を率いる者にあるまじき行為するよ。, lang: ja }
+    answer:
+      correct_option_id: m4y
+    explanation:
+      vi: あるまじき + 行為 + である - đúng mẫu và giọng xã luận. Phương án 2 thiếu danh từ sau まじき; phương án 3 lặp 隠す và べからざる không hợp nghĩa; phương án 4 sai ngữ pháp và quá suồng sã.
+    display_answer: 不祥事を隠すなど、組織を率いる者にあるまじき行為である。
+
+  - key: ja:exercise:n1-u7-review-write-bakoso
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-bakoso
+    prompt:
+      source_text: Chính vì có lịch sử lâu đời nên câu lạc bộ này mới phải thay đổi. (dùng ばこそ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 長い歴史があればこそ、このクラブは変わらなければならないのだ。
+        - 長い歴史があればこそ、このクラブは変わらなければならない。
+        - 長い歴史があればこそ、このクラブは変わるべきなのだ。
+        - 長い歴史があればこそ、このクラブは変わる必要があるのだ。
+        - 歴史が長ければこそ、このクラブは変わらなければならないのだ。
+        - 長い歴史を持つクラブであればこそ、変わらなければならないのだ。
+        - 長い歴史があればこそ、このクラブは変わらなくてはならないのだ。
+        - ながいれきしがあればこそ、このクラブはかわらなければならないのだ。
+    known_wrong:
+      - answer: 長い歴史があるこそ、このクラブは変わらなければならないのだ。
+        feedback_vi: こそ trong mẫu này đi sau thể ば - あればこそ.
+        error_tag: bakoso_form
+      - answer: 長い歴史があればこそ、このクラブは変わらなくてもいいのだ。
+        feedback_vi: 変わらなくてもいい là "không cần thay đổi" - ngược nghĩa.
+        error_tag: meaning
+    explanation:
+      vi: 歴史がある → あれば → あればこそ - chính vì có lịch sử; 変わらなければならないのだ - mới phải thay đổi. Câu nghe ngược đời (lâu đời mà lại phải đổi) được giải thích bằng ばこそ - đúng chức năng của mẫu này.
+    display_answer: 長い歴史があればこそ、このクラブは変わらなければならないのだ。
+
+  - key: ja:exercise:n1-u7-review-write-fushouji
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-fushouji
+    prompt:
+      source_text: Để không lặp lại vụ bê bối, câu lạc bộ đã lập một uỷ ban bên ngoài. (dùng 不祥事)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 不祥事を繰り返さないために、クラブは外部委員会を設置した。
+        - 不祥事を繰り返さないよう、クラブは外部委員会を設置した。
+        - 不祥事を繰り返さないように、クラブは外部委員会を設置した。
+        - 不祥事を繰り返さないために、クラブは外部の委員会を設けた。
+        - 不祥事を二度と起こさないために、クラブは外部委員会を設置した。
+        - 再び不祥事を起こさないために、クラブは外部委員会を設置した。
+        - 不祥事の再発を防ぐため、クラブは外部委員会を設置した。
+        - 不祥事を繰り返さないために、クラブは外部委員会を作った。
+        - ふしょうじをくりかえさないために、クラブはがいぶいいんかいをせっちした。
+    known_wrong:
+      - answer: 不祥事を繰り返すために、クラブは外部委員会を設置した。
+        feedback_vi: Thiếu phủ định - "để không lặp lại" là 繰り返さないために.
+        error_tag: negation
+      - answer: 事故を繰り返さないために、クラブは外部委員会を設置した。
+        feedback_vi: 事故 là tai nạn; vụ bê bối là 不祥事.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 繰り返さないために / ように - để không lặp lại; 外部委員会を設置する - lập uỷ ban độc lập bên ngoài. 再発を防ぐ (ngăn tái diễn) là cách nói báo chí hay dùng.
+    display_answer: 不祥事を繰り返さないために、クラブは外部委員会を設置した。
+
+  - key: ja:exercise:n1-u7-review-wb-zenrei
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-zenrei
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Có tính đến ý kiến của người hâm mộ, câu lạc bộ đã đưa ra một quyết định chưa từng có tiền lệ.\""
+      tokens:
+        - { id: z4, text: 前例のない決断を下した }
+        - { id: z2, text: を踏まえて }
+        - { id: z5, text: を踏まえる }
+        - { id: z1, text: ファンの声 }
+        - { id: z3, text: クラブは }
+    answer:
+      orders:
+        - [z1, z2, z3, z4]
+        - [z3, z1, z2, z4]
+    explanation:
+      vi: N を踏まえて + chủ ngữ + 前例のない決断を下した - quyết định chưa từng có tiền lệ. Chủ ngữ クラブは có thể đứng đầu hoặc sau cụm を踏まえて; を踏まえる không nối được vào vế câu.
+    display_answer: ファンの声を踏まえてクラブは前例のない決断を下した。

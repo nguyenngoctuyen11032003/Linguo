@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u7-ni-suginai
+order_index: 4
+level: n2
+title:
+  vi: Chẳng qua chỉ là... - ～にすぎない, ～に過ぎず
+objectives:
+  - vi: Hạ thấp mức độ "chỉ là, chẳng qua là" bằng N / thể thường + にすぎない.
+  - vi: Dùng に過ぎず để nối hai vế trong văn viết.
+  - vi: Phân biệt にすぎない với だけだ và với tính từ 単なる.
+estimated_minutes: 18
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-u7-wake-ga-nai]
+items:
+  - item: ja:item:n2-u7-gram-ni-suginai
+  - item: ja:item:n2-u7-ichibu
+  - item: ja:item:n2-u7-tannaru
+  - item: ja:item:n3-uwasa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được những câu kiểu báo cáo, bình luận - "đây chỉ là một ví dụ", "đó chẳng qua là tin đồn", "người đồng ý chỉ chiếm 20%" - nhấn rằng điều gì đó nhỏ, không đáng kể.
+  - type: explain
+    text:
+      vi: 'N / thể thường + にすぎない - "chỉ là..., chẳng qua chỉ là...". Người nói cố ý hạ thấp, coi nhẹ: それは一つの意見にすぎない (đó chỉ là một ý kiến). Với số liệu: 全体の5%にすぎない (chỉ vỏn vẹn 5%).'
+  - type: explain
+    text:
+      vi: 'Văn viết nối câu bằng に過ぎず: これは一例に過ぎず、他にも多くの問題がある (đây chỉ là một ví dụ, còn nhiều vấn đề khác). Lịch sự: にすぎません.'
+  - type: explain
+    text:
+      vi: 'だけだ cũng là "chỉ", nhưng trung tính; にすぎない thêm sắc thái "không đáng kể, không hơn". 単なる + N (đơn thuần chỉ là) hay đi cùng: 単なる噂にすぎない.'
+  - type: deep_explain
+    text:
+      vi: 'Vì nghĩa là hạ thấp, にすぎない không dùng để khen (×彼は天才にすぎない). Trong lời khiêm tốn về bản thân lại rất tự nhiên: 私は一社員にすぎませんが… (tôi chỉ là một nhân viên quèn nhưng...). Tiếng Việt "chẳng qua", "vỏn vẹn" là tương đương sát nhất.'
+  - type: example
+    target: 彼が社長になるというのは、単なる噂にすぎない。
+    target_lang: ja
+    translation:
+      vi: Chuyện anh ấy lên làm giám đốc chẳng qua chỉ là tin đồn.
+  - type: example
+    target: 賛成したのは、出席者の二割にすぎなかった。
+    target_lang: ja
+    translation:
+      vi: Người tán thành chỉ vỏn vẹn hai phần mười số người có mặt.
+  - type: example
+    target: 今回の問題は一部に過ぎず、根本的な見直しが必要だ。
+    target_lang: ja
+    translation:
+      vi: Vấn đề lần này chỉ là một phần, cần xem xét lại từ gốc rễ.
+    note:
+      vi: に過ぎず - dạng nối của văn viết.
+  - type: example
+    target: 私は通訳として言葉を伝えたにすぎません。
+    target_lang: ja
+    translation:
+      vi: Tôi chẳng qua chỉ chuyển lời với tư cách phiên dịch thôi.
+    note:
+      vi: Thể thường (伝えた) + にすぎない.
+  - type: common_mistake
+    wrong: 彼女の歌は素晴らしいにすぎない。
+    right: 彼女の歌は本当に素晴らしい。
+    target_lang: ja
+    note:
+      vi: にすぎない là hạ thấp, không dùng để khen. Muốn khen thì nói thẳng.
+  - type: common_mistake
+    wrong: それは単なるだ。
+    right: それは単なる偶然にすぎない。
+    target_lang: ja
+    note:
+      vi: 単なる chỉ đứng trước danh từ, không làm vị ngữ một mình. Cần danh từ phía sau - 単なる偶然.
+  - type: summary
+    points:
+      - vi: N / thể thường + にすぎない - chỉ là, chẳng qua là (hạ thấp).
+      - vi: に過ぎず - dạng nối câu; にすぎません - lịch sự.
+      - vi: 単なる + N - đơn thuần là; hay đi cùng にすぎない.
+      - vi: 一部 - một phần.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u7-suginai-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      stem: 'Câu この調査の回答者は、わずか三十人にすぎない。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: q2c, text: Người trả lời cuộc khảo sát này chỉ vỏn vẹn ba mươi người., lang: vi }
+        - { id: u7g, text: Người trả lời cuộc khảo sát này đông hơn ba mươi người., lang: vi }
+        - { id: y3k, text: Cuộc khảo sát này cần ít nhất ba mươi người trả lời., lang: vi }
+        - { id: b8o, text: Ba mươi người đã từ chối trả lời cuộc khảo sát., lang: vi }
+    answer:
+      correct_option_id: q2c
+    explanation:
+      vi: わずか～にすぎない - chỉ vỏn vẹn... (nhấn số lượng ít). Không phải "hơn" hay "ít nhất".
+    display_answer: Người trả lời cuộc khảo sát này chỉ vỏn vẹn ba mươi người.
+
+  - key: ja:exercise:n2-u7-suginai-listen-ichibu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-ichibu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 反対しているのは、住民のごく一部にすぎません。
+      options:
+        - { id: f4s, text: Người phản đối chỉ là một phần rất nhỏ cư dân., lang: vi }
+        - { id: j9w, text: Hầu hết cư dân đều đang phản đối., lang: vi }
+        - { id: n5a, text: Một phần cư dân đã thôi không phản đối nữa., lang: vi }
+        - { id: r1e, text: Cư dân không ai phản đối cả., lang: vi }
+    answer:
+      correct_option_id: f4s
+    explanation:
+      vi: ごく一部 - một phần rất nhỏ; にすぎません - chỉ là. Câu nhấn rằng số người phản đối không đáng kể.
+    display_answer: Người phản đối chỉ là một phần rất nhỏ cư dân.
+
+  - key: ja:exercise:n2-u7-suginai-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      template: "ここで紹介したのは一つの例{{b1}}、ほかにも方法はたくさんある。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Điều giới thiệu ở đây chỉ là một ví dụ, còn nhiều cách khác nữa."
+        - "Gợi ý: dạng nối câu văn viết của にすぎない."
+    answer:
+      blanks:
+        b1: [に過ぎず, にすぎず]
+    known_wrong:
+      - answer: にすぎない
+        feedback_vi: Giữa câu, sau đó còn vế khác nên dùng dạng nối に過ぎず (hoặc にすぎなくて ít trang trọng hơn).
+        error_tag: suginai_form
+      - answer: だけで
+        feedback_vi: Đề yêu cầu dạng của にすぎない trong văn viết - に過ぎず.
+        error_tag: suginai_form
+    explanation:
+      vi: 一つの例に過ぎず - chỉ là một ví dụ (rồi nối tiếp vế sau). ず là dạng nối văn viết của ない.
+    display_answer: ここで紹介したのは一つの例に過ぎず、ほかにも方法はたくさんある。
+
+  - key: ja:exercise:n2-u7-suginai-mcq-tannaru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-tannaru
+    prompt:
+      stem: 'Chọn cách nói đúng "Chuyện đó chỉ là hiểu lầm đơn thuần thôi."'
+      stem_lang: vi
+      options:
+        - { id: c6i, text: それは単なる誤解にすぎない。, lang: ja }
+        - { id: g1m, text: それは誤解の単なるにすぎない。, lang: ja }
+        - { id: k7q, text: それは単なるにすぎない誤解。, lang: ja }
+        - { id: o2u, text: それは単なるだ誤解にすぎない。, lang: ja }
+    answer:
+      correct_option_id: c6i
+    explanation:
+      vi: 単なる đứng ngay trước danh từ (単なる誤解), rồi cả cụm + にすぎない. 単なる không đứng sau の hay trước にすぎない một mình.
+    display_answer: それは単なる誤解にすぎない。
+
+  - key: ja:exercise:n2-u7-suginai-wb-uwasa
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-uwasa
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chuyện cửa hàng đóng cửa chẳng qua chỉ là tin đồn.\""
+      tokens:
+        - { id: u3, text: 噂にすぎない }
+        - { id: u1, text: あの店が閉店するという }
+        - { id: u4, text: 噂すぎない }
+        - { id: u2, text: 話は }
+    answer:
+      orders:
+        - [u1, u2, u3]
+    explanation:
+      vi: N + にすぎない - phải có に (噂にすぎない). という nối nội dung tin đồn với 話.
+    display_answer: あの店が閉店するという話は噂にすぎない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u7-suginai-fill-percent
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      template: "この町で自転車通勤をしている人は、全体の3%{{b1}}。(chỉ vỏn vẹn - lịch sự)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [にすぎません, に過ぎません]
+    known_wrong:
+      - answer: にすぎない
+        feedback_vi: Đề yêu cầu lịch sự - にすぎません.
+        error_tag: politeness
+      - answer: すぎません
+        feedback_vi: Thiếu に - N + にすぎません.
+        error_tag: suginai_form
+    explanation:
+      vi: 全体の3%にすぎません - chỉ vỏn vẹn 3% tổng số. Số liệu nhỏ hay đi với にすぎない để nhấn "rất ít".
+    display_answer: この町で自転車通勤をしている人は、全体の3%にすぎません。
+
+  - key: ja:exercise:n2-u7-suginai-write-iken
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      source_text: Đây chỉ là ý kiến cá nhân của tôi thôi. (lịch sự, dùng にすぎない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - これは私の個人的な意見にすぎません。
+        - これは私個人の意見にすぎません。
+        - これは私の個人的な意見に過ぎません。
+        - これは、私の個人的な意見にすぎません。
+        - これはあくまで私の個人的な意見にすぎません。
+        - これは単なる私の個人的な意見にすぎません。
+        - これは私の個人的な意見にすぎないです。
+        - これはわたしのこじんてきないけんにすぎません。
+    known_wrong:
+      - answer: これは私の個人的な意見すぎません。
+        feedback_vi: Thiếu に - 意見にすぎません.
+        error_tag: suginai_form
+      - answer: これは私の個人的な意見にすぎる。
+        feedback_vi: すぎる là "quá"; "chỉ là" cần dạng phủ định にすぎない / にすぎません.
+        error_tag: suginai_sugiru
+    explanation:
+      vi: 個人的な意見にすぎません - chỉ là ý kiến cá nhân. Câu khiêm tốn hay gặp trong họp, giúp ý kiến mình nghe nhẹ nhàng.
+    display_answer: これは私の個人的な意見にすぎません。
+
+  - key: ja:exercise:n2-u7-suginai-write-tsutaeta
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      source_text: Tôi chẳng qua chỉ làm theo chỉ thị của cấp trên thôi. (dùng にすぎない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 私は上司の指示に従ったにすぎない。
+        - 私は上司の指示に従ったにすぎません。
+        - 私は上司の指示どおりにしたにすぎない。
+        - 私は上司の指示どおりにやったにすぎない。
+        - 私は上司の指示に従っただけにすぎない。
+        - 私は上司の指示に従ったに過ぎない。
+        - 上司の指示に従ったにすぎない。
+        - わたしはじょうしのしじにしたがったにすぎない。
+    known_wrong:
+      - answer: 私は上司の指示に従うにすぎなかった。
+        feedback_vi: Việc đã làm thì động từ ở thể た - 従ったにすぎない.
+        error_tag: tense
+      - answer: 私は上司の指示に従ったわけがない。
+        feedback_vi: わけがない là "làm gì có chuyện" - ngược ý.
+        error_tag: suginai_wake
+    explanation:
+      vi: 指示に従う - làm theo chỉ thị; thể thường 従った + にすぎない - chẳng qua chỉ làm theo. Câu tự bào chữa, hạ thấp vai trò của mình.
+    display_answer: 私は上司の指示に従ったにすぎない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u7-suginai-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      source_text: 教科書で学んだ知識は一部に過ぎず、現場で学ぶことのほうが多い。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kiến thức học trong sách chỉ là một phần, học ở thực tế còn nhiều hơn.
+        - Kiến thức học từ sách giáo khoa chỉ là một phần, những điều học được ở thực tế nhiều hơn.
+        - Kiến thức trong sách giáo khoa chỉ là một phần, học tại hiện trường mới nhiều.
+        - Kiến thức học qua sách giáo khoa chẳng qua là một phần, còn học ở nơi làm việc thực tế thì nhiều hơn.
+        - Kiến thức học trong sách giáo khoa chỉ là một phần thôi, điều học được ở thực tế còn nhiều hơn.
+        - Những gì học trong sách chỉ là một phần, học ở hiện trường thì nhiều hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kiến thức học trong sách là tất cả, không cần học ở thực tế.
+        feedback_vi: 一部に過ぎず là "chỉ là một phần", ngược với "tất cả".
+        error_tag: suginai_meaning
+    explanation:
+      vi: 一部に過ぎず - chỉ là một phần (nối câu); 現場 - hiện trường, nơi làm việc thực tế; ～のほうが多い - ... nhiều hơn.
+    display_answer: Kiến thức học trong sách chỉ là một phần, học ở thực tế còn nhiều hơn.
+
+  - key: ja:exercise:n2-u7-suginai-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      stem: Bạn được khen vì dự án thành công, nhưng muốn khiêm tốn nói "Tôi chỉ giúp một chút thôi, công là của cả nhóm." Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: d5h, text: 私は少しお手伝いしたにすぎません。チーム全員のおかげです。, lang: ja }
+        - { id: h9l, text: 私は少しお手伝いしたにすぎる。チーム全員のおかげです。, lang: ja }
+        - { id: l4p, text: 私は少しお手伝いしたわけがありません。チーム全員のおかげです。, lang: ja }
+        - { id: p8t, text: 私は少しお手伝いしかねます。チーム全員のおかげです。, lang: ja }
+    answer:
+      correct_option_id: d5h
+    explanation:
+      vi: お手伝いしたにすぎません - chẳng qua chỉ giúp một chút (khiêm tốn). にすぎる sai dạng; わけがない là "làm gì có chuyện"; かねます là từ chối.
+    display_answer: 私は少しお手伝いしたにすぎません。チーム全員のおかげです。
+
+  - key: ja:exercise:n2-u7-suginai-write-tannaru
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u7-tannaru
+    prompt:
+      source_text: Việc hai người gặp lại nhau ở Paris chỉ đơn thuần là ngẫu nhiên. (dùng 単なる và にすぎない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 二人がパリで再会したのは、単なる偶然にすぎない。
+        - 二人がパリで再会したのは単なる偶然にすぎない。
+        - 二人がパリで再会したのは、単なる偶然にすぎなかった。
+        - 二人がパリで再会したのは、単なる偶然に過ぎない。
+        - 二人がパリでまた会ったのは、単なる偶然にすぎない。
+        - 二人がパリで再び会ったのは、単なる偶然にすぎない。
+        - 二人がパリで再会したのは、単なる偶然にすぎません。
+        - ふたりがパリでさいかいしたのは、たんなるぐうぜんにすぎない。
+    known_wrong:
+      - answer: 二人がパリで再会したのは、偶然の単なるにすぎない。
+        feedback_vi: 単なる phải đứng trước danh từ - 単なる偶然.
+        error_tag: tannaru_position
+      - answer: 二人がパリで再会したのは、単なる偶然すぎない。
+        feedback_vi: Thiếu に - 偶然にすぎない.
+        error_tag: suginai_form
+    explanation:
+      vi: ～のは - việc...; 単なる偶然 - sự ngẫu nhiên đơn thuần; にすぎない - chỉ là. 再会する - gặp lại.
+    display_answer: 二人がパリで再会したのは、単なる偶然にすぎない。
+
+  - key: ja:exercise:n2-u7-suginai-wb-shiryou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Con số này chỉ là ước tính, chưa phải kết quả chính thức.\""
+      tokens:
+        - { id: s4, text: 正式な結果ではない }
+        - { id: s2, text: 推定値に過ぎず、 }
+        - { id: s5, text: 推定値過ぎず、 }
+        - { id: s1, text: この数字は }
+    answer:
+      orders:
+        - [s1, s2, s4]
+    explanation:
+      vi: に過ぎず + vế sau - chỉ là... (và). 推定値過ぎず thiếu に - N + に過ぎず.
+    display_answer: この数字は推定値に過ぎず、正式な結果ではない。

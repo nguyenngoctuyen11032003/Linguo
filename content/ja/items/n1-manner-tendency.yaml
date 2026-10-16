@@ -1,0 +1,444 @@
+# Học liệu unit "Cách thức, khuynh hướng và đánh giá" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～であれ =================
+  - key: ja:item:n1-u8-gram-de-are
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N / từ để hỏi + であれ
+      romanization: de are
+      pos: dù là... đi nữa
+    back:
+      meaning:
+        vi: '"Dù là N đi nữa, ..." - nêu một trường hợp (hoặc mọi trường hợp với từ để hỏi) mà kết luận vẫn không đổi: たとえ子どもであれ, 理由が何であれ, 誰であれ. Văn viết của でも.'
+      examples:
+        - target: どんな仕事であれ、責任を持ってやるべきだ。
+          translation:
+            vi: Dù là công việc gì đi nữa cũng nên làm có trách nhiệm.
+      pronunciation_note:
+        vi: であれ đọc "de-a-re", ba nhịp.
+      confusion:
+        vi: であれ là văn viết, cứng hơn でも. Không nhầm với 命令形 あれ ("hãy có") - 幸あれ là lời chúc "mong được hạnh phúc".
+
+  - key: ja:item:n1-u8-gram-de-are-de-are
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N1 であれ N2 であれ
+      romanization: de are ... de are
+      pos: dù là A hay B
+    back:
+      meaning:
+        vi: '"Dù là A hay B thì cũng..." - liệt kê hai trường hợp (thường đối lập hoặc cùng nhóm) để nói kết luận áp dụng cho cả hai: 晴れであれ雨であれ, 大人であれ子どもであれ.'
+      examples:
+        - target: 国内であれ海外であれ、旅行には保険が必要だ。
+          translation:
+            vi: Dù là du lịch trong nước hay nước ngoài thì cũng cần bảo hiểm.
+      pronunciation_note:
+        vi: Hai lần であれ đọc đều nhịp, ngắt nhẹ giữa hai vế.
+      confusion:
+        vi: Gần nghĩa ～にしろ～にしろ / ～にせよ～にせよ (N2); であれ trang trọng nhất. Hai danh từ phải cùng loại (晴れ / 雨, 大人 / 子ども).
+
+  - key: ja:item:n1-u8-kokuseki
+    type: vocab
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 国籍
+      reading: こくせき
+      romanization: kokuseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: quốc tịch; 国籍を問わず - không phân biệt quốc tịch
+      examples:
+        - target: このコンテストには国籍を問わず誰でも応募できる。
+          translation:
+            vi: Cuộc thi này ai cũng có thể đăng ký, không phân biệt quốc tịch.
+      pronunciation_note:
+        vi: Bốn âm tiết "ko-ku-se-ki", く và き rất nhẹ.
+      confusion:
+        vi: Hán Việt "quốc tịch" - trùng nghĩa. Ở trình độ N5, "người nước nào" nói bằng ～じん; trong văn bản, hồ sơ dùng 国籍.
+
+  - key: ja:item:n1-u8-sekimu
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 責務
+      reading: せきむ
+      romanization: sekimu
+      pos: danh từ
+    back:
+      meaning:
+        vi: trách nhiệm và nghĩa vụ (nặng, gắn với vai trò); 責務を果たす - hoàn thành trách nhiệm
+      examples:
+        - target: 国民の安全を守ることは、政府の責務である。
+          translation:
+            vi: Bảo vệ an toàn cho người dân là trách nhiệm của chính phủ.
+      pronunciation_note:
+        vi: せき đọc "se-ki", む ngắn.
+      confusion:
+        vi: Hán Việt "trách vụ". 責任 là trách nhiệm nói chung (cả lỗi phải gánh); 責務 nhấn nghĩa vụ phải làm theo vai trò, văn trang trọng.
+
+  # ================= bài 2: ～かたわら / ～がてら =================
+  - key: ja:item:n1-u8-gram-katawara
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V-る / N-の + かたわら
+      romanization: katawara
+      pos: song song (công việc dài hạn)
+    back:
+      meaning:
+        vi: '"Bên cạnh việc chính là..., (ai đó) còn..." - một người làm song song hai hoạt động trong thời gian dài, thường nghề chính và hoạt động phụ: 会社員として働くかたわら、小説を書いている.'
+      examples:
+        - target: 彼女は大学で教えるかたわら、通訳の仕事もしている。
+          translation:
+            vi: Bên cạnh việc giảng dạy ở đại học, cô ấy còn làm phiên dịch.
+      pronunciation_note:
+        vi: かたわら đọc "ka-ta-wa-ra"; わ là "wa".
+      confusion:
+        vi: かたわら nói về hoạt động kéo dài (nghề, học tập); ながら là hai hành động cùng lúc trong một khoảnh khắc. Văn viết, tiểu sử, giới thiệu nhân vật hay dùng.
+
+  - key: ja:item:n1-u8-gram-gatera
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc / N (danh từ hành động) + がてら
+      romanization: gatera
+      pos: tiện thể (khi đi lại)
+    back:
+      meaning:
+        vi: '"Nhân tiện..., kết hợp..." - đi đâu đó với một mục đích và tiện thể làm thêm việc khác: 散歩がてら, 買い物がてら, 駅まで送りがてら. Vế sau thường là động từ di chuyển (行く, 寄る, 歩く).'
+      examples:
+        - target: 散歩がてら、近くの本屋に寄った。
+          translation:
+            vi: Nhân tiện đi dạo, tôi ghé hiệu sách gần nhà.
+      pronunciation_note:
+        vi: がてら đọc "ga-te-ra", が là âm đục.
+      confusion:
+        vi: がてら gần ついでに (N3) nhưng nhấn "một chuyến đi, hai mục đích"; ついでに nói việc phụ làm thêm nhân lúc làm việc chính. がてら gần như chỉ đi với hành động có di chuyển.
+
+  - key: ja:item:n1-u8-fukugyou
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 副業
+      reading: ふくぎょう
+      romanization: fukugyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghề phụ, việc làm thêm ngoài công việc chính; 副業を始める - bắt đầu làm nghề tay trái
+      examples:
+        - target: 最近は副業を認める会社が増えている。
+          translation:
+            vi: Gần đây số công ty cho phép nhân viên làm nghề phụ đang tăng.
+      pronunciation_note:
+        vi: ぎょう là âm ghép dài - "gyô-ô".
+      confusion:
+        vi: Hán Việt "phó nghiệp". 副業 là nghề tay trái của người đã có việc chính; アルバイト là việc làm thêm (thường của sinh viên, theo giờ).
+
+  - key: ja:item:n1-u8-shippitsu
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 執筆
+      reading: しっぴつ
+      romanization: shippitsu
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự viết, chấp bút (sách, bài báo, kịch bản); 執筆活動 - hoạt động sáng tác
+      examples:
+        - target: 作家は今、新しい小説を執筆中だ。
+          translation:
+            vi: Nhà văn hiện đang viết một cuốn tiểu thuyết mới.
+      pronunciation_note:
+        vi: しっ có âm ngắt - "shi-p-pi-tsư".
+      confusion:
+        vi: Hán Việt "chấp bút". 執筆 dùng cho viết tác phẩm, bài chuyên môn; viết thư, ghi chú thông thường chỉ là 書く.
+
+  # ================= bài 3: ～ずくめ / ～まみれ / ～めく =================
+  - key: ja:item:n1-u8-gram-zukume
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + ずくめ
+      romanization: zukume
+      pos: toàn là (từ đầu đến cuối)
+    back:
+      meaning:
+        vi: '"Toàn là..., toàn một màu..." - mọi thứ xung quanh đều là N; dùng với số ít danh từ cố định: 黒ずくめ (toàn đồ đen), いいことずくめ (toàn chuyện tốt), 規則ずくめ (toàn quy định), ごちそうずくめ.'
+      examples:
+        - target: 今年は結婚に昇進と、いいことずくめの一年だった。
+          translation:
+            vi: Năm nay nào cưới vợ, nào thăng chức - một năm toàn chuyện tốt.
+      pronunciation_note:
+        vi: ずくめ đọc "zu-ku-me".
+      confusion:
+        vi: ずくめ có thể dùng cho cả điều tốt (いいことずくめ); だらけ (N2) và まみれ luôn là thứ không mong muốn. ずくめ nói "toàn bộ đều là", không phải "dính đầy trên bề mặt".
+
+  - key: ja:item:n1-u8-gram-mamire
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + まみれ
+      romanization: mamire
+      pos: lấm đầy (chất lỏng, bụi)
+    back:
+      meaning:
+        vi: '"Lấm đầy, bê bết..." - bề mặt bị phủ kín bởi chất lỏng hoặc hạt nhỏ dính vào: 汗まみれ, 泥まみれ, 血まみれ, ほこりまみれ, 油まみれ. Nghĩa bóng: 借金まみれ (nợ ngập đầu).'
+      examples:
+        - target: 祖父は油まみれになって車を直していた。
+          translation:
+            vi: Ông tôi người bê bết dầu mỡ ngồi sửa xe.
+      pronunciation_note:
+        vi: まみれ đọc "ma-mi-re".
+      confusion:
+        vi: まみれ chỉ dùng cho thứ dính bám toàn thân (汗, 泥, 血, ほこり); だらけ dùng rộng hơn, cả cho vật rời rạc (間違いだらけ, 傷だらけ). Không nói ×間違いまみれ.
+
+  - key: ja:item:n1-u8-gram-meku
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + めく / N + めいた + N
+      romanization: meku / meita
+      pos: có vẻ như, mang dáng dấp
+    back:
+      meaning:
+        vi: '"Có dáng dấp của..., bắt đầu giống..." - một vài dấu hiệu của N xuất hiện: 春めく (trời đã có hơi xuân), 秋めいた風, 皮肉めいた言い方 (cách nói có vẻ mỉa mai), 謎めいた人物 (nhân vật bí ẩn).'
+      examples:
+        - target: 三月に入り、日差しもだいぶ春めいてきた。
+          translation:
+            vi: Sang tháng Ba, nắng cũng đã mang nhiều hơi xuân.
+      pronunciation_note:
+        vi: めく đọc "me-ku"; めいた đọc "mê-i-ta".
+      confusion:
+        vi: めく chỉ đi với một số danh từ cố định (春, 秋, 冗談, 皮肉, 謎, 言い訳); không dùng tự do như っぽい. Mùa đã đến hẳn thì không dùng めく.
+
+  - key: ja:item:n1-u8-ase
+    type: vocab
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 汗
+      reading: あせ
+      romanization: ase
+      pos: danh từ
+    back:
+      meaning:
+        vi: mồ hôi; 汗をかく - đổ mồ hôi
+      examples:
+        - target: 走ったら、たくさん汗をかいた。
+          translation:
+            vi: Chạy xong tôi đổ rất nhiều mồ hôi.
+      pronunciation_note:
+        vi: あせ đọc "a-se", hai âm ngắn.
+      confusion:
+        vi: Muốn nói đổ mồ hôi dùng 汗をかく (động từ かく), không phải ×汗を出す. 冷や汗 là mồ hôi lạnh khi sợ, ngại.
+
+  - key: ja:item:n1-u8-hiniku
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 皮肉
+      reading: ひにく
+      romanization: hiniku
+      pos: danh từ / な
+    back:
+      meaning:
+        vi: lời mỉa mai, châm biếm; sự trớ trêu; 皮肉を言う - nói mỉa; 皮肉なことに - trớ trêu thay
+      examples:
+        - target: 皮肉なことに、彼が一番嫌っていた仕事が天職になった。
+          translation:
+            vi: Trớ trêu thay, công việc anh ấy ghét nhất lại thành nghề của đời anh.
+      pronunciation_note:
+        vi: ひにく đọc "hi-ni-ku".
+      confusion:
+        vi: Hán Việt "bì nhục" - không giúp đoán nghĩa. 皮肉 vừa là "lời mỉa" vừa là "sự trớ trêu" của số phận.
+
+  # ================= bài 4: ～きらいがある / ～しまつだ / ～にかたくない =================
+  - key: ja:item:n1-u8-gram-kirai-ga-aru
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V-る / V-ない / N-の + きらいがある
+      romanization: kirai ga aru
+      pos: có khuynh hướng (xấu)
+    back:
+      meaning:
+        vi: '"Có khuynh hướng, hay có tật..." - nhận xét khách quan, hơi phê phán về một thói quen không tốt: 物事を悲観的に考えるきらいがある. Văn viết; thường nói về người khác hoặc một nhóm.'
+      examples:
+        - target: 彼は人の意見を聞かないきらいがある。
+          translation:
+            vi: Anh ấy có tật không chịu nghe ý kiến người khác.
+      pronunciation_note:
+        vi: きらい đọc "ki-ra-i", đồng âm với 嫌い (ghét); trong mẫu này thường viết bằng kana và mang nghĩa "khuynh hướng".
+      confusion:
+        vi: きらいがある gần がち (N2) nhưng trang trọng, mang giọng nhận xét tính cách; がち hay dùng cho tình trạng lặp lại (遅れがち). Không dùng cho khuynh hướng tốt.
+
+  - key: ja:item:n1-u8-gram-shimatsu-da
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V-る / この・あの + しまつだ
+      reading: しまつだ
+      romanization: shimatsu da
+      pos: kết cục tệ hại
+    back:
+      meaning:
+        vi: '"Rốt cuộc đến mức..., ra nông nỗi..." - sau một chuỗi chuyện xấu, kết cục tệ nhất xảy ra; người nói bực mình, chán nản: 遅刻を繰り返し、ついには無断欠勤するしまつだ. この始末だ - ra nông nỗi này.'
+      examples:
+        - target: 弟はゲームばかりして、とうとう学校を休むしまつだ。
+          translation:
+            vi: Em trai chỉ chơi game, rốt cuộc đến mức nghỉ cả học.
+      pronunciation_note:
+        vi: しまつ đọc "shi-ma-tsư"; chữ Hán là 始末.
+      confusion:
+        vi: しまつだ là kết cục xấu kèm cảm xúc chê trách (thường có ついには, とうとう, あげくの果てに). あげく (N2) nối "quá trình → kết quả"; しまつだ đứng cuối câu nhấn kết cục tệ hại.
+
+  - key: ja:item:n1-u8-gram-ni-kataku-nai
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: N / V-る + に難くない
+      reading: にかたくない
+      romanization: ni kataku nai
+      pos: không khó để (hình dung)
+    back:
+      meaning:
+        vi: '"Không khó để..., dễ dàng (hình dung, đoán)..." - đi với một số từ cố định: 想像に難くない, 察するに難くない, 理解に難くない. Văn viết trang trọng.'
+      examples:
+        - target: 被災者の苦しみは想像に難くない。
+          translation:
+            vi: Không khó để hình dung nỗi khổ của các nạn nhân thiên tai.
+      pronunciation_note:
+        vi: かたくない đọc "ka-ta-ku-nai"; 難い ở đây đọc かたい, không đọc むずかしい.
+      confusion:
+        vi: 'に難くない gần như chỉ đi với 想像, 察する, 理解; không dùng cho hành động thông thường (×作るに難くない). Nói đời thường: 簡単に想像できる.'
+
+  - key: ja:item:n1-u8-rakkan
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 楽観
+      reading: らっかん
+      romanization: rakkan
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự lạc quan; 楽観的 - lạc quan; 楽観視する - nhìn nhận lạc quan; 悲観 - bi quan
+      examples:
+        - target: 状況は楽観できない。
+          translation:
+            vi: Tình hình chưa thể lạc quan được.
+      pronunciation_note:
+        vi: らっ có âm ngắt - "ra-k-kan".
+      confusion:
+        vi: Hán Việt "lạc quan" - trùng nghĩa. Lưu ý 楽観 là thái độ đánh giá tình hình; người có tính vui vẻ thường nói 明るい人, không nói ×楽観な人 (phải là 楽観的な人).
+
+  - key: ja:item:n1-u8-souzou
+    type: vocab
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 想像
+      reading: そうぞう
+      romanization: sōzō
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự tưởng tượng, hình dung; 想像力 - trí tưởng tượng; 想像以上 - hơn cả tưởng tượng
+      examples:
+        - target: 東京の家賃は想像以上に高かった。
+          translation:
+            vi: Tiền thuê nhà ở Tokyo đắt hơn cả tưởng tượng.
+      pronunciation_note:
+        vi: そう và ぞう đều là âm dài - "sô-ô-zô-ô".
+      confusion:
+        vi: Hán Việt "tưởng tượng" - trùng nghĩa. Đồng âm 創造 (sáng tạo) cũng đọc そうぞう - phân biệt bằng chữ Hán.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n1-u8-nazo
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 謎
+      reading: なぞ
+      romanization: nazo
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều bí ẩn, câu đố; 謎に包まれる - bị bao phủ trong bí ẩn; 謎めいた - đầy bí ẩn
+      examples:
+        - target: その画家の晩年は今も謎に包まれている。
+          translation:
+            vi: Những năm cuối đời của hoạ sĩ ấy đến nay vẫn là điều bí ẩn.
+      pronunciation_note:
+        vi: なぞ đọc "na-zo", ぞ là âm đục.
+      confusion:
+        vi: 謎 là điều chưa ai giải thích được; 秘密 là bí mật có người biết nhưng giấu.
+
+  - key: ja:item:n1-u8-seika
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 成果
+      reading: せいか
+      romanization: seika
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành quả, kết quả đạt được sau nỗ lực; 成果を上げる - đạt thành quả
+      examples:
+        - target: 三年間の研究がようやく成果を上げた。
+          translation:
+            vi: Ba năm nghiên cứu cuối cùng đã cho ra thành quả.
+      pronunciation_note:
+        vi: せい đọc "sê-ê", か ngắn.
+      confusion:
+        vi: Hán Việt "thành quả". 成果 nhấn kết quả của nỗ lực; 実績 là thành tích đã tích luỹ, đo được.

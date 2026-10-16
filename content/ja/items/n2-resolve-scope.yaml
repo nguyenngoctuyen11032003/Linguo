@@ -1,0 +1,423 @@
+# Học liệu unit "Quyết tâm, đánh giá và phạm vi" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～からには / ～以上(は) / ～上は =================
+  - key: ja:item:n2-u8-gram-kara-niwa
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường (Nである) + からには
+      romanization: kara ni wa
+      pos: một khi đã... thì phải
+    back:
+      meaning:
+        vi: '"Một khi đã... thì (nhất định phải)..." - vế trước là quyết định, tình huống đã xác định; vế sau là quyết tâm, nghĩa vụ, lời khuyên: 引き受けたからには、最後までやる.'
+      examples:
+        - target: 日本に来たからには、日本語を話せるようになりたい。
+          translation:
+            vi: Một khi đã sang Nhật thì tôi muốn nói được tiếng Nhật.
+      pronunciation_note:
+        vi: からには đọc "ka-ra-ni-wa"; は là trợ từ nên đọc "wa".
+      confusion:
+        vi: 'Vế sau phải là ý chí, nghĩa vụ (～たい, ～つもりだ, ～べきだ, ～なければならない), không phải mô tả sự thật đơn thuần. から (vì) chỉ nêu lý do; からには thêm sức nặng "đã... thì phải".'
+
+  - key: ja:item:n2-u8-gram-ijou-wa
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: Thể thường (Nである) + 以上(は)
+      reading: いじょう(は)
+      romanization: ijō (wa)
+      pos: đã... thì
+    back:
+      meaning:
+        vi: '"Đã... thì..." - gần nghĩa からには nhưng trang trọng, khách quan hơn, hay dùng trong quy định, lời nói về trách nhiệm: 契約した以上は、守らなければならない.'
+      examples:
+        - target: 社員である以上、会社の規則に従うべきだ。
+          translation:
+            vi: Đã là nhân viên thì nên tuân theo quy định của công ty.
+      pronunciation_note:
+        vi: いじょう - じょう là âm dài "jô-ô".
+      confusion:
+        vi: 以上 còn nghĩa "trở lên" (18歳以上) và "hết" (以上です - cuối bài phát biểu). Nghĩa "đã... thì" chỉ khi đứng sau một mệnh đề.
+
+  - key: ja:item:n2-u8-gram-ue-wa
+    type: grammar_point
+    level: n2
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V-る / V-た + 上は
+      reading: うえは
+      romanization: ue wa
+      pos: một khi đã (văn viết)
+    back:
+      meaning:
+        vi: '"Một khi đã... thì..." - dạng cứng, văn viết của からには / 以上は, thường đi với quyết tâm lớn: こうなった上は、全力で戦うしかない.'
+      examples:
+        - target: 計画が決まった上は、迷わず進むだけだ。
+          translation:
+            vi: Một khi kế hoạch đã được quyết thì chỉ còn tiến lên không do dự.
+      pronunciation_note:
+        vi: うえは đọc "u-ê-wa".
+      confusion:
+        vi: 上は khác 上で (unit 6 - "sau khi đã... rồi mới"). 上は = đã đến nước này thì phải...; 上で = làm bước 1 trước rồi mới bước 2.
+
+  - key: ja:item:n2-u8-kakugo
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 覚悟
+      reading: かくご
+      romanization: kakugo
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự chuẩn bị tinh thần, quyết tâm chấp nhận (khó khăn); 覚悟を決める - hạ quyết tâm
+      examples:
+        - target: 厳しい練習になるが、覚悟はできている。
+          translation:
+            vi: Buổi tập sẽ rất khắc nghiệt, nhưng tôi đã chuẩn bị tinh thần.
+      pronunciation_note:
+        vi: かくご ba âm ngắn đều - "ka-ku-gô".
+      confusion:
+        vi: Hán Việt "giác ngộ" nhưng nghĩa là "sẵn sàng đón nhận điều khó", không phải "giác ngộ" kiểu tôn giáo.
+
+  - key: ja:item:n2-u8-chousen
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 挑戦
+      reading: ちょうせん
+      romanization: chōsen
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: thử thách, sự dấn thân thử sức; ～に挑戦する - thử sức với ~
+      examples:
+        - target: 来年はフルマラソンに挑戦したい。
+          translation:
+            vi: Năm sau tôi muốn thử sức với marathon toàn phần.
+      pronunciation_note:
+        vi: ちょう là âm dài - "chô-ô-sen".
+      confusion:
+        vi: Hán Việt "khiêu chiến" nhưng dùng tích cực - thử sức việc khó. Trợ từ là に (N に挑戦する), không phải を.
+
+  # ================= bài 2: ～だけあって / ～だけのことはある / ～だけに =================
+  - key: ja:item:n2-u8-gram-dake-atte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Thể thường (なAな / N) + だけあって / だけのことはある
+      romanization: dake atte
+      pos: quả không hổ là
+    back:
+      meaning:
+        vi: '"Quả không hổ danh là..., đúng là... có khác" - kết quả xứng đáng với danh tiếng, nỗ lực, giá cả: プロだけあって、さすがに上手だ. Cuối câu: さすが一流ホテルだけのことはある.'
+      examples:
+        - target: 十年住んでいただけあって、彼は京都に詳しい。
+          translation:
+            vi: Quả không hổ là đã sống mười năm, anh ấy rất rành Kyoto.
+      pronunciation_note:
+        vi: あって có âm ngắt - "at-te".
+      confusion:
+        vi: だけあって luôn là lời khen, đánh giá tích cực. Hay đi cùng さすが. Không dùng cho kết quả xấu (dùng のに / わりに).
+
+  - key: ja:item:n2-u8-gram-dake-ni
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: Thể thường (なAな / N) + だけに
+      romanization: dake ni
+      pos: chính vì... nên càng
+    back:
+      meaning:
+        vi: '"Chính vì..., nên càng..." - lý do khiến kết quả mạnh hơn bình thường, có thể tốt hoặc xấu: 期待していただけに、がっかりした (chính vì kỳ vọng nên càng thất vọng).'
+      examples:
+        - target: 初めての海外旅行だけに、楽しみで眠れない。
+          translation:
+            vi: Chính vì là chuyến đi nước ngoài đầu tiên nên háo hức đến mất ngủ.
+      pronunciation_note:
+        vi: だけに đọc "da-ke-ni", ba âm đều.
+      confusion:
+        vi: だけあって chỉ khen; だけに dùng được cả hai chiều, nhất là "càng thất vọng, càng tiếc". Đừng nhầm với だけ (chỉ).
+
+  - key: ja:item:n2-u8-hyouban
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 評判
+      reading: ひょうばん
+      romanization: hyōban
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng tăm, lời đánh giá của mọi người; 評判がいい - được khen nhiều
+      examples:
+        - target: この歯医者は、丁寧だと評判だ。
+          translation:
+            vi: Nha sĩ này nổi tiếng là làm cẩn thận.
+      pronunciation_note:
+        vi: ひょう là âm dài "hyô-ô"; ばん có ん cuối.
+      confusion:
+        vi: 評判 là lời người khác đánh giá (có thể tốt hoặc xấu); 有名 chỉ là "nổi tiếng". 評判の店 thường hiểu là quán được khen.
+
+  - key: ja:item:n2-u8-ichiryuu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 一流
+      reading: いちりゅう
+      romanization: ichiryū
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạng nhất, đẳng cấp hàng đầu; 一流ホテル - khách sạn hạng sang; 一流企業 - công ty hàng đầu
+      examples:
+        - target: 彼は一流のシェフとして世界中で知られている。
+          translation:
+            vi: Anh ấy được cả thế giới biết đến như một đầu bếp hàng đầu.
+      pronunciation_note:
+        vi: りゅう là âm ghép dài "ryu-u".
+      confusion:
+        vi: Hán Việt "nhất lưu". 一流 nói đẳng cấp; 一番 nói thứ hạng số một trong một nhóm.
+
+  # ================= bài 3: ～はともかく / ～はさておき =================
+  - key: ja:item:n2-u8-gram-wa-tomokaku
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: N + はともかく(として)
+      romanization: wa tomokaku
+      pos: tạm không bàn
+    back:
+      meaning:
+        vi: '"Chưa nói đến..., ... thì không bàn, (nhưng)..." - gác chuyện N sang một bên để nói điều quan trọng hơn: 味はともかく、値段が安い (vị thì chưa bàn, nhưng giá rẻ).'
+      examples:
+        - target: 見た目はともかく、この車は燃費がいい。
+          translation:
+            vi: Ngoại hình thì chưa nói, nhưng chiếc xe này tiết kiệm xăng.
+      pronunciation_note:
+        vi: ともかく đọc "to-mo-ka-ku", bốn nhịp đều.
+      confusion:
+        vi: 'はともかく đánh giá vế sau quan trọng hơn N. Khác はもちろん (đương nhiên, cả N lẫn...): はもちろん cộng thêm, はともかく gác lại.'
+
+  - key: ja:item:n2-u8-gram-wa-sateoki
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: N + はさておき
+      romanization: wa sateoki
+      pos: gác sang một bên
+    back:
+      meaning:
+        vi: '"Tạm gác... lại" - chủ động chuyển sang chủ đề chính, hay dùng trong họp, phát biểu: 冗談はさておき、本題に入りましょう (đùa thế đủ rồi, vào việc chính).'
+      examples:
+        - target: 細かい点はさておき、まず全体の方針を決めよう。
+          translation:
+            vi: Chi tiết tạm gác lại, trước hết hãy quyết phương hướng chung.
+      pronunciation_note:
+        vi: さておき đọc "sa-te-o-ki".
+      confusion:
+        vi: はさておき nhấn hành động "gác lại để chuyển đề tài"; はともかく hay dùng khi so sánh, đánh giá hai mặt.
+
+  - key: ja:item:n2-u8-mitame
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 見た目
+      reading: みため
+      romanization: mitame
+      pos: danh từ
+    back:
+      meaning:
+        vi: vẻ ngoài, bề ngoài; 見た目がいい - trông đẹp mắt
+      examples:
+        - target: この料理は見た目もきれいで、写真映えする。
+          translation:
+            vi: Món này trông cũng đẹp mắt, chụp ảnh rất lên hình.
+      pronunciation_note:
+        vi: みため đọc "mi-ta-me", ba âm ngắn.
+      confusion:
+        vi: 見た目 dùng cho cả người lẫn đồ vật, món ăn; 外見 trang trọng hơn, chủ yếu cho người.
+
+  # ================= bài 4: ～にわたって / ～から～にかけて =================
+  - key: ja:item:n2-u8-gram-ni-watatte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N (khoảng thời gian / phạm vi) + にわたって / にわたる + N
+      romanization: ni watatte
+      pos: suốt, trải khắp
+    back:
+      meaning:
+        vi: '"Suốt (cả khoảng)..., trải khắp..." - nhấn quy mô lớn của thời gian, không gian, số lần: 三日間にわたって, 全国にわたる調査, 長年にわたり.'
+      examples:
+        - target: 会議は五時間にわたって続いた。
+          translation:
+            vi: Cuộc họp kéo dài suốt năm tiếng đồng hồ.
+      pronunciation_note:
+        vi: わたって có âm ngắt - "wa-tat-te".
+      confusion:
+        vi: 'にわたって đi với con số, phạm vi lớn (三年, 全国, 十回); không dùng cho khoảng ngắn bình thường (×五分にわたって). Văn viết: にわたり.'
+
+  - key: ja:item:n2-u8-gram-kara-nikakete
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N1 から N2 にかけて
+      romanization: kara ni kakete
+      pos: khoảng từ... đến...
+    back:
+      meaning:
+        vi: '"Khoảng từ... đến..." - phạm vi thời gian, nơi chốn có ranh giới không rõ ràng: 今夜から明日にかけて雨, 関東から東北にかけて.'
+      examples:
+        - target: 九州から四国にかけて、大雨が予想されます。
+          translation:
+            vi: Dự báo mưa lớn trong khoảng từ Kyushu đến Shikoku.
+      pronunciation_note:
+        vi: かけて đọc "ka-ke-te".
+      confusion:
+        vi: から～まで là mốc rõ ràng, chính xác (9時から5時まで); から～にかけて là "khoảng", ranh giới mờ - rất hay gặp trong dự báo thời tiết.
+
+  - key: ja:item:n2-u8-chiiki
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 地域
+      reading: ちいき
+      romanization: chiiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu vực, vùng; 地域の人々 - người dân trong vùng
+      examples:
+        - target: この地域では、お祭りが盛んだ。
+          translation:
+            vi: Ở khu vực này, lễ hội rất phát triển.
+      pronunciation_note:
+        vi: ちい là âm dài - "chi-i-ki", ba nhịp.
+      confusion:
+        vi: Hán Việt "địa vực". 地域 là vùng có đặc điểm chung (cộng đồng); 地方 là vùng ngoài thủ đô, tỉnh lẻ.
+
+  - key: ja:item:n2-u8-kouji
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 工事
+      reading: こうじ
+      romanization: kōji
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: công trình xây dựng, thi công; 工事中 - đang thi công
+      examples:
+        - target: 駅の前で道路工事をしている。
+          translation:
+            vi: Trước nhà ga đang thi công đường.
+      pronunciation_note:
+        vi: こう là âm dài - "kô-ô-ji".
+      confusion:
+        vi: 工事 là công việc thi công (sửa đường, xây nhà); 建設 là xây dựng một công trình lớn nói chung.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n2-u8-kitai
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 期待
+      reading: きたい
+      romanization: kitai
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự kỳ vọng, mong đợi; 期待に応える - đáp ứng kỳ vọng
+      examples:
+        - target: 新しい監督に、ファンは大きな期待を寄せている。
+          translation:
+            vi: Người hâm mộ đặt kỳ vọng lớn vào vị huấn luyện viên mới.
+      pronunciation_note:
+        vi: きたい đọc "ki-tai".
+      confusion:
+        vi: Hán Việt "kỳ đãi". 期待する là mong một kết quả tốt; 楽しみにする là háo hức chờ một sự kiện vui.
+
+  - key: ja:item:n2-u8-senshu
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 選手
+      reading: せんしゅ
+      romanization: senshu
+      pos: danh từ
+    back:
+      meaning:
+        vi: vận động viên, cầu thủ; サッカー選手 - cầu thủ bóng đá
+      examples:
+        - target: 彼は高校時代、野球の選手だった。
+          translation:
+            vi: Hồi cấp ba anh ấy là cầu thủ bóng chày.
+      pronunciation_note:
+        vi: しゅ là âm ghép ngắn - "sen-shu".
+      confusion:
+        vi: 選手 là người thi đấu; huấn luyện viên là 監督 hoặc コーチ.
+
+  - key: ja:item:n2-u8-oubo
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 応募
+      reading: おうぼ
+      romanization: ōbo
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: ứng tuyển, đăng ký tham gia (tuyển dụng, cuộc thi); ～に応募する
+      examples:
+        - target: 写真コンテストに作品を応募した。
+          translation:
+            vi: Tôi đã gửi tác phẩm dự thi cuộc thi ảnh.
+      pronunciation_note:
+        vi: おう là âm dài - "ô-ô-bô".
+      confusion:
+        vi: 応募 là đáp lại lời kêu gọi tuyển chọn (thi, tuyển dụng); 申し込む là đăng ký nói chung (lớp học, dịch vụ).

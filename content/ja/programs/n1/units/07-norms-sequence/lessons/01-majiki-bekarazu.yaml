@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u7-majiki-bekarazu
+order_index: 1
+level: n1
+title:
+  vi: Không thể chấp nhận, cấm tuyệt đối - ～まじき, ～べからず
+objectives:
+  - vi: Phê phán hành vi trái tư cách bằng ～にあるまじき + N.
+  - vi: Đọc hiểu biển cấm, châm ngôn với ～べからず.
+  - vi: Hiểu ～べからざる + N - "không thể thiếu, không được phép".
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-emphasis-inevitability-review]
+items:
+  - item: ja:item:n1-u7-gram-majiki
+  - item: ja:item:n1-u7-gram-bekarazu
+  - item: ja:item:n1-u7-koui
+  - item: ja:item:n1-u7-fushouji
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được những lời phê phán nặng trong tin tức ("hành vi không thể chấp nhận ở một chính trị gia") và những tấm biển, câu châm ngôn cổ như 芝生に入るべからず.
+  - type: explain
+    text:
+      vi: 'N + に(として)あるまじき + N - "không được phép có ở một N". Người nói đánh giá rất nặng một hành vi trái với vai trò xã hội: 警察官にあるまじき行為. Mẫu này gần như luôn đứng trước danh từ như 行為, 発言, 態度.'
+  - type: explain
+    text:
+      vi: 'V-る + べからず - "cấm...", văn cổ dùng trên biển báo, nội quy: 立ち入るべからず. Dạng nối danh từ べからざる có nghĩa "không thể / không được": 欠くべからざる人材 (nhân tài không thể thiếu), 許すべからざる行為 (hành vi không thể tha thứ).'
+  - type: deep_explain
+    text:
+      vi: 'Cả hai đều bắt nguồn từ trợ động từ cổ べし (nên) và まじ (không nên). Vì thế chúng mang sắc thái đạo đức, chuẩn mực - mạnh hơn hẳn べきではない. Tiếng Việt có cách nói tương tự "điều không thể chấp nhận ở một người thầy" hay biển "Cấm vào"; tiếng Nhật hiện đại nói thường ngày thì dùng ～てはいけない / ～べきではない.'
+  - type: example
+    target: 部下に暴言を吐くなど、管理職にあるまじき態度だ。
+    target_lang: ja
+    translation:
+      vi: Buông lời thô bạo với cấp dưới là thái độ không thể chấp nhận ở một người quản lý.
+    note:
+      vi: N + にあるまじき + 態度.
+  - type: example
+    target: 選挙で嘘をつくとは、政治家としてあるまじき行為である。
+    target_lang: ja
+    translation:
+      vi: Nói dối trong bầu cử là hành vi không thể tha thứ đối với một chính trị gia.
+    note:
+      vi: としてあるまじき - "với tư cách là...".
+  - type: example
+    target: 「芝生に入るべからず」と書かれた札が立っている。
+    target_lang: ja
+    translation:
+      vi: Có tấm biển ghi "Cấm giẫm lên cỏ".
+  - type: example
+    target: 水は生活に欠くべからざるものだ。
+    target_lang: ja
+    translation:
+      vi: Nước là thứ không thể thiếu trong cuộc sống.
+    note:
+      vi: 欠くべからざる - không thể thiếu.
+  - type: example
+    target: 大手銀行の不祥事が明らかになった。
+    target_lang: ja
+    translation:
+      vi: Vụ bê bối của một ngân hàng lớn đã bị phanh phui.
+  - type: common_mistake
+    wrong: その発言は教師にあるまじきだ。
+    right: その発言は教師にあるまじきものだ。
+    target_lang: ja
+    note:
+      vi: まじき phải đứng trước danh từ (もの, 行為, 発言); không kết câu trực tiếp bằng まじき.
+  - type: common_mistake
+    wrong: 授業中は寝るべからずですよ。
+    right: 授業中は寝てはいけませんよ。
+    target_lang: ja
+    note:
+      vi: べからず là văn cổ trên biển báo, khẩu hiệu; nhắc nhở trong hội thoại dùng ～てはいけません. Ghép べからず với です nghe rất kỳ.
+  - type: summary
+    points:
+      - vi: N + に(として)あるまじき + N - không thể chấp nhận ở tư cách N.
+      - vi: V-る + べからず - cấm (biển báo, châm ngôn).
+      - vi: V-る + べからざる + N - không thể / không được (欠くべからざる).
+      - vi: 行為 - hành vi · 不祥事 - vụ bê bối.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u7-majiki-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      stem: Câu 「試験問題を事前に生徒に教えるなど、教師にあるまじき行為だ。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a3k, text: Báo trước đề thi cho học sinh là hành vi không thể chấp nhận ở một giáo viên., lang: vi }
+        - { id: b8m, text: Giáo viên nên báo trước đề thi cho học sinh., lang: vi }
+        - { id: c2n, text: Giáo viên không biết đề thi nên không thể báo cho học sinh., lang: vi }
+        - { id: d7p, text: Học sinh không được hỏi giáo viên về đề thi., lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: 教師にあるまじき行為 - hành vi không được phép có ở một giáo viên. まじき là phê phán nặng, không phải khuyên nên làm.
+    display_answer: Báo trước đề thi cho học sinh là hành vi không thể chấp nhận ở một giáo viên.
+
+  - key: ja:exercise:n1-u7-majiki-listen-bekarazu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-bekarazu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 寺の入り口には「ここで写真を撮るべからず」と書いてあった。
+      options:
+        - { id: e4q, text: Ở cổng chùa có ghi "Cấm chụp ảnh ở đây"., lang: vi }
+        - { id: f9r, text: Ở cổng chùa có ghi "Nên chụp ảnh ở đây"., lang: vi }
+        - { id: g3s, text: Ở cổng chùa có ghi "Có thể chụp ảnh ở đây"., lang: vi }
+        - { id: h6t, text: Ở cổng chùa có người đang chụp ảnh., lang: vi }
+    answer:
+      correct_option_id: e4q
+    explanation:
+      vi: 撮るべからず - cấm chụp. べからず là lời cấm kiểu cổ trên biển báo; không phải "nên" (べきだ) hay "có thể".
+    display_answer: Ở cổng chùa có ghi "Cấm chụp ảnh ở đây".
+
+  - key: ja:exercise:n1-u7-majiki-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      stem: 'Chọn dạng đúng: 患者を差別するのは、医療従事者に ＿＿ 行為だ。 ("Phân biệt đối xử với bệnh nhân là hành vi không thể chấp nhận ở nhân viên y tế.")'
+      stem_lang: vi
+      options:
+        - { id: i2u, text: あるまじき, lang: ja }
+        - { id: j7v, text: あるべからず, lang: ja }
+        - { id: k1w, text: あるまじ, lang: ja }
+        - { id: l5x, text: あるべきだ, lang: ja }
+    answer:
+      correct_option_id: i2u
+    explanation:
+      vi: Đứng trước danh từ 行為 cần dạng nối まじき. べからず kết câu, không nối danh từ; あるまじ là dạng cổ kết câu; あるべきだ nghĩa ngược lại ("nên có").
+    display_answer: あるまじき
+
+  - key: ja:exercise:n1-u7-majiki-fill-kakubekarazaru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-bekarazu
+    prompt:
+      template: "インターネットは、現代のビジネスに欠く{{b1}}道具となった。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Internet đã trở thành công cụ không thể thiếu trong kinh doanh hiện đại."
+        - "Gợi ý: dạng nối danh từ của べからず (5 chữ kana)."
+    answer:
+      blanks:
+        b1: [べからざる]
+    known_wrong:
+      - answer: べからず
+        feedback_vi: Trước danh từ 道具 phải dùng dạng nối danh từ べからざる.
+        error_tag: bekarazu_form
+      - answer: まじき
+        feedback_vi: まじき phê phán hành vi trái tư cách; "không thể thiếu" là cụm cố định 欠くべからざる.
+        error_tag: majiki_bekarazu
+    explanation:
+      vi: 欠くべからざる + N - N không thể thiếu. べからず kết câu (biển cấm), べからざる đứng trước danh từ.
+    display_answer: インターネットは、現代のビジネスに欠くべからざる道具となった。
+
+  - key: ja:exercise:n1-u7-majiki-mcq-fushouji
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u7-fushouji
+    prompt:
+      stem: Trong tin 「市役所で職員による不祥事が発覚した。」, 不祥事 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: m6y, text: "vụ bê bối, việc làm sai trái đáng xấu hổ", lang: vi }
+        - { id: n1z, text: tai nạn giao thông, lang: vi }
+        - { id: o8a, text: sự kiện chào mừng, lang: vi }
+        - { id: p4b, text: thủ tục hành chính, lang: vi }
+    answer:
+      correct_option_id: m6y
+    explanation:
+      vi: 不祥事 - vụ bê bối làm mất uy tín tổ chức; 発覚する - bị phát hiện, bị phanh phui. Tai nạn là 事故.
+    display_answer: vụ bê bối, việc làm sai trái đáng xấu hổ
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u7-majiki-fill-majiki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      template: "客の個人情報を売るとは、銀行員として{{b1}}行為だ。(không thể chấp nhận)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [あるまじき]
+    known_wrong:
+      - answer: あるべからず
+        feedback_vi: べからず không đứng trước danh từ; trước 行為 dùng あるまじき.
+        error_tag: majiki_bekarazu
+      - answer: あるべき
+        feedback_vi: あるべき là "nên có" - ngược nghĩa.
+        error_tag: meaning
+    explanation:
+      vi: としてあるまじき + 行為 - hành vi không thể chấp nhận với tư cách nhân viên ngân hàng. Bán thông tin khách là chuyện trái đạo đức nghề nghiệp - đúng chỗ của まじき.
+    display_answer: 客の個人情報を売るとは、銀行員としてあるまじき行為だ。
+
+  - key: ja:exercise:n1-u7-majiki-write-koui
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-koui
+    prompt:
+      source_text: Nhận tiền hối lộ là hành vi không thể chấp nhận ở một công chức. (dùng あるまじき và 行為)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 賄賂を受け取るのは、公務員にあるまじき行為だ。
+        - 賄賂を受け取るのは、公務員にあるまじき行為である。
+        - 賄賂を受け取るのは、公務員にあるまじき行為です。
+        - 賄賂を受け取るなど、公務員にあるまじき行為だ。
+        - 賄賂を受け取るのは、公務員としてあるまじき行為だ。
+        - 賄賂を受け取ることは、公務員にあるまじき行為だ。
+        - 賄賂をもらうのは、公務員にあるまじき行為だ。
+        - わいろをうけとるのは、こうむいんにあるまじきこういだ。
+    known_wrong:
+      - answer: 賄賂を受け取るのは、公務員にあるべからず行為だ。
+        feedback_vi: べからず không nối với danh từ 行為; dùng あるまじき.
+        error_tag: majiki_bekarazu
+      - answer: 賄賂を受け取るのは、公務員にあるまじきだ。
+        feedback_vi: まじき phải đứng trước danh từ - あるまじき行為だ.
+        error_tag: majiki_form
+    explanation:
+      vi: 賄賂を受け取る - nhận hối lộ; 公務員にあるまじき行為 - hành vi không được phép ở một công chức. Thêm など làm câu nghe phê phán mạnh hơn ("những việc như...").
+    display_answer: 賄賂を受け取るのは、公務員にあるまじき行為だ。
+
+  - key: ja:exercise:n1-u7-majiki-fill-bekarazu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-bekarazu
+    prompt:
+      template: "「この先、危険につき、入る{{b1}}」(biển cấm kiểu cổ)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [べからず]
+    known_wrong:
+      - answer: べからざる
+        feedback_vi: べからざる phải đứng trước danh từ; biển cấm kết câu bằng べからず.
+        error_tag: bekarazu_form
+      - answer: まじき
+        feedback_vi: まじき cũng phải đứng trước danh từ, và dùng để phê phán tư cách - không dùng làm biển cấm.
+        error_tag: majiki_bekarazu
+    explanation:
+      vi: V-る + べからず - cấm làm V. 危険につき - vì nguy hiểm (văn thông báo). Đây là kiểu biển báo hay gặp ở núi, đền chùa.
+    display_answer: 「この先、危険につき、入るべからず」
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u7-majiki-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-bekarazu
+    prompt:
+      source_text: 信頼は、組織にとって欠くべからざるものである。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lòng tin là thứ không thể thiếu đối với một tổ chức.
+        - Sự tin cậy là điều không thể thiếu đối với tổ chức.
+        - Đối với một tổ chức, lòng tin là thứ không thể thiếu.
+        - Đối với tổ chức, sự tin cậy là thứ không thể thiếu được.
+        - Niềm tin là thứ không thể thiếu đối với một tổ chức.
+        - Lòng tin là điều không thể thiếu với một tổ chức.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Lòng tin là thứ không được phép có trong một tổ chức.
+        feedback_vi: 欠くべからざる là "không thể thiếu" (không thể để thiếu), không phải "không được phép có".
+        error_tag: meaning
+    explanation:
+      vi: 欠く - thiếu; 欠くべからざる - không thể (để) thiếu; ～にとって - đối với. である là đuôi văn viết của だ.
+    display_answer: Lòng tin là thứ không thể thiếu đối với một tổ chức.
+
+  - key: ja:exercise:n1-u7-majiki-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      stem: Bạn viết bình luận cho một bài báo về vụ thẩm phán làm lộ thông tin vụ án. Câu nào đúng ngữ pháp và đúng sắc thái nhất?
+      stem_lang: vi
+      options:
+        - { id: q3c, text: 裁判官が捜査情報を漏らすなど、司法に携わる者にあるまじきことだ。, lang: ja }
+        - { id: r8d, text: 裁判官が捜査情報を漏らすなど、司法に携わる者にあるまじきだ。, lang: ja }
+        - { id: s2e, text: 裁判官が捜査情報を漏らすなど、司法に携わる者に漏らすべからざるだ。, lang: ja }
+        - { id: t7f, text: 裁判官が捜査情報を漏らすなど、司法に携わる者にあるまじきことにする。, lang: ja }
+    answer:
+      correct_option_id: q3c
+    explanation:
+      vi: あるまじき phải nối với danh từ (こと) rồi mới kết câu bằng だ. Phương án 2 thiếu danh từ; phương án 3 dùng べからざる mà không có danh từ đi sau; phương án 4 ghép ことにする (quyết định) vô nghĩa.
+    display_answer: 裁判官が捜査情報を漏らすなど、司法に携わる者にあるまじきことだ。
+
+  - key: ja:exercise:n1-u7-majiki-write-fushouji
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-fushouji
+    prompt:
+      source_text: Sau vụ bê bối đó, giám đốc đã từ chức. (dùng 不祥事)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - その不祥事の後、社長は辞任した。
+        - その不祥事の後、社長は辞任しました。
+        - その不祥事の後で、社長は辞任した。
+        - その不祥事を受けて、社長は辞任した。
+        - その不祥事の後、社長は辞職した。
+        - その不祥事の後、社長は辞めた。
+        - その不祥事で、社長は辞任した。
+        - その不祥事の責任を取って、社長は辞任した。
+        - そのふしょうじのあと、しゃちょうはじにんした。
+    known_wrong:
+      - answer: その事故の後、社長は辞任した。
+        feedback_vi: 事故 là tai nạn; vụ bê bối là 不祥事.
+        error_tag: vocab_meaning
+      - answer: その不祥事の後、社長は就任した。
+        feedback_vi: 就任 là nhậm chức - ngược nghĩa với 辞任 (từ chức).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 不祥事 - vụ bê bối; 辞任する - từ chức (chức vụ cao). を受けて (sau khi chịu tác động của) và の責任を取って (nhận trách nhiệm về) là cách nói rất hay gặp trong tin tức.
+    display_answer: その不祥事の後、社長は辞任した。
+
+  - key: ja:exercise:n1-u7-majiki-wb-hatsugen
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-majiki
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thái độ đó là điều không thể chấp nhận ở một bộ trưởng.\""
+      tokens:
+        - { id: w3, text: あるまじき }
+        - { id: w5, text: べからず }
+        - { id: w1, text: あの態度は }
+        - { id: w4, text: ものだ }
+        - { id: w2, text: 大臣に }
+    answer:
+      orders:
+        - [w1, w2, w3, w4]
+    explanation:
+      vi: N に + あるまじき + もの - điều không thể chấp nhận ở một N. べからず không nối được vào danh từ もの nên bị loại.
+    display_answer: あの態度は大臣にあるまじきものだ。

@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-resolve-scope-review
+order_index: 5
+level: n2
+title:
+  vi: Ôn tập - phóng sự về một vận động viên marathon địa phương
+objectives:
+  - vi: Đọc hiểu một bài phóng sự thể thao dùng からには, だけあって, はともかく, にわたって.
+  - vi: Chọn đúng からには / 以上 / 上は, だけあって / だけに, にわたって / にかけて theo ngữ cảnh.
+  - vi: Kể về quyết tâm và đánh giá thành tích một cách tự nhiên.
+estimated_minutes: 22
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n2-u8-ni-watatte]
+items:
+  - item: ja:item:n2-u8-kitai
+  - item: ja:item:n2-u8-senshu
+  - item: ja:item:n2-u8-oubo
+  - item: ja:item:n2-u8-gram-kara-niwa
+    role: reuse
+  - item: ja:item:n2-u8-gram-dake-atte
+    role: reuse
+  - item: ja:item:n2-u8-gram-dake-ni
+    role: reuse
+  - item: ja:item:n2-u8-gram-wa-tomokaku
+    role: reuse
+  - item: ja:item:n2-u8-gram-ni-watatte
+    role: reuse
+  - item: ja:item:n2-u8-gram-kara-nikakete
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Bài ôn tập là một phóng sự: chị Sato, nhân viên văn phòng, tập chạy suốt năm năm, đăng ký giải marathon quốc tế và về đích ở vị trí đáng nể. Cả bốn nhóm mẫu của unit đều xuất hiện trong vài đoạn ngắn.'
+  - type: explain
+    text:
+      vi: 'Ba nhóm cần phân biệt: quyết tâm (からには / 以上 / 上は - vế sau là ý chí, nghĩa vụ), đánh giá (だけあって khen; だけに "càng"; はともかく gác lại), phạm vi (にわたって quy mô lớn; から～にかけて khoảng mờ).'
+  - type: explain
+    text:
+      vi: 'Ba từ mới: 選手 (vận động viên), 期待 (kỳ vọng - 期待に応える: đáp ứng kỳ vọng), 応募 (ứng tuyển, đăng ký dự thi - ～に応募する).'
+  - type: deep_explain
+    text:
+      vi: 'Phóng sự Nhật thường mở đầu bằng thời gian, quy mô (五年にわたる練習), rồi trích lời nhân vật thể hiện quyết tâm (出るからには…), và kết bằng đánh giá (さすが…だけあって). Nhận ra khung này giúp bạn đọc nhanh bài đọc dài trong đề N2.'
+  - type: example
+    target: 佐藤さんは五年にわたって、毎朝欠かさず走り続けてきた。
+    target_lang: ja
+    translation:
+      vi: Suốt năm năm, chị Sato đã chạy đều đặn mỗi sáng không bỏ buổi nào.
+  - type: example
+    target: 国際マラソン大会に応募したところ、見事に出場が決まった。
+    target_lang: ja
+    translation:
+      vi: Chị đăng ký giải marathon quốc tế và đã được chọn tham gia một cách xuất sắc.
+  - type: example
+    target: 毎日練習してきただけあって、彼女は三位という好成績を残した。
+    target_lang: ja
+    translation:
+      vi: Quả không hổ là ngày nào cũng tập, chị ấy đạt thành tích tốt - hạng ba.
+  - type: example
+    target: 家族の期待が大きかっただけに、ゴールの瞬間は涙が止まらなかった。
+    target_lang: ja
+    translation:
+      vi: Chính vì kỳ vọng của gia đình rất lớn nên khoảnh khắc về đích, nước mắt chị không ngừng rơi.
+  - type: common_mistake
+    wrong: 大会にエントリーを応募した。
+    right: 大会に応募した。
+    target_lang: ja
+    note:
+      vi: 応募する đã là "đăng ký dự thi"; nơi đăng ký đi với に. Thêm エントリーを là thừa.
+  - type: common_mistake
+    wrong: 選手たちは期待を応えた。
+    right: 選手たちは期待に応えた。
+    target_lang: ja
+    note:
+      vi: '"Đáp ứng kỳ vọng" là 期待に応える - trợ từ に, không phải を.'
+  - type: summary
+    points:
+      - vi: 'からには / 以上 / 上は - đã... thì phải (vế sau: ý chí, nghĩa vụ).'
+      - vi: だけあって - quả không hổ là; だけに - chính vì... nên càng.
+      - vi: はともかく - chưa bàn đến; にわたって - suốt; から～にかけて - khoảng từ... đến.
+      - vi: 選手 - vận động viên; 期待に応える - đáp ứng kỳ vọng; 応募する - đăng ký dự thi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u8-review-listen-oubo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-oubo
+    prompt:
+      audio_asset_id: null
+      fallback_text: このボランティアには、十八歳以上なら誰でも応募できます。
+      options:
+        - { id: a6g, text: Ai từ 18 tuổi trở lên cũng có thể đăng ký làm tình nguyện viên này., lang: vi }
+        - { id: e2k, text: Chỉ người dưới 18 tuổi mới được đăng ký tình nguyện., lang: vi }
+        - { id: i7o, text: Công việc tình nguyện này đã hết hạn đăng ký., lang: vi }
+        - { id: m3s, text: Một khi đã 18 tuổi thì bắt buộc phải làm tình nguyện., lang: vi }
+    answer:
+      correct_option_id: a6g
+    explanation:
+      vi: 十八歳以上 - từ 18 tuổi trở lên (以上 sau số là "trở lên", không phải "đã... thì"); 応募できます - có thể đăng ký.
+    display_answer: Ai từ 18 tuổi trở lên cũng có thể đăng ký làm tình nguyện viên này.
+
+  - key: ja:exercise:n2-u8-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      stem: 'Đọc đoạn: 「タイムはともかく、最後まで走り切ったことが何よりうれしい。出場するからには完走すると、自分と約束していたからだ。」 Điều nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: b8m, text: "Người viết vui nhất vì đã chạy hết chặng, đúng như lời hứa với bản thân.", lang: vi }
+        - { id: f4q, text: Người viết rất vui vì đạt thành tích thời gian tốt nhất., lang: vi }
+        - { id: j9u, text: Người viết bỏ cuộc giữa chừng vì thời gian quá chậm., lang: vi }
+        - { id: n5y, text: Người viết đã hứa với người khác sẽ đạt giải., lang: vi }
+    answer:
+      correct_option_id: b8m
+    explanation:
+      vi: タイムはともかく - thời gian thì chưa bàn; 走り切った - chạy hết chặng; 出場するからには完走する - đã tham gia thì chạy hết (lời hứa với bản thân).
+    display_answer: Người viết vui nhất vì đã chạy hết chặng, đúng như lời hứa với bản thân.
+
+  - key: ja:exercise:n2-u8-review-fill-mix
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-nikakete
+    prompt:
+      template: "大会は朝から昼{{b1}}行われ、沿道では約二十キロ{{b2}}応援の声が続いた。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Giải chạy diễn ra khoảng từ sáng đến trưa, dọc đường tiếng cổ vũ kéo dài suốt khoảng 20 km."
+        - "Gợi ý: chỗ 1 đi cặp với から (khoảng mờ); chỗ 2 nhấn quy mô lớn (suốt)."
+    answer:
+      blanks:
+        b1: [にかけて]
+        b2: [にわたって, にわたり]
+    known_wrong:
+      - answer: まで
+        feedback_vi: まで cũng đúng ngữ pháp, nhưng đề yêu cầu mẫu "khoảng từ... đến" với ranh giới mờ - にかけて.
+        error_tag: kakete_made
+      - answer: にわたる
+        feedback_vi: にわたる chỉ đứng trước danh từ; trước 応援の声が続いた dùng にわたって.
+        error_tag: noun_modifier_form
+    explanation:
+      vi: 朝から昼にかけて - khoảng từ sáng đến trưa; 約二十キロにわたって - suốt khoảng 20 km. Hai mẫu phạm vi khác nhau trong cùng một câu.
+    display_answer: 大会は朝から昼にかけて行われ、沿道では約二十キロにわたって応援の声が続いた。
+
+  - key: ja:exercise:n2-u8-review-wb-senshu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-senshu
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Các vận động viên đã đáp ứng kỳ vọng của người hâm mộ.\""
+      tokens:
+        - { id: s3, text: 期待に応えた }
+        - { id: s1, text: 選手たちは }
+        - { id: s4, text: 期待を応えた }
+        - { id: s2, text: ファンの }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: 期待に応える - đáp ứng kỳ vọng (trợ từ に). 期待を応えた sai trợ từ.
+    display_answer: 選手たちはファンの期待に応えた。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u8-review-fill-ijou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-niwa
+    prompt:
+      template: "代表選手に選ばれた{{b1}}、国のために全力で走ります。(đã... thì)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [からには, 以上は, 以上, 上は]
+    known_wrong:
+      - answer: だけあって
+        feedback_vi: だけあって là lời khen "quả không hổ là"; vế sau là quyết tâm của chính mình - dùng からには / 以上は.
+        error_tag: dakeatte_karaniwa
+      - answer: から
+        feedback_vi: から chỉ nêu lý do; ý "đã... thì quyết tâm" cần からには.
+        error_tag: kara_karaniwa
+    explanation:
+      vi: 選ばれたからには - đã được chọn thì...; vế sau 全力で走ります là quyết tâm. 以上は / 上は cũng đúng (trang trọng hơn).
+    display_answer: 代表選手に選ばれたからには、国のために全力で走ります。
+
+  - key: ja:exercise:n2-u8-review-write-kitai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-kitai
+    prompt:
+      source_text: Chính vì kỳ vọng lớn nên khi thua càng thất vọng. (dùng 期待 và だけに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 期待が大きかっただけに、負けた時はがっかりした。
+        - 期待が大きかっただけに、負けた時のショックは大きかった。
+        - 期待が大きかっただけに、負けてがっかりした。
+        - 期待が大きかっただけに、負けた時はとてもがっかりした。
+        - 期待が大きかっただけに、負けた時は残念だった。
+        - 期待していただけに、負けた時はがっかりした。
+        - 期待が大きいだけに、負けた時はがっかりする。
+        - 期待が大きかっただけに、負けたときはがっかりしました。
+        - きたいがおおきかっただけに、まけたときはがっかりした。
+    known_wrong:
+      - answer: 期待が大きかっただけあって、負けた時はがっかりした。
+        feedback_vi: だけあって chỉ dùng để khen; "chính vì... nên càng (thất vọng)" là だけに.
+        error_tag: dakeatte_dakeni
+      - answer: 期待が大きかったからには、負けた時はがっかりした。
+        feedback_vi: からには đi với ý chí, nghĩa vụ; không dùng để kể cảm xúc.
+        error_tag: karaniwa_consequent
+    explanation:
+      vi: 期待が大きかっただけに - chính vì kỳ vọng lớn; がっかりする - thất vọng. だけに khiến cảm xúc ở vế sau mạnh hơn bình thường.
+    display_answer: 期待が大きかっただけに、負けた時はがっかりした。
+
+  - key: ja:exercise:n2-u8-review-write-oubo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-oubo
+    prompt:
+      source_text: Đã đăng ký dự thi thì tôi muốn luyện tập nghiêm túc. (dùng 応募 và からには)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 応募したからには、真剣に練習したい。
+        - 応募したからには、本気で練習したい。
+        - 応募したからには、しっかり練習したい。
+        - 応募したからには、真面目に練習したい。
+        - 大会に応募したからには、真剣に練習したい。
+        - 応募したからには、真剣に練習したいです。
+        - 応募したからには、真剣に練習するつもりだ。
+        - 応募した以上は、真剣に練習したい。
+        - おうぼしたからには、しんけんにれんしゅうしたい。
+    known_wrong:
+      - answer: 応募したからには、真剣に練習した。
+        feedback_vi: Vế sau của からには là ý chí - ～したい / ～つもりだ, không kể việc đã làm.
+        error_tag: karaniwa_consequent
+      - answer: 応募からには、真剣に練習したい。
+        feedback_vi: Danh từ không nối thẳng với からには - 応募したからには.
+        error_tag: karaniwa_form
+    explanation:
+      vi: 応募したからには - đã đăng ký thì...; 真剣に / 本気で練習したい - muốn tập nghiêm túc (ý chí).
+    display_answer: 応募したからには、真剣に練習したい。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u8-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      source_text: 何年も厳しい練習に耐えてきただけあって、彼女の走りには迷いがなかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Quả không hổ là đã chịu đựng tập luyện khắc nghiệt suốt nhiều năm, cách chạy của cô ấy không hề do dự.
+        - Đúng là đã trải qua nhiều năm tập luyện gian khổ có khác, cô ấy chạy không chút do dự.
+        - Quả không hổ danh nhiều năm chịu đựng luyện tập khắc nghiệt, cô ấy chạy dứt khoát không chút lưỡng lự.
+        - Không hổ là người đã kiên trì tập luyện nghiêm khắc nhiều năm, bước chạy của cô ấy không có chút do dự nào.
+        - Quả là đã chịu đựng nhiều năm tập luyện vất vả, cô ấy chạy không hề ngập ngừng.
+        - Quả không hổ là nhiều năm chịu tập luyện khắc nghiệt, cô ấy chạy không do dự chút nào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Dù đã tập luyện nhiều năm, cô ấy vẫn chạy rất do dự.
+        feedback_vi: だけあって là "quả không hổ là" (kết quả xứng đáng), và 迷いがなかった là "không do dự".
+        error_tag: dakeatte_meaning
+    explanation:
+      vi: 練習に耐えてきた - đã chịu đựng tập luyện; だけあって - quả không hổ là; 走りに迷いがない - chạy không do dự.
+    display_answer: Quả không hổ là đã chịu đựng tập luyện khắc nghiệt suốt nhiều năm, cách chạy của cô ấy không hề do dự.
+
+  - key: ja:exercise:n2-u8-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-niwa
+    prompt:
+      stem: Phóng viên hỏi vận động viên về mục tiêu khi tham dự giải quốc tế. Câu trả lời nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: c9r, text: 出場するからには、自己ベストを目指したいです。, lang: ja }
+        - { id: g4v, text: 出場するだけあって、自己ベストを目指したいです。, lang: ja }
+        - { id: k1z, text: 出場するからには、自己ベストを目指しました。, lang: ja }
+        - { id: o6d, text: 出場からには、自己ベストを目指したいです。, lang: ja }
+    answer:
+      correct_option_id: c9r
+    explanation:
+      vi: 出場するからには + 目指したい - đã tham gia thì muốn hướng tới thành tích cá nhân tốt nhất. だけあって là lời khen của người khác; 目指しました là quá khứ, không hợp ý chí; 出場からには thiếu する.
+    display_answer: 出場するからには、自己ベストを目指したいです。
+
+  - key: ja:exercise:n2-u8-review-write-watatte
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u8-gram-ni-watatte
+    prompt:
+      source_text: Cô ấy đã tập luyện suốt ba năm để tham gia giải này. (dùng にわたって)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼女はこの大会に出るために、三年にわたって練習してきた。
+        - 彼女はこの大会に出るために、三年にわたって練習した。
+        - 彼女はこの大会に出場するために、三年にわたって練習してきた。
+        - 彼女はこの大会に出るために、3年にわたって練習してきた。
+        - 彼女はこの大会に出るために、三年にわたり練習してきた。
+        - この大会に出るために、彼女は三年にわたって練習してきた。
+        - 彼女はこの大会に参加するために、三年にわたって練習してきた。
+        - 彼女はこの大会に出るため、三年にわたって練習を続けてきた。
+        - かのじょはこのたいかいにでるために、さんねんにわたってれんしゅうしてきた。
+    known_wrong:
+      - answer: 彼女はこの大会に出るために、三年にかけて練習してきた。
+        feedback_vi: Một khoảng thời gian dài không có cặp から - dùng にわたって.
+        error_tag: watatte_kakete
+      - answer: 彼女はこの大会に出るために、三年にわたる練習してきた。
+        feedback_vi: にわたる chỉ đứng trước danh từ; trước động từ dùng にわたって (hoặc にわたる練習を続けてきた).
+        error_tag: noun_modifier_form
+    explanation:
+      vi: 三年にわたって - suốt ba năm; 練習してきた - đã tập luyện (đến nay); 大会に出るために - để tham gia giải.
+    display_answer: 彼女はこの大会に出るために、三年にわたって練習してきた。
+
+  - key: ja:exercise:n2-u8-review-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      stem: 'Khán giả khen vận động viên từng vô địch thế giới: "Quả không hổ là cựu vô địch thế giới, tốc độ khác hẳn." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: d3f, text: さすが元世界チャンピオンだけあって、スピードが違う。, lang: ja }
+        - { id: h8j, text: さすが元世界チャンピオンからには、スピードが違う。, lang: ja }
+        - { id: l4n, text: さすが元世界チャンピオンはともかく、スピードが違う。, lang: ja }
+        - { id: p9r, text: さすが元世界チャンピオンにわたって、スピードが違う。, lang: ja }
+    answer:
+      correct_option_id: d3f
+    explanation:
+      vi: さすが～だけあって - quả không hổ là... (khen). からには cần vế ý chí; はともかく gác lại, ngược ý khen; にわたって chỉ phạm vi.
+    display_answer: さすが元世界チャンピオンだけあって、スピードが違う。
+
+  - key: ja:exercise:n2-u8-review-wb-tomokaku
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thứ hạng thì chưa bàn, điều quan trọng là tận hưởng việc chạy.\""
+      tokens:
+        - { id: t4, text: 大切だ }
+        - { id: t2, text: 走ることを楽しむのが }
+        - { id: t5, text: 順位にわたって、 }
+        - { id: t1, text: 順位はともかく、 }
+    answer:
+      orders:
+        - [t1, t2, t4]
+    explanation:
+      vi: 順位はともかく - thứ hạng thì chưa bàn; ～のが大切だ - việc... là quan trọng. 順位にわたって vô nghĩa vì thứ hạng không phải khoảng thời gian, phạm vi.
+    display_answer: 順位はともかく、走ることを楽しむのが大切だ。

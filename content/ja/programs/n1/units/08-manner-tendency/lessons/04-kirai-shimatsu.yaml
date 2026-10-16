@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u8-kirai-shimatsu
+order_index: 4
+level: n1
+title:
+  vi: Có tật, ra nông nỗi, không khó hình dung - ～きらいがある, ～しまつだ, ～に難くない
+objectives:
+  - vi: Nhận xét khuynh hướng xấu bằng ～きらいがある.
+  - vi: Kể kết cục tệ hại bằng ～しまつだ.
+  - vi: Nói "không khó để hình dung / đoán" bằng 想像に難くない, 察するに難くない.
+estimated_minutes: 24
+skills: [grammar, reading, writing]
+prerequisites: [ja:lesson:n1-u8-zukume-mamire-meku]
+items:
+  - item: ja:item:n1-u8-gram-kirai-ga-aru
+  - item: ja:item:n1-u8-gram-shimatsu-da
+  - item: ja:item:n1-u8-gram-ni-kataku-nai
+  - item: ja:item:n1-u8-rakkan
+  - item: ja:item:n1-u8-souzou
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được những nhận xét kiểu tiểu luận - "giới trẻ có xu hướng ngại thất bại", "rốt cuộc đến mức bỏ cả việc", "không khó để hình dung nỗi lo của cha mẹ".
+  - type: explain
+    text:
+      vi: 'V-る / V-ない / N-の + きらいがある - "có tật, có khuynh hướng (không tốt)". Giọng nhận xét khách quan, hơi phê phán: 何でも一人で抱え込むきらいがある (có tật ôm mọi việc một mình). Không dùng cho khuynh hướng tốt.'
+  - type: explain
+    text:
+      vi: 'V-る + しまつだ - "rốt cuộc đến mức..., ra nông nỗi...". Sau một loạt chuyện xấu, kết cục tệ nhất xảy ra, người nói bực bội: 何度注意しても直らず、ついには開き直るしまつだ. この / あのしまつだ - ra nông nỗi này.'
+  - type: explain
+    text:
+      vi: 'N / V-る + に難(かた)くない - "không khó để...". Gần như chỉ đi với 想像, 察する, 理解: 親の悲しみは想像に難くない. Văn viết trang trọng; nói thường thì 簡単に想像できる.'
+  - type: deep_explain
+    text:
+      vi: 'So với mẫu N2: がち là "hay bị" (tình trạng lặp lại, 遅れがち), きらいがある là "có tật" (tính cách, khuynh hướng suy nghĩ). あげく nối "quá trình → kết cục", しまつだ đứng cuối câu như tiếng thở dài "đến nước này đây". Tiếng Việt có "ra nông nỗi" và "có tật" - hai cách dịch rất sát.'
+  - type: example
+    target: 日本人は自分の意見をはっきり言わないきらいがある。
+    target_lang: ja
+    translation:
+      vi: Người Nhật có khuynh hướng không nói rõ ý kiến của mình.
+  - type: example
+    target: 彼は遅刻ばかりして、最近では会議を無断で欠席するしまつだ。
+    target_lang: ja
+    translation:
+      vi: Anh ta toàn đi muộn, dạo này còn đến mức vắng họp không xin phép.
+  - type: example
+    target: 一人で海外に渡った彼の苦労は、察するに難くない。
+    target_lang: ja
+    translation:
+      vi: Không khó để đoán được những vất vả của anh ấy khi một mình sang nước ngoài.
+  - type: example
+    target: 専門家の多くは、景気の先行きを楽観していない。
+    target_lang: ja
+    translation:
+      vi: Phần lớn chuyên gia không lạc quan về triển vọng kinh tế.
+  - type: common_mistake
+    wrong: 彼女はいつも笑顔で人に優しいきらいがある。
+    right: 彼女はいつも笑顔で人に優しい。
+    target_lang: ja
+    note:
+      vi: きらいがある chỉ dùng cho khuynh hướng không tốt; khen tính tốt thì nói thẳng.
+  - type: common_mistake
+    wrong: 一生懸命勉強して、ついに合格するしまつだ。
+    right: 一生懸命勉強して、ついに合格した。
+    target_lang: ja
+    note:
+      vi: しまつだ là kết cục tệ, mang giọng chê trách. Kết quả tốt kể bằng câu bình thường hoặc 末に.
+  - type: summary
+    points:
+      - vi: V-る / V-ない / Nの + きらいがある - có tật, có khuynh hướng (xấu).
+      - vi: V-る + しまつだ - rốt cuộc đến mức... (kết cục tệ, bực bội).
+      - vi: 想像 / 察する + に難くない - không khó để hình dung / đoán.
+      - vi: 楽観 - lạc quan · 想像 - tưởng tượng, hình dung.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u8-kirai-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-kirai-ga-aru
+    prompt:
+      stem: Câu 「兄は都合の悪い話になると、すぐ話題を変えるきらいがある。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a9k, text: Anh tôi có tật hễ gặp chuyện bất lợi là lập tức đổi đề tài., lang: vi }
+        - { id: b5m, text: Anh tôi ghét những ai đổi đề tài., lang: vi }
+        - { id: c1n, text: Anh tôi thích nói về những chuyện bất lợi., lang: vi }
+        - { id: d6p, text: Anh tôi chưa bao giờ đổi đề tài., lang: vi }
+    answer:
+      correct_option_id: a9k
+    explanation:
+      vi: 話題を変えるきらいがある - có tật đổi đề tài. きらい ở đây không phải "ghét" (嫌い) mà là "khuynh hướng"; 都合の悪い話 - chuyện bất lợi cho mình.
+    display_answer: Anh tôi có tật hễ gặp chuyện bất lợi là lập tức đổi đề tài.
+
+  - key: ja:exercise:n1-u8-kirai-listen-shimatsu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u8-gram-shimatsu-da
+    prompt:
+      audio_asset_id: null
+      fallback_text: 息子は毎晩夜更かしして、とうとう入学試験の日に寝坊するしまつだ。
+      options:
+        - { id: e4q, text: "Con trai đêm nào cũng thức khuya, rốt cuộc ra nông nỗi ngủ quên đúng ngày thi tuyển.", lang: vi }
+        - { id: f9r, text: Con trai ngủ sớm nên đi thi đúng giờ., lang: vi }
+        - { id: g3s, text: Con trai thức khuya ôn bài nên thi đỗ., lang: vi }
+        - { id: h8t, text: Con trai không đi thi vì bị ốm., lang: vi }
+    answer:
+      correct_option_id: e4q
+    explanation:
+      vi: 夜更かし - thức khuya; とうとう～寝坊するしまつだ - rốt cuộc đến mức ngủ quên. しまつだ báo hiệu kết cục tệ hại, kèm sự bực bội của người kể.
+    display_answer: Con trai đêm nào cũng thức khuya, rốt cuộc ra nông nỗi ngủ quên đúng ngày thi tuyển.
+
+  - key: ja:exercise:n1-u8-kirai-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-ni-kataku-nai
+    prompt:
+      stem: 'Chọn từ hợp nhất: 長年勤めた会社が倒産した時の彼のショックは、想像 ＿＿。 ("Không khó để hình dung cú sốc của anh ấy khi công ty làm việc nhiều năm phá sản.")'
+      stem_lang: vi
+      options:
+        - { id: i4u, text: に難くない, lang: ja }
+        - { id: j8v, text: するしまつだ, lang: ja }
+        - { id: k3w, text: のきらいがある, lang: ja }
+        - { id: l7x, text: に難しくない, lang: ja }
+    answer:
+      correct_option_id: i4u
+    explanation:
+      vi: 想像に難くない - không khó để hình dung (cụm cố định). しまつだ là kết cục tệ; きらいがある là khuynh hướng; に難しくない không phải dạng của mẫu này (難い đọc かたい).
+    display_answer: に難くない
+
+  - key: ja:exercise:n1-u8-kirai-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-kirai-ga-aru
+    prompt:
+      template: "最近の若者は、失敗を恐れて挑戦しない{{b1}}がある、と言われる。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Người ta nói giới trẻ gần đây có khuynh hướng sợ thất bại nên không dám thử thách."
+        - "Gợi ý: danh từ 3 chữ kana nghĩa \"khuynh hướng (xấu)\"."
+    answer:
+      blanks:
+        b1: [きらい]
+    known_wrong:
+      - answer: しまつ
+        feedback_vi: しまつだ là kết cục tệ của một chuyện cụ thể; nhận xét khuynh hướng chung dùng きらいがある.
+        error_tag: kirai_shimatsu
+      - answer: がち
+        feedback_vi: がち gắn vào gốc ます (挑戦しがち) và không đi với がある; mẫu ở đây là ～ないきらいがある.
+        error_tag: kirai_gachi
+    explanation:
+      vi: V-ない + きらいがある - có khuynh hướng không... と言われる - người ta nói. Kiểu câu nhận định xã hội rất hay gặp trong bài đọc N1.
+    display_answer: 最近の若者は、失敗を恐れて挑戦しないきらいがある、と言われる。
+
+  - key: ja:exercise:n1-u8-kirai-mcq-rakkan
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u8-rakkan
+    prompt:
+      stem: Câu 「楽観的な見通しは捨てるべきだ。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: m5y, text: Nên bỏ những dự đoán lạc quan đi., lang: vi }
+        - { id: n1z, text: Nên giữ những dự đoán lạc quan., lang: vi }
+        - { id: o6a, text: Không nên bi quan về tương lai., lang: vi }
+        - { id: p2b, text: Dự đoán bi quan là sai., lang: vi }
+    answer:
+      correct_option_id: m5y
+    explanation:
+      vi: 楽観的な見通し - dự đoán, triển vọng lạc quan; 捨てるべきだ - nên vứt bỏ. 楽観 là lạc quan, ngược với 悲観 (bi quan).
+    display_answer: Nên bỏ những dự đoán lạc quan đi.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u8-kirai-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-shimatsu-da
+    prompt:
+      template: "彼は借金を重ね、ついには親の家まで売る{{b1}}だ。(ra nông nỗi)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [しまつ, 始末]
+    known_wrong:
+      - answer: きらい
+        feedback_vi: きらいがある là khuynh hướng; kết cục tệ hại sau một chuỗi chuyện xấu là しまつだ.
+        error_tag: kirai_shimatsu
+      - answer: あげく
+        feedback_vi: あげく nối quá trình với kết quả ở giữa câu, không đứng cuối với だ.
+        error_tag: shimatsu_ageku
+    explanation:
+      vi: V-る + しまつだ - rốt cuộc đến mức...; ついには - cuối cùng thì. Bán cả nhà bố mẹ là kết cục tệ nhất - đúng chỗ của しまつだ.
+    display_answer: 彼は借金を重ね、ついには親の家まで売るしまつだ。
+
+  - key: ja:exercise:n1-u8-kirai-write-kataku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-ni-kataku-nai
+    prompt:
+      source_text: Không khó để hình dung tâm trạng của cha mẹ khi chờ con trở về. (dùng 想像に難くない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 子どもの帰りを待つ親の気持ちは、想像に難くない。
+        - 子どもの帰りを待つ親の気持ちは想像に難くない。
+        - 子供の帰りを待つ親の気持ちは、想像に難くない。
+        - 子どもの帰りを待つ両親の気持ちは、想像に難くない。
+        - 子どもの帰りを待つ親の心情は、想像に難くない。
+        - 子どもが帰ってくるのを待つ親の気持ちは、想像に難くない。
+        - 子どもの帰りを待つ親の気持ちは、想像にかたくない。
+        - こどものかえりをまつおやのきもちは、そうぞうにかたくない。
+    known_wrong:
+      - answer: 子どもの帰りを待つ親の気持ちは、想像に難しくない。
+        feedback_vi: Mẫu cố định là 想像に難くない (難い đọc かたい), không phải 難しくない.
+        error_tag: kataku_form
+      - answer: 子どもの帰りを待つ親の気持ちは、想像に難い。
+        feedback_vi: 想像に難い là "khó hình dung" - ngược nghĩa. Cần phủ định 難くない.
+        error_tag: negation
+    explanation:
+      vi: N は想像に難くない - N không khó để hình dung. 子どもの帰りを待つ親 - cha mẹ chờ con về. Câu trang trọng, hay gặp trong xã luận, tiểu luận.
+    display_answer: 子どもの帰りを待つ親の気持ちは、想像に難くない。
+
+  - key: ja:exercise:n1-u8-kirai-write-kirai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-kirai-ga-aru
+    prompt:
+      source_text: Trưởng phòng có tật đánh giá con người chỉ qua vẻ bề ngoài. (dùng きらいがある)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 部長は人を見た目だけで判断するきらいがある。
+        - 部長は、人を見た目だけで判断するきらいがある。
+        - 部長は人を外見だけで判断するきらいがある。
+        - 部長は人を見かけだけで判断するきらいがある。
+        - 部長は見た目だけで人を判断するきらいがある。
+        - 部長は外見だけで人を判断するきらいがある。
+        - 部長は人を見た目だけで判断するきらいがあります。
+        - ぶちょうはひとをみためだけではんだんするきらいがある。
+    known_wrong:
+      - answer: 部長は人を見た目だけで判断したきらいがある。
+        feedback_vi: きらいがある gắn vào thể từ điển (判断する) vì nói khuynh hướng thường xuyên, không phải một lần trong quá khứ.
+        error_tag: kirai_form
+      - answer: 部長は人を見た目だけで判断するしまつだ。
+        feedback_vi: しまつだ là kết cục tệ của một chuỗi sự việc; "có tật" là きらいがある.
+        error_tag: kirai_shimatsu
+    explanation:
+      vi: V-る + きらいがある - có tật...; 見た目 / 外見 - vẻ bề ngoài; 判断する - đánh giá. Giọng nhận xét khách quan nhưng ngầm phê phán.
+    display_answer: 部長は人を見た目だけで判断するきらいがある。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u8-kirai-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u8-gram-shimatsu-da
+    prompt:
+      source_text: 何度頼んでも部屋を片付けないどころか、弟は私の机まで散らかすしまつだ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhờ bao nhiêu lần mà em trai không những không dọn phòng, rốt cuộc còn bày bừa cả bàn của tôi.
+        - Nhờ mấy lần em tôi cũng không dọn phòng, đã thế còn ra nông nỗi bày bừa cả bàn tôi.
+        - Bảo bao nhiêu lần em trai cũng chẳng dọn phòng, rốt cuộc còn làm bừa bộn cả bàn của tôi.
+        - Dù nhờ bao nhiêu lần, em trai không dọn phòng mà còn bày bừa luôn cả bàn của tôi.
+        - Nhờ mãi mà em trai chẳng những không dọn phòng, còn bày bừa đến cả bàn của tôi.
+        - Em trai tôi nhờ bao nhiêu lần cũng không dọn phòng, rốt cuộc còn làm bừa cả bàn tôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Em trai tôi đã dọn sạch phòng và cả bàn của tôi.
+        feedback_vi: 片付けない là "không dọn", 散らかす là "bày bừa" - ngược với dọn sạch.
+        error_tag: meaning
+    explanation:
+      vi: 片付けないどころか - chẳng những không dọn mà còn...; 散らかすしまつだ - rốt cuộc đến mức bày bừa. Hai mẫu cùng diễn tả sự bực bội tăng dần.
+    display_answer: Nhờ bao nhiêu lần mà em trai không những không dọn phòng, rốt cuộc còn bày bừa cả bàn của tôi.
+
+  - key: ja:exercise:n1-u8-kirai-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-kirai-ga-aru
+    prompt:
+      stem: Bạn viết nhận xét trong một bài tiểu luận rằng truyền thông có khuynh hướng chỉ đưa tin tiêu cực. Câu nào đúng và hợp văn viết nhất?
+      stem_lang: vi
+      options:
+        - { id: q6c, text: マスコミは悪いニュースばかりを報じるきらいがある。, lang: ja }
+        - { id: r2d, text: マスコミは悪いニュースばかりを報じるきらいだ。, lang: ja }
+        - { id: s7e, text: マスコミは悪いニュースばかりを報じるのきらいだ。, lang: ja }
+        - { id: t3f, text: マスコミは悪いニュースばかりを報じるに難くない。, lang: ja }
+    answer:
+      correct_option_id: q6c
+    explanation:
+      vi: V-る + きらいがある - có khuynh hướng (xấu), nhận xét chung. きらいだ thiếu がある nên thành "ghét"; のきらいだ không phải mẫu này; に難くない chỉ đi với 想像 / 察する.
+    display_answer: マスコミは悪いニュースばかりを報じるきらいがある。
+
+  - key: ja:exercise:n1-u8-kirai-write-rakkan
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-rakkan
+    prompt:
+      source_text: Tình hình vẫn chưa thể lạc quan, nhưng cũng không cần phải bi quan quá. (dùng 楽観)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 状況はまだ楽観できないが、悲観しすぎる必要もない。
+        - 状況はまだ楽観できないが、悲観しすぎる必要はない。
+        - 状況はまだ楽観できないが、あまり悲観する必要もない。
+        - 状況はまだ楽観できませんが、悲観しすぎる必要もありません。
+        - 状況はまだ楽観できないけれど、悲観しすぎる必要もない。
+        - まだ楽観できる状況ではないが、悲観しすぎる必要もない。
+        - 状況はまだ楽観を許さないが、悲観しすぎる必要もない。
+        - じょうきょうはまだらっかんできないが、ひかんしすぎるひつようもない。
+    known_wrong:
+      - answer: 状況はまだ楽観できるが、悲観しすぎる必要もない。
+        feedback_vi: Câu gốc là "chưa thể lạc quan" - cần phủ định 楽観できない.
+        error_tag: negation
+      - answer: 状況はまだ楽観できないが、悲観しすぎる必要がある。
+        feedback_vi: Không cần phải làm là 必要はない / 必要もない, không phải 必要がある.
+        error_tag: meaning
+    explanation:
+      vi: 楽観できない - chưa thể lạc quan; 悲観しすぎる必要もない - cũng không cần bi quan quá. 楽観を許さない là cách nói báo chí "tình hình không cho phép lạc quan".
+    display_answer: 状況はまだ楽観できないが、悲観しすぎる必要もない。
+
+  - key: ja:exercise:n1-u8-kirai-wb-sasshi
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-ni-kataku-nai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Không khó để đoán được lý do cô ấy từ chức.\""
+      tokens:
+        - { id: s4, text: 察するに難くない }
+        - { id: s5, text: 察するしまつだ }
+        - { id: s1, text: 彼女が }
+        - { id: s3, text: 理由は }
+        - { id: s2, text: 辞職した }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: 彼女が辞職した理由 - lý do cô ấy từ chức; 察するに難くない - không khó để đoán. しまつだ là kết cục tệ của một chuỗi sự việc, không hợp ở đây.
+    display_answer: 彼女が辞職した理由は察するに難くない。

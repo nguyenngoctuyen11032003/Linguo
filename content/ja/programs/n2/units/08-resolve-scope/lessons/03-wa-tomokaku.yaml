@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u8-wa-tomokaku
+order_index: 3
+level: n2
+title:
+  vi: Chưa bàn đến..., tạm gác lại - ～はともかく(として), ～はさておき
+objectives:
+  - vi: Gác một mặt sang bên để nói điều quan trọng hơn bằng ～はともかく.
+  - vi: Chuyển sang chủ đề chính bằng ～はさておき.
+  - vi: Phân biệt はともかく (gác lại) với はもちろん (đương nhiên, cộng thêm).
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u8-dake-atte]
+items:
+  - item: ja:item:n2-u8-gram-wa-tomokaku
+  - item: ja:item:n2-u8-gram-wa-sateoki
+  - item: ja:item:n2-u8-mitame
+  - item: ja:item:n2-u2-gram-wa-mochiron
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đánh giá được kiểu "vẻ ngoài thì chưa nói, nhưng vị rất ngon" và điều khiển cuộc họp "chuyện đùa tạm gác lại, vào việc chính nhé".
+  - type: explain
+    text:
+      vi: 'N + はともかく(として) - "N thì chưa bàn, (nhưng)...". Người nói tạm không đánh giá N để nhấn vế sau quan trọng hơn: 値段はともかく、品質はいい (giá thì chưa nói, nhưng chất lượng tốt).'
+  - type: explain
+    text:
+      vi: 'N + はさておき - "tạm gác N lại" - chủ động bỏ qua một chuyện để chuyển sang việc chính, rất hay dùng khi dẫn họp, phát biểu: 前置きはさておき、本題に入ります.'
+  - type: explain
+    text:
+      vi: 'Đừng nhầm với はもちろん (unit 2): はもちろん là "N thì đương nhiên rồi, và cả..." - cộng thêm; はともかく là "N thì gác lại" - không cộng mà loại ra. Tiếng Việt "chưa kể" dễ gây nhầm hai mẫu này.'
+  - type: deep_explain
+    text:
+      vi: 'Dạng nghi vấn: ～かどうかはともかく (có... hay không thì chưa bàn): 合格できるかどうかはともかく、最後まで頑張りたい. Câu này rất tự nhiên khi bạn muốn tách kết quả ra khỏi nỗ lực.'
+  - type: example
+    target: 見た目はともかく、このパンは本当においしい。
+    target_lang: ja
+    translation:
+      vi: Vẻ ngoài thì chưa nói, nhưng bánh mì này thật sự rất ngon.
+  - type: example
+    target: 他の人はともかくとして、私は彼の意見に賛成だ。
+    target_lang: ja
+    translation:
+      vi: Người khác thì không bàn, còn tôi tán thành ý kiến của anh ấy.
+  - type: example
+    target: 冗談はさておき、来月の予定を確認しましょう。
+    target_lang: ja
+    translation:
+      vi: Đùa thế đủ rồi, hãy xác nhận lịch tháng sau nhé.
+  - type: example
+    target: 勝てるかどうかはともかく、全力を出すことが大切だ。
+    target_lang: ja
+    translation:
+      vi: Thắng được hay không thì chưa bàn, điều quan trọng là dốc hết sức.
+  - type: common_mistake
+    wrong: 子どもはともかく、大人も楽しめる映画です。
+    right: 子どもはもちろん、大人も楽しめる映画です。
+    target_lang: ja
+    note:
+      vi: Ý "trẻ em đương nhiên rồi, cả người lớn cũng..." là cộng thêm - dùng はもちろん. はともかく là gác trẻ em sang một bên, sai ý.
+  - type: common_mistake
+    wrong: 味がともかく、値段が高すぎる。
+    right: 味はともかく、値段が高すぎる。
+    target_lang: ja
+    note:
+      vi: Mẫu cố định là N + は + ともかく; không dùng が.
+  - type: summary
+    points:
+      - vi: N はともかく(として) - N thì chưa bàn, (nhưng)...
+      - vi: N はさておき - tạm gác N, chuyển sang việc chính.
+      - vi: ～かどうかはともかく - có... hay không thì chưa bàn.
+      - vi: はもちろん - cộng thêm; はともかく - gác lại.
+      - vi: 見た目 - vẻ ngoài.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u8-tomokaku-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      stem: 'Câu 場所はともかく、この部屋は家賃が安い。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: g6l, text: "Vị trí thì chưa bàn, nhưng căn phòng này tiền thuê rẻ.", lang: vi }
+        - { id: k2p, text: "Vị trí đương nhiên tốt, tiền thuê cũng rẻ.", lang: vi }
+        - { id: o7t, text: Vì vị trí tốt nên tiền thuê rẻ., lang: vi }
+        - { id: s3x, text: Vị trí xấu nên tiền thuê đắt., lang: vi }
+    answer:
+      correct_option_id: g6l
+    explanation:
+      vi: 場所はともかく - vị trí thì tạm không bàn; vế sau (tiền thuê rẻ) là điểm người nói muốn nhấn. Không phải "đương nhiên" (はもちろん).
+    display_answer: Vị trí thì chưa bàn, nhưng căn phòng này tiền thuê rẻ.
+
+  - key: ja:exercise:n2-u8-tomokaku-listen-sateoki
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-wa-sateoki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 細かい話はさておき、まず結論からお伝えします。
+      options:
+        - { id: w8b, text: "Chuyện chi tiết tạm gác lại, tôi xin nói kết luận trước.", lang: vi }
+        - { id: a4f, text: Tôi sẽ nói chi tiết trước rồi mới nói kết luận., lang: vi }
+        - { id: e9j, text: Chuyện chi tiết là quan trọng nhất nên phải nói trước., lang: vi }
+        - { id: i5n, text: Tôi không có kết luận nào để nói., lang: vi }
+    answer:
+      correct_option_id: w8b
+    explanation:
+      vi: 細かい話はさておき - tạm gác chuyện chi tiết; まず結論から - trước hết từ kết luận. Kiểu nói rất hay gặp trong thuyết trình.
+    display_answer: Chuyện chi tiết tạm gác lại, tôi xin nói kết luận trước.
+
+  - key: ja:exercise:n2-u8-tomokaku-mcq-mochiron
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-wa-mochiron
+    prompt:
+      stem: 'Chọn từ đúng: "Món này người Nhật thì đương nhiên rồi, người nước ngoài cũng thích." この料理は、日本人＿＿、外国人にも人気がある。'
+      stem_lang: vi
+      options:
+        - { id: m1r, text: はもちろん, lang: ja }
+        - { id: q6v, text: はともかく, lang: ja }
+        - { id: u2z, text: はさておき, lang: ja }
+        - { id: y7d, text: がともかく, lang: ja }
+    answer:
+      correct_option_id: m1r
+    explanation:
+      vi: '"Đương nhiên rồi, và cả..." - cộng thêm, dùng はもちろん. はともかく / はさておき là gác sang một bên, ngược ý; がともかく sai dạng.'
+    display_answer: はもちろん
+
+  - key: ja:exercise:n2-u8-tomokaku-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      template: "デザインは{{b1}}、このかばんは丈夫で長く使える。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Thiết kế thì chưa nói, nhưng chiếc túi này bền, dùng được lâu."
+        - "Gợi ý: bốn chữ kana - \"chưa bàn đến\"."
+    answer:
+      blanks:
+        b1: [ともかく]
+    known_wrong:
+      - answer: もちろん
+        feedback_vi: はもちろん là "đương nhiên rồi, cả..."; ở đây thiết kế bị gác lại để khen độ bền - ともかく.
+        error_tag: tomokaku_mochiron
+      - answer: さておく
+        feedback_vi: Dạng đúng là さておき (nối câu), không dùng さておく ở đây.
+        error_tag: sateoki_form
+    explanation:
+      vi: デザインはともかく - thiết kế thì chưa bàn; vế sau là điểm mạnh người nói nhấn.
+    display_answer: デザインはともかく、このかばんは丈夫で長く使える。
+
+  - key: ja:exercise:n2-u8-tomokaku-wb-mitame
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-mitame
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đừng đánh giá người khác chỉ qua vẻ bề ngoài.\""
+      tokens:
+        - { id: t3, text: 判断しないで }
+        - { id: t1, text: 人を }
+        - { id: t4, text: 見た目に }
+        - { id: t2, text: 見た目だけで }
+    answer:
+      orders:
+        - [t1, t2, t3]
+        - [t2, t1, t3]
+    explanation:
+      vi: 見た目だけで判断する - đánh giá chỉ bằng vẻ ngoài (で chỉ căn cứ). 見た目に判断する sai trợ từ.
+    display_answer: 人を見た目だけで判断しないで。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u8-tomokaku-fill-kadouka
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      template: "役に立つかどうか{{b1}}、一度読んでみる価値はある。(chưa bàn)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [はともかく, はさておき]
+    known_wrong:
+      - answer: はもちろん
+        feedback_vi: Ý là gác câu hỏi "có ích hay không" sang bên - はともかく, không phải "đương nhiên".
+        error_tag: tomokaku_mochiron
+      - answer: がともかく
+        feedback_vi: Mẫu cố định là は + ともかく.
+        error_tag: tomokaku_particle
+    explanation:
+      vi: ～かどうかはともかく - có... hay không thì chưa bàn. はさておき cũng hợp nghĩa "tạm gác".
+    display_answer: 役に立つかどうかはともかく、一度読んでみる価値はある。
+
+  - key: ja:exercise:n2-u8-tomokaku-write-sateoki
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-sateoki
+    prompt:
+      source_text: Lời chào hỏi tạm gác lại, chúng ta bắt đầu cuộc họp ngay nhé. (dùng はさておき)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 挨拶はさておき、さっそく会議を始めましょう。
+        - あいさつはさておき、さっそく会議を始めましょう。
+        - 挨拶はさておき、早速会議を始めましょう。
+        - 挨拶はさておき、すぐに会議を始めましょう。
+        - 挨拶はさておき、さっそくミーティングを始めましょう。
+        - ご挨拶はさておき、さっそく会議を始めましょう。
+        - 挨拶はさておいて、さっそく会議を始めましょう。
+        - あいさつはさておき、さっそくかいぎをはじめましょう。
+    known_wrong:
+      - answer: 挨拶はもちろん、さっそく会議を始めましょう。
+        feedback_vi: はもちろん là "đương nhiên rồi, và cả..." - không phải "tạm gác lại".
+        error_tag: sateoki_mochiron
+      - answer: 挨拶をさておき、さっそく会議を始めましょう。
+        feedback_vi: Mẫu là N は + さておき.
+        error_tag: sateoki_particle
+    explanation:
+      vi: 挨拶はさておき - tạm gác lời chào hỏi; さっそく - ngay lập tức; 始めましょう - bắt đầu thôi.
+    display_answer: 挨拶はさておき、さっそく会議を始めましょう。
+
+  - key: ja:exercise:n2-u8-tomokaku-write-tomokaku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      source_text: Giá thì chưa nói, nhưng chiếc máy tính này rất nhẹ. (dùng はともかく)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 値段はともかく、このパソコンはとても軽い。
+        - 値段はともかく、このパソコンはとても軽いです。
+        - 値段はともかくとして、このパソコンはとても軽い。
+        - 価格はともかく、このパソコンはとても軽い。
+        - 値段はともかく、このパソコンはすごく軽い。
+        - 値段はともかく、このパソコンは非常に軽い。
+        - 値段はともかく、このノートパソコンはとても軽い。
+        - ねだんはともかく、このパソコンはとてもかるい。
+    known_wrong:
+      - answer: 値段はもちろん、このパソコンはとても軽い。
+        feedback_vi: はもちろん là "đương nhiên"; ý gác giá sang bên dùng はともかく.
+        error_tag: tomokaku_mochiron
+      - answer: 値段がともかく、このパソコンはとても軽い。
+        feedback_vi: Mẫu cố định là N は + ともかく.
+        error_tag: tomokaku_particle
+    explanation:
+      vi: 値段はともかく - giá thì chưa bàn; vế sau nêu điểm nổi bật (rất nhẹ).
+    display_answer: 値段はともかく、このパソコンはとても軽い。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u8-tomokaku-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      source_text: 結果はともかくとして、彼の努力は認めるべきだ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kết quả thì chưa bàn, nhưng nỗ lực của anh ấy cần được ghi nhận.
+        - Kết quả thế nào thì chưa nói, nỗ lực của anh ấy nên được công nhận.
+        - Gác kết quả sang một bên, ta nên công nhận nỗ lực của anh ấy.
+        - Kết quả thì tạm không bàn, nhưng nên ghi nhận sự cố gắng của anh ấy.
+        - Chưa bàn đến kết quả, nỗ lực của anh ấy cần được thừa nhận.
+        - Kết quả thì không nói, nhưng phải công nhận sự nỗ lực của anh ấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kết quả đương nhiên tốt, và nỗ lực của anh ấy cũng tốt.
+        feedback_vi: はともかくとして là "gác lại, chưa bàn", không phải "đương nhiên".
+        error_tag: tomokaku_meaning
+    explanation:
+      vi: 結果はともかくとして - kết quả thì chưa bàn; 努力は認めるべきだ - nỗ lực nên được công nhận.
+    display_answer: Kết quả thì chưa bàn, nhưng nỗ lực của anh ấy cần được ghi nhận.
+
+  - key: ja:exercise:n2-u8-tomokaku-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-sateoki
+    prompt:
+      stem: Bạn là người dẫn cuộc họp. Mọi người đang nói chuyện phiếm về bóng đá. Bạn muốn kéo về chủ đề chính một cách nhẹ nhàng. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: b8h, text: サッカーの話はさておき、そろそろ本題に入りましょうか。, lang: ja }
+        - { id: f3l, text: サッカーの話はもちろん、そろそろ本題に入りましょうか。, lang: ja }
+        - { id: j9p, text: サッカーの話をさておき、そろそろ本題に入りましょうか。, lang: ja }
+        - { id: n4t, text: サッカーの話はさておく、そろそろ本題に入りましょうか。, lang: ja }
+    answer:
+      correct_option_id: b8h
+    explanation:
+      vi: N はさておき - tạm gác N lại để vào chủ đề chính (本題). はもちろん sai ý; をさておき sai trợ từ; さておく không nối câu.
+    display_answer: サッカーの話はさておき、そろそろ本題に入りましょうか。
+
+  - key: ja:exercise:n2-u8-tomokaku-write-mitame
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u8-mitame
+    prompt:
+      source_text: Vẻ ngoài thì chưa bàn, nhưng chiếc xe cũ này vẫn chạy tốt. (dùng 見た目 và はともかく)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 見た目はともかく、この古い車はまだよく走る。
+        - 見た目はともかく、この古い車はまだよく走ります。
+        - 見た目はともかく、この古い車はまだちゃんと走る。
+        - 見た目はともかくとして、この古い車はまだよく走る。
+        - 見た目はともかく、この古い車はまだ問題なく走る。
+        - 見た目はともかく、この古い車はまだまだ走れる。
+        - 見た目はともかく、この古い車はまだしっかり走る。
+        - みためはともかく、このふるいくるまはまだよくはしる。
+    known_wrong:
+      - answer: 見た目はもちろん、この古い車はまだよく走る。
+        feedback_vi: はもちろん là "đương nhiên tốt, cả... nữa" - không hợp với ý gác vẻ ngoài.
+        error_tag: tomokaku_mochiron
+      - answer: 見た目がともかく、この古い車はまだよく走る。
+        feedback_vi: Mẫu cố định là N は + ともかく.
+        error_tag: tomokaku_particle
+    explanation:
+      vi: 見た目はともかく - vẻ ngoài thì chưa bàn; まだよく走る - vẫn chạy tốt. Người nói thừa nhận xe xấu nhưng nhấn điểm mạnh.
+    display_answer: 見た目はともかく、この古い車はまだよく走る。
+
+  - key: ja:exercise:n2-u8-tomokaku-wb-tomokaku
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-wa-tomokaku
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Người khác nghĩ sao thì không bàn, tôi muốn làm điều mình thích.\""
+      tokens:
+        - { id: k4, text: 好きなことをしたい }
+        - { id: k2, text: 他人がどう思うかは }
+        - { id: k5, text: さておく、 }
+        - { id: k1, text: ともかく、 }
+        - { id: k3, text: 私は }
+    answer:
+      orders:
+        - [k2, k1, k3, k4]
+        - [k3, k2, k1, k4]
+    explanation:
+      vi: 疑問詞 + か + はともかく - (ai nghĩ thế nào) thì chưa bàn. 私は có thể đứng đầu câu. さておく là thể từ điển, không nối câu được - phải là さておき.
+    display_answer: 他人がどう思うかはともかく、私は好きなことをしたい。

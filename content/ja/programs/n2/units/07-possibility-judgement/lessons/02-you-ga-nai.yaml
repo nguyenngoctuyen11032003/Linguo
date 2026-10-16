@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u7-you-ga-nai
+order_index: 2
+level: n2
+title:
+  vi: Không có cách nào - ～ようがない, ～ようもない
+objectives:
+  - vi: Nói "không có cách nào để..." bằng Vます-gốc + ようがない.
+  - vi: Dùng đúng dạng N の + しようがない với động từ する.
+  - vi: Phân biệt ようがない (không có cách) với できない (không làm được).
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u7-kanenai]
+items:
+  - item: ja:item:n2-u7-gram-you-ga-nai
+  - item: ja:item:n2-u7-renrakusaki
+  - item: ja:item:n2-u7-shudan
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "không có số điện thoại nên chẳng có cách nào liên lạc", "hỏng đến mức này thì hết cách sửa" - lối nói rất hay gặp khi than phiền hoặc giải thích vì sao không làm được.
+  - type: explain
+    text:
+      vi: 'Vます-gốc + ようがない - "không có cách nào để...". Người nói muốn làm nhưng không có phương tiện, thông tin hay đường nào: 連絡先が分からないので、連絡しようがない. ようもない nhấn mạnh hơn: どうしようもない (hết cách).'
+  - type: explain
+    text:
+      vi: 'Với danh từ + する, tiếng Nhật thường tách: N の + しようがない - 説明のしようがない (không biết giải thích thế nào), 返事のしようがない. Nói 説明しようがない cũng được.'
+  - type: explain
+    text:
+      vi: 'Khác できない: できない có thể do mình thiếu năng lực (泳げない - không biết bơi); ようがない nhấn "không tồn tại cách nào", ai làm cũng vậy. Tiếng Việt "hết cách", "chịu" gần nghĩa nhất.'
+  - type: deep_explain
+    text:
+      vi: 'Cụm cố định: どうしようもない - hết cách, vô phương (cả nghĩa "tệ hết thuốc chữa": どうしようもない人). しょうがない / 仕方がない cũng là "đành chịu" nhưng là thái độ chấp nhận, không nói cụ thể việc gì không làm được.'
+  - type: example
+    target: 名前も住所も分からないので、探しようがない。
+    target_lang: ja
+    translation:
+      vi: Cả tên lẫn địa chỉ đều không biết nên chẳng có cách nào tìm.
+  - type: example
+    target: ここまで壊れてしまったら、もう直しようがありません。
+    target_lang: ja
+    translation:
+      vi: Hỏng đến mức này thì không còn cách nào sửa nữa.
+  - type: example
+    target: あの時の気持ちは、言葉では説明のしようがない。
+    target_lang: ja
+    translation:
+      vi: Cảm xúc lúc ấy không có cách nào giải thích được bằng lời.
+    note:
+      vi: 説明する → 説明のしようがない.
+  - type: example
+    target: 山の中で携帯の電波がなく、助けを呼ぶ手段がなかった。
+    target_lang: ja
+    translation:
+      vi: Trong núi không có sóng điện thoại, không có phương tiện nào để gọi cứu giúp.
+  - type: common_mistake
+    wrong: 連絡先が分からないので、連絡するようがない。
+    right: 連絡先が分からないので、連絡しようがない。
+    target_lang: ja
+    note:
+      vi: ようがない gắn vào gốc ます - 連絡します → 連絡し + ようがない. Không dùng thể từ điển.
+  - type: common_mistake
+    wrong: 私は泳ぎようがないので、プールに行きません。
+    right: 私は泳げないので、プールに行きません。
+    target_lang: ja
+    note:
+      vi: Không biết bơi là thiếu khả năng của bản thân - dùng できない / thể khả năng. ようがない chỉ dùng khi hoàn cảnh không cho phép cách nào.
+  - type: summary
+    points:
+      - vi: Vます-gốc + ようがない / ようもない - không có cách nào để...
+      - vi: N + する → N の + しようがない (説明のしようがない).
+      - vi: どうしようもない - hết cách, vô phương.
+      - vi: 連絡先 - thông tin liên lạc; 手段 - phương tiện, cách thức.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u7-youganai-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      stem: 'Câu 電車が全部止まっているので、会社に行きようがない。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: b4n, text: Tàu ngừng chạy hết nên chẳng có cách nào đến công ty., lang: vi }
+        - { id: f9s, text: Tàu ngừng chạy hết nhưng tôi vẫn không muốn đến công ty., lang: vi }
+        - { id: j2w, text: Tàu ngừng chạy hết nên tôi không cần đến công ty., lang: vi }
+        - { id: n7c, text: Tàu ngừng chạy hết nên tôi đã đi bộ đến công ty., lang: vi }
+    answer:
+      correct_option_id: b4n
+    explanation:
+      vi: 行きようがない - không có cách nào để đi (vì hoàn cảnh), không phải "không muốn" hay "không cần".
+    display_answer: Tàu ngừng chạy hết nên chẳng có cách nào đến công ty.
+
+  - key: ja:exercise:n2-u7-youganai-listen-renraku
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-renrakusaki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 彼の連絡先を聞き忘れたので、お礼の言いようがない。
+      options:
+        - { id: q5h, text: Tôi quên hỏi thông tin liên lạc của anh ấy nên chẳng có cách nào nói lời cảm ơn., lang: vi }
+        - { id: s1d, text: Tôi đã hỏi thông tin liên lạc của anh ấy để nói lời cảm ơn., lang: vi }
+        - { id: v6k, text: Anh ấy quên cho tôi số điện thoại nên không thèm cảm ơn tôi., lang: vi }
+        - { id: x3r, text: Tôi không muốn cảm ơn anh ấy vì anh ấy quên liên lạc., lang: vi }
+    answer:
+      correct_option_id: q5h
+    explanation:
+      vi: 聞き忘れた - quên hỏi; お礼の言いようがない - không có cách nào nói lời cảm ơn. Người nói muốn cảm ơn nhưng không có cách.
+    display_answer: Tôi quên hỏi thông tin liên lạc của anh ấy nên chẳng có cách nào nói lời cảm ơn.
+
+  - key: ja:exercise:n2-u7-youganai-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      template: "パスワードを忘れてしまったので、ファイルを{{b1}}ようがない。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Quên mất mật khẩu nên chẳng có cách nào mở file."
+        - "Gợi ý: gốc ます của 開く (mở)."
+    answer:
+      blanks:
+        b1: [開き, ひらき]
+    known_wrong:
+      - answer: 開く
+        feedback_vi: ようがない gắn vào gốc ます - 開きます → 開き.
+        error_tag: you_ga_nai_form
+      - answer: 開か
+        feedback_vi: Không dùng thể ない; dùng gốc ます - 開き + ようがない.
+        error_tag: you_ga_nai_form
+    explanation:
+      vi: 開きようがない - không có cách nào mở. Gốc ます + ようがない; mật khẩu là "phương tiện" duy nhất đã mất.
+    display_answer: パスワードを忘れてしまったので、ファイルを開きようがない。
+
+  - key: ja:exercise:n2-u7-youganai-mcq-shudan
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-shudan
+    prompt:
+      stem: 'Chọn từ phù hợp: この島への交通＿＿は、一日二本の船しかない。 ("Phương tiện đi đến hòn đảo này chỉ có hai chuyến tàu mỗi ngày.")'
+      stem_lang: vi
+      options:
+        - { id: c8m, text: 手段, lang: ja }
+        - { id: g3t, text: 連絡先, lang: ja }
+        - { id: k6b, text: 故障, lang: ja }
+        - { id: o1f, text: 事故, lang: ja }
+    answer:
+      correct_option_id: c8m
+    explanation:
+      vi: 交通手段 - phương tiện đi lại. 連絡先 là thông tin liên lạc, 故障 là hỏng hóc, 事故 là tai nạn.
+    display_answer: 手段
+
+  - key: ja:exercise:n2-u7-youganai-wb-setsumei
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vị của món này khó mà diễn tả được.\""
+      tokens:
+        - { id: s3, text: 表現のしようがない }
+        - { id: s1, text: この料理の }
+        - { id: s4, text: 表現するようがない }
+        - { id: s2, text: 味は }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: 表現する → 表現のしようがない (N の + しようがない). 表現するようがない sai vì ようがない không gắn vào thể từ điển.
+    display_answer: この料理の味は表現のしようがない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u7-youganai-fill-dou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      template: "台風で飛行機が飛ばないのは、どう{{b1}}もないことだ。(hết cách)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [しよう]
+    known_wrong:
+      - answer: する
+        feedback_vi: Cụm cố định là どうしようもない - しよう là gốc ます し + よう.
+        error_tag: you_ga_nai_form
+      - answer: しない
+        feedback_vi: Không có どうしないもない; cụm "hết cách" là どうしようもない.
+        error_tag: fixed_phrase
+    explanation:
+      vi: どうしようもない - hết cách, không làm gì được. Đây là ようもない (nhấn mạnh hơn ようがない) gắn vào どう + し.
+    display_answer: 台風で飛行機が飛ばないのは、どうしようもないことだ。
+
+  - key: ja:exercise:n2-u7-youganai-write-sagasu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-renrakusaki
+    prompt:
+      source_text: Không có thông tin liên lạc của khách hàng nên chẳng có cách nào liên lạc. (dùng ようがない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お客様の連絡先がないので、連絡しようがない。
+        - お客様の連絡先がないので、連絡のしようがない。
+        - お客様の連絡先がないので、連絡しようがありません。
+        - お客様の連絡先がないので、連絡のしようがありません。
+        - 客の連絡先がないので、連絡しようがない。
+        - お客様の連絡先が分からないので、連絡しようがない。
+        - お客様の連絡先がないから、連絡しようがない。
+        - お客さんの連絡先がないので、連絡しようがない。
+        - おきゃくさまのれんらくさきがないので、れんらくしようがない。
+    known_wrong:
+      - answer: お客様の連絡先がないので、連絡するようがない。
+        feedback_vi: ようがない gắn vào gốc ます - 連絡し + ようがない.
+        error_tag: you_ga_nai_form
+      - answer: お客様の連絡先がないので、連絡できるようがない。
+        feedback_vi: Không ghép thể khả năng với ようがない; nói 連絡しようがない hoặc 連絡できない.
+        error_tag: you_ga_nai_form
+    explanation:
+      vi: 連絡先がない - không có thông tin liên lạc; 連絡しようがない / 連絡のしようがない - không có cách nào liên lạc.
+    display_answer: お客様の連絡先がないので、連絡しようがない。
+
+  - key: ja:exercise:n2-u7-youganai-write-naosu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      source_text: Đã nói ra rồi thì không có cách nào rút lại lời được. (dùng ようがない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 一度言ってしまったことは、取り消しようがない。
+        - 言ってしまったことは、取り消しようがない。
+        - 一度口にしたことは、取り消しようがない。
+        - 一度言ったことは、取り消しようがない。
+        - 一度言ってしまった言葉は、取り消しようがない。
+        - 言ってしまった言葉は、取り消しようがない。
+        - 一度言ってしまったことは、取り消しようがありません。
+        - いちどいってしまったことは、とりけしようがない。
+    known_wrong:
+      - answer: 一度言ってしまったことは、取り消すようがない。
+        feedback_vi: ようがない gắn vào gốc ます - 取り消します → 取り消し.
+        error_tag: you_ga_nai_form
+      - answer: 一度言ってしまったことは、取り消しかねない。
+        feedback_vi: かねない là "không chừng sẽ (điều xấu)"; "không có cách nào" là ようがない.
+        error_tag: you_ga_nai_kanenai
+    explanation:
+      vi: 取り消す - rút lại, huỷ; 取り消しようがない - không có cách nào rút lại. てしまった nhấn sự đã rồi, không cứu vãn.
+    display_answer: 一度言ってしまったことは、取り消しようがない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u7-youganai-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      source_text: 原因が分からない以上、対策の立てようがない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Một khi chưa biết nguyên nhân thì không có cách nào đề ra biện pháp đối phó.
+        - Chừng nào chưa biết nguyên nhân thì chẳng có cách nào lập biện pháp.
+        - Đã không biết nguyên nhân thì không có cách nào đưa ra đối sách.
+        - Khi chưa rõ nguyên nhân thì không có cách nào đề ra biện pháp.
+        - Không biết nguyên nhân thì không có cách nào lập ra biện pháp đối phó.
+        - Vì không biết nguyên nhân nên chẳng có cách nào đưa ra biện pháp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chưa biết nguyên nhân nhưng đã có biện pháp đối phó.
+        feedback_vi: 立てようがない là "không có cách nào lập ra", không phải "đã có".
+        error_tag: you_ga_nai_meaning
+    explanation:
+      vi: 以上 - một khi, đã... thì; 対策を立てる - đề ra biện pháp; 立てようがない - không có cách nào đề ra.
+    display_answer: Một khi chưa biết nguyên nhân thì không có cách nào đề ra biện pháp đối phó.
+
+  - key: ja:exercise:n2-u7-youganai-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      stem: Sếp hỏi vì sao bạn chưa trả lời email của một khách hàng. Email đó bị lỗi chữ, bạn không đọc được nội dung. Câu nào giải thích tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: e5q, text: 文字化けしていて内容が読めないので、返事のしようがないんです。, lang: ja }
+        - { id: i9x, text: 文字化けしていて内容が読めないので、返事しかねないんです。, lang: ja }
+        - { id: m4c, text: 文字化けしていて内容が読めないので、返事するようがないんです。, lang: ja }
+        - { id: u2h, text: 文字化けしていて内容が読めないので、返事のしようがあるんです。, lang: ja }
+    answer:
+      correct_option_id: e5q
+    explanation:
+      vi: 返事のしようがない - không có cách nào trả lời (vì không đọc được). かねない là "không chừng sẽ"; するようがない sai dạng; しようがある ngược nghĩa.
+    display_answer: 文字化けしていて内容が読めないので、返事のしようがないんです。
+
+  - key: ja:exercise:n2-u7-youganai-write-shudan
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u7-shudan
+    prompt:
+      source_text: Đêm khuya không còn phương tiện đi lại nào nên tôi chẳng có cách nào về nhà. (dùng 手段 và ようがない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 夜遅くて交通手段がないので、家に帰りようがない。
+        - 夜遅くて交通手段がないから、家に帰りようがない。
+        - 深夜で交通手段がないので、家に帰りようがない。
+        - 夜遅くて交通手段がないので、帰りようがない。
+        - 夜遅くて交通手段がないので、家に帰りようがありません。
+        - 夜遅くなって交通手段がないので、家に帰りようがない。
+        - 夜中で交通手段がないので、家に帰りようがない。
+        - よるおそくてこうつうしゅだんがないので、いえにかえりようがない。
+    known_wrong:
+      - answer: 夜遅くて交通手段がないので、家に帰るようがない。
+        feedback_vi: ようがない gắn vào gốc ます - 帰ります → 帰り + ようがない.
+        error_tag: you_ga_nai_form
+      - answer: 夜遅くて交通手段がないので、家に帰りかねる。
+        feedback_vi: かねる là từ chối lịch sự "khó mà làm"; nói hoàn cảnh không có cách nào dùng ようがない.
+        error_tag: you_ga_nai_kaneru
+    explanation:
+      vi: 交通手段 - phương tiện đi lại; 帰りようがない - không có cách nào về. Lý do (không có phương tiện) là hoàn cảnh khách quan, đúng chỗ của ようがない.
+    display_answer: 夜遅くて交通手段がないので、家に帰りようがない。
+
+  - key: ja:exercise:n2-u7-youganai-wb-dou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chuyện đã qua rồi thì giờ có hối hận cũng hết cách.\""
+      tokens:
+        - { id: d3, text: 後悔しても }
+        - { id: d5, text: どうするようもない }
+        - { id: d1, text: 過ぎたことは }
+        - { id: d4, text: どうしようもない }
+        - { id: d2, text: 今さら }
+    answer:
+      orders:
+        - [d1, d2, d3, d4]
+        - [d2, d1, d3, d4]
+    explanation:
+      vi: どうしようもない - hết cách (cụm cố định). 今さら - giờ mới (thì đã muộn); có thể đứng đầu câu hoặc sau chủ đề. どうするようもない sai dạng.
+    display_answer: 過ぎたことは今さら後悔してもどうしようもない。

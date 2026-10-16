@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-possibility-judgement-review
+order_index: 5
+level: n2
+title:
+  vi: Ôn tập - sự cố máy chiếu và cuộc họp trách nhiệm
+objectives:
+  - vi: Đọc hiểu một câu chuyện công sở dùng かねない, ようがない, わけがない, にすぎない.
+  - vi: Chọn đúng mẫu theo ý "có nguy cơ", "không có cách", "không đời nào", "chỉ là".
+  - vi: Nói về trách nhiệm và đền bù một cách lịch sự.
+estimated_minutes: 22
+skills: [reading, grammar, speaking]
+prerequisites: [ja:lesson:n2-u7-ni-suginai]
+items:
+  - item: ja:item:n2-u7-sekinin
+  - item: ja:item:n2-u7-benshou
+  - item: ja:item:n2-u7-gram-kanenai
+    role: reuse
+  - item: ja:item:n2-u7-gram-you-ga-nai
+    role: reuse
+  - item: ja:item:n2-u7-gram-wake-ga-nai
+    role: reuse
+  - item: ja:item:n2-u7-gram-ni-suginai
+    role: reuse
+  - item: ja:item:n2-u7-koshou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Câu chuyện ôn tập: máy chiếu mượn của khách bị hỏng ngay trước buổi thuyết trình. Ai chịu trách nhiệm, có phải đền không, và làm sao giải thích cho khéo - bạn sẽ dùng cả bốn mẫu của unit.'
+  - type: explain
+    text:
+      vi: 'Bốn mẫu chia hai nhóm. Nhóm "khả năng": かねない (có nguy cơ xấu) và ようがない (không có cách nào). Nhóm "đánh giá": わけがない (phủ định chắc chắn) và にすぎない (hạ thấp, chỉ là).'
+  - type: explain
+    text:
+      vi: 'Hai từ mới: 責任 (trách nhiệm - 責任を取る: chịu trách nhiệm) và 弁償 (đền bù đồ hỏng, đồ mất - 弁償する). Người Nhật xin lỗi rất kỹ trước rồi mới nói đến 弁償.'
+  - type: deep_explain
+    text:
+      vi: 'Khi bị trách, người Nhật tránh nói thẳng "không phải lỗi tôi". Họ dùng にすぎない để hạ thấp vai trò (私は言われた通りにしたにすぎません) hoặc わけではない để phủ định nhẹ. わけがない quá mạnh, dễ nghe như cãi lại cấp trên.'
+  - type: example
+    target: プロジェクターが故障して、資料の映しようがなかった。
+    target_lang: ja
+    translation:
+      vi: Máy chiếu bị hỏng nên chẳng có cách nào chiếu tài liệu.
+  - type: example
+    target: 新しく買ったばかりの機械が、すぐ壊れるわけがない。
+    target_lang: ja
+    translation:
+      vi: Cái máy vừa mới mua thì làm gì có chuyện hỏng ngay được.
+  - type: example
+    target: 借りた物を壊したのだから、弁償するのは当然です。
+    target_lang: ja
+    translation:
+      vi: Đã làm hỏng đồ đi mượn thì đền là đương nhiên.
+  - type: example
+    target: 誰の責任かをはっきりさせないと、同じ問題が起きかねない。
+    target_lang: ja
+    translation:
+      vi: Không làm rõ trách nhiệm của ai thì không khéo lại xảy ra vấn đề tương tự.
+  - type: common_mistake
+    wrong: この件の責任を受けます。
+    right: この件の責任を取ります。
+    target_lang: ja
+    note:
+      vi: '"Chịu trách nhiệm" là 責任を取る. Tiếng Việt nói "nhận trách nhiệm" nên người Việt hay dùng nhầm 受ける.'
+  - type: common_mistake
+    wrong: 壊したカメラを弁償をあげます。
+    right: 壊したカメラを弁償します。
+    target_lang: ja
+    note:
+      vi: 弁償 là danh từ + する - 弁償します (tôi sẽ đền). Không dùng あげる với 弁償.
+  - type: summary
+    points:
+      - vi: かねない - có nguy cơ (xấu); ようがない - không có cách nào.
+      - vi: わけがない - không đời nào; にすぎない - chỉ là, chẳng qua là.
+      - vi: 責任を取る - chịu trách nhiệm; 弁償する - đền bù.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u7-review-listen-benshou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-benshou
+    prompt:
+      audio_asset_id: null
+      fallback_text: お借りしたパソコンを落としてしまいました。修理代は私が弁償いたします。
+      options:
+        - { id: a3k, text: Tôi lỡ làm rơi máy tính đã mượn. Tiền sửa chữa tôi xin đền., lang: vi }
+        - { id: e8p, text: Tôi lỡ làm rơi máy tính đã mượn. Xin anh tự trả tiền sửa., lang: vi }
+        - { id: i4t, text: Máy tính tôi cho mượn bị rơi. Tôi muốn được bồi thường., lang: vi }
+        - { id: m9x, text: Tôi đã sửa xong máy tính đã mượn rồi., lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: お借りした - (tôi) đã mượn (khiêm nhường); 修理代 - tiền sửa; 私が弁償いたします - tôi xin đền. Người đền là người nói.
+    display_answer: Tôi lỡ làm rơi máy tính đã mượn. Tiền sửa chữa tôi xin đền.
+
+  - key: ja:exercise:n2-u7-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      stem: 'Đọc đoạn: 「今回の故障は、機械の寿命によるものにすぎず、担当者に責任があるわけではない。ただし、点検を怠れば同じことが起きかねない。」 Điều nào đúng với đoạn văn?'
+      stem_lang: vi
+      options:
+        - { id: b2l, text: "Hỏng hóc chỉ do máy hết tuổi thọ, người phụ trách không có lỗi, nhưng không kiểm tra thì có thể tái diễn.", lang: vi }
+        - { id: f7q, text: Người phụ trách chắc chắn có lỗi trong sự cố lần này., lang: vi }
+        - { id: j3u, text: Máy đã được kiểm tra kỹ nên không bao giờ hỏng lại., lang: vi }
+        - { id: n8y, text: Không có cách nào biết nguyên nhân của sự cố., lang: vi }
+    answer:
+      correct_option_id: b2l
+    explanation:
+      vi: によるものにすぎず - chỉ là do...; 責任があるわけではない - không hẳn là có trách nhiệm; 怠れば～かねない - nếu lơ là thì không chừng tái diễn.
+    display_answer: Hỏng hóc chỉ do máy hết tuổi thọ, người phụ trách không có lỗi, nhưng không kiểm tra thì có thể tái diễn.
+
+  - key: ja:exercise:n2-u7-review-fill-mix
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      template: "電源コードが切れていて、充電の{{b1}}がない。このままでは、明日の発表に間に合わなくなり{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Dây nguồn bị đứt nên chẳng có cách nào sạc. Cứ thế này thì không khéo sẽ không kịp buổi thuyết trình ngày mai."
+        - "Gợi ý: chỗ 1 là しよう (N の + しようがない); chỗ 2 là mẫu \"có nguy cơ (xấu)\"."
+    answer:
+      blanks:
+        b1: [しよう]
+        b2: [かねない]
+    known_wrong:
+      - answer: かねる
+        feedback_vi: かねる là "khó mà làm"; cảnh báo nguy cơ dùng かねない.
+        error_tag: kanenai_kaneru
+      - answer: する
+        feedback_vi: Cấu trúc là N の + しようがない - 充電のしようがない.
+        error_tag: you_ga_nai_form
+    explanation:
+      vi: '充電のしようがない - không có cách nào sạc; 間に合わなくなりかねない - không khéo sẽ không kịp. Hai mẫu khác nhau: một là "không có cách", một là "có nguy cơ".'
+    display_answer: 電源コードが切れていて、充電のしようがない。このままでは、明日の発表に間に合わなくなりかねない。
+
+  - key: ja:exercise:n2-u7-review-wb-sekinin
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-sekinin
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Trưởng nhóm đã nhận trách nhiệm về thất bại.\""
+      tokens:
+        - { id: k3, text: 責任を取った }
+        - { id: k1, text: リーダーが }
+        - { id: k4, text: 責任をあげた }
+        - { id: k2, text: 失敗の }
+    answer:
+      orders:
+        - [k1, k2, k3]
+        - [k2, k1, k3]
+    explanation:
+      vi: N の責任を取る - chịu trách nhiệm về N. 責任をあげる không phải cách nói của tiếng Nhật. Chủ ngữ リーダーが và 失敗の責任 có thể đổi chỗ nhưng の phải dính với 責任.
+    display_answer: リーダーが失敗の責任を取った。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u7-review-fill-wake
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      template: "鍵はずっと私が持っていたから、他の人が部屋に入れる{{b1}}。(làm gì có chuyện)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [わけがない, 訳がない, はずがない]
+    known_wrong:
+      - answer: わけではない
+        feedback_vi: わけではない là "không hẳn"; có lý do chắc chắn (giữ chìa khoá) thì dùng わけがない.
+        error_tag: wake_ga_wa
+      - answer: ようがない
+        feedback_vi: ようがない là "không có cách"; câu đề nói "làm gì có chuyện vào được" - わけがない.
+        error_tag: wake_you
+    explanation:
+      vi: 入れるわけがない - làm gì có chuyện vào được. はずがない cũng đúng vì đây là suy luận có căn cứ.
+    display_answer: 鍵はずっと私が持っていたから、他の人が部屋に入れるわけがない。
+
+  - key: ja:exercise:n2-u7-review-write-benshou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-benshou
+    prompt:
+      source_text: Tôi đã làm vỡ cốc của nhà hàng nên đã đền tiền. (dùng 弁償)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 店のコップを割ってしまったので、弁償しました。
+        - 店のコップを割ったので、弁償しました。
+        - レストランのコップを割ってしまったので、弁償しました。
+        - 店のグラスを割ってしまったので、弁償しました。
+        - レストランのグラスを割ってしまったので、弁償しました。
+        - お店のコップを割ってしまったので、弁償しました。
+        - 店のコップを割ってしまったから、弁償した。
+        - みせのコップをわってしまったので、べんしょうしました。
+    known_wrong:
+      - answer: 店のコップを壊してしまったので、弁償をあげました。
+        feedback_vi: 弁償 + する - 弁償しました; không dùng あげる.
+        error_tag: benshou_form
+      - answer: 店のコップを割ってしまったので、弁償されました。
+        feedback_vi: 弁償された là "được (người khác) đền"; mình đền thì 弁償しました.
+        error_tag: voice
+    explanation:
+      vi: コップを割る - làm vỡ cốc (割る dùng cho thuỷ tinh, gốm); てしまった - lỡ; 弁償しました - đã đền.
+    display_answer: 店のコップを割ってしまったので、弁償しました。
+
+  - key: ja:exercise:n2-u7-review-write-suginai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-ni-suginai
+    prompt:
+      source_text: Lần này chỉ là lỗi nhỏ, nhưng lần sau xin hãy cẩn thận. (dùng に過ぎない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今回は小さなミスにすぎないが、次は気をつけてください。
+        - 今回は小さなミスにすぎませんが、次は気をつけてください。
+        - 今回は小さなミスに過ぎないが、次は気をつけてください。
+        - 今回は小さなミスにすぎないけど、次は気をつけてください。
+        - 今回は小さなミスにすぎないが、次回は気をつけてください。
+        - 今回は小さなミスにすぎないが、次は注意してください。
+        - 今回はちょっとしたミスにすぎないが、次は気をつけてください。
+        - こんかいはちいさなミスにすぎないが、つぎはきをつけてください。
+    known_wrong:
+      - answer: 今回は小さなミスすぎないが、次は気をつけてください。
+        feedback_vi: Thiếu に - ミスにすぎない.
+        error_tag: suginai_form
+      - answer: 今回は小さなミスにすぎるが、次は気をつけてください。
+        feedback_vi: すぎる là "quá"; "chỉ là" cần にすぎない.
+        error_tag: suginai_sugiru
+    explanation:
+      vi: 小さなミスにすぎない - chỉ là lỗi nhỏ (hạ thấp mức độ); が - nhưng; 次は気をつけてください - lần sau hãy cẩn thận.
+    display_answer: 今回は小さなミスにすぎないが、次は気をつけてください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u7-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      source_text: 責任者が誰か決めておかないと、問題が起きた時に対応が遅れかねない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu không quyết định trước ai là người phụ trách thì khi có vấn đề không khéo sẽ xử lý chậm.
+        - Không định sẵn ai là người chịu trách nhiệm thì khi xảy ra vấn đề có thể ứng phó bị chậm.
+        - Nếu không quyết định trước người phụ trách là ai thì khi có sự cố việc xử lý có nguy cơ bị chậm.
+        - Không quyết sẵn người chịu trách nhiệm thì lúc xảy ra vấn đề không chừng sẽ xử lý chậm trễ.
+        - Nếu chưa quyết định trước ai phụ trách thì khi có chuyện, việc ứng phó có thể bị chậm.
+        - Không xác định trước người phụ trách thì khi vấn đề xảy ra có nguy cơ phản ứng chậm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đã quyết định ai là người phụ trách nên xử lý vấn đề rất nhanh.
+        feedback_vi: 決めておかないと là "nếu không quyết định trước"; 遅れかねない là "có nguy cơ chậm".
+        error_tag: kanenai_meaning
+    explanation:
+      vi: 責任者 - người phụ trách, chịu trách nhiệm; 決めておかないと - nếu không quyết định sẵn; 対応が遅れかねない - không khéo ứng phó chậm.
+    display_answer: Nếu không quyết định trước ai là người phụ trách thì khi có vấn đề không khéo sẽ xử lý chậm.
+
+  - key: ja:exercise:n2-u7-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-sekinin
+    prompt:
+      stem: Bạn làm mất tài liệu của khách. Bạn gặp trưởng phòng để xin lỗi và nhận trách nhiệm. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: c6r, text: 大変申し訳ございません。この件は私が責任を取ります。, lang: ja }
+        - { id: g1v, text: 大変申し訳ございません。この件は私の責任にすぎません。, lang: ja }
+        - { id: k5z, text: 大変申し訳ございません。この件は私の責任のわけがありません。, lang: ja }
+        - { id: o9d, text: 大変申し訳ございません。この件は私が責任を受けかねます。, lang: ja }
+    answer:
+      correct_option_id: c6r
+    explanation:
+      vi: 責任を取ります - tôi xin chịu trách nhiệm. にすぎません làm nhẹ lỗi của mình (thiếu thành ý); わけがない là chối bỏ; 責任を受けかねます vừa sai từ vừa là lời từ chối.
+    display_answer: 大変申し訳ございません。この件は私が責任を取ります。
+
+  - key: ja:exercise:n2-u7-review-write-yougania
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u7-gram-you-ga-nai
+    prompt:
+      source_text: Dữ liệu đã bị xoá hết nên không có cách nào khôi phục. (dùng ようがない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - データが全部消えてしまったので、元に戻しようがない。
+        - データが全部消えてしまったので、復元しようがない。
+        - データが全部消えてしまったので、復元のしようがない。
+        - データがすべて消えてしまったので、元に戻しようがない。
+        - データが全部削除されてしまったので、復元しようがない。
+        - データが全部消えたので、元に戻しようがない。
+        - データが全部消えてしまったので、元に戻しようがありません。
+        - データが全部消えてしまったので、取り戻しようがない。
+        - データがぜんぶきえてしまったので、もとにもどしようがない。
+    known_wrong:
+      - answer: データが全部消えてしまったので、元に戻すようがない。
+        feedback_vi: ようがない gắn vào gốc ます - 戻します → 戻し + ようがない.
+        error_tag: you_ga_nai_form
+      - answer: データが全部消えてしまったので、元に戻しかねない。
+        feedback_vi: かねない là "có nguy cơ (xấu)"; "không có cách nào" là ようがない.
+        error_tag: you_ga_nai_kanenai
+    explanation:
+      vi: '元に戻す / 復元する - khôi phục; 戻しようがない - không có cách nào khôi phục. N の + しようがない: 復元のしようがない cũng đúng.'
+    display_answer: データが全部消えてしまったので、元に戻しようがない。
+
+  - key: ja:exercise:n2-u7-review-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      stem: 'Đồng nghiệp nói: "Nghe nói máy chiếu hỏng là do anh Tanaka." Bạn biết hôm đó anh Tanaka nghỉ phép. Bạn đáp thế nào?'
+      stem_lang: vi
+      options:
+        - { id: d4f, text: 田中さんはその日休んでいたから、壊せるわけがないよ。, lang: ja }
+        - { id: h8j, text: 田中さんはその日休んでいたから、壊しかねないよ。, lang: ja }
+        - { id: l2n, text: 田中さんはその日休んでいたから、壊しようがあるよ。, lang: ja }
+        - { id: p7r, text: 田中さんはその日休んでいたから、壊したにすぎないよ。, lang: ja }
+    answer:
+      correct_option_id: d4f
+    explanation:
+      vi: Có lý do chắc chắn (nghỉ phép) để phủ định - 壊せるわけがない (làm gì có chuyện làm hỏng được). かねない là "có nguy cơ"; しようがある ngược ý; にすぎない là "chỉ là đã làm hỏng".
+    display_answer: 田中さんはその日休んでいたから、壊せるわけがないよ。
+
+  - key: ja:exercise:n2-u7-review-wb-kanenai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu che giấu sai sót thì không chừng sẽ mất lòng tin của khách hàng.\""
+      tokens:
+        - { id: r4, text: 失いかねない }
+        - { id: r2, text: 隠すと }
+        - { id: r5, text: 失うようがない }
+        - { id: r1, text: ミスを }
+        - { id: r3, text: お客様の信頼を }
+    answer:
+      orders:
+        - [r1, r2, r3, r4]
+    explanation:
+      vi: 隠すと + 信頼を失いかねない - hễ che giấu thì không chừng mất lòng tin. 失うようがない sai dạng và sai ý.
+    display_answer: ミスを隠すとお客様の信頼を失いかねない。

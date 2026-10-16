@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u8-de-are
+order_index: 1
+level: n1
+title:
+  vi: Dù là... đi nữa - ～であれ, ～であれ～であれ
+objectives:
+  - vi: Nói "dù là N đi nữa" bằng ～であれ, kể cả với từ để hỏi (何であれ, 誰であれ).
+  - vi: Liệt kê hai trường hợp bằng ～であれ～であれ.
+  - vi: Phân biệt であれ với でも và にしろ～にしろ.
+estimated_minutes: 22
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n1-norms-sequence-review]
+items:
+  - item: ja:item:n1-u8-gram-de-are
+  - item: ja:item:n1-u8-gram-de-are-de-are
+  - item: ja:item:n1-u8-kokuseki
+  - item: ja:item:n1-u8-sekimu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và viết được những nguyên tắc chung kiểu văn bản - "Dù lý do là gì, bạo lực là không thể chấp nhận", "Dù là người lớn hay trẻ em, ai cũng phải tuân thủ luật".
+  - type: explain
+    text:
+      vi: 'N + であれ - "dù là N đi nữa". Thường đi với たとえ: たとえ社長であれ、規則は守るべきだ. Với từ để hỏi: 何であれ (dù là gì), 誰であれ (dù là ai), どこであれ (dù ở đâu).'
+  - type: explain
+    text:
+      vi: 'N1 であれ N2 であれ - "dù là A hay B thì cũng...". Hai danh từ cùng loại, thường đối lập: 男性であれ女性であれ, 平日であれ休日であれ. Vế sau là kết luận áp dụng cho mọi trường hợp.'
+  - type: deep_explain
+    text:
+      vi: 'Ba mức trang trọng của cùng một ý: でも (hội thoại) → にしろ / にせよ (N2, văn viết nhẹ) → であれ (văn viết trang trọng, luật lệ, xã luận). Tiếng Việt chỉ cần "dù là... hay..."; tiếng Nhật đổi hình thức theo loại văn bản, nên trong email bạn bè dùng であれ sẽ nghe rất cứng.'
+  - type: example
+    target: 理由が何であれ、暴力は許されない。
+    target_lang: ja
+    translation:
+      vi: Dù lý do là gì đi nữa, bạo lực cũng không thể được dung thứ.
+  - type: example
+    target: たとえ親であれ、子どもの手紙を勝手に読んではいけない。
+    target_lang: ja
+    translation:
+      vi: Dù là cha mẹ đi nữa cũng không được tự ý đọc thư của con.
+  - type: example
+    target: 大人であれ子どもであれ、交通ルールを守らなければならない。
+    target_lang: ja
+    translation:
+      vi: Dù là người lớn hay trẻ em đều phải tuân thủ luật giao thông.
+  - type: example
+    target: 子どもに教育を受けさせるのは親の責務だ。
+    target_lang: ja
+    translation:
+      vi: Cho con đi học là trách nhiệm của cha mẹ.
+  - type: common_mistake
+    wrong: 大人であれ子どもでも、ルールは同じだ。
+    right: 大人であれ子どもであれ、ルールは同じだ。
+    target_lang: ja
+    note:
+      vi: Mẫu cặp phải giữ cùng một hình thức ở hai vế - であれ～であれ; trộn であれ với でも là sai.
+  - type: common_mistake
+    wrong: 暑いであれ寒いであれ、毎日走る。
+    right: 暑くても寒くても、毎日走る。
+    target_lang: ja
+    note:
+      vi: であれ đi với danh từ, không đi trực tiếp với tính từ đuôi い (×暑いであれ). Với tính từ い dùng ～ても～ても, hoặc văn viết ～かろうと～かろうと.
+  - type: summary
+    points:
+      - vi: (たとえ) N + であれ - dù là N đi nữa.
+      - vi: 何であれ / 誰であれ / どこであれ - dù là gì / ai / ở đâu.
+      - vi: N1 であれ N2 であれ - dù A hay B đều...; chỉ đi với danh từ.
+      - vi: 国籍 - quốc tịch · 責務 - trách nhiệm, nghĩa vụ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u8-deare-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-de-are
+    prompt:
+      stem: Câu 「どんな小さなミスであれ、必ず上司に報告すること。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a5k, text: Dù là lỗi nhỏ đến đâu cũng phải báo cáo cấp trên., lang: vi }
+        - { id: b1m, text: Chỉ những lỗi lớn mới phải báo cáo cấp trên., lang: vi }
+        - { id: c6n, text: Lỗi nhỏ thì không cần báo cáo cấp trên., lang: vi }
+        - { id: d2p, text: Cấp trên sẽ báo cáo mọi lỗi nhỏ., lang: vi }
+    answer:
+      correct_option_id: a5k
+    explanation:
+      vi: どんな小さなミスであれ - dù là lỗi nhỏ đến đâu; ～こと ở cuối câu là mệnh lệnh kiểu nội quy. であれ nói kết luận áp dụng cho mọi trường hợp, kể cả lỗi nhỏ.
+    display_answer: Dù là lỗi nhỏ đến đâu cũng phải báo cáo cấp trên.
+
+  - key: ja:exercise:n1-u8-deare-listen-kokuseki
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-kokuseki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 国籍が何であれ、この国に住む人は法律を守る義務がある。
+      options:
+        - { id: e9q, text: "Dù quốc tịch là gì, người sống ở nước này đều có nghĩa vụ tuân thủ pháp luật.", lang: vi }
+        - { id: f4r, text: Chỉ người mang quốc tịch nước này mới phải tuân thủ pháp luật., lang: vi }
+        - { id: g8s, text: Người nước ngoài không cần tuân thủ pháp luật nước này., lang: vi }
+        - { id: h3t, text: Luật về quốc tịch của nước này rất nghiêm., lang: vi }
+    answer:
+      correct_option_id: e9q
+    explanation:
+      vi: 国籍が何であれ - dù quốc tịch là gì; 義務がある - có nghĩa vụ. であれ xoá mọi ngoại lệ, nên hai phương án "chỉ" và "không cần" đều sai.
+    display_answer: Dù quốc tịch là gì, người sống ở nước này đều có nghĩa vụ tuân thủ pháp luật.
+
+  - key: ja:exercise:n1-u8-deare-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-de-are-de-are
+    prompt:
+      stem: 'Chọn dạng đúng: 正社員 ＿＿ アルバイト ＿＿、安全に働く権利は同じだ。 ("Dù là nhân viên chính thức hay làm thêm, quyền được làm việc an toàn là như nhau.")'
+      stem_lang: vi
+      options:
+        - { id: i3u, text: であれ / であれ, lang: ja }
+        - { id: j8v, text: であれ / でも, lang: ja }
+        - { id: k2w, text: なら / なら, lang: ja }
+        - { id: l6x, text: ゆえ / ゆえ, lang: ja }
+    answer:
+      correct_option_id: i3u
+    explanation:
+      vi: Mẫu cặp N1であれN2であれ - dù là A hay B. Không trộn であれ với でも; なら～なら và ゆえ～ゆえ không tạo thành mẫu "dù... hay...".
+    display_answer: であれ / であれ
+
+  - key: ja:exercise:n1-u8-deare-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-de-are
+    prompt:
+      template: "相手が{{b1}}、失礼な態度を取ってはならない。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Dù đối phương là ai đi nữa cũng không được có thái độ thất lễ."
+        - "Gợi ý: từ để hỏi \"ai\" + であれ."
+    answer:
+      blanks:
+        b1: [誰であれ, だれであれ]
+    known_wrong:
+      - answer: 誰であり
+        feedback_vi: Mẫu "dù là ai" là 誰であれ (dạng mệnh lệnh cổ của ある), không phải であり.
+        error_tag: deare_form
+      - answer: 何であれ
+        feedback_vi: 何であれ là "dù là gì" - dùng cho vật, việc; với người dùng 誰であれ.
+        error_tag: question_word
+    explanation:
+      vi: 誰であれ - dù là ai. 取ってはならない - không được (văn viết của てはいけない).
+    display_answer: 相手が誰であれ、失礼な態度を取ってはならない。
+
+  - key: ja:exercise:n1-u8-deare-mcq-sekimu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-sekimu
+    prompt:
+      stem: 'Chọn từ hợp nhất: 正確な情報を伝えることは、報道機関の ＿＿ である。 ("Truyền đạt thông tin chính xác là trách nhiệm của cơ quan báo chí.")'
+      stem_lang: vi
+      options:
+        - { id: m1y, text: 責務, lang: ja }
+        - { id: n5z, text: 国籍, lang: ja }
+        - { id: o9a, text: 不祥事, lang: ja }
+        - { id: p3b, text: 前例, lang: ja }
+    answer:
+      correct_option_id: m1y
+    explanation:
+      vi: 責務 - trách nhiệm, nghĩa vụ gắn với vai trò. 国籍 là quốc tịch, 不祥事 là bê bối, 前例 là tiền lệ - không hợp nghĩa.
+    display_answer: 責務
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u8-deare-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-de-are-de-are
+    prompt:
+      template: "平日{{b1}}休日{{b2}}、この店はいつも混んでいる。(dù là... hay...)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [であれ]
+        b2: [であれ]
+    known_wrong:
+      - answer: であり
+        feedback_vi: Mẫu "dù A hay B" là であれ～であれ, không phải であり.
+        error_tag: deare_form
+      - answer: なら
+        feedback_vi: なら là điều kiện "nếu"; liệt kê hai trường hợp để nói "đều như nhau" dùng であれ.
+        error_tag: deare_nara
+    explanation:
+      vi: 平日であれ休日であれ - dù ngày thường hay ngày nghỉ. Hai danh từ cùng loại (ngày), kết luận áp dụng cho cả hai.
+    display_answer: 平日であれ休日であれ、この店はいつも混んでいる。
+
+  - key: ja:exercise:n1-u8-deare-write-deare
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-de-are
+    prompt:
+      source_text: Dù kết quả thế nào, tôi cũng không hối hận. (dùng であれ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 結果がどうであれ、後悔はしない。
+        - 結果がどうであれ、私は後悔しない。
+        - 結果がどうであれ、後悔しません。
+        - 結果がどうであれ、後悔はしません。
+        - 結果がどうであれ、後悔しない。
+        - 結果はどうであれ、後悔はしない。
+        - たとえ結果がどうであれ、後悔はしない。
+        - 結果が何であれ、後悔はしない。
+        - けっかがどうであれ、こうかいはしない。
+    known_wrong:
+      - answer: 結果がどうであり、後悔はしない。
+        feedback_vi: Mẫu "dù thế nào" là どうであれ, không phải であり.
+        error_tag: deare_form
+      - answer: 結果がどうであれ、後悔する。
+        feedback_vi: Câu gốc là "không hối hận" - cần phủ định 後悔しない.
+        error_tag: negation
+    explanation:
+      vi: どうであれ - dù thế nào đi nữa (どう + であれ); 後悔はしない - không hối hận (は nhấn mạnh phủ định).
+    display_answer: 結果がどうであれ、後悔はしない。
+
+  - key: ja:exercise:n1-u8-deare-write-sekimu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-sekimu
+    prompt:
+      source_text: Bảo vệ môi trường cho thế hệ sau là trách nhiệm của chúng ta. (dùng 責務)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 次の世代のために環境を守ることは、私たちの責務だ。
+        - 次の世代のために環境を守ることは、私たちの責務である。
+        - 次の世代のために環境を守ることは、私たちの責務です。
+        - 次世代のために環境を守ることは、私たちの責務だ。
+        - 将来の世代のために環境を守るのは、私たちの責務だ。
+        - 次の世代のために環境を守るのは、我々の責務である。
+        - 後の世代のために環境を守ることは、私たちの責務だ。
+        - つぎのせだいのためにかんきょうをまもることは、わたしたちのせきむだ。
+    known_wrong:
+      - answer: 次の世代のために環境を守ることは、私たちの国籍だ。
+        feedback_vi: 国籍 là quốc tịch; trách nhiệm, nghĩa vụ là 責務.
+        error_tag: vocab_meaning
+      - answer: 次の世代のために環境を守ることは、私たちに責務だ。
+        feedback_vi: Trách nhiệm "của" chúng ta là 私たちの責務 - dùng の.
+        error_tag: particle
+    explanation:
+      vi: ～ことは、N の責務だ - việc ~ là trách nhiệm của N. 次の世代のために - vì thế hệ sau. である làm câu trang trọng hơn だ.
+    display_answer: 次の世代のために環境を守ることは、私たちの責務だ。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u8-deare-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-de-are-de-are
+    prompt:
+      source_text: 紙の本であれ電子書籍であれ、読書の楽しさに変わりはない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù là sách giấy hay sách điện tử, niềm vui đọc sách vẫn không thay đổi.
+        - Dù là sách giấy hay sách điện tử thì niềm vui đọc sách cũng không khác gì.
+        - Dù sách giấy hay sách điện tử, cái thú đọc sách vẫn vậy.
+        - Sách giấy hay sách điện tử thì niềm vui đọc sách cũng như nhau.
+        - Dù là sách in hay sách điện tử, niềm vui khi đọc sách vẫn không thay đổi.
+        - Dù đọc sách giấy hay sách điện tử, niềm vui đọc sách vẫn như nhau.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sách điện tử mang lại nhiều niềm vui đọc sách hơn sách giấy.
+        feedback_vi: であれ～であれ nói hai trường hợp như nhau, không so sánh hơn kém.
+        error_tag: meaning
+    explanation:
+      vi: 紙の本であれ電子書籍であれ - dù sách giấy hay sách điện tử; 変わりはない - không có gì khác, vẫn như nhau.
+    display_answer: Dù là sách giấy hay sách điện tử, niềm vui đọc sách vẫn không thay đổi.
+
+  - key: ja:exercise:n1-u8-deare-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-de-are
+    prompt:
+      stem: Bạn soạn nội quy công ty, ghi rằng dù là chức vụ gì cũng phải tham gia đào tạo an toàn. Câu nào đúng và hợp văn bản nhất?
+      stem_lang: vi
+      options:
+        - { id: q8c, text: 役職が何であれ、安全研修には必ず参加すること。, lang: ja }
+        - { id: r3d, text: 役職が何であり、安全研修には必ず参加すること。, lang: ja }
+        - { id: s7e, text: 役職が何であれば、安全研修には必ず参加すること。, lang: ja }
+        - { id: t1f, text: 役職が何であれ何であれ、安全研修に参加してね。, lang: ja }
+    answer:
+      correct_option_id: q8c
+    explanation:
+      vi: 何であれ - dù là gì; ～こと - mệnh lệnh kiểu nội quy. であり chỉ là "là và"; であれば là điều kiện "nếu là"; phương án cuối lặp sai mẫu và quá suồng sã cho văn bản.
+    display_answer: 役職が何であれ、安全研修には必ず参加すること。
+
+  - key: ja:exercise:n1-u8-deare-write-pair
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-de-are-de-are
+    prompt:
+      source_text: Dù là trong nước hay nước ngoài, sản phẩm này đều được ưa chuộng. (dùng であれ～であれ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 国内であれ海外であれ、この商品は人気がある。
+        - 国内であれ海外であれ、この製品は人気がある。
+        - 国内であれ海外であれ、この商品は人気があります。
+        - 国内であれ国外であれ、この商品は人気がある。
+        - 国内であれ海外であれ、この商品は好評だ。
+        - この商品は、国内であれ海外であれ、人気がある。
+        - この商品は国内であれ海外であれ人気だ。
+        - 国内であれ海外であれ、この商品は人気だ。
+        - こくないであれかいがいであれ、このしょうひんはにんきがある。
+    known_wrong:
+      - answer: 国内であり海外であり、この商品は人気がある。
+        feedback_vi: Mẫu "dù A hay B" là であれ～であれ, không phải であり～であり.
+        error_tag: deare_form
+      - answer: 国内であれ海外でも、この商品は人気がある。
+        feedback_vi: Hai vế phải cùng hình thức - 国内であれ海外であれ.
+        error_tag: deare_form
+    explanation:
+      vi: 国内であれ海外であれ - dù trong nước hay nước ngoài; 人気がある / 好評だ - được ưa chuộng. Hai danh từ đối lập cùng loại - đúng kiểu của mẫu cặp.
+    display_answer: 国内であれ海外であれ、この商品は人気がある。
+
+  - key: ja:exercise:n1-u8-deare-wb-dare
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-de-are
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Dù là ai đi nữa, người làm sai thì phải xin lỗi.\""
+      tokens:
+        - { id: d3, text: 間違えた人は }
+        - { id: d5, text: 誰であれば }
+        - { id: d1, text: 誰であれ }
+        - { id: d4, text: 謝るべきだ }
+    answer:
+      orders:
+        - [d1, d3, d4]
+    explanation:
+      vi: 誰であれ - dù là ai; 謝るべきだ - nên xin lỗi. 誰であれば là điều kiện "nếu là ai" - không tạo nghĩa "dù là ai".
+    display_answer: 誰であれ間違えた人は謝るべきだ。

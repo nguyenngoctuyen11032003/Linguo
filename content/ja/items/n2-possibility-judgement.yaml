@@ -1,0 +1,317 @@
+# Học liệu unit "Khả năng, phủ định mạnh và đánh giá" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～かねない =================
+  - key: ja:item:n2-u7-gram-kanenai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc + かねない
+      romanization: kanenai
+      pos: có thể dẫn đến (điều xấu)
+    back:
+      meaning:
+        vi: '"Không chừng sẽ..., có nguy cơ..." - người nói cảnh báo một kết quả xấu có thể xảy ra: 事故になりかねない, 誤解を招きかねない. Chỉ dùng cho điều không mong muốn.'
+      examples:
+        - target: 寝不足で運転すると、大きな事故を起こしかねない。
+          translation:
+            vi: Lái xe khi thiếu ngủ thì không chừng gây ra tai nạn lớn.
+      pronunciation_note:
+        vi: かねない đọc "ka-ne-nai", bốn nhịp đều.
+      confusion:
+        vi: 'Dễ nhầm với かねる: かねない (dạng phủ định) lại mang nghĩa "có thể xảy ra", còn かねる (khẳng định) là "khó mà làm được". Không dùng かねない cho điều tốt (×合格しかねない).'
+
+  - key: ja:item:n2-u7-jiko
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 事故
+      reading: じこ
+      romanization: jiko
+      pos: danh từ
+    back:
+      meaning:
+        vi: tai nạn, sự cố; 交通事故 - tai nạn giao thông; 事故を起こす - gây tai nạn
+      examples:
+        - target: 駅の近くで交通事故があった。
+          translation:
+            vi: Đã có một vụ tai nạn giao thông gần nhà ga.
+      pronunciation_note:
+        vi: じこ hai âm ngắn, không kéo dài thành "ji-kô-ô".
+      confusion:
+        vi: 'Hán Việt "sự cố" nhưng nghĩa chính là "tai nạn". "Gây tai nạn" là 事故を起こす, "gặp tai nạn" là 事故に遭う.'
+
+  - key: ja:item:n2-u7-koshou
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 故障
+      reading: こしょう
+      romanization: koshō
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: hỏng hóc (máy móc); エアコンが故障する - điều hoà bị hỏng
+      examples:
+        - target: エレベーターが故障していて、階段を使った。
+          translation:
+            vi: Thang máy đang hỏng nên tôi đi cầu thang bộ.
+      pronunciation_note:
+        vi: しょう là âm dài - "ko-shô-ô". こしょう cũng là "hạt tiêu" (胡椒), phân biệt bằng ngữ cảnh.
+      confusion:
+        vi: 故障 dùng cho máy móc, xe cộ; đồ vật bị vỡ, rách nói 壊れる; người bị đau, bệnh không dùng 故障.
+
+  # ================= bài 2: ～ようがない =================
+  - key: ja:item:n2-u7-gram-you-ga-nai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Vます-gốc + ようがない / ようもない
+      romanization: you ga nai
+      pos: không có cách nào
+    back:
+      meaning:
+        vi: '"Không có cách nào để..." - muốn làm nhưng không có phương tiện, thông tin nên không thể: 連絡のしようがない (không có cách nào liên lạc), 直しようがない. ようもない nhấn mạnh hơn.'
+      examples:
+        - target: 住所が分からないので、手紙の送りようがない。
+          translation:
+            vi: Không biết địa chỉ nên chẳng có cách nào gửi thư.
+      pronunciation_note:
+        vi: よう là âm dài - "yô-ô".
+      confusion:
+        vi: 'する-động từ dạng "N の + しようがない" (説明のしようがない). Khác できない: できない có thể do thiếu năng lực, ようがない là không có cách, không có đường nào.'
+
+  - key: ja:item:n2-u7-renrakusaki
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 連絡先
+      reading: れんらくさき
+      romanization: renrakusaki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin liên lạc (số điện thoại, email, địa chỉ để liên lạc)
+      examples:
+        - target: こちらに連絡先をご記入ください。
+          translation:
+            vi: Xin vui lòng ghi thông tin liên lạc vào đây.
+      pronunciation_note:
+        vi: さき đọc "sa-ki", không đục thành "za-ki".
+      confusion:
+        vi: 連絡先 là "nơi để liên lạc"; 連絡 là hành động liên lạc. "Cho tôi xin số liên lạc" - 連絡先を教えていただけますか.
+
+  - key: ja:item:n2-u7-shudan
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 手段
+      reading: しゅだん
+      romanization: shudan
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương tiện, cách thức (để đạt mục đích); 交通手段 - phương tiện đi lại
+      examples:
+        - target: この村には、バス以外に交通手段がない。
+          translation:
+            vi: Ở làng này ngoài xe buýt ra không có phương tiện đi lại nào khác.
+      pronunciation_note:
+        vi: しゅ là âm ghép ngắn "shu"; だん có ん cuối.
+      confusion:
+        vi: Hán Việt "thủ đoạn" nhưng tiếng Nhật trung tính - "phương tiện, cách". Nghĩa xấu "giở thủ đoạn" là 手段を選ばない (bất chấp thủ đoạn).
+
+  # ================= bài 3: ～わけがない =================
+  - key: ja:item:n2-u7-gram-wake-ga-nai
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường (なAな / Nの・Nである) + わけがない
+      romanization: wake ga nai
+      pos: không đời nào
+    back:
+      meaning:
+        vi: '"Không đời nào..., làm gì có chuyện..." - người nói phủ định mạnh vì có lý do chắc chắn: あんなに練習したんだから、負けるわけがない. Khẩu ngữ: わけない.'
+      examples:
+        - target: 毎日遊んでいる彼が、試験に合格するわけがない。
+          translation:
+            vi: Ngày nào cũng ăn chơi như cậu ta thì làm gì có chuyện đỗ.
+      pronunciation_note:
+        vi: わけ đọc "wa-ke", が nhẹ.
+      confusion:
+        vi: わけがない = "chắc chắn không" (phủ định mạnh); わけではない = "không hẳn là" (phủ định một phần); ないわけにはいかない = "không thể không làm". Ba mẫu dễ lẫn vì đều có わけ.
+
+  - key: ja:item:n2-u7-joudan
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 冗談
+      reading: じょうだん
+      romanization: jōdan
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nói đùa; 冗談を言う - nói đùa; 冗談でしょう - đùa à?
+      examples:
+        - target: 彼の冗談に、みんな笑った。
+          translation:
+            vi: Mọi người đều cười vì câu đùa của anh ấy.
+      pronunciation_note:
+        vi: じょう là âm dài - "jô-ô-dan".
+      confusion:
+        vi: 冗談 là lời đùa; trò đùa bằng hành động, chơi khăm là いたずら.
+
+  - key: ja:item:n2-u7-honki
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 本気
+      reading: ほんき
+      romanization: honki
+      pos: danh từ / な
+    back:
+      meaning:
+        vi: nghiêm túc, thật lòng (không đùa); 本気で - một cách nghiêm túc
+      examples:
+        - target: 今度こそ本気でダイエットをする。
+          translation:
+            vi: Lần này tôi sẽ ăn kiêng nghiêm túc thật sự.
+      pronunciation_note:
+        vi: ほん có ん cuối, き ngắn - "hon-ki".
+      confusion:
+        vi: 本気 là thái độ "làm thật, nói thật", trái với 冗談. 真面目 là tính cách nghiêm túc, chăm chỉ nói chung.
+
+  # ================= bài 4: ～にすぎない =================
+  - key: ja:item:n2-u7-gram-ni-suginai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N / Thể thường + にすぎない / に過ぎず
+      reading: にすぎない
+      romanization: ni suginai
+      pos: chỉ là, chẳng qua là
+    back:
+      meaning:
+        vi: '"Chỉ là..., chẳng qua chỉ là..." - nhấn mạnh mức độ nhỏ, không đáng kể: 一例にすぎない (chỉ là một ví dụ), 噂にすぎない. Văn viết; に過ぎず là dạng nối giữa câu.'
+      examples:
+        - target: 参加者は全体の一割にすぎない。
+          translation:
+            vi: Số người tham gia chỉ chiếm vỏn vẹn một phần mười tổng số.
+      pronunciation_note:
+        vi: すぎない đọc "su-gi-nai", す gần như câm nguyên âm.
+      confusion:
+        vi: にすぎない hạ thấp, coi nhẹ; だけだ trung tính hơn. Không dùng にすぎない để khen (×彼は天才にすぎない).
+
+  - key: ja:item:n2-u7-ichibu
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 一部
+      reading: いちぶ
+      romanization: ichibu
+      pos: danh từ
+    back:
+      meaning:
+        vi: một phần, một bộ phận; 一部の人 - một số người
+      examples:
+        - target: 道路の一部が雪で通れなくなっている。
+          translation:
+            vi: Một phần con đường không đi được vì tuyết.
+      pronunciation_note:
+        vi: いち đọc liền "i-chi", ぶ là âm đục.
+      confusion:
+        vi: 一部 là "một phần trong tổng thể"; ngược nghĩa là 全部 / 全体. 一部の人 nghe nhẹ nhàng hơn "một vài người" khi phê bình.
+
+  - key: ja:item:n2-u7-tannaru
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 単なる
+      reading: たんなる
+      romanization: tannaru
+      pos: liên thể từ
+    back:
+      meaning:
+        vi: đơn thuần, chỉ là (đứng trước danh từ); 単なる偶然 - chỉ là ngẫu nhiên
+      examples:
+        - target: それは単なる偶然だった。
+          translation:
+            vi: Đó chỉ đơn thuần là sự ngẫu nhiên.
+      pronunciation_note:
+        vi: たん có ん cuối - "tan-na-ru".
+      confusion:
+        vi: 単なる chỉ đứng trước danh từ, không làm vị ngữ (×この話は単なるだ). Hay đi cùng にすぎない - 単なる噂にすぎない.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n2-u7-sekinin
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 責任
+      reading: せきにん
+      romanization: sekinin
+      pos: danh từ
+    back:
+      meaning:
+        vi: trách nhiệm; 責任を取る - chịu trách nhiệm; 責任者 - người phụ trách
+      examples:
+        - target: 失敗の責任は私にあります。
+          translation:
+            vi: Trách nhiệm cho thất bại thuộc về tôi.
+      pronunciation_note:
+        vi: せき đọc "se-ki"; にん có ん cuối.
+      confusion:
+        vi: Hán Việt "trách nhiệm" trùng nghĩa. "Chịu trách nhiệm" là 責任を取る (lấy trách nhiệm), không dùng 受ける.
+
+  - key: ja:item:n2-u7-benshou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 弁償
+      reading: べんしょう
+      romanization: benshō
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: bồi thường (đền tiền cho đồ đã làm hỏng, làm mất)
+      examples:
+        - target: 借りたカメラを壊してしまい、弁償した。
+          translation:
+            vi: Tôi lỡ làm hỏng chiếc máy ảnh mượn nên đã đền tiền.
+      pronunciation_note:
+        vi: しょう là âm dài - "ben-shô-ô".
+      confusion:
+        vi: 弁償 là đền đồ, đền tiền cho người khác (cá nhân); 賠償 là bồi thường thiệt hại lớn, mang tính pháp lý.

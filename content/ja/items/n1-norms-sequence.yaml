@@ -1,0 +1,382 @@
+# Học liệu unit "Chuẩn mực, khởi đầu và căn cứ" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～まじき / ～べからず =================
+  - key: ja:item:n1-u7-gram-majiki
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: N + に(として)あるまじき + N / V-る + まじき + N
+      romanization: majiki
+      pos: không thể chấp nhận (đối với tư cách)
+    back:
+      meaning:
+        vi: '"Không được phép, không xứng với (tư cách)..." - phê phán nặng một hành vi trái với vai trò của người đó: 教師にあるまじき行為 (hành vi không thể chấp nhận ở một giáo viên). Gần như luôn ở dạng ～にあるまじき + danh từ.'
+      examples:
+        - target: 患者の秘密を漏らすなど、医師にあるまじきことだ。
+          translation:
+            vi: Tiết lộ bí mật của bệnh nhân là điều một bác sĩ không bao giờ được làm.
+      pronunciation_note:
+        vi: まじき đọc "ma-ji-ki", ba nhịp đều.
+      confusion:
+        vi: まじき chỉ đứng trước danh từ (行為, 発言, 態度); không kết câu bằng まじき. Chủ thể là người có vai trò xã hội (教師, 政治家, 社会人); với hành vi chung chung dùng べきではない.
+
+  - key: ja:item:n1-u7-gram-bekarazu
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V-る + べからず / V-る + べからざる + N
+      romanization: bekarazu / bekarazaru
+      pos: cấm (biển báo, văn cổ)
+    back:
+      meaning:
+        vi: '(1) べからず - "cấm..., không được..." trên biển báo, nội quy cổ: 芝生に入るべからず. (2) べからざる + N - "... không thể thiếu / không được phép": 欠くべからざる存在 (sự tồn tại không thể thiếu). する → するべからず hoặc すべからず.'
+      examples:
+        - target: 関係者以外、立ち入るべからず。
+          translation:
+            vi: Người không phận sự miễn vào.
+      pronunciation_note:
+        vi: べからず đọc "be-ka-ra-zu"; ず là "zu".
+      confusion:
+        vi: べからず là văn cổ cứng, hầu như chỉ gặp trên biển báo, khẩu hiệu, châm ngôn (働かざる者食うべからず). Nói chuyện bình thường dùng ～てはいけない.
+
+  - key: ja:item:n1-u7-koui
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 行為
+      reading: こうい
+      romanization: kōi
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành vi, việc làm (thường trong ngữ cảnh đạo đức, pháp luật); 違法行為 - hành vi phạm pháp
+      examples:
+        - target: 他人の作品を無断で使うのは違法行為だ。
+          translation:
+            vi: Dùng tác phẩm của người khác mà không xin phép là hành vi phạm pháp.
+      pronunciation_note:
+        vi: こう là âm dài - "kô-ô-i".
+      confusion:
+        vi: Hán Việt "hành vi" - nghĩa trùng tiếng Việt. 行動 là hành động nói chung; 行為 nhấn việc làm cụ thể được đem ra đánh giá đúng sai.
+
+  - key: ja:item:n1-u7-fushouji
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 不祥事
+      reading: ふしょうじ
+      romanization: fushōji
+      pos: danh từ
+    back:
+      meaning:
+        vi: vụ bê bối, sự cố đáng xấu hổ (của công ty, tổ chức, quan chức)
+      examples:
+        - target: 相次ぐ不祥事で、会社の信用は大きく傷ついた。
+          translation:
+            vi: Vì những vụ bê bối liên tiếp, uy tín của công ty bị tổn hại nặng.
+      pronunciation_note:
+        vi: しょう là âm dài - "fu-shô-ô-ji".
+      confusion:
+        vi: 不祥事 là chuyện bê bối làm mất mặt tổ chức (tham ô, che giấu lỗi); tai nạn thông thường là 事故. Tin tức hay đi với 起こす, 発覚する.
+
+  # ================= bài 2: ～をかわきりに =================
+  - key: ja:item:n1-u7-gram-wo-kawakiri-ni
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + を皮切りに(して) / N + を皮切りとして
+      reading: をかわきりに
+      romanization: o kawakiri ni
+      pos: mở đầu cho chuỗi sự việc
+    back:
+      meaning:
+        vi: '"Mở màn bằng..., bắt đầu từ... rồi lần lượt..." - N là điểm khởi đầu của một chuỗi sự việc cùng loại phát triển mạnh sau đó: 東京公演を皮切りに、全国十都市を回る.'
+      examples:
+        - target: 彼女の発言を皮切りに、次々と反対意見が出された。
+          translation:
+            vi: Mở đầu bằng phát biểu của cô ấy, các ý kiến phản đối lần lượt được đưa ra.
+      pronunciation_note:
+        vi: かわきり đọc "ka-wa-ki-ri"; 皮切り là đọc theo âm Nhật.
+      confusion:
+        vi: を皮切りに nhấn "khởi đầu → lan rộng theo thời gian"; ～をはじめ(として) là "tiêu biểu là..." khi liệt kê, không có ý trình tự. Vế sau là sự việc tích cực hoặc trung tính, mở rộng.
+
+  - key: ja:item:n1-u7-kouen
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 公演
+      reading: こうえん
+      romanization: kōen
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: buổi biểu diễn (kịch, nhạc, múa) trước công chúng; 全国公演 - lưu diễn toàn quốc
+      examples:
+        - target: その劇団の公演は、毎回すぐに売り切れる。
+          translation:
+            vi: Các buổi diễn của đoàn kịch đó lần nào cũng bán hết vé ngay.
+      pronunciation_note:
+        vi: こう là âm dài - "kô-ô-en".
+      confusion:
+        vi: Đồng âm với 公園 (công viên) và 講演 (bài diễn thuyết). 公演 là biểu diễn nghệ thuật; 講演 là nói chuyện, thuyết trình.
+
+  - key: ja:item:n1-u7-kakuchi
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 各地
+      reading: かくち
+      romanization: kakuchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: các nơi, khắp các vùng; 全国各地 - khắp nơi trên cả nước
+      examples:
+        - target: 大雪の影響は全国各地に広がっている。
+          translation:
+            vi: Ảnh hưởng của tuyết lớn đang lan ra khắp các vùng trên cả nước.
+      pronunciation_note:
+        vi: かく có く rất nhẹ - "ka-ku-chi".
+      confusion:
+        vi: Hán Việt "các địa". 各地 là nhiều nơi khác nhau; một vùng cụ thể là 地方 hoặc 地域.
+
+  # ================= bài 3: ～をふまえて =================
+  - key: ja:item:n1-u7-gram-wo-fumaete
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + を踏まえて / N + を踏まえた + N
+      reading: をふまえて
+      romanization: o fumaete
+      pos: cân nhắc dựa trên
+    back:
+      meaning:
+        vi: '"Có tính đến, rút kinh nghiệm từ..." - lấy một sự việc đã xảy ra, một kết quả, một ý kiến làm tiền đề để suy nghĩ, quyết định tiếp: 前回の反省を踏まえて, 調査結果を踏まえた提案.'
+      examples:
+        - target: 利用者の声を踏まえて、サービスを改善しました。
+          translation:
+            vi: Có tính đến ý kiến của người dùng, chúng tôi đã cải thiện dịch vụ.
+      pronunciation_note:
+        vi: ふまえて đọc "fu-ma-e-te", え tách rõ.
+      confusion:
+        vi: に基づいて (N2) là làm đúng theo một căn cứ cố định (luật, dữ liệu); を踏まえて là cân nhắc, tiếp thu một tiền đề rồi phát triển thêm. Luật thì 法律に基づいて; bài học kinh nghiệm thì 教訓を踏まえて.
+
+  - key: ja:item:n1-u7-keii
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 経緯
+      reading: けいい
+      romanization: keii
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu đuôi sự việc, quá trình diễn biến dẫn đến kết quả
+      examples:
+        - target: 計画が中止になった経緯を説明してください。
+          translation:
+            vi: Xin hãy giải thích đầu đuôi vì sao kế hoạch bị dừng.
+      pronunciation_note:
+        vi: Đọc "kê-i-i", ba nhịp; đôi khi còn đọc いきさつ.
+      confusion:
+        vi: 経緯 là cả quá trình diễn biến; 理由 chỉ là lý do. Hán Việt "kinh vĩ" - không giúp đoán nghĩa, nên học như một từ.
+
+  - key: ja:item:n1-u7-kyoukun
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 教訓
+      reading: きょうくん
+      romanization: kyōkun
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài học (rút ra từ kinh nghiệm, thất bại); 教訓を生かす - vận dụng bài học
+      examples:
+        - target: 過去の災害から得た教訓を忘れてはならない。
+          translation:
+            vi: Không được quên những bài học rút ra từ các thảm hoạ trước đây.
+      pronunciation_note:
+        vi: きょう là âm dài - "kyô-ô-kun".
+      confusion:
+        vi: Hán Việt "giáo huấn", nhưng nghĩa là "bài học kinh nghiệm", không phải lời dạy dỗ. Bài học trong sách giáo khoa là 課.
+
+  # ================= bài 4: ～ゆえ / ～ばこそ =================
+  - key: ja:item:n1-u7-gram-yue
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: Thể thường / N(の) + ゆえ(に) / ゆえの + N
+      romanization: yue (ni)
+      pos: nguyên nhân (văn viết)
+    back:
+      meaning:
+        vi: '"Vì, do..." - bản văn viết, cổ của から/ので: 若さゆえの失敗 (thất bại do tuổi trẻ), 貧しいがゆえに (vì nghèo). Danh từ + ゆえ hoặc N + の + ゆえ; thể thường hay thêm が: 〜がゆえに.'
+      examples:
+        - target: 人気があるがゆえに、批判も多い。
+          translation:
+            vi: Chính vì được yêu thích nên cũng bị chỉ trích nhiều.
+      pronunciation_note:
+        vi: ゆえ đọc "yu-ê", hai âm tách rõ.
+      confusion:
+        vi: ゆえ là văn viết trang trọng; trong hội thoại nghe như văn cổ. Đứng trước danh từ là ゆえの (若さゆえの過ち), không dùng ゆえな.
+
+  - key: ja:item:n1-u7-gram-bakoso
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V-ば / A-ければ / N-であれば + こそ
+      romanization: ba koso
+      pos: chính vì... nên mới
+    back:
+      meaning:
+        vi: '"Chính vì... nên mới..." - nhấn mạnh lý do tích cực, thường để giải thích một hành động nghe có vẻ ngược đời: あなたのことを思えばこそ、厳しく言うのです.'
+      examples:
+        - target: 健康であればこそ、好きな仕事が続けられる。
+          translation:
+            vi: Chính vì khoẻ mạnh nên mới có thể tiếp tục công việc mình yêu thích.
+      pronunciation_note:
+        vi: ばこそ đọc "ba-ko-so", nhấn nhẹ vào こ.
+      confusion:
+        vi: ばこそ mạnh và trang trọng hơn からこそ (N3), thường kết bằng のだ / のです. Không dùng cho lý do tiêu cực - nói 病気だからこそ休む hoặc 病気なので, không nói ×病気であればこそ休む.
+
+  - key: ja:item:n1-u7-hinkon
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 貧困
+      reading: ひんこん
+      romanization: hinkon
+      pos: danh từ / な
+    back:
+      meaning:
+        vi: sự nghèo đói, nghèo khổ (vấn đề xã hội); 子どもの貧困 - tình trạng trẻ em nghèo
+      examples:
+        - target: 貧困は教育の機会を奪う。
+          translation:
+            vi: Nghèo đói tước đi cơ hội học hành.
+      pronunciation_note:
+        vi: Hai âm ん - "hin-kon".
+      confusion:
+        vi: Hán Việt "bần khốn". 貧困 là danh từ văn viết về xã hội; tả một người "nghèo" trong câu thường dùng 貧しい.
+
+  - key: ja:item:n1-u7-kugen
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 苦言
+      reading: くげん
+      romanization: kugen
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời góp ý thẳng thắn, khó nghe (vì muốn tốt cho người kia); 苦言を呈する - thẳng thắn góp ý
+      examples:
+        - target: 先輩の苦言のおかげで、自分の甘さに気づいた。
+          translation:
+            vi: Nhờ lời góp ý thẳng thắn của đàn anh, tôi nhận ra mình còn dễ dãi.
+      pronunciation_note:
+        vi: く ngắn, げん có ん cuối - "ku-gen".
+      confusion:
+        vi: 苦言 là lời khó nghe nhưng thiện ý ("thuốc đắng dã tật"); 悪口 là nói xấu. Thành ngữ quen thuộc - 苦言を呈する.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n1-u7-jisseki
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 実績
+      reading: じっせき
+      romanization: jisseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành tích thực tế, kết quả đã đạt được (công việc, kinh doanh); 実績を積む - tích luỹ thành tích
+      examples:
+        - target: 彼は海外で十分な実績を上げてきた。
+          translation:
+            vi: Anh ấy đã đạt được nhiều thành tích ở nước ngoài.
+      pronunciation_note:
+        vi: じっ có âm ngắt - "ji-t-se-ki".
+      confusion:
+        vi: 実績 là kết quả đo được, có thật; 成績 là điểm số, thành tích học tập.
+
+  - key: ja:item:n1-u7-zenrei
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 前例
+      reading: ぜんれい
+      romanization: zenrei
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền lệ; 前例がない - chưa có tiền lệ; 前例のない - chưa từng có
+      examples:
+        - target: これは前例のない試みだ。
+          translation:
+            vi: Đây là một thử nghiệm chưa từng có tiền lệ.
+      pronunciation_note:
+        vi: れい đọc "rê-ê".
+      confusion:
+        vi: Hán Việt "tiền lệ" - trùng nghĩa. Tổ chức Nhật hay bị chê 前例主義 - chỉ làm những gì đã có tiền lệ.
+
+  - key: ja:item:n1-u7-kiritsu
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 規律
+      reading: きりつ
+      romanization: kiritsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỷ luật, nề nếp; 規律を守る - giữ kỷ luật; 規律正しい - nề nếp, quy củ
+      examples:
+        - target: このチームは規律が厳しいことで知られている。
+          translation:
+            vi: Đội này nổi tiếng là có kỷ luật nghiêm khắc.
+      pronunciation_note:
+        vi: りつ đọc "ri-tsư".
+      confusion:
+        vi: Hán Việt "quy luật", nhưng nghĩa là "kỷ luật, nề nếp". Quy luật tự nhiên là 法則.

@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u7-wo-kawakiri-ni
+order_index: 2
+level: n1
+title:
+  vi: Mở màn bằng... rồi lan rộng - ～を皮切りに, ～を皮切りとして
+objectives:
+  - vi: Nói "khởi đầu bằng N, sau đó lần lượt..." bằng ～を皮切りに.
+  - vi: Phân biệt を皮切りに (trình tự khởi đầu) với をはじめ (tiêu biểu khi liệt kê).
+  - vi: Đọc hiểu tin về lưu diễn, mở chi nhánh, chuỗi sự kiện.
+estimated_minutes: 22
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n1-u7-majiki-bekarazu]
+items:
+  - item: ja:item:n1-u7-gram-wo-kawakiri-ni
+  - item: ja:item:n1-u7-kouen
+  - item: ja:item:n1-u7-kakuchi
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được những câu tin tức như "Mở màn bằng buổi diễn ở Tokyo, ban nhạc sẽ lưu diễn khắp cả nước" hay "Bắt đầu từ cửa hàng ở Osaka, chuỗi cửa hàng lần lượt mở rộng ra châu Á".
+  - type: explain
+    text:
+      vi: 'N + を皮切りに(して) / を皮切りとして - "mở màn bằng N, rồi lần lượt...". N là sự việc đầu tiên trong một chuỗi cùng loại; vế sau là sự phát triển, lan rộng: 大阪店を皮切りに、アジア各地に出店した.'
+  - type: explain
+    text:
+      vi: '皮切り vốn là "nhát dao đầu tiên rạch qua da" khi châm cứu - từ đó có nghĩa "khởi đầu". Mẫu này hợp với văn tin tức, báo cáo; vế sau thường có 次々と, 相次いで, 各地で để nhấn sự lan rộng.'
+  - type: explain
+    text:
+      vi: 'Đừng nhầm với ～をはじめ(として) - "tiêu biểu là N, (và nhiều cái khác)": 東京をはじめ、大阪や名古屋でも. をはじめ chỉ nêu ví dụ đại diện khi liệt kê, không có ý "trước rồi sau".'
+  - type: deep_explain
+    text:
+      vi: 'Tiếng Việt có "mở màn", "khởi đầu bằng" - nghĩa rất gần. Khác biệt là を皮切りに đòi hỏi vế sau là một chuỗi sự việc tiếp nối và thường mang sắc thái tích cực hoặc trung tính (lưu diễn, mở cửa hàng, phát biểu). Chuyện chỉ xảy ra một lần, hoặc vế sau là ý chí, lời nhờ thì không dùng.'
+  - type: example
+    target: 新作映画は、来月の東京での上映を皮切りに、全国で公開される。
+    target_lang: ja
+    translation:
+      vi: Mở màn bằng buổi chiếu ở Tokyo vào tháng sau, bộ phim mới sẽ được công chiếu trên toàn quốc.
+  - type: example
+    target: 社長の挨拶を皮切りに、記念式典が始まった。
+    target_lang: ja
+    translation:
+      vi: Mở đầu bằng lời chào của giám đốc, buổi lễ kỷ niệm đã bắt đầu.
+  - type: example
+    target: 一件の通報を皮切りとして、同様の被害報告が相次いだ。
+    target_lang: ja
+    translation:
+      vi: Bắt đầu từ một cuộc trình báo, hàng loạt báo cáo về thiệt hại tương tự liên tiếp xuất hiện.
+  - type: example
+    target: その劇団は、地方の小さな町でも公演を行っている。
+    target_lang: ja
+    translation:
+      vi: Đoàn kịch đó còn biểu diễn cả ở những thị trấn nhỏ ở địa phương.
+  - type: common_mistake
+    wrong: 明日の会議を皮切りに、資料を準備してください。
+    right: 明日の会議に向けて、資料を準備してください。
+    target_lang: ja
+    note:
+      vi: を皮切りに không đi với lời nhờ ở vế sau, và cần một chuỗi sự việc tiếp nối. Chuẩn bị cho cuộc họp dùng に向けて.
+  - type: common_mistake
+    wrong: 日本の祭りには、祇園祭を皮切りに有名なものがたくさんある。
+    right: 日本の祭りには、祇園祭をはじめ有名なものがたくさんある。
+    target_lang: ja
+    note:
+      vi: Nêu ví dụ tiêu biểu trong một danh sách là をはじめ. を皮切りに chỉ dùng khi có trình tự "cái đầu tiên rồi lần lượt những cái sau".
+  - type: summary
+    points:
+      - vi: N + を皮切りに / を皮切りとして - mở màn bằng N rồi lần lượt...
+      - vi: Vế sau là chuỗi sự việc lan rộng (次々と, 各地で); không phải lời nhờ, ý chí.
+      - vi: をはじめ - tiêu biểu là... (liệt kê), không có ý trình tự.
+      - vi: 公演 - buổi biểu diễn · 各地 - các nơi.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u7-kawakiri-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      stem: Câu 「このラーメン店は、福岡の一号店を皮切りに、国内外に五十店舗を展開している。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a6k, text: "Khởi đầu từ cửa hàng đầu tiên ở Fukuoka, tiệm ramen này đã mở 50 cửa hàng trong và ngoài nước.", lang: vi }
+        - { id: b2m, text: Tiệm ramen này chỉ có một cửa hàng duy nhất ở Fukuoka., lang: vi }
+        - { id: c9n, text: Tiệm ramen này định đóng cửa hàng ở Fukuoka để mở 50 cửa hàng khác., lang: vi }
+        - { id: d4p, text: "Trong 50 cửa hàng, cửa hàng ở Fukuoka là lớn nhất.", lang: vi }
+    answer:
+      correct_option_id: a6k
+    explanation:
+      vi: 一号店を皮切りに - bắt đầu từ cửa hàng số 1; 展開している - đang mở rộng (chuỗi). Mẫu này nói trình tự khởi đầu rồi lan rộng, không nói về quy mô hay việc đóng cửa.
+    display_answer: Khởi đầu từ cửa hàng đầu tiên ở Fukuoka, tiệm ramen này đã mở 50 cửa hàng trong và ngoài nước.
+
+  - key: ja:exercise:n1-u7-kawakiri-listen-kouen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-kouen
+    prompt:
+      audio_asset_id: null
+      fallback_text: そのバンドは札幌公演を皮切りに、全国二十か所を回るツアーを始める。
+      options:
+        - { id: e7q, text: "Mở màn bằng buổi diễn ở Sapporo, ban nhạc bắt đầu chuyến lưu diễn 20 nơi khắp cả nước.", lang: vi }
+        - { id: f3r, text: Ban nhạc kết thúc chuyến lưu diễn 20 nơi bằng buổi diễn ở Sapporo., lang: vi }
+        - { id: g8s, text: Ban nhạc huỷ buổi diễn ở Sapporo và 20 nơi khác., lang: vi }
+        - { id: h1t, text: Ban nhạc chỉ biểu diễn ở Sapporo 20 lần., lang: vi }
+    answer:
+      correct_option_id: e7q
+    explanation:
+      vi: 札幌公演を皮切りに - mở màn bằng buổi diễn ở Sapporo; 全国二十か所を回る - đi vòng 20 nơi khắp cả nước. 皮切り là điểm bắt đầu, không phải kết thúc.
+    display_answer: Mở màn bằng buổi diễn ở Sapporo, ban nhạc bắt đầu chuyến lưu diễn 20 nơi khắp cả nước.
+
+  - key: ja:exercise:n1-u7-kawakiri-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      stem: 'Chọn từ hợp nhất: 一人の選手の告白 ＿＿、同じような体験を語る人が次々と現れた。 ("Mở đầu bằng lời thú nhận của một vận động viên, những người kể về trải nghiệm tương tự lần lượt xuất hiện.")'
+      stem_lang: vi
+      options:
+        - { id: i5u, text: を皮切りに, lang: ja }
+        - { id: j9v, text: をはじめ, lang: ja }
+        - { id: k3w, text: にあるまじき, lang: ja }
+        - { id: l7x, text: を皮切りの, lang: ja }
+    answer:
+      correct_option_id: i5u
+    explanation:
+      vi: Có trình tự "lời thú nhận đầu tiên → nhiều người lần lượt lên tiếng" (次々と) - đúng chỗ của を皮切りに. をはじめ chỉ nêu ví dụ tiêu biểu khi liệt kê; にあるまじき cần danh từ đi sau; を皮切りの không tồn tại.
+    display_answer: を皮切りに
+
+  - key: ja:exercise:n1-u7-kawakiri-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      template: "この大会は、一九六四年の東京開催{{b1}}、アジア各地で行われるようになった。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Giải đấu này, mở màn bằng lần tổ chức ở Tokyo năm 1964, đã dần được tổ chức ở nhiều nơi tại châu Á."
+        - "Gợi ý: を + 皮切り + trợ từ."
+    answer:
+      blanks:
+        b1: [を皮切りに, をかわきりに, を皮切りとして, を皮切りにして]
+    known_wrong:
+      - answer: をはじめ
+        feedback_vi: Câu nói trình tự "lần đầu ở Tokyo rồi lan sang nơi khác" - dùng を皮切りに. をはじめ là nêu ví dụ tiêu biểu.
+        error_tag: kawakiri_hajime
+      - answer: 皮切りに
+        feedback_vi: Cần trợ từ を trước 皮切り - を皮切りに.
+        error_tag: particle
+    explanation:
+      vi: N + を皮切りに - mở màn bằng N. ～ようになった ở vế sau cho thấy sự lan rộng dần theo thời gian.
+    display_answer: この大会は、一九六四年の東京開催を皮切りに、アジア各地で行われるようになった。
+
+  - key: ja:exercise:n1-u7-kawakiri-mcq-kakuchi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u7-kakuchi
+    prompt:
+      stem: Trong câu 「梅雨入りした各地で、大雨への警戒が呼びかけられている。」, 各地 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: m2y, text: "các nơi, các vùng", lang: vi }
+        - { id: n8z, text: một vùng duy nhất, lang: vi }
+        - { id: o4a, text: mặt đất, lang: vi }
+        - { id: p9b, text: khu vực trung tâm, lang: vi }
+    answer:
+      correct_option_id: m2y
+    explanation:
+      vi: 各 - mỗi, các; 地 - nơi chốn. 各地 là nhiều nơi khác nhau - ở đây là các vùng đã vào mùa mưa.
+    display_answer: các nơi, các vùng
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u7-kawakiri-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      template: "部長の辞任{{b1}}、役員が次々と会社を去った。(mở đầu bằng)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [を皮切りに, をかわきりに, を皮切りとして, を皮切りにして]
+    known_wrong:
+      - answer: をはじめ
+        feedback_vi: Có trình tự "trưởng phòng từ chức trước rồi lần lượt các lãnh đạo khác" - dùng を皮切りに.
+        error_tag: kawakiri_hajime
+      - answer: を皮切りの
+        feedback_vi: Không có dạng を皮切りの; trước cả vế câu dùng を皮切りに.
+        error_tag: kawakiri_form
+    explanation:
+      vi: 辞任を皮切りに - mở đầu bằng việc từ chức; 次々と去った - lần lượt rời đi. Vế sau là chuỗi sự việc tiếp nối nên dùng を皮切りに; ở đây sắc thái trung tính, kể sự việc.
+    display_answer: 部長の辞任を皮切りに、役員が次々と会社を去った。
+
+  - key: ja:exercise:n1-u7-kawakiri-write-shiten
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      source_text: Mở đầu bằng chi nhánh ở Hà Nội, công ty sẽ lần lượt mở văn phòng ở các nước Đông Nam Á. (dùng を皮切りに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ハノイ支店を皮切りに、会社は東南アジア各国に次々と事務所を開く予定だ。
+        - ハノイ支店を皮切りに、東南アジア各国に次々と事務所を開く予定だ。
+        - ハノイ支店を皮切りに、会社は東南アジアの国々に次々と事務所を開く。
+        - ハノイ支店を皮切りに、会社は東南アジア各国に次々と事務所を開く。
+        - ハノイ支店を皮切りに、会社は東南アジア各国に次々と事務所を開設する。
+        - ハノイ支店を皮切りに、会社は東南アジア各国に次々とオフィスを開く。
+        - ハノイ支店を皮切りに、東南アジア各国に順次事務所を開設する予定です。
+        - ハノイの支店を皮切りに、会社は東南アジア各国に次々と事務所を開く予定だ。
+        - ハノイ支店を皮切りとして、会社は東南アジア各国に次々と事務所を開く予定だ。
+        - ハノイしてんをかわきりに、かいしゃはとうなんアジアかっこくにつぎつぎとじむしょをひらくよていだ。
+    known_wrong:
+      - answer: ハノイ支店をはじめ、会社は東南アジア各国に次々と事務所を開く予定だ。
+        feedback_vi: Câu có trình tự "Hà Nội trước, các nước sau" - dùng を皮切りに; をはじめ chỉ nêu ví dụ tiêu biểu.
+        error_tag: kawakiri_hajime
+      - answer: ハノイ支店に皮切りに、会社は東南アジア各国に次々と事務所を開く予定だ。
+        feedback_vi: Trợ từ đúng là を - を皮切りに.
+        error_tag: particle
+    explanation:
+      vi: N を皮切りに - mở đầu bằng N; 東南アジア各国 - các nước Đông Nam Á; 次々と / 順次 - lần lượt; 予定だ - dự định. Kế hoạch đã được công bố nên dùng 予定 vẫn tự nhiên với を皮切りに.
+    display_answer: ハノイ支店を皮切りに、会社は東南アジア各国に次々と事務所を開く予定だ。
+
+  - key: ja:exercise:n1-u7-kawakiri-write-hajime
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-kakuchi
+    prompt:
+      source_text: Không chỉ Kyoto mà ở khắp các nơi trên cả nước đều có chùa cổ. (dùng をはじめ và 各地)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 京都をはじめ、全国各地に古い寺がある。
+        - 京都をはじめ、全国各地に古いお寺がある。
+        - 京都をはじめ、全国各地に古い寺があります。
+        - 京都をはじめ、全国各地に古いお寺があります。
+        - 京都をはじめとして、全国各地に古い寺がある。
+        - 京都をはじめ、日本各地に古い寺がある。
+        - 京都をはじめ、全国の各地に古い寺がある。
+        - きょうとをはじめ、ぜんこくかくちにふるいてらがある。
+    known_wrong:
+      - answer: 京都を皮切りに、全国各地に古い寺がある。
+        feedback_vi: Chùa cổ không xuất hiện "lần lượt" từ Kyoto; đây chỉ là ví dụ tiêu biểu - dùng をはじめ.
+        error_tag: kawakiri_hajime
+      - answer: 京都をはじめ、全国各地を古い寺がある。
+        feedback_vi: Nơi có vật dùng に - 各地に古い寺がある.
+        error_tag: particle
+    explanation:
+      vi: 'N をはじめ - tiêu biểu là N, (và những nơi khác). 全国各地に - ở khắp các nơi trên cả nước. Bài tập này giúp bạn phân biệt: không có trình tự thời gian thì không dùng を皮切りに.'
+    display_answer: 京都をはじめ、全国各地に古い寺がある。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u7-kawakiri-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      source_text: 春の桜祭りを皮切りに、この町では一年中さまざまなイベントが開かれる。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mở màn bằng lễ hội hoa anh đào mùa xuân, thị trấn này tổ chức nhiều sự kiện khác nhau suốt cả năm.
+        - Bắt đầu từ lễ hội hoa anh đào mùa xuân, ở thị trấn này có đủ loại sự kiện được tổ chức quanh năm.
+        - Khởi đầu bằng lễ hội anh đào mùa xuân, thị trấn này tổ chức nhiều sự kiện suốt cả năm.
+        - Mở đầu bằng lễ hội hoa anh đào vào mùa xuân, quanh năm thị trấn này có nhiều sự kiện khác nhau.
+        - Bắt đầu với lễ hội hoa anh đào mùa xuân, thị trấn này tổ chức nhiều sự kiện đa dạng suốt năm.
+        - Mở màn bằng lễ hội hoa anh đào mùa xuân, cả năm ở thị trấn này có nhiều sự kiện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thị trấn này chỉ tổ chức lễ hội hoa anh đào vào mùa xuân.
+        feedback_vi: 一年中さまざまなイベント là "nhiều sự kiện suốt năm"; lễ hội anh đào chỉ là sự kiện mở màn.
+        error_tag: meaning
+    explanation:
+      vi: 桜祭りを皮切りに - mở màn bằng lễ hội anh đào; 一年中 - suốt cả năm; さまざまな - đủ loại; 開かれる - được tổ chức.
+    display_answer: Mở màn bằng lễ hội hoa anh đào mùa xuân, thị trấn này tổ chức nhiều sự kiện khác nhau suốt cả năm.
+
+  - key: ja:exercise:n1-u7-kawakiri-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      stem: Bạn viết thông cáo báo chí cho công ty, nói rằng sản phẩm mới sẽ bán ở Nhật trước rồi lần lượt mở rộng sang các nước khác. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: q6c, text: 新製品は、日本での発売を皮切りに、順次海外でも販売される予定です。, lang: ja }
+        - { id: r1d, text: 新製品は、日本での発売をはじめ、順次海外でも販売される予定です。, lang: ja }
+        - { id: s7e, text: 新製品は、日本での発売を皮切りに、海外でも販売してください。, lang: ja }
+        - { id: t3f, text: 新製品は、日本での発売に皮切って、順次海外でも販売される予定です。, lang: ja }
+    answer:
+      correct_option_id: q6c
+    explanation:
+      vi: Có trình tự "Nhật trước, nước ngoài lần lượt sau" (順次) - を皮切りに. をはじめ không diễn tả trình tự; を皮切りに không đi với lời nhờ ～てください; 皮切って không phải dạng đúng.
+    display_answer: 新製品は、日本での発売を皮切りに、順次海外でも販売される予定です。
+
+  - key: ja:exercise:n1-u7-kawakiri-write-kouen
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-kouen
+    prompt:
+      source_text: Buổi diễn ở Osaka đã bị huỷ vì bão. (dùng 公演)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 台風のため、大阪公演は中止になった。
+        - 台風のため、大阪公演は中止された。
+        - 台風のため、大阪での公演は中止になった。
+        - 台風で、大阪公演は中止になった。
+        - 台風のため、大阪公演は中止になりました。
+        - 台風の影響で、大阪公演は中止になった。
+        - 大阪公演は台風のため中止になった。
+        - たいふうのため、おおさかこうえんはちゅうしになった。
+    known_wrong:
+      - answer: 台風のため、大阪公園は中止になった。
+        feedback_vi: 公園 là công viên. Buổi biểu diễn viết là 公演 - đồng âm khác chữ.
+        error_tag: kanji
+      - answer: 台風のため、大阪講演は中止になった。
+        feedback_vi: 講演 là buổi diễn thuyết; biểu diễn nghệ thuật là 公演.
+        error_tag: kanji
+    explanation:
+      vi: 公演 - buổi biểu diễn; ～のため - vì; 中止になる / 中止される - bị huỷ. Ba từ こうえん (公演, 公園, 講演) đọc giống nhau nên phải nhớ chữ Hán theo nghĩa.
+    display_answer: 台風のため、大阪公演は中止になった。
+
+  - key: ja:exercise:n1-u7-kawakiri-wb-series
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-kawakiri-ni
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mở đầu bằng thông báo của Tokyo, các tỉnh lần lượt quyết định huỷ sự kiện.\""
+      tokens:
+        - { id: k4, text: 次々とイベントの中止を決めた }
+        - { id: k2, text: を皮切りに }
+        - { id: k5, text: を皮切りの }
+        - { id: k1, text: 東京都の発表 }
+        - { id: k3, text: 各県が }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: N を皮切りに + chủ ngữ + 次々と... - mở đầu bằng N, (các bên) lần lượt... を皮切りの không tồn tại nên bị loại.
+    display_answer: 東京都の発表を皮切りに各県が次々とイベントの中止を決めた。

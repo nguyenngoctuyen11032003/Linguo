@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u7-wake-ga-nai
+order_index: 3
+level: n2
+title:
+  vi: Làm gì có chuyện! - ～わけがない (so với わけではない, ないわけにはいかない)
+objectives:
+  - vi: Phủ định mạnh "không đời nào" bằng thể thường + わけがない.
+  - vi: Nối đúng わけがない sau tính từ な và danh từ.
+  - vi: Phân biệt ba mẫu わけがない / わけではない / ないわけにはいかない.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u7-you-ga-nai]
+items:
+  - item: ja:item:n2-u7-gram-wake-ga-nai
+  - item: ja:item:n2-u7-joudan
+  - item: ja:item:n2-u7-honki
+  - item: ja:item:n3-gram-wake-dewa-nai
+    role: reuse
+  - item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn phản bác chắc nịch kiểu "anh ấy làm gì có chuyện nói dối", "rẻ thế này thì không đời nào ngon" - và không còn lẫn với "không hẳn là..." hay "không thể không...".
+  - type: explain
+    text:
+      vi: 'Thể thường + わけがない - "không đời nào..., làm gì có chuyện...". Người nói có lý do chắc chắn nên phủ định 100%: あの真面目な人が嘘をつくわけがない. Hội thoại thân mật hay rút gọn thành わけない.'
+  - type: explain
+    text:
+      vi: 'Cách nối: V/A-い thể thường + わけがない (来るわけがない, 安いわけがない); な-tính từ giữ な (簡単なわけがない); danh từ + の hoặc である (本物のわけがない).'
+  - type: explain
+    text:
+      vi: 'Ba mẫu dễ lẫn: わけがない = chắc chắn không; わけではない = không hẳn là (phủ định một phần - N3); ないわけにはいかない = không thể không làm (nghĩa vụ - N2). Tiếng Việt dịch ba câu này hoàn toàn khác nhau.'
+  - type: deep_explain
+    text:
+      vi: 'はずがない cũng là "không thể có chuyện", nhưng nghiêng về suy luận logic, khách quan (鍵をかけたから、開いているはずがない). わけがない mang cảm xúc, phản bác mạnh hơn, nhất là trong hội thoại: そんなことあるわけないでしょう!'
+  - type: example
+    target: 一度も練習していないのに、上手に弾けるわけがない。
+    target_lang: ja
+    translation:
+      vi: Chưa tập lần nào thì làm gì có chuyện đàn hay được.
+  - type: example
+    target: こんなに安い指輪が、本物のダイヤのわけがない。
+    target_lang: ja
+    translation:
+      vi: Chiếc nhẫn rẻ thế này thì không đời nào là kim cương thật.
+    note:
+      vi: Danh từ + の + わけがない.
+  - type: example
+    target: 冗談だよ。本気で怒るわけないじゃない。
+    target_lang: ja
+    translation:
+      vi: Đùa thôi mà. Làm gì có chuyện mình giận thật.
+    note:
+      vi: Khẩu ngữ - わけない.
+  - type: example
+    target: 甘いものが嫌いなわけではないが、今日はやめておく。
+    target_lang: ja
+    translation:
+      vi: Không phải tôi ghét đồ ngọt, nhưng hôm nay thì thôi.
+    note:
+      vi: わけではない - phủ định một phần, khác hẳn わけがない.
+  - type: common_mistake
+    wrong: この問題は簡単わけがない。
+    right: この問題は簡単なわけがない。
+    target_lang: ja
+    note:
+      vi: Tính từ な phải giữ な trước わけ - 簡単なわけがない.
+  - type: common_mistake
+    wrong: 肉が嫌いなわけがないけど、今日は魚にする。
+    right: 肉が嫌いなわけではないけど、今日は魚にする。
+    target_lang: ja
+    note:
+      vi: Ý "không hẳn là ghét" (phủ định nhẹ) dùng わけではない. わけがない là phủ định tuyệt đối, không đi với vế "nhưng hôm nay thì..." như thế.
+  - type: summary
+    points:
+      - vi: Thể thường + わけがない - không đời nào, làm gì có chuyện (phủ định mạnh).
+      - vi: なA + な / N + の (である) + わけがない.
+      - vi: わけではない - không hẳn là; ないわけにはいかない - không thể không làm.
+      - vi: 冗談 - lời đùa; 本気 - nghiêm túc, thật lòng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u7-wakeganai-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      stem: 'Câu 彼は甘いものが大好きだから、ケーキを断るわけがない。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: a2r, text: Anh ấy rất thích đồ ngọt nên không đời nào từ chối bánh., lang: vi }
+        - { id: e7v, text: Anh ấy rất thích đồ ngọt nhưng không hẳn sẽ nhận bánh., lang: vi }
+        - { id: i3z, text: Anh ấy rất thích đồ ngọt nên không thể không từ chối bánh., lang: vi }
+        - { id: m8d, text: Anh ấy rất thích đồ ngọt nên đã từ chối bánh., lang: vi }
+    answer:
+      correct_option_id: a2r
+    explanation:
+      vi: '断るわけがない - không đời nào từ chối (phủ định mạnh vì có lý do chắc chắn: rất thích đồ ngọt).'
+    display_answer: Anh ấy rất thích đồ ngọt nên không đời nào từ chối bánh.
+
+  - key: ja:exercise:n2-u7-wakeganai-listen-joudan
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-joudan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 会社を辞めるなんて冗談でしょう。部長がそんなことを言うわけがない。
+      options:
+        - { id: b5h, text: "Nghỉ việc á, đùa đấy à. Trưởng phòng làm gì có chuyện nói thế.", lang: vi }
+        - { id: f1l, text: Trưởng phòng đã nói đùa rằng sẽ nghỉ việc., lang: vi }
+        - { id: j6p, text: Trưởng phòng không hẳn đã nói sẽ nghỉ việc., lang: vi }
+        - { id: n2t, text: Trưởng phòng buộc phải nói chuyện nghỉ việc., lang: vi }
+    answer:
+      correct_option_id: b5h
+    explanation:
+      vi: 冗談でしょう - đùa à?; 言うわけがない - làm gì có chuyện nói (phủ định mạnh). Không phải "không hẳn" (わけではない) hay "buộc phải".
+    display_answer: Nghỉ việc á, đùa đấy à. Trưởng phòng làm gì có chuyện nói thế.
+
+  - key: ja:exercise:n2-u7-wakeganai-mcq-three
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-wake-dewa-nai
+    prompt:
+      stem: 'Chọn mẫu đúng: "Không phải tôi không có tiền, chỉ là không muốn mua thôi." お金がない＿＿、買いたくないだけだ。'
+      stem_lang: vi
+      options:
+        - { id: c4w, text: わけではなく, lang: ja }
+        - { id: g9a, text: ことがなく, lang: ja }
+        - { id: k5e, text: わけにはいかなく, lang: ja }
+        - { id: o1i, text: ようがなく, lang: ja }
+    answer:
+      correct_option_id: c4w
+    explanation:
+      vi: '"Không phải là... (mà là...)" - phủ định một phần, dùng わけではなく. ことがなく không nối được với ない như thế, わけにはいかない là "không thể làm", ようがない là "không có cách".'
+    display_answer: わけではなく
+
+  - key: ja:exercise:n2-u7-wakeganai-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      template: "あんなに静かな人が、そんな乱暴なことをする{{b1}}がない。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Người trầm tính như thế làm gì có chuyện làm điều thô bạo như vậy."
+        - "Gợi ý: từ hai chữ kana đi với がない - \"không đời nào\"."
+    answer:
+      blanks:
+        b1: [わけ, 訳, はず]
+    known_wrong:
+      - answer: よう
+        feedback_vi: ようがない là "không có cách nào để làm"; phủ định chắc chắn "không đời nào" dùng わけがない.
+        error_tag: wake_you
+      - answer: こと
+        feedback_vi: ことがない là "chưa từng"; ở đây là phủ định chắc chắn - わけがない.
+        error_tag: wake_koto
+    explanation:
+      vi: 'するわけがない - làm gì có chuyện làm. はずがない cũng đúng nghĩa (suy luận logic). Lý do chắc chắn ở vế trước: あんなに静かな人.'
+    display_answer: あんなに静かな人が、そんな乱暴なことをするわけがない。
+
+  - key: ja:exercise:n2-u7-wakeganai-wb-honki
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-honki
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lần này tôi nghiêm túc. Không phải nói đùa đâu.\""
+      tokens:
+        - { id: h3, text: 冗談じゃないよ }
+        - { id: h1, text: 今回は }
+        - { id: h4, text: 本気がないよ }
+        - { id: h2, text: 本気だ。 }
+    answer:
+      orders:
+        - [h1, h2, h3]
+    explanation:
+      vi: 本気だ - (tôi) nghiêm túc; 冗談じゃない - không phải đùa. 本気がない không phải cách nói tự nhiên ("có/không có nghiêm túc").
+    display_answer: 今回は本気だ。冗談じゃないよ。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u7-wakeganai-fill-na
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      template: "毎日残業している彼が、{{b1}}わけがない。(暇 - rảnh)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [暇な, ひまな]
+    known_wrong:
+      - answer: 暇
+        feedback_vi: Tính từ な phải giữ な trước わけ - 暇なわけがない.
+        error_tag: na_adjective
+      - answer: 暇だ
+        feedback_vi: Trước わけ, だ của tính từ な đổi thành な - 暇なわけがない.
+        error_tag: na_adjective
+    explanation:
+      vi: 暇な + わけがない - làm gì có chuyện rảnh. Ngày nào cũng làm thêm giờ là lý do chắc chắn cho phủ định mạnh.
+    display_answer: 毎日残業している彼が、暇なわけがない。
+
+  - key: ja:exercise:n2-u7-wakeganai-write-uso
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      source_text: Bài thi khó thế kia thì làm gì có chuyện được điểm tuyệt đối. (dùng わけがない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あんなに難しい試験で、満点が取れるわけがない。
+        - あんなに難しい試験で満点を取れるわけがない。
+        - あんなに難しい試験で、満点を取れるわけがない。
+        - あんな難しい試験で、満点が取れるわけがない。
+        - あんなに難しいテストで、満点が取れるわけがない。
+        - あんなに難しい試験で、百点が取れるわけがない。
+        - あんなに難しい試験で、満点が取れるわけがありません。
+        - あんなに難しい試験で、満点なんて取れるわけがない。
+        - あんなにむずかしいしけんで、まんてんがとれるわけがない。
+    known_wrong:
+      - answer: あんなに難しい試験で、満点が取れるわけではない。
+        feedback_vi: わけではない là "không hẳn"; ý "làm gì có chuyện" cần わけがない.
+        error_tag: wake_ga_wa
+      - answer: あんなに難しい試験で、満点が取れわけがない。
+        feedback_vi: わけがない đi sau thể thường hoàn chỉnh - 取れるわけがない.
+        error_tag: wake_form
+    explanation:
+      vi: 満点が取れる - đạt được điểm tuyệt đối (thể khả năng); + わけがない - làm gì có chuyện. あんなに - đến mức kia (chỉ thứ ở xa người nói).
+    display_answer: あんなに難しい試験で、満点が取れるわけがない。
+
+  - key: ja:exercise:n2-u7-wakeganai-write-ikanai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    prompt:
+      source_text: Đã hứa với khách rồi nên không thể không đi. (dùng ないわけにはいかない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お客様と約束したので、行かないわけにはいかない。
+        - お客様と約束したから、行かないわけにはいかない。
+        - お客様と約束したので、行かないわけにはいきません。
+        - お客さんと約束したので、行かないわけにはいかない。
+        - お客様に約束したので、行かないわけにはいかない。
+        - お客様と約束してしまったので、行かないわけにはいかない。
+        - 客と約束したので、行かないわけにはいかない。
+        - おきゃくさまとやくそくしたので、いかないわけにはいかない。
+    known_wrong:
+      - answer: お客様と約束したので、行くわけがない。
+        feedback_vi: 行くわけがない là "làm gì có chuyện đi" - ngược ý. Nghĩa vụ phải đi dùng 行かないわけにはいかない.
+        error_tag: wake_ga_nikanai
+      - answer: お客様と約束したので、行くわけにはいかない。
+        feedback_vi: 行くわけにはいかない là "không thể đi". Cần thể ない - 行かないわけにはいかない.
+        error_tag: nai_form
+    explanation:
+      vi: V-ない + わけにはいかない - không thể không làm (vì nghĩa vụ, lời hứa). Hai lần phủ định thành "buộc phải".
+    display_answer: お客様と約束したので、行かないわけにはいかない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u7-wakeganai-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      source_text: 一年中忙しい母に、旅行する時間があるわけがない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mẹ bận rộn quanh năm thì làm gì có thời gian đi du lịch.
+        - Mẹ tôi bận cả năm thì không đời nào có thời gian đi du lịch.
+        - Mẹ bận rộn suốt năm nên làm gì có thời gian mà đi du lịch.
+        - Mẹ tôi quanh năm bận rộn, làm gì có thời gian đi du lịch.
+        - Người mẹ bận rộn quanh năm thì không thể có thời gian đi du lịch.
+        - Mẹ bận suốt cả năm thì làm gì có thời gian du lịch.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mẹ bận rộn quanh năm nhưng vẫn có thời gian đi du lịch.
+        feedback_vi: あるわけがない là "làm gì có", không phải "vẫn có".
+        error_tag: wake_meaning
+    explanation:
+      vi: 一年中 - quanh năm; 時間があるわけがない - làm gì có thời gian. Phủ định mạnh dựa trên lý do "bận quanh năm".
+    display_answer: Mẹ bận rộn quanh năm thì làm gì có thời gian đi du lịch.
+
+  - key: ja:exercise:n2-u7-wakeganai-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      stem: Bạn thân nghi ngờ bạn lấy bánh của cô ấy trong tủ lạnh. Bạn rất ghét đồ ngọt. Bạn phản bác thế nào cho tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: d6j, text: 甘いものが嫌いな私が、食べるわけないじゃない。, lang: ja }
+        - { id: h1n, text: 甘いものが嫌いな私が、食べるわけではないじゃない。, lang: ja }
+        - { id: l7r, text: 甘いものが嫌いな私が、食べないわけにはいかない。, lang: ja }
+        - { id: p3v, text: 甘いものが嫌いな私が、食べようがないじゃない。, lang: ja }
+    answer:
+      correct_option_id: d6j
+    explanation:
+      vi: 食べるわけない(じゃない) - làm gì có chuyện mình ăn; lý do chắc chắn là ghét đồ ngọt. わけではない là phủ định nhẹ; ないわけにはいかない là "buộc phải ăn"; ようがない là "không có cách ăn" - đều sai ý.
+    display_answer: 甘いものが嫌いな私が、食べるわけないじゃない。
+
+  - key: ja:exercise:n2-u7-wakeganai-write-honmono
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      source_text: Chiếc túi hàng hiệu bán 1000 yên thì làm gì có chuyện là hàng thật. (dùng わけがない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 千円で売っているブランドのバッグが、本物のわけがない。
+        - 千円で売っているブランドのバッグが、本物であるわけがない。
+        - 千円のブランドバッグが、本物のわけがない。
+        - 1000円で売っているブランドのバッグが、本物のわけがない。
+        - 千円で売られているブランドのバッグが、本物のわけがない。
+        - 千円で売っているブランドバッグが本物のわけがない。
+        - 千円のブランドのかばんが、本物のわけがない。
+        - 千円で売っているブランドのバッグが、本物なわけがない。
+        - せんえんでうっているブランドのバッグが、ほんもののわけがない。
+    known_wrong:
+      - answer: 千円で売っているブランドのバッグが、本物わけがない。
+        feedback_vi: Danh từ cần の (hoặc である) trước わけ - 本物のわけがない.
+        error_tag: noun_no
+      - answer: 千円で売っているブランドのバッグが、本物のわけではない。
+        feedback_vi: わけではない là "không hẳn là hàng thật"; ý phủ định chắc chắn cần わけがない.
+        error_tag: wake_ga_wa
+    explanation:
+      vi: 本物 - hàng thật; danh từ + の + わけがない. 本物なわけがない cũng hay gặp trong khẩu ngữ. Giá 1000 yên là lý do chắc chắn.
+    display_answer: 千円で売っているブランドのバッグが、本物のわけがない。
+
+  - key: ja:exercise:n2-u7-wakeganai-wb-ikanai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-wake-ga-nai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Người chưa từng đến Nhật thì làm gì có chuyện biết đường ở Tokyo.\""
+      tokens:
+        - { id: w4, text: 分かるわけがない }
+        - { id: w3, text: 東京の道が }
+        - { id: w5, text: 分かるわけにはいかない }
+        - { id: w1, text: 日本に来たことがない人が }
+    answer:
+      orders:
+        - [w1, w3, w4]
+        - [w3, w1, w4]
+    explanation:
+      vi: 分かるわけがない - làm gì có chuyện biết. 分かるわけにはいかない (không thể biết vì nghĩa vụ) vô nghĩa ở đây. Chủ ngữ và 東京の道が có thể đổi chỗ.
+    display_answer: 日本に来たことがない人が東京の道が分かるわけがない。

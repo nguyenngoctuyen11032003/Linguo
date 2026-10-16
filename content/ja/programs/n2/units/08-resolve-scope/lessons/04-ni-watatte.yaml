@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u8-ni-watatte
+order_index: 4
+level: n2
+title:
+  vi: Suốt, trải khắp, khoảng từ... đến - ～にわたって, ～から～にかけて
+objectives:
+  - vi: Nhấn quy mô lớn của thời gian, phạm vi bằng ～にわたって / にわたる.
+  - vi: Nói phạm vi "khoảng từ... đến..." bằng ～から～にかけて.
+  - vi: Phân biệt から～にかけて (ranh giới mờ) với から～まで (mốc rõ).
+estimated_minutes: 18
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-u8-wa-tomokaku]
+items:
+  - item: ja:item:n2-u8-gram-ni-watatte
+  - item: ja:item:n2-u8-gram-kara-nikakete
+  - item: ja:item:n2-u8-chiiki
+  - item: ja:item:n2-u8-kouji
+  - item: ja:item:kara-made
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu thông báo, dự báo thời tiết kiểu "thi công kéo dài suốt ba tháng", "từ tối nay đến sáng mai có mưa lớn ở khu vực..." - hai mẫu xuất hiện dày đặc trong tin tức.
+  - type: explain
+    text:
+      vi: 'N + にわたって - "suốt (cả)..., trải khắp...". N là một khoảng thời gian, không gian hoặc số lần lớn: 二年にわたって, 全国にわたって, 十回にわたって. Trước danh từ: にわたる - 長期にわたる工事.'
+  - type: explain
+    text:
+      vi: 'N1 から N2 にかけて - "khoảng từ N1 đến N2", ranh giới không rõ ràng: 今夜から明日の朝にかけて雨が降る. Dự báo thời tiết, thông báo giao thông dùng mẫu này rất nhiều.'
+  - type: explain
+    text:
+      vi: 'から～まで (N5) là mốc chính xác: 9時から5時まで. から～にかけて là khoảng ước chừng: 夕方から夜にかけて. Không dùng にかけて cho giờ chính xác (×9時から5時にかけて営業).'
+  - type: deep_explain
+    text:
+      vi: 'にわたって luôn nhấn "quy mô lớn, kéo dài", nên không dùng cho khoảng ngắn bình thường (×五分にわたって). Văn viết hay dùng にわたり: 三日間にわたり開催された. Tiếng Việt "suốt", "trải dài" là sát nghĩa nhất.'
+  - type: example
+    target: 祖父は四十年にわたって、この町で医者を続けた。
+    target_lang: ja
+    translation:
+      vi: Ông tôi đã làm bác sĩ ở thị trấn này suốt bốn mươi năm.
+  - type: example
+    target: 駅前では、半年にわたる道路工事が始まった。
+    target_lang: ja
+    translation:
+      vi: Ở trước nhà ga, công trình làm đường kéo dài nửa năm đã bắt đầu.
+    note:
+      vi: にわたる + danh từ (工事).
+  - type: example
+    target: 今夜から明日の朝にかけて、強い風が吹くでしょう。
+    target_lang: ja
+    translation:
+      vi: Từ tối nay đến sáng mai, có lẽ sẽ có gió mạnh.
+  - type: example
+    target: この地域では、六月から七月にかけて雨が多い。
+    target_lang: ja
+    translation:
+      vi: Ở khu vực này, khoảng từ tháng Sáu đến tháng Bảy mưa nhiều.
+  - type: common_mistake
+    wrong: 授業は五分にわたって休憩した。
+    right: 授業の途中で五分休憩した。
+    target_lang: ja
+    note:
+      vi: にわたって dành cho khoảng thời gian, phạm vi lớn. Năm phút nghỉ là chuyện nhỏ, nói bình thường là đủ.
+  - type: common_mistake
+    wrong: 銀行は午前9時から午後3時にかけて開いています。
+    right: 銀行は午前9時から午後3時まで開いています。
+    target_lang: ja
+    note:
+      vi: Giờ mở cửa là mốc chính xác - dùng から～まで. から～にかけて chỉ khoảng ước chừng, ranh giới mờ.
+  - type: summary
+    points:
+      - vi: N + にわたって / にわたる N - suốt, trải khắp (quy mô lớn).
+      - vi: N1 から N2 にかけて - khoảng từ... đến... (ranh giới mờ).
+      - vi: から～まで - mốc chính xác.
+      - vi: 地域 - khu vực; 工事 - thi công.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u8-watatte-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-ni-watatte
+    prompt:
+      stem: 'Câu この調査は、全国二千人にわたって行われた。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: c5j, text: Cuộc khảo sát này được tiến hành trên diện rộng với 2000 người khắp cả nước., lang: vi }
+        - { id: g1n, text: Cuộc khảo sát này chỉ hỏi 2000 người ở thủ đô., lang: vi }
+        - { id: k6r, text: Cuộc khảo sát này kéo dài 2000 ngày., lang: vi }
+        - { id: o2v, text: 2000 người đã từ chối tham gia khảo sát., lang: vi }
+    answer:
+      correct_option_id: c5j
+    explanation:
+      vi: 全国二千人にわたって - trải khắp 2000 người trên cả nước; にわたって nhấn quy mô rộng.
+    display_answer: Cuộc khảo sát này được tiến hành trên diện rộng với 2000 người khắp cả nước.
+
+  - key: ja:exercise:n2-u8-watatte-listen-kakete
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-kara-nikakete
+    prompt:
+      audio_asset_id: null
+      fallback_text: 明日の昼過ぎから夕方にかけて、雷雨になる所があるでしょう。
+      options:
+        - { id: s7z, text: "Khoảng từ quá trưa đến chiều tối mai, có nơi sẽ có mưa giông.", lang: vi }
+        - { id: w3d, text: Từ đúng 12 giờ đến 6 giờ chiều mai trời nắng., lang: vi }
+        - { id: a8h, text: Mưa giông đã kết thúc vào chiều tối hôm qua., lang: vi }
+        - { id: e4l, text: Cả ngày mai mọi nơi đều có mưa giông., lang: vi }
+    answer:
+      correct_option_id: s7z
+    explanation:
+      vi: 昼過ぎから夕方にかけて - khoảng từ quá trưa đến chiều tối (ranh giới mờ); 雷雨になる所がある - có nơi có mưa giông.
+    display_answer: Khoảng từ quá trưa đến chiều tối mai, có nơi sẽ có mưa giông.
+
+  - key: ja:exercise:n2-u8-watatte-mcq-made
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:kara-made
+    prompt:
+      stem: 'Chọn từ đúng cho biển thông báo: "Quầy mở cửa từ 10 giờ đến 6 giờ." 窓口は10時から6時＿＿開いています。'
+      stem_lang: vi
+      options:
+        - { id: i9p, text: まで, lang: ja }
+        - { id: m5t, text: にかけて, lang: ja }
+        - { id: q1x, text: にわたって, lang: ja }
+        - { id: u6b, text: にわたる, lang: ja }
+    answer:
+      correct_option_id: i9p
+    explanation:
+      vi: Giờ mở cửa là mốc chính xác - から～まで. にかけて chỉ khoảng ước chừng; にわたって / にわたる nhấn quy mô lớn, không hợp với giờ mở cửa.
+    display_answer: まで
+
+  - key: ja:exercise:n2-u8-watatte-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-gram-ni-watatte
+    prompt:
+      template: "会議は三日間{{b1}}開かれ、多くの意見が出された。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Hội nghị được tổ chức suốt ba ngày, nhiều ý kiến đã được đưa ra."
+        - "Gợi ý: mẫu \"suốt (quy mô lớn)\" - dạng văn viết bốn chữ kana, hoặc dạng て."
+    answer:
+      blanks:
+        b1: [にわたり, にわたって]
+    known_wrong:
+      - answer: にかけて
+        feedback_vi: にかけて đi theo cặp から～にかけて; nói "suốt ba ngày" dùng にわたって.
+        error_tag: watatte_kakete
+      - answer: にわたる
+        feedback_vi: にわたる chỉ đứng trước danh từ; trước động từ 開かれ dùng にわたり / にわたって.
+        error_tag: noun_modifier_form
+    explanation:
+      vi: 三日間にわたり / にわたって - suốt ba ngày. にわたり là dạng văn viết.
+    display_answer: 会議は三日間にわたり開かれ、多くの意見が出された。
+
+  - key: ja:exercise:n2-u8-watatte-wb-kouji
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-kouji
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Công trình sẽ tiếp tục đến cuối năm.\""
+      tokens:
+        - { id: k3, text: 続きます }
+        - { id: k1, text: 工事は }
+        - { id: k4, text: 年末にわたって }
+        - { id: k2, text: 年末まで }
+    answer:
+      orders:
+        - [k1, k2, k3]
+    explanation:
+      vi: 年末まで続きます - kéo dài đến cuối năm (mốc kết thúc rõ). にわたって cần một khoảng thời gian (三か月, 二年), không gắn vào một mốc như 年末.
+    display_answer: 工事は年末まで続きます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u8-watatte-fill-kakete
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-nikakete
+    prompt:
+      template: "桜は、三月の終わりから四月の初め{{b1}}見ごろになる。(khoảng đến)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [にかけて]
+    known_wrong:
+      - answer: にわたって
+        feedback_vi: Phạm vi có điểm đầu (から) và điểm cuối mờ - dùng から～にかけて.
+        error_tag: watatte_kakete
+      - answer: かけて
+        feedback_vi: Thiếu に - N にかけて.
+        error_tag: kakete_form
+    explanation:
+      vi: 三月の終わりから四月の初めにかけて - khoảng từ cuối tháng Ba đến đầu tháng Tư; 見ごろ - thời điểm đẹp nhất để ngắm.
+    display_answer: 桜は、三月の終わりから四月の初めにかけて見ごろになる。
+
+  - key: ja:exercise:n2-u8-watatte-write-chiiki
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-chiiki
+    prompt:
+      source_text: Trận động đất đã gây thiệt hại trên một khu vực rộng lớn. (dùng 地域 và にわたって)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 地震は広い地域にわたって被害をもたらした。
+        - 地震は広い地域にわたって被害を与えた。
+        - 地震で広い地域にわたって被害が出た。
+        - 地震によって広い地域にわたって被害が出た。
+        - 地震は広い地域にわたり被害をもたらした。
+        - 地震は広範囲の地域にわたって被害をもたらした。
+        - 地震は広い地域にわたって被害をもたらしました。
+        - 地震で広い地域にわたる被害が出た。
+        - じしんはひろいちいきにわたってひがいをもたらした。
+    known_wrong:
+      - answer: 地震は広い地域にかけて被害をもたらした。
+        feedback_vi: にかけて đi theo cặp から～にかけて; "trải khắp khu vực rộng" dùng にわたって.
+        error_tag: watatte_kakete
+    explanation:
+      vi: 広い地域にわたって - trải khắp khu vực rộng; 被害をもたらす - gây thiệt hại. 地域にわたる被害 (danh từ hoá) cũng đúng.
+    display_answer: 地震は広い地域にわたって被害をもたらした。
+
+  - key: ja:exercise:n2-u8-watatte-write-nagane
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ni-watatte
+    prompt:
+      source_text: Bà ấy đã dạy tiếng Nhật cho người nước ngoài suốt hai mươi năm. (dùng にわたって)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼女は二十年にわたって、外国人に日本語を教えてきた。
+        - 彼女は二十年にわたって外国人に日本語を教えた。
+        - 彼女は二十年にわたり、外国人に日本語を教えてきた。
+        - 彼女は20年にわたって、外国人に日本語を教えてきた。
+        - 彼女は二十年にわたって、外国人に日本語を教えてきました。
+        - 彼女は二十年にわたって、外国の人に日本語を教えてきた。
+        - 彼女は二十年にわたって、外国人に日本語を教えている。
+        - かのじょはにじゅうねんにわたって、がいこくじんににほんごをおしえてきた。
+    known_wrong:
+      - answer: 彼女は二十年にかけて、外国人に日本語を教えてきた。
+        feedback_vi: Một khoảng thời gian dài không có điểm đầu-cuối - dùng にわたって.
+        error_tag: watatte_kakete
+      - answer: 彼女は二十年にわたる、外国人に日本語を教えてきた。
+        feedback_vi: にわたる chỉ đứng trước danh từ; trước động từ dùng にわたって.
+        error_tag: noun_modifier_form
+    explanation:
+      vi: 二十年にわたって - suốt hai mươi năm; 教えてきた - đã dạy (từ trước đến nay).
+    display_answer: 彼女は二十年にわたって、外国人に日本語を教えてきた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u8-watatte-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-nikakete
+    prompt:
+      source_text: 年末から年始にかけて、多くの店が休みになります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khoảng từ cuối năm đến đầu năm mới, nhiều cửa hàng sẽ nghỉ.
+        - Từ cuối năm đến đầu năm, nhiều cửa hàng nghỉ.
+        - Vào khoảng cuối năm đến đầu năm mới, nhiều cửa hàng đóng cửa nghỉ.
+        - Khoảng thời gian từ cuối năm sang đầu năm, nhiều cửa hàng sẽ nghỉ bán.
+        - Từ dịp cuối năm đến đầu năm mới, rất nhiều cửa hàng nghỉ.
+        - Khoảng từ cuối năm cũ đến đầu năm mới, nhiều tiệm sẽ đóng cửa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối năm và đầu năm các cửa hàng mở cửa nhiều hơn.
+        feedback_vi: 休みになる là "nghỉ", không phải "mở cửa".
+        error_tag: meaning
+    explanation:
+      vi: 年末から年始にかけて - khoảng từ cuối năm đến đầu năm mới (ranh giới mờ); 休みになる - được nghỉ, đóng cửa.
+    display_answer: Khoảng từ cuối năm đến đầu năm mới, nhiều cửa hàng sẽ nghỉ.
+
+  - key: ja:exercise:n2-u8-watatte-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ni-watatte
+    prompt:
+      stem: Bạn viết thông báo cho cư dân về công trình sửa đường kéo dài khoảng hai tháng. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: y2f, text: 約二か月にわたって道路工事を行います。ご迷惑をおかけします。, lang: ja }
+        - { id: c7j, text: 約二か月にかけて道路工事を行います。ご迷惑をおかけします。, lang: ja }
+        - { id: g3n, text: 約二か月にわたる道路工事を行いました。ご迷惑をおかけします。, lang: ja }
+        - { id: k8r, text: 約二か月までにわたって道路工事を行います。ご迷惑をおかけします。, lang: ja }
+    answer:
+      correct_option_id: y2f
+    explanation:
+      vi: 二か月にわたって - suốt hai tháng; 行います - sẽ tiến hành. にかけて cần cặp から; 行いました là quá khứ - không hợp thông báo trước; までにわたって sai.
+    display_answer: 約二か月にわたって道路工事を行います。ご迷惑をおかけします。
+
+  - key: ja:exercise:n2-u8-watatte-write-kakete
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u8-gram-kara-nikakete
+    prompt:
+      source_text: Khoảng từ tháng Mười hai đến tháng Hai, vùng này có nhiều tuyết. (dùng から～にかけて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 十二月から二月にかけて、この地域は雪が多い。
+        - 12月から2月にかけて、この地域は雪が多い。
+        - 十二月から二月にかけて、この地域では雪が多い。
+        - 12月から2月にかけて、この地域では雪が多いです。
+        - 十二月から二月にかけて、この地域は雪がたくさん降る。
+        - この地域は、十二月から二月にかけて雪が多い。
+        - この地域では、12月から2月にかけて雪が多く降ります。
+        - 十二月から二月にかけて、この地方は雪が多い。
+        - じゅうにがつからにがつにかけて、このちいきはゆきがおおい。
+    known_wrong:
+      - answer: 十二月から二月にわたって、この地域は雪が多い。
+        feedback_vi: Có điểm đầu (から) và điểm cuối - dùng から～にかけて.
+        error_tag: watatte_kakete
+      - answer: 十二月から二月かけて、この地域は雪が多い。
+        feedback_vi: Thiếu に - 二月にかけて.
+        error_tag: kakete_form
+    explanation:
+      vi: 十二月から二月にかけて - khoảng từ tháng 12 đến tháng 2 (mùa, ranh giới mờ); 雪が多い - nhiều tuyết.
+    display_answer: 十二月から二月にかけて、この地域は雪が多い。
+
+  - key: ja:exercise:n2-u8-watatte-wb-wataru
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ni-watatte
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Sau cuộc điều tra kéo dài nhiều năm, nguyên nhân đã được làm rõ.\""
+      tokens:
+        - { id: w4, text: 原因が明らかになった }
+        - { id: w2, text: 調査の結果、 }
+        - { id: w5, text: 長年にかけての }
+        - { id: w1, text: 長年にわたる }
+    answer:
+      orders:
+        - [w1, w2, w4]
+    explanation:
+      vi: 長年にわたる調査 - cuộc điều tra kéo dài nhiều năm (にわたる + danh từ). 長年にかけて sai vì thiếu cặp から.
+    display_answer: 長年にわたる調査の結果、原因が明らかになった。

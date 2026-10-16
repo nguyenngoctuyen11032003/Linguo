@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u7-wo-fumaete
+order_index: 3
+level: n1
+title:
+  vi: Có tính đến, rút kinh nghiệm từ... - ～を踏まえて, ～を踏まえた
+objectives:
+  - vi: Nói "có tính đến kết quả, ý kiến, bài học..." bằng ～を踏まえて / を踏まえた + N.
+  - vi: Phân biệt を踏まえて với に基づいて (N2).
+  - vi: Viết câu báo cáo, đề xuất theo văn phong trang trọng.
+estimated_minutes: 22
+skills: [grammar, writing]
+prerequisites: [ja:lesson:n1-u7-wo-kawakiri-ni]
+items:
+  - item: ja:item:n1-u7-gram-wo-fumaete
+  - item: ja:item:n1-u7-keii
+  - item: ja:item:n1-u7-kyoukun
+  - item: ja:item:n2-u6-gram-ni-motozuite
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được những câu kiểu báo cáo, kế hoạch như "Có tính đến kết quả khảo sát, chúng tôi đề xuất...", "Rút kinh nghiệm từ thất bại lần trước..." - mẫu xuất hiện rất nhiều trong văn bản công việc và bài đọc N1.
+  - type: explain
+    text:
+      vi: 'N + を踏まえて - "trên cơ sở cân nhắc N, có tính đến N". N là một tiền đề đã có: kết quả, ý kiến, tình hình, bài học (調査結果, 皆さんの意見, 現状, 反省). Trước danh từ dùng を踏まえた: 現状を踏まえた対策.'
+  - type: explain
+    text:
+      vi: '踏まえる nghĩa gốc là "giẫm chắc chân lên". Ý hình ảnh: đặt chân vững trên điều đã biết rồi bước tiếp. Vế sau thường là hành động trí óc - 考える, 検討する, 提案する, 決める, 計画を立てる.'
+  - type: explain
+    text:
+      vi: 'So với に基づいて (N2): に基づいて là làm đúng theo một căn cứ cố định (luật, dữ liệu, quy định); を踏まえて là tiếp thu, cân nhắc một tiền đề rồi tự suy nghĩ, phát triển thêm. 法律に基づいて処分する nhưng 前回の失敗を踏まえて計画を見直す.'
+  - type: deep_explain
+    text:
+      vi: 'Tiếng Việt hay nói "dựa trên" cho cả hai, nên người Việt dễ dùng lẫn. Mẹo: nếu thay được bằng "rút kinh nghiệm từ / có xét đến" thì là を踏まえて; nếu thay được bằng "căn cứ theo đúng" thì là に基づいて. を踏まえて gần như chỉ dùng trong văn trang trọng, hội thoại công việc lịch sự.'
+  - type: example
+    target: アンケート結果を踏まえて、来年度の計画を立てます。
+    target_lang: ja
+    translation:
+      vi: Có tính đến kết quả khảo sát, chúng tôi sẽ lập kế hoạch cho năm tới.
+  - type: example
+    target: 前回の反省を踏まえ、今回は準備に時間をかけた。
+    target_lang: ja
+    translation:
+      vi: Rút kinh nghiệm từ lần trước, lần này chúng tôi dành nhiều thời gian chuẩn bị.
+    note:
+      vi: 踏まえ - dạng văn viết của 踏まえて.
+  - type: example
+    target: 地域の実情を踏まえた支援が求められている。
+    target_lang: ja
+    translation:
+      vi: Cần có sự hỗ trợ sát với tình hình thực tế của địa phương.
+  - type: example
+    target: 事故に至った経緯を詳しく調べる必要がある。
+    target_lang: ja
+    translation:
+      vi: Cần điều tra kỹ đầu đuôi dẫn đến vụ tai nạn.
+  - type: common_mistake
+    wrong: 交通ルールを踏まえて、赤信号で止まった。
+    right: 交通ルールに従って、赤信号で止まった。
+    target_lang: ja
+    note:
+      vi: Dừng đèn đỏ là làm đúng theo quy tắc - dùng に従って (hoặc に基づいて). を踏まえて dùng cho việc cân nhắc, suy nghĩ dựa trên tiền đề.
+  - type: common_mistake
+    wrong: 専門家の意見を踏まえる提案をまとめた。
+    right: 専門家の意見を踏まえた提案をまとめた。
+    target_lang: ja
+    note:
+      vi: Trước danh từ (提案) dùng dạng た - を踏まえた. Dạng từ điển 踏まえる + N nghe không tự nhiên.
+  - type: summary
+    points:
+      - vi: N + を踏まえて / を踏まえ - có tính đến, rút kinh nghiệm từ N.
+      - vi: N + を踏まえた + N - N được xây dựng trên cơ sở ~.
+      - vi: に基づいて - căn cứ đúng theo (luật, dữ liệu); を踏まえて - cân nhắc rồi phát triển.
+      - vi: 経緯 - đầu đuôi sự việc · 教訓 - bài học kinh nghiệm.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u7-fumaete-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      stem: Câu 「住民の要望を踏まえて、公園の設計を一部変更した。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a8k, text: "Có tính đến nguyện vọng của cư dân, chúng tôi đã thay đổi một phần thiết kế công viên.", lang: vi }
+        - { id: b3m, text: "Bất chấp nguyện vọng của cư dân, thiết kế công viên vẫn giữ nguyên.", lang: vi }
+        - { id: c7n, text: Cư dân đã tự thay đổi thiết kế công viên., lang: vi }
+        - { id: d1p, text: Thiết kế công viên được giữ bí mật với cư dân., lang: vi }
+    answer:
+      correct_option_id: a8k
+    explanation:
+      vi: 要望を踏まえて - có tính đến nguyện vọng; 一部変更した - đã thay đổi một phần. を踏まえて là tiếp thu tiền đề, ngược với "bất chấp".
+    display_answer: Có tính đến nguyện vọng của cư dân, chúng tôi đã thay đổi một phần thiết kế công viên.
+
+  - key: ja:exercise:n1-u7-fumaete-listen-kyoukun
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-kyoukun
+    prompt:
+      audio_asset_id: null
+      fallback_text: 震災の教訓を踏まえ、市は避難所の数を増やした。
+      options:
+        - { id: e2q, text: "Rút kinh nghiệm từ trận động đất, thành phố đã tăng số nơi lánh nạn.", lang: vi }
+        - { id: f6r, text: "Vì trận động đất, thành phố đã đóng cửa các nơi lánh nạn.", lang: vi }
+        - { id: g9s, text: Thành phố đã quên bài học từ trận động đất., lang: vi }
+        - { id: h4t, text: Thành phố đang dạy học sinh về động đất., lang: vi }
+    answer:
+      correct_option_id: e2q
+    explanation:
+      vi: 震災の教訓 - bài học từ thảm hoạ động đất; 踏まえ - dạng văn viết của 踏まえて; 避難所を増やした - tăng nơi lánh nạn. 教訓 là "bài học kinh nghiệm", không phải "dạy học".
+    display_answer: Rút kinh nghiệm từ trận động đất, thành phố đã tăng số nơi lánh nạn.
+
+  - key: ja:exercise:n1-u7-fumaete-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u6-gram-ni-motozuite
+    prompt:
+      stem: 'Chọn từ hợp nhất: 違反した社員は、就業規則 ＿＿ 処分される。 ("Nhân viên vi phạm sẽ bị xử lý căn cứ theo nội quy lao động.")'
+      stem_lang: vi
+      options:
+        - { id: i6u, text: に基づいて, lang: ja }
+        - { id: j1v, text: を皮切りに, lang: ja }
+        - { id: k5w, text: にあるまじき, lang: ja }
+        - { id: l9x, text: を踏まえた, lang: ja }
+    answer:
+      correct_option_id: i6u
+    explanation:
+      vi: Xử lý đúng theo một quy định cố định - に基づいて. を皮切りに là mở màn; にあるまじき cần danh từ đi sau; を踏まえた phải đứng trước danh từ, không đứng trước động từ 処分される.
+    display_answer: に基づいて
+
+  - key: ja:exercise:n1-u7-fumaete-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      template: "今年の売り上げ不振{{b1}}、来年は販売方法を見直すことにした。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Có xét đến việc doanh thu năm nay kém, năm sau chúng tôi quyết định xem lại cách bán hàng."
+        - "Gợi ý: を + động từ 踏まえる ở dạng nối câu."
+    answer:
+      blanks:
+        b1: [を踏まえて, をふまえて, を踏まえ, をふまえ]
+    known_wrong:
+      - answer: を踏まえた
+        feedback_vi: を踏まえた đứng trước danh từ; ở đây phía sau là cả một vế câu - dùng を踏まえて.
+        error_tag: fumaete_form
+      - answer: を皮切りに
+        feedback_vi: を皮切りに là mở màn một chuỗi sự việc; ở đây là cân nhắc kết quả kém để thay đổi - を踏まえて.
+        error_tag: fumaete_kawakiri
+    explanation:
+      vi: 売り上げ不振を踏まえて - có xét đến doanh thu kém; 見直すことにした - quyết định xem lại. Vế sau là quyết định sau khi cân nhắc - đúng chỗ của を踏まえて.
+    display_answer: 今年の売り上げ不振を踏まえて、来年は販売方法を見直すことにした。
+
+  - key: ja:exercise:n1-u7-fumaete-mcq-keii
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-keii
+    prompt:
+      stem: Trong câu 「会見で社長は、契約が破棄された経緯を説明した。」, 経緯 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: m3y, text: "đầu đuôi, quá trình diễn biến của sự việc", lang: vi }
+        - { id: n8z, text: số tiền bồi thường, lang: vi }
+        - { id: o2a, text: kinh độ và vĩ độ, lang: vi }
+        - { id: p7b, text: người chịu trách nhiệm, lang: vi }
+    answer:
+      correct_option_id: m3y
+    explanation:
+      vi: 経緯 - đầu đuôi sự việc (quá trình dẫn đến kết quả); 破棄される - bị huỷ bỏ. Nghĩa "kinh độ, vĩ độ" là 経度・緯度, không phải nghĩa trong tin tức.
+    display_answer: đầu đuôi, quá trình diễn biến của sự việc
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u7-fumaete-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      template: "参加者の感想を{{b1}}改善案を、来週までに提出してください。(có tính đến - trước danh từ)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [踏まえた, ふまえた]
+    known_wrong:
+      - answer: 踏まえて
+        feedback_vi: Ngay trước danh từ 改善案 dùng 踏まえた.
+        error_tag: fumaete_form
+      - answer: 踏まえる
+        feedback_vi: Trước danh từ, mẫu này dùng dạng た - 踏まえた.
+        error_tag: fumaete_form
+    explanation:
+      vi: N を踏まえた + N - N được xây dựng có tính đến ~. 感想を踏まえた改善案 - phương án cải thiện có tính đến cảm nhận của người tham gia.
+    display_answer: 参加者の感想を踏まえた改善案を、来週までに提出してください。
+
+  - key: ja:exercise:n1-u7-fumaete-write-fumaete
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      source_text: Có tính đến ý kiến của khách hàng, chúng tôi đã thay đổi bao bì sản phẩm. (dùng を踏まえて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お客様の意見を踏まえて、商品のパッケージを変更しました。
+        - お客様の意見を踏まえて、商品のパッケージを変えました。
+        - お客様のご意見を踏まえて、商品のパッケージを変更しました。
+        - お客様の意見を踏まえ、商品のパッケージを変更しました。
+        - 顧客の意見を踏まえて、商品のパッケージを変更した。
+        - お客様の声を踏まえて、商品のパッケージを変更しました。
+        - お客様の意見を踏まえて、製品のパッケージを変更しました。
+        - お客様の意見を踏まえて、商品の包装を変更しました。
+        - おきゃくさまのいけんをふまえて、しょうひんのパッケージをへんこうしました。
+    known_wrong:
+      - answer: お客様の意見を踏まえた、商品のパッケージを変更しました。
+        feedback_vi: Trước vế câu dùng 踏まえて; 踏まえた chỉ nối trực tiếp vào danh từ.
+        error_tag: fumaete_form
+      - answer: お客様の意見に踏まえて、商品のパッケージを変更しました。
+        feedback_vi: 踏まえる là ngoại động từ - đi với を (意見を踏まえて).
+        error_tag: particle
+    explanation:
+      vi: N を踏まえて + V - làm V có tính đến N. ご意見 / 声 là cách nói lịch sự về ý kiến khách hàng; 変更する trang trọng hơn 変える.
+    display_answer: お客様の意見を踏まえて、商品のパッケージを変更しました。
+
+  - key: ja:exercise:n1-u7-fumaete-write-keii
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-keii
+    prompt:
+      source_text: Xin hãy báo cáo đầu đuôi sự việc bằng văn bản. (dùng 経緯)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 事件の経緯を文書で報告してください。
+        - 経緯を文書で報告してください。
+        - これまでの経緯を文書で報告してください。
+        - 経緯を書面で報告してください。
+        - 経緯を書面でご報告ください。
+        - 事の経緯を文書で報告してください。
+        - 経緯を文書にして報告してください。
+        - 経緯を文書で報告して下さい。
+        - けいいをぶんしょでほうこくしてください。
+    known_wrong:
+      - answer: 理由を文書で報告してください。
+        feedback_vi: 理由 chỉ là lý do; đầu đuôi, cả quá trình là 経緯.
+        error_tag: vocab_meaning
+      - answer: 経緯に文書で報告してください。
+        feedback_vi: 経緯 là tân ngữ của 報告する - dùng を.
+        error_tag: particle
+    explanation:
+      vi: 経緯を報告する - báo cáo đầu đuôi; 文書で / 書面で - bằng văn bản. Người Nhật hay nói これまでの経緯 (diễn biến từ trước tới nay) khi bàn giao công việc.
+    display_answer: 経緯を文書で報告してください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u7-fumaete-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      source_text: 高齢化の現状を踏まえた街づくりが急がれている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Việc xây dựng đô thị có tính đến thực trạng già hoá dân số đang rất cấp bách.
+        - Cần gấp rút xây dựng đô thị phù hợp với thực trạng già hoá dân số.
+        - Việc quy hoạch thành phố có xét đến hiện trạng già hoá đang được đẩy nhanh.
+        - Quy hoạch đô thị dựa trên thực trạng già hoá dân số đang là việc cấp bách.
+        - Việc xây dựng thành phố có tính đến tình trạng già hoá dân số hiện nay đang cấp bách.
+        - Cần khẩn trương xây dựng đô thị có tính đến thực trạng già hoá dân số.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Việc xây dựng đô thị đã làm dân số già đi nhanh hơn.
+        feedback_vi: を踏まえた là "có tính đến" thực trạng, không phải nguyên nhân gây ra già hoá.
+        error_tag: meaning
+    explanation:
+      vi: 高齢化の現状を踏まえた街づくり - xây dựng đô thị có tính đến thực trạng già hoá; 急がれている - đang được thúc giục, là việc cấp bách.
+    display_answer: Việc xây dựng đô thị có tính đến thực trạng già hoá dân số đang rất cấp bách.
+
+  - key: ja:exercise:n1-u7-fumaete-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      stem: Trong cuộc họp, bạn đề xuất lập lại kế hoạch sau khi rút kinh nghiệm từ sự cố tháng trước. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: q4c, text: 先月のトラブルを踏まえて、計画を立て直してはいかがでしょうか。, lang: ja }
+        - { id: r9d, text: 先月のトラブルを皮切りに、計画を立て直してはいかがでしょうか。, lang: ja }
+        - { id: s3e, text: 先月のトラブルにあるまじき、計画を立て直してはいかがでしょうか。, lang: ja }
+        - { id: t8f, text: 先月のトラブルを踏まえる、計画を立て直してはいかがでしょうか。, lang: ja }
+    answer:
+      correct_option_id: q4c
+    explanation:
+      vi: Rút kinh nghiệm từ sự cố rồi lập lại kế hoạch - を踏まえて, kèm lời đề xuất lịch sự ～てはいかがでしょうか. を皮切りに là mở màn một chuỗi; にあるまじき cần danh từ; 踏まえる không nối vế câu như thế.
+    display_answer: 先月のトラブルを踏まえて、計画を立て直してはいかがでしょうか。
+
+  - key: ja:exercise:n1-u7-fumaete-write-kyoukun
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-kyoukun
+    prompt:
+      source_text: Chúng ta cần vận dụng bài học từ thất bại này vào dự án tiếp theo. (dùng 教訓)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この失敗の教訓を次のプロジェクトに生かす必要がある。
+        - この失敗の教訓を、次のプロジェクトに生かす必要がある。
+        - この失敗から得た教訓を次のプロジェクトに生かす必要がある。
+        - この失敗の教訓を次のプロジェクトに生かさなければならない。
+        - この失敗の教訓を次のプロジェクトに活かす必要がある。
+        - この失敗の教訓を次のプロジェクトに生かす必要があります。
+        - 私たちはこの失敗の教訓を次のプロジェクトに生かす必要がある。
+        - 今回の失敗の教訓を次のプロジェクトに生かす必要がある。
+        - このしっぱいのきょうくんをつぎのプロジェクトにいかすひつようがある。
+    known_wrong:
+      - answer: この失敗の教訓を次のプロジェクトを生かす必要がある。
+        feedback_vi: Nơi vận dụng bài học đi với に - 次のプロジェクトに生かす.
+        error_tag: particle
+      - answer: この失敗の授業を次のプロジェクトに生かす必要がある。
+        feedback_vi: 授業 là giờ học trên lớp; bài học kinh nghiệm là 教訓.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 教訓を生かす / 活かす - vận dụng bài học kinh nghiệm; N に生かす - vận dụng vào N. 必要がある - cần phải.
+    display_answer: この失敗の教訓を次のプロジェクトに生かす必要がある。
+
+  - key: ja:exercise:n1-u7-fumaete-wb-plan
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-wo-fumaete
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ban lãnh đạo đã công bố chiến lược mới có tính đến tình hình thị trường.\""
+      tokens:
+        - { id: f4, text: 新しい戦略を発表した }
+        - { id: f2, text: 市場の動向を }
+        - { id: f5, text: 踏まえる }
+        - { id: f1, text: 経営陣は }
+        - { id: f3, text: 踏まえた }
+    answer:
+      orders:
+        - [f1, f2, f3, f4]
+    explanation:
+      vi: N を踏まえた + 新しい戦略 - chiến lược mới có tính đến N. Trước danh từ dùng dạng た, nên 踏まえる bị loại.
+    display_answer: 経営陣は市場の動向を踏まえた新しい戦略を発表した。

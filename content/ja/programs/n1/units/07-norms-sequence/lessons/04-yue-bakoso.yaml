@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u7-yue-bakoso
+order_index: 4
+level: n1
+title:
+  vi: Vì..., chính vì... nên mới - ～ゆえ(に), ～ばこそ
+objectives:
+  - vi: Nêu nguyên nhân trong văn viết trang trọng bằng ～ゆえ(に) / ゆえの + N.
+  - vi: Nhấn mạnh lý do tích cực bằng ～ばこそ.
+  - vi: Phân biệt ばこそ với からこそ và ゆえ với から / ので.
+estimated_minutes: 24
+skills: [grammar, reading, writing]
+prerequisites: [ja:lesson:n1-u7-wo-fumaete]
+items:
+  - item: ja:item:n1-u7-gram-yue
+  - item: ja:item:n1-u7-gram-bakoso
+  - item: ja:item:n1-u7-hinkon
+  - item: ja:item:n1-u7-kugen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu các câu lý do kiểu văn viết như "Chính vì nghèo nên...", "sai lầm do tuổi trẻ" và nói được câu giải thích sâu sắc "Chính vì nghĩ cho em nên anh mới nói thẳng".
+  - type: explain
+    text:
+      vi: '～ゆえ(に) - "vì, do", bản văn viết cổ của から / ので. Cách nối: N + ゆえ / N + の + ゆえ, thể thường + (が)ゆえに: 貧しいがゆえに, 若さゆえに. Trước danh từ là ゆえの: 若さゆえの過ち (lỗi lầm do tuổi trẻ).'
+  - type: explain
+    text:
+      vi: '～ばこそ - "chính vì... nên mới...". Lấy thể ば rồi thêm こそ: 思えばこそ, 健康であればこそ. Thường giải thích một hành động nghe ngược đời (nghiêm khắc, nói thẳng) bằng một lý do tốt đẹp, và hay kết bằng のだ / のです.'
+  - type: deep_explain
+    text:
+      vi: 'Mức trang trọng: から < ので < ため < ゆえに. Còn ばこそ là bản văn chương của からこそ (N3): あなたを信じているからこそ = あなたを信じていればこそ. Cả hai nhấn lý do tích cực; với lý do tiêu cực, cách nói tự nhiên là ので / ため.'
+  - type: example
+    target: 責任ある立場ゆえに、軽はずみな発言は許されない。
+    target_lang: ja
+    translation:
+      vi: Vì ở vị trí có trách nhiệm nên không được phép phát ngôn bừa bãi.
+    note:
+      vi: N + ゆえに.
+  - type: example
+    target: あれは若さゆえの過ちだったと、今では思う。
+    target_lang: ja
+    translation:
+      vi: Bây giờ tôi nghĩ đó là sai lầm do tuổi trẻ.
+    note:
+      vi: ゆえの + N.
+  - type: example
+    target: 君の将来を思えばこそ、厳しいことを言うのだ。
+    target_lang: ja
+    translation:
+      vi: Chính vì nghĩ cho tương lai của em nên tôi mới nói những lời nghiêm khắc.
+  - type: example
+    target: 家族の支えがあればこそ、ここまで頑張ってこられた。
+    target_lang: ja
+    translation:
+      vi: Chính vì có gia đình ở bên nên tôi mới cố gắng được đến hôm nay.
+  - type: example
+    target: 部長はあえて部下に苦言を呈した。
+    target_lang: ja
+    translation:
+      vi: Trưởng phòng đã cố ý góp ý thẳng thắn với cấp dưới.
+  - type: common_mistake
+    wrong: 頭が痛いゆえに、今日は休むね。
+    right: 頭が痛いから、今日は休むね。
+    target_lang: ja
+    note:
+      vi: ゆえに là văn viết cổ; trong câu nói thân mật nghe rất buồn cười. Hội thoại dùng から / ので.
+  - type: common_mistake
+    wrong: 雨が降っていればこそ、試合は中止になった。
+    right: 雨が降っていたので、試合は中止になった。
+    target_lang: ja
+    note:
+      vi: ばこそ nhấn lý do tốt đẹp, có ý "chính nhờ / chính vì nghĩ cho...". Nguyên nhân khách quan, tiêu cực như trời mưa dùng ので / ため.
+  - type: summary
+    points:
+      - vi: N(の) / thể thường(が) + ゆえ(に) - vì (văn viết); ゆえの + N.
+      - vi: V-ば / A-ければ / Nであれば + こそ - chính vì... nên mới... (lý do tích cực).
+      - vi: ばこそ ≈ からこそ nhưng trang trọng, văn chương hơn.
+      - vi: 貧困 - nghèo đói · 苦言 - lời góp ý thẳng thắn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u7-yue-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-gram-bakoso
+    prompt:
+      stem: Câu 「選手を信頼していればこそ、監督は何も言わずに任せたのだ。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a2k, text: Chính vì tin tưởng các cầu thủ nên huấn luyện viên mới giao phó mà không nói gì., lang: vi }
+        - { id: b7m, text: Huấn luyện viên không tin cầu thủ nên không nói gì với họ., lang: vi }
+        - { id: c3n, text: Nếu tin cầu thủ thì huấn luyện viên nên nói nhiều hơn., lang: vi }
+        - { id: d8p, text: Cầu thủ tin huấn luyện viên nên làm theo mọi lời ông nói., lang: vi }
+    answer:
+      correct_option_id: a2k
+    explanation:
+      vi: 信頼していればこそ - chính vì tin tưởng (lý do tích cực); 任せたのだ - đã giao phó. ばこそ không phải câu điều kiện "nếu... thì nên".
+    display_answer: Chính vì tin tưởng các cầu thủ nên huấn luyện viên mới giao phó mà không nói gì.
+
+  - key: ja:exercise:n1-u7-yue-listen-hinkon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-hinkon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 貧困ゆえに、学校に通えない子どもが今も大勢いる。
+      options:
+        - { id: e5q, text: "Vì nghèo đói, đến nay vẫn có rất nhiều trẻ em không được đi học.", lang: vi }
+        - { id: f1r, text: "Dù nghèo, trẻ em ở đây vẫn được đi học đầy đủ.", lang: vi }
+        - { id: g6s, text: Trường học đang giúp trẻ em thoát nghèo., lang: vi }
+        - { id: h2t, text: Số trẻ em nghèo đã giảm mạnh., lang: vi }
+    answer:
+      correct_option_id: e5q
+    explanation:
+      vi: 貧困ゆえに - vì nghèo đói; 通えない - không thể đi học; 今も大勢いる - đến nay vẫn còn nhiều. ゆえに nêu nguyên nhân, không phải nhượng bộ "dù".
+    display_answer: Vì nghèo đói, đến nay vẫn có rất nhiều trẻ em không được đi học.
+
+  - key: ja:exercise:n1-u7-yue-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-yue
+    prompt:
+      stem: 'Chọn dạng đúng: これは経験不足 ＿＿ 失敗だった。 ("Đây là thất bại do thiếu kinh nghiệm.")'
+      stem_lang: vi
+      options:
+        - { id: i9u, text: ゆえの, lang: ja }
+        - { id: j4v, text: ゆえに, lang: ja }
+        - { id: k8w, text: ばこその, lang: ja }
+        - { id: l3x, text: ゆえな, lang: ja }
+    answer:
+      correct_option_id: i9u
+    explanation:
+      vi: Đứng trước danh từ 失敗 dùng ゆえの. ゆえに nối vế câu; ばこそ gắn vào thể ば, không gắn trực tiếp vào danh từ; ゆえな không tồn tại.
+    display_answer: ゆえの
+
+  - key: ja:exercise:n1-u7-yue-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-bakoso
+    prompt:
+      template: "子どもを愛して{{b1}}、親は時に厳しく叱るのだ。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Chính vì yêu con nên đôi khi cha mẹ mới mắng nghiêm khắc."
+        - "Gợi ý: いる ở thể ば + こそ."
+    answer:
+      blanks:
+        b1: [いればこそ]
+    known_wrong:
+      - answer: いるこそ
+        feedback_vi: こそ trong mẫu này gắn vào thể ば - いればこそ.
+        error_tag: bakoso_form
+      - answer: いるゆえ
+        feedback_vi: ゆえ nêu nguyên nhân khách quan; nhấn "chính vì yêu nên mới..." dùng ばこそ.
+        error_tag: bakoso_yue
+    explanation:
+      vi: 愛している → 愛していれば → 愛していればこそ. Hành động "mắng nghiêm" nghe ngược đời được giải thích bằng lý do tốt đẹp - đúng chức năng của ばこそ, và câu kết bằng のだ.
+    display_answer: 子どもを愛していればこそ、親は時に厳しく叱るのだ。
+
+  - key: ja:exercise:n1-u7-yue-mcq-kugen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u7-kugen
+    prompt:
+      stem: Câu 「恩師は私の甘い計画に苦言を呈した。」 nghĩa gần nhất là gì?
+      stem_lang: vi
+      options:
+        - { id: m7y, text: Người thầy cũ đã thẳng thắn góp ý về kế hoạch còn dễ dãi của tôi., lang: vi }
+        - { id: n2z, text: Người thầy cũ đã khen kế hoạch của tôi., lang: vi }
+        - { id: o6a, text: Người thầy cũ đã nói xấu tôi với người khác., lang: vi }
+        - { id: p1b, text: Người thầy cũ đã tặng tôi một bản kế hoạch., lang: vi }
+    answer:
+      correct_option_id: m7y
+    explanation:
+      vi: 苦言を呈する - thẳng thắn góp ý những điều khó nghe (với thiện ý); 甘い計画 - kế hoạch dễ dãi, thiếu chặt chẽ. Không phải khen hay nói xấu.
+    display_answer: Người thầy cũ đã thẳng thắn góp ý về kế hoạch còn dễ dãi của tôi.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u7-yue-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u7-gram-yue
+    prompt:
+      template: "この地域は交通が不便{{b1}}、若者が都市に流出している。(vì - văn viết)"
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [であるがゆえに, なるがゆえに, ゆえに]
+    known_wrong:
+      - answer: ゆえの
+        feedback_vi: ゆえの đứng trước danh từ; ở đây phía sau là cả vế câu - であるがゆえに.
+        error_tag: yue_form
+      - answer: であればこそ
+        feedback_vi: Giao thông bất tiện là nguyên nhân tiêu cực; ばこそ dành cho lý do tốt đẹp.
+        error_tag: bakoso_yue
+    explanation:
+      vi: 不便 + であるがゆえに - vì bất tiện (văn viết). Với tính từ đuôi な có ba cách - 不便であるがゆえに, 不便なるがゆえに (cổ hơn) hoặc gọn 不便ゆえに. 流出 - chảy ra, ở đây là người trẻ rời đi.
+    display_answer: この地域は交通が不便であるがゆえに、若者が都市に流出している。
+
+  - key: ja:exercise:n1-u7-yue-write-bakoso
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-bakoso
+    prompt:
+      source_text: Chính vì có khách hàng ủng hộ nên công ty mới tồn tại được. (dùng ばこそ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お客様の支えがあればこそ、会社は存続できるのだ。
+        - お客様の支えがあればこそ、会社は存続できる。
+        - お客様の支持があればこそ、会社は存続できるのだ。
+        - お客様の支えがあればこそ、会社は続けられるのだ。
+        - お客様の応援があればこそ、会社は存続できるのです。
+        - お客様の支えがあればこそ、会社が存続できるのだ。
+        - お客様が支えてくださればこそ、会社は存続できるのだ。
+        - 顧客の支持があればこそ、会社は存続できるのだ。
+        - おきゃくさまのささえがあればこそ、かいしゃはそんぞくできるのだ。
+    known_wrong:
+      - answer: お客様の支えがあるこそ、会社は存続できるのだ。
+        feedback_vi: こそ trong mẫu này đi sau thể ば - あればこそ.
+        error_tag: bakoso_form
+      - answer: お客様の支えがあればこそ、会社は倒産したのだ。
+        feedback_vi: ばこそ nêu lý do tốt dẫn tới kết quả tốt; "phá sản" ngược nghĩa câu gốc.
+        error_tag: meaning
+    explanation:
+      vi: 支えがある → 支えがあれば → 支えがあればこそ - chính vì có sự ủng hộ; 存続できる - có thể tồn tại. のだ ở cuối nhấn giọng giải thích.
+    display_answer: お客様の支えがあればこそ、会社は存続できるのだ。
+
+  - key: ja:exercise:n1-u7-yue-write-yue
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-yue
+    prompt:
+      source_text: Vì là sản phẩm làm thủ công nên giá thành cao. (văn viết, dùng ゆえに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 手作りの製品であるがゆえに、価格が高い。
+        - 手作りの製品であるがゆえに、値段が高い。
+        - 手作りの製品ゆえに、価格が高い。
+        - 手作りの製品であるゆえに、価格が高い。
+        - 手作りであるがゆえに、価格が高い。
+        - 手作り品であるがゆえに、価格が高い。
+        - 手作りの製品であるがゆえに、価格が高くなる。
+        - 手作りの商品であるがゆえに、価格が高い。
+        - てづくりのせいひんであるがゆえに、かかくがたかい。
+    known_wrong:
+      - answer: 手作りの製品ゆえの、価格が高い。
+        feedback_vi: ゆえの chỉ đứng ngay trước danh từ (ゆえの高価格); trước cả vế câu dùng ゆえに.
+        error_tag: yue_form
+      - answer: 手作りの製品であればこそ、価格が高い。
+        feedback_vi: Giá cao không phải lý do tốt đẹp cần nhấn "chính vì... mới"; nêu nguyên nhân khách quan dùng ゆえに.
+        error_tag: bakoso_yue
+    explanation:
+      vi: N + であるがゆえに / N + ゆえに - vì là N (văn viết). 価格 trang trọng hơn 値段 - hợp văn phong của ゆえに.
+    display_answer: 手作りの製品であるがゆえに、価格が高い。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u7-yue-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u7-gram-yue
+    prompt:
+      source_text: 便利さゆえに、私たちは多くのものを失っているのかもしれない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có lẽ chính vì sự tiện lợi mà chúng ta đang đánh mất nhiều thứ.
+        - Vì sự tiện lợi, có lẽ chúng ta đang mất đi nhiều thứ.
+        - Có thể vì tiện lợi mà chúng ta đang đánh mất rất nhiều điều.
+        - Có lẽ do sự tiện lợi nên chúng ta đang mất đi nhiều thứ.
+        - Có lẽ vì sự tiện lợi mà chúng ta đang đánh mất nhiều thứ.
+        - Chúng ta có lẽ đang đánh mất nhiều thứ vì sự tiện lợi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhờ sự tiện lợi, chúng ta đã có thêm nhiều thứ.
+        feedback_vi: 失っている là "đang đánh mất", không phải "có thêm".
+        error_tag: meaning
+    explanation:
+      vi: 便利さゆえに - vì sự tiện lợi; 失っている - đang đánh mất; かもしれない - có lẽ. Kiểu câu suy ngẫm hay gặp trong tiểu luận N1.
+    display_answer: Có lẽ chính vì sự tiện lợi mà chúng ta đang đánh mất nhiều thứ.
+
+  - key: ja:exercise:n1-u7-yue-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-bakoso
+    prompt:
+      stem: Đàn em hỏi vì sao bạn luôn góp ý gay gắt bài thuyết trình của họ. Bạn muốn giải thích "Chính vì kỳ vọng ở em nên anh mới nói thẳng". Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: q5c, text: 君に期待していればこそ、はっきり言うんだよ。, lang: ja }
+        - { id: r1d, text: 君に期待しているゆえの、はっきり言うんだよ。, lang: ja }
+        - { id: s6e, text: 君に期待していればこその、はっきり言うんだよ。, lang: ja }
+        - { id: t2f, text: 君に期待するばこそ、はっきり言うんだよ。, lang: ja }
+    answer:
+      correct_option_id: q5c
+    explanation:
+      vi: 期待している → 期待していればこそ - chính vì kỳ vọng. ゆえの / ばこその phải đứng trước danh từ; 期待するばこそ sai cách chia (thể ば của する là すれば).
+    display_answer: 君に期待していればこそ、はっきり言うんだよ。
+
+  - key: ja:exercise:n1-u7-yue-write-kugen
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-kugen
+    prompt:
+      source_text: Có lúc cần dám thẳng thắn góp ý với cấp trên. (dùng 苦言を呈する)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 時には上司に苦言を呈することも必要だ。
+        - 時には上司に苦言を呈することも必要です。
+        - 時には、上司に苦言を呈することも必要だ。
+        - 時には上司にあえて苦言を呈することも必要だ。
+        - 時に上司に苦言を呈することも必要だ。
+        - 上司に苦言を呈することも、時には必要だ。
+        - 時には上司に苦言を呈する必要がある。
+        - ときにはじょうしにくげんをていすることもひつようだ。
+    known_wrong:
+      - answer: 時には上司を苦言を呈することも必要だ。
+        feedback_vi: Người nhận lời góp ý đi với に - 上司に苦言を呈する.
+        error_tag: particle
+      - answer: 時には上司に悪口を言うことも必要だ。
+        feedback_vi: 悪口 là nói xấu; góp ý thẳng thắn vì thiện ý là 苦言.
+        error_tag: vocab_meaning
+    explanation:
+      vi: (người) に苦言を呈する - thẳng thắn góp ý với ai; 時には - đôi khi; ～ことも必要だ - cũng cần phải... あえて (dám, cố ý) làm câu tự nhiên hơn.
+    display_answer: 時には上司に苦言を呈することも必要だ。
+
+  - key: ja:exercise:n1-u7-yue-wb-yue
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u7-gram-yue
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vì là người nổi tiếng nên đời tư của anh ấy luôn bị chú ý.\""
+      tokens:
+        - { id: y4, text: 常に注目される }
+        - { id: y2, text: であるがゆえに }
+        - { id: y5, text: であればこその }
+        - { id: y1, text: 有名人 }
+        - { id: y3, text: 彼の私生活は }
+    answer:
+      orders:
+        - [y1, y2, y3, y4]
+    explanation:
+      vi: N + であるがゆえに - vì là N; vế sau là kết quả khách quan (bị chú ý). であればこその phải đứng trước danh từ, không nối được vào 彼の私生活は.
+    display_answer: 有名人であるがゆえに彼の私生活は常に注目される。

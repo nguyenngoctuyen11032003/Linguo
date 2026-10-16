@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u7-kanenai
+order_index: 1
+level: n2
+title:
+  vi: Có nguy cơ dẫn đến... - ～かねない (so với ～かねる và ～恐れがある)
+objectives:
+  - vi: Cảnh báo kết quả xấu có thể xảy ra bằng Vます-gốc + かねない.
+  - vi: Phân biệt かねない (có thể xảy ra) với かねる (khó mà làm được).
+  - vi: Chọn giữa かねない (chủ quan, hội thoại) và 恐れがある (khách quan, thông báo).
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-formal-relations-review]
+items:
+  - item: ja:item:n2-u7-gram-kanenai
+  - item: ja:item:n2-u7-jiko
+  - item: ja:item:n2-u7-koshou
+  - item: ja:item:n2-u3-gram-kanemasu
+    role: reuse
+  - item: ja:item:n2-u5-gram-osore-ga-aru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn cảnh báo được "cứ thế này thì không chừng sẽ hỏng máy", "nói vậy dễ gây hiểu lầm" - và không còn nhầm かねない với lời từ chối khéo かねます.
+  - type: explain
+    text:
+      vi: 'Vます-gốc + かねない - "không chừng sẽ..., có nguy cơ...". Người nói thấy một khả năng xấu và cảnh báo: 無理をすると、体を壊しかねない. Chỉ dùng cho kết quả không mong muốn.'
+  - type: explain
+    text:
+      vi: 'Bẫy lớn: かねない là dạng phủ định nhưng nghĩa lại là "có thể xảy ra". Ngược lại, かねる (khẳng định) nghĩa là "khó mà làm được" - lời từ chối lịch sự: 分かりかねます (tôi không rõ ạ).'
+  - type: explain
+    text:
+      vi: 'N の / V-る + 恐れがある cũng là "có nguy cơ", nhưng khách quan, hay dùng trong bản tin, cảnh báo thời tiết: 大雨の恐れがある. かねない mang giọng lo lắng chủ quan của người nói.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo nhớ: かねない = "không loại trừ được (điều xấu)". Vì là giọng phán đoán của người nói, かねない hay đi với điều kiện ～と / ～ば / ～たら ở vế trước: このまま放っておくと、大きな問題になりかねない. Tiếng Việt tương đương "không khéo thì...".'
+  - type: example
+    target: 古い電気ストーブを使い続けると、火事になりかねない。
+    target_lang: ja
+    translation:
+      vi: Cứ dùng mãi cái lò sưởi điện cũ thì không khéo sẽ cháy nhà.
+  - type: example
+    target: その言い方では、相手に誤解されかねないよ。
+    target_lang: ja
+    translation:
+      vi: Nói kiểu đó thì không chừng bị đối phương hiểu lầm đấy.
+    note:
+      vi: 誤解される (bị hiểu lầm) → gốc ます 誤解され + かねない.
+  - type: example
+    target: 申し訳ございませんが、そのご要望にはお応えしかねます。
+    target_lang: ja
+    translation:
+      vi: Rất xin lỗi, chúng tôi khó mà đáp ứng được yêu cầu đó ạ.
+    note:
+      vi: かねます - từ chối lịch sự, KHÔNG phải "có thể".
+  - type: example
+    target: 明日は台風の影響で、大雨の恐れがあります。
+    target_lang: ja
+    translation:
+      vi: Ngày mai do ảnh hưởng của bão, có nguy cơ mưa lớn.
+    note:
+      vi: Bản tin thời tiết - khách quan nên dùng 恐れがある.
+  - type: common_mistake
+    wrong: よく勉強すれば、合格しかねない。
+    right: よく勉強すれば、合格できるだろう。
+    target_lang: ja
+    note:
+      vi: かねない chỉ dùng cho kết quả xấu. Khả năng tốt nói bằng できる / だろう / かもしれない.
+  - type: common_mistake
+    wrong: 分かりかねないので、担当者に聞いてください。
+    right: 分かりかねますので、担当者にお聞きください。
+    target_lang: ja
+    note:
+      vi: Muốn nói lịch sự "tôi không rõ" thì dùng かねます (khẳng định). 分かりかねない lại là "không chừng sẽ hiểu" - vô nghĩa ở đây.
+  - type: summary
+    points:
+      - vi: Vます-gốc + かねない - không chừng sẽ..., có nguy cơ (điều xấu).
+      - vi: Vます-gốc + かねます - khó mà làm được (từ chối lịch sự).
+      - vi: N の / V-る + 恐れがある - có nguy cơ (khách quan, thông báo).
+      - vi: 事故 - tai nạn; 故障 - hỏng hóc (máy móc).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u7-kanenai-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      stem: 'Câu このままでは、会社が倒産しかねない。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: k3p, text: Cứ thế này thì không chừng công ty sẽ phá sản., lang: vi }
+        - { id: w8d, text: Cứ thế này thì công ty sẽ không phá sản., lang: vi }
+        - { id: r2m, text: Công ty khó mà phá sản được., lang: vi }
+        - { id: t5x, text: Công ty đã phá sản từ lâu rồi., lang: vi }
+    answer:
+      correct_option_id: k3p
+    explanation:
+      vi: 倒産しかねない - không chừng sẽ phá sản. Dù có ない, かねない nghĩa là "có thể xảy ra (điều xấu)", không phải phủ định.
+    display_answer: Cứ thế này thì không chừng công ty sẽ phá sản.
+
+  - key: ja:exercise:n2-u7-kanenai-listen-koshou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u7-koshou
+    prompt:
+      audio_asset_id: null
+      fallback_text: パソコンを一日中つけっぱなしにしていると、故障しかねませんよ。
+      options:
+        - { id: a6f, text: Để máy tính bật suốt cả ngày thì không khéo sẽ hỏng đấy., lang: vi }
+        - { id: c1j, text: Để máy tính bật suốt cả ngày cũng không hỏng đâu., lang: vi }
+        - { id: e9n, text: Máy tính đã hỏng vì bị tắt suốt cả ngày., lang: vi }
+        - { id: g4s, text: Máy tính này khó mà sửa được., lang: vi }
+    answer:
+      correct_option_id: a6f
+    explanation:
+      vi: つけっぱなし - để bật mãi; 故障しかねません - không chừng sẽ hỏng (lịch sự của かねない). よ ở cuối là lời nhắc nhở.
+    display_answer: Để máy tính bật suốt cả ngày thì không khéo sẽ hỏng đấy.
+
+  - key: ja:exercise:n2-u7-kanenai-mcq-kaneru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-kanemasu
+    prompt:
+      stem: 'Nhân viên khách sạn muốn từ chối lịch sự: "Việc đổi phòng vào giờ này thì chúng tôi khó mà đáp ứng." Chọn từ đúng: この時間のお部屋の変更は、いたし＿＿。'
+      stem_lang: vi
+      options:
+        - { id: m7b, text: かねます, lang: ja }
+        - { id: q2h, text: かねません, lang: ja }
+        - { id: u6c, text: かねないです, lang: ja }
+        - { id: y3v, text: かねる恐れがあります, lang: ja }
+    answer:
+      correct_option_id: m7b
+    explanation:
+      vi: Từ chối lịch sự dùng かねます (khẳng định) - "khó mà làm được". かねません / かねない lại là "không chừng sẽ (xảy ra điều xấu)", ngược hẳn ý.
+    display_answer: かねます
+
+  - key: ja:exercise:n2-u7-kanenai-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      template: "スピードを出しすぎると、事故に{{b1}}かねない。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Chạy quá tốc độ thì không khéo sẽ dẫn đến tai nạn."
+        - "Gợi ý: gốc ます của つながる (dẫn đến)."
+    answer:
+      blanks:
+        b1: [つながり, 繋がり, なり]
+    known_wrong:
+      - answer: つながる
+        feedback_vi: かねない gắn vào gốc ます - つながります → つながり.
+        error_tag: kanenai_form
+      - answer: つながら
+        feedback_vi: Không dùng thể ない trước かねない; dùng gốc ます - つながり.
+        error_tag: kanenai_form
+    explanation:
+      vi: 事故につながりかねない - không chừng dẫn đến tai nạn. 事故になりかねない cũng đúng. かねない luôn đi sau gốc ます.
+    display_answer: スピードを出しすぎると、事故につながりかねない。
+
+  - key: ja:exercise:n2-u7-kanenai-wb-osore
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-osore-ga-aru
+    prompt:
+      instruction: "Sắp xếp thành câu cảnh báo trong bản tin: \"Ở vùng ven biển có nguy cơ sóng cao.\""
+      tokens:
+        - { id: o3, text: 恐れがあります }
+        - { id: o1, text: 海沿いの地域では }
+        - { id: o4, text: 高波かねない }
+        - { id: o2, text: 高波の }
+    answer:
+      orders:
+        - [o1, o2, o3]
+    explanation:
+      vi: Danh từ + の + 恐れがある - văn bản tin khách quan. かねない gắn vào gốc ます của động từ, không gắn vào danh từ 高波.
+    display_answer: 海沿いの地域では高波の恐れがあります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u7-kanenai-fill-gokai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      template: "メールの書き方次第では、失礼だと{{b1}}かねない。(思われる)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [思われ, おもわれ]
+    known_wrong:
+      - answer: 思われる
+        feedback_vi: かねない gắn vào gốc ます - 思われます → 思われ.
+        error_tag: kanenai_form
+      - answer: 思い
+        feedback_vi: Ý là "bị (người khác) nghĩ là thất lễ" nên cần bị động 思われ.
+        error_tag: passive_needed
+    explanation:
+      vi: 思われかねない - không chừng bị nghĩ là... Bị động 思われる bỏ る thành gốc ます 思われ rồi thêm かねない.
+    display_answer: メールの書き方次第では、失礼だと思われかねない。
+
+  - key: ja:exercise:n2-u7-kanenai-write-jiko
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-jiko
+    prompt:
+      source_text: Vừa đi vừa nhìn điện thoại thì không khéo sẽ gặp tai nạn. (dùng かねない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - スマホを見ながら歩くと、事故に遭いかねない。
+        - スマホを見ながら歩くと、事故にあいかねない。
+        - スマホを見ながら歩くと、事故に遭いかねません。
+        - スマホを見ながら歩いていると、事故に遭いかねない。
+        - 携帯を見ながら歩くと、事故に遭いかねない。
+        - スマートフォンを見ながら歩くと、事故に遭いかねない。
+        - スマホを見ながら歩くと、事故になりかねない。
+        - スマホを見ながら歩くと、事故につながりかねない。
+        - 歩きながらスマホを見ると、事故に遭いかねない。
+        - スマホをみながらあるくと、じこにあいかねない。
+    known_wrong:
+      - answer: スマホを見ながら歩くと、事故に遭うかねない。
+        feedback_vi: かねない gắn vào gốc ます - 遭います → 遭いかねない.
+        error_tag: kanenai_form
+      - answer: スマホを見ながら歩くと、事故に遭いかねる。
+        feedback_vi: かねる là "khó mà làm"; cảnh báo nguy cơ dùng かねない.
+        error_tag: kanenai_kaneru
+    explanation:
+      vi: ～と (hễ... thì) + 事故に遭いかねない - không khéo gặp tai nạn. 事故に遭う - gặp tai nạn (mình là nạn nhân); 事故になる / につながる - dẫn tới tai nạn.
+    display_answer: スマホを見ながら歩くと、事故に遭いかねない。
+
+  - key: ja:exercise:n2-u7-kanenai-write-kaneru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-kanemasu
+    prompt:
+      source_text: Chuyện đó thì tôi không thể trả lời ngay được ạ. (từ chối lịch sự, dùng かねます)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - その件については、すぐにはお答えしかねます。
+        - その件については、すぐにお答えしかねます。
+        - その件は、すぐにはお答えしかねます。
+        - その件については、今すぐにはお答えしかねます。
+        - そのことについては、すぐにはお答えしかねます。
+        - その件については、すぐには答えかねます。
+        - その件については、ただいまはお答えしかねます。
+        - そのけんについては、すぐにはおこたえしかねます。
+    known_wrong:
+      - answer: その件については、すぐにはお答えしかねません。
+        feedback_vi: かねません là "không chừng sẽ (trả lời)" - ngược ý. Từ chối dùng かねます.
+        error_tag: kanenai_kaneru
+      - answer: その件については、すぐにはお答えするかねます。
+        feedback_vi: かねます gắn vào gốc ます - お答えし + かねます.
+        error_tag: kaneru_form
+    explanation:
+      vi: お答えしかねます - (tôi) khó mà trả lời được; cách từ chối mềm thay cho 答えられません. は sau すぐに nhấn "ngay lúc này thì không".
+    display_answer: その件については、すぐにはお答えしかねます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u7-kanenai-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      source_text: 小さなミスでも放っておくと、会社の信用を失いかねない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù là lỗi nhỏ mà bỏ mặc thì không chừng sẽ làm mất uy tín của công ty.
+        - Dù chỉ là lỗi nhỏ nhưng nếu bỏ qua thì có thể làm công ty mất uy tín.
+        - Lỗi nhỏ mà để mặc thì không khéo công ty sẽ mất uy tín.
+        - Kể cả lỗi nhỏ, nếu bỏ mặc thì có nguy cơ làm mất lòng tin vào công ty.
+        - Dù là sai sót nhỏ, nếu bỏ qua thì không chừng sẽ đánh mất uy tín của công ty.
+        - Ngay cả lỗi nhỏ nếu để đó thì có nguy cơ làm mất uy tín công ty.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Dù là lỗi nhỏ mà bỏ mặc thì công ty cũng không mất uy tín.
+        feedback_vi: 失いかねない là "không chừng sẽ mất", không phải "không mất".
+        error_tag: kanenai_meaning
+    explanation:
+      vi: 放っておく - bỏ mặc; 信用を失う - mất uy tín; かねない - có nguy cơ, không chừng. でも - dù chỉ là.
+    display_answer: Dù là lỗi nhỏ mà bỏ mặc thì không chừng sẽ làm mất uy tín của công ty.
+
+  - key: ja:exercise:n2-u7-kanenai-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      stem: Đồng nghiệp định gửi file khách hàng qua email cá nhân. Bạn muốn nhắc "Làm thế không khéo sẽ rò rỉ thông tin đấy." Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: d2k, text: そんなことをしたら、情報が漏れかねないよ。, lang: ja }
+        - { id: h7q, text: そんなことをしたら、情報が漏れかねますよ。, lang: ja }
+        - { id: l3w, text: そんなことをしたら、情報が漏れるかねないよ。, lang: ja }
+        - { id: p8z, text: そんなことをしたら、情報が漏れかねなかったよ。, lang: ja }
+    answer:
+      correct_option_id: d2k
+    explanation:
+      vi: 漏れかねない - không khéo bị rò rỉ (gốc ます 漏れ + かねない). かねます là từ chối "khó mà làm"; 漏れるかねない sai dạng; かねなかった là quá khứ, không hợp lời cảnh báo cho việc sắp làm.
+    display_answer: そんなことをしたら、情報が漏れかねないよ。
+
+  - key: ja:exercise:n2-u7-kanenai-write-koshou
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u7-koshou
+    prompt:
+      source_text: Nếu cứ để điều hoà chạy liên tục thì không khéo sẽ hỏng. (dùng 故障 và かねない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - エアコンをずっとつけっぱなしにすると、故障しかねない。
+        - エアコンをずっとつけっぱなしにしていると、故障しかねない。
+        - エアコンをつけっぱなしにすると、故障しかねない。
+        - エアコンをずっと動かし続けると、故障しかねない。
+        - エアコンをずっとつけたままにすると、故障しかねない。
+        - エアコンをずっとつけっぱなしにすると、故障しかねません。
+        - エアコンをずっとつけっぱなしにしたら、故障しかねない。
+        - エアコンをずっとつけっぱなしにすれば、故障しかねない。
+        - えあこんをずっとつけっぱなしにすると、こしょうしかねない。
+    known_wrong:
+      - answer: エアコンをずっとつけっぱなしにすると、故障するかねない。
+        feedback_vi: かねない gắn vào gốc ます - 故障し + かねない.
+        error_tag: kanenai_form
+      - answer: エアコンをずっとつけっぱなしにすると、壊れかねる。
+        feedback_vi: かねる là "khó mà làm"; cảnh báo hỏng hóc dùng かねない.
+        error_tag: kanenai_kaneru
+    explanation:
+      vi: つけっぱなしにする - để bật mãi; 故障する → 故障し + かねない. Vế điều kiện ～と / ～たら / ～ば đều đi tự nhiên với かねない.
+    display_answer: エアコンをずっとつけっぱなしにすると、故障しかねない。
+
+  - key: ja:exercise:n2-u7-kanenai-wb-gokai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u7-gram-kanenai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cách viết mơ hồ thì không chừng sẽ gây hiểu lầm cho người đọc.\""
+      tokens:
+        - { id: g4, text: 誤解を招きかねない }
+        - { id: g2, text: 書き方は }
+        - { id: g5, text: 誤解を招きかねる }
+        - { id: g1, text: あいまいな }
+        - { id: g3, text: 読む人の }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+    explanation:
+      vi: 誤解を招く - gây hiểu lầm; 招きかねない - không chừng sẽ gây ra. 招きかねる là "khó mà gây ra" - vô nghĩa ở đây.
+    display_answer: あいまいな書き方は読む人の誤解を招きかねない。

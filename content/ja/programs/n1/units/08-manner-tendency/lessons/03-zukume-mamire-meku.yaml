@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u8-zukume-mamire-meku
+order_index: 3
+level: n1
+title:
+  vi: Toàn là, lấm đầy, mang dáng dấp - ～ずくめ, ～まみれ, ～めく
+objectives:
+  - vi: Nói "toàn là..." bằng ～ずくめ (cả điều tốt lẫn xấu).
+  - vi: Tả bề mặt lấm đầy chất lỏng, bụi bằng ～まみれ; phân biệt với だらけ (N2).
+  - vi: Nói "mang dáng dấp, có hơi hướng" bằng ～めく / ～めいた.
+estimated_minutes: 22
+skills: [grammar, vocabulary]
+prerequisites: [ja:lesson:n1-u8-katawara-gatera]
+items:
+  - item: ja:item:n1-u8-gram-zukume
+  - item: ja:item:n1-u8-gram-mamire
+  - item: ja:item:n1-u8-gram-meku
+  - item: ja:item:n1-u8-ase
+  - item: ja:item:n1-u8-hiniku
+  - item: ja:item:n2-u6-gram-darake
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả tinh tế hơn - "một ngày toàn chuyện tốt", "người bê bết mồ hôi", "gió đã có hơi thu", "giọng có vẻ mỉa mai" - những cách nói rất hay gặp trong tiểu thuyết và tuỳ bút.
+  - type: explain
+    text:
+      vi: 'N + ずくめ - "toàn là N, từ đầu đến cuối". Dùng với ít danh từ cố định: 黒ずくめ (toàn đồ đen), いいことずくめ (toàn chuyện tốt), ごちそうずくめ (toàn món ngon), 規則ずくめ (toàn quy định). Khác だらけ, ずくめ dùng được cho cả điều tốt.'
+  - type: explain
+    text:
+      vi: 'N + まみれ - "lấm đầy, bê bết" thứ dính bám toàn thân: 汗まみれ, 泥まみれ, 血まみれ, ほこりまみれ. Nghĩa bóng: 借金まみれ (nợ ngập đầu). だらけ (N2) rộng hơn - dùng được cho cả vật rời rạc (間違いだらけ, 傷だらけ), còn まみれ thì không.'
+  - type: explain
+    text:
+      vi: 'N + めく - "mang dáng dấp, có hơi hướng N": 春めく (trời có hơi xuân), 冗談めいた口調 (giọng như đùa), 皮肉めいた笑い (nụ cười có vẻ mỉa mai). Trước danh từ dùng めいた. Chỉ đi với một số danh từ quen thuộc.'
+  - type: deep_explain
+    text:
+      vi: 'Cách nhớ hình ảnh: ずくめ là "phủ kín toàn bộ" (nhìn đâu cũng thấy), まみれ là "dính bết trên da" (mồ hôi, bùn, máu), だらけ là "rải đầy khắp nơi" (lỗi, vết xước, rác), めく là "mới thấp thoáng dấu hiệu" (xuân chớm đến). Tiếng Việt có "lấm lem", "bê bết", "chớm" - dùng các từ đó khi dịch sẽ tự nhiên hơn "đầy".'
+  - type: example
+    target: 犯人は黒ずくめの服装をしていたという。
+    target_lang: ja
+    translation:
+      vi: Nghe nói thủ phạm mặc toàn đồ đen.
+  - type: example
+    target: 子どもたちは泥まみれになって田んぼで遊んでいる。
+    target_lang: ja
+    translation:
+      vi: Bọn trẻ lấm lem bùn đất chơi đùa ngoài ruộng.
+  - type: example
+    target: 朝晩の風が秋めいてきた。
+    target_lang: ja
+    translation:
+      vi: Gió sáng tối đã chớm hơi thu.
+  - type: example
+    target: 彼は皮肉めいた笑みを浮かべた。
+    target_lang: ja
+    translation:
+      vi: Anh ta nở một nụ cười có vẻ mỉa mai.
+  - type: common_mistake
+    wrong: このレポートは間違いまみれだ。
+    right: このレポートは間違いだらけだ。
+    target_lang: ja
+    note:
+      vi: まみれ chỉ dùng cho thứ dính bám (mồ hôi, bùn, bụi); lỗi sai là thứ rải rác nên dùng だらけ.
+  - type: common_mistake
+    wrong: 今日は雨まみれの一日だった。
+    right: 今日は雨ばかりの一日だった。
+    target_lang: ja
+    note:
+      vi: Một ngày mưa liên miên không phải "dính bết" lên người - dùng ばかり. Người bị ướt sũng thì nói ずぶぬれ.
+  - type: summary
+    points:
+      - vi: N + ずくめ - toàn là N (tốt hoặc xấu); 黒ずくめ, いいことずくめ.
+      - vi: N + まみれ - lấm đầy (mồ hôi, bùn, bụi, máu); だらけ rộng hơn.
+      - vi: N + めく / めいた N - mang dáng dấp, chớm có (春めく, 皮肉めいた).
+      - vi: 汗 - mồ hôi · 皮肉 - mỉa mai, trớ trêu.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u8-zukume-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-zukume
+    prompt:
+      stem: Câu 「新しい職場は給料もいいし休みも多いし、いいことずくめだ。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a1k, text: "Chỗ làm mới lương tốt, nghỉ nhiều - toàn là chuyện tốt.", lang: vi }
+        - { id: b6m, text: Chỗ làm mới có vài điều tốt nhưng nhiều điều xấu., lang: vi }
+        - { id: c2n, text: Chỗ làm mới chỉ có một điều tốt là lương cao., lang: vi }
+        - { id: d7p, text: Chỗ làm mới toàn chuyện phiền phức., lang: vi }
+    answer:
+      correct_option_id: a1k
+    explanation:
+      vi: いいことずくめ - toàn chuyện tốt. ずくめ khác だらけ ở chỗ dùng được cho điều tích cực.
+    display_answer: Chỗ làm mới lương tốt, nghỉ nhiều - toàn là chuyện tốt.
+
+  - key: ja:exercise:n1-u8-zukume-listen-ase
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-ase
+    prompt:
+      audio_asset_id: null
+      fallback_text: 引っ越しの手伝いで、一日中汗まみれになった。
+      options:
+        - { id: e3q, text: Giúp chuyển nhà nên cả ngày tôi bê bết mồ hôi., lang: vi }
+        - { id: f8r, text: Giúp chuyển nhà nên cả ngày tôi lạnh run người., lang: vi }
+        - { id: g2s, text: Tôi đã chuyển nhà một mình trong một ngày., lang: vi }
+        - { id: h7t, text: Vì trời mưa nên việc chuyển nhà bị hoãn., lang: vi }
+    answer:
+      correct_option_id: e3q
+    explanation:
+      vi: 汗まみれ - bê bết mồ hôi; 一日中 - suốt cả ngày; 手伝いで - vì đi giúp. まみれ tả thứ dính bám toàn thân.
+    display_answer: Giúp chuyển nhà nên cả ngày tôi bê bết mồ hôi.
+
+  - key: ja:exercise:n1-u8-zukume-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-mamire
+    prompt:
+      stem: 'Chọn từ hợp nhất: 長い間使っていなかった倉庫の箱は、ほこり ＿＿ だった。 ("Những cái hộp trong nhà kho lâu không dùng phủ đầy bụi.")'
+      stem_lang: vi
+      options:
+        - { id: i7u, text: まみれ, lang: ja }
+        - { id: j2v, text: めいて, lang: ja }
+        - { id: k6w, text: ずくめで, lang: ja }
+        - { id: l1x, text: かたわら, lang: ja }
+    answer:
+      correct_option_id: i7u
+    explanation:
+      vi: Bụi dính phủ kín bề mặt - ほこりまみれ. めく là "chớm có dáng dấp"; ずくめ đi với danh từ cố định (黒, いいこと); かたわら là "bên cạnh việc chính".
+    display_answer: まみれ
+
+  - key: ja:exercise:n1-u8-zukume-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-meku
+    prompt:
+      template: "二月も終わりに近づき、日差しが少しずつ春{{b1}}きた。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Tháng Hai sắp hết, nắng đã dần chớm hơi xuân."
+        - "Gợi ý: めく ở thể て."
+    answer:
+      blanks:
+        b1: [めいて]
+    known_wrong:
+      - answer: めくて
+        feedback_vi: めく là động từ nhóm 1 đuôi く - thể て là めいて.
+        error_tag: meku_form
+      - answer: まみれて
+        feedback_vi: まみれ là lấm đầy (bùn, mồ hôi); "chớm có hơi xuân" là 春めく.
+        error_tag: meku_mamire
+    explanation:
+      vi: 春めく → 春めいて + きた - đã dần có hơi xuân (てくる chỉ sự thay đổi tiến dần đến hiện tại). めく chia như 書く - 書いて, めいて.
+    display_answer: 二月も終わりに近づき、日差しが少しずつ春めいてきた。
+
+  - key: ja:exercise:n1-u8-zukume-mcq-hiniku
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-hiniku
+    prompt:
+      stem: Câu 「皮肉なことに、健康のために始めたマラソンで足を痛めてしまった。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: m8y, text: "Trớ trêu thay, tôi lại bị đau chân vì môn marathon bắt đầu chạy để giữ sức khoẻ.", lang: vi }
+        - { id: n3z, text: Tôi bắt đầu chạy marathon để chữa đau chân., lang: vi }
+        - { id: o7a, text: Nhờ chạy marathon mà chân tôi khoẻ hơn., lang: vi }
+        - { id: p2b, text: Có người mỉa mai việc tôi chạy marathon., lang: vi }
+    answer:
+      correct_option_id: m8y
+    explanation:
+      vi: 皮肉なことに - trớ trêu thay (kết quả ngược với mục đích); 足を痛めてしまった - lỡ bị đau chân. Ở đây 皮肉 là "sự trớ trêu", không phải lời người khác mỉa mai.
+    display_answer: Trớ trêu thay, tôi lại bị đau chân vì môn marathon bắt đầu chạy để giữ sức khoẻ.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u8-zukume-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-zukume
+    prompt:
+      template: "あの学校は校則{{b1}}で、髪の色まで決められている。(toàn là)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [ずくめ]
+    known_wrong:
+      - answer: まみれ
+        feedback_vi: まみれ là thứ dính bám (bùn, mồ hôi); "toàn quy định" là 規則・校則ずくめ.
+        error_tag: zukume_mamire
+      - answer: めいて
+        feedback_vi: めく là "chớm có dáng dấp", không phải "toàn là".
+        error_tag: zukume_meku
+    explanation:
+      vi: 校則ずくめ - toàn nội quy; 髪の色まで - đến cả màu tóc. ずくめ nói mọi thứ đều bị bao trùm bởi N.
+    display_answer: あの学校は校則ずくめで、髪の色まで決められている。
+
+  - key: ja:exercise:n1-u8-zukume-write-mamire
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-mamire
+    prompt:
+      source_text: Những người lính cứu hoả trở về, người lấm đầy tro bụi. (dùng まみれ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 消防士たちは灰まみれになって戻ってきた。
+        - 消防士たちは灰まみれで戻ってきた。
+        - 消防士たちは、灰まみれになって戻ってきた。
+        - 消防士たちはすすまみれになって戻ってきた。
+        - 消防士たちは煤まみれになって戻ってきた。
+        - 消防士たちはほこりまみれになって戻ってきた。
+        - 消防士たちは灰まみれになって帰ってきた。
+        - 消防士たちは灰まみれになって戻って来た。
+        - しょうぼうしたちははいまみれになってもどってきた。
+    known_wrong:
+      - answer: 消防士たちは灰めいて戻ってきた。
+        feedback_vi: めく là "chớm có dáng dấp"; lấm đầy tro bụi dùng まみれ.
+        error_tag: meku_mamire
+      - answer: 消防士たちは灰ずくめになって戻ってきた。
+        feedback_vi: ずくめ dùng với danh từ cố định (黒, いいこと); tro bụi dính bám lên người dùng まみれ.
+        error_tag: zukume_mamire
+    explanation:
+      vi: 灰 / すす (煤) - tro, muội; 灰まみれになって - người lấm đầy tro; 戻ってきた - đã trở về.
+    display_answer: 消防士たちは灰まみれになって戻ってきた。
+
+  - key: ja:exercise:n1-u8-zukume-write-meku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-meku
+    prompt:
+      source_text: Anh ấy nói một câu nghe như đùa, nhưng mắt thì rất nghiêm túc. (dùng 冗談めいた)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は冗談めいたことを言ったが、目は真剣だった。
+        - 彼は冗談めいたことを言ったけど、目は真剣だった。
+        - 彼は冗談めいた言い方をしたが、目は真剣だった。
+        - 彼は冗談めいた一言を言ったが、目は真剣だった。
+        - 彼は冗談めいたことを言ったが、目は本気だった。
+        - 彼は冗談めいたことを言ったが、その目は真剣だった。
+        - 彼は冗談めいたことを言いましたが、目は真剣でした。
+        - かれはじょうだんめいたことをいったが、めはしんけんだった。
+    known_wrong:
+      - answer: 彼は冗談めくことを言ったが、目は真剣だった。
+        feedback_vi: Trước danh từ dùng めいた (冗談めいたこと), không dùng めく.
+        error_tag: meku_form
+      - answer: 彼は冗談まみれのことを言ったが、目は真剣だった。
+        feedback_vi: まみれ là lấm đầy thứ dính bám; "nghe như đùa" là 冗談めいた.
+        error_tag: meku_mamire
+    explanation:
+      vi: 冗談めいた + N - N nghe như đùa; 目は真剣だった - ánh mắt thì nghiêm túc. が nối hai vế tương phản.
+    display_answer: 彼は冗談めいたことを言ったが、目は真剣だった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u8-zukume-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-mamire
+    prompt:
+      source_text: 試合が終わると、選手たちは泥まみれのユニフォームのまま抱き合った。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trận đấu vừa kết thúc, các cầu thủ ôm chầm lấy nhau trong bộ đồng phục lấm lem bùn đất.
+        - Khi trận đấu kết thúc, các cầu thủ ôm nhau, trên người vẫn là bộ đồng phục bê bết bùn.
+        - Hết trận, các cầu thủ ôm nhau trong bộ đồng phục lấm bùn.
+        - Trận đấu kết thúc, các cầu thủ vẫn mặc nguyên bộ đồng phục lấm đầy bùn mà ôm lấy nhau.
+        - Khi trận đấu kết thúc, các cầu thủ ôm nhau với bộ đồng phục dính đầy bùn.
+        - Trận đấu kết thúc thì các cầu thủ ôm chầm lấy nhau, đồng phục vẫn lấm lem bùn đất.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trận đấu kết thúc, các cầu thủ thay đồng phục sạch rồi ôm nhau.
+        feedback_vi: 泥まみれのユニフォームのまま là "vẫn mặc nguyên bộ đồng phục lấm bùn", không phải thay đồ sạch.
+        error_tag: meaning
+    explanation:
+      vi: 泥まみれのユニフォーム - đồng phục lấm đầy bùn; のまま - giữ nguyên trạng thái; 抱き合った - ôm lấy nhau.
+    display_answer: Trận đấu vừa kết thúc, các cầu thủ ôm chầm lấy nhau trong bộ đồng phục lấm lem bùn đất.
+
+  - key: ja:exercise:n1-u8-zukume-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u6-gram-darake
+    prompt:
+      stem: Bạn sửa bài luận của đàn em và muốn nói "Bài này đầy lỗi chính tả". Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: q9c, text: この作文は、誤字だらけだね。, lang: ja }
+        - { id: r4d, text: この作文は、誤字まみれだね。, lang: ja }
+        - { id: s8e, text: この作文は、誤字めいているね。, lang: ja }
+        - { id: t2f, text: この作文は、誤字ずくめだね。, lang: ja }
+    answer:
+      correct_option_id: q9c
+    explanation:
+      vi: Lỗi chính tả rải rác khắp bài - だらけ. まみれ chỉ thứ dính bám (bùn, mồ hôi); めく là "chớm có dáng dấp"; ずくめ chỉ đi với ít danh từ cố định (黒, いいこと, 規則).
+    display_answer: この作文は、誤字だらけだね。
+
+  - key: ja:exercise:n1-u8-zukume-write-zukume
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-zukume
+    prompt:
+      source_text: Người đàn ông mặc toàn đồ đen đứng trước cửa. (dùng ずくめ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 黒ずくめの男がドアの前に立っていた。
+        - 黒ずくめの男が玄関の前に立っていた。
+        - 黒ずくめの男性がドアの前に立っていた。
+        - 黒ずくめの男がドアの前に立っている。
+        - ドアの前に黒ずくめの男が立っていた。
+        - 玄関の前に黒ずくめの男が立っていた。
+        - 黒ずくめの男が入り口の前に立っていた。
+        - くろずくめのおとこがドアのまえにたっていた。
+    known_wrong:
+      - answer: 黒まみれの男がドアの前に立っていた。
+        feedback_vi: Mặc toàn đồ đen là 黒ずくめ; 黒まみれ nghe như người bị bôi bẩn đen kín.
+        error_tag: zukume_mamire
+      - answer: 黒だらけの男がドアの前に立っていた。
+        feedback_vi: だらけ là "đầy thứ phiền phức"; quần áo toàn màu đen nói 黒ずくめ.
+        error_tag: zukume_darake
+    explanation:
+      vi: 黒ずくめの男 - người đàn ông mặc toàn đồ đen (từ đầu đến chân); ドアの前に立っていた - đang đứng trước cửa.
+    display_answer: 黒ずくめの男がドアの前に立っていた。
+
+  - key: ja:exercise:n1-u8-zukume-wb-hiniku
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-hiniku
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Câu trả lời của cô ấy nghe có vẻ hơi mỉa mai.\""
+      tokens:
+        - { id: h3, text: 少し皮肉めいて }
+        - { id: h5, text: 少し皮肉まみれて }
+        - { id: h1, text: 彼女の答えは }
+        - { id: h4, text: 聞こえた }
+    answer:
+      orders:
+        - [h1, h3, h4]
+    explanation:
+      vi: 皮肉めく → 皮肉めいて聞こえる - nghe có vẻ mỉa mai. まみれ(る) là "dính bết" thứ vật chất và cũng phải đi với に (泥にまみれる), nên 皮肉まみれて sai.
+    display_answer: 彼女の答えは少し皮肉めいて聞こえた。

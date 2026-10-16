@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u8-kara-niwa
+order_index: 1
+level: n2
+title:
+  vi: Một khi đã... thì phải - ～からには, ～以上(は), ～上は
+objectives:
+  - vi: Nói quyết tâm, nghĩa vụ sau một quyết định bằng ～からには.
+  - vi: Dùng ～以上(は) trong lời nói trang trọng về trách nhiệm.
+  - vi: Nhận ra ～上は trong văn viết và phân biệt với ～上で.
+estimated_minutes: 20
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-possibility-judgement-review]
+items:
+  - item: ja:item:n2-u8-gram-kara-niwa
+  - item: ja:item:n2-u8-gram-ijou-wa
+  - item: ja:item:n2-u8-gram-ue-wa
+  - item: ja:item:n2-u8-kakugo
+  - item: ja:item:n2-u8-chousen
+  - item: ja:item:n2-u6-gram-ue-de
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "đã nhận lời thì phải làm đến cùng", "đã là sinh viên thì phải học", "đến nước này thì chỉ còn cách cố" - ba mức trang trọng của cùng một ý quyết tâm.
+  - type: explain
+    text:
+      vi: 'Thể thường + からには - "một khi đã... thì (nhất định)...". Vế trước là việc đã quyết hoặc đã thành sự thật; vế sau là ý chí, nghĩa vụ, lời khuyên: 試合に出るからには、優勝を目指す. Danh từ dùng である: 学生であるからには.'
+  - type: explain
+    text:
+      vi: 'Thể thường + 以上(は) - cùng nghĩa nhưng khách quan, trang trọng hơn, hay gặp trong quy định, phát biểu: 約束した以上は、守るべきだ. V-る / V-た + 上は - dạng văn viết cứng nhất: こうなった上は、覚悟を決めるしかない.'
+  - type: explain
+    text:
+      vi: 'Vế sau của cả ba mẫu không thể là mô tả sự thật bình thường. Nó phải là ～たい, ～つもりだ, ～べきだ, ～なければならない, ～しかない, ～てください... Tiếng Việt "đã... thì phải..." giúp bạn kiểm tra: nếu không thêm được "phải / nên / muốn" thì đừng dùng.'
+  - type: deep_explain
+    text:
+      vi: '上は (một khi đã) khác 上で (unit 6 - làm A rồi mới B). Mẹo: 上は = "đến nước này thì..." (quyết tâm); 上で = "sau khi... (rồi mới)" (thứ tự). 以上 còn nghĩa "trở lên" (二十歳以上) và "hết" (以上です) - chỉ khi đứng sau một mệnh đề mới là "đã... thì".'
+  - type: example
+    target: リーダーを引き受けたからには、責任を持ってチームをまとめたい。
+    target_lang: ja
+    translation:
+      vi: Một khi đã nhận làm trưởng nhóm thì tôi muốn có trách nhiệm gắn kết cả đội.
+  - type: example
+    target: 自分で選んだ道である以上、簡単には諦められない。
+    target_lang: ja
+    translation:
+      vi: Đã là con đường tự mình chọn thì không thể dễ dàng bỏ cuộc.
+    note:
+      vi: Danh từ + である + 以上.
+  - type: example
+    target: 会社が倒産した上は、新しい仕事を探すしかない。
+    target_lang: ja
+    translation:
+      vi: Một khi công ty đã phá sản thì chỉ còn cách tìm việc mới.
+  - type: example
+    target: 難しい挑戦だが、やると決めたからには覚悟はできている。
+    target_lang: ja
+    translation:
+      vi: Thử thách khó, nhưng đã quyết làm thì tôi đã chuẩn bị tinh thần.
+  - type: common_mistake
+    wrong: 日本に来たからには、毎日雨が降っています。
+    right: 日本に来たからには、日本の文化をたくさん学びたいです。
+    target_lang: ja
+    note:
+      vi: Vế sau của からには phải là ý chí, nghĩa vụ của người nói, không phải mô tả sự việc như thời tiết.
+  - type: common_mistake
+    wrong: 学生からには、しっかり勉強しなさい。
+    right: 学生であるからには、しっかり勉強しなさい。
+    target_lang: ja
+    note:
+      vi: Danh từ không nối thẳng với からには - cần である (学生であるからには).
+  - type: summary
+    points:
+      - vi: Thể thường + からには - một khi đã... thì phải (ý chí, nghĩa vụ).
+      - vi: Thể thường + 以上(は) - đã... thì (trang trọng, khách quan).
+      - vi: V-る / V-た + 上は - một khi đã (văn viết); khác 上で (làm A rồi mới B).
+      - vi: Danh từ cần である trước からには / 以上.
+      - vi: 覚悟 - chuẩn bị tinh thần; 挑戦 - thử thách, thử sức.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u8-karaniwa-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-kara-niwa
+    prompt:
+      stem: 'Câu 高いお金を払ったからには、最後まで通うつもりだ。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: a5d, text: Đã trả nhiều tiền thì tôi định đi học đến cùng., lang: vi }
+        - { id: e1h, text: Vì trả nhiều tiền nên tôi định nghỉ học giữa chừng., lang: vi }
+        - { id: i6l, text: Dù đã trả nhiều tiền nhưng tôi không định đi học., lang: vi }
+        - { id: m2p, text: Tôi đi học đến cùng rồi mới trả tiền., lang: vi }
+    answer:
+      correct_option_id: a5d
+    explanation:
+      vi: 払ったからには - một khi đã trả; 最後まで通うつもりだ - định đi học đến cùng (ý chí). からには nối việc đã xảy ra với quyết tâm.
+    display_answer: Đã trả nhiều tiền thì tôi định đi học đến cùng.
+
+  - key: ja:exercise:n2-u8-karaniwa-listen-ijou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-ijou-wa
+    prompt:
+      audio_asset_id: null
+      fallback_text: ルールを決めた以上は、全員が守らなければなりません。
+      options:
+        - { id: b3f, text: Đã đặt ra quy tắc thì mọi người đều phải tuân thủ., lang: vi }
+        - { id: f8j, text: Quy tắc trở lên thì không ai phải tuân thủ., lang: vi }
+        - { id: j4n, text: Mọi người phải tuân thủ rồi mới đặt ra quy tắc., lang: vi }
+        - { id: n9r, text: Quy tắc đã định thì chỉ một vài người phải giữ., lang: vi }
+    answer:
+      correct_option_id: b3f
+    explanation:
+      vi: 決めた以上は - đã quyết định thì...; 全員が守らなければなりません - mọi người phải tuân thủ. 以上 sau mệnh đề là "đã... thì", không phải "trở lên".
+    display_answer: Đã đặt ra quy tắc thì mọi người đều phải tuân thủ.
+
+  - key: ja:exercise:n2-u8-karaniwa-mcq-uewa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ue-wa
+    prompt:
+      stem: 'Câu nào dùng 上 với nghĩa "một khi đã... thì (quyết tâm)"?'
+      stem_lang: vi
+      options:
+        - { id: c7g, text: 社長に頼まれた上は、断るわけにはいかない。, lang: ja }
+        - { id: g2k, text: よく考えた上で、お返事します。, lang: ja }
+        - { id: k8o, text: 机の上は、本でいっぱいだ。, lang: ja }
+        - { id: o3s, text: 内容をご確認の上、ご署名ください。, lang: ja }
+    answer:
+      correct_option_id: c7g
+    explanation:
+      vi: 頼まれた上は～わけにはいかない - đã được giám đốc nhờ thì không thể từ chối (quyết tâm, nghĩa vụ). 上で / の上 là "làm xong A rồi mới B"; 机の上 là "trên bàn".
+    display_answer: 社長に頼まれた上は、断るわけにはいかない。
+
+  - key: ja:exercise:n2-u8-karaniwa-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-gram-kara-niwa
+    prompt:
+      template: "マラソンに参加する{{b1}}、完走したい。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Đã tham gia marathon thì tôi muốn chạy hết chặng."
+        - "Gợi ý: bốn chữ kana - \"một khi đã... thì\"."
+    answer:
+      blanks:
+        b1: [からには]
+    known_wrong:
+      - answer: から
+        feedback_vi: から chỉ nêu lý do; ý "đã... thì muốn/phải..." cần からには.
+        error_tag: kara_karaniwa
+      - answer: うえで
+        feedback_vi: 上で là "làm A rồi mới B"; ở đây là quyết tâm sau khi đã quyết tham gia - からには.
+        error_tag: ue_de_karaniwa
+    explanation:
+      vi: 参加するからには、完走したい - đã tham gia thì muốn chạy hết. Vế sau là mong muốn (～たい) nên hợp với からには.
+    display_answer: マラソンに参加するからには、完走したい。
+
+  - key: ja:exercise:n2-u8-karaniwa-wb-chousen
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-chousen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Năm nay tôi muốn thử sức với kỳ thi N1.\""
+      tokens:
+        - { id: c3, text: 挑戦したい }
+        - { id: c1, text: 今年は }
+        - { id: c4, text: 挑戦をしたいに }
+        - { id: c2, text: N1の試験に }
+    answer:
+      orders:
+        - [c1, c2, c3]
+        - [c2, c1, c3]
+    explanation:
+      vi: N に挑戦する - thử sức với N (trợ từ に). 今年は có thể đứng đầu hoặc sau N1の試験に. 挑戦をしたいに sai ngữ pháp.
+    display_answer: 今年はN1の試験に挑戦したい。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u8-karaniwa-fill-dearu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ijou-wa
+    prompt:
+      template: "プロ{{b1}}以上、言い訳は許されない。(là - văn viết)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [である]
+    known_wrong:
+      - answer: の
+        feedback_vi: Trước 以上 (nghĩa "đã... thì"), danh từ cần である - プロである以上.
+        error_tag: noun_dearu
+      - answer: だ
+        feedback_vi: プロだ以上 không tự nhiên; dùng である.
+        error_tag: noun_dearu
+    explanation:
+      vi: プロである以上 - đã là dân chuyên nghiệp thì...; 言い訳は許されない - không được phép biện hộ.
+    display_answer: プロである以上、言い訳は許されない。
+
+  - key: ja:exercise:n2-u8-karaniwa-write-kakugo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-kakugo
+    prompt:
+      source_text: Đã quyết định mở cửa hàng thì tôi đã chuẩn bị tinh thần cho mọi khó khăn. (dùng からには và 覚悟)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 店を開くと決めたからには、どんな苦労も覚悟している。
+        - 店を開くと決めたからには、どんな苦労も覚悟しています。
+        - 店を開くと決めたからには、どんな苦労も覚悟の上だ。
+        - 店を開くと決めたからには、どんな困難も覚悟している。
+        - 店を開くことにしたからには、どんな苦労も覚悟している。
+        - お店を開くと決めたからには、どんな苦労も覚悟している。
+        - 店を出すと決めたからには、どんな苦労も覚悟している。
+        - 店を開くと決めたからには、どんな苦労でも覚悟している。
+        - 店を開くと決めたからには、あらゆる苦労を覚悟している。
+        - みせをひらくときめたからには、どんなくろうもかくごしている。
+    known_wrong:
+      - answer: 店を開くと決めたから、どんな苦労も覚悟している。
+        feedback_vi: から chỉ là "vì"; ý "đã quyết thì..." mạnh hơn cần からには.
+        error_tag: kara_karaniwa
+      - answer: 店を開くと決めた上で、どんな苦労も覚悟している。
+        feedback_vi: 上で là "làm A rồi mới B"; quyết tâm sau quyết định dùng からには (hoặc 上は).
+        error_tag: ue_de_karaniwa
+    explanation:
+      vi: 決めたからには - đã quyết thì; どんな苦労も覚悟している - đã sẵn sàng đón nhận mọi vất vả. 覚悟の上だ cũng là cách nói tự nhiên "đã lường trước".
+    display_answer: 店を開くと決めたからには、どんな苦労も覚悟している。
+
+  - key: ja:exercise:n2-u8-karaniwa-write-ijou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ijou-wa
+    prompt:
+      source_text: Đã ký hợp đồng thì phải giữ đúng thời hạn. (dùng 以上は)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 契約した以上は、期限を守らなければならない。
+        - 契約した以上は、期限を守らなければなりません。
+        - 契約を結んだ以上は、期限を守らなければならない。
+        - 契約した以上は、期限を守るべきだ。
+        - 契約した以上は、締め切りを守らなければならない。
+        - 契約した以上は、納期を守らなければならない。
+        - 契約した以上は、期限を守らないといけない。
+        - 契約した以上は、必ず期限を守らなければならない。
+        - けいやくしたいじょうは、きげんをまもらなければならない。
+    known_wrong:
+      - answer: 契約した以上は、期限を守った。
+        feedback_vi: Vế sau của 以上は phải là nghĩa vụ, ý chí - 守らなければならない, không phải sự việc đã xảy ra.
+        error_tag: ijou_consequent
+      - answer: 契約する以上で、期限を守らなければならない。
+        feedback_vi: Không có 以上で; dùng 契約した以上は.
+        error_tag: ijou_form
+    explanation:
+      vi: 契約した以上は - đã ký hợp đồng thì...; 期限を守る - giữ đúng thời hạn; ～なければならない - phải. Lời nói về trách nhiệm hay dùng 以上は.
+    display_answer: 契約した以上は、期限を守らなければならない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u8-karaniwa-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-niwa
+    prompt:
+      source_text: 代表に選ばれたからには、みんなの期待を裏切るわけにはいかない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đã được chọn làm đại diện thì tôi không thể phụ sự kỳ vọng của mọi người.
+        - Một khi đã được chọn làm đại diện thì không thể phụ lòng mong đợi của mọi người.
+        - Đã được chọn làm đại diện rồi thì không thể làm mọi người thất vọng.
+        - Đã được bầu làm đại diện thì không thể phản bội kỳ vọng của mọi người.
+        - Một khi được chọn làm đại diện thì tôi không thể phụ lòng kỳ vọng của mọi người.
+        - Đã được chọn làm người đại diện thì không thể phụ kỳ vọng của mọi người được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì được chọn làm đại diện nên tôi đã phụ lòng mọi người.
+        feedback_vi: 裏切るわけにはいかない là "không thể phụ lòng", không phải "đã phụ lòng".
+        error_tag: meaning
+    explanation:
+      vi: 選ばれたからには - đã được chọn thì; 期待を裏切る - phụ kỳ vọng; わけにはいかない - không thể (vì nghĩa vụ).
+    display_answer: Đã được chọn làm đại diện thì tôi không thể phụ sự kỳ vọng của mọi người.
+
+  - key: ja:exercise:n2-u8-karaniwa-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-kara-niwa
+    prompt:
+      stem: Đàn em than mệt sau khi nhận một dự án lớn. Bạn động viên "Đã nhận rồi thì cố làm đến cùng nhé." Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: d8l, text: 引き受けたからには、最後まで頑張ろうよ。, lang: ja }
+        - { id: h3p, text: 引き受けたからには、最後まで頑張った。, lang: ja }
+        - { id: l9t, text: 引き受けたうえで、最後まで頑張ろうよ。, lang: ja }
+        - { id: p4x, text: 引き受けるからにはで、最後まで頑張ろうよ。, lang: ja }
+    answer:
+      correct_option_id: d8l
+    explanation:
+      vi: 引き受けたからには + 頑張ろう (rủ, động viên) - đúng cấu trúc "đã... thì hãy...". 頑張った là mô tả quá khứ, không hợp からには; 上で là thứ tự công việc; からにはで sai.
+    display_answer: 引き受けたからには、最後まで頑張ろうよ。
+
+  - key: ja:exercise:n2-u8-karaniwa-write-chousen
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u8-chousen
+    prompt:
+      source_text: Đã thử sức thì tôi không định bỏ cuộc giữa chừng. (dùng 挑戦 và からには)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 挑戦するからには、途中で諦めるつもりはない。
+        - 挑戦するからには、途中であきらめるつもりはない。
+        - 挑戦したからには、途中で諦めるつもりはない。
+        - 挑戦するからには、途中で諦めるつもりはありません。
+        - 挑戦するからには、途中でやめるつもりはない。
+        - 挑戦すると決めたからには、途中で諦めるつもりはない。
+        - 挑戦するからには、途中で諦めない。
+        - ちょうせんするからには、とちゅうであきらめるつもりはない。
+    known_wrong:
+      - answer: 挑戦するからには、途中で諦めた。
+        feedback_vi: Vế sau của からには phải là ý chí, không phải chuyện đã xảy ra.
+        error_tag: karaniwa_consequent
+      - answer: 挑戦からには、途中で諦めるつもりはない。
+        feedback_vi: Danh từ không nối thẳng với からには - dùng 挑戦する.
+        error_tag: karaniwa_form
+    explanation:
+      vi: 挑戦するからには - đã thử sức thì; 途中で諦めるつもりはない - không có ý định bỏ giữa chừng. Cả 挑戦する (sắp thử) lẫn 挑戦した (đã thử) đều đúng.
+    display_answer: 挑戦するからには、途中で諦めるつもりはない。
+
+  - key: ja:exercise:n2-u8-karaniwa-wb-uewa
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-ue-wa
+    prompt:
+      instruction: "Sắp xếp thành câu văn viết: \"Một khi đã đến nước này thì chỉ còn cách xin lỗi thành thật.\""
+      tokens:
+        - { id: u4, text: 謝るしかない }
+        - { id: u2, text: 上は }
+        - { id: u5, text: 上を }
+        - { id: u1, text: こうなった }
+        - { id: u3, text: 素直に }
+    answer:
+      orders:
+        - [u1, u2, u3, u4]
+    explanation:
+      vi: こうなった上は - một khi đã đến nước này; ～しかない - chỉ còn cách. 上を không phải mẫu ngữ pháp; quyết tâm "một khi đã" là 上は.
+    display_answer: こうなった上は素直に謝るしかない。

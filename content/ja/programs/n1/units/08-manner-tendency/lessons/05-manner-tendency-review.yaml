@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-manner-tendency-review
+order_index: 5
+level: n1
+title:
+  vi: Ôn tập - chân dung một nhà văn bí ẩn
+objectives:
+  - vi: Đọc hiểu bài chân dung nhân vật dùng かたわら, であれ, ずくめ, めいた, きらいがある.
+  - vi: Chọn đúng mẫu theo sắc thái - song song, tiện thể, toàn là, lấm đầy, khuynh hướng.
+  - vi: Viết câu nhận xét con người theo văn phong tạp chí.
+estimated_minutes: 25
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n1-u8-kirai-shimatsu]
+items:
+  - item: ja:item:n1-u8-nazo
+  - item: ja:item:n1-u8-seika
+  - item: ja:item:n1-u8-gram-katawara
+    role: reuse
+  - item: ja:item:n1-u8-gram-de-are
+    role: reuse
+  - item: ja:item:n1-u8-gram-zukume
+    role: reuse
+  - item: ja:item:n1-u8-gram-meku
+    role: reuse
+  - item: ja:item:n1-u8-gram-kirai-ga-aru
+    role: reuse
+  - item: ja:item:n1-u8-gram-ni-kataku-nai
+    role: reuse
+  - item: ja:item:n1-u8-gram-gatera
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Bài ôn tập là một bài chân dung trên tạp chí: một nhà văn vừa làm bác sĩ vừa viết tiểu thuyết, luôn mặc toàn đồ đen, sống ẩn dật và đầy bí ẩn. Cả unit gói trong vài đoạn văn.'
+  - type: explain
+    text:
+      vi: 'Bài chân dung hay dùng かたわら để giới thiệu nghề song song, めいた / ずくめ để tả ngoại hình, phong cách, きらいがある để nhận xét tính cách và に難くない để người viết suy đoán cảm xúc nhân vật.'
+  - type: explain
+    text:
+      vi: 'Hai từ mới: 謎 (điều bí ẩn - 謎に包まれる, 謎めいた) và 成果 (thành quả - 成果を上げる). 謎めいた là ví dụ điển hình của めく + danh từ.'
+  - type: deep_explain
+    text:
+      vi: 'Khi đọc bài N1 về con người, phân biệt "sự thật" và "nhận xét" của người viết: かたわら, がてら kể sự thật; きらいがある, に難くない là đánh giá chủ quan của người viết. Câu hỏi đọc hiểu thường hỏi "người viết nghĩ gì về nhân vật" - hãy tìm những mẫu đánh giá này.'
+  - type: example
+    target: 彼は外科医として働くかたわら、夜は小説を書き続けてきた。
+    target_lang: ja
+    translation:
+      vi: Bên cạnh công việc bác sĩ phẫu thuật, ông vẫn viết tiểu thuyết vào ban đêm suốt bao năm.
+  - type: example
+    target: 黒ずくめの服装と謎めいた笑顔は、彼のトレードマークだ。
+    target_lang: ja
+    translation:
+      vi: Trang phục toàn màu đen và nụ cười đầy bí ẩn là dấu ấn riêng của ông.
+  - type: example
+    target: 取材であれ講演であれ、彼が人前に出ることはめったにない。
+    target_lang: ja
+    translation:
+      vi: Dù là phỏng vấn hay diễn thuyết, ông hiếm khi xuất hiện trước đám đông.
+  - type: example
+    target: 長年の研究がようやく成果を上げた。
+    target_lang: ja
+    translation:
+      vi: Nhiều năm nghiên cứu cuối cùng đã cho ra thành quả.
+  - type: common_mistake
+    wrong: 彼の私生活は謎めくに包まれている。
+    right: 彼の私生活は謎に包まれている。
+    target_lang: ja
+    note:
+      vi: 謎に包まれる - bị bao phủ trong bí ẩn; めく là động từ, không đặt trước trợ từ に. Trước danh từ dùng 謎めいた (謎めいた人物).
+  - type: common_mistake
+    wrong: 彼は人と会わないきらいだ。
+    right: 彼は人と会いたがらないきらいがある。
+    target_lang: ja
+    note:
+      vi: Mẫu đầy đủ là ～きらいがある; bỏ がある thì câu thành "ghét" (嫌い) và sai ngữ pháp.
+  - type: summary
+    points:
+      - vi: Giới thiệu nghề song song - かたわら; dù A hay B - であれ～であれ.
+      - vi: Tả phong cách - 黒ずくめ, 謎めいた; nhận xét tính cách - きらいがある.
+      - vi: Suy đoán cảm xúc - 想像 / 察する + に難くない.
+      - vi: 謎 - bí ẩn · 成果 - thành quả.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u8-review-listen-nazo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-nazo
+    prompt:
+      audio_asset_id: null
+      fallback_text: なぜ彼が筆を折ったのかは、今も謎のままだ。
+      options:
+        - { id: a3k, text: Vì sao ông ấy ngừng viết đến nay vẫn là điều bí ẩn., lang: vi }
+        - { id: b8m, text: Ông ấy đã giải thích rõ vì sao ngừng viết., lang: vi }
+        - { id: c4n, text: Ông ấy làm gãy bút nên không viết được nữa., lang: vi }
+        - { id: d9p, text: Ông ấy vẫn đang viết sách mới., lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: 筆を折る - (thành ngữ) gác bút, ngừng sáng tác, không phải bẻ gãy bút thật; 謎のままだ - vẫn là điều bí ẩn.
+    display_answer: Vì sao ông ấy ngừng viết đến nay vẫn là điều bí ẩn.
+
+  - key: ja:exercise:n1-u8-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u8-gram-kirai-ga-aru
+    prompt:
+      stem: 'Đọc đoạn: 「彼は医師として働くかたわら、二十冊以上の小説を発表した。ただ、作品の中で自分を語ることを避けるきらいがあり、読者には謎めいた作家として映っている。」 Người viết nhận xét gì về nhà văn?'
+      stem_lang: vi
+      options:
+        - { id: e5q, text: Ông có khuynh hướng tránh nói về bản thân trong tác phẩm nên độc giả thấy ông bí ẩn., lang: vi }
+        - { id: f1r, text: Ông bỏ nghề bác sĩ để chuyên tâm viết tiểu thuyết., lang: vi }
+        - { id: g6s, text: Ông thường kể chuyện đời mình trong các tác phẩm., lang: vi }
+        - { id: h2t, text: Độc giả không biết ông đã viết bao nhiêu tiểu thuyết., lang: vi }
+    answer:
+      correct_option_id: e5q
+    explanation:
+      vi: 語ることを避けるきらいがあり - có khuynh hướng tránh kể về mình; 謎めいた作家として映る - hiện lên như một nhà văn bí ẩn. かたわら cho biết ông vẫn làm bác sĩ, không bỏ nghề.
+    display_answer: Ông có khuynh hướng tránh nói về bản thân trong tác phẩm nên độc giả thấy ông bí ẩn.
+
+  - key: ja:exercise:n1-u8-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-gatera
+    prompt:
+      template: "取材の後、記者は散歩{{b1}}、作家がよく通った喫茶店を訪ねた。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Sau buổi phỏng vấn, phóng viên tiện đi dạo ghé thăm quán cà phê mà nhà văn hay lui tới."
+        - "Gợi ý: hậu tố \"tiện thể, trong cùng một chuyến đi\" của bài 2."
+    answer:
+      blanks:
+        b1: [がてら, のついでに]
+    known_wrong:
+      - answer: かたわら
+        feedback_vi: かたわら là hoạt động song song lâu dài; tiện đi dạo ghé quán là がてら.
+        error_tag: katawara_gatera
+      - answer: まみれ
+        feedback_vi: まみれ là lấm đầy (bùn, mồ hôi), không hợp nghĩa.
+        error_tag: meaning
+    explanation:
+      vi: 散歩がてら + 訪ねた - nhân tiện đi dạo, ghé thăm. Vế sau là động từ di chuyển - khuôn quen thuộc của がてら.
+    display_answer: 取材の後、記者は散歩がてら、作家がよく通った喫茶店を訪ねた。
+
+  - key: ja:exercise:n1-u8-review-mcq-seika
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-seika
+    prompt:
+      stem: 'Chọn từ hợp nhất: 新しい治療法の研究は、十年かけてようやく ＿＿ を上げた。 ("Nghiên cứu phương pháp điều trị mới, sau mười năm cuối cùng đã đạt thành quả.")'
+      stem_lang: vi
+      options:
+        - { id: i8u, text: 成果, lang: ja }
+        - { id: j3v, text: 謎, lang: ja }
+        - { id: k7w, text: 汗, lang: ja }
+        - { id: l2x, text: 皮肉, lang: ja }
+    answer:
+      correct_option_id: i8u
+    explanation:
+      vi: 成果を上げる - đạt thành quả (cụm cố định). 謎 là điều bí ẩn, 汗 là mồ hôi, 皮肉 là mỉa mai - không đi với 上げる theo nghĩa này.
+    display_answer: 成果
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u8-review-fill-meku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-meku
+    prompt:
+      template: "作家は質問には答えず、ただ謎{{b1}}笑みを浮かべるだけだった。(đầy bí ẩn - trước danh từ)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [めいた]
+    known_wrong:
+      - answer: めく
+        feedback_vi: Trước danh từ 笑み dùng めいた, không dùng めく.
+        error_tag: meku_form
+      - answer: まみれの
+        feedback_vi: まみれ là lấm đầy thứ dính bám; "nụ cười bí ẩn" là 謎めいた笑み.
+        error_tag: meku_mamire
+    explanation:
+      vi: 謎めいた + 笑み - nụ cười đầy bí ẩn; 浮かべる - nở (nụ cười). めいた là dạng nối danh từ của めく.
+    display_answer: 作家は質問には答えず、ただ謎めいた笑みを浮かべるだけだった。
+
+  - key: ja:exercise:n1-u8-review-write-katawara
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-katawara
+    prompt:
+      source_text: Bên cạnh việc điều hành nhà hàng, cô ấy còn viết sách về ẩm thực. (dùng かたわら)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼女はレストランを経営するかたわら、料理の本を書いている。
+        - 彼女はレストランを経営するかたわら、料理の本を執筆している。
+        - 彼女はレストランを経営するかたわら、食に関する本を書いている。
+        - 彼女はレストランの経営のかたわら、料理の本を書いている。
+        - 彼女はレストランを経営するかたわら、料理についての本を書いている。
+        - 彼女はレストランを経営するかたわら、料理の本も書いている。
+        - 彼女はレストランを経営するかたわら、料理の本を書いています。
+        - かのじょはレストランをけいえいするかたわら、りょうりのほんをかいている。
+    known_wrong:
+      - answer: 彼女はレストランを経営しがてら、料理の本を書いている。
+        feedback_vi: がてら cần một chuyến đi; hai nghề song song lâu dài dùng かたわら.
+        error_tag: katawara_gatera
+      - answer: 彼女はレストランを経営するのかたわら、料理の本を書いている。
+        feedback_vi: Động từ nối trực tiếp với かたわら; の chỉ đi sau danh từ (経営のかたわら).
+        error_tag: katawara_form
+    explanation:
+      vi: V-る + かたわら - bên cạnh việc..., còn...; 経営する - điều hành, kinh doanh. ている cho thấy cả hai việc đều đang tiếp diễn.
+    display_answer: 彼女はレストランを経営するかたわら、料理の本を書いている。
+
+  - key: ja:exercise:n1-u8-review-write-deare
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-de-are
+    prompt:
+      source_text: Dù là nhà văn nổi tiếng đi nữa, ông ấy vẫn tự tay trả lời thư của độc giả. (dùng たとえ～であれ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - たとえ有名な作家であれ、彼は読者の手紙に自分で返事を書いている。
+        - たとえ有名作家であれ、彼は読者の手紙に自分で返事を書いている。
+        - 彼はたとえ有名な作家であれ、読者の手紙に自分で返事を書いている。
+        - たとえ有名な作家であれ、彼は読者からの手紙に自分で返事を書いている。
+        - たとえ有名な作家であれ、彼は読者の手紙に自ら返事を書いている。
+        - たとえ有名な作家であれ、彼は読者の手紙に自分で返事を書く。
+        - たとえ有名な作家であれ、彼は読者の手紙に自分で返事をしている。
+        - たとえゆうめいなさっかであれ、かれはどくしゃのてがみにじぶんでへんじをかいている。
+    known_wrong:
+      - answer: たとえ有名な作家であれば、彼は読者の手紙に自分で返事を書いている。
+        feedback_vi: であれば là điều kiện "nếu là"; "dù là" là であれ.
+        error_tag: deare_form
+      - answer: たとえ有名な作家であれ、彼は読者の手紙を無視している。
+        feedback_vi: Câu gốc là "vẫn tự tay trả lời thư", không phải "phớt lờ".
+        error_tag: meaning
+    explanation:
+      vi: たとえ + N + であれ - dù là N đi nữa; 自分で / 自ら - tự mình; 手紙に返事を書く - viết thư trả lời.
+    display_answer: たとえ有名な作家であれ、彼は読者の手紙に自分で返事を書いている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u8-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u8-gram-ni-kataku-nai
+    prompt:
+      source_text: 二つの仕事を三十年も続けてきた彼の苦労は、想像に難くない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không khó để hình dung những vất vả của ông khi suốt ba mươi năm làm cùng lúc hai công việc.
+        - Không khó để hình dung nỗi vất vả của ông, người đã làm hai công việc suốt ba mươi năm.
+        - Có thể dễ dàng hình dung những khó nhọc của ông khi duy trì hai công việc suốt 30 năm.
+        - Không khó tưởng tượng ra sự vất vả của ông khi đã làm hai việc suốt ba mươi năm.
+        - Ông đã làm hai công việc suốt ba mươi năm, những vất vả ấy không khó để hình dung.
+        - Không khó để hình dung sự vất vả của ông khi gắn bó với hai công việc suốt 30 năm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thật khó để hình dung ông đã làm hai công việc suốt ba mươi năm.
+        feedback_vi: 想像に難くない là "không khó để hình dung" - ngược với "thật khó".
+        error_tag: meaning
+    explanation:
+      vi: 二つの仕事を三十年も続けてきた - đã duy trì hai công việc tận ba mươi năm (も nhấn mạnh); 苦労 - vất vả; 想像に難くない - không khó để hình dung.
+    display_answer: Không khó để hình dung những vất vả của ông khi suốt ba mươi năm làm cùng lúc hai công việc.
+
+  - key: ja:exercise:n1-u8-review-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-zukume
+    prompt:
+      stem: Bạn viết một câu tả ngày ra mắt sách của nhà văn - được giải thưởng, sách bán chạy, có tin vui về gia đình. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: m2y, text: 受賞に重版、家族の慶事と、彼にとってはうれしいことずくめの一年だった。, lang: ja }
+        - { id: n7z, text: 受賞に重版、家族の慶事と、彼にとってはうれしいことまみれの一年だった。, lang: ja }
+        - { id: o1a, text: 受賞に重版、家族の慶事と、彼にとってはうれしいことだらけめいた一年だった。, lang: ja }
+        - { id: p6b, text: 受賞に重版、家族の慶事と、彼にとってはうれしいことのきらいがある一年だった。, lang: ja }
+    answer:
+      correct_option_id: m2y
+    explanation:
+      vi: Toàn chuyện vui - うれしいことずくめ (ずくめ dùng được cho điều tốt). まみれ là lấm đầy thứ dính bám; だらけめいた ghép sai hai mẫu; きらいがある là khuynh hướng xấu.
+    display_answer: 受賞に重版、家族の慶事と、彼にとってはうれしいことずくめの一年だった。
+
+  - key: ja:exercise:n1-u8-review-write-kirai
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-kirai-ga-aru
+    prompt:
+      source_text: Các nhà phê bình có khuynh hướng đánh giá thấp tác phẩm của tác giả trẻ. (dùng きらいがある)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 評論家は若い作家の作品を低く評価するきらいがある。
+        - 評論家たちは若い作家の作品を低く評価するきらいがある。
+        - 評論家は若手作家の作品を低く評価するきらいがある。
+        - 評論家は若い作家の作品を過小評価するきらいがある。
+        - 評論家は、若い作家の作品を低く評価するきらいがある。
+        - 批評家は若い作家の作品を低く評価するきらいがある。
+        - 評論家は若い作家の作品を低く見るきらいがある。
+        - ひょうろんかはわかいさっかのさくひんをひくくひょうかするきらいがある。
+    known_wrong:
+      - answer: 評論家は若い作家の作品を低く評価するきらいだ。
+        feedback_vi: Mẫu đầy đủ là きらいがある; thiếu がある thì câu sai và thành "ghét".
+        error_tag: kirai_form
+      - answer: 評論家は若い作家の作品を高く評価するきらいがある。
+        feedback_vi: Câu gốc là "đánh giá thấp" - 低く評価する; きらいがある cũng chỉ dùng cho khuynh hướng không tốt.
+        error_tag: meaning
+    explanation:
+      vi: V-る + きらいがある - có khuynh hướng (xấu); 低く評価する / 過小評価する - đánh giá thấp; 若手作家 - tác giả trẻ.
+    display_answer: 評論家は若い作家の作品を低く評価するきらいがある。
+
+  - key: ja:exercise:n1-u8-review-write-mamire
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-mamire
+    prompt:
+      source_text: Bản thảo cuối cùng của nhà văn được tìm thấy trong căn phòng phủ đầy bụi. (dùng ほこりまみれ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 作家の最後の原稿は、ほこりまみれの部屋で見つかった。
+        - 作家の最後の原稿はほこりまみれの部屋で見つかった。
+        - 作家の最後の原稿は、埃まみれの部屋で見つかった。
+        - 作家の最後の原稿は、ほこりまみれの部屋から見つかった。
+        - 作家の遺稿は、ほこりまみれの部屋で見つかった。
+        - ほこりまみれの部屋で、作家の最後の原稿が見つかった。
+        - 作家の最後の原稿は、ほこりまみれの部屋で発見された。
+        - さっかのさいごのげんこうは、ほこりまみれのへやでみつかった。
+    known_wrong:
+      - answer: 作家の最後の原稿は、ほこりずくめの部屋で見つかった。
+        feedback_vi: ずくめ dùng với danh từ cố định (黒, いいこと); căn phòng phủ bụi là ほこりまみれ.
+        error_tag: zukume_mamire
+      - answer: 作家の最後の原稿は、ほこりめいた部屋で見つかった。
+        feedback_vi: めいた là "có dáng dấp"; phủ đầy bụi là まみれ.
+        error_tag: meku_mamire
+    explanation:
+      vi: ほこりまみれの部屋 - căn phòng phủ đầy bụi; 原稿 - bản thảo; 遺稿 - bản thảo để lại sau khi mất; 見つかった - được tìm thấy.
+    display_answer: 作家の最後の原稿は、ほこりまみれの部屋で見つかった。
+
+  - key: ja:exercise:n1-u8-review-wb-kataku
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-ni-kataku-nai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Không khó để hình dung nỗi buồn của độc giả khi nghe tin ông qua đời.\""
+      tokens:
+        - { id: k4, text: 想像に難くない }
+        - { id: k2, text: 聞いた読者の }
+        - { id: k5, text: 想像しがてら }
+        - { id: k1, text: 彼の死を }
+        - { id: k3, text: 悲しみは }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: 彼の死を聞いた読者の悲しみ - nỗi buồn của độc giả khi nghe tin ông mất; は想像に難くない - không khó để hình dung. がてら cần chuyến đi nên 想像しがてら sai.
+    display_answer: 彼の死を聞いた読者の悲しみは想像に難くない。

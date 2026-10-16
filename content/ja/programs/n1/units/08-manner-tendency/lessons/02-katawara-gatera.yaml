@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u8-katawara-gatera
+order_index: 2
+level: n1
+title:
+  vi: Song song và tiện thể - ～かたわら, ～がてら
+objectives:
+  - vi: Giới thiệu người làm hai việc song song lâu dài bằng ～かたわら.
+  - vi: Nói "nhân tiện đi..., kết hợp..." bằng ～がてら.
+  - vi: Phân biệt かたわら, がてら, ついでに (N3) và ながら.
+estimated_minutes: 22
+skills: [grammar, reading, speaking]
+prerequisites: [ja:lesson:n1-u8-de-are]
+items:
+  - item: ja:item:n1-u8-gram-katawara
+  - item: ja:item:n1-u8-gram-gatera
+  - item: ja:item:n1-u8-fukugyou
+  - item: ja:item:n1-u8-shippitsu
+  - item: ja:item:n3-gram-tsuide-ni
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu phần giới thiệu nhân vật kiểu "Bên cạnh công việc bác sĩ, ông còn viết tiểu thuyết" và nói tự nhiên "Nhân tiện đi dạo, tôi ghé bưu điện".
+  - type: explain
+    text:
+      vi: 'V-る / N-の + かたわら - "bên cạnh (việc chính)..., còn...". Hai hoạt động kéo dài song song trong một giai đoạn, thường là nghề chính và việc phụ: 会社勤めのかたわら、絵を描いている. Văn viết, tiểu sử, phỏng vấn.'
+  - type: explain
+    text:
+      vi: 'Vます-gốc / N + がてら - "nhân tiện, kết hợp": một chuyến đi với hai mục đích. 散歩がてら, 買い物がてら, 見舞いがてら. Vế sau thường là động từ di chuyển - 行く, 寄る, 歩く, 来る.'
+  - type: deep_explain
+    text:
+      vi: 'Bốn mẫu dễ lẫn: ながら - hai hành động cùng một lúc (ăn trong khi xem TV); かたわら - hai hoạt động song song cả một thời gian dài (đi làm và học cao học); ついでに (N3) - nhân lúc làm việc A thì làm luôn việc B; がてら - một chuyến đi kết hợp hai mục đích, B nhẹ nhàng như một cái cớ. Tiếng Việt gói cả hai mẫu sau vào "nhân tiện".'
+  - type: example
+    target: 父は銀行に勤めるかたわら、地域の子どもに野球を教えていた。
+    target_lang: ja
+    translation:
+      vi: Bên cạnh công việc ở ngân hàng, bố tôi còn dạy bóng chày cho trẻ em trong khu phố.
+  - type: example
+    target: 彼女は子育てのかたわら、絵本の執筆を続けている。
+    target_lang: ja
+    translation:
+      vi: Bên cạnh việc nuôi con, cô ấy vẫn tiếp tục viết sách tranh.
+  - type: example
+    target: 天気がいいので、運動がてら駅まで歩いた。
+    target_lang: ja
+    translation:
+      vi: Trời đẹp nên tôi đi bộ ra ga, tiện thể vận động.
+  - type: example
+    target: 友人を空港まで送りがてら、新しくできたカフェに寄った。
+    target_lang: ja
+    translation:
+      vi: Nhân tiện đưa bạn ra sân bay, tôi ghé quán cà phê mới mở.
+  - type: common_mistake
+    wrong: テレビを見るかたわら、ご飯を食べた。
+    right: テレビを見ながら、ご飯を食べた。
+    target_lang: ja
+    note:
+      vi: Hai hành động cùng lúc trong một khoảnh khắc dùng ながら. かたわら dành cho hoạt động kéo dài song song (nghề, học tập).
+  - type: common_mistake
+    wrong: 宿題がてら、音楽を聞いた。
+    right: 宿題をしながら、音楽を聞いた。
+    target_lang: ja
+    note:
+      vi: がてら gần như chỉ đi với việc có di chuyển (散歩, 買い物, 見送り) và vế sau là đi, ghé. Làm bài tập ở nhà không phải một chuyến đi.
+  - type: summary
+    points:
+      - vi: V-る / Nの + かたわら - bên cạnh việc chính, còn... (lâu dài, song song).
+      - vi: Vます / N + がてら - nhân tiện đi..., kết hợp (một chuyến đi, hai mục đích).
+      - vi: ながら - cùng lúc; ついでに - nhân lúc làm A thì làm luôn B.
+      - vi: 副業 - nghề phụ · 執筆 - viết, chấp bút.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u8-katawara-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-katawara
+    prompt:
+      stem: Câu 「その医師は病院で働くかたわら、途上国で医療ボランティアを続けている。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a8k, text: "Bên cạnh công việc ở bệnh viện, vị bác sĩ ấy vẫn tiếp tục làm tình nguyện y tế ở các nước đang phát triển.", lang: vi }
+        - { id: b4m, text: Vị bác sĩ ấy đã nghỉ việc ở bệnh viện để đi tình nguyện., lang: vi }
+        - { id: c9n, text: Vị bác sĩ ấy vừa khám bệnh vừa gọi điện cho tình nguyện viên., lang: vi }
+        - { id: d3p, text: Vị bác sĩ ấy làm tình nguyện thay cho công việc ở bệnh viện., lang: vi }
+    answer:
+      correct_option_id: a8k
+    explanation:
+      vi: 働くかたわら - bên cạnh việc làm (song song, lâu dài); 続けている - vẫn tiếp tục. Không phải bỏ việc, không phải hai hành động cùng một lúc như ながら.
+    display_answer: Bên cạnh công việc ở bệnh viện, vị bác sĩ ấy vẫn tiếp tục làm tình nguyện y tế ở các nước đang phát triển.
+
+  - key: ja:exercise:n1-u8-katawara-listen-gatera
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-gatera
+    prompt:
+      audio_asset_id: null
+      fallback_text: 花見がてら、川沿いの道を歩いて帰ってきた。
+      options:
+        - { id: e2q, text: "Tôi đi bộ về theo con đường ven sông, tiện thể ngắm hoa.", lang: vi }
+        - { id: f7r, text: Tôi đi ngắm hoa bằng xe buýt rồi về nhà., lang: vi }
+        - { id: g1s, text: Tôi không đi ngắm hoa mà về thẳng nhà., lang: vi }
+        - { id: h6t, text: Tôi ngắm hoa ở nhà qua cửa sổ., lang: vi }
+    answer:
+      correct_option_id: e2q
+    explanation:
+      vi: 花見がてら - tiện thể ngắm hoa; 川沿いの道を歩いて帰ってきた - đi bộ về theo đường ven sông. がてら là một chuyến đi kết hợp hai mục đích.
+    display_answer: Tôi đi bộ về theo con đường ven sông, tiện thể ngắm hoa.
+
+  - key: ja:exercise:n1-u8-katawara-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-katawara
+    prompt:
+      stem: 'Chọn dạng đúng: 彼は大学院での研究の ＿＿、小さな会社を経営している。 ("Bên cạnh việc nghiên cứu ở cao học, anh ấy còn điều hành một công ty nhỏ.")'
+      stem_lang: vi
+      options:
+        - { id: i5u, text: かたわら, lang: ja }
+        - { id: j9v, text: ながら, lang: ja }
+        - { id: k4w, text: がてら, lang: ja }
+        - { id: l8x, text: かたわらに, lang: ja }
+    answer:
+      correct_option_id: i5u
+    explanation:
+      vi: Hai hoạt động song song lâu dài (nghiên cứu và điều hành công ty), nối sau の - かたわら. ながら không đi sau の; がてら cần chuyến đi; かたわらに ở đây đổi nghĩa thành "bên cạnh (vị trí)".
+    display_answer: かたわら
+
+  - key: ja:exercise:n1-u8-katawara-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-gatera
+    prompt:
+      template: "買い物{{b1}}、図書館に本を返しに行った。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Nhân tiện đi mua sắm, tôi đi trả sách ở thư viện."
+        - "Gợi ý: hậu tố 3 chữ kana \"tiện thể (trong một chuyến đi)\"."
+    answer:
+      blanks:
+        b1: [がてら, のついでに]
+    known_wrong:
+      - answer: かたわら
+        feedback_vi: かたわら dùng cho hoạt động song song lâu dài; một chuyến đi mua sắm kết hợp việc khác dùng がてら.
+        error_tag: katawara_gatera
+      - answer: ながら
+        feedback_vi: ながら không gắn trực tiếp vào danh từ 買い物; và nghĩa là "cùng lúc", không phải "nhân tiện".
+        error_tag: nagara
+    explanation:
+      vi: 買い物がてら - nhân tiện đi mua sắm. のついでに cũng đúng nghĩa; がてら nhấn một chuyến đi, hai mục đích, vế sau là động từ di chuyển 行った.
+    display_answer: 買い物がてら、図書館に本を返しに行った。
+
+  - key: ja:exercise:n1-u8-katawara-mcq-fukugyou
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u8-fukugyou
+    prompt:
+      stem: Câu 「彼は週末だけ副業として翻訳をしている。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: m6y, text: Anh ấy chỉ làm dịch thuật vào cuối tuần như một nghề phụ., lang: vi }
+        - { id: n2z, text: Anh ấy là phiên dịch viên chuyên nghiệp làm cả tuần., lang: vi }
+        - { id: o7a, text: Anh ấy đã bỏ nghề dịch thuật vào cuối tuần., lang: vi }
+        - { id: p1b, text: Anh ấy nhờ người khác dịch vào cuối tuần., lang: vi }
+    answer:
+      correct_option_id: m6y
+    explanation:
+      vi: 副業として - như nghề phụ (ngoài việc chính); 週末だけ - chỉ cuối tuần.
+    display_answer: Anh ấy chỉ làm dịch thuật vào cuối tuần như một nghề phụ.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u8-katawara-fill-recall
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u8-gram-katawara
+    prompt:
+      template: "姉は会社で働く{{b1}}、夜間の大学に通っている。(bên cạnh việc chính)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [かたわら]
+    known_wrong:
+      - answer: がてら
+        feedback_vi: がてら là tiện thể trong một chuyến đi; đi làm và học đêm là hai hoạt động song song lâu dài - かたわら.
+        error_tag: katawara_gatera
+      - answer: ついでに
+        feedback_vi: ついでに là làm thêm một việc nhân lúc làm việc chính, không diễn tả hai hoạt động lâu dài song song.
+        error_tag: katawara_tsuide
+    explanation:
+      vi: V-る + かたわら - bên cạnh việc..., còn... 夜間の大学に通う - học đại học buổi tối. Hai việc kéo dài nhiều năm nên dùng かたわら.
+    display_answer: 姉は会社で働くかたわら、夜間の大学に通っている。
+
+  - key: ja:exercise:n1-u8-katawara-write-gatera
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-gatera
+    prompt:
+      source_text: Nhân tiện đi dạo cùng con chó, tôi ghé cửa hàng tiện lợi. (dùng がてら)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 犬の散歩がてら、コンビニに寄った。
+        - 犬の散歩がてら、コンビニに寄りました。
+        - 犬の散歩がてら、コンビニへ寄った。
+        - 犬の散歩がてらコンビニに寄った。
+        - 犬と散歩がてら、コンビニに寄った。
+        - 犬を散歩させがてら、コンビニに寄った。
+        - いぬのさんぽがてら、コンビニによった。
+    known_wrong:
+      - answer: 犬の散歩のかたわら、コンビニに寄った。
+        feedback_vi: かたわら là hoạt động song song lâu dài; một lần đi dạo tiện ghé cửa hàng dùng がてら.
+        error_tag: katawara_gatera
+      - answer: 犬の散歩がてら、コンビニを寄った。
+        feedback_vi: Ghé vào một nơi là ～に寄る, không dùng を.
+        error_tag: particle
+    explanation:
+      vi: N + がてら - nhân tiện (trong chuyến đi); コンビニに寄る - ghé cửa hàng tiện lợi. Vế sau là động từ di chuyển - đúng khuôn của がてら.
+    display_answer: 犬の散歩がてら、コンビニに寄った。
+
+  - key: ja:exercise:n1-u8-katawara-write-shippitsu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-shippitsu
+    prompt:
+      source_text: Bên cạnh việc dạy học, giáo sư ấy còn viết sách về lịch sử. (dùng かたわら và 執筆)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - その教授は教えるかたわら、歴史の本を執筆している。
+        - その教授は授業のかたわら、歴史の本を執筆している。
+        - その教授は教育のかたわら、歴史の本を執筆している。
+        - その教授は大学で教えるかたわら、歴史の本を執筆している。
+        - その教授は教えるかたわら、歴史に関する本を執筆している。
+        - その教授は教えるかたわら、歴史の本を執筆しています。
+        - その教授は教鞭をとるかたわら、歴史の本を執筆している。
+        - そのきょうじゅはおしえるかたわら、れきしのほんをしっぴつしている。
+    known_wrong:
+      - answer: その教授は教えるがてら、歴史の本を執筆している。
+        feedback_vi: がてら cần một chuyến đi; hai nghề song song lâu dài dùng かたわら.
+        error_tag: katawara_gatera
+      - answer: その教授は教えるのかたわら、歴史の本を執筆している。
+        feedback_vi: Động từ nối trực tiếp với かたわら (教えるかたわら); の chỉ dùng sau danh từ (授業のかたわら).
+        error_tag: katawara_form
+    explanation:
+      vi: V-る / Nの + かたわら - bên cạnh việc chính; 執筆する - viết (sách, bài chuyên môn). 教鞭をとる là cách nói trang trọng của "dạy học".
+    display_answer: その教授は教えるかたわら、歴史の本を執筆している。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u8-katawara-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u8-gram-katawara
+    prompt:
+      source_text: 祖母は農業を営むかたわら、村の歴史を記録し続けてきた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bên cạnh việc làm nông, bà tôi đã luôn ghi chép lại lịch sử của làng.
+        - Bên cạnh nghề nông, bà tôi vẫn tiếp tục ghi chép lịch sử làng.
+        - Vừa làm nông, bà tôi vừa ghi chép lịch sử của làng suốt bao năm.
+        - Bà tôi vừa làm nông vừa liên tục ghi lại lịch sử của làng.
+        - Bên cạnh công việc đồng áng, bà tôi đã không ngừng ghi chép lịch sử làng.
+        - Song song với việc làm nông, bà tôi vẫn luôn ghi chép lịch sử của ngôi làng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bà tôi đã bỏ nghề nông để ghi chép lịch sử làng.
+        feedback_vi: かたわら là làm song song, không phải bỏ việc chính.
+        error_tag: meaning
+    explanation:
+      vi: 農業を営む - làm nghề nông (trang trọng); かたわら - bên cạnh, song song; 記録し続けてきた - đã tiếp tục ghi chép đến nay. "Vừa... vừa..." cũng là cách dịch tự nhiên khi nói hai việc lâu dài.
+    display_answer: Bên cạnh việc làm nông, bà tôi đã luôn ghi chép lại lịch sử của làng.
+
+  - key: ja:exercise:n1-u8-katawara-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-gram-gatera
+    prompt:
+      stem: Bạn nhắn tin cho đồng nghiệp người Nhật rằng tối nay bạn sẽ ghé nhà họ trả quyển sách, tiện thể đi dạo. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: q2c, text: 散歩がてら、今夜本を返しに行きますね。, lang: ja }
+        - { id: r7d, text: 散歩のかたわら、今夜本を返しに行きますね。, lang: ja }
+        - { id: s3e, text: 散歩しがてらながら、今夜本を返しに行きますね。, lang: ja }
+        - { id: t8f, text: 散歩がてらに本を返すことに決めております。, lang: ja }
+    answer:
+      correct_option_id: q2c
+    explanation:
+      vi: 散歩がてら + 返しに行く - tiện đi dạo ghé trả sách; ね làm câu nhắn thân thiện. かたわら dành cho hoạt động lâu dài; がてらながら chồng hai mẫu; phương án cuối dùng がてらに và khiêm nhường cứng nhắc, không hợp tin nhắn.
+    display_answer: 散歩がてら、今夜本を返しに行きますね。
+
+  - key: ja:exercise:n1-u8-katawara-write-fukugyou
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u8-fukugyou
+    prompt:
+      source_text: Bên cạnh công việc chính, ngày càng nhiều người bắt đầu làm nghề phụ. (dùng かたわら và 副業)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 本業のかたわら、副業を始める人が増えている。
+        - 本業のかたわら副業を始める人が増えている。
+        - 本業のかたわら、副業を始める人が増えています。
+        - 本業のかたわら、副業を始める人がますます増えている。
+        - 本業のかたわら、副業を始める人が多くなっている。
+        - 本職のかたわら、副業を始める人が増えている。
+        - 本業を続けるかたわら、副業を始める人が増えている。
+        - ほんぎょうのかたわら、ふくぎょうをはじめるひとがふえている。
+    known_wrong:
+      - answer: 本業がてら、副業を始める人が増えている。
+        feedback_vi: Việc chính và nghề phụ là hai hoạt động lâu dài - かたわら; がてら cần một chuyến đi.
+        error_tag: katawara_gatera
+      - answer: 本業のかたわら、副業を始める人が減っている。
+        feedback_vi: Câu gốc là "ngày càng nhiều" - 増えている.
+        error_tag: meaning
+    explanation:
+      vi: 本業 - công việc chính; 本業のかたわら - bên cạnh việc chính; 副業を始める - bắt đầu nghề phụ; 増えている - đang tăng.
+    display_answer: 本業のかたわら、副業を始める人が増えている。
+
+  - key: ja:exercise:n1-u8-katawara-wb-tsuide
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-tsuide-ni
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nhân tiện đi rút tiền ở ngân hàng, tôi mua luôn tem ở bưu điện.\""
+      tokens:
+        - { id: t4, text: 切手も買った }
+        - { id: t2, text: ついでに }
+        - { id: t5, text: かたわら }
+        - { id: t1, text: 銀行でお金をおろした }
+        - { id: t3, text: 郵便局で }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: V-た + ついでに - nhân lúc làm việc chính thì làm thêm việc phụ. かたわら không đi sau thể た và chỉ hoạt động lâu dài.
+    display_answer: 銀行でお金をおろしたついでに郵便局で切手も買った。

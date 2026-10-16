@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u8-dake-atte
+order_index: 2
+level: n2
+title:
+  vi: Quả không hổ danh, chính vì vậy càng - ～だけあって, ～だけのことはある, ～だけに
+objectives:
+  - vi: Khen "quả không hổ là..." bằng ～だけあって / ～だけのことはある.
+  - vi: Nói "chính vì... nên càng..." bằng ～だけに, cả nghĩa tốt lẫn xấu.
+  - vi: Không nhầm だけあって / だけに với だけ (chỉ).
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u8-kara-niwa]
+items:
+  - item: ja:item:n2-u8-gram-dake-atte
+  - item: ja:item:n2-u8-gram-dake-ni
+  - item: ja:item:n2-u8-hyouban
+  - item: ja:item:n2-u8-ichiryuu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn khen tự nhiên kiểu người Nhật - "quả không hổ là khách sạn hạng sang, phục vụ tuyệt vời" - và nói được "chính vì kỳ vọng nên càng thất vọng".
+  - type: explain
+    text:
+      vi: 'Thể thường (なAな / N) + だけあって - "quả không hổ là..., đúng là... có khác". Kết quả xứng với danh tiếng, nỗ lực, giá tiền: 一流ホテルだけあって、サービスが素晴らしい. Hay đi với さすが.'
+  - type: explain
+    text:
+      vi: 'Đặt cuối câu: ～だけのことはある - "thật xứng đáng với...": この味なら、行列ができるだけのことはある (vị thế này thì người ta xếp hàng là phải).'
+  - type: explain
+    text:
+      vi: 'Thể thường + だけに - "chính vì..., nên càng...". Lý do khiến cảm xúc, kết quả mạnh hơn bình thường; dùng được cả chiều xấu: 楽しみにしていただけに、中止は残念だ (chính vì háo hức nên huỷ càng tiếc).'
+  - type: deep_explain
+    text:
+      vi: 'だけあって chỉ dùng để khen, đánh giá tích cực. だけに là "càng", hai chiều - người Việt hay dùng だけあって cho chuyện xấu là sai. Còn だけ đứng một mình chỉ là "chỉ" - 一つだけ (chỉ một cái).'
+  - type: example
+    target: さすがプロの料理人だけあって、包丁の使い方が違う。
+    target_lang: ja
+    translation:
+      vi: Quả không hổ là đầu bếp chuyên nghiệp, cách dùng dao khác hẳn.
+  - type: example
+    target: 評判の店だけあって、平日でも満席だった。
+    target_lang: ja
+    translation:
+      vi: Đúng là quán nổi tiếng có khác, ngày thường mà vẫn kín chỗ.
+  - type: example
+    target: この景色を見れば、遠くから来ただけのことはある。
+    target_lang: ja
+    translation:
+      vi: Ngắm cảnh này thì việc đi từ xa đến thật xứng đáng.
+  - type: example
+    target: 長い間準備してきただけに、失敗したショックは大きかった。
+    target_lang: ja
+    translation:
+      vi: Chính vì đã chuẩn bị suốt thời gian dài nên cú sốc thất bại càng lớn.
+  - type: common_mistake
+    wrong: 高いホテルだけあって、サービスがひどかった。
+    right: 高いホテルなのに、サービスがひどかった。
+    target_lang: ja
+    note:
+      vi: だけあって chỉ dùng để khen kết quả xứng đáng. Kết quả trái với kỳ vọng dùng のに / わりに.
+  - type: common_mistake
+    wrong: 有名だだけあって、観光客が多い。
+    right: 有名なだけあって、観光客が多い。
+    target_lang: ja
+    note:
+      vi: Tính từ な giữ な trước だけ - 有名なだけあって.
+  - type: summary
+    points:
+      - vi: ～だけあって / だけのことはある - quả không hổ là (khen).
+      - vi: ～だけに - chính vì... nên càng (tốt hoặc xấu).
+      - vi: なA + な / N + (trực tiếp) + だけあって, だけに.
+      - vi: 評判 - tiếng tăm, đánh giá; 一流 - hạng nhất.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u8-dakeatte-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      stem: 'Câu 毎日練習しているだけあって、彼女のピアノは上手だ。 nghĩa là gì?'
+      stem_lang: vi
+      options:
+        - { id: q4b, text: "Quả không hổ là ngày nào cũng tập, cô ấy chơi piano giỏi.", lang: vi }
+        - { id: u9f, text: Ngày nào cũng tập nhưng cô ấy chơi piano chưa giỏi., lang: vi }
+        - { id: y5j, text: Cô ấy chỉ tập piano mỗi ngày thôi., lang: vi }
+        - { id: c1n, text: Vì chơi piano giỏi nên cô ấy không cần tập mỗi ngày., lang: vi }
+    answer:
+      correct_option_id: q4b
+    explanation:
+      vi: 練習しているだけあって - quả không hổ là có tập luyện; kết quả (chơi giỏi) xứng với nỗ lực. Không phải だけ "chỉ".
+    display_answer: Quả không hổ là ngày nào cũng tập, cô ấy chơi piano giỏi.
+
+  - key: ja:exercise:n2-u8-dakeatte-listen-dakeni
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 信じていた友人だっただけに、裏切られた悲しみは深かった。
+      options:
+        - { id: d6r, text: Chính vì là người bạn mình tin tưởng nên nỗi buồn bị phản bội càng sâu., lang: vi }
+        - { id: h2v, text: Vì là bạn thân nên tôi không buồn khi bị phản bội., lang: vi }
+        - { id: l7z, text: Tôi chỉ tin một người bạn duy nhất., lang: vi }
+        - { id: p3d, text: Người bạn ấy quả không hổ là người đáng tin., lang: vi }
+    answer:
+      correct_option_id: d6r
+    explanation:
+      vi: 友人だっただけに - chính vì đã là người bạn (mình tin) nên...; 悲しみは深かった - nỗi buồn càng sâu. だけに ở đây mang nghĩa xấu, không phải lời khen.
+    display_answer: Chính vì là người bạn mình tin tưởng nên nỗi buồn bị phản bội càng sâu.
+
+  - key: ja:exercise:n2-u8-dakeatte-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      stem: 'Chọn từ hợp nhất: 十年もアメリカに住んでいた＿＿、彼の英語は自然だ。 ("Quả không hổ là đã sống ở Mỹ mười năm, tiếng Anh của anh ấy rất tự nhiên.")'
+      stem_lang: vi
+      options:
+        - { id: e8h, text: だけあって, lang: ja }
+        - { id: i3l, text: だけしか, lang: ja }
+        - { id: m7p, text: だけなのに, lang: ja }
+        - { id: q2t, text: だけかねない, lang: ja }
+    answer:
+      correct_option_id: e8h
+    explanation:
+      vi: Kết quả tốt xứng với trải nghiệm - だけあって. だけしか cần phủ định phía sau; だけなのに mang ý trái kỳ vọng; だけかねない không tồn tại.
+    display_answer: だけあって
+
+  - key: ja:exercise:n2-u8-dakeatte-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-ichiryuu
+    prompt:
+      template: "{{b1}}のレストランだけあって、料理も雰囲気も最高だった。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Quả không hổ là nhà hàng hạng nhất, cả món ăn lẫn không khí đều tuyệt vời."
+        - "Gợi ý: từ Hán hai chữ - \"nhất lưu\" (いちりゅう)."
+    answer:
+      blanks:
+        b1: [一流, いちりゅう]
+    known_wrong:
+      - answer: 一番
+        feedback_vi: 一番 là "số một" trong một nhóm; nói đẳng cấp hàng đầu dùng 一流.
+        error_tag: vocab_meaning
+      - answer: いちりゅ
+        feedback_vi: りゅう là âm dài - いちりゅう.
+        error_tag: long_vowel
+    explanation:
+      vi: 一流のレストラン - nhà hàng hạng nhất. Danh tiếng (一流) + kết quả xứng đáng (最高) - đúng chỗ của だけあって.
+    display_answer: 一流のレストランだけあって、料理も雰囲気も最高だった。
+
+  - key: ja:exercise:n2-u8-dakeatte-wb-hyouban
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u8-hyouban
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bác sĩ đó được mọi người khen là tận tình.\""
+      tokens:
+        - { id: h3, text: 評判がいい }
+        - { id: h1, text: あの医者は }
+        - { id: h4, text: 評判をいい }
+        - { id: h2, text: 親切だと }
+    answer:
+      orders:
+        - [h1, h2, h3]
+    explanation:
+      vi: ～と評判がいい - được khen là...; 評判が là chủ ngữ của いい, không dùng を.
+    display_answer: あの医者は親切だと評判がいい。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u8-dakeatte-fill-na
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      template: "この町は歴史が{{b1}}だけあって、古いお寺がたくさんある。(古い)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [古い, ふるい]
+    known_wrong:
+      - answer: 古いな
+        feedback_vi: Tính từ い nối thẳng - 古いだけあって, không thêm な.
+        error_tag: i_adjective
+      - answer: 古く
+        feedback_vi: Trước だけあって dùng thể thường - 古い.
+        error_tag: i_adjective
+    explanation:
+      vi: 歴史が古いだけあって - quả không hổ là có lịch sử lâu đời. Tính từ い giữ nguyên trước だけあって.
+    display_answer: この町は歴史が古いだけあって、古いお寺がたくさんある。
+
+  - key: ja:exercise:n2-u8-dakeatte-write-dakeni
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-ni
+    prompt:
+      source_text: Chính vì đã rất mong chờ nên việc buổi hoà nhạc bị huỷ càng đáng tiếc. (dùng だけに)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 楽しみにしていただけに、コンサートの中止は残念だ。
+        - 楽しみにしていただけに、コンサートが中止になって残念だ。
+        - 楽しみにしていただけに、コンサートの中止は残念です。
+        - 楽しみにしていただけに、コンサートが中止になったのは残念だ。
+        - すごく楽しみにしていただけに、コンサートの中止は残念だ。
+        - 楽しみにしていただけに、コンサートの中止はとても残念だ。
+        - 楽しみにしていただけに、ライブの中止は残念だ。
+        - たのしみにしていただけに、コンサートのちゅうしはざんねんだ。
+    known_wrong:
+      - answer: 楽しみにしていただけあって、コンサートの中止は残念だ。
+        feedback_vi: だけあって chỉ dùng để khen; "chính vì... nên càng tiếc" dùng だけに.
+        error_tag: dakeatte_dakeni
+      - answer: 楽しみにしていたので、コンサートの中止は残念だけだ。
+        feedback_vi: だけ ở cuối là "chỉ" - sai nghĩa. Cấu trúc đúng là ～ていただけに.
+        error_tag: dake_only
+    explanation:
+      vi: 楽しみにしていた - đã mong chờ; + だけに - chính vì vậy nên càng...; 中止は残念だ - việc huỷ thật tiếc.
+    display_answer: 楽しみにしていただけに、コンサートの中止は残念だ。
+
+  - key: ja:exercise:n2-u8-dakeatte-write-koto
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      source_text: Bánh ngon thế này thì xếp hàng một tiếng cũng thật xứng đáng. (dùng だけのことはある)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - こんなにおいしいケーキなら、一時間並んだだけのことはある。
+        - こんなにおいしいなら、一時間並んだだけのことはある。
+        - このケーキがこんなにおいしいなら、一時間並んだだけのことはある。
+        - こんなにおいしいケーキなら、一時間並ぶだけのことはある。
+        - こんなに美味しいケーキなら、一時間並んだだけのことはある。
+        - こんなにおいしいケーキなら、一時間並んだだけのことはあります。
+        - これだけおいしいケーキなら、一時間並んだだけのことはある。
+        - こんなにおいしいケーキなら、いちじかんならんだだけのことはある。
+    known_wrong:
+      - answer: こんなにおいしいケーキなら、一時間並んだだけだ。
+        feedback_vi: だけだ là "chỉ (xếp hàng) thôi" - sai nghĩa. "Xứng đáng" là だけのことはある.
+        error_tag: dake_only
+      - answer: こんなにおいしいケーキなら、一時間並んだだけに。
+        feedback_vi: だけに cần vế kết quả phía sau; đặt cuối câu để khen dùng だけのことはある.
+        error_tag: dakeni_form
+    explanation:
+      vi: 並んだだけのことはある - đã xếp hàng thật xứng đáng. なら - nếu (ngon) như thế này thì.
+    display_answer: こんなにおいしいケーキなら、一時間並んだだけのことはある。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u8-dakeatte-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-ni
+    prompt:
+      source_text: 期待されていた選手だっただけに、初戦での敗退は大きなニュースになった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chính vì là vận động viên được kỳ vọng nên việc bị loại ngay trận đầu đã trở thành tin lớn.
+        - Chính vì là tuyển thủ được kỳ vọng nhiều nên việc thua ngay trận đầu càng thành tin nóng.
+        - Vì là vận động viên được kỳ vọng nên việc bị loại từ trận đầu càng trở thành tin lớn.
+        - Chính vì là vận động viên được mong đợi nên việc thua ở trận đầu tiên đã thành tin tức lớn.
+        - Chính bởi là tuyển thủ được kỳ vọng, việc bị loại ngay trận mở màn đã trở thành tin lớn.
+        - Đã là vận động viên được kỳ vọng nên việc bị loại ngay trận đầu càng trở thành tin lớn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vận động viên được kỳ vọng đã thắng ngay trận đầu.
+        feedback_vi: 敗退 là "thua, bị loại", không phải "thắng".
+        error_tag: meaning
+    explanation:
+      vi: 期待されていた選手 - vận động viên được kỳ vọng; だっただけに - chính vì là...; 初戦での敗退 - bị loại ở trận đầu.
+    display_answer: Chính vì là vận động viên được kỳ vọng nên việc bị loại ngay trận đầu đã trở thành tin lớn.
+
+  - key: ja:exercise:n2-u8-dakeatte-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-atte
+    prompt:
+      stem: Bạn dẫn khách Nhật đi ăn ở một quán phở nổi tiếng. Khách khen ngon. Bạn muốn nói "Quả là quán nổi tiếng có khác nhỉ." Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: f5t, text: さすが有名な店だけあって、おいしいですね。, lang: ja }
+        - { id: j1x, text: さすが有名な店だけに、おいしくないですね。, lang: ja }
+        - { id: n6b, text: さすが有名だ店だけあって、おいしいですね。, lang: ja }
+        - { id: r2f, text: さすが有名な店だけしか、おいしいですね。, lang: ja }
+    answer:
+      correct_option_id: f5t
+    explanation:
+      vi: さすが～だけあって - quả không hổ là...; 有名な店 giữ な. Phương án だけに…おいしくない sai ý khen; 有名だ店 sai dạng; だけしか cần phủ định.
+    display_answer: さすが有名な店だけあって、おいしいですね。
+
+  - key: ja:exercise:n2-u8-dakeatte-write-hyouban
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u8-hyouban
+    prompt:
+      source_text: Quả không hổ là khách sạn được khen nhiều, nhân viên ai cũng lịch sự. (dùng 評判 và だけあって)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 評判のいいホテルだけあって、スタッフはみんな丁寧だ。
+        - 評判のいいホテルだけあって、スタッフはみんな丁寧です。
+        - 評判のいいホテルだけあって、スタッフがみんな丁寧だ。
+        - 評判がいいホテルだけあって、スタッフはみんな丁寧だ。
+        - 評判のホテルだけあって、スタッフはみんな丁寧だ。
+        - 評判の良いホテルだけあって、スタッフはみんな丁寧だ。
+        - 評判のいいホテルだけあって、従業員はみんな丁寧だ。
+        - さすが評判のいいホテルだけあって、スタッフはみんな丁寧だ。
+        - 評判のいいホテルだけあって、スタッフは皆礼儀正しい。
+        - ひょうばんのいいホテルだけあって、スタッフはみんなていねいだ。
+    known_wrong:
+      - answer: 評判のいいホテルだけに、スタッフはみんな失礼だ。
+        feedback_vi: Khen nhân viên lịch sự (丁寧), không phải 失礼 (thất lễ); câu khen dùng だけあって.
+        error_tag: meaning
+      - answer: 評判をいいホテルだけあって、スタッフはみんな丁寧だ。
+        feedback_vi: 評判 là chủ ngữ của いい - 評判のいい / 評判がいい.
+        error_tag: particle
+    explanation:
+      vi: 評判のいいホテル - khách sạn được đánh giá tốt (の thay が trong mệnh đề bổ nghĩa); だけあって - quả không hổ là; 丁寧 - lịch sự, chu đáo.
+    display_answer: 評判のいいホテルだけあって、スタッフはみんな丁寧だ。
+
+  - key: ja:exercise:n2-u8-dakeatte-wb-dakeni
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u8-gram-dake-ni
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chính vì là món quà tự tay làm nên niềm vui càng lớn.\""
+      tokens:
+        - { id: d3, text: 喜びも大きい }
+        - { id: d1, text: 手作りの }
+        - { id: d4, text: プレゼントだけを }
+        - { id: d2, text: プレゼントだけに }
+    answer:
+      orders:
+        - [d1, d2, d3]
+    explanation:
+      vi: N + だけに - chính vì là N nên càng... プレゼントだけを không nối được với vế 喜びも大きい.
+    display_answer: 手作りのプレゼントだけに喜びも大きい。
