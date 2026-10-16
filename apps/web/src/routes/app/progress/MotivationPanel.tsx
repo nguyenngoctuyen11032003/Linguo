@@ -47,7 +47,7 @@ export function MotivationPanel({ motivation }: { motivation: Motivation }) {
   const grace = STREAK_RULES.grace_per_week;
 
   return (
-    <SolidCard>
+    <SolidCard className="p-5 lg:p-6">
       <section aria-labelledby={headingId} className="space-y-4">
         <div>
           <h2 id={headingId} className="text-xl font-extrabold tracking-[-0.02em]">

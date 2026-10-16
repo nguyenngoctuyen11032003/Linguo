@@ -5,6 +5,7 @@ import { LANGUAGES, PERSONAL_VOCAB_LIMITS as L } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
+import { PageHeader } from '../PageHeader';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { cn } from '@/lib/cn';
 import { useToast } from '@/components/ui/Toast';
@@ -60,10 +61,10 @@ export function PersonalListsPage() {
           <h2 id={listsHeadingId} className="eyebrow px-1">
             Danh sách của tôi
           </h2>
-          <ul className="grid gap-3 sm:grid-cols-2">
+          <ul className="reveal-stagger grid gap-3 sm:grid-cols-2 lg:gap-5 xl:grid-cols-3">
             {api.lists.map((list) => (
               <li key={list.id} className="min-w-0">
-                <div className="card">
+                <div className="surface-interactive card h-full">
                   <Link
                     to={`/app/tu-vung-cua-toi/${list.id}`}
                     className="group flex min-h-20 items-center gap-3.5 rounded-[1.75rem] py-3.5 pl-3.5 pr-3 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
@@ -97,21 +98,19 @@ export function PersonalListsPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h1 className="page-title">Từ vựng của tôi</h1>
-          <p className="mt-2 max-w-prose text-[15px] text-muted">
-            Danh sách riêng của bạn, chỉ mình bạn thấy. Ôn bằng cùng lịch ôn thông minh với các thẻ trong bài học.
-          </p>
-        </div>
-        {api.lists.length > 0 && (
-          <Button ref={createRef} disabled={atLimit} onClick={() => setCreating(true)}>
-            <Plus aria-hidden className="size-5" />
-            Tạo danh sách
-          </Button>
-        )}
-      </div>
+    <div className="space-y-6 lg:space-y-8">
+      <PageHeader
+        title="Từ vựng của tôi"
+        lede="Danh sách riêng của bạn, chỉ mình bạn thấy. Ôn bằng cùng lịch ôn thông minh với các thẻ trong bài học."
+        actions={
+          api.lists.length > 0 && (
+            <Button ref={createRef} disabled={atLimit} onClick={() => setCreating(true)}>
+              <Plus aria-hidden className="size-5" />
+              Tạo danh sách
+            </Button>
+          )
+        }
+      />
       {atLimit && <p className="text-sm text-muted">Bạn đã có {L.maxLists} danh sách, mức tối đa. Hãy xoá bớt một danh sách để tạo mới.</p>}
       {content}
       <ListFormDialog

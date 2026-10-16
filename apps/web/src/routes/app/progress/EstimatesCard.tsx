@@ -23,7 +23,7 @@ export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
   const bySkill = new Map(estimates.map((e) => [e.skill, e]));
 
   return (
-    <SolidCard>
+    <SolidCard className="p-5 lg:p-6">
       <section aria-labelledby={headingId} className="space-y-4">
         <div className="min-w-0">
           <h2 id={headingId} className="flex items-center gap-2 text-xl font-extrabold tracking-[-0.02em]">
@@ -46,7 +46,7 @@ export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
           </div>
         ) : (
           <>
-            <ul className="grid grid-cols-2 gap-2.5">
+            <ul className="grid grid-cols-2 gap-2.5 xl:grid-cols-1">
               {SKILLS.map((skill) => {
                 const estimate = bySkill.get(skill);
                 return (

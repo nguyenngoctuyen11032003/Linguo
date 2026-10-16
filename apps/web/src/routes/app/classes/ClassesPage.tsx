@@ -43,15 +43,15 @@ export function ClassesPage() {
   }, [focusHeading, leaving]);
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
-          Lớp học
-        </h1>
-        <p className="mt-2 max-w-prose text-[15px] text-muted">
-          Tham gia lớp bằng mã giáo viên gửi để nhận bài được giao. Bạn vẫn học trên lộ trình của mình như bình thường.
-        </p>
-      </div>
+    <div className="space-y-6 lg:space-y-8">
+      <header className="page-header reveal">
+        <div className="min-w-0">
+          <h1 ref={headingRef} tabIndex={-1} className="page-title-lg focus:outline-none">
+            Lớp học
+          </h1>
+          <p>Tham gia lớp bằng mã giáo viên gửi để nhận bài được giao. Bạn vẫn học trên lộ trình của mình như bình thường.</p>
+        </div>
+      </header>
 
       {!online && (
         <p className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
@@ -59,7 +59,8 @@ export function ClassesPage() {
         </p>
       )}
 
-      <SolidCard>
+      <div className="reveal-stagger grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-x-8 xl:grid-cols-[minmax(0,1fr)_26rem]">
+      <SolidCard className="p-5 lg:col-start-2 lg:p-6">
         <section aria-labelledby="join-class-title" className="space-y-3">
           <h2 id="join-class-title" className="text-xl font-extrabold tracking-[-0.02em]">
             Tham gia lớp mới
@@ -77,6 +78,7 @@ export function ClassesPage() {
         </section>
       </SolidCard>
 
+      <div className="min-w-0 lg:col-start-1 lg:row-span-2 lg:row-start-1">
       <ClassList
         api={api}
         timeZone={timeZone}
@@ -88,7 +90,12 @@ export function ClassesPage() {
         }}
       />
 
-      <PrivacyNote />
+      </div>
+
+      <div className="lg:col-start-2">
+        <PrivacyNote />
+      </div>
+      </div>
 
       <LeaveClassDialog
         className={leaving?.name ?? null}
@@ -144,7 +151,7 @@ function ClassList({ api, timeZone, currentLanguage, online, onLeave }: ClassLis
           </button>
         </p>
       )}
-      <ul className="space-y-4">
+      <ul className="reveal-stagger space-y-4 lg:space-y-5">
         {api.classes.map((klass) => (
           <li key={klass.id} className="min-w-0">
             <ClassCard

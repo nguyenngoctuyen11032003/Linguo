@@ -36,6 +36,7 @@ import { PasswordSection } from './settings/PasswordSection';
 import { RemindersSection } from './settings/RemindersSection';
 import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './settings/section-state';
 import { SettingsJumpList } from './settings/SettingsJumpList';
+import { PageHeader } from './PageHeader';
 import { timeZoneLabel, timeZoneOptions } from './settings/timezones';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; short?: string; icon: typeof Sun }> = [
@@ -259,12 +260,13 @@ export function SettingsPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <h1 className="page-title">Cài đặt</h1>
+    <div className="space-y-6 lg:space-y-8">
+      <PageHeader title="Cài đặt" lede="Hồ sơ, lộ trình, giao diện và quyền riêng tư của bạn." />
 
+      <div className="grid gap-6 lg:grid-cols-[14rem_minmax(0,1fr)] lg:items-start lg:gap-12 xl:grid-cols-[15rem_minmax(0,1fr)]">
       <SettingsJumpList />
 
-      <div className="space-y-6 lg:block lg:columns-2 lg:gap-6 lg:space-y-0 lg:[&>*]:mb-6 lg:[&>*]:break-inside-avoid">
+      <div className="reveal-stagger min-w-0 space-y-6 lg:max-w-[48rem] lg:space-y-8">
       <section id="ho-so" aria-labelledby="profile-heading" className={SECTION_SCROLL_MARGIN}>
         <SolidCard className="space-y-4">
           <h2 id="profile-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
@@ -517,11 +519,12 @@ export function SettingsPage() {
         </div>
       )}
 
-      </div>
       <Button variant="danger" block loading={signingOut} onClick={() => void signOut()}>
         <LogOut aria-hidden className="size-5" />
         Đăng xuất
       </Button>
+      </div>
+      </div>
     </div>
   );
 }

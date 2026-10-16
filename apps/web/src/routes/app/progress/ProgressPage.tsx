@@ -26,6 +26,7 @@ import { RangeToggle } from './RangeToggle';
 import { ReviewPlanButton } from './ReviewPlanButton';
 import { TotalsGrid } from './TotalsGrid';
 import { useBadgeToast } from './useBadgeToast';
+import { PageHeader } from '../PageHeader';
 
 function LoadingDashboard() {
   return (
@@ -38,10 +39,10 @@ function LoadingDashboard() {
   );
 }
 
-function Layer({ title, intro, children }: { title: string; intro: string; children: ReactNode }) {
+function Layer({ title, intro, children, className }: { title: string; intro: string; children: ReactNode; className?: string }) {
   const headingId = useId();
   return (
-    <SolidCard className="max-[379px]:p-4">
+    <SolidCard className={cn('p-5 max-[379px]:p-4 lg:p-6', className)}>
       <section aria-labelledby={headingId} className="space-y-4">
         <div>
           <h2 id={headingId} className="text-xl font-extrabold tracking-[-0.02em]">
@@ -126,7 +127,7 @@ export function ProgressPage() {
     const shownRange = data.range_days;
     const summary = review.summary;
     content = (
-      <div aria-busy={refreshing || undefined} className={cn('space-y-6 transition-opacity duration-200', refreshing && 'opacity-70')}>
+      <div aria-busy={refreshing || undefined} className={cn('reveal-stagger space-y-6 transition-opacity duration-200 lg:space-y-8', refreshing && 'opacity-70')}>
         {empty ? (
           <EmptyState
             icon={BarChart3}
@@ -139,49 +140,56 @@ export function ProgressPage() {
             }
           />
         ) : (
-          <>
-            <Layer title="Hoạt động" intro={`Bạn đã học bao lâu trong ${shownRange} ngày qua, so với lịch học của lộ trình.`}>
-              <ActivityChart days={data.days} />
-              <TotalsGrid
-                totals={data.totals}
-                retention={{ value: summary?.retention_30d ?? null, sample: summary?.retention_sample ?? 0 }}
-                masteredTotal={summary?.mastered_total ?? 0}
-                rangeDays={shownRange}
-              />
-            </Layer>
-            <Layer title={PROGRESS_TERMS.resultsSection} intro={`Độ chính xác ở lần trả lời đầu tiên, so với ${shownRange} ngày trước đó.`}>
-              <div className="grid gap-6 md:grid-cols-2">
-                <AccuracyList title="Theo kỹ năng" rows={skillAccuracyRows(data.skills)} rangeDays={shownRange} />
-                <AccuracyList title="Theo dạng bài" rows={typeAccuracyRows(data.exercise_types)} rangeDays={shownRange} />
-              </div>
-            </Layer>
-          </>
-        )}
-        <EstimatesCard estimates={data.estimates} pathId={data.path_id} />
-        {!empty && (
-          <MistakesList
-            mistakes={data.mistakes}
-            action={
-              paths.current && <ReviewPlanButton dashboard={data} learner={{ language: paths.current.language, level: paths.current.currentLevel }} />
-            }
+          <TotalsGrid
+            totals={data.totals}
+            retention={{ value: summary?.retention_30d ?? null, sample: summary?.retention_sample ?? 0 }}
+            masteredTotal={summary?.mastered_total ?? 0}
+            rangeDays={shownRange}
           />
         )}
+        <div className="grid items-start gap-6 xl:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] xl:gap-8">
+          <div className="min-w-0 space-y-6 xl:space-y-8">
+            {!empty && (
+              <>
+                <Layer title="Hoạt động" intro={`Bạn đã học bao lâu trong ${shownRange} ngày qua, so với lịch học của lộ trình.`}>
+                  <ActivityChart days={data.days} />
+                </Layer>
+                <Layer title={PROGRESS_TERMS.resultsSection} intro={`Độ chính xác ở lần trả lời đầu tiên, so với ${shownRange} ngày trước đó.`}>
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <AccuracyList title="Theo kỹ năng" rows={skillAccuracyRows(data.skills)} rangeDays={shownRange} />
+                    <AccuracyList title="Theo dạng bài" rows={typeAccuracyRows(data.exercise_types)} rangeDays={shownRange} />
+                  </div>
+                </Layer>
+              </>
+            )}
+            <ExamHistoryCard pathId={pathId} />
+          </div>
+          <div className="min-w-0 space-y-6 xl:space-y-8">
+            <EstimatesCard estimates={data.estimates} pathId={data.path_id} />
+            {!empty && (
+              <MistakesList
+                mistakes={data.mistakes}
+                action={
+                  paths.current && <ReviewPlanButton dashboard={data} learner={{ language: paths.current.language, level: paths.current.currentLevel }} />
+                }
+              />
+            )}
+          </div>
+        </div>
         {data.motivation && <MotivationPanel motivation={data.motivation} />}
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
-      <header className="space-y-3">
-        <div className="min-w-0 space-y-1">
-          <h1 className="page-title">Tiến độ</h1>
-          <p className="text-[13px] text-muted">Thời gian học, kết quả và trình độ ước lượng được tính riêng.</p>
-        </div>
-        {paths.current && <RangeToggle value={range} onChange={changeRange} />}
-      </header>
+    <div className="space-y-6 lg:space-y-8">
+      <PageHeader
+        title="Tiến độ"
+        lede="Thời gian học, kết quả và trình độ ước lượng được tính riêng."
+        actions={paths.current && <RangeToggle value={range} onChange={changeRange} />}
+      />
       {content}
-      <ExamHistoryCard pathId={pathId} />
+      {!data && <ExamHistoryCard pathId={pathId} />}
       <HowCalculated />
     </div>
   );

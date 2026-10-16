@@ -14,7 +14,7 @@ interface TotalsGridProps {
 
 function Stat({ term, children, hint, wide = false }: { term: string; children: ReactNode; hint?: ReactNode; wide?: boolean }) {
   return (
-    <div className={cn('min-w-0 rounded-[1.25rem] bg-text/[0.04] p-3 min-[380px]:p-3.5', wide && 'col-span-2 sm:col-span-1')}>
+    <div className={cn('surface-2 hover-lift min-w-0 !rounded-[1.25rem] p-3 min-[380px]:p-3.5 lg:p-4', wide && 'col-span-2 sm:col-span-1')}>
       <dt className="eyebrow leading-tight">{term}</dt>
       <dd className="mt-2 flex flex-wrap items-baseline gap-x-1">{children}</dd>
       {hint && <dd className="mt-1.5 text-xs leading-snug text-muted">{hint}</dd>}
@@ -52,7 +52,7 @@ export function TotalsGrid({ totals, retention, masteredTotal, rangeDays }: Tota
   const weekGoal = totals.week_goal_minutes;
   const weekShare = weekGoal > 0 ? Math.min(1, totals.week_minutes / weekGoal) : 0;
   return (
-    <dl className="grid grid-cols-2 gap-2 min-[380px]:gap-2.5 sm:grid-cols-3">
+    <dl className="grid grid-cols-2 gap-2 min-[380px]:gap-2.5 sm:grid-cols-3 lg:gap-4 xl:grid-cols-4">
       <Stat term="Hôm nay">
         <Duration minutes={totals.today_minutes} />
       </Stat>

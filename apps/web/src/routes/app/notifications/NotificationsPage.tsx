@@ -9,6 +9,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { formatRelativeTimeVi } from '@/features/notifications/format';
 import { useNotifications } from '@/features/notifications/useNotifications';
 import { cn } from '@/lib/cn';
+import { PageHeader } from '../PageHeader';
 
 const KIND_META: Record<NotificationKind, { icon: LucideIcon; label: string; tone: string }> = {
   review_due: { icon: Layers, label: 'Ôn tập', tone: 'bg-primary/12 text-primary' },
@@ -22,15 +23,17 @@ const safeTarget = (url: string) => (url.startsWith('/app/') && !url.startsWith(
 
 function Title({ unread = 0 }: { unread?: number }) {
   return (
-    <div className="flex items-end justify-between gap-3">
-      <h1 className="page-title">Thông báo</h1>
-      {unread > 0 && (
-        <p aria-hidden="true" className="flex shrink-0 flex-col items-end pb-1">
-          <span className="stat-num text-[40px] text-primary">{unread}</span>
-          <span className="eyebrow mt-1">chưa đọc</span>
-        </p>
-      )}
-    </div>
+    <PageHeader
+      title="Thông báo"
+      actions={
+        unread > 0 && (
+          <p aria-hidden="true" className="flex shrink-0 items-baseline gap-2">
+            <span className="stat-num text-[40px] text-primary">{unread}</span>
+            <span className="eyebrow">chưa đọc</span>
+          </p>
+        )
+      }
+    />
   );
 }
 
@@ -39,7 +42,7 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
   const Icon = meta.icon;
   const unread = !item.read_at;
   return (
-    <li>
+    <li className="surface-2 hover-lift min-w-0 !rounded-[1.25rem]">
       <button
         type="button"
         data-notification-id={item.id}
@@ -117,7 +120,7 @@ export function NotificationsPage() {
 
   if (status === 'loading') {
     return (
-      <div className="space-y-6">
+      <div className="space-y-6 lg:space-y-8">
         <Title />
         <div role="status" className="space-y-3">
           <span className="sr-only">Đang tải thông báo…</span>
@@ -131,7 +134,7 @@ export function NotificationsPage() {
 
   if (status === 'error') {
     return (
-      <div className="space-y-6">
+      <div className="space-y-6 lg:space-y-8">
         <Title />
         <ErrorState title="Không tải được thông báo" description={error ?? undefined} onRetry={reload} />
       </div>
@@ -140,7 +143,7 @@ export function NotificationsPage() {
 
   if (items.length === 0) {
     return (
-      <div className="space-y-6">
+      <div className="space-y-6 lg:space-y-8">
         <Title />
         <EmptyState
           icon={Bell}
@@ -157,9 +160,9 @@ export function NotificationsPage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 lg:space-y-8">
       <Title unread={items.filter((i) => !i.read_at).length} />
-      <ul ref={listRef} aria-label="Danh sách thông báo" className="card divide-y divide-border px-1.5 py-1">
+      <ul ref={listRef} aria-label="Danh sách thông báo" className="reveal-stagger grid gap-2.5 lg:grid-cols-2 lg:gap-4">
         {items.map((item) => (
           <NotificationRow key={item.id} item={item} onOpen={open} />
         ))}

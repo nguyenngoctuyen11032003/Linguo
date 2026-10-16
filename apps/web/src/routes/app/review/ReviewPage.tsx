@@ -29,7 +29,7 @@ function isTypingTarget(target: EventTarget | null): boolean {
 }
 
 function Heading() {
-  return <h1 className="page-title">{TITLE}</h1>;
+  return <h1 className="page-title-lg">{TITLE}</h1>;
 }
 
 /** /app/on-tap: the daily flashcard review (spec 3 §6). Scheduling stays on the server; this screen only rates. */
@@ -190,7 +190,7 @@ export function ReviewPage() {
 
   if (status === 'loading') {
     return (
-      <div className="space-y-6">
+      <div className="reveal-stagger mx-auto w-full max-w-[46rem] space-y-6">
         <Heading />
         <div role="status" className="space-y-4">
           <span className="sr-only">Đang tải thẻ ôn…</span>
@@ -204,7 +204,7 @@ export function ReviewPage() {
 
   if (status === 'error') {
     return (
-      <div className="space-y-6">
+      <div className="reveal-stagger mx-auto w-full max-w-[46rem] space-y-6">
         <Heading />
         <ErrorState title="Không tải được thẻ ôn" description={session.error ?? undefined} onRetry={session.retry} />
       </div>
@@ -213,7 +213,7 @@ export function ReviewPage() {
 
   if (status === 'empty') {
     return (
-      <div className="space-y-6">
+      <div className="reveal-stagger mx-auto w-full max-w-[46rem] space-y-6">
         <Heading />
         <EmptyState
           icon={CalendarCheck}
@@ -243,7 +243,7 @@ export function ReviewPage() {
 
   if (status === 'finished' || !card) {
     return (
-      <div className="space-y-6">
+      <div className="reveal-stagger mx-auto w-full max-w-[46rem] space-y-6">
         <Heading />
         <ReviewSummaryView
           reviewedCount={reviewedCount}
@@ -267,12 +267,12 @@ export function ReviewPage() {
   const remaining = Math.max(total - position, 0);
 
   return (
-    <div className="space-y-5">
+    <div className="reveal-stagger mx-auto w-full max-w-[46rem] space-y-5 lg:space-y-6">
       <div className="flex items-end justify-between gap-4">
         <Heading />
         <p className="shrink-0 text-right">
           <span className="sr-only">Còn {remaining} thẻ cần ôn</span>
-          <span aria-hidden="true" className="stat-num block text-[64px] text-gradient-fade pr-1">
+          <span aria-hidden="true" className="stat-num block text-[52px] text-gradient-fade pr-1 lg:text-[60px]">
             {remaining}
           </span>
           <span aria-hidden="true" className="eyebrow mt-1 block">
@@ -315,7 +315,7 @@ export function ReviewPage() {
         aria-valuemin={0}
         aria-valuemax={Math.max(total, 1)}
         aria-valuenow={Math.min(position, total)}
-        className="h-4 overflow-hidden rounded-full bg-text/10"
+        className="h-3 overflow-hidden rounded-full bg-text/10 shadow-[inset_0_1px_2px_rgb(0_0_0/0.08)]"
       >
         <div
           className="relative h-full rounded-full bg-gradient-to-r from-primary to-accent transition-[width] duration-500 ease-[var(--ease-expo)] after:absolute after:inset-x-2 after:top-1 after:h-1 after:rounded-full after:bg-white/35"

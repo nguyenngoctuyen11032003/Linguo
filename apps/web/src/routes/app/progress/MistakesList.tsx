@@ -12,7 +12,7 @@ export function MistakesList({ mistakes, action }: { mistakes: Mistake[]; /** e.
   const { profile } = useProfile();
   const timeZone = profile?.timezone ?? DEFAULT_TIMEZONE;
   return (
-    <SolidCard>
+    <SolidCard className="p-5 lg:p-6">
       <section aria-labelledby={headingId} className="space-y-3">
         <div>
           <h2 id={headingId} className="text-xl font-extrabold tracking-[-0.02em]">
