@@ -1,5 +1,6 @@
 import { clearLessonCache, LESSON_CACHE_PREFIX } from '@/features/lesson-player/lessonCache';
 import { OUTBOX_CHANGE_EVENT, OUTBOX_KEY_PREFIX, outboxKey } from '@/features/lesson-player/outbox';
+import { PERSONAL_OUTBOX_KEY_PREFIX, personalOutboxKey } from '@/features/personal-vocab/outbox';
 import { REVIEW_OUTBOX_KEY_PREFIX, reviewOutboxKey } from '@/features/reviews/outbox';
 import { clearSession, KEY_PREFIX as ROLEPLAY_KEY_PREFIX, LEGACY_KEY_PREFIX as ROLEPLAY_LEGACY_KEY_PREFIX } from '@/features/roleplay/storage';
 import { clearReflections, REFLECTION_KEY_PREFIX } from '@/features/speaking/ratings';
@@ -58,12 +59,13 @@ export function downloadJson(data: unknown, fileName: string): void {
 
 /**
  * Every per-learner store this app keeps in the browser, by key prefix (localStorage and sessionStorage alike):
- * lesson + review outboxes, cached lesson text, role-play conversation (v2 in localStorage, legacy v1 in
- * sessionStorage), speaking self-ratings. Keys are suffixed with the user id.
+ * lesson + review + personal vocabulary outboxes, cached lesson text, role-play conversation (v2 in localStorage,
+ * legacy v1 in sessionStorage), speaking self-ratings. Keys are suffixed with the user id.
  */
 const LEARNER_KEY_PREFIXES = [
   OUTBOX_KEY_PREFIX,
   REVIEW_OUTBOX_KEY_PREFIX,
+  PERSONAL_OUTBOX_KEY_PREFIX,
   LESSON_CACHE_PREFIX,
   ROLEPLAY_KEY_PREFIX,
   ROLEPLAY_LEGACY_KEY_PREFIX,
@@ -75,11 +77,11 @@ const LEARNER_EXACT_KEYS = [DRAFT_KEY];
 // flag (no personal data) and the shared media cache (`linguo-media-v1`).
 
 /**
- * Kept on sign-out: the queued, not yet synced answers (lesson and review outboxes, scoped by user id, sent after the
- * next sign-in) and cached lesson text of OTHER users (curated content, not personal; the signing-out user's own cache
+ * Kept on sign-out: the queued, not yet synced answers (lesson, review and personal vocabulary outboxes, scoped by user
+ * id, sent after the next sign-in) and cached lesson text of OTHER users (curated content, not personal; the signing-out user's own cache
  * is cleared by exact key below).
  */
-const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
+const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, PERSONAL_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
 
 function wipeStore(store: Storage, signOut: boolean): void {
   const keys: string[] = [];
@@ -112,7 +114,9 @@ export function clearAllLocalLearnerData(userId?: string | null, options: { mode
   }
   if (userId) {
     const exact: Array<() => void> = [
-      ...(signOut ? [] : [() => removeKey(outboxKey(userId)), () => removeKey(reviewOutboxKey(userId))]),
+      ...(signOut
+        ? []
+        : [() => removeKey(outboxKey(userId)), () => removeKey(reviewOutboxKey(userId)), () => removeKey(personalOutboxKey(userId))]),
       () => clearLessonCache(userId),
       () => clearSession(userId),
       () => clearReflections(userId),

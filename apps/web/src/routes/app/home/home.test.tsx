@@ -231,7 +231,7 @@ describe('HomePage', () => {
 
   it('counts every active language in the spread warning', () => {
     const low = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [10, 10, 10, 10, 10, 10, 10] });
-    const ja = { ...low(TEST_KO_PATH), id: 'path-ja', languageCode: 'ja' as const };
+    const ja = { ...low(TEST_KO_PATH), id: 'path-ja', language: 'ja' as const };
     renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [low(TEST_PATH), low(TEST_KO_PATH), ja] } });
     expect(screen.getByRole('note')).toHaveTextContent('Bạn đang học 3 ngôn ngữ');
   });
