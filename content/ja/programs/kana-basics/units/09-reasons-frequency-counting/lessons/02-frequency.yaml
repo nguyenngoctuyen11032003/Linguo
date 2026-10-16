@@ -1,0 +1,338 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:frequency
+order_index: 2
+level: n5
+title:
+  vi: Có thường làm không? - いつも, よく, ときどき, あまり, ぜんぜん
+objectives:
+  - vi: Nói mức độ thường xuyên bằng いつも, よく, ときどき.
+  - vi: Nói "ít khi", "hoàn toàn không" bằng あまり / ぜんぜん + phủ định.
+  - vi: Nói thói quen theo tuần, tháng, năm bằng まいしゅう, まいつき, まいとし.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:kara-reason]
+items:
+  - item: ja:item:itsumo
+  - item: ja:item:yoku-often
+  - item: ja:item:tokidoki
+  - item: ja:item:amari-masen
+  - item: ja:item:zenzen-masen
+  - item: ja:item:maishuu-maitsuki
+  - item: ja:item:mainichi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được thói quen của mình - "tôi luôn đi xe buýt", "thỉnh thoảng xem phim", "hoàn toàn không uống rượu" - và trả lời câu hỏi "bạn có hay... không?".
+  - type: explain
+    text:
+      vi: Phó từ tần suất đứng trước động từ (hoặc đầu câu), từ nhiều đến ít - いつも (luôn luôn) > よく (thường, hay) > ときどき (thỉnh thoảng). Ba từ này đi với động từ khẳng định ます.
+  - type: explain
+    text:
+      vi: あまり (không... lắm, ít khi) và ぜんぜん (hoàn toàn không) bắt buộc đi với phủ định ません. Tiếng Việt "ít khi xem" là câu khẳng định, nên người Việt hay nói nhầm あまりみます.
+  - type: explain
+    text:
+      vi: まいにち, まいしゅう (mỗi tuần), まいつき (mỗi tháng), まいとし (mỗi năm) không dùng に. Nếu có thêm thứ cụ thể thì thứ đó vẫn đi với に - まいしゅうどようびにテニスをします.
+  - type: deep_explain
+    text:
+      vi: 'Trả lời câu hỏi có/không về thói quen: はい、よくみます / いいえ、あまりみません. Người Nhật hay chọn あまり thay cho ぜんぜん để câu trả lời mềm hơn. Hỏi tần suất cụ thể sẽ học ở bài sau với lượng từ 〜かい (lần).'
+  - type: example
+    target: いつもバスでかいしゃへいきます。
+    target_lang: ja
+    translation:
+      vi: Tôi lúc nào cũng đi làm bằng xe buýt.
+    note:
+      vi: いつも - luôn luôn.
+  - type: example
+    target: よくこうえんでさんぽします。
+    target_lang: ja
+    translation:
+      vi: Tôi hay đi dạo ở công viên.
+    note:
+      vi: よく - thường, hay.
+  - type: example
+    target: ときどきえいがをみます。
+    target_lang: ja
+    translation:
+      vi: Thỉnh thoảng tôi xem phim.
+  - type: example
+    target: あまりテレビをみません。ぜんぜんりょうりをしません。
+    target_lang: ja
+    translation:
+      vi: Tôi ít xem tivi. Tôi hoàn toàn không nấu ăn.
+    note:
+      vi: あまり / ぜんぜん + ません.
+  - type: example
+    target: まいしゅうどようびにテニスをします。
+    target_lang: ja
+    translation:
+      vi: Thứ Bảy hằng tuần tôi chơi tennis.
+    note:
+      vi: まいしゅう không có に; どようび có に.
+  - type: common_mistake
+    wrong: わたしはあまりテレビをみます。
+    right: わたしはあまりテレビをみません。
+    target_lang: ja
+    note:
+      vi: あまり luôn đi với phủ định - "ít xem" là あまりみません.
+  - type: common_mistake
+    wrong: ぜんぜんコーヒーをのみます。
+    right: ぜんぜんコーヒーをのみません。
+    target_lang: ja
+    note:
+      vi: ぜんぜん cũng cần phủ định - "hoàn toàn không uống".
+  - type: common_mistake
+    wrong: まいしゅうにテニスをします。
+    right: まいしゅうテニスをします。
+    target_lang: ja
+    note:
+      vi: まいにち, まいしゅう, まいつき không đi với に.
+  - type: summary
+    points:
+      - vi: いつも > よく > ときどき + V ます (khẳng định).
+      - vi: あまり (không... lắm) / ぜんぜん (hoàn toàn không) + V ません.
+      - vi: まいにち・まいしゅう・まいつき・まいとし - không dùng に.
+      - vi: Phó từ đứng trước động từ hoặc ở đầu câu.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:frequency-mcq-coffee
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:tokidoki
+    prompt:
+      stem: '"Thỉnh thoảng tôi uống cà phê." ＿＿コーヒーをのみます。'
+      stem_lang: vi
+      options:
+        - { id: f2g, text: ときどき, lang: ja }
+        - { id: h5j, text: いつも, lang: ja }
+        - { id: k9l, text: ぜんぜん, lang: ja }
+        - { id: m3n, text: あまり, lang: ja }
+    answer:
+      correct_option_id: f2g
+    explanation:
+      vi: ときどき - thỉnh thoảng. いつも là "luôn luôn"; ぜんぜん và あまり cần phủ định ません, không đi với のみます.
+    display_answer: ときどき
+
+  - key: ja:exercise:frequency-listen-father
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:zenzen-masen
+    prompt:
+      audio_asset_id: null
+      fallback_text: ちちはぜんぜんうんどうしません。
+      options:
+        - { id: p7q, text: Bố tôi hoàn toàn không tập thể dục., lang: vi }
+        - { id: r1s, text: Bố tôi thỉnh thoảng tập thể dục., lang: vi }
+        - { id: t6u, text: Bố tôi tập thể dục mỗi ngày., lang: vi }
+        - { id: w4x, text: Bố tôi không tập thể dục lắm., lang: vi }
+    answer:
+      correct_option_id: p7q
+    explanation:
+      vi: ぜんぜん + ません - hoàn toàn không. "Không... lắm" là あまり; うんどうします - tập thể dục.
+    display_answer: Bố tôi hoàn toàn không tập thể dục.
+
+  - key: ja:exercise:frequency-fill-meat
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:amari-masen
+    prompt:
+      template: "わたしはあまりにくをたべ{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Tôi không ăn thịt mấy."
+        - Gợi ý - あまり luôn đi với đuôi phủ định.
+    answer:
+      blanks:
+        b1: [ません]
+    known_wrong:
+      - answer: ます
+        feedback_vi: あまり cần phủ định - たべません.
+        error_tag: amari_negative
+      - answer: ませんでした
+        feedback_vi: Câu nói thói quen hiện tại - dùng ません.
+        error_tag: tense
+    explanation:
+      vi: あまり + たべません - không ăn mấy, ít ăn.
+    display_answer: わたしはあまりにくをたべません。
+
+  - key: ja:exercise:frequency-mcq-library
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:yoku-often
+    prompt:
+      stem: "Câu よくとしょかんでほんをよみます。 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: y2z, text: Tôi hay đọc sách ở thư viện., lang: vi }
+        - { id: a8b, text: Tôi ít khi đọc sách ở thư viện., lang: vi }
+        - { id: c3d, text: Tôi chưa bao giờ đọc sách ở thư viện., lang: vi }
+        - { id: e7f, text: Thư viện có nhiều sách hay., lang: vi }
+    answer:
+      correct_option_id: y2z
+    explanation:
+      vi: よく đứng trước động từ là "thường, hay". "Ít khi" là あまり〜ません.
+    display_answer: Tôi hay đọc sách ở thư viện.
+
+  - key: ja:exercise:frequency-order-osaka
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:maishuu-maitsuki
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Mỗi tháng tôi đi Osaka.”"
+      tokens:
+        - { id: t1, text: いきます }
+        - { id: t2, text: まいつきに }
+        - { id: t3, text: おおさかへ }
+        - { id: t4, text: まいつき }
+    answer:
+      orders:
+        - [t4, t3, t1]
+    explanation:
+      vi: まいつき (mỗi tháng) không đi với に; nơi đến おおさかへ, động từ いきます cuối câu.
+    display_answer: まいつきおおさかへいきます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:frequency-fill-amari-zenzen
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:zenzen-masen
+    prompt:
+      template: "Tôi không xem tivi lắm - テレビは{{b1}}みません。 Tôi hoàn toàn không hiểu - {{b2}}わかりません。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [あまり]
+        b2: [ぜんぜん, 全然]
+    known_wrong:
+      - answer: いつも
+        feedback_vi: いつも là "luôn luôn", đi với khẳng định.
+        error_tag: frequency_word
+      - answer: ときどき
+        feedback_vi: ときどき là "thỉnh thoảng"; câu này cần "không... lắm" / "hoàn toàn không".
+        error_tag: frequency_word
+    explanation:
+      vi: あまり + ません - không... lắm; ぜんぜん + ません - hoàn toàn không.
+    display_answer: テレビはあまりみません。 / ぜんぜんわかりません。
+
+  - key: ja:exercise:frequency-write-mother
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:maishuu-maitsuki
+    prompt:
+      source_text: Mỗi tuần tôi gọi điện cho mẹ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - まいしゅうははにでんわします。
+        - 毎週母に電話します。
+        - わたしはまいしゅうははにでんわします。
+        - 私は毎週母に電話します。
+        - ははにまいしゅうでんわします。
+        - 母に毎週電話します。
+        - まいしゅうははにでんわをします。
+        - 毎週母に電話をします。
+    known_wrong:
+      - answer: まいしゅうにははにでんわします。
+        feedback_vi: まいしゅう không đi với に.
+        error_tag: particle_ni_time
+      - answer: まいしゅうははをでんわします。
+        feedback_vi: Gọi điện cho ai - người đó đi với に (ははに).
+        error_tag: particle_choice
+    explanation:
+      vi: まいしゅう (không に) + ははに (cho mẹ) + でんわします. Nói về mẹ mình với người ngoài dùng はは.
+    display_answer: まいしゅうははにでんわします。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:frequency-translate-swim
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:yoku-often
+    prompt:
+      source_text: なつはよくおよぎます。ふゆはぜんぜんおよぎません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mùa hè tôi hay bơi. Mùa đông thì hoàn toàn không bơi.
+        - Mùa hè tôi hay đi bơi. Mùa đông tôi hoàn toàn không bơi.
+        - Mùa hè tôi thường bơi. Mùa đông thì không bơi chút nào.
+        - Mùa hè tôi hay bơi. Mùa đông tôi không bơi chút nào.
+        - Mùa hè thì tôi hay bơi. Mùa đông thì tôi hoàn toàn không bơi.
+        - Mùa hè tôi thường đi bơi. Mùa đông thì hoàn toàn không.
+        - Vào mùa hè tôi hay bơi. Vào mùa đông tôi hoàn toàn không bơi.
+        - Mùa hè tôi hay bơi, mùa đông thì hoàn toàn không bơi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mùa hè tôi hay bơi. Mùa đông thì thỉnh thoảng bơi.
+        feedback_vi: ぜんぜん〜ません là "hoàn toàn không", không phải "thỉnh thoảng".
+        error_tag: frequency_word
+    explanation:
+      vi: なつは / ふゆは - mùa hè thì / mùa đông thì (so sánh hai mùa); よく - hay; ぜんぜん〜ません - hoàn toàn không.
+    display_answer: Mùa hè tôi hay bơi. Mùa đông thì hoàn toàn không bơi.
+
+  - key: ja:exercise:frequency-mcq-sake
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:amari-masen
+    prompt:
+      stem: "Đồng nghiệp hỏi おさけをのみますか. Bạn ít khi uống. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g4h, text: いいえ、あまりのみません。, lang: ja }
+        - { id: j8k, text: いいえ、あまりのみます。, lang: ja }
+        - { id: l2m, text: はい、ぜんぜんのみません。, lang: ja }
+        - { id: n6o, text: いいえ、ぜんぜんのみます。, lang: ja }
+    answer:
+      correct_option_id: g4h
+    explanation:
+      vi: Ít khi uống - いいえ、あまりのみません. あまり / ぜんぜん đều cần phủ định; はい đi với ぜんぜんのみません là mâu thuẫn.
+    display_answer: いいえ、あまりのみません。
+
+  - key: ja:exercise:frequency-order-lunch
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:yoku-often
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Bữa trưa thì tôi hay ăn cùng bạn bè.”"
+      tokens:
+        - { id: s1, text: たべます }
+        - { id: s2, text: ともだちと }
+        - { id: s3, text: あまり }
+        - { id: s4, text: ひるごはんは }
+        - { id: s5, text: よく }
+    answer:
+      orders:
+        - [s4, s5, s2, s1]
+        - [s4, s2, s5, s1]
+    explanation:
+      vi: ひるごはんは (bữa trưa thì) + よく (hay) + ともだちと (cùng bạn) + たべます. あまり cần phủ định nên không hợp.
+    display_answer: ひるごはんはよくともだちとたべます。

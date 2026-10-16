@@ -1,0 +1,479 @@
+# Học liệu unit "Lý do, tần suất và đếm đồ vật" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: から (lý do), どうして ----------------
+  - key: ja:item:kara-reason
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: Câu 1 + から、câu 2
+      romanization: kara
+      pos: trợ từ nối (lý do)
+    back:
+      meaning:
+        vi: '"Vì... nên..." - から đứng cuối vế lý do, vế kết quả theo sau: あめですから、うちにいます (vì trời mưa nên tôi ở nhà). Thứ tự giống tiếng Việt "vì A nên B", nhưng chữ "vì" nằm cuối vế A.'
+      examples:
+        - target: さむいですから、まどをしめます。
+          translation:
+            vi: Vì lạnh nên tôi đóng cửa sổ.
+      confusion:
+        vi: から sau danh từ chỉ giờ, nơi chốn là "từ" (くじから); から sau cả một câu (です, ます, tính từ) là "vì". Nhìn chữ đứng trước から để phân biệt.
+
+  - key: ja:item:doushite
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, speaking]
+    front:
+      text: どうして / なぜ 〜か。 - 〜からです。
+      romanization: dōshite / naze ... kara desu
+      pos: hỏi và trả lời lý do
+    back:
+      meaning:
+        vi: 'Hỏi "tại sao?" - どうして (văn nói) hoặc なぜ (trang trọng hơn) + câu hỏi. Trả lời bằng lý do + から: 〜ですから。/ 〜ますから。, hoặc tính từ い + からです: あたまがいたかったからです. Danh từ, tính từ な thì nói 〜だからです (あめだからです).'
+      examples:
+        - target: どうしてにほんごをべんきょうしますか。- にほんではたらきたいからです。
+          translation:
+            vi: Tại sao bạn học tiếng Nhật? - Vì tôi muốn làm việc ở Nhật.
+      confusion:
+        vi: Câu trả lời cần からです ở cuối; chỉ nói lý do trống không (あたまがいたかった。) nghe cụt. Đừng nhầm どうして (tại sao) với どう (thế nào).
+
+  - key: ja:item:ame
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 雨
+      reading: あめ
+      romanization: ame
+      pos: danh từ
+    back:
+      meaning:
+        vi: Mưa. あめです - trời mưa; あめがふります - mưa rơi.
+      examples:
+        - target: きのうはあめでした。
+          translation:
+            vi: Hôm qua trời mưa.
+      pronunciation_note:
+        vi: あめ (mưa) và あめ (kẹo, 飴) viết kana giống nhau; ngữ cảnh cho biết nghĩa.
+
+  - key: ja:item:itai
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 痛い
+      reading: いたい
+      romanization: itai
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: Đau. Bộ phận cơ thể + がいたいです - あたまがいたいです (đau đầu), おなかがいたいです (đau bụng).
+      examples:
+        - target: はがいたいです。
+          translation:
+            vi: Tôi bị đau răng.
+      confusion:
+        vi: Chỗ đau đi với が, không đi với を. Bị va chạm thì người Nhật kêu ngắn いたっ!
+
+  - key: ja:item:shigoto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 仕事
+      reading: しごと
+      romanization: shigoto
+      pos: danh từ
+    back:
+      meaning:
+        vi: Công việc. しごとがあります - có việc; しごとのあと - sau giờ làm.
+      examples:
+        - target: しごとはなんじからですか。
+          translation:
+            vi: Công việc bắt đầu từ mấy giờ?
+
+  # ---------------- bài 2: tần suất ----------------
+  - key: ja:item:itsumo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: いつも
+      romanization: itsumo
+      pos: phó từ tần suất
+    back:
+      meaning:
+        vi: Luôn luôn, lúc nào cũng. Đứng trước động từ hoặc đầu câu - いつもバスでいきます.
+      examples:
+        - target: あさはいつもパンをたべます。
+          translation:
+            vi: Buổi sáng tôi lúc nào cũng ăn bánh mì.
+      confusion:
+        vi: いつも (luôn luôn) khác いつ (khi nào) - いつ là từ để hỏi.
+
+  - key: ja:item:yoku-often
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: よく
+      romanization: yoku
+      pos: phó từ tần suất
+    back:
+      meaning:
+        vi: Thường, hay (làm). よくこうえんをさんぽします - tôi hay đi dạo công viên.
+      examples:
+        - target: ちちはよくテレビをみます。
+          translation:
+            vi: Bố tôi hay xem tivi.
+      confusion:
+        vi: よく ở đây là phó từ "thường xuyên", khác よくない (không tốt) của いい. よくわかります thì là "hiểu rõ".
+
+  - key: ja:item:tokidoki
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 時々
+      reading: ときどき
+      romanization: tokidoki
+      pos: phó từ tần suất
+    back:
+      meaning:
+        vi: Thỉnh thoảng, đôi khi. ときどきりょうりをします - thỉnh thoảng tôi nấu ăn.
+      examples:
+        - target: ときどきともだちにでんわします。
+          translation:
+            vi: Thỉnh thoảng tôi gọi điện cho bạn.
+      pronunciation_note:
+        vi: Âm thứ hai đục lên thành ど - "tô-ki-đô-ki"; dấu 々 là ký hiệu lặp lại chữ Hán.
+
+  - key: ja:item:amari-masen
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: あまり + V ません
+      romanization: amari ... masen
+      pos: tần suất (phủ định)
+    back:
+      meaning:
+        vi: Không... lắm, ít khi. あまりテレビをみません - tôi ít xem tivi. あまり luôn đi với động từ hoặc tính từ phủ định.
+      examples:
+        - target: あまりおさけをのみません。
+          translation:
+            vi: Tôi không uống rượu mấy.
+      confusion:
+        vi: Tiếng Việt "ít khi xem" là câu khẳng định, nhưng tiếng Nhật bắt buộc phủ định - không nói あまりみます.
+
+  - key: ja:item:zenzen-masen
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: 全然 + V ません
+      reading: ぜんぜん
+      romanization: zenzen ... masen
+      pos: tần suất (phủ định hoàn toàn)
+    back:
+      meaning:
+        vi: Hoàn toàn không, chẳng... bao giờ. ぜんぜんうんどうしません - tôi hoàn toàn không tập thể dục.
+      examples:
+        - target: ぜんぜんわかりません。
+          translation:
+            vi: Tôi chẳng hiểu gì cả.
+      confusion:
+        vi: Giống あまり, ぜんぜん đi với phủ định. ぜんぜん mạnh hơn あまり - "không chút nào" so với "không... lắm".
+
+  - key: ja:item:maishuu-maitsuki
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 毎週 / 毎月 / 毎年
+      reading: まいしゅう / まいつき / まいとし
+      romanization: maishū / maitsuki / maitoshi
+      pos: danh từ chỉ thời gian
+    back:
+      meaning:
+        vi: Mỗi tuần / mỗi tháng / mỗi năm. Giống まいにち, không dùng に sau các từ này - まいしゅうテニスをします.
+      examples:
+        - target: まいつきかぞくにてがみをかきます。
+          translation:
+            vi: Mỗi tháng tôi viết thư cho gia đình.
+      confusion:
+        vi: 毎年 đọc まいとし hoặc まいねん đều được. 毎月 thường đọc まいつき (cũng có まいげつ trong văn trang trọng).
+
+  # ---------------- bài 3: lượng từ ほん・まい・だい・かい ----------------
+  - key: ja:item:hon-counter
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜本
+      reading: 〜ほん / ぼん / ぽん
+      romanization: -hon / -bon / -pon
+      pos: lượng từ (vật dài)
+    back:
+      meaning:
+        vi: 'Đếm vật dài, thon - bút, chai, ô, cây: いっぽん, にほん, さんぼん, よんほん, ごほん, ろっぽん, ななほん, はっぽん, きゅうほん, じゅっぽん. Hỏi: なんぼん.'
+      examples:
+        - target: ペンがさんぼんあります。
+          translation:
+            vi: Có ba cây bút.
+      pronunciation_note:
+        vi: 'Âm đổi theo số: 1, 6, 8, 10 thành ぽん (có っ đứng trước); 3 và "mấy" thành ぼん (さんぼん, なんぼん).'
+
+  - key: ja:item:mai-counter
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜枚
+      reading: 〜まい
+      romanization: -mai
+      pos: lượng từ (vật mỏng, phẳng)
+    back:
+      meaning:
+        vi: 'Đếm vật mỏng, phẳng - giấy, vé, tem, áo sơ mi, đĩa: いちまい, にまい, さんまい... Không đổi âm. Hỏi: なんまい.'
+      examples:
+        - target: きってをごまいください。
+          translation:
+            vi: Cho tôi năm con tem.
+
+  - key: ja:item:dai-counter
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜台
+      reading: 〜だい
+      romanization: -dai
+      pos: lượng từ (máy móc, xe)
+    back:
+      meaning:
+        vi: 'Đếm máy móc và xe cộ - ô tô, xe đạp, tivi, máy tính: いちだい, にだい, さんだい... Hỏi: なんだい.'
+      examples:
+        - target: うちにテレビがにだいあります。
+          translation:
+            vi: Nhà tôi có hai cái tivi.
+      confusion:
+        vi: Giống "chiếc" trong tiếng Việt cho xe, máy. Đừng nhầm với だい trong だいすき (rất thích).
+
+  - key: ja:item:kai-counter
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜回
+      reading: 〜かい
+      romanization: -kai
+      pos: lượng từ (số lần)
+    back:
+      meaning:
+        vi: 'Đếm số lần: いっかい, にかい, さんかい, よんかい, ごかい, ろっかい, ななかい, はっかい, きゅうかい, じゅっかい. Hỏi: なんかい. Tần suất - いっしゅうかんににかい (một tuần hai lần).'
+      examples:
+        - target: いちにちにさんかいはをみがきます。
+          translation:
+            vi: Một ngày tôi đánh răng ba lần.
+      pronunciation_note:
+        vi: 1, 6, 8, 10 có âm ngắt っ - いっかい, ろっかい, はっかい, じゅっかい.
+
+  - key: ja:item:nanbon-nanmai
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: なんぼん / なんまい / なんだい / なんかい
+      romanization: nanbon / nanmai / nandai / nankai
+      pos: từ để hỏi số lượng
+    back:
+      meaning:
+        vi: 'Hỏi "mấy...?" theo đúng lượng từ: なん + lượng từ. Vị trí: N が + số lượng + あります / N を + số lượng + ください - かさがなんぼんありますか.'
+      examples:
+        - target: シャツをなんまいかいましたか。
+          translation:
+            vi: Bạn đã mua mấy cái áo sơ mi?
+      confusion:
+        vi: 'Khác tiếng Việt "ba cây bút", số lượng đứng sau danh từ và trợ từ: ペンをさんぼんかいます, không nói さんぼんペンをかいます trong văn nói thường ngày.'
+
+  - key: ja:item:kuruma
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 車
+      reading: くるま
+      romanization: kuruma
+      pos: danh từ
+    back:
+      meaning:
+        vi: Ô tô, xe hơi. くるまでいきます - đi bằng ô tô.
+      examples:
+        - target: あたらしいくるまがほしいです。
+          translation:
+            vi: Tôi muốn có một chiếc ô tô mới.
+
+  - key: ja:item:kami
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 紙
+      reading: かみ
+      romanization: kami
+      pos: danh từ
+    back:
+      meaning:
+        vi: Giấy. かみをいちまいください - cho tôi một tờ giấy.
+      examples:
+        - target: つくえのうえにしろいかみがあります。
+          translation:
+            vi: Trên bàn có tờ giấy trắng.
+      confusion:
+        vi: かみ còn là "tóc" (髪) và "thần" (神); viết chữ Hán thì khác nhau, kana thì giống.
+
+  # ---------------- bài 4: ngày tháng ----------------
+  - key: ja:item:gatsu-months
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 〜月
+      reading: 〜がつ
+      romanization: -gatsu
+      pos: tên tháng
+    back:
+      meaning:
+        vi: 'Tên tháng = số + がつ: いちがつ (tháng 1)... じゅうにがつ (tháng 12). Ba tháng cần nhớ: しがつ (tháng 4), しちがつ (tháng 7), くがつ (tháng 9). Hỏi: なんがつ.'
+      examples:
+        - target: にほんのがっこうはしがつからです。
+          translation:
+            vi: Trường học ở Nhật bắt đầu từ tháng Tư.
+      confusion:
+        vi: Không nói よんがつ, ななかつ, きゅうがつ. 〜がつ là tên tháng; "mấy tháng" (độ dài) là 〜かげつ - học sau.
+
+  - key: ja:item:hi-dates
+    type: grammar_point
+    level: n5
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 一日〜十日, 十四日, 二十日
+      reading: ついたち・ふつか・みっか・よっか・いつか・むいか・なのか・ようか・ここのか・とおか・じゅうよっか・はつか
+      romanization: tsuitachi ... tōka, jūyokka, hatsuka
+      pos: ngày trong tháng
+    back:
+      meaning:
+        vi: 'Ngày 1 đến 10 có cách đọc riêng: ついたち, ふつか, みっか, よっか, いつか, むいか, なのか, ようか, ここのか, とおか. Từ 11 trở đi là số + にち (じゅういちにち), trừ じゅうよっか (14), はつか (20), にじゅうよっか (24).'
+      examples:
+        - target: きょうはみっかです。
+          translation:
+            vi: Hôm nay là ngày mùng 3.
+      pronunciation_note:
+        vi: よっか (ngày 4) và ようか (ngày 8) rất dễ nhầm - よっか có âm ngắt, ようか có âm dài.
+      confusion:
+        vi: ふつか, みっか... còn có nghĩa "2 ngày, 3 ngày" (độ dài); riêng "1 ngày" (độ dài) là いちにち, không phải ついたち.
+
+  - key: ja:item:nangatsu-nannichi
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: なんがつなんにちですか。
+      romanization: nangatsu nannichi desu ka
+      pos: hỏi ngày tháng
+    back:
+      meaning:
+        vi: 'Hỏi "ngày mấy tháng mấy?". Thứ tự ngày tháng tiếng Nhật ngược tiếng Việt: tháng trước, ngày sau - しがつようか (ngày 8 tháng 4). Có ngày cụ thể thì đi với に: ごがつみっかにきます.'
+      examples:
+        - target: たんじょうびはなんがつなんにちですか。
+          translation:
+            vi: Sinh nhật bạn là ngày mấy tháng mấy?
+      confusion:
+        vi: Người Việt hay nói ngày trước tháng (ようかしがつ) - sai. Năm (nếu có) đứng đầu, rồi tháng, rồi ngày.
+
+  - key: ja:item:sengetsu-raigetsu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 先月 / 今月 / 来月
+      reading: せんげつ / こんげつ / らいげつ
+      romanization: sengetsu / kongetsu / raigetsu
+      pos: danh từ chỉ thời gian
+    back:
+      meaning:
+        vi: Tháng trước / tháng này / tháng sau. Giống せんしゅう・こんしゅう・らいしゅう, không dùng に - らいげつにほんへいきます.
+      examples:
+        - target: こんげつはいそがしいです。
+          translation:
+            vi: Tháng này tôi bận.
+      confusion:
+        vi: Năm thì khác quy luật - きょねん (năm ngoái), ことし (năm nay), らいねん (năm sau).
+
+  # ---------------- bài 5: ôn tập ----------------
+  - key: ja:item:paatii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: パーティー
+      romanization: pātī
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: Bữa tiệc. たんじょうびパーティー - tiệc sinh nhật; パーティーをします - tổ chức tiệc.
+      examples:
+        - target: どようびにパーティーをします。
+          translation:
+            vi: Thứ Bảy chúng tôi tổ chức tiệc.
+      pronunciation_note:
+        vi: Hai trường âm ー - "paa-tii"; viết パーティ (thiếu ー cuối) cũng gặp nhưng ít chuẩn hơn.
+
+  - key: ja:item:zehi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: ぜひ
+      romanization: zehi
+      pos: phó từ
+    back:
+      meaning:
+        vi: Nhất định, rất mong. Dùng khi mời mạnh - ぜひきてください (nhất định đến nhé), hoặc nhận lời nhiệt tình - ぜひ!
+      examples:
+        - target: ぜひいっしょにいきましょう。
+          translation:
+            vi: Nhất định mình cùng đi nhé.
+      confusion:
+        vi: ぜひ đi với mong muốn, lời mời (〜てください, 〜たい, 〜ましょう); không dùng với phủ định.

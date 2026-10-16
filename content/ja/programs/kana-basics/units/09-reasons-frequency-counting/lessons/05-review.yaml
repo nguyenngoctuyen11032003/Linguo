@@ -1,0 +1,348 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:reasons-frequency-counting-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Tuần của tôi và lời mời dự sinh nhật
+objectives:
+  - vi: Giới thiệu một tuần của mình bằng phó từ tần suất và lượng từ.
+  - vi: Viết lời mời dự tiệc sinh nhật với ngày tháng và giờ giấc.
+  - vi: Nhận lời hoặc từ chối khéo bằng から.
+estimated_minutes: 18
+skills: [reading, speaking, writing, listening]
+prerequisites: [ja:lesson:dates]
+items:
+  - item: ja:item:paatii
+  - item: ja:item:zehi
+  - item: ja:item:kara-reason
+    role: reuse
+  - item: ja:item:yoku-often
+    role: reuse
+  - item: ja:item:zenzen-masen
+    role: reuse
+  - item: ja:item:amari-masen
+    role: reuse
+  - item: ja:item:hon-counter
+    role: reuse
+  - item: ja:item:hi-dates
+    role: reuse
+  - item: ja:item:n4-tanjoubi
+    role: reuse
+  - item: ja:item:masenka
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đi theo Nam - một du học sinh ở Nhật. Nam kể một tuần của mình, rồi mời bạn bè đến tiệc sinh nhật; bạn sẽ đọc, nghe và trả lời như Nam.
+  - type: explain
+    text:
+      vi: 'Kể thói quen trong tuần: まいしゅう / よく / ときどき + V ます; あまり / ぜんぜん + V ません. Thêm lý do bằng から - しごとがおおいですから、あまりりょうりをしません.'
+  - type: explain
+    text:
+      vi: 'Lời mời gồm ba phần: lý do (〜ですから), thời gian (ngày tháng + じ + から), lời mời (ぜひ〜ませんか). Từ chối khéo - すみません、〜から… và bỏ lửng câu.'
+  - type: deep_explain
+    text:
+      vi: Ở Nhật, lời mời thường kèm ngày cụ thể và giờ bắt đầu, vì người Nhật quen sắp lịch trước. ぜひ làm lời mời nhiệt tình hơn; khi nhận lời, chỉ cần trả lời ぜひ! hoặc いいですね. Đếm đồ mua cho tiệc nhớ đúng lượng từ - chai ほん, đĩa まい, người にん.
+  - type: example
+    target: まいしゅうすいようびとどようびに、にほんごのクラスがあります。
+    target_lang: ja
+    translation:
+      vi: Mỗi tuần tôi có lớp tiếng Nhật vào thứ Tư và thứ Bảy.
+    note:
+      vi: まいしゅう không に; thứ cụ thể có に.
+  - type: example
+    target: しゅうまつはよくともだちとサッカーをします。
+    target_lang: ja
+    translation:
+      vi: Cuối tuần tôi hay đá bóng với bạn bè.
+  - type: example
+    target: らいしゅうのどようびはわたしのたんじょうびですから、パーティーをします。
+    target_lang: ja
+    translation:
+      vi: Thứ Bảy tuần sau là sinh nhật tôi nên tôi tổ chức tiệc.
+    note:
+      vi: Lý do + から, rồi việc làm.
+  - type: example
+    target: じゅういちがつみっかのごじからです。ぜひきませんか。
+    target_lang: ja
+    translation:
+      vi: Bắt đầu từ 5 giờ ngày 3 tháng 11. Bạn nhất định đến nhé?
+    note:
+      vi: ぜひ + ませんか - lời mời nhiệt tình.
+  - type: example
+    target: ジュースをじゅっぽんとおかしをかいましょう。
+    target_lang: ja
+    translation:
+      vi: Mình mua mười chai nước ép và bánh kẹo nhé.
+    note:
+      vi: Chai - じゅっぽん (10 + ほん).
+  - type: common_mistake
+    wrong: ぜひいきません。
+    right: すみません、ちょっと…。
+    target_lang: ja
+    note:
+      vi: ぜひ chỉ đi với lời mời, mong muốn - không dùng với phủ định. Từ chối thì dùng すみません、ちょっと….
+  - type: common_mistake
+    wrong: ジュースをじゅうほんかいました。
+    right: ジュースをじゅっぽんかいました。
+    target_lang: ja
+    note:
+      vi: 10 + ほん = じゅっぽん (âm ngắt và ぽ).
+  - type: summary
+    points:
+      - vi: Thói quen - まいしゅう / よく / ときどき + ます; あまり / ぜんぜん + ません.
+      - vi: Lời mời - lý do (から) + ngày giờ + ぜひ〜ませんか.
+      - vi: Từ chối khéo - すみません、〜から….
+      - vi: パーティー tiệc · ぜひ nhất định.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:rfc-review-mcq-invitation
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:paatii
+    prompt:
+      stem: "Tin nhắn của Nam: 「じゅうがつようかのどようびに、うちでパーティーをします。ぜひきませんか。」 Bữa tiệc vào ngày nào?"
+      stem_lang: vi
+      options:
+        - { id: h3j, text: Thứ Bảy ngày 8 tháng 10, lang: vi }
+        - { id: k7l, text: Thứ Bảy ngày 4 tháng 10, lang: vi }
+        - { id: m1n, text: Thứ Bảy ngày 8 tháng 11, lang: vi }
+        - { id: p5q, text: Chủ nhật ngày 8 tháng 10, lang: vi }
+    answer:
+      correct_option_id: h3j
+    explanation:
+      vi: じゅうがつ - tháng 10; ようか - ngày 8 (ngày 4 là よっか); どようび - thứ Bảy.
+    display_answer: Thứ Bảy ngày 8 tháng 10
+
+  - key: ja:exercise:rfc-review-listen-brother
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kara-reason
+    prompt:
+      audio_asset_id: null
+      fallback_text: あにはまいばんジムへいきますから、いつもげんきです。
+      options:
+        - { id: r9s, text: Anh trai tôi tối nào cũng đi tập gym nên lúc nào cũng khoẻ., lang: vi }
+        - { id: t2u, text: Anh trai tôi lúc nào cũng khoẻ nên tối nào cũng đi gym., lang: vi }
+        - { id: v6w, text: Anh trai tôi thỉnh thoảng đi tập gym vào buổi tối., lang: vi }
+        - { id: x4y, text: Anh trai tôi đi tập gym từ tối nên lúc nào cũng mệt., lang: vi }
+    answer:
+      correct_option_id: r9s
+    explanation:
+      vi: まいばん - mỗi tối; から sau câu là "vì"; いつもげんきです - lúc nào cũng khoẻ. Lý do là đi gym, kết quả là khoẻ.
+    display_answer: Anh trai tôi tối nào cũng đi tập gym nên lúc nào cũng khoẻ.
+
+  - key: ja:exercise:rfc-review-fill-juice
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hon-counter
+    prompt:
+      template: "パーティーのジュースを{{b1}}かいました。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi đã mua 6 chai nước ép cho bữa tiệc."
+        - Gợi ý - 6 + lượng từ vật dài, có âm ngắt.
+    answer:
+      blanks:
+        b1: [ろっぽん, 六本, 6本]
+    known_wrong:
+      - answer: ろくほん
+        feedback_vi: 6 + ほん đổi âm thành ろっぽん.
+        error_tag: counter_reading
+      - answer: ろくまい
+        feedback_vi: Chai là vật dài - dùng ほん, không dùng まい.
+        error_tag: counter_choice
+    explanation:
+      vi: ジュース (chai) đếm bằng ほん; 6 chai là ろっぽん.
+    display_answer: パーティーのジュースをろっぽんかいました。
+
+  - key: ja:exercise:rfc-review-mcq-zehi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:zehi
+    prompt:
+      stem: 'Bạn nhiệt tình rủ bạn: "Nhất định mình cùng ăn nhé!" Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: z8a, text: ぜひいっしょにたべましょう。, lang: ja }
+        - { id: b2c, text: ぜひいっしょにたべません。, lang: ja }
+        - { id: d6e, text: ぜんぜんいっしょにたべましょう。, lang: ja }
+        - { id: f1g, text: あまりいっしょにたべましょう。, lang: ja }
+    answer:
+      correct_option_id: z8a
+    explanation:
+      vi: ぜひ + ましょう - lời rủ nhiệt tình. ぜひ không đi với phủ định; ぜんぜん và あまり cần ません.
+    display_answer: ぜひいっしょにたべましょう。
+
+  - key: ja:exercise:rfc-review-order-cake
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kara-reason
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Vì là sinh nhật nên tôi đã mua bánh kem.”"
+      tokens:
+        - { id: t1, text: かいました }
+        - { id: t2, text: たんじょうびまで、 }
+        - { id: t3, text: ケーキを }
+        - { id: t4, text: たんじょうびですから、 }
+    answer:
+      orders:
+        - [t4, t3, t1]
+    explanation:
+      vi: Lý do たんじょうびです + から, rồi ケーキをかいました. まで là "đến", không nối lý do.
+    display_answer: たんじょうびですから、ケーキをかいました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:rfc-review-fill-date-people
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hi-dates
+    prompt:
+      template: "Thứ Bảy tuần sau là ngày 3 - らいしゅうのどようびは{{b1}}です。 Tôi mời 5 người bạn - ともだちを{{b2}}よびます。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [みっか, 三日, 3日]
+        b2: [ごにん, 五人, 5人]
+    known_wrong:
+      - answer: さんにち
+        feedback_vi: Ngày 3 đọc riêng là みっか.
+        error_tag: date_reading
+      - answer: ごまい
+        feedback_vi: Đếm người dùng にん - ごにん.
+        error_tag: counter_choice
+    explanation:
+      vi: みっか - ngày 3; ごにん - 5 người. よびます - mời, gọi (đến).
+    display_answer: らいしゅうのどようびはみっかです。 / ともだちをごにんよびます。
+
+  - key: ja:exercise:rfc-review-write-sunday
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:zenzen-masen
+    prompt:
+      source_text: Chủ nhật thì tôi hoàn toàn không làm việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - にちようびはぜんぜんしごとをしません。
+        - 日曜日は全然仕事をしません。
+        - にちようびはしごとをぜんぜんしません。
+        - 日曜日は仕事を全然しません。
+        - わたしはにちようびはぜんぜんしごとをしません。
+        - 私は日曜日は全然仕事をしません。
+        - にちようびはぜんぜんはたらきません。
+        - 日曜日は全然働きません。
+    known_wrong:
+      - answer: にちようびはぜんぜんしごとをします。
+        feedback_vi: ぜんぜん luôn đi với phủ định - しません.
+        error_tag: zenzen_negative
+      - answer: にちようびにはぜんぜんしごとをしましょう。
+        feedback_vi: Câu kể thói quen phủ định, không phải lời rủ ましょう.
+        error_tag: verb_form
+    explanation:
+      vi: にちようびは (Chủ nhật thì) + ぜんぜん + しごとをしません (không làm việc).
+    display_answer: にちようびはぜんぜんしごとをしません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:rfc-review-translate-thursday
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:amari-masen
+    prompt:
+      source_text: もくようびはしごとがおおいですから、あまりりょうりをしません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thứ Năm nhiều việc nên tôi ít nấu ăn.
+        - Vì thứ Năm nhiều việc nên tôi không nấu ăn mấy.
+        - Thứ Năm có nhiều việc nên tôi không nấu ăn lắm.
+        - Vì thứ Năm nhiều việc nên tôi ít khi nấu ăn.
+        - Thứ Năm công việc nhiều nên tôi ít nấu ăn.
+        - Vì thứ Năm có nhiều việc nên tôi không hay nấu ăn.
+        - Thứ Năm nhiều việc nên tôi không nấu ăn nhiều.
+        - Thứ Năm tôi nhiều việc nên ít nấu ăn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thứ Năm nhiều việc nên tôi hay nấu ăn.
+        feedback_vi: あまり〜ません là "ít, không... lắm", không phải "hay".
+        error_tag: frequency_word
+    explanation:
+      vi: しごとがおおいですから - vì nhiều việc; あまりりょうりをしません - ít nấu ăn.
+    display_answer: Thứ Năm nhiều việc nên tôi ít nấu ăn.
+
+  - key: ja:exercise:rfc-review-mcq-decline
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:masenka
+    prompt:
+      stem: Bạn được mời dự tiệc ngày 12, nhưng hôm đó bạn phải đi làm. Câu từ chối khéo nào đúng?
+      stem_lang: vi
+      options:
+        - { id: j4k, text: すみません、じゅうににちはしごとがありますから…。, lang: ja }
+        - { id: l8m, text: すみません、じゅうににちはしごとがありますまで…。, lang: ja }
+        - { id: n2o, text: ぜひ、じゅうににちはしごとがありますから。, lang: ja }
+        - { id: p6q, text: すみません、じゅうふつかはしごとがありますから…。, lang: ja }
+    answer:
+      correct_option_id: j4k
+    explanation:
+      vi: すみません + lý do + から rồi bỏ lửng - từ chối khéo. まで không nối lý do; ぜひ dùng khi nhận lời; ngày 12 là じゅうににち (chỉ ngày 2 mới là ふつか).
+    display_answer: すみません、じゅうににちはしごとがありますから…。
+
+  - key: ja:exercise:rfc-review-write-party-time
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:paatii
+    prompt:
+      source_text: Bữa tiệc bắt đầu từ 6 giờ ngày 14 tháng 10.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - パーティーはじゅうがつじゅうよっかのろくじからです。
+        - パーティーは十月十四日の六時からです。
+        - パーティーは10月14日の6時からです。
+        - パーティーはじゅうがつじゅうよっかろくじからです。
+        - パーティーは10月14日6時からです。
+        - パーティーはじゅうがつじゅうよっかのろくじからはじまります。
+        - パーティーは10月14日の6時から始まります。
+        - パーティーは十月十四日の六時から始まります。
+    known_wrong:
+      - answer: パーティーはじゅうがつじゅうよんにちのろくじからです。
+        feedback_vi: Ngày 14 đọc riêng là じゅうよっか.
+        error_tag: date_reading
+      - answer: パーティーはじゅうよっかじゅうがつのろくじからです。
+        feedback_vi: Tháng đứng trước ngày - じゅうがつじゅうよっか.
+        error_tag: date_order
+    explanation:
+      vi: じゅうがつじゅうよっか (14/10) + の + ろくじから (từ 6 giờ) + です.
+    display_answer: パーティーはじゅうがつじゅうよっかのろくじからです。

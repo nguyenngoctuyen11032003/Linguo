@@ -1,0 +1,363 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:counters-hon-mai
+order_index: 3
+level: n5
+title:
+  vi: Lượng từ riêng - 〜ほん, 〜まい, 〜だい, 〜かい
+objectives:
+  - vi: Đếm vật dài bằng 〜ほん và nhớ các âm biến đổi (いっぽん, さんぼん, ろっぽん).
+  - vi: Đếm vật mỏng bằng 〜まい, máy móc - xe bằng 〜だい, số lần bằng 〜かい.
+  - vi: Hỏi số lượng bằng なんぼん, なんまい, なんだい, なんかい.
+estimated_minutes: 18
+skills: [vocabulary, grammar, speaking, listening]
+prerequisites: [ja:lesson:frequency]
+items:
+  - item: ja:item:hon-counter
+  - item: ja:item:mai-counter
+  - item: ja:item:dai-counter
+  - item: ja:item:kai-counter
+  - item: ja:item:nanbon-nanmai
+  - item: ja:item:kuruma
+  - item: ja:item:kami
+  - item: ja:item:tsu-counter
+    role: reuse
+  - item: ja:item:nin-counter
+    role: reuse
+  - item: ja:item:kitte
+    role: reuse
+  - item: ja:item:kasa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mua đúng số lượng ở bưu điện, cửa hàng - "cho tôi 10 con tem", "hai chai bia" - và nói "một tuần đi tập ba lần".
+  - type: explain
+    text:
+      vi: 'Bạn đã học ひとつ, ふたつ (đồ vật chung) và 〜にん (người). Tiếng Nhật còn lượng từ theo hình dạng, giống "cây, tờ, chiếc" của tiếng Việt: 〜ほん - vật dài (bút, chai, ô); 〜まい - vật mỏng, phẳng (giấy, vé, tem, áo sơ mi); 〜だい - máy móc, xe; 〜かい - số lần.'
+  - type: explain
+    text:
+      vi: 'ほん đổi âm theo số: いっぽん, にほん, さんぼん, よんほん, ごほん, ろっぽん, ななほん, はっぽん, きゅうほん, じゅっぽん; hỏi なんぼん. かい có âm ngắt ở 1, 6, 8, 10: いっかい, ろっかい, はっかい, じゅっかい. まい và だい không đổi.'
+  - type: explain
+    text:
+      vi: 'Khác tiếng Việt ("ba cây bút"), số lượng đứng sau danh từ + trợ từ và trước động từ: ペンをさんぼんかいます, きってをごまいください. Tần suất: khoảng thời gian + に + số lần - いっしゅうかんににかい (một tuần hai lần).'
+  - type: deep_explain
+    text:
+      vi: 'Quy luật âm: số 1, 6, 8, 10 hay ghép âm ngắt っ với lượng từ bắt đầu bằng h/k (いっぽん, ろっかい); số 3 và なん hay làm h thành b (さんぼん, なんぼん). Khi quên lượng từ riêng, ひとつ, ふたつ… vẫn dùng được cho nhiều đồ vật, nhưng với người, xe, giấy thì nên dùng đúng lượng từ.'
+  - type: example
+    target: ビールをにほんください。
+    target_lang: ja
+    translation:
+      vi: Cho tôi hai chai bia.
+    note:
+      vi: Chai là vật dài - 〜ほん; にほん ở đây là "2 chai", không phải "Nhật Bản".
+  - type: example
+    target: ゆうびんきょくできってをじゅうまいかいました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã mua mười con tem ở bưu điện.
+    note:
+      vi: Tem mỏng, phẳng - 〜まい.
+  - type: example
+    target: ちゅうしゃじょうにくるまがよんだいあります。
+    target_lang: ja
+    translation:
+      vi: Ở bãi đỗ xe có bốn chiếc ô tô.
+    note:
+      vi: Xe - 〜だい; ちゅうしゃじょう - bãi đỗ xe.
+  - type: example
+    target: いっしゅうかんににかいプールへいきます。
+    target_lang: ja
+    translation:
+      vi: Một tuần tôi đi bể bơi hai lần.
+    note:
+      vi: いっしゅうかん (một tuần) + に + にかい (2 lần).
+  - type: example
+    target: ボールペンをなんぼんかいましたか。- ごほんかいました。
+    target_lang: ja
+    translation:
+      vi: Bạn đã mua mấy cây bút bi? - Tôi mua năm cây.
+    note:
+      vi: Hỏi なんぼん (âm b), trả lời ごほん (âm h).
+  - type: common_mistake
+    wrong: ペンがさんほんあります。
+    right: ペンがさんぼんあります。
+    target_lang: ja
+    note:
+      vi: Số 3 làm ほん đục thành ぼん - さんぼん.
+  - type: common_mistake
+    wrong: かさがいちほんあります。
+    right: かさがいっぽんあります。
+    target_lang: ja
+    note:
+      vi: 1 + ほん = いっぽん (âm ngắt và ぽ), không nói いちほん.
+  - type: common_mistake
+    wrong: かみをさんぼんください。
+    right: かみをさんまいください。
+    target_lang: ja
+    note:
+      vi: Giấy mỏng, phẳng nên đếm bằng まい; ほん dành cho vật dài.
+  - type: summary
+    points:
+      - vi: 〜ほん vật dài - いっぽん, さんぼん, ろっぽん, はっぽん, じゅっぽん; なんぼん.
+      - vi: 〜まい vật mỏng · 〜だい máy, xe · 〜かい số lần (いっかい, ろっかい, じゅっかい).
+      - vi: N を / N が + số lượng + động từ - かみをにまいください.
+      - vi: Tần suất - いっしゅうかんに + số lần.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:counters-hon-mcq-roppon
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hon-counter
+    prompt:
+      stem: '"Có 6 chai nước." みずが＿＿あります。'
+      stem_lang: vi
+      options:
+        - { id: b4c, text: ろっぽん, lang: ja }
+        - { id: d8e, text: ろくほん, lang: ja }
+        - { id: f1g, text: ろくぼん, lang: ja }
+        - { id: h5i, text: ろっほん, lang: ja }
+    answer:
+      correct_option_id: b4c
+    explanation:
+      vi: 6 + ほん đổi âm thành ろっぽん (âm ngắt っ và ぽ). ろくほん, ろくぼん, ろっほん đều không tồn tại.
+    display_answer: ろっぽん
+
+  - key: ja:exercise:counters-hon-listen-tickets
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:mai-counter
+    prompt:
+      audio_asset_id: null
+      fallback_text: すみません、きっぷをさんまいください。
+      options:
+        - { id: j2k, text: "Xin lỗi, cho tôi ba vé.", lang: vi }
+        - { id: l6m, text: "Xin lỗi, cho tôi ba chai.", lang: vi }
+        - { id: n9o, text: "Xin lỗi, cho tôi ba mươi vé.", lang: vi }
+        - { id: p3q, text: "Xin lỗi, tôi đi ba lần.", lang: vi }
+    answer:
+      correct_option_id: j2k
+    explanation:
+      vi: きっぷ - vé; さんまい - 3 tờ (vật mỏng). 30 là さんじゅう; chai là ほん; lần là かい.
+    display_answer: Xin lỗi, cho tôi ba vé.
+
+  - key: ja:exercise:counters-hon-fill-cars
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:dai-counter
+    prompt:
+      template: "このいえにはくるまがに{{b1}}あります。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Nhà này có hai chiếc ô tô."
+        - Gợi ý - lượng từ cho máy móc và xe cộ.
+    answer:
+      blanks:
+        b1: [だい, 台]
+    known_wrong:
+      - answer: まい
+        feedback_vi: まい dành cho vật mỏng như giấy; xe đếm bằng だい.
+        error_tag: counter_choice
+      - answer: ほん
+        feedback_vi: ほん dành cho vật dài; xe đếm bằng だい.
+        error_tag: counter_choice
+    explanation:
+      vi: くるま (ô tô) là xe nên đếm bằng 〜だい - にだい (2 chiếc).
+    display_answer: このいえにはくるまがにだいあります。
+
+  - key: ja:exercise:counters-hon-mcq-times
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kai-counter
+    prompt:
+      stem: '"Tôi đã đi Nhật 2 lần." にほんへに＿＿いきました。'
+      stem_lang: vi
+      options:
+        - { id: r7s, text: かい, lang: ja }
+        - { id: t1u, text: だい, lang: ja }
+        - { id: v5w, text: まい, lang: ja }
+        - { id: x9y, text: ほん, lang: ja }
+    answer:
+      correct_option_id: r7s
+    explanation:
+      vi: Đếm số lần dùng 〜かい - にかい (2 lần). だい, まい, ほん đếm đồ vật.
+    display_answer: かい
+
+  - key: ja:exercise:counters-hon-order-paper
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kami
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Cho tôi hai tờ giấy.”"
+      tokens:
+        - { id: t1, text: ください }
+        - { id: t2, text: にほん }
+        - { id: t3, text: にまい }
+        - { id: t4, text: かみを }
+    answer:
+      orders:
+        - [t4, t3, t1]
+    explanation:
+      vi: かみを + にまい (2 tờ - vật mỏng) + ください. にほん là đếm vật dài.
+    display_answer: かみをにまいください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:counters-hon-fill-readings
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hon-counter
+    prompt:
+      template: "Viết cách đọc - 1 cây bút: {{b1}} · 3 cây bút: {{b2}} · 10 lần: {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [いっぽん, 一本, 1本]
+        b2: [さんぼん, 三本, 3本]
+        b3: [じゅっかい, じっかい, 十回, 10回]
+    known_wrong:
+      - answer: いちほん
+        feedback_vi: 1 + ほん = いっぽん.
+        error_tag: counter_reading
+      - answer: さんほん
+        feedback_vi: 3 + ほん = さんぼん (đục thành ぼ).
+        error_tag: counter_reading
+      - answer: じゅうかい
+        feedback_vi: 10 + かい = じゅっかい (có âm ngắt っ).
+        error_tag: counter_reading
+    explanation:
+      vi: いっぽん (1), さんぼん (3) - ほん đổi âm; じゅっかい (10 lần) - âm ngắt.
+    display_answer: いっぽん · さんぼん · じゅっかい
+
+  - key: ja:exercise:counters-hon-write-bicycles
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:dai-counter
+    prompt:
+      source_text: Nhà tôi có ba chiếc xe đạp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - うちにじてんしゃがさんだいあります。
+        - 家に自転車が三台あります。
+        - 家に自転車が3台あります。
+        - わたしのうちにじてんしゃがさんだいあります。
+        - 私の家に自転車が三台あります。
+        - うちにはじてんしゃがさんだいあります。
+        - 家には自転車が3台あります。
+        - いえにじてんしゃがさんだいあります。
+    known_wrong:
+      - answer: うちにじてんしゃがさんまいあります。
+        feedback_vi: Xe đếm bằng だい, không phải まい.
+        error_tag: counter_choice
+      - answer: うちにじてんしゃをさんだいあります。
+        feedback_vi: Với あります, vật "có" đi với が.
+        error_tag: particle_choice
+    explanation:
+      vi: うちに (ở nhà) + じてんしゃが + さんだい + あります. Số lượng đứng ngay trước động từ.
+    display_answer: うちにじてんしゃがさんだいあります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:counters-hon-translate-umbrellas
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:nanbon-nanmai
+    prompt:
+      source_text: かさはなんぼんありますか。- よんほんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có mấy cây ô? - Bốn cây.
+        - Có mấy cái ô? - Bốn cái.
+        - Có mấy cây dù? - Bốn cây.
+        - Ô có mấy cái? - Bốn cái.
+        - Có bao nhiêu cái ô? - Bốn cái.
+        - Có mấy chiếc ô? - Bốn chiếc.
+        - Có mấy cây ô? - Có bốn cây.
+        - Có mấy cái dù? - Bốn cái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có mấy cây ô? - Mười cây.
+        feedback_vi: よんほん là 4 cây; 10 cây là じゅっぽん.
+        error_tag: number
+    explanation:
+      vi: なんぼん - mấy cây (vật dài); よんほん - 4 cây. Ô là vật dài nên đếm bằng ほん.
+    display_answer: Có mấy cây ô? - Bốn cây.
+
+  - key: ja:exercise:counters-hon-mcq-post-office
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kitte
+    prompt:
+      stem: Ở bưu điện, bạn muốn mua 10 con tem. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: z3a, text: すみません、きってをじゅうまいください。, lang: ja }
+        - { id: c7d, text: すみません、きってをじゅっぽんください。, lang: ja }
+        - { id: e2f, text: すみません、きってをじゅうだいください。, lang: ja }
+        - { id: g6h, text: すみません、きってをじゅっかいください。, lang: ja }
+    answer:
+      correct_option_id: z3a
+    explanation:
+      vi: Tem mỏng, phẳng - 〜まい; じゅうまい - 10 con. ほん là vật dài, だい là máy móc, かい là số lần.
+    display_answer: すみません、きってをじゅうまいください。
+
+  - key: ja:exercise:counters-hon-write-gym
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kai-counter
+    prompt:
+      source_text: Một tuần tôi đi tập gym ba lần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - いっしゅうかんにさんかいジムへいきます。
+        - いっしゅうかんにさんかいジムにいきます。
+        - 一週間に三回ジムへ行きます。
+        - 一週間に三回ジムに行きます。
+        - 1週間に3回ジムへ行きます。
+        - 1週間に3回ジムに行きます。
+        - しゅうにさんかいジムへいきます。
+        - しゅうにさんかいジムにいきます。
+        - 週に3回ジムに行きます。
+        - わたしはいっしゅうかんにさんかいジムへいきます。
+    known_wrong:
+      - answer: いっしゅうかんにさんだいジムへいきます。
+        feedback_vi: Số lần đếm bằng かい, không phải だい.
+        error_tag: counter_choice
+      - answer: いっしゅうかんさんかいにジムへいきます。
+        feedback_vi: に đi sau khoảng thời gian - いっしゅうかんに + さんかい.
+        error_tag: particle_position
+    explanation:
+      vi: いっしゅうかんに (trong một tuần) + さんかい (3 lần) + ジムへいきます.
+    display_answer: いっしゅうかんにさんかいジムへいきます。

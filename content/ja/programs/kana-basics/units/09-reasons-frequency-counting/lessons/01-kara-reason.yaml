@@ -1,0 +1,341 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kara-reason
+order_index: 1
+level: n5
+title:
+  vi: Vì... nên... - から và どうして
+objectives:
+  - vi: Nối lý do với kết quả bằng 〜から、〜.
+  - vi: Hỏi "tại sao?" bằng どうして / なぜ và trả lời bằng 〜から(です).
+  - vi: Phân biệt から "vì" với から "từ" đã học.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:particles-invitations-review]
+items:
+  - item: ja:item:kara-reason
+  - item: ja:item:doushite
+  - item: ja:item:ame
+  - item: ja:item:itai
+  - item: ja:item:shigoto
+  - item: ja:item:kara-made
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được lý do - "vì mưa nên ở nhà", "vì đau đầu nên nghỉ" - và trả lời khi thầy cô hay đồng nghiệp hỏi どうして.
+  - type: explain
+    text:
+      vi: から đặt ở cuối vế lý do, rồi mới đến kết quả - あめですから、うちにいます (vì trời mưa nên tôi ở nhà). Tiếng Việt "vì" đứng đầu vế lý do; tiếng Nhật から đứng cuối, nhưng thứ tự lý do → kết quả vẫn giống.
+  - type: explain
+    text:
+      vi: 'Hỏi lý do - どうして (văn nói) hoặc なぜ (trang trọng hơn) đặt đầu câu hỏi. Trả lời: lý do + ですから / ますから, hoặc tính từ い + からです - あたまがいたかったからです.'
+  - type: explain
+    text:
+      vi: Bạn đã học から là "từ" (くじから, えきから) - đi sau danh từ chỉ giờ hoặc nơi chốn. から "vì" đi sau cả một câu (です, ます, tính từ), nên nhìn chữ đứng trước から là biết nghĩa.
+  - type: deep_explain
+    text:
+      vi: 'Người Nhật hay chỉ nói vế lý do rồi dừng khi từ chối hoặc xin lỗi - すみません、しごとがありますから… (xin lỗi, vì tôi có việc…). Câu bỏ lửng như vậy nghe mềm và lịch sự hơn nói thẳng "tôi không đi". Với danh từ và tính từ な, câu trả lời dạng からです cần だ - あめだからです; nếu chưa quen, cứ dùng あめですから.'
+  - type: example
+    target: あめですから、きょうはうちにいます。
+    target_lang: ja
+    translation:
+      vi: Vì trời mưa nên hôm nay tôi ở nhà.
+    note:
+      vi: Lý do (あめです) + から, rồi kết quả.
+  - type: example
+    target: あしたしけんがありますから、こんばんべんきょうします。
+    target_lang: ja
+    translation:
+      vi: Vì ngày mai có bài kiểm tra nên tối nay tôi học bài.
+    note:
+      vi: Động từ ます + から.
+  - type: example
+    target: どうしてきのうやすみましたか。- あたまがいたかったからです。
+    target_lang: ja
+    translation:
+      vi: Tại sao hôm qua bạn nghỉ? - Vì tôi bị đau đầu.
+    note:
+      vi: Tính từ い ở quá khứ (いたかった) + からです.
+  - type: example
+    target: このみせはやすいですから、ひとがおおいです。
+    target_lang: ja
+    translation:
+      vi: Cửa hàng này rẻ nên đông người.
+    note:
+      vi: Tính từ い + ですから.
+  - type: common_mistake
+    wrong: うちにいますから、あめです。
+    right: あめですから、うちにいます。
+    target_lang: ja
+    note:
+      vi: から gắn vào vế lý do (trời mưa), không gắn vào kết quả. Đặt nhầm là thành "vì tôi ở nhà nên trời mưa".
+  - type: common_mistake
+    wrong: どうしてやすみましたか。- あたまがいたいでしたから。
+    right: どうしてやすみましたか。- あたまがいたかったですから。
+    target_lang: ja
+    note:
+      vi: Quá khứ của tính từ い là 〜かった, không ghép いたい với でした.
+  - type: common_mistake
+    wrong: どうきのうきませんでしたか。
+    right: どうしてきのうきませんでしたか。
+    target_lang: ja
+    note:
+      vi: どう là "thế nào"; hỏi "tại sao" phải là どうして (hoặc なぜ).
+  - type: summary
+    points:
+      - vi: Lý do + から、kết quả - vì... nên...
+      - vi: どうして / なぜ 〜か。 - 〜ですから / 〜からです.
+      - vi: から sau giờ, nơi chốn = "từ"; から sau câu = "vì".
+      - vi: あめ mưa · いたい đau · しごと công việc.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kara-reason-mcq-busy
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kara-reason
+    prompt:
+      stem: '"Vì bận nên tôi không đi." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: q3w, text: いそがしいですから、いきません。, lang: ja }
+        - { id: e8r, text: いきませんから、いそがしいです。, lang: ja }
+        - { id: t2y, text: いそがしいですまで、いきません。, lang: ja }
+        - { id: u6i, text: いそがしいですを、いきません。, lang: ja }
+    answer:
+      correct_option_id: q3w
+    explanation:
+      vi: から đứng sau lý do (いそがしいです), kết quả いきません theo sau. Đảo lại thành "vì không đi nên bận"; まで và を không nối lý do.
+    display_answer: いそがしいですから、いきません。
+
+  - key: ja:exercise:kara-reason-listen-fever
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kara-reason
+    prompt:
+      audio_asset_id: null
+      fallback_text: ねつがありますから、きょうはがっこうをやすみます。
+      options:
+        - { id: o4p, text: Vì bị sốt nên hôm nay tôi nghỉ học., lang: vi }
+        - { id: a9s, text: Từ hôm nay tôi bị sốt nên nghỉ học., lang: vi }
+        - { id: d1f, text: Hôm nay tôi nghỉ học nên bị sốt., lang: vi }
+        - { id: g5h, text: Vì bị sốt nên hôm qua tôi nghỉ học., lang: vi }
+    answer:
+      correct_option_id: o4p
+    explanation:
+      vi: ねつがありますから - vì bị sốt (から sau câu = "vì"); きょう - hôm nay; やすみます - nghỉ.
+    display_answer: Vì bị sốt nên hôm nay tôi nghỉ học.
+
+  - key: ja:exercise:kara-reason-fill-stomach
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:doushite
+    prompt:
+      template: "どうしてたべませんか。- おなかがいたい{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tại sao bạn không ăn? - Vì tôi đau bụng."
+        - Gợi ý - trả lời lý do bằng "vì" + です.
+    answer:
+      blanks:
+        b1: [からです, ですから]
+    known_wrong:
+      - answer: までです
+        feedback_vi: まで là "đến"; trả lời lý do dùng からです.
+        error_tag: particle_choice
+      - answer: でした
+        feedback_vi: Câu hỏi どうして cần lý do có から - いたいからです.
+        error_tag: missing_kara
+    explanation:
+      vi: Tính từ い (いたい) + からです hoặc いたいですから - vì đau.
+    display_answer: どうしてたべませんか。- おなかがいたいからです。
+
+  - key: ja:exercise:kara-reason-mcq-window
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kara-reason
+    prompt:
+      stem: "Câu あついですから、まどをあけましょう。 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: h7j, text: Vì nóng nên mình mở cửa sổ ra nhé., lang: vi }
+        - { id: k2l, text: "Từ lúc nóng, mình mở cửa sổ nhé.", lang: vi }
+        - { id: z6x, text: Vì mở cửa sổ nên nóng., lang: vi }
+        - { id: c4v, text: "Nóng quá, đừng mở cửa sổ nhé.", lang: vi }
+    answer:
+      correct_option_id: h7j
+    explanation:
+      vi: から sau あついです (một câu) là "vì", không phải "từ". ましょう - mình cùng làm nhé.
+    display_answer: Vì nóng nên mình mở cửa sổ ra nhé.
+
+  - key: ja:exercise:kara-reason-order-work
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:shigoto
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Vì có việc nên tôi về sớm.”"
+      tokens:
+        - { id: t1, text: かえります }
+        - { id: t2, text: しごとがありますまで、 }
+        - { id: t3, text: はやく }
+        - { id: t4, text: しごとがありますから、 }
+    answer:
+      orders:
+        - [t4, t3, t1]
+    explanation:
+      vi: Lý do しごとがあります + から, rồi kết quả はやくかえります. まで là "đến", không nối lý do.
+    display_answer: しごとがありますから、はやくかえります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kara-reason-fill-two-kara
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kara-reason
+    prompt:
+      template: "Tôi làm việc từ 9 giờ - くじ{{b1}}はたらきます。 Vì trời mưa nên tôi đi taxi - あめです{{b2}}、タクシーでいきます。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [から]
+        b2: [から, ので]
+    known_wrong:
+      - answer: まで
+        feedback_vi: まで là "đến"; "từ 9 giờ" là くじから.
+        error_tag: kara_made
+      - answer: に
+        feedback_vi: に chỉ một mốc giờ; "từ" là から, "vì" cũng là から.
+        error_tag: particle_choice
+    explanation:
+      vi: Cùng một chữ から - sau giờ (くじ) là "từ", sau câu (あめです) là "vì".
+    display_answer: くじからはたらきます。 / あめですから、タクシーでいきます。
+
+  - key: ja:exercise:kara-reason-write-bank
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kara-reason
+    prompt:
+      source_text: Vì hôm nay là Chủ nhật nên ngân hàng nghỉ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きょうはにちようびですから、ぎんこうはやすみです。
+        - 今日は日曜日ですから、銀行は休みです。
+        - きょうはにちようびだから、ぎんこうはやすみです。
+        - 今日は日曜日だから、銀行は休みです。
+        - きょうはにちようびですから、ぎんこうはやすみですよ。
+        - 今日は日曜日ですから、銀行は休みですよ。
+        - にちようびですから、ぎんこうはやすみです。
+        - 日曜日ですから、銀行は休みです。
+    known_wrong:
+      - answer: ぎんこうはやすみですから、きょうはにちようびです。
+        feedback_vi: から gắn vào lý do (hôm nay Chủ nhật), không gắn vào kết quả.
+        error_tag: kara_order
+      - answer: きょうはにちようびですまで、ぎんこうはやすみです。
+        feedback_vi: まで là "đến"; "vì" là から.
+        error_tag: particle_choice
+    explanation:
+      vi: きょうはにちようびです + から (vì) + ぎんこうはやすみです (ngân hàng nghỉ).
+    display_answer: きょうはにちようびですから、ぎんこうはやすみです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kara-reason-translate-restaurant
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:doushite
+    prompt:
+      source_text: どうしてあのレストランへいきませんか。- たかいからです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tại sao bạn không đi nhà hàng kia? - Vì đắt.
+        - Tại sao không đi nhà hàng đó? - Vì đắt.
+        - Tại sao bạn không đến nhà hàng kia? - Vì nó đắt.
+        - Sao bạn không đi nhà hàng kia? - Vì đắt.
+        - Vì sao bạn không đi nhà hàng kia? - Vì đắt.
+        - Tại sao bạn không đi nhà hàng đó? - Vì đắt quá.
+        - Tại sao không đi nhà hàng kia? - Vì nó đắt.
+        - Tại sao bạn không đi đến nhà hàng kia? - Bởi vì đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tại sao bạn không đi nhà hàng kia? - Vì rẻ.
+        feedback_vi: たかい là "đắt", rẻ là やすい.
+        error_tag: vocab_meaning
+    explanation:
+      vi: どうして - tại sao; いきませんか - không đi; たかいからです - vì đắt.
+    display_answer: Tại sao bạn không đi nhà hàng kia? - Vì đắt.
+
+  - key: ja:exercise:kara-reason-mcq-late
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kara-reason
+    prompt:
+      stem: "Bạn đến lớp muộn. Cô giáo hỏi どうしておくれましたか. Tàu điện bị trễ. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: n8m, text: すみません。でんしゃがおくれましたから。, lang: ja }
+        - { id: b3q, text: すみません。でんしゃからおくれました。, lang: ja }
+        - { id: v7w, text: すみません。でんしゃがおくれましたまで。, lang: ja }
+        - { id: x1e, text: すみません。どうしてでんしゃがおくれましたか。, lang: ja }
+    answer:
+      correct_option_id: n8m
+    explanation:
+      vi: Lý do (でんしゃがおくれました) + から, bỏ lửng kết quả - cách xin lỗi tự nhiên. でんしゃから là "từ tàu điện"; まで không nối lý do; câu cuối là hỏi lại cô giáo.
+    display_answer: すみません。でんしゃがおくれましたから。
+
+  - key: ja:exercise:kara-reason-write-yesterday
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:itai
+    prompt:
+      source_text: Tại sao hôm qua bạn không đến? - Vì tôi bị đau bụng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - どうしてきのうきませんでしたか。- おなかがいたかったからです。
+        - どうしてきのうきませんでしたか。- おなかがいたかったですから。
+        - なぜきのうきませんでしたか。- おなかがいたかったからです。
+        - なぜきのうきませんでしたか。- おなかがいたかったですから。
+        - どうして昨日来ませんでしたか。- お腹が痛かったからです。
+        - どうして昨日来ませんでしたか。- おなかが痛かったからです。
+        - なぜ昨日来ませんでしたか。- お腹が痛かったからです。
+        - どうして昨日来ませんでしたか。- お腹が痛かったですから。
+    known_wrong:
+      - answer: どうしてきのうきませんでしたか。- おなかがいたいでしたから。
+        feedback_vi: Quá khứ của いたい là いたかった, không phải いたいでした.
+        error_tag: adjective_past
+      - answer: どうきのうきませんでしたか。- おなかがいたかったからです。
+        feedback_vi: どう là "thế nào"; "tại sao" là どうして.
+        error_tag: question_word
+    explanation:
+      vi: どうして + きませんでしたか (đã không đến); おなかがいたかった + からです (vì đã đau bụng).
+    display_answer: どうしてきのうきませんでしたか。- おなかがいたかったからです。

@@ -1,0 +1,354 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:dates
+order_index: 4
+level: n5
+title:
+  vi: Ngày tháng - なんがつなんにち, ついたち, ふつか...
+objectives:
+  - vi: Nói tên 12 tháng, nhớ しがつ, しちがつ, くがつ.
+  - vi: Đọc đúng ngày 1 - 10, 14, 20, 24 (ついたち, ふつか... はつか).
+  - vi: Hỏi và nói ngày sinh nhật, lịch hẹn bằng なんがつなんにち.
+estimated_minutes: 18
+skills: [vocabulary, speaking, listening]
+prerequisites: [ja:lesson:counters-hon-mai]
+items:
+  - item: ja:item:gatsu-months
+  - item: ja:item:hi-dates
+  - item: ja:item:nangatsu-nannichi
+  - item: ja:item:sengetsu-raigetsu
+  - item: ja:item:n4-tanjoubi
+    role: reuse
+  - item: ja:item:youbi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được ngày sinh nhật, ngày thi, ngày về nước, và hiểu ngày lễ Nhật như こどものひ (ngày 5 tháng 5).
+  - type: explain
+    text:
+      vi: 'Tháng = số + がつ: いちがつ, にがつ... じゅうにがつ. Ba tháng đọc riêng: しがつ (tháng 4), しちがつ (tháng 7), くがつ (tháng 9). Hỏi "tháng mấy?" - なんがつ.'
+  - type: explain
+    text:
+      vi: 'Ngày 1 - 10 có cách đọc riêng phải học thuộc: ついたち, ふつか, みっか, よっか, いつか, むいか, なのか, ようか, ここのか, とおか. Từ 11 trở đi là số + にち (じゅういちにち), trừ じゅうよっか (14), はつか (20), にじゅうよっか (24). Hỏi "ngày mấy?" - なんにち.'
+  - type: explain
+    text:
+      vi: Thứ tự ngược tiếng Việt - tháng trước, ngày sau - しがつようか là "ngày 8 tháng 4". Ngày cụ thể đi với に (ごがつみっかにきます), còn せんげつ, こんげつ, らいげつ thì không cần に.
+  - type: deep_explain
+    text:
+      vi: 'Mẹo nhớ: ふつか, みっか, よっか... giống bộ ふたつ, みっつ, よっつ đã học. Cặp dễ nhầm là よっか (ngày 4, âm ngắt) và ようか (ngày 8, âm dài). Khi viết, người Nhật hay dùng số: 4月8日 vẫn đọc là しがつようか.'
+  - type: example
+    target: きょうはしがつついたちです。
+    target_lang: ja
+    translation:
+      vi: Hôm nay là ngày 1 tháng 4.
+    note:
+      vi: Ngày 1 là ついたち, không phải いちにち.
+  - type: example
+    target: わたしのたんじょうびはくがつはつかです。
+    target_lang: ja
+    translation:
+      vi: Sinh nhật tôi là ngày 20 tháng 9.
+    note:
+      vi: Tháng 9 - くがつ; ngày 20 - はつか.
+  - type: example
+    target: こどものひはごがついつかです。
+    target_lang: ja
+    translation:
+      vi: Ngày Thiếu nhi (Nhật) là ngày 5 tháng 5.
+    note:
+      vi: いつか - ngày 5; こどものひ là ngày lễ ở Nhật.
+  - type: example
+    target: しけんはらいげつのとおかです。
+    target_lang: ja
+    translation:
+      vi: Kỳ thi là ngày 10 tháng sau.
+    note:
+      vi: らいげつ + の + ngày.
+  - type: example
+    target: なんがつなんにちにベトナムへかえりますか。- じゅうにがつにじゅうよっかにかえります。
+    target_lang: ja
+    translation:
+      vi: Bạn về Việt Nam ngày mấy tháng mấy? - Tôi về ngày 24 tháng 12.
+    note:
+      vi: Ngày cụ thể đi với に; 24 là にじゅうよっか.
+  - type: common_mistake
+    wrong: わたしのたんじょうびはよんがつです。
+    right: わたしのたんじょうびはしがつです。
+    target_lang: ja
+    note:
+      vi: Tháng 4 đọc しがつ; tương tự しちがつ (7), くがつ (9).
+  - type: common_mistake
+    wrong: ようかしがつにきます。
+    right: しがつようかにきます。
+    target_lang: ja
+    note:
+      vi: Tháng đứng trước, ngày đứng sau - ngược với tiếng Việt.
+  - type: common_mistake
+    wrong: ごがついちにちはやすみです。
+    right: ごがつついたちはやすみです。
+    target_lang: ja
+    note:
+      vi: Ngày mùng 1 là ついたち; いちにち là "một ngày" (độ dài).
+  - type: summary
+    points:
+      - vi: Tháng - số + がつ; しがつ (4), しちがつ (7), くがつ (9).
+      - vi: Ngày 1-10 - ついたち, ふつか, みっか, よっか, いつか, むいか, なのか, ようか, ここのか, とおか.
+      - vi: 14 じゅうよっか · 20 はつか · 24 にじゅうよっか; còn lại số + にち.
+      - vi: Thứ tự - tháng → ngày; ngày cụ thể + に; せんげつ・こんげつ・らいげつ không に.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:dates-mcq-september
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:gatsu-months
+    prompt:
+      stem: '"Tháng 9" nói thế nào?'
+      stem_lang: vi
+      options:
+        - { id: a4b, text: くがつ, lang: ja }
+        - { id: c8d, text: きゅうがつ, lang: ja }
+        - { id: e1f, text: くつき, lang: ja }
+        - { id: g5h, text: きゅうげつ, lang: ja }
+    answer:
+      correct_option_id: a4b
+    explanation:
+      vi: Tháng 9 đọc riêng là くがつ. きゅうがつ là lỗi hay gặp; つき và げつ không dùng để gọi tên tháng.
+    display_answer: くがつ
+
+  - key: ja:exercise:dates-listen-tanabata
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hi-dates
+    prompt:
+      audio_asset_id: null
+      fallback_text: しちがつなのかはたなばたです。
+      options:
+        - { id: i9j, text: Ngày 7 tháng 7 là lễ Tanabata., lang: vi }
+        - { id: k3l, text: Ngày 8 tháng 7 là lễ Tanabata., lang: vi }
+        - { id: m7n, text: Ngày 7 tháng 4 là lễ Tanabata., lang: vi }
+        - { id: o2p, text: Ngày 1 tháng 7 là lễ Tanabata., lang: vi }
+    answer:
+      correct_option_id: i9j
+    explanation:
+      vi: しちがつ - tháng 7; なのか - ngày 7. Ngày 8 là ようか, tháng 4 là しがつ, ngày 1 là ついたち.
+    display_answer: Ngày 7 tháng 7 là lễ Tanabata.
+
+  - key: ja:exercise:dates-fill-father
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hi-dates
+    prompt:
+      template: "ちちのたんじょうびはさんがつ{{b1}}です。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Sinh nhật bố tôi là ngày 3 tháng 3."
+        - Gợi ý - ngày 3 đọc giống "みっつ" bỏ つ cuối, thêm か.
+    answer:
+      blanks:
+        b1: [みっか, 三日, 3日]
+    known_wrong:
+      - answer: さんにち
+        feedback_vi: Ngày 1-10 có cách đọc riêng; ngày 3 là みっか.
+        error_tag: date_reading
+      - answer: みつか
+        feedback_vi: みっか có âm ngắt っ (viết nhỏ).
+        error_tag: sokuon
+    explanation:
+      vi: さんがつみっか - ngày 3 tháng 3. Tháng trước, ngày sau.
+    display_answer: ちちのたんじょうびはさんがつみっかです。
+
+  - key: ja:exercise:dates-mcq-twentieth
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hi-dates
+    prompt:
+      stem: '"Ngày 20" đọc là gì?'
+      stem_lang: vi
+      options:
+        - { id: q6r, text: はつか, lang: ja }
+        - { id: s1t, text: にじゅうにち, lang: ja }
+        - { id: u5v, text: はつにち, lang: ja }
+        - { id: w9x, text: ふつか, lang: ja }
+    answer:
+      correct_option_id: q6r
+    explanation:
+      vi: Ngày 20 đọc riêng là はつか. ふつか là ngày 2 - dễ nhầm vì đều có つか.
+    display_answer: はつか
+
+  - key: ja:exercise:dates-order-exam
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nangatsu-nannichi
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Kỳ thi là ngày 14 tháng 2.”"
+      tokens:
+        - { id: t1, text: じゅうよんにちです }
+        - { id: t2, text: にがつ }
+        - { id: t3, text: じゅうよっかです }
+        - { id: t4, text: しけんは }
+    answer:
+      orders:
+        - [t4, t2, t3]
+    explanation:
+      vi: Tháng (にがつ) trước, ngày sau. Ngày 14 đọc riêng là じゅうよっか, không phải じゅうよんにち.
+    display_answer: しけんはにがつじゅうよっかです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:dates-fill-irregular
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hi-dates
+    prompt:
+      template: "Ngày 1 - {{b1}} · Ngày 8 - {{b2}} · Ngày 10 - {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [ついたち, 一日, 1日]
+        b2: [ようか, 八日, 8日]
+        b3: [とおか, 十日, 10日]
+    known_wrong:
+      - answer: いちにち
+        feedback_vi: いちにち là "một ngày" (độ dài); ngày mùng 1 là ついたち.
+        error_tag: date_reading
+      - answer: よっか
+        feedback_vi: よっか là ngày 4; ngày 8 là ようか (âm dài).
+        error_tag: date_reading
+      - answer: じゅうにち
+        feedback_vi: Ngày 10 đọc riêng là とおか.
+        error_tag: date_reading
+    explanation:
+      vi: ついたち (1), ようか (8), とおか (10) - ba cách đọc đặc biệt cần thuộc lòng.
+    display_answer: ついたち · ようか · とおか
+
+  - key: ja:exercise:dates-write-tokyo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:nangatsu-nannichi
+    prompt:
+      source_text: Ngày 6 tháng 4 tôi đi Tokyo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - しがつむいかにとうきょうへいきます。
+        - しがつむいかにとうきょうにいきます。
+        - 四月六日に東京へ行きます。
+        - 四月六日に東京に行きます。
+        - 4月6日に東京へ行きます。
+        - 4月6日に東京に行きます。
+        - わたしはしがつむいかにとうきょうへいきます。
+        - 私は4月6日に東京へ行きます。
+    known_wrong:
+      - answer: よんがつむいかにとうきょうへいきます。
+        feedback_vi: Tháng 4 đọc しがつ.
+        error_tag: month_reading
+      - answer: むいかしがつにとうきょうへいきます。
+        feedback_vi: Tháng đứng trước ngày - しがつむいか.
+        error_tag: date_order
+    explanation:
+      vi: しがつ (tháng 4) + むいか (ngày 6) + に + とうきょうへいきます.
+    display_answer: しがつむいかにとうきょうへいきます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:dates-translate-came-japan
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:sengetsu-raigetsu
+    prompt:
+      source_text: せんげつのいつかににほんへきました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đã đến Nhật vào ngày 5 tháng trước.
+        - Tôi đến Nhật vào ngày 5 tháng trước.
+        - Ngày 5 tháng trước tôi đã đến Nhật.
+        - Ngày 5 tháng trước tôi đến Nhật.
+        - Tôi đã sang Nhật vào ngày 5 tháng trước.
+        - Ngày 5 tháng trước tôi đã sang Nhật.
+        - Tôi đến Nhật Bản vào ngày 5 tháng trước.
+        - Ngày mùng 5 tháng trước tôi đã đến Nhật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi sẽ đến Nhật vào ngày 5 tháng sau.
+        feedback_vi: せんげつ là tháng trước, きました là quá khứ.
+        error_tag: time_word
+    explanation:
+      vi: せんげつのいつか - ngày 5 của tháng trước; にほんへきました - đã đến Nhật.
+    display_answer: Tôi đã đến Nhật vào ngày 5 tháng trước.
+
+  - key: ja:exercise:dates-mcq-birthday
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-tanjoubi
+    prompt:
+      stem: "Một người bạn mới hỏi たんじょうびはいつですか. Sinh nhật bạn là ngày 8 tháng 6. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: y4z, text: ろくがつようかです。, lang: ja }
+        - { id: a8b, text: ろくがつよっかです。, lang: ja }
+        - { id: c2d, text: ようかろくがつです。, lang: ja }
+        - { id: e6f, text: ろくがつはちにちです。, lang: ja }
+    answer:
+      correct_option_id: y4z
+    explanation:
+      vi: Tháng 6 - ろくがつ, ngày 8 - ようか, tháng trước ngày sau. よっか là ngày 4; はちにち không dùng cho ngày 8.
+    display_answer: ろくがつようかです。
+
+  - key: ja:exercise:dates-write-saturday
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:youbi
+    prompt:
+      source_text: Hôm nay là thứ Bảy, ngày 2 tháng 11.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きょうはじゅういちがつふつか、どようびです。
+        - きょうはじゅういちがつふつかどようびです。
+        - 今日は十一月二日、土曜日です。
+        - 今日は11月2日、土曜日です。
+        - きょうはどようびです。じゅういちがつふつかです。
+        - 今日は土曜日です。11月2日です。
+        - きょうはじゅういちがつふつかのどようびです。
+        - 今日は11月2日の土曜日です。
+    known_wrong:
+      - answer: きょうはふつかじゅういちがつ、どようびです。
+        feedback_vi: Tháng đứng trước ngày - じゅういちがつふつか.
+        error_tag: date_order
+      - answer: きょうはじゅういちがつににち、どようびです。
+        feedback_vi: Ngày 2 đọc riêng là ふつか.
+        error_tag: date_reading
+    explanation:
+      vi: じゅういちがつ (tháng 11) + ふつか (ngày 2) + どようび (thứ Bảy). Người Nhật nói ngày tháng trước rồi đến thứ.
+    display_answer: きょうはじゅういちがつふつか、どようびです。
