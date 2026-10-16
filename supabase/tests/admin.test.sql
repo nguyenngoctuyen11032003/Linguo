@@ -59,7 +59,7 @@ select is((select count(*)::integer from pg_proc p where p.pronamespace = 'admin
 select is((select array_agg(p.proname::text order by p.proname) from pg_proc p
     where p.pronamespace = 'public'::regnamespace and (p.proname like 'admin\_%' or p.proname = 'staff_role')),
   array['admin_ai_usage', 'admin_analytics', 'admin_audit_log_recent', 'admin_content_overview', 'admin_find_user',
-    'admin_get_content', 'admin_grant_role', 'admin_list_content', 'admin_list_reports', 'admin_list_sources',
+    'admin_get_content', 'admin_grant_role', 'admin_item_open_reports', 'admin_list_content', 'admin_list_reports', 'admin_list_sources',
     'admin_list_staff', 'admin_resolve_report', 'admin_set_status', 'staff_role'], 'the admin RPC set');
 select ok((select bool_and(p.prosecdef and p.proconfig @> array['search_path=""']) from pg_proc p
     where p.pronamespace = 'public'::regnamespace and (p.proname like 'admin\_%' or p.proname = 'staff_role')),
@@ -90,6 +90,7 @@ select is(
     'select public.admin_list_sources()',
     format('select public.admin_set_status(''lesson'', %L, ''in_review'')', current_setting('test.hello')),
     'select public.admin_list_reports()',
+    format('select public.admin_item_open_reports(''exercise'', %L)', current_setting('test.hello_ex')),
     'select public.admin_resolve_report(array[gen_random_uuid()], ''fixed'')',
     'select public.admin_analytics(7)',
     'select public.admin_ai_usage(7)',
