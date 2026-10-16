@@ -43,8 +43,13 @@
   html {
     /* Removes the double-tap-to-zoom wait on every tap (pinch zoom still works). */
     touch-action: manipulation;
-    /* Desktop: a page that grows a scrollbar does not shift the centred layout sideways on route change. */
-    scrollbar-gutter: stable;
+  }
+  /* Desktop: a page that grows a scrollbar does not shift the centred layout sideways on route change. Scoped to
+     laptops so a phone browser with classic (non-overlay) scrollbars never reserves a blank gutter beside the app bar. */
+  @media (min-width: 1024px) {
+    html {
+      scrollbar-gutter: stable;
+    }
   }
   button,
   [role='button'],
@@ -162,8 +167,12 @@
   justify-content: space-between;
   gap: 0.75rem 1.5rem;
   padding-bottom: 1.25rem;
-  margin-bottom: var(--section-gap);
   border-bottom: 1px solid var(--hairline);
+}
+/* A stack that spaces its children itself (.page-stack gap, Tailwind space-y-*) already separates the header from
+   what follows; only a loose header carries its own bottom margin, so the gap is never applied twice. */
+.page-header:not(.page-stack > *, [class*='space-y-'] > *) {
+  margin-bottom: var(--section-gap);
 }
 .page-header__actions {
   display: flex;
@@ -305,10 +314,13 @@
   width: 100%;
   max-width: 48rem;
   margin-inline: auto;
-  padding: 1rem max(var(--page-gutter), env(safe-area-inset-left, 0px)) calc(6rem + env(safe-area-inset-bottom, 0px));
+  padding: 1rem max(var(--page-gutter), env(safe-area-inset-right, 0px)) calc(6rem + env(safe-area-inset-bottom, 0px))
+    max(var(--page-gutter), env(safe-area-inset-left, 0px));
 }
+/* `backwards`, not `both`: a retained fill keeps WebKit treating the route column as a transformed containing block, so
+   fixed-position sheets and dialogs inside it anchored to the column instead of the viewport on phones. */
 .shell__route {
-  animation: rise-in var(--dur-slow) var(--ease-expo) both;
+  animation: rise-in var(--dur-slow) var(--ease-expo) backwards;
 }
 @media (min-width: 1024px) {
   .shell {
@@ -351,7 +363,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding-inline: max(var(--page-gutter), env(safe-area-inset-left, 0px));
+  /* Each side clears its own notch inset (landscape phones have one side only). */
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--page-gutter), env(safe-area-inset-right, 0px));
 }
 .appbar__brand {
   display: inline-flex;
@@ -402,7 +416,8 @@
     margin-right: -0.25rem;
   }
   .appbar__tools button[aria-controls] {
-    min-height: 2.25rem;
+    /* Keeps the 44px tap box (WCAG target size); only padding and type get smaller. */
+    min-height: 2.75rem;
     margin-right: 0.25rem;
     padding-inline: 0.75rem 0.5rem;
     font-size: 0.8125rem;

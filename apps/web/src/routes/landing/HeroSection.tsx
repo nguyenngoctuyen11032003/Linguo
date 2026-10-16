@@ -74,7 +74,7 @@ export function HeroSection({ ready }: { ready: boolean }) {
         <div className="mx-auto max-w-5xl min-[1024px]:grid min-[1024px]:grid-cols-[minmax(0,1fr)_340px] min-[1024px]:items-end min-[1024px]:gap-x-14 min-[1280px]:max-w-[1200px]">
         <div className="min-w-0">
         <motion.p
-          className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/8 py-1.5 pl-1.5 pr-3.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/80 ring-1 ring-white/12 ring-inset backdrop-blur"
+          className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/8 py-1.5 pl-1.5 pr-3.5 max-[359px]:pr-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/80 ring-1 ring-white/12 ring-inset backdrop-blur"
           variants={reveal('fadeUp', reduceMotion, 0)}
           initial="hidden"
           animate={state}
@@ -82,9 +82,9 @@ export function HeroSection({ ready }: { ready: boolean }) {
           <span className="inline-flex gap-1" aria-hidden="true">
             <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-primary">EN</span>
             <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-accent">KO</span>
-            <span className="rounded-full bg-[#E85D8A] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">JA</span>
+            <span className="rounded-full bg-[#C9255F] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">JA</span>
           </span>
-          Tiếng Anh · Hàn · Nhật
+          <span className="max-[359px]:sr-only">Tiếng Anh · Hàn · Nhật</span>
         </motion.p>
         <h1 id="hero-title" className="font-display text-[clamp(40px,14vw,136px)] min-[1024px]:text-[clamp(64px,7.6vw,120px)] font-extrabold uppercase leading-[0.92] tracking-[-0.01em]">
           <motion.span className="block whitespace-nowrap" variants={reveal('slideLeft', reduceMotion, 0)} initial="hidden" animate={state}>

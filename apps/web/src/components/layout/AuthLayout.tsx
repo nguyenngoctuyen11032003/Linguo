@@ -26,7 +26,7 @@ export function AuthLayout() {
               <span aria-hidden="true" className="inline-flex gap-1">
                 <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] text-on-primary">EN</span>
                 <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] text-on-accent">KO</span>
-                <span className="rounded-full bg-[#E85D8A] px-2 py-0.5 text-[11px] text-white">JA</span>
+                <span className="rounded-full bg-[#C9255F] px-2 py-0.5 text-[11px] text-white">JA</span>
               </span>
               Tiếng Anh · Hàn · Nhật
             </p>
