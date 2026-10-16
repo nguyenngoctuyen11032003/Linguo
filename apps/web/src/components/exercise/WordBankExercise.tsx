@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { AnswerLang, WordBankPrompt } from '@linguo/shared';
 import { cn } from '@/lib/cn';
+import { isShortCjk } from './exercise-utils';
 import { seededShuffleAway } from './shuffle';
 
 export interface WordBankExerciseProps {
@@ -14,10 +15,13 @@ export interface WordBankExerciseProps {
 }
 
 const tokenClasses =
-  'inline-flex min-h-12 min-w-12 max-w-full items-center justify-center rounded-2xl border-2 px-4 text-[17px] font-semibold break-words ' +
+  'inline-flex min-h-12 min-w-12 max-w-full items-center justify-center rounded-2xl border-2 px-4 font-semibold break-words ' +
   'transition-[translate,box-shadow,background-color] duration-150 not-disabled:active:translate-y-[3px] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40';
 
 type FocusAfter = { bankIndex: number } | { bankId: string };
+
+/** A lone Korean/Japanese letter or syllable gets a bigger face than a Latin word: a jamo at 17px is hard to tell apart. */
+const tokenText = (text: string) => (isShortCjk(text) ? 'text-[22px] leading-none' : 'text-[17px]');
 
 /** Tap to place / remove tokens (no drag and drop); a live region announces each change. */
 export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disabled = false }: WordBankExerciseProps) {
@@ -83,7 +87,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
               aria-label={`Bỏ '${text}', vị trí ${i + 1}/${tokenIds.length}`}
               disabled={disabled}
               onClick={() => remove(i)}
-              className={cn(tokenClasses, 'border-primary/60 bg-surface-solid shadow-[0_4px_0_color-mix(in_srgb,var(--primary)_45%,transparent)] not-disabled:active:shadow-[0_1px_0_var(--primary)]')}
+              className={cn(tokenClasses, tokenText(text), 'border-primary/60 bg-surface-solid shadow-[0_4px_0_color-mix(in_srgb,var(--primary)_45%,transparent)] not-disabled:active:shadow-[0_1px_0_var(--primary)]')}
             >
               {text}
             </button>
@@ -107,6 +111,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
               onClick={() => add(token.id)}
               className={cn(
                 tokenClasses,
+                tokenText(token.text),
                 'border-border bg-surface-solid shadow-[0_4px_0_var(--border)] not-disabled:hover:bg-text/[0.03] not-disabled:active:shadow-[0_1px_0_var(--border)]',
                 // A used token leaves a sunken slot of its own size, so the bank never reflows or looks gappy.
                 used && 'border-transparent bg-text/[0.07] text-transparent shadow-none',

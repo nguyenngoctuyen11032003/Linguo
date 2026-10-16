@@ -49,7 +49,7 @@ export function ExitSheet({ open, onClose, onExit, pendingCount, triggerRef }: P
             animate={{ y: 0, opacity: 1 }}
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}
-            className="absolute inset-x-0 bottom-0 mx-auto max-w-xl rounded-t-[2rem] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3 shadow-[var(--shadow-dock)] sm:bottom-6 sm:rounded-[2rem] sm:border"
+            className="absolute inset-x-0 bottom-0 mx-auto max-h-[90dvh] max-w-xl overflow-y-auto rounded-t-[2rem] border-t border-border bg-surface-solid px-safe pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] pt-3 shadow-[var(--shadow-dock)] sm:bottom-6 sm:rounded-[2rem] sm:border"
           >
             <div aria-hidden="true" className="mx-auto mb-3 h-1.5 w-10 rounded-full bg-text/20" />
             <span aria-hidden="true" className="mb-3 grid size-12 place-items-center rounded-2xl bg-success/12 text-success-text">

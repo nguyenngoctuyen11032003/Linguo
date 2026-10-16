@@ -1,7 +1,7 @@
 import { useEffect, useRef, type KeyboardEvent } from 'react';
 import { Check, CornerDownRight, X } from 'lucide-react';
 import { cn } from '@/lib/cn';
-import type { ChoiceOption } from './exercise-utils';
+import { isShortCjk, type ChoiceOption } from './exercise-utils';
 
 export interface ChoiceMarks {
   /** Option the learner submitted ("Bạn chọn"). */
@@ -117,7 +117,14 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
               {tone === 'correct' ? <Check className="size-4" strokeWidth={3} /> : tone === 'wrong' ? <X className="size-4" strokeWidth={3} /> : i + 1}
             </span>
             <span className="min-w-0 flex-1 break-words">
-              <span lang={option.lang} className="block text-[17px] min-[1024px]:text-[19px] font-semibold leading-snug">
+              <span
+                lang={option.lang}
+                className={cn(
+                  'block font-semibold',
+                  // A lone Korean/Japanese letter or syllable is the whole answer: give its strokes room to read.
+                  isShortCjk(option.text) ? 'text-[28px] leading-tight' : 'text-[17px] leading-snug min-[1024px]:text-[19px]',
+                )}
+              >
                 {option.text}
               </span>
               {(chosen || correct) && (

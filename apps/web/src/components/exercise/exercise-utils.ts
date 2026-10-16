@@ -40,3 +40,12 @@ export function parseTemplate(template: string): TemplatePart[] {
 export function audioUrl(assetId: string): string {
   return /^(https?:)?\/\//.test(assetId) || assetId.startsWith('/') ? assetId : asset(`audio/${assetId}`);
 }
+
+/** Hangul (jamo and syllables), kana and kanji: these read smaller than Latin text at the same font size. */
+const CJK_ONLY_RE = /^[\sᄀ-ᇿ぀-ヿ㄰-㆏ㇰ-ㇿ㐀-鿿가-힯ｦ-ﾟ]+$/;
+
+/** A lone letter, syllable or short word in Korean/Japanese (e.g. "ㅓ", "아", "です"), shown larger so its strokes are legible. */
+export function isShortCjk(text: string): boolean {
+  const trimmed = text.trim();
+  return trimmed.length > 0 && Array.from(trimmed).length <= 4 && CJK_ONLY_RE.test(trimmed);
+}

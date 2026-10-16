@@ -426,7 +426,8 @@ function PathSession() {
   }
 
   return (
-    <div className="space-y-6">
+    // One task column like the review page: on a wide screen the plan, its buttons and each row's controls stay together.
+    <div className="mx-auto w-full max-w-[46rem] space-y-6">
       <h1 className="page-title">{TITLE}</h1>
       <p aria-live="polite" className="sr-only">
         {announcement}

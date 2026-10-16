@@ -78,7 +78,7 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
       {result ? (
         <section
           aria-labelledby="lesson-stats"
-          className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
+          className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-4 text-white min-[360px]:p-5 shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
         >
           <span aria-hidden="true" className="absolute -bottom-24 -right-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
           <div className="flex items-center justify-between gap-3">
@@ -89,16 +89,16 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
               <Trophy className="size-5" />
             </span>
           </div>
-          <dl className="mt-4 grid grid-cols-3 gap-3">
+          <dl className="mt-4 grid grid-cols-3 gap-2 min-[360px]:gap-3">
             {STAGE_LABELS.map(([stage, label]) => {
               const accuracy = result.accuracy_by_stage[stage];
               if (accuracy === null) return null;
               const pct = Math.round(accuracy * 100);
               return (
                 <div key={stage} className="min-w-0 space-y-2">
-                  <dt className="truncate text-xs font-semibold uppercase tracking-[0.08em] text-white/70">{label}</dt>
+                  <dt className="truncate text-[11px] font-semibold uppercase tracking-[0.06em] text-white/70 min-[360px]:text-xs min-[360px]:tracking-[0.08em]">{label}</dt>
                   <dd className="space-y-2.5">
-                    <span className="stat-num block bg-gradient-to-b from-white to-white/60 bg-clip-text pr-1 text-[clamp(38px,12vw,56px)] text-transparent">
+                    <span className="stat-num block bg-gradient-to-b from-white to-white/60 bg-clip-text pr-1 text-[clamp(30px,10vw,56px)] whitespace-nowrap text-transparent">
                       {pct}%
                     </span>
                     <span aria-hidden="true" className="block h-1.5 overflow-hidden rounded-full bg-white/15">

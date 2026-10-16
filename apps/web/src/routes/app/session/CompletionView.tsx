@@ -58,7 +58,7 @@ export function CompletionView({ session, onPlanAgain, learner }: Props) {
           {stats.map(([label, value], i) => (
             <div key={label} className={i === 1 ? 'border-l border-white/12 pl-4' : undefined}>
               <dt className="text-xs font-semibold uppercase tracking-[0.1em] text-white/65">{label}</dt>
-              <dd className="stat-num mt-2 bg-gradient-to-b from-white to-white/55 bg-clip-text pr-1 text-[clamp(40px,13vw,56px)] text-transparent">
+              <dd className="stat-num mt-2 bg-gradient-to-b from-white to-white/55 bg-clip-text pr-1 pb-[0.14em] text-[clamp(40px,13vw,56px)] text-transparent">
                 {value}
               </dd>
             </div>
