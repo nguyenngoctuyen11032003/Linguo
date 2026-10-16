@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+key: ja:program:n2
+language: ja
+title:
+  vi: Tiếng Nhật trung cao cấp (JLPT N2)
+description:
+  vi: Diễn biến thời gian và thay đổi; quan điểm, giới hạn và tương phản; kính ngữ trong công việc; tin tức và xã hội; kỹ năng đọc bài bình luận và biểu đạt chắc chắn, bắt buộc (JLPT N2).
+kind: core
+goal_types: []
+level_from: n2
+level_to: n2
+order_index: 5
