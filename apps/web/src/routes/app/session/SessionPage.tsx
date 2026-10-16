@@ -316,7 +316,7 @@ function PathSession() {
                 block
                 onClick={() => {
                   // Beginning the session is the moment; resuming it is just the next step.
-                  playSound(planned ? 'start' : 'next');
+                  playSound('next');
                   start(session);
                 }}
               >

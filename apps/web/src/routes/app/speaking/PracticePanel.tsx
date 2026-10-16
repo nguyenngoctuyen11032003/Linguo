@@ -27,7 +27,7 @@ const OVERLAP_TEXT = {
 } as const;
 
 // The verdict family, played directly (not playVerdict): a speaking hint is not a graded answer and must not feed a combo.
-const OVERLAP_CUE = { close: 'correct', partial: 'almost', far: 'incorrect' } as const satisfies Record<OverlapLevel, SoundCue>;
+const OVERLAP_CUE = { close: 'correct', partial: 'almost', far: 'reveal' } as const satisfies Record<OverlapLevel, SoundCue>;
 
 const MISSING_SHOWN = 8;
 
