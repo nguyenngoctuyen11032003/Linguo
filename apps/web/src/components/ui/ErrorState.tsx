@@ -22,7 +22,7 @@ export function ErrorState({
   const Heading = headingLevel;
   return (
     <SolidCard role="alert" className="relative isolate flex flex-col items-center gap-3 overflow-hidden px-6 pb-8 pt-6 text-center">
-      <span aria-hidden="true" className="pointer-events-none absolute -top-24 left-1/2 -z-10 size-60 -translate-x-1/2 rounded-full bg-error/12 blur-3xl" />
+      <span aria-hidden="true" className="pointer-events-none absolute -top-24 left-1/2 -z-10 size-60 -translate-x-1/2 rounded-full bg-radial from-error/12 to-transparent to-70%" />
       <RouteIllustration variant="broken" className="w-44 max-w-full" />
       <Heading className="text-lg font-extrabold tracking-[-0.01em] text-balance">{title}</Heading>
       <p className="max-w-sm text-pretty text-[15px] leading-relaxed text-muted">{description}</p>

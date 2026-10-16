@@ -16,7 +16,7 @@ export function EmptyState({ icon: Icon, title, description, action, footnote, h
   const Heading = headingLevel;
   return (
     <SolidCard className="relative isolate flex flex-col items-center gap-3 overflow-hidden px-6 pb-10 pt-7 text-center">
-      <span aria-hidden="true" className="pointer-events-none absolute -top-20 left-1/2 -z-10 size-56 -translate-x-1/2 rounded-full bg-primary/15 blur-3xl" />
+      <span aria-hidden="true" className="pointer-events-none absolute -top-20 left-1/2 -z-10 size-56 -translate-x-1/2 rounded-full bg-radial from-primary/15 to-transparent to-70%" />
       {/* The icon is a stop on a quiet dotted route: nothing here yet, the way on is open. */}
       <div aria-hidden="true" className="relative mb-1 flex h-20 w-56 max-w-full items-center justify-center">
         <RouteIllustration variant="empty" className="absolute inset-x-0 top-1/2 w-full -translate-y-1/2" />

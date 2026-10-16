@@ -11,9 +11,9 @@ const TONE_TEXT: Record<FeedbackTone, string> = {
   accent: 'text-accent-text',
 };
 const TONE_GLOW: Record<FeedbackTone, string> = {
-  error: 'bg-error/16',
-  primary: 'bg-primary/20',
-  accent: 'bg-accent/16',
+  error: 'from-error/16',
+  primary: 'from-primary/20',
+  accent: 'from-accent/16',
 };
 
 interface FeedbackScreenProps {
@@ -51,7 +51,7 @@ export function FeedbackScreen({
     <div role={role} className="relative isolate mx-auto w-full max-w-md">
       <div
         aria-hidden="true"
-        className={cn('pointer-events-none absolute -top-10 left-1/2 -z-10 size-80 -translate-x-1/2 rounded-full blur-3xl', TONE_GLOW[tone])}
+        className={cn('pointer-events-none absolute -top-10 left-1/2 -z-10 size-80 -translate-x-1/2 rounded-full bg-radial to-transparent to-70%', TONE_GLOW[tone])}
       />
       <div aria-hidden="true" className="relative">
         <p className="stat-num text-gradient-fade -ml-1 pt-[0.12em] text-[clamp(120px,40vw,176px)]">{display}</p>
