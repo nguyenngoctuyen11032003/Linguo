@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-giving-opinions
+order_index: 1
+level: n3
+title:
+  vi: Nêu ý kiến - ～べきだ và ～に対して
+objectives:
+  - vi: Nói tán thành, phản đối một ý kiến - 賛成 / 反対.
+  - vi: Nêu quan điểm mạnh bằng ～べきだ / ～べきではない.
+  - vi: Phản bác mềm mỏng bằng 確かに～が、～ và nói đối tượng bằng ～に対して.
+estimated_minutes: 20
+skills: [vocabulary, grammar, speaking]
+prerequisites: [ja:lesson:n3-public-services-review]
+items:
+  - item: ja:item:n3-iken
+  - item: ja:item:n3-sansei
+  - item: ja:item:n3-hantai
+  - item: ja:item:n3-tashikani
+  - item: ja:item:n3-gram-beki
+  - item: ja:item:n3-gram-ni-taishite
+  - item: ja:item:n3-gram-ni-tsuite
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tham gia được một cuộc thảo luận nhỏ - nói mình tán thành hay phản đối, vì sao, và công nhận ý người khác trước khi phản bác.
+  - type: explain
+    text:
+      vi: 'Khung nêu ý kiến: 私は～に賛成です / 反対です。なぜなら～からです. Hỏi ý kiến: ～について、どう思いますか / 皆さんの意見を聞かせてください.'
+  - type: explain
+    text:
+      vi: '～べきだ - "nên, phải" theo lẽ phải: ゴミは分別するべきだ. Phủ định: ～べきではない - 人の悪口を言うべきではない. する → するべき / すべき.'
+  - type: explain
+    text:
+      vi: '確かに A が、B - công nhận A rồi nêu B: 確かに便利ですが、値段が高すぎると思います. N + に対して - thái độ nhắm vào ai/cái gì: 客に対して丁寧に話す; 意見に対する反論.'
+  - type: deep_explain
+    text:
+      vi: Người Nhật ít nói thẳng "tôi phản đối". Họ hay dùng 確かに～が, ～と思います, ～のではないでしょうか để làm mềm ý kiến. べきだ khá mạnh - dùng khi bàn vấn đề xã hội, nguyên tắc; tránh dùng để khuyên trực tiếp người trên.
+  - type: example
+    target: 私はその計画に賛成です。
+    target_lang: ja
+    translation:
+      vi: Tôi tán thành kế hoạch đó.
+  - type: example
+    target: 若い人はもっと選挙に行くべきだと思います。
+    target_lang: ja
+    translation:
+      vi: Tôi nghĩ người trẻ nên đi bầu cử nhiều hơn.
+  - type: example
+    target: 確かに便利ですが、値段が高すぎると思います。
+    target_lang: ja
+    translation:
+      vi: Đúng là tiện thật, nhưng tôi nghĩ giá đắt quá.
+  - type: example
+    target: 住民の意見に対して、市はまだ何も答えていません。
+    target_lang: ja
+    translation:
+      vi: Đối với ý kiến của cư dân, thành phố vẫn chưa trả lời gì.
+  - type: common_mistake
+    wrong: 私はその計画を賛成です。
+    right: 私はその計画に賛成です。
+    target_lang: ja
+    note:
+      vi: Tán thành / phản đối cái gì dùng に - 計画に賛成, 留学に反対.
+  - type: common_mistake
+    wrong: 約束を守るべきではありません。
+    right: 約束は守るべきです。
+    target_lang: ja
+    note:
+      vi: Muốn nói "phải giữ lời hứa" dùng khẳng định べきです. べきではない là "không nên" - ngược nghĩa.
+  - type: summary
+    points:
+      - vi: 意見, 賛成, 反対 - ～に賛成 / ～に反対.
+      - vi: ～べきだ / べきではない - nên / không nên (lẽ phải).
+      - vi: 確かに A が、B - phản bác mềm.
+      - vi: ～に対して - đối với (thái độ); ～について - về (chủ đề).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-giving-opinions-mcq-hantai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-hantai
+    prompt:
+      stem: 「反対」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a5x, text: phản đối, lang: vi }
+        - { id: k1m, text: tán thành, lang: vi }
+        - { id: v7r, text: ý kiến, lang: vi }
+        - { id: j3e, text: lý do, lang: vi }
+    answer:
+      correct_option_id: a5x
+    explanation:
+      vi: 反対 - phản đối (Hán Việt "phản đối"). Tán thành là 賛成, ý kiến là 意見, lý do là 理由.
+    display_answer: phản đối
+
+  - key: ja:exercise:n3-giving-opinions-listen-beki
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-beki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 若い人はもっと選挙に行くべきだと思います。
+      options:
+        - { id: c8w, text: Tôi nghĩ người trẻ nên đi bầu cử nhiều hơn., lang: vi }
+        - { id: m4q, text: Tôi nghĩ người trẻ không nên đi bầu cử., lang: vi }
+        - { id: z2g, text: Nghe nói người trẻ đi bầu cử nhiều hơn., lang: vi }
+        - { id: e6s, text: Tôi nghĩ người già nên đi bầu cử nhiều hơn., lang: vi }
+    answer:
+      correct_option_id: c8w
+    explanation:
+      vi: 若い人 - người trẻ; もっと - hơn nữa; 行くべきだ - nên đi; と思います - tôi nghĩ.
+    display_answer: Tôi nghĩ người trẻ nên đi bầu cử nhiều hơn.
+
+  - key: ja:exercise:n3-giving-opinions-mcq-taishite
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-ni-taishite
+    prompt:
+      stem: 'Chọn từ đúng: 店員はお客様＿＿、いつも丁寧に話さなければなりません。'
+      stem_lang: vi
+      options:
+        - { id: g2n, text: に対して, lang: ja }
+        - { id: u8d, text: について, lang: ja }
+        - { id: o5b, text: によって, lang: ja }
+        - { id: w9k, text: に比べて, lang: ja }
+    answer:
+      correct_option_id: g2n
+    explanation:
+      vi: Thái độ (lịch sự) nhắm vào khách - に対して. について là "về chủ đề"; によって là "bởi/tuỳ"; に比べて là "so với".
+    display_answer: に対して
+
+  - key: ja:exercise:n3-giving-opinions-fill-sansei
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-sansei
+    prompt:
+      template: "私はその計画{{b1}}{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi tán thành kế hoạch đó."
+        - "Gợi ý: trợ từ chỉ đối tượng + từ Hán 'tán thành'."
+    answer:
+      blanks:
+        b1: [に]
+        b2: [賛成, さんせい]
+    known_wrong:
+      - answer: を
+        feedback_vi: 賛成 đi với に, không đi với を.
+        error_tag: particle_ni
+      - answer: 反対
+        feedback_vi: 反対 là phản đối; tán thành là 賛成.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～に賛成です - tán thành ～.
+    display_answer: 私はその計画に賛成です。
+
+  - key: ja:exercise:n3-giving-opinions-wb-tashikani
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tashikani
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đúng là tiện thật, nhưng tôi nghĩ giá đắt quá.\""
+      tokens:
+        - { id: t3, text: 値段が高すぎると }
+        - { id: t1, text: 確かに }
+        - { id: t5, text: 必ず }
+        - { id: t4, text: 思います }
+        - { id: t2, text: 便利ですが、 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: 確かに A が、B - công nhận A rồi nêu ý kiến B. 必ず là "nhất định", không dùng để công nhận ý kiến.
+    display_answer: 確かに便利ですが、値段が高すぎると思います。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-giving-opinions-fill-beki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-beki
+    prompt:
+      template: "人の悪口を言う{{b1}}ではありません。(không nên)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [べき]
+    known_wrong:
+      - answer: はず
+        feedback_vi: はずではない không mang nghĩa "không nên". Lẽ phải - べきではない.
+        error_tag: beki_hazu
+      - answer: ほう
+        feedback_vi: ほうがいい mới mang nghĩa "nên"; ほうではない không đúng.
+        error_tag: beki_hou
+    explanation:
+      vi: V thể từ điển + べきではない - không nên. 悪口を言う - nói xấu.
+    display_answer: 人の悪口を言うべきではありません。
+
+  - key: ja:exercise:n3-giving-opinions-translate-hantai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hantai
+    prompt:
+      source_text: Bố tôi phản đối việc tôi đi du học. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 父は私の留学に反対しています。
+        - 父は私の留学に反対です。
+        - 父は私が留学することに反対しています。
+        - 父は私が留学することに反対です。
+        - 父は僕の留学に反対しています。
+        - 父は私の留学に反対している。
+        - 父が私の留学に反対しています。
+        - 私の父は私の留学に反対しています。
+        - 父は私が留学するのに反対しています。
+        - 父は留学に反対しています。
+        - ちちはわたしのりゅうがくにはんたいしています。
+    known_wrong:
+      - answer: 父は私の留学を反対しています。
+        feedback_vi: 反対する đi với に - 留学に反対する.
+        error_tag: particle_ni
+      - answer: 父は私の留学に賛成しています。
+        feedback_vi: 賛成 là tán thành - ngược nghĩa.
+        error_tag: vocab_meaning
+      - answer: お父さんは私の留学に反対しています。
+        feedback_vi: Nói về bố mình với người khác dùng 父, không dùng お父さん.
+        error_tag: uchi_family
+    explanation:
+      vi: 父 - bố tôi (khi nói với người ngoài); 留学に反対する - phản đối việc du học; ～ています - đang ở trạng thái phản đối.
+    display_answer: 父は私の留学に反対しています。
+
+  - key: ja:exercise:n3-giving-opinions-translate-beki
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-beki
+    prompt:
+      source_text: Tôi nghĩ nên giữ lời hứa. (dùng べき)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 約束は守るべきだと思います。
+        - 約束を守るべきだと思います。
+        - 約束は守るべきだと思う。
+        - 約束を守るべきだと思う。
+        - 約束は必ず守るべきだと思います。
+        - 約束は守るべきです。
+        - 約束を守るべきです。
+        - 私は約束を守るべきだと思います。
+        - 私は約束は守るべきだと思います。
+        - 約束はちゃんと守るべきだと思います。
+        - やくそくはまもるべきだとおもいます。
+        - やくそくをまもるべきだとおもいます。
+    known_wrong:
+      - answer: 約束は守るべきではないと思います。
+        feedback_vi: べきではない là "không nên" - ngược nghĩa.
+        error_tag: negation
+      - answer: 約束は守ったべきだと思います。
+        feedback_vi: Trước べき dùng thể từ điển - 守るべき.
+        error_tag: beki_form
+      - answer: 約束は守るはずだと思います。
+        feedback_vi: はずだ là "chắc chắn là" (suy luận), không phải "nên".
+        error_tag: beki_hazu
+    explanation:
+      vi: 約束を守る - giữ lời hứa; 守るべきだと思います - tôi nghĩ nên giữ. Dùng は để nêu chủ đề cũng tự nhiên.
+    display_answer: 約束は守るべきだと思います。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-giving-opinions-mcq-soft
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-tashikani
+    prompt:
+      stem: 'Đồng nghiệp đề xuất: "Mua máy in mới vì nhanh hơn." Bạn muốn công nhận nó nhanh nhưng lo về giá. Câu nào khéo léo nhất?'
+      stem_lang: vi
+      options:
+        - { id: d3v, text: 確かに速いですが、値段が少し高いのではないでしょうか。, lang: ja }
+        - { id: n7a, text: 速くても、絶対に買うべきではありません。, lang: ja }
+        - { id: q1h, text: 値段が高いので、反対に決まっています。, lang: ja }
+        - { id: y6c, text: 必ずしも速いですが、値段が高いです。, lang: ja }
+    answer:
+      correct_option_id: d3v
+    explanation:
+      vi: 確かに～が + ～のではないでしょうか - công nhận rồi nêu băn khoăn một cách mềm mỏng. Hai câu giữa quá gay gắt; 必ずしも phải đi với phủ định.
+    display_answer: 確かに速いですが、値段が少し高いのではないでしょうか。
+
+  - key: ja:exercise:n3-giving-opinions-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-ni-taishite
+    prompt:
+      source_text: 住民の意見に対して、市はまだ何も答えていません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đối với ý kiến của cư dân, thành phố vẫn chưa trả lời gì.
+        - Đối với ý kiến của người dân, thành phố vẫn chưa trả lời gì.
+        - Đối với ý kiến của cư dân, thành phố vẫn chưa trả lời gì cả.
+        - Đối với ý kiến của người dân, thành phố vẫn chưa trả lời gì cả.
+        - Đối với ý kiến của cư dân, thành phố vẫn chưa có câu trả lời nào.
+        - Đối với ý kiến của cư dân, thành phố vẫn chưa phản hồi gì.
+        - Đối với ý kiến của người dân, thành phố vẫn chưa phản hồi gì.
+        - Thành phố vẫn chưa trả lời gì đối với ý kiến của cư dân.
+        - Thành phố vẫn chưa trả lời gì trước ý kiến của người dân.
+        - Trước ý kiến của cư dân, thành phố vẫn chưa trả lời gì.
+        - Trước ý kiến của người dân, thành phố vẫn chưa trả lời gì.
+        - Đối với ý kiến của dân cư, thành phố vẫn chưa trả lời gì.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thành phố đã trả lời ý kiến của cư dân.
+        feedback_vi: まだ何も答えていません - vẫn chưa trả lời gì (phủ định).
+        error_tag: negation
+    explanation:
+      vi: 住民の意見に対して - đối với ý kiến của cư dân; まだ～ていません - vẫn chưa.
+    display_answer: Đối với ý kiến của cư dân, thành phố vẫn chưa trả lời gì.
+
+  - key: ja:exercise:n3-giving-opinions-wb-iken
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-iken
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Về vấn đề này, xin cho tôi nghe ý kiến của mọi người.\""
+      tokens:
+        - { id: p4, text: 聞かせてください }
+        - { id: p2, text: 皆さんの }
+        - { id: p5, text: この問題に対して }
+        - { id: p3, text: 意見を }
+        - { id: p1, text: この問題について、 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: Hỏi ý kiến về một chủ đề - について. に対して dùng cho thái độ, hành động nhắm vào đối tượng. 聞かせてください - cho tôi nghe (sai khiến + ください).
+    display_answer: この問題について、皆さんの意見を聞かせてください。
+
+  - key: ja:exercise:n3-giving-opinions-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-sansei
+    prompt:
+      stem: 'Trong cuộc họp, trưởng phòng hỏi: 「在宅勤務を増やすことについて、どう思いますか。」 Bạn đồng ý. Câu nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: f8t, text: 私は賛成です。通勤の時間が減るからです。, lang: ja }
+        - { id: l2w, text: 私は賛成をします。通勤の時間が減るからです。, lang: ja }
+        - { id: h6e, text: 私は反対です。通勤の時間が減るからです。, lang: ja }
+        - { id: r4y, text: 私に賛成です。通勤の時間が減るからです。, lang: ja }
+    answer:
+      correct_option_id: f8t
+    explanation:
+      vi: 私は賛成です - tôi tán thành; ～からです - vì... 賛成をします không tự nhiên; 私に賛成 là "tán thành tôi"; 反対 ngược ý bạn.
+    display_answer: 私は賛成です。通勤の時間が減るからです。

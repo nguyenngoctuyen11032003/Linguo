@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-guessing
+order_index: 2
+level: n3
+title:
+  vi: Suy đoán và truyền đạt - らしい, ようだ / みたい, そうだ
+objectives:
+  - vi: Suy đoán từ điều mình thấy bằng ～ようだ / ～みたいだ.
+  - vi: Nói điều nghe được bằng ～らしい và ～そうだ (truyền đạt).
+  - vi: Phân biệt 降るそうだ (nghe nói) với 降りそうだ (trông như sắp).
+estimated_minutes: 22
+skills: [grammar, vocabulary, listening]
+prerequisites: [ja:lesson:n3-giving-opinions]
+items:
+  - item: ja:item:n3-uwasa
+  - item: ja:item:n3-yousu
+  - item: ja:item:n3-hyoujou
+  - item: ja:item:n3-gram-rashii
+  - item: ja:item:n3-gram-you-da
+  - item: ja:item:n3-gram-sou-da-denbun
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "có vẻ không có ai", "nghe nói sắp mở siêu thị", "theo dự báo mai có tuyết" - và chọn đúng mẫu theo nguồn thông tin.
+  - type: explain
+    text:
+      vi: '～ようだ / ～みたいだ - suy đoán từ quan sát của chính mình: 電気が消えているので、誰もいないようです. みたいだ là văn nói. Nối danh từ: 学生のようだ / 学生みたいだ.'
+  - type: explain
+    text:
+      vi: '～らしい - "nghe nói, hình như" dựa trên thông tin bên ngoài, không chắc: 駅前に新しいスーパーができるらしいです. Danh từ, なA nối trực tiếp: 学生らしい, 静からしい.'
+  - type: explain
+    text:
+      vi: '～そうだ (truyền đạt) - thuật lại thông tin, thường có nguồn: ニュースによると、電気代が上がるそうです. Thể thường + そうだ: 降るそうだ, 高いそうだ, 便利だそうだ, 学生だそうだ.'
+  - type: deep_explain
+    text:
+      vi: 'Mức chắc chắn và nguồn: そうだ (truyền đạt, gần nguyên văn) - らしい (nghe nói, có phần suy đoán) - ようだ (chính mình quan sát rồi suy luận). Còn そうだ dạng "trông có vẻ" gắn vào gốc động từ / tính từ: 雨が降りそうだ (trông như sắp mưa), おいしそうだ (trông ngon) - đây là mẫu N4 nhưng hay bị nhầm với そうだ truyền đạt.'
+  - type: example
+    target: 電気が消えているので、誰もいないようです。
+    target_lang: ja
+    translation:
+      vi: Đèn tắt nên có vẻ như không có ai.
+  - type: example
+    target: 駅前に新しいスーパーができるらしいですよ。
+    target_lang: ja
+    translation:
+      vi: Nghe nói trước ga sắp mở siêu thị mới đấy.
+  - type: example
+    target: ニュースによると、来月から電気代が上がるそうです。
+    target_lang: ja
+    translation:
+      vi: Theo tin tức thì từ tháng sau giá điện sẽ tăng.
+  - type: example
+    target: 彼女の表情を見ると、何かあったようです。
+    target_lang: ja
+    translation:
+      vi: Nhìn nét mặt cô ấy thì có vẻ đã có chuyện gì đó.
+  - type: common_mistake
+    wrong: 天気予報によると、明日は雪が降りそうです。
+    right: 天気予報によると、明日は雪が降るそうです。
+    target_lang: ja
+    note:
+      vi: Có nguồn (天気予報によると) là truyền đạt - thể thường + そうだ (降るそうだ). 降りそうだ là "trông như sắp rơi" khi nhìn trời.
+  - type: common_mistake
+    wrong: あの人は学生ようです。
+    right: あの人は学生のようです。
+    target_lang: ja
+    note:
+      vi: Danh từ + の + ようだ. Văn nói có thể nói 学生みたいです (không có の).
+  - type: summary
+    points:
+      - vi: ようだ / みたいだ - suy đoán từ quan sát của mình; Nのようだ, Nみたいだ.
+      - vi: らしい - nghe nói, hình như (thông tin bên ngoài).
+      - vi: そうだ (truyền đạt) - thể thường + そうだ, thường kèm ～によると.
+      - vi: 降るそうだ (nghe nói) ≠ 降りそうだ (trông như sắp).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-guessing-mcq-uwasa
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-uwasa
+    prompt:
+      stem: 「噂」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: b3t, text: tin đồn, lang: vi }
+        - { id: n5c, text: tin tức chính thức, lang: vi }
+        - { id: w1j, text: nét mặt, lang: vi }
+        - { id: k9f, text: lời hứa, lang: vi }
+    answer:
+      correct_option_id: b3t
+    explanation:
+      vi: 噂 (うわさ) - tin đồn. Tin tức là ニュース, nét mặt là 表情, lời hứa là 約束.
+    display_answer: tin đồn
+
+  - key: ja:exercise:n3-guessing-listen-souda
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-gram-sou-da-denbun
+    prompt:
+      audio_asset_id: null
+      fallback_text: ニュースによると、来月から電気代が上がるそうです。
+      options:
+        - { id: r2h, text: Theo tin tức thì từ tháng sau giá điện sẽ tăng., lang: vi }
+        - { id: e8m, text: Trông có vẻ giá điện sắp tăng từ tháng sau., lang: vi }
+        - { id: o4x, text: Theo tin tức thì từ tháng sau giá điện sẽ giảm., lang: vi }
+        - { id: s6v, text: Tôi nghĩ giá điện tháng này đã tăng., lang: vi }
+    answer:
+      correct_option_id: r2h
+    explanation:
+      vi: ～によると - theo; 上がるそうです - nghe nói sẽ tăng (truyền đạt). 上がる là tăng, 下がる là giảm.
+    display_answer: Theo tin tức thì từ tháng sau giá điện sẽ tăng.
+
+  - key: ja:exercise:n3-guessing-mcq-youda
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-da
+    prompt:
+      stem: 'Bạn bấm chuông nhà bạn, thấy đèn tắt và không ai trả lời. Bạn nói: 電気が消えているので、誰もいない＿＿。'
+      stem_lang: vi
+      options:
+        - { id: c7d, text: ようです, lang: ja }
+        - { id: h3a, text: そうです, lang: ja }
+        - { id: z5p, text: べきです, lang: ja }
+        - { id: m1n, text: わけではありません, lang: ja }
+    answer:
+      correct_option_id: c7d
+    explanation:
+      vi: Suy đoán từ điều mình tận mắt thấy - ようです. いないそうです là "nghe nói không có ai" (cần nguồn); べきです là "nên".
+    display_answer: ようです
+
+  - key: ja:exercise:n3-guessing-fill-rashii
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-rashii
+    prompt:
+      template: "駅前に新しいスーパーができる{{b1}}ですよ。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Nghe nói trước ga sắp mở siêu thị mới đấy."
+        - "Gợi ý: từ chỉ 'nghe nói, hình như', đuôi giống tính từ い."
+    answer:
+      blanks:
+        b1: [らしい]
+    known_wrong:
+      - answer: らしく
+        feedback_vi: Trước です dùng nguyên dạng らしい.
+        error_tag: rashii_form
+      - answer: べき
+        feedback_vi: べき là "nên". "Nghe nói" - らしい.
+        error_tag: grammar_meaning
+    explanation:
+      vi: Thể thường + らしい - nghe nói, hình như. できる - được xây, mở.
+    display_answer: 駅前に新しいスーパーができるらしいですよ。
+
+  - key: ja:exercise:n3-guessing-wb-hyoujou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-hyoujou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nhìn nét mặt cô ấy thì có vẻ đã có chuyện gì đó.\""
+      tokens:
+        - { id: h3, text: 何かあった }
+        - { id: h1, text: 彼女の表情を }
+        - { id: h5, text: そうです }
+        - { id: h2, text: 見ると、 }
+        - { id: h4, text: ようです }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: Suy đoán từ nét mặt mình nhìn thấy - ようです. 何かあったそうです là "nghe nói có chuyện" - không hợp với 見ると.
+    display_answer: 彼女の表情を見ると、何かあったようです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-guessing-fill-souda
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sou-da-denbun
+    prompt:
+      template: "天気予報によると、明日は雪が{{b1}}そうです。(降る - nghe nói)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [降る, ふる]
+    known_wrong:
+      - answer: 降り
+        feedback_vi: 降りそうです là "trông như sắp rơi". Có nguồn tin - 降るそうです.
+        error_tag: souda_type
+      - answer: 降って
+        feedback_vi: Trước そうだ truyền đạt dùng thể thường - 降る.
+        error_tag: souda_form
+    explanation:
+      vi: 天気予報によると - theo dự báo thời tiết; thể thường 降る + そうです - nghe nói sẽ rơi.
+    display_answer: 天気予報によると、明日は雪が降るそうです。
+
+  - key: ja:exercise:n3-guessing-translate-youda
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-yousu
+    prompt:
+      source_text: Anh Tanaka trông có vẻ mệt. (dùng 様子)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 田中さんは疲れている様子です。
+        - 田中さんは疲れている様子でした。
+        - 田中さんは疲れたような様子です。
+        - 田中さんは疲れたような様子でした。
+        - 田中さんは疲れているような様子です。
+        - 田中さんは疲れているような様子でした。
+        - 田中さんは疲れた様子です。
+        - 田中さんは疲れた様子でした。
+        - 田中さんは少し疲れている様子です。
+        - 田中さんは少し疲れている様子でした。
+        - 田中さんはとても疲れている様子です。
+        - たなかさんはつかれているようすです。
+    known_wrong:
+      - answer: 田中さんは疲れる様子です。
+        feedback_vi: Trạng thái đang mệt dùng 疲れている (hoặc 疲れた), không dùng 疲れる.
+        error_tag: te_iru_state
+    explanation:
+      vi: 疲れている様子です - trông có vẻ (đang) mệt. 様子 nhấn vào dáng vẻ quan sát được.
+    display_answer: 田中さんは疲れている様子です。
+
+  - key: ja:exercise:n3-guessing-translate-rashii
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-rashii
+    prompt:
+      source_text: Nghe nói anh Yamada sẽ nghỉ việc. (dùng らしい, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 山田さんは会社を辞めるらしいです。
+        - 山田さんは会社をやめるらしいです。
+        - 山田さんは仕事を辞めるらしいです。
+        - 山田さんは仕事をやめるらしいです。
+        - 山田さんが会社を辞めるらしいです。
+        - 山田さんが会社をやめるらしいです。
+        - 山田さんが仕事を辞めるらしいです。
+        - 山田さんは会社を辞めるらしいですよ。
+        - 山田さんが会社を辞めるらしいですよ。
+        - 山田さんは辞めるらしいです。
+        - 山田さんは退職するらしいです。
+        - やまださんはかいしゃをやめるらしいです。
+    known_wrong:
+      - answer: 山田さんは会社を辞めるべきです。
+        feedback_vi: べきです là "nên". "Nghe nói" - らしいです.
+        error_tag: grammar_meaning
+      - answer: 山田さんは会社を辞めらしいです。
+        feedback_vi: Trước らしい dùng thể thường - 辞めるらしい.
+        error_tag: rashii_form
+    explanation:
+      vi: 会社を辞める - nghỉ việc; 辞めるらしいです - nghe nói sẽ nghỉ.
+    display_answer: 山田さんは会社を辞めるらしいです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-guessing-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sou-da-denbun
+    prompt:
+      stem: Bạn nhìn lên bầu trời đầy mây đen. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: i5q, text: 今にも雨が降りそうですね。, lang: ja }
+        - { id: p2r, text: 今にも雨が降るそうですね。, lang: ja }
+        - { id: x8k, text: 今にも雨が降るらしいですね。, lang: ja }
+        - { id: d4b, text: 今にも雨が降るべきですね。, lang: ja }
+    answer:
+      correct_option_id: i5q
+    explanation:
+      vi: Nhìn trời thấy sắp mưa - V bỏ ます + そうだ (降りそう). 降るそう / 降るらしい là thông tin nghe được, không hợp với 今にも (ngay bây giờ) khi đang tự nhìn.
+    display_answer: 今にも雨が降りそうですね。
+
+  - key: ja:exercise:n3-guessing-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-uwasa
+    prompt:
+      source_text: 駅前に新しいカフェができるという噂です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có tin đồn là trước ga sắp mở một quán cà phê mới.
+        - Có tin đồn rằng trước ga sắp mở một quán cà phê mới.
+        - Có tin đồn là trước ga sẽ mở một quán cà phê mới.
+        - Có tin đồn rằng trước ga sẽ mở một quán cà phê mới.
+        - Có tin đồn là trước ga sắp có quán cà phê mới.
+        - Có tin đồn rằng trước ga sắp có quán cà phê mới.
+        - Có tin đồn là sẽ có một quán cà phê mới trước ga.
+        - Nghe đồn là trước ga sắp mở một quán cà phê mới.
+        - Nghe đồn trước ga sắp mở một quán cà phê mới.
+        - Nghe đồn rằng trước ga sẽ mở một quán cà phê mới.
+        - Người ta đồn là trước ga sắp mở một quán cà phê mới.
+        - Có tin đồn là trước nhà ga sắp mở một quán cà phê mới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trước ga đã có một quán cà phê mới.
+        feedback_vi: できる ở đây là "sắp được mở" và câu chỉ là tin đồn (噂), chưa chắc chắn.
+        error_tag: uwasa_meaning
+    explanation:
+      vi: ～という噂です - có tin đồn rằng...; できる - được mở, xây dựng.
+    display_answer: Có tin đồn là trước ga sắp mở một quán cà phê mới.
+
+  - key: ja:exercise:n3-guessing-wb-mitai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-you-da
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật (văn nói): \"Người kia trông như học sinh ấy nhỉ.\""
+      tokens:
+        - { id: m3, text: みたいだね }
+        - { id: m4, text: のみたいだね }
+        - { id: m1, text: あの人、 }
+        - { id: m2, text: 学生 }
+    answer:
+      orders:
+        - [m1, m2, m3]
+    explanation:
+      vi: Danh từ + みたいだ (không có の). Với ようだ mới cần の - 学生のようだ.
+    display_answer: あの人、学生みたいだね。
+
+  - key: ja:exercise:n3-guessing-mcq-source
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-rashii
+    prompt:
+      stem: Bạn đọc trên mạng xã hội một tin chưa xác thực rằng giá vé tàu sẽ tăng. Bạn kể lại với bạn bè thế nào cho đúng mức độ?
+      stem_lang: vi
+      options:
+        - { id: t7g, text: 来年から電車の運賃が上がるらしいよ。, lang: ja }
+        - { id: a1v, text: 来年から電車の運賃が上がるはずだよ。, lang: ja }
+        - { id: j6w, text: 来年から電車の運賃が上がりそうだよ。, lang: ja }
+        - { id: u9e, text: 来年から電車の運賃が上がるべきだよ。, lang: ja }
+    answer:
+      correct_option_id: t7g
+    explanation:
+      vi: Thông tin nghe được, chưa chắc - らしい. はずだ là kết luận chắc chắn có căn cứ; 上がりそう là đoán theo vẻ bề ngoài; べきだ là "nên".
+    display_answer: 来年から電車の運賃が上がるらしいよ。
