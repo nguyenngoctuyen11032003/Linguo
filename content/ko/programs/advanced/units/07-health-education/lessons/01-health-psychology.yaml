@@ -1,0 +1,570 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:health-psychology
+order_index: 1
+level: topik5
+title:
+  vi: Sức khoẻ thể chất và tinh thần - đọc chuyên mục y tế với -(으)ㄴ/는 듯하다
+objectives:
+  - vi: Hiểu từ vựng y tế, tâm lý của chuyên mục sức khoẻ - 만성 질환, 우울증, 스트레스 해소, 수면 부족, 면역력, 예방 접종, 증상, 진단.
+  - vi: Phỏng đoán thận trọng trong văn viết bằng -(으)ㄴ/는 듯하다 · -(으)ㄹ 듯하다.
+  - vi: Biết khi nào dùng -것 같다 (nói) và khi nào dùng -듯하다 (viết).
+estimated_minutes: 25
+skills: [vocabulary, reading, grammar]
+prerequisites: [ko:lesson:law-ethics-review]
+items:
+  - item: ko:item:he-manseong-jilhwan
+  - item: ko:item:he-uuljeung
+  - item: ko:item:he-seuteureseu-haeso
+  - item: ko:item:he-sumyeon-bujok
+  - item: ko:item:he-myeonyeongnyeok
+  - item: ko:item:he-yebang-jeopjong
+  - item: ko:item:he-jeungsang
+  - item: ko:item:he-jeongsin-geongang
+  - item: ko:item:he-jindan
+  - item: ko:item:he-gram-n-neun-deuthada
+  - item: ko:item:gram-geot-gatda
+    role: reuse
+  - item: ko:item:ha-bulmyeonjeung
+    role: reuse
+  - item: ko:item:ha-seuteureseu-pulda
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Unit cuối của chương trình cao cấp gom ba chủ đề TOPIK 6 hay ra - y tế, giáo dục và cách diễn đạt học thuật. Bài này bắt đầu bằng chuyên mục sức khoẻ trên báo và cách phỏng đoán lịch sự của văn viết.
+  - type: explain
+    text:
+      vi: Từ y tế gần như toàn là Hán Hàn, nên âm Hán Việt giúp bạn rất nhiều - 만성 (mạn tính), 우울증 (ưu uất chứng), 면역 (miễn dịch), 예방 접종 (dự phòng tiếp chủng), 증상 (chứng trạng), 진단 (chẩn đoán). Điều cần học thêm là động từ đi kèm - 면역력이 떨어지다, 예방 접종을 받다, 진단을 받다.
+  - type: explain
+    text:
+      vi: -(으)ㄴ/는 듯하다 là "hình như, có vẻ" của văn viết - nghĩa giống -것 같다 bạn đã học, nhưng nghe khách quan, chừng mực hơn. Tiếng Việt dùng "có vẻ" cho cả nói lẫn viết, nên người Việt hay viết 것 같다 trong bài luận TOPIK - giám khảo sẽ coi đó là văn nói.
+  - type: explain
+    text:
+      vi: Cách chia giống 것 같다 - việc đã xảy ra -(으)ㄴ 듯하다 (나아진 듯하다), đang diễn ra -는 듯하다 (늘고 있는 듯하다), phỏng đoán tương lai -(으)ㄹ 듯하다 (비가 올 듯하다), tính từ -(으)ㄴ 듯하다 (피곤한 듯하다), danh từ N인 듯하다.
+  - type: deep_explain
+    text:
+      vi: 듯하다 là một từ, viết liền, nhưng phải tách khỏi định ngữ phía trước - 올 듯하다, không phải 올듯하다 hay 올 듯 하다. Gần nghĩa là -(으)ㄴ/는 듯싶다 (chủ quan hơn) và -(으)ㄴ/는 것으로 보인다 (khách quan, kiểu báo chí). Đừng nhầm với -(으)ㄴ/는 듯이 "như thể" - 아무 일 없었다는 듯이 웃었다 (cười như thể chưa có chuyện gì).
+  - type: example
+    target: 상담을 꾸준히 받으면서 그의 표정이 한결 밝아진 듯하다.
+    target_lang: ko
+    translation:
+      vi: Nhờ đều đặn đi tư vấn tâm lý, nét mặt anh ấy có vẻ tươi tắn hơn hẳn.
+    note:
+      vi: Thay đổi đã xảy ra - -(으)ㄴ 듯하다.
+  - type: example
+    target: 진료를 기다리는 환자가 많은 것을 보니 감기가 다시 유행하는 듯하다.
+    target_lang: ko
+    translation:
+      vi: Thấy nhiều bệnh nhân chờ khám như vậy, có vẻ cảm cúm lại đang lan rộng.
+    note:
+      vi: Căn cứ (-는 것을 보니) + phỏng đoán đang diễn ra -는 듯하다.
+  - type: example
+    target: 이번 겨울에는 독감 환자가 예년보다 많을 듯하다는 전망이 나왔다.
+    target_lang: ko
+    translation:
+      vi: Đã có dự báo rằng mùa đông này số bệnh nhân cúm có vẻ sẽ nhiều hơn mọi năm.
+    note:
+      vi: Phỏng đoán tương lai -(으)ㄹ 듯하다, trích dẫn bằng -다는 전망.
+  - type: example
+    target: 만성 질환을 앓는 노인일수록 우울증에 걸릴 위험이 높다는 연구 결과가 있다.
+    target_lang: ko
+    translation:
+      vi: Có kết quả nghiên cứu cho thấy người cao tuổi mắc bệnh mãn tính càng có nguy cơ cao bị trầm cảm.
+    note:
+      vi: 질환을 앓다 (mắc bệnh, chịu bệnh lâu dài); 우울증에 걸리다.
+  - type: example
+    target: 스트레스를 제때 해소하지 못하면 수면의 질도 함께 나빠지기 마련이다.
+    target_lang: ko
+    translation:
+      vi: Nếu không giải toả căng thẳng kịp thời thì chất lượng giấc ngủ cũng xấu đi theo là chuyện đương nhiên.
+    note:
+      vi: Văn viết dùng 해소하다; lời nói hằng ngày - 스트레스를 풀다.
+  - type: common_mistake
+    wrong: 어제 야근을 해서 그런지 동료가 많이 피곤하는 듯했다.
+    right: 어제 야근을 해서 그런지 동료가 많이 피곤한 듯했다.
+    target_lang: ko
+    note:
+      vi: 피곤하다 là tính từ nên dùng -(으)ㄴ 듯하다. -는 듯하다 chỉ dành cho động từ (và 있다/없다).
+  - type: common_mistake
+    wrong: 지난주에 독감 예방 접종을 했어요.
+    right: 지난주에 독감 예방 접종을 받았어요.
+    target_lang: ko
+    note:
+      vi: Người được tiêm thì 예방 접종을 받다 / 맞다. 접종을 하다 là việc của cơ sở y tế.
+  - type: common_mistake
+    wrong: 오늘은 비가 와서 우울증이에요.
+    right: 오늘은 비가 와서 좀 우울해요.
+    target_lang: ko
+    note:
+      vi: 우울증 là bệnh trầm cảm. Cảm giác buồn một ngày mưa là 우울하다 - dùng nhầm sẽ khiến người nghe lo lắng thật sự.
+  - type: summary
+    points:
+      - vi: 만성 ↔ 급성; 우울증 (bệnh) ≠ 우울하다 (buồn); 불면증 (mất ngủ) ≠ 수면 부족 (ngủ không đủ).
+      - vi: 면역력이 떨어지다 · 예방 접종을 받다 · 증상이 나타나다 · 진단을 받다 · 스트레스 해소.
+      - vi: -(으)ㄴ/는/(으)ㄹ 듯하다 = có vẻ, hình như (văn viết); -것 같다 là bản nói.
+      - vi: Tính từ dùng -(으)ㄴ 듯하다 (피곤한 듯하다); 듯하다 viết liền, tách khỏi định ngữ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:he-health-mcq-deuthada
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:he-gram-n-neun-deuthada
+    prompt:
+      stem: "시험장에서 나오는 그의 표정을 보니 시험을 잘 본 듯하다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k3s, text: "Nhìn nét mặt anh ấy khi ra khỏi phòng thi, có vẻ anh ấy làm bài tốt.", lang: vi }
+        - { id: w8n, text: "Nhìn nét mặt anh ấy, chắc chắn anh ấy đã đạt điểm tuyệt đối.", lang: vi }
+        - { id: d1y, text: "Anh ấy giả vờ như đã làm bài thi tốt.", lang: vi }
+        - { id: p6g, text: "Anh ấy đang làm bài thi rất tốt trong phòng thi.", lang: vi }
+    answer:
+      correct_option_id: k3s
+    explanation:
+      vi: -(으)ㄴ 듯하다 = có vẻ (đã) - người viết phỏng đoán dựa trên nét mặt, không khẳng định chắc chắn. "Giả vờ" là -(으)ㄴ 척하다; việc thi đã xong (본) chứ không đang diễn ra.
+    display_answer: "Nhìn nét mặt anh ấy khi ra khỏi phòng thi, có vẻ anh ấy làm bài tốt."
+
+  - key: ko:exercise:he-health-listen-myeonyeok
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:he-myeonyeongnyeok
+    prompt:
+      audio_asset_id: null
+      fallback_text: 환절기에는 면역력이 떨어지기 쉬우므로 충분한 수면과 균형 잡힌 식사가 필요합니다.
+      options:
+        - { id: z2h, text: "Giao mùa sức đề kháng dễ giảm nên cần ngủ đủ và ăn uống cân bằng.", lang: vi }
+        - { id: m5c, text: "Giao mùa sức đề kháng tăng lên nên không cần ngủ nhiều.", lang: vi }
+        - { id: f9t, text: "Ngủ nhiều vào lúc giao mùa làm giảm sức đề kháng.", lang: vi }
+        - { id: a4e, text: "Chỉ cần ăn uống cân bằng, không cần ngủ đủ.", lang: vi }
+    answer:
+      correct_option_id: z2h
+    explanation:
+      vi: 면역력이 떨어지다 = sức đề kháng giảm; -기 쉬우므로 = vì dễ...; 충분한 수면과 균형 잡힌 식사 = ngủ đủ và ăn cân bằng - cả hai đều cần. 면역력 đọc [며녕녁], nghe kỹ để nhận ra.
+    display_answer: "Giao mùa sức đề kháng dễ giảm nên cần ngủ đủ và ăn uống cân bằng."
+
+  - key: ko:exercise:he-health-mcq-manseong
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-manseong-jilhwan
+    prompt:
+      stem: "Bệnh kéo dài nhiều năm, phải theo dõi và điều trị lâu dài (như tiểu đường) gọi là gì?"
+      stem_lang: vi
+      options:
+        - { id: r7b, text: "만성 질환", lang: ko }
+        - { id: o2x, text: "급성 질환", lang: ko }
+        - { id: j6m, text: "예방 접종", lang: ko }
+        - { id: u1k, text: "수면 부족", lang: ko }
+    answer:
+      correct_option_id: r7b
+    explanation:
+      vi: 만성 (慢性 - mạn tính) = kéo dài; 급성 (急性 - cấp tính) = đột ngột, ngắn. 예방 접종 là tiêm phòng, 수면 부족 là thiếu ngủ.
+    display_answer: "만성 질환"
+
+  - key: ko:exercise:he-health-fill-yebang
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-yebang-jeopjong
+    prompt:
+      template: "독감 {{b1}} 접종은 유행이 시작되기 전에 미리 받아 두는 것이 좋다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Phòng ngừa trước (豫防 - dự phòng).
+        - 예...
+    answer:
+      blanks:
+        b1: [예방]
+    known_wrong:
+      - answer: 치료
+        feedback_vi: 치료 là chữa bệnh sau khi đã mắc. Tiêm trước mùa dịch là 예방 접종.
+        error_tag: vocab_meaning
+      - answer: 진단
+        feedback_vi: 진단 là chẩn đoán bệnh, không đi với 접종.
+        error_tag: collocation
+    explanation:
+      vi: 예방 접종 = tiêm phòng; động từ đi kèm là 받다 / 맞다. Cụm 받아 두다 (làm sẵn) nhấn việc chuẩn bị trước.
+    display_answer: 독감 예방 접종은 유행이 시작되기 전에 미리 받아 두는 것이 좋다.
+
+  - key: ko:exercise:he-health-mcq-register
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:gram-geot-gatda
+    prompt:
+      stem: "Bạn viết bài luận TOPIK (văn viết -다). Câu nào phù hợp nhất về văn phong?"
+      stem_lang: vi
+      options:
+        - { id: s4v, text: "수면 시간이 줄어들수록 우울감이 커지는 듯하다.", lang: ko }
+        - { id: e9a, text: "수면 시간이 줄어들수록 우울감이 커지는 것 같아요.", lang: ko }
+        - { id: g3w, text: "수면 시간이 줄어들수록 우울감이 커지는 듯해요.", lang: ko }
+        - { id: n8q, text: "수면 시간이 줄어들수록 우울감이 커지는 척하다.", lang: ko }
+    answer:
+      correct_option_id: s4v
+    explanation:
+      vi: Bài luận dùng đuôi -다 và cách phỏng đoán của văn viết - -는 듯하다. Hai phương án kết bằng -요 là văn nói; -는 척하다 nghĩa là "giả vờ", sai nghĩa.
+    display_answer: "수면 시간이 줄어들수록 우울감이 커지는 듯하다."
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:he-health-fill-deut-adj
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-n-neun-deuthada
+    prompt:
+      template: "아이가 하루 종일 말이 없는 걸 보니 무척 (피곤하다 →) {{b1}} 듯했다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [피곤한]
+    known_wrong:
+      - answer: 피곤하는
+        feedback_vi: 피곤하다 là tính từ - dùng -(으)ㄴ 듯하다 (피곤한 듯했다).
+        error_tag: adjective_adnominal
+      - answer: 피곤할
+        feedback_vi: Đây là trạng thái đang thấy (말이 없는 걸 보니), không phải dự đoán tương lai - dùng 피곤한.
+        error_tag: deuthada_tense
+    explanation:
+      vi: Tính từ + -(으)ㄴ 듯하다 (trạng thái hiện tại); thì quá khứ đặt ở cuối - 듯했다. Lỗi -는 với tính từ là lỗi rất hay gặp của người Việt vì tiếng Việt không chia định ngữ.
+    display_answer: 아이가 하루 종일 말이 없는 걸 보니 무척 피곤한 듯했다.
+
+  - key: ko:exercise:he-health-fill-myeonyeok
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-sumyeon-bujok
+    prompt:
+      template: "수면 부족이 계속되면 면역력이 {{b1}} 각종 감염병에 걸리기 쉽다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [떨어져, 떨어져서, 약해져, 약해져서, 낮아져, 낮아져서]
+    known_wrong:
+      - answer: 높아져
+        feedback_vi: Ngược nghĩa - thiếu ngủ làm sức đề kháng giảm, không tăng.
+        error_tag: meaning_reversed
+      - answer: 떨어지고
+        feedback_vi: -고 chỉ liệt kê, không nêu nguyên nhân. Ở đây cần "vì giảm nên..." - 떨어져(서).
+        error_tag: connective_meaning
+    explanation:
+      vi: 면역력이 떨어지다 / 약해지다 là collocation tự nhiên nhất; -아/어(서) nối nguyên nhân với kết quả (dễ mắc bệnh truyền nhiễm).
+    display_answer: 수면 부족이 계속되면 면역력이 떨어져 각종 감염병에 걸리기 쉽다.
+
+  - key: ko:exercise:he-health-translate-deut
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-n-neun-deuthada
+    prompt:
+      source_text: Có vẻ như căng thẳng là nguyên nhân chính gây ra chứng mất ngủ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "스트레스가 불면증의 주된 원인인 듯하다."
+        - "스트레스가 불면증의 주된 원인인 듯합니다."
+        - "스트레스가 불면증의 주된 원인인 듯해요."
+        - "스트레스가 불면증의 주된 원인인 것 같다."
+        - "스트레스가 불면증의 주된 원인인 것 같습니다."
+        - "스트레스가 불면증의 주된 원인인 것 같아요."
+        - "스트레스가 불면증의 주요 원인인 듯하다."
+        - "스트레스가 불면증의 주요 원인인 듯합니다."
+        - "스트레스가 불면증의 주요 원인인 듯해요."
+        - "스트레스가 불면증의 주요 원인인 것 같다."
+        - "스트레스가 불면증의 주요 원인인 것 같습니다."
+        - "스트레스가 불면증의 주요 원인인 것 같아요."
+        - "스트레스가 불면증의 가장 큰 원인인 듯하다."
+        - "스트레스가 불면증의 가장 큰 원인인 듯합니다."
+        - "스트레스가 불면증의 가장 큰 원인인 듯해요."
+        - "스트레스가 불면증의 가장 큰 원인인 것 같다."
+        - "스트레스가 불면증의 가장 큰 원인인 것 같습니다."
+        - "스트레스가 불면증의 가장 큰 원인인 것 같아요."
+        - "스트레스는 불면증의 주된 원인인 듯하다."
+        - "스트레스는 불면증의 주된 원인인 듯합니다."
+        - "스트레스는 불면증의 주된 원인인 듯해요."
+        - "스트레스는 불면증의 주된 원인인 것 같다."
+        - "스트레스는 불면증의 주된 원인인 것 같습니다."
+        - "스트레스는 불면증의 주된 원인인 것 같아요."
+        - "스트레스는 불면증의 주요 원인인 듯하다."
+        - "스트레스는 불면증의 주요 원인인 듯합니다."
+        - "스트레스는 불면증의 주요 원인인 듯해요."
+        - "스트레스는 불면증의 주요 원인인 것 같다."
+        - "스트레스는 불면증의 주요 원인인 것 같습니다."
+        - "스트레스는 불면증의 주요 원인인 것 같아요."
+        - "스트레스는 불면증의 가장 큰 원인인 듯하다."
+        - "스트레스는 불면증의 가장 큰 원인인 듯합니다."
+        - "스트레스는 불면증의 가장 큰 원인인 듯해요."
+        - "스트레스는 불면증의 가장 큰 원인인 것 같다."
+        - "스트레스는 불면증의 가장 큰 원인인 것 같습니다."
+        - "스트레스는 불면증의 가장 큰 원인인 것 같아요."
+        - "불면증의 주된 원인은 스트레스인 듯하다."
+        - "불면증의 주된 원인은 스트레스인 듯합니다."
+        - "불면증의 주된 원인은 스트레스인 것 같다."
+        - "불면증의 주된 원인은 스트레스인 것 같아요."
+        - "불면증의 주요 원인은 스트레스인 듯하다."
+        - "불면증의 주요 원인은 스트레스인 듯합니다."
+        - "불면증의 주요 원인은 스트레스인 것 같다."
+        - "불면증의 주요 원인은 스트레스인 것 같아요."
+    known_wrong:
+      - answer: 스트레스가 불면증의 주된 원인이는 듯하다.
+        feedback_vi: Danh từ + 인 듯하다 - 원인인 듯하다.
+        error_tag: noun_deuthada
+      - answer: 스트레스가 수면 부족의 주된 원인인 척하다.
+        feedback_vi: -는 척하다 là "giả vờ"; và "mất ngủ" là 불면증.
+        error_tag: deuthada_vs_cheok
+    explanation:
+      vi: Danh từ + 인 듯하다 (원인인 듯하다) là bản viết; 원인인 것 같다 là bản nói - cả hai đều đúng. "Mất ngủ" là 불면증 (muốn ngủ mà không ngủ được).
+    display_answer: 스트레스가 불면증의 주된 원인인 듯하다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:he-health-translate-uuljeung-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:he-uuljeung
+    prompt:
+      source_text: 우울증은 의지의 문제가 아니라 치료가 필요한 질환이라는 인식이 점차 확산되는 듯하다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị đang dần phổ biến."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị đang dần lan rộng."
+        - "Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị đang dần phổ biến."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị đang dần lan rộng."
+        - "Dường như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị đang dần phổ biến."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị đang dần lan rộng."
+        - "Hình như nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần được điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là bệnh cần điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần được điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề của ý chí mà là căn bệnh cần điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần được điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần được điều trị dường như đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị có vẻ đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị có vẻ đang dần phổ biến."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị dường như đang dần lan rộng."
+        - "Nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là căn bệnh cần điều trị dường như đang dần phổ biến."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trầm cảm chắc chắn là vấn đề ý chí và không cần điều trị.
+        feedback_vi: Ngược nghĩa - câu gốc nói trầm cảm KHÔNG phải vấn đề ý chí mà là bệnh cần điều trị; -는 듯하다 cũng không phải "chắc chắn".
+        error_tag: meaning_reversed
+      - answer: Có vẻ người ta giả vờ rằng trầm cảm là bệnh cần điều trị.
+        feedback_vi: -는 듯하다 là "có vẻ", không phải "giả vờ" (-는 척하다).
+        error_tag: deuthada_vs_cheok
+    explanation:
+      vi: N이/가 아니라 N이다 = không phải... mà là...; -(이)라는 인식 = nhận thức rằng; 확산되는 듯하다 = có vẻ đang lan rộng. Người viết dùng -듯하다 để nhận định thận trọng.
+    display_answer: Có vẻ nhận thức rằng trầm cảm không phải là vấn đề ý chí mà là bệnh cần điều trị đang dần lan rộng.
+
+  - key: ko:exercise:he-health-order-naajin
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-jeungsang
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Từ khi uống thuốc, các triệu chứng có vẻ đã đỡ nhiều.\""
+      tokens:
+        - { id: b5r, text: 증상이 }
+        - { id: h8w, text: 척했다 }
+        - { id: x2e, text: 먹은 }
+        - { id: q7a, text: 듯하다 }
+        - { id: c1m, text: 나아진 }
+        - { id: l9d, text: 약을 }
+        - { id: y3t, text: 많이 }
+        - { id: i6k, text: 뒤로 }
+    answer:
+      orders:
+        - [l9d, x2e, i6k, b5r, y3t, c1m, q7a]
+        - [b5r, l9d, x2e, i6k, y3t, c1m, q7a]
+    explanation:
+      vi: Mốc thời gian 약을 먹은 뒤로 (từ sau khi uống thuốc) + thay đổi đã xảy ra 나아진 듯하다. 척했다 là token nhiễu (giả vờ).
+    display_answer: 약을 먹은 뒤로 증상이 많이 나아진 듯하다.
+
+  - key: ko:exercise:he-health-mcq-uul
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-uuljeung
+    prompt:
+      stem: "Bạn muốn nói với bạn bè rằng dạo này bạn hơi buồn, có lẽ vì thời tiết. Câu nào đúng và tự nhiên?"
+      stem_lang: vi
+      options:
+        - { id: t4o, text: "날씨 탓인지 요즘 좀 우울해요.", lang: ko }
+        - { id: v0j, text: "날씨 탓인지 요즘 좀 우울증해요.", lang: ko }
+        - { id: m2p, text: "날씨 탓인지 요즘 좀 우울증을 받아요.", lang: ko }
+        - { id: e5s, text: "날씨 탓인지 요즘 좀 우울증이 걸렸어요.", lang: ko }
+    answer:
+      correct_option_id: t4o
+    explanation:
+      vi: Cảm xúc buồn nhẹ là tính từ 우울하다. 우울증 là danh từ chỉ bệnh - không ghép với 하다 hay 받다, và "mắc bệnh" phải là 우울증에 걸리다 (trợ từ 에).
+    display_answer: "날씨 탓인지 요즘 좀 우울해요."
+
+  - key: ko:exercise:he-health-translate-jeungsang
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-jeungsang
+    prompt:
+      source_text: Nếu triệu chứng kéo dài hơn một tuần thì nên đi khám bác sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "증상이 일주일 이상 계속되면 병원에 가 보는 것이 좋다."
+        - "증상이 일주일 이상 계속되면 병원에 가 보는 게 좋다."
+        - "증상이 일주일 이상 계속되면 병원에 가 보는 것이 좋습니다."
+        - "증상이 일주일 이상 계속되면 병원에 가 보세요."
+        - "증상이 일주일 이상 계속되면 진료를 받는 것이 좋다."
+        - "증상이 일주일 이상 계속되면 진료를 받아 보세요."
+        - "증상이 일주일 이상 계속되면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 일주일 이상 지속되면 병원에 가 보는 것이 좋다."
+        - "증상이 일주일 이상 지속되면 병원에 가 보는 게 좋다."
+        - "증상이 일주일 이상 지속되면 병원에 가 보는 것이 좋습니다."
+        - "증상이 일주일 이상 지속되면 병원에 가 보세요."
+        - "증상이 일주일 이상 지속되면 진료를 받는 것이 좋다."
+        - "증상이 일주일 이상 지속되면 진료를 받아 보세요."
+        - "증상이 일주일 이상 지속되면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 일주일 이상 이어지면 병원에 가 보는 것이 좋다."
+        - "증상이 일주일 이상 이어지면 병원에 가 보는 게 좋다."
+        - "증상이 일주일 이상 이어지면 병원에 가 보는 것이 좋습니다."
+        - "증상이 일주일 이상 이어지면 병원에 가 보세요."
+        - "증상이 일주일 이상 이어지면 진료를 받는 것이 좋다."
+        - "증상이 일주일 이상 이어지면 진료를 받아 보세요."
+        - "증상이 일주일 이상 이어지면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 일주일 넘게 계속되면 병원에 가 보는 것이 좋다."
+        - "증상이 일주일 넘게 계속되면 병원에 가 보는 게 좋다."
+        - "증상이 일주일 넘게 계속되면 병원에 가 보는 것이 좋습니다."
+        - "증상이 일주일 넘게 계속되면 병원에 가 보세요."
+        - "증상이 일주일 넘게 계속되면 진료를 받는 것이 좋다."
+        - "증상이 일주일 넘게 계속되면 진료를 받아 보세요."
+        - "증상이 일주일 넘게 계속되면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 일주일 넘게 지속되면 병원에 가 보는 것이 좋다."
+        - "증상이 일주일 넘게 지속되면 병원에 가 보는 게 좋다."
+        - "증상이 일주일 넘게 지속되면 병원에 가 보는 것이 좋습니다."
+        - "증상이 일주일 넘게 지속되면 병원에 가 보세요."
+        - "증상이 일주일 넘게 지속되면 진료를 받는 것이 좋다."
+        - "증상이 일주일 넘게 지속되면 진료를 받아 보세요."
+        - "증상이 일주일 넘게 지속되면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 일주일 넘게 이어지면 병원에 가 보는 것이 좋다."
+        - "증상이 일주일 넘게 이어지면 병원에 가 보는 게 좋다."
+        - "증상이 일주일 넘게 이어지면 병원에 가 보는 것이 좋습니다."
+        - "증상이 일주일 넘게 이어지면 병원에 가 보세요."
+        - "증상이 일주일 넘게 이어지면 진료를 받는 것이 좋다."
+        - "증상이 일주일 넘게 이어지면 진료를 받아 보세요."
+        - "증상이 일주일 넘게 이어지면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 1주일 이상 계속되면 병원에 가 보는 것이 좋다."
+        - "증상이 1주일 이상 계속되면 병원에 가 보는 게 좋다."
+        - "증상이 1주일 이상 계속되면 병원에 가 보는 것이 좋습니다."
+        - "증상이 1주일 이상 계속되면 병원에 가 보세요."
+        - "증상이 1주일 이상 계속되면 진료를 받는 것이 좋다."
+        - "증상이 1주일 이상 계속되면 진료를 받아 보세요."
+        - "증상이 1주일 이상 계속되면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 1주일 이상 지속되면 병원에 가 보는 것이 좋다."
+        - "증상이 1주일 이상 지속되면 병원에 가 보는 게 좋다."
+        - "증상이 1주일 이상 지속되면 병원에 가 보는 것이 좋습니다."
+        - "증상이 1주일 이상 지속되면 병원에 가 보세요."
+        - "증상이 1주일 이상 지속되면 진료를 받는 것이 좋다."
+        - "증상이 1주일 이상 지속되면 진료를 받아 보세요."
+        - "증상이 1주일 이상 지속되면 의사의 진찰을 받는 것이 좋다."
+        - "증상이 1주일 이상 이어지면 병원에 가 보는 것이 좋다."
+        - "증상이 1주일 이상 이어지면 병원에 가 보는 게 좋다."
+        - "증상이 1주일 이상 이어지면 병원에 가 보는 것이 좋습니다."
+        - "증상이 1주일 이상 이어지면 병원에 가 보세요."
+        - "증상이 1주일 이상 이어지면 진료를 받는 것이 좋다."
+        - "증상이 1주일 이상 이어지면 진료를 받아 보세요."
+        - "증상이 1주일 이상 이어지면 의사의 진찰을 받는 것이 좋다."
+    known_wrong:
+      - answer: 증상이 일주일 이상 계속되면 병원에 가 보는 것이 좋을 듯하다.
+        feedback_vi: Lời khuyên y tế cần rõ ràng; -(으)ㄹ 듯하다 là phỏng đoán, làm câu khuyên trở nên mơ hồ. Dùng -는 것이 좋다.
+        error_tag: deuthada_misuse
+      - answer: 증세가 일주일 동안이면 병원에 가 보는 것이 좋다.
+        feedback_vi: Ý "kéo dài hơn một tuần" là 일주일 이상 계속되다; 동안이면 không diễn đạt được ý "kéo dài".
+        error_tag: duration_expression
+    explanation:
+      vi: 증상이 계속되다 / 지속되다 = triệu chứng kéo dài; 일주일 이상 = từ một tuần trở lên; lời khuyên -는 것이 좋다. Lời khuyên y tế không dùng 듯하다 vì cần rõ ràng.
+    display_answer: 증상이 일주일 이상 계속되면 병원에 가 보는 것이 좋다.

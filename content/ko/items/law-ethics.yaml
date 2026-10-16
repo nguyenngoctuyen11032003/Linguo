@@ -1,0 +1,893 @@
+# Học liệu unit "Pháp luật, chính trị & đạo đức xã hội" (TOPIK 6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: luật pháp, chính trị - N에 의하면, N에 의해(서), -는 데 있다 =================
+  - key: ko:item:le-beoban
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 법안
+      romanization: beoban
+      pos: danh từ
+    back:
+      meaning:
+        vi: Dự luật (法案 - pháp án) - văn bản luật được đưa ra Quốc hội nhưng chưa thông qua. 법안을 발의하다 (đề xuất), 통과시키다 (thông qua), 부결되다 (bị bác).
+      examples:
+        - target: 국회는 플랫폼 노동자를 보호하기 위한 법안을 본회의에서 통과시켰다.
+          translation:
+            vi: Quốc hội đã thông qua tại phiên họp toàn thể dự luật nhằm bảo vệ người lao động trên nền tảng số.
+      pronunciation_note:
+        vi: Đọc [버반] - patchim ㅂ nối sang nguyên âm sau.
+      confusion:
+        vi: 법안 là dự luật, 법 / 법률 là luật đã có hiệu lực. Tiếng Việt cũng phân biệt "dự luật" và "luật", nhưng người học hay viết 법안이 시행되었다 - dự luật chưa thể thi hành, phải là 법이 시행되었다.
+
+  - key: ko:item:le-gaejeong
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 개정 / 개정하다 · 개정안
+      romanization: gaejeong / gaejeonghada · gaejeongan
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Sửa đổi (luật, quy định, điều lệ) (改正 - cải chính); 개정안 là bản dự thảo sửa đổi.
+      examples:
+        - target: 정부는 개인 정보 보호법을 개정해 위반 기업에 대한 과징금을 높이기로 했다.
+          translation:
+            vi: Chính phủ quyết định sửa đổi Luật Bảo vệ thông tin cá nhân để nâng mức phạt tiền đối với doanh nghiệp vi phạm.
+      pronunciation_note:
+        vi: Đọc [개정]; 개정안 nối âm [개정안].
+      confusion:
+        vi: 개정 dùng cho luật và văn bản quy phạm; 수정 là chỉnh sửa tài liệu, bài viết thông thường; 개선 là cải thiện tình trạng. Viết 법을 수정하다 nghe như sửa chính tả một văn bản.
+
+  - key: ko:item:le-sihaeng
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 시행 / 시행하다 · 시행되다
+      romanization: sihaeng / sihaenghada · sihaengdoeda
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Thi hành, đưa vào áp dụng, có hiệu lực (luật, chính sách, chế độ) (施行).
+      examples:
+        - target: 개정된 도로교통법은 다음 달 1일부터 본격적으로 시행된다.
+          translation:
+            vi: Luật Giao thông đường bộ sửa đổi sẽ chính thức có hiệu lực từ ngày 1 tháng sau.
+      pronunciation_note:
+        vi: Đọc [시행]; ㅅ trước ㅣ phát âm gần "x" mềm.
+      confusion:
+        vi: 시행 (luật, chính sách bắt đầu áp dụng) khác 실행 (thực hiện một kế hoạch cụ thể) và 시험 (thi, thử nghiệm). Báo chí hay viết 시행에 들어가다 hoặc 시행을 앞두다 (sắp có hiệu lực).
+
+  - key: ko:item:le-cheobeol
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 처벌 / 처벌하다 · 처벌을 받다
+      romanization: cheobeol / cheobeolhada · cheobeoreul batda
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Xử phạt, trừng phạt theo pháp luật. 처벌을 강화하다 (tăng nặng hình phạt), 처벌 수위 (mức hình phạt).
+      examples:
+        - target: 아동 학대에 대한 처벌 수위를 높여야 한다는 목소리가 커지고 있다.
+          translation:
+            vi: Ngày càng nhiều ý kiến cho rằng phải nâng mức xử phạt đối với hành vi bạo hành trẻ em.
+      pronunciation_note:
+        vi: Đọc [처벌]; 처벌을 nối âm [처버를].
+      confusion:
+        vi: 처벌 là hình phạt do nhà nước áp dụng; 벌 là hình phạt nói chung (벌을 받다 ở trường học); 벌금 là tiền phạt. Báo chí chỉ trích hình phạt quá nhẹ bằng cụm 솜방망이 처벌 (phạt bằng gậy bông).
+
+  - key: ko:item:le-wiban
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 위반 / 위반하다
+      romanization: wiban / wibanhada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Vi phạm (luật, quy định, hợp đồng) (違反). 교통 법규 위반, 계약 위반.
+      examples:
+        - target: 사업주가 근로 계약 내용을 위반했다면 근로자는 손해 배상을 청구할 수 있다.
+          translation:
+            vi: Nếu chủ doanh nghiệp vi phạm nội dung hợp đồng lao động, người lao động có thể yêu cầu bồi thường thiệt hại.
+      pronunciation_note:
+        vi: Đọc [위반]; ㅟ phát âm tròn môi rồi kéo sang "i".
+      confusion:
+        vi: 위반 đi với luật, quy tắc, hợp đồng; quyền lợi bị xâm phạm thì dùng 침해 (권리 침해, 사생활 침해). Tiếng Việt nói "vi phạm quyền riêng tư" nên người Việt hay viết 사생활 위반 - phải là 사생활 침해.
+
+  - key: ko:item:le-gwolli-uimu
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 권리 · 의무
+      romanization: gwolli · uimu
+      pos: danh từ
+    back:
+      meaning:
+        vi: Quyền / nghĩa vụ. 권리를 누리다 · 행사하다 (hưởng · thực hiện quyền), 의무를 지다 · 다하다 (gánh · làm tròn nghĩa vụ).
+      examples:
+        - target: 모든 국민은 교육을 받을 권리와 납세의 의무를 함께 가진다.
+          translation:
+            vi: Mọi công dân đều có cả quyền được học tập lẫn nghĩa vụ nộp thuế.
+      pronunciation_note:
+        vi: 권리 đọc [궐리] - ㄴ gặp ㄹ thành ㄹㄹ. 의무 đọc [의무], ㅢ đầu từ đọc đủ "ưi".
+      confusion:
+        vi: 권리 (quyền lợi) khác 권력 (quyền lực) và 권한 (thẩm quyền). Câu "nhân viên có quyền phê duyệt" là 결재 권한이 있다, không phải 권리.
+
+  - key: ko:item:le-yeoron
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 여론
+      romanization: yeoron
+      pos: danh từ
+    back:
+      meaning:
+        vi: Dư luận (輿論). 여론 조사 (thăm dò dư luận), 여론이 악화되다 (dư luận xấu đi), 여론을 수렴하다 (lắng nghe, tổng hợp dư luận).
+      examples:
+        - target: 여론 조사 결과 응답자의 60% 이상이 법 개정에 찬성하는 것으로 나타났다.
+          translation:
+            vi: Kết quả thăm dò dư luận cho thấy hơn 60% người trả lời tán thành việc sửa luật.
+      pronunciation_note:
+        vi: Đọc [여론]; ㄹ giữa hai nguyên âm đọc như "r" nhẹ.
+      confusion:
+        vi: Âm Hán Việt là "dư luận" nhưng chữ Hàn là 여 (輿), không phải 의 hay 유 - đừng viết 의론, 유론. 여론 là ý kiến số đông; ý kiến của một cá nhân là 의견.
+
+  - key: ko:item:le-gongcheonghoe
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 공청회
+      romanization: gongcheonghoe
+      pos: danh từ
+    back:
+      meaning:
+        vi: Buổi điều trần công khai, buổi lấy ý kiến công chúng (公聽會 - công thính hội) trước khi ban hành chính sách, luật.
+      examples:
+        - target: 시는 버스 노선 개편안에 대해 주민 의견을 듣는 공청회를 열었다.
+          translation:
+            vi: Thành phố đã tổ chức buổi lấy ý kiến người dân về phương án điều chỉnh tuyến xe buýt.
+      pronunciation_note:
+        vi: Đọc [공청회]; ㅚ ở cuối nói nhanh gần [웨].
+      confusion:
+        vi: 공청회 là nghe ý kiến công chúng về một chính sách; 설명회 là buổi giới thiệu, giải thích; 청문회 là phiên chất vấn (인사 청문회 - chất vấn ứng viên chức vụ cao). Ba từ cùng có không khí "hội nghị" nên dễ lẫn.
+
+  - key: ko:item:le-gram-e-uihamyeon
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N에 의하면
+      romanization: -e uihamyeon
+      pos: cấu trúc dẫn nguồn
+    back:
+      meaning:
+        vi: Theo (nguồn tin, tài liệu) - đồng nghĩa với N에 따르면 nhưng trang trọng, sách vở hơn. Vế sau thường là -다고 한다, -(으)ㄴ 것으로 나타났다.
+      examples:
+        - target: 경찰에 의하면 사고 당시 운전자는 안전띠를 매지 않았다고 한다.
+          translation:
+            vi: Theo cảnh sát, vào lúc xảy ra tai nạn, tài xế đã không thắt dây an toàn.
+      pronunciation_note:
+        vi: 의하면 đọc [의하면] hoặc [이하면] khi nói nhanh; ㅢ không đứng đầu từ nên có thể đọc gần "i".
+      confusion:
+        vi: Chỉ dùng cho nguồn bên ngoài (경찰, 보고서, 조사). Ý kiến của chính mình thì nói 제 생각에는, không nói 제 생각에 의하면.
+
+  - key: ko:item:le-gram-e-uihae
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: N에 의해(서) · N에 의한 N
+      romanization: -e uihae(seo) · -e uihan
+      pos: cấu trúc bị động / căn cứ
+    back:
+      meaning:
+        vi: Bởi, do (chủ thể của câu bị động); dựa trên, bằng (căn cứ, phương thức). 투표에 의해 결정되다, 사람에 의한 실수.
+      examples:
+        - target: 위원장은 회원들의 투표에 의해 선출되며 임기는 2년이다.
+          translation:
+            vi: Chủ tịch uỷ ban do các thành viên bỏ phiếu bầu ra, nhiệm kỳ hai năm.
+      pronunciation_note:
+        vi: 의해 đọc [의해]; 의한 nối liền với danh từ sau.
+      confusion:
+        vi: Tiếng Việt dùng "bởi" rất thoải mái, nhưng N에 의해 chỉ đứng trong câu bị động (선출되다, 밝혀지다, 처벌되다). Câu chủ động thì để N làm chủ ngữ - 회원들이 투표로 선출한다, đừng viết 회원들에 의해 선출한다.
+
+  - key: ko:item:le-gram-neun-de-itda
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: (원인 / 문제 / 목적은) V-는 데 있다 · A-다는 데 있다
+      romanization: -neun de itda
+      pos: cấu trúc văn viết
+    back:
+      meaning:
+        vi: (Nguyên nhân / vấn đề / mục đích) nằm ở chỗ... - dùng để chỉ ra cốt lõi trong bài luận, xã luận. Chủ ngữ là danh từ trừu tượng + 은/는.
+      examples:
+        - target: 이 제도의 문제점은 처벌 기준이 지나치게 모호하다는 데 있다.
+          translation:
+            vi: Vấn đề của chế độ này nằm ở chỗ tiêu chuẩn xử phạt quá mơ hồ.
+      pronunciation_note:
+        vi: 데 있다 đọc [데 읻따]; giữa 데 và 있다 ngắt rất nhẹ.
+      confusion:
+        vi: 데 ở đây là danh từ phụ thuộc "chỗ" nên viết cách - 모호하다는 데 있다. Nó khác vĩ tố -는데 "nhưng, mà" viết liền; viết 하는데 있다 là sai cả nghĩa lẫn khoảng cách.
+
+  # ================= bài 2: chọn cái ít tệ hơn - -(으)ㄹ 바에야, -느니, -(으)ㄴ/는 마당에 =================
+  - key: ko:item:le-gram-l-baeya
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-(으)ㄹ 바에야 (차라리)
+      romanization: -(eu)l baeya
+      pos: cấu trúc lựa chọn
+    back:
+      meaning:
+        vi: Nếu đằng nào cũng phải... thì thà... - gạt bỏ lựa chọn ở vế trước (cho là tệ), chọn vế sau dù cũng không hay. Vế sau thường có 차라리 và -는 게 낫다, -겠다.
+      examples:
+        - target: 거짓 증언을 할 바에야 차라리 아무 말도 하지 않겠다.
+          translation:
+            vi: Nếu phải khai man thì thà tôi không nói gì cả.
+      pronunciation_note:
+        vi: 할 바에야 đọc [할 빠에야] - ㅂ sau định ngữ -ㄹ đọc căng.
+      confusion:
+        vi: 바 là danh từ phụ thuộc nên viết cách - 할 바에야. Đừng nhầm với -(으)ㄴ/는 바 (văn viết "điều mà, như đã") - đó là cấu trúc khác hẳn.
+
+  - key: ko:item:le-gram-neuni
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-느니 (차라리)
+      romanization: -neuni
+      pos: vĩ tố liên kết (so sánh lựa chọn)
+    back:
+      meaning:
+        vi: Thà... còn hơn... - so sánh hai việc đều không hay và chọn vế sau. Gần nghĩa -(으)ㄹ 바에야 nhưng hay dùng trong lời nói hơn.
+      examples:
+        - target: 억지로 사과를 받아 내느니 차라리 관계를 정리하는 편이 낫다.
+          translation:
+            vi: Thà chấm dứt quan hệ còn hơn cố ép người ta xin lỗi.
+      pronunciation_note:
+        vi: 내느니 đọc [내느니]; 느니 đọc gọn, ㅡ không tròn môi.
+      confusion:
+        vi: -느니 chỉ gắn vào động từ và không chia thì. Khác -느니 -느니 하다 (than phiền liệt kê - 비싸다느니 멀다느니 불평한다).
+
+  - key: ko:item:le-gram-n-neun-madange
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V-는 / V-(으)ㄴ 마당에 · A-(으)ㄴ 마당에
+      romanization: -neun madange
+      pos: cấu trúc hoàn cảnh
+    back:
+      meaning:
+        vi: Trong tình cảnh (đã)... thế này mà / thì... - nêu một hoàn cảnh bất lợi, cấp bách để nói vế sau là vô lý hoặc tất yếu. Hay đi với câu hỏi tu từ.
+      examples:
+        - target: 회사가 존폐의 기로에 선 마당에 성과급 이야기를 꺼낼 수는 없다.
+          translation:
+            vi: Trong lúc công ty đang đứng trước ngã rẽ sống còn thế này thì không thể nhắc chuyện thưởng thành tích.
+      pronunciation_note:
+        vi: 마당에 nối âm [마당에].
+      confusion:
+        vi: Nghĩa gốc của 마당 là "cái sân". Tiếng Việt "trong hoàn cảnh" khá trung tính, còn -는 마당에 luôn mang sắc thái gay gắt, tình thế đã xấu - không dùng cho hoàn cảnh vui vẻ.
+
+  - key: ko:item:le-yangsim
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 양심
+      romanization: yangsim
+      pos: danh từ
+    back:
+      meaning:
+        vi: Lương tâm (良心). 양심의 가책을 느끼다 (cắn rứt lương tâm), 양심에 따라 (theo lương tâm), 양심적이다 (có lương tâm, tận tâm).
+      examples:
+        - target: 그는 양심의 가책을 느껴 결국 사실을 털어놓았다.
+          translation:
+            vi: Cắn rứt lương tâm, cuối cùng anh ấy đã khai hết sự thật.
+      pronunciation_note:
+        vi: Đọc [양심]; 양 mở miệng rộng, 심 khép môi ở ㅁ.
+      confusion:
+        vi: 양심 là lương tâm đạo đức; 마음 là tấm lòng, tâm trạng nói chung. 양심적인 가게 là cửa hàng "làm ăn có lương tâm", tức bán giá phải chăng, không lừa khách.
+
+  - key: ko:item:le-tahyeophada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 타협하다
+      romanization: tahyeophada
+      pos: động từ
+    back:
+      meaning:
+        vi: Thoả hiệp - nhượng bộ lẫn nhau, hoặc chấp nhận hạ thấp nguyên tắc. N와/과 타협하다, 현실과 타협하다.
+      examples:
+        - target: 원칙을 지키는 일과 현실과 타협하는 일 사이에서 그는 오래 고민했다.
+          translation:
+            vi: Anh ấy đã trăn trở rất lâu giữa việc giữ nguyên tắc và việc thoả hiệp với thực tế.
+      pronunciation_note:
+        vi: Đọc [타혀파다] - ㅂ gặp ㅎ thành ㅍ.
+      confusion:
+        vi: 타협 thường hàm ý phải từ bỏ một phần điều mình theo đuổi (불의와 타협하지 않다 - không thoả hiệp với bất công). Đạt được thoả thuận trung tính là 합의하다.
+
+  - key: ko:item:le-hoepihada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 회피하다
+      romanization: hoepihada
+      pos: động từ
+    back:
+      meaning:
+        vi: Né tránh, trốn tránh (trách nhiệm, câu hỏi, vấn đề) (回避).
+      examples:
+        - target: 사고가 난 뒤에도 회사는 책임을 회피하는 데만 급급했다.
+          translation:
+            vi: Ngay cả sau khi xảy ra tai nạn, công ty chỉ lo né tránh trách nhiệm.
+      pronunciation_note:
+        vi: Đọc [회피하다] hoặc [훼피하다] khi nói nhanh.
+      confusion:
+        vi: 회피하다 dùng cho thứ trừu tượng - trách nhiệm, câu hỏi, thực tế; tránh vật cụ thể (xe, mưa) dùng 피하다. Báo chí hay ghép 책임 회피, 답변 회피.
+
+  - key: ko:item:le-muginhada
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary]
+    front:
+      text: 묵인하다
+      romanization: muginhada
+      pos: động từ
+    back:
+      meaning:
+        vi: Làm ngơ, ngầm chấp nhận (điều sai trái) (默認 - mặc nhận).
+      examples:
+        - target: 상사의 부당한 지시를 묵인한 직원들도 책임에서 자유로울 수 없다.
+          translation:
+            vi: Những nhân viên đã làm ngơ trước chỉ thị sai trái của cấp trên cũng không thể vô can.
+      pronunciation_note:
+        vi: Đọc [무긴하다] - patchim ㄱ nối sang 인.
+      confusion:
+        vi: 묵인 là biết sai mà vẫn để yên (có trách nhiệm đạo đức); 무시하다 là phớt lờ, coi thường một người hay một lời nói. Câu 비리를 묵인하다 nặng hơn nhiều so với 비리를 모르다.
+
+  - key: ko:item:le-bujeong-bupae
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 부정부패
+      romanization: bujeongbupae
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tham nhũng, tiêu cực (不正腐敗 - bất chính hủ bại). 부정부패를 뿌리 뽑다 (diệt tận gốc tham nhũng), 부정부패 척결.
+      examples:
+        - target: 새 정부는 공직 사회의 부정부패를 뿌리 뽑겠다고 약속했다.
+          translation:
+            vi: Chính phủ mới hứa sẽ diệt tận gốc tham nhũng trong bộ máy công quyền.
+      pronunciation_note:
+        vi: Đọc [부정부패]; ㅍ trong 패 bật hơi mạnh.
+      confusion:
+        vi: 부정 (不正 - bất chính) đồng âm với 부정 (否定 - phủ định). 부정행위 là gian lận (thi cử), còn 부정적 là tiêu cực, phủ định - đừng dịch 부정적 thành "tham nhũng".
+
+  - key: ko:item:le-naebu-gobal
+    type: phrase
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 내부 고발 · 내부 고발자
+      romanization: naebu gobal · naebu gobalja
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tố giác nội bộ, người tố giác từ bên trong (người "thổi còi") - người trong tổ chức công khai sai phạm của chính tổ chức đó.
+      examples:
+        - target: 한 직원의 내부 고발로 회사의 회계 부정이 세상에 알려졌다.
+          translation:
+            vi: Nhờ một nhân viên tố giác từ bên trong, sai phạm kế toán của công ty mới bị phơi bày.
+      pronunciation_note:
+        vi: Đọc [내부 고발]; ㄱ đầu từ 고발 nhẹ, gần "c".
+      confusion:
+        vi: 고발 là người thứ ba tố giác tội phạm; 고소 là nạn nhân tự kiện; 신고 là báo cho cơ quan chức năng (경찰에 신고하다). Người Việt hay dùng 고발 cho mọi trường hợp "tố cáo".
+
+  - key: ko:item:le-cheongnyeomhada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 청렴하다
+      romanization: cheongnyeomhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: Liêm khiết, thanh liêm (清廉) - không tham của, không nhận hối lộ; thường nói về công chức.
+      examples:
+        - target: 그는 평생 청렴하게 살아온 공직자로 많은 이의 존경을 받았다.
+          translation:
+            vi: Ông là một công chức sống liêm khiết cả đời và được nhiều người kính trọng.
+      pronunciation_note:
+        vi: Đọc [청념하다] - ㄹ sau ㅇ đọc thành ㄴ.
+      confusion:
+        vi: 청렴하다 là đức tính chính trực về tiền bạc, quyền lực; 깨끗하다 nghĩa đen là sạch sẽ. Ở Hàn có luật chống nhận quà biếu của công chức gọi tắt là 청탁금지법 (hay 김영란법) - từ khoá bạn sẽ gặp khi đọc về 청렴.
+
+  # ================= bài 3: mức độ cực điểm - -다 못해, -(으)ㄹ 지경이다, -기 그지없다, -기 짝이 없다 =================
+  - key: ko:item:le-gram-da-motae
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V/A-다 못해
+      romanization: -da motae
+      pos: cấu trúc mức độ
+    back:
+      meaning:
+        vi: (1) V-다 못해 - không chịu nổi việc... nữa nên (기다리다 못해, 참다못해). (2) A-다 못해 - ... đến cực điểm, chuyển sang trạng thái khác (하얗다 못해 창백하다).
+      examples:
+        - target: 밤마다 이어지는 소음을 참다못해 주민들이 구청에 민원을 넣었다.
+          translation:
+            vi: Không chịu nổi tiếng ồn đêm nào cũng có, cư dân đã gửi đơn khiếu nại lên quận.
+      pronunciation_note:
+        vi: 못해 đọc [모태] - ㅅ (ㄷ) gặp ㅎ thành ㅌ.
+      confusion:
+        vi: Đây không phải "không thể làm" (못 하다) - 기다리다 못해 nghĩa là đã chờ đến giới hạn rồi mới hành động. 참다못해, 보다못해 đã thành từ riêng trong từ điển nên viết liền; với động từ khác thì viết cách - 기다리다 못해, 듣다 못해.
+
+  - key: ko:item:le-gram-l-jigyeongida
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, speaking]
+    front:
+      text: V/A-(으)ㄹ 지경이다 · -(으)ㄹ 지경에 이르다
+      romanization: -(eu)l jigyeongida
+      pos: cấu trúc mức độ
+    back:
+      meaning:
+        vi: Đến mức (sắp)... - tình trạng tồi tệ, gần như không chịu nổi. 지경 (地境) là "cảnh ngộ, ranh giới".
+      examples:
+        - target: 대출 이자가 너무 올라 생활비를 감당하지 못할 지경이다.
+          translation:
+            vi: Lãi vay tăng quá cao đến mức tôi gần như không kham nổi chi phí sinh hoạt.
+      pronunciation_note:
+        vi: 할 지경 đọc [할 찌경] - ㅈ sau định ngữ -ㄹ đọc căng.
+      confusion:
+        vi: -(으)ㄹ 정도로 nói mức độ trung tính (có thể tốt), còn -(으)ㄹ 지경이다 chỉ dùng cho tình trạng xấu. Không nói 행복할 지경이다.
+
+  - key: ko:item:le-gram-gi-geujieopda
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: A-기 그지없다
+      romanization: -gi geujieopda
+      pos: cấu trúc mức độ (văn viết)
+    back:
+      meaning:
+        vi: Vô cùng, khôn xiết - cảm xúc hay trạng thái không có giới hạn. Rất trang trọng, dùng trong diễn văn, thư từ, văn viết; cả nghĩa tốt lẫn xấu.
+      examples:
+        - target: 끝까지 저희를 믿고 기다려 주신 여러분께 감사하기 그지없습니다.
+          translation:
+            vi: Chúng tôi biết ơn khôn xiết quý vị đã tin tưởng và chờ đợi chúng tôi đến cùng.
+      pronunciation_note:
+        vi: 그지없다 đọc [그지업따].
+      confusion:
+        vi: 그지없다 là một từ, viết liền (không viết 그지 없다). Hay gặp với 감사하다, 기쁘다, 슬프다, 송구하다 trong lời phát biểu chính thức.
+
+  - key: ko:item:le-gram-gi-jjagi-eopda
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: A-기 짝이 없다
+      romanization: -gi jjagi eopda
+      pos: cấu trúc mức độ
+    back:
+      meaning:
+        vi: Hết chỗ nói, không gì sánh bằng - thường dùng để phê phán (무례하다, 한심하다, 무책임하다, 어리석다).
+      examples:
+        - target: 피해자에게 책임을 떠넘기는 태도는 무책임하기 짝이 없다.
+          translation:
+            vi: Thái độ đổ trách nhiệm lên đầu nạn nhân thật vô trách nhiệm hết chỗ nói.
+      pronunciation_note:
+        vi: 짝이 없다 đọc [짜기 업따].
+      confusion:
+        vi: 짝 là "đôi, cặp" - không có gì sánh cặp. Khác 그지없다 trang trọng và dùng được cho cả cảm xúc tích cực, 짝이 없다 gần như luôn là chê trách; câu 고맙기 짝이 없다 nghe rất lạ.
+
+  - key: ko:item:le-pihaeja-gahaeja
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 피해자 · 가해자
+      romanization: pihaeja · gahaeja
+      pos: danh từ
+    back:
+      meaning:
+        vi: Nạn nhân, người bị hại (被害者) / người gây hại, thủ phạm (加害者).
+      examples:
+        - target: 이 법은 가해자 처벌보다 피해자 보호에 초점을 맞추고 있다.
+          translation:
+            vi: Luật này tập trung vào bảo vệ nạn nhân hơn là xử phạt người gây hại.
+      pronunciation_note:
+        vi: Đọc [피해자] / [가해자]; ㅎ giữa từ yếu đi khi nói nhanh.
+      confusion:
+        vi: Hán Việt giúp bạn nhớ - 피 (被 - bị) là chịu, 가 (加 - gia) là gây ra. Đừng nhầm 피해 (thiệt hại) với 손해 (thua lỗ tiền bạc).
+
+  - key: ko:item:le-eogulhada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 억울하다
+      romanization: eogulhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: Oan, oan ức, uất ức (vì bị đối xử bất công, bị đổ oan).
+      examples:
+        - target: 그는 누명을 쓰고 억울하게 3년을 감옥에서 보냈다.
+          translation:
+            vi: Anh ấy bị đổ oan và phải chịu ba năm tù oan ức.
+      pronunciation_note:
+        vi: Đọc [어굴하다] - patchim ㄱ nối sang 울.
+      confusion:
+        vi: 억울하다 luôn có yếu tố bất công (bị đổ lỗi, bị thiệt dù không sai). Buồn bực vì chuyện không như ý mà không ai có lỗi là 속상하다.
+
+  - key: ko:item:le-bunno
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 분노 / 분노하다
+      romanization: bunno / bunnohada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Phẫn nộ (憤怒) - cơn giận lớn, thường trước bất công xã hội. 분노를 감추지 못하다, 국민적 분노.
+      examples:
+        - target: 솜방망이 처벌 소식에 시민들은 분노를 감추지 못했다.
+          translation:
+            vi: Trước tin về mức xử phạt nhẹ hều, người dân không giấu nổi sự phẫn nộ.
+      pronunciation_note:
+        vi: Đọc [분노]; hai âm ㄴ liền nhau, giữ lưỡi ở lợi.
+      confusion:
+        vi: 분노 là từ văn viết, sắc thái mạnh và mang tính xã hội; nói về cơn giận thường ngày thì dùng 화가 나다. Câu 친구가 늦어서 분노했다 nghe phóng đại.
+
+  - key: ko:item:le-muchaegimhada
+    type: vocab
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 무책임하다
+      romanization: muchaegimhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: Vô trách nhiệm (無責任). 무책임한 태도 · 발언.
+      examples:
+        - target: 문제가 생길 때마다 남 탓만 하는 것은 무책임한 태도다.
+          translation:
+            vi: Cứ có chuyện là đổ lỗi cho người khác là thái độ vô trách nhiệm.
+      pronunciation_note:
+        vi: Đọc [무채김하다] - patchim ㄱ nối sang 임.
+      confusion:
+        vi: Tiền tố 무- (無 - vô) giống tiếng Việt - 무관심 (vô tâm, thờ ơ), 무의미 (vô nghĩa). Trái nghĩa là 책임감이 강하다 (có tinh thần trách nhiệm), không phải 유책임하다.
+
+  - key: ko:item:le-ppeonppeonhada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: 뻔뻔하다
+      romanization: ppeonppeonhada
+      pos: tính từ
+    back:
+      meaning:
+        vi: Trơ trẽn, mặt dày - làm sai mà không biết xấu hổ.
+      examples:
+        - target: 잘못이 드러났는데도 사과 한마디 없는 그의 태도는 뻔뻔하기까지 했다.
+          translation:
+            vi: Sai lầm đã lộ rõ mà vẫn không một lời xin lỗi, thái độ của anh ta thậm chí còn trơ trẽn.
+      pronunciation_note:
+        vi: Hai âm ㅃ căng - mím chặt môi rồi bật, không có hơi.
+      confusion:
+        vi: 당당하다 (đường hoàng, tự tin) là khen, còn 뻔뻔하다 là chê. Người làm đúng mà tự tin là 당당하다; người làm sai mà vẫn tỉnh bơ là 뻔뻔하다.
+
+  - key: ko:item:le-eocheoguni-eopda
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 어처구니없다
+      romanization: eocheoguni-eopda
+      pos: tính từ
+    back:
+      meaning:
+        vi: Vô lý hết sức, không thể tin nổi (đến mức sững sờ). Gần nghĩa 어이없다, 황당하다.
+      examples:
+        - target: 공무원이 서류를 잃어버려 허가가 반년이나 늦어졌다니 어처구니없는 일이다.
+          translation:
+            vi: Công chức làm mất hồ sơ khiến giấy phép trễ tận nửa năm - thật là chuyện vô lý hết sức.
+      pronunciation_note:
+        vi: Đọc [어처구니업따].
+      confusion:
+        vi: Viết liền 어처구니없다 vì đã thành một từ. Sắc thái khẩu ngữ, cảm thán; trong xã luận trang trọng người viết hay chọn 납득하기 어렵다 (khó chấp nhận).
+
+  # ================= bài 4: phản bác và nhượng bộ trong xã luận - -(으)ㄹ 리 만무하다, -(으)ㄴ들, -다손 치더라도, N(이)야말로 =================
+  - key: ko:item:le-gram-l-ri-manmuhada
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: V/A-(으)ㄹ 리(가) 만무하다
+      romanization: -(eu)l ri manmuhada
+      pos: cấu trúc phủ định mạnh (văn viết)
+    back:
+      meaning:
+        vi: Không đời nào, tuyệt đối không có lý nào... - dạng văn viết, mạnh hơn -(으)ㄹ 리가 없다. 만무 (萬無 - vạn vô) là "muôn phần không có".
+      examples:
+        - target: 현장을 한 번도 가 보지 않은 사람이 그 사정을 알 리 만무하다.
+          translation:
+            vi: Người chưa từng đến hiện trường lấy một lần thì không đời nào hiểu được tình cảnh đó.
+      pronunciation_note:
+        vi: 알 리 đọc [알 리]; 만무하다 đọc [만무하다].
+      confusion:
+        vi: 리 (理 - lý) là danh từ phụ thuộc, viết cách. Không dùng -(으)ㄹ 리 만무하다 cho chính mình (제가 갈 리 만무합니다 rất lạ); nó dùng để phủ định một khả năng khách quan.
+
+  - key: ko:item:le-gram-n-deul
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V/A-(으)ㄴ들 · N인들
+      romanization: -(eu)ndeul
+      pos: vĩ tố liên kết (nhượng bộ tu từ)
+    back:
+      meaning:
+        vi: Dù có... thì (cũng chẳng ích gì) - nhượng bộ mang tính tu từ, vế sau thường là câu hỏi tu từ 무슨 소용이 있겠는가, 어쩌겠는가.
+      examples:
+        - target: 법을 아무리 엄격하게 만든들 지키는 사람이 없다면 무슨 소용이 있겠는가.
+          translation:
+            vi: Luật có làm nghiêm khắc đến đâu đi nữa mà không ai tuân thủ thì có ích gì?
+      pronunciation_note:
+        vi: 만든들 đọc [만든들]; 들 ở cuối không nhấn.
+      confusion:
+        vi: Khác -아도/어도 trung tính, -(으)ㄴ들 hàm ý "vô ích" và gần như luôn đi với câu hỏi tu từ. Đừng nhầm với hậu tố số nhiều 들 - 만든들 không phải "những cái đã làm".
+
+  - key: ko:item:le-gram-dason-chideorado
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, writing]
+    front:
+      text: V-ㄴ/는다손 · A-다손 · N(이)라손 치더라도
+      romanization: -dason chideorado
+      pos: cấu trúc nhượng bộ (văn viết)
+    back:
+      meaning:
+        vi: Cứ cho là... đi nữa thì - tạm chấp nhận lý lẽ của đối phương để chỉ ra rằng kết luận vẫn không đổi. Rất hay gặp trong xã luận.
+      examples:
+        - target: 단속 인력이 부족하다손 치더라도 불법 영업을 이대로 방치할 수는 없다.
+          translation:
+            vi: Cứ cho là thiếu lực lượng kiểm tra đi nữa thì cũng không thể bỏ mặc việc kinh doanh trái phép như thế này.
+      pronunciation_note:
+        vi: 부족하다손 đọc [부조카다손] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: 손 ở đây không phải "bàn tay". So với -더라도 bạn đã học, -다손 치더라도 nhấn mạnh "tôi tạm công nhận ý anh" trước khi bác bỏ; quá khứ là -았/었다손 치더라도.
+
+  - key: ko:item:le-gram-iyamallo
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: N(이)야말로
+      romanization: -(i)yamallo
+      pos: trợ từ nhấn mạnh
+    back:
+      meaning:
+        vi: Chính N mới là, đúng là N - nhấn mạnh N là cái đúng nhất, quan trọng nhất. Có patchim dùng 이야말로, không patchim dùng 야말로.
+      examples:
+        - target: 시민의 꾸준한 감시야말로 권력의 남용을 막는 가장 확실한 방법이다.
+          translation:
+            vi: Chính sự giám sát bền bỉ của người dân mới là cách chắc chắn nhất để ngăn lạm dụng quyền lực.
+      pronunciation_note:
+        vi: 감시야말로 đọc [감시야말로]; 법이야말로 nối âm [버비야말로].
+      confusion:
+        vi: Trong hội thoại hay gặp 저야말로 khi đáp lại lời cảm ơn, xin lỗi (저야말로 감사합니다 - chính tôi mới phải cảm ơn). 야말로 thay hẳn trợ từ 이/가, nên không viết 제가야말로.
+
+  - key: ko:item:le-saseol
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 사설
+      romanization: saseol
+      pos: danh từ
+    back:
+      meaning:
+        vi: Xã luận (社說) - bài nêu quan điểm chính thức của toà soạn, không ký tên cá nhân.
+      examples:
+        - target: 오늘 자 신문 사설은 정부의 졸속 입법을 강하게 비판했다.
+          translation:
+            vi: Bài xã luận trên báo hôm nay đã phê phán gay gắt việc lập pháp vội vàng của chính phủ.
+      pronunciation_note:
+        vi: Đọc [사설]; ㄹ cuối đặt lưỡi nhẹ lên lợi.
+      confusion:
+        vi: 사설 (bài của toà soạn) khác 칼럼 (bài có ký tên) và 기사 (tin tức). 사설 còn là từ đồng âm 私設 "tư nhân lập" - 사설 학원 (trung tâm tư nhân).
+
+  - key: ko:item:le-silhyoseong
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 실효성
+      romanization: silhyoseong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tính hiệu quả thực tế (實效性) - biện pháp có thực sự tạo ra kết quả hay không. 실효성이 있다 / 떨어지다 / 의문이다.
+      examples:
+        - target: 처벌 조항이 없는 규정은 실효성이 떨어진다는 지적이 나온다.
+          translation:
+            vi: Có ý kiến chỉ ra rằng quy định không có điều khoản xử phạt thì kém hiệu quả thực tế.
+      pronunciation_note:
+        vi: Đọc [실효썽] - ㅅ của 성 đọc căng.
+      confusion:
+        vi: 효과 là tác dụng nói chung; 실효성 là "có làm được thật không" của chính sách; 효율성 là hiệu suất (đầu vào - đầu ra). Phê bình chính sách thường dùng 실효성.
+
+  - key: ko:item:le-hyeongpyeongseong
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 형평성
+      romanization: hyeongpyeongseong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tính công bằng, cân bằng giữa các đối tượng (衡平性) - đối xử như nhau với những trường hợp giống nhau. 형평성 논란, 형평성에 어긋나다.
+      examples:
+        - target: 같은 위반 행위에 대한 처분이 제각각이라 형평성 논란이 일고 있다.
+          translation:
+            vi: Cùng một hành vi vi phạm mà mỗi nơi xử lý một kiểu nên đang dấy lên tranh cãi về tính công bằng.
+      pronunciation_note:
+        vi: Đọc [형평썽].
+      confusion:
+        vi: 공정 nhấn quá trình minh bạch, không gian lận; 평등 là bình đẳng về quyền; 형평 là cân bằng khi so sánh giữa các nhóm. Câu "sao người này phạt nặng, người kia phạt nhẹ" là chuyện 형평성.
+
+  - key: ko:item:le-sagakjidae
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 사각지대
+      romanization: sagakjidae
+      pos: danh từ
+    back:
+      meaning:
+        vi: Vùng tối, điểm mù (死角地帶) - nơi luật pháp, chính sách, sự giám sát không với tới.
+      examples:
+        - target: 프리랜서는 여전히 고용 보험의 사각지대에 놓여 있다.
+          translation:
+            vi: Người làm tự do vẫn nằm trong vùng tối của bảo hiểm việc làm.
+      pronunciation_note:
+        vi: Đọc [사각찌대] - ㅈ sau patchim ㄱ đọc căng.
+      confusion:
+        vi: Nghĩa đen là góc khuất gương chiếu hậu, giống tiếng Việt "điểm mù". Cụm hay gặp - 복지 사각지대 (vùng tối phúc lợi), 법의 사각지대, 사각지대에 놓이다.
+
+  - key: ko:item:le-jolsok
+    type: vocab
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 졸속
+      romanization: jolsok
+      pos: danh từ
+    back:
+      meaning:
+        vi: Vội vàng cẩu thả, làm ẩu cho kịp (拙速 - chuyết tốc). 졸속 입법, 졸속 행정, 졸속으로 처리하다.
+      examples:
+        - target: 충분한 논의 없이 법안을 처리한 것은 졸속 입법이라는 비판을 받았다.
+          translation:
+            vi: Việc thông qua dự luật mà không thảo luận đầy đủ đã bị phê phán là lập pháp vội vàng.
+      pronunciation_note:
+        vi: Đọc [졸쏙] - ㅅ sau ㄹ trong từ Hán Hàn đọc căng.
+      confusion:
+        vi: 신속 (nhanh chóng) là khen, 졸속 (nhanh mà kém) là chê. Bài xã luận dùng 졸속 khi cho rằng chính phủ, quốc hội chạy theo tiến độ.
+
+  - key: ko:item:le-chwiji
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 취지
+      romanization: chwiji
+      pos: danh từ
+    back:
+      meaning:
+        vi: Mục đích, tinh thần cốt lõi (của luật, chính sách, sự kiện) (趣旨 - thú chỉ). 취지에 공감하다, 제도의 취지를 살리다.
+      examples:
+        - target: 제도의 취지는 좋지만 현장에서는 부작용이 적지 않다.
+          translation:
+            vi: Mục đích của chế độ thì tốt, nhưng trên thực tế lại có không ít tác dụng phụ.
+      pronunciation_note:
+        vi: Đọc [취지]; ㅟ tròn môi rồi kéo sang "i".
+      confusion:
+        vi: 목적 là mục tiêu cụ thể; 취지 là tinh thần, ý định tốt đẹp ban đầu; 의도 là ý đồ (có thể giấu kín, mang nghĩa xấu). Xã luận hay mở đầu phản bác bằng 취지는 좋으나...
+
+  - key: ko:item:le-jaegohada
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 재고하다
+      romanization: jaegohada
+      pos: động từ
+    back:
+      meaning:
+        vi: Xem xét lại, cân nhắc lại (再考 - tái khảo) - thường là lời kêu gọi trong xã luận. 재고할 필요가 있다, 재고를 촉구하다.
+      examples:
+        - target: 정부는 반대 여론을 겸허히 받아들여 정책을 재고해야 한다.
+          translation:
+            vi: Chính phủ cần khiêm tốn tiếp nhận dư luận phản đối và xem xét lại chính sách.
+      pronunciation_note:
+        vi: Đọc [재고하다].
+      confusion:
+        vi: 재고 (再考 - xem xét lại) đồng âm với 재고 (在庫 - hàng tồn kho) - 재고가 쌓이다 (hàng tồn chất đống). Có 하다 đi kèm thường là "xem xét lại".

@@ -1,0 +1,476 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:health-education-review
+order_index: 5
+level: topik6
+title:
+  vi: Ôn tập - chuyên mục sức khoẻ, tranh luận giáo dục và đoạn văn nghị luận kiểu câu 54
+objectives:
+  - vi: Đọc hiểu một chuyên mục sức khoẻ - tìm ý chính, số liệu và lời khuyên của người viết.
+  - vi: Theo dõi một cuộc tranh luận giáo dục - nhận ra mẫu thừa nhận và phản biện.
+  - vi: Luyện viết câu cho đoạn văn nghị luận kiểu TOPIK câu 54 - câu luận điểm, câu kết, văn phong -다.
+estimated_minutes: 30
+skills: [reading, listening, writing, grammar]
+prerequisites: [ko:lesson:proverbs-effort]
+items:
+  - item: ko:item:he-sumyeon-bujok
+    role: reuse
+  - item: ko:item:he-myeonyeongnyeok
+    role: reuse
+  - item: ko:item:he-gram-n-neun-deuthada
+    role: reuse
+  - item: ko:item:allyeojida
+    role: reuse
+  - item: ko:item:he-gram-daneun-jeomeseo
+    role: reuse
+  - item: ko:item:he-gram-cheungmyeoneseo
+    role: reuse
+  - item: ko:item:he-mullon-jiman
+    role: reuse
+  - item: ko:item:he-geureotago-haeseo
+    role: reuse
+  - item: ko:item:he-gram-nareumida
+    role: reuse
+  - item: ko:item:he-gram-neun-dung-maneun-dung
+    role: reuse
+  - item: ko:item:he-sagyoyuk
+    role: reuse
+  - item: ko:item:he-yubimuhwan
+    role: reuse
+  - item: ko:item:le-gram-iyamallo
+    role: reuse
+  - item: ko:item:ac-seoron-bonron-gyeollon
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn cuối của chương trình cao cấp gồm ba phần - một chuyên mục sức khoẻ về giấc ngủ, một cuộc tranh luận về giờ tự học buổi tối ở trường cấp ba, và các bài luyện câu cho đoạn văn nghị luận kiểu TOPIK câu 54. Cả ba văn bản đều do Linguo soạn.
+  - type: explain
+    text:
+      vi: Chuyên mục sức khoẻ thường có khuôn - nêu hiện tượng → thông tin chung (-는 것으로 알려져 있다) → kết quả nghiên cứu (-는 것으로 나타났다) → thừa nhận khó khăn (물론...) → lời khuyên ở câu cuối (N이야말로, -아/어야 한다). Câu hỏi ý chính gần như luôn rơi vào câu cuối.
+  - type: explain
+    text:
+      vi: Đoạn văn câu 54 cần văn phong -다, không dùng -요, -습니다, và tránh văn nói như -것 같아요, 진짜, 너무. Câu luận điểm thường bắt đầu bằng 따라서 / 그러므로 và kết bằng -(으)ㄹ 필요가 있다, -는 것이 중요하다, -아/어야 한다.
+  - type: deep_explain
+    text:
+      vi: Người Việt viết câu 54 hay mắc ba lỗi - dùng 저는 và đuôi -요 như đang nói chuyện, đưa ý kiến cá nhân không có lý do, và kết luận mâu thuẫn với phần mở. Hãy dùng các mẫu của unit này để lập luận - N 측면에서 보면, -다는 점에서, 물론 ~지만, 그렇다고 해서 ~는 것은 아니다 - rồi kết bằng một câu luận điểm rõ ràng. Một thành ngữ ở đầu hoặc cuối bài (유비무환이라는 말처럼...) là đủ, đừng lạm dụng.
+  - type: example
+    target: "[건강 칼럼] 잠이 보약이다 / 바쁜 현대인에게 수면 부족은 흔한 일이 되었다. 그러나 잠을 줄이면 면역력이 떨어지고 우울감이 커지는 것으로 알려져 있다. 최근 한 연구에서는 하루 수면 시간이 6시간보다 짧은 직장인이 그렇지 않은 사람보다 감기에 더 자주 걸리는 것으로 나타났다. 그런데도 잠을 시간 낭비로 여기는 분위기는 여전한 듯하다. 물론 바쁜 일정 속에서 충분히 자기란 쉽지 않다. 그렇다고 해서 수면을 포기해도 되는 것은 아니다. 유비무환이라는 말처럼, 평소 잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법이다."
+    target_lang: ko
+    translation:
+      vi: "[Chuyên mục sức khoẻ] Giấc ngủ là thuốc bổ / Với người hiện đại bận rộn, thiếu ngủ đã thành chuyện thường. Nhưng ngủ ít được biết là làm giảm sức đề kháng và tăng cảm giác chán nản. Một nghiên cứu gần đây cho thấy nhân viên văn phòng ngủ dưới 6 tiếng mỗi ngày bị cảm thường xuyên hơn những người khác. Vậy mà không khí coi giấc ngủ là lãng phí thời gian có vẻ vẫn còn. Tất nhiên giữa lịch trình bận rộn, ngủ đủ không phải là dễ. Nhưng không vì thế mà được phép từ bỏ giấc ngủ. Như câu \"có phòng thì không lo\", chính thói quen giữ giờ ngủ hằng ngày mới là cách chăm sóc sức khoẻ dễ nhất."
+    note:
+      vi: Chuyên mục hư cấu - 알려져 있다 → 나타났다 → 듯하다 → 물론 / 그렇다고 해서 → thành ngữ + 이야말로.
+  - type: example
+    target: "사회자: 오늘은 고등학교 야간 자율 학습이 필요한가를 주제로 토론하겠습니다. / 찬성 측: 야간 자율 학습은 학생들의 사교육비 부담을 줄일 수 있다는 점에서 의미가 있습니다. / 반대 측: 물론 비용 측면에서는 장점이 있을 수 있지만, 그렇다고 해서 모든 학생을 밤 10시까지 붙잡아 두는 것이 옳은 것은 아닙니다. 공부는 결국 스스로 하기 나름이고, 억지로 앉아 있는 학생들은 책을 보는 둥 마는 둥 합니다."
+    target_lang: ko
+    translation:
+      vi: "Người điều phối - Hôm nay chúng ta tranh luận về chủ đề giờ tự học buổi tối ở trường cấp ba có cần thiết không. / Phe ủng hộ - Tự học buổi tối có ý nghĩa ở chỗ có thể giảm gánh nặng chi phí học thêm cho học sinh. / Phe phản đối - Tất nhiên xét về mặt chi phí có thể có ưu điểm, nhưng không vì thế mà giữ mọi học sinh đến 10 giờ đêm là đúng. Học hành rốt cuộc là tuỳ vào việc tự học, và học sinh bị ép ngồi lại thì chỉ đọc sách qua loa."
+    note:
+      vi: Tranh luận hư cấu - -다는 점에서 (ủng hộ); 물론 ~지만, 그렇다고 해서, N 측면에서, -기 나름이다, -는 둥 마는 둥 (phản đối).
+  - type: example
+    target: 청소년의 수면 시간은 해마다 줄어들고 있다. 늦은 시간까지 이어지는 학원 수업과 스마트폰 사용이 주된 원인으로 꼽힌다. 따라서 청소년의 수면을 보장하기 위한 가정과 학교의 노력이 필요하다.
+    target_lang: ko
+    translation:
+      vi: Thời gian ngủ của thanh thiếu niên giảm dần qua từng năm. Các buổi học thêm kéo dài đến khuya và việc dùng điện thoại được xem là nguyên nhân chính. Vì vậy, cần có nỗ lực của gia đình và nhà trường để bảo đảm giấc ngủ cho thanh thiếu niên.
+    note:
+      vi: Đoạn mở bài kiểu câu 54 - hiện tượng → nguyên nhân → câu luận điểm 따라서 ... 필요하다.
+  - type: common_mistake
+    wrong: 저는 청소년이 잠을 많이 자야 한다고 생각해요.
+    right: 청소년의 충분한 수면은 학업과 건강을 위해 반드시 보장되어야 한다.
+    target_lang: ko
+    note:
+      vi: Bài luận câu 54 dùng văn phong -다 và câu khách quan. 저는 ... 생각해요 là văn nói, làm bài bị trừ điểm văn phong.
+  - type: common_mistake
+    wrong: 수면이 부족하면 면역력이 떨어지는 것 같아요.
+    right: 수면이 부족하면 면역력이 떨어지는 것으로 알려져 있다.
+    target_lang: ko
+    note:
+      vi: Thông tin khoa học phổ biến nên dùng -는 것으로 알려져 있다 (khách quan). -것 같아요 là phỏng đoán cá nhân trong lời nói.
+  - type: common_mistake
+    wrong: 그렇다고 해서 학원을 모두 없애지 않아야 한다.
+    right: 그렇다고 해서 학원을 모두 없애야 하는 것은 아니다.
+    target_lang: ko
+    note:
+      vi: 그렇다고 해서 phủ định một suy luận nên kết bằng -(으)ㄴ/는 것은 아니다, không phải phủ định hành động.
+  - type: summary
+    points:
+      - vi: Chuyên mục - 알려져 있다 (thông tin chung) → 나타났다 (kết quả nghiên cứu) → 물론 / 그렇다고 해서 → lời khuyên cuối bài.
+      - vi: Tranh luận - -다는 점에서 (lý lẽ ủng hộ) · 물론 ~지만 + 그렇다고 해서 ~는 것은 아닙니다 (phản biện).
+      - vi: Câu 54 - văn phong -다, câu luận điểm 따라서 ... -(으)ㄹ 필요가 있다 / -는 것이 중요하다; tránh 저는, -요, -것 같다.
+      - vi: Phỏng đoán văn viết -(으)ㄴ/는 듯하다; nhấn mạnh N(이)야말로; một thành ngữ là đủ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:he-review-mcq-column-main
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-sumyeon-bujok
+    prompt:
+      stem: "[건강 칼럼] 잠이 보약이다 / … 물론 바쁜 일정 속에서 충분히 자기란 쉽지 않다. 그렇다고 해서 수면을 포기해도 되는 것은 아니다. 유비무환이라는 말처럼, 평소 잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법이다. - Ý chính của chuyên mục là gì?"
+      stem_lang: vi
+      options:
+        - { id: v8q, text: "Giữ giờ ngủ đều đặn là cách chăm sóc sức khoẻ đơn giản mà quan trọng.", lang: vi }
+        - { id: c1x, text: "Người bận rộn nên ngủ ít để có thêm thời gian làm việc.", lang: vi }
+        - { id: m4f, text: "Ngủ nhiều làm sức đề kháng giảm đi.", lang: vi }
+        - { id: s9k, text: "Cảm cúm không liên quan gì đến giấc ngủ.", lang: vi }
+    answer:
+      correct_option_id: v8q
+    explanation:
+      vi: Câu cuối có 이야말로 - "chính thói quen giữ giờ ngủ mới là cách chăm sóc sức khoẻ dễ nhất" - là ý chính. 그렇다고 해서 ... 아니다 bác bỏ việc bỏ giấc ngủ; bài nói thiếu ngủ (không phải ngủ nhiều) làm giảm đề kháng.
+    display_answer: "Giữ giờ ngủ đều đặn là cách chăm sóc sức khoẻ đơn giản mà quan trọng."
+
+  - key: ko:exercise:he-review-mcq-column-detail
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-myeonyeongnyeok
+    prompt:
+      stem: "최근 한 연구에서는 하루 수면 시간이 6시간보다 짧은 직장인이 그렇지 않은 사람보다 감기에 더 자주 걸리는 것으로 나타났다. - Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: o5d, text: "Nhân viên ngủ dưới 6 tiếng mỗi ngày bị cảm thường xuyên hơn người khác.", lang: vi }
+        - { id: j3n, text: "Nhân viên ngủ trên 6 tiếng mỗi ngày bị cảm thường xuyên hơn.", lang: vi }
+        - { id: z6w, text: "Mọi nhân viên trong nghiên cứu đều ngủ đúng 6 tiếng.", lang: vi }
+        - { id: e0r, text: "Nghiên cứu cho thấy giấc ngủ không ảnh hưởng đến cảm cúm.", lang: vi }
+    answer:
+      correct_option_id: o5d
+    explanation:
+      vi: 6시간보다 짧은 = ngắn hơn 6 tiếng; 그렇지 않은 사람 = những người không như vậy (ngủ từ 6 tiếng trở lên); 더 자주 걸리다 = bị (cảm) thường xuyên hơn. Phương án sai thường đảo ngược so sánh.
+    display_answer: "Nhân viên ngủ dưới 6 tiếng mỗi ngày bị cảm thường xuyên hơn người khác."
+
+  - key: ko:exercise:he-review-listen-oppose
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:he-geureotago-haeseo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 물론 비용 측면에서는 장점이 있을 수 있지만, 그렇다고 해서 모든 학생을 밤 10시까지 붙잡아 두는 것이 옳은 것은 아닙니다.
+      options:
+        - { id: q2b, text: "Tuy về mặt chi phí có thể có ưu điểm, nhưng không vì thế mà giữ mọi học sinh đến 10 giờ đêm là đúng.", lang: vi }
+        - { id: w7m, text: "Vì có lợi về chi phí nên phải giữ mọi học sinh đến 10 giờ đêm.", lang: vi }
+        - { id: h0s, text: "Về mặt chi phí, tự học buổi tối hoàn toàn không có ưu điểm.", lang: vi }
+        - { id: k6e, text: "Mọi học sinh đều tự nguyện ở lại trường đến 10 giờ đêm.", lang: vi }
+    answer:
+      correct_option_id: q2b
+    explanation:
+      vi: 물론 ~(으)ㄹ 수 있지만 thừa nhận ưu điểm về chi phí (측면에서는), rồi 그렇다고 해서 ... 옳은 것은 아닙니다 bác bỏ suy luận "vì vậy giữ mọi học sinh là đúng". Người nói không phủ nhận ưu điểm, cũng không nói học sinh tự nguyện.
+    display_answer: "Tuy về mặt chi phí có thể có ưu điểm, nhưng không vì thế mà giữ mọi học sinh đến 10 giờ đêm là đúng."
+
+  - key: ko:exercise:he-review-mcq-dung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-gram-neun-dung-maneun-dung
+    prompt:
+      stem: "억지로 앉아 있는 학생들은 책을 보는 둥 마는 둥 합니다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n3a, text: "Học sinh bị ép ngồi lại thì chỉ đọc sách qua loa.", lang: vi }
+        - { id: f8y, text: "Học sinh bị ép ngồi lại vẫn đọc sách rất chăm chỉ.", lang: vi }
+        - { id: l5c, text: "Học sinh không có sách để đọc nên ngồi im.", lang: vi }
+        - { id: u1h, text: "Học sinh giả vờ không có mặt trong lớp.", lang: vi }
+    answer:
+      correct_option_id: n3a
+    explanation:
+      vi: -는 둥 마는 둥 하다 = làm cũng như không, hời hợt - học sinh có mở sách nhưng không thật sự đọc. 억지로 (gượng ép) giải thích vì sao.
+    display_answer: "Học sinh bị ép ngồi lại thì chỉ đọc sách qua loa."
+
+  - key: ko:exercise:he-review-fill-jeomeseo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-daneun-jeomeseo
+    prompt:
+      template: "야간 자율 학습은 학생들의 사교육비 부담을 줄일 수 있다{{b1}} 점에서 의미가 있습니다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - Cấu trúc "ở chỗ..." - -다는 점에서.
+        - 있다 + ...는
+    answer:
+      blanks:
+        b1: [는]
+    known_wrong:
+      - answer: 고
+        feedback_vi: -다고 không đứng trước danh từ 점. Định ngữ trích dẫn là -다는 - 있다는 점에서.
+        error_tag: daneun_form
+      - answer: 면
+        feedback_vi: -다면 là "nếu", không làm định ngữ cho 점. Viết 있다는 점에서.
+        error_tag: daneun_form
+    explanation:
+      vi: -(으)ㄹ 수 있다 + -는 → 있다는 점에서 (ở chỗ có thể...). Phe ủng hộ dùng cấu trúc này để nêu lý do có ý nghĩa.
+    display_answer: 야간 자율 학습은 학생들의 사교육비 부담을 줄일 수 있다는 점에서 의미가 있습니다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:he-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:he-gram-nareumida
+    prompt:
+      template: "공부는 결국 스스로 하{{b1}} 나름이다. 그런데도 학생들을 늦게까지 붙잡아 두는 분위기는 여전한 {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [기]
+        b2: [듯하다, 듯합니다, 것 같다]
+    known_wrong:
+      - answer: 는
+        feedback_vi: Trước 나름 động từ phải danh từ hoá bằng -기 - 하기 나름이다.
+        error_tag: nareum_form
+      - answer: 척하다
+        feedback_vi: -(으)ㄴ 척하다 là "giả vờ". Người viết đang phỏng đoán - 여전한 듯하다.
+        error_tag: deuthada_vs_cheok
+    explanation:
+      vi: V-기 나름이다 (tuỳ vào việc tự học) và A-(으)ㄴ 듯하다 (có vẻ vẫn còn) - hai cấu trúc của unit này trong cùng một đoạn văn viết -다.
+    display_answer: 공부는 결국 스스로 하기 나름이다. 그런데도 학생들을 늦게까지 붙잡아 두는 분위기는 여전한 듯하다.
+
+  - key: ko:exercise:he-review-translate-yamallo
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-iyamallo
+    prompt:
+      source_text: Chính thói quen giữ giờ ngủ mới là cách chăm sóc sức khoẻ dễ nhất.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법이다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리 방법이다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법입니다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 쉬운 건강 관리법이다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 쉬운 건강 관리 방법이다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 쉬운 건강 관리법입니다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 간단한 건강 관리법이다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 간단한 건강 관리 방법이다."
+        - "잠자는 시간을 지키는 습관이야말로 가장 간단한 건강 관리법입니다."
+        - "수면 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법이다."
+        - "수면 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리 방법이다."
+        - "수면 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법입니다."
+        - "수면 시간을 지키는 습관이야말로 가장 쉬운 건강 관리법이다."
+        - "수면 시간을 지키는 습관이야말로 가장 쉬운 건강 관리 방법이다."
+        - "수면 시간을 지키는 습관이야말로 가장 쉬운 건강 관리법입니다."
+        - "수면 시간을 지키는 습관이야말로 가장 간단한 건강 관리법이다."
+        - "수면 시간을 지키는 습관이야말로 가장 간단한 건강 관리 방법이다."
+        - "수면 시간을 지키는 습관이야말로 가장 간단한 건강 관리법입니다."
+        - "규칙적으로 잠자는 습관이야말로 가장 손쉬운 건강 관리법이다."
+        - "규칙적으로 잠자는 습관이야말로 가장 손쉬운 건강 관리 방법이다."
+        - "규칙적으로 잠자는 습관이야말로 가장 손쉬운 건강 관리법입니다."
+        - "규칙적으로 잠자는 습관이야말로 가장 쉬운 건강 관리법이다."
+        - "규칙적으로 잠자는 습관이야말로 가장 쉬운 건강 관리 방법이다."
+        - "규칙적으로 잠자는 습관이야말로 가장 쉬운 건강 관리법입니다."
+        - "규칙적으로 잠자는 습관이야말로 가장 간단한 건강 관리법이다."
+        - "규칙적으로 잠자는 습관이야말로 가장 간단한 건강 관리 방법이다."
+        - "규칙적으로 잠자는 습관이야말로 가장 간단한 건강 관리법입니다."
+    known_wrong:
+      - answer: 잠자는 시간을 지키는 습관야말로 가장 손쉬운 건강 관리법이다.
+        feedback_vi: 습관 có patchim nên phải là 이야말로.
+        error_tag: particle_allomorph
+      - answer: 잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법인 척하다.
+        feedback_vi: -(으)ㄴ 척하다 là "giả vờ" - sai nghĩa. Câu khẳng định kết bằng -이다.
+        error_tag: deuthada_vs_cheok
+    explanation:
+      vi: N이야말로 = chính N mới là; 습관 có patchim → 습관이야말로. "Cách chăm sóc sức khoẻ" tự nhiên là 건강 관리법.
+    display_answer: 잠자는 시간을 지키는 습관이야말로 가장 손쉬운 건강 관리법이다.
+
+  - key: ko:exercise:he-review-fill-proverb
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-yubimuhwan
+    prompt:
+      template: "{{b1}}이라는 말처럼, 병이 생기기 전에 평소 생활 습관을 관리하는 것이 무엇보다 중요하다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [유비무환]
+    known_wrong:
+      - answer: 자업자득
+        feedback_vi: 자업자득 là tự làm tự chịu - không phải lời khuyên phòng bệnh. "Chuẩn bị trước khi bệnh đến" là 유비무환.
+        error_tag: idiom_meaning
+      - answer: 일취월장
+        feedback_vi: 일취월장 là tiến bộ vượt bậc - không liên quan đến phòng bệnh.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 병이 생기기 전에 (trước khi bệnh đến) là dấu hiệu của 유비무환 (có phòng thì không lo). 환 có patchim ㄴ nên trích bằng 이라는.
+    display_answer: 유비무환이라는 말처럼, 병이 생기기 전에 평소 생활 습관을 관리하는 것이 무엇보다 중요하다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:he-review-translate-geureotago-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-geureotago-haeseo
+    prompt:
+      source_text: 그렇다고 해서 수면을 포기해도 되는 것은 아니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Nhưng không vì thế mà được phép từ bỏ giấc ngủ."
+        - "Nhưng không vì thế mà được phép bỏ qua giấc ngủ."
+        - "Nhưng không vì thế mà được phép hy sinh giấc ngủ."
+        - "Nhưng không vì thế mà có thể từ bỏ giấc ngủ."
+        - "Nhưng không vì thế mà có thể bỏ qua giấc ngủ."
+        - "Nhưng không vì thế mà có thể hy sinh giấc ngủ."
+        - "Tuy vậy không vì thế mà được phép từ bỏ giấc ngủ."
+        - "Tuy vậy không vì thế mà được phép bỏ qua giấc ngủ."
+        - "Tuy vậy không vì thế mà được phép hy sinh giấc ngủ."
+        - "Tuy vậy không vì thế mà có thể từ bỏ giấc ngủ."
+        - "Tuy vậy không vì thế mà có thể bỏ qua giấc ngủ."
+        - "Tuy vậy không vì thế mà có thể hy sinh giấc ngủ."
+        - "Dù vậy không vì thế mà được phép từ bỏ giấc ngủ."
+        - "Dù vậy không vì thế mà được phép bỏ qua giấc ngủ."
+        - "Dù vậy không vì thế mà được phép hy sinh giấc ngủ."
+        - "Dù vậy không vì thế mà có thể từ bỏ giấc ngủ."
+        - "Dù vậy không vì thế mà có thể bỏ qua giấc ngủ."
+        - "Dù vậy không vì thế mà có thể hy sinh giấc ngủ."
+        - "Nhưng điều đó không có nghĩa là được phép từ bỏ giấc ngủ."
+        - "Nhưng điều đó không có nghĩa là được phép bỏ qua giấc ngủ."
+        - "Nhưng điều đó không có nghĩa là được phép hy sinh giấc ngủ."
+        - "Nhưng điều đó không có nghĩa là có thể từ bỏ giấc ngủ."
+        - "Nhưng điều đó không có nghĩa là có thể bỏ qua giấc ngủ."
+        - "Nhưng điều đó không có nghĩa là có thể hy sinh giấc ngủ."
+        - "Tuy vậy điều đó không có nghĩa là được phép từ bỏ giấc ngủ."
+        - "Tuy vậy điều đó không có nghĩa là được phép bỏ qua giấc ngủ."
+        - "Tuy vậy điều đó không có nghĩa là được phép hy sinh giấc ngủ."
+        - "Tuy vậy điều đó không có nghĩa là có thể từ bỏ giấc ngủ."
+        - "Tuy vậy điều đó không có nghĩa là có thể bỏ qua giấc ngủ."
+        - "Tuy vậy điều đó không có nghĩa là có thể hy sinh giấc ngủ."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì vậy được phép từ bỏ giấc ngủ.
+        feedback_vi: Ngược nghĩa - 그렇다고 해서 ... 것은 아니다 phủ định suy luận "vì vậy được phép bỏ ngủ".
+        error_tag: meaning_reversed
+      - answer: Nói như vậy thì phải từ bỏ giấc ngủ.
+        feedback_vi: -아/어도 되다 là "được phép", và cả câu là phủ định - không vì thế mà được phép.
+        error_tag: meaning_reversed
+    explanation:
+      vi: 그렇다고 해서 = nhưng không vì thế mà; -아/어도 되는 것은 아니다 = không có nghĩa là được phép. Câu này bác bỏ suy luận "bận thì bỏ ngủ cũng được".
+    display_answer: Nhưng không vì thế mà được phép từ bỏ giấc ngủ.
+
+  - key: ko:exercise:he-review-mcq-thesis
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:ac-seoron-bonron-gyeollon
+    prompt:
+      stem: "Đoạn mở bài kiểu câu 54 - 청소년의 수면 시간은 해마다 줄어들고 있다. 늦은 시간까지 이어지는 학원 수업과 스마트폰 사용이 주된 원인으로 꼽힌다. ( ) - Chọn câu luận điểm phù hợp nhất cả về nội dung lẫn văn phong."
+      stem_lang: vi
+      options:
+        - { id: p7v, text: "따라서 청소년의 수면을 보장하기 위한 가정과 학교의 노력이 필요하다.", lang: ko }
+        - { id: a2j, text: "그래서 저는 어제 잠을 많이 잤어요.", lang: ko }
+        - { id: y9t, text: "따라서 청소년은 잠을 줄여 공부 시간을 더 늘려야 한다.", lang: ko }
+        - { id: d4m, text: "물론 스마트폰은 정말 재미있는 것 같아요.", lang: ko }
+    answer:
+      correct_option_id: p7v
+    explanation:
+      vi: Câu luận điểm phải ở văn phong -다 và nối logic với vấn đề vừa nêu (thiếu ngủ) - 따라서 ... 노력이 필요하다. Hai câu -요 là văn nói và lạc đề; câu "nên ngủ ít hơn" mâu thuẫn với đoạn mở.
+    display_answer: "따라서 청소년의 수면을 보장하기 위한 가정과 학교의 노력이 필요하다."
+
+  - key: ko:exercise:he-review-order-balance
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-cheungmyeoneseo
+    prompt:
+      instruction: "Sắp xếp thành câu kết cho đoạn văn: \"Vì vậy, điều quan trọng là tìm được sự cân bằng giữa học tập và nghỉ ngơi.\""
+      tokens:
+        - { id: r3k, text: 사이의 }
+        - { id: m6b, text: 중요해요 }
+        - { id: x1d, text: 찾는 }
+        - { id: e8w, text: 따라서 }
+        - { id: j5s, text: 것이 }
+        - { id: t9a, text: 휴식 }
+        - { id: o2e, text: 중요하다 }
+        - { id: g7n, text: 균형을 }
+        - { id: w4c, text: 학업과 }
+    answer:
+      orders:
+        - [e8w, w4c, t9a, r3k, g7n, x1d, j5s, o2e]
+    explanation:
+      vi: Câu kết câu 54 - 따라서 + -는 것이 중요하다 (văn phong -다). 중요해요 là token nhiễu vì đuôi -요 không hợp với bài luận.
+    display_answer: 따라서 학업과 휴식 사이의 균형을 찾는 것이 중요하다.
+
+  - key: ko:exercise:he-review-translate-54
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:he-sagyoyuk
+    prompt:
+      source_text: Xét về mặt giáo dục, tự học buổi tối có ý nghĩa ở chỗ có thể giảm chi phí học thêm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의의가 있다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있습니다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의의가 있다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있습니다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄인다는 점에서 의의가 있다."
+        - "교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있습니다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의의가 있다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있습니다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의의가 있다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있습니다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄인다는 점에서 의의가 있다."
+        - "교육적 측면에서 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있습니다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의의가 있다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있습니다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의의가 있다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있습니다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄인다는 점에서 의의가 있다."
+        - "교육 측면에서 보면 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있습니다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의의가 있다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있습니다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의의가 있다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄여 준다는 점에서 의미가 있습니다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄인다는 점에서 의의가 있다."
+        - "교육 측면에서 야간 자율 학습은 사교육비를 줄인다는 점에서 의미가 있습니다."
+    known_wrong:
+      - answer: 교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있는다는 점에서 의미가 있다.
+        feedback_vi: 있다 + -다는 → 있다는 (không thêm 는 vào gốc 있). Viết 줄일 수 있다는 점에서.
+        error_tag: daneun_form
+      - answer: 교육적 입장에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있다.
+        feedback_vi: Ý "xét về mặt" là 측면에서; 입장 là lập trường của một người.
+        error_tag: cheungmyeon_vs_ipjang
+      - answer: 교육적 측면에서 보면 야간 자율 학습은 공교육비를 줄일 수 있다는 점에서 의미가 있다.
+        feedback_vi: Chi phí học thêm là 사교육비; 공교육 là giáo dục trong trường.
+        error_tag: sagyoyuk_vs_gonggyoyuk
+    explanation:
+      vi: Kết hợp hai mẫu lập luận - N(적) 측면에서 보면 + -다는 점에서 의미가 있다. Đây là câu mẫu có thể dùng trong thân bài câu 54.
+    display_answer: 교육적 측면에서 보면 야간 자율 학습은 사교육비를 줄일 수 있다는 점에서 의미가 있다.

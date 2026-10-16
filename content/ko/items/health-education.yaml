@@ -1,0 +1,830 @@
+# Học liệu unit "Y tế, tâm lý, giáo dục & diễn đạt học thuật" (TOPIK 5-6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: y tế và tâm lý - -(으)ㄴ/는 듯하다 =================
+  - key: ko:item:he-manseong-jilhwan
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 만성 질환
+      romanization: manseong jilhwan
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Bệnh mãn tính (慢性疾患 - mạn tính tật hoạn) - bệnh kéo dài, cần quản lý lâu dài như cao huyết áp, tiểu đường.
+      examples:
+        - target: 고혈압과 당뇨 같은 만성 질환은 약만큼이나 생활 습관 관리가 중요하다.
+          translation:
+            vi: Với bệnh mãn tính như cao huyết áp và tiểu đường, việc điều chỉnh thói quen sinh hoạt cũng quan trọng không kém thuốc.
+      pronunciation_note:
+        vi: 질환 đọc [지롼] khi nói nhanh - ㅎ yếu đi giữa ㄹ và nguyên âm.
+      confusion:
+        vi: 만성 (mạn tính - kéo dài) trái nghĩa với 급성 (cấp tính - đến đột ngột). 질환 là từ trang trọng; nói chuyện hằng ngày người Hàn dùng 병.
+
+  - key: ko:item:he-uuljeung
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 우울증
+      romanization: uuljeung
+      pos: danh từ
+    back:
+      meaning:
+        vi: Bệnh trầm cảm (憂鬱症 - ưu uất chứng). 우울증을 앓다 (mắc trầm cảm), 우울증 진단을 받다.
+      examples:
+        - target: 우울증은 의지가 약해서 생기는 병이 아니라 전문적인 치료가 필요한 질환이다.
+          translation:
+            vi: Trầm cảm không phải là bệnh do ý chí yếu mà là căn bệnh cần được điều trị chuyên môn.
+      pronunciation_note:
+        vi: Đọc [우울쯩] - ㅈ sau patchim ㄹ trong từ Hán Hàn đọc căng.
+      confusion:
+        vi: 우울하다 là cảm thấy buồn bã, ủ rũ (cảm xúc thường ngày); 우울증 là bệnh. Viết 저는 오늘 우울증이에요 khi chỉ hơi buồn là phóng đại - hãy nói 오늘 좀 우울해요.
+
+  - key: ko:item:he-seuteureseu-haeso
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 스트레스 해소
+      romanization: seuteureseu haeso
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Giải toả căng thẳng. 해소 (解消 - giải tiêu) là làm tan đi, gỡ bỏ - 스트레스 해소, 갈등 해소, 불안 해소.
+      examples:
+        - target: 퇴근 후 삼십 분 정도 가볍게 걷는 것만으로도 스트레스 해소에 도움이 된다.
+          translation:
+            vi: Chỉ cần đi bộ nhẹ nhàng khoảng ba mươi phút sau giờ làm cũng giúp giải toả căng thẳng.
+      pronunciation_note:
+        vi: 스트레스 có ba âm ㅡ ngắn - đừng thêm nguyên âm "ơ" kéo dài. 해소 đọc [해소].
+      confusion:
+        vi: Trong lời nói hằng ngày dùng 스트레스를 풀다; văn viết, báo chí dùng danh từ 스트레스 해소. 해소 khác 해결 - 해결 là giải quyết một vấn đề cụ thể, 해소 là làm tan một trạng thái (căng thẳng, mâu thuẫn).
+
+  - key: ko:item:he-sumyeon-bujok
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 수면 부족
+      romanization: sumyeon bujok
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Thiếu ngủ. 수면 (睡眠 - thuỵ miên) là giấc ngủ trong văn viết; 수면 시간, 수면의 질 (chất lượng giấc ngủ).
+      examples:
+        - target: 만성적인 수면 부족은 집중력을 떨어뜨릴 뿐만 아니라 면역 체계에도 부담을 준다.
+          translation:
+            vi: Thiếu ngủ kéo dài không chỉ làm giảm khả năng tập trung mà còn gây áp lực lên hệ miễn dịch.
+      pronunciation_note:
+        vi: Đọc [수면 부족]; ㄱ cuối không bật hơi.
+      confusion:
+        vi: 불면증 (mất ngủ) là muốn ngủ mà không ngủ được; 수면 부족 là ngủ không đủ giờ, thường do bận rộn. Hai trạng thái khác nhau nên lời khuyên cũng khác.
+
+  - key: ko:item:he-myeonyeongnyeok
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: 면역력
+      romanization: myeonyeongnyeok
+      pos: danh từ
+    back:
+      meaning:
+        vi: Sức đề kháng, khả năng miễn dịch (免疫力 - miễn dịch lực). 면역력이 떨어지다 / 약해지다 (giảm), 면역력을 높이다 (tăng).
+      examples:
+        - target: 환절기에는 면역력이 떨어져 감기에 걸리기 쉬우니 충분히 쉬어야 한다.
+          translation:
+            vi: Giao mùa sức đề kháng giảm, dễ bị cảm, nên cần nghỉ ngơi đầy đủ.
+      pronunciation_note:
+        vi: Đọc [며녕녁] - ㄴ nối sang 역, rồi ㄱ trước ㄹ thành ㅇ và ㄹ thành ㄴ. Đây là một trong những từ khó đọc nhất của chủ đề sức khoẻ.
+      confusion:
+        vi: Tiếng Việt nói "sức đề kháng yếu", tiếng Hàn tự nhiên hơn là 면역력이 떨어지다. 력 (lực) là hậu tố "sức" - 집중력, 기억력, 체력.
+
+  - key: ko:item:he-yebang-jeopjong
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 예방 접종
+      romanization: yebang jeopjong
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Tiêm chủng phòng bệnh (豫防接種 - dự phòng tiếp chủng). 예방 접종을 받다 / 맞다.
+      examples:
+        - target: 독감 예방 접종은 유행이 시작되기 전인 가을에 미리 맞는 것이 좋다.
+          translation:
+            vi: Nên tiêm phòng cúm trước vào mùa thu, trước khi dịch bắt đầu lan.
+      pronunciation_note:
+        vi: 접종 đọc [접쫑] - ㅈ sau patchim ㅂ đọc căng.
+      confusion:
+        vi: Động từ đi kèm là 받다 hoặc 맞다 (nhận mũi tiêm), không dùng 하다 khi bạn là người được tiêm. 주사를 놓다 là việc của y tá.
+
+  - key: ko:item:he-jeungsang
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 증상
+      romanization: jeungsang
+      pos: danh từ
+    back:
+      meaning:
+        vi: Triệu chứng (症狀 - chứng trạng). 증상이 나타나다 (xuất hiện), 증상이 심해지다 / 완화되다 (nặng lên / thuyên giảm).
+      examples:
+        - target: 이런 증상이 2주 이상 계속되면 반드시 전문의와 상담하십시오.
+          translation:
+            vi: Nếu những triệu chứng này kéo dài từ hai tuần trở lên, nhất định hãy tham vấn bác sĩ chuyên khoa.
+      pronunciation_note:
+        vi: Đọc [증상]; ㅡ trong 증 không tròn môi.
+      confusion:
+        vi: 증상 là dấu hiệu bạn cảm thấy (sốt, ho); 병 / 질환 là căn bệnh. Hỏi bác sĩ "Tôi bị bệnh gì?" là 무슨 병이에요?, còn kể triệu chứng là 이런 증상이 있어요.
+
+  - key: ko:item:he-jeongsin-geongang
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 정신 건강
+      romanization: jeongsin geongang
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Sức khoẻ tinh thần (sức khoẻ tâm thần). Đối lập với 신체 건강 (sức khoẻ thể chất).
+      examples:
+        - target: 정신 건강을 돌보는 일은 신체 건강을 챙기는 일만큼 중요하다.
+          translation:
+            vi: Chăm sóc sức khoẻ tinh thần quan trọng không kém chăm sóc sức khoẻ thể chất.
+      pronunciation_note:
+        vi: Đọc [정신 건강]; ㄱ đầu 건강 nhẹ.
+      confusion:
+        vi: 정신 trong 정신 건강 là "tinh thần, tâm thần", khác thành ngữ 정신이 없다 (bận tối mắt, rối trí). Khoa tâm thần là 정신건강의학과.
+
+  - key: ko:item:he-jindan
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 진단 / 진단을 받다
+      romanization: jindan / jindaneul batda
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: Chẩn đoán; được chẩn đoán. N(이라는) 진단을 받다, 진단서 (giấy chẩn đoán).
+      examples:
+        - target: 그는 정밀 검사 끝에 공황 장애라는 진단을 받았다.
+          translation:
+            vi: Sau khi kiểm tra chi tiết, anh ấy được chẩn đoán mắc chứng rối loạn hoảng sợ.
+      pronunciation_note:
+        vi: Đọc [진단]; 진단을 nối âm [진다늘].
+      confusion:
+        vi: 진단 là kết luận bệnh; 진찰 là bác sĩ khám; 검진 là khám sức khoẻ định kỳ (건강 검진). Ba từ hay đi theo thứ tự - 검진 → 진찰 → 진단.
+
+  - key: ko:item:he-gram-n-neun-deuthada
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V/A-(으)ㄴ/는 듯하다 · V/A-(으)ㄹ 듯하다
+      romanization: -(eu)n/neun deuthada · -(eu)l deuthada
+      pos: cấu trúc phỏng đoán (văn viết)
+    back:
+      meaning:
+        vi: Hình như, có vẻ như - phỏng đoán nhẹ nhàng, thận trọng trong văn viết, báo cáo, bài phát biểu. Tương đương -(으)ㄴ/는/(으)ㄹ 것 같다 trong lời nói.
+      examples:
+        - target: 최근 들어 청소년의 수면 시간이 더 짧아진 듯하다.
+          translation:
+            vi: Gần đây thời gian ngủ của thanh thiếu niên có vẻ còn ngắn hơn trước.
+      pronunciation_note:
+        vi: 듯하다 đọc [드타다] - ㅅ (ㄷ) gặp ㅎ thành ㅌ.
+      confusion:
+        vi: Chia giống 것 같다 - đã xảy ra -(으)ㄴ 듯하다 (다녀간 듯하다), đang diễn ra -는 듯하다, phỏng đoán -(으)ㄹ 듯하다, tính từ -(으)ㄴ 듯하다. Viết 듯하다 liền nhau nhưng tách khỏi định ngữ - 올 듯하다. Đừng nhầm với -는 듯이 "như thể" (날아갈 듯이 기뻤다).
+
+  # ================= bài 2: tranh luận giáo dục - N 나름이다, -는 둥 마는 둥, -(으)ㄹ락 말락 =================
+  - key: ko:item:he-gram-nareumida
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: N 나름이다 · V-기 나름이다
+      romanization: nareumida · -gi nareumida
+      pos: cấu trúc phụ thuộc
+    back:
+      meaning:
+        vi: Tuỳ vào..., còn tuỳ (cách) N / (cách) làm - kết quả không cố định mà phụ thuộc vào người, cách làm.
+      examples:
+        - target: 같은 학원에 다녀도 효과는 학생 나름이다.
+          translation:
+            vi: Dù học cùng một trung tâm, hiệu quả còn tuỳ vào từng học sinh.
+      pronunciation_note:
+        vi: 나름이다 nối âm [나르미다].
+      confusion:
+        vi: 나름대로 nghĩa khác - "theo cách riêng, trong khả năng của mình" (나름대로 열심히 했다). Văn viết trang trọng hơn dùng N에 달려 있다.
+
+  - key: ko:item:he-gram-neun-dung-maneun-dung
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-는 둥 마는 둥 (하다)
+      romanization: -neun dung maneun dung
+      pos: cấu trúc mô tả
+    back:
+      meaning:
+        vi: Làm qua loa, nửa vời, chẳng ra làm cũng chẳng ra không làm - 밥을 먹는 둥 마는 둥, 듣는 둥 마는 둥.
+      examples:
+        - target: 늦잠을 잔 아이는 아침을 먹는 둥 마는 둥 하고 학교로 뛰어갔다.
+          translation:
+            vi: Đứa trẻ ngủ dậy muộn ăn sáng qua quýt rồi chạy vội đến trường.
+      pronunciation_note:
+        vi: Đọc [먹는 둥 마는 둥] - 먹는 đọc [멍는] do biến âm mũi.
+      confusion:
+        vi: 마는 là dạng định ngữ của 말다 (thôi, không làm). Cả cụm thường kết bằng 하다 (먹는 둥 마는 둥 했다). Khác -(으)ㄴ 척하다 (giả vờ) - ở đây người đó thật sự làm, chỉ là làm hời hợt.
+
+  - key: ko:item:he-gram-l-rak-mallak
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V-(으)ㄹ락 말락 (하다)
+      romanization: -(eu)llak mallak
+      pos: cấu trúc mô tả
+    back:
+      meaning:
+        vi: Suýt soát, lấp ló, chập chờn - ở ngay ranh giới sắp... mà chưa hẳn (닿을락 말락, 들릴락 말락, 보일락 말락).
+      examples:
+        - target: 합격선에 닿을락 말락 한 점수라서 결과가 나올 때까지 마음을 졸였다.
+          translation:
+            vi: Điểm số suýt soát ngưỡng đỗ nên tôi thấp thỏm cho đến khi có kết quả.
+      pronunciation_note:
+        vi: 닿을락 đọc [다을락] - ㅎ cuối 닿 không phát âm trước nguyên âm.
+      confusion:
+        vi: -(으)ㄹ 뻔했다 kể việc suýt xảy ra trong quá khứ (một khoảnh khắc), còn -(으)ㄹ락 말락 tả trạng thái lơ lửng ở ranh giới. Gốc có patchim thêm 을락 (닿을락), không patchim thêm ㄹ락 (들릴락).
+
+  - key: ko:item:he-sagyoyuk
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 사교육 · 공교육
+      romanization: sagyoyuk · gonggyoyuk
+      pos: danh từ
+    back:
+      meaning:
+        vi: Giáo dục ngoài nhà trường (học thêm, trung tâm, gia sư - 私敎育) / giáo dục công trong hệ thống trường học (公敎育). 사교육비 là chi phí học thêm.
+      examples:
+        - target: 사교육비 부담 때문에 둘째를 낳지 않겠다는 부부도 적지 않다.
+          translation:
+            vi: Không ít cặp vợ chồng nói sẽ không sinh con thứ hai vì gánh nặng chi phí học thêm.
+      pronunciation_note:
+        vi: Đọc [사교육] / [공교육]; ㄱ cuối không bật hơi.
+      confusion:
+        vi: 사교육 không phải "trường tư". Trường tư thục (사립 학교) vẫn thuộc 공교육 vì nằm trong hệ thống giáo dục chính quy; 사교육 là học ngoài trường như 학원, 과외.
+
+  - key: ko:item:he-ipsi-gyeongjaeng
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 입시 경쟁
+      romanization: ipsi gyeongjaeng
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Cạnh tranh tuyển sinh (đặc biệt là thi vào đại học). 입시 (入試 - nhập thí) là kỳ thi tuyển sinh.
+      examples:
+        - target: 과도한 입시 경쟁이 청소년의 정신 건강을 해친다는 우려가 크다.
+          translation:
+            vi: Nhiều người lo ngại rằng cạnh tranh tuyển sinh quá mức đang hủy hoại sức khoẻ tinh thần của thanh thiếu niên.
+      pronunciation_note:
+        vi: 입시 đọc [입씨] - ㅅ sau patchim ㅂ đọc căng.
+      confusion:
+        vi: 입시 là cả quá trình tuyển sinh; 수능 là tên kỳ thi năng lực đại học quốc gia; 입학 là nhập học. "Thi đại học" trong câu chuyện hằng ngày thường là 수능을 보다.
+
+  - key: ko:item:he-juipsik-gyoyuk
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 주입식 교육
+      romanization: juipsik gyoyuk
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Giáo dục nhồi nhét, học thuộc lòng (注入式 - chú nhập thức - kiểu rót vào). Đối lập với 토론식 · 참여형 수업.
+      examples:
+        - target: 주입식 교육으로는 스스로 질문하는 인재를 기르기 어렵다는 비판이 이어져 왔다.
+          translation:
+            vi: Lời phê phán rằng giáo dục nhồi nhét khó đào tạo được những người biết tự đặt câu hỏi vẫn luôn tồn tại.
+      pronunciation_note:
+        vi: Đọc [주입씩 교육] - ㅅ sau ㅂ thành ㅆ.
+      confusion:
+        vi: 주입 (rót vào) là hình ảnh thầy "đổ" kiến thức vào đầu trò. Tiếng Việt có đúng thành ngữ "nhồi nhét", nên khi dịch đừng dùng "tiêm chích".
+
+  - key: ko:item:he-jagi-judo-hakseup
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 자기 주도 학습
+      romanization: jagi judo hakseup
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Học tập tự chủ - người học tự đặt mục tiêu, lập kế hoạch và tự đánh giá việc học của mình.
+      examples:
+        - target: 자기 주도 학습 능력은 대학에 진학한 뒤에 더욱 중요해진다.
+          translation:
+            vi: Năng lực học tập tự chủ càng trở nên quan trọng sau khi vào đại học.
+      pronunciation_note:
+        vi: 학습 đọc [학씁] - ㅅ sau ㄱ đọc căng.
+      confusion:
+        vi: 독학 là tự học không có thầy; 자기 주도 학습 vẫn có thể có thầy, trường, nhưng người học là người cầm lái. Đừng dịch máy móc thành "học tự dẫn".
+
+  - key: ko:item:he-seonhaeng-hakseup
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 선행 학습
+      romanization: seonhaeng hakseup
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Học trước chương trình (thường trước nhiều tháng, nhiều năm, ở trung tâm học thêm).
+      examples:
+        - target: 초등학생이 고등학교 수학을 배우는 지나친 선행 학습은 오히려 흥미를 떨어뜨릴 수 있다.
+          translation:
+            vi: Việc học trước quá mức như học sinh tiểu học học toán cấp ba có thể ngược lại làm mất hứng thú.
+      pronunciation_note:
+        vi: Đọc [선행 학씁].
+      confusion:
+        vi: 예습 là xem trước bài của buổi sau - thói quen tốt; 선행 학습 là chạy trước chương trình rất xa và là vấn đề xã hội ở Hàn Quốc. Hai từ không thay cho nhau được.
+
+  - key: ko:item:he-hageop-seongchwido
+    type: phrase
+    level: topik6
+    difficulty: 5
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 학업 성취도
+      romanization: hageop seongchwido
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Mức độ đạt được trong học tập - kết quả học tập so với chuẩn (成就度 - thành tựu độ). 학업 성취도 평가 (kỳ đánh giá năng lực học tập).
+      examples:
+        - target: 연구진은 수면 시간과 학업 성취도 사이의 관계를 3년간 추적했다.
+          translation:
+            vi: Nhóm nghiên cứu đã theo dõi mối quan hệ giữa thời gian ngủ và kết quả học tập trong ba năm.
+      pronunciation_note:
+        vi: 학업 đọc [하겁] - patchim ㄱ nối sang 업.
+      confusion:
+        vi: 성적 là điểm số cụ thể trên bảng điểm; 학업 성취도 là thuật ngữ nghiên cứu, chỉ mức độ đạt chuẩn chung. Bài báo khoa học dùng 학업 성취도, phụ huynh nói 성적.
+
+  - key: ko:item:he-jeokseong
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 적성
+      romanization: jeokseong
+      pos: danh từ
+    back:
+      meaning:
+        vi: Năng khiếu, sự phù hợp (với nghề, ngành học) (適性 - thích tính). 적성에 맞다, 적성 검사.
+      examples:
+        - target: 성적에 맞춰 학과를 고르기보다 자신의 적성을 먼저 살펴보는 것이 바람직하다.
+          translation:
+            vi: Thay vì chọn khoa theo điểm số, nên xem xét năng khiếu, sở trường của bản thân trước.
+      pronunciation_note:
+        vi: Đọc [적썽] - ㅅ sau ㄱ thành ㅆ.
+      confusion:
+        vi: 적성 là "hợp với mình" (thiên hướng); 재능 là tài năng nổi bật; 취미 là sở thích. Câu 이 일은 제 적성에 안 맞아요 nghĩa là công việc này không hợp với tôi.
+
+  # ================= bài 3: thuyết trình và thảo luận học thuật =================
+  - key: ko:item:he-gram-daneun-jeomeseo
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing, speaking]
+    front:
+      text: V-ㄴ/는다는 · A-다는 · N(이)라는 점에서
+      romanization: -daneun jeomeseo
+      pos: cấu trúc lập luận
+    back:
+      meaning:
+        vi: Ở chỗ..., xét ở điểm... - nêu căn cứ để đánh giá (의의가 있다, 문제가 있다, 주목할 만하다).
+      examples:
+        - target: 이 연구는 같은 학생들을 10년 동안 추적 조사했다는 점에서 의미가 크다.
+          translation:
+            vi: Nghiên cứu này có ý nghĩa lớn ở chỗ đã theo dõi cùng một nhóm học sinh suốt mười năm.
+      pronunciation_note:
+        vi: 점에서 nối âm [저메서].
+      confusion:
+        vi: Phần đứng trước 점 phải là định ngữ hoàn chỉnh - -다는 점, -(으)ㄴ/는 점. Người Việt hay viết 이 연구는 10년 동안 조사해서 의미가 크다 - đúng ngữ pháp nhưng mất sắc thái học thuật "xét ở điểm".
+
+  - key: ko:item:he-gram-cheungmyeoneseo
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: N 측면에서 (보면) · N적 측면에서
+      romanization: cheungmyeoneseo
+      pos: cấu trúc lập luận
+    back:
+      meaning:
+        vi: Xét về mặt N, từ góc độ N - 비용 측면에서, 교육적 측면에서, 경제적 측면에서 보면.
+      examples:
+        - target: 비용 측면에서 보면 온라인 강의가 대면 수업보다 효율적이다.
+          translation:
+            vi: Xét về mặt chi phí, bài giảng trực tuyến hiệu quả hơn lớp học trực tiếp.
+      pronunciation_note:
+        vi: 측면 đọc [층면] - ㄱ trước ㅁ thành ㅇ.
+      confusion:
+        vi: 측면 là "mặt, khía cạnh" của vấn đề; 입장 là lập trường của một người (학부모 입장에서는). Đừng nói 저의 측면에서 - phải là 제 입장에서.
+
+  - key: ko:item:he-mullon-jiman
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: 물론 -(으)ㄹ 수도 있지만 · 물론 -기는 하지만
+      romanization: mullon -jiman
+      pos: mẫu nhượng bộ trong tranh luận
+    back:
+      meaning:
+        vi: Tất nhiên... nhưng - thừa nhận một phần ý kiến đối phương trước khi đưa ra phản biện. Phần sau 지만 mới là ý chính.
+      examples:
+        - target: 물론 사교육이 단기적으로 성적을 올릴 수도 있지만 그 효과가 오래가는지는 의문입니다.
+          translation:
+            vi: Tất nhiên học thêm có thể nâng điểm trong ngắn hạn, nhưng hiệu quả đó có lâu dài hay không thì còn là dấu hỏi.
+      pronunciation_note:
+        vi: 물론 đọc [물론]; hai âm ㄹ liền nhau giữ lưỡi trên lợi.
+      confusion:
+        vi: Tiếng Việt "tất nhiên" đứng một mình thường là đồng ý hoàn toàn. Trong tranh luận tiếng Hàn, 물론 ở đầu lượt nói gần như báo hiệu một chữ 지만 sắp đến - hãy chờ phần sau.
+
+  - key: ko:item:he-geureotago-haeseo
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, speaking]
+    front:
+      text: 그렇다고 해서 · -다고 해서 … -(으)ㄴ/는 것은 아니다
+      romanization: geureotago haeseo
+      pos: mẫu phản bác suy luận
+    back:
+      meaning:
+        vi: Nhưng không vì thế mà..., không phải cứ... là... - bác bỏ một suy luận quá đà của đối phương.
+      examples:
+        - target: 스마트폰이 집중력을 떨어뜨리는 것은 사실입니다. 그렇다고 해서 교실에서 무조건 금지해야 하는 것은 아닙니다.
+          translation:
+            vi: Điện thoại làm giảm khả năng tập trung là sự thật. Nhưng không vì thế mà phải cấm tuyệt đối trong lớp học.
+      pronunciation_note:
+        vi: 그렇다고 đọc [그러타고] - ㅎ gặp ㄷ thành ㅌ.
+      confusion:
+        vi: Vế sau phải là -(으)ㄴ/는 것은 아니다 (không phải là...) để phủ định cả suy luận; nếu viết 금지하지 않아야 한다 thì thành ý "phải không cấm" - mạnh hơn và khác nghĩa.
+
+  - key: ko:item:he-balpyo-yeolgi
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: 지금부터 N에 대해 발표하겠습니다
+      romanization: jigeumbuteo ... e daehae balpyohagetseumnida
+      pos: câu mở đầu thuyết trình
+    back:
+      meaning:
+        vi: Sau đây tôi xin trình bày về N - câu mở đầu chuẩn của bài thuyết trình, thường đi sau lời chào và giới thiệu bản thân.
+      examples:
+        - target: 안녕하십니까? 교육학과 김민지입니다. 지금부터 청소년 수면 실태에 대해 발표하겠습니다.
+          translation:
+            vi: Xin chào quý vị. Tôi là Kim Min-ji, khoa Giáo dục học. Sau đây tôi xin trình bày về thực trạng giấc ngủ của thanh thiếu niên.
+      pronunciation_note:
+        vi: 발표하겠습니다 đọc [발표하겓씀니다]; 습니다 đọc [씀니다].
+      confusion:
+        vi: -겠- ở đây là ý định lịch sự của người nói, không phải phỏng đoán. Đừng mở đầu bằng 발표할게요 - quá thân mật so với không khí học thuật.
+
+  - key: ko:item:he-balpyo-machim
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: 이상으로 발표를 마치겠습니다
+      romanization: isangeuro balpyoreul machigetseumnida
+      pos: câu kết thuyết trình
+    back:
+      meaning:
+        vi: Bài trình bày của tôi xin kết thúc tại đây - câu kết chuẩn; thường nối với 경청해 주셔서 감사합니다 (cảm ơn quý vị đã lắng nghe) và 질문 있으시면 말씀해 주십시오.
+      examples:
+        - target: 이상으로 발표를 마치겠습니다. 끝까지 경청해 주셔서 감사합니다.
+          translation:
+            vi: Bài trình bày của tôi xin dừng tại đây. Cảm ơn quý vị đã lắng nghe đến cuối.
+      pronunciation_note:
+        vi: 이상으로 nối âm [이상으로]; 마치겠습니다 đọc [마치겓씀니다].
+      confusion:
+        vi: 이상 ở đây là "những điều trên" (以上), không phải "bất thường" hay "trở lên". 경청 (傾聽 - khuynh thính) là lắng nghe chăm chú - từ lịch sự hơn 들어 주셔서.
+
+  - key: ko:item:he-ballon
+    type: vocab
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 반론 · 반론을 제기하다
+      romanization: ballon · balloneul jegihada
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: Ý kiến phản biện (反論 - phản luận); nêu ra ý kiến phản biện.
+      examples:
+        - target: 한 토론자가 통계 자료의 신뢰성에 대해 반론을 제기했다.
+          translation:
+            vi: Một người tham gia tranh luận đã nêu ý kiến phản biện về độ tin cậy của số liệu thống kê.
+      pronunciation_note:
+        vi: 반론 đọc [발론] - ㄴ gặp ㄹ thành ㄹㄹ.
+      confusion:
+        vi: 반론 là danh từ - ý kiến ngược lại; 반박하다 là hành động bác bỏ trực tiếp lý lẽ của người khác; 반대하다 là phản đối nói chung. Trong biên bản tranh luận, 반론을 제기하다 là cụm cố định.
+
+  - key: ko:item:he-toron-sahoeja
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 토론 · 토론자 · 사회자
+      romanization: toron · toronja · sahoeja
+      pos: danh từ
+    back:
+      meaning:
+        vi: Cuộc thảo luận, tranh luận / người tham gia tranh luận / người dẫn chương trình, người điều phối (司會者 - tư hội giả).
+      examples:
+        - target: 사회자는 토론자들에게 각각 3분씩 발언 시간을 주었다.
+          translation:
+            vi: Người điều phối cho mỗi người tham gia tranh luận ba phút phát biểu.
+      pronunciation_note:
+        vi: 토론 đọc [토론]; 사회자 đọc [사회자] hoặc [사훼자].
+      confusion:
+        vi: 사회자 (司會 - điều khiển buổi họp) đồng âm một phần với 사회 (社會 - xã hội), nên đừng dịch là "nhà xã hội học". 토론 là tranh luận có hai phía; 토의 là bàn bạc chung để tìm giải pháp.
+
+  - key: ko:item:he-jeongnihajamyeon
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [speaking, writing]
+    front:
+      text: 정리하자면 · 요약하자면
+      romanization: jeongnihajamyeon · yoyakajamyeon
+      pos: từ nối kết luận
+    back:
+      meaning:
+        vi: Tóm lại, nói gọn lại - báo hiệu phần tổng kết. Câu sau thường kết bằng -다는 것입니다.
+      examples:
+        - target: 정리하자면 수면의 양보다 질이 학습 효과에 더 큰 영향을 미친다는 것입니다.
+          translation:
+            vi: Tóm lại, chất lượng giấc ngủ ảnh hưởng đến hiệu quả học tập nhiều hơn số giờ ngủ.
+      pronunciation_note:
+        vi: 요약하자면 đọc [요야카자면] - ㄱ gặp ㅎ thành ㅋ.
+      confusion:
+        vi: 결론적으로 trang trọng hơn và hay dùng trong bài viết; 정리하자면 tự nhiên trong thuyết trình. Cấu trúc -자면 nghĩa là "nếu (tôi) nói ... thì".
+
+  # ================= bài 4: thành ngữ bốn chữ và tục ngữ về học tập, sức khoẻ, nỗ lực =================
+  - key: ko:item:he-gojingamnae
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 고진감래
+      romanization: gojingamnae
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Hết khổ đến sướng (苦盡甘來 - khổ tận cam lai) - vượt qua gian khổ thì niềm vui sẽ đến.
+      examples:
+        - target: 3년 동안의 재수 끝에 합격 소식을 들으니 고진감래라는 말이 실감 났다.
+          translation:
+            vi: Nghe tin đỗ sau ba năm ôn thi lại, tôi mới thấm thía câu "khổ tận cam lai".
+      pronunciation_note:
+        vi: Đọc [고진감내] - ㄹ sau ㅁ đọc thành ㄴ.
+      confusion:
+        vi: Tiếng Việt có đúng thành ngữ Hán Việt "khổ tận cam lai" và câu "hết cơn bĩ cực đến hồi thái lai". Dùng sau khi đã vượt qua khó khăn, không dùng để khuyên người đang lười.
+
+  - key: ko:item:he-yubimuhwan
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 유비무환
+      romanization: yubimuhwan
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Có chuẩn bị thì không lo hoạn nạn (有備無患 - hữu bị vô hoạn).
+      examples:
+        - target: 유비무환이라고, 겨울이 오기 전에 미리 독감 예방 접종을 맞아 두었다.
+          translation:
+            vi: Như người ta nói "có phòng thì không lo", tôi đã tiêm phòng cúm sẵn trước khi mùa đông đến.
+      pronunciation_note:
+        vi: Đọc [유비무환]; ㅘ lướt nhanh.
+      confusion:
+        vi: 유비무환 là chuẩn bị trước để không gặp hoạ - trái với 소 잃고 외양간 고친다 (mất bò mới lo làm chuồng). Tiếng Việt gần nghĩa là "phòng bệnh hơn chữa bệnh", "cẩn tắc vô áy náy".
+
+  - key: ko:item:he-jaeopjadeuk
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 자업자득
+      romanization: jaeopjadeuk
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Tự làm tự chịu, gieo gió gặt bão (自業自得 - tự nghiệp tự đắc).
+      examples:
+        - target: 시험 전날 밤새 게임을 하다가 지각했으니 자업자득이다.
+          translation:
+            vi: Chơi game thâu đêm trước hôm thi rồi đến muộn, đúng là tự làm tự chịu.
+      pronunciation_note:
+        vi: Đọc [자업짜득] - ㅈ sau patchim ㅂ đọc căng.
+      confusion:
+        vi: Thành ngữ này mang ý trách móc, nên nói về người khác trước mặt họ có thể rất nặng lời. Khi tự nhận lỗi, người Hàn hay nói 다 제 탓이죠 nhẹ nhàng hơn.
+
+  - key: ko:item:he-daegimanseong
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 대기만성
+      romanization: daegimanseong
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Người tài thường thành đạt muộn (大器晩成 - đại khí vãn thành) - cái bình lớn phải lâu mới nung xong.
+      examples:
+        - target: 마흔이 넘어 첫 소설을 낸 그는 대기만성형 작가로 불린다.
+          translation:
+            vi: Ông ra cuốn tiểu thuyết đầu tay khi đã ngoài bốn mươi và được gọi là nhà văn thuộc kiểu "đại khí vãn thành".
+      pronunciation_note:
+        vi: Đọc [대기만성].
+      confusion:
+        vi: Hay dùng dạng 대기만성형 (kiểu người thành công muộn) hoặc để động viên người đang chậm tiến. Đừng nhầm 대기 (大器 - tài lớn) với 대기 (待機 - chờ đợi) hay 대기 (大氣 - khí quyển).
+
+  - key: ko:item:he-ilchwiwoljang
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 일취월장
+      romanization: ilchwiwoljang
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Tiến bộ vượt bậc từng ngày từng tháng (日就月將 - nhật tựu nguyệt tương).
+      examples:
+        - target: 매일 꾸준히 연습한 덕분에 그의 발음 실력이 일취월장했다.
+          translation:
+            vi: Nhờ ngày nào cũng luyện tập đều đặn, khả năng phát âm của anh ấy tiến bộ vượt bậc.
+      pronunciation_note:
+        vi: Đọc [일취월짱] - ㅈ sau ㄹ trong từ Hán Hàn đọc căng.
+      confusion:
+        vi: Dùng được như động từ - 실력이 일취월장하다. Nó chỉ dùng cho kỹ năng, năng lực tiến bộ, không dùng cho giá cả hay số lượng tăng.
+
+  - key: ko:item:he-gwayubulgeup
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 과유불급
+      romanization: gwayubulgeup
+      pos: thành ngữ bốn chữ
+    back:
+      meaning:
+        vi: Thái quá cũng như bất cập, quá cũng chẳng tốt (過猶不及 - quá do bất cập).
+      examples:
+        - target: 운동이 몸에 좋다지만 과유불급이라고, 무리하면 오히려 부상을 입기 쉽다.
+          translation:
+            vi: Tập thể dục tốt cho sức khoẻ thật, nhưng "quá cũng như thiếu" - tập quá sức lại dễ chấn thương.
+      pronunciation_note:
+        vi: Đọc [과유불급]; ㅂ cuối đóng môi.
+      confusion:
+        vi: Ý là làm quá cũng tệ như làm thiếu, không có nghĩa "đừng làm". Hay dùng khi khuyên về ăn uống, tập luyện, học thêm.
+
+  - key: ko:item:he-baengmuni-buryeoilgyeon
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 백문이 불여일견
+      romanization: baengmuni buryeoilgyeon
+      pos: tục ngữ (gốc Hán)
+    back:
+      meaning:
+        vi: Trăm nghe không bằng một thấy (百聞不如一見 - bách văn bất như nhất kiến).
+      examples:
+        - target: 백문이 불여일견이라고, 교과서로만 배우던 갯벌 생태계를 직접 보니 이해가 훨씬 쉬웠다.
+          translation:
+            vi: Đúng là trăm nghe không bằng một thấy - tận mắt nhìn hệ sinh thái bãi bồi chỉ học qua sách giáo khoa, tôi hiểu dễ hơn hẳn.
+      pronunciation_note:
+        vi: Đọc [뱅무니 부려일견] - ㄱ trước ㅁ thành ㅇ, ㄹ nối sang 여.
+      confusion:
+        vi: Tiếng Việt có câu tương đương hoàn toàn. Hay đi với -(이)라고 ở đầu câu để dẫn tục ngữ - 백문이 불여일견이라고, ...
+
+  - key: ko:item:he-aneun-gildo
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 아는 길도 물어 가라
+      romanization: aneun gildo mureo gara
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Đường quen cũng nên hỏi lại mà đi - việc đã biết cũng phải cẩn thận, kiểm tra lại.
+      examples:
+        - target: 아는 길도 물어 가라는 말처럼, 익숙한 문제일수록 조건을 꼼꼼히 다시 읽어야 한다.
+          translation:
+            vi: Như câu "đường quen cũng phải hỏi", càng là dạng bài quen càng phải đọc lại kỹ điều kiện.
+      pronunciation_note:
+        vi: 물어 가라 nối âm [무러 가라].
+      confusion:
+        vi: Khác 유비무환 (chuẩn bị trước cho tương lai), câu này nhấn sự cẩn thận ngay cả với việc mình tưởng đã nắm chắc. Khi trích, dùng 아는 길도 물어 가라는 말처럼 / 말이 있듯이.
+
+  - key: ko:item:he-byeong-jugo-yak
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 병 주고 약 준다
+      romanization: byeong jugo yak junda
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Gây bệnh rồi lại cho thuốc - làm hại người ta rồi giả vờ giúp đỡ; gần với "vừa đấm vừa xoa".
+      examples:
+        - target: 숙제를 잔뜩 내 주고 힘내라며 사탕을 나눠 주시다니, 선생님도 병 주고 약 주시네요.
+          translation:
+            vi: Giao cả đống bài tập rồi lại phát kẹo bảo cố lên, cô đúng là vừa đấm vừa xoa.
+      pronunciation_note:
+        vi: Đọc [병 주고 약 준다]; ㅈ đầu từ nhẹ.
+      confusion:
+        vi: Thường dùng đùa nhẹ hoặc mỉa mai. Có thể chia động từ theo ngữ cảnh - 병 주고 약 주네, 병 주고 약 주는 격이다.
+
+  - key: ko:item:he-sijagi-banida
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 시작이 반이다
+      romanization: sijagi banida
+      pos: tục ngữ
+    back:
+      meaning:
+        vi: Bắt đầu là đã xong một nửa - khó nhất là dám bắt tay vào làm.
+      examples:
+        - target: 시작이 반이라는데, 오늘 헬스장 등록을 했으니 절반은 성공한 셈이다.
+          translation:
+            vi: Người ta bảo bắt đầu là xong một nửa - hôm nay tôi đăng ký phòng tập rồi, coi như thành công một nửa.
+      pronunciation_note:
+        vi: Đọc [시자기 바니다] - patchim ㄱ, ㄴ nối sang nguyên âm sau.
+      confusion:
+        vi: Câu này động viên người ngại bắt đầu, khác 작심삼일 (quyết tâm được ba ngày) - lời chê việc bỏ cuộc sớm. Tiếng Việt "vạn sự khởi đầu nan" nói cái khó của lúc bắt đầu, còn câu Hàn nhấn giá trị của việc bắt đầu.

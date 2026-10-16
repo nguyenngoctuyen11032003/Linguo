@@ -1,0 +1,532 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:law-ethics-review
+order_index: 5
+level: topik6
+title:
+  vi: Ôn tập - xã luận về xe trượt điện và buổi điều trần công khai
+objectives:
+  - vi: Đọc hiểu một bài xã luận - tìm chủ trương, nguyên nhân gốc và lời kêu gọi của người viết.
+  - vi: Theo dõi một buổi điều trần (공청회) - phân biệt lập trường của doanh nghiệp và tổ chức dân sự.
+  - vi: Tự kiểm tra các lỗi hay gặp - trật tự -(으)ㄹ 바에야, cách chia -다손 / -(으)ㄴ들, 그지없다 / 짝이 없다, 위반 / 침해.
+estimated_minutes: 30
+skills: [reading, listening, grammar, writing]
+prerequisites: [ko:lesson:editorial-refutation]
+items:
+  - item: ko:item:le-saseol
+    role: reuse
+  - item: ko:item:le-gongcheonghoe
+    role: reuse
+  - item: ko:item:le-gram-neun-de-itda
+    role: reuse
+  - item: ko:item:le-gram-l-ri-manmuhada
+    role: reuse
+  - item: ko:item:le-gram-n-deul
+    role: reuse
+  - item: ko:item:le-gram-dason-chideorado
+    role: reuse
+  - item: ko:item:le-gram-iyamallo
+    role: reuse
+  - item: ko:item:le-gram-l-baeya
+    role: reuse
+  - item: ko:item:le-gram-n-neun-madange
+    role: reuse
+  - item: ko:item:le-gram-l-jigyeongida
+    role: reuse
+  - item: ko:item:le-gram-gi-jjagi-eopda
+    role: reuse
+  - item: ko:item:le-chwiji
+    role: reuse
+  - item: ko:item:le-jaegohada
+    role: reuse
+  - item: ko:item:le-silhyoseong
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn gồm hai văn bản hư cấu do Linguo soạn về cùng một chủ đề - quản lý xe trượt điện cho thuê. Một bài xã luận nêu quan điểm của toà soạn, một buổi điều trần ghi lại ý kiến của doanh nghiệp và tổ chức dân sự.
+  - type: explain
+    text:
+      vi: Đọc xã luận, hãy đi tìm ba câu - câu công nhận (취지에는 공감한다), câu nêu nguyên nhân gốc (-는 데 있다) và câu kêu gọi ở cuối (-아/어야 한다, N이야말로). Các câu -(으)ㄴ들, -다손 치더라도 ở giữa là bước bác bỏ phản biện.
+  - type: explain
+    text:
+      vi: Nghe điều trần, hãy chú ý từ báo hiệu thái độ - -는 마당에, -(으)ㄹ 지경이다 thường là lời than của bên bị ảnh hưởng; -(으)ㄹ 바에야 차라리, -기 짝이 없다 là lời phản bác gay gắt. 모르는 바는 아니지만 là cách mềm mỏng thừa nhận trước khi phản đối.
+  - type: deep_explain
+    text:
+      vi: Câu hỏi "chủ trương của người viết" trong TOPIK thường có phương án bẫy lấy đúng ý của phe bị bác bỏ - ví dụ "nên để doanh nghiệp tự quản" xuất hiện trong bài nhưng nằm sau -다손 치더라도 và bị phủ định. Hãy luôn kiểm tra xem ý đó đứng ở vế nhượng bộ hay vế kết luận.
+  - type: example
+    target: "[사설] 전동 킥보드 규제, 땜질 처방으로는 안 된다 / 공유 전동 킥보드 사고가 해마다 늘어나는 가운데 국회가 대여 업체에 면허 확인을 의무화하는 법안을 논의하고 있다. 법안의 취지에는 공감한다. 그러나 단속 인력이 턱없이 부족한 현실에서 면허 확인 규정만 둔들 실효성을 거둘 리 만무하다. 업체의 부담이 커진다손 치더라도 이용자 안전을 업체의 자율에만 맡겨 둘 수는 없다. 사고의 근본 원인은 안전 책임이 누구에게 있는지 법이 분명히 정하지 않았다는 데 있다. 국회는 졸속 처리 대신 충분한 공청회를 거쳐야 한다. 이용자와 보행자의 목소리를 듣는 과정이야말로 좋은 법을 만드는 지름길이다."
+    target_lang: ko
+    translation:
+      vi: "[Xã luận] Quản lý xe trượt điện - không thể chữa cháy chắp vá / Trong bối cảnh tai nạn xe trượt điện cho thuê tăng mỗi năm, Quốc hội đang thảo luận dự luật bắt buộc doanh nghiệp cho thuê kiểm tra bằng lái. Chúng tôi đồng cảm với mục đích của dự luật. Nhưng trong thực tế lực lượng kiểm tra thiếu trầm trọng, chỉ đặt ra quy định kiểm tra bằng lái thì không đời nào đạt hiệu quả. Cứ cho là gánh nặng của doanh nghiệp tăng lên đi nữa, cũng không thể phó mặc an toàn của người dùng cho sự tự giác của doanh nghiệp. Nguyên nhân gốc của tai nạn nằm ở chỗ luật chưa quy định rõ trách nhiệm an toàn thuộc về ai. Quốc hội phải qua đủ các buổi điều trần thay vì thông qua vội vàng. Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để làm ra luật tốt."
+    note:
+      vi: Xã luận hư cấu - 취지 인정 → -(으)ㄴ들 + 리 만무하다 → -다손 치더라도 → -는 데 있다 → 촉구 → 이야말로.
+  - type: example
+    target: "사회자: 지금부터 전동 킥보드 안전법 공청회를 시작하겠습니다. 먼저 업계 측 진술인께서 말씀해 주십시오. / 업계 대표: 이렇게 시장이 위축된 마당에 면허 확인까지 의무화하면 작은 업체들은 문을 닫을 지경입니다. / 시민 단체 대표: 업계의 어려움을 모르는 바는 아닙니다. 그러나 보행자 안전을 포기할 바에야 차라리 서비스를 중단하는 편이 낫습니다. 사고 피해자들의 억울함을 생각하면 안전 비용을 아끼자는 주장은 무책임하기 짝이 없습니다."
+    target_lang: ko
+    translation:
+      vi: "Người chủ trì - Bây giờ chúng tôi xin bắt đầu buổi điều trần về Luật An toàn xe trượt điện. Trước hết, xin mời đại diện phía doanh nghiệp phát biểu. / Đại diện doanh nghiệp - Trong lúc thị trường đã chững lại thế này mà còn bắt buộc kiểm tra bằng lái thì các doanh nghiệp nhỏ đến mức phải đóng cửa. / Đại diện tổ chức dân sự - Chúng tôi không phải không hiểu khó khăn của doanh nghiệp. Nhưng thà ngừng dịch vụ còn hơn từ bỏ an toàn của người đi bộ. Nghĩ đến nỗi oan ức của các nạn nhân tai nạn, chủ trương tiết kiệm chi phí an toàn thật vô trách nhiệm hết chỗ nói."
+    note:
+      vi: Điều trần hư cấu - 진술인 là người được mời trình bày; -는 마당에, -(으)ㄹ 지경 (lời than), -(으)ㄹ 바에야, -기 짝이 없다 (phản bác).
+  - type: example
+    target: 피해자의 사생활을 침해하는 보도는 언론 윤리에 어긋나며 경우에 따라서는 법 위반이 될 수도 있다.
+    target_lang: ko
+    translation:
+      vi: Những bài báo xâm phạm đời tư của nạn nhân là trái đạo đức báo chí, và tuỳ trường hợp còn có thể thành vi phạm pháp luật.
+    note:
+      vi: Quyền bị xâm phạm - 침해; luật bị vi phạm - 위반.
+  - type: common_mistake
+    wrong: 서비스를 중단할 바에야 차라리 보행자 안전을 포기하겠다.
+    right: 보행자 안전을 포기할 바에야 차라리 서비스를 중단하겠다.
+    target_lang: ko
+    note:
+      vi: Đứng trước 바에야 là điều bị gạt bỏ. Câu sai nghĩa là "thà bỏ an toàn còn hơn ngừng dịch vụ" - ngược với ý của tổ chức dân sự.
+  - type: common_mistake
+    wrong: 규정을 아무리 많이 만드는들 지키지 않으면 소용없다.
+    right: 규정을 아무리 많이 만든들 지키지 않으면 소용없다.
+    target_lang: ko
+    note:
+      vi: -(으)ㄴ들 không có dạng -는들 - 만들다 → 만든들 (ㄹ rơi).
+  - type: common_mistake
+    wrong: 그동안 성원해 주신 시민 여러분께 감사하기 짝이 없습니다.
+    right: 그동안 성원해 주신 시민 여러분께 감사하기 그지없습니다.
+    target_lang: ko
+    note:
+      vi: 짝이 없다 dùng để chê; lời cảm ơn trang trọng dùng 그지없다.
+  - type: summary
+    points:
+      - vi: Xã luận - 취지 인정 → -(으)ㄴ들 / -다손 치더라도 (bác bỏ phản biện) → -는 데 있다 (nguyên nhân gốc) → -아/어야 한다, N이야말로 (kết luận).
+      - vi: Điều trần - -는 마당에, -(으)ㄹ 지경이다 (than khó) · -(으)ㄹ 바에야 차라리, -기 짝이 없다 (phản bác gay gắt).
+      - vi: Ý kiến đứng sau -다손 치더라도 / -(으)ㄴ들 mới là quan điểm người viết.
+      - vi: 위반 (luật) ≠ 침해 (quyền); 졸속 ≠ 신속; 그지없다 (trang trọng) ≠ 짝이 없다 (chê).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:le-review-mcq-editorial-claim
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-saseol
+    prompt:
+      stem: "[사설] … 업체의 부담이 커진다손 치더라도 이용자 안전을 업체의 자율에만 맡겨 둘 수는 없다. … 국회는 졸속 처리 대신 충분한 공청회를 거쳐야 한다. 이용자와 보행자의 목소리를 듣는 과정이야말로 좋은 법을 만드는 지름길이다. - Chủ trương của bài xã luận là gì?"
+      stem_lang: vi
+      options:
+        - { id: a3x, text: "Quốc hội cần lắng nghe đủ ý kiến qua các buổi điều trần thay vì thông qua vội vàng.", lang: vi }
+        - { id: m9e, text: "Nên giao hoàn toàn vấn đề an toàn cho doanh nghiệp tự quản.", lang: vi }
+        - { id: k1q, text: "Nên bỏ hẳn quy định kiểm tra bằng lái vì tốn kém.", lang: vi }
+        - { id: t6w, text: "Tai nạn xe trượt điện đang giảm nên không cần luật mới.", lang: vi }
+    answer:
+      correct_option_id: a3x
+    explanation:
+      vi: Kết luận ở cuối bài - 졸속 처리 대신 충분한 공청회를 거쳐야 한다 và -이야말로 - là chủ trương. "Giao cho doanh nghiệp tự quản" nằm trong vế bị bác bỏ sau -다손 치더라도; bài cũng nói tai nạn 해마다 늘어나다 (tăng mỗi năm).
+    display_answer: "Quốc hội cần lắng nghe đủ ý kiến qua các buổi điều trần thay vì thông qua vội vàng."
+
+  - key: ko:exercise:le-review-mcq-root-cause
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-neun-de-itda
+    prompt:
+      stem: "사고의 근본 원인은 안전 책임이 누구에게 있는지 법이 분명히 정하지 않았다는 데 있다. - Theo người viết, nguyên nhân gốc của tai nạn là gì?"
+      stem_lang: vi
+      options:
+        - { id: r5b, text: "Luật chưa quy định rõ trách nhiệm an toàn thuộc về ai.", lang: vi }
+        - { id: h2m, text: "Người dùng không biết luật giao thông.", lang: vi }
+        - { id: o8f, text: "Doanh nghiệp không có đủ xe cho thuê.", lang: vi }
+        - { id: y4k, text: "Pháp luật đã quy định quá rõ trách nhiệm an toàn.", lang: vi }
+    answer:
+      correct_option_id: r5b
+    explanation:
+      vi: (원인은) -다는 데 있다 = nguyên nhân nằm ở chỗ... - 법이 분명히 정하지 않았다 (luật chưa quy định rõ). Phương án cuối ngược nghĩa; hai phương án kia không có trong câu.
+    display_answer: "Luật chưa quy định rõ trách nhiệm an toàn thuộc về ai."
+
+  - key: ko:exercise:le-review-listen-industry
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-n-neun-madange
+    prompt:
+      audio_asset_id: null
+      fallback_text: 이렇게 시장이 위축된 마당에 면허 확인까지 의무화하면 작은 업체들은 문을 닫을 지경입니다.
+      options:
+        - { id: e7c, text: "Trong lúc thị trường đã chững lại thế này mà còn bắt buộc kiểm tra bằng lái thì các doanh nghiệp nhỏ đến mức phải đóng cửa.", lang: vi }
+        - { id: n0s, text: "Thị trường đang phát triển nên các doanh nghiệp nhỏ sẽ mở thêm cửa hàng.", lang: vi }
+        - { id: v6j, text: "Các doanh nghiệp nhỏ đã đóng cửa ngoài sân để kiểm tra bằng lái.", lang: vi }
+        - { id: g3a, text: "Bắt buộc kiểm tra bằng lái sẽ giúp thị trường lớn mạnh.", lang: vi }
+    answer:
+      correct_option_id: e7c
+    explanation:
+      vi: -(으)ㄴ 마당에 = trong tình cảnh (đã xấu) thế này mà; -(으)ㄹ 지경이다 = đến mức (tồi tệ). Doanh nghiệp đang than khó, không nói về phát triển; 마당 không phải "sân".
+    display_answer: "Trong lúc thị trường đã chững lại thế này mà còn bắt buộc kiểm tra bằng lái thì các doanh nghiệp nhỏ đến mức phải đóng cửa."
+
+  - key: ko:exercise:le-review-mcq-civic-attitude
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-gram-gi-jjagi-eopda
+    prompt:
+      stem: "시민 단체 대표: 업계의 어려움을 모르는 바는 아닙니다. 그러나 보행자 안전을 포기할 바에야 차라리 서비스를 중단하는 편이 낫습니다. … 안전 비용을 아끼자는 주장은 무책임하기 짝이 없습니다. - Thái độ của đại diện tổ chức dân sự là gì?"
+      stem_lang: vi
+      options:
+        - { id: p8t, text: "Hiểu khó khăn của doanh nghiệp nhưng phê phán mạnh, đặt an toàn người đi bộ lên trên hết.", lang: vi }
+        - { id: b1r, text: "Hoàn toàn đồng ý với doanh nghiệp và muốn giảm chi phí an toàn.", lang: vi }
+        - { id: l5y, text: "Muốn doanh nghiệp mở rộng dịch vụ bằng mọi giá.", lang: vi }
+        - { id: w9n, text: "Thờ ơ, không quan tâm đến vấn đề an toàn.", lang: vi }
+    answer:
+      correct_option_id: p8t
+    explanation:
+      vi: 모르는 바는 아닙니다 = không phải không hiểu (thừa nhận mềm), rồi 그러나 + -(으)ㄹ 바에야 차라리 (thà ngừng dịch vụ) + -기 짝이 없다 (chê mạnh). Người nói đặt an toàn lên trên lợi ích doanh nghiệp.
+    display_answer: "Hiểu khó khăn của doanh nghiệp nhưng phê phán mạnh, đặt an toàn người đi bộ lên trên hết."
+
+  - key: ko:exercise:le-review-fill-manmu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-l-ri-manmuhada
+    prompt:
+      template: "단속 인력이 턱없이 부족한 현실에서 면허 확인 규정만 둔들 실효성을 거둘 리 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Phủ định mạnh "không đời nào" (萬無 - vạn vô) + 하다.
+        - 만...
+    answer:
+      blanks:
+        b1: [만무하다, 만무합니다, 없다, 없습니다]
+    known_wrong:
+      - answer: 만무한다
+        feedback_vi: 만무하다 là tính từ, câu văn viết giữ nguyên 만무하다 (không thêm -ㄴ다).
+        error_tag: adjective_nda
+      - answer: 있다
+        feedback_vi: Ngược nghĩa. Câu có -(으)ㄴ들 (dù có... đi nữa) nên kết luận là "không đời nào" - 리 만무하다.
+        error_tag: meaning_reversed
+    explanation:
+      vi: -(으)ㄴ들 (chỉ đặt quy định đi nữa) + -(으)ㄹ 리 만무하다 (không đời nào hiệu quả) là cặp hay đi cùng trong xã luận. -(으)ㄹ 리 없다 cũng đúng nhưng kém trang trọng hơn.
+    display_answer: 단속 인력이 턱없이 부족한 현실에서 면허 확인 규정만 둔들 실효성을 거둘 리 만무하다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:le-review-fill-deitda
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-neun-de-itda
+    prompt:
+      template: "갈등이 커진 원인은 정부가 주민들과 충분히 소통하지 {{b1}} 데 있다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [않았다는, 않은, 못했다는, 못한]
+    known_wrong:
+      - answer: 않았는
+        feedback_vi: Quá khứ trước 데 dùng -았/었다는 (않았다는) hoặc định ngữ -(으)ㄴ (않은), không có dạng 않았는.
+        error_tag: de_itda_form
+      - answer: 않았기
+        feedback_vi: Trước danh từ phụ thuộc 데 cần định ngữ, không dùng -기.
+        error_tag: de_itda_form
+    explanation:
+      vi: (원인은) -지 않았다는 데 있다 = nguyên nhân nằm ở chỗ đã không... Việc đã xảy ra nên dùng -았/었다는 hoặc -(으)ㄴ.
+    display_answer: 갈등이 커진 원인은 정부가 주민들과 충분히 소통하지 않았다는 데 있다.
+
+  - key: ko:exercise:le-review-fill-baeya
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-l-baeya
+    prompt:
+      template: "검증되지 않은 제품을 서둘러 {{b1}} 바에야 차라리 출시를 몇 달 {{b2}} 편이 낫다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [팔, 판매할, 출시할, 내놓을]
+        b2: [미루는, 늦추는, 연기하는]
+    known_wrong:
+      - answer: 파는
+        feedback_vi: Trước 바에야 dùng định ngữ -(으)ㄹ - 팔 바에야.
+        error_tag: baeya_form
+      - answer: 미룰
+        feedback_vi: Trước 편이 낫다 dùng định ngữ -는 - 미루는 편이 낫다.
+        error_tag: pyeon_form
+    explanation:
+      vi: Điều bị gạt bỏ (bán vội sản phẩm chưa kiểm chứng) + -(으)ㄹ 바에야, điều được chọn (hoãn ra mắt) + -는 편이 낫다 sau 차라리.
+    display_answer: 검증되지 않은 제품을 서둘러 팔 바에야 차라리 출시를 몇 달 미루는 편이 낫다.
+
+  - key: ko:exercise:le-review-translate-dason
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-dason-chideorado
+    prompt:
+      source_text: Cứ cho là chi phí tăng lên đi nữa thì cũng không thể xem nhẹ an toàn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "비용이 늘어난다손 치더라도 안전을 포기할 수는 없다."
+        - "비용이 늘어난다손 치더라도 안전을 포기할 수는 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 포기할 수 없다."
+        - "비용이 늘어난다손 치더라도 안전을 포기할 수 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 무시할 수는 없다."
+        - "비용이 늘어난다손 치더라도 안전을 무시할 수는 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 무시할 수 없다."
+        - "비용이 늘어난다손 치더라도 안전을 무시할 수 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 소홀히 할 수는 없다."
+        - "비용이 늘어난다손 치더라도 안전을 소홀히 할 수는 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 소홀히 할 수 없다."
+        - "비용이 늘어난다손 치더라도 안전을 소홀히 할 수 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 가볍게 여길 수는 없다."
+        - "비용이 늘어난다손 치더라도 안전을 가볍게 여길 수는 없습니다."
+        - "비용이 늘어난다손 치더라도 안전을 가볍게 여길 수 없다."
+        - "비용이 늘어난다손 치더라도 안전을 가볍게 여길 수 없습니다."
+        - "비용이 는다손 치더라도 안전을 포기할 수는 없다."
+        - "비용이 는다손 치더라도 안전을 포기할 수는 없습니다."
+        - "비용이 는다손 치더라도 안전을 포기할 수 없다."
+        - "비용이 는다손 치더라도 안전을 포기할 수 없습니다."
+        - "비용이 는다손 치더라도 안전을 무시할 수는 없다."
+        - "비용이 는다손 치더라도 안전을 무시할 수는 없습니다."
+        - "비용이 는다손 치더라도 안전을 무시할 수 없다."
+        - "비용이 는다손 치더라도 안전을 무시할 수 없습니다."
+        - "비용이 는다손 치더라도 안전을 소홀히 할 수는 없다."
+        - "비용이 는다손 치더라도 안전을 소홀히 할 수는 없습니다."
+        - "비용이 는다손 치더라도 안전을 소홀히 할 수 없다."
+        - "비용이 는다손 치더라도 안전을 소홀히 할 수 없습니다."
+        - "비용이 는다손 치더라도 안전을 가볍게 여길 수는 없다."
+        - "비용이 는다손 치더라도 안전을 가볍게 여길 수는 없습니다."
+        - "비용이 는다손 치더라도 안전을 가볍게 여길 수 없다."
+        - "비용이 는다손 치더라도 안전을 가볍게 여길 수 없습니다."
+        - "비용이 커진다손 치더라도 안전을 포기할 수는 없다."
+        - "비용이 커진다손 치더라도 안전을 포기할 수는 없습니다."
+        - "비용이 커진다손 치더라도 안전을 포기할 수 없다."
+        - "비용이 커진다손 치더라도 안전을 포기할 수 없습니다."
+        - "비용이 커진다손 치더라도 안전을 무시할 수는 없다."
+        - "비용이 커진다손 치더라도 안전을 무시할 수는 없습니다."
+        - "비용이 커진다손 치더라도 안전을 무시할 수 없다."
+        - "비용이 커진다손 치더라도 안전을 무시할 수 없습니다."
+        - "비용이 커진다손 치더라도 안전을 소홀히 할 수는 없다."
+        - "비용이 커진다손 치더라도 안전을 소홀히 할 수는 없습니다."
+        - "비용이 커진다손 치더라도 안전을 소홀히 할 수 없다."
+        - "비용이 커진다손 치더라도 안전을 소홀히 할 수 없습니다."
+        - "비용이 커진다손 치더라도 안전을 가볍게 여길 수는 없다."
+        - "비용이 커진다손 치더라도 안전을 가볍게 여길 수는 없습니다."
+        - "비용이 커진다손 치더라도 안전을 가볍게 여길 수 없다."
+        - "비용이 커진다손 치더라도 안전을 가볍게 여길 수 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 포기할 수는 없다."
+        - "비용이 증가한다손 치더라도 안전을 포기할 수는 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 포기할 수 없다."
+        - "비용이 증가한다손 치더라도 안전을 포기할 수 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 무시할 수는 없다."
+        - "비용이 증가한다손 치더라도 안전을 무시할 수는 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 무시할 수 없다."
+        - "비용이 증가한다손 치더라도 안전을 무시할 수 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 소홀히 할 수는 없다."
+        - "비용이 증가한다손 치더라도 안전을 소홀히 할 수는 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 소홀히 할 수 없다."
+        - "비용이 증가한다손 치더라도 안전을 소홀히 할 수 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 가볍게 여길 수는 없다."
+        - "비용이 증가한다손 치더라도 안전을 가볍게 여길 수는 없습니다."
+        - "비용이 증가한다손 치더라도 안전을 가볍게 여길 수 없다."
+        - "비용이 증가한다손 치더라도 안전을 가볍게 여길 수 없습니다."
+    known_wrong:
+      - answer: 비용이 늘어나다손 치더라도 안전을 소홀히 할 수는 없다.
+        feedback_vi: Động từ chia -ㄴ/는다손 - 늘어나다 → 늘어난다손.
+        error_tag: dason_form
+      - answer: 비용이 늘어난다손 치더라도 안전을 소홀히 할 수 있다.
+        feedback_vi: Ý "không thể xem nhẹ" là -(으)ㄹ 수 없다; câu này thành "có thể xem nhẹ".
+        error_tag: meaning_reversed
+    explanation:
+      vi: V-ㄴ/는다손 치더라도 = cứ cho là... đi nữa; vế sau là kết luận -(으)ㄹ 수는 없다. "Xem nhẹ" tự nhiên là 소홀히 하다 hoặc 가볍게 여기다.
+    display_answer: 비용이 늘어난다손 치더라도 안전을 소홀히 할 수는 없다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:le-review-translate-yamallo-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-gram-iyamallo
+    prompt:
+      source_text: 이용자와 보행자의 목소리를 듣는 과정이야말로 좋은 법을 만드는 지름길이다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để làm ra luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để làm ra đạo luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để xây dựng luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để xây dựng đạo luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra đạo luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng đạo luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để làm ra luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để làm ra đạo luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để xây dựng luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để xây dựng đạo luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra đạo luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng đạo luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để làm ra luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để làm ra đạo luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để xây dựng luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để xây dựng đạo luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra đạo luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng đạo luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để làm ra luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để làm ra đạo luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để xây dựng luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường tắt để xây dựng đạo luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để làm ra đạo luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là con đường ngắn nhất để xây dựng đạo luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là cách nhanh nhất để làm ra luật tốt."
+        - "Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là cách nhanh nhất để xây dựng luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là cách nhanh nhất để làm ra luật tốt."
+        - "Chính quá trình lắng nghe ý kiến của người dùng và người đi bộ mới là cách nhanh nhất để xây dựng luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là cách nhanh nhất để làm ra luật tốt."
+        - "Chính việc lắng nghe tiếng nói của người dùng và người đi bộ mới là cách nhanh nhất để xây dựng luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là cách nhanh nhất để làm ra luật tốt."
+        - "Chính việc lắng nghe ý kiến của người dùng và người đi bộ mới là cách nhanh nhất để xây dựng luật tốt."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Quá trình lắng nghe người dùng và người đi bộ là con đường xa để làm ra luật tốt.
+        feedback_vi: 지름길 là đường tắt, không phải đường xa; và thiếu ý nhấn mạnh "chính... mới là" của 이야말로.
+        error_tag: meaning_changed
+      - answer: Người dùng và người đi bộ đã làm ra luật tốt bằng con đường tắt.
+        feedback_vi: Câu gốc không nói người dùng làm luật; nó nói quá trình lắng nghe họ mới là con đường tắt.
+        error_tag: meaning_changed
+    explanation:
+      vi: N이야말로 = chính N mới là; 지름길 = đường tắt, cách nhanh nhất. Tiếng Việt cần "chính... mới là" để giữ sắc thái nhấn mạnh.
+    display_answer: Chính quá trình lắng nghe tiếng nói của người dùng và người đi bộ mới là con đường tắt để làm ra luật tốt.
+
+  - key: ko:exercise:le-review-order-civic
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-gi-jjagi-eopda
+    prompt:
+      instruction: "Sắp xếp thành lời phát biểu: \"Nghĩ đến nỗi oan ức của nạn nhân, chủ trương của ngành thật vô trách nhiệm hết chỗ nói.\""
+      tokens:
+        - { id: c2d, text: 주장은 }
+        - { id: x7h, text: 없습니다 }
+        - { id: i4v, text: 억울함을 }
+        - { id: f9p, text: 가해자들의 }
+        - { id: s1k, text: 업계의 }
+        - { id: z3e, text: 무책임하기 }
+        - { id: q6m, text: 피해자들의 }
+        - { id: j8a, text: 짝이 }
+        - { id: o5w, text: 생각하면 }
+    answer:
+      orders:
+        - [q6m, i4v, o5w, s1k, c2d, z3e, j8a, x7h]
+    explanation:
+      vi: Điều kiện -(으)면 đứng trước, nhận định A-기 짝이 없습니다 ở cuối. 가해자들의 là token nhiễu - người chịu oan là nạn nhân (피해자).
+    display_answer: 피해자들의 억울함을 생각하면 업계의 주장은 무책임하기 짝이 없습니다.
+
+  - key: ko:exercise:le-review-mcq-moderator
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gongcheonghoe
+    prompt:
+      stem: "Bạn là người chủ trì buổi điều trần. Câu nào phù hợp để mời người trình bày tiếp theo?"
+      stem_lang: vi
+      options:
+        - { id: u3b, text: "다음으로 시민 단체 측 진술인께서 말씀해 주시기 바랍니다.", lang: ko }
+        - { id: d7n, text: "다음으로 시민 단체 측 진술인이 말해 봐.", lang: ko }
+        - { id: k0g, text: "다음으로 시민 단체 측 진술인께서 말씀해 주실 리 만무합니다.", lang: ko }
+        - { id: h5s, text: "시민 단체 측 진술인께서 말씀하신들 무슨 소용이 있겠습니까?", lang: ko }
+    answer:
+      correct_option_id: u3b
+    explanation:
+      vi: Chủ trì buổi điều trần cần 합쇼체 và kính ngữ - 께서 말씀해 주시기 바랍니다. 반말 (말해 봐) là thất lễ; -(으)ㄹ 리 만무하다 và -(으)ㄴ들 phủ định, gạt bỏ người nói - không hợp với vai người chủ trì trung lập.
+    display_answer: "다음으로 시민 단체 측 진술인께서 말씀해 주시기 바랍니다."
+
+  - key: ko:exercise:le-review-translate-jaego
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-jaegohada
+    prompt:
+      source_text: Chính phủ cần xem xét lại chính sách này dựa trên ý kiến thu được tại buổi điều trần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "정부는 공청회에서 나온 의견을 바탕으로 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 나온 의견을 바탕으로 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 나온 의견을 바탕으로 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 나온 의견을 바탕으로 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 나온 의견을 토대로 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 나온 의견을 토대로 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 나온 의견을 토대로 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 나온 의견을 토대로 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 나온 의견을 반영하여 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 나온 의견을 반영하여 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 나온 의견을 반영하여 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 나온 의견을 반영하여 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 나온 의견을 반영해 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 나온 의견을 반영해 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 나온 의견을 반영해 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 나온 의견을 반영해 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 바탕으로 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 바탕으로 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 바탕으로 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 바탕으로 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 토대로 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 토대로 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 토대로 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 토대로 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 반영하여 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 반영하여 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 반영하여 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 반영하여 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 반영해 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 반영해 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 수렴한 의견을 반영해 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 수렴한 의견을 반영해 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 바탕으로 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 제기된 의견을 바탕으로 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 바탕으로 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 제기된 의견을 바탕으로 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 토대로 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 제기된 의견을 토대로 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 토대로 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 제기된 의견을 토대로 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 반영하여 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 제기된 의견을 반영하여 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 반영하여 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 제기된 의견을 반영하여 이 정책을 다시 검토해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 반영해 이 정책을 재고해야 한다."
+        - "정부는 공청회에서 제기된 의견을 반영해 이 정책을 재고해야 합니다."
+        - "정부는 공청회에서 제기된 의견을 반영해 이 정책을 다시 검토해야 한다."
+        - "정부는 공청회에서 제기된 의견을 반영해 이 정책을 다시 검토해야 합니다."
+    known_wrong:
+      - answer: 정부는 청문회에서 나온 의견을 바탕으로 이 정책을 재고해야 한다.
+        feedback_vi: 청문회 là phiên chất vấn (thường với ứng viên chức vụ). Buổi lấy ý kiến công chúng về chính sách là 공청회.
+        error_tag: gongcheong_vs_cheongmun
+      - answer: 정부는 공청회에서 나온 의견을 바탕으로 이 정책을 재고가 해야 한다.
+        feedback_vi: 재고하다 là một động từ - 정책을 재고해야 한다.
+        error_tag: verb_form
+    explanation:
+      vi: Cụm "ý kiến thu được tại buổi điều trần" =공청회에서 나온 / 수렴한 의견; "dựa trên" = N을/를 바탕으로 / 토대로; "xem xét lại" = 재고하다.
+    display_answer: 정부는 공청회에서 나온 의견을 바탕으로 이 정책을 재고해야 한다.

@@ -1,0 +1,632 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:excess-consequences
+order_index: 3
+level: topik5
+title:
+  vi: Tiêu xài quá đà và hậu quả - -(으)ㄴ 나머지, -기 십상이다, -는 통에
+objectives:
+  - vi: Kể hậu quả của việc làm quá mức bằng V/A-(으)ㄴ 나머지.
+  - vi: Cảnh báo kết quả xấu gần như chắc chắn bằng V-기 십상이다.
+  - vi: Phân biệt -는 통에 (tình cảnh rối ren kéo dài) với -는 바람에 (sự việc bất ngờ) và -는 탓에 (đổ lỗi).
+  - vi: Dùng đúng cụm từ tài chính cá nhân - 충동구매, 과소비, 할부, 대출을 받다, 빚을 지다, 손해를 보다, 투자하다.
+estimated_minutes: 25
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ko:lesson:written-reasons]
+items:
+  - item: ko:item:el-gram-n-nameoji
+  - item: ko:item:el-gram-gi-sipsangida
+  - item: ko:item:el-gram-neun-tonge
+  - item: ko:item:el-chungdong-gumae
+  - item: ko:item:el-gwasobi
+  - item: ko:item:el-daechul
+  - item: ko:item:el-bit
+  - item: ko:item:el-sonhae
+  - item: ko:item:el-tuja
+  - item: ko:item:el-halbu
+  - item: ko:item:gram-neun-barame
+    role: reuse
+  - item: ko:item:ha-gram-gi-swipda
+    role: reuse
+  - item: ko:item:gp-neun-tase
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này xoay quanh chuyện tiền bạc cá nhân - mua sắm bốc đồng, trả góp, vay nợ, đầu tư theo phong trào. Bạn học ba cấu trúc để nói "vì quá... nên", "kiểu gì cũng sẽ..." và "vì cái cảnh ồn ào đó mà...".
+  - type: explain
+    text:
+      vi: V/A-(으)ㄴ 나머지 nghĩa là "vì quá... đến nỗi" - vế trước là cảm xúc hay hành động thái quá (긴장하다, 들뜨다, 서두르다), vế sau là kết quả ngoài ý muốn ở quá khứ. Người Việt hay viết -는 나머지 cho hiện tại, nhưng cấu trúc này gần như luôn dùng định ngữ -(으)ㄴ.
+  - type: explain
+    text:
+      vi: V-기 십상이다 là lời cảnh báo "làm vậy thì mười phần tám chín sẽ..." và chỉ đi với kết quả xấu. Nó gần với -기 쉽다 bạn đã học, nhưng mạnh hơn, và khác -기 마련이다 (quy luật tự nhiên, không nhất thiết xấu).
+  - type: explain
+    text:
+      vi: Ba cấu trúc "tại vì" mang kết quả xấu - -는 바람에 (một sự việc bất ngờ - 갑자기 정전이 되는 바람에), -는 통에 (cả một tình cảnh ồn ào, rối ren kéo dài - 공사하는 통에), -는 탓에 (đổ lỗi, văn viết). Tiếng Việt chỉ nói "tại vì", nên hãy nhìn xem nguyên nhân là một khoảnh khắc hay cả một bầu không khí.
+  - type: deep_explain
+    text:
+      vi: Cách chia - V-(으)ㄴ 나머지 (서두른 나머지), A-(으)ㄴ 나머지 (기쁜 나머지), N에 몰두한 나머지; V-기 십상이다 thường đi sau điều kiện -(으)면, -다가는, -다 보면; V-는 통에 hoặc N 통에 (난리 통에). Collocation tài chính cần thuộc nguyên cụm vì tiếng Việt dùng động từ khác - 빚을 지다 (mắc nợ, không phải 받다), 손해를 보다 (chịu lỗ, không phải 받다), 대출을 받다 (vay), 할부로 사다 (mua trả góp).
+  - type: example
+    target: 첫 월급을 받고 들뜬 나머지 한 달 생활비를 일주일 만에 다 써 버렸다.
+    target_lang: ko
+    translation:
+      vi: Nhận tháng lương đầu tiên, tôi phấn khởi quá nên tiêu hết tiền sinh hoạt một tháng chỉ trong một tuần.
+    note:
+      vi: 들뜨다 → 들뜬 나머지; kết quả ngoài ý muốn ở quá khứ.
+  - type: example
+    target: 수익률만 보고 잘 모르는 상품에 투자하면 원금까지 잃기 십상이다.
+    target_lang: ko
+    translation:
+      vi: Chỉ nhìn lợi suất mà đầu tư vào sản phẩm mình không hiểu rõ thì rất dễ mất cả tiền gốc.
+    note:
+      vi: Điều kiện -(으)면 + cảnh báo -기 십상이다.
+  - type: example
+    target: 명절 연휴에 손님들이 한꺼번에 몰리는 통에 가게 직원들은 점심도 거르고 일했다.
+    target_lang: ko
+    translation:
+      vi: Kỳ nghỉ lễ khách kéo đến cùng lúc, bận tối mắt nên nhân viên cửa hàng phải bỏ cả bữa trưa mà làm.
+    note:
+      vi: Nguyên nhân là cả một cảnh đông đúc hỗn loạn - -는 통에 tự nhiên hơn -는 바람에.
+  - type: example
+    target: 그는 무리하게 대출을 받아 집을 샀다가 금리가 오르자 빚 갚기에 허덕이고 있다.
+    target_lang: ko
+    translation:
+      vi: Anh ấy vay quá sức để mua nhà, rồi khi lãi suất tăng thì đang chật vật trả nợ.
+    note:
+      vi: 대출을 받다 (vay ngân hàng) và 빚 (nợ nói chung) thường đi cùng nhau trong một câu chuyện.
+  - type: example
+    target: 할부라서 부담이 적다고 생각한 나머지 필요 이상으로 비싼 냉장고를 골랐다.
+    target_lang: ko
+    translation:
+      vi: Vì cứ nghĩ trả góp thì đỡ nặng, tôi đã chọn một chiếc tủ lạnh đắt hơn mức cần thiết.
+    note:
+      vi: Vế trước của -(으)ㄴ 나머지 cũng có thể là một suy nghĩ quá đà (-다고 생각한 나머지).
+  - type: common_mistake
+    wrong: 너무 긴장하는 나머지 면접에서 실수할 것이다.
+    right: 너무 긴장한 나머지 면접에서 실수를 하고 말았다.
+    target_lang: ko
+    note:
+      vi: -(으)ㄴ 나머지 kể lại kết quả đã xảy ra, nên dùng định ngữ quá khứ và vế sau ở quá khứ. Muốn dự đoán tương lai, dùng -기 십상이다.
+  - type: common_mistake
+    wrong: 꾸준히 저축하면 돈을 모으기 십상이다.
+    right: 꾸준히 저축하면 돈을 모을 수 있다.
+    target_lang: ko
+    note:
+      vi: -기 십상이다 chỉ dùng cho kết quả xấu. Kết quả tốt thì dùng -(으)ㄹ 수 있다 hoặc -게 되다.
+  - type: common_mistake
+    wrong: 주식 투자로 큰 손해를 받았다.
+    right: 주식 투자로 큰 손해를 봤다.
+    target_lang: ko
+    note:
+      vi: Tiếng Việt "bị lỗ, chịu thiệt" dễ khiến bạn chọn 받다, nhưng cụm cố định là 손해를 보다; tương tự 빚을 지다, không phải 빚을 받다.
+  - type: summary
+    points:
+      - vi: V/A-(으)ㄴ 나머지 = vì quá... đến nỗi (kết quả xấu, đã xảy ra).
+      - vi: V-기 십상이다 = rất dễ (bị)... - cảnh báo kết quả xấu, mạnh hơn -기 쉽다.
+      - vi: -는 바람에 sự việc bất ngờ · -는 통에 tình cảnh rối ren kéo dài · -는 탓에 đổ lỗi (văn viết).
+      - vi: 빚을 지다 · 손해를 보다 · 대출을 받다 · 할부로 사다 · N에 투자하다.
+      - vi: 충동구매 (mua theo hứng) khác 과소비 (tiêu quá khả năng).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:el-excess-mcq-nameoji
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:el-gram-n-nameoji
+    prompt:
+      stem: "세일 기간이라 들뜬 나머지 예산을 훨씬 넘겨 버렸다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: j5c, text: "Vì quá phấn khích trong mùa giảm giá nên tôi đã tiêu vượt xa ngân sách.", lang: vi }
+        - { id: p1x, text: "Mùa giảm giá còn lại ít ngày nên tôi tiết kiệm được ngân sách.", lang: vi }
+        - { id: w4g, text: "Phần tiền còn lại sau mùa giảm giá nhiều hơn ngân sách.", lang: vi }
+        - { id: t9e, text: "Dù rất phấn khích, tôi vẫn giữ đúng ngân sách trong mùa giảm giá.", lang: vi }
+    answer:
+      correct_option_id: j5c
+    explanation:
+      vi: -(으)ㄴ 나머지 = vì quá (phấn khích) nên dẫn tới kết quả ngoài ý muốn (넘겨 버렸다 - lỡ vượt quá). 나머지 ở đây không mang nghĩa "phần còn lại", và câu không có ý nhượng bộ.
+    display_answer: "Vì quá phấn khích trong mùa giảm giá nên tôi đã tiêu vượt xa ngân sách."
+
+  - key: ko:exercise:el-excess-listen-tonge
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gram-neun-tonge
+    prompt:
+      audio_asset_id: null
+      fallback_text: 옆 사무실이 리모델링 공사를 하는 통에 하루 종일 업무에 집중할 수가 없었다.
+      options:
+        - { id: c6m, text: "Vì văn phòng bên cạnh sửa chữa ồn ào nên cả ngày tôi không thể tập trung làm việc.", lang: vi }
+        - { id: v2b, text: "Nhờ văn phòng bên cạnh sửa chữa nên tôi tập trung làm việc tốt hơn.", lang: vi }
+        - { id: r7h, text: "Văn phòng bên cạnh dùng cả thùng đồ để sửa chữa.", lang: vi }
+        - { id: z3k, text: "Cả ngày tôi phải sửa chữa văn phòng bên cạnh.", lang: vi }
+    answer:
+      correct_option_id: c6m
+    explanation:
+      vi: -는 통에 = vì (tình cảnh ồn ào, rối ren) nên kết quả xấu - 집중할 수가 없었다. 통 ở đây không phải "cái thùng", và cấu trúc này không bao giờ mang nghĩa "nhờ".
+    display_answer: "Vì văn phòng bên cạnh sửa chữa ồn ào nên cả ngày tôi không thể tập trung làm việc."
+
+  - key: ko:exercise:el-excess-mcq-bit
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-bit
+    prompt:
+      stem: "Chọn cách nói đúng của \"mắc nợ\"."
+      stem_lang: vi
+      options:
+        - { id: s8q, text: "빚을 지다", lang: ko }
+        - { id: f2n, text: "빛을 지다", lang: ko }
+        - { id: d6w, text: "손해를 지다", lang: ko }
+        - { id: m4y, text: "빚을 보다", lang: ko }
+    answer:
+      correct_option_id: s8q
+    explanation:
+      vi: Nợ là 빚, động từ đi kèm là 지다. 빛 (ánh sáng) đọc giống 빚 khi đứng riêng nên rất dễ viết nhầm; 손해 đi với 보다, không đi với 지다.
+    display_answer: "빚을 지다"
+
+  - key: ko:exercise:el-excess-fill-sipsang
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-gram-gi-sipsangida
+    prompt:
+      template: "계획 없이 할부로 물건을 사다 보면 카드 대금이 감당하기 어려울 만큼 불어나기 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Cảnh báo "mười phần thì tám chín sẽ (xấu)" - danh từ + 이다.
+        - 십...
+    answer:
+      blanks:
+        b1: [십상이다, 십상입니다, 십상이에요, 쉽다, 쉽습니다]
+    known_wrong:
+      - answer: 십상하다
+        feedback_vi: 십상 là danh từ nên đi với 이다 - 십상이다, không phải 십상하다.
+        error_tag: sipsang_form
+      - answer: 십상
+        feedback_vi: Cần cả 이다 để kết thúc câu - -기 십상이다.
+        error_tag: sipsang_form
+    explanation:
+      vi: Mua trả góp không kế hoạch (điều kiện -다 보면) dễ dẫn tới tiền thẻ phình to - kết quả xấu, đúng chỗ của -기 십상이다. -기 쉽다 cũng đúng nhưng nhẹ hơn.
+    display_answer: 계획 없이 할부로 물건을 사다 보면 카드 대금이 감당하기 어려울 만큼 불어나기 십상이다.
+
+  - key: ko:exercise:el-excess-mcq-tonge-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-neun-tonge
+    prompt:
+      stem: "Chọn từ hợp nhất - 아이들이 거실에서 계속 뛰어다니며 떠드는 ______ 전화 통화를 제대로 할 수 없었다."
+      stem_lang: vi
+      options:
+        - { id: x1p, text: "통에", lang: ko }
+        - { id: e5t, text: "덕분에", lang: ko }
+        - { id: k8a, text: "김에", lang: ko }
+        - { id: h3r, text: "대로", lang: ko }
+    answer:
+      correct_option_id: x1p
+    explanation:
+      vi: Bọn trẻ chạy nhảy ồn ào kéo dài là tình cảnh rối ren dẫn tới kết quả xấu - -는 통에. 덕분에 chỉ dùng cho kết quả tốt, -는 김에 là "nhân tiện", -는 대로 là "ngay khi / theo như".
+    display_answer: "통에"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:el-excess-fill-nameoji-form
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-n-nameoji
+    prompt:
+      template: "주식 시장의 들뜬 분위기에 (휩쓸리다 →) {{b1}} 나머지 그는 빚까지 내서 투자했다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [휩쓸린]
+    known_wrong:
+      - answer: 휩쓸리는
+        feedback_vi: -(으)ㄴ 나머지 dùng định ngữ quá khứ với động từ - 휩쓸린 나머지.
+        error_tag: nameoji_form
+      - answer: 휩쓸릴
+        feedback_vi: Định ngữ tương lai -(으)ㄹ không đi với 나머지. Viết 휩쓸린.
+        error_tag: nameoji_form
+      - answer: 휩쓸려서
+        feedback_vi: 나머지 là danh từ nên cần định ngữ đứng trước - 휩쓸린 나머지.
+        error_tag: nameoji_form
+    explanation:
+      vi: Động từ + -(으)ㄴ 나머지 - 휩쓸리다 → 휩쓸린. Hành động bị cuốn theo đám đông đã xảy ra rồi mới dẫn tới việc vay nợ đầu tư.
+    display_answer: 주식 시장의 들뜬 분위기에 휩쓸린 나머지 그는 빚까지 내서 투자했다.
+
+  - key: ko:exercise:el-excess-fill-collocation
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-sonhae
+    prompt:
+      template: "무리하게 투자했다가 큰 손해를 {{b1}} 결국 은행에 빚까지 {{b2}} 되었다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [보고, 봐서, 보아서, 본 뒤, 본 후, 보는 바람에]
+        b2: [지게]
+    known_wrong:
+      - answer: 받고
+        feedback_vi: 손해는 không đi với 받다. Cụm cố định là 손해를 보다.
+        error_tag: collocation
+      - answer: 받게
+        feedback_vi: 빚은 đi với 지다 - 빚을 지게 되었다 (rốt cuộc mắc nợ).
+        error_tag: collocation
+    explanation:
+      vi: 손해를 보다 (chịu lỗ) và 빚을 지다 (mắc nợ) là collocation cố định. Tiếng Việt dùng "bị, chịu" nên người Việt hay chọn 받다 - đó là lỗi rất dễ thấy với người chấm bài viết TOPIK.
+    display_answer: 무리하게 투자했다가 큰 손해를 보고 결국 은행에 빚까지 지게 되었다.
+
+  - key: ko:exercise:el-excess-translate-sipsang
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-gi-sipsangida
+    prompt:
+      source_text: Không tìm hiểu kỹ mà đầu tư thì rất dễ bị lỗ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "제대로 알아보지 않고 투자하면 손해를 보기 십상이다."
+        - "제대로 알아보지 않고 투자하면 손해를 보기 십상입니다."
+        - "제대로 알아보지 않고 투자하면 손해를 보기 십상이에요."
+        - "제대로 알아보지 않고 투자하다가는 손해를 보기 십상이다."
+        - "제대로 알아보지 않고 투자하다가는 손해를 보기 십상입니다."
+        - "제대로 알아보지 않고 투자하다가는 손해를 보기 십상이에요."
+        - "잘 알아보지 않고 투자하면 손해를 보기 십상이다."
+        - "잘 알아보지 않고 투자하면 손해를 보기 십상입니다."
+        - "잘 알아보지 않고 투자하면 손해를 보기 십상이에요."
+        - "잘 알아보지 않고 투자하다가는 손해를 보기 십상이다."
+        - "잘 알아보지 않고 투자하다가는 손해를 보기 십상입니다."
+        - "잘 알아보지 않고 투자하다가는 손해를 보기 십상이에요."
+        - "꼼꼼히 알아보지 않고 투자하면 손해를 보기 십상이다."
+        - "꼼꼼히 알아보지 않고 투자하면 손해를 보기 십상입니다."
+        - "꼼꼼히 알아보지 않고 투자하면 손해를 보기 십상이에요."
+        - "꼼꼼히 알아보지 않고 투자하다가는 손해를 보기 십상이다."
+        - "꼼꼼히 알아보지 않고 투자하다가는 손해를 보기 십상입니다."
+        - "꼼꼼히 알아보지 않고 투자하다가는 손해를 보기 십상이에요."
+        - "충분히 알아보지 않고 투자하면 손해를 보기 십상이다."
+        - "충분히 알아보지 않고 투자하면 손해를 보기 십상입니다."
+        - "충분히 알아보지 않고 투자하면 손해를 보기 십상이에요."
+        - "충분히 알아보지 않고 투자하다가는 손해를 보기 십상이다."
+        - "충분히 알아보지 않고 투자하다가는 손해를 보기 십상입니다."
+        - "충분히 알아보지 않고 투자하다가는 손해를 보기 십상이에요."
+        - "제대로 알아보지 않고 투자하면 손해를 보기 쉽다."
+        - "제대로 알아보지 않고 투자하면 손해를 보기 쉽습니다."
+        - "제대로 알아보지 않고 투자하면 손해를 보기 쉬워요."
+        - "잘 알아보지 않고 투자하면 손해를 보기 쉽다."
+        - "잘 알아보지 않고 투자하면 손해를 보기 쉽습니다."
+        - "잘 알아보지 않고 투자하면 손해를 보기 쉬워요."
+    known_wrong:
+      - answer: 제대로 알아보지 않고 투자하면 손해를 받기 십상이다.
+        feedback_vi: 손해는 đi với 보다 - 손해를 보기 십상이다.
+        error_tag: collocation
+      - answer: 제대로 알아보지 않고 투자하면 손해를 보기 십상하다.
+        feedback_vi: 십상 là danh từ, phải là 십상이다.
+        error_tag: sipsang_form
+      - answer: 제대로 알아보지 않고 투자한 나머지 손해를 보기 십상이다.
+        feedback_vi: -(으)ㄴ 나머지 kể kết quả đã xảy ra, không đi với lời cảnh báo. Điều kiện ở đây là -(으)면.
+        error_tag: nameoji_misuse
+    explanation:
+      vi: Điều kiện (không tìm hiểu kỹ mà đầu tư) + -기 십상이다 (rất dễ bị) - đúng khuôn lời cảnh báo. "Bị lỗ" = 손해를 보다.
+    display_answer: 제대로 알아보지 않고 투자하면 손해를 보기 십상이다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:el-excess-translate-seodureun-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-daechul
+    prompt:
+      source_text: 급하게 돈을 마련하려고 서두른 나머지 금리가 높은 대출을 받고 말았다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Vì quá vội vàng xoay tiền nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi đã lỡ vay một khoản lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi đã lỡ vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi lỡ vay một khoản lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi lỡ vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi rốt cuộc đã vay một khoản lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi rốt cuộc đã vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi cuối cùng đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi cuối cùng đã vay một khoản lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên tôi cuối cùng đã vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi đã lỡ vay một khoản lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi đã lỡ vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi lỡ vay một khoản lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi lỡ vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi rốt cuộc đã vay một khoản lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi rốt cuộc đã vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi cuối cùng đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi cuối cùng đã vay một khoản lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên tôi cuối cùng đã vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi đã lỡ vay một khoản lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi đã lỡ vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi lỡ vay một khoản lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi lỡ vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi rốt cuộc đã vay một khoản lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi rốt cuộc đã vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi cuối cùng đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi cuối cùng đã vay một khoản lãi suất cao."
+        - "Vì quá vội vàng kiếm tiền nên tôi cuối cùng đã vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi đã lỡ vay một khoản lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi đã lỡ vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi lỡ vay một khoản lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi lỡ vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi rốt cuộc đã vay một khoản lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi rốt cuộc đã vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi cuối cùng đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi cuối cùng đã vay một khoản lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên tôi cuối cùng đã vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi đã lỡ vay một khoản lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi đã lỡ vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi lỡ vay một khoản lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi lỡ vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi rốt cuộc đã vay một khoản lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi rốt cuộc đã vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi cuối cùng đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi cuối cùng đã vay một khoản lãi suất cao."
+        - "Do quá vội vàng lo tiền nên tôi cuối cùng đã vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi đã lỡ vay một khoản lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi đã lỡ vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi lỡ vay một khoản lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi lỡ vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi rốt cuộc đã vay một khoản lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi rốt cuộc đã vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi cuối cùng đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi cuối cùng đã vay một khoản lãi suất cao."
+        - "Do quá vội vàng kiếm tiền nên tôi cuối cùng đã vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên đã lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên đã lỡ vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên lỡ vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng xoay tiền nên rốt cuộc đã vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên đã lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên đã lỡ vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên lỡ vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên lỡ vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Vì quá vội vàng lo tiền nên rốt cuộc đã vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên đã lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên đã lỡ vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên lỡ vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng xoay tiền nên rốt cuộc đã vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên đã lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên đã lỡ vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên lỡ vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên lỡ vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên rốt cuộc đã vay một khoản vay lãi suất cao."
+        - "Do quá vội vàng lo tiền nên rốt cuộc đã vay lãi suất cao."
+        - "Vội vàng xoay tiền quá nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Vội vàng xoay tiền quá nên tôi đã lỡ vay lãi suất cao."
+        - "Vội vàng xoay tiền quá nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Vội vàng xoay tiền quá nên tôi lỡ vay lãi suất cao."
+        - "Vội vàng lo tiền quá nên tôi đã lỡ vay một khoản vay lãi suất cao."
+        - "Vội vàng lo tiền quá nên tôi đã lỡ vay lãi suất cao."
+        - "Vội vàng lo tiền quá nên tôi lỡ vay một khoản vay lãi suất cao."
+        - "Vội vàng lo tiền quá nên tôi lỡ vay lãi suất cao."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì vội vàng xoay tiền nên tôi đã cho vay với lãi suất cao.
+        feedback_vi: 대출을 받다 là đi vay; cho vay là 대출해 주다.
+        error_tag: vocab_meaning
+      - answer: Phần còn lại tôi vội vàng vay lãi suất cao.
+        feedback_vi: 나머지 ở đây không phải "phần còn lại". -(으)ㄴ 나머지 = vì quá... nên.
+        error_tag: nameoji_misread
+    explanation:
+      vi: 서두른 나머지 = vì quá vội vàng; -고 말았다 = rốt cuộc lỡ (kết quả đáng tiếc); 대출을 받다 = vay. Câu tiếng Việt tự nhiên cần chủ ngữ "tôi" hoặc bỏ hẳn.
+    display_answer: Vì quá vội vàng xoay tiền nên tôi đã lỡ vay một khoản vay lãi suất cao.
+
+  - key: ko:exercise:el-excess-order-tonge
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-neun-tonge
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vì nhà hàng xóm sửa nhà ồn ào nên em bé không ngủ được.\""
+      tokens:
+        - { id: a4n, text: 잠을 }
+        - { id: q8v, text: 통에 }
+        - { id: m2c, text: 덕분에 }
+        - { id: y7f, text: 이웃집이 }
+        - { id: u1s, text: 잤다 }
+        - { id: g5h, text: 아기가 }
+        - { id: k9w, text: 집을 }
+        - { id: e3b, text: 못 }
+        - { id: o6r, text: 고치는 }
+    answer:
+      orders:
+        - [y7f, k9w, o6r, q8v, g5h, a4n, e3b, u1s]
+    explanation:
+      vi: V-는 통에 gắn trực tiếp vào động từ đang diễn ra - 고치는 통에. 덕분에 là token nhiễu vì nó chỉ dùng cho kết quả tốt.
+    display_answer: 이웃집이 집을 고치는 통에 아기가 잠을 못 잤다.
+
+  - key: ko:exercise:el-excess-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-halbu
+    prompt:
+      stem: "Bạn bạn nói - \"이번 달에 카드 할부로 노트북에 휴대폰까지 샀어.\" Câu đáp nào tự nhiên và đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: b7j, text: "그렇게 할부를 겹치다 보면 나중에 카드값을 감당 못 하기 십상이야.", lang: ko }
+        - { id: n3d, text: "그렇게 할부를 겹치면 돈이 금방 모이기 십상이야.", lang: ko }
+        - { id: l0x, text: "할부를 겹친 나머지 돈을 많이 모았구나.", lang: ko }
+        - { id: i6u, text: "할부를 겹치는 통에 곧 부자가 되겠다.", lang: ko }
+    answer:
+      correct_option_id: b7j
+    explanation:
+      vi: -기 십상이다, -(으)ㄴ 나머지, -는 통에 đều chỉ đi với kết quả xấu. Chỉ phương án đầu có kết quả xấu (không kham nổi tiền thẻ); ba phương án kia ghép các cấu trúc này với kết quả tốt (để dành được tiền, thành giàu).
+    display_answer: "그렇게 할부를 겹치다 보면 나중에 카드값을 감당 못 하기 십상이야."
+
+  - key: ko:exercise:el-excess-translate-mideun
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-tuja
+    prompt:
+      source_text: Vì quá tin lời bạn bè nên anh ấy đã đầu tư toàn bộ tiền tiết kiệm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했어요."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했다."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했습니다."
+        - "친구의 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했어요."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했습니다."
+        - "친구들의 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 전부 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 저축한 돈을 다 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 모두 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 전부 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 모은 돈을 다 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 모두 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 전부 투자했어요."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했다."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했습니다."
+        - "친구 말을 너무 믿은 나머지 그는 저금한 돈을 다 투자했어요."
+        - "그는 친구의 말을 너무 믿은 나머지 저축한 돈을 모두 투자했다."
+        - "그는 친구의 말을 너무 믿은 나머지 저축한 돈을 모두 투자했습니다."
+        - "그는 친구의 말을 너무 믿은 나머지 저축한 돈을 모두 투자했어요."
+        - "그는 친구의 말을 너무 믿은 나머지 저축한 돈을 전부 투자했다."
+        - "그는 친구의 말을 너무 믿은 나머지 저축한 돈을 전부 투자했습니다."
+        - "그는 친구의 말을 너무 믿은 나머지 저축한 돈을 전부 투자했어요."
+        - "그는 친구의 말을 너무 믿은 나머지 모은 돈을 모두 투자했다."
+        - "그는 친구의 말을 너무 믿은 나머지 모은 돈을 모두 투자했습니다."
+        - "그는 친구의 말을 너무 믿은 나머지 모은 돈을 모두 투자했어요."
+        - "그는 친구의 말을 너무 믿은 나머지 모은 돈을 전부 투자했다."
+        - "그는 친구의 말을 너무 믿은 나머지 모은 돈을 전부 투자했습니다."
+        - "그는 친구의 말을 너무 믿은 나머지 모은 돈을 전부 투자했어요."
+        - "그는 친구들의 말을 너무 믿은 나머지 저축한 돈을 모두 투자했다."
+        - "그는 친구들의 말을 너무 믿은 나머지 저축한 돈을 모두 투자했습니다."
+        - "그는 친구들의 말을 너무 믿은 나머지 저축한 돈을 모두 투자했어요."
+        - "그는 친구들의 말을 너무 믿은 나머지 저축한 돈을 전부 투자했다."
+        - "그는 친구들의 말을 너무 믿은 나머지 저축한 돈을 전부 투자했습니다."
+        - "그는 친구들의 말을 너무 믿은 나머지 저축한 돈을 전부 투자했어요."
+        - "그는 친구들의 말을 너무 믿은 나머지 모은 돈을 모두 투자했다."
+        - "그는 친구들의 말을 너무 믿은 나머지 모은 돈을 모두 투자했습니다."
+        - "그는 친구들의 말을 너무 믿은 나머지 모은 돈을 모두 투자했어요."
+        - "그는 친구들의 말을 너무 믿은 나머지 모은 돈을 전부 투자했다."
+        - "그는 친구들의 말을 너무 믿은 나머지 모은 돈을 전부 투자했습니다."
+        - "그는 친구들의 말을 너무 믿은 나머지 모은 돈을 전부 투자했어요."
+    known_wrong:
+      - answer: 친구의 말을 너무 믿는 나머지 그는 저축한 돈을 모두 투자했다.
+        feedback_vi: Động từ + -(으)ㄴ 나머지 dùng định ngữ quá khứ - 믿은 나머지.
+        error_tag: nameoji_form
+      - answer: 친구의 말을 너무 믿기 십상이라 그는 저축한 돈을 모두 투자했다.
+        feedback_vi: -기 십상이다 là dự đoán kết quả xấu, không phải nguyên nhân đã xảy ra. "Vì quá... nên" = -(으)ㄴ 나머지.
+        error_tag: sipsang_misuse
+    explanation:
+      vi: Ý "vì quá tin... nên đã..." là khuôn điển hình của -(으)ㄴ 나머지 - 믿다 → 믿은 나머지. "Tiền tiết kiệm" tự nhiên là 저축한 돈 hoặc 모은 돈.
+    display_answer: 친구의 말을 너무 믿은 나머지 그는 저축한 돈을 모두 투자했다.

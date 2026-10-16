@@ -1,0 +1,775 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:economy-news-vocab
+order_index: 1
+level: topik5
+title:
+  vi: Đọc tin kinh tế - lãi suất, suy thoái và việc làm
+objectives:
+  - vi: Hiểu các từ khoá của bản tin kinh tế - 금리 인상 · 인하, 경기 침체, 소비 심리, 고용률 · 실업률, 비정규직, 최저임금, 가계 부채.
+  - vi: Dùng N에 따라 / V-(으)ㅁ에 따라 để nói một thay đổi kéo theo thay đổi khác.
+  - vi: Dùng -(으)ㄴ/는 가운데 để nêu bối cảnh như câu mở đầu bản tin, không nhầm với -는 동안.
+estimated_minutes: 25
+skills: [vocabulary, reading, grammar]
+prerequisites: [ko:lesson:history-literature-review]
+items:
+  - item: ko:item:el-geumni-insang
+  - item: ko:item:el-gyeonggi-chimche
+  - item: ko:item:el-sobi-simni
+  - item: ko:item:el-goyongnyul
+  - item: ko:item:el-bijeonggyujik
+  - item: ko:item:el-choejeo-imgeum
+  - item: ko:item:el-gagye-buchae
+  - item: ko:item:el-wichukdoeda
+  - item: ko:item:el-gram-e-ttara
+  - item: ko:item:el-gram-neun-gaunde
+  - item: ko:item:mulga-sangseung
+    role: reuse
+  - item: ko:item:gp-e-ttareumyeon
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một bản tin kinh tế ngắn về lãi suất, giá cả và việc làm ở trình độ TOPIK 5. Bạn cũng viết được câu mở đầu kiểu bản tin bằng -(으)ㄴ/는 가운데 và V-(으)ㅁ에 따라.
+  - type: explain
+    text:
+      vi: Hầu hết từ kinh tế là từ Hán Hàn, nên âm Hán Việt là chìa khoá - 금리 (kim lợi) là lãi suất, 침체 (trầm trệ), 고용 (cố dụng - thuê người làm), 부채 (phụ trái - món nợ). Nhưng hãy kiểm tra lại nghĩa, vì 경기 (cảnh khí) nghĩa là "tình hình kinh tế", điều âm Hán Việt không cho bạn biết.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ có "tăng / giảm", còn tiếng Hàn tách theo nguyên nhân - 인상 / 인하 là có người quyết định nâng, hạ (금리 인상, 요금 인상), còn 상승 / 하락 là tự lên xuống (물가 상승, 주가 하락). Vì vậy 물가 인상 nghe như có ai ra lệnh tăng giá, trong khi bản tin muốn nói giá cả tự tăng.
+  - type: explain
+    text:
+      vi: V/A-(으)ㅁ에 따라 nghĩa là "cùng với việc..., khi... thì" - thay đổi ở vế trước kéo theo thay đổi ở vế sau. N에 따라 là "tuỳ theo" - 지역에 따라 다르다. Đừng nhầm với N에 따르면 "theo (nguồn tin)" bạn đã học.
+  - type: explain
+    text:
+      vi: -(으)ㄴ/는 가운데 nêu một tình hình đang diễn ra làm nền cho tin chính - 고물가가 이어지는 가운데 (trong bối cảnh giá cao kéo dài). Người Việt hay dịch "trong khi" thành -는 동안, nhưng 동안 chỉ khoảng thời gian của một hành động, không nêu bối cảnh xã hội.
+  - type: deep_explain
+    text:
+      vi: Cách chia -(으)ㅁ - có patchim thêm 음 (높음), không patchim thêm ㅁ (오름, 인상됨), gốc tận cùng ㄹ thì ghép ㄻ (늘다 → 늚, 줄어들다 → 줄어듦). Với -가운데 - động từ đang diễn ra dùng -는 (오르는 가운데), việc đã xong dùng -(으)ㄴ (동결된 가운데), tính từ dùng -(으)ㄴ (불확실성이 큰 가운데), danh từ dùng 인 (비상 상황인 가운데). Trong bản tin, hai cấu trúc này thường đứng đầu câu, còn vế sau là -고 있다 hoặc quá khứ -았/었다.
+  - type: example
+    target: 한국은행이 기준 금리를 동결한 가운데 시중 은행들은 예금 금리를 잇따라 내리고 있다.
+    target_lang: ko
+    translation:
+      vi: Trong bối cảnh Ngân hàng Trung ương Hàn Quốc giữ nguyên lãi suất cơ bản, các ngân hàng thương mại lần lượt hạ lãi suất tiền gửi.
+    note:
+      vi: 동결하다 là "đóng băng, giữ nguyên"; việc đã xảy ra nên dùng -(으)ㄴ 가운데.
+  - type: example
+    target: 수출이 회복됨에 따라 제조업 고용률도 서서히 오르고 있다.
+    target_lang: ko
+    translation:
+      vi: Cùng với việc xuất khẩu phục hồi, tỷ lệ có việc làm trong ngành chế tạo cũng dần tăng lên.
+    note:
+      vi: 회복되다 → 회복됨에 따라; hai sự thay đổi đi song song.
+  - type: example
+    target: 소비 심리가 위축되면서 주말에도 한산한 상점가가 늘었다.
+    target_lang: ko
+    translation:
+      vi: Tâm lý tiêu dùng chững lại nên ngày càng nhiều khu phố buôn bán vắng vẻ cả vào cuối tuần.
+    note:
+      vi: 소비 심리가 위축되다 là cụm cố định - đừng dùng 감소하다 cho tâm lý.
+  - type: example
+    target: 최저임금 인상 폭은 업종과 지역에 따라 체감도가 다를 수밖에 없다.
+    target_lang: ko
+    translation:
+      vi: Mức tăng lương tối thiểu được cảm nhận khác nhau tuỳ theo ngành nghề và khu vực là điều không tránh khỏi.
+    note:
+      vi: N에 따라 다르다 "tuỳ theo... mà khác" - một trong những cụm hay gặp nhất của văn viết.
+  - type: example
+    target: 경기 침체가 이어지는 가운데 비정규직 일자리만 늘어 고용의 질이 나빠졌다는 지적이 나온다.
+    target_lang: ko
+    translation:
+      vi: Trong bối cảnh suy thoái kéo dài, có ý kiến chỉ ra rằng chỉ việc làm không chính thức tăng lên nên chất lượng việc làm đã giảm sút.
+    note:
+      vi: -다는 지적이 나온다 "có ý kiến chỉ ra rằng" - cách báo chí đưa phê bình mà không nêu tên người nói.
+  - type: common_mistake
+    wrong: 올해도 물가가 크게 인상되었다.
+    right: 올해도 물가가 크게 상승했다.
+    target_lang: ko
+    note:
+      vi: Giá cả nói chung tự tăng nên dùng 상승. 인상 chỉ dùng khi có chủ thể quyết định - 정부가 전기 요금을 인상했다.
+  - type: common_mistake
+    wrong: 금리가 오르는 동안 소비 심리가 위축되고 있다.
+    right: 금리가 오르는 가운데 소비 심리가 위축되고 있다.
+    target_lang: ko
+    note:
+      vi: Ý "trong bối cảnh" của bản tin là -는 가운데. -는 동안 chỉ khoảng thời gian (자는 동안), nghe như "suốt lúc lãi suất đang lên".
+  - type: common_mistake
+    wrong: 청년 고용율이 낮아졌다.
+    right: 청년 고용률이 낮아졌다.
+    target_lang: ko
+    note:
+      vi: Sau patchim ㅇ viết 률. Chỉ sau nguyên âm hoặc ㄴ mới viết 율 (비율, 할인율).
+  - type: summary
+    points:
+      - vi: 금리 인상 · 인하 (có người quyết định) khác 물가 상승 · 하락 (tự tăng giảm).
+      - vi: 경기 침체 = suy thoái; 소비 심리가 위축되다 = tâm lý tiêu dùng chững lại; 가계 부채 = nợ hộ gia đình.
+      - vi: 고용률 · 실업률 viết 률 sau phụ âm, 율 sau nguyên âm hoặc ㄴ.
+      - vi: V/A-(으)ㅁ에 따라 = cùng với việc...; N에 따라 = tuỳ theo; N에 따르면 = theo nguồn tin.
+      - vi: V-는 / V-(으)ㄴ / A-(으)ㄴ / N인 가운데 = trong bối cảnh... - câu mở đầu điển hình của bản tin.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:el-news-mcq-chimche
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:el-gyeonggi-chimche
+    prompt:
+      stem: "경기 침체가 장기화되면서 폐업 신고를 하는 식당이 크게 늘었다. - 경기 침체 ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q3d, text: "Suy thoái kinh tế", lang: vi }
+        - { id: w8k, text: "Trận đấu bị hoãn", lang: vi }
+        - { id: z1m, text: "Giá cả tăng vọt", lang: vi }
+        - { id: h6p, text: "Tỷ lệ việc làm tăng", lang: vi }
+    answer:
+      correct_option_id: q3d
+    explanation:
+      vi: 경기 (景氣) là tình hình kinh tế, 침체 (trầm trệ) là đình đốn, nên 경기 침체 là suy thoái - khớp với việc nhiều quán ăn đóng cửa (폐업). 경기 "trận đấu" là từ đồng âm khác nghĩa; không có từ nào trong câu chỉ giá cả hay việc làm tăng.
+    display_answer: "Suy thoái kinh tế"
+
+  - key: ko:exercise:el-news-mcq-spelling
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-goyongnyul
+    prompt:
+      stem: "Chọn cách viết đúng chính tả của \"tỷ lệ thất nghiệp\"."
+      stem_lang: vi
+      options:
+        - { id: r5t, text: "실업률", lang: ko }
+        - { id: b2n, text: "실업율", lang: ko }
+        - { id: y9c, text: "시럼뉼", lang: ko }
+        - { id: f4j, text: "실업유", lang: ko }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: 실업 tận cùng bằng phụ âm ㅂ nên viết 률. Chỉ sau nguyên âm hoặc ㄴ mới viết 율 (비율). 시럼뉼 là cách đọc, không phải cách viết.
+    display_answer: "실업률"
+
+  - key: ko:exercise:el-news-listen-inha
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-geumni-insang
+    prompt:
+      audio_asset_id: null
+      fallback_text: 한국은행은 물가 상승세가 둔화되자 기준 금리를 0.25%포인트 인하했다.
+      options:
+        - { id: m7s, text: "Ngân hàng Trung ương Hàn Quốc hạ lãi suất cơ bản 0,25 điểm phần trăm khi đà tăng giá chậm lại.", lang: vi }
+        - { id: k2v, text: "Ngân hàng Trung ương Hàn Quốc tăng lãi suất cơ bản 0,25 điểm phần trăm khi giá cả tăng nhanh.", lang: vi }
+        - { id: d8x, text: "Ngân hàng Trung ương Hàn Quốc giữ nguyên lãi suất cơ bản vì giá cả vẫn tăng.", lang: vi }
+        - { id: u3g, text: "Ngân hàng Trung ương Hàn Quốc hạ lãi suất cơ bản 0,25 điểm phần trăm khi giá cả tăng nhanh hơn.", lang: vi }
+    answer:
+      correct_option_id: m7s
+    explanation:
+      vi: 인하 là hạ xuống (theo quyết định), 인상 mới là nâng lên. 둔화되다 nghĩa là chậm lại, nên đà tăng giá đang yếu đi chứ không phải tăng nhanh hơn.
+    display_answer: "Ngân hàng Trung ương Hàn Quốc hạ lãi suất cơ bản 0,25 điểm phần trăm khi đà tăng giá chậm lại."
+
+  - key: ko:exercise:el-news-fill-wichuk
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-wichukdoeda
+    prompt:
+      template: "고물가가 이어지자 소비 심리가 {{b1}}되면서 백화점 매출이 줄었다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Tâm lý tiêu dùng "co lại, chững lại" - từ Hán Hàn 萎縮 (nuy súc).
+        - 위...
+    answer:
+      blanks:
+        b1: [위축]
+    known_wrong:
+      - answer: 감소
+        feedback_vi: 감소하다 dùng cho số lượng (매출이 감소하다). Tâm lý tiêu dùng thì 위축되다 - mất đà, co lại.
+        error_tag: collocation
+      - answer: 축소
+        feedback_vi: 축소되다 là quy mô bị thu nhỏ, thường do quyết định (예산이 축소되다). Với 소비 심리 phải là 위축되다.
+        error_tag: collocation
+    explanation:
+      vi: 소비 심리가 위축되다 là cụm cố định trong tin kinh tế - người dân ngại chi tiêu. Vì tiếng Việt nói "tâm lý giảm sút", người Việt dễ chọn 감소, nhưng 감소 chỉ dùng cho con số.
+    display_answer: 고물가가 이어지자 소비 심리가 위축되면서 백화점 매출이 줄었다.
+
+  - key: ko:exercise:el-news-mcq-gaunde
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-neun-gaunde
+    prompt:
+      stem: "Câu nào diễn đạt đúng ý \"Trong bối cảnh lãi suất cao kéo dài, nợ hộ gia đình vẫn tiếp tục tăng\"?"
+      stem_lang: vi
+      options:
+        - { id: p4a, text: "고금리가 이어지는 가운데 가계 부채가 계속 늘고 있다.", lang: ko }
+        - { id: e9w, text: "고금리가 이어지는 가운데 가계 부채가 계속 줄고 있다.", lang: ko }
+        - { id: s1h, text: "고금리가 이어지면 가계 부채가 늘어날 것이다.", lang: ko }
+        - { id: o6z, text: "고금리가 끝난 후에 가계 부채가 늘기 시작했다.", lang: ko }
+    answer:
+      correct_option_id: p4a
+    explanation:
+      vi: -는 가운데 nêu bối cảnh đang diễn ra (lãi suất cao kéo dài), vế sau là sự việc chính đang tiếp diễn (늘고 있다). Phương án -(으)면 là giả định tương lai, -(으)ㄴ 후에 là trình tự trước sau, còn 줄고 있다 trái nghĩa.
+    display_answer: "고금리가 이어지는 가운데 가계 부채가 계속 늘고 있다."
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:el-news-fill-eumettara
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-e-ttara
+    prompt:
+      template: "기준 금리가 {{b1}} 따라 변동 금리로 대출을 받은 사람들의 이자 부담도 커졌다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [오름에, 인상됨에, 올라감에]
+    known_wrong:
+      - answer: 오르기에
+        feedback_vi: -기에 là đuôi lý do riêng. Trước 따라 phải là danh từ hoá bằng -(으)ㅁ - 오름에 따라.
+        error_tag: eum_e_ttara_form
+      - answer: 오른에
+        feedback_vi: Định ngữ -(으)ㄴ không đứng trước 에. Dùng danh từ hoá -(으)ㅁ - 오르다 → 오름.
+        error_tag: eum_e_ttara_form
+      - answer: 오르면에
+        feedback_vi: -(으)면 không ghép với 에 따라. Hình thức đúng là 오름에 따라.
+        error_tag: eum_e_ttara_form
+    explanation:
+      vi: V-(으)ㅁ에 따라 nối hai thay đổi đi cùng nhau - lãi suất lên thì gánh nặng tiền lãi tăng. 오르다 không có patchim nên thêm ㅁ - 오름; 인상되다 → 인상됨.
+    display_answer: 기준 금리가 오름에 따라 변동 금리로 대출을 받은 사람들의 이자 부담도 커졌다.
+
+  - key: ko:exercise:el-news-fill-jiyeok
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-e-ttara
+    prompt:
+      template: "실업률은 지역{{b1}} 큰 차이를 보였다. 수도권은 2%대였지만 일부 지방 도시는 5%를 넘었다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [에 따라, 에 따라서, 별로, 마다]
+    known_wrong:
+      - answer: 에 따르면
+        feedback_vi: 에 따르면 dùng để dẫn nguồn tin (통계청에 따르면). Ở đây nghĩa là "tuỳ theo vùng" nên dùng 에 따라.
+        error_tag: ttara_vs_ttareumyeon
+      - answer: 에 비해
+        feedback_vi: 에 비해 cần một đối tượng để so sánh (수도권에 비해). Câu này nói sự khác nhau tuỳ vùng - 지역에 따라.
+        error_tag: ttara_vs_ttareumyeon
+    explanation:
+      vi: N에 따라 + 차이를 보이다 / 다르다 là "tuỳ theo N mà khác nhau". 지역별로 (theo từng vùng) và 지역마다 (mỗi vùng) cũng tự nhiên. Người Việt thấy chữ "theo" nên dễ chọn 에 따르면, nhưng đó là "theo nguồn tin".
+    display_answer: 실업률은 지역에 따라 큰 차이를 보였다. 수도권은 2%대였지만 일부 지방 도시는 5%를 넘었다.
+
+  - key: ko:exercise:el-news-translate-chimche
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-neun-gaunde
+    prompt:
+      source_text: Trong bối cảnh suy thoái kinh tế kéo dài, tỷ lệ thất nghiệp của thanh niên đang tăng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "경기 침체가 길어지는 가운데 청년 실업률이 높아지고 있다."
+        - "경기 침체가 길어지는 가운데 청년 실업률이 상승하고 있다."
+        - "경기 침체가 길어지는 가운데 청년 실업률이 오르고 있다."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 높아지고 있다."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 상승하고 있다."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 오르고 있다."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 높아지고 있다."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 상승하고 있다."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 오르고 있다."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 높아지고 있다."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 상승하고 있다."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 오르고 있다."
+        - "경기 침체가 길어지는 가운데 청년 실업률이 높아지고 있습니다."
+        - "경기 침체가 길어지는 가운데 청년 실업률이 상승하고 있습니다."
+        - "경기 침체가 길어지는 가운데 청년 실업률이 높아지고 있어요."
+        - "경기 침체가 길어지는 가운데 청년 실업률이 오르고 있어요."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 높아지고 있습니다."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 상승하고 있습니다."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 높아지고 있어요."
+        - "경기 침체가 장기화되는 가운데 청년 실업률이 오르고 있어요."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 높아지고 있습니다."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 상승하고 있습니다."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 높아지고 있어요."
+        - "경기 침체가 이어지는 가운데 청년 실업률이 오르고 있어요."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 높아지고 있습니다."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 상승하고 있습니다."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 높아지고 있어요."
+        - "경기 침체가 계속되는 가운데 청년 실업률이 오르고 있어요."
+        - "경기 침체가 길어지는 가운데 청년층 실업률이 높아지고 있다."
+        - "경기 침체가 길어지는 가운데 청년층 실업률이 상승하고 있다."
+        - "경기 침체가 장기화되는 가운데 청년층 실업률이 높아지고 있다."
+        - "경기 침체가 장기화되는 가운데 청년층 실업률이 상승하고 있다."
+        - "경기 침체가 이어지는 가운데 청년층 실업률이 높아지고 있다."
+        - "경기 침체가 이어지는 가운데 청년층 실업률이 상승하고 있다."
+    known_wrong:
+      - answer: 경기 침체가 길어지는 동안 청년 실업률이 높아지고 있다.
+        feedback_vi: -는 동안 chỉ khoảng thời gian, không nêu bối cảnh xã hội. Câu bản tin dùng -는 가운데.
+        error_tag: gaunde_vs_dongan
+      - answer: 경기 침체가 길어지는 가운데 청년 실업율이 높아지고 있다.
+        feedback_vi: Sai chính tả - sau patchim ㅂ viết 률 (실업률).
+        error_tag: ryul_yul_spelling
+      - answer: 경기 침체가 길어진 가운데 청년 실업률이 감소하고 있다.
+        feedback_vi: Ý "tỷ lệ thất nghiệp tăng" là 높아지다 / 상승하다; 감소하다 là giảm, ngược nghĩa.
+        error_tag: meaning_reversed
+    explanation:
+      vi: Bối cảnh đang tiếp diễn (suy thoái kéo dài) dùng V-는 가운데; tin chính đang diễn ra dùng -고 있다. Tỷ lệ thường đi với 높아지다 / 상승하다 / 오르다 hơn là 증가하다.
+    display_answer: 경기 침체가 길어지는 가운데 청년 실업률이 높아지고 있다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:el-news-translate-oreum-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gram-e-ttara
+    prompt:
+      source_text: 물가가 오름에 따라 외식 대신 집에서 밥을 해 먹는 가구가 늘었다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Cùng với việc giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Cùng với việc giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Do giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Do giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Do giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Vì giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Vì giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Vì giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Khi giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Khi giá cả tăng, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Khi giá cả tăng, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Giá cả tăng nên, số hộ gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Giá cả tăng nên, số gia đình nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ngoài tăng lên."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ngoài đã tăng lên."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ở ngoài tăng lên."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn ở ngoài đã tăng lên."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn tiệm tăng lên."
+        - "Giá cả tăng nên, số hộ nấu ăn ở nhà thay vì ăn tiệm đã tăng lên."
+        - "Giá cả tăng nên ngày càng nhiều hộ gia đình nấu ăn ở nhà thay vì ăn ngoài."
+        - "Giá cả tăng nên ngày càng nhiều hộ gia đình nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Giá cả tăng nên ngày càng nhiều gia đình nấu ăn ở nhà thay vì ăn ngoài."
+        - "Giá cả tăng nên ngày càng nhiều gia đình nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Cùng với việc giá cả tăng, ngày càng nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, ngày càng nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, ngày càng nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, ngày càng nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, ngày càng nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, ngày càng nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, ngày càng nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Do giá cả tăng, ngày càng nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Do giá cả tăng, ngày càng nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều hộ gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều hộ gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều gia đình đã chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ngoài."
+        - "Vì giá cả tăng, ngày càng nhiều gia đình chuyển sang nấu ăn ở nhà thay vì ăn ở ngoài."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo giá cả, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng.
+        feedback_vi: Dịch máy móc 에 따라 thành "theo". V-(으)ㅁ에 따라 nghĩa là "cùng với việc, do" - giá tăng kéo theo thay đổi.
+        error_tag: literal_translation
+      - answer: Giá cả tăng nhưng số hộ gia đình ăn ngoài đã tăng.
+        feedback_vi: Ngược nghĩa - 외식 대신 집에서 밥을 해 먹다 là nấu ở nhà thay vì ăn ngoài, và 에 따라 không phải "nhưng".
+        error_tag: meaning_reversed
+    explanation:
+      vi: 오름에 따라 = cùng với việc (giá cả) tăng; 외식 대신 = thay vì ăn ngoài; 해 먹다 = tự nấu ăn. Hai thay đổi đi song song nên tiếng Việt tự nhiên dùng "do / cùng với việc... nên".
+    display_answer: Cùng với việc giá cả tăng, số hộ gia đình nấu ăn ở nhà thay vì ăn ngoài đã tăng.
+
+  - key: ko:exercise:el-news-order-goyong
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-bijeonggyujik
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Trong bối cảnh tỷ lệ có việc làm tăng, tỷ lệ lao động không chính thức cũng tăng theo.\""
+      tokens:
+        - { id: v7a, text: 비정규직 }
+        - { id: c3k, text: 오르는 }
+        - { id: n8e, text: 높아졌다 }
+        - { id: g1w, text: 동안 }
+        - { id: x5r, text: 고용률이 }
+        - { id: j2m, text: 함께 }
+        - { id: s9t, text: 가운데 }
+        - { id: l4u, text: 비율도 }
+        - { id: h6q, text: 고용율이 }
+    answer:
+      orders:
+        - [x5r, c3k, s9t, v7a, l4u, j2m, n8e]
+    explanation:
+      vi: Bối cảnh 고용률이 오르는 가운데 đứng trước, tin chính 비정규직 비율도 함께 높아졌다 đứng sau. 동안 là token nhiễu (khoảng thời gian), 고용율이 sai chính tả vì sau ㅇ phải viết 률.
+    display_answer: 고용률이 오르는 가운데 비정규직 비율도 함께 높아졌다.
+
+  - key: ko:exercise:el-news-mcq-dongyeol
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gram-neun-gaunde
+    prompt:
+      stem: "Đọc tin - 한국은행이 기준 금리를 동결한 가운데 시중 은행들은 대출 금리를 잇따라 낮추고 있다. Nội dung nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a8f, text: "Ngân hàng trung ương giữ nguyên lãi suất cơ bản, còn các ngân hàng thương mại lần lượt hạ lãi suất cho vay.", lang: vi }
+        - { id: t2y, text: "Ngân hàng trung ương tăng lãi suất cơ bản, các ngân hàng thương mại cũng tăng theo.", lang: vi }
+        - { id: i5b, text: "Các ngân hàng thương mại giữ nguyên lãi suất cho vay.", lang: vi }
+        - { id: w0n, text: "Ngân hàng trung ương hạ lãi suất nên các ngân hàng thương mại tăng lãi suất cho vay.", lang: vi }
+    answer:
+      correct_option_id: a8f
+    explanation:
+      vi: 동결하다 là giữ nguyên (đóng băng), dùng -(으)ㄴ 가운데 vì quyết định đã có. Vế sau 대출 금리를 잇따라 낮추고 있다 = lần lượt hạ lãi suất cho vay - nên chỉ phương án đầu khớp cả hai vế.
+    display_answer: "Ngân hàng trung ương giữ nguyên lãi suất cơ bản, còn các ngân hàng thương mại lần lượt hạ lãi suất cho vay."
+
+  - key: ko:exercise:el-news-translate-choejeo
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-choejeo-imgeum
+    prompt:
+      source_text: Cùng với việc lương tối thiểu tăng, gánh nặng của các chủ cửa hàng nhỏ cũng lớn hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "최저임금이 인상됨에 따라 자영업자들의 부담도 커졌다."
+        - "최저임금이 인상됨에 따라 자영업자들의 부담도 커졌습니다."
+        - "최저임금이 인상됨에 따라 자영업자들의 부담도 커졌어요."
+        - "최저임금이 인상됨에 따라 자영업자들의 부담도 늘었다."
+        - "최저임금이 인상됨에 따라 자영업자들의 부담도 늘었습니다."
+        - "최저임금이 인상됨에 따라 자영업자의 부담도 커졌다."
+        - "최저임금이 인상됨에 따라 자영업자의 부담도 커졌습니다."
+        - "최저임금이 인상됨에 따라 자영업자의 부담도 커졌어요."
+        - "최저임금이 인상됨에 따라 자영업자의 부담도 늘었다."
+        - "최저임금이 인상됨에 따라 자영업자의 부담도 늘었습니다."
+        - "최저임금이 인상됨에 따라 소상공인들의 부담도 커졌다."
+        - "최저임금이 인상됨에 따라 소상공인들의 부담도 커졌습니다."
+        - "최저임금이 인상됨에 따라 소상공인들의 부담도 커졌어요."
+        - "최저임금이 인상됨에 따라 소상공인들의 부담도 늘었다."
+        - "최저임금이 인상됨에 따라 소상공인들의 부담도 늘었습니다."
+        - "최저임금이 인상됨에 따라 소상공인의 부담도 커졌다."
+        - "최저임금이 인상됨에 따라 소상공인의 부담도 커졌습니다."
+        - "최저임금이 인상됨에 따라 소상공인의 부담도 커졌어요."
+        - "최저임금이 인상됨에 따라 소상공인의 부담도 늘었다."
+        - "최저임금이 인상됨에 따라 소상공인의 부담도 늘었습니다."
+        - "최저임금이 인상됨에 따라 가게 주인들의 부담도 커졌다."
+        - "최저임금이 인상됨에 따라 가게 주인들의 부담도 커졌습니다."
+        - "최저임금이 인상됨에 따라 가게 주인들의 부담도 커졌어요."
+        - "최저임금이 인상됨에 따라 가게 주인들의 부담도 늘었다."
+        - "최저임금이 인상됨에 따라 가게 주인들의 부담도 늘었습니다."
+        - "최저임금이 오름에 따라 자영업자들의 부담도 커졌다."
+        - "최저임금이 오름에 따라 자영업자들의 부담도 커졌습니다."
+        - "최저임금이 오름에 따라 자영업자들의 부담도 커졌어요."
+        - "최저임금이 오름에 따라 자영업자들의 부담도 늘었다."
+        - "최저임금이 오름에 따라 자영업자들의 부담도 늘었습니다."
+        - "최저임금이 오름에 따라 자영업자의 부담도 커졌다."
+        - "최저임금이 오름에 따라 자영업자의 부담도 커졌습니다."
+        - "최저임금이 오름에 따라 자영업자의 부담도 커졌어요."
+        - "최저임금이 오름에 따라 자영업자의 부담도 늘었다."
+        - "최저임금이 오름에 따라 자영업자의 부담도 늘었습니다."
+        - "최저임금이 오름에 따라 소상공인들의 부담도 커졌다."
+        - "최저임금이 오름에 따라 소상공인들의 부담도 커졌습니다."
+        - "최저임금이 오름에 따라 소상공인들의 부담도 커졌어요."
+        - "최저임금이 오름에 따라 소상공인들의 부담도 늘었다."
+        - "최저임금이 오름에 따라 소상공인들의 부담도 늘었습니다."
+        - "최저임금이 오름에 따라 소상공인의 부담도 커졌다."
+        - "최저임금이 오름에 따라 소상공인의 부담도 커졌습니다."
+        - "최저임금이 오름에 따라 소상공인의 부담도 커졌어요."
+        - "최저임금이 오름에 따라 소상공인의 부담도 늘었다."
+        - "최저임금이 오름에 따라 소상공인의 부담도 늘었습니다."
+        - "최저임금이 오름에 따라 가게 주인들의 부담도 커졌다."
+        - "최저임금이 오름에 따라 가게 주인들의 부담도 커졌습니다."
+        - "최저임금이 오름에 따라 가게 주인들의 부담도 커졌어요."
+        - "최저임금이 오름에 따라 가게 주인들의 부담도 늘었다."
+        - "최저임금이 오름에 따라 가게 주인들의 부담도 늘었습니다."
+        - "최저임금이 인상되면서 자영업자들의 부담도 커졌다."
+        - "최저임금이 인상되면서 자영업자들의 부담도 커졌습니다."
+        - "최저임금이 인상되면서 자영업자들의 부담도 커졌어요."
+        - "최저임금이 인상되면서 자영업자들의 부담도 늘었다."
+        - "최저임금이 인상되면서 자영업자들의 부담도 늘었습니다."
+        - "최저임금이 인상되면서 자영업자의 부담도 커졌다."
+        - "최저임금이 인상되면서 자영업자의 부담도 커졌습니다."
+        - "최저임금이 인상되면서 자영업자의 부담도 커졌어요."
+        - "최저임금이 인상되면서 자영업자의 부담도 늘었다."
+        - "최저임금이 인상되면서 자영업자의 부담도 늘었습니다."
+        - "최저임금이 인상되면서 소상공인들의 부담도 커졌다."
+        - "최저임금이 인상되면서 소상공인들의 부담도 커졌습니다."
+        - "최저임금이 인상되면서 소상공인들의 부담도 커졌어요."
+        - "최저임금이 인상되면서 소상공인들의 부담도 늘었다."
+        - "최저임금이 인상되면서 소상공인들의 부담도 늘었습니다."
+        - "최저임금이 인상되면서 소상공인의 부담도 커졌다."
+        - "최저임금이 인상되면서 소상공인의 부담도 커졌습니다."
+        - "최저임금이 인상되면서 소상공인의 부담도 커졌어요."
+        - "최저임금이 인상되면서 소상공인의 부담도 늘었다."
+        - "최저임금이 인상되면서 소상공인의 부담도 늘었습니다."
+        - "최저임금이 인상되면서 가게 주인들의 부담도 커졌다."
+        - "최저임금이 인상되면서 가게 주인들의 부담도 커졌습니다."
+        - "최저임금이 인상되면서 가게 주인들의 부담도 커졌어요."
+        - "최저임금이 인상되면서 가게 주인들의 부담도 늘었다."
+        - "최저임금이 인상되면서 가게 주인들의 부담도 늘었습니다."
+        - "최저임금이 오르면서 자영업자들의 부담도 커졌다."
+        - "최저임금이 오르면서 자영업자들의 부담도 커졌습니다."
+        - "최저임금이 오르면서 자영업자들의 부담도 커졌어요."
+        - "최저임금이 오르면서 자영업자들의 부담도 늘었다."
+        - "최저임금이 오르면서 자영업자들의 부담도 늘었습니다."
+        - "최저임금이 오르면서 자영업자의 부담도 커졌다."
+        - "최저임금이 오르면서 자영업자의 부담도 커졌습니다."
+        - "최저임금이 오르면서 자영업자의 부담도 커졌어요."
+        - "최저임금이 오르면서 자영업자의 부담도 늘었다."
+        - "최저임금이 오르면서 자영업자의 부담도 늘었습니다."
+        - "최저임금이 오르면서 소상공인들의 부담도 커졌다."
+        - "최저임금이 오르면서 소상공인들의 부담도 커졌습니다."
+        - "최저임금이 오르면서 소상공인들의 부담도 커졌어요."
+        - "최저임금이 오르면서 소상공인들의 부담도 늘었다."
+        - "최저임금이 오르면서 소상공인들의 부담도 늘었습니다."
+        - "최저임금이 오르면서 소상공인의 부담도 커졌다."
+        - "최저임금이 오르면서 소상공인의 부담도 커졌습니다."
+        - "최저임금이 오르면서 소상공인의 부담도 커졌어요."
+        - "최저임금이 오르면서 소상공인의 부담도 늘었다."
+        - "최저임금이 오르면서 소상공인의 부담도 늘었습니다."
+        - "최저임금이 오르면서 가게 주인들의 부담도 커졌다."
+        - "최저임금이 오르면서 가게 주인들의 부담도 커졌습니다."
+        - "최저임금이 오르면서 가게 주인들의 부담도 커졌어요."
+        - "최저임금이 오르면서 가게 주인들의 부담도 늘었다."
+        - "최저임금이 오르면서 가게 주인들의 부담도 늘었습니다."
+        - "최저임금 인상에 따라 자영업자들의 부담도 커졌다."
+        - "최저임금 인상에 따라 자영업자들의 부담도 커졌습니다."
+        - "최저임금 인상에 따라 자영업자들의 부담도 커졌어요."
+        - "최저임금 인상에 따라 자영업자의 부담도 커졌다."
+        - "최저임금 인상에 따라 자영업자의 부담도 커졌습니다."
+        - "최저임금 인상에 따라 자영업자의 부담도 커졌어요."
+        - "최저임금 인상에 따라 소상공인들의 부담도 커졌다."
+        - "최저임금 인상에 따라 소상공인들의 부담도 커졌습니다."
+        - "최저임금 인상에 따라 소상공인들의 부담도 커졌어요."
+        - "최저임금 인상에 따라 소상공인의 부담도 커졌다."
+        - "최저임금 인상에 따라 소상공인의 부담도 커졌습니다."
+        - "최저임금 인상에 따라 소상공인의 부담도 커졌어요."
+        - "최저임금 인상에 따라 가게 주인들의 부담도 커졌다."
+        - "최저임금 인상에 따라 가게 주인들의 부담도 커졌습니다."
+        - "최저임금 인상에 따라 가게 주인들의 부담도 커졌어요."
+    known_wrong:
+      - answer: 최저임금이 인상됨에 따르면 자영업자들의 부담도 커졌다.
+        feedback_vi: 에 따르면 chỉ dùng để dẫn nguồn tin. "Cùng với việc..." là -(으)ㅁ에 따라.
+        error_tag: ttara_vs_ttareumyeon
+      - answer: 최저임금이 상승됨에 따라 자영업자들의 부담도 커졌다.
+        feedback_vi: Lương tối thiểu do hội đồng quyết định nên dùng 인상되다 hoặc 오르다; 상승되다 vừa sai nghĩa vừa là bị động thừa.
+        error_tag: insang_vs_sangseung
+      - answer: 최저임금이 인상되기에 따라 자영업자들의 부담도 커졌다.
+        feedback_vi: Trước 따라 phải danh từ hoá bằng -(으)ㅁ - 인상됨에 따라.
+        error_tag: eum_e_ttara_form
+    explanation:
+      vi: Lương tối thiểu được quyết định nâng lên nên dùng 인상되다 (hoặc 오르다), nối bằng -(으)ㅁ에 따라 hay N 인상에 따라. "Chủ cửa hàng nhỏ" trong báo Hàn là 자영업자 hoặc 소상공인.
+    display_answer: 최저임금이 인상됨에 따라 자영업자들의 부담도 커졌다.

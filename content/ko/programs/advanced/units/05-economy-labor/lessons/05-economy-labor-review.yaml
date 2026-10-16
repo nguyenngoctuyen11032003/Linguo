@@ -1,0 +1,1271 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:economy-labor-review
+order_index: 5
+level: topik6
+title:
+  vi: Ôn tập - bài báo kinh tế và toạ đàm về tuần làm bốn ngày
+objectives:
+  - vi: Đọc hiểu một bài báo kinh tế - tiêu đề, câu dẫn, số liệu và ý kiến chuyên gia.
+  - vi: Theo dõi một buổi toạ đàm - ai ủng hộ, ai lo ngại, và họ thừa nhận - phản bác ra sao.
+  - vi: Tự kiểm tra lỗi hay gặp - 인상 / 상승, -므로 / -ㅁ으로써, collocation 빚을 지다 · 손해를 보다, 해고 / 퇴사.
+estimated_minutes: 25
+skills: [reading, listening, grammar, vocabulary]
+prerequisites: [ko:lesson:labor-debate]
+items:
+  - item: ko:item:el-sobi-simni
+    role: reuse
+  - item: ko:item:el-gram-neun-gaunde
+    role: reuse
+  - item: ko:item:el-gram-e-ttara
+    role: reuse
+  - item: ko:item:el-ingeonbi
+    role: reuse
+  - item: ko:item:el-gram-eumeuro
+    role: reuse
+  - item: ko:item:el-gram-n-neun-isang
+    role: reuse
+  - item: ko:item:el-gram-gi-sipsangida
+    role: reuse
+  - item: ko:item:el-haego
+    role: reuse
+  - item: ko:item:el-gram-dasipi
+    role: reuse
+  - item: ko:item:el-gram-l-beophada
+    role: reuse
+  - item: ko:item:el-gram-eul-maknonhago
+    role: reuse
+  - item: ko:item:el-gwaro
+    role: reuse
+  - item: ko:item:gp-e-ttareumyeon
+    role: reuse
+  - item: ko:item:hl-pilja-taedo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn có hai văn bản do Linguo soạn - một bài báo về lãi suất cao và các chủ cửa hàng nhỏ, và một buổi toạ đàm về tuần làm bốn ngày. Bạn sẽ đọc, nghe, tìm ý chính, rồi viết lại các câu then chốt bằng những cấu trúc của unit.
+  - type: explain
+    text:
+      vi: Bài báo Hàn có khuôn ổn định - tiêu đề kết thúc bằng danh từ, câu dẫn nêu bối cảnh bằng -는 가운데 hay -(으)ㅁ에 따라, thân bài có số liệu với N에 따르면, cuối bài là ý kiến chuyên gia -다고 지적했다. Ý chính thường nằm ở tiêu đề và câu dẫn.
+  - type: explain
+    text:
+      vi: Trong toạ đàm, hãy nghe từ báo hiệu - 아시다시피 (dẫn điều ai cũng biết), -(으)ㄹ 법도 합니다만 (thừa nhận rồi phản bác), N을/를 막론하고 (khái quát). Câu sau 만 / 다만 thường là quan điểm thật của người nói.
+  - type: deep_explain
+    text:
+      vi: Câu hỏi thái độ (태도) trong TOPIK thường đặt bẫy ở chỗ người nói vừa đồng ý vừa lo ngại - 공감합니다. 다만... nghĩa là đồng cảm có điều kiện, không phải phản đối hoàn toàn. Với câu hỏi "điều nào đúng", hãy đối chiếu từng con số và động từ tăng giảm (줄었다 / 늘었다), vì phương án sai hay chỉ đổi đúng một chữ.
+  - type: example
+    target: "[고금리에 소비 위축… 자영업자 ‘이중고’] 기준 금리가 1년 넘게 높은 수준에 머무는 가운데 소비 심리가 좀처럼 회복되지 않고 있다. 통계청에 따르면 지난달 소매 판매액은 1년 전 같은 달보다 2.1% 줄었다. 인건비와 임대료 부담이 커짐에 따라 직원을 줄이고 혼자 가게를 꾸려 가는 자영업자도 늘었다. 한 경제 전문가는 “이자 부담이 이렇게 큰 이상 소비가 단기간에 살아나기는 어렵다”며 “무리한 대출로 버티다가는 폐업으로 이어지기 십상”이라고 지적했다."
+    target_lang: ko
+    translation:
+      vi: "[Lãi suất cao khiến tiêu dùng chững lại - chủ cửa hàng nhỏ khó chồng khó] Trong bối cảnh lãi suất cơ bản ở mức cao hơn một năm nay, tâm lý tiêu dùng mãi chưa phục hồi. Theo Cục Thống kê, doanh số bán lẻ tháng trước giảm 2,1% so với cùng tháng năm ngoái. Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng. Một chuyên gia kinh tế chỉ ra rằng \"một khi gánh nặng tiền lãi còn lớn thế này thì tiêu dùng khó phục hồi trong thời gian ngắn\", và \"nếu cứ cầm cự bằng những khoản vay quá sức thì rất dễ dẫn đến đóng cửa\"."
+    note:
+      vi: Bài báo hư cấu do Linguo soạn - -는 가운데 (bối cảnh), 에 따르면 (số liệu), -(으)ㅁ에 따라 (thay đổi kéo theo), -는 이상, -기 십상 (ý kiến chuyên gia).
+  - type: example
+    target: "사회자: 주 4일제 도입, 어떻게 보십니까? / 김 교수: 아시다시피 우리나라는 근로 시간이 긴 편입니다. 업종을 막론하고 과로 문제가 심각하므로 근로 시간 단축은 피할 수 없는 과제입니다. / 박 대표: 방향에는 공감합니다. 다만 중소기업은 인건비 부담이 커서, 같은 임금을 주면서 근무일을 하루 줄이기는 어렵다는 걱정이 나올 법합니다."
+    target_lang: ko
+    translation:
+      vi: "Người dẫn - Ông bà nhìn nhận thế nào về việc áp dụng tuần làm bốn ngày? / Giáo sư Kim - Như quý vị đã biết, giờ làm việc ở nước ta thuộc loại dài. Vì vấn đề làm việc quá sức nghiêm trọng ở mọi ngành nghề nên rút ngắn giờ làm là nhiệm vụ không thể né tránh. / Giám đốc Park - Tôi đồng cảm với hướng đi đó. Có điều doanh nghiệp vừa và nhỏ gánh chi phí nhân công lớn, nên lo ngại rằng khó mà vừa trả nguyên lương vừa bớt một ngày làm cũng là điều dễ hiểu."
+    note:
+      vi: Toạ đàm hư cấu - 아시다시피, 을 막론하고, -(으)므로 (giáo sư Kim); 다만 + -(으)ㄹ 법하다 (giám đốc Park đồng cảm có điều kiện).
+  - type: example
+    target: 정부가 내년부터 전기 요금을 인상하기로 함에 따라 가계의 부담이 더 커질 전망이다.
+    target_lang: ko
+    translation:
+      vi: Do chính phủ quyết định tăng giá điện từ năm sau, gánh nặng của các hộ gia đình dự kiến sẽ còn lớn hơn.
+    note:
+      vi: Giá điện do chính phủ quyết định nên dùng 인상; -기로 함에 따라 = "do đã quyết định...".
+  - type: common_mistake
+    wrong: 다음 달부터 버스 요금이 300원 상승된다.
+    right: 다음 달부터 버스 요금이 300원 인상된다.
+    target_lang: ko
+    note:
+      vi: Cước xe buýt do chính quyền quyết định nên là 인상. 상승 là tự tăng và vốn là nội động từ, nên 상승되다 vừa sai nghĩa vừa thừa bị động.
+  - type: common_mistake
+    wrong: 오늘은 처리할 서류가 많기에 다들 늦게까지 남아 주세요.
+    right: 오늘은 처리할 서류가 많으니까 다들 늦게까지 남아 주세요.
+    target_lang: ko
+    note:
+      vi: Vế sau là lời đề nghị nên phải dùng -(으)니까. -기에, -아서/어서 chỉ đi với vế sau tường thuật.
+  - type: common_mistake
+    wrong: 사업이 어려워져서 친척에게 빚을 받았다.
+    right: 사업이 어려워져서 친척에게 빚을 졌다.
+    target_lang: ko
+    note:
+      vi: Mắc nợ là 빚을 지다. 빚을 받다 nghe như "đòi được nợ" - ngược hẳn nghĩa.
+  - type: summary
+    points:
+      - vi: Bài báo - tiêu đề danh từ → câu dẫn -는 가운데 / -(으)ㅁ에 따라 → số liệu 에 따르면 → chuyên gia -다고 지적했다.
+      - vi: Toạ đàm - 아시다시피 (điều đã biết), -(으)ㄹ 법도 합니다만 (thừa nhận rồi phản bác), 을/를 막론하고 (khái quát).
+      - vi: Lý do văn viết -(으)므로, -기에; "một khi đã" -(으)ㄴ/는 이상; cảnh báo -기 십상이다.
+      - vi: 인상 (có người quyết định) ≠ 상승 (tự tăng); 해고 (bị sa thải) ≠ 퇴사 (tự nghỉ); 빚을 지다 · 손해를 보다.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:el-review-mcq-article-main
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-sobi-simni
+    prompt:
+      stem: "[고금리에 소비 위축… 자영업자 ‘이중고’] 기준 금리가 1년 넘게 높은 수준에 머무는 가운데 소비 심리가 좀처럼 회복되지 않고 있다. … 한 경제 전문가는 “무리한 대출로 버티다가는 폐업으로 이어지기 십상”이라고 지적했다. - Ý chính của bài báo là gì?"
+      stem_lang: vi
+      options:
+        - { id: r2w, text: "Lãi suất cao kéo dài khiến tiêu dùng chững lại và chủ cửa hàng nhỏ gặp khó khăn chồng chất.", lang: vi }
+        - { id: k6p, text: "Lãi suất giảm nên tiêu dùng phục hồi mạnh mẽ.", lang: vi }
+        - { id: n1f, text: "Chủ cửa hàng nhỏ đang tuyển thêm nhiều nhân viên.", lang: vi }
+        - { id: x9a, text: "Chuyên gia khuyên nên vay thêm để vượt qua khó khăn.", lang: vi }
+    answer:
+      correct_option_id: r2w
+    explanation:
+      vi: Tiêu đề (고금리에 소비 위축, 자영업자 이중고) và câu dẫn (높은 수준에 머무는 가운데 소비 심리가 회복되지 않고 있다) đã chứa ý chính. Chuyên gia cảnh báo vay quá sức chứ không khuyên vay thêm.
+    display_answer: "Lãi suất cao kéo dài khiến tiêu dùng chững lại và chủ cửa hàng nhỏ gặp khó khăn chồng chất."
+
+  - key: ko:exercise:el-review-mcq-article-detail
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:gp-e-ttareumyeon
+    prompt:
+      stem: "통계청에 따르면 지난달 소매 판매액은 1년 전 같은 달보다 2.1% 줄었다. 인건비와 임대료 부담이 커짐에 따라 직원을 줄이고 혼자 가게를 꾸려 가는 자영업자도 늘었다. - Điều nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: c5j, text: "Doanh số bán lẻ tháng trước giảm 2,1% so với cùng tháng năm trước.", lang: vi }
+        - { id: h8t, text: "Doanh số bán lẻ tháng trước tăng 2,1% so với cùng tháng năm trước.", lang: vi }
+        - { id: e3m, text: "Số chủ cửa hàng tự mình vận hành cửa hàng đã giảm.", lang: vi }
+        - { id: z7b, text: "Tiền thuê mặt bằng giảm nên chủ cửa hàng tuyển thêm người.", lang: vi }
+    answer:
+      correct_option_id: c5j
+    explanation:
+      vi: 2.1% 줄었다 = giảm 2,1%. 커짐에 따라 = cùng với việc gánh nặng tăng lên, nên số người tự xoay xở một mình tăng (늘었다), không giảm; tiền thuê là gánh nặng tăng chứ không giảm.
+    display_answer: "Doanh số bán lẻ tháng trước giảm 2,1% so với cùng tháng năm trước."
+
+  - key: ko:exercise:el-review-listen-professor
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gram-eul-maknonhago
+    prompt:
+      audio_asset_id: null
+      fallback_text: 업종을 막론하고 과로 문제가 심각하므로 근로 시간 단축은 피할 수 없는 과제입니다.
+      options:
+        - { id: o4y, text: "Vì vấn đề làm việc quá sức nghiêm trọng ở mọi ngành nên rút ngắn giờ làm là nhiệm vụ không thể né tránh.", lang: vi }
+        - { id: s0g, text: "Chỉ một vài ngành có vấn đề làm việc quá sức nên không cần rút ngắn giờ làm.", lang: vi }
+        - { id: i2v, text: "Bằng cách rút ngắn giờ làm, vấn đề làm việc quá sức đã được giải quyết ở mọi ngành.", lang: vi }
+        - { id: u6c, text: "Bất kể giờ làm thế nào, mọi ngành đều không có vấn đề làm việc quá sức.", lang: vi }
+    answer:
+      correct_option_id: o4y
+    explanation:
+      vi: 업종을 막론하고 = ở mọi ngành nghề; -(으)므로 = vì (không phải "bằng cách" -(으)ㅁ으로써); 피할 수 없는 과제 = nhiệm vụ không thể né tránh. Các phương án khác đảo nghĩa hoặc đọc nhầm đuôi.
+    display_answer: "Vì vấn đề làm việc quá sức nghiêm trọng ở mọi ngành nên rút ngắn giờ làm là nhiệm vụ không thể né tránh."
+
+  - key: ko:exercise:el-review-mcq-attitude
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:hl-pilja-taedo
+    prompt:
+      stem: "박 대표: 방향에는 공감합니다. 다만 중소기업은 인건비 부담이 커서, 같은 임금을 주면서 근무일을 하루 줄이기는 어렵다는 걱정이 나올 법합니다. - Thái độ của giám đốc Park là gì?"
+      stem_lang: vi
+      options:
+        - { id: b4d, text: "Đồng cảm với hướng đi nhưng lo ngại gánh nặng cho doanh nghiệp vừa và nhỏ.", lang: vi }
+        - { id: l7q, text: "Phản đối hoàn toàn vì cho rằng không có vấn đề làm việc quá sức.", lang: vi }
+        - { id: f1k, text: "Ủng hộ tuyệt đối và muốn áp dụng ngay lập tức.", lang: vi }
+        - { id: w8r, text: "Thờ ơ, không đưa ra ý kiến nào.", lang: vi }
+    answer:
+      correct_option_id: b4d
+    explanation:
+      vi: 공감합니다 (đồng cảm) + 다만 (có điều) + -(으)ㄹ 법합니다 (lo ngại là có lý) = đồng tình có điều kiện. Đây là bẫy điển hình - không phải phản đối hoàn toàn, cũng không ủng hộ tuyệt đối.
+    display_answer: "Đồng cảm với hướng đi nhưng lo ngại gánh nặng cho doanh nghiệp vừa và nhỏ."
+
+  - key: ko:exercise:el-review-fill-sipsang
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-gi-sipsangida
+    prompt:
+      template: "한 경제 전문가는 무리한 대출로 버티다가는 폐업으로 이어지기 {{b1}}이라고 지적했다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Cảnh báo "mười phần thì tám chín sẽ (xấu)".
+        - 십...
+    answer:
+      blanks:
+        b1: [십상]
+    known_wrong:
+      - answer: 마련
+        feedback_vi: -기 마련이다 là quy luật tự nhiên, không mang sắc thái cảnh báo việc làm sai. Chuyên gia đang cảnh báo - -기 십상이다.
+        error_tag: sipsang_vs_maryeon
+      - answer: 십상하다
+        feedback_vi: 십상 là danh từ; khi trích dẫn, 십상이다 thành 십상이라고.
+        error_tag: sipsang_form
+    explanation:
+      vi: -다가는 (nếu cứ... thì) + -기 십상이다 (rất dễ dẫn tới điều xấu) là cặp cảnh báo quen thuộc. Khi trích dẫn, 십상이다 → 십상이라고.
+    display_answer: 한 경제 전문가는 무리한 대출로 버티다가는 폐업으로 이어지기 십상이라고 지적했다.
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:el-review-fill-lead
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-e-ttara
+    prompt:
+      template: "기준 금리가 높은 수준에 {{b1}} 가운데 인건비 부담까지 {{b2}} 따라 문을 닫는 가게가 늘고 있다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [머무는, 머물러 있는, 유지되는]
+        b2: [커짐에, 늘어남에, 증가함에]
+    known_wrong:
+      - answer: 커지기에
+        feedback_vi: Trước 따라 cần danh từ hoá -(으)ㅁ - 커짐에 따라.
+        error_tag: eum_e_ttara_form
+      - answer: 머물기
+        feedback_vi: Trước 가운데 cần định ngữ - 머무는 가운데 (gốc ㄹ rơi trước -는).
+        error_tag: gaunde_form
+      - answer: 머물는
+        feedback_vi: Gốc kết thúc bằng ㄹ thì rơi ㄹ trước -는 - 머물다 → 머무는.
+        error_tag: l_drop
+    explanation:
+      vi: Bối cảnh đang tiếp diễn - V-는 가운데 (머물다 → 머무는, ㄹ rơi trước ㄴ). Thay đổi kéo theo - V-(으)ㅁ에 따라 (커지다 → 커짐).
+    display_answer: 기준 금리가 높은 수준에 머무는 가운데 인건비 부담까지 커짐에 따라 문을 닫는 가게가 늘고 있다.
+
+  - key: ko:exercise:el-review-fill-haego
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-haego
+    prompt:
+      template: "그는 회사에서 부당하게 {{b1}} 노동위원회에 구제를 신청했다."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [해고되어, 해고돼서, 해고되어서, 해고되자, 해고당해, 해고당해서, 해고당하자, 해고된 뒤, 해고당한 뒤]
+    known_wrong:
+      - answer: 퇴사해서
+        feedback_vi: 퇴사하다 là tự nghỉ việc. Bị đuổi việc trái luật (부당하게) là 해고되다 / 해고당하다.
+        error_tag: haego_vs_toesa
+      - answer: 해고해서
+        feedback_vi: 해고하다 là công ty sa thải người khác. Chủ ngữ 그 là người bị sa thải - 해고되다.
+        error_tag: active_passive
+    explanation:
+      vi: 부당 해고 (sa thải trái luật) là lý do để xin 구제 (cứu xét) ở 노동위원회. Người lao động là người chịu hành động nên dùng 해고되다 hoặc 해고당하다.
+    display_answer: 그는 회사에서 부당하게 해고되어 노동위원회에 구제를 신청했다.
+
+  - key: ko:exercise:el-review-translate-meuro
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-eumeuro
+    prompt:
+      source_text: Vì chi phí nhân công tăng nên các doanh nghiệp vừa và nhỏ đang ngại tuyển dụng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "인건비가 올랐으므로 중소기업들은 채용을 꺼리고 있다."
+        - "인건비가 올랐으므로 중소기업들은 채용을 꺼린다."
+        - "인건비가 올랐으므로 중소기업들은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐으므로 중소기업들은 채용을 망설이고 있다."
+        - "인건비가 올랐으므로 중소기업은 채용을 꺼리고 있다."
+        - "인건비가 올랐으므로 중소기업은 채용을 꺼린다."
+        - "인건비가 올랐으므로 중소기업은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐으므로 중소기업은 채용을 망설이고 있다."
+        - "인건비가 상승했으므로 중소기업들은 채용을 꺼리고 있다."
+        - "인건비가 상승했으므로 중소기업들은 채용을 꺼린다."
+        - "인건비가 상승했으므로 중소기업들은 채용을 꺼리고 있습니다."
+        - "인건비가 상승했으므로 중소기업들은 채용을 망설이고 있다."
+        - "인건비가 상승했으므로 중소기업은 채용을 꺼리고 있다."
+        - "인건비가 상승했으므로 중소기업은 채용을 꺼린다."
+        - "인건비가 상승했으므로 중소기업은 채용을 꺼리고 있습니다."
+        - "인건비가 상승했으므로 중소기업은 채용을 망설이고 있다."
+        - "인건비가 올랐기에 중소기업들은 채용을 꺼리고 있다."
+        - "인건비가 올랐기에 중소기업들은 채용을 꺼린다."
+        - "인건비가 올랐기에 중소기업들은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐기에 중소기업들은 채용을 망설이고 있다."
+        - "인건비가 올랐기에 중소기업은 채용을 꺼리고 있다."
+        - "인건비가 올랐기에 중소기업은 채용을 꺼린다."
+        - "인건비가 올랐기에 중소기업은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐기에 중소기업은 채용을 망설이고 있다."
+        - "인건비가 올랐기 때문에 중소기업들은 채용을 꺼리고 있다."
+        - "인건비가 올랐기 때문에 중소기업들은 채용을 꺼린다."
+        - "인건비가 올랐기 때문에 중소기업들은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐기 때문에 중소기업들은 채용을 망설이고 있다."
+        - "인건비가 올랐기 때문에 중소기업은 채용을 꺼리고 있다."
+        - "인건비가 올랐기 때문에 중소기업은 채용을 꺼린다."
+        - "인건비가 올랐기 때문에 중소기업은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐기 때문에 중소기업은 채용을 망설이고 있다."
+        - "인건비가 늘었으므로 중소기업들은 채용을 꺼리고 있다."
+        - "인건비가 늘었으므로 중소기업들은 채용을 꺼린다."
+        - "인건비가 늘었으므로 중소기업들은 채용을 꺼리고 있습니다."
+        - "인건비가 늘었으므로 중소기업들은 채용을 망설이고 있다."
+        - "인건비가 늘었으므로 중소기업은 채용을 꺼리고 있다."
+        - "인건비가 늘었으므로 중소기업은 채용을 꺼린다."
+        - "인건비가 늘었으므로 중소기업은 채용을 꺼리고 있습니다."
+        - "인건비가 늘었으므로 중소기업은 채용을 망설이고 있다."
+        - "인건비가 올라서 중소기업들은 채용을 꺼리고 있어요."
+        - "인건비가 올라서 중소기업들은 채용을 꺼리고 있습니다."
+        - "인건비가 올라서 중소기업은 채용을 꺼리고 있어요."
+        - "인건비가 올라서 중소기업은 채용을 꺼리고 있습니다."
+        - "인건비가 올랐기 때문에 중소기업들은 채용을 꺼리고 있어요."
+        - "인건비가 올랐기 때문에 중소기업은 채용을 꺼리고 있어요."
+    known_wrong:
+      - answer: 인건비가 올랐으므로써 중소기업들은 채용을 꺼리고 있다.
+        feedback_vi: Không có dạng -므로써. "Vì" là -(으)므로.
+        error_tag: meuro_vs_eurosseo
+      - answer: 인건비가 오름으로써 중소기업들은 채용을 꺼리고 있다.
+        feedback_vi: -(으)ㅁ으로써 là "bằng cách". Chi phí tăng là nguyên nhân, nên dùng -(으)므로 / -기에.
+        error_tag: meuro_vs_eurosseo
+      - answer: 인건비가 올랐으므로 중소기업들은 취업을 꺼리고 있다.
+        feedback_vi: Doanh nghiệp tuyển người là 채용; 취업 là việc người lao động tìm được việc.
+        error_tag: chaeyong_vs_chwieop
+    explanation:
+      vi: Văn viết trang trọng - -았/었으므로 hoặc -았/었기에; "ngại" = 꺼리다; doanh nghiệp tuyển người = 채용.
+    display_answer: 인건비가 올랐으므로 중소기업들은 채용을 꺼리고 있다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:el-review-translate-article-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:el-ingeonbi
+    prompt:
+      source_text: 인건비와 임대료 부담이 커짐에 따라 직원을 줄이고 혼자 가게를 꾸려 가는 자영업자도 늘었다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Cùng với việc gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Do gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Vì gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê nhà tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng lên, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng cắt giảm nhân viên và một mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và tự mình trông cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình xoay xở cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình vận hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình điều hành cửa hàng cũng tăng."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng lên."
+        - "Khi gánh nặng chi phí nhân công và tiền thuê tăng, số chủ cửa hàng giảm bớt nhân viên và một mình trông cửa hàng cũng tăng."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo gánh nặng chi phí nhân công và tiền thuê mặt bằng, số chủ cửa hàng cắt giảm nhân viên cũng tăng.
+        feedback_vi: Dịch máy móc 에 따라 = "theo". -(으)ㅁ에 따라 = cùng với việc / do - một thay đổi kéo theo thay đổi khác.
+        error_tag: literal_translation
+      - answer: Gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng nên số chủ cửa hàng tuyển thêm nhân viên cũng tăng.
+        feedback_vi: 직원을 줄이다 là cắt giảm nhân viên, không phải tuyển thêm.
+        error_tag: meaning_reversed
+    explanation:
+      vi: 커짐에 따라 = cùng với việc (gánh nặng) tăng; 직원을 줄이다 = cắt giảm nhân viên; 혼자 가게를 꾸려 가다 = tự mình xoay xở cửa hàng; 자영업자 = người tự kinh doanh, chủ cửa hàng nhỏ.
+    display_answer: Cùng với việc gánh nặng chi phí nhân công và tiền thuê mặt bằng tăng lên, số chủ cửa hàng cắt giảm nhân viên và tự mình xoay xở cửa hàng cũng tăng lên.
+
+  - key: ko:exercise:el-review-order-beop
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-l-beophada
+    prompt:
+      instruction: "Sắp xếp thành lời phát biểu: \"Lo ngại như vậy cũng là điều dễ hiểu, nhưng kết quả thí điểm đã khác.\""
+      tokens:
+        - { id: m3s, text: 결과는 }
+        - { id: t7e, text: 나올 }
+        - { id: a1x, text: 달랐습니다 }
+        - { id: q5n, text: 그런 }
+        - { id: d9w, text: 운영 }
+        - { id: y4c, text: 합니다만 }
+        - { id: g2k, text: 걱정이 }
+        - { id: e8h, text: 시범 }
+        - { id: p6v, text: 법도 }
+        - { id: j0r, text: 법이 }
+    answer:
+      orders:
+        - [q5n, g2k, t7e, p6v, y4c, e8h, d9w, m3s, a1x]
+    explanation:
+      vi: V-(으)ㄹ 법도 합니다만 - thừa nhận ý đối phương rồi chuyển sang phản bác. 법이 là token nhiễu - trong cấu trúc này 법 chỉ đi với 하다 hoặc 도 하다, không có dạng 법이 하다.
+    display_answer: 그런 걱정이 나올 법도 합니다만 시범 운영 결과는 달랐습니다.
+
+  - key: ko:exercise:el-review-mcq-opening
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-dasipi
+    prompt:
+      stem: "Bạn là giáo sư Kim trong toạ đàm. Bạn muốn mở đầu bằng cách chỉ vào biểu đồ đang chiếu trên màn hình. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k2u, text: "보시다시피 화면의 그래프는 지난 5년간 과로 관련 상담이 두 배로 늘었음을 보여 줍니다.", lang: ko }
+        - { id: z6o, text: "보실 법하게 화면의 그래프는 지난 5년간 과로 관련 상담이 두 배로 늘었음을 보여 줍니다.", lang: ko }
+        - { id: h0b, text: "보시다시피 하면 화면의 그래프는 지난 5년간 과로 관련 상담이 두 배로 늘었음을 보여 줍니다.", lang: ko }
+        - { id: v9i, text: "보신 나머지 화면의 그래프는 지난 5년간 과로 관련 상담이 두 배로 늘었음을 보여 줍니다.", lang: ko }
+    answer:
+      correct_option_id: k2u
+    explanation:
+      vi: 보시다시피 = "như quý vị đang thấy" - mở đầu chuẩn khi chỉ vào số liệu. -(으)ㄹ 법하다 không có dạng trạng từ 법하게 ở đây, -다시피 하다 là "gần như", còn -(으)ㄴ 나머지 là "vì quá...".
+    display_answer: "보시다시피 화면의 그래프는 지난 5년간 과로 관련 상담이 두 배로 늘었음을 보여 줍니다."
+
+  - key: ko:exercise:el-review-translate-isang
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:el-gram-n-neun-isang
+    prompt:
+      source_text: Một khi gánh nặng tiền lãi còn lớn như thế này thì tiêu dùng khó phục hồi trong thời gian ngắn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 살아나기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 회복되기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 살아나기 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 살아나기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 회복되기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 살아나기 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 빠른 시일 안에 살아나기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 빠른 시일 안에 회복되기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 빠른 시일 안에 살아나기 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 살아나기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 회복되기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 살아나기 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 살아나기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 회복되기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 살아나기 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 빠른 시일 안에 살아나기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 빠른 시일 안에 회복되기는 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비는 빠른 시일 안에 살아나기 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 단기간에 살아나기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 단기간에 회복되기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 단기간에 살아나기 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 짧은 기간에 살아나기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 짧은 기간에 회복되기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 짧은 기간에 살아나기 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 빠른 시일 안에 살아나기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 빠른 시일 안에 회복되기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비가 빠른 시일 안에 살아나기 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 단기간에 살아나기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 단기간에 회복되기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 단기간에 살아나기 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 짧은 기간에 살아나기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 짧은 기간에 회복되기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 짧은 기간에 살아나기 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 빠른 시일 안에 살아나기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 빠른 시일 안에 회복되기는 어렵다."
+        - "이자 부담이 아직 이렇게 큰 이상 소비는 빠른 시일 안에 살아나기 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 단기간에 살아나기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 단기간에 회복되기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 단기간에 살아나기 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 짧은 기간에 살아나기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 짧은 기간에 회복되기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 짧은 기간에 살아나기 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 빠른 시일 안에 살아나기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 빠른 시일 안에 회복되기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비가 빠른 시일 안에 살아나기 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 단기간에 살아나기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 단기간에 회복되기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 단기간에 살아나기 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 짧은 기간에 살아나기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 짧은 기간에 회복되기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 짧은 기간에 살아나기 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 빠른 시일 안에 살아나기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 빠른 시일 안에 회복되기는 어렵다."
+        - "이자 부담이 여전히 이렇게 큰 이상 소비는 빠른 시일 안에 살아나기 어렵다."
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 살아나기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 살아나기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 회복되기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비가 단기간에 회복되기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 살아나기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 살아나기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 회복되기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비가 짧은 기간에 회복되기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 살아나기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 살아나기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 회복되기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비는 단기간에 회복되기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 살아나기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 살아나기는 어려워요."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 회복되기는 어렵습니다."
+        - "이자 부담이 이렇게 큰 이상 소비는 짧은 기간에 회복되기는 어려워요."
+    known_wrong:
+      - answer: 이자 부담이 이렇게 크는 이상 소비가 단기간에 살아나기는 어렵다.
+        feedback_vi: 크다 là tính từ nên định ngữ là 큰 - 큰 이상, không phải 크는.
+        error_tag: isang_form
+      - answer: 이자 부담이 이렇게 클 이상 소비가 단기간에 살아나기는 어렵다.
+        feedback_vi: Không dùng -(으)ㄹ với 이상. Tính từ dùng -(으)ㄴ 이상.
+        error_tag: isang_form
+    explanation:
+      vi: A-(으)ㄴ 이상 - 크다 → 큰 이상 "một khi còn lớn"; vế sau là kết luận chắc chắn -기는 어렵다. Câu này viết lại lời chuyên gia trong bài báo.
+    display_answer: 이자 부담이 이렇게 큰 이상 소비가 단기간에 살아나기는 어렵다.

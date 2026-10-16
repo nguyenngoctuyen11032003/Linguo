@@ -1,0 +1,614 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:written-reasons
+order_index: 2
+level: topik5
+title:
+  vi: Nêu lý do trong văn bản doanh nghiệp - -(으)므로, -기에, -(으)ㄴ/는 이상
+objectives:
+  - vi: Viết lý do theo văn phong trang trọng bằng -(으)므로 và -기에, phân biệt với -아서/어서, -(으)니까, -기 때문에.
+  - vi: Dùng -(으)ㄴ/는 이상 để rút ra nghĩa vụ hoặc kết luận tất yếu ("một khi đã... thì").
+  - vi: Hiểu từ vựng báo cáo doanh nghiệp - 매출, 적자 · 흑자, 구조 조정, 인건비, 채용, 해고, 근로자.
+estimated_minutes: 25
+skills: [grammar, writing, reading]
+prerequisites: [ko:lesson:economy-news-vocab]
+items:
+  - item: ko:item:el-gram-eumeuro
+  - item: ko:item:el-gram-gie
+  - item: ko:item:el-gram-n-neun-isang
+  - item: ko:item:el-maechul
+  - item: ko:item:el-jeokja-heukja
+  - item: ko:item:el-gujo-jojeong
+  - item: ko:item:el-ingeonbi
+  - item: ko:item:el-chaeyong
+  - item: ko:item:el-haego
+  - item: ko:item:el-geulloja
+  - item: ko:item:gram-aseo-reason
+    role: reuse
+  - item: ko:item:gram-eunikka
+    role: reuse
+  - item: ko:item:gram-gi-ttaemune
+    role: reuse
+  - item: ko:item:gp-eum-eurosseo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bạn đã biết -아서/어서, -(으)니까, -기 때문에 để nói lý do. Bài này thêm hai đuôi của văn bản trang trọng (-(으)므로, -기에) và cấu trúc -(으)ㄴ/는 이상, dùng trong báo cáo kinh doanh, thông báo nhân sự và hợp đồng lao động.
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ có "vì... nên" cho mọi hoàn cảnh, còn tiếng Hàn chọn đuôi theo văn phong. -아서/어서 và -(으)니까 dùng khi nói; -기 때문에 nhấn mạnh nguyên nhân, dùng được cả nói lẫn viết; -(으)므로 là lý do khách quan trong báo cáo, luật, thông báo.
+  - type: explain
+    text:
+      vi: -기에 trang trọng và hơi văn chương, thường giải thích vì sao người nói đã phán đoán hay hành động như vậy (자료가 부족하기에 결정을 미루었다). Giống -아서/어서, vế sau của -기에 không được là mệnh lệnh hay lời rủ - muốn khuyên ai thì phải dùng -(으)니까.
+  - type: explain
+    text:
+      vi: -(으)ㄴ/는 이상 nghĩa là "một khi đã..." - xuất phát từ một sự thật không đổi được để đi tới nghĩa vụ hay kết luận chắc chắn (-아/어야 한다, -(으)ㄹ 수 없다). Tiếng Việt cũng nói "đã ký thì phải làm", nên bạn chỉ cần nhớ vế sau phải mạnh như vậy.
+  - type: explain
+    text:
+      vi: Từ vựng doanh nghiệp hay bị dùng lẫn - công ty 채용하다 (tuyển), người tìm việc 취업하다 (có việc); công ty 해고하다 (sa thải), người lao động tự 퇴사하다 (nghỉ việc). 매출 là doanh thu, chưa phải tiền lãi; 구조 조정 trong báo Hàn thường ngầm báo hiệu cắt giảm nhân sự.
+  - type: deep_explain
+    text:
+      vi: Cẩn thận với cặp -(으)므로 (vì) và -(으)ㅁ으로(써) (bằng cách) - chỉ khác một âm tiết nhưng nghĩa khác hẳn. 비용을 줄이므로 = vì giảm chi phí; 비용을 줄임으로써 = bằng việc giảm chi phí. Cách chia - có patchim thêm 으므로 (많으므로), không patchim thêm 므로 (크므로), danh từ dùng (이)므로 (기밀이므로), quá khứ -았/었으므로. Trên biển báo, -(으)므로 vẫn đi với mệnh lệnh trang trọng (공사 중이므로 우회하십시오), nhưng trong lời nói hằng ngày điều đó nghe rất cứng.
+  - type: example
+    target: 해당 직원은 회사 기밀을 외부에 유출하였으므로 사규에 따라 징계 대상이 된다.
+    target_lang: ko
+    translation:
+      vi: Nhân viên này đã làm lộ bí mật công ty ra bên ngoài nên theo nội quy sẽ là đối tượng bị kỷ luật.
+    note:
+      vi: Văn bản nội bộ trang trọng - -았/었으므로 nêu lý do khách quan.
+  - type: example
+    target: 지원자가 예상보다 많기에 면접 일정을 하루 더 늘리기로 하였다.
+    target_lang: ko
+    translation:
+      vi: Vì số người ứng tuyển nhiều hơn dự kiến nên chúng tôi đã quyết định kéo dài lịch phỏng vấn thêm một ngày.
+    note:
+      vi: -기에 giải thích lý do của quyết định do chính người viết đưa ra.
+  - type: example
+    target: 회사가 적자를 이유로 근로자를 해고하는 이상 그 근거를 투명하게 공개해야 한다.
+    target_lang: ko
+    translation:
+      vi: Một khi công ty sa thải người lao động với lý do thua lỗ thì phải công khai minh bạch căn cứ của việc đó.
+    note:
+      vi: Vế sau là nghĩa vụ (-아/어야 한다), đúng kiểu -는 이상.
+  - type: example
+    target: 이번 분기 매출은 늘었으나 인건비와 원자재 가격이 함께 올라 영업 이익은 오히려 줄었다.
+    target_lang: ko
+    translation:
+      vi: Doanh thu quý này tăng, nhưng chi phí nhân công và giá nguyên liệu cùng tăng nên lợi nhuận kinh doanh lại giảm.
+    note:
+      vi: 매출 (doanh thu) khác 영업 이익 (lợi nhuận) - đây là bẫy hay gặp trong câu hỏi đọc hiểu.
+  - type: example
+    target: 이 지역은 일자리가 부족하니까 청년들이 대도시로 떠나지 않도록 대책을 세워 주세요.
+    target_lang: ko
+    translation:
+      vi: Vùng này thiếu việc làm, nên xin hãy có biện pháp để thanh niên không bỏ lên thành phố lớn.
+    note:
+      vi: Vế sau là lời đề nghị (-아/어 주세요) nên phải dùng -(으)니까, không dùng -기에 hay -아서.
+  - type: common_mistake
+    wrong: 회사는 무인 계산대를 도입하므로써 인건비를 줄였다.
+    right: 회사는 무인 계산대를 도입함으로써 인건비를 줄였다.
+    target_lang: ko
+    note:
+      vi: Không có dạng -므로써. Nghĩa "bằng cách" là -(으)ㅁ으로써; nghĩa "vì" là -(으)므로 (không có 써).
+  - type: common_mistake
+    wrong: 오늘은 면접자가 많기에 일찍 출근하세요.
+    right: 오늘은 면접자가 많으니까 일찍 출근하세요.
+    target_lang: ko
+    note:
+      vi: -기에 không đi với mệnh lệnh. Khi vế sau là lời yêu cầu, dùng -(으)니까.
+  - type: common_mistake
+    wrong: 저는 졸업하자마자 대기업에 채용했어요.
+    right: 저는 졸업하자마자 대기업에 취업했어요.
+    target_lang: ko
+    note:
+      vi: Người được nhận vào làm thì 취업하다 hoặc 채용되다. 채용하다 là việc của công ty - viết như trên nghĩa là "tôi tuyển (ai đó) vào tập đoàn".
+  - type: summary
+    points:
+      - vi: Nói - -아서/어서, -(으)니까 · Nói và viết - -기 때문에 · Văn bản trang trọng - -(으)므로, -기에.
+      - vi: -기에 và -아서/어서 không đi với mệnh lệnh, lời rủ; -(으)니까 thì được.
+      - vi: -(으)므로 = vì · -(으)ㅁ으로(써) = bằng cách. Không có -므로써.
+      - vi: V-(으)ㄴ/는 이상 · N인 이상 = một khi đã... thì (phải, chắc chắn).
+      - vi: 채용하다 (công ty tuyển) ≠ 취업하다 (người có việc); 해고 (bị sa thải) ≠ 퇴사 (tự nghỉ); 매출 (doanh thu) ≠ 이익 (lợi nhuận).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:el-reason-mcq-meuro-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:el-gram-eumeuro
+    prompt:
+      stem: "본 공장은 노후 설비를 교체하므로 10월 한 달간 가동을 중단한다. - -(으)므로 ở đây có nghĩa gì?"
+      stem_lang: vi
+      options:
+        - { id: k4e, text: "Vì (nêu lý do)", lang: vi }
+        - { id: r8b, text: "Bằng cách (nêu phương tiện)", lang: vi }
+        - { id: g2s, text: "Mặc dù", lang: vi }
+        - { id: m6x, text: "Nếu như", lang: vi }
+    answer:
+      correct_option_id: k4e
+    explanation:
+      vi: Thay thiết bị cũ là lý do, ngừng vận hành là kết quả - -(으)므로 là "vì" trong văn bản trang trọng. "Bằng cách" phải là -(으)ㅁ으로써, "mặc dù" là -(으)ㅁ에도 불구하고, "nếu" là -(으)면.
+    display_answer: "Vì (nêu lý do)"
+
+  - key: ko:exercise:el-reason-mcq-which-reason
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-eumeuro
+    prompt:
+      stem: "Câu nào dùng cấu trúc chỉ lý do \"vì\"?"
+      stem_lang: vi
+      options:
+        - { id: d1q, text: "매출이 감소하므로 신규 채용을 미루기로 했다.", lang: ko }
+        - { id: z7c, text: "비용을 절감함으로써 적자를 크게 줄였다.", lang: ko }
+        - { id: f3w, text: "매출이 감소했음에도 불구하고 채용을 늘렸다.", lang: ko }
+        - { id: y9h, text: "매출이 감소하더라도 채용은 계속할 것이다.", lang: ko }
+    answer:
+      correct_option_id: d1q
+    explanation:
+      vi: -(으)므로 là "vì". -(으)ㅁ으로써 là "bằng cách", -(으)ㅁ에도 불구하고 là "mặc dù", -더라도 là "dù có... đi nữa". Hai đuôi -므로 và -ㅁ으로써 trông giống nhau nên rất dễ bị đánh tráo trong đề thi.
+    display_answer: "매출이 감소하므로 신규 채용을 미루기로 했다."
+
+  - key: ko:exercise:el-reason-listen-isang
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gram-n-neun-isang
+    prompt:
+      audio_asset_id: null
+      fallback_text: 근로 계약서에 서명한 이상 회사도 그 내용을 지킬 의무가 있습니다.
+      options:
+        - { id: n5v, text: "Một khi đã ký hợp đồng lao động thì công ty cũng có nghĩa vụ tuân thủ nội dung đó.", lang: vi }
+        - { id: a2t, text: "Nếu chưa ký hợp đồng lao động thì công ty không có nghĩa vụ gì.", lang: vi }
+        - { id: c8j, text: "Công ty đã ký hơn một hợp đồng lao động.", lang: vi }
+        - { id: e4u, text: "Hợp đồng lao động có nội dung bất thường.", lang: vi }
+    answer:
+      correct_option_id: n5v
+    explanation:
+      vi: -(으)ㄴ 이상 = "một khi đã..." - đã ký (sự thật) thì có nghĩa vụ (kết luận). 이상 ở đây không phải "trở lên" (hơn một hợp đồng) hay 이상하다 (bất thường).
+    display_answer: "Một khi đã ký hợp đồng lao động thì công ty cũng có nghĩa vụ tuân thủ nội dung đó."
+
+  - key: ko:exercise:el-reason-fill-jeokja
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-jeokja-heukja
+    prompt:
+      template: "지난해 200억 원의 {{b1}}를 냈던 이 회사는 올해 신제품이 잘 팔리면서 흑자로 돌아섰다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Trái nghĩa với 흑자 (có lãi) - "chữ đỏ" trong sổ sách.
+        - 적...
+    answer:
+      blanks:
+        b1: [적자]
+    known_wrong:
+      - answer: 손해
+        feedback_vi: 손해 đi với 보다 (손해를 보다), không đi với 내다. Thua lỗ trong báo cáo doanh nghiệp là 적자를 내다.
+        error_tag: collocation
+      - answer: 매출
+        feedback_vi: 매출 là doanh thu. Câu sau nói công ty "chuyển sang có lãi", nên năm trước phải là lỗ - 적자.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 흑자로 돌아섰다 (chuyển sang có lãi) cho thấy năm trước công ty lỗ - 적자를 내다. Cặp 적자 / 흑자 đến từ màu mực đỏ, đen trong sổ sách kế toán.
+    display_answer: 지난해 200억 원의 적자를 냈던 이 회사는 올해 신제품이 잘 팔리면서 흑자로 돌아섰다.
+
+  - key: ko:exercise:el-reason-mcq-chwieop
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-chaeyong
+    prompt:
+      stem: "Chọn từ đúng để điền - 저는 작년 봄에 IT 회사에 ______."
+      stem_lang: vi
+      options:
+        - { id: o3k, text: "취업했습니다", lang: ko }
+        - { id: l9f, text: "채용했습니다", lang: ko }
+        - { id: u6m, text: "해고했습니다", lang: ko }
+        - { id: b0r, text: "구조 조정했습니다", lang: ko }
+    answer:
+      correct_option_id: o3k
+    explanation:
+      vi: Người đi làm "có việc ở công ty" là 회사에 취업하다. 채용하다, 해고하다, 구조 조정하다 đều là hành động của công ty, nên chủ ngữ 저 không hợp.
+    display_answer: "취업했습니다"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:el-reason-fill-gie
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-gie
+    prompt:
+      template: "회사 측의 설명이 충분하지 않{{b1}} 직원들은 구조 조정안에 동의하지 않았다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [기에, 았기에, 으므로, 았으므로, 기 때문에, 았기 때문에, 아서, 았으니]
+    known_wrong:
+      - answer: 음으로써
+        feedback_vi: -(으)ㅁ으로써 là "bằng cách", không nêu lý do. Ở đây cần "vì" - -기에 hoặc -(으)므로.
+        error_tag: meuro_vs_eurosseo
+      - answer: 더라도
+        feedback_vi: -더라도 là "dù có... đi nữa". Giải thích không đủ là lý do khiến nhân viên không đồng ý.
+        error_tag: connective_meaning
+      - answer: 으니까요
+        feedback_vi: -(으)니까요 là đuôi kết thúc câu, không nối được hai vế. Dùng -기에 hoặc -(으)므로.
+        error_tag: connective_meaning
+    explanation:
+      vi: Đây là văn tường thuật trang trọng nên -기에 hoặc -(으)므로 tự nhiên nhất; -기 때문에, -아서 cũng đúng. Vế sau là sự việc đã xảy ra (동의하지 않았다), không phải mệnh lệnh, nên -기에 dùng được.
+    display_answer: 회사 측의 설명이 충분하지 않기에 직원들은 구조 조정안에 동의하지 않았다.
+
+  - key: ko:exercise:el-reason-fill-isang
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-n-neun-isang
+    prompt:
+      template: "이 회사에 {{b1}} 이상 고객 정보에 관한 보안 규정은 반드시 지켜야 한다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [다니는, 근무하는, 소속된, 입사한, 소속되어 있는]
+    known_wrong:
+      - answer: 다니기
+        feedback_vi: Trước 이상 phải là định ngữ -(으)ㄴ/는 - 다니는 이상.
+        error_tag: isang_form
+      - answer: 다닐
+        feedback_vi: Không dùng định ngữ tương lai -(으)ㄹ với 이상. Sự thật hiện tại là 다니는, việc đã xảy ra là 입사한.
+        error_tag: isang_form
+    explanation:
+      vi: V-는 이상 (đang là sự thật - 다니는) hoặc V-(으)ㄴ 이상 (đã xảy ra - 입사한) + nghĩa vụ 지켜야 한다. Đây là logic "đã là người của công ty thì phải...".
+    display_answer: 이 회사에 다니는 이상 고객 정보에 관한 보안 규정은 반드시 지켜야 한다.
+
+  - key: ko:exercise:el-reason-translate-isang
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-n-neun-isang
+    prompt:
+      source_text: Một khi đã nhận lương thì phải làm việc có trách nhiệm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "월급을 받는 이상 책임감 있게 일해야 한다."
+        - "월급을 받는 이상 책임감 있게 일해야 합니다."
+        - "월급을 받는 이상 책임감 있게 일해야 해요."
+        - "월급을 받는 이상 책임 있게 일해야 한다."
+        - "월급을 받는 이상 책임 있게 일해야 합니다."
+        - "월급을 받는 이상 책임 있게 일해야 해요."
+        - "월급을 받은 이상 책임감 있게 일해야 한다."
+        - "월급을 받은 이상 책임감 있게 일해야 합니다."
+        - "월급을 받은 이상 책임감 있게 일해야 해요."
+        - "월급을 받은 이상 책임 있게 일해야 한다."
+        - "월급을 받은 이상 책임 있게 일해야 합니다."
+        - "월급을 받은 이상 책임 있게 일해야 해요."
+        - "급여를 받는 이상 책임감 있게 일해야 한다."
+        - "급여를 받는 이상 책임감 있게 일해야 합니다."
+        - "급여를 받는 이상 책임감 있게 일해야 해요."
+        - "급여를 받는 이상 책임 있게 일해야 한다."
+        - "급여를 받는 이상 책임 있게 일해야 합니다."
+        - "급여를 받는 이상 책임 있게 일해야 해요."
+        - "급여를 받은 이상 책임감 있게 일해야 한다."
+        - "급여를 받은 이상 책임감 있게 일해야 합니다."
+        - "급여를 받은 이상 책임감 있게 일해야 해요."
+        - "급여를 받은 이상 책임 있게 일해야 한다."
+        - "급여를 받은 이상 책임 있게 일해야 합니다."
+        - "급여를 받은 이상 책임 있게 일해야 해요."
+        - "돈을 받는 이상 책임감 있게 일해야 한다."
+        - "돈을 받는 이상 책임감 있게 일해야 합니다."
+        - "돈을 받는 이상 책임감 있게 일해야 해요."
+        - "돈을 받는 이상 책임 있게 일해야 한다."
+        - "돈을 받는 이상 책임 있게 일해야 합니다."
+        - "돈을 받는 이상 책임 있게 일해야 해요."
+        - "돈을 받은 이상 책임감 있게 일해야 한다."
+        - "돈을 받은 이상 책임감 있게 일해야 합니다."
+        - "돈을 받은 이상 책임감 있게 일해야 해요."
+        - "돈을 받은 이상 책임 있게 일해야 한다."
+        - "돈을 받은 이상 책임 있게 일해야 합니다."
+        - "돈을 받은 이상 책임 있게 일해야 해요."
+        - "임금을 받는 이상 책임감 있게 일해야 한다."
+        - "임금을 받는 이상 책임감 있게 일해야 합니다."
+        - "임금을 받는 이상 책임감 있게 일해야 해요."
+        - "임금을 받는 이상 책임 있게 일해야 한다."
+        - "임금을 받는 이상 책임 있게 일해야 합니다."
+        - "임금을 받는 이상 책임 있게 일해야 해요."
+        - "임금을 받은 이상 책임감 있게 일해야 한다."
+        - "임금을 받은 이상 책임감 있게 일해야 합니다."
+        - "임금을 받은 이상 책임감 있게 일해야 해요."
+        - "임금을 받은 이상 책임 있게 일해야 한다."
+        - "임금을 받은 이상 책임 있게 일해야 합니다."
+        - "임금을 받은 이상 책임 있게 일해야 해요."
+    known_wrong:
+      - answer: 월급을 받는 이상에 책임감 있게 일해야 한다.
+        feedback_vi: -는 이상 không thêm trợ từ 에. Viết 받는 이상.
+        error_tag: isang_form
+      - answer: 월급을 받기 때문에 이상 책임감 있게 일해야 한다.
+        feedback_vi: Không ghép -기 때문에 với 이상. Chọn một - 받는 이상 hoặc 받기 때문에.
+        error_tag: isang_form
+      - answer: 월급을 받으면 책임감 있게 일해도 된다.
+        feedback_vi: -아/어도 되다 là "được phép", mất nghĩa bắt buộc. -는 이상 cần vế sau mạnh - -아/어야 하다.
+        error_tag: isang_conclusion
+    explanation:
+      vi: Ý "một khi đã..." là V-는 이상 (sự thật đang có) hoặc V-(으)ㄴ 이상 (việc đã xảy ra); vế sau là nghĩa vụ -아/어야 하다. "Có trách nhiệm" tự nhiên nhất là 책임감 있게.
+    display_answer: 월급을 받는 이상 책임감 있게 일해야 한다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:el-reason-translate-ingeonbi-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-ingeonbi
+    prompt:
+      source_text: 인건비가 크게 올랐기에 회사는 올해 신규 채용을 하지 않기로 했다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Vì chi phí nhân công tăng mạnh nên năm nay công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng mạnh nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng mạnh nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên năm nay công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên năm nay công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên năm nay công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng cao nên năm nay công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng cao nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng cao nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng cao nên năm nay công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng cao nên năm nay công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng cao nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng cao nên công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng cao nên công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng cao nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng cao nên công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng cao nên công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng cao nên công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng nhiều nên năm nay công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng nhiều nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng nhiều nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng nhiều nên năm nay công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng nhiều nên năm nay công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng nhiều nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng nhiều nên công ty đã quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng nhiều nên công ty đã quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng nhiều nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng nhiều nên công ty quyết định không tuyển mới."
+        - "Vì chi phí nhân công tăng nhiều nên công ty quyết định không tuyển người mới."
+        - "Vì chi phí nhân công tăng nhiều nên công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng mạnh nên năm nay công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng mạnh nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng mạnh nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công đã tăng mạnh nên năm nay công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công đã tăng mạnh nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công đã tăng mạnh nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công đã tăng mạnh nên năm nay công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công đã tăng mạnh nên năm nay công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công đã tăng mạnh nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng cao nên năm nay công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng cao nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng cao nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng cao nên năm nay công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng cao nên năm nay công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng cao nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng cao nên công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng cao nên công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng cao nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng cao nên công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng cao nên công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng cao nên công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng nhiều nên năm nay công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng nhiều nên năm nay công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng nhiều nên năm nay công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng nhiều nên năm nay công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng nhiều nên năm nay công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng nhiều nên năm nay công ty quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng nhiều nên công ty đã quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng nhiều nên công ty đã quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng nhiều nên công ty đã quyết định không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng nhiều nên công ty quyết định không tuyển mới."
+        - "Do chi phí nhân công tăng nhiều nên công ty quyết định không tuyển người mới."
+        - "Do chi phí nhân công tăng nhiều nên công ty quyết định không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty đã quyết định năm nay không tuyển mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty đã quyết định năm nay không tuyển người mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty đã quyết định năm nay không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển người mới."
+        - "Vì chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển nhân viên mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty đã quyết định năm nay không tuyển mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty đã quyết định năm nay không tuyển người mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty đã quyết định năm nay không tuyển nhân viên mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty quyết định năm nay không tuyển mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty quyết định năm nay không tuyển người mới."
+        - "Vì chi phí nhân công đã tăng mạnh nên công ty quyết định năm nay không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng cao nên công ty đã quyết định năm nay không tuyển mới."
+        - "Vì chi phí nhân công tăng cao nên công ty đã quyết định năm nay không tuyển người mới."
+        - "Vì chi phí nhân công tăng cao nên công ty đã quyết định năm nay không tuyển nhân viên mới."
+        - "Vì chi phí nhân công tăng cao nên công ty quyết định năm nay không tuyển mới."
+        - "Vì chi phí nhân công tăng cao nên công ty quyết định năm nay không tuyển người mới."
+        - "Vì chi phí nhân công tăng cao nên công ty quyết định năm nay không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty đã quyết định năm nay không tuyển mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty đã quyết định năm nay không tuyển người mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty đã quyết định năm nay không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển người mới."
+        - "Do chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển nhân viên mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty đã quyết định năm nay không tuyển mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty đã quyết định năm nay không tuyển người mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty đã quyết định năm nay không tuyển nhân viên mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty quyết định năm nay không tuyển mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty quyết định năm nay không tuyển người mới."
+        - "Do chi phí nhân công đã tăng mạnh nên công ty quyết định năm nay không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng cao nên công ty đã quyết định năm nay không tuyển mới."
+        - "Do chi phí nhân công tăng cao nên công ty đã quyết định năm nay không tuyển người mới."
+        - "Do chi phí nhân công tăng cao nên công ty đã quyết định năm nay không tuyển nhân viên mới."
+        - "Do chi phí nhân công tăng cao nên công ty quyết định năm nay không tuyển mới."
+        - "Do chi phí nhân công tăng cao nên công ty quyết định năm nay không tuyển người mới."
+        - "Do chi phí nhân công tăng cao nên công ty quyết định năm nay không tuyển nhân viên mới."
+        - "Chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển người mới."
+        - "Chi phí nhân công tăng mạnh nên công ty quyết định năm nay không tuyển nhân viên mới."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì chi phí nhân công tăng mạnh nên công ty quyết định sa thải nhân viên năm nay.
+        feedback_vi: 신규 채용을 하지 않다 là không tuyển mới, không phải sa thải (해고).
+        error_tag: vocab_meaning
+      - answer: Chi phí nhân công tăng mạnh bằng cách công ty không tuyển mới năm nay.
+        feedback_vi: -기에 là "vì", không phải "bằng cách". Quan hệ ở đây là nguyên nhân - kết quả.
+        error_tag: connective_meaning
+    explanation:
+      vi: -기에 = vì; 신규 채용 = tuyển mới; -기로 하다 = quyết định. 인건비 là chi phí nhân công nhìn từ phía công ty, nên dịch "chi phí nhân công" chứ không phải "lương của tôi".
+    display_answer: Vì chi phí nhân công tăng mạnh nên năm nay công ty quyết định không tuyển mới.
+
+  - key: ko:exercise:el-reason-mcq-gujo
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gujo-jojeong
+    prompt:
+      stem: "Thông báo nội bộ - 회사 사정이 어려워 불가피하게 구조 조정을 실시하게 되었습니다. Nhân viên nên hiểu điều gì?"
+      stem_lang: vi
+      options:
+        - { id: h7y, text: "Công ty có thể sẽ cắt giảm nhân sự.", lang: vi }
+        - { id: s3n, text: "Công ty sẽ tăng lương cho toàn bộ nhân viên.", lang: vi }
+        - { id: q1a, text: "Công ty sắp tuyển thêm nhiều nhân viên mới.", lang: vi }
+        - { id: i8d, text: "Công ty sẽ xây lại toà nhà văn phòng.", lang: vi }
+    answer:
+      correct_option_id: h7y
+    explanation:
+      vi: 구조 조정 (tái cơ cấu) trong văn bản Hàn gần như luôn báo hiệu cắt giảm người; 회사 사정이 어려워 (công ty khó khăn) và 불가피하게 (bất đắc dĩ) xác nhận điều đó. 구조 không phải công trình xây dựng.
+    display_answer: "Công ty có thể sẽ cắt giảm nhân sự."
+
+  - key: ko:exercise:el-reason-order-gimil
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-eumeuro
+    prompt:
+      instruction: "Sắp xếp thành câu quy định: \"Vì là thông tin mật nên không được làm lộ ra bên ngoài.\""
+      tokens:
+        - { id: w3p, text: 외부에 }
+        - { id: t8a, text: 안 }
+        - { id: e1z, text: 정보이므로 }
+        - { id: r6k, text: 된다 }
+        - { id: y2m, text: 기밀 }
+        - { id: o9s, text: 정보임으로써 }
+        - { id: u5c, text: 유출해서는 }
+    answer:
+      orders:
+        - [y2m, e1z, w3p, u5c, t8a, r6k]
+    explanation:
+      vi: N이므로 = "vì là N" (기밀 정보이므로). 정보임으로써 nghĩa là "bằng việc là thông tin" - sai nghĩa. -아/어서는 안 된다 là "không được" trong quy định.
+    display_answer: 기밀 정보이므로 외부에 유출해서는 안 된다.
+
+  - key: ko:exercise:el-reason-translate-maechul
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:el-maechul
+    prompt:
+      source_text: Vì doanh thu giảm ba quý liên tiếp nên công ty đã tiến hành tái cơ cấu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "매출이 세 분기 연속 감소했으므로 회사는 구조 조정을 단행했다."
+        - "매출이 세 분기 연속 감소했으므로 회사는 구조 조정을 실시했다."
+        - "매출이 세 분기 연속 감소했으므로 회사는 구조 조정을 진행했다."
+        - "매출이 세 분기 연속 감소했으므로 회사는 구조 조정을 단행했습니다."
+        - "매출이 세 분기 연속 감소했으므로 회사는 구조 조정을 실시했습니다."
+        - "매출이 세 분기 연속 감소했기에 회사는 구조 조정을 단행했다."
+        - "매출이 세 분기 연속 감소했기에 회사는 구조 조정을 실시했다."
+        - "매출이 세 분기 연속 감소했기에 회사는 구조 조정을 진행했다."
+        - "매출이 세 분기 연속 감소했기에 회사는 구조 조정을 단행했습니다."
+        - "매출이 세 분기 연속 감소했기에 회사는 구조 조정을 실시했습니다."
+        - "매출이 세 분기 연속 감소했기 때문에 회사는 구조 조정을 단행했다."
+        - "매출이 세 분기 연속 감소했기 때문에 회사는 구조 조정을 실시했다."
+        - "매출이 세 분기 연속 감소했기 때문에 회사는 구조 조정을 진행했다."
+        - "매출이 세 분기 연속 감소했기 때문에 회사는 구조 조정을 단행했습니다."
+        - "매출이 세 분기 연속 감소했기 때문에 회사는 구조 조정을 실시했습니다."
+        - "매출이 세 분기 연속 줄었으므로 회사는 구조 조정을 단행했다."
+        - "매출이 세 분기 연속 줄었으므로 회사는 구조 조정을 실시했다."
+        - "매출이 세 분기 연속 줄었으므로 회사는 구조 조정을 진행했다."
+        - "매출이 세 분기 연속 줄었으므로 회사는 구조 조정을 단행했습니다."
+        - "매출이 세 분기 연속 줄었으므로 회사는 구조 조정을 실시했습니다."
+        - "매출이 세 분기 연속 줄었기에 회사는 구조 조정을 단행했다."
+        - "매출이 세 분기 연속 줄었기에 회사는 구조 조정을 실시했다."
+        - "매출이 세 분기 연속 줄었기에 회사는 구조 조정을 진행했다."
+        - "매출이 세 분기 연속 줄었기에 회사는 구조 조정을 단행했습니다."
+        - "매출이 세 분기 연속 줄었기에 회사는 구조 조정을 실시했습니다."
+        - "매출이 세 분기 연속 줄었기 때문에 회사는 구조 조정을 단행했다."
+        - "매출이 세 분기 연속 줄었기 때문에 회사는 구조 조정을 실시했다."
+        - "매출이 세 분기 연속 줄었기 때문에 회사는 구조 조정을 진행했다."
+        - "매출이 세 분기 연속 줄었기 때문에 회사는 구조 조정을 단행했습니다."
+        - "매출이 세 분기 연속 줄었기 때문에 회사는 구조 조정을 실시했습니다."
+        - "매출이 세 분기 연속 감소해서 회사는 구조 조정을 했어요."
+        - "매출이 세 분기 연속 감소해서 회사는 구조 조정을 했습니다."
+        - "매출이 세 분기 연속 감소해서 회사는 구조 조정을 실시했어요."
+        - "매출이 세 분기 연속 줄어서 회사는 구조 조정을 했어요."
+        - "매출이 세 분기 연속 줄어서 회사는 구조 조정을 했습니다."
+        - "매출이 세 분기 연속 줄어서 회사는 구조 조정을 실시했어요."
+    known_wrong:
+      - answer: 매출이 세 분기 연속 감소했으므로써 회사는 구조 조정을 단행했다.
+        feedback_vi: Không có dạng -므로써. "Vì" là -(으)므로.
+        error_tag: meuro_vs_eurosseo
+      - answer: 매출이 세 분기 연속 감소함으로써 회사는 구조 조정을 단행했다.
+        feedback_vi: -(으)ㅁ으로써 là "bằng cách". Doanh thu giảm là nguyên nhân, không phải phương tiện.
+        error_tag: meuro_vs_eurosseo
+      - answer: 이익이 세 분기 연속 감소했으므로 회사는 구조 조정을 단행했다.
+        feedback_vi: Doanh thu là 매출; 이익 là lợi nhuận.
+        error_tag: vocab_meaning
+    explanation:
+      vi: Văn bản trang trọng nêu lý do bằng -았/었으므로 hoặc -았/었기에; -기 때문에 cũng đúng. "Tiến hành tái cơ cấu" trong báo chí thường là 구조 조정을 단행하다 / 실시하다.
+    display_answer: 매출이 세 분기 연속 감소했으므로 회사는 구조 조정을 단행했다.

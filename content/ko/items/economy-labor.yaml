@@ -1,0 +1,851 @@
+# Học liệu unit "Kinh tế, việc làm & thị trường lao động" (TOPIK 5-6). Phiên âm Latinh theo Romanization chuẩn của Hàn Quốc, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: từ vựng tin kinh tế, N에 따라 / -(으)ㅁ에 따라, -(으)ㄴ/는 가운데 =================
+  - key: ko:item:el-geumni-insang
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 금리 인상 · 금리 인하
+      romanization: geumni insang · geumni inha
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Tăng lãi suất / giảm lãi suất. 금리 (金利 - kim lợi) là lãi suất; 인상 (引上) là nâng lên, 인하 (引下) là hạ xuống theo một quyết định.
+      examples:
+        - target: 중앙은행의 금리 인상 발표가 나오자 주택 담보 대출을 받은 가구들의 걱정이 커졌다.
+          translation:
+            vi: Ngay khi ngân hàng trung ương công bố tăng lãi suất, các hộ vay thế chấp mua nhà càng thêm lo lắng.
+      pronunciation_note:
+        vi: 금리 đọc [금니] - ㄹ đứng sau ㅁ bị đọc thành ㄴ (biến âm mũi). 인상 nối âm thành [인상], 인하 khi nói nhanh nghe gần [이나].
+      confusion:
+        vi: 인상 là "được (ai đó) quyết định nâng lên" - lãi suất, cước phí, tiền lương; còn 상승 là "tự tăng" - 물가 상승, 기온 상승. Tiếng Việt chỉ có một chữ "tăng" nên người Việt hay viết 물가 인상 khi ý là giá cả tự tăng; hãy tự hỏi có người quyết định hay không.
+
+  - key: ko:item:el-gyeonggi-chimche
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 경기 침체
+      romanization: gyeonggi chimche
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Suy thoái kinh tế, kinh tế trì trệ. 경기 (景氣) là "tình hình làm ăn, nhịp kinh tế"; 침체 (沈滯 - trầm trệ) là chìm xuống, đình đốn.
+      examples:
+        - target: 경기 침체가 길어지면서 폐업을 고민하는 자영업자가 적지 않다.
+          translation:
+            vi: Suy thoái kinh tế kéo dài nên không ít chủ cửa hàng nhỏ đang tính chuyện đóng cửa.
+      pronunciation_note:
+        vi: 경기 đọc [경기], nguyên âm ㅕ mở miệng như "ơ" kéo từ "i", đừng đọc thành [겅기]. 침체 có hai phụ âm bật hơi ㅊ.
+      confusion:
+        vi: 경기 (景氣) "tình hình kinh tế" đồng âm với 경기 (競技) "trận đấu" - 축구 경기. Hãy nhìn từ đi kèm - 경기 침체, 경기 회복, 경기가 좋다 là kinh tế. Trái nghĩa với 경기 침체 là 경기 회복 (phục hồi) hoặc 호황 (thời kỳ làm ăn phát đạt).
+
+  - key: ko:item:el-sobi-simni
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 소비 심리
+      romanization: sobi simni
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Tâm lý tiêu dùng - mức sẵn sàng chi tiêu của người dân. Hay đi với 소비 심리가 위축되다 (chững lại), 살아나다 / 회복되다 (phục hồi).
+      examples:
+        - target: 연말 대목인데도 소비 심리가 좀처럼 살아나지 않아 상인들의 한숨이 깊어졌다.
+          translation:
+            vi: Dù đang mùa mua sắm cuối năm, tâm lý tiêu dùng mãi không khởi sắc nên tiểu thương càng thêm thở dài.
+      pronunciation_note:
+        vi: 심리 đọc [심니] - giống 금리, ㄹ sau ㅁ đọc thành ㄴ.
+      confusion:
+        vi: 소비 심리 là "tâm trạng muốn mua", không phải lượng tiêu dùng thực tế (소비량, 소비 지출). Báo chí đo nó bằng 소비자 심리 지수 (chỉ số niềm tin người tiêu dùng).
+
+  - key: ko:item:el-goyongnyul
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading, writing]
+    front:
+      text: 고용률 · 실업률
+      romanization: goyongnyul · sireomnyul
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tỷ lệ có việc làm / tỷ lệ thất nghiệp. 고용 (雇用 - cố dụng) là thuê người làm; 실업 (失業 - thất nghiệp).
+      examples:
+        - target: 지난달 청년층 고용률은 1년 전보다 0.8%포인트 하락한 것으로 집계되었다.
+          translation:
+            vi: Tỷ lệ có việc làm của thanh niên tháng trước được thống kê là đã giảm 0,8 điểm phần trăm so với một năm trước.
+      pronunciation_note:
+        vi: 고용률 đọc [고용뉼], 실업률 đọc [시럼뉼] - ㄹ của 률 đọc thành ㄴ, rồi ㅂ trước ㄴ thành ㅁ.
+      confusion:
+        vi: Chính tả 률 / 율 - sau nguyên âm hoặc ㄴ viết 율 (비율, 할인율), sau các phụ âm khác viết 률 (고용률, 실업률, 합격률). Vì cả hai nghe gần nhau, người học hay viết 고용율; hãy nhìn chữ đứng trước.
+
+  - key: ko:item:el-bijeonggyujik
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 정규직 · 비정규직
+      romanization: jeonggyujik · bijeonggyujik
+      pos: danh từ
+    back:
+      meaning:
+        vi: Nhân viên chính thức (hợp đồng không thời hạn) / lao động không chính thức (hợp đồng có thời hạn, bán thời gian, lao động phái cử...).
+      examples:
+        - target: 같은 업무를 맡고 있어도 비정규직은 정규직보다 상여금을 적게 받는 경우가 많다.
+          translation:
+            vi: Dù đảm nhận cùng một công việc, lao động không chính thức thường được nhận tiền thưởng ít hơn nhân viên chính thức.
+      pronunciation_note:
+        vi: Đọc [정규직] / [비정규직]; ㄱ cuối 직 không bật hơi, đóng nhẹ như "c" cuối tiếng Việt.
+      confusion:
+        vi: 비정규직 là khái niệm pháp lý - mọi hình thức không phải hợp đồng không thời hạn toàn thời gian. 아르바이트 chỉ là việc làm thêm (thường của sinh viên), còn 계약직 là một loại 비정규직 (hợp đồng có thời hạn).
+
+  - key: ko:item:el-choejeo-imgeum
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 최저임금
+      romanization: choejeo imgeum
+      pos: danh từ
+    back:
+      meaning:
+        vi: Lương tối thiểu (最低賃金 - tối đê nhẫm kim). Ở Hàn Quốc tính theo giờ (시간당) và được quyết định mỗi năm.
+      examples:
+        - target: 최저임금이 오르자 일부 편의점은 야간 아르바이트생 대신 무인 계산대를 들여놓았다.
+          translation:
+            vi: Khi lương tối thiểu tăng, một số cửa hàng tiện lợi đã lắp quầy thanh toán tự động thay cho nhân viên làm ca đêm.
+      pronunciation_note:
+        vi: 최저 đọc [최저] hoặc gần [췌저]; 임금 đọc [임금], hai âm ㅁ liền nhau giữ môi khép.
+      confusion:
+        vi: 임금 (賃金) "tiền công" đồng âm với 임금 "nhà vua". Trong bài kinh tế luôn là tiền công; nói chuyện hằng ngày người Hàn dùng 월급 (lương tháng), 시급 (lương giờ), 연봉 (lương năm).
+
+  - key: ko:item:el-gagye-buchae
+    type: phrase
+    level: topik5
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 가계 부채
+      romanization: gagye buchae
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Nợ hộ gia đình - tổng số tiền các hộ đang vay. 가계 (家計 - gia kế) là kinh tế gia đình, 부채 (負債 - phụ trái) là nợ.
+      examples:
+        - target: 금리가 오르면 가계 부채가 많은 가구일수록 이자 부담에 더 크게 흔들린다.
+          translation:
+            vi: Khi lãi suất tăng, hộ nào nợ càng nhiều thì càng bị gánh nặng tiền lãi làm lung lay mạnh.
+      pronunciation_note:
+        vi: Trong khẩu ngữ 가계 đọc gần [가게], nên nghe giống 가게 (cửa hàng). Hãy dựa vào 부채 đi sau để hiểu.
+      confusion:
+        vi: 부채 là từ trang trọng; trong lời nói hằng ngày người Hàn dùng 빚. Đừng nhầm với 부채 (cái quạt tay) - đồng âm khác nghĩa.
+
+  - key: ko:item:el-wichukdoeda
+    type: vocab
+    level: topik5
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 위축되다
+      romanization: wichukdoeda
+      pos: động từ
+    back:
+      meaning:
+        vi: Co lại, chững lại, mất đà (tiêu dùng, đầu tư, thị trường); với người - rụt rè, khúm núm. 위축 (萎縮 - nuy súc) là héo và co lại.
+      examples:
+        - target: 환율이 요동치자 기업들의 설비 투자가 눈에 띄게 위축되었다.
+          translation:
+            vi: Khi tỷ giá biến động mạnh, đầu tư thiết bị của các doanh nghiệp chững lại rõ rệt.
+      pronunciation_note:
+        vi: Đọc [위축뙤다] - ㄷ sau patchim ㄱ thành âm căng ㄸ.
+      confusion:
+        vi: 위축되다 nói về sức sống, độ hăng hái giảm; 감소하다 là số lượng giảm; 축소되다 là quy mô bị thu nhỏ (thường do quyết định). Câu 소비가 위축되다 hàm ý người dân ngại chi tiêu, không chỉ là con số thấp đi.
+
+  - key: ko:item:el-gram-e-ttara
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: N에 따라 · V/A-(으)ㅁ에 따라
+      romanization: -e ttara · -(eu)me ttara
+      pos: cấu trúc liên kết
+    back:
+      meaning:
+        vi: (1) N에 따라 - tuỳ theo, theo (지역에 따라 다르다). (2) V/A-(으)ㅁ에 따라 - cùng với việc..., khi... thì (một thay đổi kéo theo thay đổi khác). Văn viết, rất hay gặp trong tin tức và báo cáo.
+      examples:
+        - target: 지방 인구가 줄어듦에 따라 버스 노선을 줄이는 지자체가 늘고 있다.
+          translation:
+            vi: Cùng với việc dân số địa phương giảm, ngày càng nhiều chính quyền địa phương cắt bớt tuyến xe buýt.
+      pronunciation_note:
+        vi: 따라 có ㄸ căng, đọc gọn không bật hơi. 줄어듦에 đọc [주러드메].
+      confusion:
+        vi: Gốc kết thúc bằng ㄹ thì thêm ㅁ thành ㄻ - 늘다 → 늚, 줄어들다 → 줄어듦 (không phải 줄어들음). Đừng nhầm với N에 따르면 "theo (nguồn tin)" - 에 따르면 dẫn nguồn, 에 따라 nói sự phụ thuộc hoặc thay đổi đi kèm.
+
+  - key: ko:item:el-gram-neun-gaunde
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: V-는 가운데 · V/A-(으)ㄴ 가운데 · N인 가운데
+      romanization: -neun gaunde
+      pos: cấu trúc liên kết
+    back:
+      meaning:
+        vi: Trong bối cảnh..., giữa lúc... - nêu một tình hình đang diễn ra làm nền cho sự việc ở vế sau. Câu mở đầu điển hình của bản tin.
+      examples:
+        - target: 고물가가 이어지는 가운데 점심 도시락을 싸 오는 직장인이 부쩍 늘었다.
+          translation:
+            vi: Trong bối cảnh giá cả cao kéo dài, số nhân viên văn phòng tự mang cơm trưa tăng hẳn lên.
+      pronunciation_note:
+        vi: 가운데 đọc [가운데]; ㄷ sau ㄴ không căng.
+      confusion:
+        vi: Dịch tiếng Việt là "trong khi", nên người Việt hay dùng -는 동안 - nhưng 동안 chỉ khoảng thời gian một hành động kéo dài, không dùng để nêu bối cảnh xã hội. V-는 가운데 cho tình hình đang tiếp diễn, V-(으)ㄴ 가운데 cho việc đã xảy ra (금리가 동결된 가운데), A-(으)ㄴ 가운데 cho trạng thái (불확실성이 큰 가운데).
+
+  # ================= bài 2: lý do trong văn viết - -(으)므로, -기에, -(으)ㄴ/는 이상 =================
+  - key: ko:item:el-gram-eumeuro
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V/A-(으)므로 · N(이)므로
+      romanization: -(eu)meuro
+      pos: vĩ tố liên kết (lý do, văn viết)
+    back:
+      meaning:
+        vi: Vì, do - nêu lý do một cách khách quan, trang trọng. Dùng trong báo cáo, luận văn, thông báo, văn bản pháp quy.
+      examples:
+        - target: 본 제품은 열에 약하므로 직사광선을 피해 서늘한 곳에 보관해야 한다.
+          translation:
+            vi: Sản phẩm này chịu nhiệt kém nên phải bảo quản ở nơi thoáng mát, tránh ánh nắng trực tiếp.
+      pronunciation_note:
+        vi: 약하므로 đọc [야카므로] - ㄱ gặp ㅎ thành ㅋ bật hơi.
+      confusion:
+        vi: -(으)므로 "vì" khác -(으)ㅁ으로(써) "bằng cách" chỉ một chữ - 노력하므로 (vì cố gắng) / 노력함으로써 (bằng việc cố gắng). -(으)므로 không dùng trong hội thoại hằng ngày; nó chỉ đi với mệnh lệnh trong biển báo, thông báo (위험하므로 들어가지 마십시오).
+
+  - key: ko:item:el-gram-gie
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: V/A-기에 · N(이)기에
+      romanization: -gie
+      pos: vĩ tố liên kết (lý do)
+    back:
+      meaning:
+        vi: Vì..., thấy... nên - lý do dẫn tới phán đoán hoặc hành động của người nói. Sắc thái trang trọng, hơi văn chương; hay gặp trong văn viết, bài phát biểu.
+      examples:
+        - target: 회의 자료가 아직 충분하지 않기에 최종 결정을 다음 주로 미루었다.
+          translation:
+            vi: Vì tài liệu họp chưa đủ nên chúng tôi đã hoãn quyết định cuối cùng sang tuần sau.
+      pronunciation_note:
+        vi: 않기에 đọc [안키에] - ㅎ gặp ㄱ thành ㅋ.
+      confusion:
+        vi: Giống -아서/어서, -기에 không đi với mệnh lệnh, rủ rê ở vế sau. Đừng nhầm với -기에 + 좋다/어렵다 "để mà" - 살기에 좋은 도시 (thành phố dễ sống) không phải lý do.
+
+  - key: ko:item:el-gram-n-neun-isang
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V-(으)ㄴ/는 이상 · A-(으)ㄴ 이상 · N인 이상
+      romanization: -(eu)n/neun isang
+      pos: cấu trúc liên kết
+    back:
+      meaning:
+        vi: Một khi đã..., đã... thì - từ một sự thật không thể đổi, đi tới kết luận tất yếu (phải làm, chắc chắn, không thể khác).
+      examples:
+        - target: 계약서에 서명한 이상 그 조건을 일방적으로 바꿀 수는 없다.
+          translation:
+            vi: Một khi đã ký hợp đồng thì không thể đơn phương thay đổi điều kiện.
+      pronunciation_note:
+        vi: 서명한 이상 nối âm thành [서명하니상].
+      confusion:
+        vi: Vế sau gần như luôn là nghĩa vụ hoặc kết luận chắc chắn (-아/어야 한다, -(으)ㄹ 수 없다, -(으)ㄹ 수밖에 없다). Đừng nhầm với 이상 "trở lên" (30분 이상) hay 이상하다 "lạ".
+
+  - key: ko:item:el-maechul
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 매출
+      romanization: maechul
+      pos: danh từ
+    back:
+      meaning:
+        vi: Doanh thu - tổng tiền bán hàng. 매출이 늘다 / 줄다, 매출액 (số tiền doanh thu).
+      examples:
+        - target: 배달 수수료가 오르면서 동네 식당들의 실제 매출은 오히려 줄었다.
+          translation:
+            vi: Vì phí giao hàng tăng nên doanh thu thực tế của các quán ăn trong khu phố lại giảm.
+      pronunciation_note:
+        vi: Đọc [매출]; ㅊ bật hơi mạnh.
+      confusion:
+        vi: 매출 là doanh thu, chưa trừ chi phí; tiền lãi thực là 이익 hoặc 수익 (영업 이익 - lợi nhuận kinh doanh). Doanh thu tăng chưa chắc đã có lãi.
+
+  - key: ko:item:el-jeokja-heukja
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 적자 · 흑자
+      romanization: jeokja · heukja
+      pos: danh từ
+    back:
+      meaning:
+        vi: Lỗ, thâm hụt (赤字 - chữ đỏ) / lãi, thặng dư (黑字 - chữ đen). 적자를 내다, 흑자로 돌아서다, 무역 적자 (thâm hụt thương mại).
+      examples:
+        - target: 이 항공사는 3년 연속 적자를 내다가 올해 처음으로 흑자로 돌아섰다.
+          translation:
+            vi: Hãng hàng không này lỗ ba năm liền, rồi năm nay lần đầu tiên chuyển sang có lãi.
+      pronunciation_note:
+        vi: 적자 đọc [적짜], 흑자 đọc [흑짜] - ㅈ sau patchim ㄱ thành âm căng ㅉ.
+      confusion:
+        vi: Hai từ đến từ màu mực trong sổ sách - số âm viết mực đỏ. Động từ đi kèm khác nhau - 적자를 내다 / 적자가 나다 nhưng 흑자로 돌아서다 / 흑자 전환.
+
+  - key: ko:item:el-gujo-jojeong
+    type: phrase
+    level: topik5
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 구조 조정
+      romanization: gujo jojeong
+      pos: danh từ (cụm Hán Hàn)
+    back:
+      meaning:
+        vi: Tái cơ cấu (doanh nghiệp) - trong tiếng Hàn gần như luôn bao hàm cắt giảm nhân sự, đóng bớt bộ phận.
+      examples:
+        - target: 회사가 대규모 구조 조정을 단행하면서 직원 수백 명이 희망퇴직을 신청했다.
+          translation:
+            vi: Khi công ty tiến hành tái cơ cấu quy mô lớn, hàng trăm nhân viên đã nộp đơn xin nghỉ hưu tự nguyện.
+      pronunciation_note:
+        vi: Đọc [구조 조정]; hai âm ㅈ đầu từ không căng, gần "ch" nhẹ.
+      confusion:
+        vi: Tiếng Việt "tái cơ cấu" khá trung tính, còn 구조 조정 trong báo Hàn thường là cách nói giảm cho việc cho thôi việc hàng loạt. Khi đọc 구조 조정 대상 (đối tượng tái cơ cấu), hiểu là người có nguy cơ mất việc.
+
+  - key: ko:item:el-ingeonbi
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 인건비
+      romanization: ingeonbi
+      pos: danh từ
+    back:
+      meaning:
+        vi: Chi phí nhân công - tổng tiền doanh nghiệp trả cho người lao động (lương, phụ cấp, bảo hiểm).
+      examples:
+        - target: 인건비 부담이 커지자 키오스크로만 주문을 받는 매장이 많아졌다.
+          translation:
+            vi: Khi gánh nặng chi phí nhân công tăng, nhiều cửa hàng chuyển sang chỉ nhận gọi món qua máy tự phục vụ.
+      pronunciation_note:
+        vi: Đọc [인껀비] - ㄱ sau ㄴ trong từ Hán Hàn này đọc căng thành ㄲ.
+      confusion:
+        vi: 인건비 nhìn từ phía chủ doanh nghiệp (khoản chi), còn 임금 nhìn từ phía người lao động (khoản nhận). Câu 인건비가 오르다 thường xuất hiện cùng 최저임금 인상.
+
+  - key: ko:item:el-chaeyong
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 채용 / 채용하다
+      romanization: chaeyong / chaeyonghada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Tuyển dụng (từ phía doanh nghiệp). 신입 채용 (tuyển nhân viên mới), 채용 공고 (thông báo tuyển dụng).
+      examples:
+        - target: 그 은행은 올해 신입 사원 채용 규모를 작년의 절반으로 줄였다.
+          translation:
+            vi: Ngân hàng đó đã giảm quy mô tuyển nhân viên mới năm nay xuống còn một nửa năm ngoái.
+      pronunciation_note:
+        vi: Đọc [채용]; ㅊ bật hơi, ㅐ gần "e" tiếng Việt.
+      confusion:
+        vi: Cùng một sự việc có ba cách nhìn - công ty 채용하다 (tuyển), người tìm việc 취업하다 (có việc làm), còn 고용 là quan hệ thuê mướn nói chung (고용 계약). Người Việt hay viết 회사에 채용했다 khi ý là "tôi được nhận vào công ty" - phải là 회사에 취업했다 hoặc 채용되었다.
+
+  - key: ko:item:el-haego
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 해고 / 해고하다 · 해고되다
+      romanization: haego / haegohada · haegodoeda
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Sa thải, cho thôi việc (do công ty quyết định). 부당 해고 là sa thải trái luật.
+      examples:
+        - target: 정당한 사유 없이 근로자를 해고하는 것은 법으로 금지되어 있다.
+          translation:
+            vi: Việc sa thải người lao động mà không có lý do chính đáng bị luật pháp cấm.
+      pronunciation_note:
+        vi: Đọc [해고]; ㅎ đầu từ phát âm rõ như "h" tiếng Việt.
+      confusion:
+        vi: Tiếng Việt "nghỉ việc" có thể là tự nghỉ hay bị cho nghỉ, còn tiếng Hàn tách rõ - 퇴사하다 (tự thôi việc), 해고되다 (bị sa thải), 퇴직하다 (rời công ty, nghỉ hưu). Viết nhầm 해고했다 khi mình tự nghỉ sẽ khiến người đọc hiểu là bạn đuổi người khác.
+
+  - key: ko:item:el-geulloja
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 근로자
+      romanization: geulloja
+      pos: danh từ
+    back:
+      meaning:
+        vi: Người lao động (勤勞者 - cần lao giả) - từ pháp lý trung tính, dùng trong luật, tin tức, hợp đồng.
+      examples:
+        - target: 이 조항은 상시 근로자가 다섯 명 미만인 사업장에는 적용되지 않는다.
+          translation:
+            vi: Điều khoản này không áp dụng cho cơ sở kinh doanh có dưới năm người lao động thường xuyên.
+      pronunciation_note:
+        vi: Đọc [글로자] - ㄴ gặp ㄹ thành ㄹㄹ (biến âm lỏng).
+      confusion:
+        vi: 근로자 dùng trong luật (근로기준법), 노동자 mang màu sắc phong trào công nhân, còn 직장인 là "người đi làm" trong đời thường. Viết báo cáo hay đơn từ, hãy chọn 근로자.
+
+  # ================= bài 3: quá mức và hệ quả - -(으)ㄴ 나머지, -기 십상이다, -는 통에 =================
+  - key: ko:item:el-gram-n-nameoji
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, reading, writing]
+    front:
+      text: V/A-(으)ㄴ 나머지
+      romanization: -(eu)n nameoji
+      pos: cấu trúc kết quả
+    back:
+      meaning:
+        vi: Vì quá... nên (rốt cuộc) - một trạng thái, hành động đi quá mức dẫn tới kết quả không mong muốn. Vế sau thường ở quá khứ.
+      examples:
+        - target: 할인 행사에 정신이 팔린 나머지 필요하지도 않은 물건까지 잔뜩 사 버렸다.
+          translation:
+            vi: Mải mê vì đợt giảm giá đến mức tôi mua cả đống đồ chẳng cần đến.
+      pronunciation_note:
+        vi: 팔린 나머지 đọc liền [팔린나머지]; 나머지 nhấn nhẹ âm đầu.
+      confusion:
+        vi: Danh từ 나머지 nghĩa gốc là "phần còn lại" (나머지 사람들). Trong cấu trúc này nó chỉ kết quả "dư ra" của sự quá mức, nên vế trước thường có 너무, 지나치게 hoặc động từ cảm xúc (긴장하다, 흥분하다, 기쁘다).
+
+  - key: ko:item:el-gram-gi-sipsangida
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V-기 십상이다
+      romanization: -gi sipsangida
+      pos: cấu trúc dự đoán
+    back:
+      meaning:
+        vi: Rất dễ (bị)..., mười phần thì tám chín - dự đoán kết quả xấu gần như chắc chắn xảy ra nếu làm theo cách đó.
+      examples:
+        - target: 남의 말만 믿고 덜컥 투자했다가는 손해를 보기 십상이다.
+          translation:
+            vi: Cứ nghe theo lời người khác mà đầu tư vội vàng thì rất dễ chịu lỗ.
+      pronunciation_note:
+        vi: 십상 đọc [십쌍] - ㅅ sau patchim ㅂ thành ㅆ căng.
+      confusion:
+        vi: 십상 đến từ 십상팔구 (十常八九 - mười lần thì tám chín). Chỉ dùng cho kết quả tiêu cực - không nói 성공하기 십상이다. Trong khẩu ngữ tương đương -기 쉽다, nhưng -기 쉽다 trung tính hơn.
+
+  - key: ko:item:el-gram-neun-tonge
+    type: grammar_point
+    level: topik5
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-는 통에 · N 통에
+      romanization: -neun tonge
+      pos: cấu trúc lý do
+    back:
+      meaning:
+        vi: Vì (cái tình cảnh ồn ào, rối ren, phiền phức) đó mà... - nguyên nhân là một hoàn cảnh hỗn loạn kéo dài, kết quả là điều bất lợi.
+      examples:
+        - target: 윗집이 밤늦게까지 이삿짐을 옮기는 통에 한숨도 자지 못했다.
+          translation:
+            vi: Tầng trên chuyển đồ đạc đến tận khuya, ồn ào thế nên tôi chẳng chợp mắt được chút nào.
+      pronunciation_note:
+        vi: 통에 nối âm [통에]; ㅌ bật hơi mạnh, khác ㄷ.
+      confusion:
+        vi: -는 바람에 nhấn một sự việc bất ngờ xảy ra một lần (갑자기 비가 오는 바람에), còn -는 통에 nhấn cái không khí rối ren, ồn ã kéo dài (아이들이 떠드는 통에). Cả hai đều dẫn tới kết quả xấu và không đi với mệnh lệnh.
+
+  - key: ko:item:el-chungdong-gumae
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 충동구매
+      romanization: chungdonggumae
+      pos: danh từ
+    back:
+      meaning:
+        vi: Mua sắm bốc đồng - mua vì hứng nhất thời, không có kế hoạch. 충동구매를 하다.
+      examples:
+        - target: 홈쇼핑 방송을 보다가 충동구매를 한 적이 한두 번이 아니다.
+          translation:
+            vi: Tôi đã không ít lần mua sắm bốc đồng khi xem kênh mua hàng trên tivi.
+      pronunciation_note:
+        vi: Đọc [충동구매]; ㅊ bật hơi, ㄷ trong 동 nhẹ.
+      confusion:
+        vi: 충동 (衝動 - xung động) là sự thôi thúc bất chợt, khác 감동 (cảm động). Mua thứ cần nhưng nhiều quá thì là 과소비, không phải 충동구매.
+
+  - key: ko:item:el-gwasobi
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 과소비
+      romanization: gwasobi
+      pos: danh từ
+    back:
+      meaning:
+        vi: Tiêu dùng quá mức, tiêu xài hoang phí so với khả năng.
+      examples:
+        - target: 명절마다 되풀이되는 과소비를 줄이자는 목소리가 커지고 있다.
+          translation:
+            vi: Ngày càng nhiều ý kiến kêu gọi giảm việc chi tiêu quá mức cứ lặp lại mỗi dịp lễ tết.
+      pronunciation_note:
+        vi: Đọc [과소비]; ㅘ đọc lướt như "oa".
+      confusion:
+        vi: Tiền tố 과- (過 - quá) giống tiếng Việt "quá" - 과식 (ăn quá nhiều), 과음 (uống quá chén), 과로 (làm quá sức). Nhớ quy tắc này, bạn đoán được cả họ từ.
+
+  - key: ko:item:el-daechul
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 대출 / 대출을 받다
+      romanization: daechul / daechureul batda
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: Khoản vay; vay tiền (của ngân hàng, tổ chức tài chính). Ngân hàng cho vay là 대출해 주다.
+      examples:
+        - target: 그는 전셋집을 구하려고 은행에서 2억 원의 대출을 받았다.
+          translation:
+            vi: Anh ấy đã vay ngân hàng 200 triệu won để thuê nhà theo hình thức jeonse.
+      pronunciation_note:
+        vi: Đọc [대출]; 대출을 nối âm [대추를].
+      confusion:
+        vi: 대출 cũng có nghĩa "mượn sách" ở thư viện (도서 대출). Vay tiền người quen trong đời thường dùng 돈을 빌리다, không dùng 대출.
+
+  - key: ko:item:el-bit
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: 빚 · 빚을 지다
+      romanization: bit · bijeul jida
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: Nợ; mắc nợ. 빚을 갚다 (trả nợ), 빚더미 (núi nợ).
+      examples:
+        - target: 무리하게 가게를 넓혔다가 그는 결국 수억 원의 빚을 지게 되었다.
+          translation:
+            vi: Mở rộng cửa hàng quá sức, rốt cuộc anh ấy mắc nợ hàng trăm triệu won.
+      pronunciation_note:
+        vi: 빚 đứng một mình đọc [빋]; khi có trợ từ thì nối âm - 빚을 [비즐], 빚이 [비지].
+      confusion:
+        vi: 빚 (nợ) và 빛 (ánh sáng) đều đọc [빋] khi đứng riêng, chỉ phân biệt khi nối âm - 빛이 [비치]. Động từ đi kèm là 지다 (mắc), không phải 받다.
+
+  - key: ko:item:el-sonhae
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 손해 · 손해를 보다
+      romanization: sonhae · sonhaereul boda
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: Thiệt hại, thua lỗ, thiệt thòi; chịu lỗ, bị thiệt.
+      examples:
+        - target: 주가가 떨어지기 전에 팔지 못해서 꽤 큰 손해를 봤다.
+          translation:
+            vi: Vì không bán được trước khi giá cổ phiếu giảm nên tôi đã lỗ khá nặng.
+      pronunciation_note:
+        vi: Đọc [손해]; khi nói nhanh ㅎ yếu đi, nghe gần [소내].
+      confusion:
+        vi: Động từ đi kèm là 보다 - 손해를 보다, không phải 받다. 손해 là thiệt về tiền bạc, lợi ích; thiệt hại do thiên tai, tai nạn là 피해 (피해를 입다).
+
+  - key: ko:item:el-tuja
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 투자 / 투자하다
+      romanization: tuja / tujahada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Đầu tư (bỏ tiền, thời gian để thu lợi sau này). 주식 투자, N에 투자하다.
+      examples:
+        - target: 전문가들은 한 종목에만 몰아서 투자하지 말고 위험을 분산하라고 조언한다.
+          translation:
+            vi: Các chuyên gia khuyên đừng dồn tiền vào một mã cổ phiếu mà hãy phân tán rủi ro.
+      pronunciation_note:
+        vi: Đọc [투자]; ㅌ bật hơi mạnh.
+      confusion:
+        vi: 투자 (đầu tư) khác 투기 (đầu cơ, mang nghĩa xấu - 부동산 투기). Báo chí chỉ trích 투기 chứ không chỉ trích 투자.
+
+  - key: ko:item:el-halbu
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 할부
+      romanization: halbu
+      pos: danh từ
+    back:
+      meaning:
+        vi: Trả góp. N개월 할부로 사다; trái nghĩa là 일시불 (trả một lần).
+      examples:
+        - target: 노트북을 12개월 할부로 샀더니 매달 카드 대금이 부담스럽다.
+          translation:
+            vi: Mua máy tính xách tay trả góp 12 tháng nên tiền thẻ hằng tháng thấy nặng nề.
+      pronunciation_note:
+        vi: Đọc [할부]; ㄹ cuối âm tiết đầu đặt lưỡi nhẹ.
+      confusion:
+        vi: Trợ từ đi kèm là (으)로 - 할부로 사다, 일시불로 하다. Ở quầy thu ngân bạn sẽ nghe "일시불로 해 드릴까요?" (Thanh toán một lần nhé?).
+
+  # ================= bài 4: tranh luận về lao động - -다시피, -(으)ㄹ 법하다, N을/를 막론하고 · 불문하고 =================
+  - key: ko:item:el-gram-dasipi
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-다시피 (아시다시피 · 보시다시피)
+      romanization: -dasipi
+      pos: vĩ tố liên kết
+    back:
+      meaning:
+        vi: Như (bạn) đã... - dựa vào điều người nghe đã biết, đã thấy, đã nghe để dẫn vào ý chính. Chỉ đi với động từ nhận thức - 알다, 보다, 듣다, 느끼다, 말하다, 짐작하다.
+      examples:
+        - target: 보시다시피 올해 들어 신입 사원의 이직률이 눈에 띄게 높아졌습니다.
+          translation:
+            vi: Như quý vị thấy đó, từ đầu năm nay tỷ lệ nhân viên mới chuyển việc tăng rõ rệt.
+      pronunciation_note:
+        vi: 아시다시피 đọc liền [아시다시피]; ㅍ bật hơi.
+      confusion:
+        vi: -다시피 하다 là cấu trúc khác, nghĩa "gần như" - 회사에서 살다시피 했다 (gần như sống ở công ty). Trong thuyết trình, 아시다시피 / 보시다시피 là kính ngữ lịch sự với người nghe.
+
+  - key: ko:item:el-gram-l-beophada
+    type: grammar_point
+    level: topik6
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V/A-(으)ㄹ 법하다
+      romanization: -(eu)l beophada
+      pos: cấu trúc phỏng đoán
+    back:
+      meaning:
+        vi: Có lý, có thể hiểu được là...; đáng lẽ... (theo lẽ thường thì có khả năng xảy ra). Hay đi với 도 - -(으)ㄹ 법도 하다.
+      examples:
+        - target: 3년째 임금이 동결되었으니 직원들이 불만을 가질 법도 하다.
+          translation:
+            vi: Lương bị giữ nguyên đã ba năm thì nhân viên bất mãn cũng là điều dễ hiểu.
+      pronunciation_note:
+        vi: 법하다 đọc [버파다] - ㅂ gặp ㅎ thành ㅍ. 가질 법도 đọc [가질 뻡또].
+      confusion:
+        vi: 법 ở đây không phải "pháp luật" mà là "lẽ thường". Khác -(으)ㄹ 만하다 (đáng để làm) - 볼 만한 영화 là phim đáng xem, còn 화가 날 법하다 là tức giận cũng phải thôi.
+
+  - key: ko:item:el-gram-eul-maknonhago
+    type: grammar_point
+    level: topik6
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: N을/를 막론하고 · N을/를 불문하고
+      romanization: -eul/reul maknonhago · -eul/reul bulmunhago
+      pos: cấu trúc trang trọng
+    back:
+      meaning:
+        vi: Bất kể, bất luận N (là gì) - không phân biệt. Thường đi với cặp từ đối lập hoặc từ chỉ phạm trù - 남녀노소, 지위 고하, 국적, 나이, 업종.
+      examples:
+        - target: 업종을 막론하고 일손 부족을 호소하는 중소기업이 늘고 있다.
+          translation:
+            vi: Bất kể ngành nghề nào, ngày càng nhiều doanh nghiệp vừa và nhỏ kêu thiếu nhân lực.
+      pronunciation_note:
+        vi: 막론하고 đọc [망논하고] - ㄱ trước ㄴ thành ㅇ, ㄹ sau ㅇ thành ㄴ. 불문하고 đọc [불문하고].
+      confusion:
+        vi: Khẩu ngữ tương đương là N와/과 상관없이, N에 관계없이. 불문 còn đứng trần không trợ từ trong tin tuyển dụng - 나이 불문, 경력 불문; 막론 thì luôn cần 을/를 막론하고.
+
+  - key: ko:item:el-geullo-sigan
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 근로 시간
+      romanization: geullo sigan
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Thời giờ làm việc (khái niệm pháp lý). 법정 근로 시간 (giờ làm theo luật), 연장 근로 (làm thêm giờ), 근로 시간 단축 (rút ngắn giờ làm).
+      examples:
+        - target: 법정 근로 시간은 주 40시간이며 연장 근로는 주 12시간을 넘을 수 없다.
+          translation:
+            vi: Giờ làm việc theo luật là 40 giờ một tuần, và làm thêm không được vượt quá 12 giờ một tuần.
+      pronunciation_note:
+        vi: 근로 đọc [글로] - ㄴ gặp ㄹ thành ㄹㄹ.
+      confusion:
+        vi: 근로 시간 dùng trong luật và tin tức; nói chuyện ở công ty thì dùng 근무 시간 (giờ làm) hay 업무 시간. Làm thêm giờ đời thường là 야근, 잔업; văn bản pháp lý là 연장 근로.
+
+  - key: ko:item:el-ju-sail-je
+    type: phrase
+    level: topik6
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 주 4일제
+      romanization: ju sail-je
+      pos: danh từ
+    back:
+      meaning:
+        vi: Chế độ làm việc bốn ngày một tuần. 제 (制) là "chế độ" - 주 5일제, 주 52시간제.
+      examples:
+        - target: 주 4일제를 시범 도입한 기업 가운데 상당수는 생산성이 오히려 높아졌다고 답했다.
+          translation:
+            vi: Trong số các doanh nghiệp thí điểm chế độ làm việc bốn ngày, khá nhiều nơi trả lời rằng năng suất còn tăng lên.
+      pronunciation_note:
+        vi: 4일제 đọc [사일쩨] - ㅈ sau patchim ㄹ trong từ Hán Hàn đọc căng.
+      confusion:
+        vi: Đọc số theo Hán Hàn - 주 사일제, không phải 주 네일제. Tương tự 주 오일제, 주 오십이 시간제.
+
+  - key: ko:item:el-nodongjohap
+    type: vocab
+    level: topik5
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 노동조합 (노조)
+      romanization: nodongjohap (nojo)
+      pos: danh từ
+    back:
+      meaning:
+        vi: Công đoàn, nghiệp đoàn (tổ chức của người lao động); báo chí thường viết tắt 노조. Phía người sử dụng lao động gọi là 사측 hoặc 사용자 측.
+      examples:
+        - target: 노조는 인력 충원과 안전 설비 확충을 요구하며 사측과 교섭에 나섰다.
+          translation:
+            vi: Công đoàn bước vào đàm phán với ban lãnh đạo, yêu cầu bổ sung nhân lực và mở rộng thiết bị an toàn.
+      pronunciation_note:
+        vi: 노동조합 đọc [노동조합]; ㅂ cuối không bật hơi. 노조 đọc [노조].
+      confusion:
+        vi: Ở Hàn Quốc 노조 là tổ chức độc lập, thường đứng đối diện 사측 trong thương lượng, nên tin tức hay có cặp 노사 (lao động - quản lý), 노사 갈등, 노사 합의.
+
+  - key: ko:item:el-paeop
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 파업 / 파업하다
+      romanization: paeop / paeophada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Đình công (người lao động cùng ngừng làm việc để đòi quyền lợi). 파업에 들어가다 (bắt đầu đình công), 총파업 (tổng đình công).
+      examples:
+        - target: 지하철 노조가 파업에 들어가면서 출근길 시민들이 큰 불편을 겪었다.
+          translation:
+            vi: Khi công đoàn tàu điện ngầm bắt đầu đình công, người dân đi làm buổi sáng gặp nhiều bất tiện.
+      pronunciation_note:
+        vi: Đọc [파업]; ㅍ bật hơi, ㅂ cuối đóng môi không bật.
+      confusion:
+        vi: 파업 là ngừng làm việc; 시위 là biểu tình trên đường phố; 농성 là ngồi lì chiếm chỗ để phản đối. Một cuộc 파업 có thể kèm 집회 (mít tinh) nhưng không đồng nghĩa.
+
+  - key: ko:item:el-imgeum-hyeopsang
+    type: phrase
+    level: topik6
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 임금 협상
+      romanization: imgeum hyeopsang
+      pos: danh từ (cụm)
+    back:
+      meaning:
+        vi: Đàm phán tiền lương giữa công đoàn và ban lãnh đạo. 협상이 타결되다 (đạt thoả thuận) / 결렬되다 (đổ vỡ).
+      examples:
+        - target: 올해 임금 협상이 결렬되자 노조는 파업 찬반 투표를 예고했다.
+          translation:
+            vi: Khi đàm phán lương năm nay đổ vỡ, công đoàn thông báo sẽ bỏ phiếu về việc có đình công hay không.
+      pronunciation_note:
+        vi: 협상 đọc [협쌍] - ㅅ sau ㅂ thành ㅆ.
+      confusion:
+        vi: 협상 là thương lượng có mặc cả quyền lợi; 협의 là bàn bạc để thống nhất; 교섭 là cách gọi pháp lý (단체 교섭). Kết quả tốt là 타결, xấu là 결렬 - hai từ người Việt hay quên vì tiếng Việt chỉ nói "thành công / thất bại".
+
+  - key: ko:item:el-gwaro
+    type: vocab
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 과로 / 과로하다
+      romanization: gwaro / gwarohada
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: Làm việc quá sức (過勞 - quá lao). 과로에 시달리다 (khổ vì làm quá sức), 과로사 (chết do làm việc quá sức).
+      examples:
+        - target: 그는 몇 달째 과로에 시달리다가 결국 응급실에 실려 갔다.
+          translation:
+            vi: Anh ấy làm việc quá sức suốt mấy tháng, rốt cuộc bị đưa vào phòng cấp cứu.
+      pronunciation_note:
+        vi: Đọc [과로]; ㅘ lướt nhanh như "oa".
+      confusion:
+        vi: 무리하다 là cố quá sức nói chung (운동을 무리하다), còn 과로 chỉ làm việc quá nhiều kéo dài. Báo chí dùng 과로 khi nói về điều kiện lao động.
+
+  - key: ko:item:el-jaetaek-geunmu
+    type: phrase
+    level: topik5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 재택근무
+      romanization: jaetaekgeunmu
+      pos: danh từ
+    back:
+      meaning:
+        vi: Làm việc tại nhà (在宅勤務 - tại trạch cần vụ). 재택근무를 하다.
+      examples:
+        - target: 감염병 유행 이후 재택근무를 선택할 수 있는 회사가 크게 늘었다.
+          translation:
+            vi: Sau đại dịch, số công ty cho phép chọn làm việc tại nhà tăng mạnh.
+      pronunciation_note:
+        vi: Đọc [재택끈무] - ㄱ sau patchim ㄱ thành ㄲ.
+      confusion:
+        vi: 재택근무 nhấn nơi làm là ở nhà; 원격 근무 là làm việc từ xa (có thể ở quán cà phê, nơi khác). Hình thức kết hợp gọi là 하이브리드 근무.

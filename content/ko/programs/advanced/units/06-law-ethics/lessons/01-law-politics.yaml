@@ -1,0 +1,565 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:law-politics-vocab
+order_index: 1
+level: topik6
+title:
+  vi: Từ dự luật đến thi hành - từ vựng pháp luật và chính trị
+objectives:
+  - vi: Hiểu vòng đời của một đạo luật - 법안, 공청회, 개정, 시행, 위반, 처벌 - và các khái niệm 권리 · 의무, 여론.
+  - vi: Phân biệt N에 의하면 (theo nguồn tin) với N에 의해(서) (bởi - chủ thể câu bị động, căn cứ).
+  - vi: Chỉ ra cốt lõi vấn đề bằng (원인 / 문제는) -는 데 있다, viết đúng khoảng cách.
+estimated_minutes: 25
+skills: [vocabulary, reading, grammar]
+prerequisites: [ko:lesson:economy-labor-review]
+items:
+  - item: ko:item:le-beoban
+  - item: ko:item:le-gaejeong
+  - item: ko:item:le-sihaeng
+  - item: ko:item:le-cheobeol
+  - item: ko:item:le-wiban
+  - item: ko:item:le-gwolli-uimu
+  - item: ko:item:le-yeoron
+  - item: ko:item:le-gongcheonghoe
+  - item: ko:item:le-gram-e-uihamyeon
+  - item: ko:item:le-gram-e-uihae
+  - item: ko:item:le-gram-neun-de-itda
+  - item: ko:item:gp-e-ttareumyeon
+    role: reuse
+  - item: ko:item:gp-written-passive
+    role: reuse
+  - item: ko:item:wonin
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Unit này đưa bạn vào thế giới tin chính trị, xã luận và các buổi điều trần. Bài đầu tiên cho bạn bộ từ vựng nền của một đạo luật và ba cấu trúc văn viết hay đi cùng tin pháp luật.
+  - type: explain
+    text:
+      vi: Một đạo luật đi qua các bước - 법안 발의 (đề xuất dự luật) → 공청회 (lấy ý kiến công chúng) → 국회 통과 (thông qua) → 시행 (có hiệu lực) → về sau có thể 개정 (sửa đổi). Người vi phạm (위반) sẽ bị 처벌. Hãy nhớ 법안 chỉ là dự luật - chưa thể "thi hành".
+  - type: explain
+    text:
+      vi: Tiếng Việt dùng "theo" và "bởi" khá tự do, còn tiếng Hàn tách rõ - N에 의하면 (= 에 따르면) dẫn nguồn tin, vế sau là -다고 한다 hay -(으)ㄴ 것으로 나타났다; N에 의해(서) chỉ người, cơ quan thực hiện trong câu bị động (투표에 의해 선출되다) hoặc căn cứ (법에 의해 보호되다).
+  - type: explain
+    text:
+      vi: (원인 / 문제 / 핵심은) -는 데 있다 nghĩa là "nằm ở chỗ..." - cấu trúc yêu thích của xã luận khi chỉ ra gốc rễ vấn đề. Động từ dùng -는 데, tính từ dùng -다는 데 hoặc -(으)ㄴ 데, quá khứ dùng -았/었다는 데.
+  - type: deep_explain
+    text:
+      vi: Lỗi khoảng cách hay gặp nhất là viết liền -는데 있다. 데 ở đây là danh từ phụ thuộc "chỗ, điểm" nên phải tách - 부족하다는 데 있다; còn -는데 viết liền là vĩ tố "nhưng, mà". Với N에 의해, hãy kiểm tra động từ - phải là bị động (되다, -아/어지다, -이/히/리/기-). Nếu bạn muốn câu chủ động, đưa N lên làm chủ ngữ - 회원들이 위원장을 선출한다.
+  - type: example
+    target: 정부가 제출한 법안은 두 차례 공청회를 거쳐 다음 달 국회 본회의에 상정될 예정이다.
+    target_lang: ko
+    translation:
+      vi: Dự luật do chính phủ trình sẽ qua hai buổi lấy ý kiến công chúng rồi được đưa ra phiên họp toàn thể Quốc hội vào tháng sau.
+    note:
+      vi: 상정되다 = được đưa ra (bàn, biểu quyết) - động từ quen thuộc của tin quốc hội.
+  - type: example
+    target: 국민권익위원회에 의하면 지난해 접수된 공익 신고가 전년보다 크게 늘었다고 한다.
+    target_lang: ko
+    translation:
+      vi: Theo Uỷ ban Chống tham nhũng và Quyền lợi công dân, số đơn tố giác vì lợi ích công cộng nhận được năm ngoái đã tăng mạnh so với năm trước đó.
+    note:
+      vi: N에 의하면 + -다고 한다 - dẫn nguồn, người viết không tự khẳng định.
+  - type: example
+    target: 이 조항은 헌법재판소에 의해 위헌으로 판단되어 효력을 잃었다.
+    target_lang: ko
+    translation:
+      vi: Điều khoản này bị Toà án Hiến pháp phán quyết là vi hiến và đã mất hiệu lực.
+    note:
+      vi: N에 의해 + động từ bị động 판단되다 - chủ thể ra phán quyết là toà án.
+  - type: example
+    target: 청년 정책이 겉도는 이유는 정책을 만드는 과정에 정작 청년의 목소리가 빠져 있다는 데 있다.
+    target_lang: ko
+    translation:
+      vi: Lý do chính sách cho thanh niên cứ hời hợt, không đi vào thực chất nằm ở chỗ trong quá trình làm chính sách lại thiếu chính tiếng nói của thanh niên.
+    note:
+      vi: 이유는 ... -다는 데 있다; 정작 = "chính (điều cần) thì lại".
+  - type: example
+    target: 권리만 주장하고 의무는 외면하는 태도로는 공동체를 유지할 수 없다.
+    target_lang: ko
+    translation:
+      vi: Với thái độ chỉ đòi quyền lợi mà quay lưng với nghĩa vụ thì không thể duy trì cộng đồng.
+    note:
+      vi: Cặp 권리 / 의무 hay đi cùng nhau trong văn nghị luận.
+  - type: common_mistake
+    wrong: 국회를 통과하지 못한 법안이 다음 달부터 시행된다.
+    right: 국회를 통과한 개정법이 다음 달부터 시행된다.
+    target_lang: ko
+    note:
+      vi: Dự luật chưa thông qua thì không thể có hiệu lực. Chỉ luật (법, 개정법) đã được thông qua mới 시행되다.
+  - type: common_mistake
+    wrong: 위원장은 회원들에 의해 투표로 선출한다.
+    right: 위원장은 회원들의 투표에 의해 선출된다.
+    target_lang: ko
+    note:
+      vi: N에 의해 đi với động từ bị động - 선출된다. Tiếng Việt "được bầu bởi" khiến người học quên đổi động từ sang bị động.
+  - type: common_mistake
+    wrong: 문제의 원인은 관리 감독이 부족한데 있다.
+    right: 문제의 원인은 관리 감독이 부족하다는 데 있다.
+    target_lang: ko
+    note:
+      vi: 데 là danh từ phụ thuộc "chỗ" nên viết cách, và tính từ thường dùng -다는 데. 부족한데 viết liền là vĩ tố "thiếu nhưng...".
+  - type: summary
+    points:
+      - vi: 법안 (dự luật) → 공청회 → 통과 → 시행 (có hiệu lực) → 개정 (sửa đổi); 위반하면 처벌을 받다.
+      - vi: 위반 (luật, hợp đồng) ≠ 침해 (quyền bị xâm phạm); 권리 (quyền lợi) ≠ 권한 (thẩm quyền).
+      - vi: N에 의하면 = theo nguồn tin (+ -다고 한다); N에 의해 = bởi (+ động từ bị động) / dựa trên.
+      - vi: (원인 / 문제 / 이유는) V-는 데 · A-다는 데 있다 - 데 viết cách.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:le-law-mcq-beoban
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:le-beoban
+    prompt:
+      stem: "야당은 국회에 제출된 법안의 일부 조항에 강하게 반발했다. - 법안 ở đây là gì?"
+      stem_lang: vi
+      options:
+        - { id: x6m, text: "Dự luật (chưa được thông qua)", lang: vi }
+        - { id: p3c, text: "Luật đã có hiệu lực", lang: vi }
+        - { id: d9r, text: "Bản án của toà án", lang: vi }
+        - { id: w1v, text: "Phương án xây trụ sở Quốc hội", lang: vi }
+    answer:
+      correct_option_id: x6m
+    explanation:
+      vi: 법안 (pháp án) là dự luật vừa được trình (제출된) và còn đang bị tranh cãi - chưa phải luật có hiệu lực. Bản án của toà là 판결.
+    display_answer: "Dự luật (chưa được thông qua)"
+
+  - key: ko:exercise:le-law-listen-uihamyeon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-e-uihamyeon
+    prompt:
+      audio_asset_id: null
+      fallback_text: 공정거래위원회에 의하면 해당 업체들은 3년 동안 가격을 담합해 온 것으로 드러났다.
+      options:
+        - { id: a5t, text: "Theo Uỷ ban Thương mại Công bằng, các doanh nghiệp này bị phát hiện đã thông đồng giá suốt ba năm.", lang: vi }
+        - { id: k8e, text: "Các doanh nghiệp này đã bị Uỷ ban Thương mại Công bằng ép thông đồng giá.", lang: vi }
+        - { id: r2n, text: "Uỷ ban Thương mại Công bằng đã thông đồng với các doanh nghiệp suốt ba năm.", lang: vi }
+        - { id: h7q, text: "Các doanh nghiệp tự công bố đã giảm giá trong ba năm.", lang: vi }
+    answer:
+      correct_option_id: a5t
+    explanation:
+      vi: N에 의하면 = theo (nguồn tin) - uỷ ban là nơi công bố, không phải người thông đồng. 담합하다 là thông đồng (giá), -아/어 온 것으로 드러났다 = bị phát hiện là đã (làm) suốt thời gian qua.
+    display_answer: "Theo Uỷ ban Thương mại Công bằng, các doanh nghiệp này bị phát hiện đã thông đồng giá suốt ba năm."
+
+  - key: ko:exercise:le-law-mcq-uihae
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-e-uihae
+    prompt:
+      stem: "Chọn từ đúng để điền - 지난달 화재는 작업자의 부주의______ 발생한 것으로 밝혀졌다."
+      stem_lang: vi
+      options:
+        - { id: n4y, text: "에 의해", lang: ko }
+        - { id: s1h, text: "에 의하면", lang: ko }
+        - { id: g6w, text: "에게 의해", lang: ko }
+        - { id: o2b, text: "에 의한다면", lang: ko }
+    answer:
+      correct_option_id: n4y
+    explanation:
+      vi: Sự bất cẩn là nguyên nhân, căn cứ gây ra đám cháy - N에 의해 발생하다. 에 의하면 là "theo nguồn tin", không đặt trước động từ; 에게 의해 và 에 의한다면 không phải dạng chuẩn.
+    display_answer: "에 의해"
+
+  - key: ko:exercise:le-law-fill-sihaeng
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:le-sihaeng
+    prompt:
+      template: "개정된 근로기준법은 내년 1월 1일부터 {{b1}}된다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Luật "bắt đầu có hiệu lực, được đưa vào áp dụng" (施行).
+        - 시...
+    answer:
+      blanks:
+        b1: [시행]
+    known_wrong:
+      - answer: 실행
+        feedback_vi: 실행 là thực hiện một kế hoạch cụ thể. Luật bắt đầu có hiệu lực là 시행되다.
+        error_tag: sihaeng_vs_silhaeng
+      - answer: 시험
+        feedback_vi: 시험 là kỳ thi hoặc thử nghiệm. Với luật, dùng 시행.
+        error_tag: sihaeng_vs_silhaeng
+    explanation:
+      vi: 법이 시행되다 = luật có hiệu lực. 시행 và 실행 chỉ khác một âm nên người học hay lẫn; mẹo nhớ - chủ ngữ là luật, chính sách thì gần như luôn là 시행.
+    display_answer: 개정된 근로기준법은 내년 1월 1일부터 시행된다.
+
+  - key: ko:exercise:le-law-mcq-gongcheonghoe
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gongcheonghoe
+    prompt:
+      stem: "Thành phố muốn nghe ý kiến của cư dân trước khi quyết định xây nhà máy xử lý rác. Thành phố nên tổ chức gì?"
+      stem_lang: vi
+      options:
+        - { id: t5j, text: "공청회", lang: ko }
+        - { id: m8x, text: "인사 청문회", lang: ko }
+        - { id: e2f, text: "졸업식", lang: ko }
+        - { id: c7k, text: "시상식", lang: ko }
+    answer:
+      correct_option_id: t5j
+    explanation:
+      vi: 공청회 (công thính hội) là buổi lắng nghe ý kiến công chúng trước khi ra chính sách. 인사 청문회 là phiên chất vấn ứng viên chức vụ cao; 졸업식, 시상식 là lễ tốt nghiệp, lễ trao giải.
+    display_answer: "공청회"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:le-law-fill-deitda
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-neun-de-itda
+    prompt:
+      template: "출산율이 낮은 근본적인 원인은 아이를 키우는 데 드는 비용이 지나치게 {{b1}} 데 있다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [크다는, 많다는, 높다는, 큰, 많은, 높은]
+    known_wrong:
+      - answer: 크기
+        feedback_vi: Trước danh từ phụ thuộc 데 cần định ngữ - 크다는 데 hoặc 큰 데.
+        error_tag: de_itda_form
+      - answer: 커서
+        feedback_vi: -아/어서 là vĩ tố liên kết, không đứng trước 데. Viết 크다는 데 있다.
+        error_tag: de_itda_form
+    explanation:
+      vi: Chủ ngữ 원인은 + A-다는 데 있다 / A-(으)ㄴ 데 있다 = "nguyên nhân nằm ở chỗ...". Tính từ 크다 → 크다는 (trích dẫn sự việc) hoặc 큰 (định ngữ).
+    display_answer: 출산율이 낮은 근본적인 원인은 아이를 키우는 데 드는 비용이 지나치게 크다는 데 있다.
+
+  - key: ko:exercise:le-law-fill-chimhae
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-wiban
+    prompt:
+      template: "본인의 허락 없이 남의 얼굴 사진을 인터넷에 올리는 것은 초상권 {{b1}}에 해당한다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [침해]
+    known_wrong:
+      - answer: 위반
+        feedback_vi: 위반 dùng cho luật, quy định, hợp đồng. Quyền (초상권 - quyền hình ảnh) bị xâm phạm thì là 침해.
+        error_tag: wiban_vs_chimhae
+      - answer: 처벌
+        feedback_vi: 처벌 là hình phạt. Ở đây cần tên hành vi - xâm phạm quyền hình ảnh, 초상권 침해.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 권리 + 침해 (xâm phạm quyền) - 초상권 침해, 사생활 침해, 저작권 침해. Tiếng Việt nói "vi phạm quyền" nên người Việt hay chọn 위반, nhưng 위반 chỉ đi với luật lệ.
+    display_answer: 본인의 허락 없이 남의 얼굴 사진을 인터넷에 올리는 것은 초상권 침해에 해당한다.
+
+  - key: ko:exercise:le-law-translate-yeoron
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-e-uihamyeon
+    prompt:
+      source_text: Theo kết quả thăm dò dư luận, đa số người dân phản đối dự luật này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "여론 조사 결과에 의하면 국민 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과에 의하면 국민 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과에 의하면 국민 대다수가 이 법안에 반대한다."
+        - "여론 조사 결과에 의하면 국민 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사 결과에 의하면 국민의 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과에 의하면 국민의 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과에 의하면 국민의 대다수가 이 법안에 반대한다."
+        - "여론 조사 결과에 의하면 국민의 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사 결과에 의하면 대다수의 국민이 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과에 의하면 대다수의 국민이 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과에 의하면 대다수의 국민이 이 법안에 반대한다."
+        - "여론 조사 결과에 의하면 대다수의 국민이 이 법안에 반대한다고 한다."
+        - "여론 조사 결과에 따르면 국민 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과에 따르면 국민 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과에 따르면 국민 대다수가 이 법안에 반대한다."
+        - "여론 조사 결과에 따르면 국민 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사 결과에 따르면 국민의 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과에 따르면 국민의 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과에 따르면 국민의 대다수가 이 법안에 반대한다."
+        - "여론 조사 결과에 따르면 국민의 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사 결과에 따르면 대다수의 국민이 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과에 따르면 대다수의 국민이 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과에 따르면 대다수의 국민이 이 법안에 반대한다."
+        - "여론 조사 결과에 따르면 대다수의 국민이 이 법안에 반대한다고 한다."
+        - "여론 조사에 의하면 국민 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사에 의하면 국민 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사에 의하면 국민 대다수가 이 법안에 반대한다."
+        - "여론 조사에 의하면 국민 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사에 의하면 국민의 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사에 의하면 국민의 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사에 의하면 국민의 대다수가 이 법안에 반대한다."
+        - "여론 조사에 의하면 국민의 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사에 의하면 대다수의 국민이 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사에 의하면 대다수의 국민이 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사에 의하면 대다수의 국민이 이 법안에 반대한다."
+        - "여론 조사에 의하면 대다수의 국민이 이 법안에 반대한다고 한다."
+        - "여론 조사에 따르면 국민 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사에 따르면 국민 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사에 따르면 국민 대다수가 이 법안에 반대한다."
+        - "여론 조사에 따르면 국민 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사에 따르면 국민의 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사에 따르면 국민의 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사에 따르면 국민의 대다수가 이 법안에 반대한다."
+        - "여론 조사에 따르면 국민의 대다수가 이 법안에 반대한다고 한다."
+        - "여론 조사에 따르면 대다수의 국민이 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사에 따르면 대다수의 국민이 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사에 따르면 대다수의 국민이 이 법안에 반대한다."
+        - "여론 조사에 따르면 대다수의 국민이 이 법안에 반대한다고 한다."
+        - "여론 조사 결과 국민 대다수가 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과 국민 대다수가 이 법안에 반대하는 것으로 나타났습니다."
+        - "여론 조사 결과 대다수의 국민이 이 법안에 반대하는 것으로 나타났다."
+        - "여론 조사 결과 대다수의 국민이 이 법안에 반대하는 것으로 나타났습니다."
+    known_wrong:
+      - answer: 여론 조사 결과에 의해 국민 대다수가 이 법안에 반대하는 것으로 나타났다.
+        feedback_vi: Dẫn nguồn là 에 의하면 / 에 따르면. 에 의해 chỉ chủ thể của câu bị động.
+        error_tag: uihae_vs_uihamyeon
+      - answer: 여론 조사 결과에 따라 국민 대다수가 이 법안에 반대하는 것으로 나타났다.
+        feedback_vi: 에 따라 là "tuỳ theo, cùng với". "Theo kết quả" (dẫn nguồn) là 에 따르면 / 에 의하면.
+        error_tag: ttara_vs_ttareumyeon
+      - answer: 여론 조사 결과에 의하면 국민 대다수가 이 법에 반대하는 것으로 나타났다.
+        feedback_vi: Dự luật chưa thông qua là 법안; 법 là luật đã có hiệu lực.
+        error_tag: beoban_vs_beop
+    explanation:
+      vi: Dẫn nguồn - N에 의하면 / N에 따르면 + -(으)ㄴ/는 것으로 나타났다. "Đa số người dân" = 국민 대다수; "dự luật" = 법안.
+    display_answer: 여론 조사 결과에 의하면 국민 대다수가 이 법안에 반대하는 것으로 나타났다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:le-law-translate-deitda-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-gram-neun-de-itda
+    prompt:
+      source_text: 이번 사태의 근본 원인은 감독 기관이 제 역할을 하지 못했다는 데 있다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Nguyên nhân gốc rễ của sự việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này nằm ở chỗ cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này nằm ở chỗ cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này nằm ở việc cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này nằm ở việc cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này nằm ở việc cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này nằm ở việc cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này nằm ở việc cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này nằm ở việc cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này nằm ở chỗ cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này nằm ở chỗ cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này nằm ở việc cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này nằm ở việc cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này nằm ở việc cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này nằm ở việc cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này nằm ở việc cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này nằm ở việc cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân căn bản của sự việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân căn bản của sự việc lần này nằm ở chỗ cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân căn bản của sự việc lần này nằm ở chỗ cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân căn bản của sự việc lần này nằm ở việc cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân căn bản của sự việc lần này nằm ở việc cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân căn bản của sự việc lần này nằm ở việc cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân căn bản của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân căn bản của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân căn bản của vụ việc lần này nằm ở chỗ cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân căn bản của vụ việc lần này nằm ở việc cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân căn bản của vụ việc lần này nằm ở việc cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân căn bản của vụ việc lần này nằm ở việc cơ quan giám sát đã không thực hiện đúng vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này là cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân gốc rễ của sự việc lần này là cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này là cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân gốc rễ của vụ việc lần này là cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này là cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân sâu xa của sự việc lần này là cơ quan giám sát đã không hoàn thành vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này là cơ quan giám sát đã không làm tròn vai trò của mình."
+        - "Nguyên nhân sâu xa của vụ việc lần này là cơ quan giám sát đã không hoàn thành vai trò của mình."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nguyên nhân gốc rễ của sự việc lần này có ở cơ quan giám sát, nhưng họ đã làm tròn vai trò.
+        feedback_vi: Đọc nhầm 데 thành vĩ tố -는데 "nhưng". -다는 데 있다 = "nằm ở chỗ...", và 하지 못했다 là không làm được.
+        error_tag: de_itda_misread
+      - answer: Cơ quan giám sát đã tìm ra nguyên nhân gốc rễ của sự việc lần này.
+        feedback_vi: Câu gốc không nói cơ quan giám sát tìm ra nguyên nhân; nó nói chính cơ quan đó là nguyên nhân vì không làm tròn vai trò.
+        error_tag: meaning_changed
+    explanation:
+      vi: (원인은) -았/었다는 데 있다 = nguyên nhân nằm ở chỗ đã...; 제 역할을 하다 = làm tròn vai trò của mình; 사태 = sự việc, tình hình nghiêm trọng.
+    display_answer: Nguyên nhân gốc rễ của sự việc lần này nằm ở chỗ cơ quan giám sát đã không làm tròn vai trò của mình.
+
+  - key: ko:exercise:le-law-order-uihae
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gwolli-uimu
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Quyền và nghĩa vụ của người lao động được quy định bởi pháp luật.\""
+      tokens:
+        - { id: f3a, text: 의해 }
+        - { id: y8d, text: 정한다 }
+        - { id: u2k, text: 권리와 }
+        - { id: b6s, text: 법에 }
+        - { id: l1x, text: 정해진다 }
+        - { id: i9m, text: 근로자의 }
+        - { id: q4c, text: 의무는 }
+        - { id: z7p, text: 의하면 }
+    answer:
+      orders:
+        - [i9m, u2k, q4c, b6s, f3a, l1x]
+    explanation:
+      vi: N에 의해 + động từ bị động - 법에 의해 정해진다 (được quy định bởi luật). 정한다 là chủ động nên không hợp với 에 의해; 의하면 là "theo nguồn tin".
+    display_answer: 근로자의 권리와 의무는 법에 의해 정해진다.
+
+  - key: ko:exercise:le-law-mcq-news
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-gaejeong
+    prompt:
+      stem: "Đọc tin - 정부는 공청회에서 수렴한 의견을 반영해 개정안을 다시 마련하기로 했다. Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: v5n, text: "Chính phủ sẽ soạn lại bản sửa đổi dựa trên ý kiến thu thập được ở buổi lấy ý kiến công chúng.", lang: vi }
+        - { id: j0g, text: "Chính phủ đã thi hành luật sửa đổi mà không cần ý kiến người dân.", lang: vi }
+        - { id: o3w, text: "Buổi lấy ý kiến công chúng bị huỷ vì dư luận phản đối.", lang: vi }
+        - { id: k6u, text: "Quốc hội đã bác bỏ bản sửa đổi của chính phủ.", lang: vi }
+    answer:
+      correct_option_id: v5n
+    explanation:
+      vi: 공청회에서 수렴한 의견 = ý kiến tổng hợp được tại buổi lấy ý kiến; 반영하다 = phản ánh, đưa vào; 개정안을 다시 마련하다 = soạn lại dự thảo sửa đổi. Câu không nhắc đến việc thi hành, huỷ hay bác bỏ.
+    display_answer: "Chính phủ sẽ soạn lại bản sửa đổi dựa trên ý kiến thu thập được ở buổi lấy ý kiến công chúng."
+
+  - key: ko:exercise:le-law-translate-cheobeol
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-cheobeol
+    prompt:
+      source_text: Người vi phạm luật này sẽ bị xử phạt nặng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "이 법을 위반한 사람은 무거운 처벌을 받는다."
+        - "이 법을 위반한 사람은 무거운 처벌을 받게 된다."
+        - "이 법을 위반한 사람은 무거운 처벌을 받습니다."
+        - "이 법을 위반한 사람은 무거운 처벌을 받게 됩니다."
+        - "이 법을 위반한 사람은 엄중한 처벌을 받는다."
+        - "이 법을 위반한 사람은 엄중한 처벌을 받게 된다."
+        - "이 법을 위반한 사람은 엄중한 처벌을 받습니다."
+        - "이 법을 위반한 사람은 엄중한 처벌을 받게 됩니다."
+        - "이 법을 위반한 사람은 강력한 처벌을 받는다."
+        - "이 법을 위반한 사람은 강력한 처벌을 받게 된다."
+        - "이 법을 위반한 사람은 강력한 처벌을 받습니다."
+        - "이 법을 위반한 사람은 강력한 처벌을 받게 됩니다."
+        - "이 법을 위반한 자는 무거운 처벌을 받는다."
+        - "이 법을 위반한 자는 무거운 처벌을 받게 된다."
+        - "이 법을 위반한 자는 무거운 처벌을 받습니다."
+        - "이 법을 위반한 자는 무거운 처벌을 받게 됩니다."
+        - "이 법을 위반한 자는 엄중한 처벌을 받는다."
+        - "이 법을 위반한 자는 엄중한 처벌을 받게 된다."
+        - "이 법을 위반한 자는 엄중한 처벌을 받습니다."
+        - "이 법을 위반한 자는 엄중한 처벌을 받게 됩니다."
+        - "이 법을 위반한 자는 강력한 처벌을 받는다."
+        - "이 법을 위반한 자는 강력한 처벌을 받게 된다."
+        - "이 법을 위반한 자는 강력한 처벌을 받습니다."
+        - "이 법을 위반한 자는 강력한 처벌을 받게 됩니다."
+        - "이 법을 위반하는 사람은 무거운 처벌을 받는다."
+        - "이 법을 위반하는 사람은 무거운 처벌을 받게 된다."
+        - "이 법을 위반하는 사람은 무거운 처벌을 받습니다."
+        - "이 법을 위반하는 사람은 무거운 처벌을 받게 됩니다."
+        - "이 법을 위반하는 사람은 엄중한 처벌을 받는다."
+        - "이 법을 위반하는 사람은 엄중한 처벌을 받게 된다."
+        - "이 법을 위반하는 사람은 엄중한 처벌을 받습니다."
+        - "이 법을 위반하는 사람은 엄중한 처벌을 받게 됩니다."
+        - "이 법을 위반하는 사람은 강력한 처벌을 받는다."
+        - "이 법을 위반하는 사람은 강력한 처벌을 받게 된다."
+        - "이 법을 위반하는 사람은 강력한 처벌을 받습니다."
+        - "이 법을 위반하는 사람은 강력한 처벌을 받게 됩니다."
+        - "이 법을 위반하는 자는 무거운 처벌을 받는다."
+        - "이 법을 위반하는 자는 무거운 처벌을 받게 된다."
+        - "이 법을 위반하는 자는 무거운 처벌을 받습니다."
+        - "이 법을 위반하는 자는 무거운 처벌을 받게 됩니다."
+        - "이 법을 위반하는 자는 엄중한 처벌을 받는다."
+        - "이 법을 위반하는 자는 엄중한 처벌을 받게 된다."
+        - "이 법을 위반하는 자는 엄중한 처벌을 받습니다."
+        - "이 법을 위반하는 자는 엄중한 처벌을 받게 됩니다."
+        - "이 법을 위반하는 자는 강력한 처벌을 받는다."
+        - "이 법을 위반하는 자는 강력한 처벌을 받게 된다."
+        - "이 법을 위반하는 자는 강력한 처벌을 받습니다."
+        - "이 법을 위반하는 자는 강력한 처벌을 받게 됩니다."
+        - "이 법을 위반한 사람은 엄하게 처벌된다."
+        - "이 법을 위반한 사람은 엄하게 처벌받는다."
+        - "이 법을 위반한 사람은 엄하게 처벌됩니다."
+        - "이 법을 위반한 사람은 엄하게 처벌받습니다."
+        - "이 법을 위반한 사람은 무겁게 처벌된다."
+        - "이 법을 위반한 사람은 무겁게 처벌받는다."
+        - "이 법을 위반한 사람은 무겁게 처벌됩니다."
+        - "이 법을 위반한 사람은 무겁게 처벌받습니다."
+        - "이 법을 위반한 자는 엄하게 처벌된다."
+        - "이 법을 위반한 자는 엄하게 처벌받는다."
+        - "이 법을 위반한 자는 엄하게 처벌됩니다."
+        - "이 법을 위반한 자는 엄하게 처벌받습니다."
+        - "이 법을 위반한 자는 무겁게 처벌된다."
+        - "이 법을 위반한 자는 무겁게 처벌받는다."
+        - "이 법을 위반한 자는 무겁게 처벌됩니다."
+        - "이 법을 위반한 자는 무겁게 처벌받습니다."
+        - "이 법을 위반하는 사람은 엄하게 처벌된다."
+        - "이 법을 위반하는 사람은 엄하게 처벌받는다."
+        - "이 법을 위반하는 사람은 엄하게 처벌됩니다."
+        - "이 법을 위반하는 사람은 엄하게 처벌받습니다."
+        - "이 법을 위반하는 사람은 무겁게 처벌된다."
+        - "이 법을 위반하는 사람은 무겁게 처벌받는다."
+        - "이 법을 위반하는 사람은 무겁게 처벌됩니다."
+        - "이 법을 위반하는 사람은 무겁게 처벌받습니다."
+        - "이 법을 위반하는 자는 엄하게 처벌된다."
+        - "이 법을 위반하는 자는 엄하게 처벌받는다."
+        - "이 법을 위반하는 자는 엄하게 처벌됩니다."
+        - "이 법을 위반하는 자는 엄하게 처벌받습니다."
+        - "이 법을 위반하는 자는 무겁게 처벌된다."
+        - "이 법을 위반하는 자는 무겁게 처벌받는다."
+        - "이 법을 위반하는 자는 무겁게 처벌됩니다."
+        - "이 법을 위반하는 자는 무겁게 처벌받습니다."
+    known_wrong:
+      - answer: 이 법을 위반한 사람은 무거운 처벌을 한다.
+        feedback_vi: Người vi phạm là người chịu phạt - 처벌을 받다, không phải 처벌을 하다.
+        error_tag: active_passive
+      - answer: 이 법에 위반한 사람은 무거운 처벌을 받는다.
+        feedback_vi: 위반하다 là ngoại động từ - 법을 위반하다, không dùng 에.
+        error_tag: particle
+      - answer: 이 법을 침해한 사람은 무거운 처벌을 받는다.
+        feedback_vi: Luật thì 위반 (vi phạm); 침해 dùng cho quyền lợi bị xâm phạm.
+        error_tag: wiban_vs_chimhae
+    explanation:
+      vi: 법을 위반하다 (vi phạm luật) + 처벌을 받다 / 처벌되다 (bị xử phạt). Văn bản luật hay dùng 자 (người) thay cho 사람 - 위반한 자.
+    display_answer: 이 법을 위반한 사람은 무거운 처벌을 받는다.

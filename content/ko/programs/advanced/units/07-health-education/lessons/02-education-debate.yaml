@@ -1,0 +1,522 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:education-debate
+order_index: 2
+level: topik6
+title:
+  vi: Học thêm, thi cử và tự học - N 나름이다, -는 둥 마는 둥, -(으)ㄹ락 말락
+objectives:
+  - vi: Nói "còn tuỳ vào..." bằng N 나름이다 / V-기 나름이다, phân biệt với 나름대로.
+  - vi: Miêu tả việc làm qua loa bằng -는 둥 마는 둥 và trạng thái suýt soát bằng -(으)ㄹ락 말락.
+  - vi: Dùng từ vựng tranh luận giáo dục - 사교육 · 공교육, 입시 경쟁, 주입식 교육, 자기 주도 학습, 선행 학습, 학업 성취도, 적성.
+estimated_minutes: 25
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ko:lesson:health-psychology]
+items:
+  - item: ko:item:he-gram-nareumida
+  - item: ko:item:he-gram-neun-dung-maneun-dung
+  - item: ko:item:he-gram-l-rak-mallak
+  - item: ko:item:he-sagyoyuk
+  - item: ko:item:he-ipsi-gyeongjaeng
+  - item: ko:item:he-juipsik-gyoyuk
+  - item: ko:item:he-jagi-judo-hakseup
+  - item: ko:item:he-seonhaeng-hakseup
+  - item: ko:item:he-hageop-seongchwido
+  - item: ko:item:he-jeokseong
+  - item: ko:item:gp-e-dallyeo-itda
+    role: reuse
+  - item: ko:item:gram-eul-ppeonhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Giáo dục là đề tài tranh luận "quốc dân" ở Hàn Quốc - học thêm, cạnh tranh thi đại học, học trước chương trình. Bài này cho bạn từ vựng để hiểu các cuộc tranh luận đó và ba cấu trúc giàu hình ảnh hay gặp trong hội thoại, tuỳ bút.
+  - type: explain
+    text:
+      vi: N 나름이다 / V-기 나름이다 nghĩa là "còn tuỳ vào N / cách làm" - 사람 나름이다 (tuỳ người), 생각하기 나름이다 (tuỳ cách nghĩ). Tiếng Việt nói "tuỳ vào" nên người Việt hay thêm 에 (사람에 나름이다) - nhưng 나름 đứng ngay sau danh từ, không cần trợ từ.
+  - type: explain
+    text:
+      vi: V-는 둥 마는 둥 là "làm cũng như không" - 먹는 둥 마는 둥, 듣는 둥 마는 둥; người đó có làm, nhưng hời hợt. V-(으)ㄹ락 말락 là trạng thái lơ lửng ở ranh giới - 닿을락 말락 (suýt chạm), 들릴락 말락 (nghe lúc được lúc không).
+  - type: explain
+    text:
+      vi: Từ vựng giáo dục cần phân biệt kỹ - 사교육 là học ngoài trường (학원, 과외), không phải "trường tư" (사립 학교 vẫn thuộc 공교육); 선행 학습 là học vượt trước chương trình rất xa, khác 예습 (xem trước bài hôm sau).
+  - type: deep_explain
+    text:
+      vi: Cách chia - N 나름이다 gắn thẳng vào danh từ; động từ phải danh từ hoá -기 (노력하기 나름이다). 마는 là định ngữ của 말다 (ㄹ rơi trước ㄴ) nên không viết 말는. -(으)ㄹ락 말락 - gốc có patchim thêm 을락 (닿을락), không patchim hoặc gốc ㄹ thêm ㄹ락 (들릴락, 열락). Cả hai cấu trúc sau thường kết bằng 하다 (말락 했다, 마는 둥 했다).
+  - type: example
+    target: 똑같은 교재로 공부해도 성적은 복습하기 나름이다.
+    target_lang: ko
+    translation:
+      vi: Dù học cùng một giáo trình, điểm số còn tuỳ vào cách ôn bài.
+    note:
+      vi: V-기 나름이다 - kết quả phụ thuộc vào cách làm.
+  - type: example
+    target: 밤늦게까지 학원에 있었던 아이는 숙제를 하는 둥 마는 둥 하다가 책상에 엎드려 잠들었다.
+    target_lang: ko
+    translation:
+      vi: Đứa trẻ ở trung tâm học thêm đến tận khuya làm bài tập qua loa rồi gục xuống bàn ngủ thiếp đi.
+    note:
+      vi: -는 둥 마는 둥 하다가 - làm hời hợt rồi chuyển sang việc khác.
+  - type: example
+    target: 수능 날 아침, 시험장 문이 닫힐락 말락 할 때 겨우 도착했다.
+    target_lang: ko
+    translation:
+      vi: Sáng ngày thi đại học, tôi đến nơi vừa sát lúc cổng điểm thi sắp đóng.
+    note:
+      vi: -(으)ㄹ락 말락 - khoảnh khắc lơ lửng ở ranh giới.
+  - type: example
+    target: 입시 경쟁이 치열해지면서 초등학생 때부터 선행 학습을 시키는 가정이 늘었다.
+    target_lang: ko
+    translation:
+      vi: Cạnh tranh tuyển sinh ngày càng gay gắt nên số gia đình cho con học trước chương trình từ tiểu học đã tăng.
+    note:
+      vi: 선행 학습을 시키다 - cha mẹ là người cho con học.
+  - type: example
+    target: 자기 주도 학습 능력이 높은 학생일수록 사교육 의존도가 낮다는 조사 결과가 있다.
+    target_lang: ko
+    translation:
+      vi: Có kết quả khảo sát cho thấy học sinh có năng lực tự học càng cao thì mức phụ thuộc vào học thêm càng thấp.
+    note:
+      vi: 의존도 = mức độ phụ thuộc; -(으)ㄹ수록 (càng... càng) bạn đã học.
+  - type: common_mistake
+    wrong: 성공은 노력에 나름이다.
+    right: 성공은 노력하기 나름이다.
+    target_lang: ko
+    note:
+      vi: 나름 không đi sau trợ từ 에. Dùng N 나름이다 (노력 나름이다) hoặc V-기 나름이다 (노력하기 나름이다).
+  - type: common_mistake
+    wrong: 그는 수업을 듣는 둥 말는 둥 했다.
+    right: 그는 수업을 듣는 둥 마는 둥 했다.
+    target_lang: ko
+    note:
+      vi: 말다 + -는 → 마는 (ㄹ rơi trước ㄴ). Đây là lỗi chính tả rất dễ thấy.
+  - type: common_mistake
+    wrong: 사립 학교에 다니는 것은 사교육이다.
+    right: 학원에 다니는 것은 사교육이다.
+    target_lang: ko
+    note:
+      vi: 사립 학교 (trường tư thục) vẫn là giáo dục chính quy - 공교육. 사교육 là học ngoài trường như 학원, 과외.
+  - type: summary
+    points:
+      - vi: N 나름이다 · V-기 나름이다 = còn tuỳ vào...; 나름대로 = theo cách riêng; văn viết - N에 달려 있다.
+      - vi: V-는 둥 마는 둥 (하다) = làm qua loa, nửa vời (마는, không phải 말는).
+      - vi: V-(으)ㄹ락 말락 (하다) = suýt soát, lơ lửng ở ranh giới; khác -(으)ㄹ 뻔했다 (suýt xảy ra).
+      - vi: 사교육 (học ngoài trường) ≠ 사립 학교; 선행 학습 (học vượt trước) ≠ 예습 (xem trước bài).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:he-edu-mcq-nareum
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-gram-nareumida
+    prompt:
+      stem: "교재가 아무리 좋아도 성과는 활용하기 나름이다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k7d, text: "Giáo trình có tốt đến đâu thì kết quả vẫn còn tuỳ vào cách sử dụng.", lang: vi }
+        - { id: s2m, text: "Giáo trình tốt nên kết quả chắc chắn sẽ tốt.", lang: vi }
+        - { id: w5b, text: "Giáo trình đạt kết quả tốt theo cách riêng của nó.", lang: vi }
+        - { id: o9h, text: "Giáo trình không tốt nên phải tự tìm cách học.", lang: vi }
+    answer:
+      correct_option_id: k7d
+    explanation:
+      vi: V-기 나름이다 = còn tuỳ vào (cách làm) - kết quả không cố định. "Theo cách riêng" là nghĩa của 나름대로, một cụm khác; câu cũng không nói giáo trình kém.
+    display_answer: "Giáo trình có tốt đến đâu thì kết quả vẫn còn tuỳ vào cách sử dụng."
+
+  - key: ko:exercise:he-edu-listen-dung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-gram-neun-dung-maneun-dung
+    prompt:
+      audio_asset_id: null
+      fallback_text: 아이는 선생님 말씀을 듣는 둥 마는 둥 하며 창밖만 바라보았다.
+      options:
+        - { id: h4t, text: "Đứa trẻ nghe cô giáo nói câu được câu chăng, chỉ chăm chăm nhìn ra ngoài cửa sổ.", lang: vi }
+        - { id: c8f, text: "Đứa trẻ chăm chú lắng nghe từng lời cô giáo.", lang: vi }
+        - { id: z1n, text: "Đứa trẻ vừa nghe cô giáo vừa ghi chép cẩn thận.", lang: vi }
+        - { id: r6a, text: "Cô giáo không nói gì nên đứa trẻ nhìn ra cửa sổ.", lang: vi }
+    answer:
+      correct_option_id: h4t
+    explanation:
+      vi: -는 둥 마는 둥 = làm cũng như không - đứa trẻ có nghe nhưng hời hợt, tâm trí ở ngoài cửa sổ (창밖만). Không có ý chăm chú hay ghi chép.
+    display_answer: "Đứa trẻ nghe cô giáo nói câu được câu chăng, chỉ chăm chăm nhìn ra ngoài cửa sổ."
+
+  - key: ko:exercise:he-edu-mcq-rak
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-l-rak-mallak
+    prompt:
+      stem: "Chọn câu dùng đúng hình thức -(으)ㄹ락 말락."
+      stem_lang: vi
+      options:
+        - { id: b3e, text: "키가 작아서 선반 맨 위 칸에 손이 닿을락 말락 했다.", lang: ko }
+        - { id: y7q, text: "키가 작아서 선반 맨 위 칸에 손이 닿는락 말락 했다.", lang: ko }
+        - { id: l0s, text: "키가 작아서 선반 맨 위 칸에 손이 닿을락 마는락 했다.", lang: ko }
+        - { id: f2v, text: "키가 작아서 선반 맨 위 칸에 손이 닿으락 말락 했다.", lang: ko }
+    answer:
+      correct_option_id: b3e
+    explanation:
+      vi: 닿다 có patchim nên thêm 을락 - 닿을락 말락. Không dùng định ngữ -는 (닿는락), và vế sau luôn là 말락 (gốc 말다), không phải 마는락.
+    display_answer: "키가 작아서 선반 맨 위 칸에 손이 닿을락 말락 했다."
+
+  - key: ko:exercise:he-edu-fill-seonhaeng
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-seonhaeng-hakseup
+    prompt:
+      template: "초등학생에게 중학교 수학을 미리 가르치는 지나친 {{b1}} 학습이 사회 문제가 되고 있다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - Học vượt trước chương trình (先行 - tiên hành).
+        - 선...
+    answer:
+      blanks:
+        b1: [선행]
+    known_wrong:
+      - answer: 예습
+        feedback_vi: 예습 là xem trước bài của buổi sau - thói quen tốt, không phải vấn đề xã hội. Học vượt trước nhiều năm là 선행 학습.
+        error_tag: seonhaeng_vs_yeseup
+      - answer: 자기 주도
+        feedback_vi: 자기 주도 학습 là học tự chủ - không liên quan đến việc dạy vượt trước chương trình.
+        error_tag: vocab_meaning
+    explanation:
+      vi: Dạy toán cấp hai cho học sinh tiểu học là học vượt trước rất xa - 선행 학습. Từ 지나친 (quá mức) và 사회 문제 cho thấy đây là chuyện đáng lo, không phải 예습.
+    display_answer: 초등학생에게 중학교 수학을 미리 가르치는 지나친 선행 학습이 사회 문제가 되고 있다.
+
+  - key: ko:exercise:he-edu-mcq-sagyoyuk
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-sagyoyuk
+    prompt:
+      stem: "Từ nào chỉ việc học ở trung tâm, học với gia sư ngoài nhà trường?"
+      stem_lang: vi
+      options:
+        - { id: n6w, text: "사교육", lang: ko }
+        - { id: e1c, text: "공교육", lang: ko }
+        - { id: j9r, text: "사립 학교", lang: ko }
+        - { id: u4k, text: "주입식 교육", lang: ko }
+    answer:
+      correct_option_id: n6w
+    explanation:
+      vi: 사교육 (私敎育) = giáo dục ngoài trường (학원, 과외). 공교육 là giáo dục trong hệ thống trường; 사립 학교 là trường tư thục nhưng vẫn thuộc 공교육; 주입식 교육 là phương pháp nhồi nhét.
+    display_answer: "사교육"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:he-edu-fill-gi-nareum
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-nareumida
+    prompt:
+      template: "같은 시간을 공부해도 결과는 집중하{{b1}} 나름이다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [기]
+    known_wrong:
+      - answer: 는
+        feedback_vi: Động từ trước 나름 phải danh từ hoá bằng -기 - 집중하기 나름이다.
+        error_tag: nareum_form
+      - answer: 기에
+        feedback_vi: 나름 không đi sau trợ từ 에. Viết 집중하기 나름이다.
+        error_tag: nareum_form
+    explanation:
+      vi: V-기 나름이다 - 집중하다 → 집중하기 나름이다 "tuỳ vào việc tập trung". Với danh từ thì gắn thẳng - 집중력 나름이다.
+    display_answer: 같은 시간을 공부해도 결과는 집중하기 나름이다.
+
+  - key: ko:exercise:he-edu-fill-dung-form
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-neun-dung-maneun-dung
+    prompt:
+      template: "알람을 못 듣고 늦잠을 자서 아침밥을 먹{{b1}} 둥 {{b2}} 둥 하고 집을 나섰다."
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [는]
+        b2: [마는]
+    known_wrong:
+      - answer: 말는
+        feedback_vi: 말다 + -는 → 마는 (ㄹ rơi trước ㄴ).
+        error_tag: l_drop
+      - answer: 은
+        feedback_vi: Cấu trúc dùng định ngữ hiện tại -는 cho cả hai vế - 먹는 둥 마는 둥.
+        error_tag: dung_form
+    explanation:
+      vi: V-는 둥 마는 둥 - cả hai vế đều là định ngữ -는; vế sau là 말다 → 마는. Thì quá khứ đặt ở 하다 cuối câu (하고 나섰다).
+    display_answer: 알람을 못 듣고 늦잠을 자서 아침밥을 먹는 둥 마는 둥 하고 집을 나섰다.
+
+  - key: ko:exercise:he-edu-translate-nareum
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-nareumida
+    prompt:
+      source_text: Học thêm có hiệu quả hay không còn tuỳ vào từng học sinh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "사교육이 효과가 있는지는 학생 나름이다."
+        - "사교육이 효과가 있는지는 학생 나름입니다."
+        - "사교육이 효과가 있는지는 학생 나름이에요."
+        - "사교육이 효과가 있는지는 학생마다 다르다."
+        - "사교육이 효과가 있는지는 학생에 달려 있다."
+        - "사교육이 효과가 있는지 학생 나름이다."
+        - "사교육이 효과가 있는지 학생 나름입니다."
+        - "사교육이 효과가 있는지 학생 나름이에요."
+        - "사교육이 효과가 있는지 학생마다 다르다."
+        - "사교육이 효과가 있는지 학생에 달려 있다."
+        - "학원이 효과가 있는지는 학생 나름이다."
+        - "학원이 효과가 있는지는 학생 나름입니다."
+        - "학원이 효과가 있는지는 학생 나름이에요."
+        - "학원이 효과가 있는지는 학생마다 다르다."
+        - "학원이 효과가 있는지는 학생에 달려 있다."
+        - "학원이 효과가 있는지 학생 나름이다."
+        - "학원이 효과가 있는지 학생 나름입니다."
+        - "학원이 효과가 있는지 학생 나름이에요."
+        - "학원이 효과가 있는지 학생마다 다르다."
+        - "학원이 효과가 있는지 학생에 달려 있다."
+        - "과외가 효과가 있는지는 학생 나름이다."
+        - "과외가 효과가 있는지는 학생 나름입니다."
+        - "과외가 효과가 있는지는 학생 나름이에요."
+        - "과외가 효과가 있는지는 학생마다 다르다."
+        - "과외가 효과가 있는지는 학생에 달려 있다."
+        - "과외가 효과가 있는지 학생 나름이다."
+        - "과외가 효과가 있는지 학생 나름입니다."
+        - "과외가 효과가 있는지 학생 나름이에요."
+        - "과외가 효과가 있는지 학생마다 다르다."
+        - "과외가 효과가 있는지 학생에 달려 있다."
+        - "사교육의 효과는 학생 나름이다."
+        - "사교육의 효과는 학생 나름입니다."
+        - "사교육의 효과는 학생 나름이에요."
+        - "학원의 효과는 학생 나름이다."
+        - "학원의 효과는 학생 나름입니다."
+        - "학원의 효과는 학생 나름이에요."
+    known_wrong:
+      - answer: 사교육이 효과가 있는지는 학생에 나름이다.
+        feedback_vi: 나름 đứng ngay sau danh từ, không có 에 - 학생 나름이다.
+        error_tag: nareum_form
+      - answer: 사교육이 효과가 있는지는 학생 나름대로이다.
+        feedback_vi: 나름대로 là "theo cách riêng". Ý "còn tuỳ vào" là 나름이다.
+        error_tag: nareum_vs_nareumdaero
+    explanation:
+      vi: Ý "tuỳ vào học sinh" =학생 나름이다 (khẩu ngữ, viết đều được) hoặc 학생에 달려 있다 (văn viết). Mệnh đề nghi vấn -는지는 làm chủ đề "có hiệu quả hay không".
+    display_answer: 사교육이 효과가 있는지는 학생 나름이다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:he-edu-translate-seonhaeng-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-seonhaeng-hakseup
+    prompt:
+      source_text: 과도한 선행 학습은 오히려 아이의 학습 의욕을 꺾을 수 있다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Học trước chương trình quá mức có thể ngược lại làm giảm động lực học tập của trẻ."
+        - "Học trước chương trình quá mức có thể ngược lại làm giảm động lực học tập của các em."
+        - "Học trước chương trình quá mức có thể ngược lại làm giảm hứng thú học tập của trẻ."
+        - "Học trước chương trình quá mức có thể ngược lại làm giảm hứng thú học tập của các em."
+        - "Học trước chương trình quá mức có thể ngược lại làm thui chột động lực học tập của trẻ."
+        - "Học trước chương trình quá mức có thể ngược lại làm thui chột động lực học tập của các em."
+        - "Học trước chương trình quá mức có thể ngược lại làm thui chột hứng thú học tập của trẻ."
+        - "Học trước chương trình quá mức có thể ngược lại làm thui chột hứng thú học tập của các em."
+        - "Học trước chương trình quá mức có thể ngược lại dập tắt động lực học tập của trẻ."
+        - "Học trước chương trình quá mức có thể ngược lại dập tắt động lực học tập của các em."
+        - "Học trước chương trình quá mức có thể ngược lại dập tắt hứng thú học tập của trẻ."
+        - "Học trước chương trình quá mức có thể ngược lại dập tắt hứng thú học tập của các em."
+        - "Học trước chương trình quá mức có thể lại làm giảm động lực học tập của trẻ."
+        - "Học trước chương trình quá mức có thể lại làm giảm động lực học tập của các em."
+        - "Học trước chương trình quá mức có thể lại làm giảm hứng thú học tập của trẻ."
+        - "Học trước chương trình quá mức có thể lại làm giảm hứng thú học tập của các em."
+        - "Học trước chương trình quá mức có thể lại làm thui chột động lực học tập của trẻ."
+        - "Học trước chương trình quá mức có thể lại làm thui chột động lực học tập của các em."
+        - "Học trước chương trình quá mức có thể lại làm thui chột hứng thú học tập của trẻ."
+        - "Học trước chương trình quá mức có thể lại làm thui chột hứng thú học tập của các em."
+        - "Học trước chương trình quá mức có thể lại dập tắt động lực học tập của trẻ."
+        - "Học trước chương trình quá mức có thể lại dập tắt động lực học tập của các em."
+        - "Học trước chương trình quá mức có thể lại dập tắt hứng thú học tập của trẻ."
+        - "Học trước chương trình quá mức có thể lại dập tắt hứng thú học tập của các em."
+        - "Học trước quá mức có thể ngược lại làm giảm động lực học tập của trẻ."
+        - "Học trước quá mức có thể ngược lại làm giảm động lực học tập của các em."
+        - "Học trước quá mức có thể ngược lại làm giảm hứng thú học tập của trẻ."
+        - "Học trước quá mức có thể ngược lại làm giảm hứng thú học tập của các em."
+        - "Học trước quá mức có thể ngược lại làm thui chột động lực học tập của trẻ."
+        - "Học trước quá mức có thể ngược lại làm thui chột động lực học tập của các em."
+        - "Học trước quá mức có thể ngược lại làm thui chột hứng thú học tập của trẻ."
+        - "Học trước quá mức có thể ngược lại làm thui chột hứng thú học tập của các em."
+        - "Học trước quá mức có thể ngược lại dập tắt động lực học tập của trẻ."
+        - "Học trước quá mức có thể ngược lại dập tắt động lực học tập của các em."
+        - "Học trước quá mức có thể ngược lại dập tắt hứng thú học tập của trẻ."
+        - "Học trước quá mức có thể ngược lại dập tắt hứng thú học tập của các em."
+        - "Học trước quá mức có thể lại làm giảm động lực học tập của trẻ."
+        - "Học trước quá mức có thể lại làm giảm động lực học tập của các em."
+        - "Học trước quá mức có thể lại làm giảm hứng thú học tập của trẻ."
+        - "Học trước quá mức có thể lại làm giảm hứng thú học tập của các em."
+        - "Học trước quá mức có thể lại làm thui chột động lực học tập của trẻ."
+        - "Học trước quá mức có thể lại làm thui chột động lực học tập của các em."
+        - "Học trước quá mức có thể lại làm thui chột hứng thú học tập của trẻ."
+        - "Học trước quá mức có thể lại làm thui chột hứng thú học tập của các em."
+        - "Học trước quá mức có thể lại dập tắt động lực học tập của trẻ."
+        - "Học trước quá mức có thể lại dập tắt động lực học tập của các em."
+        - "Học trước quá mức có thể lại dập tắt hứng thú học tập của trẻ."
+        - "Học trước quá mức có thể lại dập tắt hứng thú học tập của các em."
+        - "Việc học trước chương trình quá mức ngược lại có thể làm giảm động lực học tập của trẻ."
+        - "Việc học trước chương trình quá mức ngược lại có thể làm giảm hứng thú học tập của trẻ."
+        - "Việc học trước chương trình quá mức ngược lại có thể làm thui chột động lực học tập của trẻ."
+        - "Việc học trước chương trình quá mức ngược lại có thể làm thui chột hứng thú học tập của trẻ."
+        - "Việc học trước chương trình quá mức lại có thể làm giảm động lực học tập của trẻ."
+        - "Việc học trước chương trình quá mức lại có thể làm giảm hứng thú học tập của trẻ."
+        - "Việc học trước chương trình quá mức lại có thể làm thui chột động lực học tập của trẻ."
+        - "Việc học trước chương trình quá mức lại có thể làm thui chột hứng thú học tập của trẻ."
+        - "Việc học trước quá mức ngược lại có thể làm giảm động lực học tập của trẻ."
+        - "Việc học trước quá mức ngược lại có thể làm giảm hứng thú học tập của trẻ."
+        - "Việc học trước quá mức ngược lại có thể làm thui chột động lực học tập của trẻ."
+        - "Việc học trước quá mức ngược lại có thể làm thui chột hứng thú học tập của trẻ."
+        - "Việc học trước quá mức lại có thể làm giảm động lực học tập của trẻ."
+        - "Việc học trước quá mức lại có thể làm giảm hứng thú học tập của trẻ."
+        - "Việc học trước quá mức lại có thể làm thui chột động lực học tập của trẻ."
+        - "Việc học trước quá mức lại có thể làm thui chột hứng thú học tập của trẻ."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Học trước chương trình quá mức giúp trẻ có thêm động lực học tập.
+        feedback_vi: Ngược nghĩa - 의욕을 꺾다 là làm thui chột động lực, không phải tăng thêm; 오히려 báo hiệu kết quả trái mong đợi.
+        error_tag: meaning_reversed
+      - answer: Xem trước bài hôm sau có thể làm giảm động lực học tập của trẻ.
+        feedback_vi: 선행 학습 là học vượt trước chương trình rất xa; "xem trước bài hôm sau" là 예습.
+        error_tag: seonhaeng_vs_yeseup
+    explanation:
+      vi: 과도한 = quá mức; 오히려 = ngược lại (trái với mong đợi của phụ huynh); 의욕을 꺾다 = bẻ gãy, làm thui chột động lực.
+    display_answer: Học trước chương trình quá mức có thể ngược lại làm giảm động lực học tập của trẻ.
+
+  - key: ko:exercise:he-edu-order-rak
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gram-l-rak-mallak
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Giọng cô ấy nhỏ đến mức nghe lúc được lúc không.\""
+      tokens:
+        - { id: m8a, text: 할 }
+        - { id: d4y, text: 말고 }
+        - { id: t2o, text: 목소리는 }
+        - { id: x6e, text: 말락 }
+        - { id: g9s, text: 작았다 }
+        - { id: q1j, text: 그녀의 }
+        - { id: v3k, text: 들릴락 }
+        - { id: i5w, text: 만큼 }
+    answer:
+      orders:
+        - [q1j, t2o, v3k, x6e, m8a, i5w, g9s]
+    explanation:
+      vi: V-(으)ㄹ락 말락 하다 + -(으)ㄹ 만큼 (đến mức). 들리다 không patchim nên thêm ㄹ락 - 들릴락. 말고 là token nhiễu; vế sau luôn là 말락.
+    display_answer: 그녀의 목소리는 들릴락 말락 할 만큼 작았다.
+
+  - key: ko:exercise:he-edu-mcq-parent
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:he-jagi-judo-hakseup
+    prompt:
+      stem: "Phụ huynh nói - \"학원에 보내야 성적이 오르죠.\" Giáo viên muốn đáp lại rằng học thêm có ích, nhưng điểm số còn tuỳ vào việc trẻ tự học. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a6p, text: "학원도 도움이 되지만 결국 성적은 아이가 스스로 공부하기 나름입니다.", lang: ko }
+        - { id: o3r, text: "학원도 도움이 되지만 결국 성적은 아이가 스스로 공부하는 나름입니다.", lang: ko }
+        - { id: k8m, text: "학원도 도움이 되지만 결국 성적은 아이가 스스로 공부할락 말락입니다.", lang: ko }
+        - { id: s5f, text: "학원도 도움이 되지만 결국 성적은 아이가 스스로 공부하는 둥 마는 둥입니다.", lang: ko }
+    answer:
+      correct_option_id: a6p
+    explanation:
+      vi: Ý "còn tuỳ vào việc tự học" = 공부하기 나름이다 (động từ + -기). -는 나름 sai hình thức; -(으)ㄹ락 말락 và -는 둥 마는 둥 là miêu tả, không diễn đạt sự phụ thuộc và cũng không đứng trước 입니다 như vậy.
+    display_answer: "학원도 도움이 되지만 결국 성적은 아이가 스스로 공부하기 나름입니다."
+
+  - key: ko:exercise:he-edu-translate-ipsi
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-ipsi-gyeongjaeng
+    prompt:
+      source_text: Cạnh tranh tuyển sinh càng gay gắt thì gánh nặng chi phí học thêm càng lớn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "입시 경쟁이 치열할수록 사교육비 부담이 커진다."
+        - "입시 경쟁이 치열할수록 사교육비 부담이 커집니다."
+        - "입시 경쟁이 치열할수록 사교육비 부담이 커져요."
+        - "입시 경쟁이 치열할수록 사교육비 부담이 늘어난다."
+        - "입시 경쟁이 치열할수록 사교육비 부담이 늘어납니다."
+        - "입시 경쟁이 치열할수록 사교육비 부담도 커진다."
+        - "입시 경쟁이 치열할수록 사교육비 부담도 커집니다."
+        - "입시 경쟁이 치열할수록 사교육비 부담도 커져요."
+        - "입시 경쟁이 치열할수록 사교육비 부담도 늘어난다."
+        - "입시 경쟁이 치열할수록 사교육비 부담도 늘어납니다."
+        - "입시 경쟁이 심할수록 사교육비 부담이 커진다."
+        - "입시 경쟁이 심할수록 사교육비 부담이 커집니다."
+        - "입시 경쟁이 심할수록 사교육비 부담이 커져요."
+        - "입시 경쟁이 심할수록 사교육비 부담이 늘어난다."
+        - "입시 경쟁이 심할수록 사교육비 부담이 늘어납니다."
+        - "입시 경쟁이 심할수록 사교육비 부담도 커진다."
+        - "입시 경쟁이 심할수록 사교육비 부담도 커집니다."
+        - "입시 경쟁이 심할수록 사교육비 부담도 커져요."
+        - "입시 경쟁이 심할수록 사교육비 부담도 늘어난다."
+        - "입시 경쟁이 심할수록 사교육비 부담도 늘어납니다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담이 커진다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담이 커집니다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담이 커져요."
+        - "입시 경쟁이 치열해질수록 사교육비 부담이 늘어난다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담이 늘어납니다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담도 커진다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담도 커집니다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담도 커져요."
+        - "입시 경쟁이 치열해질수록 사교육비 부담도 늘어난다."
+        - "입시 경쟁이 치열해질수록 사교육비 부담도 늘어납니다."
+        - "입시 경쟁이 심해질수록 사교육비 부담이 커진다."
+        - "입시 경쟁이 심해질수록 사교육비 부담이 커집니다."
+        - "입시 경쟁이 심해질수록 사교육비 부담이 커져요."
+        - "입시 경쟁이 심해질수록 사교육비 부담이 늘어난다."
+        - "입시 경쟁이 심해질수록 사교육비 부담이 늘어납니다."
+        - "입시 경쟁이 심해질수록 사교육비 부담도 커진다."
+        - "입시 경쟁이 심해질수록 사교육비 부담도 커집니다."
+        - "입시 경쟁이 심해질수록 사교육비 부담도 커져요."
+        - "입시 경쟁이 심해질수록 사교육비 부담도 늘어난다."
+        - "입시 경쟁이 심해질수록 사교육비 부담도 늘어납니다."
+    known_wrong:
+      - answer: 입시 경쟁이 치열할수록 공교육비 부담이 커진다.
+        feedback_vi: Chi phí học thêm là 사교육비; 공교육 là giáo dục trong trường.
+        error_tag: sagyoyuk_vs_gonggyoyuk
+      - answer: 입시 경쟁이 치열하는수록 사교육비 부담이 커진다.
+        feedback_vi: -(으)ㄹ수록 gắn vào gốc - 치열할수록, không phải 치열하는수록.
+        error_tag: surok_form
+    explanation:
+      vi: Ý "càng... càng" =-(으)ㄹ수록; cạnh tranh "gay gắt" = 치열하다; "chi phí học thêm" = 사교육비. Văn viết dùng -ㄴ다 (커진다).
+    display_answer: 입시 경쟁이 치열할수록 사교육비 부담이 커진다.

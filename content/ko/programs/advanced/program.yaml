@@ -9,7 +9,7 @@ language: ko
 title:
   vi: Tiếng Hàn cao cấp (TOPIK 5-6)
 description:
-  vi: 'Chương trình TOPIK 5-6 gồm bốn unit - tin tức và vấn đề xã hội (văn viết -ㄴ다, liên kết trang trọng, mô tả số liệu); học thuật, văn hoá và lập luận (bố cục bài luận, thành ngữ, tục ngữ); khoa học, môi trường và công nghệ (câu bị động, nguyên nhân - kết quả, xu hướng); lịch sử, di sản, văn học và văn phong trang trọng (đuôi văn chương, quán ngữ, đọc hiểu thái độ người viết).'
+  vi: 'Chương trình TOPIK 5-6 gồm bảy unit - tin tức và vấn đề xã hội (văn viết -ㄴ다, liên kết trang trọng, mô tả số liệu); học thuật, văn hoá và lập luận (bố cục bài luận, thành ngữ, tục ngữ); khoa học, môi trường và công nghệ (câu bị động, nguyên nhân - kết quả, xu hướng); lịch sử, di sản, văn học và văn phong trang trọng (đuôi văn chương, quán ngữ, đọc hiểu thái độ người viết); kinh tế và thị trường lao động (lý do và hệ quả trong văn viết); pháp luật, chính trị và đạo đức xã hội (xã luận, phản bác, mức độ cực đoan); y tế, tâm lý, giáo dục và diễn đạt khi thuyết trình, tranh luận, kèm thành ngữ bốn chữ và tục ngữ mới.'
 kind: core
 goal_types: []
 level_from: topik5

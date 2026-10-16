@@ -1,0 +1,482 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:extreme-degree
+order_index: 3
+level: topik6
+title:
+  vi: Phẫn nộ và oan ức - mức độ cực điểm với -다 못해, -(으)ㄹ 지경이다, -기 그지없다 · 짝이 없다
+objectives:
+  - vi: Diễn tả việc chịu đựng đến giới hạn và mức độ cực điểm bằng V/A-다 못해.
+  - vi: Nói tình trạng tồi tệ gần như không chịu nổi bằng -(으)ㄹ 지경이다, phân biệt với -(으)ㄹ 정도로.
+  - vi: Chọn đúng A-기 그지없다 (trang trọng, cả nghĩa tốt lẫn xấu) và A-기 짝이 없다 (chê trách).
+  - vi: Dùng từ vựng cảm xúc xã hội - 피해자 · 가해자, 억울하다, 분노, 무책임하다, 뻔뻔하다, 어처구니없다.
+estimated_minutes: 25
+skills: [grammar, vocabulary, reading]
+prerequisites: [ko:lesson:lesser-evil]
+items:
+  - item: ko:item:le-gram-da-motae
+  - item: ko:item:le-gram-l-jigyeongida
+  - item: ko:item:le-gram-gi-geujieopda
+  - item: ko:item:le-gram-gi-jjagi-eopda
+  - item: ko:item:le-pihaeja-gahaeja
+  - item: ko:item:le-eogulhada
+  - item: ko:item:le-bunno
+  - item: ko:item:le-muchaegimhada
+  - item: ko:item:le-ppeonppeonhada
+  - item: ko:item:le-eocheoguni-eopda
+  - item: ko:item:ha-gram-eul-jeongdoro
+    role: reuse
+  - item: ko:item:le-cheobeol
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Tin về lừa đảo, tai nạn, hay một lời xin lỗi chiếu lệ thường kèm những câu cảm xúc rất mạnh. Bài này dạy bạn bốn cấu trúc mức độ cực điểm và bộ từ vựng để hiểu - và tự viết - những câu như vậy ở đúng văn phong.
+  - type: explain
+    text:
+      vi: V-다 못해 là "chịu (chờ, nghe) đến giới hạn rồi không nổi nữa nên..." - 기다리다 못해 직접 찾아갔다. A-다 못해 là "... đến cực điểm, sang hẳn trạng thái khác" - 안타깝다 못해 화가 났다 (tiếc đến mức thành giận). 못해 ở đây không có nghĩa "không thể làm".
+  - type: explain
+    text:
+      vi: -(으)ㄹ 지경이다 là "đến mức (sắp)..." cho tình trạng tồi tệ - 쓰러질 지경이다, 미칠 지경이다. Bạn đã học -(으)ㄹ 정도로 trung tính (có thể tốt), còn 지경 chỉ dùng cho điều xấu; câu 행복할 지경이다 nghe rất lạ.
+  - type: explain
+    text:
+      vi: A-기 그지없다 và A-기 짝이 없다 đều là "vô cùng, hết chỗ nói". 그지없다 trang trọng, dùng trong diễn văn, thư xin lỗi, cả nghĩa tốt (감사하기 그지없다) lẫn xấu; 짝이 없다 gần như luôn để chê (무례하기 짝이 없다).
+  - type: deep_explain
+    text:
+      vi: Vì sao người Việt hay sai - tiếng Việt chỉ cần "vô cùng, cực kỳ" cho mọi thứ, nên dễ dùng 짝이 없다 để cảm ơn hoặc dùng 지경 cho niềm vui. Hãy tự hỏi hai câu - văn bản có trang trọng không (그지없다), và mình đang khen hay chê (짝이 없다 chỉ để chê). Về chính tả - 그지없다, 어처구니없다, 참다못해 viết liền; 짝이 없다, 기다리다 못해, 할 지경 viết cách.
+  - type: example
+    target: 전세 사기 피해자들은 보증금을 돌려받을 길이 막막해 잠도 못 잘 지경이라고 호소했다.
+    target_lang: ko
+    translation:
+      vi: Các nạn nhân lừa đảo thuê nhà jeonse kêu rằng không biết lấy lại tiền đặt cọc bằng cách nào, đến mức không ngủ được.
+    note:
+      vi: -(으)ㄹ 지경이다 trong lời kể khổ, trích dẫn bằng -다고 호소했다.
+  - type: example
+    target: 피해자의 억울한 사연을 듣고 있자니 안타깝다 못해 분노가 치밀었다.
+    target_lang: ko
+    translation:
+      vi: Nghe câu chuyện oan ức của nạn nhân, tôi thương xót đến mức cơn giận bốc lên.
+    note:
+      vi: A-다 못해 - cảm xúc vượt ngưỡng và chuyển sang cảm xúc khác.
+  - type: example
+    target: 가해자가 반성은커녕 피해자를 탓하는 모습은 뻔뻔하기 짝이 없었다.
+    target_lang: ko
+    translation:
+      vi: Kẻ gây hại chẳng những không hối lỗi mà còn đổ lỗi cho nạn nhân - thật trơ trẽn hết chỗ nói.
+    note:
+      vi: -기 짝이 없다 để chê trách; -은커녕 bạn đã học ở unit 2.
+  - type: example
+    target: 이번 사고로 피해를 입으신 분들과 유가족께 사죄의 말씀을 드리며 송구하기 그지없습니다.
+    target_lang: ko
+    translation:
+      vi: Chúng tôi xin gửi lời tạ lỗi tới những người bị thiệt hại trong vụ tai nạn lần này và gia đình nạn nhân, và vô cùng hổ thẹn.
+    note:
+      vi: Thư xin lỗi chính thức - -기 그지없습니다 (trang trọng), không dùng 짝이 없다.
+  - type: example
+    target: 민원을 넣은 지 석 달이 지나도록 답이 없자 주민들은 기다리다 못해 직접 시청을 찾아갔다.
+    target_lang: ko
+    translation:
+      vi: Gửi khiếu nại đã ba tháng mà vẫn không có hồi âm, cư dân hết chờ nổi nên đã tự tìm đến toà thị chính.
+    note:
+      vi: V-다 못해 - hành động sau khi sự chịu đựng đã cạn.
+  - type: common_mistake
+    wrong: 합격 소식을 듣고 너무 행복할 지경이었다.
+    right: 합격 소식을 듣고 날아갈 듯이 행복했다.
+    target_lang: ko
+    note:
+      vi: -(으)ㄹ 지경이다 chỉ dùng cho tình trạng xấu. Niềm vui thì dùng -(으)ㄹ 정도로, -(으)ㄴ/는 듯이 hoặc chỉ cần 너무.
+  - type: common_mistake
+    wrong: 귀한 시간을 내어 와 주신 여러분께 감사하기 짝이 없습니다.
+    right: 귀한 시간을 내어 와 주신 여러분께 감사하기 그지없습니다.
+    target_lang: ko
+    note:
+      vi: 짝이 없다 mang sắc thái chê trách nên không dùng để cảm ơn. Lời cảm ơn trang trọng dùng 그지없다.
+  - type: common_mistake
+    wrong: 시험을 망쳐서 너무 억울해요.
+    right: 시험을 망쳐서 너무 속상해요.
+    target_lang: ko
+    note:
+      vi: 억울하다 cần yếu tố bất công (bị đổ oan, bị đối xử không công bằng). Tự làm bài không tốt thì là 속상하다.
+  - type: summary
+    points:
+      - vi: V-다 못해 = chịu đến giới hạn nên...; A-다 못해 = ... đến cực điểm, chuyển sang trạng thái khác.
+      - vi: V/A-(으)ㄹ 지경이다 = đến mức (sắp)... - chỉ cho điều xấu; -(으)ㄹ 정도로 trung tính.
+      - vi: A-기 그지없다 - trang trọng, cả tốt lẫn xấu · A-기 짝이 없다 - chê trách.
+      - vi: 피해자 (bị hại) ↔ 가해자 (gây hại); 억울하다 (oan) ≠ 속상하다 (buồn bực); 뻔뻔하다 (trơ trẽn) ≠ 당당하다 (đường hoàng).
+      - vi: Viết liền - 그지없다, 어처구니없다, 참다못해; viết cách - 짝이 없다, 기다리다 못해.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:le-degree-mcq-motae
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-da-motae
+    prompt:
+      stem: "위층의 발소리를 참다못해 결국 관리사무소에 정식으로 항의했다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s3v, text: "Không chịu nổi tiếng bước chân từ tầng trên nữa, cuối cùng tôi đã chính thức phản ánh với ban quản lý.", lang: vi }
+        - { id: y6b, text: "Vì không thể chịu đựng nên tôi đã không phản ánh với ban quản lý.", lang: vi }
+        - { id: h1n, text: "Tôi cố chịu đựng tiếng bước chân và không làm gì cả.", lang: vi }
+        - { id: c9t, text: "Tôi gây ồn ở tầng trên nên bị ban quản lý nhắc nhở.", lang: vi }
+    answer:
+      correct_option_id: s3v
+    explanation:
+      vi: 참다못해 = nhịn đến giới hạn, không chịu nổi nữa - và sau đó có hành động (항의했다). 못해 ở đây không phủ định hành động phía sau.
+    display_answer: "Không chịu nổi tiếng bước chân từ tầng trên nữa, cuối cùng tôi đã chính thức phản ánh với ban quản lý."
+
+  - key: ko:exercise:le-degree-listen-jjak
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-gi-jjagi-eopda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 사고 처리 과정에서 보여 준 회사의 태도는 무책임하기 짝이 없었다.
+      options:
+        - { id: r4j, text: "Thái độ công ty thể hiện trong quá trình xử lý tai nạn thật vô trách nhiệm hết chỗ nói.", lang: vi }
+        - { id: e8a, text: "Công ty không tìm được đối tác nào chịu trách nhiệm xử lý tai nạn.", lang: vi }
+        - { id: k5z, text: "Công ty đã xử lý tai nạn rất có trách nhiệm.", lang: vi }
+        - { id: w2g, text: "Không ai biết thái độ của công ty trong vụ tai nạn.", lang: vi }
+    answer:
+      correct_option_id: r4j
+    explanation:
+      vi: A-기 짝이 없다 = vô cùng, hết chỗ nói (để chê) - 무책임하기 짝이 없다. 짝 ở đây không phải "đối tác"; nghĩa đen là "không có gì sánh cặp".
+    display_answer: "Thái độ công ty thể hiện trong quá trình xử lý tai nạn thật vô trách nhiệm hết chỗ nói."
+
+  - key: ko:exercise:le-degree-mcq-apology
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-gi-geujieopda
+    prompt:
+      stem: "Câu nào phù hợp nhất cho thư xin lỗi chính thức của công ty gửi khách hàng?"
+      stem_lang: vi
+      options:
+        - { id: m7u, text: "고객 여러분께 큰 불편을 끼쳐 드려 송구하기 그지없습니다.", lang: ko }
+        - { id: d3o, text: "고객 여러분께 큰 불편을 끼쳐 드려 송구하기 짝이 없어.", lang: ko }
+        - { id: b0c, text: "고객 여러분께 큰 불편을 끼쳐 드려 송구할 지경이야.", lang: ko }
+        - { id: g6s, text: "고객 여러분께 큰 불편을 끼쳐 드려 송구하다 못해 즐겁습니다.", lang: ko }
+    answer:
+      correct_option_id: m7u
+    explanation:
+      vi: Thư xin lỗi cần 합쇼체 và cấu trúc trang trọng - -기 그지없습니다. Hai phương án dùng 반말 (-어, -야) không hợp, và "hổ thẹn đến mức vui" là vô lý.
+    display_answer: "고객 여러분께 큰 불편을 끼쳐 드려 송구하기 그지없습니다."
+
+  - key: ko:exercise:le-degree-fill-pihaeja
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:le-pihaeja-gahaeja
+    prompt:
+      template: "전세 사기 {{b1}}들은 보증금을 돌려받지 못해 생계까지 위협받고 있다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Người bị hại (被害者 - bị hại giả).
+        - 피...
+    answer:
+      blanks:
+        b1: [피해자]
+    known_wrong:
+      - answer: 가해자
+        feedback_vi: 가해자 là người gây hại. Người không lấy lại được tiền cọc là người bị hại - 피해자.
+        error_tag: pihae_vs_gahae
+      - answer: 손해자
+        feedback_vi: Không có từ 손해자. Người bị hại trong vụ lừa đảo là 피해자.
+        error_tag: vocab_form
+    explanation:
+      vi: 피 (被 - bị) = chịu, 가 (加 - gia) = gây ra. Người mất tiền cọc, bị đe doạ sinh kế là 피해자.
+    display_answer: 전세 사기 피해자들은 보증금을 돌려받지 못해 생계까지 위협받고 있다.
+
+  - key: ko:exercise:le-degree-mcq-eogul
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:le-eogulhada
+    prompt:
+      stem: "Bạn bị đồng nghiệp đổ lỗi cho một sai sót mà bạn không hề gây ra. Từ nào diễn tả đúng cảm xúc của bạn?"
+      stem_lang: vi
+      options:
+        - { id: q2f, text: "억울하다", lang: ko }
+        - { id: z8k, text: "뻔뻔하다", lang: ko }
+        - { id: l4w, text: "청렴하다", lang: ko }
+        - { id: i7p, text: "무책임하다", lang: ko }
+    answer:
+      correct_option_id: q2f
+    explanation:
+      vi: Bị đổ lỗi oan là tình huống bất công - 억울하다. 뻔뻔하다 và 무책임하다 mô tả người đổ lỗi chứ không phải cảm xúc của bạn; 청렴하다 là liêm khiết.
+    display_answer: "억울하다"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:le-degree-fill-jigyeong
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-l-jigyeongida
+    prompt:
+      template: "월세와 대출 이자를 내고 나면 남는 돈이 없어 굶어 (죽다 →) {{b1}} 지경이다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [죽을]
+    known_wrong:
+      - answer: 죽는
+        feedback_vi: -(으)ㄹ 지경이다 dùng định ngữ -(으)ㄹ - 죽을 지경이다.
+        error_tag: jigyeong_form
+      - answer: 죽은
+        feedback_vi: Không dùng định ngữ quá khứ với 지경. Viết 죽을 지경.
+        error_tag: jigyeong_form
+    explanation:
+      vi: 굶어 죽을 지경이다 = đến mức sắp chết đói - cách nói phóng đại quen thuộc khi than khổ. Gốc 죽 có patchim nên thêm 을.
+    display_answer: 월세와 대출 이자를 내고 나면 남는 돈이 없어 굶어 죽을 지경이다.
+
+  - key: ko:exercise:le-degree-fill-motae-adj
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-da-motae
+    prompt:
+      template: "솜방망이 처벌 소식을 들은 유가족들은 허탈하다 {{b1}} 분노를 터뜨렸다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [못해, 못해서]
+    known_wrong:
+      - answer: 못하게
+        feedback_vi: Cấu trúc mức độ là A-다 못해 - cảm xúc vượt ngưỡng rồi chuyển sang cảm xúc khác.
+        error_tag: motae_form
+      - answer: 않아
+        feedback_vi: Không có cấu trúc -다 않아. Cảm xúc "đến cực điểm" là -다 못해.
+        error_tag: motae_form
+    explanation:
+      vi: A-다 못해 - hụt hẫng (허탈하다) đến cực điểm rồi bùng thành phẫn nộ. 솜방망이 처벌 là "phạt bằng gậy bông" - hình phạt quá nhẹ.
+    display_answer: 솜방망이 처벌 소식을 들은 유가족들은 허탈하다 못해 분노를 터뜨렸다.
+
+  - key: ko:exercise:le-degree-translate-jjak
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-ppeonppeonhada
+    prompt:
+      source_text: Thái độ của kẻ gây hại thật trơ trẽn hết chỗ nói.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "가해자의 태도는 뻔뻔하기 짝이 없다."
+        - "가해자의 태도는 뻔뻔하기 짝이 없습니다."
+        - "가해자의 태도는 뻔뻔하기 짝이 없었다."
+        - "가해자의 태도는 뻔뻔하기 짝이 없어요."
+        - "가해자의 태도는 뻔뻔하기 그지없다."
+        - "가해자의 태도는 뻔뻔하기 그지없습니다."
+        - "가해자의 태도는 뻔뻔하기 그지없었다."
+        - "가해자의 태도는 정말 뻔뻔하기 짝이 없다."
+        - "가해자의 태도는 정말 뻔뻔하기 짝이 없습니다."
+    known_wrong:
+      - answer: 가해자의 태도는 당당하기 짝이 없다.
+        feedback_vi: 당당하다 là đường hoàng, tự tin (khen). "Trơ trẽn" là 뻔뻔하다.
+        error_tag: ppeonppeon_vs_dangdang
+      - answer: 피해자의 태도는 뻔뻔하기 짝이 없다.
+        feedback_vi: Kẻ gây hại là 가해자; 피해자 là nạn nhân.
+        error_tag: pihae_vs_gahae
+      - answer: 가해자의 태도는 뻔뻔할 짝이 없다.
+        feedback_vi: Cấu trúc là A-기 짝이 없다 - 뻔뻔하기 짝이 없다.
+        error_tag: jjak_form
+    explanation:
+      vi: A-기 짝이 없다 để chê trách mạnh; 그지없다 cũng đúng nhưng trang trọng hơn. Hai cặp hay nhầm - 가해자 / 피해자 và 뻔뻔하다 / 당당하다.
+    display_answer: 가해자의 태도는 뻔뻔하기 짝이 없다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:le-degree-translate-bunno-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-bunno
+    prompt:
+      source_text: 피해자의 억울한 사연이 알려지자 시민들의 분노가 극에 달했다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Khi câu chuyện oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được biết đến, cơn phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được biết đến, cơn phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được biết đến, cơn phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được lan truyền, sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được lan truyền, sự phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được lan truyền, sự phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được lan truyền, cơn phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được lan truyền, cơn phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi câu chuyện oan ức của nạn nhân được lan truyền, cơn phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được biết đến, cơn phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được biết đến, cơn phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được biết đến, cơn phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được lan truyền, sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được lan truyền, sự phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được lan truyền, sự phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được lan truyền, cơn phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được lan truyền, cơn phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi hoàn cảnh oan ức của nạn nhân được lan truyền, cơn phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được biết đến, sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được biết đến, sự phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được biết đến, sự phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được biết đến, cơn phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được biết đến, cơn phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được biết đến, cơn phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được lan truyền, sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được lan truyền, sự phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được lan truyền, sự phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được lan truyền, cơn phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được lan truyền, cơn phẫn nộ của người dân đã lên đến đỉnh điểm."
+        - "Khi nỗi oan của nạn nhân được lan truyền, cơn phẫn nộ của người dân lên tới đỉnh điểm."
+        - "Câu chuyện oan ức của nạn nhân được biết đến khiến sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Câu chuyện oan ức của nạn nhân được biết đến làm sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Câu chuyện oan ức của nạn nhân lan truyền khiến sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Câu chuyện oan ức của nạn nhân lan truyền làm sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Nỗi oan của nạn nhân được biết đến khiến sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Nỗi oan của nạn nhân được biết đến làm sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Nỗi oan của nạn nhân lan truyền khiến sự phẫn nộ của người dân lên đến đỉnh điểm."
+        - "Nỗi oan của nạn nhân lan truyền làm sự phẫn nộ của người dân lên đến đỉnh điểm."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi câu chuyện oan ức của kẻ gây hại được biết đến, sự phẫn nộ của người dân lên đến đỉnh điểm.
+        feedback_vi: 피해자 là nạn nhân, không phải kẻ gây hại (가해자).
+        error_tag: pihae_vs_gahae
+      - answer: Khi câu chuyện buồn của nạn nhân được biết đến, người dân đã bình tĩnh lại.
+        feedback_vi: 분노가 극에 달했다 là phẫn nộ lên đến đỉnh điểm, không phải bình tĩnh lại; 억울하다 là oan ức chứ không chỉ "buồn".
+        error_tag: meaning_reversed
+    explanation:
+      vi: 억울한 사연 = câu chuyện oan ức; -자 = ngay khi; 분노가 극에 달하다 = phẫn nộ lên tới cực điểm. 분노 là từ văn viết, mang tính xã hội.
+    display_answer: Khi câu chuyện oan ức của nạn nhân được biết đến, sự phẫn nộ của người dân lên đến đỉnh điểm.
+
+  - key: ko:exercise:le-degree-order-gidarida
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-da-motae
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Không chờ nổi câu trả lời nữa, chúng tôi đã tự mình tìm đến văn phòng quận.\""
+      tokens:
+        - { id: n6e, text: 찾아갔다 }
+        - { id: a3r, text: 못해 }
+        - { id: t9y, text: 구청을 }
+        - { id: f2l, text: 답변을 }
+        - { id: o8d, text: 않아 }
+        - { id: v1s, text: 직접 }
+        - { id: u5h, text: 기다리다 }
+    answer:
+      orders:
+        - [f2l, u5h, a3r, v1s, t9y, n6e]
+        - [f2l, u5h, a3r, t9y, v1s, n6e]
+    explanation:
+      vi: V-다 못해 - 기다리다 못해 (hết chờ nổi) rồi hành động 찾아갔다. 직접 có thể đứng trước hoặc sau 구청을. 않아 là token nhiễu.
+    display_answer: 답변을 기다리다 못해 직접 구청을 찾아갔다.
+
+  - key: ko:exercise:le-degree-mcq-correct
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-gi-jjagi-eopda
+    prompt:
+      stem: "Chọn câu đúng cả ngữ pháp lẫn sắc thái cho một bài phê bình phát ngôn của chính trị gia."
+      stem_lang: vi
+      options:
+        - { id: j7m, text: "피해자에게 책임을 돌리는 발언은 무례하기 짝이 없다.", lang: ko }
+        - { id: x0q, text: "피해자에게 책임을 돌리는 발언은 무례할 지경이 없다.", lang: ko }
+        - { id: p5c, text: "피해자에게 책임을 돌리는 발언은 무례하다 못해 정중하다.", lang: ko }
+        - { id: e1v, text: "피해자에게 책임을 돌리는 발언은 무례하기 그지없게 감사하다.", lang: ko }
+    answer:
+      correct_option_id: j7m
+    explanation:
+      vi: A-기 짝이 없다 là cấu trúc chê trách - 무례하기 짝이 없다 (vô lễ hết chỗ nói). 지경이 없다 không phải cấu trúc; "vô lễ đến mức lịch sự" và "vô lễ... cảm ơn" là vô lý.
+    display_answer: "피해자에게 책임을 돌리는 발언은 무례하기 짝이 없다."
+
+  - key: ko:exercise:le-degree-translate-jigyeong
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-l-jigyeongida
+    prompt:
+      source_text: Giá nhà tăng quá cao đến mức thanh niên gần như phải từ bỏ việc mua nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "집값이 너무 올라 청년들은 내 집 마련을 포기해야 할 지경이다."
+        - "집값이 너무 올라 청년들은 내 집 마련을 포기해야 할 지경입니다."
+        - "집값이 너무 올라 청년들은 내 집 마련을 포기해야 할 지경이에요."
+        - "집값이 너무 올라 청년들은 내 집 마련을 포기할 지경이다."
+        - "집값이 너무 올라 청년들은 내 집 마련을 포기할 지경입니다."
+        - "집값이 너무 올라 청년들은 내 집 마련을 포기할 지경이에요."
+        - "집값이 너무 올라 청년들은 집을 사는 것을 포기해야 할 지경이다."
+        - "집값이 너무 올라 청년들은 집을 사는 것을 포기해야 할 지경입니다."
+        - "집값이 너무 올라 청년들은 집을 사는 것을 포기해야 할 지경이에요."
+        - "집값이 너무 올라 청년들은 집을 사는 것을 포기할 지경이다."
+        - "집값이 너무 올라 청년들은 집을 사는 것을 포기할 지경입니다."
+        - "집값이 너무 올라 청년들은 집을 사는 것을 포기할 지경이에요."
+        - "집값이 너무 올라 청년들은 집 사는 것을 포기해야 할 지경이다."
+        - "집값이 너무 올라 청년들은 집 사는 것을 포기해야 할 지경입니다."
+        - "집값이 너무 올라 청년들은 집 사는 것을 포기해야 할 지경이에요."
+        - "집값이 너무 올라 청년들은 집 사는 것을 포기할 지경이다."
+        - "집값이 너무 올라 청년들은 집 사는 것을 포기할 지경입니다."
+        - "집값이 너무 올라 청년들은 집 사는 것을 포기할 지경이에요."
+        - "집값이 지나치게 올라 청년들은 내 집 마련을 포기해야 할 지경이다."
+        - "집값이 지나치게 올라 청년들은 내 집 마련을 포기해야 할 지경입니다."
+        - "집값이 지나치게 올라 청년들은 내 집 마련을 포기해야 할 지경이에요."
+        - "집값이 지나치게 올라 청년들은 내 집 마련을 포기할 지경이다."
+        - "집값이 지나치게 올라 청년들은 내 집 마련을 포기할 지경입니다."
+        - "집값이 지나치게 올라 청년들은 내 집 마련을 포기할 지경이에요."
+        - "집값이 지나치게 올라 청년들은 집을 사는 것을 포기해야 할 지경이다."
+        - "집값이 지나치게 올라 청년들은 집을 사는 것을 포기해야 할 지경입니다."
+        - "집값이 지나치게 올라 청년들은 집을 사는 것을 포기해야 할 지경이에요."
+        - "집값이 지나치게 올라 청년들은 집을 사는 것을 포기할 지경이다."
+        - "집값이 지나치게 올라 청년들은 집을 사는 것을 포기할 지경입니다."
+        - "집값이 지나치게 올라 청년들은 집을 사는 것을 포기할 지경이에요."
+        - "집값이 지나치게 올라 청년들은 집 사는 것을 포기해야 할 지경이다."
+        - "집값이 지나치게 올라 청년들은 집 사는 것을 포기해야 할 지경입니다."
+        - "집값이 지나치게 올라 청년들은 집 사는 것을 포기해야 할 지경이에요."
+        - "집값이 지나치게 올라 청년들은 집 사는 것을 포기할 지경이다."
+        - "집값이 지나치게 올라 청년들은 집 사는 것을 포기할 지경입니다."
+        - "집값이 지나치게 올라 청년들은 집 사는 것을 포기할 지경이에요."
+        - "집값이 너무 올라서 청년들은 내 집 마련을 포기해야 할 지경이다."
+        - "집값이 너무 올라서 청년들은 내 집 마련을 포기해야 할 지경입니다."
+        - "집값이 너무 올라서 청년들은 집 사는 것을 포기해야 할 지경이다."
+        - "집값이 너무 올라서 청년들은 집 사는 것을 포기해야 할 지경입니다."
+        - "집값이 지나치게 올라서 청년들은 내 집 마련을 포기해야 할 지경이다."
+        - "집값이 지나치게 올라서 청년들은 내 집 마련을 포기해야 할 지경입니다."
+        - "집값이 지나치게 올라서 청년들은 집 사는 것을 포기해야 할 지경이다."
+        - "집값이 지나치게 올라서 청년들은 집 사는 것을 포기해야 할 지경입니다."
+    known_wrong:
+      - answer: 집값이 너무 올라 청년들은 내 집 마련을 포기해야 하는 지경이다.
+        feedback_vi: Trước 지경 dùng định ngữ -(으)ㄹ - 포기해야 할 지경.
+        error_tag: jigyeong_form
+      - answer: 집값이 너무 올라 청년들은 내 집 마련을 포기할 정도로 행복하다.
+        feedback_vi: Câu sai nghĩa - tình trạng tồi tệ "đến mức" cần -(으)ㄹ 지경이다, không có ý "hạnh phúc".
+        error_tag: meaning_changed
+    explanation:
+      vi: Tình trạng xấu đến mức gần như phải bỏ cuộc - -아/어야 할 지경이다. "Mua nhà" trong tiếng Hàn rất tự nhiên là 내 집 마련 (sở hữu căn nhà của riêng mình).
+    display_answer: 집값이 너무 올라 청년들은 내 집 마련을 포기해야 할 지경이다.

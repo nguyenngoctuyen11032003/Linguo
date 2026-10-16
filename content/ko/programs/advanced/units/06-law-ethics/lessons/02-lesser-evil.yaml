@@ -1,0 +1,494 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:lesser-evil
+order_index: 2
+level: topik6
+title:
+  vi: Thế khó đạo đức - -(으)ㄹ 바에야, -느니, -(으)ㄴ/는 마당에
+objectives:
+  - vi: Chọn cái ít tệ hơn bằng V-(으)ㄹ 바에야 (차라리) và V-느니 (차라리) - đặt đúng thứ tự lựa chọn.
+  - vi: Nêu tình cảnh gay gắt bằng -(으)ㄴ/는 마당에 để phê phán hoặc khẳng định điều tất yếu.
+  - vi: Dùng từ vựng đạo đức công vụ - 양심, 타협하다, 회피하다, 묵인하다, 부정부패, 내부 고발, 청렴하다.
+estimated_minutes: 25
+skills: [grammar, speaking, vocabulary]
+prerequisites: [ko:lesson:law-politics-vocab]
+items:
+  - item: ko:item:le-gram-l-baeya
+  - item: ko:item:le-gram-neuni
+  - item: ko:item:le-gram-n-neun-madange
+  - item: ko:item:le-yangsim
+  - item: ko:item:le-tahyeophada
+  - item: ko:item:le-hoepihada
+  - item: ko:item:le-muginhada
+  - item: ko:item:le-bujeong-bupae
+  - item: ko:item:le-naebu-gobal
+  - item: ko:item:le-cheongnyeomhada
+  - item: ko:item:ac-gram-l-jieonjeong
+    role: reuse
+  - item: ko:item:hl-gram-l-mangjeong
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này xoay quanh những thế khó của người làm việc trong tổ chức - làm ngơ hay tố giác, thoả hiệp hay từ chức. Bạn học cách nói "thà... còn hơn" và "trong tình cảnh thế này mà..." như trong tranh luận và xã luận.
+  - type: explain
+    text:
+      vi: Điểm then chốt là thứ tự. Tiếng Việt nói "thà A còn hơn B" (lựa chọn được chọn đứng trước), còn tiếng Hàn nói B-(으)ㄹ 바에야 / B-느니 차라리 A (lựa chọn bị gạt bỏ đứng trước). Người Việt dịch thẳng theo trật tự tiếng Việt nên rất hay đảo ngược ý.
+  - type: explain
+    text:
+      vi: -(으)ㄹ 바에야 và -느니 gần nghĩa - -(으)ㄹ 바에야 hơi trang trọng và nhấn "đằng nào cũng phải... thì", -느니 hay dùng khi nói. Vế sau thường có 차라리 và -는 게 낫다, -겠다. Cả hai chỉ gắn vào động từ.
+  - type: explain
+    text:
+      vi: -(으)ㄴ/는 마당에 nghĩa là "trong tình cảnh (đã)... thế này mà / thì". Tình cảnh luôn bất lợi, gấp gáp; vế sau thường là câu hỏi tu từ hoặc -(으)ㄹ 수는 없다. 마당 nghĩa gốc là "cái sân", nhưng ở đây đừng dịch là sân.
+  - type: deep_explain
+    text:
+      vi: So sánh với hai cấu trúc bạn đã học - -(으)ㄹ지언정 và -(으)ㄹ망정 đặt điều mình chấp nhận chịu ở trước (굶을지언정 훔치지 않겠다 - thà chịu đói chứ không ăn trộm), còn -(으)ㄹ 바에야 / -느니 đặt điều bị gạt bỏ ở trước (훔칠 바에야 차라리 굶겠다). Hai câu cùng ý nhưng trật tự ngược nhau. Cách chia - 할 바에야 / 할 바에는 / 할 바엔; 하느니 (gốc ㄹ rơi - 살다 → 사느니); 어려운 마당에, 이렇게 된 마당에, 위기인 마당에.
+  - type: example
+    target: 동료의 비리를 알고도 묵인할 바에야 차라리 회사를 그만두는 게 낫다고 생각했다.
+    target_lang: ko
+    translation:
+      vi: Tôi đã nghĩ thà nghỉ việc còn hơn biết sai phạm của đồng nghiệp mà vẫn làm ngơ.
+    note:
+      vi: Lựa chọn bị gạt bỏ (묵인하다) đứng trước 바에야, lựa chọn được chọn (그만두다) đứng sau 차라리.
+  - type: example
+    target: 원칙 없이 타협하느니 차라리 협상을 깨는 편이 낫다는 의견도 있었다.
+    target_lang: ko
+    translation:
+      vi: Cũng có ý kiến cho rằng thà phá vỡ đàm phán còn hơn thoả hiệp không nguyên tắc.
+    note:
+      vi: -느니 + 차라리 + -는 편이 낫다.
+  - type: example
+    target: 부정부패 의혹이 연일 터지는 마당에 정부가 청렴을 외친들 누가 믿겠는가.
+    target_lang: ko
+    translation:
+      vi: Trong lúc nghi án tham nhũng nổ ra ngày này qua ngày khác, chính phủ có hô hào liêm khiết thì ai tin?
+    note:
+      vi: -는 마당에 + câu hỏi tu từ; -(으)ㄴ들 bạn sẽ học ở bài 4.
+  - type: example
+    target: 이미 내부 고발로 모든 사실이 드러난 마당에 더 이상 책임을 회피할 수는 없다.
+    target_lang: ko
+    translation:
+      vi: Mọi sự thật đã bị phơi bày qua tố giác nội bộ rồi thì không thể né tránh trách nhiệm thêm nữa.
+    note:
+      vi: Việc đã xảy ra - V-(으)ㄴ 마당에; vế sau là -(으)ㄹ 수는 없다.
+  - type: example
+    target: 그는 거액의 뇌물을 받느니 청렴한 공무원으로 가난하게 사는 길을 택했다.
+    target_lang: ko
+    translation:
+      vi: Ông ấy đã chọn con đường sống thanh bần như một công chức liêm khiết thay vì nhận khoản hối lộ lớn.
+    note:
+      vi: -느니 cũng dùng trong câu tường thuật quá khứ - vế sau mới chia thì (택했다).
+  - type: common_mistake
+    wrong: 차라리 굶을 바에야 남의 것을 훔치겠다.
+    right: 남의 것을 훔칠 바에야 차라리 굶겠다.
+    target_lang: ko
+    note:
+      vi: Câu sai nghĩa là "thà ăn trộm còn hơn nhịn đói" - ngược hẳn ý. Việc bị gạt bỏ (훔치다) phải đứng trước 바에야, việc được chọn đứng sau 차라리.
+  - type: common_mistake
+    wrong: 거짓말을 했느니 차라리 솔직하게 말하겠다.
+    right: 거짓말을 하느니 차라리 솔직하게 말하겠다.
+    target_lang: ko
+    note:
+      vi: -느니 không gắn đuôi quá khứ. Thì của câu thể hiện ở vế sau.
+  - type: common_mistake
+    wrong: 동생이 승진한 마당에 다 같이 축하 파티를 하자.
+    right: 동생이 승진한 김에 다 같이 축하 파티를 하자.
+    target_lang: ko
+    note:
+      vi: -는 마당에 chỉ dùng cho tình cảnh xấu, căng thẳng. Với dịp vui, dùng -(으)ㄴ/는 김에 (nhân dịp, nhân tiện).
+  - type: summary
+    points:
+      - vi: B-(으)ㄹ 바에야 / B-느니 차라리 A = thà A còn hơn B (B bị gạt bỏ, đứng trước).
+      - vi: A-(으)ㄹ지언정 / A-(으)ㄹ망정 B-지 않겠다 = thà chịu A chứ không B (A được chấp nhận, đứng trước).
+      - vi: -(으)ㄴ/는 마당에 = trong tình cảnh (xấu) thế này mà / thì...; hay đi với câu hỏi tu từ, -(으)ㄹ 수는 없다.
+      - vi: 묵인하다 (làm ngơ cái sai) · 회피하다 (né trách nhiệm) · 타협하다 (thoả hiệp) · 청렴하다 (liêm khiết).
+      - vi: 고발 (người thứ ba tố giác) · 고소 (nạn nhân kiện) · 신고 (báo cơ quan chức năng).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:le-evil-mcq-baeya
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-l-baeya
+    prompt:
+      stem: "부정한 방법으로 이길 바에야 차라리 지는 게 낫다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: u8f, text: "Thà thua còn hơn thắng bằng cách gian lận.", lang: vi }
+        - { id: c2y, text: "Thắng bằng cách gian lận còn hơn là thua.", lang: vi }
+        - { id: a6k, text: "Nếu thua thì phải gian lận để thắng.", lang: vi }
+        - { id: m1s, text: "Dù có gian lận cũng không thể thắng.", lang: vi }
+    answer:
+      correct_option_id: u8f
+    explanation:
+      vi: Vế trước 바에야 là điều bị gạt bỏ (thắng gian lận), vế sau 차라리 là điều được chọn (thua). Tiếng Việt đảo thứ tự - "thà thua còn hơn thắng gian lận" - nên đừng dịch theo trật tự chữ Hàn.
+    display_answer: "Thà thua còn hơn thắng bằng cách gian lận."
+
+  - key: ko:exercise:le-evil-listen-madang
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-n-neun-madange
+    prompt:
+      audio_asset_id: null
+      fallback_text: 회사가 문을 닫느냐 마느냐 하는 마당에 휴가 이야기를 꺼낼 수는 없지요.
+      options:
+        - { id: d7w, text: "Công ty đang đứng trước nguy cơ đóng cửa thế này thì không thể nhắc chuyện nghỉ phép.", lang: vi }
+        - { id: h3e, text: "Không được bàn chuyện nghỉ phép ngoài sân công ty.", lang: vi }
+        - { id: q9a, text: "Vì công ty đóng cửa nên ai cũng được nghỉ phép.", lang: vi }
+        - { id: z5r, text: "Công ty mở cửa lại nên mọi người bàn chuyện nghỉ phép.", lang: vi }
+    answer:
+      correct_option_id: d7w
+    explanation:
+      vi: -는 마당에 = trong tình cảnh (gay go) như thế này. 문을 닫느냐 마느냐 = đóng cửa hay không - tình thế sống còn, nên nhắc chuyện nghỉ phép là không hợp. 마당 không phải "cái sân" ở đây.
+    display_answer: "Công ty đang đứng trước nguy cơ đóng cửa thế này thì không thể nhắc chuyện nghỉ phép."
+
+  - key: ko:exercise:le-evil-mcq-mugin
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-muginhada
+    prompt:
+      stem: "Từ nào diễn tả việc \"biết cấp trên nhận hối lộ mà vẫn làm ngơ, để yên\"?"
+      stem_lang: vi
+      options:
+        - { id: k4p, text: "묵인하다", lang: ko }
+        - { id: s7d, text: "고발하다", lang: ko }
+        - { id: o1t, text: "신고하다", lang: ko }
+        - { id: e8n, text: "청렴하다", lang: ko }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: 묵인하다 (mặc nhận) = biết sai mà vẫn để yên. 고발하다 và 신고하다 là tố giác, báo cáo - ngược lại; 청렴하다 là tính từ "liêm khiết".
+    display_answer: "묵인하다"
+
+  - key: ko:exercise:le-evil-fill-neuni
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-neuni
+    prompt:
+      template: "억울한 누명을 쓰고 평생 {{b1}} 차라리 끝까지 재판을 받아 결백을 밝히겠다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Thà... còn hơn - gắn vào động từ 살다 (gốc ㄹ rơi trước ㄴ).
+        - 사느...
+    answer:
+      blanks:
+        b1: [사느니, 살 바에야, 살 바에는, 살 바엔]
+    known_wrong:
+      - answer: 살느니
+        feedback_vi: Gốc kết thúc bằng ㄹ thì ㄹ rơi trước ㄴ - 살다 → 사느니.
+        error_tag: l_drop
+      - answer: 사는니
+        feedback_vi: Vĩ tố là -느니, không phải -는니. Viết 사느니.
+        error_tag: neuni_form
+      - answer: 살지언정
+        feedback_vi: -(으)ㄹ지언정 đặt điều mình chấp nhận ở trước. Người nói không chấp nhận sống mang tiếng oan, nên cần -느니 / -(으)ㄹ 바에야.
+        error_tag: order_reversed
+    explanation:
+      vi: Điều bị gạt bỏ (sống cả đời mang tiếng oan) + -느니 / -(으)ㄹ 바에야, rồi điều được chọn (theo kiện đến cùng) sau 차라리. 살다 → 사느니 vì ㄹ rơi trước ㄴ.
+    display_answer: 억울한 누명을 쓰고 평생 사느니 차라리 끝까지 재판을 받아 결백을 밝히겠다.
+
+  - key: ko:exercise:le-evil-mcq-bujeong
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-bujeong-bupae
+    prompt:
+      stem: "공직 사회의 부정부패를 막으려면 감시 체계부터 바꿔야 한다. - 부정 ở đây mang nghĩa gì?"
+      stem_lang: vi
+      options:
+        - { id: b5x, text: "Bất chính, sai trái (不正)", lang: vi }
+        - { id: l2j, text: "Phủ định (否定)", lang: vi }
+        - { id: w9c, text: "Không cố định (不定)", lang: vi }
+        - { id: f6m, text: "Tình cha (父情)", lang: vi }
+    answer:
+      correct_option_id: b5x
+    explanation:
+      vi: 부정부패 (bất chính hủ bại) là tham nhũng, tiêu cực. 부정 có nhiều từ đồng âm; trong tin về công chức, 부정 đi với 부패, 행위, 청탁 luôn là "bất chính". 부정적 (tiêu cực, phủ định) là từ khác.
+    display_answer: "Bất chính, sai trái (不正)"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:le-evil-fill-baeya-form
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-l-baeya
+    prompt:
+      template: "이렇게 매일 야근하면서 상사 눈치를 (보다 →) {{b1}} 바에야 차라리 회사를 그만두겠다."
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [볼]
+    known_wrong:
+      - answer: 보는
+        feedback_vi: Danh từ phụ thuộc 바 trong cấu trúc này đi với định ngữ tương lai -(으)ㄹ - 볼 바에야.
+        error_tag: baeya_form
+      - answer: 본
+        feedback_vi: Không dùng định ngữ quá khứ. Viết 볼 바에야.
+        error_tag: baeya_form
+    explanation:
+      vi: V-(으)ㄹ 바에야 - 보다 → 볼 바에야. Việc bị gạt bỏ (ngày nào cũng làm đêm, nhìn sắc mặt sếp) đứng trước, việc được chọn (nghỉ việc) đứng sau 차라리.
+    display_answer: 이렇게 매일 야근하면서 상사 눈치를 볼 바에야 차라리 회사를 그만두겠다.
+
+  - key: ko:exercise:le-evil-fill-madang-form
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-n-neun-madange
+    prompt:
+      template: "일이 이미 이렇게 (되다 →) {{b1}} 마당에 누구 탓을 해서 무엇 하겠습니까?"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [된]
+    known_wrong:
+      - answer: 될
+        feedback_vi: 이미 (đã) cho thấy việc đã xảy ra - dùng định ngữ quá khứ 된 마당에.
+        error_tag: madang_tense
+      - answer: 되는
+        feedback_vi: Sự việc đã kết thúc (이미) nên không dùng -는. Viết 된 마당에.
+        error_tag: madang_tense
+    explanation:
+      vi: Việc đã xảy ra - V-(으)ㄴ 마당에 (되다 → 된). Vế sau là câu hỏi tu từ "đổ lỗi cho ai thì được gì" - kiểu câu đi cùng -는 마당에 rất thường gặp.
+    display_answer: 일이 이미 이렇게 된 마당에 누구 탓을 해서 무엇 하겠습니까?
+
+  - key: ko:exercise:le-evil-translate-yangsim
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-yangsim
+    prompt:
+      source_text: Thà sống nghèo còn hơn vứt bỏ lương tâm mà sống.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "양심을 버리고 살 바에야 차라리 가난하게 살겠다."
+        - "양심을 버리고 살 바에야 차라리 가난하게 살겠습니다."
+        - "양심을 버리고 살 바에야 차라리 가난하게 사는 게 낫다."
+        - "양심을 버리고 살 바에야 차라리 가난하게 사는 것이 낫다."
+        - "양심을 버리고 살 바에야 차라리 가난하게 사는 게 나아요."
+        - "양심을 버리고 사느니 차라리 가난하게 살겠다."
+        - "양심을 버리고 사느니 차라리 가난하게 살겠습니다."
+        - "양심을 버리고 사느니 차라리 가난하게 사는 게 낫다."
+        - "양심을 버리고 사느니 차라리 가난하게 사는 것이 낫다."
+        - "양심을 버리고 사느니 차라리 가난하게 사는 게 나아요."
+        - "양심을 버리고 살 바에는 차라리 가난하게 살겠다."
+        - "양심을 버리고 살 바에는 차라리 가난하게 살겠습니다."
+        - "양심을 버리고 살 바에는 차라리 가난하게 사는 게 낫다."
+        - "양심을 버리고 살 바에는 차라리 가난하게 사는 것이 낫다."
+        - "양심을 버리고 살 바에는 차라리 가난하게 사는 게 나아요."
+        - "양심을 팔고 살 바에야 차라리 가난하게 살겠다."
+        - "양심을 팔고 살 바에야 차라리 가난하게 살겠습니다."
+        - "양심을 팔고 살 바에야 차라리 가난하게 사는 게 낫다."
+        - "양심을 팔고 살 바에야 차라리 가난하게 사는 것이 낫다."
+        - "양심을 팔고 살 바에야 차라리 가난하게 사는 게 나아요."
+        - "양심을 팔고 사느니 차라리 가난하게 살겠다."
+        - "양심을 팔고 사느니 차라리 가난하게 살겠습니다."
+        - "양심을 팔고 사느니 차라리 가난하게 사는 게 낫다."
+        - "양심을 팔고 사느니 차라리 가난하게 사는 것이 낫다."
+        - "양심을 팔고 사느니 차라리 가난하게 사는 게 나아요."
+        - "양심을 팔고 살 바에는 차라리 가난하게 살겠다."
+        - "양심을 팔고 살 바에는 차라리 가난하게 살겠습니다."
+        - "양심을 팔고 살 바에는 차라리 가난하게 사는 게 낫다."
+        - "양심을 팔고 살 바에는 차라리 가난하게 사는 것이 낫다."
+        - "양심을 팔고 살 바에는 차라리 가난하게 사는 게 나아요."
+        - "양심에 어긋나게 살 바에야 차라리 가난하게 살겠다."
+        - "양심에 어긋나게 살 바에야 차라리 가난하게 사는 게 낫다."
+        - "양심에 어긋나게 사느니 차라리 가난하게 살겠다."
+        - "양심에 어긋나게 사느니 차라리 가난하게 사는 게 낫다."
+    known_wrong:
+      - answer: 가난하게 살 바에야 차라리 양심을 버리고 살겠다.
+        feedback_vi: Thứ tự bị đảo - câu này nghĩa là "thà vứt bỏ lương tâm còn hơn sống nghèo". Điều bị gạt bỏ (vứt bỏ lương tâm) phải đứng trước 바에야.
+        error_tag: order_reversed
+      - answer: 양심을 버리고 살느니 차라리 가난하게 살겠다.
+        feedback_vi: 살다 + -느니 → 사느니 (ㄹ rơi).
+        error_tag: l_drop
+      - answer: 양심을 버리고 사는 바에야 차라리 가난하게 살겠다.
+        feedback_vi: Cấu trúc là -(으)ㄹ 바에야 - 살 바에야.
+        error_tag: baeya_form
+    explanation:
+      vi: Tiếng Việt "thà A còn hơn B" → tiếng Hàn "B-(으)ㄹ 바에야 / B-느니 차라리 A". So sánh - câu 가난하게 살망정 양심을 팔지는 않겠다 (bài trước) cùng ý nhưng dùng trật tự ngược lại.
+    display_answer: 양심을 버리고 살 바에야 차라리 가난하게 살겠다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:le-evil-translate-neuni-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-neuni
+    prompt:
+      source_text: 부하 직원에게 책임을 떠넘기느니 차라리 내가 사표를 쓰겠다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Thà tôi viết đơn từ chức còn hơn đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn đổ trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn đẩy trách nhiệm cho cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn đẩy trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn đổ trách nhiệm lên cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn đổ trách nhiệm lên nhân viên cấp dưới."
+        - "Thà tôi nộp đơn từ chức còn hơn đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi nộp đơn từ chức còn hơn đổ trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi nộp đơn từ chức còn hơn đẩy trách nhiệm cho cấp dưới."
+        - "Thà tôi nộp đơn từ chức còn hơn đẩy trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi nộp đơn từ chức còn hơn đổ trách nhiệm lên cấp dưới."
+        - "Thà tôi nộp đơn từ chức còn hơn đổ trách nhiệm lên nhân viên cấp dưới."
+        - "Thà tôi từ chức còn hơn đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi từ chức còn hơn đổ trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi từ chức còn hơn đẩy trách nhiệm cho cấp dưới."
+        - "Thà tôi từ chức còn hơn đẩy trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi từ chức còn hơn đổ trách nhiệm lên cấp dưới."
+        - "Thà tôi từ chức còn hơn đổ trách nhiệm lên nhân viên cấp dưới."
+        - "Thà viết đơn từ chức chứ tôi không đổ trách nhiệm cho cấp dưới."
+        - "Thà viết đơn từ chức chứ tôi không đổ trách nhiệm cho nhân viên cấp dưới."
+        - "Thà viết đơn từ chức chứ tôi không đẩy trách nhiệm cho cấp dưới."
+        - "Thà viết đơn từ chức chứ tôi không đẩy trách nhiệm cho nhân viên cấp dưới."
+        - "Thà từ chức chứ tôi không đổ trách nhiệm cho cấp dưới."
+        - "Thà từ chức chứ tôi không đổ trách nhiệm cho nhân viên cấp dưới."
+        - "Thà từ chức chứ tôi không đẩy trách nhiệm cho cấp dưới."
+        - "Thà từ chức chứ tôi không đẩy trách nhiệm cho nhân viên cấp dưới."
+        - "Thà tôi viết đơn từ chức chứ đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi viết đơn từ chức chứ đẩy trách nhiệm cho cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn là đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi viết đơn từ chức còn hơn là đẩy trách nhiệm cho cấp dưới."
+        - "Thà tôi từ chức chứ đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi từ chức chứ đẩy trách nhiệm cho cấp dưới."
+        - "Thà tôi từ chức còn hơn là đổ trách nhiệm cho cấp dưới."
+        - "Thà tôi từ chức còn hơn là đẩy trách nhiệm cho cấp dưới."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thà đổ trách nhiệm cho cấp dưới còn hơn tôi viết đơn từ chức.
+        feedback_vi: Đảo ngược ý. Vế trước -느니 (떠넘기다) là điều bị gạt bỏ; điều được chọn là viết đơn từ chức.
+        error_tag: order_reversed
+      - answer: Tôi viết đơn từ chức rồi đổ trách nhiệm cho cấp dưới.
+        feedback_vi: -느니 không phải trình tự "rồi". Nó so sánh hai lựa chọn và gạt bỏ vế trước.
+        error_tag: neuni_misread
+    explanation:
+      vi: B-느니 차라리 A = thà A còn hơn B; tiếng Việt đưa A lên trước. 떠넘기다 = đổ, đẩy (trách nhiệm) sang người khác; 사표를 쓰다 = viết đơn từ chức.
+    display_answer: Thà tôi viết đơn từ chức còn hơn đổ trách nhiệm cho cấp dưới.
+
+  - key: ko:exercise:le-evil-order-madang
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-hoepihada
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Trong lúc dư luận đang sục sôi thế này thì không thể né tránh trách nhiệm.\""
+      tokens:
+        - { id: g8v, text: 수는 }
+        - { id: n2a, text: 책임을 }
+        - { id: x4h, text: 마당에서 }
+        - { id: r6p, text: 여론이 }
+        - { id: j1e, text: 없다 }
+        - { id: t3m, text: 회피할 }
+        - { id: y7c, text: 마당에 }
+        - { id: w5k, text: 들끓는 }
+    answer:
+      orders:
+        - [r6p, w5k, y7c, n2a, t3m, g8v, j1e]
+    explanation:
+      vi: V-는 마당에 (tình cảnh đang diễn ra) + -(으)ㄹ 수는 없다. 마당에서 là token nhiễu - thêm 서 sẽ thành "ở ngoài sân", mất nghĩa cấu trúc.
+    display_answer: 여론이 들끓는 마당에 책임을 회피할 수는 없다.
+
+  - key: ko:exercise:le-evil-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-naebu-gobal
+    prompt:
+      stem: "Đồng nghiệp tâm sự - \"부장님이 회계 장부를 고치라고 하시는데 어떻게 해야 할지 모르겠어.\" Lời khuyên nào hợp lý và đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: p9b, text: "부정에 가담할 바에야 차라리 내부 고발을 하는 게 낫지 않을까?", lang: ko }
+        - { id: i4s, text: "내부 고발을 할 바에야 차라리 부정에 가담하는 게 양심적이야.", lang: ko }
+        - { id: e7g, text: "장부를 고치는 마당에 다 같이 승진을 축하하자.", lang: ko }
+        - { id: o0x, text: "부정에 가담하느니 장부를 더 많이 고치자.", lang: ko }
+    answer:
+      correct_option_id: p9b
+    explanation:
+      vi: Lời khuyên đúng gạt bỏ việc tiếp tay sai phạm (가담할 바에야) và chọn tố giác (차라리 내부 고발). Phương án 2 đảo thứ tự và gọi tiếp tay là "có lương tâm", phương án 3 dùng 마당에 cho dịp vui, phương án 4 vô lý vì vế sau vẫn là sai phạm.
+    display_answer: "부정에 가담할 바에야 차라리 내부 고발을 하는 게 낫지 않을까?"
+
+  - key: ko:exercise:le-evil-translate-madang
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-n-neun-madange
+    prompt:
+      source_text: Trong tình cảnh kinh tế khó khăn thế này thì không thể tăng thuế.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "경제가 이렇게 어려운 마당에 세금을 올릴 수는 없다."
+        - "경제가 이렇게 어려운 마당에 세금을 올릴 수는 없습니다."
+        - "경제가 이렇게 어려운 마당에 세금을 올릴 수는 없어요."
+        - "경제가 이렇게 어려운 마당에 세금을 올릴 수 없다."
+        - "경제가 이렇게 어려운 마당에 세금을 올릴 수 없습니다."
+        - "경제가 이렇게 어려운 마당에 세금을 올릴 수 없어요."
+        - "경제가 이렇게 어려운 마당에 세금을 인상할 수는 없다."
+        - "경제가 이렇게 어려운 마당에 세금을 인상할 수는 없습니다."
+        - "경제가 이렇게 어려운 마당에 세금을 인상할 수는 없어요."
+        - "경제가 이렇게 어려운 마당에 세금을 인상할 수 없다."
+        - "경제가 이렇게 어려운 마당에 세금을 인상할 수 없습니다."
+        - "경제가 이렇게 어려운 마당에 세금을 인상할 수 없어요."
+        - "경기가 이렇게 어려운 마당에 세금을 올릴 수는 없다."
+        - "경기가 이렇게 어려운 마당에 세금을 올릴 수는 없습니다."
+        - "경기가 이렇게 어려운 마당에 세금을 올릴 수는 없어요."
+        - "경기가 이렇게 어려운 마당에 세금을 올릴 수 없다."
+        - "경기가 이렇게 어려운 마당에 세금을 올릴 수 없습니다."
+        - "경기가 이렇게 어려운 마당에 세금을 올릴 수 없어요."
+        - "경기가 이렇게 어려운 마당에 세금을 인상할 수는 없다."
+        - "경기가 이렇게 어려운 마당에 세금을 인상할 수는 없습니다."
+        - "경기가 이렇게 어려운 마당에 세금을 인상할 수는 없어요."
+        - "경기가 이렇게 어려운 마당에 세금을 인상할 수 없다."
+        - "경기가 이렇게 어려운 마당에 세금을 인상할 수 없습니다."
+        - "경기가 이렇게 어려운 마당에 세금을 인상할 수 없어요."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 올릴 수는 없다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 올릴 수는 없습니다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 올릴 수는 없어요."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 올릴 수 없다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 올릴 수 없습니다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 올릴 수 없어요."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 인상할 수는 없다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 인상할 수는 없습니다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 인상할 수는 없어요."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 인상할 수 없다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 인상할 수 없습니다."
+        - "경제 사정이 이렇게 어려운 마당에 세금을 인상할 수 없어요."
+    known_wrong:
+      - answer: 경제가 이렇게 어렵는 마당에 세금을 올릴 수는 없다.
+        feedback_vi: 어렵다 là tính từ nên định ngữ là 어려운 - 어려운 마당에.
+        error_tag: madang_form
+      - answer: 경제가 이렇게 어려운 마당에서 세금을 올릴 수는 없다.
+        feedback_vi: Cấu trúc là 마당에, không có 서. 마당에서 sẽ thành "ở ngoài sân".
+        error_tag: madang_form
+      - answer: 경제가 이렇게 어려운 마당에 세금을 상승할 수는 없다.
+        feedback_vi: Thuế do nhà nước quyết định nâng nên dùng 올리다 / 인상하다; 상승하다 là tự tăng và không có tân ngữ.
+        error_tag: insang_vs_sangseung
+    explanation:
+      vi: A-(으)ㄴ 마당에 - 어렵다 → 어려운 마당에; vế sau -(으)ㄹ 수(는) 없다. Thuế được "nâng" theo quyết định nên là 세금을 올리다 / 인상하다.
+    display_answer: 경제가 이렇게 어려운 마당에 세금을 올릴 수는 없다.

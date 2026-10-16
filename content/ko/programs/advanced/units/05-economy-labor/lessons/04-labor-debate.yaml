@@ -1,0 +1,509 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:labor-debate
+order_index: 4
+level: topik6
+title:
+  vi: Tranh luận về lao động - giờ làm, đình công và tuần làm bốn ngày
+objectives:
+  - vi: Dẫn dắt số liệu người nghe đã biết, đã thấy bằng 아시다시피 / 보시다시피 (V-다시피).
+  - vi: Thừa nhận lý lẽ của đối phương bằng -(으)ㄹ 법하다 trước khi phản bác.
+  - vi: Khái quát "bất kể..." bằng N을/를 막론하고 · N을/를 불문하고.
+  - vi: Hiểu từ vựng quan hệ lao động - 근로 시간, 주 4일제, 노조, 파업, 임금 협상, 과로, 재택근무.
+estimated_minutes: 25
+skills: [speaking, listening, grammar, vocabulary]
+prerequisites: [ko:lesson:excess-consequences]
+items:
+  - item: ko:item:el-gram-dasipi
+  - item: ko:item:el-gram-l-beophada
+  - item: ko:item:el-gram-eul-maknonhago
+  - item: ko:item:el-geullo-sigan
+  - item: ko:item:el-ju-sail-je
+  - item: ko:item:el-nodongjohap
+  - item: ko:item:el-paeop
+  - item: ko:item:el-imgeum-hyeopsang
+  - item: ko:item:el-gwaro
+  - item: ko:item:el-jaetaek-geunmu
+  - item: ko:item:ha-gram-eul-manhada
+    role: reuse
+  - item: ko:item:ac-banbakhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này mô phỏng một buổi tranh luận truyền hình về tuần làm bốn ngày và quan hệ lao động. Người nói dùng 합쇼체 (-습니다), dẫn số liệu, thừa nhận ý đối phương rồi mới phản bác - đúng khuôn câu hỏi nghe và nói TOPIK 6.
+  - type: explain
+    text:
+      vi: V-다시피 nghĩa là "như (bạn) đã..." và chỉ gắn vào động từ nhận thức - 알다, 보다, 듣다, 느끼다, 말하다. Trước khán giả hãy dùng kính ngữ 아시다시피, 보시다시피, 말씀드렸다시피; tiếng Việt cũng mở đầu bằng "như quý vị đã biết" nên cách dùng rất giống.
+  - type: explain
+    text:
+      vi: V/A-(으)ㄹ 법하다 nghĩa là "cũng là điều dễ hiểu, theo lẽ thường thì có thể..." - hay đi với 도 và -지만 / -(으)나 để thừa nhận rồi phản bác (그런 우려가 나올 법도 합니다만...). 법 ở đây không phải "pháp luật", và nó khác -(으)ㄹ 만하다 "đáng để làm" (볼 만한 영화).
+  - type: explain
+    text:
+      vi: N을/를 막론하고 · N을/를 불문하고 nghĩa là "bất kể N" - thường đi với cặp đối lập hoặc phạm trù (남녀노소, 정규직과 비정규직, 업종, 나이). Trợ từ phải là 을/를; người Việt hay dùng 에 vì tiếng Việt nói "bất kể về...".
+  - type: deep_explain
+    text:
+      vi: Một lượt phát biểu tranh luận thường đi theo khuôn - 아시다시피 + số liệu → thừa nhận (-(으)ㄹ 법도 합니다만) → phản bác bằng chứng cứ → khái quát (업종을 막론하고...). Viết cách - 보시다시피 viết liền; -(으)ㄹ 법하다 có khoảng trắng trước 법 (그럴 법하다). Đừng nhầm V-다시피 với V-다시피 하다 "gần như" (회사에서 살다시피 했다 - gần như sống ở công ty).
+  - type: example
+    target: 아시다시피 우리나라의 연간 근로 시간은 OECD 평균보다 여전히 긴 편입니다.
+    target_lang: ko
+    translation:
+      vi: Như quý vị đã biết, số giờ làm việc hằng năm của nước ta vẫn thuộc loại dài hơn mức trung bình của OECD.
+    note:
+      vi: Mở đầu bằng thông tin chung mà khán giả đã biết.
+  - type: example
+    target: 임금 협상이 반년 넘게 제자리걸음이니 노조가 파업을 검토할 법도 합니다.
+    target_lang: ko
+    translation:
+      vi: Đàm phán lương giậm chân tại chỗ hơn nửa năm thì việc công đoàn tính đến đình công cũng là dễ hiểu.
+    note:
+      vi: -(으)ㄹ 법도 하다 - người nói thừa nhận hành động của bên kia là có lý.
+  - type: example
+    target: 이 문제는 정규직과 비정규직을 막론하고 모든 근로자에게 해당됩니다.
+    target_lang: ko
+    translation:
+      vi: Vấn đề này áp dụng cho mọi người lao động, bất kể là nhân viên chính thức hay không chính thức.
+    note:
+      vi: Cặp đối lập + 을/를 막론하고.
+  - type: example
+    target: 주 4일제가 도입되면 하루 업무량이 늘어 오히려 과로로 이어질 수 있다는 우려도 나올 법합니다.
+    target_lang: ko
+    translation:
+      vi: Lo ngại rằng nếu áp dụng tuần làm bốn ngày thì khối lượng việc mỗi ngày tăng lên và ngược lại dẫn tới làm việc quá sức cũng là điều dễ hiểu.
+    note:
+      vi: 법하다 thừa nhận ý của phe phản đối - bước đệm trước khi phản bác.
+  - type: example
+    target: 재택근무는 업종을 불문하고 확대되었지만 최근에는 사무실 출근을 다시 요구하는 기업도 늘고 있습니다.
+    target_lang: ko
+    translation:
+      vi: Làm việc tại nhà đã được mở rộng ở mọi ngành nghề, nhưng gần đây số doanh nghiệp yêu cầu nhân viên quay lại văn phòng cũng đang tăng.
+    note:
+      vi: 불문하고 = 막론하고; cả hai đều trang trọng.
+  - type: common_mistake
+    wrong: 보시는 다시피 출산 휴가를 쓰는 남성 직원이 늘었습니다.
+    right: 보시다시피 출산 휴가를 쓰는 남성 직원이 늘었습니다.
+    target_lang: ko
+    note:
+      vi: -다시피 gắn thẳng vào gốc động từ (kể cả -시-) - 보다 → 보시다시피, không có định ngữ -는 ở giữa.
+  - type: common_mistake
+    wrong: 이번 주말에 볼 법한 영화를 추천해 주세요.
+    right: 이번 주말에 볼 만한 영화를 추천해 주세요.
+    target_lang: ko
+    note:
+      vi: Ý "đáng để xem" là -(으)ㄹ 만하다. -(으)ㄹ 법하다 là "có lý, dễ hiểu là", không dùng để khen một thứ đáng làm.
+  - type: common_mistake
+    wrong: 나이에 막론하고 누구나 신청할 수 있습니다.
+    right: 나이를 막론하고 누구나 신청할 수 있습니다.
+    target_lang: ko
+    note:
+      vi: 막론하다, 불문하다 là ngoại động từ nên cần 을/를. Tiếng Việt "bất kể về tuổi" khiến bạn muốn thêm 에, nhưng 에 chỉ đi với 상관없이 / 관계없이.
+  - type: summary
+    points:
+      - vi: 아시다시피 · 보시다시피 · 말씀드렸다시피 = như quý vị đã biết / thấy / như tôi đã nói.
+      - vi: V/A-(으)ㄹ 법(도) 하다 = cũng dễ hiểu là... - dùng để thừa nhận trước khi phản bác; khác -(으)ㄹ 만하다 "đáng để".
+      - vi: N을/를 막론하고 · N을/를 불문하고 = bất kể N; khẩu ngữ - N와/과 상관없이.
+      - vi: 노조 ↔ 사측; 임금 협상이 타결되다 / 결렬되다; 파업에 들어가다.
+      - vi: 근로 시간 (pháp lý) · 근무 시간 (đời thường); 주 4일제 đọc 주 사일제.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:el-debate-mcq-asidasipi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:el-gram-dasipi
+    prompt:
+      stem: "아시다시피 지난해 과로로 인한 산업 재해 신청은 크게 늘었습니다. - 아시다시피 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: g4v, text: "Như quý vị đã biết", lang: vi }
+        - { id: y1k, text: "Nếu quý vị biết", lang: vi }
+        - { id: c7r, text: "Quý vị gần như đã biết", lang: vi }
+        - { id: p2s, text: "Để quý vị biết được", lang: vi }
+    answer:
+      correct_option_id: g4v
+    explanation:
+      vi: V-다시피 = "như (đã)..." - dựa vào điều người nghe đã biết; -시- là kính ngữ với khán giả. "Gần như" là nghĩa của cấu trúc khác, -다시피 하다.
+    display_answer: "Như quý vị đã biết"
+
+  - key: ko:exercise:el-debate-listen-beop
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-gram-l-beophada
+    prompt:
+      audio_asset_id: null
+      fallback_text: 반년 넘게 협상이 진전되지 않았으니 노조가 파업을 예고할 법도 합니다.
+      options:
+        - { id: f8m, text: "Đàm phán hơn nửa năm không tiến triển nên việc công đoàn báo trước sẽ đình công cũng là dễ hiểu.", lang: vi }
+        - { id: o3w, text: "Theo luật, công đoàn phải báo trước nửa năm nếu muốn đình công.", lang: vi }
+        - { id: t6c, text: "Công đoàn đã đình công suốt hơn nửa năm.", lang: vi }
+        - { id: k0z, text: "Đàm phán tiến triển tốt nên công đoàn huỷ đình công.", lang: vi }
+    answer:
+      correct_option_id: f8m
+    explanation:
+      vi: -(으)ㄹ 법도 하다 = "cũng là điều dễ hiểu" - người nói thừa nhận hành động của công đoàn có lý. 법 không phải "luật"; 진전되지 않았다 là không tiến triển, và 예고하다 là báo trước chứ chưa đình công.
+    display_answer: "Đàm phán hơn nửa năm không tiến triển nên việc công đoàn báo trước sẽ đình công cũng là dễ hiểu."
+
+  - key: ko:exercise:el-debate-mcq-maknon-particle
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-gram-eul-maknonhago
+    prompt:
+      stem: "Chọn câu đúng ngữ pháp."
+      stem_lang: vi
+      options:
+        - { id: w5d, text: "남녀노소를 막론하고 누구나 참여할 수 있습니다.", lang: ko }
+        - { id: n9a, text: "남녀노소에 막론하고 누구나 참여할 수 있습니다.", lang: ko }
+        - { id: h2e, text: "남녀노소가 막론하고 누구나 참여할 수 있습니다.", lang: ko }
+        - { id: s6j, text: "남녀노소와 막론하고 누구나 참여할 수 있습니다.", lang: ko }
+    answer:
+      correct_option_id: w5d
+    explanation:
+      vi: 막론하다 là ngoại động từ - "bất luận (cái gì)" - nên N phải mang 을/를. 에 đi với 상관없이, còn 이/가 và 와/과 không hợp với cấu trúc này.
+    display_answer: "남녀노소를 막론하고 누구나 참여할 수 있습니다."
+
+  - key: ko:exercise:el-debate-fill-paeop
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-paeop
+    prompt:
+      template: "임금 협상이 결렬되자 화물 운송 노조가 {{b1}}에 돌입해 항만 물류가 멈춰 섰다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - Người lao động cùng ngừng làm việc để đòi quyền lợi.
+        - 파...
+    answer:
+      blanks:
+        b1: [파업, 총파업]
+    known_wrong:
+      - answer: 시위
+        feedback_vi: 시위 là biểu tình. Việc ngừng vận chuyển hàng hoá (물류가 멈춰 서다) cho thấy người lao động ngừng làm việc - 파업.
+        error_tag: vocab_meaning
+      - answer: 해고
+        feedback_vi: 해고 là công ty sa thải người lao động, không phải hành động của công đoàn.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 임금 협상이 결렬되다 (đàm phán lương đổ vỡ) → 노조가 파업에 돌입하다 (công đoàn bước vào đình công) là chuỗi sự kiện quen thuộc trong tin lao động. 돌입하다 là "bước vào, lao vào" - trang trọng hơn 들어가다.
+    display_answer: 임금 협상이 결렬되자 화물 운송 노조가 파업에 돌입해 항만 물류가 멈춰 섰다.
+
+  - key: ko:exercise:el-debate-mcq-sailje
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:el-ju-sail-je
+    prompt:
+      stem: "Bản tin đọc cụm 주 4일제 như thế nào?"
+      stem_lang: vi
+      options:
+        - { id: q7u, text: "주 사일제", lang: ko }
+        - { id: m1b, text: "주 네일제", lang: ko }
+        - { id: d4x, text: "주 넷일제", lang: ko }
+        - { id: a9g, text: "주 사일째", lang: ko }
+    answer:
+      correct_option_id: q7u
+    explanation:
+      vi: 일 (ngày) là từ Hán Hàn nên số đi kèm đọc theo Hán Hàn - 사일. 네 / 넷 là số thuần Hàn, còn 사일째 nghĩa là "ngày thứ tư".
+    display_answer: "주 사일제"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:el-debate-fill-bosidasipi
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-dasipi
+    prompt:
+      template: "{{b1}} 이 그래프는 지난 10년간 연장 근로 시간이 꾸준히 줄어 왔음을 보여 줍니다."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [보시다시피, 보다시피, 보시는 바와 같이, 보시는 것처럼]
+    known_wrong:
+      - answer: 보시는 다시피
+        feedback_vi: -다시피 gắn thẳng vào gốc động từ - 보시다시피.
+        error_tag: dasipi_form
+      - answer: 보시다싶이
+        feedback_vi: Sai chính tả - viết 보시다시피 (시피), không phải 싶이.
+        error_tag: dasipi_spelling
+      - answer: 보시다시피 하면
+        feedback_vi: -다시피 하다 là "gần như", sai nghĩa. Chỉ cần 보시다시피.
+        error_tag: dasipi_form
+    explanation:
+      vi: Người trình bày chỉ vào biểu đồ trước mặt khán giả nên dùng 보시다시피 (kính ngữ). 보시는 바와 같이 là cách nói tương đương, trang trọng hơn.
+    display_answer: 보시다시피 이 그래프는 지난 10년간 연장 근로 시간이 꾸준히 줄어 왔음을 보여 줍니다.
+
+  - key: ko:exercise:el-debate-fill-beop-form
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-l-beophada
+    prompt:
+      template: "석 달째 주말도 없이 일했으니 몸이 (상하다 →) {{b1}} 법도 하다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [상할]
+    known_wrong:
+      - answer: 상한
+        feedback_vi: -(으)ㄹ 법하다 luôn dùng định ngữ -(으)ㄹ - 상할 법하다.
+        error_tag: beophada_form
+      - answer: 상하는
+        feedback_vi: Định ngữ hiện tại -는 không đi với 법하다. Viết 상할.
+        error_tag: beophada_form
+    explanation:
+      vi: Làm việc ba tháng liền không nghỉ cuối tuần thì sức khoẻ sa sút cũng là lẽ thường - V-(으)ㄹ 법도 하다. Gốc 상하 không patchim nên thêm ㄹ - 상할.
+    display_answer: 석 달째 주말도 없이 일했으니 몸이 상할 법도 하다.
+
+  - key: ko:exercise:el-debate-translate-bulmun
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:el-gram-eul-maknonhago
+    prompt:
+      source_text: Bất kể tuổi tác, ai cũng có thể ứng tuyển.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "나이를 막론하고 누구나 지원할 수 있다."
+        - "나이를 막론하고 누구나 지원할 수 있습니다."
+        - "나이를 막론하고 누구나 지원할 수 있어요."
+        - "나이를 불문하고 누구나 지원할 수 있다."
+        - "나이를 불문하고 누구나 지원할 수 있습니다."
+        - "나이를 불문하고 누구나 지원할 수 있어요."
+        - "나이 불문하고 누구나 지원할 수 있다."
+        - "나이 불문하고 누구나 지원할 수 있습니다."
+        - "나이 불문하고 누구나 지원할 수 있어요."
+        - "나이에 상관없이 누구나 지원할 수 있다."
+        - "나이에 상관없이 누구나 지원할 수 있습니다."
+        - "나이에 상관없이 누구나 지원할 수 있어요."
+        - "나이와 상관없이 누구나 지원할 수 있다."
+        - "나이와 상관없이 누구나 지원할 수 있습니다."
+        - "나이와 상관없이 누구나 지원할 수 있어요."
+        - "나이에 관계없이 누구나 지원할 수 있다."
+        - "나이에 관계없이 누구나 지원할 수 있습니다."
+        - "나이에 관계없이 누구나 지원할 수 있어요."
+    known_wrong:
+      - answer: 나이에 막론하고 누구나 지원할 수 있습니다.
+        feedback_vi: 막론하다 cần 을/를 - 나이를 막론하고.
+        error_tag: maknon_particle
+      - answer: 나이를 막론해서 누구나 지원할 수 있습니다.
+        feedback_vi: Cấu trúc cố định là 막론하고 (hoặc 막론하여), không dùng 막론해서.
+        error_tag: maknon_form
+      - answer: Nai-reul maknonhago nuguna jiwonhal su itseumnida.
+        feedback_vi: Hãy viết bằng Hangul. Phiên âm Latinh chỉ để tham khảo.
+        error_tag: romanization
+    explanation:
+      vi: Ý "bất kể N" trang trọng là N을/를 막론하고 · 불문하고; khẩu ngữ là N에 / N와 상관없이. 누구나 = ai cũng; 지원하다 = ứng tuyển.
+    display_answer: 나이를 막론하고 누구나 지원할 수 있습니다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:el-debate-translate-bosidasipi-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:el-jaetaek-geunmu
+    prompt:
+      source_text: 보시다시피 재택근무를 도입한 뒤 직원들의 이직률이 절반 가까이 줄었습니다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Như quý vị thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như quý vị có thể thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi áp dụng chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa."
+        - "Như các bạn có thể thấy, sau khi triển khai chế độ làm việc tại nhà, tỷ lệ nghỉ việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như quý vị thấy, sau khi triển khai làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như quý vị đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như các bạn thấy, sau khi triển khai làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ nhân viên chuyển việc đã giảm gần một nửa."
+        - "Như các bạn đã thấy, sau khi triển khai làm việc tại nhà, tỷ lệ chuyển việc của nhân viên đã giảm gần một nửa."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nếu quý vị nhìn thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa.
+        feedback_vi: -다시피 không phải điều kiện "nếu". Nó là "như quý vị (đã) thấy".
+        error_tag: dasipi_misread
+      - answer: Như quý vị thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã tăng gần gấp đôi.
+        feedback_vi: 절반 가까이 줄었다 là giảm gần một nửa, không phải tăng gấp đôi.
+        error_tag: meaning_reversed
+    explanation:
+      vi: 보시다시피 = như quý vị thấy (người nói chỉ vào số liệu); 재택근무를 도입하다 = áp dụng làm việc tại nhà; 이직률 = tỷ lệ nghỉ việc, chuyển việc; 절반 가까이 = gần một nửa.
+    display_answer: Như quý vị thấy, sau khi áp dụng làm việc tại nhà, tỷ lệ nhân viên nghỉ việc đã giảm gần một nửa.
+
+  - key: ko:exercise:el-debate-order-maknon
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:el-gram-eul-maknonhago
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bất kể quy mô doanh nghiệp, tranh cãi xoay quanh giờ làm việc vẫn đang tiếp diễn.\""
+      tokens:
+        - { id: z4h, text: 논쟁이 }
+        - { id: b8w, text: 근로 }
+        - { id: i3q, text: 막론하고 }
+        - { id: r1e, text: 있다 }
+        - { id: u7p, text: 규모를 }
+        - { id: x2c, text: 둘러싼 }
+        - { id: e6k, text: 기업 }
+        - { id: l9t, text: 시간을 }
+        - { id: o5m, text: 이어지고 }
+        - { id: j0a, text: 규모에 }
+    answer:
+      orders:
+        - [e6k, u7p, i3q, b8w, l9t, x2c, z4h, o5m, r1e]
+        - [b8w, l9t, x2c, z4h, e6k, u7p, i3q, o5m, r1e]
+    explanation:
+      vi: N을/를 막론하고 - 기업 규모를 막론하고; cụm này có thể đứng đầu câu hoặc ngay trước vị ngữ. N을/를 둘러싼 N = "xoay quanh". 규모에 là token nhiễu vì 막론하다 cần 을/를.
+    display_answer: 기업 규모를 막론하고 근로 시간을 둘러싼 논쟁이 이어지고 있다.
+
+  - key: ko:exercise:el-debate-mcq-rebuttal
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:el-gram-l-beophada
+    prompt:
+      stem: "Trong buổi tranh luận, phe phản đối lo rằng tuần làm bốn ngày sẽ làm năng suất giảm. Câu nào vừa thừa nhận lo ngại đó là có lý, vừa phản bác bằng số liệu?"
+      stem_lang: vi
+      options:
+        - { id: v3n, text: "그런 우려가 나올 법도 합니다만, 시범 운영 결과를 보면 생산성은 오히려 높아졌습니다.", lang: ko }
+        - { id: c8f, text: "그런 우려는 나올 리가 없으니 생산성은 당연히 높아졌습니다.", lang: ko }
+        - { id: y5s, text: "그런 우려가 나왔기 때문에 생산성이 높아졌습니다.", lang: ko }
+        - { id: g1o, text: "그런 우려를 막론하고 생산성은 낮아졌습니다.", lang: ko }
+    answer:
+      correct_option_id: v3n
+    explanation:
+      vi: -(으)ㄹ 법도 합니다만 = "lo ngại đó cũng dễ hiểu, nhưng..." - thừa nhận rồi phản bác bằng kết quả thí điểm. Phương án 2 gạt bỏ lo ngại (-(으)ㄹ 리가 없다), phương án 3 vô lý về nhân quả, phương án 4 đồng ý rằng năng suất giảm.
+    display_answer: "그런 우려가 나올 법도 합니다만, 시범 운영 결과를 보면 생산성은 오히려 높아졌습니다."
+
+  - key: ko:exercise:el-debate-translate-gwaro
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:el-gwaro
+    prompt:
+      source_text: Như quý vị đã biết, làm việc quá sức kéo dài có thể dẫn tới bệnh nghiêm trọng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "아시다시피 과로가 오래 이어지면 심각한 질병으로 이어질 수 있습니다."
+        - "아시다시피 과로가 오래 이어지면 심각한 병에 걸릴 수 있습니다."
+        - "아시다시피 과로가 오래 이어지면 심각한 질병이 생길 수 있습니다."
+        - "아시다시피 과로가 오래 이어지면 심각한 질병을 일으킬 수 있습니다."
+        - "아시다시피 과로가 오래 이어지면 심각한 질병으로 이어질 수 있어요."
+        - "아시다시피 과로가 오래 계속되면 심각한 질병으로 이어질 수 있습니다."
+        - "아시다시피 과로가 오래 계속되면 심각한 병에 걸릴 수 있습니다."
+        - "아시다시피 과로가 오래 계속되면 심각한 질병이 생길 수 있습니다."
+        - "아시다시피 과로가 오래 계속되면 심각한 질병을 일으킬 수 있습니다."
+        - "아시다시피 과로가 오래 계속되면 심각한 질병으로 이어질 수 있어요."
+        - "아시다시피 오랫동안 과로하면 심각한 질병으로 이어질 수 있습니다."
+        - "아시다시피 오랫동안 과로하면 심각한 병에 걸릴 수 있습니다."
+        - "아시다시피 오랫동안 과로하면 심각한 질병이 생길 수 있습니다."
+        - "아시다시피 오랫동안 과로하면 심각한 질병을 일으킬 수 있습니다."
+        - "아시다시피 오랫동안 과로하면 심각한 질병으로 이어질 수 있어요."
+        - "아시다시피 장기간 과로하면 심각한 질병으로 이어질 수 있습니다."
+        - "아시다시피 장기간 과로하면 심각한 병에 걸릴 수 있습니다."
+        - "아시다시피 장기간 과로하면 심각한 질병이 생길 수 있습니다."
+        - "아시다시피 장기간 과로하면 심각한 질병을 일으킬 수 있습니다."
+        - "아시다시피 장기간 과로하면 심각한 질병으로 이어질 수 있어요."
+        - "아시다시피 장기간의 과로는 심각한 질병으로 이어질 수 있다."
+        - "아시다시피 장기간의 과로는 심각한 질병을 일으킬 수 있다."
+        - "아시다시피 장기간의 과로는 심각한 질병으로 이어질 수 있습니다."
+        - "아시다시피 장기간의 과로는 심각한 질병을 일으킬 수 있습니다."
+        - "아시다시피 오랜 과로는 심각한 질병으로 이어질 수 있다."
+        - "아시다시피 오랜 과로는 심각한 질병을 일으킬 수 있다."
+        - "아시다시피 오랜 과로는 심각한 질병으로 이어질 수 있습니다."
+        - "아시다시피 오랜 과로는 심각한 질병을 일으킬 수 있습니다."
+        - "알다시피 장기간의 과로는 심각한 질병으로 이어질 수 있다."
+        - "알다시피 장기간의 과로는 심각한 질병을 일으킬 수 있다."
+        - "알다시피 장기간의 과로는 심각한 질병으로 이어질 수 있습니다."
+        - "알다시피 장기간의 과로는 심각한 질병을 일으킬 수 있습니다."
+        - "알다시피 오랜 과로는 심각한 질병으로 이어질 수 있다."
+        - "알다시피 오랜 과로는 심각한 질병을 일으킬 수 있다."
+        - "알다시피 오랜 과로는 심각한 질병으로 이어질 수 있습니다."
+        - "알다시피 오랜 과로는 심각한 질병을 일으킬 수 있습니다."
+    known_wrong:
+      - answer: 아시는 다시피 과로가 오래 이어지면 심각한 질병으로 이어질 수 있습니다.
+        feedback_vi: -다시피 gắn thẳng vào gốc - 아시다시피.
+        error_tag: dasipi_form
+      - answer: 아시면 과로가 오래 이어지면 심각한 질병으로 이어질 수 있습니다.
+        feedback_vi: Ý "như quý vị đã biết" là 아시다시피, không phải điều kiện 아시면.
+        error_tag: dasipi_misread
+    explanation:
+      vi: Mở đầu bằng 아시다시피 (kính ngữ với khán giả); "làm việc quá sức kéo dài" là 과로가 오래 이어지다 hoặc 장기간 과로하다; "có thể dẫn tới" là -(으)로 이어질 수 있다. Trong bài viết -다 có thể dùng 알다시피.
+    display_answer: 아시다시피 과로가 오래 이어지면 심각한 질병으로 이어질 수 있습니다.

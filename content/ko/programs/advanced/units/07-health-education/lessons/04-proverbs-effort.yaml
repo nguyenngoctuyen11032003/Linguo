@@ -1,0 +1,618 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:proverbs-effort
+order_index: 4
+level: topik5
+title:
+  vi: Thành ngữ và tục ngữ về nỗ lực, sức khoẻ và học tập
+objectives:
+  - vi: Hiểu và dùng sáu thành ngữ bốn chữ - 고진감래, 유비무환, 자업자득, 대기만성, 일취월장, 과유불급.
+  - vi: Hiểu và trích dẫn bốn tục ngữ - 백문이 불여일견, 아는 길도 물어 가라, 병 주고 약 준다, 시작이 반이다.
+  - vi: Trích dẫn đúng khuôn -(이)라고, -(이)라는 말처럼, -다는 말이 있듯이 trong lời nói và bài luận.
+estimated_minutes: 25
+skills: [vocabulary, reading, writing]
+prerequisites: [ko:lesson:presentation-discussion]
+items:
+  - item: ko:item:he-gojingamnae
+  - item: ko:item:he-yubimuhwan
+  - item: ko:item:he-jaeopjadeuk
+  - item: ko:item:he-daegimanseong
+  - item: ko:item:he-ilchwiwoljang
+  - item: ko:item:he-gwayubulgeup
+  - item: ko:item:he-baengmuni-buryeoilgyeon
+  - item: ko:item:he-aneun-gildo
+  - item: ko:item:he-byeong-jugo-yak
+  - item: ko:item:he-sijagi-banida
+  - item: ko:item:ac-sajaseongeo
+    role: reuse
+  - item: ko:item:ac-sokdam
+    role: reuse
+  - item: ko:item:ac-jaksimsamil
+    role: reuse
+  - item: ko:item:ac-so-ilko-oeyanggan
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Ở unit 2 bạn đã học bảy thành ngữ, tục ngữ đầu tiên. Bài này thêm mười câu xoay quanh nỗ lực, sức khoẻ và học tập - đúng những chủ đề hay xuất hiện trong bài luận TOPIK và lời khuyên hằng ngày.
+  - type: explain
+    text:
+      vi: Thành ngữ bốn chữ (사자성어) là lợi thế lớn của người Việt vì phần lớn có âm Hán Việt quen thuộc - 고진감래 (khổ tận cam lai), 유비무환 (hữu bị vô hoạn), 대기만성 (đại khí vãn thành). Điều cần học là cách dùng trong câu Hàn - làm danh từ + 이다 (자업자득이다), làm động từ với 하다 (실력이 일취월장하다), hay ghép 형 (대기만성형).
+  - type: explain
+    text:
+      vi: Tục ngữ thường được trích bằng khuôn cố định - N(이)라고, (đầu câu), N(이)라는 말처럼, -다는 말이 있듯이. Câu kết thúc bằng 다 (가라, 준다, 반이다) thì đổi thành -(이)라는 / -는다는 khi trích - 시작이 반이라는 말, 아는 길도 물어 가라는 말.
+  - type: explain
+    text:
+      vi: Nhóm theo ý nghĩa để dễ nhớ - nỗ lực, thời gian (고진감래, 대기만성, 일취월장, 시작이 반이다); cẩn trọng, chừng mực (유비무환, 과유불급, 아는 길도 물어 가라); hệ quả (자업자득, 병 주고 약 준다); trải nghiệm (백문이 불여일견).
+  - type: deep_explain
+    text:
+      vi: Trong bài luận TOPIK câu 54, một thành ngữ ở câu mở đầu giúp bài tự nhiên hơn, nhưng đừng nhồi nhiều câu - một câu là đủ. Hãy chú ý các cặp đối lập - 유비무환 (chuẩn bị trước) ↔ 소 잃고 외양간 고친다 (mất bò mới lo làm chuồng); 시작이 반이다 (động viên bắt đầu) ↔ 작심삼일 (quyết tâm ba ngày). Một số câu mang ý trách móc (자업자득, 병 주고 약 준다), nên nói với người đang gặp nạn có thể rất nặng lời.
+  - type: example
+    target: 유비무환이라고, 장마가 시작되기 전에 집 주변 배수구를 미리 청소해 두었다.
+    target_lang: ko
+    translation:
+      vi: Như câu "có phòng thì không lo", tôi đã dọn sẵn cống thoát nước quanh nhà trước khi mùa mưa bắt đầu.
+    note:
+      vi: N(이)라고, ở đầu câu - cách trích thành ngữ phổ biến nhất trong lời nói.
+  - type: example
+    target: 처음에는 발음이 서툴렀지만 매일 녹음하며 연습하더니 실력이 일취월장했다.
+    target_lang: ko
+    translation:
+      vi: Lúc đầu phát âm còn vụng, nhưng nhờ ngày nào cũng ghi âm luyện tập mà trình độ tiến bộ vượt bậc.
+    note:
+      vi: 일취월장하다 dùng như động từ, chủ ngữ là 실력.
+  - type: example
+    target: 영양제가 몸에 좋다지만 과유불급이니 하루 권장량을 꼭 지켜야 한다.
+    target_lang: ko
+    translation:
+      vi: Thuốc bổ tốt cho cơ thể thật, nhưng quá cũng như thiếu, nên nhất định phải giữ đúng liều khuyến nghị mỗi ngày.
+    note:
+      vi: 과유불급 - lời khuyên chừng mực về sức khoẻ.
+  - type: example
+    target: 수십 번 떨어지고도 포기하지 않았던 그의 합격 소식을 들으니 고진감래라는 말이 절로 떠올랐다.
+    target_lang: ko
+    translation:
+      vi: Nghe tin anh ấy đỗ sau mấy chục lần trượt mà không bỏ cuộc, câu "khổ tận cam lai" tự nhiên hiện lên trong đầu tôi.
+    note:
+      vi: -(이)라는 말이 떠오르다 - cách đưa thành ngữ vào câu kể.
+  - type: example
+    target: 시작이 반이라는 말이 있듯이 거창한 계획보다 오늘 바로 할 수 있는 작은 일부터 시작하는 것이 중요하다.
+    target_lang: ko
+    translation:
+      vi: Như người ta nói bắt đầu là xong một nửa, điều quan trọng là bắt tay từ việc nhỏ làm được ngay hôm nay hơn là kế hoạch hoành tráng.
+    note:
+      vi: -다는 말이 있듯이 - khuôn trích tục ngữ trang trọng, hợp với bài luận.
+  - type: common_mistake
+    wrong: 올해 들어 집값이 일취월장했다.
+    right: 올해 들어 집값이 크게 치솟았다.
+    target_lang: ko
+    note:
+      vi: 일취월장 chỉ dùng cho năng lực, kỹ năng tiến bộ. Giá cả, số lượng tăng thì dùng 치솟다, 급등하다.
+  - type: common_mistake
+    wrong: 시작이 반이니까 이제 다 끝났어.
+    right: 시작이 반이니까 일단 시작해 보자.
+    target_lang: ko
+    note:
+      vi: Câu này nghĩa "bắt đầu là đã xong một nửa" - để động viên người ta bắt tay vào việc, không phải tuyên bố việc đã xong.
+  - type: common_mistake
+    wrong: 백문이 불여일견이라서 말처럼 직접 가 보는 게 좋겠어요.
+    right: 백문이 불여일견이라는 말처럼 직접 가 보는 게 좋겠어요.
+    target_lang: ko
+    note:
+      vi: Trước 말처럼 cần định ngữ trích dẫn -(이)라는. -(이)라서 là "vì là", không nối được với 말.
+  - type: summary
+    points:
+      - vi: Nỗ lực - 고진감래 (khổ tận cam lai), 대기만성 (thành đạt muộn), 일취월장 (tiến bộ vượt bậc), 시작이 반이다 (bắt đầu là xong một nửa).
+      - vi: Cẩn trọng - 유비무환 (có phòng thì không lo), 과유불급 (quá cũng như thiếu), 아는 길도 물어 가라 (biết rồi vẫn nên hỏi lại).
+      - vi: Hệ quả - 자업자득 (tự làm tự chịu), 병 주고 약 준다 (vừa đấm vừa xoa); trải nghiệm - 백문이 불여일견.
+      - vi: Trích dẫn - N(이)라고, · N(이)라는 말처럼 · -다는 말이 있듯이.
+      - vi: Cặp đối lập - 유비무환 ↔ 소 잃고 외양간 고친다 · 시작이 반이다 ↔ 작심삼일.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:he-prov-mcq-yubi
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-yubimuhwan
+    prompt:
+      stem: "태풍이 오기 전에 미리 창문을 점검하고 비상식량도 사 두었다. 이런 태도를 가장 잘 나타내는 말은?"
+      stem_lang: ko
+      options:
+        - { id: c3w, text: "유비무환", lang: ko }
+        - { id: r8k, text: "자업자득", lang: ko }
+        - { id: j1e, text: "대기만성", lang: ko }
+        - { id: v6n, text: "일취월장", lang: ko }
+    answer:
+      correct_option_id: c3w
+    explanation:
+      vi: Chuẩn bị trước khi hoạ đến là 유비무환 (hữu bị vô hoạn). 자업자득 là tự làm tự chịu, 대기만성 là thành đạt muộn, 일취월장 là tiến bộ nhanh - không hợp tình huống.
+    display_answer: "유비무환"
+
+  - key: ko:exercise:he-prov-listen-sijak
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:he-sijagi-banida
+    prompt:
+      audio_asset_id: null
+      fallback_text: 시작이 반이라고, 고민만 하지 말고 일단 원서부터 내 보자.
+      options:
+        - { id: a5d, text: "Bắt đầu là xong một nửa rồi, đừng chỉ đắn đo nữa, cứ nộp hồ sơ trước đã.", lang: vi }
+        - { id: m2t, text: "Bắt đầu được một nửa thì bỏ cũng được.", lang: vi }
+        - { id: y9f, text: "Hồ sơ đã nộp được một nửa rồi.", lang: vi }
+        - { id: h4o, text: "Chỉ cần làm một nửa hồ sơ là đủ.", lang: vi }
+    answer:
+      correct_option_id: a5d
+    explanation:
+      vi: 시작이 반이다 động viên bắt tay vào việc; -(이)라고, là khuôn trích tục ngữ; 일단 ... 내 보자 = cứ thử nộp trước đã. Không có ý bỏ dở hay làm một nửa.
+    display_answer: "Bắt đầu là xong một nửa rồi, đừng chỉ đắn đo nữa, cứ nộp hồ sơ trước đã."
+
+  - key: ko:exercise:he-prov-mcq-jaeop
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-jaeopjadeuk
+    prompt:
+      stem: "Một người hút thuốc nhiều năm dù bị khuyên can, nay mắc bệnh phổi và tự nói \"다 내 탓이지.\" Thành ngữ nào mô tả tình huống này?"
+      stem_lang: vi
+      options:
+        - { id: o7b, text: "자업자득", lang: ko }
+        - { id: e2s, text: "고진감래", lang: ko }
+        - { id: k5m, text: "백문이 불여일견", lang: ko }
+        - { id: w0x, text: "대기만성", lang: ko }
+    answer:
+      correct_option_id: o7b
+    explanation:
+      vi: Tự gây ra hậu quả cho chính mình là 자업자득 (tự làm tự chịu). 고진감래 là hết khổ đến sướng - ngược tình huống; hai câu còn lại nói về trải nghiệm và thành công muộn.
+    display_answer: "자업자득"
+
+  - key: ko:exercise:he-prov-fill-gwayu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:he-gwayubulgeup
+    prompt:
+      template: "운동이 건강에 좋기는 하지만 {{b1}}이라고, 하루에 세 시간씩 달리는 건 몸에 무리다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Quá cũng như thiếu (過猶不及).
+        - 과유...
+    answer:
+      blanks:
+        b1: [과유불급]
+    known_wrong:
+      - answer: 유비무환
+        feedback_vi: 유비무환 là chuẩn bị trước để tránh hoạ. Ý "tập quá cũng hại" là 과유불급.
+        error_tag: idiom_meaning
+      - answer: 일취월장
+        feedback_vi: 일취월장 là tiến bộ vượt bậc - không nói về việc làm quá mức.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 과유불급 (quá do bất cập) - làm quá cũng tệ như làm thiếu. Câu có -기는 하지만 (tốt thì tốt thật, nhưng) dẫn tới lời khuyên chừng mực.
+    display_answer: 운동이 건강에 좋기는 하지만 과유불급이라고, 하루에 세 시간씩 달리는 건 몸에 무리다.
+
+  - key: ko:exercise:he-prov-mcq-byeong
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ko:item:he-byeong-jugo-yak
+    prompt:
+      stem: "부장님이 회의 시간에 실컷 혼내고 나서 커피를 사 주셨다. 병 주고 약 주는 셈이다. - 병 주고 약 준다 ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s4g, text: "Vừa đấm vừa xoa - làm người ta khổ rồi lại an ủi.", lang: vi }
+        - { id: d8c, text: "Trưởng phòng mua thuốc cho nhân viên bị ốm.", lang: vi }
+        - { id: l1v, text: "Trưởng phòng rất hiền, không bao giờ mắng ai.", lang: vi }
+        - { id: z7r, text: "Cà phê là thuốc chữa bệnh mệt mỏi.", lang: vi }
+    answer:
+      correct_option_id: s4g
+    explanation:
+      vi: Gây "bệnh" (mắng) rồi cho "thuốc" (mua cà phê) - giống "vừa đấm vừa xoa". Tục ngữ dùng nghĩa bóng, không nói về thuốc thật.
+    display_answer: "Vừa đấm vừa xoa - làm người ta khổ rồi lại an ủi."
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:he-prov-fill-iraneun
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-baengmuni-buryeoilgyeon
+    prompt:
+      template: "백문이 불여일견{{b1}} 말처럼, 직접 현장에 가 보니 문제가 훨씬 분명하게 보였다."
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [이라는]
+    known_wrong:
+      - answer: 라는
+        feedback_vi: 견 có patchim nên phải là 이라는.
+        error_tag: particle_allomorph
+      - answer: 이라서
+        feedback_vi: -(이)라서 là "vì là", không nối với 말. Trích dẫn trước 말처럼 là -(이)라는.
+        error_tag: quote_form
+    explanation:
+      vi: N(이)라는 말처럼 = như câu nói N. 불여일견 kết thúc bằng phụ âm ㄴ nên dùng 이라는.
+    display_answer: 백문이 불여일견이라는 말처럼, 직접 현장에 가 보니 문제가 훨씬 분명하게 보였다.
+
+  - key: ko:exercise:he-prov-fill-ilchwi
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-ilchwiwoljang
+    prompt:
+      template: "매일 한 시간씩 원서를 소리 내어 읽었더니 독해 실력이 몇 달 사이에 {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [일취월장했다, 일취월장하였다, 일취월장했습니다, 일취월장했어요]
+    known_wrong:
+      - answer: 고진감래했다
+        feedback_vi: 고진감래 không dùng với 하다 và không nói về kỹ năng tiến bộ. "Tiến bộ vượt bậc" là 일취월장하다.
+        error_tag: idiom_meaning
+      - answer: 대기만성했다
+        feedback_vi: 대기만성 là thành đạt muộn, không dùng như động từ cho kỹ năng tiến bộ trong vài tháng.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 일취월장 (nhật tựu nguyệt tương) là thành ngữ hiếm hoi dùng được như động từ - 실력이 일취월장하다. 몇 달 사이에 (chỉ trong vài tháng) khớp với ý tiến bộ nhanh.
+    display_answer: 매일 한 시간씩 원서를 소리 내어 읽었더니 독해 실력이 몇 달 사이에 일취월장했다.
+
+  - key: ko:exercise:he-prov-translate-gojin
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-gojingamnae
+    prompt:
+      source_text: Đúng là khổ tận cam lai - sau bao năm vất vả, cuối cùng anh ấy đã thành công.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "고진감래라고, 오랜 고생 끝에 그는 마침내 성공했다."
+        - "고진감래라고, 오랜 고생 끝에 그는 마침내 성공했습니다."
+        - "고진감래라고, 오랜 고생 끝에 그는 마침내 성공했어요."
+        - "고진감래라고, 오랜 고생 끝에 그는 드디어 성공했다."
+        - "고진감래라고, 오랜 고생 끝에 그는 드디어 성공했습니다."
+        - "고진감래라고, 오랜 고생 끝에 그는 드디어 성공했어요."
+        - "고진감래라고, 오랜 시간 고생한 끝에 그는 마침내 성공했다."
+        - "고진감래라고, 오랜 시간 고생한 끝에 그는 마침내 성공했습니다."
+        - "고진감래라고, 오랜 시간 고생한 끝에 그는 마침내 성공했어요."
+        - "고진감래라고, 오랜 시간 고생한 끝에 그는 드디어 성공했다."
+        - "고진감래라고, 오랜 시간 고생한 끝에 그는 드디어 성공했습니다."
+        - "고진감래라고, 오랜 시간 고생한 끝에 그는 드디어 성공했어요."
+        - "고진감래라고, 몇 년 동안 고생한 끝에 그는 마침내 성공했다."
+        - "고진감래라고, 몇 년 동안 고생한 끝에 그는 마침내 성공했습니다."
+        - "고진감래라고, 몇 년 동안 고생한 끝에 그는 마침내 성공했어요."
+        - "고진감래라고, 몇 년 동안 고생한 끝에 그는 드디어 성공했다."
+        - "고진감래라고, 몇 년 동안 고생한 끝에 그는 드디어 성공했습니다."
+        - "고진감래라고, 몇 년 동안 고생한 끝에 그는 드디어 성공했어요."
+        - "고진감래라는 말처럼, 오랜 고생 끝에 그는 마침내 성공했다."
+        - "고진감래라는 말처럼, 오랜 고생 끝에 그는 마침내 성공했습니다."
+        - "고진감래라는 말처럼, 오랜 고생 끝에 그는 마침내 성공했어요."
+        - "고진감래라는 말처럼, 오랜 고생 끝에 그는 드디어 성공했다."
+        - "고진감래라는 말처럼, 오랜 고생 끝에 그는 드디어 성공했습니다."
+        - "고진감래라는 말처럼, 오랜 고생 끝에 그는 드디어 성공했어요."
+        - "고진감래라는 말처럼, 오랜 시간 고생한 끝에 그는 마침내 성공했다."
+        - "고진감래라는 말처럼, 오랜 시간 고생한 끝에 그는 마침내 성공했습니다."
+        - "고진감래라는 말처럼, 오랜 시간 고생한 끝에 그는 마침내 성공했어요."
+        - "고진감래라는 말처럼, 오랜 시간 고생한 끝에 그는 드디어 성공했다."
+        - "고진감래라는 말처럼, 오랜 시간 고생한 끝에 그는 드디어 성공했습니다."
+        - "고진감래라는 말처럼, 오랜 시간 고생한 끝에 그는 드디어 성공했어요."
+        - "고진감래라는 말처럼, 몇 년 동안 고생한 끝에 그는 마침내 성공했다."
+        - "고진감래라는 말처럼, 몇 년 동안 고생한 끝에 그는 마침내 성공했습니다."
+        - "고진감래라는 말처럼, 몇 년 동안 고생한 끝에 그는 마침내 성공했어요."
+        - "고진감래라는 말처럼, 몇 년 동안 고생한 끝에 그는 드디어 성공했다."
+        - "고진감래라는 말처럼, 몇 년 동안 고생한 끝에 그는 드디어 성공했습니다."
+        - "고진감래라는 말처럼, 몇 년 동안 고생한 끝에 그는 드디어 성공했어요."
+        - "고진감래라더니, 오랜 고생 끝에 그는 마침내 성공했다."
+        - "고진감래라더니, 오랜 고생 끝에 그는 마침내 성공했습니다."
+        - "고진감래라더니, 오랜 고생 끝에 그는 마침내 성공했어요."
+        - "고진감래라더니, 오랜 고생 끝에 그는 드디어 성공했다."
+        - "고진감래라더니, 오랜 고생 끝에 그는 드디어 성공했습니다."
+        - "고진감래라더니, 오랜 고생 끝에 그는 드디어 성공했어요."
+        - "고진감래라더니, 오랜 시간 고생한 끝에 그는 마침내 성공했다."
+        - "고진감래라더니, 오랜 시간 고생한 끝에 그는 마침내 성공했습니다."
+        - "고진감래라더니, 오랜 시간 고생한 끝에 그는 마침내 성공했어요."
+        - "고진감래라더니, 오랜 시간 고생한 끝에 그는 드디어 성공했다."
+        - "고진감래라더니, 오랜 시간 고생한 끝에 그는 드디어 성공했습니다."
+        - "고진감래라더니, 오랜 시간 고생한 끝에 그는 드디어 성공했어요."
+        - "고진감래라더니, 몇 년 동안 고생한 끝에 그는 마침내 성공했다."
+        - "고진감래라더니, 몇 년 동안 고생한 끝에 그는 마침내 성공했습니다."
+        - "고진감래라더니, 몇 년 동안 고생한 끝에 그는 마침내 성공했어요."
+        - "고진감래라더니, 몇 년 동안 고생한 끝에 그는 드디어 성공했다."
+        - "고진감래라더니, 몇 년 동안 고생한 끝에 그는 드디어 성공했습니다."
+        - "고진감래라더니, 몇 년 동안 고생한 끝에 그는 드디어 성공했어요."
+    known_wrong:
+      - answer: 고진감래이라고, 오랜 고생 끝에 그는 마침내 성공했다.
+        feedback_vi: 래 không có patchim nên dùng 라고 - 고진감래라고.
+        error_tag: particle_allomorph
+      - answer: 자업자득이라고, 오랜 고생 끝에 그는 마침내 성공했다.
+        feedback_vi: 자업자득 là tự làm tự chịu (hậu quả xấu). "Khổ tận cam lai" là 고진감래.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 고진감래 (khổ tận cam lai) trùng hoàn toàn với thành ngữ Hán Việt. Trích bằng N(이)라고, hoặc N(이)라더니 (đúng như người ta nói); 래 không patchim nên dùng 라고.
+    display_answer: 고진감래라고, 오랜 고생 끝에 그는 마침내 성공했다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:he-prov-translate-daegi-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:he-daegimanseong
+    prompt:
+      source_text: 대기만성이라는 말도 있으니 남들보다 조금 늦는다고 조급해할 필요는 없다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Có câu đại khí vãn thành nên không cần sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần sốt ruột vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần sốt ruột vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần nóng vội vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành nên không cần nóng vội vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần sốt ruột vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần sốt ruột vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần nóng vội vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn nên không cần nóng vội vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần sốt ruột vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần sốt ruột vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần nóng vội vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành nên không cần nóng vội vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần sốt ruột vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần sốt ruột vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần nóng vội vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn nên không cần nóng vội vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng nóng vội vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, nên đừng nóng vội vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng nóng vội vì chậm hơn người khác một chút."
+        - "Có câu đại khí vãn thành, đừng nóng vội vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng nóng vội vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, nên đừng nóng vội vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng nóng vội vì chậm hơn người khác một chút."
+        - "Có câu người tài thành đạt muộn, đừng nóng vội vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng nóng vội vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, nên đừng nóng vội vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng nóng vội vì chậm hơn người khác một chút."
+        - "Người ta nói đại khí vãn thành, đừng nóng vội vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng nóng vội vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, nên đừng nóng vội vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng sốt ruột chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng sốt ruột chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng sốt ruột vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng sốt ruột vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng nóng vội chỉ vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng nóng vội chỉ vì muộn hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng nóng vội vì chậm hơn người khác một chút."
+        - "Người ta nói người tài thành đạt muộn, đừng nóng vội vì muộn hơn người khác một chút."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có câu đại khí vãn thành nên phải nhanh hơn người khác.
+        feedback_vi: Ngược ý - 대기만성 an ủi người thành công muộn, và câu gốc nói không cần sốt ruột vì chậm.
+        error_tag: meaning_reversed
+      - answer: Vì chờ đợi lâu nên không cần sốt ruột.
+        feedback_vi: 대기 (大器 - tài lớn) ở đây không phải 대기 (待機 - chờ đợi).
+        error_tag: homonym_misread
+    explanation:
+      vi: 대기만성 = người tài thành đạt muộn; -다고 = chỉ vì (lý do bị xem nhẹ); 조급해하다 = sốt ruột, nóng vội; -(으)ㄹ 필요는 없다 = không cần.
+    display_answer: Có câu đại khí vãn thành nên không cần sốt ruột chỉ vì chậm hơn người khác một chút.
+
+  - key: ko:exercise:he-prov-order-aneun
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-aneun-gildo
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Như câu 'đường quen cũng phải hỏi', hãy kiểm tra lại đáp án trước khi nộp.\""
+      tokens:
+        - { id: p9a, text: 확인하세요 }
+        - { id: t3h, text: 말처럼 }
+        - { id: n6c, text: 물어 }
+        - { id: f1w, text: 답을 }
+        - { id: x8r, text: 제출하기 }
+        - { id: b2e, text: 가라서 }
+        - { id: q5m, text: 아는 }
+        - { id: i7s, text: 다시 }
+        - { id: g4k, text: 길도 }
+        - { id: u0y, text: 전에 }
+        - { id: o3d, text: 가라는 }
+    answer:
+      orders:
+        - [q5m, g4k, n6c, o3d, t3h, x8r, u0y, f1w, i7s, p9a]
+        - [q5m, g4k, n6c, o3d, t3h, x8r, u0y, i7s, f1w, p9a]
+    explanation:
+      vi: Tục ngữ kết thúc bằng 가라 nên khi trích thành 가라는 말처럼. 가라서 là token nhiễu. 다시 có thể đứng trước hoặc sau 답을.
+    display_answer: 아는 길도 물어 가라는 말처럼 제출하기 전에 답을 다시 확인하세요.
+
+  - key: ko:exercise:he-prov-mcq-restart
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:ac-jaksimsamil
+    prompt:
+      stem: "Bạn cùng phòng quyết tâm tập thể dục nhưng mới ba ngày đã bỏ. Bạn muốn động viên bạn ấy bắt đầu lại. Câu nào hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: k1j, text: "작심삼일이면 어때? 시작이 반이니까 다시 해 보자.", lang: ko }
+        - { id: e6u, text: "자업자득이니까 다시는 하지 마.", lang: ko }
+        - { id: w3b, text: "병 주고 약 주니까 운동하지 마.", lang: ko }
+        - { id: h8p, text: "백문이 불여일견이니까 운동은 보기만 하자.", lang: ko }
+    answer:
+      correct_option_id: k1j
+    explanation:
+      vi: 작심삼일 (quyết tâm ba ngày) mô tả việc bỏ cuộc, còn 시작이 반이다 động viên bắt đầu lại - đúng cặp đối lập trong bài. Các phương án khác dùng sai nghĩa và không có ý động viên.
+    display_answer: "작심삼일이면 어때? 시작이 반이니까 다시 해 보자."
+
+  - key: ko:exercise:he-prov-translate-baengmun
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:he-baengmuni-buryeoilgyeon
+    prompt:
+      source_text: Trăm nghe không bằng một thấy, nên tôi đã tự mình đến thăm ngôi trường đó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "백문이 불여일견이라고, 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이라고, 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이라고, 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이라고, 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이라고, 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이라고, 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이라고, 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이라고, 내가 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이라는 말처럼, 내가 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이니까, 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이니까, 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이니까, 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이니까, 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이니까, 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이니까, 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이니까, 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이니까, 내가 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 방문해 보았다."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 방문해 봤다."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 방문해 봤습니다."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 방문해 봤어요."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 찾아가 보았다."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 찾아가 봤다."
+        - "백문이 불여일견이니까, 제가 직접 그 학교를 찾아가 봤어요."
+        - "백문이 불여일견이라고, 직접 그 학교에 가 보았다."
+        - "백문이 불여일견이라고, 직접 그 학교에 가 봤다."
+        - "백문이 불여일견이라고, 직접 그 학교에 가 봤어요."
+        - "백문이 불여일견이라고, 직접 그 학교에 가 봤습니다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교에 가 보았다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교에 가 봤다."
+        - "백문이 불여일견이라고, 제가 직접 그 학교에 가 봤어요."
+        - "백문이 불여일견이라고, 제가 직접 그 학교에 가 봤습니다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교에 가 보았다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교에 가 봤다."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교에 가 봤어요."
+        - "백문이 불여일견이라는 말처럼, 직접 그 학교에 가 봤습니다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교에 가 보았다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교에 가 봤다."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교에 가 봤어요."
+        - "백문이 불여일견이라는 말처럼, 제가 직접 그 학교에 가 봤습니다."
+    known_wrong:
+      - answer: 백문이 불여일견라고, 직접 그 학교를 방문해 보았다.
+        feedback_vi: 견 có patchim nên phải là 이라고 - 불여일견이라고.
+        error_tag: particle_allomorph
+      - answer: 아는 길도 물어 가라고, 직접 그 학교를 방문해 보았다.
+        feedback_vi: Câu này nói về sự cẩn thận khi đã biết. Ý "nghe không bằng thấy" là 백문이 불여일견.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 백문이 불여일견 (bách văn bất như nhất kiến) = trăm nghe không bằng một thấy; trích bằng -(이)라고, hoặc -(이)라는 말처럼; "tự mình đến thăm" = 직접 방문해 보다 / 찾아가 보다.
+    display_answer: 백문이 불여일견이라고, 직접 그 학교를 방문해 보았다.

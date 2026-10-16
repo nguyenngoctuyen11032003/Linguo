@@ -1,0 +1,525 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T18:00:00+07:00"
+key: ko:lesson:editorial-refutation
+order_index: 4
+level: topik6
+title:
+  vi: Lập luận trong xã luận - -(으)ㄹ 리 만무하다, -(으)ㄴ들, -다손 치더라도, N(이)야말로
+objectives:
+  - vi: Phủ định mạnh một khả năng bằng -(으)ㄹ 리 만무하다.
+  - vi: Nhượng bộ để bác bỏ bằng -(으)ㄴ들 (tu từ "có... thì ích gì") và -다손 치더라도 ("cứ cho là...").
+  - vi: Nhấn mạnh kết luận bằng N(이)야말로, kêu gọi bằng 재고해야 한다.
+  - vi: Dùng từ vựng phê bình chính sách - 사설, 실효성, 형평성, 사각지대, 졸속, 취지.
+estimated_minutes: 30
+skills: [grammar, reading, writing]
+prerequisites: [ko:lesson:extreme-degree]
+items:
+  - item: ko:item:le-gram-l-ri-manmuhada
+  - item: ko:item:le-gram-n-deul
+  - item: ko:item:le-gram-dason-chideorado
+  - item: ko:item:le-gram-iyamallo
+  - item: ko:item:le-saseol
+  - item: ko:item:le-silhyoseong
+  - item: ko:item:le-hyeongpyeongseong
+  - item: ko:item:le-sagakjidae
+  - item: ko:item:le-jolsok
+  - item: ko:item:le-chwiji
+  - item: ko:item:le-jaegohada
+  - item: ko:item:gram-deorado
+    role: reuse
+  - item: ko:item:ac-banbakhada
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Xã luận (사설) là thể loại khó nhất trong phần đọc TOPIK 6 vì người viết vừa thừa nhận, vừa bác bỏ, vừa kêu gọi. Bài này cho bạn bốn cấu trúc lập luận và bộ từ vựng phê bình chính sách để đọc nhanh và viết được đoạn nghị luận.
+  - type: explain
+    text:
+      vi: Một bài xã luận thường đi theo khuôn - công nhận mục đích (취지는 좋으나) → nêu vấn đề (실효성, 형평성, 사각지대) → đoán trước phản biện rồi bác bỏ (-다손 치더라도, -(으)ㄴ들) → khẳng định (N이야말로) → kêu gọi (재고해야 한다). Nắm khuôn này, bạn biết câu nào là quan điểm thật của người viết.
+  - type: explain
+    text:
+      vi: -(으)ㄹ 리 만무하다 là "không đời nào..." - mạnh và trang trọng hơn -(으)ㄹ 리가 없다. -(으)ㄴ들 là "dù có... thì" mang tính tu từ, vế sau gần như luôn là câu hỏi 무슨 소용이 있겠는가 hoặc khẳng định "vô ích".
+  - type: explain
+    text:
+      vi: -다손 치더라도 là "cứ cho là... đi nữa" - người viết tạm chấp nhận lý lẽ của phe kia rồi chỉ ra kết luận vẫn không đổi. Tiếng Việt cũng có "cứ cho là", nên điều khó chỉ là cách chia - động từ -ㄴ/는다손, tính từ -다손, danh từ (이)라손.
+  - type: explain
+    text:
+      vi: N(이)야말로 là "chính N mới là..." - đánh dấu điều người viết cho là quan trọng nhất, thường ở câu kết. Có patchim thêm 이야말로 (교육이야말로), không patchim thêm 야말로 (감시야말로).
+  - type: deep_explain
+    text:
+      vi: Cách chia -(으)ㄴ들 - gắn vào gốc như định ngữ quá khứ - 하다 → 한들, 가다 → 간들, 먹다 → 먹은들, 크다 → 큰들, danh từ thì N인들 (누군들, 어딘들). Cách chia -다손 - 간다손, 먹는다손, 크다손, 학생이라손, quá khứ -았/었다손. Đọc xã luận, hãy xem câu sau -다손 치더라도 / -(으)ㄴ들 - đó mới là ý người viết, còn vế trước chỉ là lý lẽ bị bác bỏ.
+  - type: example
+    target: 정책의 취지는 공감할 만하나 현장의 목소리를 듣지 않은 대책이 실효성을 거둘 리 만무하다.
+    target_lang: ko
+    translation:
+      vi: Mục đích của chính sách thì đáng đồng cảm, nhưng một biện pháp không lắng nghe tiếng nói từ thực tế thì không đời nào đạt hiệu quả.
+    note:
+      vi: Công nhận 취지 rồi phủ định mạnh bằng -(으)ㄹ 리 만무하다 - khuôn mở đầu phổ biến.
+  - type: example
+    target: 처벌 규정을 아무리 촘촘하게 만든들 감독할 인력이 없다면 무슨 소용이 있겠는가.
+    target_lang: ko
+    translation:
+      vi: Quy định xử phạt có chặt chẽ đến đâu đi nữa mà không có người giám sát thì có ích gì?
+    note:
+      vi: -(으)ㄴ들 + câu hỏi tu từ - người viết cho rằng như vậy là vô ích.
+  - type: example
+    target: 예산이 넉넉하지 않다손 치더라도 복지의 사각지대를 방치하는 것은 정당화될 수 없다.
+    target_lang: ko
+    translation:
+      vi: Cứ cho là ngân sách không dư dả đi nữa thì việc bỏ mặc vùng tối của phúc lợi cũng không thể biện minh được.
+    note:
+      vi: Tạm chấp nhận lý lẽ "thiếu ngân sách" rồi bác bỏ.
+  - type: example
+    target: 같은 잘못에 대해 누구는 감옥에 가고 누구는 벌금만 낸다면 형평성에 어긋난다는 비판을 피하기 어렵다.
+    target_lang: ko
+    translation:
+      vi: Cùng một lỗi mà người thì vào tù, người thì chỉ nộp phạt, thì khó tránh khỏi lời phê phán là trái với công bằng.
+    note:
+      vi: 형평성에 어긋나다 = trái với tính công bằng giữa các đối tượng.
+  - type: example
+    target: 졸속으로 만든 법을 고치는 데에는 더 큰 비용이 든다. 충분한 숙의야말로 가장 경제적인 입법 절차다.
+    target_lang: ko
+    translation:
+      vi: Sửa một đạo luật làm vội vàng còn tốn kém hơn nhiều. Chính sự bàn bạc thấu đáo mới là quy trình lập pháp tiết kiệm nhất.
+    note:
+      vi: Câu kết của xã luận - N이야말로 nhấn mạnh giải pháp người viết đề xuất.
+  - type: common_mistake
+    wrong: 지금 와서 아무리 후회하는들 소용없다.
+    right: 지금 와서 아무리 후회한들 소용없다.
+    target_lang: ko
+    note:
+      vi: -(으)ㄴ들 gắn trực tiếp như định ngữ quá khứ - 후회하다 → 후회한들. Không có dạng -는들.
+  - type: common_mistake
+    wrong: 공사 비용이 많이 들다손 치더라도 안전 설비를 줄여서는 안 된다.
+    right: 공사 비용이 많이 든다손 치더라도 안전 설비를 줄여서는 안 된다.
+    target_lang: ko
+    note:
+      vi: Động từ phải chia như câu trần thuật -ㄴ/는다 - 들다 → 든다손. Chỉ tính từ mới dùng -다손 (크다손).
+  - type: common_mistake
+    wrong: 시민 교육야말로 민주주의를 지키는 힘이다.
+    right: 시민 교육이야말로 민주주의를 지키는 힘이다.
+    target_lang: ko
+    note:
+      vi: 교육 có patchim ㄱ nên dùng 이야말로. Giống 이에요 / 예요, lỗi này máy chấm tính là sai.
+  - type: summary
+    points:
+      - vi: Khuôn xã luận - 취지 인정 → 문제 (실효성 · 형평성 · 사각지대) → -다손 치더라도 / -(으)ㄴ들 → N(이)야말로 → 재고해야 한다.
+      - vi: V/A-(으)ㄹ 리(가) 만무하다 = không đời nào (văn viết, mạnh hơn -(으)ㄹ 리가 없다).
+      - vi: V/A-(으)ㄴ들 · N인들 = dù có... thì (ích gì) - thường kèm câu hỏi tu từ.
+      - vi: V-ㄴ/는다손 · A-다손 · N(이)라손 치더라도 = cứ cho là... đi nữa.
+      - vi: 졸속 (vội mà ẩu, chê) ≠ 신속 (nhanh chóng, khen); 재고 (xem xét lại) ≠ 재고 (hàng tồn kho).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ko:exercise:le-edit-mcq-manmu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ko:item:le-gram-l-ri-manmuhada
+    prompt:
+      stem: "책상 앞에만 앉아 있는 관료들이 현장의 어려움을 알 리 만무하다. - Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: c4n, text: "Những quan chức chỉ ngồi bàn giấy thì không đời nào hiểu được khó khăn ở cơ sở.", lang: vi }
+        - { id: w7a, text: "Những quan chức ngồi bàn giấy chắc chắn hiểu rõ khó khăn ở cơ sở.", lang: vi }
+        - { id: r1g, text: "Có lý do chính đáng để quan chức không cần biết khó khăn ở cơ sở.", lang: vi }
+        - { id: y5e, text: "Quan chức không muốn biết vì có quá nhiều việc bàn giấy.", lang: vi }
+    answer:
+      correct_option_id: c4n
+    explanation:
+      vi: -(으)ㄹ 리 만무하다 = tuyệt đối không có lý nào - phủ định mạnh khả năng "hiểu được". 리 không phải "lý do chính đáng", và câu không nói về ý muốn của quan chức.
+    display_answer: "Những quan chức chỉ ngồi bàn giấy thì không đời nào hiểu được khó khăn ở cơ sở."
+
+  - key: ko:exercise:le-edit-listen-ndeul
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-gram-n-deul
+    prompt:
+      audio_asset_id: null
+      fallback_text: 제도의 취지가 아무리 좋은들 현장에서 지켜지지 않는다면 무슨 의미가 있겠습니까?
+      options:
+        - { id: m3k, text: "Mục đích của chế độ có tốt đến đâu mà trên thực tế không được tuân thủ thì có ý nghĩa gì?", lang: vi }
+        - { id: o9d, text: "Vì mục đích của chế độ rất tốt nên trên thực tế ai cũng tuân thủ.", lang: vi }
+        - { id: f6s, text: "Những chế độ có mục đích tốt thường không có ý nghĩa.", lang: vi }
+        - { id: b2x, text: "Nếu mục đích tốt thì không cần tuân thủ trên thực tế.", lang: vi }
+    answer:
+      correct_option_id: m3k
+    explanation:
+      vi: A-(으)ㄴ들 = dù có... thì - nhượng bộ tu từ, kết thúc bằng câu hỏi 무슨 의미가 있겠습니까 (có ý nghĩa gì). 들 ở đây không phải hậu tố số nhiều "những".
+    display_answer: "Mục đích của chế độ có tốt đến đâu mà trên thực tế không được tuân thủ thì có ý nghĩa gì?"
+
+  - key: ko:exercise:le-edit-mcq-yamallo
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 3
+    item: ko:item:le-gram-iyamallo
+    prompt:
+      stem: "Chọn câu đúng ngữ pháp."
+      stem_lang: vi
+      options:
+        - { id: t8h, text: "예방 교육이야말로 범죄를 줄이는 가장 확실한 길이다.", lang: ko }
+        - { id: k2c, text: "예방 교육야말로 범죄를 줄이는 가장 확실한 길이다.", lang: ko }
+        - { id: e5p, text: "예방 교육이가야말로 범죄를 줄이는 가장 확실한 길이다.", lang: ko }
+        - { id: x1w, text: "예방 교육을야말로 범죄를 줄이는 가장 확실한 길이다.", lang: ko }
+    answer:
+      correct_option_id: t8h
+    explanation:
+      vi: 교육 có patchim nên dùng 이야말로. 야말로 thay hẳn trợ từ chủ ngữ, tân ngữ, nên không ghép thêm 이/가 hay 을/를.
+    display_answer: "예방 교육이야말로 범죄를 줄이는 가장 확실한 길이다."
+
+  - key: ko:exercise:le-edit-fill-sagak
+    type: fill_blank
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-sagakjidae
+    prompt:
+      template: "배달 노동자들은 오랫동안 산재 보험의 {{b1}}에 놓여 있었다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - Vùng tối, "điểm mù" - nơi chính sách không với tới (死角地帶).
+        - 사각...
+    answer:
+      blanks:
+        b1: [사각지대]
+    known_wrong:
+      - answer: 형평성
+        feedback_vi: 형평성 là tính công bằng giữa các nhóm. "Nằm ngoài tầm với của bảo hiểm" là 사각지대에 놓이다.
+        error_tag: vocab_meaning
+      - answer: 사각형
+        feedback_vi: 사각형 là hình tứ giác. Từ cần điền là 사각지대 (vùng tối).
+        error_tag: vocab_form
+    explanation:
+      vi: 사각지대에 놓이다 = nằm trong vùng tối (không được bảo vệ). Hình ảnh giống tiếng Việt "điểm mù" - góc mà gương chiếu hậu không thấy.
+    display_answer: 배달 노동자들은 오랫동안 산재 보험의 사각지대에 놓여 있었다.
+
+  - key: ko:exercise:le-edit-mcq-jolsok
+    type: mcq
+    stage: recognition
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-jolsok
+    prompt:
+      stem: "Chọn từ đúng - 여론 수렴도 없이 두 달 만에 법안을 통과시킨 것은 ______ 입법이라는 비판을 피하기 어렵다."
+      stem_lang: vi
+      options:
+        - { id: q4b, text: "졸속", lang: ko }
+        - { id: h9j, text: "신속", lang: ko }
+        - { id: a7m, text: "청렴", lang: ko }
+        - { id: l3t, text: "형평", lang: ko }
+    answer:
+      correct_option_id: q4b
+    explanation:
+      vi: Có 비판 (phê phán) và "không lấy ý kiến dư luận" nên cần từ chê - 졸속 (vội mà ẩu). 신속 là khen nhanh chóng; 청렴 và 형평 không đi với 입법 trong nghĩa này.
+    display_answer: "졸속"
+
+  # ---------------- recall ----------------
+  - key: ko:exercise:le-edit-fill-dason
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-dason-chideorado
+    prompt:
+      template: "새 제도로 일부 기업의 부담이 (늘다 →) {{b1}} 치더라도 노동자의 안전을 포기할 수는 없다."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [는다손, 늘어난다손, 늘었다손]
+    known_wrong:
+      - answer: 늘다손
+        feedback_vi: Động từ chia như câu trần thuật -ㄴ/는다 - 늘다 → 는다 → 는다손.
+        error_tag: dason_form
+      - answer: 늘는다손
+        feedback_vi: Gốc ㄹ rơi trước ㄴ - 늘다 → 는다손.
+        error_tag: l_drop
+    explanation:
+      vi: V-ㄴ/는다손 치더라도 - 늘다 thành 는다 (ㄹ rơi), rồi thêm 손. Người viết tạm chấp nhận "gánh nặng tăng" để khẳng định an toàn quan trọng hơn.
+    display_answer: 새 제도로 일부 기업의 부담이 는다손 치더라도 노동자의 안전을 포기할 수는 없다.
+
+  - key: ko:exercise:le-edit-fill-ndeul
+    type: fill_blank
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-n-deul
+    prompt:
+      template: "피해가 이미 커진 지금 와서 담당자를 (교체하다 →) {{b1}} 무슨 소용이 있겠는가."
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [교체한들, 교체해 본들, 교체해 봤자]
+    known_wrong:
+      - answer: 교체하는들
+        feedback_vi: -(으)ㄴ들 gắn như định ngữ quá khứ - 교체한들. Không có -는들.
+        error_tag: ndeul_form
+      - answer: 교체했들
+        feedback_vi: Không ghép -았/었- với 들 như vậy. Viết 교체한들.
+        error_tag: ndeul_form
+    explanation:
+      vi: V-(으)ㄴ들 + 무슨 소용이 있겠는가 = có... thì ích gì. -아/어 봤자 là cách nói khẩu ngữ cùng nghĩa.
+    display_answer: 피해가 이미 커진 지금 와서 담당자를 교체한들 무슨 소용이 있겠는가.
+
+  - key: ko:exercise:le-edit-translate-yamallo
+    type: translate
+    stage: recall
+    answer_lang: ko
+    difficulty: 4
+    item: ko:item:le-gram-iyamallo
+    prompt:
+      source_text: Chính giáo dục mới là nền tảng của một xã hội công bằng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "교육이야말로 공정한 사회의 토대이다."
+        - "교육이야말로 공정한 사회의 토대입니다."
+        - "교육이야말로 공정한 사회의 토대예요."
+        - "교육이야말로 공정한 사회의 기반이다."
+        - "교육이야말로 공정한 사회의 기반입니다."
+        - "교육이야말로 공정한 사회의 기반이에요."
+        - "교육이야말로 공정한 사회의 바탕이다."
+        - "교육이야말로 공정한 사회의 바탕입니다."
+        - "교육이야말로 공평한 사회의 토대이다."
+        - "교육이야말로 공평한 사회의 토대입니다."
+        - "교육이야말로 공평한 사회의 토대예요."
+        - "교육이야말로 공평한 사회의 기반이다."
+        - "교육이야말로 공평한 사회의 기반입니다."
+        - "교육이야말로 공평한 사회의 기반이에요."
+        - "교육이야말로 공평한 사회의 바탕이다."
+        - "교육이야말로 공평한 사회의 바탕입니다."
+        - "교육이야말로 공정한 사회를 만드는 토대이다."
+        - "교육이야말로 공정한 사회를 만드는 기반이다."
+        - "교육이야말로 공정한 사회를 만드는 바탕이다."
+        - "교육이야말로 공평한 사회를 만드는 토대이다."
+        - "교육이야말로 공평한 사회를 만드는 기반이다."
+        - "교육이야말로 공평한 사회를 만드는 바탕이다."
+    known_wrong:
+      - answer: 교육야말로 공정한 사회의 토대이다.
+        feedback_vi: 교육 có patchim nên phải là 이야말로.
+        error_tag: particle_allomorph
+      - answer: 교육이가야말로 공정한 사회의 토대이다.
+        feedback_vi: 야말로 thay cho trợ từ chủ ngữ, không ghép thêm 이/가.
+        error_tag: particle
+    explanation:
+      vi: Ý "chính N mới là" = N(이)야말로. 교육 có patchim → 교육이야말로. "Nền tảng" tự nhiên là 토대, 기반 hoặc 바탕.
+    display_answer: 교육이야말로 공정한 사회의 토대이다.
+
+  # ---------------- application ----------------
+  - key: ko:exercise:le-edit-translate-ndeul-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ko:item:le-silhyoseong
+    prompt:
+      source_text: 단속 인력을 늘린들 처벌 수위가 그대로라면 실효성을 기대하기 어렵다.
+      source_lang: ko
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong có hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng có hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong đạt hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong có hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng có hiệu quả thực tế."
+        - "Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong có hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng có hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong đạt hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong có hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng có hiệu quả thực tế."
+        - "Có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong có hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong có hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong có hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn như cũ thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong có hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó mong hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù có tăng lực lượng thanh tra đi nữa mà mức xử phạt vẫn giữ nguyên thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn như cũ thì khó mong có hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn như cũ thì khó mong hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn như cũ thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn như cũ thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn như cũ thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó mong đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó mong có hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó mong hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù tăng lực lượng kiểm tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn như cũ thì khó mong có hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn như cũ thì khó mong hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn như cũ thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn như cũ thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn như cũ thì khó kỳ vọng hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó mong đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó mong có hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó mong hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó kỳ vọng đạt hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó kỳ vọng có hiệu quả thực tế."
+        - "Dù tăng lực lượng thanh tra nhưng nếu mức xử phạt vẫn giữ nguyên thì khó kỳ vọng hiệu quả thực tế."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì tăng lực lượng kiểm tra nên mức xử phạt vẫn như cũ và có hiệu quả thực tế.
+        feedback_vi: -(으)ㄴ들 là nhượng bộ "dù có... đi nữa", không phải nguyên nhân; và 기대하기 어렵다 là khó mong đợi.
+        error_tag: ndeul_misread
+      - answer: Những lực lượng kiểm tra tăng lên nên mức xử phạt cũng tăng.
+        feedback_vi: 들 trong -(으)ㄴ들 không phải "những", và câu gốc nói mức phạt giữ nguyên (그대로).
+        error_tag: ndeul_misread
+    explanation:
+      vi: 늘린들 = có tăng (lực lượng) đi nữa; 처벌 수위가 그대로라면 = nếu mức phạt vẫn như cũ; 실효성을 기대하기 어렵다 = khó mong có hiệu quả thực tế. Ý chính nằm ở vế sau.
+    display_answer: Có tăng lực lượng kiểm tra đi nữa mà mức xử phạt vẫn như cũ thì khó mong đạt hiệu quả thực tế.
+
+  - key: ko:exercise:le-edit-order-chwiji
+    type: word_bank
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-jaegohada
+    prompt:
+      instruction: "Sắp xếp thành câu xã luận: \"Mục đích thì tốt, nhưng nếu là chế độ trái với công bằng thì phải xem xét lại.\""
+      tokens:
+        - { id: d6r, text: 재고해야 }
+        - { id: u3m, text: 형평성을 }
+        - { id: z9a, text: 좋으나 }
+        - { id: i1k, text: 제도라면 }
+        - { id: p7e, text: 취지는 }
+        - { id: s4w, text: 한다 }
+        - { id: g0v, text: 어긋나는 }
+        - { id: n5c, text: 형평성에 }
+    answer:
+      orders:
+        - [p7e, z9a, n5c, g0v, i1k, d6r, s4w]
+    explanation:
+      vi: Khuôn xã luận - 취지는 좋으나 (công nhận) → 형평성에 어긋나는 제도라면 (vấn đề) → 재고해야 한다 (kêu gọi). 어긋나다 đi với 에, nên 형평성을 là token nhiễu.
+    display_answer: 취지는 좋으나 형평성에 어긋나는 제도라면 재고해야 한다.
+
+  - key: ko:exercise:le-edit-mcq-concede
+    type: mcq
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-gram-dason-chideorado
+    prompt:
+      stem: "Bài xã luận ủng hộ đầu tư thiết bị an toàn cho tàu điện dù tốn kém. Câu nào vừa tạm chấp nhận lý lẽ \"tốn kém\" của phe phản đối vừa bác bỏ nó?"
+      stem_lang: vi
+      options:
+        - { id: v2o, text: "비용이 많이 든다손 치더라도 시민의 생명보다 중요할 수는 없다.", lang: ko }
+        - { id: j8s, text: "비용이 많이 든다손 치더라도 비용이 많이 드는 것은 사실이다.", lang: ko }
+        - { id: c6y, text: "비용이 많이 들 리 만무하므로 투자할 필요가 없다.", lang: ko }
+        - { id: h3f, text: "비용이야말로 시민의 생명보다 중요한 가치이다.", lang: ko }
+    answer:
+      correct_option_id: v2o
+    explanation:
+      vi: -다손 치더라도 tạm công nhận "tốn kém" rồi vế sau bác bỏ (không thể quan trọng hơn sinh mạng). Phương án 2 lặp ý, phương án 3 phủ định chi phí và phản đối đầu tư, phương án 4 ủng hộ phe phản đối.
+    display_answer: "비용이 많이 든다손 치더라도 시민의 생명보다 중요할 수는 없다."
+
+  - key: ko:exercise:le-edit-translate-dason
+    type: translate
+    stage: application
+    answer_lang: ko
+    difficulty: 5
+    item: ko:item:le-chwiji
+    prompt:
+      source_text: Cứ cho là mục đích của luật này tốt đi nữa thì việc thông qua vội vàng cũng là vấn đề.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "이 법의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제다."
+        - "이 법의 취지가 좋다손 치더라도 졸속으로 처리한 것은 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 졸속으로 처리한 것은 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 졸속으로 처리한 것은 문제다."
+        - "이 법의 취지가 좋다손 치더라도 서둘러 통과시킨 것은 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 서둘러 통과시킨 것은 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 서둘러 통과시킨 것은 문제다."
+        - "이 법의 취지가 좋다손 치더라도 서둘러 처리한 것은 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 서둘러 처리한 것은 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 서둘러 처리한 것은 문제다."
+        - "이 법의 취지가 좋다손 치더라도 성급하게 통과시킨 것은 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 성급하게 통과시킨 것은 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 성급하게 통과시킨 것은 문제다."
+        - "이 법의 취지가 좋다손 치더라도 성급하게 처리한 것은 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 성급하게 처리한 것은 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 성급하게 처리한 것은 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속으로 처리한 것은 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속으로 처리한 것은 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속으로 처리한 것은 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 서둘러 통과시킨 것은 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 서둘러 통과시킨 것은 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 서둘러 통과시킨 것은 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 서둘러 처리한 것은 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 서둘러 처리한 것은 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 서둘러 처리한 것은 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 성급하게 통과시킨 것은 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 성급하게 통과시킨 것은 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 성급하게 통과시킨 것은 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 성급하게 처리한 것은 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 성급하게 처리한 것은 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 성급하게 처리한 것은 문제다."
+        - "이 법의 취지가 좋다손 치더라도 졸속 처리는 문제이다."
+        - "이 법의 취지가 좋다손 치더라도 졸속 처리는 문제입니다."
+        - "이 법의 취지가 좋다손 치더라도 졸속 처리는 문제다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속 처리는 문제이다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속 처리는 문제입니다."
+        - "이 법안의 취지가 좋다손 치더라도 졸속 처리는 문제다."
+    known_wrong:
+      - answer: 이 법의 취지가 좋는다손 치더라도 졸속으로 통과시킨 것은 문제이다.
+        feedback_vi: 좋다 là tính từ nên dùng -다손 - 좋다손. Chỉ động từ mới có -는다손.
+        error_tag: dason_form
+      - answer: 이 법의 취지가 좋으므로 졸속으로 통과시킨 것은 문제이다.
+        feedback_vi: -(으)므로 là "vì", mất ý nhượng bộ "cứ cho là... đi nữa".
+        error_tag: dason_misuse
+      - answer: 이 법의 취지가 좋다손 치더라도 신속으로 통과시킨 것은 문제이다.
+        feedback_vi: Ý "vội vàng, cẩu thả" là 졸속; 신속 là khen nhanh chóng và không đi với 으로 như vậy.
+        error_tag: jolsok_vs_sinsok
+    explanation:
+      vi: A-다손 치더라도 - 좋다 → 좋다손; vế sau là ý chính của người viết. "Thông qua vội vàng" trong xã luận là 졸속으로 통과시키다 / 졸속 처리.
+    display_answer: 이 법의 취지가 좋다손 치더라도 졸속으로 통과시킨 것은 문제이다.
