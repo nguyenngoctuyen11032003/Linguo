@@ -82,7 +82,7 @@ export function HeroSection({ ready }: { ready: boolean }) {
           <span className="inline-flex gap-1" aria-hidden="true">
             <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-primary">EN</span>
             <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-accent">KO</span>
-            <span className="rounded-full bg-[#E85D8A] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">JA</span>
+            <span className="rounded-full bg-[#C9255F] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">JA</span>
           </span>
           <span className="max-[359px]:sr-only">Tiếng Anh · Hàn · Nhật</span>
         </motion.p>
