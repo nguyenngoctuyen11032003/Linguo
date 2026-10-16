@@ -168,7 +168,7 @@ Hạ tầng đã nhận `ja` ở mọi nơi (schema, RPC, import, AI, web) nhưn
 - Học liệu: `ja/items/<chủ-đề>.yaml`, key `ja:item:<tên>`. `type`: `vocab`, `phrase`, `grammar_point`, `kana` (chữ Hiragana/Katakana, như `hangul` của KO).
 - `front.text` viết bằng chữ Nhật (kana/kanji); `front.reading` là cách đọc bằng kana khi từ có kanji (学校 → がっこう, dùng làm furigana); `front.romanization` là Hepburn, chỉ để tham khảo.
 - Chương trình: `ja/programs/<slug>/program.yaml` (key `ja:program:<slug>`, ví dụ slug `kana`, `n5`, `n4`), unit `units/<nn>-<unit>/unit.yaml`, bài `units/<nn>-<unit>/lessons/<nn>-<bài>.yaml`. `goal_types` của chương trình `kind: goal`: `kana_basics`, `communication`, `jlpt`, `skill_focus`.
-- Kho kiểm tra đầu vào: `diagnostic/ja/<vocabulary|grammar|reading>.yaml`, `language: ja`, key `ja:diag:<tên>`; mỗi ô kỹ năng × cấp cần ≥ 5 câu. Bài kiểm tra `ja:assessment:diagnostic:v1` đã có sẵn trong DB (migration `20261018100000_japanese.sql`).
+- Kho kiểm tra đầu vào: `diagnostic/ja/<vocabulary|grammar|reading>.yaml`, `language: ja`, key `ja:diag:<tên>`; mỗi ô kỹ năng × cấp cần ≥ 5 câu. Bài kiểm tra `ja:assessment:diagnostic:v1` đã có sẵn trong DB (migration `20261018130000_japanese.sql`).
 - Đề luyện thi: `exams/ja/<tên-đề>.yaml`, `family: jlpt`, key `ja:exam:<tên>`, câu `ja:examq:<tên>`; chấm như TOPIK: `section_max` cho mọi phần có câu hỏi, `bands` tăng dần theo `n5…n1`, `pass_ratio: null`.
 
 ## Lệnh
