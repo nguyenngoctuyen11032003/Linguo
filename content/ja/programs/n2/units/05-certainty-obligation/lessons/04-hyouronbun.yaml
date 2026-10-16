@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u5-hyouronbun
+order_index: 4
+level: n2
+title:
+  vi: Đọc bài bình luận (評論文) - tìm chủ trương tác giả qua のである, つまり, とはいえ
+objectives:
+  - vi: Nhận ra câu chứa chủ trương (主張) của tác giả trong một đoạn bình luận.
+  - vi: Hiểu vai trò của のである, つまり, とはいえ trong mạch lập luận.
+  - vi: Phân biệt chủ trương với căn cứ (根拠) và ví dụ khi trả lời câu hỏi đọc hiểu.
+estimated_minutes: 25
+skills: [reading, grammar]
+prerequisites: [ja:lesson:n2-u5-monoda-kotoda]
+items:
+  - item: ja:item:n2-u5-gram-no-dearu
+  - item: ja:item:n2-u5-gram-tsumari
+  - item: ja:item:n2-u5-gram-towaie
+  - item: ja:item:n2-u5-shuchou
+  - item: ja:item:n2-u5-hissha
+  - item: ja:item:n2-u5-konkyo
+body:
+  - type: objective
+    text:
+      vi: Phần đọc hiểu N2 có nhiều bài bình luận (評論文) với câu hỏi 筆者の主張として最も適当なものはどれか. Bài này cho bạn cách tìm nhanh câu chứa chủ trương nhờ các từ nối và đuôi câu đặc trưng.
+  - type: explain
+    text:
+      vi: 'Bài bình luận thường có cấu trúc: nêu vấn đề → ý kiến phổ biến / căn cứ, ví dụ → phản bác (しかし, とはいえ) → kết luận (つまり, のである). Chủ trương của 筆者 thường nằm ở đoạn cuối hoặc ngay sau từ chuyển ý.'
+  - type: explain
+    text:
+      vi: '～のである / ～のだ - dạng văn viết nhấn mạnh lời giải thích, kết luận. Danh từ, tính từ な thêm な: 問題なのである. ～のではないだろうか (chẳng phải là... sao) là cách khẳng định mềm - vẫn là ý tác giả.'
+  - type: explain
+    text:
+      vi: 'つまり - "tóm lại, tức là": câu sau nói lại ý trước gọn hơn, thường là ý chính. とはいえ - "tuy nói vậy nhưng": công nhận ý trước rồi giới hạn hoặc phản bác; điều tác giả muốn nhấn mạnh nằm sau とはいえ.'
+  - type: deep_explain
+    text:
+      vi: 'Bẫy hay gặp: phương án sai thường lấy đúng câu chữ trong ví dụ hoặc trong ý kiến tác giả đang phản bác (một số người cho rằng...). Hãy để ý các đuôi câu chỉ chủ trương: ～べきだ, ～必要がある, ～と考える, ～のではないだろうか, ～ものだ, ～のである. Câu bắt đầu bằng 確かに / もちろん thường là ý tác giả công nhận tạm thời, không phải chủ trương.'
+  - type: example
+    target: 最近、若者は本を読まなくなったと言われる。確かに、紙の本の売り上げは減っている。とはいえ、若者がスマホで読む文章の量はむしろ増えている。つまり、読む習慣がなくなったのではなく、読む方法が変わっただけなのである。
+    target_lang: ja
+    translation:
+      vi: Người ta thường nói giới trẻ không còn đọc sách. Đúng là doanh số sách giấy đang giảm. Tuy nói vậy, lượng văn bản giới trẻ đọc trên điện thoại lại còn tăng. Tức là, thói quen đọc không mất đi, mà chỉ có cách đọc là thay đổi thôi.
+    note:
+      vi: Chủ trương nằm ở câu cuối (つまり～のである). Câu 確かに～ là ý tác giả công nhận tạm thời.
+  - type: example
+    target: 失敗を恐れていては、何も始まらない。大切なのは、失敗から何を学ぶかなのである。
+    target_lang: ja
+    translation:
+      vi: Cứ sợ thất bại thì chẳng có gì bắt đầu được. Điều quan trọng chính là học được gì từ thất bại.
+    note:
+      vi: 大切なのは～なのである - mẫu nêu chủ trương rất điển hình.
+  - type: example
+    target: 春とはいえ、朝晩はまだ寒い。
+    target_lang: ja
+    translation:
+      vi: Tuy nói là mùa xuân nhưng sáng tối vẫn còn lạnh.
+    note:
+      vi: とはいえ cũng đứng sau danh từ, mệnh đề trong một câu.
+  - type: common_mistake
+    wrong: 大切なのは、毎日続けることのである。
+    right: 大切なのは、毎日続けることなのである。
+    target_lang: ja
+    note:
+      vi: Danh từ (kể cả こと) đứng trước のである cần な - ことなのである.
+  - type: common_mistake
+    wrong: 若者は本を読まなくなった。つまり、スマホで読む量は増えている。
+    right: 若者は本を読まなくなった。とはいえ、スマホで読む量は増えている。
+    target_lang: ja
+    note:
+      vi: Hai câu trái chiều nhau nên cần từ nối nhượng bộ (とはいえ / しかし). つまり chỉ dùng khi câu sau nói lại cùng ý.
+  - type: summary
+    points:
+      - vi: 筆者 - tác giả bài viết; 主張 - chủ trương; 根拠 - căn cứ.
+      - vi: ～のである / ～のではないだろうか - đuôi câu nêu kết luận, chủ trương; N/Na + な + のである.
+      - vi: つまり - tóm lại (câu sau là ý chính); とはいえ - tuy nói vậy (ý nhấn mạnh nằm sau).
+      - vi: Câu 確かに / もちろん và ví dụ thường không phải chủ trương.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u5-hyouron-mcq-tsumari
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-tsumari
+    prompt:
+      stem: Trong bài bình luận, câu đứng sau つまり thường có vai trò gì?
+      stem_lang: vi
+      options:
+        - { id: a3b, text: Nói lại ý trước một cách gọn hơn - thường là ý chính., lang: vi }
+        - { id: c6d, text: Đưa ra ý kiến trái ngược với câu trước., lang: vi }
+        - { id: e9f, text: Kể thêm một ví dụ không liên quan., lang: vi }
+        - { id: g2h, text: Đặt câu hỏi cho người đọc tự trả lời., lang: vi }
+    answer:
+      correct_option_id: a3b
+    explanation:
+      vi: つまり - "tóm lại, tức là". Ý trái ngược dùng しかし / とはいえ.
+    display_answer: Nói lại ý trước một cách gọn hơn - thường là ý chính.
+
+  - key: ja:exercise:n2-u5-hyouron-fill-towaie
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-towaie
+    prompt:
+      template: "在宅勤務は通勤がなくて便利だ。{{b1}}、同僚と話す機会が減るという問題もある。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Làm việc tại nhà tiện vì không phải đi lại. Tuy nói vậy, cũng có vấn đề là ít dịp nói chuyện với đồng nghiệp hơn."
+        - "Gợi ý: từ nối 4 chữ kana, nghĩa \"tuy nói vậy nhưng\"."
+    answer:
+      blanks:
+        b1: [とはいえ, とは言え, とは言っても, とはいっても, しかし, だが, でも]
+    known_wrong:
+      - answer: つまり
+        feedback_vi: Câu sau trái chiều với câu trước (tiện → có vấn đề), không phải nói lại cùng ý - dùng とはいえ.
+        error_tag: connector_choice
+      - answer: だから
+        feedback_vi: だから nêu kết quả. "Có vấn đề" không phải kết quả của "tiện" - cần từ nhượng bộ とはいえ.
+        error_tag: connector_choice
+    explanation:
+      vi: とはいえ - công nhận ý trước (tiện) rồi nêu mặt hạn chế. しかし / だが cũng đúng nghĩa.
+    display_answer: 在宅勤務は通勤がなくて便利だ。とはいえ、同僚と話す機会が減るという問題もある。
+
+  - key: ja:exercise:n2-u5-hyouron-mcq-find-claim
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-shuchou
+    prompt:
+      stem: "Đọc đoạn: 「①最近、若者は本を読まなくなったと言われる。②確かに、紙の本の売り上げは減っている。③とはいえ、スマホで読む文章の量は増えている。④つまり、読む方法が変わっただけなのである。」 Câu nào là chủ trương của tác giả?"
+      stem_lang: vi
+      options:
+        - { id: i5j, text: ④, lang: ja }
+        - { id: k8l, text: ①, lang: ja }
+        - { id: m1n, text: ②, lang: ja }
+        - { id: o4p, text: ③, lang: ja }
+    answer:
+      correct_option_id: i5j
+    explanation:
+      vi: ① là ý kiến phổ biến (と言われる), ② là điều tác giả công nhận tạm thời (確かに), ③ là căn cứ. ④ có つまり và のである - kết luận, chủ trương.
+    display_answer: ④
+
+  - key: ja:exercise:n2-u5-hyouron-listen-noderu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-no-dearu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 大切なのは、失敗から何を学ぶかなのである。
+      options:
+        - { id: q7r, text: Điều quan trọng chính là học được gì từ thất bại., lang: vi }
+        - { id: s2t, text: Điều quan trọng là không bao giờ thất bại., lang: vi }
+        - { id: u5v, text: Học từ thất bại là điều không cần thiết., lang: vi }
+        - { id: w9x, text: Ai cũng học được nhiều từ thành công., lang: vi }
+    answer:
+      correct_option_id: q7r
+    explanation:
+      vi: 大切なのは～なのである - "điều quan trọng chính là...", mẫu nêu chủ trương. 何を学ぶか - học được gì.
+    display_answer: Điều quan trọng chính là học được gì từ thất bại.
+
+  - key: ja:exercise:n2-u5-hyouron-mcq-hissha
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u5-hissha
+    prompt:
+      stem: Trong câu hỏi đọc hiểu 「筆者の考えに合うものはどれか。」, 筆者 là ai?
+      stem_lang: vi
+      options:
+        - { id: y3z, text: Người viết bài văn đang đọc, lang: vi }
+        - { id: a8b, text: Người ra đề thi, lang: vi }
+        - { id: c1d, text: Nhân vật chính trong bài, lang: vi }
+        - { id: e6f, text: Người đọc bài văn, lang: vi }
+    answer:
+      correct_option_id: y3z
+    explanation:
+      vi: 筆者 - người viết bài văn. Câu hỏi hỏi ý kiến của chính người viết, không phải của nhân vật hay ý kiến được trích dẫn trong bài.
+    display_answer: Người viết bài văn đang đọc
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u5-hyouron-fill-nanode
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-no-dearu
+    prompt:
+      template: "大切なのは結果ではなく、過程{{b1}}である。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [なの]
+    known_wrong:
+      - answer: の
+        feedback_vi: Danh từ 過程 trước のである cần な - 過程なのである.
+        error_tag: nodearu_na
+      - answer: だの
+        feedback_vi: Không dùng だ trước の; danh từ + な + のである.
+        error_tag: nodearu_na
+    explanation:
+      vi: N + な + のである. 結果ではなく過程なのである - không phải kết quả mà chính là quá trình.
+    display_answer: 大切なのは結果ではなく、過程なのである。
+
+  - key: ja:exercise:n2-u5-hyouron-translate-tsumari
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-tsumari
+    prompt:
+      source_text: Tức là, cách đọc chỉ thay đổi mà thôi. (văn viết, dùng つまり và のである)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - つまり、読む方法が変わっただけなのである。
+        - つまり、読み方が変わっただけなのである。
+        - つまり読む方法が変わっただけなのである。
+        - つまり読み方が変わっただけなのである。
+        - つまり、読み方が変わっただけである。
+        - つまり、読む方法が変わっただけである。
+        - つまり、読み方が変化しただけなのである。
+        - つまり、読む方法が変化しただけなのである。
+        - つまり、変わったのは読み方だけなのである。
+        - つまり、変わったのは読む方法だけなのである。
+        - つまり、よみかたがかわっただけなのである。
+    known_wrong:
+      - answer: つまり、読み方が変わっただけのである。
+        feedback_vi: だけ đứng trước のである cũng cần な - 変わっただけなのである.
+        error_tag: nodearu_na
+      - answer: とはいえ、読み方が変わっただけなのである。
+        feedback_vi: Câu này tóm lại ý, không phải nhượng bộ - dùng つまり.
+        error_tag: connector_choice
+    explanation:
+      vi: 読み方 / 読む方法 - cách đọc; ～だけなのである - chỉ... mà thôi (nhấn mạnh kết luận).
+    display_answer: つまり、読む方法が変わっただけなのである。
+
+  - key: ja:exercise:n2-u5-hyouron-translate-konkyo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-konkyo
+    prompt:
+      source_text: Ý kiến đó không có căn cứ rõ ràng. (văn thường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - その意見には、はっきりした根拠がない。
+        - その意見には、はっきりとした根拠がない。
+        - その意見には、明確な根拠がない。
+        - その意見にははっきりした根拠がない。
+        - その意見は、はっきりした根拠がない。
+        - その意見には、はっきりした根拠がありません。
+        - その意見には、明確な根拠がありません。
+        - その意見には、はっきりした根拠がないです。
+        - その意見には根拠がはっきりしていない。
+        - そのいけんには、はっきりしたこんきょがない。
+    known_wrong:
+      - answer: その意見には、はっきりした主張がない。
+        feedback_vi: 主張 là chủ trương; "căn cứ" là 根拠.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 根拠 - căn cứ; はっきりした / 明確な - rõ ràng. ～には～がない - (cái gì) không có...
+    display_answer: その意見には、はっきりした根拠がない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u5-hyouron-mcq-passage
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u5-shuchou
+    prompt:
+      stem: "Đọc đoạn: 「子どもの習い事は多ければ多いほどいいと考える親は少なくない。もちろん、さまざまな経験は成長に役立つ。とはいえ、毎日予定が詰まっていては、自分で考えて遊ぶ時間がなくなってしまう。子どもにはもっと自由な時間を与えるべきではないだろうか。」 Chủ trương của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: g4h, text: Nên cho trẻ nhiều thời gian tự do hơn., lang: vi }
+        - { id: i7j, text: Trẻ học càng nhiều lớp năng khiếu càng tốt., lang: vi }
+        - { id: k2l, text: Các lớp năng khiếu không có ích gì cho sự phát triển., lang: vi }
+        - { id: m5n, text: Cha mẹ nên tự chơi cùng con mỗi ngày., lang: vi }
+    answer:
+      correct_option_id: g4h
+    explanation:
+      vi: Câu đầu là ý kiến của nhiều phụ huynh (tác giả không đồng ý); もちろん là công nhận tạm thời - nên phương án "không có ích gì" sai. Sau とはいえ là ý thật, chốt bằng べきではないだろうか - nên cho trẻ thời gian tự do.
+    display_answer: Nên cho trẻ nhiều thời gian tự do hơn.
+
+  - key: ja:exercise:n2-u5-hyouron-wb-claim
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-no-dearu
+    prompt:
+      instruction: "Sắp xếp thành câu kết luận: \"Thói quen đọc không mất đi, mà cách đọc đã thay đổi.\""
+      tokens:
+        - { id: r3, text: 読む方法が }
+        - { id: r1, text: 読む習慣が }
+        - { id: r4, text: 変わったのである }
+        - { id: r2, text: なくなったのではなく }
+        - { id: r5, text: 変わったのだである }
+    answer:
+      orders:
+        - [r1, r2, r3, r4]
+    explanation:
+      vi: A のではなく、B のである - "không phải A mà là B", khung kết luận rất hay gặp. のだである là sai (hai đuôi câu chồng nhau).
+    display_answer: 読む習慣がなくなったのではなく、読む方法が変わったのである。
+
+  - key: ja:exercise:n2-u5-hyouron-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u5-gram-towaie
+    prompt:
+      source_text: 春とはいえ、朝晩はまだ寒い。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuy nói là mùa xuân nhưng sáng tối vẫn còn lạnh.
+        - Tuy là mùa xuân nhưng sáng tối vẫn còn lạnh.
+        - Dù là mùa xuân nhưng sáng tối vẫn còn lạnh.
+        - Tuy đã sang xuân nhưng sáng tối vẫn còn lạnh.
+        - Dù đã là mùa xuân nhưng sáng tối vẫn còn lạnh.
+        - Tuy nói là mùa xuân nhưng buổi sáng và buổi tối vẫn còn lạnh.
+        - Dù là mùa xuân nhưng buổi sáng và buổi tối vẫn còn lạnh.
+        - Tuy là mùa xuân nhưng sáng và tối vẫn còn lạnh.
+        - Tuy là mùa xuân nhưng sáng tối vẫn lạnh.
+        - Dù là mùa xuân nhưng sáng tối vẫn lạnh.
+        - Mặc dù là mùa xuân nhưng sáng tối vẫn còn lạnh.
+        - Tuy nói là xuân rồi nhưng sáng tối vẫn còn lạnh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì là mùa xuân nên sáng tối vẫn còn lạnh.
+        feedback_vi: とはいえ là nhượng bộ "tuy... nhưng", không phải nguyên nhân "vì... nên".
+        error_tag: towaie_meaning
+    explanation:
+      vi: N + とはいえ - "tuy nói là N nhưng". 朝晩 - sáng và tối.
+    display_answer: Tuy nói là mùa xuân nhưng sáng tối vẫn còn lạnh.
+
+  - key: ja:exercise:n2-u5-hyouron-mcq-trap
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u5-konkyo
+    prompt:
+      stem: "Đọc đoạn: 「ある調査によると、一日に三時間以上スマホを使う大学生は六割を超える。しかし、使う時間が長いこと自体が問題なのではない。問題は、何のために使うのかを考えずに使い続けることなのである。」 Câu nào đúng với ý tác giả?"
+      stem_lang: vi
+      options:
+        - { id: o8p, text: Vấn đề là dùng điện thoại mà không nghĩ dùng để làm gì., lang: vi }
+        - { id: q3r, text: Sinh viên nên dùng điện thoại dưới ba tiếng mỗi ngày., lang: vi }
+        - { id: s6t, text: Hơn 60% sinh viên dùng điện thoại là vấn đề nghiêm trọng nhất., lang: vi }
+        - { id: u1v, text: Thời gian dùng điện thoại dài chính là vấn đề., lang: vi }
+    answer:
+      correct_option_id: o8p
+    explanation:
+      vi: Số liệu khảo sát chỉ là căn cứ (根拠), không phải chủ trương. Tác giả phủ định "thời gian dài là vấn đề" (～自体が問題なのではない) và chốt ở câu のである - vấn đề là dùng mà không suy nghĩ mục đích.
+    display_answer: Vấn đề là dùng điện thoại mà không nghĩ dùng để làm gì.

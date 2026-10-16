@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u5-zaru-wo-enai
+order_index: 2
+level: n2
+title:
+  vi: Bắt buộc và không kìm được - ～ざるを得ない, ～ずにはいられない, ～ないわけにはいかない
+objectives:
+  - vi: Nói "đành phải" vì hoàn cảnh bằng ～ざるを得ない, chia đúng せざるを得ない.
+  - vi: Diễn tả cảm xúc không kìm được bằng ～ずにはいられない.
+  - vi: Nói nghĩa vụ xã hội bằng ～ないわけにはいかない và phân biệt ba mẫu.
+estimated_minutes: 22
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u5-ni-chigainai]
+items:
+  - item: ja:item:n2-u5-gram-zaru-wo-enai
+  - item: ja:item:n2-u5-gram-zu-ni-irarenai
+  - item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+  - item: ja:item:n2-u5-hikiukeru
+  - item: ja:item:n2-u5-gaman
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được vì sao mình "đành phải hủy chuyến đi", "không nhịn được cười" hay "không thể không đi dự đám cưới sếp" - ba kiểu "phải" rất khác nhau trong tiếng Nhật.
+  - type: explain
+    text:
+      vi: '～ざるを得ない - "đành phải". Lấy thể ない bỏ ない rồi thêm ざるを得ない: 行かない → 行かざるを得ない, 諦めない → 諦めざるを得ない. Hai ngoại lệ: する → せざるを得ない, 来る → 来(こ)ざるを得ない. Lý do là hoàn cảnh khách quan, người nói không muốn.'
+  - type: explain
+    text:
+      vi: '～ずにはいられない - "không kìm được mà...". Thể ない bỏ ない + ずにはいられない: 笑わない → 笑わずにはいられない; する → せずにはいられない. Dùng cho cảm xúc, phản ứng tự nhiên của chính người nói.'
+  - type: explain
+    text:
+      vi: '～ないわけにはいかない - "không thể không". Giữ nguyên thể ない + わけにはいかない: 出席しないわけにはいかない. Lý do là trách nhiệm, phép lịch sự, quan hệ - nếu không làm thì "không phải đạo".'
+  - type: deep_explain
+    text:
+      vi: 'Cách phân biệt nhanh: hoàn cảnh ép (mưa bão, hết tiền, quy định) → ざるを得ない; cảm xúc trào ra (cười, khóc, lo, muốn nói) → ずにはいられない; nghĩa vụ với người khác (sếp nhờ, thầy mời, đã hứa) → ないわけにはいかない. Khẳng định V-る + わけにはいかない lại là "không thể làm" - 明日は試験だから、遊びに行くわけにはいかない.'
+  - type: example
+    target: 台風が近づいているので、旅行は中止せざるを得ない。
+    target_lang: ja
+    translation:
+      vi: Bão đang đến gần nên đành phải huỷ chuyến du lịch.
+    note:
+      vi: する → せざる.
+  - type: example
+    target: あの漫画はおもしろくて、電車の中でも笑わずにはいられない。
+    target_lang: ja
+    translation:
+      vi: Bộ truyện tranh đó hay đến mức trên tàu tôi cũng không nhịn được cười.
+  - type: example
+    target: 部長に直接頼まれたら、引き受けないわけにはいかない。
+    target_lang: ja
+    translation:
+      vi: Bị trưởng phòng trực tiếp nhờ thì không thể không nhận.
+  - type: example
+    target: 証拠がこれだけそろうと、彼も自分のミスを認めざるを得なかった。
+    target_lang: ja
+    translation:
+      vi: Bằng chứng đầy đủ đến thế thì anh ấy cũng đành phải thừa nhận lỗi của mình.
+  - type: common_mistake
+    wrong: 中止しざるを得ない。
+    right: 中止せざるを得ない。
+    target_lang: ja
+    note:
+      vi: する chia thành せざる (từ dạng cổ せず), không phải しざる. Lỗi này rất hay gặp trong bài thi.
+  - type: common_mistake
+    wrong: 会社の規則だから、制服を着ずにはいられない。
+    right: 会社の規則だから、制服を着ざるを得ない。
+    target_lang: ja
+    note:
+      vi: Quy định là hoàn cảnh ép buộc, không phải cảm xúc - dùng ざるを得ない. Tiếng Việt đều dịch là "phải" nên người Việt hay dùng lẫn.
+  - type: summary
+    points:
+      - vi: V-ない(bỏ ない) + ざるを得ない - đành phải (hoàn cảnh); する → せざる.
+      - vi: V-ない(bỏ ない) + ずにはいられない - không kìm được (cảm xúc); する → せずには.
+      - vi: V-ない + わけにはいかない - không thể không (nghĩa vụ); V-る + わけにはいかない - không thể làm.
+      - vi: 引き受ける - nhận lời, đảm nhận; 我慢する - chịu đựng, nhịn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u5-zaru-mcq-suru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-zaru-wo-enai
+    prompt:
+      stem: 'Dạng ざるを得ない của 中止する là gì?'
+      stem_lang: vi
+      options:
+        - { id: a2b, text: 中止せざるを得ない, lang: ja }
+        - { id: c5d, text: 中止しざるを得ない, lang: ja }
+        - { id: e8f, text: 中止さざるを得ない, lang: ja }
+        - { id: g1h, text: 中止するざるを得ない, lang: ja }
+    answer:
+      correct_option_id: a2b
+    explanation:
+      vi: する là ngoại lệ - せざるを得ない. Các dạng しざる, さざる, するざる đều sai.
+    display_answer: 中止せざるを得ない
+
+  - key: ja:exercise:n2-u5-zaru-listen-warau
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-zu-ni-irarenai
+    prompt:
+      audio_asset_id: null
+      fallback_text: あの漫画はおもしろくて、笑わずにはいられない。
+      options:
+        - { id: i4j, text: Bộ truyện đó hay đến mức không nhịn được cười., lang: vi }
+        - { id: k7l, text: Bộ truyện đó hay nhưng tôi không cười., lang: vi }
+        - { id: m2n, text: Bộ truyện đó không được phép cười khi đọc., lang: vi }
+        - { id: o9p, text: Bộ truyện đó buồn đến mức không cười nổi., lang: vi }
+    answer:
+      correct_option_id: i4j
+    explanation:
+      vi: 笑わずにはいられない - "không thể không cười", tức là không nhịn được cười. Hai lần phủ định thành khẳng định mạnh.
+    display_answer: Bộ truyện đó hay đến mức không nhịn được cười.
+
+  - key: ja:exercise:n2-u5-zaru-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    prompt:
+      stem: 'お世話になった先生の結婚式だから、＿＿。 ("Đám cưới của thầy đã giúp đỡ mình nên không thể không đi dự.")'
+      stem_lang: vi
+      options:
+        - { id: q3r, text: 出席しないわけにはいかない, lang: ja }
+        - { id: s6t, text: 出席するわけにはいかない, lang: ja }
+        - { id: u1v, text: 出席せずにはいられない, lang: ja }
+        - { id: w8x, text: 出席しないわけだ, lang: ja }
+    answer:
+      correct_option_id: q3r
+    explanation:
+      vi: Lý do là ân nghĩa, phép lịch sự - nghĩa vụ xã hội nên dùng ないわけにはいかない. 出席するわけにはいかない ngược nghĩa (không thể đi); ずにはいられない dành cho cảm xúc.
+    display_answer: 出席しないわけにはいかない
+
+  - key: ja:exercise:n2-u5-zaru-fill-ikazaru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-zaru-wo-enai
+    prompt:
+      template: "電車が止まったので、会社まで歩いて{{b1}}を得なかった。(行く)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tàu dừng chạy nên tôi đành phải đi bộ đến công ty."
+        - "Gợi ý: 行く → thể ない 行かない → bỏ ない, thêm ざる."
+    answer:
+      blanks:
+        b1: [行かざる, いかざる]
+    known_wrong:
+      - answer: 行くざる
+        feedback_vi: ざる gắn vào thể ない đã bỏ ない - 行か + ざる.
+        error_tag: zaru_form
+      - answer: 行かない
+        feedback_vi: Trước を得ない phải là dạng ざる - 行かざるを得ない.
+        error_tag: zaru_form
+    explanation:
+      vi: 行かない → 行か + ざるを得ない. Thì quá khứ đặt ở cuối - 得なかった.
+    display_answer: 電車が止まったので、会社まで歩いて行かざるを得なかった。
+
+  - key: ja:exercise:n2-u5-zaru-wb-gaman
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gaman
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi quyết định nhịn chơi game cho đến khi thi xong.\""
+      tokens:
+        - { id: g3, text: 我慢することにした }
+        - { id: g1, text: 試験が終わるまで }
+        - { id: g4, text: 我慢をすることにした }
+        - { id: g2, text: ゲームは }
+    answer:
+      orders:
+        - [g1, g2, g3]
+        - [g2, g1, g3]
+        - [g1, g2, g4]
+        - [g2, g1, g4]
+    explanation:
+      vi: ～ことにした - quyết định. 我慢する và 我慢をする đều đúng. Mốc thời gian và chủ đề có thể đổi chỗ.
+    display_answer: 試験が終わるまで、ゲームは我慢することにした。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u5-zaru-fill-sezu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zu-ni-irarenai
+    prompt:
+      template: "息子が一人で海外へ行くと聞いて、母は心配{{b1}}にはいられなかった。(する)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [せず]
+    known_wrong:
+      - answer: しず
+        feedback_vi: する chia thành せず - 心配せずにはいられない.
+        error_tag: zuni_form
+      - answer: しない
+        feedback_vi: Trước にはいられない dùng dạng ず - せずにはいられない.
+        error_tag: zuni_form
+    explanation:
+      vi: 'Lo lắng là cảm xúc không kìm được: 心配せずにはいられなかった. する → せず.'
+    display_answer: 息子が一人で海外へ行くと聞いて、母は心配せずにはいられなかった。
+
+  - key: ja:exercise:n2-u5-zaru-translate-chuushi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zaru-wo-enai
+    prompt:
+      source_text: Bão đang đến gần nên đành phải huỷ chuyến du lịch. (văn thường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 台風が近づいているので、旅行は中止せざるを得ない。
+        - 台風が近づいているので、旅行を中止せざるを得ない。
+        - 台風が近づいているから、旅行は中止せざるを得ない。
+        - 台風が近づいているから、旅行を中止せざるを得ない。
+        - 台風が近づいているので、旅行は中止せざるをえない。
+        - 台風が近づいているので、旅行をやめざるを得ない。
+        - 台風が近づいているので、旅行はやめざるを得ない。
+        - 台風が近づいているので、旅行をキャンセルせざるを得ない。
+        - 台風が近づいているため、旅行は中止せざるを得ない。
+        - 台風が近づいているため、旅行を中止せざるを得ない。
+        - 台風が近づいているので、旅行は中止せざるを得ません。
+        - 台風が近づいているので、旅行を中止せざるを得ません。
+        - たいふうがちかづいているので、りょこうはちゅうしせざるをえない。
+    known_wrong:
+      - answer: 台風が近づいているので、旅行は中止しざるを得ない。
+        feedback_vi: する chia thành せざる, không phải しざる.
+        error_tag: zaru_form
+      - answer: 台風が近づいているので、旅行は中止せずにはいられない。
+        feedback_vi: Bão là hoàn cảnh ép buộc, không phải cảm xúc - dùng ざるを得ない.
+        error_tag: zaru_zuni
+    explanation:
+      vi: 台風が近づく - bão đến gần; 中止する → 中止せざるを得ない (hoặc やめざるを得ない).
+    display_answer: 台風が近づいているので、旅行は中止せざるを得ない。
+
+  - key: ja:exercise:n2-u5-zaru-translate-hikiukeru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-hikiukeru
+    prompt:
+      source_text: Bị trưởng phòng nhờ thì không thể không nhận. (văn thường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 部長に頼まれたら、引き受けないわけにはいかない。
+        - 部長に頼まれたら引き受けないわけにはいかない。
+        - 部長に頼まれたら、引き受けないわけにはいかないです。
+        - 部長に頼まれたら、引き受けないわけにはいきません。
+        - 部長に頼まれたら、断るわけにはいかない。
+        - 部長に頼まれたら、断るわけにはいきません。
+        - 部長に頼まれたら、引き受けざるを得ない。
+        - 部長に頼まれると、引き受けないわけにはいかない。
+        - 部長に頼まれては、引き受けないわけにはいかない。
+        - 部長に頼まれたなら、引き受けないわけにはいかない。
+        - ぶちょうにたのまれたら、ひきうけないわけにはいかない。
+    known_wrong:
+      - answer: 部長に頼まれたら、引き受けるわけにはいかない。
+        feedback_vi: Thiếu ない - 引き受けるわけにはいかない là "không thể nhận", ngược nghĩa.
+        error_tag: wake_negation
+      - answer: 部長に頼まれたら、引き受けずにはいられない。
+        feedback_vi: Đây là nghĩa vụ trong công việc, không phải cảm xúc không kìm được - dùng ないわけにはいかない.
+        error_tag: wake_zuni
+    explanation:
+      vi: 頼まれる - bị nhờ; 引き受けないわけにはいかない - không thể không nhận. Cách khác - 断るわけにはいかない (không thể từ chối).
+    display_answer: 部長に頼まれたら、引き受けないわけにはいかない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u5-zaru-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zu-ni-irarenai
+    prompt:
+      stem: Xem tin về một em bé được cứu sau động đất, bạn muốn nói "Tôi không cầm được nước mắt." Câu nào hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: y4z, text: そのニュースを見て、泣かずにはいられなかった。, lang: ja }
+        - { id: a7c, text: そのニュースを見て、泣かざるを得なかった。, lang: ja }
+        - { id: b3d, text: そのニュースを見て、泣かないわけにはいかなかった。, lang: ja }
+        - { id: c9e, text: そのニュースを見て、泣くわけにはいかなかった。, lang: ja }
+    answer:
+      correct_option_id: y4z
+    explanation:
+      vi: Khóc vì xúc động là cảm xúc trào ra - ずにはいられない. ざるを得ない nghe như bị ép phải khóc; ないわけにはいかない như nghĩa vụ phải khóc; 泣くわけにはいかない là "không được khóc".
+    display_answer: そのニュースを見て、泣かずにはいられなかった。
+
+  - key: ja:exercise:n2-u5-zaru-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zaru-wo-enai
+    prompt:
+      source_text: 証拠がこれだけそろうと、彼もミスを認めざるを得なかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bằng chứng đầy đủ đến thế thì anh ấy cũng đành phải thừa nhận sai sót.
+        - Bằng chứng đầy đủ như thế thì anh ấy cũng đành phải thừa nhận sai lầm.
+        - Bằng chứng đầy đủ như vậy thì anh ấy cũng đành phải nhận lỗi.
+        - Bằng chứng đầy đủ đến thế nên anh ấy cũng đành phải thừa nhận lỗi.
+        - Có đủ bằng chứng như thế thì anh ấy cũng buộc phải thừa nhận sai sót.
+        - Bằng chứng đầy đủ đến thế thì anh ấy cũng buộc phải thừa nhận lỗi.
+        - Bằng chứng đã đầy đủ như vậy nên anh ấy cũng đành phải thừa nhận lỗi.
+        - Khi bằng chứng đầy đủ đến thế thì anh ấy cũng đành phải nhận lỗi.
+        - Bằng chứng đầy đủ đến mức này thì anh ấy cũng phải thừa nhận sai sót.
+        - Bằng chứng đầy đủ đến thế thì anh ấy cũng đành thừa nhận lỗi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bằng chứng đầy đủ đến thế mà anh ấy vẫn không thừa nhận lỗi.
+        feedback_vi: ざるを得なかった là "đành phải" - anh ấy đã thừa nhận, không phải không thừa nhận.
+        error_tag: zaru_meaning
+    explanation:
+      vi: 証拠がそろう - bằng chứng đầy đủ; 認めざるを得なかった - đành phải thừa nhận (dù không muốn).
+    display_answer: Bằng chứng đầy đủ đến thế thì anh ấy cũng đành phải thừa nhận sai sót.
+
+  - key: ja:exercise:n2-u5-zaru-wb-wake
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mai có bài thi nên tối nay không thể đi chơi được.\""
+      tokens:
+        - { id: k4, text: わけにはいかない }
+        - { id: k2, text: 今夜は }
+        - { id: k5, text: 遊びに行かない }
+        - { id: k1, text: 明日は試験だから }
+        - { id: k3, text: 遊びに行く }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: V-る + わけにはいかない - không thể làm (vì lý do đạo lý, trách nhiệm). Dùng 遊びに行かない thì nghĩa thành "không thể không đi chơi" - ngược ý.
+    display_answer: 明日は試験だから、今夜は遊びに行くわけにはいかない。
+
+  - key: ja:exercise:n2-u5-zaru-mcq-rule
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zaru-wo-enai
+    prompt:
+      stem: 'Đồng nghiệp hỏi sao bạn đi làm thứ Bảy. Bạn đáp: "Dự án sắp đến hạn nên đành phải đi làm." Câu nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: d2f, text: 締め切りが近いので、出勤せざるを得ないんです。, lang: ja }
+        - { id: g6h, text: 締め切りが近いので、出勤せずにはいられないんです。, lang: ja }
+        - { id: i1j, text: 締め切りが近いので、出勤するわけにはいかないんです。, lang: ja }
+        - { id: k8l, text: 締め切りが近いので、出勤しざるを得ないんです。, lang: ja }
+    answer:
+      correct_option_id: d2f
+    explanation:
+      vi: Hạn chót là hoàn cảnh ép buộc - ざるを得ない, する → せざる. ずにはいられない là cảm xúc; 出勤するわけにはいかない là "không thể đi làm"; しざる sai chia.
+    display_answer: 締め切りが近いので、出勤せざるを得ないんです。
