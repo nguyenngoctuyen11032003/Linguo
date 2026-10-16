@@ -61,7 +61,7 @@ export function AuditLogPage() {
       ) : (
         <div tabIndex={0} role="region" aria-label="Các thao tác gần đây" className="overflow-x-auto rounded-3xl border border-border bg-surface-solid focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40">
           {/* Focusable so keyboard users can scroll the wide table (axe scrollable-region-focusable). */}
-          <table className="w-full text-left text-[15px]">
+          <table className="w-full min-w-[640px] text-left text-[15px]">
             <caption className="px-4 pt-4 text-left font-semibold">Các thao tác gần đây</caption>
             <thead className="text-sm text-muted">
               <tr>

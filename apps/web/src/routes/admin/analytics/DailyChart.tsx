@@ -1,6 +1,7 @@
 import type { AdminAnalytics } from '@linguo/shared';
 import { formatCount } from '@/features/admin/analytics';
 import { formatAdminDate } from '@/features/admin/content';
+import { cn } from '@/lib/cn';
 
 type Day = AdminAnalytics['daily'][number];
 
@@ -62,7 +63,7 @@ export function DailyChart({ daily }: { daily: Day[] }) {
         style={{ gridTemplateColumns: `repeat(${Math.max(1, count)}, minmax(0, 1fr))` }}
       >
         {daily.map((d, i) => (
-          <span key={d.day} className="text-center whitespace-nowrap">
+          <span key={d.day} className={cn('whitespace-nowrap', i === count - 1 ? 'text-right' : 'text-center')}>
             {showLabel(i, count) ? dayMonth(d.day) : ''}
           </span>
         ))}

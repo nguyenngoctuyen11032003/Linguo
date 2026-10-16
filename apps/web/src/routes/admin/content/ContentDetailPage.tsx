@@ -203,6 +203,7 @@ export function ContentDetailPage() {
               </p>
             )}
             <p>
+<<<<<<< HEAD
               <Link to={reportsPath(targetKind, data.id)} className="font-semibold text-primary underline underline-offset-4">
                 Mở báo lỗi của nội dung này
               </Link>
@@ -210,6 +211,10 @@ export function ContentDetailPage() {
             <p>
               <Link to={reportsPath(targetKind)} className="text-primary underline underline-offset-4">
                 Hàng đợi báo lỗi loại nội dung này
+=======
+              <Link to={reportsPath(targetKind)} className="inline-flex min-h-11 items-center font-semibold text-primary underline underline-offset-4">
+                Mở hàng đợi báo lỗi loại nội dung này
+>>>>>>> 95a9323 (fix(web): admin/teacher/legal mobile polish: wide admin tables scroll instead of crushing columns, single gutter on in-layout error screen, no-wrap teacher badge, header hairline only, email wraps whole, last chart label inside card)
               </Link>
             </p>
           </div>

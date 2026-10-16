@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { isRouteErrorResponse, Link, useRouteError } from 'react-router';
 import { FeedbackScreen } from '@/components/feedback/FeedbackScreen';
 import { Button, buttonClasses } from '@/components/ui/Button';
+import { cn } from '@/lib/cn';
 import { errorCode, isChunkLoadError, reportRenderError } from '@/lib/error-reporting';
 import { NotFoundPage } from './NotFoundPage';
 
@@ -108,7 +109,8 @@ export function RouteError({ inMain = false }: Props) {
     );
   }
 
-  const body = <div className="flex min-h-[60dvh] items-center justify-center overflow-x-clip px-safe py-10">{screen}</div>;
+  // A parent layout's <main> already has the page gutter: a second px-safe squeezed the screen to ~240px on phones.
+  const body = <div className={cn('flex min-h-[60dvh] items-center justify-center overflow-x-clip py-10', !inMain && 'px-safe')}>{screen}</div>;
 
   return inMain ? (
     body

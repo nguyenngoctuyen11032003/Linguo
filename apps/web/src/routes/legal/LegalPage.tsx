@@ -18,7 +18,7 @@ function withContactLink(text: string): ReactNode {
           <a
             key={index}
             href={`mailto:${CONTACT_EMAIL}`}
-            className="break-all font-semibold text-primary underline underline-offset-4"
+            className="wrap-anywhere font-semibold text-primary underline underline-offset-4"
           >
             {CONTACT_EMAIL}
           </a>,

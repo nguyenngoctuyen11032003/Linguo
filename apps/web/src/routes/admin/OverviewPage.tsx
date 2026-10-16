@@ -143,7 +143,7 @@ function OverviewContent({ overview }: { overview: AdminOverview }) {
             ) : (
               rows.map((row) => (
                 <tr key={row.kind} className="border-t border-border">
-                  <th scope="row" className="px-4 py-2 font-medium">
+                  <th scope="row" className="whitespace-nowrap px-4 py-2 font-medium">
                     {ADMIN_KIND_LABELS_VI[row.kind]}
                   </th>
                   <td className="px-4 py-2 text-right tabular-nums">{fmt(row.published)}</td>
