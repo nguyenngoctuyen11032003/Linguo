@@ -90,7 +90,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - Tạo audio dùng Gemini TTS gói miễn phí: mặc định 3 request/phút và có quota ngày, nên phải chạy nhiều lần theo từng ngôn ngữ; chạy tay từ máy, không có workflow.
 - Luyện nói đã có (`/app/luyen-noi`) nhưng không chấm tự động: chỉ tự đánh giá, và bản chép giọng nói phụ thuộc Web Speech API của trình duyệt (không có ở mọi trình duyệt, có thể gửi âm thanh tới dịch vụ của hãng trình duyệt). Viết/nói không có trong kiểm tra đầu vào và không bao giờ được suy ra trình độ từ chúng.
 - Đóng vai AI: mỗi lượt tốn một lượt quota AI ngày (mặc định 20), nên một buổi 12 lượt có thể dùng gần hết quota; buổi dở dang và buổi đã kết thúc nhưng chưa xem tổng kết được giữ trên thiết bị (`localStorage` khoá `linguo:roleplay:v2:<userId>`, đóng tab vẫn còn) tối đa 24 giờ sau tin nhắn cuối, xoá khi rời buổi, xem xong tổng kết, đăng xuất hoặc xoá tài khoản; không đồng bộ sang thiết bị khác (FEATURES mục 16).
-- Từ vựng cá nhân: chưa có OCR, chưa chia sẻ danh sách. Chấm offline đã có qua outbox `linguo-personal-outbox-v1:<userId>` (gửi lại theo thứ tự khi có mạng/tab hiện lại/mỗi 15 giây, giữ khi đăng xuất như outbox bài học và ôn tập, xoá khi xoá tài khoản; FEATURES mục 17), nhưng cảnh báo "chưa đồng bộ" khi đăng xuất ở Cài đặt (`web/routes/app/SettingsPage.tsx`) chỉ đếm câu trả lời bài học và lượt chấm thẻ ôn tập, chưa đếm lượt chấm từ cá nhân.
+- Từ vựng cá nhân: chưa có OCR, chưa chia sẻ danh sách. Chấm offline đã có qua outbox `linguo-personal-outbox-v1:<userId>` (gửi lại theo thứ tự khi có mạng/tab hiện lại/mỗi 15 giây, giữ khi đăng xuất như outbox bài học và ôn tập, xoá khi xoá tài khoản; FEATURES mục 17); cảnh báo "chưa đồng bộ" khi đăng xuất ở Cài đặt (`web/routes/app/SettingsPage.tsx`) đếm cả lượt chấm từ cá nhân còn chờ.
 - Tiếng Nhật: chỉ có nội dung tới N3 (Kana → N5, N4, N3; đề JLPT N5/N4/N3). Cấp `n2`, `n1` tồn tại nên người học có thể chọn mục tiêu hoặc được xếp vào đó mà chưa có chương trình. Bài đầu của N4 chưa có bài tiên quyết là bài cuối của `kana-basics`.
 - Chấm tiếng Nhật: `normalizeAnswer` (`shared/content/grading.ts`, bản SQL `grade_exercise`) giữ khoảng trắng và đổi `、` `。` thành khoảng trắng, nên nội dung ja phải khai thêm biến thể đáp án (không dấu câu, không khoảng trắng).
 - Công cụ giáo viên: chưa có giao diện cấp quyền giáo viên (chỉ SQL, hoặc gọi `grant_teacher_role` bằng phiên của admin; DEPLOY.md, *Giáo viên*). Bài giao dạng đề thi dẫn tới trang Luyện thi chung, không mở thẳng đề được giao.
@@ -101,7 +101,6 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - CSP đặt bằng thẻ `<meta>` (GitHub Pages không cho đặt header): `frame-ancestors`, báo cáo vi phạm không có tác dụng (RUNBOOK mục 7).
 - Nội dung chưa qua giáo viên bản ngữ (mục 1).
 - Test pgTAP và e2e chạy trong CI; local cần Docker (SETUP.md). Chưa có test trên thiết bị thật tự động: dùng `docs/MOBILE-QA.md`. `route-error.test.tsx` có thể quá thời gian khi máy quá tải.
-- Hai e2e đang fail cả trên `main` (tại thời điểm viết): `review.spec.ts:162` (hoãn trả về 3 id thẻ thay vì 2) và `roleplay.spec.ts:265` (thiếu liên kết "Thử Đóng vai với AI").
 
 ## 4. Việc còn mở
 
@@ -111,9 +110,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - **Chấm tiếng Nhật bỏ khoảng trắng:** cân nhắc bỏ mọi khoảng trắng khi chuẩn hoá đáp án ja trong `grading.ts` và hàm SQL tương ứng (migration mới + fixture), để nội dung không phải khai biến thể.
 - **Nội dung tiếng Nhật:** thêm N2/N1 hoặc chặn chọn hai cấp này; thêm bài tiên quyết từ cuối `kana-basics` cho bài đầu N4; người bản ngữ duyệt nội dung, kịch bản đóng vai và tài liệu luyện nói.
 - **Bài giao dạng đề thi** mở thẳng đề được giao thay vì trang Luyện thi chung.
-- **Cảnh báo đăng xuất ở Cài đặt** đếm thêm lượt chấm từ vựng cá nhân còn chờ trong outbox (`outbox.personalVocab.pendingCount` của `OutboxSyncProvider`), hiện chỉ đếm bài học và ôn tập (mục 3).
 - **Giao diện cấp quyền giáo viên** (ví dụ trong trang Nhân sự) nếu số giáo viên tăng.
-- **Hai e2e fail trên `main`** (mục 3) cần người phụ trách ôn tập và đóng vai sửa.
 - **OCR từ tài liệu:** không nằm trong kế hoạch; PRD chỉ nói "sau import danh sách từ cá nhân/CSV mới xem xét OCR" (mục P2). Import CSV đã có (FEATURES mục 17).
 - Duyệt nội dung và thang điểm đề thi bởi người có chuyên môn; đối chiếu `scoring` của đề CEFR và các đề JLPT.
 - Thử khôi phục backup và rollback web theo RUNBOOK mục 1–3 và ghi vào "Nhật ký diễn tập".

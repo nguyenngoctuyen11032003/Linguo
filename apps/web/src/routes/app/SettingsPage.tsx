@@ -48,12 +48,17 @@ const THEME_SWATCH: Record<ThemePreference, string> = {
   system: 'bg-[linear-gradient(135deg,#f3f1ec_50%,#070b12_50%)] text-[#59646f]',
 };
 
-/** "3 câu trả lời", "2 lượt chấm thẻ ôn tập" or both: what still waits in the offline outboxes. */
-function pendingSummary(answers: number, grades: number): string {
+/**
+ * "3 câu trả lời", "2 lượt chấm thẻ ôn tập", "1 lượt chấm từ vựng cá nhân" or any mix of them: what still waits in the
+ * offline outboxes.
+ */
+function pendingSummary(answers: number, grades: number, personalGrades: number): string {
   const parts: string[] = [];
   if (answers > 0) parts.push(`${answers} câu trả lời`);
   if (grades > 0) parts.push(`${grades} lượt chấm thẻ ôn tập`);
-  return parts.join(' và ');
+  if (personalGrades > 0) parts.push(`${personalGrades} lượt chấm từ vựng cá nhân`);
+  const last = parts.pop();
+  return parts.length > 0 ? `${parts.join(', ')} và ${last}` : (last ?? '');
 }
 
 export function SettingsPage() {
@@ -68,7 +73,8 @@ export function SettingsPage() {
   const outbox = useOutboxSyncContext();
   const pendingAnswers = outbox.pendingCount;
   const pendingGrades = outbox.reviews.pendingCount;
-  const pendingTotal = pendingAnswers + pendingGrades;
+  const pendingPersonalGrades = outbox.personalVocab.pendingCount;
+  const pendingTotal = pendingAnswers + pendingGrades + pendingPersonalGrades;
 
   const [displayName, setDisplayName] = useState('');
   const [timezone, setTimezone] = useState(DEFAULT_TIMEZONE);
@@ -77,8 +83,8 @@ export function SettingsPage() {
   const { formRef: profileFormRef, focusFirstInvalid } = useFocusFirstInvalid();
   const [signingOut, setSigningOut] = useState(false);
   /**
-   * Sign-out was asked while lesson answers or review grades still wait in their outboxes: they only sync once this
-   * user signs in here again.
+   * Sign-out was asked while lesson answers, review grades or personal vocabulary grades still wait in their outboxes:
+   * they only sync once this user signs in here again.
    */
   const [confirmSignOut, setConfirmSignOut] = useState(false);
   const [syncing, setSyncing] = useState(false);
@@ -158,7 +164,7 @@ export function SettingsPage() {
     if (syncing) return;
     setSyncing(true);
     try {
-      await Promise.all([outbox.flush(), outbox.reviews.flush()]);
+      await Promise.all([outbox.flush(), outbox.reviews.flush(), outbox.personalVocab.flush()]);
     } finally {
       setSyncing(false);
     }
@@ -383,7 +389,7 @@ export function SettingsPage() {
       {confirmSignOut && pendingTotal > 0 && (
         <div role="alert" className="space-y-3 rounded-2xl bg-warn/15 px-4 py-3">
           <p className="text-[15px]">
-            Còn {pendingSummary(pendingAnswers, pendingGrades)} chưa đồng bộ lên máy chủ. Nếu đăng xuất bây giờ, chúng chỉ được
+            Còn {pendingSummary(pendingAnswers, pendingGrades, pendingPersonalGrades)} chưa đồng bộ lên máy chủ. Nếu đăng xuất bây giờ, chúng chỉ được
             gửi khi bạn đăng nhập lại trên thiết bị này.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">

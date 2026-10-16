@@ -6,6 +6,7 @@ import { renderWithProviders, TEST_USER_ID } from '../../../tests/unit/render';
 import { LESSON_ID, PATH_ID, payload, result, submitArgs } from '@/features/lesson-player/lesson-fixtures';
 import { lessonCacheKey, writeLessonCache } from '@/features/lesson-player/lessonCache';
 import { createOutbox } from '@/features/lesson-player/outbox';
+import { createPersonalOutbox } from '@/features/personal-vocab/outbox';
 import { createReviewOutbox } from '@/features/reviews/outbox';
 import { gradeArgs, gradeResult } from '@/features/reviews/review-fixtures';
 import { SettingsPage } from './SettingsPage';
@@ -76,6 +77,24 @@ function queueAnswer() {
 function queueGrade() {
   createReviewOutbox(TEST_USER_ID).add({ args: gradeArgs(1), queueIndex: 0 });
 }
+
+const PERSONAL_WORD_ID = '9e100000-0000-4000-8000-000000000001';
+
+/** One personal vocabulary grade waiting in the offline personal outbox of the test user. */
+function queuePersonalGrade() {
+  createPersonalOutbox(TEST_USER_ID).add({
+    args: { p_word_id: PERSONAL_WORD_ID, p_rating: 3, p_idempotency_key: crypto.randomUUID() },
+    queueIndex: 0,
+  });
+}
+
+const personalGradeResult = {
+  word_id: PERSONAL_WORD_ID,
+  state: 'learning',
+  due_at: '2026-10-14T00:10:00Z',
+  interval_minutes: 10,
+  replayed: false,
+};
 
 describe('SettingsPage', () => {
   it('pre-fills the profile and saves a trimmed display name', async () => {
@@ -249,6 +268,43 @@ describe('SettingsPage', () => {
     expect(createOutbox(TEST_USER_ID).list()).toEqual([]);
     expect(createReviewOutbox(TEST_USER_ID).list()).toEqual([]);
     expect(mocks.rpc).toHaveBeenCalledWith('grade_review', expect.anything());
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    await waitFor(() => expect(mocks.signOut).toHaveBeenCalledTimes(1));
+  });
+
+  it('counts personal vocabulary grades waiting to sync in the sign-out warning', async () => {
+    queuePersonalGrade();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent('Còn 1 lượt chấm từ vựng cá nhân chưa đồng bộ lên máy chủ.');
+    expect(mocks.signOut).not.toHaveBeenCalled();
+    await userEvent.click(screen.getByRole('button', { name: 'Vẫn đăng xuất' }));
+    await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(/^\/$/));
+    // Kept on sign-out like the other outboxes: it syncs at the next sign-in on this device.
+    expect(createPersonalOutbox(TEST_USER_ID).list()).toHaveLength(1);
+  });
+
+  it('lists all three outboxes in the warning and syncs every one of them', async () => {
+    queueAnswer();
+    queueGrade();
+    queuePersonalGrade();
+    renderWithProviders(<SettingsPage />, { route: '/app/cai-dat' });
+    await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent(
+      'Còn 1 câu trả lời, 1 lượt chấm thẻ ôn tập và 1 lượt chấm từ vựng cá nhân chưa đồng bộ lên máy chủ.',
+    );
+    mocks.rpc.mockImplementation((fn: string) =>
+      Promise.resolve({
+        data: fn === 'grade_review' ? gradeResult(1) : fn === 'grade_personal_word' ? personalGradeResult : result(),
+        error: null,
+      }),
+    );
+    await userEvent.click(screen.getByRole('button', { name: 'Đồng bộ ngay' }));
+    await waitFor(() => expect(screen.queryByRole('alert')).not.toBeInTheDocument());
+    expect(createOutbox(TEST_USER_ID).list()).toEqual([]);
+    expect(createReviewOutbox(TEST_USER_ID).list()).toEqual([]);
+    expect(createPersonalOutbox(TEST_USER_ID).list()).toEqual([]);
+    expect(mocks.rpc).toHaveBeenCalledWith('grade_personal_word', expect.objectContaining({ p_word_id: PERSONAL_WORD_ID }));
     await userEvent.click(screen.getByRole('button', { name: 'Đăng xuất' }));
     await waitFor(() => expect(mocks.signOut).toHaveBeenCalledTimes(1));
   });
