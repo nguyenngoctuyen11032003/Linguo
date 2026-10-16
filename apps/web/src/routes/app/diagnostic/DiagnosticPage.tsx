@@ -17,6 +17,7 @@ import { formatDate, FOUNDATION_MODE_VALUE, MODE_PARAM, SKILL_LABELS, type SkipR
 import { SkillProgress } from './SkillProgress';
 import { SkipSkillSheet } from './SkipSkillSheet';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
+import { playSound } from '@/lib/sound';
 
 const HOME = '/app';
 
@@ -149,7 +150,16 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
           {prompt.stem}
         </p>
         <div className="mt-5">
-          <ChoiceGroup labelledBy={stemId} options={prompt.options} selectedId={selected} onSelect={setSelected} disabled={busy} />
+          <ChoiceGroup
+            labelledBy={stemId}
+            options={prompt.options}
+            selectedId={selected}
+            onSelect={(id) => {
+              playSound('select');
+              setSelected(id);
+            }}
+            disabled={busy}
+          />
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
           <button
@@ -211,16 +221,19 @@ export function DiagnosticPage() {
 
   // Analytics: a report reached after answering here is a completion; reopening a finished attempt is not.
   const answeredHere = useRef(false);
+  // Same moment, told to the report page so it celebrates a fresh result only.
+  const finishedHere = useRef(false);
   useEffect(() => {
     if (status === 'question') answeredHere.current = true;
     if (status === 'report' && answeredHere.current) {
       answeredHere.current = false;
+      finishedHere.current = true;
       track('diagnostic_completed', { mode: report?.mode ?? requestedMode });
     }
   }, [status, report, requestedMode]);
 
   useEffect(() => {
-    if (status === 'report') navigate(reportPath(pathId), { replace: true, state: { report } });
+    if (status === 'report') navigate(reportPath(pathId), { replace: true, state: { report, finished: finishedHere.current } });
   }, [status, report, pathId, navigate]);
 
   const inTest = status === 'question' || status === 'submitting';
@@ -315,6 +328,7 @@ export function DiagnosticPage() {
                   block
                   onClick={() => {
                     track('diagnostic_started', { mode: introMode, resumed: run.resumable });
+                    playSound('start');
                     run.start();
                   }}
                 >
@@ -339,7 +353,11 @@ export function DiagnosticPage() {
         pathLanguage={path?.language}
         busy={busy}
         nearEnd={progress?.near_end ?? false}
-        onAnswer={(choice) => run.answer(choice)}
+        onAnswer={(choice) => {
+          // The test never shows a verdict (it adapts silently), so moving on is a neutral cue, not right/wrong.
+          playSound('next');
+          run.answer(choice);
+        }}
         onOpenSkip={() => setSkipOpen(true)}
         skipTriggerRef={skipTriggerRef}
       />

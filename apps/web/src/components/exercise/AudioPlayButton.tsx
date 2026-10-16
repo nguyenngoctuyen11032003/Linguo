@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { RotateCw, Volume2 } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { audioUrl } from './exercise-utils';
 
 export interface AudioPlayButtonProps {
@@ -31,6 +32,7 @@ export function AudioPlayButton({ path, className, onFailedChange }: AudioPlayBu
   if (!path) return null;
 
   const play = () => {
+    playSound('play');
     try {
       if (failed) audioRef.current = null;
       audioRef.current ??= new Audio(audioUrl(path));

@@ -3,6 +3,7 @@ import { AnimatePresence, m as motion } from 'motion/react';
 import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
 import { Button } from '@/components/ui/Button';
 import { functionalTransition } from '@/design/motion';
+import { playSound } from '@/lib/sound';
 import { useModalDialog } from '@/lib/useModalDialog';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { SKIP_REASON_LABELS, type SkipReason } from './labels';
@@ -87,7 +88,18 @@ export function SkipSkillSheet({ open, skillLabel, last = false, busy, onClose, 
               />
             </div>
             <div className="mt-5 grid gap-2">
-              <Button variant="accent" size="lg" block disabled={!reason} loading={busy} onClick={() => reason && onSkip(reason)}>
+              <Button
+                variant="accent"
+                size="lg"
+                block
+                disabled={!reason}
+                loading={busy}
+                onClick={() => {
+                  if (!reason) return;
+                  playSound('next');
+                  onSkip(reason);
+                }}
+              >
                 Bỏ qua kỹ năng này
               </Button>
               <Button variant="ghost" size="lg" block onClick={onClose}>

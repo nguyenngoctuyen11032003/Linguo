@@ -98,6 +98,15 @@ export function ReviewPage() {
     document.getElementById('review-summary-title')?.focus();
   }, [status]);
 
+  // The first card of this visit opens with the start cue; "load more" after the summary continues the same visit.
+  const startSounded = useRef(false);
+  const sessionStarted = status === 'ready' && !!card;
+  useEffect(() => {
+    if (!sessionStarted || startSounded.current) return;
+    startSounded.current = true;
+    playSound('start');
+  }, [sessionStarted]);
+
   const finishTracked = useRef(false);
   useEffect(() => {
     if (status !== 'finished') {

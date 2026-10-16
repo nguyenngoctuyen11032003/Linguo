@@ -2,6 +2,7 @@ import { useId } from 'react';
 import { CONFIDENCE_LABELS } from '@/components/exercise';
 import type { Confidence } from '@/features/reviews/types';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 
 const LEVELS: Confidence[] = [1, 2, 3];
 const BAR_HEIGHT: Record<Confidence, string> = { 1: 'h-1.5', 2: 'h-2.5', 3: 'h-3.5' };
@@ -30,7 +31,10 @@ export function RecallConfidence({ value, onChange }: Props) {
               key={level}
               type="button"
               aria-pressed={pressed}
-              onClick={() => onChange(pressed ? null : level)}
+              onClick={() => {
+                playSound('select');
+                onChange(pressed ? null : level);
+              }}
               className={cn(
                 'group inline-flex min-h-14 min-w-0 flex-col items-center justify-center gap-1.5 rounded-2xl border-2 px-1 py-2 text-center text-[14px] font-bold leading-tight whitespace-nowrap min-[360px]:text-[15px]',
                 'transition-[translate,box-shadow,background-color] duration-150 active:translate-y-[3px]',

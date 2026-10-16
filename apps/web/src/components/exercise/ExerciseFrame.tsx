@@ -278,10 +278,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
           lang={exercise.answer_lang}
           seed={`${runId ?? ''}:${exercise.id}`}
           tokenIds={response && 'token_ids' in response ? response.token_ids : []}
-          onChange={(ids) => {
-            playSound('select');
-            setResponse(ids.length > 0 ? { token_ids: ids } : null);
-          }}
+          onChange={(ids) => setResponse(ids.length > 0 ? { token_ids: ids } : null)}
           disabled={locked}
         />
       );

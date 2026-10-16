@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { AnswerLang, WordBankPrompt } from '@linguo/shared';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 import { isShortCjk } from './exercise-utils';
 import { seededShuffleAway } from './shuffle';
 
@@ -51,6 +52,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
 
   const add = (id: string) => {
     const next = [...tokenIds, id];
+    playSound('place');
     onChange(next);
     setFocusAfter({ bankIndex: bank.findIndex((t) => t.id === id) });
     setAnnouncement(`Đã thêm ${byId.get(id)?.text ?? ''}, vị trí ${next.length}`);
@@ -58,6 +60,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
   const remove = (index: number) => {
     const id = tokenIds[index]!;
     const next = tokenIds.filter((_, i) => i !== index);
+    playSound('unplace');
     onChange(next);
     setFocusAfter({ bankId: id });
     setAnnouncement(`Đã bỏ ${byId.get(id)?.text ?? ''} khỏi vị trí ${index + 1}, còn ${next.length} thẻ trong câu`);

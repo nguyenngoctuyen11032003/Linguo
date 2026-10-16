@@ -2,6 +2,7 @@ import { RotateCw, Square, Volume2 } from 'lucide-react';
 import type { TtsLanguage } from '@/features/exam/tts';
 import { NORMAL_RATE, SLOW_RATE, useMachineSpeech } from './machine-speech';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 
 export interface MachineSpeechButtonProps {
   text: string;
@@ -31,7 +32,14 @@ export function MachineSpeechButton({ text, lang, label, slow = false, compact =
     return (
       <button
         type="button"
-        onClick={active ? stop : () => play(r)}
+        onClick={
+          active
+            ? stop
+            : () => {
+                playSound('play');
+                play(r);
+              }
+        }
         aria-label={active ? `Dừng đọc: ${text}` : failed ? `Không đọc được. Thử lại: ${text}` : `${name}: ${text}`}
         className={cn(
           base,
