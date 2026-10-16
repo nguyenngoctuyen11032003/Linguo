@@ -24,7 +24,7 @@ interface Props {
 export function ActionCard({ icon: Icon, titleId, title, description, to, label, shortLabel, variant = 'ghost' }: Props) {
   return (
     <SolidCard className="p-4">
-      <section aria-labelledby={titleId} className="flex h-full flex-col gap-3 sm:flex-row sm:items-center">
+      <section aria-labelledby={titleId} className="flex h-full flex-col gap-3 sm:flex-row sm:items-center lg:flex-col lg:items-stretch xl:gap-4">
         <div className="flex min-w-0 flex-1 flex-col items-start gap-2.5 min-[30rem]:flex-row min-[30rem]:gap-3.5">
           <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary min-[30rem]:size-11">
             <Icon aria-hidden className="size-5 min-[30rem]:size-[22px]" strokeWidth={1.9} />
@@ -38,7 +38,7 @@ export function ActionCard({ icon: Icon, titleId, title, description, to, label,
         </div>
         <Link
           to={to}
-          className={cn(buttonClasses(variant, 'md'), 'mt-auto w-full whitespace-nowrap max-[30rem]:px-3 max-[30rem]:text-sm sm:mt-0 sm:w-auto sm:shrink-0')}
+          className={cn(buttonClasses(variant, 'md'), 'mt-auto w-full whitespace-nowrap max-[30rem]:px-3 max-[30rem]:text-sm sm:mt-0 sm:w-auto sm:shrink-0 lg:mt-auto lg:w-full')}
         >
           {shortLabel ? (
             <>

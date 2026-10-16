@@ -38,14 +38,14 @@ export function PathSummaryCard({ path, onResume, resuming, focusRef }: Props) {
       <Link
         ref={focusRef}
         to="/app/hoc-tap"
-        className="card grid min-h-14 grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1.5 px-4 py-3.5 transition-[border-color,scale] duration-150 hover:border-primary/40 active:scale-[0.99] min-[380px]:grid-cols-[auto_minmax(0,1fr)_auto] min-[380px]:gap-x-4"
+        className="card grid min-h-14 grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1.5 px-4 py-3.5 transition-[border-color,scale] duration-150 hover:border-primary/40 active:scale-[0.99] min-[380px]:grid-cols-[auto_minmax(0,1fr)_auto] min-[380px]:gap-x-4 lg:max-xl:grid-cols-[minmax(0,1fr)_auto]"
       >
-        <span aria-hidden="true" className="stat-num flex shrink-0 items-center gap-1.5 text-[26px] max-[379px]:col-start-1 max-[379px]:row-start-1 min-[380px]:text-[28px]">
+        <span aria-hidden="true" className="stat-num flex shrink-0 items-center gap-1.5 text-[26px] max-[379px]:col-start-1 max-[379px]:row-start-1 min-[380px]:text-[28px] lg:max-xl:col-start-1 lg:max-xl:row-start-1">
           <span className="text-muted">{shortLevel(path.currentLevel)}</span>
           <span className="h-0.5 w-4 rounded-full bg-gradient-to-r from-muted to-accent" />
           <span className="text-accent-text">{shortLevel(path.targetLevel)}</span>
         </span>
-        <span className="min-w-0 break-words max-[379px]:col-start-1 max-[379px]:row-start-2 min-[380px]:border-l min-[380px]:border-border min-[380px]:pl-4">
+        <span className="min-w-0 break-words max-[379px]:col-start-1 max-[379px]:row-start-2 min-[380px]:border-l min-[380px]:border-border min-[380px]:pl-4 lg:max-xl:col-start-1 lg:max-xl:row-start-2 lg:max-xl:border-l-0 lg:max-xl:pl-0">
           <span className="eyebrow block">Lộ trình của bạn</span>
           <span className="block text-[15px] font-bold leading-snug">{title}</span>
           <span className="block text-[13px] text-muted">
@@ -57,7 +57,7 @@ export function PathSummaryCard({ path, onResume, resuming, focusRef }: Props) {
             {!path.estimate.assumptions.referenceReviewed && ' (ước lượng tham khảo)'}
           </span>
         </span>
-        <ChevronRight aria-hidden className="size-5 shrink-0 text-muted max-[379px]:col-start-2 max-[379px]:row-span-2 max-[379px]:row-start-1" />
+        <ChevronRight aria-hidden className="size-5 shrink-0 text-muted max-[379px]:col-start-2 max-[379px]:row-span-2 max-[379px]:row-start-1 lg:max-xl:col-start-2 lg:max-xl:row-span-2 lg:max-xl:row-start-1" />
       </Link>
     );
   }

@@ -22,6 +22,7 @@ import { SpreadWarning } from "./home/SpreadWarning";
 import { TodayCard } from "./home/TodayCard";
 import { WeeklySummaryCard } from "./home/WeeklySummaryCard";
 import { HomeMotivation } from "./progress/HomeMotivation";
+import "./home/home.css";
 
 const todayLabel = (timeZone: string) =>
   new Intl.DateTimeFormat("vi-VN", {
@@ -86,17 +87,17 @@ export function HomePage() {
   );
 
   return (
-    <div className="space-y-4 lg:space-y-6">
-      <header className="flex items-center gap-3.5 pb-2">
+    <div className="space-y-4 lg:space-y-8">
+      <header className="flex items-center gap-3.5 pb-2 lg:gap-5 lg:border-b lg:border-border lg:pb-6">
         <Avatar
           src={avatarUrl(getSupabase(), profile?.avatarPath)}
           initial={(name || "?").charAt(0).toUpperCase()}
-          className="size-14"
+          className="size-14 lg:size-16"
           initialClassName="stat-num text-[26px]"
         />
         <div className="min-w-0 flex-1 space-y-1">
-          <p className="eyebrow truncate">{todayLabel(timeZone)}</p>
-          <h1 className="page-title truncate !text-[clamp(1.75rem,8.5vw,2.25rem)] !leading-[1.15]">
+          <p className="eyebrow truncate lg:tracking-[0.18em]">{todayLabel(timeZone)}</p>
+          <h1 className="page-title truncate !text-[clamp(1.75rem,8.5vw,2.25rem)] !leading-[1.15] lg:!text-[3rem]">
             {status === "loading" ? (
               <>
                 <span className="sr-only">Đang tải…</span>
@@ -121,8 +122,8 @@ export function HomePage() {
       {paths.status !== "error" && paths.current && (
         <>
           {/* Laptop: two columns (today's work left, progress and shortcuts right); phones keep the single stack. */}
-          <div className="space-y-4 lg:grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-start lg:gap-6 lg:space-y-0 *:min-w-0">
-            <div className="space-y-4">
+          <div className="space-y-4 lg:grid lg:grid-cols-12 lg:items-start lg:gap-8 lg:space-y-0 *:min-w-0">
+            <div className="stagger-in space-y-4 lg:col-span-8 lg:space-y-5">
               {/* A paused path has no study session; its summary card offers to resume it. */}
               {paths.current.status === "active" ? (
                 <TodayCard key={paths.current.id} pathId={paths.current.id} />
@@ -133,7 +134,7 @@ export function HomePage() {
               <ReviewDueCard />
               <NextLessonCard />
             </div>
-            <div className="space-y-4">
+            <div className="stagger-in col-late space-y-4 lg:col-span-4 lg:space-y-5">
               <WeeklySummaryCard />
               <SpreadWarning paths={paths.paths} />
               {paths.current.status === "active" && pathSummary}

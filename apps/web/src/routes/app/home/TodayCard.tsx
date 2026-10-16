@@ -22,7 +22,7 @@ function progress(session: StudySession): { finished: number; total: number } {
 /** Decorative route line (map motif) in the hero's corner. */
 function RouteMotif() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 200 140" className="pointer-events-none absolute -right-6 -top-4 w-56 opacity-60" fill="none">
+    <svg aria-hidden="true" viewBox="0 0 200 140" className="pointer-events-none absolute -right-6 -top-4 w-56 opacity-60 lg:-right-2 lg:-top-2 lg:w-72 lg:opacity-40" fill="none">
       <path
         d="M10 120C60 130 50 40 110 60S170 10 195 20"
         stroke="url(#today-route)"
@@ -99,7 +99,7 @@ export function TodayCard({ pathId }: { pathId: string }) {
   return (
     <section
       aria-labelledby="today-title"
-      className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
+      className="relative isolate overflow-hidden rounded-[2rem] bg-[image:var(--hero-bg)] p-5 text-white lg:p-9 shadow-[0_24px_60px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset"
     >
       <div aria-hidden="true" className="absolute -bottom-24 -left-16 -z-10 size-64 rounded-full bg-radial from-accent/30 to-transparent to-70%" />
       <RouteMotif />
@@ -116,11 +116,13 @@ export function TodayCard({ pathId }: { pathId: string }) {
         )}
       </div>
 
+      <div className="lg:mt-6 lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:items-end lg:gap-12">
+      <div>
       <p className="sr-only">
         {goal > 0 ? `Mục tiêu ${goal} phút · Đã học ${studied} phút` : `Hôm nay không có lịch học · Đã học ${studied} phút`}
       </p>
       <p aria-hidden="true" className="relative mt-3 flex items-end gap-2">
-        <span className="stat-num bg-gradient-to-b from-white to-white/55 bg-clip-text pr-1 text-[88px] text-transparent">{studied}</span>
+        <span className="stat-num bg-gradient-to-b from-white to-white/55 bg-clip-text pr-1 text-[88px] text-transparent lg:text-[132px]">{studied}</span>
         <span className="pb-2 text-[15px] font-semibold leading-tight text-white/70">
           {goal > 0 ? (
             <>
@@ -163,9 +165,11 @@ export function TodayCard({ pathId }: { pathId: string }) {
         </div>
       )}
 
+      </div>
+      <div>
       {(session || practice) && (
-        <div className="mt-4 space-y-1.5">
-          {session && <p className="text-[17px] font-bold leading-snug tracking-[-0.01em]">{session.plan.focus_vi}</p>}
+        <div className="mt-4 space-y-1.5 lg:mt-0">
+          {session && <p className="text-[17px] font-bold leading-snug tracking-[-0.01em] lg:text-[22px]">{session.plan.focus_vi}</p>}
           {practice && (
             <p className="flex items-start gap-1.5 text-[13px] leading-snug text-white/70">
               <Zap aria-hidden className="mt-0.5 size-3.5 shrink-0 text-[#ffc06b]" />
@@ -182,11 +186,11 @@ export function TodayCard({ pathId }: { pathId: string }) {
       <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1">
         <Link
           to={SESSION_PAGE_PATH}
-          className="press-accent inline-flex min-h-13 min-w-0 flex-1 basis-56 items-center justify-between gap-2 rounded-full bg-accent py-1.5 pl-4 pr-1.5 text-[15px] font-bold text-on-accent min-[380px]:gap-3 min-[380px]:pl-5 min-[380px]:text-[16px] transition-[translate,box-shadow,filter] duration-150 hover:brightness-110"
+          className="group press-accent inline-flex min-h-13 min-w-0 flex-1 basis-56 items-center justify-between gap-2 rounded-full bg-accent py-1.5 pl-4 pr-1.5 text-[15px] font-bold text-on-accent min-[380px]:gap-3 min-[380px]:pl-5 min-[380px]:text-[16px] transition-[translate,box-shadow,filter] duration-150 hover:brightness-110"
         >
           <span className="min-w-0 truncate">{step ? `Tiếp tục phiên (${step.finished}/${step.total})` : 'Bắt đầu phiên học'}</span>
           <span aria-hidden="true" className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-[#0b1420] text-white">
-            <ArrowRight className="size-5" />
+            <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-0.5" />
           </span>
         </Link>
         {!open && (
@@ -197,6 +201,8 @@ export function TodayCard({ pathId }: { pathId: string }) {
             Chỉ có 10 phút?
           </Link>
         )}
+      </div>
+      </div>
       </div>
     </section>
   );

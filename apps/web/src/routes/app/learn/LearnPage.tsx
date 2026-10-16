@@ -11,6 +11,7 @@ import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvide
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { cn } from '@/lib/cn';
 import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson, type UnitGroup } from './grouping';
+import '../home/home.css';
 import { readUnitOpen, writeUnitOpen, type UnitOpenState } from './unit-open';
 
 const STATUS_LABEL: Record<RunStatus, string> = {
@@ -177,7 +178,7 @@ function UnitSection({
   const done = learnedCount(unit.lessons);
   const complete = done === unit.lessons.length;
   return (
-    <section aria-labelledby={`unit-${unit.id}`} className="card overflow-hidden p-0">
+    <section aria-labelledby={`unit-${unit.id}`} className="card lift overflow-hidden p-0">
       <details
         open={open}
         onToggle={(event) => {
@@ -263,19 +264,20 @@ export function LearnPage() {
     );
   } else {
     content = (
-      <div className="space-y-8">
+      <div className="stagger-in space-y-8 lg:grid lg:grid-cols-12 lg:items-start lg:gap-10 lg:space-y-0 *:min-w-0">
+        <aside className="lg:sticky lg:top-24 lg:col-span-4 lg:col-start-9 lg:row-start-1">
         {next ? (
           <Link
             to={`/app/hoc-tap/bai/${next.lesson_id}`}
             aria-label={`${next.run_status === 'in_progress' ? 'Học tiếp' : 'Bắt đầu'}: ${next.title.vi}`}
-            className="group relative isolate flex items-center gap-4 overflow-hidden rounded-[1.75rem] bg-[image:var(--hero-bg)] p-4 pl-5 text-white shadow-[0_20px_50px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/60"
+            className="group relative isolate flex items-center gap-4 overflow-hidden rounded-[1.75rem] bg-[image:var(--hero-bg)] p-4 pl-5 text-white transition-transform duration-500 ease-[var(--ease-expo)] hover:-translate-y-0.5 lg:min-h-56 lg:flex-col-reverse lg:items-stretch lg:justify-between lg:gap-8 lg:rounded-[2rem] lg:p-7 shadow-[0_20px_50px_-24px_rgb(7_11_18/0.8)] ring-1 ring-white/10 ring-inset focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/60"
           >
             <span aria-hidden="true" className="absolute -right-10 -top-16 -z-10 size-48 rounded-full bg-radial from-accent/35 to-transparent to-70%" />
             <span className="min-w-0 flex-1 break-words">
               <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-white/65">
                 {next.run_status === 'in_progress' ? 'Tiếp tục' : 'Bắt đầu'}
               </span>
-              <span className="mt-1 block text-[19px] font-bold leading-snug">{next.title.vi}</span>
+              <span className="mt-1 block text-[19px] font-bold leading-snug lg:mt-2 lg:text-[26px] lg:tracking-[-0.02em]">{next.title.vi}</span>
               <span className="mt-1 flex items-center gap-1 text-[13px] text-white/65">
                 <Clock aria-hidden className="size-3.5" />
                 {next.estimated_minutes} phút
@@ -283,9 +285,9 @@ export function LearnPage() {
             </span>
             <span
               aria-hidden="true"
-              className="press-accent grid size-14 shrink-0 place-items-center rounded-full bg-accent text-on-accent transition-transform group-active:translate-y-[3px]"
+              className="press-accent grid size-14 shrink-0 place-items-center rounded-full bg-accent text-on-accent transition-transform group-active:translate-y-[3px] lg:size-16 lg:self-end"
             >
-              <ArrowRight className="size-6" />
+              <ArrowRight className="size-6 transition-transform duration-300 group-hover:translate-x-0.5" />
             </span>
           </Link>
         ) : (
@@ -294,8 +296,10 @@ export function LearnPage() {
             <span>Bạn đã hoàn thành các bài hiện có. Nội dung mới sẽ sớm được bổ sung nhé!</span>
           </p>
         )}
+        </aside>
+        <div className="space-y-10 lg:col-span-8 lg:col-start-1 lg:row-start-1">
         {groupPathLessons(lessons).map((program) => (
-          <section key={program.id} aria-labelledby={`program-${program.id}`} className="space-y-3">
+          <section key={program.id} aria-labelledby={`program-${program.id}`} className="space-y-4">
             <div className="space-y-2.5">
               <div className="flex flex-wrap items-center gap-2">
                 <h2 id={`program-${program.id}`} className="text-xl font-extrabold tracking-[-0.02em]">
@@ -310,10 +314,13 @@ export function LearnPage() {
                 total={program.units.reduce((n, u) => n + u.lessons.length, 0)}
               />
             </div>
-            <div className="space-y-3 min-[1100px]:grid min-[1100px]:grid-cols-2 min-[1100px]:items-start min-[1100px]:gap-4 min-[1100px]:space-y-0">
+            <ol className="route">
             {program.units.map((unit, i) => (
-              <UnitSection
+              <li
                 key={unit.id}
+                data-state={learnedCount(unit.lessons) === unit.lessons.length ? 'done' : next?.unit_id === unit.id ? 'next' : 'todo'}
+              >
+              <UnitSection
                 unit={unit}
                 index={i}
                 lessons={lessons}
@@ -321,10 +328,12 @@ export function LearnPage() {
                 open={openUnits[unit.id] ?? next?.unit_id === unit.id}
                 onToggle={(open) => toggleUnit(unit.id, open)}
               />
+              </li>
             ))}
-            </div>
+            </ol>
           </section>
         ))}
+        </div>
       </div>
     );
   }
@@ -332,7 +341,7 @@ export function LearnPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-3">
-        <h1 className="page-title">Học tập</h1>
+        <h1 className="page-title lg:!text-[3rem]">Học tập</h1>
         {paths.current ? (
           <PathHeader language={paths.current.language} current={paths.current.currentLevel} target={paths.current.targetLevel} />
         ) : (

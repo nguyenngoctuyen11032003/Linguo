@@ -65,7 +65,7 @@ describe('LearnPage', () => {
     expect(screen.getByRole('heading', { level: 1, name: 'Học tập' })).toBeInTheDocument();
     expect(screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)).toEqual(['Tiếng Anh A1', 'Ngữ pháp nền tảng']);
     expect(screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(['Làm quen', 'Con số', 'Câu đơn']);
-    const links = screen.getAllByRole('list').flatMap((ul) => within(ul).getAllByRole('link')).filter((a) => a.getAttribute('href')?.startsWith('/app/hoc-tap/bai/'));
+    const links = [...new Set(screen.getAllByRole('list').flatMap((ul) => within(ul).getAllByRole('link')))].filter((a) => a.getAttribute('href')?.startsWith('/app/hoc-tap/bai/'));
     expect(links.map((a) => a.getAttribute('href'))).toEqual(
       [greet, names, numbers, grammar].map((l) => `/app/hoc-tap/bai/${l.lesson_id}`),
     );
