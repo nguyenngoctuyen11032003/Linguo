@@ -128,7 +128,17 @@ Thông báo nhắc học luôn hiện trong hộp thư của app. Thông báo đ
 6. **Production:** xem `docs/DEPLOY.md` → Nhắc học & Web Push (workflow **Notify** gọi function mỗi 15 phút).
 
 ## 9. Trang quản trị `/quan-tri` trên máy (tuỳ chọn)
-Cần một dòng trong `public.staff_roles`. Trên Supabase local: đăng ký một tài khoản trong app, rồi chạy câu `insert into public.staff_roles …` ở `docs/DEPLOY.md` → Quản trị nội dung (bootstrap admin) bằng Studio (`http://127.0.0.1:55323`, SQL Editor) hoặc `psql` tới cổng 55322. Không cần mật khẩu hay secret nào khác.
+Cần một dòng trong `public.staff_roles`. Trên Supabase local: đăng ký một tài khoản trong app, rồi chạy câu `insert into public.staff_roles …` ở `docs/DEPLOY.md` → Quản trị nội dung (bootstrap admin) bằng Studio (`http://127.0.0.1:55323`, SQL Editor) hoặc `psql` tới cổng 55322. Không cần mật khẩu hay secret nào khác. Có vai trò admin rồi thì cấp vai trò cho tài khoản khác ở trang Nhân sự `/quan-tri/nhan-su`.
+
+## 10. Khu giáo viên `/giao-vien` trên máy (tuỳ chọn)
+Cần một dòng trong `public.teacher_profiles`: đăng ký một tài khoản trong app, rồi chạy câu `insert into public.teacher_profiles …` ở `docs/DEPLOY.md` → Giáo viên (Studio hoặc `psql` như mục 9). Tải lại trang để thấy "Lớp học (giáo viên)"; dùng tài khoản thứ hai để vào lớp bằng mã mời ở `/app/lop-hoc`.
+
+## 11. Audio bài nghe (tuỳ chọn)
+Không cần gì để chạy app: thiếu audio thì bài nghe đọc bằng giọng máy của trình duyệt. Chỉ cần khi muốn **tạo** audio (`scripts/generate-audio.mjs`, xem `docs/AUDIO.md`):
+
+1. `pnpm audio:plan` và `pnpm audio:check` không cần key hay mạng.
+2. Thử tạo trên Supabase local: cần đủ dịch vụ (`pnpm db:start`; stack gọn `-x … storage-api …` không có Storage). Đặt trong shell (không ghi vào file): `GEMINI_API_KEY` (key Google AI Studio như mục 7), `SUPABASE_URL=http://127.0.0.1:55321`, `SUPABASE_SERVICE_ROLE_KEY` (lấy từ `pnpm exec supabase status`); tuỳ chọn `GEMINI_TTS_MODEL`. Rồi `pnpm audio:generate -- --lang ko --limit 3 --out <thư mục ngoài repo>` và nghe thử.
+3. Chạy local sẽ ghi `audio_asset_id` vào YAML và manifest dù file chỉ nằm trên Storage local: đừng commit kết quả của lần thử local (`git checkout -- content supabase/content-audio-manifest.json`, xoá manifest nếu mới tạo). Production: `docs/DEPLOY.md` → Audio bài nghe.
 
 ## Thông tin bạn cần cung cấp — tóm tắt
 | Giá trị | Đặt ở đâu |
@@ -143,6 +153,7 @@ Cần một dòng trong `public.staff_roles`. Trên Supabase local: đăng ký m
 | Tên đầy đủ các secret/biến của GitHub | `docs/DEPLOY.md` → Tổng hợp secrets và biến |
 | VAPID public key (tuỳ chọn) | `.env` và GitHub → Variables (`VITE_VAPID_PUBLIC_KEY`) |
 | VAPID private key, subject, `NOTIFY_CRON_SECRET` (tuỳ chọn) | Local: `supabase/functions/.env`; production: GitHub → Environment `production` → Secrets `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `NOTIFY_CRON_SECRET`; `NOTIFY_CRON_SECRET` đặt thêm (cùng giá trị) ở environment `notify`, và workflow Notify còn đọc repository variable `VITE_SUPABASE_URL` |
+| Tạo audio bài nghe (tuỳ chọn): Gemini API key, Supabase URL, secret/service_role key; tuỳ chọn `GEMINI_TTS_MODEL` | Chỉ biến môi trường của lệnh `pnpm audio:generate`, không ghi vào file, không đặt ở GitHub (`docs/DEPLOY.md` → Audio bài nghe) |
 | Smoke check sau deploy (tuỳ chọn) | GitHub → repository Variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` (đã đặt cho build; không cần secret) |
 
 ## Bảng giờ tham chiếu (ước lượng thời gian)

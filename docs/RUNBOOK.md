@@ -9,7 +9,9 @@ Tài liệu xử lý sự cố và vận hành production (spec 7 §3). Thiết 
 | Gia sư AI | Edge Function `ai-tutor` + Gemini | Key Gemini chỉ trong secret Supabase |
 | Nhắc học và Web Push | Workflow **Notify** (mỗi 15 phút) → Edge Function `notify-dispatch` | `NOTIFY_CRON_SECRET` (environment `notify` và Supabase), khoá VAPID chỉ trong secret Supabase |
 | Dọn dữ liệu | Workflow **Maintenance** (hằng ngày) → RPC `purge_expired_data` và `purge_analytics`; `notify-dispatch` gọi `purge_notifications` mỗi đêm | `SUPABASE_SERVICE_ROLE_KEY` trong environment `production` |
-| Quản trị nội dung | `/quan-tri` (bảng `staff_roles`) | Vai trò `editor` < `reviewer` < `admin`, cấp bằng SQL hoặc `admin_grant_role` |
+| Quản trị nội dung | `/quan-tri` (bảng `staff_roles`) | Vai trò `editor` < `reviewer` < `admin`; admin đầu tiên cấp bằng SQL, sau đó ở trang Nhân sự `/quan-tri/nhan-su` (`admin_grant_role`, có nhật ký) |
+| Công cụ giáo viên | `/giao-vien` (bảng `teacher_profiles`), lớp học của người học `/app/lop-hoc` | Quyền giáo viên cấp bằng SQL hoặc `grant_teacher_role` (admin), DEPLOY.md → Giáo viên |
+| Audio bài nghe | Bucket Storage `content-audio` (đọc công khai) + bảng `audio_assets`; tạo tay bằng `pnpm audio:generate` | Chỉ `service_role` ghi; key Gemini và service key chỉ trong shell của người chạy (DEPLOY.md → Audio bài nghe) |
 | Secrets | GitHub environment `production`, Supabase secrets | Không bao giờ trong `VITE_*`, file commit hay log |
 
 ## 1. Mục tiêu khôi phục (MVP)
@@ -79,6 +81,8 @@ Xoay ngay khi nghi bị lộ (CI `secrets`/`check:bundle` báo, key xuất hiệ
 3. Actions → Deploy → **Run workflow** với `functions = true` → Approve. Bước *Set Edge Function secrets (Gemini)* đẩy key mới lên Supabase.
 4. Thử một câu hỏi gia sư AI trên production.
 5. Xoá key cũ trong Google AI Studio. Đến lúc này key cũ mới hết hiệu lực.
+
+Script tạo audio (`pnpm audio:generate`) chỉ đọc `GEMINI_API_KEY` từ shell của người chạy; key không nằm ở GitHub hay Supabase, nên xoay key không cần làm gì thêm cho audio ngoài việc dùng key mới ở lần chạy sau.
 
 ### Supabase service role / secret key
 
@@ -174,7 +178,9 @@ Theo PRD §19 (điều kiện tối thiểu), §20.3 (bảo mật) và §22 (đ�
 - [ ] Supabase Auth: Site URL, Redirect URLs, độ dài mật khẩu tối thiểu 8.
 - [ ] Đã thử rollback web một lần (Re-run một Deploy cũ).
 - [ ] Nhắc học: environment `notify` có `NOTIFY_CRON_SECRET`; Actions → Notify chạy tay trả `HTTP 200`; nếu bật Web Push thì `VITE_VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` đã đặt và một thiết bị thật nhận được thông báo thử.
-- [ ] Quản trị: đã bootstrap admin đầu tiên (DEPLOY.md → Quản trị nội dung) và đăng nhập `/quan-tri` được; tài khoản thường mở `/quan-tri` thấy 404.
+- [ ] Quản trị: đã bootstrap admin đầu tiên (DEPLOY.md → Quản trị nội dung) và đăng nhập `/quan-tri` được; tài khoản thường mở `/quan-tri` thấy 404. Nên có ít nhất hai admin (trang Nhân sự), vì admin cuối cùng không bị hạ và không xoá được tài khoản.
+- [ ] Giáo viên (nếu dùng lớp học): đã cấp `teacher_profiles` cho giáo viên đầu tiên (DEPLOY.md → Giáo viên); tài khoản đó thấy "Lớp học (giáo viên)" và tạo được mã mời; học viên vào lớp bằng mã.
+- [ ] Nội dung tiếng Nhật đã được Publish content sau khi migration `20261018130000_japanese.sql` được áp (DEPLOY.md → Xuất bản nội dung).
 - [ ] Actions → Maintenance chạy tay (Approve `production`) trả `HTTP 200` cho cả `purge_expired_data` lẫn `purge_analytics`, xem DEPLOY.md → Bảo trì dữ liệu.
 - [ ] Mọi migration đã deploy đều có trong `supabase/migrations-applied.json` (`node scripts/check-migrations-immutable.mjs` xanh).
 
@@ -221,6 +227,8 @@ Giảm thiểu mà không tắt hẳn: hạ `GEMINI_DAILY_USER_LIMIT` (mục 6).
 - **Maintenance** (dọn dữ liệu hằng ngày): Actions → Maintenance → **Disable workflow**. Chỉ làm chậm việc dọn dữ liệu, không mất gì.
 - **Deploy** khi nghi một bản đang lỗi: Actions → Deploy → **Disable workflow** (như mục 2 bước 2), rồi rollback theo mục 3 và 4.
 - **Một nội dung sai** đang hiển thị cho người học: admin chuyển nó về `in_review` hoặc `archived` ở `/quan-tri/noi-dung` (có hiệu lực ngay, không cần deploy); sửa YAML trong repo sau đó. Lưu ý lần **Publish content** kế tiếp không hạ trạng thái của dòng có nội dung không đổi, nhưng nội dung đã sửa nhận trạng thái ghi trong YAML.
+- **Một file audio sai** (đọc sai, sai giọng): sửa câu trong YAML (id dự kiến đổi theo), chạy lại `pnpm audio:generate`, rồi Publish content; web dùng id mới. `--force` tạo lại file ở cùng id (cùng URL), nên máy đã nghe bản cũ có thể còn giữ nó trong cache service worker tới 30 ngày. File cũ trên bucket `content-audio` không tự xoá (vô hại). Muốn tắt hẳn audio của một câu ngay: đặt lại `audio_asset_id: null` trong YAML và Publish content, web rơi về giọng đọc của máy.
+- **Thu hồi quyền giáo viên** khi bị lạm dụng: `delete from public.teacher_profiles where user_id = '<uuid>';` ở SQL Editor (mọi RPC `teacher_*` kiểm quyền ở từng lần gọi nên bị từ chối ngay; giao diện cập nhật khi tải lại trang). Giáo viên chỉ thấy số liệu tổng hợp, không thấy đáp án hay email của học viên.
 
 ## Kiểm tra sau deploy (smoke)
 

@@ -1,12 +1,12 @@
 # Linguo
 
-Nền tảng học tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt. Web app mobile-first (PWA) trên GitHub Pages, backend Supabase (Auth + Postgres + RLS + Edge Functions), CI/CD bằng GitHub Actions.
+Nền tảng học tiếng Anh, tiếng Hàn và tiếng Nhật cá nhân hoá cho người Việt. Web app mobile-first (PWA) trên GitHub Pages, backend Supabase (Auth + Postgres + RLS + Edge Functions), CI/CD bằng GitHub Actions.
 
 Site: https://nguyenngoctuyen11032003.github.io/Linguo/
 
 ## Trạng thái
 
-Các spec 0–11 đã triển khai và đã vào production: nền móng, onboarding và lộ trình, bài học và trình học (có hàng đợi offline), flashcard FSRS, kiểm tra đầu vào thích ứng, gia sư AI (Gemini), kế hoạch phiên học, hoàn thiện trước ra mắt (xuất/xoá dữ liệu, quyền riêng tư, CSP, quét secret), tiến độ và động lực, luyện thi TOPIK/CEFR, nhắc học + Web Push + PWA, báo lỗi nội dung và khu quản trị `/quan-tri`. Sau đó đã thêm: luyện thi tính vào chuỗi ngày, bốn tác vụ AI mới (phân tích câu, tóm tắt phiên học, kế hoạch ôn, đóng vai hội thoại), luyện nói (`/app/luyen-noi`), từ vựng cá nhân nhập CSV (`/app/tu-vung-cua-toi`), gia cố nhắc học/Web Push và khu quản trị, tối ưu hiệu năng (route lazy, ngân sách kích thước bundle), cải thiện truy cập/UX và smoke check production. Chi tiết và danh sách migration: [docs/superpowers/HANDOFF.md](docs/superpowers/HANDOFF.md). Nội dung học của tiếng Anh (pre-A1 → C2) và tiếng Hàn (hangul → TOPIK 6) đã được duyệt (người duyệt là AI do chủ dự án uỷ quyền, chưa có giáo viên bản ngữ; xem [content/README.md](content/README.md)).
+Các spec 0–11 đã triển khai và đã vào production: nền móng, onboarding và lộ trình, bài học và trình học (có hàng đợi offline), flashcard FSRS, kiểm tra đầu vào thích ứng, gia sư AI (Gemini), kế hoạch phiên học, hoàn thiện trước ra mắt (xuất/xoá dữ liệu, quyền riêng tư, CSP, quét secret), tiến độ và động lực, luyện thi TOPIK/CEFR (sau thêm JLPT), nhắc học + Web Push + PWA, báo lỗi nội dung và khu quản trị `/quan-tri`. Sau đó đã thêm: luyện thi tính vào chuỗi ngày, bốn tác vụ AI mới (phân tích câu, tóm tắt phiên học, kế hoạch ôn, đóng vai hội thoại), luyện nói (`/app/luyen-noi`), từ vựng cá nhân nhập CSV (`/app/tu-vung-cua-toi`), gia cố nhắc học/Web Push và khu quản trị, tối ưu hiệu năng (route lazy, ngân sách kích thước bundle), cải thiện truy cập/UX và smoke check production. Đợt P2 (đã có trong code, chưa deploy tại thời điểm viết): trang Nhân sự `/quan-tri/nhan-su` để cấp vai trò quản trị, audio thật cho bài nghe tạo offline bằng Gemini TTS (`pnpm audio:generate`, chưa tạo file nào), công cụ giáo viên `/giao-vien` và lớp học `/app/lop-hoc`, tiếng Nhật (Kana → N5, N4, N3, đề JLPT N5–N3). Chi tiết và danh sách migration: [docs/superpowers/HANDOFF.md](docs/superpowers/HANDOFF.md). Nội dung học của tiếng Anh (pre-A1 → C2), tiếng Hàn (hangul → TOPIK 6) và tiếng Nhật (kana → N3) đã được duyệt (người duyệt là AI do chủ dự án uỷ quyền, chưa có giáo viên bản ngữ; xem [content/README.md](content/README.md)).
 
 - Bản đồ từng tính năng (route, file, RPC, test): [docs/FEATURES.md](docs/FEATURES.md).
 - Trạng thái từng spec, quyết định đã chốt, giới hạn đã biết và việc còn mở: [docs/superpowers/HANDOFF.md](docs/superpowers/HANDOFF.md).
@@ -49,20 +49,20 @@ pnpm db:stop
 - Cài đặt local và các key cần cung cấp: [docs/SETUP.md](docs/SETUP.md)
 - Deploy (CI/CD, secrets và biến, duyệt, ghi checksum migration, xuất bản nội dung, Notify, quản trị): [docs/DEPLOY.md](docs/DEPLOY.md)
 - Vận hành (backup, rollback, xoay key, Gemini hết quota, tắt AI/nhắc học, log, smoke sau deploy, checklist ra mắt): [docs/RUNBOOK.md](docs/RUNBOOK.md)
-- Kiểm thử thiết bị thật: [docs/MOBILE-QA.md](docs/MOBILE-QA.md) · Soạn nội dung: [content/README.md](content/README.md)
+- Kiểm thử thiết bị thật: [docs/MOBILE-QA.md](docs/MOBILE-QA.md) · Soạn nội dung: [content/README.md](content/README.md) · Audio bài nghe: [docs/AUDIO.md](docs/AUDIO.md)
 
 ## Cấu trúc
 
 ```text
 apps/web/            React 18 + Vite + Tailwind v4 + motion (SPA/PWA); src/sw.ts là service worker; tests/e2e là Playwright
 packages/shared/     zod schema, hợp đồng RPC, thuật toán dùng chung (chấm điểm, FSRS, ước lượng, lập kế hoạch...), types sinh từ database
-content/             nội dung học (YAML): chương trình en/ko, kho kiểm tra đầu vào, đề luyện thi, nguồn
+content/             nội dung học (YAML): chương trình en/ko/ja, kho kiểm tra đầu vào, đề luyện thi, nguồn
 supabase/            config.toml, migrations (+ migrations-applied.json), seed.sql (sinh từ content/), tests pgTAP, functions/
   functions/ai-tutor/        Edge Function gia sư AI (Deno, Gemini)
   functions/notify-dispatch/ Edge Function gửi nhắc học và Web Push (gọi bởi workflow Notify)
-scripts/             content-import (kiểm/nhập nội dung), check-public-env, check-bundle-secrets, check-bundle-size, check-migrations-immutable, smoke (kiểm tra production sau deploy), sync-*-fixtures (ca kiểm thử SQL ↔ TS), sync-ai-contract, make-icons
+scripts/             content-import (kiểm/nhập nội dung), generate-audio (tạo audio bài nghe offline), check-public-env, check-bundle-secrets, check-bundle-size, check-migrations-immutable, smoke (kiểm tra production sau deploy), sync-*-fixtures (ca kiểm thử SQL ↔ TS), sync-ai-contract, make-icons
 design/brand/        tài nguyên thương hiệu
-docs/                SETUP, DEPLOY, RUNBOOK, FEATURES, MOBILE-QA; superpowers/ (spec, kế hoạch, HANDOFF)
+docs/                SETUP, DEPLOY, RUNBOOK, FEATURES, MOBILE-QA, AUDIO; superpowers/ (spec, kế hoạch, HANDOFF)
 .github/workflows/   ci.yml, deploy.yml, content-publish.yml, maintenance.yml, notify.yml, smoke.yml
 ```
 
@@ -72,6 +72,7 @@ docs/                SETUP, DEPLOY, RUNBOOK, FEATURES, MOBILE-QA; superpowers/ (
 pnpm dev | pnpm test | pnpm e2e | pnpm lint | pnpm typecheck | pnpm build | pnpm preview | pnpm check:bundle | pnpm check:bundle-size | pnpm check-env | pnpm smoke
 pnpm db:start | pnpm db:stop | pnpm db:reset | pnpm db:test | pnpm db:lint | pnpm db:types | pnpm icons
 pnpm content:check | pnpm content:build | pnpm content:push
+pnpm audio:plan | pnpm audio:check | pnpm audio:generate
 pnpm fixtures:sync | fixtures:grading | fixtures:fsrs | fixtures:diagnostic | fixtures:exam | pnpm ai:contract
 ```
 

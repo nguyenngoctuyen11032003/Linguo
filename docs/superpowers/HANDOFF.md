@@ -2,11 +2,11 @@
 
 Tài liệu cho người (hoặc phiên làm việc) tiếp quản: trạng thái từng spec, các quyết định đã chốt (kèm nơi kiểm chứng trong code) và việc còn mở. Bản đồ tính năng chi tiết: [docs/FEATURES.md](../FEATURES.md). Cách deploy và vận hành: [DEPLOY.md](../DEPLOY.md), [RUNBOOK.md](../RUNBOOK.md), [SETUP.md](../SETUP.md).
 
-Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/shared/src/`; số migration rút gọn như `000200_...` nằm trong `supabase/migrations/` với tiền tố `20261014`, `20261015` hoặc `20261016` theo cùng dòng. Danh sách đầy đủ ở mục 5.
+Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/shared/src/`; số migration rút gọn như `000200_...` nằm trong `supabase/migrations/` với tiền tố `20261014` đến `20261018` theo cùng dòng. Danh sách đầy đủ ở mục 5.
 
 ## 1. Trạng thái từng spec
 
-Tất cả spec và đợt bổ sung dưới đây đã được triển khai trên `main`. Tại thời điểm viết, 34 trên 36 migration trong `supabase/migrations/` đã được ghi vào `supabase/migrations-applied.json` (`20261016000700_client_errors.sql` và `20261016000800_progress_vocab_hardening.sql` chưa được ghi, xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
+Tất cả spec và đợt bổ sung dưới đây đã được triển khai trong code (đợt P2 cuối bảng: trên nhánh tích hợp `integrate/p2-batch`, chưa merge vào `main` và chưa deploy tại thời điểm viết). Tại thời điểm viết, 34 trên 41 migration trong `supabase/migrations/` đã được ghi vào `supabase/migrations-applied.json`; bảy file chưa được ghi (`20261016000700`, `20261016000800`, `20261017000200`, `20261017000400`, `20261017000500`, `20261018090000`, `20261018130000`, xem mục 5). Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
 
 | Spec | Chủ đề | Nằm ở đâu | Migration chính |
 |---|---|---|---|
@@ -41,8 +41,18 @@ Các migration sửa lỗi sau khi ra mắt: `20261015000500_timezone_cooldown.s
 | Hiệu năng (route lazy, `LazyMotion`, chunk vendor, ngân sách kích thước) | `apps/web/vite.config.ts`, `scripts/check-bundle-size.mjs` | không có migration |
 | UX và truy cập (tiêu đề route, thông báo chuyển trang, token viền, thông báo lỗi chung, trang Học tập, hoàn tác phiên học) | xem mục 2 | không có migration |
 | Smoke production | `scripts/smoke.mjs`, `.github/workflows/smoke.yml` | không có migration |
+| Gia cố database sau rà soát bảo mật: index `attempts.learning_path_id`, admin cuối cùng không xoá được tài khoản (`last_admin_required`), người học không đọc được `content_reports.resolved_by` | `supabase/tests/db_hardening.test.sql` | `20261018090000_db_hardening.sql` |
 
-Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệt là AI do chủ dự án uỷ quyền, chưa qua giáo viên bản ngữ (`content/README.md`). Khi có người duyệt thật, cập nhật `reviewed_by`/`reviewed_at` trong YAML và chạy lại **Publish content**.
+**Đợt P2 (PRD §19 P2: công cụ giáo viên, audio, ngôn ngữ thứ ba, quản lý nhân sự; chi tiết ở [FEATURES.md](../FEATURES.md) mục 12, 19–21):**
+
+| Hạng mục | Nằm ở đâu | Migration |
+|---|---|---|
+| Trang Nhân sự `/quan-tri/nhan-su` (admin): danh sách nhân sự kèm email, tìm tài khoản theo email hoặc id, cấp/đổi/thu hồi vai trò qua `admin_grant_role`; thanh menu quản trị cuộn ngang một hàng dưới `lg` | `web/routes/admin/staff/`, `web/features/admin/staff.ts`, `useAdminStaff.ts`, `shared/admin/contract.ts` | `20261017000500_admin_staff.sql` |
+| Audio thật cho bài nghe: bucket `content-audio`, bảng `audio_assets`, script tạo audio offline bằng Gemini TTS, trình phát có cache offline và giọng máy dự phòng | `scripts/generate-audio.mjs`, `shared/content/audio.ts`, `web/features/audio/`, [docs/AUDIO.md](../AUDIO.md) | `20261017000200_content_audio.sql` |
+| Công cụ giáo viên: khu `/giao-vien` (lớp, mã mời, bài giao, bảng tổng hợp lớp) và lớp học của người học `/app/lop-hoc` | `web/routes/teacher/`, `web/features/teacher/`, `web/routes/app/classes/`, `web/features/classes/`, `shared/teacher/` | `20261017000400_teacher_tools.sql` |
+| Tiếng Nhật (ngôn ngữ thứ ba, `LANGUAGES.ja.available = true`): chương trình Kana → N5, N4, N3, kho kiểm tra đầu vào, đề JLPT N5/N4/N3, kịch bản đóng vai và tài liệu luyện nói | `content/ja/`, `content/diagnostic/ja/`, `content/exams/ja/`, `shared/constants.ts`, `shared/ai/roleplay-catalog.ts`, `web/features/speaking/content.ts` | `20261018130000_japanese.sql` |
+
+Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệt là AI do chủ dự án uỷ quyền, chưa qua giáo viên bản ngữ (`content/README.md`). Nội dung tiếng Nhật cũng vậy (cùng người duyệt AI); kịch bản đóng vai và tài liệu luyện nói tiếng Nhật nằm trong code và chưa được người bản ngữ xem. Khi có người duyệt thật, cập nhật `reviewed_by`/`reviewed_at` trong YAML và chạy lại **Publish content**.
 
 ## 2. Quyết định và quy tắc cần giữ
 
@@ -53,9 +63,9 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
   - `20261016000500_content_admin_hardening.sql` đã giới hạn `client_at` trong 48 giờ; `20261016000800_progress_vocab_hardening.sql` siết thêm và thay quy tắc đó (xem `supabase/tests/answer_integrity.test.sql`): `client_at` chỉ được giữ khi không trước lúc bắt đầu lượt học, nằm trong **12 giờ gần nhất**, không ở tương lai, và không sớm hơn quá 5 phút so với lần trả lời gần nhất đã lưu của lượt học (thời điểm hiệu lực = `coalesce(client_at, created_at)`). Thời gian hoạt động mỗi câu được tính tối đa `min(response_ms, 120 giây, max(2 giây, khoảng cách phía server), thời gian thực từ lúc bắt đầu lượt học)`. Hệ quả: học ngoại tuyến quá 12 giờ rồi đồng bộ sẽ được tính vào ngày đồng bộ.
   - Các tính toán theo ngày khác (`progress_*`) vẫn kẹp `client_at` vào khoảng [ngày server − 7, ngày server] (`20261015000100_progress.sql`); quy tắc trên chặt hơn cho `submit_exercise`.
 - **Cooldown múi giờ (`20261015000500_timezone_cooldown.sql`, test `timezone_cooldown.test.sql`):** mọi giới hạn theo ngày (quota AI, giới hạn thẻ mới, trần XP, chuỗi ngày) dựa vào múi giờ trong `profiles.timezone`. Người học đổi múi giờ tối đa **một lần mỗi 24 giờ** (trigger `profiles_timezone_cooldown`, lỗi `timezone_change_cooldown`); lần đổi đầu luôn được; `service_role` và migration không bị giới hạn.
-- **Quy tắc bao phủ bản xuất dữ liệu:** `export_my_data()` xuất các phần cố định cộng mọi bảng trong `account_optional_tables()` (bản hiện hành nằm trong `20261016000300_personal_vocab.sql`: `study_sessions`, `activity_days`, `user_badges`, `analytics_events`, `exam_attempts`, `exam_answers`, `content_reports`, `notification_prefs`, `notifications`, `personal_word_lists`, `personal_words`, `personal_vocab_imports`). Test `supabase/tests/account_export_coverage.test.sql` fail khi có bảng public mới có cột `user_id` mà không được xuất và cũng không nằm trong danh sách loại trừ có lý do. Thêm bảng người dùng mới thì phải thêm vào `account_optional_tables()` bằng một migration mới (hàm này được `create or replace` lại mỗi lần).
+- **Quy tắc bao phủ bản xuất dữ liệu:** `export_my_data()` xuất các phần cố định cộng mọi bảng trong `account_optional_tables()` (bản hiện hành nằm trong `20261017000400_teacher_tools.sql`: `study_sessions`, `activity_days`, `user_badges`, `analytics_events`, `exam_attempts`, `exam_answers`, `content_reports`, `notification_prefs`, `notifications`, `personal_word_lists`, `personal_words`, `personal_vocab_imports`, `teacher_profiles`, `class_members`, `class_join_attempts`; lớp do giáo viên tạo nằm ở phần riêng `teacher_classes`, không kèm id thành viên). Test `supabase/tests/account_export_coverage.test.sql` fail khi có bảng public mới có cột `user_id` mà không được xuất và cũng không nằm trong danh sách loại trừ có lý do. Thêm bảng người dùng mới thì phải thêm vào `account_optional_tables()` bằng một migration mới (hàm này được `create or replace` lại mỗi lần).
 - **`push_subscriptions` không nằm trong bản xuất** (loại trừ có chủ đích trong test trên, cùng `account_export_requests` và `staff_roles`): endpoint và khoá của thiết bị là thông tin xác thực, không có giá trị học tập; bị xoá cùng tài khoản.
-- **Điểm thi TOPIK/CEFR chỉ là luyện tập trừ khi `scoring.verified`:** thang điểm là dữ liệu có phiên bản trong từng đề (`scoring` trong `content/exams/**`, schema `examScoringSchema`). Mọi đề mang nhãn "Bài luyện mô phỏng — không phải đề thi chính thức"; khi `scoring_verified = false` kết quả hiện cảnh báo chưa đối chiếu (`UNVERIFIED_SCORING_LABEL`) và ghi "Nguồn thang điểm". Mini mock được quy đổi tuyến tính và gắn nhãn "quy đổi tham khảo". CEFR không quy đổi điểm. Hiện hai đề TOPIK có `verified: true`, đề CEFR A2 có `verified: false`. Chỉ đổi `verified` sau khi người duyệt đối chiếu quy chế hiện hành.
+- **Điểm thi TOPIK/JLPT/CEFR chỉ là luyện tập trừ khi `scoring.verified`:** thang điểm là dữ liệu có phiên bản trong từng đề (`scoring` trong `content/exams/**`, schema `examScoringSchema`). Mọi đề mang nhãn "Bài luyện mô phỏng — không phải đề thi chính thức"; khi `scoring_verified = false` kết quả hiện cảnh báo chưa đối chiếu (`UNVERIFIED_SCORING_LABEL`) và ghi "Nguồn thang điểm". Mini mock được quy đổi tuyến tính và gắn nhãn "quy đổi tham khảo". CEFR không quy đổi điểm. Hiện hai đề TOPIK và ba đề JLPT (N5, N4, N3) có `verified: true`, đề CEFR A2 có `verified: false`. Chỉ đổi `verified` sau khi người duyệt đối chiếu quy chế hiện hành.
 - **Luyện thi tính vào chuỗi ngày nhưng không cho XP (`20261016000100_exam_activity.sql`, test `exam_activity.test.sql`):** mỗi lượt thi được cộng vào `activity_days` đúng một lần khi đóng, cờ `exam_attempts.activity_counted_at`; thời gian hoạt động tính từ khoảng cách giữa các lần lưu đáp án (mỗi khoảng tối đa 120 giây); XP, bài học và lượt ôn đều 0. Backfill chạy ngay trong migration.
 - **Từ vựng cá nhân tách khỏi nội dung chuẩn và khỏi tiến độ:** bảng riêng, RLS chủ sở hữu, ghi qua RPC; ôn dùng lại `srs_next` nhưng không chạm `review_cards`/`review_logs`/mastery/chuỗi ngày/huy hiệu/analytics, nên không thể bơm XP hay mastery từ nội dung tự nhập (thiết kế: `docs/superpowers/specs/2026-10-14-linguo-personal-vocab-design.md`). Có đủ giới hạn ở `PERSONAL_VOCAB_LIMITS`.
 - **Đóng vai AI không lưu hội thoại phía server:** `roleplay_turn` không cache, mỗi lượt trừ một lượt quota, vai và mục tiêu lấy từ `shared/ai/roleplay-catalog.ts` (không từ client), hội thoại chỉ ở state React và `localStorage` của trình duyệt theo từng người dùng (hết hạn 24 giờ sau tin nhắn cuối, xoá khi đăng xuất hoặc xoá tài khoản), tối đa 12 lượt (`ROLEPLAY_MAX_TURNS`).
@@ -67,36 +77,48 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 - **Tính năng AI luôn ghi là phản hồi luyện tập:** nhận xét bài viết hiện "Phản hồi luyện tập — không phải điểm chính thức" (`WRITING_FEEDBACK_LABEL`); AI không sinh câu hỏi trong lúc thi; log AI chỉ lưu siêu dữ liệu, không lưu nội dung câu hỏi hay bài viết.
 - **Ước lượng thời gian học là tham khảo:** bảng `level_reference_hours` có `reviewed = false` và giao diện luôn nói rõ.
 - **Nội dung không sửa trong database:** nguồn sự thật là `content/` trong repo; trang quản trị chỉ xem trước, đổi trạng thái duyệt và xử lý báo lỗi. Import lại không hạ trạng thái một dòng không đổi nội dung (`000420_import_keep_published.sql`).
-- **Admin cấp vai trò:** bootstrap bằng SQL; `admin_grant_role` chưa có giao diện (DEPLOY.md, *Quản trị nội dung*).
+- **Admin cấp vai trò:** admin đầu tiên bootstrap bằng SQL; sau đó cấp/đổi/thu hồi ở trang Nhân sự `/quan-tri/nhan-su` (gọi `admin_grant_role`, ghi nhật ký). `admin_list_staff` và `admin_find_user` để lộ email nên chỉ admin gọi được và để lại nhật ký (`20261017000500_admin_staff.sql`); không gỡ hay hạ admin cuối cùng, và admin cuối cùng không xoá được tài khoản của mình (`20261018090000_db_hardening.sql`). DEPLOY.md, *Quản trị nội dung*.
+- **Giáo viên chỉ thấy số liệu tổng hợp (`20261017000400_teacher_tools.sql`, test `supabase/tests/teacher.test.sql`):** quyền giáo viên là một dòng `teacher_profiles`, cấp bằng SQL hoặc `grant_teacher_role` (admin, có nhật ký), chưa có giao diện. Người học chỉ vào lớp bằng mã mời và rời lớp lúc nào cũng được; rời lớp xoá dòng thành viên nên giáo viên hết thấy ngay. `teacher_class_roster` chỉ trả chuỗi ngày, phút hoạt động, số bài xong, thẻ đến hạn, tỉ lệ đúng khi ôn và mức hoàn thành bài giao; không bao giờ trả đáp án, hội thoại AI, từ vựng cá nhân hay email. Bài giao chỉ tính việc làm từ lúc giao trở đi. Giới hạn ở `TEACHER_LIMITS` (`shared/teacher/limits.ts`, trùng với SQL).
+- **Audio nội dung tạo offline, không bao giờ theo yêu cầu người học (`20261017000200_content_audio.sql`, [AUDIO.md](../AUDIO.md)):** bucket `content-audio` đọc công khai, chỉ `service_role` ghi, không liệt kê được; id `<lang>-<32 hex>` tính từ ngôn ngữ, giọng và văn bản nên đổi câu thì đổi id. Không có audio (`audio_asset_id: null`) thì giữ giọng đọc của trình duyệt. Script không chạy trong CI.
+- **Tiếng Nhật (`20261018130000_japanese.sql`):** cấp độ `kana` (ordinal 0) rồi `n5`…`n1`; mục tiêu `kana_basics`, `communication`, `jlpt`, `skill_focus`; họ đề `jlpt` chấm và xếp bậc như đề TOPIK đầy đủ. Mọi CHECK và RPC từng giới hạn `en|ko` nay nhận thêm `ja`. Chú thích đầu migration còn nói ja bị ẩn: đã cũ (giờ `LANGUAGES.ja.available = true`), nhưng không sửa được vì migration không được sửa.
 - **Không đặt secret vào `VITE_*`:** `scripts/check-public-env.mjs`, `scripts/check-bundle-secrets.mjs`, gitleaks (CI) chặn.
 
 ## 3. Giới hạn đã biết
 
-- Nghe: chưa có file audio thật. Toàn bộ `audio_asset_id` trong `content/` là `null`; bài `listen` và phần nghe của đề dùng `fallback_text`/`script` đọc bằng giọng máy (TTS của trình duyệt, `web/features/exam/tts.ts`). Kiểm tra đầu vào tự bỏ qua kỹ năng nghe (`not_supported`).
+- Nghe: đã có đường ống audio thật (`pnpm audio:generate`, [AUDIO.md](../AUDIO.md)) nhưng **chưa tạo file nào**: toàn bộ `audio_asset_id` trong `content/` vẫn là `null` và chưa có `supabase/content-audio-manifest.json`. Cho tới khi chạy script, bài `listen` và phần nghe của đề dùng `fallback_text`/`script` đọc bằng giọng máy (TTS của trình duyệt, `web/features/exam/tts.ts`). Câu nghe của đề đã có audio thì không còn `tts_text` dự phòng nếu tải audio lỗi. Kiểm tra đầu vào tự bỏ qua kỹ năng nghe (`not_supported`).
+- Tạo audio dùng Gemini TTS gói miễn phí: mặc định 3 request/phút và có quota ngày, nên phải chạy nhiều lần theo từng ngôn ngữ; chạy tay từ máy, không có workflow.
 - Luyện nói đã có (`/app/luyen-noi`) nhưng không chấm tự động: chỉ tự đánh giá, và bản chép giọng nói phụ thuộc Web Speech API của trình duyệt (không có ở mọi trình duyệt, có thể gửi âm thanh tới dịch vụ của hãng trình duyệt). Viết/nói không có trong kiểm tra đầu vào và không bao giờ được suy ra trình độ từ chúng.
 - Đóng vai AI: mỗi lượt tốn một lượt quota AI ngày (mặc định 20), nên một buổi 12 lượt có thể dùng gần hết quota; buổi dở dang được giữ trên thiết bị (đóng tab vẫn còn) tối đa 24 giờ sau tin nhắn cuối, nhưng không đồng bộ sang thiết bị khác.
 - Từ vựng cá nhân: chưa có OCR, chưa chia sẻ danh sách, chưa chấm offline (lỗi mạng cho chấm lại, an toàn nhờ idempotency key).
+- Tiếng Nhật: chỉ có nội dung tới N3 (Kana → N5, N4, N3; đề JLPT N5/N4/N3). Cấp `n2`, `n1` tồn tại nên người học có thể chọn mục tiêu hoặc được xếp vào đó mà chưa có chương trình. Bài đầu của N4 chưa có bài tiên quyết là bài cuối của `kana-basics`.
+- Chấm tiếng Nhật: `normalizeAnswer` (`shared/content/grading.ts`, bản SQL `grade_exercise`) giữ khoảng trắng và đổi `、` `。` thành khoảng trắng, nên nội dung ja phải khai thêm biến thể đáp án (không dấu câu, không khoảng trắng).
+- Công cụ giáo viên: chưa có giao diện cấp quyền giáo viên (chỉ SQL, hoặc gọi `grant_teacher_role` bằng phiên của admin; DEPLOY.md, *Giáo viên*). Bài giao dạng đề thi dẫn tới trang Luyện thi chung, không mở thẳng đề được giao.
 - Gemini gói miễn phí: hết quota ngày làm AI tạm ngừng cho tới khi Google reset; circuit breaker nằm trong bộ nhớ từng instance (RUNBOOK mục 6).
-- Dọn dữ liệu chạy theo lịch nhưng phụ thuộc cron: `purge_notifications()` (90 ngày) do `notify-dispatch` gọi mỗi đêm (giờ UTC 20); `purge_expired_data()` và `purge_analytics()` (180 ngày) do workflow Maintenance gọi hằng ngày (DEPLOY.md, *Bảo trì dữ liệu*). Trang quyền riêng tư (`web/features/account/retention.ts`) cam kết đúng các thời hạn này.
+- Dọn dữ liệu phụ thuộc cron: `purge_notifications()` (90 ngày) do `notify-dispatch` gọi mỗi đêm (giờ UTC 20); `purge_expired_data()` và `purge_analytics()` (180 ngày) do workflow Maintenance gọi hằng ngày (DEPLOY.md, *Bảo trì dữ liệu*). Trang quyền riêng tư (`web/features/account/retention.ts`) cam kết đúng các thời hạn này.
 - Maintenance và Deploy chờ duyệt vì environment `production` bật Required reviewers; run Maintenance theo lịch không được duyệt sẽ hết hạn (dữ liệu chỉ dọn muộn hơn).
 - Notify dựa vào cron của GitHub Actions, vốn hay chạy muộn hoặc bỏ lượt: nhắc vẫn đến hạn trong 60 phút kể từ đầu khung (cửa sổ bù), quá khung đó thì lỡ khung nhắc đó.
 - CSP đặt bằng thẻ `<meta>` (GitHub Pages không cho đặt header): `frame-ancestors`, báo cáo vi phạm không có tác dụng (RUNBOOK mục 7).
 - Nội dung chưa qua giáo viên bản ngữ (mục 1).
-- Test pgTAP và e2e chạy trong CI; local cần Docker (SETUP.md). Chưa có test trên thiết bị thật tự động: dùng `docs/MOBILE-QA.md`.
+- Test pgTAP và e2e chạy trong CI; local cần Docker (SETUP.md). Chưa có test trên thiết bị thật tự động: dùng `docs/MOBILE-QA.md`. `route-error.test.tsx` có thể quá thời gian khi máy quá tải.
+- Hai e2e đang fail cả trên `main` (tại thời điểm viết): `review.spec.ts:162` (hoãn trả về 3 id thẻ thay vì 2) và `roleplay.spec.ts:265` (thiếu liên kết "Thử Đóng vai với AI").
 
 ## 4. Việc còn mở
 
-- **Bài nghe có audio thật:** cần một nguồn audio có giấy phép (thu âm hoặc TTS phía server rồi lưu `audio_asset_id`). Schema và player đã có chỗ cho `audio_asset_id`, nội dung chưa dùng; cho đến khi có, nghe dùng TTS của trình duyệt.
-- **Ngôn ngữ thứ ba:** chưa có; cần ngôn ngữ mới trong `content/`, trong danh mục kịch bản đóng vai (`ROLEPLAY_LEVELS`), tài liệu luyện nói và các CHECK `en|ko` của schema. Chưa có spec.
+- **Đưa đợt P2 lên production**, theo thứ tự: merge `integrate/p2-batch` vào `main`; duyệt Deploy cho các migration chưa áp (mục 5; `20261018130000_japanese.sql` đã được đánh số lại từ `20261017000900` để đứng sau `db_hardening`); sau khi Deploy xanh, ghi mọi migration mới vào `migrations-applied.json` (`--record`); chạy **Publish content** (hoặc `pnpm content:push`) để production có chương trình ja, kho kiểm tra đầu vào và đề JLPT; cấp quyền giáo viên đầu tiên (DEPLOY.md, *Giáo viên*).
+- **Tạo audio thật:** chạy `pnpm audio:generate` với `GEMINI_API_KEY` và service key ([AUDIO.md](../AUDIO.md)), commit YAML và manifest, rồi chạy Publish content.
+- **Kiểm tra Edge Functions bằng Deno:** đợt P2 sửa `supabase/functions` (kịch bản đóng vai và prompt tiếng Nhật) nhưng `deno check .`/`deno lint` chưa chạy trên máy tích hợp (không có Deno); CI job `functions` chạy chúng.
+- **Chấm tiếng Nhật bỏ khoảng trắng:** cân nhắc bỏ mọi khoảng trắng khi chuẩn hoá đáp án ja trong `grading.ts` và hàm SQL tương ứng (migration mới + fixture), để nội dung không phải khai biến thể.
+- **Nội dung tiếng Nhật:** thêm N2/N1 hoặc chặn chọn hai cấp này; thêm bài tiên quyết từ cuối `kana-basics` cho bài đầu N4; người bản ngữ duyệt nội dung, kịch bản đóng vai và tài liệu luyện nói.
+- **Bài giao dạng đề thi** mở thẳng đề được giao thay vì trang Luyện thi chung.
+- **Giao diện cấp quyền giáo viên** (ví dụ trong trang Nhân sự) nếu số giáo viên tăng.
+- **Hai e2e fail trên `main`** (mục 3) cần người phụ trách ôn tập và đóng vai sửa.
 - **OCR từ tài liệu:** không nằm trong kế hoạch; PRD chỉ nói "sau import danh sách từ cá nhân/CSV mới xem xét OCR" (mục P2). Import CSV đã có (FEATURES mục 17).
-- Các mục P2 khác của PRD (công cụ giáo viên): chưa có spec.
-- Giao diện cho `admin_grant_role` nếu cần quản lý nhiều nhân sự.
-- Duyệt nội dung và thang điểm đề thi bởi người có chuyên môn; đối chiếu `scoring` của đề CEFR.
+- Duyệt nội dung và thang điểm đề thi bởi người có chuyên môn; đối chiếu `scoring` của đề CEFR và các đề JLPT.
 - Thử khôi phục backup và rollback web theo RUNBOOK mục 1–3 và ghi vào "Nhật ký diễn tập".
 
 ## 5. Danh sách migration
 
-Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 36 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), còn `20261016000700` và `20261016000800` chưa được ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
+Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 41 file; 34 file đã được ghi trong `migrations-applied.json` (đã được Deploy áp lên production và ghi nhận), bảy file từ `20261016000700` trở đi chưa được ghi. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
 
 ```bash
 for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
@@ -134,8 +156,13 @@ for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supa
 | `20261016000600` | `ai_roleplay` | tác vụ `roleplay_turn` | Có |
 | `20261016000700` | `client_errors` | sự kiện analytics `client_error` (báo lỗi kỹ thuật ẩn danh), `admin_analytics.client_errors` | Chưa |
 | `20261016000800` | `progress_vocab_hardening` | luyện thi tính theo ngày làm bài, thời gian hoạt động bị chặn bởi thời gian thật ở server, `client_at` 12 giờ, gia cố từ vựng cá nhân | Chưa |
+| `20261017000200` | `content_audio` | bucket `content-audio`, bảng `audio_assets` (audio bài nghe) | Chưa |
+| `20261017000400` | `teacher_tools` | lớp học, mã mời, bài giao, bảng tổng hợp cho giáo viên, `grant_teacher_role` | Chưa |
+| `20261017000500` | `admin_staff` | `admin_list_staff`, `admin_find_user` cho trang Nhân sự | Chưa |
+| `20261018090000` | `db_hardening` | index `attempts.learning_path_id`, chặn xoá tài khoản admin cuối cùng, ẩn `resolved_by` với người học | Chưa |
+| `20261018130000` | `japanese` | tiếng Nhật: cấp độ, mục tiêu, họ đề `jlpt`, mở rộng CHECK/RPC sang `ja` (đánh số lại từ `20261017000900`) | Chưa |
 
-Migration mới phải có số lớn hơn `20261016000800`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
+Migration mới phải có số lớn hơn `20261018130000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
 
 ## 6. Vận hành local và nhiều phiên làm việc song song
 

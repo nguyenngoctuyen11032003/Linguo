@@ -61,7 +61,7 @@ Hành vi mạng: 429/5xx thử lại với backoff luỹ thừa và tôn trọng
 
 Quy trình đề xuất:
 
-1. Chạy trên **Supabase local** trước (`SUPABASE_URL=http://127.0.0.1:54321`, service key từ `supabase status`) với `--limit 3 --out <thư mục ngoài repo>`, nghe thử các file, chỉnh `VOICES` nếu cần.
+1. Chạy trên **Supabase local** trước (`SUPABASE_URL=http://127.0.0.1:55321` theo `supabase/config.toml`, service key từ `supabase status`; cần đủ dịch vụ `pnpm db:start`, stack gọn không có Storage) với `--limit 3 --out <thư mục ngoài repo>`, nghe thử các file, chỉnh `VOICES` nếu cần.
 2. Chạy production theo từng ngôn ngữ, ít một (giới hạn quota gói miễn phí); không chạy từ CI.
 3. `pnpm content:check && pnpm audio:check`, xem diff `content/` + manifest, commit, rồi import nội dung như thường lệ (DEPLOY.md).
 
