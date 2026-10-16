@@ -1,0 +1,628 @@
+# Học liệu unit "Cảm xúc và đánh giá mạnh" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～てやまない, ～を禁じ得ない =================
+  - key: ja:item:n1-u3-setsuni
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 切に
+      reading: せつに
+      romanization: setsu ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: tha thiết, khẩn thiết; 切に願う - tha thiết mong
+      examples:
+        - target: 一日も早い復興を切に願っております。
+          translation:
+            vi: Chúng tôi tha thiết mong công cuộc tái thiết sớm hoàn thành dù chỉ sớm một ngày.
+      pronunciation_note:
+        vi: Đọc "xê-tsư-ni", つ đọc nhẹ.
+      confusion:
+        vi: 切に gần như chỉ đi với 願う, 望む, 祈る trong văn trang trọng. Văn nói thường dùng 心から hoặc 本当に.
+
+  - key: ja:item:n1-u3-ikidoori
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 憤り
+      reading: いきどおり
+      romanization: ikidoori
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phẫn nộ, căm phẫn (trước điều bất công); 憤りを感じる / 憤りを禁じ得ない
+      examples:
+        - target: 弱い立場の人を狙った詐欺に、強い憤りを覚える。
+          translation:
+            vi: Tôi thấy phẫn nộ sâu sắc trước những vụ lừa đảo nhắm vào người yếu thế.
+      pronunciation_note:
+        vi: Đọc "i-ki-đô-ô-ri", おお là âm dài.
+      confusion:
+        vi: 怒り là cơn giận nói chung; 憤り là phẫn nộ có tính đạo lý, trước bất công xã hội - hay dùng trong văn viết, bản tin.
+
+  - key: ja:item:n1-u3-doujou
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 同情
+      reading: どうじょう
+      romanization: doujou
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cảm thông, thương cảm; ～に同情する
+      examples:
+        - target: 家も仕事も失った被災者の話には同情を禁じ得ない。
+          translation:
+            vi: Nghe chuyện những nạn nhân mất cả nhà lẫn việc làm, tôi không khỏi thương cảm.
+      pronunciation_note:
+        vi: Hai âm dài - "đô-ô-jô-ô".
+      confusion:
+        vi: Thương cảm ai dùng に - 被災者に同情する. 同情 đôi khi mang sắc thái "thương hại" từ trên xuống; muốn trung tính hơn có thể dùng 共感 (đồng cảm).
+
+  - key: ja:item:n1-u3-keiai
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 敬愛
+      reading: けいあい
+      romanization: keiai
+      pos: danh từ
+    back:
+      meaning:
+        vi: kính yêu, vừa kính trọng vừa yêu mến; 敬愛する恩師
+      examples:
+        - target: 私が敬愛してやまない恩師が、今年で八十歳を迎えます。
+          translation:
+            vi: Người thầy mà tôi hết mực kính yêu năm nay tròn tám mươi tuổi.
+      pronunciation_note:
+        vi: Đọc "kê-ai".
+      confusion:
+        vi: 尊敬 là kính trọng (về năng lực, nhân cách); 敬愛 thêm sắc thái yêu mến, thân thiết - thường dùng cho thầy cô, người đi trước.
+
+  - key: ja:item:n1-u3-gram-te-yamanai
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-て + やまない
+      romanization: te yamanai
+      pos: mãi không thôi (cảm xúc mạnh)
+    back:
+      meaning:
+        vi: '"Không ngừng...", "hết lòng..." - cảm xúc mạnh và kéo dài của người nói: 願ってやまない, 祈ってやまない, 愛してやまない, 期待してやまない, 尊敬してやまない. Văn viết, phát biểu trang trọng.'
+      examples:
+        - target: 皆様のご健康とご多幸を祈ってやみません。
+          translation:
+            vi: Tôi không ngừng cầu chúc quý vị luôn mạnh khỏe và hạnh phúc.
+      pronunciation_note:
+        vi: やまない viết bằng kana (止まない) - "ya-ma-nai"; thể lịch sự やみません.
+      confusion:
+        vi: Chỉ đi với động từ cảm xúc, mong ước (願う, 祈る, 愛する, 期待する, 尊敬する); không dùng với hành động thường như 食べてやまない. Chủ ngữ là người nói; nói về người khác dùng định ngữ (彼が愛してやまない町) hoặc thêm ようだ.
+
+  - key: ja:item:n1-u3-gram-wo-kinjienai
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + を禁じ得ない
+      reading: をきんじえない
+      romanization: wo kinjienai
+      pos: không kìm được (cảm xúc)
+    back:
+      meaning:
+        vi: '"Không thể kìm nén...", "không khỏi..." - cảm xúc tự trào lên trước một sự việc: 怒りを禁じ得ない, 同情を禁じ得ない, 驚きを禁じ得ない, 涙を禁じ得ない. Văn viết, trang trọng.'
+      examples:
+        - target: 被害者の気持ちを思うと、加害者への怒りを禁じ得ない。
+          translation:
+            vi: Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+      pronunciation_note:
+        vi: Đọc "ki-n-ji-ê-nai"; cũng viết 禁じえない.
+      confusion:
+        vi: Đứng trước là danh từ chỉ cảm xúc (怒り, 同情, 驚き, 涙, 憤り), không phải động từ - ×怒るを禁じ得ない. Khác ～ずにはいられない (V-ない gốc + ずにはいられない - không thể không làm) dùng được cả trong văn nói.
+
+  # ================= bài 2: ～極まりない, ～の極み, ～の至り =================
+  - key: ja:item:n1-u3-burei
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 無礼
+      reading: ぶれい
+      romanization: burei
+      pos: tính từ đuôi な
+    back:
+      meaning:
+        vi: vô lễ, hỗn láo; 無礼な態度 - thái độ vô lễ
+      examples:
+        - target: 客に向かってあんな口をきくとは、無礼極まりない。
+          translation:
+            vi: Ăn nói như thế với khách thì thật vô lễ hết mức.
+      pronunciation_note:
+        vi: Đọc "bư-rê".
+      confusion:
+        vi: 失礼 là thất lễ, dùng cả để xin lỗi (失礼します); 無礼 nặng hơn, chỉ để phê phán thái độ của người khác.
+
+  - key: ja:item:n1-u3-kouei
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 光栄
+      reading: こうえい
+      romanization: kouei
+      pos: danh từ / tính từ đuôi な
+    back:
+      meaning:
+        vi: vinh dự, vinh hạnh; 光栄に存じます - tôi lấy làm vinh dự
+      examples:
+        - target: このような賞をいただき、光栄の至りです。
+          translation:
+            vi: Được nhận giải thưởng như thế này là vinh dự vô cùng lớn đối với tôi.
+      pronunciation_note:
+        vi: Đọc "kô-ô-ê".
+      confusion:
+        vi: 光栄 nói về vinh dự của chính mình khi được người khác trao, mời; không dùng để khen người khác (×あなたは光栄です).
+
+  - key: ja:item:n1-u3-kyoushuku
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 恐縮
+      reading: きょうしゅく
+      romanization: kyoushuku
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngại ngùng, áy náy (vì được ưu ái hoặc làm phiền người khác); 恐縮ですが - xin lỗi vì làm phiền, nhưng...
+      examples:
+        - target: お忙しいところ、わざわざお越しいただき、恐縮の至りです。
+          translation:
+            vi: Quý vị bận rộn mà vẫn cất công đến tận nơi, tôi thật vô cùng áy náy.
+      pronunciation_note:
+        vi: Đọc "kyô-ô-shư-ku".
+      confusion:
+        vi: 恐縮ですが dùng mở lời nhờ vả lịch sự (như 恐れ入りますが). 恐縮の至り là dạng cực kỳ trang trọng, hay gặp trong thư, phát biểu.
+
+  - key: ja:item:n1-u3-gram-kiwamarinai
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: なA(gốc) + 極まりない / 極まる
+      reading: きわまりない
+      romanization: kiwamarinai
+      pos: cực kỳ, hết mức (phê phán)
+    back:
+      meaning:
+        vi: '"Cực kỳ...", "... hết chỗ nói" - mức độ cao nhất, thường là đánh giá tiêu cực: 失礼極まりない, 危険極まりない, 不愉快極まりない, 無責任極まりない. 極まる cùng nghĩa (失礼極まる).'
+      examples:
+        - target: 雨の夜に無灯火で自転車に乗るのは、危険極まりない。
+          translation:
+            vi: Đi xe đạp không đèn trong đêm mưa thì nguy hiểm hết mức.
+      pronunciation_note:
+        vi: Đọc "ki-oa-ma-ri-nai".
+      confusion:
+        vi: Gắn thẳng vào gốc tính từ な (thường là từ Hán) - 失礼極まりない, không có な ở giữa (×失礼な極まりない). Dù có ない, nghĩa vẫn là khẳng định "cực kỳ".
+
+  - key: ja:item:n1-u3-gram-no-kiwami
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + の極み
+      reading: のきわみ
+      romanization: no kiwami
+      pos: tột đỉnh, cực điểm
+    back:
+      meaning:
+        vi: '"Tột cùng của...", "đỉnh điểm của..." - trạng thái đạt mức cao nhất: 贅沢の極み, 感激の極み, 疲労の極み, 痛恨の極み. Có thể tích cực hoặc tiêu cực.'
+      examples:
+        - target: 温泉に入りながら星空を眺めるなんて、贅沢の極みだ。
+          translation:
+            vi: Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là xa xỉ tột bậc.
+      pronunciation_note:
+        vi: Đọc "nô ki-oa-mi".
+      confusion:
+        vi: の極み đi sau danh từ (感激の極み); 極まりない đi sau gốc tính từ な (失礼極まりない). 痛恨の極み (đau xót tột cùng) hay dùng khi xin lỗi, nhận thất bại.
+
+  - key: ja:item:n1-u3-gram-no-itari
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: N + の至り
+      reading: のいたり
+      romanization: no itari
+      pos: hết sức, vô cùng (trang trọng)
+    back:
+      meaning:
+        vi: '"Vô cùng...", "hết sức..." - cảm xúc của người nói ở mức cao nhất, rất trang trọng: 光栄の至り, 恐縮の至り, 感激の至り, 赤面の至り. Thành ngữ 若気の至り - do bồng bột tuổi trẻ.'
+      examples:
+        - target: 若い頃に髪を真っ赤に染めたのは、若気の至りでした。
+          translation:
+            vi: Hồi trẻ nhuộm tóc đỏ rực là do bồng bột tuổi trẻ thôi.
+      pronunciation_note:
+        vi: Đọc "nô i-ta-ri".
+      confusion:
+        vi: の至り dùng cho cảm xúc của chính mình trong phát biểu, thư từ (光栄の至りです); không dùng để mô tả người khác hay sự vật (×危険の至り - dùng 危険極まりない).
+
+  # ================= bài 3: ～といったらない, ～ったらありゃしない, ～かぎりだ =================
+  - key: ja:item:n1-u3-kokorobosoi
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 心細い
+      reading: こころぼそい
+      romanization: kokorobosoi
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: bơ vơ, lo lắng vì không có chỗ dựa
+      examples:
+        - target: 知り合いが一人もいない町での生活は、心細い限りだ。
+          translation:
+            vi: Sống ở một thành phố không quen biết ai, tôi thấy bơ vơ vô cùng.
+      pronunciation_note:
+        vi: ほそい chuyển thành ぼそい - "kô-kô-rô-bô-xôi".
+      confusion:
+        vi: 寂しい là buồn vì cô đơn; 心細い là lo, bất an vì thiếu người, thiếu chỗ dựa (một mình ở nơi xa, sắp hết tiền...).
+
+  - key: ja:item:n1-u3-haradatashii
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 腹立たしい
+      reading: はらだたしい
+      romanization: haradatashii
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: bực mình, đáng giận
+      examples:
+        - target: 何度注意しても改善されないのは、腹立たしいといったらない。
+          translation:
+            vi: Nhắc bao nhiêu lần vẫn không sửa, bực mình hết chỗ nói.
+      pronunciation_note:
+        vi: たたしい chuyển thành だたしい - "ha-ra-đa-ta-si-i".
+      confusion:
+        vi: 腹が立つ là động từ (tôi nổi giận); 腹立たしい là tính từ mô tả sự việc khiến mình giận. Văn nói thường dùng ムカつく (suồng sã).
+
+  - key: ja:item:n1-u3-nasakenai
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 情けない
+      reading: なさけない
+      romanization: nasakenai
+      pos: tính từ đuôi い
+    back:
+      meaning:
+        vi: thảm hại, đáng xấu hổ, chán bản thân
+      examples:
+        - target: こんな簡単なミスをするなんて、情けないったらありゃしない。
+          translation:
+            vi: Mắc lỗi đơn giản thế này, thật chán bản thân hết sức.
+      pronunciation_note:
+        vi: Đọc "na-xa-kê-nai".
+      confusion:
+        vi: 情けない thường nói về chính mình hoặc người thân khi kém cỏi; 恥ずかしい là xấu hổ (ngượng) nói chung. Không phải phủ định của 情け (tình cảm) theo nghĩa "vô tình".
+
+  - key: ja:item:n1-u3-gram-to-ittara-nai
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N / A + といったらない
+      romanization: to ittara nai
+      pos: ... không tả nổi
+    back:
+      meaning:
+        vi: '"... không gì sánh được", "... không sao tả xiết" - mức độ cao đến mức không diễn tả được, cả tích cực lẫn tiêu cực: 悔しさといったらなかった, 美しさといったらない, 寒いといったらない.'
+      examples:
+        - target: 決勝で一点差で負けた時の悔しさといったらなかった。
+          translation:
+            vi: Nỗi tiếc nuối khi thua trận chung kết chỉ một điểm thì không sao tả xiết.
+      pronunciation_note:
+        vi: いったら đọc có âm ngắt - "it-ta-ra".
+      confusion:
+        vi: Thường đi với danh từ hóa bằng さ (悔しさ, 美しさ) hoặc tính từ thể từ điển. Kể chuyện quá khứ dùng といったらなかった. Đừng nhầm với ～といったら (nói đến... thì) chỉ chủ đề.
+
+  - key: ja:item:n1-u3-gram-ttara-arya-shinai
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: A / V + ったらありゃしない (= といったらありはしない)
+      romanization: ttara arya shinai
+      pos: ... hết sức (than phiền)
+    back:
+      meaning:
+        vi: '"... hết sức", "... kinh khủng" - than phiền, bực bội trong văn nói thân mật: 面倒くさいったらありゃしない, うるさいったらありゃしない. Dạng chuẩn: といったらありはしない.'
+      examples:
+        - target: 隣の工事の音がうるさいったらありゃしない。
+          translation:
+            vi: Tiếng công trình bên cạnh ồn kinh khủng.
+      pronunciation_note:
+        vi: ありゃしない là dạng nói của ありはしない - "a-rya-si-nai".
+      confusion:
+        vi: Khác といったらない (dùng được cho cả cảm xúc tốt), ったらありゃしない gần như chỉ dùng cho điều khó chịu và rất suồng sã - không dùng trong văn viết, phát biểu.
+
+  - key: ja:item:n1-u3-gram-kagiri-da
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: A-い / なA-な + 限りだ
+      reading: かぎりだ
+      romanization: kagiri da
+      pos: vô cùng (cảm xúc người nói)
+    back:
+      meaning:
+        vi: '"Vô cùng...", "thật là..." - cảm xúc rất mạnh của người nói lúc này: 嬉しい限りだ, 心細い限りだ, 羨ましい限りだ, 残念な限りだ, 寂しい限りだ.'
+      examples:
+        - target: 皆様に応援していただき、嬉しい限りです。
+          translation:
+            vi: Được mọi người ủng hộ, tôi vô cùng vui mừng.
+      pronunciation_note:
+        vi: Đọc "ka-gi-ri-đa".
+      confusion:
+        vi: Chỉ đi với tính từ cảm xúc (嬉しい, 寂しい, 羨ましい, 心細い), không đi với tính từ mô tả khách quan (×高い限りだ). Chủ thể là người nói; không dùng cho cảm xúc của người thứ ba.
+
+  # ================= bài 4: ～に堪えない, ～に足る, ～に値する =================
+  - key: ja:item:n1-u3-shinrai
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 信頼
+      reading: しんらい
+      romanization: shinrai
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tin cậy, tín nhiệm; 信頼に足る - đáng tin cậy
+      examples:
+        - target: 彼は口数は少ないが、信頼に足る人物だ。
+          translation:
+            vi: Anh ấy ít nói nhưng là người đáng tin cậy.
+      pronunciation_note:
+        vi: Đọc "xin-rai".
+      confusion:
+        vi: 信用 thường dựa trên thành tích, uy tín (信用を失う, 信用金庫); 信頼 là tin tưởng và có thể dựa vào (信頼関係).
+
+  - key: ja:item:n1-u3-ikan
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 遺憾
+      reading: いかん
+      romanization: ikan
+      pos: danh từ / tính từ đuôi な
+    back:
+      meaning:
+        vi: lấy làm tiếc, đáng tiếc (văn chính thức); 遺憾の意を表する - bày tỏ sự lấy làm tiếc
+      examples:
+        - target: このような事態に至ったことは、誠に遺憾に堪えません。
+          translation:
+            vi: Việc sự tình đi đến mức này thật vô cùng đáng tiếc.
+      pronunciation_note:
+        vi: Đọc "i-kan".
+      confusion:
+        vi: 遺憾 là từ của chính phủ, doanh nghiệp trong thông cáo; nó bày tỏ "tiếc" chứ không hẳn là xin lỗi. Đời thường dùng 残念.
+
+  - key: ja:item:n1-u3-shousan
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 称賛
+      reading: しょうさん
+      romanization: shousan
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tán dương, ca ngợi; 称賛に値する - đáng được ca ngợi
+      examples:
+        - target: 危険を顧みず子どもを救った男性の行動は、称賛に値する。
+          translation:
+            vi: Hành động bất chấp nguy hiểm cứu đứa trẻ của người đàn ông ấy đáng được ca ngợi.
+      pronunciation_note:
+        vi: Đọc "shô-ô-xan"; cũng viết 賞賛.
+      confusion:
+        vi: 称賛 là khen ngợi công khai, trang trọng; 褒める là động từ khen thường ngày.
+
+  - key: ja:item:n1-u3-gram-ni-taenai
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển) / N + に堪えない
+      reading: にたえない
+      romanization: ni taenai
+      pos: không chịu nổi / vô cùng
+    back:
+      meaning:
+        vi: '(1) 見る・聞く・読む + に堪えない - tệ đến mức không thể xem / nghe / đọc nổi: 見るに堪えない, 聞くに堪えない. (2) N cảm xúc + に堪えない - cảm xúc tràn đầy, trang trọng: 感謝に堪えない, 感激に堪えない, 遺憾に堪えない.'
+      examples:
+        - target: ネット上には聞くに堪えない悪口があふれている。
+          translation:
+            vi: Trên mạng đầy những lời nói xấu nghe không lọt tai.
+        - target: 多くの方々にご支援いただき、感謝に堪えません。
+          translation:
+            vi: Được rất nhiều người ủng hộ, tôi vô cùng biết ơn.
+      pronunciation_note:
+        vi: Đọc "ni ta-ê-nai"; 堪 cũng có thể viết bằng kana (にたえない).
+      confusion:
+        vi: 'Nghĩa (1) là đánh giá tiêu cực về thứ mình thấy, nghe; nghĩa (2) là cảm xúc mạnh của người nói (lời cảm ơn, chia buồn trang trọng). Khác ～に堪える (đáng để...): 鑑賞に堪える作品 - tác phẩm đáng thưởng thức.'
+
+  - key: ja:item:n1-u3-gram-ni-taru
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển) / N + に足る
+      reading: にたる
+      romanization: ni taru
+      pos: đủ để, xứng đáng để
+    back:
+      meaning:
+        vi: '"Đủ để...", "đáng để..." - có đủ giá trị, điều kiện cho việc đó: 信頼に足る人物, 満足するに足る結果, 尊敬するに足る. Thành ngữ phủ định 取るに足らない - nhỏ nhặt, không đáng kể.'
+      examples:
+        - target: 取るに足らないことで、いちいち悩む必要はない。
+          translation:
+            vi: Không cần phiền lòng vì những chuyện nhỏ nhặt không đáng kể.
+      pronunciation_note:
+        vi: Đọc "ni ta-rư"; phủ định 足りない / 足らない.
+      confusion:
+        vi: Thường đứng trước danh từ làm định ngữ (信頼に足る人物). Dạng phủ định hay gặp nhất là 取るに足らない; với nghĩa khác dùng ～に足りない (信頼するに足りない).
+
+  - key: ja:item:n1-u3-gram-ni-atai-suru
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển) / N + に値する
+      reading: にあたいする
+      romanization: ni atai suru
+      pos: đáng, xứng đáng
+    back:
+      meaning:
+        vi: '"Đáng...", "xứng đáng được..." - đánh giá giá trị của sự vật, hành động: 一読に値する, 称賛に値する, 注目に値する, 検討に値する. Phủ định: 値しない.'
+      examples:
+        - target: この報告書は、専門家でなくても一読に値する。
+          translation:
+            vi: Bản báo cáo này đáng đọc qua một lần, kể cả khi bạn không phải chuyên gia.
+      pronunciation_note:
+        vi: 値 ở đây đọc あたい (không phải ね) - "a-tai-xư-rư".
+      confusion:
+        vi: 値する nhấn vào giá trị ("đáng"); 足る nhấn vào sự đủ điều kiện ("đủ để"). Với danh từ đánh giá (称賛, 注目, 一読, 検討) gần như luôn dùng 値する.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n1-u3-shaji
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 謝辞
+      reading: しゃじ
+      romanization: shaji
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời cảm tạ (phát biểu, đoạn cảm ơn trong luận văn); 謝辞を述べる
+      examples:
+        - target: 卒業式で、卒業生代表が謝辞を述べた。
+          translation:
+            vi: Tại lễ tốt nghiệp, đại diện sinh viên tốt nghiệp đã phát biểu lời cảm tạ.
+      pronunciation_note:
+        vi: Đọc "sha-ji".
+      confusion:
+        vi: 謝辞 là lời cảm ơn trang trọng; 謝罪 là lời xin lỗi. 祝辞 là lời chúc mừng, 弔辞 là điếu văn.
+
+  - key: ja:item:n1-u3-shinkyou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 心境
+      reading: しんきょう
+      romanization: shinkyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: tâm trạng, tâm cảnh (tại một thời điểm); 今の心境 - tâm trạng lúc này
+      examples:
+        - target: 引退を決めた今の心境を、率直にお聞かせください。
+          translation:
+            vi: Xin anh chia sẻ thẳng thắn tâm trạng lúc này khi đã quyết định giải nghệ.
+      pronunciation_note:
+        vi: Đọc "xin-kyô-ô".
+      confusion:
+        vi: 気分 là tâm trạng nhất thời (vui, mệt); 心境 là trạng thái nội tâm trước một biến cố lớn - hay dùng trong phỏng vấn.
+
+  - key: ja:item:n1-u3-kokuhyou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 酷評
+      reading: こくひょう
+      romanization: kokuhyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời phê bình gay gắt, chê thậm tệ; 酷評される - bị chê thậm tệ
+      examples:
+        - target: 公開当初は酷評された映画が、今では名作と呼ばれている。
+          translation:
+            vi: Bộ phim từng bị chê thậm tệ lúc mới ra mắt nay lại được gọi là kiệt tác.
+      pronunciation_note:
+        vi: Đọc "kô-ku-hyô-ô".
+      confusion:
+        vi: 批評 là phê bình nói chung (khen lẫn chê); 酷評 là chê nặng nề. Trái nghĩa - 絶賛 (khen hết lời).
+
+  - key: ja:item:n1-u3-sanjou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 惨状
+      reading: さんじょう
+      romanization: sanjou
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh tượng thảm khốc
+      examples:
+        - target: 地震の後の町の惨状は、目を覆うばかりだった。
+          translation:
+            vi: Cảnh thảm khốc của thị trấn sau động đất khiến người ta không nỡ nhìn.
+      pronunciation_note:
+        vi: Đọc "xan-jô-ô".
+      confusion:
+        vi: 惨状 nói về hiện trường, cảnh tượng; 悲劇 là bi kịch (sự kiện). Hay đi với 見るに堪えない, 目を覆う.

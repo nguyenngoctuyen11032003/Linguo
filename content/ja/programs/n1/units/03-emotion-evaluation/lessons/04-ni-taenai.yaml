@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u3-ni-taenai
+order_index: 4
+level: n1
+title:
+  vi: Đánh giá giá trị - ～に堪えない, ～に足る, ～に値する
+objectives:
+  - vi: Chê điều tệ đến mức không xem, nghe nổi bằng 見る / 聞く + に堪えない.
+  - vi: Bày tỏ lòng biết ơn, tiếc nuối trang trọng bằng 感謝 / 遺憾 + に堪えない.
+  - vi: Đánh giá "đáng", "đủ để" bằng ～に足る và ～に値する.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-u3-to-ittara-nai]
+items:
+  - item: ja:item:n1-u3-shinrai
+  - item: ja:item:n1-u3-ikan
+  - item: ja:item:n1-u3-shousan
+  - item: ja:item:n1-u3-gram-ni-taenai
+  - item: ja:item:n1-u3-gram-ni-taru
+  - item: ja:item:n1-u3-gram-ni-atai-suru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu các câu đánh giá trong bài bình luận, thông cáo - "không thể xem nổi", "đáng để đọc", "người đủ để tin cậy" - và tự viết được.
+  - type: explain
+    text:
+      vi: '～に堪えない có hai nghĩa. (1) 見る / 聞く / 読む + に堪えない: tệ đến mức không chịu nổi - 見るに堪えない映像, 聞くに堪えない悪口. (2) N cảm xúc + に堪えない: cảm xúc tràn đầy, rất trang trọng - 感謝に堪えません, 遺憾に堪えない, 感激に堪えない.'
+  - type: explain
+    text:
+      vi: '～に足る - V thể từ điển / N + に足る: đủ điều kiện, đủ giá trị để... - 信頼に足る人物, 満足するに足る結果, 尊敬するに足る先輩. Thành ngữ phủ định: 取るに足らない - nhỏ nhặt, không đáng kể.'
+  - type: explain
+    text:
+      vi: '～に値する - V thể từ điển / N + に値する: đáng, xứng đáng - 一読に値する, 称賛に値する, 注目に値する, 検討に値する. Phủ định: 値しない. 値 đọc là あたい.'
+  - type: deep_explain
+    text:
+      vi: 'Phân biệt: に値する nhấn vào giá trị của đối tượng ("đáng được..."), hay đi với danh từ đánh giá như 称賛, 注目, 一読; に足る nhấn vào việc đủ tiêu chuẩn ("đủ để..."), hay đi với 信頼, 満足する, 尊敬する. Cả hai thường làm định ngữ trước danh từ. Còn に堪えない nghĩa (1) luôn là chê; nếu muốn khen "đáng xem" thì dùng 見るに値する hoặc 鑑賞に堪える (thể khẳng định).'
+  - type: example
+    target: 事故現場の映像は、見るに堪えないものだった。
+    target_lang: ja
+    translation:
+      vi: Đoạn phim về hiện trường tai nạn thật không thể xem nổi.
+  - type: example
+    target: 多くの方々にご支援いただき、感謝に堪えません。
+    target_lang: ja
+    translation:
+      vi: Được rất nhiều người ủng hộ, tôi vô cùng biết ơn.
+  - type: example
+    target: 彼は口数は少ないが、信頼に足る人物だ。
+    target_lang: ja
+    translation:
+      vi: Anh ấy ít nói nhưng là người đáng tin cậy.
+  - type: example
+    target: 危険を顧みず子どもを救った男性の行動は、称賛に値する。
+    target_lang: ja
+    translation:
+      vi: Hành động bất chấp nguy hiểm cứu đứa trẻ của người đàn ông ấy đáng được ca ngợi.
+  - type: example
+    target: このような事態に至ったことは、誠に遺憾に堪えません。
+    target_lang: ja
+    translation:
+      vi: Việc sự tình đi đến mức này thật vô cùng đáng tiếc.
+  - type: common_mistake
+    wrong: この映画は素晴らしくて、見るに堪えない。
+    right: この映画は素晴らしくて、見るに値する。
+    target_lang: ja
+    note:
+      vi: 見るに堪えない là "tệ đến mức không xem nổi" - nghĩa chê. Khen "đáng xem" dùng 見るに値する.
+  - type: common_mistake
+    wrong: この報告書は一読に値しる。
+    right: この報告書は一読に値する。
+    target_lang: ja
+    note:
+      vi: 値する là động từ する (あたいする) - phủ định 値しない, quá khứ 値した.
+  - type: summary
+    points:
+      - vi: 見る / 聞く + に堪えない - không xem / nghe nổi (chê).
+      - vi: 感謝 / 遺憾 / 感激 + に堪えない - vô cùng (trang trọng).
+      - vi: V / N + に足る - đủ để; 取るに足らない - không đáng kể.
+      - vi: V / N + に値する - đáng; 一読に値する, 称賛に値する.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u3-ni-taenai-mcq-ikan
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u3-ikan
+    prompt:
+      stem: Trong thông cáo của chính phủ, 「遺憾の意を表する」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a1b, text: bày tỏ sự lấy làm tiếc, lang: vi }
+        - { id: k5m, text: bày tỏ lòng biết ơn, lang: vi }
+        - { id: v3t, text: bày tỏ sự tán thành, lang: vi }
+        - { id: j7x, text: bày tỏ lời chúc mừng, lang: vi }
+    answer:
+      correct_option_id: a1b
+    explanation:
+      vi: 遺憾 - đáng tiếc; 遺憾の意を表する - bày tỏ sự lấy làm tiếc (văn chính thức). Biết ơn là 感謝, chúc mừng là 祝意.
+    display_answer: bày tỏ sự lấy làm tiếc
+
+  - key: ja:exercise:n1-u3-ni-taenai-listen-taenai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-gram-ni-taenai
+    prompt:
+      audio_asset_id: null
+      fallback_text: ネット上には聞くに堪えない悪口があふれている。
+      options:
+        - { id: c4h, text: Trên mạng đầy những lời nói xấu nghe không lọt tai., lang: vi }
+        - { id: m8w, text: Trên mạng hầu như không có lời nói xấu nào., lang: vi }
+        - { id: z2r, text: Trên mạng có nhiều lời khen đáng nghe., lang: vi }
+        - { id: e6n, text: Tôi không thể chịu được việc không lên mạng., lang: vi }
+    answer:
+      correct_option_id: c4h
+    explanation:
+      vi: 聞くに堪えない悪口 - lời nói xấu nghe không lọt tai; あふれている - tràn ngập.
+    display_answer: Trên mạng đầy những lời nói xấu nghe không lọt tai.
+
+  - key: ja:exercise:n1-u3-ni-taenai-mcq-atai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-ni-atai-suru
+    prompt:
+      stem: 'Chọn từ đúng: この報告書は、専門家でなくても一読＿＿。'
+      stem_lang: vi
+      options:
+        - { id: g8p, text: に値する, lang: ja }
+        - { id: u2f, text: に堪えない, lang: ja }
+        - { id: o6c, text: を禁じ得ない, lang: ja }
+        - { id: w4v, text: 極まりない, lang: ja }
+    answer:
+      correct_option_id: g8p
+    explanation:
+      vi: 一読に値する - đáng đọc qua một lần. に堪えない (với nghĩa chê) đi với 見る / 聞く / 読む; を禁じ得ない cần danh từ cảm xúc; 極まりない gắn vào tính từ な.
+    display_answer: に値する
+
+  - key: ja:exercise:n1-u3-ni-taenai-fill-shinrai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u3-shinrai
+    prompt:
+      template: "彼は口数は少ないが、{{b1}}に足る人物だ。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Anh ấy ít nói nhưng là người đáng tin cậy."
+        - "Gợi ý: từ Hán 'tin cậy' - しんらい."
+    answer:
+      blanks:
+        b1: [信頼, しんらい, 信頼する, しんらいする]
+    known_wrong:
+      - answer: 称賛
+        feedback_vi: 称賛 (ca ngợi) đi với に値する; người "đáng tin cậy" là 信頼に足る.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 信頼に足る人物 - người đáng tin cậy (đủ tiêu chuẩn để tin). Dạng động từ 信頼するに足る cũng đúng.
+    display_answer: 彼は口数は少ないが、信頼に足る人物だ。
+
+  - key: ja:exercise:n1-u3-ni-taenai-wb-kansha
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-ni-taenai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Được rất nhiều người ủng hộ, tôi vô cùng biết ơn.\""
+      tokens:
+        - { id: t2, text: ご支援いただき、 }
+        - { id: t4, text: 感謝に値しません }
+        - { id: t3, text: 感謝に堪えません }
+        - { id: t1, text: 多くの方々に }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: 感謝に堪えません - vô cùng biết ơn (trang trọng). 感謝に値しません nghĩa là "không đáng để cảm ơn" - sai ý.
+    display_answer: 多くの方々にご支援いただき、感謝に堪えません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u3-ni-taenai-fill-toru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-ni-taru
+    prompt:
+      template: "取るに{{b1}}ことで、いちいち悩む必要はない。(nhỏ nhặt, không đáng kể)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [足らない, たらない, 足りない, たりない]
+    known_wrong:
+      - answer: 足る
+        feedback_vi: Thành ngữ là dạng phủ định - 取るに足らない (không đáng kể).
+        error_tag: taru_negative
+      - answer: 値しない
+        feedback_vi: Thành ngữ cố định là 取るに足らない; không nói 取るに値しない.
+        error_tag: taru_atai
+    explanation:
+      vi: 取るに足らない - nhỏ nhặt, không đáng bận tâm. 取るに足りない cũng được dùng.
+    display_answer: 取るに足らないことで、いちいち悩む必要はない。
+
+  - key: ja:exercise:n1-u3-ni-taenai-translate-shousan
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-shousan
+    prompt:
+      source_text: Nỗ lực của các tình nguyện viên đáng được ca ngợi. (dùng に値する)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ボランティアの人たちの努力は、称賛に値する。
+        - ボランティアの人たちの努力は、称賛に値します。
+        - ボランティアの人々の努力は、称賛に値する。
+        - ボランティアの人々の努力は、称賛に値します。
+        - ボランティアの努力は、称賛に値する。
+        - ボランティアの努力は、称賛に値します。
+        - ボランティアの皆さんの努力は、称賛に値する。
+        - ボランティアの皆さんの努力は、称賛に値します。
+        - ボランティアの人たちの努力は、賞賛に値する。
+        - ボランティアの努力は、賞賛に値する。
+        - ボランティアたちの努力は、称賛に値する。
+        - ボランティアのひとたちのどりょくは、しょうさんにあたいする。
+    known_wrong:
+      - answer: ボランティアの人たちの努力は、称賛に堪えない。
+        feedback_vi: に堪えない không mang nghĩa "đáng được"; "đáng ca ngợi" là 称賛に値する.
+        error_tag: atai_taenai
+      - answer: ボランティアの人たちの努力は、称賛に値しない。
+        feedback_vi: 値しない là "không đáng" - ngược nghĩa.
+        error_tag: negation
+    explanation:
+      vi: ボランティアの人たち - các tình nguyện viên; 努力 - nỗ lực; 称賛に値する - đáng được ca ngợi.
+    display_answer: ボランティアの人たちの努力は、称賛に値する。
+
+  - key: ja:exercise:n1-u3-ni-taenai-translate-miru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-ni-taenai
+    prompt:
+      source_text: Đoạn phim về hiện trường tai nạn thật không thể xem nổi. (dùng に堪えない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 事故現場の映像は、見るに堪えないものだった。
+        - 事故現場の映像は、見るに堪えなかった。
+        - 事故現場の映像は、見るに堪えない。
+        - 事故現場の映像は、見るに堪えないものでした。
+        - 事故現場の映像は、見るに堪えませんでした。
+        - 事故現場の映像は、とても見るに堪えないものだった。
+        - 事故現場の映像は、見るにたえないものだった。
+        - 事故現場の映像は、見るにたえなかった。
+        - 事故の現場の映像は、見るに堪えないものだった。
+        - 事故現場のビデオは、見るに堪えないものだった。
+        - 事故現場の動画は、見るに堪えないものだった。
+        - じこげんばのえいぞうは、みるにたえないものだった。
+    known_wrong:
+      - answer: 事故現場の映像は、見るに値しないものだった。
+        feedback_vi: 見るに値しない là "không đáng xem" (chê giá trị). Không xem nổi vì quá thảm khốc là 見るに堪えない.
+        error_tag: atai_taenai
+      - answer: 事故現場の映像は、見るを禁じ得なかった。
+        feedback_vi: を禁じ得ない đi sau danh từ cảm xúc; "không xem nổi" là 見るに堪えない.
+        error_tag: kinjienai_noun
+    explanation:
+      vi: 事故現場 - hiện trường tai nạn; 映像 - hình ảnh, đoạn phim; 見るに堪えない - không thể xem nổi.
+    display_answer: 事故現場の映像は、見るに堪えないものだった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u3-ni-taenai-mcq-review
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-ni-atai-suru
+    prompt:
+      stem: Bạn viết lời giới thiệu cho một cuốn sách hay. Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: d9s, text: 若い世代にこそ読まれるに値する一冊だ。, lang: ja }
+        - { id: n5x, text: 若い世代にこそ読むに堪えない一冊だ。, lang: ja }
+        - { id: q3j, text: 若い世代にこそ取るに足らない一冊だ。, lang: ja }
+        - { id: y7g, text: 若い世代にこそ読まれる極まりない一冊だ。, lang: ja }
+    answer:
+      correct_option_id: d9s
+    explanation:
+      vi: 読まれるに値する - đáng được đọc. 読むに堪えない là "đọc không nổi" (chê); 取るに足らない là "không đáng kể"; 極まりない không gắn sau động từ.
+    display_answer: 若い世代にこそ読まれるに値する一冊だ。
+
+  - key: ja:exercise:n1-u3-ni-taenai-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-gram-ni-atai-suru
+    prompt:
+      source_text: 危険を顧みず子どもを救った男性の行動は、称賛に値する。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hành động bất chấp nguy hiểm cứu đứa trẻ của người đàn ông ấy đáng được ca ngợi.
+        - Hành động bất chấp nguy hiểm cứu đứa trẻ của người đàn ông đó đáng được ca ngợi.
+        - Hành động của người đàn ông bất chấp nguy hiểm cứu đứa trẻ đáng được ca ngợi.
+        - Hành động của người đàn ông bất chấp nguy hiểm để cứu đứa trẻ đáng được ca ngợi.
+        - Hành động của người đàn ông bất chấp nguy hiểm cứu đứa trẻ đáng được khen ngợi.
+        - Hành động của người đàn ông bất chấp nguy hiểm cứu đứa trẻ đáng được tán dương.
+        - Hành động của người đàn ông bất chấp nguy hiểm cứu đứa trẻ thật đáng ca ngợi.
+        - Hành động của người đàn ông không màng nguy hiểm cứu đứa trẻ đáng được ca ngợi.
+        - Hành động của người đàn ông bất chấp hiểm nguy cứu đứa trẻ đáng được ca ngợi.
+        - Hành động của người đàn ông bất chấp nguy hiểm cứu em bé đáng được ca ngợi.
+        - Hành động của người đàn ông bất chấp nguy hiểm cứu đứa bé đáng được ca ngợi.
+        - Hành động bất chấp nguy hiểm cứu đứa trẻ của người đàn ông ấy rất đáng được ca ngợi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hành động của người đàn ông bất chấp nguy hiểm cứu đứa trẻ không đáng được ca ngợi.
+        feedback_vi: 値する là khẳng định - "đáng"; phủ định mới là 値しない.
+        error_tag: negation
+    explanation:
+      vi: 危険を顧みず - bất chấp nguy hiểm; 子どもを救った - đã cứu đứa trẻ; 称賛に値する - đáng được ca ngợi.
+    display_answer: Hành động bất chấp nguy hiểm cứu đứa trẻ của người đàn ông ấy đáng được ca ngợi.
+
+  - key: ja:exercise:n1-u3-ni-taenai-wb-ikan
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-ikan
+    prompt:
+      instruction: "Sắp xếp thành câu thông cáo: \"Việc sự tình đi đến mức này thật vô cùng đáng tiếc.\""
+      tokens:
+        - { id: p3, text: 誠に遺憾に }
+        - { id: p1, text: このような事態に }
+        - { id: p5, text: 足りません }
+        - { id: p4, text: 堪えません }
+        - { id: p2, text: 至ったことは、 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: 事態に至る - sự tình đi đến mức; 遺憾に堪えません - vô cùng đáng tiếc (cách nói trang trọng trong thông cáo). 遺憾に足りません không có nghĩa.
+    display_answer: このような事態に至ったことは、誠に遺憾に堪えません。
+
+  - key: ja:exercise:n1-u3-ni-taenai-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-ni-taru
+    prompt:
+      stem: 'Chọn cách điền đúng vào cả hai chỗ trống: 「彼の説明は根拠が乏しく、信頼する（ A ）ものではなかった。一方、彼女の論文は注目（ B ）。」'
+      stem_lang: vi
+      options:
+        - { id: f2c, text: A に足る / B に値する, lang: ja }
+        - { id: l6h, text: A に堪えない / B に足る, lang: ja }
+        - { id: h8m, text: A に値する / B に堪えない, lang: ja }
+        - { id: r4p, text: A を禁じ得ない / B の至りだ, lang: ja }
+    answer:
+      correct_option_id: f2c
+    explanation:
+      vi: 信頼するに足る - đủ để tin (phủ định bằng ものではない); 注目に値する - đáng chú ý. に堪えない ở chỗ A cho nghĩa lạ; 注目に堪えない cũng sai.
+    display_answer: A に足る / B に値する
