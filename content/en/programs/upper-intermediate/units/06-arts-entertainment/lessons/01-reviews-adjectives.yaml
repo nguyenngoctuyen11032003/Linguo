@@ -1,0 +1,358 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:arts-reviews-adjectives
+order_index: 1
+level: b2
+title:
+  vi: Absolutely brilliant! - viết review phim & sách
+objectives:
+  - vi: Phân biệt tính từ thường (good, funny) và tính từ cực (brilliant, hilarious) cùng trạng từ đi kèm.
+  - vi: Dùng really cho cả hai loại tính từ, very chỉ cho tính từ thường, absolutely chỉ cho tính từ cực.
+  - vi: Dùng từ vựng review - plot, cast, sequel, be set in, gripping, overrated, thought-provoking.
+estimated_minutes: 25
+skills: [vocabulary, writing, speaking]
+prerequisites: [en:lesson:law-justice-review]
+items:
+  - item: en:item:gradable-extreme-adjectives
+  - item: en:item:absolutely-extreme
+  - item: en:item:really-both-adjectives
+  - item: en:item:gripping
+  - item: en:item:overrated
+  - item: en:item:thought-provoking
+  - item: en:item:plot
+  - item: en:item:cast
+  - item: en:item:sequel
+  - item: en:item:be-set-in
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một đoạn review phim hoặc sách có sắc thái - khen vừa phải, khen hết lời, chê nhẹ - mà không mắc lỗi very brilliant.
+  - type: explain
+    text:
+      vi: "Tính từ thường (good, bad, funny, interesting) có thể tăng giảm mức độ, nên đi với very, quite, extremely, a bit. Tính từ cực (brilliant, awful, hilarious, fascinating, stunning) đã có nghĩa \"rất\", nên chỉ đi với absolutely, totally, utterly."
+  - type: explain
+    text:
+      vi: "Really đi được với cả hai loại: really good, really brilliant - đây là lựa chọn an toàn khi nói. Tiếng Việt nói \"rất tuyệt vời\" rất tự nhiên, nên người Việt hay viết very amazing, very fantastic - người chấm bài IELTS hay Cambridge sẽ trừ điểm."
+  - type: explain
+    text:
+      vi: "Một bài review thường có: bối cảnh (It's set in…), cốt truyện (the plot), diễn viên (the cast), và nhận xét (gripping, thought-provoking, overrated). Câu cuối thường so sánh với bản gốc hoặc phần trước (the sequel, the original)."
+  - type: deep_explain
+    text:
+      vi: Cặp thường gặp - good → excellent/superb, bad → awful/terrible, funny → hilarious, interesting → fascinating, surprising → astonishing, tired → exhausted. Quite có hai nghĩa - quite good là "khá hay", nhưng quite brilliant là "hoàn toàn xuất sắc". Trong văn viết trang trọng, hạn chế really và totally; dùng extremely với tính từ thường và truly / utterly với tính từ cực.
+  - type: example
+    target: The film is set on a container ship, and for most of its two hours it is absolutely gripping.
+    target_lang: en
+    translation:
+      vi: Bộ phim lấy bối cảnh trên một con tàu container, và gần như suốt hai tiếng nó cực kỳ lôi cuốn.
+    note:
+      vi: Gripping là tính từ cực ("lôi cuốn không rời mắt") nên đi với absolutely.
+  - type: example
+    target: The plot is very simple, but the cast is so good that you hardly notice.
+    target_lang: en
+    translation:
+      vi: Cốt truyện rất đơn giản, nhưng dàn diễn viên giỏi tới mức bạn gần như không để ý.
+    note:
+      vi: Simple và good là tính từ thường - đi với very, so.
+  - type: example
+    target: Everyone says the sequel is a masterpiece, but I found it slightly overrated.
+    target_lang: en
+    translation:
+      vi: Ai cũng nói phần tiếp theo là kiệt tác, nhưng tôi thấy nó hơi bị đánh giá quá cao.
+    note:
+      vi: A bit / slightly làm nhẹ lời chê - lịch sự hơn khi phản bác ý kiến số đông.
+  - type: common_mistake
+    wrong: The special effects were very amazing.
+    right: The special effects were absolutely amazing.
+    target_lang: en
+    note:
+      vi: Amazing là tính từ cực, không đi với very. Dùng absolutely hoặc really.
+  - type: common_mistake
+    wrong: The story sets in Da Nang in the 1980s.
+    right: The story is set in Da Nang in the 1980s.
+    target_lang: en
+    note:
+      vi: Bối cảnh của câu chuyện dùng bị động be set in - câu chuyện không tự "đặt" mình vào đâu.
+  - type: common_mistake
+    wrong: It was absolutely good.
+    right: It was really good. / It was absolutely brilliant.
+    target_lang: en
+    note:
+      vi: Absolutely không đi với tính từ thường như good; đổi trạng từ hoặc đổi sang tính từ cực.
+  - type: summary
+    points:
+      - vi: Tính từ thường - very / extremely / quite / a bit + good, funny, interesting.
+      - vi: Tính từ cực - absolutely / totally / utterly + brilliant, hilarious, fascinating.
+      - vi: Really đi được với cả hai loại.
+      - vi: Từ vựng review - be set in, plot (twist), cast, sequel, gripping, thought-provoking, overrated.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:arts-review-mcq-absolutely
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:absolutely-extreme
+    prompt:
+      stem: "Chọn trạng từ đúng: The view from the top row of the theatre was ___ stunning."
+      stem_lang: vi
+      options:
+        - { id: h4q, text: absolutely, lang: en }
+        - { id: c9z, text: very, lang: en }
+        - { id: t2e, text: slightly, lang: en }
+        - { id: p6k, text: a bit, lang: en }
+    answer:
+      correct_option_id: h4q
+    explanation:
+      vi: Stunning là tính từ cực (đẹp choáng ngợp), nên đi với absolutely. Very, slightly, a bit chỉ đi với tính từ thường.
+    display_answer: absolutely
+
+  - key: en:exercise:arts-review-mcq-very-good
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:gradable-extreme-adjectives
+    prompt:
+      stem: "Chọn trạng từ đúng: The first half of the novel is ___ good, but it loses its way after that."
+      stem_lang: vi
+      options:
+        - { id: m3a, text: very, lang: en }
+        - { id: x7u, text: absolutely, lang: en }
+        - { id: f1o, text: utterly, lang: en }
+        - { id: w8i, text: totally, lang: en }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: Good là tính từ thường nên đi với very. Absolutely, utterly, totally chỉ đi với tính từ cực như brilliant hay superb.
+    display_answer: very
+
+  - key: en:exercise:arts-review-listen-set-in
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:be-set-in
+    prompt:
+      audio_asset_id: null
+      fallback_text: The novel is set in a fishing village in the 1970s, and the plot is absolutely gripping.
+      options:
+        - { id: r5n, text: "Cuốn tiểu thuyết lấy bối cảnh một làng chài những năm 1970, và cốt truyện cực kỳ lôi cuốn.", lang: vi }
+        - { id: b2w, text: "Cuốn tiểu thuyết được viết ở một làng chài vào những năm 1970, và cốt truyện khá nhàm.", lang: vi }
+        - { id: j8c, text: "Tác giả sống ở một làng chài những năm 1970 và viết một cuốn tiểu thuyết hấp dẫn.", lang: vi }
+        - { id: y4s, text: "Cuốn tiểu thuyết kể về một làng chài, nhưng cốt truyện không lôi cuốn lắm.", lang: vi }
+    answer:
+      correct_option_id: r5n
+    explanation:
+      vi: Be set in là "lấy bối cảnh ở", không phải "được viết ở". Absolutely gripping là khen rất mạnh - cực kỳ lôi cuốn.
+    display_answer: "Cuốn tiểu thuyết lấy bối cảnh một làng chài những năm 1970, và cốt truyện cực kỳ lôi cuốn."
+
+  - key: en:exercise:arts-review-fill-overrated-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:overrated
+    prompt:
+      template: "Critics loved it, but I found it a bit {{b1}} - the trailer was more exciting than the film itself."
+      blanks:
+        - { id: b1, width_hint: 9 }
+      hint_levels:
+        - "Nghĩa của câu: Giới phê bình rất thích, nhưng tôi thấy nó hơi bị đánh giá quá cao - trailer còn hấp dẫn hơn chính bộ phim."
+        - "Gợi ý: tiền tố over- + rated."
+    answer:
+      blanks:
+        b1: [overrated, over-rated]
+    known_wrong:
+      - answer: underrated
+        feedback_vi: Underrated là "bị đánh giá thấp" - ngược ý câu. Người nói thấy phim không hay như lời khen.
+        error_tag: word_choice
+      - answer: overrating
+        feedback_vi: Cần tính từ dạng V3 - overrated (được đánh giá quá cao).
+        error_tag: word_form
+    explanation:
+      vi: Phê bình khen nhưng người nói thấy phim không hay bằng (trailer còn hay hơn) - tức là phim được đánh giá quá cao, overrated.
+    display_answer: Critics loved it, but I found it a bit overrated - the trailer was more exciting than the film itself.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:arts-review-fill-was-set
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-set-in
+    prompt:
+      template: "The series {{b1}} {{b2}} in Saigon in the early 1960s, so the costumes and music feel very authentic."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [is, was]
+        b2: [set]
+    known_wrong:
+      - answer: sets
+        feedback_vi: Bối cảnh dùng bị động - is set in, không dùng sets.
+        error_tag: passive_set_in
+      - answer: setted
+        feedback_vi: Set là động từ bất quy tắc - V3 vẫn là set.
+        error_tag: irregular_verb
+    explanation:
+      vi: "\"Lấy bối cảnh ở\" luôn là bị động be set in. Set có ba dạng giống nhau - set / set / set."
+    display_answer: The series is set in Saigon in the early 1960s, so the costumes and music feel very authentic.
+
+  - key: en:exercise:arts-review-translate-thought-provoking
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:thought-provoking
+    prompt:
+      source_text: Bộ phim tài liệu này rất gợi suy ngẫm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This documentary is very thought-provoking.
+        - This documentary is really thought-provoking.
+        - This documentary is extremely thought-provoking.
+        - This documentary is highly thought-provoking.
+        - The documentary is very thought-provoking.
+        - The documentary is really thought-provoking.
+        - This is a very thought-provoking documentary.
+        - This is a really thought-provoking documentary.
+        - This documentary is deeply thought-provoking.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This documentary is very provoking.
+        feedback_vi: Provoking một mình có thể là "khiêu khích, gây bực". Gợi suy ngẫm là thought-provoking.
+        error_tag: word_choice
+      - answer: This documentary very thought-provoking.
+        feedback_vi: Thiếu động từ be - This documentary is…
+        error_tag: missing_be
+    explanation:
+      vi: Thought-provoking là tính từ thường nên đi với very / really / extremely. Đừng quên is - tiếng Việt "bộ phim rất gợi suy ngẫm" không có động từ "là".
+    display_answer: This documentary is very thought-provoking.
+
+  - key: en:exercise:arts-review-translate-sequel-overrated
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sequel
+    prompt:
+      source_text: Tôi nghĩ phần tiếp theo hơi bị đánh giá quá cao.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I think the sequel is a bit overrated.
+        - I think the sequel's a bit overrated.
+        - I think the sequel is slightly overrated.
+        - I think the sequel is a little overrated.
+        - I think the sequel is somewhat overrated.
+        - I find the sequel a bit overrated.
+        - I thought the sequel was a bit overrated.
+        - In my opinion, the sequel is a bit overrated.
+        - I think the sequel is a little bit overrated.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I think the sequel is a bit underrated.
+        feedback_vi: Underrated là "bị đánh giá thấp", ngược nghĩa với "đánh giá quá cao".
+        error_tag: word_choice
+      - answer: I think the prequel is a bit overrated.
+        feedback_vi: Prequel là phần tiền truyện; phần tiếp theo là sequel.
+        error_tag: word_choice
+    explanation:
+      vi: Sequel là phần tiếp theo; overrated là được đánh giá quá cao. A bit / slightly làm nhẹ lời chê. Sequel's = sequel is - phải viết riêng vì 's không được tự mở rộng.
+    display_answer: I think the sequel is a bit overrated.
+
+  # ---------------- application ----------------
+  - key: en:exercise:arts-review-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:gradable-extreme-adjectives
+    prompt:
+      stem: "Bạn viết review đăng lên blog về một bộ phim gia đình rất cảm động. Câu nào đúng và tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: k6d, text: "The cast is excellent, and the final scene is absolutely heartbreaking.", lang: en }
+        - { id: v1g, text: "The cast is very excellent, and the final scene is absolutely heartbreaking.", lang: en }
+        - { id: o3b, text: "The cast is excellent, and the final scene is very heartbreaking.", lang: en }
+        - { id: e9x, text: "The cast is absolutely good, and the final scene is totally sad.", lang: en }
+    answer:
+      correct_option_id: k6d
+    explanation:
+      vi: Excellent và heartbreaking là tính từ cực - không đi với very; heartbreaking hợp với absolutely. Absolutely good và totally sad sai vì good, sad là tính từ thường.
+    display_answer: "The cast is excellent, and the final scene is absolutely heartbreaking."
+
+  - key: en:exercise:arts-review-order-hilarious
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:absolutely-extreme
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Vở hài kịch buồn cười hết sức từ đầu đến cuối.\""
+      tokens:
+        - { id: a-hil, text: hilarious }
+        - { id: a-very, text: very }
+        - { id: a-fs, text: from start to finish }
+        - { id: a-abs, text: absolutely }
+        - { id: a-comedy, text: The comedy was }
+    answer:
+      orders:
+        - [a-comedy, a-abs, a-hil, a-fs]
+    explanation:
+      vi: Hilarious là tính từ cực ("buồn cười hết sức") nên đi với absolutely, không đi với very. Cụm thời gian from start to finish đứng cuối câu.
+    display_answer: The comedy was absolutely hilarious from start to finish.
+
+  - key: en:exercise:arts-review-translate-twist
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:plot
+    prompt:
+      source_text: The plot is a bit slow at first, but the cast is really fantastic and the final twist is absolutely brilliant.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lúc đầu cốt truyện hơi chậm, nhưng dàn diễn viên thực sự tuyệt vời và cú lật cuối cùng thì xuất sắc tuyệt đối.
+        - Cốt truyện ban đầu hơi chậm, nhưng dàn diễn viên rất tuyệt và cú twist cuối thì cực kỳ xuất sắc.
+        - Lúc đầu cốt truyện hơi chậm, nhưng dàn diễn viên thật sự tuyệt vời và cú lật kết phim thì vô cùng xuất sắc.
+        - Ban đầu cốt truyện hơi chậm, nhưng dàn diễn viên thật tuyệt và cú lật cuối thì quá xuất sắc.
+        - Cốt truyện lúc đầu hơi chậm, nhưng dàn diễn viên cực kỳ tuyệt vời và cú lật cuối cùng thì hết sức xuất sắc.
+        - Lúc đầu cốt truyện hơi chậm nhưng dàn diễn viên thực sự tuyệt vời, còn cú lật cuối thì xuất sắc vô cùng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: A bit slow là chê nhẹ ("hơi chậm"); really fantastic và absolutely brilliant là khen rất mạnh. Twist là cú lật bất ngờ của cốt truyện.
+    display_answer: Lúc đầu cốt truyện hơi chậm, nhưng dàn diễn viên thực sự tuyệt vời và cú lật cuối cùng thì xuất sắc tuyệt đối.
+
+  - key: en:exercise:arts-review-mcq-really
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:really-both-adjectives
+    prompt:
+      stem: "Bạn không chắc fascinating là tính từ thường hay tính từ cực, nhưng muốn khen một cuốn sách phi hư cấu. Câu nào chắc chắn đúng?"
+      stem_lang: vi
+      options:
+        - { id: s7j, text: "It's a really fascinating book about the history of rice.", lang: en }
+        - { id: g5h, text: "It's a very fascinating book about the history of rice.", lang: en }
+        - { id: l2p, text: "It's a slightly fascinating book about the history of rice.", lang: en }
+        - { id: d8r, text: "It's an absolutely interesting book about the history of rice.", lang: en }
+    answer:
+      correct_option_id: s7j
+    explanation:
+      vi: Really đi được với cả tính từ thường lẫn tính từ cực, nên luôn an toàn. Fascinating là tính từ cực nên very, slightly sai; absolutely interesting sai vì interesting là tính từ thường.
+    display_answer: "It's a really fascinating book about the history of rice."

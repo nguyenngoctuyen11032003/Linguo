@@ -1,0 +1,359 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:arts-ever-no-matter
+order_index: 4
+level: b2
+title:
+  vi: Whatever, however, no matter… - nói "bất kể" khi bàn về nghệ thuật
+objectives:
+  - vi: Dùng whatever, whoever, whichever, wherever, whenever cho nghĩa "bất cứ… nào".
+  - vi: Dùng however + tính từ và no matter how / what … cho nghĩa "dù… đến đâu".
+  - vi: Tránh lỗi thêm but hoặc that sau các từ -ever.
+  - vi: Bàn về mỹ thuật - exhibition, masterpiece, street art.
+estimated_minutes: 25
+skills: [grammar, speaking, writing]
+prerequisites: [en:lesson:arts-future-in-past]
+items:
+  - item: en:item:whatever-whoever
+  - item: en:item:wherever-whenever
+  - item: en:item:however-adjective
+  - item: en:item:no-matter-how-what
+  - item: en:item:exhibition
+  - item: en:item:masterpiece
+  - item: en:item:street-art
+  - item: en:item:gradable-extreme-adjectives
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn diễn đạt được ý "bất kể" và "dù thế nào đi nữa" khi nói về triển lãm, tranh đường phố và sở thích nghệ thuật.
+  - type: explain
+    text:
+      vi: "Thêm -ever vào từ để hỏi để có nghĩa \"bất cứ\": whatever (bất cứ gì), whoever (bất cứ ai), whichever (bất cứ cái nào - trong số có hạn), wherever (bất cứ đâu), whenever (bất cứ khi nào). Whatever đã gồm nghĩa \"cái mà\", nên không thêm that phía sau."
+  - type: explain
+    text:
+      vi: "However + tính từ/trạng từ + chủ ngữ + động từ là \"dù… đến đâu\": However expensive it is, I'll go. No matter how / what / who … có cùng nghĩa và thân mật hơn: No matter what they say…"
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"dù… nhưng vẫn…\", nên người Việt hay thêm but: No matter how hard it is, but I… - sai. Mệnh đề -ever / no matter đã là vế nhượng bộ, vế sau đi thẳng vào ý chính."
+  - type: deep_explain
+    text:
+      vi: Khi nói về tương lai, mệnh đề -ever dùng hiện tại đơn như mệnh đề thời gian (Whoever wins, we'll celebrate), không dùng will. Whatever còn đứng sau danh từ phủ định để nhấn mạnh (no interest whatever), và trong văn nói Whatever! một mình là câu đáp hờ hững, hơi bất lịch sự. Phân biệt however = "dù… đến đâu" (theo sau là tính từ) với However, = "tuy nhiên" (theo sau là dấu phẩy).
+  - type: example
+    target: Whoever painted this mural clearly understands the history of the neighbourhood.
+    target_lang: en
+    translation:
+      vi: Dù là ai đã vẽ bức tranh tường này thì người đó rõ ràng hiểu lịch sử khu phố.
+    note:
+      vi: Whoever làm chủ ngữ cho painted; cả mệnh đề Whoever painted this mural là chủ ngữ của understands.
+  - type: example
+    target: However busy the gallery gets, the guards never rush visitors past the paintings.
+    target_lang: en
+    translation:
+      vi: Dù phòng tranh đông đến đâu, nhân viên bảo vệ cũng không bao giờ hối khách đi qua các bức tranh.
+    note:
+      vi: However + tính từ (busy) + chủ ngữ + động từ.
+  - type: example
+    target: No matter what you think of graffiti, this exhibition will change the way you see the city.
+    target_lang: en
+    translation:
+      vi: Bất kể bạn nghĩ gì về vẽ graffiti, triển lãm này sẽ thay đổi cách bạn nhìn thành phố.
+    note:
+      vi: No matter what = whatever; vế sau không có but.
+  - type: common_mistake
+    wrong: No matter how tired I am, but I always finish the book.
+    right: No matter how tired I am, I always finish the book.
+    target_lang: en
+    note:
+      vi: Không thêm but sau vế no matter / however.
+  - type: common_mistake
+    wrong: You can choose whatever that you like.
+    right: You can choose whatever you like.
+    target_lang: en
+    note:
+      vi: Whatever đã bao hàm "cái mà" - không thêm that.
+  - type: common_mistake
+    wrong: However it is expensive, the exhibition is worth it.
+    right: However expensive it is, the exhibition is worth it.
+    target_lang: en
+    note:
+      vi: Tính từ đi liền ngay sau however, rồi mới tới chủ ngữ và động từ.
+  - type: summary
+    points:
+      - vi: Whatever / whoever / whichever / wherever / whenever - bất cứ gì / ai / cái nào / đâu / khi nào.
+      - vi: However + tính từ + chủ ngữ + động từ = no matter how … - dù… đến đâu.
+      - vi: No matter what / who / where … - bất kể.
+      - vi: Không thêm but ở vế sau; không thêm that sau whatever; tương lai dùng hiện tại đơn.
+      - vi: Từ vựng - exhibition (h câm), masterpiece, street art / graffiti.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:arts-ever-mcq-whoever
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:whatever-whoever
+    prompt:
+      stem: "Chọn đáp án đúng: ___ wins the award tonight, the festival has already been a huge success."
+      stem_lang: vi
+      options:
+        - { id: c3w, text: Whoever, lang: en }
+        - { id: y6h, text: Whatever, lang: en }
+        - { id: f8m, text: However, lang: en }
+        - { id: o1r, text: Wherever, lang: en }
+    answer:
+      correct_option_id: c3w
+    explanation:
+      vi: Người thắng giải là một người, nên dùng whoever (bất kể ai). Whatever dùng cho vật, việc; wherever cho nơi chốn.
+    display_answer: Whoever
+
+  - key: en:exercise:arts-ever-mcq-however-hard
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:however-adjective
+    prompt:
+      stem: "Chọn đáp án đúng: ___ hard I try, I just can't get into contemporary opera."
+      stem_lang: vi
+      options:
+        - { id: k5u, text: However, lang: en }
+        - { id: e2b, text: Whatever, lang: en }
+        - { id: s9x, text: No matter, lang: en }
+        - { id: g4j, text: Whenever, lang: en }
+    answer:
+      correct_option_id: k5u
+    explanation:
+      vi: Trước trạng từ/tính từ (hard) dùng however = dù… đến đâu. No matter phải đi kèm how (No matter how hard), không đứng một mình.
+    display_answer: However
+
+  - key: en:exercise:arts-ever-listen-no-matter
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:no-matter-how-what
+    prompt:
+      audio_asset_id: null
+      fallback_text: No matter what the critics say, the exhibition has been packed every weekend.
+      options:
+        - { id: t7a, text: "Bất kể giới phê bình nói gì, cuộc triển lãm vẫn chật kín người mỗi cuối tuần.", lang: vi }
+        - { id: m1d, text: "Giới phê bình không nói gì về cuộc triển lãm, nên cuối tuần nào cũng vắng.", lang: vi }
+        - { id: z5n, text: "Vì giới phê bình khen ngợi nên cuộc triển lãm đông kín mỗi cuối tuần.", lang: vi }
+        - { id: h8e, text: "Cuộc triển lãm chỉ đông vào cuối tuần, dù giới phê bình nói gì đi nữa.", lang: vi }
+    answer:
+      correct_option_id: t7a
+    explanation:
+      vi: No matter what the critics say là "bất kể giới phê bình nói gì" - ý kiến của họ không ảnh hưởng. Packed every weekend là "chật kín mỗi cuối tuần", không có nghĩa "chỉ cuối tuần mới đông".
+    display_answer: "Bất kể giới phê bình nói gì, cuộc triển lãm vẫn chật kín người mỗi cuối tuần."
+
+  - key: en:exercise:arts-ever-fill-wherever-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:wherever-whenever
+    prompt:
+      template: "There are no reserved seats tonight, so you can sit {{b1}} you like."
+      blanks:
+        - { id: b1, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa của câu: Tối nay không có ghế đặt trước, nên bạn có thể ngồi bất cứ chỗ nào bạn thích."
+        - "Gợi ý: where + -ever."
+    answer:
+      blanks:
+        b1: [wherever, "anywhere"]
+    known_wrong:
+      - answer: whenever
+        feedback_vi: Whenever là "bất cứ khi nào"; câu nói về chỗ ngồi nên cần wherever.
+        error_tag: ever_word
+      - answer: whatever
+        feedback_vi: Whatever là "bất cứ thứ gì"; nói về nơi chốn dùng wherever.
+        error_tag: ever_word
+    explanation:
+      vi: Chỗ ngồi là nơi chốn, nên dùng wherever (bất cứ đâu). Anywhere you like cũng đúng nghĩa.
+    display_answer: There are no reserved seats tonight, so you can sit wherever you like.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:arts-ever-fill-however-expensive
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:however-adjective
+    prompt:
+      template: "{{b1}} expensive the tickets are, the show sells out every single night."
+      blanks:
+        - { id: b1, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [However, "No matter how"]
+    known_wrong:
+      - answer: Whatever
+        feedback_vi: Trước tính từ (expensive) dùng however hoặc no matter how, không dùng whatever.
+        error_tag: ever_word
+      - answer: Although
+        feedback_vi: Although không đi liền với tính từ như vậy; câu cần cấu trúc However + tính từ + chủ ngữ + động từ.
+        error_tag: concession_structure
+    explanation:
+      vi: "\"Dù vé đắt đến đâu\" - However / No matter how + tính từ + chủ ngữ + động từ."
+    display_answer: However expensive the tickets are, the show sells out every single night.
+
+  - key: en:exercise:arts-ever-translate-whenever
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:wherever-whenever
+    prompt:
+      source_text: Bạn muốn ghé phòng tranh lúc nào cũng được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You can visit the gallery whenever you want.
+        - You can visit the gallery whenever you like.
+        - You can come to the gallery whenever you want.
+        - You can come to the gallery whenever you like.
+        - You can drop by the gallery whenever you want.
+        - You can drop by the gallery whenever you like.
+        - You can visit the gallery any time you want.
+        - You can visit the gallery any time you like.
+        - Visit the gallery whenever you like.
+        - You can stop by the gallery whenever you like.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You can visit the gallery whatever you want.
+        feedback_vi: Nói về thời gian dùng whenever, không phải whatever.
+        error_tag: ever_word
+      - answer: You can visit the gallery wherever you want.
+        feedback_vi: Wherever là "bất cứ đâu"; ở đây ý là "lúc nào" - whenever.
+        error_tag: ever_word
+    explanation:
+      vi: "\"Lúc nào cũng được\" - whenever you want / like. Any time you like cũng đúng nghĩa."
+    display_answer: You can visit the gallery whenever you like.
+
+  - key: en:exercise:arts-ever-translate-mural
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:whatever-whoever
+    prompt:
+      source_text: Dù là ai vẽ bức tranh tường này thì người đó cũng rất tài năng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Whoever painted this mural is very talented.
+        - Whoever painted this mural is really talented.
+        - Whoever painted this mural is extremely talented.
+        - Whoever painted this mural is incredibly talented.
+        - Whoever painted this mural is so talented.
+        - Whoever painted this mural must be very talented.
+        - Whoever did this mural is very talented.
+        - Whoever painted this wall painting is very talented.
+        - Whoever painted this mural is highly talented.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Who painted this mural is very talented.
+        feedback_vi: Cần whoever (bất kể ai) để cả mệnh đề làm chủ ngữ; who đứng đầu sẽ thành câu hỏi.
+        error_tag: ever_word
+      - answer: Whoever painted this mural are very talented.
+        feedback_vi: Mệnh đề Whoever… là chủ ngữ số ít - dùng is.
+        error_tag: subject_verb_agreement
+    explanation:
+      vi: Whoever painted this mural (bất kể ai đã vẽ) là chủ ngữ của cả câu, động từ chia số ít - is.
+    display_answer: Whoever painted this mural is very talented.
+
+  # ---------------- application ----------------
+  - key: en:exercise:arts-ever-mcq-show-goes-on
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:no-matter-how-what
+    prompt:
+      stem: "Đạo diễn nhắn cả đoàn trước đêm diễn: \"Dù có chuyện gì xảy ra, buổi diễn vẫn phải tiếp tục.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r3l, text: "No matter what happens, the show must go on.", lang: en }
+        - { id: u6s, text: "No matter what happens, but the show must go on.", lang: en }
+        - { id: d9k, text: "No matter what will happen, the show must go on.", lang: en }
+        - { id: w1c, text: "No matter happens, the show must go on.", lang: en }
+    answer:
+      correct_option_id: r3l
+    explanation:
+      vi: No matter what + hiện tại đơn (happens) cho tương lai, và vế sau không có but. No matter phải đi với what / how / who.
+    display_answer: "No matter what happens, the show must go on."
+
+  - key: en:exercise:arts-ever-order-whatever
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:whatever-whoever
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Dù bạn làm gì thì cũng đừng kể cho tôi đoạn kết nhé.\""
+      tokens:
+        - { id: w-dont, text: "don't tell me" }
+        - { id: w-what, text: Whatever }
+        - { id: w-ending, text: the ending }
+        - { id: w-how, text: However }
+        - { id: w-you, text: you do }
+    answer:
+      orders:
+        - [w-what, w-you, w-dont, w-ending]
+        - [w-dont, w-ending, w-what, w-you]
+    explanation:
+      vi: Whatever you do là "dù bạn làm gì"; mệnh đề này có thể đứng đầu hoặc cuối câu. However cần tính từ đi sau nên không hợp ở đây.
+    display_answer: "Whatever you do, don't tell me the ending."
+
+  - key: en:exercise:arts-ever-translate-however-busy
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:exhibition
+    prompt:
+      source_text: However busy she is, she goes to at least one exhibition a month.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù bận đến đâu, cô ấy vẫn đi xem ít nhất một cuộc triển lãm mỗi tháng.
+        - Dù bận thế nào, cô ấy cũng đi ít nhất một triển lãm mỗi tháng.
+        - Bận đến mấy, cô ấy vẫn đi xem ít nhất một cuộc triển lãm mỗi tháng.
+        - Cho dù bận đến đâu, mỗi tháng cô ấy vẫn đi xem ít nhất một cuộc triển lãm.
+        - Dù bận rộn đến mức nào, cô ấy vẫn đi xem ít nhất một triển lãm mỗi tháng.
+        - Dù có bận đến đâu, cô ấy vẫn đi ít nhất một cuộc triển lãm mỗi tháng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: However busy she is là "dù cô ấy bận đến đâu"; vế sau trong tiếng Việt thường thêm "vẫn / cũng", nhưng tiếng Anh không có but.
+    display_answer: Dù bận đến đâu, cô ấy vẫn đi xem ít nhất một cuộc triển lãm mỗi tháng.
+
+  - key: en:exercise:arts-ever-mcq-masterpiece
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:masterpiece
+    prompt:
+      stem: "Chọn từ đúng cho bài báo: Many locals now consider the mural a ___ rather than just another piece of street art."
+      stem_lang: vi
+      options:
+        - { id: n4f, text: masterpiece, lang: en }
+        - { id: i7q, text: mastery, lang: en }
+        - { id: p2y, text: masterful, lang: en }
+        - { id: x5g, text: master, lang: en }
+    answer:
+      correct_option_id: n4f
+    explanation:
+      vi: Sau a cần một danh từ chỉ tác phẩm - masterpiece (kiệt tác). Mastery là sự tinh thông, masterful là tính từ, master là bậc thầy (người).
+    display_answer: masterpiece

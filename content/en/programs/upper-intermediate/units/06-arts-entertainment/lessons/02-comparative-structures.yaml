@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:arts-comparative-structures
+order_index: 2
+level: b2
+title:
+  vi: Càng… càng…, hơn hẳn, kém xa - so sánh nâng cao
+objectives:
+  - vi: Dùng cấu trúc so sánh kép The more…, the more… cho hai thay đổi đi cùng nhau.
+  - vi: Nhấn mạnh mức chênh lệch bằng much / far / a lot / slightly + so sánh hơn và by far the + so sánh nhất.
+  - vi: So sánh kém và bằng với nowhere near as, not nearly as, just as, twice as … as.
+  - vi: Bàn về ngành giải trí - box office, blockbuster, critically acclaimed.
+estimated_minutes: 25
+skills: [grammar, speaking, writing]
+prerequisites: [en:lesson:arts-reviews-adjectives]
+items:
+  - item: en:item:the-more-the-more
+  - item: en:item:much-far-comparative
+  - item: en:item:by-far-superlative
+  - item: en:item:nowhere-near-as
+  - item: en:item:just-as-as
+  - item: en:item:box-office
+  - item: en:item:critically-acclaimed
+  - item: en:item:blockbuster
+  - item: en:item:comparative-more
+    role: reuse
+  - item: en:item:superlative
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn so sánh được phim, sách, buổi diễn một cách tinh tế - không chỉ "hay hơn" mà còn "hay hơn hẳn", "kém xa", "càng xem càng thích".
+  - type: explain
+    text:
+      vi: "The + so sánh hơn …, the + so sánh hơn … là \"càng… càng…\": The more I read, the more I understand. Cả hai vế đều có the và mỗi vế có chủ ngữ + động từ riêng. Tiếng Việt chỉ cần \"càng\" nên người Việt hay bỏ mất the."
+  - type: explain
+    text:
+      vi: "Để nói chênh lệch nhiều, đặt much / far / a lot trước so sánh hơn (far better, much more moving); chênh ít dùng slightly / a bit. Không bao giờ dùng very trước so sánh hơn. Với so sánh nhất, by far the best = hay nhất, bỏ xa phần còn lại."
+  - type: explain
+    text:
+      vi: "So sánh bằng và kém: just as good as (hay y như), nowhere near / not nearly as good as (kém xa), twice as expensive as (đắt gấp đôi). Giữa as … as là tính từ nguyên dạng, không phải dạng so sánh hơn."
+  - type: deep_explain
+    text:
+      vi: Vế sau của The more… có thể rút gọn trong văn nói - The sooner, the better (càng sớm càng tốt). Với danh từ, dùng the more + danh từ (The more money a film makes, the more sequels it gets). Even (even better) nhấn mạnh rằng thứ đã tốt lại còn tốt hơn; còn far better chỉ nói khoảng cách lớn. Trong văn trang trọng, considerably / significantly + so sánh hơn thay cho a lot.
+  - type: example
+    target: The more people talk about a show online, the more tickets it seems to sell.
+    target_lang: en
+    translation:
+      vi: Một chương trình càng được bàn tán nhiều trên mạng thì dường như càng bán được nhiều vé.
+    note:
+      vi: Cả hai vế đều bắt đầu bằng the + so sánh hơn.
+  - type: example
+    target: Her critically acclaimed indie film made far less at the box office than the summer blockbusters.
+    target_lang: en
+    translation:
+      vi: Bộ phim độc lập được giới phê bình ca ngợi của cô thu về ở phòng vé ít hơn hẳn các phim bom tấn mùa hè.
+    note:
+      vi: Far less - chênh lệch lớn theo chiều "ít hơn".
+  - type: example
+    target: This year's festival line-up is nowhere near as exciting as last year's.
+    target_lang: en
+    translation:
+      vi: Dàn nghệ sĩ lễ hội năm nay kém hấp dẫn xa so với năm ngoái.
+    note:
+      vi: Nowhere near as + tính từ nguyên dạng + as.
+  - type: example
+    target: It's by far the most popular musical in the city, and seats cost twice as much as at other theatres.
+    target_lang: en
+    translation:
+      vi: Đây là vở nhạc kịch được yêu thích nhất thành phố, bỏ xa các vở khác, và giá ghế đắt gấp đôi các nhà hát khác.
+    note:
+      vi: By far + the + so sánh nhất; twice as much as với danh từ không đếm được (tiền).
+  - type: common_mistake
+    wrong: The book is very better than the film.
+    right: The book is much better than the film.
+    target_lang: en
+    note:
+      vi: Very không đi với so sánh hơn. Dùng much, far hoặc a lot.
+  - type: common_mistake
+    wrong: More you practise, more confident you become.
+    right: The more you practise, the more confident you become.
+    target_lang: en
+    note:
+      vi: Cấu trúc "càng… càng…" bắt buộc có the ở cả hai vế.
+  - type: common_mistake
+    wrong: The remake is not nearly as funnier as the original.
+    right: The remake is not nearly as funny as the original.
+    target_lang: en
+    note:
+      vi: Giữa as … as là tính từ nguyên dạng (funny), không dùng dạng so sánh hơn.
+  - type: summary
+    points:
+      - vi: The + so sánh hơn …, the + so sánh hơn … - càng… càng…; có the ở cả hai vế.
+      - vi: Much / far / a lot / slightly / a bit + so sánh hơn; không dùng very.
+      - vi: By far the + so sánh nhất - nhất, bỏ xa.
+      - vi: Just as / nearly as / twice as … as; nowhere near / not nearly as … as - kém xa.
+      - vi: Từ vựng - box office, blockbuster, critically acclaimed.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:arts-comp-mcq-the-more
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:the-more-the-more
+    prompt:
+      stem: "Chọn đáp án đúng: The more you listen to her second album, ___ you appreciate the lyrics."
+      stem_lang: vi
+      options:
+        - { id: n7c, text: the more, lang: en }
+        - { id: a2y, text: more, lang: en }
+        - { id: u5r, text: the most, lang: en }
+        - { id: i9f, text: much more, lang: en }
+    answer:
+      correct_option_id: n7c
+    explanation:
+      vi: Cấu trúc "càng… càng…" cần the + so sánh hơn ở cả hai vế - The more …, the more … Thiếu the hoặc dùng the most đều sai.
+    display_answer: the more
+
+  - key: en:exercise:arts-comp-mcq-far-better
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:much-far-comparative
+    prompt:
+      stem: "Chọn đáp án đúng: Honestly, the stage version was ___ better than the film adaptation."
+      stem_lang: vi
+      options:
+        - { id: z6t, text: far, lang: en }
+        - { id: q3m, text: very, lang: en }
+        - { id: e8w, text: the, lang: en }
+        - { id: l1d, text: most, lang: en }
+    answer:
+      correct_option_id: z6t
+    explanation:
+      vi: Far (cũng như much, a lot) đứng trước so sánh hơn để nhấn mạnh chênh lệch lớn. Very không bao giờ đi với better.
+    display_answer: far
+
+  - key: en:exercise:arts-comp-listen-by-far
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:by-far-superlative
+    prompt:
+      audio_asset_id: null
+      fallback_text: Streaming is now by far the most common way for young Vietnamese people to watch films.
+      options:
+        - { id: o8b, text: "Giờ đây xem trực tuyến là cách xem phim phổ biến nhất của giới trẻ Việt Nam, bỏ xa các cách khác.", lang: vi }
+        - { id: w4k, text: "Giờ đây xem trực tuyến phổ biến hơn một chút so với đi rạp đối với giới trẻ Việt Nam.", lang: vi }
+        - { id: c1s, text: "Giới trẻ Việt Nam ngày càng ít xem phim trực tuyến.", lang: vi }
+        - { id: j7a, text: "Xem trực tuyến là một trong những cách xem phim của giới trẻ Việt Nam, nhưng còn xa mới phổ biến.", lang: vi }
+    answer:
+      correct_option_id: o8b
+    explanation:
+      vi: By far the most common là "phổ biến nhất, bỏ xa phần còn lại". Far ở đây không có nghĩa "còn xa".
+    display_answer: "Giờ đây xem trực tuyến là cách xem phim phổ biến nhất của giới trẻ Việt Nam, bỏ xa các cách khác."
+
+  - key: en:exercise:arts-comp-fill-nowhere-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:nowhere-near-as
+    prompt:
+      template: "The American remake is {{b1}} near as funny as the original Korean series."
+      blanks:
+        - { id: b1, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Bản làm lại của Mỹ kém hài hước xa so với loạt phim gốc Hàn Quốc."
+        - "Gợi ý: một từ bắt đầu bằng now-, nghĩa là \"không ở đâu cả\"."
+    answer:
+      blanks:
+        b1: [nowhere]
+    known_wrong:
+      - answer: not
+        feedback_vi: Cụm cố định là nowhere near as… (hoặc not nearly as…), không phải not near as.
+        error_tag: comparison_phrase
+      - answer: anywhere
+        feedback_vi: Anywhere near chỉ dùng trong câu phủ định có not (isn't anywhere near as funny).
+        error_tag: comparison_phrase
+    explanation:
+      vi: Nowhere near as + tính từ nguyên dạng + as nghĩa là "kém xa". Nó mạnh hơn not as funny as.
+    display_answer: The American remake is nowhere near as funny as the original Korean series.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:arts-comp-fill-twice-as
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:just-as-as
+    prompt:
+      template: "Festival passes are now {{b1}} as expensive {{b2}} they were five years ago."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [twice]
+        b2: [as]
+    known_wrong:
+      - answer: than
+        feedback_vi: Cấu trúc as … as đi liền cặp - twice as expensive as, không dùng than.
+        error_tag: as_than
+      - answer: double
+        feedback_vi: Trước as … as dùng twice (gấp đôi); double thường đứng trước danh từ (double the price).
+        error_tag: comparison_phrase
+    explanation:
+      vi: "\"Gấp đôi\" là twice as + tính từ + as. Gấp ba là three times as … as."
+    display_answer: Festival passes are now twice as expensive as they were five years ago.
+
+  - key: en:exercise:arts-comp-translate-blockbusters
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:the-more-the-more
+    prompt:
+      source_text: Càng xem nhiều phim bom tấn, tôi càng thấy chúng giống nhau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The more blockbusters I watch, the more similar they seem.
+        - The more blockbusters I watch, the more alike they seem.
+        - The more blockbusters I watch, the more similar they look.
+        - The more blockbusters I see, the more similar they seem.
+        - The more blockbusters I watch, the more similar I find them.
+        - The more blockbusters I watch, the more they seem the same.
+        - The more blockbusters I watch, the more they look the same.
+        - The more blockbusters I watch, the more similar they seem to me.
+        - The more blockbusters I see, the more alike they seem.
+        - The more blockbusters I watch, the more I feel they are the same.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: More blockbusters I watch, more similar they seem.
+        feedback_vi: Cấu trúc "càng… càng…" cần the ở cả hai vế.
+        error_tag: double_comparative
+      - answer: The more blockbusters I watch, they seem more similar.
+        feedback_vi: Vế sau cũng phải mở đầu bằng the + so sánh hơn - the more similar they seem.
+        error_tag: double_comparative
+    explanation:
+      vi: The more + danh từ + chủ ngữ + động từ, the more + tính từ + chủ ngữ + động từ. Similar là tính từ dài nên dùng more similar.
+    display_answer: The more blockbusters I watch, the more similar they seem.
+
+  - key: en:exercise:arts-comp-translate-book-film
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:much-far-comparative
+    prompt:
+      source_text: Bản sách hay hơn bản phim nhiều.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The book is much better than the film.
+        - The book is far better than the film.
+        - The book is a lot better than the film.
+        - The book is much better than the movie.
+        - The book is far better than the movie.
+        - The book is a lot better than the movie.
+        - The book version is much better than the film version.
+        - The novel is much better than the film.
+        - The book is way better than the film.
+        - The book is much better than the film adaptation.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The book is very better than the film.
+        feedback_vi: Very không đi với so sánh hơn - dùng much, far hoặc a lot.
+        error_tag: very_comparative
+      - answer: The book is much more better than the film.
+        feedback_vi: Better đã là so sánh hơn, không thêm more.
+        error_tag: double_comparative
+    explanation:
+      vi: "\"Hơn… nhiều\" là much / far / a lot + so sánh hơn. Better đã là dạng so sánh của good."
+    display_answer: The book is much better than the film.
+
+  # ---------------- application ----------------
+  - key: en:exercise:arts-comp-mcq-not-nearly
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:nowhere-near-as
+    prompt:
+      stem: "Bạn bè khen phần mới của loạt phim hay ngang phần đầu. Bạn hoàn toàn không đồng ý và muốn nói nó kém xa. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f3u, text: "Really? I thought it wasn't nearly as good as the first season.", lang: en }
+        - { id: h6e, text: "Really? I thought it wasn't nearly as better as the first season.", lang: en }
+        - { id: r2i, text: "Really? I thought it was nowhere near so good than the first season.", lang: en }
+        - { id: y9o, text: "Really? I thought it was nearly as good as the first season.", lang: en }
+    answer:
+      correct_option_id: f3u
+    explanation:
+      vi: Not nearly as + tính từ nguyên dạng + as là "kém xa". Nearly as good as (không có not) lại nghĩa là "gần bằng" - ngược ý bạn.
+    display_answer: "Really? I thought it wasn't nearly as good as the first season."
+
+  - key: en:exercise:arts-comp-order-by-far
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:by-far-superlative
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Đó là buổi hoà nhạc hay nhất năm, bỏ xa các buổi khác.\""
+      tokens:
+        - { id: f-concert, text: concert }
+        - { id: f-year, text: of the year }
+        - { id: f-very, text: very }
+        - { id: f-it, text: It was }
+        - { id: f-best, text: the best }
+        - { id: f-byfar, text: by far }
+    answer:
+      orders:
+        - [f-it, f-byfar, f-best, f-concert, f-year]
+        - [f-it, f-best, f-concert, f-year, f-byfar]
+    explanation:
+      vi: By far đứng trước the + so sánh nhất (by far the best) hoặc cuối câu (the best concert of the year by far). Very không đi với so sánh nhất.
+    display_answer: It was by far the best concert of the year.
+
+  - key: en:exercise:arts-comp-translate-box-office
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:box-office
+    prompt:
+      source_text: The film earned twice as much at the box office as the studio had expected.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ phim thu về ở phòng vé gấp đôi so với kỳ vọng của hãng phim.
+        - Doanh thu phòng vé của bộ phim gấp đôi mức hãng phim dự kiến.
+        - Bộ phim kiếm được ở phòng vé gấp đôi so với hãng phim dự kiến.
+        - Bộ phim thu được ở phòng vé gấp hai lần so với kỳ vọng của hãng phim.
+        - Doanh thu phòng vé của bộ phim cao gấp đôi so với dự kiến của hãng phim.
+        - Bộ phim có doanh thu phòng vé gấp đôi những gì hãng phim đã kỳ vọng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Twice as much as là "gấp đôi"; at the box office là "ở phòng vé, doanh thu phòng vé"; had expected là kỳ vọng có trước khi phim ra mắt.
+    display_answer: Bộ phim thu về ở phòng vé gấp đôi so với kỳ vọng của hãng phim.
+
+  - key: en:exercise:arts-comp-mcq-acclaimed
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:critically-acclaimed
+    prompt:
+      stem: "Chọn từ đúng cho bài báo văn hoá: Her latest novel was ___ acclaimed, but it sold far fewer copies than her earlier thrillers."
+      stem_lang: vi
+      options:
+        - { id: t4n, text: critically, lang: en }
+        - { id: b7l, text: critical, lang: en }
+        - { id: m5x, text: criticism, lang: en }
+        - { id: g8q, text: critic, lang: en }
+    answer:
+      correct_option_id: t4n
+    explanation:
+      vi: Trước tính từ acclaimed cần trạng từ - critically acclaimed (được giới phê bình ca ngợi). Critical là tính từ, criticism và critic là danh từ.
+    display_answer: critically

@@ -1,0 +1,359 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:arts-future-in-past
+order_index: 3
+level: b2
+title:
+  vi: Đã định…, vừa sắp… - tương lai trong quá khứ
+objectives:
+  - vi: Nói về kế hoạch đã thay đổi bằng was / were going to + V.
+  - vi: Kể việc sắp xảy ra thì bị cắt ngang bằng was / were about to + V.
+  - vi: Dùng would cho dự đoán, lời hứa nhìn từ quá khứ và was supposed to cho kế hoạch không thành.
+  - vi: Nói về biểu diễn - premiere, rehearsal, sell out, live performance.
+estimated_minutes: 25
+skills: [grammar, speaking, vocabulary]
+prerequisites: [en:lesson:arts-comparative-structures]
+items:
+  - item: en:item:was-going-to
+  - item: en:item:was-about-to
+  - item: en:item:would-future-in-past
+  - item: en:item:sell-out
+  - item: en:item:rehearsal
+  - item: en:item:premiere
+  - item: en:item:live-performance
+  - item: en:item:be-supposed-to
+    role: reuse
+  - item: en:item:past-perfect-continuous
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể lại được chuyện một buổi diễn không theo kế hoạch - định đi mà không đi được, sắp lên sân khấu thì có sự cố, lời hứa của ban tổ chức không thành.
+  - type: explain
+    text:
+      vi: "Was / were going to + V là \"đã định\": We were going to see the play, but… Thường theo sau là but vì kế hoạch đã không thành. Tiếng Việt chỉ nói \"định\" mà không đổi thì, nên người Việt hay giữ am going to cho chuyện đã qua."
+  - type: explain
+    text:
+      vi: "Was / were about to + V là \"sắp sửa ngay\" - thường bị cắt ngang bởi when + quá khứ đơn: The singer was about to start when the lights went out. Would + V là will lùi về quá khứ: She promised the album would come out in May."
+  - type: explain
+    text:
+      vi: "Was / were supposed to + V nhấn mạnh kế hoạch hay quy định đã có từ trước nhưng không được thực hiện: The show was supposed to start at eight."
+  - type: deep_explain
+    text:
+      vi: Bốn cách này đều là "tương lai nhìn từ quá khứ" và đều xuất hiện nhiều trong câu tường thuật (He said he would…) và trong văn kể chuyện (Little did she know that she would…). Was to + V (She was to become famous) là dạng trang trọng, văn chương, mang nghĩa "định mệnh sẽ". Khi nói nhanh, was going to thường đọc thành was gonna.
+  - type: example
+    target: We were going to queue for the premiere, but it started pouring with rain.
+    target_lang: en
+    translation:
+      vi: Chúng tôi đã định xếp hàng xem buổi công chiếu, nhưng trời bắt đầu mưa như trút.
+    note:
+      vi: Kế hoạch đã không thành - were going to … but …
+  - type: example
+    target: The pianist was about to walk on stage when her phone started ringing in her pocket.
+    target_lang: en
+    translation:
+      vi: Nữ nghệ sĩ dương cầm vừa sắp bước ra sân khấu thì điện thoại trong túi bắt đầu đổ chuông.
+    note:
+      vi: Was about to + when + quá khứ đơn cắt ngang.
+  - type: example
+    target: The organisers promised that every seat would have a clear view of the stage.
+    target_lang: en
+    translation:
+      vi: Ban tổ chức đã hứa rằng ghế nào cũng sẽ nhìn rõ sân khấu.
+    note:
+      vi: Promised (quá khứ) + would - lời hứa nhìn từ quá khứ.
+  - type: common_mistake
+    wrong: I'm going to buy tickets yesterday, but they sold out.
+    right: I was going to buy tickets yesterday, but they sold out.
+    target_lang: en
+    note:
+      vi: Kế hoạch ở quá khứ phải dùng was going to.
+  - type: common_mistake
+    wrong: She said the tour will start in March, but it was postponed.
+    right: She said the tour would start in March, but it was postponed.
+    target_lang: en
+    note:
+      vi: Lời nói trong quá khứ về một việc không còn đúng nữa - will lùi thành would.
+  - type: common_mistake
+    wrong: We were about leaving when the band came back.
+    right: We were about to leave when the band came back.
+    target_lang: en
+    note:
+      vi: Cấu trúc là be about to + V nguyên mẫu, không phải about + V-ing.
+  - type: summary
+    points:
+      - vi: Was / were going to + V - đã định (thường là không thành).
+      - vi: Was / were about to + V - sắp sửa ngay (when + quá khứ đơn cắt ngang).
+      - vi: Would + V - tương lai nhìn từ quá khứ, sau said / promised / knew.
+      - vi: Was supposed to + V - lẽ ra đã phải theo kế hoạch.
+      - vi: Từ vựng - premiere, rehearsal, sell out, live performance (live đọc /laɪv/).
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:arts-fip-mcq-were-going
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:was-going-to
+    prompt:
+      stem: "Chọn đáp án đúng: We ___ fly to Singapore for the concert, but our flight was cancelled."
+      stem_lang: vi
+      options:
+        - { id: v9s, text: were going to, lang: en }
+        - { id: d4h, text: are going to, lang: en }
+        - { id: k2b, text: will, lang: en }
+        - { id: p5w, text: would rather, lang: en }
+    answer:
+      correct_option_id: v9s
+    explanation:
+      vi: Kế hoạch trong quá khứ đã không thành (flight was cancelled) - dùng were going to. Are going to và will nói về tương lai từ bây giờ.
+    display_answer: were going to
+
+  - key: en:exercise:arts-fip-mcq-about-to
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:was-about-to
+    prompt:
+      stem: "Chọn đáp án đúng: The band ___ start the encore when the fire alarm went off."
+      stem_lang: vi
+      options:
+        - { id: x1e, text: was about to, lang: en }
+        - { id: c8j, text: is about to, lang: en }
+        - { id: n3r, text: was about, lang: en }
+        - { id: s6g, text: would about to, lang: en }
+    answer:
+      correct_option_id: x1e
+    explanation:
+      vi: Một việc sắp xảy ra thì bị cắt ngang (when … went off) - was about to + V. Thiếu to (was about start) hoặc dùng is đều sai.
+    display_answer: was about to
+
+  - key: en:exercise:arts-fip-listen-would
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:would-future-in-past
+    prompt:
+      audio_asset_id: null
+      fallback_text: The director promised that the sequel would be released before the Lunar New Year.
+      options:
+        - { id: o2m, text: "Đạo diễn đã hứa rằng phần tiếp theo sẽ ra mắt trước Tết Nguyên đán.", lang: vi }
+        - { id: e7v, text: "Đạo diễn hứa sẽ ra mắt phần tiếp theo nếu có kinh phí trước Tết.", lang: vi }
+        - { id: z4a, text: "Phần tiếp theo đã ra mắt trước Tết Nguyên đán như đạo diễn hứa.", lang: vi }
+        - { id: i1k, text: "Đạo diễn muốn phần tiếp theo ra mắt trước Tết Nguyên đán.", lang: vi }
+    answer:
+      correct_option_id: o2m
+    explanation:
+      vi: Promised + would be released là lời hứa trong quá khứ về một việc lúc đó còn ở tương lai. Câu không nói phim đã thực sự ra mắt chưa.
+    display_answer: "Đạo diễn đã hứa rằng phần tiếp theo sẽ ra mắt trước Tết Nguyên đán."
+
+  - key: en:exercise:arts-fip-fill-supposed-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:be-supposed-to
+    prompt:
+      template: "The concert {{b1}} supposed to start at eight, but the headliner didn't appear until almost ten."
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Buổi hoà nhạc lẽ ra phải bắt đầu lúc tám giờ, nhưng nghệ sĩ chính gần mười giờ mới xuất hiện."
+        - "Gợi ý: dạng quá khứ của be cho chủ ngữ số ít."
+    answer:
+      blanks:
+        b1: [was]
+    known_wrong:
+      - answer: is
+        feedback_vi: Chuyện đã xảy ra (didn't appear) nên dùng was supposed to - lẽ ra đã phải.
+        error_tag: tense_choice
+      - answer: were
+        feedback_vi: The concert là số ít - dùng was.
+        error_tag: be_form
+    explanation:
+      vi: Was supposed to + V là kế hoạch có sẵn nhưng không được thực hiện - buổi diễn đã không bắt đầu đúng giờ.
+    display_answer: The concert was supposed to start at eight, but the headliner didn't appear until almost ten.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:arts-fip-fill-would-career
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-future-in-past
+    prompt:
+      template: "Nobody in the café that night imagined that the shy young singer {{b1}} become a household name."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [would]
+    known_wrong:
+      - answer: will
+        feedback_vi: Câu nhìn từ quá khứ (imagined) nên will lùi thành would.
+        error_tag: future_in_past
+      - answer: was
+        feedback_vi: Was become sai cấu trúc; cần would + V nguyên mẫu.
+        error_tag: future_in_past
+    explanation:
+      vi: Imagined ở quá khứ, còn việc trở nên nổi tiếng lúc đó vẫn ở tương lai - dùng would + V.
+    display_answer: Nobody in the café that night imagined that the shy young singer would become a household name.
+
+  - key: en:exercise:arts-fip-translate-sold-out
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:sell-out
+    prompt:
+      source_text: Tôi đã định mua vé nhưng vé bán hết rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I was going to buy tickets, but they had sold out.
+        - I was going to buy tickets, but they'd sold out.
+        - I was going to buy tickets, but they had already sold out.
+        - I was going to buy tickets, but they'd already sold out.
+        - I was going to buy tickets, but they were sold out.
+        - I was going to buy tickets, but they were already sold out.
+        - I was going to buy tickets, but they sold out.
+        - I was going to buy the tickets, but they had sold out.
+        - I was going to buy the tickets, but they were sold out.
+        - I was going to buy tickets, but they had all sold out.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I am going to buy tickets, but they had sold out.
+        feedback_vi: Kế hoạch ở quá khứ dùng was going to.
+        error_tag: future_in_past
+      - answer: I was going to buy tickets, but they had sell out.
+        feedback_vi: Sau had cần V3 - sold out.
+        error_tag: past_participle
+    explanation:
+      vi: "\"Đã định\" mà không thành - was going to + V. \"Vé bán hết\" - they had sold out (đã bán hết trước đó) hoặc they were sold out (trạng thái)."
+    display_answer: I was going to buy tickets, but they had sold out.
+
+  - key: en:exercise:arts-fip-translate-about-to-leave
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:was-about-to
+    prompt:
+      source_text: Chúng tôi vừa định ra về thì ban nhạc quay lại sân khấu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We were about to leave when the band came back on stage.
+        - We were just about to leave when the band came back on stage.
+        - We were about to leave when the band came back onto the stage.
+        - We were about to leave when the band returned to the stage.
+        - We were about to go when the band came back on stage.
+        - We were about to leave when the band came back on.
+        - We were just about to leave when the band returned to the stage.
+        - We were about to go home when the band came back on stage.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We are about to leave when the band came back on stage.
+        feedback_vi: Câu kể chuyện quá khứ nên dùng were about to.
+        error_tag: future_in_past
+      - answer: We were about leaving when the band came back on stage.
+        feedback_vi: Be about to + V nguyên mẫu, không phải about + V-ing.
+        error_tag: about_to_form
+    explanation:
+      vi: "\"Vừa định… thì…\" - was/were about to + V, rồi when + quá khứ đơn cho sự việc cắt ngang."
+    display_answer: We were about to leave when the band came back on stage.
+
+  # ---------------- application ----------------
+  - key: en:exercise:arts-fip-mcq-would-become
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:would-future-in-past
+    prompt:
+      stem: "Bạn viết tiểu sử một nhóm nhạc: hồi 2015 họ chỉ chơi ở quán nhỏ, và không ai ngờ họ thành nhóm nổi tiếng nhất châu Á. Chọn đáp án: \"In 2015, nobody knew that the band ___ the biggest act in Asia.\""
+      stem_lang: vi
+      options:
+        - { id: u8f, text: would become, lang: en }
+        - { id: a3p, text: will become, lang: en }
+        - { id: h5c, text: becomes, lang: en }
+        - { id: l9t, text: is going to become, lang: en }
+    answer:
+      correct_option_id: u8f
+    explanation:
+      vi: Nhìn từ mốc 2015 (quá khứ), việc trở nên nổi tiếng còn ở tương lai - dùng would + V. Will, becomes, is going to nhìn từ hiện tại nên không khớp với knew.
+    display_answer: would become
+
+  - key: en:exercise:arts-fip-order-play
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-supposed-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Vở kịch lẽ ra phải công diễn vào thứ Sáu tuần trước.\""
+      tokens:
+        - { id: p-fri, text: last Friday }
+        - { id: p-open, text: to open }
+        - { id: p-is, text: is supposed }
+        - { id: p-play, text: The play }
+        - { id: p-was, text: was supposed }
+    answer:
+      orders:
+        - [p-play, p-was, p-open, p-fri]
+    explanation:
+      vi: Có last Friday nên dùng was supposed to - kế hoạch trong quá khứ không thành. Is supposed không hợp với mốc thời gian quá khứ.
+    display_answer: The play was supposed to open last Friday.
+
+  - key: en:exercise:arts-fip-translate-rehearsing
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:rehearsal
+    prompt:
+      source_text: The actors had been rehearsing for weeks, and they were about to go on stage when the premiere was cancelled.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Các diễn viên đã tập dượt suốt nhiều tuần, và họ sắp bước lên sân khấu thì buổi công chiếu bị huỷ.
+        - Các diễn viên đã tập luyện nhiều tuần liền, và họ vừa sắp lên sân khấu thì buổi ra mắt bị huỷ.
+        - Diễn viên đã tập dượt hàng tuần liền và sắp lên sân khấu thì buổi công diễn đầu tiên bị huỷ.
+        - Các diễn viên đã tập suốt mấy tuần, và họ chuẩn bị lên sân khấu thì buổi công chiếu bị huỷ bỏ.
+        - Các diễn viên đã tập dượt trong nhiều tuần, và khi họ sắp lên sân khấu thì buổi ra mắt bị huỷ.
+        - Các diễn viên đã tập dượt nhiều tuần và đang chuẩn bị lên sân khấu thì buổi công chiếu bị huỷ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Had been rehearsing for weeks là quá trình kéo dài trước đó; were about to go on stage là "sắp lên sân khấu"; when the premiere was cancelled là sự việc cắt ngang.
+    display_answer: Các diễn viên đã tập dượt suốt nhiều tuần, và họ sắp bước lên sân khấu thì buổi công chiếu bị huỷ.
+
+  - key: en:exercise:arts-fip-mcq-live
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:live-performance
+    prompt:
+      stem: "Bạn khen một ca sĩ: hát trực tiếp còn hay hơn bản thu âm. Chọn từ đúng: \"Her ___ performances are even better than her studio albums.\""
+      stem_lang: vi
+      options:
+        - { id: w2n, text: live, lang: en }
+        - { id: q7o, text: living, lang: en }
+        - { id: j4d, text: alive, lang: en }
+        - { id: b6u, text: lively, lang: en }
+    answer:
+      correct_option_id: w2n
+    explanation:
+      vi: Live (đọc /laɪv/) là "trực tiếp" - live performances. Living là "đang sống", alive không đứng trước danh từ, lively là "sôi nổi".
+    display_answer: live

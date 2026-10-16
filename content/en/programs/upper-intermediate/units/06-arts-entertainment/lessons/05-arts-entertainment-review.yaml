@@ -1,0 +1,334 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:arts-entertainment-review
+order_index: 5
+level: b2
+title:
+  vi: "Ôn tập: Bài review hoà nhạc & thảo luận trên diễn đàn phim"
+objectives:
+  - vi: Viết một bài review buổi hoà nhạc kết hợp tính từ cực, so sánh nâng cao và tương lai trong quá khứ.
+  - vi: Tham gia thảo luận trên diễn đàn phim - tránh tiết lộ nội dung, bày tỏ ý kiến trái chiều.
+  - vi: Dùng lại toàn bộ cấu trúc của unit trong văn bản liền mạch.
+estimated_minutes: 25
+skills: [writing, reading, grammar, vocabulary]
+prerequisites: [en:lesson:arts-ever-no-matter]
+items:
+  - item: en:item:standing-ovation
+  - item: en:item:spoiler
+  - item: en:item:absolutely-extreme
+    role: reuse
+  - item: en:item:be-set-in
+    role: reuse
+  - item: en:item:the-more-the-more
+    role: reuse
+  - item: en:item:much-far-comparative
+    role: reuse
+  - item: en:item:by-far-superlative
+    role: reuse
+  - item: en:item:was-going-to
+    role: reuse
+  - item: en:item:was-about-to
+    role: reuse
+  - item: en:item:whatever-whoever
+    role: reuse
+  - item: en:item:however-adjective
+    role: reuse
+  - item: en:item:would-rather-someone-did
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đặt bạn vào hai vai - người viết review một buổi hoà nhạc cho tạp chí văn hoá và thành viên một diễn đàn phim - để dùng lại mọi cấu trúc của unit.
+  - type: explain
+    text:
+      vi: "Một bài review tốt có bốn phần: bối cảnh (where / when, is set in), điểm mạnh (absolutely + tính từ cực), điểm yếu (a bit / slightly, not nearly as … as), kết luận (by far the best…, The more…, the more…). Chuyện ngoài lề như kế hoạch bị đổi giúp bài sinh động - was going to, was about to."
+  - type: explain
+    text:
+      vi: "Trên diễn đàn, ghi Spoiler alert trước khi tiết lộ nội dung, và nhắc người khác bằng Whatever you do, don't… Khi phản bác, làm nhẹ bằng I'd rather we didn't… hoặc It's not nearly as … as people say."
+  - type: deep_explain
+    text:
+      vi: Tránh lặp very trong cả bài - đổi sang far, much (cho so sánh), absolutely, utterly (cho tính từ cực), và quite, rather (cho lời chê nhẹ). Bài review chuyên nghiệp thường viết ở hiện tại đơn cho tác phẩm (The plot follows…) nhưng ở quá khứ cho một buổi diễn cụ thể (The band opened with…).
+  - type: example
+    target: The band was about to leave the stage when the crowd began chanting for one more song.
+    target_lang: en
+    translation:
+      vi: Ban nhạc sắp rời sân khấu thì đám đông bắt đầu hô vang đòi thêm một bài nữa.
+    note:
+      vi: Was about to + when + quá khứ đơn - khoảnh khắc bị cắt ngang.
+  - type: example
+    target: It was by far the most emotional show of the tour, and it ended with a standing ovation.
+    target_lang: en
+    translation:
+      vi: Đó là đêm diễn xúc động nhất của cả chuyến lưu diễn, bỏ xa các đêm khác, và kết thúc bằng tràng pháo tay đứng dậy.
+    note:
+      vi: By far the + so sánh nhất; end with a standing ovation.
+  - type: example
+    target: "Spoiler alert: the narrator turns out to be the person who stole the painting."
+    target_lang: en
+    translation:
+      vi: "Cảnh báo tiết lộ nội dung: hoá ra người kể chuyện chính là kẻ đã đánh cắp bức tranh."
+    note:
+      vi: Spoiler alert đặt ở đầu câu, theo sau là dấu hai chấm.
+  - type: common_mistake
+    wrong: The second set was very more exciting than the first.
+    right: The second set was far more exciting than the first.
+    target_lang: en
+    note:
+      vi: Very không đi với so sánh hơn - dùng far / much.
+  - type: common_mistake
+    wrong: However the queue is long, it's worth the wait.
+    right: However long the queue is, it's worth the wait.
+    target_lang: en
+    note:
+      vi: Tính từ (long) đứng ngay sau however.
+  - type: summary
+    points:
+      - vi: Review - bối cảnh (is set in), khen mạnh (absolutely + tính từ cực), chê nhẹ (a bit, not nearly as … as), kết luận (by far the …).
+      - vi: Kể chuyện buổi diễn - was going to, was about to, would, was supposed to.
+      - vi: Diễn đàn - Spoiler alert, Whatever you do, don't…, I'd rather we didn't…
+      - vi: Từ vựng mới - a standing ovation, a spoiler.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:arts-review5-listen-ovation
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:standing-ovation
+    prompt:
+      audio_asset_id: null
+      fallback_text: The audience gave the young cast a standing ovation that lasted almost ten minutes.
+      options:
+        - { id: q2c, text: "Khán giả đứng dậy vỗ tay tán thưởng dàn diễn viên trẻ gần mười phút.", lang: vi }
+        - { id: h7v, text: "Khán giả phải đứng xem dàn diễn viên trẻ gần mười phút vì hết ghế.", lang: vi }
+        - { id: a5m, text: "Dàn diễn viên trẻ đứng chào khán giả trong gần mười phút.", lang: vi }
+        - { id: k9t, text: "Khán giả rời ghế sau mười phút vì dàn diễn viên trẻ diễn chưa tốt.", lang: vi }
+    answer:
+      correct_option_id: q2c
+    explanation:
+      vi: A standing ovation là khán giả đứng dậy vỗ tay tán thưởng - lời khen lớn nhất cho một buổi diễn. Gave the cast… nghĩa là khán giả dành cho diễn viên.
+    display_answer: "Khán giả đứng dậy vỗ tay tán thưởng dàn diễn viên trẻ gần mười phút."
+
+  - key: en:exercise:arts-review5-mcq-whatever-spoiler
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:spoiler
+    prompt:
+      stem: "Một bài đăng trên diễn đàn phim: \"No spoilers, please! ___ you do, don't mention what happens to the twins.\""
+      stem_lang: vi
+      options:
+        - { id: e4s, text: Whatever, lang: en }
+        - { id: y1n, text: However, lang: en }
+        - { id: o8w, text: Whenever, lang: en }
+        - { id: m6h, text: Whoever, lang: en }
+    answer:
+      correct_option_id: e4s
+    explanation:
+      vi: Whatever you do là "dù bạn làm gì" - cách nhắc nhở mạnh. However cần tính từ đi sau; whenever và whoever không hợp nghĩa.
+    display_answer: Whatever
+
+  - key: en:exercise:arts-review5-mcq-far-more
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:much-far-comparative
+    prompt:
+      stem: "Chọn đáp án đúng cho bài review: The second half of the concert was ___ more exciting than the first."
+      stem_lang: vi
+      options:
+        - { id: z3k, text: far, lang: en }
+        - { id: c7b, text: very, lang: en }
+        - { id: l4u, text: the, lang: en }
+        - { id: g2x, text: absolutely, lang: en }
+    answer:
+      correct_option_id: z3k
+    explanation:
+      vi: Far / much + so sánh hơn nhấn mạnh chênh lệch lớn. Very và absolutely không đứng trước so sánh hơn; the more cần cấu trúc hai vế.
+    display_answer: far
+
+  # ---------------- recall ----------------
+  - key: en:exercise:arts-review5-fill-the-more
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:the-more-the-more
+    prompt:
+      template: "The {{b1}} I think about that open ending, the {{b2}} I admire the director's courage."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [more]
+        b2: [more]
+    known_wrong:
+      - answer: most
+        feedback_vi: Cấu trúc "càng… càng…" dùng so sánh hơn (more), không dùng so sánh nhất.
+        error_tag: double_comparative
+      - answer: much
+        feedback_vi: Sau the trong cấu trúc này cần more, không phải much.
+        error_tag: double_comparative
+    explanation:
+      vi: The more …, the more … - "càng nghĩ về cái kết mở, tôi càng nể sự dũng cảm của đạo diễn". Cả hai vế dùng the + so sánh hơn.
+    display_answer: The more I think about that open ending, the more I admire the director's courage.
+
+  - key: en:exercise:arts-review5-translate-spoiler
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:spoiler
+    prompt:
+      source_text: "Cảnh báo tiết lộ nội dung: hoá ra kẻ phản diện là anh trai của nhân vật chính."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Spoiler alert: the villain turns out to be the hero's brother."
+        - "Spoiler alert: the villain turns out to be the main character's brother."
+        - "Spoiler alert: the villain turns out to be the protagonist's brother."
+        - "Spoiler alert: it turns out the villain is the hero's brother."
+        - "Spoiler alert: it turns out that the villain is the hero's brother."
+        - "Spoiler alert: it turns out the villain is the main character's brother."
+        - "Spoiler alert: it turns out that the villain is the main character's brother."
+        - "Spoiler alert: the villain is actually the hero's brother."
+        - "Spoiler alert: the villain is actually the main character's brother."
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: "Spoiler alert: the villain turn out to be the hero's brother."
+        feedback_vi: The villain là số ít - turns out.
+        error_tag: subject_verb_agreement
+      - answer: "Spoiler alert: the villain turns out the hero's brother."
+        feedback_vi: Cấu trúc là turn out to be + danh từ - thiếu to be.
+        error_tag: turn_out_to_be
+    explanation:
+      vi: "\"Hoá ra\" - turn out to be + danh từ, hoặc It turns out (that) + mệnh đề. Spoiler alert đặt đầu câu để cảnh báo người đọc."
+    display_answer: "Spoiler alert: the villain turns out to be the hero's brother."
+
+  - key: en:exercise:arts-review5-translate-encore
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:was-going-to
+    prompt:
+      source_text: Chúng tôi đã định ở lại nghe bài hát thêm (encore), nhưng chuyến tàu cuối sắp chạy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We were going to stay for the encore, but the last train was about to leave.
+        - We were going to stay for the encore but the last train was about to leave.
+        - We were going to stay for the encore, but the last train was about to depart.
+        - We were going to stay for the encore, but our last train was about to leave.
+        - We were going to stay for the encore, but the last train was leaving soon.
+        - We were going to stay for the encore, but the last train was going to leave soon.
+        - We were going to stay for the encore, but the last train was just about to leave.
+        - We were planning to stay for the encore, but the last train was about to leave.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We are going to stay for the encore, but the last train was about to leave.
+        feedback_vi: Kế hoạch đã không thành trong quá khứ - were going to.
+        error_tag: future_in_past
+      - answer: We were going to stay for the encore, but the last train is about to leave.
+        feedback_vi: Câu kể chuyện quá khứ nên dùng was about to.
+        error_tag: future_in_past
+    explanation:
+      vi: "\"Đã định\" mà không thành - were going to; \"sắp chạy\" nhìn từ quá khứ - was about to leave."
+    display_answer: We were going to stay for the encore, but the last train was about to leave.
+
+  # ---------------- application ----------------
+  - key: en:exercise:arts-review5-mcq-review-opening
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:be-set-in
+    prompt:
+      stem: "Bạn mở đầu bài review một bộ phim lấy bối cảnh Huế thập niên 1960 với dàn diễn viên xuất sắc. Câu nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: s5d, text: "The film is set in 1960s Hue, and the cast is absolutely superb.", lang: en }
+        - { id: j3r, text: "The film sets in 1960s Hue, and the cast is absolutely superb.", lang: en }
+        - { id: w8f, text: "The film is set in 1960s Hue, and the cast is very superb.", lang: en }
+        - { id: b1o, text: "The film is set at 1960s Hue, and the cast is absolutely good.", lang: en }
+    answer:
+      correct_option_id: s5d
+    explanation:
+      vi: Bối cảnh dùng bị động is set in (giới từ in). Superb là tính từ cực nên đi với absolutely, không đi với very; absolutely good sai vì good là tính từ thường.
+    display_answer: "The film is set in 1960s Hue, and the cast is absolutely superb."
+
+  - key: en:exercise:arts-review5-order-however-long
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:however-adjective
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Dù hàng chờ dài đến đâu thì cũng đáng để đợi.\""
+      tokens:
+        - { id: h-queue, text: the queue is }
+        - { id: h-worth, text: "it's worth the wait" }
+        - { id: h-whatever, text: Whatever }
+        - { id: h-long, text: However long }
+        - { id: h-but, text: but }
+    answer:
+      orders:
+        - [h-long, h-queue, h-worth]
+        - [h-worth, h-long, h-queue]
+    explanation:
+      vi: However + tính từ (long) + chủ ngữ + động từ (the queue is). Không thêm but ở vế sau, dù tiếng Việt có "thì cũng".
+    display_answer: "However long the queue is, it's worth the wait."
+
+  - key: en:exercise:arts-review5-translate-talked-about
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:by-far-superlative
+    prompt:
+      source_text: The show was supposed to be a small local event, but it became by far the most talked-about performance of the festival.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Buổi diễn lẽ ra chỉ là một sự kiện nhỏ của địa phương, nhưng nó đã trở thành màn trình diễn được bàn tán nhiều nhất lễ hội, bỏ xa các tiết mục khác.
+        - Chương trình vốn được dự định là một sự kiện địa phương nhỏ, nhưng đã trở thành buổi biểu diễn được bàn tán nhiều nhất của lễ hội.
+        - Buổi diễn lẽ ra chỉ là một sự kiện nhỏ ở địa phương, nhưng lại trở thành tiết mục được nhắc đến nhiều nhất lễ hội, hơn hẳn các tiết mục khác.
+        - Lẽ ra đây chỉ là một sự kiện nhỏ của địa phương, nhưng buổi diễn đã trở thành màn trình diễn được bàn tán nhiều nhất của lễ hội.
+        - Buổi biểu diễn lẽ ra chỉ là một sự kiện nhỏ tại địa phương, nhưng nó đã trở thành tiết mục được bàn tán nhiều nhất lễ hội.
+        - Buổi diễn đáng lẽ chỉ là một sự kiện địa phương nhỏ, nhưng lại thành màn biểu diễn được bàn tán nhiều nhất lễ hội, bỏ xa phần còn lại.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Was supposed to be là "lẽ ra chỉ là" (theo dự kiến); by far the most talked-about là "được bàn tán nhiều nhất, bỏ xa phần còn lại".
+    display_answer: Buổi diễn lẽ ra chỉ là một sự kiện nhỏ của địa phương, nhưng nó đã trở thành màn trình diễn được bàn tán nhiều nhất lễ hội, bỏ xa các tiết mục khác.
+
+  - key: en:exercise:arts-review5-mcq-rather-matinee
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:would-rather-someone-did
+    prompt:
+      stem: "Trên nhóm chat, bạn muốn nhẹ nhàng đề nghị cả nhóm đặt vé suất chiều vì suất tối đắt gấp đôi. Chọn đáp án: \"I'd rather we ___ tickets for the matinee - the evening show is twice as expensive.\""
+      stem_lang: vi
+      options:
+        - { id: r7e, text: booked, lang: en }
+        - { id: d2y, text: book, lang: en }
+        - { id: u9i, text: to book, lang: en }
+        - { id: f6a, text: booking, lang: en }
+    answer:
+      correct_option_id: r7e
+    explanation:
+      vi: I'd rather + we (chủ ngữ khác) + quá khứ đơn - booked, dù nói về kế hoạch sắp tới. Đây là cách đề nghị lịch sự, không áp đặt.
+    display_answer: booked

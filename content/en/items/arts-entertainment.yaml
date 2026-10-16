@@ -1,0 +1,670 @@
+# Học liệu unit "Nghệ thuật, giải trí & văn hoá" (B2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: review phim, sách - tính từ thường và tính từ cực ----------------
+  - key: en:item:gradable-extreme-adjectives
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: gradable vs extreme adjectives (very good / absolutely brilliant)
+      ipa: /ˈɡreɪdəbl/ · /ɪkˈstriːm/
+      pos: điểm ngữ pháp
+    back:
+      meaning:
+        vi: tính từ thường (good, bad, funny) đi với very, quite, extremely; tính từ cực (brilliant, awful, hilarious) đã mang nghĩa "rất" nên đi với absolutely, totally
+      examples:
+        - target: The first episode was very good, but the finale was absolutely brilliant.
+          translation:
+            vi: Tập đầu khá hay, nhưng tập cuối thì xuất sắc tuyệt đối.
+      confusion:
+        vi: Không nói very brilliant hay very hilarious - giống như nói "rất cực kỳ hay". Cũng không nói absolutely good.
+
+  - key: en:item:absolutely-extreme
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: absolutely / totally / utterly + extreme adjective
+      ipa: /ˈæbsəluːtli/ · UK /ˈtəʊtəli/ · US /ˈtoʊtəli/ · /ˈʌtəli/
+      pos: trạng từ nhấn mạnh
+    back:
+      meaning:
+        vi: hoàn toàn, tuyệt đối - dùng trước tính từ cực (absolutely stunning, totally ridiculous, utterly exhausting)
+      examples:
+        - target: The ending was totally ridiculous, but the soundtrack was absolutely stunning.
+          translation:
+            vi: Cái kết thật vô lý hết sức, nhưng nhạc phim thì đẹp tuyệt vời.
+      pronunciation_note:
+        vi: Absolutely nhấn âm ba - ab-so-LUTE-ly.
+      confusion:
+        vi: Utterly thường dùng với nghĩa tiêu cực (utterly boring, utterly pointless). Absolutely dùng được cả khen lẫn chê.
+
+  - key: en:item:really-both-adjectives
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: really + gradable / extreme adjective
+      ipa: UK /ˈrɪəli/ · US /ˈriːəli/
+      pos: trạng từ nhấn mạnh
+    back:
+      meaning:
+        vi: really đi được với cả hai loại tính từ (really good, really fantastic); còn very chỉ đi với tính từ thường
+      examples:
+        - target: The acting was really good, and the costumes were really fantastic.
+          translation:
+            vi: Diễn xuất rất tốt, còn trang phục thì thực sự tuyệt vời.
+      confusion:
+        vi: Khi không chắc tính từ thuộc loại nào, really là lựa chọn an toàn. Quite với tính từ cực nghĩa là "hoàn toàn" (quite brilliant), với tính từ thường là "khá" (quite good).
+
+  - key: en:item:gripping
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: gripping
+      ipa: /ˈɡrɪpɪŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: lôi cuốn, hấp dẫn đến mức không rời mắt được (phim, sách, câu chuyện)
+      examples:
+        - target: It's a gripping thriller - I read the last two hundred pages in one night.
+          translation:
+            vi: Đây là một cuốn ly kỳ cực kỳ lôi cuốn - tôi đọc hai trăm trang cuối chỉ trong một đêm.
+      confusion:
+        vi: Gripping mạnh hơn interesting. Từ gần nghĩa - compelling, page-turner (danh từ, chỉ sách khó đặt xuống).
+
+  - key: en:item:overrated
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: overrated / underrated
+      ipa: /ˌəʊvəˈreɪtɪd/ · US /ˌoʊvɚˈreɪtɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: được đánh giá quá cao / bị đánh giá thấp hơn thực tế
+      examples:
+        - target: Honestly, I think the film is overrated; the trailer was better than the movie.
+          translation:
+            vi: Thật lòng tôi thấy bộ phim được tâng bốc quá; trailer còn hay hơn cả phim.
+      confusion:
+        vi: Over- là "quá mức", under- là "dưới mức" - giống overestimate / underestimate. Không viết over rated tách rời.
+
+  - key: en:item:thought-provoking
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: thought-provoking
+      ipa: UK /ˈθɔːt prəvəʊkɪŋ/ · US /ˈθɑːt prəvoʊkɪŋ/
+      pos: tính từ ghép
+    back:
+      meaning:
+        vi: gợi nhiều suy nghĩ, khiến người xem phải suy ngẫm
+      examples:
+        - target: The documentary is thought-provoking without ever telling you what to think.
+          translation:
+            vi: Bộ phim tài liệu gợi nhiều suy ngẫm mà không hề áp đặt bạn phải nghĩ gì.
+      pronunciation_note:
+        vi: Thought đọc /θɔːt/ - đặt lưỡi giữa hai răng cho âm /θ/, không đọc thành "t" hay "th" kiểu tiếng Việt.
+      confusion:
+        vi: Đây là lời khen trong bài review nghiêm túc. Provoking một mình (provocative) lại có thể mang nghĩa "khiêu khích".
+
+  - key: en:item:plot
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: plot
+      ipa: UK /plɒt/ · US /plɑːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cốt truyện; plot twist - cú lật bất ngờ trong cốt truyện
+      examples:
+        - target: The plot is quite predictable, but the plot twist in the final scene surprised everyone.
+          translation:
+            vi: Cốt truyện khá dễ đoán, nhưng cú lật ở cảnh cuối khiến ai cũng bất ngờ.
+      confusion:
+        vi: Plot là chuỗi sự kiện; storyline gần nghĩa; theme là chủ đề, thông điệp - đừng dùng lẫn.
+
+  - key: en:item:cast
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: cast
+      ipa: UK /kɑːst/ · US /kæst/
+      pos: danh từ tập hợp
+    back:
+      meaning:
+        vi: dàn diễn viên (của một phim, vở kịch); a star-studded cast - dàn sao hùng hậu
+      examples:
+        - target: The cast is mostly unknown actors, which makes the story feel more real.
+          translation:
+            vi: Dàn diễn viên chủ yếu là người chưa nổi tiếng, nhờ vậy câu chuyện có cảm giác chân thực hơn.
+      confusion:
+        vi: Cast là cả nhóm diễn viên; muốn nói một người thì dùng a cast member. Không nói the casts cho một bộ phim.
+
+  - key: en:item:sequel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sequel / prequel
+      ipa: /ˈsiːkwəl/ · /ˈpriːkwəl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần tiếp theo / phần tiền truyện của một phim, sách
+      examples:
+        - target: The sequel is darker than the original, and the fans are divided.
+          translation:
+            vi: Phần tiếp theo u tối hơn bản gốc, và người hâm mộ chia làm hai phe.
+      confusion:
+        vi: Sequel kể chuyện sau bản gốc; prequel kể chuyện xảy ra trước. Remake là làm lại cùng câu chuyện.
+
+  - key: en:item:be-set-in
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: be set in (a place / a time)
+      ipa: /bi ˈset ɪn/
+      pos: cụm bị động
+    back:
+      meaning:
+        vi: lấy bối cảnh ở (nơi chốn, thời kỳ)
+      examples:
+        - target: The novel is set in Hanoi in the 1990s, just after the economic reforms.
+          translation:
+            vi: Cuốn tiểu thuyết lấy bối cảnh Hà Nội thập niên 1990, ngay sau thời kỳ Đổi mới.
+      confusion:
+        vi: Luôn ở bị động (is set in), không nói the film sets in. Set là động từ bất quy tắc - set / set / set.
+
+  # ---------------- Bài 2: cấu trúc so sánh nâng cao ----------------
+  - key: en:item:the-more-the-more
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: The + so sánh hơn …, the + so sánh hơn …
+      ipa: /ðə ˈmɔː … ðə ˈmɔː/ · US /ðə ˈmɔːr … ðə ˈmɔːr/
+      pos: cấu trúc so sánh kép
+    back:
+      meaning:
+        vi: càng… càng… (hai thay đổi đi cùng nhau)
+      examples:
+        - target: The longer the queue for a concert, the more people seem to want tickets.
+          translation:
+            vi: Hàng chờ mua vé hoà nhạc càng dài thì dường như người ta càng muốn có vé.
+      confusion:
+        vi: Cả hai vế đều bắt đầu bằng the. Người Việt hay viết More I watch, more I like (thiếu the) hoặc The more I watch it, I like it more.
+
+  - key: en:item:much-far-comparative
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: much / far / a lot / a bit / slightly + so sánh hơn
+      ipa: /mʌtʃ/ · UK /fɑː/ · US /fɑːr/
+      pos: trạng từ bổ nghĩa
+    back:
+      meaning:
+        vi: hơn nhiều (much, far, a lot) / hơn một chút (a bit, slightly)
+      examples:
+        - target: The stage version is far more moving than the film adaptation.
+          translation:
+            vi: Bản sân khấu cảm động hơn nhiều so với bản chuyển thể điện ảnh.
+      confusion:
+        vi: Không dùng very trước so sánh hơn (very better là sai). Tiếng Việt "hơn rất nhiều" khiến người học viết very more.
+
+  - key: en:item:by-far-superlative
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: by far the + so sánh nhất
+      ipa: UK /baɪ ˈfɑː ðə/ · US /baɪ ˈfɑːr ðə/
+      pos: cấu trúc nhấn mạnh
+    back:
+      meaning:
+        vi: (là) … nhất, bỏ xa phần còn lại
+      examples:
+        - target: It was by far the best concert I've been to this year.
+          translation:
+            vi: Đó là buổi hoà nhạc hay nhất tôi đi năm nay, bỏ xa những buổi khác.
+      confusion:
+        vi: By far đứng trước the (by far the best), hoặc sau cả cụm (the best by far). Không nói the by far best.
+
+  - key: en:item:nowhere-near-as
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: nowhere near as … as / not nearly as … as
+      ipa: UK /ˈnəʊweə nɪə ræz/ · US /ˈnoʊwer nɪr æz/
+      pos: cấu trúc so sánh
+    back:
+      meaning:
+        vi: không hề bằng, kém xa
+      examples:
+        - target: The remake is nowhere near as funny as the original series.
+          translation:
+            vi: Bản làm lại kém hài hước xa so với loạt phim gốc.
+      confusion:
+        vi: Nowhere near (thân mật) và not nearly (trung tính) cùng nghĩa, mạnh hơn not as … as. Giữa as … as là tính từ nguyên dạng, không dùng funnier.
+
+  - key: en:item:just-as-as
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: just as / nearly as / twice as … as
+      ipa: /dʒʌst əz … əz/
+      pos: cấu trúc so sánh
+    back:
+      meaning:
+        vi: cũng … y như (just as), gần bằng (nearly as), gấp đôi (twice as)
+      examples:
+        - target: Tickets for the festival are twice as expensive as they were five years ago.
+          translation:
+            vi: Vé lễ hội bây giờ đắt gấp đôi so với năm năm trước.
+      confusion:
+        vi: Gấp đôi là twice as expensive as, không nói two times more expensive than trong văn chuẩn (dù người bản ngữ vẫn nói). Three times as … as cho gấp ba.
+
+  - key: en:item:box-office
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: box office
+      ipa: UK /ˈbɒks ɒfɪs/ · US /ˈbɑːks ɑːfɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng vé, doanh thu phòng vé (a box-office hit - phim ăn khách)
+      examples:
+        - target: The film earned more at the box office in its first weekend than the studio had expected.
+          translation:
+            vi: Bộ phim thu về ở phòng vé ngay cuối tuần đầu nhiều hơn hãng phim dự kiến.
+      confusion:
+        vi: Khi đứng trước danh từ khác thường có gạch nối - a box-office success. At the box office dùng giới từ at.
+
+  - key: en:item:critically-acclaimed
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: critically acclaimed
+      ipa: /ˈkrɪtɪkli əˈkleɪmd/
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: được giới phê bình đánh giá rất cao
+      examples:
+        - target: Her critically acclaimed debut album sold far fewer copies than her pop singles.
+          translation:
+            vi: Album đầu tay được giới phê bình ca ngợi của cô bán được ít hơn nhiều so với các đĩa đơn nhạc pop.
+      confusion:
+        vi: Critically ở đây là "về mặt phê bình", không phải "một cách nghiêm trọng" (critically ill). Danh từ là critical acclaim.
+
+  - key: en:item:blockbuster
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: blockbuster
+      ipa: UK /ˈblɒkbʌstə/ · US /ˈblɑːkbʌstɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim bom tấn (kinh phí lớn, ăn khách); cũng dùng cho sách, triển lãm
+      examples:
+        - target: Summer blockbusters rely on special effects much more than on dialogue.
+          translation:
+            vi: Phim bom tấn mùa hè dựa vào kỹ xảo nhiều hơn hẳn so với lời thoại.
+      confusion:
+        vi: Blockbuster nói về quy mô, độ ăn khách - không có nghĩa là phim hay. Đối lập thường là an indie film (phim độc lập).
+
+  # ---------------- Bài 3: tương lai trong quá khứ ----------------
+  - key: en:item:was-going-to
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: was / were going to + V
+      ipa: UK /wəz ˈɡəʊɪŋ tə/ · US /wəz ˈɡoʊɪŋ tə/
+      pos: tương lai trong quá khứ
+    back:
+      meaning:
+        vi: đã định làm (nhưng thường là không làm được / kế hoạch đã thay đổi)
+      examples:
+        - target: We were going to see the opera on Saturday, but the tenor fell ill.
+          translation:
+            vi: Chúng tôi đã định đi xem opera hôm thứ Bảy, nhưng giọng nam cao bị ốm.
+      pronunciation_note:
+        vi: Trong văn nói thường đọc thành /wəz ˈɡʌnə/ (was gonna); không viết gonna trong văn bản trang trọng.
+      confusion:
+        vi: Tiếng Việt chỉ nói "định", nên người học hay dùng I am going to cho kế hoạch đã hỏng. Kế hoạch trong quá khứ phải lùi thì - was going to.
+
+  - key: en:item:was-about-to
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: was / were about to + V
+      ipa: /wəz əˈbaʊt tə/
+      pos: tương lai trong quá khứ
+    back:
+      meaning:
+        vi: sắp sửa, chuẩn bị (thì có chuyện xảy ra)
+      examples:
+        - target: The band was about to come back on stage when the power went off.
+          translation:
+            vi: Ban nhạc vừa chuẩn bị trở lại sân khấu thì mất điện.
+      confusion:
+        vi: About to là "ngay sắp", gần hơn going to. Thường đi với when + quá khứ đơn cho sự việc cắt ngang.
+
+  - key: en:item:would-future-in-past
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: would + V (tương lai nhìn từ quá khứ)
+      ipa: /wʊd/
+      pos: tương lai trong quá khứ
+    back:
+      meaning:
+        vi: (lúc đó) sẽ - dùng khi kể lại dự đoán, lời hứa hoặc điều chưa biết sẽ xảy ra
+      examples:
+        - target: Nobody knew at the time that the young pianist would become a world star.
+          translation:
+            vi: Lúc đó không ai biết cô nghệ sĩ dương cầm trẻ sẽ trở thành ngôi sao thế giới.
+      confusion:
+        vi: Would ở đây là will lùi về quá khứ (giống câu tường thuật), không mang nghĩa giả định. Sau said / knew / thought trong quá khứ dùng would, không dùng will.
+
+  - key: en:item:sell-out
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sell out / a sell-out show
+      ipa: /ˌsel ˈaʊt/ · /ˈsel aʊt/
+      pos: cụm động từ / danh từ
+    back:
+      meaning:
+        vi: bán hết vé; một buổi diễn cháy vé
+      examples:
+        - target: The tour sold out within minutes, and resale prices tripled overnight.
+          translation:
+            vi: Vé của cả chuyến lưu diễn bán hết trong vài phút, và giá vé bán lại tăng gấp ba chỉ sau một đêm.
+      confusion:
+        vi: The tickets sold out (tự hết) hoặc The concert is sold out (bị động, trạng thái). Sell-out danh từ còn có nghĩa "kẻ bán mình" khi nói về nghệ sĩ thương mại hoá.
+
+  - key: en:item:rehearsal
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: rehearsal / rehearse
+      ipa: UK /rɪˈhɜːsl/ · US /rɪˈhɝːsl/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: buổi tập dượt / tập dượt (kịch, nhạc); dress rehearsal - tổng duyệt
+      examples:
+        - target: The actors had only two rehearsals before opening night.
+          translation:
+            vi: Các diễn viên chỉ có hai buổi tập trước đêm công diễn đầu tiên.
+      confusion:
+        vi: Rehearse cho biểu diễn; practise cho kỹ năng nói chung. Nhấn âm hai - re-HEAR-sal.
+
+  - key: en:item:premiere
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: premiere
+      ipa: UK /ˈpremieə/ · US /prɪˈmɪr/
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: buổi công chiếu / ra mắt đầu tiên; (động từ) công chiếu lần đầu
+      examples:
+        - target: The series will premiere on a streaming platform before it reaches cinemas.
+          translation:
+            vi: Loạt phim sẽ ra mắt trên một nền tảng trực tuyến trước khi chiếu rạp.
+      pronunciation_note:
+        vi: Anh và Mỹ đọc khác nhau rõ - Anh nhấn âm đầu PREM-i-air, Mỹ nhấn âm sau pre-MEER.
+      confusion:
+        vi: Đừng nhầm với premier (thủ tướng, hoặc hàng đầu - the Premier League).
+
+  - key: en:item:live-performance
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: live performance / perform live
+      ipa: /ˌlaɪv pəˈfɔːməns/ · US /ˌlaɪv pɚˈfɔːrməns/
+      pos: collocation
+    back:
+      meaning:
+        vi: buổi biểu diễn trực tiếp; biểu diễn trực tiếp (không thu sẵn)
+      examples:
+        - target: Her live performances are even better than her studio recordings.
+          translation:
+            vi: Những màn biểu diễn trực tiếp của cô còn hay hơn cả bản thu phòng thu.
+      pronunciation_note:
+        vi: Live ở đây là tính từ, đọc /laɪv/ (như "lai-v"), khác động từ live /lɪv/ (sống).
+      confusion:
+        vi: Người học hay đọc live performance thành /lɪv/. Hãy nhớ - sống là /lɪv/, trực tiếp là /laɪv/.
+
+  # ---------------- Bài 4: -ever words & no matter ----------------
+  - key: en:item:whatever-whoever
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: whatever / whoever / whichever
+      ipa: UK /wɒtˈevə/ · US /wɑːtˈevɚ/ ; UK /huːˈevə/ · US /huːˈevɚ/
+      pos: đại từ -ever
+    back:
+      meaning:
+        vi: bất cứ thứ gì / bất cứ ai / bất cứ cái nào (không giới hạn, hoặc không quan trọng là gì)
+      examples:
+        - target: Whoever designed this poster deserves an award.
+          translation:
+            vi: Dù là ai thiết kế tấm áp phích này thì người đó cũng xứng đáng được giải.
+      confusion:
+        vi: Whatever đã bao hàm "cái mà", nên không thêm that/which phía sau (whatever that you like là sai). Whichever dùng khi lựa chọn có giới hạn.
+
+  - key: en:item:wherever-whenever
+    type: grammar_point
+    level: b2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: wherever / whenever
+      ipa: UK /weərˈevə/ · US /werˈevɚ/ ; UK /wenˈevə/ · US /wenˈevɚ/
+      pos: liên từ -ever
+    back:
+      meaning:
+        vi: bất cứ nơi nào / bất cứ khi nào
+      examples:
+        - target: Whenever I visit a new city, I look for small independent galleries.
+          translation:
+            vi: Bất cứ khi nào đến một thành phố mới, tôi đều tìm các phòng tranh độc lập nhỏ.
+      confusion:
+        vi: Sau whenever / wherever chỉ một sự việc tương lai, dùng hiện tại đơn (Wherever you go next, …), không dùng will - giống mệnh đề thời gian.
+
+  - key: en:item:however-adjective
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: however + adjective/adverb (+ subject + verb)
+      ipa: UK /haʊˈevə/ · US /haʊˈevɚ/
+      pos: cấu trúc nhượng bộ
+    back:
+      meaning:
+        vi: dù … đến đâu đi nữa (However talented you are, …)
+      examples:
+        - target: However talented a musician is, nobody succeeds without years of practice.
+          translation:
+            vi: Một nhạc sĩ dù tài năng đến đâu thì cũng không ai thành công mà không có nhiều năm luyện tập.
+      confusion:
+        vi: However ở đây khác however = "tuy nhiên" (đứng đầu câu + dấu phẩy). Tính từ đi liền sau however - However hard, không nói However it is hard.
+
+  - key: en:item:no-matter-how-what
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: no matter how / what / who / where …
+      ipa: /ˌnəʊ ˈmætə haʊ/ · US /ˌnoʊ ˈmætɚ haʊ/
+      pos: cấu trúc nhượng bộ
+    back:
+      meaning:
+        vi: bất kể, dù… thế nào đi nữa (No matter what the critics say, …)
+      examples:
+        - target: No matter what the critics say, I'm going to see it on the opening night.
+          translation:
+            vi: Bất kể giới phê bình nói gì, tôi vẫn sẽ đi xem vào đêm công chiếu.
+      confusion:
+        vi: No matter how = however (dù… đến đâu); no matter what = whatever. Tiếng Việt "dù… thì vẫn" khiến người học thêm but phía sau - No matter what they say, but I… là sai.
+
+  - key: en:item:exhibition
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: exhibition
+      ipa: /ˌeksɪˈbɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc triển lãm (an exhibition of / on something; hold / put on an exhibition)
+      examples:
+        - target: The museum is putting on an exhibition of contemporary lacquer painting.
+          translation:
+            vi: Bảo tàng đang tổ chức một cuộc triển lãm tranh sơn mài đương đại.
+      pronunciation_note:
+        vi: Chữ h câm - ek-si-BI-shən, nhấn âm ba.
+      confusion:
+        vi: Động từ exhibit có h đọc là /ɪɡˈzɪbɪt/. Exposition thường chỉ hội chợ lớn, không dùng cho triển lãm tranh nhỏ.
+
+  - key: en:item:masterpiece
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: masterpiece
+      ipa: UK /ˈmɑːstəpiːs/ · US /ˈmæstɚpiːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiệt tác
+      examples:
+        - target: Many critics call the novel a masterpiece, although it sold poorly at first.
+          translation:
+            vi: Nhiều nhà phê bình gọi cuốn tiểu thuyết là kiệt tác, dù lúc đầu nó bán rất ế.
+      confusion:
+        vi: Là danh từ đếm được - a masterpiece. Không dùng very với masterpiece; muốn nhấn mạnh hãy nói an absolute masterpiece.
+
+  - key: en:item:street-art
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: street art / graffiti
+      ipa: /ˈstriːt ɑːt/ · US /ˈstriːt ɑːrt/ ; /ɡrəˈfiːti/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghệ thuật đường phố / hình vẽ, chữ viết trên tường nơi công cộng
+      examples:
+        - target: Some cities now pay artists to paint street art on walls that used to be covered in graffiti.
+          translation:
+            vi: Một số thành phố nay trả tiền cho nghệ sĩ vẽ tranh đường phố lên những bức tường từng đầy hình vẽ bậy.
+      confusion:
+        vi: Street art thường được xem là nghệ thuật; graffiti hay mang nghĩa vẽ bậy, phá hoại. Cả hai đều không đếm được.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:standing-ovation
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary, writing]
+    front:
+      text: a standing ovation
+      ipa: UK /ˌstændɪŋ əʊˈveɪʃn/ · US /ˌstændɪŋ oʊˈveɪʃn/
+      pos: collocation
+    back:
+      meaning:
+        vi: tràng pháo tay đứng dậy (khán giả đứng lên vỗ tay tán thưởng)
+      examples:
+        - target: The orchestra received a five-minute standing ovation at the end of the symphony.
+          translation:
+            vi: Dàn nhạc nhận tràng pháo tay đứng dậy kéo dài năm phút khi bản giao hưởng kết thúc.
+      confusion:
+        vi: Động từ đi kèm - get / receive / give somebody a standing ovation.
+
+  - key: en:item:spoiler
+    type: vocab
+    level: b2
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: spoiler / spoiler alert
+      ipa: UK /ˈspɔɪlə/ · US /ˈspɔɪlɚ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin tiết lộ nội dung (làm mất hứng người chưa xem); spoiler alert - cảnh báo sắp tiết lộ nội dung
+      examples:
+        - target: "Spoiler alert: the detective turns out to be the villain."
+          translation:
+            vi: "Cảnh báo tiết lộ nội dung: hoá ra thám tử chính là kẻ phản diện."
+      confusion:
+        vi: Động từ là spoil the ending (làm lộ cái kết). Spoiler không liên quan tới "spoil = làm hư (trẻ con)".
