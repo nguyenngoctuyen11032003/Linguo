@@ -201,20 +201,21 @@ exercises:
     difficulty: 3
     item: ko:item:gp-eum-eurosseo
     prompt:
-      instruction: "Sắp xếp thành câu: \"Bằng cách dùng phương tiện công cộng, ta có thể giảm phát thải carbon.\""
+      instruction: "Sắp xếp thành câu: \"Bằng cách phân loại rác triệt để, ta có thể nâng tỉ lệ tái chế.\""
       tokens:
-        - { id: r3, text: 탄소 배출을 }
-        - { id: r5, text: 이용하므로써 }
-        - { id: r1, text: 대중교통을 }
-        - { id: r4, text: 줄일 수 있다 }
-        - { id: r2, text: 이용함으로써 }
+        - { id: r3, text: 재활용률을 }
+        - { id: r5, text: 분리 배출하므로써 }
+        - { id: r1, text: 쓰레기를 }
+        - { id: r4, text: 높일 수 있다 }
+        - { id: r2, text: 분리 배출함으로써 }
+        - { id: r6, text: 철저히 }
     answer:
       orders:
-        - [r1, r2, r3, r4]
-        - [r3, r1, r2, r4]
+        - [r1, r6, r2, r3, r4]
+        - [r6, r1, r2, r3, r4]
     explanation:
-      vi: "\"Bằng cách\" là -(으)ㅁ으로써 - 이용함으로써. 이용하므로써 là lỗi trộn -(으)므로 (vì) với -(으)ㅁ으로써."
-    display_answer: 대중교통을 이용함으로써 탄소 배출을 줄일 수 있다.
+      vi: "\"Bằng cách\" là -(으)ㅁ으로써 - 분리 배출함으로써; vế phương tiện đứng trước, kết quả (재활용률을 높이다) đứng sau, ngược với tiếng Việt có thể đảo \"ta có thể... bằng cách...\". 분리 배출하므로써 là lỗi trộn -(으)므로 (vì) với -(으)ㅁ으로써."
+    display_answer: 쓰레기를 철저히 분리 배출함으로써 재활용률을 높일 수 있다.
 
   # ---------------- recall ----------------
   - key: ko:exercise:science-environment-review-fill-recall

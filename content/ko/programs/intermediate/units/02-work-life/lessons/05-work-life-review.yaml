@@ -385,15 +385,15 @@ exercises:
       stem: Bạn bước vào phòng họp muộn 10 phút, mọi người đã bắt đầu. Bạn nói gì?
       stem_lang: vi
       options:
-        - { id: r5h, text: 늦어서 죄송합니다., lang: ko }
-        - { id: w8y, text: 늦어서 실례합니다., lang: ko }
-        - { id: i2p, text: 늦어서 수고하셨습니다., lang: ko }
-        - { id: n4f, text: 늦느라고 감사합니다., lang: ko }
+        - { id: r5h, text: 회의에 늦어서 정말 죄송합니다., lang: ko }
+        - { id: w8y, text: 회의에 늦어서 정말 실례합니다., lang: ko }
+        - { id: i2p, text: 회의에 늦어서 수고하셨습니다., lang: ko }
+        - { id: n4f, text: 회의에 늦느라고 감사합니다., lang: ko }
     answer:
       correct_option_id: r5h
     explanation:
-      vi: Đến muộn là lỗi của bạn nên nói 죄송합니다. 실례합니다 là xin phép, không dùng để nhận lỗi; 수고하셨습니다 và 감사합니다 không hợp tình huống.
-    display_answer: 늦어서 죄송합니다.
+      vi: Đến muộn là lỗi của bạn nên nói 죄송합니다; -아서/어서 nêu lý do xin lỗi, giống "xin lỗi vì..." của tiếng Việt. 실례합니다 là xin phép (khi chen ngang), không dùng để nhận lỗi; 수고하셨습니다 và 감사합니다 không hợp tình huống.
+    display_answer: 회의에 늦어서 정말 죄송합니다.
 
   - key: ko:exercise:work-review-translate-memo-to-vi
     type: translate

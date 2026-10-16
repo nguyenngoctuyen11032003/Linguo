@@ -342,15 +342,15 @@ exercises:
       stem: Câu nào chia động từ/tính từ đúng?
       stem_lang: vi
       options:
-        - { id: f2o, text: 떡볶이가 너무 매워요., lang: ko }
-        - { id: r7e, text: 김치가 너무 맵어요., lang: ko }
+        - { id: f2o, text: 장마철에는 날씨가 너무 습하고 더워요., lang: ko }
+        - { id: r7e, text: 겨울 바람이 너무 차갑어요., lang: ko }
         - { id: y4a, text: 오늘은 너무 춥어요., lang: ko }
         - { id: c8s, text: 따뜻한 옷을 입워요., lang: ko }
     answer:
       correct_option_id: f2o
     explanation:
-      vi: 맵다 → 매워요 theo quy tắc ㅂ. 맵어요, 춥어요 giữ ㅂ là sai; còn 입다 là ngoại lệ, chia bình thường thành 입어요 chứ không phải 입워요.
-    display_answer: 떡볶이가 너무 매워요.
+      vi: 덥다 → 더워요 theo quy tắc ㅂ (ㅂ biến thành 우). 차갑어요, 춥어요 giữ ㅂ là sai (đúng là 차가워요, 추워요); còn 입다 là ngoại lệ, chia bình thường thành 입어요 chứ không phải 입워요.
+    display_answer: 장마철에는 날씨가 너무 습하고 더워요.
 
   - key: ko:exercise:weather-seasons-translate-autumn-to-vi
     type: translate

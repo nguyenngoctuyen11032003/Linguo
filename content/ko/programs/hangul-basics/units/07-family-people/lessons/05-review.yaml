@@ -133,17 +133,17 @@ exercises:
     item: ko:item:modu
     prompt:
       audio_asset_id: null
-      fallback_text: 이건 우리 가족사진이에요. 우리 가족은 모두 다섯 명이에요.
+      fallback_text: 이건 우리 가족사진이에요. 할머니하고 같이 모두 여섯 명이에요.
       options:
-        - { id: s4p, text: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng năm người., lang: vi }
-        - { id: d9k, text: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng bốn người., lang: vi }
-        - { id: j6w, text: Đây là ảnh gia đình kia. Gia đình đó tổng cộng năm người., lang: vi }
-        - { id: m2r, text: Đây là ảnh bạn tôi. Bạn tôi có năm anh chị em., lang: vi }
+        - { id: s4p, text: Đây là ảnh gia đình tôi. Tính cả bà thì tổng cộng sáu người., lang: vi }
+        - { id: d9k, text: Đây là ảnh gia đình tôi. Tính cả bà thì tổng cộng bảy người., lang: vi }
+        - { id: j6w, text: Đây là ảnh gia đình kia. Không có bà thì tổng cộng sáu người., lang: vi }
+        - { id: m2r, text: Đây là ảnh của bà. Bà có sáu người con., lang: vi }
     answer:
       correct_option_id: s4p
     explanation:
-      vi: 우리 가족사진 là ảnh gia đình tôi (gia đình kia sẽ là 저 가족); 다섯 명 là năm người, 모두 là tổng cộng.
-    display_answer: Đây là ảnh gia đình tôi. Gia đình tôi tổng cộng năm người.
+      vi: 우리 가족사진 là ảnh gia đình tôi (gia đình kia sẽ là 저 가족); 할머니하고 같이 là "cùng với bà", 여섯 명 là sáu người, 모두 là tổng cộng. Đếm người dùng số thuần Hàn 여섯 + 명, giống "sáu người" nhưng số đứng trước đơn vị đếm.
+    display_answer: Đây là ảnh gia đình tôi. Tính cả bà thì tổng cộng sáu người.
 
   - key: ko:exercise:family-people-review-mcq-reading
     type: mcq
@@ -223,27 +223,27 @@ exercises:
     difficulty: 3
     item: ko:item:nugu
     prompt:
-      template: "(Người này là ai? - Anh trai tôi. Anh ấy cao.) 이 사람은 {{b1}}예요? - 우리 오빠예요. 키가 {{b2}}."
+      template: "(Người này là ai? - Em gái tôi. Em ấy thấp.) 이 사람은 {{b1}}예요? - 제 여동생이에요. 키가 {{b2}}."
       blanks:
         - { id: b1, width_hint: 2 }
         - { id: b2, width_hint: 2 }
     answer:
       blanks:
         b1: [누구]
-        b2: [커요]
+        b2: [작아요]
     known_wrong:
       - answer: 뭐
         feedback_vi: 뭐 là "cái gì" - hỏi người dùng 누구.
         error_tag: question_word
-      - answer: 크어요
-        feedback_vi: ㅡ ở cuối gốc 크 phải rơi - 커요.
-        error_tag: eu_irregular
-      - answer: 작아요
-        feedback_vi: 작아요 là thấp. "Cao" là 커요.
+      - answer: 작어요
+        feedback_vi: 작 có nguyên âm ㅏ nên thêm 아요 - 작아요.
+        error_tag: a_eo_choice
+      - answer: 커요
+        feedback_vi: 커요 là cao. "Thấp" là 작아요.
         error_tag: adjective_meaning
     explanation:
-      vi: Hỏi người - 누구예요?; cao - 키가 커요 (크다 rơi ㅡ).
-    display_answer: 이 사람은 누구예요? - 우리 오빠예요. 키가 커요.
+      vi: Hỏi người - 누구예요?; "thấp" nói bằng 키가 작아요 (chiều cao nhỏ), không có từ riêng như "thấp" của tiếng Việt. 작다 có ㅏ nên chia 작아요.
+    display_answer: 이 사람은 누구예요? - 제 여동생이에요. 키가 작아요.
 
   - key: ko:exercise:family-people-review-translate-mother
     type: translate

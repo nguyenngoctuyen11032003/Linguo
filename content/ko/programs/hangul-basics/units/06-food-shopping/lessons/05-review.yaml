@@ -203,19 +203,19 @@ exercises:
     difficulty: 1
     item: ko:item:yeogiyo
     prompt:
-      instruction: "Sắp xếp thành câu tiếng Hàn: \"Anh ơi, cho tôi xem thực đơn.\""
+      instruction: "Sắp xếp thành câu tiếng Hàn: \"Anh ơi, cho tôi thêm nước.\""
       tokens:
-        - { id: m3, text: 좀 }
+        - { id: m3, text: 좀 더 }
         - { id: m5, text: 얼마예요 }
         - { id: m4, text: 주세요 }
         - { id: m1, text: 여기요 }
-        - { id: m2, text: 메뉴 }
+        - { id: m2, text: 물 }
     answer:
       orders:
         - [m1, m2, m3, m4]
     explanation:
-      vi: 여기요 (gọi nhân viên) đứng đầu, rồi món cần (메뉴), 좀 làm câu mềm hơn, và 주세요 luôn ở cuối. 얼마예요 là hỏi giá, không dùng ở đây.
-    display_answer: 여기요, 메뉴 좀 주세요.
+      vi: 여기요 (gọi nhân viên) đứng đầu, rồi thứ cần (물), 좀 더 là "thêm chút nữa" và luôn đứng trước động từ, còn 주세요 ở cuối. Tiếng Việt đặt "thêm" trước "nước", nhưng tiếng Hàn đặt 더 sát động từ; 얼마예요 là hỏi giá, không dùng ở đây.
+    display_answer: 여기요, 물 좀 더 주세요.
 
   # ---------------- recall ----------------
   - key: ko:exercise:food-shopping-review-translate-order
@@ -354,15 +354,15 @@ exercises:
     difficulty: 3
     item: ko:item:kadeu-gyesan
     prompt:
-      stem: Ăn xong, bạn ra quầy và muốn trả tiền bằng thẻ. Câu nào đúng?
+      stem: Ăn xong, bạn đưa thẻ ngân hàng của mình cho nhân viên và nói "Tôi trả bằng thẻ này". Câu nào đúng?
       stem_lang: vi
       options:
-        - { id: v6e, text: 카드로 계산할게요., lang: ko }
-        - { id: i2w, text: 카드으로 계산할게요., lang: ko }
-        - { id: o8h, text: 카드를 주세요., lang: ko }
-        - { id: k5a, text: 현금으로 계산할게요., lang: ko }
+        - { id: v6e, text: 이 카드로 계산할게요., lang: ko }
+        - { id: i2w, text: 이 카드으로 계산할게요., lang: ko }
+        - { id: o8h, text: 이 카드를 주세요., lang: ko }
+        - { id: k5a, text: 이 현금으로 계산할게요., lang: ko }
     answer:
       correct_option_id: v6e
     explanation:
-      vi: 카드 không có patchim nên dùng 로 - 카드로 (bằng thẻ). 카드를 주세요 là "đưa thẻ cho tôi"; 현금으로 là trả bằng tiền mặt.
-    display_answer: 카드로 계산할게요.
+      vi: 이 (này) đứng trước danh từ như "thẻ này" nhưng ngược trật tự tiếng Việt. 카드 không có patchim nên dùng 로 - 카드로 (bằng thẻ); 카드를 주세요 là "đưa thẻ cho tôi", còn trả bằng tiền mặt là 현금으로.
+    display_answer: 이 카드로 계산할게요.

@@ -218,27 +218,29 @@ exercises:
     difficulty: 2
     item: ko:item:myeot-si
     prompt:
-      source_text: Bây giờ là mấy giờ?
+      source_text: Ở Việt Nam bây giờ là mấy giờ?
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 지금 몇 시예요?
-        - 몇 시예요?
-        - 지금은 몇 시예요?
+        - 베트남은 지금 몇 시예요?
+        - 지금 베트남은 몇 시예요?
+        - 베트남은 몇 시예요?
+        - 베트남은 지금 몇 시입니까?
+        - 지금 베트남은 몇 시입니까?
     known_wrong:
-      - answer: 지금 며칠이에요?
-        feedback_vi: 며칠 là hỏi ngày. Hỏi giờ dùng 몇 시 - 지금 몇 시예요?
+      - answer: 베트남은 지금 며칠이에요?
+        feedback_vi: 며칠 là hỏi ngày. Hỏi giờ dùng 몇 시 - 베트남은 지금 몇 시예요?
         error_tag: question_word
-      - answer: 지금 몇 시이에요?
+      - answer: 베트남은 지금 몇 시이에요?
         feedback_vi: 시 kết thúc bằng nguyên âm nên dùng 예요 - 몇 시예요?
         error_tag: copula_form
-      - answer: 지금 무슨 시예요?
+      - answer: 베트남은 지금 무슨 시예요?
         feedback_vi: Hỏi giờ dùng 몇 (mấy) - 몇 시예요? 무슨 dùng để hỏi thứ (무슨 요일).
         error_tag: question_word
     explanation:
-      vi: 지금 là "bây giờ", 몇 시 là "mấy giờ". 시 kết thúc bằng nguyên âm nên đi với 예요.
-    display_answer: 지금 몇 시예요?
+      vi: "\"Ở Việt Nam\" khi so giờ giữa hai nước thường nói 베트남은 (còn Việt Nam thì…), giống cách tiếng Việt nhấn \"còn bên đó\". 지금 là \"bây giờ\", 몇 시 là \"mấy giờ\"; 시 kết thúc bằng nguyên âm nên đi với 예요."
+    display_answer: 베트남은 지금 몇 시예요?
 
   - key: ko:exercise:numbers-review-fill-21
     type: fill_blank

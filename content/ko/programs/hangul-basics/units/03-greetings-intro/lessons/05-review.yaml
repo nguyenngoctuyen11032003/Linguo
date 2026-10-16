@@ -223,28 +223,33 @@ exercises:
     difficulty: 2
     item: ko:item:mannaseo-bangawoyo
     prompt:
-      source_text: Rất vui được gặp bạn.
+      source_text: Chị Lan ơi, rất vui được gặp chị.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 만나서 반가워요.
-        - 반가워요.
-        - 만나서 반갑습니다.
-        - 반갑습니다.
+        - 란 씨, 만나서 반가워요.
+        - 란 씨, 반가워요.
+        - 란 씨, 만나서 반갑습니다.
+        - 란 씨, 반갑습니다.
+        - 만나서 반가워요, 란 씨.
+        - 반가워요, 란 씨.
     known_wrong:
-      - answer: 만나서 반가와요.
+      - answer: 란 씨, 만나서 반가와요.
         feedback_vi: Viết là 반가워요, không phải 반가와요.
         error_tag: spelling
-      - answer: 만나서 반갑씀니다.
+      - answer: 란 씨, 만나서 반갑씀니다.
         feedback_vi: Đọc [반갑씀니다] nhưng viết 반갑습니다.
         error_tag: spelling_by_sound
-      - answer: mannaseo bangawoyo
-        feedback_vi: Hãy gõ bằng chữ Hangul (만나서 반가워요), không dùng phiên âm Latinh.
+      - answer: 란, 만나서 반가워요.
+        feedback_vi: Gọi người mới quen bằng tên trơn là thiếu lịch sự - thêm 씨 sau tên - 란 씨.
+        error_tag: missing_ssi
+      - answer: ran ssi, mannaseo bangawoyo
+        feedback_vi: Hãy gõ bằng chữ Hangul (란 씨, 만나서 반가워요), không dùng phiên âm Latinh.
         error_tag: romanization
     explanation:
-      vi: 만나서 (vì được gặp) + 반가워요 (vui mừng). Dạng trang trọng là 반갑습니다; khi nói nhanh có thể chỉ nói 반가워요.
-    display_answer: 만나서 반가워요.
+      vi: Gọi tên kèm 씨 (란 씨) thay cho “chị Lan ơi”, rồi 만나서 (vì được gặp) + 반가워요 (vui mừng). Tiếng Hàn không lặp lại “chị” ở cuối câu như tiếng Việt; dạng trang trọng là 반갑습니다.
+    display_answer: 란 씨, 만나서 반가워요.
 
   - key: ko:exercise:gi-review-fill-goodbye-teacher
     type: fill_blank
@@ -279,29 +284,29 @@ exercises:
     difficulty: 3
     item: ko:item:ssi
     prompt:
-      source_text: Anh Minsu là người Hàn Quốc à?
+      source_text: Chị Yuki là người Nhật à?
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 민수 씨는 한국 사람이에요?
-        - 민수 씨는 한국 사람입니까?
-        - 민수 씨는 한국인이에요?
-        - 민수 씨, 한국 사람이에요?
-        - 민수 씨는 한국 사람인가요?
+        - 유키 씨는 일본 사람이에요?
+        - 유키 씨는 일본 사람입니까?
+        - 유키 씨는 일본인이에요?
+        - 유키 씨, 일본 사람이에요?
+        - 유키 씨는 일본 사람인가요?
     known_wrong:
-      - answer: 민수 씨은 한국 사람이에요?
-        feedback_vi: 씨 không có patchim nên đi với 는 - 민수 씨는.
+      - answer: 유키 씨은 일본 사람이에요?
+        feedback_vi: 씨 không có patchim nên đi với 는 - 유키 씨는.
         error_tag: particle_eun_neun
-      - answer: 민수 씨는 한국 사람예요?
+      - answer: 유키 씨는 일본 사람예요?
         feedback_vi: 람 có patchim ㅁ nên dùng 이에요 - 사람이에요.
         error_tag: copula_form
-      - answer: 민수 씨는 사람 한국이에요?
-        feedback_vi: Tên nước đứng trước 사람 - 한국 사람.
+      - answer: 유키 씨는 사람 일본이에요?
+        feedback_vi: Tên nước đứng trước 사람 - 일본 사람, ngược với “người Nhật” của tiếng Việt.
         error_tag: word_order
     explanation:
-      vi: “Anh Minsu” là 민수 씨; câu hỏi có/không giữ nguyên câu kể 한국 사람이에요 và lên giọng ở cuối.
-    display_answer: 민수 씨는 한국 사람이에요?
+      vi: “Chị Yuki” là 유키 씨 (씨 dùng cho cả nam lẫn nữ); 일본 사람 = người Nhật. Câu hỏi có/không giữ nguyên câu kể 일본 사람이에요 và chỉ lên giọng ở cuối, không cần từ để hỏi như “à”, “không”.
+    display_answer: 유키 씨는 일본 사람이에요?
 
   # ---------------- application ----------------
   - key: ko:exercise:gi-review-translate-intro-vi

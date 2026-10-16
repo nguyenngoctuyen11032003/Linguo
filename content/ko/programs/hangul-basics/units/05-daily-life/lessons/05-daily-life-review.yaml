@@ -319,31 +319,32 @@ exercises:
     difficulty: 2
     item: ko:item:phrase-mwo-haeyo
     prompt:
-      source_text: 지금 도서관에서 책을 읽어요.
+      source_text: 지금 학교에서 친구를 만나요.
       source_lang: ko
       direction: target_to_vi
     answer:
       accepted:
-        - Bây giờ tôi đang đọc sách ở thư viện.
-        - Bây giờ tôi đọc sách ở thư viện.
-        - Tôi đang đọc sách ở thư viện.
-        - Giờ tôi đang đọc sách ở thư viện.
-        - Bây giờ tôi đang đọc sách trong thư viện.
-        - Bây giờ tôi đang đọc sách tại thư viện.
-        - Hiện giờ tôi đang đọc sách ở thư viện.
-        - Bây giờ mình đang đọc sách ở thư viện.
+        - Bây giờ tôi đang gặp bạn ở trường.
+        - Bây giờ tôi gặp bạn ở trường.
+        - Tôi đang gặp bạn ở trường.
+        - Giờ tôi đang gặp bạn ở trường.
+        - Bây giờ tôi đang gặp bạn tại trường.
+        - Bây giờ tôi gặp bạn tại trường.
+        - Hiện giờ tôi đang gặp bạn ở trường.
+        - Bây giờ mình đang gặp bạn ở trường.
+        - Bây giờ tôi đang gặp bạn bè ở trường.
     rubric:
       diacritics: lenient
     known_wrong:
-      - answer: Bây giờ tôi đi đến thư viện đọc sách.
-        feedback_vi: Câu dùng 도서관에서 - hành động đọc sách đang diễn ra ở thư viện, không phải đi tới thư viện.
+      - answer: Bây giờ tôi đi đến trường gặp bạn.
+        feedback_vi: Câu dùng 학교에서 - việc gặp bạn đang diễn ra ở trường, không phải đi tới trường (학교에 가요).
         error_tag: particle_e_eseo
-      - answer: Bây giờ tôi đang viết sách ở thư viện.
-        feedback_vi: 읽어요 là "đọc"; "viết" là 써요.
-        error_tag: vocab_meaning
+      - answer: Bây giờ bạn tôi đang gặp tôi ở trường.
+        feedback_vi: 친구를 có 를 - 친구 là người được gặp (tân ngữ), còn người đi gặp là "tôi" bị lược.
+        error_tag: object_marker
     explanation:
-      vi: 지금 là "bây giờ", 도서관에서 là "ở thư viện" (nơi hành động diễn ra), 책을 읽어요 là "đọc sách". Đuôi -어요 dùng cả cho "đang", nên tiếng Việt thêm "đang" rất tự nhiên.
-    display_answer: Bây giờ tôi đang đọc sách ở thư viện.
+      vi: 지금 là "bây giờ", 학교에서 là "ở trường" (nơi hành động diễn ra), 친구를 만나요 là "gặp bạn" - tiếng Hàn đánh dấu người được gặp bằng 를. Đuôi -아요 dùng cả cho "đang", nên tiếng Việt thêm "đang" rất tự nhiên.
+    display_answer: Bây giờ tôi đang gặp bạn ở trường.
 
   - key: ko:exercise:dl-review-order-not-eat-home
     type: word_bank

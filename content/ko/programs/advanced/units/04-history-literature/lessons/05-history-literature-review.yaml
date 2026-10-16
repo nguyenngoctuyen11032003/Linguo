@@ -266,7 +266,7 @@ exercises:
     difficulty: 3
     item: ko:item:hl-miyeokguk-meokda
     prompt:
-      template: "Anh ấy lại trượt kỳ thi lần này. - 그는 이번 시험에서 또 미역국을 {{b1}}."
+      template: "Ba năm liền chị ấy trượt kỳ thi công chức. - 그녀는 공무원 시험에서 3년 연속 미역국을 {{b1}}."
       blanks:
         - { id: b1, width_hint: 3 }
     answer:
@@ -284,7 +284,7 @@ exercises:
         error_tag: tense
     explanation:
       vi: 미역국을 먹다 = thi trượt (ngữ cảnh 시험). Việc đã xảy ra nên chia quá khứ 먹었다 / 먹었어요.
-    display_answer: 그는 이번 시험에서 또 미역국을 먹었다.
+    display_answer: 그녀는 공무원 시험에서 3년 연속 미역국을 먹었다.
 
   # ---------------- application ----------------
   - key: ko:exercise:hl-review-mcq-essay-attitude

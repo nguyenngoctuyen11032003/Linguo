@@ -337,20 +337,21 @@ exercises:
     difficulty: 3
     item: ko:item:ikda
     prompt:
-      source_text: 책을 읽어요.
+      source_text: 편지를 읽어요.
       source_lang: ko
       direction: target_to_vi
     answer:
       accepted:
-        - Tôi đọc sách.
-        - Tôi đang đọc sách.
-        - Đọc sách.
-        - Mình đọc sách.
-        - Tôi đọc sách ạ.
-        - Mình đang đọc sách.
-        - Đang đọc sách.
+        - Tôi đọc thư.
+        - Tôi đang đọc thư.
+        - Đọc thư.
+        - Mình đọc thư.
+        - Mình đang đọc thư.
+        - Đang đọc thư.
+        - Tôi đọc lá thư.
+        - Tôi đang đọc lá thư.
     rubric:
       diacritics: lenient
     explanation:
-      vi: 책 là sách, 을 đánh dấu tân ngữ, 읽어요 là "đọc" (từ 읽다). Câu đọc liền là [채글 일거요] vì cả hai patchim đều nối sang nguyên âm phía sau.
-    display_answer: Tôi đọc sách.
+      vi: 편지 là lá thư, 를 đánh dấu tân ngữ, 읽어요 là "đọc" (từ 읽다). Patchim kép ㄺ nối sang nguyên âm phía sau nên 읽어요 đọc là [일거요] - khác với tiếng Việt, phụ âm cuối không "đứng yên" ở âm tiết của nó.
+    display_answer: Tôi đọc thư.

@@ -71,10 +71,10 @@ body:
     note:
       vi: Bài phỏng vấn dùng 해요체. Tìm lại các cấu trúc - 만들어 봤어요, 베트남에 비해, 달라져요, 좋아졌어요, 문제라고 생각해요, 배울 수 있었으면 좋겠어요.
   - type: example
-    target: 제 생각에는 어른에게 물건을 드릴 때 두 손으로 드릴 필요가 있어요.
+    target: 제 생각에는 어른과 술을 마실 때 고개를 돌리고 마실 필요가 있어요.
     target_lang: ko
     translation:
-      vi: Theo tôi, khi đưa đồ cho người lớn thì cần đưa bằng hai tay.
+      vi: Theo tôi, khi uống rượu với người lớn thì cần quay mặt sang bên khi uống.
   - type: example
     target: 댓글을 보니까 사람들이 그 광고를 싫어하나 봐요.
     target_lang: ko

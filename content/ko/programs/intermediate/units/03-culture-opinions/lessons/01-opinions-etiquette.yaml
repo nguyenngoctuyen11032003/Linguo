@@ -338,18 +338,18 @@ exercises:
     difficulty: 3
     item: ko:item:banmal
     prompt:
-      stem: Bạn gặp bà cụ hàng xóm ở thang máy và muốn hỏi "Bà đi đâu ạ?". Câu nào phù hợp?
+      stem: Buổi trưa, bạn gặp bà cụ hàng xóm ở thang máy và muốn hỏi thăm "Bà đã dùng bữa chưa ạ?". Câu nào phù hợp?
       stem_lang: vi
       options:
-        - { id: r6p, text: "할머니, 어디 가세요?", lang: ko }
-        - { id: e3k, text: "할머니, 어디 가?", lang: ko }
-        - { id: w9d, text: "할머니, 어디 가니?", lang: ko }
-        - { id: c1x, text: "할머니, 어디 갈래?", lang: ko }
+        - { id: r6p, text: "할머니, 식사하셨어요?", lang: ko }
+        - { id: e3k, text: "할머니, 밥 먹었어?", lang: ko }
+        - { id: w9d, text: "할머니, 밥 먹었니?", lang: ko }
+        - { id: c1x, text: "할머니, 밥 먹을래?", lang: ko }
     answer:
       correct_option_id: r6p
     explanation:
-      vi: Với người lớn tuổi phải dùng 존댓말 - 가세요? vừa lịch sự vừa kính trọng. 가?, 가니?, 갈래? đều là 반말, chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn.
-    display_answer: 할머니, 어디 가세요?
+      vi: Với người lớn tuổi phải dùng 존댓말 và cả từ kính ngữ - 식사하시다 thay cho 밥 먹다, giống tiếng Việt đổi "ăn cơm" thành "dùng bữa". 먹었어?, 먹었니?, 먹을래? đều là 반말, chỉ dùng với bạn thân hoặc người nhỏ tuổi hơn.
+    display_answer: "할머니, 식사하셨어요?"
 
   - key: ko:exercise:opinions-etiquette-translate-age-culture
     type: translate

@@ -357,18 +357,18 @@ exercises:
     difficulty: 4
     item: ko:item:gram-eul-tenikka
     prompt:
-      stem: Bạn của bạn để quên túi trên xe buýt và đang rất lo. Bạn muốn nói "Tôi sẽ thử gọi cho trung tâm đồ thất lạc, bạn đừng lo". Câu nào đúng?
+      stem: Bạn của bạn để quên túi trên xe buýt và đang rất lo. Bạn muốn nói "Để tôi hỏi bác tài xế cho, bạn đừng lo". Câu nào đúng?
       stem_lang: vi
       options:
-        - { id: f5q, text: 제가 분실물 센터에 전화해 볼 테니까 걱정하지 마세요., lang: ko }
-        - { id: l2z, text: 제가 분실물 센터에 전화해 보는 바람에 걱정하지 마세요., lang: ko }
-        - { id: r9u, text: 제가 분실물 센터에 전화해 봤더니 걱정하지 마세요., lang: ko }
-        - { id: g4o, text: 제가 분실물 센터에 전화해 볼 테니까 걱정되지 마세요., lang: ko }
+        - { id: f5q, text: 제가 기사님께 물어볼 테니까 걱정하지 마세요., lang: ko }
+        - { id: l2z, text: 제가 기사님께 물어보는 바람에 걱정하지 마세요., lang: ko }
+        - { id: r9u, text: 제가 기사님께 물어봤더니 걱정하지 마세요., lang: ko }
+        - { id: g4o, text: 제가 기사님께 물어볼 테니까 걱정되지 마세요., lang: ko }
     answer:
       correct_option_id: f5q
     explanation:
       vi: Ý định của mình + lời trấn an → -(으)ㄹ 테니까 + 걱정하지 마세요. -는 바람에, -았/었더니 không đi với lời khuyên; 걱정되지 마세요 sai, phải là 걱정하지 마세요.
-    display_answer: 제가 분실물 센터에 전화해 볼 테니까 걱정하지 마세요.
+    display_answer: 제가 기사님께 물어볼 테니까 걱정하지 마세요.
 
   - key: ko:exercise:dt-review-translate-to-vi
     type: translate

@@ -332,21 +332,24 @@ exercises:
     difficulty: 2
     item: ko:item:uisa
     prompt:
-      source_text: 의사예요.
+      source_text: 의사예요?
       source_lang: ko
       direction: target_to_vi
     answer:
       accepted:
-        - Tôi là bác sĩ.
-        - Đó là bác sĩ.
-        - Là bác sĩ.
-        - Anh ấy là bác sĩ.
-        - Cô ấy là bác sĩ.
-        - Người đó là bác sĩ.
-        - Đây là bác sĩ.
-        - Ông ấy là bác sĩ.
+        - Bạn là bác sĩ à?
+        - Bạn là bác sĩ phải không?
+        - Bạn là bác sĩ ạ?
+        - Anh là bác sĩ à?
+        - Chị là bác sĩ à?
+        - Anh là bác sĩ phải không?
+        - Chị là bác sĩ phải không?
+        - Là bác sĩ à?
+        - Đó là bác sĩ à?
+        - Người đó là bác sĩ à?
+        - Người đó là bác sĩ phải không?
     rubric:
       diacritics: lenient
     explanation:
-      vi: 의사 là bác sĩ, 예요 là "là". Tiếng Hàn thường bỏ chủ ngữ, nên bạn tự thêm "tôi", "anh ấy"… theo ngữ cảnh.
-    display_answer: Tôi là bác sĩ.
+      vi: 의사 là bác sĩ, 예요 là "là". Chỉ cần lên giọng ở cuối (dấu ?) là thành câu hỏi, không cần thêm "à", "phải không" như tiếng Việt; chủ ngữ bị lược nên bạn tự thêm "bạn", "anh", "chị"… theo ngữ cảnh.
+    display_answer: Bạn là bác sĩ à?

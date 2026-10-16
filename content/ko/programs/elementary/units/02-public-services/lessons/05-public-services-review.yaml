@@ -208,7 +208,7 @@ exercises:
     difficulty: 2
     item: ko:item:gram-a-eo-juseyo
     prompt:
-      template: "직원: 여기에 이름을 {{b1}} 주세요. (쓰다)"
+      template: "직원: 이 신청서에 주소도 {{b1}} 주세요. (쓰다)"
       blanks:
         - { id: b1, width_hint: 2 }
     answer:
@@ -226,7 +226,7 @@ exercises:
         error_tag: a_eo_juseyo_form
     explanation:
       vi: Nhờ viết giúp - V-아/어 주세요. 쓰다 là bất quy tắc ㅡ, thân một âm tiết nên + 어 → 써.
-    display_answer: "직원: 여기에 이름을 써 주세요."
+    display_answer: "직원: 이 신청서에 주소도 써 주세요."
 
   - key: ko:exercise:public-review-translate-exchange
     type: translate
@@ -334,30 +334,35 @@ exercises:
     difficulty: 3
     item: ko:item:phrase-anjeuseyo
     prompt:
-      source_text: Bà ơi, mời bà ngồi đây ạ.
+      source_text: Ông ơi, mời ông ngồi chỗ này ạ.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - 할머니, 여기 앉으세요.
-        - 할머니, 여기에 앉으세요.
-        - 할머니, 이쪽에 앉으세요.
-        - 할머니, 여기 앉으십시오.
-        - 여기 앉으세요.
-        - 할머니, 이리 앉으세요.
+        - 할아버지, 이 자리에 앉으세요.
+        - 할아버지, 여기 앉으세요.
+        - 할아버지, 여기에 앉으세요.
+        - 할아버지, 이쪽에 앉으세요.
+        - 할아버지, 이 자리에 앉으십시오.
+        - 할아버지, 여기 앉으십시오.
+        - 할아버지, 이 의자에 앉으세요.
+        - 이 자리에 앉으세요.
     known_wrong:
-      - answer: 할머니, 여기 앉아요.
+      - answer: 할아버지, 이 자리에 앉아요.
         feedback_vi: Mời người lớn ngồi dùng kính ngữ đề nghị - 앉으세요.
         error_tag: honorific_missing
-      - answer: 할머니, 여기 앉세요.
+      - answer: 할아버지, 이 자리에 앉세요.
         feedback_vi: 앉다 có patchim nên cần 으 - 앉으세요.
         error_tag: euseyo_batchim
-      - answer: 할머니, 여기 앉아 주세요.
+      - answer: 할아버지, 이 자리에 앉아 주세요.
         feedback_vi: 앉아 주세요 là "ngồi giúp tôi", nghe như nhờ vả; mời ngồi dùng 앉으세요.
         error_tag: a_eo_juseyo_meaning
+      - answer: 할아버지, 이 자리를 앉으세요.
+        feedback_vi: Ngồi "vào" chỗ nào dùng 에 - 이 자리에 앉으세요, không dùng 를.
+        error_tag: particle_e
     explanation:
-      vi: Mời người lớn tuổi ngồi - 앉다 có patchim nên + 으세요 → 앉으세요. Câu bạn sẽ nói khi nhường ghế trên tàu điện ngầm.
-    display_answer: 할머니, 여기 앉으세요.
+      vi: Mời người lớn tuổi ngồi - 앉다 có patchim nên + 으세요 → 앉으세요; "chỗ này" là 이 자리, đi với 에 vì đó là nơi mình ngồi vào. Tiếng Việt lặp "ông" ở cuối câu để lễ phép, còn tiếng Hàn thể hiện sự kính trọng bằng đuôi -(으)세요.
+    display_answer: 할아버지, 이 자리에 앉으세요.
 
   - key: ko:exercise:public-review-translate-to-vi
     type: translate
