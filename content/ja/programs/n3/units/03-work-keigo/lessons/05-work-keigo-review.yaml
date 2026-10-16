@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-work-keigo-review
+order_index: 5
+level: n3
+title:
+  vi: "Ôn tập: email công việc"
+objectives:
+  - vi: Đọc hiểu một email công việc ngắn có kính ngữ.
+  - vi: Trả lời cấp trên, đối tác bằng 承知しました, 申し訳ございません.
+  - vi: Viết câu báo đính kèm, nhờ kiểm tra bằng ご確認ください.
+estimated_minutes: 22
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n3-phone-email]
+items:
+  - item: ja:item:n3-kakunin
+  - item: ja:item:n3-shouchi
+  - item: ja:item:n3-moushiwake
+  - item: ja:item:n3-tenpu
+  - item: ja:item:n3-osewa
+    role: reuse
+  - item: ja:item:n3-gram-sonkeigo
+    role: reuse
+  - item: ja:item:n3-gram-kenjougo
+    role: reuse
+  - item: ja:item:n3-gram-koto-ni-naru
+    role: reuse
+  - item: ja:item:n3-gram-te-itadakemasenka
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn gom toàn bộ unit vào một tình huống quen thuộc - email công việc với đối tác và cấp trên.
+  - type: explain
+    text:
+      vi: 'Khung email công việc tiếng Nhật: (1) tên người nhận + 様 - 株式会社XYZ 山田様; (2) お世話になっております; (3) tự giới thiệu - ABC社のグエンです; (4) nội dung; (5) kết thư - よろしくお願いいたします.'
+  - type: explain
+    text:
+      vi: 'Câu hay dùng: 資料を添付いたしました (tôi đã đính kèm tài liệu); ご確認ください / ご確認いただけますでしょうか (xin kiểm tra); 承知しました (tôi đã rõ); ご迷惑をおかけして申し訳ございません (xin lỗi vì đã gây phiền).'
+  - type: deep_explain
+    text:
+      vi: Trong email, ご + từ Hán (ご確認, ご連絡, ご検討) xuất hiện dày đặc. Hãy nhớ - ご～ください là nhờ người kia làm (tôn kính), còn ご～します / いたします là mình làm cho người kia (khiêm nhường). Cùng một chữ ご連絡 nhưng ご連絡ください và ご連絡いたします nghĩa ngược nhau về người làm.
+  - type: example
+    target: 見積書を添付いたしました。ご確認ください。
+    target_lang: ja
+    translation:
+      vi: Tôi đã đính kèm bảng báo giá. Xin anh/chị kiểm tra giúp.
+  - type: example
+    target: 承知しました。明日までに準備いたします。
+    target_lang: ja
+    translation:
+      vi: Tôi rõ rồi ạ. Tôi sẽ chuẩn bị xong trước ngày mai.
+  - type: example
+    target: ご迷惑をおかけして、申し訳ございません。
+    target_lang: ja
+    translation:
+      vi: Tôi vô cùng xin lỗi vì đã gây phiền phức cho anh/chị.
+  - type: example
+    target: 打ち合わせの日程を変更することになりましたので、ご連絡いたします。
+    target_lang: ja
+    translation:
+      vi: Lịch buổi trao đổi đã được đổi nên tôi xin báo để anh/chị biết.
+  - type: common_mistake
+    wrong: 部長、了解です。
+    right: 部長、承知しました。
+    target_lang: ja
+    note:
+      vi: 了解です nghe ngang hàng, nhiều người Nhật coi là thiếu lễ với cấp trên. Với sếp, khách dùng 承知しました hoặc かしこまりました.
+  - type: common_mistake
+    wrong: 資料を添付しましたので、ご確認してください。
+    right: 資料を添付しましたので、ご確認ください。
+    target_lang: ja
+    note:
+      vi: ご確認する là khiêm nhường (mình kiểm tra) nên không ghép với ～てください. Nhờ người kia kiểm tra - ご確認ください.
+  - type: summary
+    points:
+      - vi: Email - 様, お世話になっております, nội dung, よろしくお願いいたします.
+      - vi: 添付いたしました, ご確認ください, 承知しました, 申し訳ございません.
+      - vi: ご～ください - người kia làm; ご～いたします - mình làm.
+      - vi: Ôn lại tôn kính, khiêm nhường, ことになる, ていただけませんか.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-work-keigo-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-tenpu
+    prompt:
+      stem: "Đọc email: 「お世話になっております。ABC社のグエンです。来週の会議の資料を添付いたしました。お手数ですが、金曜日までにご確認いただけますでしょうか。」 Người viết muốn gì?"
+      stem_lang: vi
+      options:
+        - { id: k3e, text: Nhờ người nhận kiểm tra tài liệu đính kèm trước thứ Sáu., lang: vi }
+        - { id: w9p, text: Nhờ người nhận gửi tài liệu cuộc họp trước thứ Sáu., lang: vi }
+        - { id: a5h, text: Báo cuộc họp tuần sau bị huỷ., lang: vi }
+        - { id: u2y, text: Xin lỗi vì gửi tài liệu muộn., lang: vi }
+    answer:
+      correct_option_id: k3e
+    explanation:
+      vi: 添付いたしました - tôi đã đính kèm (mình gửi); ご確認いただけますでしょうか - anh/chị kiểm tra giúp được không; 金曜日までに - trước thứ Sáu. お手数ですが - xin lỗi làm phiền anh/chị.
+    display_answer: Nhờ người nhận kiểm tra tài liệu đính kèm trước thứ Sáu.
+
+  - key: ja:exercise:n3-work-keigo-review-listen-moushiwake
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-moushiwake
+    prompt:
+      audio_asset_id: null
+      fallback_text: ご迷惑をおかけして、申し訳ございません。
+      options:
+        - { id: s6c, text: Tôi vô cùng xin lỗi vì đã gây phiền phức cho anh/chị., lang: vi }
+        - { id: h1v, text: Cảm ơn anh/chị đã giúp đỡ tôi rất nhiều., lang: vi }
+        - { id: e7n, text: Anh/chị đã làm phiền tôi rất nhiều., lang: vi }
+        - { id: q4r, text: Xin đừng làm phiền tôi nữa., lang: vi }
+    answer:
+      correct_option_id: s6c
+    explanation:
+      vi: 迷惑をかける - gây phiền; ご迷惑をおかけして - (khiêm nhường) vì tôi đã gây phiền cho anh/chị; 申し訳ございません - tôi vô cùng xin lỗi.
+    display_answer: Tôi vô cùng xin lỗi vì đã gây phiền phức cho anh/chị.
+
+  - key: ja:exercise:n3-work-keigo-review-mcq-shouchi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-shouchi
+    prompt:
+      stem: 'Trưởng phòng nhờ bạn sửa báo cáo trước ngày mai. Bạn đáp: ＿＿。明日までに直します。'
+      stem_lang: vi
+      options:
+        - { id: c8m, text: 承知しました, lang: ja }
+        - { id: b3k, text: 了解, lang: ja }
+        - { id: j6w, text: いただきます, lang: ja }
+        - { id: x1d, text: お世話になっております, lang: ja }
+    answer:
+      correct_option_id: c8m
+    explanation:
+      vi: 承知しました - tôi đã rõ (trang trọng). 了解 trống không quá suồng sã với sếp; いただきます là câu trước khi ăn/nhận; お世話になっております là câu chào đối tác.
+    display_answer: 承知しました
+
+  - key: ja:exercise:n3-work-keigo-review-fill-gokakunin
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kakunin
+    prompt:
+      template: "添付の資料を{{b1}}ください。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Xin vui lòng kiểm tra tài liệu đính kèm."
+        - "Gợi ý: ご + từ Hán nghĩa 'kiểm tra, xác nhận'."
+    answer:
+      blanks:
+        b1: [ご確認, ごかくにん]
+    known_wrong:
+      - answer: ご確認して
+        feedback_vi: Nhờ người kia - ご確認ください, không có して.
+        error_tag: go_kudasai_form
+      - answer: 確認して
+        feedback_vi: 確認してください đúng ngữ pháp nhưng kém lịch sự trong email với đối tác; dùng ご確認ください.
+        error_tag: register
+    explanation:
+      vi: ご + từ Hán + ください - ご確認ください, ご連絡ください. Đây là dạng nhờ vả lịch sự rất hay dùng trong email.
+    display_answer: 添付の資料をご確認ください。
+
+  - key: ja:exercise:n3-work-keigo-review-wb-tenpu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-tenpu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi đã đính kèm bảng báo giá.\""
+      tokens:
+        - { id: p2, text: 添付いたしました }
+        - { id: p3, text: 添付なさいました }
+        - { id: p1, text: 見積書を }
+    answer:
+      orders:
+        - [p1, p2]
+    explanation:
+      vi: Mình đính kèm - khiêm nhường 添付いたしました (いたす = する khiêm nhường). なさる là tôn kính, dùng cho người kia.
+    display_answer: 見積書を添付いたしました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-work-keigo-review-fill-moushiwake
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-moushiwake
+    prompt:
+      template: "ご迷惑をおかけして、申し訳{{b1}}。(trang trọng nhất)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [ございません]
+    known_wrong:
+      - answer: ないです
+        feedback_vi: 申し訳ないです thiếu trang trọng với khách; dùng 申し訳ございません.
+        error_tag: register
+      - answer: ありません
+        feedback_vi: 申し訳ありません lịch sự nhưng đề bài yêu cầu mức trang trọng nhất - ございません.
+        error_tag: register
+    explanation:
+      vi: すみません < 申し訳ありません < 申し訳ございません. ご迷惑をおかけして - vì đã gây phiền.
+    display_answer: ご迷惑をおかけして、申し訳ございません。
+
+  - key: ja:exercise:n3-work-keigo-review-translate-shouchi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-shouchi
+    prompt:
+      source_text: Tôi rõ rồi ạ. Tôi sẽ chuẩn bị trước ngày mai. (trả lời sếp, khiêm nhường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 承知しました。明日までに準備いたします。
+        - 承知しました。明日までに準備します。
+        - 承知いたしました。明日までに準備いたします。
+        - 承知いたしました。明日までに準備します。
+        - かしこまりました。明日までに準備いたします。
+        - かしこまりました。明日までに準備します。
+        - 承知しました、明日までに準備いたします。
+        - 承知しました。明日までにご準備いたします。
+        - 承知しました。明日までに用意いたします。
+        - 承知しました。明日までに用意します。
+        - しょうちしました。あしたまでにじゅんびいたします。
+        - しょうちしました。あしたまでにじゅんびします。
+    known_wrong:
+      - answer: 了解です。明日までに準備します。
+        feedback_vi: 了解です không nên dùng với sếp; dùng 承知しました.
+        error_tag: register
+      - answer: 承知しました。明日までに準備なさいます。
+        feedback_vi: なさる là tôn kính, không dùng cho mình; dùng いたします.
+        error_tag: sonkeigo_kenjougo
+      - answer: 承知しました。明日に準備いたします。
+        feedback_vi: Hạn chót "trước ngày mai" dùng までに; 明日に là "vào ngày mai".
+        error_tag: made_ni
+    explanation:
+      vi: 承知しました / かしこまりました - tôi rõ rồi; 明日までに - trước (hạn) ngày mai; 準備いたします - tôi sẽ chuẩn bị (khiêm nhường).
+    display_answer: 承知しました。明日までに準備いたします。
+
+  - key: ja:exercise:n3-work-keigo-review-translate-kakunin
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-kakunin
+    prompt:
+      source_text: Tôi đã đính kèm tài liệu. Xin anh/chị kiểm tra giúp. (email)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 資料を添付いたしました。ご確認ください。
+        - 資料を添付しました。ご確認ください。
+        - 資料を添付いたしましたので、ご確認ください。
+        - 資料を添付しましたので、ご確認ください。
+        - 資料を添付いたしました。ご確認をお願いいたします。
+        - 資料を添付いたしました。ご確認をお願いします。
+        - 資料を添付しました。ご確認をお願いいたします。
+        - 資料を添付しました。ご確認をお願いします。
+        - 資料を添付いたしました。ご確認いただけますでしょうか。
+        - 資料を添付いたしました。ご確認いただけませんか。
+        - 資料を添付いたしました。ご確認いただけますか。
+        - 資料を添付しました。ご確認いただけますか。
+        - 資料を添付いたしました。ご確認のほど、よろしくお願いいたします。
+        - しりょうをてんぷいたしました。ごかくにんください。
+    known_wrong:
+      - answer: 資料を添付いたしました。ご確認してください。
+        feedback_vi: ご確認する là khiêm nhường; nhờ người kia - ご確認ください.
+        error_tag: go_kudasai_form
+      - answer: 資料を添付なさいました。ご確認ください。
+        feedback_vi: Mình đính kèm thì dùng いたしました hoặc しました; なさる là tôn kính.
+        error_tag: sonkeigo_kenjougo
+    explanation:
+      vi: 添付いたしました - tôi đã đính kèm; ご確認ください / ご確認をお願いいたします - xin kiểm tra.
+    display_answer: 資料を添付いたしました。ご確認ください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-work-keigo-review-mcq-renraku
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-kenjougo
+    prompt:
+      stem: 'Bạn muốn viết cho đối tác: "Khi đã quyết định ngày, tôi sẽ liên lạc lại với anh/chị." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: f5t, text: 日程が決まりましたら、ご連絡いたします。, lang: ja }
+        - { id: o8j, text: 日程が決まりましたら、ご連絡ください。, lang: ja }
+        - { id: d2s, text: 日程が決まりましたら、ご連絡なさいます。, lang: ja }
+        - { id: l7a, text: 日程が決まりましたら、お連絡いたします。, lang: ja }
+    answer:
+      correct_option_id: f5t
+    explanation:
+      vi: Mình liên lạc - ご連絡いたします. ご連絡ください là nhờ người kia liên lạc (ngược nghĩa); なさる là tôn kính; 連絡 là từ Hán nên dùng ご.
+    display_answer: 日程が決まりましたら、ご連絡いたします。
+
+  - key: ja:exercise:n3-work-keigo-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-gram-koto-ni-naru
+    prompt:
+      source_text: 会議の日程を変更することになりましたので、ご連絡いたします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lịch họp đã được thay đổi nên tôi xin thông báo.
+        - Lịch họp đã được thay đổi nên tôi xin liên lạc với anh chị.
+        - Lịch họp đã được đổi nên tôi xin thông báo.
+        - Lịch họp đã được quyết định thay đổi nên tôi xin thông báo.
+        - Lịch cuộc họp đã được thay đổi nên tôi xin thông báo.
+        - Vì lịch họp đã được thay đổi nên tôi xin thông báo.
+        - Vì lịch họp đã được thay đổi nên tôi xin thông báo cho anh chị.
+        - Lịch họp đã được thay đổi nên tôi xin thông báo cho anh chị.
+        - Lịch họp đã được thay đổi nên tôi xin báo để anh chị biết.
+        - Lịch họp sẽ được thay đổi nên tôi xin thông báo.
+        - Đã có quyết định đổi lịch họp nên tôi xin thông báo.
+        - Lịch họp đã thay đổi nên tôi xin thông báo.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã quyết định đổi lịch họp, xin anh chị liên lạc với tôi.
+        feedback_vi: ことになりました - được quyết định (không phải tôi tự quyết); ご連絡いたします - tôi liên lạc, không phải nhờ người kia.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: 日程 - lịch trình; 変更することになりました - đã được quyết định thay đổi; ご連絡いたします - tôi xin liên lạc, thông báo.
+    display_answer: Lịch họp đã được thay đổi nên tôi xin thông báo.
+
+  - key: ja:exercise:n3-work-keigo-review-wb-email
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-te-itadakemasenka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Anh/chị có thể gửi lại tài liệu cho tôi được không ạ?\""
+      tokens:
+        - { id: s3, text: 送って }
+        - { id: s5, text: さしあげませんか }
+        - { id: s1, text: 資料を }
+        - { id: s4, text: いただけませんか }
+        - { id: s2, text: もう一度 }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+        - [s2, s1, s3, s4]
+    explanation:
+      vi: V-ていただけませんか - nhờ người kia làm cho mình. ～てさしあげる là mình làm cho người trên - sai hướng.
+    display_answer: 資料をもう一度送っていただけませんか。
+
+  - key: ja:exercise:n3-work-keigo-review-mcq-email
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-osewa
+    prompt:
+      stem: Bạn gửi email đầu tiên trong ngày cho anh Yamada ở công ty đối tác XYZ. Phần mở đầu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: v4q, text: 株式会社XYZ 山田様　お世話になっております。ABC社のグエンです。, lang: ja }
+        - { id: g9b, text: 株式会社XYZ 山田さん　お疲れ様です。グエンです。, lang: ja }
+        - { id: t1x, text: 株式会社XYZ 山田様　はじめまして。グエンと申します。, lang: ja }
+        - { id: m6h, text: 山田くん　こんにちは。グエンだよ。, lang: ja }
+    answer:
+      correct_option_id: v4q
+    explanation:
+      vi: Đối tác quen - tên + 様, お世話になっております, tự giới thiệu kèm tên công ty. お疲れ様です dùng nội bộ; はじめまして chỉ cho lần liên lạc đầu tiên; câu cuối quá thân mật.
+    display_answer: 株式会社XYZ 山田様　お世話になっております。ABC社のグエンです。

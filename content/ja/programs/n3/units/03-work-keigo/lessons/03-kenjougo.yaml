@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n3-kenjougo
+order_index: 3
+level: n3
+title:
+  vi: Khiêm nhường ngữ - hạ mình khi nói với người trên
+objectives:
+  - vi: Lập khiêm nhường ngữ bằng お～する / ご～する cho hành động hướng về người kia.
+  - vi: Dùng đúng 参る, 申す, 伺う, 拝見する khi nói về chính mình.
+  - vi: Phân biệt cặp tôn kính - khiêm nhường (いらっしゃる/参る, ご覧になる/拝見する).
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n3-sonkeigo]
+items:
+  - item: ja:item:n3-gram-kenjougo
+  - item: ja:item:n3-mairu
+  - item: ja:item:n3-mousu
+  - item: ja:item:n3-ukagau
+  - item: ja:item:n3-haiken
+  - item: ja:item:n3-gram-sonkeigo
+    role: reuse
+  - item: ja:item:n3-goran-ni-naru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự giới thiệu kiểu công sở (～と申します), xin phép đến thăm (明日伺います), đề nghị giúp (お持ちします) và báo "tôi đã xem tài liệu" (拝見しました).
+  - type: explain
+    text:
+      vi: '謙譲語 (khiêm nhường ngữ) hạ thấp hành động của mình (hoặc người phe mình) để tôn người nghe. Khuôn chung: お + V(bỏ ます) + する cho từ thuần Nhật - お持ちする, お送りする; ご + danh từ Hán + する - ご案内する, ご連絡する, ご説明する.'
+  - type: explain
+    text:
+      vi: 'Từ riêng cần thuộc: 行く/来る → 参る; 言う → 申す (申し上げる); 訪ねる/聞く → 伺う; 見る → 拝見する; 食べる/飲む/もらう → いただく; いる → おる; する → いたす.'
+  - type: explain
+    text:
+      vi: 'Học theo cặp để không nhầm - người trên làm / mình làm: いらっしゃる / 参る; おっしゃる / 申す; ご覧になる / 拝見する; 召し上がる / いただく; なさる / いたす.'
+  - type: deep_explain
+    text:
+      vi: お～する chỉ dùng khi hành động của bạn có liên quan, hướng tới người được tôn trọng (cầm đồ giúp, gửi cho, liên lạc với). Hành động không liên quan đến ai, như ngủ hay chạy bộ, thì nói khiêm tốn bằng いたします/おります hoặc chỉ dùng ます. Khi nói với khách, người cùng công ty (kể cả sếp) cũng được xem là "phe mình" - 部長の田中が参ります.
+  - type: example
+    target: はじめまして。ABC社のグエンと申します。
+    target_lang: ja
+    translation:
+      vi: Xin chào, tôi là Nguyễn của công ty ABC.
+  - type: example
+    target: 明日の10時にそちらへ参ります。
+    target_lang: ja
+    translation:
+      vi: 10 giờ sáng mai tôi sẽ đến chỗ anh/chị ạ.
+  - type: example
+    target: 荷物をお持ちしましょうか。
+    target_lang: ja
+    translation:
+      vi: Để tôi cầm hành lý giúp anh/chị nhé?
+  - type: example
+    target: 資料を拝見しました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã xem tài liệu rồi ạ.
+  - type: example
+    target: 会議室までご案内します。
+    target_lang: ja
+    translation:
+      vi: Tôi xin dẫn anh/chị đến phòng họp.
+  - type: common_mistake
+    wrong: 部長、この資料を拝見してください。
+    right: 部長、この資料をご覧ください。
+    target_lang: ja
+    note:
+      vi: 拝見する là khiêm nhường, chỉ cho hành động của mình. Mời người trên xem dùng ご覧ください.
+  - type: common_mistake
+    wrong: 会議室までお案内します。
+    right: 会議室までご案内します。
+    target_lang: ja
+    note:
+      vi: 案内 là từ Hán nên đi với ご. お dùng với từ thuần Nhật (お持ちする, お送りする).
+  - type: summary
+    points:
+      - vi: 謙譲語 - hạ hành động của mình; お + V(bỏ ます) + する, ご + từ Hán + する.
+      - vi: 参る (đi/đến), 申す (nói/tên là), 伺う (thăm/hỏi/nghe), 拝見する (xem), いただく (ăn/nhận), いたす (làm).
+      - vi: Mời người trên làm - dùng tôn kính (ご覧ください), không dùng khiêm nhường.
+      - vi: Với khách, người cùng công ty là phe mình - gọi không có さん, dùng khiêm nhường.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n3-kenjougo-mcq-haiken
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-haiken
+    prompt:
+      stem: 「拝見する」 dùng khi nào?
+      stem_lang: vi
+      options:
+        - { id: t5w, text: Khi chính mình xem đồ của người trên/khách, lang: vi }
+        - { id: j2p, text: Khi mời người trên xem, lang: vi }
+        - { id: x8l, text: Khi người trên đã xem, lang: vi }
+        - { id: o4g, text: Khi bắt cấp dưới xem, lang: vi }
+    answer:
+      correct_option_id: t5w
+    explanation:
+      vi: 拝見する là khiêm nhường ngữ của 見る, dùng cho chính mình. Người trên xem hoặc mời họ xem dùng ご覧になる / ご覧ください.
+    display_answer: Khi chính mình xem đồ của người trên/khách
+
+  - key: ja:exercise:n3-kenjougo-listen-mousu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n3-mousu
+    prompt:
+      audio_asset_id: null
+      fallback_text: はじめまして。ABC社のグエンと申します。
+      options:
+        - { id: f3c, text: "Xin chào, tôi là Nguyễn của công ty ABC.", lang: vi }
+        - { id: l7r, text: "Xin chào, tôi muốn gặp anh Nguyễn của công ty ABC.", lang: vi }
+        - { id: b1y, text: "Xin chào, anh Nguyễn của công ty ABC đã nói vậy.", lang: vi }
+        - { id: w6d, text: "Xin chào, tôi đã nói chuyện với công ty ABC.", lang: vi }
+    answer:
+      correct_option_id: f3c
+    explanation:
+      vi: ～と申します - tôi tên là... (khiêm nhường của ～と言います). Đây là câu tự giới thiệu chuẩn khi gặp đối tác.
+    display_answer: Xin chào, tôi là Nguyễn của công ty ABC.
+
+  - key: ja:exercise:n3-kenjougo-mcq-pair
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-mairu
+    prompt:
+      stem: 'Bạn báo với khách: "10 giờ sáng mai tôi sẽ đến chỗ anh/chị." 明日の10時にそちらへ＿＿。'
+      stem_lang: vi
+      options:
+        - { id: i9k, text: 参ります, lang: ja }
+        - { id: s2v, text: いらっしゃいます, lang: ja }
+        - { id: c5m, text: お越しになります, lang: ja }
+        - { id: y8b, text: 来られます, lang: ja }
+    answer:
+      correct_option_id: i9k
+    explanation:
+      vi: Mình đi đến - khiêm nhường 参ります. いらっしゃる, お越しになる, 来られる đều là tôn kính, chỉ dùng cho người kia.
+    display_answer: 参ります
+
+  - key: ja:exercise:n3-kenjougo-fill-goannai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-kenjougo
+    prompt:
+      template: "会議室まで{{b1}}案内します。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Tôi xin dẫn anh/chị đến phòng họp."
+        - "Gợi ý: 案内 là từ Hán - tiền tố nào?"
+    answer:
+      blanks:
+        b1: [ご]
+    known_wrong:
+      - answer: お
+        feedback_vi: 案内 là từ Hán nên dùng ご - ご案内します.
+        error_tag: o_go_prefix
+    explanation:
+      vi: ご + từ Hán + する - ご案内する, ご連絡する, ご説明する. お đi với từ thuần Nhật - お持ちする.
+    display_answer: 会議室までご案内します。
+
+  - key: ja:exercise:n3-kenjougo-wb-omochi
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n3-gram-kenjougo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Để tôi cầm hành lý giúp anh/chị nhé?\""
+      tokens:
+        - { id: m3, text: お持ちしましょうか }
+        - { id: m4, text: お持ちになりましょうか }
+        - { id: m1, text: 荷物を }
+    answer:
+      orders:
+        - [m1, m3]
+    explanation:
+      vi: Mình cầm giúp - khiêm nhường お持ちする. お持ちになる là tôn kính (người kia cầm), không hợp với lời đề nghị giúp.
+    display_answer: 荷物をお持ちしましょうか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n3-kenjougo-fill-ukagau
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-ukagau
+    prompt:
+      template: "少し{{b1}}たいことがあるのですが…。(hỏi - khiêm nhường)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [伺い, うかがい]
+    known_wrong:
+      - answer: 聞き
+        feedback_vi: Đúng nghĩa nhưng thiếu kính ngữ; hỏi người trên dùng 伺う.
+        error_tag: missing_kenjougo
+      - answer: 伺う
+        feedback_vi: Trước たい dùng dạng ます bỏ ます - 伺い.
+        error_tag: verb_conjugation
+    explanation:
+      vi: 伺う - (khiêm nhường) hỏi; 伺いたい - muốn hỏi. ～のですが… là cách mở lời mềm mỏng.
+    display_answer: 少し伺いたいことがあるのですが…。
+
+  - key: ja:exercise:n3-kenjougo-translate-mousu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-mousu
+    prompt:
+      source_text: Xin chào (lần đầu gặp). Tôi là Nguyễn của công ty ABC. (khiêm nhường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はじめまして。ABC社のグエンと申します。
+        - はじめまして、ABC社のグエンと申します。
+        - 初めまして。ABC社のグエンと申します。
+        - 初めまして、ABC社のグエンと申します。
+        - はじめまして。ABCのグエンと申します。
+        - はじめまして、ABCのグエンと申します。
+        - はじめまして。ABC会社のグエンと申します。
+        - はじめまして。私はABC社のグエンと申します。
+        - はじめまして、私はABC社のグエンと申します。
+        - はじめまして。ABC社のグエンと申します。よろしくお願いいたします。
+        - はじめまして。ABC社のグエンと申します。よろしくお願いします。
+        - はじめまして。エービーシー社のグエンともうします。
+        - はじめまして。ABCしゃのグエンともうします。
+    known_wrong:
+      - answer: はじめまして。ABC社のグエンとおっしゃいます。
+        feedback_vi: おっしゃる là tôn kính, không dùng cho mình. Tự giới thiệu - と申します.
+        error_tag: sonkeigo_kenjougo
+      - answer: はじめまして。ABC社のグエンさんと申します。
+        feedback_vi: Không thêm さん vào tên mình.
+        error_tag: san_self
+    explanation:
+      vi: 会社名 + の + tên + と申します - câu tự giới thiệu chuẩn. 社 - công ty (ABC社).
+    display_answer: はじめまして。ABC社のグエンと申します。
+
+  - key: ja:exercise:n3-kenjougo-translate-haiken
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-haiken
+    prompt:
+      source_text: Tôi đã xem tài liệu rồi ạ. (khiêm nhường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 資料を拝見しました。
+        - 資料はもう拝見しました。
+        - 資料をもう拝見しました。
+        - 資料は拝見しました。
+        - 資料、拝見しました。
+        - 資料を拝見いたしました。
+        - 資料はもう拝見いたしました。
+        - 私は資料を拝見しました。
+        - しりょうをはいけんしました。
+        - しりょうはもうはいけんしました。
+    known_wrong:
+      - answer: 資料をご覧になりました。
+        feedback_vi: ご覧になる là tôn kính cho người kia. Mình xem - 拝見しました.
+        error_tag: sonkeigo_kenjougo
+      - answer: 資料をお見しました。
+        feedback_vi: 見る có từ khiêm nhường riêng là 拝見する; không lập お見する.
+        error_tag: kenjougo_form
+    explanation:
+      vi: 見る → 拝見する (khiêm nhường). 拝見いたしました còn trang trọng hơn.
+    display_answer: 資料を拝見しました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n3-kenjougo-mcq-wrong
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-haiken
+    prompt:
+      stem: Câu nào dùng kính ngữ SAI?
+      stem_lang: vi
+      options:
+        - { id: u6e, text: 部長、この資料を拝見してください。, lang: ja }
+        - { id: g1h, text: 明日、御社に伺います。, lang: ja }
+        - { id: a7n, text: 後ほどご連絡します。, lang: ja }
+        - { id: d4q, text: 先生のお話は伺っております。, lang: ja }
+    answer:
+      correct_option_id: u6e
+    explanation:
+      vi: Mời trưởng phòng xem phải dùng ご覧ください; 拝見 chỉ cho mình. Ba câu kia đúng - 伺う (đến thăm; nghe), ご連絡する (mình liên lạc).
+    display_answer: 部長、この資料を拝見してください。
+
+  - key: ja:exercise:n3-kenjougo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-ukagau
+    prompt:
+      source_text: 明日の午後、御社に伺ってもよろしいでしょうか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chiều mai tôi đến quý công ty có được không ạ?
+        - Chiều mai tôi đến thăm quý công ty có được không ạ?
+        - Chiều mai tôi đến quý công ty được không ạ?
+        - Chiều mai tôi xin phép đến quý công ty có được không ạ?
+        - Chiều mai tôi có thể đến quý công ty được không ạ?
+        - Chiều mai tôi có thể đến thăm quý công ty được không ạ?
+        - Chiều mai tôi đến công ty anh chị có được không ạ?
+        - Chiều mai tôi đến công ty của anh chị có được không ạ?
+        - Chiều mai tôi đến công ty anh có được không ạ?
+        - Chiều mai tôi đến công ty chị có được không ạ?
+        - Chiều mai tôi đến thăm công ty anh chị có được không ạ?
+        - Chiều mai tôi xin phép đến thăm quý công ty được không ạ?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chiều mai anh chị có đến công ty tôi không ạ?
+        feedback_vi: 伺う là khiêm nhường - người đến là "tôi", nơi đến là 御社 (công ty của anh/chị).
+        error_tag: subject_confusion
+    explanation:
+      vi: 御社 (おんしゃ) - quý công ty (nói với đối tác); 伺ってもよろしいでしょうか - tôi đến thăm có được không ạ (rất lịch sự).
+    display_answer: Chiều mai tôi đến quý công ty có được không ạ?
+
+  - key: ja:exercise:n3-kenjougo-wb-uchi
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-mairu
+    prompt:
+      instruction: "Bạn nói với khách: \"Trưởng phòng Tanaka (của công ty tôi) sẽ đến ngay ạ.\""
+      tokens:
+        - { id: r3, text: すぐに }
+        - { id: r5, text: いらっしゃいます }
+        - { id: r1, text: 部長の田中が }
+        - { id: r4, text: 参ります }
+        - { id: r2, text: 田中部長さんが }
+    answer:
+      orders:
+        - [r1, r3, r4]
+    explanation:
+      vi: Nói với khách thì sếp mình cũng là "phe mình" - 部長の田中 (không さん) + khiêm nhường 参ります. いらっしゃいます sẽ là tôn sếp mình trước mặt khách - sai.
+    display_answer: 部長の田中がすぐに参ります。
+
+  - key: ja:exercise:n3-kenjougo-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-kenjougo
+    prompt:
+      stem: Bạn hứa sẽ gửi tài liệu cho đối tác qua email sau. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: z5c, text: 資料は後ほどメールでお送りします。, lang: ja }
+        - { id: k8y, text: 資料は後ほどメールでお送りになります。, lang: ja }
+        - { id: p2m, text: 資料は後ほどメールでご送りします。, lang: ja }
+        - { id: h9f, text: 資料は後ほどメールで送ってください。, lang: ja }
+    answer:
+      correct_option_id: z5c
+    explanation:
+      vi: Mình gửi cho đối tác - お送りします (khiêm nhường). お送りになる là tôn kính; 送る là từ thuần Nhật nên không dùng ご; 送ってください là nhờ người kia gửi.
+    display_answer: 資料は後ほどメールでお送りします。
