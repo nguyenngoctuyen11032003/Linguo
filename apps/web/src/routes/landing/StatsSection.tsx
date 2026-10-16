@@ -19,7 +19,7 @@ export function StatsSection() {
   const state = inView || reduceMotion ? 'shown' : 'hidden';
 
   return (
-    <section aria-label="Linguo trong con số" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
+    <section aria-label="Linguo trong con số" className="scroll-mt-20 overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
       <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:max-w-5xl min-[1280px]:max-w-[1200px]">
         <p aria-hidden="true" className="eyebrow mb-4">
           Trong con số
@@ -29,7 +29,7 @@ export function StatsSection() {
             <motion.li
               key={s.value}
               className={cn('grid grid-cols-[minmax(0,auto)_1fr] items-end gap-x-5 py-6', i === 1 && 'sm:pl-[clamp(40px,12vw,120px)] min-[1024px]:pl-5', 'min-[1024px]:px-5 min-[1024px]:first:pl-0')}
-              variants={reveal(i % 2 ? 'slideRight' : 'slideLeft', reduceMotion, i * 0.12)}
+              variants={reveal('fadeUp', reduceMotion, i * 0.1)}
               initial="hidden"
               animate={state}
             >

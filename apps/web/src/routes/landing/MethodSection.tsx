@@ -17,12 +17,12 @@ export function MethodSection() {
   const state = inView || reduceMotion ? 'shown' : 'hidden';
 
   return (
-    <section id="phuong-phap" aria-labelledby="method-title" className="overflow-x-clip bg-bg px-safe py-[clamp(64px,12vh,120px)]">
+    <section id="phuong-phap" aria-labelledby="method-title" className="scroll-mt-20 overflow-x-clip bg-bg px-safe py-[clamp(64px,12vh,120px)]">
       <div ref={ref} className="mx-auto max-w-5xl min-[1280px]:max-w-[1200px]">
         <motion.h2
           id="method-title"
           className="max-w-2xl font-display text-[clamp(40px,12vw,72px)] font-extrabold uppercase leading-[0.95]"
-          variants={reveal('speed', reduceMotion)}
+          variants={reveal('fadeUp', reduceMotion)}
           initial="hidden"
           animate={state}
         >
@@ -33,7 +33,7 @@ export function MethodSection() {
             <motion.li
               key={title}
               className="card relative isolate overflow-hidden p-5"
-              variants={reveal('blurUp', reduceMotion, 0.1 + i * 0.1)}
+              variants={reveal('fadeUp', reduceMotion, 0.08 + i * 0.08)}
               initial="hidden"
               animate={state}
             >

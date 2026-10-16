@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import { m as motion, useInView } from 'motion/react';
 import { ArrowRight, BookOpen, House, LayoutGrid, Moon, RotateCcw, Smartphone, Sparkles, Waves } from 'lucide-react';
 import { asset } from '@/lib/asset';
+import { reveal, VIEWPORT_ONCE } from '@/design/motion';
 import { cn } from '@/lib/cn';
+import { useMotionPrefs } from '@/providers/MotionProvider';
 
 const SCREEN_W = 390;
 
@@ -113,10 +116,15 @@ const FEATURES = [
 ];
 
 export function ShowcaseSection() {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, VIEWPORT_ONCE);
+  const { reduceMotion } = useMotionPrefs();
+  const state = inView || reduceMotion ? 'shown' : 'hidden';
+
   return (
-    <section aria-labelledby="showcase-title" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
-      <div className="mx-auto grid max-w-5xl min-[1280px]:max-w-[1200px] items-center gap-10 min-[900px]:grid-cols-2 min-[900px]:gap-12">
-        <div className="space-y-4">
+    <section id="di-dong" aria-labelledby="showcase-title" className="scroll-mt-20 overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)] pt-[clamp(8px,4vh,40px)]">
+      <div ref={ref} className="mx-auto grid max-w-5xl min-[1280px]:max-w-[1200px] items-center gap-10 min-[900px]:grid-cols-2 min-[900px]:gap-12">
+        <motion.div className="space-y-4" variants={reveal('fadeUp', reduceMotion)} initial="hidden" animate={state}>
           <h2 id="showcase-title" className="font-display text-[clamp(44px,12vw,72px)] font-extrabold uppercase leading-[0.95]">
             <span className="block">Thiết kế</span> <span className="block whitespace-nowrap">
               cho <span className="text-primary">điện thoại</span>
@@ -135,11 +143,11 @@ export function ShowcaseSection() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="relative isolate flex justify-center" aria-hidden="true">
+        </motion.div>
+        <motion.div className="relative isolate flex justify-center" aria-hidden="true" variants={reveal('fadeUp', reduceMotion, 0.12)} initial="hidden" animate={state}>
           <div className="absolute left-1/2 top-1/2 -z-10 size-[min(420px,90vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(76_162_209/0.35),transparent_65%)]" />
           <PhoneFrame />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

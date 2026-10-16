@@ -60,10 +60,10 @@ export function RouteSection() {
     <section
       id="lo-trinh"
       aria-labelledby="route-title"
-      className="relative overflow-x-clip bg-[linear-gradient(180deg,#0B1420_0%,#10283C_45%,#173E5B_75%,#3A2A2A_100%)] px-safe py-[clamp(64px,12vh,120px)]"
+      className="relative scroll-mt-20 overflow-x-clip bg-[linear-gradient(180deg,#0B1420_0%,#10283C_45%,#173E5B_75%,#3A2A2A_100%)] px-safe py-[clamp(64px,12vh,120px)]"
     >
-      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:grid min-[1024px]:max-w-5xl min-[1280px]:max-w-[1200px] min-[1024px]:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] min-[1024px]:items-center min-[1024px]:gap-x-16">
-        <motion.div variants={reveal('slideLeft', reduceMotion)} initial="hidden" animate={state}>
+      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:grid min-[1024px]:max-w-5xl min-[1280px]:max-w-[1200px] min-[1024px]:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] min-[1024px]:grid-rows-[1fr_1fr] min-[1024px]:gap-x-16">
+        <motion.div className="min-[1024px]:self-end min-[1024px]:pb-5" variants={reveal('fadeUp', reduceMotion)} initial="hidden" animate={state}>
           <h2 id="route-title" className="font-display text-[clamp(48px,14vw,88px)] font-extrabold uppercase leading-[0.92] text-white">
             Một lộ trình
           </h2>
@@ -74,7 +74,7 @@ export function RouteSection() {
           </p>
         </motion.div>
 
-        <div className="relative -mx-2 mt-10 text-white min-[1024px]:row-span-2 min-[1024px]:col-start-2 min-[1024px]:row-start-1 min-[1024px]:mt-0 min-[1024px]:mx-0">
+        <div className="relative mx-auto mt-10 w-full max-w-[560px] text-white min-[1024px]:col-start-2 min-[1024px]:row-span-2 min-[1024px]:row-start-1 min-[1024px]:mt-0 min-[1024px]:max-w-none min-[1024px]:self-center">
           <RouteLine title="Lộ trình tiếng Anh, tiếng Hàn và tiếng Nhật: từ nền tảng tới C1–C2, từ Hangul tới TOPIK II và từ Kana tới JLPT N1" viewBox="0 0 320 330" tracks={TRACKS} />
           {FLOATERS.map(({ icon: Icon, label, left, top, duration }, i) => (
             <motion.span
@@ -95,7 +95,7 @@ export function RouteSection() {
           ))}
         </div>
 
-        <ul className="mt-8 flex flex-wrap gap-3 text-sm font-medium text-white min-[1024px]:col-start-1 min-[1024px]:row-start-2 min-[1024px]:self-start">
+        <motion.ul className="mt-8 flex flex-wrap gap-3 text-sm font-medium text-white min-[1024px]:col-start-1 min-[1024px]:row-start-2 min-[1024px]:mt-0 min-[1024px]:self-start min-[1024px]:pt-5" variants={reveal('fadeUp', reduceMotion, 0.15)} initial="hidden" animate={state}>
           <li className="glass inline-flex min-h-10 items-center gap-2 rounded-full px-4">
             <span aria-hidden="true" className="size-2.5 rounded-full bg-[#4CA2D1]" />
             EN · Tiếng Anh (CEFR)
@@ -108,7 +108,7 @@ export function RouteSection() {
             <span aria-hidden="true" className="size-2.5 rounded-full bg-[#E85D8A]" />
             JA · Tiếng Nhật (JLPT)
           </li>
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );
