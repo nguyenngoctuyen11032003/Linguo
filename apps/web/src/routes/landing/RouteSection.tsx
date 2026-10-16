@@ -62,7 +62,7 @@ export function RouteSection() {
       aria-labelledby="route-title"
       className="relative overflow-x-clip bg-[linear-gradient(180deg,#0B1420_0%,#10283C_45%,#173E5B_75%,#3A2A2A_100%)] px-safe py-[clamp(64px,12vh,120px)]"
     >
-      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:grid min-[1024px]:max-w-5xl min-[1024px]:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] min-[1024px]:items-center min-[1024px]:gap-x-16">
+      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:grid min-[1024px]:max-w-5xl min-[1280px]:max-w-[1200px] min-[1024px]:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] min-[1024px]:items-center min-[1024px]:gap-x-16">
         <motion.div variants={reveal('slideLeft', reduceMotion)} initial="hidden" animate={state}>
           <h2 id="route-title" className="font-display text-[clamp(48px,14vw,88px)] font-extrabold uppercase leading-[0.92] text-white">
             Một lộ trình

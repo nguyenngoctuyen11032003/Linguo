@@ -115,7 +115,7 @@ const FEATURES = [
 export function ShowcaseSection() {
   return (
     <section aria-labelledby="showcase-title" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
-      <div className="mx-auto grid max-w-5xl items-center gap-10 min-[900px]:grid-cols-2 min-[900px]:gap-12">
+      <div className="mx-auto grid max-w-5xl min-[1280px]:max-w-[1200px] items-center gap-10 min-[900px]:grid-cols-2 min-[900px]:gap-12">
         <div className="space-y-4">
           <h2 id="showcase-title" className="font-display text-[clamp(44px,12vw,72px)] font-extrabold uppercase leading-[0.95]">
             <span className="block">Thiết kế</span> <span className="block whitespace-nowrap">

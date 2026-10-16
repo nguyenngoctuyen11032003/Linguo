@@ -20,7 +20,7 @@ export function StatsSection() {
 
   return (
     <section aria-label="Linguo trong con số" className="overflow-x-clip bg-bg px-safe pb-[clamp(64px,12vh,120px)]">
-      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:max-w-5xl">
+      <div ref={ref} className="mx-auto max-w-3xl min-[1024px]:max-w-5xl min-[1280px]:max-w-[1200px]">
         <p aria-hidden="true" className="eyebrow mb-4">
           Trong con số
         </p>

@@ -22,7 +22,7 @@ export function AppBar() {
   const initial = (profile?.displayName || user?.email || '?').trim().charAt(0).toUpperCase();
   return (
     <header className="vt-appbar glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
-      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-2 px-safe">
+      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-2 px-safe lg:h-16 lg:max-w-[1360px] lg:px-8 min-[1440px]:px-10">
         <Link to="/app" aria-label="Linguo" className="inline-flex min-h-11 min-w-0 shrink-0 items-center rounded-full lg:invisible">
           <Wordmark compact />
         </Link>

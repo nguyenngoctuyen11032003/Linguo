@@ -72,7 +72,7 @@ export function HeroSection() {
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-b from-transparent to-bg" />
       <LandingNav ready={ready} />
 
-      <div className="mx-auto mt-auto w-full max-w-5xl px-safe pb-[max(2.5rem,env(safe-area-inset-bottom,0px))] pt-28 min-[1024px]:grid min-[1024px]:max-w-[1180px] min-[1024px]:grid-cols-[minmax(0,1fr)_340px] min-[1024px]:items-end min-[1024px]:gap-x-14 min-[1024px]:pb-14 min-[1024px]:pt-32">
+      <div className="mx-auto mt-auto w-full max-w-5xl px-safe pb-[max(2.5rem,env(safe-area-inset-bottom,0px))] pt-28 min-[1024px]:grid min-[1024px]:max-w-[1180px] min-[1280px]:max-w-[1280px] min-[1024px]:grid-cols-[minmax(0,1fr)_340px] min-[1024px]:items-end min-[1024px]:gap-x-14 min-[1024px]:pb-14 min-[1024px]:pt-32">
         <div className="min-w-0">
         <motion.p
           className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/8 py-1.5 pl-1.5 pr-3.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/80 ring-1 ring-white/12 ring-inset backdrop-blur"

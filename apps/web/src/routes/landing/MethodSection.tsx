@@ -18,7 +18,7 @@ export function MethodSection() {
 
   return (
     <section id="phuong-phap" aria-labelledby="method-title" className="overflow-x-clip bg-bg px-safe py-[clamp(64px,12vh,120px)]">
-      <div ref={ref} className="mx-auto max-w-5xl">
+      <div ref={ref} className="mx-auto max-w-5xl min-[1280px]:max-w-[1200px]">
         <motion.h2
           id="method-title"
           className="max-w-2xl font-display text-[clamp(40px,12vw,72px)] font-extrabold uppercase leading-[0.95]"

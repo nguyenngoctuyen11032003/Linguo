@@ -264,6 +264,7 @@ export function SettingsPage() {
 
       <SettingsJumpList />
 
+      <div className="space-y-6 lg:block lg:columns-2 lg:gap-6 lg:space-y-0 lg:[&>*]:mb-6 lg:[&>*]:break-inside-avoid">
       <section id="ho-so" aria-labelledby="profile-heading" className={SECTION_SCROLL_MARGIN}>
         <SolidCard className="space-y-4">
           <h2 id="profile-heading" tabIndex={-1} className={SECTION_HEADING_CLASS}>
@@ -285,7 +286,7 @@ export function SettingsPage() {
                   className="size-16"
                   initialClassName="stat-num text-[30px]"
                 />
-$1<p className="min-w-0 flex-1">
+                <p className="min-w-0 flex-1">
                   <span className="eyebrow block">
                     Email<span className="sr-only">:</span>
                   </span>
@@ -516,6 +517,7 @@ $1<p className="min-w-0 flex-1">
         </div>
       )}
 
+      </div>
       <Button variant="danger" block loading={signingOut} onClick={() => void signOut()}>
         <LogOut aria-hidden className="size-5" />
         Đăng xuất

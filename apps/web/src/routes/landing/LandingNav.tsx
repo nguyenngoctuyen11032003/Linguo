@@ -32,7 +32,7 @@ function DesktopRail({ ready }: { ready: boolean }) {
   return (
     <motion.nav
       aria-label="Điều hướng"
-      className="glass fixed bottom-4 left-4 top-4 z-30 hidden w-[72px] flex-col items-center rounded-[1.75rem] py-5 shadow-[var(--shadow-dock)] min-[1024px]:flex"
+      className="fixed bottom-4 left-4 top-4 z-30 bg-[#0c1420] ring-1 ring-white/10 ring-inset hidden w-[72px] flex-col items-center rounded-[1.75rem] py-5 shadow-[var(--shadow-dock)] min-[1024px]:flex"
       variants={reveal('slideLeft', reduceMotion)}
       initial="hidden"
       animate={ready ? 'shown' : 'hidden'}
@@ -163,7 +163,7 @@ export function LandingNav({ ready }: { ready: boolean }) {
               ))}
             </nav>
             <div className="relative pb-6 pt-4">
-              <InstallButton />
+              <InstallButton variant="banner" />
             </div>
           </motion.div>
         )}

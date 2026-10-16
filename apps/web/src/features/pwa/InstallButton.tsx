@@ -9,7 +9,7 @@ import { isIos, useInstallPrompt } from './useInstallPrompt';
  * laptop and Android); otherwise opens short manual steps (iOS Share sheet, or the browser menu elsewhere).
  * Hidden once Linguo runs as an installed app.
  */
-export function InstallButton({ className, variant = 'pill' }: { className?: string; variant?: 'pill' | 'rail' }) {
+export function InstallButton({ className, variant = 'pill' }: { className?: string; variant?: 'pill' | 'rail' | 'banner' }) {
   const { status, promptInstall } = useInstallPrompt();
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -39,13 +39,31 @@ export function InstallButton({ className, variant = 'pill' }: { className?: str
         aria-label="Tải ứng dụng"
         title="Tải ứng dụng"
         className={cn(
-          'inline-flex items-center justify-center gap-2 rounded-full bg-white/10 font-semibold text-white ring-1 ring-white/15 ring-inset transition-[background-color,scale] hover:bg-white/15 active:scale-95',
-          variant === 'rail' ? 'size-11' : 'min-h-11 px-4 text-[14px]',
+          'inline-flex items-center text-white ring-1 ring-white/15 ring-inset transition-[background-color,scale] hover:bg-white/15 active:scale-[0.98]',
+          variant === 'banner'
+            ? 'w-full min-h-[4.5rem] gap-4 rounded-3xl bg-white/10 px-4 py-3 text-left'
+            : 'justify-center gap-2 rounded-full bg-white/10 font-semibold',
+          variant === 'rail' && 'size-11',
+          variant === 'pill' && 'min-h-11 px-4 text-[14px]',
           className,
         )}
       >
-        <Download aria-hidden className="size-[18px]" />
-        {variant === 'pill' && 'Tải ứng dụng'}
+        {variant === 'banner' ? (
+          <>
+            <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-accent text-on-accent shadow-[0_8px_24px_rgb(243_125_37/0.35)]">
+              <Download aria-hidden className="size-6" />
+            </span>
+            <span className="min-w-0">
+              <span className="block text-[17px] font-bold leading-tight">Tải ứng dụng Linguo</span>
+              <span className="mt-0.5 block text-[13px] leading-snug text-white/70">Thêm vào màn hình chính, mở như một app</span>
+            </span>
+          </>
+        ) : (
+          <>
+            <Download aria-hidden className="size-[18px]" />
+            {variant === 'pill' && 'Tải ứng dụng'}
+          </>
+        )}
       </button>
       {open && (
         <div className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-3 sm:items-center" onClick={close}>

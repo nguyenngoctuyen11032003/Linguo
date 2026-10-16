@@ -310,6 +310,7 @@ export function LearnPage() {
                 total={program.units.reduce((n, u) => n + u.lessons.length, 0)}
               />
             </div>
+            <div className="space-y-3 min-[1100px]:grid min-[1100px]:grid-cols-2 min-[1100px]:items-start min-[1100px]:gap-4 min-[1100px]:space-y-0">
             {program.units.map((unit, i) => (
               <UnitSection
                 key={unit.id}
@@ -321,6 +322,7 @@ export function LearnPage() {
                 onToggle={(open) => toggleUnit(unit.id, open)}
               />
             ))}
+            </div>
           </section>
         ))}
       </div>

@@ -20,7 +20,7 @@ export function AppLayout() {
       <Sidebar className="hidden lg:flex" />
       <div className="flex min-h-hero min-w-0 flex-col">
         <AppBar />
-        <main id="main" className="mx-auto w-full max-w-3xl flex-1 px-safe pb-[calc(6rem+env(safe-area-inset-bottom,0px))] pt-5 lg:pb-12">
+        <main id="main" className="mx-auto w-full max-w-3xl flex-1 px-safe pb-[calc(6rem+env(safe-area-inset-bottom,0px))] pt-5 lg:max-w-[1360px] lg:px-8 lg:pb-12 lg:pt-7 min-[1440px]:px-10">
           <Outlet />
         </main>
       </div>
