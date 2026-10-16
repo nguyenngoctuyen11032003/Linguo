@@ -52,12 +52,12 @@ describe('roleplay storage', () => {
     expect(localStorage.getItem(`${KEY_PREFIX}u1`)).toBeNull();
   });
 
-  it('drops a finished session: saving one clears the key, and a stored one is cleared on load', () => {
-    saveSession('u1', withMessages([msg()]));
-    saveSession('u1', { ...withMessages([msg()]), finished: true });
-    expect(localStorage.getItem(`${KEY_PREFIX}u1`)).toBeNull();
-    localStorage.setItem(`${KEY_PREFIX}u1`, envelope({ ...withMessages([msg()]), finished: true }));
-    expect(loadSession('u1', 'en')).toBeNull();
+  it('keeps a finished session (recap not done yet) within the TTL, and expires it like any other', () => {
+    const t0 = 1_000_000_000_000;
+    const done = { ...withMessages([msg()]), finished: true };
+    saveSession('u1', done, t0);
+    expect(loadSession('u1', 'en', t0 + 1000)).toEqual(done);
+    expect(loadSession('u1', 'en', t0 + ROLEPLAY_TTL_MS + 1)).toBeNull();
     expect(localStorage.getItem(`${KEY_PREFIX}u1`)).toBeNull();
   });
 

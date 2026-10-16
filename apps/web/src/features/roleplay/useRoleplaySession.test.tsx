@@ -164,6 +164,10 @@ describe('useRoleplaySession', () => {
     act(() => {
       expect(hook.result.current.send('hello')).toBe(false);
     });
+    // Not summarised yet: a reload comes back to the finished chat (with its "Kết thúc và xem tóm tắt").
+    expect(render().result.current.session?.finished).toBe(true);
+    act(() => hook.result.current.forgetSaved());
+    expect(loadSession(USER, 'en')).toBeNull();
   });
 
   it('keeps the confirmed conversation in localStorage, restores it, and clears it on discard', async () => {
