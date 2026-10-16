@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 import { AnimatePresence, m as motion } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { BrainCircuit, LogIn, Map as MapIcon, Menu, UserPlus, X } from 'lucide-react';
 import { Link } from 'react-router';
 import { EXPO_OUT, reveal } from '@/design/motion';
 import { asset } from '@/lib/asset';
@@ -16,6 +16,50 @@ const MENU = [
 const MENU_ITEM =
   'inline-flex min-h-14 items-center font-display text-[clamp(44px,13vw,64px)] font-extrabold uppercase leading-none text-white transition-colors hover:text-accent';
 
+const RAIL_ITEMS = [
+  { href: '#lo-trinh', label: 'Lộ trình', icon: MapIcon, kind: 'anchor' as const },
+  { href: '#phuong-phap', label: 'Phương pháp', icon: BrainCircuit, kind: 'anchor' as const },
+  { href: '/dang-nhap', label: 'Đăng nhập', icon: LogIn, kind: 'route' as const },
+  { href: '/dang-ky', label: 'Đăng ký', icon: UserPlus, kind: 'route' as const },
+];
+
+const RAIL_LINK =
+  'inline-flex size-11 items-center justify-center rounded-full text-white/70 transition-[background-color,color] hover:bg-white/12 hover:text-white';
+
+/** Laptop navigation: a fixed vertical glass rail instead of the mobile floating pill. */
+function DesktopRail({ ready }: { ready: boolean }) {
+  const { reduceMotion } = useMotionPrefs();
+  return (
+    <motion.nav
+      aria-label="Điều hướng"
+      className="glass fixed bottom-4 left-4 top-4 z-30 hidden w-[72px] flex-col items-center rounded-[1.75rem] py-5 shadow-[var(--shadow-dock)] min-[1024px]:flex"
+      variants={reveal('slideLeft', reduceMotion)}
+      initial="hidden"
+      animate={ready ? 'shown' : 'hidden'}
+    >
+      <Link to="/" aria-label="Linguo — trang chủ" className="inline-flex size-11 items-center justify-center">
+        <img src={asset('brand/logo-mark.svg')} alt="" width={34} height={34} className="size-[34px]" />
+      </Link>
+      <div className="mt-10 flex flex-col items-center gap-3">
+        {RAIL_ITEMS.map(({ href, label, icon: Icon, kind }) =>
+          kind === 'anchor' ? (
+            <a key={href} href={href} aria-label={label} title={label} className={RAIL_LINK}>
+              <Icon aria-hidden className="size-[22px]" />
+            </a>
+          ) : (
+            <Link key={href} to={href} aria-label={label} title={label} className={RAIL_LINK}>
+              <Icon aria-hidden className="size-[22px]" />
+            </Link>
+          ),
+        )}
+      </div>
+      <div className="mt-auto">
+        <InstallButton variant="rail" />
+      </div>
+    </motion.nav>
+  );
+}
+
 export function LandingNav({ ready }: { ready: boolean }) {
   const { reduceMotion } = useMotionPrefs();
   const [open, setOpen] = useState(false);
@@ -28,8 +72,9 @@ export function LandingNav({ ready }: { ready: boolean }) {
 
   return (
     <>
+      <DesktopRail ready={ready} />
       {/* Floating glass pill: stays reachable while scrolling the long page. */}
-      <header className="fixed inset-x-0 top-0 z-30 px-3 pt-[max(0.75rem,env(safe-area-inset-top,0px))]">
+      <header className="fixed inset-x-0 top-0 z-30 px-3 pt-[max(0.75rem,env(safe-area-inset-top,0px))] min-[1024px]:hidden">
         <motion.div
           className="glass mx-auto flex h-14 max-w-5xl items-center justify-between rounded-full pl-3 pr-1.5 shadow-[var(--shadow-dock)]"
           variants={reveal('drop', reduceMotion)}
@@ -43,7 +88,6 @@ export function LandingNav({ ready }: { ready: boolean }) {
             </span>
           </Link>
           <div className="flex items-center gap-1">
-            <InstallButton className="hidden min-[560px]:inline-flex" />
             <Link
               to="/dang-nhap"
               className="hidden min-h-11 items-center rounded-full px-4 text-[14px] font-semibold text-white/85 transition-colors hover:text-white min-[380px]:inline-flex"
@@ -118,6 +162,9 @@ export function LandingNav({ ready }: { ready: boolean }) {
                 </motion.div>
               ))}
             </nav>
+            <div className="relative pb-6 pt-4">
+              <InstallButton />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

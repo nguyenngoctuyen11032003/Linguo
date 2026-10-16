@@ -8,7 +8,7 @@ import { StatsSection } from './StatsSection';
 /** Marketing page: always dark, expressive motion tier. */
 export function LandingPage() {
   return (
-    <div data-theme="dark" className="min-h-hero bg-bg text-text">
+    <div data-theme="dark" className="min-h-hero bg-bg text-text min-[1024px]:[&_.px-safe]:pl-[112px]">
       <a href="#main" className="sr-only z-[100] rounded-full bg-primary px-4 py-2 text-on-primary focus:not-sr-only focus:fixed focus:left-4 focus:top-4">
         Bỏ qua tới nội dung
       </a>

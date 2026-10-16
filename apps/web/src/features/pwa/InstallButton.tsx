@@ -9,7 +9,7 @@ import { isIos, useInstallPrompt } from './useInstallPrompt';
  * laptop and Android); otherwise opens short manual steps (iOS Share sheet, or the browser menu elsewhere).
  * Hidden once Linguo runs as an installed app.
  */
-export function InstallButton({ className }: { className?: string }) {
+export function InstallButton({ className, variant = 'pill' }: { className?: string; variant?: 'pill' | 'rail' }) {
   const { status, promptInstall } = useInstallPrompt();
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -36,13 +36,16 @@ export function InstallButton({ className }: { className?: string }) {
         ref={triggerRef}
         type="button"
         onClick={onClick}
+        aria-label="Tải ứng dụng"
+        title="Tải ứng dụng"
         className={cn(
-          'inline-flex min-h-11 items-center gap-2 rounded-full bg-white/10 px-4 text-[14px] font-semibold text-white ring-1 ring-white/15 ring-inset transition-[background-color,scale] hover:bg-white/15 active:scale-95',
+          'inline-flex items-center justify-center gap-2 rounded-full bg-white/10 font-semibold text-white ring-1 ring-white/15 ring-inset transition-[background-color,scale] hover:bg-white/15 active:scale-95',
+          variant === 'rail' ? 'size-11' : 'min-h-11 px-4 text-[14px]',
           className,
         )}
       >
         <Download aria-hidden className="size-[18px]" />
-        Tải ứng dụng
+        {variant === 'pill' && 'Tải ứng dụng'}
       </button>
       {open && (
         <div className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-3 sm:items-center" onClick={close}>
