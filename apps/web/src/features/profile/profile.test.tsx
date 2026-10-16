@@ -15,7 +15,7 @@ describe('profile service', () => {
   it('maps the row to a Profile', async () => {
     const q = fakeQuery({ data: { id: 'u1', display_name: null, timezone: 'Asia/Ho_Chi_Minh' }, error: null });
     const profile = await fetchProfile(fakeClient({ profiles: q }), 'u1');
-    expect(profile).toEqual({ id: 'u1', displayName: '', timezone: 'Asia/Ho_Chi_Minh' });
+    expect(profile).toEqual({ id: 'u1', displayName: '', timezone: 'Asia/Ho_Chi_Minh', avatarPath: null });
     expect(q.calls).toContainEqual(['eq', ['id', 'u1']]);
   });
 
