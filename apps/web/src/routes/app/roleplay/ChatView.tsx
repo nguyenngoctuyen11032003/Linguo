@@ -19,6 +19,7 @@ import type { RoleplayApi } from '@/features/roleplay/useRoleplaySession';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { LeaveRoleplayDialog } from './LeaveRoleplayDialog';
+import { playSound } from '@/lib/sound';
 
 const MESSAGE_MAX = 300;
 const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' } as const;
@@ -224,6 +225,13 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
     if (!over) composerRef.current?.querySelector('textarea')?.focus({ preventScroll: true });
   }, [turns, over]);
 
+  // A soft "pop" for each new partner reply (not for replies restored with a saved conversation).
+  const heardTurns = useRef(turns);
+  useEffect(() => {
+    if (turns > heardTurns.current) playSound('receive');
+    heardTurns.current = turns;
+  }, [turns]);
+
   // Dictation fills the editable draft while listening; the learner corrects it before sending.
   useEffect(() => {
     if (listening) setDraft(transcript);
@@ -250,6 +258,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
     setEmpty(false);
     stopStt();
     if (api.send(text)) {
+      playSound('send');
       setDraft('');
       resetStt();
     }

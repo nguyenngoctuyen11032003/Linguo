@@ -7,11 +7,14 @@ import './app-shell.css';
 import { registerServiceWorker } from '@/features/pwa/register';
 import { captureInstallPrompt } from '@/features/pwa/useInstallPrompt';
 import { installErrorReporting } from '@/lib/error-reporting';
+import { installSoundUnlock } from '@/lib/sound/engine';
 import { installKeyboardAwareness } from '@/lib/viewport';
 import { App } from './App';
 
 installErrorReporting();
 installKeyboardAwareness();
+// Answer sounds arrive after a network round trip, outside the tap that caused them: unlock audio on the first gesture.
+installSoundUnlock();
 // Spec 10 §4. Production builds only (a no-op in dev and Vitest); registered before render so a notification click
 // relayed to a freshly opened window is buffered. Playwright blocks service workers except in pwa.spec.ts.
 void registerServiceWorker();

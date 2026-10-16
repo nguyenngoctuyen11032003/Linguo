@@ -20,6 +20,10 @@ import { RecallConfidence } from './RecallConfidence';
 import { hasMoreCards } from './more';
 import { PostponeAllDialog } from './PostponeAllDialog';
 import { ReviewSummaryView } from './ReviewSummaryView';
+import { playSound, playVerdict, resetAnswerStreak } from '@/lib/sound';
+
+/** Quên sounds like a miss, Khó like a near-miss, Được/Dễ like a correct answer (and build the combo). */
+const RATING_VERDICT = { 1: 'incorrect', 2: 'almost', 3: 'correct', 4: 'correct' } as const;
 
 const TITLE = 'Ôn tập';
 
@@ -44,6 +48,7 @@ export function ReviewPage() {
   const fromSession = sessionReturn.link !== null;
   const reviewLimit = sessionReturn.link?.reviewLimit ?? undefined;
   const session = useReviewSession({ limit: reviewLimit });
+  useEffect(resetAnswerStreak, []);
   const toast = useToast();
   const navigate = useNavigate();
   const learningPaths = useLearningPaths();
@@ -102,6 +107,7 @@ export function ReviewPage() {
     if (finishTracked.current) return;
     finishTracked.current = true;
     track('review_session_completed', { cards: reviewedCount, from_session: fromSession });
+    if (reviewedCount > 0) playSound('complete');
   }, [status, reviewedCount, fromSession]);
 
   // The activity is over when the (limited) queue is done or there was nothing to review.
@@ -137,6 +143,7 @@ export function ReviewPage() {
       rating.current = true;
       const cardId = card?.card_id;
       if (cardId) setRatedIds((ids) => (ids.includes(cardId) ? ids : [...ids, cardId]));
+      playVerdict(RATING_VERDICT[value]);
       const answeredAt = flippedAt.current ?? Date.now();
       try {
         await session.grade(value, {

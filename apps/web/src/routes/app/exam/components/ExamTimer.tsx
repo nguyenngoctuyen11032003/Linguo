@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { AlertTriangle, Clock, Infinity as InfinityIcon } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { playSound } from '@/lib/sound';
 
 export interface ExamTimerProps {
   /** Time left from the server deadline; null = untimed practice. */
@@ -33,7 +34,13 @@ export function ExamTimer({ remainingMs }: ExamTimerProps) {
     if (before === null || remainingMs === null) return;
     // Latest milestone crossed between the two readings (a long throttle can skip past both).
     const crossed = MILESTONES.filter((m) => before > m.ms && remainingMs <= m.ms).at(-1);
-    if (crossed) setAnnouncement(crossed.text);
+    if (crossed) {
+      setAnnouncement(crossed.text);
+      playSound('warning');
+    }
+    // A dry tick on each of the last 10 seconds.
+    const secondNow = Math.ceil(remainingMs / 1000);
+    if (secondNow > 0 && secondNow <= 10 && secondNow !== Math.ceil(before / 1000)) playSound('tick');
   }, [remainingMs]);
 
   if (remainingMs === null) {

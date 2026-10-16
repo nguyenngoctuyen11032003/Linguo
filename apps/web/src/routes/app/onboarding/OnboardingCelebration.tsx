@@ -3,6 +3,7 @@ import { Check } from 'lucide-react';
 import { useNavigate } from 'react-router';
 import { LEVEL_INFO, type LevelCode } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
+import { playSound } from '@/lib/sound';
 import { CountUp } from '@/components/ui/CountUp';
 import { RouteLine } from '@/components/ui/RouteLine';
 import { estimateRange } from '@/features/learning-paths/format-estimate';
@@ -25,6 +26,7 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
 
   useEffect(() => {
     headingRef.current?.focus();
+    playSound('achievement');
   }, []);
 
   return (

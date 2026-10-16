@@ -3,6 +3,13 @@ import { AlertTriangle, CheckCircle2, Trophy, Waves } from 'lucide-react';
 import type { CompleteResult, LessonBlock } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { Spinner } from '@/components/ui/Spinner';
+import { playSound } from '@/lib/sound';
+
+/** Every stage answered at 100% with no near-misses: earns the bigger fanfare. */
+function isPerfect(result: CompleteResult): boolean {
+  const stages = Object.values(result.accuracy_by_stage).filter((a): a is number => a !== null);
+  return stages.length > 0 && stages.every((a) => a >= 1) && result.almost_count === 0;
+}
 
 const STAGE_LABELS = [
   ['recognition', 'Nhận biết'],
@@ -45,13 +52,16 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
   const complete = useCallback(async () => {
     setCompleting(true);
     setFailed(false);
-    let ok: boolean;
+    let done: CompleteResult | null;
     try {
-      ok = (await onComplete()) !== null;
+      done = await onComplete();
     } catch {
-      ok = false;
+      done = null;
     }
+    const ok = done !== null;
     if (!mounted.current) return;
+    if (done) playSound(isPerfect(done) ? 'perfect' : 'complete');
+    else playSound('error');
     setCompleting(false);
     setFailed(!ok);
   }, [onComplete]);

@@ -34,6 +34,7 @@ import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
 import { PasswordSection } from './settings/PasswordSection';
 import { RemindersSection } from './settings/RemindersSection';
+import { SoundSection } from './settings/SoundSection';
 import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './settings/section-state';
 import { SettingsJumpList } from './settings/SettingsJumpList';
 import { PageHeader } from './PageHeader';
@@ -490,6 +491,8 @@ export function SettingsPage() {
           </div>
         </SolidCard>
       </section>
+
+      <SoundSection />
 
       <MotivationSection />
 

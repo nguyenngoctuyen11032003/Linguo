@@ -22,6 +22,7 @@ import { StepMistake } from './StepMistake';
 import { StepNextReview } from './StepNextReview';
 import { StepObjective } from './StepObjective';
 import { StepSummary } from './StepSummary';
+import { resetAnswerStreak } from '@/lib/sound';
 
 const CONTENT_TITLES = {
   explain: 'Giải thích',
@@ -52,6 +53,8 @@ function questionLabel(steps: LessonStep[], index: number): string {
 export function LessonPage() {
   const { lessonId = '' } = useParams();
   const run = useLessonRun(lessonId);
+  // A combo never carries over from another lesson.
+  useEffect(resetAnswerStreak, [lessonId]);
   const { profile } = useProfile();
   const navigate = useNavigate();
   const [exitOpen, setExitOpen] = useState(false);

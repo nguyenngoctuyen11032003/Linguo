@@ -9,6 +9,7 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 import { ContentAudio } from '@/features/audio/ContentAudio';
 import { MachineSpeechButton } from '../exercise/MachineSpeechButton';
 import { answerText, readCardContent, type CardContent } from './cardContent';
+import { playSound } from '@/lib/sound';
 
 /** Spec 3 §6: the card turns over in 250 ms; reduced motion swaps the faces instantly. */
 export const FLIP_DURATION_S = 0.25;
@@ -53,6 +54,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
       if (event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.defaultPrevented) return;
       if (isInteractiveTarget(event.target)) return;
       event.preventDefault();
+      playSound('flip');
       onFlip();
     };
     window.addEventListener('keydown', onKey);
@@ -68,6 +70,7 @@ export function Flashcard({ card, flipped, onFlip, disabled = false, className, 
   const flip = () => {
     if (flipped || disabled) return;
     frontHadFocus.current = document.activeElement === frontRef.current;
+    playSound('flip');
     onFlip();
   };
 

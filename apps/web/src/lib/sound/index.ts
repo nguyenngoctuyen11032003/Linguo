@@ -59,7 +59,28 @@ export function verdictCue(verdict: 'correct' | 'almost' | 'incorrect', streak: 
   return { cue: 'correct', intensity: 0 };
 }
 
+// Correct answers in a row within the current lesson/review; module-level so it survives exercise remounts.
+let answerStreak = 0;
+
+/** Call when a lesson, review or diagnostic run starts so a combo never carries over from an earlier one. */
+export function resetAnswerStreak(): void {
+  answerStreak = 0;
+}
+
+/** Plays the feedback for a graded answer and advances the streak. A revealed answer plays the neutral cue. */
+export function playVerdict(verdict: 'correct' | 'almost' | 'incorrect', { revealed = false }: { revealed?: boolean } = {}): void {
+  if (revealed) {
+    answerStreak = 0;
+    playSound('reveal');
+    return;
+  }
+  answerStreak = verdict === 'incorrect' ? 0 : answerStreak + 1;
+  const { cue, intensity } = verdictCue(verdict, answerStreak);
+  playSound(cue, { intensity });
+}
+
 /** Test helper. */
 export function resetSoundThrottleForTests(): void {
   lastPlayed.clear();
+  answerStreak = 0;
 }

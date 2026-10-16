@@ -73,7 +73,7 @@ const LEARNER_KEY_PREFIXES = [
 ];
 /** Per-device (not per-user) key that still holds a learner's input: the onboarding draft. */
 const LEARNER_EXACT_KEYS = [DRAFT_KEY];
-// Kept on purpose: non-personal device preferences (`linguo-theme`, `linguo-reduce-motion`), the recovery-pending
+// Kept on purpose: non-personal device preferences (`linguo-theme`, `linguo-reduce-motion`, `linguo-sound`), the recovery-pending
 // flag (no personal data) and the shared media cache (`linguo-media-v1`).
 
 /**

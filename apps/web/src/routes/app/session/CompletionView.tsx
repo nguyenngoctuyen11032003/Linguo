@@ -3,6 +3,7 @@ import { Check } from 'lucide-react';
 import { Link } from 'react-router';
 import type { StudySession } from '@linguo/shared';
 import { Button, buttonClasses } from '@/components/ui/Button';
+import { playSound } from '@/lib/sound';
 import { sessionMinutes } from './session-summary';
 import { SessionSummaryButton } from './SessionSummaryButton';
 
@@ -23,6 +24,9 @@ export function CompletionView({ session, onPlanAgain, learner }: Props) {
 
   useEffect(() => {
     headingRef.current?.focus();
+    // Celebrate only real work; a session where everything was skipped ends quietly.
+    if (done > 0) playSound('complete');
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once, on arrival
   }, []);
 
   const stats: Array<[string, string]> = [

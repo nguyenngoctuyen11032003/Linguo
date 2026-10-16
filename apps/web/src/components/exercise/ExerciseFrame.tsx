@@ -15,6 +15,7 @@ import {
 } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
+import { playSound, playVerdict } from '@/lib/sound';
 import type { Confidence, ExerciseUiState, SubmitMeta } from '@/features/lesson-player/types';
 import { exercisePromptText, responseText, type LessonAiContext } from './ai-context';
 import { CompositionGateContext, createCompositionGate } from './compositionGate';
@@ -149,6 +150,15 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
     if (!busyNow) sentRef.current = false;
   }, [busyNow, sends, state.lastResult]);
 
+  // Sound once per graded attempt, and only for answers sent from this screen (not a result restored on remount).
+  const sounded = useRef<string | null>(null);
+  const graded = state.status === 'graded' ? state.lastResult : null;
+  useEffect(() => {
+    if (!graded || sends === 0 || sounded.current === graded.attempt_id) return;
+    sounded.current = graded.attempt_id;
+    playVerdict(graded.verdict, { revealed: graded.revealed });
+  }, [graded, sends]);
+
   useEffect(() => {
     if (retries === 0) return;
     bodyRef.current?.querySelector<HTMLElement>('input:not([disabled]), [role="radio"]:not([disabled]), button:not([disabled])')?.focus();
@@ -218,6 +228,10 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
   const aiInput = ai ? { ai, prompt: exercisePromptText(exercise), answer: responseText(exercise, sentResponse) } : undefined;
   const choiceMarks = showResult && result ? { chosenId: submittedOptionId, correctText: result.display_answer } : null;
   const selectedId = response && 'option_id' in response ? response.option_id : null;
+  const pick = (id: string) => {
+    playSound('select');
+    setResponse({ option_id: id });
+  };
 
   let body: ReactNode;
   switch (parsed.type) {
@@ -227,7 +241,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
           prompt={parsed.prompt}
           seed={exercise.id}
           selectedId={selectedId}
-          onSelect={(id) => setResponse({ option_id: id })}
+          onSelect={pick}
           disabled={locked}
           marks={choiceMarks}
         />
@@ -239,7 +253,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
           prompt={parsed.prompt}
           seed={exercise.id}
           selectedId={selectedId}
-          onSelect={(id) => setResponse({ option_id: id })}
+          onSelect={pick}
           disabled={locked}
           marks={choiceMarks}
         />
@@ -264,7 +278,10 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
           lang={exercise.answer_lang}
           seed={`${runId ?? ''}:${exercise.id}`}
           tokenIds={response && 'token_ids' in response ? response.token_ids : []}
-          onChange={(ids) => setResponse(ids.length > 0 ? { token_ids: ids } : null)}
+          onChange={(ids) => {
+            playSound('select');
+            setResponse(ids.length > 0 ? { token_ids: ids } : null);
+          }}
           disabled={locked}
         />
       );
@@ -287,7 +304,15 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
   if ((showResult && result.final) || pending) {
     // While pending the learner keeps going; the verdict appears once the outbox syncs (spec 2 §7.4).
     actions = (
-      <Button variant="accent" size="lg" block onClick={onContinue}>
+      <Button
+        variant="accent"
+        size="lg"
+        block
+        onClick={() => {
+          playSound('next');
+          onContinue();
+        }}
+      >
         Tiếp tục
       </Button>
     );

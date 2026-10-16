@@ -8,6 +8,7 @@ const ITEMS: Array<{ id: string; label: string }> = [
   { id: 'ho-so', label: 'Hồ sơ' },
   { id: 'lo-trinh', label: 'Lộ trình học' },
   { id: 'giao-dien', label: 'Giao diện' },
+  { id: 'am-thanh', label: 'Âm thanh' },
   { id: 'dong-luc', label: 'Động lực và dữ liệu' },
   { id: 'nhac-hoc', label: 'Nhắc học' },
   { id: 'ai-rieng-tu', label: 'AI và quyền riêng tư' },

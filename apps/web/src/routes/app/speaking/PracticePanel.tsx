@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { Check, Mic, Square, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { alignToTarget } from '@/features/speaking/align';
@@ -10,6 +10,7 @@ import type { TtsApi } from '@/features/speaking/useTts';
 import { cn } from '@/lib/cn';
 import { FOCUS_RING } from './controls';
 import { WordFeedback } from './WordFeedback';
+import { playSound } from '@/lib/sound';
 
 const RECORDER_MESSAGES: Record<RecorderError, string> = {
   unsupported: 'Trình duyệt này chưa hỗ trợ ghi âm. Bạn vẫn luyện bình thường theo cách bên dưới.',
@@ -95,6 +96,15 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
   const selfPractice = !recorder.supported || status === 'error';
   const useTranscript = transcribe && stt.supported;
   const { start: startStt, stop: stopStt } = stt;
+
+  // Mic opens: rising blip; mic closes: falling blip.
+  const lastStatus = useRef(status);
+  useEffect(() => {
+    const was = lastStatus.current;
+    lastStatus.current = status;
+    if (status === 'recording' && was !== 'recording') playSound('recordStart');
+    else if (was === 'recording' && status !== 'recording') playSound('recordStop');
+  }, [status]);
 
   useEffect(() => {
     if (status === 'recording' && useTranscript) startStt();
