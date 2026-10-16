@@ -332,7 +332,7 @@ export function OnboardingPage() {
           <div className="mx-auto w-full max-w-xl px-safe py-3">
             {step === 1 && allTaken ? (
               <div className="flex flex-wrap items-center justify-between gap-3">
-                <p className="text-[15px] text-muted">Bạn đã có lộ trình cho cả hai ngôn ngữ.</p>
+                <p className="text-[15px] text-muted">Bạn đã có lộ trình cho mọi ngôn ngữ hiện có.</p>
                 <Link to="/app" className={buttonClasses('accent', 'md')}>
                   Về trang chủ
                 </Link>
