@@ -1,0 +1,595 @@
+# Bài luyện mô phỏng trình độ CEFR B2 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi của
+# Cambridge hay bất kỳ tổ chức nào, không chép đề thật. CEFR không quy đổi điểm: chỉ đánh giá "đạt mức" theo phần.
+schema_version: 1
+demo: false
+language: en
+form:
+  key: en:exam:cefr-b2-mock-1
+  family: cefr
+  title_vi: CEFR B2 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng trình độ B2: 10 câu nghe, 12 câu đọc và 1 bài luận. Nội dung do Linguo tự soạn, không phải
+    đề thi chính thức; kết quả cho biết bạn đạt mức B2 ở từng phần hay chưa, không quy đổi sang điểm của kỳ thi nào.
+  level_from: b1
+  level_to: b2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 20
+    reading: 35
+    writing: 40
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng “đạt mức B2” (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập. CEFR chỉ mô tả trình độ, không
+      quy định thang điểm hay ngưỡng đạt cho bài thi, nên ngưỡng này không có căn cứ chính thức. Bài luận không được chấm
+      tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Listening) ==============================
+  - key: en:examq:cefr-b2-m1-l01
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: What time will the team meeting start?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: Hi Claire, about tomorrow's team meeting – I've just realised I'm at the dentist at ten.
+        Woman: Oh. Could we push it back to the afternoon, then? Say, two o'clock?
+        Man: I'd rather not – half the team leave early on Thursdays. What about bringing it forward to nine?
+        Woman: Nine's a bit early for the people coming in from the other office. Let's say half past nine, and keep it short.
+        Man: Fine, half nine it is. I'll let everyone know.
+      options:
+        - { id: a, text: "9:00", lang: en }
+        - { id: b, text: "10:00", lang: en }
+        - { id: c, text: "9:30", lang: en }
+        - { id: d, text: "2:00", lang: en }
+    answer: c
+    explanation:
+      vi: "Hai người lần lượt loại các giờ: 10 giờ trùng lịch nha sĩ, 2 giờ chiều thì nhiều người về sớm, 9 giờ lại quá sớm với văn phòng kia. Cuối cùng chốt “half past nine” và người nam xác nhận “half nine it is” (9:30). Lưu ý “push back” = lùi lại, “bring forward” = đưa lên sớm hơn."
+
+  - key: en:examq:cefr-b2-m1-l02
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Why does the woman choose the monthly plan?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Hi, I'd like to renew my gym membership, please.
+        Man: Sure. It's thirty-five pounds a month, or you can pay for the whole year upfront for three hundred and sixty.
+        Woman: Three sixty… that works out cheaper, doesn't it?
+        Man: It does, but bear in mind that the annual plan can't be frozen if you get injured or go away.
+        Woman: Hmm. I'm travelling for most of the summer, so I'd be paying for months I don't use. I'll stick with monthly.
+      options:
+        - { id: a, text: "She will be away for part of the year.", lang: en }
+        - { id: b, text: "It is cheaper overall.", lang: en }
+        - { id: c, text: "The annual plan is no longer available.", lang: en }
+        - { id: d, text: "She has recently been injured.", lang: en }
+    answer: a
+    explanation:
+      vi: "Người nữ đi xa gần hết mùa hè (“I'm travelling for most of the summer”) nên gói năm không tạm dừng được sẽ khiến cô trả tiền cho những tháng không dùng. Phương án b sai vì chính cô thừa nhận gói năm rẻ hơn; d là bẫy vì “injured” chỉ được nhắc như một ví dụ của nhân viên."
+
+  - key: en:examq:cefr-b2-m1-l03
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: What does the caller ask Mr Patel to do?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Hello, this is Sarah from Northway Deliveries, calling for Mr Patel. We tried to deliver your parcel this morning, but nobody was in, and as it needs a signature, we couldn't leave it with a neighbour. We can try again on Friday, or you can collect it from our depot on Mill Road any time after four today. Either way, could you ring us back on 0161 496 0732 to let us know which you'd prefer? Thanks.
+      options:
+        - { id: a, text: "Pick up the parcel from a neighbour.", lang: en }
+        - { id: b, text: "Sign a form on the company website.", lang: en }
+        - { id: c, text: "Collect the parcel before four o'clock.", lang: en }
+        - { id: d, text: "Call back to say which option he wants.", lang: en }
+    answer: d
+    explanation:
+      vi: "Cuối tin nhắn, người gọi đề nghị “ring us back … to let us know which you'd prefer” — gọi lại để cho biết chọn giao lại thứ Sáu hay tự đến kho lấy. Phương án a sai vì bưu kiện cần chữ ký nên không để ở nhà hàng xóm; c sai vì kho mở cho lấy hàng sau 4 giờ (“after four”), không phải trước."
+
+  - key: en:examq:cefr-b2-m1-l04
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn chủ đề chính.
+      stem: What are the speakers mainly discussing?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: Have you seen the email about the new open-plan office?
+        Man: Yes. Apparently they're knocking down the walls on the third floor in June.
+        Woman: I'm not sure how I'll concentrate. I'm on the phone to clients half the day.
+        Man: They said there'll be some quiet rooms you can book. Still, I imagine they'll be fully booked most of the time.
+        Woman: Exactly. I think I'll ask whether I can work from home on the days I've got a lot of calls.
+      options:
+        - { id: a, text: "a difficult new client", lang: en }
+        - { id: b, text: "a planned change to their workplace", lang: en }
+        - { id: c, text: "booking a meeting room for June", lang: en }
+        - { id: d, text: "working from home every day", lang: en }
+    answer: b
+    explanation:
+      vi: "Cả đoạn xoay quanh kế hoạch biến tầng ba thành văn phòng không vách ngăn (“open-plan office”) và lo ngại về việc tập trung. Các phương án còn lại chỉ bám vào chi tiết lẻ: khách hàng, phòng yên tĩnh, làm ở nhà — mà người nữ chỉ muốn làm ở nhà vào những ngày nhiều cuộc gọi, không phải mọi ngày."
+
+  - key: en:examq:cefr-b2-m1-l05
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_gist
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn phát thanh và chọn mục đích chính của người nói.
+      stem: What is the main purpose of the talk?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: And now for something a little different. If you've walked past the old bus station recently, you'll have noticed it's been covered in scaffolding. Well, from next month it reopens as a community food hall, with twelve small kitchens run by local cooks, many of whom have never had their own business before. The organisers are still looking for volunteers to help out on the opening weekend, so if you've got a few hours to spare, have a look at their website.
+      options:
+        - { id: a, text: "to complain about building work in the area", lang: en }
+        - { id: b, text: "to advertise a cookery course", lang: en }
+        - { id: c, text: "to introduce a new local venue and ask for help", lang: en }
+        - { id: d, text: "to explain changes to bus services", lang: en }
+    answer: c
+    explanation:
+      vi: "Người nói giới thiệu khu ẩm thực cộng đồng sắp mở ở bến xe buýt cũ rồi kêu gọi tình nguyện viên (“looking for volunteers”). Phương án a và d là bẫy vì có nhắc giàn giáo (scaffolding) và bến xe buýt, nhưng đó chỉ là bối cảnh; cũng không có khóa học nấu ăn nào."
+
+  - key: en:examq:cefr-b2-m1-l06
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_attitude
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu thể hiện đúng quan điểm của người nói.
+      stem: What is the man's opinion of working from home?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Woman: So, now that you've been working from home for a year, would you go back to the office full-time?
+        Man: Honestly, no. I get far more done without constant interruptions, and I don't miss the commute at all. That said, I do think new staff lose out – it's much harder to learn the job when you can't just turn round and ask someone.
+      options:
+        - { id: a, text: "It suits him, but it has drawbacks for new employees.", lang: en }
+        - { id: b, text: "He would prefer to return to the office.", lang: en }
+        - { id: c, text: "Its only advantage is avoiding the commute.", lang: en }
+        - { id: d, text: "It makes it harder for him to learn new skills.", lang: en }
+    answer: a
+    explanation:
+      vi: "Anh làm được nhiều việc hơn và không nhớ cảnh đi lại, nhưng “That said” mở ra ý trái chiều: nhân viên mới chịu thiệt (“new staff lose out”). Phương án d là bẫy: khó học việc là chuyện của người mới, không phải của anh; c sai vì anh còn nêu lợi ích ít bị làm phiền."
+
+  - key: en:examq:cefr-b2-m1-l07
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_attitude
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn câu thể hiện đúng cảm nhận của người nói.
+      stem: How does the woman feel about the film?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: So, did the film live up to the book?
+        Woman: Well, the acting was superb, and it looked stunning. But they cut nearly all of the second half, which is where the story really comes alive. To be honest, I came out feeling it had missed the point.
+      options:
+        - { id: a, text: "She thought the acting spoiled it.", lang: en }
+        - { id: b, text: "She enjoyed it more than the book.", lang: en }
+        - { id: c, text: "She found the story hard to follow.", lang: en }
+        - { id: d, text: "She was disappointed, despite its strengths.", lang: en }
+    answer: d
+    explanation:
+      vi: "Cô khen diễn xuất và hình ảnh, nhưng chê phim cắt gần hết nửa sau và “missed the point” (không truyền tải được cái hồn), tức là thất vọng dù phim có điểm mạnh. “Live up to” = đạt kỳ vọng. Phương án a ngược với “the acting was superb”."
+
+  - key: en:examq:cefr-b2-m1-l08
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo và chọn đáp án đúng cho câu hỏi.
+      stem: What should passengers on flight BA 274 do now?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        This is an announcement for passengers on flight BA 274 to Lisbon. Due to a technical problem with the aircraft, this flight will now depart from gate thirty-one instead of gate eighteen. Boarding will begin at approximately fifteen forty, around forty minutes later than scheduled. Passengers are kindly asked to make their way to the new gate now, as it is a ten-minute walk from the main departure lounge. Refreshment vouchers are available from the service desk opposite gate eighteen.
+      options:
+        - { id: a, text: "Wait at gate 18 until 15:40.", lang: en }
+        - { id: b, text: "Go to gate 31 straight away.", lang: en }
+        - { id: c, text: "Collect a new boarding pass.", lang: en }
+        - { id: d, text: "Ask about booking another flight.", lang: en }
+    answer: b
+    explanation:
+      vi: "Hành khách được đề nghị “make their way to the new gate now” — đi ngay đến cửa mới số 31 vì phải đi bộ 10 phút. Phương án a ghép sai hai chi tiết: 18 là cửa cũ, còn 15:40 là giờ bắt đầu lên máy bay. Quầy dịch vụ chỉ phát phiếu ăn uống, không đổi thẻ lên máy bay."
+
+  - key: en:examq:cefr-b2-m1-l09
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_announcement
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo và chọn đáp án đúng cho câu hỏi.
+      stem: Where will Dr Okafor's talk take place?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Good morning, everyone, and welcome to the second day of the conference. Just a few quick changes to today's programme. Dr Okafor's talk on urban farming, which was due to take place in Room B, has been moved to the main hall, because so many of you have signed up for it. As a result, the panel discussion originally planned for the main hall will now be held in Room B. Lunch is still at half past twelve in the garden café.
+      options:
+        - { id: a, text: "in Room B", lang: en }
+        - { id: b, text: "in the garden café", lang: en }
+        - { id: c, text: "in the main hall", lang: en }
+        - { id: d, text: "in a room on the second floor", lang: en }
+    answer: c
+    explanation:
+      vi: "Bài nói của Dr Okafor “has been moved to the main hall” vì có quá nhiều người đăng ký. Room B là bẫy: đó là phòng dự kiến ban đầu (“was due to take place”) và giờ dành cho buổi thảo luận nhóm. “Second day” là ngày thứ hai của hội nghị, không phải tầng hai."
+
+  - key: en:examq:cefr-b2-m1-l10
+    section: listening
+    kind: mcq
+    question_type: cefr_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn phỏng vấn và chọn đáp án đúng cho câu hỏi.
+      stem: Why did Maria leave her job in banking?
+      stem_lang: en
+      audio_asset_id: null
+      script: |-
+        Man: You spent ten years in banking before becoming a teacher. What made you change?
+        Woman: People assume it was the money or the stress – and the hours were long, I won't deny it. But what really decided it was a volunteering scheme my bank ran. I spent a few afternoons helping teenagers with maths, and I realised I looked forward to those afternoons more than anything in my actual job.
+      options:
+        - { id: a, text: "She discovered she enjoyed helping students more than her work.", lang: en }
+        - { id: b, text: "She was not paid enough.", lang: en }
+        - { id: c, text: "She could no longer cope with the stress.", lang: en }
+        - { id: d, text: "Her bank ended its volunteering scheme.", lang: en }
+    answer: a
+    explanation:
+      vi: "Maria nói điều thực sự quyết định (“what really decided it”) là chương trình tình nguyện dạy toán, khi cô nhận ra mình mong chờ những buổi đó hơn công việc chính. Tiền và áp lực là điều “people assume” (người ta tưởng), nên b và c là bẫy; bài không nói chương trình bị dừng."
+
+  # ============================== ĐỌC (Reading) ==============================
+  - key: en:examq:cefr-b2-m1-r01
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo và chọn câu có nghĩa giống nhất.
+      stem: What does the notice say?
+      stem_lang: en
+      passage: Tickets are non-refundable unless the event is cancelled by the organiser.
+      options:
+        - { id: a, text: "You can return your ticket at any time.", lang: en }
+        - { id: b, text: "You only get your money back if the organiser cancels the event.", lang: en }
+        - { id: c, text: "The organiser may cancel your ticket without a refund.", lang: en }
+        - { id: d, text: "Refunds are given if you cannot attend.", lang: en }
+    answer: b
+    explanation:
+      vi: "“Non-refundable” = không hoàn tiền, “unless” = trừ khi. Vậy chỉ được hoàn tiền khi ban tổ chức hủy sự kiện. Phương án d sai vì việc bạn không đến được không phải trường hợp ngoại lệ; c đảo ngược ý: ban tổ chức hủy thì lại được hoàn tiền."
+
+  - key: en:examq:cefr-b2-m1-r02
+    section: reading
+    kind: mcq
+    question_type: cefr_read_notice
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc biển báo và chọn câu có nghĩa giống nhất.
+      stem: What does the sign say?
+      stem_lang: en
+      passage: Beyond this point, visitors must be accompanied by a member of staff at all times.
+      options:
+        - { id: a, text: "Staff must stay behind this point.", lang: en }
+        - { id: b, text: "Visitors must report to staff before leaving.", lang: en }
+        - { id: c, text: "Visitors are not allowed past this point.", lang: en }
+        - { id: d, text: "Visitors may not go further without a member of staff.", lang: en }
+    answer: d
+    explanation:
+      vi: "“Be accompanied by” = có người đi cùng, “beyond this point” = từ chỗ này trở đi. Khách vẫn được vào nhưng phải luôn có nhân viên đi kèm. Phương án c là bẫy vì quá tuyệt đối: biển không cấm hẳn, chỉ cấm đi một mình."
+
+  - key: en:examq:cefr-b2-m1-r03
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: The committee will ___ all the evidence into account before it reaches a decision.
+      options:
+        - { id: a, text: "take", lang: en }
+        - { id: b, text: "bring", lang: en }
+        - { id: c, text: "put", lang: en }
+        - { id: d, text: "make", lang: en }
+    answer: a
+    explanation:
+      vi: "Cụm cố định là “take something into account” (cân nhắc, tính đến điều gì). Ba động từ còn lại không kết hợp với “into account”; người học hay nhầm vì dịch sát nghĩa “đưa/đặt vào”."
+
+  - key: en:examq:cefr-b2-m1-r04
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: ___ I known about the roadworks, I would have left home much earlier.
+      options:
+        - { id: a, text: "If", lang: en }
+        - { id: b, text: "Were", lang: en }
+        - { id: c, text: "Had", lang: en }
+        - { id: d, text: "Should", lang: en }
+    answer: c
+    explanation:
+      vi: "Đây là câu điều kiện loại 3 dạng đảo ngữ: “Had I known…” = “If I had known…” (giá mà tôi biết). Phương án a sai vì “If I known” thiếu “had”; “Were I…” dùng cho loại 2, “Should I…” dùng cho loại 1, đều không đi với “known … would have left”."
+
+  - key: en:examq:cefr-b2-m1-r05
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the word that best fits the gap.
+      stem_lang: en
+      passage: ___ the heavy rain, the match went ahead as planned.
+      options:
+        - { id: a, text: "Although", lang: en }
+        - { id: b, text: "Despite", lang: en }
+        - { id: c, text: "However", lang: en }
+        - { id: d, text: "Even though", lang: en }
+    answer: b
+    explanation:
+      vi: "Sau chỗ trống là cụm danh từ (the heavy rain), nên cần giới từ “Despite” (mặc dù). “Although” và “Even though” là liên từ, phải đi với một mệnh đề (Although it rained heavily…); “However” đứng đầu câu và theo sau là dấu phẩy, không nối hai vế như thế này."
+
+  - key: en:examq:cefr-b2-m1-r06
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn cụm từ phù hợp nhất để điền vào chỗ trống.
+      stem: Choose the phrase that best fits the gap.
+      stem_lang: en
+      passage: We've had to ___ the meeting until next week because the manager is ill.
+      options:
+        - { id: a, text: "put up", lang: en }
+        - { id: b, text: "call on", lang: en }
+        - { id: c, text: "take off", lang: en }
+        - { id: d, text: "put off", lang: en }
+    answer: d
+    explanation:
+      vi: "“Put off” = hoãn lại (= postpone), rất hợp với “until next week”. “Put up” là dựng lên hoặc cho ở nhờ, “call on” là ghé thăm hoặc kêu gọi, “take off” là cởi ra hoặc cất cánh. Cụm động từ (phrasal verb) giống nhau ở động từ chính rất dễ gây nhầm."
+
+  - key: en:examq:cefr-b2-m1-r07
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: According to Priya Nair, why does the four-day week make financial sense?
+      stem_lang: en
+      passage: |-
+        A FOUR-DAY WEEK: ONE YEAR ON
+        When a mid-sized software company in Leeds announced last year that its staff would work four days a week for the same salary, many observers predicted chaos. Twelve months on, the results are more mixed than either supporters or critics expected.
+        According to the company's own figures, output remained roughly stable, and sick leave fell by almost a third. Staff turnover, which had been a persistent problem, dropped to its lowest level in a decade. "People simply stopped leaving," says operations director Priya Nair. "Recruiting and training a replacement costs us far more than the extra day off."
+        However, the transition was not painless. Customer-facing teams struggled at first, because clients still expected replies on Fridays. The company eventually solved this by splitting those teams into two groups that take different days off, an arrangement Nair admits "took months to get right". Some employees also reported that the shorter week made their remaining days more intense, with fewer breaks and less time for informal conversation.
+        Researchers who studied the trial warn against drawing sweeping conclusions. Dr Tom Wheeler, who led the independent evaluation, points out that the firm was already profitable and that its work is largely done on computers, which makes it easier to measure. "What works for a software company may not work for a hospital or a building site," he says. Nevertheless, he believes the trial shows that working hours deserve to be questioned rather than accepted as a fixed part of working life.
+        The company has now made the four-day week permanent, although managers will review it every year.
+      options:
+        - { id: a, text: "Staff produce much more in four days than they did in five.", lang: en }
+        - { id: b, text: "The company no longer pays for sick leave.", lang: en }
+        - { id: c, text: "Keeping staff is cheaper than replacing those who leave.", lang: en }
+        - { id: d, text: "Clients pay more for a faster service.", lang: en }
+    answer: c
+    explanation:
+      vi: "Nair nói tuyển và đào tạo người thay thế tốn hơn nhiều so với một ngày nghỉ thêm, và nhân viên “simply stopped leaving”. Phương án a sai vì năng suất chỉ “roughly stable” (gần như giữ nguyên), không tăng nhiều; b bóp méo chi tiết “sick leave fell” (số ngày nghỉ ốm giảm)."
+
+  - key: en:examq:cefr-b2-m1-r08
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: How did the company deal with the problem in its customer-facing teams?
+      stem_lang: en
+      passage: |-
+        A FOUR-DAY WEEK: ONE YEAR ON
+        When a mid-sized software company in Leeds announced last year that its staff would work four days a week for the same salary, many observers predicted chaos. Twelve months on, the results are more mixed than either supporters or critics expected.
+        According to the company's own figures, output remained roughly stable, and sick leave fell by almost a third. Staff turnover, which had been a persistent problem, dropped to its lowest level in a decade. "People simply stopped leaving," says operations director Priya Nair. "Recruiting and training a replacement costs us far more than the extra day off."
+        However, the transition was not painless. Customer-facing teams struggled at first, because clients still expected replies on Fridays. The company eventually solved this by splitting those teams into two groups that take different days off, an arrangement Nair admits "took months to get right". Some employees also reported that the shorter week made their remaining days more intense, with fewer breaks and less time for informal conversation.
+        Researchers who studied the trial warn against drawing sweeping conclusions. Dr Tom Wheeler, who led the independent evaluation, points out that the firm was already profitable and that its work is largely done on computers, which makes it easier to measure. "What works for a software company may not work for a hospital or a building site," he says. Nevertheless, he believes the trial shows that working hours deserve to be questioned rather than accepted as a fixed part of working life.
+        The company has now made the four-day week permanent, although managers will review it every year.
+      options:
+        - { id: a, text: "It arranged for team members to have different days off.", lang: en }
+        - { id: b, text: "It asked clients not to contact them on Fridays.", lang: en }
+        - { id: c, text: "It made those teams return to a five-day week.", lang: en }
+        - { id: d, text: "It hired extra staff to work on Fridays.", lang: en }
+    answer: a
+    explanation:
+      vi: "Công ty chia các nhóm làm việc với khách hàng thành hai nhóm nghỉ vào những ngày khác nhau (“two groups that take different days off”), nên thứ Sáu vẫn có người trả lời. Bài không hề nói công ty yêu cầu khách đổi thói quen, cho nhóm quay lại làm 5 ngày hay thuê thêm người."
+
+  - key: en:examq:cefr-b2-m1-r09
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: What point does Dr Wheeler make about the trial?
+      stem_lang: en
+      passage: |-
+        A FOUR-DAY WEEK: ONE YEAR ON
+        When a mid-sized software company in Leeds announced last year that its staff would work four days a week for the same salary, many observers predicted chaos. Twelve months on, the results are more mixed than either supporters or critics expected.
+        According to the company's own figures, output remained roughly stable, and sick leave fell by almost a third. Staff turnover, which had been a persistent problem, dropped to its lowest level in a decade. "People simply stopped leaving," says operations director Priya Nair. "Recruiting and training a replacement costs us far more than the extra day off."
+        However, the transition was not painless. Customer-facing teams struggled at first, because clients still expected replies on Fridays. The company eventually solved this by splitting those teams into two groups that take different days off, an arrangement Nair admits "took months to get right". Some employees also reported that the shorter week made their remaining days more intense, with fewer breaks and less time for informal conversation.
+        Researchers who studied the trial warn against drawing sweeping conclusions. Dr Tom Wheeler, who led the independent evaluation, points out that the firm was already profitable and that its work is largely done on computers, which makes it easier to measure. "What works for a software company may not work for a hospital or a building site," he says. Nevertheless, he believes the trial shows that working hours deserve to be questioned rather than accepted as a fixed part of working life.
+        The company has now made the four-day week permanent, although managers will review it every year.
+      options:
+        - { id: a, text: "The company's figures cannot be trusted.", lang: en }
+        - { id: b, text: "Hospitals should be the next to try a four-day week.", lang: en }
+        - { id: c, text: "The trial proves that shorter weeks work everywhere.", lang: en }
+        - { id: d, text: "The results may not apply to other kinds of work.", lang: en }
+    answer: d
+    explanation:
+      vi: "Dr Wheeler cảnh báo không nên khái quát hóa (“warn against drawing sweeping conclusions”): điều hợp với công ty phần mềm có thể không hợp với bệnh viện hay công trường. Phương án b là bẫy vì nhắc “hospital”, nhưng ông dùng bệnh viện làm ví dụ về nơi có thể không áp dụng được; c thì ngược hẳn ý ông."
+
+  - key: en:examq:cefr-b2-m1-r10
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gist
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn câu tóm tắt đúng nhất nội dung chính.
+      stem: Which sentence best summarises the article?
+      stem_lang: en
+      passage: |-
+        A FOUR-DAY WEEK: ONE YEAR ON
+        When a mid-sized software company in Leeds announced last year that its staff would work four days a week for the same salary, many observers predicted chaos. Twelve months on, the results are more mixed than either supporters or critics expected.
+        According to the company's own figures, output remained roughly stable, and sick leave fell by almost a third. Staff turnover, which had been a persistent problem, dropped to its lowest level in a decade. "People simply stopped leaving," says operations director Priya Nair. "Recruiting and training a replacement costs us far more than the extra day off."
+        However, the transition was not painless. Customer-facing teams struggled at first, because clients still expected replies on Fridays. The company eventually solved this by splitting those teams into two groups that take different days off, an arrangement Nair admits "took months to get right". Some employees also reported that the shorter week made their remaining days more intense, with fewer breaks and less time for informal conversation.
+        Researchers who studied the trial warn against drawing sweeping conclusions. Dr Tom Wheeler, who led the independent evaluation, points out that the firm was already profitable and that its work is largely done on computers, which makes it easier to measure. "What works for a software company may not work for a hospital or a building site," he says. Nevertheless, he believes the trial shows that working hours deserve to be questioned rather than accepted as a fixed part of working life.
+        The company has now made the four-day week permanent, although managers will review it every year.
+      options:
+        - { id: a, text: "A four-day week caused serious problems and was abandoned.", lang: en }
+        - { id: b, text: "A four-day week largely worked for one firm, though with difficulties and limits.", lang: en }
+        - { id: c, text: "Most experts now agree every company should adopt a four-day week.", lang: en }
+        - { id: d, text: "Employees were unhappy because their working days became longer.", lang: en }
+    answer: b
+    explanation:
+      vi: "Bài báo cân bằng hai mặt: kết quả nhìn chung tốt (nhân viên ở lại, nghỉ ốm giảm, chế độ được giữ lâu dài) nhưng có khó khăn khi chuyển đổi và giới hạn về khả năng áp dụng. Phương án a sai vì công ty đã giữ chế độ này vĩnh viễn; d chỉ là một chi tiết nhỏ (“some employees”), không phải ý chính."
+
+  - key: en:examq:cefr-b2-m1-r11
+    section: reading
+    kind: mcq
+    question_type: cefr_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thư gửi tòa soạn và chọn đáp án đúng cho câu hỏi.
+      stem: What is Helen's main concern about the plan?
+      stem_lang: en
+      passage: |-
+        Dear Editor,
+        I read with interest your report on the council's plan to close the city centre to private cars from next spring. As someone who cycles to work every day, I ought to be delighted, and in principle I am. Cleaner air and quieter streets would benefit everyone.
+        My concern is with the timing. The new tram line, which the council itself describes as essential to the scheme, will not be finished until at least the following year. Until then, people who live outside the city and cannot cycle – including many older residents and shift workers – will have no reliable way to get in. Local shops, many of which are still recovering from a difficult few years, could lose customers they simply cannot afford to lose.
+        I would urge the council to delay the ban until the trams are running, rather than abandon it altogether. A good idea introduced too early can easily turn people against it.
+        Yours faithfully,
+        Helen Brooks
+      options:
+        - { id: a, text: "The ban will start before there is good public transport.", lang: en }
+        - { id: b, text: "Cyclists will not be allowed into the city centre.", lang: en }
+        - { id: c, text: "The tram line will cost too much to build.", lang: en }
+        - { id: d, text: "Air pollution in the centre will get worse.", lang: en }
+    answer: a
+    explanation:
+      vi: "“My concern is with the timing”: lệnh cấm xe bắt đầu từ mùa xuân tới, trong khi tuyến tàu điện mà chính hội đồng coi là thiết yếu phải sang năm sau mới xong. Bà không lo về chi phí tàu điện; còn b và d trái với thư, vì bà đi xe đạp và cho rằng không khí sẽ sạch hơn."
+
+  - key: en:examq:cefr-b2-m1-r12
+    section: reading
+    kind: mcq
+    question_type: cefr_read_gist
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thư gửi tòa soạn và chọn mục đích chính của người viết.
+      stem: Why has Helen written the letter?
+      stem_lang: en
+      passage: |-
+        Dear Editor,
+        I read with interest your report on the council's plan to close the city centre to private cars from next spring. As someone who cycles to work every day, I ought to be delighted, and in principle I am. Cleaner air and quieter streets would benefit everyone.
+        My concern is with the timing. The new tram line, which the council itself describes as essential to the scheme, will not be finished until at least the following year. Until then, people who live outside the city and cannot cycle – including many older residents and shift workers – will have no reliable way to get in. Local shops, many of which are still recovering from a difficult few years, could lose customers they simply cannot afford to lose.
+        I would urge the council to delay the ban until the trams are running, rather than abandon it altogether. A good idea introduced too early can easily turn people against it.
+        Yours faithfully,
+        Helen Brooks
+      options:
+        - { id: a, text: "to demand that the council cancel the plan", lang: en }
+        - { id: b, text: "to complain about the newspaper's report", lang: en }
+        - { id: c, text: "to support the idea but ask for it to be postponed", lang: en }
+        - { id: d, text: "to encourage more people to cycle to work", lang: en }
+    answer: c
+    explanation:
+      vi: "Bà ủng hộ về nguyên tắc (“in principle I am”) và đề nghị hoãn lệnh cấm đến khi tàu điện chạy, “rather than abandon it altogether” (chứ không bỏ hẳn). Vì vậy a sai; b sai vì bà đọc bài báo “with interest”, không phàn nàn về tòa soạn."
+
+  # ============================== VIẾT (Writing) ==============================
+  - key: en:examq:cefr-b2-m1-w01
+    section: writing
+    kind: essay
+    question_type: cefr_write_essay
+    level_code: b2
+    points: 20
+    prompt:
+      instruction_vi: >-
+        Viết một bài luận bằng tiếng Anh (khoảng 140–190 từ) trả lời câu hỏi của đề, bàn đủ hai ý cho sẵn và thêm
+        một ý của riêng bạn. Nêu rõ quan điểm, có mở bài, thân bài và kết luận.
+      stem: |-
+        In your English class you have been discussing technology and education. Your teacher has asked you to write an essay.
+        Should schools ban mobile phones during the school day?
+        Notes – write about:
+        1. concentration in lessons
+        2. safety and contacting parents
+        3. ________ (your own idea)
+        Write your essay in 140–190 words.
+      stem_lang: en
+      min_chars: 700
+      max_chars: 1800
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Bàn đủ hai ý cho sẵn và một ý riêng có phát triển (lý do, ví dụ); quan điểm rõ ràng và nhất quán. Thiếu một ý hoặc chỉ liệt kê mà không giải thích là mất điểm.
+        max_points: 5
+      - key: communicative_achievement
+        label_vi: Hiệu quả giao tiếp
+        description_vi: Đúng văn phong bài luận (trang trọng vừa phải, không viết như tin nhắn), lập luận thuyết phục người đọc, cân nhắc cả ý kiến trái chiều.
+        max_points: 5
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có mở bài, các đoạn thân bài mỗi đoạn một ý và kết luận; dùng từ nối đa dạng (However, On the other hand, As a result, Overall…).
+        max_points: 5
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Từ vựng và cấu trúc đa dạng ở mức B2 (câu điều kiện, mệnh đề quan hệ, bị động, cụm từ cố định), lỗi ít và không gây hiểu nhầm.
+        max_points: 5
+    sample_answer: |-
+      Smartphones have become part of everyday life, so it is not surprising that schools are unsure how to deal with them. In my view, a complete ban goes too far, but clear rules are essential.
+
+      The strongest argument for a ban is concentration. Even when a phone is silent, students are tempted to check messages, and a single notification can break their focus for several minutes. Keeping phones in bags during lessons would solve most of this problem.
+
+      On the other hand, many parents feel safer knowing their children can contact them, especially if they travel home alone or plans change at the last minute. Taking phones away for the whole day ignores this real need.
+
+      Another point is that phones can be useful learning tools. Students can look up words, record experiments or take part in online quizzes, as long as the teacher decides when.
+
+      Overall, I believe schools should not ban phones completely. Instead, they should allow them before and after lessons and only use them in class when the teacher asks.
+    explanation:
+      vi: "Bài luận B2 được chấm ở việc bàn đủ ba ý (hai ý cho sẵn và một ý riêng), có quan điểm rõ và lập luận có cân nhắc mặt trái. Lỗi hay gặp là chỉ nêu ý mà không giải thích, quên ý thứ ba, viết quá ngắn, hoặc dùng văn nói (“gonna”, “I think phones are so bad”) thay cho văn phong bài luận."

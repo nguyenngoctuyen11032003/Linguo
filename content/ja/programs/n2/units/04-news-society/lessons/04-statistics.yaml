@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u4-statistics
+order_index: 4
+level: n2
+title:
+  vi: Nói về số liệu, biểu đồ - ～を占める, 増加・減少, ～に伴って, 前年比
+objectives:
+  - vi: Mô tả tỉ lệ bằng ～を占める, 過半数, 割.
+  - vi: Mô tả xu hướng bằng 増加 / 減少 / 横ばい và 前年比.
+  - vi: Nối hai sự thay đổi bằng ～に伴って / ～に伴い.
+estimated_minutes: 24
+skills: [reading, grammar, vocabulary]
+prerequisites: [ja:lesson:n2-u4-headlines]
+items:
+  - item: ja:item:n2-u4-gram-wo-shimeru
+  - item: ja:item:n2-u4-zouka
+  - item: ja:item:n2-u4-genshou
+  - item: ja:item:n2-u4-gram-ni-tomonatte
+  - item: ja:item:n2-u4-zennenhi
+  - item: ja:item:n2-u4-yokobai
+  - item: ja:item:n2-u4-kahansuu
+  - item: ja:item:n3-wariai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Tin kinh tế - xã hội và đề đọc hiểu N2 thường có biểu đồ, bảng số liệu. Sau bài này bạn đọc và nói được "chiếm 70%", "tăng 10% so với năm trước", "đi ngang", "cùng với... thì...".
+  - type: explain
+    text:
+      vi: 'Tỉ lệ: Aが全体の7割を占める (A chiếm 70% tổng thể) - 割 = 10%. 過半数を占める - chiếm quá nửa. 占める luôn đi với を.'
+  - type: explain
+    text:
+      vi: 'Xu hướng (văn viết): 増加する (tăng) / 減少する (giảm) / 横ばい (đi ngang); 急増 / 急減 (tăng / giảm mạnh). So sánh: 前年比10%増 (tăng 10% so với năm trước), 前年比5%減. Với giá cả, tỉ lệ dùng 上昇 / 低下.'
+  - type: explain
+    text:
+      vi: 'N / Vる + に伴って / に伴い - "cùng với (A thay đổi) thì B cũng thay đổi": 人口の減少に伴って、空き家が増えている. に伴い là dạng văn viết, hay ở đầu bản tin.'
+  - type: deep_explain
+    text:
+      vi: 'Mẫu câu mô tả biểu đồ chuẩn: (1) giới thiệu - このグラフは～を示している; (2) điểm chính - ～が最も多く、全体の～割を占めている; (3) xu hướng - ～年以降、増加が続いている / 横ばいとなっている; (4) liên hệ - ～に伴って～. に伴って khác につれて ở chỗ trang trọng hơn và có thể dùng cho thay đổi một lần (法改正に伴い - cùng với việc sửa luật).'
+  - type: example
+    target: 外国人観光客のうち、アジアからの客が約7割を占めている。
+    target_lang: ja
+    translation:
+      vi: Trong số khách du lịch nước ngoài, khách từ châu Á chiếm khoảng 70%.
+  - type: example
+    target: 今年の売り上げは前年比10%の増加となった。
+    target_lang: ja
+    translation:
+      vi: Doanh thu năm nay tăng 10% so với năm trước.
+  - type: example
+    target: 人口の減少に伴って、空き家が増えている。
+    target_lang: ja
+    translation:
+      vi: Cùng với việc dân số giảm, nhà bỏ trống đang tăng lên.
+  - type: example
+    target: 失業率はここ数年、横ばいが続いている。
+    target_lang: ja
+    translation:
+      vi: Tỉ lệ thất nghiệp mấy năm nay vẫn đi ngang.
+  - type: example
+    target: この会社では、社員の過半数を女性が占めている。
+    target_lang: ja
+    translation:
+      vi: Ở công ty này, phụ nữ chiếm quá nửa số nhân viên.
+  - type: common_mistake
+    wrong: アジアからの客が全体の7割に占めている。
+    right: アジアからの客が全体の7割を占めている。
+    target_lang: ja
+    note:
+      vi: 占める là tha động từ - tỉ lệ đi với を.
+  - type: common_mistake
+    wrong: 人口が減少に伴って、空き家が増えている。
+    right: 人口の減少に伴って、空き家が増えている。
+    target_lang: ja
+    note:
+      vi: Trước に伴って là danh từ (人口の減少) hoặc động từ thể từ điển (人口が減るに伴って). Không trộn が với danh từ 減少.
+  - type: summary
+    points:
+      - vi: ～を占める - chiếm; 過半数 - quá nửa; 割 - 10%.
+      - vi: 増加 / 減少 / 横ばい; 前年比～%増 / 減.
+      - vi: N の / Vる + に伴って (に伴い) - cùng với... thì...
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u4-statistics-mcq-yokobai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-yokobai
+    prompt:
+      stem: Trên biểu đồ, 「横ばい」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r3w, text: "đi ngang, gần như không đổi", lang: vi }
+        - { id: k8d, text: tăng mạnh, lang: vi }
+        - { id: e5n, text: giảm mạnh, lang: vi }
+        - { id: p2c, text: lên xuống thất thường, lang: vi }
+    answer:
+      correct_option_id: r3w
+    explanation:
+      vi: 横ばい - đi ngang. Tăng mạnh - 急増 / 急上昇; giảm mạnh - 急減 / 急落.
+    display_answer: đi ngang, gần như không đổi
+
+  - key: ja:exercise:n2-u4-statistics-listen-shimeru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-gram-wo-shimeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 外国人観光客のうち、アジアからの客が約7割を占めています。
+      options:
+        - { id: s9a, text: "Trong số khách du lịch nước ngoài, khách từ châu Á chiếm khoảng 70%.", lang: vi }
+        - { id: d4j, text: "Trong số khách du lịch nước ngoài, khách từ châu Á chiếm khoảng 7%.", lang: vi }
+        - { id: m1u, text: "Trong số khách du lịch nước ngoài, khách từ châu Á chỉ chiếm 30%.", lang: vi }
+        - { id: b6h, text: Khách du lịch từ châu Á tăng gấp 7 lần., lang: vi }
+    answer:
+      correct_option_id: s9a
+    explanation:
+      vi: 7割 - 70% (割 = 10%); ～を占めています - chiếm.
+    display_answer: Trong số khách du lịch nước ngoài, khách từ châu Á chiếm khoảng 70%.
+
+  - key: ja:exercise:n2-u4-statistics-mcq-zennenhi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-zennenhi
+    prompt:
+      stem: 「売り上げ：前年比10%増」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: f7z, text: Doanh thu tăng 10% so với năm trước., lang: vi }
+        - { id: o3k, text: Doanh thu giảm 10% so với năm trước., lang: vi }
+        - { id: w8p, text: Doanh thu tăng gấp 10 lần năm trước., lang: vi }
+        - { id: c4y, text: Doanh thu chiếm 10% tổng thể., lang: vi }
+    answer:
+      correct_option_id: f7z
+    explanation:
+      vi: 前年比 - so với năm trước; 増 - tăng (減 - giảm).
+    display_answer: Doanh thu tăng 10% so với năm trước.
+
+  - key: ja:exercise:n2-u4-statistics-fill-shimeru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-gram-wo-shimeru
+    prompt:
+      template: "アジアからの客が全体の7割を{{b1}}ている。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Khách từ châu Á chiếm 70% tổng thể."
+        - "Gợi ý: 'chiếm' - しめる, thể て."
+    answer:
+      blanks:
+        b1: [占め, しめ]
+    known_wrong:
+      - answer: 増え
+        feedback_vi: 増える là tự động từ, không đi với を. "Chiếm" - 占める.
+        error_tag: vocab_meaning
+      - answer: 占まっ
+        feedback_vi: 占める là động từ nhóm 2 - thể て là 占めて.
+        error_tag: grammar_form
+    explanation:
+      vi: 全体の7割を占めている - chiếm 70% tổng thể.
+    display_answer: アジアからの客が全体の7割を占めている。
+
+  - key: ja:exercise:n2-u4-statistics-wb-tomonatte
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-ni-tomonatte
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cùng với việc dân số giảm, nhà bỏ trống đang tăng lên.\""
+      tokens:
+        - { id: h3, text: 空き家が }
+        - { id: h5, text: 減少している }
+        - { id: h1, text: 人口の減少に }
+        - { id: h4, text: 増えている }
+        - { id: h2, text: 伴って、 }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: 人口の減少に伴って - cùng với việc dân số giảm; 空き家が増えている - nhà bỏ trống đang tăng.
+    display_answer: 人口の減少に伴って、空き家が増えている。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u4-statistics-fill-genshou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-genshou
+    prompt:
+      template: "今年の輸出は前年に比べて5%{{b1}}した。(giảm)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [減少, げんしょう]
+    known_wrong:
+      - answer: 増加
+        feedback_vi: 増加 là tăng; giảm là 減少.
+        error_tag: vocab_meaning
+      - answer: げんしょ
+        feedback_vi: しょう là âm dài - げんしょう.
+        error_tag: long_vowel
+    explanation:
+      vi: 減少する - giảm (văn viết của 減る).
+    display_answer: 今年の輸出は前年に比べて5%減少した。
+
+  - key: ja:exercise:n2-u4-statistics-translate-zennenhi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-zennenhi
+    prompt:
+      source_text: Doanh thu năm nay tăng 10% so với năm trước. (dùng 前年比)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今年の売り上げは前年比10%増加しました。
+        - 今年の売り上げは前年比10%増加した。
+        - 今年の売り上げは前年比10%増えました。
+        - 今年の売り上げは前年比10%増えた。
+        - 今年の売り上げは前年比10%の増加となりました。
+        - 今年の売り上げは前年比10%の増加となった。
+        - 今年の売り上げは前年比10%増でした。
+        - 今年の売り上げは前年比で10%増加しました。
+        - 今年の売り上げは前年比で10%増えました。
+        - 今年の売上は前年比10%増加しました。
+        - 今年の売上は前年比10%増えました。
+        - 今年の売上高は前年比10%増加しました。
+        - 今年の売り上げは前年比10パーセント増加しました。
+        - 今年の売り上げは前年比10パーセント増えました。
+        - 今年の売り上げは前年比10％増加しました。
+        - 今年の売り上げは前年比10％増えました。
+        - 今年の売上は前年比10％増加しました。
+    known_wrong:
+      - answer: 今年の売り上げは前年比10%減少しました。
+        feedback_vi: 減少 là giảm; tăng là 増加 / 増える.
+        error_tag: vocab_meaning
+      - answer: 今年の売り上げは前年比10%を占めました。
+        feedback_vi: 占める là "chiếm" (tỉ lệ trong tổng thể), không phải tăng.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 前年比10%増加しました - tăng 10% so với năm trước. Báo chí hay viết 前年比10%増 hoặc 10%の増加となった.
+    display_answer: 今年の売り上げは前年比10%増加しました。
+
+  - key: ja:exercise:n2-u4-statistics-translate-tomonatte
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-ni-tomonatte
+    prompt:
+      source_text: Cùng với việc đồng yên yếu đi (円安), giá hàng nhập khẩu đang tăng. (dùng に伴って hoặc に伴い)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 円安に伴って、輸入品の値段が上がっている。
+        - 円安に伴って、輸入品の値段が上がっています。
+        - 円安に伴い、輸入品の値段が上がっている。
+        - 円安に伴い、輸入品の値段が上がっています。
+        - 円安に伴って、輸入品の価格が上がっている。
+        - 円安に伴って、輸入品の価格が上がっています。
+        - 円安に伴い、輸入品の価格が上がっている。
+        - 円安に伴い、輸入品の価格が上がっています。
+        - 円安に伴って、輸入品の価格が上昇している。
+        - 円安に伴って、輸入品の価格が上昇しています。
+        - 円安に伴い、輸入品の価格が上昇している。
+        - 円安に伴い、輸入品の価格が上昇しています。
+        - 円安に伴って、輸入品の値段が高くなっている。
+        - 円安に伴って、輸入品の値段が高くなっています。
+        - 円安に伴って、輸入品が値上がりしている。
+        - 円安に伴って、輸入品が値上がりしています。
+        - 円安に伴い、輸入品が値上がりしている。
+        - 円安に伴い、輸入品が値上がりしています。
+        - 円安が進むに伴って、輸入品の値段が上がっています。
+        - 円が安くなるのに伴って、輸入品の値段が上がっています。
+    known_wrong:
+      - answer: 円安に伴って、輸入品の値段が下がっています。
+        feedback_vi: 下がる là giảm; giá đang tăng - 上がっている.
+        error_tag: vocab_meaning
+      - answer: 円安が伴って、輸入品の値段が上がっています。
+        feedback_vi: Mẫu là N + に伴って - 円安に伴って.
+        error_tag: particle
+    explanation:
+      vi: 円安に伴って - cùng với việc đồng yên yếu; 輸入品の値段が上がっている - giá hàng nhập khẩu đang tăng.
+    display_answer: 円安に伴って、輸入品の値段が上がっている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u4-statistics-mcq-graph
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-yokobai
+    prompt:
+      stem: "Đọc: 「グラフを見ると、20代の読書時間は2015年から減少が続いているが、2022年以降は横ばいとなっている。」 Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g6t, text: "Thời gian đọc sách của người 20-29 tuổi giảm từ 2015, từ 2022 gần như không đổi.", lang: vi }
+        - { id: a1m, text: Thời gian đọc sách của người 20-29 tuổi tăng liên tục từ 2015., lang: vi }
+        - { id: y9e, text: Thời gian đọc sách của người 20-29 tuổi giảm mạnh hơn từ 2022., lang: vi }
+        - { id: l4s, text: Thời gian đọc sách của người 20-29 tuổi bắt đầu tăng lại từ 2022., lang: vi }
+    answer:
+      correct_option_id: g6t
+    explanation:
+      vi: 減少が続いている - tiếp tục giảm; 2022年以降は横ばい - từ 2022 trở đi đi ngang.
+    display_answer: Thời gian đọc sách của người 20-29 tuổi giảm từ 2015, từ 2022 gần như không đổi.
+
+  - key: ja:exercise:n2-u4-statistics-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-kahansuu
+    prompt:
+      source_text: この会社では、社員の過半数を女性が占めている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở công ty này, phụ nữ chiếm quá nửa số nhân viên.
+        - Ở công ty này, phụ nữ chiếm hơn một nửa số nhân viên.
+        - Ở công ty này, phụ nữ chiếm quá bán số nhân viên.
+        - Ở công ty này, nữ chiếm quá nửa số nhân viên.
+        - Ở công ty này, nữ giới chiếm quá nửa số nhân viên.
+        - Ở công ty này, nữ giới chiếm hơn một nửa số nhân viên.
+        - Ở công ty này, phụ nữ chiếm đa số nhân viên.
+        - Tại công ty này, phụ nữ chiếm quá nửa số nhân viên.
+        - Tại công ty này, phụ nữ chiếm hơn một nửa số nhân viên.
+        - Trong công ty này, phụ nữ chiếm quá nửa số nhân viên.
+        - Trong công ty này, phụ nữ chiếm hơn một nửa số nhân viên.
+        - Ở công ty này, hơn một nửa nhân viên là phụ nữ.
+        - Ở công ty này, quá nửa nhân viên là phụ nữ.
+        - Ở công ty này, quá nửa nhân viên là nữ.
+        - Ở công ty này, nhân viên nữ chiếm quá nửa.
+        - Ở công ty này, nhân viên nữ chiếm hơn một nửa.
+        - Công ty này có hơn một nửa nhân viên là nữ.
+        - Công ty này có quá nửa nhân viên là phụ nữ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở công ty này, phụ nữ chiếm một nửa số nhân viên.
+        feedback_vi: 過半数 là quá nửa (hơn 50%), không phải đúng một nửa (半数).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 社員の過半数 - quá nửa số nhân viên; 女性が占めている - phụ nữ chiếm.
+    display_answer: Ở công ty này, phụ nữ chiếm quá nửa số nhân viên.
+
+  - key: ja:exercise:n2-u4-statistics-wb-zouka
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-zouka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Số khách du lịch nước ngoài tăng 20% so với năm trước.\""
+      tokens:
+        - { id: z3, text: 前年比 }
+        - { id: z5, text: 20%減少した }
+        - { id: z1, text: 外国人観光客の }
+        - { id: z4, text: 20%増加した }
+        - { id: z2, text: 数は }
+    answer:
+      orders:
+        - [z1, z2, z3, z4]
+    explanation:
+      vi: 前年比20%増加した - tăng 20% so với năm trước. 減少 là giảm.
+    display_answer: 外国人観光客の数は前年比20%増加した。
+
+  - key: ja:exercise:n2-u4-statistics-mcq-describe
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-ni-tomonatte
+    prompt:
+      stem: 'Bạn mô tả biểu đồ: giá xăng tăng, kéo theo số người dùng xe đạp tăng mạnh. Câu nào đúng và tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: v2k, text: ガソリン価格の上昇に伴って、自転車の利用者が急増した。, lang: ja }
+        - { id: n8c, text: ガソリン価格が上昇に伴って、自転車の利用者が急増した。, lang: ja }
+        - { id: j5x, text: ガソリン価格の上昇を占めて、自転車の利用者が急増した。, lang: ja }
+        - { id: e7r, text: ガソリン価格の上昇に伴って、自転車の利用者は横ばいだった。, lang: ja }
+    answer:
+      correct_option_id: v2k
+    explanation:
+      vi: N の + 上昇に伴って - cùng với việc tăng; 急増した - tăng mạnh. が không đi với danh từ 上昇 trước に伴って; 占める là "chiếm"; 横ばい là đi ngang - sai nội dung.
+    display_answer: ガソリン価格の上昇に伴って、自転車の利用者が急増した。

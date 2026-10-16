@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-formal-conditions-review
+order_index: 5
+level: n1
+title:
+  vi: "Ôn tập: bản tin, thông báo và lời cảm ơn trang trọng"
+objectives:
+  - vi: Đọc hiểu một bản tin và một thông báo công ty dùng các mẫu điều kiện, giả định N1.
+  - vi: Chọn đúng giữa とあれば/とあって, ないことには/なくして, たら最後/が最後, が早いか/や否や/なり theo ngữ cảnh.
+  - vi: Viết câu trang trọng với 承諾, 掲載, 即座に.
+estimated_minutes: 25
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n1-u1-gahayaika-nari]
+items:
+  - item: ja:item:n1-u1-shoudaku
+  - item: ja:item:n1-u1-keisai
+  - item: ja:item:n1-u1-sokuza
+  - item: ja:item:n1-u1-gram-toareba
+    role: reuse
+  - item: ja:item:n1-u1-gram-toatte
+    role: reuse
+  - item: ja:item:n1-u1-gram-naikotoniwa
+    role: reuse
+  - item: ja:item:n1-u1-gram-nakushite
+    role: reuse
+  - item: ja:item:n1-u1-gram-tarasaigo
+    role: reuse
+  - item: ja:item:n1-u1-gram-gasaigo
+    role: reuse
+  - item: ja:item:n1-u1-gram-gahayaika
+    role: reuse
+  - item: ja:item:n1-u1-gram-yainaya
+    role: reuse
+  - item: ja:item:n1-u1-gram-nari
+    role: reuse
+  - item: ja:item:n1-u1-sattou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đưa bạn vào hai loại văn bản N1 hay ra đề - một bản tin ngắn trên báo và một thông báo nội bộ công ty. Bạn dùng lại toàn bộ chín mẫu ngữ pháp của unit.
+  - type: explain
+    text:
+      vi: 'Bản tin hay dùng とあって (giải thích cảnh đông đúc, náo nhiệt), や否や và が早いか (diễn biến nhanh), が最後 (cảnh báo). Thông báo, thư trang trọng hay dùng ないことには, なくして(は) (điều kiện bắt buộc) và とあれば (sẵn lòng đáp ứng).'
+  - type: explain
+    text:
+      vi: 'Bảng phân biệt nhanh - điều kiện sẵn lòng: とあれば; lý do của cảnh đã thấy: とあって; điều kiện bắt buộc: ないことには (động từ), なくして (danh từ); hậu quả không cứu vãn: たら最後, が最後; nối tiếp tức thì: が早いか, や否や, なり.'
+  - type: deep_explain
+    text:
+      vi: 'Đề JLPT N1 phần ngữ pháp hay cài bẫy ở vế sau. Hãy tự hỏi ba câu: (1) vế sau là ý chí/mệnh lệnh hay sự việc? - ý chí thì loại とあって, が早いか, や否や, なり; (2) vế sau khẳng định hay phủ định? - khẳng định thì loại ないことには, なくして; (3) kết quả tốt hay xấu? - tốt thì loại たら最後, が最後.'
+  - type: example
+    target: "【ニュース】人気作家の新作が発売されるとあって、書店には開店前から長い列ができた。店のドアが開くや否や、客が売り場に殺到し、新作は一時間で売り切れた。"
+    target_lang: ja
+    translation:
+      vi: "[Tin tức] Vì sách mới của nhà văn nổi tiếng được phát hành nên từ trước giờ mở cửa hiệu sách đã có hàng dài người xếp hàng. Cửa vừa mở là khách ùn ùn đổ vào quầy, và sách mới bán hết trong một giờ."
+    note:
+      vi: とあって giải thích cảnh xếp hàng; や否や kể diễn biến tức thì.
+  - type: example
+    target: "【社内のお知らせ】社員の写真を社外のサイトに掲載する場合は、必ず本人の承諾を得てください。本人の承諾なくして掲載することはできません。"
+    target_lang: ja
+    translation:
+      vi: "[Thông báo nội bộ] Khi đăng ảnh nhân viên lên trang web bên ngoài, nhất định phải được chính người đó đồng ý. Không có sự đồng ý của người đó thì không được đăng."
+    note:
+      vi: 承諾を得る - được chấp thuận; なくして + phủ định.
+  - type: example
+    target: 一度ネットに掲載されたが最後、写真を完全に消すことはできない。
+    target_lang: ja
+    translation:
+      vi: Một khi ảnh đã bị đăng lên mạng thì không thể xoá hoàn toàn được nữa.
+  - type: common_mistake
+    wrong: 本人の承諾がないことには、掲載します。
+    right: 本人の承諾がないことには、掲載できません。
+    target_lang: ja
+    note:
+      vi: ないことには cần vế sau phủ định. Đọc nhanh dễ hiểu nhầm thành "nếu không có sự đồng ý thì (vẫn) đăng".
+  - type: common_mistake
+    wrong: 新作が発売されるとあって、ぜひ買いに行こう。
+    right: 新作が発売されるとあれば、ぜひ買いに行こう。
+    target_lang: ja
+    note:
+      vi: Vế sau là ý chí (行こう) nên không dùng とあって. とあれば - "đã là... thì nhất định phải đi".
+  - type: summary
+    points:
+      - vi: 'Ý chí ở vế sau: dùng とあれば; tránh とあって, が早いか, や否や, なり.'
+      - vi: 'Vế sau phủ định bắt buộc: ないことには (động từ), なくして (danh từ).'
+      - vi: 'Kết quả xấu không cứu vãn: たら最後 / たが最後.'
+      - vi: 承諾 - sự chấp thuận; 掲載 - đăng tải; 即座に - ngay tức thì.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-formal-conditions-review-mcq-news
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-gram-toatte
+    prompt:
+      stem: "Đọc tin: 「人気作家の新作が発売されるとあって、書店には開店前から長い列ができた。」 Vì sao có hàng dài người xếp hàng?"
+      stem_lang: vi
+      options:
+        - { id: a4k, text: Vì sách mới của nhà văn nổi tiếng được phát hành hôm đó., lang: vi }
+        - { id: b9m, text: Vì hiệu sách mở cửa sớm hơn mọi ngày., lang: vi }
+        - { id: c2p, text: Vì nhà văn nổi tiếng đến ký tặng sách., lang: vi }
+        - { id: d6r, text: Vì hiệu sách giảm giá toàn bộ sách., lang: vi }
+    answer:
+      correct_option_id: a4k
+    explanation:
+      vi: とあって nêu lý do đặc biệt - 新作が発売される (sách mới phát hành). Bản tin không nhắc đến giờ mở cửa sớm, ký tặng hay giảm giá.
+    display_answer: Vì sách mới của nhà văn nổi tiếng được phát hành hôm đó.
+
+  - key: ja:exercise:n1-formal-conditions-review-listen-shoudaku
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-shoudaku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 本人の承諾なくして、写真を掲載することはできません。
+      options:
+        - { id: e5s, text: Không có sự đồng ý của chính người đó thì không thể đăng ảnh., lang: vi }
+        - { id: f8t, text: Dù không có sự đồng ý của người đó vẫn có thể đăng ảnh., lang: vi }
+        - { id: g1u, text: Người đó đã đồng ý nên ảnh đã được đăng., lang: vi }
+        - { id: h3v, text: Ảnh đã đăng rồi thì không cần sự đồng ý nữa., lang: vi }
+    answer:
+      correct_option_id: e5s
+    explanation:
+      vi: 承諾なくして - không có sự đồng ý; 掲載することはできません - không thể đăng.
+    display_answer: Không có sự đồng ý của chính người đó thì không thể đăng ảnh.
+
+  - key: ja:exercise:n1-formal-conditions-review-fill-mix
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-yainaya
+    prompt:
+      template: "店のドアが開く{{b1}}、客が売り場に殺到した。新作は一度{{b2}}最後、二度と手に入らないかもしれないからだ。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Cửa vừa mở là khách ùn ùn đổ vào quầy. Vì sách mới mà đã bán hết một lần thì có thể không bao giờ mua được nữa."
+        - "Gợi ý: chỗ 1 là \"ngay khi vừa\"; chỗ 2 chia 売り切れる sang thể たら."
+    answer:
+      blanks:
+        b1: [や否や, やいなや, が早いか]
+        b2: [売り切れたら, うりきれたら, 売り切れたが, うりきれたが]
+    known_wrong:
+      - answer: とあって
+        feedback_vi: Chỗ 1 nói hai việc nối nhau tức thì - dùng や否や hoặc が早いか.
+        error_tag: yainaya_choice
+      - answer: 売り切れるたら
+        feedback_vi: たら gắn vào thể た - 売り切れた → 売り切れたら.
+        error_tag: tara_form
+    explanation:
+      vi: 開くや否や - cửa vừa mở là; 売り切れたら最後 - đã bán hết thì xong (không mua được nữa).
+    display_answer: 店のドアが開くや否や、客が売り場に殺到した。新作は一度売り切れたら最後、二度と手に入らないかもしれないからだ。
+
+  - key: ja:exercise:n1-formal-conditions-review-wb-keisai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-keisai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Vừa được đăng lên tạp chí là quán đó khách đã ùn ùn kéo đến.\""
+      tokens:
+        - { id: k3, text: その店には }
+        - { id: k5, text: 掲載されるとあれば }
+        - { id: k4, text: 客が殺到した }
+        - { id: k1, text: 雑誌に }
+        - { id: k2, text: 掲載されるや否や }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: 掲載される - được đăng; や否や - vừa... là. とあれば là giả định, không hợp với việc đã xảy ra (殺到した).
+    display_answer: 雑誌に掲載されるや否や、その店には客が殺到した。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-formal-conditions-review-fill-choose
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-naikotoniwa
+    prompt:
+      template: "本人に確認し{{b1}}、写真は掲載できません。でも、本人の希望{{b2}}、すぐに掲載します。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ないことには]
+        b2: [とあれば, とあらば]
+    known_wrong:
+      - answer: なくして
+        feedback_vi: なくして gắn vào danh từ; sau động từ 確認し dùng ないことには.
+        error_tag: naikotoniwa_noun
+      - answer: とあって
+        feedback_vi: Vế sau là ý định (掲載します) nên dùng とあれば, không dùng とあって.
+        error_tag: toareba_toatte
+    explanation:
+      vi: 確認しないことには + 掲載できません - chưa xác nhận thì không đăng được; 希望とあれば + すぐに掲載します - nếu là nguyện vọng của người đó thì sẵn sàng đăng ngay.
+    display_answer: 本人に確認しないことには、写真は掲載できません。でも、本人の希望とあれば、すぐに掲載します。
+
+  - key: ja:exercise:n1-formal-conditions-review-translate-thanks
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u1-gram-nakushite
+    prompt:
+      source_text: Nếu không có sự giúp đỡ của quý vị thì dự án này đã không thể thành công. (dùng なくしては, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 皆様のご協力なくしては、このプロジェクトは成功しませんでした。
+        - 皆様のご協力なくしては、このプロジェクトは成功できませんでした。
+        - 皆様のご協力なくしては、このプロジェクトの成功はありませんでした。
+        - 皆様のご支援なくしては、このプロジェクトは成功しませんでした。
+        - 皆様のご支援なくしては、このプロジェクトは成功できませんでした。
+        - 皆様のご支援なくしては、このプロジェクトの成功はありませんでした。
+        - 皆様のお力添えなくしては、このプロジェクトは成功しませんでした。
+        - 皆様のお力添えなくしては、このプロジェクトの成功はありませんでした。
+        - 皆様の助けなくしては、このプロジェクトは成功しませんでした。
+        - 皆さんのご協力なくしては、このプロジェクトは成功しませんでした。
+        - 皆さんの協力なくしては、このプロジェクトは成功しませんでした。
+        - 皆さんの支援なくしては、このプロジェクトは成功しませんでした。
+        - 皆様のご協力なくしては、この計画は成功しませんでした。
+        - 皆様のご協力なくしては、本プロジェクトは成功しませんでした。
+        - 皆様のご協力なくしては、本プロジェクトの成功はありませんでした。
+        - 皆様のご協力なくしては、このプロジェクトは成功しなかったでしょう。
+        - 皆様のご支援なくしては、このプロジェクトは成功しなかったでしょう。
+    known_wrong:
+      - answer: 皆様のご協力をなくしては、このプロジェクトは成功しませんでした。
+        feedback_vi: を biến なくして thành "làm mất". Gắn thẳng - ご協力なくしては.
+        error_tag: nakushite_particle
+      - answer: 皆様のご協力なくしては、このプロジェクトは成功しました。
+        feedback_vi: Vế sau của なくしては phải phủ định.
+        error_tag: nakushite_positive
+    explanation:
+      vi: ご協力 / ご支援 + なくしては; vế sau phủ định quá khứ - 成功しませんでした hoặc 成功はありませんでした.
+    display_answer: 皆様のご協力なくしては、このプロジェクトは成功しませんでした。
+
+  - key: ja:exercise:n1-formal-conditions-review-translate-sokuza
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-sokuza
+    prompt:
+      source_text: Anh ấy vừa đọc email là từ chối ngay tức thì. (dùng なり và 即座に)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼はメールを読むなり、即座に断った。
+        - 彼はメールを読むなり、即座に断りました。
+        - 彼はメールを読むなり即座に断った。
+        - 彼はメールを読むなり、即座に拒否した。
+        - 彼はメールを読むなり、即座に拒否しました。
+        - 彼はメールを読むなり、即座に断りの返事をした。
+        - 彼はメールを読むなり、即座に断りの返信をした。
+        - 彼はそのメールを読むなり、即座に断った。
+        - 彼はメールを見るなり、即座に断った。
+        - かれはメールをよむなり、そくざにことわった。
+    known_wrong:
+      - answer: 彼はメールを読んだなり、即座に断った。
+        feedback_vi: なり gắn vào thể từ điển - 読むなり.
+        error_tag: nari_form
+      - answer: 私はメールを読むなり、即座に断った。
+        feedback_vi: Đề nói "anh ấy"; hơn nữa なり thường không dùng cho chính người nói.
+        error_tag: nari_subject
+    explanation:
+      vi: 読むなり - vừa đọc là; 即座に断る - từ chối ngay tức thì. Hai vế cùng chủ ngữ 彼.
+    display_answer: 彼はメールを読むなり、即座に断った。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-formal-conditions-review-mcq-notice
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u1-keisai
+    prompt:
+      stem: "Đọc thông báo: 「社員の写真を社外のサイトに掲載する場合は、必ず本人の承諾を得てください。一度掲載されたが最後、完全に削除することは困難です。」 Điều nào suy ra được?"
+      stem_lang: vi
+      options:
+        - { id: m3a, text: Công ty lo rằng ảnh đã đăng ra ngoài thì khó xoá sạch nên cần xin phép trước., lang: vi }
+        - { id: n7b, text: Ảnh nhân viên có thể đăng tự do miễn là sau đó xoá đi., lang: vi }
+        - { id: o2c, text: Công ty cấm hoàn toàn việc đăng ảnh nhân viên., lang: vi }
+        - { id: q5d, text: Nhân viên phải tự xoá ảnh của mình trên trang web bên ngoài., lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: 'が最後 + 困難です - một khi đã đăng thì khó xoá hoàn toàn; vì thế phải xin 承諾 trước. Thông báo không cấm hẳn (vẫn đăng được nếu có đồng ý) và không bảo nhân viên tự xoá.'
+    display_answer: Công ty lo rằng ảnh đã đăng ra ngoài thì khó xoá sạch nên cần xin phép trước.
+
+  - key: ja:exercise:n1-formal-conditions-review-mcq-best
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u1-gram-toareba
+    prompt:
+      stem: 'Khách hàng quan trọng nhờ giao hàng gấp vào cuối tuần. Bạn trả lời: "Đã là yêu cầu của quý công ty thì chúng tôi xin sẵn lòng đáp ứng." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: r8e, text: 御社のご依頼とあれば、喜んでお引き受けいたします。, lang: ja }
+        - { id: s1f, text: 御社のご依頼とあって、喜んでお引き受けいたします。, lang: ja }
+        - { id: u4g, text: 御社のご依頼なくして、喜んでお引き受けいたします。, lang: ja }
+        - { id: v7h, text: 御社のご依頼が最後、喜んでお引き受けいたします。, lang: ja }
+    answer:
+      correct_option_id: r8e
+    explanation:
+      vi: とあれば + ý chí, sự sẵn lòng (喜んでお引き受けいたします) là đúng. とあって không đi với ý chí; なくして cần vế phủ định; が最後 phải gắn vào động từ thể た và chỉ kết quả xấu.
+    display_answer: 御社のご依頼とあれば、喜んでお引き受けいたします。
+
+  - key: ja:exercise:n1-formal-conditions-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u1-gram-gasaigo
+    prompt:
+      source_text: 個人情報は一度ネットに流出したが最後、取り戻すことはできない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thông tin cá nhân một khi đã bị lộ ra trên mạng thì không thể lấy lại được.
+        - Thông tin cá nhân một khi đã bị lộ lên mạng thì không thể lấy lại được.
+        - Thông tin cá nhân một khi đã bị rò rỉ lên mạng thì không thể lấy lại được.
+        - Thông tin cá nhân một khi đã bị rò rỉ trên mạng thì không thể lấy lại.
+        - Thông tin cá nhân một khi đã bị lộ ra trên mạng thì không thể thu hồi được.
+        - Thông tin cá nhân một khi đã rò rỉ lên mạng thì không thể thu hồi lại được.
+        - Một khi thông tin cá nhân đã bị lộ trên mạng thì không thể lấy lại được.
+        - Một khi thông tin cá nhân đã bị rò rỉ lên mạng thì không thể lấy lại được.
+        - Một khi thông tin cá nhân đã bị rò rỉ ra mạng thì không thể thu hồi được.
+        - Thông tin cá nhân đã bị lộ ra mạng một lần thì không thể lấy lại được.
+        - Thông tin cá nhân một khi đã lộ ra internet thì không thể lấy lại được.
+        - Thông tin cá nhân đã một lần bị rò rỉ lên mạng thì không lấy lại được nữa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thông tin cá nhân lần cuối bị lộ trên mạng thì có thể lấy lại được.
+        feedback_vi: が最後 không phải "lần cuối"; vế sau 取り戻すことはできない là "không thể lấy lại".
+        error_tag: saigo_meaning
+    explanation:
+      vi: 流出する - rò rỉ, bị lộ; 一度～たが最後 - một khi đã... thì hết đường; 取り戻す - lấy lại.
+    display_answer: Thông tin cá nhân một khi đã bị lộ ra trên mạng thì không thể lấy lại được.
+
+  - key: ja:exercise:n1-formal-conditions-review-wb-hayaika
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-gahayaika
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Kết quả vừa được công bố là bình luận đã đổ về dồn dập trên mạng.\""
+      tokens:
+        - { id: w4, text: 殺到した }
+        - { id: w2, text: 発表されるが早いか }
+        - { id: w5, text: 発表されて早いか }
+        - { id: w1, text: 結果が }
+        - { id: w3, text: ネットにはコメントが }
+    answer:
+      orders:
+        - [w1, w2, w3, w4]
+    explanation:
+      vi: が早いか gắn vào thể từ điển hoặc thể た - 発表されるが早いか; không gắn vào thể て. Vế sau là sự việc đã xảy ra (殺到した).
+    display_answer: 結果が発表されるが早いか、ネットにはコメントが殺到した。
+
+  - key: ja:exercise:n1-formal-conditions-review-mcq-error
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u1-gram-nari
+    prompt:
+      stem: Câu nào SAI?
+      stem_lang: vi
+      options:
+        - { id: x2i, text: 会議が終わるなり、すぐに報告書を送ってください。, lang: ja }
+        - { id: y5j, text: 課長は会議室に入るなり、大声で怒り出した。, lang: ja }
+        - { id: z8k, text: 実際に会ってみないことには、どんな人か分からない。, lang: ja }
+        - { id: a1l, text: 年末とあって、どの店も買い物客でにぎわっていた。, lang: ja }
+    answer:
+      correct_option_id: x2i
+    explanation:
+      vi: なり không đi với lời nhờ (送ってください) - phải nói 会議が終わったら、すぐに報告書を送ってください. Ba câu còn lại đúng - なり kể hành động bất ngờ của người khác, ないことには + phủ định, とあって + cảnh đã thấy.
+    display_answer: 会議が終わるなり、すぐに報告書を送ってください。

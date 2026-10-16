@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u4-ikan
+order_index: 3
+level: n1
+title:
+  vi: Phụ thuộc và bất kể - ～いかんによらず, ～いかんでは
+objectives:
+  - vi: Nói "bất kể ... ra sao" bằng ～(の)いかんによらず / いかんにかかわらず / いかんを問わず.
+  - vi: Nói "tuỳ vào ... mà có thể" bằng ～いかんでは / いかんによっては, và "phụ thuộc vào" bằng ～いかんだ.
+  - vi: Đọc quy định, thông báo với 審査, 措置, 無断.
+estimated_minutes: 25
+skills: [grammar, reading, vocabulary]
+prerequisites: [ja:lesson:n1-u4-ni-sokushite-ni-terashite]
+items:
+  - item: ja:item:n1-u4-shinsa
+  - item: ja:item:n1-u4-sochi
+  - item: ja:item:n1-u4-mudan
+  - item: ja:item:n1-u4-gram-ikan-ni-yorazu
+  - item: ja:item:n1-u4-gram-ikan-dewa
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu ngay những câu quy định như 理由のいかんによらず返金いたしません và những câu cảnh báo như 対応いかんでは大問題になりかねない - hai cách dùng ngược nhau của cùng một từ いかん.
+  - type: explain
+    text:
+      vi: 'いかん (如何) là danh từ Hán "thế nào, ra sao". N(の) + いかんによらず - "bất kể N ra sao": 理由のいかんによらず、無断欠席は認めない. Cùng nghĩa: いかんにかかわらず, いかんを問わず. Vế sau là kết quả cố định (認めない, 返金しない, 一律に).'
+  - type: explain
+    text:
+      vi: 'N(の) + いかんでは / いかんによっては - "tuỳ vào N mà (có thể xảy ra điều đặc biệt)": 審査の結果いかんでは、計画が中止になることもある. Vế sau thường là khả năng - ～こともある, ～かもしれない, ～かねない, ～ありうる.'
+  - type: explain
+    text:
+      vi: 'N + いかんだ / いかんにかかっている - "phụ thuộc vào N": 合格できるかどうかは本人の努力いかんだ. Có thể bỏ の: 結果いかんでは, 努力いかんだ.'
+  - type: deep_explain
+    text:
+      vi: 'Nhận diện nhanh: thấy によらず / にかかわらず / を問わず - kết quả không đổi; thấy では / によっては - kết quả có thể đổi. N đứng trước luôn là thứ có nhiều khả năng (理由, 結果, 対応, 天候, 事情, 成績). Không viết いかに (いかに là phó từ "biết bao, làm thế nào") và không dùng mẫu này cho chuyện vặt đời thường - nghe như văn bản luật.'
+  - type: example
+    target: 理由のいかんによらず、無断欠席は認められません。
+    target_lang: ja
+    translation:
+      vi: Bất kể lý do gì, vắng mặt không phép cũng không được chấp nhận.
+  - type: example
+    target: 書類審査の結果いかんでは、面接に進めないこともある。
+    target_lang: ja
+    translation:
+      vi: Tuỳ kết quả xét hồ sơ, cũng có trường hợp không được vào vòng phỏng vấn.
+  - type: example
+    target: 今後の対応いかんでは、大きな問題になりかねない。
+    target_lang: ja
+    translation:
+      vi: Tuỳ cách ứng phó sắp tới mà chuyện này có thể trở thành vấn đề lớn.
+  - type: example
+    target: 成功するかどうかは、準備いかんだ。
+    target_lang: ja
+    translation:
+      vi: Thành công hay không là phụ thuộc vào sự chuẩn bị.
+  - type: example
+    target: 違反の程度いかんによっては、厳しい措置が取られる。
+    target_lang: ja
+    translation:
+      vi: Tuỳ mức độ vi phạm mà có thể bị áp dụng biện pháp nghiêm khắc.
+  - type: common_mistake
+    wrong: 理由のいかんによって、無断欠席は認められません。
+    right: 理由のいかんによらず、無断欠席は認められません。
+    target_lang: ja
+    note:
+      vi: Kết quả cố định ("không chấp nhận") nên cần "bất kể" - いかんによらず. いかんによって là "tuỳ vào", ngược nghĩa.
+  - type: common_mistake
+    wrong: 理由のいかにによらず、返金はいたしません。
+    right: 理由のいかんによらず、返金はいたしません。
+    target_lang: ja
+    note:
+      vi: Danh từ là いかん (如何), không phải いかに. Có thể bỏ の - 理由いかんによらず.
+  - type: summary
+    points:
+      - vi: (の)いかんによらず / にかかわらず / を問わず - bất kể ... ra sao (kết quả không đổi).
+      - vi: (の)いかんでは / いかんによっては - tuỳ vào ... mà có thể (～こともある, ～かねない).
+      - vi: Nいかんだ - phụ thuộc vào N.
+      - vi: 審査 (xét duyệt), 措置 (biện pháp), 無断 (không xin phép).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u4-ikan-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ikan-ni-yorazu
+    prompt:
+      stem: 「理由のいかんによらず」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: c4r, text: bất kể lý do ra sao, lang: vi }
+        - { id: y8k, text: tuỳ theo lý do, lang: vi }
+        - { id: f1e, text: vì lý do đó, lang: vi }
+        - { id: n6w, text: không có lý do gì, lang: vi }
+    answer:
+      correct_option_id: c4r
+    explanation:
+      vi: いかんによらず - bất kể ... như thế nào. "Tuỳ theo" là いかんによっては / いかんでは.
+    display_answer: bất kể lý do ra sao
+
+  - key: ja:exercise:n1-u4-ikan-listen-dewa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ikan-dewa
+    prompt:
+      audio_asset_id: null
+      fallback_text: 今後の対応いかんでは、大きな問題になりかねない。
+      options:
+        - { id: s3d, text: Tuỳ cách ứng phó sắp tới mà chuyện này có thể trở thành vấn đề lớn., lang: vi }
+        - { id: h7p, text: Dù ứng phó thế nào thì chuyện này cũng thành vấn đề lớn., lang: vi }
+        - { id: a2z, text: Nhờ ứng phó tốt nên chuyện này không thành vấn đề lớn., lang: vi }
+        - { id: m9u, text: Chuyện này chắc chắn không thể thành vấn đề lớn., lang: vi }
+    answer:
+      correct_option_id: s3d
+    explanation:
+      vi: 対応いかんでは - tuỳ cách ứng phó; ～かねない - có thể (dẫn tới điều xấu).
+    display_answer: Tuỳ cách ứng phó sắp tới mà chuyện này có thể trở thành vấn đề lớn.
+
+  - key: ja:exercise:n1-u4-ikan-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ikan-dewa
+    prompt:
+      stem: 'Chọn từ phù hợp: 交渉の結果＿＿、契約内容を見直すこともありうる。'
+      stem_lang: vi
+      options:
+        - { id: o5b, text: いかんでは, lang: ja }
+        - { id: t2j, text: いかんによらず, lang: ja }
+        - { id: e8q, text: をおいて, lang: ja }
+        - { id: v6g, text: いかにも, lang: ja }
+    answer:
+      correct_option_id: o5b
+    explanation:
+      vi: Vế sau là khả năng (～こともありうる) nên dùng いかんでは - tuỳ kết quả. いかんによらず là "bất kể", mâu thuẫn với ý "có thể sửa"; いかにも là phó từ "quả là".
+    display_answer: いかんでは
+
+  - key: ja:exercise:n1-u4-ikan-fill-mudan
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u4-mudan
+    prompt:
+      template: "写真の{{b1}}転載を禁じます。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Nghiêm cấm đăng lại ảnh khi chưa được phép."
+        - "Gợi ý: 'không xin phép' - むだん."
+    answer:
+      blanks:
+        b1: [無断, むだん]
+    known_wrong:
+      - answer: 勝手
+        feedback_vi: 勝手 là tính từ "tự tiện" (勝手に), không ghép trực tiếp với 転載. Văn bản cấm dùng 無断転載.
+        error_tag: vocab_meaning
+      - answer: 無料
+        feedback_vi: 無料 là "miễn phí"; "không xin phép" là 無断.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 無断転載 - đăng lại khi chưa xin phép; 禁じます - nghiêm cấm.
+    display_answer: 写真の無断転載を禁じます。
+
+  - key: ja:exercise:n1-u4-ikan-wb-yorazu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ikan-ni-yorazu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Bất kể lý do gì, vắng mặt không phép cũng không được chấp nhận.\""
+      tokens:
+        - { id: k3, text: 無断欠席は }
+        - { id: k5, text: いかんでは、 }
+        - { id: k1, text: 理由の }
+        - { id: k4, text: 認められません }
+        - { id: k2, text: いかんによらず、 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: 理由のいかんによらず - bất kể lý do; kết quả cố định 認められません. いかんでは là "tuỳ theo", không hợp.
+    display_answer: 理由のいかんによらず、無断欠席は認められません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u4-ikan-fill-shinsa
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-shinsa
+    prompt:
+      template: "書類{{b1}}の結果いかんでは、面接に進めないこともある。(xét duyệt)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [審査, しんさ]
+    known_wrong:
+      - answer: 検査
+        feedback_vi: 検査 là kiểm tra kỹ thuật, y tế; xét duyệt hồ sơ là 審査.
+        error_tag: vocab_meaning
+      - answer: しんさく
+        feedback_vi: Đọc しんさ (không có く).
+        error_tag: reading
+    explanation:
+      vi: 書類審査 - vòng xét hồ sơ; 結果いかんでは - tuỳ kết quả.
+    display_answer: 書類審査の結果いかんでは、面接に進めないこともある。
+
+  - key: ja:exercise:n1-u4-ikan-translate-yorazu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ikan-ni-yorazu
+    prompt:
+      source_text: Bất kể lý do gì, chúng tôi không hoàn tiền. (dùng いかんによらず, kính ngữ いたしません)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 理由のいかんによらず、返金はいたしません。
+        - 理由のいかんによらず返金はいたしません。
+        - 理由のいかんによらず、返金いたしません。
+        - 理由いかんによらず、返金はいたしません。
+        - 理由いかんによらず、返金いたしません。
+        - 理由のいかんによらず、払い戻しはいたしません。
+        - 理由のいかんによらず、ご返金はいたしかねます。
+        - 理由のいかんによらず、返金はいたしかねます。
+        - 理由のいかんによらず、一切返金はいたしません。
+        - 理由のいかんによらず、返金には応じかねます。
+        - 理由の如何によらず、返金はいたしません。
+        - りゆうのいかんによらず、へんきんはいたしません。
+    known_wrong:
+      - answer: 理由のいかんによって、返金はいたしません。
+        feedback_vi: いかんによって là "tuỳ theo" - mâu thuẫn với "không hoàn tiền" cố định. Dùng いかんによらず.
+        error_tag: ikan_meaning
+      - answer: 理由のいかにによらず、返金はいたしません。
+        feedback_vi: Danh từ là いかん, không phải いかに.
+        error_tag: spelling
+    explanation:
+      vi: 理由のいかんによらず - bất kể lý do; 返金はいたしません - không hoàn tiền (khiêm nhường). いたしかねます cũng là cách từ chối lịch sự.
+    display_answer: 理由のいかんによらず、返金はいたしません。
+
+  - key: ja:exercise:n1-u4-ikan-translate-ikanda
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ikan-dewa
+    prompt:
+      source_text: Đỗ hay không là phụ thuộc vào nỗ lực của bản thân. (dùng ～いかんだ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 合格できるかどうかは本人の努力いかんだ。
+        - 合格できるかどうかは、本人の努力いかんだ。
+        - 合格するかどうかは本人の努力いかんだ。
+        - 合格するかどうかは、本人の努力いかんだ。
+        - 合格できるかどうかは本人の努力いかんである。
+        - 合格するかどうかは本人の努力いかんである。
+        - 合格できるかどうかは本人の努力いかんです。
+        - 合格するかどうかは本人の努力いかんです。
+        - 合格できるかどうかは自分の努力いかんだ。
+        - 合格するかどうかは自分の努力いかんだ。
+        - 合格できるか否かは本人の努力いかんだ。
+        - 合格か不合格かは本人の努力いかんだ。
+        - ごうかくできるかどうかはほんにんのどりょくいかんだ。
+    known_wrong:
+      - answer: 合格できるかどうかは本人の努力いかんによらない。
+        feedback_vi: いかんによらない là "không phụ thuộc" - ngược nghĩa. "Phụ thuộc vào" là ～いかんだ.
+        error_tag: ikan_meaning
+      - answer: 合格できるかどうかは本人の努力いかにだ。
+        feedback_vi: Viết いかん, không phải いかに.
+        error_tag: spelling
+    explanation:
+      vi: ～かどうかは + N + いかんだ - việc có ... hay không phụ thuộc vào N.
+    display_answer: 合格できるかどうかは本人の努力いかんだ。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u4-ikan-mcq-rule
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-sochi
+    prompt:
+      stem: "Đọc quy định: 「本規約に違反した場合、違反の程度いかんによっては、利用停止等の措置を取ることがあります。なお、措置の内容いかんにかかわらず、支払い済みの料金は返金いたしません。」 Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: x5c, text: Biện pháp tuỳ mức độ vi phạm; dù bị xử lý thế nào cũng không được hoàn phí đã trả., lang: vi }
+        - { id: p2h, text: Mọi vi phạm đều bị dừng sử dụng ngay; phí sẽ được hoàn lại tuỳ trường hợp., lang: vi }
+        - { id: u7a, text: Người vi phạm nhẹ sẽ được hoàn phí đã trả., lang: vi }
+        - { id: g3m, text: Không có biện pháp nào được áp dụng với người vi phạm., lang: vi }
+    answer:
+      correct_option_id: x5c
+    explanation:
+      vi: 程度いかんによっては～措置を取ることがある - tuỳ mức độ mà có thể áp dụng biện pháp; 内容いかんにかかわらず返金しない - bất kể biện pháp gì cũng không hoàn tiền.
+    display_answer: Biện pháp tuỳ mức độ vi phạm; dù bị xử lý thế nào cũng không được hoàn phí đã trả.
+
+  - key: ja:exercise:n1-u4-ikan-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-ikan-dewa
+    prompt:
+      source_text: 天候いかんでは、試合が延期されることもある。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuỳ thời tiết mà trận đấu cũng có thể bị hoãn.
+        - Tuỳ vào thời tiết mà trận đấu cũng có thể bị hoãn.
+        - Tuỳ theo thời tiết, trận đấu cũng có thể bị hoãn.
+        - Tuỳ thời tiết, trận đấu có thể bị hoãn lại.
+        - Tùy thời tiết mà trận đấu cũng có thể bị hoãn.
+        - Tùy vào thời tiết mà trận đấu cũng có thể bị hoãn.
+        - Tùy theo thời tiết, trận đấu cũng có thể bị hoãn.
+        - Tùy thời tiết, trận đấu có thể bị hoãn lại.
+        - Tuỳ thời tiết mà trận đấu cũng có thể bị dời lại.
+        - Tuỳ vào thời tiết, cũng có khi trận đấu bị hoãn.
+        - Tùy vào thời tiết, cũng có khi trận đấu bị hoãn.
+        - Có khi trận đấu bị hoãn tuỳ theo thời tiết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bất kể thời tiết thế nào, trận đấu cũng bị hoãn.
+        feedback_vi: いかんでは là "tuỳ vào", không phải "bất kể"; ～こともある là "cũng có khi".
+        error_tag: ikan_meaning
+    explanation:
+      vi: 天候いかんでは - tuỳ thời tiết; 延期されることもある - cũng có khi bị hoãn.
+    display_answer: Tuỳ thời tiết mà trận đấu cũng có thể bị hoãn.
+
+  - key: ja:exercise:n1-u4-ikan-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-ikan-ni-yorazu
+    prompt:
+      stem: Bạn soạn thông báo của trường - "Bất kể quốc tịch, ai cũng có thể đăng ký học bổng này." Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: d6t, text: 国籍のいかんを問わず、どなたでもこの奨学金に応募できます。, lang: ja }
+        - { id: j1n, text: 国籍のいかんでは、どなたでもこの奨学金に応募できます。, lang: ja }
+        - { id: w4f, text: 国籍のいかにかかわらず、どなたでもこの奨学金に応募できます。, lang: ja }
+        - { id: r8v, text: 国籍をおいて、どなたでもこの奨学金に応募できます。, lang: ja }
+    answer:
+      correct_option_id: d6t
+    explanation:
+      vi: いかんを問わず - bất kể (cùng nghĩa いかんによらず). いかんでは là "tuỳ theo"; いかに viết sai; をおいて là "ngoài ra không có".
+    display_answer: 国籍のいかんを問わず、どなたでもこの奨学金に応募できます。
+
+  - key: ja:exercise:n1-u4-ikan-wb-sochi
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-sochi
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tuỳ mức độ vi phạm mà có thể bị áp dụng biện pháp nghiêm khắc.\""
+      tokens:
+        - { id: g3, text: 厳しい措置が }
+        - { id: g5, text: いかんによらず、 }
+        - { id: g1, text: 違反の程度 }
+        - { id: g4, text: 取られることもある }
+        - { id: g2, text: いかんによっては、 }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+    explanation:
+      vi: 程度いかんによっては - tuỳ mức độ; 措置が取られる - biện pháp được áp dụng (bị động); ～こともある - cũng có khi.
+    display_answer: 違反の程度いかんによっては、厳しい措置が取られることもある。

@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u2-ni-kagirazu
+order_index: 2
+level: n2
+title:
+  vi: Phạm vi và giới hạn - ～に限らず, ～に限って, ～のみならず
+objectives:
+  - vi: Mở rộng phạm vi "không chỉ N" bằng ～に限らず và ～のみならず.
+  - vi: Nói "cứ đúng lúc..." hoặc "riêng người đó thì không thể" bằng ～に限って.
+  - vi: Phân biệt に限らず (mở rộng) với に限り (thu hẹp) trong thông báo.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n2-u2-nitotte-toshite]
+items:
+  - item: ja:item:n2-u2-sedai
+  - item: ja:item:n2-u2-habahiroi
+  - item: ja:item:n2-u2-reigai
+  - item: ja:item:n2-u2-taishou
+  - item: ja:item:n2-u2-gram-ni-kagirazu
+  - item: ja:item:n2-u2-gram-ni-kagitte
+  - item: ja:item:n2-u2-gram-nomi-narazu
+  - item: ja:item:n2-u2-gram-ni-totte
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "không chỉ người trẻ mà mọi thế hệ", "cứ hôm vội là tàu trễ" và đọc được câu trang trọng có のみならず trong bài báo.
+  - type: explain
+    text:
+      vi: 'N + に限らず - không chỉ (giới hạn ở) N: 東京に限らず、地方でも家賃が上がっている. Vế sau thường có も, 誰でも, どこでも. Ngược lại, N + に限り / に限る là "chỉ riêng": 本日に限り半額 (chỉ hôm nay giảm nửa giá).'
+  - type: explain
+    text:
+      vi: 'N + に限って - (1) đúng vào lúc (chuyện xui): 急いでいる時に限って電車が遅れる; 休みの日に限って雨だ. (2) riêng N thì (chắc chắn không): うちの子に限って、うそをつくはずがない.'
+  - type: explain
+    text:
+      vi: '～のみならず - "không những... mà còn", văn viết, tương đương だけでなく. Nối: N のみならず; V/いA thể thường + のみならず; なA / N + である + のみならず (彼は有能であるのみならず、人柄もいい). Vế sau có も: 国内のみならず、海外でも人気がある.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo nhớ: 限る là "giới hạn". 限らず (phủ định) - không giới hạn → mở rộng. 限り - có giới hạn → thu hẹp. 限って - "giới hạn đúng vào" một lúc, một người → nhấn mạnh sự trớ trêu hoặc niềm tin. Trong đề N2, に限って hay đi với 時 / 日 / 人 và vế sau là chuyện không mong muốn.'
+  - type: example
+    target: このゲームは若い世代に限らず、幅広い世代に人気があります。
+    target_lang: ja
+    translation:
+      vi: Trò chơi này không chỉ thế hệ trẻ mà nhiều thế hệ đều yêu thích.
+  - type: example
+    target: 傘を持っていない日に限って、雨が降るんです。
+    target_lang: ja
+    translation:
+      vi: Cứ đúng hôm không mang ô là trời lại mưa.
+  - type: example
+    target: この問題は日本のみならず、世界全体の課題です。
+    target_lang: ja
+    translation:
+      vi: Vấn đề này không chỉ là của Nhật Bản mà là thách thức của cả thế giới.
+  - type: example
+    target: この講座は社会人を対象にしています。
+    target_lang: ja
+    translation:
+      vi: Khoá học này dành cho người đi làm.
+  - type: common_mistake
+    wrong: 本日に限らず、全品半額です。
+    right: 本日に限り、全品半額です。
+    target_lang: ja
+    note:
+      vi: 'Muốn nói "chỉ riêng hôm nay" dùng に限り. に限らず là "không chỉ hôm nay" - ngược nghĩa.'
+  - type: common_mistake
+    wrong: 時間がある時に限って、本を読みます。
+    right: 時間がある時は、いつも本を読みます。
+    target_lang: ja
+    note:
+      vi: Muốn nói "hễ rảnh là đọc sách" thì không dùng に限って - mẫu này đi với chuyện trớ trêu, không mong muốn (急いでいる時に限って...).
+  - type: summary
+    points:
+      - vi: 世代, 幅広い, 例外, 対象 - 幅広い世代, 例外なく, ～を対象に.
+      - vi: ～に限らず - không chỉ N (mở rộng); に限り - chỉ riêng N.
+      - vi: ～に限って - đúng lúc (xui) / riêng N thì không thể.
+      - vi: ～のみならず - không những... mà còn (văn viết).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u2-ni-kagirazu-mcq-taishou
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u2-taishou
+    prompt:
+      stem: 「この講座は社会人を対象にしています。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: q5a, text: Khoá học này dành cho người đi làm., lang: vi }
+        - { id: u2k, text: Khoá học này do người đi làm giảng dạy., lang: vi }
+        - { id: i8f, text: Khoá học này không nhận người đi làm., lang: vi }
+        - { id: y3t, text: Khoá học này đối chiếu xã hội xưa và nay., lang: vi }
+    answer:
+      correct_option_id: q5a
+    explanation:
+      vi: ～を対象にする - lấy ～ làm đối tượng, dành cho ～. 社会人 - người đi làm (đã ra trường).
+    display_answer: Khoá học này dành cho người đi làm.
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-listen-kagitte
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u2-gram-ni-kagitte
+    prompt:
+      audio_asset_id: null
+      fallback_text: 急いでいる時に限って、電車が遅れる。
+      options:
+        - { id: w6c, text: Cứ đúng lúc đang vội là tàu lại trễ., lang: vi }
+        - { id: m1z, text: Chỉ khi đang vội tôi mới đi tàu., lang: vi }
+        - { id: h4n, text: Khi đang vội thì tàu không bao giờ trễ., lang: vi }
+        - { id: b9e, text: Vì tàu trễ nên tôi lúc nào cũng vội., lang: vi }
+    answer:
+      correct_option_id: w6c
+    explanation:
+      vi: ～時に限って - đúng vào lúc ～ (chuyện xui xảy ra). 遅れる - trễ.
+    display_answer: Cứ đúng lúc đang vội là tàu lại trễ.
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-mcq-kagirazu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-ni-kagirazu
+    prompt:
+      stem: 'Chọn từ đúng: この公園は週末＿＿、平日も人が多いです。'
+      stem_lang: vi
+      options:
+        - { id: r7d, text: に限らず, lang: ja }
+        - { id: e3v, text: に限り, lang: ja }
+        - { id: o6p, text: に限って, lang: ja }
+        - { id: t2s, text: にとって, lang: ja }
+    answer:
+      correct_option_id: r7d
+    explanation:
+      vi: Vế sau 平日も - "ngày thường cũng" → mở rộng phạm vi, dùng に限らず. に限り là "chỉ riêng"; に限って là "đúng lúc (xui)".
+    display_answer: に限らず
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-fill-reigai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-reigai
+    prompt:
+      template: "このルールには{{b1}}がありません。誰でも守らなければなりません。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Quy tắc này không có ngoại lệ. Ai cũng phải tuân thủ."
+        - "Gợi ý: 'ngoại lệ' - れいがい."
+    answer:
+      blanks:
+        b1: [例外, れいがい]
+    known_wrong:
+      - answer: 例
+        feedback_vi: 例 là ví dụ. Ngoại lệ là 例外.
+        error_tag: vocab_meaning
+      - answer: れがい
+        feedback_vi: れい là âm dài - れいがい.
+        error_tag: long_vowel
+    explanation:
+      vi: 例外がない - không có ngoại lệ; 例外なく - không có ngoại lệ nào.
+    display_answer: このルールには例外がありません。誰でも守らなければなりません。
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-wb-sedai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-sedai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Trò chơi này không chỉ thế hệ trẻ mà nhiều thế hệ đều yêu thích.\""
+      tokens:
+        - { id: a3, text: 幅広い世代に }
+        - { id: a5, text: 若い世代に限り、 }
+        - { id: a1, text: このゲームは }
+        - { id: a4, text: 人気があります }
+        - { id: a2, text: 若い世代に限らず、 }
+    answer:
+      orders:
+        - [a1, a2, a3, a4]
+    explanation:
+      vi: 若い世代に限らず、幅広い世代に - không chỉ thế hệ trẻ mà nhiều thế hệ. に限り (chỉ riêng) mâu thuẫn với 幅広い世代.
+    display_answer: このゲームは若い世代に限らず、幅広い世代に人気があります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u2-ni-kagirazu-fill-kagitte
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-ni-kagitte
+    prompt:
+      template: "傘を持っていない日{{b1}}、雨が降るんです。(cứ đúng hôm)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [に限って, にかぎって]
+    known_wrong:
+      - answer: に限らず
+        feedback_vi: に限らず là "không chỉ". Chuyện trớ trêu "cứ đúng hôm..." dùng に限って.
+        error_tag: kagitte_kagirazu
+      - answer: に限り
+        feedback_vi: に限り là "chỉ riêng" (thông báo, điều kiện). Sự trớ trêu dùng に限って.
+        error_tag: kagitte_kagiri
+      - answer: にかぎて
+        feedback_vi: Thiếu âm ngắt っ - にかぎって.
+        error_tag: sokuon
+    explanation:
+      vi: N + に限って - đúng vào N thì (chuyện không mong muốn) xảy ra.
+    display_answer: 傘を持っていない日に限って、雨が降るんです。
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-translate-kagirazu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-ni-kagirazu
+    prompt:
+      source_text: Không chỉ Tokyo, ở các địa phương tiền thuê nhà cũng đang tăng. (dùng に限らず)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 東京に限らず、地方でも家賃が上がっています。
+        - 東京に限らず、地方でも家賃が上がっている。
+        - 東京に限らず、地方でも家賃が高くなっています。
+        - 東京に限らず、地方でも家賃が高くなっている。
+        - 東京に限らず、地方も家賃が上がっています。
+        - 東京に限らず、地方でも家賃が値上がりしています。
+        - 東京に限らず、地方でも家賃は上がっています。
+        - 東京に限らず、地方の家賃も上がっています。
+        - 東京に限らず、地方の家賃も上がっている。
+        - 東京に限らず、地方でも家賃が上昇しています。
+        - とうきょうにかぎらず、ちほうでもやちんがあがっています。
+    known_wrong:
+      - answer: 東京に限り、地方でも家賃が上がっています。
+        feedback_vi: に限り là "chỉ riêng" - mâu thuẫn với 地方でも. Mở rộng phạm vi dùng に限らず.
+        error_tag: kagirazu_kagiri
+      - answer: 東京に限らず、地方でも家賃が下がっています。
+        feedback_vi: 下がる là giảm; tăng là 上がる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 東京に限らず - không chỉ Tokyo; 地方でも - ở địa phương cũng; 家賃が上がっている - tiền thuê nhà đang tăng.
+    display_answer: 東京に限らず、地方でも家賃が上がっています。
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-translate-habahiroi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-habahiroi
+    prompt:
+      source_text: Cửa hàng này kinh doanh nhiều loại mặt hàng đa dạng. (dùng 幅広い)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この店では幅広い商品を扱っています。
+        - この店は幅広い商品を扱っています。
+        - この店では幅広い商品を扱っている。
+        - この店は幅広い商品を扱っている。
+        - この店では幅広い種類の商品を扱っています。
+        - この店は幅広い種類の商品を扱っています。
+        - この店では幅広い商品を売っています。
+        - この店は幅広い商品を売っています。
+        - この店では幅広い品物を扱っています。
+        - この店では幅広く商品を扱っています。
+        - この店は幅広く商品を扱っています。
+        - このみせでははばひろいしょうひんをあつかっています。
+    known_wrong:
+      - answer: この店では広い商品を扱っています。
+        feedback_vi: 広い dùng cho diện tích. Đa dạng, phạm vi rộng là 幅広い.
+        error_tag: collocation
+    explanation:
+      vi: 幅広い商品 - mặt hàng đa dạng; 扱う - kinh doanh, xử lý (hàng hoá).
+    display_answer: この店では幅広い商品を扱っています。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u2-ni-kagirazu-mcq-notice
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-ni-kagirazu
+    prompt:
+      stem: 'Bạn viết tấm biển cho tiệm bánh: "Chỉ hôm nay, toàn bộ bánh giảm 20%." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: n4g, text: 本日に限り、全品2割引きです。, lang: ja }
+        - { id: c1w, text: 本日に限らず、全品2割引きです。, lang: ja }
+        - { id: v8m, text: 本日に限って、全品2割引きです。, lang: ja }
+        - { id: k2j, text: 本日のみならず、全品2割引きです。, lang: ja }
+    answer:
+      correct_option_id: n4g
+    explanation:
+      vi: Thông báo "chỉ riêng hôm nay" - に限り. に限らず / のみならず là "không chỉ hôm nay"; に限って mang sắc thái trớ trêu, không dùng cho thông báo.
+    display_answer: 本日に限り、全品2割引きです。
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u2-gram-nomi-narazu
+    prompt:
+      source_text: この映画は国内のみならず、海外でも高く評価されている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ phim này không chỉ trong nước mà cả ở nước ngoài cũng được đánh giá cao.
+        - Bộ phim này không những được đánh giá cao trong nước mà còn ở nước ngoài.
+        - Bộ phim này không chỉ được đánh giá cao trong nước mà cả ở nước ngoài.
+        - Bộ phim này không chỉ được đánh giá cao trong nước mà còn ở nước ngoài.
+        - Bộ phim này không những trong nước mà cả ở nước ngoài cũng được đánh giá cao.
+        - Không chỉ trong nước mà ở nước ngoài bộ phim này cũng được đánh giá cao.
+        - Bộ phim này không chỉ trong nước mà ở nước ngoài cũng được đánh giá cao.
+        - Bộ phim này được đánh giá cao không chỉ trong nước mà cả ở nước ngoài.
+        - Bộ phim này được đánh giá cao không chỉ ở trong nước mà còn ở nước ngoài.
+        - Bộ phim này không chỉ ở trong nước mà ở nước ngoài cũng được đánh giá cao.
+        - Phim này không chỉ trong nước mà cả ở nước ngoài cũng được đánh giá cao.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bộ phim này chỉ được đánh giá cao trong nước.
+        feedback_vi: のみならず là "không những... mà còn", không phải "chỉ" (のみ).
+        error_tag: nominarazu_meaning
+    explanation:
+      vi: 国内のみならず - không những trong nước; 海外でも - ở nước ngoài cũng; 高く評価されている - được đánh giá cao.
+    display_answer: Bộ phim này không chỉ trong nước mà cả ở nước ngoài cũng được đánh giá cao.
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-wb-nominarazu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-nomi-narazu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Vấn đề này không chỉ là của Nhật Bản mà là thách thức của cả thế giới.\""
+      tokens:
+        - { id: s4, text: 課題です }
+        - { id: s2, text: 日本のみならず、 }
+        - { id: s5, text: 日本のみで、 }
+        - { id: s1, text: この問題は }
+        - { id: s3, text: 世界全体の }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: 日本のみならず、世界全体の課題 - không chỉ của Nhật mà của cả thế giới. のみ một mình là "chỉ" - ngược ý.
+    display_answer: この問題は日本のみならず、世界全体の課題です。
+
+  - key: ja:exercise:n2-u2-ni-kagirazu-mcq-trust
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-ni-kagitte
+    prompt:
+      stem: 'Hàng xóm nói con trai bạn lấy trộm đồ. Bạn tin chắc con mình không làm vậy. Câu nào đúng nhất?'
+      stem_lang: vi
+      options:
+        - { id: f9b, text: うちの子に限って、そんなことをするはずがありません。, lang: ja }
+        - { id: x6q, text: うちの子に限らず、そんなことをするはずがありません。, lang: ja }
+        - { id: d2y, text: うちの子にとって、そんなことをするはずがありません。, lang: ja }
+        - { id: l7h, text: うちの子として、そんなことをするはずがありません。, lang: ja }
+    answer:
+      correct_option_id: f9b
+    explanation:
+      vi: N + に限って ～はずがない - riêng N thì không thể nào ～ (tin tưởng tuyệt đối). に限らず là mở rộng; にとって / として không hợp nghĩa.
+    display_answer: うちの子に限って、そんなことをするはずがありません。

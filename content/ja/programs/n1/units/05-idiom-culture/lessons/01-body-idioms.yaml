@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u5-body-idioms
+order_index: 1
+level: n1
+title:
+  vi: Quán dụng ngữ với bộ phận cơ thể - 顔が広い, 腹が立つ, 耳が痛い
+objectives:
+  - vi: Hiểu nghĩa bóng của các quán dụng ngữ dùng 顔, 腹, 耳, 目, 鼻, 手, 肩.
+  - vi: Dùng đúng trợ từ đi kèm - ～に目がない, ～に手を焼く, ～の肩を持つ.
+  - vi: Chọn quán dụng ngữ hợp ngữ cảnh trong hội thoại và đề đọc JLPT N1.
+estimated_minutes: 22
+skills: [vocabulary, reading, speaking]
+prerequisites: [ja:lesson:n1-academic-discourse-review]
+items:
+  - item: ja:item:n1-u5-kao-ga-hiroi
+  - item: ja:item:n1-u5-hara-ga-tatsu
+  - item: ja:item:n1-u5-mimi-ga-itai
+  - item: ja:item:n1-u5-me-ga-nai
+  - item: ja:item:n1-u5-hana-ga-takai
+  - item: ja:item:n1-u5-te-wo-yaku
+  - item: ja:item:n1-u5-kata-wo-motsu
+body:
+  - type: objective
+    text:
+      vi: Người Nhật rất hay dùng bộ phận cơ thể để nói về tính cách, cảm xúc và quan hệ. Sau bài này, bạn hiểu và dùng được bảy quán dụng ngữ thông dụng nhất mà đề N1 thường hỏi.
+  - type: explain
+    text:
+      vi: 'Quán dụng ngữ (慣用句) là cụm cố định, nghĩa không cộng từ nghĩa từng chữ. 顔が広い - quen biết rộng; 腹が立つ - tức giận; 耳が痛い - nghe nhột vì bị nói trúng lỗi; 鼻が高い - hãnh diện.'
+  - type: explain
+    text:
+      vi: 'Chú ý trợ từ: ～に目がない (mê ~), ～に手を焼く (vất vả với ~), ～の肩を持つ (bênh ~), ～に腹が立つ (tức vì ~). Không thay trợ từ, không đổi danh từ (顔が大きい không mang nghĩa quen biết rộng).'
+  - type: deep_explain
+    text:
+      vi: 'Nhiều cặp dễ nhầm: 鼻が高い (tự hào) / 鼻にかける (khoe khoang); 目がない (mê) / 目が高い (tinh mắt); 耳が痛い (nhột vì bị phê bình) / 耳が早い (nhanh tin). Khi gặp quán dụng ngữ lạ trong đề đọc, hãy đoán nghĩa từ ngữ cảnh cảm xúc của câu trước và sau.'
+  - type: example
+    target: 部長は業界で顔が広いので、いい取引先を紹介してくれた。
+    target_lang: ja
+    translation:
+      vi: Trưởng phòng quen biết rộng trong ngành nên đã giới thiệu cho tôi một đối tác tốt.
+  - type: example
+    target: 先生の「準備不足だ」という指摘は耳が痛かった。
+    target_lang: ja
+    translation:
+      vi: Lời nhận xét "chuẩn bị chưa kỹ" của thầy nghe thật nhột tai.
+  - type: example
+    target: 妹は甘いものに目がなくて、ケーキを見るとすぐ買ってしまう。
+    target_lang: ja
+    translation:
+      vi: Em gái tôi mê đồ ngọt, thấy bánh kem là mua ngay.
+  - type: example
+    target: 息子が全国大会で優勝して、親として鼻が高い。
+    target_lang: ja
+    translation:
+      vi: Con trai vô địch giải toàn quốc, là cha mẹ tôi rất hãnh diện.
+  - type: common_mistake
+    wrong: 彼は顔が大きいので、知り合いがたくさんいる。
+    right: 彼は顔が広いので、知り合いがたくさんいる。
+    target_lang: ja
+    note:
+      vi: Quen biết rộng là 顔が広い. 顔が大きい chỉ là "mặt to" theo nghĩa đen, có khi còn hiểu là "làm ra vẻ ta đây".
+  - type: common_mistake
+    wrong: 母はいつも弟に肩を持つ。
+    right: 母はいつも弟の肩を持つ。
+    target_lang: ja
+    note:
+      vi: Người được bênh đi với の - 弟の肩を持つ (cầm vai của em).
+  - type: summary
+    points:
+      - vi: 顔が広い - quen biết rộng; 鼻が高い - hãnh diện.
+      - vi: 腹が立つ - tức giận; 耳が痛い - nhột vì bị nói trúng lỗi.
+      - vi: ～に目がない - mê ~; ～に手を焼く - vất vả với ~.
+      - vi: ～の肩を持つ - bênh vực ~.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u5-body-idioms-mcq-kao
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-kao-ga-hiroi
+    prompt:
+      stem: 「顔が広い」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: k4p, text: quen biết rộng, lang: vi }
+        - { id: w8d, text: "mặt dày, trơ trẽn", lang: vi }
+        - { id: h2s, text: nổi tiếng vì đẹp, lang: vi }
+        - { id: r6m, text: hay giận dỗi, lang: vi }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: 顔が広い - có nhiều mối quan hệ. Mặt dày là 厚かましい / 顔が厚い.
+    display_answer: quen biết rộng
+
+  - key: ja:exercise:n1-u5-body-idioms-listen-mimi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-mimi-ga-itai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 先生の「準備不足だ」という指摘は耳が痛かった。
+      options:
+        - { id: c3n, text: Lời nhận xét "chuẩn bị chưa kỹ" của thầy nghe thật nhột tai., lang: vi }
+        - { id: f7a, text: Thầy bị đau tai nên chưa chuẩn bị kỹ., lang: vi }
+        - { id: y1q, text: Tôi không nghe rõ lời nhận xét của thầy., lang: vi }
+        - { id: e5v, text: Lời khen của thầy làm tôi rất vui., lang: vi }
+    answer:
+      correct_option_id: c3n
+    explanation:
+      vi: 指摘 - lời chỉ ra (lỗi); 耳が痛い - nghe khó chịu vì đúng là lỗi của mình. Không phải đau tai thật.
+    display_answer: Lời nhận xét "chuẩn bị chưa kỹ" của thầy nghe thật nhột tai.
+
+  - key: ja:exercise:n1-u5-body-idioms-mcq-me
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-me-ga-nai
+    prompt:
+      stem: 'Chọn từ đúng: 父は日本酒に＿＿、旅行先でも必ず地酒を買ってくる。'
+      stem_lang: vi
+      options:
+        - { id: m9t, text: 目がなくて, lang: ja }
+        - { id: b2g, text: 目が高くて, lang: ja }
+        - { id: o6w, text: 耳が痛くて, lang: ja }
+        - { id: x4k, text: 顔が広くて, lang: ja }
+    answer:
+      correct_option_id: m9t
+    explanation:
+      vi: ～に目がない - mê ~ (rượu sake) nên đi đâu cũng mua. 目が高い là tinh mắt, không đi với に theo nghĩa này.
+    display_answer: 目がなくて
+
+  - key: ja:exercise:n1-u5-body-idioms-fill-hara
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-hara-ga-tatsu
+    prompt:
+      template: "約束を何度も破られて、さすがに{{b1}}が立った。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Bị thất hứa nhiều lần, quả thật tôi đã nổi giận."
+        - "Gợi ý: bộ phận cơ thể 'bụng' - はら."
+    answer:
+      blanks:
+        b1: [腹, はら]
+    known_wrong:
+      - answer: 頭
+        feedback_vi: 頭にくる cũng là "tức", nhưng đi với くる, không đi với 立つ. Ở đây là 腹が立つ.
+        error_tag: idiom_collocation
+      - answer: 顔
+        feedback_vi: 顔が立つ là "giữ được thể diện", khác nghĩa. Tức giận là 腹が立つ.
+        error_tag: idiom_meaning
+    explanation:
+      vi: 腹が立つ - tức giận. さすがに - quả thật (đến mức này thì).
+    display_answer: 約束を何度も破られて、さすがに腹が立った。
+
+  - key: ja:exercise:n1-u5-body-idioms-wb-hana
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-hana-ga-takai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Con trai vô địch giải toàn quốc, là cha mẹ tôi rất hãnh diện.\""
+      tokens:
+        - { id: t3, text: 親として }
+        - { id: t5, text: 鼻にかける }
+        - { id: t1, text: 息子が }
+        - { id: t4, text: 鼻が高い }
+        - { id: t2, text: 全国大会で優勝して、 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: 鼻が高い - hãnh diện. 鼻にかける là khoe khoang, vênh váo - nghĩa xấu, không hợp.
+    display_answer: 息子が全国大会で優勝して、親として鼻が高い。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u5-body-idioms-fill-te
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-te-wo-yaku
+    prompt:
+      template: "新しいシステムのトラブルに、担当者たちはかなり手を{{b1}}いる。(vất vả xoay xở)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [焼いて, やいて]
+    known_wrong:
+      - answer: 貸して
+        feedback_vi: 手を貸す là "giúp một tay". Vất vả với việc khó là 手を焼く.
+        error_tag: idiom_meaning
+      - answer: 抜いて
+        feedback_vi: 手を抜く là "làm qua loa, ăn bớt công". Vất vả là 手を焼く.
+        error_tag: idiom_meaning
+    explanation:
+      vi: ～に手を焼く - vất vả, bó tay với ~; ている - đang trong tình trạng đó.
+    display_answer: 新しいシステムのトラブルに、担当者たちはかなり手を焼いている。
+
+  - key: ja:exercise:n1-u5-body-idioms-translate-kata
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-kata-wo-motsu
+    prompt:
+      source_text: Mẹ lúc nào cũng bênh em trai. (dùng 肩を持つ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 母はいつも弟の肩を持つ。
+        - 母はいつも弟の肩を持ちます。
+        - 母はいつも弟の肩を持っている。
+        - 母はいつも弟の肩を持っています。
+        - 母がいつも弟の肩を持つ。
+        - 母はいつだって弟の肩を持つ。
+        - 母はいつも弟の肩ばかり持つ。
+        - 母はいつも弟の肩ばかり持っている。
+        - 私の母はいつも弟の肩を持つ。
+        - はははいつもおとうとのかたをもつ。
+    known_wrong:
+      - answer: 母はいつも弟に肩を持つ。
+        feedback_vi: Người được bênh đi với の - 弟の肩を持つ.
+        error_tag: particle_no
+      - answer: お母さんはいつも弟の肩を持つ。
+        feedback_vi: Nói về mẹ mình với người ngoài dùng 母.
+        error_tag: uchi_family
+    explanation:
+      vi: ～の肩を持つ - bênh ~; いつも - lúc nào cũng.
+    display_answer: 母はいつも弟の肩を持つ。
+
+  - key: ja:exercise:n1-u5-body-idioms-translate-kao
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-kao-ga-hiroi
+    prompt:
+      source_text: Anh Tanaka quen biết rộng nên hỏi anh ấy là nhanh nhất.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 田中さんは顔が広いから、彼に聞くのが一番早い。
+        - 田中さんは顔が広いので、彼に聞くのが一番早い。
+        - 田中さんは顔が広いから、彼に聞くのが一番早いです。
+        - 田中さんは顔が広いので、彼に聞くのが一番早いです。
+        - 田中さんは顔が広いから、田中さんに聞くのが一番早い。
+        - 田中さんは顔が広いので、田中さんに聞くのが一番早いです。
+        - 田中さんは顔が広いから、彼に聞くのがいちばん早い。
+        - 田中さんは顔が広いので、彼に聞くのがいちばん早いです。
+        - 田中さんは顔が広いから、彼に聞けば一番早い。
+        - 田中さんは顔が広いので、彼に聞くのが最も早い。
+        - 田中さんは顔が広いから、彼に聞いたほうが早い。
+        - 田中さんは顔が広いので、彼に聞いたほうが早いです。
+    known_wrong:
+      - answer: 田中さんは顔が大きいから、彼に聞くのが一番早い。
+        feedback_vi: 顔が大きい là "mặt to". Quen biết rộng là 顔が広い.
+        error_tag: idiom_collocation
+      - answer: 田中さんは顔が広いから、彼を聞くのが一番早い。
+        feedback_vi: Hỏi ai dùng に - 彼に聞く.
+        error_tag: particle_ni
+    explanation:
+      vi: 顔が広い - quen biết rộng; ～に聞くのが一番早い - hỏi ~ là nhanh nhất.
+    display_answer: 田中さんは顔が広いから、彼に聞くのが一番早い。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u5-body-idioms-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-mimi-ga-itai
+    prompt:
+      stem: 'Sếp góp ý: "Báo cáo của cậu lúc nào cũng nộp muộn." Bạn biết đó là sự thật. Câu đáp nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: d8j, text: 耳が痛いです。次からは必ず期限を守ります。, lang: ja }
+        - { id: n3u, text: 鼻が高いです。次からは必ず期限を守ります。, lang: ja }
+        - { id: s7c, text: 目がないです。次からは必ず期限を守ります。, lang: ja }
+        - { id: g1z, text: 腹が立ちます。次からは必ず期限を守ります。, lang: ja }
+    answer:
+      correct_option_id: d8j
+    explanation:
+      vi: 耳が痛い - nghe nhột vì bị nói trúng lỗi, thường dùng để thừa nhận lời phê bình. 鼻が高い (hãnh diện), 目がない (mê), 腹が立つ (tức) đều sai ngữ cảnh - nói 腹が立ちます với sếp còn thất lễ.
+    display_answer: 耳が痛いです。次からは必ず期限を守ります。
+
+  - key: ja:exercise:n1-u5-body-idioms-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u5-te-wo-yaku
+    prompt:
+      source_text: 反抗期の娘に手を焼いている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đang vất vả với đứa con gái tuổi nổi loạn.
+        - Tôi đang vất vả với con gái đang tuổi nổi loạn.
+        - Tôi đang vất vả với con gái tuổi nổi loạn.
+        - Tôi đang bó tay với đứa con gái tuổi nổi loạn.
+        - Tôi đang bó tay với con gái đang tuổi nổi loạn.
+        - Tôi đang bó tay với con gái tuổi nổi loạn.
+        - Tôi đang chật vật với con gái đang tuổi nổi loạn.
+        - Tôi đang khổ sở với con gái đang tuổi nổi loạn.
+        - Tôi đang vất vả với con gái đang tuổi dậy thì.
+        - Tôi đang vất vả với đứa con gái tuổi dậy thì.
+        - Tôi đang đau đầu với con gái đang tuổi nổi loạn.
+        - Tôi đang đau đầu vì con gái đang tuổi nổi loạn.
+        - Con gái đang tuổi nổi loạn làm tôi vất vả.
+        - Con gái đang tuổi nổi loạn khiến tôi bó tay.
+        - Tôi đang vất vả xoay xở với con gái đang tuổi nổi loạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đang nấu ăn cho con gái tuổi nổi loạn.
+        feedback_vi: 手を焼く là quán dụng ngữ "vất vả, bó tay", không liên quan đến nấu nướng (焼く - nướng).
+        error_tag: idiom_literal
+    explanation:
+      vi: 反抗期 - tuổi nổi loạn (giai đoạn chống đối); ～に手を焼いている - đang vất vả với ~.
+    display_answer: Tôi đang vất vả với con gái đang tuổi nổi loạn.
+
+  - key: ja:exercise:n1-u5-body-idioms-wb-me
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-me-ga-nai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Em gái tôi mê đồ ngọt, thấy bánh kem là mua ngay.\""
+      tokens:
+        - { id: p4, text: すぐ買ってしまう }
+        - { id: p2, text: 甘いものに目がなくて、 }
+        - { id: p5, text: 甘いものを目がなくて、 }
+        - { id: p1, text: 妹は }
+        - { id: p3, text: ケーキを見ると }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: Mê cái gì dùng に - 甘いものに目がない. ～と - hễ ~ là; ～てしまう - lỡ (không kìm được).
+    display_answer: 妹は甘いものに目がなくて、ケーキを見るとすぐ買ってしまう。
+
+  - key: ja:exercise:n1-u5-body-idioms-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u5-hara-ga-tatsu
+    prompt:
+      stem: "Đọc: 「会議で私の企画をけなした課長に腹が立ったが、冷静に考えると、指摘はどれも耳が痛いものばかりだった。結局、同僚の中で私の肩を持ってくれる人はいなかった。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: a6r, text: "Người viết tức trưởng ban, nhưng thừa nhận các góp ý đều đúng chỗ yếu; không đồng nghiệp nào bênh mình.", lang: vi }
+        - { id: l2x, text: Người viết hãnh diện vì kế hoạch được trưởng ban khen trong cuộc họp., lang: vi }
+        - { id: u9b, text: Trưởng ban bị đau tai nên không nghe rõ kế hoạch của người viết., lang: vi }
+        - { id: q5e, text: Đồng nghiệp đều đứng về phía người viết để phản bác trưởng ban., lang: vi }
+    answer:
+      correct_option_id: a6r
+    explanation:
+      vi: けなす - chê bai; 腹が立った - nổi giận; 耳が痛いものばかり - toàn điều nhột tai (đúng lỗi của mình); 肩を持ってくれる人はいなかった - không ai bênh.
+    display_answer: Người viết tức trưởng ban, nhưng thừa nhận các góp ý đều đúng chỗ yếu; không đồng nghiệp nào bênh mình.

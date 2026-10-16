@@ -1,0 +1,409 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u3-teichougo
+order_index: 1
+level: n2
+title:
+  vi: 丁重語 và cách nói trang trọng
+objectives:
+  - vi: Phân biệt 丁重語 (いたす, まいる, おる, 申す) với khiêm nhường お～する.
+  - vi: Dùng ござる, でございます đúng chỗ, không dùng cho người được tôn trọng.
+  - vi: Chuyển từ thường sang từ trang trọng - 本日, 明日 (みょうにち), 先ほど, 後ほど, こちら.
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n2-viewpoint-contrast-review]
+items:
+  - item: ja:item:n2-u3-gram-teichougo
+  - item: ja:item:n2-u3-gozaru
+  - item: ja:item:n2-u3-honjitsu
+  - item: ja:item:n2-u3-myounichi
+  - item: ja:item:n2-u3-sakihodo
+  - item: ja:item:n2-u3-kochira
+  - item: ja:item:n3-gram-kenjougo
+    role: reuse
+  - item: ja:item:n3-mairu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Ở N3 bạn đã học tôn kính và khiêm nhường. Bài này nâng lên mức "nói như nhân viên lễ tân, người dẫn chương trình" - giọng trang trọng dùng khi phát biểu, tiếp khách, thông báo.
+  - type: explain
+    text:
+      vi: '丁重語 (còn gọi 謙譲語 II) hạ mình để tỏ lễ độ với NGƯỜI NGHE, không cần có ai nhận hành động: 行く/来る → まいる, いる → おる, する → いたす, 言う → 申す. 来週から大阪へ出張にまいります; 長くこの会社に勤めております. Chủ ngữ có thể là vật - まもなく電車がまいります; 雨が降っております.'
+  - type: explain
+    text:
+      vi: 'So với 謙譲語 I (お～する, 伺う, 拝見する): loại này cần một người được nâng làm đích của hành động - 先生のお宅に伺う (đến nhà thầy). 丁重語 thì không - 東京にまいります chỉ là "tôi đi Tokyo" nói trang trọng. Vì vậy ở chỗ không có người nhận, dùng いたす/まいる chứ không lập お～する.'
+  - type: explain
+    text:
+      vi: 'ござる là mức trang trọng nhất: ある → ございます (お手洗いは2階にございます), です → でございます (こちらが会議室でございます). Bộ từ trang trọng: 今日 → 本日, 明日 → 明日 (みょうにち), 昨日 → 昨日 (さくじつ), さっき → 先ほど, あとで → 後ほど, 今 → ただいま, ここ/これ → こちら.'
+  - type: deep_explain
+    text:
+      vi: でございます chỉ thay です cho sự vật hoặc cho phía mình - 私が担当のグエンでございます. Với khách phải dùng tôn kính でいらっしゃる - 山田様でいらっしゃいますか. Nói 山田様でございますか là lỗi rất hay gặp, vì bạn đang dùng giọng hạ mình cho khách. Tương tự, 丁重語 không bao giờ có chủ ngữ là người được tôn trọng - 社長がまいります chỉ đúng khi nói với khách về sếp phe mình.
+  - type: example
+    target: 本日はお忙しいところ、お集まりいただきありがとうございます。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn quý vị hôm nay đã tập trung dù rất bận.
+  - type: example
+    target: 私、営業部のグエンと申します。入社して三年になります。現在は海外営業を担当いたしております。
+    target_lang: ja
+    translation:
+      vi: Tôi là Nguyễn ở phòng kinh doanh. Tôi vào công ty được ba năm. Hiện tôi phụ trách mảng kinh doanh nước ngoài.
+  - type: example
+    target: 先ほどお電話いたしましたグエンでございます。
+    target_lang: ja
+    translation:
+      vi: Tôi là Nguyễn, người vừa gọi điện lúc nãy ạ.
+  - type: example
+    target: 会議室はこちらでございます。どうぞお入りください。
+    target_lang: ja
+    translation:
+      vi: Phòng họp ở đây ạ. Mời anh/chị vào.
+  - type: example
+    target: 詳しい資料は、明日（みょうにち）改めてお送りいたします。
+    target_lang: ja
+    translation:
+      vi: Tài liệu chi tiết, ngày mai tôi sẽ gửi lại cho anh/chị ạ.
+  - type: common_mistake
+    wrong: 失礼ですが、山田様でございますか。
+    right: 失礼ですが、山田様でいらっしゃいますか。
+    target_lang: ja
+    note:
+      vi: でございます là giọng hạ mình/trang trọng cho sự vật và phía mình. Hỏi về khách phải dùng tôn kính でいらっしゃいますか.
+  - type: common_mistake
+    wrong: 週末は家でお休みしました。
+    right: 週末は家で休みました。/ 週末は家で休んでおりました。
+    target_lang: ja
+    note:
+      vi: Nghỉ ngơi không hướng tới ai nên không lập お～する. Muốn trang trọng dùng 丁重語 おる/いたす hoặc chỉ ます.
+  - type: summary
+    points:
+      - vi: 丁重語 - いたす, まいる, おる, 申す - lễ độ với người nghe, không cần người nhận hành động.
+      - vi: お～する (謙譲語 I) chỉ dùng khi hành động hướng tới người được nâng.
+      - vi: ございます = あります, でございます = です; với khách dùng でいらっしゃる.
+      - vi: 本日, 明日 (みょうにち), 昨日 (さくじつ), 先ほど, 後ほど, ただいま, こちら.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u3-teichougo-mcq-gozaimasu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u3-gozaru
+    prompt:
+      stem: 「お手洗いは2階にございます。」 Từ ございます ở đây là cách nói trang trọng của từ nào?
+      stem_lang: vi
+      options:
+        - { id: k4v, text: "あります (có, ở)", lang: vi }
+        - { id: p8m, text: います (có người), lang: vi }
+        - { id: z2c, text: 行きます (đi), lang: vi }
+        - { id: e6r, text: 来ます (đến), lang: vi }
+    answer:
+      correct_option_id: k4v
+    explanation:
+      vi: ございます thay あります cho đồ vật, nơi chốn; câu nghĩa "Nhà vệ sinh ở tầng 2 ạ". Người ở đâu thì dùng おります (mình) hoặc いらっしゃいます (người được tôn trọng).
+    display_answer: "あります (có, ở)"
+
+  - key: ja:exercise:n2-u3-teichougo-listen-myounichi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-myounichi
+    prompt:
+      audio_asset_id: null
+      fallback_text: みょうにち、改めてご連絡いたします。
+      options:
+        - { id: d3w, text: "Ngày mai tôi sẽ liên lạc lại với anh/chị ạ.", lang: vi }
+        - { id: h7q, text: "Hôm qua tôi đã liên lạc với anh/chị rồi ạ.", lang: vi }
+        - { id: s1n, text: "Hôm nay tôi sẽ liên lạc lại với anh/chị ạ.", lang: vi }
+        - { id: u9b, text: "Xin anh/chị liên lạc lại vào ngày mai.", lang: vi }
+    answer:
+      correct_option_id: d3w
+    explanation:
+      vi: みょうにち là cách đọc trang trọng của 明日 (ngày mai); hôm qua trang trọng là さくじつ. ご連絡いたします - tôi liên lạc (khiêm nhường), không phải nhờ người kia.
+    display_answer: Ngày mai tôi sẽ liên lạc lại với anh/chị ạ.
+
+  - key: ja:exercise:n2-u3-teichougo-mcq-pair
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-sakihodo
+    prompt:
+      stem: 'Ghép đúng cặp "thường → trang trọng". Cặp nào SAI?'
+      stem_lang: vi
+      options:
+        - { id: r5t, text: さっき → 後ほど, lang: ja }
+        - { id: a2j, text: 今日 → 本日, lang: ja }
+        - { id: m7x, text: 今 → ただいま, lang: ja }
+        - { id: g4y, text: あとで → 後ほど, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: さっき (lúc nãy) trang trọng là 先ほど; 後ほど là "lát nữa" - trang trọng của あとで. Ba cặp còn lại đúng.
+    display_answer: さっき → 後ほど
+
+  - key: ja:exercise:n2-u3-teichougo-fill-mairimasu
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-gram-teichougo
+    prompt:
+      template: "まもなく、1番線に電車が{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tàu sắp vào sân ga số 1."
+        - "Gợi ý: 丁重語 của 来る, chủ ngữ là vật cũng dùng được."
+    answer:
+      blanks:
+        b1: [まいります, 参ります]
+    known_wrong:
+      - answer: いらっしゃいます
+        feedback_vi: いらっしゃる là tôn kính, nâng chủ ngữ - không dùng để tôn đoàn tàu. Thông báo ga dùng 丁重語 まいります.
+        error_tag: sonkeigo_teichougo
+      - answer: 来ます
+        feedback_vi: Đúng nghĩa nhưng thông báo công cộng dùng giọng trang trọng まいります.
+        error_tag: register
+    explanation:
+      vi: 丁重語 lễ độ với người nghe (hành khách) nên chủ ngữ có thể là vật - 電車がまいります. Đây là câu thông báo quen thuộc ở ga Nhật.
+    display_answer: まもなく、1番線に電車がまいります。
+
+  - key: ja:exercise:n2-u3-teichougo-wb-kochira
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-kochira
+    prompt:
+      instruction: "Bạn giới thiệu sếp mình với khách: \"Đây là ông Sato, trưởng phòng công ty chúng tôi.\""
+      tokens:
+        - { id: c2, text: 弊社の部長の佐藤 }
+        - { id: c5, text: 佐藤部長様 }
+        - { id: c1, text: こちらは }
+        - { id: c3, text: でございます }
+        - { id: c4, text: でいらっしゃいます }
+    answer:
+      orders:
+        - [c1, c2, c3]
+    explanation:
+      vi: Giới thiệu người dùng こちらは. Sếp là phe mình nên gọi 部長の佐藤 (trống tên) và dùng でございます; でいらっしゃいます hay 佐藤部長様 là tôn sếp mình trước mặt khách.
+    display_answer: こちらは弊社の部長の佐藤でございます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u3-teichougo-fill-honjitsu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-honjitsu
+    prompt:
+      template: "{{b1}}はお忙しいところ、お越しいただきありがとうございます。(hôm nay - trang trọng)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [本日, ほんじつ]
+    known_wrong:
+      - answer: 今日
+        feedback_vi: Đúng nghĩa nhưng lời chào khách trang trọng dùng 本日.
+        error_tag: register
+      - answer: 明日
+        feedback_vi: 明日 là ngày mai. Hôm nay trang trọng là 本日.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 本日 (ほんじつ) - hôm nay, trang trọng. お越しいただき - (tôn kính) anh/chị đã đến.
+    display_answer: 本日はお忙しいところ、お越しいただきありがとうございます。
+
+  - key: ja:exercise:n2-u3-teichougo-translate-sakihodo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-sakihodo
+    prompt:
+      source_text: Tôi là Nguyễn, người vừa gọi điện lúc nãy ạ. (trang trọng, dùng でございます)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 先ほどお電話いたしましたグエンでございます。
+        - 先ほどお電話しましたグエンでございます。
+        - 先ほど電話いたしましたグエンでございます。
+        - 先程お電話いたしましたグエンでございます。
+        - 先程お電話しましたグエンでございます。
+        - 先ほどお電話をいたしましたグエンでございます。
+        - 先ほどお電話いたしました、グエンでございます。
+        - 先ほどお電話差し上げましたグエンでございます。
+        - 私、先ほどお電話いたしましたグエンでございます。
+        - さきほどおでんわいたしましたグエンでございます。
+        - さきほどおでんわしましたグエンでございます。
+    known_wrong:
+      - answer: さっきお電話いたしましたグエンでございます。
+        feedback_vi: さっき là văn nói thường; câu trang trọng dùng 先ほど.
+        error_tag: register
+      - answer: 後ほどお電話いたしましたグエンでございます。
+        feedback_vi: 後ほど là "lát nữa" (tương lai). Lúc nãy là 先ほど.
+        error_tag: vocab_confusion
+      - answer: 先ほどお電話なさったグエンでございます。
+        feedback_vi: なさる là tôn kính, không dùng cho mình; dùng お電話いたしました.
+        error_tag: sonkeigo_kenjougo
+    explanation:
+      vi: 先ほど - lúc nãy; お電話いたしました - tôi đã gọi điện (khiêm nhường, vì cuộc gọi hướng tới người kia); グエンでございます - tôi là Nguyễn (trang trọng).
+    display_answer: 先ほどお電話いたしましたグエンでございます。
+
+  - key: ja:exercise:n2-u3-teichougo-translate-orimasu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-teichougo
+    prompt:
+      source_text: Từ tháng sau tôi sẽ đi công tác Osaka. (phát biểu trang trọng, dùng 丁重語)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 来月から大阪へ出張にまいります。
+        - 来月から大阪へ出張に参ります。
+        - 来月から大阪に出張にまいります。
+        - 来月から大阪に出張に参ります。
+        - 来月から大阪へ出張いたします。
+        - 来月から大阪に出張いたします。
+        - 来月より大阪へ出張にまいります。
+        - 来月より大阪へ出張いたします。
+        - 来月から大阪に出張することになっております。
+        - 私は来月から大阪へ出張にまいります。
+        - らいげつからおおさかへしゅっちょうにまいります。
+        - らいげつからおおさかにしゅっちょういたします。
+    known_wrong:
+      - answer: 来月から大阪へ出張にいらっしゃいます。
+        feedback_vi: いらっしゃる là tôn kính, không dùng cho mình. Dùng まいります hoặc 出張いたします.
+        error_tag: sonkeigo_teichougo
+      - answer: 来月から大阪へご出張します。
+        feedback_vi: Đi công tác không hướng tới người được nâng nên không lập ご～する; dùng 出張いたします.
+        error_tag: kenjougo_form
+    explanation:
+      vi: Hành động không hướng tới ai, chỉ cần lễ độ với người nghe - 丁重語 まいります / いたします. 来月より là cách viết trang trọng hơn của 来月から.
+    display_answer: 来月から大阪へ出張にまいります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u3-teichougo-mcq-irassharu
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gozaru
+    prompt:
+      stem: Ở quầy lễ tân, bạn muốn xác nhận người khách trước mặt có phải là ông Yamada không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: w3k, text: 失礼ですが、山田様でいらっしゃいますか。, lang: ja }
+        - { id: b8f, text: 失礼ですが、山田様でございますか。, lang: ja }
+        - { id: n5h, text: 失礼ですが、山田様でおりますか。, lang: ja }
+        - { id: y1p, text: 失礼ですが、山田さんでいますか。, lang: ja }
+    answer:
+      correct_option_id: w3k
+    explanation:
+      vi: Hỏi về khách dùng tôn kính でいらっしゃいますか. でございます là giọng hạ mình/trang trọng cho sự vật và phía mình; おる là 丁重語 cho mình; でいます không phải cách nói đúng.
+    display_answer: 失礼ですが、山田様でいらっしゃいますか。
+
+  - key: ja:exercise:n2-u3-teichougo-mcq-oyasumi
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-kenjougo
+    prompt:
+      stem: Câu nào dùng kính ngữ SAI?
+      stem_lang: vi
+      options:
+        - { id: q6l, text: 昨日は一日、家でお休みしておりました。, lang: ja }
+        - { id: f2d, text: 資料は後ほどお送りいたします。, lang: ja }
+        - { id: j9s, text: 現在、本社に勤務しております。, lang: ja }
+        - { id: o4e, text: 会議室までご案内いたします。, lang: ja }
+    answer:
+      correct_option_id: q6l
+    explanation:
+      vi: Nghỉ ở nhà không hướng tới ai nên không lập お休みする; nói 休んでおりました. お送りする, ご案内する có người nhận nên đúng; 勤務しております là 丁重語 đúng.
+    display_answer: 昨日は一日、家でお休みしておりました。
+
+  - key: ja:exercise:n2-u3-teichougo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-honjitsu
+    prompt:
+      source_text: 本日の会議は、3階の会議室で行われます。資料はこちらでございます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuộc họp hôm nay được tổ chức ở phòng họp tầng 3. Tài liệu đây ạ.
+        - Cuộc họp hôm nay được tổ chức tại phòng họp tầng 3. Tài liệu đây ạ.
+        - Cuộc họp hôm nay sẽ được tổ chức ở phòng họp tầng 3. Tài liệu đây ạ.
+        - Cuộc họp hôm nay diễn ra ở phòng họp tầng 3. Tài liệu đây ạ.
+        - Cuộc họp hôm nay diễn ra tại phòng họp tầng 3. Tài liệu ở đây ạ.
+        - Cuộc họp hôm nay được tổ chức ở phòng họp tầng 3. Tài liệu là cái này ạ.
+        - Cuộc họp hôm nay được tổ chức ở phòng họp tầng 3. Đây là tài liệu ạ.
+        - Cuộc họp hôm nay tổ chức ở phòng họp tầng 3. Đây là tài liệu.
+        - Buổi họp hôm nay được tổ chức ở phòng họp tầng 3. Tài liệu đây ạ.
+        - Hôm nay cuộc họp được tổ chức ở phòng họp tầng ba. Tài liệu đây ạ.
+        - Cuộc họp hôm nay được tổ chức ở phòng họp tầng ba. Đây là tài liệu ạ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuộc họp ngày mai được tổ chức ở phòng họp tầng 3. Tài liệu đây ạ.
+        feedback_vi: 本日 là hôm nay (trang trọng), không phải ngày mai.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 本日 - hôm nay; 行われます - được tổ chức; こちらでございます - đây ạ (trang trọng của これです).
+    display_answer: Cuộc họp hôm nay được tổ chức ở phòng họp tầng 3. Tài liệu đây ạ.
+
+  - key: ja:exercise:n2-u3-teichougo-wb-speech
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-mairu
+    prompt:
+      instruction: "Phát biểu nhận chức trang trọng: \"Từ tháng tư tôi đã được chuyển đến chi nhánh Osaka.\""
+      tokens:
+        - { id: t4, text: まいりました }
+        - { id: t2, text: 大阪支社に }
+        - { id: t5, text: いらっしゃいました }
+        - { id: t1, text: 4月より }
+        - { id: t3, text: 異動して }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: Nói về mình - 丁重語 まいりました (～てまいる - đã đến, đã chuyển đến). いらっしゃる là tôn kính cho người khác. 4月より - từ tháng tư (trang trọng của から).
+    display_answer: 4月より大阪支社に異動してまいりました。
+
+  - key: ja:exercise:n2-u3-teichougo-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-kochira
+    prompt:
+      stem: Khách đến công ty hỏi phòng họp ở đâu. Bạn dẫn đến cửa phòng và nói gì?
+      stem_lang: vi
+      options:
+        - { id: v7g, text: 会議室はこちらでございます。どうぞお入りください。, lang: ja }
+        - { id: i3u, text: 会議室はここです。入ってください。, lang: ja }
+        - { id: l8a, text: 会議室はこちらでいらっしゃいます。どうぞお入りください。, lang: ja }
+        - { id: c1z, text: 会議室はこちらでございます。どうぞお入りしてください。, lang: ja }
+    answer:
+      correct_option_id: v7g
+    explanation:
+      vi: こちらでございます - trang trọng của ここです; お入りください - mời khách vào (tôn kính). でいらっしゃる chỉ cho người; お入りしてください trộn khiêm nhường với yêu cầu; câu thứ hai quá thường.
+    display_answer: 会議室はこちらでございます。どうぞお入りください。

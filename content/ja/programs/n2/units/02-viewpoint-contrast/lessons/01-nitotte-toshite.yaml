@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u2-nitotte-toshite
+order_index: 1
+level: n2
+title:
+  vi: Góc nhìn và tư cách - ～にとって, ～として, ～からすると
+objectives:
+  - vi: Đánh giá một việc từ góc nhìn của ai đó bằng ～にとって.
+  - vi: Nói tư cách, vai trò bằng ～として / としての.
+  - vi: Nêu lập trường hoặc suy đoán từ căn cứ bằng ～からすると / からすれば.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n2-time-change-review]
+items:
+  - item: ja:item:n2-u2-tachiba
+  - item: ja:item:n2-u2-kanten
+  - item: ja:item:n2-u2-kachi
+  - item: ja:item:n2-u2-futan
+  - item: ja:item:n2-u2-gram-ni-totte
+  - item: ja:item:n2-u2-gram-toshite
+  - item: ja:item:n2-u2-gram-kara-suru-to
+  - item: ja:item:n3-gram-ni-taishite
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được một việc "quan trọng đối với ai", "làm với tư cách gì" và "nhìn từ phía ai thì thấy thế nào" - ba cách đổi góc nhìn rất hay gặp trong bài đọc N2.
+  - type: explain
+    text:
+      vi: 'N + にとって - đối với N (góc nhìn đánh giá). Vế sau là nhận xét: 大切だ, 難しい, ありがたい, 負担だ. 学生にとって、アルバイトは大切な収入です. Bổ nghĩa danh từ: にとっての - 私にとっての幸せ.'
+  - type: explain
+    text:
+      vi: 'N + として - với tư cách N, trong vai trò N: 代表として挨拶する; 趣味として写真を撮る. としては - "về phía..., thì": 会社としては賛成できない. としての + N: 親としての責任 (trách nhiệm làm cha mẹ).'
+  - type: explain
+    text:
+      vi: 'N + からすると / からすれば - (1) đứng từ lập trường N: 子どもからすると、大人のルールは不公平だ. (2) căn cứ vào N mà suy ra: あの話し方からすると、関西の人だろう. からして còn có nghĩa "ngay từ ... đã": タイトルからしておもしろそうだ.'
+  - type: deep_explain
+    text:
+      vi: 'Ba mẫu dễ lẫn: にとって trả lời "đánh giá theo ai?"; として trả lời "ở vai trò gì?"; からすると trả lời "nhìn từ phía ai / căn cứ vào đâu?". Còn に対して (N3) là thái độ, hành động hướng vào ai - 客に対して丁寧だ. Vì vậy "tiếng Nhật khó đối với tôi" là 私にとって, còn "lịch sự với khách" là 客に対して.'
+  - type: example
+    target: 外国人にとって、日本の敬語はとても難しいです。
+    target_lang: ja
+    translation:
+      vi: Đối với người nước ngoài, kính ngữ tiếng Nhật rất khó.
+  - type: example
+    target: 彼は通訳として会議に参加しました。
+    target_lang: ja
+    translation:
+      vi: Anh ấy tham gia cuộc họp với tư cách phiên dịch.
+  - type: example
+    target: 住民の立場からすると、新しい道路はうるさいだけです。
+    target_lang: ja
+    translation:
+      vi: Từ phía người dân mà nói, con đường mới chỉ ồn ào thôi.
+  - type: example
+    target: 環境の観点からすれば、車より自転車のほうがいい。
+    target_lang: ja
+    translation:
+      vi: Xét từ góc độ môi trường thì xe đạp tốt hơn ô tô.
+  - type: common_mistake
+    wrong: 店員はお客様にとって親切です。
+    right: 店員はお客様に対して親切です。
+    target_lang: ja
+    note:
+      vi: Thái độ hướng vào ai dùng に対して. にとって dùng khi đánh giá từ góc nhìn của người đó - お客様にとって便利なサービス.
+  - type: common_mistake
+    wrong: 私は医者にとって働いています。
+    right: 私は医者として働いています。
+    target_lang: ja
+    note:
+      vi: Làm việc với tư cách bác sĩ - として. にとって không chỉ vai trò, tư cách.
+  - type: summary
+    points:
+      - vi: 立場, 観点, 価値, 負担 - 相手の立場に立つ, ～の観点から, ～する価値がある, 負担がかかる.
+      - vi: ～にとって - đối với (đánh giá); にとっての + N.
+      - vi: ～として - với tư cách; としては, としての + N.
+      - vi: ～からすると / からすれば - từ lập trường / căn cứ vào.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u2-nitotte-toshite-mcq-tachiba
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u2-tachiba
+    prompt:
+      stem: 「相手の立場に立って考える」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: k4s, text: Đặt mình vào vị trí của đối phương để suy nghĩ., lang: vi }
+        - { id: b8m, text: Đứng trước mặt đối phương để suy nghĩ., lang: vi }
+        - { id: x2q, text: Suy nghĩ về địa điểm gặp đối phương., lang: vi }
+        - { id: f6t, text: Đứng lên phản đối ý kiến của đối phương., lang: vi }
+    answer:
+      correct_option_id: k4s
+    explanation:
+      vi: 立場 - lập trường, vị trí (trong quan hệ); 立場に立つ - đứng vào vị trí đó. Không phải địa điểm vật lý.
+    display_answer: Đặt mình vào vị trí của đối phương để suy nghĩ.
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-listen-nitotte
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u2-gram-ni-totte
+    prompt:
+      audio_asset_id: null
+      fallback_text: 学生にとって、アルバイトは大切な収入です。
+      options:
+        - { id: r3w, text: "Đối với sinh viên, việc làm thêm là nguồn thu nhập quan trọng.", lang: vi }
+        - { id: h7d, text: "Với tư cách sinh viên, tôi làm thêm để có thu nhập.", lang: vi }
+        - { id: n1c, text: "Đối với sinh viên, việc làm thêm không quan trọng.", lang: vi }
+        - { id: z5e, text: Công ty trả thu nhập quan trọng cho sinh viên làm thêm., lang: vi }
+    answer:
+      correct_option_id: r3w
+    explanation:
+      vi: 学生にとって - đối với sinh viên (góc nhìn đánh giá); 大切な収入 - nguồn thu nhập quan trọng.
+    display_answer: Đối với sinh viên, việc làm thêm là nguồn thu nhập quan trọng.
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-mcq-toshite
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-toshite
+    prompt:
+      stem: 'Chọn từ đúng: 彼は通訳＿＿会議に参加しました。'
+      stem_lang: vi
+      options:
+        - { id: d9p, text: として, lang: ja }
+        - { id: m2g, text: にとって, lang: ja }
+        - { id: w5j, text: に対して, lang: ja }
+        - { id: a8u, text: からすると, lang: ja }
+    answer:
+      correct_option_id: d9p
+    explanation:
+      vi: Tham gia với tư cách phiên dịch - として. にとって là góc nhìn đánh giá; に対して là thái độ hướng vào ai; からすると là xét từ lập trường.
+    display_answer: として
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-fill-futan
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-futan
+    prompt:
+      template: "毎日の長い通勤は体に{{b1}}がかかります。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Việc đi làm xa mỗi ngày gây gánh nặng cho cơ thể."
+        - "Gợi ý: 'gánh nặng' - ふたん."
+    answer:
+      blanks:
+        b1: [負担, ふたん]
+    known_wrong:
+      - answer: 価値
+        feedback_vi: 価値 là giá trị. Gánh nặng là 負担 - 負担がかかる.
+        error_tag: vocab_meaning
+      - answer: ふたんい
+        feedback_vi: Chỉ cần ふたん (負担), không có い ở cuối.
+        error_tag: spelling
+    explanation:
+      vi: ～に負担がかかる - gây gánh nặng cho ～.
+    display_answer: 毎日の長い通勤は体に負担がかかります。
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-wb-kanten
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-kanten
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Xét từ góc độ an toàn, kế hoạch này có vấn đề.\""
+      tokens:
+        - { id: t3, text: この計画には }
+        - { id: t1, text: 安全の }
+        - { id: t5, text: 観点として、 }
+        - { id: t4, text: 問題があります }
+        - { id: t2, text: 観点から、 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: ～の観点から - từ góc độ ～. 観点として không phải cách nói tự nhiên.
+    display_answer: 安全の観点から、この計画には問題があります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u2-nitotte-toshite-fill-nitotte
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-ni-totte
+    prompt:
+      template: "私{{b1}}、家族が一番大切です。(đối với tôi)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [にとって, にとっては]
+    known_wrong:
+      - answer: に対して
+        feedback_vi: に対して là thái độ hướng vào ai. Đánh giá "đối với tôi thì quan trọng" dùng にとって.
+        error_tag: nitotte_nitaishite
+      - answer: として
+        feedback_vi: として là "với tư cách". Góc nhìn đánh giá dùng にとって.
+        error_tag: nitotte_toshite
+      - answer: にとて
+        feedback_vi: Thiếu âm ngắt っ - にとって.
+        error_tag: sokuon
+    explanation:
+      vi: N + にとって - đối với N; vế sau là đánh giá (一番大切です).
+    display_answer: 私にとって、家族が一番大切です。
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-translate-toshite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-toshite
+    prompt:
+      source_text: Tôi đã đến Nhật với tư cách là du học sinh. (dùng として)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 私は留学生として日本に来ました。
+        - 留学生として日本に来ました。
+        - 私は留学生として来日しました。
+        - 留学生として来日しました。
+        - 私は留学生として日本へ来ました。
+        - 留学生として日本へ来ました。
+        - 私は留学生として日本に来た。
+        - 留学生として日本に来た。
+        - 僕は留学生として日本に来ました。
+        - 私は留学生として日本に来ています。
+        - わたしはりゅうがくせいとしてにほんにきました。
+        - りゅうがくせいとしてにほんにきました。
+    known_wrong:
+      - answer: 私は留学生にとって日本に来ました。
+        feedback_vi: Tư cách, vai trò dùng として. にとって là "đối với" (đánh giá).
+        error_tag: nitotte_toshite
+      - answer: 私は留学生で日本に来ました。
+        feedback_vi: Câu dùng で chưa thể hiện "với tư cách". Đề yêu cầu として.
+        error_tag: toshite_missing
+    explanation:
+      vi: 留学生として - với tư cách du học sinh; 来日する - đến Nhật (trang trọng).
+    display_answer: 私は留学生として日本に来ました。
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-translate-kachi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-kachi
+    prompt:
+      source_text: Cuốn sách này đáng để đọc một lần. (dùng 価値)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この本は一度読む価値があります。
+        - この本は一度読む価値がある。
+        - この本は一回読む価値があります。
+        - この本は一回読む価値がある。
+        - この本は一度は読む価値があります。
+        - この本は一度は読む価値がある。
+        - この本は一度読んでみる価値があります。
+        - この本は一度読んでみる価値がある。
+        - この本は一度読むだけの価値があります。
+        - このほんはいちどよむかちがあります。
+        - このほんはいちどよむかちがある。
+    known_wrong:
+      - answer: この本は一度読む値段があります。
+        feedback_vi: 値段 là giá tiền. "Đáng để" là ～する価値がある.
+        error_tag: vocab_meaning
+      - answer: この本は一度読んだ価値があります。
+        feedback_vi: Trước 価値がある dùng thể từ điển - 読む価値がある.
+        error_tag: verb_form
+    explanation:
+      vi: V thể từ điển + 価値がある - đáng để làm V; 一度 - một lần.
+    display_answer: この本は一度読む価値があります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u2-nitotte-toshite-mcq-karasuruto
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-kara-suru-to
+    prompt:
+      stem: 'Bạn nghe một người nói giọng Kansai và đoán quê họ. Câu nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: c7v, text: あの話し方からすると、関西の人だろう。, lang: ja }
+        - { id: j1n, text: あの話し方にとって、関西の人だろう。, lang: ja }
+        - { id: p4y, text: あの話し方として、関西の人だろう。, lang: ja }
+        - { id: e9k, text: あの話し方に対して、関西の人だろう。, lang: ja }
+    answer:
+      correct_option_id: c7v
+    explanation:
+      vi: Suy đoán từ căn cứ (cách nói chuyện) dùng からすると. にとって, として, に対して không mang nghĩa "căn cứ vào".
+    display_answer: あの話し方からすると、関西の人だろう。
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u2-gram-kara-suru-to
+    prompt:
+      source_text: 子どもからすると、大人のルールは不公平に見えるかもしれない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ góc nhìn của trẻ con, quy tắc của người lớn có thể trông không công bằng.
+        - Từ góc nhìn của trẻ em, quy tắc của người lớn có thể trông không công bằng.
+        - Từ góc nhìn của trẻ em, luật lệ của người lớn có lẽ trông không công bằng.
+        - Từ phía trẻ con mà nói, quy tắc của người lớn có thể trông không công bằng.
+        - Đứng từ phía trẻ em, quy tắc của người lớn có lẽ có vẻ không công bằng.
+        - Đối với trẻ em, quy tắc của người lớn có thể trông không công bằng.
+        - Đối với trẻ con, quy tắc của người lớn có lẽ trông bất công.
+        - Từ góc nhìn của trẻ em, quy tắc của người lớn có thể có vẻ bất công.
+        - Theo cách nhìn của trẻ em, quy tắc của người lớn có thể trông không công bằng.
+        - Nhìn từ phía trẻ em, quy tắc của người lớn có lẽ trông không công bằng.
+        - Với trẻ em, quy tắc của người lớn có thể trông không công bằng.
+        - Từ góc nhìn của trẻ con, quy tắc của người lớn có lẽ trông không công bằng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Với tư cách là trẻ con, quy tắc của người lớn không công bằng.
+        feedback_vi: からすると là "từ góc nhìn của", không phải "với tư cách" (として). かもしれない - có thể.
+        error_tag: karasuruto_meaning
+    explanation:
+      vi: 子どもからすると - đứng từ phía trẻ em; 不公平に見える - trông không công bằng; かもしれない - có thể.
+    display_answer: Từ góc nhìn của trẻ con, quy tắc của người lớn có thể trông không công bằng.
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-wb-toshiteno
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-toshite
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi muốn làm tròn trách nhiệm của một người cha mẹ.\""
+      tokens:
+        - { id: p3, text: 責任を }
+        - { id: p1, text: 親 }
+        - { id: p5, text: にとっての }
+        - { id: p4, text: 果たしたいです }
+        - { id: p2, text: としての }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: 親としての責任 - trách nhiệm với tư cách cha mẹ (としての + N). 責任を果たす - làm tròn trách nhiệm.
+    display_answer: 親としての責任を果たしたいです。
+
+  - key: ja:exercise:n2-u2-nitotte-toshite-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-ni-totte
+    prompt:
+      stem: 'Bạn viết khảo sát cho công ty: "Đối với người cao tuổi, bậc thang ở nhà ga là gánh nặng lớn." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: g5h, text: 高齢者にとって、駅の階段は大きな負担です。, lang: ja }
+        - { id: s2b, text: 高齢者に対して、駅の階段は大きな負担です。, lang: ja }
+        - { id: o8r, text: 高齢者として、駅の階段は大きな負担です。, lang: ja }
+        - { id: l3x, text: 高齢者にとって、駅の階段は大きな価値です。, lang: ja }
+    answer:
+      correct_option_id: g5h
+    explanation:
+      vi: Đánh giá từ góc nhìn người cao tuổi - にとって + 負担です. に対して là thái độ hướng vào ai; として là tư cách; 価値 là giá trị - sai nghĩa.
+    display_answer: 高齢者にとって、駅の階段は大きな負担です。

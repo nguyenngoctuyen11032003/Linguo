@@ -1,0 +1,509 @@
+# Học liệu unit "Điều kiện và giả định trang trọng" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～とあれば / ～とあって =================
+  - key: ja:item:n1-u1-gram-toareba
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N / V-thể thường + とあれば
+      romanization: to areba
+      pos: điều kiện (trang trọng)
+    back:
+      meaning:
+        vi: '"Nếu là (vì)... thì (sẵn lòng / đành)...". Nêu một hoàn cảnh đặc biệt đủ lý do để làm điều bình thường không làm - 子どものためとあれば, 社長の頼みとあれば, 必要とあれば. Danh từ và tính từ な gắn thẳng, không có だ.'
+      examples:
+        - target: 社長の頼みとあれば、引き受けないわけにはいかない。
+          translation:
+            vi: Đã là lời nhờ của giám đốc thì không thể không nhận.
+      pronunciation_note:
+        vi: Đọc liền "tô-a-rê-ba", không ngắt giữa と và あれば.
+      confusion:
+        vi: とあれば nói về điều kiện (chưa chắc xảy ra) và vế sau thường là ý chí, sự sẵn lòng của người nói. Dạng văn cổ とあらば cùng nghĩa. Đừng nhầm với とあって - "vì là" cho sự việc đã thấy.
+
+  - key: ja:item:n1-u1-gram-toatte
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N / V-thể thường + とあって
+      romanization: to atte
+      pos: lý do (trang trọng)
+    back:
+      meaning:
+        vi: '"Vì là (hoàn cảnh đặc biệt)... nên...". Vế sau là cảnh tượng, kết quả người nói quan sát được - 連休とあって、どこも混んでいた. Hay gặp trong tin tức, phóng sự.'
+      examples:
+        - target: 連休とあって、観光地はどこも人でいっぱいだった。
+          translation:
+            vi: Vì là kỳ nghỉ dài nên khu du lịch nào cũng đông nghịt người.
+      pronunciation_note:
+        vi: あって có âm ngắt - "át-tê", dừng nhẹ trước て.
+      confusion:
+        vi: Vế sau của とあって không dùng ý chí, mệnh lệnh, rủ rê của người nói (～しよう, ～てください). Muốn nói "nếu là... thì tôi sẽ..." phải dùng とあれば.
+
+  - key: ja:item:n1-u1-hikiukeru
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 引き受ける
+      reading: ひきうける
+      romanization: hikiukeru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: nhận lời, đảm nhận (một việc, một trách nhiệm người khác nhờ)
+      examples:
+        - target: 部長の頼みとあれば、この仕事を引き受けます。
+          translation:
+            vi: Đã là lời nhờ của trưởng phòng thì tôi xin nhận việc này.
+      pronunciation_note:
+        vi: Đọc "hi-ki-u-kê-ru", き và う tách rõ.
+      confusion:
+        vi: 引き受ける là nhận làm một việc; nhận đồ vật thì dùng 受け取る (うけとる).
+
+  - key: ja:item:n1-u1-sattou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 殺到する
+      reading: さっとうする
+      romanization: sattō suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: dồn dập đổ đến, ùn ùn kéo đến (người, đơn hàng, câu hỏi)
+      examples:
+        - target: 人気歌手が来るとあって、会場には朝からファンが殺到した。
+          translation:
+            vi: Vì có ca sĩ nổi tiếng đến nên từ sáng người hâm mộ đã ùn ùn kéo tới hội trường.
+      pronunciation_note:
+        vi: さっ có âm ngắt và とう là âm dài - "sát-tô-ô".
+      confusion:
+        vi: Chữ 殺 ở đây không mang nghĩa "giết"; 殺到 chỉ sự dồn tới ào ạt. Dùng với に - 会場に殺到する, 注文が殺到する.
+
+  - key: ja:item:n1-u1-itowanai
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: いとわない
+      reading: いとわない
+      romanization: itowanai
+      pos: động từ (phủ định của いとう)
+    back:
+      meaning:
+        vi: không ngại, không quản (vất vả, khó khăn); viết kanji là 厭わない
+      examples:
+        - target: 子どものためとあれば、どんな苦労もいとわない。
+          translation:
+            vi: Vì con thì vất vả đến đâu tôi cũng không quản.
+      pronunciation_note:
+        vi: Đọc "i-tô-oa-nai"; わ đọc như "oa" nhẹ.
+      confusion:
+        vi: Hầu như chỉ dùng ở thể phủ định いとわない / いといません, thường đi với どんな～も. Nghĩa gần 気にしない nhưng trang trọng và mạnh hơn.
+
+  # ================= bài 2: ～ないことには / ～なくして(は) =================
+  - key: ja:item:n1-u1-gram-naikotoniwa
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-ない + ことには ～ない
+      romanization: nai koto ni wa
+      pos: điều kiện cần
+    back:
+      meaning:
+        vi: '"Nếu không... thì (chưa thể)...". Vế trước là điều kiện bắt buộc, vế sau là kết quả phủ định hoặc tiêu cực - 実際に使ってみないことには、分からない.'
+      examples:
+        - target: 実物を見ないことには、買うかどうか決められない。
+          translation:
+            vi: Chưa xem tận mắt hàng thật thì tôi chưa thể quyết có mua hay không.
+      pronunciation_note:
+        vi: ことには đọc "kô-tô-ni-oa", は là trợ từ đọc "oa".
+      confusion:
+        vi: Vế sau luôn mang ý không làm được, không biết được, không tiến được (～ない, 無理だ, 始まらない). Không nói 行ってみないことには、楽しい.
+
+  - key: ja:item:n1-u1-gram-nakushite
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: N + なくして(は) ～ない
+      romanization: nakushite (wa)
+      pos: điều kiện cần (văn viết)
+    back:
+      meaning:
+        vi: '"Nếu không có N thì không thể...". Gắn thẳng vào danh từ, vế sau phủ định - 努力なくして成功はない, 皆様のご協力なくしては実現できませんでした.'
+      examples:
+        - target: 皆さんの支援なくしては、この計画は成り立ちませんでした。
+          translation:
+            vi: Nếu không có sự hỗ trợ của mọi người thì kế hoạch này đã không thể thành hình.
+      pronunciation_note:
+        vi: なくして đọc "na-ku-shi-tê", う trong く thường nhẹ gần như mất.
+      confusion:
+        vi: なくして gắn thẳng vào danh từ, không có を hay が - 努力なくして. Viết 努力をなくして lại thành "làm mất nỗ lực" (động từ なくす). Văn phong rất trang trọng, hay gặp trong diễn văn, lời cảm ơn.
+
+  - key: ja:item:n1-u1-jitsubutsu
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 実物
+      reading: じつぶつ
+      romanization: jitsubutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ thật, vật thật (đối lập với ảnh, mẫu, hình minh hoạ)
+      examples:
+        - target: 実物を見ないことには、何とも言えません。
+          translation:
+            vi: Chưa xem đồ thật thì tôi chưa nói được gì.
+      pronunciation_note:
+        vi: Đọc "ji-tsu-bu-tsu", hai âm つ rõ ràng.
+      confusion:
+        vi: 実物 là vật cụ thể có thật; "thực tế" (trái với lý thuyết) là 実際 (じっさい).
+
+  - key: ja:item:n1-u1-naritatsu
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 成り立つ
+      reading: なりたつ
+      romanization: naritatsu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: thành lập được, đứng vững được, đứng được (kế hoạch, kinh doanh, lập luận)
+      examples:
+        - target: 客の信頼なくしては、商売は成り立たない。
+          translation:
+            vi: Không có lòng tin của khách thì việc buôn bán không đứng vững được.
+      pronunciation_note:
+        vi: Đọc "na-ri-ta-tsu", つ cuối nhẹ.
+      confusion:
+        vi: 成り立つ là tự động từ - 計画が成り立つ. Chủ động "lập kế hoạch" thì dùng 計画を立てる.
+
+  - key: ja:item:n1-u1-shien
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 支援
+      reading: しえん
+      romanization: shien
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự hỗ trợ, viện trợ (tiền, vật chất, nhân lực) cho người, tổ chức
+      examples:
+        - target: 地域の皆さんの支援なくして、この祭りは続けられません。
+          translation:
+            vi: Không có sự hỗ trợ của bà con địa phương thì lễ hội này không thể tiếp tục.
+      pronunciation_note:
+        vi: Đọc "shi-ên", hai âm tách rõ, không đọc liền thành "shen".
+      confusion:
+        vi: 支援 mang tính tổ chức, quy mô (支援金, 被災地を支援する); giúp đỡ việc nhỏ hằng ngày dùng 手伝う.
+
+  # ================= bài 3: ～たら最後 / ～が最後 =================
+  - key: ja:item:n1-u1-gram-tarasaigo
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-たら + 最後
+      romanization: tara saigo
+      pos: điều kiện - hậu quả
+    back:
+      meaning:
+        vi: '"Một khi đã... thì (coi như xong, không cứu vãn được)". Vế sau là kết quả xấu hoặc tình trạng không dừng lại được - 一度話し始めたら最後、2時間は止まらない.'
+      examples:
+        - target: 父は一度話し始めたら最後、2時間は止まらない。
+          translation:
+            vi: Bố tôi mà đã bắt đầu nói là ít nhất hai tiếng không dừng.
+      pronunciation_note:
+        vi: 最後 đọc "sai-gô", ご ngắn.
+      confusion:
+        vi: Chỉ dùng cho hậu quả tiêu cực hoặc thói quen khó bỏ. Kết quả tốt (一度飲んだら最後、元気になる) là sai. たら最後 thiên về khẩu ngữ hơn が最後.
+
+  - key: ja:item:n1-u1-gram-gasaigo
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V-た + が最後
+      romanization: ga saigo
+      pos: điều kiện - hậu quả (văn viết)
+    back:
+      meaning:
+        vi: 'Cùng nghĩa với たら最後 - "một khi đã... thì hết đường lui" - nhưng trang trọng, văn viết hơn. Luôn gắn vào thể た - 見つかったが最後, 口にしたが最後.'
+      examples:
+        - target: あの店に入ったが最後、何か買わずには出られない。
+          translation:
+            vi: Đã bước vào cửa hàng đó thì không mua gì thì không ra nổi.
+      pronunciation_note:
+        vi: が ở giữa câu đọc nhẹ, nhiều người đọc gần "nga".
+      confusion:
+        vi: Phải là thể た - 入ったが最後, không phải 入るが最後. Đừng nhầm với 最後に (cuối cùng) - が最後 không có nghĩa thời gian "lần cuối".
+
+  - key: ja:item:n1-u1-kigen
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 機嫌を損ねる
+      reading: きげんをそこねる
+      romanization: kigen o sokoneru
+      pos: cụm động từ (nhóm 2)
+    back:
+      meaning:
+        vi: làm (ai) phật ý, mất vui; cũng dùng cho chính người đó "phật lòng" - 部長が機嫌を損ねる; 機嫌が悪い - đang khó chịu
+      examples:
+        - target: 祖母の機嫌を損ねたら最後、一週間は口をきいてもらえない。
+          translation:
+            vi: Đã làm bà phật ý thì cả tuần bà không thèm nói chuyện.
+      pronunciation_note:
+        vi: 機嫌 đọc "ki-ghên", げ đọc như "ghê".
+      confusion:
+        vi: 損ねる ở đây là "làm hỏng (tâm trạng)"; 損する (そんする) là "thua lỗ" - nghĩa khác hẳn.
+
+  - key: ja:item:n1-u1-yamitsuki
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 病みつき
+      reading: やみつき
+      romanization: yamitsuki
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nghiện, mê không dứt ra được (món ăn, trò chơi, thú vui); 病みつきになる - bị nghiện
+      examples:
+        - target: このゲームは一度始めたが最後、病みつきになる。
+          translation:
+            vi: Trò chơi này đã chơi một lần là nghiện luôn.
+      pronunciation_note:
+        vi: Đọc "ya-mi-tsư-ki", つ đọc nhẹ.
+      confusion:
+        vi: 病みつき là mê một thứ cụ thể, sắc thái nhẹ, hay dùng khen món ăn ngon; nghiện rượu, ma tuý là 依存症 (いぞんしょう) hoặc 中毒 (ちゅうどく).
+
+  - key: ja:item:n1-u1-tebanasu
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 手放す
+      reading: てばなす
+      romanization: tebanasu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: buông bỏ, bán đi, để mất (thứ mình đang sở hữu như nhà, đất, cơ hội)
+      examples:
+        - target: 一度家を手放したが最後、二度と買い戻せないだろう。
+          translation:
+            vi: Một khi đã bán căn nhà đi thì có lẽ sẽ không bao giờ mua lại được.
+      pronunciation_note:
+        vi: ば là âm đục - "tê-ba-na-sư", không đọc "tê-ha-na-sư".
+      confusion:
+        vi: 手放す là từ bỏ quyền sở hữu; buông tay theo nghĩa đen (thả tay khỏi vật đang cầm) là 手を離す (てをはなす).
+
+  # ================= bài 4: ～が早いか / ～や否や / ～なり =================
+  - key: ja:item:n1-u1-gram-gahayaika
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-辞書形 / V-た + が早いか
+      romanization: ga hayai ka
+      pos: liền ngay sau
+    back:
+      meaning:
+        vi: '"Vừa... thì gần như cùng lúc đã...". Hai hành động nối nhau tức thì, thường kể chuyện đã xảy ra - ベルが鳴るが早いか、生徒たちは教室を飛び出した.'
+      examples:
+        - target: ベルが鳴るが早いか、生徒たちは教室を飛び出した。
+          translation:
+            vi: Chuông vừa reo là học sinh đã ùa ra khỏi lớp.
+      pronunciation_note:
+        vi: 早いか đọc "ha-yai-ka", không lên giọng ở か vì đây không phải câu hỏi.
+      confusion:
+        vi: Vế sau là sự việc thực tế, không dùng ý chí, mệnh lệnh (～しよう, ～しなさい). Sắc thái nhấn vào "nhanh đến mức không kịp phân biệt trước sau".
+
+  - key: ja:item:n1-u1-gram-yainaya
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V-辞書形 + や否や
+      romanization: ya ina ya
+      pos: liền ngay sau (văn viết)
+    back:
+      meaning:
+        vi: '"Ngay khi vừa... thì...". Rất trang trọng, hay gặp trong báo chí, văn kể - ドアが開くや否や、客が売り場に殺到した. Có thể rút gọn thành や.'
+      examples:
+        - target: ドアが開くや否や、客が売り場に殺到した。
+          translation:
+            vi: Cửa vừa mở là khách đã ùn ùn đổ vào quầy hàng.
+      pronunciation_note:
+        vi: 否 đọc "i-na" - cả cụm "ya-i-na-ya".
+      confusion:
+        vi: Vế sau không dùng ý chí hay mệnh lệnh (～しよう, ～てください). 否 một mình còn có nghĩa "không" - 可能か否か là "có khả thi hay không", khác hẳn mẫu や否や.
+
+  - key: ja:item:n1-u1-gram-nari
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V-辞書形 + なり
+      romanization: nari
+      pos: liền ngay sau (hành động bất ngờ)
+    back:
+      meaning:
+        vi: '"Vừa... là (người đó) liền..." - hành động thứ hai bất ngờ, khác thường. Cùng một chủ ngữ ở hai vế, thường là ngôi thứ ba, kể chuyện quá khứ - 彼は部屋に入るなり、ソファに倒れ込んだ.'
+      examples:
+        - target: 彼女は私の顔を見るなり、泣き出した。
+          translation:
+            vi: Cô ấy vừa nhìn thấy mặt tôi là bật khóc.
+      pronunciation_note:
+        vi: Đọc "na-ri", nhẹ, gắn liền vào động từ phía trước.
+      confusion:
+        vi: Không dùng なり cho chính mình (私は帰るなり寝た nghe gượng - nói 帰るとすぐ寝た) và không dùng cho tương lai, mệnh lệnh. Khác ～なり～なり (hoặc... hoặc...).
+
+  - key: ja:item:n1-u1-tobidasu
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 飛び出す
+      reading: とびだす
+      romanization: tobidasu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: lao ra, chạy vụt ra (khỏi nơi nào đó); bỏ đi đột ngột
+      examples:
+        - target: 子どもが道路に飛び出すと危ない。
+          translation:
+            vi: Trẻ con lao ra đường thì nguy hiểm.
+      pronunciation_note:
+        vi: Đọc "tô-bi-đa-sư", す cuối nhẹ.
+      confusion:
+        vi: Lao ra khỏi đâu dùng を hoặc から - 教室を飛び出す; lao ra chỗ nào dùng に - 道路に飛び出す.
+
+  - key: ja:item:n1-u1-kaketsukeru
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 駆けつける
+      reading: かけつける
+      romanization: kaketsukeru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: vội vã chạy đến (nơi có chuyện, người cần mình)
+      examples:
+        - target: 知らせを聞くや否や、母は病院に駆けつけた。
+          translation:
+            vi: Vừa nghe tin là mẹ tôi đã vội vã đến bệnh viện.
+      pronunciation_note:
+        vi: Đọc "ka-kê-tsư-kê-ru".
+      confusion:
+        vi: 駆けつける nhấn vào sự gấp gáp khi đến nơi; chỉ "chạy" đơn thuần là 走る.
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n1-u1-shoudaku
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 承諾
+      reading: しょうだく
+      romanization: shōdaku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự chấp thuận, đồng ý (một yêu cầu, đề nghị) - trang trọng
+      examples:
+        - target: ご本人の承諾なくして、個人情報を公開することはできません。
+          translation:
+            vi: Không có sự đồng ý của chính người đó thì không thể công khai thông tin cá nhân.
+      pronunciation_note:
+        vi: しょう là âm dài - "shô-ô-đa-ku".
+      confusion:
+        vi: 承諾 là đồng ý cho người khác làm điều họ xin; đồng ý về ý kiến dùng 賛成 (さんせい).
+
+  - key: ja:item:n1-u1-keisai
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 掲載
+      reading: けいさい
+      romanization: keisai
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự đăng tải (bài, ảnh, thông tin lên báo, tạp chí, trang web)
+      examples:
+        - target: 雑誌に掲載されるや否や、その店には客が殺到した。
+          translation:
+            vi: Vừa được đăng lên tạp chí là quán đó khách đã ùn ùn kéo đến.
+      pronunciation_note:
+        vi: けい đọc gần "kê-ê", さい đọc "sai".
+      confusion:
+        vi: 掲載 dùng cho ấn phẩm, trang web; phát sóng trên TV, radio là 放送 (ほうそう).
+
+  - key: ja:item:n1-u1-sokuza
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 即座に
+      reading: そくざに
+      romanization: sokuza ni
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngay lập tức, tức thì (không chần chừ, thường nói về phản ứng, quyết định)
+      examples:
+        - target: 彼はその依頼を即座に断った。
+          translation:
+            vi: Anh ấy từ chối lời đề nghị đó ngay tức thì.
+      pronunciation_note:
+        vi: ざ là âm đục - "sô-ku-da-ni".
+      confusion:
+        vi: 即座に trang trọng hơn すぐに, nhấn vào phản ứng không do dự; không dùng cho lịch hẹn kiểu "lát nữa làm ngay".

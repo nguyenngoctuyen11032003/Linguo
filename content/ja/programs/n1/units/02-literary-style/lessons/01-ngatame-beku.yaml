@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u2-ngatame-beku
+order_index: 1
+level: n1
+title:
+  vi: Mục đích trang trọng - ～んがため(に), ～べく
+objectives:
+  - vi: Diễn đạt mục đích mạnh mẽ, quyết tâm bằng ～んがため(に).
+  - vi: Viết câu mục đích kiểu văn bản, tin tức bằng ～べく.
+  - vi: Phân biệt べく (để) với べき (nên) và biết giới hạn của vế sau.
+estimated_minutes: 25
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-formal-conditions-review]
+items:
+  - item: ja:item:n1-u2-kokorozasu
+  - item: ja:item:n1-u2-higan
+  - item: ja:item:n1-u2-honsou
+  - item: ja:item:n1-u2-gram-ngatame
+  - item: ja:item:n1-u2-gram-beku
+body:
+  - type: objective
+    text:
+      vi: 'Ở N4 bạn đã nói mục đích bằng ～ために, ～ように. Đến N1, báo chí và văn bản dùng hai mẫu cứng hơn nhiều: ～んがため(に) - "chính vì muốn..." và ～べく - "nhằm...". Bài này giúp bạn đọc hiểu và dùng đúng chúng.'
+  - type: explain
+    text:
+      vi: '～んがため(に) - lấy thể ない bỏ ない rồi thêm んがため: 勝つ → 勝たない → 勝たんがため; 生きる → 生きんがため; する → せんがため; 来る → 来(こ)んがため. Sau đó là ～に (mệnh đề), ～の + N (勝たんがための練習). Mẫu này nhấn mạnh mục đích lớn đến mức bất chấp mọi thứ.'
+  - type: explain
+    text:
+      vi: '～べく - V thể từ điển + べく; する → すべく (hoặc するべく). Nghĩa "để, nhằm", sắc thái trang trọng, rất hay gặp trong tin tức: 原因を究明すべく、調査が始まった.'
+  - type: deep_explain
+    text:
+      vi: 'Cả hai mẫu đều là văn viết, dùng cho hành động có chủ ý của con người. Vế sau KHÔNG được là mệnh lệnh, nhờ vả hay rủ rê (～てください, ～ましょう) - khi đó quay về ～ように / ～ために. Đừng nhầm べく (để mà) với べき (nên): 合格すべく努力する (nỗ lực để đỗ) khác hẳn 合格すべきだ (nên đỗ). んがため còn mang sắc thái "đến mức bất chấp", đôi khi hơi tiêu cực: 売らんがための広告 (quảng cáo chỉ cốt để bán được hàng).'
+  - type: example
+    target: 家族を養わんがため、彼は昼も夜も働き続けた。
+    target_lang: ja
+    translation:
+      vi: Chính vì muốn nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+  - type: example
+    target: 夢を実現せんがために、彼女は故郷を離れた。
+    target_lang: ja
+    translation:
+      vi: Chính vì muốn biến ước mơ thành hiện thực, cô ấy đã rời quê hương.
+  - type: example
+    target: 事故の原因を究明すべく、調査委員会が設置された。
+    target_lang: ja
+    translation:
+      vi: Để làm rõ nguyên nhân vụ tai nạn, một ủy ban điều tra đã được thành lập.
+  - type: example
+    target: 一刻も早く被災地に物資を届けるべく、ボランティアが奔走している。
+    target_lang: ja
+    translation:
+      vi: Để đưa hàng cứu trợ tới vùng thiên tai sớm nhất có thể, các tình nguyện viên đang chạy vạy khắp nơi.
+  - type: example
+    target: 初優勝は、この町の人々の長年の悲願だった。
+    target_lang: ja
+    translation:
+      vi: Chức vô địch đầu tiên là ước nguyện bao năm của người dân thị trấn này.
+  - type: common_mistake
+    wrong: 試合に勝つんがため、毎日練習した。
+    right: 試合に勝たんがため、毎日練習した。
+    target_lang: ja
+    note:
+      vi: んがため gắn vào thể ない bỏ ない - 勝た + んがため. Riêng する thành せんがため.
+  - type: common_mistake
+    wrong: 合格すべく、毎日勉強してください。
+    right: 合格できるように、毎日勉強してください。
+    target_lang: ja
+    note:
+      vi: Vế sau của べく không là lời nhờ vả, mệnh lệnh. Khi khuyên ai đó, dùng ～ように / ～ために.
+  - type: summary
+    points:
+      - vi: V(ない bỏ ない) + んがため(に) - chính vì muốn...; する → せんがため.
+      - vi: V(từ điển) + べく - để, nhằm; する → すべく.
+      - vi: Vế sau không là mệnh lệnh, nhờ vả, rủ rê; べく (để) khác べき (nên).
+      - vi: 志す (lập chí), 悲願 (ước nguyện bao năm), 奔走する (chạy vạy).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u2-ngatame-beku-mcq-beku
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      stem: Trong câu 「原因を究明すべく、調査が始まった。」, 「すべく」 mang nghĩa gì?
+      stem_lang: vi
+      options:
+        - { id: k4v, text: "để, nhằm (mục đích)", lang: vi }
+        - { id: t8m, text: "nên, phải", lang: vi }
+        - { id: a2q, text: mặc dù, lang: vi }
+        - { id: h6r, text: vì (nguyên nhân), lang: vi }
+    answer:
+      correct_option_id: k4v
+    explanation:
+      vi: すべく - để làm (mục đích). Câu nghĩa là "Để làm rõ nguyên nhân, cuộc điều tra đã bắt đầu". "Nên" là すべきだ.
+    display_answer: "để, nhằm (mục đích)"
+
+  - key: ja:exercise:n1-u2-ngatame-beku-listen-beku
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 事故の原因を究明すべく、調査委員会が設置された。
+      options:
+        - { id: c3n, text: "Để làm rõ nguyên nhân vụ tai nạn, một ủy ban điều tra đã được thành lập.", lang: vi }
+        - { id: w7e, text: Lẽ ra phải làm rõ nguyên nhân vụ tai nạn trước khi lập ủy ban điều tra., lang: vi }
+        - { id: p1j, text: Vì đã làm rõ nguyên nhân vụ tai nạn nên ủy ban điều tra được giải tán., lang: vi }
+        - { id: z5b, text: Ủy ban điều tra cho rằng nên tìm hiểu nguyên nhân vụ tai nạn., lang: vi }
+    answer:
+      correct_option_id: c3n
+    explanation:
+      vi: 究明すべく - để làm rõ; 設置された - đã được thành lập. Không có nghĩa "nên" (べき) hay "lẽ ra".
+    display_answer: Để làm rõ nguyên nhân vụ tai nạn, một ủy ban điều tra đã được thành lập.
+
+  - key: ja:exercise:n1-u2-ngatame-beku-mcq-ngatame-form
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-ngatame
+    prompt:
+      stem: 'Chọn dạng đúng: 試合に＿＿がため、選手たちは厳しい練習に耐えた。'
+      stem_lang: vi
+      options:
+        - { id: g2x, text: 勝たん, lang: ja }
+        - { id: m9d, text: 勝つん, lang: ja }
+        - { id: r4u, text: 勝とうん, lang: ja }
+        - { id: e6s, text: 勝ちん, lang: ja }
+    answer:
+      correct_option_id: g2x
+    explanation:
+      vi: 勝つ → thể ない 勝たない → bỏ ない + んがため → 勝たんがため.
+    display_answer: 勝たん
+
+  - key: ja:exercise:n1-u2-ngatame-beku-fill-beku
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      template: "新しい市場を開拓{{b1}}、社長自ら海外へ飛んだ。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Để khai phá thị trường mới, đích thân giám đốc đã bay ra nước ngoài."
+        - "Gợi ý: する + べく có dạng rút gọn ＿べく."
+    answer:
+      blanks:
+        b1: [すべく, するべく, せんがため, せんがために]
+    known_wrong:
+      - answer: すべき
+        feedback_vi: すべき là "nên"; nối mệnh đề chỉ mục đích cần すべく.
+        error_tag: beku_beki
+      - answer: しんがため
+        feedback_vi: する chia thành せんがため, không phải しんがため.
+        error_tag: grammar_form
+    explanation:
+      vi: 開拓する → 開拓すべく (để khai phá). Dạng 開拓せんがため cũng đúng nghĩa.
+    display_answer: 新しい市場を開拓すべく、社長自ら海外へ飛んだ。
+
+  - key: ja:exercise:n1-u2-ngatame-beku-wb-ngatame
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-ngatame
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Chính vì muốn biến ước mơ thành hiện thực, cô ấy đã rời quê hương.\""
+      tokens:
+        - { id: n3, text: 彼女は故郷を離れた }
+        - { id: n4, text: 実現するんがために、 }
+        - { id: n1, text: 夢を }
+        - { id: n2, text: 実現せんがために、 }
+    answer:
+      orders:
+        - [n1, n2, n3]
+    explanation:
+      vi: 実現する → せんがために. 実現するんがため là chia sai.
+    display_answer: 夢を実現せんがために、彼女は故郷を離れた。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u2-ngatame-beku-fill-higan
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-higan
+    prompt:
+      template: "初優勝は、この町の人々の長年の{{b1}}だった。(ước nguyện tha thiết)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [悲願, ひがん]
+    known_wrong:
+      - answer: ひかん
+        feedback_vi: ひかん (悲観) là "bi quan". Ước nguyện tha thiết là ひがん - có dấu đục.
+        error_tag: dakuten
+      - answer: 願い事
+        feedback_vi: 願い事 là điều ước nhỏ (như khi cầu nguyện); ước nguyện lớn, chờ đợi nhiều năm của cả tập thể là 悲願.
+        error_tag: vocab_register
+    explanation:
+      vi: 長年の悲願 - ước nguyện bao năm. Cụm cố định hay gặp trong tin thể thao, chính trị.
+    display_answer: 初優勝は、この町の人々の長年の悲願だった。
+
+  - key: ja:exercise:n1-u2-ngatame-beku-fill-kokorozasu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u2-kokorozasu
+    prompt:
+      template: "彼は幼い頃から医者を{{b1}}いた。(quyết chí theo đuổi)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [志して, こころざして]
+    known_wrong:
+      - answer: 志しして
+        feedback_vi: 志す là động từ nhóm 1 - thể て là 志して; không thêm して lần nữa.
+        error_tag: grammar_form
+      - answer: 目指して
+        feedback_vi: 目指す (nhắm tới) cũng tự nhiên, nhưng bài này luyện từ "lập chí" - 志す.
+        error_tag: vocab_target
+    explanation:
+      vi: ～を志す - lập chí theo đuổi; 志していた - đã quyết chí (kéo dài từ nhỏ).
+    display_answer: 彼は幼い頃から医者を志していた。
+
+  - key: ja:exercise:n1-u2-ngatame-beku-translate-beku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      source_text: Để kịp chuyến tàu cuối, anh ấy đã chạy hết sức. (dùng べく)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 終電に間に合うべく、彼は全力で走った。
+        - 終電に間に合うべく、彼は全力で走りました。
+        - 終電に間に合うべく彼は全力で走った。
+        - 彼は終電に間に合うべく、全力で走った。
+        - 彼は終電に間に合うべく、全力で走りました。
+        - 終電に間に合うべく、彼は全速力で走った。
+        - 彼は終電に間に合うべく、全速力で走った。
+        - 終電に間に合うべく、彼は必死に走った。
+        - 彼は終電に間に合うべく、必死に走った。
+        - 最終電車に間に合うべく、彼は全力で走った。
+        - 彼は最終電車に間に合うべく、全力で走った。
+        - 終電に間に合うべく、彼は懸命に走った。
+        - しゅうでんにまにあうべく、かれはぜんりょくではしった。
+    known_wrong:
+      - answer: 終電に間に合うべき、彼は全力で走った。
+        feedback_vi: べき là "nên"; chỉ mục đích dùng べく.
+        error_tag: beku_beki
+      - answer: 終電に間に合ったべく、彼は全力で走った。
+        feedback_vi: べく chỉ đi sau thể từ điển - 間に合うべく.
+        error_tag: grammar_form
+    explanation:
+      vi: 終電 - chuyến tàu cuối; 間に合う - kịp; 間に合うべく - để kịp; 全力で走った - đã chạy hết sức.
+    display_answer: 終電に間に合うべく、彼は全力で走った。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u2-ngatame-beku-mcq-usage
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      stem: Câu nào dùng べく đúng?
+      stem_lang: vi
+      options:
+        - { id: v2c, text: 試験に合格すべく、彼は毎日8時間勉強している。, lang: ja }
+        - { id: o5h, text: 試験に合格すべく、毎日8時間勉強してください。, lang: ja }
+        - { id: b8k, text: 試験に合格すべく、一緒に勉強しましょう。, lang: ja }
+        - { id: x1f, text: 雨が降るべく、傘を持って出かけた。, lang: ja }
+    answer:
+      correct_option_id: v2c
+    explanation:
+      vi: べく cần hành động có chủ ý và vế sau là sự việc, không phải nhờ vả (～てください) hay rủ rê (～ましょう). 雨が降る không phải hành động có chủ ý.
+    display_answer: 試験に合格すべく、彼は毎日8時間勉強している。
+
+  - key: ja:exercise:n1-u2-ngatame-beku-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-ngatame
+    prompt:
+      source_text: 家族を養わんがため、彼は昼も夜も働き続けた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chính vì muốn nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+        - Vì muốn nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+        - Để nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+        - Để nuôi gia đình, anh ấy đã làm việc cả ngày lẫn đêm.
+        - Vì muốn nuôi gia đình, anh ấy đã làm việc cả ngày lẫn đêm.
+        - Chính vì muốn nuôi gia đình, anh ấy đã làm việc cả ngày lẫn đêm.
+        - Để nuôi sống gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+        - Để nuôi sống gia đình, anh ấy đã liên tục làm việc cả ngày lẫn đêm.
+        - Để nuôi gia đình, anh ấy đã liên tục làm việc ngày đêm.
+        - Vì muốn nuôi gia đình, anh ấy đã làm việc ngày đêm.
+        - Để nuôi gia đình, anh ấy đã làm việc ngày đêm.
+        - Để nuôi gia đình, anh ta đã làm việc ngày đêm không nghỉ.
+        - Để nuôi gia đình, ông ấy đã làm việc ngày đêm không nghỉ.
+        - Nhằm nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+        - Anh ấy đã làm việc ngày đêm không nghỉ để nuôi gia đình.
+        - Anh ấy đã làm việc cả ngày lẫn đêm để nuôi gia đình.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì gia đình không nuôi anh ấy nên anh ấy đã làm việc ngày đêm.
+        feedback_vi: 養わんがため không phải phủ định - ん ở đây là ý chí ("muốn nuôi"), không phải ない.
+        error_tag: ngatame_meaning
+    explanation:
+      vi: 養う - nuôi (gia đình); 養わんがため - chính vì muốn nuôi; 昼も夜も働き続けた - làm việc ngày đêm không ngừng.
+    display_answer: Chính vì muốn nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+
+  - key: ja:exercise:n1-u2-ngatame-beku-mcq-register
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      stem: 'Bạn viết bản tin nội bộ trang trọng: "Để cắt giảm chi phí, công ty đã thành lập nhóm dự án." Câu nào phù hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: f7a, text: コスト削減を図るべく、社内にプロジェクトチームが発足した。, lang: ja }
+        - { id: s3w, text: コスト削減を図るべきで、社内にプロジェクトチームが発足した。, lang: ja }
+        - { id: d9p, text: コスト削減を図らんがため、プロジェクトチームを作ってください。, lang: ja }
+        - { id: l4y, text: コストを減らしたいから、チーム作ったんだって。, lang: ja }
+    answer:
+      correct_option_id: f7a
+    explanation:
+      vi: 図るべく - nhằm (văn bản), 発足した - đã ra đời. べきで là "nên"; んがため không đi với nhờ vả; câu cuối là văn nói, không hợp bản tin.
+    display_answer: コスト削減を図るべく、社内にプロジェクトチームが発足した。
+
+  - key: ja:exercise:n1-u2-ngatame-beku-wb-honsou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-honsou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Để đưa hàng cứu trợ tới vùng thiên tai sớm nhất có thể, các tình nguyện viên đang chạy vạy khắp nơi.\""
+      tokens:
+        - { id: h4, text: ボランティアが奔走している }
+        - { id: h2, text: 被災地に物資を }
+        - { id: h5, text: 届けるべき、 }
+        - { id: h1, text: 一刻も早く }
+        - { id: h3, text: 届けるべく、 }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: 一刻も早く - sớm nhất có thể; 届けるべく - để đưa tới; 奔走している - đang chạy vạy. 届けるべき (nên) không nối mệnh đề mục đích.
+    display_answer: 一刻も早く被災地に物資を届けるべく、ボランティアが奔走している。

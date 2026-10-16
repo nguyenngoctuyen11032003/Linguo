@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-emotion-evaluation-review
+order_index: 5
+level: n1
+title:
+  vi: "Ôn tập: phát biểu, phỏng vấn và bình luận giàu cảm xúc"
+objectives:
+  - vi: Đọc hiểu lời phát biểu, bài phỏng vấn và bài bình luận dùng các mẫu cảm xúc, đánh giá N1.
+  - vi: Chọn đúng mẫu theo sắc thái (khen / chê, người nói / người khác) và mức trang trọng.
+  - vi: Viết câu cảm ơn, xin lỗi, đánh giá trang trọng bằng các mẫu đã học.
+estimated_minutes: 26
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n1-u3-ni-taenai]
+items:
+  - item: ja:item:n1-u3-shaji
+  - item: ja:item:n1-u3-shinkyou
+  - item: ja:item:n1-u3-kokuhyou
+  - item: ja:item:n1-u3-sanjou
+  - item: ja:item:n1-u3-gram-te-yamanai
+    role: reuse
+  - item: ja:item:n1-u3-gram-wo-kinjienai
+    role: reuse
+  - item: ja:item:n1-u3-gram-kiwamarinai
+    role: reuse
+  - item: ja:item:n1-u3-gram-no-itari
+    role: reuse
+  - item: ja:item:n1-u3-gram-to-ittara-nai
+    role: reuse
+  - item: ja:item:n1-u3-gram-kagiri-da
+    role: reuse
+  - item: ja:item:n1-u3-gram-ni-taenai
+    role: reuse
+  - item: ja:item:n1-u3-gram-ni-atai-suru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tổng hợp đưa các mẫu cảm xúc, đánh giá vào ba dạng văn bản hay gặp trong đề đọc N1 - lời phát biểu cảm ơn (謝辞), bài phỏng vấn kể tâm trạng (心境) và bài bình luận khen chê (酷評, 称賛).
+  - type: explain
+    text:
+      vi: 'Lời phát biểu trang trọng thường có khung: cảm ơn (感謝に堪えません / 光栄の至りです) → kể lại (その時の喜びといったらありませんでした) → lời chúc kết (今後のご発展を祈ってやみません).'
+  - type: explain
+    text:
+      vi: 'Bài bình luận, xã luận dùng mẫu đánh giá: khen - ～に値する, ～に足る; chê - ～極まりない, 見るに堪えない; cảm xúc trước sự việc - ～を禁じ得ない. Từ mới: 謝辞 (lời cảm tạ), 心境 (tâm trạng), 酷評 (chê thậm tệ), 惨状 (cảnh thảm khốc).'
+  - type: deep_explain
+    text:
+      vi: 'Khi đọc, hỏi hai câu: (1) Đây là khen hay chê? - に値する, に足る, の極み (贅沢の極み) thường là khen; 極まりない, に堪えない (見る / 聞く), ったらありゃしない là chê. (2) Cảm xúc của ai? - てやまない, 限りだ, の至り là của người nói; nếu câu nói về người khác, tác giả phải dùng định ngữ (彼が愛してやまない) hoặc ようだ / らしい. Bẫy hay gặp: に堪えない hai nghĩa - trước 感謝 / 遺憾 là "vô cùng", trước 見る / 聞く là "không chịu nổi".'
+  - type: example
+    target: 卒業式で、卒業生代表が謝辞を述べた。
+    target_lang: ja
+    translation:
+      vi: Tại lễ tốt nghiệp, đại diện sinh viên tốt nghiệp đã phát biểu lời cảm tạ.
+  - type: example
+    target: 引退を決めた今の心境を、率直にお聞かせください。
+    target_lang: ja
+    translation:
+      vi: Xin anh chia sẻ thẳng thắn tâm trạng lúc này khi đã quyết định giải nghệ.
+  - type: example
+    target: 公開当初は酷評された映画が、今では名作と呼ばれている。
+    target_lang: ja
+    translation:
+      vi: Bộ phim từng bị chê thậm tệ lúc mới ra mắt nay lại được gọi là kiệt tác.
+  - type: example
+    target: 地震の後の町の惨状は、見るに堪えないものだった。
+    target_lang: ja
+    translation:
+      vi: Cảnh thảm khốc của thị trấn sau động đất thật không thể xem nổi.
+  - type: common_mistake
+    wrong: 卒業式で、卒業生代表が謝罪を述べた。
+    right: 卒業式で、卒業生代表が謝辞を述べた。
+    target_lang: ja
+    note:
+      vi: 謝罪 là xin lỗi; lời cảm tạ trong buổi lễ là 謝辞.
+  - type: common_mistake
+    wrong: 監督は優勝して嬉しい限りだ。
+    right: 監督は優勝して嬉しい限りだと語った。
+    target_lang: ja
+    note:
+      vi: 限りだ là cảm xúc của người nói. Thuật lại cảm xúc của người khác cần dẫn lời (～と語った) hoặc dùng ようだ.
+  - type: summary
+    points:
+      - vi: 'Phát biểu: 感謝に堪えません, 光栄の至りです, ～を祈ってやみません.'
+      - vi: 'Đánh giá - khen: に値する, に足る; chê: 極まりない, 見るに堪えない.'
+      - vi: 'Cảm xúc người nói: てやまない, 限りだ, の至り, といったらない.'
+      - vi: 謝辞, 心境, 酷評, 惨状.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-emotion-evaluation-review-mcq-speech
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u3-shaji
+    prompt:
+      stem: "Đọc đoạn 謝辞: 「本日はこのような盛大な式を開いていただき、感謝に堪えません。入学した頃は知り合いもおらず、心細い限りでしたが、先生方の温かいご指導に支えられ、今日を迎えることができました。母校の今後ますますのご発展を祈ってやみません。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: v2m, text: "Lúc mới nhập học người nói thấy bơ vơ, nhưng nhờ thầy cô dìu dắt đã đến được ngày hôm nay.", lang: vi }
+        - { id: h6t, text: Người nói không chịu nổi buổi lễ quá long trọng., lang: vi }
+        - { id: o4k, text: Lúc mới nhập học người nói đã có nhiều bạn bè thân thiết., lang: vi }
+        - { id: s8f, text: Người nói đã ngừng mong trường cũ phát triển., lang: vi }
+    answer:
+      correct_option_id: v2m
+    explanation:
+      vi: 感謝に堪えません - vô cùng biết ơn (không phải "không chịu nổi"); 知り合いもおらず、心細い限りでした - không có người quen, bơ vơ vô cùng; 祈ってやみません - không ngừng cầu chúc.
+    display_answer: Lúc mới nhập học người nói thấy bơ vơ, nhưng nhờ thầy cô dìu dắt đã đến được ngày hôm nay.
+
+  - key: ja:exercise:n1-emotion-evaluation-review-listen-shinkyou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-shinkyou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 引退を決めた今の心境を、率直にお聞かせください。
+      options:
+        - { id: q3b, text: Xin anh chia sẻ thẳng thắn tâm trạng lúc này khi đã quyết định giải nghệ., lang: vi }
+        - { id: z5w, text: Xin anh cho biết lý do quyết định giải nghệ., lang: vi }
+        - { id: f1p, text: Xin anh hãy suy nghĩ lại quyết định giải nghệ., lang: vi }
+        - { id: j7d, text: Tôi muốn nói thẳng tâm trạng của mình khi giải nghệ., lang: vi }
+    answer:
+      correct_option_id: q3b
+    explanation:
+      vi: 引退を決めた - đã quyết định giải nghệ; 今の心境 - tâm trạng lúc này; お聞かせください - xin cho chúng tôi được nghe.
+    display_answer: Xin anh chia sẻ thẳng thắn tâm trạng lúc này khi đã quyết định giải nghệ.
+
+  - key: ja:exercise:n1-emotion-evaluation-review-mcq-kokuhyou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-kokuhyou
+    prompt:
+      stem: 'Chọn từ phù hợp: 公開当初は評論家に＿＿された映画が、今では名作と呼ばれている。'
+      stem_lang: vi
+      options:
+        - { id: b4x, text: 酷評, lang: ja }
+        - { id: m8k, text: 謝辞, lang: ja }
+        - { id: e2s, text: 心境, lang: ja }
+        - { id: x6h, text: 惨状, lang: ja }
+    answer:
+      correct_option_id: b4x
+    explanation:
+      vi: 酷評される - bị chê thậm tệ; tương phản với 今では名作 (nay là kiệt tác). 謝辞 (lời cảm tạ), 心境 (tâm trạng), 惨状 (cảnh thảm khốc) không đi với される theo nghĩa này.
+    display_answer: 酷評
+
+  - key: ja:exercise:n1-emotion-evaluation-review-fill-sanjou
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-sanjou
+    prompt:
+      template: "地震の後の町の{{b1}}は、見るに{{b2}}ものだった。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Cảnh thảm khốc của thị trấn sau động đất thật không thể xem nổi."
+        - "Gợi ý: 'cảnh thảm khốc' - さんじょう; 'không chịu nổi' - たえない."
+    answer:
+      blanks:
+        b1: [惨状, さんじょう]
+        b2: [堪えない, たえない]
+    known_wrong:
+      - answer: 値しない
+        feedback_vi: 見るに値しない là "không đáng xem" (chê giá trị); cảnh quá thảm khốc không xem nổi là 見るに堪えない.
+        error_tag: atai_taenai
+      - answer: 心境
+        feedback_vi: 心境 là tâm trạng; cảnh tượng thảm khốc là 惨状.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 町の惨状 - cảnh thảm khốc của thị trấn; 見るに堪えない - không thể xem nổi.
+    display_answer: 地震の後の町の惨状は、見るに堪えないものだった。
+
+  - key: ja:exercise:n1-emotion-evaluation-review-wb-shaji
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-shaji
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tại lễ tốt nghiệp, đại diện sinh viên tốt nghiệp đã phát biểu lời cảm tạ.\""
+      tokens:
+        - { id: a3, text: 謝辞を }
+        - { id: a1, text: 卒業式で、 }
+        - { id: a5, text: 謝罪を }
+        - { id: a4, text: 述べた }
+        - { id: a2, text: 卒業生代表が }
+    answer:
+      orders:
+        - [a1, a2, a3, a4]
+    explanation:
+      vi: 謝辞を述べる - phát biểu lời cảm tạ. 謝罪 là xin lỗi - không hợp lễ tốt nghiệp.
+    display_answer: 卒業式で、卒業生代表が謝辞を述べた。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-emotion-evaluation-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-kiwamarinai
+    prompt:
+      template: "運転中にスマホを操作するのは危険{{b1}}が、彼の指摘は一考に{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [極まりない, きわまりない, 極まる, きわまる]
+        b2: [値する, あたいする]
+    known_wrong:
+      - answer: の至りだ
+        feedback_vi: の至り dành cho cảm xúc khiêm tốn của người nói; đánh giá một hành vi nguy hiểm dùng 危険極まりない.
+        error_tag: itari_kiwamarinai
+      - answer: 堪えない
+        feedback_vi: 一考に値する - đáng để suy nghĩ; に堪えない không mang nghĩa "đáng".
+        error_tag: atai_taenai
+    explanation:
+      vi: 危険極まりない - nguy hiểm hết mức (chê); 一考に値する - đáng để cân nhắc (khen). Một câu kết hợp cả chê lẫn khen.
+    display_answer: 運転中にスマホを操作するのは危険極まりないが、彼の指摘は一考に値する。
+
+  - key: ja:exercise:n1-emotion-evaluation-review-translate-apology
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-ni-taenai
+    prompt:
+      source_text: Việc gây phiền hà lớn cho khách hàng thật vô cùng đáng tiếc. (văn thông cáo, dùng 遺憾に堪えない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お客様に多大なご迷惑をおかけしたことは、誠に遺憾に堪えません。
+        - お客様に多大なご迷惑をおかけしたことは、遺憾に堪えません。
+        - お客様に多大なご迷惑をおかけしたことは、誠に遺憾に堪えない。
+        - お客様に多大なご迷惑をおかけしたことは、遺憾に堪えない。
+        - お客様に大きなご迷惑をおかけしたことは、誠に遺憾に堪えません。
+        - お客様に大きなご迷惑をおかけしたことは、遺憾に堪えません。
+        - お客様に多大なご迷惑をおかけしましたことは、誠に遺憾に堪えません。
+        - お客様に多大な迷惑をかけたことは、遺憾に堪えない。
+        - お客様に多大なご迷惑をおかけしたことは、誠に遺憾の念に堪えません。
+        - お客様に多大なご迷惑をおかけしたことは、遺憾の念に堪えません。
+        - お客様に多大なご迷惑をおかけしたことは、誠に遺憾にたえません。
+        - お客さまに多大なご迷惑をおかけしたことは、誠に遺憾に堪えません。
+        - おきゃくさまにただいなごめいわくをおかけしたことは、まことにいかんにたえません。
+    known_wrong:
+      - answer: お客様に多大なご迷惑をおかけしたことは、誠に遺憾に値します。
+        feedback_vi: に値する là "đáng" (đánh giá giá trị); bày tỏ tiếc nuối trang trọng là 遺憾に堪えません.
+        error_tag: atai_taenai
+      - answer: お客様に多大なご迷惑をおかけしたことは、誠に遺憾の至りです。
+        feedback_vi: Cụm cố định trong thông cáo là 遺憾に堪えません (hoặc 遺憾の念に堪えません).
+        error_tag: collocation
+    explanation:
+      vi: 多大なご迷惑をおかけする - gây phiền hà lớn (khiêm nhường); 誠に遺憾に堪えません - thật vô cùng đáng tiếc.
+    display_answer: お客様に多大なご迷惑をおかけしたことは、誠に遺憾に堪えません。
+
+  - key: ja:exercise:n1-emotion-evaluation-review-translate-yorokobi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-to-ittara-nai
+    prompt:
+      source_text: Niềm vui khi nhận được thư báo đỗ thì không sao tả xiết. (kể chuyện quá khứ, dùng といったらない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 合格通知を受け取った時の喜びといったらなかった。
+        - 合格通知を受け取ったときの喜びといったらなかった。
+        - 合格通知を受け取った時の喜びといったらありませんでした。
+        - 合格通知を受け取った時の嬉しさといったらなかった。
+        - 合格通知を受け取ったときの嬉しさといったらなかった。
+        - 合格通知をもらった時の喜びといったらなかった。
+        - 合格通知をもらったときの喜びといったらなかった。
+        - 合格通知をもらった時の嬉しさといったらなかった。
+        - 合格の知らせを受け取った時の喜びといったらなかった。
+        - 合格の通知を受け取った時の喜びといったらなかった。
+        - 合格通知が届いた時の喜びといったらなかった。
+        - 合格通知を受け取った時の喜びったらなかった。
+        - ごうかくつうちをうけとったときのよろこびといったらなかった。
+    known_wrong:
+      - answer: 合格通知を受け取った時の喜びったらありゃしなかった。
+        feedback_vi: ったらありゃしない dùng để than phiền; niềm vui dùng といったらなかった.
+        error_tag: arya_shinai_positive
+      - answer: 合格通知を受け取った時の喜びの至りだった。
+        feedback_vi: の至り đi với một số danh từ cố định (光栄, 恐縮, 感激); câu này cần といったらなかった.
+        error_tag: collocation
+    explanation:
+      vi: 合格通知 - thư báo đỗ; 受け取った時の喜び - niềm vui khi nhận; といったらなかった - không sao tả xiết (quá khứ).
+    display_answer: 合格通知を受け取った時の喜びといったらなかった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-emotion-evaluation-review-mcq-editorial
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u3-gram-wo-kinjienai
+    prompt:
+      stem: "Đọc xã luận: 「被災地の惨状を伝える映像には、誰もが涙を禁じ得なかっただろう。一方で、行政の対応の遅さは無責任極まりない。ただ、自ら現地に入り支援を続けるボランティアの存在は、称賛に値する。」 Thái độ của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: c7r, text: "Xúc động trước cảnh thảm khốc, phê phán chính quyền chậm trễ và ca ngợi tình nguyện viên.", lang: vi }
+        - { id: w1n, text: Khen chính quyền xử lý nhanh và phê phán tình nguyện viên., lang: vi }
+        - { id: k5e, text: Cho rằng đoạn phim về vùng thiên tai không đáng xem., lang: vi }
+        - { id: d9a, text: Thấy tình nguyện viên vô trách nhiệm vì tự ý vào vùng thiên tai., lang: vi }
+    answer:
+      correct_option_id: c7r
+    explanation:
+      vi: 涙を禁じ得なかった - không cầm được nước mắt; 無責任極まりない - vô trách nhiệm hết mức (chê chính quyền); 称賛に値する - đáng ca ngợi (khen tình nguyện viên).
+    display_answer: Xúc động trước cảnh thảm khốc, phê phán chính quyền chậm trễ và ca ngợi tình nguyện viên.
+
+  - key: ja:exercise:n1-emotion-evaluation-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u3-kokuhyou
+    prompt:
+      source_text: 公開当初は酷評された映画が、今では名作と呼ばれている。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ phim từng bị chê thậm tệ lúc mới ra mắt nay lại được gọi là kiệt tác.
+        - Bộ phim từng bị chê thậm tệ khi mới ra mắt nay lại được gọi là kiệt tác.
+        - Bộ phim bị chê thậm tệ lúc mới ra mắt nay được gọi là kiệt tác.
+        - Bộ phim bị chê thậm tệ khi mới công chiếu nay được gọi là kiệt tác.
+        - Bộ phim từng bị chê thậm tệ lúc mới công chiếu nay lại được gọi là kiệt tác.
+        - Bộ phim từng bị phê bình gay gắt lúc mới ra mắt nay lại được gọi là kiệt tác.
+        - Bộ phim từng bị phê bình gay gắt khi mới công chiếu nay được gọi là kiệt tác.
+        - Bộ phim từng bị chỉ trích nặng nề lúc mới ra mắt nay lại được gọi là kiệt tác.
+        - Bộ phim từng bị chê thậm tệ lúc mới ra mắt giờ đây được gọi là kiệt tác.
+        - Bộ phim từng bị chê thậm tệ lúc mới ra mắt nay lại được gọi là tác phẩm kinh điển.
+        - Bộ phim từng bị chê thậm tệ lúc mới ra mắt nay lại được coi là kiệt tác.
+        - Bộ phim mà lúc mới ra mắt bị chê thậm tệ thì nay lại được gọi là kiệt tác.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bộ phim từng được khen hết lời lúc mới ra mắt nay vẫn được gọi là kiệt tác.
+        feedback_vi: 酷評 là chê thậm tệ, không phải khen; khen hết lời là 絶賛.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 公開当初 - lúc mới công chiếu; 酷評された - bị chê thậm tệ; 名作と呼ばれている - được gọi là kiệt tác.
+    display_answer: Bộ phim từng bị chê thậm tệ lúc mới ra mắt nay lại được gọi là kiệt tác.
+
+  - key: ja:exercise:n1-emotion-evaluation-review-wb-itari
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-no-itari
+    prompt:
+      instruction: "Sắp xếp thành câu mở đầu bài phát biểu nhận giải: \"Được nhận một giải thưởng danh giá như thế này, tôi vô cùng vinh dự.\""
+      tokens:
+        - { id: r3, text: いただき、 }
+        - { id: r5, text: 光栄極まりないです }
+        - { id: r1, text: このような }
+        - { id: r4, text: 光栄の至りです }
+        - { id: r2, text: 名誉ある賞を }
+    answer:
+      orders:
+        - [r1, r2, r3, r4]
+    explanation:
+      vi: 名誉ある賞 - giải thưởng danh giá; いただき - được nhận (khiêm nhường); 光栄の至りです - vô cùng vinh dự. 極まりない thường để phê phán, không dùng cho vinh dự của bản thân.
+    display_answer: このような名誉ある賞をいただき、光栄の至りです。
+
+  - key: ja:exercise:n1-emotion-evaluation-review-mcq-interview
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-kagiri-da
+    prompt:
+      stem: 'Phóng viên hỏi vận động viên: 「引退を決めた今の心境は？」 Câu trả lời nào tự nhiên và đúng ngữ pháp nhất?'
+      stem_lang: vi
+      options:
+        - { id: g5t, text: 寂しい限りですが、応援してくださった皆様には感謝の気持ちでいっぱいです。, lang: ja }
+        - { id: y3c, text: 寂しいの至りですが、応援してくださった皆様には感謝の気持ちでいっぱいです。, lang: ja }
+        - { id: l9f, text: 寂しい極まりないですが、応援してくださった皆様には感謝の気持ちでいっぱいです。, lang: ja }
+        - { id: p1h, text: 寂しいったらありゃしないですが、応援してくださった皆様には感謝に値します。, lang: ja }
+    answer:
+      correct_option_id: g5t
+    explanation:
+      vi: 寂しい限りです - buồn vô cùng (tính từ い + 限り, cảm xúc người nói). の至り, 極まりない không gắn sau tính từ い; ったらありゃしない quá suồng sã và 感謝に値します sai nghĩa.
+    display_answer: 寂しい限りですが、応援してくださった皆様には感謝の気持ちでいっぱいです。

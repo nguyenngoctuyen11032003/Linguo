@@ -1,0 +1,563 @@
+# Học liệu unit "Thời điểm, diễn biến và thay đổi" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～うちに / ～最中に =================
+  - key: ja:item:n2-u1-gram-uchini
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る/V-ている/V-ない · A-い · Na-な · N-の + うちに
+      romanization: uchi ni
+      pos: thời điểm
+    back:
+      meaning:
+        vi: '(1) "Nhân lúc còn..., trong khi còn..." - làm việc gì đó trước khi tình trạng thay đổi: 若いうちに, 熱いうちに, 明るいうちに. V-ないうちに là "trước khi... xảy ra": 雨が降らないうちに. (2) V-ている + うちに: "đang... thì (dần dần)... lúc nào không hay".'
+      examples:
+        - target: 熱いうちに、どうぞ召し上がってください。
+          translation:
+            vi: Mời anh dùng khi còn nóng.
+        - target: 本を読んでいるうちに、眠くなってしまった。
+          translation:
+            vi: Đang đọc sách thì buồn ngủ lúc nào không hay.
+      pronunciation_note:
+        vi: うち đọc "u-chi", u tròn môi nhẹ; に đọc liền ngay sau.
+      confusion:
+        vi: うちに mang ý "kẻo lỡ cơ hội, tình trạng này sẽ mất"; 間に (あいだに) chỉ nói một khoảng thời gian, không có ý đó. 雨が降らないうちに không phải câu phủ định - nghĩa là "trước khi trời mưa".
+
+  - key: ja:item:n2-u1-gram-saichuuni
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N-の · V-ている + 最中に
+      reading: さいちゅうに
+      romanization: saichū ni
+      pos: thời điểm
+    back:
+      meaning:
+        vi: '"Đúng lúc đang giữa chừng... thì..." - một việc đang diễn ra ở cao điểm thì có chuyện khác xen vào, thường là bất ngờ, ngoài ý muốn: 会議の最中に, 料理をしている最中に.'
+      examples:
+        - target: 会議の最中に、停電した。
+          translation:
+            vi: Đang họp giữa chừng thì mất điện.
+      pronunciation_note:
+        vi: ちゅう là âm dài - "chư-u", kéo dài gấp đôi; さい đọc liền "sai".
+      confusion:
+        vi: Không gắn vào thể từ điển - nói 食べている最中に hoặc 食事の最中に, không nói 食べる最中に. 最中 chỉ một lúc đang bận rộn cụ thể, không dùng cho cả một giai đoạn dài (nói 学生のうちに, không nói 学生の最中に).
+
+  - key: ja:item:n2-u1-teiden
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 停電
+      reading: ていでん
+      romanization: teiden
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: mất điện, cúp điện; 停電する - bị mất điện
+      examples:
+        - target: 台風のせいで、町全体が停電した。
+          translation:
+            vi: Tại cơn bão mà cả thị trấn bị mất điện.
+      pronunciation_note:
+        vi: てい đọc gần như "tê" kéo dài - "tê-ê-đen".
+      confusion:
+        vi: 停電 là mất điện; mất nước là 断水 (だんすい). Điện có lại thì nói 電気が戻る hoặc 停電が復旧する.
+
+  - key: ja:item:n2-u1-sameru
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 冷める
+      reading: さめる
+      romanization: sameru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: (đồ ăn, nước) nguội đi; (tình cảm, hứng thú) nguội lạnh
+      examples:
+        - target: スープが冷めないうちに、飲んでください。
+          translation:
+            vi: Hãy uống canh trước khi nó nguội.
+      pronunciation_note:
+        vi: Đọc "sa-mê-ru", trọng âm không rõ, giữ đều ba âm.
+      confusion:
+        vi: 冷める là tự động từ (tự nguội); làm cho lạnh là 冷やす. 冷える là "trở nên lạnh" (cơ thể, thời tiết, đồ uống trong tủ). 覚める (tỉnh giấc) đọc giống hệt nhưng khác chữ.
+
+  - key: ja:item:n2-u1-muchuu
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 夢中
+      reading: むちゅう
+      romanization: muchū
+      pos: tính từ な / danh từ
+    back:
+      meaning:
+        vi: say mê, mải mê đến quên cả xung quanh; ～に夢中になる - mải mê với ...
+      examples:
+        - target: ゲームに夢中になっているうちに、朝になっていた。
+          translation:
+            vi: Mải mê chơi game, sáng lúc nào không hay.
+      pronunciation_note:
+        vi: ちゅう là âm dài - "mu-chư-u".
+      confusion:
+        vi: Đối tượng say mê đi với に - 漫画に夢中だ (không dùng を). 熱心 (ねっしん) là "chăm chỉ, nhiệt tình" trong học tập, công việc; 夢中 là mải mê quên hết mọi thứ.
+
+  # ================= bài 2: ～たとたん / ～次第 =================
+  - key: ja:item:n2-u1-gram-totan
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-た + とたん(に)
+      romanization: totan (ni)
+      pos: thời điểm
+    back:
+      meaning:
+        vi: '"Vừa mới... thì ngay lập tức..." - việc thứ hai xảy ra ngay sau việc thứ nhất, thường bất ngờ, ngoài dự đoán: ドアを開けたとたん, 立ち上がったとたん.'
+      examples:
+        - target: 窓を開けたとたん、強い風が入ってきた。
+          translation:
+            vi: Vừa mở cửa sổ thì gió mạnh lùa vào.
+      pronunciation_note:
+        vi: とたん đọc "tô-tan", ん cuối đọc mũi nhẹ.
+      confusion:
+        vi: Luôn dùng thể た - 開けたとたん, không nói 開けるとたん. Vế sau là sự việc đã xảy ra ngoài ý muốn, không phải ý định hay lời nhờ của người nói - không nói 着いたとたん、電話してください.
+
+  - key: ja:item:n2-u1-gram-shidai
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-ます(bỏ ます) · N(する) + 次第
+      reading: しだい
+      romanization: shidai
+      pos: thời điểm
+    back:
+      meaning:
+        vi: '"Ngay khi... xong là (sẽ)..." - vế sau là hành động có chủ ý: báo, gửi, liên lạc, xuất phát. Hay dùng trong công việc, giọng lịch sự: 分かり次第, 届き次第, 到着次第.'
+      examples:
+        - target: 結果が分かり次第、ご連絡いたします。
+          translation:
+            vi: Ngay khi biết kết quả, tôi sẽ liên lạc với anh/chị.
+      pronunciation_note:
+        vi: しだい đọc "shi-đai", だい như "đai" trong tiếng Việt.
+      confusion:
+        vi: Gắn vào gốc ます - 着き次第, không phải 着いた次第. Không dùng để kể chuyện đã xảy ra hay hiện tượng tự nhiên - "vừa ra khỏi nhà thì mưa" phải dùng 出たとたん.
+
+  - key: ja:item:n2-u1-touchaku
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 到着
+      reading: とうちゃく
+      romanization: tōchaku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự đến nơi (người, tàu, máy bay, hàng hoá); 到着する - đến nơi
+      examples:
+        - target: 到着次第、お電話いたします。
+          translation:
+            vi: Đến nơi là tôi sẽ gọi điện ngay.
+      pronunciation_note:
+        vi: とう là âm dài "tô-ô"; ちゃく đọc "chác".
+      confusion:
+        vi: 到着 trang trọng hơn 着く, hay gặp trong thông báo, công việc. Trái nghĩa là 出発 (しゅっぱつ). 到着次第 và 到着し次第 đều đúng.
+
+  - key: ja:item:n2-u1-hanmei
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 判明する
+      reading: はんめいする
+      romanization: hanmei suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: (sự thật, nguyên nhân, danh tính) được làm rõ, trở nên rõ ràng
+      examples:
+        - target: 事故の原因が判明し次第、お知らせします。
+          translation:
+            vi: Ngay khi xác định được nguyên nhân sự cố, chúng tôi sẽ thông báo.
+      pronunciation_note:
+        vi: ん trước m đọc như "m" - "ham-mê-i".
+      confusion:
+        vi: 判明する là tự động từ - 原因が判明する, không nói 原因を判明する. Muốn nói "làm rõ" (có người làm) thì dùng 明らかにする.
+
+  - key: ja:item:n2-u1-orikaesu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 折り返す
+      reading: おりかえす
+      romanization: orikaesu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: gọi lại (cho người đã gọi đến); quay lại, gập lại; 折り返し電話する - gọi lại
+      examples:
+        - target: 担当者が戻り次第、折り返しお電話いたします。
+          translation:
+            vi: Ngay khi người phụ trách quay về, chúng tôi sẽ gọi lại cho anh/chị.
+      pronunciation_note:
+        vi: Đọc "ô-ri-ka-ê-xư", す cuối rất nhẹ.
+      confusion:
+        vi: 折り返し là phía nhận cuộc gọi chủ động gọi lại cho người đã gọi. かけ直す là chính người gọi gọi lại lần nữa (vì máy bận, rớt máy).
+
+  # ================= bài 3: ～につれて / ～にしたがって / ～とともに =================
+  - key: ja:item:n2-u1-gram-nitsurete
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る · N + につれて
+      romanization: ni tsurete
+      pos: thay đổi song song
+    back:
+      meaning:
+        vi: '"Càng... thì càng..." - khi A thay đổi dần thì B cũng thay đổi dần theo: 年を取るにつれて, 時間がたつにつれて.'
+      examples:
+        - target: 年を取るにつれて、体力が落ちてきた。
+          translation:
+            vi: Càng có tuổi, thể lực càng giảm.
+      pronunciation_note:
+        vi: つれて đọc "tsư-rê-tê", つ bật đầu lưỡi.
+      confusion:
+        vi: Cả hai vế đều phải là thay đổi dần; vế sau không phải hành động một lần hay ý định (không nói 時間がたつにつれて、電話した). Gắn vào thể từ điển - 進むにつれて, không phải 進んだにつれて.
+
+  - key: ja:item:n2-u1-gram-nishitagatte
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る · N + にしたがって (に従って)
+      reading: にしたがって
+      romanization: ni shitagatte
+      pos: thay đổi song song / tuân theo
+    back:
+      meaning:
+        vi: '(1) Giống につれて - "càng... càng...": 山を登るにしたがって. (2) "Theo, tuân theo" (chỉ thị, quy định, hướng dẫn): 指示にしたがって.'
+      examples:
+        - target: 山を登るにしたがって、気温が下がっていく。
+          translation:
+            vi: Càng lên núi cao, nhiệt độ càng giảm.
+        - target: 係員の指示にしたがって、避難してください。
+          translation:
+            vi: Xin hãy sơ tán theo hướng dẫn của nhân viên.
+      pronunciation_note:
+        vi: したがって - "shi-ta-gát-tê", っ là một nhịp ngắt.
+      confusion:
+        vi: Nghĩa "tuân theo" chỉ có ở にしたがって - nói 指示にしたがって, không nói 指示につれて. Văn viết trang trọng hay rút gọn thành にしたがい.
+
+  - key: ja:item:n2-u1-gram-totomoni
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る · N + とともに (と共に)
+      reading: とともに
+      romanization: to tomo ni
+      pos: thay đổi song song / đồng thời
+    back:
+      meaning:
+        vi: '(1) "Cùng với sự..., ... cũng thay đổi" (văn viết, tin tức): 経済の発展とともに. (2) "Cùng với (ai)", "đồng thời với".'
+      examples:
+        - target: インターネットの普及とともに、生活が大きく変わった。
+          translation:
+            vi: Cùng với sự phổ cập của Internet, cuộc sống đã thay đổi rất nhiều.
+      pronunciation_note:
+        vi: とも đọc "tô-mô", hai âm o đều ngắn.
+      confusion:
+        vi: とともに nghe trang trọng. Nói chuyện hằng ngày "đi cùng bạn" dùng 友達と一緒に; "càng... càng..." trong hội thoại dùng につれて hoặc ～ば～ほど.
+
+  - key: ja:item:n2-u1-koureika
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 高齢化
+      reading: こうれいか
+      romanization: kōreika
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự già hoá (dân số, xã hội); 高齢化が進む - già hoá ngày càng tăng
+      examples:
+        - target: 高齢化が進むにつれて、介護の仕事が増えている。
+          translation:
+            vi: Dân số càng già hoá thì việc chăm sóc người cao tuổi càng nhiều.
+      pronunciation_note:
+        vi: こう là âm dài "cô-ô"; れい đọc gần "rê-ê".
+      confusion:
+        vi: 高齢化 là dân số già đi; 少子化 (しょうしか) là số trẻ em sinh ra giảm. Hai từ hay đi cùng nhau - 少子高齢化.
+
+  - key: ja:item:n2-u1-fukyuu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 普及
+      reading: ふきゅう
+      romanization: fukyū
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự phổ cập, lan rộng (công nghệ, sản phẩm, kiến thức); 普及する - trở nên phổ biến
+      examples:
+        - target: スマートフォンが普及するにつれて、公衆電話が減った。
+          translation:
+            vi: Điện thoại thông minh càng phổ biến thì điện thoại công cộng càng ít đi.
+      pronunciation_note:
+        vi: きゅう là âm dài "kiư-u"; ふ đọc nhẹ giữa "f" và "h".
+      confusion:
+        vi: 普及 dùng cho thứ được nhiều người dùng rộng rãi. Tin đồn, bệnh lan ra thì dùng 広まる hoặc 広がる.
+
+  - key: ja:item:n2-u1-zouka
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 増加
+      reading: ぞうか
+      romanization: zōka
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự tăng lên (về số lượng); 増加する - tăng
+      examples:
+        - target: 観光客の増加とともに、ホテルも増えた。
+          translation:
+            vi: Cùng với lượng khách du lịch tăng, khách sạn cũng nhiều lên.
+      pronunciation_note:
+        vi: ぞう là âm dài "dô-ô".
+      confusion:
+        vi: 増加 nói về số lượng (người, xe, ca bệnh), trái nghĩa 減少. Giá cả tăng thì nói 上がる hoặc 上昇する, không nói 物価が増加する.
+
+  # ================= bài 4: ～かけ / ～つつある / ～一方だ =================
+  - key: ja:item:n2-u1-gram-kake
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-ます(bỏ ます) + かけ(の N) / かける
+      romanization: -kake
+      pos: trạng thái dở dang
+    back:
+      meaning:
+        vi: '"... dở, ... dở dang" - đã bắt đầu nhưng chưa xong: 食べかけのパン, 読みかけの本, 言いかけてやめた. Với động từ tức thời (死ぬ, 消える) thì là "suýt, sắp": 死にかけた.'
+      examples:
+        - target: 机の上に読みかけの本が置いてある。
+          translation:
+            vi: Trên bàn có cuốn sách đang đọc dở.
+      pronunciation_note:
+        vi: かけ đọc "ka-kê", không bật hơi mạnh.
+      confusion:
+        vi: Trước danh từ cần の - 飲みかけのコーヒー (không nói 飲みかけコーヒー). かけ là dừng giữa chừng; 途中 (とちゅう) là "giữa đường, đang trong quá trình", không nói rõ có dừng hay không.
+
+  - key: ja:item:n2-u1-gram-tsutsuaru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-ます(bỏ ます) + つつある
+      romanization: tsutsu aru
+      pos: quá trình thay đổi
+    back:
+      meaning:
+        vi: '"Đang dần dần..." - một sự thay đổi đang tiến triển, chưa kết thúc. Văn viết, tin tức: 回復しつつある, 減りつつある, 変わりつつある.'
+      examples:
+        - target: 景気は少しずつ回復しつつある。
+          translation:
+            vi: Kinh tế đang dần dần hồi phục.
+      pronunciation_note:
+        vi: つつ là hai âm つ liên tiếp - "tsư-tsư", đọc rõ cả hai.
+      confusion:
+        vi: Chỉ dùng với động từ chỉ sự thay đổi (増える, 減る, 変わる, 回復する). Hành động thường ngày như 食べる, 読む thì dùng ～ている - không nói ご飯を食べつつある.
+
+  - key: ja:item:n2-u1-gram-ippouda
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V-る + 一方だ
+      reading: いっぽうだ
+      romanization: ippō da
+      pos: xu hướng một chiều
+    back:
+      meaning:
+        vi: '"Ngày càng..., cứ thế mà..." - thay đổi chỉ theo một chiều, không dừng lại, thường là chiều xấu và có giọng than phiền: 物価は上がる一方だ, 悪化する一方だ.'
+      examples:
+        - target: 物価は上がる一方だ。
+          translation:
+            vi: Vật giá cứ tăng mãi.
+      pronunciation_note:
+        vi: いっぽう - "íp-pô-ô", っ là một nhịp ngắt, ぽう là âm dài.
+      confusion:
+        vi: Luôn gắn vào thể từ điển - 増える一方だ, không nói 増えている一方だ. つつある chỉ nói "đang dần thay đổi" một cách trung tính; 一方だ nhấn "không dừng, chỉ một chiều".
+
+  - key: ja:item:n2-u1-genshou
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 減少
+      reading: げんしょう
+      romanization: genshō
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự giảm xuống (về số lượng); 減少する - giảm
+      examples:
+        - target: この村の人口は減少しつつある。
+          translation:
+            vi: Dân số ngôi làng này đang dần giảm.
+      pronunciation_note:
+        vi: しょう là âm dài "shô-ô"; げん đọc "ghên".
+      confusion:
+        vi: 減少 trái nghĩa với 増加, dùng cho số lượng. Giá giảm thì nói 下がる / 値下がりする; cân nặng giảm thì nói 体重が減る.
+
+  - key: ja:item:n2-u1-kaifuku
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 回復
+      reading: かいふく
+      romanization: kaifuku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự hồi phục (sức khoẻ, kinh tế, thời tiết, lòng tin); 回復する - hồi phục
+      examples:
+        - target: 父の体調は少しずつ回復しつつある。
+          translation:
+            vi: Sức khoẻ của bố tôi đang dần hồi phục.
+      pronunciation_note:
+        vi: Đọc "kai-fư-kư", く cuối rất nhẹ.
+      confusion:
+        vi: 回復 dùng cho người, kinh tế, thời tiết. Sửa đồ vật hỏng dùng 修理 (しゅうり); khôi phục dữ liệu, giao thông sau sự cố hay dùng 復旧 (ふっきゅう).
+
+  - key: ja:item:n2-u1-akka
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 悪化
+      reading: あっか
+      romanization: akka
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự xấu đi, trở nên tồi tệ hơn (bệnh, tình hình, quan hệ, thời tiết); 悪化する - xấu đi
+      examples:
+        - target: 駅前の渋滞は悪化する一方だ。
+          translation:
+            vi: Tình trạng kẹt xe trước ga ngày càng tệ.
+      pronunciation_note:
+        vi: っ là nhịp ngắt - "ák-ka", không đọc "a-ka".
+      confusion:
+        vi: 悪化 trái nghĩa 回復 hoặc 改善 (かいぜん - cải thiện). 悪化する là tự động từ - 病気が悪化する, không nói 病気を悪化する (muốn nói "làm cho xấu đi" dùng 悪化させる).
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n2-u1-keikou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 傾向
+      reading: けいこう
+      romanization: keikō
+      pos: danh từ
+    back:
+      meaning:
+        vi: xu hướng, khuynh hướng; ～傾向がある / ～傾向にある - có xu hướng ...
+      examples:
+        - target: 最近、結婚しない人が増える傾向にある。
+          translation:
+            vi: Gần đây, số người không kết hôn có xu hướng tăng.
+      pronunciation_note:
+        vi: けい và こう đều là âm dài - "kê-ê-cô-ô".
+      confusion:
+        vi: 傾向 là xu hướng khách quan rút ra từ số liệu, thói quen. Mốt, trào lưu nhất thời là 流行 (りゅうこう).
+
+  - key: ja:item:n2-u1-kyuusoku
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 急速
+      reading: きゅうそく
+      romanization: kyūsoku
+      pos: tính từ な
+    back:
+      meaning:
+        vi: nhanh chóng, với tốc độ nhanh (thay đổi, phát triển); 急速に - một cách nhanh chóng
+      examples:
+        - target: この町は急速に変わりつつある。
+          translation:
+            vi: Thị trấn này đang thay đổi nhanh chóng.
+      pronunciation_note:
+        vi: きゅう là âm dài "kiư-u"; そく đọc "xô-kư".
+      confusion:
+        vi: 急速 nói tốc độ của một quá trình. 急に là "đột ngột" (không báo trước); người chạy nhanh thì dùng 速く.
+
+  - key: ja:item:n2-u1-bukka
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 物価
+      reading: ぶっか
+      romanization: bukka
+      pos: danh từ
+    back:
+      meaning:
+        vi: vật giá, mức giá cả chung trong xã hội
+      examples:
+        - target: 物価は上がる一方で、生活が苦しい。
+          translation:
+            vi: Vật giá cứ tăng mãi, cuộc sống thật chật vật.
+      pronunciation_note:
+        vi: っ là nhịp ngắt - "búk-ka".
+      confusion:
+        vi: 物価 là mức giá chung; giá của một món hàng là 値段 (ねだん). Nói 物価が高い / 物価が上がる, không nói 物価が増える.

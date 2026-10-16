@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u3-phone-message
+order_index: 3
+level: n2
+title:
+  vi: Nghe gọi điện thoại công việc - chuyển máy, lời nhắn, gọi lại
+objectives:
+  - vi: Nghe hiểu các câu chuyển máy (取り次ぎ) và báo vắng mặt bằng あいにく.
+  - vi: Nhận lời nhắn (伝言) bằng 承る, 申し伝える và xác nhận lại bằng 念のため.
+  - vi: Nắm được ai sẽ gọi lại cho ai, khi nào (折り返し) trong một cuộc gọi.
+estimated_minutes: 24
+skills: [listening, speaking, vocabulary]
+prerequisites: [ja:lesson:n2-u3-business-email]
+items:
+  - item: ja:item:n2-u3-toritsugu
+  - item: ja:item:n2-u3-dengon
+  - item: ja:item:n2-u3-uketamawaru
+  - item: ja:item:n2-u3-moushitsutaeru
+  - item: ja:item:n2-u3-ainiku
+  - item: ja:item:n2-u3-nen-no-tame
+  - item: ja:item:n3-orikaeshi
+    role: reuse
+  - item: ja:item:n3-seki-wo-hazusu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Phần nghe N2 hay có hội thoại điện thoại công ty, câu hỏi kiểu "người nghe máy sẽ làm gì tiếp theo?". Bài này luyện nghe ra các cụm cố định và theo dõi ai làm gì.
+  - type: explain
+    text:
+      vi: 'Người gọi xin gặp: 営業部の田中様をお願いできますか / 田中様にお取り次ぎいただけますか. Người nghe máy chuyển: 田中ですね。少々お待ちください / ただいまおつなぎいたします. Nếu vắng: あいにく田中は外出しております; 本日は休みを取っております; ただいま会議中でございます.'
+  - type: explain
+    text:
+      vi: 'Sau khi báo vắng, người nghe máy đề nghị: 戻り次第、折り返しお電話いたしましょうか (về là gọi lại ngay nhé?) hoặc よろしければ、ご伝言を承りましょうか (để tôi nhận lời nhắn nhé?). Nhận xong: 確かに承りました。田中に申し伝えます. Cuối cùng xưng tên - 私、営業部のグエンが承りました.'
+  - type: explain
+    text:
+      vi: 'Xác nhận lại thông tin: 念のため、お電話番号を伺ってもよろしいでしょうか; 復唱いたします。03-1234-5678、ABC社の鈴木様でよろしいでしょうか. Người gọi muốn tự gọi lại thì nói - では、こちらから改めてお電話いたします.'
+  - type: deep_explain
+    text:
+      vi: Khi nghe, hãy chú ý hai điểm thường bị hỏi. Một là AI gọi lại - 折り返しお電話いたします (bên nghe máy gọi) khác 改めてこちらからお電話いたします (người gọi tự gọi lại). Hai là KHI NÀO - 戻り次第 (ngay khi về), 3時ごろ戻る予定です (dự kiến 3 giờ về), 明日 (みょうにち). Thông tin sau あいにく thường là lý do vắng mặt, còn câu cuối cuộc gọi thường là quyết định cuối cùng.
+  - type: example
+    target: 恐れ入りますが、営業部の田中様にお取り次ぎいただけますか。
+    target_lang: ja
+    translation:
+      vi: Xin thứ lỗi, anh/chị có thể chuyển máy cho anh Tanaka phòng kinh doanh được không ạ?
+  - type: example
+    target: あいにく田中はただいま会議中でございます。
+    target_lang: ja
+    translation:
+      vi: Tiếc là anh Tanaka hiện đang họp ạ.
+  - type: example
+    target: よろしければ、ご伝言を承りましょうか。
+    target_lang: ja
+    translation:
+      vi: Nếu anh/chị muốn, tôi xin nhận lời nhắn nhé?
+  - type: example
+    target: 確かに承りました。田中が戻りましたら、申し伝えます。
+    target_lang: ja
+    translation:
+      vi: Tôi đã ghi nhận đầy đủ. Khi anh Tanaka về, tôi sẽ chuyển lời ạ.
+  - type: example
+    target: 念のため、お電話番号を伺ってもよろしいでしょうか。
+    target_lang: ja
+    translation:
+      vi: Để cho chắc, cho phép tôi hỏi số điện thoại của anh/chị được không ạ?
+  - type: common_mistake
+    wrong: 田中様に申し伝えます。
+    right: 田中に申し伝えます。
+    target_lang: ja
+    note:
+      vi: Nói với khách về đồng nghiệp Tanaka - 申し伝える là chuyển lời đến người phe mình nên không thêm 様/さん. Tôn đồng nghiệp trước mặt khách là sai.
+  - type: common_mistake
+    wrong: ご伝言を承られますか。
+    right: ご伝言を承りましょうか。/ ご伝言をお預かりしましょうか。
+    target_lang: ja
+    note:
+      vi: 承る là khiêm nhường cho mình nhận lời nhắn. Đề nghị giúp dùng ～ましょうか; 承られる là tôn kính hoá động từ khiêm nhường - sai.
+  - type: summary
+    points:
+      - vi: 取り次ぐ - chuyển máy; お取り次ぎいただけますか (người gọi), おつなぎいたします (người nghe máy).
+      - vi: あいにく + lý do vắng - 外出しております, 会議中でございます, 休みを取っております.
+      - vi: ご伝言を承ります, 確かに承りました, ～に申し伝えます.
+      - vi: 念のため, 復唱いたします, ～でよろしいでしょうか - xác nhận lại.
+      - vi: Nghe kỹ AI gọi lại (折り返し vs こちらから改めて) và KHI NÀO.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u3-phone-message-listen-ainiku
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-ainiku
+    prompt:
+      audio_asset_id: null
+      fallback_text: あいにく田中は本日休みを取っております。
+      options:
+        - { id: b6w, text: "Tiếc là hôm nay anh Tanaka nghỉ phép ạ.", lang: vi }
+        - { id: t3m, text: "Tiếc là anh Tanaka vừa đi ra ngoài ạ.", lang: vi }
+        - { id: e8k, text: "Anh Tanaka đã lấy tài liệu hôm nay rồi ạ.", lang: vi }
+        - { id: r1z, text: "Anh Tanaka hôm nay đang họp ạ.", lang: vi }
+    answer:
+      correct_option_id: b6w
+    explanation:
+      vi: あいにく - tiếc là; 休みを取っております - (khiêm nhường) đang nghỉ phép; 本日 - hôm nay. Ra ngoài là 外出しております, đang họp là 会議中でございます.
+    display_answer: Tiếc là hôm nay anh Tanaka nghỉ phép ạ.
+
+  - key: ja:exercise:n2-u3-phone-message-listen-orikaeshi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-orikaeshi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 鈴木はただいま外出しておりまして、3時ごろ戻る予定です。戻り次第、折り返しお電話いたしましょうか。
+      options:
+        - { id: c5y, text: "Anh Suzuki về khoảng 3 giờ, về là bên này sẽ gọi lại cho khách.", lang: vi }
+        - { id: o2d, text: "Anh Suzuki đi đến 3 giờ, khách hãy gọi lại sau 3 giờ.", lang: vi }
+        - { id: g9f, text: "Anh Suzuki sẽ gọi lại cho khách lúc 3 giờ đúng.", lang: vi }
+        - { id: v4s, text: "Anh Suzuki đang họp, 3 giờ mới xong.", lang: vi }
+    answer:
+      correct_option_id: c5y
+    explanation:
+      vi: 3時ごろ戻る予定 - dự kiến khoảng 3 giờ về; 戻り次第 - ngay khi về; 折り返しお電話いたしましょうか - (bên tôi) gọi lại cho anh/chị nhé? Người gọi lại là bên nghe máy, không phải khách.
+    display_answer: Anh Suzuki về khoảng 3 giờ, về là bên này sẽ gọi lại cho khách.
+
+  - key: ja:exercise:n2-u3-phone-message-mcq-toritsugi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-toritsugu
+    prompt:
+      stem: 「田中様にお取り次ぎいただけますか。」 Người nói muốn gì?
+      stem_lang: vi
+      options:
+        - { id: h7a, text: Nhờ chuyển máy cho anh Tanaka., lang: vi }
+        - { id: w1u, text: Hỏi anh Tanaka đã về chưa., lang: vi }
+        - { id: m6e, text: Nhờ anh Tanaka gọi lại., lang: vi }
+        - { id: j3r, text: Hẹn gặp anh Tanaka., lang: vi }
+    answer:
+      correct_option_id: h7a
+    explanation:
+      vi: 取り次ぐ - chuyển (máy, lời) cho người khác; お取り次ぎいただけますか - anh/chị có thể chuyển máy giúp không ạ.
+    display_answer: Nhờ chuyển máy cho anh Tanaka.
+
+  - key: ja:exercise:n2-u3-phone-message-fill-uketamawaru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-uketamawaru
+    prompt:
+      template: "よろしければ、ご伝言を{{b1}}ましょうか。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Nếu anh/chị muốn, tôi xin nhận lời nhắn nhé?"
+        - "Gợi ý: khiêm nhường của 受ける/聞く, chữ đầu giống 承知."
+    answer:
+      blanks:
+        b1: [承り, うけたまわり]
+    known_wrong:
+      - answer: 承る
+        feedback_vi: Trước ましょう dùng dạng ます bỏ ます - 承り.
+        error_tag: verb_conjugation
+      - answer: 聞き
+        feedback_vi: Đúng nghĩa gần nhưng thiếu kính ngữ; nhận lời nhắn của khách dùng 承る.
+        error_tag: missing_kenjougo
+    explanation:
+      vi: 承る - (khiêm nhường) nhận, nghe; ご伝言を承りましょうか - câu chuẩn khi đề nghị nhận lời nhắn.
+    display_answer: よろしければ、ご伝言を承りましょうか。
+
+  - key: ja:exercise:n2-u3-phone-message-wb-moushitsutaeru
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-moushitsutaeru
+    prompt:
+      instruction: "Sắp xếp: \"Khi anh Tanaka về, tôi sẽ chuyển lời ạ.\" (nói với khách)"
+      tokens:
+        - { id: d3, text: 申し伝えます }
+        - { id: d1, text: 田中が }
+        - { id: d4, text: お伝えになります }
+        - { id: d2, text: 戻りましたら、 }
+    answer:
+      orders:
+        - [d1, d2, d3]
+    explanation:
+      vi: Mình chuyển lời đến đồng nghiệp - 申し伝えます (khiêm nhường). お伝えになる là tôn kính - sai người làm.
+    display_answer: 田中が戻りましたら、申し伝えます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u3-phone-message-fill-nennotame
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-nen-no-tame
+    prompt:
+      template: "{{b1}}、お電話番号を伺ってもよろしいでしょうか。(để cho chắc)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [念のため, ねんのため, 念の為]
+    known_wrong:
+      - answer: 確かに
+        feedback_vi: 確かに là "đúng là, chắc chắn"; để phòng hờ, cho chắc dùng 念のため.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 念のため - để cho chắc, phòng khi; hay đứng đầu câu xác nhận lại thông tin.
+    display_answer: 念のため、お電話番号を伺ってもよろしいでしょうか。
+
+  - key: ja:exercise:n2-u3-phone-message-translate-dengon
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-dengon
+    prompt:
+      source_text: Tiếc là anh Tanaka đang họp. Nếu anh/chị muốn, tôi xin nhận lời nhắn nhé? (Tanaka là đồng nghiệp)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あいにく田中は会議中でございます。よろしければ、ご伝言を承りましょうか。
+        - あいにく田中はただいま会議中でございます。よろしければ、ご伝言を承りましょうか。
+        - あいにく田中は会議中です。よろしければ、ご伝言を承りましょうか。
+        - あいにく田中は会議に出ております。よろしければ、ご伝言を承りましょうか。
+        - あいにく田中は会議中でございます。よろしければ、ご伝言をお預かりしましょうか。
+        - あいにく田中は会議中でございます。よろしければご伝言を承りましょうか。
+        - あいにく、田中は会議中でございます。よろしければ、ご伝言を承りましょうか。
+        - あいにく田中は会議中でございます。よろしければ、ご伝言を承りますが。
+        - あいにく田中は会議中でございます。よろしければ、伝言を承りましょうか。
+        - あいにく田中は会議中でございます。もしよろしければ、ご伝言を承りましょうか。
+        - あいにくたなかはかいぎちゅうでございます。よろしければ、ごでんごんをうけたまわりましょうか。
+    known_wrong:
+      - answer: あいにく田中さんは会議中でいらっしゃいます。よろしければ、ご伝言を承りましょうか。
+        feedback_vi: Với khách, đồng nghiệp là phe mình - 田中 (không さん) và でございます, không dùng いらっしゃる.
+        error_tag: san_uchi
+      - answer: あいにく田中は会議中でございます。よろしければ、ご伝言をお願いします。
+        feedback_vi: Câu này lại thành bạn nhờ khách nhắn - không tự nhiên. Đề nghị nhận lời nhắn dùng 承りましょうか.
+        error_tag: offer_form
+    explanation:
+      vi: あいにく + lý do vắng; ご伝言を承りましょうか - để tôi nhận lời nhắn nhé. お預かりしましょうか cũng dùng được.
+    display_answer: あいにく田中は会議中でございます。よろしければ、ご伝言を承りましょうか。
+
+  - key: ja:exercise:n2-u3-phone-message-translate-toritsugi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-toritsugu
+    prompt:
+      source_text: Xin thứ lỗi, anh/chị có thể chuyển máy cho anh Tanaka phòng kinh doanh được không ạ? (người gọi, dùng 取り次ぐ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 恐れ入りますが、営業部の田中様にお取り次ぎいただけますか。
+        - 恐れ入りますが、営業部の田中様にお取り次ぎいただけますでしょうか。
+        - 恐れ入りますが、営業部の田中様にお取り次ぎいただけませんか。
+        - 恐れ入りますが、営業部の田中様にお取り次ぎ願えますか。
+        - 恐れ入りますが、営業部の田中様にお取り次ぎ願えますでしょうか。
+        - 恐れ入りますが、営業部の田中様に取り次いでいただけますか。
+        - 恐れ入りますが、営業部の田中様に取り次いでいただけませんか。
+        - 恐れ入りますが、営業部の田中様にお取次ぎいただけますか。
+        - 恐れ入りますが営業部の田中様にお取り次ぎいただけますか。
+        - 恐れ入りますが、営業部の田中さんにお取り次ぎいただけますか。
+        - 恐れ入りますが、営業部の田中様にお取り次ぎをお願いできますか。
+        - おそれいりますが、えいぎょうぶのたなかさまにおとりつぎいただけますか。
+    known_wrong:
+      - answer: 恐れ入りますが、営業部の田中様にお取り次ぎいたしますか。
+        feedback_vi: お取り次ぎいたします là "tôi chuyển máy" - câu của người nghe máy. Người gọi nhờ - お取り次ぎいただけますか.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: 営業部 - phòng kinh doanh; お取り次ぎいただけますか - có thể chuyển máy giúp không ạ. Người gọi nói về người bên kia nên dùng 様.
+    display_answer: 恐れ入りますが、営業部の田中様にお取り次ぎいただけますか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u3-phone-message-listen-who-calls
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-orikaeshi
+    prompt:
+      audio_asset_id: null
+      fallback_text: "A: 申し訳ございません。山本はただいま席を外しております。戻りましたら、折り返しお電話いたしましょうか。B: いえ、これから外出しますので、こちらから夕方改めてお電話いたします。"
+      options:
+        - { id: n8p, text: "Chiều tối người gọi (B) sẽ tự gọi lại.", lang: vi }
+        - { id: a3q, text: "Anh Yamamoto sẽ gọi lại cho B khi quay về.", lang: vi }
+        - { id: f6x, text: "Nhân viên nghe máy (A) sẽ gọi lại cho B chiều tối.", lang: vi }
+        - { id: k2l, text: "B sẽ để lại lời nhắn cho anh Yamamoto.", lang: vi }
+    answer:
+      correct_option_id: n8p
+    explanation:
+      vi: A đề nghị gọi lại (折り返し) nhưng B từ chối - いえ, rồi nói こちらから夕方改めてお電話いたします (phía tôi sẽ gọi lại vào chiều tối). Câu cuối của cuộc gọi là quyết định cuối cùng.
+    display_answer: Chiều tối người gọi (B) sẽ tự gọi lại.
+
+  - key: ja:exercise:n2-u3-phone-message-mcq-confirm
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-uketamawaru
+    prompt:
+      stem: Bạn vừa ghi lời nhắn của khách cho đồng nghiệp Tanaka. Câu kết thúc nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: x5c, text: 確かに承りました。田中に申し伝えます。私、グエンが承りました。, lang: ja }
+        - { id: l9r, text: 確かに承りました。田中様にお伝えになります。, lang: ja }
+        - { id: u4g, text: わかりました。田中さんに言っておきます。, lang: ja }
+        - { id: p7b, text: 確かに承られました。田中に申し伝えてください。, lang: ja }
+    answer:
+      correct_option_id: x5c
+    explanation:
+      vi: 確かに承りました - tôi đã ghi nhận; 田中に申し伝えます - chuyển lời đến đồng nghiệp (không 様); xưng tên mình để khách biết ai nhận. Các câu kia tôn đồng nghiệp, quá suồng sã, hoặc sai dạng 承られる.
+    display_answer: 確かに承りました。田中に申し伝えます。私、グエンが承りました。
+
+  - key: ja:exercise:n2-u3-phone-message-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-seki-wo-hazusu
+    prompt:
+      source_text: 申し訳ございません。佐藤はただいま席を外しておりますが、10分ほどで戻ると思います。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi, anh Sato hiện không có ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+        - Xin lỗi, anh Sato hiện không có ở chỗ nhưng tôi nghĩ khoảng 10 phút nữa anh ấy sẽ quay lại.
+        - Xin lỗi, anh Sato hiện không có ở chỗ, nhưng chắc khoảng 10 phút nữa sẽ quay lại.
+        - Xin lỗi, anh Sato hiện không ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+        - Xin lỗi, anh Sato đang không có ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ về.
+        - Xin lỗi, anh Sato hiện đang vắng, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+        - Xin lỗi, anh Sato tạm rời chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+        - Xin lỗi, anh Sato hiện không có ở chỗ, nhưng tôi nghĩ khoảng mười phút nữa sẽ quay lại.
+        - Xin lỗi, chị Sato hiện không có ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+        - Xin lỗi, Sato hiện không có ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+        - Thành thật xin lỗi, anh Sato hiện không có ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin lỗi, anh Sato đã nghỉ việc, khoảng 10 phút nữa tôi sẽ gọi lại.
+        feedback_vi: 席を外す là tạm rời chỗ ngồi, không phải nghỉ việc; 戻る là anh Sato quay lại, không phải gọi lại.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 席を外しております - đang tạm vắng; 10分ほどで戻る - khoảng 10 phút nữa quay lại; ～と思います - tôi nghĩ là.
+    display_answer: Xin lỗi, anh Sato hiện không có ở chỗ, nhưng tôi nghĩ khoảng 10 phút nữa sẽ quay lại.
+
+  - key: ja:exercise:n2-u3-phone-message-wb-fukushou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-nen-no-tame
+    prompt:
+      instruction: "Xác nhận lại với khách: \"Tôi xin nhắc lại. Là anh Suzuki công ty ABC, số 03-1234-5678, có đúng không ạ?\""
+      tokens:
+        - { id: f2, text: ABC社の鈴木様、 }
+        - { id: f5, text: でございますか }
+        - { id: f1, text: 復唱いたします。 }
+        - { id: f3, text: 03-1234-5678 }
+        - { id: f4, text: でよろしいでしょうか }
+    answer:
+      orders:
+        - [f1, f2, f3, f4]
+    explanation:
+      vi: 復唱いたします - tôi xin nhắc lại; ～でよろしいでしょうか - có đúng là... không ạ (xác nhận lịch sự). でございますか là giọng hạ mình, không dùng để hỏi về khách.
+    display_answer: 復唱いたします。ABC社の鈴木様、03-1234-5678でよろしいでしょうか。

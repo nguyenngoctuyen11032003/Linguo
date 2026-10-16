@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u2-bakarika-dokoroka
+order_index: 3
+level: n2
+title:
+  vi: Thêm vào và đảo ngược - ～ばかりか, ～どころか, ～はもちろん
+objectives:
+  - vi: Cộng thêm một ý ở mức cao hơn bằng ～ばかりか (～も / まで / さえ).
+  - vi: Phủ nhận vế trước và nói điều ngược lại bằng ～どころか.
+  - vi: Nêu điều hiển nhiên trước rồi nhấn mạnh điều khác bằng ～はもちろん.
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n2-u2-ni-kagirazu]
+items:
+  - item: ja:item:n2-u2-higai
+  - item: ja:item:n2-u2-akka
+  - item: ja:item:n2-u2-kaizen
+  - item: ja:item:n2-u2-shinrai
+  - item: ja:item:n2-u2-gram-bakarika
+  - item: ja:item:n2-u2-gram-dokoroka
+  - item: ja:item:n2-u2-gram-wa-mochiron
+  - item: ja:item:n2-u2-gram-nomi-narazu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "đã trễ lại còn quên bài tập", "mưa chẳng những không tạnh mà còn to hơn" và "trẻ con thì đương nhiên, người lớn cũng thích" - ba mẫu hay bị đặt cạnh nhau trong đề N2.
+  - type: explain
+    text:
+      vi: 'A ばかりか B - không những A mà còn B; B thường ở mức cao hơn, đi với も / まで / さえ. 彼は遅刻したばかりか、宿題も忘れた. 英語ばかりか中国語まで話せる. Nối: V/いA thể thường, なAな, N.'
+  - type: explain
+    text:
+      vi: 'A どころか B - (1) chẳng những không A mà ngược lại B: 雨は止むどころか、ますます強くなった. (2) đừng nói A, ngay cả B (dễ hơn) cũng không: 漢字どころか、ひらがなも読めない. なA / N thường bỏ だ: 静かどころか, 休みどころか.'
+  - type: explain
+    text:
+      vi: 'N はもちろん(のこと)、N も - N thì đương nhiên rồi, (cả) N cũng: 子どもはもちろん、大人も楽しめる. Văn trang trọng: はもとより.'
+  - type: deep_explain
+    text:
+      vi: 'Phân biệt nhanh: ばかりか - cộng thêm, A vẫn đúng (A + B). どころか - gạt A đi, sự thật là điều ngược hẳn (không A, mà là B). はもちろん - A là chuyện đương nhiên, người nói nhấn vào B. Câu hỏi "Kỳ nghỉ có vui không?" - 楽しいどころか、ずっと病院にいた (vui gì đâu, toàn nằm viện) - không thể dùng ばかりか ở đây vì người nói phủ nhận "vui".'
+  - type: example
+    target: 彼女は英語ばかりか、中国語まで話せます。
+    target_lang: ja
+    translation:
+      vi: Cô ấy không những nói được tiếng Anh mà còn cả tiếng Trung.
+  - type: example
+    target: 薬を飲んだが、熱は下がるどころか、上がってしまった。
+    target_lang: ja
+    translation:
+      vi: Đã uống thuốc nhưng sốt chẳng những không hạ mà còn tăng lên.
+  - type: example
+    target: この料理は子どもはもちろん、大人にも人気があります。
+    target_lang: ja
+    translation:
+      vi: Món này trẻ em thì đương nhiên rồi, người lớn cũng thích.
+  - type: example
+    target: 台風で農作物に大きな被害が出ました。
+    target_lang: ja
+    translation:
+      vi: Bão đã gây thiệt hại lớn cho mùa màng.
+  - type: common_mistake
+    wrong: 雨は止むばかりか、ますます強くなった。
+    right: 雨は止むどころか、ますます強くなった。
+    target_lang: ja
+    note:
+      vi: Mưa không tạnh mà ngược lại còn to hơn - phủ nhận vế trước, dùng どころか. ばかりか sẽ thành "mưa đã tạnh lại còn to hơn" - vô lý.
+  - type: common_mistake
+    wrong: 状況が悪化させた。
+    right: 状況が悪化した。
+    target_lang: ja
+    note:
+      vi: 悪化する là tự động từ - 状況が悪化する. Ai làm cho xấu đi thì dùng 悪化させる với を - 状況を悪化させた.
+  - type: summary
+    points:
+      - vi: 被害, 悪化, 改善, 信頼 - 被害が出る, 悪化する, ～を改善する, 信頼を失う.
+      - vi: A ばかりか B (も / まで) - không những A mà còn B (cộng thêm).
+      - vi: A どころか B - không những không A mà ngược lại B / đừng nói A.
+      - vi: A はもちろん B も - A thì đương nhiên, B cũng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-mcq-higai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u2-higai
+    prompt:
+      stem: 「被害」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: j6a, text: thiệt hại, lang: vi }
+        - { id: p1x, text: cải thiện, lang: vi }
+        - { id: e4m, text: tin cậy, lang: vi }
+        - { id: u9c, text: bối cảnh, lang: vi }
+    answer:
+      correct_option_id: j6a
+    explanation:
+      vi: 被害 - thiệt hại (Hán Việt "bị hại"). Cải thiện là 改善, tin cậy là 信頼, bối cảnh là 背景.
+    display_answer: thiệt hại
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-listen-dokoroka
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u2-gram-dokoroka
+    prompt:
+      audio_asset_id: null
+      fallback_text: 薬を飲んだが、熱は下がるどころか、上がってしまった。
+      options:
+        - { id: z3k, text: Đã uống thuốc nhưng sốt chẳng những không hạ mà còn tăng lên., lang: vi }
+        - { id: g8w, text: Đã uống thuốc nên sốt hạ xuống rồi., lang: vi }
+        - { id: s5r, text: Đã uống thuốc nhưng sốt vẫn không thay đổi., lang: vi }
+        - { id: a2d, text: Vì sốt tăng lên nên tôi đã uống thuốc., lang: vi }
+    answer:
+      correct_option_id: z3k
+    explanation:
+      vi: 下がるどころか、上がってしまった - chẳng những không hạ mà còn tăng lên (ngược với mong đợi).
+    display_answer: Đã uống thuốc nhưng sốt chẳng những không hạ mà còn tăng lên.
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-mcq-bakarika
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-bakarika
+    prompt:
+      stem: 'Chọn từ đúng: 彼は遅刻した＿＿、宿題も忘れた。'
+      stem_lang: vi
+      options:
+        - { id: c7n, text: ばかりか, lang: ja }
+        - { id: t4h, text: どころか, lang: ja }
+        - { id: o1f, text: はもちろん, lang: ja }
+        - { id: y8v, text: に限って, lang: ja }
+    answer:
+      correct_option_id: c7n
+    explanation:
+      vi: Đã trễ (đúng) lại còn quên bài tập (cộng thêm) - ばかりか. どころか phủ nhận vế trước; はもちろん đi sau danh từ; に限って không hợp nghĩa.
+    display_answer: ばかりか
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-fill-kaizen
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-kaizen
+    prompt:
+      template: "会社は働き方を{{b1}}する必要があります。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Công ty cần cải thiện cách làm việc."
+        - "Gợi ý: 'cải thiện' - かいぜん."
+    answer:
+      blanks:
+        b1: [改善, かいぜん]
+    known_wrong:
+      - answer: 悪化
+        feedback_vi: 悪化 là xấu đi - ngược nghĩa, và là tự động từ (không đi với を).
+        error_tag: vocab_meaning
+      - answer: かいせん
+        feedback_vi: ぜ có dấu - かいぜん. かいせん là từ khác.
+        error_tag: dakuten
+    explanation:
+      vi: ～を改善する - cải thiện ～. 働き方 - cách làm việc.
+    display_answer: 会社は働き方を改善する必要があります。
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-wb-mochiron
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-wa-mochiron
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Món này trẻ em thì đương nhiên rồi, người lớn cũng thích.\""
+      tokens:
+        - { id: k3, text: 大人にも }
+        - { id: k1, text: この料理は }
+        - { id: k5, text: 子どもどころか、 }
+        - { id: k4, text: 人気があります }
+        - { id: k2, text: 子どもはもちろん、 }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+    explanation:
+      vi: 子どもはもちろん、大人にも - trẻ em thì đương nhiên, người lớn cũng. どころか sẽ thành "chẳng phải trẻ em" - sai ý.
+    display_answer: この料理は子どもはもちろん、大人にも人気があります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-fill-dokoroka
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-dokoroka
+    prompt:
+      template: "日本に来たばかりで、漢字{{b1}}、ひらがなもまだ読めません。(đừng nói đến - dùng どころか)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [どころか]
+    known_wrong:
+      - answer: ばかりか
+        feedback_vi: ばかりか cộng thêm điều ở mức cao hơn. "Đừng nói kanji, hiragana cũng không đọc được" - mức thấp hơn cũng không, dùng どころか.
+        error_tag: dokoroka_bakarika
+      - answer: はもちろん
+        feedback_vi: 漢字はもちろん cũng đúng ngữ pháp nhưng đề yêu cầu dùng どころか (đừng nói đến).
+        error_tag: dokoroka_mochiron
+      - answer: ところか
+        feedback_vi: ど có dấu - どころか.
+        error_tag: dakuten
+    explanation:
+      vi: A どころか B も～ない - đừng nói A, ngay cả B (dễ hơn) cũng không.
+    display_answer: 日本に来たばかりで、漢字どころか、ひらがなもまだ読めません。
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-translate-bakarika
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-bakarika
+    prompt:
+      source_text: Cô ấy không những nói được tiếng Anh mà còn cả tiếng Trung. (dùng ばかりか)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼女は英語ばかりか、中国語まで話せます。
+        - 彼女は英語ばかりか、中国語も話せます。
+        - 彼女は英語ばかりか、中国語まで話せる。
+        - 彼女は英語ばかりか、中国語も話せる。
+        - 彼女は英語ばかりか、中国語さえ話せます。
+        - 彼女は英語を話せるばかりか、中国語も話せます。
+        - 彼女は英語が話せるばかりか、中国語も話せます。
+        - 彼女は英語が話せるばかりか、中国語まで話せます。
+        - 彼女は英語ばかりか、中国語まで話すことができます。
+        - 彼女は英語ばかりか、中国語もできます。
+        - 彼女は英語ばかりか中国語まで話せます。
+        - かのじょはえいごばかりか、ちゅうごくごまではなせます。
+    known_wrong:
+      - answer: 彼女は英語どころか、中国語まで話せます。
+        feedback_vi: どころか phủ nhận vế trước (chẳng phải tiếng Anh). Cô ấy nói được cả hai - ばかりか.
+        error_tag: dokoroka_bakarika
+      - answer: 彼女は英語ばかり、中国語まで話せます。
+        feedback_vi: Thiếu か - ばかりか. ばかり một mình là "toàn, chỉ".
+        error_tag: bakarika_form
+    explanation:
+      vi: 英語ばかりか、中国語まで - không những tiếng Anh mà cả tiếng Trung; まで / も nhấn mạnh phần cộng thêm.
+    display_answer: 彼女は英語ばかりか、中国語まで話せます。
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-translate-shinrai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-shinrai
+    prompt:
+      source_text: Lấy lại lòng tin đã mất một lần là điều khó. (dùng 信頼)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 一度失った信頼を取り戻すのは難しいです。
+        - 一度失った信頼を取り戻すのは難しい。
+        - 一度失った信頼を取り戻すことは難しいです。
+        - 一度失った信頼を取り戻すことは難しい。
+        - 一度失った信頼を回復するのは難しいです。
+        - 一度失った信頼を回復するのは難しい。
+        - 一度なくした信頼を取り戻すのは難しいです。
+        - 一回失った信頼を取り戻すのは難しいです。
+        - 一度失った信頼を取り返すのは難しいです。
+        - いちどうしなったしんらいをとりもどすのはむずかしいです。
+    known_wrong:
+      - answer: 一度失った信頼を取り戻すのは簡単です。
+        feedback_vi: 簡単 là dễ - ngược nghĩa với "khó" (難しい).
+        error_tag: vocab_meaning
+      - answer: 一度失う信頼を取り戻すのは難しいです。
+        feedback_vi: Lòng tin "đã mất" - dùng thể た (失った信頼).
+        error_tag: tense
+    explanation:
+      vi: 失った信頼 - lòng tin đã mất; 取り戻す - lấy lại; ～のは難しい - việc ～ thì khó.
+    display_answer: 一度失った信頼を取り戻すのは難しいです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-mcq-holiday
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-dokoroka
+    prompt:
+      stem: 'Đồng nghiệp hỏi: 「休み、ゆっくりできた？」 Thực ra cả kỳ nghỉ bạn phải làm việc ở nhà. Câu trả lời nào tự nhiên nhất?'
+      stem_lang: vi
+      options:
+        - { id: m5q, text: ゆっくりするどころか、毎日家で仕事をしていたよ。, lang: ja }
+        - { id: w3z, text: ゆっくりしたばかりか、毎日家で仕事をしていたよ。, lang: ja }
+        - { id: h9j, text: ゆっくりはもちろん、毎日家で仕事をしていたよ。, lang: ja }
+        - { id: r2e, text: ゆっくりに限らず、毎日家で仕事をしていたよ。, lang: ja }
+    answer:
+      correct_option_id: m5q
+    explanation:
+      vi: Phủ nhận "được nghỉ ngơi" và nói điều ngược lại - どころか. ばかりか / はもちろん / に限らず đều giữ nguyên vế trước là đúng - mâu thuẫn.
+    display_answer: ゆっくりするどころか、毎日家で仕事をしていたよ。
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u2-gram-bakarika
+    prompt:
+      source_text: 台風で電車が止まったばかりか、停電まで起きた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì bão mà tàu điện không những ngừng chạy mà còn bị mất điện nữa.
+        - Do bão, không những tàu điện ngừng chạy mà còn xảy ra mất điện.
+        - Do bão, không những tàu ngừng chạy mà còn bị mất điện.
+        - Vì bão, không những tàu điện dừng chạy mà còn mất điện nữa.
+        - Vì bão, không chỉ tàu điện ngừng chạy mà còn xảy ra cả mất điện.
+        - Vì bão, không chỉ tàu điện bị dừng mà còn mất điện nữa.
+        - Bão làm tàu điện ngừng chạy, không những thế còn gây mất điện.
+        - Do bão, tàu điện không những ngừng chạy mà còn xảy ra cả mất điện.
+        - Vì cơn bão, không những tàu điện ngừng chạy mà còn bị mất điện.
+        - Do bão, không chỉ tàu điện ngừng mà còn mất điện.
+        - Vì bão, không những tàu điện ngừng chạy mà còn xảy ra mất điện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì bão mà tàu điện không ngừng chạy nhưng bị mất điện.
+        feedback_vi: 止まった - (tàu) đã dừng; ばかりか là "không những... mà còn", cả hai việc đều xảy ra.
+        error_tag: bakarika_meaning
+    explanation:
+      vi: 電車が止まったばかりか - không những tàu dừng; 停電まで起きた - mà còn xảy ra cả mất điện.
+    display_answer: Vì bão mà tàu điện không những ngừng chạy mà còn bị mất điện nữa.
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-wb-akka
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-akka
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tình hình chẳng những không được cải thiện mà còn xấu đi.\""
+      tokens:
+        - { id: v3, text: 悪化した }
+        - { id: v5, text: 悪化させた }
+        - { id: v1, text: 状況は }
+        - { id: v2, text: 改善するどころか、 }
+        - { id: v4, text: 改善するばかりか、 }
+    answer:
+      orders:
+        - [v1, v2, v3]
+    explanation:
+      vi: 改善するどころか、悪化した - chẳng những không cải thiện mà còn xấu đi. 状況は là chủ ngữ nên dùng tự động từ 悪化した; ばかりか sẽ thành "đã cải thiện lại còn xấu đi" - vô lý.
+    display_answer: 状況は改善するどころか、悪化した。
+
+  - key: ja:exercise:n2-u2-bakarika-dokoroka-mcq-mochiron
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-wa-mochiron
+    prompt:
+      stem: 'Bạn giới thiệu khách sạn: "Ngày lễ thì đương nhiên rồi, ngày thường cũng kín phòng." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: b6s, text: 祝日はもちろん、平日も満室です。, lang: ja }
+        - { id: n2o, text: 祝日どころか、平日も満室です。, lang: ja }
+        - { id: d7l, text: 祝日はもちろん、平日は満室ではありません。, lang: ja }
+        - { id: i4u, text: 祝日に限って、平日も満室です。, lang: ja }
+    answer:
+      correct_option_id: b6s
+    explanation:
+      vi: A はもちろん、B も - A thì đương nhiên, B cũng. どころか phủ nhận "ngày lễ kín phòng" - sai ý; câu thứ ba ngược nghĩa; に限って không hợp với も.
+    display_answer: 祝日はもちろん、平日も満室です。

@@ -8,7 +8,7 @@ import { EXAM_FAMILIES, examScoringSchema } from './exam/contract';
 import { createPathSchema } from './learning/schemas';
 import { PERSONAL_LANGUAGES } from './personal-vocab/contract';
 
-// Japanese is the third learnable language, offered since content/ja (kana–N3 programs, diagnostic bank, JLPT mocks) shipped.
+// Japanese is the third learnable language, offered since content/ja (kana–N1 programs, diagnostic bank, JLPT N5–N1 mocks) shipped.
 describe('Japanese (ja) plumbing', () => {
   it('is a known language that learners can pick', () => {
     expect(LANGUAGE_CODES).toEqual(['en', 'ko', 'ja']);
@@ -51,13 +51,13 @@ describe('Japanese (ja) plumbing', () => {
     expect(createPathSchema.safeParse({ ...base, goalType: 'jlpt', targetLevel: 'kana' }).success).toBe(false);
   });
 
-  it('rejects N2/N1 as a target or current level while they have no program', () => {
+  it('accepts N2/N1 as a target or current level now that they have programs', () => {
     const base = { language: 'ja', startPoint: 'some', weeklyMinutes: [30, 30, 30, 30, 30, 0, 0], targetDate: null } as const;
-    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n2' }).success).toBe(false);
-    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n1' }).success).toBe(false);
-    const current = createPathSchema.safeParse({ ...base, currentLevel: 'n2', goalType: 'jlpt', targetLevel: 'n1' });
-    expect(current.success).toBe(false);
-    expect(current.error?.issues[0]?.path).toEqual(['currentLevel']);
+    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n2' }).success).toBe(true);
+    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n1' }).success).toBe(true);
+    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n2', goalType: 'jlpt', targetLevel: 'n1' }).success).toBe(true);
+    // N1 is the top of the scale: nothing left to aim for.
+    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n1', goalType: 'jlpt', targetLevel: 'n1' }).success).toBe(false);
   });
 
   it('validates a ja diagnostic file', () => {

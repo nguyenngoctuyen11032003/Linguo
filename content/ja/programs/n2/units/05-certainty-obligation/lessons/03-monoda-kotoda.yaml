@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u5-monoda-kotoda
+order_index: 3
+level: n2
+title:
+  vi: Lẽ thường, lời khuyên và cảm nhận - ～ものだ, ～ことだ, ～ものがある
+objectives:
+  - vi: Dùng ～ものだ để nói bản chất, lẽ thường và hồi tưởng thói quen xưa (～たものだ).
+  - vi: Khuyên cụ thể một người bằng ～ことだ và biết khi nào không nên dùng.
+  - vi: Bày tỏ cảm nhận về tác phẩm, con người bằng ～ものがある.
+estimated_minutes: 22
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u5-zaru-wo-enai]
+items:
+  - item: ja:item:n2-u5-gram-monoda
+  - item: ja:item:n2-u5-gram-kotoda
+  - item: ja:item:n2-u5-gram-mono-ga-aru
+  - item: ja:item:n2-u5-kandou
+  - item: ja:item:n2-u5-hakuryoku
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "hồi nhỏ tôi hay bơi ở sông", khuyên đàn em "muốn đỗ thì luyện mỗi ngày", và khen một bộ phim "có cái gì đó làm người ta xúc động".
+  - type: explain
+    text:
+      vi: '～ものだ có ba cách dùng chính. (1) Bản chất, lẽ thường: 人は変わるものだ, 時間がたつのは早いものだ. (2) Lời khuyên theo lẽ thường, cho mọi người: 目上の人には敬語を使うものだ. (3) V-たものだ - hồi tưởng việc ngày xưa hay làm: 学生の頃は、よく徹夜したものだ.'
+  - type: explain
+    text:
+      vi: '～ことだ - lời khuyên cụ thể cho người nghe: V từ điển hoặc V-ない + ことだ. 上手になりたければ、毎日練習することだ; 疲れているなら、無理をしないことだ. Thường có điều kiện ở vế trước (～たければ, ～なら).'
+  - type: explain
+    text:
+      vi: '～ものがある - "có cái gì đó...", cảm nhận một nét đặc biệt: 彼の演技には人を引きつけるものがある. Hay đi với 感動させる, 心を打つ, 迫力, 驚く, 寂しい.'
+  - type: deep_explain
+    text:
+      vi: ものだ nói về "người ta nói chung"; ことだ nói với "bạn, trong trường hợp này". ことだ mang giọng người trên - người có kinh nghiệm khuyên người dưới, nên không dùng với cấp trên, thầy cô; với họ dùng ～たほうがいいと思います hoặc ～てはいかがでしょうか. Hồi tưởng ～たものだ chỉ dùng cho việc lặp lại nhiều lần, không dùng cho một sự kiện duy nhất.
+  - type: example
+    target: 子供の頃は、毎日暗くなるまで外で遊んだものだ。
+    target_lang: ja
+    translation:
+      vi: Hồi nhỏ ngày nào tôi cũng chơi ngoài trời đến tối mịt.
+    note:
+      vi: Thói quen lặp lại trong quá khứ - V-たものだ.
+  - type: example
+    target: 人の気持ちは、なかなか変わらないものだ。
+    target_lang: ja
+    translation:
+      vi: Lòng người vốn không dễ thay đổi.
+  - type: example
+    target: 日本語が上手になりたければ、日本人と話す機会をたくさん作ることだ。
+    target_lang: ja
+    translation:
+      vi: Muốn giỏi tiếng Nhật thì tốt nhất là tạo thật nhiều cơ hội nói chuyện với người Nhật.
+  - type: example
+    target: この映画には、見る人を感動させるものがある。迫力も満点だ。
+    target_lang: ja
+    translation:
+      vi: Bộ phim này có điều gì đó làm người xem xúc động. Độ hoành tráng cũng tuyệt vời.
+  - type: common_mistake
+    wrong: 部長、少し休むことですよ。
+    right: 部長、少しお休みになったほうがいいと思います。
+    target_lang: ja
+    note:
+      vi: ことだ là giọng người trên khuyên người dưới, nói với cấp trên là thất lễ. Tiếng Việt "anh nên nghỉ chút" không phân biệt vai vế nên người Việt dễ dùng sai.
+  - type: common_mistake
+    wrong: 子供の頃、よく川で泳ぐものだ。
+    right: 子供の頃、よく川で泳いだものだ。
+    target_lang: ja
+    note:
+      vi: Hồi tưởng phải dùng thể た + ものだ. 泳ぐものだ lại thành "người ta vốn phải bơi" - lẽ thường.
+  - type: summary
+    points:
+      - vi: ～ものだ - bản chất, lẽ thường, lời khuyên chung; V-たものだ - hồi tưởng thói quen xưa.
+      - vi: V-る/ない + ことだ - lời khuyên cụ thể; không dùng với người trên.
+      - vi: ～ものがある - có nét đặc biệt (cảm nhận của người nói).
+      - vi: 感動する - cảm động (～に感動する); 迫力 - sức hút, độ hoành tráng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u5-monoda-mcq-recall
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-monoda
+    prompt:
+      stem: 「学生の頃は、よく徹夜したものだ。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a1c, text: Hồi còn sinh viên tôi hay thức trắng đêm., lang: vi }
+        - { id: b4d, text: Sinh viên thì phải thức trắng đêm., lang: vi }
+        - { id: c7e, text: Hồi sinh viên tôi đã thức trắng một đêm., lang: vi }
+        - { id: d2f, text: Sinh viên không nên thức trắng đêm., lang: vi }
+    answer:
+      correct_option_id: a1c
+    explanation:
+      vi: V-たものだ đi với よく - hồi tưởng thói quen lặp lại ngày xưa. Không phải lời khuyên, cũng không phải một lần duy nhất.
+    display_answer: Hồi còn sinh viên tôi hay thức trắng đêm.
+
+  - key: ja:exercise:n2-u5-monoda-listen-kotoda
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-kotoda
+    prompt:
+      audio_asset_id: null
+      fallback_text: 疲れているなら、無理をしないことだ。
+      options:
+        - { id: e5g, text: "Nếu mệt thì tốt nhất là đừng cố quá.", lang: vi }
+        - { id: f8h, text: "Dù mệt cũng phải cố gắng.", lang: vi }
+        - { id: g3i, text: "Nếu mệt thì không thể không cố.", lang: vi }
+        - { id: h6j, text: "Tôi mệt vì đã cố quá sức.", lang: vi }
+    answer:
+      correct_option_id: e5g
+    explanation:
+      vi: V-ない + ことだ - lời khuyên "tốt nhất là đừng...". 無理をする - cố quá sức.
+    display_answer: "Nếu mệt thì tốt nhất là đừng cố quá."
+
+  - key: ja:exercise:n2-u5-monoda-mcq-monogaaru
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-mono-ga-aru
+    prompt:
+      stem: 「彼の歌には、人の心を打つものがある。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: i2k, text: Bài hát của anh ấy có điều gì đó chạm đến lòng người., lang: vi }
+        - { id: j7l, text: Anh ấy có một món đồ để đánh vào tim người khác., lang: vi }
+        - { id: k4m, text: Người ta nên hát bài của anh ấy bằng cả trái tim., lang: vi }
+        - { id: l9n, text: Bài hát của anh ấy từng làm người ta đau lòng., lang: vi }
+    answer:
+      correct_option_id: i2k
+    explanation:
+      vi: ものがある ở đây không phải "có một đồ vật" mà là cảm nhận - "có cái gì đó". 心を打つ - chạm đến trái tim, gây xúc động.
+    display_answer: Bài hát của anh ấy có điều gì đó chạm đến lòng người.
+
+  - key: ja:exercise:n2-u5-monoda-fill-oyoida
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-monoda
+    prompt:
+      template: "子供の頃、夏はよくこの川で{{b1}}ものだ。(泳ぐ)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Hồi nhỏ, mùa hè tôi hay bơi ở con sông này."
+        - "Gợi ý: hồi tưởng dùng thể た trước ものだ."
+    answer:
+      blanks:
+        b1: [泳いだ, およいだ]
+    known_wrong:
+      - answer: 泳ぐ
+        feedback_vi: 泳ぐものだ là lẽ thường "người ta vốn bơi"; hồi tưởng phải dùng thể た - 泳いだものだ.
+        error_tag: monoda_ta
+      - answer: 泳いでいる
+        feedback_vi: Hồi tưởng dùng thể た đơn giản - 泳いだものだ.
+        error_tag: monoda_ta
+    explanation:
+      vi: 泳ぐ → 泳いだ (ぐ → いだ). よく + V-たものだ - hồi tưởng thói quen.
+    display_answer: 子供の頃、夏はよくこの川で泳いだものだ。
+
+  - key: ja:exercise:n2-u5-monoda-wb-kandou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-kandou
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bộ phim này có điều gì đó làm người xem xúc động.\""
+      tokens:
+        - { id: m3, text: 感動させる }
+        - { id: m1, text: この映画には }
+        - { id: m5, text: 感動する }
+        - { id: m4, text: ものがある }
+        - { id: m2, text: 見る人を }
+    answer:
+      orders:
+        - [m1, m2, m3, m4]
+    explanation:
+      vi: 見る人を感動させる - làm người xem cảm động (thể sai khiến, có tân ngữ を). 見る人を感動する sai vì 感動する không nhận を.
+    display_answer: この映画には、見る人を感動させるものがある。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u5-monoda-fill-kotoda
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-kotoda
+    prompt:
+      template: "日本語が上手になりたければ、毎日少しずつでも{{b1}}ことだ。(練習する)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [練習する, れんしゅうする]
+    known_wrong:
+      - answer: 練習した
+        feedback_vi: Lời khuyên ことだ đi với thể từ điển - 練習することだ.
+        error_tag: kotoda_form
+      - answer: 練習
+        feedback_vi: Danh từ không gắn thẳng ことだ trong lời khuyên; dùng động từ 練習する.
+        error_tag: kotoda_form
+    explanation:
+      vi: V từ điển + ことだ - "tốt nhất là...". Vế trước ～たければ nêu mục tiêu của người nghe.
+    display_answer: 日本語が上手になりたければ、毎日少しずつでも練習することだ。
+
+  - key: ja:exercise:n2-u5-monoda-translate-hayai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-monoda
+    prompt:
+      source_text: Thời gian trôi nhanh thật đấy nhỉ. (lịch sự, cảm thán)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 時間がたつのは早いものですね。
+        - 時間が経つのは早いものですね。
+        - 時間がたつのは速いものですね。
+        - 時がたつのは早いものですね。
+        - 時が経つのは早いものですね。
+        - 時間のたつのは早いものですね。
+        - 時間の経つのは早いものですね。
+        - 時間がたつのは本当に早いものですね。
+        - 時間が経つのは本当に早いものですね。
+        - じかんがたつのははやいものですね。
+        - 時間がたつのは早いものだね。
+        - 時間が経つのは早いものだね。
+    known_wrong:
+      - answer: 時間がたつのは早いことですね。
+        feedback_vi: Cảm thán về bản chất sự việc dùng ものだ, không dùng ことだ (ことだ là lời khuyên).
+        error_tag: mono_koto
+    explanation:
+      vi: ～ものだ cũng diễn tả cảm thán trước một sự thật hiển nhiên. 時間がたつ - thời gian trôi.
+    display_answer: 時間がたつのは早いものですね。
+
+  - key: ja:exercise:n2-u5-monoda-translate-hakuryoku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-hakuryoku
+    prompt:
+      source_text: Xem ở rạp với màn hình lớn thì độ hoành tráng khác hẳn. (văn thường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 映画館の大きな画面で見ると、迫力が違う。
+        - 映画館の大きい画面で見ると、迫力が違う。
+        - 映画館の大きなスクリーンで見ると、迫力が違う。
+        - 映画館の大きいスクリーンで見ると、迫力が違う。
+        - 映画館の大画面で見ると、迫力が違う。
+        - 映画館の大きな画面で見たら、迫力が違う。
+        - 映画館の大きな画面で見れば、迫力が違う。
+        - 映画館の大きな画面で見ると、迫力が全然違う。
+        - 映画館の大きな画面で見ると、迫力がまったく違う。
+        - 映画館の大きな画面で見ると、迫力が違います。
+        - 大きな画面の映画館で見ると、迫力が違う。
+        - えいがかんのおおきながめんでみると、はくりょくがちがう。
+    known_wrong:
+      - answer: 映画館の大きな画面で見ると、体力が違う。
+        feedback_vi: 体力 là thể lực của cơ thể. Độ hoành tráng, sức hút của hình ảnh là 迫力.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 迫力が違う - độ hoành tráng khác hẳn. 見ると - hễ xem (thì).
+    display_answer: 映画館の大きな画面で見ると、迫力が違う。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u5-monoda-mcq-senpai
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-kotoda
+    prompt:
+      stem: 'Đàn em than "Em hay quên từ vựng quá." Bạn (đàn anh) khuyên: "Muốn nhớ thì tốt nhất là dùng từ đó trong câu." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: n1p, text: 覚えたければ、その言葉を文の中で使ってみることだ。, lang: ja }
+        - { id: o5q, text: 覚えたければ、その言葉を文の中で使ってみたものだ。, lang: ja }
+        - { id: p8r, text: 覚えたければ、その言葉を文の中で使ってみるものがある。, lang: ja }
+        - { id: q2s, text: 覚えたければ、その言葉を文の中で使ってみざるを得ない。, lang: ja }
+    answer:
+      correct_option_id: n1p
+    explanation:
+      vi: Lời khuyên cụ thể cho người dưới - ことだ. たものだ là hồi tưởng; ものがある là cảm nhận; ざるを得ない là "đành phải" - đều không phải lời khuyên.
+    display_answer: 覚えたければ、その言葉を文の中で使ってみることだ。
+
+  - key: ja:exercise:n2-u5-monoda-mcq-boss
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-kotoda
+    prompt:
+      stem: Trưởng phòng trông rất mệt. Bạn muốn khuyên ông nghỉ ngơi. Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: r6t, text: 部長、少しお休みになったほうがいいと思います。, lang: ja }
+        - { id: s3u, text: 部長、少し休むことです。, lang: ja }
+        - { id: t9v, text: 部長、少し休むものです。, lang: ja }
+        - { id: u4w, text: 部長、少し休まずにはいられません。, lang: ja }
+    answer:
+      correct_option_id: r6t
+    explanation:
+      vi: ことだ / ものだ khi khuyên đều mang giọng người trên, thất lễ với cấp trên. Dùng kính ngữ お休みになる + ほうがいいと思います.
+    display_answer: 部長、少しお休みになったほうがいいと思います。
+
+  - key: ja:exercise:n2-u5-monoda-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u5-gram-mono-ga-aru
+    prompt:
+      source_text: 一人で外国で暮らすのは、やはり寂しいものがある。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sống một mình ở nước ngoài quả thật có gì đó cô đơn.
+        - Sống một mình ở nước ngoài quả là có phần cô đơn.
+        - Sống một mình ở nước ngoài đúng là có chút cô đơn.
+        - Sống một mình ở nước ngoài quả thật có phần cô đơn.
+        - Sống một mình ở nước ngoài đúng là có cái gì đó cô đơn.
+        - Sống một mình ở nước ngoài quả nhiên có gì đó buồn.
+        - Sống một mình ở nước ngoài đúng là cũng có phần cô đơn.
+        - Sống một mình ở nước ngoài quả thật cũng có chút cô đơn.
+        - Một mình sống ở nước ngoài đúng là có chút cô đơn.
+        - Sống một mình ở nước ngoài đúng là có phần cô đơn.
+        - Sống một mình ở nước ngoài quả thật có chút buồn.
+        - Sống một mình ở nước ngoài đúng là có chút buồn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sống một mình ở nước ngoài thì phải cô đơn.
+        feedback_vi: ものがある là cảm nhận "có gì đó..., có phần...", không phải "phải".
+        error_tag: monogaaru_meaning
+    explanation:
+      vi: やはり - quả thật, đúng như nghĩ; 寂しいものがある - có phần cô đơn, có gì đó buồn.
+    display_answer: Sống một mình ở nước ngoài quả thật có gì đó cô đơn.
+
+  - key: ja:exercise:n2-u5-monoda-wb-kawaru
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-monoda
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lòng người vốn không dễ thay đổi.\""
+      tokens:
+        - { id: p3, text: 変わらない }
+        - { id: p5, text: ことだ }
+        - { id: p1, text: 人の気持ちは }
+        - { id: p4, text: ものだ }
+        - { id: p2, text: なかなか }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: Bản chất, lẽ thường - ものだ. なかなか + phủ định - mãi không, không dễ. ことだ là lời khuyên nên không hợp.
+    display_answer: 人の気持ちは、なかなか変わらないものだ。

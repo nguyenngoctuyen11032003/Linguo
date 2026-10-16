@@ -1,0 +1,539 @@
+# Bài luyện mô phỏng JLPT N2 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
+# không chép đề thật hay sách luyện thi có bản quyền. Nghe: lời thoại trong `script`, ứng dụng đọc bằng giọng máy
+# khi chưa có audio (audio_asset_id: null).
+#
+# Giả định về cấu trúc và thang điểm (ghi lại để người duyệt kiểm tra):
+# - JLPT N2 thật có 3 phần tính điểm, mỗi phần 0–60: "Kiến thức ngôn ngữ (từ vựng, ngữ pháp)", "Đọc hiểu" và "Nghe",
+#   tổng 180; đỗ khi tổng ≥ 90 và mỗi phần đạt điểm liệt 19. Schema đề chỉ có listening/reading/writing, nên phần
+#   kiến thức ngôn ngữ và phần đọc hiểu được gộp vào `reading` (section_max 60 + 60 = 120), phần nghe ở `listening` (60).
+#   Hệ quả: kết quả không tách được điểm từ vựng – ngữ pháp với điểm đọc hiểu như phiếu điểm thật.
+# - Ứng dụng chỉ xếp bậc theo tổng điểm quy đổi; điểm liệt từng phần KHÔNG được kiểm tra (ghi trong source_note_vi).
+# - Điểm mỗi câu (`points`) là trọng số do Linguo đặt: JLPT dùng thang điểm quy đổi (equating) và không công bố điểm
+#   từng câu. Câu đọc đoạn văn nặng hơn câu từ vựng vì mất nhiều thời gian hơn.
+# - Thứ tự phần trong app là nghe → đọc (quy ước chung của mọi đề), còn đề thật thi từ vựng, ngữ pháp – đọc trước,
+#   nghe sau.
+# - Thời gian rút gọn theo số câu: đề thật N2 có 105 phút cho kiến thức ngôn ngữ · đọc hiểu (một buổi liền) và 50 phút
+#   nghe.
+# - Câu chữ theo lối đề N2: không chia khoảng trắng giữa các cụm từ, Kanji đến cấp N2.
+# - Câu bị hỏi trong đoạn được đánh dấu bằng 【 】 thay cho gạch chân của đề giấy; chỗ trống là （　）, vị trí hỏi
+#   trong câu sắp xếp là ★.
+# - Phần nghe N2 thật không có dạng "nói gì trong tình huống" (発話表現) mà có thêm "hiểu tổng hợp" (統合理解, nghe
+#   dài, nhiều người nói). Bản rút gọn này bỏ dạng 統合理解 và dùng lại các dạng câu đã có (task, point, gist,
+#   response); câu "đáp lại ngay" có 3 phương án như đề thật, các câu khác có 4.
+schema_version: 1
+demo: false
+language: ja
+form:
+  key: ja:exam:jlpt-n2-mock-1
+  family: jlpt
+  title_vi: JLPT N2 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng rút gọn theo cấu trúc JLPT N2: 8 câu nghe và 14 câu chữ Hán – từ vựng – ngữ pháp – đọc hiểu.
+    Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo.
+  level_from: n2
+  level_to: n2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 15
+    reading: 35
+  scoring:
+    verified: true
+    source_note_vi: >-
+      Đã đối chiếu ngày 16/10/2026 với jlpt.jp (mục kết quả thi và cấu trúc đề): N2 gồm Kiến thức ngôn ngữ, Đọc hiểu,
+      Nghe, mỗi phần 0–60, tổng 180, đỗ từ 90 điểm và mỗi phần đạt 19. Ở đây Kiến thức ngôn ngữ và Đọc hiểu gộp thành
+      phần Đọc (120); ứng dụng không xét điểm liệt.
+    section_max:
+      listening: 60
+      reading: 120
+    bands:
+      - { level_code: n2, min_total: 90 }
+    pass_ratio: null
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+questions:
+  # ============================== NGHE (聴解) ==============================
+  # --- Hiểu yêu cầu (課題理解) ---
+  - key: ja:examq:jlpt-n2-m1-l01
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n2
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại ở công ty và chọn việc người phụ nữ phải làm TRƯỚC TIÊN.
+      stem: 女の人はこのあとまず何をしなければなりませんか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：来週の取引先との打ち合わせの件だけど、資料はもうできた？
+        女の人：はい、一応できています。課長に確認していただいてから、先方にお送りしようと思っているんですが。
+        男の人：課長は今日から出張で、木曜まで戻らないんだよ。確認は僕がやっておくから。それより、先方から、参加者が増えたので会議室を変えてほしいって連絡があってね。資料に場所を書かなきゃいけないから、送る前に大きい会議室が空いているかどうか、確かめてくれないかな。
+        女の人：わかりました。すぐ調べます。
+      options:
+        - { id: a, text: "大きい会議室が空いているか確認する", lang: ja }
+        - { id: b, text: "課長に資料を確認してもらう", lang: ja }
+        - { id: c, text: "取引先に資料を送る", lang: ja }
+        - { id: d, text: "参加者の人数を取引先に聞く", lang: ja }
+    answer: a
+    explanation:
+      vi: "Trưởng phòng (課長) đi công tác nên việc kiểm tra tài liệu anh đồng nghiệp “僕がやっておく” (để tôi làm). Tài liệu phải ghi địa điểm nên “送る前に” (trước khi gửi) cô ấy cần xem phòng họp lớn còn trống không. Gửi tài liệu (c) là việc làm SAU; số người tham dự thì đối tác đã báo rồi."
+
+  - key: ja:examq:jlpt-n2-m1-l02
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n2
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại ở văn phòng trường đại học và chọn việc nam sinh viên sẽ làm TRƯỚC TIÊN.
+      stem: 男の学生は奨学金を申し込むために、まず何をしますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の学生：すみません、奨学金の申し込みをしたいんですが。
+        女の人：はい。申請書と成績証明書、それから推薦状が必要です。申請書はホームページからダウンロードできますよ。
+        男の学生：成績証明書は、もう取ってあります。
+        女の人：そうですか。推薦状はゼミの先生に書いていただくものですが、先生によっては一週間以上かかることもありますから、締め切りに間に合うように、そちらを何よりも先にお願いしてください。申請書は、推薦状を待っている間に書けば十分ですから。
+        男の学生：わかりました。そうします。
+      options:
+        - { id: a, text: "ゼミの先生に推薦状を頼む", lang: ja }
+        - { id: b, text: "申請書をダウンロードする", lang: ja }
+        - { id: c, text: "成績証明書を取りに行く", lang: ja }
+        - { id: d, text: "申請書を書いて提出する", lang: ja }
+    answer: a
+    explanation:
+      vi: "Thư giới thiệu (推薦状) có thể mất hơn một tuần nên nhân viên dặn “何よりも先に” (trước hết mọi việc) hãy nhờ thầy viết. Đơn (申請書) thì viết trong lúc chờ là được, còn bảng điểm (成績証明書) anh ấy đã lấy rồi (もう取ってあります)."
+
+  # --- Hiểu điểm chính (ポイント理解) ---
+  - key: ja:examq:jlpt-n2-m1-l03
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n2
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại và chọn lý do người đàn ông quyết định chuyển nhà.
+      stem: 男の人はどうして引っ越すことにしましたか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：引っ越すんだって？今のマンション、駅から近くて便利だって言ってたのに。
+        男の人：うん、便利なのは確かなんだけどね。家賃も特に高いわけじゃないし。
+        女の人：じゃあ、どうして？隣の人がうるさいとか？
+        男の人：いや、そういうわけじゃないんだ。実は来年から在宅勤務が中心になってね。今の部屋だと、仕事をするスペースがとても取れないんだよ。それで、駅から多少遠くなっても、部屋が一つ多いところにしようと思って。
+      options:
+        - { id: a, text: "家で仕事をする場所が必要になったから", lang: ja }
+        - { id: b, text: "家賃が高かったから", lang: ja }
+        - { id: c, text: "隣の人がうるさかったから", lang: ja }
+        - { id: d, text: "駅から遠くて不便だったから", lang: ja }
+    answer: a
+    explanation:
+      vi: "Từ năm sau anh ấy chủ yếu làm việc ở nhà (在宅勤務) mà phòng hiện tại không có chỗ làm việc, nên tìm nơi có thêm một phòng. Tiền nhà “高いわけじゃない” (không hẳn là đắt), hàng xóm thì “そういうわけじゃない”; còn d ngược lại: nhà hiện tại gần ga, nhà mới mới là xa hơn."
+
+  - key: ja:examq:jlpt-n2-m1-l04
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n2
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại và chọn vấn đề mà người phụ nữ (trưởng bộ phận) chỉ ra trong kế hoạch.
+      stem: 女の人は、企画のどこに問題があると言っていますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：部長、新商品のキャンペーンの企画書、ご覧いただけましたか。
+        女の人：ええ、読みましたよ。若い人向けにSNSを使うというアイデアはいいと思うし、デザインも悪くないわね。予算もちゃんと範囲内に収まっている。ただ、このスケジュールでは準備期間が短すぎるんじゃないかしら。発売まであと一か月しかないのに、撮影も、出演者との交渉もこれからでしょう。そこを見直してもらえる？
+        男の人：はい、すぐに組み直します。
+      options:
+        - { id: a, text: "準備にかけられる時間が足りないこと", lang: ja }
+        - { id: b, text: "若い人に合わないアイデアであること", lang: ja }
+        - { id: c, text: "デザインがよくないこと", lang: ja }
+        - { id: d, text: "予算を超えていること", lang: ja }
+    answer: a
+    explanation:
+      vi: "Sau loạt lời khen (ý tưởng tốt, thiết kế không tệ, ngân sách “範囲内に収まっている” — nằm trong giới hạn), ý chính đến sau “ただ” (có điều): thời gian chuẩn bị quá ngắn vì chỉ còn một tháng. Trong đề nghe N2, ý quan trọng thường đứng sau ただ / でも / それより."
+
+  # --- Hiểu khái quát (概要理解) ---
+  - key: ja:examq:jlpt-n2-m1-l05
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_gist
+    level_code: n2
+    points: 3
+    prompt:
+      instruction_vi: Nghe chuyên gia nói trên radio và chọn điều người đó muốn nói nhất.
+      stem: 専門家が最も言いたいことは何ですか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        専門家：平日の睡眠不足を、週末にまとめて寝て取り戻そうとする人は少なくありません。確かに、週末に長く寝ると、体は一時的に楽になります。しかし、平日と週末で起きる時間が大きくずれると体内時計が乱れ、月曜の朝にかえって起きにくくなることがわかっています。休日も平日と同じ時間に起き、足りない分は昼間に短い仮眠をとって補うほうが、体への負担はずっと小さいのです。
+      options:
+        - { id: a, text: "休日も起きる時間を変えないほうがいい", lang: ja }
+        - { id: b, text: "週末にまとめて寝れば疲れが取れる", lang: ja }
+        - { id: c, text: "昼寝は体内時計を乱すので避けるべきだ", lang: ja }
+        - { id: d, text: "月曜の朝は無理に早く起きなくてもいい", lang: ja }
+    answer: a
+    explanation:
+      vi: "Chuyên gia thừa nhận ngủ bù cuối tuần làm cơ thể dễ chịu “一時的に” (tạm thời), rồi dùng “しかし” để đưa ra ý chính: giờ thức dậy lệch nhiều làm rối đồng hồ sinh học, nên ngày nghỉ cũng nên dậy đúng giờ như ngày thường. b là ý bị phản bác; c sai vì chuyên gia lại khuyên ngủ trưa ngắn (仮眠)."
+
+  # --- Đáp lại ngay (即時応答) ---
+  - key: ja:examq:jlpt-n2-m1-l06
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: 正しい答えを選んでください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：田中さん、会議の資料、もう少し早く出してもらえるとありがたかったんだけど。
+      options:
+        - { id: a, text: "すみません。次からは気をつけます。", lang: ja }
+        - { id: b, text: "いえ、早く出していただいて助かりました。", lang: ja }
+        - { id: c, text: "はい、明日までに出してもらいます。", lang: ja }
+    answer: a
+    explanation:
+      vi: "“〜てもらえるとありがたかったんだけど” (giá mà nộp sớm hơn một chút thì tốt) là lời phàn nàn nhẹ về việc ĐÃ xảy ra: tài liệu nộp muộn. Đáp lại bằng lời xin lỗi “次からは気をつけます”. b hiểu ngược là được khen; c dùng 〜てもらう (nhờ người khác nộp) nên sai người làm."
+
+  - key: ja:examq:jlpt-n2-m1-l07
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: 正しい答えを選んでください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：せっかくお越しいただいたのに、あいにく山田は外出しておりまして……。
+      options:
+        - { id: a, text: "そうですか。では、また改めて伺います。", lang: ja }
+        - { id: b, text: "こちらこそ、お越しいただいてありがとうございます。", lang: ja }
+        - { id: c, text: "いえ、外出なさらなくてもけっこうです。", lang: ja }
+    answer: a
+    explanation:
+      vi: "Nhân viên công ty xin lỗi khách vì anh Yamada đã ra ngoài: “せっかく〜のに、あいにく” (cất công đến mà không may…). Khách đáp “また改めて伺います” (tôi sẽ quay lại sau). b là câu của chủ nhà nói với khách, đảo vai; c hiểu sai là người kia đang định ra ngoài."
+
+  - key: ja:examq:jlpt-n2-m1-l08
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: 正しい答えを選んでください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：この量の仕事を今日中に終わらせるなんて、無理に決まってるよ。
+      options:
+        - { id: a, text: "そうだね。課長に相談してみようか。", lang: ja }
+        - { id: b, text: "うん、決まったら教えてね。", lang: ja }
+        - { id: c, text: "じゃあ、もう終わったんだね。", lang: ja }
+    answer: a
+    explanation:
+      vi: "“〜に決まっている” nghĩa là “chắc chắn là…”: làm xong ngần ấy việc trong hôm nay chắc chắn là không thể. Đồng tình và đề xuất bàn với trưởng phòng là hợp lý. b là bẫy âm vì hiểu 決まる theo nghĩa “được quyết định”; c mâu thuẫn vì việc chưa xong."
+
+  # ============================== CHỮ – TỪ VỰNG – NGỮ PHÁP – ĐỌC (言語知識・読解) ==============================
+  # --- Đọc Kanji (漢字読み) ---
+  - key: ja:examq:jlpt-n2-m1-r01
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の言葉の読み方として最もよいものを選んでください。
+      stem_lang: ja
+      passage: 留学中の経験は、私にとって【貴重】な財産になった。
+      options:
+        - { id: a, text: "きちょう", lang: ja }
+        - { id: b, text: "きじゅう", lang: ja }
+        - { id: c, text: "きちょ", lang: ja }
+        - { id: d, text: "ぎちょう", lang: ja }
+    answer: a
+    explanation:
+      vi: "貴重 (quý giá, Hán Việt “quý trọng”) đọc là きちょう. Chữ 重 có hai âm ちょう (貴重, 慎重) và じゅう (体重, 重要), nên b là bẫy; c thiếu trường âm, d đục sai âm đầu."
+
+  - key: ja:examq:jlpt-n2-m1-r02
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の言葉の読み方として最もよいものを選んでください。
+      stem_lang: ja
+      passage: 会議では、具体的な数字を【示し】ながら説明した。
+      options:
+        - { id: a, text: "しめし", lang: ja }
+        - { id: b, text: "ためし", lang: ja }
+        - { id: c, text: "さし", lang: ja }
+        - { id: d, text: "あらわし", lang: ja }
+    answer: a
+    explanation:
+      vi: "示す (chỉ ra, đưa ra) đọc là しめす, nên 示し là しめし. ためし là 試し (thử), さし là 指し (chỉ tay), あらわし là 表し (biểu thị): nghĩa gần nhau nên dễ nhầm, nhưng là những chữ Kanji khác."
+
+  # --- Viết bằng Kanji (表記) ---
+  - key: ja:examq:jlpt-n2-m1-r03
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_writing
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách viết đúng của từ trong ngoặc 【 】.
+      stem: 【 】の言葉を漢字で書くとき、最もよいものを選んでください。
+      stem_lang: ja
+      passage: 来年から、新しい評価制度の【どうにゅう】が決まった。
+      options:
+        - { id: a, text: "導入", lang: ja }
+        - { id: b, text: "道入", lang: ja }
+        - { id: c, text: "動入", lang: ja }
+        - { id: d, text: "導人", lang: ja }
+    answer: a
+    explanation:
+      vi: "どうにゅう (đưa vào áp dụng) viết là 導入, Hán Việt “đạo nhập”. 道 và 動 cùng đọc どう nên dễ nhầm; d thay 入 (nhập) bằng 人 (nhân) trông rất giống — đề N2 hay bẫy kiểu chữ na ná nhau này."
+
+  # --- Từ hợp ngữ cảnh (文脈規定) và cấu tạo từ (語形成) ---
+  - key: ja:examq:jlpt-n2-m1-r04
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_vocab
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: （　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: 彼は何度失敗しても（　）に練習を続け、ついに全国大会で優勝した。
+      options:
+        - { id: a, text: "地道", lang: ja }
+        - { id: b, text: "器用", lang: ja }
+        - { id: c, text: "強引", lang: ja }
+        - { id: d, text: "気軽", lang: ja }
+    answer: a
+    explanation:
+      vi: "地道に (じみちに) là “bền bỉ, chăm chỉ từng bước”, rất hợp với việc thất bại bao nhiêu lần vẫn tiếp tục luyện tập. 器用 (khéo tay), 強引 (cưỡng ép, bất chấp) và 気軽 (thoải mái, tùy hứng) không diễn tả sự kiên trì."
+
+  - key: ja:examq:jlpt-n2-m1-r05
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_vocab
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn tiền tố phù hợp nhất để điền vào chỗ trống （　）.
+      stem: （　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: 状況をよく知らないのに、（　）責任な発言をするべきではない。
+      options:
+        - { id: a, text: "無", lang: ja }
+        - { id: b, text: "不", lang: ja }
+        - { id: c, text: "非", lang: ja }
+        - { id: d, text: "未", lang: ja }
+    answer: a
+    explanation:
+      vi: "Từ đúng là 無責任 (むせきにん, vô trách nhiệm). Bốn tiền tố phủ định đều có, nhưng mỗi tiền tố đi với từ riêng: 不 (不便, 不安), 非 (非常識, 非公開), 未 (未完成, 未成年). Không có “不責任”, “非責任” hay “未責任”."
+
+  # --- Câu đồng nghĩa (言い換え類義) ---
+  - key: ja:examq:jlpt-n2-m1-r06
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_paraphrase
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn câu có nghĩa gần nhất với câu trong ngoặc 【 】.
+      stem: 【 】の文に意味が最も近いものを選んでください。
+      stem_lang: ja
+      passage: 【田中さんの説明は、あいまいだった。】
+      options:
+        - { id: a, text: "田中さんの説明は、はっきりしなかった。", lang: ja }
+        - { id: b, text: "田中さんの説明は、長すぎた。", lang: ja }
+        - { id: c, text: "田中さんの説明は、間違っていた。", lang: ja }
+        - { id: d, text: "田中さんの説明は、とても丁寧だった。", lang: ja }
+    answer: a
+    explanation:
+      vi: "あいまい (曖昧) là “mơ hồ, không rõ ràng”, nên tương đương はっきりしなかった. Lời giải thích mơ hồ không có nghĩa là dài (b) hay sai (c); d gần như ngược nghĩa."
+
+  # --- Cách dùng từ (用法) ---
+  - key: ja:examq:jlpt-n2-m1-r07
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_usage
+    level_code: n2
+    points: 1
+    prompt:
+      instruction_vi: Chọn câu dùng từ trong ngoặc 【 】 đúng nhất.
+      stem: 【ふさわしい】の使い方として最もよいものを選んでください。
+      stem_lang: ja
+      options:
+        - { id: a, text: "大切な式典なので、その場にふさわしい服装で参加してください。", lang: ja }
+        - { id: b, text: "駅から近いので、この店はとてもふさわしい。", lang: ja }
+        - { id: c, text: "彼は毎朝ふさわしい時間に起きている。", lang: ja }
+        - { id: d, text: "この薬は風邪によくふさわしいそうだ。", lang: ja }
+    answer: a
+    explanation:
+      vi: "ふさわしい là “phù hợp, xứng với (một hoàn cảnh, một vai trò)”, thường dùng “〜にふさわしい”: trang phục hợp với buổi lễ. b muốn nói “tiện” thì dùng 便利; c muốn nói “giờ cố định” thì dùng 決まった; d muốn nói thuốc “có hiệu quả” thì dùng 効く."
+
+  # --- Ngữ pháp (文法形式の判断) ---
+  - key: ja:examq:jlpt-n2-m1-r08
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: 次の文の（　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: 社長の許可を得ない（　）、この計画を進めることはできない。
+      options:
+        - { id: a, text: "かぎり", lang: ja }
+        - { id: b, text: "ものの", lang: ja }
+        - { id: c, text: "ばかりか", lang: ja }
+        - { id: d, text: "どころか", lang: ja }
+    answer: a
+    explanation:
+      vi: "Vない + かぎり là “chừng nào chưa…”: chừng nào chưa có phép của giám đốc thì không thể tiến hành kế hoạch. ものの (tuy… nhưng) cần hai vế trái ngược; ばかりか (không những… mà còn) và どころか (đâu chỉ… mà ngược lại) không tạo quan hệ điều kiện."
+
+  - key: ja:examq:jlpt-n2-m1-r09
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: 次の文の（　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: 弟は、母に何度も注意された（　）、また同じ失敗をした。
+      options:
+        - { id: a, text: "にもかかわらず", lang: ja }
+        - { id: b, text: "おかげで", lang: ja }
+        - { id: c, text: "からこそ", lang: ja }
+        - { id: d, text: "ことから", lang: ja }
+    answer: a
+    explanation:
+      vi: "Bị nhắc nhiều lần mà vẫn mắc lại lỗi cũ: hai vế trái với kỳ vọng nên dùng にもかかわらず (mặc dù). おかげで (nhờ có) chỉ kết quả tốt; からこそ (chính vì) và ことから (từ việc… nên) đều nêu lý do, khiến câu thành vô lý."
+
+  - key: ja:examq:jlpt-n2-m1-r10
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: 次の文の（　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: この問題は複雑で、専門家（　）簡単には解決できないだろう。
+      options:
+        - { id: a, text: "でさえ", lang: ja }
+        - { id: b, text: "だけに", lang: ja }
+        - { id: c, text: "ばかりに", lang: ja }
+        - { id: d, text: "からといって", lang: ja }
+    answer: a
+    explanation:
+      vi: "N + でさえ là “ngay cả…”: vấn đề phức tạp đến mức ngay cả chuyên gia cũng khó giải quyết. だけに (chính vì là… nên càng) và ばかりに (chỉ vì… mà xảy ra chuyện xấu) đều nêu nguyên nhân; からといって phải đi sau câu (専門家だからといって) và thường kết thúc bằng phủ định một suy luận."
+
+  # --- Sắp xếp câu (文の組み立て) ---
+  - key: ja:examq:jlpt-n2-m1-r11
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_order
+    level_code: n2
+    points: 2
+    prompt:
+      instruction_vi: Sắp xếp bốn phương án thành câu đúng và chọn từ đứng ở vị trí ★.
+      stem: ★に入るものはどれですか。
+      stem_lang: ja
+      passage: 彼は ＿＿ ＿＿ ★ ＿＿ 、一日も練習を休まなかった。
+      options:
+        - { id: a, text: "熱が", lang: ja }
+        - { id: b, text: "あった", lang: ja }
+        - { id: c, text: "にも", lang: ja }
+        - { id: d, text: "かかわらず", lang: ja }
+    answer: c
+    explanation:
+      vi: "Câu đúng là “彼は熱があったにもかかわらず、一日も練習を休まなかった” (dù bị sốt, anh ấy không nghỉ tập ngày nào): 熱が → あった → にも → かかわらず. Vị trí ★ (thứ ba) là にも."
+
+  # --- Đọc hiểu (内容理解・主張理解) ---
+  - key: ja:examq:jlpt-n2-m1-r12
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n2
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và trả lời câu hỏi.
+      stem: 「失敗ノート」への書き込みが増えたのはなぜか。
+      stem_lang: ja
+      passage: |-
+        私の勤める会社では、数年前から「失敗ノート」というものを社員全員で共有している。仕事でうまくいかなかったことを誰でも自由に書き込めるノートで、名前は書いても書かなくてもよい。始めた当初は、自分の失敗を人に知られるのは恥ずかしいと、書き込む人はほとんどいなかった。ところが、ある部長が自分の大きな失敗とその原因を詳しく書いたことをきっかけに、少しずつ書き込みが増えていった。今では、新人が同じ間違いを繰り返さないための大切な資料になっている。失敗を隠さずに伝え合うことが、結果的に会社全体の失敗を減らしているのだと思う。
+      options:
+        - { id: a, text: "部長が自分の失敗を詳しく書いたから", lang: ja }
+        - { id: b, text: "名前を書かなくてもよいことになったから", lang: ja }
+        - { id: c, text: "新人が同じ間違いをしなくなったから", lang: ja }
+        - { id: d, text: "書き込まないと注意されるようになったから", lang: ja }
+    answer: a
+    explanation:
+      vi: "Câu “ある部長が…詳しく書いたことをきっかけに、少しずつ書き込みが増えていった” cho biết chính việc trưởng phòng viết về thất bại của mình là bước ngoặt (きっかけ). b là bẫy: không ghi tên đã được phép ngay từ đầu, nhưng lúc đầu vẫn hầu như không ai viết; c là KẾT QUẢ của cuốn sổ, không phải lý do."
+
+  - key: ja:examq:jlpt-n2-m1-r13
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n2
+    points: 4
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn ý phù hợp với quan điểm của tác giả.
+      stem: 筆者の考えに合うものはどれか。
+      stem_lang: ja
+      passage: |-
+        最近、本を速く読むための「速読」が人気だという。確かに、仕事で大量の資料に目を通さなければならないときには、速く読む力は役に立つだろう。しかし、小説や哲学の本まで同じように速く読もうとするのはどうだろうか。そうした本の価値は、書かれている情報だけにあるのではない。一つの文の前で立ち止まり、自分の経験と照らし合わせて考える時間の中にこそ、読書の本当の楽しさがあるのではないか。読む速さは、本の種類によって使い分けるべきだと私は考える。
+      options:
+        - { id: a, text: "本の種類に応じて、読む速さを変えるべきだ。", lang: ja }
+        - { id: b, text: "どんな本でも速く読めるようにするべきだ。", lang: ja }
+        - { id: c, text: "仕事の資料は、ゆっくり読んだほうがいい。", lang: ja }
+        - { id: d, text: "小説は、情報を得るために読むものだ。", lang: ja }
+    answer: a
+    explanation:
+      vi: "Quan điểm của tác giả nằm ở câu cuối: “読む速さは、本の種類によって使い分けるべきだ” (nên đổi tốc độ đọc tùy loại sách). Tác giả công nhận đọc nhanh có ích với tài liệu công việc nên c sai, phản đối đọc nhanh mọi loại sách nên b sai, và cho rằng giá trị của tiểu thuyết không chỉ ở thông tin nên d sai."
+
+  # --- Tìm thông tin (情報検索) ---
+  - key: ja:examq:jlpt-n2-m1-r14
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_info
+    level_code: n2
+    points: 4
+    prompt:
+      instruction_vi: Đọc thông báo và trả lời câu hỏi.
+      stem: リンさんは区外に住んでいるが、区内の会社に勤めている。土曜日の午後、30人で勉強会を開くために、自分が代表者として会議室を借りたい。料金はいくらか。
+      stem_lang: ja
+      passage: |-
+        みどり区民センター 会議室のご案内
+        ・会議室A（定員20名）：午前 1,500円／午後 2,000円
+        ・会議室B（定員40名）：午前 2,500円／午後 3,000円
+        ・土曜日・日曜日・祝日は、上記の料金の5割増しとなります。
+        ・代表者が区内に住んでいる方、または区内に勤めている方の場合は、料金が半額になります。
+        ・申し込みは、利用日の1か月前から、センターの窓口で受け付けます。
+      options:
+        - { id: a, text: "2,250円", lang: ja }
+        - { id: b, text: "4,500円", lang: ja }
+        - { id: c, text: "3,000円", lang: ja }
+        - { id: d, text: "1,500円", lang: ja }
+    answer: a
+    explanation:
+      vi: "30 người vượt sức chứa phòng A (20) nên phải thuê phòng B: buổi chiều 3,000 yên. Thứ Bảy tăng 50% (5割増し) thành 4,500 yên, và vì Linh làm việc trong quận (区内に勤めている) nên được giảm một nửa: 2,250 yên. b quên giảm nửa giá, c quên phụ thu cuối tuần, d tính nhầm theo phòng A buổi sáng."

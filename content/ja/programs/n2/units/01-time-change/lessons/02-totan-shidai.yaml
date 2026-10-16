@@ -1,0 +1,405 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u1-totan-shidai
+order_index: 2
+level: n2
+title:
+  vi: Vừa... thì, ngay khi... - ～たとたん và ～次第
+objectives:
+  - vi: Dùng V-たとたん để kể một việc bất ngờ xảy ra ngay sau một hành động.
+  - vi: Dùng V-ます(bỏ ます)+次第 để hứa làm gì đó ngay khi một việc xong, nhất là trong công việc.
+  - vi: Phân biệt hai mẫu - たとたん kể chuyện đã xảy ra, 次第 nói kế hoạch, lời hứa, lời nhờ.
+estimated_minutes: 20
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n2-u1-uchini-saichuu]
+items:
+  - item: ja:item:n2-u1-gram-totan
+  - item: ja:item:n2-u1-gram-shidai
+  - item: ja:item:n2-u1-touchaku
+  - item: ja:item:n2-u1-hanmei
+  - item: ja:item:n2-u1-orikaesu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được "vừa mở cửa thì con mèo lao ra" và nói được câu điện thoại công sở "ngay khi trưởng phòng về, chúng tôi sẽ gọi lại".
+  - type: explain
+    text:
+      vi: 'たとたん(に) - luôn gắn vào thể た: 開けた → 開けたとたん, 立ち上がった → 立ち上がったとたん. Nghĩa "vừa mới... thì ngay lập tức...", việc sau thường bất ngờ, người nói không điều khiển được.'
+  - type: explain
+    text:
+      vi: '次第 - gắn vào gốc ます (bỏ ます) hoặc danh từ する: 分かります → 分かり次第, 届きます → 届き次第, 到着 → 到着次第. Nghĩa "ngay khi... xong là (sẽ)...", vế sau là hành động có chủ ý: ご連絡します, お送りします, 出発してください.'
+  - type: deep_explain
+    text:
+      vi: Cả hai đều dịch là "ngay khi", nhưng ngược nhau về thời gian và ý chí. たとたん kể chuyện đã xảy ra, vế sau thường ở thể quá khứ và không phải điều người nói muốn làm. 次第 nói về tương lai, vế sau là lời hứa, kế hoạch, lời nhờ - không dùng để kể chuyện quá khứ hay hiện tượng tự nhiên. Khi phân vân trong hội thoại thường ngày, ～たらすぐ an toàn cho cả hai trường hợp.
+  - type: example
+    target: ドアを開けたとたん、猫が飛び出してきた。
+    target_lang: ja
+    translation:
+      vi: Vừa mở cửa thì con mèo lao vụt ra.
+  - type: example
+    target: 椅子から立ち上がったとたん、めまいがした。
+    target_lang: ja
+    translation:
+      vi: Vừa đứng dậy khỏi ghế thì tôi bị chóng mặt.
+  - type: example
+    target: 資料が届き次第、お送りします。
+    target_lang: ja
+    translation:
+      vi: Ngay khi tài liệu đến, tôi sẽ gửi cho anh/chị.
+    note:
+      vi: 届きます → 届き + 次第.
+  - type: example
+    target: 担当者が戻り次第、折り返しお電話いたします。
+    target_lang: ja
+    translation:
+      vi: Ngay khi người phụ trách quay về, chúng tôi sẽ gọi lại cho anh/chị.
+    note:
+      vi: Câu rất hay gặp khi nghe điện thoại ở công ty.
+  - type: common_mistake
+    wrong: 駅に着いたとたん、電話してください。
+    right: 駅に着き次第、電話してください。
+    target_lang: ja
+    note:
+      vi: Vế sau là lời nhờ nên không dùng たとたん. Dùng 着き次第 (hoặc 着いたらすぐ).
+  - type: common_mistake
+    wrong: 結果が分かった次第、連絡します。
+    right: 結果が分かり次第、連絡します。
+    target_lang: ja
+    note:
+      vi: 次第 gắn vào gốc ます (分かり), không gắn vào thể た. Người Việt nghĩ "khi đã biết" nên hay dùng 分かった.
+  - type: common_mistake
+    wrong: 家を出るとたん、雨が降り出した。
+    right: 家を出たとたん、雨が降り出した。
+    target_lang: ja
+    note:
+      vi: とたん luôn đi với thể た.
+  - type: summary
+    points:
+      - vi: V-た + とたん(に) - vừa... thì ngay lập tức (chuyện bất ngờ, đã xảy ra).
+      - vi: V-ます(bỏ ます) / N する + 次第 - ngay khi... xong là sẽ... (kế hoạch, lời hứa, lời nhờ).
+      - vi: たとたん không đi với lời nhờ, ý định; 次第 không kể chuyện quá khứ.
+      - vi: 到着 - đến nơi; 判明する - được làm rõ; 折り返し電話する - gọi lại.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u1-totan-mcq-todoki
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-gram-shidai
+    prompt:
+      stem: '"Ngay khi hàng đến, tôi sẽ báo." Chọn dạng đúng: 商品が＿＿、お知らせします。'
+      stem_lang: vi
+      options:
+        - { id: t2v, text: 届き次第, lang: ja }
+        - { id: q7h, text: 届いた次第, lang: ja }
+        - { id: x4b, text: 届く次第, lang: ja }
+        - { id: j9n, text: 届いて次第, lang: ja }
+    answer:
+      correct_option_id: t2v
+    explanation:
+      vi: 次第 gắn vào gốc ます - 届きます → 届き次第. Thể た, thể từ điển hay thể て đều sai.
+    display_answer: 届き次第
+
+  - key: ja:exercise:n2-u1-totan-listen-neko
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-gram-totan
+    prompt:
+      audio_asset_id: null
+      fallback_text: ドアを開けたとたん、猫が飛び出してきた。
+      options:
+        - { id: c6e, text: Vừa mở cửa thì con mèo lao vụt ra., lang: vi }
+        - { id: r1w, text: Tôi mở cửa để cho con mèo ra ngoài., lang: vi }
+        - { id: v8k, text: Trước khi tôi mở cửa thì con mèo đã chạy mất., lang: vi }
+        - { id: h5s, text: Con mèo tự mở cửa rồi chạy ra., lang: vi }
+    answer:
+      correct_option_id: c6e
+    explanation:
+      vi: 開けたとたん - vừa mở xong thì ngay lập tức; 飛び出してきた - lao vụt ra (bất ngờ). Không có ý "để cho" hay "trước khi".
+    display_answer: Vừa mở cửa thì con mèo lao vụt ra.
+
+  - key: ja:exercise:n2-u1-totan-fill-tachiagatta
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-gram-totan
+    prompt:
+      template: "椅子から{{b1}}とたん、めまいがした。(立ち上がる)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Vừa đứng dậy khỏi ghế thì tôi bị chóng mặt."
+        - "Gợi ý: とたん luôn đi với thể た."
+    answer:
+      blanks:
+        b1: [立ち上がった, たちあがった, 立ちあがった]
+    known_wrong:
+      - answer: 立ち上がる
+        feedback_vi: とたん không gắn vào thể từ điển - 立ち上がったとたん.
+        error_tag: totan_form
+      - answer: 立ち上がり
+        feedback_vi: Gốc ます đi với 次第, không đi với とたん. Dùng 立ち上がったとたん.
+        error_tag: totan_shidai
+    explanation:
+      vi: 立ち上がる → 立ち上がった + とたん. Chóng mặt là chuyện ngoài ý muốn, rất hợp với たとたん.
+    display_answer: 椅子から立ち上がったとたん、めまいがした。
+
+  - key: ja:exercise:n2-u1-totan-wb-hanmei
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-hanmei
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Ngay khi xác định được nguyên nhân sự cố, chúng tôi sẽ thông báo.\""
+      tokens:
+        - { id: h3, text: お知らせします }
+        - { id: h4, text: 判明した次第 }
+        - { id: h1, text: 事故の原因が }
+        - { id: h2, text: 判明し次第 }
+    answer:
+      orders:
+        - [h1, h2, h3]
+    explanation:
+      vi: 判明する → 判明し + 次第. 判明した次第 sai vì 次第 không gắn vào thể た. 原因が判明する - nguyên nhân được làm rõ (tự động từ, dùng が).
+    display_answer: 事故の原因が判明し次第、お知らせします。
+
+  - key: ja:exercise:n2-u1-totan-mcq-orikaeshi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-orikaesu
+    prompt:
+      stem: Nhân viên công ty nói qua điện thoại 「後ほど折り返しお電話いたします。」 Ý họ là gì?
+      stem_lang: vi
+      options:
+        - { id: o4m, text: Lát nữa chúng tôi sẽ gọi lại cho anh/chị., lang: vi }
+        - { id: d9t, text: Xin anh/chị lát nữa gọi lại., lang: vi }
+        - { id: k2r, text: Chúng tôi sẽ chuyển máy cho người phụ trách., lang: vi }
+        - { id: f7a, text: Anh/chị đã gọi nhầm số., lang: vi }
+    answer:
+      correct_option_id: o4m
+    explanation:
+      vi: 折り返し電話する - phía nhận cuộc gọi chủ động gọi lại. いたします là khiêm nhường ngữ, chủ ngữ là "chúng tôi". Nhờ khách gọi lại sẽ là かけ直していただけますか.
+    display_answer: Lát nữa chúng tôi sẽ gọi lại cho anh/chị.
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u1-totan-fill-touchaku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-touchaku
+    prompt:
+      template: "荷物が{{b1}}次第、お知らせします。(到着する)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [到着し, 到着, とうちゃくし, とうちゃく]
+    known_wrong:
+      - answer: 到着した
+        feedback_vi: 次第 không gắn vào thể た. Dùng 到着し次第 (gốc ます) hoặc 到着次第 (danh từ).
+        error_tag: shidai_form
+      - answer: 到着する
+        feedback_vi: 次第 không gắn vào thể từ điển. Dùng 到着し次第 hoặc 到着次第.
+        error_tag: shidai_form
+    explanation:
+      vi: Với động từ する, 次第 gắn vào し (到着し次第) hoặc thẳng vào danh từ (到着次第) - cả hai đều đúng.
+    display_answer: 荷物が到着し次第、お知らせします。
+
+  - key: ja:exercise:n2-u1-totan-translate-kekka
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-shidai
+    prompt:
+      source_text: Ngay khi biết kết quả, tôi sẽ liên lạc với anh/chị. (lịch sự, dùng 次第)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 結果が分かり次第、ご連絡します。
+        - 結果が分かり次第、ご連絡いたします。
+        - 結果が分かり次第、連絡します。
+        - 結果が分かり次第、連絡いたします。
+        - 結果がわかり次第、ご連絡します。
+        - 結果がわかり次第、ご連絡いたします。
+        - 結果がわかり次第、連絡します。
+        - 結果がわかり次第、連絡いたします。
+        - 結果が出次第、ご連絡します。
+        - 結果が出次第、ご連絡いたします。
+        - 結果が出次第、連絡します。
+        - 結果が出次第、連絡いたします。
+        - 結果が分かり次第、お知らせします。
+        - 結果が分かり次第、お知らせいたします。
+        - 結果が分かり次第、すぐにご連絡します。
+        - 結果が分かり次第、すぐご連絡いたします。
+        - けっかがわかりしだい、ごれんらくします。
+        - けっかがわかりしだい、ごれんらくいたします。
+    known_wrong:
+      - answer: 結果が分かったとたん、ご連絡します。
+        feedback_vi: たとたん không đi với ý định, lời hứa của người nói. Dùng 分かり次第.
+        error_tag: totan_volition
+      - answer: 結果が分かった次第、ご連絡します。
+        feedback_vi: 次第 gắn vào gốc ます - 分かり次第, không phải 分かった次第.
+        error_tag: shidai_form
+    explanation:
+      vi: 分かります → 分かり次第 (hoặc 出ます → 出次第). ご連絡します / ご連絡いたします - khiêm nhường, lịch sự.
+    display_answer: 結果が分かり次第、ご連絡いたします。
+
+  - key: ja:exercise:n2-u1-totan-translate-ame
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-totan
+    prompt:
+      source_text: Vừa ra khỏi nhà thì trời đổ mưa. (dùng とたん)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 家を出たとたん、雨が降り出した。
+        - 家を出たとたん、雨が降り出しました。
+        - 家を出たとたん、雨が降ってきた。
+        - 家を出たとたん、雨が降ってきました。
+        - 家を出たとたん、雨が降り始めた。
+        - 家を出たとたん、雨が降り始めました。
+        - 家を出たとたんに、雨が降り出した。
+        - 家を出たとたんに、雨が降り出しました。
+        - 家を出たとたんに、雨が降ってきた。
+        - 家を出たとたんに、雨が降ってきました。
+        - 家を出たとたん、雨が降りだした。
+        - 家を出た途端、雨が降り出した。
+        - 家を出た途端、雨が降ってきた。
+        - 家を出た途端に、雨が降り出した。
+        - うちを出たとたん、雨が降り出した。
+        - うちを出たとたん、雨が降ってきた。
+        - いえをでたとたん、あめがふりだした。
+        - いえをでたとたん、あめがふってきた。
+    known_wrong:
+      - answer: 家を出次第、雨が降り出した。
+        feedback_vi: 次第 không dùng để kể chuyện đã xảy ra hay hiện tượng tự nhiên. Dùng 出たとたん.
+        error_tag: shidai_past
+      - answer: 家を出るとたん、雨が降り出した。
+        feedback_vi: とたん luôn đi với thể た - 出たとたん.
+        error_tag: totan_form
+    explanation:
+      vi: 出る → 出た + とたん; 雨が降り出す / 降ってくる - trời đổ mưa (bắt đầu mưa). Chuyện bất ngờ đã xảy ra - đúng chỗ của たとたん.
+    display_answer: 家を出たとたん、雨が降り出した。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u1-totan-mcq-phone
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-orikaesu
+    prompt:
+      stem: Khách gọi đến tìm trưởng phòng, nhưng trưởng phòng đang ra ngoài. Bạn (nhân viên) nên nói câu nào?
+      stem_lang: vi
+      options:
+        - { id: b3u, text: 部長が戻り次第、折り返しお電話いたします。, lang: ja }
+        - { id: e8c, text: 部長が戻ったとたん、折り返しお電話いたします。, lang: ja }
+        - { id: w5p, text: 部長が戻る次第、折り返しお電話してください。, lang: ja }
+        - { id: n2z, text: 部長が戻ったとたんに、お電話をかけ直しました。, lang: ja }
+    answer:
+      correct_option_id: b3u
+    explanation:
+      vi: Lời hứa về tương lai - 戻り次第 + 折り返しお電話いたします. たとたん không đi với lời hứa; 戻る次第 sai dạng và không thể nhờ khách "gọi lại"; câu cuối kể chuyện quá khứ, không hợp tình huống.
+    display_answer: 部長が戻り次第、折り返しお電話いたします。
+
+  - key: ja:exercise:n2-u1-totan-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u1-touchaku
+    prompt:
+      source_text: 空港に到着し次第、ホテルへ向かいます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngay khi đến sân bay, tôi sẽ đi về khách sạn.
+        - Ngay khi đến sân bay, tôi sẽ đi đến khách sạn.
+        - Ngay khi đến sân bay, tôi sẽ đến khách sạn.
+        - Ngay khi đến sân bay, tôi sẽ về khách sạn.
+        - Ngay khi đến sân bay, tôi sẽ hướng về khách sạn.
+        - Ngay khi đến sân bay, chúng tôi sẽ đi về khách sạn.
+        - Ngay khi đến sân bay, chúng tôi sẽ đến khách sạn.
+        - Ngay khi đến sân bay, chúng tôi sẽ về khách sạn.
+        - Ngay khi tới sân bay, tôi sẽ đi về khách sạn.
+        - Ngay khi tới sân bay, tôi sẽ đến khách sạn.
+        - Đến sân bay xong là tôi sẽ đi về khách sạn ngay.
+        - Đến sân bay là tôi sẽ đi khách sạn ngay.
+        - Vừa đến sân bay là tôi sẽ đi về khách sạn.
+        - Đến sân bay rồi tôi sẽ đi thẳng đến khách sạn.
+        - Ngay sau khi đến sân bay, tôi sẽ đi về khách sạn.
+        - Ngay sau khi đến sân bay, tôi sẽ đến khách sạn.
+        - Ngay khi đến sân bay tôi sẽ đi tới khách sạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngay khi đến khách sạn, tôi sẽ đi sân bay.
+        feedback_vi: Đảo ngược thứ tự - 空港に到着 (đến sân bay) trước, ホテルへ向かう (đi về khách sạn) sau.
+        error_tag: order_meaning
+      - answer: Vừa đến sân bay thì tôi đã đi về khách sạn.
+        feedback_vi: 次第 nói kế hoạch tương lai (向かいます), không phải chuyện đã xảy ra.
+        error_tag: shidai_tense
+    explanation:
+      vi: 到着し次第 - ngay khi đến nơi; ～へ向かう - đi về phía, hướng tới. Câu nói kế hoạch nên dịch "sẽ".
+    display_answer: Ngay khi đến sân bay, tôi sẽ đi về khách sạn.
+
+  - key: ja:exercise:n2-u1-totan-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-totan
+    prompt:
+      stem: Câu nào dùng ～たとたん tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: a1y, text: 窓を開けたとたん、強い風が入ってきた。, lang: ja }
+        - { id: g6l, text: 家に帰ったとたん、宿題をしよう。, lang: ja }
+        - { id: u3q, text: 駅に着いたとたん、連絡してください。, lang: ja }
+        - { id: z8d, text: 窓を開けるとたん、風が入ってきた。, lang: ja }
+    answer:
+      correct_option_id: a1y
+    explanation:
+      vi: Gió lùa vào ngay khi mở cửa - chuyện bất ngờ đã xảy ra. Vế sau là ý định (しよう) hay lời nhờ (てください) không dùng たとたん; 開けるとたん sai dạng.
+    display_answer: 窓を開けたとたん、強い風が入ってきた。
+
+  - key: ja:exercise:n2-u1-totan-fill-owaru
+    type: fill_blank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-shidai
+    prompt:
+      template: "会議が{{b1}}次第、資料を送ります。昨日は、会議が{{b2}}とたん、部長が帰ってしまった。(終わる)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [終わり, おわり]
+        b2: [終わった, おわった]
+    known_wrong:
+      - answer: 終わる
+        feedback_vi: Không mẫu nào gắn vào thể từ điển - 終わり次第, 終わったとたん.
+        error_tag: shidai_totan_form
+    explanation:
+      vi: Vế đầu là kế hoạch - 終わり次第 (gốc ます). Vế sau kể chuyện bất ngờ hôm qua - 終わったとたん (thể た).
+    display_answer: 会議が終わり次第、資料を送ります。昨日は、会議が終わったとたん、部長が帰ってしまった。

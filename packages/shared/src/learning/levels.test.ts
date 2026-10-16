@@ -75,17 +75,19 @@ describe('levels: Japanese (JLPT)', () => {
     expect(isLevelOf('ko', 'n5')).toBe(false);
   });
 
-  it('allows higher JLPT levels up to the content ceiling and picks language-aware defaults', () => {
-    expect(allowedTargets('ja', 'jlpt', 'kana')).toEqual(['n5', 'n4', 'n3']);
-    expect(allowedTargets('ja', 'jlpt', 'n4')).toEqual(['n3']);
-    expect(allowedTargets('ja', 'jlpt', 'n3')).toEqual([]);
-    expect(allowedTargets('ja', 'jlpt', 'n2')).toEqual([]);
+  it('allows higher JLPT levels up to N1 and picks language-aware defaults', () => {
+    expect(allowedTargets('ja', 'jlpt', 'kana')).toEqual(['n5', 'n4', 'n3', 'n2', 'n1']);
+    expect(allowedTargets('ja', 'jlpt', 'n4')).toEqual(['n3', 'n2', 'n1']);
+    expect(allowedTargets('ja', 'jlpt', 'n3')).toEqual(['n2', 'n1']);
+    expect(allowedTargets('ja', 'jlpt', 'n2')).toEqual(['n1']);
     expect(allowedTargets('ja', 'jlpt', 'n1')).toEqual([]);
     expect(defaultTarget('ja', 'kana_basics', 'kana')).toBe('n5');
     expect(defaultTarget('ja', 'jlpt', 'n5')).toBe('n3');
+    expect(defaultTarget('ja', 'jlpt', 'n3')).toBe('n2');
     expect(defaultTarget('ja', 'communication', 'kana')).toBe('n3');
     expect(defaultTarget('ja', 'skill_focus', 'n4')).toBe('n3');
-    expect(defaultTarget('ja', 'skill_focus', 'n3')).toBeNull();
+    expect(defaultTarget('ja', 'skill_focus', 'n3')).toBe('n2');
+    expect(defaultTarget('ja', 'jlpt', 'n1')).toBeNull();
     expect(defaultTarget('ko', 'communication', 'hangul')).toBe('topik3');
     expect(suggestedCurrentLevel('ja', 'new')).toBe('kana');
     expect(suggestedCurrentLevel('ja', 'unsure')).toBe('n5');
@@ -93,32 +95,34 @@ describe('levels: Japanese (JLPT)', () => {
 });
 
 describe('levels: content ceiling', () => {
-  it('ends Japanese at N3 while en/ko have content on their whole scale', () => {
-    expect(CONTENT_MAX_LEVEL).toEqual({ en: 'c2', ko: 'topik6', ja: 'n3' });
-    expect(availableLevels('ja')).toEqual(['kana', 'n5', 'n4', 'n3']);
+  it('has content on the whole scale of every language, Japanese included (N2/N1 shipped)', () => {
+    expect(CONTENT_MAX_LEVEL).toEqual({ en: 'c2', ko: 'topik6', ja: 'n1' });
+    expect(availableLevels('ja')).toEqual([...LEVELS.ja]);
     expect(availableLevels('en')).toEqual([...LEVELS.en]);
     expect(availableLevels('ko')).toEqual([...LEVELS.ko]);
   });
 
-  it('marks levels above the ceiling and unknown codes unavailable', () => {
+  it('marks every level of the scale available and unknown or foreign codes unavailable', () => {
     expect(isLevelAvailable('ja', 'n3')).toBe(true);
-    expect(isLevelAvailable('ja', 'n2')).toBe(false);
-    expect(isLevelAvailable('ja', 'n1')).toBe(false);
+    expect(isLevelAvailable('ja', 'n2')).toBe(true);
+    expect(isLevelAvailable('ja', 'n1')).toBe(true);
     expect(isLevelAvailable('ja', 'topik1')).toBe(false);
+    expect(isLevelAvailable('ja', 'z9')).toBe(false);
     expect(isLevelAvailable('ko', 'topik6')).toBe(true);
   });
 
-  it('clamps levels above the ceiling to it and leaves others alone', () => {
-    expect(clampToContentLevel('ja', 'n1')).toBe('n3');
-    expect(clampToContentLevel('ja', 'n2')).toBe('n3');
+  it('leaves levels with content and unknown codes unclamped', () => {
+    expect(clampToContentLevel('ja', 'n1')).toBe('n1');
+    expect(clampToContentLevel('ja', 'n2')).toBe('n2');
     expect(clampToContentLevel('ja', 'n4')).toBe('n4');
     expect(clampToContentLevel('ja', 'z9')).toBe('z9');
     expect(clampToContentLevel('en', 'c2')).toBe('c2');
   });
 
-  it('tells the content ceiling apart from the end of the scale', () => {
-    expect(isAtContentCeiling('ja', 'n3')).toBe(true);
-    expect(isAtContentCeiling('ja', 'n2')).toBe(true);
+  it('reports no content ceiling once the whole scale has content', () => {
+    expect(isAtContentCeiling('ja', 'n3')).toBe(false);
+    expect(isAtContentCeiling('ja', 'n2')).toBe(false);
+    expect(isAtContentCeiling('ja', 'n1')).toBe(false);
     expect(isAtContentCeiling('ja', 'n4')).toBe(false);
     expect(isAtContentCeiling('ko', 'topik6')).toBe(false);
     expect(isAtContentCeiling('en', 'c2')).toBe(false);

@@ -1,0 +1,562 @@
+# Học liệu unit "Diễn ngôn học thuật và xã luận" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～をもって / ～をおいて(他に) =================
+  - key: ja:item:n1-u4-shimekiru
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 締め切る
+      reading: しめきる
+      romanization: shimekiru
+      pos: động từ
+    back:
+      meaning:
+        vi: khoá sổ, đóng (nhận hồ sơ, đăng ký); 締め切り - hạn chót
+      examples:
+        - target: 応募は今月末をもって締め切ります。
+          translation:
+            vi: Việc nhận hồ sơ dự tuyển sẽ khoá sổ vào cuối tháng này.
+      pronunciation_note:
+        vi: Đọc "si-mê-ki-rư"; danh từ 締め切り đọc "si-mê-ki-ri".
+      confusion:
+        vi: 締め切る là ngừng nhận (thông báo chính thức); 閉める là đóng cửa vật lý. Văn thông báo hay dùng 締め切らせていただきます.
+
+  - key: ja:item:n1-u4-tekinin
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 適任
+      reading: てきにん
+      romanization: tekinin
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: thích hợp với nhiệm vụ, người phù hợp nhất; 適任者 - người thích hợp
+      examples:
+        - target: 新しいプロジェクトのリーダーには、彼女が適任だ。
+          translation:
+            vi: Cô ấy là người thích hợp để làm trưởng dự án mới.
+      pronunciation_note:
+        vi: Đọc "tê-ki-nin".
+      confusion:
+        vi: 適任 nói về người hợp với một vai trò; 適切 (thích đáng) nói về cách làm, lời nói. 適切な人 không sai nhưng 適任者 tự nhiên hơn khi bàn nhân sự.
+
+  - key: ja:item:n1-u4-shomen
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 書面
+      reading: しょめん
+      romanization: shomen
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn bản, giấy tờ (hình thức viết); 書面で / 書面をもって - bằng văn bản
+      examples:
+        - target: 結果は後日、書面をもってお知らせいたします。
+          translation:
+            vi: Kết quả sẽ được thông báo bằng văn bản vào ngày khác.
+      pronunciation_note:
+        vi: しょ là âm ghép - "sô-mên", không đọc "si-ô".
+      confusion:
+        vi: 書面 là hình thức văn bản (đối lập với 口頭 - nói miệng); 書類 là các loại giấy tờ cụ thể (hồ sơ).
+
+  - key: ja:item:n1-u4-gram-wo-motte
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + をもって
+      reading: をもって
+      romanization: o motte
+      pos: mốc thời điểm; phương tiện
+    back:
+      meaning:
+        vi: '(1) Mốc kết thúc / bắt đầu chính thức - "kể từ, đến hết": 本日をもって閉店いたします. (2) Phương tiện, căn cứ - "bằng": 書面をもって通知する; 彼の実力をもってすれば - nếu với thực lực của anh ấy.'
+      examples:
+        - target: 以上をもちまして、本日の説明会を終了いたします。
+          translation:
+            vi: Đến đây, buổi giới thiệu hôm nay xin được kết thúc.
+      pronunciation_note:
+        vi: を đọc "ô" - "ô-mốt-tê"; dạng khiêm nhường lịch sự hơn là をもちまして.
+      confusion:
+        vi: をもって (mốc) dùng trong thông báo kết thúc / thay đổi tình trạng, không dùng làm hạn nộp - "nộp trước ngày mai" là 明日までに提出する. Nghĩa "bằng" trang trọng hơn で nhiều.
+
+  - key: ja:item:n1-u4-gram-wo-oite
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + をおいて(他に)～ない
+      reading: をおいてほかに
+      romanization: o oite hoka ni
+      pos: ngoài ... ra thì không có
+    back:
+      meaning:
+        vi: '"Ngoài N ra thì không có ai / cái gì khác" - đánh giá N là duy nhất, cao nhất: この役は彼をおいて他にいない.'
+      examples:
+        - target: 次の社長には、田中さんをおいて他に適任者はいない。
+          translation:
+            vi: Làm giám đốc kế nhiệm thì ngoài anh Tanaka ra không còn ai thích hợp hơn.
+      pronunciation_note:
+        vi: をおいて đọc "ô-ô-i-tê"; 他に đọc "hô-ka-ni".
+      confusion:
+        vi: Cuối câu luôn phủ định (いない / ない) và N là đối tượng được đánh giá cao. Khác 除いて (trừ ra - chỉ loại bỏ, không khen) - 彼を除いて全員来た.
+
+  # ================= bài 2: ～に即して / ～に照らして =================
+  - key: ja:item:n1-u4-jitsujou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 実情
+      reading: じつじょう
+      romanization: jitsujō
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình hình thực tế, thực trạng
+      examples:
+        - target: 地方の実情を知らずに、制度を作るべきではない。
+          translation:
+            vi: Không nên đặt ra chế độ mà không biết thực trạng ở địa phương.
+      pronunciation_note:
+        vi: じょう là âm dài - "di-tsư-dô-ô".
+      confusion:
+        vi: 実情 là thực trạng bên trong (thường khó thấy từ ngoài); 現状 là hiện trạng nói chung; 事情 là hoàn cảnh, lý do riêng.
+
+  - key: ja:item:n1-u4-hourei
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 法令
+      reading: ほうれい
+      romanization: hōrei
+      pos: danh từ
+    back:
+      meaning:
+        vi: pháp lệnh, luật lệ (luật và các văn bản quy phạm); 法令を守る - tuân thủ pháp luật
+      examples:
+        - target: 企業には法令を守る責任がある。
+          translation:
+            vi: Doanh nghiệp có trách nhiệm tuân thủ pháp luật.
+      pronunciation_note:
+        vi: ほう và れい đều là âm dài - "hô-ô-rê-ê".
+      confusion:
+        vi: 法令 là tên gọi chung cho luật và nghị định; 法律 là luật do quốc hội ban hành. 法令遵守 (コンプライアンス) - tuân thủ pháp luật.
+
+  - key: ja:item:n1-u4-datou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 妥当
+      reading: だとう
+      romanization: datō
+      pos: tính từ な
+    back:
+      meaning:
+        vi: thoả đáng, hợp lý
+      examples:
+        - target: 過去の例に照らせば、この判断は妥当だと言える。
+          translation:
+            vi: Đối chiếu với các tiền lệ, có thể nói phán đoán này là thoả đáng.
+      pronunciation_note:
+        vi: とう là âm dài - "đa-tô-ô".
+      confusion:
+        vi: 妥当 là hợp lẽ khi đánh giá (kết luận, mức giá, quyết định); 適当 vừa có nghĩa "thích hợp" vừa có nghĩa "qua loa", nên văn học thuật chuộng 妥当.
+
+  - key: ja:item:n1-u4-gram-ni-sokushite
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + に即して / に即した + N
+      reading: にそくして
+      romanization: ni sokushite
+      pos: bám sát, theo đúng
+    back:
+      meaning:
+        vi: '"Bám sát, phù hợp với" thực tế, sự thật, quy định: 実情に即して計画を見直す; 事実に即した報道 (đưa tin đúng sự thật).'
+      examples:
+        - target: 現場の実情に即して、マニュアルを改める必要がある。
+          translation:
+            vi: Cần sửa lại sổ tay hướng dẫn cho sát với thực tế hiện trường.
+      pronunciation_note:
+        vi: 即 đọc そく - "ni-xô-ku-si-tê".
+      confusion:
+        vi: N thường là 事実, 実情, 現実, 実態, 規則 - những thứ khách quan. Làm theo chỉ thị của một người dùng ～に従って, không dùng に即して.
+
+  - key: ja:item:n1-u4-gram-ni-terashite
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + に照らして / に照らすと / に照らせば
+      reading: にてらして
+      romanization: ni terashite
+      pos: đối chiếu với
+    back:
+      meaning:
+        vi: '"Đối chiếu với" một chuẩn mực để phán xét: 法律に照らして判断する; 常識に照らして考えると.'
+      examples:
+        - target: 社内規定に照らして、彼の行為は処分の対象となる。
+          translation:
+            vi: Đối chiếu với quy định công ty, hành vi của anh ta thuộc diện bị xử lý.
+      pronunciation_note:
+        vi: 照らして đọc "tê-ra-si-tê".
+      confusion:
+        vi: に照らして nhấn vào việc so với chuẩn để đánh giá đúng sai; に即して nhấn vào việc làm cho khớp với thực tế. 法律に照らして判断する (phán quyết) / 実情に即して運用する (vận hành sát thực tế).
+
+  # ================= bài 3: ～いかんによらず / ～いかんでは =================
+  - key: ja:item:n1-u4-shinsa
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 審査
+      reading: しんさ
+      romanization: shinsa
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẩm định, xét duyệt; 審査に通る - qua vòng xét duyệt
+      examples:
+        - target: 書類審査の結果いかんでは、面接に進めないこともある。
+          translation:
+            vi: Tuỳ kết quả xét hồ sơ, cũng có trường hợp không được vào vòng phỏng vấn.
+      pronunciation_note:
+        vi: Đọc "sin-xa".
+      confusion:
+        vi: 審査 là xét duyệt theo tiêu chuẩn (hồ sơ, đơn vay, tác phẩm); 検査 là kiểm tra kỹ thuật, y tế.
+
+  - key: ja:item:n1-u4-sochi
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 措置
+      reading: そち
+      romanization: sochi
+      pos: danh từ
+    back:
+      meaning:
+        vi: biện pháp (xử lý); 措置を取る / 措置を講じる - áp dụng biện pháp
+      examples:
+        - target: 政府は物価高に対して緊急の措置を取った。
+          translation:
+            vi: Chính phủ đã áp dụng biện pháp khẩn cấp đối với tình trạng giá cả leo thang.
+      pronunciation_note:
+        vi: Đọc "xô-chi".
+      confusion:
+        vi: 措置 là biện pháp hành chính, chính thức; 対策 là đối sách để phòng / chống một vấn đề. 処置 thường là xử lý tại chỗ (y tế, sự cố).
+
+  - key: ja:item:n1-u4-mudan
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 無断
+      reading: むだん
+      romanization: mudan
+      pos: danh từ
+    back:
+      meaning:
+        vi: không xin phép, tự ý; 無断で - tự ý; 無断欠席 - vắng mặt không phép
+      examples:
+        - target: 写真の無断転載を禁じます。
+          translation:
+            vi: Nghiêm cấm đăng lại ảnh khi chưa được phép.
+      pronunciation_note:
+        vi: Đọc "mư-đan".
+      confusion:
+        vi: 無断 là không xin phép người có quyền; 勝手に là tự tiện theo ý mình (văn nói, sắc thái chê).
+
+  - key: ja:item:n1-u4-gram-ikan-ni-yorazu
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: N(の) + いかんによらず / いかんにかかわらず
+      reading: いかんによらず
+      romanization: ikan ni yorazu
+      pos: bất kể
+    back:
+      meaning:
+        vi: '"Bất kể N như thế nào" - kết quả không thay đổi: 理由のいかんによらず、遅刻は認めない. Biến thể: いかんを問わず, いかんにかかわらず.'
+      examples:
+        - target: 理由のいかんによらず、無断欠席は認められません。
+          translation:
+            vi: Bất kể lý do gì, vắng mặt không phép cũng không được chấp nhận.
+      pronunciation_note:
+        vi: Đọc "i-kan-ni-yô-ra-dư".
+      confusion:
+        vi: いかん (如何) là danh từ "thế nào, ra sao" - không viết いかに. Mẫu này rất cứng, chủ yếu gặp trong quy định, thông báo; văn nói dùng ～に関係なく.
+
+  - key: ja:item:n1-u4-gram-ikan-dewa
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: N(の) + いかんでは / いかんによっては
+      reading: いかんでは
+      romanization: ikan de wa
+      pos: tuỳ vào ... mà có thể
+    back:
+      meaning:
+        vi: '"Tuỳ vào N mà (có khả năng xảy ra điều đặc biệt)": 交渉の結果いかんでは、契約を見直すこともありうる. Dạng N + いかんだ - "phụ thuộc vào N": 成功するかどうかは努力いかんだ.'
+      examples:
+        - target: 今後の対応いかんでは、大きな問題になりかねない。
+          translation:
+            vi: Tuỳ cách ứng phó sắp tới mà chuyện này có thể trở thành vấn đề lớn.
+      pronunciation_note:
+        vi: Đọc "i-kan-đê-oa"; は đọc "oa".
+      confusion:
+        vi: いかんでは thường kết bằng khả năng - ～こともある, ～かもしれない, ～かねない. Ngược nghĩa với いかんによらず (bất kể).
+
+  # ================= bài 4: ～とはいえ / ～といえども / ～ながらも (xã luận) =================
+  - key: ja:item:n1-u4-shasetsu
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 社説
+      reading: しゃせつ
+      romanization: shasetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: xã luận (bài nêu quan điểm chính thức của tờ báo)
+      examples:
+        - target: 今朝の社説は、政府の少子化対策を厳しく批判している。
+          translation:
+            vi: Bài xã luận sáng nay phê phán gay gắt chính sách đối phó với tỉ lệ sinh thấp của chính phủ.
+      pronunciation_note:
+        vi: しゃ là âm ghép - "sa-xê-tsư".
+      confusion:
+        vi: 社説 là ý kiến của toà soạn; 記事 là bài báo đưa tin nói chung; コラム là chuyên mục của một cây bút.
+
+  - key: ja:item:n1-u4-kenen
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 懸念
+      reading: けねん
+      romanization: kenen
+      pos: danh từ
+    back:
+      meaning:
+        vi: mối lo ngại; 懸念する - lo ngại; 懸念が残る - vẫn còn lo ngại
+      examples:
+        - target: 専門家の間では、副作用への懸念が広がっている。
+          translation:
+            vi: Trong giới chuyên gia, mối lo ngại về tác dụng phụ đang lan rộng.
+      pronunciation_note:
+        vi: Đọc "kê-nên" - け và ねん tách rõ, không đọc "kên-nên".
+      confusion:
+        vi: 懸念 là lo ngại về rủi ro (văn viết, trang trọng); 心配 là lo lắng nói chung. Báo chí viết 懸念される (bị lo ngại) rất thường xuyên.
+
+  - key: ja:item:n1-u4-koujiru
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 講じる
+      reading: こうじる
+      romanization: kōjiru
+      pos: động từ
+    back:
+      meaning:
+        vi: đưa ra, áp dụng (biện pháp); 対策を講じる - đề ra đối sách
+      examples:
+        - target: 自治体は大雨に備えて、さまざまな対策を講じている。
+          translation:
+            vi: Chính quyền địa phương đang đề ra nhiều biện pháp để phòng mưa lớn.
+      pronunciation_note:
+        vi: こう là âm dài - "cô-ô-di-rư".
+      confusion:
+        vi: 講じる hầu như chỉ đi với 対策, 措置, 手段, 策. Văn nói thay bằng 対策を取る / 対策をする.
+
+  - key: ja:item:n1-u4-gram-towaie
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: thể thường / N + とはいえ
+      reading: とはいえ
+      romanization: to wa ie
+      pos: tuy nói là ... nhưng
+    back:
+      meaning:
+        vi: '"Tuy (đúng là) ... nhưng" - công nhận một sự thật rồi nêu điều trái với dự đoán: 春とはいえ、まだ寒い. Đứng đầu câu: とはいえ、～ (dù vậy).'
+      examples:
+        - target: 景気は回復しつつあるとはいえ、楽観できる状況ではない。
+          translation:
+            vi: Tuy kinh tế đang dần hồi phục, nhưng tình hình chưa thể lạc quan.
+      pronunciation_note:
+        vi: は đọc "oa" - "tô-oa-i-ê".
+      confusion:
+        vi: とはいえ nhấn mạnh "dù sự thật là thế"; けれども / のに là liên từ thông thường. Không viết とわいえ.
+
+  - key: ja:item:n1-u4-gram-toiedomo
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: N / thể thường + といえども
+      reading: といえども
+      romanization: to iedomo
+      pos: dù là ... đi nữa
+    back:
+      meaning:
+        vi: '"Dù là N (người / vị trí lẽ ra đặc biệt) đi nữa thì cũng..." - văn viết rất trang trọng: 専門家といえども、予測は難しい; 子供といえども、法は守らねばならない.'
+      examples:
+        - target: 首相といえども、法の上に立つことは許されない。
+          translation:
+            vi: Dù là thủ tướng đi nữa cũng không được phép đứng trên pháp luật.
+      pronunciation_note:
+        vi: Đọc "tô-i-ê-đô-mô".
+      confusion:
+        vi: といえども thường đi với N chỉ người / địa vị và vế sau là đánh giá chung (～ない, ～なければならない). Nói về một sự thật cụ thể ("tuy đã là tháng Ba") thì とはいえ tự nhiên hơn.
+
+  - key: ja:item:n1-u4-gram-nagaramo
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V(ます bỏ ます) / いA / なA / N + ながらも
+      reading: ながらも
+      romanization: nagara mo
+      pos: mặc dù ... nhưng
+    back:
+      meaning:
+        vi: '"Mặc dù (ở trạng thái) ... nhưng" - cùng một chủ ngữ, vế sau trái với vế trước: 狭いながらも楽しい我が家; 不十分ながらも成果を上げた.'
+      examples:
+        - target: 彼は体調が悪いと知りながらも、会議に出席した。
+          translation:
+            vi: Dù biết mình không khoẻ, anh ấy vẫn dự cuộc họp.
+      pronunciation_note:
+        vi: Đọc "na-ga-ra-mô".
+      confusion:
+        vi: ながら (vừa ... vừa) nói hai hành động song song; ながらも là nhượng bộ. Hai vế của ながらも phải cùng chủ ngữ; động từ trước ながらも thường là trạng thái (知る, 認める, いる...).
+
+  # ================= bài 5: ôn tập - đọc xã luận =================
+  - key: ja:item:n1-u4-ronten
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 論点
+      reading: ろんてん
+      romanization: ronten
+      pos: danh từ
+    back:
+      meaning:
+        vi: luận điểm, vấn đề cần bàn
+      examples:
+        - target: 議論の論点を整理してから、結論を出しましょう。
+          translation:
+            vi: Hãy sắp xếp lại các luận điểm của cuộc tranh luận rồi mới đưa ra kết luận.
+      pronunciation_note:
+        vi: Đọc "rôn-tên".
+      confusion:
+        vi: 論点 là điểm đang được tranh luận; 要点 là ý chính của một văn bản; 観点 là góc nhìn.
+
+  - key: ja:item:n1-u4-konkyo
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 根拠
+      reading: こんきょ
+      romanization: konkyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: căn cứ, cơ sở; 根拠がない - không có căn cứ
+      examples:
+        - target: その主張には科学的な根拠がない。
+          translation:
+            vi: Lập luận đó không có căn cứ khoa học.
+      pronunciation_note:
+        vi: きょ là âm ghép - "côn-kyô".
+      confusion:
+        vi: 根拠 là cơ sở cho một nhận định; 理由 là lý do của một hành động. 根拠を示す - đưa ra căn cứ.
+
+  - key: ja:item:n1-u4-teigen
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 提言
+      reading: ていげん
+      romanization: teigen
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiến nghị, đề xuất (có tính chính sách); 提言する
+      examples:
+        - target: 専門家会議は、教育制度の見直しを政府に提言した。
+          translation:
+            vi: Hội đồng chuyên gia đã kiến nghị chính phủ xem xét lại chế độ giáo dục.
+      pronunciation_note:
+        vi: てい đọc gần "tê-ê" - "tê-ê-ghên".
+      confusion:
+        vi: 提言 là kiến nghị nghiêm túc lên cơ quan, xã hội; 提案 là đề xuất nói chung (cả trong công việc hằng ngày).
+
+  - key: ja:item:n1-u4-kenkai
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 見解
+      reading: けんかい
+      romanization: kenkai
+      pos: danh từ
+    back:
+      meaning:
+        vi: quan điểm, kiến giải (chính thức); 見解を示す - nêu quan điểm
+      examples:
+        - target: この問題について、政府はまだ公式な見解を示していない。
+          translation:
+            vi: Về vấn đề này, chính phủ vẫn chưa đưa ra quan điểm chính thức.
+      pronunciation_note:
+        vi: Đọc "kên-cai".
+      confusion:
+        vi: 見解 là quan điểm chính thức, có cân nhắc (của tổ chức, chuyên gia); 意見 là ý kiến nói chung.

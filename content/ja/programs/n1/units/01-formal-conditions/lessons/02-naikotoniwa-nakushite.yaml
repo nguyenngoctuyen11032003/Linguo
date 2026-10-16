@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u1-naikotoniwa-nakushite
+order_index: 2
+level: n1
+title:
+  vi: Không có... thì không thể - ～ないことには và ～なくして(は)
+objectives:
+  - vi: Dùng V-ないことには để nêu điều kiện bắt buộc, kèm vế sau phủ định.
+  - vi: Dùng N + なくして(は) trong văn trang trọng, diễn văn, lời cảm ơn.
+  - vi: Tránh ghép vế sau khẳng định, tích cực với hai mẫu này.
+estimated_minutes: 20
+skills: [grammar, writing]
+prerequisites: [ja:lesson:n1-u1-toareba-toatte]
+items:
+  - item: ja:item:n1-u1-gram-naikotoniwa
+  - item: ja:item:n1-u1-gram-nakushite
+  - item: ja:item:n1-u1-jitsubutsu
+  - item: ja:item:n1-u1-naritatsu
+  - item: ja:item:n1-u1-shien
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "chưa thử thì chưa biết được" và viết được câu cảm ơn trang trọng kiểu "nếu không có sự hỗ trợ của quý vị thì dự án đã không thể thành công".
+  - type: explain
+    text:
+      vi: 'V-ないことには - "nếu không (làm)... thì...". Gắn vào thể ない: 見ないことには, 使ってみないことには, 本人に聞かないことには. Vế sau gần như luôn là phủ định hoặc ý "không tiến được": 分からない, 決められない, 始まらない, 何とも言えない.'
+  - type: explain
+    text:
+      vi: 'N + なくして(は) - "nếu không có N thì...". Gắn thẳng vào danh từ (thường là danh từ trừu tượng: 努力, 協力, 支援, 信頼, 愛): 努力なくして成功はない. Có は thì nhấn mạnh hơn. Vế sau cũng phủ định.'
+  - type: explain
+    text:
+      vi: 'Phân vai: ないことには đi với hành động (động từ) và dùng được cả trong hội thoại; なくして(は) đi với danh từ và thuộc văn viết, diễn văn.'
+  - type: deep_explain
+    text:
+      vi: Cả hai mẫu đều có cấu trúc "A là điều kiện tiên quyết; thiếu A thì B không xảy ra". Vì thế câu khẳng định như 頑張らないことには、合格できる là vô nghĩa. Trong lời cảm ơn, người Nhật hay dùng quá khứ - 皆様のご支援なくしては、この成功はありませんでした - để nói "thành công này có được là nhờ quý vị" một cách khiêm tốn. Không nhầm với V-ずして (văn cổ, "không làm mà vẫn...") - 戦わずして勝つ.
+  - type: example
+    target: 実物を見ないことには、買うかどうか決められない。
+    target_lang: ja
+    translation:
+      vi: Chưa xem tận mắt hàng thật thì tôi chưa thể quyết có mua hay không.
+    note:
+      vi: 見る → 見ない + ことには; vế sau 決められない là phủ định.
+  - type: example
+    target: 本人に聞いてみないことには、本当の理由は分からない。
+    target_lang: ja
+    translation:
+      vi: Chưa hỏi chính người đó thì không biết được lý do thật.
+  - type: example
+    target: 努力なくして成功はない。
+    target_lang: ja
+    translation:
+      vi: Không có nỗ lực thì không có thành công.
+    note:
+      vi: Danh từ 努力 gắn thẳng, không có trợ từ.
+  - type: example
+    target: 皆様のご支援なくしては、この計画は成り立ちませんでした。
+    target_lang: ja
+    translation:
+      vi: Nếu không có sự hỗ trợ của quý vị thì kế hoạch này đã không thể thành hình.
+    note:
+      vi: Câu cảm ơn trang trọng; ご支援 là cách nói kính trọng.
+  - type: common_mistake
+    wrong: 行ってみないことには、楽しいです。
+    right: 行ってみないことには、楽しいかどうか分かりません。
+    target_lang: ja
+    note:
+      vi: Vế sau của ないことには phải mang ý "không thể / chưa biết". Người Việt hay hiểu ないことには chỉ là "nếu không" nên nối với vế khẳng định.
+  - type: common_mistake
+    wrong: 努力をなくして成功はない。
+    right: 努力なくして成功はない。
+    target_lang: ja
+    note:
+      vi: Thêm を biến なくして thành động từ なくす (làm mất) - "làm mất nỗ lực". Mẫu なくして gắn thẳng vào danh từ.
+  - type: summary
+    points:
+      - vi: V-ないことには + phủ định - "không làm... thì không thể...".
+      - vi: N + なくして(は) + phủ định - "không có N thì không thể..." (văn viết, diễn văn).
+      - vi: なくして gắn thẳng danh từ, không có を/が.
+      - vi: 実物 - đồ thật; 成り立つ - đứng vững, thành hình; 支援 - hỗ trợ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-gram-naikotoniwa
+    prompt:
+      stem: "「実際に使ってみないことには、いいかどうか分からない。」 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a2c, text: "Chưa dùng thử thực tế thì chưa biết có tốt hay không.", lang: vi }
+        - { id: b7f, text: "Dù không dùng thử thì cũng biết là tốt.", lang: vi }
+        - { id: c4j, text: "Đã dùng thử rồi nhưng vẫn không biết có tốt không.", lang: vi }
+        - { id: d9m, text: "Không nên dùng thử vì không biết có tốt không.", lang: vi }
+    answer:
+      correct_option_id: a2c
+    explanation:
+      vi: ないことには - "nếu không (làm)... thì"; vế sau 分からない - chưa biết được. Câu không nói việc đã dùng hay lời khuyên đừng dùng.
+    display_answer: "Chưa dùng thử thực tế thì chưa biết có tốt hay không."
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-listen-doryoku
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-gram-nakushite
+    prompt:
+      audio_asset_id: null
+      fallback_text: 努力なくして成功はない。
+      options:
+        - { id: e3p, text: Không có nỗ lực thì không có thành công., lang: vi }
+        - { id: f8s, text: Dù không nỗ lực vẫn có thể thành công., lang: vi }
+        - { id: g1v, text: Đã nỗ lực nhưng không thành công., lang: vi }
+        - { id: h6y, text: Thành công rồi thì không cần nỗ lực nữa., lang: vi }
+    answer:
+      correct_option_id: e3p
+    explanation:
+      vi: 努力なくして - "không có nỗ lực"; 成功はない - không có thành công. Nỗ lực là điều kiện tiên quyết.
+    display_answer: Không có nỗ lực thì không có thành công.
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-mcq-form
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-naikotoniwa
+    prompt:
+      stem: 'Chọn dạng đúng: 「本人に＿＿、本当の理由は分からない。」 (聞く)'
+      stem_lang: vi
+      options:
+        - { id: i5a, text: 聞かないことには, lang: ja }
+        - { id: j2b, text: 聞くないことには, lang: ja }
+        - { id: k8c, text: 聞かなくして, lang: ja }
+        - { id: l4d, text: 聞いたことには, lang: ja }
+    answer:
+      correct_option_id: i5a
+    explanation:
+      vi: ことには gắn vào thể ない - 聞く → 聞かない → 聞かないことには. なくして gắn vào danh từ, không gắn vào động từ.
+    display_answer: 聞かないことには
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-fill-kyouryoku
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-nakushite
+    prompt:
+      template: "皆さんの協力{{b1}}、このイベントは実現できませんでした。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Nếu không có sự hợp tác của mọi người thì sự kiện này đã không thể thực hiện được."
+        - "Gợi ý: mẫu \"không có N thì\" gắn thẳng vào danh từ, có thể thêm は."
+    answer:
+      blanks:
+        b1: [なくしては, なくして, なしには, なしでは]
+    known_wrong:
+      - answer: をなくして
+        feedback_vi: Thêm を thì なくして thành "làm mất". Gắn thẳng - 協力なくして(は).
+        error_tag: nakushite_particle
+      - answer: ないことには
+        feedback_vi: ないことには gắn vào động từ thể ない; sau danh từ 協力 dùng なくして(は).
+        error_tag: naikotoniwa_noun
+    explanation:
+      vi: 協力なくしては - "nếu không có sự hợp tác"; vế sau phủ định quá khứ - lời cảm ơn trang trọng. なしには / なしでは cùng nghĩa, ít trang trọng hơn.
+    display_answer: 皆さんの協力なくしては、このイベントは実現できませんでした。
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-wb-jitsubutsu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-jitsubutsu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Chưa xem đồ thật thì tôi chưa nói được gì.\""
+      tokens:
+        - { id: q3, text: 何とも言えません }
+        - { id: q4, text: 見たことには }
+        - { id: q1, text: 実物を }
+        - { id: q2, text: 見ないことには }
+    answer:
+      orders:
+        - [q1, q2, q3]
+    explanation:
+      vi: 見る → 見ない + ことには; 何とも言えません - không nói được gì (chưa thể đánh giá). 見たことには không phải là mẫu ngữ pháp.
+    display_answer: 実物を見ないことには、何とも言えません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-fill-hajimaru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-naikotoniwa
+    prompt:
+      template: "部長が{{b1}}ことには、会議は始まらない。(来る)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [来ない, こない]
+    known_wrong:
+      - answer: 来なく
+        feedback_vi: ことには gắn vào thể ない nguyên dạng - 来ない.
+        error_tag: nai_form
+      - answer: 来る
+        feedback_vi: Mẫu là V-ないことには - phải dùng thể phủ định 来ない.
+        error_tag: nai_form
+    explanation:
+      vi: 来る → 来ない (こない). 来ないことには、会議は始まらない - trưởng phòng chưa đến thì cuộc họp chưa bắt đầu được.
+    display_answer: 部長が来ないことには、会議は始まらない。
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-translate-kimerarenai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-naikotoniwa
+    prompt:
+      source_text: Chưa xem hàng thật thì tôi không thể quyết định được. (dùng ないことには)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 実物を見ないことには、決められません。
+        - 実物を見ないことには、決められない。
+        - 実物を見ないことには、決めることができません。
+        - 実物を見ないことには、決めることができない。
+        - 実物を見ないことには、判断できません。
+        - 実物を見ないことには、判断できない。
+        - 実物を見ないことには、決定できません。
+        - 実物を見ないことには、何も決められません。
+        - 実物を見ないことには、私は決められません。
+        - 実際の商品を見ないことには、決められません。
+        - 現物を見ないことには、決められません。
+        - じつぶつをみないことには、きめられません。
+    known_wrong:
+      - answer: 実物を見ないことには、決められます。
+        feedback_vi: Vế sau của ないことには phải là phủ định - 決められません.
+        error_tag: naikotoniwa_positive
+      - answer: 実物を見るないことには、決められません。
+        feedback_vi: Thể ない của 見る là 見ない.
+        error_tag: nai_form
+    explanation:
+      vi: 実物 - đồ thật; 見ないことには + 決められません - không thể quyết.
+    display_answer: 実物を見ないことには、決められません。
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-translate-shinrai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u1-naritatsu
+    prompt:
+      source_text: Không có lòng tin của khách hàng thì việc kinh doanh không đứng vững được. (dùng なくして và 成り立つ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 客の信頼なくして、商売は成り立たない。
+        - 客の信頼なくしては、商売は成り立たない。
+        - 客の信頼なくして、商売は成り立ちません。
+        - 客の信頼なくしては、商売は成り立ちません。
+        - お客様の信頼なくして、商売は成り立たない。
+        - お客様の信頼なくしては、商売は成り立たない。
+        - お客様の信頼なくして、商売は成り立ちません。
+        - お客様の信頼なくしては、商売は成り立ちません。
+        - 顧客の信頼なくして、商売は成り立たない。
+        - 顧客の信頼なくしては、商売は成り立たない。
+        - 顧客の信頼なくして、ビジネスは成り立たない。
+        - 顧客の信頼なくしては、ビジネスは成り立ちません。
+        - お客様の信頼なくして、ビジネスは成り立ちません。
+        - 客の信頼なくして、ビジネスは成り立たない。
+        - お客さんの信頼なくして、商売は成り立たない。
+        - お客さんの信頼なくしては、商売は成り立ちません。
+    known_wrong:
+      - answer: 客の信頼をなくして、商売は成り立たない。
+        feedback_vi: を làm なくして thành động từ "làm mất". Gắn thẳng - 信頼なくして.
+        error_tag: nakushite_particle
+      - answer: 客の信頼なくして、商売は成り立つ。
+        feedback_vi: Vế sau phải là phủ định - 成り立たない.
+        error_tag: nakushite_positive
+    explanation:
+      vi: 信頼なくして(は) - không có lòng tin; 商売が成り立つ - việc buôn bán đứng vững; phủ định 成り立たない.
+    display_answer: 客の信頼なくして、商売は成り立たない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-mcq-speech
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-shien
+    prompt:
+      stem: Trong bài phát biểu tổng kết dự án, bạn muốn cảm ơn các nhà tài trợ một cách trang trọng. Câu nào hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: m6e, text: 皆様のご支援なくしては、この成功はありませんでした。, lang: ja }
+        - { id: n3g, text: 皆様のご支援をなくしては、この成功はありませんでした。, lang: ja }
+        - { id: o8k, text: 皆様のご支援がないことには、成功しました。, lang: ja }
+        - { id: p1n, text: 皆様のご支援なくしても、この成功はありました。, lang: ja }
+    answer:
+      correct_option_id: m6e
+    explanation:
+      vi: ご支援なくしては + phủ định quá khứ là câu cảm ơn khiêm tốn quen thuộc. Thêm を sai mẫu; ないことには + vế khẳng định vô nghĩa; なくしても ngược ý.
+    display_answer: 皆様のご支援なくしては、この成功はありませんでした。
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-gram-naikotoniwa
+    prompt:
+      source_text: 健康でないことには、どんな夢も実現できない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không khoẻ mạnh thì không thể thực hiện bất cứ ước mơ nào.
+        - Không khoẻ mạnh thì không thể thực hiện được bất cứ ước mơ nào.
+        - Nếu không khoẻ mạnh thì không thể thực hiện bất cứ ước mơ nào.
+        - Nếu không khoẻ mạnh thì không thể thực hiện được ước mơ nào cả.
+        - Nếu không có sức khoẻ thì không thể thực hiện bất cứ ước mơ nào.
+        - Không có sức khoẻ thì không thể thực hiện được ước mơ nào.
+        - Không có sức khoẻ thì ước mơ nào cũng không thể thực hiện được.
+        - Không khoẻ mạnh thì ước mơ nào cũng không thực hiện được.
+        - Nếu không khoẻ thì không thể thực hiện bất kỳ ước mơ nào.
+        - Không khoẻ thì không ước mơ nào thực hiện được.
+        - Nếu không khỏe mạnh thì không thể thực hiện bất cứ ước mơ nào.
+        - Không có sức khỏe thì không thể thực hiện được ước mơ nào.
+        - Nếu không có sức khỏe thì ước mơ nào cũng không thể thực hiện được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Dù không khoẻ mạnh vẫn có thể thực hiện ước mơ.
+        feedback_vi: ないことには + 実現できない là "không... thì không thể", không phải nhượng bộ.
+        error_tag: naikotoniwa_meaning
+    explanation:
+      vi: 健康でない (không khoẻ mạnh) + ことには; どんな夢も実現できない - ước mơ nào cũng không thể thực hiện.
+    display_answer: Không khoẻ mạnh thì không thể thực hiện bất cứ ước mơ nào.
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-wb-shien
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-nakushite
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Không có sự hỗ trợ của bà con địa phương thì lễ hội này không thể tiếp tục.\""
+      tokens:
+        - { id: z4, text: 続けられません }
+        - { id: z1, text: 地域の皆さんの }
+        - { id: z5, text: 支援をなくしては }
+        - { id: z3, text: この祭りは }
+        - { id: z2, text: 支援なくしては }
+    answer:
+      orders:
+        - [z1, z2, z3, z4]
+    explanation:
+      vi: 支援なくしては gắn thẳng, không có を. Vế sau 続けられません là phủ định khả năng.
+    display_answer: 地域の皆さんの支援なくしては、この祭りは続けられません。
+
+  - key: ja:exercise:n1-u1-naikotoniwa-nakushite-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-nakushite
+    prompt:
+      stem: Câu nào đúng ngữ pháp và tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: r5t, text: 試してみないことには、効果があるかどうか分からない。, lang: ja }
+        - { id: s2w, text: 試してみなくしては、効果があるかどうか分からない。, lang: ja }
+        - { id: u7x, text: 試してみないことには、きっと効果がある。, lang: ja }
+        - { id: v9z, text: 試すなくして、効果は分からない。, lang: ja }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: Động từ dùng ないことには + vế phủ định (分からない). なくして chỉ gắn vào danh từ nên 試してみなくして, 試すなくして sai; vế khẳng định (きっと効果がある) không hợp với ないことには.
+    display_answer: 試してみないことには、効果があるかどうか分からない。

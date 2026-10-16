@@ -104,15 +104,16 @@ jobs:
           deno test --allow-env
 
   e2e:
-    name: Playwright (iPhone / Android) ${{ matrix.shard }}/3
+    name: Playwright (iPhone / Android) ${{ matrix.shard }}/4
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     # Six device projects on one runner took ~30 min and the runner started getting shut down mid-run,
-    # so the suite is split across three runners.
+    # so the suite is split across four runners with one worker each. The background loop logs free memory so a
+    # runner that is shut down again leaves a trace of how close it was to running out.
     strategy:
       fail-fast: false
       matrix:
-        shard: [1, 2, 3]
+        shard: [1, 2, 3, 4]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
@@ -124,7 +125,10 @@ jobs:
       - name: Install Playwright browsers
         run: pnpm --filter @linguo/web exec playwright install --with-deps chromium webkit
       - run: pnpm --filter @linguo/web build:e2e
-      - run: pnpm --filter @linguo/web exec playwright test --shard=${{ matrix.shard }}/3
+      - name: Playwright (shard ${{ matrix.shard }}/4)
+        run: |
+          (while true; do free -m | awk 'NR==2 {print "[mem] used=" $3 "MB available=" $7 "MB"}'; sleep 15; done) &
+          pnpm --filter @linguo/web exec playwright test --shard=${{ matrix.shard }}/4 --workers=1
       - name: Upload Playwright report (screenshots for review)
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2

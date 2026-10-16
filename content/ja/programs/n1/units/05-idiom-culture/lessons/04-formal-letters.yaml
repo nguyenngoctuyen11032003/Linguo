@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u5-formal-letters
+order_index: 4
+level: n1
+title:
+  vi: Thư từ trang trọng - 拝啓 / 敬具, 時候の挨拶
+objectives:
+  - vi: Nắm bố cục thư trang trọng - 頭語, 時候の挨拶, lời chào an khang, nội dung, lời kết, 結語.
+  - vi: Ghép đúng cặp 頭語 - 結語 (拝啓 - 敬具, 前略 - 草々) và chọn lời chào theo mùa.
+  - vi: Dùng các câu cố định trang trọng - ご清栄, 平素は～, 略儀ながら, ご自愛ください.
+estimated_minutes: 25
+skills: [writing, reading, vocabulary]
+prerequisites: [ja:lesson:n1-u5-yoji-jukugo]
+items:
+  - item: ja:item:n1-u5-haikei-keigu
+  - item: ja:item:n1-u5-zenryaku-sousou
+  - item: ja:item:n1-u5-jikou-no-aisatsu
+  - item: ja:item:n1-u5-gosei-ei
+  - item: ja:item:n1-u5-heiso
+  - item: ja:item:n1-u5-ryakugi
+  - item: ja:item:n1-u5-gojiai
+body:
+  - type: objective
+    text:
+      vi: Thư tay và văn bản trang trọng của Nhật (thư cảm ơn, thư thông báo, thư gửi đối tác) có khuôn rất chặt. Sau bài này, bạn đọc hiểu và tự viết được phần mở đầu, kết thúc của một lá thư đúng lễ nghi.
+  - type: explain
+    text:
+      vi: 'Bố cục: ① 頭語 (拝啓) → ② 時候の挨拶 (新緑の候 / 厳しい寒さが続いておりますが) → ③ lời chào an khang (貴社ますますご清栄のこととお喜び申し上げます) → ④ cảm ơn (平素は格別のお引き立てを賜り、厚く御礼申し上げます) → ⑤ nội dung (さて、～) → ⑥ lời chúc (時節柄、ご自愛ください) → ⑦ lời kết (まずは略儀ながら書中にてご挨拶申し上げます) → ⑧ 結語 (敬具).'
+  - type: explain
+    text:
+      vi: 'Cặp 頭語 - 結語: 拝啓 - 敬具 (thông thường); 謹啓 - 謹白 (rất trang trọng); 前略 - 草々 (lược lời chào, viết gấp); 拝復 - 敬具 (thư trả lời). Lời chào mùa dạng 〇〇の候: 新春の候 (tháng 1), 陽春の候 (tháng 4), 新緑の候 (tháng 5), 盛夏の候 (tháng 7), 初秋の候 (tháng 9), 師走の候 (tháng 12).'
+  - type: deep_explain
+    text:
+      vi: 'Văn thư trang trọng dùng từ Hán và kính ngữ cao: 平素 (= 普段), 賜る (khiêm nhường của もらう), 申し上げる, 貴社 (công ty quý vị) / 弊社 (công ty chúng tôi). Thư chia buồn thì bỏ 頭語 và 時候の挨拶, vào thẳng nội dung. Email công việc hiện đại thường bỏ 拝啓 / 敬具, nhưng thư giấy, thiệp và văn bản chính thức vẫn giữ.'
+  - type: example
+    target: 拝啓　新緑の候、貴社ますますご清栄のこととお喜び申し上げます。
+    target_lang: ja
+    translation:
+      vi: Kính gửi quý công ty. Giữa tiết cây lá xanh tươi, xin chúc mừng quý công ty ngày càng hưng thịnh.
+  - type: example
+    target: 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
+    target_lang: ja
+    translation:
+      vi: Xin chân thành cảm ơn quý công ty đã luôn đặc biệt ưu ái chúng tôi.
+  - type: example
+    target: 寒さ厳しき折、どうぞご自愛ください。
+    target_lang: ja
+    translation:
+      vi: Giữa lúc trời rét đậm, xin anh/chị hãy giữ gìn sức khoẻ.
+  - type: example
+    target: まずは略儀ながら書中にて御礼申し上げます。　敬具
+    target_lang: ja
+    translation:
+      vi: Trước hết, xin được gửi lời cảm ơn qua thư dù còn sơ sài. Kính thư.
+  - type: common_mistake
+    wrong: 拝啓　（本文）　草々
+    right: 拝啓　（本文）　敬具
+    target_lang: ja
+    note:
+      vi: 頭語 và 結語 phải đúng cặp - 拝啓 đi với 敬具; 草々 chỉ đi với 前略.
+  - type: common_mistake
+    wrong: お体をご自愛ください。
+    right: どうぞご自愛ください。
+    target_lang: ja
+    note:
+      vi: 自愛 đã có nghĩa "giữ gìn thân thể", thêm お体を là lặp nghĩa.
+  - type: summary
+    points:
+      - vi: 拝啓 - 敬具; 謹啓 - 謹白; 前略 - 草々 (bỏ 時候の挨拶).
+      - vi: 時候の挨拶 - 〇〇の候 hợp tháng (新緑の候 - tháng 5).
+      - vi: ますますご清栄のこととお喜び申し上げます - lời chào an khang.
+      - vi: 平素は格別のお引き立てを賜り、厚く御礼申し上げます - lời cảm ơn.
+      - vi: 時節柄、ご自愛ください; まずは略儀ながら書中にて～申し上げます - lời kết.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u5-formal-letters-mcq-keigu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-haikei-keigu
+    prompt:
+      stem: Lá thư mở đầu bằng 「拝啓」. Kết thư bằng từ nào?
+      stem_lang: vi
+      options:
+        - { id: k7f, text: 敬具, lang: ja }
+        - { id: w3b, text: 草々, lang: ja }
+        - { id: n5h, text: 前略, lang: ja }
+        - { id: g9d, text: 謹啓, lang: ja }
+    answer:
+      correct_option_id: k7f
+    explanation:
+      vi: 拝啓 - 敬具 là cặp tiêu chuẩn. 草々 đi với 前略; 前略 và 謹啓 là từ mở đầu.
+    display_answer: 敬具
+
+  - key: ja:exercise:n1-u5-formal-letters-listen-heiso
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u5-heiso
+    prompt:
+      audio_asset_id: null
+      fallback_text: 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
+      options:
+        - { id: a8u, text: Xin chân thành cảm ơn quý vị đã luôn đặc biệt ưu ái chúng tôi., lang: vi }
+        - { id: s4e, text: Xin lỗi vì thường ngày đã gây phiền hà cho quý vị., lang: vi }
+        - { id: o1p, text: Xin chúc mừng quý vị ngày càng hưng thịnh., lang: vi }
+        - { id: x6g, text: Xin quý vị hãy giữ gìn sức khoẻ., lang: vi }
+    answer:
+      correct_option_id: a8u
+    explanation:
+      vi: 平素 - thường ngày; お引き立て - sự ưu ái, nâng đỡ; 賜り - được ban cho (khiêm nhường); 厚く御礼申し上げます - xin chân thành cảm ơn.
+    display_answer: Xin chân thành cảm ơn quý vị đã luôn đặc biệt ưu ái chúng tôi.
+
+  - key: ja:exercise:n1-u5-formal-letters-mcq-season
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-jikou-no-aisatsu
+    prompt:
+      stem: Bạn viết thư vào tháng 5. Lời chào theo mùa nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: c2t, text: 新緑の候, lang: ja }
+        - { id: j6w, text: 師走の候, lang: ja }
+        - { id: e9r, text: 初秋の候, lang: ja }
+        - { id: v1n, text: 厳寒の候, lang: ja }
+    answer:
+      correct_option_id: c2t
+    explanation:
+      vi: 新緑の候 - tiết cây lá xanh non (tháng 5). 師走 - tháng 12; 初秋 - đầu thu (tháng 9); 厳寒 - rét đậm (tháng 1).
+    display_answer: 新緑の候
+
+  - key: ja:exercise:n1-u5-formal-letters-fill-seiei
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-gosei-ei
+    prompt:
+      template: "貴社ますますご{{b1}}のこととお喜び申し上げます。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Xin chúc mừng quý công ty ngày càng hưng thịnh."
+        - "Gợi ý: Hán Việt 'thanh vinh' - せいえい."
+    answer:
+      blanks:
+        b1: [清栄, せいえい]
+    known_wrong:
+      - answer: 自愛
+        feedback_vi: ご自愛 là lời chúc giữ sức khoẻ ở cuối thư. Chào an khang đầu thư là ご清栄.
+        error_tag: letter_phrase
+      - answer: せいえ
+        feedback_vi: Thiếu âm cuối - せいえい (清栄).
+        error_tag: reading
+    explanation:
+      vi: ますますご清栄のこととお喜び申し上げます - xin chúc mừng (quý vị) ngày càng hưng thịnh. Có thể thay bằng ご隆盛, ご発展 khi gửi công ty.
+    display_answer: 貴社ますますご清栄のこととお喜び申し上げます。
+
+  - key: ja:exercise:n1-u5-formal-letters-wb-ryakugi
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-ryakugi
+    prompt:
+      instruction: "Sắp xếp thành câu kết thư: \"Trước hết, xin được gửi lời cảm ơn qua thư dù còn sơ sài.\""
+      tokens:
+        - { id: r3, text: 書中にて }
+        - { id: r1, text: まずは }
+        - { id: r5, text: 草々ながら }
+        - { id: r4, text: 御礼申し上げます }
+        - { id: r2, text: 略儀ながら }
+    answer:
+      orders:
+        - [r1, r2, r3, r4]
+    explanation:
+      vi: まずは略儀ながら書中にて～申し上げます - câu kết cố định. 草々 là từ kết thư đi với 前略, không dùng với ながら.
+    display_answer: まずは略儀ながら書中にて御礼申し上げます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u5-formal-letters-fill-sousou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-zenryaku-sousou
+    prompt:
+      template: "{{b1}}　取り急ぎ用件のみ申し上げます。……　草々"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [前略, ぜんりゃく]
+    known_wrong:
+      - answer: 拝啓
+        feedback_vi: 拝啓 đi với 敬具. Kết bằng 草々 thì mở đầu là 前略.
+        error_tag: letter_pair
+      - answer: 謹啓
+        feedback_vi: 謹啓 (rất trang trọng) đi với 謹白 / 謹言, không đi với 草々.
+        error_tag: letter_pair
+    explanation:
+      vi: 前略 - 草々 - lược lời chào mùa, đi thẳng vào việc. 取り急ぎ - gấp nên xin.
+    display_answer: 前略　取り急ぎ用件のみ申し上げます。……　草々
+
+  - key: ja:exercise:n1-u5-formal-letters-fill-jiai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-gojiai
+    prompt:
+      template: "時節柄、どうぞご{{b1}}ください。(giữ gìn sức khoẻ)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [自愛, じあい]
+    known_wrong:
+      - answer: 清栄
+        feedback_vi: ご清栄 là lời chào an khang đầu thư. Chúc giữ sức khoẻ cuối thư là ご自愛ください.
+        error_tag: letter_phrase
+      - answer: 健康
+        feedback_vi: ご健康ください không đúng ngữ pháp. Dùng ご自愛ください hoặc ご健康をお祈りいたします.
+        error_tag: letter_phrase
+    explanation:
+      vi: 時節柄 - (vì) thời tiết lúc này; ご自愛ください - xin giữ gìn sức khoẻ.
+    display_answer: 時節柄、どうぞご自愛ください。
+
+  - key: ja:exercise:n1-u5-formal-letters-translate-heiso
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u5-heiso
+    prompt:
+      source_text: Xin chân thành cảm ơn quý vị đã luôn đặc biệt ưu ái. (câu cố định trong thư thương mại, mở đầu bằng 平素)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
+        - 平素は格別のお引き立てを賜り厚く御礼申し上げます。
+        - 平素は格別のお引き立てをいただき、厚く御礼申し上げます。
+        - 平素は格別のお引き立てを賜り、厚くお礼申し上げます。
+        - 平素は格別のお引き立てをいただき、厚くお礼申し上げます。
+        - 平素は格別のご愛顧を賜り、厚く御礼申し上げます。
+        - 平素は格別のご高配を賜り、厚く御礼申し上げます。
+        - 平素は格別のお引き立てを賜り、心より御礼申し上げます。
+        - 平素は格別のお引き立てを賜り、誠にありがとうございます。
+        - 平素より格別のお引き立てを賜り、厚く御礼申し上げます。
+        - 平素は格別のお引立てを賜り、厚く御礼申し上げます。
+        - へいそはかくべつのおひきたてをたまわり、あつくおんれいもうしあげます。
+    known_wrong:
+      - answer: 平素は格別のお引き立てをもらい、厚く御礼申し上げます。
+        feedback_vi: もらう quá thân mật trong văn thư; dùng khiêm nhường ngữ 賜り hoặc いただき.
+        error_tag: keigo_level
+      - answer: 平素は格別のお引き立てを賜り、厚くお詫び申し上げます。
+        feedback_vi: お詫び là xin lỗi; cảm ơn là 御礼.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 平素は - thường ngày; 格別のお引き立て - sự ưu ái đặc biệt; 賜り - được ban (khiêm nhường của もらう); 厚く御礼申し上げます - xin chân thành cảm ơn.
+    display_answer: 平素は格別のお引き立てを賜り、厚く御礼申し上げます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u5-formal-letters-mcq-order
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u5-jikou-no-aisatsu
+    prompt:
+      stem: Đoạn mở đầu thư nào đúng thứ tự và đúng lễ nghi?
+      stem_lang: vi
+      options:
+        - { id: m4k, text: 拝啓　陽春の候、貴社ますますご清栄のこととお喜び申し上げます。, lang: ja }
+        - { id: h7y, text: 敬具　陽春の候、貴社ますますご清栄のこととお喜び申し上げます。, lang: ja }
+        - { id: t1c, text: 拝啓　貴社ますますご清栄のこととお喜び申し上げます。陽春の候、ご自愛ください。, lang: ja }
+        - { id: b8s, text: 前略　陽春の候、貴社ますますご清栄のこととお喜び申し上げます。, lang: ja }
+    answer:
+      correct_option_id: m4k
+    explanation:
+      vi: Thứ tự đúng - 拝啓 → 時候の挨拶 (陽春の候) → lời chào an khang. 敬具 là từ kết; ご自愛ください đặt cuối thư; sau 前略 không viết 時候の挨拶.
+    display_answer: 拝啓　陽春の候、貴社ますますご清栄のこととお喜び申し上げます。
+
+  - key: ja:exercise:n1-u5-formal-letters-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u5-gojiai
+    prompt:
+      source_text: 寒さ厳しき折、どうぞご自愛ください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Giữa lúc trời rét đậm, xin anh chị hãy giữ gìn sức khoẻ.
+        - Giữa lúc trời rét đậm, xin hãy giữ gìn sức khoẻ.
+        - Giữa lúc trời rét đậm, xin quý vị hãy giữ gìn sức khoẻ.
+        - Giữa lúc trời rét đậm, kính chúc quý vị giữ gìn sức khoẻ.
+        - Trong lúc trời rét đậm, xin hãy giữ gìn sức khoẻ.
+        - Trong lúc trời lạnh khắc nghiệt, xin hãy giữ gìn sức khoẻ.
+        - Giữa lúc trời lạnh khắc nghiệt, xin hãy giữ gìn sức khoẻ.
+        - Giữa tiết trời giá lạnh, xin hãy giữ gìn sức khoẻ.
+        - Giữa tiết trời giá lạnh, xin quý vị hãy giữ gìn sức khoẻ.
+        - Trời đang rất lạnh, xin hãy giữ gìn sức khoẻ.
+        - Trời đang rét đậm, xin hãy giữ gìn sức khoẻ.
+        - Trời đang rất lạnh, xin hãy giữ gìn sức khỏe.
+        - Giữa lúc trời rét đậm, xin hãy giữ gìn sức khỏe.
+        - Giữa lúc trời rét đậm, xin hãy bảo trọng.
+        - Trời đang rất lạnh, xin hãy bảo trọng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trời đang rất lạnh, xin hãy yêu bản thân mình.
+        feedback_vi: ご自愛 là lời chúc "giữ gìn sức khoẻ" cố định trong thư, không dịch sát "tự yêu mình".
+        error_tag: letter_phrase
+    explanation:
+      vi: 寒さ厳しき折 - lúc cái lạnh khắc nghiệt (văn viết, 厳しき là dạng cổ của 厳しい); どうぞご自愛ください - xin hãy giữ gìn sức khoẻ.
+    display_answer: Giữa lúc trời rét đậm, xin hãy giữ gìn sức khoẻ.
+
+  - key: ja:exercise:n1-u5-formal-letters-wb-haikei
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u5-haikei-keigu
+    prompt:
+      instruction: "Sắp xếp thành phần mở đầu thư gửi công ty: \"Kính gửi. Giữa tiết đầu thu, xin chúc mừng quý công ty ngày càng hưng thịnh.\""
+      tokens:
+        - { id: h4, text: お喜び申し上げます }
+        - { id: h2, text: 初秋の候、 }
+        - { id: h6, text: 敬具 }
+        - { id: h1, text: 拝啓 }
+        - { id: h3, text: 貴社ますますご清栄のことと }
+        - { id: h5, text: 弊社ますますご清栄のことと }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: 拝啓 → 初秋の候 → 貴社 (công ty quý vị) ご清栄. 弊社 là công ty chúng tôi - không tự chúc mình; 敬具 là từ kết thư.
+    display_answer: 拝啓　初秋の候、貴社ますますご清栄のこととお喜び申し上げます。
+
+  - key: ja:exercise:n1-u5-formal-letters-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u5-ryakugi
+    prompt:
+      stem: "Đọc thư: 「拝啓　盛夏の候、ますますご清祥のこととお喜び申し上げます。さて、先日はご多忙の中、弊社の説明会にご参加いただき、誠にありがとうございました。……時節柄、ご自愛ください。まずは略儀ながら書中にて御礼申し上げます。　敬具」 Mục đích chính của lá thư là gì?"
+      stem_lang: vi
+      options:
+        - { id: q8m, text: Cảm ơn người nhận đã tham dự buổi giới thiệu của công ty., lang: vi }
+        - { id: f5w, text: Mời người nhận tham dự buổi giới thiệu sắp tới., lang: vi }
+        - { id: u2j, text: Xin lỗi vì buổi giới thiệu bị huỷ do thời tiết nóng., lang: vi }
+        - { id: l9e, text: Hỏi thăm sức khoẻ vì người nhận đang bị ốm., lang: vi }
+    answer:
+      correct_option_id: q8m
+    explanation:
+      vi: Nội dung chính nằm sau さて - 説明会にご参加いただき、誠にありがとうございました (cảm ơn đã tham dự); câu kết 書中にて御礼申し上げます cũng xác nhận đây là thư cảm ơn. 盛夏の候, ご自愛ください chỉ là lời chào khuôn mẫu.
+    display_answer: Cảm ơn người nhận đã tham dự buổi giới thiệu của công ty.

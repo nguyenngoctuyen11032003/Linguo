@@ -1,0 +1,555 @@
+# Học liệu unit "Kính ngữ và giao tiếp công việc" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: 丁重語 và cách nói trang trọng =================
+  - key: ja:item:n2-u3-gram-teichougo
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: 丁重語 (いたす · まいる · おる · 申す)
+      reading: ていちょうご
+      romanization: teichōgo
+      pos: kính ngữ trang trọng
+    back:
+      meaning:
+        vi: 'Lối nói hạ mình để tỏ ra trang trọng với NGƯỜI NGHE, không cần có người được nâng trong hành động: 来週から大阪へ出張にまいります; 本日は雨が降っております; 電車がまいります. Khác お～する (謙譲語 I) vốn cần một người nhận hành động.'
+      examples:
+        - target: 来月から大阪支社で勤務いたします。
+          translation:
+            vi: Từ tháng sau tôi sẽ làm việc ở chi nhánh Osaka.
+      pronunciation_note:
+        vi: ていちょうご - "tê-i-chô-ô-gô", ちょう kéo dài.
+      confusion:
+        vi: お送りする dùng được vì có người nhận đồ; お散歩する là sai vì đi dạo không hướng tới ai - phải nói 散歩いたします. Chủ ngữ của 丁重語 có thể là vật (電車, 雨) nhưng không bao giờ là người được tôn trọng.
+
+  - key: ja:item:n2-u3-gozaru
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: ござる (ございます · でございます)
+      romanization: gozaru
+      pos: động từ trang trọng
+    back:
+      meaning:
+        vi: 'Dạng trang trọng nhất của ある (ございます) và です (でございます): お手洗いはあちらにございます; こちらが会議室でございます. Phủ định - ございません.'
+      examples:
+        - target: 何かご不明な点はございませんか。
+          translation:
+            vi: Anh/chị có điểm nào chưa rõ không ạ?
+      pronunciation_note:
+        vi: Đọc "gô-dza-i-ma-xư"; でございます nói liền, không ngắt sau で.
+      confusion:
+        vi: でございます chỉ thay です sau danh từ, không dùng cho người được tôn trọng - với khách nói 山田様でいらっしゃいますか, không nói 山田様でございますか. Tính từ đuôi い (高い → 高うございます) rất cổ, ngày nay gần như chỉ còn ありがとうございます, おはようございます.
+
+  - key: ja:item:n2-u3-honjitsu
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 本日
+      reading: ほんじつ
+      romanization: honjitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: hôm nay (trang trọng của 今日)
+      examples:
+        - target: 本日はお忙しいところ、ありがとうございます。
+          translation:
+            vi: Cảm ơn anh/chị hôm nay đã dành thời gian dù rất bận.
+      pronunciation_note:
+        vi: ん trước じ đọc "n" - "hôn-ji-tsư".
+      confusion:
+        vi: 'Bộ từ trang trọng đi cùng: 今日 → 本日, 明日 → 明日 (みょうにち), 昨日 → 昨日 (さくじつ), 今 → ただいま, この前 → 先日. 本日中 - trong ngày hôm nay.'
+
+  - key: ja:item:n2-u3-myounichi
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 明日
+      reading: みょうにち
+      romanization: myōnichi
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày mai (cách đọc trang trọng); 昨日 đọc さくじつ - hôm qua (trang trọng)
+      examples:
+        - target: 明日、改めてご連絡いたします。
+          translation:
+            vi: Ngày mai tôi sẽ liên lạc lại với anh/chị ạ.
+      pronunciation_note:
+        vi: みょう kéo dài - "myô-ô-ni-chi". Cùng chữ 明日 nhưng đọc あした là thường ngày, あす là lịch sự, みょうにち là trang trọng nhất.
+      confusion:
+        vi: Viết thì giống nhau, khác ở cách đọc - khi nghe điện thoại hay thông báo phải nhận ra みょうにち, さくじつ. 明後日 trang trọng đọc みょうごにち.
+
+  - key: ja:item:n2-u3-sakihodo
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 先ほど
+      reading: さきほど
+      romanization: sakihodo
+      pos: phó từ / danh từ
+    back:
+      meaning:
+        vi: lúc nãy, vừa rồi (trang trọng của さっき); đối lại 後ほど (のちほど) - lát nữa (trang trọng của あとで)
+      examples:
+        - target: 先ほどお電話いたしましたグエンでございます。
+          translation:
+            vi: Tôi là Nguyễn, người vừa gọi điện lúc nãy ạ.
+      pronunciation_note:
+        vi: Đọc "xa-ki-hô-đô"; 後ほど đọc "nô-chi-hô-đô", không đọc あとほど.
+      confusion:
+        vi: 先ほど chỉ quá khứ gần trong ngày (vài phút đến vài giờ); chuyện hôm trước dùng 先日. 後ほど là tương lai gần - 後ほど折り返しご連絡いたします.
+
+  - key: ja:item:n2-u3-kochira
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: こちら · そちら
+      romanization: kochira / sochira
+      pos: đại từ chỉ phương hướng
+    back:
+      meaning:
+        vi: 'Trang trọng của ここ/これ/この人 và そこ/それ; trong công việc còn có nghĩa "phía chúng tôi" và "phía quý vị": こちらから改めてご連絡いたします; そちらの担当の方.'
+      examples:
+        - target: こちらは弊社の部長の佐藤でございます。
+          translation:
+            vi: Đây là ông Sato, trưởng phòng của công ty chúng tôi.
+      pronunciation_note:
+        vi: Đọc "kô-chi-ra", "xô-chi-ra"; ち không đọc thành "ti".
+      confusion:
+        vi: 'Giới thiệu người dùng こちらは～, không dùng この人 hay これ. Công ty mình trong văn trang trọng là 弊社 (へいしゃ), công ty người kia là 御社 (nói) / 貴社 (viết).'
+
+  # ================= bài 2: viết email công việc =================
+  - key: ja:item:n2-u3-gram-sasete-itadaku
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V(sai khiến)-ていただく (～させていただく)
+      romanization: -sasete itadaku
+      pos: xin phép làm (khiêm nhường)
+    back:
+      meaning:
+        vi: '"Xin phép được làm..." - làm việc gì đó nhờ có sự cho phép hoặc ơn của người kia: 資料を拝見させていただきました; 本日は欠席させていただきます. Nhóm 1 → ～せていただく (休ませて), nhóm 2/3 → ～させていただく (説明させて).'
+      examples:
+        - target: 来週の打ち合わせについて、日程を変更させていただけないでしょうか。
+          translation:
+            vi: Về buổi trao đổi tuần sau, cho phép tôi đổi lịch được không ạ?
+      pronunciation_note:
+        vi: させて đọc rõ âm ngắt - "xa-xê-tê i-ta-đa-ku".
+      confusion:
+        vi: Chỉ dùng khi thật sự có sự cho phép hoặc ơn của người kia; lạm dụng (担当させていただいておりますグエンです) nghe vòng vo. Lỗi さ入れ - 読まさせていただく là sai, đúng là 読ませていただく. 拝見させていただく là kính ngữ chồng nhưng đã thành quen dùng, vẫn chấp nhận.
+
+  - key: ja:item:n2-u3-gram-o-negaimasu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: お V(ます bỏ ます) 願います · ご N 願います
+      romanization: o ... negaimasu
+      pos: yêu cầu trang trọng
+    back:
+      meaning:
+        vi: '"Xin vui lòng..." - yêu cầu trang trọng, ngắn gọn, hay gặp trong email, thông báo: ご確認願います; お早めにお越し願います; ご協力をお願いいたします. Mềm hơn nữa - ご確認のほど、よろしくお願いいたします.'
+      examples:
+        - target: 出席の可否を今週中にご連絡願います。
+          translation:
+            vi: Xin vui lòng báo việc có tham dự hay không trong tuần này.
+      pronunciation_note:
+        vi: 願います - "nê-ga-i-ma-xư".
+      confusion:
+        vi: お/ご～願います vẫn là mệnh lệnh lịch sự, nghe hơi cứng khi gửi cấp trên hay khách quan trọng - khi đó dùng ～ていただけますでしょうか hoặc ご～のほどお願い申し上げます. Không chen して - ご確認して願います là sai.
+
+  - key: ja:item:n2-u3-osoreirimasu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: 恐れ入りますが
+      reading: おそれいりますが
+      romanization: osoreirimasu ga
+      pos: cụm mở lời
+    back:
+      meaning:
+        vi: xin thứ lỗi, xin phép làm phiền... (cụm đệm trước khi nhờ vả, hỏi hoặc nói điều khó nghe với người trên, khách)
+      examples:
+        - target: 恐れ入りますが、お名前をもう一度伺ってもよろしいでしょうか。
+          translation:
+            vi: Xin thứ lỗi, cho phép tôi hỏi lại tên anh/chị được không ạ?
+      pronunciation_note:
+        vi: Đọc "ô-xô-rê-i-ri-ma-xư-ga"; れい là hai âm れ + い.
+      confusion:
+        vi: 'Mức trang trọng: すみませんが < 申し訳ありませんが < 恐れ入りますが. 恐れ入ります đứng một mình còn dùng để cảm ơn khi được khen, được giúp ("thật quá ngại").'
+
+  - key: ja:item:n2-u3-otesuu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, writing]
+    front:
+      text: お手数
+      reading: おてすう
+      romanization: otesū
+      pos: danh từ
+    back:
+      meaning:
+        vi: công sức, sự phiền hà (người kia phải bỏ ra vì mình); お手数ですが / お手数をおかけしますが - xin lỗi làm phiền anh/chị
+      examples:
+        - target: お手数をおかけしますが、ご確認をお願いいたします。
+          translation:
+            vi: Xin lỗi đã làm phiền, mong anh/chị kiểm tra giúp.
+      pronunciation_note:
+        vi: Đọc "ô-tê-xư-u"; cũng có người đọc おてかず nhưng てすう phổ biến hơn.
+      confusion:
+        vi: お手数 đặt TRƯỚC lời nhờ (お手数ですが…); sau khi người kia đã làm thì cảm ơn bằng お手数をおかけしました hoặc ありがとうございました. Đừng nhầm với 手数料 (phí dịch vụ).
+
+  - key: ja:item:n2-u3-kaki
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 下記
+      reading: かき
+      romanization: kaki
+      pos: danh từ
+    back:
+      meaning:
+        vi: (nội dung) ghi dưới đây; 上記 (じょうき) - ghi ở trên
+      examples:
+        - target: 打ち合わせの日時は下記の通りです。
+          translation:
+            vi: Thời gian buổi trao đổi như sau (ghi dưới đây).
+      pronunciation_note:
+        vi: Đọc "ka-ki", giống âm 柿 (quả hồng) nhưng ngữ cảnh khác hẳn.
+      confusion:
+        vi: 下記の通り - như dưới đây (thường mở đầu phần liệt kê); 以下 cũng nghĩa "dưới đây" nhưng ít trang trọng hơn. Không dùng 下記 trong hội thoại nói.
+
+  - key: ja:item:n2-u3-gram-te-itadakereba-saiwai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: V-ていただければ幸いです
+      reading: ～ていただければさいわいです
+      romanization: -te itadakereba saiwai desu
+      pos: nhờ vả rất mềm (văn viết)
+    back:
+      meaning:
+        vi: '"Nếu anh/chị ... giúp thì tôi rất lấy làm vui/biết ơn" - lời nhờ mềm, không ép, hay dùng cuối email: ご意見をお聞かせいただければ幸いです; ご検討いただければ幸いです.'
+      examples:
+        - target: 今週中にご返信いただければ幸いです。
+          translation:
+            vi: Nếu anh/chị phản hồi trong tuần này thì tôi rất biết ơn.
+      pronunciation_note:
+        vi: 幸い - "xa-i-oa-i".
+      confusion:
+        vi: Dùng cho việc mong muốn nhưng không bắt buộc; việc bắt buộc, có hạn gấp nên viết rõ - ～までにご返信いただけますでしょうか. Trang trọng hơn nữa - 幸いに存じます.
+
+  # ================= bài 3: nghe gọi điện thoại công việc =================
+  - key: ja:item:n2-u3-toritsugu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 取り次ぐ
+      reading: とりつぐ
+      romanization: toritsugu
+      pos: động từ nhóm 1
+    back:
+      meaning:
+        vi: chuyển (máy, lời nhắn) cho người khác; 取り次ぎ - việc chuyển máy, chuyển lời
+      examples:
+        - target: 恐れ入りますが、営業部の田中様にお取り次ぎいただけますか。
+          translation:
+            vi: Xin thứ lỗi, anh/chị có thể chuyển máy cho anh Tanaka phòng kinh doanh được không ạ?
+      pronunciation_note:
+        vi: Đọc "tô-ri-tsư-gư"; つ đọc "tsư".
+      confusion:
+        vi: Người gọi nhờ - お取り次ぎいただけますか / お取り次ぎ願えますか; người nghe máy nói 田中におつなぎします hoặc 田中に代わります. つなぐ (nối máy) dùng nhiều hơn khi nói về hành động của mình.
+
+  - key: ja:item:n2-u3-dengon
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 伝言
+      reading: でんごん
+      romanization: dengon
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nhắn; ご伝言 - lời nhắn của khách (kính ngữ)
+      examples:
+        - target: よろしければ、ご伝言を承りましょうか。
+          translation:
+            vi: Nếu anh/chị muốn, tôi xin nhận lời nhắn nhé?
+      pronunciation_note:
+        vi: Hai ん - "đên-gôn"; ん trước ご đọc "ng".
+      confusion:
+        vi: Người gọi xin để lại lời nhắn - ご伝言をお願いできますか; người nghe máy nói ご伝言を承ります. Lời nhắn để lại trên máy là 留守番電話のメッセージ.
+
+  - key: ja:item:n2-u3-uketamawaru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 承る
+      reading: うけたまわる
+      romanization: uketamawaru
+      pos: động từ nhóm 1 (khiêm nhường)
+    back:
+      meaning:
+        vi: '(khiêm nhường) nhận, nghe, tiếp nhận (yêu cầu, lời nhắn, đơn hàng của khách): ご注文を承りました; ご伝言を承ります.'
+      examples:
+        - target: 確かに承りました。田中に申し伝えます。
+          translation:
+            vi: Tôi đã ghi nhận đầy đủ. Tôi sẽ chuyển lời đến anh Tanaka.
+      pronunciation_note:
+        vi: Năm âm - "u-kê-ta-ma-oa-ru"; dễ nói vấp, nên luyện chậm.
+      confusion:
+        vi: Cùng chữ 承 với 承知 nhưng 承る là động từ khiêm nhường của 受ける/聞く. Không dùng cho khách - khách 'nhận' là お受け取りになる.
+
+  - key: ja:item:n2-u3-moushitsutaeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 申し伝える
+      reading: もうしつたえる
+      romanization: mōshitsutaeru
+      pos: động từ nhóm 2 (khiêm nhường)
+    back:
+      meaning:
+        vi: (khiêm nhường) chuyển lời (của khách) đến người phía mình
+      examples:
+        - target: 戻りましたら、そのように申し伝えます。
+          translation:
+            vi: Khi anh ấy quay lại, tôi sẽ chuyển lời như vậy ạ.
+      pronunciation_note:
+        vi: Đọc "mô-ô-si-tsư-ta-ê-ru".
+      confusion:
+        vi: Chỉ dùng khi chuyển lời đến người PHE MÌNH (đồng nghiệp). Nhờ khách chuyển lời giúp đến người bên họ thì nói お伝えいただけますか; nhắn chuyển lời cho cấp trên mình trong nội bộ dùng お伝えします.
+
+  - key: ja:item:n2-u3-ainiku
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, listening]
+    front:
+      text: あいにく
+      romanization: ainiku
+      pos: phó từ
+    back:
+      meaning:
+        vi: không may là, tiếc là (báo tin không như người kia mong)
+      examples:
+        - target: あいにく田中は本日休みを取っております。
+          translation:
+            vi: Tiếc là hôm nay anh Tanaka nghỉ phép ạ.
+      pronunciation_note:
+        vi: Đọc "a-i-ni-ku", bốn âm đều nhau.
+      confusion:
+        vi: あいにく dùng cho việc ngoài ý muốn của cả hai bên (vắng mặt, hết hàng, trời mưa); không dùng cho chuyện mình cố ý từ chối. Đứng trước thông tin xấu, thường sau 申し訳ございません.
+
+  - key: ja:item:n2-u3-nen-no-tame
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 念のため
+      reading: ねんのため
+      romanization: nen no tame
+      pos: cụm phó từ
+    back:
+      meaning:
+        vi: để cho chắc, phòng khi (xác nhận lại thông tin)
+      examples:
+        - target: 念のため、お電話番号を伺ってもよろしいでしょうか。
+          translation:
+            vi: Để cho chắc, cho phép tôi hỏi số điện thoại của anh/chị được không ạ?
+      pronunciation_note:
+        vi: ん trước の đọc "n" - "nên-nô-ta-mê".
+      confusion:
+        vi: Khi xác nhận lại thông tin khách vừa nói, thêm ～でよろしいでしょうか - 03-1234-5678でよろしいでしょうか. 念のため khác 確実に (chắc chắn) - 念のため chỉ là phòng hờ.
+
+  # ================= bài 4: họp, nhờ vả và từ chối khéo =================
+  - key: ja:item:n2-u3-gram-kanemasu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V(ます bỏ ます)-かねます
+      romanization: -kanemasu
+      pos: khó có thể (từ chối lịch sự)
+    back:
+      meaning:
+        vi: '"Tôi khó có thể...", "e rằng không thể..." - từ chối hoặc báo không làm được một cách mềm, phía mình muốn làm nhưng vì lý do nào đó không thể: その件については、私ではお答えいたしかねます; ご希望に沿いかねます.'
+      examples:
+        - target: 申し訳ございませんが、このお値段ではお引き受けいたしかねます。
+          translation:
+            vi: Thành thật xin lỗi, với mức giá này chúng tôi khó có thể nhận ạ.
+      pronunciation_note:
+        vi: かねます - "ka-nê-ma-xư".
+      confusion:
+        vi: 'Ngược nghĩa với かねない: 言いかねます - khó mà nói ra (không làm), còn 言いかねない - có thể sẽ nói ra (nguy cơ xấu). わかりかねます là cách nói "tôi không rõ" lịch sự với khách, thay cho わかりません.'
+
+  - key: ja:item:n2-u3-gram-te-itadakenai-deshouka
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-ていただけないでしょうか
+      romanization: -te itadakenai deshō ka
+      pos: nhờ vả rất lịch sự
+    back:
+      meaning:
+        vi: '"Liệu anh/chị có thể ... giúp được không ạ?" - mức nhờ vả lịch sự hơn ～ていただけませんか, dùng cho việc khó, gây phiền nhiều: 締め切りを一週間延ばしていただけないでしょうか. Dạng từ Hán - ご検討いただけないでしょうか.'
+      examples:
+        - target: 大変恐縮ですが、会議の時間を少し早めていただけないでしょうか。
+          translation:
+            vi: Thật vô cùng ngại, liệu anh/chị có thể dời giờ họp sớm lên một chút được không ạ?
+      pronunciation_note:
+        vi: でしょうか hạ giọng ở cuối, nói chậm để nghe mềm.
+      confusion:
+        vi: 'Thang lịch sự: ～ていただけますか < ～ていただけませんか < ～ていただけないでしょうか < ～ていただくことはできないでしょうか. Kèm cụm đệm (恐れ入りますが, 大変恐縮ですが) trước khi nhờ việc lớn.'
+
+  - key: ja:item:n2-u3-kentou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 検討
+      reading: けんとう
+      romanization: kentō
+      pos: danh từ
+    back:
+      meaning:
+        vi: 'xem xét, cân nhắc; 検討いたします - chúng tôi sẽ xem xét (lắm khi là lời từ chối mềm); ご検討ください - xin quý vị xem xét.'
+      examples:
+        - target: 貴重なご提案をありがとうございます。社内で検討いたします。
+          translation:
+            vi: Cảm ơn đề xuất quý giá của anh/chị. Chúng tôi sẽ xem xét trong nội bộ công ty.
+      pronunciation_note:
+        vi: とう kéo dài - "kên-tô-ô".
+      confusion:
+        vi: 前向きに検討します (xem xét tích cực) mới gợi ý khả năng đồng ý; 検討させていただきます không kèm hẹn ngày trả lời thường là từ chối khéo. Khác 見当 (けんとう - phỏng đoán), cùng âm khác chữ.
+
+  - key: ja:item:n2-u3-sashitsukae
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 差し支えなければ
+      reading: さしつかえなければ
+      romanization: sashitsukae nakereba
+      pos: cụm mở lời
+    back:
+      meaning:
+        vi: nếu không có gì bất tiện, nếu không phiền (mở lời trước khi hỏi thông tin riêng hoặc nhờ việc)
+      examples:
+        - target: 差し支えなければ、ご連絡先を教えていただけますか。
+          translation:
+            vi: Nếu không phiền, anh/chị có thể cho tôi biết thông tin liên lạc được không ạ?
+      pronunciation_note:
+        vi: Đọc "xa-si-tsư-ka-ê na-kê-rê-ba".
+      confusion:
+        vi: 差し支え - trở ngại; 差し支えない - không có trở ngại, được. よろしければ gần nghĩa, nhẹ hơn; 差し支えなければ hợp với câu hỏi riêng tư (lý do, địa chỉ, ngân sách).
+
+  - key: ja:item:n2-u3-enryo
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 遠慮
+      reading: えんりょ
+      romanization: enryo
+      pos: danh từ
+    back:
+      meaning:
+        vi: 'sự ngại, sự khách sáo; 遠慮させていただきます - xin phép từ chối (khiêm nhường, lịch sự); ご遠慮ください - xin vui lòng không...'
+      examples:
+        - target: せっかくですが、今回は遠慮させていただきます。
+          translation:
+            vi: Thật quý hoá, nhưng lần này cho phép tôi xin từ chối ạ.
+      pronunciation_note:
+        vi: りょ là một âm - "ên-ryô", không đọc "ri-yô".
+      confusion:
+        vi: 'ご遠慮ください trên biển báo là cấm một cách lịch sự - 館内での撮影はご遠慮ください. Người kia mời "đừng khách sáo" - ご遠慮なく. せっかくですが mở đầu lời từ chối, cho thấy mình trân trọng lời mời.'
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n2-u3-zonjiru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 存じる (存じております · 存じ上げる)
+      reading: ぞんじる
+      romanization: zonjiru
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: '(khiêm nhường) biết, nghĩ: 存じております - tôi biết; 存じません - tôi không biết; 存じ上げております - tôi biết (về một NGƯỜI được tôn trọng); ～と存じます - tôi nghĩ rằng.'
+      examples:
+        - target: お名前はかねがね存じ上げております。
+          translation:
+            vi: Tôi đã được nghe danh anh/chị từ lâu ạ.
+      pronunciation_note:
+        vi: ぞん - "dzôn"; 存じます - "dzôn-ji-ma-xư".
+      confusion:
+        vi: Hỏi người kia "anh/chị có biết không" là tôn kính ご存じですか - đừng nói 存じていますか. Biết về sự việc dùng 存じております; biết về một người được tôn trọng dùng 存じ上げております.
+
+  - key: ja:item:n2-u3-omenikakaru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: お目にかかる
+      reading: おめにかかる
+      romanization: o-me ni kakaru
+      pos: động từ khiêm nhường
+    back:
+      meaning:
+        vi: (khiêm nhường) gặp (người trên, khách); お目にかける / ご覧に入れる - cho (người trên) xem
+      examples:
+        - target: 来週、直接お目にかかってご説明いたします。
+          translation:
+            vi: Tuần sau tôi sẽ gặp trực tiếp để trình bày với anh/chị.
+      pronunciation_note:
+        vi: Đọc "ô-mê-ni ka-ka-ru".
+      confusion:
+        vi: 'Lần đầu gặp: お目にかかれて光栄です (thật vinh dự được gặp). Người kia gặp mình thì dùng お会いになる; お目にかかる chỉ cho mình. Mức thường hơn - お会いする.'

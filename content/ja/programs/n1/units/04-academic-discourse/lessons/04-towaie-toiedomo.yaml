@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u4-towaie-toiedomo
+order_index: 4
+level: n1
+title:
+  vi: Nhượng bộ trong xã luận - ～とはいえ, ～といえども, ～ながらも
+objectives:
+  - vi: Công nhận một sự thật rồi phản bác bằng ～とはいえ.
+  - vi: Nói "dù là ... đi nữa" với người / địa vị bằng ～といえども.
+  - vi: Nói "mặc dù ... nhưng" cùng chủ ngữ bằng ～ながらも, và đọc hiểu đoạn xã luận (社説).
+estimated_minutes: 26
+skills: [grammar, reading, vocabulary]
+prerequisites: [ja:lesson:n1-u4-ikan]
+items:
+  - item: ja:item:n1-u4-shasetsu
+  - item: ja:item:n1-u4-kenen
+  - item: ja:item:n1-u4-koujiru
+  - item: ja:item:n1-u4-gram-towaie
+  - item: ja:item:n1-u4-gram-toiedomo
+  - item: ja:item:n1-u4-gram-nagaramo
+body:
+  - type: objective
+    text:
+      vi: Xã luận Nhật Bản hiếm khi phản bác thẳng - người viết thường công nhận một điểm trước rồi mới nêu lo ngại. Sau bài này, bạn nhận ra ba mẫu nhượng bộ chủ chốt và tìm được ý chính nằm ở vế sau.
+  - type: explain
+    text:
+      vi: 'thể thường / N + とはいえ - "tuy (đúng là) ... nhưng": 春とはいえ、まだ寒い; 景気は回復しつつあるとはいえ、楽観はできない. Đứng đầu câu như liên từ: とはいえ、～ (dù vậy, tuy nhiên).'
+  - type: explain
+    text:
+      vi: 'N + といえども - "dù là N (lẽ ra đặc biệt) đi nữa": 専門家といえども、地震の予測は難しい; 首相といえども、法の上に立つことは許されない. Rất trang trọng; vế sau thường là đánh giá chung, nghĩa vụ hoặc phủ định.'
+  - type: explain
+    text:
+      vi: 'V(ます bỏ ます) / いA / なA / N + ながらも - "mặc dù ... nhưng", hai vế cùng chủ ngữ: 狭いながらも楽しい我が家; 問題を認識していながらも、対策を講じなかった. Động từ trước ながらも thường là trạng thái (知る, 認める, ～ている).'
+  - type: deep_explain
+    text:
+      vi: 'Cách đọc 社説: câu chứa とはいえ / ながらも có cấu trúc "công nhận A - nhưng B", và quan điểm của toà soạn nằm ở B. Các cụm báo chí hay đi kèm: ～と言わざるを得ない (buộc phải nói rằng), ～が懸念される (lo ngại rằng), 対策を講じる (đề ra biện pháp), ～が求められる (cần phải). Phân biệt: とはいえ gắn với một sự thật cụ thể; といえども gắn với một tư cách, địa vị; ながらも gắn với trạng thái của cùng chủ ngữ.'
+  - type: example
+    target: 景気は回復しつつあるとはいえ、楽観できる状況ではない。
+    target_lang: ja
+    translation:
+      vi: Tuy kinh tế đang dần hồi phục, nhưng tình hình chưa thể lạc quan.
+  - type: example
+    target: 専門家といえども、地震の発生を正確に予測することはできない。
+    target_lang: ja
+    translation:
+      vi: Dù là chuyên gia đi nữa cũng không thể dự đoán chính xác thời điểm động đất xảy ra.
+  - type: example
+    target: 政府は問題を認識していながらも、十分な対策を講じてこなかった。
+    target_lang: ja
+    translation:
+      vi: Chính phủ dù nhận thức được vấn đề nhưng đã không đề ra biện pháp đầy đủ.
+  - type: example
+    target: 今朝の社説は、増税による景気の悪化を懸念している。
+    target_lang: ja
+    translation:
+      vi: Bài xã luận sáng nay lo ngại kinh tế sẽ xấu đi do tăng thuế.
+  - type: common_mistake
+    wrong: 弟は熱がありながらも、私は学校へ行った。
+    right: 熱がありながらも、弟は学校へ行った。
+    target_lang: ja
+    note:
+      vi: ながらも đòi hai vế cùng chủ ngữ; khác chủ ngữ thì dùng のに / けれども - 弟は熱があるのに、….
+  - type: common_mistake
+    wrong: 3月といえども、まだ雪が降っている。
+    right: 3月とはいえ、まだ雪が降っている。
+    target_lang: ja
+    note:
+      vi: Nói về một sự thật cụ thể (đã là tháng Ba) thì とはいえ tự nhiên hơn; といえども chủ yếu đi với người, tư cách, địa vị.
+  - type: summary
+    points:
+      - vi: とはいえ - tuy (sự thật là) ... nhưng; đầu câu - dù vậy.
+      - vi: といえども - dù là (người, địa vị) ... đi nữa; rất trang trọng.
+      - vi: ながらも - mặc dù ... nhưng, cùng chủ ngữ.
+      - vi: Xã luận - ý chính ở vế sau; 社説, 懸念, 対策を講じる.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u4-towaie-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-toiedomo
+    prompt:
+      stem: 「専門家といえども、予測は難しい」 - といえども nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: q6m, text: dù là ... đi nữa, lang: vi }
+        - { id: b3s, text: vì là ... nên, lang: vi }
+        - { id: h9c, text: theo lời của, lang: vi }
+        - { id: v1x, text: ngoài ... ra thì không, lang: vi }
+    answer:
+      correct_option_id: q6m
+    explanation:
+      vi: といえども - dù là N (chuyên gia) đi nữa thì cũng... Không phải "theo lời" dù có chữ いう.
+    display_answer: dù là ... đi nữa
+
+  - key: ja:exercise:n1-u4-towaie-listen-towaie
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-towaie
+    prompt:
+      audio_asset_id: null
+      fallback_text: 景気は回復しつつあるとはいえ、楽観できる状況ではない。
+      options:
+        - { id: k8f, text: "Tuy kinh tế đang dần hồi phục, nhưng tình hình chưa thể lạc quan.", lang: vi }
+        - { id: d2w, text: "Vì kinh tế đang hồi phục nên có thể lạc quan.", lang: vi }
+        - { id: s5r, text: "Người ta nói kinh tế đang hồi phục và tình hình rất lạc quan.", lang: vi }
+        - { id: z7n, text: "Kinh tế chưa hồi phục nên tình hình không lạc quan.", lang: vi }
+    answer:
+      correct_option_id: k8f
+    explanation:
+      vi: 回復しつつある - đang dần hồi phục; とはいえ - tuy vậy; 楽観できる状況ではない - chưa phải tình hình có thể lạc quan.
+    display_answer: "Tuy kinh tế đang dần hồi phục, nhưng tình hình chưa thể lạc quan."
+
+  - key: ja:exercise:n1-u4-towaie-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-nagaramo
+    prompt:
+      stem: 'Chọn từ phù hợp: このアパートは狭い＿＿、日当たりがよくて住みやすい。'
+      stem_lang: vi
+      options:
+        - { id: c7e, text: ながらも, lang: ja }
+        - { id: m4a, text: といえども, lang: ja }
+        - { id: x1p, text: をもって, lang: ja }
+        - { id: f8j, text: に即して, lang: ja }
+    answer:
+      correct_option_id: c7e
+    explanation:
+      vi: いA + ながらも - tuy chật nhưng... (cùng chủ ngữ là căn hộ). といえども không gắn trực tiếp vào tính từ như thế này.
+    display_answer: ながらも
+
+  - key: ja:exercise:n1-u4-towaie-fill-kenen
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-kenen
+    prompt:
+      template: "専門家の間では、副作用への{{b1}}が広がっている。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Trong giới chuyên gia, mối lo ngại về tác dụng phụ đang lan rộng."
+        - "Gợi ý: 'lo ngại' (văn viết) - けねん."
+    answer:
+      blanks:
+        b1: [懸念, けねん]
+    known_wrong:
+      - answer: けんねん
+        feedback_vi: Đọc けねん - không có ん sau け.
+        error_tag: reading
+      - answer: 期待
+        feedback_vi: 期待 là "kỳ vọng" - ngược sắc thái với tác dụng phụ. "Lo ngại" là 懸念.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～への懸念 - mối lo ngại về ～; 懸念が広がる - nỗi lo lan rộng.
+    display_answer: 専門家の間では、副作用への懸念が広がっている。
+
+  - key: ja:exercise:n1-u4-towaie-wb-toiedomo
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-toiedomo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Dù là thủ tướng đi nữa cũng không được phép đứng trên pháp luật.\""
+      tokens:
+        - { id: e2, text: 法の上に立つことは }
+        - { id: e4, text: 首相ながらも、 }
+        - { id: e3, text: 許されない }
+        - { id: e1, text: 首相といえども、 }
+    answer:
+      orders:
+        - [e1, e2, e3]
+    explanation:
+      vi: 首相といえども - dù là thủ tướng (địa vị đặc biệt); vế sau là nguyên tắc chung 許されない.
+    display_answer: 首相といえども、法の上に立つことは許されない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u4-towaie-fill-koujiru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-koujiru
+    prompt:
+      template: "政府は問題を認識していながらも、十分な対策を{{b1}}こなかった。(đề ra - thể て)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [講じて, こうじて]
+    known_wrong:
+      - answer: 講して
+        feedback_vi: Động từ là 講じる → 講じて.
+        error_tag: grammar_form
+      - answer: こじて
+        feedback_vi: こう là âm dài - こうじて.
+        error_tag: long_vowel
+    explanation:
+      vi: 対策を講じる - đề ra biện pháp; 講じてこなかった - (từ trước tới nay) đã không đề ra.
+    display_answer: 政府は問題を認識していながらも、十分な対策を講じてこなかった。
+
+  - key: ja:exercise:n1-u4-towaie-translate-towaie
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-towaie
+    prompt:
+      source_text: Tuy đã là mùa xuân nhưng vẫn còn lạnh. (dùng とはいえ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 春とはいえ、まだ寒い。
+        - 春とはいえまだ寒い。
+        - 春とはいえ、まだ寒いです。
+        - 春とはいえ、まだ寒い日が続いている。
+        - 春とはいえ、まだ寒い日が続いています。
+        - 春になったとはいえ、まだ寒い。
+        - 春になったとはいえ、まだ寒いです。
+        - もう春とはいえ、まだ寒い。
+        - もう春とはいえ、まだ寒いです。
+        - 春だとはいえ、まだ寒い。
+        - 暦の上では春とはいえ、まだ寒い。
+        - はるとはいえ、まださむい。
+    known_wrong:
+      - answer: 春といえども、まだ寒い。
+        feedback_vi: Một sự thật cụ thể về mùa thì とはいえ tự nhiên hơn; といえども dành cho người, địa vị.
+        error_tag: towaie_toiedomo
+      - answer: 春とわいえ、まだ寒い。
+        feedback_vi: Trợ từ は viết là は, đọc "oa" - とはいえ.
+        error_tag: spelling
+    explanation:
+      vi: N + とはいえ - tuy là N nhưng; まだ寒い - vẫn còn lạnh.
+    display_answer: 春とはいえ、まだ寒い。
+
+  - key: ja:exercise:n1-u4-towaie-translate-nagaramo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-nagaramo
+    prompt:
+      source_text: Anh ấy dù biết mình sai nhưng không chịu xin lỗi. (dùng 知りながらも)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は自分が悪いと知りながらも、謝ろうとしない。
+        - 彼は自分が悪いと知りながらも謝ろうとしない。
+        - 彼は自分が悪いと知りながらも、謝ろうとしなかった。
+        - 彼は自分が悪いと知りながらも、謝らない。
+        - 彼は自分が悪いと知りながらも、謝らなかった。
+        - 彼は自分が間違っていると知りながらも、謝ろうとしない。
+        - 彼は自分が間違っていると知りながらも、謝らない。
+        - 彼は自分が間違っていると知りながらも、謝ろうとしなかった。
+        - 彼は自分が悪いことを知りながらも、謝ろうとしない。
+        - 彼は自分の非を知りながらも、謝ろうとしない。
+        - 彼は自分が悪いと知りながらも、謝ろうとはしない。
+        - かれはじぶんがわるいとしりながらも、あやまろうとしない。
+    known_wrong:
+      - answer: 彼は自分が悪いと知るながらも、謝ろうとしない。
+        feedback_vi: ながらも gắn sau thể ます bỏ ます - 知りながらも, không phải 知るながらも.
+        error_tag: grammar_form
+      - answer: 彼は自分が悪いと知りながらも、謝った。
+        feedback_vi: 謝った là "đã xin lỗi" - ngược nghĩa. "Không chịu xin lỗi" là 謝ろうとしない.
+        error_tag: meaning
+    explanation:
+      vi: 知りながらも - dù biết; 謝ろうとしない - không chịu xin lỗi (V-ようとしない).
+    display_answer: 彼は自分が悪いと知りながらも、謝ろうとしない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u4-towaie-mcq-shasetsu
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-shasetsu
+    prompt:
+      stem: "Đọc đoạn xã luận: 「政府は物価高に対して一定の措置を講じた。とはいえ、その効果は限定的だと言わざるを得ない。低所得世帯ほど負担が重いことを認識していながらも、支援の対象を絞り込んだからだ。より踏み込んだ対策が求められる。」 Quan điểm của bài xã luận là gì?"
+      stem_lang: vi
+      options:
+        - { id: a8t, text: Biện pháp của chính phủ hiệu quả hạn chế; cần biện pháp mạnh hơn., lang: vi }
+        - { id: n3k, text: Chính phủ chưa làm gì để đối phó giá cả leo thang., lang: vi }
+        - { id: o6c, text: Biện pháp của chính phủ đã giải quyết triệt để vấn đề., lang: vi }
+        - { id: e4v, text: Chính phủ không biết hộ thu nhập thấp chịu gánh nặng lớn., lang: vi }
+    answer:
+      correct_option_id: a8t
+    explanation:
+      vi: とはいえ、効果は限定的だ - tuy có biện pháp nhưng hiệu quả hạn chế; 認識していながらも - dù nhận thức được (nên không phải "không biết"); より踏み込んだ対策が求められる - cần biện pháp quyết liệt hơn.
+    display_answer: Biện pháp của chính phủ hiệu quả hạn chế; cần biện pháp mạnh hơn.
+
+  - key: ja:exercise:n1-u4-towaie-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u4-gram-toiedomo
+    prompt:
+      source_text: 専門家といえども、地震の発生を正確に予測することはできない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù là chuyên gia đi nữa cũng không thể dự đoán chính xác thời điểm động đất xảy ra.
+        - Dù là chuyên gia cũng không thể dự đoán chính xác thời điểm động đất xảy ra.
+        - Dù là chuyên gia đi nữa cũng không thể dự đoán chính xác việc động đất xảy ra.
+        - Dù là chuyên gia cũng không thể dự báo chính xác khi nào động đất xảy ra.
+        - Dù là chuyên gia đi nữa cũng không thể dự báo chính xác việc xảy ra động đất.
+        - Ngay cả chuyên gia cũng không thể dự đoán chính xác thời điểm động đất xảy ra.
+        - Ngay cả chuyên gia cũng không thể dự đoán chính xác việc động đất xảy ra.
+        - Ngay cả chuyên gia cũng không thể dự báo chính xác động đất.
+        - Kể cả chuyên gia cũng không thể dự đoán chính xác động đất sẽ xảy ra khi nào.
+        - Dù là chuyên gia thì cũng không thể dự đoán chính xác sự xuất hiện của động đất.
+        - Cho dù là chuyên gia cũng không thể dự đoán chính xác thời điểm động đất xảy ra.
+        - Dù là chuyên gia đi nữa thì cũng không thể dự đoán chính xác động đất.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo chuyên gia thì không thể dự đoán chính xác thời điểm động đất xảy ra.
+        feedback_vi: といえども là "dù là ... đi nữa", không phải "theo lời" (によると).
+        error_tag: toiedomo_meaning
+    explanation:
+      vi: 専門家といえども - dù là chuyên gia đi nữa; 正確に予測することはできない - không thể dự đoán chính xác.
+    display_answer: Dù là chuyên gia đi nữa cũng không thể dự đoán chính xác thời điểm động đất xảy ra.
+
+  - key: ja:exercise:n1-u4-towaie-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-nagaramo
+    prompt:
+      stem: Bạn viết nhận xét về một đội bóng nhỏ - "Dù ít người nhưng đội đã chiến đấu đến cùng." Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: u5d, text: チームは少人数ながらも、最後まで戦い抜いた。, lang: ja }
+        - { id: l2q, text: チームは少人数といえども、監督は最後まで戦い抜いた。, lang: ja }
+        - { id: i9h, text: チームは少人数ながら、相手チームが最後まで戦い抜いた。, lang: ja }
+        - { id: w6z, text: チームは少人数をもって、最後まで戦い抜かなかった。, lang: ja }
+    answer:
+      correct_option_id: u5d
+    explanation:
+      vi: N + ながらも - dù (ở trạng thái) ít người, cùng chủ ngữ チーム. Các câu kia đổi chủ ngữ ở vế sau hoặc sai nghĩa.
+    display_answer: チームは少人数ながらも、最後まで戦い抜いた。
+
+  - key: ja:exercise:n1-u4-towaie-wb-shasetsu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-kenen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tuy nói là có lợi ích kinh tế, nhưng không thể bỏ qua nỗi lo về môi trường.\""
+      tokens:
+        - { id: h3, text: 環境への懸念を }
+        - { id: h1, text: 経済的な利益がある }
+        - { id: h5, text: ながらも、 }
+        - { id: h4, text: 無視することはできない }
+        - { id: h2, text: とはいえ、 }
+    answer:
+      orders:
+        - [h1, h2, h3, h4]
+    explanation:
+      vi: Thể thường (～がある) + とはいえ - tuy có ... nhưng; 懸念を無視することはできない - không thể bỏ qua mối lo ngại. ながらも phải gắn sau thể ます bỏ ます (ありながらも), không gắn sau ある.
+    display_answer: 経済的な利益があるとはいえ、環境への懸念を無視することはできない。

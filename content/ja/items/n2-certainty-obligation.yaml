@@ -1,0 +1,532 @@
+# Học liệu unit "Chắc chắn, bắt buộc và đọc bài bình luận" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～に違いない / ～に相違ない / ～恐れがある =================
+  - key: ja:item:n2-u5-gram-ni-chigainai
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V/A thường · Na/N + に違いない
+      romanization: ni chigai nai
+      pos: phán đoán chắc chắn
+    back:
+      meaning:
+        vi: '"Chắc chắn là...", "nhất định là..." - người nói tin gần như chắc chắn dựa trên trực giác hoặc dấu hiệu. Động từ, tính từ い ở thể thường; tính từ な và danh từ bỏ だ: 犯人に違いない, 静かに違いない.'
+      examples:
+        - target: 電気が消えているから、田中さんはもう帰ったに違いない。
+          translation:
+            vi: Đèn đã tắt, chắc chắn anh Tanaka về rồi.
+      pronunciation_note:
+        vi: 違い đọc "chi-ga-i"; cả cụm "ni-chi-ga-i-na-i" nói liền.
+      confusion:
+        vi: に違いない là xác tín chủ quan của người nói; はずだ (N3) là suy luận theo lý lẽ, căn cứ khách quan. Không nói 犯人だに違いない - danh từ không có だ.
+
+  - key: ja:item:n2-u5-gram-ni-soui-nai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V/A thường · Na/N + に相違ない
+      reading: にそういない
+      romanization: ni sōi nai
+      pos: phán đoán chắc chắn (văn viết)
+    back:
+      meaning:
+        vi: '"Chắc chắn là..." - nghĩa như に違いない nhưng cứng, trang trọng; gặp trong văn bản, bài báo, lời khai, thư từ công việc. Nối giống に違いない.'
+      examples:
+        - target: この手紙は本人が書いたものに相違ない。
+          translation:
+            vi: Lá thư này chắc chắn do chính người đó viết.
+      pronunciation_note:
+        vi: そう là âm dài - "sô-ô-i".
+      confusion:
+        vi: 相違 nghĩa gốc là "sự khác biệt"; 相違ない = "không sai khác" = chắc chắn. Mẫu cố định 上記の通り相違ありません (đúng như trên, không sai) hay xuất hiện trong giấy tờ. Hội thoại thường ngày dùng に違いない hoặc きっと～と思う.
+
+  - key: ja:item:n2-u5-gram-osore-ga-aru
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: V từ điển · N + の + 恐れがある
+      reading: おそれがある
+      romanization: osore ga aru
+      pos: khả năng xấu
+    back:
+      meaning:
+        vi: '"Có nguy cơ...", "e rằng có thể..." - chỉ khả năng xảy ra điều không tốt. Hay dùng trong tin tức, dự báo, cảnh báo: 大雨の恐れがある, 被害が広がる恐れがある.'
+      examples:
+        - target: 台風の影響で、川があふれる恐れがあります。
+          translation:
+            vi: Do ảnh hưởng của bão, có nguy cơ sông bị tràn.
+      pronunciation_note:
+        vi: 恐れ đọc "ô-xô-rê", ba âm đều rõ.
+      confusion:
+        vi: Chỉ dùng cho điều xấu - không nói 晴れる恐れがある. Không dùng cho việc chính người nói chủ động làm. Danh từ phải có の - 地震の恐れ.
+
+  - key: ja:item:n2-u5-hannin
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 犯人
+      reading: はんにん
+      romanization: hannin
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủ phạm, kẻ phạm tội
+      examples:
+        - target: 防犯カメラの映像から、犯人はこの男に違いない。
+          translation:
+            vi: Từ hình ảnh camera an ninh, thủ phạm chắc chắn là người đàn ông này.
+      pronunciation_note:
+        vi: Hai âm ん liền nhau - "han-nin", giữ đủ hai nhịp.
+      confusion:
+        vi: 犯人 là người gây ra tội; 容疑者 (ようぎしゃ) là nghi phạm, chưa được xác định có tội. Tin tức thường dùng 容疑者 cho người mới bị bắt.
+
+  - key: ja:item:n2-u5-higai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 被害
+      reading: ひがい
+      romanization: higai
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiệt hại; 被害を受ける - bị thiệt hại, 被害が出る - có thiệt hại
+      examples:
+        - target: このままでは、被害がさらに広がる恐れがある。
+          translation:
+            vi: Cứ thế này thì có nguy cơ thiệt hại còn lan rộng hơn.
+      pronunciation_note:
+        vi: Đọc "hi-ga-i", ba nhịp đều.
+      confusion:
+        vi: 被害 là thiệt hại do thiên tai, tội phạm gây ra cho người bị hại; 損害 (そんがい) thiên về tổn thất tiền bạc, tài sản của công ty.
+
+  # ================= bài 2: ～ざるを得ない / ～ずにはいられない / ～ないわけにはいかない =================
+  - key: ja:item:n2-u5-gram-zaru-wo-enai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-ない (bỏ ない) + ざるを得ない
+      reading: ざるをえない
+      romanization: zaru o enai
+      pos: bắt buộc do hoàn cảnh
+    back:
+      meaning:
+        vi: '"Đành phải...", "buộc phải..." - không muốn nhưng hoàn cảnh không cho lựa chọn khác. 行く → 行かざるを得ない, 認める → 認めざるを得ない; する → せざるを得ない, 来る → 来(こ)ざるを得ない.'
+      examples:
+        - target: 雨がひどいので、試合は中止せざるを得ない。
+          translation:
+            vi: Mưa to quá nên đành phải huỷ trận đấu.
+      pronunciation_note:
+        vi: 得ない đọc "ê-na-i", không đọc "u-na-i".
+      confusion:
+        vi: する thành せざる, không phải しざる. ざるを得ない nhấn vào "không còn cách nào khác", khác ずにはいられない (không kìm được cảm xúc).
+
+  - key: ja:item:n2-u5-gram-zu-ni-irarenai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V-ない (bỏ ない) + ずにはいられない
+      romanization: zu ni wa irarenai
+      pos: không kìm được
+    back:
+      meaning:
+        vi: '"Không thể không...", "không nhịn được mà..." - cảm xúc hoặc phản ứng tự nhiên trào ra, không kìm nén được. 笑う → 笑わずにはいられない; する → せずにはいられない.'
+      examples:
+        - target: あの映画のラストシーンは、泣かずにはいられなかった。
+          translation:
+            vi: Cảnh cuối của bộ phim đó, tôi không sao cầm được nước mắt.
+      pronunciation_note:
+        vi: は ở đây là trợ từ, đọc "wa" - "dư-ni-wa-i-ra-rê-na-i".
+      confusion:
+        vi: Chủ ngữ thường là chính người nói (ngôi thứ nhất). Dạng nói thân mật là ～ないではいられない. Không dùng cho nghĩa vụ xã hội - việc đó dùng ないわけにはいかない.
+
+  - key: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V-ない + わけにはいかない
+      romanization: nai wake ni wa ikanai
+      pos: nghĩa vụ xã hội
+    back:
+      meaning:
+        vi: '"Không thể không...", "không làm thì không được" - vì lẽ thường, trách nhiệm hay quan hệ với người khác nên phải làm: 部長の頼みだから、引き受けないわけにはいかない.'
+      examples:
+        - target: お世話になった先生の結婚式だから、出席しないわけにはいかない。
+          translation:
+            vi: Đám cưới của thầy đã giúp đỡ mình nên không thể không đi dự.
+      pronunciation_note:
+        vi: Nói liền "na-i-wa-kê-ni-wa-i-ka-na-i"; は đọc "wa".
+      confusion:
+        vi: 'Khẳng định V-る + わけにはいかない lại là "không thể làm" vì lý do đạo lý: 明日試験だから、遊びに行くわけにはいかない. Chú ý có hay không có ない.'
+
+  - key: ja:item:n2-u5-hikiukeru
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 引き受ける
+      reading: ひきうける
+      romanization: hikiukeru
+      pos: động từ (nhóm 2)
+    back:
+      meaning:
+        vi: nhận lời, đảm nhận (một việc, một yêu cầu)
+      examples:
+        - target: 社長に直接頼まれたので、引き受けざるを得なかった。
+          translation:
+            vi: Bị giám đốc trực tiếp nhờ nên tôi đành phải nhận.
+      pronunciation_note:
+        vi: Đọc "hi-ki-u-kê-rư"; き và う tách rõ.
+      confusion:
+        vi: 引き受ける là nhận làm một việc, một trách nhiệm; nhận đồ vật là 受け取る (うけとる). Từ chối là 断る (ことわる).
+
+  - key: ja:item:n2-u5-gaman
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 我慢する
+      reading: がまんする
+      romanization: gaman suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: chịu đựng, nhịn
+      examples:
+        - target: 試験が終わるまで、ゲームは我慢することにした。
+          translation:
+            vi: Tôi quyết định nhịn chơi game cho đến khi thi xong.
+      pronunciation_note:
+        vi: Đọc "ga-man", ん cuối ngân mũi.
+      confusion:
+        vi: Chịu đựng cái gì dùng を - 痛みを我慢する. 我慢できない - không chịu được, gần nghĩa với ずにはいられない khi nói về cảm xúc.
+
+  # ================= bài 3: ～ものだ / ～ことだ / ～ものがある =================
+  - key: ja:item:n2-u5-gram-monoda
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: V/A thường + ものだ · V-た + ものだ
+      romanization: mono da
+      pos: bản chất · hồi tưởng
+    back:
+      meaning:
+        vi: '(1) Bản chất, lẽ thường: 人は変わるものだ - con người vốn hay thay đổi. (2) Lời khuyên theo lẽ thường: 約束は守るものだ. (3) V-たものだ - hồi tưởng thói quen ngày xưa: 子供の頃、よく川で遊んだものだ.'
+      examples:
+        - target: 時間がたつのは早いものですね。
+          translation:
+            vi: Thời gian trôi nhanh thật đấy nhỉ.
+      pronunciation_note:
+        vi: Hội thoại hay rút thành もんだ - "môn-đa".
+      confusion:
+        vi: Hồi tưởng phải dùng thể た (遊んだものだ) và nói về việc lặp lại nhiều lần trong quá khứ, không dùng cho một lần duy nhất. ものだ nói về cái chung, không phải lời khuyên riêng cho một người - lời khuyên riêng dùng ことだ.
+
+  - key: ja:item:n2-u5-gram-kotoda
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: V từ điển / V-ない + ことだ
+      romanization: koto da
+      pos: lời khuyên
+    back:
+      meaning:
+        vi: '"Tốt nhất là nên...", "điều cần làm là..." - lời khuyên cụ thể cho người nghe trong một tình huống. 合格したければ、毎日練習することだ; 無理をしないことだ.'
+      examples:
+        - target: 風邪を早く治したいなら、今日は早く寝ることだ。
+          translation:
+            vi: Muốn mau khỏi cảm thì tốt nhất hôm nay đi ngủ sớm.
+      pronunciation_note:
+        vi: Đọc "kô-tô-đa", không kéo dài こ.
+      confusion:
+        vi: ことだ mang giọng người trên khuyên người dưới - không dùng với cấp trên, thầy cô. Với cấp trên nói ～たほうがいいと思います hoặc ～てはいかがでしょうか.
+
+  - key: ja:item:n2-u5-gram-mono-ga-aru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V/A + ものがある
+      romanization: mono ga aru
+      pos: cảm nhận
+    back:
+      meaning:
+        vi: '"Có cái gì đó...", "thật sự có..." - người nói cảm nhận một nét đặc biệt ở người, vật, tác phẩm. 彼の演奏には人を感動させるものがある; この計画には無理なものがある.'
+      examples:
+        - target: 彼女の言葉には、心に響くものがあった。
+          translation:
+            vi: Lời cô ấy nói có điều gì đó chạm đến trái tim.
+      pronunciation_note:
+        vi: Đọc "mô-nô-ga-a-rư".
+      confusion:
+        vi: ものがある không có nghĩa "có một đồ vật"; đây là đánh giá cảm tính. Thường đi với từ chỉ cảm xúc, ấn tượng - 感動させる, 心を打つ, 寂しい, 驚くべき.
+
+  - key: ja:item:n2-u5-kandou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 感動する
+      reading: かんどうする
+      romanization: kandō suru
+      pos: động từ (nhóm 3)
+    back:
+      meaning:
+        vi: cảm động, xúc động (vì điều tốt đẹp)
+      examples:
+        - target: 選手たちの最後まで諦めない姿に感動した。
+          translation:
+            vi: Tôi cảm động trước hình ảnh các tuyển thủ không bỏ cuộc đến phút cuối.
+      pronunciation_note:
+        vi: どう là âm dài - "kan-đô-ô".
+      confusion:
+        vi: Cảm động trước cái gì dùng に - 映画に感動する. Làm người khác cảm động là 感動させる. 感謝 (かんしゃ) là biết ơn, dễ nhầm vì cùng chữ 感.
+
+  - key: ja:item:n2-u5-hakuryoku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 迫力
+      reading: はくりょく
+      romanization: hakuryoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: sức hút mạnh, khí thế, độ hoành tráng gây ấn tượng; 迫力がある
+      examples:
+        - target: 映画館の大きな画面で見ると、迫力が違う。
+          translation:
+            vi: Xem trên màn hình lớn của rạp thì độ hoành tráng khác hẳn.
+      pronunciation_note:
+        vi: りょく là âm ghép - "ryô-kư", không đọc "ri-ô-kư".
+      confusion:
+        vi: 迫力 nói về ấn tượng mạnh mẽ tác động lên người xem (phim, nhạc, thể thao, giọng nói); sức lực cơ thể là 体力, năng lực là 能力.
+
+  # ================= bài 4: đọc bài bình luận - のである / つまり / とはいえ =================
+  - key: ja:item:n2-u5-gram-no-dearu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V/A thường · Na/N + な + のである
+      romanization: no de aru
+      pos: nhấn mạnh (văn viết)
+    back:
+      meaning:
+        vi: 'Dạng văn viết của のだ / のです - nhấn mạnh lời giải thích, kết luận hoặc chủ trương của tác giả. Câu kết thúc bằng のである / のではないだろうか thường chứa ý chính của đoạn.'
+      examples:
+        - target: 大切なのは、結果ではなく過程なのである。
+          translation:
+            vi: Điều quan trọng không phải kết quả mà chính là quá trình.
+      pronunciation_note:
+        vi: Đọc "nô-đê-a-rư".
+      confusion:
+        vi: Danh từ và tính từ な cần な trước の - 過程なのである, không viết 過程のである. のではないだろうか ("chẳng phải là... sao") là cách tác giả khẳng định mềm, vẫn là chủ trương.
+
+  - key: ja:item:n2-u5-gram-tsumari
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: つまり
+      romanization: tsumari
+      pos: từ nối (tóm lại, nói cách khác)
+    back:
+      meaning:
+        vi: '"Tóm lại", "nói cách khác", "tức là" - câu sau つまり diễn đạt lại hoặc rút gọn ý trước, thường là ý chính tác giả muốn nói.'
+      examples:
+        - target: 若者の読書量は減っていない。つまり、紙の本からスマホに移っただけなのである。
+          translation:
+            vi: Lượng đọc của giới trẻ không hề giảm. Tức là họ chỉ chuyển từ sách giấy sang điện thoại mà thôi.
+      pronunciation_note:
+        vi: Đọc "tsư-ma-ri", つ bật lưỡi nhẹ.
+      confusion:
+        vi: つまり là nói lại cùng một ý cho rõ; だから / したがって là nêu kết quả. Trong bài đọc, câu sau つまり thường là đáp án của câu hỏi "tác giả muốn nói gì".
+
+  - key: ja:item:n2-u5-gram-towaie
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: とはいえ · 文 + とはいえ
+      reading: とはいえ
+      romanization: to wa ie
+      pos: từ nối (nhượng bộ)
+    back:
+      meaning:
+        vi: '"Tuy nói vậy nhưng...", "dù là... nhưng" - công nhận ý trước rồi đưa ra ý trái lại hoặc giới hạn nó. Đứng đầu câu (とはいえ、～) hoặc sau mệnh đề (春とはいえ、まだ寒い).'
+      examples:
+        - target: 在宅勤務は便利だ。とはいえ、同僚と話す機会が減るという問題もある。
+          translation:
+            vi: Làm việc tại nhà thì tiện. Tuy nói vậy, cũng có vấn đề là ít dịp nói chuyện với đồng nghiệp hơn.
+      pronunciation_note:
+        vi: は đọc "wa" - "tô-wa-i-ê".
+      confusion:
+        vi: Ý sau とはいえ thường là điều tác giả thật sự muốn nhấn mạnh. Nghĩa gần しかし nhưng mang sắc thái "công nhận rồi mới phản bác"; cùng nghĩa với とは言っても.
+
+  - key: ja:item:n2-u5-shuchou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 主張
+      reading: しゅちょう
+      romanization: shuchō
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: chủ trương, lập luận chính, quan điểm khẳng định; 主張する - khẳng định, đòi
+      examples:
+        - target: 筆者の主張として最も適当なものはどれか。
+          translation:
+            vi: Đâu là chủ trương của tác giả phù hợp nhất?
+      pronunciation_note:
+        vi: Hai âm ghép - "shư-chô-ô", ちょう kéo dài.
+      confusion:
+        vi: 主張 là điều tác giả khẳng định là đúng; 意見 là ý kiến nói chung. Đề N2 hay hỏi 筆者の主張 / 筆者の考え - tìm ở câu kết luận, không phải ở ví dụ.
+
+  - key: ja:item:n2-u5-hissha
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 筆者
+      reading: ひっしゃ
+      romanization: hissha
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác giả (người viết bài văn đang đọc)
+      examples:
+        - target: 筆者は、子どもにもっと自由な時間を与えるべきだと考えている。
+          translation:
+            vi: Tác giả cho rằng nên cho trẻ em nhiều thời gian tự do hơn.
+      pronunciation_note:
+        vi: っ là âm ngắt - "hít-sha", dừng một nhịp trước しゃ.
+      confusion:
+        vi: 筆者 dùng trong câu hỏi đọc hiểu, chỉ người viết bài đó; 作者 (さくしゃ) là tác giả của tác phẩm văn học, nghệ thuật; 著者 (ちょしゃ) là tác giả một cuốn sách.
+
+  - key: ja:item:n2-u5-konkyo
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 根拠
+      reading: こんきょ
+      romanization: konkyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: căn cứ, cơ sở (cho một nhận định)
+      examples:
+        - target: その意見には、はっきりした根拠がない。
+          translation:
+            vi: Ý kiến đó không có căn cứ rõ ràng.
+      pronunciation_note:
+        vi: きょ là âm ghép - "kôn-kyô".
+      confusion:
+        vi: Trong bài bình luận, 根拠 là số liệu, ví dụ tác giả đưa ra để ủng hộ 主張. Đừng nhầm căn cứ với chủ trương - câu hỏi 主張 cần câu kết luận, không cần số liệu.
+
+  # ================= bài 5: ôn tập (đọc bài bình luận về điện thoại) =================
+  - key: ja:item:n2-u5-izon
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 依存
+      reading: いぞん
+      romanization: izon
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sự phụ thuộc, lệ thuộc; ～に依存する; スマホ依存 - nghiện điện thoại
+      examples:
+        - target: 私たちの生活は、ますますスマホに依存するようになった。
+          translation:
+            vi: Cuộc sống của chúng ta ngày càng phụ thuộc vào điện thoại thông minh.
+      pronunciation_note:
+        vi: Đọc "i-dôn"; cũng có người đọc いそん (i-xôn), cả hai đều được chấp nhận.
+      confusion:
+        vi: Phụ thuộc vào cái gì dùng に - 親に依存する. 依存症 (いぞんしょう) là chứng nghiện (bệnh lý). Dựa vào, nhờ cậy thông thường là 頼る (たよる).
+
+  - key: ja:item:n2-u5-tebanasu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 手放す
+      reading: てばなす
+      romanization: tebanasu
+      pos: động từ (nhóm 1)
+    back:
+      meaning:
+        vi: buông tay, rời bỏ, để (thứ gì) khỏi tay mình; bán đi, nhượng lại
+      examples:
+        - target: 一日中スマホを手放せない人が増えている。
+          translation:
+            vi: Số người cả ngày không rời được điện thoại đang tăng lên.
+      pronunciation_note:
+        vi: ば đục - "tê-ba-na-xư".
+      confusion:
+        vi: 手放せない - không rời tay được (vì quá cần hoặc nghiện). 手放す còn có nghĩa bán đi tài sản - 家を手放す; vứt bỏ hẳn là 捨てる.
+
+  - key: ja:item:n2-u5-ippouteki
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 一方的
+      reading: いっぽうてき
+      romanization: ippōteki
+      pos: tính từ な
+    back:
+      meaning:
+        vi: một chiều, phiến diện, đơn phương
+      examples:
+        - target: スマホを一方的に悪いものだと決めつけるべきではない。
+          translation:
+            vi: Không nên đơn phương kết luận điện thoại là thứ xấu.
+      pronunciation_note:
+        vi: っ ngắt và ぽう kéo dài - "ít-pô-ô-tê-ki".
+      confusion:
+        vi: 一方的 là chỉ nhìn hoặc làm từ một phía; 一方で (N3) là từ nối "mặt khác". Trong bài bình luận, tác giả hay phê phán cách nhìn 一方的 rồi đưa ra quan điểm cân bằng.

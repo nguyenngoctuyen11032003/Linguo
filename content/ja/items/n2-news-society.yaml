@@ -1,0 +1,666 @@
+# Học liệu unit "Tin tức và xã hội" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: truyền đạt tin - によると, とのことだ, とされる, という =================
+  - key: ja:item:n2-u4-houdou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 報道
+      reading: ほうどう
+      romanization: hōdō
+      pos: danh từ
+    back:
+      meaning:
+        vi: đưa tin, việc báo chí đưa tin; 報道によると - theo tin báo chí
+      examples:
+        - target: 報道によると、事故で道路が一時通行止めになったそうです。
+          translation:
+            vi: Theo tin báo chí, do tai nạn mà con đường đã bị cấm lưu thông tạm thời.
+      pronunciation_note:
+        vi: Hai âm dài - "hô-ô-đô-ô". Hán Việt "báo đạo".
+      confusion:
+        vi: 報道 là hoạt động đưa tin của báo đài; một bản tin cụ thể là ニュース. 報告 (báo cáo) là báo lại cho cấp trên, không phải báo chí.
+
+  - key: ja:item:n2-u4-happyou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 発表
+      reading: はっぴょう
+      romanization: happyō
+      pos: danh từ
+    back:
+      meaning:
+        vi: công bố, phát biểu chính thức; 政府の発表 - công bố của chính phủ
+      examples:
+        - target: 警察の発表によれば、けが人はいないとのことです。
+          translation:
+            vi: Theo công bố của cảnh sát, được biết không có người bị thương.
+      pronunciation_note:
+        vi: Có âm ngắt っ và âm dài - "hap-pyô-ô".
+      confusion:
+        vi: 発表 là công bố thông tin ra ngoài (cơ quan, công ty, cá nhân thuyết trình). 発生 (phát sinh) là sự việc xảy ra - dễ nhầm vì cùng chữ 発.
+
+  - key: ja:item:n2-u4-kankeisha
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 関係者
+      reading: かんけいしゃ
+      romanization: kankeisha
+      pos: danh từ
+    back:
+      meaning:
+        vi: người liên quan, người trong cuộc (nguồn tin trong bản tin)
+      examples:
+        - target: 関係者によると、新しい駅は2030年に開業する予定だという。
+          translation:
+            vi: Theo những người liên quan, nhà ga mới dự kiến đi vào hoạt động năm 2030.
+      pronunciation_note:
+        vi: Đọc "kan-kê-ê-sha".
+      confusion:
+        vi: Báo chí dùng 関係者によると khi không nêu tên nguồn tin. 関係者以外立入禁止 - biển "người không phận sự miễn vào".
+
+  - key: ja:item:n2-u4-gram-ni-yoru-to
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N + によると / によれば
+      romanization: ni yoru to / ni yoreba
+      pos: theo (nguồn tin)
+    back:
+      meaning:
+        vi: '"Theo..." - nêu nguồn của thông tin. Cuối câu phải có mẫu truyền đạt: ～そうだ, ～とのことだ, ～という, ～らしい. 天気予報によると、明日は雪だそうだ.'
+      examples:
+        - target: 天気予報によると、明日は大雪になるそうです。
+          translation:
+            vi: Theo dự báo thời tiết, ngày mai sẽ có tuyết rơi dày.
+      pronunciation_note:
+        vi: Đọc "ni-yô-ru-tô" / "ni-yô-rê-ba".
+      confusion:
+        vi: によると chỉ nguồn tin; によって là "tuỳ theo" hoặc tác nhân bị động. Câu ～によると、雨が降りました (thiếu そうだ) là lỗi hay gặp.
+
+  - key: ja:item:n2-u4-gram-to-no-koto-da
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường + とのことだ / とのことです
+      romanization: to no koto da
+      pos: được biết là, nghe nói là (truyền lời)
+    back:
+      meaning:
+        vi: '"Được biết là...", "(người đó) nhắn là..." - truyền lại lời hoặc thông tin nghe được, trang trọng, hay dùng trong công việc và tin tức. 部長は少し遅れるとのことです.'
+      examples:
+        - target: 田中さんから電話があって、会議に30分ほど遅れるとのことです。
+          translation:
+            vi: Anh Tanaka gọi điện, nhắn là sẽ đến họp muộn khoảng 30 phút.
+      pronunciation_note:
+        vi: Đọc "tô-nô-kô-tô-đa".
+      confusion:
+        vi: Gần nghĩa ～そうだ (nghe nói) nhưng trang trọng hơn và hay dùng khi chuyển lời nhắn. Không dùng とのことだ để nói ý định của chính mình.
+
+  - key: ja:item:n2-u4-gram-to-sareru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: Thể thường + とされる / とされている
+      romanization: to sareru
+      pos: được cho là, được xem là
+    back:
+      meaning:
+        vi: '"Được cho là...", "được xem là..." - nhận định chung của xã hội, giới chuyên môn hoặc cơ quan chức năng; văn viết, tin tức. 原因は運転手の居眠りとされている.'
+      examples:
+        - target: 一般に、緑茶は体にいいとされています。
+          translation:
+            vi: Nói chung, trà xanh được cho là tốt cho cơ thể.
+      pronunciation_note:
+        vi: Đọc "tô-sa-rê-ru".
+      confusion:
+        vi: とされる không nêu rõ ai nhận định (khách quan, chung chung); と言われている gần nghĩa nhưng mang tính "người ta nói". ～としている (chủ động) là "(cơ quan đó) cho rằng" - 警察は事故の原因を調べているとしている.
+
+  - key: ja:item:n2-u4-gram-to-iu-denbun
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: Thể thường + という (cuối câu)
+      romanization: to iu
+      pos: nghe nói, tương truyền
+    back:
+      meaning:
+        vi: '"Nghe nói...", "tương truyền..." - đặt ở cuối câu để dẫn lại thông tin, truyền thuyết; giọng văn viết, tin tức. この寺は千年前に建てられたという.'
+      examples:
+        - target: この村には昔、竜が住んでいたという。
+          translation:
+            vi: Tương truyền ngày xưa ở ngôi làng này có rồng sống.
+      pronunciation_note:
+        vi: Đọc "tô-i-u".
+      confusion:
+        vi: という cuối câu (truyền đạt) khác という nối danh từ (～という店 - cửa hàng tên là...). Trong hội thoại thường dùng そうだ hoặc って thay cho という.
+
+  # ================= bài 2: phủ định một phần =================
+  - key: ja:item:n2-u4-ichigai-ni
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 一概に
+      reading: いちがいに
+      romanization: ichigai ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: (không thể) vơ đũa cả nắm, (không thể) nói chung chung; đi với phủ định - 一概に～とは言えない
+      examples:
+        - target: 若者が本を読まなくなったとは、一概には言えません。
+          translation:
+            vi: Không thể vơ đũa cả nắm rằng giới trẻ không còn đọc sách.
+      pronunciation_note:
+        vi: Đọc "i-chi-ga-i-ni".
+      confusion:
+        vi: 一概に gần như luôn đi với ～とは言えない / ～できない. Khác 一般に (nói chung, khẳng định).
+
+  - key: ja:item:n2-u4-reigai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 例外
+      reading: れいがい
+      romanization: reigai
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngoại lệ; 例外なく - không có ngoại lệ
+      examples:
+        - target: どんなルールにも例外はあります。
+          translation:
+            vi: Quy tắc nào cũng có ngoại lệ.
+      pronunciation_note:
+        vi: Đọc "rê-ê-ga-i", が không phải か. Hán Việt "lệ ngoại".
+      confusion:
+        vi: 例外 là trường hợp ngoài quy tắc; 以外 (ngoài ra) là trợ từ ghép - 日曜日以外 (trừ chủ nhật).
+
+  - key: ja:item:n2-u4-gokai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 誤解
+      reading: ごかい
+      romanization: gokai
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiểu lầm; 誤解する, 誤解を招く (gây hiểu lầm)
+      examples:
+        - target: 誤解しないでください。反対しているわけではありません。
+          translation:
+            vi: Xin đừng hiểu lầm. Không phải là tôi phản đối.
+      pronunciation_note:
+        vi: Đọc "gô-kai". Hán Việt "ngộ giải".
+      confusion:
+        vi: 誤解 là hiểu sai ý người khác; 勘違い là nhầm lẫn (nhớ nhầm, tưởng nhầm) trong suy nghĩ của mình.
+
+  - key: ja:item:n2-u4-gram-nai-koto-wa-nai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: Vない / Aくない + ことはない
+      romanization: nai koto wa nai
+      pos: không phải là không...
+    back:
+      meaning:
+        vi: '"Không phải là không..." - phủ định của phủ định, thừa nhận có khả năng nhưng không hào hứng. 食べられないことはない (ăn thì cũng ăn được). Hay đi với が / けど rồi nói ý thật.'
+      examples:
+        - target: 刺身は食べられないことはないが、あまり好きではない。
+          translation:
+            vi: Sashimi thì không phải không ăn được, nhưng tôi không thích lắm.
+      pronunciation_note:
+        vi: Đọc "nai-kô-tô-wa-nai", は đọc "wa".
+      confusion:
+        vi: V(thể từ điển) + ことはない lại là "không cần phải" - 心配することはない (không cần lo). Phải nhìn động từ trước こと là thể ない hay thể từ điển.
+
+  - key: ja:item:n2-u4-gram-to-wa-kagiranai
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: Thể thường + とは限らない
+      reading: とはかぎらない
+      romanization: to wa kagiranai
+      pos: chưa chắc, không phải lúc nào cũng
+    back:
+      meaning:
+        vi: '"Chưa chắc...", "không phải lúc nào cũng..." - điều thường được cho là đúng vẫn có ngoại lệ. Hay đi với 必ずしも, ～からといって. 高い物がいい物とは限らない.'
+      examples:
+        - target: 値段が高いからといって、品質がいいとは限らない。
+          translation:
+            vi: Không phải cứ giá cao là chất lượng tốt.
+      pronunciation_note:
+        vi: 限 đọc "ka-gi-ra-nai".
+      confusion:
+        vi: とは限らない là phủ định một phần (có khi đúng, có khi không); はずがない là phủ định hoàn toàn (không thể nào). Danh từ / なA nối trực tiếp hoặc thêm だ - 安全だとは限らない.
+
+  - key: ja:item:n2-u4-gram-wake-demo-nai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: Thể thường (なAな / Nの・Nという) + わけでもない
+      romanization: wake demo nai
+      pos: cũng không hẳn là
+    back:
+      meaning:
+        vi: '"Cũng không hẳn là..." - phủ định thêm một khả năng nữa, thường sau một ý phủ định khác. 好きなわけではないが、嫌いなわけでもない (không hẳn thích, mà cũng không hẳn ghét).'
+      examples:
+        - target: 彼が嫌いなわけでもないが、二人で会うのは少し気まずい。
+          translation:
+            vi: Tôi cũng không phải ghét anh ấy, nhưng gặp riêng hai người thì hơi ngại.
+      pronunciation_note:
+        vi: Đọc "wa-kê-đê-mô-nai".
+      confusion:
+        vi: わけではない phủ định một ý; わけでもない thêm も (cũng) - dùng khi đã có một phủ định trước đó hoặc để nói nhẹ hơn. Không nói はずでもない.
+
+  # ================= bài 3: tiêu đề báo và từ Hán ngữ =================
+  - key: ja:item:n2-u4-seifu
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 政府
+      reading: せいふ
+      romanization: seifu
+      pos: danh từ
+    back:
+      meaning:
+        vi: chính phủ
+      examples:
+        - target: 政府は来年度から電気料金を値上げする方針だ。
+          translation:
+            vi: Chính phủ có phương châm tăng giá điện từ năm tài khoá tới.
+      pronunciation_note:
+        vi: Đọc "xê-ê-fu". Hán Việt "chính phủ" - đọc gần giống tiếng Việt.
+      confusion:
+        vi: 政府 là cơ quan hành pháp của nhà nước; 政治 (chính trị) là lĩnh vực; 国会 là quốc hội.
+
+  - key: ja:item:n2-u4-hassei
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 発生
+      reading: はっせい
+      romanization: hassei
+      pos: danh từ
+    back:
+      meaning:
+        vi: xảy ra, phát sinh (sự cố, thiên tai, tai nạn); ～が発生する
+      examples:
+        - target: 今朝、東京で震度5弱の地震が発生しました。
+          translation:
+            vi: Sáng nay, một trận động đất cấp 5 yếu đã xảy ra ở Tokyo.
+      pronunciation_note:
+        vi: Âm ngắt っ - "hat-xê-ê". Hán Việt "phát sinh".
+      confusion:
+        vi: 発生 là cách nói tin tức của 起こる; dùng cho sự việc khách quan (事故, 地震, 火災), không dùng cho việc cá nhân làm.
+
+  - key: ja:item:n2-u4-taiho
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 逮捕
+      reading: たいほ
+      romanization: taiho
+      pos: danh từ
+    back:
+      meaning:
+        vi: bắt giữ (cảnh sát); 男を逮捕する, 男が逮捕される
+      examples:
+        - target: 警察は強盗の疑いで男を逮捕しました。
+          translation:
+            vi: Cảnh sát đã bắt giữ một người đàn ông vì tình nghi cướp.
+      pronunciation_note:
+        vi: Đọc "tai-hô". Hán Việt "đãi bộ".
+      confusion:
+        vi: 逮捕する là tha động từ - người bị bắt đi với を. Bị bắt - 逮捕される. 捕まえる là từ thường ngày (bắt côn trùng, bắt kẻ trộm).
+
+  - key: ja:item:n2-u4-higai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 被害
+      reading: ひがい
+      romanization: higai
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiệt hại; 被害を受ける (chịu thiệt hại), 被害が広がる / 被害拡大 (thiệt hại lan rộng)
+      examples:
+        - target: 台風による被害が九州で広がっています。
+          translation:
+            vi: Thiệt hại do bão đang lan rộng ở Kyushu.
+      pronunciation_note:
+        vi: Đọc "hi-ga-i", が không phải か. Hán Việt "bị hại".
+      confusion:
+        vi: 被害 là thiệt hại người hoặc vật phải chịu; 損害 nghiêng về thiệt hại tiền bạc. 被害者 - nạn nhân.
+
+  - key: ja:item:n2-u4-houshin
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 方針
+      reading: ほうしん
+      romanization: hōshin
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương châm, đường lối, chủ trương; V + 方針だ - có chủ trương sẽ...
+      examples:
+        - target: 政府は外国人労働者の受け入れを拡大する方針を決めた。
+          translation:
+            vi: Chính phủ đã quyết định chủ trương mở rộng tiếp nhận lao động nước ngoài.
+      pronunciation_note:
+        vi: ほう là âm dài - "hô-ô-shin". Hán Việt "phương châm".
+      confusion:
+        vi: 方針 là hướng đi chung đã quyết; 計画 là kế hoạch cụ thể có bước, thời hạn. Tin tức hay viết ～する方針だ cho việc chưa thực hiện.
+
+  - key: ja:item:n2-u4-neage
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 値上げ
+      reading: ねあげ
+      romanization: neage
+      pos: danh từ
+    back:
+      meaning:
+        vi: tăng giá (do bên bán, nhà nước quyết định); trái nghĩa 値下げ (giảm giá)
+      examples:
+        - target: 来月から多くの食品が値上げされます。
+          translation:
+            vi: Từ tháng sau nhiều mặt hàng thực phẩm sẽ tăng giá.
+      pronunciation_note:
+        vi: Đọc "nê-a-gê".
+      confusion:
+        vi: 値上げする - (người bán) tăng giá, tha động từ; 値上がりする - (giá) tự tăng lên. 物価が値上がりする / 会社が料金を値上げする.
+
+  - key: ja:item:n2-u4-gram-midashi
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: Cách viết tiêu đề báo (見出し)
+      reading: みだし
+      romanization: midashi
+      pos: lược trợ từ, kết bằng danh từ, ～へ, ～か
+    back:
+      meaning:
+        vi: 'Tiêu đề báo rút gọn: bỏ は/が/を và です (thay は bằng dấu phẩy); kết bằng danh từ Hán ngữ (発生, 逮捕) = sự việc đã xảy ra; ～へ = sắp, có chủ trương; ～か = có lẽ, chưa xác nhận; động từ thể từ điển vẫn có thể chỉ việc đã xảy ra.'
+      examples:
+        - target: 政府、来年度から電気料金値上げへ
+          translation:
+            vi: Chính phủ sẽ tăng giá điện từ năm tài khoá tới.
+      pronunciation_note:
+        vi: 見出し đọc "mi-đa-shi".
+      confusion:
+        vi: 値上げへ là "sắp tăng", không phải "đã tăng"; 原因は整備不良か là "nghi do bảo dưỡng kém", không phải câu hỏi. Khi kể lại tiêu đề, phải thêm trợ từ và đuôi câu - 政府は～値上げする方針だ.
+
+  # ================= bài 4: số liệu, biểu đồ =================
+  - key: ja:item:n2-u4-gram-wo-shimeru
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: N（tỉ lệ） + を占める
+      reading: をしめる
+      romanization: o shimeru
+      pos: chiếm (tỉ lệ)
+    back:
+      meaning:
+        vi: '"Chiếm..." - dùng khi đọc biểu đồ, số liệu. Aが全体の7割を占める (A chiếm 70% tổng thể); 過半数を占める (chiếm quá nửa).'
+      examples:
+        - target: 外国人観光客のうち、アジアからの客が約7割を占めている。
+          translation:
+            vi: Trong số khách du lịch nước ngoài, khách từ châu Á chiếm khoảng 70%.
+      pronunciation_note:
+        vi: 占める đọc "shi-mê-ru"; を đọc "ô".
+      confusion:
+        vi: 占める luôn đi với を (không dùng に). 割 = 10% - 7割 là 70%. 占う (うらなう - bói) dùng cùng chữ 占 nhưng khác nghĩa.
+
+  - key: ja:item:n2-u4-zouka
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 増加
+      reading: ぞうか
+      romanization: zōka
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự gia tăng; ～が増加する - tăng (văn viết của 増える); 急増 - tăng mạnh
+      examples:
+        - target: 外国人観光客の数は前年比20%増加した。
+          translation:
+            vi: Số khách du lịch nước ngoài tăng 20% so với năm trước.
+      pronunciation_note:
+        vi: ぞう là âm dài - "dô-ô-ka". Hán Việt "tăng gia".
+      confusion:
+        vi: 増加 là tự động từ (số lượng tăng); làm cho tăng dùng 増やす. 増加 dùng cho số lượng; giá cả, nhiệt độ, tỉ lệ thường dùng 上昇.
+
+  - key: ja:item:n2-u4-genshou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 減少
+      reading: げんしょう
+      romanization: genshō
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự giảm; ～が減少する - giảm (văn viết của 減る); 急減 - giảm mạnh
+      examples:
+        - target: 人口の減少に伴って、空き家が増えている。
+          translation:
+            vi: Cùng với việc dân số giảm, nhà bỏ trống đang tăng lên.
+      pronunciation_note:
+        vi: しょう là âm dài - "ghen-shô-ô". Hán Việt "giảm thiểu".
+      confusion:
+        vi: 減少 dùng cho số lượng; giá cả, tỉ lệ, nhiệt độ giảm thường dùng 低下 / 下落.
+
+  - key: ja:item:n2-u4-gram-ni-tomonatte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N / V(thể từ điển) + に伴って / に伴い
+      reading: にともなって
+      romanization: ni tomonatte
+      pos: cùng với, kéo theo
+    back:
+      meaning:
+        vi: '"Cùng với (sự thay đổi A) thì B cũng thay đổi theo" - văn viết, tin tức, mô tả biểu đồ. 円安に伴い、輸入品の値段が上がっている.'
+      examples:
+        - target: 円安に伴って、輸入品の値段が上がっています。
+          translation:
+            vi: Cùng với việc đồng yên yếu đi, giá hàng nhập khẩu đang tăng.
+      pronunciation_note:
+        vi: 伴って đọc "tô-mô-nat-tê".
+      confusion:
+        vi: Trước に伴って là danh từ chỉ sự thay đổi (増加, 高齢化, 円安) hoặc V thể từ điển. Nói 人口の増加に伴って hoặc 人口が増えるに伴って, không nói 人口が増加に伴って.
+
+  - key: ja:item:n2-u4-zennenhi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 前年比
+      reading: ぜんねんひ
+      romanization: zennenhi
+      pos: danh từ
+    back:
+      meaning:
+        vi: so với năm trước; 前年比10%増 - tăng 10% so với năm trước, 前年比5%減 - giảm 5%
+      examples:
+        - target: 今年の売り上げは前年比10%の増加となった。
+          translation:
+            vi: Doanh thu năm nay tăng 10% so với năm trước.
+      pronunciation_note:
+        vi: Đọc "dên-nen-hi". Hán Việt "tiền niên tỉ".
+      confusion:
+        vi: Tương tự có 前月比 (so với tháng trước), 前年同期比 (so với cùng kỳ năm trước). 前年比 + số + 増/減 là cách viết gọn trong báo.
+
+  - key: ja:item:n2-u4-yokobai
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 横ばい
+      reading: よこばい
+      romanization: yokobai
+      pos: danh từ
+    back:
+      meaning:
+        vi: đi ngang, gần như không đổi (số liệu trên biểu đồ); 横ばいが続く, 横ばいとなる
+      examples:
+        - target: 失業率はここ数年、横ばいが続いている。
+          translation:
+            vi: Tỉ lệ thất nghiệp mấy năm nay vẫn đi ngang.
+      pronunciation_note:
+        vi: ば là âm đục - "yô-kô-ba-i".
+      confusion:
+        vi: Biểu đồ - 増加 / 上昇 (đi lên), 減少 / 低下 (đi xuống), 横ばい (đi ngang). 横ばい không có nghĩa "đi sang bên cạnh" trong tin tức số liệu.
+
+  - key: ja:item:n2-u4-kahansuu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 過半数
+      reading: かはんすう
+      romanization: kahansū
+      pos: danh từ
+    back:
+      meaning:
+        vi: quá nửa, quá bán (hơn 50%); 過半数を占める
+      examples:
+        - target: この会社では、社員の過半数を女性が占めている。
+          translation:
+            vi: Ở công ty này, phụ nữ chiếm quá nửa số nhân viên.
+      pronunciation_note:
+        vi: すう là âm dài - "ka-han-xư-ư". Hán Việt "quá bán số".
+      confusion:
+        vi: 過半数 là hơn một nửa; 半数 là một nửa; 大半 là phần lớn (khoảng trên 70-80%).
+
+  # ================= bài 5: ôn tập - đọc tin tức xã hội =================
+  - key: ja:item:n2-u4-shoushi-koureika
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 少子高齢化
+      reading: しょうしこうれいか
+      romanization: shōshi kōreika
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng ít con (giảm sinh) và già hoá dân số; 少子高齢化が進む
+      examples:
+        - target: 少子高齢化に伴って、働く人の数が減っている。
+          translation:
+            vi: Cùng với tình trạng giảm sinh và già hoá dân số, số người lao động đang giảm.
+      pronunciation_note:
+        vi: Hai âm dài - "shô-ô-shi kô-ô-rê-ê-ka".
+      confusion:
+        vi: 少子高齢化 đi với 進む (tiến triển), không dùng 増える. Tách ra - 少子化 (giảm sinh), 高齢化 (già hoá).
+
+  - key: ja:item:n2-u4-hitode-busoku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 人手不足
+      reading: ひとでぶそく
+      romanization: hitode busoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiếu nhân lực, thiếu người làm; 人手不足が深刻だ
+      examples:
+        - target: 介護の現場では人手不足が深刻です。
+          translation:
+            vi: Trong ngành chăm sóc người cao tuổi, tình trạng thiếu nhân lực đang nghiêm trọng.
+      pronunciation_note:
+        vi: 不足 trong từ ghép đọc đục thành "bu-sô-ku" - "hi-tô-đê-bu-sô-ku".
+      confusion:
+        vi: 人手 (ひとで) là người làm, sức người; 人出 (ひとで) là lượng người ra đường (lễ hội đông người). Cùng cách đọc, khác chữ.
+
+  - key: ja:item:n2-u4-taisaku
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 対策
+      reading: たいさく
+      romanization: taisaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: biện pháp đối phó; ～への対策 / ～の対策をとる / 対策を進める
+      examples:
+        - target: 政府は人手不足への対策として、外国人労働者の受け入れを拡大する方針だ。
+          translation:
+            vi: Như một biện pháp đối phó với thiếu nhân lực, chính phủ có chủ trương mở rộng tiếp nhận lao động nước ngoài.
+      pronunciation_note:
+        vi: Đọc "tai-xa-ku". Hán Việt "đối sách".
+      confusion:
+        vi: 対策 là danh từ - nói 人手不足の対策をとる, 人手不足への対策, không nói 人手不足を対策する. Hay gặp - 地震対策, 暑さ対策, 試験対策.

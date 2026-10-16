@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u1-gahayaika-nari
+order_index: 4
+level: n1
+title:
+  vi: Vừa... là ngay lập tức - ～が早いか, ～や否や, ～なり
+objectives:
+  - vi: Dùng ～が早いか, ～や否や, ～なり để kể hai hành động nối nhau tức thì.
+  - vi: Phân biệt sắc thái - が早いか (nhanh như chớp), や否や (văn viết), なり (hành động bất ngờ của cùng một người).
+  - vi: Không dùng ba mẫu này cho ý chí, mệnh lệnh hay chuyện của chính mình (với なり).
+estimated_minutes: 22
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n1-u1-tara-saigo]
+items:
+  - item: ja:item:n1-u1-gram-gahayaika
+  - item: ja:item:n1-u1-gram-yainaya
+  - item: ja:item:n1-u1-gram-nari
+  - item: ja:item:n1-u1-tobidasu
+  - item: ja:item:n1-u1-kaketsukeru
+  - item: ja:item:n1-u1-sattou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được những cảnh như "chuông vừa reo là học sinh ùa ra", "vừa nghe tin là mẹ tôi lao đến bệnh viện" bằng văn phong N1.
+  - type: explain
+    text:
+      vi: 'V-辞書形 / V-た + が早いか - "vừa... là (gần như cùng lúc)...". ベルが鳴るが早いか, 席に着いたが早いか. Nhấn vào tốc độ: hai việc gần như không phân biệt trước sau.'
+  - type: explain
+    text:
+      vi: 'V-辞書形 + や否や (やいなや) - "ngay khi vừa... thì...". Rất trang trọng, hay dùng trong báo chí, văn kể: ドアが開くや否や, 知らせを聞くや否や. Văn viết còn rút gọn thành や: 開くや.'
+  - type: explain
+    text:
+      vi: 'V-辞書形 + なり - "vừa... là liền...". Hai vế cùng một chủ ngữ, hành động sau thường bất ngờ, khác thường: 彼は部屋に入るなり、ソファに倒れ込んだ. Thường kể về người khác, thì quá khứ.'
+  - type: deep_explain
+    text:
+      vi: Cả ba mẫu đều kể sự việc thực tế nên vế sau không dùng ý chí (～しよう), mệnh lệnh (～しなさい), lời nhờ (～てください) - muốn nói "về đến nhà thì gọi ngay nhé" phải dùng ～たらすぐ. Riêng なり còn đòi cùng chủ ngữ và hầu như không dùng cho bản thân người nói - 私は家に帰るなり寝た nghe gượng, nói 帰るとすぐ寝た. が早いか và や否や thì hai vế có thể khác chủ ngữ - ベルが鳴るが早いか、生徒たちは...
+  - type: example
+    target: ベルが鳴るが早いか、生徒たちは教室を飛び出した。
+    target_lang: ja
+    translation:
+      vi: Chuông vừa reo là học sinh đã ùa ra khỏi lớp.
+    note:
+      vi: Hai chủ ngữ khác nhau (ベル / 生徒たち) - được với が早いか.
+  - type: example
+    target: ドアが開くや否や、客が売り場に殺到した。
+    target_lang: ja
+    translation:
+      vi: Cửa vừa mở là khách đã ùn ùn đổ vào quầy hàng.
+  - type: example
+    target: 知らせを聞くや否や、母は病院に駆けつけた。
+    target_lang: ja
+    translation:
+      vi: Vừa nghe tin là mẹ tôi đã vội vã đến bệnh viện.
+  - type: example
+    target: 彼女は私の顔を見るなり、泣き出した。
+    target_lang: ja
+    translation:
+      vi: Cô ấy vừa nhìn thấy mặt tôi là bật khóc.
+    note:
+      vi: Cùng chủ ngữ 彼女; hành động bất ngờ.
+  - type: common_mistake
+    wrong: 家に着くなり、電話してください。
+    right: 家に着いたら、すぐ電話してください。
+    target_lang: ja
+    note:
+      vi: なり, が早いか, や否や chỉ kể sự việc, không đi với lời nhờ. Tiếng Việt "vừa... là" dùng được cả cho lời dặn nên người Việt hay mang sang.
+  - type: common_mistake
+    wrong: 私は家に帰るなり、寝ました。
+    right: 私は家に帰るとすぐ、寝ました。
+    target_lang: ja
+    note:
+      vi: なり thường không dùng cho chính người nói. Kể về mình thì dùng ～とすぐ, ～たらすぐ.
+  - type: summary
+    points:
+      - vi: が早いか - vừa... là (nhanh như chớp); gắn thể từ điển hoặc thể た.
+      - vi: や否や - ngay khi vừa... (văn viết, báo chí); gắn thể từ điển.
+      - vi: なり - vừa... là liền (hành động bất ngờ, cùng chủ ngữ, thường ngôi thứ ba).
+      - vi: Cả ba không đi với ý chí, mệnh lệnh, lời nhờ.
+      - vi: 飛び出す - lao ra; 駆けつける - vội vã chạy đến.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u1-gahayaika-nari-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-gram-gahayaika
+    prompt:
+      stem: "「ベルが鳴るが早いか、生徒たちは教室を飛び出した。」 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a5d, text: "Chuông vừa reo là học sinh đã ùa ra khỏi lớp.", lang: vi }
+        - { id: b2g, text: "Học sinh ra khỏi lớp sớm hơn giờ chuông reo.", lang: vi }
+        - { id: c8j, text: "Nếu chuông reo sớm thì học sinh sẽ ra khỏi lớp.", lang: vi }
+        - { id: d3l, text: "Dù chuông đã reo, học sinh vẫn chưa ra khỏi lớp.", lang: vi }
+    answer:
+      correct_option_id: a5d
+    explanation:
+      vi: が早いか - "vừa... là ngay lập tức"; 早い ở đây không có nghĩa "sớm hơn". 飛び出した - đã lao ra.
+    display_answer: "Chuông vừa reo là học sinh đã ùa ra khỏi lớp."
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-listen-kaketsukeru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-kaketsukeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 知らせを聞くや否や、母は病院に駆けつけた。
+      options:
+        - { id: e6m, text: Vừa nghe tin là mẹ tôi đã vội vã đến bệnh viện., lang: vi }
+        - { id: f1n, text: Mẹ tôi chưa nghe tin nên chưa đến bệnh viện., lang: vi }
+        - { id: g7p, text: Mẹ tôi nghe tin ở bệnh viện., lang: vi }
+        - { id: h4q, text: Nếu nghe tin thì mẹ tôi sẽ đến bệnh viện., lang: vi }
+    answer:
+      correct_option_id: e6m
+    explanation:
+      vi: 聞くや否や - ngay khi vừa nghe; 駆けつけた - đã vội vã chạy đến. Câu kể việc đã xảy ra, không phải giả định.
+    display_answer: Vừa nghe tin là mẹ tôi đã vội vã đến bệnh viện.
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-yainaya
+    prompt:
+      stem: Cách đọc đúng của 「や否や」 là gì?
+      stem_lang: vi
+      options:
+        - { id: i9r, text: やいなや, lang: ja }
+        - { id: j3s, text: やひや, lang: ja }
+        - { id: k6t, text: やいやや, lang: ja }
+        - { id: l2u, text: やのや, lang: ja }
+    answer:
+      correct_option_id: i9r
+    explanation:
+      vi: 否 đọc いな trong mẫu này - や否や đọc là やいなや.
+    display_answer: やいなや
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-fill-nari
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-nari
+    prompt:
+      template: "彼女は私の顔を{{b1}}なり、泣き出した。(見る)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cô ấy vừa nhìn thấy mặt tôi là bật khóc."
+        - "Gợi ý: なり gắn vào thể từ điển của động từ."
+    answer:
+      blanks:
+        b1: [見る, みる]
+    known_wrong:
+      - answer: 見た
+        feedback_vi: なり gắn vào thể từ điển - 見るなり, kể cả khi kể chuyện quá khứ.
+        error_tag: nari_form
+      - answer: 見て
+        feedback_vi: なり gắn vào thể từ điển - 見るなり.
+        error_tag: nari_form
+    explanation:
+      vi: 見るなり - vừa nhìn thấy là; thì quá khứ thể hiện ở vế sau (泣き出した).
+    display_answer: 彼女は私の顔を見るなり、泣き出した。
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-wb-door
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-yainaya
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cửa vừa mở là khách đã ùn ùn đổ vào quầy hàng.\""
+      tokens:
+        - { id: g3, text: 売り場に }
+        - { id: g5, text: 開いたや否や }
+        - { id: g4, text: 殺到した }
+        - { id: g1, text: ドアが開くや否や }
+        - { id: g2, text: 客が }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+        - [g1, g3, g2, g4]
+    explanation:
+      vi: や否や gắn vào thể từ điển - 開くや否や. 客が và 売り場に có thể đổi chỗ.
+    display_answer: ドアが開くや否や、客が売り場に殺到した。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u1-gahayaika-nari-fill-hayaika
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-tobidasu
+    prompt:
+      template: "ベルが{{b1}}が早いか、生徒たちは教室を{{b2}}した。(鳴る / lao ra)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [鳴る, なる, 鳴った, なった]
+        b2: [飛び出, とびだ, 飛出]
+    known_wrong:
+      - answer: 鳴って
+        feedback_vi: が早いか gắn vào thể từ điển (鳴る) hoặc thể た (鳴った).
+        error_tag: hayaika_form
+    explanation:
+      vi: 鳴るが早いか (hoặc 鳴ったが早いか) - vừa reo là; 教室を飛び出した - lao ra khỏi lớp.
+    display_answer: ベルが鳴るが早いか、生徒たちは教室を飛び出した。
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-translate-nari
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u1-gram-nari
+    prompt:
+      source_text: Anh ấy vừa vào phòng là ngã vật xuống ghế sofa. (dùng なり)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は部屋に入るなり、ソファに倒れ込んだ。
+        - 彼は部屋に入るなり、ソファに倒れこんだ。
+        - 彼は部屋に入るなり、ソファに倒れた。
+        - 彼は部屋に入るなり、ソファに倒れ込みました。
+        - 彼は部屋に入るなり、ソファに倒れました。
+        - 彼は部屋に入るなり、ソファーに倒れ込んだ。
+        - 彼は部屋に入るなり、ソファーに倒れた。
+        - 彼は部屋に入るなり、ソファに寝転んだ。
+        - 彼は部屋に入るなり、ソファに横になった。
+        - 彼は部屋に入るなりソファに倒れ込んだ。
+        - かれはへやにはいるなり、ソファにたおれこんだ。
+    known_wrong:
+      - answer: 彼は部屋に入ったなり、ソファに倒れ込んだ。
+        feedback_vi: なり gắn vào thể từ điển - 入るなり. 入ったなり mang nghĩa khác ("vẫn nguyên như lúc vào").
+        error_tag: nari_form
+    explanation:
+      vi: 入るなり - vừa vào là; ソファに倒れ込む - ngã vật xuống sofa. Hai vế cùng chủ ngữ 彼.
+    display_answer: 彼は部屋に入るなり、ソファに倒れ込んだ。
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-translate-yainaya
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-kaketsukeru
+    prompt:
+      source_text: Vừa nghe tin là mẹ tôi đã vội vã đến bệnh viện. (dùng や否や)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 知らせを聞くや否や、母は病院に駆けつけた。
+        - 知らせを聞くや否や、母は病院へ駆けつけた。
+        - 知らせを聞くや否や、母は病院に駆け付けた。
+        - 知らせを聞くや否や、母は病院に駆けつけました。
+        - 母は知らせを聞くや否や、病院に駆けつけた。
+        - 母は知らせを聞くや否や、病院へ駆けつけた。
+        - 母は知らせを聞くや否や、病院に駆け付けた。
+        - 母は知らせを聞くや否や、病院に駆けつけました。
+        - 知らせを聞くやいなや、母は病院に駆けつけた。
+        - 母は知らせを聞くやいなや、病院に駆けつけた。
+        - ニュースを聞くや否や、母は病院に駆けつけた。
+        - 連絡を受けるや否や、母は病院に駆けつけた。
+        - しらせをきくやいなや、はははびょういんにかけつけた。
+    known_wrong:
+      - answer: 知らせを聞いたや否や、母は病院に駆けつけた。
+        feedback_vi: や否や gắn vào thể từ điển - 聞くや否や.
+        error_tag: yainaya_form
+    explanation:
+      vi: 聞くや否や - ngay khi vừa nghe; 病院に駆けつける - vội vã đến bệnh viện.
+    display_answer: 知らせを聞くや否や、母は病院に駆けつけた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u1-gahayaika-nari-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-nari
+    prompt:
+      stem: Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: m8v, text: 父は帰宅するなり、黙って自分の部屋に入ってしまった。, lang: ja }
+        - { id: n2w, text: 家に着くなり、すぐ連絡しなさい。, lang: ja }
+        - { id: o6x, text: 授業が終わるが早いか、一緒に帰ろう。, lang: ja }
+        - { id: q9y, text: 駅に着いたや否や、電話してください。, lang: ja }
+    answer:
+      correct_option_id: m8v
+    explanation:
+      vi: なり kể hành động bất ngờ của người khác (父), cùng chủ ngữ - tự nhiên. Mệnh lệnh (しなさい), lời rủ (帰ろう), lời nhờ (てください) không đi với なり, が早いか, や否や; 着いたや否や còn sai thể.
+    display_answer: 父は帰宅するなり、黙って自分の部屋に入ってしまった。
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-gram-gahayaika
+    prompt:
+      source_text: 息子は帰ってくるが早いか、かばんを放り出して遊びに行った。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Con trai tôi vừa về đến nhà là quăng cặp đi chơi ngay.
+        - Con trai tôi vừa về đến nhà là quăng cặp rồi đi chơi.
+        - Con trai tôi vừa về là quăng cặp đi chơi ngay.
+        - Con trai tôi vừa về là vứt cặp đi chơi ngay.
+        - Con trai tôi vừa về đến nhà là vứt cặp rồi đi chơi.
+        - Con trai tôi vừa về đến nhà đã quăng cặp đi chơi.
+        - Con trai tôi vừa về nhà là quăng cặp đi chơi.
+        - Thằng con tôi vừa về đến nhà là quăng cặp đi chơi ngay.
+        - Con trai tôi vừa về tới nhà là vứt cặp sách đi chơi ngay.
+        - Con trai tôi vừa về đến nhà là ném cặp rồi đi chơi.
+        - Con trai tôi vừa về đến nhà thì đã quăng cặp đi chơi.
+        - Vừa về đến nhà, con trai tôi đã quăng cặp đi chơi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Con trai tôi về sớm hơn rồi đi chơi.
+        feedback_vi: が早いか là "vừa... là ngay", 早い không mang nghĩa "về sớm".
+        error_tag: hayaika_meaning
+    explanation:
+      vi: 帰ってくるが早いか - vừa về đến là; かばんを放り出す - quăng cặp; 遊びに行った - đi chơi.
+    display_answer: Con trai tôi vừa về đến nhà là quăng cặp đi chơi ngay.
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-wb-nari
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-nari
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Ông ấy vừa đọc lá thư là mặt biến sắc.\""
+      tokens:
+        - { id: x4, text: 変えた }
+        - { id: x2, text: 読むなり }
+        - { id: x1, text: 彼は手紙を }
+        - { id: x5, text: 読んだなり }
+        - { id: x3, text: 顔色を }
+    answer:
+      orders:
+        - [x1, x2, x3, x4]
+    explanation:
+      vi: なり gắn vào thể từ điển - 読むなり. 顔色を変える - biến sắc mặt. Cùng chủ ngữ 彼, hành động bất ngờ.
+    display_answer: 彼は手紙を読むなり、顔色を変えた。
+
+  - key: ja:exercise:n1-u1-gahayaika-nari-mcq-news
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-sattou
+    prompt:
+      stem: "Đọc tin: 「新型スマホの予約受付が始まるや否や、注文が殺到し、サイトが一時つながらなくなった。」 Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r4z, text: Vừa mở nhận đặt trước thì đơn hàng đổ về dồn dập khiến trang web tạm thời không vào được., lang: vi }
+        - { id: s7a, text: Trang web bị lỗi nên việc nhận đặt trước bị hoãn., lang: vi }
+        - { id: u2b, text: Rất ít người đặt mua nên trang web đóng cửa., lang: vi }
+        - { id: v5c, text: Nếu mở nhận đặt trước thì trang web có thể bị lỗi., lang: vi }
+    answer:
+      correct_option_id: r4z
+    explanation:
+      vi: 始まるや否や - ngay khi vừa bắt đầu; 注文が殺到し - đơn hàng đổ về dồn dập; 一時つながらなくなった - tạm thời không truy cập được. Đây là việc đã xảy ra.
+    display_answer: Vừa mở nhận đặt trước thì đơn hàng đổ về dồn dập khiến trang web tạm thời không vào được.

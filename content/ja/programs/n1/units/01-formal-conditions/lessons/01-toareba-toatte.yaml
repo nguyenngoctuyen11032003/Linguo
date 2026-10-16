@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u1-toareba-toatte
+order_index: 1
+level: n1
+title:
+  vi: Đã là... thì - ～とあれば và ～とあって
+objectives:
+  - vi: Dùng ～とあれば để nói "đã là (vì)... thì sẵn lòng làm" trong tình huống đặc biệt.
+  - vi: Dùng ～とあって để giải thích một cảnh tượng khác thường bằng hoàn cảnh đặc biệt.
+  - vi: Không đặt ý chí, lời rủ hay mệnh lệnh sau ～とあって.
+estimated_minutes: 20
+skills: [grammar, reading]
+prerequisites: []
+items:
+  - item: ja:item:n1-u1-gram-toareba
+  - item: ja:item:n1-u1-gram-toatte
+  - item: ja:item:n1-u1-hikiukeru
+  - item: ja:item:n1-u1-sattou
+  - item: ja:item:n1-u1-itowanai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được kiểu "vì con thì vất vả mấy cũng không quản" và đọc hiểu câu tin tức kiểu "vì là kỳ nghỉ dài nên nơi nào cũng đông nghịt".
+  - type: explain
+    text:
+      vi: 'とあれば - "đã là / nếu là... thì". Gắn sau danh từ hoặc thể thường, danh từ và tính từ な bỏ だ: 子どものためとあれば, 社長の頼みとあれば, 必要とあれば, 君が行くとあれば. Vế sau là quyết tâm, sự sẵn lòng (～ても構わない, ～いとわない, 引き受ける) hoặc chấp nhận (仕方がない).'
+  - type: explain
+    text:
+      vi: 'とあって - "vì là (dịp đặc biệt)... nên". Gắn giống とあれば: 連休とあって, 人気歌手が来るとあって, 初日とあって. Vế sau mô tả cảnh tượng thực tế: đông người, náo nhiệt, ai cũng hồi hộp. Đây là văn phong tin tức, phóng sự.'
+  - type: explain
+    text:
+      vi: 'Mẹo nhớ: あれば là thể ば (giả định) nên とあれば nói về điều kiện; あって là thể て (lý do) nên とあって nói về nguyên nhân của chuyện đã thấy.'
+  - type: deep_explain
+    text:
+      vi: とあって không dùng cho ý chí của người nói ở vế sau (～しよう, ～てください, ～たい) và hiếm khi nói về bản thân - nó là cái nhìn khách quan của người kể. Ngược lại, とあれば thường gắn với lựa chọn của người nói hoặc của nhân vật. Dạng とあらば là văn cổ của とあれば; còn とあっては (= nếu đúng là... thì) thường đi với vế sau tiêu cực - 先生に頼まれたとあっては、断れない.
+  - type: example
+    target: 子どものためとあれば、どんな苦労もいとわない。
+    target_lang: ja
+    translation:
+      vi: Vì con thì vất vả đến đâu tôi cũng không quản.
+    note:
+      vi: ため + とあれば; vế sau là quyết tâm.
+  - type: example
+    target: 社長の頼みとあれば、引き受けないわけにはいかない。
+    target_lang: ja
+    translation:
+      vi: Đã là lời nhờ của giám đốc thì không thể không nhận.
+  - type: example
+    target: 連休とあって、観光地はどこも人でいっぱいだった。
+    target_lang: ja
+    translation:
+      vi: Vì là kỳ nghỉ dài nên khu du lịch nào cũng đông nghịt người.
+    note:
+      vi: Danh từ 連休 gắn thẳng, không có だ.
+  - type: example
+    target: 人気歌手が来るとあって、会場には朝からファンが殺到した。
+    target_lang: ja
+    translation:
+      vi: Vì có ca sĩ nổi tiếng đến nên từ sáng người hâm mộ đã ùn ùn kéo tới hội trường.
+  - type: common_mistake
+    wrong: 連休とあって、どこかへ出かけよう。
+    right: 連休だから、どこかへ出かけよう。
+    target_lang: ja
+    note:
+      vi: とあって không đi với lời rủ, ý chí ở vế sau. Tiếng Việt chỉ có một chữ "vì là" nên người Việt hay dùng とあって cho mọi lý do.
+  - type: common_mistake
+    wrong: 社長の頼みだとあれば、引き受けます。
+    right: 社長の頼みとあれば、引き受けます。
+    target_lang: ja
+    note:
+      vi: Danh từ gắn thẳng vào とあれば, bỏ だ.
+  - type: summary
+    points:
+      - vi: とあれば - "đã là... thì (sẵn lòng/đành)"; vế sau là quyết định, ý chí.
+      - vi: とあって - "vì là dịp đặc biệt nên"; vế sau là cảnh tượng quan sát được, không có ý chí.
+      - vi: Danh từ và tính từ な gắn thẳng, không có だ.
+      - vi: 引き受ける - nhận làm; 殺到する - ùn ùn kéo đến; いとわない - không quản.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u1-toareba-toatte-mcq-renkyuu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-gram-toatte
+    prompt:
+      stem: "「連休とあって、観光地はどこも混雑していた。」 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r3k, text: "Vì là kỳ nghỉ dài nên khu du lịch nào cũng đông.", lang: vi }
+        - { id: p8w, text: "Nếu là kỳ nghỉ dài thì khu du lịch nào cũng sẽ đông.", lang: vi }
+        - { id: d5m, text: "Dù là kỳ nghỉ dài nhưng khu du lịch không đông.", lang: vi }
+        - { id: x2f, text: "Kỳ nghỉ dài vừa bắt đầu là khu du lịch đông ngay.", lang: vi }
+    answer:
+      correct_option_id: r3k
+    explanation:
+      vi: とあって nêu lý do là một dịp đặc biệt, vế sau kể cảnh đã thấy (混雑していた). Đây không phải giả định (とあれば) hay nhượng bộ.
+    display_answer: "Vì là kỳ nghỉ dài nên khu du lịch nào cũng đông."
+
+  - key: ja:exercise:n1-u1-toareba-toatte-listen-tanomi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-gram-toareba
+    prompt:
+      audio_asset_id: null
+      fallback_text: 社長の頼みとあれば、引き受けないわけにはいかない。
+      options:
+        - { id: a6h, text: Đã là lời nhờ của giám đốc thì không thể không nhận., lang: vi }
+        - { id: b1q, text: Vì giám đốc nhờ nên tôi đã nhận rồi., lang: vi }
+        - { id: c9t, text: Dù giám đốc nhờ thì tôi cũng không nhận., lang: vi }
+        - { id: e4z, text: Giám đốc vừa nhờ là tôi nhận ngay., lang: vi }
+    answer:
+      correct_option_id: a6h
+    explanation:
+      vi: とあれば - "đã là... thì"; ～ないわけにはいかない - không thể không. Câu nói về lựa chọn của người nói, chưa phải việc đã xảy ra.
+    display_answer: Đã là lời nhờ của giám đốc thì không thể không nhận.
+
+  - key: ja:exercise:n1-u1-toareba-toatte-mcq-choose
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-toatte
+    prompt:
+      stem: 'Chọn từ điền vào: 「発売初日＿＿、店の前には長い行列ができていた。」'
+      stem_lang: vi
+      options:
+        - { id: f7n, text: とあって, lang: ja }
+        - { id: g2s, text: とあれば, lang: ja }
+        - { id: h5v, text: なくして, lang: ja }
+        - { id: j8c, text: が最後, lang: ja }
+    answer:
+      correct_option_id: f7n
+    explanation:
+      vi: Vế sau là cảnh đã thấy (行列ができていた), lý do là dịp đặc biệt (ngày đầu bán) - dùng とあって. とあれば là giả định, không hợp với sự việc đã xảy ra.
+    display_answer: とあって
+
+  - key: ja:exercise:n1-u1-toareba-toatte-fill-hitsuyou
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-toareba
+    prompt:
+      template: "必要{{b1}}、週末でも出勤します。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Nếu cần thiết thì cuối tuần tôi cũng đi làm."
+        - "Gợi ý: mẫu \"đã là... thì\" của bài, gắn thẳng sau danh từ."
+    answer:
+      blanks:
+        b1: [とあれば, とあらば]
+    known_wrong:
+      - answer: とあって
+        feedback_vi: とあって là lý do của việc đã thấy; vế sau ở đây là ý chí (出勤します) nên dùng とあれば.
+        error_tag: toareba_toatte
+      - answer: だとあれば
+        feedback_vi: Danh từ gắn thẳng vào とあれば, không có だ.
+        error_tag: extra_da
+    explanation:
+      vi: 必要とあれば - "nếu cần thì"; vế sau là sự sẵn lòng của người nói. とあらば là dạng văn cổ, cùng nghĩa.
+    display_answer: 必要とあれば、週末でも出勤します。
+
+  - key: ja:exercise:n1-u1-toareba-toatte-wb-kurou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-itowanai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Vì con thì vất vả đến đâu tôi cũng không quản.\""
+      tokens:
+        - { id: k3, text: いとわない }
+        - { id: k4, text: 子どものためとあって }
+        - { id: k2, text: どんな苦労も }
+        - { id: k1, text: 子どものためとあれば }
+    answer:
+      orders:
+        - [k1, k2, k3]
+    explanation:
+      vi: Vế sau là quyết tâm của người nói nên dùng とあれば; とあって không đi với ý chí. いとわない - không quản, hay đi với どんな～も.
+    display_answer: 子どものためとあれば、どんな苦労もいとわない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u1-toareba-toatte-fill-kashu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-sattou
+    prompt:
+      template: "人気歌手が来る{{b1}}、会場には朝からファンが{{b2}}した。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [とあって]
+        b2: [殺到, さっとう]
+    known_wrong:
+      - answer: とあれば
+        feedback_vi: Vế sau là việc đã xảy ra (した), không phải giả định - dùng とあって.
+        error_tag: toareba_toatte
+    explanation:
+      vi: 来るとあって - "vì có (ca sĩ) đến"; ファンが殺到した - người hâm mộ ùn ùn kéo tới.
+    display_answer: 人気歌手が来るとあって、会場には朝からファンが殺到した。
+
+  - key: ja:exercise:n1-u1-toareba-toatte-translate-tanomi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-hikiukeru
+    prompt:
+      source_text: Đã là lời nhờ của trưởng phòng thì tôi sẽ nhận việc này. (dùng とあれば, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 部長の頼みとあれば、この仕事を引き受けます。
+        - 部長の頼みとあれば、この仕事を引き受けましょう。
+        - 部長の頼みとあれば、この仕事をお引き受けします。
+        - 部長の頼みとあれば、この仕事は引き受けます。
+        - 部長の頼みとあらば、この仕事を引き受けます。
+        - 部長のお願いとあれば、この仕事を引き受けます。
+        - 部長の依頼とあれば、この仕事を引き受けます。
+        - 部長の頼みとあれば、私はこの仕事を引き受けます。
+        - 部長の頼みとあれば、この仕事を引き受けさせていただきます。
+        - ぶちょうのたのみとあれば、このしごとをひきうけます。
+    known_wrong:
+      - answer: 部長の頼みとあって、この仕事を引き受けます。
+        feedback_vi: Vế sau là quyết định của người nói nên dùng とあれば; とあって dùng cho cảnh đã thấy.
+        error_tag: toareba_toatte
+      - answer: 部長の頼みだとあれば、この仕事を引き受けます。
+        feedback_vi: Danh từ gắn thẳng vào とあれば, bỏ だ.
+        error_tag: extra_da
+    explanation:
+      vi: 部長の頼み + とあれば; 引き受ける - nhận làm (một việc được nhờ).
+    display_answer: 部長の頼みとあれば、この仕事を引き受けます。
+
+  - key: ja:exercise:n1-u1-toareba-toatte-translate-shonichi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-toatte
+    prompt:
+      source_text: Vì là ngày đầu mở bán nên khách đã ùn ùn kéo đến cửa hàng. (dùng とあって)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 発売初日とあって、客が店に殺到した。
+        - 発売初日とあって、店に客が殺到した。
+        - 発売初日とあって、客が店に殺到しました。
+        - 発売初日とあって、店に客が殺到しました。
+        - 発売初日とあって、お客さんが店に殺到した。
+        - 発売初日とあって、店にお客さんが殺到した。
+        - 発売初日とあって、お客さんが店に殺到しました。
+        - 発売初日とあって、店にお客さんが殺到しました。
+        - 発売初日とあって、店には客が殺到した。
+        - 発売初日とあって、店には客が殺到していた。
+        - 初日とあって、客が店に殺到した。
+        - 初日とあって、店に客が殺到した。
+        - 販売初日とあって、客が店に殺到した。
+        - 販売初日とあって、店に客が殺到した。
+        - はつばいしょにちとあって、きゃくがみせにさっとうした。
+    known_wrong:
+      - answer: 発売初日とあれば、客が店に殺到した。
+        feedback_vi: Việc đã xảy ra (殺到した) dùng とあって; とあれば là giả định.
+        error_tag: toareba_toatte
+      - answer: 発売初日だとあって、客が店に殺到した。
+        feedback_vi: Danh từ gắn thẳng vào とあって, bỏ だ.
+        error_tag: extra_da
+    explanation:
+      vi: 発売初日 - ngày đầu mở bán; 店に殺到する - ùn ùn kéo đến cửa hàng.
+    display_answer: 発売初日とあって、客が店に殺到した。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u1-toareba-toatte-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-toatte
+    prompt:
+      stem: Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: m4a, text: 年末とあって、駅はどこも帰省客で混雑していた。, lang: ja }
+        - { id: n7b, text: 年末とあって、一緒に大掃除をしましょう。, lang: ja }
+        - { id: o1c, text: 年末だとあって、駅はどこも帰省客で混雑していた。, lang: ja }
+        - { id: q6d, text: 年末とあって、早く家に帰ってください。, lang: ja }
+    answer:
+      correct_option_id: m4a
+    explanation:
+      vi: とあって + cảnh tượng thực tế là tự nhiên. Lời rủ (しましょう) và lời nhờ (てください) không đi sau とあって; 年末だとあって thừa だ.
+    display_answer: 年末とあって、駅はどこも帰省客で混雑していた。
+
+  - key: ja:exercise:n1-u1-toareba-toatte-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-gram-toareba
+    prompt:
+      source_text: 恩師の頼みとあれば、断るわけにはいかない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đã là lời nhờ của thầy cũ thì không thể từ chối được.
+        - Đã là lời nhờ của thầy cũ thì không thể từ chối.
+        - Đã là lời nhờ của thầy thì không thể từ chối được.
+        - Đã là lời nhờ của thầy thì không thể từ chối.
+        - Nếu là lời nhờ của thầy cũ thì không thể từ chối được.
+        - Nếu là lời nhờ của thầy cũ thì không thể từ chối.
+        - Nếu là lời nhờ của thầy thì không thể từ chối được.
+        - Nếu là thầy cũ nhờ thì không thể từ chối được.
+        - Đã là thầy cũ nhờ thì không thể từ chối được.
+        - Đã là thầy nhờ thì không thể từ chối được.
+        - Đã là lời nhờ của ân sư thì không thể từ chối được.
+        - Nếu là lời nhờ của ân sư thì không thể từ chối.
+        - Đã là lời nhờ của cô giáo cũ thì không thể từ chối được.
+        - Đã là thầy cũ nhờ thì tôi không thể từ chối được.
+        - Đã là lời nhờ của thầy cũ thì tôi không thể từ chối được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì thầy cũ đã nhờ nên tôi đã từ chối.
+        feedback_vi: 断るわけにはいかない là "không thể từ chối", không phải "đã từ chối".
+        error_tag: wakeniwaikanai
+      - answer: Dù là lời nhờ của thầy cũ thì tôi cũng từ chối.
+        feedback_vi: とあれば là "đã là... thì", không phải nhượng bộ "dù".
+        error_tag: toareba_meaning
+    explanation:
+      vi: 恩師 - thầy (cô) cũ mình mang ơn; とあれば - đã là... thì; ～わけにはいかない - không thể (vì lẽ thường, tình nghĩa).
+    display_answer: Đã là lời nhờ của thầy cũ thì không thể từ chối được.
+
+  - key: ja:exercise:n1-u1-toareba-toatte-wb-hitsuyou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-toareba
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nếu cần thì tôi sẵn sàng đến tận văn phòng của anh.\""
+      tokens:
+        - { id: s4, text: 伺います }
+        - { id: s2, text: 事務所まで }
+        - { id: s5, text: 必要だとあれば }
+        - { id: s1, text: 必要とあれば }
+        - { id: s3, text: そちらの }
+    answer:
+      orders:
+        - [s1, s3, s2, s4]
+    explanation:
+      vi: 必要とあれば không có だ. そちらの事務所 - văn phòng của anh (lịch sự); 伺います - khiêm nhường ngữ của 行く.
+    display_answer: 必要とあれば、そちらの事務所まで伺います。
+
+  - key: ja:exercise:n1-u1-toareba-toatte-mcq-news
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-sattou
+    prompt:
+      stem: "Đọc tin: 「10年ぶりの花火大会とあって、会場周辺には昼過ぎから見物客が殺到した。」 Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: t2e, text: Lễ hội pháo hoa đã mười năm mới tổ chức lại nên rất đông người đến., lang: vi }
+        - { id: u5r, text: Nếu lễ hội pháo hoa được tổ chức lại thì sẽ có nhiều người đến., lang: vi }
+        - { id: v8y, text: Lễ hội pháo hoa đã tổ chức mười năm liền nên ít người đến xem., lang: vi }
+        - { id: w3i, text: Khán giả bị cấm vào khu vực quanh hội trường sau buổi trưa., lang: vi }
+    answer:
+      correct_option_id: t2e
+    explanation:
+      vi: 10年ぶり - lần đầu sau mười năm; とあって - vì là dịp đặc biệt; 殺到した - đã ùn ùn kéo đến. Đây là việc đã xảy ra, không phải giả định.
+    display_answer: Lễ hội pháo hoa đã mười năm mới tổ chức lại nên rất đông người đến.

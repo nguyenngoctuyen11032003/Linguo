@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u3-te-yamanai
+order_index: 1
+level: n1
+title:
+  vi: Cảm xúc dâng trào - ～てやまない và ～を禁じ得ない
+objectives:
+  - vi: Bày tỏ mong ước, tình cảm sâu sắc và bền bỉ bằng ～てやまない.
+  - vi: Diễn tả cảm xúc không kìm nén được trước một sự việc bằng ～を禁じ得ない.
+  - vi: Dùng đúng các từ 切に, 憤り, 同情, 敬愛 trong văn viết trang trọng.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-literary-style-review]
+items:
+  - item: ja:item:n1-u3-setsuni
+  - item: ja:item:n1-u3-ikidoori
+  - item: ja:item:n1-u3-doujou
+  - item: ja:item:n1-u3-keiai
+  - item: ja:item:n1-u3-gram-te-yamanai
+  - item: ja:item:n1-u3-gram-wo-kinjienai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu và viết được những câu cảm xúc mạnh hay gặp trong lời chúc, bài phát biểu và xã luận - "không ngừng cầu chúc", "không khỏi phẫn nộ".
+  - type: explain
+    text:
+      vi: '～てやまない - V-て + やまない: cảm xúc, mong ước mãnh liệt và kéo dài của người nói. Đi với 願う, 祈る, 愛する, 期待する, 尊敬する, 敬愛する: 平和を願ってやまない; 皆様のご多幸を祈ってやみません.'
+  - type: explain
+    text:
+      vi: '～を禁じ得ない - N cảm xúc + を禁じ得ない: cảm xúc tự trào lên, muốn kìm cũng không được. Đi với 怒り, 憤り, 同情, 驚き, 涙: 被災者の姿に涙を禁じ得なかった.'
+  - type: explain
+    text:
+      vi: 'Từ vựng: 切に (tha thiết) - 切に願う; 憤り (phẫn nộ trước bất công); 同情 (thương cảm) - ～に同情する; 敬愛 (kính yêu) - 敬愛する恩師.'
+  - type: deep_explain
+    text:
+      vi: 'Hai mẫu khác hướng: てやまない là cảm xúc người nói chủ động ôm ấp lâu dài (mong, yêu, kính); を禁じ得ない là phản ứng bị động trước tình huống bên ngoài (tin tức, cảnh tượng). Cả hai đều là văn viết; trong hội thoại thường ngày nói 本当に願っています / 怒らずにはいられない. Khi nói về người khác, てやまない thường xuất hiện ở định ngữ: 彼が愛してやまない故郷.'
+  - type: example
+    target: 一日も早い復興を切に願ってやみません。
+    target_lang: ja
+    translation:
+      vi: Tôi tha thiết mong công cuộc tái thiết sớm hoàn thành dù chỉ sớm một ngày.
+  - type: example
+    target: 私が敬愛してやまない恩師が、今年で八十歳を迎えます。
+    target_lang: ja
+    translation:
+      vi: Người thầy mà tôi hết mực kính yêu năm nay tròn tám mươi tuổi.
+  - type: example
+    target: 被害者の気持ちを思うと、加害者への怒りを禁じ得ない。
+    target_lang: ja
+    translation:
+      vi: Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+  - type: example
+    target: 家も仕事も失った被災者の話には同情を禁じ得ない。
+    target_lang: ja
+    translation:
+      vi: Nghe chuyện những nạn nhân mất cả nhà lẫn việc làm, tôi không khỏi thương cảm.
+  - type: common_mistake
+    wrong: 毎朝パンを食べてやまない。
+    right: 子どもたちの健やかな成長を願ってやまない。
+    target_lang: ja
+    note:
+      vi: てやまない chỉ đi với động từ cảm xúc, mong ước (願う, 祈る, 愛する...), không dùng cho thói quen hay hành động thường ngày.
+  - type: common_mistake
+    wrong: そのニュースを聞いて、怒るを禁じ得なかった。
+    right: そのニュースを聞いて、怒りを禁じ得なかった。
+    target_lang: ja
+    note:
+      vi: Trước を禁じ得ない là danh từ cảm xúc - 怒り, 驚き, 同情; không đặt động từ thể từ điển vào.
+  - type: summary
+    points:
+      - vi: V-て + やまない - không ngừng (mong, yêu, kính); lịch sự やみません.
+      - vi: N cảm xúc + を禁じ得ない - không kìm được (giận, thương, kinh ngạc, rơi lệ).
+      - vi: 切に願う, 憤りを覚える, ～に同情する, 敬愛する.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u3-te-yamanai-mcq-ikidoori
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u3-ikidoori
+    prompt:
+      stem: 「憤り」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a3k, text: sự phẫn nộ trước điều bất công, lang: vi }
+        - { id: m7q, text: sự thương cảm, lang: vi }
+        - { id: z1w, text: sự kinh ngạc, lang: vi }
+        - { id: e5r, text: sự xấu hổ, lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: 憤り (いきどおり) - phẫn nộ, thường trước bất công. Thương cảm là 同情, kinh ngạc là 驚き, xấu hổ là 恥.
+    display_answer: sự phẫn nộ trước điều bất công
+
+  - key: ja:exercise:n1-u3-te-yamanai-listen-yamanai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-gram-te-yamanai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 皆様のご健康とご多幸を祈ってやみません。
+      options:
+        - { id: c2v, text: Tôi không ngừng cầu chúc quý vị luôn mạnh khỏe và hạnh phúc., lang: vi }
+        - { id: h8n, text: Tôi đã ngừng cầu chúc cho sức khỏe của quý vị., lang: vi }
+        - { id: o4d, text: Quý vị đừng ngừng cầu nguyện cho sức khỏe., lang: vi }
+        - { id: t6j, text: Tôi không thể cầu chúc cho quý vị được nữa., lang: vi }
+    answer:
+      correct_option_id: c2v
+    explanation:
+      vi: 祈ってやみません - không ngừng cầu chúc (thể lịch sự của てやまない). ご健康とご多幸 - sức khỏe và hạnh phúc.
+    display_answer: Tôi không ngừng cầu chúc quý vị luôn mạnh khỏe và hạnh phúc.
+
+  - key: ja:exercise:n1-u3-te-yamanai-mcq-kinjienai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-wo-kinjienai
+    prompt:
+      stem: 'Chọn từ đúng: 罪のない子どもたちが犠牲になったという報道に、強い憤り＿＿。'
+      stem_lang: vi
+      options:
+        - { id: g5b, text: を禁じ得ない, lang: ja }
+        - { id: u1x, text: てやまない, lang: ja }
+        - { id: w9s, text: に足る, lang: ja }
+        - { id: k3p, text: を禁じる, lang: ja }
+    answer:
+      correct_option_id: g5b
+    explanation:
+      vi: Danh từ cảm xúc 憤り + を禁じ得ない - không kìm được phẫn nộ trước tin tức. てやまない cần động từ thể て; に足る là "đủ để"; を禁じる là "cấm".
+    display_answer: を禁じ得ない
+
+  - key: ja:exercise:n1-u3-te-yamanai-fill-setsuni
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u3-setsuni
+    prompt:
+      template: "一日も早い復興を{{b1}}願ってやみません。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Tôi tha thiết mong công cuộc tái thiết sớm hoàn thành."
+        - "Gợi ý: phó từ trang trọng 'tha thiết' - せつに."
+    answer:
+      blanks:
+        b1: [切に, せつに]
+    known_wrong:
+      - answer: 大切に
+        feedback_vi: 大切に là "trân trọng, cẩn thận"; "tha thiết mong" là 切に願う.
+        error_tag: vocab_meaning
+      - answer: 必ず
+        feedback_vi: 必ず là "nhất định"; đi với 願う để nói mong tha thiết dùng 切に.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 切に願う - tha thiết mong; kết hợp với てやみません tạo giọng văn rất trang trọng.
+    display_answer: 一日も早い復興を切に願ってやみません。
+
+  - key: ja:exercise:n1-u3-te-yamanai-wb-keiai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-keiai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Người thầy mà tôi hết mực kính yêu năm nay tròn tám mươi tuổi.\""
+      tokens:
+        - { id: t3, text: 恩師が、 }
+        - { id: t1, text: 私が }
+        - { id: t5, text: 敬愛を禁じ得ない }
+        - { id: t4, text: 今年で八十歳を迎えます }
+        - { id: t2, text: 敬愛してやまない }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: 私が敬愛してやまない恩師 - người thầy mà tôi hết mực kính yêu (てやまない làm định ngữ). を禁じ得ない dành cho cảm xúc tự trào lên trước sự việc, không hợp với 敬愛.
+    display_answer: 私が敬愛してやまない恩師が、今年で八十歳を迎えます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u3-te-yamanai-fill-yamanai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-te-yamanai
+    prompt:
+      template: "子どもたちの健やかな成長を願って{{b1}}。(không ngừng mong)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [やまない, やみません, 止まない, 止みません]
+    known_wrong:
+      - answer: いられない
+        feedback_vi: てはいられない là "không thể cứ... mãi" - nghĩa khác. Mong ước không ngừng là てやまない.
+        error_tag: yamanai_form
+      - answer: やめない
+        feedback_vi: やめない (không bỏ) là động từ hành động; mẫu cảm xúc là やまない (止む).
+        error_tag: yamanai_form
+    explanation:
+      vi: 願ってやまない - không ngừng mong. Thể lịch sự やみません hay dùng trong lời chúc, phát biểu.
+    display_answer: 子どもたちの健やかな成長を願ってやまない。
+
+  - key: ja:exercise:n1-u3-te-yamanai-translate-doujou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-wo-kinjienai
+    prompt:
+      source_text: Nghe chuyện những nạn nhân mất cả nhà lẫn việc làm, tôi không khỏi thương cảm. (dùng を禁じ得ない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 家も仕事も失った被災者の話には同情を禁じ得ない。
+        - 家も仕事も失った被災者の話には同情を禁じ得ません。
+        - 家も仕事も失った被災者の話に同情を禁じ得ない。
+        - 家も仕事も失った被災者の話を聞くと、同情を禁じ得ない。
+        - 家も仕事も失った被災者の話を聞いて、同情を禁じ得なかった。
+        - 家も仕事も失った被災者の話を聞くと、同情を禁じ得ません。
+        - 家と仕事を失った被災者の話には同情を禁じ得ない。
+        - 家も仕事もなくした被災者の話には同情を禁じ得ない。
+        - 家も仕事も失った被災者の話には同情を禁じえない。
+        - 家も仕事も失った被災者の話を聞くと、同情を禁じえない。
+        - いえもしごともうしなったひさいしゃのはなしにはどうじょうをきんじえない。
+    known_wrong:
+      - answer: 家も仕事も失った被災者の話には同情するを禁じ得ない。
+        feedback_vi: Trước を禁じ得ない dùng danh từ - 同情を禁じ得ない, không dùng 同情する.
+        error_tag: kinjienai_noun
+      - answer: 家も仕事も失った被災者の話には同情してやまない。
+        feedback_vi: てやまない là cảm xúc ôm ấp lâu dài (mong, yêu); phản ứng không kìm được trước câu chuyện là を禁じ得ない.
+        error_tag: yamanai_kinjienai
+    explanation:
+      vi: 被災者 - nạn nhân thiên tai; 家も仕事も失った - mất cả nhà lẫn việc; 同情を禁じ得ない - không khỏi thương cảm.
+    display_answer: 家も仕事も失った被災者の話には同情を禁じ得ない。
+
+  - key: ja:exercise:n1-u3-te-yamanai-translate-yamanai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-te-yamanai
+    prompt:
+      source_text: Tôi không ngừng mong hòa bình thế giới. (dùng てやまない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 世界の平和を願ってやまない。
+        - 世界の平和を願ってやみません。
+        - 世界平和を願ってやまない。
+        - 世界平和を願ってやみません。
+        - 私は世界の平和を願ってやまない。
+        - 私は世界の平和を願ってやみません。
+        - 私は世界平和を願ってやまない。
+        - 私は世界平和を願ってやみません。
+        - 世界の平和を祈ってやまない。
+        - 世界の平和を祈ってやみません。
+        - 世界平和を祈ってやみません。
+        - 世界の平和を切に願ってやみません。
+        - せかいのへいわをねがってやみません。
+        - せかいへいわをねがってやまない。
+    known_wrong:
+      - answer: 世界の平和を願ってやめない。
+        feedback_vi: Mẫu cảm xúc là てやまない (止む), không phải やめない.
+        error_tag: yamanai_form
+      - answer: 世界の平和を願いを禁じ得ない。
+        feedback_vi: を禁じ得ない đi sau danh từ cảm xúc và chỉ phản ứng bộc phát; mong ước lâu dài dùng 願ってやまない.
+        error_tag: yamanai_kinjienai
+    explanation:
+      vi: 世界の平和 / 世界平和 - hòa bình thế giới; 願ってやまない - không ngừng mong.
+    display_answer: 世界の平和を願ってやみません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u3-te-yamanai-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-te-yamanai
+    prompt:
+      stem: Câu nào dùng ～てやまない tự nhiên và đúng?
+      stem_lang: vi
+      options:
+        - { id: d6f, text: 彼が愛してやまない故郷の海を、一度見てみたい。, lang: ja }
+        - { id: n2y, text: 毎晩寝る前に歯を磨いてやまない。, lang: ja }
+        - { id: q8l, text: 昨日の会議で部長が怒ってやまなかった。, lang: ja }
+        - { id: y4h, text: 駅まで走ってやまないので、疲れた。, lang: ja }
+    answer:
+      correct_option_id: d6f
+    explanation:
+      vi: 愛してやまない故郷 - quê hương anh ấy hết lòng yêu (cảm xúc lâu dài, dùng làm định ngữ cho người khác). Đánh răng, chạy là hành động thường; giận dữ nhất thời trong cuộc họp không hợp với てやまない.
+    display_answer: 彼が愛してやまない故郷の海を、一度見てみたい。
+
+  - key: ja:exercise:n1-u3-te-yamanai-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-gram-wo-kinjienai
+    prompt:
+      source_text: 被害者の気持ちを思うと、加害者への怒りを禁じ得ない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận đối với kẻ gây hại.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không thể kìm nén cơn giận với kẻ gây hại.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không khỏi tức giận với kẻ gây hại.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không khỏi giận kẻ gây hại.
+        - Nghĩ đến tâm trạng của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+        - Nghĩ đến cảm giác của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+        - Khi nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận với thủ phạm.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không khỏi tức giận với thủ phạm.
+        - Nghĩ đến cảm xúc của người bị hại, tôi không kìm được cơn giận với kẻ gây hại.
+        - Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được sự phẫn nộ với kẻ gây hại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nghĩ đến cảm xúc của nạn nhân, tôi cấm mình giận kẻ gây hại.
+        feedback_vi: 禁じ得ない là "không thể cấm", tức không kìm được - không phải "cấm mình".
+        error_tag: kinjienai_meaning
+    explanation:
+      vi: 被害者の気持ちを思うと - nghĩ đến cảm xúc của nạn nhân; 加害者への怒り - cơn giận với kẻ gây hại; を禁じ得ない - không kìm được.
+    display_answer: Nghĩ đến cảm xúc của nạn nhân, tôi không kìm được cơn giận với kẻ gây hại.
+
+  - key: ja:exercise:n1-u3-te-yamanai-wb-ikidoori
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-ikidoori
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Trước những vụ lừa đảo nhắm vào người già, tôi không kìm được phẫn nộ.\""
+      tokens:
+        - { id: p4, text: 禁じ得ない }
+        - { id: p2, text: 詐欺には、 }
+        - { id: p5, text: 憤ってやまない }
+        - { id: p3, text: 憤りを }
+        - { id: p1, text: 高齢者を狙った }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: 高齢者を狙った詐欺 - lừa đảo nhắm vào người già; 憤りを禁じ得ない - không kìm được phẫn nộ. 憤ってやまない sai vì phẫn nộ trước sự việc là phản ứng bộc phát, dùng を禁じ得ない.
+    display_answer: 高齢者を狙った詐欺には、憤りを禁じ得ない。
+
+  - key: ja:exercise:n1-u3-te-yamanai-mcq-speech
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-te-yamanai
+    prompt:
+      stem: Bạn kết thúc bài phát biểu chúc mừng đám cưới của đồng nghiệp. Câu kết nào trang trọng và đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: f1t, text: お二人の末永いお幸せを心より祈ってやみません。, lang: ja }
+        - { id: l9e, text: お二人の末永いお幸せに同情を禁じ得ません。, lang: ja }
+        - { id: h3w, text: お二人の末永いお幸せを祈るを禁じ得ません。, lang: ja }
+        - { id: r7c, text: お二人の末永いお幸せを祈ってやめません。, lang: ja }
+    answer:
+      correct_option_id: f1t
+    explanation:
+      vi: 心より祈ってやみません - xin hết lòng cầu chúc, câu kết chuẩn của lời chúc trang trọng. 同情 là thương cảm - không hợp đám cưới; を禁じ得ない cần danh từ cảm xúc; やめません sai dạng.
+    display_answer: お二人の末永いお幸せを心より祈ってやみません。

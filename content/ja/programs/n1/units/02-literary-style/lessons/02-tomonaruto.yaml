@@ -1,0 +1,371 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u2-tomonaruto
+order_index: 2
+level: n1
+title:
+  vi: Khi đã đến mức ấy - ～ともなると, ～ともなれば
+objectives:
+  - vi: Nói "một khi đã là / đã đến mức... thì đương nhiên" bằng ～ともなると, ～ともなれば.
+  - vi: Phân biệt ～ともなると với ～となると và ～ともあろう.
+  - vi: Dùng từ vựng về vị trí, trách nhiệm - 重責, 管理職, 自覚.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-u2-ngatame-beku]
+items:
+  - item: ja:item:n1-u2-juuseki
+  - item: ja:item:n1-u2-kanrishoku
+  - item: ja:item:n1-u2-shiwasu
+  - item: ja:item:n1-u2-jikaku
+  - item: ja:item:n1-u2-gram-tomonaruto
+  - item: ja:item:n1-u2-gram-tomoarou
+body:
+  - type: objective
+    text:
+      vi: 'Bài này luyện cách nói "đã lên tới vị trí, thời điểm ấy thì mọi thứ khác hẳn": 社長ともなれば忙しい, 12月ともなると慌ただしい - và cách chê trách người có địa vị bằng ～ともあろう.'
+  - type: explain
+    text:
+      vi: '～ともなると / ～ともなれば - N (chức vị, tuổi, thời điểm, số lượng) hoặc V thể từ điển + ともなると: "một khi đã là / đã đến mức... thì". Vế sau là nhận định lẽ thường về sự thay đổi: 大学4年生ともなると、就職のことを真剣に考え始める.'
+  - type: explain
+    text:
+      vi: '～ともあろう - N + ともあろう + 者 / 人 / 会社...: "đường đường là... mà lại". Luôn mang ý phê phán, hay kết bằng ～とは / ～なんて: 警察官ともあろう者が、法律を破るとは.'
+  - type: deep_explain
+    text:
+      vi: 'So với ～となると (nếu thế thì, trong trường hợp đó), ～ともなると có thêm も nhấn mạnh "đã lên tới mức đặc biệt ấy". Vì vậy danh từ đứng trước phải là mức độ đáng kể: 社長, 横綱, 50人, 12月. Không dùng cho sự kiện ngẫu nhiên một lần hay ý chí người nói (明日ともなると、雨が降る là sai). ともなれば thường đi kèm phán đoán ～だろう, ～はずだ; ともなると hay mô tả thực tế lặp lại.'
+  - type: example
+    target: 12月ともなると、街はどこも慌ただしくなる。
+    target_lang: ja
+    translation:
+      vi: Cứ đến tháng 12 là phố phường đâu đâu cũng tất bật.
+  - type: example
+    target: 社長ともなれば、休日でも気が休まらないだろう。
+    target_lang: ja
+    translation:
+      vi: Đã là giám đốc thì chắc ngày nghỉ cũng chẳng được thảnh thơi.
+  - type: example
+    target: 管理職ともなれば、部下の失敗にも責任を負わなければならない。
+    target_lang: ja
+    translation:
+      vi: Đã lên chức quản lý thì phải chịu trách nhiệm cả về thất bại của cấp dưới.
+  - type: example
+    target: 教師ともあろう者が、生徒の前でそんな言葉を使うとは。
+    target_lang: ja
+    translation:
+      vi: Đường đường là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+  - type: example
+    target: 師走に入り、駅前は買い物客でにぎわっている。
+    target_lang: ja
+    translation:
+      vi: Bước vào tháng Chạp, khu trước nhà ga nhộn nhịp khách mua sắm.
+  - type: common_mistake
+    wrong: 明日ともなると、雨が降るそうです。
+    right: 明日は雨が降るそうです。
+    target_lang: ja
+    note:
+      vi: ともなると cần một mức độ, vị trí đặc biệt dẫn đến thay đổi lẽ thường. "Ngày mai" chỉ là một thời điểm bình thường.
+  - type: common_mistake
+    wrong: 社長ともあろう人は、忙しいのが当然だ。
+    right: 社長ともなれば、忙しいのが当然だ。
+    target_lang: ja
+    note:
+      vi: ともあろう dùng để chê trách người có địa vị làm điều không xứng. Nhận định trung tính "đã là giám đốc thì..." dùng ともなれば.
+  - type: summary
+    points:
+      - vi: N / V + ともなると / ともなれば - một khi đã đến mức... thì đương nhiên.
+      - vi: N + ともあろう者が～とは - đường đường là... mà lại (phê phán).
+      - vi: Danh từ trước phải là mức độ, chức vị, thời điểm đặc biệt.
+      - vi: 重責 (trọng trách), 管理職 (chức quản lý), 師走 (tháng Chạp), 自覚 (ý thức trách nhiệm).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u2-tomonaruto-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u2-gram-tomonaruto
+    prompt:
+      stem: Câu 「社長ともなれば、休日でも気が休まらないだろう。」 có nghĩa gì?
+      stem_lang: vi
+      options:
+        - { id: q7h, text: Đã là giám đốc thì chắc ngày nghỉ cũng chẳng được thảnh thơi., lang: vi }
+        - { id: u2b, text: Nếu giám đốc nghỉ thì nhân viên cũng không yên tâm., lang: vi }
+        - { id: i5m, text: Giám đốc nói rằng ngày nghỉ cũng không nên nghỉ ngơi., lang: vi }
+        - { id: y8c, text: Giám đốc mà lại nghỉ cả ngày lễ thì thật đáng trách., lang: vi }
+    answer:
+      correct_option_id: q7h
+    explanation:
+      vi: 社長ともなれば - đã lên tới chức giám đốc thì; 気が休まらない - không thảnh thơi; だろう - chắc là.
+    display_answer: Đã là giám đốc thì chắc ngày nghỉ cũng chẳng được thảnh thơi.
+
+  - key: ja:exercise:n1-u2-tomonaruto-listen-shiwasu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-shiwasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 師走に入り、駅前は買い物客でにぎわっている。
+      options:
+        - { id: e4k, text: "Bước vào tháng Chạp, khu trước nhà ga nhộn nhịp khách mua sắm.", lang: vi }
+        - { id: b9t, text: "Bước vào mùa xuân, khu trước nhà ga vắng khách mua sắm.", lang: vi }
+        - { id: n6d, text: "Các thầy giáo chạy qua khu trước nhà ga để đi mua sắm.", lang: vi }
+        - { id: w1g, text: "Cuối tháng này, nhà ga sẽ mở thêm khu mua sắm.", lang: vi }
+    answer:
+      correct_option_id: e4k
+    explanation:
+      vi: 師走 (しわす) - tháng Chạp; にぎわっている - đang nhộn nhịp. Chữ 師 (thầy) trong tên tháng chỉ là tích xưa "thầy tu cũng phải chạy", không phải thầy giáo thật.
+    display_answer: "Bước vào tháng Chạp, khu trước nhà ga nhộn nhịp khách mua sắm."
+
+  - key: ja:exercise:n1-u2-tomonaruto-mcq-tomoarou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tomoarou
+    prompt:
+      stem: 'Chọn từ phù hợp: 警察官＿＿者が、法律を破るとは信じられない。'
+      stem_lang: vi
+      options:
+        - { id: r3s, text: ともあろう, lang: ja }
+        - { id: j6n, text: ともなると, lang: ja }
+        - { id: c8w, text: ともなれば, lang: ja }
+        - { id: m1a, text: となると, lang: ja }
+    answer:
+      correct_option_id: r3s
+    explanation:
+      vi: N + ともあろう + 者 - đường đường là... mà lại (chê trách). ともなると / ともなれば / となると không đứng trực tiếp trước danh từ 者.
+    display_answer: ともあろう
+
+  - key: ja:exercise:n1-u2-tomonaruto-fill-tomonaruto
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tomonaruto
+    prompt:
+      template: "大学4年生とも{{b1}}と、就職のことを真剣に考え始める。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Đã là sinh viên năm 4 thì bắt đầu nghiêm túc nghĩ đến chuyện xin việc."
+        - "Gợi ý: ～とも＿＿と - động từ なる."
+    answer:
+      blanks:
+        b1: [なる]
+    known_wrong:
+      - answer: あろう
+        feedback_vi: ともあろう đi với danh từ chỉ người (者) và mang ý chê trách; ở đây là nhận định trung tính - ともなると.
+        error_tag: tomoarou_tomonaruto
+      - answer: なれ
+        feedback_vi: なれ đi với ば (ともなれば). Trước と dùng thể từ điển なる.
+        error_tag: grammar_form
+    explanation:
+      vi: 大学4年生ともなると - một khi đã là sinh viên năm 4 thì.
+    display_answer: 大学4年生ともなると、就職のことを真剣に考え始める。
+
+  - key: ja:exercise:n1-u2-tomonaruto-wb-kanrishoku
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-kanrishoku
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đã lên chức quản lý thì phải chịu trách nhiệm cả về thất bại của cấp dưới.\""
+      tokens:
+        - { id: k3, text: 責任を負わなければならない }
+        - { id: k4, text: 管理職ともあろう、 }
+        - { id: k2, text: 部下の失敗にも }
+        - { id: k1, text: 管理職ともなれば、 }
+    answer:
+      orders:
+        - [k1, k2, k3]
+    explanation:
+      vi: 管理職ともなれば - đã lên chức quản lý thì. ともあろう không đứng một mình trước dấu phẩy, và mang ý chê trách.
+    display_answer: 管理職ともなれば、部下の失敗にも責任を負わなければならない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u2-tomonaruto-fill-juuseki
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-juuseki
+    prompt:
+      template: "彼は代表としての{{b1}}を立派に果たした。(trọng trách)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [重責, じゅうせき, 責任, せきにん, 責務, せきむ]
+    known_wrong:
+      - answer: じゅせき
+        feedback_vi: じゅう là âm dài - じゅうせき.
+        error_tag: long_vowel
+      - answer: 重要
+        feedback_vi: 重要 là tính từ "quan trọng"; trọng trách là danh từ 重責.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 重責を果たす - hoàn thành trọng trách. 責任 / 責務 cũng đúng nghĩa, nhưng 重責 nhấn mạnh sức nặng.
+    display_answer: 彼は代表としての重責を立派に果たした。
+
+  - key: ja:exercise:n1-u2-tomonaruto-fill-jikaku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u2-jikaku
+    prompt:
+      template: "社会人としての{{b1}}を持って行動しなさい。(ý thức về vai trò của mình)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [自覚, じかく]
+    known_wrong:
+      - answer: じがく
+        feedback_vi: かく không có dấu đục - じかく. じがく (自学) là "tự học".
+        error_tag: dakuten
+      - answer: 自信
+        feedback_vi: 自信 là sự tự tin; ý thức về vai trò, trách nhiệm là 自覚.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～としての自覚を持つ - có ý thức của một ~.
+    display_answer: 社会人としての自覚を持って行動しなさい。
+
+  - key: ja:exercise:n1-u2-tomonaruto-translate-tomonaruto
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tomonaruto
+    prompt:
+      source_text: Cứ đến tháng 12 là phố phường đâu đâu cũng tất bật. (dùng ともなると)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 12月ともなると、街はどこも慌ただしくなる。
+        - 12月ともなると、街はどこも慌ただしくなります。
+        - 12月ともなると、町はどこも慌ただしくなる。
+        - 12月ともなると、町はどこも慌ただしくなります。
+        - 十二月ともなると、街はどこも慌ただしくなる。
+        - 12月ともなると、街はどこもあわただしくなる。
+        - 12月ともなると、どこの街も慌ただしくなる。
+        - 12月ともなると、どの街も慌ただしくなる。
+        - 12月ともなると、街はどこも忙しくなる。
+        - 12月ともなると、街はどこもせわしくなる。
+        - 師走ともなると、街はどこも慌ただしくなる。
+        - 12月ともなると、街はどこも慌ただしい。
+        - じゅうにがつともなると、まちはどこもあわただしくなる。
+    known_wrong:
+      - answer: 12月ともあろう、街はどこも慌ただしくなる。
+        feedback_vi: ともあろう chỉ đứng trước danh từ chỉ người và mang ý chê trách. Ở đây dùng ともなると.
+        error_tag: tomoarou_tomonaruto
+      - answer: 12月ともなるので、街はどこも慌ただしくなる。
+        feedback_vi: Mẫu cố định là ともなると / ともなれば, không nối bằng ので.
+        error_tag: grammar_form
+    explanation:
+      vi: 12月ともなると - cứ đến tháng 12; 慌ただしくなる - trở nên tất bật.
+    display_answer: 12月ともなると、街はどこも慌ただしくなる。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u2-tomonaruto-mcq-usage
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tomonaruto
+    prompt:
+      stem: Câu nào dùng ともなると / ともなれば tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: p6v, text: 横綱ともなれば、強さだけでなく品格も求められる。, lang: ja }
+        - { id: d3x, text: 明日ともなると、雨が降るそうだ。, lang: ja }
+        - { id: z7q, text: 私ともなると、明日は早く起きよう。, lang: ja }
+        - { id: h2e, text: 横綱ともなれば、一緒に相撲を見に行きましょう。, lang: ja }
+    answer:
+      correct_option_id: p6v
+    explanation:
+      vi: 横綱 là đỉnh cao của sumo - đúng kiểu "đã lên tới mức ấy thì...". "Ngày mai", "tôi" không phải mức độ đặc biệt; vế sau cũng không là ý chí, rủ rê.
+    display_answer: 横綱ともなれば、強さだけでなく品格も求められる。
+
+  - key: ja:exercise:n1-u2-tomonaruto-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u2-gram-tomoarou
+    prompt:
+      source_text: 教師ともあろう者が、生徒の前でそんな言葉を使うとは。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đường đường là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Đường đường là giáo viên mà lại dùng những lời như thế trước mặt học sinh.
+        - Đường đường là giáo viên mà lại dùng lời lẽ như vậy trước mặt học sinh.
+        - Đường đường là giáo viên mà lại nói những lời như thế trước mặt học sinh.
+        - Đường đường là giáo viên mà lại nói những lời như vậy trước mặt học sinh.
+        - Là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Là giáo viên mà lại nói những lời như thế trước mặt học sinh.
+        - Là một giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Đã là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Một giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Thầy giáo mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Đường đường là thầy giáo mà lại dùng lời lẽ như thế trước mặt học sinh.
+        - Không ngờ một giáo viên lại dùng lời lẽ như thế trước mặt học sinh.
+        - Không ngờ đường đường là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đã là giáo viên thì phải dùng lời lẽ như thế trước mặt học sinh.
+        feedback_vi: ともあろう者が～とは là chê trách "mà lại...", không phải "thì phải".
+        error_tag: tomoarou_meaning
+    explanation:
+      vi: 教師ともあろう者が - đường đường là giáo viên mà lại; ～とは - (thật không ngờ, đáng trách).
+    display_answer: Đường đường là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+
+  - key: ja:exercise:n1-u2-tomonaruto-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tomonaruto
+    prompt:
+      stem: 'Đồng nghiệp hỏi: 「部長になって、何か変わりましたか。」 Bạn muốn nói: "Đã lên trưởng phòng thì trách nhiệm cũng nặng hơn hẳn." Câu nào phù hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: s5j, text: 部長ともなると、やはり責任の重さが全然違いますね。, lang: ja }
+        - { id: a9f, text: 部長ともあろう者が、責任の重さが全然違いますね。, lang: ja }
+        - { id: g4l, text: 部長ともなるべく、責任の重さが全然違いますね。, lang: ja }
+        - { id: t1o, text: 部長なりに、責任の重さが全然違いますね。, lang: ja }
+    answer:
+      correct_option_id: s5j
+    explanation:
+      vi: 部長ともなると - đã lên trưởng phòng thì. ともあろう là chê trách; べく là mục đích; なりに là "theo cách của riêng" (bài sau).
+    display_answer: 部長ともなると、やはり責任の重さが全然違いますね。
+
+  - key: ja:exercise:n1-u2-tomonaruto-wb-tomoarou
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-tomoarou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đường đường là một công ty lớn mà lại che giấu sai phạm, thật không thể tha thứ.\""
+      tokens:
+        - { id: t3, text: 不正を隠すとは }
+        - { id: t1, text: 大企業 }
+        - { id: t5, text: ともなると }
+        - { id: t4, text: 許せない }
+        - { id: t2, text: ともあろう会社が }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+    explanation:
+      vi: 大企業ともあろう会社が～とは - đường đường là công ty lớn mà lại... ともなると không đứng trước danh từ 会社.
+    display_answer: 大企業ともあろう会社が不正を隠すとは許せない。

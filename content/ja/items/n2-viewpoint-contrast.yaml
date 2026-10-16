@@ -1,0 +1,708 @@
+# Học liệu unit "Quan điểm, giới hạn và tương phản" (JLPT N2). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～にとって, ～として, ～からすると =================
+  - key: ja:item:n2-u2-tachiba
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 立場
+      reading: たちば
+      romanization: tachiba
+      pos: danh từ
+    back:
+      meaning:
+        vi: lập trường, vị trí, hoàn cảnh (của một người trong một mối quan hệ); 相手の立場に立つ - đặt mình vào vị trí người khác
+      examples:
+        - target: 相手の立場に立って考えることが大切です。
+          translation:
+            vi: Điều quan trọng là đặt mình vào vị trí của đối phương để suy nghĩ.
+      pronunciation_note:
+        vi: Đọc "ta-chi-ba".
+      confusion:
+        vi: 立場 là vị trí, vai trò xã hội (立場が弱い - ở thế yếu); 場所 là địa điểm vật lý.
+
+  - key: ja:item:n2-u2-kanten
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 観点
+      reading: かんてん
+      romanization: kanten
+      pos: danh từ
+    back:
+      meaning:
+        vi: quan điểm, góc nhìn (để xem xét vấn đề); 環境の観点から - từ góc độ môi trường
+      examples:
+        - target: 安全の観点から、この計画には問題があります。
+          translation:
+            vi: Xét từ góc độ an toàn, kế hoạch này có vấn đề.
+      pronunciation_note:
+        vi: Đọc "kan-tên".
+      confusion:
+        vi: 観点 là góc độ xem xét (経済的な観点); 意見 là ý kiến cá nhân. Hay gặp cụm ～の観点から.
+
+  - key: ja:item:n2-u2-kachi
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 価値
+      reading: かち
+      romanization: kachi
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá trị; ～する価値がある - đáng để làm
+      examples:
+        - target: この本は一度読む価値があります。
+          translation:
+            vi: Cuốn sách này đáng để đọc một lần.
+      pronunciation_note:
+        vi: Đọc "ka-chi".
+      confusion:
+        vi: 価値 là giá trị (ý nghĩa, tầm quan trọng); 値段 là giá tiền. 価値観 - hệ giá trị, quan niệm sống.
+
+  - key: ja:item:n2-u2-futan
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 負担
+      reading: ふたん
+      romanization: futan
+      pos: danh từ
+    back:
+      meaning:
+        vi: gánh nặng; chi trả (phần chi phí); ～に負担がかかる - gây gánh nặng cho ～
+      examples:
+        - target: 毎日の長い通勤は体に負担がかかります。
+          translation:
+            vi: Việc đi làm xa mỗi ngày gây gánh nặng cho cơ thể.
+      pronunciation_note:
+        vi: Đọc "phư-tan" (ふ đọc nhẹ giữa "ph" và "h").
+      confusion:
+        vi: 負担がかかる (bị gánh nặng) / 負担をかける (gây gánh nặng cho người khác). 費用を負担する - chịu chi phí.
+
+  - key: ja:item:n2-u2-gram-ni-totte
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + にとって(は) / にとっての + N
+      romanization: ni totte
+      pos: đối với (ai) - góc nhìn đánh giá
+    back:
+      meaning:
+        vi: '"Đối với..." - đứng từ vị trí của người/tổ chức đó mà đánh giá. Vế sau thường là nhận xét: 大切だ, 難しい, 問題だ. 私にとって、家族が一番大切です.'
+      examples:
+        - target: 外国人にとって、日本の敬語はとても難しいです。
+          translation:
+            vi: Đối với người nước ngoài, kính ngữ tiếng Nhật rất khó.
+      pronunciation_note:
+        vi: っ là âm ngắt - "ni-tốt-tê".
+      confusion:
+        vi: にとって dùng để đánh giá (khó, quan trọng, có lợi). Thái độ, hành động nhắm vào ai dùng に対して - 客に対して親切だ, không nói 客にとって親切だ.
+
+  - key: ja:item:n2-u2-gram-toshite
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + として(は / も) / としての + N
+      romanization: toshite
+      pos: với tư cách là, như là
+    back:
+      meaning:
+        vi: '"Với tư cách là...", "trong vai trò..." - chỉ tư cách, danh nghĩa, mục đích sử dụng. 留学生として来日した; 趣味として絵を描く. としては - "xét về phía..., thì"; としての + N - "... với tư cách".'
+      examples:
+        - target: 彼は通訳として会議に参加しました。
+          translation:
+            vi: Anh ấy tham gia cuộc họp với tư cách phiên dịch.
+      pronunciation_note:
+        vi: Đọc "tô-si-tê".
+      confusion:
+        vi: として là tư cách (医者として働く - làm việc với tư cách bác sĩ); にとって là góc nhìn đánh giá (医者にとって大切なこと - điều quan trọng đối với bác sĩ).
+
+  - key: ja:item:n2-u2-gram-kara-suru-to
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + からすると / からすれば / からして
+      romanization: kara suru to
+      pos: xét từ (lập trường / căn cứ)
+    back:
+      meaning:
+        vi: '"Đứng từ phía..., thì...", "căn cứ vào..., thì..." - nhìn từ lập trường của ai hoặc suy đoán từ một căn cứ. 親からすると心配だ; 表情からすると怒っているようだ.'
+      examples:
+        - target: 住民の立場からすると、新しい道路はうるさいだけです。
+          translation:
+            vi: Từ phía người dân mà nói, con đường mới chỉ ồn ào thôi.
+      pronunciation_note:
+        vi: Đọc "ka-ra-sư-rư-tô".
+      confusion:
+        vi: からすると hay dùng khi lập trường đó khác với người nói hoặc khi suy đoán từ dấu hiệu (あの話し方からすると、関西の人だろう). にとって chỉ nêu đối tượng chịu đánh giá, không dùng để suy đoán.
+
+  # ================= bài 2: ～に限らず, ～に限って, ～のみならず =================
+  - key: ja:item:n2-u2-sedai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 世代
+      reading: せだい
+      romanization: sedai
+      pos: danh từ
+    back:
+      meaning:
+        vi: thế hệ; 若い世代 - thế hệ trẻ; 幅広い世代 - nhiều thế hệ
+      examples:
+        - target: このゲームは若い世代に限らず、幅広い世代に人気があります。
+          translation:
+            vi: Trò chơi này không chỉ thế hệ trẻ mà nhiều thế hệ đều yêu thích.
+      pronunciation_note:
+        vi: Đọc "xê-đai".
+      confusion:
+        vi: 世代 là lớp người cùng độ tuổi; 時代 là thời đại (khoảng thời gian lịch sử).
+
+  - key: ja:item:n2-u2-habahiroi
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 幅広い
+      reading: はばひろい
+      romanization: habahiroi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: rộng rãi, đa dạng, trên phạm vi rộng; 幅広く - một cách rộng rãi
+      examples:
+        - target: この店では幅広い商品を扱っています。
+          translation:
+            vi: Cửa hàng này kinh doanh nhiều loại mặt hàng đa dạng.
+      pronunciation_note:
+        vi: Đọc "ha-ba-hi-rô-i".
+      confusion:
+        vi: 幅広い dùng cho phạm vi, đối tượng (幅広い知識, 幅広い年齢層); con đường rộng chỉ cần 広い道.
+
+  - key: ja:item:n2-u2-reigai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 例外
+      reading: れいがい
+      romanization: reigai
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngoại lệ; 例外なく - không có ngoại lệ
+      examples:
+        - target: このルールには例外がありません。
+          translation:
+            vi: Quy tắc này không có ngoại lệ.
+      pronunciation_note:
+        vi: れい đọc "rê-ê" - "rê-ê-gai".
+      confusion:
+        vi: 例外 là trường hợp nằm ngoài quy tắc; 例 là ví dụ.
+
+  - key: ja:item:n2-u2-taishou
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 対象
+      reading: たいしょう
+      romanization: taishou
+      pos: danh từ
+    back:
+      meaning:
+        vi: đối tượng (được nhắm tới); ～を対象に / ～を対象とした - dành cho ～
+      examples:
+        - target: この講座は社会人を対象にしています。
+          translation:
+            vi: Khoá học này dành cho người đi làm.
+      pronunciation_note:
+        vi: しょう là âm dài - "tai-sô-ô".
+      confusion:
+        vi: 対象 (たいしょう - đối tượng) dễ nhầm với 対照 (đối chiếu) và 対称 (đối xứng), cùng cách đọc.
+
+  - key: ja:item:n2-u2-gram-ni-kagirazu
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + に限らず
+      reading: にかぎらず
+      romanization: ni kagirazu
+      pos: không chỉ (giới hạn ở) N
+    back:
+      meaning:
+        vi: '"Không chỉ N mà (cả ... khác cũng)..." - mở rộng phạm vi. Vế sau hay có も, 誰でも, どこでも. 日本に限らず、多くの国で高齢化が進んでいる.'
+      examples:
+        - target: この公園は週末に限らず、平日も人が多いです。
+          translation:
+            vi: Công viên này không chỉ cuối tuần mà ngày thường cũng đông người.
+      pronunciation_note:
+        vi: Đọc "ni-ka-gi-ra-dư".
+      confusion:
+        vi: に限らず là mở rộng ("không chỉ"); に限り / に限る là thu hẹp ("chỉ riêng") - 先着10名に限り無料 (miễn phí chỉ cho 10 người đầu tiên).
+
+  - key: ja:item:n2-u2-gram-ni-kagitte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + に限って
+      reading: にかぎって
+      romanization: ni kagitte
+      pos: riêng (đúng) lúc / riêng người đó
+    back:
+      meaning:
+        vi: '(1) "Đúng vào lúc..." - chuyện xui xảy ra đúng lúc không mong: 急いでいる時に限って電車が遅れる. (2) "Riêng (người đó) thì (chắc chắn không)..." - tin tưởng tuyệt đối: うちの子に限って、そんなことはしない.'
+      examples:
+        - target: 傘を持っていない日に限って、雨が降るんです。
+          translation:
+            vi: Cứ đúng hôm không mang ô là trời lại mưa.
+      pronunciation_note:
+        vi: っ là âm ngắt - "ni-ka-git-tê".
+      confusion:
+        vi: に限って mang sắc thái bực bội hoặc tin tưởng, không dùng để nói giới hạn trung tính. Thông báo "chỉ áp dụng cho" dùng に限り.
+
+  - key: ja:item:n2-u2-gram-nomi-narazu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N / thể thường + のみならず
+      romanization: nomi narazu
+      pos: không những... mà còn (văn viết)
+    back:
+      meaning:
+        vi: '"Không những... mà còn..." - giống だけでなく nhưng trang trọng, dùng trong văn viết, phát biểu. Vế sau hay có も. Nối: N のみならず; V/いA thể thường + のみならず; なA / N (である)のみならず.'
+      examples:
+        - target: この問題は日本のみならず、世界全体の課題です。
+          translation:
+            vi: Vấn đề này không chỉ là của Nhật Bản mà là thách thức của cả thế giới.
+      pronunciation_note:
+        vi: Đọc "nô-mi-na-ra-dư".
+      confusion:
+        vi: のみならず rất cứng; nói chuyện hằng ngày dùng だけじゃなくて. のみ = だけ (chỉ).
+
+  # ================= bài 3: ～ばかりか, ～どころか, ～はもちろん =================
+  - key: ja:item:n2-u2-higai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 被害
+      reading: ひがい
+      romanization: higai
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiệt hại; 被害を受ける - bị thiệt hại; 被害者 - nạn nhân
+      examples:
+        - target: 台風で農作物に大きな被害が出ました。
+          translation:
+            vi: Bão đã gây thiệt hại lớn cho mùa màng.
+      pronunciation_note:
+        vi: Đọc "hi-gai".
+      confusion:
+        vi: 被害 là thiệt hại do thiên tai, tội phạm gây ra (被害が出る); 損 là lỗ, thiệt về lợi ích (損をする).
+
+  - key: ja:item:n2-u2-akka
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 悪化
+      reading: あっか
+      romanization: akka
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: trở nên xấu đi, chuyển biến xấu; 病状が悪化する - bệnh tình xấu đi
+      examples:
+        - target: 薬を飲んだのに、症状が悪化してしまいました。
+          translation:
+            vi: Đã uống thuốc rồi mà triệu chứng lại xấu đi.
+      pronunciation_note:
+        vi: っ là âm ngắt - "ák-ka".
+      confusion:
+        vi: 悪化 là tự động từ - 状況が悪化する (không nói 状況を悪化する; gây xấu đi là 悪化させる). Ngược nghĩa là 改善.
+
+  - key: ja:item:n2-u2-kaizen
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 改善
+      reading: かいぜん
+      romanization: kaizen
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: cải thiện; 生活習慣を改善する - cải thiện thói quen sinh hoạt
+      examples:
+        - target: 会社は働き方を改善する必要があります。
+          translation:
+            vi: Công ty cần cải thiện cách làm việc.
+      pronunciation_note:
+        vi: Đọc "kai-dên".
+      confusion:
+        vi: 改善 dùng được cả tha động từ (～を改善する) lẫn tự động từ (～が改善する). 改正 là sửa đổi luật, quy định.
+
+  - key: ja:item:n2-u2-shinrai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 信頼
+      reading: しんらい
+      romanization: shinrai
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: tin cậy, tín nhiệm; 信頼を失う - mất lòng tin
+      examples:
+        - target: 一度失った信頼を取り戻すのは難しいです。
+          translation:
+            vi: Lấy lại lòng tin đã mất một lần là điều khó.
+      pronunciation_note:
+        vi: Đọc "sin-rai".
+      confusion:
+        vi: 信頼 là tin cậy vào năng lực, con người (信頼できる人); 信用 thiên về uy tín, tín dụng (店の信用).
+
+  - key: ja:item:n2-u2-gram-bakarika
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: thể thường + ばかりか / ばかりでなく
+      romanization: bakari ka
+      pos: không những... mà còn
+    back:
+      meaning:
+        vi: '"Không những A mà còn B" - B thường ở mức cao hơn, hay đi với も / まで / さえ. Nối: V/いA thể thường, なAな, N. 彼は遅刻したばかりか、宿題も忘れた.'
+      examples:
+        - target: 彼女は英語ばかりか、中国語まで話せます。
+          translation:
+            vi: Cô ấy không những nói được tiếng Anh mà còn cả tiếng Trung.
+      pronunciation_note:
+        vi: Đọc "ba-ka-ri-ka".
+      confusion:
+        vi: ばかりか thêm một điều cùng chiều (đã A lại còn B). Vế sau không dùng mệnh lệnh, rủ rê - muốn nói "không chỉ A, hãy cả B" dùng だけでなく.
+
+  - key: ja:item:n2-u2-gram-dokoroka
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: thể thường + どころか
+      romanization: dokoro ka
+      pos: chẳng những không... mà còn
+    back:
+      meaning:
+        vi: '(1) "Chẳng những không A mà ngược lại B" - thực tế trái với mong đợi: 雨は止むどころか、ますます強くなった. (2) "Đừng nói A, ngay cả B (mức thấp hơn) cũng không": 漢字どころか、ひらがなも読めない.'
+      examples:
+        - target: 薬を飲んだが、熱は下がるどころか、上がってしまった。
+          translation:
+            vi: Đã uống thuốc nhưng sốt chẳng những không hạ mà còn tăng lên.
+      pronunciation_note:
+        vi: Đọc "đô-kô-rô-ka".
+      confusion:
+        vi: どころか phủ nhận vế trước (không phải A, mà ngược hẳn); ばかりか cộng thêm vào vế trước (đã A lại còn B). なAな / N thường bỏ だ - 静かどころか, 休みどころか.
+
+  - key: ja:item:n2-u2-gram-wa-mochiron
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N + はもちろん(のこと)
+      reading: はもちろん
+      romanization: wa mochiron
+      pos: N thì đương nhiên rồi, (cả) ... cũng
+    back:
+      meaning:
+        vi: '"A thì đương nhiên, B cũng..." - A là điều hiển nhiên, B là điều được nhấn mạnh thêm. Vế sau thường có も. 週末はもちろん、平日も混んでいる.'
+      examples:
+        - target: この料理は子どもはもちろん、大人にも人気があります。
+          translation:
+            vi: Món này trẻ em thì đương nhiên rồi, người lớn cũng thích.
+      pronunciation_note:
+        vi: Đọc "oa-mô-chi-rôn" (trợ từ は đọc "oa").
+      confusion:
+        vi: はもちろん đặt điều hiển nhiên lên trước. Văn trang trọng dùng はもとより với cùng nghĩa.
+
+  # ================= bài 4: ～ものの, ～にもかかわらず, ～くせに =================
+  - key: ja:item:n2-u2-doryoku
+    type: vocab
+    level: n2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 努力
+      reading: どりょく
+      romanization: doryoku
+      pos: danh từ (～する)
+    back:
+      meaning:
+        vi: nỗ lực, cố gắng; 努力が実る - nỗ lực được đền đáp
+      examples:
+        - target: 毎日努力したにもかかわらず、試験に落ちてしまった。
+          translation:
+            vi: Mặc dù đã nỗ lực mỗi ngày, tôi vẫn trượt kỳ thi.
+      pronunciation_note:
+        vi: りょく đọc liền - "đô-ryô-kư".
+      confusion:
+        vi: 努力する là cố gắng bền bỉ, lâu dài; 頑張る dùng rộng hơn, cả trong lời động viên (頑張って!), không nói 努力して! để cổ vũ.
+
+  - key: ja:item:n2-u2-kekkyoku
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 結局
+      reading: けっきょく
+      romanization: kekkyoku
+      pos: phó từ
+    back:
+      meaning:
+        vi: rốt cuộc, cuối cùng thì (kết quả sau nhiều diễn biến)
+      examples:
+        - target: 長い時間話し合ったものの、結局何も決まらなかった。
+          translation:
+            vi: Dù đã bàn bạc rất lâu nhưng rốt cuộc chẳng quyết định được gì.
+      pronunciation_note:
+        vi: っ là âm ngắt, きょく đọc liền - "kếch-kyô-kư".
+      confusion:
+        vi: 結局 nhấn vào kết quả (thường ngoài dự tính); 最後に là "cuối cùng" theo thứ tự (làm việc cuối cùng).
+
+  - key: ja:item:n2-u2-monku
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 文句
+      reading: もんく
+      romanization: monku
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời phàn nàn, càu nhàu; 文句を言う - phàn nàn
+      examples:
+        - target: 自分では何もしないくせに、人の仕事に文句ばかり言う。
+          translation:
+            vi: Bản thân chẳng làm gì vậy mà toàn phàn nàn về việc của người khác.
+      pronunciation_note:
+        vi: Đọc "môn-kư".
+      confusion:
+        vi: 文句を言う là càu nhàu, mang sắc thái tiêu cực; khiếu nại chính thức với công ty, cửa hàng là 苦情 / クレーム.
+
+  - key: ja:item:n2-u2-akutenkou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 悪天候
+      reading: あくてんこう
+      romanization: akutenkou
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời tiết xấu
+      examples:
+        - target: 悪天候にもかかわらず、大勢の人が集まりました。
+          translation:
+            vi: Mặc dù thời tiết xấu, rất nhiều người đã tập trung.
+      pronunciation_note:
+        vi: こう là âm dài - "a-kư-tên-kô-ô".
+      confusion:
+        vi: 悪天候 là từ dùng trong thông báo, tin tức; nói chuyện thường ngày dùng 天気が悪い.
+
+  - key: ja:item:n2-u2-gram-monono
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: thể thường + ものの
+      romanization: monono
+      pos: tuy... nhưng (trái mong đợi)
+    back:
+      meaning:
+        vi: '"Tuy A nhưng (thực tế) B" - công nhận A rồi nói B không như mong đợi. Nối: V/いA thể thường, なAな / である, N である. 免許は取ったものの、まだ運転していない.'
+      examples:
+        - target: 大学を卒業したものの、まだ仕事が見つかりません。
+          translation:
+            vi: Tuy đã tốt nghiệp đại học nhưng tôi vẫn chưa tìm được việc.
+      pronunciation_note:
+        vi: Đọc "mô-nô-nô".
+      confusion:
+        vi: ものの trang trọng hơn けど / が và vế sau là sự thật, không dùng mệnh lệnh, ý chí. Hay đi với cụm とは言うものの (nói thì nói vậy nhưng).
+
+  - key: ja:item:n2-u2-gram-nimo-kakawarazu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: thể thường / N + にもかかわらず
+      reading: にもかかわらず
+      romanization: nimo kakawarazu
+      pos: mặc dù, bất chấp (văn viết)
+    back:
+      meaning:
+        vi: '"Mặc dù A (vậy mà) B" - B trái với điều đương nhiên phải xảy ra, thường kèm ngạc nhiên hoặc phê phán. Nối: V/いA thể thường, なA / N (である). 雨にもかかわらず、試合は行われた.'
+      examples:
+        - target: 平日にもかかわらず、店は客でいっぱいだった。
+          translation:
+            vi: Mặc dù là ngày thường, cửa hàng vẫn đông kín khách.
+      pronunciation_note:
+        vi: Đọc "ni-mô-ka-ka-oa-ra-dư".
+      confusion:
+        vi: にもかかわらず là văn viết, trang trọng, nghĩa gần のに. Đừng nhầm với にかかわらず (không phụ thuộc vào) - 年齢にかかわらず誰でも参加できる.
+
+  - key: ja:item:n2-u2-gram-kuseni
+    type: grammar_point
+    level: n2
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: thể thường + くせに
+      romanization: kuse ni
+      pos: vậy mà, đã... thế mà (chê trách)
+    back:
+      meaning:
+        vi: '"Đã... vậy mà..." - phê phán, chê trách người khác vì hành động không xứng với điều kiện của họ. Nối: V/いA thể thường, なAな, Nの. 知っているくせに教えてくれない.'
+      examples:
+        - target: 弟は自分が悪いくせに、謝ろうとしない。
+          translation:
+            vi: Em trai tôi lỗi là của nó vậy mà nó không chịu xin lỗi.
+      pronunciation_note:
+        vi: Đọc "kư-xê-ni".
+      confusion:
+        vi: くせに là văn nói, mang cảm xúc khó chịu; không dùng cho bản thân và không dùng trong văn trang trọng. Chủ ngữ hai vế phải là cùng một người.
+
+  # ================= bài 5: ôn tập - đọc bài bình luận =================
+  - key: ja:item:n2-u2-genjou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 現状
+      reading: げんじょう
+      romanization: genjou
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiện trạng, tình hình hiện tại
+      examples:
+        - target: 人手不足が続いているのが現状です。
+          translation:
+            vi: Hiện trạng là tình trạng thiếu nhân lực vẫn tiếp diễn.
+      pronunciation_note:
+        vi: じょう là âm dài - "ghên-jô-ô".
+      confusion:
+        vi: 現状 là tình trạng hiện tại của một vấn đề (現状を変える); 現在 chỉ thời điểm "hiện nay".
+
+  - key: ja:item:n2-u2-kadai
+    type: vocab
+    level: n2
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 課題
+      reading: かだい
+      romanization: kadai
+      pos: danh từ
+    back:
+      meaning:
+        vi: vấn đề cần giải quyết, thách thức; bài tập (được giao)
+      examples:
+        - target: 高齢化は多くの国にとって大きな課題です。
+          translation:
+            vi: Già hoá dân số là thách thức lớn đối với nhiều quốc gia.
+      pronunciation_note:
+        vi: Đọc "ka-đai".
+      confusion:
+        vi: 課題 là việc phải giải quyết, hướng tới hành động; 問題 rộng hơn (vấn đề, câu hỏi trong đề thi).
+
+  - key: ja:item:n2-u2-haikei
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 背景
+      reading: はいけい
+      romanization: haikei
+      pos: danh từ
+    back:
+      meaning:
+        vi: bối cảnh, nguyên nhân sâu xa; phông nền (ảnh, tranh)
+      examples:
+        - target: 少子化の背景には、教育費の高さがあります。
+          translation:
+            vi: Đằng sau tình trạng ít sinh con là chi phí giáo dục cao.
+      pronunciation_note:
+        vi: けい đọc "kê-ê" - "hai-kê-ê".
+      confusion:
+        vi: Cụm hay gặp trong bài bình luận - ～の背景には～がある (đằng sau ～ là ～). 原因 là nguyên nhân trực tiếp.
+
+  - key: ja:item:n2-u2-ichigai-ni
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 一概に
+      reading: いちがいに
+      romanization: ichigai ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: (không thể) nói chung chung, quơ đũa cả nắm; luôn đi với phủ định - 一概に～とは言えない
+      examples:
+        - target: 若者は本を読まないとは、一概には言えません。
+          translation:
+            vi: Không thể nói chung chung rằng giới trẻ không đọc sách.
+      pronunciation_note:
+        vi: Đọc "i-chi-gai-ni".
+      confusion:
+        vi: 一概に gần nghĩa 必ずしも nhưng nhấn "không thể khái quát hoá"; luôn đi với ～とは言えない / ～ない.
