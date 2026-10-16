@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+language: ja
+skill: vocabulary
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------- kana ----------
+  - key: ja:diag:voc-kana-mizu
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “nước”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: みみ, lang: ja }
+        - { id: b, text: みず, lang: ja }
+        - { id: c, text: みせ, lang: ja }
+        - { id: d, text: いす, lang: ja }
+    answer: b
+    explanation: { vi: "“みず” (mizu) là nước. “みみ” là cái tai, “みせ” là cửa hàng, “いす” là cái ghế — các từ chỉ khác nhau một chữ nên cần đọc kỹ từng chữ kana." }
+  - key: ja:diag:voc-kana-neko
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ “ねこ” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: con mèo, lang: vi }
+        - { id: b, text: con chó, lang: vi }
+        - { id: c, text: con cá, lang: vi }
+        - { id: d, text: con chim, lang: vi }
+    answer: a
+    explanation: { vi: "“ねこ” (neko) là con mèo. Con chó là “いぬ”, con cá là “さかな”, con chim là “とり”." }
+  - key: ja:diag:voc-kana-koohii
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “cà phê”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: コピー, lang: ja }
+        - { id: b, text: ココア, lang: ja }
+        - { id: c, text: コーヒー, lang: ja }
+        - { id: d, text: クッキー, lang: ja }
+    answer: c
+    explanation: { vi: "“コーヒー” (kōhī) là cà phê; dấu “ー” kéo dài nguyên âm. “コピー” là bản sao (photocopy), “ココア” là ca cao, “クッキー” là bánh quy." }
+  - key: ja:diag:voc-kana-ohayou
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Lời chào “おはよう” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: chúc ngủ ngon, lang: vi }
+        - { id: b, text: cảm ơn, lang: vi }
+        - { id: c, text: tạm biệt, lang: vi }
+        - { id: d, text: chào buổi sáng, lang: vi }
+    answer: d
+    explanation: { vi: "“おはよう” (ohayō) là lời chào buổi sáng. “おやすみ” là chúc ngủ ngon, “ありがとう” là cảm ơn, “さようなら” là tạm biệt." }
+  - key: ja:diag:voc-kana-isha
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “bác sĩ”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: いし, lang: ja }
+        - { id: b, text: いしゃ, lang: ja }
+        - { id: c, text: いす, lang: ja }
+        - { id: d, text: いえ, lang: ja }
+    answer: b
+    explanation: { vi: "“いしゃ” (isha) là bác sĩ; chữ “ゃ” viết nhỏ ghép với “し” thành “しゃ”. “いし” (không có ゃ nhỏ) là hòn đá, “いす” là cái ghế, “いえ” là ngôi nhà." }
+  # ---------- n5 ----------
+  - key: ja:diag:voc-n5-gakkou
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “trường học”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 会社（かいしゃ）, lang: ja }
+        - { id: b, text: 病院（びょういん）, lang: ja }
+        - { id: c, text: 銀行（ぎんこう）, lang: ja }
+        - { id: d, text: 学校（がっこう）, lang: ja }
+    answer: d
+    explanation: { vi: "“学校” (がっこう, Hán Việt “học hiệu”) là trường học. “会社” là công ty, “病院” là bệnh viện, “銀行” là ngân hàng." }
+  - key: ja:diag:voc-n5-eki
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ “駅（えき）” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: nhà ga, lang: vi }
+        - { id: b, text: sân bay, lang: vi }
+        - { id: c, text: bưu điện, lang: vi }
+        - { id: d, text: bến xe buýt, lang: vi }
+    answer: a
+    explanation: { vi: "“駅” (えき) là nhà ga tàu điện. Sân bay là “空港” (くうこう), bưu điện là “郵便局” (ゆうびんきょく), bến xe buýt là “バス停” (バスてい)." }
+  - key: ja:diag:voc-n5-takai
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ nào trái nghĩa với “安い（やすい）” (rẻ)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 低い（ひくい）, lang: ja }
+        - { id: b, text: 高い（たかい）, lang: ja }
+        - { id: c, text: 古い（ふるい）, lang: ja }
+        - { id: d, text: 新しい（あたらしい）, lang: ja }
+    answer: b
+    explanation: { vi: "“高い” vừa là “đắt” (trái nghĩa với “安い”) vừa là “cao”. “低い” là thấp — trái nghĩa với “高い” theo nghĩa chiều cao, không phải với “安い”. “古い” là cũ, “新しい” là mới." }
+  - key: ja:diag:voc-n5-kinou
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “hôm qua”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: きょう, lang: ja }
+        - { id: b, text: あした, lang: ja }
+        - { id: c, text: きのう, lang: ja }
+        - { id: d, text: あさって, lang: ja }
+    answer: c
+    explanation: { vi: "“きのう” (昨日) là hôm qua. “きょう” là hôm nay, “あした” là ngày mai, “あさって” là ngày kia." }
+  - key: ja:diag:voc-n5-yasumi
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ “休み（やすみ）” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: công việc, lang: vi }
+        - { id: b, text: bài tập về nhà, lang: vi }
+        - { id: c, text: cuộc họp, lang: vi }
+        - { id: d, text: ngày nghỉ, lang: vi }
+    answer: d
+    explanation: { vi: "“休み” (やすみ) là ngày nghỉ, kỳ nghỉ (từ động từ “休む” – nghỉ ngơi). Công việc là “仕事”, bài tập về nhà là “宿題”, cuộc họp là “会議”." }
+  # ---------- n4 ----------
+  - key: ja:diag:voc-n4-junbi
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “chuẩn bị”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 準備（じゅんび）, lang: ja }
+        - { id: b, text: 予約（よやく）, lang: ja }
+        - { id: c, text: 練習（れんしゅう）, lang: ja }
+        - { id: d, text: 説明（せつめい）, lang: ja }
+    answer: a
+    explanation: { vi: "“準備” (じゅんび, Hán Việt “chuẩn bị”) là chuẩn bị. “予約” là đặt trước, “練習” là luyện tập, “説明” là giải thích." }
+  - key: ja:diag:voc-n4-wasureru
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "傘を電車の中に___しまいました。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 落ちて, lang: ja }
+        - { id: b, text: 忘れて, lang: ja }
+        - { id: c, text: 覚えて, lang: ja }
+        - { id: d, text: 無くなって, lang: ja }
+    answer: b
+    explanation: { vi: "“Tôi lỡ … cái ô trên tàu điện” → “忘れてしまいました” (bỏ quên mất). “落ちる” và “無くなる” là tự động từ nên không đi với “傘を”; “覚える” (nhớ) không hợp nghĩa." }
+  - key: ja:diag:voc-n4-abunai
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ “危ない（あぶない）” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: ồn ào, lang: vi }
+        - { id: b, text: bận rộn, lang: vi }
+        - { id: c, text: nguy hiểm, lang: vi }
+        - { id: d, text: bẩn, lang: vi }
+    answer: c
+    explanation: { vi: "“危ない” (あぶない) là nguy hiểm, thường nghe trong câu “危ない！” (Coi chừng!). Ồn ào là “うるさい”, bận rộn là “忙しい”, bẩn là “汚い”." }
+  - key: ja:diag:voc-n4-kowareru
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “bị hỏng” (máy móc, đồ dùng không chạy được nữa)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 止まる（とまる）, lang: ja }
+        - { id: b, text: 消える（きえる）, lang: ja }
+        - { id: c, text: 割れる（われる）, lang: ja }
+        - { id: d, text: 壊れる（こわれる）, lang: ja }
+    answer: d
+    explanation: { vi: "“壊れる” (こわれる) là bị hỏng, ví dụ “パソコンが壊れた”. “割れる” là bị vỡ, nứt (kính, bát đĩa), “止まる” là dừng lại, “消える” là tắt, biến mất." }
+  - key: ja:diag:voc-n4-isogu
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ “急ぐ（いそぐ）” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "vội vàng, khẩn trương", lang: vi }
+        - { id: b, text: chạy, lang: vi }
+        - { id: c, text: đi bộ, lang: vi }
+        - { id: d, text: chờ đợi, lang: vi }
+    answer: a
+    explanation: { vi: "“急ぐ” (いそぐ) là vội, khẩn trương, như “急いでください” (xin hãy nhanh lên). Chạy là “走る”, đi bộ là “歩く”, chờ đợi là “待つ”." }
+  # ---------- n3 ----------
+  - key: ja:diag:voc-n3-yakusoku-yaburu
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "友達との約束を___しまい、謝りました。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 壊して, lang: ja }
+        - { id: b, text: 切って, lang: ja }
+        - { id: c, text: 破って, lang: ja }
+        - { id: d, text: 外して, lang: ja }
+    answer: c
+    explanation: { vi: "Kết hợp cố định là “約束を破る” (thất hứa). Tiếng Việt nói “phá lời hứa” nhưng tiếng Nhật không dùng “壊す” với “約束”; “切る” và “外す” cũng không đi với “約束”." }
+  - key: ja:diag:voc-n3-keiken
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “kinh nghiệm”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 経済, lang: ja }
+        - { id: b, text: 経験, lang: ja }
+        - { id: c, text: 経営, lang: ja }
+        - { id: d, text: 実験, lang: ja }
+    answer: b
+    explanation: { vi: "“経験” (けいけん, Hán Việt “kinh nghiệm”) là kinh nghiệm. “経済” là kinh tế, “経営” là kinh doanh, quản lý, “実験” là thí nghiệm — các từ dùng chung chữ Hán nên dễ nhầm." }
+  - key: ja:diag:voc-n3-nakanaka
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "バスが___来なくて、会議に遅れてしまった。"
+      stem_lang: ja
+      options:
+        - { id: a, text: だんだん, lang: ja }
+        - { id: b, text: そろそろ, lang: ja }
+        - { id: c, text: ますます, lang: ja }
+        - { id: d, text: なかなか, lang: ja }
+    answer: d
+    explanation: { vi: "“なかなか + phủ định” nghĩa là mãi mà không…: “バスがなかなか来なくて” (xe buýt mãi không đến). “だんだん” (dần dần), “そろそろ” (sắp sửa), “ますます” (ngày càng) không đi với thể phủ định theo nghĩa này." }
+  - key: ja:diag:voc-n3-akirameru
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "Từ “諦める（あきらめる）” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "từ bỏ, bỏ cuộc", lang: vi }
+        - { id: b, text: nhận ra, lang: vi }
+        - { id: c, text: chịu đựng, lang: vi }
+        - { id: d, text: quyết tâm, lang: vi }
+    answer: a
+    explanation: { vi: "“諦める” là từ bỏ, bỏ cuộc, như “夢を諦める” (từ bỏ ước mơ). Nhận ra là “気づく”, chịu đựng là “我慢する”, quyết tâm là “決心する”." }
+  - key: ja:diag:voc-n3-eikyou
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “ảnh hưởng”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 効果, lang: ja }
+        - { id: b, text: 印象, lang: ja }
+        - { id: c, text: 影響, lang: ja }
+        - { id: d, text: 原因, lang: ja }
+    answer: c
+    explanation: { vi: "“影響” (えいきょう, Hán Việt “ảnh hưởng”) là ảnh hưởng. “効果” là hiệu quả, “印象” là ấn tượng, “原因” là nguyên nhân." }
+  # ---------- n2 ----------
+  - key: ja:diag:voc-n2-ataeru
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "大雨は農作物に大きな被害を___。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 渡した, lang: ja }
+        - { id: b, text: 届けた, lang: ja }
+        - { id: c, text: 配った, lang: ja }
+        - { id: d, text: 与えた, lang: ja }
+    answer: d
+    explanation: { vi: "Kết hợp cố định là “被害を与える” (gây thiệt hại) — “与える” dùng cho tác động, ảnh hưởng, không chỉ đồ vật. “渡す” (trao), “届ける” (đưa đến), “配る” (phân phát) chỉ dùng cho đồ vật cụ thể." }
+  - key: ja:diag:voc-n2-kentou
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "Từ “検討する” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "xét nghiệm, kiểm tra (sức khỏe, máy móc)", lang: vi }
+        - { id: b, text: "xem xét, cân nhắc kỹ", lang: vi }
+        - { id: c, text: "tranh luận", lang: vi }
+        - { id: d, text: "ước đoán, phỏng đoán", lang: vi }
+    answer: b
+    explanation: { vi: "“検討する” (けんとうする) là xem xét, cân nhắc kỹ, như “前向きに検討します”. Xét nghiệm là “検査”, tranh luận là “討論”; “見当” đọc giống hệt “けんとう” nhưng nghĩa là ước đoán." }
+  - key: ja:diag:voc-n2-keikou
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “xu hướng, khuynh hướng”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 傾向, lang: ja }
+        - { id: b, text: 方向, lang: ja }
+        - { id: c, text: 傾斜, lang: ja }
+        - { id: d, text: 方針, lang: ja }
+    answer: a
+    explanation: { vi: "“傾向” (けいこう, Hán Việt “khuynh hướng”) là xu hướng, như “若者の車離れの傾向”. “方向” là phương hướng (chiều đi), “傾斜” là độ dốc, “方針” là phương châm, đường lối." }
+  - key: ja:diag:voc-n2-tachimachi
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "“たちまち” gần nghĩa nhất với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: ゆっくり, lang: ja }
+        - { id: b, text: いつまでも, lang: ja }
+        - { id: c, text: すぐに, lang: ja }
+        - { id: d, text: ときどき, lang: ja }
+    answer: c
+    explanation: { vi: "“たちまち” là ngay lập tức, trong chốc lát (“新商品はたちまち売り切れた”), gần nghĩa với “すぐに”. “ゆっくり” là chậm rãi, “いつまでも” là mãi mãi, “ときどき” là thỉnh thoảng." }
+  - key: ja:diag:voc-n2-kao-ga-hiroi
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "Quán ngữ “顔が広い” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "mặt dày, không biết xấu hổ", lang: vi }
+        - { id: b, text: hay ngại ngùng, lang: vi }
+        - { id: c, text: có khuôn mặt phúc hậu, lang: vi }
+        - { id: d, text: quen biết rộng, lang: vi }
+    answer: d
+    explanation: { vi: "“顔が広い” (nghĩa đen: mặt rộng) là quen biết rộng, có nhiều mối quan hệ. “Mặt dày” trong tiếng Nhật là “厚かましい” hoặc “面の皮が厚い”, không phải “顔が広い”." }
+  # ---------- n1 ----------
+  - key: ja:diag:voc-n1-ginmi
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "Từ “吟味する” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "ngâm thơ, đọc diễn cảm", lang: vi }
+        - { id: b, text: "xem xét, chọn lọc kỹ lưỡng", lang: vi }
+        - { id: c, text: "khen ngợi hết lời", lang: vi }
+        - { id: d, text: "phàn nàn, càu nhàu", lang: vi }
+    answer: b
+    explanation: { vi: "“吟味する” (ぎんみする) là xem xét, chọn lọc kỹ lưỡng, như “材料を吟味する”. Chữ “吟” (ngâm) dễ khiến người Việt đoán là ngâm thơ, nhưng nghĩa đó là “吟じる” hoặc “朗読する”." }
+  - key: ja:diag:voc-n1-houkatsuteki
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “bao quát, toàn diện”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 画期的, lang: ja }
+        - { id: b, text: 抜本的, lang: ja }
+        - { id: c, text: 包括的, lang: ja }
+        - { id: d, text: 断片的, lang: ja }
+    answer: c
+    explanation: { vi: "“包括的” (ほうかつてき, Hán Việt “bao quát”) là bao quát, toàn diện. “画期的” là mang tính đột phá, “抜本的” là triệt để, tận gốc, “断片的” là rời rạc, từng mảnh." }
+  - key: ja:diag:voc-n1-ninau
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "これからの社会は、若い世代が___ことになる。"
+      stem_lang: ja
+      options:
+        - { id: a, text: 担う, lang: ja }
+        - { id: b, text: 補う, lang: ja }
+        - { id: c, text: 養う, lang: ja }
+        - { id: d, text: 伴う, lang: ja }
+    answer: a
+    explanation: { vi: "“社会を担う” là gánh vác, đảm đương xã hội. “補う” là bù đắp, “養う” là nuôi dưỡng (gia đình), “伴う” là kèm theo — đều không hợp với “社会を…”." }
+  - key: ja:diag:voc-n1-oomune
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "“おおむね” gần nghĩa nhất với từ nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: ことごとく, lang: ja }
+        - { id: b, text: あえて, lang: ja }
+        - { id: c, text: かろうじて, lang: ja }
+        - { id: d, text: だいたい, lang: ja }
+    answer: d
+    explanation: { vi: "“おおむね” là nhìn chung, đại khái (“計画はおおむね順調だ”), gần nghĩa với “だいたい”. “ことごとく” là tất cả không sót, “あえて” là cố ý, dám, “かろうじて” là vừa kịp, suýt soát." }
+  - key: ja:diag:voc-n1-gojippo-hyappo
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "Thành ngữ “五十歩百歩” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tiến bộ từng bước một", lang: vi }
+        - { id: b, text: "Kẻ tám lạng, người nửa cân (khác nhau không đáng kể)", lang: vi }
+        - { id: c, text: "Trăm nghe không bằng một thấy", lang: vi }
+        - { id: d, text: "Đi càng xa càng hiểu biết nhiều", lang: vi }
+    answer: b
+    explanation: { vi: "“五十歩百歩” (ごじっぽひゃっぽ): người chạy năm mươi bước chê người chạy trăm bước — hai bên chẳng hơn gì nhau, giống “kẻ tám lạng, người nửa cân”. “Trăm nghe không bằng một thấy” là “百聞は一見に如かず”." }
