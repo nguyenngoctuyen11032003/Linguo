@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u6-sura-dani
+order_index: 1
+level: n1
+title:
+  vi: Ngay cả, chỉ cần... thôi đã, dù chỉ một - ～すら, ～だに, ～たりとも
+objectives:
+  - vi: Nhấn mạnh "ngay cả..." bằng ～(で)すら trong văn viết.
+  - vi: Hiểu ～だに với hai nghĩa - "chỉ cần nghĩ / nghe thôi đã..." và "đến cả... cũng không".
+  - vi: Phủ định tuyệt đối bằng 一 + lượng từ + たりとも.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-idiom-culture-review]
+items:
+  - item: ja:item:n1-u6-gram-sura
+  - item: ja:item:n1-u6-gram-dani
+  - item: ja:item:n1-u6-gram-taritomo
+  - item: ja:item:n1-u6-yudan
+  - item: ja:item:n1-u6-rouhi
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu và viết được những câu nhấn mạnh mạnh hơn さえ - "đến chuyên gia còn không biết", "chỉ tưởng tượng thôi đã rùng mình", "không được lơ là dù chỉ một giây".
+  - type: explain
+    text:
+      vi: 'N + (で)すら - "ngay cả N": nêu ví dụ cực đoan để ngầm nói "huống chi cái khác". Nghĩa như さえ nhưng cứng, văn viết hơn; chủ ngữ là người thường thêm で - 専門家ですら.'
+  - type: explain
+    text:
+      vi: '～だに có hai mẫu. (1) 考える / 想像する / 聞く / 思い出す + だに + cảm xúc: "chỉ cần... thôi đã...". (2) N + だに + phủ định, chủ yếu trong cụm cố định: 夢にだに思わない (nằm mơ cũng không nghĩ tới), 微動だにしない (không nhúc nhích mảy may).'
+  - type: explain
+    text:
+      vi: '一 + lượng từ + たりとも + phủ định / cấm đoán: "dù chỉ một... cũng không" - 一円たりとも, 一日たりとも, 一瞬たりとも. Tiếng Việt cũng nói "dù chỉ một đồng", nên cách nghĩ giống nhau; chỉ khác là con số phải là đơn vị nhỏ nhất.'
+  - type: deep_explain
+    text:
+      vi: 'Mức trang trọng tăng dần: さえ (hội thoại và văn viết) → すら (văn viết) → だに (văn chương, cụm cố định). すら không có mẫu điều kiện như さえ～ば - nói 時間さえあれば, không nói ×時間すらあれば. たりとも hay đi với 許されない, できない, 無駄にしない - giọng nghiêm, thường gặp trong lời huấn thị, khẩu hiệu, xã luận.'
+  - type: example
+    target: この漢字は、日本人ですら読めない人が多い。
+    target_lang: ja
+    translation:
+      vi: Chữ Hán này, đến người Nhật cũng nhiều người không đọc được.
+    note:
+      vi: Người làm chủ ngữ + ですら.
+  - type: example
+    target: 戦争の話は、聞くだに胸が痛む。
+    target_lang: ja
+    translation:
+      vi: Chuyện chiến tranh, chỉ nghe thôi đã thấy đau lòng.
+    note:
+      vi: 聞く + だに + cảm xúc.
+  - type: example
+    target: 先生に叱られても、彼は微動だにしなかった。
+    target_lang: ja
+    translation:
+      vi: Dù bị thầy mắng, cậu ấy vẫn không nhúc nhích mảy may.
+    note:
+      vi: 微動だにしない - cụm cố định.
+  - type: example
+    target: この仕事では、一日たりとも休めない。
+    target_lang: ja
+    translation:
+      vi: Công việc này không thể nghỉ dù chỉ một ngày.
+    note:
+      vi: 一日たりとも + phủ định.
+  - type: example
+    target: 優勝候補だからこそ、油断は禁物だ。
+    target_lang: ja
+    translation:
+      vi: Chính vì là ứng viên vô địch nên tuyệt đối không được chủ quan.
+    note:
+      vi: 油断 - sự chủ quan; 禁物 - điều cấm kỵ.
+  - type: example
+    target: 税金の浪費を許してはならない。
+    target_lang: ja
+    translation:
+      vi: Không được để tiền thuế bị phung phí.
+    note:
+      vi: 浪費 - lãng phí (văn viết).
+  - type: common_mistake
+    wrong: 三日たりとも休まなかった。
+    right: 一日たりとも休まなかった。
+    target_lang: ja
+    note:
+      vi: たりとも đi với 一 + lượng từ (đơn vị nhỏ nhất); "ba ngày" không mang nghĩa "dù chỉ một".
+  - type: common_mistake
+    wrong: 時間すらあれば、旅行に行きたい。
+    right: 時間さえあれば、旅行に行きたい。
+    target_lang: ja
+    note:
+      vi: Mẫu "chỉ cần... là..." chỉ có さえ～ば; すら không dùng trong câu điều kiện.
+  - type: common_mistake
+    wrong: 会社に行くだに疲れる。
+    right: 会社のことを考えるだに気が重い。
+    target_lang: ja
+    note:
+      vi: だに chỉ đi với các động từ nghĩ, nghe, tưởng tượng, nhớ lại - và vế sau là cảm xúc.
+  - type: summary
+    points:
+      - vi: N + (で)すら - ngay cả N (văn viết, mạnh hơn さえ).
+      - vi: 考える / 想像する / 聞く + だに - chỉ cần... thôi đã...
+      - vi: 夢にだに思わない · 微動だにしない - cụm cố định với だに.
+      - vi: 一 + lượng từ + たりとも + phủ định - dù chỉ một.
+      - vi: 油断 - chủ quan · 浪費 - lãng phí.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u6-sura-dani-mcq-taritomo
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u6-gram-taritomo
+    prompt:
+      stem: Câu 「彼は入社以来、一日たりとも休まなかった。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a7k, text: Từ khi vào công ty anh ấy chưa nghỉ dù chỉ một ngày., lang: vi }
+        - { id: b3m, text: Từ khi vào công ty anh ấy chỉ nghỉ đúng một ngày., lang: vi }
+        - { id: c8n, text: Từ khi vào công ty anh ấy nghỉ mỗi ngày một chút., lang: vi }
+        - { id: d2p, text: Từ khi vào công ty anh ấy không được nghỉ quá một ngày., lang: vi }
+    answer:
+      correct_option_id: a7k
+    explanation:
+      vi: 一日たりとも + phủ định = không... dù chỉ một ngày (phủ định tuyệt đối). Không phải "chỉ một ngày" hay "không quá một ngày".
+    display_answer: Từ khi vào công ty anh ấy chưa nghỉ dù chỉ một ngày.
+
+  - key: ja:exercise:n1-u6-sura-dani-listen-sura
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-sura
+    prompt:
+      audio_asset_id: null
+      fallback_text: 彼は自分の名前すら書けないほど疲れ切っていた。
+      options:
+        - { id: e5q, text: Anh ấy mệt rã rời đến mức ngay cả tên mình cũng không viết nổi., lang: vi }
+        - { id: f9r, text: Anh ấy mệt nhưng vẫn cố viết tên mình., lang: vi }
+        - { id: g4s, text: Anh ấy chỉ viết được mỗi tên mình vì quá mệt., lang: vi }
+        - { id: h1t, text: Anh ấy không muốn viết tên mình vì mệt., lang: vi }
+    answer:
+      correct_option_id: e5q
+    explanation:
+      vi: 名前すら書けない - ngay cả tên cũng không viết được (ví dụ cực đoan); ほど疲れ切っていた - mệt rã rời đến mức đó.
+    display_answer: Anh ấy mệt rã rời đến mức ngay cả tên mình cũng không viết nổi.
+
+  - key: ja:exercise:n1-u6-sura-dani-mcq-dani
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-dani
+    prompt:
+      stem: 'Chọn từ đúng: あの事故の光景は、思い出す＿＿ぞっとする。'
+      stem_lang: vi
+      options:
+        - { id: i6u, text: だに, lang: ja }
+        - { id: j2v, text: たりとも, lang: ja }
+        - { id: k7w, text: ならでは, lang: ja }
+        - { id: l3x, text: すらに, lang: ja }
+    answer:
+      correct_option_id: i6u
+    explanation:
+      vi: 思い出すだにぞっとする - chỉ nhớ lại thôi đã rùng mình. たりとも cần 一 + lượng từ; ならでは đi sau danh từ; すらに không tồn tại.
+    display_answer: だに
+
+  - key: ja:exercise:n1-u6-sura-dani-fill-taritomo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-gram-taritomo
+    prompt:
+      template: "警備員は一晩中、一秒{{b1}}モニターから目を離さなかった。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Người bảo vệ suốt đêm không rời mắt khỏi màn hình dù chỉ một giây."
+        - "Gợi ý: 一 + lượng từ + (4 chữ kana) + phủ định."
+    answer:
+      blanks:
+        b1: [たりとも]
+    known_wrong:
+      - answer: ならでは
+        feedback_vi: ならでは là "chỉ có ở..."; "dù chỉ một giây" là 一秒たりとも.
+        error_tag: taritomo
+      - answer: ばかり
+        feedback_vi: 一秒ばかり là "chừng một giây" - không mang nghĩa phủ định tuyệt đối.
+        error_tag: taritomo
+    explanation:
+      vi: 一秒たりとも + 目を離さなかった - không rời mắt dù chỉ một giây.
+    display_answer: 警備員は一晩中、一秒たりともモニターから目を離さなかった。
+
+  - key: ja:exercise:n1-u6-sura-dani-wb-expert
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-sura
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Kết quả này, đến chuyên gia cũng không dự đoán được.\""
+      tokens:
+        - { id: t3, text: 予測できなかった }
+        - { id: t4, text: 専門家たりとも }
+        - { id: t2, text: 専門家ですら }
+        - { id: t1, text: この結果は }
+    answer:
+      orders:
+        - [t1, t2, t3]
+        - [t2, t1, t3]
+    explanation:
+      vi: 専門家ですら - ngay cả chuyên gia (người + ですら). 専門家たりとも sai vì たりとも chỉ đi với 一 + lượng từ.
+    display_answer: この結果は専門家ですら予測できなかった。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u6-sura-dani-fill-bidou
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-dani
+    prompt:
+      template: "宮殿の衛兵は、激しい雨の中でも微動{{b1}}しなかった。(không nhúc nhích mảy may)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [だに]
+    known_wrong:
+      - answer: たりとも
+        feedback_vi: Cụm cố định là 微動だにしない; たりとも cần 一 + lượng từ.
+        error_tag: dani_fixed
+      - answer: ならでは
+        feedback_vi: ならでは là "chỉ có ở", không đi với 微動.
+        error_tag: dani_fixed
+    explanation:
+      vi: 微動だにしない - không nhúc nhích dù một chút (N + だに + phủ định).
+    display_answer: 宮殿の衛兵は、激しい雨の中でも微動だにしなかった。
+
+  - key: ja:exercise:n1-u6-sura-dani-translate-tax
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-rouhi
+    prompt:
+      source_text: Tiền thuế không được phép lãng phí dù chỉ một yên. (dùng たりとも)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 税金は一円たりとも浪費してはならない。
+        - 税金を一円たりとも浪費してはならない。
+        - 税金は一円たりとも浪費してはいけない。
+        - 税金を一円たりとも浪費してはいけない。
+        - 税金は一円たりとも浪費できない。
+        - 税金は一円たりとも浪費は許されない。
+        - 税金は一円たりとも無駄にしてはならない。
+        - 税金を一円たりとも無駄にしてはならない。
+        - 税金は一円たりとも無駄にしてはいけない。
+        - 税金は一円たりとも無駄にできない。
+        - 税金の浪費は一円たりとも許されない。
+        - 税金は一円たりとも浪費してはなりません。
+    known_wrong:
+      - answer: 税金は三円たりとも浪費してはならない。
+        feedback_vi: たりとも đi với đơn vị nhỏ nhất - 一円たりとも.
+        error_tag: taritomo
+      - answer: 税金は一円たりとも浪費してもいい。
+        feedback_vi: たりとも luôn đi với phủ định hoặc cấm đoán.
+        error_tag: taritomo_negative
+    explanation:
+      vi: 税金 - tiền thuế; 一円たりとも - dù chỉ một yên; 浪費してはならない - không được lãng phí.
+    display_answer: 税金は一円たりとも浪費してはならない。
+
+  - key: ja:exercise:n1-u6-sura-dani-translate-child
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-gram-sura
+    prompt:
+      source_text: Chuyện đó thì ngay cả trẻ con cũng biết. (dùng すら)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - そんなことは子どもですら知っている。
+        - そんなことは子どもすら知っている。
+        - そんなことは子供ですら知っている。
+        - そんなことは子供すら知っている。
+        - それは子どもですら知っている。
+        - それは子供ですら知っている。
+        - それは子どもすら知っている。
+        - そんなこと子どもですら知っている。
+        - そんなことは子どもですら知っています。
+        - それは子どもですら知っています。
+        - そんなことは子どもですら分かる。
+        - 子どもですらそれを知っている。
+    known_wrong:
+      - answer: そんなことは子どもたりとも知っている。
+        feedback_vi: たりとも chỉ đi với 一 + lượng từ và phủ định; "ngay cả trẻ con" là 子どもですら.
+        error_tag: sura_taritomo
+      - answer: そんなことは子どもならでは知っている。
+        feedback_vi: ならでは là "chỉ có ở"; "ngay cả" là すら.
+        error_tag: sura_naradeha
+    explanation:
+      vi: '子どもですら - ngay cả trẻ con (ví dụ cực đoan: trẻ con còn biết, huống chi người lớn).'
+    display_answer: そんなことは子どもですら知っている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u6-sura-dani-translate-yudan
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-yudan
+    prompt:
+      source_text: ベテラン選手の一瞬の油断が、思わぬ敗北を招いた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Một giây chủ quan của tuyển thủ kỳ cựu đã dẫn đến thất bại không ngờ.
+        - Phút chủ quan của tuyển thủ kỳ cựu đã dẫn đến thất bại không ngờ.
+        - Một thoáng chủ quan của tuyển thủ kỳ cựu đã dẫn đến thất bại bất ngờ.
+        - Một khoảnh khắc chủ quan của tuyển thủ kỳ cựu đã gây ra thất bại không ngờ.
+        - Một giây lơ là của tuyển thủ kỳ cựu đã dẫn đến thất bại không ngờ.
+        - Chỉ một thoáng lơ là của vận động viên kỳ cựu đã dẫn đến trận thua bất ngờ.
+        - Sự chủ quan trong chốc lát của tuyển thủ kỳ cựu đã dẫn đến thất bại không ngờ.
+        - Một phút lơ là của cầu thủ kỳ cựu đã dẫn đến thất bại không ngờ.
+        - Một thoáng chủ quan của vận động viên lão luyện đã dẫn đến thất bại ngoài dự đoán.
+        - Một khoảnh khắc lơ là của tuyển thủ kỳ cựu đã khiến đội thua bất ngờ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Một giây chủ quan của tuyển thủ kỳ cựu đã dẫn đến chiến thắng không ngờ.
+        feedback_vi: 敗北 là thất bại, không phải chiến thắng.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ベテラン選手 - tuyển thủ kỳ cựu; 一瞬の油断 - một thoáng chủ quan; 思わぬ敗北を招いた - dẫn đến thất bại không ngờ.
+    display_answer: Một giây chủ quan của tuyển thủ kỳ cựu đã dẫn đến thất bại không ngờ.
+
+  - key: ja:exercise:n1-u6-sura-dani-mcq-exam
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-taritomo
+    prompt:
+      stem: Bạn viết lời nhắc cho nhóm học "Đến ngày thi, không được chủ quan dù chỉ một ngày." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m5y, text: 試験当日まで、一日たりとも油断できない。, lang: ja }
+        - { id: n9z, text: 試験当日まで、三日たりとも油断できない。, lang: ja }
+        - { id: o4a, text: 試験当日まで、一日たりとも油断できる。, lang: ja }
+        - { id: p8b, text: 試験当日まで、一日だにの油断できない。, lang: ja }
+    answer:
+      correct_option_id: m5y
+    explanation:
+      vi: 一日たりとも + phủ định (油断できない). 三日 không phải đơn vị nhỏ nhất; できる khẳng định mâu thuẫn với たりとも; だにの không tồn tại.
+    display_answer: 試験当日まで、一日たりとも油断できない。
+
+  - key: ja:exercise:n1-u6-sura-dani-wb-dam
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u6-gram-dani
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nếu con đập vỡ thì sao - chỉ nghĩ thôi đã thấy rùng mình.\""
+      tokens:
+        - { id: t2, text: 考えるだに }
+        - { id: t4, text: 考えるたりとも }
+        - { id: t3, text: ぞっとする }
+        - { id: t1, text: もしダムが決壊したらと }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: ～と考えるだにぞっとする - chỉ nghĩ đến... thôi đã rùng mình. 考えるたりとも sai vì たりとも không đi sau động từ.
+    display_answer: もしダムが決壊したらと考えるだにぞっとする。
+
+  - key: ja:exercise:n1-u6-sura-dani-mcq-aisatsu
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-sura
+    prompt:
+      stem: Câu nào đúng ngữ pháp và mang nghĩa "Anh ta bỏ ra khỏi phòng mà ngay cả một lời chào cũng không nói."?
+      stem_lang: vi
+      options:
+        - { id: q3c, text: 彼は挨拶すらせずに部屋を出て行った。, lang: ja }
+        - { id: r7d, text: 彼は挨拶たりともせずに部屋を出て行った。, lang: ja }
+        - { id: s2e, text: 彼は挨拶すらすれば部屋を出て行った。, lang: ja }
+        - { id: t6f, text: 彼は挨拶ならではせずに部屋を出て行った。, lang: ja }
+    answer:
+      correct_option_id: q3c
+    explanation:
+      vi: 挨拶すらせずに - ngay cả chào cũng không. たりとも cần 一 + lượng từ; すら không có mẫu điều kiện ～ば; ならでは không đi với động từ phủ định.
+    display_answer: 彼は挨拶すらせずに部屋を出て行った。

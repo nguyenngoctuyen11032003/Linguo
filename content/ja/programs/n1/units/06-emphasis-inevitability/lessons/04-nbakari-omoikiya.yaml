@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u6-nbakari-omoikiya
+order_index: 4
+level: n1
+title:
+  vi: Như sắp..., như muốn nói..., tưởng là... ai ngờ - ～んばかり, ～とばかりに, ～と思いきや
+objectives:
+  - vi: Tả mức độ mạnh "như sắp... đến nơi" bằng V-(ない) + んばかり.
+  - vi: Tả cử chỉ "như muốn nói..." của người khác bằng 「…」とばかりに.
+  - vi: Kể chuyện trái dự đoán bằng ～と思いきや.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-u6-zuniwa-okanai]
+items:
+  - item: ja:item:n1-u6-gram-nbakari
+  - item: ja:item:n1-u6-gram-tobakari
+  - item: ja:item:n1-u6-gram-to-omoikiya
+  - item: ja:item:n1-u6-hakushu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu đoạn miêu tả giàu hình ảnh trong tiểu thuyết, phóng sự - "nụ cười như muốn tràn ra", "lườm như muốn nói 'tại mày'", "cứ tưởng thắng dễ, ai ngờ..." - và dùng được khi viết.
+  - type: explain
+    text:
+      vi: 'V-ない (bỏ ない) + んばかりに / んばかりの N: "như thể sắp... đến nơi" - mức độ mạnh gần như xảy ra thật: 泣き出さんばかり, あふれんばかりの笑顔. ん là dạng cổ của ない; する → せんばかり.'
+  - type: explain
+    text:
+      vi: '「lời」/ thể thường + とばかりに: "như muốn nói rằng..." - ý thể hiện qua cử chỉ, không nói ra. Chỉ dùng tả người, vật khác, vì người nói tự biết rõ ý mình.'
+  - type: explain
+    text:
+      vi: 'Thể thường + と思いきや: "cứ tưởng là..., ai ngờ..." - vế sau là sự thật trái dự đoán, đã xảy ra. Giống tiếng Việt "tưởng... hoá ra...", nhưng là văn viết; hội thoại dùng と思ったら.'
+  - type: deep_explain
+    text:
+      vi: 'Phân biệt nhanh: んばかり đo mức độ (gần như xảy ra), とばかりに đọc ý ngầm trong cử chỉ, と思いきや đảo ngược kỳ vọng. Cả ba đều là lối miêu tả của người kể chuyện, ít gặp trong hội thoại thường ngày. Đừng nhầm んばかり với ～たばかり (vừa mới) - 泣いたばかり là "vừa khóc xong".'
+  - type: example
+    target: 彼は今にも怒鳴り出さんばかりの勢いで部屋に入ってきた。
+    target_lang: ja
+    translation:
+      vi: Anh ta xông vào phòng với khí thế như sắp quát tháo đến nơi.
+    note:
+      vi: 怒鳴り出さない → 怒鳴り出さ + んばかり.
+  - type: example
+    target: 庭には、あふれんばかりのバラが咲いていた。
+    target_lang: ja
+    translation:
+      vi: Trong vườn, hoa hồng nở rộ như muốn tràn ra ngoài.
+  - type: example
+    target: 店員は「早く帰ってくれ」とばかりに、店の明かりを消し始めた。
+    target_lang: ja
+    translation:
+      vi: Nhân viên bắt đầu tắt đèn quán như muốn nói "về nhanh giùm".
+    note:
+      vi: Cử chỉ của người khác + とばかりに.
+  - type: example
+    target: 合格したと思いきや、受験番号を見間違えていた。
+    target_lang: ja
+    translation:
+      vi: Cứ tưởng mình đã đỗ, ai ngờ là nhìn nhầm số báo danh.
+    note:
+      vi: Kỳ vọng bị đảo ngược.
+  - type: example
+    target: 歌手が登場すると、観客は大きな拍手で迎えた。
+    target_lang: ja
+    translation:
+      vi: Khi ca sĩ xuất hiện, khán giả chào đón bằng tràng vỗ tay lớn.
+    note:
+      vi: 拍手 - vỗ tay.
+  - type: common_mistake
+    wrong: 私は「もう帰りたい」とばかりに時計を見た。
+    right: 彼は「もう帰りたい」とばかりに時計を見た。
+    target_lang: ja
+    note:
+      vi: とばかりに tả cử chỉ của người khác; với chính mình bạn biết rõ ý nên không nói "như muốn nói".
+  - type: common_mistake
+    wrong: 子どもは泣くんばかりの顔をしていた。
+    right: 子どもは泣かんばかりの顔をしていた。
+    target_lang: ja
+    note:
+      vi: ん gắn vào gốc phủ định - 泣かない → 泣か + ん.
+  - type: common_mistake
+    wrong: 明日は晴れると思いきや、傘を持っていこう。
+    right: 晴れると思いきや、午後から雨が降り出した。
+    target_lang: ja
+    note:
+      vi: と思いきや kể sự thật đã xảy ra trái dự đoán; vế sau không thể là ý định hay mệnh lệnh.
+  - type: summary
+    points:
+      - vi: V-(ない) + んばかりに / んばかりの N - như sắp... đến nơi (する → せんばかり).
+      - vi: 「…」とばかりに - như muốn nói... (cử chỉ của người khác).
+      - vi: Thể thường + と思いきや - cứ tưởng..., ai ngờ...
+      - vi: 拍手 - vỗ tay; 拍手を送る - dành tràng pháo tay.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-mcq-hakushu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n1-u6-hakushu
+    prompt:
+      stem: 「選手たちに温かい拍手を送った」 trong đó 「拍手を送る」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a2m, text: dành tràng pháo tay, lang: vi }
+        - { id: b6n, text: gửi thư cảm ơn, lang: vi }
+        - { id: c1o, text: bắt tay chào hỏi, lang: vi }
+        - { id: d5p, text: giơ tay phát biểu, lang: vi }
+    answer:
+      correct_option_id: a2m
+    explanation:
+      vi: 拍手 (Hán Việt "phách thủ") - vỗ tay; 拍手を送る - dành tràng pháo tay cho ai. Bắt tay là 握手.
+    display_answer: dành tràng pháo tay
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-listen-omoikiya
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-to-omoikiya
+    prompt:
+      audio_asset_id: null
+      fallback_text: 簡単に勝てると思いきや、相手チームは予想以上に強かった。
+      options:
+        - { id: e9q, text: "Cứ tưởng thắng dễ dàng, ai ngờ đội đối phương mạnh hơn dự đoán.", lang: vi }
+        - { id: f4r, text: "Đúng như dự đoán, đội ta đã thắng dễ dàng.", lang: vi }
+        - { id: g8s, text: Vì đối phương mạnh nên chúng tôi nghĩ sẽ thua., lang: vi }
+        - { id: h3t, text: "Dù đối phương mạnh, chúng tôi vẫn thắng dễ dàng.", lang: vi }
+    answer:
+      correct_option_id: e9q
+    explanation:
+      vi: 勝てると思いきや - cứ tưởng thắng được; vế sau 予想以上に強かった là sự thật trái kỳ vọng.
+    display_answer: Cứ tưởng thắng dễ dàng, ai ngờ đội đối phương mạnh hơn dự đoán.
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-mcq-tobakari
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-tobakari
+    prompt:
+      stem: 'Chọn từ đúng: 彼は「お前のせいだ」＿＿、私をにらみつけた。'
+      stem_lang: vi
+      options:
+        - { id: i7u, text: とばかりに, lang: ja }
+        - { id: j2v, text: んばかりに, lang: ja }
+        - { id: k6w, text: ならではに, lang: ja }
+        - { id: l1x, text: たりともに, lang: ja }
+    answer:
+      correct_option_id: i7u
+    explanation:
+      vi: Lời trong ngoặc + とばかりに - như muốn nói "tại mày". んばかり gắn vào gốc phủ định của động từ, không gắn sau lời trích dẫn; ならではに, たりともに không tồn tại.
+    display_answer: とばかりに
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-fill-egao
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-nbakari
+    prompt:
+      template: "優勝した子どもたちは、はちきれ{{b1}}笑顔で手を振った。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Bọn trẻ vô địch vẫy tay với nụ cười rạng rỡ như sắp vỡ oà."
+        - "Gợi ý: はちきれない → bỏ ない, thêm (5 chữ kana) + danh từ."
+    answer:
+      blanks:
+        b1: [んばかりの]
+    known_wrong:
+      - answer: とばかりに
+        feedback_vi: とばかりに đi sau lời trích dẫn; sau gốc động từ はちきれ cần んばかりの.
+        error_tag: nbakari_tobakari
+      - answer: んばかりに
+        feedback_vi: Trước danh từ 笑顔 phải dùng んばかりの.
+        error_tag: nbakari_no
+    explanation:
+      vi: はちきれんばかりの笑顔 - nụ cười như sắp vỡ oà (rạng rỡ hết cỡ).
+    display_answer: 優勝した子どもたちは、はちきれんばかりの笑顔で手を振った。
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-wb-scold
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-to-omoikiya
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cứ tưởng sẽ bị mắng, ai ngờ anh ấy lại cười và bỏ qua cho tôi.\""
+      tokens:
+        - { id: t2, text: 彼は }
+        - { id: t4, text: 怒られると思いきやに }
+        - { id: t3, text: 笑って許してくれた }
+        - { id: t1, text: 怒られると思いきや、 }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: と思いきや là dự đoán của người nói nên đứng đầu câu, sau đó là sự thật trái ngược. 思いきやに không tồn tại.
+    display_answer: 怒られると思いきや、彼は笑って許してくれた。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-fill-cat
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-tobakari
+    prompt:
+      template: "猫は「ご飯をちょうだい」{{b1}}、私の足元にすり寄ってきた。(như muốn nói)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [とばかりに]
+    known_wrong:
+      - answer: んばかりに
+        feedback_vi: んばかり gắn sau gốc phủ định của động từ; sau lời trích dẫn dùng とばかりに.
+        error_tag: nbakari_tobakari
+      - answer: と思いきや
+        feedback_vi: と思いきや là "tưởng..., ai ngờ"; ở đây là ý ngầm trong cử chỉ của con mèo.
+        error_tag: tobakari_omoikiya
+    explanation:
+      vi: 「ご飯をちょうだい」とばかりに - như muốn nói "cho tôi ăn đi"; tả cử chỉ của con mèo.
+    display_answer: 猫は「ご飯をちょうだい」とばかりに、私の足元にすり寄ってきた。
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-fill-dog
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-nbakari
+    prompt:
+      template: "玄関のドアを開けると、犬が飛びつか{{b1}}勢いで走ってきた。(như sắp nhảy chồm lên)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [んばかりの]
+    known_wrong:
+      - answer: ないばかりの
+        feedback_vi: ない phải đổi thành ん - 飛びつかんばかりの.
+        error_tag: nbakari_form
+      - answer: とばかりに
+        feedback_vi: とばかりに đi sau lời trích dẫn; sau gốc động từ là んばかりの.
+        error_tag: nbakari_tobakari
+    explanation:
+      vi: 飛びつかない → 飛びつか + んばかりの + 勢い - khí thế như sắp nhảy chồm lên.
+    display_answer: 玄関のドアを開けると、犬が飛びつかんばかりの勢いで走ってきた。
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-translate-rain
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-to-omoikiya
+    prompt:
+      source_text: Cứ tưởng trời sẽ mưa, ai ngờ lại là một ngày nắng đẹp. (dùng と思いきや)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 雨が降ると思いきや、いい天気になった。
+        - 雨が降ると思いきや、いい天気だった。
+        - 雨が降ると思いきや、よく晴れた。
+        - 雨が降ると思いきや、晴れた。
+        - 雨が降ると思いきや、快晴だった。
+        - 雨が降ると思いきや、晴天だった。
+        - 雨が降ると思いきや、すっかり晴れた。
+        - 雨になると思いきや、いい天気になった。
+        - 雨になると思いきや、晴れた。
+        - 雨かと思いきや、いい天気だった。
+        - 雨だと思いきや、いい天気だった。
+        - 雨が降るかと思いきや、いい天気になった。
+    known_wrong:
+      - answer: 雨が降ると思いきや、雨が降った。
+        feedback_vi: Vế sau phải trái với dự đoán - "ai ngờ trời nắng".
+        error_tag: omoikiya_contrast
+      - answer: 雨が降るとばかりに、いい天気になった。
+        feedback_vi: とばかりに tả cử chỉ "như muốn nói"; "tưởng là... ai ngờ" là と思いきや.
+        error_tag: tobakari_omoikiya
+    explanation:
+      vi: 雨が降ると思いきや - cứ tưởng trời mưa; いい天気になった - (ai ngờ) trời lại đẹp.
+    display_answer: 雨が降ると思いきや、いい天気になった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-translate-sigh
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-tobakari
+    prompt:
+      source_text: 部長は「まだ分からないのか」とばかりに、深いため息をついた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trưởng phòng thở dài thườn thượt như muốn nói "vẫn chưa hiểu à".
+        - Trưởng phòng thở dài như muốn nói "vẫn chưa hiểu sao".
+        - Trưởng phòng thở dài sườn sượt như muốn nói "vẫn chưa hiểu à".
+        - Trưởng phòng thở một hơi dài như muốn nói "vẫn chưa hiểu à".
+        - Trưởng phòng thở dài như thể muốn nói "vẫn chưa hiểu à".
+        - Trưởng phòng thở dài thườn thượt như muốn nói "vẫn chưa hiểu sao".
+        - Như muốn nói "vẫn chưa hiểu à", trưởng phòng thở dài thườn thượt.
+        - Trưởng phòng thở dài như muốn nói "vẫn không hiểu à".
+        - Trưởng phòng thở dài như muốn nói "cậu vẫn chưa hiểu à".
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trưởng phòng nói "vẫn chưa hiểu à" rồi thở dài.
+        feedback_vi: とばかりに nghĩa là "như muốn nói" - ông ấy không nói ra thành lời.
+        error_tag: tobakari_meaning
+    explanation:
+      vi: 「まだ分からないのか」とばかりに - như muốn nói "vẫn chưa hiểu à"; 深いため息をつく - thở dài thườn thượt.
+    display_answer: Trưởng phòng thở dài thườn thượt như muốn nói "vẫn chưa hiểu à".
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-mcq-mother
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-nbakari
+    prompt:
+      stem: Bạn muốn viết "Mẹ nhìn tôi với vẻ mặt như sắp bật khóc." Câu nào đúng ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: m4y, text: 母は今にも泣き出さんばかりの表情で私を見つめた。, lang: ja }
+        - { id: n8z, text: 母は今にも泣き出すんばかりの表情で私を見つめた。, lang: ja }
+        - { id: o3a, text: 母は今にも泣き出しんばかりの表情で私を見つめた。, lang: ja }
+        - { id: p7b, text: 母は今にも泣き出さんばかりに表情で私を見つめた。, lang: ja }
+    answer:
+      correct_option_id: m4y
+    explanation:
+      vi: 泣き出さない → 泣き出さ + んばかりの + 表情. 泣き出す / 泣き出し không gắn được với ん; trước danh từ phải là んばかりの.
+    display_answer: 母は今にも泣き出さんばかりの表情で私を見つめた。
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-mcq-cake
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-tobakari
+    prompt:
+      stem: Em trai vừa thấy chiếc bánh liền với tay lấy ngay, như muốn nói "chờ mãi rồi". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: q2c, text: 弟は「待ってました」とばかりに、ケーキに手を伸ばした。, lang: ja }
+        - { id: r6d, text: 弟は「待ってました」とばかりで、ケーキに手を伸ばした。, lang: ja }
+        - { id: s1e, text: 弟は「待ってました」んばかりに、ケーキに手を伸ばした。, lang: ja }
+        - { id: t5f, text: 弟は「待ってました」ならではに、ケーキに手を伸ばした。, lang: ja }
+    answer:
+      correct_option_id: q2c
+    explanation:
+      vi: Lời trích dẫn + とばかりに + hành động. とばかりで sai dạng; んばかり không đi sau lời trích dẫn; ならではに không tồn tại.
+    display_answer: 弟は「待ってました」とばかりに、ケーキに手を伸ばした。
+
+  - key: ja:exercise:n1-u6-nbakari-omoikiya-wb-applause
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-hakushu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Trận đấu kết thúc, khán giả đứng dậy vỗ tay cho cả hai đội.\""
+      tokens:
+        - { id: t3, text: 立ち上がって }
+        - { id: t5, text: 両チームを拍手に送った }
+        - { id: t1, text: 試合が終わると、 }
+        - { id: t4, text: 両チームに拍手を送った }
+        - { id: t2, text: 観客は }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: (ai) に拍手を送る - dành tràng vỗ tay cho ai. 両チームを拍手に送った đảo trợ từ nên sai.
+    display_answer: 試合が終わると、観客は立ち上がって両チームに拍手を送った。

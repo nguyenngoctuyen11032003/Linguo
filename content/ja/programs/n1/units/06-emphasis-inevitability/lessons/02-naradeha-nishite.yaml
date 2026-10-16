@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u6-naradeha-nishite
+order_index: 2
+level: n1
+title:
+  vi: Chỉ có ở..., phải đến mức... mới - ～ならでは, ～にして
+objectives:
+  - vi: Khen nét đặc trưng riêng bằng N ならではの N / N ならではだ.
+  - vi: Hiểu ～にして với nghĩa "phải là N mới..." và "ở tuổi N mà đã...".
+  - vi: Dùng 老舗, 職人 khi viết về nghề truyền thống.
+estimated_minutes: 24
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-u6-sura-dani]
+items:
+  - item: ja:item:n1-u6-gram-naradeha
+  - item: ja:item:n1-u6-gram-nishite
+  - item: ja:item:n1-u6-shinise
+  - item: ja:item:n1-u6-shokunin
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu bài giới thiệu du lịch, phóng sự về nghệ nhân - "hương vị chỉ quán lâu đời mới có", "phải là bậc thầy mới làm được", "mới mười hai tuổi mà đã..." - và tự viết được.
+  - type: explain
+    text:
+      vi: 'N + ならではの + N / N + ならではだ: "chỉ N mới có, đặc trưng riêng của N" - 雪国ならではの祭り. Luôn là lời khen, giống tiếng Việt "đúng là chỉ ... mới có".'
+  - type: explain
+    text:
+      vi: '～にして có hai nghĩa chính. (1) N + にして初めて: "phải là N (đạt đến mức N) thì mới..." - 名人にして初めてできる. (2) Tuổi / giai đoạn + にして: "ở mức đó mà đã..." - わずか十二歳にしてプロになった.'
+  - type: explain
+    text:
+      vi: 'Phân biệt: ならでは nhấn "độc nhất", にして初めて nhấn "điều kiện cần đạt tới". Sau ならでは phải có の khi nối với danh từ - ならではの味, không nói ×ならでは味.'
+  - type: deep_explain
+    text:
+      vi: 'にして còn có nghĩa thứ ba trong văn chương - "đến N mà còn..." (名人にしてこの失敗), và nghĩa nối "vừa là... vừa là..." (彼は医者にして作家だ). Khi đọc, nhìn vế sau: có 初めて → điều kiện; có con số tuổi → "mới ... mà đã"; có lỗi, thất bại → "đến ... mà còn". 老舗 đọc しにせ là cách đọc đặc biệt phải thuộc lòng.'
+  - type: example
+    target: この店ならではの味を求めて、遠くから客が訪れる。
+    target_lang: ja
+    translation:
+      vi: Khách từ xa tìm đến vì hương vị chỉ quán này mới có.
+    note:
+      vi: ならではの + danh từ.
+  - type: example
+    target: 雪国ならではの祭りを見に、北海道へ行った。
+    target_lang: ja
+    translation:
+      vi: Tôi đã đến Hokkaido xem lễ hội chỉ vùng xứ tuyết mới có.
+  - type: example
+    target: 長年の経験を持つ彼にして初めて可能な判断だった。
+    target_lang: ja
+    translation:
+      vi: Phải là người có nhiều năm kinh nghiệm như anh ấy mới đưa ra được quyết định đó.
+    note:
+      vi: にして初めて - điều kiện cần đạt tới.
+  - type: example
+    target: わずか十二歳にしてプロ棋士になった少年がいる。
+    target_lang: ja
+    translation:
+      vi: Có cậu bé mới mười hai tuổi mà đã trở thành kỳ thủ chuyên nghiệp.
+    note:
+      vi: Tuổi + にして - "mới ... mà đã".
+  - type: example
+    target: 老舗の旅館で、職人の技が光る器に料理が盛られていた。
+    target_lang: ja
+    translation:
+      vi: Ở lữ quán lâu đời, món ăn được bày trong những chiếc bát thể hiện rõ tay nghề nghệ nhân.
+    note:
+      vi: 老舗 しにせ · 職人 しょくにん.
+  - type: common_mistake
+    wrong: 京都ならでは景色を楽しんだ。
+    right: 京都ならではの景色を楽しんだ。
+    target_lang: ja
+    note:
+      vi: ならでは nối với danh từ phải có の.
+  - type: common_mistake
+    wrong: わずか十二歳にしたら、プロになった。
+    right: わずか十二歳にして、プロになった。
+    target_lang: ja
+    note:
+      vi: '"Mới ... tuổi mà đã" dùng にして; にしたら là "nếu xét từ phía..." - nghĩa khác hẳn.'
+  - type: summary
+    points:
+      - vi: N ならではの N / N ならではだ - chỉ N mới có (khen).
+      - vi: N にして初めて - phải là N mới...
+      - vi: Tuổi + にして - mới ... mà đã...
+      - vi: 老舗 (しにせ) - cửa hàng lâu đời · 職人 - nghệ nhân.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u6-naradeha-nishite-mcq-shinise
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u6-shinise
+    prompt:
+      stem: Trong bài giới thiệu ẩm thực, từ 「老舗」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a4c, text: cửa hàng lâu đời có danh tiếng, lang: vi }
+        - { id: b8d, text: cửa hàng cũ kỹ xuống cấp, lang: vi }
+        - { id: c1e, text: cửa hàng mới khai trương, lang: vi }
+        - { id: d5f, text: cửa hàng bán đồ cũ, lang: vi }
+    answer:
+      correct_option_id: a4c
+    explanation:
+      vi: 老舗 (しにせ) là cửa hàng truyền nhiều đời, luôn mang nghĩa khen. Tiệm cũ, xuống cấp là 古い店; đồ cũ là 古物 / 中古.
+    display_answer: cửa hàng lâu đời có danh tiếng
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-listen-nishite
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-nishite
+    prompt:
+      audio_asset_id: null
+      fallback_text: この技は、熟練した職人にして初めて可能になる。
+      options:
+        - { id: e9g, text: Kỹ thuật này phải là nghệ nhân lành nghề mới làm được., lang: vi }
+        - { id: f3h, text: Kỹ thuật này người mới vào nghề cũng làm được., lang: vi }
+        - { id: g7i, text: Nghệ nhân lành nghề lần đầu tiên làm hỏng kỹ thuật này., lang: vi }
+        - { id: h2j, text: Kỹ thuật này đã được nghệ nhân dạy cho người mới., lang: vi }
+    answer:
+      correct_option_id: e9g
+    explanation:
+      vi: 熟練した職人にして初めて - phải là nghệ nhân lành nghề thì mới; 可能になる - trở nên khả thi. 初めて ở đây không phải "lần đầu tiên".
+    display_answer: Kỹ thuật này phải là nghệ nhân lành nghề mới làm được.
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-mcq-tezukuri
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-gram-naradeha
+    prompt:
+      stem: 'Chọn từ đúng: このセーターには、手作り＿＿温かみがある。'
+      stem_lang: vi
+      options:
+        - { id: i6k, text: ならではの, lang: ja }
+        - { id: j1l, text: にしての, lang: ja }
+        - { id: k5m, text: たりともの, lang: ja }
+        - { id: l9n, text: だにの, lang: ja }
+    answer:
+      correct_option_id: i6k
+    explanation:
+      vi: 手作りならではの温かみ - sự ấm áp chỉ đồ thủ công mới có. にしての, たりともの, だにの đều không tồn tại.
+    display_answer: ならではの
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-fill-hatachi
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-gram-nishite
+    prompt:
+      template: "わずか二十歳{{b1}}、彼は自分の会社を立ち上げた。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Mới hai mươi tuổi mà anh ấy đã tự thành lập công ty."
+        - "Gợi ý: tuổi + (3 chữ kana) - mẫu \"mới ... mà đã\" của bài này."
+    answer:
+      blanks:
+        b1: [にして]
+    known_wrong:
+      - answer: ならでは
+        feedback_vi: ならでは là "chỉ có ở"; "mới hai mươi tuổi mà đã" là 二十歳にして.
+        error_tag: nishite_naradeha
+      - answer: にしたら
+        feedback_vi: にしたら là "đứng ở góc độ của..." - không mang nghĩa "mới ... mà đã".
+        error_tag: nishite_form
+    explanation:
+      vi: わずか二十歳にして - mới hai mươi tuổi mà đã (nhấn sự sớm, đáng nể).
+    display_answer: わずか二十歳にして、彼は自分の会社を立ち上げた。
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-wb-dish
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-gram-naradeha
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đây là món ăn chỉ quán lâu đời mới có.\""
+      tokens:
+        - { id: t3, text: 料理だ }
+        - { id: t4, text: 老舗にしての }
+        - { id: t1, text: これは }
+        - { id: t2, text: 老舗ならではの }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: 老舗ならではの料理 - món ăn chỉ quán lâu đời mới có. 老舗にしての không tồn tại.
+    display_answer: これは老舗ならではの料理だ。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u6-naradeha-nishite-fill-umbrella
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-shokunin
+    prompt:
+      template: "これは地元の{{b1}}が一本一本手作りした傘です。温泉地{{b2}}の楽しみ方も紹介します。(nghệ nhân / chỉ ... mới có)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [職人, しょくにん]
+        b2: [ならでは]
+    known_wrong:
+      - answer: 老舗
+        feedback_vi: 老舗 là cửa hàng lâu đời, không phải người làm ra cây dù - người thợ là 職人.
+        error_tag: vocab_meaning
+      - answer: にして
+        feedback_vi: '"Chỉ suối nước nóng mới có" là 温泉地ならではの.'
+        error_tag: nishite_naradeha
+    explanation:
+      vi: 職人 - nghệ nhân, thợ thủ công; 温泉地ならではの楽しみ方 - cách tận hưởng chỉ khu suối nước nóng mới có.
+    display_answer: これは地元の職人が一本一本手作りした傘です。温泉地ならではの楽しみ方も紹介します。
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-translate-shinise
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-shinise
+    prompt:
+      source_text: Tiệm bánh kẹo này là cửa hàng lâu đời có từ thời Edo. (dùng 江戸時代から続く)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この菓子屋は江戸時代から続く老舗だ。
+        - この菓子屋は江戸時代から続く老舗です。
+        - このお菓子屋は江戸時代から続く老舗だ。
+        - このお菓子屋は江戸時代から続く老舗です。
+        - このお菓子屋さんは江戸時代から続く老舗だ。
+        - このお菓子屋さんは江戸時代から続く老舗です。
+        - この和菓子屋は江戸時代から続く老舗だ。
+        - この和菓子屋は江戸時代から続く老舗です。
+        - この菓子店は江戸時代から続く老舗だ。
+        - この菓子店は江戸時代から続く老舗です。
+        - この菓子屋は江戸時代から続くしにせだ。
+        - この和菓子店は江戸時代から続く老舗だ。
+    known_wrong:
+      - answer: この菓子屋は江戸時代から続くろうほだ。
+        feedback_vi: 老舗 đọc しにせ, không đọc theo âm Hán ろうほ.
+        error_tag: reading
+      - answer: この菓子屋は江戸時代から続く職人だ。
+        feedback_vi: 職人 là người thợ; cửa hàng lâu đời là 老舗.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 菓子屋 - tiệm bánh kẹo; 江戸時代から続く - kéo dài từ thời Edo; 老舗 - cửa hàng lâu đời.
+    display_answer: この菓子屋は江戸時代から続く老舗だ。
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-translate-novel
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-nishite
+    prompt:
+      source_text: Đến năm mươi tuổi, ông ấy mới lần đầu viết tiểu thuyết. (dùng にして初めて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は五十歳にして初めて小説を書いた。
+        - 彼は50歳にして初めて小説を書いた。
+        - 五十歳にして、彼は初めて小説を書いた。
+        - 50歳にして、彼は初めて小説を書いた。
+        - 彼は五十歳にして初めて小説を書きました。
+        - 彼は50歳にして初めて小説を書きました。
+        - 五十歳にして初めて小説を書いた。
+        - 50歳にして初めて小説を書いた。
+        - 彼は五十にして初めて小説を書いた。
+        - 五十歳にして、彼は初めて小説を書きました。
+    known_wrong:
+      - answer: 彼は五十歳ならでは初めて小説を書いた。
+        feedback_vi: ならでは là "chỉ có ở", không đi với tuổi; "đến năm mươi tuổi mới" là 五十歳にして初めて.
+        error_tag: nishite_naradeha
+      - answer: 彼は五十歳にしたら初めて小説を書いた。
+        feedback_vi: Mẫu đúng là にして初めて.
+        error_tag: nishite_form
+    explanation:
+      vi: 五十歳にして初めて - phải đến năm mươi tuổi mới (lần đầu). 小説を書いた - đã viết tiểu thuyết.
+    display_answer: 彼は五十歳にして初めて小説を書いた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u6-naradeha-nishite-translate-local
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-naradeha
+    prompt:
+      source_text: 地元の食材を使った、この地域ならではの料理をお楽しみください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin mời thưởng thức món ăn chỉ vùng này mới có, làm từ nguyên liệu địa phương.
+        - Hãy thưởng thức món ăn đặc trưng của vùng này, làm từ nguyên liệu địa phương.
+        - Mời quý khách thưởng thức món ăn chỉ vùng này mới có, dùng nguyên liệu địa phương.
+        - Xin mời thưởng thức những món ăn đặc trưng chỉ có ở vùng này, sử dụng nguyên liệu địa phương.
+        - Hãy thưởng thức món ăn chỉ có ở vùng này, được làm từ nguyên liệu địa phương.
+        - Mời quý khách thưởng thức món ăn đặc sản của vùng này làm từ nguyên liệu địa phương.
+        - Xin hãy thưởng thức món ăn chỉ nơi đây mới có, sử dụng nguyên liệu địa phương.
+        - Mời bạn thưởng thức món ăn đặc trưng của địa phương này, dùng nguyên liệu tại chỗ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin mời thưởng thức món ăn nhập khẩu, làm từ nguyên liệu nước ngoài.
+        feedback_vi: 地元の食材 là nguyên liệu địa phương; ならではの là "chỉ vùng này mới có".
+        error_tag: vocab_meaning
+    explanation:
+      vi: 地元の食材を使った - dùng nguyên liệu địa phương; この地域ならではの料理 - món ăn chỉ vùng này mới có; お楽しみください - xin mời thưởng thức.
+    display_answer: Xin mời thưởng thức món ăn chỉ vùng này mới có, làm từ nguyên liệu địa phương.
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-mcq-finish
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-naradeha
+    prompt:
+      stem: Bạn viết cảm nhận về một món đồ thủ công. Câu nào đúng ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: m4o, text: 職人ならではの丁寧な仕上がりに感動した。, lang: ja }
+        - { id: n8p, text: 職人ならでは丁寧な仕上がりに感動した。, lang: ja }
+        - { id: o3q, text: 職人にしての丁寧な仕上がりに感動した。, lang: ja }
+        - { id: p7r, text: 職人ならではな丁寧な仕上がりに感動した。, lang: ja }
+    answer:
+      correct_option_id: m4o
+    explanation:
+      vi: ならでは nối danh từ bằng の - 職人ならではの仕上がり (độ hoàn thiện chỉ nghệ nhân mới có). Thiếu の, dùng な hay にしての đều sai.
+    display_answer: 職人ならではの丁寧な仕上がりに感動した。
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-wb-olympic
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-nishite
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Mới mười lăm tuổi mà cô ấy đã giành huy chương vàng Olympic.\""
+      tokens:
+        - { id: t3, text: オリンピックの金メダルを手にした }
+        - { id: t4, text: 十五歳ならでは }
+        - { id: t1, text: 彼女は }
+        - { id: t2, text: 十五歳にして }
+    answer:
+      orders:
+        - [t1, t2, t3]
+        - [t2, t1, t3]
+    explanation:
+      vi: 十五歳にして - mới mười lăm tuổi mà đã. 十五歳ならでは không nối được với động từ phía sau.
+    display_answer: 彼女は十五歳にしてオリンピックの金メダルを手にした。
+
+  - key: ja:exercise:n1-u6-naradeha-nishite-mcq-pair
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u6-gram-nishite
+    prompt:
+      stem: 'Chọn cách điền đúng vào cả hai chỗ trống: 「この味は百年続く老舗（ A ）だ。一方、わずか三歳（ B ）ピアノを弾きこなす子もいる。」'
+      stem_lang: vi
+      options:
+        - { id: q2s, text: A ならでは / B にして, lang: ja }
+        - { id: r6t, text: A にして / B ならでは, lang: ja }
+        - { id: s1u, text: A たりとも / B すら, lang: ja }
+        - { id: t5v, text: A だに / B ならでは, lang: ja }
+    answer:
+      correct_option_id: q2s
+    explanation:
+      vi: 老舗ならではだ - chỉ quán lâu đời mới có; 三歳にして - mới ba tuổi mà đã. Đảo hai mẫu thì cả hai câu đều sai; たりとも, だに không hợp chỗ nào.
+    display_answer: A ならでは / B にして

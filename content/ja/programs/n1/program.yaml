@@ -9,7 +9,7 @@ language: ja
 title:
   vi: Tiếng Nhật cao cấp (JLPT N1)
 description:
-  vi: Điều kiện và giả định trang trọng; văn viết và lối nói văn chương; cảm xúc và đánh giá mạnh; diễn ngôn học thuật, xã luận; thành ngữ, tục ngữ và văn hoá (JLPT N1).
+  vi: Điều kiện và giả định trang trọng; văn viết và lối nói văn chương; cảm xúc và đánh giá mạnh; diễn ngôn học thuật, xã luận; thành ngữ, tục ngữ và văn hoá; nhấn mạnh, tất yếu và ngoài dự đoán (JLPT N1).
 kind: core
 goal_types: []
 level_from: n1

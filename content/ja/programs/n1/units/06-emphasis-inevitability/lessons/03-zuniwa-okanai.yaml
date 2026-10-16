@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u6-zuniwa-okanai
+order_index: 3
+level: n1
+title:
+  vi: Tất yếu và bị buộc phải - ～ずにはおかない, ～ずにはすまない, ～を余儀なくされる
+objectives:
+  - vi: Nói một sự việc "chắc chắn sẽ khiến..." hoặc quyết tâm "nhất định sẽ..." bằng ～ずにはおかない.
+  - vi: Nói "theo lẽ thường không làm thì không xong" bằng ～ずにはすまない.
+  - vi: Đọc tin tức "bị hoàn cảnh buộc phải..." với N を余儀なくされる, phân biệt với ずにはいられない và ざるを得ない (N2).
+estimated_minutes: 25
+skills: [grammar, vocabulary, reading]
+prerequisites: [ja:lesson:n1-u6-naradeha-nishite]
+items:
+  - item: ja:item:n1-u6-gram-zuni-okanai
+  - item: ja:item:n1-u6-gram-zuni-sumanai
+  - item: ja:item:n1-u6-gram-yogi-naku
+  - item: ja:item:n1-u6-tettai
+  - item: ja:item:n2-u5-gram-zu-ni-irarenai
+    role: reuse
+  - item: ja:item:n2-u5-gram-zaru-wo-enai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu và dùng đúng bốn cách nói "không thể không" ở mức N2-N1, và đọc được tin tức kiểu "nhà máy buộc phải đóng cửa", "công ty buộc phải rút khỏi thị trường".
+  - type: explain
+    text:
+      vi: 'V-ない (bỏ ない) + ずにはおかない: (1) chủ ngữ là tác phẩm, sự việc - "chắc chắn sẽ khiến (ai) phải...": 見る者を泣かせずにはおかない; (2) chủ ngữ là người nói - "nhất định sẽ...": 真相を明らかにせずにはおかない. する → せずにはおかない.'
+  - type: explain
+    text:
+      vi: 'V-ない (bỏ ない) + ずにはすまない: "không làm... thì không xong" - lẽ thường, trách nhiệm xã hội buộc phải làm: 謝らずにはすまない. N + を余儀なくされる: "bị hoàn cảnh buộc phải N" - N là danh từ hành động (中止, 延期, 撤退, 引退), giọng khách quan của tin tức.'
+  - type: explain
+    text:
+      vi: 'So với N2: ずにはいられない là cảm xúc của chính mình không kìm được (笑わずにはいられない); ざるを得ない là "đành phải" theo phán đoán chủ quan. ずにはおかない nói tác động tất yếu lên người khác, còn 余儀なくされる là bị ép bởi hoàn cảnh bên ngoài.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo nhận diện: chủ ngữ là bộ phim, chính sách, sự kiện → ずにはおかない; chủ ngữ là "tôi" và cảm xúc → ずにはいられない; có từ chỉ nguyên nhân khách quan (台風, 不況, けが) + danh từ hành động → を余儀なくされる. Dạng chủ động を余儀なくさせる đặt nguyên nhân làm chủ ngữ - 不況が閉鎖を余儀なくさせた. Tiếng Việt chỉ có "buộc phải / không thể không", nên người Việt hay dùng lẫn lộn bốn mẫu này.'
+  - type: example
+    target: この映画は、見る者を泣かせずにはおかない。
+    target_lang: ja
+    translation:
+      vi: Bộ phim này chắc chắn sẽ khiến người xem phải rơi nước mắt.
+    note:
+      vi: Chủ ngữ là tác phẩm + sai khiến 泣かせる + ずにはおかない.
+  - type: example
+    target: 警察は、必ず真相を明らかにせずにはおかないと述べた。
+    target_lang: ja
+    translation:
+      vi: Cảnh sát tuyên bố nhất định sẽ làm sáng tỏ sự thật.
+    note:
+      vi: Quyết tâm của người nói; する → せずにはおかない.
+  - type: example
+    target: これほどの迷惑をかけたのだから、直接謝罪せずにはすまないだろう。
+    target_lang: ja
+    translation:
+      vi: Đã gây phiền hà đến mức này thì không trực tiếp xin lỗi là không xong.
+    note:
+      vi: Lẽ thường xã hội buộc phải làm.
+  - type: example
+    target: 感染症の流行で、多くの店が休業を余儀なくされた。
+    target_lang: ja
+    translation:
+      vi: Do dịch bệnh lan rộng, nhiều cửa hàng buộc phải tạm nghỉ kinh doanh.
+    note:
+      vi: Nguyên nhân khách quan + danh từ hành động + を余儀なくされた.
+  - type: example
+    target: 円安の影響で、その企業は海外市場からの撤退を余儀なくされた。
+    target_lang: ja
+    translation:
+      vi: Do đồng yên mất giá, doanh nghiệp đó buộc phải rút khỏi thị trường nước ngoài.
+    note:
+      vi: 撤退 - rút lui.
+  - type: common_mistake
+    wrong: 彼の歌を聞くと、私は泣かずにはおかない。
+    right: 彼の歌を聞くと、私は泣かずにはいられない。
+    target_lang: ja
+    note:
+      vi: Cảm xúc của chính mình không kìm được là ずにはいられない; ずにはおかない nói tác động lên người khác hoặc quyết tâm.
+  - type: common_mistake
+    wrong: ミスを上司に報告しずにはすまない。
+    right: ミスを上司に報告せずにはすまない。
+    target_lang: ja
+    note:
+      vi: する chia thành せず - せずにはすまない, không phải しず.
+  - type: common_mistake
+    wrong: 大雨で、試合は中止を余儀なくした。
+    right: 大雨で、試合は中止を余儀なくされた。
+    target_lang: ja
+    note:
+      vi: Chủ ngữ là thứ bị ép (試合) thì dùng bị động 余儀なくされた; 余儀なくする không phải dạng chuẩn.
+  - type: summary
+    points:
+      - vi: 作品 / 事件 + ずにはおかない - chắc chắn sẽ khiến...; người nói + ずにはおかない - nhất định sẽ...
+      - vi: ずにはすまない - không làm thì không xong (lẽ thường).
+      - vi: N を余儀なくされる - bị hoàn cảnh buộc phải N (tin tức).
+      - vi: ずにはいられない - tự mình không kìm được · ざるを得ない - đành phải.
+      - vi: 撤退 - rút lui.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u6-zuniwa-okanai-mcq-tettai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u6-tettai
+    prompt:
+      stem: Trong tin kinh tế, 「市場から撤退する」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a3w, text: rút khỏi thị trường, lang: vi }
+        - { id: b7x, text: thâm nhập thị trường, lang: vi }
+        - { id: c2y, text: sáp nhập vào thị trường, lang: vi }
+        - { id: d6z, text: mở rộng thị trường, lang: vi }
+    answer:
+      correct_option_id: a3w
+    explanation:
+      vi: 撤退 (Hán Việt "triệt thoái") - rút lui. Thâm nhập là 進出, mở rộng là 拡大.
+    display_answer: rút khỏi thị trường
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-listen-hanabi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-yogi-naku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 記録的な大雨の影響で、花火大会は延期を余儀なくされた。
+      options:
+        - { id: e1a, text: "Do mưa lớn kỷ lục, lễ hội pháo hoa buộc phải hoãn lại.", lang: vi }
+        - { id: f5b, text: "Dù mưa lớn kỷ lục, lễ hội pháo hoa vẫn diễn ra như dự định.", lang: vi }
+        - { id: g9c, text: "Do mưa lớn kỷ lục, lễ hội pháo hoa bị huỷ hẳn.", lang: vi }
+        - { id: h4d, text: Ban tổ chức tự ý hoãn lễ hội pháo hoa dù trời đẹp., lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: 延期を余儀なくされた - buộc phải hoãn (延期 là hoãn, không phải huỷ - huỷ là 中止). 影響で cho biết nguyên nhân khách quan.
+    display_answer: Do mưa lớn kỷ lục, lễ hội pháo hoa buộc phải hoãn lại.
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-mcq-novel
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-zuni-okanai
+    prompt:
+      stem: 'Chọn cách nói đúng: この小説は、読む人に深い感動を与え＿＿。'
+      stem_lang: vi
+      options:
+        - { id: i8e, text: ずにはおかない, lang: ja }
+        - { id: j3f, text: るを余儀なくされる, lang: ja }
+        - { id: k7g, text: ずにはすまないの, lang: ja }
+        - { id: l2h, text: ないずにはいられない, lang: ja }
+    answer:
+      correct_option_id: i8e
+    explanation:
+      vi: Chủ ngữ là tác phẩm, tác động tất yếu lên người đọc → 与えずにはおかない. 余儀なくされる đi sau danh từ, không sau động từ; hai phương án còn lại sai dạng chia.
+    display_answer: ずにはおかない
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-fill-shazai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-zuni-sumanai
+    prompt:
+      template: "取引先に大きな損害を与えたのだから、社長が自ら謝罪{{b1}}すまない。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Đã gây thiệt hại lớn cho đối tác thì giám đốc không tự mình xin lỗi là không xong."
+        - "Gợi ý: 謝罪する → dạng phủ định cổ của する + には."
+    answer:
+      blanks:
+        b1: [せずには, しないでは]
+    known_wrong:
+      - answer: しずには
+        feedback_vi: する chia thành せず - 謝罪せずにはすまない.
+        error_tag: zu_form
+      - answer: すずには
+        feedback_vi: Dạng phủ định cổ của する là せず, không phải すず.
+        error_tag: zu_form
+    explanation:
+      vi: 謝罪せずにはすまない - không xin lỗi thì không xong (trách nhiệm xã hội). Dạng 謝罪しないではすまない cũng đúng.
+    display_answer: 取引先に大きな損害を与えたのだから、社長が自ら謝罪せずにはすまない。
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-wb-tettai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-tettai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Do doanh thu giảm, công ty đó buộc phải rút khỏi thị trường Mỹ.\""
+      tokens:
+        - { id: t4, text: 余儀なくされた }
+        - { id: t2, text: その会社は }
+        - { id: t5, text: 余儀なくせずには }
+        - { id: t3, text: アメリカ市場からの撤退を }
+        - { id: t1, text: 売り上げの減少により、 }
+    answer:
+      orders:
+        - [t1, t2, t3, t4]
+        - [t2, t1, t3, t4]
+    explanation:
+      vi: 撤退を余儀なくされた - buộc phải rút lui. 余儀なくせずには không phải dạng tồn tại.
+    display_answer: 売り上げの減少により、その会社はアメリカ市場からの撤退を余儀なくされた。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u6-zuniwa-okanai-fill-kantoku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-zuni-okanai
+    prompt:
+      template: "あの監督の作品は、いつも観客に社会の矛盾を考えさ{{b1}}。(chắc chắn khiến khán giả phải suy nghĩ)"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [せずにはおかない]
+    known_wrong:
+      - answer: せずにはいられない
+        feedback_vi: ずにはいられない là cảm xúc tự mình không kìm được; tác phẩm tác động lên khán giả là ずにはおかない.
+        error_tag: okanai_irarenai
+      - answer: せざるを得ない
+        feedback_vi: ざるを得ない là "đành phải" theo phán đoán của chủ ngữ; tác phẩm không "đành phải".
+        error_tag: okanai_zaru
+    explanation:
+      vi: 考えさせる (khiến suy nghĩ) → 考えさせずにはおかない - chắc chắn khiến (khán giả) phải suy nghĩ.
+    display_answer: あの監督の作品は、いつも観客に社会の矛盾を考えさせずにはおかない。
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-translate-injury
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-yogi-naku
+    prompt:
+      source_text: Vì chấn thương, tuyển thủ đó buộc phải giải nghệ. (dùng 引退 và を余儀なくされる)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - けがのため、その選手は引退を余儀なくされた。
+        - 怪我のため、その選手は引退を余儀なくされた。
+        - けがで、その選手は引退を余儀なくされた。
+        - 怪我で、その選手は引退を余儀なくされた。
+        - けがのため、その選手は引退を余儀なくされました。
+        - 怪我のため、その選手は引退を余儀なくされました。
+        - 負傷のため、その選手は引退を余儀なくされた。
+        - けがのせいで、その選手は引退を余儀なくされた。
+        - その選手はけがのため引退を余儀なくされた。
+        - その選手は怪我のため引退を余儀なくされた。
+        - その選手はけがで引退を余儀なくされた。
+        - その選手は怪我で引退を余儀なくされた。
+    known_wrong:
+      - answer: けがのため、その選手は引退を余儀なくさせた。
+        feedback_vi: Tuyển thủ là người bị ép nên dùng bị động 余儀なくされた; させた cần nguyên nhân làm chủ ngữ.
+        error_tag: yogi_voice
+      - answer: けがのため、その選手は引退せずにはおかなかった。
+        feedback_vi: ずにはおかない là "nhất định sẽ / chắc chắn khiến"; bị hoàn cảnh ép buộc là を余儀なくされる.
+        error_tag: okanai_yogi
+    explanation:
+      vi: けがのため - vì chấn thương; 引退を余儀なくされた - buộc phải giải nghệ.
+    display_answer: けがのため、その選手は引退を余儀なくされた。
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-translate-apology
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-zuni-sumanai
+    prompt:
+      source_text: Đã làm hỏng đồ của người khác thì không xin lỗi là không xong. (dùng ずにはすまない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 人の物を壊したのだから、謝らずにはすまない。
+        - 人のものを壊したのだから、謝らずにはすまない。
+        - 他人の物を壊したのだから、謝らずにはすまない。
+        - 人の物を壊したのだから、謝らずには済まない。
+        - 人の物を壊した以上、謝らずにはすまない。
+        - 人の物を壊した以上、謝らずには済まない。
+        - 人の物を壊したら、謝らずにはすまない。
+        - 人の物を壊したのだから、謝らずにはすまないだろう。
+        - 人の物を壊したのだから、謝罪せずにはすまない。
+        - 他人のものを壊したのだから、謝らずにはすまない。
+        - 人の物を壊したんだから、謝らずにはすまない。
+    known_wrong:
+      - answer: 人の物を壊したのだから、謝らずにはいられない。
+        feedback_vi: ずにはいられない là cảm xúc không kìm được; "lẽ thường buộc phải làm" là ずにはすまない.
+        error_tag: sumanai_irarenai
+      - answer: 人の物を壊したのだから、謝らないずにはすまない。
+        feedback_vi: Bỏ ない rồi mới thêm ず - 謝らずに.
+        error_tag: zu_form
+    explanation:
+      vi: 人の物を壊したのだから - vì đã làm hỏng đồ người khác; 謝らずにはすまない - không xin lỗi thì không xong.
+    display_answer: 人の物を壊したのだから、謝らずにはすまない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u6-zuniwa-okanai-translate-shougen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gram-zuni-okanai
+    prompt:
+      source_text: 被害者の証言は、聞く者の胸を打たずにはおかない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lời kể của nạn nhân chắc chắn sẽ làm lay động lòng người nghe.
+        - Lời khai của nạn nhân chắc chắn sẽ làm xúc động người nghe.
+        - Lời kể của nạn nhân không thể không làm người nghe xúc động.
+        - Lời khai của nạn nhân chắc chắn khiến người nghe xúc động.
+        - Lời chứng của nạn nhân chắc chắn sẽ lay động người nghe.
+        - Lời kể của nạn nhân nhất định sẽ khiến người nghe xúc động.
+        - Lời khai của nạn nhân không thể không lay động lòng người nghe.
+        - Lời kể của các nạn nhân chắc chắn sẽ làm người nghe xúc động.
+        - Lời khai của nạn nhân chắc chắn làm rung động lòng người nghe.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người nghe không thể kìm được việc làm chứng cho nạn nhân.
+        feedback_vi: Chủ ngữ là 証言 (lời khai) - nó chắc chắn tác động lên người nghe; 胸を打つ là làm xúc động.
+        error_tag: okanai_subject
+    explanation:
+      vi: 被害者の証言 - lời khai của nạn nhân; 聞く者の胸を打つ - làm xúc động người nghe; ずにはおかない - chắc chắn sẽ.
+    display_answer: Lời kể của nạn nhân chắc chắn sẽ làm lay động lòng người nghe.
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-mcq-song
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zu-ni-irarenai
+    prompt:
+      stem: Bạn kể với bạn bè "Mỗi lần nghe bài hát này, tôi không kìm được nước mắt." Câu nào đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: m6i, text: この歌を聞くたびに、泣かずにはいられない。, lang: ja }
+        - { id: n1j, text: この歌を聞くたびに、泣かずにはおかない。, lang: ja }
+        - { id: o5k, text: この歌を聞くたびに、泣くを余儀なくされる。, lang: ja }
+        - { id: p9l, text: この歌を聞くたびに、泣かざるにはいられない。, lang: ja }
+    answer:
+      correct_option_id: m6i
+    explanation:
+      vi: Cảm xúc của chính mình không kìm được → ずにはいられない (N2). ずにはおかない dùng cho tác động lên người khác; 余儀なくされる cần danh từ; 泣かざるにはいられない sai dạng.
+    display_answer: この歌を聞くたびに、泣かずにはいられない。
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-mcq-news
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u6-gram-yogi-naku
+    prompt:
+      stem: Bạn viết tin ngắn "Do thiếu nhân lực, nhà hàng đó buộc phải rút ngắn giờ mở cửa." Câu nào đúng văn phong tin tức?
+      stem_lang: vi
+      options:
+        - { id: q4m, text: 人手不足のため、その店は営業時間の短縮を余儀なくされた。, lang: ja }
+        - { id: r8n, text: 人手不足のため、その店は営業時間の短縮を余儀なくさせた。, lang: ja }
+        - { id: s3o, text: 人手不足のため、その店は営業時間の短縮せずにはおかなかった。, lang: ja }
+        - { id: t7p, text: 人手不足のため、その店は営業時間を短縮を余儀なくされた。, lang: ja }
+    answer:
+      correct_option_id: q4m
+    explanation:
+      vi: Nguyên nhân khách quan + 短縮を余儀なくされた (bị buộc rút ngắn). させた cần nguyên nhân làm chủ ngữ; 短縮せずには thiếu を và sai nghĩa; 営業時間を短縮を có hai を liên tiếp.
+    display_answer: 人手不足のため、その店は営業時間の短縮を余儀なくされた。
+
+  - key: ja:exercise:n1-u6-zuniwa-okanai-wb-policy
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u6-gram-zuni-okanai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Chính sách bất công như thế chắc chắn sẽ vấp phải sự phản đối của người dân.\""
+      tokens:
+        - { id: t3, text: 招かずにはおかない }
+        - { id: t1, text: こんな不公平な政策は }
+        - { id: t4, text: 招くずにはおかない }
+        - { id: t2, text: 国民の反発を }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: 反発を招く - gây ra phản đối; 招かずにはおかない - chắc chắn sẽ gây ra. 招くずに sai vì phải bỏ ない từ 招かない → 招かず.
+    display_answer: こんな不公平な政策は国民の反発を招かずにはおかない。

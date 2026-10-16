@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-emphasis-inevitability-review
+order_index: 5
+level: n1
+title:
+  vi: "Ôn tập: đọc phóng sự thể thao - kỳ tích, lội ngược dòng và sự khiêm tốn"
+objectives:
+  - vi: Đọc hiểu một bài phóng sự thể thao dùng các mẫu nhấn mạnh, tất yếu và trái dự đoán của unit.
+  - vi: Chọn đúng mẫu giữa すら / たりとも, ならでは / にして, ずにはおかない / を余儀なくされる, んばかり / とばかりに / と思いきや.
+  - vi: Dùng 快挙, 逆転, 謙虚 khi viết về thành tích.
+estimated_minutes: 25
+skills: [reading, writing, grammar, vocabulary]
+prerequisites: [ja:lesson:n1-u6-nbakari-omoikiya]
+items:
+  - item: ja:item:n1-u6-kaikyo
+  - item: ja:item:n1-u6-gyakuten
+  - item: ja:item:n1-u6-kenkyo
+  - item: ja:item:n1-u6-gram-taritomo
+    role: reuse
+  - item: ja:item:n1-u6-gram-dani
+    role: reuse
+  - item: ja:item:n1-u6-gram-naradeha
+    role: reuse
+  - item: ja:item:n1-u6-gram-zuni-okanai
+    role: reuse
+  - item: ja:item:n1-u6-gram-yogi-naku
+    role: reuse
+  - item: ja:item:n1-u6-gram-to-omoikiya
+    role: reuse
+  - item: ja:item:n1-u6-gram-tobakari
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc trọn một bài phóng sự kiểu báo Nhật về một đội bóng nhỏ lập kỳ tích, nắm được giọng văn nhấn mạnh và tự viết vài câu tường thuật tương tự.
+  - type: explain
+    text:
+      vi: 'Phóng sự thể thao Nhật hay theo khung: bối cảnh (無名, 初出場) → diễn biến kịch tính (と思いきや, 逆転) → cảm xúc (割れんばかりの歓声, とばかりに) → lời nhân vật thể hiện sự khiêm tốn (謙虚). Nhận ra khung này giúp bạn đoán ý đoạn văn nhanh hơn.'
+  - type: explain
+    text:
+      vi: 'Ôn lại cách chọn: "dù chỉ một" → たりとも; "chỉ nghĩ thôi đã" → だに; "chỉ ... mới có" → ならでは; "mới ... tuổi mà đã" → にして; tác động tất yếu → ずにはおかない; bị hoàn cảnh ép → を余儀なくされる.'
+  - type: deep_explain
+    text:
+      vi: 'Văn báo Nhật đề cao sự khiêm tốn của người chiến thắng - lời phát biểu thường là 「皆さんのおかげです」, 「まだまだです」. Người Việt đọc dễ tưởng là khách sáo, nhưng đó là chuẩn mực 謙虚 được xã hội đánh giá cao; tự khen mình thẳng thừng dễ bị coi là kiêu ngạo. 快挙 là từ báo chí dùng khi thành tích khiến nhiều người vui mừng, khác 偉業 (sự nghiệp vĩ đại).'
+  - type: example
+    target: 地方の小さな高校が、全国大会初優勝という快挙を成し遂げた。
+    target_lang: ja
+    translation:
+      vi: Một trường cấp ba nhỏ ở địa phương đã lập kỳ tích lần đầu vô địch toàn quốc.
+    note:
+      vi: 快挙を成し遂げる - lập kỳ tích.
+  - type: example
+    target: 前半で二点を奪われ、敗北は避けられないと思いきや、後半に見事な逆転劇を見せた。
+    target_lang: ja
+    translation:
+      vi: Bị dẫn hai bàn ở hiệp một, tưởng thất bại là không tránh khỏi, ai ngờ đội đã lội ngược dòng ngoạn mục ở hiệp hai.
+  - type: example
+    target: 監督によると、選手たちは一日たりとも練習を欠かさなかったという。
+    target_lang: ja
+    translation:
+      vi: Theo huấn luyện viên, các cầu thủ không bỏ buổi tập nào dù chỉ một ngày.
+  - type: example
+    target: 主将は優勝後も「周りの支えがあったからです」と謙虚に語った。
+    target_lang: ja
+    translation:
+      vi: Sau chức vô địch, đội trưởng vẫn khiêm tốn nói "Đó là nhờ sự hỗ trợ của mọi người".
+    note:
+      vi: 謙虚に語る - nói một cách khiêm tốn.
+  - type: common_mistake
+    wrong: チームは最後の一分で逆点勝ちした。
+    right: チームは最後の一分で逆転勝ちした。
+    target_lang: ja
+    note:
+      vi: Lội ngược dòng là 逆転 (nghịch chuyển); 逆点 là lỗi chữ Hán rất hay gặp vì nghĩ đến "điểm số".
+  - type: common_mistake
+    wrong: 優勝しても、彼女は謙虚の態度を崩さなかった。
+    right: 優勝しても、彼女は謙虚な態度を崩さなかった。
+    target_lang: ja
+    note:
+      vi: 謙虚 là tính từ な - nối với danh từ bằng な.
+  - type: summary
+    points:
+      - vi: Khung phóng sự - bối cảnh → と思いきや / 逆転 → cảm xúc (んばかり, とばかりに) → lời 謙虚.
+      - vi: 快挙 - kỳ tích, thành tích vẻ vang; 快挙を成し遂げる.
+      - vi: 逆転 - lội ngược dòng; 逆転勝ち - thắng ngược.
+      - vi: 謙虚 (な) - khiêm tốn.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u6-review-mcq-kaikyo
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u6-kaikyo
+    prompt:
+      stem: Trong tiêu đề báo 「新人選手、デビュー戦で快挙」, từ 「快挙」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a5g, text: "kỳ tích, thành tích vẻ vang", lang: vi }
+        - { id: b9h, text: vụ bê bối, lang: vi }
+        - { id: c4i, text: thất bại nặng nề, lang: vi }
+        - { id: d8j, text: chấn thương nghiêm trọng, lang: vi }
+    answer:
+      correct_option_id: a5g
+    explanation:
+      vi: 快挙 - thành tích làm mọi người vui mừng (Hán Việt "khoái cử"). Bê bối là 不祥事, thất bại nặng là 大敗.
+    display_answer: kỳ tích, thành tích vẻ vang
+
+  - key: ja:exercise:n1-u6-review-listen-gyakuten
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u6-gyakuten
+    prompt:
+      audio_asset_id: null
+      fallback_text: 九回裏に三点を奪い、チームは見事な逆転勝ちを収めた。
+      options:
+        - { id: e3k, text: "Ghi ba điểm ở cuối hiệp chín, đội đã thắng ngược ngoạn mục.", lang: vi }
+        - { id: f7l, text: Ghi ba điểm ở cuối hiệp chín nhưng đội vẫn thua ngược., lang: vi }
+        - { id: g2m, text: Đội dẫn trước từ đầu đến cuối và thắng ba điểm., lang: vi }
+        - { id: h6n, text: "Bị mất ba điểm ở hiệp chín, đội đã thua.", lang: vi }
+    answer:
+      correct_option_id: e3k
+    explanation:
+      vi: 三点を奪い - giành ba điểm; 逆転勝ちを収めた - giành chiến thắng ngược dòng. Thua ngược là 逆転負け.
+    display_answer: Ghi ba điểm ở cuối hiệp chín, đội đã thắng ngược ngoạn mục.
+
+  - key: ja:exercise:n1-u6-review-mcq-kenkyo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-kenkyo
+    prompt:
+      stem: 'Chọn từ đúng: 彼は金メダルを取っても、＿＿態度を崩さなかった。'
+      stem_lang: vi
+      options:
+        - { id: i1o, text: 謙虚な, lang: ja }
+        - { id: j5p, text: 謙虚の, lang: ja }
+        - { id: k9q, text: 謙虚い, lang: ja }
+        - { id: l4r, text: 謙虚だ, lang: ja }
+    answer:
+      correct_option_id: i1o
+    explanation:
+      vi: 謙虚 là tính từ な - 謙虚な態度 (thái độ khiêm tốn). の, い, だ đều không nối được với danh từ ở đây.
+    display_answer: 謙虚な
+
+  - key: ja:exercise:n1-u6-review-fill-yuuki
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-zuni-okanai
+    prompt:
+      template: "最後まであきらめないこのチームの姿は、被災地の人々を勇気づけ{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Hình ảnh đội bóng không bỏ cuộc đến phút cuối chắc chắn sẽ tiếp thêm dũng khí cho người dân vùng thiên tai."
+        - "Gợi ý: chủ ngữ là \"hình ảnh của đội\" - tác động tất yếu lên người khác."
+    answer:
+      blanks:
+        b1: [ずにはおかない]
+    known_wrong:
+      - answer: ずにはいられない
+        feedback_vi: ずにはいられない là cảm xúc tự mình không kìm được; hình ảnh tác động lên người khác dùng ずにはおかない.
+        error_tag: okanai_irarenai
+      - answer: ざるを得ない
+        feedback_vi: ざるを得ない là "đành phải" - không hợp với chủ ngữ là hình ảnh của đội.
+        error_tag: okanai_zaru
+    explanation:
+      vi: 勇気づける → 勇気づけずにはおかない - chắc chắn sẽ tiếp thêm dũng khí.
+    display_answer: 最後まであきらめないこのチームの姿は、被災地の人々を勇気づけずにはおかない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u6-review-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u6-gyakuten
+    prompt:
+      template: "Thắng ngược - {{b1}}勝ち. Thái độ khiêm tốn - {{b2}}な態度. Lập kỳ tích - {{b3}}を成し遂げる."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [逆転, ぎゃくてん]
+        b2: [謙虚, けんきょ]
+        b3: [快挙, かいきょ]
+    known_wrong:
+      - answer: 逆点
+        feedback_vi: Lội ngược dòng viết 逆転 (転 - xoay chuyển), không phải 逆点.
+        error_tag: kanji
+      - answer: 遠慮
+        feedback_vi: 遠慮 là hành vi nhường nhịn, ngại ngùng; phẩm chất khiêm tốn là 謙虚.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 逆転勝ち - thắng ngược; 謙虚な態度 - thái độ khiêm tốn; 快挙を成し遂げる - lập kỳ tích.
+    display_answer: 逆転勝ち / 謙虚な態度 / 快挙を成し遂げる
+
+  - key: ja:exercise:n1-u6-review-translate-lastminute
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gyakuten
+    prompt:
+      source_text: Đội đã lội ngược dòng giành chiến thắng ở phút cuối cùng. (phút cuối = 最後の一分)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - チームは最後の一分で逆転勝ちした。
+        - チームは最後の1分で逆転勝ちした。
+        - チームは最後の一分で逆転勝ちしました。
+        - チームは最後の1分で逆転勝ちしました。
+        - チームは最後の一分で逆転して勝った。
+        - チームは最後の1分で逆転して勝った。
+        - チームは最後の一分で逆転勝利した。
+        - チームは最後の一分で逆転勝ちを収めた。
+        - 最後の一分でチームは逆転勝ちした。
+        - チームは最後の一分に逆転勝ちした。
+    known_wrong:
+      - answer: チームは最後の一分で逆転負けした。
+        feedback_vi: 逆転負け là thua ngược - ngược nghĩa.
+        error_tag: vocab_meaning
+      - answer: チームは最後の一分で逆点勝ちした。
+        feedback_vi: Chữ đúng là 逆転.
+        error_tag: kanji
+    explanation:
+      vi: 最後の一分で - ở phút cuối; 逆転勝ちした - đã thắng ngược.
+    display_answer: チームは最後の一分で逆転勝ちした。
+
+  - key: ja:exercise:n1-u6-review-translate-practice
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-taritomo
+    prompt:
+      source_text: Các cầu thủ không nghỉ tập dù chỉ một ngày. (dùng たりとも)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 選手たちは一日たりとも練習を休まなかった。
+        - 選手たちは一日たりとも練習を休みませんでした。
+        - 選手たちは一日たりとも練習を欠かさなかった。
+        - 選手たちは一日たりとも練習を欠かしませんでした。
+        - 選手は一日たりとも練習を休まなかった。
+        - 選手は一日たりとも練習を欠かさなかった。
+        - 選手たちは練習を一日たりとも休まなかった。
+        - 選手たちは練習を一日たりとも欠かさなかった。
+        - 選手たちは一日たりとも練習を休まない。
+        - 選手たちは一日たりとも練習を休まなかったです。
+    known_wrong:
+      - answer: 選手たちは一日たりとも練習を休んだ。
+        feedback_vi: たりとも luôn đi với phủ định - 休まなかった.
+        error_tag: taritomo_negative
+      - answer: 選手たちは二日たりとも練習を休まなかった。
+        feedback_vi: たりとも đi với 一 + lượng từ - 一日たりとも.
+        error_tag: taritomo
+    explanation:
+      vi: 一日たりとも + 休まなかった - không nghỉ dù chỉ một ngày. 欠かさなかった (không bỏ sót) cũng tự nhiên.
+    display_answer: 選手たちは一日たりとも練習を休まなかった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u6-review-translate-dream
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u6-gram-dani
+    prompt:
+      source_text: 初出場のチームが優勝候補を破るとは、誰も夢にだに思わなかった。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không ai nằm mơ cũng nghĩ tới việc một đội lần đầu tham dự lại đánh bại ứng viên vô địch.
+        - Không ai dù trong mơ nghĩ rằng đội lần đầu tham dự lại đánh bại ứng viên vô địch.
+        - Ngay cả trong mơ cũng không ai nghĩ đội lần đầu góp mặt lại đánh bại ứng cử viên vô địch.
+        - Đội lần đầu tham dự đánh bại ứng viên vô địch, điều đó không ai dám mơ tới.
+        - Không ai ngờ, dù chỉ trong mơ, rằng đội lần đầu tham dự lại thắng ứng viên vô địch.
+        - Không ai nằm mơ cũng nghĩ rằng đội lần đầu tham gia lại đánh bại ứng cử viên vô địch.
+        - Không ai dám mơ rằng một đội lần đầu tham dự lại đánh bại ứng viên vô địch.
+        - Chẳng ai nằm mơ cũng nghĩ tới chuyện đội lần đầu dự giải lại đánh bại ứng viên vô địch.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ai cũng nghĩ đội lần đầu tham dự sẽ đánh bại ứng viên vô địch.
+        feedback_vi: 夢にだに思わなかった - nằm mơ cũng không nghĩ tới; câu gốc là phủ định hoàn toàn.
+        error_tag: dani_meaning
+    explanation:
+      vi: 初出場のチーム - đội lần đầu tham dự; 優勝候補を破る - đánh bại ứng viên vô địch; 夢にだに思わなかった - nằm mơ cũng không nghĩ tới.
+    display_answer: Không ai nằm mơ cũng nghĩ tới việc một đội lần đầu tham dự lại đánh bại ứng viên vô địch.
+
+  - key: ja:exercise:n1-u6-review-mcq-headline
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-yogi-naku
+    prompt:
+      stem: Bạn viết tin "Sân vận động bị hư hại do động đất nên giải đấu buộc phải hoãn." Câu nào đúng văn phong tin tức?
+      stem_lang: vi
+      options:
+        - { id: m1s, text: 地震で競技場が被害を受け、大会は延期を余儀なくされた。, lang: ja }
+        - { id: n5t, text: 地震で競技場が被害を受け、大会は延期を余儀なくさせた。, lang: ja }
+        - { id: o9u, text: 地震で競技場が被害を受け、大会は延期せずにはおかなかった。, lang: ja }
+        - { id: p3v, text: 地震で競技場が被害を受け、大会は延期ならではだった。, lang: ja }
+    answer:
+      correct_option_id: m1s
+    explanation:
+      vi: Giải đấu là thứ bị hoàn cảnh ép → 延期を余儀なくされた. させた cần nguyên nhân làm chủ ngữ; ずにはおかない là "chắc chắn sẽ / nhất định"; ならでは là lời khen "chỉ có ở".
+    display_answer: 地震で競技場が被害を受け、大会は延期を余儀なくされた。
+
+  - key: ja:exercise:n1-u6-review-wb-town
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u6-gram-naradeha
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đây là kỳ tích mà chỉ đội bóng được cả thị trấn ủng hộ mới làm được.\""
+      tokens:
+        - { id: t3, text: ならではの快挙だ }
+        - { id: t1, text: これは }
+        - { id: t4, text: にしての快挙だ }
+        - { id: t2, text: 町全体に支えられたチーム }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: N ならではの快挙 - kỳ tích chỉ N mới làm được. にしての không tồn tại.
+    display_answer: これは町全体に支えられたチームならではの快挙だ。
+
+  - key: ja:exercise:n1-u6-review-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u6-gram-to-omoikiya
+    prompt:
+      stem: 'Đọc đoạn văn rồi chọn câu đúng với nội dung: 「優勝は確実だと思いきや、決勝では思わぬミスが続き、チームは準優勝に終わった。それでも観客は総立ちで、惜しみない拍手を送った。」'
+      stem_lang: vi
+      options:
+        - { id: q7w, text: Đội được kỳ vọng chắc chắn vô địch nhưng chỉ về nhì; khán giả vẫn đứng dậy vỗ tay., lang: vi }
+        - { id: r2x, text: Đội vô địch đúng như mọi người dự đoán., lang: vi }
+        - { id: s6y, text: Khán giả la ó vì đội mắc lỗi liên tiếp., lang: vi }
+        - { id: t1z, text: Đội bị loại trước khi vào trận chung kết., lang: vi }
+    answer:
+      correct_option_id: q7w
+    explanation:
+      vi: と思いきや báo hiệu kết quả trái dự đoán - 準優勝に終わった (chỉ về nhì). 総立ちで惜しみない拍手 - đứng cả dậy vỗ tay nhiệt liệt, không phải la ó.
+    display_answer: Đội được kỳ vọng chắc chắn vô địch nhưng chỉ về nhì; khán giả vẫn đứng dậy vỗ tay.
+
+  - key: ja:exercise:n1-u6-review-wb-trophy
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u6-gram-tobakari
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đội trưởng giơ cao chiếc cúp như muốn nói 'đây là chiến thắng của mọi người'.\""
+      tokens:
+        - { id: t3, text: トロフィーを高く掲げた }
+        - { id: t4, text: 「みんなの勝利だ」んばかりに }
+        - { id: t1, text: 主将は }
+        - { id: t2, text: 「みんなの勝利だ」とばかりに }
+    answer:
+      orders:
+        - [t1, t2, t3]
+        - [t2, t1, t3]
+    explanation:
+      vi: Lời trích dẫn + とばかりに - như muốn nói. んばかり không đứng sau lời trích dẫn.
+    display_answer: 主将は「みんなの勝利だ」とばかりにトロフィーを高く掲げた。

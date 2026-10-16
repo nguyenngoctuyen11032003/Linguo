@@ -1,0 +1,443 @@
+# Học liệu unit "Nhấn mạnh, tất yếu và ngoài dự đoán" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～すら / ～だに / ～たりとも =================
+  - key: ja:item:n1-u6-gram-sura
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + (で)すら
+      romanization: sura
+      pos: nhấn mạnh "ngay cả"
+    back:
+      meaning:
+        vi: '"Ngay cả..., đến cả..." - nêu một ví dụ cực đoan để ngầm nói "huống chi những thứ khác". Văn viết, cứng hơn さえ: 専門家ですら分からない (đến chuyên gia còn không biết).'
+      examples:
+        - target: 忙しくて、食事をする時間すらない。
+          translation:
+            vi: Bận đến mức thời gian ăn cơm cũng không có.
+      pronunciation_note:
+        vi: すら đọc "su-ra", す gần như câm nguyên âm u.
+      confusion:
+        vi: すら gần nghĩa さえ, nhưng さえ còn có mẫu điều kiện さえ～ば (chỉ cần...), còn すら thì không. Chủ ngữ là người thường thêm で - 子どもですら.
+
+  - key: ja:item:n1-u6-gram-dani
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V-る / N + だに
+      romanization: dani
+      pos: chỉ cần... thôi đã
+    back:
+      meaning:
+        vi: '(1) V-る + だに - "chỉ cần (nghĩ, nghe, tưởng tượng) thôi đã...": 想像するだに恐ろしい. (2) N + だに + phủ định - "đến cả... cũng không": 夢にだに思わなかった, 微動だにしない.'
+      examples:
+        - target: 事故の場面は、思い出すだにつらい。
+          translation:
+            vi: Cảnh tai nạn ấy, chỉ nhớ lại thôi đã thấy đau lòng.
+      pronunciation_note:
+        vi: だに đọc "da-ni", だ là âm "d" nhẹ, không phải "đ" tiếng Việt.
+      confusion:
+        vi: だに chỉ đi với rất ít động từ - 考える, 想像する, 聞く, 思い出す - và vế sau là cảm xúc (恐ろしい, つらい). Không nói ×行くだに疲れる.
+
+  - key: ja:item:n1-u6-gram-taritomo
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: 一 + lượng từ + たりとも + phủ định
+      romanization: taritomo
+      pos: dù chỉ một
+    back:
+      meaning:
+        vi: '"Dù chỉ một... cũng không..." - phủ định tuyệt đối với đơn vị nhỏ nhất: 一円たりとも, 一日たりとも, 一瞬たりとも, 一人たりとも.'
+      examples:
+        - target: 試合中は一瞬たりとも気を抜けない。
+          translation:
+            vi: Trong trận đấu không được lơ là dù chỉ một khoảnh khắc.
+      pronunciation_note:
+        vi: たりとも đọc liền "ta-ri-to-mo", bốn nhịp đều.
+      confusion:
+        vi: Luôn là "一 + lượng từ" và vế sau phủ định hoặc cấm đoán. Không nói ×三日たりとも休まない - ba ngày không phải đơn vị nhỏ nhất.
+
+  - key: ja:item:n1-u6-yudan
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 油断
+      reading: ゆだん
+      romanization: yudan
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự chủ quan, lơ là, mất cảnh giác; 油断する - chủ quan; 油断大敵 - chủ quan là kẻ thù lớn nhất
+      examples:
+        - target: 最後まで油断しないでください。
+          translation:
+            vi: Xin đừng chủ quan cho đến phút cuối.
+      pronunciation_note:
+        vi: Đọc "yu-dan", ゆ ngắn; だ là âm "d" nhẹ, không phải "đ" tiếng Việt.
+      confusion:
+        vi: 油断 là lơ là vì nghĩ mình an toàn; 不注意 là thiếu chú ý nói chung. Hán Việt "du đoạn" không giúp đoán nghĩa - nên học như một từ.
+
+  - key: ja:item:n1-u6-rouhi
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 浪費
+      reading: ろうひ
+      romanization: rōhi
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự lãng phí, phung phí (tiền, thời gian, năng lượng); 時間の浪費 - phí thời gian
+      examples:
+        - target: 意味のない会議は時間の浪費だ。
+          translation:
+            vi: Những cuộc họp vô nghĩa là lãng phí thời gian.
+      pronunciation_note:
+        vi: ろう là âm dài - "rô-ô-hi".
+      confusion:
+        vi: Hán Việt "lãng phí" - gần như trùng tiếng Việt. もったいない là cảm thán "tiếc quá" khi thấy phí; 浪費 là danh từ văn viết.
+
+  # ================= bài 2: ～ならでは / ～にして =================
+  - key: ja:item:n1-u6-gram-naradeha
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + ならではの + N / N + ならでは だ
+      romanization: nara dewa
+      pos: chỉ có ở
+    back:
+      meaning:
+        vi: '"Chỉ có ở..., đặc trưng riêng của..." - khen một nét mà chỉ N mới có: 京都ならではの景色, 職人ならではの技. Luôn mang nghĩa tích cực.'
+      examples:
+        - target: これは地元の人ならではのアイデアだ。
+          translation:
+            vi: Đây đúng là ý tưởng mà chỉ người bản địa mới nghĩ ra.
+      pronunciation_note:
+        vi: は trong ならでは là trợ từ nên đọc "wa" - "na-ra-de-wa".
+      confusion:
+        vi: ならでは dùng để khen; nét xấu đặc trưng không dùng (×日本ならではの満員電車 nghe mỉa mai). Khác らしい - らしい là "đúng chất", ならでは là "chỉ nơi đó/người đó mới có".
+
+  - key: ja:item:n1-u6-gram-nishite
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: N + にして (初めて) / N + にして + も
+      romanization: ni shite
+      pos: phải đến mức... mới
+    back:
+      meaning:
+        vi: '(1) N にして初めて - "phải là N (ở mức đó) mới...": プロにして初めてできる技. (2) N にして - "ở tuổi/giai đoạn N mà đã...": 十歳にして大学に合格. (3) N にしても失敗する - "đến N mà còn...".'
+      examples:
+        - target: 四十歳にして、彼は初めて海外に出た。
+          translation:
+            vi: Đến bốn mươi tuổi, lần đầu tiên anh ấy mới ra nước ngoài.
+      pronunciation_note:
+        vi: にして đọc "ni-shi-te", し rất nhẹ.
+      confusion:
+        vi: にして trong văn N1 là "tại thời điểm/ở mức N", không phải "làm N" như ～にする. 名人にしてこのミス = đến bậc thầy mà còn mắc lỗi này.
+
+  - key: ja:item:n1-u6-shinise
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 老舗
+      reading: しにせ
+      romanization: shinise
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng lâu đời, có danh tiếng truyền nhiều đời
+      examples:
+        - target: この和菓子屋は、創業三百年の老舗だ。
+          translation:
+            vi: Tiệm bánh Nhật này là cửa hàng lâu đời, mở từ ba trăm năm trước.
+      pronunciation_note:
+        vi: Cách đọc đặc biệt しにせ, không đọc theo âm Hán ろうほ.
+      confusion:
+        vi: 老舗 là cách đọc "ateji" phải học thuộc. Tiệm cũ kỹ, xuống cấp là 古い店 - 老舗 luôn là lời khen về truyền thống.
+
+  - key: ja:item:n1-u6-shokunin
+    type: vocab
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 職人
+      reading: しょくにん
+      romanization: shokunin
+      pos: danh từ
+    back:
+      meaning:
+        vi: người thợ thủ công lành nghề, nghệ nhân; 職人技 - tay nghề của nghệ nhân
+      examples:
+        - target: 祖父は六十年間、家具を作り続けた職人だ。
+          translation:
+            vi: Ông tôi là người thợ đã làm đồ gỗ suốt sáu mươi năm.
+      pronunciation_note:
+        vi: しょく là âm ghép "sho-ku", không đọc "si-yo-ku".
+      confusion:
+        vi: 職人 nhấn tay nghề tích luỹ lâu năm, gần "nghệ nhân" hơn "công nhân" (労働者). Văn hoá Nhật rất coi trọng 職人気質 - tinh thần cầu toàn của người thợ.
+
+  # ================= bài 3: ～ずにはおかない / ～ずにはすまない / ～を余儀なくされる =================
+  - key: ja:item:n1-u6-gram-zuni-okanai
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar, reading]
+    front:
+      text: V-ない(bỏ ない) + ずにはおかない
+      romanization: zu ni wa okanai
+      pos: chắc chắn gây ra
+    back:
+      meaning:
+        vi: '(1) Tác phẩm, sự việc + 感動させずにはおかない - "chắc chắn sẽ khiến (ai) phải...": 人々を感動させずにはおかない. (2) Người nói + ずにはおかない - "nhất định sẽ...": 犯人を見つけ出さずにはおかない. する → せずにはおかない.'
+      examples:
+        - target: 彼の演説は、聞く人の心を動かさずにはおかない。
+          translation:
+            vi: Bài diễn văn của ông ấy chắc chắn sẽ lay động lòng người nghe.
+      pronunciation_note:
+        vi: ずには đọc "zu-ni-wa"; は đọc "wa".
+      confusion:
+        vi: ずにはおかない là tác động mạnh, tất yếu từ bên ngoài; ずにはいられない (N2) là cảm xúc của chính mình không kìm được. Tác phẩm khiến người khác xúc động → ずにはおかない.
+
+  - key: ja:item:n1-u6-gram-zuni-sumanai
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: V-ない(bỏ ない) + ずにはすまない / V-ない + ではすまない
+      romanization: zu ni wa sumanai
+      pos: không thể không (theo lẽ thường)
+    back:
+      meaning:
+        vi: '"Không làm... thì không xong" - theo lẽ thường, quan hệ xã hội, buộc phải làm: 謝らずにはすまない (phải xin lỗi mới xong). する → せずにはすまない.'
+      examples:
+        - target: 大切な書類をなくしたのだから、部長に報告せずにはすまない。
+          translation:
+            vi: Làm mất giấy tờ quan trọng thì không báo cáo trưởng phòng là không xong.
+      pronunciation_note:
+        vi: すまない đọc "su-ma-nai" - cùng gốc với すみません (không xong, áy náy).
+      confusion:
+        vi: 'ずにはすまない gần ないわけにはいかない (N2), nhưng nhấn "chuyện không êm được nếu không làm". ～ではすまない lại là "không dừng ở mức...": 謝るだけではすまない (xin lỗi thôi thì không đủ).'
+
+  - key: ja:item:n1-u6-gram-yogi-naku
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: N + を余儀なくされる / N + を余儀なくさせる
+      reading: をよぎなくされる
+      romanization: o yogi naku sareru
+      pos: bị buộc phải
+    back:
+      meaning:
+        vi: '"Bị (hoàn cảnh) buộc phải..." - N là danh từ hành động (中止, 撤退, 変更, 入院). 台風で試合は中止を余儀なくされた. Dạng させる: 不況が工場の閉鎖を余儀なくさせた.'
+      examples:
+        - target: 大雪のため、多くの便が欠航を余儀なくされた。
+          translation:
+            vi: Vì tuyết lớn, nhiều chuyến bay buộc phải huỷ.
+      pronunciation_note:
+        vi: よぎ đọc "yo-gi", ぎ là âm đục.
+      confusion:
+        vi: Đi với danh từ, không đi với động từ - 中止を余儀なくされた, không nói ×中止することを余儀なくされた (nghe rườm). Gần ざるを得ない nhưng trang trọng, khách quan, rất hay gặp trong tin tức.
+
+  - key: ja:item:n1-u6-tettai
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 撤退
+      reading: てったい
+      romanization: tettai
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự rút lui (khỏi thị trường, chiến trường); 市場から撤退する - rút khỏi thị trường
+      examples:
+        - target: 売り上げが伸びず、その会社は海外事業から撤退した。
+          translation:
+            vi: Doanh thu không tăng nên công ty đó đã rút khỏi mảng kinh doanh ở nước ngoài.
+      pronunciation_note:
+        vi: てっ có âm ngắt - "tê-t-tai".
+      confusion:
+        vi: Hán Việt "triệt thoái". 撤退 là rút cả tổ chức; một người nghỉ việc là 退職, giải nghệ là 引退.
+
+  # ================= bài 4: ～んばかりに / ～とばかりに / ～と思いきや =================
+  - key: ja:item:n1-u6-gram-nbakari
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: V-ない(bỏ ない) + んばかりに / んばかりの + N
+      romanization: n bakari ni
+      pos: như sắp... đến nơi
+    back:
+      meaning:
+        vi: '"Như thể sắp... đến nơi" - mức độ mạnh đến gần như xảy ra thật: 泣き出さんばかりの顔 (mặt như sắp khóc), あふれんばかりの笑顔 (nụ cười như tràn ra). する → せんばかり.'
+      examples:
+        - target: 優勝が決まると、会場は割れんばかりの拍手に包まれた。
+          translation:
+            vi: Khi chức vô địch được xác định, cả hội trường vỡ oà trong tràng pháo tay như muốn nổ tung.
+      pronunciation_note:
+        vi: 'んばかり - ん dính liền với âm trước: 割れんばかり "wa-ren-ba-ka-ri".'
+      confusion:
+        vi: Dạng cổ của ない - 泣かない → 泣か + ん. Không nhầm với ～たばかり (vừa mới) hay ばかり (toàn là).
+
+  - key: ja:item:n1-u6-gram-tobakari
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar, reading]
+    front:
+      text: 「lời」/ thể thường + とばかりに
+      romanization: to bakari ni
+      pos: như muốn nói
+    back:
+      meaning:
+        vi: '"Như muốn nói rằng..." - tả cử chỉ, thái độ thể hiện một ý mà không nói ra: 「早く帰れ」とばかりに時計を見る. Người nói quan sát người khác, không dùng cho chính mình.'
+      examples:
+        - target: 犬は「散歩に行こう」とばかりに、リードをくわえて来た。
+          translation:
+            vi: Con chó ngậm dây xích chạy tới như muốn nói "đi dạo thôi".
+      pronunciation_note:
+        vi: と đọc ngắn, nối liền "to-ba-ka-ri-ni".
+      confusion:
+        vi: とばかりに tả hành động của người/vật khác; với chính mình không dùng vì mình biết rõ ý mình. んばかり là mức độ "sắp xảy ra", とばかり là "ý ngầm trong cử chỉ".
+
+  - key: ja:item:n1-u6-gram-to-omoikiya
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: Thể thường + と思いきや
+      reading: とおもいきや
+      romanization: to omoikiya
+      pos: tưởng là... ai ngờ
+    back:
+      meaning:
+        vi: '"Cứ tưởng là..., ai ngờ..." - dự đoán của người nói bị đảo ngược: 晴れると思いきや、急に雨が降り出した.'
+      examples:
+        - target: 簡単な試験だと思いきや、最後の問題が全く解けなかった。
+          translation:
+            vi: Cứ tưởng là bài thi dễ, ai ngờ câu cuối tôi không giải được chút nào.
+      pronunciation_note:
+        vi: きや đọc "ki-ya", hai âm tách rõ, không đọc thành "kya".
+      confusion:
+        vi: と思いきや chỉ kể chuyện đã xảy ra, vế sau là sự thật ngược kỳ vọng. Văn viết, tiểu luận; hội thoại tự nhiên hơn là と思ったら.
+
+  - key: ja:item:n1-u6-hakushu
+    type: vocab
+    level: n1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 拍手
+      reading: はくしゅ
+      romanization: hakushu
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: tiếng vỗ tay, sự vỗ tay; 拍手を送る - dành tràng pháo tay
+      examples:
+        - target: 演奏が終わると、観客から大きな拍手が起こった。
+          translation:
+            vi: Khi buổi biểu diễn kết thúc, khán giả vỗ tay vang dội.
+      pronunciation_note:
+        vi: しゅ là âm ghép "shu", ngắn.
+      confusion:
+        vi: Hán Việt "phách thủ". Tiếng Việt nói "vỗ tay", tiếng Nhật dùng danh từ + する hoặc 拍手が起こる (tiếng vỗ tay nổi lên).
+
+  # ================= bài 5: ôn tập =================
+  - key: ja:item:n1-u6-kaikyo
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 快挙
+      reading: かいきょ
+      romanization: kaikyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành tích vẻ vang, chiến công đáng hoan nghênh; 快挙を成し遂げる - lập nên kỳ tích
+      examples:
+        - target: 無名の新人が初出場で優勝するという快挙を成し遂げた。
+          translation:
+            vi: Một tân binh vô danh đã lập kỳ tích vô địch ngay lần đầu tham gia.
+      pronunciation_note:
+        vi: かい đọc "kai"; きょ là âm ghép "kyo", ngắn.
+      confusion:
+        vi: 快挙 là thành tích gây vui mừng cho mọi người (báo chí hay dùng); 偉業 là sự nghiệp vĩ đại, quy mô lớn hơn.
+
+  - key: ja:item:n1-u6-gyakuten
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 逆転
+      reading: ぎゃくてん
+      romanization: gyakuten
+      pos: danh từ / する
+    back:
+      meaning:
+        vi: sự lội ngược dòng, đảo ngược tình thế; 逆転勝ち - thắng ngược
+      examples:
+        - target: 最後の五分で逆転し、チームは決勝に進んだ。
+          translation:
+            vi: Lội ngược dòng trong năm phút cuối, đội đã vào chung kết.
+      pronunciation_note:
+        vi: ぎゃく là âm ghép đục "gya-ku".
+      confusion:
+        vi: Hán Việt "nghịch chuyển". Không chỉ trong thể thao - 立場が逆転する là vị trí hai bên đổi ngược cho nhau.
+
+  - key: ja:item:n1-u6-kenkyo
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 謙虚
+      reading: けんきょ
+      romanization: kenkyo
+      pos: tính từ な
+    back:
+      meaning:
+        vi: khiêm tốn, nhún nhường; 謙虚な態度 - thái độ khiêm tốn
+      examples:
+        - target: 彼女は大きな賞を取っても、謙虚な姿勢を崩さない。
+          translation:
+            vi: Dù giành giải lớn, cô ấy vẫn giữ thái độ khiêm tốn.
+      pronunciation_note:
+        vi: けん có ん cuối; きょ ngắn - "ken-kyo".
+      confusion:
+        vi: Hán Việt "khiêm hư". 謙虚 là phẩm chất; 遠慮 là hành vi nhường nhịn, ngại ngùng trong một tình huống.
