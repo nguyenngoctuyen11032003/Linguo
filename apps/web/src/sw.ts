@@ -6,8 +6,9 @@
 // - Navigations: precached index.html (SPA fallback inside the scope, works offline).
 // - Content images/audio: CacheFirst, 7 days, 200 entries.
 // - Recorded listening clips (public `content-audio` bucket): CacheFirst in their own cache, 30 days, 80 entries.
-// - Web fonts (Google Fonts, Pretendard on jsDelivr): stylesheets StaleWhileRevalidate, font files CacheFirst for a
-//   year (their URLs are versioned), so repeat visits and offline launches render with the real fonts at once.
+// - Web fonts: self-hosted /fonts/*.woff2 and Pretendard on jsDelivr. Font files CacheFirst for a year, the Pretendard
+//   stylesheet StaleWhileRevalidate, so repeat visits and offline launches render with the real fonts at once.
+//   (public/fonts is excluded from the precache: unicode-range subsets are cached the first time they are used.)
 // - Supabase REST/RPC/Auth/Functions: never handled here (personal data goes straight to the network).
 // - Updates: a new worker waits until the app posts SW_MESSAGE_SKIP_WAITING (the "Tải lại" button).
 // - Push: shows the notification; a click focuses/opens the app and posts SW_NOTIFICATION_CLICKED. An open window is
@@ -81,12 +82,12 @@ registerRoute(
   }),
 );
 
-const FONT_CSS_HOSTS = new Set(['fonts.googleapis.com', 'cdn.jsdelivr.net']);
-const FONT_FILE_HOSTS = new Set(['fonts.gstatic.com', 'cdn.jsdelivr.net']);
+const FONT_CSS_HOSTS = new Set(['cdn.jsdelivr.net']);
+const FONT_FILE_HOSTS = new Set(['cdn.jsdelivr.net']);
 const FONT_FILE = /.(?:woff2?|ttf|otf)$/i;
 const YEAR_SECONDS = 365 * 24 * 60 * 60;
 
-// Font stylesheets: opaque (no-cors) responses from <link rel="stylesheet">, hence status 0 is cacheable.
+// Pretendard stylesheet: opaque (no-cors) responses from <link rel="stylesheet">, hence status 0 is cacheable.
 registerRoute(
   ({ request, url }) => request.method === 'GET' && request.destination === 'style' && FONT_CSS_HOSTS.has(url.hostname),
   new StaleWhileRevalidate({
@@ -98,11 +99,11 @@ registerRoute(
   }),
 );
 
-// Font files (CORS): Google Fonts serves unicode-range subsets, Pretendard ~90 Korean subsets.
+// Font files: same-origin /fonts subsets (self-hosted) and Pretendard's ~90 Korean subsets from jsDelivr (CORS).
 registerRoute(
   ({ request, url }) =>
     request.method === 'GET' &&
-    FONT_FILE_HOSTS.has(url.hostname) &&
+    (FONT_FILE_HOSTS.has(url.hostname) || url.origin === self.location.origin) &&
     (request.destination === 'font' || FONT_FILE.test(url.pathname)),
   new CacheFirst({
     cacheName: 'linguo-fonts',

@@ -19,12 +19,13 @@
     <link rel="icon" href="%BASE_URL%brand/logo-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="%BASE_URL%icons/apple-touch-icon.png" />
     <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap"
-    />
+    <!-- Self-hosted fonts (public/fonts, @font-face in src/design/fonts.css): only the files every first screen needs are
+         preloaded (Vietnamese UI = latin + vietnamese subsets). The rest load on demand through unicode-range. -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="%BASE_URL%fonts/be-vietnam-pro-400-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="%BASE_URL%fonts/be-vietnam-pro-400-vietnamese.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="%BASE_URL%fonts/be-vietnam-pro-700-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="%BASE_URL%fonts/barlow-condensed-800-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="%BASE_URL%fonts/barlow-condensed-800-vietnamese.woff2" />
     <!-- Boot splash + loader styles: a render-blocking file because the CSP allows no inline style element. -->
     <link rel="stylesheet" href="/src/components/feedback/feedback.css" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />

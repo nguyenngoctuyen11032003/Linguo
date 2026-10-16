@@ -4,9 +4,7 @@
 import { createHash } from 'node:crypto';
 import type { Plugin } from 'vite';
 
-const GOOGLE_FONTS_CSS = 'https://fonts.googleapis.com';
-const GOOGLE_FONTS_FILES = 'https://fonts.gstatic.com';
-/** Pretendard (Korean) stylesheet and its woff2 subsets. */
+/** Pretendard (Korean) stylesheet and its woff2 subsets (the other fonts are self-hosted in public/fonts). */
 const JSDELIVR = 'https://cdn.jsdelivr.net';
 
 export interface CspOptions {
@@ -36,8 +34,8 @@ export function buildCsp(o: CspOptions = {}): string {
   const directives: [string, string[]][] = [
     ['default-src', ["'self'"]],
     ['script-src', uniq(["'self'", ...(o.scriptHashes ?? []).map((h) => `'${h}'`)])],
-    ['style-src', ["'self'", GOOGLE_FONTS_CSS, JSDELIVR]],
-    ['font-src', ["'self'", GOOGLE_FONTS_FILES, JSDELIVR]],
+    ['style-src', ["'self'", JSDELIVR]],
+    ['font-src', ["'self'", JSDELIVR]],
     ['img-src', ["'self'"]],
     // blob: lets the speaking practice replay a recording held in memory (never uploaded; see features/speaking),
     // and plays recorded listening clips that features/audio downloads from the Supabase `content-audio` bucket.
