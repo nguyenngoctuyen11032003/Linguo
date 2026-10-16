@@ -355,7 +355,7 @@ export function ReviewPage() {
         className={cn(
           flipped &&
             // Floats just above the bottom dock (4rem tall + its max(0.75rem, inset) bottom gap); opaque so nothing shows through.
-            'sticky bottom-[calc(4.5rem+max(0.75rem,env(safe-area-inset-bottom,0px)))] z-10 -mx-2 rounded-[1.75rem] border border-border bg-surface-solid px-2.5 pb-2.5 pt-3 shadow-[var(--shadow-dock)] lg:bottom-4',
+            'dock-sticky sticky bottom-[calc(4.5rem+max(0.75rem,env(safe-area-inset-bottom,0px)))] z-10 -mx-2 rounded-[1.75rem] border border-border bg-surface-solid px-2.5 pb-2.5 pt-3 shadow-[var(--shadow-dock)] lg:bottom-4',
         )}
       >
         <RatingBar

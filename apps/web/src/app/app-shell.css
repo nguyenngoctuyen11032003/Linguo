@@ -572,6 +572,10 @@
   .sb-link:hover .sb-link__icon {
     transform: translateX(2px);
   }
+  /* Collapsed rail: the icon is the whole link, so the nudge would only push it off centre. */
+  .shell[data-sidebar='collapsed'] .sb-link:hover .sb-link__icon {
+    transform: none;
+  }
 }
 .sb-link--active {
   background: color-mix(in srgb, var(--primary) 11%, transparent);

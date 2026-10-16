@@ -17,4 +17,12 @@
   html[data-bottom-nav='hidden'] .dock-follow {
     transform: translateY(4.75rem);
   }
+  /* Sticky panels parked above the dock (review rating bar) drop to the screen edge while it is hidden, instead of
+     floating mid-screen over the content (most visible on a 393px-tall landscape phone). */
+  .dock-sticky {
+    transition: bottom 220ms var(--ease-expo, cubic-bezier(0.16, 1, 0.3, 1));
+  }
+  html[data-bottom-nav='hidden'] .dock-sticky {
+    bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+  }
 }
