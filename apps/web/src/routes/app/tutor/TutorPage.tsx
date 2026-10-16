@@ -632,7 +632,7 @@ export function TutorPage() {
       onReport,
     };
     content = (
-      <div className="space-y-5">
+      <div className="space-y-5 lg:max-w-4xl">
         <div role="tablist" aria-label="Chế độ gia sư" className="glass grid grid-cols-3 gap-1 rounded-full p-1 shadow-[var(--shadow-card)]">
           {TABS.map((t) => (
             <TabButton

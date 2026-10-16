@@ -64,7 +64,8 @@ export function QuestionView({ question, language, listenLimit, onAnswer, onTogg
 
       {isListening && (
         <ListenControls
-          key={question.question_id}
+          // Distinct from the AnswerField key below: two siblings sharing a key left a stale listen box on later questions.
+          key={`listen-${question.question_id}`}
           question={question}
           language={language}
           listenLimit={listenLimit}

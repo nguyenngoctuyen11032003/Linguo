@@ -81,7 +81,7 @@ export function SpeakingPage() {
   }, [cleared]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 lg:max-w-4xl">
       <header className="space-y-1">
         <h1 className="page-title">Luyện nói</h1>
         <p className="text-[15px] text-muted">

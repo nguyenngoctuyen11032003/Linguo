@@ -140,7 +140,17 @@ export function ResultSummary({ result }: ResultSummaryProps) {
 
         {!isCefr && result.estimated_level && (
           <div className="rounded-2xl bg-gold/10 px-4 py-3 ring-1 ring-gold/30 ring-inset">
-            <p className="font-display text-[26px] font-extrabold uppercase leading-none">Bậc ước lượng: {result.estimated_level.label_vi}</p>
+            {/* A short band ("Cấp 2") reads as a headline; a sentence ("Chưa đạt bậc thấp nhất…") in the condensed
+                uppercase display face stacked its diacritics into the line above, so it stays body text. */}
+            <p
+              className={cn(
+                result.estimated_level.label_vi.length <= 16
+                  ? 'font-display text-[26px] font-extrabold uppercase leading-none'
+                  : 'text-[17px] font-bold leading-snug',
+              )}
+            >
+              Bậc ước lượng: {result.estimated_level.label_vi}
+            </p>
             <p className="mt-1.5 text-sm text-muted">Tổng quy đổi: {formatScore(result.estimated_level.scaled_total)}</p>
             <EstimateNote />
           </div>

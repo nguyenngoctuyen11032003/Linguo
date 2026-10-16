@@ -227,6 +227,16 @@ describe('QuestionView', () => {
     expect(onListen).toHaveBeenCalledWith(null, 'audio/q1.mp3', expect.any(Function));
     expect(screen.getByText('Nghe không giới hạn')).toBeInTheDocument();
   });
+
+  it('moving from a listening to a reading question removes the listening controls', () => {
+    const { rerender } = renderExam(
+      <QuestionView question={LISTEN_QUESTION} language="ko" listenLimit={2} onAnswer={noop} onToggleFlag={noop} canListen={false} />,
+    );
+    expect(screen.getByText(/đọc thay nghe/)).toBeInTheDocument();
+    rerender(<QuestionView question={MCQ_QUESTION} language="ko" listenLimit={2} onAnswer={noop} onToggleFlag={noop} canListen={false} />);
+    expect(screen.queryByText(/đọc thay nghe/)).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Hiện lời thoại' })).not.toBeInTheDocument();
+  });
 });
 
 describe('SubmitDialog', () => {

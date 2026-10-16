@@ -271,7 +271,10 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
                 </>
               ) : (
                 <>
-                  Lưu tự đánh giá<span className="max-[379px]:hidden"> trên thiết bị này</span>
+                  {/* One flex item: the button gap would otherwise split "đánh giá" and " trên" with a double space. */}
+                  <span>
+                    Lưu tự đánh giá<span className="max-[379px]:hidden"> trên thiết bị này</span>
+                  </span>
                 </>
               )}
             </Button>

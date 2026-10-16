@@ -65,7 +65,7 @@ function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' |
       <ul className="space-y-1.5">
         {message.corrections.map((c, i) => (
           <li key={i} className="space-y-0.5">
-            <p className="break-words">
+            <p className="wrap-anywhere">
               <span lang={lang} className="text-muted line-through decoration-1">
                 {c.original}
               </span>
@@ -75,7 +75,7 @@ function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' |
                 {c.corrected}
               </span>
             </p>
-            <p className="break-words text-muted">{c.note_vi}</p>
+            <p className="wrap-anywhere text-muted">{c.note_vi}</p>
           </li>
         ))}
       </ul>
@@ -108,12 +108,12 @@ function Bubble({
           <Sparkles className="size-4" />
         </span>
       )}
-      <div className={cn('flex min-w-0 max-w-[86%] flex-col space-y-1', partner ? 'items-start' : 'items-end')}>
+      <div className={cn('flex min-w-0 max-w-[min(86%,42rem)] flex-col space-y-1', partner ? 'items-start' : 'items-end')}>
         <p className="px-1 text-xs font-semibold text-muted">{partner ? 'Đối tác AI' : 'Bạn'}</p>
         <p
           lang={lang}
           className={cn(
-            'whitespace-pre-wrap break-words rounded-[1.5rem] px-4 py-2.5 text-base leading-relaxed',
+            'whitespace-pre-wrap wrap-anywhere rounded-[1.5rem] px-4 py-2.5 text-base leading-relaxed',
             partner
               ? 'rounded-tl-md border border-border bg-surface-solid shadow-[var(--card-sheen),var(--shadow-card)]'
               : 'rounded-tr-md bg-primary text-on-primary shadow-[0_8px_20px_-10px_var(--primary)]',
@@ -144,7 +144,7 @@ function Bubble({
         {partner && latestPartner && message.hint_vi && (
           <p className="flex items-start gap-1.5 rounded-2xl bg-primary/10 px-3.5 py-2.5 text-sm ring-1 ring-primary/20 ring-inset">
             <Lightbulb aria-hidden className="mt-0.5 size-4 shrink-0 text-primary" />
-            <span className="break-words">
+            <span className="wrap-anywhere">
               <span className="font-semibold">Gợi ý cách trả lời: </span>
               {message.hint_vi}
             </span>
@@ -259,7 +259,8 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
   const learnerCount = learnerTurns(session);
 
   return (
-    <div className="space-y-4">
+    // On laptops a full-width column stretched the bubbles and the composer past a readable line length.
+    <div className="space-y-4 lg:max-w-4xl">
       <SolidCard className="space-y-4 p-4">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
