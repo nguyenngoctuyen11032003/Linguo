@@ -1,0 +1,702 @@
+# Học liệu unit "Tiền bạc, mua sắm & dịch vụ" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: bị động hiện tại đơn và quá khứ đơn ----------------
+  - key: en:item:passive-present-simple
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: am / is / are + V3 (bị động hiện tại đơn)
+      pos: cấu trúc bị động
+    back:
+      meaning:
+        vi: "Dùng khi điều quan trọng là sự việc hoặc sản phẩm, không phải người làm: Coffee is grown in the Central Highlands. Be chia theo chủ ngữ mới (coffee → is)."
+      examples:
+        - target: Most of our orders are delivered within two days.
+          translation:
+            vi: Phần lớn đơn hàng của chúng tôi được giao trong vòng hai ngày.
+      confusion:
+        vi: "Tiếng Việt thường bỏ chữ \"được/bị\" (Cà phê trồng ở Tây Nguyên), nhưng tiếng Anh bắt buộc có be + V3. Viết Coffee grows in… là chủ động - nghĩa là cây tự mọc."
+
+  - key: en:item:passive-past-simple
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, reading]
+    front:
+      text: was / were + V3 (bị động quá khứ đơn)
+      pos: cấu trúc bị động
+    back:
+      meaning:
+        vi: "Nói một việc đã được làm trong quá khứ: The bridge was built in 1902. My parcel was sent last Monday. Số ít dùng was, số nhiều dùng were."
+      examples:
+        - target: These phones were made in a factory in Bac Ninh.
+          translation:
+            vi: Những chiếc điện thoại này được sản xuất tại một nhà máy ở Bắc Ninh.
+      confusion:
+        vi: Đừng quên be - The parcel sent yesterday là câu thiếu động từ chính. Đúng là The parcel was sent yesterday.
+
+  - key: en:item:passive-by-agent
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: … by + người / vật thực hiện
+      ipa: /baɪ/
+      pos: tác nhân trong câu bị động
+    back:
+      meaning:
+        vi: "Thêm by + tác nhân chỉ khi thông tin đó mới hoặc quan trọng: The app was designed by two students from Da Nang. Nếu người làm không rõ hoặc hiển nhiên (by someone, by people) thì bỏ hẳn."
+      examples:
+        - target: The company was founded by a former teacher in 2015.
+          translation:
+            vi: Công ty được một cựu giáo viên thành lập năm 2015.
+      confusion:
+        vi: Không viết by them, by people, by somebody - những tác nhân này không thêm thông tin nên bỏ đi cho tự nhiên.
+
+  - key: en:item:made-of-from-in
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: made of / made from / made in / made by
+      ipa: /meɪd əv/ · /meɪd frəm/
+      pos: cụm bị động cố định
+    back:
+      meaning:
+        vi: "made of - làm bằng (vẫn thấy chất liệu: made of wood); made from - làm từ (chất liệu đã biến đổi: paper is made from wood); made in + nơi sản xuất; made by + người, công ty."
+      examples:
+        - target: This bag is made of recycled plastic and it was made in Vietnam.
+          translation:
+            vi: Chiếc túi này làm bằng nhựa tái chế và được sản xuất tại Việt Nam.
+      confusion:
+        vi: Tiếng Việt "làm bằng/làm từ" thường dùng lẫn nhau; tiếng Anh phân biệt - nhìn vào có còn nhận ra chất liệu ban đầu không.
+
+  - key: en:item:deliver
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: deliver / delivery
+      ipa: UK /dɪˈlɪvə/ · US /dɪˈlɪvɚ/ · UK /dɪˈlɪvəri/ · US /dɪˈlɪvɚi/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: giao (hàng) / việc giao hàng
+      examples:
+        - target: Is delivery free, or do I have to pay extra?
+          translation:
+            vi: Giao hàng có miễn phí không, hay tôi phải trả thêm?
+      confusion:
+        vi: Hàng được giao đến bạn - Your order will be delivered tomorrow (bị động). Người giao hàng là delivery driver hoặc courier.
+
+  - key: en:item:manufacture
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: manufacture / produce
+      ipa: UK /ˌmænjuˈfæktʃə/ · US /ˌmænjuˈfæktʃɚ/ · UK /prəˈdjuːs/ · US /prəˈduːs/
+      pos: động từ
+    back:
+      meaning:
+        vi: sản xuất (manufacture - bằng máy móc, số lượng lớn; produce - nghĩa rộng hơn, cả nông sản, phim ảnh)
+      examples:
+        - target: The company manufactures electric motorbikes for the Asian market.
+          translation:
+            vi: Công ty sản xuất xe máy điện cho thị trường châu Á.
+      pronunciation_note:
+        vi: Trọng âm của manufacture ở âm thứ ba - ma-nu-FAC-ture.
+
+  - key: en:item:parcel
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: parcel (UK) / package (US)
+      ipa: UK /ˈpɑːsl/ · US /ˈpɑːrsl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu kiện, gói hàng
+      examples:
+        - target: The parcel was left outside my door while I was at work.
+          translation:
+            vi: Gói hàng bị để ngoài cửa nhà tôi khi tôi đang đi làm.
+
+  - key: en:item:receipt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: receipt
+      ipa: /rɪˈsiːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoá đơn, biên lai (giấy chứng minh bạn đã trả tiền)
+      examples:
+        - target: Please keep your receipt in case you need to return the item.
+          translation:
+            vi: Vui lòng giữ hoá đơn phòng khi bạn cần trả lại món hàng.
+      pronunciation_note:
+        vi: Chữ p là âm câm - đọc /rɪˈsiːt/ "ri-XÍT", không đọc "ri-xíp".
+      confusion:
+        vi: The bill là hoá đơn bạn nhận trước khi trả tiền (ở nhà hàng); receipt là giấy bạn nhận sau khi đã trả.
+
+  - key: en:item:warranty
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: warranty / guarantee
+      ipa: UK /ˈwɒrənti/ · US /ˈwɔːrənti/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo hành (giấy cam kết sửa hoặc đổi sản phẩm hỏng trong một thời gian)
+      examples:
+        - target: The laptop comes with a two-year warranty.
+          translation:
+            vi: Chiếc laptop được bảo hành hai năm.
+      confusion:
+        vi: Còn bảo hành là It's still under warranty. Đừng nói "in warranty".
+
+  # ---------------- Bài 2: tiền bạc, câu điều kiện loại 0 và unless ----------------
+  - key: en:item:zero-conditional
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: If + hiện tại đơn, hiện tại đơn (điều kiện loại 0)
+      pos: câu điều kiện
+    back:
+      meaning:
+        vi: "Nói điều luôn đúng, quy định hoặc kết quả tất yếu: If you pay by card, the bank charges a small fee. Hai vế đều ở hiện tại đơn; if gần nghĩa với when (bất cứ khi nào)."
+      examples:
+        - target: If you don't pay your credit card bill on time, you pay interest.
+          translation:
+            vi: Nếu bạn không trả nợ thẻ tín dụng đúng hạn, bạn sẽ phải trả lãi.
+      confusion:
+        vi: Loại 1 (If it rains, I will stay home) nói một tình huống cụ thể trong tương lai; loại 0 nói điều luôn xảy ra, nên không dùng will.
+
+  - key: en:item:unless
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: unless = if … not
+      ipa: /ənˈles/
+      pos: liên từ điều kiện
+    back:
+      meaning:
+        vi: "trừ khi, nếu không: You can't withdraw money unless you enter your PIN. = You can't withdraw money if you don't enter your PIN."
+      examples:
+        - target: Don't buy it unless you really need it.
+          translation:
+            vi: Đừng mua trừ khi bạn thật sự cần nó.
+      confusion:
+        vi: "Unless đã mang nghĩa phủ định, nên vế sau unless ở dạng khẳng định: unless you enter, không nói unless you don't enter."
+
+  - key: en:item:afford
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: can / can't afford (to)
+      ipa: UK /əˈfɔːd/ · US /əˈfɔːrd/
+      pos: động từ
+    back:
+      meaning:
+        vi: có / không có đủ tiền (để mua, làm gì)
+      examples:
+        - target: We can't afford to buy a flat in the city centre.
+          translation:
+            vi: Chúng tôi không đủ tiền mua căn hộ ở trung tâm thành phố.
+      confusion:
+        vi: Afford hầu như luôn đi với can, can't, could. Sau afford là danh từ (afford a car) hoặc to + V (afford to buy).
+
+  - key: en:item:borrow-vs-lend
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: borrow (from) / lend (to)
+      ipa: UK /ˈbɒrəʊ/ · US /ˈbɑːroʊ/ · /lend/
+      pos: động từ
+    back:
+      meaning:
+        vi: "borrow - mượn, vay (nhận về mình): I borrowed money from my sister. lend - cho mượn, cho vay (đưa đi): My sister lent me some money. Quá khứ của lend là lent."
+      examples:
+        - target: Could you lend me 200,000 dong until Friday?
+          translation:
+            vi: Bạn cho mình mượn 200.000 đồng đến thứ Sáu được không?
+      confusion:
+        vi: "Tiếng Việt \"mượn\" và \"cho mượn\" chỉ khác một chữ, nên người Việt hay nói Can you borrow me…? - sai. Đúng là Can you lend me…? hoặc Can I borrow…?"
+
+  - key: en:item:save-up-for
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: save (up) for …
+      ipa: /ˈseɪv ʌp fə/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tiết kiệm (dần dần) để mua, làm gì
+      examples:
+        - target: I'm saving up for a trip to Japan next spring.
+          translation:
+            vi: Mình đang để dành tiền cho chuyến đi Nhật mùa xuân tới.
+      confusion:
+        vi: Save còn có nghĩa "cứu" và "lưu (tệp)". Khi nói về tiền, save up nhấn mạnh việc để dành từng chút trong thời gian dài.
+
+  - key: en:item:spend-on
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: spend (money / time) on …
+      ipa: /spend ɒn/ · US /spend ɑːn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tiêu (tiền) vào…, dành (thời gian) cho…
+      examples:
+        - target: How much do you spend on food every month?
+          translation:
+            vi: Mỗi tháng bạn tiêu bao nhiêu tiền cho ăn uống?
+      confusion:
+        vi: Spend money on something (on, không phải for). Quá khứ của spend là spent.
+
+  - key: en:item:owe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: owe (somebody money)
+      ipa: UK /əʊ/ · US /oʊ/
+      pos: động từ
+    back:
+      meaning:
+        vi: nợ (ai) tiền
+      examples:
+        - target: I still owe you for the concert ticket, don't I?
+          translation:
+            vi: Mình vẫn còn nợ bạn tiền vé hoà nhạc nhỉ?
+      pronunciation_note:
+        vi: Owe đọc giống chữ "ô" kéo dài (/əʊ/), giống hệt chữ O.
+
+  - key: en:item:waste-money
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: waste money / time (on …)
+      ipa: /weɪst ˈmʌni/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: phí tiền / phí thời gian (vào…)
+      examples:
+        - target: Don't waste your money on an expensive phone case.
+          translation:
+            vi: Đừng phí tiền vào một cái ốp điện thoại đắt tiền.
+      confusion:
+        vi: It's a waste of money (danh từ) = phí tiền. Không nói It's waste money.
+
+  # ---------------- Bài 3: gọi tổng đài - say/tell và tường thuật yêu cầu ----------------
+  - key: en:item:say-vs-tell
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: say (something) / tell + somebody (something)
+      ipa: /seɪ/ · /tel/
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: "Tell luôn có người nghe ngay sau (tell me, tell the customer); say không cần người nghe (She said it was free). Muốn thêm người nghe với say thì dùng say to somebody."
+      examples:
+        - target: The agent told me that my card was blocked. She said I needed a new one.
+          translation:
+            vi: Nhân viên nói với tôi là thẻ của tôi bị khoá. Cô ấy nói tôi cần thẻ mới.
+      confusion:
+        vi: "Tiếng Việt chỉ có \"nói\", nên người Việt hay viết She said me… - sai. Đúng là She told me… hoặc She said to me…"
+
+  - key: en:item:tell-sb-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: tell somebody to + V (tường thuật mệnh lệnh)
+      pos: câu tường thuật
+    back:
+      meaning:
+        vi: "Kể lại lời yêu cầu, chỉ dẫn: \"Restart your router.\" → He told me to restart my router. Mệnh lệnh trở thành to + V nguyên mẫu, không cần lùi thì."
+      examples:
+        - target: The bank told us to bring our ID cards.
+          translation:
+            vi: Ngân hàng bảo chúng tôi mang theo căn cước.
+      confusion:
+        vi: Không viết He told me restart (thiếu to) hay He told me that restart.
+
+  - key: en:item:ask-sb-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: ask somebody to + V (tường thuật lời nhờ)
+      pos: câu tường thuật
+    back:
+      meaning:
+        vi: "Kể lại lời nhờ lịch sự: \"Could you send me a photo of the receipt?\" → She asked me to send her a photo of the receipt."
+      examples:
+        - target: The courier asked me to sign for the parcel.
+          translation:
+            vi: Người giao hàng nhờ tôi ký nhận gói hàng.
+      confusion:
+        vi: Ask somebody to do là nhờ làm gì; ask somebody if/whether… là hỏi có phải… không. Đừng trộn - She asked me if I had the receipt.
+
+  - key: en:item:tell-sb-not-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: tell / ask somebody not to + V
+      pos: câu tường thuật phủ định
+    back:
+      meaning:
+        vi: "Mệnh lệnh phủ định \"Don't share your password.\" → They told me not to share my password. Not đứng trước to."
+      examples:
+        - target: The agent asked me not to hang up.
+          translation:
+            vi: Nhân viên đề nghị tôi đừng cúp máy.
+      confusion:
+        vi: Không viết told me don't share hoặc told me to not share trong văn chuẩn - dùng told me not to share.
+
+  - key: en:item:customer-service
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: customer service (line / agent)
+      ipa: UK /ˈkʌstəmə ˈsɜːvɪs/ · US /ˈkʌstəmɚ ˈsɝːvɪs/
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: dịch vụ chăm sóc khách hàng; tổng đài, nhân viên chăm sóc khách hàng
+      examples:
+        - target: I called customer service three times, but nobody could help me.
+          translation:
+            vi: Tôi đã gọi tổng đài chăm sóc khách hàng ba lần nhưng không ai giúp được.
+
+  - key: en:item:be-on-hold
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: be / put somebody on hold
+      ipa: UK /ɒn ˈhəʊld/ · US /ɑːn ˈhoʊld/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: chờ máy / bắt ai đó chờ máy (khi gọi điện)
+      examples:
+        - target: I was on hold for twenty minutes before someone answered.
+          translation:
+            vi: Tôi phải chờ máy hai mươi phút mới có người trả lời.
+
+  - key: en:item:put-through
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: put somebody through (to …)
+      ipa: /pʊt ... θruː/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nối máy cho ai (đến bộ phận, người khác)
+      examples:
+        - target: Could you put me through to the billing department, please?
+          translation:
+            vi: Bạn nối máy giúp tôi đến bộ phận thanh toán được không?
+      confusion:
+        vi: Tân ngữ đứng giữa - put me through, không nói put through me.
+
+  - key: en:item:cancel
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: cancel (an order / a subscription)
+      ipa: /ˈkænsl/
+      pos: động từ
+    back:
+      meaning:
+        vi: huỷ (đơn hàng, gói đăng ký, cuộc hẹn)
+      examples:
+        - target: I'd like to cancel my gym membership from next month.
+          translation:
+            vi: Tôi muốn huỷ thẻ hội viên phòng gym từ tháng sau.
+      confusion:
+        vi: UK viết cancelled, cancelling (gấp đôi l); US viết canceled, canceling.
+
+  - key: en:item:deal-with
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: deal with (a problem / a complaint)
+      ipa: /ˈdiːl wɪð/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: giải quyết, xử lý (vấn đề, khiếu nại, khách hàng)
+      examples:
+        - target: Who deals with refunds in your company?
+          translation:
+            vi: Ở công ty bạn ai xử lý việc hoàn tiền?
+      confusion:
+        vi: Quá khứ là dealt /delt/. Deal with không có tân ngữ đứng giữa - deal with it, không nói deal it with.
+
+  # ---------------- Bài 4: so sánh sản phẩm ----------------
+  - key: en:item:comparative-modifiers
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: much / far / a lot / a bit / slightly + so sánh hơn
+      pos: từ bổ nghĩa cho so sánh
+    back:
+      meaning:
+        vi: "Cho biết chênh lệch nhiều hay ít: much cheaper, far better, a lot more expensive (chênh nhiều); a bit faster, slightly heavier (chênh ít)."
+      examples:
+        - target: The new model is slightly heavier, but the battery lasts much longer.
+          translation:
+            vi: Mẫu mới nặng hơn một chút, nhưng pin dùng được lâu hơn nhiều.
+      confusion:
+        vi: "Không dùng very trước so sánh hơn: very cheaper là sai. Tiếng Việt nói \"rẻ hơn rất nhiều\", tiếng Anh nói much cheaper."
+
+  - key: en:item:as-adj-as
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: as + tính từ + as (bằng, như)
+      pos: so sánh bằng
+    back:
+      meaning:
+        vi: "So sánh bằng nhau: This phone is as fast as the expensive one. Tính từ giữ nguyên dạng gốc, không thêm -er."
+      examples:
+        - target: The cheaper headphones are as comfortable as the ones I had before.
+          translation:
+            vi: Cái tai nghe rẻ hơn này đeo thoải mái y như cái tôi có trước đây.
+      confusion:
+        vi: Không viết as faster as hoặc as fast than. Hai chữ as kẹp tính từ ở dạng gốc.
+
+  - key: en:item:not-as-adj-as
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: not as / not so + tính từ + as (không bằng)
+      pos: so sánh không bằng
+    back:
+      meaning:
+        vi: "A not as … as B = A kém B về mặt đó: The second-hand bike isn't as light as the new one. Cách này nghe nhẹ nhàng hơn so sánh hơn khi chê."
+      examples:
+        - target: Online prices aren't always as low as people think.
+          translation:
+            vi: Giá trên mạng không phải lúc nào cũng thấp như mọi người nghĩ.
+      confusion:
+        vi: "Nói lịch sự khi chê: It isn't as good as I expected nghe mềm hơn It's worse than I expected."
+
+  - key: en:item:the-same-as
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: the same as / the same + danh từ + as
+      ipa: /ðə ˈseɪm əz/
+      pos: so sánh giống nhau
+    back:
+      meaning:
+        vi: giống hệt, giống như
+      examples:
+        - target: Is this charger the same as the one that came with the phone?
+          translation:
+            vi: Cái sạc này có giống cái đi kèm điện thoại không?
+      confusion:
+        vi: Luôn có the trước same, và dùng as (không dùng like hay with) - the same as, không nói same like.
+
+  - key: en:item:different-from
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: different from (UK cũng dùng different to)
+      ipa: /ˈdɪfrənt frəm/
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: khác với
+      examples:
+        - target: The colour in real life is quite different from the photo on the website.
+          translation:
+            vi: Màu ngoài đời khá khác với ảnh trên trang web.
+      confusion:
+        vi: Không nói different with hoặc different than (US có dùng different than trong văn nói, nhưng different from là chuẩn ở mọi nơi).
+
+  - key: en:item:similar-to
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: similar to
+      ipa: UK /ˈsɪmələ tə/ · US /ˈsɪmələr tə/
+      pos: cụm tính từ
+    back:
+      meaning:
+        vi: tương tự, gần giống với
+      examples:
+        - target: This brand makes products very similar to the famous Japanese one, but they're much cheaper.
+          translation:
+            vi: Hãng này làm sản phẩm rất giống hãng Nhật nổi tiếng kia nhưng rẻ hơn nhiều.
+      confusion:
+        vi: Similar đi với to (similar to), the same đi với as.
+
+  - key: en:item:value-for-money
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: (good) value for money
+      ipa: /ˈvæljuː fə ˈmʌni/
+      pos: cụm danh từ
+    back:
+      meaning:
+        vi: đáng đồng tiền, giá hợp lý so với chất lượng
+      examples:
+        - target: The hotel wasn't cheap, but it was good value for money.
+          translation:
+            vi: Khách sạn không rẻ nhưng rất đáng đồng tiền.
+      confusion:
+        vi: Cheap chỉ là rẻ (có khi chất lượng kém); good value for money là đáng tiền dù giá có thể không thấp.
+
+  - key: en:item:be-worth
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: be worth + số tiền / V-ing
+      ipa: UK /wɜːθ/ · US /wɝːθ/
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "đáng giá (bao nhiêu); đáng để làm gì: This watch is worth about 5 million dong. The museum is worth visiting."
+      examples:
+        - target: Is the premium version worth paying for?
+          translation:
+            vi: Bản cao cấp có đáng bỏ tiền ra không?
+      pronunciation_note:
+        vi: Worth có âm /θ/ cuối - đặt lưỡi giữa hai hàm răng; đừng đọc thành "wớt".
+      confusion:
+        vi: Sau worth là V-ing (worth buying), không dùng to V (worth to buy).
+
+  - key: en:item:second-hand
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: second-hand / used
+      ipa: /ˌsekənd ˈhænd/ · /juːzd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã qua sử dụng, cũ (đồ mua lại)
+      examples:
+        - target: I bought a second-hand camera online, and it works perfectly.
+          translation:
+            vi: Mình mua một cái máy ảnh cũ trên mạng, nó chạy rất tốt.
+      confusion:
+        vi: Used car đọc /juːzd/; còn be used to (quen với) đọc /juːst/. Old chỉ là cũ theo thời gian, không nhất thiết là đồ mua lại.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:out-of-stock
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: out of stock / in stock
+      ipa: UK /ˌaʊt əv ˈstɒk/ · US /ˌaʊt əv ˈstɑːk/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: hết hàng / còn hàng
+      examples:
+        - target: Sorry, the blue one is out of stock, but it'll be back in stock next week.
+          translation:
+            vi: Xin lỗi, màu xanh đã hết hàng, nhưng tuần sau sẽ có hàng lại.
+
+  - key: en:item:exchange-item
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: exchange (something for something)
+      ipa: /ɪksˈtʃeɪndʒ/
+      pos: động từ
+    back:
+      meaning:
+        vi: đổi (món hàng này lấy món khác)
+      examples:
+        - target: Can I exchange these shoes for a bigger size?
+          translation:
+            vi: Tôi có thể đổi đôi giày này lấy cỡ lớn hơn không?
+      confusion:
+        vi: Exchange A for B (for, không phải to). Muốn lấy lại tiền thì dùng get a refund, không dùng exchange.

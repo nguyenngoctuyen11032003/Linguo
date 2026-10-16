@@ -1,0 +1,402 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:money-services-money
+order_index: 2
+level: b1
+title:
+  vi: If you pay late, you pay more - tiền bạc, điều kiện loại 0 và unless
+objectives:
+  - vi: Nói quy định và kết quả luôn đúng bằng câu điều kiện loại 0 (If + hiện tại đơn, hiện tại đơn).
+  - vi: Dùng unless thay cho if … not mà không thêm phủ định thừa.
+  - vi: Nói về chi tiêu cá nhân với afford, borrow/lend, save up for, spend on, owe, waste money.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:money-services-passive]
+items:
+  - item: en:item:zero-conditional
+  - item: en:item:unless
+  - item: en:item:afford
+  - item: en:item:borrow-vs-lend
+  - item: en:item:save-up-for
+  - item: en:item:spend-on
+  - item: en:item:owe
+  - item: en:item:waste-money
+  - item: en:item:first-conditional
+    role: reuse
+  - item: en:item:budget
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được các quy định của ngân hàng hay ví điện tử, và nói chuyện thoải mái về chuyện tiêu tiền, vay mượn, để dành với bạn bè, đồng nghiệp.
+  - type: explain
+    text:
+      vi: "Câu điều kiện loại 0 nói điều luôn đúng, quy định hoặc kết quả tất yếu - If you transfer money after 10 p.m., it arrives the next morning. Cả hai vế đều dùng hiện tại đơn, và if có thể thay bằng when mà nghĩa gần như không đổi."
+  - type: explain
+    text:
+      vi: "Unless nghĩa là \"trừ khi\" = if … not. You can't open an account unless you show your ID. Unless đã mang nghĩa phủ định, nên động từ sau nó ở dạng khẳng định - không nói unless you don't show."
+  - type: explain
+    text:
+      vi: "Borrow là mượn về mình (borrow money from someone), lend là cho người khác mượn (lend someone money). Tiếng Việt chỉ thêm chữ \"cho\", nên người Việt hay nói nhầm Can you borrow me…? - đúng là Can you lend me…?"
+  - type: deep_explain
+    text:
+      vi: "Loại 0 khác loại 1 (bạn đã học) ở chỗ - loại 0 là chuyện chung, luôn xảy ra (If you don't pay on time, the bank charges a fee); loại 1 là một tình huống cụ thể sắp tới (If I don't pay today, the bank will charge me a fee). Unless dùng được với cả hai loại. Afford hầu như luôn đi với can/can't/could - I can't afford a new laptop / I can't afford to buy one."
+  - type: example
+    target: If you withdraw cash from another bank's ATM, you usually pay a small fee.
+    target_lang: en
+    translation:
+      vi: Nếu bạn rút tiền ở cây ATM của ngân hàng khác, bạn thường mất một khoản phí nhỏ.
+    note:
+      vi: Loại 0 - quy định chung, hai vế hiện tại đơn.
+  - type: example
+    target: I never lend money to friends unless I'm sure they can pay me back.
+    target_lang: en
+    translation:
+      vi: Tôi không bao giờ cho bạn bè vay tiền trừ khi tôi chắc họ trả lại được.
+    note:
+      vi: Lend money to someone; unless + khẳng định (I'm sure).
+  - type: example
+    target: We're saving up for a new car, so we spend much less on eating out these days.
+    target_lang: en
+    translation:
+      vi: Chúng tôi đang để dành tiền mua ô tô mới, nên dạo này tiêu ít hẳn cho việc ăn ngoài.
+    note:
+      vi: Save up for + mục tiêu; spend on + khoản chi.
+  - type: common_mistake
+    wrong: Can you borrow me 100,000 dong?
+    right: Can you lend me 100,000 dong? / Can I borrow 100,000 dong?
+    target_lang: en
+    note:
+      vi: Người đưa tiền cho người khác thì dùng lend; người nhận tiền thì dùng borrow.
+  - type: common_mistake
+    wrong: You can't use this card unless you don't activate it.
+    right: You can't use this card unless you activate it.
+    target_lang: en
+    note:
+      vi: Unless đã là "if … not", thêm don't sẽ thành phủ định hai lần và làm sai nghĩa.
+  - type: common_mistake
+    wrong: If you pay by card here, you will get 5% off. (biển thông báo cố định)
+    right: If you pay by card here, you get 5% off.
+    target_lang: en
+    note:
+      vi: Quy định luôn đúng (biển thông báo) thường dùng loại 0 - hai vế hiện tại đơn. Will không sai hẳn nhưng nghe như một lời hứa cho một lần cụ thể.
+  - type: summary
+    points:
+      - vi: Loại 0 - If + hiện tại đơn, hiện tại đơn (quy định, điều luôn đúng).
+      - vi: unless = if … not; vế sau unless ở dạng khẳng định.
+      - vi: borrow (from) - mượn về · lend (to) - cho mượn; lend → lent.
+      - vi: can't afford (to) · save up for · spend on · owe somebody money · waste money on.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:monsv-money-mcq-lend
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:borrow-vs-lend
+    prompt:
+      stem: "Bạn quên ví và muốn nhờ đồng nghiệp cho mượn tiền ăn trưa. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r8w, text: "Could you lend me some money for lunch?", lang: en }
+        - { id: b2e, text: "Could you borrow me some money for lunch?", lang: en }
+        - { id: t5j, text: "Could I lend some money from you for lunch?", lang: en }
+        - { id: n7q, text: "Could you borrow some money to me for lunch?", lang: en }
+    answer:
+      correct_option_id: r8w
+    explanation:
+      vi: Đồng nghiệp là người đưa tiền nên động từ là lend - lend me some money. Nếu bạn là chủ ngữ thì dùng borrow - Could I borrow some money?
+    display_answer: "Could you lend me some money for lunch?"
+
+  - key: en:exercise:monsv-money-mcq-unless
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:unless
+    prompt:
+      stem: "Câu nào có nghĩa giống \"You can't log in if you don't have the code\"?"
+      stem_lang: vi
+      options:
+        - { id: s4m, text: "You can't log in unless you have the code.", lang: en }
+        - { id: g9h, text: "You can't log in unless you don't have the code.", lang: en }
+        - { id: p1c, text: "You can log in unless you have the code.", lang: en }
+        - { id: x6a, text: "Unless you can't log in, you have the code.", lang: en }
+    answer:
+      correct_option_id: s4m
+    explanation:
+      vi: Unless = if … not, nên if you don't have thành unless you have. Thêm don't sau unless sẽ thành phủ định hai lần và đảo ngược nghĩa.
+    display_answer: "You can't log in unless you have the code."
+
+  - key: en:exercise:monsv-money-listen-afford
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:afford
+    prompt:
+      audio_asset_id: null
+      fallback_text: We'd love to move closer to the city centre, but we can't afford the rent there.
+      options:
+        - { id: v3d, text: "Chúng tôi rất muốn chuyển đến gần trung tâm hơn, nhưng không đủ tiền thuê nhà ở đó.", lang: vi }
+        - { id: i7k, text: "Chúng tôi đã chuyển đến gần trung tâm vì tiền thuê nhà ở đó rẻ hơn.", lang: vi }
+        - { id: e5o, text: "Chúng tôi không muốn chuyển vào trung tâm vì không thích thuê nhà.", lang: vi }
+        - { id: y2b, text: "Chúng tôi sẽ thuê nhà ở trung tâm nếu chủ nhà giảm giá.", lang: vi }
+    answer:
+      correct_option_id: v3d
+    explanation:
+      vi: We'd love to là "rất muốn" (chưa làm); can't afford the rent là "không đủ tiền trả tiền thuê". Phương án "đã chuyển" sai vì câu chỉ nói mong muốn.
+    display_answer: "Chúng tôi rất muốn chuyển đến gần trung tâm hơn, nhưng không đủ tiền thuê nhà ở đó."
+
+  - key: en:exercise:monsv-money-fill-zero-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:zero-conditional
+    prompt:
+      template: "If you {{b1}} your bill after the 15th, the company {{b2}} a late fee."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Nếu bạn trả hoá đơn sau ngày 15, công ty sẽ tính phí trả chậm."
+        - "Gợi ý: đây là quy định luôn đúng - hai vế cùng dùng hiện tại đơn; the company là số ít."
+    answer:
+      blanks:
+        b1: [pay]
+        b2: [charges, adds]
+    known_wrong:
+      - answer: will pay
+        feedback_vi: Mệnh đề if không dùng will - If you pay.
+        error_tag: will_in_if_clause
+      - answer: charge
+        feedback_vi: The company là số ít nên động từ thêm -s - charges.
+        error_tag: third_person_s
+      - answer: paid
+        feedback_vi: Quy định chung dùng hiện tại đơn - pay.
+        error_tag: conditional_tense
+    explanation:
+      vi: Đây là quy định luôn đúng nên dùng loại 0 - If + hiện tại đơn, hiện tại đơn. The company số ít nên charges có -s.
+    display_answer: If you pay your bill after the 15th, the company charges a late fee.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:monsv-money-fill-spend-on
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:spend-on
+    prompt:
+      template: "Last month I {{b1}} almost two million dong {{b2}} coffee. That's a real waste of money!"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [spent]
+        b2: [on]
+    known_wrong:
+      - answer: spend
+        feedback_vi: Có last month nên dùng quá khứ - spent.
+        error_tag: past_tense
+      - answer: spended
+        feedback_vi: Spend là động từ bất quy tắc - quá khứ là spent.
+        error_tag: irregular_past
+      - answer: for
+        feedback_vi: Tiêu tiền vào cái gì dùng spend money on, không dùng for.
+        error_tag: spend_on
+    explanation:
+      vi: Last month là quá khứ, spend bất quy tắc thành spent. Tiêu tiền vào thứ gì dùng giới từ on - spend money on coffee.
+    display_answer: Last month I spent almost two million dong on coffee. That's a real waste of money!
+
+  - key: en:exercise:monsv-money-translate-owe
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:owe
+    prompt:
+      source_text: Tôi vẫn nợ anh trai năm trăm nghìn đồng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I still owe my brother five hundred thousand dong.
+        - I still owe my brother 500,000 dong.
+        - I still owe my older brother five hundred thousand dong.
+        - I still owe my older brother 500,000 dong.
+        - I still owe five hundred thousand dong to my brother.
+        - I still owe 500,000 dong to my brother.
+        - I still owe my brother 500,000 VND.
+        - I still owe my big brother 500,000 dong.
+        - I still owe my elder brother 500,000 dong.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I still owe to my brother 500,000 dong.
+        feedback_vi: Owe + người + tiền (owe my brother 500,000 dong) hoặc owe + tiền + to + người. Không đặt to ngay sau owe.
+        error_tag: owe_pattern
+      - answer: I still borrow my brother 500,000 dong.
+        feedback_vi: "\"Nợ\" là owe. Borrow là hành động vay, và cần from - borrow money from my brother."
+        error_tag: owe_borrow
+      - answer: I am still owe my brother 500,000 dong.
+        feedback_vi: Owe là động từ thường, không thêm am.
+        error_tag: be_with_verb
+    explanation:
+      vi: Owe có hai mẫu - owe + người + số tiền, hoặc owe + số tiền + to + người. Still đứng trước động từ thường.
+    display_answer: I still owe my brother five hundred thousand dong.
+
+  - key: en:exercise:monsv-money-translate-save-up
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:save-up-for
+    prompt:
+      source_text: Em gái tôi đang để dành tiền mua máy tính xách tay, nên em ấy không đi mua sắm nữa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My sister is saving up for a laptop, so she doesn't go shopping any more.
+        - My sister is saving up for a laptop, so she doesn't go shopping anymore.
+        - My younger sister is saving up for a laptop, so she doesn't go shopping any more.
+        - My younger sister is saving up for a laptop, so she doesn't go shopping anymore.
+        - My sister's saving up for a laptop, so she doesn't go shopping any more.
+        - My sister's saving up for a laptop, so she doesn't go shopping anymore.
+        - My sister is saving for a laptop, so she doesn't go shopping any more.
+        - My sister is saving for a laptop, so she doesn't go shopping anymore.
+        - My little sister is saving up for a laptop, so she doesn't go shopping anymore.
+        - My sister is saving up to buy a laptop, so she doesn't go shopping anymore.
+        - My sister is saving up to buy a laptop, so she doesn't go shopping any more.
+        - My sister is saving money for a laptop, so she doesn't go shopping anymore.
+        - My younger sister is saving up for a laptop, so she has stopped going shopping.
+        - My sister is saving up for a laptop, so she no longer goes shopping.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My sister saves up for a laptop, so she doesn't go shopping anymore.
+        feedback_vi: Việc đang diễn ra trong giai đoạn này dùng hiện tại tiếp diễn - is saving up.
+        error_tag: present_continuous
+      - answer: My sister is saving up a laptop, so she doesn't go shopping anymore.
+        feedback_vi: Để dành cho mục tiêu nào dùng save up for.
+        error_tag: save_up_for
+      - answer: My sister is saving up for a laptop, so she don't go shopping anymore.
+        feedback_vi: Chủ ngữ she dùng doesn't.
+        error_tag: do_does
+    explanation:
+      vi: "\"Đang để dành\" là việc kéo dài trong giai đoạn hiện tại - is saving up for. \"Không… nữa\" là not … any more (UK) / anymore (US) hoặc no longer."
+    display_answer: My sister is saving up for a laptop, so she doesn't go shopping any more.
+
+  # ---------------- application ----------------
+  - key: en:exercise:monsv-money-mcq-bank-rule
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:zero-conditional
+    prompt:
+      stem: "Bạn giải thích cho khách nước ngoài quy định của ví điện tử: chuyển tiền dưới 10 triệu thì không mất phí. Câu nào đúng và tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: d8l, text: "If you transfer less than ten million dong, you don't pay a fee.", lang: en }
+        - { id: w4c, text: "If you will transfer less than ten million dong, you don't pay a fee.", lang: en }
+        - { id: m6t, text: "Unless you transfer less than ten million dong, you don't pay a fee.", lang: en }
+        - { id: o2z, text: "If you transferred less than ten million dong, you didn't pay a fee.", lang: en }
+    answer:
+      correct_option_id: d8l
+    explanation:
+      vi: Quy định chung dùng loại 0 - hai vế hiện tại đơn. Will không đứng trong mệnh đề if; unless làm nghĩa ngược lại (trừ khi chuyển dưới 10 triệu); thì quá khứ biến quy định thành chuyện đã qua.
+    display_answer: "If you transfer less than ten million dong, you don't pay a fee."
+
+  - key: en:exercise:monsv-money-order-afford
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:afford
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chúng tôi không đủ tiền đi du lịch nước ngoài năm nay.\""
+      tokens:
+        - { id: t-abroad, text: to travel abroad }
+        - { id: t-year, text: this year }
+        - { id: t-afford, text: afford }
+        - { id: t-we, text: We }
+        - { id: t-cant, text: "can't" }
+        - { id: t-dont, text: "don't" }
+    answer:
+      orders:
+        - [t-we, t-cant, t-afford, t-abroad, t-year]
+    explanation:
+      vi: Afford gần như luôn đi với can/can't - We can't afford to + V. Don't afford là cách nói không tự nhiên.
+    display_answer: We can't afford to travel abroad this year.
+
+  - key: en:exercise:monsv-money-translate-unless-en
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:unless
+    prompt:
+      source_text: Đừng mua cái đó trừ khi nó đang giảm giá.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Don't buy that unless it's on sale.
+        - Don't buy that unless it is on sale.
+        - Don't buy it unless it's on sale.
+        - Don't buy it unless it is on sale.
+        - Don't buy that one unless it's on sale.
+        - Don't buy that unless it's discounted.
+        - Don't buy it unless it's discounted.
+        - Don't buy that unless it's on offer.
+        - Don't buy it unless it's on offer.
+        - Do not buy that unless it is on sale.
+        - Don't buy that unless it's in the sale.
+        - Don't buy it unless it's in the sale.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Don't buy that unless it isn't on sale.
+        feedback_vi: Unless đã có nghĩa phủ định - dùng unless it's on sale.
+        error_tag: unless_negative
+      - answer: Don't buy that unless it will be on sale.
+        feedback_vi: Sau unless dùng hiện tại đơn, không dùng will.
+        error_tag: will_in_if_clause
+      - answer: Don't buy that if it's on sale.
+        feedback_vi: Nghĩa ngược lại. "Trừ khi" là unless (hoặc if it isn't).
+        error_tag: unless_if
+    explanation:
+      vi: "\"Trừ khi\" là unless + mệnh đề khẳng định ở hiện tại đơn. Đang giảm giá là on sale (US, UK), in the sale hoặc on offer (UK)."
+    display_answer: Don't buy that unless it's on sale.
+
+  - key: en:exercise:monsv-money-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:waste-money
+    prompt:
+      source_text: If you don't plan a monthly budget, you often waste money on things you don't need.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu bạn không lập ngân sách hằng tháng, bạn thường phí tiền vào những thứ bạn không cần.
+        - Nếu không lập kế hoạch chi tiêu hằng tháng, bạn thường phí tiền vào những thứ không cần thiết.
+        - Nếu bạn không lên ngân sách hằng tháng, bạn hay lãng phí tiền vào những thứ mình không cần.
+        - Nếu bạn không lập ngân sách hàng tháng, bạn thường phí tiền vào những thứ bạn không cần.
+        - Nếu không lên kế hoạch chi tiêu mỗi tháng, bạn thường tiêu phí tiền vào những thứ không cần.
+        - Nếu bạn không lập ngân sách mỗi tháng thì bạn thường lãng phí tiền vào những thứ bạn không cần.
+        - Nếu bạn không lập kế hoạch chi tiêu hằng tháng, bạn hay phí tiền vào những thứ mình không cần.
+        - Nếu bạn không lên ngân sách hằng tháng thì bạn thường phí tiền vào những thứ không cần thiết.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Đây là câu loại 0 nói một sự thật chung - "nếu… thì thường…". Plan a budget là "lập ngân sách / kế hoạch chi tiêu"; waste money on là "phí tiền vào".
+    display_answer: Nếu bạn không lập ngân sách hằng tháng, bạn thường phí tiền vào những thứ bạn không cần.

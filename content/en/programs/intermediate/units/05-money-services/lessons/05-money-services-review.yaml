@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:money-services-review
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập - Bài đánh giá sản phẩm và cuộc gọi đổi hàng
+objectives:
+  - vi: Đọc hiểu và viết một bài đánh giá sản phẩm ngắn có so sánh, bị động và nhận xét về giá trị.
+  - vi: Kể lại cuộc gọi tổng đài - nhân viên đã bảo bạn làm gì - bằng tell/ask somebody (not) to.
+  - vi: Dùng unless, câu điều kiện loại 0 và từ vựng tiền bạc khi giải thích chính sách đổi trả.
+estimated_minutes: 25
+skills: [reading, writing, speaking]
+prerequisites: [en:lesson:money-services-comparing]
+items:
+  - item: en:item:out-of-stock
+  - item: en:item:exchange-item
+  - item: en:item:passive-present-simple
+    role: reuse
+  - item: en:item:passive-past-simple
+    role: reuse
+  - item: en:item:zero-conditional
+    role: reuse
+  - item: en:item:unless
+    role: reuse
+  - item: en:item:afford
+    role: reuse
+  - item: en:item:tell-sb-to
+    role: reuse
+  - item: en:item:ask-sb-to
+    role: reuse
+  - item: en:item:comparative-modifiers
+    role: reuse
+  - item: en:item:not-as-adj-as
+    role: reuse
+  - item: en:item:be-worth
+    role: reuse
+  - item: en:item:receipt
+    role: reuse
+  - item: en:item:refund
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đi theo một tình huống trọn vẹn - bạn mua nồi chiên không dầu trên mạng, viết đánh giá so sánh với chiếc cũ, rồi gọi tổng đài để đổi sang mẫu khác và kể lại cuộc gọi cho người nhà.
+  - type: explain
+    text:
+      vi: "Một bài đánh giá sản phẩm hữu ích có ba phần - mô tả (It is made of…, It was delivered in…), so sánh (much quieter than…, not as big as…) và kết luận về giá trị (good value for money, worth buying / not worth the price)."
+  - type: explain
+    text:
+      vi: "Chính sách đổi trả thường viết bằng loại 0 và unless - If an item is faulty, we exchange it for free. Items cannot be returned unless they are unused. Hãy đọc kỹ unless, vì nó đảo ngược điều kiện."
+  - type: deep_explain
+    text:
+      vi: "Khi kể lại cuộc gọi, câu mệnh lệnh của nhân viên thành told me to…, lời nhờ thành asked me to…, lời dặn phủ định thành told me not to…. Out of stock (hết hàng) và back in stock (có hàng lại) là hai cụm bạn sẽ thấy trên mọi trang mua sắm."
+  - type: example
+    target: "Five stars! The air fryer was delivered in two days, and it is much quieter than my old one. Definitely worth buying."
+    target_lang: en
+    translation:
+      vi: "Năm sao! Nồi chiên không dầu được giao trong hai ngày, chạy êm hơn hẳn cái cũ của tôi. Chắc chắn đáng mua."
+    note:
+      vi: Bị động quá khứ; much + so sánh hơn; worth + V-ing.
+  - type: example
+    target: "Items can't be exchanged unless you keep the original box and the receipt."
+    target_lang: en
+    translation:
+      vi: Không thể đổi hàng trừ khi bạn giữ hộp gốc và hoá đơn.
+    note:
+      vi: Unless + khẳng định (keep), không thêm don't.
+  - type: example
+    target: "The agent told me to send a photo of the label and asked me not to throw the box away. The bigger model was out of stock, so I exchanged it for a different colour."
+    target_lang: en
+    translation:
+      vi: Nhân viên bảo tôi gửi ảnh nhãn hàng và dặn tôi đừng vứt hộp. Mẫu lớn hơn đã hết hàng nên tôi đổi sang màu khác.
+    note:
+      vi: Told me to / asked me not to; out of stock; exchange A for B.
+  - type: common_mistake
+    wrong: Can I exchange this kettle to a bigger one?
+    right: Can I exchange this kettle for a bigger one?
+    target_lang: en
+    note:
+      vi: Đổi A lấy B là exchange A for B.
+  - type: common_mistake
+    wrong: The blender delivered broken, so they told me return it.
+    right: The blender was delivered broken, so they told me to return it.
+    target_lang: en
+    note:
+      vi: Máy xay không tự giao - cần was delivered; sau told me cần to + V.
+  - type: summary
+    points:
+      - vi: Đánh giá sản phẩm - mô tả (bị động), so sánh, kết luận về giá trị.
+      - vi: Chính sách - If…, (hiện tại đơn) và unless (= if … not).
+      - vi: Kể lại cuộc gọi - told me to / asked me to / told me not to.
+      - vi: out of stock / back in stock · exchange A for B · get a refund.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:monsv-review-mcq-policy
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:unless
+    prompt:
+      stem: "Đọc chính sách: \"You cannot get a refund unless the item is returned within 14 days.\" Câu nào hiểu đúng?"
+      stem_lang: vi
+      options:
+        - { id: f2y, text: "Bạn chỉ được hoàn tiền nếu trả hàng trong vòng 14 ngày.", lang: vi }
+        - { id: l9c, text: "Bạn không được hoàn tiền nếu trả hàng trong vòng 14 ngày.", lang: vi }
+        - { id: q5m, text: "Bạn được hoàn tiền sau 14 ngày dù có trả hàng hay không.", lang: vi }
+        - { id: w8a, text: "Bạn phải chờ 14 ngày mới được trả hàng.", lang: vi }
+    answer:
+      correct_option_id: f2y
+    explanation:
+      vi: Unless = if … not - "không được hoàn tiền nếu không trả trong 14 ngày", tức là chỉ được hoàn tiền khi trả trong 14 ngày. Phương án thứ hai hiểu unless như if.
+    display_answer: "Bạn chỉ được hoàn tiền nếu trả hàng trong vòng 14 ngày."
+
+  - key: en:exercise:monsv-review-mcq-out-of-stock
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:out-of-stock
+    prompt:
+      stem: "Chọn đáp án đúng: Sorry, size M is ___ at the moment. It'll be back next Tuesday."
+      stem_lang: vi
+      options:
+        - { id: h6t, text: out of stock, lang: en }
+        - { id: s3k, text: in stock, lang: en }
+        - { id: d7o, text: out of order, lang: en }
+        - { id: b1w, text: sold, lang: en }
+    answer:
+      correct_option_id: h6t
+    explanation:
+      vi: Hàng tạm thời không còn, sẽ có lại thứ Ba tới - out of stock. Out of order là máy hỏng, không dùng cho hàng hoá; in stock nghĩa ngược lại.
+    display_answer: out of stock
+
+  - key: en:exercise:monsv-review-listen-review
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:not-as-adj-as
+    prompt:
+      audio_asset_id: null
+      fallback_text: The speaker isn't as loud as I expected, but it's light and the battery lasts all day, so it's worth the price.
+      options:
+        - { id: k4n, text: "Chiếc loa không to như tôi mong đợi, nhưng nó nhẹ và pin dùng được cả ngày, nên vẫn đáng giá tiền.", lang: vi }
+        - { id: e7j, text: "Chiếc loa to hơn tôi mong đợi, nhưng nặng và pin yếu, nên không đáng tiền.", lang: vi }
+        - { id: v2g, text: "Chiếc loa to đúng như tôi mong đợi, và pin dùng được cả ngày.", lang: vi }
+        - { id: z9u, text: "Chiếc loa không to và pin hết nhanh, nên tôi muốn trả lại.", lang: vi }
+    answer:
+      correct_option_id: k4n
+    explanation:
+      vi: Isn't as loud as I expected là "không to như mong đợi" (chê nhẹ); worth the price là "đáng tiền". Người nói chê một điểm nhưng kết luận tích cực.
+    display_answer: "Chiếc loa không to như tôi mong đợi, nhưng nó nhẹ và pin dùng được cả ngày, nên vẫn đáng giá tiền."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:monsv-review-fill-exchange
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:exchange-item
+    prompt:
+      template: "The black one was out of stock, so I {{b1}} it {{b2}} a silver one."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [exchanged, swapped]
+        b2: [for]
+    known_wrong:
+      - answer: to
+        feedback_vi: Đổi A lấy B là exchange A for B, không dùng to.
+        error_tag: exchange_for
+      - answer: exchange
+        feedback_vi: Câu kể chuyện đã xảy ra nên dùng quá khứ - exchanged.
+        error_tag: past_tense
+      - answer: with
+        feedback_vi: Exchange A for B - giới từ là for.
+        error_tag: exchange_for
+    explanation:
+      vi: Việc đã xảy ra nên dùng exchanged. Mẫu cố định exchange A for B - đổi A lấy B.
+    display_answer: The black one was out of stock, so I exchanged it for a silver one.
+
+  - key: en:exercise:monsv-review-translate-told
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:tell-sb-to
+    prompt:
+      source_text: Họ bảo tôi giữ hoá đơn và mang máy đến cửa hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - They told me to keep the receipt and bring the machine to the shop.
+        - They told me to keep the receipt and take the machine to the shop.
+        - They told me to keep the receipt and bring the machine to the store.
+        - They told me to keep the receipt and take the machine to the store.
+        - They told me to keep the receipt and bring the device to the shop.
+        - They told me to keep the receipt and take the device to the shop.
+        - They told me to keep the receipt and to bring the machine to the shop.
+        - They told me to keep the receipt and to take the machine to the shop.
+        - They asked me to keep the receipt and bring the machine to the shop.
+        - They asked me to keep the receipt and take the machine to the shop.
+        - They told me to keep the receipt and bring the machine into the shop.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: They said me to keep the receipt and bring the machine to the shop.
+        feedback_vi: Có người nghe (me) ngay sau thì dùng told, không dùng said.
+        error_tag: say_tell
+      - answer: They told me keep the receipt and bring the machine to the shop.
+        feedback_vi: Sau told me cần to + V - told me to keep.
+        error_tag: tell_to
+      - answer: They told me to keep the bill and bring the machine to the shop.
+        feedback_vi: Giấy chứng nhận đã trả tiền là receipt; bill là hoá đơn cần thanh toán.
+        error_tag: receipt_bill
+    explanation:
+      vi: Kể lại chỉ dẫn - told me to + V; to thứ hai có thể bỏ (and bring). Hoá đơn sau khi mua là receipt.
+    display_answer: They told me to keep the receipt and bring the machine to the shop.
+
+  - key: en:exercise:monsv-review-translate-made-in
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:passive-present-simple
+    prompt:
+      source_text: Những chiếc ghế này được làm bằng tre và được bán ở nhiều nước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - These chairs are made of bamboo and are sold in many countries.
+        - These chairs are made of bamboo and sold in many countries.
+        - These chairs are made from bamboo and are sold in many countries.
+        - These chairs are made from bamboo and sold in many countries.
+        - These chairs are made of bamboo, and they are sold in many countries.
+        - These chairs are made of bamboo, and they're sold in many countries.
+        - These chairs are made of bamboo and are sold in lots of countries.
+        - These chairs are made of bamboo and are sold in a lot of countries.
+        - These chairs are made out of bamboo and are sold in many countries.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: These chairs made of bamboo and sold in many countries.
+        feedback_vi: Thiếu are - câu bị động cần be + V3.
+        error_tag: passive_be
+      - answer: These chairs are make of bamboo and are sell in many countries.
+        feedback_vi: Sau are cần V3 - made, sold.
+        error_tag: passive_v3
+      - answer: These chairs is made of bamboo and is sold in many countries.
+        feedback_vi: These chairs số nhiều nên dùng are.
+        error_tag: be_agreement
+    explanation:
+      vi: Hai việc bị động hiện tại - are made, are sold (are thứ hai có thể bỏ). Vẫn nhận ra tre trong ghế nên dùng made of; made from cũng được chấp nhận.
+    display_answer: These chairs are made of bamboo and are sold in many countries.
+
+  # ---------------- application ----------------
+  - key: en:exercise:monsv-review-mcq-write-review
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:be-worth
+    prompt:
+      stem: "Bạn viết đánh giá ba sao cho một chiếc máy lọc không khí: giao nhanh, chạy êm hơn máy cũ một chút, nhưng không mạnh bằng quảng cáo, nên không đáng giá đó. Đoạn nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: o3e, text: "It was delivered quickly and it's slightly quieter than my old one, but it isn't as powerful as the advert says, so it's not worth the price.", lang: en }
+        - { id: c8h, text: "It delivered quickly and it's very quieter than my old one, but it isn't as powerful than the advert says, so it's not worth the price.", lang: en }
+        - { id: y1r, text: "It was delivered quickly and it's slightly quieter than my old one, but it isn't so powerful like the advert says, so it's not worth to buy.", lang: en }
+        - { id: m5x, text: "It was deliver quickly and it's slightly more quiet as my old one, but it isn't as powerful as the advert says, so it's not worthy the price.", lang: en }
+    answer:
+      correct_option_id: o3e
+    explanation:
+      vi: Phương án đúng có bị động was delivered, slightly + so sánh hơn, not as … as, và not worth the price. Các phương án khác thiếu was, dùng very với so sánh hơn, as … than, so … like, worth to buy hoặc was deliver.
+    display_answer: "It was delivered quickly and it's slightly quieter than my old one, but it isn't as powerful as the advert says, so it's not worth the price."
+
+  - key: en:exercise:monsv-review-order-zero
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:zero-conditional
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Nếu sản phẩm bị lỗi, chúng tôi đổi miễn phí.\""
+      tokens:
+        - { id: t-free, text: for free }
+        - { id: t-we, text: we exchange it }
+        - { id: t-if, text: If }
+        - { id: t-faulty, text: is faulty }
+        - { id: t-product, text: the product }
+        - { id: t-will, text: will be faulty }
+    answer:
+      orders:
+        - [t-if, t-product, t-faulty, t-we, t-free]
+    explanation:
+      vi: Chính sách luôn đúng dùng loại 0 - If + hiện tại đơn (is faulty), hiện tại đơn (we exchange). Will be faulty không đứng trong mệnh đề if.
+    display_answer: If the product is faulty we exchange it for free.
+
+  - key: en:exercise:monsv-review-translate-afford-en
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:comparative-modifiers
+    prompt:
+      source_text: Mẫu mới tốt hơn nhiều, nhưng chúng tôi không đủ tiền mua nó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The new model is much better, but we can't afford it.
+        - The new model is much better, but we cannot afford it.
+        - The new model is much better, but we can't afford to buy it.
+        - The new model is much better, but we cannot afford to buy it.
+        - The new model is far better, but we can't afford it.
+        - The new model is far better, but we can't afford to buy it.
+        - The new model is a lot better, but we can't afford it.
+        - The new model is a lot better, but we can't afford to buy it.
+        - The new model is much better but we can't afford it.
+        - The new model is much better, but we can't afford to get it.
+        - The new model is a lot better, but we can't afford to get it.
+        - The newer model is much better, but we can't afford it.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The new model is very better, but we can't afford it.
+        feedback_vi: Không dùng very trước so sánh hơn - much/far/a lot better.
+        error_tag: comparative_modifier
+      - answer: The new model is much more better, but we can't afford it.
+        feedback_vi: Better đã là so sánh hơn, không thêm more.
+        error_tag: double_comparative
+      - answer: The new model is much better, but we don't afford it.
+        feedback_vi: Afford đi với can/can't - we can't afford it.
+        error_tag: afford_can
+    explanation:
+      vi: "\"Tốt hơn nhiều\" là much / far / a lot better. \"Không đủ tiền mua\" là can't afford (to buy) it."
+    display_answer: The new model is much better, but we can't afford it.
+
+  - key: en:exercise:monsv-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:ask-sb-to
+    prompt:
+      source_text: The shop asked me to wait a week because the larger size was out of stock.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng đề nghị tôi chờ một tuần vì cỡ lớn hơn đã hết hàng.
+        - Cửa hàng nhờ tôi chờ một tuần vì cỡ lớn hơn đã hết hàng.
+        - Cửa hàng bảo tôi đợi một tuần vì cỡ lớn hơn hết hàng.
+        - Cửa hàng yêu cầu tôi chờ một tuần vì size lớn hơn đã hết hàng.
+        - Cửa hàng đề nghị tôi đợi một tuần vì cỡ to hơn đã hết hàng.
+        - Bên cửa hàng đề nghị tôi chờ một tuần vì cỡ lớn hơn đã hết hàng.
+        - Cửa hàng bảo tôi chờ một tuần vì cỡ lớn đã hết hàng.
+        - Cửa hàng đề nghị tôi đợi một tuần vì size lớn hơn đang hết hàng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Asked me to wait là "đề nghị/nhờ tôi chờ"; out of stock là "hết hàng"; the larger size là "cỡ lớn hơn".
+    display_answer: Cửa hàng đề nghị tôi chờ một tuần vì cỡ lớn hơn đã hết hàng.

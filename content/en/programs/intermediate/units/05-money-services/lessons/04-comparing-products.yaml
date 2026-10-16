@@ -1,0 +1,363 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:money-services-comparing
+order_index: 4
+level: b1
+title:
+  vi: Much cheaper, not as good as - so sánh sản phẩm trước khi mua
+objectives:
+  - vi: Nói mức chênh lệch bằng much / far / a lot / a bit / slightly + so sánh hơn.
+  - vi: So sánh bằng và không bằng với as … as, not as … as; the same as, different from, similar to.
+  - vi: Đánh giá giá trị món hàng với value for money, be worth + V-ing, second-hand.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [en:lesson:money-services-say-tell]
+items:
+  - item: en:item:comparative-modifiers
+  - item: en:item:as-adj-as
+  - item: en:item:not-as-adj-as
+  - item: en:item:the-same-as
+  - item: en:item:different-from
+  - item: en:item:similar-to
+  - item: en:item:value-for-money
+  - item: en:item:be-worth
+  - item: en:item:second-hand
+  - item: en:item:comparative-er
+    role: reuse
+  - item: en:item:comparative-more
+    role: reuse
+  - item: en:item:than
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn so sánh được hai chiếc điện thoại, hai gói cước hay một món đồ mới với đồ cũ một cách chính xác - không chỉ "rẻ hơn" mà "rẻ hơn nhiều", "không tốt bằng", "đáng tiền".
+  - type: explain
+    text:
+      vi: "Bạn đã biết cheaper, more expensive. Để nói chênh nhiều hay ít, thêm một từ phía trước - much / far / a lot cheaper (rẻ hơn nhiều), a bit / slightly cheaper (rẻ hơn một chút). Không dùng very trước so sánh hơn."
+  - type: explain
+    text:
+      vi: "So sánh bằng - as + tính từ gốc + as (as fast as). So sánh không bằng - not as + tính từ + as (isn't as light as). Not as … as nghe nhẹ nhàng hơn khi chê - The new version isn't as good as the old one."
+  - type: explain
+    text:
+      vi: "Ba cụm cố định, mỗi cụm một giới từ riêng - the same as (giống hệt), different from (khác với), similar to (tương tự). Tiếng Việt đều dùng \"với\", nên người Việt hay nói same with, different with - đều sai."
+  - type: deep_explain
+    text:
+      vi: "Be worth + V-ing nghĩa là đáng làm gì - The upgrade is worth paying for; It's not worth repairing. Value for money là đáng đồng tiền, khác với cheap (chỉ rẻ). Trong văn nói Anh - Anh, nhiều người nói different to; US đôi khi nói different than, nhưng different from đúng ở mọi nơi nên bạn hãy dùng nó."
+  - type: example
+    target: The second-hand laptop is far cheaper than a new one, and it's almost as fast.
+    target_lang: en
+    translation:
+      vi: Chiếc laptop cũ rẻ hơn máy mới rất nhiều, mà lại nhanh gần bằng.
+    note:
+      vi: Far + so sánh hơn; almost as … as - gần bằng.
+  - type: example
+    target: The cheaper plan isn't as generous as the premium one, but it's good value for money.
+    target_lang: en
+    translation:
+      vi: Gói rẻ hơn không nhiều ưu đãi bằng gói cao cấp, nhưng nó rất đáng tiền.
+    note:
+      vi: Not as … as - chê nhẹ nhàng; good value for money - đáng tiền.
+  - type: example
+    target: This charger looks the same as the original, but the plug is slightly different from mine.
+    target_lang: en
+    translation:
+      vi: Cái sạc này trông giống hệt sạc gốc, nhưng phích cắm hơi khác của mình.
+    note:
+      vi: The same as; slightly different from.
+  - type: common_mistake
+    wrong: This model is very cheaper than the old one.
+    right: This model is much cheaper than the old one.
+    target_lang: en
+    note:
+      vi: Very không đứng trước so sánh hơn. Dùng much, far hoặc a lot.
+  - type: common_mistake
+    wrong: My phone is the same with yours.
+    right: My phone is the same as yours.
+    target_lang: en
+    note:
+      vi: The same luôn đi với as.
+  - type: common_mistake
+    wrong: This old camera is worth to repair.
+    right: This old camera is worth repairing.
+    target_lang: en
+    note:
+      vi: Sau worth là V-ing, không dùng to V.
+  - type: summary
+    points:
+      - vi: much / far / a lot + so sánh hơn (chênh nhiều) · a bit / slightly (chênh ít); không dùng very.
+      - vi: as + tính từ gốc + as · not as … as · almost / nearly as … as.
+      - vi: the same as · different from · similar to.
+      - vi: good value for money · be worth + V-ing / số tiền · second-hand.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:monsv-comp-mcq-much
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:comparative-modifiers
+    prompt:
+      stem: "Chọn đáp án đúng: Taking the train is ___ than flying, but it takes all day."
+      stem_lang: vi
+      options:
+        - { id: p7d, text: much cheaper, lang: en }
+        - { id: j3n, text: very cheaper, lang: en }
+        - { id: w9e, text: more cheaper, lang: en }
+        - { id: s1k, text: much more cheap, lang: en }
+    answer:
+      correct_option_id: p7d
+    explanation:
+      vi: Muốn nói "rẻ hơn nhiều" thì thêm much trước cheaper. Very không đi với so sánh hơn; cheap là tính từ ngắn nên không dùng more.
+    display_answer: much cheaper
+
+  - key: en:exercise:monsv-comp-mcq-different-from
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:different-from
+    prompt:
+      stem: "Chọn đáp án đúng: The jacket I received is completely different ___ the one in the photo."
+      stem_lang: vi
+      options:
+        - { id: a6z, text: from, lang: en }
+        - { id: o4r, text: with, lang: en }
+        - { id: e2t, text: as, lang: en }
+        - { id: v8m, text: of, lang: en }
+    answer:
+      correct_option_id: a6z
+    explanation:
+      vi: Different đi với from (UK cũng chấp nhận to). Tiếng Việt "khác với" dễ khiến người Việt dịch thành different with - sai.
+    display_answer: from
+
+  - key: en:exercise:monsv-comp-listen-not-as
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:not-as-adj-as
+    prompt:
+      audio_asset_id: null
+      fallback_text: The new version of the app isn't as easy to use as the old one, and it's a bit slower.
+      options:
+        - { id: n5h, text: "Phiên bản mới của ứng dụng không dễ dùng bằng bản cũ, và hơi chậm hơn.", lang: vi }
+        - { id: d2c, text: "Phiên bản mới của ứng dụng dễ dùng như bản cũ, nhưng nhanh hơn một chút.", lang: vi }
+        - { id: g8u, text: "Phiên bản cũ không dễ dùng bằng bản mới, và chậm hơn nhiều.", lang: vi }
+        - { id: y3l, text: "Phiên bản mới của ứng dụng khó dùng hơn rất nhiều và chậm hơn hẳn.", lang: vi }
+    answer:
+      correct_option_id: n5h
+    explanation:
+      vi: Isn't as easy to use as là "không dễ dùng bằng"; a bit slower là "hơi chậm hơn" (chênh ít). Phương án cuối phóng đại thành "rất nhiều", "hẳn".
+    display_answer: "Phiên bản mới của ứng dụng không dễ dùng bằng bản cũ, và hơi chậm hơn."
+
+  - key: en:exercise:monsv-comp-fill-as-as-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:as-adj-as
+    prompt:
+      template: "This cheaper vacuum cleaner is {{b1}} powerful {{b2}} the expensive one."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Cái máy hút bụi rẻ hơn này mạnh ngang cái đắt tiền."
+        - "Gợi ý: so sánh bằng - cùng một từ ngắn đặt hai bên tính từ."
+    answer:
+      blanks:
+        b1: [as, just as]
+        b2: [as]
+    known_wrong:
+      - answer: than
+        feedback_vi: So sánh bằng dùng as … as, không dùng than.
+        error_tag: as_as
+      - answer: more
+        feedback_vi: So sánh bằng không thêm more - as powerful as.
+        error_tag: as_as
+      - answer: so
+        feedback_vi: So … as chỉ dùng trong câu phủ định (not so … as). Câu khẳng định dùng as … as.
+        error_tag: as_as
+    explanation:
+      vi: Hai máy mạnh ngang nhau nên dùng so sánh bằng as + tính từ gốc + as. Có thể thêm just để nhấn mạnh - just as powerful as.
+    display_answer: This cheaper vacuum cleaner is as powerful as the expensive one.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:monsv-comp-fill-worth
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:be-worth
+    prompt:
+      template: "My old printer is ten years old. It's not {{b1}} {{b2}} - a new one costs less than the repair."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [worth]
+        b2: [repairing, fixing]
+    known_wrong:
+      - answer: to repair
+        feedback_vi: Sau worth dùng V-ing - worth repairing.
+        error_tag: worth_ing
+      - answer: repair
+        feedback_vi: Sau worth dùng V-ing - repairing.
+        error_tag: worth_ing
+      - answer: value
+        feedback_vi: Value là danh từ; "đáng làm gì" dùng be worth + V-ing.
+        error_tag: worth_value
+    explanation:
+      vi: "\"Không đáng sửa\" là It's not worth repairing/fixing - be worth + V-ing. Lý do đi sau dấu gạch - máy mới còn rẻ hơn tiền sửa."
+    display_answer: My old printer is ten years old. It's not worth repairing - a new one costs less than the repair.
+
+  - key: en:exercise:monsv-comp-translate-same-as
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:the-same-as
+    prompt:
+      source_text: Giá trên mạng giống hệt giá ở cửa hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The online price is the same as the price in the shop.
+        - The online price is the same as the price in the store.
+        - The online price is the same as the shop price.
+        - The online price is the same as the store price.
+        - The price online is the same as the price in the shop.
+        - The price online is the same as the price in the store.
+        - The online price is exactly the same as the price in the shop.
+        - The online price is exactly the same as the shop price.
+        - The online price is the same as in the shop.
+        - The online price is the same as in the store.
+        - The price online is exactly the same as in the shop.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The online price is same as the price in the shop.
+        feedback_vi: Luôn có the trước same - the same as.
+        error_tag: the_same
+      - answer: The online price is the same with the price in the shop.
+        feedback_vi: The same đi với as, không đi với with.
+        error_tag: the_same
+      - answer: The online price is the same like the price in the shop.
+        feedback_vi: The same đi với as, không đi với like.
+        error_tag: the_same
+    explanation:
+      vi: "\"Giống hệt\" là the same as (có the, dùng as). Thêm exactly nếu muốn nhấn mạnh \"y hệt\"."
+    display_answer: The online price is the same as the price in the shop.
+
+  - key: en:exercise:monsv-comp-translate-slightly
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:similar-to
+    prompt:
+      source_text: Chiếc điện thoại này tương tự mẫu năm ngoái, nhưng pin tốt hơn một chút.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This phone is similar to last year's model, but the battery is slightly better.
+        - This phone is similar to last year's model, but the battery is a bit better.
+        - This phone is similar to last year's model, but the battery is a little better.
+        - This phone is similar to last year's model, but its battery is slightly better.
+        - This phone is similar to last year's model, but its battery is a bit better.
+        - This phone is similar to last year's model but the battery is slightly better.
+        - This phone is similar to the model from last year, but the battery is slightly better.
+        - This phone is similar to the model from last year, but the battery is a bit better.
+        - This phone is similar to last year's model, but it has a slightly better battery.
+        - This phone is similar to last year's model, but it has a bit better battery.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This phone is similar with last year's model, but the battery is slightly better.
+        feedback_vi: Similar đi với to - similar to.
+        error_tag: similar_to
+      - answer: This phone is similar to last year's model, but the battery is slightly gooder.
+        feedback_vi: So sánh hơn của good là better.
+        error_tag: irregular_comparative
+      - answer: This phone is similar to last year's model, but the battery is very better.
+        feedback_vi: Không dùng very trước so sánh hơn. Chênh ít dùng slightly hoặc a bit.
+        error_tag: comparative_modifier
+    explanation:
+      vi: "\"Tương tự\" là similar to. \"Tốt hơn một chút\" là slightly / a bit / a little better; good → better là so sánh bất quy tắc."
+    display_answer: This phone is similar to last year's model, but the battery is slightly better.
+
+  # ---------------- application ----------------
+  - key: en:exercise:monsv-comp-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:value-for-money
+    prompt:
+      stem: "Bạn bè hỏi nên mua xe đạp cũ hay mới. Bạn muốn nói: xe cũ rẻ hơn nhiều, không nhẹ bằng xe mới, nhưng rất đáng tiền. Câu nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: c4q, text: "The second-hand bike is a lot cheaper. It isn't as light as a new one, but it's really good value for money.", lang: en }
+        - { id: i9b, text: "The second-hand bike is very cheaper. It isn't as lighter as a new one, but it's really good value for money.", lang: en }
+        - { id: u6w, text: "The second-hand bike is a lot cheaper. It isn't light than a new one, but it's really worth money.", lang: en }
+        - { id: k2x, text: "The second-hand bike is a lot more cheap. It isn't as light like a new one, but it's really cheap value.", lang: en }
+    answer:
+      correct_option_id: c4q
+    explanation:
+      vi: A lot cheaper nói chênh nhiều; not as + tính từ gốc + as nói không bằng; good value for money là đáng tiền. Các phương án khác dùng very với so sánh hơn, as lighter as, light than, as … like.
+    display_answer: "The second-hand bike is a lot cheaper. It isn't as light as a new one, but it's really good value for money."
+
+  - key: en:exercise:monsv-comp-order-far
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:comparative-modifiers
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Gói cước mới đắt hơn nhiều so với gói cũ.\""
+      tokens:
+        - { id: t-than, text: than the old one }
+        - { id: t-far, text: far }
+        - { id: t-plan, text: The new plan }
+        - { id: t-more, text: more expensive }
+        - { id: t-is, text: is }
+        - { id: t-very, text: very }
+    answer:
+      orders:
+        - [t-plan, t-is, t-far, t-more, t-than]
+    explanation:
+      vi: Far đứng trước so sánh hơn để nói chênh nhiều - far more expensive. Very không đi với so sánh hơn nên là token thừa.
+    display_answer: The new plan is far more expensive than the old one.
+
+  - key: en:exercise:monsv-comp-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:second-hand
+    prompt:
+      source_text: Second-hand phones aren't always as reliable as new ones, so check the battery before you buy.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Điện thoại cũ không phải lúc nào cũng đáng tin cậy bằng điện thoại mới, nên hãy kiểm tra pin trước khi mua.
+        - Điện thoại đã qua sử dụng không phải lúc nào cũng bền bằng máy mới, vì vậy hãy kiểm tra pin trước khi mua.
+        - Điện thoại cũ không phải lúc nào cũng tốt bằng máy mới, nên hãy kiểm tra pin trước khi mua.
+        - Điện thoại cũ không phải lúc nào cũng đáng tin bằng điện thoại mới, nên bạn hãy kiểm tra pin trước khi mua.
+        - Điện thoại cũ không phải lúc nào cũng ổn định bằng máy mới, nên hãy kiểm tra pin trước khi mua.
+        - Điện thoại đã qua sử dụng không phải lúc nào cũng đáng tin cậy bằng máy mới, nên hãy kiểm tra pin trước khi mua.
+        - Điện thoại cũ không phải lúc nào cũng bền bằng điện thoại mới, nên hãy kiểm tra pin trước khi mua nhé.
+        - Máy cũ không phải lúc nào cũng đáng tin cậy bằng máy mới, nên hãy kiểm tra pin trước khi mua.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Aren't always as reliable as là "không phải lúc nào cũng đáng tin cậy bằng"; second-hand là "cũ, đã qua sử dụng". Câu mệnh lệnh check… dịch tự nhiên bằng "hãy kiểm tra".
+    display_answer: Điện thoại cũ không phải lúc nào cũng đáng tin cậy bằng điện thoại mới, nên hãy kiểm tra pin trước khi mua.

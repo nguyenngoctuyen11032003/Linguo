@@ -1,0 +1,362 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:money-services-say-tell
+order_index: 3
+level: b1
+title:
+  vi: She told me to wait - gọi tổng đài, say/tell và kể lại lời yêu cầu
+objectives:
+  - vi: Phân biệt say và tell - tell luôn có người nghe ngay sau, say thì không.
+  - vi: Kể lại lời yêu cầu và lời nhờ bằng tell / ask somebody (not) to + V.
+  - vi: Dùng các cụm khi gọi tổng đài - be on hold, put somebody through, cancel, deal with.
+estimated_minutes: 20
+skills: [grammar, speaking, listening]
+prerequisites: [en:lesson:money-services-money]
+items:
+  - item: en:item:say-vs-tell
+  - item: en:item:tell-sb-to
+  - item: en:item:ask-sb-to
+  - item: en:item:tell-sb-not-to
+  - item: en:item:customer-service
+  - item: en:item:be-on-hold
+  - item: en:item:put-through
+  - item: en:item:cancel
+  - item: en:item:deal-with
+  - item: en:item:receipt
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được tổng đài để huỷ dịch vụ hoặc báo lỗi, rồi kể lại cho người khác nhân viên đã bảo bạn làm gì - một kỹ năng rất thực tế khi sống và làm việc với người nước ngoài.
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ có \"nói\", tiếng Anh có hai - tell + người nghe (She told me the price), say + nội dung (She said the price was too high). Muốn thêm người nghe sau say thì phải có to - She said to me…, không bao giờ She said me."
+  - type: explain
+    text:
+      vi: "Kể lại một yêu cầu, mệnh lệnh - \"Please restart the app.\" → The agent told me to restart the app. Kể lại lời nhờ lịch sự - \"Could you hold for a moment?\" → She asked me to hold for a moment. Mẫu chung - tell / ask + người + to + V."
+  - type: explain
+    text:
+      vi: "Yêu cầu phủ định \"Don't turn off the modem.\" → He told me not to turn off the modem. Not đứng ngay trước to; không viết told me don't turn off."
+  - type: deep_explain
+    text:
+      vi: "Với tell/ask + to + V, bạn không cần lùi thì vì to + V không có thì. Khi kể lại một câu khẳng định (không phải yêu cầu) thì thường lùi thì - \"Your card is blocked\" → She said my card was blocked; bạn sẽ học kỹ hơn ở trình độ B2. Trong cuộc gọi, nhân viên thường nói I'll put you through (nối máy) hoặc Could you hold, please? (vui lòng chờ máy)."
+  - type: example
+    target: The agent told me to restart the router and wait five minutes.
+    target_lang: en
+    translation:
+      vi: Nhân viên bảo tôi khởi động lại bộ phát wifi và chờ năm phút.
+    note:
+      vi: Tell + người + to + V - kể lại một chỉ dẫn.
+  - type: example
+    target: I was on hold for half an hour, and then they put me through to the wrong department!
+    target_lang: en
+    translation:
+      vi: Tôi phải chờ máy nửa tiếng, rồi họ lại nối máy nhầm sang bộ phận khác!
+    note:
+      vi: Be on hold - chờ máy; put somebody through - nối máy.
+  - type: example
+    target: The manager said the problem was fixed, but she asked me not to cancel my order yet.
+    target_lang: en
+    translation:
+      vi: Quản lý nói sự cố đã được khắc phục, nhưng chị ấy đề nghị tôi đừng huỷ đơn vội.
+    note:
+      vi: Said + nội dung (không có người nghe); asked me not to + V.
+  - type: common_mistake
+    wrong: He said me to call back later.
+    right: He told me to call back later.
+    target_lang: en
+    note:
+      vi: Có người nghe (me) ngay sau thì dùng tell. Say không đi trực tiếp với người nghe.
+  - type: common_mistake
+    wrong: She told me don't share my password.
+    right: She told me not to share my password.
+    target_lang: en
+    note:
+      vi: Yêu cầu phủ định khi kể lại thành not to + V.
+  - type: common_mistake
+    wrong: They asked me send a copy of the receipt.
+    right: They asked me to send a copy of the receipt.
+    target_lang: en
+    note:
+      vi: Sau ask/tell + người cần to trước động từ.
+  - type: summary
+    points:
+      - vi: tell + người (+ nội dung) · say + nội dung · say to + người.
+      - vi: tell / ask + người + to + V - kể lại yêu cầu, lời nhờ.
+      - vi: tell / ask + người + not to + V - yêu cầu phủ định.
+      - vi: be on hold · put somebody through · cancel · deal with a problem.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:monsv-tell-mcq-said-told
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:say-vs-tell
+    prompt:
+      stem: "Chọn đáp án đúng: The receptionist ___ us that breakfast was served until ten."
+      stem_lang: vi
+      options:
+        - { id: h4b, text: told, lang: en }
+        - { id: c9w, text: said, lang: en }
+        - { id: l2n, text: said to, lang: en }
+        - { id: u7e, text: talked, lang: en }
+    answer:
+      correct_option_id: h4b
+    explanation:
+      vi: Ngay sau chỗ trống là người nghe (us), nên dùng told. Said không đi trực tiếp với người nghe; said to us that… nghe nặng nề và ít dùng; talked không đi với that.
+    display_answer: told
+
+  - key: en:exercise:monsv-tell-mcq-not-to
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:tell-sb-not-to
+    prompt:
+      stem: "Nhân viên ngân hàng nói: \"Don't give your OTP code to anyone.\" Câu kể lại nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f3s, text: "She told me not to give my OTP code to anyone.", lang: en }
+        - { id: k8y, text: "She told me don't give my OTP code to anyone.", lang: en }
+        - { id: z1d, text: "She said me not to give my OTP code to anyone.", lang: en }
+        - { id: q6o, text: "She told me to not giving my OTP code to anyone.", lang: en }
+    answer:
+      correct_option_id: f3s
+    explanation:
+      vi: Yêu cầu phủ định khi kể lại thành tell + người + not to + V. Không giữ nguyên don't, không dùng said me, và sau to là động từ nguyên mẫu.
+    display_answer: "She told me not to give my OTP code to anyone."
+
+  - key: en:exercise:monsv-tell-listen-hold
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:put-through
+    prompt:
+      audio_asset_id: null
+      fallback_text: Could you hold for a moment, please? I'll put you through to someone who deals with refunds.
+      options:
+        - { id: x4h, text: "Anh chị vui lòng chờ máy một chút nhé? Tôi sẽ nối máy cho anh chị đến người phụ trách hoàn tiền.", lang: vi }
+        - { id: m7a, text: "Anh chị có thể gọi lại sau được không? Bộ phận hoàn tiền hiện đã nghỉ.", lang: vi }
+        - { id: b5g, text: "Anh chị vui lòng giữ hoá đơn nhé? Tôi sẽ tự xử lý việc hoàn tiền.", lang: vi }
+        - { id: t2r, text: "Anh chị chờ một chút, tôi sẽ huỷ yêu cầu hoàn tiền của anh chị.", lang: vi }
+    answer:
+      correct_option_id: x4h
+    explanation:
+      vi: Hold (on the phone) là "chờ máy"; put you through to là "nối máy đến"; someone who deals with refunds là "người phụ trách hoàn tiền". Hold không có nghĩa "giữ hoá đơn" trong cuộc gọi này.
+    display_answer: "Anh chị vui lòng chờ máy một chút nhé? Tôi sẽ nối máy cho anh chị đến người phụ trách hoàn tiền."
+
+  - key: en:exercise:monsv-tell-fill-asked-to-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:ask-sb-to
+    prompt:
+      template: "The courier asked {{b1}} {{b2}} sign for the parcel."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Người giao hàng nhờ tôi ký nhận gói hàng."
+        - "Gợi ý: ask + người (đại từ tân ngữ) + một từ nhỏ trước động từ."
+    answer:
+      blanks:
+        b1: [me, us]
+        b2: [to]
+    known_wrong:
+      - answer: I
+        feedback_vi: Sau ask cần đại từ tân ngữ - me, không dùng I.
+        error_tag: object_pronoun
+      - answer: for
+        feedback_vi: Ask somebody to + V - nhờ ai làm gì.
+        error_tag: ask_to
+      - answer: that
+        feedback_vi: Kể lại lời nhờ dùng ask + người + to + V, không dùng that.
+        error_tag: ask_to
+    explanation:
+      vi: Mẫu kể lại lời nhờ là ask + người (tân ngữ me) + to + V. Câu gốc có thể là "Could you sign for the parcel, please?".
+    display_answer: The courier asked me to sign for the parcel.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:monsv-tell-fill-told-to
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:tell-sb-to
+    prompt:
+      template: "The technician {{b1}} me {{b2}} keep the receipt until the end of the warranty."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [told, asked, reminded]
+        b2: [to]
+    known_wrong:
+      - answer: said
+        feedback_vi: Ngay sau là người nghe (me), nên dùng told chứ không dùng said.
+        error_tag: say_tell
+      - answer: tell
+        feedback_vi: Câu kể lại chuyện đã xảy ra nên dùng quá khứ - told.
+        error_tag: past_tense
+      - answer: for
+        feedback_vi: Tell somebody to + V.
+        error_tag: tell_to
+    explanation:
+      vi: Kể lại lời dặn của kỹ thuật viên - told + me + to + V. Có me ngay sau nên không dùng said.
+    display_answer: The technician told me to keep the receipt until the end of the warranty.
+
+  - key: en:exercise:monsv-tell-translate-cancel
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:cancel
+    prompt:
+      source_text: Tôi muốn huỷ gói đăng ký từ tháng sau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I'd like to cancel my subscription from next month.
+        - I would like to cancel my subscription from next month.
+        - I want to cancel my subscription from next month.
+        - I'd like to cancel my subscription starting next month.
+        - I want to cancel my subscription starting next month.
+        - I'd like to cancel the subscription from next month.
+        - I want to cancel the subscription from next month.
+        - I'd like to cancel my subscription from next month on.
+        - I'd like to cancel my plan from next month.
+        - I want to cancel my plan from next month.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I'd like cancel my subscription from next month.
+        feedback_vi: Sau would like cần to - I'd like to cancel.
+        error_tag: would_like_to
+      - answer: I'd like to destroy my subscription from next month.
+        feedback_vi: Huỷ dịch vụ, đơn hàng là cancel; destroy là phá huỷ vật thể.
+        error_tag: word_choice
+      - answer: I'd like to cancel my subscription since next month.
+        feedback_vi: Since dùng với thì hoàn thành và mốc quá khứ. "Từ tháng sau" là from next month.
+        error_tag: since_from
+    explanation:
+      vi: Khi gọi tổng đài, I'd like to + V lịch sự hơn I want to. "Từ tháng sau" là from next month (hoặc starting next month).
+    display_answer: I'd like to cancel my subscription from next month.
+
+  - key: en:exercise:monsv-tell-translate-said
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:say-vs-tell
+    prompt:
+      source_text: Nhân viên nói với tôi rằng họ sẽ gọi lại cho tôi vào ngày mai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The agent told me that they would call me back the next day.
+        - The agent told me they would call me back the next day.
+        - The agent told me that they would call me back tomorrow.
+        - The agent told me they would call me back tomorrow.
+        - The agent told me they'd call me back the next day.
+        - The agent told me they'd call me back tomorrow.
+        - The agent said that they would call me back the next day.
+        - The agent said they would call me back the next day.
+        - The agent said they would call me back tomorrow.
+        - The staff member told me that they would call me back the next day.
+        - The employee told me that they would call me back the next day.
+        - The employee told me they would call me back tomorrow.
+        - The agent told me that they would call me back the following day.
+        - The agent said to me that they would call me back the next day.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The agent said me that they would call me back the next day.
+        feedback_vi: Say không đi trực tiếp với người nghe. Dùng told me hoặc said to me.
+        error_tag: say_tell
+      - answer: The agent told that they would call me back the next day.
+        feedback_vi: Tell cần người nghe ngay sau - told me that….
+        error_tag: say_tell
+      - answer: The agent told me that they will call me back the next day.
+        feedback_vi: Khi kể lại chuyện đã qua, will thường lùi thành would.
+        error_tag: backshift
+    explanation:
+      vi: "\"Nói với tôi\" có người nghe nên dùng told me (hoặc said to me). Khi kể lại, will thường lùi thành would; tomorrow có thể đổi thành the next day nếu hôm nay đã là ngày khác."
+    display_answer: The agent told me that they would call me back the next day.
+
+  # ---------------- application ----------------
+  - key: en:exercise:monsv-tell-mcq-report-call
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:be-on-hold
+    prompt:
+      stem: "Bạn kể lại với đồng nghiệp về cuộc gọi tổng đài: phải chờ máy lâu, nhân viên bảo bạn gửi ảnh hoá đơn và dặn đừng mở hộp. Câu nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: g5k, text: "I was on hold for ages. Then the agent told me to send a photo of the receipt and asked me not to open the box.", lang: en }
+        - { id: a1u, text: "I was in hold for ages. Then the agent said me to send a photo of the receipt and asked me don't open the box.", lang: en }
+        - { id: e8p, text: "I was on hold for ages. Then the agent told to me send a photo of the receipt and asked me to not opening the box.", lang: en }
+        - { id: r6c, text: "I held for ages. Then the agent told me sending a photo of the receipt and said me not to open the box.", lang: en }
+    answer:
+      correct_option_id: g5k
+    explanation:
+      vi: Chờ máy là be on hold; kể lại chỉ dẫn là told me to + V; dặn phủ định là asked me not to + V. Các phương án khác sai giới từ (in hold), dùng said me, giữ don't hoặc dùng -ing sau to.
+    display_answer: "I was on hold for ages. Then the agent told me to send a photo of the receipt and asked me not to open the box."
+
+  - key: en:exercise:monsv-tell-order-deal-with
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:deal-with
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Họ bảo tôi chờ vì quản lý đang xử lý vấn đề.\""
+      tokens:
+        - { id: t-problem, text: the problem }
+        - { id: t-to-wait, text: to wait }
+        - { id: t-because, text: because the manager }
+        - { id: t-told, text: They told me }
+        - { id: t-dealing, text: was dealing with }
+        - { id: t-said, text: They said me }
+    answer:
+      orders:
+        - [t-told, t-to-wait, t-because, t-dealing, t-problem]
+    explanation:
+      vi: Kể lại yêu cầu - told me to wait (không dùng said me). "Đang xử lý" lúc đó là quá khứ tiếp diễn was dealing with.
+    display_answer: They told me to wait because the manager was dealing with the problem.
+
+  - key: en:exercise:monsv-tell-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:customer-service
+    prompt:
+      source_text: Customer service asked me to describe the problem and told me not to worry.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ phận chăm sóc khách hàng đề nghị tôi mô tả vấn đề và bảo tôi đừng lo.
+        - Bộ phận chăm sóc khách hàng nhờ tôi mô tả vấn đề và bảo tôi đừng lo lắng.
+        - Tổng đài chăm sóc khách hàng yêu cầu tôi mô tả sự cố và bảo tôi đừng lo.
+        - Bên chăm sóc khách hàng đề nghị tôi mô tả vấn đề và nói tôi đừng lo.
+        - Nhân viên chăm sóc khách hàng yêu cầu tôi mô tả vấn đề và bảo tôi đừng lo lắng.
+        - Bộ phận chăm sóc khách hàng yêu cầu tôi mô tả vấn đề và dặn tôi đừng lo.
+        - Bộ phận chăm sóc khách hàng bảo tôi mô tả vấn đề và nói tôi đừng lo.
+        - Bên chăm sóc khách hàng nhờ tôi mô tả sự cố và bảo tôi đừng lo lắng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Asked me to describe là "đề nghị/nhờ tôi mô tả"; told me not to worry là "bảo tôi đừng lo". Not to + V chuyển thành "đừng" trong tiếng Việt.
+    display_answer: Bộ phận chăm sóc khách hàng đề nghị tôi mô tả vấn đề và bảo tôi đừng lo.

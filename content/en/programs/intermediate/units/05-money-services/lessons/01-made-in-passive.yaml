@@ -1,0 +1,359 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:money-services-passive
+order_index: 1
+level: b1
+title:
+  vi: Made in Vietnam, delivered tomorrow - câu bị động hiện tại đơn và quá khứ đơn
+objectives:
+  - vi: Dùng bị động is/are + V3 và was/were + V3 khi nói về sản phẩm, đơn hàng, dịch vụ.
+  - vi: Biết khi nào thêm by + người làm và khi nào nên bỏ.
+  - vi: Phân biệt made of / made from / made in / made by.
+estimated_minutes: 20
+skills: [grammar, reading]
+prerequisites: [en:lesson:travel-culture-review]
+items:
+  - item: en:item:passive-present-simple
+  - item: en:item:passive-past-simple
+  - item: en:item:passive-by-agent
+  - item: en:item:made-of-from-in
+  - item: en:item:deliver
+  - item: en:item:manufacture
+  - item: en:item:parcel
+  - item: en:item:receipt
+  - item: en:item:warranty
+  - item: en:item:irregular-past-participles
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu nhãn sản phẩm, thông báo giao hàng và trang "Về chúng tôi" của một cửa hàng online - những nơi câu bị động xuất hiện liên tục - và tự viết được những câu như vậy.
+  - type: explain
+    text:
+      vi: "Câu bị động đặt sản phẩm hoặc sự việc lên làm chủ ngữ, khi người làm không quan trọng hoặc không ai biết. Công thức - be + V3. Hiện tại - Our coffee is roasted every morning. Quá khứ - Your order was sent yesterday."
+  - type: explain
+    text:
+      vi: "Tiếng Việt thường không cần \"được/bị\" (Hàng giao trong 2 ngày), nhưng tiếng Anh bắt buộc có be. Viết The order delivered yesterday là thiếu động từ - phải là The order was delivered yesterday."
+  - type: explain
+    text:
+      vi: "Chỉ thêm by + người làm khi đó là thông tin mới, đáng nói - This app was designed by a team of students. Bỏ by people, by someone, by them vì không thêm nghĩa gì."
+  - type: deep_explain
+    text:
+      vi: "Be chia theo chủ ngữ mới, không theo người làm - The phones (số nhiều) are made in Bac Ninh. Made of dùng khi vẫn nhận ra chất liệu (a table made of wood); made from khi chất liệu đã biến đổi (paper is made from wood). Câu bị động rất hay gặp trong văn bản thông tin, quảng cáo, tin tức vì nó giúp người viết tập trung vào sản phẩm."
+  - type: example
+    target: All our T-shirts are made of organic cotton and are printed by hand in Hoi An.
+    target_lang: en
+    translation:
+      vi: Tất cả áo phông của chúng tôi được làm bằng cotton hữu cơ và được in thủ công tại Hội An.
+    note:
+      vi: Bị động hiện tại (are made, are printed); made of - còn thấy chất liệu.
+  - type: example
+    target: Your parcel was collected from our warehouse at 9 a.m. and will arrive this afternoon.
+    target_lang: en
+    translation:
+      vi: Gói hàng của bạn đã được lấy từ kho lúc 9 giờ sáng và sẽ đến nơi chiều nay.
+    note:
+      vi: Bị động quá khứ (was collected) - không cần nói ai lấy.
+  - type: example
+    target: The first smartphone in this series was designed by a small team in Ho Chi Minh City.
+    target_lang: en
+    translation:
+      vi: Chiếc điện thoại đầu tiên của dòng này được một nhóm nhỏ ở TP.HCM thiết kế.
+    note:
+      vi: By + người làm - thông tin quan trọng, đáng nói.
+  - type: common_mistake
+    wrong: My order delivered yesterday.
+    right: My order was delivered yesterday.
+    target_lang: en
+    note:
+      vi: Đơn hàng không tự giao, nó được giao - cần was + V3. Tiếng Việt "đơn hàng giao hôm qua" bỏ "được" nên người Việt hay quên be.
+  - type: common_mistake
+    wrong: These shoes are make in Vietnam.
+    right: These shoes are made in Vietnam.
+    target_lang: en
+    note:
+      vi: Sau be trong câu bị động là V3 (made), không phải động từ nguyên mẫu.
+  - type: common_mistake
+    wrong: The receipt was printed by someone at the counter.
+    right: The receipt was printed at the counter.
+    target_lang: en
+    note:
+      vi: By someone không thêm thông tin, nên bỏ đi cho tự nhiên.
+  - type: summary
+    points:
+      - vi: Bị động hiện tại - am/is/are + V3; quá khứ - was/were + V3.
+      - vi: Be chia theo chủ ngữ mới (the phones are…, the parcel was…).
+      - vi: Chỉ dùng by + người làm khi thông tin đó quan trọng.
+      - vi: made of (thấy chất liệu) · made from (chất liệu đã biến đổi) · made in (nơi) · made by (ai).
+      - vi: Từ vựng - deliver, manufacture, parcel, receipt, warranty.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:monsv-pass-mcq-are-grown
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:passive-present-simple
+    prompt:
+      stem: "Chọn đáp án đúng cho nhãn sản phẩm: Our tea leaves ___ by hand in the mountains of Ha Giang."
+      stem_lang: vi
+      options:
+        - { id: k3v, text: are picked, lang: en }
+        - { id: d7n, text: pick, lang: en }
+        - { id: w1s, text: are pick, lang: en }
+        - { id: q8f, text: picked, lang: en }
+    answer:
+      correct_option_id: k3v
+    explanation:
+      vi: Lá trà không tự hái, chúng được hái - cần bị động are + V3 (picked). Tea leaves số nhiều nên dùng are; picked đứng một mình thiếu be.
+    display_answer: are picked
+
+  - key: en:exercise:monsv-pass-mcq-made-from
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:made-of-from-in
+    prompt:
+      stem: "Chọn đáp án đúng: Rice paper is made ___ rice flour, water and salt."
+      stem_lang: vi
+      options:
+        - { id: u6c, text: from, lang: en }
+        - { id: e2y, text: in, lang: en }
+        - { id: m9b, text: by, lang: en }
+        - { id: z4p, text: with of, lang: en }
+    answer:
+      correct_option_id: u6c
+    explanation:
+      vi: Bánh tráng không còn nhìn ra bột gạo ban đầu - chất liệu đã biến đổi - nên dùng made from. Made in dùng cho nơi sản xuất, made by cho người làm.
+    display_answer: from
+
+  - key: en:exercise:monsv-pass-listen-parcel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:passive-past-simple
+    prompt:
+      audio_asset_id: null
+      fallback_text: Your parcel was left at the reception desk because nobody was at home.
+      options:
+        - { id: a5t, text: "Gói hàng của bạn đã được để ở quầy lễ tân vì không có ai ở nhà.", lang: vi }
+        - { id: h8r, text: "Bạn đã để gói hàng ở quầy lễ tân vì bạn không ở nhà.", lang: vi }
+        - { id: o3w, text: "Gói hàng của bạn sẽ được giao đến quầy lễ tân khi có người ở nhà.", lang: vi }
+        - { id: j1x, text: "Lễ tân đã gửi trả gói hàng vì không ai nhận.", lang: vi }
+    answer:
+      correct_option_id: a5t
+    explanation:
+      vi: Was left là bị động quá khứ - gói hàng đã được (người giao) để lại. Phương án "bạn đã để" hiểu nhầm thành chủ động; will không có trong câu.
+    display_answer: "Gói hàng của bạn đã được để ở quầy lễ tân vì không có ai ở nhà."
+
+  - key: en:exercise:monsv-pass-fill-was-were-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:passive-past-simple
+    prompt:
+      template: "The old market {{b1}} built in 1914, and its roof {{b2}} repaired after the storm last year."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Khu chợ cũ được xây năm 1914, và mái của nó được sửa sau trận bão năm ngoái."
+        - "Gợi ý: hai việc trong quá khứ; chủ ngữ đều là số ít."
+    answer:
+      blanks:
+        b1: [was]
+        b2: [was]
+    known_wrong:
+      - answer: were
+        feedback_vi: The old market và its roof đều là số ít nên dùng was.
+        error_tag: be_agreement
+      - answer: is
+        feedback_vi: Có in 1914 và last year nên dùng quá khứ - was.
+        error_tag: passive_tense
+      - answer: has
+        feedback_vi: Câu bị động dùng be + V3, không dùng has.
+        error_tag: passive_be
+    explanation:
+      vi: Cả hai việc đã xảy ra (in 1914, last year) và chủ ngữ số ít, nên dùng was + V3 - was built, was repaired.
+    display_answer: The old market was built in 1914, and its roof was repaired after the storm last year.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:monsv-pass-fill-delivered
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:deliver
+    prompt:
+      template: "Orders placed before 2 p.m. {{b1}} {{b2}} on the same day."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [are]
+        b2: [delivered, sent, shipped]
+    known_wrong:
+      - answer: deliver
+        feedback_vi: Sau are trong câu bị động cần V3 - delivered.
+        error_tag: passive_v3
+      - answer: is
+        feedback_vi: Orders là số nhiều nên dùng are.
+        error_tag: be_agreement
+      - answer: were
+        feedback_vi: Đây là quy định chung của cửa hàng (luôn đúng), nên dùng hiện tại - are.
+        error_tag: passive_tense
+    explanation:
+      vi: Đây là quy định luôn đúng nên dùng bị động hiện tại. Orders số nhiều - are + V3 (delivered). Placed before 2 p.m. là mệnh đề rút gọn, nghĩa là "được đặt trước 2 giờ chiều".
+    display_answer: Orders placed before 2 p.m. are delivered on the same day.
+
+  - key: en:exercise:monsv-pass-translate-warranty
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:warranty
+    prompt:
+      source_text: Máy giặt của tôi được sửa miễn phí vì nó vẫn còn bảo hành.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - My washing machine was repaired for free because it was still under warranty.
+        - My washing machine was fixed for free because it was still under warranty.
+        - My washing machine was repaired free of charge because it was still under warranty.
+        - My washing machine was fixed free of charge because it was still under warranty.
+        - My washing machine was repaired for free because it is still under warranty.
+        - My washing machine was fixed for free because it is still under warranty.
+        - My washing machine was repaired for free because it was still under guarantee.
+        - My washing machine was repaired free because it was still under warranty.
+        - My washing machine was repaired for free as it was still under warranty.
+        - My washing machine was repaired for free because it's still under warranty.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: My washing machine repaired for free because it was still under warranty.
+        feedback_vi: Máy giặt không tự sửa - cần bị động was repaired.
+        error_tag: passive_be
+      - answer: My washing machine was repair for free because it was still under warranty.
+        feedback_vi: Sau was cần V3 - repaired.
+        error_tag: passive_v3
+      - answer: My washing machine was repaired for free because it was still in warranty.
+        feedback_vi: Còn bảo hành là under warranty, không dùng in.
+        error_tag: collocation
+    explanation:
+      vi: "\"Được sửa\" là bị động quá khứ was repaired/fixed - không cần nói ai sửa. \"Còn bảo hành\" là cụm cố định be under warranty."
+    display_answer: My washing machine was repaired for free because it was still under warranty.
+
+  - key: en:exercise:monsv-pass-translate-founded-by
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:passive-by-agent
+    prompt:
+      source_text: Cửa hàng này được hai chị em mở vào năm 2019.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - This shop was opened by two sisters in 2019.
+        - This shop was opened in 2019 by two sisters.
+        - This store was opened by two sisters in 2019.
+        - This store was opened in 2019 by two sisters.
+        - This shop was started by two sisters in 2019.
+        - This shop was founded by two sisters in 2019.
+        - This store was founded by two sisters in 2019.
+        - This shop was set up by two sisters in 2019.
+        - The shop was opened by two sisters in 2019.
+        - The store was opened by two sisters in 2019.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: This shop opened by two sisters in 2019.
+        feedback_vi: Thiếu be - This shop was opened by….
+        error_tag: passive_be
+      - answer: This shop was opened from two sisters in 2019.
+        feedback_vi: Người thực hiện hành động trong câu bị động đi với by.
+        error_tag: passive_by
+      - answer: This shop is opened by two sisters in 2019.
+        feedback_vi: Có in 2019 nên dùng quá khứ - was opened.
+        error_tag: passive_tense
+    explanation:
+      vi: Cửa hàng là chủ ngữ, việc mở đã xảy ra nên dùng was + V3. "Hai chị em" là thông tin đáng nói nên giữ lại với by - by two sisters.
+    display_answer: This shop was opened by two sisters in 2019.
+
+  # ---------------- application ----------------
+  - key: en:exercise:monsv-pass-mcq-product-page
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:manufacture
+    prompt:
+      stem: "Bạn viết phần mô tả sản phẩm cho một cửa hàng online bán ba lô. Câu nào đúng và tự nhiên nhất?"
+      stem_lang: vi
+      options:
+        - { id: c2g, text: "Each backpack is made of recycled plastic bottles and is manufactured in our factory in Binh Duong.", lang: en }
+        - { id: l5k, text: "Each backpack made of recycled plastic bottles and manufactured by people in our factory in Binh Duong.", lang: en }
+        - { id: y9o, text: "Each backpack is make from recycled plastic bottles and is manufacture in our factory in Binh Duong.", lang: en }
+        - { id: f4u, text: "Each backpack are made of recycled plastic bottles and are manufactured in our factory in Binh Duong.", lang: en }
+    answer:
+      correct_option_id: c2g
+    explanation:
+      vi: Each backpack số ít nên dùng is + V3 (is made, is manufactured). Phương án thứ hai thiếu is và thêm by people thừa; thứ ba dùng make/manufacture thay cho V3; thứ tư chia are cho chủ ngữ số ít.
+    display_answer: "Each backpack is made of recycled plastic bottles and is manufactured in our factory in Binh Duong."
+
+  - key: en:exercise:monsv-pass-order-receipt
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:receipt
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Hoá đơn được gửi đến email của bạn sau mỗi lần mua hàng.\""
+      tokens:
+        - { id: t-every, text: after every purchase }
+        - { id: t-is, text: is }
+        - { id: t-receipt, text: A receipt }
+        - { id: t-email, text: to your email }
+        - { id: t-sent, text: sent }
+        - { id: t-send, text: send }
+    answer:
+      orders:
+        - [t-receipt, t-is, t-sent, t-email, t-every]
+    explanation:
+      vi: Đây là quy trình luôn xảy ra nên dùng bị động hiện tại - is + V3 (sent). Send là động từ nguyên mẫu, không đứng sau is trong câu bị động.
+    display_answer: A receipt is sent to your email after every purchase.
+
+  - key: en:exercise:monsv-pass-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:parcel
+    prompt:
+      source_text: The parcel was damaged during delivery, so a new one was sent to me the next day.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Gói hàng bị hư hỏng trong lúc giao, nên ngày hôm sau người ta gửi cho tôi một gói mới.
+        - Gói hàng bị hỏng trong quá trình giao hàng, nên hôm sau tôi được gửi một gói mới.
+        - Gói hàng bị hư hại khi vận chuyển, nên ngày hôm sau họ gửi cho tôi một gói khác.
+        - Gói hàng bị hỏng trong lúc giao, vì vậy hôm sau một gói mới được gửi cho tôi.
+        - Gói hàng bị hư hỏng trong quá trình giao, nên ngày hôm sau tôi được gửi một gói hàng mới.
+        - Bưu kiện bị hỏng trong lúc giao, nên ngày hôm sau người ta gửi cho tôi một cái mới.
+        - Gói hàng bị hư trong lúc giao, nên hôm sau họ gửi cho tôi gói mới.
+        - Gói hàng bị hỏng khi giao, nên ngày hôm sau một gói mới đã được gửi cho tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Was damaged là bị động mang nghĩa xấu nên dịch "bị hỏng"; was sent là bị động trung tính, tiếng Việt tự nhiên hơn khi nói "người ta/họ gửi" hoặc "tôi được gửi".
+    display_answer: Gói hàng bị hư hỏng trong lúc giao, nên ngày hôm sau người ta gửi cho tôi một gói mới.
