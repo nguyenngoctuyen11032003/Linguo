@@ -1,0 +1,408 @@
+# Học liệu unit "Số đếm & thời gian" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: số 0–99 ----------------
+  - key: ja:item:num-1-5
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 一・二・三・四・五
+      reading: いち・に・さん・よん・ご
+      romanization: ichi, ni, san, yon, go
+      pos: số đếm
+    back:
+      meaning:
+        vi: một, hai, ba, bốn, năm. Số 4 có hai cách đọc - よん (thường dùng) và し.
+      examples:
+        - target: いち、に、さん、よん、ご
+          translation:
+            vi: một, hai, ba, bốn, năm
+      pronunciation_note:
+        vi: に ngắn, không kéo dài; ご là "gô" ngắn.
+      confusion:
+        vi: し (4) trùng âm với "chết" nên người Nhật thường đọc 4 là よん.
+
+  - key: ja:item:num-6-10
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 六・七・八・九・十
+      reading: ろく・なな・はち・きゅう・じゅう
+      romanization: roku, nana, hachi, kyū, jū
+      pos: số đếm
+    back:
+      meaning:
+        vi: sáu, bảy, tám, chín, mười. Số 7 còn đọc しち, số 9 còn đọc く.
+      examples:
+        - target: ろく、なな、はち、きゅう、じゅう
+          translation:
+            vi: sáu, bảy, tám, chín, mười
+      pronunciation_note:
+        vi: きゅう và じゅう có ゅ nhỏ và kéo dài - "kyu-u", "ju-u".
+      confusion:
+        vi: Khi đếm số liên tiếp hay đọc số điện thoại, dùng なな và きゅう cho rõ.
+
+  - key: ja:item:num-tens
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 十一〜九十九
+      reading: じゅういち〜きゅうじゅうきゅう
+      romanization: jūichi – kyūjūkyū
+      pos: cách ghép số
+    back:
+      meaning:
+        vi: Ghép như tiếng Việt - じゅう + いち = 11, に + じゅう = 20, にじゅう + ご = 25. Số đứng trước じゅう là hàng chục, đứng sau là hàng đơn vị.
+      examples:
+        - target: さんじゅうよん
+          translation:
+            vi: ba mươi bốn (34)
+        - target: きゅうじゅうはち
+          translation:
+            vi: chín mươi tám (98)
+      confusion:
+        vi: 40 đọc よんじゅう, 70 đọc ななじゅう, 90 đọc きゅうじゅう - không dùng しじゅう, くじゅう.
+
+  - key: ja:item:zero
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, listening]
+    front:
+      text: ゼロ / 零
+      reading: ゼロ / れい
+      romanization: zero / rei
+      pos: số đếm
+    back:
+      meaning:
+        vi: số không. Khi đọc số điện thoại thường nói ゼロ.
+      examples:
+        - target: ゼロきゅうゼロ
+          translation:
+            vi: "090"
+      pronunciation_note:
+        vi: ゼロ đọc "dê-rô".
+
+  - key: ja:item:denwa-bangou
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 電話番号
+      reading: でんわばんごう
+      romanization: denwa bangō
+      pos: danh từ
+    back:
+      meaning:
+        vi: số điện thoại. Hỏi - でんわばんごうはなんばんですか (số điện thoại là số mấy?).
+      examples:
+        - target: でんわばんごうはなんばんですか。
+          translation:
+            vi: Số điện thoại của bạn là bao nhiêu?
+      pronunciation_note:
+        vi: Đọc số điện thoại từng chữ số, dấu gạch đọc の - ゼロきゅうゼロ の….
+
+  # ---------------- bài 2: số lớn, tiền ----------------
+  - key: ja:item:hyaku
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 百
+      reading: ひゃく
+      romanization: hyaku
+      pos: số đếm
+    back:
+      meaning:
+        vi: một trăm. 300 - さんびゃく, 600 - ろっぴゃく, 800 - はっぴゃく (đổi âm); các số khác ghép bình thường - にひゃく, ごひゃく.
+      examples:
+        - target: さんびゃくえん
+          translation:
+            vi: 300 yên
+      confusion:
+        vi: 100 chỉ nói ひゃく, không nói いちひゃく.
+
+  - key: ja:item:sen
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 千
+      reading: せん
+      romanization: sen
+      pos: số đếm
+    back:
+      meaning:
+        vi: một nghìn. 3000 - さんぜん, 8000 - はっせん (đổi âm); các số khác ghép bình thường - にせん, ごせん.
+      examples:
+        - target: せんごひゃくえん
+          translation:
+            vi: 1.500 yên
+      confusion:
+        vi: 1000 chỉ nói せん, không nói いちせん.
+
+  - key: ja:item:man
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, listening]
+    front:
+      text: 万
+      reading: まん
+      romanization: man
+      pos: số đếm
+    back:
+      meaning:
+        vi: mười nghìn (10.000). Tiếng Nhật đếm theo nhóm 4 chữ số - 10.000 là いちまん, 50.000 là ごまん.
+      examples:
+        - target: いちまんえん
+          translation:
+            vi: 10.000 yên
+      confusion:
+        vi: Khác tiếng Việt - "mười nghìn" là いちまん, không phải じゅうせん. 10.000 phải nói いちまん, có いち.
+
+  - key: ja:item:en
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 〜円
+      reading: えん
+      romanization: en
+      pos: đơn vị tiền
+    back:
+      meaning:
+        vi: yên - đơn vị tiền Nhật, đứng sau số - ひゃくえん (100 yên).
+      examples:
+        - target: これはごひゃくえんです。
+          translation:
+            vi: Cái này 500 yên.
+      pronunciation_note:
+        vi: Đọc "ên", không đọc "yen" như tiếng Anh.
+
+  - key: ja:item:ikura
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: いくら
+      romanization: ikura
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: bao nhiêu (tiền). Hỏi giá - いくらですか.
+      examples:
+        - target: これはいくらですか。
+          translation:
+            vi: Cái này bao nhiêu tiền?
+
+  # ---------------- bài 3: đếm đồ vật, người ----------------
+  - key: ja:item:tsu-counter
+    type: vocab
+    level: n5
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 一つ〜十
+      reading: ひとつ・ふたつ・みっつ・よっつ・いつつ・むっつ・ななつ・やっつ・ここのつ・とお
+      romanization: hitotsu … tō
+      pos: số đếm đồ vật
+    back:
+      meaning:
+        vi: Bộ số đếm đồ vật chung từ 1 đến 10 - dùng khi gọi món, mua đồ mà không cần biết lượng từ riêng.
+      examples:
+        - target: りんごをふたつください。
+          translation:
+            vi: Cho tôi hai quả táo.
+      confusion:
+        vi: Mười là とお, không có つ. Từ 11 trở lên quay về số thường - じゅういち.
+
+  - key: ja:item:ikutsu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: いくつ
+      romanization: ikutsu
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: mấy cái (hỏi số lượng đồ vật, đi với bộ ひとつ, ふたつ…). Còn dùng hỏi tuổi trẻ em.
+      examples:
+        - target: いくつですか。- みっつです。
+          translation:
+            vi: Mấy cái? - Ba cái.
+      confusion:
+        vi: いくつ hỏi số lượng, いくら hỏi giá tiền.
+
+  - key: ja:item:nin-counter
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜人
+      reading: 〜にん
+      romanization: nin
+      pos: lượng từ đếm người
+    back:
+      meaning:
+        vi: Đếm người - số + にん (さんにん 3 người). Ngoại lệ - ひとり (1 người), ふたり (2 người), よにん (4 người). Hỏi - なんにん.
+      examples:
+        - target: がくせいはごにんです。
+          translation:
+            vi: Có năm sinh viên.
+      confusion:
+        vi: 〜人 sau tên nước đọc じん (ベトナムじん), khi đếm người đọc にん (さんにん).
+
+  - key: ja:item:kazoku
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 家族
+      reading: かぞく
+      romanization: kazoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: gia đình
+      examples:
+        - target: わたしのかぞくはよにんです。
+          translation:
+            vi: Gia đình tôi có bốn người.
+
+  # ---------------- bài 4: giờ, thứ ----------------
+  - key: ja:item:ji-hours
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜時
+      reading: 〜じ
+      romanization: ji
+      pos: giờ
+    back:
+      meaning:
+        vi: Số + じ = mấy giờ - いちじ (1 giờ), ごじ (5 giờ). Ba giờ cần nhớ - よじ (4 giờ), しちじ (7 giờ), くじ (9 giờ). Hỏi - なんじ.
+      examples:
+        - target: いまなんじですか。- くじです。
+          translation:
+            vi: Bây giờ là mấy giờ? - 9 giờ.
+      confusion:
+        vi: 4 giờ là よじ, không phải よんじ; 9 giờ là くじ, không phải きゅうじ.
+
+  - key: ja:item:fun-minutes
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar, listening]
+    front:
+      text: 〜分
+      reading: 〜ふん / 〜ぷん
+      romanization: fun / pun
+      pos: phút
+    back:
+      meaning:
+        vi: Phút - ごふん (5 phút), じゅっぷん (10 phút), さんじゅっぷん (30 phút). 1, 3, 4, 6, 8, 10 đổi thành ぷん - いっぷん, さんぷん, よんぷん, ろっぷん, はっぷん, じゅっぷん.
+      examples:
+        - target: さんじじゅっぷんです。
+          translation:
+            vi: 3 giờ 10 phút.
+      confusion:
+        vi: 30 phút thường nói はん (rưỡi) - さんじはん.
+
+  - key: ja:item:han
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 半
+      reading: はん
+      romanization: han
+      pos: danh từ
+    back:
+      meaning:
+        vi: rưỡi, một nửa - しちじはん (7 giờ rưỡi).
+      examples:
+        - target: じゅうにじはんです。
+          translation:
+            vi: 12 giờ rưỡi.
+
+  - key: ja:item:ima
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 今
+      reading: いま
+      romanization: ima
+      pos: danh từ / trạng từ
+    back:
+      meaning:
+        vi: bây giờ
+      examples:
+        - target: いまなんじですか。
+          translation:
+            vi: Bây giờ là mấy giờ?
+
+  - key: ja:item:youbi
+    type: vocab
+    level: n5
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 〜曜日
+      reading: げつ・か・すい・もく・きん・ど・にち + ようび
+      romanization: getsuyōbi … nichiyōbi
+      pos: thứ trong tuần
+    back:
+      meaning:
+        vi: Thứ trong tuần - げつようび (thứ Hai), かようび (thứ Ba), すいようび (thứ Tư), もくようび (thứ Năm), きんようび (thứ Sáu), どようび (thứ Bảy), にちようび (Chủ nhật). Hỏi - なんようび.
+      examples:
+        - target: きょうはなんようびですか。- すいようびです。
+          translation:
+            vi: Hôm nay là thứ mấy? - Thứ Tư.
+      confusion:
+        vi: Tiếng Nhật gọi thứ theo tên (Mặt trăng, Lửa, Nước…), không theo số như tiếng Việt - げつようび là thứ Hai, không phải "thứ một".
+
+  - key: ja:item:kyou-ashita
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 今日 / 明日 / 昨日
+      reading: きょう / あした / きのう
+      romanization: kyō / ashita / kinō
+      pos: danh từ thời gian
+    back:
+      meaning:
+        vi: きょう - hôm nay; あした - ngày mai; きのう - hôm qua.
+      examples:
+        - target: あしたはどようびです。
+          translation:
+            vi: Ngày mai là thứ Bảy.
+      pronunciation_note:
+        vi: きょう là một nhịp "kyô" kéo dài, không đọc "ki-yô".

@@ -1,0 +1,352 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:daily-routine
+order_index: 3
+level: n5
+title:
+  vi: Một ngày của tôi - đuôi ます・ません
+objectives:
+  - vi: Kể lịch sinh hoạt bằng động từ đuôi ます - おきます, ねます, はたらきます, べんきょうします.
+  - vi: Nói giờ làm việc gì bằng 〜じに; biết từ nào không đi với に.
+  - vi: Phủ định bằng ません.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:going]
+items:
+  - item: ja:item:masu-masen
+  - item: ja:item:okimasu
+  - item: ja:item:nemasu
+  - item: ja:item:hatarakimasu
+  - item: ja:item:benkyou-shimasu
+  - item: ja:item:mainichi
+  - item: ja:item:particle-ni-time
+  - item: ja:item:ji-hours
+    role: reuse
+  - item: ja:item:youbi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể một ngày của mình - まいにちろくじにおきます (Hằng ngày tôi dậy lúc 6 giờ), どようびははたらきません (Thứ Bảy tôi không làm việc).
+  - type: explain
+    text:
+      vi: Động từ lịch sự kết thúc bằng ます (khẳng định) hoặc ません (phủ định). Một dạng ます dùng cho cả thói quen và việc sắp làm; động từ không đổi theo ngôi - tôi, anh ấy, họ đều おきます.
+  - type: explain
+    text:
+      vi: Giờ, ngày có số + に - しちじにおきます (dậy lúc 7 giờ), どようびに (vào thứ Bảy). Từ thời gian tương đối như まいにち, きょう, あした, いま không dùng に.
+  - type: explain
+    text:
+      vi: べんきょうします là danh từ べんきょう (việc học) + します (làm). Nhiều động từ khác cũng theo mẫu N + します - かいものします (đi mua sắm), りょこうします (đi du lịch).
+  - type: deep_explain
+    text:
+      vi: Với thứ trong tuần, に có thể có hoặc không - どようびにいきます và どようびいきます đều gặp; khi muốn tương phản ("thứ Bảy thì…") dùng は - どようびははたらきません. Khoảng thời gian dùng から (từ) … まで (đến) - くじからごじまで (từ 9 giờ đến 5 giờ). Chữ Hán - 起きます, 寝ます, 働きます, 勉強します, 毎日.
+  - type: example
+    target: まいにちろくじにおきます。
+    target_lang: ja
+    translation:
+      vi: Hằng ngày tôi dậy lúc 6 giờ.
+    note:
+      vi: まいにち không có に; ろくじ (có số) có に.
+  - type: example
+    target: よるじゅういちじにねます。
+    target_lang: ja
+    translation:
+      vi: Buổi tối tôi đi ngủ lúc 11 giờ.
+    note:
+      vi: よる - buổi tối, ban đêm.
+  - type: example
+    target: くじからごじまではたらきます。
+    target_lang: ja
+    translation:
+      vi: Tôi làm việc từ 9 giờ đến 5 giờ.
+    note:
+      vi: から - từ; まで - đến. Sau まで không cần に.
+  - type: example
+    target: どようびははたらきません。うちでべんきょうします。
+    target_lang: ja
+    translation:
+      vi: Thứ Bảy tôi không làm việc. Tôi học ở nhà.
+    note:
+      vi: は sau どようび nhấn "thứ Bảy thì khác ngày thường".
+  - type: common_mistake
+    wrong: まいにちにおきます。
+    right: まいにちおきます。
+    target_lang: ja
+    note:
+      vi: まいにち, きょう, あした không đi với に.
+  - type: common_mistake
+    wrong: ろくじおきます。
+    right: ろくじにおきます。
+    target_lang: ja
+    note:
+      vi: Giờ cụ thể (có số) cần に - "vào lúc".
+  - type: summary
+    points:
+      - vi: V ます - khẳng định (thói quen, việc sắp làm); V ません - phủ định.
+      - vi: Giờ có số + に - しちじに; まいにち, きょう, あした không có に.
+      - vi: おきます dậy · ねます ngủ · はたらきます làm việc · べんきょうします học.
+      - vi: から … まで - từ … đến.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:routine-mcq-ni
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-ni-time
+    prompt:
+      stem: Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: a9p, text: しちじにおきます。, lang: ja }
+        - { id: b4q, text: しちじをおきます。, lang: ja }
+        - { id: c8r, text: まいにちにおきます。, lang: ja }
+        - { id: d3s, text: しちじへおきます。, lang: ja }
+    answer:
+      correct_option_id: a9p
+    explanation:
+      vi: Giờ có số + に - しちじに. まいにち không đi với に; を và へ không chỉ thời điểm.
+    display_answer: しちじにおきます。
+
+  - key: ja:exercise:routine-mcq-masen
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:masu-masen
+    prompt:
+      stem: '"Tôi không làm việc" là câu nào?'
+      stem_lang: vi
+      options:
+        - { id: e7t, text: はたらきません。, lang: ja }
+        - { id: f2u, text: はたらきます。, lang: ja }
+        - { id: g6v, text: はたらきますか。, lang: ja }
+        - { id: h1w, text: はたらきじゃありません。, lang: ja }
+    answer:
+      correct_option_id: e7t
+    explanation:
+      vi: Phủ định động từ - ます → ません. じゃありません chỉ dùng cho danh từ + です.
+    display_answer: はたらきません。
+
+  - key: ja:exercise:routine-listen-sleep
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nemasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: まいにちじゅうにじにねます。
+      options:
+        - { id: i5x, text: Hằng ngày tôi đi ngủ lúc 12 giờ., lang: vi }
+        - { id: j9y, text: Hằng ngày tôi dậy lúc 12 giờ., lang: vi }
+        - { id: k4z, text: Hằng ngày tôi đi ngủ lúc 2 giờ., lang: vi }
+        - { id: l8a, text: Hôm nay tôi đi ngủ lúc 12 giờ., lang: vi }
+    answer:
+      correct_option_id: i5x
+    explanation:
+      vi: まいにち - hằng ngày; じゅうにじ - 12 giờ; ねます - đi ngủ. Dậy là おきます; 2 giờ là にじ.
+    display_answer: Hằng ngày tôi đi ngủ lúc 12 giờ.
+
+  - key: ja:exercise:routine-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:okimasu
+    prompt:
+      template: "まいにちろくじ{{b1}}おき{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Hằng ngày tôi dậy lúc 6 giờ."
+        - Chỗ thứ nhất là trợ từ "vào lúc"; chỗ thứ hai là đuôi khẳng định lịch sự.
+    answer:
+      blanks:
+        b1: [に]
+        b2: [ます]
+    known_wrong:
+      - answer: で
+        feedback_vi: Thời điểm dùng に; で chỉ nơi diễn ra hành động.
+        error_tag: particle_ni_time
+      - answer: ません
+        feedback_vi: ません là phủ định; câu này là khẳng định.
+        error_tag: negation
+    explanation:
+      vi: ろくじに - lúc 6 giờ; おきます - thức dậy.
+    display_answer: まいにちろくじにおきます。
+
+  - key: ja:exercise:routine-order-study
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:benkyou-shimasu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Hằng ngày tôi học lúc 8 giờ.”"
+      tokens:
+        - { id: t1, text: べんきょうします }
+        - { id: t2, text: はちじ }
+        - { id: t3, text: まいにち }
+        - { id: t4, text: に }
+    answer:
+      orders:
+        - [t3, t2, t4, t1]
+        - [t2, t4, t3, t1]
+    explanation:
+      vi: まいにち + はちじ + に + べんきょうします. Động từ luôn đứng cuối.
+    display_answer: まいにちはちじにべんきょうします。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:routine-fill-verbs
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hatarakimasu
+    prompt:
+      template: "Thức dậy - {{b1}}. Làm việc - {{b2}}. Không ngủ - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [おきます, 起きます]
+        b2: [はたらきます, 働きます]
+        b3: [ねません, 寝ません]
+    known_wrong:
+      - answer: ねます
+        feedback_vi: ねます là "ngủ"; "không ngủ" là ねません.
+        error_tag: negation
+      - answer: はだらきます
+        feedback_vi: た không có dấu đục - はたらきます.
+        error_tag: spelling
+    explanation:
+      vi: おきます (dậy), はたらきます (làm việc), ねません (không ngủ - phủ định của ねます).
+    display_answer: おきます / はたらきます / ねません
+
+  - key: ja:exercise:routine-write-work
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:masu-masen
+    prompt:
+      source_text: Chủ nhật tôi không làm việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - にちようびははたらきません。
+        - 日曜日は働きません。
+        - にちようびはたらきません。
+        - 日曜日働きません。
+        - にちようびにははたらきません。
+        - 日曜日には働きません。
+        - わたしはにちようびははたらきません。
+        - 私は日曜日は働きません。
+        - わたしはにちようびにはたらきません。
+        - 私は日曜日に働きません。
+        - にちようびにはたらきません。
+        - 日曜日に働きません。
+    known_wrong:
+      - answer: にちようびははたらきます。
+        feedback_vi: Câu phủ định - はたらきません.
+        error_tag: negation
+      - answer: にちようびははたらきじゃありません。
+        feedback_vi: Động từ phủ định bằng ません, không dùng じゃありません.
+        error_tag: negation_form
+    explanation:
+      vi: にちようびは (Chủ nhật thì) + はたらきません. は nhấn sự tương phản với các ngày khác.
+    display_answer: にちようびははたらきません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:routine-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:hatarakimasu
+    prompt:
+      source_text: くじからごじまではたらきます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi làm việc từ 9 giờ đến 5 giờ.
+        - Tôi làm việc từ chín giờ đến năm giờ.
+        - Làm việc từ 9 giờ đến 5 giờ.
+        - Tôi làm từ 9 giờ đến 5 giờ.
+        - Tôi làm việc từ 9h đến 5h.
+        - Mình làm việc từ 9 giờ đến 5 giờ.
+        - Tôi làm việc từ 9 giờ tới 5 giờ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi làm việc từ 5 giờ đến 9 giờ.
+        feedback_vi: から đứng sau mốc bắt đầu (くじ - 9 giờ), まで sau mốc kết thúc (ごじ - 5 giờ).
+        error_tag: kara_made
+    explanation:
+      vi: くじから - từ 9 giờ; ごじまで - đến 5 giờ; はたらきます - làm việc.
+    display_answer: Tôi làm việc từ 9 giờ đến 5 giờ.
+
+  - key: ja:exercise:routine-mcq-tomorrow
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:mainichi
+    prompt:
+      stem: Bạn muốn nói "Ngày mai tôi dậy lúc 5 giờ." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m2b, text: あしたごじにおきます。, lang: ja }
+        - { id: n6c, text: あしたにごじにおきます。, lang: ja }
+        - { id: o1d, text: あしたごじおきます。, lang: ja }
+        - { id: p5e, text: あしたごじにねます。, lang: ja }
+    answer:
+      correct_option_id: m2b
+    explanation:
+      vi: あした không có に, ごじ (giờ có số) cần に. ねます là "ngủ", không phải "dậy".
+    display_answer: あしたごじにおきます。
+
+  - key: ja:exercise:routine-write-study
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:benkyou-shimasu
+    prompt:
+      source_text: Hằng ngày tôi học lúc 8 giờ tối.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - まいにちよるはちじにべんきょうします。
+        - 毎日夜八時に勉強します。
+        - 毎日夜8時に勉強します。
+        - まいにちごごはちじにべんきょうします。
+        - 毎日午後八時に勉強します。
+        - 毎日午後8時に勉強します。
+        - よるはちじにまいにちべんきょうします。
+        - わたしはまいにちよるはちじにべんきょうします。
+        - 私は毎日夜八時に勉強します。
+        - 私は毎日夜8時に勉強します。
+    known_wrong:
+      - answer: まいにちによるはちじにべんきょうします。
+        feedback_vi: まいにち không đi với に.
+        error_tag: particle_ni_time
+      - answer: まいにちよるはちじべんきょうします。
+        feedback_vi: Giờ có số cần に - はちじに.
+        error_tag: particle_ni_time
+      - answer: まいにちよるはちじにべんきょうしません。
+        feedback_vi: Câu khẳng định dùng します.
+        error_tag: negation
+    explanation:
+      vi: まいにち (hằng ngày) + よる (buổi tối) + はちじに (lúc 8 giờ) + べんきょうします.
+    display_answer: まいにちよるはちじにべんきょうします。

@@ -1,0 +1,348 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:ordering
+order_index: 2
+level: n5
+title:
+  vi: Gọi món ở quán - 〜をください
+objectives:
+  - vi: Gọi món bằng N をください / N をおねがいします, kèm số lượng.
+  - vi: Hiểu câu chào của nhân viên - いらっしゃいませ, なんめいさまですか.
+  - vi: Nói いただきます và ごちそうさまでした đúng lúc.
+estimated_minutes: 15
+skills: [speaking, listening, grammar]
+prerequisites: [ja:lesson:food-drinks]
+items:
+  - item: ja:item:o-kudasai
+  - item: ja:item:onegaishimasu
+  - item: ja:item:irasshaimase
+  - item: ja:item:itadakimasu
+  - item: ja:item:menyuu
+  - item: ja:item:tsu-counter
+    role: reuse
+  - item: ja:item:sumimasen
+    role: reuse
+  - item: ja:item:nin-counter
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự vào một quán ăn ở Nhật - trả lời số người, gọi món, gọi thêm nước và nói câu cảm ơn sau bữa ăn.
+  - type: explain
+    text:
+      vi: Gọi món - N をください (Cho tôi N) hoặc lịch sự hơn N をおねがいします. Số lượng đặt sau を - ラーメンをふたつください (Cho tôi hai bát ramen).
+  - type: explain
+    text:
+      vi: Khi bạn bước vào, nhân viên nói いらっしゃいませ (kính chào quý khách) rồi hỏi なんめいさまですか (mấy vị ạ?). Bạn chỉ cần trả lời ひとりです / ふたりです. Muốn gọi nhân viên - すみません！
+  - type: explain
+    text:
+      vi: Trước khi ăn nói いただきます, ăn xong nói ごちそうさまでした. Khi trả tiền ra về, nói ごちそうさまでした với nhân viên cũng là phép lịch sự.
+  - type: deep_explain
+    text:
+      vi: なんめいさま là cách hỏi số người rất kính trọng (めい = người, さま = quý vị) - chỉ nhân viên dùng; khách trả lời bằng ひとり, ふたり, さんにん bình thường. Ở Nhật thường không cần để tiền boa (tip). Muốn gọi món này - これをください (vừa nói vừa chỉ vào thực đơn) là câu "cứu cánh".
+  - type: example
+    target: いらっしゃいませ。なんめいさまですか。- ふたりです。
+    target_lang: ja
+    translation:
+      vi: Kính chào quý khách. Quý khách đi mấy người ạ? - Hai người.
+    note:
+      vi: Khách không cần đáp いらっしゃいませ.
+  - type: example
+    target: すみません、メニューをください。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, cho tôi xem thực đơn.
+    note:
+      vi: すみません để gọi nhân viên.
+  - type: example
+    target: ラーメンをふたつとおちゃをひとつください。
+    target_lang: ja
+    translation:
+      vi: Cho tôi hai bát ramen và một cốc trà.
+    note:
+      vi: Mỗi món + を + số lượng; nối hai món bằng と.
+  - type: example
+    target: これをおねがいします。
+    target_lang: ja
+    translation:
+      vi: Cho tôi món này.
+    note:
+      vi: Chỉ vào thực đơn và nói câu này - không cần biết tên món.
+  - type: common_mistake
+    wrong: ふたつラーメンをください。
+    right: ラーメンをふたつください。
+    target_lang: ja
+    note:
+      vi: Số lượng đứng sau を, ngay trước ください.
+  - type: common_mistake
+    wrong: たべるまえに、ごちそうさまでした。
+    right: たべるまえに、いただきます。
+    target_lang: ja
+    note:
+      vi: たべるまえに - trước khi ăn. Trước bữa nói いただきます; ごちそうさまでした chỉ nói sau khi ăn xong.
+  - type: summary
+    points:
+      - vi: N を (số lượng) ください / おねがいします - cho tôi N.
+      - vi: Nhân viên - いらっしゃいませ, なんめいさまですか; khách - ひとりです / ふたりです.
+      - vi: Gọi nhân viên - すみません！
+      - vi: Trước ăn - いただきます; sau ăn - ごちそうさまでした.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:order-mcq-kudasai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:o-kudasai
+    prompt:
+      stem: '"Cho tôi nước" là câu nào?'
+      stem_lang: vi
+      options:
+        - { id: a2x, text: みずをください。, lang: ja }
+        - { id: b6y, text: みずをのみます。, lang: ja }
+        - { id: c1z, text: みずがすきです。, lang: ja }
+        - { id: d5a, text: みずはどこですか。, lang: ja }
+    answer:
+      correct_option_id: a2x
+    explanation:
+      vi: N をください - cho tôi N. Các phương án khác là "tôi uống nước", "tôi thích nước", "nước ở đâu?".
+    display_answer: みずをください。
+
+  - key: ja:exercise:order-mcq-itadakimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:itadakimasu
+    prompt:
+      stem: Đồ ăn vừa mang ra, bạn chuẩn bị ăn. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: e9b, text: いただきます。, lang: ja }
+        - { id: f4c, text: ごちそうさまでした。, lang: ja }
+        - { id: g8d, text: いらっしゃいませ。, lang: ja }
+        - { id: h3e, text: おやすみなさい。, lang: ja }
+    answer:
+      correct_option_id: e9b
+    explanation:
+      vi: Trước khi ăn nói いただきます. ごちそうさまでした nói sau khi ăn, いらっしゃいませ là câu của nhân viên, おやすみなさい là chúc ngủ ngon.
+    display_answer: いただきます。
+
+  - key: ja:exercise:order-listen-order
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:onegaishimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: コーヒーをみっつおねがいします。
+      options:
+        - { id: i7f, text: Cho tôi ba cốc cà phê., lang: vi }
+        - { id: j2g, text: Cho tôi hai cốc cà phê., lang: vi }
+        - { id: k6h, text: Cho tôi ba cốc trà., lang: vi }
+        - { id: l1i, text: Tôi uống ba cốc cà phê., lang: vi }
+    answer:
+      correct_option_id: i7f
+    explanation:
+      vi: コーヒー - cà phê; みっつ - ba cái; おねがいします - cho tôi (lịch sự). Hai là ふたつ, trà là おちゃ.
+    display_answer: Cho tôi ba cốc cà phê.
+
+  - key: ja:exercise:order-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:menyuu
+    prompt:
+      template: "すみません、{{b1}}を{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Xin lỗi, cho tôi xem thực đơn."
+        - Chỗ thứ nhất là "thực đơn" (Katakana); chỗ thứ hai là "cho tôi".
+    answer:
+      blanks:
+        b1: [メニュー]
+        b2: [ください, 下さい, おねがいします, お願いします]
+    known_wrong:
+      - answer: めにゅう
+        feedback_vi: Từ ngoại lai viết Katakana - メニュー.
+        error_tag: katakana_loanword
+      - answer: メニュ
+        feedback_vi: Thiếu dấu kéo dài - メニュー.
+        error_tag: long_vowel
+    explanation:
+      vi: メニュー (thực đơn) + を + ください.
+    display_answer: すみません、メニューをください。
+
+  - key: ja:exercise:order-order-ramen
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:o-kudasai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Cho tôi hai bát ramen.”"
+      tokens:
+        - { id: t1, text: ください }
+        - { id: t2, text: ふたつ }
+        - { id: t3, text: ラーメン }
+        - { id: t4, text: を }
+        - { id: t5, text: ふたり }
+    answer:
+      orders:
+        - [t3, t4, t2, t1]
+    explanation:
+      vi: ラーメン + を + ふたつ (hai cái) + ください. ふたり dùng để đếm người.
+    display_answer: ラーメンをふたつください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:order-fill-restaurant
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:irasshaimase
+    prompt:
+      template: "Nhân viên - いらっしゃいませ。なんめいさまですか。 Bạn (đi một mình) - {{b1}}です。 Ăn xong - {{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [ひとり, 一人]
+        b2: [ごちそうさまでした, ごちそうさま, ご馳走様でした]
+    known_wrong:
+      - answer: ひとつ
+        feedback_vi: ひとつ đếm đồ vật; một người là ひとり.
+        error_tag: counter_type
+      - answer: いただきます
+        feedback_vi: いただきます nói trước khi ăn; ăn xong nói ごちそうさまでした.
+        error_tag: wrong_expression
+    explanation:
+      vi: Đi một mình - ひとりです. Ăn xong - ごちそうさまでした.
+    display_answer: ひとりです。/ ごちそうさまでした。
+
+  - key: ja:exercise:order-write-tea
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:o-kudasai
+    prompt:
+      source_text: Cho tôi một cốc trà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - おちゃをひとつください。
+        - お茶を一つください。
+        - おちゃをひとつおねがいします。
+        - お茶を一つお願いします。
+        - お茶をひとつください。
+        - お茶をひとつお願いします。
+        - お茶を一杯ください。
+    known_wrong:
+      - answer: ひとつおちゃをください。
+        feedback_vi: Số lượng đứng sau を - おちゃをひとつください.
+        error_tag: word_order
+      - answer: おちゃをひとりください。
+        feedback_vi: ひとり đếm người; đồ vật dùng ひとつ.
+        error_tag: counter_type
+      - answer: おちゃをのみます。
+        feedback_vi: Đó là "tôi uống trà"; gọi món dùng 〜をください.
+        error_tag: wrong_expression
+    explanation:
+      vi: おちゃ + を + ひとつ + ください (hoặc おねがいします).
+    display_answer: おちゃをひとつください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:order-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:onegaishimasu
+    prompt:
+      source_text: すしをふたつとみずをおねがいします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cho tôi hai phần sushi và nước.
+        - Cho tôi hai suất sushi và nước.
+        - Cho tôi hai sushi và nước.
+        - Làm ơn cho tôi hai phần sushi và nước.
+        - Cho tôi hai phần sushi và một ít nước.
+        - Cho tôi hai đĩa sushi và nước.
+        - Cho tôi hai phần sushi với nước.
+        - Cho mình hai phần sushi và nước.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cho tôi hai phần sushi và trà.
+        feedback_vi: みず là nước; trà là おちゃ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: すしをふたつ - hai phần sushi; と - và; みず - nước; おねがいします - cho tôi (lịch sự).
+    display_answer: Cho tôi hai phần sushi và nước.
+
+  - key: ja:exercise:order-mcq-point
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:o-kudasai
+    prompt:
+      stem: Bạn không biết tên món, chỉ tay vào hình trong thực đơn trước mặt mình. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: m6j, text: これをください。, lang: ja }
+        - { id: n1k, text: あれをください。, lang: ja }
+        - { id: o5l, text: これはなんですか。, lang: ja }
+        - { id: p9m, text: これをたべます。, lang: ja }
+    answer:
+      correct_option_id: m6j
+    explanation:
+      vi: Thực đơn ngay trước mặt mình → これ; gọi món → をください. あれ là vật ở xa; これはなんですか là hỏi; これをたべます chỉ là "tôi ăn cái này".
+    display_answer: これをください。
+
+  - key: ja:exercise:order-write-two-coffee
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:tsu-counter
+    prompt:
+      source_text: Cho tôi hai cốc cà phê và một cái bánh ngọt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - コーヒーをふたつとケーキをひとつください。
+        - コーヒーを二つとケーキを一つください。
+        - コーヒーをふたつとケーキをひとつおねがいします。
+        - コーヒーを二つとケーキを一つお願いします。
+        - コーヒーふたつとケーキひとつください。
+        - コーヒー二つとケーキ一つください。
+        - コーヒーふたつとケーキひとつおねがいします。
+        - コーヒー二つとケーキ一つお願いします。
+        - コーヒーをふたつ、ケーキをひとつください。
+        - コーヒーを二つ、ケーキを一つください。
+        - コーヒーをふたつケーキをひとつください。
+        - コーヒーを二つケーキを一つください。
+    known_wrong:
+      - answer: ふたつコーヒーとひとつケーキをください。
+        feedback_vi: Số lượng đứng sau tên món - コーヒーをふたつ、ケーキをひとつ.
+        error_tag: word_order
+      - answer: コーヒーをふたりとケーキをひとりください。
+        feedback_vi: ふたり / ひとり đếm người; đồ vật dùng ふたつ / ひとつ.
+        error_tag: counter_type
+    explanation:
+      vi: コーヒーをふたつ + と + ケーキをひとつ + ください. Mỗi món đi kèm số lượng của nó.
+    display_answer: コーヒーをふたつとケーキをひとつください。

@@ -1,0 +1,327 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:numbers-0-99
+order_index: 1
+level: n5
+title:
+  vi: Số từ 0 đến 99
+objectives:
+  - vi: Đếm từ 0 đến 10, nhớ hai cách đọc của 4, 7, 9.
+  - vi: Ghép số đến 99 - じゅういち, にじゅう, きゅうじゅうきゅう.
+  - vi: Đọc và hỏi số điện thoại.
+estimated_minutes: 14
+skills: [vocabulary, listening, speaking]
+prerequisites: [ja:lesson:greetings-intro-review]
+items:
+  - item: ja:item:num-1-5
+  - item: ja:item:num-6-10
+  - item: ja:item:num-tens
+  - item: ja:item:zero
+  - item: ja:item:denwa-bangou
+  - item: ja:item:question-ka
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đếm và nói các số đến 99, đọc số điện thoại của mình bằng tiếng Nhật.
+  - type: explain
+    text:
+      vi: Số 1–10 - いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう. Ba số có hai cách đọc - 4 (よん / し), 7 (なな / しち), 9 (きゅう / く). Khi nói số thông thường, ưu tiên よん, なな, きゅう.
+  - type: explain
+    text:
+      vi: Số lớn hơn 10 ghép giống tiếng Việt - じゅういち (mười một), にじゅう (hai mươi), にじゅうご (hai mươi lăm). Số đứng trước じゅう là hàng chục, đứng sau là hàng đơn vị.
+  - type: explain
+    text:
+      vi: Số điện thoại đọc từng chữ số; số 0 là ゼロ, dấu gạch ngang đọc の. Hỏi số điện thoại - でんわばんごうはなんばんですか.
+  - type: deep_explain
+    text:
+      vi: し (4) đồng âm với "chết" và く (9) đồng âm với "khổ", nên người Nhật tránh hai cách đọc này khi có thể. Nhưng chúng vẫn xuất hiện cố định trong một số từ - như giờ (しちじ, くじ) ở bài sau. Chữ Hán của số - 一 二 三 四 五 六 七 八 九 十.
+  - type: example
+    target: いち、に、さん、よん、ご、ろく、なな、はち、きゅう、じゅう。
+    target_lang: ja
+    translation:
+      vi: Một, hai, ba, bốn, năm, sáu, bảy, tám, chín, mười.
+    note:
+      vi: Đếm liên tục thường dùng よん, なな, きゅう.
+  - type: example
+    target: よんじゅうなな
+    target_lang: ja
+    translation:
+      vi: bốn mươi bảy (47)
+    note:
+      vi: よん + じゅう (40) + なな (7).
+  - type: example
+    target: でんわばんごうはなんばんですか。- ゼロきゅうゼロのいちにさんよんのごろくななはちです。
+    target_lang: ja
+    translation:
+      vi: Số điện thoại của bạn là số mấy? - 090-1234-5678.
+    note:
+      vi: Đọc từng chữ số, dấu gạch đọc の.
+  - type: common_mistake
+    wrong: ごじゅうに
+    right: にじゅうご
+    target_lang: ja
+    note:
+      vi: Muốn nói 25 thì hàng chục đứng trước - にじゅうご. ごじゅうに là 52, thứ tự giống tiếng Việt.
+  - type: common_mistake
+    wrong: しじゅう
+    right: よんじゅう
+    target_lang: ja
+    note:
+      vi: 40 đọc よんじゅう; 70 đọc ななじゅう, 90 đọc きゅうじゅう.
+  - type: summary
+    points:
+      - vi: 1–10 - いち に さん よん ご ろく なな はち きゅう じゅう.
+      - vi: 4 (よん/し), 7 (なな/しち), 9 (きゅう/く) có hai cách đọc.
+      - vi: 11–99 ghép như tiếng Việt - にじゅうご = 25.
+      - vi: Số 0 - ゼロ; số điện thoại đọc từng chữ số, gạch ngang đọc の.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:num099-mcq-seven
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:num-6-10
+    prompt:
+      stem: Số 7 trong tiếng Nhật đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: a3c, text: なな, lang: ja }
+        - { id: b8d, text: はち, lang: ja }
+        - { id: c2e, text: ろく, lang: ja }
+        - { id: d6f, text: きゅう, lang: ja }
+    answer:
+      correct_option_id: a3c
+    explanation:
+      vi: 7 là なな (hoặc しち). はち là 8, ろく là 6, きゅう là 9.
+    display_answer: なな
+
+  - key: ja:exercise:num099-mcq-twenty
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:num-tens
+    prompt:
+      stem: Số 25 đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: e1g, text: にじゅうご, lang: ja }
+        - { id: f5h, text: ごじゅうに, lang: ja }
+        - { id: g9i, text: じゅうにご, lang: ja }
+        - { id: h4j, text: にごじゅう, lang: ja }
+    answer:
+      correct_option_id: e1g
+    explanation:
+      vi: 25 = に (2) + じゅう (mười) + ご (5). ごじゅうに là 52; hai phương án còn lại sai cách ghép.
+    display_answer: にじゅうご
+
+  - key: ja:exercise:num099-listen-phone
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:zero
+    prompt:
+      audio_asset_id: null
+      fallback_text: ゼロはちゼロ、さんよんごろく
+      options:
+        - { id: i7k, text: 080-3456, lang: vi }
+        - { id: j2l, text: 090-3456, lang: vi }
+        - { id: k6m, text: 080-3465, lang: vi }
+        - { id: l1n, text: 070-3456, lang: vi }
+    answer:
+      correct_option_id: i7k
+    explanation:
+      vi: ゼロ (0) はち (8) ゼロ (0), さん (3) よん (4) ご (5) ろく (6). 9 là きゅう, 7 là なな.
+    display_answer: 080-3456
+
+  - key: ja:exercise:num099-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:num-1-5
+    prompt:
+      template: "いち、に、{{b1}}、よん、{{b2}}、ろく"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - Đếm từ 1 đến 6, điền số 3 và số 5.
+        - Số 3 đọc "san", số 5 đọc "go".
+    answer:
+      blanks:
+        b1: [さん, 三]
+        b2: [ご, 五]
+    known_wrong:
+      - answer: san
+        feedback_vi: Hãy gõ bằng Hiragana (さん), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: こ
+        feedback_vi: Số 5 là ご (có dấu đục), không phải こ.
+        error_tag: dakuten
+    explanation:
+      vi: いち (1), に (2), さん (3), よん (4), ご (5), ろく (6).
+    display_answer: いち、に、さん、よん、ご、ろく
+
+  - key: ja:exercise:num099-order-phone
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:denwa-bangou
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Nhật: “Số điện thoại là số mấy?”"
+      tokens:
+        - { id: t1, text: なんばん }
+        - { id: t2, text: か }
+        - { id: t3, text: でんわばんごう }
+        - { id: t4, text: です }
+        - { id: t5, text: は }
+    answer:
+      orders:
+        - [t3, t5, t1, t4, t2]
+    explanation:
+      vi: でんわばんごう + は + なんばん (số mấy) + です + か.
+    display_answer: でんわばんごうはなんばんですか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:num099-fill-numbers
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:num-tens
+    prompt:
+      template: "12 - {{b1}}. 40 - {{b2}}. 99 - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [じゅうに, 十二]
+        b2: [よんじゅう, 四十]
+        b3: [きゅうじゅうきゅう, 九十九]
+    known_wrong:
+      - answer: にじゅう
+        feedback_vi: にじゅう là 20. 12 là じゅう + に - じゅうに.
+        error_tag: number_order
+      - answer: しじゅう
+        feedback_vi: 40 đọc よんじゅう.
+        error_tag: number_reading
+      - answer: くじゅうく
+        feedback_vi: 99 đọc きゅうじゅうきゅう.
+        error_tag: number_reading
+    explanation:
+      vi: じゅうに (10 + 2), よんじゅう (4 × 10), きゅうじゅうきゅう (9 × 10 + 9).
+    display_answer: じゅうに / よんじゅう / きゅうじゅうきゅう
+
+  - key: ja:exercise:num099-write-63
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:num-tens
+    prompt:
+      source_text: sáu mươi ba (63)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ろくじゅうさん
+        - 六十三
+    known_wrong:
+      - answer: さんじゅうろく
+        feedback_vi: さんじゅうろく là 36. 63 là ろくじゅう + さん.
+        error_tag: number_order
+      - answer: ろくさんじゅう
+        feedback_vi: じゅう đứng giữa hàng chục và hàng đơn vị - ろくじゅうさん.
+        error_tag: number_order
+      - answer: rokujuusan
+        feedback_vi: Hãy gõ bằng Hiragana (ろくじゅうさん), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: ろく (6) + じゅう (mười) + さん (3).
+    display_answer: ろくじゅうさん
+
+  # ---------------- application ----------------
+  - key: ja:exercise:num099-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:num-tens
+    prompt:
+      source_text: わたしのでんわばんごうは、ゼロきゅうゼロのななはちにのよんごろくいちです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Số điện thoại của tôi là 090-782-4561.
+        - Số điện thoại của tôi là 090 782 4561.
+        - Số điện thoại của tôi là 0907824561.
+        - Số điện thoại của mình là 090-782-4561.
+        - Số điện thoại của tôi là không chín không bảy tám hai bốn năm sáu một.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Số điện thoại của tôi là 090-792-4561.
+        feedback_vi: なな là 7, không phải 9 (きゅう).
+        error_tag: number_reading
+    explanation:
+      vi: ゼロきゅうゼロ = 090, ななはちに = 782, よんごろくいち = 4561; の là dấu gạch ngang.
+    display_answer: Số điện thoại của tôi là 090-782-4561.
+
+  - key: ja:exercise:num099-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:num-1-5
+    prompt:
+      stem: Bạn đọc số nhà 74 cho người giao hàng. Cách đọc nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: m4o, text: ななじゅうよん, lang: ja }
+        - { id: n8p, text: しちじゅうし, lang: ja }
+        - { id: o3q, text: よんじゅうなな, lang: ja }
+        - { id: p7r, text: ななよんじゅう, lang: ja }
+    answer:
+      correct_option_id: m4o
+    explanation:
+      vi: 74 = なな + じゅう + よん. しちじゅうし tuy có nghĩa nhưng dễ nghe nhầm, người Nhật tránh し; よんじゅうなな là 47.
+    display_answer: ななじゅうよん
+
+  - key: ja:exercise:num099-write-ask-phone
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:denwa-bangou
+    prompt:
+      source_text: Số điện thoại của anh Tanaka là số mấy?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - たなかさんのでんわばんごうはなんばんですか。
+        - 田中さんの電話番号は何番ですか。
+        - たなかさんの電話番号は何番ですか。
+        - たなかさんのでんわばんごうはなんばんですか？
+        - 田中さんの電話番号は何番ですか？
+    known_wrong:
+      - answer: でんわばんごうのたなかさんはなんばんですか。
+        feedback_vi: Người sở hữu đứng trước の - たなかさんのでんわばんごう.
+        error_tag: word_order
+      - answer: たなかさんのでんわばんごうはなんばんです。
+        feedback_vi: Câu hỏi cần か ở cuối - なんばんですか.
+        error_tag: question_particle
+    explanation:
+      vi: たなかさんの + でんわばんごう + は + なんばん + ですか.
+    display_answer: たなかさんのでんわばんごうはなんばんですか。

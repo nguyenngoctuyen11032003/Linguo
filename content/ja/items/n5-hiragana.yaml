@@ -1,0 +1,565 @@
+# Học liệu unit "Bảng chữ Hiragana" (chương trình kana-basics). Phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: あ, か ----------------
+  - key: ja:item:hira-a
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: あ い う え お
+      romanization: a i u e o
+      pos: hiragana - nguyên âm
+    back:
+      meaning:
+        vi: Năm nguyên âm của tiếng Nhật - a, i, u, e, o.
+      examples:
+        - target: あい
+          translation:
+            vi: tình yêu
+        - target: いえ
+          translation:
+            vi: ngôi nhà
+      pronunciation_note:
+        vi: あ đọc "a", い đọc "i", え gần "ê", お gần "ô". う gần "ư" của tiếng Việt, môi gần như không tròn.
+      confusion:
+        vi: あ và お trông giống nhau - お có thêm một nét chấm nhỏ phía trên bên phải.
+
+  - key: ja:item:hira-ka
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: か き く け こ
+      romanization: ka ki ku ke ko
+      pos: hiragana - hàng か
+    back:
+      meaning:
+        vi: Hàng か - phụ âm k ghép với năm nguyên âm.
+      examples:
+        - target: かお
+          translation:
+            vi: khuôn mặt
+        - target: あき
+          translation:
+            vi: mùa thu
+      pronunciation_note:
+        vi: Phụ âm k đọc như "c/k" của tiếng Việt (ca, ki), không đọc thành "kh".
+      confusion:
+        vi: き có hai nét ngang, さ (hàng sau) chỉ có một nét ngang.
+
+  - key: ja:item:ie
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: いえ
+      romanization: ie
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngôi nhà (chữ Hán 家)
+      examples:
+        - target: あおいいえ
+          translation:
+            vi: ngôi nhà màu xanh
+      pronunciation_note:
+        vi: Đọc rõ hai âm "i-ê", không nuốt thành một.
+
+  - key: ja:item:kao
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: かお
+      romanization: kao
+      pos: danh từ
+    back:
+      meaning:
+        vi: khuôn mặt (chữ Hán 顔)
+      examples:
+        - target: あかいかお
+          translation:
+            vi: khuôn mặt đỏ
+      pronunciation_note:
+        vi: Hai âm "ca-ô", không đọc thành "cao" một tiếng.
+
+  # ---------------- bài 2: さ, た, な ----------------
+  - key: ja:item:hira-sa
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: さ し す せ そ
+      romanization: sa shi su se so
+      pos: hiragana - hàng さ
+    back:
+      meaning:
+        vi: Hàng さ - phụ âm s; riêng し đọc "shi".
+      examples:
+        - target: すし
+          translation:
+            vi: món sushi
+        - target: あさ
+          translation:
+            vi: buổi sáng
+      pronunciation_note:
+        vi: し đọc "shi" - gần "si" nhưng lưỡi lùi về sau, nghe như "x" nhẹ hơi gió. す gần "xư", môi không tròn.
+      confusion:
+        vi: さ và ち là hình đối xứng - nét cong của さ hướng sang trái ở dưới, của ち hướng sang phải.
+
+  - key: ja:item:hira-ta
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: た ち つ て と
+      romanization: ta chi tsu te to
+      pos: hiragana - hàng た
+    back:
+      meaning:
+        vi: Hàng た - phụ âm t; riêng ち đọc "chi", つ đọc "tsu".
+      examples:
+        - target: くつ
+          translation:
+            vi: đôi giày
+        - target: くち
+          translation:
+            vi: cái miệng
+      pronunciation_note:
+        vi: た, て, と đọc như "t" tiếng Việt. ち gần "chi". つ không có trong tiếng Việt - bật "t" rồi trượt ngay sang "s" thành một âm "tsư".
+      confusion:
+        vi: つ (tsu) khác す (su) - つ bắt đầu bằng tiếng "t" bật nhẹ.
+
+  - key: ja:item:hira-na
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: な に ぬ ね の
+      romanization: na ni nu ne no
+      pos: hiragana - hàng な
+    back:
+      meaning:
+        vi: Hàng な - phụ âm n ghép với năm nguyên âm.
+      examples:
+        - target: いぬ
+          translation:
+            vi: con chó
+        - target: ねこ
+          translation:
+            vi: con mèo
+      pronunciation_note:
+        vi: Đọc như "n" tiếng Việt - na, ni, nư, nê, nô.
+      confusion:
+        vi: ぬ và め giống nhau - ぬ có vòng xoắn nhỏ ở cuối nét, め thì không.
+
+  - key: ja:item:inu
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: いぬ
+      romanization: inu
+      pos: danh từ
+    back:
+      meaning:
+        vi: con chó (chữ Hán 犬)
+      examples:
+        - target: ちいさいいぬ
+          translation:
+            vi: con chó nhỏ
+
+  - key: ja:item:neko
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: ねこ
+      romanization: neko
+      pos: danh từ
+    back:
+      meaning:
+        vi: con mèo (chữ Hán 猫)
+      examples:
+        - target: くろいねこ
+          translation:
+            vi: con mèo đen
+
+  - key: ja:item:sushi
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: すし
+      romanization: sushi
+      pos: danh từ
+    back:
+      meaning:
+        vi: món sushi (cơm trộn giấm ăn kèm cá, hải sản)
+      examples:
+        - target: すしをたべます。
+          translation:
+            vi: Tôi ăn sushi.
+      pronunciation_note:
+        vi: す đọc rất nhẹ, gần như "sư-shi".
+
+  # ---------------- bài 3: は, ま, や, ら, わ, ん ----------------
+  - key: ja:item:hira-ha
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: は ひ ふ へ ほ
+      romanization: ha hi fu he ho
+      pos: hiragana - hàng は
+    back:
+      meaning:
+        vi: Hàng は - phụ âm h; riêng ふ đọc "fu".
+      examples:
+        - target: はな
+          translation:
+            vi: bông hoa
+        - target: ふね
+          translation:
+            vi: con thuyền
+      pronunciation_note:
+        vi: は, へ, ほ đọc như "h" tiếng Việt. ふ không phải "phu" - bạn thổi hơi nhẹ qua hai môi gần khép, không chạm răng vào môi.
+      confusion:
+        vi: Khi làm trợ từ, は đọc "wa" và へ đọc "e" - bạn sẽ gặp ở unit sau.
+
+  - key: ja:item:hira-ma
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ま み む め も
+      romanization: ma mi mu me mo
+      pos: hiragana - hàng ま
+    back:
+      meaning:
+        vi: Hàng ま - phụ âm m ghép với năm nguyên âm.
+      examples:
+        - target: みみ
+          translation:
+            vi: cái tai
+        - target: もも
+          translation:
+            vi: quả đào
+      confusion:
+        vi: め (me) và ぬ (nu) giống nhau - ぬ có vòng xoắn ở cuối nét.
+
+  - key: ja:item:hira-ya
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: や ゆ よ
+      romanization: ya yu yo
+      pos: hiragana - hàng や
+    back:
+      meaning:
+        vi: Hàng や chỉ có ba chữ - ya, yu, yo.
+      examples:
+        - target: やま
+          translation:
+            vi: ngọn núi
+        - target: ゆき
+          translation:
+            vi: tuyết
+      pronunciation_note:
+        vi: Đọc như "da/du/dô" của giọng miền Nam - "ia", "iu", "iô" lướt nhanh thành một âm.
+
+  - key: ja:item:hira-ra
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ら り る れ ろ
+      romanization: ra ri ru re ro
+      pos: hiragana - hàng ら
+    back:
+      meaning:
+        vi: Hàng ら - phụ âm r của tiếng Nhật.
+      examples:
+        - target: さくら
+          translation:
+            vi: hoa anh đào
+        - target: よる
+          translation:
+            vi: buổi tối
+      pronunciation_note:
+        vi: Âm r tiếng Nhật nằm giữa "r" và "l" - đầu lưỡi chạm nhẹ lợi trên một lần rồi bật ra, không rung lưỡi.
+      confusion:
+        vi: る có vòng xoắn ở cuối, ろ thì không.
+
+  - key: ja:item:hira-wa
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: わ を ん
+      romanization: wa o n
+      pos: hiragana - わ, を, ん
+    back:
+      meaning:
+        vi: わ đọc "wa"; を đọc "ô", chỉ dùng làm trợ từ; ん là âm mũi "n" đứng cuối âm tiết.
+      examples:
+        - target: わたし
+          translation:
+            vi: tôi
+        - target: ほん
+          translation:
+            vi: quyển sách
+      pronunciation_note:
+        vi: ん tự nó là một nhịp, không bao giờ đứng đầu từ - ほん đọc hai nhịp "hô-n".
+      confusion:
+        vi: を và お đọc giống nhau ("ô"), nhưng を chỉ xuất hiện làm trợ từ chỉ tân ngữ.
+
+  - key: ja:item:hana
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: はな
+      romanization: hana
+      pos: danh từ
+    back:
+      meaning:
+        vi: bông hoa (chữ Hán 花)
+      examples:
+        - target: きれいなはな
+          translation:
+            vi: bông hoa đẹp
+
+  - key: ja:item:yama
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: やま
+      romanization: yama
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngọn núi (chữ Hán 山)
+      examples:
+        - target: たかいやま
+          translation:
+            vi: ngọn núi cao
+
+  # ---------------- bài 4: âm đục ゛ và bán đục ゜ ----------------
+  - key: ja:item:hira-dakuten
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: が ざ だ ば
+      romanization: ga za da ba
+      pos: hiragana - âm đục (dakuten ゛)
+    back:
+      meaning:
+        vi: Thêm dấu ゛ vào hàng か, さ, た, は để đổi phụ âm - k→g, s→z, t→d, h→b.
+      examples:
+        - target: かぎ
+          translation:
+            vi: chìa khóa
+        - target: かばん
+          translation:
+            vi: cái cặp
+      pronunciation_note:
+        vi: だ đọc như "đa" tiếng Việt, không phải "da". ざ là "z" rung, gần "da" giọng Hà Nội. じ và ぢ đều đọc "ji"; ず và づ đều đọc "zu" - thường viết じ, ず.
+      confusion:
+        vi: が và か chỉ khác hai chấm ゛ nhưng đổi hẳn nghĩa - かぎ (chìa khóa) khác かき (quả hồng).
+
+  - key: ja:item:hira-handakuten
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ぱ ぴ ぷ ぺ ぽ
+      romanization: pa pi pu pe po
+      pos: hiragana - âm bán đục (handakuten ゜)
+    back:
+      meaning:
+        vi: Thêm vòng tròn nhỏ ゜ vào hàng は để được âm p.
+      examples:
+        - target: さんぽ
+          translation:
+            vi: đi dạo
+        - target: えんぴつ
+          translation:
+            vi: bút chì
+      pronunciation_note:
+        vi: Âm p đọc như "p" trong "pin", hai môi bật ra rõ.
+      confusion:
+        vi: ぱ (vòng tròn ゜) là "pa", ば (hai chấm ゛) là "ba".
+
+  - key: ja:item:kagi
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: かぎ
+      romanization: kagi
+      pos: danh từ
+    back:
+      meaning:
+        vi: chìa khóa (chữ Hán 鍵)
+      examples:
+        - target: いえのかぎ
+          translation:
+            vi: chìa khóa nhà
+
+  - key: ja:item:kaban
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: かばん
+      romanization: kaban
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái cặp, cái túi xách (chữ Hán 鞄)
+      examples:
+        - target: あかいかばん
+          translation:
+            vi: cái cặp màu đỏ
+
+  # ---------------- bài 5: âm ghép, âm ngắt, trường âm ----------------
+  - key: ja:item:hira-yoon
+    type: kana
+    level: kana
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: きゃ しゃ ちゃ にゃ りゃ
+      romanization: kya sha cha nya rya
+      pos: hiragana - âm ghép (yōon)
+    back:
+      meaning:
+        vi: Chữ cột い (き, し, ち…) + や/ゆ/よ viết nhỏ, đọc lướt thành một nhịp - きゃ "kya", しゅ "shu", ちょ "cho".
+      examples:
+        - target: でんしゃ
+          translation:
+            vi: tàu điện
+        - target: おちゃ
+          translation:
+            vi: trà
+      pronunciation_note:
+        vi: きゃ là một nhịp "kia" lướt nhanh, không đọc tách "ki-ya".
+      confusion:
+        vi: Chữ nhỏ ゃ khác chữ to や - きや đọc hai nhịp "ki-ya", きゃ chỉ một nhịp.
+
+  - key: ja:item:hira-sokuon
+    type: kana
+    level: kana
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: っ
+      romanization: kk, ss, tt, pp
+      pos: hiragana - âm ngắt (sokuon)
+    back:
+      meaning:
+        vi: Chữ つ viết nhỏ - không đọc thành tiếng mà ngắt một nhịp, rồi bật mạnh phụ âm đứng sau.
+      examples:
+        - target: きって
+          translation:
+            vi: con tem
+        - target: がっこう
+          translation:
+            vi: trường học
+      pronunciation_note:
+        vi: きって đọc "kit-tê" - dừng lại một nhịp trước て, giống "ít" + "tê".
+      confusion:
+        vi: きって (con tem) khác きて (hãy đến) - thiếu っ là đổi nghĩa.
+
+  - key: ja:item:hira-long-vowel
+    type: kana
+    level: kana
+    difficulty: 3
+    skill_tags: [reading, listening]
+    front:
+      text: ああ いい うう えい おう
+      romanization: ā ī ū ei/ē ō
+      pos: hiragana - trường âm
+    back:
+      meaning:
+        vi: Nguyên âm dài - kéo dài thêm một nhịp. Viết thêm あ/い/う sau chữ cùng cột; riêng cột え thường thêm い, cột お thường thêm う.
+      examples:
+        - target: おばあさん
+          translation:
+            vi: bà
+        - target: せんせい
+          translation:
+            vi: giáo viên
+      pronunciation_note:
+        vi: えい đọc như "ê" kéo dài (せんせい ≈ "xen-xê-ê"), おう đọc như "ô" kéo dài (こうこう ≈ "cô-ô-cô-ô").
+      confusion:
+        vi: Dài hay ngắn làm đổi nghĩa - おばあさん (bà) khác おばさん (cô, dì).
+
+  - key: ja:item:kitte
+    type: vocab
+    level: kana
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: きって
+      romanization: kitte
+      pos: danh từ
+    back:
+      meaning:
+        vi: con tem (chữ Hán 切手)
+      examples:
+        - target: きってをかいます。
+          translation:
+            vi: Tôi mua tem.
+      pronunciation_note:
+        vi: Ngắt một nhịp trước て - "kit-tê".
+
+  - key: ja:item:densha
+    type: vocab
+    level: kana
+    difficulty: 2
+    skill_tags: [vocabulary, reading]
+    front:
+      text: でんしゃ
+      romanization: densha
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu điện (chữ Hán 電車)
+      examples:
+        - target: でんしゃでいきます。
+          translation:
+            vi: Tôi đi bằng tàu điện.
+      pronunciation_note:
+        vi: Ba nhịp - で, ん, しゃ. しゃ đọc một nhịp "sha".

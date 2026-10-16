@@ -1,0 +1,336 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:time-days
+order_index: 4
+level: n5
+title:
+  vi: Giờ giấc và thứ trong tuần
+objectives:
+  - vi: Nói giờ bằng 〜じ, 〜ふん/ぷん, はん; nhớ よじ, しちじ, くじ.
+  - vi: Hỏi いまなんじですか và trả lời.
+  - vi: Nói thứ trong tuần và きょう / あした / きのう.
+estimated_minutes: 16
+skills: [vocabulary, listening, speaking]
+prerequisites: [ja:lesson:counters]
+items:
+  - item: ja:item:ji-hours
+  - item: ja:item:fun-minutes
+  - item: ja:item:han
+  - item: ja:item:ima
+  - item: ja:item:youbi
+  - item: ja:item:kyou-ashita
+  - item: ja:item:num-6-10
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và nói giờ, nói hôm nay là thứ mấy - いまくじはんです, きょうはきんようびです.
+  - type: explain
+    text:
+      vi: Giờ - số + じ. Ba giờ đặc biệt - よじ (4 giờ), しちじ (7 giờ), くじ (9 giờ). Rưỡi - はん (しちじはん = 7 giờ rưỡi). Hỏi - いまなんじですか.
+  - type: explain
+    text:
+      vi: Phút - ふん hoặc ぷん. Số 1, 3, 4, 6, 8, 10 đi với ぷん - いっぷん, さんぷん, よんぷん, ろっぷん, はっぷん, じゅっぷん. Số 2, 5, 7, 9 đi với ふん - にふん, ごふん, ななふん, きゅうふん.
+  - type: explain
+    text:
+      vi: Thứ trong tuần - げつようび (thứ Hai), かようび (thứ Ba), すいようび (thứ Tư), もくようび (thứ Năm), きんようび (thứ Sáu), どようび (thứ Bảy), にちようび (Chủ nhật). Hỏi - なんようびですか.
+  - type: deep_explain
+    text:
+      vi: Tên thứ lấy từ Mặt trời, Mặt trăng và năm hành - 月 (trăng, thứ Hai), 火 (lửa), 水 (nước), 木 (cây), 金 (kim loại), 土 (đất), 日 (mặt trời, Chủ nhật). Nhớ chữ Hán giúp bạn đọc lịch Nhật rất nhanh. Giờ sáng/chiều thêm ごぜん (sáng) / ごご (chiều) trước giờ - ごごさんじ = 3 giờ chiều.
+  - type: example
+    target: いまなんじですか。- よじじゅうごふんです。
+    target_lang: ja
+    translation:
+      vi: Bây giờ là mấy giờ? - 4 giờ 15 phút.
+    note:
+      vi: 4 giờ là よじ; 15 phút là じゅうごふん (5 đi với ふん).
+  - type: example
+    target: しちじはんです。
+    target_lang: ja
+    translation:
+      vi: 7 giờ rưỡi.
+    note:
+      vi: 7 giờ đọc しちじ, không phải ななじ.
+  - type: example
+    target: きょうはなんようびですか。- きんようびです。
+    target_lang: ja
+    translation:
+      vi: Hôm nay là thứ mấy? - Thứ Sáu.
+    note:
+      vi: きん (金) - thứ Sáu.
+  - type: example
+    target: あしたはにちようびです。
+    target_lang: ja
+    translation:
+      vi: Ngày mai là Chủ nhật.
+    note:
+      vi: あした - ngày mai; きのう - hôm qua.
+  - type: common_mistake
+    wrong: よんじです。
+    right: よじです。
+    target_lang: ja
+    note:
+      vi: 4 giờ là よじ. Tương tự 9 giờ là くじ, 7 giờ là しちじ.
+  - type: common_mistake
+    wrong: さんじじゅうふんです。
+    right: さんじじゅっぷんです。
+    target_lang: ja
+    note:
+      vi: 10 phút đổi âm thành じゅっぷん.
+  - type: summary
+    points:
+      - vi: Giờ - số + じ; よじ, しちじ, くじ là ba giờ đặc biệt; はん = rưỡi.
+      - vi: Phút - 1, 3, 4, 6, 8, 10 → ぷん; 2, 5, 7, 9 → ふん.
+      - vi: げつ・か・すい・もく・きん・ど・にち + ようび.
+      - vi: きのう hôm qua · きょう hôm nay · あした ngày mai.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:timedays-mcq-nine
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ji-hours
+    prompt:
+      stem: 9 giờ đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: a6h, text: くじ, lang: ja }
+        - { id: b1i, text: きゅうじ, lang: ja }
+        - { id: c5j, text: よじ, lang: ja }
+        - { id: d9k, text: しちじ, lang: ja }
+    answer:
+      correct_option_id: a6h
+    explanation:
+      vi: 9 giờ là くじ (không phải きゅうじ). よじ là 4 giờ, しちじ là 7 giờ.
+    display_answer: くじ
+
+  - key: ja:exercise:timedays-mcq-friday
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:youbi
+    prompt:
+      stem: '"Thứ Sáu" là ngày nào?'
+      stem_lang: vi
+      options:
+        - { id: e3l, text: きんようび, lang: ja }
+        - { id: f7m, text: かようび, lang: ja }
+        - { id: g2n, text: もくようび, lang: ja }
+        - { id: h6o, text: どようび, lang: ja }
+    answer:
+      correct_option_id: e3l
+    explanation:
+      vi: きんようび là thứ Sáu. かようび thứ Ba, もくようび thứ Năm, どようび thứ Bảy.
+    display_answer: きんようび
+
+  - key: ja:exercise:timedays-listen-time
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:han
+    prompt:
+      audio_asset_id: null
+      fallback_text: いま、しちじはんです。
+      options:
+        - { id: i4p, text: Bây giờ là 7 giờ rưỡi., lang: vi }
+        - { id: j8q, text: Bây giờ là 7 giờ., lang: vi }
+        - { id: k3r, text: Bây giờ là 4 giờ rưỡi., lang: vi }
+        - { id: l7s, text: Bây giờ là 8 giờ rưỡi., lang: vi }
+    answer:
+      correct_option_id: i4p
+    explanation:
+      vi: しちじ - 7 giờ; はん - rưỡi. 4 giờ là よじ, 8 giờ là はちじ.
+    display_answer: Bây giờ là 7 giờ rưỡi.
+
+  - key: ja:exercise:timedays-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ima
+    prompt:
+      template: "{{b1}}なんじですか。- ごじ{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Bây giờ là mấy giờ? - 5 giờ rưỡi."
+        - Chỗ thứ nhất là "bây giờ"; chỗ thứ hai là "rưỡi".
+    answer:
+      blanks:
+        b1: [いま, 今]
+        b2: [はん, 半, さんじゅっぷん, さんじっぷん]
+    known_wrong:
+      - answer: きょう
+        feedback_vi: きょう là hôm nay; "bây giờ" là いま.
+        error_tag: time_word
+    explanation:
+      vi: いま - bây giờ; ごじはん - 5 giờ rưỡi.
+    display_answer: いまなんじですか。- ごじはんです。
+
+  - key: ja:exercise:timedays-order-sunday
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kyou-ashita
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Ngày mai là Chủ nhật.”"
+      tokens:
+        - { id: t1, text: にちようび }
+        - { id: t2, text: です }
+        - { id: t3, text: きのう }
+        - { id: t4, text: は }
+        - { id: t5, text: あした }
+    answer:
+      orders:
+        - [t5, t4, t1, t2]
+    explanation:
+      vi: あした (ngày mai) + は + にちようび + です. きのう là hôm qua.
+    display_answer: あしたはにちようびです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:timedays-fill-minutes
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:fun-minutes
+    prompt:
+      template: "5 phút - {{b1}}. 10 phút - {{b2}}. 6 phút - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ごふん, 五分]
+        b2: [じゅっぷん, じっぷん, 十分]
+        b3: [ろっぷん, 六分]
+    known_wrong:
+      - answer: ごぷん
+        feedback_vi: 5 đi với ふん - ごふん.
+        error_tag: fun_pun
+      - answer: じゅうふん
+        feedback_vi: 10 phút đổi âm thành じゅっぷん.
+        error_tag: fun_pun
+      - answer: ろくふん
+        feedback_vi: 6 phút đổi âm thành ろっぷん.
+        error_tag: fun_pun
+    explanation:
+      vi: ごふん (5 đi với ふん); じゅっぷん và ろっぷん (10 và 6 đổi âm, dùng ぷん).
+    display_answer: ごふん / じゅっぷん / ろっぷん
+
+  - key: ja:exercise:timedays-write-what-day
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:youbi
+    prompt:
+      source_text: Hôm nay là thứ mấy?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - きょうはなんようびですか。
+        - 今日は何曜日ですか。
+        - きょうは何曜日ですか。
+        - きょうはなんようびですか？
+        - 今日は何曜日ですか？
+    known_wrong:
+      - answer: きょうはなんじですか。
+        feedback_vi: なんじ hỏi giờ; hỏi thứ dùng なんようび.
+        error_tag: question_word
+      - answer: あしたはなんようびですか。
+        feedback_vi: あした là ngày mai; hôm nay là きょう.
+        error_tag: time_word
+    explanation:
+      vi: きょう (hôm nay) + は + なんようび (thứ mấy) + ですか.
+    display_answer: きょうはなんようびですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:timedays-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:ji-hours
+    prompt:
+      source_text: いまよじにじゅっぷんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bây giờ là 4 giờ 20 phút.
+        - Bây giờ là 4 giờ 20.
+        - Bây giờ là bốn giờ hai mươi phút.
+        - Bây giờ là bốn giờ hai mươi.
+        - Bây giờ 4 giờ 20 phút.
+        - Bây giờ là 4:20.
+        - Bây giờ 4 giờ 20.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bây giờ là 4 giờ 2 phút.
+        feedback_vi: にじゅっぷん là 20 phút; 2 phút là にふん.
+        error_tag: number_reading
+    explanation:
+      vi: よじ - 4 giờ; にじゅっぷん - 20 phút.
+    display_answer: Bây giờ là 4 giờ 20 phút.
+
+  - key: ja:exercise:timedays-mcq-seven
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:fun-minutes
+    prompt:
+      stem: Đồng hồ chỉ 7:03. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m5t, text: しちじさんぷんです。, lang: ja }
+        - { id: n9u, text: ななじさんふんです。, lang: ja }
+        - { id: o4v, text: しちじさんじゅっぷんです。, lang: ja }
+        - { id: p8w, text: くじさんぷんです。, lang: ja }
+    answer:
+      correct_option_id: m5t
+    explanation:
+      vi: 7 giờ là しちじ, 3 phút là さんぷん. さんじゅっぷん là 30 phút; くじ là 9 giờ.
+    display_answer: しちじさんぷんです。
+
+  - key: ja:exercise:timedays-write-now
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:ji-hours
+    prompt:
+      source_text: Bây giờ là 9 giờ rưỡi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - いまくじはんです。
+        - いま、くじはんです。
+        - 今九時半です。
+        - 今、九時半です。
+        - 今9時半です。
+        - 今、9時半です。
+        - くじはんです。
+        - 九時半です。
+        - いまくじさんじゅっぷんです。
+        - 今九時三十分です。
+    known_wrong:
+      - answer: いまきゅうじはんです。
+        feedback_vi: 9 giờ đọc くじ, không phải きゅうじ.
+        error_tag: hour_reading
+    explanation:
+      vi: いま (bây giờ) + くじ (9 giờ) + はん (rưỡi) + です.
+    display_answer: いまくじはんです。

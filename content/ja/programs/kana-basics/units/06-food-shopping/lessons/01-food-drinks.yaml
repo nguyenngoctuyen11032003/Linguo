@@ -1,0 +1,353 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:food-drinks
+order_index: 1
+level: n5
+title:
+  vi: Đồ ăn, thức uống - たべます・のみます
+objectives:
+  - vi: Gọi tên các món ăn, đồ uống cơ bản - ごはん, にく, さかな, やさい, みず, おちゃ.
+  - vi: Nói ăn gì, uống gì bằng N をたべます / のみます.
+  - vi: Hỏi người khác có ăn/uống không bằng 〜ますか.
+estimated_minutes: 14
+skills: [vocabulary, speaking, listening]
+prerequisites: [ja:lesson:daily-life-review]
+items:
+  - item: ja:item:tabemasu
+  - item: ja:item:nomimasu
+  - item: ja:item:gohan
+  - item: ja:item:mizu
+  - item: ja:item:ocha
+  - item: ja:item:niku
+  - item: ja:item:sakana
+  - item: ja:item:yasai
+  - item: ja:item:koohii
+    role: reuse
+  - item: ja:item:pan
+    role: reuse
+  - item: ja:item:particle-o
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể bữa ăn hằng ngày - あさごはんにパンをたべます (Bữa sáng tôi ăn bánh mì) và hỏi người khác ăn uống gì.
+  - type: explain
+    text:
+      vi: Đồ ăn + を + たべます (ăn); đồ uống + を + のみます (uống). Giống tiếng Việt, súp và thuốc cũng dùng のみます (uống thuốc - くすりをのみます).
+  - type: explain
+    text:
+      vi: ごはん vừa là "cơm" vừa là "bữa ăn" - あさごはん (bữa sáng), ひるごはん (bữa trưa), ばんごはん (bữa tối). お trong おちゃ là tiền tố lịch sự, gần như luôn đi kèm.
+  - type: explain
+    text:
+      vi: Hỏi có/không - thêm か - コーヒーをのみますか (Bạn uống cà phê không?). Trả lời - はい、のみます / いいえ、のみません.
+  - type: deep_explain
+    text:
+      vi: Hỏi "ăn gì?" - なにをたべますか (trước を giữ nguyên なに). Trong bữa ăn, người Nhật nói いただきます trước khi ăn - bạn sẽ học ở bài gọi món. Chữ Hán - 食べます, 飲みます, ご飯, 水, お茶, 肉, 魚, 野菜.
+  - type: example
+    target: あさごはんにパンをたべます。
+    target_lang: ja
+    translation:
+      vi: Bữa sáng tôi ăn bánh mì.
+    note:
+      vi: あさごはんに - vào bữa sáng.
+  - type: example
+    target: おちゃをのみますか。- はい、のみます。
+    target_lang: ja
+    translation:
+      vi: Bạn uống trà không? - Vâng, tôi uống.
+    note:
+      vi: Trả lời bằng chính động từ, không cần lặp lại cả câu.
+  - type: example
+    target: わたしはにくをたべません。さかなとやさいをたべます。
+    target_lang: ja
+    translation:
+      vi: Tôi không ăn thịt. Tôi ăn cá và rau.
+    note:
+      vi: と - và (nối hai danh từ).
+  - type: example
+    target: ばんごはんはなにをたべますか。
+    target_lang: ja
+    translation:
+      vi: Bữa tối bạn ăn gì?
+    note:
+      vi: なにを - cái gì (đối tượng).
+  - type: common_mistake
+    wrong: コーヒーをたべます。
+    right: コーヒーをのみます。
+    target_lang: ja
+    note:
+      vi: Đồ uống dùng のみます.
+  - type: common_mistake
+    wrong: パンおたべます。
+    right: パンをたべます。
+    target_lang: ja
+    note:
+      vi: Trợ từ tân ngữ viết を.
+  - type: summary
+    points:
+      - vi: N をたべます (ăn) · N をのみます (uống).
+      - vi: ごはん cơm/bữa · にく thịt · さかな cá · やさい rau.
+      - vi: みず nước · おちゃ trà · コーヒー cà phê.
+      - vi: Hỏi - なにをたべますか / のみますか.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:food-mcq-nomimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:nomimasu
+    prompt:
+      stem: "Chọn động từ đúng - みずを ___。 (Tôi uống nước.)"
+      stem_lang: vi
+      options:
+        - { id: a5h, text: のみます, lang: ja }
+        - { id: b9i, text: たべます, lang: ja }
+        - { id: c4j, text: よみます, lang: ja }
+        - { id: d8k, text: みます, lang: ja }
+    answer:
+      correct_option_id: a5h
+    explanation:
+      vi: Uống là のみます. たべます là ăn, よみます là đọc, みます là xem.
+    display_answer: のみます
+
+  - key: ja:exercise:food-mcq-fish
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:sakana
+    prompt:
+      stem: '"Cá" tiếng Nhật là gì?'
+      stem_lang: vi
+      options:
+        - { id: e3l, text: さかな, lang: ja }
+        - { id: f7m, text: にく, lang: ja }
+        - { id: g2n, text: やさい, lang: ja }
+        - { id: h6o, text: ごはん, lang: ja }
+    answer:
+      correct_option_id: e3l
+    explanation:
+      vi: さかな - cá; にく - thịt; やさい - rau; ごはん - cơm.
+    display_answer: さかな
+
+  - key: ja:exercise:food-listen-breakfast
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:gohan
+    prompt:
+      audio_asset_id: null
+      fallback_text: あさごはんにパンをたべます。コーヒーをのみます。
+      options:
+        - { id: i1p, text: Bữa sáng tôi ăn bánh mì. Tôi uống cà phê., lang: vi }
+        - { id: j5q, text: Bữa tối tôi ăn bánh mì. Tôi uống cà phê., lang: vi }
+        - { id: k9r, text: Bữa sáng tôi ăn cơm. Tôi uống trà., lang: vi }
+        - { id: l4s, text: Bữa sáng tôi ăn bánh mì. Tôi uống nước., lang: vi }
+    answer:
+      correct_option_id: i1p
+    explanation:
+      vi: あさごはん - bữa sáng; パン - bánh mì; コーヒー - cà phê. Bữa tối là ばんごはん, trà là おちゃ, nước là みず.
+    display_answer: Bữa sáng tôi ăn bánh mì. Tôi uống cà phê.
+
+  - key: ja:exercise:food-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:tabemasu
+    prompt:
+      template: "まいにちやさい{{b1}}{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Ngày nào tôi cũng ăn rau."
+        - Chỗ thứ nhất là trợ từ tân ngữ; chỗ thứ hai là động từ "ăn" dạng lịch sự.
+    answer:
+      blanks:
+        b1: [を]
+        b2: [たべます, 食べます]
+    known_wrong:
+      - answer: お
+        feedback_vi: Trợ từ tân ngữ viết を.
+        error_tag: particle_o_spelling
+      - answer: のみます
+        feedback_vi: のみます là uống; rau thì ăn - たべます.
+        error_tag: verb_choice
+    explanation:
+      vi: やさいを (rau) + たべます (ăn).
+    display_answer: まいにちやさいをたべます。
+
+  - key: ja:exercise:food-order-tea
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ocha
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Nhật: “Bạn uống trà không?”"
+      tokens:
+        - { id: t1, text: か }
+        - { id: t2, text: おちゃ }
+        - { id: t3, text: のみます }
+        - { id: t4, text: を }
+        - { id: t5, text: たべます }
+    answer:
+      orders:
+        - [t2, t4, t3, t1]
+    explanation:
+      vi: おちゃ + を + のみます + か. Trà là đồ uống nên dùng のみます.
+    display_answer: おちゃをのみますか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:food-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:niku
+    prompt:
+      template: "Thịt - {{b1}}. Nước - {{b2}}. Rau - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [にく, 肉]
+        b2: [みず, 水]
+        b3: [やさい, 野菜]
+    known_wrong:
+      - answer: みす
+        feedback_vi: ず có dấu đục - みず.
+        error_tag: dakuten
+      - answer: さかな
+        feedback_vi: さかな là cá; thịt là にく.
+        error_tag: vocab_meaning
+    explanation:
+      vi: にく (肉) thịt, みず (水) nước, やさい (野菜) rau.
+    display_answer: にく / みず / やさい
+
+  - key: ja:exercise:food-write-coffee
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nomimasu
+    prompt:
+      source_text: Tôi không uống cà phê.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - コーヒーをのみません。
+        - コーヒーを飲みません。
+        - わたしはコーヒーをのみません。
+        - 私はコーヒーを飲みません。
+        - コーヒーはのみません。
+        - コーヒーは飲みません。
+        - わたしはコーヒーはのみません。
+        - 私はコーヒーは飲みません。
+    known_wrong:
+      - answer: コーヒーをのみます。
+        feedback_vi: Câu phủ định cần ません.
+        error_tag: negation
+      - answer: コーヒーをたべません。
+        feedback_vi: Đồ uống dùng のみます / のみません.
+        error_tag: verb_choice
+      - answer: コーヒーおのみません。
+        feedback_vi: Trợ từ tân ngữ viết を.
+        error_tag: particle_o_spelling
+    explanation:
+      vi: コーヒー + を + のみません. Dùng は thay を (コーヒーはのみません) để nhấn "cà phê thì không uống" cũng tự nhiên.
+    display_answer: コーヒーをのみません。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:food-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:yasai
+    prompt:
+      source_text: ひるごはんにさかなとやさいをたべます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bữa trưa tôi ăn cá và rau.
+        - Bữa trưa tôi ăn cá với rau.
+        - Vào bữa trưa tôi ăn cá và rau.
+        - Tôi ăn cá và rau vào bữa trưa.
+        - Bữa trưa mình ăn cá và rau.
+        - Trưa tôi ăn cá và rau.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bữa trưa tôi ăn thịt và rau.
+        feedback_vi: さかな là cá; thịt là にく.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ひるごはんに - vào bữa trưa; さかなとやさい - cá và rau; たべます - ăn.
+    display_answer: Bữa trưa tôi ăn cá và rau.
+
+  - key: ja:exercise:food-mcq-answer
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:tabemasu
+    prompt:
+      stem: "Bạn của bạn hỏi - にくをたべますか。 Bạn ăn chay. Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m8t, text: いいえ、たべません。, lang: ja }
+        - { id: n3u, text: はい、たべません。, lang: ja }
+        - { id: o7v, text: いいえ、のみません。, lang: ja }
+        - { id: p2w, text: いいえ、にくじゃありません。, lang: ja }
+    answer:
+      correct_option_id: m8t
+    explanation:
+      vi: Không ăn thịt → いいえ、たべません. はい mâu thuẫn với phủ định; のみません là "không uống"; にくじゃありません là "không phải là thịt".
+    display_answer: いいえ、たべません。
+
+  - key: ja:exercise:food-write-what
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:gohan
+    prompt:
+      source_text: Bữa tối bạn ăn gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ばんごはんはなにをたべますか。
+        - 晩ご飯は何を食べますか。
+        - ばんごはんになにをたべますか。
+        - 晩ご飯に何を食べますか。
+        - ばんごはんはなにをたべますか？
+        - 晩ご飯は何を食べますか？
+        - ばんごはん、なにをたべますか。
+        - 晩ご飯、何を食べますか。
+        - ばんごはんなにをたべますか。
+        - 晩ご飯何を食べますか。
+    known_wrong:
+      - answer: ばんごはんはなんをたべますか。
+        feedback_vi: Trước を giữ nguyên なに - なにを.
+        error_tag: nan_nani
+      - answer: ばんごはんはなにをのみますか。
+        feedback_vi: '"Ăn" là たべます; のみます là uống.'
+        error_tag: verb_choice
+      - answer: ばんごはんはなにをたべます。
+        feedback_vi: Câu hỏi cần か ở cuối.
+        error_tag: question_particle
+    explanation:
+      vi: ばんごはんは (bữa tối thì) + なにを (cái gì) + たべますか (ăn?).
+    display_answer: ばんごはんはなにをたべますか。

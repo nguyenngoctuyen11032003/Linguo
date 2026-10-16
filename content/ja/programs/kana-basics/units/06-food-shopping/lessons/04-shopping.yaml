@@ -1,0 +1,346 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:shopping
+order_index: 4
+level: n5
+title:
+  vi: Mua sắm - この・その・あの, たかい・やすい
+objectives:
+  - vi: Chỉ món hàng bằng この / その / あの + danh từ.
+  - vi: Hỏi giá, nhận xét đắt / rẻ bằng たかいです / やすいです.
+  - vi: Mua hàng bằng 〜をください và nói かいます.
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:likes-wants]
+items:
+  - item: ja:item:kono-sono-ano
+  - item: ja:item:takai-yasui
+  - item: ja:item:kaimasu
+  - item: ja:item:mise
+  - item: ja:item:ikura
+    role: reuse
+  - item: ja:item:o-kudasai
+    role: reuse
+  - item: ja:item:kaban
+    role: reuse
+  - item: ja:item:kore-sore-are
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mua được một món đồ - hỏi giá, nhận xét đắt rẻ và nói "cho tôi cái này".
+  - type: explain
+    text:
+      vi: この / その / あの luôn đứng trước danh từ - このかばん (cái cặp này), そのかさ (cái ô đó), あのみせ (cửa hàng kia). これ / それ / あれ thì đứng một mình - これはいくらですか.
+  - type: explain
+    text:
+      vi: たかい (đắt) và やすい (rẻ) là tính từ đuôi い, đặt trước です - このかばんはたかいです. Phủ định - đổi い thành くない - たかくないです (không đắt).
+  - type: explain
+    text:
+      vi: Mua - N をかいます (かいます = mua). Ở quầy, chỉ cần nói これをください hoặc このかばんをください.
+  - type: deep_explain
+    text:
+      vi: Tính từ đuôi い đứng trước danh từ cũng được - やすいみせ (cửa hàng rẻ), たかいとけい (đồng hồ đắt). たかい còn nghĩa là "cao" - たかいやま (núi cao). Ở cửa hàng tiện lợi, nhân viên hay hỏi ふくろはいりますか (bạn có cần túi không?) - trả lời はい、おねがいします hoặc いいえ、だいじょうぶです.
+  - type: example
+    target: すみません、このかばんはいくらですか。- ろくせんえんです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, cái cặp này bao nhiêu tiền? - 6.000 yên.
+    note:
+      vi: このかばん - cái cặp này (この + danh từ).
+  - type: example
+    target: ちょっとたかいですね。そのかばんは？
+    target_lang: ja
+    translation:
+      vi: Hơi đắt nhỉ. Còn cái cặp đó?
+    note:
+      vi: ちょっと - hơi, một chút; ね - nhỉ (tìm sự đồng tình).
+  - type: example
+    target: そのかばんはやすいです。にせんえんです。- じゃあ、それをください。
+    target_lang: ja
+    translation:
+      vi: Cái cặp đó rẻ. 2.000 yên. - Vậy cho tôi cái đó.
+    note:
+      vi: じゃあ - vậy thì.
+  - type: example
+    target: あのみせでやさいをかいます。
+    target_lang: ja
+    translation:
+      vi: Tôi mua rau ở cửa hàng kia.
+    note:
+      vi: Nơi hành động (mua) dùng で.
+  - type: common_mistake
+    wrong: これかばんはいくらですか。
+    right: このかばんはいくらですか。
+    target_lang: ja
+    note:
+      vi: Trước danh từ dùng この, không dùng これ.
+  - type: common_mistake
+    wrong: このとけいはたかいじゃありません。
+    right: このとけいはたかくないです。
+    target_lang: ja
+    note:
+      vi: Tính từ đuôi い phủ định bằng くない, không dùng じゃありません.
+  - type: summary
+    points:
+      - vi: この / その / あの + N; これ / それ / あれ đứng một mình.
+      - vi: たかいです đắt · やすいです rẻ · たかくないです không đắt.
+      - vi: N をかいます - mua N; N をください - cho tôi N.
+      - vi: みせ - cửa hàng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:shop-mcq-kono
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kono-sono-ano
+    prompt:
+      stem: "Chọn từ đúng - ___ かさはいくらですか。 (Cái ô này bao nhiêu tiền?)"
+      stem_lang: vi
+      options:
+        - { id: a6d, text: この, lang: ja }
+        - { id: b1e, text: これ, lang: ja }
+        - { id: c5f, text: ここ, lang: ja }
+        - { id: d9g, text: あの, lang: ja }
+    answer:
+      correct_option_id: a6d
+    explanation:
+      vi: Đứng trước danh từ (かさ) dùng この. これ đứng một mình, ここ là "chỗ này", あの là "… kia".
+    display_answer: この
+
+  - key: ja:exercise:shop-mcq-yasui
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:takai-yasui
+    prompt:
+      stem: '"Rẻ" tiếng Nhật là gì?'
+      stem_lang: vi
+      options:
+        - { id: e4h, text: やすい, lang: ja }
+        - { id: f8i, text: たかい, lang: ja }
+        - { id: g3j, text: おいしい, lang: ja }
+        - { id: h7k, text: ほしい, lang: ja }
+    answer:
+      correct_option_id: e4h
+    explanation:
+      vi: やすい - rẻ; たかい - đắt; おいしい - ngon; ほしい - muốn có.
+    display_answer: やすい
+
+  - key: ja:exercise:shop-listen-price
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:takai-yasui
+    prompt:
+      audio_asset_id: null
+      fallback_text: このとけいはたかいです。いちまんえんです。
+      options:
+        - { id: i2l, text: Cái đồng hồ này đắt. 10.000 yên., lang: vi }
+        - { id: j6m, text: Cái đồng hồ này rẻ. 10.000 yên., lang: vi }
+        - { id: k1n, text: Cái đồng hồ kia đắt. 1.000 yên., lang: vi }
+        - { id: l5o, text: Cái đồng hồ này đắt. 1.000 yên., lang: vi }
+    answer:
+      correct_option_id: i2l
+    explanation:
+      vi: このとけい - đồng hồ này; たかい - đắt; いちまんえん - 10.000 yên. Rẻ là やすい, 1.000 là せん.
+    display_answer: Cái đồng hồ này đắt. 10.000 yên.
+
+  - key: ja:exercise:shop-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kaimasu
+    prompt:
+      template: "あの{{b1}}でパンを{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi mua bánh mì ở cửa hàng kia."
+        - Chỗ thứ nhất là "cửa hàng"; chỗ thứ hai là động từ "mua" dạng lịch sự.
+    answer:
+      blanks:
+        b1: [みせ, 店]
+        b2: [かいます, 買います]
+    known_wrong:
+      - answer: かえります
+        feedback_vi: かえります là "về"; mua là かいます.
+        error_tag: verb_choice
+      - answer: たべます
+        feedback_vi: Câu này là "mua" - かいます.
+        error_tag: verb_choice
+    explanation:
+      vi: あのみせで (ở cửa hàng kia) + パンを + かいます (mua).
+    display_answer: あのみせでパンをかいます。
+
+  - key: ja:exercise:shop-order-bag
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kono-sono-ano
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Cho tôi cái cặp đó.”"
+      tokens:
+        - { id: t1, text: ください }
+        - { id: t2, text: かばん }
+        - { id: t3, text: その }
+        - { id: t4, text: を }
+        - { id: t5, text: それ }
+    answer:
+      orders:
+        - [t3, t2, t4, t1]
+    explanation:
+      vi: その + かばん + を + ください. それ không đứng trước danh từ.
+    display_answer: そのかばんをください。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:shop-fill-negative
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:takai-yasui
+    prompt:
+      template: "Cái ô này không đắt - このかさは{{b1}}です。 Cửa hàng kia rẻ - あのみせは{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [たかくない, 高くない]
+        b2: [やすい, 安い]
+    known_wrong:
+      - answer: たかいじゃない
+        feedback_vi: Tính từ đuôi い phủ định bằng くない - たかくない.
+        error_tag: i_adj_negative
+      - answer: たかくないじゃありません
+        feedback_vi: Chỉ cần たかくないです.
+        error_tag: i_adj_negative
+    explanation:
+      vi: たかい → たかくない (không đắt); やすい - rẻ.
+    display_answer: このかさはたかくないです。/ あのみせはやすいです。
+
+  - key: ja:exercise:shop-write-how-much
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ikura
+    prompt:
+      source_text: Cái đồng hồ kia bao nhiêu tiền?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あのとけいはいくらですか。
+        - あの時計はいくらですか。
+        - すみません、あのとけいはいくらですか。
+        - すみません、あの時計はいくらですか。
+        - すみませんあのとけいはいくらですか。
+        - すみませんあの時計はいくらですか。
+    known_wrong:
+      - answer: あれとけいはいくらですか。
+        feedback_vi: Trước danh từ dùng あの.
+        error_tag: kono_kore
+      - answer: あのとけいはいくつですか。
+        feedback_vi: Hỏi giá dùng いくら.
+        error_tag: ikura_ikutsu
+      - answer: このとけいはいくらですか。
+        feedback_vi: '"Kia" là あの; この là "này".'
+        error_tag: demonstrative
+    explanation:
+      vi: あの + とけい + は + いくら + ですか.
+    display_answer: あのとけいはいくらですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:shop-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:mise
+    prompt:
+      source_text: このみせはやすいです。でも、あのみせはたかいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng này rẻ. Nhưng cửa hàng kia đắt.
+        - Cửa hàng này rẻ, nhưng cửa hàng kia đắt.
+        - Cửa hàng này rẻ. Còn cửa hàng kia đắt.
+        - Cửa hàng này rẻ, còn cửa hàng kia đắt.
+        - Tiệm này rẻ. Nhưng tiệm kia đắt.
+        - Quán này rẻ. Nhưng quán kia đắt.
+        - Cửa hàng này thì rẻ. Nhưng cửa hàng kia thì đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cửa hàng này đắt. Nhưng cửa hàng kia rẻ.
+        feedback_vi: やすい là rẻ, たかい là đắt.
+        error_tag: vocab_meaning
+    explanation:
+      vi: このみせ - cửa hàng này; やすい - rẻ; でも - nhưng; あのみせ - cửa hàng kia; たかい - đắt.
+    display_answer: Cửa hàng này rẻ. Nhưng cửa hàng kia đắt.
+
+  - key: ja:exercise:shop-mcq-buy
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kono-sono-ano
+    prompt:
+      stem: Nhân viên đang cầm một cái cặp và nói giá. Bạn quyết định mua cái cặp đó. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m9p, text: じゃあ、そのかばんをください。, lang: ja }
+        - { id: n4q, text: じゃあ、それかばんをください。, lang: ja }
+        - { id: o8r, text: じゃあ、このかばんをください。, lang: ja }
+        - { id: p3s, text: じゃあ、そのかばんがください。, lang: ja }
+    answer:
+      correct_option_id: m9p
+    explanation:
+      vi: Cặp ở trong tay nhân viên (người nghe) → その + danh từ. それ không đứng trước danh từ; この là vật gần mình; ください đi với を.
+    display_answer: じゃあ、そのかばんをください。
+
+  - key: ja:exercise:shop-write-buy
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kaimasu
+    prompt:
+      source_text: Tôi mua rau ở cửa hàng đó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - そのみせでやさいをかいます。
+        - その店で野菜を買います。
+        - わたしはそのみせでやさいをかいます。
+        - 私はその店で野菜を買います。
+        - やさいはそのみせでかいます。
+        - 野菜はその店で買います。
+        - そのみせでやさいを買います。
+        - その店でやさいをかいます。
+    known_wrong:
+      - answer: そのみせにやさいをかいます。
+        feedback_vi: Nơi diễn ra hành động (mua) dùng で.
+        error_tag: particle_ni_de
+      - answer: それみせでやさいをかいます。
+        feedback_vi: Trước danh từ dùng その.
+        error_tag: kono_kore
+      - answer: そのみせでやさいおかいます。
+        feedback_vi: Trợ từ tân ngữ viết を.
+        error_tag: particle_o_spelling
+    explanation:
+      vi: そのみせで (ở cửa hàng đó) + やさいを (rau) + かいます (mua).
+    display_answer: そのみせでやさいをかいます。

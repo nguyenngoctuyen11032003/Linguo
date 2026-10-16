@@ -1,0 +1,346 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:places-existence
+order_index: 1
+level: n5
+title:
+  vi: Ở đâu? - ここ・そこ・あそこ, あります・います
+objectives:
+  - vi: Hỏi đường đơn giản bằng N はどこですか và chỉ chỗ bằng ここ / そこ / あそこ.
+  - vi: Nói "có" đúng loại - あります (đồ vật) và います (người, con vật).
+  - vi: Dùng nơi chốn + に với あります / います.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:numbers-time-review]
+items:
+  - item: ja:item:koko-soko-asoko
+  - item: ja:item:doko
+  - item: ja:item:arimasu-imasu
+  - item: ja:item:gakkou
+  - item: ja:item:eki
+  - item: ja:item:toire
+  - item: ja:item:sumimasen
+    role: reuse
+  - item: ja:item:neko
+    role: reuse
+  - item: ja:item:inu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được nhà ga, nhà vệ sinh ở đâu và nói ở một nơi có gì, có ai.
+  - type: explain
+    text:
+      vi: ここ (chỗ này), そこ (chỗ đó), あそこ (chỗ kia) chia vùng giống これ / それ / あれ. Hỏi chỗ - N はどこですか; trả lời - N はあそこです.
+  - type: explain
+    text:
+      vi: Tiếng Nhật có hai động từ "có" - あります cho đồ vật, cây, nhà cửa (không tự di chuyển); います cho người và con vật. Mẫu câu - (nơi chốn) に (vật/người) が あります / います.
+  - type: explain
+    text:
+      vi: が đánh dấu cái/ai "có" ở đó; に đánh dấu nơi chốn. Phủ định - ありません / いません.
+  - type: deep_explain
+    text:
+      vi: Cây cối dùng あります dù là vật sống, còn robot, xe đang chạy thường vẫn dùng あります. Quy tắc thực tế - có thể tự đi lại theo ý muốn (người, thú vật, côn trùng) thì dùng います. Chữ Hán - 学校 (がっこう), 駅 (えき); トイレ là từ ngoại lai nên viết Katakana.
+  - type: example
+    target: すみません、トイレはどこですか。- あそこです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, nhà vệ sinh ở đâu ạ? - Ở đằng kia.
+    note:
+      vi: すみません mở đầu khi hỏi người lạ.
+  - type: example
+    target: えきにコンビニがあります。
+    target_lang: ja
+    translation:
+      vi: Ở nhà ga có cửa hàng tiện lợi.
+    note:
+      vi: Cửa hàng là đồ vật/nơi chốn → あります.
+  - type: example
+    target: がっこうにねこがいます。
+    target_lang: ja
+    translation:
+      vi: Ở trường có con mèo.
+    note:
+      vi: Con mèo là động vật → います.
+  - type: example
+    target: ここはがっこうです。
+    target_lang: ja
+    translation:
+      vi: Chỗ này là trường học.
+    note:
+      vi: ここ đứng làm chủ đề giống これ.
+  - type: common_mistake
+    wrong: がっこうにせんせいがあります。
+    right: がっこうにせんせいがいます。
+    target_lang: ja
+    note:
+      vi: Người dùng います, không dùng あります.
+  - type: common_mistake
+    wrong: えきはどこにですか。
+    right: えきはどこですか。
+    target_lang: ja
+    note:
+      vi: Với です chỉ cần どこですか - không thêm に.
+  - type: summary
+    points:
+      - vi: ここ chỗ này · そこ chỗ đó · あそこ chỗ kia · どこ ở đâu.
+      - vi: N はどこですか - N ở đâu?
+      - vi: (nơi) に (vật) が あります; (nơi) に (người/con vật) が います.
+      - vi: Phủ định - ありません / いません.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:places-mcq-imasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:arimasu-imasu
+    prompt:
+      stem: "Chọn từ đúng - こうえんにいぬが ___。 (Ở công viên có con chó.)"
+      stem_lang: vi
+      options:
+        - { id: a4j, text: います, lang: ja }
+        - { id: b8k, text: あります, lang: ja }
+        - { id: c3l, text: です, lang: ja }
+        - { id: d7m, text: いきます, lang: ja }
+    answer:
+      correct_option_id: a4j
+    explanation:
+      vi: Con chó là động vật nên dùng います. あります dành cho đồ vật; です và いきます không mang nghĩa "có".
+    display_answer: います
+
+  - key: ja:exercise:places-mcq-asoko
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:koko-soko-asoko
+    prompt:
+      stem: Nhà ga ở xa cả bạn và người hỏi. Bạn chỉ tay và nói…
+      stem_lang: vi
+      options:
+        - { id: e2n, text: えきはあそこです。, lang: ja }
+        - { id: f6o, text: えきはここです。, lang: ja }
+        - { id: g1p, text: えきはそこです。, lang: ja }
+        - { id: h5q, text: えきはどこですか。, lang: ja }
+    answer:
+      correct_option_id: e2n
+    explanation:
+      vi: Nơi xa cả hai người là あそこ. ここ là chỗ mình đứng, そこ là gần người nghe, どこ là câu hỏi.
+    display_answer: えきはあそこです。
+
+  - key: ja:exercise:places-listen-toilet
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:toire
+    prompt:
+      audio_asset_id: null
+      fallback_text: すみません、トイレはどこですか。
+      options:
+        - { id: i9r, text: "Xin lỗi, nhà vệ sinh ở đâu ạ?", lang: vi }
+        - { id: j4s, text: "Xin lỗi, nhà ga ở đâu ạ?", lang: vi }
+        - { id: k8t, text: "Xin lỗi, nhà vệ sinh ở đằng kia.", lang: vi }
+        - { id: l3u, text: "Xin lỗi, trường học ở đâu ạ?", lang: vi }
+    answer:
+      correct_option_id: i9r
+    explanation:
+      vi: トイレ - nhà vệ sinh; どこですか - ở đâu? Nhà ga là えき, trường là がっこう; câu có か nên là câu hỏi.
+    display_answer: Xin lỗi, nhà vệ sinh ở đâu ạ?
+
+  - key: ja:exercise:places-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:doko
+    prompt:
+      template: "がっこうは{{b1}}ですか。- {{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Trường học ở đâu? - Ở đằng kia."
+        - Chỗ thứ nhất là từ hỏi nơi chốn; chỗ thứ hai là "chỗ kia" (xa cả hai).
+    answer:
+      blanks:
+        b1: [どこ]
+        b2: [あそこ]
+    known_wrong:
+      - answer: なん
+        feedback_vi: なん hỏi "cái gì"; hỏi nơi chốn dùng どこ.
+        error_tag: question_word
+      - answer: あれ
+        feedback_vi: あれ là "cái kia" (đồ vật); nơi chốn dùng あそこ.
+        error_tag: demonstrative
+    explanation:
+      vi: どこですか - ở đâu? あそこです - ở đằng kia.
+    display_answer: がっこうはどこですか。- あそこです。
+
+  - key: ja:exercise:places-order-station
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:eki
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Ở nhà ga có tàu điện.”"
+      tokens:
+        - { id: t1, text: あります }
+        - { id: t2, text: が }
+        - { id: t3, text: えき }
+        - { id: t4, text: でんしゃ }
+        - { id: t5, text: に }
+        - { id: t6, text: います }
+    answer:
+      orders:
+        - [t3, t5, t4, t2, t1]
+    explanation:
+      vi: えき + に (nơi chốn) + でんしゃ + が + あります. Tàu điện là đồ vật nên dùng あります.
+    display_answer: えきにでんしゃがあります。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:places-fill-exist
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:arimasu-imasu
+    prompt:
+      template: "Trong lớp có thầy giáo - きょうしつにせんせいが{{b1}}。 Trong lớp có cái tivi - きょうしつにテレビが{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [います]
+        b2: [あります]
+    known_wrong:
+      - answer: です
+        feedback_vi: Nghĩa "có (ở đâu đó)" dùng います / あります, không dùng です.
+        error_tag: aru_iru
+      - answer: imasu
+        feedback_vi: Hãy gõ bằng Hiragana (います), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: せんせい là người → います; テレビ là đồ vật → あります.
+    display_answer: います / あります
+
+  - key: ja:exercise:places-write-where
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:eki
+    prompt:
+      source_text: Xin lỗi, nhà ga ở đâu ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - すみません、えきはどこですか。
+        - すみません、駅はどこですか。
+        - すみません。えきはどこですか。
+        - すみません。駅はどこですか。
+        - すみません、えきはどこですか？
+        - すみません、駅はどこですか？
+        - すみませんえきはどこですか。
+        - すみません駅はどこですか。
+        - すみませんえきはどこですか？
+        - すみません駅はどこですか？
+    known_wrong:
+      - answer: すみません、えきはなんですか。
+        feedback_vi: なん là "cái gì"; hỏi nơi chốn dùng どこ.
+        error_tag: question_word
+      - answer: すみません、えきはどこにですか。
+        feedback_vi: Không thêm に trước です - どこですか.
+        error_tag: particle_ni
+    explanation:
+      vi: すみません (xin lỗi) + えき + は + どこ + ですか.
+    display_answer: すみません、えきはどこですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:places-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:arimasu-imasu
+    prompt:
+      source_text: がっこうにいぬがいます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở trường có con chó.
+        - Ở trường học có con chó.
+        - Ở trường có một con chó.
+        - Trong trường có con chó.
+        - Ở trường có chó.
+        - Trường học có con chó.
+        - Có con chó ở trường.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở trường có con mèo.
+        feedback_vi: いぬ là con chó; con mèo là ねこ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: がっこうに - ở trường; いぬがいます - có con chó (động vật nên dùng います).
+    display_answer: Ở trường có con chó.
+
+  - key: ja:exercise:places-mcq-cat
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:arimasu-imasu
+    prompt:
+      stem: Bạn muốn nói "Ở nhà ga không có nhà vệ sinh." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m6v, text: えきにトイレがありません。, lang: ja }
+        - { id: n1w, text: えきにトイレがいません。, lang: ja }
+        - { id: o5x, text: えきはトイレがあります。, lang: ja }
+        - { id: p9y, text: トイレにえきがありません。, lang: ja }
+    answer:
+      correct_option_id: m6v
+    explanation:
+      vi: Nhà vệ sinh là đồ vật/nơi chốn → ありません (phủ định của あります). いません dùng cho người, con vật; phương án 3 là khẳng định; phương án 4 đảo nghĩa.
+    display_answer: えきにトイレがありません。
+
+  - key: ja:exercise:places-write-cat
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:gakkou
+    prompt:
+      source_text: Ở trường học có con mèo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - がっこうにねこがいます。
+        - 学校に猫がいます。
+        - 学校にねこがいます。
+        - がっこうに猫がいます。
+        - 学校にネコがいます。
+        - がっこうにネコがいます。
+    known_wrong:
+      - answer: がっこうにねこがあります。
+        feedback_vi: Con mèo là động vật → います.
+        error_tag: aru_iru
+      - answer: がっこうでねこがいます。
+        feedback_vi: Nơi tồn tại đi với に - がっこうに.
+        error_tag: particle_ni_de
+      - answer: ねこにがっこうがいます。
+        feedback_vi: Nơi chốn + に đứng trước, vật/con vật + が đứng sau.
+        error_tag: word_order
+    explanation:
+      vi: がっこう + に (nơi) + ねこ + が + います (động vật).
+    display_answer: がっこうにねこがいます。

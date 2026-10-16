@@ -1,0 +1,345 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:likes-wants
+order_index: 3
+level: n5
+title:
+  vi: Thích, ghét và muốn - すき・ほしい・〜たい
+objectives:
+  - vi: Nói thích / không thích bằng N がすきです / きらいです.
+  - vi: Nói muốn có gì bằng N がほしいです, muốn làm gì bằng V たいです.
+  - vi: Khen món ăn bằng おいしいです.
+estimated_minutes: 16
+skills: [grammar, speaking, writing]
+prerequisites: [ja:lesson:ordering]
+items:
+  - item: ja:item:suki
+  - item: ja:item:kirai
+  - item: ja:item:hoshii
+  - item: ja:item:tai
+  - item: ja:item:oishii
+  - item: ja:item:sushi
+    role: reuse
+  - item: ja:item:tabemasu
+    role: reuse
+  - item: ja:item:ikimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói về sở thích ăn uống và mong muốn của mình - すしがすきです, にほんへいきたいです.
+  - type: explain
+    text:
+      vi: "Thích N - N がすきです; ghét N - N がきらいです. Đối tượng được thích đi với が, không phải を, vì すき, きらい là tính từ. Không thích - すきじゃありません."
+  - type: explain
+    text:
+      vi: Muốn có một vật - N がほしいです (カメラがほしいです - tôi muốn có máy ảnh). Muốn làm một việc - bỏ ます của động từ, thêm たいです - たべます → たべたいです (muốn ăn).
+  - type: explain
+    text:
+      vi: Khen món ăn - おいしいです (ngon quá). Hỏi người khác - おいしいですか.
+  - type: deep_explain
+    text:
+      vi: Với V たい, tân ngữ có thể đi với を hoặc が - すしをたべたいです và すしがたべたいです đều đúng. ほしい và たい chỉ nói mong muốn của chính mình hoặc hỏi người nghe; nói về người thứ ba cần mẫu khác (học ở N4). Từ chối khéo kiểu Nhật - あまりすきじゃありません (không thích lắm) thay vì きらいです.
+  - type: example
+    target: わたしはすしがすきです。
+    target_lang: ja
+    translation:
+      vi: Tôi thích sushi.
+    note:
+      vi: すし + が + すきです.
+  - type: example
+    target: やさいはあまりすきじゃありません。
+    target_lang: ja
+    translation:
+      vi: Tôi không thích rau lắm.
+    note:
+      vi: あまり … じゃありません - không … lắm, mềm hơn きらいです.
+  - type: example
+    target: あたらしいけいたいがほしいです。
+    target_lang: ja
+    translation:
+      vi: Tôi muốn có điện thoại mới.
+    note:
+      vi: あたらしい - mới; けいたい - điện thoại di động.
+  - type: example
+    target: なにをたべたいですか。- ラーメンをたべたいです。
+    target_lang: ja
+    translation:
+      vi: Bạn muốn ăn gì? - Tôi muốn ăn ramen.
+    note:
+      vi: たべます → たべたい.
+  - type: common_mistake
+    wrong: すしをすきです。
+    right: すしがすきです。
+    target_lang: ja
+    note:
+      vi: すき đi với が.
+  - type: common_mistake
+    wrong: にほんへいきますたいです。
+    right: にほんへいきたいです。
+    target_lang: ja
+    note:
+      vi: Bỏ ます rồi mới thêm たい - いき + たいです.
+  - type: summary
+    points:
+      - vi: N がすきです / きらいです / すきじゃありません.
+      - vi: N がほしいです - muốn có N.
+      - vi: V(bỏ ます) たいです - muốn làm V.
+      - vi: おいしいです - ngon.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:likes-mcq-ga
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:suki
+    prompt:
+      stem: "Chọn trợ từ đúng - わたしはコーヒー ___ すきです。"
+      stem_lang: vi
+      options:
+        - { id: a4n, text: が, lang: ja }
+        - { id: b8o, text: を, lang: ja }
+        - { id: c3p, text: で, lang: ja }
+        - { id: d7q, text: へ, lang: ja }
+    answer:
+      correct_option_id: a4n
+    explanation:
+      vi: すき là tính từ, đối tượng được thích đi với が - コーヒーがすきです.
+    display_answer: が
+
+  - key: ja:exercise:likes-mcq-tai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:tai
+    prompt:
+      stem: '"Tôi muốn uống nước" là câu nào?'
+      stem_lang: vi
+      options:
+        - { id: e2r, text: みずをのみたいです。, lang: ja }
+        - { id: f6s, text: みずをのみますたいです。, lang: ja }
+        - { id: g1t, text: みずがほしいたいです。, lang: ja }
+        - { id: h5u, text: みずをのみません。, lang: ja }
+    answer:
+      correct_option_id: e2r
+    explanation:
+      vi: のみます → bỏ ます → のみたいです. Không giữ ます trước たい; ほしい và たい không ghép với nhau; のみません là "không uống".
+    display_answer: みずをのみたいです。
+
+  - key: ja:exercise:likes-listen-want
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hoshii
+    prompt:
+      audio_asset_id: null
+      fallback_text: あたらしいカメラがほしいです。
+      options:
+        - { id: i9v, text: Tôi muốn có máy ảnh mới., lang: vi }
+        - { id: j4w, text: Tôi thích máy ảnh mới., lang: vi }
+        - { id: k8x, text: Tôi muốn mua cái cặp mới., lang: vi }
+        - { id: l3y, text: Máy ảnh mới rất đắt., lang: vi }
+    answer:
+      correct_option_id: i9v
+    explanation:
+      vi: カメラ - máy ảnh; ほしいです - muốn có. Thích là すき, cặp là かばん, đắt là たかい.
+    display_answer: Tôi muốn có máy ảnh mới.
+
+  - key: ja:exercise:likes-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:tai
+    prompt:
+      template: "にほんへいき{{b1}}です。すし{{b2}}すきです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Tôi muốn đi Nhật. Tôi thích sushi."
+        - Chỗ thứ nhất là đuôi "muốn làm"; chỗ thứ hai là trợ từ đi với すき.
+    answer:
+      blanks:
+        b1: [たい]
+        b2: [が]
+    known_wrong:
+      - answer: ます
+        feedback_vi: いきますです không có; "muốn đi" là いきたいです.
+        error_tag: tai_form
+      - answer: を
+        feedback_vi: すき đi với が.
+        error_tag: particle_ga_suki
+    explanation:
+      vi: いき + たいです (muốn đi); すし + が + すきです.
+    display_answer: にほんへいきたいです。すしがすきです。
+
+  - key: ja:exercise:likes-order-dislike
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kirai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi không thích cá lắm.”"
+      tokens:
+        - { id: t1, text: すきじゃありません }
+        - { id: t2, text: あまり }
+        - { id: t3, text: さかなは }
+        - { id: t4, text: すきです }
+    answer:
+      orders:
+        - [t3, t2, t1]
+    explanation:
+      vi: さかなは + あまり + すきじゃありません. あまり luôn đi với dạng phủ định.
+    display_answer: さかなはあまりすきじゃありません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:likes-fill-tai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:tai
+    prompt:
+      template: "たべます → muốn ăn - {{b1}}です. かいます → muốn mua - {{b2}}です."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [たべたい, 食べたい]
+        b2: [かいたい, 買いたい]
+    known_wrong:
+      - answer: たべますたい
+        feedback_vi: Bỏ ます trước khi thêm たい - たべたい.
+        error_tag: tai_form
+      - answer: かいますたい
+        feedback_vi: Bỏ ます trước khi thêm たい - かいたい.
+        error_tag: tai_form
+    explanation:
+      vi: Bỏ ます + たい - たべ + たい, かい + たい.
+    display_answer: たべたいです / かいたいです
+
+  - key: ja:exercise:likes-write-like
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:suki
+    prompt:
+      source_text: Tôi thích trà Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - にほんのおちゃがすきです。
+        - 日本のお茶が好きです。
+        - わたしはにほんのおちゃがすきです。
+        - 私は日本のお茶が好きです。
+        - にほんちゃがすきです。
+        - 日本茶が好きです。
+        - わたしはにほんちゃがすきです。
+        - 私は日本茶が好きです。
+    known_wrong:
+      - answer: にほんのおちゃをすきです。
+        feedback_vi: すき đi với が.
+        error_tag: particle_ga_suki
+      - answer: おちゃのにほんがすきです。
+        feedback_vi: N1 の N2 - "trà (của) Nhật" là にほんのおちゃ.
+        error_tag: word_order
+    explanation:
+      vi: にほんのおちゃ (trà Nhật) + が + すきです.
+    display_answer: にほんのおちゃがすきです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:likes-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:oishii
+    prompt:
+      source_text: ここのラーメンはおいしいです。また、たべたいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ramen ở đây ngon. Tôi muốn ăn lại.
+        - Ramen ở đây ngon. Tôi muốn ăn lần nữa.
+        - Ramen ở đây ngon. Tôi muốn ăn nữa.
+        - Ramen ở quán này ngon. Tôi muốn ăn lại.
+        - Ramen ở quán này ngon. Tôi muốn ăn lần nữa.
+        - Mì ramen ở đây ngon. Tôi muốn ăn lại.
+        - Món ramen ở đây ngon. Tôi muốn ăn lại.
+        - Ramen chỗ này ngon. Tôi muốn ăn lại.
+        - Ramen ở đây ngon quá. Tôi muốn ăn lại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ramen ở đây ngon. Tôi không muốn ăn nữa.
+        feedback_vi: たべたいです là "muốn ăn" (khẳng định); また - lại, lần nữa.
+        error_tag: negation
+    explanation:
+      vi: ここのラーメン - ramen ở đây (ở quán này); おいしい - ngon; また - lại; たべたいです - muốn ăn.
+    display_answer: Ramen ở đây ngon. Tôi muốn ăn lại.
+
+  - key: ja:exercise:likes-mcq-polite
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kirai
+    prompt:
+      stem: Chủ nhà người Nhật mời bạn món cá sống, bạn không thích lắm. Câu nào từ chối lịch sự nhất?
+      stem_lang: vi
+      options:
+        - { id: m7z, text: すみません、さかなはあまりすきじゃありません。, lang: ja }
+        - { id: n2a, text: さかながきらいです。, lang: ja }
+        - { id: o6b, text: さかなをすきじゃありません。, lang: ja }
+        - { id: p1c, text: さかながほしいです。, lang: ja }
+    answer:
+      correct_option_id: m7z
+    explanation:
+      vi: すみません + あまりすきじゃありません là cách nói mềm và lịch sự. きらいです quá thẳng; を sai trợ từ; ほしいです là "muốn có".
+    display_answer: すみません、さかなはあまりすきじゃありません。
+
+  - key: ja:exercise:likes-write-want-go
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:tai
+    prompt:
+      source_text: Tôi muốn đi Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - にほんへいきたいです。
+        - にほんにいきたいです。
+        - 日本へ行きたいです。
+        - 日本に行きたいです。
+        - わたしはにほんへいきたいです。
+        - わたしはにほんにいきたいです。
+        - 私は日本へ行きたいです。
+        - 私は日本に行きたいです。
+    known_wrong:
+      - answer: にほんへいきますたいです。
+        feedback_vi: Bỏ ます trước たい - いきたいです.
+        error_tag: tai_form
+      - answer: にほんがほしいです。
+        feedback_vi: ほしい dùng cho đồ vật; muốn làm gì dùng V たい - いきたいです.
+        error_tag: hoshii_tai
+      - answer: にほんえいきたいです。
+        feedback_vi: Trợ từ chỉ hướng viết へ.
+        error_tag: particle_e_spelling
+    explanation:
+      vi: にほん + へ (に) + いき + たいです.
+    display_answer: にほんへいきたいです。

@@ -1,0 +1,333 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:big-numbers-money
+order_index: 2
+level: n5
+title:
+  vi: Trăm, nghìn, vạn và tiền yên
+objectives:
+  - vi: Nói số đến hàng chục nghìn bằng ひゃく, せん, まん.
+  - vi: Nhớ các số đổi âm - さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん.
+  - vi: Hỏi giá bằng いくらですか và đọc giá tiền yên.
+estimated_minutes: 15
+skills: [vocabulary, listening, speaking]
+prerequisites: [ja:lesson:numbers-0-99]
+items:
+  - item: ja:item:hyaku
+  - item: ja:item:sen
+  - item: ja:item:man
+  - item: ja:item:en
+  - item: ja:item:ikura
+  - item: ja:item:num-tens
+    role: reuse
+  - item: ja:item:kore-sore-are
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi giá và hiểu câu trả lời kiểu これはせんごひゃくえんです (Cái này 1.500 yên).
+  - type: explain
+    text:
+      vi: ひゃく (100), せん (1.000), まん (10.000). Ghép số đứng trước để nhân - にひゃく (200), ごせん (5.000), さんまん (30.000). 100 và 1.000 chỉ nói ひゃく, せん; nhưng 10.000 phải nói いちまん.
+  - type: explain
+    text:
+      vi: Một số tổ hợp đổi âm cho dễ đọc - さんびゃく (300), ろっぴゃく (600), はっぴゃく (800), さんぜん (3.000), はっせん (8.000). Các số còn lại ghép bình thường.
+  - type: explain
+    text:
+      vi: Giá tiền - số + えん (yên). Hỏi giá - いくらですか. Đọc số lớn từ hàng cao xuống - せんにひゃくさんじゅうえん = 1.230 yên.
+  - type: deep_explain
+    text:
+      vi: Tiếng Nhật chia số theo nhóm bốn chữ số (まん = 10⁴), còn tiếng Việt theo nhóm ba (nghìn = 10³). Vì vậy 100.000 là じゅうまん ("mười vạn"), 1.000.000 là ひゃくまん. Mẹo - đếm bốn chữ số từ phải sang, phần còn lại đọc + まん. Chữ Hán - 百 (ひゃく), 千 (せん), 万 (まん), 円 (えん).
+  - type: example
+    target: これはいくらですか。- ろっぴゃくえんです。
+    target_lang: ja
+    translation:
+      vi: Cái này bao nhiêu tiền? - 600 yên.
+    note:
+      vi: 600 đổi âm thành ろっぴゃく.
+  - type: example
+    target: さんぜんはっぴゃくえん
+    target_lang: ja
+    translation:
+      vi: 3.800 yên
+    note:
+      vi: Hai lần đổi âm - さんぜん (3.000) và はっぴゃく (800).
+  - type: example
+    target: いちまんごせんえん
+    target_lang: ja
+    translation:
+      vi: 15.000 yên
+    note:
+      vi: 15.000 = いちまん (10.000) + ごせん (5.000).
+  - type: common_mistake
+    wrong: じゅうせんえん
+    right: いちまんえん
+    target_lang: ja
+    note:
+      vi: 10.000 là いちまん - tiếng Nhật không nói "mười nghìn".
+  - type: common_mistake
+    wrong: さんひゃくえん
+    right: さんびゃくえん
+    target_lang: ja
+    note:
+      vi: 300 đổi âm thành さんびゃく (び có dấu đục).
+  - type: summary
+    points:
+      - vi: ひゃく 100 · せん 1.000 · まん 10.000 (いちまん).
+      - vi: Đổi âm - さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん.
+      - vi: Giá - số + えん; hỏi - いくらですか.
+      - vi: 100.000 = じゅうまん - đếm theo nhóm bốn chữ số.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:bignum-mcq-300
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hyaku
+    prompt:
+      stem: 300 yên đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: a5b, text: さんびゃくえん, lang: ja }
+        - { id: b9c, text: さんひゃくえん, lang: ja }
+        - { id: c4d, text: さんぴゃくえん, lang: ja }
+        - { id: d8e, text: さんぜんえん, lang: ja }
+    answer:
+      correct_option_id: a5b
+    explanation:
+      vi: 300 đổi âm thành さんびゃく. さんぜん là 3.000; さんひゃく, さんぴゃく là cách đọc sai.
+    display_answer: さんびゃくえん
+
+  - key: ja:exercise:bignum-mcq-10000
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:man
+    prompt:
+      stem: 10.000 yên đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: e3f, text: いちまんえん, lang: ja }
+        - { id: f7g, text: じゅうせんえん, lang: ja }
+        - { id: g2h, text: せんえん, lang: ja }
+        - { id: h6i, text: ひゃくまんえん, lang: ja }
+    answer:
+      correct_option_id: e3f
+    explanation:
+      vi: 10.000 là いちまん. せん là 1.000, ひゃくまん là 1.000.000; tiếng Nhật không nói じゅうせん.
+    display_answer: いちまんえん
+
+  - key: ja:exercise:bignum-listen-price
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:sen
+    prompt:
+      audio_asset_id: null
+      fallback_text: はっせんごひゃくえんです。
+      options:
+        - { id: i1j, text: 8.500 yên, lang: vi }
+        - { id: j5k, text: 800 yên, lang: vi }
+        - { id: k9l, text: 5.800 yên, lang: vi }
+        - { id: l4m, text: 3.500 yên, lang: vi }
+    answer:
+      correct_option_id: i1j
+    explanation:
+      vi: はっせん (8.000) + ごひゃく (500) = 8.500. 800 là はっぴゃく, 3.000 là さんぜん.
+    display_answer: 8.500 yên
+
+  - key: ja:exercise:bignum-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ikura
+    prompt:
+      template: "これは{{b1}}ですか。- ひゃく{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cái này bao nhiêu tiền? - 100 yên."
+        - Chỗ thứ nhất là từ hỏi giá; chỗ thứ hai là đơn vị tiền Nhật.
+    answer:
+      blanks:
+        b1: [いくら]
+        b2: [えん, 円]
+    known_wrong:
+      - answer: いくつ
+        feedback_vi: いくつ hỏi số lượng (mấy cái); hỏi giá dùng いくら.
+        error_tag: ikura_ikutsu
+      - answer: いえん
+        feedback_vi: Yên viết えん (hai chữ え + ん).
+        error_tag: spelling
+      - answer: en
+        feedback_vi: Hãy gõ bằng Hiragana (えん), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: いくらですか - bao nhiêu tiền? ひゃくえん - 100 yên.
+    display_answer: これはいくらですか。- ひゃくえんです。
+
+  - key: ja:exercise:bignum-order-price
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:en
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Đó là 2.600 yên.”"
+      tokens:
+        - { id: t1, text: ろっぴゃく }
+        - { id: t2, text: です }
+        - { id: t3, text: それは }
+        - { id: t4, text: にせん }
+        - { id: t5, text: えん }
+    answer:
+      orders:
+        - [t3, t4, t1, t5, t2]
+    explanation:
+      vi: それは + にせん (2.000) + ろっぴゃく (600) + えん + です. Hàng cao đứng trước.
+    display_answer: それはにせんろっぴゃくえんです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:bignum-fill-prices
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hyaku
+    prompt:
+      template: "800 yên - {{b1}}えん. 3.000 yên - {{b2}}えん."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [はっぴゃく, 八百]
+        b2: [さんぜん, 三千]
+    known_wrong:
+      - answer: はちひゃく
+        feedback_vi: 800 đổi âm thành はっぴゃく.
+        error_tag: sound_change
+      - answer: さんせん
+        feedback_vi: 3.000 đổi âm thành さんぜん (có dấu đục).
+        error_tag: sound_change
+    explanation:
+      vi: はっぴゃく (800) và さんぜん (3.000) là hai số đổi âm cần nhớ.
+    display_answer: はっぴゃくえん / さんぜんえん
+
+  - key: ja:exercise:bignum-write-how-much
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ikura
+    prompt:
+      source_text: Cái kia bao nhiêu tiền?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あれはいくらですか。
+        - あれはいくらですか？
+        - あれ、いくらですか。
+        - あれいくらですか。
+    known_wrong:
+      - answer: あれはいくつですか。
+        feedback_vi: いくつ hỏi số lượng; hỏi giá tiền dùng いくら.
+        error_tag: ikura_ikutsu
+      - answer: これはいくらですか。
+        feedback_vi: '"Cái kia" là あれ; これ là "cái này".'
+        error_tag: demonstrative
+    explanation:
+      vi: あれ (cái kia) + は + いくら (bao nhiêu tiền) + ですか.
+    display_answer: あれはいくらですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:bignum-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:man
+    prompt:
+      source_text: それはさんまんえんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái đó 30.000 yên.
+        - Cái đó giá 30.000 yên.
+        - Cái đó là 30.000 yên.
+        - Đó là 30.000 yên.
+        - Cái đó 30000 yên.
+        - Cái đó giá 30000 yên.
+        - Cái đó ba mươi nghìn yên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái đó 3.000 yên.
+        feedback_vi: まん là 10.000 nên さんまん = 30.000. 3.000 là さんぜん.
+        error_tag: number_scale
+    explanation:
+      vi: それ - cái đó; さんまん = 3 × 10.000 = 30.000 yên.
+    display_answer: Cái đó 30.000 yên.
+
+  - key: ja:exercise:bignum-mcq-shop
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:sen
+    prompt:
+      stem: Nhân viên nói giá một cái ô là 1.680 yên. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m2n, text: せんろっぴゃくはちじゅうえんです。, lang: ja }
+        - { id: n6o, text: いちせんろくひゃくはちじゅうえんです。, lang: ja }
+        - { id: o1p, text: せんろっぴゃくはちえんです。, lang: ja }
+        - { id: p5q, text: ろっぴゃくはちじゅうえんです。, lang: ja }
+    answer:
+      correct_option_id: m2n
+    explanation:
+      vi: 1.680 = せん (không nói いちせん) + ろっぴゃく (600, đổi âm) + はちじゅう (80). せんろっぴゃくはち là 1.608; phương án cuối thiếu せん.
+    display_answer: せんろっぴゃくはちじゅうえんです。
+
+  - key: ja:exercise:bignum-write-price
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:en
+    prompt:
+      source_text: Cái này 1.300 yên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - これはせんさんびゃくえんです。
+        - これは千三百円です。
+        - これは1300円です。
+        - これは１３００円です。
+        - これは1,300円です。
+        - せんさんびゃくえんです。
+        - 千三百円です。
+    known_wrong:
+      - answer: これはせんさんひゃくえんです。
+        feedback_vi: 300 đổi âm thành さんびゃく.
+        error_tag: sound_change
+      - answer: これはいちせんさんびゃくえんです。
+        feedback_vi: 1.000 chỉ nói せん, không nói いちせん.
+        error_tag: number_reading
+      - answer: これはせんさんびゃくです。
+        feedback_vi: Thiếu đơn vị えん sau số.
+        error_tag: missing_counter
+    explanation:
+      vi: これは + せん (1.000) + さんびゃく (300) + えん + です.
+    display_answer: これはせんさんびゃくえんです。

@@ -1,0 +1,344 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:this-that
+order_index: 4
+level: n5
+title:
+  vi: これ・それ・あれ - Cái này là gì?
+objectives:
+  - vi: Chọn đúng これ / それ / あれ theo vị trí của đồ vật.
+  - vi: Hỏi "Cái này là gì?" bằng なんですか và trả lời.
+  - vi: Nói sở hữu bằng N1 の N2 - わたしのほん (sách của tôi).
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [ja:lesson:name-nationality]
+items:
+  - item: ja:item:kore-sore-are
+  - item: ja:item:no-possessive
+  - item: ja:item:nan
+  - item: ja:item:hon
+  - item: ja:item:kasa
+  - item: ja:item:tokei
+  - item: ja:item:question-ka
+    role: reuse
+  - item: ja:item:kaban
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và trả lời về đồ vật xung quanh - これはなんですか (Cái này là gì?), それはわたしのかさです (Đó là ô của tôi).
+  - type: explain
+    text:
+      vi: Tiếng Nhật chia ba vùng - これ (vật gần người nói), それ (vật gần người nghe), あれ (vật xa cả hai). Khi người hỏi cầm vật và hỏi これは…, người trả lời đứng xa sẽ dùng それは….
+  - type: explain
+    text:
+      vi: Hỏi "là cái gì" - なんですか. なに đọc thành なん khi đứng trước です. Trả lời bằng cách thay なん bằng tên đồ vật - それはほんです.
+  - type: explain
+    text:
+      vi: Sở hữu dùng の - わたしのかばん (cặp của tôi), にほんごのほん (sách tiếng Nhật). Người/vật sở hữu đứng trước の, ngược với "của" tiếng Việt.
+  - type: deep_explain
+    text:
+      vi: "Hỏi chủ sở hữu dùng だれの (của ai) - これはだれのかさですか. の còn nối hai danh từ theo nghĩa \"về / loại\" - にほんごのほん là sách (về) tiếng Nhật, không phải sách \"của\" tiếng Nhật. Chữ Hán - 本 (ほん), 傘 (かさ), 時計 (とけい), 何 (なん / なに)."
+  - type: example
+    target: これはなんですか。- それはとけいです。
+    target_lang: ja
+    translation:
+      vi: Cái này là gì? - Đó là cái đồng hồ.
+    note:
+      vi: Đồng hồ ở trong tay người hỏi, nên người trả lời dùng それ.
+  - type: example
+    target: あれはなんですか。- あれはホテルです。
+    target_lang: ja
+    translation:
+      vi: Kia là cái gì? - Kia là khách sạn.
+    note:
+      vi: Tòa nhà ở xa cả hai người nên cả hai đều dùng あれ.
+  - type: example
+    target: これはわたしのかさです。
+    target_lang: ja
+    translation:
+      vi: Đây là cái ô của tôi.
+    note:
+      vi: わたし (người sở hữu) + の + かさ (vật).
+  - type: example
+    target: それはランさんのほんですか。- はい、わたしのです。
+    target_lang: ja
+    translation:
+      vi: Đó là sách của chị Lan phải không? - Vâng, của tôi.
+    note:
+      vi: Khi đã rõ vật gì, có thể bỏ danh từ sau の - わたしのです (của tôi).
+  - type: common_mistake
+    wrong: これはほんのわたしです。
+    right: これはわたしのほんです。
+    target_lang: ja
+    note:
+      vi: '"Sách của tôi" - người sở hữu わたし đứng trước の.'
+  - type: common_mistake
+    wrong: これはなにですか。
+    right: これはなんですか。
+    target_lang: ja
+    note:
+      vi: Trước です, なに đọc và viết thành なん.
+  - type: summary
+    points:
+      - vi: これ - gần người nói · それ - gần người nghe · あれ - xa cả hai.
+      - vi: N はなんですか - N là cái gì?
+      - vi: N1 の N2 - N2 của N1 (người sở hữu đứng trước).
+      - vi: ほん sách · かさ ô · とけい đồng hồ · かばん cặp.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:thisthat-mcq-sore
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kore-sore-are
+    prompt:
+      stem: Bạn chỉ vào cái ô đang nằm trong tay người đối diện. Bạn dùng từ nào?
+      stem_lang: vi
+      options:
+        - { id: a1k, text: それ, lang: ja }
+        - { id: b5m, text: これ, lang: ja }
+        - { id: c8n, text: あれ, lang: ja }
+        - { id: d2p, text: なん, lang: ja }
+    answer:
+      correct_option_id: a1k
+    explanation:
+      vi: Vật ở gần người nghe dùng それ. これ cho vật gần mình, あれ cho vật xa cả hai, なん là "cái gì".
+    display_answer: それ
+
+  - key: ja:exercise:thisthat-mcq-possessive
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:no-possessive
+    prompt:
+      stem: "\"Đồng hồ của tôi\" tiếng Nhật là gì?"
+      stem_lang: vi
+      options:
+        - { id: e6q, text: わたしのとけい, lang: ja }
+        - { id: f3r, text: とけいのわたし, lang: ja }
+        - { id: g7s, text: わたしはとけい, lang: ja }
+        - { id: h4t, text: とけいわたし, lang: ja }
+    answer:
+      correct_option_id: e6q
+    explanation:
+      vi: N1 の N2 - người sở hữu (わたし) đứng trước の, vật (とけい) đứng sau. は là trợ từ chủ đề, không chỉ sở hữu.
+    display_answer: わたしのとけい
+
+  - key: ja:exercise:thisthat-listen-umbrella
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kasa
+    prompt:
+      audio_asset_id: null
+      fallback_text: それはたなかさんのかさです。
+      options:
+        - { id: i9u, text: Đó là cái ô của anh Tanaka., lang: vi }
+        - { id: j2v, text: Đây là cái ô của tôi., lang: vi }
+        - { id: k6w, text: Đó là quyển sách của anh Tanaka., lang: vi }
+        - { id: l1x, text: Kia là đồng hồ của anh Tanaka., lang: vi }
+    answer:
+      correct_option_id: i9u
+    explanation:
+      vi: それ - đó; たなかさんの - của anh Tanaka; かさ - cái ô. Sách là ほん, đồng hồ là とけい, "đây" là これ.
+    display_answer: Đó là cái ô của anh Tanaka.
+
+  - key: ja:exercise:thisthat-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:nan
+    prompt:
+      template: "これは{{b1}}ですか。- それはわたし{{b2}}かばんです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Cái này là gì? - Đó là cái cặp của tôi."
+        - Chỗ thứ nhất là từ để hỏi "cái gì" (dạng đứng trước です); chỗ thứ hai là trợ từ sở hữu.
+    answer:
+      blanks:
+        b1: [なん, 何]
+        b2: [の]
+    known_wrong:
+      - answer: なに
+        feedback_vi: Trước です, なに đổi thành なん - なんですか.
+        error_tag: nan_nani
+      - answer: は
+        feedback_vi: Sở hữu dùng の - わたしのかばん.
+        error_tag: particle_no
+      - answer: nan
+        feedback_vi: Hãy gõ bằng Hiragana (なん), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: なんですか - là cái gì? わたしのかばん - cặp của tôi.
+    display_answer: これはなんですか。- それはわたしのかばんです。
+
+  - key: ja:exercise:thisthat-order-book
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:hon
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Kia là sách của thầy giáo.”"
+      tokens:
+        - { id: t5, text: ほん }
+        - { id: t2, text: は }
+        - { id: t7, text: これ }
+        - { id: t6, text: です }
+        - { id: t3, text: せんせい }
+        - { id: t1, text: あれ }
+        - { id: t4, text: の }
+    answer:
+      orders:
+        - [t1, t2, t3, t4, t5, t6]
+    explanation:
+      vi: あれ (kia) + は + せんせい + の + ほん + です. これ là "đây", không hợp với "kia".
+    display_answer: あれはせんせいのほんです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:thisthat-fill-vocab
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:tokei
+    prompt:
+      template: "Đồng hồ - {{b1}}. Cái ô - {{b2}}. Quyển sách - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [とけい, 時計]
+        b2: [かさ, 傘]
+        b3: [ほん, 本]
+    known_wrong:
+      - answer: とけ
+        feedback_vi: Thiếu い - とけい (kê kéo dài).
+        error_tag: long_vowel
+      - answer: tokei
+        feedback_vi: Hãy gõ bằng Hiragana (とけい), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: とけい (時計) đồng hồ, かさ (傘) cái ô, ほん (本) quyển sách.
+    display_answer: とけい / かさ / ほん
+
+  - key: ja:exercise:thisthat-write-what
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:nan
+    prompt:
+      source_text: Kia là cái gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あれはなんですか。
+        - あれは何ですか。
+        - あれはなんですか？
+        - あれは何ですか？
+    known_wrong:
+      - answer: あれはなにですか。
+        feedback_vi: Trước です dùng なん - なんですか.
+        error_tag: nan_nani
+      - answer: これはなんですか。
+        feedback_vi: これ là "cái này"; vật ở xa cả hai người là あれ.
+        error_tag: demonstrative
+      - answer: あれはなんです。
+        feedback_vi: Câu hỏi cần か ở cuối - なんですか.
+        error_tag: question_particle
+    explanation:
+      vi: あれ (kia) + は + なん (cái gì) + です + か.
+    display_answer: あれはなんですか。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:thisthat-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:no-possessive
+    prompt:
+      source_text: これはわたしのにほんごのほんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đây là sách tiếng Nhật của tôi.
+        - Đây là quyển sách tiếng Nhật của tôi.
+        - Cái này là sách tiếng Nhật của tôi.
+        - Cái này là quyển sách tiếng Nhật của tôi.
+        - Đây là cuốn sách tiếng Nhật của tôi.
+        - Đây là sách tiếng Nhật của mình.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đây là sách của tôi về Nhật Bản.
+        feedback_vi: にほんご là tiếng Nhật (ご = ngôn ngữ), không phải nước Nhật.
+        error_tag: vocab_meaning
+    explanation:
+      vi: わたしの - của tôi; にほんごのほん - sách tiếng Nhật. Hai の nối ba danh từ, đọc ngược lại khi dịch.
+    display_answer: Đây là sách tiếng Nhật của tôi.
+
+  - key: ja:exercise:thisthat-mcq-answer
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kore-sore-are
+    prompt:
+      stem: "Lan cầm một cái đồng hồ và hỏi Tanaka (đứng đối diện) - これはなんですか。 Tanaka trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: m3y, text: それはとけいです。, lang: ja }
+        - { id: n8z, text: これはとけいです。, lang: ja }
+        - { id: o4a, text: それはとけいですか。, lang: ja }
+        - { id: p9b, text: それはなんですか。, lang: ja }
+    answer:
+      correct_option_id: m3y
+    explanation:
+      vi: Đồng hồ ở gần Lan (người nghe của Tanaka) nên Tanaka dùng それ. Câu trả lời là câu kể, không có か; それはなんですか là hỏi lại.
+    display_answer: それはとけいです。
+
+  - key: ja:exercise:thisthat-write-whose
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kasa
+    prompt:
+      source_text: Đó là cái ô của chị Lan phải không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - それはランさんのかさですか。
+        - それはランさんの傘ですか。
+        - それはランさんのかさですか？
+        - それはランさんの傘ですか？
+    known_wrong:
+      - answer: それはかさのランさんですか。
+        feedback_vi: Người sở hữu đứng trước の - ランさんのかさ.
+        error_tag: word_order
+      - answer: それはランさんのかさです。
+        feedback_vi: Thiếu か - câu hỏi có/không cần か ở cuối.
+        error_tag: question_particle
+      - answer: それはランのかさですか。
+        feedback_vi: Gọi tên người khác thêm さん - ランさん.
+        error_tag: missing_san
+    explanation:
+      vi: それ (đó) + は + ランさん + の + かさ + です + か.
+    display_answer: それはランさんのかさですか。

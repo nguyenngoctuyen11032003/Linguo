@@ -1,0 +1,263 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kata-a-to-no
+order_index: 1
+level: kana
+title:
+  vi: Katakana ア đến ノ
+objectives:
+  - vi: Hiểu khi nào tiếng Nhật dùng Katakana thay cho Hiragana.
+  - vi: Đọc và viết năm hàng đầu ア, カ, サ, タ, ナ.
+  - vi: Phân biệt cặp dễ nhầm シ (shi) và ツ (tsu); đọc アイス, ネクタイ.
+estimated_minutes: 12
+skills: [reading, writing]
+prerequisites: [ja:lesson:hira-yoon-sokuon-long]
+items:
+  - item: ja:item:kata-a
+  - item: ja:item:kata-ka
+  - item: ja:item:kata-sa
+  - item: ja:item:kata-ta
+  - item: ja:item:kata-na
+  - item: ja:item:aisu
+  - item: ja:item:nekutai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được 25 chữ Katakana đầu tiên và các từ ngoại lai như アイス (kem), ネクタイ (cà vạt).
+  - type: explain
+    text:
+      vi: Katakana là bảng chữ thứ hai, đọc giống hệt Hiragana nhưng hình chữ thẳng và gãy góc hơn. Katakana dùng cho từ mượn tiếng nước ngoài, tên nước, tên người nước ngoài - giống như khi tiếng Việt viết "ti vi", "cà phê".
+  - type: explain
+    text:
+      vi: Năm hàng đầu - ア イ ウ エ オ, カ キ ク ケ コ, サ シ ス セ ソ, タ チ ツ テ ト, ナ ニ ヌ ネ ノ. Một số chữ trông gần giống Hiragana cùng âm - カ/か, キ/き, ヘ/へ - nên dễ nhớ.
+  - type: deep_explain
+    text:
+      vi: シ (shi) và ツ (tsu) là cặp khó nhất. シ có hai chấm xếp dọc bên trái, nét dài hất từ dưới lên; ツ có hai chấm nằm ngang phía trên, nét dài kéo từ trên xuống. Hãy nhớ - chấm "đứng thành cột" là シ, chấm "xếp thành hàng" là ツ.
+  - type: example
+    target: アイス
+    target_lang: ja
+    translation:
+      vi: kem (đá)
+    note:
+      vi: ア (a) + イ (i) + ス (su) - từ tiếng Anh "ice".
+  - type: example
+    target: ネクタイ
+    target_lang: ja
+    translation:
+      vi: cà vạt
+    note:
+      vi: ネ (ne) + ク (ku) + タ (ta) + イ (i) - từ "necktie".
+  - type: example
+    target: テキスト
+    target_lang: ja
+    translation:
+      vi: sách giáo khoa, tài liệu học
+    note:
+      vi: テ (te) + キ (ki) + ス (su) + ト (to) - từ "text".
+  - type: common_mistake
+    wrong: アイツ
+    right: アイス
+    target_lang: ja
+    note:
+      vi: Kem là アイス với ス (su). ツ là "tsu" - アイツ thành một từ khác hẳn.
+  - type: common_mistake
+    wrong: あいす
+    right: アイス
+    target_lang: ja
+    note:
+      vi: Từ mượn tiếng nước ngoài viết bằng Katakana. Viết bằng Hiragana tuy đọc được nhưng người Nhật không viết như vậy.
+  - type: summary
+    points:
+      - vi: Katakana đọc giống Hiragana, dùng cho từ ngoại lai và tên nước ngoài.
+      - vi: ア イ ウ エ オ · カ キ ク ケ コ · サ シ ス セ ソ · タ チ ツ テ ト · ナ ニ ヌ ネ ノ.
+      - vi: シ (shi) chấm xếp dọc, nét hất lên; ツ (tsu) chấm nằm ngang, nét kéo xuống.
+      - vi: アイス kem · ネクタイ cà vạt · テキスト sách giáo khoa.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kata1-mcq-shi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-sa
+    prompt:
+      stem: Chữ Katakana nào đọc là "shi"?
+      stem_lang: vi
+      options:
+        - { id: s4k, text: シ, lang: ja }
+        - { id: t8m, text: ツ, lang: ja }
+        - { id: n2c, text: ソ, lang: ja }
+        - { id: u6p, text: ス, lang: ja }
+    answer:
+      correct_option_id: s4k
+    explanation:
+      vi: シ là "shi" - hai chấm xếp dọc bên trái. ツ là "tsu" (chấm nằm ngang), ソ là "so", ス là "su".
+    display_answer: シ
+
+  - key: ja:exercise:kata1-mcq-ne
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kata-na
+    prompt:
+      stem: Chữ ネ đọc là gì?
+      stem_lang: vi
+      options:
+        - { id: q1e, text: ne, lang: vi }
+        - { id: w5r, text: nu, lang: vi }
+        - { id: e9t, text: no, lang: vi }
+        - { id: y3h, text: ni, lang: vi }
+    answer:
+      correct_option_id: q1e
+    explanation:
+      vi: ネ là "ne", tương ứng ね Hiragana. ヌ là nu, ノ là no, ニ là ni.
+    display_answer: ne
+
+  - key: ja:exercise:kata1-listen-aisu
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:aisu
+    prompt:
+      audio_asset_id: null
+      fallback_text: アイス
+      options:
+        - { id: a7v, text: kem (đá), lang: vi }
+        - { id: b2n, text: cà vạt, lang: vi }
+        - { id: c5x, text: sách giáo khoa, lang: vi }
+        - { id: d8z, text: bánh ngọt, lang: vi }
+    answer:
+      correct_option_id: a7v
+    explanation:
+      vi: アイス (a-i-su) mượn từ tiếng Anh "ice", nghĩa là kem. Cà vạt là ネクタイ, sách giáo khoa là テキスト.
+    display_answer: kem (đá)
+
+  - key: ja:exercise:kata1-match-hira
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-ta
+    prompt:
+      stem: Chữ Katakana nào đọc giống chữ Hiragana つ?
+      stem_lang: vi
+      options:
+        - { id: f3g, text: ツ, lang: ja }
+        - { id: g6j, text: シ, lang: ja }
+        - { id: h9l, text: チ, lang: ja }
+        - { id: j1k, text: テ, lang: ja }
+    answer:
+      correct_option_id: f3g
+    explanation:
+      vi: つ (tsu) viết bằng Katakana là ツ. シ là shi, チ là chi, テ là te.
+    display_answer: ツ
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kata1-fill-ka-row
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-ka
+    prompt:
+      template: "Katakana hàng カ: カ {{b1}} ク {{b2}} コ"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [キ]
+        b2: [ケ]
+    known_wrong:
+      - answer: き
+        feedback_vi: き là Hiragana. Hàng này viết bằng Katakana - キ.
+        error_tag: hiragana_for_katakana
+      - answer: け
+        feedback_vi: け là Hiragana. Hàng này viết bằng Katakana - ケ.
+        error_tag: hiragana_for_katakana
+      - answer: ki
+        feedback_vi: Hãy gõ bằng chữ Katakana (キ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Hàng カ - カ ka, キ ki, ク ku, ケ ke, コ ko. キ gần giống き, ケ gần giống け.
+    display_answer: キ, ケ
+
+  - key: ja:exercise:kata1-write-aisu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:aisu
+    prompt:
+      source_text: kem (đá) - viết bằng Katakana
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - アイス
+    known_wrong:
+      - answer: あいす
+        feedback_vi: Từ ngoại lai viết bằng Katakana - アイス.
+        error_tag: hiragana_for_katakana
+      - answer: アイツ
+        feedback_vi: ツ là "tsu". Kem là アイス với ス (su).
+        error_tag: kata_shi_tsu
+      - answer: aisu
+        feedback_vi: Hãy gõ bằng chữ Katakana (アイス), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Kem là アイス (từ "ice") - ア + イ + ス. Từ ngoại lai luôn viết bằng Katakana.
+    display_answer: アイス
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kata1-meaning-nekutai
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:nekutai
+    prompt:
+      source_text: ネクタイ
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - cà vạt
+        - cái cà vạt
+        - ca vát
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: kem
+        feedback_vi: Kem là アイス. ネクタイ (ne-ku-ta-i) là cà vạt, từ "necktie".
+        error_tag: vocab_meaning
+    explanation:
+      vi: ネクタイ đọc "ne-ku-ta-i", mượn từ tiếng Anh "necktie" - cà vạt.
+    display_answer: cà vạt
+
+  - key: ja:exercise:kata1-build-tekisuto
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-ta
+    prompt:
+      instruction: 'Ghép các chữ thành từ "tekisuto" (sách giáo khoa).'
+      tokens:
+        - { id: t1, text: ト }
+        - { id: t2, text: ス }
+        - { id: t3, text: キ }
+        - { id: t4, text: ツ }
+        - { id: t5, text: テ }
+        - { id: t6, text: チ }
+    answer:
+      orders:
+        - [t5, t3, t2, t1]
+    explanation:
+      vi: 'tekisuto = テ (te) + キ (ki) + ス (su) + ト (to). ツ là "tsu", チ là "chi".'
+    display_answer: テキスト

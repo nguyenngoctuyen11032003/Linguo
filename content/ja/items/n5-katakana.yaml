@@ -1,0 +1,451 @@
+# Học liệu unit "Bảng chữ Katakana" (chương trình kana-basics). Phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: ア → ノ ----------------
+  - key: ja:item:kata-a
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ア イ ウ エ オ
+      romanization: a i u e o
+      pos: katakana - nguyên âm
+    back:
+      meaning:
+        vi: Năm nguyên âm viết bằng Katakana - đọc giống あ い う え お.
+      examples:
+        - target: アイス
+          translation:
+            vi: kem (đá)
+      pronunciation_note:
+        vi: Cách đọc giống hệt Hiragana, chỉ khác hình chữ - nét Katakana thẳng và gãy góc hơn.
+
+  - key: ja:item:kata-ka
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: カ キ ク ケ コ
+      romanization: ka ki ku ke ko
+      pos: katakana - hàng カ
+    back:
+      meaning:
+        vi: Hàng カ - đọc giống か き く け こ.
+      examples:
+        - target: ケーキ
+          translation:
+            vi: bánh ngọt
+      confusion:
+        vi: カ trông giống か nhưng không có chấm nhỏ bên phải; キ cũng gần giống き.
+
+  - key: ja:item:kata-sa
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: サ シ ス セ ソ
+      romanization: sa shi su se so
+      pos: katakana - hàng サ
+    back:
+      meaning:
+        vi: Hàng サ - đọc giống さ し す せ そ.
+      examples:
+        - target: アイス
+          translation:
+            vi: kem (đá)
+      confusion:
+        vi: シ (shi) và ツ (tsu) rất dễ nhầm. Hai chấm của シ xếp theo chiều dọc bên trái, nét dài viết từ dưới hất lên; ツ có hai chấm nằm ngang phía trên, nét dài viết từ trên xuống.
+
+  - key: ja:item:kata-ta
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: タ チ ツ テ ト
+      romanization: ta chi tsu te to
+      pos: katakana - hàng タ
+    back:
+      meaning:
+        vi: Hàng タ - đọc giống た ち つ て と.
+      examples:
+        - target: ネクタイ
+          translation:
+            vi: cà vạt
+      confusion:
+        vi: ツ (tsu) dễ nhầm với シ (shi), タ (ta) dễ nhầm với ク (ku) - タ có thêm một nét ngắn ở giữa.
+
+  - key: ja:item:kata-na
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ナ ニ ヌ ネ ノ
+      romanization: na ni nu ne no
+      pos: katakana - hàng ナ
+    back:
+      meaning:
+        vi: Hàng ナ - đọc giống な に ぬ ね の.
+      examples:
+        - target: ネクタイ
+          translation:
+            vi: cà vạt
+      confusion:
+        vi: ニ (ni) là hai nét ngang, giống số 二 (hai) trong chữ Hán.
+
+  - key: ja:item:aisu
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: アイス
+      romanization: aisu
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: kem (đá) - từ tiếng Anh "ice"
+      examples:
+        - target: アイスをたべます。
+          translation:
+            vi: Tôi ăn kem.
+
+  - key: ja:item:nekutai
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: ネクタイ
+      romanization: nekutai
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: cà vạt - từ tiếng Anh "necktie"
+      examples:
+        - target: あかいネクタイ
+          translation:
+            vi: cái cà vạt màu đỏ
+
+  # ---------------- bài 2: ハ → ン ----------------
+  - key: ja:item:kata-ha
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ハ ヒ フ ヘ ホ
+      romanization: ha hi fu he ho
+      pos: katakana - hàng ハ
+    back:
+      meaning:
+        vi: Hàng ハ - đọc giống は ひ ふ へ ほ.
+      examples:
+        - target: ホテル
+          translation:
+            vi: khách sạn
+      confusion:
+        vi: ヘ (he) Katakana và へ Hiragana gần như giống hệt nhau.
+
+  - key: ja:item:kata-ma
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: マ ミ ム メ モ
+      romanization: ma mi mu me mo
+      pos: katakana - hàng マ
+    back:
+      meaning:
+        vi: Hàng マ - đọc giống ま み む め も.
+      examples:
+        - target: カメラ
+          translation:
+            vi: máy ảnh
+      confusion:
+        vi: マ (ma) và ア (a) giống nhau - ア có nét dọc dài đâm xuống, マ có nét chéo ngắn bên dưới.
+
+  - key: ja:item:kata-ya
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ヤ ユ ヨ
+      romanization: ya yu yo
+      pos: katakana - hàng ヤ
+    back:
+      meaning:
+        vi: Hàng ヤ - đọc giống や ゆ よ.
+      examples:
+        - target: タイヤ
+          translation:
+            vi: lốp xe
+
+  - key: ja:item:kata-ra
+    type: kana
+    level: kana
+    difficulty: 1
+    skill_tags: [reading]
+    front:
+      text: ラ リ ル レ ロ
+      romanization: ra ri ru re ro
+      pos: katakana - hàng ラ
+    back:
+      meaning:
+        vi: Hàng ラ - đọc giống ら り る れ ろ. Từ ngoại lai có "l" hay "r" đều viết bằng hàng này.
+      examples:
+        - target: ホテル
+          translation:
+            vi: khách sạn
+        - target: カメラ
+          translation:
+            vi: máy ảnh
+      confusion:
+        vi: ロ (ro) là ô vuông, gần giống chữ Hán 口 (miệng).
+
+  - key: ja:item:kata-wa
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: ワ ヲ ン
+      romanization: wa o n
+      pos: katakana - ワ, ヲ, ン
+    back:
+      meaning:
+        vi: ワ đọc "wa", ン là âm "n" cuối. ヲ hầu như không dùng trong Katakana.
+      examples:
+        - target: ワイン
+          translation:
+            vi: rượu vang
+      confusion:
+        vi: ン (n) và ソ (so) dễ nhầm. Nét dài của ン hất từ dưới lên, hai nét của ソ đều viết từ trên xuống. Cũng như シ/ツ - nét hất lên là シ, ン; nét kéo xuống là ツ, ソ.
+
+  - key: ja:item:hoteru
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: ホテル
+      romanization: hoteru
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: khách sạn - từ tiếng Anh "hotel"
+      examples:
+        - target: ホテルはどこですか。
+          translation:
+            vi: Khách sạn ở đâu?
+      pronunciation_note:
+        vi: Âm "l" cuối của "hotel" thành ル (ru) vì tiếng Nhật không có phụ âm đứng cuối (trừ ん).
+
+  - key: ja:item:kamera
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: カメラ
+      romanization: kamera
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: máy ảnh - từ tiếng Anh "camera"
+      examples:
+        - target: あたらしいカメラ
+          translation:
+            vi: cái máy ảnh mới
+
+  # ---------------- bài 3: âm đục, âm ghép, âm ngắt ----------------
+  - key: ja:item:kata-dakuten
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading]
+    front:
+      text: ガ ザ ダ バ パ
+      romanization: ga za da ba pa
+      pos: katakana - âm đục ゛ và bán đục ゜
+    back:
+      meaning:
+        vi: Dấu ゛ và ゜ dùng giống Hiragana - カ→ガ, サ→ザ, タ→ダ, ハ→バ, ハ→パ.
+      examples:
+        - target: パン
+          translation:
+            vi: bánh mì
+        - target: テレビ
+          translation:
+            vi: ti vi
+      pronunciation_note:
+        vi: ダ đọc "đa" như だ. Âm "v" của tiếng nước ngoài thường viết bằng hàng バ - テレビ (television).
+
+  - key: ja:item:kata-yoon-sokuon
+    type: kana
+    level: kana
+    difficulty: 3
+    skill_tags: [reading]
+    front:
+      text: キャ シュ チョ ッ
+      romanization: kya shu cho (kk/tt…)
+      pos: katakana - âm ghép và âm ngắt
+    back:
+      meaning:
+        vi: Âm ghép (ャ ュ ョ nhỏ) và âm ngắt (ッ nhỏ) viết và đọc giống Hiragana.
+      examples:
+        - target: シャツ
+          translation:
+            vi: áo sơ mi
+        - target: ベッド
+          translation:
+            vi: cái giường
+      confusion:
+        vi: ッ nhỏ (ngắt nhịp) khác ツ to ("tsu") - シャツ kết thúc bằng ツ to.
+
+  - key: ja:item:pan
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: パン
+      romanization: pan
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: bánh mì - gốc từ tiếng Bồ Đào Nha "pão"
+      examples:
+        - target: パンをたべます。
+          translation:
+            vi: Tôi ăn bánh mì.
+
+  - key: ja:item:terebi
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: テレビ
+      romanization: terebi
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: ti vi - rút gọn từ tiếng Anh "television"
+      examples:
+        - target: テレビをみます。
+          translation:
+            vi: Tôi xem ti vi.
+
+  # ---------------- bài 4: trường âm ー, âm mở rộng, từ ngoại lai ----------------
+  - key: ja:item:kata-choon
+    type: kana
+    level: kana
+    difficulty: 2
+    skill_tags: [reading, listening]
+    front:
+      text: ー
+      romanization: (kéo dài nguyên âm)
+      pos: katakana - dấu trường âm
+    back:
+      meaning:
+        vi: Dấu gạch ー kéo dài nguyên âm đứng trước thêm một nhịp. Katakana dùng ー thay cho cách thêm あ/い/う của Hiragana.
+      examples:
+        - target: コーヒー
+          translation:
+            vi: cà phê
+        - target: ケーキ
+          translation:
+            vi: bánh ngọt
+      pronunciation_note:
+        vi: コーヒー đọc "cô-ô-hi-i" - bốn nhịp.
+      confusion:
+        vi: Khi viết dọc, ー cũng xoay thành nét dọc.
+
+  - key: ja:item:kata-extended
+    type: kana
+    level: kana
+    difficulty: 3
+    skill_tags: [reading]
+    front:
+      text: ティ ディ ファ フィ フェ フォ ウィ ウェ ジェ チェ シェ
+      romanization: ti di fa fi fe fo wi we je che she
+      pos: katakana - âm mở rộng
+    back:
+      meaning:
+        vi: Tổ hợp với nguyên âm viết nhỏ (ァ ィ ゥ ェ ォ) để ghi những âm nước ngoài mà bảng chữ gốc không có.
+      examples:
+        - target: パーティー
+          translation:
+            vi: bữa tiệc
+        - target: フォーク
+          translation:
+            vi: cái nĩa
+      pronunciation_note:
+        vi: ティ đọc "ti" (không phải "chi" như チ), ファ đọc "fa".
+
+  - key: ja:item:koohii
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: コーヒー
+      romanization: kōhī
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: cà phê
+      examples:
+        - target: コーヒーをのみます。
+          translation:
+            vi: Tôi uống cà phê.
+      pronunciation_note:
+        vi: Hai chỗ kéo dài - コー và ヒー.
+
+  - key: ja:item:keeki
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: ケーキ
+      romanization: kēki
+      pos: danh từ (từ ngoại lai)
+    back:
+      meaning:
+        vi: bánh ngọt, bánh kem - từ tiếng Anh "cake"
+      examples:
+        - target: ケーキをたべます。
+          translation:
+            vi: Tôi ăn bánh ngọt.
+
+  - key: ja:item:betonamu
+    type: vocab
+    level: kana
+    difficulty: 1
+    skill_tags: [vocabulary, reading]
+    front:
+      text: ベトナム
+      romanization: Betonamu
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: Việt Nam
+      examples:
+        - target: ベトナムからきました。
+          translation:
+            vi: Tôi đến từ Việt Nam.
+      pronunciation_note:
+        vi: Bốn nhịp "bê-tô-na-mư" - tên nước ngoài luôn viết bằng Katakana.

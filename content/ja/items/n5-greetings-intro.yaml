@@ -1,0 +1,572 @@
+# Học liệu unit "Chào hỏi & giới thiệu bản thân" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: chào hỏi ----------------
+  - key: ja:item:ohayou-gozaimasu
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: おはようございます
+      romanization: ohayō gozaimasu
+      pos: câu chào
+    back:
+      meaning:
+        vi: Chào buổi sáng (lịch sự). Với bạn bè, gia đình nói gọn おはよう.
+      examples:
+        - target: せんせい、おはようございます。
+          translation:
+            vi: Em chào thầy ạ (buổi sáng).
+      pronunciation_note:
+        vi: よう là "yô" kéo dài - "ô-ha-yô-ô gô-zai-mas". す cuối câu thường đọc rất nhẹ, gần như "mas".
+
+  - key: ja:item:konnichiwa
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening, reading]
+    front:
+      text: こんにちは
+      romanization: konnichiwa
+      pos: câu chào
+    back:
+      meaning:
+        vi: Xin chào (dùng ban ngày, từ khoảng trưa đến chiều).
+      examples:
+        - target: こんにちは。
+          translation:
+            vi: Xin chào.
+      pronunciation_note:
+        vi: Chữ cuối viết は nhưng đọc "wa" - "kon-ni-chi-wa".
+      confusion:
+        vi: Không viết こんにちわ - đây là lỗi chính tả rất thường gặp.
+
+  - key: ja:item:konbanwa
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: こんばんは
+      romanization: konbanwa
+      pos: câu chào
+    back:
+      meaning:
+        vi: Chào buổi tối.
+      examples:
+        - target: こんばんは。
+          translation:
+            vi: Chào buổi tối.
+      pronunciation_note:
+        vi: Chữ cuối viết は nhưng đọc "wa", giống こんにちは.
+
+  - key: ja:item:arigatou-gozaimasu
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: ありがとうございます
+      romanization: arigatō gozaimasu
+      pos: câu cảm ơn
+    back:
+      meaning:
+        vi: Cảm ơn (lịch sự). Với bạn bè nói gọn ありがとう.
+      examples:
+        - target: どうもありがとうございます。
+          translation:
+            vi: Cảm ơn rất nhiều.
+      pronunciation_note:
+        vi: とう là "tô" kéo dài - "a-ri-ga-tô-ô".
+
+  - key: ja:item:sumimasen
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: すみません
+      romanization: sumimasen
+      pos: câu xin lỗi / gọi người
+    back:
+      meaning:
+        vi: Xin lỗi; cũng dùng để gọi người khác ("anh/chị ơi") hoặc cảm ơn khi làm phiền ai.
+      examples:
+        - target: すみません、トイレはどこですか。
+          translation:
+            vi: Xin lỗi, nhà vệ sinh ở đâu ạ?
+      confusion:
+        vi: Gọi nhân viên quán ăn, hỏi đường đều mở đầu bằng すみません.
+
+  - key: ja:item:sayounara
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: さようなら
+      romanization: sayōnara
+      pos: câu chào tạm biệt
+    back:
+      meaning:
+        vi: Tạm biệt (khi chia tay lâu, hoặc học sinh chào thầy cô cuối buổi học). Với bạn bè hằng ngày thường nói じゃあ、また (hẹn gặp lại).
+      examples:
+        - target: せんせい、さようなら。
+          translation:
+            vi: Em chào cô ạ (tạm biệt).
+      confusion:
+        vi: Không dùng さようなら với đồng nghiệp khi tan làm - người Nhật nói おさきにしつれいします (tôi xin phép về trước).
+
+  - key: ja:item:oyasuminasai
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: おやすみなさい
+      romanization: oyasuminasai
+      pos: câu chào
+    back:
+      meaning:
+        vi: Chúc ngủ ngon. Với người thân, bạn bè nói gọn おやすみ.
+      examples:
+        - target: おやすみなさい。
+          translation:
+            vi: Chúc ngủ ngon.
+
+  # ---------------- bài 2: わたしは N です ----------------
+  - key: ja:item:watashi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 私
+      reading: わたし
+      romanization: watashi
+      pos: đại từ
+    back:
+      meaning:
+        vi: tôi - cách tự xưng lịch sự, dùng được với mọi người.
+      examples:
+        - target: わたしはがくせいです。
+          translation:
+            vi: Tôi là học sinh.
+      confusion:
+        vi: Khi đã rõ đang nói về mình, người Nhật thường bỏ わたしは - がくせいです.
+
+  - key: ja:item:topic-wa
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N は
+      romanization: wa
+      pos: trợ từ chủ đề
+    back:
+      meaning:
+        vi: Trợ từ đánh dấu chủ đề của câu, gần "thì / còn" trong tiếng Việt - わたしは (tôi thì…). Viết は nhưng đọc "wa".
+      examples:
+        - target: わたしはランです。
+          translation:
+            vi: Tôi là Lan.
+      pronunciation_note:
+        vi: Khi làm trợ từ, は luôn đọc "wa", không đọc "ha".
+      confusion:
+        vi: Không viết わ cho trợ từ - わたしわ là sai chính tả.
+
+  - key: ja:item:copula-desu
+    type: grammar_point
+    level: n5
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: N です
+      romanization: desu
+      pos: đuôi "là" (lịch sự)
+    back:
+      meaning:
+        vi: Đặt cuối câu, nghĩa là "là" và làm câu lịch sự - がくせいです (là học sinh). です không đổi theo người hay số ít, số nhiều.
+      examples:
+        - target: わたしはいしゃです。
+          translation:
+            vi: Tôi là bác sĩ.
+      pronunciation_note:
+        vi: す cuối thường gần như câm - nghe như "đes".
+
+  - key: ja:item:gakusei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 学生
+      reading: がくせい
+      romanization: gakusei
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh, sinh viên
+      examples:
+        - target: わたしはがくせいです。
+          translation:
+            vi: Tôi là sinh viên.
+      pronunciation_note:
+        vi: せい đọc "xê" kéo dài - "ga-ku-xê-ê".
+
+  - key: ja:item:sensei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 先生
+      reading: せんせい
+      romanization: sensei
+      pos: danh từ
+    back:
+      meaning:
+        vi: thầy giáo, cô giáo; cũng dùng gọi bác sĩ.
+      examples:
+        - target: たなかせんせい
+          translation:
+            vi: thầy Tanaka
+      confusion:
+        vi: せんせい là cách gọi tôn trọng người khác, không dùng cho chính mình. Tự giới thiệu nghề giáo viên thì nói きょうしです.
+
+  - key: ja:item:kaishain
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 会社員
+      reading: かいしゃいん
+      romanization: kaishain
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên công ty
+      examples:
+        - target: わたしはかいしゃいんです。
+          translation:
+            vi: Tôi là nhân viên công ty.
+      pronunciation_note:
+        vi: Năm nhịp - か, い, しゃ, い, ん.
+
+  - key: ja:item:isha
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 医者
+      reading: いしゃ
+      romanization: isha
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ
+      examples:
+        - target: ちちはいしゃです。
+          translation:
+            vi: Bố tôi là bác sĩ.
+      confusion:
+        vi: いしゃ (bác sĩ, しゃ một nhịp) khác いしや - しゃ phải viết ゃ nhỏ.
+
+  # ---------------- bài 3: tên, quốc tịch ----------------
+  - key: ja:item:hajimemashite
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags: [speaking, listening]
+    front:
+      text: はじめまして
+      romanization: hajimemashite
+      pos: câu chào lần đầu gặp
+    back:
+      meaning:
+        vi: Rất hân hạnh được gặp (chỉ nói ở lần gặp đầu tiên, mở đầu phần tự giới thiệu).
+      examples:
+        - target: はじめまして。ランです。
+          translation:
+            vi: Rất vui được gặp anh chị. Tôi là Lan.
+
+  - key: ja:item:yoroshiku-onegaishimasu
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags: [speaking, listening]
+    front:
+      text: よろしくおねがいします
+      romanization: yoroshiku onegaishimasu
+      pos: câu kết phần giới thiệu
+    back:
+      meaning:
+        vi: Rất mong được giúp đỡ - câu kết thúc khi tự giới thiệu, gần "mong anh chị giúp đỡ" của tiếng Việt. Lịch sự hơn - どうぞよろしくおねがいします.
+      examples:
+        - target: ランです。よろしくおねがいします。
+          translation:
+            vi: Tôi là Lan. Rất mong được giúp đỡ.
+      pronunciation_note:
+        vi: し trong します đọc rất nhẹ - "ô-nê-gai-shi-mas".
+
+  - key: ja:item:jin
+    type: grammar_point
+    level: n5
+    difficulty: 1
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: 〜人
+      reading: じん
+      romanization: jin
+      pos: hậu tố quốc tịch
+    back:
+      meaning:
+        vi: Tên nước + じん = người nước đó - ベトナムじん (người Việt Nam), にほんじん (người Nhật).
+      examples:
+        - target: わたしはベトナムじんです。
+          translation:
+            vi: Tôi là người Việt Nam.
+      confusion:
+        vi: じん đứng sau tên nước, ngược với tiếng Việt ("người" đứng trước).
+
+  - key: ja:item:nihon
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 日本
+      reading: にほん
+      romanization: Nihon
+      pos: danh từ riêng
+    back:
+      meaning:
+        vi: Nhật Bản
+      examples:
+        - target: にほんじん
+          translation:
+            vi: người Nhật
+
+  - key: ja:item:san
+    type: grammar_point
+    level: n5
+    difficulty: 1
+    skill_tags: [grammar, speaking]
+    front:
+      text: 〜さん
+      romanization: san
+      pos: hậu tố gọi tên
+    back:
+      meaning:
+        vi: Thêm sau tên người khác để gọi lịch sự, gần "anh/chị/bạn" - ランさん (chị Lan), たなかさん (anh/chị Tanaka).
+      examples:
+        - target: たなかさんはにほんじんです。
+          translation:
+            vi: Anh Tanaka là người Nhật.
+      confusion:
+        vi: Không thêm さん vào tên của chính mình - nói ランです, không nói ランさんです.
+
+  - key: ja:item:question-ka
+    type: grammar_point
+    level: n5
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: 〜か
+      romanization: ka
+      pos: trợ từ nghi vấn
+    back:
+      meaning:
+        vi: Thêm か vào cuối câu để thành câu hỏi có/không, gần "… không?" - がくせいですか (Bạn là học sinh phải không?).
+      examples:
+        - target: ランさんはがくせいですか。
+          translation:
+            vi: Lan là sinh viên phải không?
+      pronunciation_note:
+        vi: Lên giọng ở か. Câu hỏi tiếng Nhật thường kết thúc bằng 。 hoặc ？.
+
+  - key: ja:item:ja-arimasen
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N じゃありません
+      romanization: ja arimasen
+      pos: phủ định "không phải là"
+    back:
+      meaning:
+        vi: Dạng phủ định của です - không phải là. Văn viết, trang trọng dùng ではありません.
+      examples:
+        - target: わたしはにほんじんじゃありません。
+          translation:
+            vi: Tôi không phải là người Nhật.
+      confusion:
+        vi: Phủ định thay です bằng じゃありません, không thêm vào sau です.
+
+  - key: ja:item:hai-iie
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: はい / いいえ
+      romanization: hai / iie
+      pos: từ trả lời
+    back:
+      meaning:
+        vi: はい - vâng, đúng; いいえ - không.
+      examples:
+        - target: はい、がくせいです。
+          translation:
+            vi: Vâng, tôi là sinh viên.
+        - target: いいえ、がくせいじゃありません。
+          translation:
+            vi: Không, tôi không phải sinh viên.
+      pronunciation_note:
+        vi: いいえ có い kéo dài - "i-i-ê".
+
+  - key: ja:item:namae
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 名前
+      reading: なまえ
+      romanization: namae
+      pos: danh từ
+    back:
+      meaning:
+        vi: tên. Hỏi tên người khác lịch sự dùng おなまえは？ (お thêm vào để tỏ ý tôn trọng).
+      examples:
+        - target: おなまえは？
+          translation:
+            vi: Tên bạn là gì?
+      confusion:
+        vi: Không thêm お khi nói về tên của chính mình.
+
+  # ---------------- bài 4: これ / それ / あれ ----------------
+  - key: ja:item:kore-sore-are
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: これ / それ / あれ
+      romanization: kore / sore / are
+      pos: đại từ chỉ định
+    back:
+      meaning:
+        vi: これ - cái này (gần người nói); それ - cái đó (gần người nghe); あれ - cái kia (xa cả hai người).
+      examples:
+        - target: これはほんです。
+          translation:
+            vi: Đây là quyển sách.
+        - target: あれはなんですか。
+          translation:
+            vi: Kia là cái gì?
+      confusion:
+        vi: それ là vật ở gần người nghe, không phải "vật vừa nhắc tới" như "đó" trong mọi trường hợp của tiếng Việt.
+
+  - key: ja:item:no-possessive
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N1 の N2
+      romanization: no
+      pos: trợ từ sở hữu
+    back:
+      meaning:
+        vi: N1 の N2 = N2 của N1 - わたしのほん (sách của tôi). Thứ tự ngược với tiếng Việt - người sở hữu đứng trước.
+      examples:
+        - target: これはわたしのかさです。
+          translation:
+            vi: Đây là cái ô của tôi.
+      confusion:
+        vi: '"Sách của tôi" là わたしのほん, không phải ほんのわたし.'
+
+  - key: ja:item:nan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 何
+      reading: なん / なに
+      romanization: nan / nani
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: cái gì. Trước です đọc なん - なんですか (là cái gì?).
+      examples:
+        - target: それはなんですか。
+          translation:
+            vi: Đó là cái gì?
+
+  - key: ja:item:hon
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 本
+      reading: ほん
+      romanization: hon
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyển sách
+      examples:
+        - target: にほんごのほん
+          translation:
+            vi: sách tiếng Nhật
+
+  - key: ja:item:kasa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 傘
+      reading: かさ
+      romanization: kasa
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ô, cái dù
+      examples:
+        - target: だれのかさですか。
+          translation:
+            vi: Ô của ai vậy?
+
+  - key: ja:item:tokei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 時計
+      reading: とけい
+      romanization: tokei
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng hồ
+      examples:
+        - target: これはわたしのとけいです。
+          translation:
+            vi: Đây là đồng hồ của tôi.
+      pronunciation_note:
+        vi: けい đọc "kê" kéo dài - "tô-kê-ê".

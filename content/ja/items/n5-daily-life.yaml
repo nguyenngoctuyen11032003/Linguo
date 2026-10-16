@@ -1,0 +1,485 @@
+# Học liệu unit "Sinh hoạt hằng ngày" (N5). front.reading là cách đọc kana khi từ có chữ Hán; phiên âm Latinh theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+source: src:linguo-demo
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+items:
+  # ---------------- bài 1: nơi chốn, あります / います ----------------
+  - key: ja:item:koko-soko-asoko
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar, vocabulary]
+    front:
+      text: ここ / そこ / あそこ
+      romanization: koko / soko / asoko
+      pos: đại từ chỉ nơi chốn
+    back:
+      meaning:
+        vi: ここ - chỗ này (gần người nói); そこ - chỗ đó (gần người nghe); あそこ - chỗ kia (xa cả hai). Cùng quy tắc với これ / それ / あれ.
+      examples:
+        - target: トイレはあそこです。
+          translation:
+            vi: Nhà vệ sinh ở đằng kia.
+      confusion:
+        vi: Nơi xa cả hai người là あそこ, không phải あこ.
+
+  - key: ja:item:doko
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: どこ
+      romanization: doko
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: ở đâu, chỗ nào - N はどこですか (N ở đâu?).
+      examples:
+        - target: えきはどこですか。
+          translation:
+            vi: Nhà ga ở đâu?
+
+  - key: ja:item:arimasu-imasu
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N があります / N がいます
+      romanization: ga arimasu / ga imasu
+      pos: động từ tồn tại
+    back:
+      meaning:
+        vi: Có, ở. あります dùng cho đồ vật, cây cối, nơi chốn (không tự di chuyển); います dùng cho người, động vật. Nơi chốn + に - こうえんにねこがいます (Ở công viên có con mèo).
+      examples:
+        - target: つくえのうえにほんがあります。
+          translation:
+            vi: Trên bàn có quyển sách.
+        - target: きょうしつにせんせいがいます。
+          translation:
+            vi: Trong lớp có thầy giáo.
+      confusion:
+        vi: Người, con vật → います; đồ vật → あります. Tiếng Việt đều là "có" nên rất dễ nhầm.
+
+  - key: ja:item:gakkou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 学校
+      reading: がっこう
+      romanization: gakkō
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường học
+      examples:
+        - target: がっこうはどこですか。
+          translation:
+            vi: Trường học ở đâu?
+      pronunciation_note:
+        vi: っ nhỏ tạo nhịp ngắt, こう kéo dài - "gak-kô-ô".
+
+  - key: ja:item:eki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 駅
+      reading: えき
+      romanization: eki
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà ga (tàu điện)
+      examples:
+        - target: えきにでんしゃがあります。
+          translation:
+            vi: Ở nhà ga có tàu điện.
+
+  - key: ja:item:toire
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: トイレ
+      romanization: toire
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà vệ sinh (từ ngoại lai, viết Katakana)
+      examples:
+        - target: すみません、トイレはどこですか。
+          translation:
+            vi: Xin lỗi, nhà vệ sinh ở đâu ạ?
+
+  # ---------------- bài 2: đi, đến, về ----------------
+  - key: ja:item:ikimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 行きます
+      reading: いきます
+      romanization: ikimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đi (dạng lịch sự). Phủ định - いきません.
+      examples:
+        - target: がっこうへいきます。
+          translation:
+            vi: Tôi đi đến trường.
+
+  - key: ja:item:kimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 来ます
+      reading: きます
+      romanization: kimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đến (đến chỗ người nói đang ở). Phủ định - きません.
+      examples:
+        - target: たなかさんはあしたきます。
+          translation:
+            vi: Anh Tanaka ngày mai sẽ đến.
+      confusion:
+        vi: Đi ra chỗ khác dùng いきます; đến chỗ mình đang ở dùng きます.
+
+  - key: ja:item:kaerimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary, grammar]
+    front:
+      text: 帰ります
+      reading: かえります
+      romanization: kaerimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: về (nhà, về nước). Phủ định - かえりません.
+      examples:
+        - target: ろくじにうちへかえります。
+          translation:
+            vi: Tôi về nhà lúc 6 giờ.
+      confusion:
+        vi: Khi nói "về nhà", dùng かえります, không dùng いきます.
+
+  - key: ja:item:particle-e
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N へ
+      romanization: e
+      pos: trợ từ hướng
+    back:
+      meaning:
+        vi: Chỉ hướng đi - nơi chốn + へ + いきます / きます / かえります. Viết へ nhưng đọc "e". Có thể dùng に thay cho へ.
+      examples:
+        - target: にほんへいきます。
+          translation:
+            vi: Tôi đi Nhật.
+      pronunciation_note:
+        vi: Khi làm trợ từ, へ đọc "e", không đọc "he".
+      confusion:
+        vi: Không viết え cho trợ từ - がっこうえ là sai chính tả.
+
+  - key: ja:item:kaisha
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 会社
+      reading: かいしゃ
+      romanization: kaisha
+      pos: danh từ
+    back:
+      meaning:
+        vi: công ty
+      examples:
+        - target: かいしゃへいきます。
+          translation:
+            vi: Tôi đi đến công ty.
+
+  - key: ja:item:uchi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 家
+      reading: うち
+      romanization: uchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà (nhà mình, gia đình mình). Chữ 家 còn đọc いえ - ngôi nhà nói chung.
+      examples:
+        - target: うちへかえります。
+          translation:
+            vi: Tôi về nhà.
+
+  # ---------------- bài 3: thì hiện tại ます / ません ----------------
+  - key: ja:item:masu-masen
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: V ます / V ません
+      romanization: masu / masen
+      pos: đuôi động từ lịch sự
+    back:
+      meaning:
+        vi: Đuôi lịch sự của động từ. ます - khẳng định, dùng cho thói quen và việc sẽ làm (hiện tại/tương lai); ません - phủ định. おきます (thức dậy) → おきません (không dậy).
+      examples:
+        - target: まいにちべんきょうします。
+          translation:
+            vi: Ngày nào tôi cũng học.
+        - target: どようびははたらきません。
+          translation:
+            vi: Thứ Bảy tôi không làm việc.
+      confusion:
+        vi: Tiếng Nhật không chia động từ theo ngôi; ます cũng dùng cho cả việc sắp làm - あしたいきます (mai tôi sẽ đi).
+
+  - key: ja:item:okimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 起きます
+      reading: おきます
+      romanization: okimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: thức dậy
+      examples:
+        - target: まいにちろくじにおきます。
+          translation:
+            vi: Hằng ngày tôi dậy lúc 6 giờ.
+
+  - key: ja:item:nemasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 寝ます
+      reading: ねます
+      romanization: nemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đi ngủ
+      examples:
+        - target: じゅういちじにねます。
+          translation:
+            vi: Tôi đi ngủ lúc 11 giờ.
+
+  - key: ja:item:hatarakimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 働きます
+      reading: はたらきます
+      romanization: hatarakimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: làm việc
+      examples:
+        - target: くじからごじまではたらきます。
+          translation:
+            vi: Tôi làm việc từ 9 giờ đến 5 giờ.
+
+  - key: ja:item:benkyou-shimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 勉強します
+      reading: べんきょうします
+      romanization: benkyō shimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: học, học tập
+      examples:
+        - target: よるにほんごをべんきょうします。
+          translation:
+            vi: Buổi tối tôi học tiếng Nhật.
+      pronunciation_note:
+        vi: きょう là một nhịp "kyô" kéo dài - "ben-kyô-ô shi-mas".
+
+  - key: ja:item:mainichi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 毎日
+      reading: まいにち
+      romanization: mainichi
+      pos: trạng từ
+    back:
+      meaning:
+        vi: mỗi ngày, hằng ngày. Không dùng に sau まいにち.
+      examples:
+        - target: まいにちはたらきます。
+          translation:
+            vi: Ngày nào tôi cũng làm việc.
+
+  - key: ja:item:particle-ni-time
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: 〜時に
+      reading: 〜じに
+      romanization: ni
+      pos: trợ từ thời điểm
+    back:
+      meaning:
+        vi: Thời điểm có số (giờ, ngày) + に + động từ - しちじにおきます (dậy lúc 7 giờ). Từ chỉ thời gian tương đối như きょう, あした, まいにち, いま không dùng に.
+      examples:
+        - target: じゅうにじにねます。
+          translation:
+            vi: Tôi ngủ lúc 12 giờ.
+      confusion:
+        vi: Nói あしたいきます, không nói あしたにいきます.
+
+  # ---------------- bài 4: を và で ----------------
+  - key: ja:item:particle-o
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: N を
+      romanization: o
+      pos: trợ từ tân ngữ
+    back:
+      meaning:
+        vi: Đánh dấu đối tượng của hành động - ほんをよみます (đọc sách). Viết を, đọc "o". Thứ tự - tân ngữ + を + động từ (động từ ở cuối câu).
+      examples:
+        - target: テレビをみます。
+          translation:
+            vi: Tôi xem tivi.
+      confusion:
+        vi: Trợ từ を không viết bằng お - ほんおよみます là sai.
+
+  - key: ja:item:particle-de-place
+    type: grammar_point
+    level: n5
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: N で
+      romanization: de
+      pos: trợ từ nơi hành động
+    back:
+      meaning:
+        vi: Nơi diễn ra hành động + で - としょかんでべんきょうします (học ở thư viện).
+      examples:
+        - target: うちでテレビをみます。
+          translation:
+            vi: Tôi xem tivi ở nhà.
+      confusion:
+        vi: で đi với động từ hành động (học, ăn, xem); に đi với あります / います và chỉ chỗ tồn tại. としょかんにいます (đang ở thư viện) khác としょかんでべんきょうします.
+
+  - key: ja:item:mimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 見ます
+      reading: みます
+      romanization: mimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: xem, nhìn
+      examples:
+        - target: えいがをみます。
+          translation:
+            vi: Tôi xem phim.
+
+  - key: ja:item:yomimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 読みます
+      reading: よみます
+      romanization: yomimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đọc
+      examples:
+        - target: しんぶんをよみます。
+          translation:
+            vi: Tôi đọc báo.
+
+  - key: ja:item:kikimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: 聞きます
+      reading: ききます
+      romanization: kikimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nghe; cũng có nghĩa "hỏi".
+      examples:
+        - target: おんがくをききます。
+          translation:
+            vi: Tôi nghe nhạc.
+
+  - key: ja:item:toshokan
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: 図書館
+      reading: としょかん
+      romanization: toshokan
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư viện
+      examples:
+        - target: としょかんでほんをよみます。
+          translation:
+            vi: Tôi đọc sách ở thư viện.
+      pronunciation_note:
+        vi: しょ là một nhịp "sho" - "tô-sho-kan".

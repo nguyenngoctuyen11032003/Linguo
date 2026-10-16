@@ -1,0 +1,292 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:kata-dakuten-yoon
+order_index: 3
+level: kana
+title:
+  vi: Katakana - âm đục, âm ghép và âm ngắt
+objectives:
+  - vi: Đọc Katakana có dấu ゛ và ゜ (ガ, ザ, ダ, バ, パ).
+  - vi: Đọc âm ghép (キャ, シュ, チョ) và âm ngắt ッ trong Katakana.
+  - vi: Đọc các từ パン, テレビ, シャツ, ベッド.
+estimated_minutes: 12
+skills: [reading, writing, listening]
+prerequisites: [ja:lesson:kata-ha-to-n]
+items:
+  - item: ja:item:kata-dakuten
+  - item: ja:item:kata-yoon-sokuon
+  - item: ja:item:pan
+  - item: ja:item:terebi
+  - item: ja:item:hira-dakuten
+    role: reuse
+  - item: ja:item:hira-sokuon
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được Katakana có dấu, âm ghép và âm ngắt qua các từ quen thuộc パン (bánh mì), テレビ (ti vi), シャツ (áo sơ mi).
+  - type: explain
+    text:
+      vi: Mọi quy tắc của Hiragana áp dụng y nguyên cho Katakana - thêm ゛ để có ガ ザ ダ バ, thêm ゜ để có パ; chữ cột イ + ャ ュ ョ nhỏ thành âm ghép (キャ, シュ, チョ); ッ nhỏ để ngắt một nhịp.
+  - type: explain
+    text:
+      vi: Âm "v" của tiếng nước ngoài thường viết bằng hàng バ - "television" thành テレビ. Phụ âm đôi hay âm cuối mạnh trong tiếng Anh thường thành ッ - "bed" thành ベッド.
+  - type: deep_explain
+    text:
+      vi: Hãy để ý cỡ chữ - シャツ (áo sơ mi) có ャ nhỏ và ツ to ở cuối, đọc "sha-tsu". ベッド có ッ nhỏ nên đọc "bet-đô" với một nhịp ngắt. Viết sai cỡ chữ là đổi cách đọc.
+  - type: example
+    target: パン
+    target_lang: ja
+    translation:
+      vi: bánh mì
+    note:
+      vi: パ (pa, vòng tròn ゜) + ン (n).
+  - type: example
+    target: テレビ
+    target_lang: ja
+    translation:
+      vi: ti vi
+    note:
+      vi: テ (te) + レ (re) + ビ (bi) - "vi" thành ビ.
+  - type: example
+    target: シャツ
+    target_lang: ja
+    translation:
+      vi: áo sơ mi
+    note:
+      vi: シャ (sha, một nhịp) + ツ (tsu, chữ to).
+  - type: example
+    target: ベッド
+    target_lang: ja
+    translation:
+      vi: cái giường
+    note:
+      vi: ベ (be) + ッ (ngắt) + ド (do) - "bet-đô".
+  - type: common_mistake
+    wrong: バン
+    right: パン
+    target_lang: ja
+    note:
+      vi: Bánh mì là パン với vòng tròn ゜ ("pa"). バン (hai chấm, "ban") là xe tải nhỏ.
+  - type: common_mistake
+    wrong: シヤツ
+    right: シャツ
+    target_lang: ja
+    note:
+      vi: Âm ghép シャ dùng ャ nhỏ. シヤツ với ヤ to sẽ đọc thành ba nhịp "shi-ya-tsu".
+  - type: summary
+    points:
+      - vi: ゛ và ゜ dùng giống Hiragana - ガ ザ ダ バ パ.
+      - vi: Âm ghép - chữ cột イ + ャ ュ ョ nhỏ (キャ, シュ, チョ).
+      - vi: ッ nhỏ ngắt một nhịp (ベッド); "v" nước ngoài thường thành hàng バ (テレビ).
+      - vi: パン bánh mì · テレビ ti vi · シャツ áo sơ mi · ベッド cái giường.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:kata3-mcq-pa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kata-dakuten
+    prompt:
+      stem: Chữ Katakana nào đọc là "pa"?
+      stem_lang: vi
+      options:
+        - { id: a3q, text: パ, lang: ja }
+        - { id: b7r, text: バ, lang: ja }
+        - { id: c2s, text: ハ, lang: ja }
+        - { id: d6t, text: ぱ, lang: ja }
+    answer:
+      correct_option_id: a3q
+    explanation:
+      vi: パ là ハ thêm vòng tròn ゜ - "pa". バ (hai chấm) là "ba", ハ là "ha"; ぱ cũng là "pa" nhưng là Hiragana.
+    display_answer: パ
+
+  - key: ja:exercise:kata3-mcq-shatsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-yoon-sokuon
+    prompt:
+      stem: Từ シャツ đọc như thế nào?
+      stem_lang: vi
+      options:
+        - { id: e1u, text: shatsu, lang: vi }
+        - { id: f5v, text: shiyatsu, lang: vi }
+        - { id: g9w, text: shashi, lang: vi }
+        - { id: h4x, text: chatsu, lang: vi }
+    answer:
+      correct_option_id: e1u
+    explanation:
+      vi: シャ (ャ nhỏ) đọc một nhịp "sha", ツ là "tsu" - シャツ đọc "shatsu". "shiyatsu" là cách đọc khi ヤ viết to; "cha" là チャ.
+    display_answer: shatsu
+
+  - key: ja:exercise:kata3-listen-terebi
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:terebi
+    prompt:
+      audio_asset_id: null
+      fallback_text: テレビ
+      options:
+        - { id: i8y, text: ti vi, lang: vi }
+        - { id: j2z, text: bánh mì, lang: vi }
+        - { id: k6a, text: cái giường, lang: vi }
+        - { id: l1b, text: máy ảnh, lang: vi }
+    answer:
+      correct_option_id: i8y
+    explanation:
+      vi: テレビ (te-re-bi) là ti vi, rút gọn từ "television". Bánh mì là パン, cái giường là ベッド, máy ảnh là カメラ.
+    display_answer: ti vi
+
+  - key: ja:exercise:kata3-build-pan
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:pan
+    prompt:
+      instruction: Ghép các chữ thành từ "pan" (bánh mì).
+      tokens:
+        - { id: p1, text: ン }
+        - { id: p2, text: バ }
+        - { id: p3, text: ソ }
+        - { id: p4, text: パ }
+    answer:
+      orders:
+        - [p4, p1]
+    explanation:
+      vi: 'pan = パ (pa, vòng tròn ゜) + ン (n). バ là "ba", ソ là "so".'
+    display_answer: パン
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:kata3-fill-dakuten
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kata-dakuten
+    prompt:
+      template: "Katakana: カ thêm ゛ → {{b1}}; ヒ thêm ゛ → {{b2}}; ヒ thêm ゜ → {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+        - { id: b3, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [ガ]
+        b2: [ビ]
+        b3: [ピ]
+    known_wrong:
+      - answer: が
+        feedback_vi: が là Hiragana. Katakana viết ガ.
+        error_tag: hiragana_for_katakana
+      - answer: び
+        feedback_vi: び là Hiragana. Katakana viết ビ.
+        error_tag: hiragana_for_katakana
+      - answer: ぴ
+        feedback_vi: ぴ là Hiragana. Katakana viết ピ.
+        error_tag: hiragana_for_katakana
+    explanation:
+      vi: カ + ゛ = ガ (ga); ヒ + ゛ = ビ (bi); ヒ + ゜ = ピ (pi).
+    display_answer: ガ, ビ, ピ
+
+  - key: ja:exercise:kata3-write-terebi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:terebi
+    prompt:
+      source_text: ti vi - viết bằng Katakana
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - テレビ
+    known_wrong:
+      - answer: てれび
+        feedback_vi: Từ ngoại lai viết bằng Katakana - テレビ.
+        error_tag: hiragana_for_katakana
+      - answer: テレヒ
+        feedback_vi: Thiếu dấu ゛ - "bi" là ビ.
+        error_tag: missing_dakuten
+      - answer: terebi
+        feedback_vi: Hãy gõ bằng chữ Katakana (テレビ), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Ti vi là テレビ - テ (te) + レ (re) + ビ (bi). "v" của "television" thành ビ.
+    display_answer: テレビ
+
+  # ---------------- application ----------------
+  - key: ja:exercise:kata3-meaning-beddo
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:kata-yoon-sokuon
+    prompt:
+      source_text: ベッド
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - cái giường
+        - giường
+        - chiếc giường
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: bánh mì
+        feedback_vi: Bánh mì là パン. ベッド (bet-đô) là cái giường, từ "bed".
+        error_tag: vocab_meaning
+    explanation:
+      vi: ベッド đọc "bet-đô" với ッ ngắt nhịp, mượn từ tiếng Anh "bed" - cái giường.
+    display_answer: cái giường
+
+  - key: ja:exercise:kata3-mcq-jam
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-yoon-sokuon
+    prompt:
+      stem: '"Mứt" (jam) tiếng Nhật đọc là "jamu" (hai nhịp). Cách viết nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: m5c, text: ジャム, lang: ja }
+        - { id: n9d, text: ジヤム, lang: ja }
+        - { id: o3e, text: シャム, lang: ja }
+        - { id: p7f, text: ジャン, lang: ja }
+    answer:
+      correct_option_id: m5c
+    explanation:
+      vi: '"ja" là ジ + ャ nhỏ - ジャ, rồi ム (mu). ジヤム có ヤ to (ba nhịp), シャ là "sha" (thiếu ゛), ン là "n".'
+    display_answer: ジャム
+
+  - key: ja:exercise:kata3-build-shatsu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kata-yoon-sokuon
+    prompt:
+      instruction: 'Ghép các chữ thành từ "shatsu" (áo sơ mi).'
+      tokens:
+        - { id: s1, text: ツ }
+        - { id: s2, text: ャ }
+        - { id: s3, text: ヤ }
+        - { id: s4, text: シ }
+        - { id: s5, text: ッ }
+    answer:
+      orders:
+        - [s4, s2, s1]
+    explanation:
+      vi: 'シャツ = シ + ャ (nhỏ) + ツ (to). ヤ to sẽ thành "shi-ya"; ッ nhỏ ở cuối không đọc thành "tsu".'
+    display_answer: シャツ

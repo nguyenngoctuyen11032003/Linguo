@@ -1,0 +1,353 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:object-de
+order_index: 4
+level: n5
+title:
+  vi: Làm gì, ở đâu? - を và で
+objectives:
+  - vi: Nói làm gì bằng tân ngữ + を + động từ (viết を, đọc "o").
+  - vi: Nói làm ở đâu bằng nơi chốn + で.
+  - vi: Phân biệt で (nơi hành động) với に (nơi tồn tại).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:daily-routine]
+items:
+  - item: ja:item:particle-o
+  - item: ja:item:particle-de-place
+  - item: ja:item:mimasu
+  - item: ja:item:yomimasu
+  - item: ja:item:kikimasu
+  - item: ja:item:toshokan
+  - item: ja:item:terebi
+    role: reuse
+  - item: ja:item:hon
+    role: reuse
+  - item: ja:item:uchi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được câu đầy đủ "ở đâu - làm gì" - としょかんでほんをよみます (Tôi đọc sách ở thư viện).
+  - type: explain
+    text:
+      vi: を đánh dấu đối tượng của hành động - テレビをみます (xem tivi), おんがくをききます (nghe nhạc). Chữ を chỉ dùng làm trợ từ, đọc "o".
+  - type: explain
+    text:
+      vi: で đánh dấu nơi diễn ra hành động - うちでテレビをみます (xem tivi ở nhà). Thứ tự thường gặp - (thời gian) (nơi) で (vật) を (động từ).
+  - type: explain
+    text:
+      vi: Phân biệt - としょかんにいます (đang ở thư viện, chỉ sự tồn tại) nhưng としょかんでべんきょうします (học ở thư viện, có hành động). Động từ hành động → で; あります / います → に.
+  - type: deep_explain
+    text:
+      vi: Tiếng Việt đặt tân ngữ sau động từ ("đọc sách"), tiếng Nhật đặt trước ("sách を đọc"). Vì động từ luôn ở cuối, bạn có thể đổi chỗ phần nơi chốn và tân ngữ mà nghĩa không đổi - ほんをとしょかんでよみます vẫn đúng. Chữ Hán - 見ます, 読みます, 聞きます, 図書館.
+  - type: example
+    target: うちでテレビをみます。
+    target_lang: ja
+    translation:
+      vi: Tôi xem tivi ở nhà.
+    note:
+      vi: うちで - ở nhà (nơi hành động); テレビを - tivi (đối tượng).
+  - type: example
+    target: としょかんでほんをよみます。
+    target_lang: ja
+    translation:
+      vi: Tôi đọc sách ở thư viện.
+    note:
+      vi: を đọc "o" - "hon o yo-mi-mas".
+  - type: example
+    target: まいにちおんがくをききます。
+    target_lang: ja
+    translation:
+      vi: Ngày nào tôi cũng nghe nhạc.
+    note:
+      vi: おんがく - âm nhạc.
+  - type: example
+    target: あしたかいしゃでなにをしますか。
+    target_lang: ja
+    translation:
+      vi: Ngày mai bạn làm gì ở công ty?
+    note:
+      vi: なにをしますか - làm gì? (なに đứng trước を giữ nguyên なに).
+  - type: common_mistake
+    wrong: ほんおよみます。
+    right: ほんをよみます。
+    target_lang: ja
+    note:
+      vi: Trợ từ tân ngữ đọc "o" nhưng viết を.
+  - type: common_mistake
+    wrong: としょかんにべんきょうします。
+    right: としょかんでべんきょうします。
+    target_lang: ja
+    note:
+      vi: Nơi diễn ra hành động dùng で; に dùng với あります / います hoặc nơi đến.
+  - type: summary
+    points:
+      - vi: (vật) を + động từ - テレビをみます; を đọc "o".
+      - vi: (nơi) で + hành động - うちでべんきょうします.
+      - vi: Nơi tồn tại に (います / あります) ≠ nơi hành động で.
+      - vi: みます xem · よみます đọc · ききます nghe.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:objde-mcq-wo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-o
+    prompt:
+      stem: "Chọn trợ từ đúng - テレビ ___ みます。 (Tôi xem tivi.)"
+      stem_lang: vi
+      options:
+        - { id: a1f, text: を, lang: ja }
+        - { id: b5g, text: お, lang: ja }
+        - { id: c9h, text: で, lang: ja }
+        - { id: d4i, text: へ, lang: ja }
+    answer:
+      correct_option_id: a1f
+    explanation:
+      vi: Đối tượng của hành động dùng を (đọc "o", không viết お). で chỉ nơi chốn, へ chỉ hướng đi.
+    display_answer: を
+
+  - key: ja:exercise:objde-mcq-de
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-de-place
+    prompt:
+      stem: '"Tôi học ở thư viện" là câu nào?'
+      stem_lang: vi
+      options:
+        - { id: e8j, text: としょかんでべんきょうします。, lang: ja }
+        - { id: f3k, text: としょかんにべんきょうします。, lang: ja }
+        - { id: g7l, text: としょかんをべんきょうします。, lang: ja }
+        - { id: h2m, text: としょかんでべんきょうがいます。, lang: ja }
+    answer:
+      correct_option_id: e8j
+    explanation:
+      vi: Nơi diễn ra hành động dùng で. としょかんを là "học (về) thư viện"; に không dùng cho nơi hành động; phương án cuối sai cấu trúc.
+    display_answer: としょかんでべんきょうします。
+
+  - key: ja:exercise:objde-listen-music
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kikimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: うちでおんがくをききます。
+      options:
+        - { id: i6n, text: Tôi nghe nhạc ở nhà., lang: vi }
+        - { id: j1o, text: Tôi xem tivi ở nhà., lang: vi }
+        - { id: k5p, text: Tôi nghe nhạc ở thư viện., lang: vi }
+        - { id: l9q, text: Tôi đọc sách ở nhà., lang: vi }
+    answer:
+      correct_option_id: i6n
+    explanation:
+      vi: うちで - ở nhà; おんがくをききます - nghe nhạc. Xem tivi là テレビをみます, đọc sách là ほんをよみます.
+    display_answer: Tôi nghe nhạc ở nhà.
+
+  - key: ja:exercise:objde-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:particle-de-place
+    prompt:
+      template: "としょかん{{b1}}ほん{{b2}}よみます。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Tôi đọc sách ở thư viện."
+        - Chỗ thứ nhất là trợ từ nơi hành động; chỗ thứ hai là trợ từ tân ngữ (đọc "o").
+    answer:
+      blanks:
+        b1: [で]
+        b2: [を]
+    known_wrong:
+      - answer: お
+        feedback_vi: Trợ từ tân ngữ đọc "o" nhưng viết を.
+        error_tag: particle_o_spelling
+      - answer: に
+        feedback_vi: Nơi diễn ra hành động dùng で, không dùng に.
+        error_tag: particle_ni_de
+    explanation:
+      vi: としょかんで (ở thư viện) + ほんを (sách) + よみます (đọc).
+    display_answer: としょかんでほんをよみます。
+
+  - key: ja:exercise:objde-order-tv
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:mimasu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi xem tivi ở nhà.”"
+      tokens:
+        - { id: t1, text: みます }
+        - { id: t2, text: テレビを }
+        - { id: t3, text: うちで }
+        - { id: t4, text: うちに }
+    answer:
+      orders:
+        - [t3, t2, t1]
+        - [t2, t3, t1]
+    explanation:
+      vi: うちで (ở nhà - nơi hành động) + テレビを + みます. うちに không dùng cho nơi diễn ra hành động.
+    display_answer: うちでテレビをみます。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:objde-fill-verbs
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:yomimasu
+    prompt:
+      template: "Xem - {{b1}}. Đọc - {{b2}}. Nghe - {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [みます, 見ます]
+        b2: [よみます, 読みます]
+        b3: [ききます, 聞きます]
+    known_wrong:
+      - answer: ぎぎます
+        feedback_vi: き không có dấu đục - ききます.
+        error_tag: dakuten
+      - answer: miru
+        feedback_vi: Hãy gõ bằng Hiragana dạng lịch sự (みます).
+        error_tag: romanization
+    explanation:
+      vi: みます (xem), よみます (đọc), ききます (nghe).
+    display_answer: みます / よみます / ききます
+
+  - key: ja:exercise:objde-write-read
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:particle-o
+    prompt:
+      source_text: Tôi đọc sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ほんをよみます。
+        - 本を読みます。
+        - わたしはほんをよみます。
+        - 私は本を読みます。
+        - 本をよみます。
+        - ほんを読みます。
+    known_wrong:
+      - answer: ほんおよみます。
+        feedback_vi: Trợ từ tân ngữ viết を.
+        error_tag: particle_o_spelling
+      - answer: よみますほんを。
+        feedback_vi: Động từ đứng cuối câu - ほんをよみます.
+        error_tag: word_order
+      - answer: ほんはよみます。
+        feedback_vi: Đối tượng của hành động dùng を.
+        error_tag: particle_choice
+    explanation:
+      vi: ほん + を + よみます. Tân ngữ đứng trước động từ.
+    display_answer: ほんをよみます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:objde-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:toshokan
+    prompt:
+      source_text: どようびにとしょかんでにほんごをべんきょうします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thứ Bảy tôi học tiếng Nhật ở thư viện.
+        - Vào thứ Bảy tôi học tiếng Nhật ở thư viện.
+        - Tôi học tiếng Nhật ở thư viện vào thứ Bảy.
+        - Thứ Bảy tôi học tiếng Nhật tại thư viện.
+        - Thứ Bảy mình học tiếng Nhật ở thư viện.
+        - Thứ 7 tôi học tiếng Nhật ở thư viện.
+        - Vào thứ Bảy, tôi học tiếng Nhật ở thư viện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thứ Bảy tôi đọc sách tiếng Nhật ở thư viện.
+        feedback_vi: べんきょうします là "học"; にほんごを - tiếng Nhật (đối tượng học).
+        error_tag: vocab_meaning
+    explanation:
+      vi: どようびに - vào thứ Bảy; としょかんで - ở thư viện; にほんごをべんきょうします - học tiếng Nhật.
+    display_answer: Thứ Bảy tôi học tiếng Nhật ở thư viện.
+
+  - key: ja:exercise:objde-mcq-ni-de
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:particle-de-place
+    prompt:
+      stem: Bạn gọi điện và nói "Bây giờ tôi đang ở thư viện." Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m8r, text: いまとしょかんにいます。, lang: ja }
+        - { id: n3s, text: いまとしょかんでいます。, lang: ja }
+        - { id: o7t, text: いまとしょかんにあります。, lang: ja }
+        - { id: p2u, text: いまとしょかんをいます。, lang: ja }
+    answer:
+      correct_option_id: m8r
+    explanation:
+      vi: Chỉ sự có mặt (tồn tại) của người - (nơi) に います. で dùng cho nơi hành động; あります dành cho đồ vật.
+    display_answer: いまとしょかんにいます。
+
+  - key: ja:exercise:objde-write-tv
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:mimasu
+    prompt:
+      source_text: Buổi tối tôi xem tivi ở nhà.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - よるうちでテレビをみます。
+        - 夜家でテレビを見ます。
+        - 夜うちでテレビを見ます。
+        - よる、うちでテレビをみます。
+        - 夜、家でテレビを見ます。
+        - 夜、うちでテレビを見ます。
+        - よるテレビをうちでみます。
+        - わたしはよるうちでテレビをみます。
+        - 私は夜家でテレビを見ます。
+        - 私は夜うちでテレビを見ます。
+        - よるはうちでテレビをみます。
+        - 夜は家でテレビを見ます。
+        - 夜はうちでテレビを見ます。
+    known_wrong:
+      - answer: よるうちにテレビをみます。
+        feedback_vi: Nơi diễn ra hành động dùng で - うちで.
+        error_tag: particle_ni_de
+      - answer: よるうちでテレビおみます。
+        feedback_vi: Trợ từ tân ngữ viết を.
+        error_tag: particle_o_spelling
+      - answer: よるうちでテレビをみません。
+        feedback_vi: Câu khẳng định dùng みます.
+        error_tag: negation
+    explanation:
+      vi: よる (buổi tối) + うちで (ở nhà) + テレビを (tivi) + みます (xem).
+    display_answer: よるうちでテレビをみます。

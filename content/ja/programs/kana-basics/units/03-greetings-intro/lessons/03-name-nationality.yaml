@@ -1,0 +1,359 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:name-nationality
+order_index: 3
+level: n5
+title:
+  vi: Tên, quốc tịch và câu hỏi có/không
+objectives:
+  - vi: Tự giới thiệu trọn vẹn - はじめまして → tên → quốc tịch → よろしくおねがいします.
+  - vi: Hỏi có/không bằng か và trả lời はい / いいえ, phủ định bằng じゃありません.
+  - vi: Gọi người khác bằng tên + さん, nói quốc tịch bằng tên nước + じん.
+estimated_minutes: 15
+skills: [speaking, listening, grammar, writing]
+prerequisites: [ja:lesson:watashi-wa-desu]
+items:
+  - item: ja:item:hajimemashite
+  - item: ja:item:yoroshiku-onegaishimasu
+  - item: ja:item:jin
+  - item: ja:item:nihon
+  - item: ja:item:san
+  - item: ja:item:question-ka
+  - item: ja:item:ja-arimasen
+  - item: ja:item:hai-iie
+  - item: ja:item:namae
+  - item: ja:item:betonamu
+    role: reuse
+  - item: ja:item:topic-wa
+    role: reuse
+  - item: ja:item:copula-desu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn làm quen với một người Nhật - chào lần đầu gặp, nói tên, quốc tịch, hỏi lại đối phương và trả lời có/không.
+  - type: explain
+    text:
+      vi: Màn tự giới thiệu kiểu Nhật gần như cố định - はじめまして。(tên) です。(quốc tịch) です。よろしくおねがいします。 Câu đầu chỉ dùng khi gặp lần đầu, câu cuối là lời "mong được giúp đỡ" luôn đi kèm.
+  - type: explain
+    text:
+      vi: Muốn hỏi có/không, giữ nguyên câu kể và thêm か vào cuối - がくせいです → がくせいですか (là sinh viên phải không?). Trả lời はい (vâng) hoặc いいえ (không); phủ định của です là じゃありません.
+  - type: explain
+    text:
+      vi: Quốc tịch = tên nước + じん - ベトナムじん, にほんじん. Gọi người khác thì thêm さん sau tên (たなかさん), nhưng không bao giờ thêm さん cho chính mình.
+  - type: deep_explain
+    text:
+      vi: Người Nhật thường gọi nhau bằng họ + さん (たなかさん), ít gọi tên riêng như người Việt. Câu hỏi tên lịch sự là おなまえは？ - chữ お làm từ "tên" trang trọng hơn, nên không dùng khi nói tên mình. Chữ Hán - 日本 (にほん), 名前 (なまえ), 〜人 (じん); trang trọng hơn じゃありません là ではありません.
+  - type: example
+    target: はじめまして。ランです。ベトナムじんです。よろしくおねがいします。
+    target_lang: ja
+    translation:
+      vi: Rất vui được gặp anh chị. Tôi là Lan. Tôi là người Việt Nam. Mong được giúp đỡ.
+    note:
+      vi: Bốn câu ngắn, mỗi câu kết thúc bằng です hoặc câu chào cố định.
+  - type: example
+    target: たなかさんはにほんじんですか。- はい、にほんじんです。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka là người Nhật phải không? - Vâng, tôi là người Nhật.
+    note:
+      vi: Người trả lời bỏ わたしは và chỉ lặp lại phần chính.
+  - type: example
+    target: ランさんはがくせいですか。- いいえ、がくせいじゃありません。かいしゃいんです。
+    target_lang: ja
+    translation:
+      vi: Chị Lan là sinh viên à? - Không, tôi không phải sinh viên. Tôi là nhân viên công ty.
+    note:
+      vi: Phủ định じゃありません rồi nói lại thông tin đúng - cách trả lời rất tự nhiên.
+  - type: example
+    target: おなまえは？- ナムです。
+    target_lang: ja
+    translation:
+      vi: Tên bạn là gì? - Tôi là Nam.
+    note:
+      vi: Câu hỏi rút gọn おなまえは？ rất thường gặp khi điền giấy tờ, làm quen.
+  - type: common_mistake
+    wrong: わたしはランさんです。
+    right: わたしはランです。
+    target_lang: ja
+    note:
+      vi: さん là cách gọi tôn trọng người khác, không dùng cho tên của chính mình.
+  - type: common_mistake
+    wrong: わたしはじんベトナムです。
+    right: わたしはベトナムじんです。
+    target_lang: ja
+    note:
+      vi: じん đứng sau tên nước, ngược với "người Việt Nam" trong tiếng Việt.
+  - type: common_mistake
+    wrong: がくせいですじゃありません。
+    right: がくせいじゃありません。
+    target_lang: ja
+    note:
+      vi: じゃありません thay hẳn cho です, không ghép thêm vào sau です.
+  - type: summary
+    points:
+      - vi: はじめまして → (tên) です → (nước) じんです → よろしくおねがいします.
+      - vi: Câu hỏi có/không - thêm か cuối câu; trả lời はい / いいえ.
+      - vi: Phủ định - N じゃありません (trang trọng - ではありません).
+      - vi: Gọi người khác - tên + さん; không thêm さん cho mình.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:namenat-mcq-question
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:question-ka
+    prompt:
+      stem: Câu nào là câu hỏi "Bạn là người Nhật phải không?"
+      stem_lang: vi
+      options:
+        - { id: q4a, text: にほんじんですか。, lang: ja }
+        - { id: w7b, text: にほんじんです。, lang: ja }
+        - { id: e2c, text: にほんじんじゃありません。, lang: ja }
+        - { id: r9d, text: じんにほんですか。, lang: ja }
+    answer:
+      correct_option_id: q4a
+    explanation:
+      vi: Thêm か vào cuối câu kể để thành câu hỏi có/không. にほんじんです là câu kể, じゃありません là phủ định, còn じんにほん sai thứ tự.
+    display_answer: にほんじんですか。
+
+  - key: ja:exercise:namenat-mcq-san
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:san
+    prompt:
+      stem: Lan tự giới thiệu. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: t3e, text: わたしはランです。, lang: ja }
+        - { id: y8f, text: わたしはランさんです。, lang: ja }
+        - { id: u1g, text: わたしわランです。, lang: ja }
+        - { id: i6h, text: ランはわたしさんです。, lang: ja }
+    answer:
+      correct_option_id: t3e
+    explanation:
+      vi: Không thêm さん vào tên của chính mình, và trợ từ chủ đề viết は. Câu cuối vừa sai thứ tự vừa gắn さん vào わたし.
+    display_answer: わたしはランです。
+
+  - key: ja:exercise:namenat-listen-intro
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hajimemashite
+    prompt:
+      audio_asset_id: null
+      fallback_text: はじめまして。ナムです。よろしくおねがいします。
+      options:
+        - { id: o5i, text: Rất vui được gặp bạn. Tôi là Nam. Mong được giúp đỡ., lang: vi }
+        - { id: p2j, text: Xin chào. Anh Nam là người Việt Nam., lang: vi }
+        - { id: a8k, text: Cảm ơn. Tôi là Nam. Tạm biệt., lang: vi }
+        - { id: s4l, text: Rất vui được gặp bạn. Tôi không phải là Nam., lang: vi }
+    answer:
+      correct_option_id: o5i
+    explanation:
+      vi: はじめまして - rất vui được gặp; ナムです - tôi là Nam; よろしくおねがいします - mong được giúp đỡ. Không có từ quốc tịch (じん) hay phủ định (じゃありません).
+    display_answer: Rất vui được gặp bạn. Tôi là Nam. Mong được giúp đỡ.
+
+  - key: ja:exercise:namenat-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:jin
+    prompt:
+      template: "わたしはベトナム{{b1}}です。たなかさんはにほんじんです{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Tôi là người Việt Nam. Anh Tanaka là người Nhật phải không?"
+        - Chỗ thứ nhất là hậu tố "người (nước)"; chỗ thứ hai biến câu thành câu hỏi.
+    answer:
+      blanks:
+        b1: [じん, 人]
+        b2: [か]
+    known_wrong:
+      - answer: ひと
+        feedback_vi: Quốc tịch dùng hậu tố じん - ベトナムじん, không dùng ひと.
+        error_tag: nationality_suffix
+      - answer: jin
+        feedback_vi: Hãy gõ bằng Hiragana (じん), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: ね
+        feedback_vi: Câu hỏi có/không dùng か ở cuối câu.
+        error_tag: question_particle
+    explanation:
+      vi: Tên nước + じん = người nước đó. Thêm か vào cuối câu để hỏi "phải không".
+    display_answer: わたしはベトナムじんです。たなかさんはにほんじんですか。
+
+  - key: ja:exercise:namenat-order-not-japanese
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ja-arimasen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Tôi không phải là người Nhật.”"
+      tokens:
+        - { id: t1, text: じゃありません }
+        - { id: t2, text: にほんじん }
+        - { id: t3, text: は }
+        - { id: t4, text: わたし }
+        - { id: t5, text: です }
+    answer:
+      orders:
+        - [t4, t3, t2, t1]
+    explanation:
+      vi: わたし + は + にほんじん + じゃありません. じゃありません thay cho です nên không dùng です trong câu này.
+    display_answer: わたしはにほんじんじゃありません。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:namenat-fill-yoroshiku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:yoroshiku-onegaishimasu
+    prompt:
+      template: "{{b1}}。ランです。よろしく{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [はじめまして]
+        b2: [おねがいします, お願いします]
+    known_wrong:
+      - answer: こんにちは
+        feedback_vi: Câu mở đầu khi gặp lần đầu và tự giới thiệu là はじめまして.
+        error_tag: wrong_expression
+      - answer: おねかいします
+        feedback_vi: が có dấu đục - おねがいします.
+        error_tag: spelling
+      - answer: onegaishimasu
+        feedback_vi: Hãy gõ bằng Hiragana (おねがいします), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Màn tự giới thiệu mở bằng はじめまして và kết bằng よろしくおねがいします.
+    display_answer: はじめまして。ランです。よろしくおねがいします。
+
+  - key: ja:exercise:namenat-write-vietnamese
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:jin
+    prompt:
+      source_text: Tôi là người Việt Nam.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしはベトナムじんです。
+        - 私はベトナム人です。
+        - わたしはベトナム人です。
+        - 私はベトナムじんです。
+        - ベトナムじんです。
+        - ベトナム人です。
+    known_wrong:
+      - answer: わたしはじんベトナムです。
+        feedback_vi: じん đứng sau tên nước - ベトナムじん.
+        error_tag: word_order
+      - answer: わたしはべとなむじんです。
+        feedback_vi: Tên nước ngoài viết bằng Katakana - ベトナム.
+        error_tag: katakana_loanword
+      - answer: わたしはベトナムです。
+        feedback_vi: Thiếu じん - ベトナムです là "là Việt Nam", phải nói ベトナムじん.
+        error_tag: nationality_suffix
+    explanation:
+      vi: ベトナム (Việt Nam, viết Katakana) + じん (người) + です. Có thể bỏ わたしは.
+    display_answer: わたしはベトナムじんです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:namenat-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:ja-arimasen
+    prompt:
+      source_text: いいえ、わたしはにほんじんじゃありません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không, tôi không phải là người Nhật.
+        - Không, tôi không phải người Nhật.
+        - Không, tôi không phải là người Nhật Bản.
+        - Không, tôi không phải người Nhật Bản.
+        - Không, mình không phải là người Nhật.
+        - Không, mình không phải người Nhật.
+        - Không ạ, tôi không phải là người Nhật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vâng, tôi là người Nhật.
+        feedback_vi: いいえ là "không" và じゃありません là phủ định - "không phải là".
+        error_tag: negation
+    explanation:
+      vi: いいえ - không; にほんじんじゃありません - không phải là người Nhật.
+    display_answer: Không, tôi không phải là người Nhật.
+
+  - key: ja:exercise:namenat-mcq-reply
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:hai-iie
+    prompt:
+      stem: "Anh Tanaka hỏi bạn (sinh viên người Việt) - ランさんはにほんじんですか。 Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: d7m, text: いいえ、にほんじんじゃありません。ベトナムじんです。, lang: ja }
+        - { id: f3n, text: はい、にほんじんじゃありません。, lang: ja }
+        - { id: g9o, text: いいえ、ベトナムじんじゃありません。, lang: ja }
+        - { id: h5p, text: はい、ランさんです。, lang: ja }
+    answer:
+      correct_option_id: d7m
+    explanation:
+      vi: Bạn không phải người Nhật nên trả lời いいえ rồi nói quốc tịch đúng. はい đi với câu phủ định là mâu thuẫn; phủ định ベトナムじん là sai sự thật; không gắn さん cho chính mình.
+    display_answer: いいえ、にほんじんじゃありません。ベトナムじんです。
+
+  - key: ja:exercise:namenat-write-ask
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:question-ka
+    prompt:
+      source_text: Anh Tanaka là nhân viên công ty phải không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - たなかさんはかいしゃいんですか。
+        - 田中さんは会社員ですか。
+        - たなかさんは会社員ですか。
+        - 田中さんはかいしゃいんですか。
+        - たなかさんはかいしゃいんですか？
+        - 田中さんは会社員ですか？
+    known_wrong:
+      - answer: たなかさんはかいしゃいんです。
+        feedback_vi: Thiếu か ở cuối - câu hỏi có/không cần か.
+        error_tag: question_particle
+      - answer: たなかはかいしゃいんですか。
+        feedback_vi: Gọi người khác phải thêm さん - たなかさん.
+        error_tag: missing_san
+      - answer: たなかさんわかいしゃいんですか。
+        feedback_vi: Trợ từ chủ đề viết は - たなかさんは.
+        error_tag: particle_wa_spelling
+    explanation:
+      vi: たなかさん + は + かいしゃいん + です + か. Câu hỏi có/không chỉ cần thêm か vào câu kể.
+    display_answer: たなかさんはかいしゃいんですか。
