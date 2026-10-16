@@ -45,7 +45,7 @@ interface Pending {
 }
 
 /**
- * One role-play conversation: the turns live in React state (and this tab's sessionStorage), every turn is one
+ * One role-play conversation: the turns live in React state (and, per user, localStorage), every turn is one
  * `roleplay_turn` request, a failed turn can be retried without duplicating the learner message, and a late answer
  * is dropped on unmount (useAiTutor).
  */

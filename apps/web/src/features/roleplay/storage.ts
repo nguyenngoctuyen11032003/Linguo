@@ -2,10 +2,16 @@ import { z } from 'zod';
 import { findRoleplayScenario } from '@linguo/shared';
 import type { RoleplaySession } from './session';
 
-// The last session is kept in sessionStorage (this tab only, gone when the tab closes) so a reload does not lose the
-// conversation. It is cleared when the learner finishes or leaves the session. Nothing here is sent anywhere.
+// An unfinished session is kept in localStorage, per user, so closing the tab or reloading does not lose the
+// conversation. It expires ROLEPLAY_TTL_MS after the last saved message, and it is removed when the learner finishes
+// or leaves the session, signs out or deletes the account (account/service.ts wipes both prefixes below). Nothing
+// here is sent anywhere.
 
-export const KEY_PREFIX = 'linguo:roleplay:v1:';
+export const KEY_PREFIX = 'linguo:roleplay:v2:';
+/** v1 lived in sessionStorage (this tab only) with the bare session as the value; read once, then moved to v2. */
+export const LEGACY_KEY_PREFIX = 'linguo:roleplay:v1:';
+/** A saved conversation is dropped this long after its last message. */
+export const ROLEPLAY_TTL_MS = 24 * 60 * 60 * 1000;
 
 const messageSchema = z.object({
   id: z.number().int(),
@@ -28,39 +34,90 @@ const sessionSchema = z.object({
   nextId: z.number().int(),
 });
 
-const keyOf = (userId: string) => `${KEY_PREFIX}${userId}`;
+const envelopeSchema = z.object({ savedAt: z.number().finite(), session: sessionSchema });
 
-/** Stores only confirmed messages: an in-flight or failed turn is not part of the saved conversation. */
-export function saveSession(userId: string, session: RoleplaySession): void {
+const keyOf = (userId: string) => `${KEY_PREFIX}${userId}`;
+const legacyKeyOf = (userId: string) => `${LEGACY_KEY_PREFIX}${userId}`;
+
+function attempt(fn: () => void): void {
+  try {
+    fn();
+  } catch {
+    // Storage blocked: nothing is stored there either.
+  }
+}
+
+function read(get: () => string | null): string | null {
+  try {
+    return get();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Stores only confirmed messages: an in-flight or failed turn is not part of the saved conversation. A finished
+ * session has nothing left to resume, so saving one clears the key instead.
+ */
+export function saveSession(userId: string, session: RoleplaySession, now: number = Date.now()): void {
+  if (session.finished) {
+    clearSession(userId);
+    return;
+  }
   try {
     const messages = session.messages.filter((m) => m.status === 'ok');
-    sessionStorage.setItem(keyOf(userId), JSON.stringify({ ...session, messages }));
+    localStorage.setItem(keyOf(userId), JSON.stringify({ savedAt: now, session: { ...session, messages } }));
   } catch {
     // Storage blocked or full: the session simply does not survive a reload.
   }
+  attempt(() => sessionStorage.removeItem(legacyKeyOf(userId)));
 }
 
 export function clearSession(userId: string): void {
-  try {
-    sessionStorage.removeItem(keyOf(userId));
-  } catch {
-    // Nothing to clear.
-  }
+  attempt(() => localStorage.removeItem(keyOf(userId)));
+  attempt(() => sessionStorage.removeItem(legacyKeyOf(userId)));
 }
 
-/** The saved session when it is valid and still fits the current path's language (else null and cleared). */
-export function loadSession(userId: string, language: string): RoleplaySession | null {
+/**
+ * The v2 envelope, or the v1 session of this tab (treated as saved just now and moved to localStorage); undefined
+ * when nothing is stored.
+ */
+function readSaved(userId: string, now: number): unknown {
+  const raw = read(() => localStorage.getItem(keyOf(userId)));
+  if (raw !== null) return JSON.parse(raw) as unknown;
+  const legacy = read(() => sessionStorage.getItem(legacyKeyOf(userId)));
+  if (legacy === null) return undefined;
+  attempt(() => sessionStorage.removeItem(legacyKeyOf(userId)));
+  const envelope = { savedAt: now, session: JSON.parse(legacy) as unknown };
+  attempt(() => localStorage.setItem(keyOf(userId), JSON.stringify(envelope)));
+  return envelope;
+}
+
+/**
+ * The saved session when it is valid, unfinished, not expired and still fits the current path's language (else null;
+ * an unusable entry is cleared).
+ */
+export function loadSession(userId: string, language: string, now: number = Date.now()): RoleplaySession | null {
   try {
-    const raw = sessionStorage.getItem(keyOf(userId));
-    if (!raw) return null;
-    const parsed = sessionSchema.safeParse(JSON.parse(raw));
-    if (!parsed.success || parsed.data.language !== language || !findRoleplayScenario(parsed.data.language, parsed.data.scenarioKey)) {
+    const saved = readSaved(userId, now);
+    if (saved === undefined) return null;
+    const parsed = envelopeSchema.safeParse(saved);
+    const session = parsed.success ? parsed.data.session : null;
+    if (
+      !parsed.success ||
+      !session ||
+      session.finished ||
+      now - parsed.data.savedAt > ROLEPLAY_TTL_MS ||
+      session.language !== language ||
+      !findRoleplayScenario(session.language, session.scenarioKey)
+    ) {
       clearSession(userId);
       return null;
     }
     // A session that never got its opening line has nothing to resume.
-    return parsed.data.messages.length > 0 ? parsed.data : null;
+    return session.messages.length > 0 ? session : null;
   } catch {
+    clearSession(userId);
     return null;
   }
 }
