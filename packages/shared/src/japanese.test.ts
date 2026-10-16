@@ -8,13 +8,13 @@ import { EXAM_FAMILIES, examScoringSchema } from './exam/contract';
 import { createPathSchema } from './learning/schemas';
 import { PERSONAL_LANGUAGES } from './personal-vocab/contract';
 
-// Japanese is the third learnable language: wired end to end but hidden until its content is published.
+// Japanese is the third learnable language, offered since content/ja (kana–N3 programs, diagnostic bank, JLPT mocks) shipped.
 describe('Japanese (ja) plumbing', () => {
-  it('is a known language that is not offered yet', () => {
+  it('is a known language that learners can pick', () => {
     expect(LANGUAGE_CODES).toEqual(['en', 'ko', 'ja']);
-    expect(LANGUAGES.ja).toEqual({ code: 'ja', short: 'JA', nameVi: 'Tiếng Nhật', nativeName: '日本語', available: false });
-    expect(isLanguageAvailable('ja')).toBe(false);
-    expect(AVAILABLE_LANGUAGE_CODES).toEqual(['en', 'ko']);
+    expect(LANGUAGES.ja).toEqual({ code: 'ja', short: 'JA', nameVi: 'Tiếng Nhật', nativeName: '日本語', available: true });
+    expect(isLanguageAvailable('ja')).toBe(true);
+    expect(AVAILABLE_LANGUAGE_CODES).toEqual(['en', 'ko', 'ja']);
   });
 
   it('is accepted by every language enum of the contracts', () => {

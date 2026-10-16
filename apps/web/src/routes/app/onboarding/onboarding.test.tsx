@@ -286,8 +286,9 @@ describe('OnboardingPage', () => {
   });
 
   it('tells the user when every language already has a path', () => {
-    renderWithProviders(routes, { route: '/app/bat-dau', paths: { paths: [TEST_PATH, TEST_KO_PATH] } });
-    expect(screen.getByText('Bạn đã có lộ trình cho cả hai ngôn ngữ.')).toBeInTheDocument();
+    const jaPath = { ...TEST_KO_PATH, id: 'path-ja', language: 'ja' as const, goalType: 'kana_basics' as const, currentLevel: 'kana', targetLevel: 'n5' };
+    renderWithProviders(routes, { route: '/app/bat-dau', paths: { paths: [TEST_PATH, TEST_KO_PATH, jaPath] } });
+    expect(screen.getByText('Bạn đã có lộ trình cho mọi ngôn ngữ hiện có.')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Tiếp tục' })).not.toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Về trang chủ' })).toHaveAttribute('href', '/app');
   });

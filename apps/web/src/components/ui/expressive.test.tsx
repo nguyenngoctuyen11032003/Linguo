@@ -136,6 +136,7 @@ describe('LanguagePill', () => {
     await userEvent.click(trigger);
     await userEvent.tab(); // English
     await userEvent.tab(); // Korean
+    await userEvent.tab(); // + Thêm Tiếng Nhật
     await userEvent.tab(); // out of the widget
     expect(screen.getByRole('button', { name: 'Sau' })).toHaveFocus();
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
@@ -168,7 +169,7 @@ describe('LanguagePill', () => {
     expect(trigger.querySelector('span[aria-hidden="true"]')).not.toBeNull();
     await userEvent.click(trigger);
     const items = screen.getAllByRole('button').filter((b) => b !== trigger);
-    expect(items).toHaveLength(2);
+    expect(items).toHaveLength(3); // the two paths and "+ Thêm Tiếng Nhật"
     for (const item of items) expect(item).toBeDisabled();
     await userEvent.click(items[1]!);
     expect(onSelect).not.toHaveBeenCalled();
@@ -185,7 +186,8 @@ describe('LanguagePill', () => {
   });
 
   it('offers no "+ Thêm" when every available language has a path', async () => {
-    render(withMotion(<LanguagePill paths={paths} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
+    const all = [...paths, { id: 'path-ja', language: 'ja' as const, status: 'active' as const }];
+    render(withMotion(<LanguagePill paths={all} currentId="path-en" onSelect={vi.fn()} onAdd={vi.fn()} />));
     await userEvent.click(screen.getByRole('button', { name: /Ngôn ngữ đang học/ }));
     expect(screen.queryByRole('button', { name: /Thêm/ })).not.toBeInTheDocument();
   });

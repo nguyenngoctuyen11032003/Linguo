@@ -12,8 +12,7 @@ export interface LanguageInfo {
 export const LANGUAGES: Record<LanguageCode, LanguageInfo> = {
   en: { code: 'en', short: 'EN', nameVi: 'Tiếng Anh', nativeName: 'English', available: true },
   ko: { code: 'ko', short: 'KO', nameVi: 'Tiếng Hàn', nativeName: '한국어', available: true },
-  // Plumbing only until content/ja is published; the content integration step flips `available`.
-  ja: { code: 'ja', short: 'JA', nameVi: 'Tiếng Nhật', nativeName: '日本語', available: false },
+  ja: { code: 'ja', short: 'JA', nameVi: 'Tiếng Nhật', nativeName: '日本語', available: true },
 };
 
 /**

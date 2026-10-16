@@ -62,7 +62,7 @@ describe('AdminLayout frame guard', () => {
       expect(scrollTo.mock.contexts.at(-1)).toBe(screen.getByRole('navigation', { name: 'Điều hướng quản trị' }).querySelector('ul'));
     } finally {
       spies.forEach((spy) => spy.mockRestore());
-      if (originalScrollTo === undefined) delete proto.scrollTo;
+      if (originalScrollTo === undefined) Reflect.deleteProperty(proto, 'scrollTo');
       else proto.scrollTo = originalScrollTo;
     }
   });

@@ -14,7 +14,7 @@ content/
   en/programs/<program>/units/<nn>-<unit>/unit.yaml
   en/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<lesson>.yaml
   ko/...                                         # giống en
-  ja/...                                         # giống en (tiếng Nhật, chưa có nội dung)
+  ja/...                                         # giống en (tiếng Nhật: kana-basics, n4, n3)
   diagnostic/<en|ko|ja>/<kỹ-năng>.yaml            # kho câu hỏi kiểm tra đầu vào (spec 4)
   exams/<en|ko|ja>/<tên-đề>.yaml                  # đề luyện thi mô phỏng (spec 9)
 ```
@@ -75,7 +75,7 @@ Câu trả lời được chấm trên server theo thuật toán trong `packages
 
 ## Kho câu hỏi kiểm tra đầu vào (spec 4)
 
-`content/diagnostic/<en|ko>/<kỹ-năng>.yaml`, một file cho mỗi kỹ năng `vocabulary`, `grammar`, `reading` (schema: `packages/shared/src/diagnostic/authoring.ts`).
+`content/diagnostic/<en|ko|ja>/<kỹ-năng>.yaml`, một file cho mỗi kỹ năng `vocabulary`, `grammar`, `reading` (schema: `packages/shared/src/diagnostic/authoring.ts`).
 
 ```yaml
 # DEMO — chưa kiểm duyệt
@@ -101,7 +101,7 @@ items:
       vi: "“Dog” là con chó; “cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
 ```
 
-- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu/ngôn ngữ); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
+- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
 - `difficulty` (tuỳ chọn) mặc định là thứ tự cấp độ + 0,5 (pre_a1/hangul = 0,5 … c2/topik6 = 6,5); nếu ghi thì phải nằm trong dải của cấp.
 - Thứ tự và id phương án trong YAML không lộ ra ngoài: `pnpm content:build` xáo trộn cố định theo key và đổi id thành chuỗi ngẫu nhiên ổn định.
 - File demo giữ `key_confidence: unreviewed` (mặc định), không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
@@ -163,7 +163,7 @@ questions:
 
 ## Tiếng Nhật (ja)
 
-Hạ tầng đã nhận `ja` ở mọi nơi (schema, RPC, import, AI, web) nhưng `LANGUAGES.ja.available` vẫn là `false` (`packages/shared/src/constants.ts`) cho tới khi có nội dung đã duyệt; bật cờ này là bước tích hợp nội dung.
+`LANGUAGES.ja.available` là `true` (`packages/shared/src/constants.ts`): đã có chương trình Kana → N5 (`kana-basics`), N4, N3, kho kiểm tra đầu vào và đề JLPT N5/N4/N3. Nội dung vẫn là bản DEMO chưa kiểm duyệt như en/ko.
 
 - Học liệu: `ja/items/<chủ-đề>.yaml`, key `ja:item:<tên>`. `type`: `vocab`, `phrase`, `grammar_point`, `kana` (chữ Hiragana/Katakana, như `hangul` của KO).
 - `front.text` viết bằng chữ Nhật (kana/kanji); `front.reading` là cách đọc bằng kana khi từ có kanji (学校 → がっこう, dùng làm furigana); `front.romanization` là Hepburn, chỉ để tham khảo.
