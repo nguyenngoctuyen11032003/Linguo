@@ -229,6 +229,13 @@ describe('HomePage', () => {
     expect(screen.getByRole('note')).toHaveTextContent('Bạn đang học 2 ngôn ngữ');
   });
 
+  it('counts every active language in the spread warning', () => {
+    const low = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [10, 10, 10, 10, 10, 10, 10] });
+    const ja = { ...low(TEST_KO_PATH), id: 'path-ja', languageCode: 'ja' as const };
+    renderWithProviders(<HomePage />, { route: '/app', paths: { paths: [low(TEST_PATH), low(TEST_KO_PATH), ja] } });
+    expect(screen.getByRole('note')).toHaveTextContent('Bạn đang học 3 ngôn ngữ');
+  });
+
   it('does not warn when the daily average is exactly 15 minutes', () => {
     const exact = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [15, 15, 15, 15, 15, 15, 15] });
     const justUnder = (p: typeof TEST_PATH) => ({ ...p, weeklyMinutes: [15, 15, 15, 15, 15, 15, 14] });
