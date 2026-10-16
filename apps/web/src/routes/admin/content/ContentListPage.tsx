@@ -66,6 +66,13 @@ export function ContentListPage() {
   const firstShown = total === 0 ? 0 : (filters.page - 1) * CONTENT_PAGE_SIZE + 1;
   const lastShown = Math.min(total, filters.page * CONTENT_PAGE_SIZE);
 
+  // A stale or hand-edited ?trang= past the last page returns no rows: the summary read "Hiển thị 981–20 trên 20"
+  // and the pager could only step back one page at a time. Jump to the last real page instead.
+  const pastEnd = list.status === 'ready' && filters.page > pages;
+  useEffect(() => {
+    if (pastEnd) setParams((prev) => filtersToParams({ ...filtersFromParams(prev), page: pages }), { replace: true });
+  }, [pastEnd, pages, setParams]);
+
   return (
     <div className="min-w-0 space-y-5">
       <header>

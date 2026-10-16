@@ -39,6 +39,18 @@ describe('ContentListPage', () => {
     await waitFor(() => expect(listCalls().at(-1)).toMatchObject({ p_kind: 'exercise', p_status: 'in_review' }));
   });
 
+  it('jumps to the last page when ?trang= is past the end', async () => {
+    routeRpcs(mocks.rpc, {
+      staff_role: { data: 'editor' },
+      admin_list_content: (args) => ({ data: args.p_offset === 25 ? contentListFixture(5, 30) : { items: [], total: 30 } }),
+    });
+    renderAdmin('/quan-tri/noi-dung?trang=40');
+    expect(await screen.findByRole('table', { name: 'Bài học, trang 2' })).toBeInTheDocument();
+    expect(listCalls().at(-1)).toMatchObject({ p_offset: 25 });
+    expect(screen.getByText('Hiển thị 26–30 trên 30 mục')).toBeInTheDocument();
+    expect(screen.getByText('Trang 2 / 2')).toBeInTheDocument();
+  });
+
   it('shows a Vietnamese error with a retry', async () => {
     routeRpcs(mocks.rpc, { staff_role: { data: 'editor' }, admin_list_content: { data: null, error: { message: 'invalid_kind', code: 'P0001' } } });
     renderAdmin('/quan-tri/noi-dung');
