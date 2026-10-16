@@ -8,7 +8,7 @@ import { diagnosticErrors, diagnosticItems } from './diagnostic.mjs';
 import { examErrors, examFiles } from './exam.mjs';
 import { effectiveStatus, indexContent } from './load.mjs';
 
-const { CONTENT_MAX_LEVEL, LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelAvailable, isLevelOf, levelOrdinal } = shared;
+const { CONTENT_MAX_LEVEL, LEVELS, REQUIRED_BLOCKS, EXERCISE_STAGES, isGoalForLanguage, isLevelOf, levelOrdinal } = shared;
 
 export const DEMO_HEADER = '# DEMO — chưa kiểm duyệt';
 
@@ -217,9 +217,11 @@ function findCycles(graph) {
  * @param loaded result of loadContent()
  * @param options.grade grader with the `gradeResponse` signature (default: the shared one)
  * @param options.diagnosticMinPerCell minimum diagnostic items per language × skill × level (default 5)
+ * @param options.contentMaxLevel highest level with content per language (default: the shared `CONTENT_MAX_LEVEL`;
+ *   tests lower it because every language now has content on its whole scale)
  * @returns string[] of `<file>: <message>` errors (empty when the content is valid)
  */
-export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerCell } = {}) {
+export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerCell, contentMaxLevel = CONTENT_MAX_LEVEL } = {}) {
   const errors = [...loaded.errors];
   const err = (file, message) => errors.push(`${file}: ${message}`);
   const { sources, items, programs, units, lessons } = indexContent(loaded.files);
@@ -287,10 +289,10 @@ export function checkContent(loaded, { grade = sharedGrader(), diagnosticMinPerC
       err(p.file, `level_from ${q(d.level_from)} is above level_to ${q(d.level_to)}`);
     }
     // Learners only see levels up to CONTENT_MAX_LEVEL (shared/learning/levels.ts): content above it would be unreachable.
-    if (!to && !isLevelAvailable(p.lang, d.level_to)) {
+    if (!to && levelOrdinal(p.lang, d.level_to) > levelOrdinal(p.lang, contentMaxLevel[p.lang])) {
       err(
         p.file,
-        `level_to ${q(d.level_to)} is above CONTENT_MAX_LEVEL.${p.lang} (${CONTENT_MAX_LEVEL[p.lang]}); raise it in packages/shared/src/learning/levels.ts so learners can pick the new levels`,
+        `level_to ${q(d.level_to)} is above CONTENT_MAX_LEVEL.${p.lang} (${contentMaxLevel[p.lang]}); raise it in packages/shared/src/learning/levels.ts so learners can pick the new levels`,
       );
     }
     if (d.kind === 'core' && d.goal_types.length) err(p.file, 'kind core must have no goal_types');

@@ -1479,7 +1479,11 @@ test('a program above CONTENT_MAX_LEVEL is rejected until the shared ceiling is 
     .replace('level_to: a1', 'level_to: n2');
   mkdirSync(join(content, 'ja', 'programs', 'n2'), { recursive: true });
   writeFileSync(join(content, 'ja', 'programs', 'n2', 'program.yaml'), program);
-  const errors = check(content);
+  const ceilingError = (e) => e.includes('is above CONTENT_MAX_LEVEL');
+  // The shared ceiling (ja: n1) covers N2 now.
+  assert.ok(!check(content).some(ceilingError), check(content).join('\n'));
+  // A lower ceiling (as before N2/N1 shipped) still rejects it.
+  const errors = checkContent(loadContent(content, { label: 'content' }), { grade, contentMaxLevel: { ...CONTENT_MAX_LEVEL, ja: 'n3' } });
   const expected =
     'content/ja/programs/n2/program.yaml: level_to "n2" is above CONTENT_MAX_LEVEL.ja (n3); raise it in packages/shared/src/learning/levels.ts so learners can pick the new levels';
   assert.ok(errors.includes(expected), errors.join('\n'));
