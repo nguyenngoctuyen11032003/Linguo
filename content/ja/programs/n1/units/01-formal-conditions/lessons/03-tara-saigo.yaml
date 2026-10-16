@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u1-tara-saigo
+order_index: 3
+level: n1
+title:
+  vi: Một khi đã... là hết đường lui - ～たら最後 và ～が最後
+objectives:
+  - vi: Dùng V-たら最後 / V-たが最後 để nói "một khi đã... thì (hậu quả) không cứu vãn được".
+  - vi: Nhận ra sắc thái tiêu cực, cảnh báo của hai mẫu này.
+  - vi: Chia đúng thể た trước が最後 và không dùng mẫu này cho kết quả tốt.
+estimated_minutes: 18
+skills: [grammar, speaking]
+prerequisites: [ja:lesson:n1-u1-naikotoniwa-nakushite]
+items:
+  - item: ja:item:n1-u1-gram-tarasaigo
+  - item: ja:item:n1-u1-gram-gasaigo
+  - item: ja:item:n1-u1-kigen
+  - item: ja:item:n1-u1-yamitsuki
+  - item: ja:item:n1-u1-tebanasu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được kiểu "bố tôi mà đã bắt đầu nói là hai tiếng không dừng" và cảnh báo "đã bán nhà thì không bao giờ mua lại được".
+  - type: explain
+    text:
+      vi: 'V-たら最後 - "một khi đã... thì xong (không quay lại được)". Gắn vào thể たら: 話し始めたら最後, 寝たら最後, 見つかったら最後. Vế sau là kết quả xấu, tình trạng kéo dài không dừng, hoặc ý "tuyệt đối không ..." (二度と～ない, ～までやめない).'
+  - type: explain
+    text:
+      vi: 'V-たが最後 - cùng nghĩa nhưng trang trọng, văn viết hơn. Luôn gắn vào thể た: 入ったが最後, 口にしたが最後, 手放したが最後.'
+  - type: explain
+    text:
+      vi: 'Hai mẫu hay đi kèm 一度 (một lần) và 二度と～ない (không bao giờ nữa): 一度手放したが最後、二度と買い戻せない.'
+  - type: deep_explain
+    text:
+      vi: 最後 ở đây không phải "cuối cùng" về thời gian mà là "coi như chấm hết" - hành động ở vế trước là điểm không thể quay lại. Vì thế vế sau không dùng cho kết quả tốt đẹp, và hiếm khi là lời nhờ, rủ. Khi nói về thói quen của người khác (他人の癖), câu thường mang giọng than phiền hoặc trêu đùa. Trong hội thoại thân mật, たら最後 nghe tự nhiên hơn; trong văn viết, báo chí, が最後 phổ biến hơn.
+  - type: example
+    target: 父は一度話し始めたら最後、2時間は止まらない。
+    target_lang: ja
+    translation:
+      vi: Bố tôi mà đã bắt đầu nói là ít nhất hai tiếng không dừng.
+    note:
+      vi: Than phiền nhẹ về thói quen.
+  - type: example
+    target: 祖母の機嫌を損ねたら最後、一週間は口をきいてもらえない。
+    target_lang: ja
+    translation:
+      vi: Đã làm bà phật ý thì cả tuần bà không thèm nói chuyện.
+  - type: example
+    target: あの店に入ったが最後、何か買わずには出られない。
+    target_lang: ja
+    translation:
+      vi: Đã bước vào cửa hàng đó thì không mua gì thì không ra nổi.
+  - type: example
+    target: 一度家を手放したが最後、二度と買い戻せないだろう。
+    target_lang: ja
+    translation:
+      vi: Một khi đã bán căn nhà đi thì có lẽ sẽ không bao giờ mua lại được.
+    note:
+      vi: 一度 + が最後 + 二度と～ない là cụm rất hay gặp.
+  - type: common_mistake
+    wrong: この薬を飲んだら最後、すぐ元気になります。
+    right: この薬を飲めば、すぐ元気になります。
+    target_lang: ja
+    note:
+      vi: たら最後 chỉ dùng cho hậu quả xấu, không quay lại được. Người Việt dễ hiểu "最後" là "rồi thì" nên dùng cho cả kết quả tốt.
+  - type: common_mistake
+    wrong: あの店に入るが最後、何か買ってしまう。
+    right: あの店に入ったが最後、何か買ってしまう。
+    target_lang: ja
+    note:
+      vi: が最後 luôn gắn vào thể た, kể cả khi nói về chuyện chung, chưa xảy ra.
+  - type: summary
+    points:
+      - vi: V-たら最後 / V-たが最後 - "một khi đã... thì hết đường lui".
+      - vi: Vế sau là kết quả xấu, không dừng được, hay đi với 二度と～ない.
+      - vi: が最後 gắn vào thể た; trang trọng hơn たら最後.
+      - vi: 機嫌を損ねる - làm phật ý; 病みつき - nghiện; 手放す - bán đi, buông bỏ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u1-tara-saigo-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-gram-tarasaigo
+    prompt:
+      stem: "「弟はゲームを始めたら最後、夜中までやめない。」 nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a1r, text: "Em trai tôi đã bắt đầu chơi game là chơi đến nửa đêm không dừng.", lang: vi }
+        - { id: b6t, text: "Em trai tôi chơi game lần cuối đến nửa đêm.", lang: vi }
+        - { id: c3u, text: "Em trai tôi bắt đầu chơi game vào lúc nửa đêm.", lang: vi }
+        - { id: d8w, text: "Nếu em trai tôi chơi game thì sẽ dừng trước nửa đêm.", lang: vi }
+    answer:
+      correct_option_id: a1r
+    explanation:
+      vi: たら最後 - "một khi đã... thì không dừng lại được"; 最後 không mang nghĩa "lần cuối". 夜中までやめない - đến nửa đêm không chịu thôi.
+    display_answer: "Em trai tôi đã bắt đầu chơi game là chơi đến nửa đêm không dừng."
+
+  - key: ja:exercise:n1-u1-tara-saigo-listen-kigen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u1-kigen
+    prompt:
+      audio_asset_id: null
+      fallback_text: 祖母の機嫌を損ねたら最後、一週間は口をきいてもらえない。
+      options:
+        - { id: e2a, text: Đã làm bà phật ý thì cả tuần bà không thèm nói chuyện., lang: vi }
+        - { id: f7b, text: Lần cuối làm bà phật ý là một tuần trước., lang: vi }
+        - { id: g4c, text: Nếu bà vui thì cả tuần bà nói chuyện nhiều., lang: vi }
+        - { id: h9d, text: Dù làm bà phật ý thì một tuần sau bà cũng quên., lang: vi }
+    answer:
+      correct_option_id: e2a
+    explanation:
+      vi: 機嫌を損ねる - làm phật ý; たら最後 - đã... thì hết đường; 口をきいてもらえない - không được (bà) nói chuyện với.
+    display_answer: Đã làm bà phật ý thì cả tuần bà không thèm nói chuyện.
+
+  - key: ja:exercise:n1-u1-tara-saigo-mcq-form
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-gram-gasaigo
+    prompt:
+      stem: 'Chọn dạng đúng: 「秘密を＿＿、町中に広まってしまう。」 (Một khi đã nói bí mật ra là cả thị trấn biết.)'
+      stem_lang: vi
+      options:
+        - { id: i6e, text: 話したが最後, lang: ja }
+        - { id: j1f, text: 話すが最後, lang: ja }
+        - { id: k5g, text: 話したら最後に, lang: ja }
+        - { id: l8h, text: 話さないが最後, lang: ja }
+    answer:
+      correct_option_id: i6e
+    explanation:
+      vi: が最後 gắn vào thể た - 話したが最後. 最後に là "cuối cùng" (thời gian), không phải mẫu này.
+    display_answer: 話したが最後
+
+  - key: ja:exercise:n1-u1-tara-saigo-fill-yamitsuki
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-yamitsuki
+    prompt:
+      template: "このラーメンは一度{{b1}}最後、病みつきになる。(食べる)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Món ramen này đã ăn một lần là nghiện luôn."
+        - "Gợi ý: chia 食べる sang thể たら (hoặc thể た + が)."
+    answer:
+      blanks:
+        b1: [食べたら, たべたら, 食べたが, たべたが]
+    known_wrong:
+      - answer: 食べるが
+        feedback_vi: が最後 gắn vào thể た - 食べたが最後.
+        error_tag: gasaigo_form
+      - answer: 食べれば
+        feedback_vi: Mẫu là たら最後 hoặc たが最後, không dùng ば.
+        error_tag: tarasaigo_form
+    explanation:
+      vi: 食べたら最後 / 食べたが最後 - đã ăn thì không dứt ra được. 病みつき ở đây là cách nói vui, khen món ăn.
+    display_answer: このラーメンは一度食べたら最後、病みつきになる。
+
+  - key: ja:exercise:n1-u1-tara-saigo-wb-tebanasu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u1-tebanasu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Một khi đã bán căn nhà đi thì không bao giờ mua lại được.\""
+      tokens:
+        - { id: p4, text: 買い戻せない }
+        - { id: p1, text: 一度家を }
+        - { id: p5, text: 手放すが最後 }
+        - { id: p3, text: 二度と }
+        - { id: p2, text: 手放したが最後 }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: 手放す → 手放した + が最後. 二度と～ない - không bao giờ nữa. 手放すが最後 sai vì thiếu thể た.
+    display_answer: 一度家を手放したが最後、二度と買い戻せない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u1-tara-saigo-fill-neru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-tarasaigo
+    prompt:
+      template: "兄は一度{{b1}}最後、何をしても起きない。(寝る)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [寝たら, ねたら, 寝たが, ねたが]
+    known_wrong:
+      - answer: 寝るが
+        feedback_vi: が最後 gắn vào thể た - 寝たが最後.
+        error_tag: gasaigo_form
+      - answer: 寝るたら
+        feedback_vi: たら gắn vào thể た - 寝た → 寝たら.
+        error_tag: tara_form
+    explanation:
+      vi: 寝る → 寝た → 寝たら最後 / 寝たが最後 - "anh tôi đã ngủ là làm gì cũng không dậy".
+    display_answer: 兄は一度寝たら最後、何をしても起きない。
+
+  - key: ja:exercise:n1-u1-tara-saigo-translate-chichi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-tarasaigo
+    prompt:
+      source_text: Bố tôi mà đã bắt đầu nói là hai tiếng không dừng. (dùng たら最後)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 父は話し始めたら最後、2時間は止まらない。
+        - 父は一度話し始めたら最後、2時間は止まらない。
+        - 父は話し始めたら最後、2時間は止まりません。
+        - 父は一度話し始めたら最後、2時間は止まりません。
+        - 父は話し始めたら最後、2時間止まらない。
+        - 父は一度話し始めたら最後、2時間止まらない。
+        - 父は話し始めたら最後、二時間は止まらない。
+        - 父は一度話し始めたら最後、二時間は止まらない。
+        - 父は話し出したら最後、2時間は止まらない。
+        - 父は一度話し出したら最後、2時間は止まらない。
+        - 父は話し始めたら最後、2時間は話し続ける。
+        - 父は一度話し始めたら最後、2時間は話し続ける。
+        - 父は話し始めたら最後、2時間はやめない。
+        - うちの父は話し始めたら最後、2時間は止まらない。
+        - ちちははなしはじめたらさいご、にじかんはとまらない。
+    known_wrong:
+      - answer: 父は話し始めるが最後、2時間は止まらない。
+        feedback_vi: が最後 gắn vào thể た - 話し始めたが最後. Đề yêu cầu たら最後 - 話し始めたら最後.
+        error_tag: gasaigo_form
+      - answer: 父は話し始めたら最後に、2時間は止まらない。
+        feedback_vi: Không có に - 最後に là "cuối cùng". Mẫu là たら最後.
+        error_tag: saigo_ni
+    explanation:
+      vi: 話し始める → 話し始めたら最後; 2時間は止まらない - ít nhất hai tiếng không dừng (は nhấn mức tối thiểu).
+    display_answer: 父は一度話し始めたら最後、2時間は止まらない。
+
+  - key: ja:exercise:n1-u1-tara-saigo-translate-mise
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u1-gram-gasaigo
+    prompt:
+      source_text: Đã bước vào cửa hàng đó thì không mua gì thì không ra nổi. (dùng が最後)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あの店に入ったが最後、何か買わずには出られない。
+        - あの店に入ったが最後、何か買わないと出られない。
+        - あの店に入ったが最後、何か買わなければ出られない。
+        - あの店に入ったが最後、何か買わずには出られません。
+        - あの店に入ったが最後、何か買わないと出られません。
+        - あの店に入ったが最後、何も買わずには出られない。
+        - あの店に入ったが最後、何か買わずには帰れない。
+        - あの店に入ったが最後、何か買わないと帰れない。
+        - あの店に一度入ったが最後、何か買わずには出られない。
+        - 一度あの店に入ったが最後、何か買わずには出られない。
+        - その店に入ったが最後、何か買わずには出られない。
+        - その店に入ったが最後、何か買わないと出られない。
+        - あのみせにはいったがさいご、なにかかわずにはでられない。
+    known_wrong:
+      - answer: あの店に入るが最後、何か買わずには出られない。
+        feedback_vi: が最後 gắn vào thể た - 入ったが最後.
+        error_tag: gasaigo_form
+    explanation:
+      vi: 入ったが最後 - đã bước vào là hết đường; 買わずには出られない - không mua thì không ra được (～ずには = ～ないでは).
+    display_answer: あの店に入ったが最後、何か買わずには出られない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u1-tara-saigo-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-tarasaigo
+    prompt:
+      stem: Câu nào dùng たら最後 tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: m2k, text: 社長に嘘がばれたら最後、この会社にはいられない。, lang: ja }
+        - { id: n5l, text: この薬を飲んだら最後、すぐ元気になる。, lang: ja }
+        - { id: o9p, text: 駅に着いたら最後、電話してください。, lang: ja }
+        - { id: q3s, text: 試験に合格したら最後、みんなでお祝いしよう。, lang: ja }
+    answer:
+      correct_option_id: m2k
+    explanation:
+      vi: たら最後 đi với hậu quả xấu, không quay lại được (không thể ở lại công ty). Kết quả tốt (元気になる), lời nhờ (電話してください), lời rủ (お祝いしよう) đều không hợp.
+    display_answer: 社長に嘘がばれたら最後、この会社にはいられない。
+
+  - key: ja:exercise:n1-u1-tara-saigo-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u1-yamitsuki
+    prompt:
+      source_text: このゲームは一度始めたが最後、病みつきになる。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trò chơi này đã chơi một lần là nghiện luôn.
+        - Trò chơi này đã bắt đầu chơi một lần là nghiện luôn.
+        - Trò chơi này một khi đã bắt đầu thì sẽ nghiện.
+        - Trò chơi này một khi đã bắt đầu là bị nghiện.
+        - Trò chơi này một khi đã chơi thì sẽ bị nghiện.
+        - Trò chơi này chơi một lần là nghiện.
+        - Game này đã chơi một lần là nghiện luôn.
+        - Game này chơi một lần là nghiện.
+        - Game này một khi đã bắt đầu thì sẽ nghiện.
+        - Một khi đã bắt đầu chơi trò này thì sẽ nghiện.
+        - Đã bắt đầu chơi trò chơi này một lần là nghiện luôn.
+        - Trò chơi này hễ đã chơi một lần là nghiện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trò chơi này chơi lần cuối thì sẽ nghiện.
+        feedback_vi: が最後 không mang nghĩa "lần cuối" - nó là "một khi đã... thì không dứt ra được".
+        error_tag: saigo_meaning
+      - answer: Nếu chơi trò này một lần thì sẽ chán.
+        feedback_vi: 病みつきになる là nghiện, mê không dứt ra được, không phải chán.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 一度始めたが最後 - đã bắt đầu một lần là; 病みつきになる - bị nghiện, mê không dứt ra được.
+    display_answer: Trò chơi này đã chơi một lần là nghiện luôn.
+
+  - key: ja:exercise:n1-u1-tara-saigo-wb-himitsu
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-gram-gasaigo
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đã để chị ấy biết bí mật thì cả công ty sẽ biết hết.\""
+      tokens:
+        - { id: y3, text: 会社中に }
+        - { id: y5, text: 知られるが最後 }
+        - { id: y1, text: 彼女に }
+        - { id: y4, text: 広まってしまう }
+        - { id: y2, text: 知られたが最後 }
+    answer:
+      orders:
+        - [y1, y2, y3, y4]
+    explanation:
+      vi: 知られる (bị biết) → 知られた + が最後. 会社中に広まる - lan khắp công ty; てしまう nhấn kết quả đáng tiếc.
+    display_answer: 彼女に知られたが最後、会社中に広まってしまう。
+
+  - key: ja:exercise:n1-u1-tara-saigo-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u1-kigen
+    prompt:
+      stem: 'Bạn dặn đồng nghiệp mới: "Trưởng phòng mà đã phật ý là nguyên ngày không làm việc được với anh ấy đâu." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: t6a, text: 部長は一度機嫌を損ねたら最後、その日は一日中仕事にならないよ。, lang: ja }
+        - { id: u1b, text: 部長は一度機嫌を損ねたら最後に、その日は一日中仕事になるよ。, lang: ja }
+        - { id: v4c, text: 部長は一度機嫌を損ねるが最後、その日は一日中仕事にならないよ。, lang: ja }
+        - { id: w7d, text: 部長は一度機嫌を損ねたら最後、その日は一日中機嫌がいいよ。, lang: ja }
+    answer:
+      correct_option_id: t6a
+    explanation:
+      vi: 損ねたら最後 + kết quả xấu (仕事にならない - không làm ăn gì được). 最後に sai mẫu; 損ねるが最後 thiếu thể た; câu cuối mâu thuẫn nghĩa.
+    display_answer: 部長は一度機嫌を損ねたら最後、その日は一日中仕事にならないよ。
