@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { LANGUAGE_CODES } from '../constants';
 import { FEASIBILITIES, type EstimateResult } from './estimate';
-import { allowedTargets, GOAL_TYPES, isGoalForLanguage, isLevelOf, START_POINTS } from './levels';
+import { allowedTargets, GOAL_TYPES, isGoalForLanguage, isLevelAvailable, isLevelOf, START_POINTS } from './levels';
 
 const INVALID_DATE = 'Ngày không hợp lệ.';
 const INVALID_MINUTES = 'Số phút không hợp lệ.';
@@ -45,6 +45,10 @@ function refinePlan(value: PlanFields, ctx: z.RefinementCtx) {
   }
   if (!isLevelOf(value.language, value.currentLevel)) {
     ctx.addIssue({ code: 'custom', path: ['currentLevel'], message: 'Trình độ không hợp lệ.' });
+    return;
+  }
+  if (!isLevelAvailable(value.language, value.currentLevel)) {
+    ctx.addIssue({ code: 'custom', path: ['currentLevel'], message: 'Linguo chưa có bài học cho trình độ này.' });
     return;
   }
   if (!(allowedTargets(value.language, value.goalType, value.currentLevel) as string[]).includes(value.targetLevel)) {

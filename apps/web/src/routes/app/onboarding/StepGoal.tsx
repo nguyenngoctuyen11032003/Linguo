@@ -1,5 +1,6 @@
 import { allowedTargets, GOAL_LABELS, GOALS_BY_LANGUAGE, LEVEL_INFO, type GoalType, type LanguageCode, type LevelCode } from '@linguo/shared';
 import { ChoiceList } from '@/features/learning-paths/components/ChoiceList';
+import { noTargetsMessage } from '@/features/learning-paths/content-ceiling';
 
 interface Props {
   language: LanguageCode;
@@ -28,7 +29,7 @@ export function StepGoal({ language, currentLevel, goalType, targetLevel, onGoal
           </h2>
           {targets.length === 0 ? (
             <p role="alert" className="text-[15px] text-muted">
-              Bạn đã đạt mục tiêu này. Hãy chọn một mục tiêu cao hơn.
+              {noTargetsMessage(language, currentLevel, 'Bạn đã đạt mục tiêu này. Hãy chọn một mục tiêu cao hơn.')}
             </p>
           ) : (
             <ChoiceList

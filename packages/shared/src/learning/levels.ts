@@ -11,6 +11,15 @@ export type KoLevel = (typeof LEVELS.ko)[number];
 export type JaLevel = (typeof LEVELS.ja)[number];
 export type LevelCode = EnLevel | KoLevel | JaLevel;
 
+/**
+ * Highest level each language has a published program for (`content/<lang>/programs/*`, max `level_to`).
+ * Levels above it stay valid codes (DB, diagnostic bank, exams) but are not offered as a current level or a
+ * target, and diagnostic results are clamped to it, so nobody lands on a level without lessons.
+ * `pnpm content:check` fails when a program reaches above this, and a test checks it matches the content tree:
+ * shipping N2 means adding `content/ja/programs/n2` and raising `ja` here.
+ */
+export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n3' };
+
 export interface LevelInfo {
   label: string;
   description: string;
@@ -83,7 +92,7 @@ export const GOAL_LABELS: Record<GoalType, string> = {
   topik_ii: 'TOPIK II (cấp 3–6)',
   skill_focus: 'Nâng cao nghe, đọc hoặc viết',
   kana_basics: 'Kana và giao tiếp nền tảng',
-  jlpt: 'Đạt một cấp JLPT (N5–N1)',
+  jlpt: 'Đạt một cấp JLPT',
 };
 
 const GOAL_DEFAULT_TARGET: Record<GoalType, LevelCode> = {
@@ -126,11 +135,43 @@ export function levelOrdinal(language: LanguageCode, level: string): number {
   return (LEVELS[language] as readonly string[]).indexOf(level);
 }
 
-/** Levels the user may aim for: strictly above `current`, restricted to the TOPIK band for TOPIK goals. */
+/** Whether `level` has learning content (at or below `CONTENT_MAX_LEVEL`); false for unknown codes. */
+export function isLevelAvailable(language: LanguageCode, level: string): boolean {
+  const ordinal = levelOrdinal(language, level);
+  return ordinal >= 0 && ordinal <= levelOrdinal(language, CONTENT_MAX_LEVEL[language]);
+}
+
+/** Levels a learner can pick (current level or target), lowest first. */
+export function availableLevels(language: LanguageCode): LevelCode[] {
+  return (LEVELS[language] as readonly LevelCode[]).filter((l) => isLevelAvailable(language, l));
+}
+
+/**
+ * True when `current` is at or above the highest level with content while the scale goes higher
+ * (e.g. JLPT N3 before N2/N1 ship): there is nothing to aim for yet, though the learner has not finished the scale.
+ */
+export function isAtContentCeiling(language: LanguageCode, current: string): boolean {
+  const ordinal = levelOrdinal(language, current);
+  const max = levelOrdinal(language, CONTENT_MAX_LEVEL[language]);
+  return ordinal >= max && max < LEVELS[language].length - 1;
+}
+
+/**
+ * `level` lowered to the highest level with content (diagnostic suggestions and estimates); levels with content
+ * and unknown codes are returned unchanged.
+ */
+export function clampToContentLevel(language: LanguageCode, level: string): string {
+  return isLevelOf(language, level) && !isLevelAvailable(language, level) ? CONTENT_MAX_LEVEL[language] : level;
+}
+
+/**
+ * Levels the user may aim for: strictly above `current` and with content (`CONTENT_MAX_LEVEL`), restricted to the
+ * TOPIK band for TOPIK goals.
+ */
 export function allowedTargets(language: LanguageCode, goal: GoalType, current: string): LevelCode[] {
   const from = levelOrdinal(language, current);
   if (from < 0) return [];
-  let levels = (LEVELS[language] as readonly LevelCode[]).filter((_, i) => i > from);
+  let levels = availableLevels(language).filter((l) => levelOrdinal(language, l) > from);
   if (goal === 'topik_i') levels = levels.filter((l) => TOPIK_I.includes(l));
   if (goal === 'topik_ii') levels = levels.filter((l) => TOPIK_II.includes(l));
   return levels;

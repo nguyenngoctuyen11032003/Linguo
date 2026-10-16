@@ -3,7 +3,7 @@ import {
   allowedTargets,
   isGoalForLanguage,
   isLanguageAvailable,
-  isLevelOf,
+  isLevelAvailable,
   isTargetDateInRange,
   weeklyMinutesSchema,
   type LanguageCode,
@@ -50,7 +50,7 @@ export function isStepValid(step: StepNumber, data: OnboardingDraftData, ctx: St
     case 2:
       return Boolean(data.startPoint);
     case 3:
-      return Boolean(data.language && data.currentLevel && isLevelOf(data.language, data.currentLevel));
+      return Boolean(data.language && data.currentLevel && isLevelAvailable(data.language, data.currentLevel));
     case 4:
       return Boolean(
         data.language &&

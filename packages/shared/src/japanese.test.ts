@@ -51,6 +51,15 @@ describe('Japanese (ja) plumbing', () => {
     expect(createPathSchema.safeParse({ ...base, goalType: 'jlpt', targetLevel: 'kana' }).success).toBe(false);
   });
 
+  it('rejects N2/N1 as a target or current level while they have no program', () => {
+    const base = { language: 'ja', startPoint: 'some', weeklyMinutes: [30, 30, 30, 30, 30, 0, 0], targetDate: null } as const;
+    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n2' }).success).toBe(false);
+    expect(createPathSchema.safeParse({ ...base, currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n1' }).success).toBe(false);
+    const current = createPathSchema.safeParse({ ...base, currentLevel: 'n2', goalType: 'jlpt', targetLevel: 'n1' });
+    expect(current.success).toBe(false);
+    expect(current.error?.issues[0]?.path).toEqual(['currentLevel']);
+  });
+
   it('validates a ja diagnostic file', () => {
     const file = {
       schema_version: 1,

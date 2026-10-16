@@ -1,4 +1,4 @@
-import { LEVEL_INFO, type DiagnosticConfidence, type DiagnosticReport, type ReportSkill } from '@linguo/shared';
+import { clampToContentLevel, LEVEL_INFO, type DiagnosticConfidence, type DiagnosticReport, type ReportSkill } from '@linguo/shared';
 import type { SkipReason } from '@/features/diagnostic/service';
 
 export type { SkipReason };
@@ -40,6 +40,34 @@ export const SKIP_REASON_LABELS: Record<SkipReason, string> = {
 export function levelLabel(code: string | null | undefined): string {
   if (!code) return '—';
   return (LEVEL_INFO as Record<string, { label: string } | undefined>)[code]?.label ?? code;
+}
+
+/**
+ * The report with every level lowered to the highest level that has lessons (`CONTENT_MAX_LEVEL`, e.g. JLPT N3
+ * while N2/N1 have no program), and whether anything changed. The server's accept compares the raw level with the
+ * path target, which never exceeds that ceiling, so the clamped suggestion leads to the same outcome.
+ */
+export function clampReportToContent(report: DiagnosticReport): { report: DiagnosticReport; clamped: boolean } {
+  const lang = report.language_code;
+  let clamped = false;
+  const clamp = <T extends string | null>(level: T): T => {
+    if (level === null) return level;
+    const next = clampToContentLevel(lang, level);
+    if (next !== level) clamped = true;
+    return next as T;
+  };
+  const next: DiagnosticReport = {
+    ...report,
+    current_level: clamp(report.current_level),
+    suggested_level: clamp(report.suggested_level),
+    capped_level: clamp(report.capped_level),
+    skills: report.skills.map((s) => ({
+      ...s,
+      level_code: clamp(s.level_code),
+      range: s.range ? { low: clamp(s.range.low), high: clamp(s.range.high) } : null,
+    })),
+  };
+  return { report: clamped ? next : report, clamped };
 }
 
 /** "A1–B1", or a single label when both ends are the same level. */

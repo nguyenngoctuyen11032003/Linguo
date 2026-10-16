@@ -5,7 +5,20 @@ import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, 
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { bundleSchema, diagnosticBundleSchema, diagnosticItemSchema, examBundleSchema, examServedQuestionSchema, gradeExamAnswer, gradeResponse, isAudioAssetId } from '@linguo/shared';
+import {
+  bundleSchema,
+  CONTENT_MAX_LEVEL,
+  diagnosticBundleSchema,
+  diagnosticItemSchema,
+  examBundleSchema,
+  examServedQuestionSchema,
+  gradeExamAnswer,
+  gradeResponse,
+  isAudioAssetId,
+  LANGUAGE_CODES,
+  LEVELS,
+  levelOrdinal,
+} from '@linguo/shared';
 import { main } from './content-import.mjs';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
@@ -17,7 +30,7 @@ import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic
 import { buildExamBundle, renderExamSql } from './content/exam.mjs';
 import { canonicalJson, hashRow } from './content/hash.mjs';
 import { contentId, uuidV5 } from './content/ids.mjs';
-import { classify, loadContent } from './content/load.mjs';
+import { classify, effectiveStatus, indexContent, loadContent } from './content/load.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const VALID = join(here, '__fixtures__', 'content-valid');
@@ -1445,4 +1458,28 @@ test('ja: a JLPT form passes the checks and builds a ja bundle', (t) => {
   mkdirSync(join(wrongFamily.content, 'exams', 'ja'), { recursive: true });
   writeFileSync(join(wrongFamily.content, 'exams', 'ja', 'jlpt-mock.yaml'), JLPT_YAML.replace('family: jlpt', 'family: topik_i'));
   assert.ok(checkContent(loadTree(wrongFamily.content), { grade }).some((e) => e.includes('family topik_i is a ko exam, not ja')));
+});
+
+test('a program above CONTENT_MAX_LEVEL is rejected until the shared ceiling is raised', (t) => {
+  const { content } = tempTree(t);
+  const program = readFileSync(join(content, PROGRAM), 'utf8')
+    .replace('key: en:program:basics', 'key: ja:program:n2')
+    .replace('language: en', 'language: ja')
+    .replace('level_from: pre_a1', 'level_from: n2')
+    .replace('level_to: a1', 'level_to: n2');
+  mkdirSync(join(content, 'ja', 'programs', 'n2'), { recursive: true });
+  writeFileSync(join(content, 'ja', 'programs', 'n2', 'program.yaml'), program);
+  const errors = check(content);
+  const expected =
+    'content/ja/programs/n2/program.yaml: level_to "n2" is above CONTENT_MAX_LEVEL.ja (n3); raise it in packages/shared/src/learning/levels.ts so learners can pick the new levels';
+  assert.ok(errors.includes(expected), errors.join('\n'));
+});
+
+test('CONTENT_MAX_LEVEL matches the highest published program of every language in content/', () => {
+  const { programs } = indexContent(loadContent(join(here, '..', 'content'), { label: 'content' }).files);
+  for (const lang of LANGUAGE_CODES) {
+    const published = programs.filter((p) => p.lang === lang && effectiveStatus(p.data.status, p.data.demo) === 'published');
+    const top = published.reduce((max, p) => Math.max(max, levelOrdinal(lang, p.data.level_to)), -1);
+    assert.equal(LEVELS[lang][top], CONTENT_MAX_LEVEL[lang], `${lang}: highest program level_to vs CONTENT_MAX_LEVEL`);
+  }
 });

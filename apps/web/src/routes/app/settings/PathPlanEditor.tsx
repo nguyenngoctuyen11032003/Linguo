@@ -11,6 +11,7 @@ import {
   LEVEL_INFO,
   updatePlanSchema,
   type GoalType,
+  type LevelCode,
 } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -19,6 +20,7 @@ import { Input, inputClasses } from '@/components/ui/Input';
 import { EstimateSummary } from '@/features/learning-paths/components/EstimateSummary';
 import { ScheduleEditor, type ScheduleValue } from '@/features/learning-paths/components/ScheduleEditor';
 import { presetFromWeek } from '@/features/learning-paths/components/schedule';
+import { noTargetsMessage } from '@/features/learning-paths/content-ceiling';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
 import { targetDateError } from '@/features/learning-paths/target-date';
 import { updatePlan, type LearningPath } from '@/features/learning-paths/service';
@@ -36,12 +38,21 @@ interface Props {
   onSavingChange?: (saving: boolean) => void;
 }
 
+/** Coming back to the saved goal restores the saved target (when still offered) instead of a fresh default. */
+function savedOrDefaultTarget(path: LearningPath, goal: GoalType): string {
+  if (goal === path.goalType && allowedTargets(path.language, goal, path.currentLevel).includes(path.targetLevel as LevelCode)) {
+    return path.targetLevel;
+  }
+  return defaultTarget(path.language, goal, path.currentLevel) ?? '';
+}
+
 export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Props) {
   const { profile } = useProfile();
   const today = todayIso(profile?.timezone ?? DEFAULT_TIMEZONE);
   const reference = useReferenceHours();
   const [goalType, setGoalType] = useState<GoalType>(path.goalType);
-  const [targetLevel, setTargetLevel] = useState(path.targetLevel);
+  // A saved target above the content ceiling (chosen before CONTENT_MAX_LEVEL existed) opens on a valid one.
+  const [targetLevel, setTargetLevel] = useState(() => savedOrDefaultTarget(path, path.goalType));
   const [schedule, setSchedule] = useState<ScheduleValue>({ preset: presetFromWeek(path.weeklyMinutes), weeklyMinutes: path.weeklyMinutes });
   const [targetDate, setTargetDate] = useState(path.targetDate ?? '');
   const [saving, setSaving] = useState(false);
@@ -63,7 +74,9 @@ export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Prop
     targetDate: targetDate || null,
   });
   const errors = parsed.success ? {} : fieldErrors(parsed.error);
-  const targetError = noTargets ? 'Bạn đã đạt mục tiêu này. Hãy chọn mục tiêu khác.' : errors.targetLevel;
+  const targetError = noTargets
+    ? noTargetsMessage(path.language, path.currentLevel, 'Bạn đã đạt mục tiêu này. Hãy chọn mục tiêu khác.')
+    : errors.targetLevel;
   const scheduleError = errors.weeklyMinutes;
 
   let estimate = null;
@@ -132,7 +145,7 @@ export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Prop
               setError(null);
               setGoalType(g);
               // Coming back to the saved goal restores the saved target instead of a fresh default.
-              setTargetLevel(g === path.goalType ? path.targetLevel : (defaultTarget(path.language, g, path.currentLevel) ?? ''));
+              setTargetLevel(savedOrDefaultTarget(path, g));
             }}
             className={cn(inputClasses(invalid), 'appearance-none')}
           >

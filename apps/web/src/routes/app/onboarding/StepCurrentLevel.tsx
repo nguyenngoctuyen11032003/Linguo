@@ -1,4 +1,4 @@
-import { LEVEL_INFO, LEVELS, type LanguageCode, type LevelCode } from '@linguo/shared';
+import { availableLevels, LEVEL_INFO, type LanguageCode, type LevelCode } from '@linguo/shared';
 import { ChoiceList } from '@/features/learning-paths/components/ChoiceList';
 
 export function StepCurrentLevel({ language, value, onChange }: { language: LanguageCode; value?: string; onChange: (v: LevelCode) => void }) {
@@ -10,7 +10,7 @@ export function StepCurrentLevel({ language, value, onChange }: { language: Lang
         labelledBy="onboarding-title"
         value={value as LevelCode | undefined}
         onChange={onChange}
-        options={(LEVELS[language] as readonly LevelCode[]).map((code) => ({
+        options={availableLevels(language).map((code) => ({
           value: code,
           label: LEVEL_INFO[code].label,
           description: LEVEL_INFO[code].description,

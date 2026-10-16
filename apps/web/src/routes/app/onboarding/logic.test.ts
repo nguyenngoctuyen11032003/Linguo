@@ -34,6 +34,14 @@ describe('onboarding logic', () => {
     expect(isStepValid(5, { deadlineMode: 'weeks', deadlineAmount: 8 }, ctx)).toBe(true);
   });
 
+  it('rejects Japanese levels without a program (restored drafts included)', () => {
+    const ctx = { taken: [], today };
+    expect(isStepValid(3, { language: 'ja', currentLevel: 'n3' }, ctx)).toBe(true);
+    expect(isStepValid(3, { language: 'ja', currentLevel: 'n2' }, ctx)).toBe(false);
+    expect(isStepValid(4, { language: 'ja', currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n3' }, ctx)).toBe(true);
+    expect(isStepValid(4, { language: 'ja', currentLevel: 'n4', goalType: 'jlpt', targetLevel: 'n2' }, ctx)).toBe(false);
+  });
+
   it('bounds the deadline to ten years for dates, weeks and months', () => {
     const ctx = { taken: [], today };
     expect(isStepValid(5, { deadlineMode: 'date', targetDate: '2036-10-10' }, ctx)).toBe(true);
