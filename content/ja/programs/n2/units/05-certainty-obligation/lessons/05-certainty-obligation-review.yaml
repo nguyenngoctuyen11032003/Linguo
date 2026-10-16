@@ -1,0 +1,393 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-certainty-obligation-review
+order_index: 5
+level: n2
+title:
+  vi: "Ôn tập: bài bình luận về điện thoại thông minh"
+objectives:
+  - vi: Đọc hiểu một bài bình luận ngắn và chỉ ra chủ trương, căn cứ, ý công nhận tạm thời.
+  - vi: Phối hợp に違いない / 恐れがある, ざるを得ない / ずにはいられない / ないわけにはいかない, ものだ / ことだ / ものがある trong cùng ngữ cảnh.
+  - vi: Dùng のである, つまり, とはいえ để viết câu kết luận ngắn.
+estimated_minutes: 25
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n2-u5-hyouronbun]
+items:
+  - item: ja:item:n2-u5-izon
+  - item: ja:item:n2-u5-tebanasu
+  - item: ja:item:n2-u5-ippouteki
+  - item: ja:item:n2-u5-gram-ni-chigainai
+    role: reuse
+  - item: ja:item:n2-u5-gram-osore-ga-aru
+    role: reuse
+  - item: ja:item:n2-u5-gram-zaru-wo-enai
+    role: reuse
+  - item: ja:item:n2-u5-gram-zu-ni-irarenai
+    role: reuse
+  - item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    role: reuse
+  - item: ja:item:n2-u5-gram-monoda
+    role: reuse
+  - item: ja:item:n2-u5-gram-kotoda
+    role: reuse
+  - item: ja:item:n2-u5-gram-no-dearu
+    role: reuse
+  - item: ja:item:n2-u5-gram-tsumari
+    role: reuse
+  - item: ja:item:n2-u5-gram-towaie
+    role: reuse
+  - item: ja:item:n2-u5-shuchou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn là một bài bình luận về "nghiện điện thoại" - đề tài rất hay ra trong đọc hiểu N2. Bạn đọc, tìm chủ trương của tác giả và dùng lại toàn bộ ngữ pháp chắc chắn, bắt buộc, lẽ thường của unit.
+  - type: explain
+    text:
+      vi: 'Bài đọc: 「電車の中を見渡すと、ほとんどの人がスマホを見ている。一日中スマホを手放せない人が増えているのは間違いない。このままでは、人と直接話す力が弱まる恐れがあるという声もある。確かに、スマホに依存しすぎるのは問題だ。とはいえ、仕事でも生活でも、今やスマホを使わざるを得ない場面が多い。スマホを一方的に悪いものだと決めつけるべきではない。つまり、大切なのは使うか使わないかではなく、どう使うかなのである。」'
+  - type: explain
+    text:
+      vi: 'Phân tích: câu 1–2 nêu hiện tượng (căn cứ); câu 3 là ý kiến của người khác (という声もある); 確かに～ là ý tác giả công nhận tạm thời; sau とはいえ là phản bác; câu cuối つまり～なのである là chủ trương - điều quan trọng là dùng thế nào.'
+  - type: deep_explain
+    text:
+      vi: Câu hỏi đọc hiểu thường đưa phương án "nên hạn chế dùng điện thoại" - khớp với câu 確かに nhưng không phải chủ trương. Hãy luôn hỏi "sau とはいえ / しかし, tác giả nói gì?" và "câu có つまり / のである nói gì?". Ngoài ra, ～という声もある, ～と言われる là ý kiến người khác, tác giả không nhất thiết đồng ý.
+  - type: example
+    target: このままでは、人と直接話す力が弱まる恐れがある。
+    target_lang: ja
+    translation:
+      vi: Cứ thế này thì có nguy cơ khả năng nói chuyện trực tiếp với người khác bị suy yếu.
+  - type: example
+    target: 今やスマホを使わざるを得ない場面が多い。
+    target_lang: ja
+    translation:
+      vi: Bây giờ có rất nhiều tình huống buộc phải dùng điện thoại.
+  - type: example
+    target: 大切なのは、使うか使わないかではなく、どう使うかなのである。
+    target_lang: ja
+    translation:
+      vi: Điều quan trọng không phải là dùng hay không dùng, mà là dùng như thế nào.
+  - type: example
+    target: 通知が来ると、つい見ずにはいられない。人間とはそういうものだ。
+    target_lang: ja
+    translation:
+      vi: Có thông báo đến là không kìm được mà xem ngay. Con người vốn là như thế.
+  - type: common_mistake
+    wrong: スマホを依存している人が多い。
+    right: スマホに依存している人が多い。
+    target_lang: ja
+    note:
+      vi: 依存する đi với に (phụ thuộc vào). Tiếng Việt "nghiện điện thoại" không có giới từ nên dễ dùng を.
+  - type: common_mistake
+    wrong: 筆者は、スマホを使うべきではないと主張している。
+    right: 筆者は、スマホをどう使うかが大切だと主張している。
+    target_lang: ja
+    note:
+      vi: Tác giả chỉ công nhận tạm thời "phụ thuộc quá là vấn đề" (確かに), rồi phản bác bằng とはいえ. Chủ trương nằm ở câu つまり～なのである.
+  - type: summary
+    points:
+      - vi: 依存する (～に) - phụ thuộc; 手放せない - không rời tay được; 一方的 - phiến diện, một chiều.
+      - vi: 'Bài bình luận: hiện tượng → ý kiến người khác → 確かに (công nhận) → とはいえ (phản bác) → つまり～のである (chủ trương).'
+      - vi: に違いない / 恐れがある - chắc chắn / nguy cơ; ざるを得ない / ずにはいられない / ないわけにはいかない - ba kiểu "phải".
+      - vi: ものだ - lẽ thường; ことだ - lời khuyên; ものがある - cảm nhận.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-certainty-obligation-review-mcq-claim
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u5-shuchou
+    prompt:
+      stem: "Đọc lại bài bình luận trong phần giải thích. Chủ trương của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: a2c, text: Điều quan trọng là dùng điện thoại như thế nào., lang: vi }
+        - { id: b5d, text: Nên hạn chế dùng điện thoại càng nhiều càng tốt., lang: vi }
+        - { id: c8e, text: Điện thoại làm mất khả năng nói chuyện trực tiếp., lang: vi }
+        - { id: d1f, text: Không thể làm việc nếu không có điện thoại., lang: vi }
+    answer:
+      correct_option_id: a2c
+    explanation:
+      vi: Câu cuối つまり～どう使うかなのである là chủ trương. "Mất khả năng nói chuyện" là ý kiến người khác (という声もある); "hạn chế dùng" gần với ý công nhận tạm thời 確かに.
+    display_answer: Điều quan trọng là dùng điện thoại như thế nào.
+
+  - key: ja:exercise:n2-certainty-obligation-review-mcq-koe
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-osore-ga-aru
+    prompt:
+      stem: Câu 「人と直接話す力が弱まる恐れがあるという声もある。」 trong bài có vai trò gì?
+      stem_lang: vi
+      options:
+        - { id: e4g, text: Giới thiệu một ý kiến của người khác về nguy cơ., lang: vi }
+        - { id: f7h, text: Là kết luận cuối cùng của tác giả., lang: vi }
+        - { id: g2i, text: Là số liệu khảo sát làm căn cứ., lang: vi }
+        - { id: h9j, text: Là lời khuyên trực tiếp cho người đọc., lang: vi }
+    answer:
+      correct_option_id: e4g
+    explanation:
+      vi: ～という声もある - "cũng có tiếng nói cho rằng...", tức là ý kiến người khác. 恐れがある - có nguy cơ (điều xấu).
+    display_answer: Giới thiệu một ý kiến của người khác về nguy cơ.
+
+  - key: ja:exercise:n2-certainty-obligation-review-listen-tebanasu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-tebanasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 一日中スマホを手放せない人が増えている。
+      options:
+        - { id: i3k, text: Số người cả ngày không rời được điện thoại đang tăng., lang: vi }
+        - { id: j6l, text: Số người bán điện thoại cũ đang tăng., lang: vi }
+        - { id: k1m, text: Số người không dùng điện thoại cả ngày đang tăng., lang: vi }
+        - { id: l8n, text: Số người làm mất điện thoại đang tăng., lang: vi }
+    answer:
+      correct_option_id: i3k
+    explanation:
+      vi: 手放せない - không thể rời tay (thể khả năng phủ định của 手放す). Bán đi cũng là nghĩa của 手放す, nhưng ở đây đi với 一日中 nên là "không rời tay".
+    display_answer: Số người cả ngày không rời được điện thoại đang tăng.
+
+  - key: ja:exercise:n2-certainty-obligation-review-fill-izon
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-izon
+    prompt:
+      template: "確かに、スマホ{{b1}}依存しすぎるのは問題だ。{{b2}}、今やスマホを使わざるを得ない場面が多い。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Đúng là phụ thuộc quá nhiều vào điện thoại là vấn đề. Tuy nói vậy, bây giờ có nhiều tình huống buộc phải dùng điện thoại."
+        - "Gợi ý: 依存する đi với trợ từ gì? Từ nối nhượng bộ 4 kana."
+    answer:
+      blanks:
+        b1: [に]
+        b2: [とはいえ, とは言え, とは言っても, とはいっても, しかし, だが, でも]
+    known_wrong:
+      - answer: を
+        feedback_vi: 依存する đi với に - スマホに依存する.
+        error_tag: particle_ni
+      - answer: つまり
+        feedback_vi: Câu sau trái chiều với câu 確かに, cần từ nhượng bộ - とはいえ.
+        error_tag: connector_choice
+    explanation:
+      vi: ～に依存する - phụ thuộc vào. 確かに A。とはいえ B - công nhận A rồi phản bác bằng B.
+    display_answer: 確かに、スマホに依存しすぎるのは問題だ。とはいえ、今やスマホを使わざるを得ない場面が多い。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-certainty-obligation-review-fill-mix
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-zu-ni-irarenai
+    prompt:
+      template: "通知が来ると、つい{{b1}}ずにはいられない。人間とはそういう{{b2}}だ。(見る)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [見, み]
+        b2: [もの]
+    known_wrong:
+      - answer: 見ら
+        feedback_vi: 見る là động từ nhóm 2 - thể ない 見ない, bỏ ない còn 見 + ずにはいられない.
+        error_tag: zuni_form
+      - answer: こと
+        feedback_vi: Nói bản chất con người dùng ものだ; ことだ là lời khuyên.
+        error_tag: mono_koto
+    explanation:
+      vi: 見る → 見ずにはいられない (không kìm được mà xem). そういうものだ - vốn là như thế (bản chất).
+    display_answer: 通知が来ると、つい見ずにはいられない。人間とはそういうものだ。
+
+  - key: ja:exercise:n2-certainty-obligation-review-translate-izon
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-izon
+    prompt:
+      source_text: Cuộc sống của chúng ta ngày càng phụ thuộc vào điện thoại thông minh. (văn viết)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 私たちの生活は、ますますスマホに依存するようになった。
+        - 私たちの生活は、ますますスマホに依存するようになっている。
+        - 私たちの生活は、ますますスマートフォンに依存するようになった。
+        - 私たちの生活は、ますますスマートフォンに依存するようになっている。
+        - 私たちの生活は、ますますスマホに依存している。
+        - 私たちの生活は、ますますスマートフォンに依存している。
+        - 私たちの生活は、どんどんスマホに依存するようになっている。
+        - 我々の生活は、ますますスマホに依存するようになった。
+        - 私たちの生活は、ますますスマホに依存するようになってきた。
+        - 私たちの生活は、ますますスマホに依存しつつある。
+        - 私たちの生活は、ますますスマホに依存するようになりました。
+        - わたしたちのせいかつは、ますますスマホにいぞんするようになった。
+    known_wrong:
+      - answer: 私たちの生活は、ますますスマホを依存するようになった。
+        feedback_vi: 依存する đi với に - スマホに依存する.
+        error_tag: particle_ni
+    explanation:
+      vi: ますます - ngày càng; ～に依存する - phụ thuộc vào; ～ようになった - đã trở nên.
+    display_answer: 私たちの生活は、ますますスマホに依存するようになった。
+
+  - key: ja:exercise:n2-certainty-obligation-review-translate-dou
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u5-gram-no-dearu
+    prompt:
+      source_text: Điều quan trọng không phải là dùng hay không dùng, mà là dùng như thế nào. (văn viết, kết thúc bằng のである)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 大切なのは、使うか使わないかではなく、どう使うかなのである。
+        - 大切なのは使うか使わないかではなく、どう使うかなのである。
+        - 大切なのは、使うか使わないかではなく、どのように使うかなのである。
+        - 大事なのは、使うか使わないかではなく、どう使うかなのである。
+        - 大事なのは、使うか使わないかではなく、どのように使うかなのである。
+        - 重要なのは、使うか使わないかではなく、どう使うかなのである。
+        - 重要なのは、使うか使わないかではなく、どのように使うかなのである。
+        - 大切なのは、使うかどうかではなく、どう使うかなのである。
+        - 大切なのは、使うかどうかではなく、どのように使うかなのである。
+        - 大事なのは、使うかどうかではなく、どう使うかなのである。
+        - 重要なのは、使うかどうかではなく、どう使うかなのである。
+        - たいせつなのは、つかうかつかわないかではなく、どうつかうかなのである。
+    known_wrong:
+      - answer: 大切なのは、使うか使わないかではなく、どう使うかのである。
+        feedback_vi: Trước のである, cụm danh từ cần な - どう使うかなのである.
+        error_tag: nodearu_na
+    explanation:
+      vi: 大切なのは A ではなく、B なのである - khung nêu chủ trương. 使うか使わないか / 使うかどうか - dùng hay không.
+    display_answer: 大切なのは、使うか使わないかではなく、どう使うかなのである。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-certainty-obligation-review-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-nai-wake-ni-ikanai
+    prompt:
+      stem: 'Bạn muốn bỏ điện thoại cả cuối tuần, nhưng sếp có thể gọi gấp. Bạn viết: "Vì có thể có liên lạc từ công ty nên không thể không mang điện thoại theo."'
+      stem_lang: vi
+      options:
+        - { id: m4p, text: 会社から連絡が来るかもしれないので、スマホを持って行かないわけにはいかない。, lang: ja }
+        - { id: n7q, text: 会社から連絡が来るかもしれないので、スマホを持って行くわけにはいかない。, lang: ja }
+        - { id: o2r, text: 会社から連絡が来るかもしれないので、スマホを持って行かずにはいられない。, lang: ja }
+        - { id: p5s, text: 会社から連絡が来るかもしれないので、スマホを持って行くことだ。, lang: ja }
+    answer:
+      correct_option_id: m4p
+    explanation:
+      vi: Trách nhiệm với công ty - ないわけにはいかない. 持って行くわけにはいかない ngược nghĩa; ずにはいられない là cảm xúc; ことだ là lời khuyên người khác.
+    display_answer: 会社から連絡が来るかもしれないので、スマホを持って行かないわけにはいかない。
+
+  - key: ja:exercise:n2-certainty-obligation-review-mcq-advice
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-kotoda
+    prompt:
+      stem: 'Em họ bạn than ngủ không ngon vì xem điện thoại đến khuya. Bạn khuyên: "Muốn ngủ ngon thì tốt nhất là đừng xem điện thoại trước khi ngủ."'
+      stem_lang: vi
+      options:
+        - { id: q8t, text: よく眠りたいなら、寝る前にスマホを見ないことだ。, lang: ja }
+        - { id: r3u, text: よく眠りたいなら、寝る前にスマホを見ないものがある。, lang: ja }
+        - { id: s6v, text: よく眠りたいなら、寝る前にスマホを見ざるを得ない。, lang: ja }
+        - { id: t1w, text: よく眠りたいなら、寝る前にスマホを見ないに違いない。, lang: ja }
+    answer:
+      correct_option_id: q8t
+    explanation:
+      vi: Lời khuyên cụ thể cho người dưới - V-ない + ことだ. Các mẫu khác không phải lời khuyên.
+    display_answer: よく眠りたいなら、寝る前にスマホを見ないことだ。
+
+  - key: ja:exercise:n2-certainty-obligation-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u5-ippouteki
+    prompt:
+      source_text: スマホを一方的に悪いものだと決めつけるべきではない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không nên phiến diện cho rằng điện thoại là thứ xấu.
+        - Không nên một chiều kết luận điện thoại là thứ xấu.
+        - Không nên đơn phương kết luận điện thoại là thứ xấu.
+        - Không nên phiến diện kết luận điện thoại là thứ xấu.
+        - Không nên một chiều cho rằng điện thoại là thứ xấu.
+        - Không nên một mực cho rằng điện thoại là thứ xấu.
+        - Không nên phiến diện quy kết điện thoại là thứ xấu.
+        - Không nên phiến diện cho rằng điện thoại thông minh là thứ xấu.
+        - Không nên một chiều kết luận điện thoại thông minh là thứ xấu.
+        - Không nên phiến diện coi điện thoại là thứ xấu.
+        - Không nên nhìn một chiều mà cho rằng điện thoại là thứ xấu.
+        - Chúng ta không nên phiến diện cho rằng điện thoại là thứ xấu.
+        - Không nên phiến diện cho rằng điện thoại là thứ có hại.
+        - Không nên phiến diện mà khẳng định điện thoại là thứ xấu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nên cho rằng điện thoại là thứ xấu.
+        feedback_vi: べきではない là "không nên". Câu có phủ định ở cuối.
+        error_tag: beki_negation
+    explanation:
+      vi: 一方的に - phiến diện, một chiều; 決めつける - quy kết, kết luận vội; べきではない - không nên.
+    display_answer: Không nên phiến diện cho rằng điện thoại là thứ xấu.
+
+  - key: ja:exercise:n2-certainty-obligation-review-wb-conclusion
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-tsumari
+    prompt:
+      instruction: "Sắp xếp thành câu kết luận: \"Tức là, vấn đề không phải ở điện thoại mà ở cách dùng của chúng ta.\""
+      tokens:
+        - { id: z4, text: 私たちの使い方なのである }
+        - { id: z2, text: 問題は }
+        - { id: z5, text: 私たちの使い方のである }
+        - { id: z1, text: つまり }
+        - { id: z3, text: スマホではなく }
+    answer:
+      orders:
+        - [z1, z2, z3, z4]
+    explanation:
+      vi: つまり mở đầu câu kết luận; A ではなく B なのである - không phải A mà là B. 使い方 là danh từ nên cần な trước のである.
+    display_answer: つまり、問題はスマホではなく、私たちの使い方なのである。
+
+  - key: ja:exercise:n2-certainty-obligation-review-mcq-chigainai
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      stem: 'Bạn thấy đứa em cả tối không trả lời tin nhắn, nhưng trên mạng xã hội vẫn đăng bài liên tục. Bạn nghĩ: "Chắc chắn nó đang mải mê với điện thoại." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: u3x, text: きっとスマホに夢中になっているに違いない。, lang: ja }
+        - { id: v6y, text: きっとスマホに夢中になっている恐れがある。, lang: ja }
+        - { id: w9z, text: きっとスマホに夢中になっているものがある。, lang: ja }
+        - { id: x2a, text: きっとスマホに夢中になっているわけにはいかない。, lang: ja }
+    answer:
+      correct_option_id: u3x
+    explanation:
+      vi: Phán đoán chắc chắn từ dấu hiệu (vẫn đăng bài) - に違いない. 恐れがある dành cho nguy cơ trong tin tức, cảnh báo; ものがある là cảm nhận; わけにはいかない là nghĩa vụ.
+    display_answer: きっとスマホに夢中になっているに違いない。

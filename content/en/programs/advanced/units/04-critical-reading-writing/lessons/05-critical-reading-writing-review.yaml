@@ -1,0 +1,762 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:critical-reading-writing-review
+order_index: 5
+level: c2
+title:
+  vi: Ôn tập - Đọc phản biện một bài xã luận & viết phản hồi
+objectives:
+  - vi: Tóm tắt đại ý một bài xã luận và đánh giá bằng chứng, nguồn và các ngụy biện trong đó.
+  - vi: Viết đoạn phản hồi có phản đề, bác bỏ và kết luận cân nhắc; chuyển cùng một nội dung sang văn phong phù hợp với người đọc.
+  - vi: Tự sửa lỗi hay gặp - suggest to V, biased/bias, evidences, to some extents, I would appreciate if….
+estimated_minutes: 25
+skills: [reading, writing, listening, vocabulary, grammar]
+prerequisites: [en:lesson:crw-register-shifting]
+items:
+  - item: en:item:crw-cherry-picking
+  - item: en:item:crw-sweeping-statement
+  - item: en:item:crw-the-author-argues-that
+    role: reuse
+  - item: en:item:crw-reporting-verbs
+    role: reuse
+  - item: en:item:crw-the-gist
+    role: reuse
+  - item: en:item:crw-paraphrase
+    role: reuse
+  - item: en:item:crw-anecdotal-evidence
+    role: reuse
+  - item: en:item:crw-correlation-causation
+    role: reuse
+  - item: en:item:crw-does-not-follow
+    role: reuse
+  - item: en:item:crw-slippery-slope
+    role: reuse
+  - item: en:item:crw-false-dilemma
+    role: reuse
+  - item: en:item:crw-straw-man
+    role: reuse
+  - item: en:item:crw-ad-hominem
+    role: reuse
+  - item: en:item:crw-it-could-be-argued-that
+    role: reuse
+  - item: en:item:crw-this-view-overlooks
+    role: reuse
+  - item: en:item:crw-on-balance
+    role: reuse
+  - item: en:item:crw-to-a-large-extent
+    role: reuse
+  - item: en:item:crw-would-appreciate-it-if
+    role: reuse
+  - item: en:item:crw-it-is-recommended-that
+    role: reuse
+  - item: en:item:crw-vague-language
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đưa bạn qua cả quy trình đọc phản biện - đọc một bài xã luận đề xuất cấm điện thoại thông minh trong trường học, tóm tắt nó, chỉ ra chỗ yếu của lập luận, rồi viết phản hồi bằng hai văn phong khác nhau.
+  - type: explain
+    text:
+      vi: Quy trình bốn bước - (1) nắm đại ý (the gist) và tóm tắt bằng The author argues that…; (2) đánh giá nguồn và bằng chứng - ai nói, dựa trên gì, có anecdotal không; (3) tìm ngụy biện - sweeping statement, cherry-picking, nhầm tương quan với nhân quả, slippery slope, false dilemma; (4) phản hồi - phản đề, bác bỏ, kết luận cân nhắc, đúng văn phong người đọc.
+  - type: explain
+    text:
+      vi: Hai cụm mới - a sweeping statement (nhận định vơ đũa cả nắm - All teenagers are…) và cherry-picking (chỉ chọn dữ liệu có lợi, lờ phần còn lại). Phản bác lịch sự - That is a sweeping statement; The author cherry-picks the data.
+  - type: deep_explain
+    text:
+      vi: Khi tự kiểm tra bài viết C2 - (1) động từ tường thuật có đúng mẫu không (suggests + V-ing / that…, không phải suggests to V); (2) từ loại - biased, necessarily, anecdotal; (3) evidence không đếm được; (4) phản biện nhắm vào lập luận, không vào người viết; (5) văn phong nhất quán - báo cáo không có stuff, like; tin nhắn bạn bè không có hereby.
+  - type: example
+    target: "Smartphones are destroying our children's ability to concentrate. Every teacher I have spoken to agrees. One school in Manchester banned phones last year, and its exam results rose by 12 per cent. If we allow phones in classrooms today, tomorrow students will be unable to read a single page. Either we ban phones completely, or we accept a generation that cannot think."
+    target_lang: en
+    translation:
+      vi: "Điện thoại thông minh đang hủy hoại khả năng tập trung của con em chúng ta. Mọi giáo viên mà tôi từng nói chuyện đều đồng ý. Một trường ở Manchester đã cấm điện thoại năm ngoái, và điểm thi của trường tăng 12 phần trăm. Nếu hôm nay chúng ta cho phép điện thoại trong lớp, ngày mai học sinh sẽ không đọc nổi một trang sách. Hoặc chúng ta cấm điện thoại hoàn toàn, hoặc chấp nhận một thế hệ không biết suy nghĩ."
+    note:
+      vi: Bài xã luận - năm câu, năm vấn đề - nhận định vơ đũa, bằng chứng giai thoại, chọn lọc dữ liệu kèm nhầm nhân quả, dốc trượt, lưỡng nan giả.
+  - type: example
+    target: The author argues that smartphones should be banned in schools, claiming that they damage students' concentration.
+    target_lang: en
+    translation:
+      vi: Tác giả cho rằng nên cấm điện thoại thông minh trong trường học, khẳng định rằng chúng làm hại khả năng tập trung của học sinh.
+    note:
+      vi: Tóm tắt một câu - động từ tường thuật argues và claiming, diễn đạt lại bằng lời của mình.
+  - type: example
+    target: However, the evidence is largely anecdotal, and the author cherry-picks a single school. Even there, it does not necessarily follow that the ban caused the higher marks.
+    target_lang: en
+    translation:
+      vi: Tuy nhiên, bằng chứng phần lớn mang tính giai thoại, và tác giả chỉ chọn đúng một trường. Ngay cả ở đó, không nhất thiết vì thế mà lệnh cấm là nguyên nhân khiến điểm cao hơn.
+    note:
+      vi: Đoạn phản biện - nhắm vào bằng chứng và lập luận, không công kích người viết.
+  - type: example
+    target: "Report: It is recommended that schools limit phone use during lessons rather than impose a complete ban. → Message to a friend: Honestly, I think schools should just keep phones off in class - a total ban seems a bit much."
+    target_lang: en
+    translation:
+      vi: "Báo cáo: Khuyến nghị các trường hạn chế dùng điện thoại trong giờ học thay vì cấm hoàn toàn. → Nhắn cho bạn: Thật ra mình nghĩ trường chỉ cần cho tắt điện thoại trong giờ học thôi - cấm hẳn thì hơi quá."
+    note:
+      vi: Cùng một kết luận, hai văn phong - câu vô nhân xưng trang trọng và lời nhắn thân mật.
+  - type: common_mistake
+    wrong: The author suggests to ban phones in all schools.
+    right: The author suggests banning phones in all schools.
+    target_lang: en
+    note:
+      vi: Suggest + V-ing hoặc suggest that phones should be banned; không dùng suggest to V.
+  - type: common_mistake
+    wrong: The article is very bias and gives many evidences.
+    right: The article is heavily biased and offers little real evidence.
+    target_lang: en
+    note:
+      vi: Sau be cần tính từ biased; evidence không đếm được, không có dạng evidences.
+  - type: common_mistake
+    wrong: All teenagers are addicted to their phones, so the ban is necessary.
+    right: Many teenagers spend several hours a day on their phones, which may justify some restrictions.
+    target_lang: en
+    note:
+      vi: Nhận định vơ đũa cả nắm (all teenagers) làm lập luận yếu; dùng ngôn ngữ rào đón (many, may) và nêu dữ kiện cụ thể.
+  - type: summary
+    points:
+      - vi: Quy trình - nắm the gist → đánh giá nguồn và bằng chứng → tìm ngụy biện → phản hồi đúng văn phong.
+      - vi: Cụm mới - a sweeping statement (vơ đũa cả nắm), cherry-picking / cherry-pick the data (chọn lọc dữ liệu có lợi).
+      - vi: Phản biện - The evidence is largely anecdotal; It does not necessarily follow that…; However, this view overlooks….
+      - vi: Kết luận - On balance, …; mức độ đồng ý - to a large / some extent.
+      - vi: Văn phong - báo cáo dùng It is recommended that…, I would appreciate it if…; tin nhắn bạn bè dùng câu ngắn, thân mật.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:crw-review-mcq-gist
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-the-gist
+    prompt:
+      stem: Đại ý (the gist) của bài xã luận về điện thoại thông minh trong phần ví dụ là gì?
+      stem_lang: vi
+      options:
+        - { id: g5h, text: "Nên cấm hoàn toàn điện thoại trong trường vì chúng làm hại khả năng tập trung của học sinh.", lang: vi }
+        - { id: w2n, text: "Trường học nên dùng điện thoại thông minh để dạy học tốt hơn.", lang: vi }
+        - { id: c8t, text: "Một trường ở Manchester có điểm thi cao nhất nước Anh.", lang: vi }
+        - { id: j6q, text: "Giáo viên nên được phép dùng điện thoại trong giờ học.", lang: vi }
+    answer:
+      correct_option_id: g5h
+    explanation:
+      vi: Cả bài xoay quanh một luận điểm - cấm điện thoại vì chúng hủy hoại sự tập trung. Chi tiết về trường ở Manchester chỉ là bằng chứng (yếu) cho luận điểm đó, không phải ý chính.
+    display_answer: "Nên cấm hoàn toàn điện thoại trong trường vì chúng làm hại khả năng tập trung của học sinh."
+
+  - key: en:exercise:crw-review-mcq-weakness
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: en:item:crw-correlation-causation
+    prompt:
+      stem: "Câu \"One school in Manchester banned phones last year, and its exam results rose by 12 per cent.\" yếu ở điểm nào?"
+      stem_lang: vi
+      options:
+        - { id: p3w, text: "Chỉ chọn một trường có kết quả đẹp và coi việc tăng điểm là do lệnh cấm - chọn lọc dữ liệu và nhầm tương quan với nhân quả.", lang: vi }
+        - { id: k9d, text: "Câu này công kích cá nhân các giáo viên ở Manchester.", lang: vi }
+        - { id: s4b, text: "Câu này chỉ đưa ra hai lựa chọn cực đoan.", lang: vi }
+        - { id: f1x, text: "Câu này không có điểm yếu vì đã có số liệu cụ thể.", lang: vi }
+    answer:
+      correct_option_id: p3w
+    explanation:
+      vi: Một trường là quá ít (cherry-picking), và điểm tăng sau lệnh cấm chưa chứng minh lệnh cấm là nguyên nhân - correlation does not imply causation. Có con số cụ thể không có nghĩa là bằng chứng mạnh.
+    display_answer: "Chỉ chọn một trường có kết quả đẹp và coi việc tăng điểm là do lệnh cấm - chọn lọc dữ liệu và nhầm tương quan với nhân quả."
+
+  - key: en:exercise:crw-review-listen-cherry-picking
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-cherry-picking
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Opponents might say this is cherry-picking. However, the trend holds across all forty schools in the study, not just the best one."
+      options:
+        - { id: e7m, text: "Người nói lường trước lời chỉ trích chọn lọc dữ liệu rồi bác bỏ - xu hướng đúng ở cả bốn mươi trường.", lang: vi }
+        - { id: o2k, text: "Người nói thừa nhận mình chỉ chọn trường có kết quả tốt nhất.", lang: vi }
+        - { id: y8v, text: "Người nói kể về một chuyến đi hái anh đào cùng học sinh.", lang: vi }
+        - { id: u5c, text: "Người nói cho rằng nghiên cứu chỉ có một trường tham gia.", lang: vi }
+    answer:
+      correct_option_id: e7m
+    explanation:
+      vi: Cherry-picking là chọn lọc dữ liệu có lợi, không liên quan đến hái quả. Opponents might say… nêu phản đề; However… bác bỏ bằng dữ kiện - xu hướng đúng với cả bốn mươi trường.
+    display_answer: "Người nói lường trước lời chỉ trích chọn lọc dữ liệu rồi bác bỏ - xu hướng đúng ở cả bốn mươi trường."
+
+  - key: en:exercise:crw-review-fill-sweeping-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-sweeping-statement
+    prompt:
+      template: "\"All teenagers are addicted to their phones\" is a {{b1}} statement. The author also {{b2}}-picks the data, citing only the one school where results improved."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: \"Tất cả thiếu niên đều nghiện điện thoại\" là một nhận định vơ đũa cả nắm. Tác giả cũng chọn lọc dữ liệu, chỉ dẫn ra một trường có kết quả tốt lên."
+        - "Gợi ý: ô 1 là tính từ \"quét sạch, bao trùm\" (s…); ô 2 là một loại quả (c…)."
+    answer:
+      blanks:
+        b1: [sweeping, blanket]
+        b2: [cherry]
+    known_wrong:
+      - answer: sweep
+        feedback_vi: Trước danh từ statement cần tính từ đuôi -ing - a sweeping statement.
+        error_tag: word_form
+      - answer: cherries
+        feedback_vi: Trong động từ ghép cherry-pick, cherry ở số ít.
+        error_tag: word_form
+    explanation:
+      vi: A sweeping statement = nhận định vơ đũa cả nắm; cherry-pick the data = chỉ chọn dữ liệu có lợi.
+    display_answer: "\"All teenagers are addicted to their phones\" is a sweeping statement. The author also cherry-picks the data, citing only the one school where results improved."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:crw-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-does-not-follow
+    prompt:
+      template: "The author {{b1}} that phones should be banned. However, it does not necessarily {{b2}} that the higher marks were caused by the ban. {{b3}} balance, the evidence is too weak to support such a strong claim."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [argues, claims, contends, maintains, asserts, insists, suggests, believes, states]
+        b2: [follow]
+        b3: ["On"]
+    known_wrong:
+      - answer: argue
+        feedback_vi: Chủ ngữ the author số ít - argues.
+        error_tag: subject_verb_agreement
+      - answer: follows
+        feedback_vi: Sau does not necessarily dùng động từ nguyên mẫu - follow.
+        error_tag: verb_form
+      - answer: In
+        feedback_vi: Cụm cố định là on balance.
+        error_tag: preposition
+    explanation:
+      vi: The author argues that… tường thuật luận điểm; It does not necessarily follow that… chỉ ra lỗ hổng nhân quả; On balance mở câu kết luận.
+    display_answer: The author argues that phones should be banned. However, it does not necessarily follow that the higher marks were caused by the ban. On balance, the evidence is too weak to support such a strong claim.
+
+  - key: en:exercise:crw-review-translate-argues
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-reporting-verbs
+    prompt:
+      source_text: Tác giả cho rằng nên cấm điện thoại trong trường học.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The author argues that phones should be banned in schools.
+        - The author argues that phones should be banned at school.
+        - The author argues that phones should be banned from schools.
+        - The author argues that smartphones should be banned in schools.
+        - The author argues that smartphones should be banned at school.
+        - The author argues that smartphones should be banned from schools.
+        - The author argues that mobile phones should be banned in schools.
+        - The author argues that mobile phones should be banned at school.
+        - The author argues that mobile phones should be banned from schools.
+        - The author claims that phones should be banned in schools.
+        - The author claims that phones should be banned at school.
+        - The author claims that phones should be banned from schools.
+        - The author claims that smartphones should be banned in schools.
+        - The author claims that smartphones should be banned at school.
+        - The author claims that smartphones should be banned from schools.
+        - The author claims that mobile phones should be banned in schools.
+        - The author claims that mobile phones should be banned at school.
+        - The author claims that mobile phones should be banned from schools.
+        - The author contends that phones should be banned in schools.
+        - The author contends that phones should be banned at school.
+        - The author contends that phones should be banned from schools.
+        - The author contends that smartphones should be banned in schools.
+        - The author contends that smartphones should be banned at school.
+        - The author contends that smartphones should be banned from schools.
+        - The author contends that mobile phones should be banned in schools.
+        - The author contends that mobile phones should be banned at school.
+        - The author contends that mobile phones should be banned from schools.
+        - The author maintains that phones should be banned in schools.
+        - The author maintains that phones should be banned at school.
+        - The author maintains that phones should be banned from schools.
+        - The author maintains that smartphones should be banned in schools.
+        - The author maintains that smartphones should be banned at school.
+        - The author maintains that smartphones should be banned from schools.
+        - The author maintains that mobile phones should be banned in schools.
+        - The author maintains that mobile phones should be banned at school.
+        - The author maintains that mobile phones should be banned from schools.
+        - The author believes that phones should be banned in schools.
+        - The author believes that phones should be banned at school.
+        - The author believes that phones should be banned from schools.
+        - The author believes that smartphones should be banned in schools.
+        - The author believes that smartphones should be banned at school.
+        - The author believes that smartphones should be banned from schools.
+        - The author believes that mobile phones should be banned in schools.
+        - The author believes that mobile phones should be banned at school.
+        - The author believes that mobile phones should be banned from schools.
+        - The author suggests that phones should be banned in schools.
+        - The author suggests that phones should be banned at school.
+        - The author suggests that phones should be banned from schools.
+        - The author suggests that smartphones should be banned in schools.
+        - The author suggests that smartphones should be banned at school.
+        - The author suggests that smartphones should be banned from schools.
+        - The author suggests that mobile phones should be banned in schools.
+        - The author suggests that mobile phones should be banned at school.
+        - The author suggests that mobile phones should be banned from schools.
+        - The author asserts that phones should be banned in schools.
+        - The author asserts that phones should be banned at school.
+        - The author asserts that phones should be banned from schools.
+        - The author asserts that smartphones should be banned in schools.
+        - The author asserts that smartphones should be banned at school.
+        - The author asserts that smartphones should be banned from schools.
+        - The author asserts that mobile phones should be banned in schools.
+        - The author asserts that mobile phones should be banned at school.
+        - The author asserts that mobile phones should be banned from schools.
+        - The writer argues that phones should be banned in schools.
+        - The writer argues that phones should be banned at school.
+        - The writer argues that phones should be banned from schools.
+        - The writer argues that smartphones should be banned in schools.
+        - The writer argues that smartphones should be banned at school.
+        - The writer argues that smartphones should be banned from schools.
+        - The writer argues that mobile phones should be banned in schools.
+        - The writer argues that mobile phones should be banned at school.
+        - The writer argues that mobile phones should be banned from schools.
+        - The writer claims that phones should be banned in schools.
+        - The writer claims that phones should be banned at school.
+        - The writer claims that phones should be banned from schools.
+        - The writer claims that smartphones should be banned in schools.
+        - The writer claims that smartphones should be banned at school.
+        - The writer claims that smartphones should be banned from schools.
+        - The writer claims that mobile phones should be banned in schools.
+        - The writer claims that mobile phones should be banned at school.
+        - The writer claims that mobile phones should be banned from schools.
+        - The writer contends that phones should be banned in schools.
+        - The writer contends that phones should be banned at school.
+        - The writer contends that phones should be banned from schools.
+        - The writer contends that smartphones should be banned in schools.
+        - The writer contends that smartphones should be banned at school.
+        - The writer contends that smartphones should be banned from schools.
+        - The writer contends that mobile phones should be banned in schools.
+        - The writer contends that mobile phones should be banned at school.
+        - The writer contends that mobile phones should be banned from schools.
+        - The writer maintains that phones should be banned in schools.
+        - The writer maintains that phones should be banned at school.
+        - The writer maintains that phones should be banned from schools.
+        - The writer maintains that smartphones should be banned in schools.
+        - The writer maintains that smartphones should be banned at school.
+        - The writer maintains that smartphones should be banned from schools.
+        - The writer maintains that mobile phones should be banned in schools.
+        - The writer maintains that mobile phones should be banned at school.
+        - The writer maintains that mobile phones should be banned from schools.
+        - The writer believes that phones should be banned in schools.
+        - The writer believes that phones should be banned at school.
+        - The writer believes that phones should be banned from schools.
+        - The writer believes that smartphones should be banned in schools.
+        - The writer believes that smartphones should be banned at school.
+        - The writer believes that smartphones should be banned from schools.
+        - The writer believes that mobile phones should be banned in schools.
+        - The writer believes that mobile phones should be banned at school.
+        - The writer believes that mobile phones should be banned from schools.
+        - The writer suggests that phones should be banned in schools.
+        - The writer suggests that phones should be banned at school.
+        - The writer suggests that phones should be banned from schools.
+        - The writer suggests that smartphones should be banned in schools.
+        - The writer suggests that smartphones should be banned at school.
+        - The writer suggests that smartphones should be banned from schools.
+        - The writer suggests that mobile phones should be banned in schools.
+        - The writer suggests that mobile phones should be banned at school.
+        - The writer suggests that mobile phones should be banned from schools.
+        - The writer asserts that phones should be banned in schools.
+        - The writer asserts that phones should be banned at school.
+        - The writer asserts that phones should be banned from schools.
+        - The writer asserts that smartphones should be banned in schools.
+        - The writer asserts that smartphones should be banned at school.
+        - The writer asserts that smartphones should be banned from schools.
+        - The writer asserts that mobile phones should be banned in schools.
+        - The writer asserts that mobile phones should be banned at school.
+        - The writer asserts that mobile phones should be banned from schools.
+        - The author suggests banning phones in schools.
+        - The author suggests banning smartphones in schools.
+        - The author argues for banning phones in schools.
+        - The author argues for banning smartphones in schools.
+        - The writer suggests banning phones in schools.
+        - The writer suggests banning smartphones in schools.
+        - The writer argues for banning phones in schools.
+        - The writer argues for banning smartphones in schools.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The author suggests to ban phones in schools.
+        feedback_vi: Suggest không đi với to V - suggests banning hoặc suggests that phones should be banned.
+        error_tag: verb_pattern
+      - answer: The author argue that phones should be banned in schools.
+        feedback_vi: Chủ ngữ the author số ít - argues.
+        error_tag: subject_verb_agreement
+      - answer: The author argues that phones should ban in schools.
+        feedback_vi: Điện thoại "bị" cấm - cần bị động should be banned.
+        error_tag: passive
+    explanation:
+      vi: The author argues / claims / believes that phones should be banned… hoặc The author suggests banning phones…. Chú ý bị động should be banned.
+    display_answer: The author argues that phones should be banned in schools.
+
+  - key: en:exercise:crw-review-translate-to-vi-sweeping
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 5
+    item: en:item:crw-sweeping-statement
+    prompt:
+      source_text: That is a sweeping statement - not every teenager is addicted to their phone.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đó là một nhận định quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định quá chung chung - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định quá chung chung - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định quá chung chung - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định quá chung chung - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định quá chung chung, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định quá chung chung, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định quá chung chung, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định quá chung chung, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định quá chung chung, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một khẳng định quá chung chung, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một nhận định vơ đũa cả nắm, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một câu nói vơ đũa cả nắm, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một sự khái quát quá rộng, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đó là một tuyên bố quá chung chung, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định quá chung chung - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định quá chung chung - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định quá chung chung - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định quá chung chung - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định quá chung chung, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định quá chung chung, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định quá chung chung, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định quá chung chung, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định quá chung chung, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một khẳng định quá chung chung, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một nhận định vơ đũa cả nắm, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một câu nói vơ đũa cả nắm, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một sự khái quát quá rộng, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung - không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung - không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung - không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung - không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung, không phải thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung, không phải thanh thiếu niên nào cũng nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung, không phải tất cả thiếu niên đều nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung, không phải tất cả thanh thiếu niên đều nghiện điện thoại.
+        - Đây là một tuyên bố quá chung chung, không phải trẻ vị thành niên nào cũng nghiện điện thoại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đó là một câu nói quét sạch - không phải thiếu niên nào cũng nghiện điện thoại.
+        feedback_vi: Sweeping ở đây là "chung chung, vơ đũa cả nắm", không dịch sát "quét sạch".
+        error_tag: literal_translation
+      - answer: Đó là một nhận định quá chung chung - thiếu niên nào cũng nghiện điện thoại.
+        feedback_vi: Not every… là "không phải… nào cũng"; câu dịch đã đảo ngược ý.
+        error_tag: meaning
+    explanation:
+      vi: A sweeping statement = nhận định quá chung chung, vơ đũa cả nắm. Not every teenager is… = không phải thiếu niên nào cũng….
+    display_answer: Đó là một nhận định quá chung chung - không phải thiếu niên nào cũng nghiện điện thoại.
+
+  # ---------------- application ----------------
+  - key: en:exercise:crw-review-order-could-be-argued
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-it-could-be-argued-that
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Có thể lập luận rằng một lệnh cấm sẽ giúp học sinh tập trung.\""
+      tokens:
+        - { id: r-help, text: would help }
+        - { id: r-argue, text: argue }
+        - { id: r-ban, text: that a ban }
+        - { id: r-it, text: It could be }
+        - { id: r-stud, text: students concentrate }
+        - { id: r-argued, text: argued }
+    answer:
+      orders:
+        - [r-it, r-argued, r-ban, r-help, r-stud]
+    explanation:
+      vi: It could be argued that… - bị động cần quá khứ phân từ argued. Argue là token thừa. Help + tân ngữ + V nguyên mẫu - help students concentrate.
+    display_answer: It could be argued that a ban would help students concentrate.
+
+  - key: en:exercise:crw-review-mcq-rebuttal
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-this-view-overlooks
+    prompt:
+      stem: Bạn viết đoạn phản hồi bài xã luận. Câu nào nêu phản đề rồi bác bỏ đúng chuẩn bài luận C2?
+      stem_lang: vi
+      options:
+        - { id: n8r, text: "It could be argued that phones distract students. However, this view overlooks the fact that phones can also be powerful learning tools.", lang: en }
+        - { id: h4e, text: "The author only says that because he is old and hates technology.", lang: en }
+        - { id: z6o, text: "So the author wants children to have no technology at all?", lang: en }
+        - { id: b3l, text: "It could be argue that phones distract students, but in other hand they are useful.", lang: en }
+    answer:
+      correct_option_id: n8r
+    explanation:
+      vi: Câu đúng nêu phản đề khách quan rồi bác bỏ bằng điều bị bỏ qua. Các câu khác là ad hominem, straw man, hoặc sai ngữ pháp (could be argue, in other hand thay cho on the other hand).
+    display_answer: "It could be argued that phones distract students. However, this view overlooks the fact that phones can also be powerful learning tools."
+
+  - key: en:exercise:crw-review-mcq-newsletter
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-would-appreciate-it-if
+    prompt:
+      stem: Bạn viết bản tin trang trọng gửi phụ huynh về quy định điện thoại. Câu nào phù hợp và không có lỗi?
+      stem_lang: vi
+      options:
+        - { id: a9t, text: "We would appreciate it if parents could ensure that phones are switched off during lessons.", lang: en }
+        - { id: d5k, text: "Hey parents, make sure your kids' phones are, like, off in class, OK?", lang: en }
+        - { id: l7w, text: "We would appreciate if parents could ensure that phones are switched off during lessons.", lang: en }
+        - { id: q1j, text: "It is recommended that parents ensures that phones are switched off during lessons.", lang: en }
+    answer:
+      correct_option_id: a9t
+    explanation:
+      vi: Câu đúng lịch sự, trang trọng và có it sau appreciate. Câu thứ hai quá thân mật; câu thứ ba thiếu it; câu cuối sai giả định cách - sau It is recommended that dùng động từ nguyên mẫu (parents ensure).
+    display_answer: "We would appreciate it if parents could ensure that phones are switched off during lessons."
+
+  - key: en:exercise:crw-review-translate-on-balance
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-on-balance
+    prompt:
+      source_text: Xét về tổng thể, bằng chứng chưa đủ mạnh để ủng hộ một lệnh cấm hoàn toàn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - On balance, the evidence is not strong enough to support a complete ban.
+        - On balance, the evidence is not strong enough to support a total ban.
+        - On balance, the evidence is not strong enough to support an outright ban.
+        - On balance, the evidence is not strong enough to support a full ban.
+        - On balance, the evidence is not strong enough to justify a complete ban.
+        - On balance, the evidence is not strong enough to justify a total ban.
+        - On balance, the evidence is not strong enough to justify an outright ban.
+        - On balance, the evidence is not strong enough to justify a full ban.
+        - On balance, the evidence is not sufficient to support a complete ban.
+        - On balance, the evidence is not sufficient to support a total ban.
+        - On balance, the evidence is not sufficient to support an outright ban.
+        - On balance, the evidence is not sufficient to support a full ban.
+        - On balance, the evidence is not sufficient to justify a complete ban.
+        - On balance, the evidence is not sufficient to justify a total ban.
+        - On balance, the evidence is not sufficient to justify an outright ban.
+        - On balance, the evidence is not sufficient to justify a full ban.
+        - On balance, the evidence is insufficient to support a complete ban.
+        - On balance, the evidence is insufficient to support a total ban.
+        - On balance, the evidence is insufficient to support an outright ban.
+        - On balance, the evidence is insufficient to support a full ban.
+        - On balance, the evidence is insufficient to justify a complete ban.
+        - On balance, the evidence is insufficient to justify a total ban.
+        - On balance, the evidence is insufficient to justify an outright ban.
+        - On balance, the evidence is insufficient to justify a full ban.
+        - On balance, the evidence is not convincing enough to support a complete ban.
+        - On balance, the evidence is not convincing enough to support a total ban.
+        - On balance, the evidence is not convincing enough to support an outright ban.
+        - On balance, the evidence is not convincing enough to support a full ban.
+        - On balance, the evidence is not convincing enough to justify a complete ban.
+        - On balance, the evidence is not convincing enough to justify a total ban.
+        - On balance, the evidence is not convincing enough to justify an outright ban.
+        - On balance, the evidence is not convincing enough to justify a full ban.
+        - On balance, the evidence is too weak to support a complete ban.
+        - On balance, the evidence is too weak to support a total ban.
+        - On balance, the evidence is too weak to support an outright ban.
+        - On balance, the evidence is too weak to support a full ban.
+        - On balance, the evidence is too weak to justify a complete ban.
+        - On balance, the evidence is too weak to justify a total ban.
+        - On balance, the evidence is too weak to justify an outright ban.
+        - On balance, the evidence is too weak to justify a full ban.
+        - Overall, the evidence is not strong enough to support a complete ban.
+        - Overall, the evidence is not strong enough to support a total ban.
+        - Overall, the evidence is not strong enough to support an outright ban.
+        - Overall, the evidence is not strong enough to support a full ban.
+        - Overall, the evidence is not strong enough to justify a complete ban.
+        - Overall, the evidence is not strong enough to justify a total ban.
+        - Overall, the evidence is not strong enough to justify an outright ban.
+        - Overall, the evidence is not strong enough to justify a full ban.
+        - Overall, the evidence is not sufficient to support a complete ban.
+        - Overall, the evidence is not sufficient to support a total ban.
+        - Overall, the evidence is not sufficient to support an outright ban.
+        - Overall, the evidence is not sufficient to support a full ban.
+        - Overall, the evidence is not sufficient to justify a complete ban.
+        - Overall, the evidence is not sufficient to justify a total ban.
+        - Overall, the evidence is not sufficient to justify an outright ban.
+        - Overall, the evidence is not sufficient to justify a full ban.
+        - Overall, the evidence is insufficient to support a complete ban.
+        - Overall, the evidence is insufficient to support a total ban.
+        - Overall, the evidence is insufficient to support an outright ban.
+        - Overall, the evidence is insufficient to support a full ban.
+        - Overall, the evidence is insufficient to justify a complete ban.
+        - Overall, the evidence is insufficient to justify a total ban.
+        - Overall, the evidence is insufficient to justify an outright ban.
+        - Overall, the evidence is insufficient to justify a full ban.
+        - Overall, the evidence is not convincing enough to support a complete ban.
+        - Overall, the evidence is not convincing enough to support a total ban.
+        - Overall, the evidence is not convincing enough to support an outright ban.
+        - Overall, the evidence is not convincing enough to support a full ban.
+        - Overall, the evidence is not convincing enough to justify a complete ban.
+        - Overall, the evidence is not convincing enough to justify a total ban.
+        - Overall, the evidence is not convincing enough to justify an outright ban.
+        - Overall, the evidence is not convincing enough to justify a full ban.
+        - Overall, the evidence is too weak to support a complete ban.
+        - Overall, the evidence is too weak to support a total ban.
+        - Overall, the evidence is too weak to support an outright ban.
+        - Overall, the evidence is too weak to support a full ban.
+        - Overall, the evidence is too weak to justify a complete ban.
+        - Overall, the evidence is too weak to justify a total ban.
+        - Overall, the evidence is too weak to justify an outright ban.
+        - Overall, the evidence is too weak to justify a full ban.
+        - All things considered, the evidence is not strong enough to support a complete ban.
+        - All things considered, the evidence is not strong enough to support a total ban.
+        - All things considered, the evidence is not strong enough to support an outright ban.
+        - All things considered, the evidence is not strong enough to support a full ban.
+        - All things considered, the evidence is not strong enough to justify a complete ban.
+        - All things considered, the evidence is not strong enough to justify a total ban.
+        - All things considered, the evidence is not strong enough to justify an outright ban.
+        - All things considered, the evidence is not strong enough to justify a full ban.
+        - All things considered, the evidence is not sufficient to support a complete ban.
+        - All things considered, the evidence is not sufficient to support a total ban.
+        - All things considered, the evidence is not sufficient to support an outright ban.
+        - All things considered, the evidence is not sufficient to support a full ban.
+        - All things considered, the evidence is not sufficient to justify a complete ban.
+        - All things considered, the evidence is not sufficient to justify a total ban.
+        - All things considered, the evidence is not sufficient to justify an outright ban.
+        - All things considered, the evidence is not sufficient to justify a full ban.
+        - All things considered, the evidence is insufficient to support a complete ban.
+        - All things considered, the evidence is insufficient to support a total ban.
+        - All things considered, the evidence is insufficient to support an outright ban.
+        - All things considered, the evidence is insufficient to support a full ban.
+        - All things considered, the evidence is insufficient to justify a complete ban.
+        - All things considered, the evidence is insufficient to justify a total ban.
+        - All things considered, the evidence is insufficient to justify an outright ban.
+        - All things considered, the evidence is insufficient to justify a full ban.
+        - All things considered, the evidence is not convincing enough to support a complete ban.
+        - All things considered, the evidence is not convincing enough to support a total ban.
+        - All things considered, the evidence is not convincing enough to support an outright ban.
+        - All things considered, the evidence is not convincing enough to support a full ban.
+        - All things considered, the evidence is not convincing enough to justify a complete ban.
+        - All things considered, the evidence is not convincing enough to justify a total ban.
+        - All things considered, the evidence is not convincing enough to justify an outright ban.
+        - All things considered, the evidence is not convincing enough to justify a full ban.
+        - All things considered, the evidence is too weak to support a complete ban.
+        - All things considered, the evidence is too weak to support a total ban.
+        - All things considered, the evidence is too weak to support an outright ban.
+        - All things considered, the evidence is too weak to support a full ban.
+        - All things considered, the evidence is too weak to justify a complete ban.
+        - All things considered, the evidence is too weak to justify a total ban.
+        - All things considered, the evidence is too weak to justify an outright ban.
+        - All things considered, the evidence is too weak to justify a full ban.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: On balance, the evidences are not strong enough to support a complete ban.
+        feedback_vi: Evidence không đếm được - the evidence is.
+        error_tag: evidence_uncountable
+      - answer: In balance, the evidence is not strong enough to support a complete ban.
+        feedback_vi: Cụm cố định là on balance.
+        error_tag: preposition
+      - answer: On balance, the evidence is not enough strong to support a complete ban.
+        feedback_vi: Enough đứng sau tính từ - strong enough.
+        error_tag: word_order
+    explanation:
+      vi: On balance mở câu kết luận; the evidence (không đếm được) is not strong enough to support / justify…; strong enough - enough đứng sau tính từ.
+    display_answer: On balance, the evidence is not strong enough to support a complete ban.

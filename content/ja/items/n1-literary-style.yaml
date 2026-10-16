@@ -1,0 +1,554 @@
+# Học liệu unit "Văn viết và lối nói văn chương" (JLPT N1). Romaji theo Hepburn, chỉ để tham khảo; reading là cách đọc kana của từ có kanji.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: ～んがため(に), ～べく =================
+  - key: ja:item:n1-u2-kokorozasu
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 志す
+      reading: こころざす
+      romanization: kokorozasu
+      pos: động từ
+    back:
+      meaning:
+        vi: lập chí, quyết tâm theo đuổi (một nghề, một con đường); ～を志す
+      examples:
+        - target: 彼は幼い頃から医者を志していた。
+          translation:
+            vi: Từ nhỏ anh ấy đã quyết chí trở thành bác sĩ.
+      pronunciation_note:
+        vi: Đọc "cô-cô-rô-da-xư", trọng âm không rơi vào ざ.
+      confusion:
+        vi: 志す là động từ (～を志す); 志 (こころざし) là danh từ "chí hướng". Viết 医者を志しする là sai - chỉ cần 志す.
+
+  - key: ja:item:n1-u2-higan
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 悲願
+      reading: ひがん
+      romanization: higan
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyện vọng tha thiết, ước nguyện ấp ủ bấy lâu; 長年の悲願
+      examples:
+        - target: 初優勝は、この町の人々の長年の悲願だった。
+          translation:
+            vi: Chức vô địch đầu tiên là ước nguyện bao năm của người dân thị trấn này.
+      pronunciation_note:
+        vi: が có dấu đục - "hi-gan". ひかん (悲観) là "bi quan".
+      confusion:
+        vi: 悲願 không mang nghĩa buồn - chữ 悲 ở đây chỉ sự tha thiết. 願望 là mong muốn nói chung; 悲願 là ước nguyện lớn, chờ đợi lâu, thường của cả tập thể.
+
+  - key: ja:item:n1-u2-honsou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 奔走する
+      reading: ほんそうする
+      romanization: honsou suru
+      pos: động từ する
+    back:
+      meaning:
+        vi: bôn ba, chạy vạy khắp nơi (để lo việc gì); 資金集めに奔走する
+      examples:
+        - target: 一刻も早く被災地に物資を届けるべく、ボランティアが奔走している。
+          translation:
+            vi: Để đưa hàng cứu trợ tới vùng thiên tai sớm nhất có thể, các tình nguyện viên đang chạy vạy khắp nơi.
+      pronunciation_note:
+        vi: そう là âm dài - "hôn-xô-ô".
+      confusion:
+        vi: 奔走 là chạy vạy lo việc (nghĩa bóng), không phải chạy bằng chân. Chạy nhanh là 走る / 疾走する.
+
+  - key: ja:item:n1-u2-gram-ngatame
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V(thể ない bỏ ない) + んがため(に) / んがための + N
+      romanization: n ga tame ni
+      pos: chính vì muốn... (văn viết)
+    back:
+      meaning:
+        vi: '"Chính vì muốn...", "nhằm mục đích..." - nhấn mạnh mục đích lớn, quyết tâm cao. Văn viết, cổ. 勝たんがため; する → せんがため; 来る → 来(こ)んがため.'
+      examples:
+        - target: 家族を養わんがため、彼は昼も夜も働き続けた。
+          translation:
+            vi: Chính vì muốn nuôi gia đình, anh ấy đã làm việc ngày đêm không nghỉ.
+      pronunciation_note:
+        vi: ん ở đây là trợ động từ cổ (= う / よう, ý chí), đọc liền với động từ - "ka-tan-ga-ta-mê".
+      confusion:
+        vi: Chia từ thể ない - 勝つ → 勝たない → 勝たんがため (không phải 勝つんがため). Vế sau không dùng mệnh lệnh, nhờ vả.
+
+  - key: ja:item:n1-u2-gram-beku
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: V(thể từ điển) + べく
+      romanization: beku
+      pos: để, nhằm (văn viết)
+    back:
+      meaning:
+        vi: '"Để...", "nhằm..." - mục đích có chủ ý, sắc thái trang trọng, hay gặp trong tin tức và văn bản. する → すべく / するべく.'
+      examples:
+        - target: 事故の原因を究明すべく、調査委員会が設置された。
+          translation:
+            vi: Để làm rõ nguyên nhân vụ tai nạn, một ủy ban điều tra đã được thành lập.
+      pronunciation_note:
+        vi: Đọc "bê-cư".
+      confusion:
+        vi: べく (để mà) khác べき (nên). Vế sau của べく không là mệnh lệnh, nhờ vả, rủ rê (～てください, ～ましょう). Động từ trước べく phải là hành động có chủ ý.
+
+  # ================= bài 2: ～ともなると / ～ともなれば, ～ともあろう =================
+  - key: ja:item:n1-u2-juuseki
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 重責
+      reading: じゅうせき
+      romanization: juuseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: trọng trách, trách nhiệm nặng nề; 重責を担う / 重責を果たす
+      examples:
+        - target: 彼は代表としての重責を立派に果たした。
+          translation:
+            vi: Anh ấy đã hoàn thành xuất sắc trọng trách của người đại diện.
+      pronunciation_note:
+        vi: じゅう là âm dài - "ju-u-xê-ki".
+      confusion:
+        vi: Đi với 担う (gánh vác) và 果たす (hoàn thành). 重責をする là sai.
+
+  - key: ja:item:n1-u2-kanrishoku
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 管理職
+      reading: かんりしょく
+      romanization: kanrishoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: chức quản lý (trưởng phòng trở lên)
+      examples:
+        - target: 管理職ともなれば、部下の失敗にも責任を負わなければならない。
+          translation:
+            vi: Đã lên chức quản lý thì phải chịu trách nhiệm cả về thất bại của cấp dưới.
+      pronunciation_note:
+        vi: Đọc "can-ri-sô-cư"; しょく không có âm dài.
+      confusion:
+        vi: 管理職 là vị trí quản lý trong công ty; 管理人 là người quản lý toà nhà, chung cư.
+
+  - key: ja:item:n1-u2-shiwasu
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 師走
+      reading: しわす
+      romanization: shiwasu
+      pos: danh từ
+    back:
+      meaning:
+        vi: tháng Chạp (tên gọi cổ của tháng 12), mùa bận rộn cuối năm
+      examples:
+        - target: 師走に入り、駅前は買い物客でにぎわっている。
+          translation:
+            vi: Bước vào tháng Chạp, khu trước nhà ga nhộn nhịp khách mua sắm.
+      pronunciation_note:
+        vi: Đọc đặc biệt "si-oa-xư" - không đọc theo âm Hán của từng chữ.
+      confusion:
+        vi: Hay gặp trong văn viết, thư từ và tin tức mùa cuối năm. Hội thoại thường ngày nói 12月 hoặc 年末.
+
+  - key: ja:item:n1-u2-jikaku
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 自覚
+      reading: じかく
+      romanization: jikaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý thức (về vai trò, trách nhiệm của mình), tự nhận thức; ～としての自覚を持つ
+      examples:
+        - target: 社会人としての自覚を持って行動しなさい。
+          translation:
+            vi: Hãy hành động với ý thức của một người đã đi làm.
+      pronunciation_note:
+        vi: Đọc "ji-ca-cư".
+      confusion:
+        vi: 自覚 là ý thức về bản thân mình (vai trò, bệnh tình...); 意識 là ý thức nói chung. 自覚症状 - triệu chứng tự thấy được.
+
+  - key: ja:item:n1-u2-gram-tomonaruto
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N / V(thể từ điển) + ともなると / ともなれば
+      romanization: tomo naru to / tomo nareba
+      pos: một khi đã đến mức...
+    back:
+      meaning:
+        vi: '"Một khi đã là / đã đến (mức, thời điểm, vị trí)... thì đương nhiên..." - khi lên tới một mức đặc biệt, tình hình cũng khác hẳn. 12月ともなると; 社長ともなれば; 海外で暮らすともなると.'
+      examples:
+        - target: 12月ともなると、街はどこも慌ただしくなる。
+          translation:
+            vi: Cứ đến tháng 12 là phố phường đâu đâu cũng tất bật.
+      pronunciation_note:
+        vi: Đọc liền "tô-mô-na-ru-tô"; も nhấn nhẹ.
+      confusion:
+        vi: Danh từ trước phải là mức độ, thời điểm, chức vị nổi bật (社長, 大学4年生, 12月). Không dùng cho việc ngẫu nhiên một lần - 明日ともなると、雨が降る là sai. Khác ～となると (nếu thế thì) ở chỗ ともなると nhấn mạnh "đã lên tới mức ấy".
+
+  - key: ja:item:n1-u2-gram-tomoarou
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags: [grammar]
+    front:
+      text: N + ともあろう + N(người, tổ chức)
+      romanization: tomo arou
+      pos: đường đường là... (mà lại)
+    back:
+      meaning:
+        vi: '"Đường đường là... mà lại..." - phê phán người có địa vị, uy tín đã làm điều không xứng. 教師ともあろう者が～とは.'
+      examples:
+        - target: 教師ともあろう者が、生徒の前でそんな言葉を使うとは。
+          translation:
+            vi: Đường đường là giáo viên mà lại dùng lời lẽ như thế trước mặt học sinh.
+      pronunciation_note:
+        vi: Đọc "tô-mô-a-rô-ô".
+      confusion:
+        vi: ともあろう luôn mang ý chê trách, hay kết thúc bằng ～とは / ～なんて. ともなると chỉ nhận định trung tính "đã đến mức ấy thì...".
+
+  # ================= bài 3: ～たるもの, ～なりに =================
+  - key: ja:item:n1-u2-hinkaku
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 品格
+      reading: ひんかく
+      romanization: hinkaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: phẩm cách, tư cách đáng trọng
+      examples:
+        - target: 横綱には強さだけでなく品格も求められる。
+          translation:
+            vi: Ở một Yokozuna, người ta đòi hỏi không chỉ sức mạnh mà cả phẩm cách.
+      pronunciation_note:
+        vi: Đọc "hin-ca-cư".
+      confusion:
+        vi: 品格 là phẩm giá của con người, tổ chức; 品質 là chất lượng sản phẩm. 品格がある / 品格に欠ける.
+
+  - key: ja:item:n1-u2-mohan
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: 模範
+      reading: もはん
+      romanization: mohan
+      pos: danh từ
+    back:
+      meaning:
+        vi: tấm gương, khuôn mẫu; ～の模範となる / 模範を示す
+      examples:
+        - target: 教師たるもの、生徒の模範とならなければならない。
+          translation:
+            vi: Đã là giáo viên thì phải trở thành tấm gương cho học sinh.
+      pronunciation_note:
+        vi: Đọc "mô-han".
+      confusion:
+        vi: Trở thành tấm gương - 模範となる / 模範になる. 見本 là mẫu vật (hàng mẫu), không dùng cho người theo nghĩa đạo đức.
+
+  - key: ja:item:n1-u2-mijuku
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: 未熟
+      reading: みじゅく
+      romanization: mijuku
+      pos: tính từ な
+    back:
+      meaning:
+        vi: non nớt, còn non tay, chưa thuần thục
+      examples:
+        - target: 未熟者ですが、私なりに精一杯努力してまいります。
+          translation:
+            vi: Tôi còn non kém, nhưng sẽ cố gắng hết sức theo khả năng của mình.
+      pronunciation_note:
+        vi: じゅ là âm ngắn - "mi-ju-cư".
+      confusion:
+        vi: 未熟者ですが - câu khiêm tốn quen thuộc khi nhận chức, ra mắt. Nói người khác 未熟だ là nhận xét nặng.
+
+  - key: ja:item:n1-u2-gram-tarumono
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + たるもの(は) / たる者
+      romanization: taru mono
+      pos: đã là... thì phải
+    back:
+      meaning:
+        vi: '"Đã là (một người ở vai trò, địa vị)... thì phải..." - nêu chuẩn mực, đạo lý. Vế sau thường là ～べきだ, ～なければならない, ～てはならない. 教師たるもの; 医者たる者.'
+      examples:
+        - target: 医者たる者、患者の秘密を他人に漏らしてはならない。
+          translation:
+            vi: Đã là bác sĩ thì không được tiết lộ bí mật của bệnh nhân cho người khác.
+      pronunciation_note:
+        vi: Đọc "ta-ru-mô-nô".
+      confusion:
+        vi: Danh từ trước たるもの là vai trò có chuẩn mực (教師, 医者, 政治家, 親). Vế sau không kể sự thật thông thường - 教師たるもの、毎朝8時に来る là lạc nghĩa.
+
+  - key: ja:item:n1-u2-gram-narini
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N / A / V(thể thường) + なりに / なりの + N
+      romanization: nari ni / nari no
+      pos: theo cách riêng của, trong giới hạn của
+    back:
+      meaning:
+        vi: '"Theo cách (khả năng, mức độ) của riêng ~" - công nhận ai đó làm hết sức trong giới hạn của mình. 子どもなりに; 私なりの考え; 狭いなりに.'
+      examples:
+        - target: 子どもは子どもなりに、親のことを心配している。
+          translation:
+            vi: Trẻ con cũng lo cho bố mẹ theo cách của trẻ con.
+      pronunciation_note:
+        vi: Đọc "na-ri-ni".
+      confusion:
+        vi: なりに hàm ý "chưa hoàn hảo nhưng" - dùng cho bản thân hoặc người ngang / dưới. Nói 先生なりに頑張った với thầy cô là thất lễ. なりに + động từ; なりの + danh từ.
+
+  # ================= bài 4: ～をものともせず, ～をよそに =================
+  - key: ja:item:n1-u2-gyakkyou
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 逆境
+      reading: ぎゃっきょう
+      romanization: gyakkyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghịch cảnh, hoàn cảnh khó khăn
+      examples:
+        - target: 彼女は逆境に負けず、会社を立て直した。
+          translation:
+            vi: Cô ấy không khuất phục trước nghịch cảnh và đã vực dậy công ty.
+      pronunciation_note:
+        vi: Có âm ngắt っ và きょう dài - "gyak-kyô-ô".
+      confusion:
+        vi: 逆境 là hoàn cảnh bất lợi kéo dài; 困難 là khó khăn nói chung. Thường đi với 逆境に負けない / 逆境を乗り越える / 逆境に強い.
+
+  - key: ja:item:n1-u2-kenen
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 懸念
+      reading: けねん
+      romanization: kenen
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: mối lo ngại, quan ngại; ～を懸念する / 懸念がある
+      examples:
+        - target: 専門家は景気の悪化を懸念している。
+          translation:
+            vi: Các chuyên gia đang lo ngại kinh tế suy thoái.
+      pronunciation_note:
+        vi: Đọc "kê-nên" - không phải けんねん.
+      confusion:
+        vi: 懸念 là từ trang trọng, dùng trong tin tức, văn bản; nói chuyện thường ngày dùng 心配.
+
+  - key: ja:item:n1-u2-kakan
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: 果敢
+      reading: かかん
+      romanization: kakan
+      pos: tính từ な
+    back:
+      meaning:
+        vi: quả cảm, mạnh dạn xông pha; 果敢に挑む
+      examples:
+        - target: 選手たちは強豪相手に果敢に挑んだ。
+          translation:
+            vi: Các cầu thủ đã quả cảm đương đầu với đối thủ mạnh.
+      pronunciation_note:
+        vi: Đọc "ca-can".
+      confusion:
+        vi: 果敢 là dám làm, không do dự (khen ngợi); 無謀 (むぼう) là liều lĩnh thiếu suy nghĩ (chê).
+
+  - key: ja:item:n1-u2-gram-monotomosezu
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + をものともせず(に)
+      romanization: o mono tomo sezu
+      pos: bất chấp, không nao núng trước
+    back:
+      meaning:
+        vi: '"Bất chấp (khó khăn, nguy hiểm), không coi... ra gì" - ca ngợi người vượt qua trở ngại. けがをものともせず; 嵐をものともせずに.'
+      examples:
+        - target: 彼は足のけがをものともせず、最後まで走り抜いた。
+          translation:
+            vi: Bất chấp vết thương ở chân, anh ấy đã chạy đến cùng.
+      pronunciation_note:
+        vi: Đọc "ô-mô-nô-tô-mô-xê-du".
+      confusion:
+        vi: Thường kể về người khác với sắc thái khâm phục; nói về chính mình nghe tự khen. Danh từ trước phải là trở ngại (けが, 嵐, 批判), không phải điều tốt.
+
+  - key: ja:item:n1-u2-gram-wo-yoso-ni
+    type: grammar_point
+    level: n1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: N + をよそに
+      romanization: o yoso ni
+      pos: mặc kệ, phớt lờ
+    back:
+      meaning:
+        vi: '"Mặc kệ, bỏ ngoài tai (sự lo lắng, phản đối, kỳ vọng của người xung quanh)". 親の心配をよそに; 住民の反対をよそに.'
+      examples:
+        - target: 親の心配をよそに、息子は一人で世界一周の旅に出た。
+          translation:
+            vi: Mặc cho bố mẹ lo lắng, cậu con trai đã một mình lên đường đi vòng quanh thế giới.
+      pronunciation_note:
+        vi: Đọc "ô-yô-xô-ni".
+      confusion:
+        vi: をよそに nói về thái độ với người xung quanh (心配, 反対, 期待), thường có ý phê phán. をものともせず nói về trở ngại khách quan (けが, 嵐) và mang ý khen.
+
+  # ================= bài 5: ôn tập - đọc đoạn văn tiểu sử =================
+  - key: ja:item:n1-u2-shougai
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 生涯
+      reading: しょうがい
+      romanization: shougai
+      pos: danh từ
+    back:
+      meaning:
+        vi: cả cuộc đời, suốt đời; 生涯を通じて / 生涯独身
+      examples:
+        - target: 彼女は生涯を子どもの教育にささげた。
+          translation:
+            vi: Bà đã dâng hiến cả cuộc đời cho việc giáo dục trẻ em.
+      pronunciation_note:
+        vi: しょう là âm dài - "sô-ô-gai".
+      confusion:
+        vi: 生涯 (cả đời) đồng âm với 障害 (chướng ngại, khuyết tật). 一生 là cách nói thường ngày; 生涯 trang trọng hơn.
+
+  - key: ja:item:n1-u2-shinnen
+    type: vocab
+    level: n1
+    difficulty: 3
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 信念
+      reading: しんねん
+      romanization: shinnen
+      pos: danh từ
+    back:
+      meaning:
+        vi: niềm tin vững chắc, tín niệm; 信念を持つ / 信念を貫く
+      examples:
+        - target: 彼は自分の信念に従って行動した。
+          translation:
+            vi: Ông ấy đã hành động theo niềm tin của mình.
+      pronunciation_note:
+        vi: Hai âm ん liền nhau - "sin-nên". しんねん cũng là cách đọc của 新年 (năm mới).
+      confusion:
+        vi: 信念 là niềm tin, nguyên tắc sống; 信仰 là đức tin tôn giáo; 信頼 là sự tin cậy người khác.
+
+  - key: ja:item:n1-u2-tsuranuku
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 貫く
+      reading: つらぬく
+      romanization: tsuranuku
+      pos: động từ
+    back:
+      meaning:
+        vi: giữ vững đến cùng (ý chí, niềm tin); xuyên qua; 信念を貫く / 初志を貫く
+      examples:
+        - target: 祖父は医者としての信念を生涯貫いた。
+          translation:
+            vi: Ông tôi giữ vững niềm tin của người thầy thuốc suốt cả cuộc đời.
+      pronunciation_note:
+        vi: Đọc "tsư-ra-nư-cư".
+      confusion:
+        vi: 貫く là giữ trọn từ đầu đến cuối; 守る là bảo vệ, tuân thủ (約束を守る). 信念を貫く tự nhiên hơn 信念を続ける.
+
+  - key: ja:item:n1-u2-fukutsu
+    type: vocab
+    level: n1
+    difficulty: 4
+    skill_tags: [vocabulary, reading]
+    front:
+      text: 不屈
+      reading: ふくつ
+      romanization: fukutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bất khuất, không chịu khuất phục; 不屈の精神
+      examples:
+        - target: 彼の不屈の精神は、多くの人に勇気を与えた。
+          translation:
+            vi: Tinh thần bất khuất của anh ấy đã tiếp thêm dũng khí cho nhiều người.
+      pronunciation_note:
+        vi: Đọc "phư-cư-tsư".
+      confusion:
+        vi: Thường dùng trong cụm 不屈の精神 / 不屈の闘志; hiếm khi đứng một mình làm vị ngữ.

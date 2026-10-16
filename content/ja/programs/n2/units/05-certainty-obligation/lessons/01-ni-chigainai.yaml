@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u5-ni-chigainai
+order_index: 1
+level: n2
+title:
+  vi: Chắc chắn và nguy cơ - ～に違いない, ～に相違ない, ～恐れがある
+objectives:
+  - vi: Nói điều mình tin chắc bằng ～に違いない, nhận ra dạng văn viết ～に相違ない.
+  - vi: Hiểu và dùng ～恐れがある để nói nguy cơ xấu trong tin tức, cảnh báo.
+  - vi: Nối đúng danh từ, tính từ な với hai mẫu này (bỏ だ, thêm の).
+estimated_minutes: 20
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-news-society-review]
+items:
+  - item: ja:item:n2-u5-gram-ni-chigainai
+  - item: ja:item:n2-u5-gram-ni-soui-nai
+  - item: ja:item:n2-u5-gram-osore-ga-aru
+  - item: ja:item:n2-u5-hannin
+  - item: ja:item:n2-u5-higai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "chắc chắn là anh ấy quên rồi", đọc hiểu bản tin "có nguy cơ thiệt hại lan rộng" và phân biệt sắc thái nói - viết của các mẫu phán đoán.
+  - type: explain
+    text:
+      vi: '～に違いない - "chắc chắn là". Động từ, tính từ い dùng thể thường: 来ない → 来ないに違いない, 高い → 高いに違いない. Danh từ và tính từ な bỏ だ: 犯人だ → 犯人に違いない, 静かだ → 静かに違いない. Quá khứ vẫn được: 忘れたに違いない.'
+  - type: explain
+    text:
+      vi: ～に相違ない nghĩa giống hệt nhưng là văn viết, trang trọng - gặp trong bài báo, tiểu thuyết trinh thám, giấy tờ. Khi nói chuyện hằng ngày, dùng に違いない hoặc きっと～と思う.
+  - type: explain
+    text:
+      vi: '～恐れがある - "có nguy cơ" điều xấu xảy ra. Động từ thể từ điển hoặc ない: 広がる恐れがある, 間に合わない恐れがある. Danh từ + の: 大雨の恐れ, 津波の恐れ. Văn phong thông báo, tin tức.'
+  - type: deep_explain
+    text:
+      vi: に違いない là niềm tin của người nói, có thể dựa trên trực giác; はずだ (N3) là suy luận theo lý lẽ, căn cứ ai cũng thấy. Khi bạn nói về chuyện của chính mình mà mình biết chắc thì không dùng に違いない (không nói 私は学生に違いない). 恐れがある luôn mang ý lo ngại, nên dự báo trời đẹp dùng でしょう, không dùng 恐れ.
+  - type: example
+    target: 電話に出ないから、彼はまだ寝ているに違いない。
+    target_lang: ja
+    translation:
+      vi: Không nghe máy, chắc chắn anh ấy vẫn đang ngủ.
+  - type: example
+    target: 防犯カメラの映像から見て、この男が犯人に違いない。
+    target_lang: ja
+    translation:
+      vi: Xét từ hình ảnh camera an ninh, người đàn ông này chắc chắn là thủ phạm.
+    note:
+      vi: Danh từ 犯人 nối thẳng với に違いない, không có だ.
+  - type: example
+    target: 現場に残された指紋は、容疑者のものに相違ない。
+    target_lang: ja
+    translation:
+      vi: Dấu vân tay để lại ở hiện trường chắc chắn là của nghi phạm.
+    note:
+      vi: Giọng văn báo chí, điều tra.
+  - type: example
+    target: 今夜から明日にかけて大雨の恐れがあります。被害が広がる恐れもあるので、注意してください。
+    target_lang: ja
+    translation:
+      vi: Từ tối nay đến ngày mai có nguy cơ mưa lớn. Cũng có nguy cơ thiệt hại lan rộng, xin hãy chú ý.
+  - type: common_mistake
+    wrong: あの人が犯人だに違いない。
+    right: あの人が犯人に違いない。
+    target_lang: ja
+    note:
+      vi: Danh từ và tính từ な bỏ だ trước に違いない. Người Việt hay giữ だ vì nghĩ "là" phải có.
+  - type: common_mistake
+    wrong: 明日は晴れる恐れがあります。
+    right: 明日は晴れるでしょう。
+    target_lang: ja
+    note:
+      vi: 恐れがある chỉ dùng cho điều xấu. Trời đẹp là điều tốt nên dùng でしょう hoặc 見込みです.
+  - type: common_mistake
+    wrong: 大雨が恐れがあります。
+    right: 大雨の恐れがあります。
+    target_lang: ja
+    note:
+      vi: Danh từ nối với 恐れ bằng の, vì 恐れ là danh từ ("nỗi lo").
+  - type: summary
+    points:
+      - vi: ～に違いない - chắc chắn (chủ quan); N/Na bỏ だ.
+      - vi: ～に相違ない - cùng nghĩa, văn viết trang trọng.
+      - vi: V-る/ない・N の + 恐れがある - có nguy cơ (chỉ điều xấu).
+      - vi: 犯人 - thủ phạm; 被害 - thiệt hại, 被害が広がる - thiệt hại lan rộng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u5-chigainai-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      stem: 「彼はまだ寝ているに違いない。」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a4k, text: Chắc chắn anh ấy vẫn đang ngủ., lang: vi }
+        - { id: b7m, text: Có thể anh ấy vẫn đang ngủ., lang: vi }
+        - { id: c2p, text: Anh ấy không thể vẫn đang ngủ., lang: vi }
+        - { id: d9r, text: Nghe nói anh ấy vẫn đang ngủ., lang: vi }
+    answer:
+      correct_option_id: a4k
+    explanation:
+      vi: に違いない là "chắc chắn là" - mức tin cao nhất. "Có thể" là かもしれない; "nghe nói" là そうだ / らしい.
+    display_answer: Chắc chắn anh ấy vẫn đang ngủ.
+
+  - key: ja:exercise:n2-u5-chigainai-mcq-noun
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      stem: 'Chọn cách nối đúng: "Người đó chắc chắn là thủ phạm." あの人が＿＿。'
+      stem_lang: vi
+      options:
+        - { id: e3s, text: 犯人に違いない, lang: ja }
+        - { id: f8t, text: 犯人だに違いない, lang: ja }
+        - { id: g1v, text: 犯人のに違いない, lang: ja }
+        - { id: h6w, text: 犯人なに違いない, lang: ja }
+    answer:
+      correct_option_id: e3s
+    explanation:
+      vi: Danh từ nối thẳng với に違いない, không có だ, の hay な.
+    display_answer: 犯人に違いない
+
+  - key: ja:exercise:n2-u5-chigainai-listen-osore
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-osore-ga-aru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 台風の影響で、川があふれる恐れがあります。
+      options:
+        - { id: j5x, text: "Do ảnh hưởng của bão, có nguy cơ sông bị tràn.", lang: vi }
+        - { id: k2y, text: "Do ảnh hưởng của bão, sông đã bị tràn.", lang: vi }
+        - { id: l9z, text: "Dù có bão, sông sẽ không bị tràn.", lang: vi }
+        - { id: m4a, text: Người dân sợ bão nên đã rời khỏi bờ sông., lang: vi }
+    answer:
+      correct_option_id: j5x
+    explanation:
+      vi: あふれる恐れがあります - "có nguy cơ tràn", việc chưa xảy ra. 恐れ ở đây không phải "người dân sợ" mà là khả năng xấu.
+    display_answer: Do ảnh hưởng của bão, có nguy cơ sông bị tràn.
+
+  - key: ja:exercise:n2-u5-chigainai-fill-osore-no
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u5-gram-osore-ga-aru
+    prompt:
+      template: "今夜は大雨{{b1}}恐れがあります。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Tối nay có nguy cơ mưa lớn."
+        - "Gợi ý: danh từ + trợ từ sở hữu + 恐れ."
+    answer:
+      blanks:
+        b1: [の]
+    known_wrong:
+      - answer: が
+        feedback_vi: 恐れ là danh từ nên danh từ trước nó nối bằng の - 大雨の恐れ.
+        error_tag: osore_no
+      - answer: な
+        feedback_vi: な dùng cho tính từ な, không dùng sau danh từ 大雨.
+        error_tag: osore_no
+    explanation:
+      vi: N + の + 恐れがある. 大雨の恐れ - nguy cơ mưa lớn.
+    display_answer: 今夜は大雨の恐れがあります。
+
+  - key: ja:exercise:n2-u5-chigainai-mcq-soui
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-ni-soui-nai
+    prompt:
+      stem: Câu 「この手紙は本人が書いたものに相違ない。」 thường gặp ở đâu và nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: n7b, text: "Văn viết trang trọng; lá thư này chắc chắn do chính người đó viết.", lang: vi }
+        - { id: p3c, text: "Hội thoại thân mật; lá thư này có lẽ do chính người đó viết.", lang: vi }
+        - { id: q8d, text: "Văn viết trang trọng; lá thư này khác với thư người đó viết.", lang: vi }
+        - { id: r1e, text: "Hội thoại thân mật; lá thư này không phải do người đó viết.", lang: vi }
+    answer:
+      correct_option_id: n7b
+    explanation:
+      vi: 相違 gốc là "khác biệt", 相違ない = "không khác" = chắc chắn. Đây là văn phong viết, trang trọng.
+    display_answer: "Văn viết trang trọng; lá thư này chắc chắn do chính người đó viết."
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u5-chigainai-fill-shizuka
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      template: "山の上のホテルだから、夜はとても{{b1}}に違いない。(静かだ)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [静か, しずか]
+    known_wrong:
+      - answer: 静かだ
+        feedback_vi: Tính từ な bỏ だ trước に違いない - 静かに違いない.
+        error_tag: chigainai_da
+      - answer: 静かな
+        feedback_vi: Không giữ な trước に違いない; chỉ dùng gốc tính từ - 静か.
+        error_tag: chigainai_da
+    explanation:
+      vi: Tính từ な và danh từ nối thẳng với に違いない - 静かに違いない.
+    display_answer: 山の上のホテルだから、夜はとても静かに違いない。
+
+  - key: ja:exercise:n2-u5-chigainai-translate-wasureta
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      source_text: Anh ấy chắc chắn đã quên cuộc hẹn rồi. (văn thường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は約束を忘れたに違いない。
+        - 彼は約束を忘れているに違いない。
+        - 彼は約束を忘れてしまったに違いない。
+        - 彼は約束を忘れたにちがいない。
+        - かれはやくそくをわすれたにちがいない。
+        - 彼が約束を忘れたに違いない。
+        - 彼は約束を忘れたに相違ない。
+        - 彼は約束を忘れたに違いありません。
+        - 彼は約束を忘れたに違いないです。
+        - 彼はきっと約束を忘れたに違いない。
+    known_wrong:
+      - answer: 彼は約束を忘れたかもしれない。
+        feedback_vi: かもしれない là "có thể", mức chắc chắn thấp. "Chắc chắn" dùng に違いない.
+        error_tag: certainty_level
+      - answer: 彼は約束を忘れるに違いない。
+        feedback_vi: Việc đã xảy ra rồi nên dùng thể quá khứ - 忘れたに違いない.
+        error_tag: tense
+    explanation:
+      vi: 'Thể quá khứ 忘れた (đã quên) + に違いない. Dạng lịch sự: に違いありません.'
+    display_answer: 彼は約束を忘れたに違いない。
+
+  - key: ja:exercise:n2-u5-chigainai-translate-higai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-higai
+    prompt:
+      source_text: Có nguy cơ thiệt hại sẽ lan rộng. (văn bản tin tức, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 被害が広がる恐れがあります。
+        - 被害が拡大する恐れがあります。
+        - 被害が広がるおそれがあります。
+        - 被害がさらに広がる恐れがあります。
+        - 被害が広がる恐れがある。
+        - 被害が拡大する恐れがある。
+        - ひがいがひろがるおそれがあります。
+        - 被害拡大の恐れがあります。
+    known_wrong:
+      - answer: 被害が広がるに違いありません。
+        feedback_vi: に違いない là "chắc chắn", còn câu này nói "có nguy cơ" - dùng 恐れがある.
+        error_tag: osore_chigainai
+      - answer: 被害が広がるの恐れがあります。
+        feedback_vi: Động từ nối thẳng với 恐れ, không có の. の chỉ dùng sau danh từ.
+        error_tag: osore_no
+    explanation:
+      vi: 被害が広がる / 拡大する - thiệt hại lan rộng; V-る + 恐れがあります. Danh từ hoá thì 被害拡大の恐れ.
+    display_answer: 被害が広がる恐れがあります。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u5-chigainai-mcq-good-news
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-gram-osore-ga-aru
+    prompt:
+      stem: Bạn viết bản tin thời tiết "Ngày mai trời có lẽ sẽ nắng đẹp suốt cả ngày." Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: s6f, text: 明日は一日中よく晴れるでしょう。, lang: ja }
+        - { id: t2g, text: 明日は一日中よく晴れる恐れがあります。, lang: ja }
+        - { id: u9h, text: 明日は一日中よく晴れるに相違ない。, lang: ja }
+        - { id: v4i, text: 明日は一日中よく晴れの恐れがあります。, lang: ja }
+    answer:
+      correct_option_id: s6f
+    explanation:
+      vi: Trời nắng là điều tốt nên không dùng 恐れがある. に相違ない quá khẳng định và cứng, không hợp bản tin dự báo. でしょう là cách dự báo chuẩn.
+    display_answer: 明日は一日中よく晴れるでしょう。
+
+  - key: ja:exercise:n2-u5-chigainai-wb-hannin
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u5-hannin
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Xét từ hình ảnh camera, người đàn ông này chắc chắn là thủ phạm.\""
+      tokens:
+        - { id: w3, text: この男が }
+        - { id: w5, text: 犯人だに }
+        - { id: w1, text: 防犯カメラの映像から見て }
+        - { id: w4, text: 違いない }
+        - { id: w2, text: 犯人に }
+    answer:
+      orders:
+        - [w1, w3, w2, w4]
+    explanation:
+      vi: 犯人に違いない - danh từ không có だ. Căn cứ (映像から見て) đứng đầu câu.
+    display_answer: 防犯カメラの映像から見て、この男が犯人に違いない。
+
+  - key: ja:exercise:n2-u5-chigainai-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      source_text: あんなに練習したのだから、彼女は合格するに違いない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đã luyện tập nhiều như thế nên chắc chắn cô ấy sẽ đỗ.
+        - Đã luyện tập nhiều như vậy nên chắc chắn cô ấy sẽ đỗ.
+        - Cô ấy đã luyện tập nhiều như thế nên chắc chắn sẽ đỗ.
+        - Cô ấy đã luyện tập nhiều như vậy nên chắc chắn sẽ đỗ.
+        - Đã luyện tập đến thế thì chắc chắn cô ấy sẽ đỗ.
+        - Luyện tập nhiều như thế thì chắc chắn cô ấy sẽ đỗ.
+        - Đã luyện tập nhiều như thế nên nhất định cô ấy sẽ đỗ.
+        - Đã luyện tập nhiều như thế nên chắc chắn cô ấy sẽ đậu.
+        - Cô ấy đã luyện tập nhiều như vậy nên chắc chắn sẽ đậu.
+        - Đã luyện tập chăm chỉ như thế nên chắc chắn cô ấy sẽ đỗ.
+        - Đã luyện tập nhiều như thế nên chắc chắn cô ấy sẽ thi đỗ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đã luyện tập nhiều như thế nên có thể cô ấy sẽ đỗ.
+        feedback_vi: に違いない là "chắc chắn", mạnh hơn "có thể" (かもしれない).
+        error_tag: certainty_level
+      - answer: Đã luyện tập nhiều như thế mà cô ấy vẫn trượt.
+        feedback_vi: 合格する là đỗ, và câu là phán đoán về tương lai, không phải kết quả đã xảy ra.
+        error_tag: vocab_meaning
+    explanation:
+      vi: のだから - "đã... thì / nên"; 合格するに違いない - chắc chắn sẽ đỗ.
+    display_answer: Đã luyện tập nhiều như thế nên chắc chắn cô ấy sẽ đỗ.
+
+  - key: ja:exercise:n2-u5-chigainai-mcq-self
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u5-gram-ni-chigainai
+    prompt:
+      stem: Câu nào dùng に違いない KHÔNG tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: x5j, text: 私は来年から大学生に違いない。, lang: ja }
+        - { id: y1k, text: 部屋が暗いから、もう寝たに違いない。, lang: ja }
+        - { id: z8l, text: この字は田中さんが書いたに違いない。, lang: ja }
+        - { id: a6n, text: こんなに人が多いのは、何かあったに違いない。, lang: ja }
+    answer:
+      correct_option_id: x5j
+    explanation:
+      vi: に違いない là phán đoán. Chuyện của chính mình mà mình biết chắc (năm sau mình vào đại học) thì nói thẳng 大学生になります, không cần phán đoán. Ba câu còn lại đều suy ra từ dấu hiệu.
+    display_answer: 私は来年から大学生に違いない。

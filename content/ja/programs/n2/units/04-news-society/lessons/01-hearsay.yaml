@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u4-hearsay
+order_index: 1
+level: n2
+title:
+  vi: Truyền đạt tin - ～によると, ～とのことだ, ～とされる, ～という
+objectives:
+  - vi: Nêu nguồn tin bằng ～によると / ～によれば và kết câu bằng mẫu truyền đạt.
+  - vi: Chuyển lời nhắn trang trọng bằng ～とのことだ.
+  - vi: Hiểu nhận định chung trong tin tức qua ～とされる và ～という.
+estimated_minutes: 24
+skills: [grammar, reading, speaking]
+prerequisites: [ja:lesson:n2-business-keigo-review]
+items:
+  - item: ja:item:n2-u4-houdou
+  - item: ja:item:n2-u4-happyou
+  - item: ja:item:n2-u4-kankeisha
+  - item: ja:item:n2-u4-gram-ni-yoru-to
+  - item: ja:item:n2-u4-gram-to-no-koto-da
+  - item: ja:item:n2-u4-gram-to-sareru
+  - item: ja:item:n2-u4-gram-to-iu-denbun
+  - item: ja:item:n3-gram-sou-da-denbun
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bản tin tiếng Nhật hiếm khi khẳng định trực tiếp - người viết luôn cho biết thông tin đến từ đâu. Sau bài này bạn đọc được các câu "theo công bố của cảnh sát...", "được cho là..." và chuyển lời nhắn ở công ty cho đúng mực.
+  - type: explain
+    text:
+      vi: 'N + によると / によれば - "theo...", nêu nguồn tin: 報道によると, 警察の発表によれば, 関係者によると. Cuối câu bắt buộc có mẫu truyền đạt: ～そうだ, ～とのことだ, ～という, ～らしい.'
+  - type: explain
+    text:
+      vi: 'Thể thường + とのことだ - "được biết là", "(người đó) nhắn là". Trang trọng hơn そうだ, rất hay dùng khi chuyển lời trong công việc: 山田様から、10分ほど遅れるとのことです.'
+  - type: explain
+    text:
+      vi: 'Thể thường + とされる / とされている - "được cho là", nhận định chung của xã hội hoặc giới chuyên môn: 原因は運転手の居眠りとされている. Thể thường + という (cuối câu) - "nghe nói, tương truyền", giọng văn viết: この寺は千年前に建てられたという.'
+  - type: deep_explain
+    text:
+      vi: 'Xếp theo độ "khách quan": そうだ (nghe nói, hội thoại) → とのことだ (chuyển lời, trang trọng) → という (văn viết, kể lại) → とされる (nhận định chung, không rõ ai nói). Nhà báo dùng とされる khi chưa có kết luận chính thức để tránh trách nhiệm. Phân biệt với ～としている: 警察は事故の原因を調べているとしている - chủ thể (cảnh sát) là người phát ngôn.'
+  - type: example
+    target: 天気予報によると、明日は大雪になるそうです。
+    target_lang: ja
+    translation:
+      vi: Theo dự báo thời tiết, ngày mai sẽ có tuyết rơi dày.
+  - type: example
+    target: 警察の発表によれば、けが人はいないとのことです。
+    target_lang: ja
+    translation:
+      vi: Theo công bố của cảnh sát, được biết không có người bị thương.
+  - type: example
+    target: 田中さんから電話があって、会議に30分ほど遅れるとのことです。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka gọi điện, nhắn là sẽ đến họp muộn khoảng 30 phút.
+  - type: example
+    target: 事故の原因は運転手の居眠りとされている。
+    target_lang: ja
+    translation:
+      vi: Nguyên nhân vụ tai nạn được cho là do tài xế ngủ gật.
+  - type: example
+    target: 関係者によると、新しい駅は2030年に開業する予定だという。
+    target_lang: ja
+    translation:
+      vi: Theo những người liên quan, nhà ga mới dự kiến đi vào hoạt động năm 2030.
+  - type: common_mistake
+    wrong: ニュースによると、昨日大雨が降りました。
+    right: ニュースによると、昨日大雨が降ったそうです。
+    target_lang: ja
+    note:
+      vi: Câu có ～によると phải kết bằng mẫu truyền đạt (そうだ, とのことだ, という). Kết bằng 降りました nghe như chính bạn khẳng định.
+  - type: common_mistake
+    wrong: 私は明日、会社を休むとのことです。
+    right: 田中さんは明日、会社を休むとのことです。
+    target_lang: ja
+    note:
+      vi: とのことだ dùng để truyền lại lời của người khác, không dùng nói ý định của chính mình. Muốn xin nghỉ - 明日、休ませていただけますか.
+  - type: summary
+    points:
+      - vi: によると / によれば - theo (nguồn tin), cuối câu cần mẫu truyền đạt.
+      - vi: とのことだ - được biết, nhắn là (trang trọng, chuyển lời).
+      - vi: とされる - được cho là (nhận định chung); という - nghe nói, tương truyền (văn viết).
+      - vi: 報道 (đưa tin), 発表 (công bố), 関係者 (người liên quan).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u4-hearsay-mcq-tonokoto
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-gram-to-no-koto-da
+    prompt:
+      stem: 「～とのことです」 thường dùng khi nào?
+      stem_lang: vi
+      options:
+        - { id: k4t, text: Truyền lại lời nhắn hoặc thông tin nghe được (trang trọng), lang: vi }
+        - { id: b7m, text: Nói ý định của chính mình, lang: vi }
+        - { id: e2q, text: Suy đoán dựa trên những gì mắt thấy, lang: vi }
+        - { id: w9z, text: Ra lệnh một cách lịch sự, lang: vi }
+    answer:
+      correct_option_id: k4t
+    explanation:
+      vi: とのことです - được biết là, (người đó) nhắn là. Ý định của mình dùng つもりです; suy đoán qua quan sát dùng ～ようだ / ～そうだ (dạng thái).
+    display_answer: Truyền lại lời nhắn hoặc thông tin nghe được (trang trọng)
+
+  - key: ja:exercise:n2-u4-hearsay-listen-happyou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-happyou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 警察の発表によれば、けが人はいないとのことです。
+      options:
+        - { id: f3r, text: "Theo công bố của cảnh sát, được biết không có người bị thương.", lang: vi }
+        - { id: y8c, text: "Theo công bố của cảnh sát, có nhiều người bị thương.", lang: vi }
+        - { id: n1h, text: Cảnh sát sẽ công bố số người bị thương sau., lang: vi }
+        - { id: d6v, text: Cảnh sát nghĩ là chắc không có ai bị thương., lang: vi }
+    answer:
+      correct_option_id: f3r
+    explanation:
+      vi: 警察の発表によれば - theo công bố của cảnh sát; けが人はいない - không có người bị thương; とのことです - được biết là (truyền đạt, không phải suy nghĩ của cảnh sát).
+    display_answer: Theo công bố của cảnh sát, được biết không có người bị thương.
+
+  - key: ja:exercise:n2-u4-hearsay-mcq-word
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-happyou
+    prompt:
+      stem: 'Chọn từ phù hợp: 政府の＿＿によると、来月から新しい制度が始まるそうです。'
+      stem_lang: vi
+      options:
+        - { id: h5a, text: 発表, lang: ja }
+        - { id: u2s, text: 発生, lang: ja }
+        - { id: o8k, text: 関係, lang: ja }
+        - { id: c3j, text: 練習, lang: ja }
+    answer:
+      correct_option_id: h5a
+    explanation:
+      vi: 政府の発表によると - theo công bố của chính phủ. 発生 là sự việc xảy ra; 関係 là quan hệ; 練習 là luyện tập.
+    display_answer: 発表
+
+  - key: ja:exercise:n2-u4-hearsay-fill-sareru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-sareru
+    prompt:
+      template: "一般に、緑茶は体にいい{{b1}}います。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Nói chung, trà xanh được cho là tốt cho cơ thể."
+        - "Gợi ý: と + bị động của する + て."
+    answer:
+      blanks:
+        b1: [とされて, と言われて, といわれて]
+    known_wrong:
+      - answer: とのことで
+        feedback_vi: とのことだ dùng chuyển một lời nhắn cụ thể và không đi với います. Nhận định chung - とされています.
+        error_tag: hearsay_form
+      - answer: として
+        feedback_vi: としています là "(ai đó) cho rằng" - cần chủ thể phát ngôn. "Được cho là" dùng bị động とされています.
+        error_tag: passive
+    explanation:
+      vi: ～とされている - được cho là (nhận định chung). と言われている cũng đúng nghĩa.
+    display_answer: 一般に、緑茶は体にいいとされています。
+
+  - key: ja:exercise:n2-u4-hearsay-wb-niyoruto
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-gram-ni-yoru-to
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Theo tin tức, ngày mai tàu điện sẽ ngừng chạy.\""
+      tokens:
+        - { id: t3, text: 電車が止まるそうです }
+        - { id: t1, text: ニュースによると、 }
+        - { id: t4, text: 電車が止まるはずです }
+        - { id: t2, text: 明日は }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: ～によると、～そうです - dẫn nguồn tin và kết bằng mẫu truyền đạt. はずです là suy luận của người nói, không hợp với によると.
+    display_answer: ニュースによると、明日は電車が止まるそうです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u4-hearsay-fill-tonokoto
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-gram-to-no-koto-da
+    prompt:
+      template: "部長から連絡があって、今日は直接取引先に行く{{b1}}です。(truyền lời nhắn)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [とのこと, ということ]
+    known_wrong:
+      - answer: はず
+        feedback_vi: はずです là suy luận của bạn; ở đây bạn chuyển lời nhắn của trưởng phòng - とのことです.
+        error_tag: hearsay_form
+      - answer: つもり
+        feedback_vi: つもりです là ý định của chính người nói. Chuyển lời người khác - とのことです.
+        error_tag: hearsay_form
+    explanation:
+      vi: ～とのことです - (trưởng phòng) nhắn là... ということです cũng dùng được với nghĩa truyền đạt.
+    display_answer: 部長から連絡があって、今日は直接取引先に行くとのことです。
+
+  - key: ja:exercise:n2-u4-hearsay-translate-niyoruto
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-gram-ni-yoru-to
+    prompt:
+      source_text: Theo dự báo thời tiết, ngày mai trời sẽ mưa to. (dùng によると và そうだ, lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 天気予報によると、明日は大雨になるそうです。
+        - 天気予報によると、明日は大雨が降るそうです。
+        - 天気予報によると、明日は大雨だそうです。
+        - 天気予報によると、明日は雨がたくさん降るそうです。
+        - 天気予報によると、明日は強い雨が降るそうです。
+        - 天気予報によると、明日大雨が降るそうです。
+        - 天気予報によると、明日大雨になるそうです。
+        - 天気予報によると、あしたは大雨になるそうです。
+        - 天気予報によると、あしたは大雨が降るそうです。
+        - 天気予報によれば、明日は大雨になるそうです。
+        - 天気予報によれば、明日は大雨が降るそうです。
+        - 天気予報によると、明日は大雨になるそうだ。
+        - 天気予報によると、明日は大雨が降るそうだ。
+        - てんきよほうによると、あしたはおおあめになるそうです。
+    known_wrong:
+      - answer: 天気予報によると、明日は大雨になりそうです。
+        feedback_vi: なりそうです (thể ます + そう) là "có vẻ sẽ" theo quan sát. Nghe nói - thể thường + そうです - なるそうです.
+        error_tag: sou_youtai
+      - answer: 天気予報によると、明日は大雨になります。
+        feedback_vi: Câu có ～によると cần kết bằng mẫu truyền đạt - ～そうです.
+        error_tag: hearsay_form
+    explanation:
+      vi: 天気予報によると - theo dự báo thời tiết; 大雨になる / 大雨が降る - mưa to; thể thường + そうです - nghe nói.
+    display_answer: 天気予報によると、明日は大雨になるそうです。
+
+  - key: ja:exercise:n2-u4-hearsay-translate-sareru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-sareru
+    prompt:
+      source_text: Ngôi chùa này được cho là được xây khoảng 1000 năm trước. (dùng とされている)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この寺は約千年前に建てられたとされている。
+        - この寺は約千年前に建てられたとされています。
+        - この寺は約1000年前に建てられたとされている。
+        - この寺は約1000年前に建てられたとされています。
+        - この寺は千年ほど前に建てられたとされている。
+        - この寺は千年ほど前に建てられたとされています。
+        - この寺は1000年ほど前に建てられたとされている。
+        - この寺は1000年ほど前に建てられたとされています。
+        - この寺はおよそ千年前に建てられたとされています。
+        - この寺はおよそ1000年前に建てられたとされています。
+        - この寺は約千年前に造られたとされています。
+        - このお寺は約千年前に建てられたとされています。
+        - このお寺は千年ほど前に建てられたとされています。
+        - このてらはやくせんねんまえにたてられたとされています。
+    known_wrong:
+      - answer: この寺は約千年前に建てたとされています。
+        feedback_vi: Chùa "được xây" - dùng bị động 建てられた.
+        error_tag: passive
+      - answer: この寺は約千年前に建てられたとしています。
+        feedback_vi: としている là "(ai đó) cho rằng", cần chủ thể phát ngôn. "Được cho là" - とされている.
+        error_tag: hearsay_form
+    explanation:
+      vi: 約千年前に - khoảng 1000 năm trước; 建てられた - được xây (bị động); とされている - được cho là.
+    display_answer: この寺は約千年前に建てられたとされている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u4-hearsay-mcq-message
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-no-koto-da
+    prompt:
+      stem: Khách hàng tên Yamada gọi điện báo sẽ đến muộn khoảng 10 phút. Bạn báo lại cho trưởng phòng. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: p6x, text: 山田様からお電話があり、10分ほど遅れるとのことです。, lang: ja }
+        - { id: g2e, text: 山田様は10分ほど遅れるはずです。, lang: ja }
+        - { id: a9w, text: 山田様は10分ほど遅れるとされています。, lang: ja }
+        - { id: m5n, text: 山田様が10分ほど遅れそうです。, lang: ja }
+    answer:
+      correct_option_id: p6x
+    explanation:
+      vi: Chuyển lời nhắn cụ thể - ～とのことです. はずです là suy luận; とされています là nhận định chung của xã hội; 遅れそうです là "có vẻ sẽ muộn" theo quan sát.
+    display_answer: 山田様からお電話があり、10分ほど遅れるとのことです。
+
+  - key: ja:exercise:n2-u4-hearsay-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-kankeisha
+    prompt:
+      source_text: 関係者によると、新しい駅は2030年に開業する予定だという。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Theo những người liên quan, nhà ga mới dự kiến sẽ đi vào hoạt động vào năm 2030.
+        - Theo những người liên quan, nhà ga mới dự kiến đi vào hoạt động năm 2030.
+        - Theo những người liên quan, nhà ga mới dự kiến sẽ đi vào hoạt động năm 2030.
+        - Theo người liên quan, nhà ga mới dự kiến sẽ đi vào hoạt động vào năm 2030.
+        - Theo người liên quan, nhà ga mới dự kiến đi vào hoạt động năm 2030.
+        - Theo những người liên quan, nhà ga mới dự kiến sẽ khai trương vào năm 2030.
+        - Theo những người liên quan, nhà ga mới dự kiến khai trương vào năm 2030.
+        - Theo những người liên quan, nhà ga mới dự kiến khai trương năm 2030.
+        - Theo người liên quan, nhà ga mới dự kiến khai trương năm 2030.
+        - Theo những người liên quan, nhà ga mới dự kiến sẽ mở cửa vào năm 2030.
+        - Theo nguồn tin liên quan, nhà ga mới dự kiến sẽ khai trương vào năm 2030.
+        - Theo các nguồn tin liên quan, nhà ga mới dự kiến sẽ đi vào hoạt động vào năm 2030.
+        - Theo người trong cuộc, nhà ga mới dự kiến sẽ khai trương vào năm 2030.
+        - Theo những người liên quan, nghe nói nhà ga mới dự kiến khai trương vào năm 2030.
+        - Nghe những người liên quan nói, nhà ga mới dự kiến khai trương vào năm 2030.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo những người liên quan, nhà ga mới đã khai trương vào năm 2030.
+        feedback_vi: 開業する予定だ - dự kiến sẽ khai trương, chưa xảy ra.
+        error_tag: tense
+    explanation:
+      vi: 関係者によると - theo những người liên quan; 開業する予定だ - dự kiến đi vào hoạt động; という - nghe nói (truyền đạt).
+    display_answer: Theo những người liên quan, nhà ga mới dự kiến sẽ đi vào hoạt động vào năm 2030.
+
+  - key: ja:exercise:n2-u4-hearsay-wb-sareru
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-sareru
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Nói chung, ngủ đủ giấc được cho là tốt cho trí nhớ.\""
+      tokens:
+        - { id: s3, text: 記憶力にいいと }
+        - { id: s5, text: している }
+        - { id: s1, text: 一般に、 }
+        - { id: s4, text: されている }
+        - { id: s2, text: 十分な睡眠は }
+    answer:
+      orders:
+        - [s1, s2, s3, s4]
+    explanation:
+      vi: ～とされている - được cho là (nhận định chung, không nêu ai nói). としている cần chủ thể phát ngôn cụ thể.
+    display_answer: 一般に、十分な睡眠は記憶力にいいとされている。
+
+  - key: ja:exercise:n2-u4-hearsay-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-iu-denbun
+    prompt:
+      stem: "Đọc: 「市の発表によると、駅前の工事は来月末に終わる予定だという。ただし、天候によっては遅れる可能性もあるとのことだ。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: r7b, text: "Theo thành phố, công trình dự kiến xong cuối tháng sau nhưng có thể chậm tuỳ thời tiết.", lang: vi }
+        - { id: j4f, text: Người viết khẳng định công trình chắc chắn xong cuối tháng sau., lang: vi }
+        - { id: v1y, text: Công trình trước nhà ga đã xong vào cuối tháng này., lang: vi }
+        - { id: i8d, text: Thành phố chưa công bố khi nào công trình kết thúc., lang: vi }
+    answer:
+      correct_option_id: r7b
+    explanation:
+      vi: 市の発表によると～という - thông tin dẫn từ thành phố, không phải khẳng định của người viết; 天候によっては遅れる可能性もあるとのことだ - được biết có thể chậm tuỳ thời tiết.
+    display_answer: Theo thành phố, công trình dự kiến xong cuối tháng sau nhưng có thể chậm tuỳ thời tiết.

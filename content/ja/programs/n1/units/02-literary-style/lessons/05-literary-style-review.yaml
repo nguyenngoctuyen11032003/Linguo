@@ -1,0 +1,393 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-literary-style-review
+order_index: 5
+level: n1
+title:
+  vi: "Ôn tập: đọc đoạn văn tiểu sử theo lối văn viết"
+objectives:
+  - vi: Đọc hiểu đoạn văn tiểu sử dùng nhiều mẫu văn viết N1.
+  - vi: Chọn đúng mẫu giữa べく / んがため, ともなると / ともあろう, たるもの / なりに, をものともせず / をよそに.
+  - vi: Viết câu trang trọng về một nhân vật có chí lớn.
+estimated_minutes: 26
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n1-u2-monotomosezu-yosoni]
+items:
+  - item: ja:item:n1-u2-shougai
+  - item: ja:item:n1-u2-shinnen
+  - item: ja:item:n1-u2-tsuranuku
+  - item: ja:item:n1-u2-fukutsu
+  - item: ja:item:n1-u2-gram-ngatame
+    role: reuse
+  - item: ja:item:n1-u2-gram-beku
+    role: reuse
+  - item: ja:item:n1-u2-gram-tomonaruto
+    role: reuse
+  - item: ja:item:n1-u2-gram-tarumono
+    role: reuse
+  - item: ja:item:n1-u2-gram-narini
+    role: reuse
+  - item: ja:item:n1-u2-gram-monotomosezu
+    role: reuse
+  - item: ja:item:n1-u2-gram-wo-yoso-ni
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Bài ôn tổng hợp cả unit qua một dạng đọc hay gặp ở đề N1: đoạn tiểu sử, hồi ký viết theo lối văn viết, câu dài, nhiều mẫu cứng. Đọc đoạn văn trong bài tập đầu tiên rồi trả lời các câu hỏi.'
+  - type: explain
+    text:
+      vi: 'Đoạn văn tiểu sử thường có: hoàn cảnh (戦後の混乱期), quyết tâm và mục đích (～んがため, ～べく), chuẩn mực nhân vật theo đuổi (～たる者), khó khăn và thái độ người xung quanh (～をものともせず, ～をよそに), và đánh giá cuộc đời (生涯, 信念を貫く, 不屈の精神).'
+  - type: explain
+    text:
+      vi: 'Từ vựng mới: 生涯 (cả cuộc đời), 信念 (niềm tin vững chắc), 貫く (giữ vững đến cùng), 不屈 (bất khuất). Cụm hay đi cùng: 信念を生涯貫く, 不屈の精神, 生涯を～にささげる.'
+  - type: deep_explain
+    text:
+      vi: 'Khi đọc, hãy tìm "ai muốn gì - gặp trở ngại gì - ai phản đối - kết quả ra sao". Mẫu mục đích (べく, んがため) trả lời "muốn gì"; ものともせず chỉ trở ngại bị vượt qua; よそに chỉ ý kiến người khác bị gác lại; ともなると đánh dấu một mốc (tuổi, chức vị) khiến hoàn cảnh đổi khác; なりに cho thấy người viết đánh giá ấm áp nhưng thực tế.'
+  - type: example
+    target: 祖父は医者としての信念を生涯貫いた。
+    target_lang: ja
+    translation:
+      vi: Ông tôi giữ vững niềm tin của người thầy thuốc suốt cả cuộc đời.
+  - type: example
+    target: 彼女は生涯を子どもの教育にささげた。
+    target_lang: ja
+    translation:
+      vi: Bà đã dâng hiến cả cuộc đời cho việc giáo dục trẻ em.
+  - type: example
+    target: 彼の不屈の精神は、多くの人に勇気を与えた。
+    target_lang: ja
+    translation:
+      vi: Tinh thần bất khuất của anh ấy đã tiếp thêm dũng khí cho nhiều người.
+  - type: example
+    target: 彼は自分の信念に従って行動した。
+    target_lang: ja
+    translation:
+      vi: Ông ấy đã hành động theo niềm tin của mình.
+  - type: common_mistake
+    wrong: 祖父は信念を生涯続けた。
+    right: 祖父は信念を生涯貫いた。
+    target_lang: ja
+    note:
+      vi: Giữ vững niềm tin đến cùng là 信念を貫く; 続ける dùng cho hành động lặp lại, không tự nhiên với 信念.
+  - type: common_mistake
+    wrong: 彼は不屈な精神で病気と闘った。
+    right: 彼は不屈の精神で病気と闘った。
+    target_lang: ja
+    note:
+      vi: 不屈 là danh từ, nối với danh từ khác bằng の - 不屈の精神.
+  - type: summary
+    points:
+      - vi: Mục đích - ～べく, ～んがため; mốc đặc biệt - ～ともなると.
+      - vi: Chuẩn mực - ～たる者; giới hạn riêng - ～なりに.
+      - vi: Trở ngại - ～をものともせず (khen); người khác bị phớt lờ - ～をよそに.
+      - vi: 生涯, 信念を貫く, 不屈の精神.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-literary-style-review-mcq-reading-main
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u2-shinnen
+    prompt:
+      stem: "Đọc: 「祖父は、医者たる者、患者を見捨ててはならないという信念を生涯貫いた。戦後の混乱期、家族の心配をよそに、医者のいない山奥の村に診療所を開いた。村人の命を救わんがため、大雪をものともせず往診に出かけたという。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: r2w, text: "Gia đình lo lắng, nhưng ông vẫn mở phòng khám ở ngôi làng không có bác sĩ.", lang: vi }
+        - { id: x6j, text: "Ông mở phòng khám ở làng theo đề nghị của gia đình.", lang: vi }
+        - { id: q9b, text: "Vì tuyết lớn nên ông không thể đi khám tại nhà cho dân làng.", lang: vi }
+        - { id: c4f, text: "Ông cho rằng bác sĩ đôi khi phải bỏ mặc bệnh nhân.", lang: vi }
+    answer:
+      correct_option_id: r2w
+    explanation:
+      vi: 家族の心配をよそに - mặc cho gia đình lo lắng; 大雪をものともせず往診に出かけた - bất chấp tuyết lớn vẫn đi khám tại nhà; 見捨ててはならない - không được bỏ mặc.
+    display_answer: "Gia đình lo lắng, nhưng ông vẫn mở phòng khám ở ngôi làng không có bác sĩ."
+
+  - key: ja:exercise:n1-literary-style-review-mcq-reading-purpose
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-ngatame
+    prompt:
+      stem: "Trong đoạn văn trên, 「村人の命を救わんがため」 cho biết điều gì?"
+      stem_lang: vi
+      options:
+        - { id: d8n, text: Mục đích ông đi khám bất chấp tuyết lớn - chính vì muốn cứu mạng dân làng., lang: vi }
+        - { id: h3k, text: Lý do dân làng không muốn ông tới khám., lang: vi }
+        - { id: o1t, text: Việc dân làng không cứu được ông., lang: vi }
+        - { id: s7e, text: Lời khuyên ông nên cứu dân làng., lang: vi }
+    answer:
+      correct_option_id: d8n
+    explanation:
+      vi: 救わんがため - chính vì muốn cứu (mục đích mạnh). ん không phải phủ định.
+    display_answer: Mục đích ông đi khám bất chấp tuyết lớn - chính vì muốn cứu mạng dân làng.
+
+  - key: ja:exercise:n1-literary-style-review-listen-shougai
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-shougai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 彼女は生涯を子どもの教育にささげた。
+      options:
+        - { id: v5a, text: Bà đã dâng hiến cả cuộc đời cho việc giáo dục trẻ em., lang: vi }
+        - { id: l2c, text: Bà gặp nhiều trở ngại trong việc giáo dục trẻ em., lang: vi }
+        - { id: z8m, text: Bà đã dạy trẻ em khuyết tật suốt một năm., lang: vi }
+        - { id: n6p, text: Bà muốn con mình được giáo dục suốt đời., lang: vi }
+    answer:
+      correct_option_id: v5a
+    explanation:
+      vi: 生涯 (しょうがい) - cả cuộc đời, đồng âm với 障害 (trở ngại, khuyết tật). 生涯を～にささげる - dâng hiến cả đời cho...
+    display_answer: Bà đã dâng hiến cả cuộc đời cho việc giáo dục trẻ em.
+
+  - key: ja:exercise:n1-literary-style-review-fill-tsuranuku
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-tsuranuku
+    prompt:
+      template: "祖父は医者としての信念を生涯{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Ông tôi giữ vững niềm tin của người thầy thuốc suốt cả cuộc đời."
+        - "Gợi ý: 'giữ vững đến cùng' - つらぬく, chia quá khứ."
+    answer:
+      blanks:
+        b1: [貫いた, つらぬいた, 貫きました, つらぬきました]
+    known_wrong:
+      - answer: 続けた
+        feedback_vi: 信念を続ける không tự nhiên; giữ vững niềm tin đến cùng là 信念を貫く.
+        error_tag: collocation
+      - answer: 貫った
+        feedback_vi: 貫く là động từ nhóm 1 đuôi く - thể た là 貫いた.
+        error_tag: grammar_form
+    explanation:
+      vi: 信念を貫く - giữ vững niềm tin; 貫く → 貫いた.
+    display_answer: 祖父は医者としての信念を生涯貫いた。
+
+  - key: ja:exercise:n1-literary-style-review-wb-fukutsu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-fukutsu
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tinh thần bất khuất của anh ấy đã tiếp thêm dũng khí cho nhiều người.\""
+      tokens:
+        - { id: f3, text: 多くの人に勇気を与えた }
+        - { id: f4, text: 不屈な精神は、 }
+        - { id: f1, text: 彼の }
+        - { id: f2, text: 不屈の精神は、 }
+    answer:
+      orders:
+        - [f1, f2, f3]
+    explanation:
+      vi: 不屈 là danh từ - 不屈の精神. 不屈な là sai.
+    display_answer: 彼の不屈の精神は、多くの人に勇気を与えた。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-literary-style-review-fill-mixed
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-tomonaruto
+    prompt:
+      template: "九十歳とも{{b1}}と体も思うように動かなかったが、祖父は祖父{{b2}}、できることを続けた。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [なる]
+        b2: [なりに]
+    known_wrong:
+      - answer: あろう
+        feedback_vi: ともあろう chê trách người có địa vị; ở đây chỉ mốc tuổi 90 - ともなると.
+        error_tag: tomoarou_tomonaruto
+      - answer: たるもの
+        feedback_vi: たるもの nêu chuẩn mực "đã là... thì phải"; ở đây là "theo cách của riêng ông" - なりに.
+        error_tag: narini_tarumono
+    explanation:
+      vi: 九十歳ともなると - đến tuổi 90 thì; 祖父は祖父なりに - ông theo cách của riêng ông.
+    display_answer: 九十歳ともなると体も思うように動かなかったが、祖父は祖父なりに、できることを続けた。
+
+  - key: ja:exercise:n1-literary-style-review-translate-tarumono
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-tarumono
+    prompt:
+      source_text: Đã là bác sĩ thì không được bỏ mặc bệnh nhân. (dùng たる者 và てはならない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 医者たる者、患者を見捨ててはならない。
+        - 医者たる者は、患者を見捨ててはならない。
+        - 医者たるもの、患者を見捨ててはならない。
+        - 医者たるものは、患者を見捨ててはならない。
+        - 医者たる者、患者を見捨ててはならないのだ。
+        - 医者たる者、患者を見捨ててはなりません。
+        - 医者たるもの、患者を見捨ててはなりません。
+        - 医師たる者、患者を見捨ててはならない。
+        - 医師たるもの、患者を見捨ててはならない。
+        - 医師たる者は、患者を見捨ててはならない。
+        - 医者たる者、患者を見放してはならない。
+        - 医者たるもの、患者を放っておいてはならない。
+        - いしゃたるもの、かんじゃをみすててはならない。
+    known_wrong:
+      - answer: 医者なりに、患者を見捨ててはならない。
+        feedback_vi: なりに là "theo khả năng riêng"; nêu chuẩn mực nghề nghiệp dùng たる者.
+        error_tag: narini_tarumono
+      - answer: 医者たる者、患者を見捨ててもいい。
+        feedback_vi: てもいい là "được phép" - ngược nghĩa; "không được" là てはならない.
+        error_tag: grammar_form
+    explanation:
+      vi: 医者たる者 - đã là bác sĩ; 見捨てる - bỏ mặc; ～てはならない - không được (văn viết).
+    display_answer: 医者たる者、患者を見捨ててはならない。
+
+  - key: ja:exercise:n1-literary-style-review-translate-beku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-beku
+    prompt:
+      source_text: Để cứu mạng dân làng, ông ấy đã mở phòng khám ở vùng núi sâu. (dùng べく)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 村人の命を救うべく、彼は山奥に診療所を開いた。
+        - 村人の命を救うべく、彼は山奥に診療所を開きました。
+        - 村人の命を救うべく、彼は山奥で診療所を開いた。
+        - 彼は村人の命を救うべく、山奥に診療所を開いた。
+        - 彼は村人の命を救うべく、山奥に診療所を開きました。
+        - 村の人々の命を救うべく、彼は山奥に診療所を開いた。
+        - 村人の命を救うべく、彼は山奥に診療所を開設した。
+        - 村人の命を救うべく、彼は山奥に診療所を作った。
+        - 村人の命を助けるべく、彼は山奥に診療所を開いた。
+        - 村人の命を救うべく、山奥に診療所を開いた。
+        - 村人の命を救うべく、彼は山の奥に診療所を開いた。
+        - 村人の命を救うべく、彼は山奥にクリニックを開いた。
+        - むらびとのいのちをすくうべく、かれはやまおくにしんりょうじょをひらいた。
+    known_wrong:
+      - answer: 村人の命を救うべき、彼は山奥に診療所を開いた。
+        feedback_vi: べき là "nên"; chỉ mục đích dùng べく.
+        error_tag: beku_beki
+      - answer: 村人の命を救ったべく、彼は山奥に診療所を開いた。
+        feedback_vi: べく đi sau thể từ điển - 救うべく.
+        error_tag: grammar_form
+    explanation:
+      vi: 命を救うべく - để cứu mạng; 山奥 - vùng núi sâu; 診療所を開いた - đã mở phòng khám.
+    display_answer: 村人の命を救うべく、彼は山奥に診療所を開いた。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-literary-style-review-mcq-best-fit
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-gram-monotomosezu
+    prompt:
+      stem: 'Điền vào hai chỗ trống cho đúng nghĩa: 「周囲の反対（ A ）、彼女は病気（ B ）事業を成功させた。」 (Mặc mọi người xung quanh phản đối, cô ấy bất chấp bệnh tật đã đưa sự nghiệp đến thành công.)'
+      stem_lang: vi
+      options:
+        - { id: j4y, text: A をよそに / B をものともせず, lang: ja }
+        - { id: e9r, text: A をものともせず / B をよそに, lang: ja }
+        - { id: w3h, text: A たるもの / B なりに, lang: ja }
+        - { id: k7d, text: A ともなると / B べく, lang: ja }
+    answer:
+      correct_option_id: j4y
+    explanation:
+      vi: Sự phản đối của người xung quanh bị phớt lờ - をよそに; bệnh tật là trở ngại được vượt qua - をものともせず.
+    display_answer: A をよそに / B をものともせず
+
+  - key: ja:exercise:n1-literary-style-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u2-gram-wo-yoso-ni
+    prompt:
+      source_text: 家族の心配をよそに、祖父は医者のいない村に診療所を開いた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mặc cho gia đình lo lắng, ông tôi đã mở phòng khám ở ngôi làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông tôi đã mở phòng khám ở làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông đã mở phòng khám ở ngôi làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông đã mở phòng khám ở làng không có bác sĩ.
+        - Mặc kệ gia đình lo lắng, ông tôi đã mở phòng khám ở ngôi làng không có bác sĩ.
+        - Mặc kệ sự lo lắng của gia đình, ông tôi đã mở phòng khám ở ngôi làng không có bác sĩ.
+        - Mặc kệ sự lo lắng của gia đình, ông đã mở phòng khám ở làng không có bác sĩ.
+        - Bất chấp sự lo lắng của gia đình, ông tôi đã mở phòng khám ở ngôi làng không có bác sĩ.
+        - Bất chấp gia đình lo lắng, ông tôi đã mở phòng khám ở làng không có bác sĩ.
+        - Mặc dù gia đình lo lắng, ông tôi vẫn mở phòng khám ở ngôi làng không có bác sĩ.
+        - Dù gia đình lo lắng, ông tôi vẫn mở phòng khám ở ngôi làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông nội đã mở phòng khám ở ngôi làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông tôi đã mở phòng khám ở một ngôi làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông tôi đã mở phòng khám tại ngôi làng không có bác sĩ.
+        - Mặc cho gia đình lo lắng, ông tôi đã mở trạm xá ở ngôi làng không có bác sĩ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì gia đình lo lắng nên ông tôi không mở phòng khám ở làng.
+        feedback_vi: をよそに là "mặc kệ", không phải "vì"; và 開いた là đã mở.
+        error_tag: yoso_meaning
+    explanation:
+      vi: 家族の心配をよそに - mặc cho gia đình lo lắng; 医者のいない村 - ngôi làng không có bác sĩ; 診療所を開いた - đã mở phòng khám.
+    display_answer: Mặc cho gia đình lo lắng, ông tôi đã mở phòng khám ở ngôi làng không có bác sĩ.
+
+  - key: ja:exercise:n1-literary-style-review-mcq-narini
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-narini
+    prompt:
+      stem: "Đọc: 「九十歳ともなると体も思うように動かなかったが、それでも祖父は祖父なりに、できることを続けた。」 Người viết nhìn nhận ông như thế nào?"
+      stem_lang: vi
+      options:
+        - { id: p8s, text: "Tuổi già hạn chế sức khoẻ, nhưng ông vẫn làm hết sức trong khả năng của mình.", lang: vi }
+        - { id: g1v, text: "Ông đã nghỉ hẳn vì không còn làm được gì.", lang: vi }
+        - { id: y6n, text: "Ông vẫn khoẻ như thời trẻ nên làm việc như trước.", lang: vi }
+        - { id: a5q, text: "Người viết phê phán ông vì cố làm việc quá sức.", lang: vi }
+    answer:
+      correct_option_id: p8s
+    explanation:
+      vi: 九十歳ともなると - đến tuổi 90 thì (cơ thể không như ý); 祖父なりに - theo khả năng của riêng ông. Sắc thái ấm áp, công nhận nỗ lực.
+    display_answer: "Tuổi già hạn chế sức khoẻ, nhưng ông vẫn làm hết sức trong khả năng của mình."
+
+  - key: ja:exercise:n1-literary-style-review-wb-shinnen
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u2-shinnen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Bất chấp lời chỉ trích, ông ấy đã giữ vững niềm tin của mình suốt cả cuộc đời.\""
+      tokens:
+        - { id: e3, text: 自らの信念を }
+        - { id: e5, text: 批判なりに、 }
+        - { id: e1, text: 彼は }
+        - { id: e4, text: 生涯貫いた }
+        - { id: e2, text: 批判をものともせず、 }
+    answer:
+      orders:
+        - [e1, e2, e3, e4]
+    explanation:
+      vi: 批判をものともせず - không nao núng trước lời chỉ trích (khen người kiên định); 自らの信念を生涯貫いた - giữ vững niềm tin cả đời. 批判なりに là vô nghĩa - なりに không đi với lời chỉ trích của người khác.
+    display_answer: 彼は批判をものともせず、自らの信念を生涯貫いた。

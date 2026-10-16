@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u4-headlines
+order_index: 3
+level: n2
+title:
+  vi: Đọc tiêu đề báo và từ Hán ngữ trong tin tức
+objectives:
+  - vi: Hiểu tiêu đề báo rút gọn - lược trợ từ, kết bằng danh từ, ～へ, ～か.
+  - vi: Nhận ra và đọc đúng từ Hán ngữ hay gặp trong tin tức (政府, 発生, 逮捕, 被害, 方針, 値上げ).
+  - vi: Viết lại tiêu đề thành câu đầy đủ.
+estimated_minutes: 24
+skills: [reading, vocabulary, grammar]
+prerequisites: [ja:lesson:n2-u4-partial-negation]
+items:
+  - item: ja:item:n2-u4-seifu
+  - item: ja:item:n2-u4-hassei
+  - item: ja:item:n2-u4-taiho
+  - item: ja:item:n2-u4-higai
+  - item: ja:item:n2-u4-houshin
+  - item: ja:item:n2-u4-neage
+  - item: ja:item:n2-u4-gram-midashi
+body:
+  - type: objective
+    text:
+      vi: Tiêu đề báo Nhật ngắn như điện tín - không trợ từ, không です, đầy chữ Hán. Sau bài này bạn đọc được một dòng tiêu đề và biết sự việc đã xảy ra, sắp xảy ra hay mới chỉ là nghi vấn.
+  - type: explain
+    text:
+      vi: 'Quy tắc 1 - lược trợ từ và đuôi câu: 政府、来年度から電気料金値上げへ = 政府は来年度から電気料金を値上げする方針だ. Dấu phẩy sau chủ ngữ thay cho は.'
+  - type: explain
+    text:
+      vi: 'Quy tắc 2 - kết bằng danh từ Hán ngữ (体言止め) = việc đã xảy ra: 東京で地震発生 (đã xảy ra động đất), 男を逮捕 (đã bắt). Động từ thể từ điển cũng chỉ việc đã xảy ra: 大雪で列車止まる (tàu đã dừng).'
+  - type: explain
+    text:
+      vi: 'Quy tắc 3 - đuôi đặc biệt: ～へ = sắp, có chủ trương (値上げへ); ～か = có lẽ, chưa xác nhận (原因は整備不良か). Từ Hán ngữ hay gặp: 政府 (chính phủ), 発生 (xảy ra), 逮捕 (bắt giữ), 被害 (thiệt hại), 方針 (chủ trương), 値上げ (tăng giá), 拡大 (mở rộng, lan rộng).'
+  - type: deep_explain
+    text:
+      vi: 'Lợi thế của người Việt: phần lớn từ Hán ngữ trong tin tức có âm Hán Việt gần nghĩa - 政府 (chính phủ), 発生 (phát sinh), 被害 (bị hại), 方針 (phương châm), 拡大 (khuếch đại). Đoán nghĩa qua Hán Việt rồi kiểm tra ngữ cảnh. Nhưng cẩn thận: 逮捕 (đãi bộ) không gợi nghĩa "bắt giữ" với người Việt, còn 方針 trong tiếng Nhật gần với "chủ trương" hơn "phương châm".'
+  - type: example
+    target: 政府、来年度から電気料金値上げへ
+    target_lang: ja
+    translation:
+      vi: (Tiêu đề) Chính phủ sẽ tăng giá điện từ năm tài khoá tới.
+  - type: example
+    target: 東京で震度5弱の地震発生
+    target_lang: ja
+    translation:
+      vi: (Tiêu đề) Động đất cấp 5 yếu xảy ra ở Tokyo.
+  - type: example
+    target: 強盗の疑いで男を逮捕
+    target_lang: ja
+    translation:
+      vi: (Tiêu đề) Bắt giữ một người đàn ông vì tình nghi cướp.
+  - type: example
+    target: 台風10号、九州で被害拡大
+    target_lang: ja
+    translation:
+      vi: (Tiêu đề) Bão số 10 - thiệt hại lan rộng ở Kyushu.
+  - type: example
+    target: 事故の原因は整備不良か
+    target_lang: ja
+    translation:
+      vi: (Tiêu đề) Nguyên nhân tai nạn nghi do bảo dưỡng kém.
+  - type: common_mistake
+    wrong: 政府は来年度から電気料金を値上げした。
+    right: 政府は来年度から電気料金を値上げする方針だ。
+    target_lang: ja
+    note:
+      vi: Tiêu đề 値上げへ là "sắp tăng, có chủ trương tăng", không phải "đã tăng". Khi kể lại phải dùng ～する方針だ / ～する見通しだ.
+  - type: common_mistake
+    wrong: 警察は男に逮捕した。
+    right: 警察は男を逮捕した。
+    target_lang: ja
+    note:
+      vi: 逮捕する là tha động từ - người bị bắt đi với を. Bị động - 男が逮捕された.
+  - type: summary
+    points:
+      - vi: Tiêu đề lược は/が/を, です; dấu phẩy thay cho は.
+      - vi: Kết bằng danh từ Hán ngữ / động từ thể từ điển - việc đã xảy ra.
+      - vi: ～へ - sắp, có chủ trương; ～か - có lẽ, chưa xác nhận.
+      - vi: 政府, 発生, 逮捕, 被害, 方針, 値上げ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u4-headlines-mcq-he
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-gram-midashi
+    prompt:
+      stem: Tiêu đề 「政府、来年度から電気料金値上げへ」 có nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: a6p, text: Chính phủ có chủ trương tăng giá điện từ năm tài khoá tới., lang: vi }
+        - { id: k1z, text: Chính phủ đã tăng giá điện từ năm nay., lang: vi }
+        - { id: v8g, text: Chính phủ phản đối việc tăng giá điện., lang: vi }
+        - { id: e3s, text: Giá điện năm tới sẽ giảm., lang: vi }
+    answer:
+      correct_option_id: a6p
+    explanation:
+      vi: ～へ ở cuối tiêu đề - sắp, có chủ trương (chưa xảy ra). 来年度 - năm tài khoá tới; 値上げ - tăng giá.
+    display_answer: Chính phủ có chủ trương tăng giá điện từ năm tài khoá tới.
+
+  - key: ja:exercise:n2-u4-headlines-listen-hassei
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-hassei
+    prompt:
+      audio_asset_id: null
+      fallback_text: 今朝、東京で震度5弱の地震が発生しました。
+      options:
+        - { id: b5t, text: "Sáng nay, một trận động đất cấp 5 yếu đã xảy ra ở Tokyo.", lang: vi }
+        - { id: j2w, text: "Sáng nay, có dự báo động đất cấp 5 yếu sẽ xảy ra ở Tokyo.", lang: vi }
+        - { id: n7c, text: "Sáng nay, ở Tokyo không có động đất.", lang: vi }
+        - { id: h9m, text: "Sáng nay, động đất ở Tokyo gây thiệt hại lớn.", lang: vi }
+    answer:
+      correct_option_id: b5t
+    explanation:
+      vi: 地震が発生しました - động đất đã xảy ra. Câu không nói về dự báo hay thiệt hại.
+    display_answer: Sáng nay, một trận động đất cấp 5 yếu đã xảy ra ở Tokyo.
+
+  - key: ja:exercise:n2-u4-headlines-mcq-higai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-higai
+    prompt:
+      stem: 「被害」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: o4x, text: thiệt hại, lang: vi }
+        - { id: g8r, text: lợi ích, lang: vi }
+        - { id: s1y, text: nguyên nhân, lang: vi }
+        - { id: m6e, text: cứu trợ, lang: vi }
+    answer:
+      correct_option_id: o4x
+    explanation:
+      vi: 被害 (Hán Việt "bị hại") - thiệt hại. Lợi ích là 利益; nguyên nhân là 原因; cứu trợ là 救援 / 支援.
+    display_answer: thiệt hại
+
+  - key: ja:exercise:n2-u4-headlines-fill-taiho
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-taiho
+    prompt:
+      template: "警察は強盗の疑いで男を{{b1}}しました。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cảnh sát đã bắt giữ một người đàn ông vì tình nghi cướp."
+        - "Gợi ý: 'bắt giữ' - たいほ."
+    answer:
+      blanks:
+        b1: [逮捕, たいほ]
+    known_wrong:
+      - answer: 発生
+        feedback_vi: 発生 là sự việc xảy ra, không đi với 男を. "Bắt giữ" - 逮捕.
+        error_tag: vocab_meaning
+      - answer: 発表
+        feedback_vi: 発表 là công bố. Cảnh sát bắt người - 逮捕する.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 男を逮捕する - bắt giữ người đàn ông; 強盗の疑いで - vì tình nghi cướp.
+    display_answer: 警察は強盗の疑いで男を逮捕しました。
+
+  - key: ja:exercise:n2-u4-headlines-wb-houshin
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-houshin
+    prompt:
+      instruction: "Viết lại tiêu đề 「政府、来年度から電気料金値上げへ」 thành câu đầy đủ: \"Chính phủ có chủ trương tăng giá điện từ năm tài khoá tới.\""
+      tokens:
+        - { id: p3, text: 電気料金を }
+        - { id: p5, text: 値上げした方針だ }
+        - { id: p1, text: 政府は }
+        - { id: p4, text: 値上げする方針だ }
+        - { id: p2, text: 来年度から }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: V thể từ điển + 方針だ - có chủ trương sẽ... Chủ trương là việc tương lai nên không dùng thể quá khứ 値上げした.
+    display_answer: 政府は来年度から電気料金を値上げする方針だ。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u4-headlines-fill-higai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-higai
+    prompt:
+      template: "台風による{{b1}}が九州で広がっています。(thiệt hại)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [被害, ひがい]
+    known_wrong:
+      - answer: ひかい
+        feedback_vi: 害 đọc đục - ひがい.
+        error_tag: reading
+      - answer: 被災
+        feedback_vi: 被災 là "bị thiên tai" (被災地 - vùng bị thiên tai). Thiệt hại lan rộng - 被害が広がる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 台風による被害 - thiệt hại do bão; 広がる - lan rộng (tiêu đề viết 被害拡大).
+    display_answer: 台風による被害が九州で広がっています。
+
+  - key: ja:exercise:n2-u4-headlines-fill-houshin
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-houshin
+    prompt:
+      template: "政府は外国人労働者の受け入れを拡大する{{b1}}を決めた。(chủ trương)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [方針, ほうしん]
+    known_wrong:
+      - answer: ほしん
+        feedback_vi: ほう là âm dài - ほうしん.
+        error_tag: long_vowel
+      - answer: 対策
+        feedback_vi: 対策 là biện pháp đối phó (với một vấn đề). Đường lối, chủ trương - 方針.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ～する方針を決めた - đã quyết định chủ trương sẽ...
+    display_answer: 政府は外国人労働者の受け入れを拡大する方針を決めた。
+
+  - key: ja:exercise:n2-u4-headlines-translate-rewrite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-midashi
+    prompt:
+      source_text: "Viết lại tiêu đề 「大雪で列車止まる」 thành câu đầy đủ, lịch sự, thì quá khứ. (Do tuyết rơi dày, tàu đã dừng chạy.)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 大雪で列車が止まりました。
+        - 大雪のため列車が止まりました。
+        - 大雪のため、列車が止まりました。
+        - 大雪のために列車が止まりました。
+        - 大雪の影響で列車が止まりました。
+        - 大雪で列車が止まってしまいました。
+        - 大雪で電車が止まりました。
+        - 大雪のため電車が止まりました。
+        - 大雪で列車は止まりました。
+        - 大雪によって列車が止まりました。
+        - 大雪により列車が止まりました。
+        - おおゆきでれっしゃがとまりました。
+    known_wrong:
+      - answer: 大雪で列車を止まりました。
+        feedback_vi: 止まる là tự động từ - 列車が止まる.
+        error_tag: particle
+      - answer: 大雪で列車が止まります。
+        feedback_vi: Tiêu đề dùng thể từ điển nhưng sự việc đã xảy ra - câu đầy đủ dùng 止まりました.
+        error_tag: tense
+    explanation:
+      vi: Thêm trợ từ が và đuôi ました - 大雪で列車が止まりました. 大雪のため / 大雪の影響で cũng tự nhiên.
+    display_answer: 大雪で列車が止まりました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u4-headlines-mcq-ka
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-gram-midashi
+    prompt:
+      stem: Tiêu đề 「事故の原因は整備不良か」 (整備不良 - bảo dưỡng kém) cho biết điều gì?
+      stem_lang: vi
+      options:
+        - { id: c7k, text: "Nguyên nhân tai nạn có thể là do bảo dưỡng kém, nhưng chưa được xác nhận.", lang: vi }
+        - { id: t2h, text: Đã xác nhận chắc chắn nguyên nhân tai nạn là do bảo dưỡng kém., lang: vi }
+        - { id: l5d, text: Phóng viên hỏi độc giả nguyên nhân tai nạn là gì., lang: vi }
+        - { id: z9q, text: Tai nạn không phải do bảo dưỡng kém., lang: vi }
+    answer:
+      correct_option_id: c7k
+    explanation:
+      vi: ～か ở cuối tiêu đề - có lẽ, nghi vấn, chưa xác nhận. Đây không phải câu hỏi gửi độc giả.
+    display_answer: Nguyên nhân tai nạn có thể là do bảo dưỡng kém, nhưng chưa được xác nhận.
+
+  - key: ja:exercise:n2-u4-headlines-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-taiho
+    prompt:
+      source_text: 強盗の疑いで男を逮捕
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bắt giữ một người đàn ông vì tình nghi cướp.
+        - Bắt giữ một người đàn ông vì nghi cướp.
+        - Bắt giữ một người đàn ông vì nghi ngờ cướp.
+        - Bắt giữ người đàn ông vì tình nghi cướp.
+        - Bắt giữ người đàn ông vì nghi cướp.
+        - Bắt giữ người đàn ông vì nghi ngờ cướp.
+        - Bắt một người đàn ông vì tình nghi cướp.
+        - Bắt một người đàn ông vì nghi cướp.
+        - Bắt giữ một người đàn ông bị tình nghi cướp.
+        - Bắt giữ một người đàn ông vì tình nghi cướp tài sản.
+        - Bắt giữ một người đàn ông vì tình nghi trộm cướp.
+        - Một người đàn ông bị bắt vì tình nghi cướp.
+        - Một người đàn ông bị bắt giữ vì tình nghi cướp.
+        - Một người đàn ông bị bắt vì nghi cướp.
+        - Cảnh sát bắt giữ một người đàn ông vì tình nghi cướp.
+        - Cảnh sát bắt một người đàn ông vì tình nghi cướp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Một người đàn ông bị cướp.
+        feedback_vi: 強盗の疑いで逮捕 - bị bắt vì bị nghi là kẻ cướp, không phải nạn nhân.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 強盗の疑いで - vì tình nghi cướp; 男を逮捕 - bắt giữ người đàn ông (kết bằng danh từ - việc đã xảy ra).
+    display_answer: Bắt giữ một người đàn ông vì tình nghi cướp.
+
+  - key: ja:exercise:n2-u4-headlines-wb-neage
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-neage
+    prompt:
+      instruction: "Sắp xếp thành tiêu đề báo: \"Chính phủ sẽ tăng giá điện từ năm tài khoá tới.\""
+      tokens:
+        - { id: n3, text: 電気料金 }
+        - { id: n5, text: 値上げか }
+        - { id: n1, text: 政府、 }
+        - { id: n4, text: 値上げへ }
+        - { id: n2, text: 来年度から }
+    answer:
+      orders:
+        - [n1, n2, n3, n4]
+    explanation:
+      vi: ～へ - sắp, có chủ trương (đã có quyết định). ～か chỉ là nghi vấn, chưa xác nhận - không hợp với "sẽ tăng".
+    display_answer: 政府、来年度から電気料金値上げへ
+
+  - key: ja:exercise:n2-u4-headlines-mcq-kakudai
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-higai
+    prompt:
+      stem: Câu nào diễn đạt đúng nội dung tiêu đề 「台風10号、九州で被害拡大」?
+      stem_lang: vi
+      options:
+        - { id: x5f, text: 台風10号の影響で、九州で被害が広がっている。, lang: ja }
+        - { id: i3b, text: 台風10号は九州に来ないそうだ。, lang: ja }
+        - { id: u8w, text: 九州では台風10号の被害は小さかった。, lang: ja }
+        - { id: q1n, text: 台風10号の被害を九州で調べるつもりだ。, lang: ja }
+    answer:
+      correct_option_id: x5f
+    explanation:
+      vi: 被害拡大 - thiệt hại lan rộng (拡大 = mở rộng). Viết lại thành câu - 被害が広がっている.
+    display_answer: 台風10号の影響で、九州で被害が広がっている。

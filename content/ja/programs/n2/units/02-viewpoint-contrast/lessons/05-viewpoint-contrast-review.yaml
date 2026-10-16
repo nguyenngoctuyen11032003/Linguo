@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-viewpoint-contrast-review
+order_index: 5
+level: n2
+title:
+  vi: "Ôn tập: đọc bài bình luận đa góc nhìn"
+objectives:
+  - vi: Đọc hiểu bài bình luận ngắn nêu hiện trạng, bối cảnh và nhiều góc nhìn khác nhau.
+  - vi: Xác định ý tác giả qua các mẫu tương phản ものの, にもかかわらず, どころか.
+  - vi: Viết câu nêu quan điểm có giới hạn, bổ sung và tương phản.
+estimated_minutes: 26
+skills: [reading, writing, grammar]
+prerequisites: [ja:lesson:n2-u2-monono-kuseni]
+items:
+  - item: ja:item:n2-u2-genjou
+  - item: ja:item:n2-u2-kadai
+  - item: ja:item:n2-u2-haikei
+  - item: ja:item:n2-u2-ichigai-ni
+  - item: ja:item:n2-u2-gram-ni-totte
+    role: reuse
+  - item: ja:item:n2-u2-gram-kara-suru-to
+    role: reuse
+  - item: ja:item:n2-u2-gram-ni-kagirazu
+    role: reuse
+  - item: ja:item:n2-u2-gram-dokoroka
+    role: reuse
+  - item: ja:item:n2-u2-gram-monono
+    role: reuse
+  - item: ja:item:n2-u2-gram-nimo-kakawarazu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn cuối unit đưa bạn vào dạng đọc 内容理解 của JLPT N2 - một đoạn bình luận trình bày hiện trạng, nguyên nhân, nhìn vấn đề từ nhiều phía rồi đưa ra kết luận dè dặt.
+  - type: explain
+    text:
+      vi: 'Khung bài bình luận: hiện trạng (～のが現状だ), bối cảnh (～の背景には～がある), các góc nhìn (～にとって / ～からすると / ～としては), tương phản (～ものの / ～にもかかわらず), kết luận dè dặt (一概に～とは言えない / ～のではないだろうか).'
+  - type: explain
+    text:
+      vi: 'Từ hay gặp: 現状 (hiện trạng), 課題 (vấn đề cần giải quyết), 背景 (bối cảnh), 一概に～ない (không thể nói chung chung). Đi kèm từ unit: 立場, 観点, 負担, 世代, 対象, 改善, 悪化.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo đọc: câu sau ものの / にもかかわらず / しかし thường chứa điều tác giả muốn nhấn mạnh. どころか báo hiệu thực tế đi ngược kỳ vọng. Khi tác giả viết 一概に～とは言えない, họ đang bác bỏ một nhận định quá chung chung - đáp án đúng thường là phương án "tuỳ trường hợp", chứ không phải khẳng định một chiều.'
+  - type: example
+    target: 人手不足が続いているのが現状です。
+    target_lang: ja
+    translation:
+      vi: Hiện trạng là tình trạng thiếu nhân lực vẫn tiếp diễn.
+  - type: example
+    target: 少子化の背景には、教育費の高さがあります。
+    target_lang: ja
+    translation:
+      vi: Đằng sau tình trạng ít sinh con là chi phí giáo dục cao.
+  - type: example
+    target: 高齢化は多くの国にとって大きな課題です。
+    target_lang: ja
+    translation:
+      vi: Già hoá dân số là thách thức lớn đối với nhiều quốc gia.
+  - type: example
+    target: 若者は本を読まないとは、一概には言えません。
+    target_lang: ja
+    translation:
+      vi: Không thể nói chung chung rằng giới trẻ không đọc sách.
+  - type: common_mistake
+    wrong: 若者は本を読まないと、一概に言えます。
+    right: 若者は本を読まないとは、一概には言えません。
+    target_lang: ja
+    note:
+      vi: 一概に luôn đi với phủ định - 一概に～とは言えない. Không dùng với câu khẳng định.
+  - type: common_mistake
+    wrong: 少子化の背景は、教育費の高さがあります。
+    right: 少子化の背景には、教育費の高さがあります。
+    target_lang: ja
+    note:
+      vi: Cụm cố định ～の背景には～がある (ở phía sau ～ có ～). Nếu dùng は thì đổi động từ - 背景は教育費の高さだ.
+  - type: summary
+    points:
+      - vi: 現状, 課題, 背景, 一概に～ない - từ khoá của bài bình luận.
+      - vi: Góc nhìn - ～にとって, ～からすると; phạm vi - ～に限らず.
+      - vi: Tương phản - ～ものの, ～にもかかわらず, ～どころか; ý chính thường ở vế sau.
+      - vi: Kết luận dè dặt - 一概に～とは言えない, ～のではないだろうか.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-viewpoint-contrast-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u2-genjou
+    prompt:
+      stem: "Đọc: 「多くの企業がテレワークを導入したものの、実際に利用している社員は半分以下というのが現状だ。その背景には、上司の目が気になるという理由があるようだ。」 Câu nào đúng với đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: m3c, text: "Nhiều công ty đã áp dụng làm việc từ xa, nhưng thực tế chưa đến một nửa nhân viên sử dụng.", lang: vi }
+        - { id: w8e, text: Hơn một nửa nhân viên đang làm việc từ xa mỗi ngày., lang: vi }
+        - { id: d5j, text: Cấp trên cấm nhân viên làm việc từ xa., lang: vi }
+        - { id: r1t, text: Rất ít công ty áp dụng chế độ làm việc từ xa., lang: vi }
+    answer:
+      correct_option_id: m3c
+    explanation:
+      vi: 導入したものの - tuy đã áp dụng; 利用している社員は半分以下 - số nhân viên dùng dưới một nửa; 上司の目が気になる - ngại ánh mắt cấp trên (không phải bị cấm).
+    display_answer: "Nhiều công ty đã áp dụng làm việc từ xa, nhưng thực tế chưa đến một nửa nhân viên sử dụng."
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-listen-haikei
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u2-haikei
+    prompt:
+      audio_asset_id: null
+      fallback_text: 少子化の背景には、教育費の高さがあります。
+      options:
+        - { id: g2y, text: Đằng sau tình trạng ít sinh con là chi phí giáo dục cao., lang: vi }
+        - { id: k7s, text: Vì ít trẻ em nên chi phí giáo dục giảm xuống., lang: vi }
+        - { id: o4b, text: Chi phí giáo dục cao là kết quả của tình trạng đông dân., lang: vi }
+        - { id: z9h, text: Bối cảnh bức ảnh là một ngôi trường cao tầng., lang: vi }
+    answer:
+      correct_option_id: g2y
+    explanation:
+      vi: 少子化 - tình trạng ít sinh con; ～の背景には～がある - đằng sau ～ là ～; 教育費の高さ - chi phí giáo dục cao.
+    display_answer: Đằng sau tình trạng ít sinh con là chi phí giáo dục cao.
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-mcq-kadai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-kadai
+    prompt:
+      stem: 'Chọn từ phù hợp: 高齢化は多くの国にとって大きな＿＿です。早く対策を考えなければならない。'
+      stem_lang: vi
+      options:
+        - { id: e6n, text: 課題, lang: ja }
+        - { id: u3a, text: 背景, lang: ja }
+        - { id: y1q, text: 価値, lang: ja }
+        - { id: i8w, text: 立場, lang: ja }
+    answer:
+      correct_option_id: e6n
+    explanation:
+      vi: 課題 - vấn đề cần giải quyết (hợp với 対策を考える). 背景 là bối cảnh; 価値 là giá trị; 立場 là lập trường.
+    display_answer: 課題
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-fill-ichigai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-ichigai-ni
+    prompt:
+      template: "若者は本を読まないとは、{{b1}}には言えません。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Không thể nói chung chung rằng giới trẻ không đọc sách."
+        - "Gợi ý: phó từ 'nói chung chung', đọc là いちがい."
+    answer:
+      blanks:
+        b1: [一概, いちがい]
+    known_wrong:
+      - answer: 必ず
+        feedback_vi: 必ず là "nhất định"; 必ずには không phải cách nói. "Không thể nói chung chung" là 一概には言えない.
+        error_tag: vocab_meaning
+      - answer: いっかい
+        feedback_vi: Đọc là いちがい (一概), không phải いっかい (một lần).
+        error_tag: reading
+    explanation:
+      vi: 一概に(は)～とは言えない - không thể khái quát rằng ～.
+    display_answer: 若者は本を読まないとは、一概には言えません。
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-wb-genjou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-genjou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Hiện trạng là tình trạng thiếu nhân lực vẫn tiếp diễn.\""
+      tokens:
+        - { id: h3, text: 現状です }
+        - { id: h1, text: 人手不足が }
+        - { id: h4, text: 現在です }
+        - { id: h2, text: 続いているのが }
+    answer:
+      orders:
+        - [h1, h2, h3]
+    explanation:
+      vi: ～のが現状だ - hiện trạng là ～. 現在 chỉ thời điểm "hiện nay", không dùng trong khung này.
+    display_answer: 人手不足が続いているのが現状です。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-viewpoint-contrast-review-fill-haikei
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-haikei
+    prompt:
+      template: "この問題の{{b1}}{{b2}}、地方の人口減少があります。(đằng sau ... là)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [背景, はいけい]
+        b2: [には]
+    known_wrong:
+      - answer: 原因
+        feedback_vi: 原因 là nguyên nhân trực tiếp; cụm ～の＿＿には～がある dùng 背景.
+        error_tag: vocab_meaning
+      - answer: はいけ
+        feedback_vi: けい là âm dài - はいけい.
+        error_tag: long_vowel
+    explanation:
+      vi: ～の背景には～がある - đằng sau ～ là ～. 人口減少 - giảm dân số.
+    display_answer: この問題の背景には、地方の人口減少があります。
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-translate-kagirazu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-ni-kagirazu
+    prompt:
+      source_text: Thiếu nhân lực không chỉ là vấn đề của các công ty nhỏ. (dùng に限らず và 課題)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 人手不足は中小企業に限らず、多くの企業の課題です。
+        - 人手不足は小さな会社に限らず、多くの会社の課題です。
+        - 人手不足は小さい会社に限らず、多くの会社の課題です。
+        - 人手不足は中小企業に限らず、多くの企業にとって課題です。
+        - 人手不足は中小企業に限らず、多くの企業にとっての課題です。
+        - 人手不足は中小企業に限らず、大企業にとっても課題です。
+        - 人手不足は中小企業に限らず、大企業の課題でもあります。
+        - 人手不足は小さな会社に限らず、大きな会社にとっても課題です。
+        - 人手不足は中小企業に限らず、どの企業にとっても課題です。
+        - 人手不足は中小企業に限らず、すべての企業の課題です。
+        - 人手不足は中小企業に限らず、多くの企業の課題だ。
+        - 人手不足は小さな企業に限らず、多くの企業の課題です。
+        - ひとでぶそくはちゅうしょうきぎょうにかぎらず、おおくのきぎょうのかだいです。
+    known_wrong:
+      - answer: 人手不足は中小企業に限り、多くの企業の課題です。
+        feedback_vi: に限り là "chỉ riêng" - mâu thuẫn với 多くの企業. Mở rộng phạm vi dùng に限らず.
+        error_tag: kagirazu_kagiri
+      - answer: 人手不足は中小企業に限って、多くの企業の課題です。
+        feedback_vi: に限って là "đúng lúc / riêng N thì" (trớ trêu, tin tưởng). "Không chỉ" là に限らず.
+        error_tag: kagirazu_kagitte
+    explanation:
+      vi: 中小企業に限らず - không chỉ doanh nghiệp vừa và nhỏ; 多くの企業の課題 - vấn đề của nhiều doanh nghiệp. Câu tiếng Việt ngắn gọn nên chấp nhận các cách bổ sung vế sau hợp lý.
+    display_answer: 人手不足は中小企業に限らず、多くの企業の課題です。
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-translate-karasuruto
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-kara-suru-to
+    prompt:
+      source_text: Từ phía người lao động mà nói, làm thêm giờ là một gánh nặng lớn. (dùng からすると)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 働く人からすると、残業は大きな負担です。
+        - 働く人からすると、残業は大きな負担だ。
+        - 働く人からすれば、残業は大きな負担です。
+        - 働く人からすれば、残業は大きな負担だ。
+        - 働く人の立場からすると、残業は大きな負担です。
+        - 働く人の立場からすれば、残業は大きな負担です。
+        - 労働者からすると、残業は大きな負担です。
+        - 労働者からすれば、残業は大きな負担です。
+        - 労働者の立場からすると、残業は大きな負担です。
+        - 社員からすると、残業は大きな負担です。
+        - 社員の立場からすると、残業は大きな負担です。
+        - 働く側からすると、残業は大きな負担です。
+        - はたらくひとからすると、ざんぎょうはおおきなふたんです。
+    known_wrong:
+      - answer: 働く人として、残業は大きな負担です。
+        feedback_vi: として là tư cách. "Từ phía người lao động mà nói" dùng からすると.
+        error_tag: karasuruto_toshite
+      - answer: 働く人からすると、残業は大きな価値です。
+        feedback_vi: 価値 là giá trị. Gánh nặng là 負担.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 働く人からすると - từ phía người lao động; 残業 - làm thêm giờ; 大きな負担 - gánh nặng lớn.
+    display_answer: 働く人からすると、残業は大きな負担です。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-viewpoint-contrast-review-mcq-author
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u2-gram-dokoroka
+    prompt:
+      stem: "Đọc: 「便利なアプリが増えたにもかかわらず、私たちの自由な時間は増えるどころか、むしろ減っている。もちろん、アプリが悪いと一概には言えない。問題は使い方にあるのではないだろうか。」 Ý của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: p6v, text: Thời gian rảnh giảm chủ yếu do cách dùng ứng dụng chứ không hẳn do bản thân ứng dụng., lang: vi }
+        - { id: c2k, text: Ứng dụng tiện lợi đã làm thời gian rảnh của chúng ta tăng lên., lang: vi }
+        - { id: j8d, text: Ứng dụng là thứ có hại nên mọi người nên ngừng sử dụng., lang: vi }
+        - { id: s4x, text: Số lượng ứng dụng tiện lợi đang giảm dần., lang: vi }
+    answer:
+      correct_option_id: p6v
+    explanation:
+      vi: 増えるどころか、むしろ減っている - chẳng những không tăng mà còn giảm; アプリが悪いと一概には言えない - không thể nói chung là ứng dụng xấu; 問題は使い方にあるのではないだろうか - ý chính ở câu cuối.
+    display_answer: Thời gian rảnh giảm chủ yếu do cách dùng ứng dụng chứ không hẳn do bản thân ứng dụng.
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u2-gram-nimo-kakawarazu
+    prompt:
+      source_text: 料金が上がったにもかかわらず、サービスは少しも改善されていない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mặc dù giá đã tăng nhưng dịch vụ không được cải thiện chút nào.
+        - Mặc dù phí đã tăng nhưng dịch vụ không được cải thiện chút nào.
+        - Mặc dù giá tăng nhưng dịch vụ chẳng được cải thiện chút nào.
+        - Mặc dù cước phí đã tăng nhưng dịch vụ không được cải thiện chút nào.
+        - Mặc dù giá đã tăng vậy mà dịch vụ không được cải thiện chút nào.
+        - Mặc dù giá đã tăng nhưng dịch vụ vẫn chưa được cải thiện chút nào.
+        - Mặc dù tăng giá nhưng dịch vụ không hề được cải thiện.
+        - Mặc dù giá đã tăng nhưng dịch vụ không hề được cải thiện.
+        - Mặc dù phí đã tăng nhưng dịch vụ không hề được cải thiện.
+        - Dù giá đã tăng nhưng dịch vụ không được cải thiện chút nào.
+        - Dù phí đã tăng nhưng dịch vụ chẳng được cải thiện chút nào.
+        - Giá đã tăng vậy mà dịch vụ không được cải thiện chút nào.
+        - Bất chấp việc giá tăng, dịch vụ không được cải thiện chút nào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì giá đã tăng nên dịch vụ được cải thiện.
+        feedback_vi: にもかかわらず là "mặc dù", không phải "vì"; 改善されていない là chưa được cải thiện (phủ định).
+        error_tag: kakawarazu_meaning
+    explanation:
+      vi: 料金が上がったにもかかわらず - mặc dù giá đã tăng; 少しも～ない - không chút nào; 改善されていない - không được cải thiện.
+    display_answer: Mặc dù giá đã tăng nhưng dịch vụ không được cải thiện chút nào.
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-wb-monono
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-monono
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Thành phố tuy đã đưa ra kế hoạch cải thiện nhưng vẫn chưa có kết quả.\""
+      tokens:
+        - { id: f2, text: 改善計画を発表したものの、 }
+        - { id: f4, text: 改善計画を発表するくせに、 }
+        - { id: f1, text: 市は }
+        - { id: f3, text: まだ成果が出ていない }
+    answer:
+      orders:
+        - [f1, f2, f3]
+    explanation:
+      vi: 発表したものの - tuy đã công bố; まだ成果が出ていない - vẫn chưa có kết quả. くせに là văn nói chê trách, không hợp với văn bình luận về chính quyền.
+    display_answer: 市は改善計画を発表したものの、まだ成果が出ていない。
+
+  - key: ja:exercise:n2-viewpoint-contrast-review-mcq-write
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u2-gram-ni-totte
+    prompt:
+      stem: Bạn viết câu kết cho bài luận về xe tự lái, nêu cả hai góc nhìn một cách dè dặt. Câu nào đúng và phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: l5r, text: 自動運転は高齢者にとって便利なものの、安全面の課題も残っているのではないだろうか。, lang: ja }
+        - { id: n9g, text: 自動運転は高齢者に対して便利なくせに、安全面の課題も残っているのではないだろうか。, lang: ja }
+        - { id: b3m, text: 自動運転は高齢者として便利などころか、安全面の課題も残っているのではないだろうか。, lang: ja }
+        - { id: t7f, text: 自動運転は高齢者にとって便利にもかかわらず、一概に安全です。, lang: ja }
+    answer:
+      correct_option_id: l5r
+    explanation:
+      vi: 高齢者にとって便利 (đánh giá từ góc nhìn người cao tuổi) + なAな + ものの + kết luận dè dặt のではないだろうか - đúng. くせに không hợp văn luận; として sai nghĩa; 一概に phải đi với phủ định.
+    display_answer: 自動運転は高齢者にとって便利なものの、安全面の課題も残っているのではないだろうか。

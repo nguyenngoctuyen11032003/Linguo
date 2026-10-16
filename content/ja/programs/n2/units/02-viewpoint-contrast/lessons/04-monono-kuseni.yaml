@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u2-monono-kuseni
+order_index: 4
+level: n2
+title:
+  vi: Tương phản - ～ものの, ～にもかかわらず, ～くせに
+objectives:
+  - vi: Nói "tuy A nhưng thực tế B" bằng ～ものの.
+  - vi: Nói "mặc dù A (vậy mà) B" trang trọng bằng ～にもかかわらず.
+  - vi: Nhận ra sắc thái chê trách của ～くせに và tránh dùng sai chỗ.
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n2-u2-bakarika-dokoroka]
+items:
+  - item: ja:item:n2-u2-doryoku
+  - item: ja:item:n2-u2-kekkyoku
+  - item: ja:item:n2-u2-monku
+  - item: ja:item:n2-u2-akutenkou
+  - item: ja:item:n2-u2-gram-monono
+  - item: ja:item:n2-u2-gram-nimo-kakawarazu
+  - item: ja:item:n2-u2-gram-kuseni
+  - item: ja:item:n3-gram-noni
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Ở N3 bạn đã có のに. Bài này thêm ba cách nói tương phản theo ba sắc thái - ものの (thừa nhận rồi tiếc nuối), にもかかわらず (trang trọng, khách quan), くせに (chê trách, cảm xúc).
+  - type: explain
+    text:
+      vi: 'A ものの B - tuy A (là thật) nhưng B không như mong đợi: 免許は取ったものの、一度も運転していない. Nối: V/いA thể thường, なAな / である, N である. Cụm hay gặp: とは言うものの (nói thì nói vậy nhưng).'
+  - type: explain
+    text:
+      vi: 'A にもかかわらず B - mặc dù A, vậy mà B (trái với lẽ thường). Dùng trong văn viết, tin tức, phát biểu: 悪天候にもかかわらず、大勢の人が集まった. Nối: V/いA thể thường, なA / N (である) + にもかかわらず.'
+  - type: explain
+    text:
+      vi: 'A くせに B - đã A vậy mà B; người nói bực bội, chê trách. Văn nói, thân mật: 知っているくせに、教えてくれない. Nối: V/いA thể thường, なAな, Nの (子どものくせに).'
+  - type: deep_explain
+    text:
+      vi: 'So sánh với のに (N3): のに mang cảm xúc tiếc nuối, bất mãn, dùng được cho cả mình. ものの bình tĩnh hơn, vế sau là sự thật, không mang mệnh lệnh hay ý chí. にもかかわらず khách quan, trang trọng nhất. くせに là mạnh nhất, chỉ để chê người khác và chủ ngữ hai vế phải là cùng một người - không dùng với cấp trên, khách hàng hay trong văn bản.'
+  - type: example
+    target: 大学を卒業したものの、まだ仕事が見つかりません。
+    target_lang: ja
+    translation:
+      vi: Tuy đã tốt nghiệp đại học nhưng tôi vẫn chưa tìm được việc.
+  - type: example
+    target: 悪天候にもかかわらず、大勢の人が集まりました。
+    target_lang: ja
+    translation:
+      vi: Mặc dù thời tiết xấu, rất nhiều người đã tập trung.
+  - type: example
+    target: 自分では何もしないくせに、人の仕事に文句ばかり言う。
+    target_lang: ja
+    translation:
+      vi: Bản thân chẳng làm gì vậy mà toàn phàn nàn về việc của người khác.
+  - type: example
+    target: 長い時間話し合ったものの、結局何も決まらなかった。
+    target_lang: ja
+    translation:
+      vi: Dù đã bàn bạc rất lâu nhưng rốt cuộc chẳng quyết định được gì.
+  - type: common_mistake
+    wrong: 部長は知っているくせに、教えてくださいません。
+    right: 部長はご存じなのに、教えてくださいません。
+    target_lang: ja
+    note:
+      vi: くせに là lời chê trách thô, không dùng khi nói về cấp trên (và không đi cùng kính ngữ). Dùng のに để bày tỏ sự tiếc nuối nhẹ nhàng hơn.
+  - type: common_mistake
+    wrong: 忙しいものの、手伝ってください。
+    right: 忙しいとは思いますが、手伝ってください。
+    target_lang: ja
+    note:
+      vi: Vế sau ものの là sự thật đã / đang xảy ra, không dùng mệnh lệnh, nhờ vả hay ý chí (～てください, ～つもり).
+  - type: summary
+    points:
+      - vi: 努力, 結局, 文句, 悪天候 - 努力する, 結局～なかった, 文句を言う, 悪天候にもかかわらず.
+      - vi: ～ものの - tuy... nhưng (thừa nhận rồi kết quả không như mong đợi).
+      - vi: ～にもかかわらず - mặc dù (trang trọng); khác にかかわらず (không phụ thuộc).
+      - vi: ～くせに - vậy mà (chê trách, văn nói, chỉ cho người khác).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u2-monono-kuseni-mcq-kekkyoku
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u2-kekkyoku
+    prompt:
+      stem: 「結局」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: h3u, text: rốt cuộc, lang: vi }
+        - { id: q8c, text: ngay lập tức, lang: vi }
+        - { id: l1y, text: lần đầu tiên, lang: vi }
+        - { id: v6n, text: đáng tiếc, lang: vi }
+    answer:
+      correct_option_id: h3u
+    explanation:
+      vi: 結局 - rốt cuộc, cuối cùng thì (kết quả sau nhiều diễn biến). Ngay lập tức là すぐに; lần đầu là 初めて; đáng tiếc là 残念.
+    display_answer: rốt cuộc
+
+  - key: ja:exercise:n2-u2-monono-kuseni-listen-monono
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u2-gram-monono
+    prompt:
+      audio_asset_id: null
+      fallback_text: 大学を卒業したものの、まだ仕事が見つかりません。
+      options:
+        - { id: b2r, text: Tuy đã tốt nghiệp đại học nhưng tôi vẫn chưa tìm được việc., lang: vi }
+        - { id: o7m, text: Vì đã tốt nghiệp đại học nên tôi tìm được việc rồi., lang: vi }
+        - { id: e5w, text: Tôi chưa tốt nghiệp đại học nên chưa tìm việc., lang: vi }
+        - { id: k9a, text: Sau khi tìm được việc tôi sẽ tốt nghiệp đại học., lang: vi }
+    answer:
+      correct_option_id: b2r
+    explanation:
+      vi: 卒業したものの - tuy đã tốt nghiệp; まだ仕事が見つかりません - vẫn chưa tìm được việc.
+    display_answer: Tuy đã tốt nghiệp đại học nhưng tôi vẫn chưa tìm được việc.
+
+  - key: ja:exercise:n2-u2-monono-kuseni-mcq-kakawarazu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-nimo-kakawarazu
+    prompt:
+      stem: 'Chọn từ đúng: 平日＿＿、店は客でいっぱいだった。'
+      stem_lang: vi
+      options:
+        - { id: s4f, text: にもかかわらず, lang: ja }
+        - { id: g1t, text: にかかわらず, lang: ja }
+        - { id: z7d, text: くせに, lang: ja }
+        - { id: a3p, text: に限らず, lang: ja }
+    answer:
+      correct_option_id: s4f
+    explanation:
+      vi: Ngày thường (ít khách là lẽ thường) vậy mà vẫn đông - にもかかわらず. にかかわらず là "không phụ thuộc vào"; くせに để chê người; に限らず là "không chỉ".
+    display_answer: にもかかわらず
+
+  - key: ja:exercise:n2-u2-monono-kuseni-fill-monku
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-monku
+    prompt:
+      template: "彼はいつも料理に{{b1}}を言うが、自分では作らない。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Anh ta lúc nào cũng phàn nàn về đồ ăn nhưng bản thân thì không nấu."
+        - "Gợi ý: 'lời phàn nàn' - もんく."
+    answer:
+      blanks:
+        b1: [文句, もんく]
+    known_wrong:
+      - answer: 意見
+        feedback_vi: 意見を言う là nêu ý kiến (trung tính). Phàn nàn, càu nhàu là 文句を言う.
+        error_tag: vocab_meaning
+      - answer: もんぐ
+        feedback_vi: く không có dấu - もんく.
+        error_tag: dakuten
+    explanation:
+      vi: ～に文句を言う - phàn nàn về ～.
+    display_answer: 彼はいつも料理に文句を言うが、自分では作らない。
+
+  - key: ja:exercise:n2-u2-monono-kuseni-wb-akutenkou
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-akutenkou
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Mặc dù thời tiết xấu, rất nhiều người đã tập trung.\""
+      tokens:
+        - { id: c3, text: 集まりました }
+        - { id: c1, text: 悪天候 }
+        - { id: c4, text: くせに、 }
+        - { id: c2, text: にもかかわらず、大勢の人が }
+    answer:
+      orders:
+        - [c1, c2, c3]
+    explanation:
+      vi: N + にもかかわらず - mặc dù N. くせに dùng để chê trách người, không đi với thời tiết.
+    display_answer: 悪天候にもかかわらず、大勢の人が集まりました。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u2-monono-kuseni-fill-kuseni
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u2-gram-kuseni
+    prompt:
+      template: "弟は自分が悪い{{b1}}、謝ろうとしない。(vậy mà - chê trách)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [くせに]
+    known_wrong:
+      - answer: ものの
+        feedback_vi: ものの mang sắc thái bình tĩnh, thừa nhận. Chê trách em trai bằng văn nói - くせに.
+        error_tag: kuseni_monono
+      - answer: くせ
+        feedback_vi: Thiếu に - くせに.
+        error_tag: kuseni_form
+    explanation:
+      vi: いA thể thường + くせに - đã ... vậy mà (chê trách). 謝ろうとしない - không chịu xin lỗi.
+    display_answer: 弟は自分が悪いくせに、謝ろうとしない。
+
+  - key: ja:exercise:n2-u2-monono-kuseni-translate-monono
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-monono
+    prompt:
+      source_text: Tuy đã lấy được bằng lái nhưng tôi chưa lái xe lần nào. (dùng ものの)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 免許は取ったものの、一度も運転していません。
+        - 免許は取ったものの、一度も運転していない。
+        - 免許を取ったものの、一度も運転していません。
+        - 免許を取ったものの、一度も運転していない。
+        - 運転免許は取ったものの、一度も運転していません。
+        - 運転免許を取ったものの、一度も運転していません。
+        - 免許は取ったものの、まだ一度も運転していません。
+        - 免許を取ったものの、まだ一度も運転していません。
+        - 免許は取ったものの、一度も運転したことがありません。
+        - 免許を取ったものの、一度も運転したことがない。
+        - 免許は取ったものの、まだ運転したことがありません。
+        - めんきょはとったものの、いちどもうんてんしていません。
+    known_wrong:
+      - answer: 免許は取るものの、一度も運転していません。
+        feedback_vi: Việc lấy bằng đã xảy ra - dùng thể た (取ったものの).
+        error_tag: tense
+      - answer: 免許は取ったくせに、一度も運転していません。
+        feedback_vi: くせに dùng để chê người khác, không dùng nói về bản thân.
+        error_tag: kuseni_self
+    explanation:
+      vi: 免許を取る - lấy bằng lái; 取ったものの - tuy đã lấy; 一度も～ていない - chưa lần nào.
+    display_answer: 免許は取ったものの、一度も運転していません。
+
+  - key: ja:exercise:n2-u2-monono-kuseni-translate-doryoku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-doryoku
+    prompt:
+      source_text: Mặc dù đã nỗ lực mỗi ngày, tôi vẫn trượt kỳ thi. (dùng にもかかわらず)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 毎日努力したにもかかわらず、試験に落ちてしまった。
+        - 毎日努力したにもかかわらず、試験に落ちてしまいました。
+        - 毎日努力したにもかかわらず、試験に落ちた。
+        - 毎日努力したにもかかわらず、試験に落ちました。
+        - 毎日努力したにもかかわらず、試験に失敗した。
+        - 毎日努力したにもかかわらず、試験に失敗しました。
+        - 毎日努力したにもかかわらず、試験に失敗してしまった。
+        - 毎日努力していたにもかかわらず、試験に落ちてしまった。
+        - 毎日努力したにもかかわらず、私は試験に落ちてしまった。
+        - 毎日努力したにもかかわらず、不合格だった。
+        - 毎日努力したにもかかわらず、不合格でした。
+        - まいにちどりょくしたにもかかわらず、しけんにおちてしまった。
+    known_wrong:
+      - answer: 毎日努力したにかかわらず、試験に落ちてしまった。
+        feedback_vi: Thiếu も - にもかかわらず (mặc dù). にかかわらず là "không phụ thuộc vào".
+        error_tag: kakawarazu_mo
+      - answer: 毎日努力したにもかかわらず、試験に合格した。
+        feedback_vi: 合格 là đỗ - ngược nghĩa; にもかかわらず cũng không hợp với kết quả đúng như mong đợi.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 努力したにもかかわらず - mặc dù đã nỗ lực; 試験に落ちる - trượt kỳ thi; ～てしまった - tiếc nuối.
+    display_answer: 毎日努力したにもかかわらず、試験に落ちてしまった。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u2-monono-kuseni-mcq-register
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-nimo-kakawarazu
+    prompt:
+      stem: 'Bạn viết bản tin công ty: "Mặc dù là lần đầu tổ chức, sự kiện đã thu hút 500 người." Câu nào phù hợp nhất với văn bản?'
+      stem_lang: vi
+      options:
+        - { id: y2h, text: 初めての開催にもかかわらず、500人が参加しました。, lang: ja }
+        - { id: t6b, text: 初めての開催のくせに、500人が参加しました。, lang: ja }
+        - { id: j4z, text: 初めての開催にかかわらず、500人が参加しました。, lang: ja }
+        - { id: x8k, text: 初めての開催どころか、500人が参加しました。, lang: ja }
+    answer:
+      correct_option_id: y2h
+    explanation:
+      vi: Văn bản trang trọng, kết quả vượt lẽ thường - にもかかわらず. くせに là chê trách; にかかわらず là "không phụ thuộc"; どころか phủ nhận "lần đầu" - sai.
+    display_answer: 初めての開催にもかかわらず、500人が参加しました。
+
+  - key: ja:exercise:n2-u2-monono-kuseni-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u2-gram-kuseni
+    prompt:
+      source_text: 彼は何も知らないくせに、いつも偉そうに話す。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ta chẳng biết gì vậy mà lúc nào cũng nói chuyện ra vẻ ta đây.
+        - Anh ta chẳng biết gì cả vậy mà lúc nào cũng nói chuyện ra vẻ ta đây.
+        - Anh ấy chẳng biết gì vậy mà lúc nào cũng nói chuyện ra vẻ ta đây.
+        - Anh ta không biết gì vậy mà lúc nào cũng nói chuyện ra vẻ ta đây.
+        - Anh ta chẳng biết gì mà lúc nào cũng nói năng ra vẻ ta đây.
+        - Anh ta chẳng biết gì mà lúc nào cũng ăn nói ra vẻ ta đây.
+        - Anh ta chẳng biết gì vậy mà lúc nào cũng nói như ta đây.
+        - Anh ta chẳng biết gì thế mà lúc nào cũng nói giọng kẻ cả.
+        - Anh ta chẳng biết gì vậy mà lúc nào cũng nói giọng kẻ cả.
+        - Anh ta chẳng biết gì vậy mà luôn nói chuyện ra vẻ ta đây.
+        - Anh ta chẳng biết gì vậy mà lúc nào cũng nói như thể mình giỏi lắm.
+        - Anh ta không biết gì cả thế mà lúc nào cũng lên mặt.
+        - Anh ta chẳng biết gì vậy mà lúc nào cũng lên mặt dạy đời.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì anh ta không biết gì nên lúc nào cũng nói chuyện khiêm tốn.
+        feedback_vi: くせに là "vậy mà" (chê trách), không phải "vì... nên"; 偉そうに là ra vẻ ta đây, không phải khiêm tốn.
+        error_tag: kuseni_meaning
+    explanation:
+      vi: 何も知らないくせに - chẳng biết gì vậy mà; 偉そうに話す - nói chuyện ra vẻ ta đây, kẻ cả.
+    display_answer: Anh ta chẳng biết gì vậy mà lúc nào cũng nói chuyện ra vẻ ta đây.
+
+  - key: ja:exercise:n2-u2-monono-kuseni-wb-kekkyoku
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-monono
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Dù đã bàn bạc rất lâu nhưng rốt cuộc chẳng quyết định được gì.\""
+      tokens:
+        - { id: n4, text: 何も決まらなかった }
+        - { id: n2, text: 話し合ったものの、 }
+        - { id: n5, text: 話し合うものの、 }
+        - { id: n1, text: 長い時間 }
+        - { id: n3, text: 結局 }
+    answer:
+      orders:
+        - [n1, n2, n3, n4]
+    explanation:
+      vi: 話し合ったものの - tuy đã bàn bạc (việc đã xảy ra, thể た); 結局何も決まらなかった - rốt cuộc chẳng quyết định được gì.
+    display_answer: 長い時間話し合ったものの、結局何も決まらなかった。
+
+  - key: ja:exercise:n2-u2-monono-kuseni-mcq-kuseni
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u2-gram-kuseni
+    prompt:
+      stem: Trong các câu sau, câu nào dùng くせに đúng và tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: f5c, text: 兄は料理ができないくせに、母の料理に文句ばかり言う。, lang: ja }
+        - { id: u1v, text: 私は料理ができないくせに、毎日自分で作っています。, lang: ja }
+        - { id: p7g, text: 社長はお忙しいくせに、会議に出てくださいました。, lang: ja }
+        - { id: d3x, text: 雨のくせに、試合は予定どおり行われました。, lang: ja }
+    answer:
+      correct_option_id: f5c
+    explanation:
+      vi: くせに chê người khác, chủ ngữ hai vế là một người (兄). Không dùng cho bản thân, cho cấp trên kèm kính ngữ, hay cho thời tiết - câu cuối nên dùng にもかかわらず.
+    display_answer: 兄は料理ができないくせに、母の料理に文句ばかり言う。

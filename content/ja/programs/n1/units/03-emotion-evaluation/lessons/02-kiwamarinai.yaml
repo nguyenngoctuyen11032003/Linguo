@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u3-kiwamarinai
+order_index: 2
+level: n1
+title:
+  vi: Mức độ tột cùng - ～極まりない, ～の極み, ～の至り
+objectives:
+  - vi: Phê phán mạnh bằng なA + 極まりない / 極まる.
+  - vi: Diễn tả trạng thái đạt cực điểm bằng N + の極み.
+  - vi: Bày tỏ cảm xúc trang trọng của bản thân bằng N + の至り (光栄の至り, 恐縮の至り).
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n1-u3-te-yamanai]
+items:
+  - item: ja:item:n1-u3-burei
+  - item: ja:item:n1-u3-kouei
+  - item: ja:item:n1-u3-kyoushuku
+  - item: ja:item:n1-u3-gram-kiwamarinai
+  - item: ja:item:n1-u3-gram-no-kiwami
+  - item: ja:item:n1-u3-gram-no-itari
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn phân biệt được ba cách nói "cực kỳ" của N1 - một mẫu để phê phán, một mẫu cho trạng thái tột đỉnh, một mẫu để khiêm tốn bày tỏ vinh dự trong phát biểu.
+  - type: explain
+    text:
+      vi: '～極まりない / ～極まる - gốc tính từ な (đa số là từ Hán) + 極まりない: 失礼極まりない, 危険極まりない, 不愉快極まりない, 無礼極まりない. Gần như luôn là đánh giá tiêu cực. Dù có ない, nghĩa vẫn là "cực kỳ".'
+  - type: explain
+    text:
+      vi: '～の極み - N + の極み: đạt tới cực điểm. 贅沢の極み (xa xỉ tột bậc), 感激の極み (cảm động tột cùng), 疲労の極み (mệt mỏi cùng cực), 痛恨の極み (đau xót tột cùng).'
+  - type: explain
+    text:
+      vi: '～の至り - N + の至り: cảm xúc của người nói ở mức cao nhất, rất trang trọng. 光栄の至りです (vô cùng vinh dự), 恐縮の至りです (vô cùng áy náy), 感激の至り. Thành ngữ: 若気の至り - lỗi lầm do bồng bột tuổi trẻ.'
+  - type: deep_explain
+    text:
+      vi: 'Mẹo phân biệt theo từ loại và chủ thể: 極まりない gắn vào gốc tính từ な và thường nói về hành vi, sự việc bên ngoài (phê phán người khác); の極み và の至り gắn vào danh từ. の至り gần như chỉ dùng cho cảm xúc của chính mình trong lời phát biểu, thư từ; の極み rộng hơn, mô tả được cả trạng thái (疲労の極み). Vì thế ×危険の至り, ×光栄極まりない đều không tự nhiên.'
+  - type: example
+    target: 客に向かってあんな口をきくとは、無礼極まりない。
+    target_lang: ja
+    translation:
+      vi: Ăn nói như thế với khách thì thật vô lễ hết mức.
+  - type: example
+    target: 雨の夜に無灯火で自転車に乗るのは、危険極まりない。
+    target_lang: ja
+    translation:
+      vi: Đi xe đạp không đèn trong đêm mưa thì nguy hiểm hết mức.
+  - type: example
+    target: 温泉に入りながら星空を眺めるなんて、贅沢の極みだ。
+    target_lang: ja
+    translation:
+      vi: Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là xa xỉ tột bậc.
+  - type: example
+    target: このような賞をいただき、光栄の至りです。
+    target_lang: ja
+    translation:
+      vi: Được nhận giải thưởng như thế này là vinh dự vô cùng lớn đối với tôi.
+  - type: example
+    target: お忙しいところ、わざわざお越しいただき、恐縮の至りです。
+    target_lang: ja
+    translation:
+      vi: Quý vị bận rộn mà vẫn cất công đến tận nơi, tôi thật vô cùng áy náy.
+  - type: common_mistake
+    wrong: 彼の態度は失礼な極まりない。
+    right: 彼の態度は失礼極まりない。
+    target_lang: ja
+    note:
+      vi: 極まりない gắn thẳng vào gốc tính từ な - không chen な vào giữa.
+  - type: common_mistake
+    wrong: あの交差点は危険の至りだ。
+    right: あの交差点は危険極まりない。
+    target_lang: ja
+    note:
+      vi: の至り dành cho cảm xúc trang trọng của người nói (光栄, 恐縮, 感激); đánh giá một sự vật nguy hiểm dùng 極まりない.
+  - type: summary
+    points:
+      - vi: なA + 極まりない / 極まる - cực kỳ (thường phê phán).
+      - vi: N + の極み - tột đỉnh (贅沢の極み, 痛恨の極み).
+      - vi: N + の至り - vô cùng, trang trọng (光栄の至り, 恐縮の至り, 若気の至り).
+      - vi: 無礼 - vô lễ; 光栄 - vinh dự; 恐縮 - áy náy.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u3-kiwamarinai-mcq-kyoushuku
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u3-kyoushuku
+    prompt:
+      stem: 「恐縮です」 thường diễn tả cảm xúc gì?
+      stem_lang: vi
+      options:
+        - { id: a8m, text: áy náy vì được ưu ái hoặc làm phiền người khác, lang: vi }
+        - { id: k2s, text: sợ hãi vì gặp nguy hiểm, lang: vi }
+        - { id: v6e, text: tức giận vì bị đối xử bất công, lang: vi }
+        - { id: j4o, text: tự hào vì thành tích của mình, lang: vi }
+    answer:
+      correct_option_id: a8m
+    explanation:
+      vi: 恐縮 - ngại ngùng, áy náy khi nhận ưu ái hay làm phiền. Dù có chữ 恐 (sợ), nghĩa không phải sợ hãi.
+    display_answer: áy náy vì được ưu ái hoặc làm phiền người khác
+
+  - key: ja:exercise:n1-u3-kiwamarinai-listen-itari
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-gram-no-itari
+    prompt:
+      audio_asset_id: null
+      fallback_text: このような賞をいただき、光栄の至りです。
+      options:
+        - { id: c1x, text: Được nhận giải thưởng như thế này là vinh dự vô cùng lớn đối với tôi., lang: vi }
+        - { id: m5g, text: Tôi không xứng đáng nhận giải thưởng như thế này., lang: vi }
+        - { id: z9b, text: Giải thưởng như thế này cuối cùng cũng đến tay tôi., lang: vi }
+        - { id: e3u, text: Tôi đã trao giải thưởng này với niềm vinh dự., lang: vi }
+    answer:
+      correct_option_id: c1x
+    explanation:
+      vi: 賞をいただき - được nhận giải (khiêm nhường); 光栄の至りです - vô cùng vinh dự.
+    display_answer: Được nhận giải thưởng như thế này là vinh dự vô cùng lớn đối với tôi.
+
+  - key: ja:exercise:n1-u3-kiwamarinai-mcq-kiwami
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-no-kiwami
+    prompt:
+      stem: 'Chọn từ đúng: 一流シェフが目の前で料理してくれるなんて、贅沢＿＿だ。'
+      stem_lang: vi
+      options:
+        - { id: g7d, text: の極み, lang: ja }
+        - { id: u3n, text: 極まりない, lang: ja }
+        - { id: o1t, text: の至り, lang: ja }
+        - { id: w5h, text: を禁じ得ない, lang: ja }
+    answer:
+      correct_option_id: g7d
+    explanation:
+      vi: 贅沢の極み - xa xỉ tột bậc (N + の極み mô tả trạng thái). 極まりない thường để phê phán; の至り dành cho cảm xúc khiêm tốn như 光栄, 恐縮; を禁じ得ない cần danh từ cảm xúc.
+    display_answer: の極み
+
+  - key: ja:exercise:n1-u3-kiwamarinai-fill-burei
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u3-burei
+    prompt:
+      template: "客に向かってあんな口をきくとは、{{b1}}極まりない。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Ăn nói như thế với khách thì thật vô lễ hết mức."
+        - "Gợi ý: từ Hán 'vô lễ' - ぶれい."
+    answer:
+      blanks:
+        b1: [無礼, ぶれい]
+    known_wrong:
+      - answer: 無礼な
+        feedback_vi: 極まりない gắn thẳng vào gốc tính từ な - 無礼極まりない, không có な.
+        error_tag: kiwamarinai_form
+      - answer: 光栄
+        feedback_vi: 光栄 là vinh dự; câu này phê phán thái độ, cần 無礼.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 口をきく - ăn nói; 無礼極まりない - vô lễ hết mức.
+    display_answer: 客に向かってあんな口をきくとは、無礼極まりない。
+
+  - key: ja:exercise:n1-u3-kiwamarinai-wb-kiwamarinai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-kiwamarinai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đi xe đạp không đèn trong đêm mưa thì nguy hiểm hết mức.\""
+      tokens:
+        - { id: t2, text: 無灯火で自転車に乗るのは、 }
+        - { id: t4, text: 危険の至りだ }
+        - { id: t3, text: 危険極まりない }
+        - { id: t1, text: 雨の夜に }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: 危険極まりない - nguy hiểm hết mức. の至り không dùng để đánh giá sự việc nguy hiểm.
+    display_answer: 雨の夜に無灯火で自転車に乗るのは、危険極まりない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u3-kiwamarinai-fill-itari
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-no-itari
+    prompt:
+      template: "お忙しいところ、わざわざお越しいただき、恐縮の{{b1}}です。(vô cùng áy náy)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [至り, いたり]
+    known_wrong:
+      - answer: 極まりない
+        feedback_vi: Sau の dùng danh từ - 恐縮の至り. 極まりない gắn vào gốc tính từ な và thường để phê phán.
+        error_tag: itari_kiwamarinai
+      - answer: 限り
+        feedback_vi: 限りだ đi sau tính từ (嬉しい限り), không đi sau 恐縮の. Cụm cố định là 恐縮の至り.
+        error_tag: itari_kagiri
+    explanation:
+      vi: 恐縮の至りです - vô cùng áy náy (rất trang trọng, hay dùng trong thư, lời chào).
+    display_answer: お忙しいところ、わざわざお越しいただき、恐縮の至りです。
+
+  - key: ja:exercise:n1-u3-kiwamarinai-translate-shitsurei
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-gram-kiwamarinai
+    prompt:
+      source_text: Không chào hỏi một tiếng mà đã về thì thật thất lễ hết mức. (dùng 極まりない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 挨拶もせずに帰るなんて、失礼極まりない。
+        - 挨拶もしないで帰るなんて、失礼極まりない。
+        - 挨拶もせずに帰るとは、失礼極まりない。
+        - 挨拶もしないで帰るとは、失礼極まりない。
+        - 挨拶もせずに帰るのは、失礼極まりない。
+        - 挨拶もしないで帰るのは、失礼極まりない。
+        - 挨拶もせずに帰るなんて、失礼極まりないです。
+        - 一言の挨拶もせずに帰るなんて、失礼極まりない。
+        - 挨拶もせずに帰るなんて、無礼極まりない。
+        - 挨拶もせずに帰るなんて、失礼極まる。
+        - 挨拶もせずに帰ってしまうなんて、失礼極まりない。
+        - あいさつもせずにかえるなんて、しつれいきわまりない。
+    known_wrong:
+      - answer: 挨拶もせずに帰るなんて、失礼な極まりない。
+        feedback_vi: Không chen な - 失礼極まりない.
+        error_tag: kiwamarinai_form
+      - answer: 挨拶もせずに帰るなんて、失礼の至りだ。
+        feedback_vi: の至り dành cho cảm xúc khiêm tốn của người nói (光栄, 恐縮); phê phán hành vi dùng 極まりない.
+        error_tag: itari_kiwamarinai
+    explanation:
+      vi: 挨拶もせずに - không chào hỏi một tiếng; ～なんて / ～とは - (bày tỏ ngạc nhiên, phê phán); 失礼極まりない - thất lễ hết mức.
+    display_answer: 挨拶もせずに帰るなんて、失礼極まりない。
+
+  - key: ja:exercise:n1-u3-kiwamarinai-translate-kouei
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-kouei
+    prompt:
+      source_text: Được mời phát biểu tại một nơi như thế này, tôi vô cùng vinh dự. (dùng の至り)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - このような場でお話しする機会をいただき、光栄の至りです。
+        - このような場でスピーチの機会をいただき、光栄の至りです。
+        - このような場にお招きいただき、光栄の至りです。
+        - このような場で話す機会をいただき、光栄の至りです。
+        - このような場でお話しさせていただき、光栄の至りです。
+        - このような場でスピーチをさせていただき、光栄の至りです。
+        - このような場でご挨拶させていただき、光栄の至りです。
+        - このような場でお話しする機会をいただきまして、光栄の至りです。
+        - このような場でお話しする機会をいただき、光栄の至りでございます。
+        - こんな場でお話しする機会をいただき、光栄の至りです。
+        - このような場で発表する機会をいただき、光栄の至りです。
+        - このようなばでおはなしするきかいをいただき、こうえいのいたりです。
+    known_wrong:
+      - answer: このような場でお話しする機会をいただき、光栄極まりないです。
+        feedback_vi: 極まりない thường dùng để phê phán; bày tỏ vinh dự khiêm tốn dùng 光栄の至り.
+        error_tag: itari_kiwamarinai
+      - answer: このような場でお話しする機会をいただき、恐縮の至りです。
+        feedback_vi: 恐縮 là áy náy; câu đề bài là "vinh dự" - 光栄.
+        error_tag: vocab_meaning
+    explanation:
+      vi: このような場 - nơi như thế này; 機会をいただき - được trao cơ hội (khiêm nhường); 光栄の至りです - vô cùng vinh dự.
+    display_answer: このような場でお話しする機会をいただき、光栄の至りです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u3-kiwamarinai-mcq-choose
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-no-itari
+    prompt:
+      stem: Câu nào dùng mẫu "cực kỳ" đúng và tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: d2r, text: 若い頃に髪を真っ赤に染めたのは、若気の至りでした。, lang: ja }
+        - { id: n6c, text: あの店員の態度は、無礼の至りだった。, lang: ja }
+        - { id: q4v, text: 賞をいただき、光栄極まりないです。, lang: ja }
+        - { id: y8a, text: 三日間徹夜して、疲労極まりないの極みだった。, lang: ja }
+    answer:
+      correct_option_id: d2r
+    explanation:
+      vi: 若気の至り - do bồng bột tuổi trẻ (thành ngữ). Phê phán thái độ dùng 無礼極まりない; vinh dự dùng 光栄の至り; câu cuối chồng hai mẫu sai - nên là 疲労の極みだった.
+    display_answer: 若い頃に髪を真っ赤に染めたのは、若気の至りでした。
+
+  - key: ja:exercise:n1-u3-kiwamarinai-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u3-gram-no-kiwami
+    prompt:
+      source_text: 温泉に入りながら星空を眺めるなんて、贅沢の極みだ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là xa xỉ tột bậc.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, thật là xa xỉ tột bậc.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao thì đúng là xa xỉ tột bậc.
+        - Vừa tắm suối nước nóng vừa ngắm bầu trời sao, đúng là xa xỉ tột bậc.
+        - Vừa ngâm onsen vừa ngắm bầu trời sao, đúng là xa xỉ tột bậc.
+        - Vừa ngâm suối nước nóng vừa ngắm trời sao, đúng là xa xỉ tột bậc.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời đầy sao, đúng là xa xỉ tột bậc.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là sang chảnh tột cùng.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là xa xỉ tột cùng.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là xa hoa tột bậc.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là đỉnh cao của sự xa xỉ.
+        - Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, quả là xa xỉ tột bậc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là lãng phí hết mức.
+        feedback_vi: 贅沢の極み ở đây là cảm giác sung sướng, xa xỉ tột bậc - mang nghĩa tích cực, không phải chê lãng phí.
+        error_tag: kiwami_meaning
+    explanation:
+      vi: ～ながら - vừa... vừa; 星空を眺める - ngắm trời sao; 贅沢の極み - xa xỉ tột bậc (khen trải nghiệm tuyệt vời).
+    display_answer: Vừa ngâm suối nước nóng vừa ngắm bầu trời sao, đúng là xa xỉ tột bậc.
+
+  - key: ja:exercise:n1-u3-kiwamarinai-wb-kouei
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u3-kouei
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Được ngài chủ tịch đích thân khen ngợi, tôi vô cùng vinh dự.\""
+      tokens:
+        - { id: p3, text: お褒めの言葉をいただき、 }
+        - { id: p1, text: 会長から }
+        - { id: p5, text: 光栄極まりないです }
+        - { id: p2, text: 直々に }
+        - { id: p4, text: 光栄の至りです }
+    answer:
+      orders:
+        - [p1, p2, p3, p4]
+    explanation:
+      vi: 直々に - đích thân; お褒めの言葉をいただく - được khen (khiêm nhường); 光栄の至りです - vô cùng vinh dự. 光栄極まりない không tự nhiên.
+    display_answer: 会長から直々にお褒めの言葉をいただき、光栄の至りです。
+
+  - key: ja:exercise:n1-u3-kiwamarinai-mcq-apology
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u3-gram-no-kiwami
+    prompt:
+      stem: Công ty bạn để lộ thông tin khách hàng. Trong buổi họp báo xin lỗi, giám đốc nên nói câu nào?
+      stem_lang: vi
+      options:
+        - { id: f9k, text: このような事態を招きましたことは、痛恨の極みでございます。, lang: ja }
+        - { id: l3q, text: このような事態を招きましたことは、光栄の至りでございます。, lang: ja }
+        - { id: h7b, text: このような事態を招きましたことは、贅沢の極みでございます。, lang: ja }
+        - { id: r1m, text: このような事態を招きましたことは、無礼極まりないでございます。, lang: ja }
+    answer:
+      correct_option_id: f9k
+    explanation:
+      vi: 痛恨の極み - đau xót, hối hận tột cùng; cụm quen thuộc trong lời xin lỗi chính thức. 光栄 (vinh dự) và 贅沢 (xa xỉ) sai nghĩa; 無礼極まりない là phê phán người khác và không đi với でございます.
+    display_answer: このような事態を招きましたことは、痛恨の極みでございます。

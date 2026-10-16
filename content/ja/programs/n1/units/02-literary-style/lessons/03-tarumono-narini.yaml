@@ -1,0 +1,371 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u2-tarumono-narini
+order_index: 3
+level: n1
+title:
+  vi: Chuẩn mực và giới hạn - ～たるもの, ～なりに
+objectives:
+  - vi: Nêu chuẩn mực của một vai trò bằng ～たるもの(は) ～べきだ.
+  - vi: Nói "theo cách, khả năng của riêng mình" bằng ～なりに / ～なりの.
+  - vi: Dùng なりに đúng phép lịch sự - cho bản thân, người ngang hoặc dưới.
+estimated_minutes: 24
+skills: [grammar, vocabulary, speaking]
+prerequisites: [ja:lesson:n1-u2-tomonaruto]
+items:
+  - item: ja:item:n1-u2-hinkaku
+  - item: ja:item:n1-u2-mohan
+  - item: ja:item:n1-u2-mijuku
+  - item: ja:item:n1-u2-gram-tarumono
+  - item: ja:item:n1-u2-gram-narini
+body:
+  - type: objective
+    text:
+      vi: 'Hai mẫu trong bài này đều xoay quanh "vai trò": たるもの nói người ở vai trò ấy PHẢI thế nào (lý tưởng), còn なりに nói mỗi người làm được đến đâu theo giới hạn của mình (thực tế).'
+  - type: explain
+    text:
+      vi: '～たるもの(は) / ～たる者 - N (vai trò có chuẩn mực: 教師, 医者, 政治家, 親, 武士) + たるもの: "đã là... thì phải". Vế sau là ～べきだ, ～なければならない, ～てはならない: 教師たるもの、生徒の模範とならなければならない. Dạng "N1 たる N2" cũng gặp: 指導者たる人物.'
+  - type: explain
+    text:
+      vi: '～なりに / ～なりの - N, tính từ, động từ thể thường + なりに (trước động từ) / なりの (trước danh từ): "theo cách, mức độ của riêng ~". 子どもなりに考えた; 私なりの意見; 狭いなりに快適な部屋. Hay đi theo khuôn "N は N なりに".'
+  - type: deep_explain
+    text:
+      vi: 'なりに ngầm thừa nhận "chưa hoàn hảo, có giới hạn, nhưng đã cố trong phạm vi đó". Vì vậy nói về bản thân thì khiêm tốn (未熟ですが、私なりに頑張ります), nói về cấp trên, thầy cô thì thất lễ (先生なりに… ✗). Còn たるもの là lối nói trang trọng, mang tính răn dạy; nếu vế sau chỉ là sự thật thường ngày (教師たるもの、毎朝8時に来る) thì câu lạc nghĩa.'
+  - type: example
+    target: 教師たるもの、生徒の模範とならなければならない。
+    target_lang: ja
+    translation:
+      vi: Đã là giáo viên thì phải trở thành tấm gương cho học sinh.
+  - type: example
+    target: 医者たる者、患者の秘密を他人に漏らしてはならない。
+    target_lang: ja
+    translation:
+      vi: Đã là bác sĩ thì không được tiết lộ bí mật của bệnh nhân cho người khác.
+  - type: example
+    target: 子どもは子どもなりに、親のことを心配している。
+    target_lang: ja
+    translation:
+      vi: Trẻ con cũng lo cho bố mẹ theo cách của trẻ con.
+  - type: example
+    target: 未熟者ですが、私なりに精一杯努力してまいります。
+    target_lang: ja
+    translation:
+      vi: Tôi còn non kém, nhưng sẽ cố gắng hết sức theo khả năng của mình.
+  - type: example
+    target: この部屋は狭いなりに、使いやすく工夫されている。
+    target_lang: ja
+    translation:
+      vi: Căn phòng này tuy chật nhưng được bố trí khéo, dễ dùng.
+  - type: common_mistake
+    wrong: 社長なりに、よく頑張っていらっしゃいますね。
+    right: 社長は本当によく頑張っていらっしゃいますね。
+    target_lang: ja
+    note:
+      vi: なりに ngầm ý "trong giới hạn khả năng" - nói về cấp trên là thất lễ. Chỉ dùng cho bản thân hoặc người ngang, người dưới.
+  - type: common_mistake
+    wrong: 教師たるもの、毎朝8時に学校に来る。
+    right: 教師たるもの、時間を守るべきだ。
+    target_lang: ja
+    note:
+      vi: Vế sau たるもの phải là chuẩn mực, nghĩa vụ (～べきだ, ～なければならない), không phải thói quen thường ngày.
+  - type: summary
+    points:
+      - vi: N + たるもの(は) ～べきだ / ～なければならない - đã là... thì phải.
+      - vi: N / A / V + なりに (+ V), なりの (+ N) - theo cách, khả năng riêng.
+      - vi: なりに dùng cho mình hoặc người ngang / dưới; không dùng cho cấp trên.
+      - vi: 品格 (phẩm cách), 模範 (tấm gương), 未熟 (non nớt).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u2-tarumono-narini-mcq-tarumono
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u2-gram-tarumono
+    prompt:
+      stem: Câu 「医者たる者、患者の秘密を他人に漏らしてはならない。」 có nghĩa gì?
+      stem_lang: vi
+      options:
+        - { id: f2r, text: Đã là bác sĩ thì không được tiết lộ bí mật của bệnh nhân cho người khác., lang: vi }
+        - { id: l8k, text: Bác sĩ nào cũng từng tiết lộ bí mật của bệnh nhân., lang: vi }
+        - { id: o3w, text: Bệnh nhân không nên kể bí mật cho bác sĩ., lang: vi }
+        - { id: v6n, text: Nếu là bác sĩ giỏi thì có thể kể bí mật của bệnh nhân., lang: vi }
+    answer:
+      correct_option_id: f2r
+    explanation:
+      vi: 医者たる者 - đã là bác sĩ; 漏らしてはならない - không được tiết lộ (nghĩa vụ).
+    display_answer: Đã là bác sĩ thì không được tiết lộ bí mật của bệnh nhân cho người khác.
+
+  - key: ja:exercise:n1-u2-tarumono-narini-listen-narini
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-narini
+    prompt:
+      audio_asset_id: null
+      fallback_text: 子どもは子どもなりに、親のことを心配している。
+      options:
+        - { id: x4c, text: Trẻ con cũng lo cho bố mẹ theo cách của trẻ con., lang: vi }
+        - { id: d7h, text: Bố mẹ lúc nào cũng lo lắng cho con cái., lang: vi }
+        - { id: m2u, text: Trẻ con không cần phải lo lắng cho bố mẹ., lang: vi }
+        - { id: k9e, text: Trẻ con trở thành người lớn thì sẽ hiểu nỗi lo của bố mẹ., lang: vi }
+    answer:
+      correct_option_id: x4c
+    explanation:
+      vi: 子どもは子どもなりに - trẻ con theo cách của trẻ con; chủ ngữ là 子ども, người được lo là 親.
+    display_answer: Trẻ con cũng lo cho bố mẹ theo cách của trẻ con.
+
+  - key: ja:exercise:n1-u2-tarumono-narini-mcq-narino
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-narini
+    prompt:
+      stem: 'Chọn từ phù hợp: この問題について、私＿＿考えをまとめてみました。'
+      stem_lang: vi
+      options:
+        - { id: b5s, text: なりの, lang: ja }
+        - { id: w3a, text: なりに, lang: ja }
+        - { id: j7p, text: たるもの, lang: ja }
+        - { id: n1f, text: ともなると, lang: ja }
+    answer:
+      correct_option_id: b5s
+    explanation:
+      vi: Trước danh từ 考え dùng なりの (私なりの考え - suy nghĩ của riêng tôi). なりに đứng trước động từ.
+    display_answer: なりの
+
+  - key: ja:exercise:n1-u2-tarumono-narini-fill-tarumono
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tarumono
+    prompt:
+      template: "政治家{{b1}}、国民との約束を守るべきだ。"
+      blanks:
+        - { id: b1, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Đã là chính trị gia thì phải giữ lời hứa với người dân."
+        - "Gợi ý: ＿＿もの - 'đã là... thì phải'."
+    answer:
+      blanks:
+        b1: [たるもの, たる者, たるものは, たる者は]
+    known_wrong:
+      - answer: なりに
+        feedback_vi: なりに là "theo khả năng riêng"; vế sau べきだ nêu chuẩn mực nên dùng たるもの.
+        error_tag: narini_tarumono
+      - answer: ともあろう
+        feedback_vi: ともあろう phải có danh từ đi sau (者が) và mang ý chê trách hành vi đã xảy ra.
+        error_tag: tomoarou_tarumono
+    explanation:
+      vi: 政治家たるもの、～べきだ - đã là chính trị gia thì phải...
+    display_answer: 政治家たるもの、国民との約束を守るべきだ。
+
+  - key: ja:exercise:n1-u2-tarumono-narini-wb-mohan
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-mohan
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Đã là giáo viên thì phải trở thành tấm gương cho học sinh.\""
+      tokens:
+        - { id: s3, text: 模範とならなければならない }
+        - { id: s1, text: 教師たるもの、 }
+        - { id: s4, text: 教師なりに、 }
+        - { id: s2, text: 生徒の }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: 教師たるもの - đã là giáo viên; 生徒の模範となる - làm tấm gương cho học sinh. なりに không đi với nghĩa vụ ～なければならない ở đây.
+    display_answer: 教師たるもの、生徒の模範とならなければならない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u2-tarumono-narini-fill-hinkaku
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-hinkaku
+    prompt:
+      template: "横綱には強さだけでなく{{b1}}も求められる。(phẩm cách)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [品格, ひんかく, 品位, ひんい]
+    known_wrong:
+      - answer: 品質
+        feedback_vi: 品質 là chất lượng sản phẩm; phẩm cách con người là 品格.
+        error_tag: vocab_meaning
+      - answer: ひんがく
+        feedback_vi: かく không có dấu đục - ひんかく.
+        error_tag: dakuten
+    explanation:
+      vi: 品格が求められる - đòi hỏi phẩm cách. 品位 gần nghĩa và cũng được chấp nhận.
+    display_answer: 横綱には強さだけでなく品格も求められる。
+
+  - key: ja:exercise:n1-u2-tarumono-narini-translate-mijuku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-mijuku
+    prompt:
+      source_text: Tôi còn non kém, nhưng sẽ cố gắng hết sức theo khả năng của mình. (dùng 未熟 và なりに, khiêm nhường)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 未熟者ですが、私なりに精一杯努力してまいります。
+        - 未熟者ですが、私なりに精一杯頑張ってまいります。
+        - 未熟者ですが、私なりに精一杯努力いたします。
+        - 未熟者ですが、私なりに精一杯頑張ります。
+        - 未熟者ですが、私なりに精一杯努力します。
+        - 未熟者ですが、自分なりに精一杯頑張ります。
+        - 未熟者ですが、自分なりに精一杯努力してまいります。
+        - 未熟ですが、私なりに精一杯頑張ります。
+        - 未熟ですが、私なりに精一杯努力してまいります。
+        - 未熟者ではありますが、私なりに精一杯努力してまいります。
+        - 未熟者ですが、私なりに一生懸命頑張ります。
+        - 未熟者ですが、私なりに全力で頑張ります。
+        - 未熟者ですが、私なりに最善を尽くします。
+        - みじゅくものですが、わたしなりにせいいっぱいがんばります。
+    known_wrong:
+      - answer: 未熟者ですが、私たるもの精一杯頑張ります。
+        feedback_vi: たるもの dùng cho vai trò có chuẩn mực (教師, 医者), không dùng với 私. "Theo khả năng của mình" là 私なりに.
+        error_tag: narini_tarumono
+      - answer: 未熟者ですが、私なりの精一杯頑張ります。
+        feedback_vi: Trước động từ (頑張る) dùng なりに; なりの đứng trước danh từ.
+        error_tag: grammar_form
+    explanation:
+      vi: 未熟者ですが - tôi còn non kém; 私なりに - theo khả năng của tôi; 精一杯努力してまいります - sẽ nỗ lực hết sức (khiêm nhường).
+    display_answer: 未熟者ですが、私なりに精一杯努力してまいります。
+
+  - key: ja:exercise:n1-u2-tarumono-narini-fill-narini
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-narini
+    prompt:
+      template: "この部屋は狭い{{b1}}、使いやすく工夫されている。(tuy chật nhưng theo cách của nó)"
+      blanks:
+        - { id: b1, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [なりに]
+    known_wrong:
+      - answer: なりの
+        feedback_vi: なりの đứng trước danh từ; ở đây sau là mệnh đề (使いやすく工夫されている) nên dùng なりに.
+        error_tag: grammar_form
+      - answer: たるもの
+        feedback_vi: たるもの đi với danh từ chỉ vai trò, không đi với tính từ 狭い.
+        error_tag: narini_tarumono
+    explanation:
+      vi: 狭いなりに - tuy chật nhưng trong giới hạn đó (vẫn dễ dùng). Tính từ đi thẳng với なりに.
+    display_answer: この部屋は狭いなりに、使いやすく工夫されている。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u2-tarumono-narini-mcq-politeness
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-narini
+    prompt:
+      stem: Câu nào dùng なりに phù hợp về phép lịch sự?
+      stem_lang: vi
+      options:
+        - { id: c6m, text: 新人の田中さんも、新人なりによく頑張っている。, lang: ja }
+        - { id: h1w, text: 社長も社長なりによく頑張っていらっしゃる。, lang: ja }
+        - { id: e8j, text: 先生は先生なりに説明してくださいました。, lang: ja }
+        - { id: q4t, text: お客様はお客様なりに、ご意見をおっしゃいました。, lang: ja }
+    answer:
+      correct_option_id: c6m
+    explanation:
+      vi: なりに hàm ý "trong giới hạn khả năng" - khen nhân viên mới thì hợp. Dùng cho giám đốc, thầy cô, khách hàng là thất lễ.
+    display_answer: 新人の田中さんも、新人なりによく頑張っている。
+
+  - key: ja:exercise:n1-u2-tarumono-narini-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u2-gram-tarumono
+    prompt:
+      source_text: 親たるもの、子どもの手本とならなければならない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đã là cha mẹ thì phải trở thành tấm gương cho con cái.
+        - Đã là cha mẹ thì phải làm tấm gương cho con cái.
+        - Đã là cha mẹ thì phải là tấm gương cho con cái.
+        - Đã là bố mẹ thì phải trở thành tấm gương cho con cái.
+        - Đã là bố mẹ thì phải làm tấm gương cho con cái.
+        - Đã là bố mẹ thì phải là tấm gương cho con cái.
+        - Đã là cha mẹ thì phải trở thành tấm gương cho con.
+        - Đã là bố mẹ thì phải làm gương cho con cái.
+        - Đã là cha mẹ thì phải làm gương cho con cái.
+        - Đã là cha mẹ thì phải làm gương cho con.
+        - Đã là bố mẹ thì phải làm gương cho con.
+        - Là cha mẹ thì phải làm gương cho con cái.
+        - Là bố mẹ thì phải làm gương cho con cái.
+        - Làm cha mẹ thì phải làm gương cho con cái.
+        - Đã làm cha mẹ thì phải là tấm gương cho con cái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cha mẹ thường là tấm gương cho con cái.
+        feedback_vi: たるもの～なければならない nêu chuẩn mực "đã là... thì phải", không phải nhận xét "thường là".
+        error_tag: tarumono_meaning
+    explanation:
+      vi: 親たるもの - đã là cha mẹ; 手本となる - trở thành tấm gương; ～なければならない - phải.
+    display_answer: Đã là cha mẹ thì phải trở thành tấm gương cho con cái.
+
+  - key: ja:exercise:n1-u2-tarumono-narini-mcq-speech
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-mijuku
+    prompt:
+      stem: Bạn vừa được bổ nhiệm làm trưởng nhóm và phát biểu ra mắt. Câu nào khiêm tốn, tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: y2d, text: まだまだ未熟者ですが、私なりに精一杯務めてまいります。, lang: ja }
+        - { id: u7k, text: リーダーたるもの、私は未熟者です。, lang: ja }
+        - { id: r5b, text: 未熟者ともあろう私が、リーダーを務めます。, lang: ja }
+        - { id: i3g, text: 皆さんは皆さんなりに、私に従ってください。, lang: ja }
+    answer:
+      correct_option_id: y2d
+    explanation:
+      vi: 未熟者ですが、私なりに～まいります - khiêm tốn và quen thuộc. たるもの cần vế sau là chuẩn mực; ともあろう là chê trách; câu cuối ra lệnh và dùng なりに với người nghe thiếu tế nhị.
+    display_answer: まだまだ未熟者ですが、私なりに精一杯務めてまいります。
+
+  - key: ja:exercise:n1-u2-tarumono-narini-wb-narini
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u2-gram-narini
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Trẻ con cũng lo cho bố mẹ theo cách của trẻ con.\""
+      tokens:
+        - { id: c4, text: 子どもたるもの、 }
+        - { id: c2, text: 子どもなりに、 }
+        - { id: c3, text: 親のことを心配している }
+        - { id: c1, text: 子どもは }
+    answer:
+      orders:
+        - [c1, c2, c3]
+    explanation:
+      vi: N は N なりに - (ai) theo cách của riêng mình. たるもの đòi hỏi vế sau là chuẩn mực, không hợp ở đây.
+    display_answer: 子どもは子どもなりに、親のことを心配している。

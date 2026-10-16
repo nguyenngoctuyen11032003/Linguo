@@ -1,0 +1,410 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u1-tsurete-totomoni
+order_index: 3
+level: n2
+title:
+  vi: Càng... càng..., cùng với... - ～につれて, ～にしたがって, ～とともに
+objectives:
+  - vi: Dùng ～につれて / ～にしたがって để nói hai thay đổi diễn ra song song.
+  - vi: Dùng ～にしたがって với nghĩa "tuân theo" (chỉ thị, quy định) và biết につれて không có nghĩa này.
+  - vi: Hiểu ～とともに trong văn viết, tin tức về thay đổi xã hội.
+estimated_minutes: 22
+skills: [grammar, reading]
+prerequisites: [ja:lesson:n2-u1-totan-shidai]
+items:
+  - item: ja:item:n2-u1-gram-nitsurete
+  - item: ja:item:n2-u1-gram-nishitagatte
+  - item: ja:item:n2-u1-gram-totomoni
+  - item: ja:item:n2-u1-koureika
+  - item: ja:item:n2-u1-fukyuu
+  - item: ja:item:n2-u1-zouka
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn diễn đạt được "càng lớn tuổi thể lực càng giảm", "xin sơ tán theo hướng dẫn" và đọc được câu tin tức kiểu "cùng với sự phổ cập của Internet, cuộc sống đã thay đổi".
+  - type: explain
+    text:
+      vi: 'につれて - gắn vào V-る hoặc danh từ: 時間がたつにつれて, 年を取るにつれて, 経済の発展につれて. A thay đổi dần thì B cũng thay đổi dần. Vế sau thường có ～てくる, ～ていく, ～なる.'
+  - type: explain
+    text:
+      vi: 'にしたがって có hai nghĩa: (1) giống につれて - 山を登るにしたがって、寒くなる; (2) "theo, tuân theo" - 指示にしたがって, ルールにしたがって. Chỉ にしたがって mới có nghĩa (2).'
+  - type: explain
+    text:
+      vi: 'とともに - gắn vào V-る hoặc danh từ: 人口の増加とともに, 時代とともに. Nghĩa "cùng với sự..., ... cũng...", giọng văn viết, hay gặp trong tin tức, bài báo. とともに còn có nghĩa "cùng với (ai)" - 家族とともに暮らす.'
+  - type: deep_explain
+    text:
+      vi: Điểm chung của ba mẫu là cả hai vế đều phải là thay đổi dần. Vế sau không được là hành động một lần (電話した, 買った) hay ý định, lời nhờ. Nếu muốn nói "càng... càng..." trong hội thoại thân mật, người Nhật hay dùng ～ば～ほど (考えれば考えるほど). Trong đề N2, にしたがって nghĩa "tuân theo" thường được hỏi để phân biệt với につれて.
+  - type: example
+    target: 年を取るにつれて、体力が落ちてきた。
+    target_lang: ja
+    translation:
+      vi: Càng có tuổi, thể lực càng giảm.
+  - type: example
+    target: 山を登るにしたがって、気温が下がっていく。
+    target_lang: ja
+    translation:
+      vi: Càng lên núi cao, nhiệt độ càng giảm.
+  - type: example
+    target: 係員の指示にしたがって、避難してください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy sơ tán theo hướng dẫn của nhân viên.
+    note:
+      vi: Nghĩa "tuân theo" - không thay được bằng につれて.
+  - type: example
+    target: インターネットの普及とともに、生活が大きく変わった。
+    target_lang: ja
+    translation:
+      vi: Cùng với sự phổ cập của Internet, cuộc sống đã thay đổi rất nhiều.
+  - type: example
+    target: 高齢化が進むにつれて、介護の仕事が増えている。
+    target_lang: ja
+    translation:
+      vi: Dân số càng già hoá thì việc chăm sóc người cao tuổi càng nhiều.
+  - type: common_mistake
+    wrong: 時間がたつにつれて、友達に電話した。
+    right: 時間がたつにつれて、不安が大きくなった。
+    target_lang: ja
+    note:
+      vi: Vế sau của につれて phải là một thay đổi dần, không phải hành động xảy ra một lần.
+  - type: common_mistake
+    wrong: 先生の説明につれて、問題を解いてください。
+    right: 先生の説明にしたがって、問題を解いてください。
+    target_lang: ja
+    note:
+      vi: '"Làm theo lời giải thích" là nghĩa tuân theo - chỉ にしたがって có nghĩa này.'
+  - type: common_mistake
+    wrong: 年を取ったにつれて、体力が落ちた。
+    right: 年を取るにつれて、体力が落ちてきた。
+    target_lang: ja
+    note:
+      vi: につれて gắn vào thể từ điển, kể cả khi kể chuyện đã qua. Tiếng Việt không chia thì nên người Việt hay chia theo nghĩa quá khứ.
+  - type: summary
+    points:
+      - vi: V-る / N + につれて - càng... càng... (hai thay đổi song song).
+      - vi: にしたがって - (1) càng... càng...; (2) tuân theo (指示にしたがって).
+      - vi: V-る / N + とともに - cùng với sự... (văn viết); cũng có nghĩa "cùng với ai".
+      - vi: Vế sau phải là thay đổi dần, không phải hành động một lần.
+      - vi: 高齢化 - già hoá dân số; 普及 - phổ cập; 増加 - tăng (số lượng).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u1-tsurete-mcq-susumu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-gram-nitsurete
+    prompt:
+      stem: 'Chọn dạng đúng: 高齢化が＿＿、介護の仕事が増えている。'
+      stem_lang: vi
+      options:
+        - { id: s4f, text: 進むにつれて, lang: ja }
+        - { id: k8d, text: 進んだにつれて, lang: ja }
+        - { id: p1x, text: 進みにつれて, lang: ja }
+        - { id: m6c, text: 進むのにつれて, lang: ja }
+    answer:
+      correct_option_id: s4f
+    explanation:
+      vi: につれて gắn vào thể từ điển của động từ - 進むにつれて. Không dùng thể た, gốc ます hay thêm の.
+    display_answer: 進むにつれて
+
+  - key: ja:exercise:n2-u1-tsurete-listen-yama
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-gram-nishitagatte
+    prompt:
+      audio_asset_id: null
+      fallback_text: 山を登るにしたがって、気温が下がっていく。
+      options:
+        - { id: y3n, text: "Càng lên núi cao, nhiệt độ càng giảm.", lang: vi }
+        - { id: e7j, text: "Càng lên núi cao, nhiệt độ càng tăng.", lang: vi }
+        - { id: w2g, text: Leo núi theo hướng dẫn thì sẽ không bị lạnh., lang: vi }
+        - { id: i9b, text: Leo núi xong thì nhiệt độ giảm., lang: vi }
+    answer:
+      correct_option_id: y3n
+    explanation:
+      vi: 登るにしたがって - càng leo lên; 気温が下がっていく - nhiệt độ cứ giảm dần. Ở đây にしたがって mang nghĩa "càng... càng...", không phải "tuân theo".
+    display_answer: "Càng lên núi cao, nhiệt độ càng giảm."
+
+  - key: ja:exercise:n2-u1-tsurete-fill-shiji
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-nishitagatte
+    prompt:
+      template: "係員の指示{{b1}}、避難してください。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Xin hãy sơ tán theo hướng dẫn của nhân viên."
+        - "Gợi ý: nghĩa \"tuân theo\" chỉ có ở một trong ba mẫu của bài."
+    answer:
+      blanks:
+        b1: [にしたがって, に従って, にしたがい, に従い]
+    known_wrong:
+      - answer: につれて
+        feedback_vi: につれて chỉ có nghĩa "càng... càng...", không có nghĩa "tuân theo". Dùng にしたがって.
+        error_tag: tsurete_shitagatte
+      - answer: とともに
+        feedback_vi: 指示とともに là "cùng với chỉ thị", không phải "làm theo chỉ thị". Dùng にしたがって.
+        error_tag: totomoni_shitagatte
+    explanation:
+      vi: 指示にしたがって - làm theo chỉ thị. Văn bản thông báo hay viết にしたがい hoặc に従い.
+    display_answer: 係員の指示にしたがって、避難してください。
+
+  - key: ja:exercise:n2-u1-tsurete-wb-fukyuu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-totomoni
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Cùng với sự phổ cập của Internet, cuộc sống đã thay đổi rất nhiều.\""
+      tokens:
+        - { id: f3, text: 生活が }
+        - { id: f5, text: 普及しとともに }
+        - { id: f4, text: 大きく変わった }
+        - { id: f2, text: 普及とともに }
+        - { id: f1, text: インターネットの }
+    answer:
+      orders:
+        - [f1, f2, f3, f4]
+        - [f3, f1, f2, f4]
+    explanation:
+      vi: Danh từ + とともに - 普及とともに (hoặc động từ thể từ điển - 普及するとともに). 普及しとともに sai dạng. 生活が có thể đứng đầu câu.
+    display_answer: インターネットの普及とともに、生活が大きく変わった。
+
+  - key: ja:exercise:n2-u1-tsurete-mcq-koureika
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-koureika
+    prompt:
+      stem: 「日本では高齢化が進んでいる。」 Từ 高齢化 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: r5h, text: sự già hoá dân số, lang: vi }
+        - { id: t1k, text: sự giảm tỉ lệ sinh, lang: vi }
+        - { id: v6w, text: sự đô thị hoá, lang: vi }
+        - { id: c2o, text: sự tăng dân số, lang: vi }
+    answer:
+      correct_option_id: r5h
+    explanation:
+      vi: 高齢 - tuổi cao; 化 - hoá. 高齢化が進む - dân số già hoá ngày càng tăng. Giảm tỉ lệ sinh là 少子化.
+    display_answer: sự già hoá dân số
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u1-tsurete-fill-zouka
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-zouka
+    prompt:
+      template: "観光客が{{b1}}につれて、ホテルも増えてきた。(増加する)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [増加する, ぞうかする]
+    known_wrong:
+      - answer: 増加した
+        feedback_vi: につれて gắn vào thể từ điển - 増加するにつれて.
+        error_tag: tsurete_form
+      - answer: 増加し
+        feedback_vi: Gốc ます không đi với につれて. Dùng 増加するにつれて.
+        error_tag: tsurete_form
+    explanation:
+      vi: Trước につれて có が nên cần động từ - 増加するにつれて. Nếu dùng danh từ thì là 観光客の増加につれて.
+    display_answer: 観光客が増加するにつれて、ホテルも増えてきた。
+
+  - key: ja:exercise:n2-u1-tsurete-translate-tairyoku
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-nitsurete
+    prompt:
+      source_text: Càng có tuổi, thể lực càng giảm. (dùng につれて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 年を取るにつれて、体力が落ちる。
+        - 年を取るにつれて、体力が落ちてくる。
+        - 年を取るにつれて、体力が落ちていく。
+        - 年を取るにつれて、体力が落ちてきた。
+        - 年を取るにつれて、体力が落ちます。
+        - 年を取るにつれて、体力が落ちてきます。
+        - 年を取るにつれて、体力が落ちていきます。
+        - 年を取るにつれて、体力が低下する。
+        - 年を取るにつれて、体力が低下していく。
+        - 年を取るにつれて、体力が衰える。
+        - 年を取るにつれて、体力が衰えていく。
+        - 年を取るにつれて、体力が弱くなる。
+        - 年を取るにつれて、体力がなくなってくる。
+        - 年をとるにつれて、体力が落ちる。
+        - 年をとるにつれて、体力が落ちてくる。
+        - 年をとるにつれて、体力が落ちていく。
+        - 年齢が上がるにつれて、体力が落ちる。
+        - 年齢が上がるにつれて、体力が落ちていく。
+        - としをとるにつれて、たいりょくがおちる。
+        - としをとるにつれて、たいりょくがおちていく。
+    known_wrong:
+      - answer: 年を取ったにつれて、体力が落ちる。
+        feedback_vi: につれて gắn vào thể từ điển - 年を取るにつれて.
+        error_tag: tsurete_form
+      - answer: 年を取るにつれて、体力が上がる。
+        feedback_vi: 上がる là tăng; "giảm" là 落ちる / 低下する / 衰える.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 年を取る - có tuổi, già đi; 体力が落ちる - thể lực giảm. ～てくる / ～ていく nhấn mạnh thay đổi dần.
+    display_answer: 年を取るにつれて、体力が落ちていく。
+
+  - key: ja:exercise:n2-u1-tsurete-translate-rule
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-nishitagatte
+    prompt:
+      source_text: Xin hãy làm theo quy định của công ty. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会社の規則にしたがってください。
+        - 会社の規則に従ってください。
+        - 会社のルールにしたがってください。
+        - 会社のルールに従ってください。
+        - 会社の規則にしたがって行動してください。
+        - 会社の規則に従って行動してください。
+        - 会社のルールにしたがって行動してください。
+        - 会社のルールに従って行動してください。
+        - 会社の規則を守ってください。
+        - 会社のルールを守ってください。
+        - 会社の決まりに従ってください。
+        - 会社の決まりにしたがってください。
+        - 会社の規定に従ってください。
+        - 会社の規定にしたがってください。
+        - かいしゃのきそくにしたがってください。
+    known_wrong:
+      - answer: 会社の規則につれてください。
+        feedback_vi: につれて không có nghĩa "tuân theo". Dùng 規則にしたがってください.
+        error_tag: tsurete_shitagatte
+      - answer: 会社の規則をしたがってください。
+        feedback_vi: したがう đi với に - 規則にしたがう.
+        error_tag: particle_ni
+    explanation:
+      vi: ～にしたがう (従う) - làm theo, tuân theo; 規則 / ルール - quy định. 規則を守る (giữ quy định) cũng diễn đạt được ý này.
+    display_answer: 会社の規則にしたがってください。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u1-tsurete-mcq-natural
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-nitsurete
+    prompt:
+      stem: Câu nào dùng ～につれて tự nhiên?
+      stem_lang: vi
+      options:
+        - { id: l7a, text: 日本語が上手になるにつれて、日本の生活が楽しくなってきた。, lang: ja }
+        - { id: q3e, text: 日本に来るにつれて、すぐ友達に電話した。, lang: ja }
+        - { id: d8s, text: 先生の指示につれて、レポートを書いてください。, lang: ja }
+        - { id: g4m, text: 春になったにつれて、桜が咲きました。, lang: ja }
+    answer:
+      correct_option_id: l7a
+    explanation:
+      vi: Tiếng Nhật giỏi dần - cuộc sống vui dần, hai vế đều là thay đổi. Gọi điện một lần không hợp; "theo chỉ thị" phải dùng にしたがって; につれて không gắn vào thể た.
+    display_answer: 日本語が上手になるにつれて、日本の生活が楽しくなってきた。
+
+  - key: ja:exercise:n2-u1-tsurete-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u1-fukyuu
+    prompt:
+      source_text: スマートフォンが普及するにつれて、公衆電話が減ってきた。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Điện thoại thông minh càng phổ biến thì điện thoại công cộng càng ít đi.
+        - Điện thoại thông minh càng phổ biến thì điện thoại công cộng càng giảm.
+        - Điện thoại thông minh càng phổ biến thì điện thoại công cộng càng ít.
+        - Smartphone càng phổ biến thì điện thoại công cộng càng ít đi.
+        - Smartphone càng phổ biến thì điện thoại công cộng càng giảm.
+        - Cùng với sự phổ biến của điện thoại thông minh, điện thoại công cộng đã giảm đi.
+        - Cùng với sự phổ biến của điện thoại thông minh, điện thoại công cộng giảm dần.
+        - Cùng với sự phổ cập của điện thoại thông minh, điện thoại công cộng đã giảm đi.
+        - Khi điện thoại thông minh ngày càng phổ biến thì điện thoại công cộng giảm dần.
+        - Khi điện thoại thông minh trở nên phổ biến, điện thoại công cộng đã ít dần đi.
+        - Điện thoại thông minh ngày càng phổ biến nên điện thoại công cộng ít dần.
+        - Điện thoại thông minh càng phổ biến, điện thoại công cộng càng ít đi.
+        - Điện thoại thông minh càng phổ biến, điện thoại công cộng càng giảm.
+        - Theo sự phổ cập của điện thoại thông minh, điện thoại công cộng đã giảm đi.
+        - Điện thoại di động thông minh càng phổ biến thì điện thoại công cộng càng ít đi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Điện thoại thông minh càng phổ biến thì điện thoại công cộng càng nhiều.
+        feedback_vi: 減ってきた là giảm dần, ít đi - không phải nhiều lên.
+        error_tag: vocab_meaning
+      - answer: Vì điện thoại công cộng giảm nên điện thoại thông minh phổ biến.
+        feedback_vi: Quan hệ ngược - smartphone phổ biến (vế trước) kéo theo điện thoại công cộng giảm (vế sau).
+        error_tag: order_meaning
+    explanation:
+      vi: 普及するにつれて - càng phổ biến; 公衆電話 - điện thoại công cộng; 減ってきた - đã ít dần đi.
+    display_answer: Điện thoại thông minh càng phổ biến thì điện thoại công cộng càng ít đi.
+
+  - key: ja:exercise:n2-u1-tsurete-mcq-news
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-totomoni
+    prompt:
+      stem: 'Bạn viết câu mở đầu cho bài báo cáo: "Cùng với sự tăng lên của người nước ngoài, số lớp học tiếng Nhật cũng tăng." Câu nào hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: x5r, text: 外国人の増加とともに、日本語教室も増えている。, lang: ja }
+        - { id: b9u, text: 外国人が増加したとたん、日本語教室も増えている。, lang: ja }
+        - { id: h2t, text: 外国人の増加次第、日本語教室も増えている。, lang: ja }
+        - { id: o6v, text: 外国人の増加の最中に、日本語教室も増えている。, lang: ja }
+    answer:
+      correct_option_id: x5r
+    explanation:
+      vi: Hai thay đổi song song, văn viết - 増加とともに. たとたん là "vừa... thì", 次第 là "ngay khi... sẽ", 最中 là "đúng lúc đang" - không diễn tả thay đổi song song.
+    display_answer: 外国人の増加とともに、日本語教室も増えている。
+
+  - key: ja:exercise:n2-u1-tsurete-wb-jikan
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-gram-nitsurete
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Thời gian càng trôi, nỗi lo càng lớn.\""
+      tokens:
+        - { id: j4, text: 大きくなった }
+        - { id: j2, text: たつにつれて }
+        - { id: j5, text: たったにつれて }
+        - { id: j3, text: 不安が }
+        - { id: j1, text: 時間が }
+    answer:
+      orders:
+        - [j1, j2, j3, j4]
+    explanation:
+      vi: 時間がたつ - thời gian trôi; につれて gắn vào thể từ điển nên たつにつれて, không phải たったにつれて, dù vế sau ở quá khứ.
+    display_answer: 時間がたつにつれて、不安が大きくなった。

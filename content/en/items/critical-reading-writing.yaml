@@ -1,0 +1,876 @@
+# Học liệu unit "Đọc phản biện & viết luận" (C1-C2). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: tóm tắt & diễn đạt lại ----------------
+  - key: en:item:crw-paraphrase
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, writing, vocabulary]
+    front:
+      text: paraphrase
+      ipa: /ˈpærəfreɪz/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: Diễn đạt lại ý của người khác bằng từ ngữ và cấu trúc của mình, giữ nguyên nghĩa; độ dài gần bằng bản gốc.
+      examples:
+        - target: Try to paraphrase the passage without looking at the original.
+          translation:
+            vi: Hãy thử diễn đạt lại đoạn văn mà không nhìn vào bản gốc.
+        - target: A good paraphrase changes the wording, not the meaning.
+          translation:
+            vi: Một bản diễn đạt lại tốt thay đổi câu chữ, chứ không thay đổi ý nghĩa.
+      pronunciation_note:
+        vi: Trọng âm rơi vào âm đầu - /ˈpær-/; âm cuối /freɪz/ đọc như phrase.
+      confusion:
+        vi: Paraphrase là ngoại động từ - paraphrase the author, không nói paraphrase about. Khác summarise - tóm tắt thì ngắn hơn nhiều và chỉ giữ ý chính.
+
+  - key: en:item:crw-summarise
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [reading, writing]
+    front:
+      text: summarise / summarize
+      ipa: /ˈsʌməraɪz/
+      pos: động từ
+    back:
+      meaning:
+        vi: Tóm tắt - rút gọn một văn bản, chỉ giữ lại các ý chính.
+      examples:
+        - target: Summarise the article in no more than fifty words.
+          translation:
+            vi: Hãy tóm tắt bài báo trong không quá năm mươi từ.
+        - target: The report summarises the main findings in the first paragraph.
+          translation:
+            vi: Bản báo cáo tóm tắt các kết quả chính ngay ở đoạn đầu.
+      confusion:
+        vi: Summarise (Anh) và summarize (Mỹ) là động từ; summary là danh từ - write a summary, In summary. Không nói "I will summary the article".
+
+  - key: en:item:crw-in-other-words
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [reading, writing, speaking]
+    front:
+      text: in other words
+      ipa: UK /ɪn ˈʌðə ˈwɜːdz/ · US /ɪn ˈʌðɚ ˈwɝːdz/
+      pos: cụm diễn đạt lại
+    back:
+      meaning:
+        vi: Nói cách khác - mở đầu câu giải thích lại ý vừa nêu bằng lời đơn giản hơn.
+      examples:
+        - target: The company cut its workforce by a third. In other words, one in three employees lost their job.
+          translation:
+            vi: Công ty cắt giảm một phần ba nhân sự. Nói cách khác, cứ ba nhân viên thì một người mất việc.
+      confusion:
+        vi: Luôn dùng số nhiều - in other words, không phải in other word. Trong văn viết trang trọng có thể dùng To put it another way hoặc That is to say.
+
+  - key: en:item:crw-reporting-verbs
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, writing, grammar]
+    front:
+      text: "argue / claim / contend / acknowledge / dismiss"
+      pos: động từ tường thuật
+    back:
+      meaning:
+        vi: Động từ tường thuật cho biết thái độ của tác giả - argue (đưa lập luận), claim (khẳng định, chưa chắc đúng), contend (khẳng định trong tranh luận), acknowledge (thừa nhận), dismiss … as … (gạt bỏ … vì cho là …).
+      examples:
+        - target: The author acknowledges that the sample is small but dismisses the criticism as exaggerated.
+          translation:
+            vi: Tác giả thừa nhận mẫu nghiên cứu nhỏ nhưng gạt bỏ lời chỉ trích vì cho là phóng đại.
+        - target: The writer suggests reducing working hours rather than cutting salaries.
+          translation:
+            vi: Người viết đề xuất giảm giờ làm thay vì cắt lương.
+      confusion:
+        vi: Suggest đi với that + mệnh đề hoặc V-ing (suggests reducing), không đi với to V (suggests to reduce). Khi tường thuật một văn bản, dùng thì hiện tại đơn - The author argues, không phải argued.
+
+  - key: en:item:crw-the-author-argues-that
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, writing]
+    front:
+      text: The author argues that …
+      ipa: UK /ði ˈɔːθər ˈɑːɡjuːz ðət/ · US /ði ˈɑːθɚ ˈɑːrɡjuːz ðət/
+      pos: cụm mở đầu bản tóm tắt
+    back:
+      meaning:
+        vi: Tác giả lập luận / cho rằng… - câu mở đầu chuẩn của một bản tóm tắt.
+      examples:
+        - target: The author argues that cities should invest in public transport rather than new roads.
+          translation:
+            vi: Tác giả cho rằng các thành phố nên đầu tư vào giao thông công cộng thay vì làm đường mới.
+      confusion:
+        vi: Argue that… là "lập luận rằng"; argue with someone mới là "cãi nhau với ai". Chủ ngữ số ít nên động từ có s - the author argues.
+
+  - key: en:item:crw-according-to
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [reading, writing]
+    front:
+      text: according to + nguồn
+      ipa: UK /əˈkɔːdɪŋ tə/ · US /əˈkɔːrdɪŋ tə/
+      pos: cụm giới từ
+    back:
+      meaning:
+        vi: Theo (một nguồn khác - tác giả, báo cáo, nghiên cứu).
+      examples:
+        - target: According to the report, sales fell by ten per cent last year.
+          translation:
+            vi: Theo bản báo cáo, doanh số năm ngoái giảm mười phần trăm.
+      confusion:
+        vi: Không dùng according to cho chính mình - nói In my view hoặc I believe, không nói according to me. Cũng tránh lặp nguồn - According to the author, he says… là thừa.
+
+  - key: en:item:crw-the-gist
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, listening, vocabulary]
+    front:
+      text: the gist
+      ipa: /ðə ˈdʒɪst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Đại ý, ý chính của một văn bản hay cuộc nói chuyện.
+      examples:
+        - target: I didn't understand every word, but I got the gist of the lecture.
+          translation:
+            vi: Tôi không hiểu từng chữ, nhưng nắm được đại ý của bài giảng.
+        - target: The gist of the article is that inflation hurts the poor most.
+          translation:
+            vi: Ý chính của bài báo là lạm phát gây hại nhiều nhất cho người nghèo.
+      pronunciation_note:
+        vi: Chữ g đọc là /dʒ/ như trong gym, không phải /ɡ/.
+      confusion:
+        vi: Get the gist hơi thân mật, hợp với văn nói; trong bài viết trang trọng nên dùng the main argument hoặc the central point.
+
+  - key: en:item:crw-main-thrust
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, writing]
+    front:
+      text: the main thrust of …
+      ipa: /ðə ˈmeɪn ˈθrʌst əv/
+      pos: collocation
+    back:
+      meaning:
+        vi: Hướng lập luận chính, ý cốt lõi mà cả văn bản hướng tới.
+      examples:
+        - target: The main thrust of her argument is that education should be free for everyone.
+          translation:
+            vi: Ý cốt lõi trong lập luận của cô ấy là giáo dục phải miễn phí cho tất cả mọi người.
+      confusion:
+        vi: Thrust nghĩa gốc là "cú đẩy"; trong cụm này mang nghĩa "trọng tâm". Không thay bằng the main push.
+
+  - key: en:item:crw-change-word-class
+    type: grammar_point
+    level: c1
+    difficulty: 4
+    skill_tags: [writing, grammar]
+    front:
+      text: "Prices rose sharply. → There was a sharp rise in prices."
+      pos: kỹ thuật diễn đạt lại
+    back:
+      meaning:
+        vi: Đổi từ loại để diễn đạt lại - động từ thành danh từ (rose → a rise), trạng từ thành tính từ (sharply → sharp), hoặc ngược lại; câu mới khác cấu trúc nhưng giữ nguyên nghĩa.
+      examples:
+        - target: "The factory closed, and unemployment rose. → The closure of the factory led to a rise in unemployment."
+          translation:
+            vi: "Nhà máy đóng cửa và thất nghiệp tăng. → Việc nhà máy đóng cửa dẫn đến tình trạng thất nghiệp gia tăng."
+      confusion:
+        vi: Đổi từ loại thì phải đổi cả từ đi kèm - rose sharply → a sharp rise (trạng từ thành tính từ). Viết a sharply rise là sai.
+
+  - key: en:item:crw-plagiarism
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, vocabulary]
+    front:
+      text: plagiarism
+      ipa: /ˈpleɪdʒərɪzəm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Đạo văn - dùng câu chữ hoặc ý tưởng của người khác mà không ghi nguồn.
+      examples:
+        - target: Changing a few words in someone else's sentence is still plagiarism.
+          translation:
+            vi: Đổi vài chữ trong câu của người khác vẫn là đạo văn.
+      pronunciation_note:
+        vi: Chữ g đọc /dʒ/ - /ˈpleɪdʒ-/; trọng âm ở âm đầu.
+      confusion:
+        vi: Plagiarism là danh từ không đếm được; động từ là plagiarise (Anh) / plagiarize (Mỹ). Đạo văn không chỉ là chép nguyên câu - mượn ý mà không ghi nguồn cũng tính.
+
+  - key: en:item:crw-verbatim
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [reading, writing]
+    front:
+      text: verbatim
+      ipa: UK /vɜːˈbeɪtɪm/ · US /vɝːˈbeɪtɪm/
+      pos: tính từ / trạng từ
+    back:
+      meaning:
+        vi: Nguyên văn, từng chữ một, không thay đổi gì.
+      examples:
+        - target: If you quote the author verbatim, put the words in quotation marks.
+          translation:
+            vi: Nếu bạn trích nguyên văn lời tác giả, hãy đặt chúng trong ngoặc kép.
+      confusion:
+        vi: Verbatim vừa là tính từ (a verbatim quote) vừa là trạng từ (quote someone verbatim); không thêm -ly.
+
+  # ---------------- Bài 2: đánh giá lập luận & nguồn, ngụy biện ----------------
+  - key: en:item:crw-fallacy
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, vocabulary]
+    front:
+      text: fallacy
+      ipa: /ˈfæləsi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Ngụy biện - lối lập luận nghe có vẻ hợp lý nhưng sai về logic; cũng có nghĩa là một quan niệm sai phổ biến.
+      examples:
+        - target: The argument contains a common fallacy.
+          translation:
+            vi: Lập luận này chứa một kiểu ngụy biện phổ biến.
+        - target: It is a fallacy that money always brings happiness.
+          translation:
+            vi: Cho rằng tiền luôn mang lại hạnh phúc là một quan niệm sai lầm.
+      confusion:
+        vi: Danh từ đếm được - a fallacy, fallacies. Tính từ fallacious rất trang trọng; trong văn thường dùng flawed.
+
+  - key: en:item:crw-straw-man
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, speaking, vocabulary]
+    front:
+      text: a straw man (argument)
+      ipa: UK /ə ˌstrɔː ˈmæn/ · US /ə ˌstrɑː ˈmæn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Ngụy biện người rơm - bóp méo lập luận của đối phương thành một phiên bản cực đoan, dễ đánh đổ, rồi bác bỏ phiên bản đó.
+      examples:
+        - target: "\"So you want children to have no fun at all?\" That's a straw man - nobody suggested that."
+          translation:
+            vi: "\"Vậy là anh muốn trẻ con chẳng được vui chơi gì cả à?\" Đó là ngụy biện người rơm - không ai đề xuất điều đó."
+      confusion:
+        vi: Nói That's a straw man hoặc a straw-man argument; không nói "a fallacy of straw man".
+
+  - key: en:item:crw-ad-hominem
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [reading, speaking, vocabulary]
+    front:
+      text: ad hominem
+      ipa: UK /ˌæd ˈhɒmɪnem/ · US /ˌæd ˈhɑːmɪnem/
+      pos: tính từ / danh từ
+    back:
+      meaning:
+        vi: Công kích cá nhân - nhắm vào con người (tuổi tác, học vấn, động cơ) thay vì vào lập luận của họ.
+      examples:
+        - target: Calling the researcher "too young to know anything" is an ad hominem attack, not a counter-argument.
+          translation:
+            vi: Gọi nhà nghiên cứu là "còn quá trẻ để biết gì" là công kích cá nhân, không phải phản bác.
+      confusion:
+        vi: Gốc Latin, nghĩa là "nhắm vào người". Thường gặp trong cụm an ad hominem attack / argument; viết tách hai chữ.
+
+  - key: en:item:crw-false-dilemma
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, vocabulary]
+    front:
+      text: a false dilemma
+      ipa: /ə ˌfɔːls dɪˈlemə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Lưỡng nan giả (ngụy biện trắng - đen) - chỉ đưa ra hai lựa chọn cực đoan, bỏ qua mọi phương án ở giữa.
+      examples:
+        - target: "\"Either we ban all cars or we accept toxic air\" is a false dilemma."
+          translation:
+            vi: "\"Hoặc cấm toàn bộ ô tô, hoặc chấp nhận không khí độc hại\" là một lưỡng nan giả."
+      confusion:
+        vi: Cũng gọi là a false dichotomy hoặc black-and-white thinking. Dấu hiệu thường gặp - Either… or…, If you're not with us, you're against us.
+
+  - key: en:item:crw-slippery-slope
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, vocabulary]
+    front:
+      text: a slippery slope
+      ipa: UK /ə ˌslɪpəri ˈsləʊp/ · US /ə ˌslɪpəri ˈsloʊp/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Ngụy biện dốc trượt - cho rằng một bước nhỏ chắc chắn kéo theo một chuỗi hệ quả ngày càng tệ, mà không có bằng chứng.
+      examples:
+        - target: "\"If we allow calculators, soon nobody will be able to add\" is a slippery-slope argument."
+          translation:
+            vi: "\"Nếu cho dùng máy tính bỏ túi thì chẳng mấy chốc chẳng ai biết cộng\" là lập luận dốc trượt."
+      confusion:
+        vi: Khi đứng trước danh từ, viết có gạch nối - a slippery-slope argument. Be on a slippery slope (thành ngữ) lại có nghĩa "đang trượt dần vào tình thế xấu".
+
+  - key: en:item:crw-hasty-generalisation
+    type: vocab
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, vocabulary]
+    front:
+      text: a hasty generalisation
+      ipa: UK /ə ˌheɪsti ˌdʒenrəlaɪˈzeɪʃn/ · US /ə ˌheɪsti ˌdʒenrələˈzeɪʃn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Khái quát vội vàng - rút ra kết luận chung từ quá ít trường hợp.
+      examples:
+        - target: Two rude waiters do not make the whole city unfriendly - that's a hasty generalisation.
+          translation:
+            vi: Hai người phục vụ thô lỗ không làm cả thành phố trở nên kém thân thiện - đó là khái quát vội vàng.
+      confusion:
+        vi: Generalisation (Anh) / generalization (Mỹ). Động từ là generalise - Don't generalise from one example.
+
+  - key: en:item:crw-correlation-causation
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, writing]
+    front:
+      text: Correlation does not imply causation.
+      ipa: UK /ˌkɒrəˈleɪʃn dʌz nɒt ɪmˈplaɪ kɔːˈzeɪʃn/ · US /ˌkɔːrəˈleɪʃn dʌz nɑːt ɪmˈplaɪ kɑːˈzeɪʃn/
+      pos: câu cố định
+    back:
+      meaning:
+        vi: Tương quan không có nghĩa là nhân quả - hai hiện tượng cùng tăng giảm chưa chắc cái này gây ra cái kia.
+      examples:
+        - target: Ice-cream sales and drownings both rise in summer, but correlation does not imply causation.
+          translation:
+            vi: Doanh số kem và số vụ đuối nước đều tăng vào mùa hè, nhưng tương quan không có nghĩa là nhân quả.
+      confusion:
+        vi: Sau does not dùng động từ nguyên mẫu - does not imply, không phải does not implies. Causation (quan hệ nhân quả) khác causal (tính từ) và casual (bình thường, thân mật).
+
+  - key: en:item:crw-credible-source
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, writing]
+    front:
+      text: a credible / reliable source
+      ipa: UK /ə ˈkredəbl ˈsɔːs/ · US /ə ˈkredəbl ˈsɔːrs/
+      pos: collocation
+    back:
+      meaning:
+        vi: Nguồn đáng tin cậy - có tác giả rõ ràng, có bằng chứng, không bị chi phối bởi lợi ích.
+      examples:
+        - target: A company's own website is rarely a credible source on the safety of its products.
+          translation:
+            vi: Trang web của chính một công ty hiếm khi là nguồn đáng tin về độ an toàn của sản phẩm công ty đó.
+      confusion:
+        vi: Credible (đáng tin) khác credulous (cả tin, dễ bị lừa). Nguồn thì reliable/credible; người đọc mới cần critical (biết hoài nghi).
+
+  - key: en:item:crw-biased
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, vocabulary]
+    front:
+      text: biased
+      ipa: /ˈbaɪəst/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Thiên lệch, thiên vị - chỉ trình bày một phía hoặc bị lợi ích chi phối.
+      examples:
+        - target: The study is clearly biased - it was funded by the company whose product it praises.
+          translation:
+            vi: Nghiên cứu rõ ràng thiên lệch - nó được tài trợ bởi chính công ty có sản phẩm mà nó ca ngợi.
+      confusion:
+        vi: Bias là danh từ hoặc động từ (a bias against women); tính từ là biased. Không nói "The article is bias". Mức độ - slightly / heavily biased.
+
+  - key: en:item:crw-anecdotal-evidence
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, writing]
+    front:
+      text: anecdotal evidence
+      ipa: UK /ˌænɪkˈdəʊtl ˈevɪdəns/ · US /ˌænɪkˈdoʊtl ˈevɪdəns/
+      pos: collocation
+    back:
+      meaning:
+        vi: Bằng chứng giai thoại - dựa trên vài câu chuyện cá nhân, không phải nghiên cứu có hệ thống.
+      examples:
+        - target: "\"My grandfather smoked and lived to 95\" is anecdotal evidence - it proves nothing about smoking in general."
+          translation:
+            vi: "\"Ông tôi hút thuốc mà vẫn sống đến 95 tuổi\" là bằng chứng giai thoại - nó chẳng chứng minh được gì về tác hại của thuốc lá nói chung."
+      confusion:
+        vi: Evidence không đếm được - much / little evidence, a piece of evidence; không nói an evidence hay many evidences. Anecdotal là tính từ, anecdote là danh từ.
+
+  - key: en:item:crw-peer-reviewed
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [reading, vocabulary]
+    front:
+      text: peer-reviewed
+      ipa: UK /ˌpɪə rɪˈvjuːd/ · US /ˌpɪr rɪˈvjuːd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: Đã qua bình duyệt - được các chuyên gia cùng ngành thẩm định trước khi đăng.
+      examples:
+        - target: The claim has never appeared in a peer-reviewed journal.
+          translation:
+            vi: Khẳng định đó chưa từng xuất hiện trên một tạp chí có bình duyệt.
+      confusion:
+        vi: Peer là "người cùng ngành, đồng cấp", không phải pair (cặp) dù đọc gần giống.
+
+  - key: en:item:crw-does-not-follow
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [reading, writing, speaking]
+    front:
+      text: It does not necessarily follow that …
+      ipa: UK /ɪt dʌz nɒt ˌnesəˈserəli ˈfɒləʊ ðət/ · US /ɪt dʌz nɑːt ˌnesəˈserəli ˈfɑːloʊ ðət/
+      pos: cụm phản biện
+    back:
+      meaning:
+        vi: Không nhất thiết vì thế mà… - chỉ ra rằng kết luận không suy ra được từ tiền đề.
+      examples:
+        - target: Crime has fallen since the cameras were installed, but it does not necessarily follow that the cameras caused the fall.
+          translation:
+            vi: Tội phạm đã giảm từ khi lắp camera, nhưng không nhất thiết vì thế mà camera là nguyên nhân.
+      confusion:
+        vi: Dùng trạng từ necessarily, không dùng tính từ necessary. Follow ở đây là "suy ra", không phải "đi theo".
+
+  # ---------------- Bài 3: viết luận nghị luận ----------------
+  - key: en:item:crw-thesis-statement
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, vocabulary]
+    front:
+      text: thesis statement
+      ipa: /ˈθiːsɪs ˈsteɪtmənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Câu luận điểm - một câu ở cuối mở bài nêu rõ lập trường và hướng lập luận của cả bài luận.
+      examples:
+        - target: "Thesis statement: This essay argues that cities should replace short-haul flights with high-speed rail."
+          translation:
+            vi: "Câu luận điểm: Bài luận này cho rằng các thành phố nên thay các chuyến bay chặng ngắn bằng đường sắt cao tốc."
+      confusion:
+        vi: Thesis còn có nghĩa "luận văn"; ở đây là câu luận điểm. Một thesis statement tốt phải nêu lập trường cụ thể, không chỉ giới thiệu chủ đề (In this essay I will talk about…).
+
+  - key: en:item:crw-topic-sentence
+    type: vocab
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: topic sentence
+      ipa: UK /ˈtɒpɪk ˈsentəns/ · US /ˈtɑːpɪk ˈsentəns/
+      pos: danh từ
+    back:
+      meaning:
+        vi: Câu chủ đề - câu đầu đoạn thân bài, nêu ý chính của cả đoạn.
+      examples:
+        - target: "Topic sentence: Firstly, green technology saves cities a considerable amount of money."
+          translation:
+            vi: "Câu chủ đề: Thứ nhất, công nghệ xanh giúp các thành phố tiết kiệm một khoản tiền đáng kể."
+      confusion:
+        vi: Các câu sau trong đoạn phải giải thích hoặc minh họa cho câu chủ đề; ý nằm ngoài câu chủ đề nên tách thành đoạn mới.
+
+  - key: en:item:crw-it-could-be-argued-that
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: It could be argued that …
+      ipa: UK /ɪt kʊd bi ˈɑːɡjuːd ðət/ · US /ɪt kʊd bi ˈɑːrɡjuːd ðət/
+      pos: cụm nêu phản đề
+    back:
+      meaning:
+        vi: Có thể lập luận rằng… - cách khách quan để nêu một quan điểm (thường là phản đề) mà không gán cho ai.
+      examples:
+        - target: It could be argued that homework puts too much pressure on young children.
+          translation:
+            vi: Có thể lập luận rằng bài tập về nhà gây quá nhiều áp lực cho trẻ nhỏ.
+      confusion:
+        vi: Cấu trúc bị động - be + argued (quá khứ phân từ); không nói It could be argue hay It could argue. Sau câu này thường là However,… để bác bỏ.
+
+  - key: en:item:crw-opponents-contend
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing, reading]
+    front:
+      text: Opponents of … contend that …
+      ipa: UK /əˈpəʊnənts əv … kənˈtend ðət/ · US /əˈpoʊnənts əv … kənˈtend ðət/
+      pos: cụm nêu phản đề
+    back:
+      meaning:
+        vi: Những người phản đối… cho rằng… - nêu lập luận của phía bên kia một cách trang trọng.
+      examples:
+        - target: Opponents of the tax contend that it hurts small businesses.
+          translation:
+            vi: Những người phản đối loại thuế này cho rằng nó gây hại cho doanh nghiệp nhỏ.
+      confusion:
+        vi: Opponents là số nhiều nên dùng contend (không có s). Ngược lại - Supporters / Proponents of… maintain that….
+
+  - key: en:item:crw-this-view-overlooks
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: However, this view overlooks …
+      ipa: UK /ðɪs ˈvjuː ˌəʊvəˈlʊks/ · US /ðɪs ˈvjuː ˌoʊvɚˈlʊks/
+      pos: cụm bác bỏ
+    back:
+      meaning:
+        vi: Tuy nhiên, quan điểm này bỏ qua… - bác bỏ phản đề bằng cách chỉ ra điều nó không tính đến.
+      examples:
+        - target: However, this view overlooks the fact that the smallest firms are exempt.
+          translation:
+            vi: Tuy nhiên, quan điểm này bỏ qua thực tế là các doanh nghiệp nhỏ nhất được miễn thuế.
+      confusion:
+        vi: Overlook = bỏ sót, không để ý tới; khác oversee (giám sát) và look over (xem qua). Thường đi với the fact that + mệnh đề.
+
+  - key: en:item:crw-it-follows-that
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: It follows that …
+      ipa: UK /ɪt ˈfɒləʊz ðət/ · US /ɪt ˈfɑːloʊz ðət/
+      pos: cụm suy luận
+    back:
+      meaning:
+        vi: Từ đó suy ra rằng… - dẫn ra một hệ quả logic từ ý vừa nêu.
+      examples:
+        - target: Class sizes are rising and fewer people are training as teachers. It follows that we need more teachers.
+          translation:
+            vi: Sĩ số lớp đang tăng và ngày càng ít người theo học ngành sư phạm. Từ đó suy ra rằng chúng ta cần thêm giáo viên.
+      confusion:
+        vi: Dùng chủ động It follows that…, không dùng bị động It is followed that…. Dạng phủ định quen thuộc - It does not necessarily follow that….
+
+  - key: en:item:crw-on-balance
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: on balance
+      ipa: UK /ɒn ˈbæləns/ · US /ɑːn ˈbæləns/
+      pos: cụm trạng từ
+    back:
+      meaning:
+        vi: Xét về tổng thể, sau khi cân nhắc mọi mặt - hay dùng ở kết bài.
+      examples:
+        - target: On balance, the advantages of working from home outweigh the disadvantages.
+          translation:
+            vi: Xét về tổng thể, lợi ích của việc làm việc tại nhà lớn hơn bất lợi.
+      confusion:
+        vi: Giới từ là on - on balance, không phải in balance (in balance là "cân bằng").
+
+  - key: en:item:crw-in-conclusion
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: In conclusion, …
+      ipa: /ɪn kənˈkluːʒn/
+      pos: cụm mở kết bài
+    back:
+      meaning:
+        vi: Tóm lại, để kết luận - mở đầu đoạn kết bài luận.
+      examples:
+        - target: In conclusion, while banning cars has costs, the benefits for public health are greater.
+          translation:
+            vi: Tóm lại, dù việc cấm ô tô có cái giá của nó, lợi ích cho sức khỏe cộng đồng lớn hơn.
+      confusion:
+        vi: At last là "cuối cùng thì (sau khi chờ đợi)", không dùng để kết bài. Finally dùng cho ý cuối cùng trong thân bài. Kết bài không đưa ý mới.
+
+  - key: en:item:crw-weigh-up
+    type: vocab
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, vocabulary]
+    front:
+      text: weigh up
+      ipa: /ˌweɪ ˈʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: Cân nhắc, so sánh các mặt trước khi kết luận.
+      examples:
+        - target: A good essay weighs up the arguments on both sides before reaching a conclusion.
+          translation:
+            vi: Một bài luận tốt cân nhắc lập luận của cả hai phía trước khi đi đến kết luận.
+      pronunciation_note:
+        vi: Chữ gh câm - weigh đọc /weɪ/ như way.
+      confusion:
+        vi: Weigh up phổ biến trong tiếng Anh Anh; tiếng Anh Mỹ thường chỉ dùng weigh (weigh the pros and cons).
+
+  - key: en:item:crw-to-a-large-extent
+    type: phrase
+    level: c1
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: to a large extent
+      ipa: UK /tu ə ˈlɑːdʒ ɪkˈstent/ · US /tu ə ˈlɑːrdʒ ɪkˈstent/
+      pos: cụm chỉ mức độ
+    back:
+      meaning:
+        vi: Phần lớn, ở mức độ lớn - diễn tả mức đồng ý cao nhưng không tuyệt đối.
+      examples:
+        - target: I agree with this view to a large extent, although it does not apply to every country.
+          translation:
+            vi: Tôi đồng ý phần lớn với quan điểm này, dù nó không đúng với mọi quốc gia.
+      confusion:
+        vi: Extent ở số ít và đi với to - to a large / great extent, to some extent; không nói to some extents hay in a large extent. Agree là động từ - I agree, không nói I am agree.
+
+  # ---------------- Bài 4: chuyển đổi văn phong ----------------
+  - key: en:item:crw-sort-out-resolve
+    type: vocab
+    level: c2
+    difficulty: 3
+    skill_tags: [writing, vocabulary]
+    front:
+      text: sort out ↔ resolve
+      ipa: UK /ˌsɔːt ˈaʊt/ ↔ /rɪˈzɒlv/ · US /ˌsɔːrt ˈaʊt/ ↔ /rɪˈzɑːlv/
+      pos: cặp thân mật - trang trọng
+    back:
+      meaning:
+        vi: Giải quyết (một vấn đề) - sort out thân mật, dùng khi nói; resolve trang trọng, dùng trong báo cáo, email công việc.
+      examples:
+        - target: "Spoken: We sorted out the problem pretty quickly. → Written: The issue was resolved promptly."
+          translation:
+            vi: "Văn nói: Bọn mình xử lý vụ đó khá nhanh. → Văn viết: Vấn đề đã được giải quyết kịp thời."
+      confusion:
+        vi: Cụm động từ (sort out, deal with, get rid of) không sai trong văn viết, nhưng báo cáo trang trọng thường chuộng một động từ đơn (resolve, address, eliminate).
+
+  - key: en:item:crw-a-lot-of-formal
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [writing, vocabulary]
+    front:
+      text: "a lot of / lots of → a considerable number of / a great deal of"
+      pos: chuyển văn phong
+    back:
+      meaning:
+        vi: Thay lượng từ thân mật bằng lượng từ trang trọng khi viết báo cáo hoặc bài luận.
+      examples:
+        - target: "Lots of people complained. → A considerable number of customers complained."
+          translation:
+            vi: "Nhiều người phàn nàn lắm. → Một số lượng đáng kể khách hàng đã phàn nàn."
+        - target: "It took a lot of work. → It required a great deal of effort."
+          translation:
+            vi: "Tốn công lắm. → Việc này đòi hỏi rất nhiều công sức."
+      confusion:
+        vi: A number of + danh từ đếm được số nhiều (a number of customers); a great deal of / an amount of + danh từ không đếm được (a great deal of effort).
+
+  - key: en:item:crw-get-in-touch
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing, speaking]
+    front:
+      text: get in touch (with) ↔ contact
+      ipa: /ˌɡet ɪn ˈtʌtʃ/ ↔ UK /ˈkɒntækt/ · US /ˈkɑːntækt/
+      pos: cặp trung tính - trang trọng
+    back:
+      meaning:
+        vi: Liên lạc, liên hệ - get in touch with thân thiện hơn; contact trang trọng hơn.
+      examples:
+        - target: "Feel free to get in touch with me any time. → Please contact us if you require further information."
+          translation:
+            vi: "Cứ liên lạc với mình bất cứ lúc nào nhé. → Vui lòng liên hệ với chúng tôi nếu anh/chị cần thêm thông tin."
+      confusion:
+        vi: Contact là ngoại động từ - contact us, không nói contact with us (dù tiếng Việt có "với"). Get in touch thì cần with - get in touch with us.
+
+  - key: en:item:crw-it-is-recommended-that
+    type: grammar_point
+    level: c2
+    difficulty: 4
+    skill_tags: [writing, grammar]
+    front:
+      text: It is recommended that + S + V (nguyên mẫu)
+      pos: câu vô nhân xưng
+    back:
+      meaning:
+        vi: Câu vô nhân xưng trang trọng (khuyến nghị, đề nghị) - không nêu ai khuyến nghị, hợp với báo cáo, thông báo.
+      examples:
+        - target: It is recommended that all staff complete the training before June.
+          translation:
+            vi: Khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - target: "Spoken: You should really book early. → Written: It is advisable to book in advance."
+          translation:
+            vi: "Văn nói: Bạn nên đặt sớm đấy. → Văn viết: Nên đặt chỗ trước."
+      confusion:
+        vi: Sau It is recommended / essential that, động từ ở dạng nguyên mẫu (giả định cách) - all staff complete, he attend, không thêm s. Không dịch It thành "Nó".
+
+  - key: en:item:crw-vague-language
+    type: grammar_point
+    level: c2
+    difficulty: 3
+    skill_tags: [writing, speaking]
+    front:
+      text: "kind of, stuff, and things like that → somewhat, materials, such as…"
+      pos: ngôn ngữ mơ hồ
+    back:
+      meaning:
+        vi: Ngôn ngữ mơ hồ (vague language) làm lời nói tự nhiên và mềm mại, nhưng trong văn viết trang trọng phải thay bằng từ chính xác.
+      examples:
+        - target: "Spoken: There's loads of stuff we can do to cut costs. → Written: Several measures could be taken to reduce costs."
+          translation:
+            vi: "Văn nói: Có cả đống việc mình làm được để cắt chi phí. → Văn viết: Có thể áp dụng một số biện pháp để giảm chi phí."
+      confusion:
+        vi: Kind of / sort of trong văn viết thay bằng somewhat, rather; stuff, things thay bằng danh từ cụ thể; and so on, and things like that thay bằng such as + ví dụ.
+
+  - key: en:item:crw-spoken-fillers
+    type: grammar_point
+    level: c2
+    difficulty: 3
+    skill_tags: [speaking, listening, writing]
+    front:
+      text: "you know, like, I mean, basically"
+      pos: từ đệm văn nói
+    back:
+      meaning:
+        vi: Từ đệm (fillers) giúp người nói có thời gian suy nghĩ hoặc làm câu nghe gần gũi; khi chuyển sang văn viết thì bỏ đi.
+      examples:
+        - target: "Spoken: So, basically, the new system is, like, way faster. → Written: The new system is considerably faster."
+          translation:
+            vi: "Văn nói: Nói chung là hệ thống mới, kiểu, nhanh hơn hẳn. → Văn viết: Hệ thống mới nhanh hơn đáng kể."
+      confusion:
+        vi: Like làm từ đệm khác hẳn like là "như" (cities like Hanoi). Way faster cũng là văn nói; văn viết dùng considerably / much faster.
+
+  - key: en:item:crw-would-appreciate-it-if
+    type: phrase
+    level: c1
+    difficulty: 4
+    skill_tags: [writing]
+    front:
+      text: I would appreciate it if you could …
+      ipa: /aɪ wʊd əˈpriːʃieɪt ɪt ɪf juː kʊd/
+      pos: cụm đề nghị lịch sự
+    back:
+      meaning:
+        vi: Tôi rất biết ơn nếu anh/chị có thể… - lời đề nghị lịch sự trong email trang trọng.
+      examples:
+        - target: I would appreciate it if you could reply by Friday.
+          translation:
+            vi: Tôi rất biết ơn nếu anh/chị có thể trả lời trước thứ Sáu.
+      pronunciation_note:
+        vi: Appreciate có âm /ʃ/ ở giữa - /əˈpriːʃieɪt/.
+      confusion:
+        vi: Không bỏ it - I would appreciate it if…, không nói I would appreciate if…. Cách tương đương - I would be grateful if you could….
+
+  - key: en:item:crw-please-note
+    type: phrase
+    level: c1
+    difficulty: 2
+    skill_tags: [writing]
+    front:
+      text: Please note that …
+      ipa: UK /ˌpliːz ˈnəʊt ðət/ · US /ˌpliːz ˈnoʊt ðət/
+      pos: cụm thông báo
+    back:
+      meaning:
+        vi: Xin lưu ý rằng… - lịch sự, trang trọng vừa phải, hợp với email và thông báo hiện đại.
+      examples:
+        - target: Please note that the office will be closed on Monday.
+          translation:
+            vi: Xin lưu ý rằng văn phòng sẽ đóng cửa vào thứ Hai.
+      confusion:
+        vi: Kindly be informed that… / Please be advised that… nghe cứng và cũ; Please note that… đủ lịch sự. Không nói Please notice that….
+
+  - key: en:item:crw-just-a-quick-note
+    type: phrase
+    level: c2
+    difficulty: 3
+    skill_tags: [writing]
+    front:
+      text: Just a quick note to say …
+      ipa: UK /dʒʌst ə ˌkwɪk ˈnəʊt tə ˈseɪ/ · US /dʒʌst ə ˌkwɪk ˈnoʊt tə ˈseɪ/
+      pos: cụm mở đầu thân mật
+    back:
+      meaning:
+        vi: Mình nhắn nhanh để báo là… - câu mở đầu thân mật cho tin nhắn, email gửi đồng nghiệp quen hoặc bạn bè.
+      examples:
+        - target: Just a quick note to say the meeting's moved to 3 - see you there!
+          translation:
+            vi: Mình nhắn nhanh là cuộc họp dời sang 3 giờ nhé - gặp ở đó!
+      confusion:
+        vi: Câu bỏ chủ ngữ và động từ (This is just a quick note…) - đặc trưng của văn thân mật. Không dùng cho email gửi khách hàng hoặc cấp trên ít quen.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:crw-cherry-picking
+    type: vocab
+    level: c2
+    difficulty: 4
+    skill_tags: [reading, writing, vocabulary]
+    front:
+      text: cherry-picking
+      ipa: /ˈtʃeri ˌpɪkɪŋ/
+      pos: danh từ (động từ - cherry-pick)
+    back:
+      meaning:
+        vi: Chọn lọc dữ liệu có lợi - chỉ dẫn những ví dụ, số liệu ủng hộ mình và lờ đi phần còn lại.
+      examples:
+        - target: Citing the one school where results improved, and ignoring the other thirty, is cherry-picking.
+          translation:
+            vi: Chỉ dẫn ra một trường có kết quả tốt lên và lờ đi ba mươi trường còn lại là chọn lọc dữ liệu có lợi.
+        - target: The report cherry-picks data from the best year.
+          translation:
+            vi: Bản báo cáo chỉ chọn số liệu của năm đẹp nhất.
+      confusion:
+        vi: Nghĩa đen là "hái anh đào" - chỉ hái quả ngon nhất. Viết có gạch nối - cherry-pick, cherry-picking.
+
+  - key: en:item:crw-sweeping-statement
+    type: phrase
+    level: c2
+    difficulty: 4
+    skill_tags: [reading, writing, speaking]
+    front:
+      text: a sweeping statement
+      ipa: /ə ˈswiːpɪŋ ˈsteɪtmənt/
+      pos: collocation
+    back:
+      meaning:
+        vi: Nhận định quá chung chung, vơ đũa cả nắm - khẳng định cho tất cả mà không có bằng chứng.
+      examples:
+        - target: "\"All teenagers are addicted to their phones\" is a sweeping statement."
+          translation:
+            vi: "\"Tất cả thiếu niên đều nghiện điện thoại\" là một nhận định vơ đũa cả nắm."
+      confusion:
+        vi: Dấu hiệu - all, every, always, never, nobody không kèm bằng chứng. Viết thận trọng hơn bằng ngôn ngữ rào đón - many, tend to, in most cases.

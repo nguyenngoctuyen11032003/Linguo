@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u5-kotowaza
+order_index: 2
+level: n1
+title:
+  vi: Tục ngữ ことわざ thông dụng
+objectives:
+  - vi: Hiểu nghĩa và hoàn cảnh dùng sáu câu tục ngữ Nhật thông dụng.
+  - vi: Liên hệ với tục ngữ, thành ngữ tiếng Việt có nghĩa gần.
+  - vi: Trích tục ngữ tự nhiên bằng ～と言うように / ～と言うが / ～とはよく言ったものだ.
+estimated_minutes: 22
+skills: [vocabulary, reading, speaking]
+prerequisites: [ja:lesson:n1-u5-body-idioms]
+items:
+  - item: ja:item:n1-u5-kotowaza
+  - item: ja:item:n1-u5-saru-mo-ki-kara
+  - item: ja:item:n1-u5-isogaba-maware
+  - item: ja:item:n1-u5-ishi-no-ue
+  - item: ja:item:n1-u5-hana-yori-dango
+  - item: ja:item:n1-u5-neko-ni-koban
+  - item: ja:item:n1-u5-deru-kui
+body:
+  - type: objective
+    text:
+      vi: Tục ngữ xuất hiện trong bài đọc, bài phát biểu và cả câu nói đùa hằng ngày. Sau bài này, bạn nhận ra và trích được những câu tục ngữ người Nhật hay dùng nhất.
+  - type: explain
+    text:
+      vi: '猿も木から落ちる - người giỏi cũng có lúc sai; 急がば回れ - dục tốc bất đạt; 石の上にも三年 - kiên trì ắt thành; 花より団子 - thực tế hơn phong nhã; 猫に小判 - đồ quý vào tay người không biết giá trị; 出る杭は打たれる - người nổi trội dễ bị chèn ép.'
+  - type: explain
+    text:
+      vi: 'Cách trích: 「急がば回れ」と言うように、～ (như câu ... đã nói); 「出る杭は打たれる」と言うが、～ (người ta nói ... nhưng); 「石の上にも三年」とはよく言ったものだ (câu ... nói quả không sai). Trong văn nói thường bỏ ngoặc - 猿も木から落ちるだね.'
+  - type: deep_explain
+    text:
+      vi: 'Nhiều câu có bản tương đương: 猿も木から落ちる = 弘法にも筆の誤り = 河童の川流れ; 猫に小判 = 豚に真珠. Đề N1 hay hỏi chọn câu tục ngữ đúng ngữ cảnh - cần chú ý sắc thái: 猿も木から落ちる chỉ dùng cho người vốn giỏi; 花より団子 mang ý đùa; 出る杭は打たれる thường dùng để phê phán xã hội hoặc tự an ủi.'
+  - type: example
+    target: ベテランの田中さんがこんな計算ミスをするなんて、猿も木から落ちるだね。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka lão luyện mà cũng tính sai thế này, đúng là ngựa hay cũng có lúc vấp.
+  - type: example
+    target: 「急がば回れ」と言うように、基礎からしっかり復習しよう。
+    target_lang: ja
+    translation:
+      vi: Như câu "dục tốc bất đạt", hãy ôn kỹ từ nền tảng.
+  - type: example
+    target: 料理をしない私に高級な包丁なんて、猫に小判だよ。
+    target_lang: ja
+    translation:
+      vi: Tặng dao xịn cho tôi, người không nấu ăn, thì đúng là phí của.
+  - type: example
+    target: 「石の上にも三年」とはよく言ったものだ。続けていたら、ようやく結果が出た。
+    target_lang: ja
+    translation:
+      vi: Câu "có công mài sắt có ngày nên kim" quả không sai. Cứ kiên trì, cuối cùng cũng có kết quả.
+  - type: common_mistake
+    wrong: 初心者の彼が失敗したのは、猿も木から落ちるだ。
+    right: 名人の彼が失敗したのは、猿も木から落ちるだ。
+    target_lang: ja
+    note:
+      vi: 猿も木から落ちる nói về người vốn giỏi lỡ sai. Người mới học mắc lỗi là chuyện bình thường, không dùng câu này.
+  - type: common_mistake
+    wrong: 急げば回れ。
+    right: 急がば回れ。
+    target_lang: ja
+    note:
+      vi: Tục ngữ giữ dạng cổ - 急がば (điều kiện cổ), không đổi thành 急げば.
+  - type: summary
+    points:
+      - vi: 猿も木から落ちる - người giỏi cũng có lúc sai.
+      - vi: 急がば回れ - dục tốc bất đạt; 石の上にも三年 - kiên trì ắt thành.
+      - vi: 花より団子 - thực tế hơn phong nhã; 猫に小判 - phí của, đàn gảy tai trâu.
+      - vi: 出る杭は打たれる - người nổi trội dễ bị chèn ép.
+      - vi: Trích - ～と言うように / ～と言うが / ～とはよく言ったものだ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u5-kotowaza-mcq-saru
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-saru-mo-ki-kara
+    prompt:
+      stem: 「猿も木から落ちる」 gần nghĩa với câu tiếng Việt nào?
+      stem_lang: vi
+      options:
+        - { id: v3k, text: Ngựa hay cũng có lúc vấp., lang: vi }
+        - { id: j8w, text: Có công mài sắt có ngày nên kim., lang: vi }
+        - { id: t5n, text: Đàn gảy tai trâu., lang: vi }
+        - { id: z1h, text: Uống nước nhớ nguồn., lang: vi }
+    answer:
+      correct_option_id: v3k
+    explanation:
+      vi: 猿も木から落ちる - khỉ leo cây giỏi cũng có lúc ngã, tức người giỏi cũng có lúc sai. "Có công mài sắt" là 石の上にも三年; "đàn gảy tai trâu" gần 猫に小判.
+    display_answer: Ngựa hay cũng có lúc vấp.
+
+  - key: ja:exercise:n1-u5-kotowaza-listen-neko
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u5-neko-ni-koban
+    prompt:
+      audio_asset_id: null
+      fallback_text: 料理をしない私に高級な包丁なんて、猫に小判だよ。
+      options:
+        - { id: b7e, text: "Tặng dao xịn cho tôi, người không nấu ăn, thì đúng là phí của.", lang: vi }
+        - { id: o4c, text: Tôi không nấu ăn nên đã mua cho mèo một con dao xịn., lang: vi }
+        - { id: i2r, text: Dao xịn rất đắt nên tôi không nấu ăn nữa., lang: vi }
+        - { id: m6y, text: Tôi nấu ăn giỏi nên cần một con dao xịn., lang: vi }
+    answer:
+      correct_option_id: b7e
+    explanation:
+      vi: 料理をしない私 - tôi, người không nấu ăn; ～なんて - (chê) cái thứ như ~; 猫に小判 - đồ quý vô ích với người không biết dùng.
+    display_answer: Tặng dao xịn cho tôi, người không nấu ăn, thì đúng là phí của.
+
+  - key: ja:exercise:n1-u5-kotowaza-mcq-hana
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-hana-yori-dango
+    prompt:
+      stem: 'Chọn tục ngữ hợp: お花見に来たのに、みんな食べてばかりで、まさに＿＿だ。'
+      stem_lang: vi
+      options:
+        - { id: c9a, text: 花より団子, lang: ja }
+        - { id: f3p, text: 急がば回れ, lang: ja }
+        - { id: w6s, text: 出る杭は打たれる, lang: ja }
+        - { id: h4d, text: 石の上にも三年, lang: ja }
+    answer:
+      correct_option_id: c9a
+    explanation:
+      vi: Đi ngắm hoa mà chỉ lo ăn - 花より団子 (bánh hơn hoa).
+    display_answer: 花より団子
+
+  - key: ja:exercise:n1-u5-kotowaza-fill-isogaba
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-isogaba-maware
+    prompt:
+      template: "「急がば{{b1}}」と言うように、基礎からしっかり復習しよう。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Như câu \"dục tốc bất đạt\", hãy ôn kỹ từ nền tảng."
+        - "Gợi ý: thể mệnh lệnh của 回る (đi vòng)."
+    answer:
+      blanks:
+        b1: [回れ, まわれ]
+    known_wrong:
+      - answer: 回る
+        feedback_vi: Tục ngữ dùng thể mệnh lệnh - 回れ.
+        error_tag: kotowaza_form
+      - answer: 走れ
+        feedback_vi: 走れ là "hãy chạy" - ngược với ý tục ngữ. Đúng là 回れ (hãy đi vòng).
+        error_tag: kotowaza_form
+    explanation:
+      vi: 急がば回れ - vội thì đi đường vòng (chắc chắn). ～と言うように - như câu ~ đã nói.
+    display_answer: 「急がば回れ」と言うように、基礎からしっかり復習しよう。
+
+  - key: ja:exercise:n1-u5-kotowaza-wb-ishi
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u5-ishi-no-ue
+    prompt:
+      instruction: "Sắp xếp thành tục ngữ: \"Ngồi trên đá ba năm (cũng ấm) - kiên trì ắt thành.\""
+      tokens:
+        - { id: s3, text: 三年 }
+        - { id: s1, text: 石の }
+        - { id: s4, text: 一年 }
+        - { id: s2, text: 上にも }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: 石の上にも三年 - "ba năm" là con số cố định của tục ngữ, mang nghĩa "thời gian dài".
+    display_answer: 石の上にも三年
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u5-kotowaza-fill-deru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-deru-kui
+    prompt:
+      template: "出る杭は{{b1}}と言うが、新しい提案をためらうべきではない。(bị đóng xuống)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [打たれる, うたれる]
+    known_wrong:
+      - answer: 打つ
+        feedback_vi: Cọc "bị" đóng - thể bị động 打たれる.
+        error_tag: passive
+      - answer: 抜かれる
+        feedback_vi: Tục ngữ cố định dùng 打たれる (bị đóng), không phải 抜かれる (bị nhổ).
+        error_tag: kotowaza_form
+    explanation:
+      vi: 出る杭は打たれる - cọc nhô lên thì bị đóng xuống. ～と言うが - người ta nói ~ nhưng.
+    display_answer: 出る杭は打たれると言うが、新しい提案をためらうべきではない。
+
+  - key: ja:exercise:n1-u5-kotowaza-translate-ishi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-ishi-no-ue
+    prompt:
+      source_text: Có công mài sắt có ngày nên kim (dùng tục ngữ Nhật). Hãy thử tiếp tục thêm một chút nữa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 石の上にも三年だ。もう少し続けてみよう。
+        - 石の上にも三年だ。もう少し続けてみて。
+        - 石の上にも三年です。もう少し続けてみましょう。
+        - 石の上にも三年です。もう少し続けてみてください。
+        - 石の上にも三年だよ。もう少し続けてみよう。
+        - 石の上にも三年だよ。もう少し続けてみて。
+        - 石の上にも三年。もう少し続けてみよう。
+        - 石の上にも三年。もう少し続けてみて。
+        - 石の上にも三年と言うから、もう少し続けてみよう。
+        - 石の上にも三年と言うし、もう少し続けてみよう。
+        - 石の上にも三年と言うように、もう少し続けてみよう。
+        - 石の上にも三年だ。もうちょっと続けてみよう。
+        - 石の上にも三年です。もう少し続けてみてはどうですか。
+        - いしのうえにもさんねんだ。もうすこしつづけてみよう。
+    known_wrong:
+      - answer: 石の上にも一年だ。もう少し続けてみよう。
+        feedback_vi: Tục ngữ cố định là 三年 - không đổi con số.
+        error_tag: kotowaza_form
+      - answer: 急がば回れだ。もう少し続けてみよう。
+        feedback_vi: 急がば回れ là "dục tốc bất đạt". Kiên trì ắt thành là 石の上にも三年.
+        error_tag: kotowaza_meaning
+    explanation:
+      vi: 石の上にも三年 - kiên trì ắt thành; もう少し続けてみよう - thử tiếp tục thêm chút nữa.
+    display_answer: 石の上にも三年だ。もう少し続けてみよう。
+
+  - key: ja:exercise:n1-u5-kotowaza-translate-saru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-saru-mo-ki-kara
+    prompt:
+      source_text: Như câu "khỉ cũng có lúc rơi từ cây", ai cũng có lúc thất bại. (dùng と言うように)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 猿も木から落ちると言うように、誰でも失敗することがある。
+        - 猿も木から落ちると言うように、誰でも失敗することがあります。
+        - 「猿も木から落ちる」と言うように、誰でも失敗することがある。
+        - 「猿も木から落ちる」と言うように、誰でも失敗することがあります。
+        - 猿も木から落ちると言うように、誰にでも失敗はある。
+        - 猿も木から落ちると言うように、誰にでも失敗はあります。
+        - 猿も木から落ちると言うように、誰だって失敗することがある。
+        - 猿も木から落ちると言うように、だれでも失敗することがある。
+        - 猿も木から落ちるというように、誰でも失敗することがある。
+        - 猿も木から落ちるというように、誰でも失敗することがあります。
+        - 猿も木から落ちると言うように、誰でも失敗する時がある。
+        - 猿も木から落ちると言うように、誰でも失敗するときがある。
+        - さるもきからおちるというように、だれでもしっぱいすることがある。
+    known_wrong:
+      - answer: 猿も木から落ちると言うように、誰でも成功することがある。
+        feedback_vi: 成功 là thành công - ngược nghĩa. Ai cũng có lúc thất bại - 失敗することがある.
+        error_tag: vocab_meaning
+      - answer: 猿が木から落ちると言うように、誰でも失敗することがある。
+        feedback_vi: Tục ngữ cố định dùng も (ngay cả khỉ cũng) - 猿も木から落ちる.
+        error_tag: kotowaza_form
+    explanation:
+      vi: ～と言うように - như câu ~; 誰でも～ことがある - ai cũng có lúc ~.
+    display_answer: 猿も木から落ちると言うように、誰でも失敗することがある。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u5-kotowaza-mcq-situation
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-isogaba-maware
+    prompt:
+      stem: 'Bạn muốn khuyên đồng nghiệp đang định bỏ qua khâu kiểm tra để kịp hạn. Câu nào phù hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: x2m, text: 急がば回れですよ。確認だけはしっかりしましょう。, lang: ja }
+        - { id: e8g, text: 花より団子ですよ。確認だけはしっかりしましょう。, lang: ja }
+        - { id: k5v, text: 猫に小判ですよ。確認だけはしっかりしましょう。, lang: ja }
+        - { id: r1t, text: 猿も木から落ちますよ。確認は省きましょう。, lang: ja }
+    answer:
+      correct_option_id: x2m
+    explanation:
+      vi: Càng gấp càng nên làm chắc - 急がば回れ. 花より団子, 猫に小判 không hợp ngữ cảnh; câu cuối lại khuyên bỏ kiểm tra.
+    display_answer: 急がば回れですよ。確認だけはしっかりしましょう。
+
+  - key: ja:exercise:n1-u5-kotowaza-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u5-deru-kui
+    prompt:
+      source_text: 日本の職場では、出る杭は打たれると感じる若者が少なくない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở nơi làm việc Nhật Bản, không ít người trẻ cảm thấy người nổi trội thì bị chèn ép.
+        - Ở nơi làm việc tại Nhật, không ít người trẻ cảm thấy người nổi trội thì bị chèn ép.
+        - Ở công sở Nhật Bản, không ít người trẻ cảm thấy người nổi trội thì bị chèn ép.
+        - Ở công sở Nhật, không ít người trẻ cảm thấy người nổi trội sẽ bị chèn ép.
+        - Ở nơi làm việc Nhật Bản, không ít người trẻ cảm thấy cây cao thì đón gió.
+        - Ở công sở Nhật Bản, không ít người trẻ cảm thấy cây cao thì đón gió.
+        - Ở nơi làm việc Nhật Bản, không ít người trẻ cảm thấy cọc nhô lên thì bị đóng xuống.
+        - Ở công sở Nhật Bản, không ít người trẻ cảm thấy cọc nhô lên thì bị đóng xuống.
+        - Ở nơi làm việc Nhật Bản, nhiều người trẻ cảm thấy người nổi trội thì bị chèn ép.
+        - Ở công sở Nhật Bản, nhiều người trẻ cảm thấy người nổi trội thì bị chèn ép.
+        - Tại nơi làm việc ở Nhật, không ít người trẻ cảm thấy người nổi bật thì bị chèn ép.
+        - Ở nơi làm việc Nhật Bản, không ít người trẻ cảm thấy người nổi bật sẽ bị chèn ép.
+        - Ở nơi làm việc Nhật Bản, không ít bạn trẻ cảm thấy người nổi trội thì bị chèn ép.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở nơi làm việc Nhật Bản, rất ít người trẻ cảm thấy người nổi trội thì bị chèn ép.
+        feedback_vi: 少なくない là "không ít", tức là khá nhiều - không phải "rất ít".
+        error_tag: negation
+    explanation:
+      vi: 職場 - nơi làm việc; 出る杭は打たれる - người nổi trội bị chèn ép; 少なくない - không ít.
+    display_answer: Ở nơi làm việc Nhật Bản, không ít người trẻ cảm thấy người nổi trội thì bị chèn ép.
+
+  - key: ja:exercise:n1-u5-kotowaza-wb-kotowaza
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u5-kotowaza
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Ở Nhật có câu tục ngữ 'hoa không bằng bánh dango'.\""
+      tokens:
+        - { id: q3, text: ということわざが }
+        - { id: q1, text: 日本には }
+        - { id: q5, text: という慣用句が }
+        - { id: q4, text: ある }
+        - { id: q2, text: 「花より団子」 }
+    answer:
+      orders:
+        - [q1, q2, q3, q4]
+    explanation:
+      vi: 「～」ということわざがある - có câu tục ngữ ~. 花より団子 là câu tục ngữ, không phải 慣用句.
+    display_answer: 日本には「花より団子」ということわざがある。
+
+  - key: ja:exercise:n1-u5-kotowaza-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u5-ishi-no-ue
+    prompt:
+      stem: "Đọc: 「入社してすぐ辞めたいと思った。しかし『石の上にも三年』と父に言われ、続けることにした。今では、あのとき急いで結論を出さなくてよかったと思っている。」 Ý của người viết là gì?"
+      stem_lang: vi
+      options:
+        - { id: g7u, text: Người viết mừng vì đã nghe lời bố kiên trì thay vì vội nghỉ việc., lang: vi }
+        - { id: d4l, text: Người viết hối hận vì đã không nghỉ việc ngay từ đầu., lang: vi }
+        - { id: y8o, text: Bố người viết khuyên anh ấy nghỉ việc sau ba năm., lang: vi }
+        - { id: n2f, text: Người viết đã làm việc trên công trường đá ba năm., lang: vi }
+    answer:
+      correct_option_id: g7u
+    explanation:
+      vi: 石の上にも三年 - kiên trì ắt thành; 続けることにした - quyết định tiếp tục; 急いで結論を出さなくてよかった - may mà đã không vội kết luận.
+    display_answer: Người viết mừng vì đã nghe lời bố kiên trì thay vì vội nghỉ việc.

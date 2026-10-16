@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u4-partial-negation
+order_index: 2
+level: n2
+title:
+  vi: Phủ định một phần - ～わけではない, ～ないことはない, ～とは限らない
+objectives:
+  - vi: Phủ định mềm, tránh hiểu lầm bằng ～わけではない / ～わけでもない.
+  - vi: Thừa nhận miễn cưỡng bằng ～ないことはない và phân biệt với ～ことはない (không cần).
+  - vi: Bác bỏ khái quát hoá bằng ～とは限らない và 一概に～とは言えない.
+estimated_minutes: 24
+skills: [grammar, speaking, reading]
+prerequisites: [ja:lesson:n2-u4-hearsay]
+items:
+  - item: ja:item:n2-u4-ichigai-ni
+  - item: ja:item:n2-u4-reigai
+  - item: ja:item:n2-u4-gokai
+  - item: ja:item:n2-u4-gram-nai-koto-wa-nai
+  - item: ja:item:n2-u4-gram-to-wa-kagiranai
+  - item: ja:item:n2-u4-gram-wake-demo-nai
+  - item: ja:item:n3-gram-wake-dewa-nai
+    role: reuse
+  - item: ja:item:n3-kanarazushimo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài báo, bài bình luận và cả hội thoại hằng ngày của người Nhật rất ít khi phủ định thẳng thừng. Bài này giúp bạn nói "không hẳn là", "không phải là không", "chưa chắc" - và đọc đúng ý người viết khi gặp các mẫu này.
+  - type: explain
+    text:
+      vi: '～わけではない - "không hẳn là", phủ định một phần hoặc sửa hiểu lầm: 料理ができないわけではない. ～わけでもない - "cũng không hẳn là", thêm một phủ định nữa: 好きなわけではないが、嫌いなわけでもない.'
+  - type: explain
+    text:
+      vi: 'Vない / Aくない + ことはない - "không phải là không...": 食べられないことはない (ăn thì cũng ăn được), 遠くないことはない (cũng hơi xa). Người nói thừa nhận nhưng không hào hứng, thường nối tiếp bằng が / けど.'
+  - type: explain
+    text:
+      vi: 'Thể thường + とは限らない - "chưa chắc", "không phải lúc nào cũng": 高い物がいい物とは限らない. Hay đi với 必ずしも và ～からといって. 一概に～とは言えない - không thể vơ đũa cả nắm rằng...'
+  - type: deep_explain
+    text:
+      vi: 'So sánh độ mạnh: ～はずがない / ～わけがない (không thể nào - phủ định hoàn toàn) > ～とは言えない (không thể nói là) > ～とは限らない (chưa chắc - có ngoại lệ) > ～わけではない (không hẳn - sửa cách hiểu). Bẫy hay gặp trong đề N2: V thể từ điển + ことはない là "không cần" (心配することはない), còn Vない + ことはない là "không phải không" (できないことはない).'
+  - type: example
+    target: 料理ができないわけではないが、忙しくてほとんどしない。
+    target_lang: ja
+    translation:
+      vi: Không phải là tôi không biết nấu, nhưng bận nên hầu như không nấu.
+  - type: example
+    target: 刺身は食べられないことはないが、あまり好きではない。
+    target_lang: ja
+    translation:
+      vi: Sashimi thì không phải không ăn được, nhưng tôi không thích lắm.
+  - type: example
+    target: 有名な大学を出た人が、仕事ができるとは限らない。
+    target_lang: ja
+    translation:
+      vi: Người tốt nghiệp đại học nổi tiếng chưa chắc đã làm việc giỏi.
+  - type: example
+    target: 若者が本を読まなくなったとは、一概には言えません。
+    target_lang: ja
+    translation:
+      vi: Không thể vơ đũa cả nắm rằng giới trẻ không còn đọc sách.
+  - type: example
+    target: 誤解しないでください。反対しているわけではありません。
+    target_lang: ja
+    translation:
+      vi: Xin đừng hiểu lầm. Không phải là tôi phản đối.
+  - type: common_mistake
+    wrong: 心配しないことはないよ。大丈夫だから。
+    right: 心配することはないよ。大丈夫だから。
+    target_lang: ja
+    note:
+      vi: '"Không cần lo đâu" - V thể từ điển + ことはない. 心配しないことはない lại thành "không phải là không lo" - ngược ý.'
+  - type: common_mistake
+    wrong: 日本人だからといって、必ずしも納豆が好きだ。
+    right: 日本人だからといって、必ずしも納豆が好きだとは限らない。
+    target_lang: ja
+    note:
+      vi: 必ずしも và ～からといって phải đi với phủ định ở cuối câu - ～とは限らない / ～わけではない.
+  - type: summary
+    points:
+      - vi: わけではない - không hẳn là; わけでもない - cũng không hẳn là.
+      - vi: Vないことはない - không phải là không; Vる + ことはない - không cần.
+      - vi: とは限らない - chưa chắc; 一概に～とは言えない - không thể vơ đũa cả nắm.
+      - vi: 例外 (ngoại lệ), 誤解 (hiểu lầm).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u4-partial-negation-mcq-kagiranai
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u4-gram-to-wa-kagiranai
+    prompt:
+      stem: 「～とは限らない」 nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: q4m, text: "chưa chắc, không phải lúc nào cũng", lang: vi }
+        - { id: z8a, text: chắc chắn là, lang: vi }
+        - { id: l2f, text: không thể nào, lang: vi }
+        - { id: t6p, text: không cần phải, lang: vi }
+    answer:
+      correct_option_id: q4m
+    explanation:
+      vi: とは限らない - chưa chắc (có ngoại lệ). Không thể nào là はずがない; không cần là Vる + ことはない.
+    display_answer: chưa chắc, không phải lúc nào cũng
+
+  - key: ja:exercise:n2-u4-partial-negation-listen-naikoto
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-gram-nai-koto-wa-nai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 刺身は食べられないことはないが、あまり好きではない。
+      options:
+        - { id: h3k, text: "Sashimi thì không phải không ăn được, nhưng tôi không thích lắm.", lang: vi }
+        - { id: c9u, text: Tôi hoàn toàn không ăn được sashimi., lang: vi }
+        - { id: o5r, text: "Sashimi thì không cần ăn, vì tôi không thích lắm.", lang: vi }
+        - { id: x1g, text: Tôi rất thích sashimi và ăn được nhiều., lang: vi }
+    answer:
+      correct_option_id: h3k
+    explanation:
+      vi: 食べられないことはない - không phải là không ăn được (ăn thì cũng ăn được); あまり好きではない - không thích lắm.
+    display_answer: Sashimi thì không phải không ăn được, nhưng tôi không thích lắm.
+
+  - key: ja:exercise:n2-u4-partial-negation-mcq-kotowanai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-nai-koto-wa-nai
+    prompt:
+      stem: Câu nào có nghĩa "Không cần phải xin lỗi đâu."?
+      stem_lang: vi
+      options:
+        - { id: s7d, text: 謝ることはないよ。, lang: ja }
+        - { id: e4w, text: 謝らないことはないよ。, lang: ja }
+        - { id: n6j, text: 謝るとは限らないよ。, lang: ja }
+        - { id: b2y, text: 謝るわけだよ。, lang: ja }
+    answer:
+      correct_option_id: s7d
+    explanation:
+      vi: V thể từ điển + ことはない - không cần. 謝らないことはない là "không phải là không xin lỗi"; 謝るとは限らない là "chưa chắc sẽ xin lỗi"; 謝るわけだ là "thảo nào xin lỗi".
+    display_answer: 謝ることはないよ。
+
+  - key: ja:exercise:n2-u4-partial-negation-fill-kagiranai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-gram-to-wa-kagiranai
+    prompt:
+      template: "値段が高いからといって、品質がいい{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Không phải cứ giá cao là chất lượng tốt."
+        - "Gợi ý: と + は + 限る (thể phủ định)."
+    answer:
+      blanks:
+        b1: [とは限らない, とはかぎらない, とは限りません, とはかぎりません]
+    known_wrong:
+      - answer: はずがない
+        feedback_vi: はずがない là "không thể nào" - phủ định hoàn toàn. Ở đây chỉ là "chưa chắc" - とは限らない.
+        error_tag: partial_negation
+      - answer: とは限る
+        feedback_vi: ～からといって cần phủ định ở cuối - とは限らない.
+        error_tag: grammar_form
+    explanation:
+      vi: ～からといって、～とは限らない - không phải cứ... là...
+    display_answer: 値段が高いからといって、品質がいいとは限らない。
+
+  - key: ja:exercise:n2-u4-partial-negation-wb-wakedewanai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-gram-wake-dewa-nai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Không phải là tôi không biết nấu, nhưng bận nên hầu như không nấu.\""
+      tokens:
+        - { id: k3, text: 忙しくてほとんどしない }
+        - { id: k4, text: できるわけではないが、 }
+        - { id: k1, text: 料理が }
+        - { id: k2, text: できないわけではないが、 }
+    answer:
+      orders:
+        - [k1, k2, k3]
+    explanation:
+      vi: できないわけではない - không phải là không biết (tức là biết). できるわけではない lại là "không hẳn là biết" - ngược ý.
+    display_answer: 料理ができないわけではないが、忙しくてほとんどしない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u4-partial-negation-fill-reigai
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u4-reigai
+    prompt:
+      template: "どんなルールにも{{b1}}はあります。(ngoại lệ)"
+      blanks:
+        - { id: b1, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [例外, れいがい]
+    known_wrong:
+      - answer: れいかい
+        feedback_vi: 外 trong từ này đọc đục - れいがい.
+        error_tag: reading
+      - answer: 以外
+        feedback_vi: 以外 là "ngoài ra, trừ"; "ngoại lệ" là 例外.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 例外 - ngoại lệ. どんな～にも - bất cứ... nào cũng.
+    display_answer: どんなルールにも例外はあります。
+
+  - key: ja:exercise:n2-u4-partial-negation-translate-kagiranai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-wa-kagiranai
+    prompt:
+      source_text: Người giỏi tiếng Anh chưa chắc đã dạy giỏi. (dùng とは限らない)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 英語が上手な人が、教えるのが上手だとは限らない。
+        - 英語が上手な人が、教えるのが上手とは限らない。
+        - 英語が上手な人が、教えるのも上手だとは限らない。
+        - 英語が上手な人が、教えるのも上手とは限らない。
+        - 英語が上手な人が、教えるのが上手だとは限りません。
+        - 英語が上手な人が、教えるのが上手とは限りません。
+        - 英語が上手な人が、教えるのも上手だとは限りません。
+        - 英語が上手な人が、教えるのも上手とは限りません。
+        - 英語が上手な人が、必ずしも教えるのが上手だとは限らない。
+        - 英語が上手な人が、必ずしも教えるのが上手とは限らない。
+        - 英語が上手な人が、必ずしも教えるのが上手だとは限りません。
+        - 英語が上手な人は、教えるのが上手だとは限らない。
+        - 英語が上手な人は、教えるのが上手とは限らない。
+        - 英語が上手な人は、教えるのも上手だとは限らない。
+        - 英語が上手な人は、必ずしも教えるのが上手だとは限らない。
+        - 英語が上手な人が、教え方が上手だとは限らない。
+        - 英語が上手な人が、教え方も上手だとは限らない。
+        - 英語が得意な人が、教えるのが上手だとは限らない。
+        - 英語ができる人が、教えるのが上手だとは限らない。
+        - 英語がうまい人が、教えるのがうまいとは限らない。
+    known_wrong:
+      - answer: 英語が上手な人が、教えるのが上手なはずがない。
+        feedback_vi: はずがない là "không thể nào" - phủ định hoàn toàn. "Chưa chắc" - とは限らない.
+        error_tag: partial_negation
+      - answer: 英語が上手な人は、教えるのが上手です。
+        feedback_vi: Câu này khẳng định; cần ～とは限らない để nói "chưa chắc".
+        error_tag: partial_negation
+    explanation:
+      vi: 教えるのが上手だ - dạy giỏi; ～とは限らない - chưa chắc. Có thể thêm 必ずしも để nhấn mạnh.
+    display_answer: 英語が上手な人が、教えるのが上手だとは限らない。
+
+  - key: ja:exercise:n2-u4-partial-negation-translate-ichigai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-ichigai-ni
+    prompt:
+      source_text: Không thể vơ đũa cả nắm rằng giới trẻ không đọc sách. (dùng 一概に)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 一概に若者は本を読まないとは言えない。
+        - 一概に若者は本を読まないとは言えません。
+        - 一概に若者が本を読まないとは言えない。
+        - 一概に若者が本を読まないとは言えません。
+        - 若者は本を読まないとは一概に言えない。
+        - 若者は本を読まないとは一概に言えません。
+        - 若者が本を読まないとは一概に言えない。
+        - 若者が本を読まないとは一概に言えません。
+        - 若者は本を読まないとは一概には言えない。
+        - 若者は本を読まないとは一概には言えません。
+        - 若者が本を読まないとは一概には言えない。
+        - 若者が本を読まないとは一概には言えません。
+        - 一概に若い人は本を読まないとは言えない。
+        - 一概に若い人は本を読まないとは言えません。
+        - 若い人は本を読まないとは一概に言えない。
+        - 若い人は本を読まないとは一概には言えません。
+        - 一概に若者は本を読まないとはいえない。
+        - 一概に若者は本を読まないとはいえません。
+        - 若者は本を読まないとは一概にはいえません。
+    known_wrong:
+      - answer: 一概に若者は本を読まない。
+        feedback_vi: 一概に luôn đi với phủ định ở cuối - ～とは言えない.
+        error_tag: ichigai
+      - answer: 一般に若者は本を読まないとは言えない。
+        feedback_vi: 一般に là "nói chung"; "không thể vơ đũa cả nắm" là 一概に.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 一概に～とは言えない - không thể vơ đũa cả nắm rằng... 一概に có thể đứng đầu câu hoặc ngay trước 言えない.
+    display_answer: 若者は本を読まないとは一概に言えない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u4-partial-negation-mcq-natto
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-nai-koto-wa-nai
+    prompt:
+      stem: 'Đồng nghiệp hỏi: 「納豆、食べられないの？」 Bạn ăn được nhưng không thích lắm. Câu trả lời nào phù hợp nhất?'
+      stem_lang: vi
+      options:
+        - { id: d5v, text: 食べられないことはないけど、あまり好きじゃないんだ。, lang: ja }
+        - { id: m8h, text: 食べられることはないけど、あまり好きじゃないんだ。, lang: ja }
+        - { id: a3c, text: 食べられないはずだけど、あまり好きじゃないんだ。, lang: ja }
+        - { id: y7s, text: 食べるとは限らないから、あまり好きじゃないんだ。, lang: ja }
+    answer:
+      correct_option_id: d5v
+    explanation:
+      vi: 食べられないことはない - không phải là không ăn được. 食べられることはない là "không bao giờ ăn được"; はずだ là suy luận; とは限らない không hợp ngữ cảnh.
+    display_answer: 食べられないことはないけど、あまり好きじゃないんだ。
+
+  - key: ja:exercise:n2-u4-partial-negation-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u4-gram-to-wa-kagiranai
+    prompt:
+      source_text: 有名な大学を出た人が、仕事ができるとは限らない。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người tốt nghiệp đại học nổi tiếng chưa chắc đã làm việc giỏi.
+        - Người tốt nghiệp trường đại học nổi tiếng chưa chắc đã làm việc giỏi.
+        - Người tốt nghiệp đại học nổi tiếng chưa chắc làm việc giỏi.
+        - Người tốt nghiệp đại học danh tiếng chưa chắc đã làm việc giỏi.
+        - Người tốt nghiệp từ đại học nổi tiếng chưa chắc đã làm việc giỏi.
+        - Người tốt nghiệp đại học nổi tiếng chưa hẳn đã làm việc giỏi.
+        - Người tốt nghiệp đại học nổi tiếng không hẳn là làm việc giỏi.
+        - Người tốt nghiệp đại học nổi tiếng không nhất thiết làm việc giỏi.
+        - Người tốt nghiệp đại học nổi tiếng không phải lúc nào cũng làm việc giỏi.
+        - Người tốt nghiệp đại học nổi tiếng chưa chắc đã giỏi việc.
+        - Người tốt nghiệp đại học nổi tiếng chưa chắc đã làm được việc.
+        - Người học đại học nổi tiếng ra chưa chắc đã làm việc giỏi.
+        - Tốt nghiệp đại học nổi tiếng chưa chắc đã làm việc giỏi.
+        - Người ra trường đại học nổi tiếng chưa chắc đã làm việc giỏi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người tốt nghiệp đại học nổi tiếng không thể làm việc giỏi.
+        feedback_vi: とは限らない là "chưa chắc", không phải "không thể".
+        error_tag: partial_negation
+    explanation:
+      vi: 有名な大学を出た人 - người tốt nghiệp đại học nổi tiếng; 仕事ができる - làm việc giỏi; とは限らない - chưa chắc.
+    display_answer: Người tốt nghiệp đại học nổi tiếng chưa chắc đã làm việc giỏi.
+
+  - key: ja:exercise:n2-u4-partial-negation-wb-wakedemonai
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u4-gram-wake-demo-nai
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi cũng không phải ghét anh ấy, nhưng gặp riêng hai người thì hơi ngại.\""
+      tokens:
+        - { id: g4, text: 少し気まずい }
+        - { id: g2, text: 嫌いなわけでもないが、 }
+        - { id: g5, text: 嫌いなはずでもないが、 }
+        - { id: g1, text: 彼が }
+        - { id: g3, text: 二人で会うのは }
+    answer:
+      orders:
+        - [g1, g2, g3, g4]
+    explanation:
+      vi: なA + な + わけでもない - cũng không hẳn là. はずでもない không tồn tại.
+    display_answer: 彼が嫌いなわけでもないが、二人で会うのは少し気まずい。
+
+  - key: ja:exercise:n2-u4-partial-negation-mcq-reading
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-kanarazushimo
+    prompt:
+      stem: "Đọc: 「SNSの情報がすべて間違っているわけではない。しかし、必ずしも正しいとは限らないので、複数の情報源で確かめることが大切だ。」 Ý của tác giả là gì?"
+      stem_lang: vi
+      options:
+        - { id: w6b, text: "Thông tin trên mạng xã hội không phải đều sai, nhưng chưa chắc đúng nên cần kiểm tra nhiều nguồn.", lang: vi }
+        - { id: f2n, text: Mọi thông tin trên mạng xã hội đều sai., lang: vi }
+        - { id: r9e, text: Thông tin trên mạng xã hội luôn đúng nên có thể tin ngay., lang: vi }
+        - { id: u4k, text: Không cần kiểm tra thông tin trên mạng xã hội., lang: vi }
+    answer:
+      correct_option_id: w6b
+    explanation:
+      vi: すべて間違っているわけではない - không phải tất cả đều sai; 必ずしも正しいとは限らない - chưa chắc đúng; 複数の情報源で確かめる - kiểm tra bằng nhiều nguồn.
+    display_answer: Thông tin trên mạng xã hội không phải đều sai, nhưng chưa chắc đúng nên cần kiểm tra nhiều nguồn.

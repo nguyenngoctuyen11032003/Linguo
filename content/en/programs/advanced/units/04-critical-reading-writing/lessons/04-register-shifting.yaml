@@ -1,0 +1,658 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:crw-register-shifting
+order_index: 4
+level: c2
+title:
+  vi: Chuyển đổi văn phong - trang trọng ↔ thân mật, văn nói ↔ văn viết
+objectives:
+  - vi: Chuyển một câu qua lại giữa trang trọng và thân mật bằng từ vựng (sort out ↔ resolve), lượng từ và cấu trúc vô nhân xưng (It is recommended that…).
+  - vi: Biến lời nói thành văn viết - bỏ từ đệm (you know, like), thay ngôn ngữ mơ hồ (stuff, kind of) bằng từ chính xác.
+  - vi: Viết email lịch sự mà không cứng nhắc - I would appreciate it if…, Please note that…, và biết khi nào dùng Just a quick note….
+estimated_minutes: 22
+skills: [writing, speaking, vocabulary, grammar]
+prerequisites: [en:lesson:crw-argumentative-essay]
+items:
+  - item: en:item:crw-sort-out-resolve
+  - item: en:item:crw-a-lot-of-formal
+  - item: en:item:crw-get-in-touch
+  - item: en:item:crw-it-is-recommended-that
+  - item: en:item:crw-vague-language
+  - item: en:item:crw-spoken-fillers
+  - item: en:item:crw-would-appreciate-it-if
+  - item: en:item:crw-please-note
+  - item: en:item:crw-just-a-quick-note
+  - item: en:item:register-shift
+    role: reuse
+  - item: en:item:with-regard-to
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Người viết giỏi đổi giọng theo người đọc - tin nhắn cho bạn, email cho khách hàng, báo cáo cho ban giám đốc, bài nói trước hội trường. Sau bài này, bạn chuyển một đoạn văn qua lại giữa các văn phong mà không bị cứng nhắc hay suồng sã.
+  - type: explain
+    text:
+      vi: Trang trọng ↔ thân mật khác nhau ở bốn mặt - (1) từ vựng - sort out ↔ resolve, get in touch ↔ contact, lots of ↔ a considerable number of; (2) ngữ pháp - câu bị động, vô nhân xưng (It is recommended that…) ↔ câu chủ động với we/you; (3) viết tắt - don't ↔ do not; (4) độ dài và độ phức tạp của câu.
+  - type: explain
+    text:
+      vi: Văn nói → văn viết - bỏ từ đệm (you know, like, I mean, basically); thay ngôn ngữ mơ hồ (kind of, stuff, and things like that) bằng từ chính xác; nối ý bằng từ nối thay vì and… and… so…. Ngược lại, văn viết → văn nói - câu ngắn hơn, dùng we/you, cụm động từ, có thể dùng câu hỏi tu từ.
+  - type: explain
+    text:
+      vi: Trang trọng không có nghĩa là cổ. Kindly be informed that… hay Please be advised that… nghe cứng và lỗi thời; Please note that… đủ lịch sự. Đề nghị lịch sự - I would appreciate it if you could…. Với đồng nghiệp thân, email ngắn mở bằng Just a quick note to say… là tự nhiên.
+  - type: deep_explain
+    text:
+      vi: Ba lỗi hay gặp khi viết email tiếng Anh - (1) I would appreciate if… - thiếu it, đúng là appreciate it if; (2) contact with us - contact là ngoại động từ, không cần with (nhưng get in touch with thì cần); (3) trộn văn phong - một email trang trọng chen like, stuff hoặc một tin nhắn thân mật chen hereby, kindly be informed. Chọn một văn phong theo người đọc và giữ nhất quán từ đầu đến cuối.
+  - type: example
+    target: "Spoken: We sorted out the problem pretty quickly. → Report: The issue was resolved promptly."
+    target_lang: en
+    translation:
+      vi: "Văn nói: Bọn mình xử lý vụ đó khá nhanh. → Báo cáo: Vấn đề đã được giải quyết kịp thời."
+    note:
+      vi: Cụm động từ → động từ đơn, chủ động → bị động, pretty quickly → promptly.
+  - type: example
+    target: "Spoken: So, basically, there's loads of stuff we can do to cut costs, like, energy and things like that. → Written: Several measures could be taken to reduce costs, notably in energy use."
+    target_lang: en
+    translation:
+      vi: "Văn nói: Nói chung là có cả đống việc mình làm được để cắt chi phí, kiểu như điện các thứ. → Văn viết: Có thể áp dụng một số biện pháp để giảm chi phí, đáng chú ý là trong việc sử dụng năng lượng."
+    note:
+      vi: Bỏ từ đệm (so, basically, like), thay loads of stuff và things like that bằng several measures và một ví dụ cụ thể.
+  - type: example
+    target: "Formal: It is recommended that all staff complete the training before June. → Informal: Try to get the training done before June if you can."
+    target_lang: en
+    translation:
+      vi: "Trang trọng: Khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu. → Thân mật: Cố làm xong khóa đào tạo trước tháng Sáu nhé."
+    note:
+      vi: Chiều ngược lại - câu vô nhân xưng thành lời nói trực tiếp với you, cụm get… done thân mật.
+  - type: example
+    target: I would appreciate it if you could send the signed contract by Friday. Please note that the office will be closed on Monday.
+    target_lang: en
+    translation:
+      vi: Tôi rất biết ơn nếu anh/chị có thể gửi hợp đồng đã ký trước thứ Sáu. Xin lưu ý rằng văn phòng sẽ đóng cửa vào thứ Hai.
+    note:
+      vi: Lịch sự và trang trọng nhưng không cứng - không có kindly be informed hay hereby.
+  - type: example
+    target: Just a quick note to say the meeting's moved to 3 - see you there!
+    target_lang: en
+    translation:
+      vi: Mình nhắn nhanh là cuộc họp dời sang 3 giờ nhé - gặp ở đó!
+    note:
+      vi: Tin nhắn cho đồng nghiệp thân - bỏ chủ ngữ, có viết tắt, câu ngắn.
+  - type: common_mistake
+    wrong: I would appreciate if you could reply by Friday.
+    right: I would appreciate it if you could reply by Friday.
+    target_lang: en
+    note:
+      vi: Appreciate cần tân ngữ it trước mệnh đề if.
+  - type: common_mistake
+    wrong: Please contact with our office for further information.
+    right: Please contact our office for further information.
+    target_lang: en
+    note:
+      vi: Contact + tân ngữ trực tiếp; "liên hệ với" trong tiếng Việt không chuyển thành contact with. Hoặc get in touch with our office.
+  - type: common_mistake
+    wrong: The results of the survey were, like, kind of disappointing.
+    right: The results of the survey were somewhat disappointing.
+    target_lang: en
+    note:
+      vi: Like và kind of là từ đệm, ngôn ngữ mơ hồ của văn nói; trong báo cáo dùng somewhat / rather.
+  - type: summary
+    points:
+      - vi: Trang trọng ↔ thân mật - resolve ↔ sort out, contact ↔ get in touch, a considerable number of ↔ lots of.
+      - vi: Câu vô nhân xưng trang trọng - It is recommended that + S + V nguyên mẫu.
+      - vi: Văn nói → văn viết - bỏ you know, like, basically; thay stuff, kind of, and things like that bằng từ chính xác.
+      - vi: Email lịch sự hiện đại - I would appreciate it if you could…, Please note that…; tránh kindly be informed, hereby.
+      - vi: Thân mật - Just a quick note to say…; chọn một văn phong và giữ nhất quán.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:crw-reg-mcq-formalise
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-sort-out-resolve
+    prompt:
+      stem: "Câu nói: \"We sorted out the problem pretty quickly.\" Câu nào là phiên bản phù hợp nhất cho một báo cáo trang trọng?"
+      stem_lang: vi
+      options:
+        - { id: r2p, text: "The issue was resolved promptly.", lang: en }
+        - { id: w7d, text: "The problem was sorted out pretty quickly.", lang: en }
+        - { id: k4u, text: "We sorted the problem out in a pretty quick way.", lang: en }
+        - { id: e9a, text: "The problem was resolved pretty quick.", lang: en }
+    answer:
+      correct_option_id: r2p
+    explanation:
+      vi: Resolve thay sort out, promptly thay pretty quickly, câu bị động bỏ we. Hai phương án giữa vẫn thân mật; phương án cuối còn dùng quick (tính từ) thay vì trạng từ.
+    display_answer: "The issue was resolved promptly."
+
+  - key: en:exercise:crw-reg-listen-fillers
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:crw-spoken-fillers
+    prompt:
+      audio_asset_id: null
+      fallback_text: "So, basically, the new system is, like, way faster, and, you know, people kind of love it."
+      options:
+        - { id: n3c, text: "Hệ thống mới nhanh hơn nhiều và người dùng khá thích - đây là văn nói thân mật với nhiều từ đệm.", lang: vi }
+        - { id: h6v, text: "Người nói đang đọc một báo cáo kỹ thuật trang trọng.", lang: vi }
+        - { id: a1z, text: "Hệ thống mới chậm hơn hệ thống cũ.", lang: vi }
+        - { id: y5r, text: "Người dùng không thích hệ thống mới.", lang: vi }
+    answer:
+      correct_option_id: n3c
+    explanation:
+      vi: So, basically, like, you know, kind of là từ đệm và ngôn ngữ mơ hồ của văn nói; way faster = nhanh hơn hẳn. Bản viết - The new system is considerably faster and has been well received by users.
+    display_answer: "Hệ thống mới nhanh hơn nhiều và người dùng khá thích - đây là văn nói thân mật với nhiều từ đệm."
+
+  - key: en:exercise:crw-reg-fill-appreciate-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-would-appreciate-it-if
+    prompt:
+      template: "I would appreciate {{b1}} if you could send the report by Friday. Please {{b2}} that the office will be closed on Monday."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi rất biết ơn nếu anh/chị có thể gửi báo cáo trước thứ Sáu. Xin lưu ý rằng văn phòng sẽ đóng cửa vào thứ Hai."
+        - "Gợi ý: ô 1 là đại từ tân ngữ đứng sau appreciate; ô 2 là động từ \"lưu ý\" (n…)."
+    answer:
+      blanks:
+        b1: [it]
+        b2: [note]
+    known_wrong:
+      - answer: notice
+        feedback_vi: Cụm chuẩn trong thông báo là Please note that…; notice là "để ý thấy".
+        error_tag: word_choice
+      - answer: noted
+        feedback_vi: Sau Please dùng động từ nguyên mẫu - Please note.
+        error_tag: verb_form
+    explanation:
+      vi: I would appreciate it if you could… - không bỏ it. Please note that… là cách lưu ý lịch sự, hiện đại.
+    display_answer: I would appreciate it if you could send the report by Friday. Please note that the office will be closed on Monday.
+
+  - key: en:exercise:crw-reg-mcq-quick-note
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-just-a-quick-note
+    prompt:
+      stem: Bạn nhắn cho một đồng nghiệp thân rằng cuộc họp dời sang 3 giờ chiều. Câu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: q8s, text: "Just a quick note to say the meeting's moved to 3 - see you there!", lang: en }
+        - { id: u2m, text: "Kindly be informed that the meeting has been rescheduled to 15:00 hours.", lang: en }
+        - { id: b5e, text: "We hereby notify you that the time of the meeting has been modified.", lang: en }
+        - { id: o3t, text: "Dear Sir or Madam, I am writing to inform you that the meeting has moved.", lang: en }
+    answer:
+      correct_option_id: q8s
+    explanation:
+      vi: Với đồng nghiệp thân, câu ngắn, có viết tắt và lời chào thân mật là phù hợp. Ba câu còn lại quá trang trọng hoặc cứng nhắc - nghe như thư hành chính.
+    display_answer: "Just a quick note to say the meeting's moved to 3 - see you there!"
+
+  # ---------------- recall ----------------
+  - key: en:exercise:crw-reg-fill-formalise
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-a-lot-of-formal
+    prompt:
+      template: "\"We'll get back to you soon.\" → \"We will {{b1}} you shortly.\" \"Lots of people complained.\" → \"A {{b2}} number of customers complained.\" \"We need to sort out the delay.\" → \"The delay needs to be {{b3}}.\""
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 12 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [contact, respond to, reply to, write to]
+        b2: [considerable, significant, substantial, large, great]
+        b3: [resolved, addressed, dealt with, rectified, remedied]
+    known_wrong:
+      - answer: contact with
+        feedback_vi: Contact là ngoại động từ - contact you, không có with.
+        error_tag: preposition
+      - answer: lot
+        feedback_vi: Câu trang trọng dùng a considerable / significant number of; a lot of là văn nói.
+        error_tag: register
+      - answer: resolve
+        feedback_vi: Sau needs to be cần quá khứ phân từ - resolved.
+        error_tag: verb_form
+      - answer: sorted out
+        feedback_vi: Sort out là cụm thân mật; báo cáo trang trọng dùng resolved / addressed.
+        error_tag: register
+    explanation:
+      vi: Get back to → contact / respond to; lots of → a considerable number of; sort out → resolve. Câu bị động needs to be + quá khứ phân từ.
+    display_answer: "\"We'll get back to you soon.\" → \"We will contact you shortly.\" \"Lots of people complained.\" → \"A considerable number of customers complained.\" \"We need to sort out the delay.\" → \"The delay needs to be resolved.\""
+
+  - key: en:exercise:crw-reg-translate-appreciate
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-would-appreciate-it-if
+    prompt:
+      source_text: Chúng tôi sẽ rất biết ơn nếu anh/chị có thể trả lời trước thứ Sáu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We would appreciate it if you could reply by Friday.
+        - We would appreciate it if you could reply before Friday.
+        - We would appreciate it if you could respond by Friday.
+        - We would appreciate it if you could respond before Friday.
+        - We would greatly appreciate it if you could reply by Friday.
+        - We would greatly appreciate it if you could reply before Friday.
+        - We would greatly appreciate it if you could respond by Friday.
+        - We would greatly appreciate it if you could respond before Friday.
+        - We would really appreciate it if you could reply by Friday.
+        - We would really appreciate it if you could reply before Friday.
+        - We would really appreciate it if you could respond by Friday.
+        - We would really appreciate it if you could respond before Friday.
+        - We would very much appreciate it if you could reply by Friday.
+        - We would very much appreciate it if you could reply before Friday.
+        - We would very much appreciate it if you could respond by Friday.
+        - We would very much appreciate it if you could respond before Friday.
+        - We would be grateful if you could reply by Friday.
+        - We would be grateful if you could reply before Friday.
+        - We would be grateful if you could respond by Friday.
+        - We would be grateful if you could respond before Friday.
+        - We would be very grateful if you could reply by Friday.
+        - We would be very grateful if you could reply before Friday.
+        - We would be very grateful if you could respond by Friday.
+        - We would be very grateful if you could respond before Friday.
+        - We would be most grateful if you could reply by Friday.
+        - We would be most grateful if you could reply before Friday.
+        - We would be most grateful if you could respond by Friday.
+        - We would be most grateful if you could respond before Friday.
+        - We would be extremely grateful if you could reply by Friday.
+        - We would be extremely grateful if you could reply before Friday.
+        - We would be extremely grateful if you could respond by Friday.
+        - We would be extremely grateful if you could respond before Friday.
+        - We'd appreciate it if you could reply by Friday.
+        - We'd appreciate it if you could reply before Friday.
+        - We'd appreciate it if you could respond by Friday.
+        - We'd appreciate it if you could respond before Friday.
+        - We'd greatly appreciate it if you could reply by Friday.
+        - We'd greatly appreciate it if you could reply before Friday.
+        - We'd greatly appreciate it if you could respond by Friday.
+        - We'd greatly appreciate it if you could respond before Friday.
+        - We'd really appreciate it if you could reply by Friday.
+        - We'd really appreciate it if you could reply before Friday.
+        - We'd really appreciate it if you could respond by Friday.
+        - We'd really appreciate it if you could respond before Friday.
+        - We'd very much appreciate it if you could reply by Friday.
+        - We'd very much appreciate it if you could reply before Friday.
+        - We'd very much appreciate it if you could respond by Friday.
+        - We'd very much appreciate it if you could respond before Friday.
+        - We'd be grateful if you could reply by Friday.
+        - We'd be grateful if you could reply before Friday.
+        - We'd be grateful if you could respond by Friday.
+        - We'd be grateful if you could respond before Friday.
+        - We'd be very grateful if you could reply by Friday.
+        - We'd be very grateful if you could reply before Friday.
+        - We'd be very grateful if you could respond by Friday.
+        - We'd be very grateful if you could respond before Friday.
+        - We'd be most grateful if you could reply by Friday.
+        - We'd be most grateful if you could reply before Friday.
+        - We'd be most grateful if you could respond by Friday.
+        - We'd be most grateful if you could respond before Friday.
+        - We'd be extremely grateful if you could reply by Friday.
+        - We'd be extremely grateful if you could reply before Friday.
+        - We'd be extremely grateful if you could respond by Friday.
+        - We'd be extremely grateful if you could respond before Friday.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We would appreciate if you could reply by Friday.
+        feedback_vi: Appreciate cần tân ngữ it - We would appreciate it if….
+        error_tag: appreciate_it
+      - answer: We would appreciate it if you could replied by Friday.
+        feedback_vi: Sau could dùng động từ nguyên mẫu - could reply.
+        error_tag: verb_form
+      - answer: We would appreciate it if you could reply until Friday.
+        feedback_vi: Hạn chót dùng by Friday (hoặc before Friday); until chỉ một hành động kéo dài đến thời điểm đó.
+        error_tag: preposition
+    explanation:
+      vi: I/We would appreciate it if you could… hoặc We would be grateful if you could… là lời đề nghị lịch sự trong email trang trọng. Hạn chót - by Friday.
+    display_answer: We would appreciate it if you could reply by Friday.
+
+  - key: en:exercise:crw-reg-translate-to-vi-recommended
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 4
+    item: en:item:crw-it-is-recommended-that
+    prompt:
+      source_text: It is recommended that all staff complete the training before June.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Khuyến nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Khuyến nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Khuyến nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Khuyến nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Khuyến nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Khuyến nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Khuyến nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Khuyến nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Khuyến nghị rằng tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng tất cả nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng tất cả nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng tất cả nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng tất cả nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Khuyến nghị rằng tất cả nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Khuyến nghị rằng toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Khuyến nghị rằng toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Khuyến nghị rằng mọi nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng mọi nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng mọi nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng mọi nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng mọi nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Khuyến nghị rằng mọi nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Khuyến nghị rằng mọi nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Khuyến nghị rằng mọi nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Chúng tôi khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Chúng tôi khuyến nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Chúng tôi khuyến nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Chúng tôi khuyến nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Chúng tôi khuyến nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Chúng tôi khuyến nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Chúng tôi khuyến nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Đề nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Đề nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Đề nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Đề nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Đề nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Đề nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Đề nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Đề nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Đề nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Đề nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Đề nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Đề nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Đề nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Đề nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Đề nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Đề nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Đề nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Đề nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Đề nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Đề nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Đề nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Đề nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Đề nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Đề nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Chúng tôi đề nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị tất cả nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Chúng tôi đề nghị tất cả nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Chúng tôi đề nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị toàn bộ nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị toàn bộ nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Chúng tôi đề nghị toàn bộ nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Chúng tôi đề nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị mọi nhân viên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị mọi nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng Sáu.
+        - Chúng tôi đề nghị mọi nhân viên hoàn tất khóa đào tạo trước tháng 6.
+        - Chúng tôi đề nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng Sáu.
+        - Chúng tôi đề nghị mọi nhân viên hoàn thành khóa huấn luyện trước tháng 6.
+        - Tất cả nhân viên được khuyến nghị hoàn thành khóa đào tạo trước tháng Sáu.
+        - Tất cả nhân viên được khuyến nghị hoàn thành khóa đào tạo trước tháng 6.
+        - Tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Tất cả nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Mọi nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Mọi nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+        - Toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng Sáu.
+        - Toàn bộ nhân viên nên hoàn thành khóa đào tạo trước tháng 6.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nó được khuyến nghị rằng tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+        feedback_vi: It ở đây là chủ ngữ giả, không dịch thành "Nó".
+        error_tag: literal_translation
+      - answer: Tất cả nhân viên đã hoàn thành khóa đào tạo trước tháng Sáu.
+        feedback_vi: Câu gốc là lời khuyến nghị, không phải thông báo việc đã xong.
+        error_tag: meaning
+    explanation:
+      vi: It is recommended that… là câu vô nhân xưng - tiếng Việt dịch "Khuyến nghị…" hoặc "Chúng tôi khuyến nghị…", bỏ chủ ngữ giả it.
+    display_answer: Khuyến nghị tất cả nhân viên hoàn thành khóa đào tạo trước tháng Sáu.
+
+  # ---------------- application ----------------
+  - key: en:exercise:crw-reg-order-contact
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:crw-get-in-touch
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh trang trọng: \"Vui lòng liên hệ với chúng tôi nếu anh/chị cần thêm thông tin.\""
+      tokens:
+        - { id: c-info, text: further information }
+        - { id: c-us, text: us }
+        - { id: c-with, text: with }
+        - { id: c-if, text: if you require }
+        - { id: c-please, text: Please }
+        - { id: c-contact, text: contact }
+    answer:
+      orders:
+        - [c-please, c-contact, c-us, c-if, c-info]
+    explanation:
+      vi: Contact + tân ngữ trực tiếp (contact us). With là token thừa - "liên hệ với" không chuyển thành contact with. Require và further information làm câu trang trọng hơn need và more information.
+    display_answer: Please contact us if you require further information.
+
+  - key: en:exercise:crw-reg-mcq-spoken-to-written
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:crw-vague-language
+    prompt:
+      stem: "Bạn chuyển câu nói trong cuộc họp thành một câu trong báo cáo: \"There's loads of stuff we can do to cut costs, like, energy and things like that.\" Câu nào tốt nhất?"
+      stem_lang: vi
+      options:
+        - { id: v6n, text: "Several measures could be taken to reduce costs, notably in energy use.", lang: en }
+        - { id: d4h, text: "There is loads of stuff that we can do to cut costs, like energy.", lang: en }
+        - { id: z1q, text: "Several measures could be taken to reduce costs, like, energy and things.", lang: en }
+        - { id: i7f, text: "Kindly be advised that loads of measures hereby exist for cost reduction.", lang: en }
+    answer:
+      correct_option_id: v6n
+    explanation:
+      vi: Câu đúng thay loads of stuff bằng several measures, bỏ từ đệm like và thay things like that bằng một ví dụ cụ thể. Các phương án khác vẫn mơ hồ, còn từ đệm, hoặc trộn từ cứng nhắc (kindly be advised, hereby) với từ thân mật (loads of).
+    display_answer: "Several measures could be taken to reduce costs, notably in energy use."
+
+  - key: en:exercise:crw-reg-mcq-formal-to-informal
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:register-shift
+    prompt:
+      stem: "Thông báo chính thức: \"Please be advised that the party has been postponed until further notice.\" Bạn báo tin này vào nhóm chat của bạn bè. Câu nào tự nhiên và nhất quán về văn phong?"
+      stem_lang: vi
+      options:
+        - { id: g2y, text: "Heads up - the party's off for now. I'll let you know the new date!", lang: en }
+        - { id: p9c, text: "Please be advised, guys, that the party has been postponed until further notice.", lang: en }
+        - { id: t6l, text: "The party is hereby postponed until further notice, lol.", lang: en }
+        - { id: m1s, text: "Heads up - kindly be informed that the party has been postponed until further notice.", lang: en }
+    answer:
+      correct_option_id: g2y
+    explanation:
+      vi: Câu đúng thân mật từ đầu đến cuối - heads up, the party's off, I'll let you know. Ba câu còn lại trộn văn phong - từ hành chính (be advised, hereby, kindly be informed) đi cùng từ thân mật (guys, lol, heads up).
+    display_answer: "Heads up - the party's off for now. I'll let you know the new date!"
+
+  - key: en:exercise:crw-reg-translate-with-regard-to
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 5
+    item: en:item:with-regard-to
+    prompt:
+      source_text: Về yêu cầu của anh/chị, vấn đề đã được giải quyết.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - With regard to your request, the issue has been resolved.
+        - With regard to your request, the issue has now been resolved.
+        - With regard to your request, the issue has been addressed.
+        - With regard to your request, the issue has been dealt with.
+        - With regard to your request, the issue has been settled.
+        - With regard to your request, the problem has been resolved.
+        - With regard to your request, the problem has now been resolved.
+        - With regard to your request, the problem has been addressed.
+        - With regard to your request, the problem has been dealt with.
+        - With regard to your request, the problem has been settled.
+        - With regard to your request, the matter has been resolved.
+        - With regard to your request, the matter has now been resolved.
+        - With regard to your request, the matter has been addressed.
+        - With regard to your request, the matter has been dealt with.
+        - With regard to your request, the matter has been settled.
+        - Regarding your request, the issue has been resolved.
+        - Regarding your request, the issue has now been resolved.
+        - Regarding your request, the issue has been addressed.
+        - Regarding your request, the issue has been dealt with.
+        - Regarding your request, the issue has been settled.
+        - Regarding your request, the problem has been resolved.
+        - Regarding your request, the problem has now been resolved.
+        - Regarding your request, the problem has been addressed.
+        - Regarding your request, the problem has been dealt with.
+        - Regarding your request, the problem has been settled.
+        - Regarding your request, the matter has been resolved.
+        - Regarding your request, the matter has now been resolved.
+        - Regarding your request, the matter has been addressed.
+        - Regarding your request, the matter has been dealt with.
+        - Regarding your request, the matter has been settled.
+        - As regards your request, the issue has been resolved.
+        - As regards your request, the issue has now been resolved.
+        - As regards your request, the issue has been addressed.
+        - As regards your request, the issue has been dealt with.
+        - As regards your request, the issue has been settled.
+        - As regards your request, the problem has been resolved.
+        - As regards your request, the problem has now been resolved.
+        - As regards your request, the problem has been addressed.
+        - As regards your request, the problem has been dealt with.
+        - As regards your request, the problem has been settled.
+        - As regards your request, the matter has been resolved.
+        - As regards your request, the matter has now been resolved.
+        - As regards your request, the matter has been addressed.
+        - As regards your request, the matter has been dealt with.
+        - As regards your request, the matter has been settled.
+        - In regard to your request, the issue has been resolved.
+        - In regard to your request, the issue has now been resolved.
+        - In regard to your request, the issue has been addressed.
+        - In regard to your request, the issue has been dealt with.
+        - In regard to your request, the issue has been settled.
+        - In regard to your request, the problem has been resolved.
+        - In regard to your request, the problem has now been resolved.
+        - In regard to your request, the problem has been addressed.
+        - In regard to your request, the problem has been dealt with.
+        - In regard to your request, the problem has been settled.
+        - In regard to your request, the matter has been resolved.
+        - In regard to your request, the matter has now been resolved.
+        - In regard to your request, the matter has been addressed.
+        - In regard to your request, the matter has been dealt with.
+        - In regard to your request, the matter has been settled.
+        - Concerning your request, the issue has been resolved.
+        - Concerning your request, the issue has now been resolved.
+        - Concerning your request, the issue has been addressed.
+        - Concerning your request, the issue has been dealt with.
+        - Concerning your request, the issue has been settled.
+        - Concerning your request, the problem has been resolved.
+        - Concerning your request, the problem has now been resolved.
+        - Concerning your request, the problem has been addressed.
+        - Concerning your request, the problem has been dealt with.
+        - Concerning your request, the problem has been settled.
+        - Concerning your request, the matter has been resolved.
+        - Concerning your request, the matter has now been resolved.
+        - Concerning your request, the matter has been addressed.
+        - Concerning your request, the matter has been dealt with.
+        - Concerning your request, the matter has been settled.
+        - With respect to your request, the issue has been resolved.
+        - With respect to your request, the issue has now been resolved.
+        - With respect to your request, the issue has been addressed.
+        - With respect to your request, the issue has been dealt with.
+        - With respect to your request, the issue has been settled.
+        - With respect to your request, the problem has been resolved.
+        - With respect to your request, the problem has now been resolved.
+        - With respect to your request, the problem has been addressed.
+        - With respect to your request, the problem has been dealt with.
+        - With respect to your request, the problem has been settled.
+        - With respect to your request, the matter has been resolved.
+        - With respect to your request, the matter has now been resolved.
+        - With respect to your request, the matter has been addressed.
+        - With respect to your request, the matter has been dealt with.
+        - With respect to your request, the matter has been settled.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: With regards to your request, the issue has been resolved.
+        feedback_vi: Văn trang trọng viết with regard to (không có s); regarding / as regards cũng đúng.
+        error_tag: with_regards
+      - answer: With regard to your request, the issue has been sorted out.
+        feedback_vi: Sort out là cụm thân mật, lệch văn phong của câu mở đầu trang trọng; dùng resolved.
+        error_tag: register
+      - answer: With regard to your request, the issue has resolved.
+        feedback_vi: Vấn đề "được" giải quyết - cần bị động has been resolved.
+        error_tag: passive
+    explanation:
+      vi: With regard to / Regarding + danh từ mở đầu trang trọng; the issue has been resolved là bị động hiện tại hoàn thành, nhất quán văn phong.
+    display_answer: With regard to your request, the issue has been resolved.

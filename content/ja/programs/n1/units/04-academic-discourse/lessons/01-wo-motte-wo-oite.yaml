@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n1-u4-wo-motte-wo-oite
+order_index: 1
+level: n1
+title:
+  vi: Văn bản trang trọng - ～をもって, ～をおいて(他に)
+objectives:
+  - vi: Hiểu ～をもって với nghĩa mốc kết thúc / bắt đầu và nghĩa "bằng (phương tiện)".
+  - vi: Đánh giá ai / cái gì là duy nhất bằng ～をおいて他に～ない.
+  - vi: Đọc hiểu thông báo chính thức dùng 締め切る, 書面, 適任.
+estimated_minutes: 24
+skills: [grammar, reading, vocabulary]
+prerequisites: [ja:lesson:n1-emotion-evaluation-review]
+items:
+  - item: ja:item:n1-u4-shimekiru
+  - item: ja:item:n1-u4-tekinin
+  - item: ja:item:n1-u4-shomen
+  - item: ja:item:n1-u4-gram-wo-motte
+  - item: ja:item:n1-u4-gram-wo-oite
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được những câu rất "giấy tờ" như 本日をもって受付を締め切ります hay 彼をおいて他に適任者はいない - kiểu câu gặp thường xuyên trong thông báo, diễn văn và đề đọc hiểu N1.
+  - type: explain
+    text:
+      vi: 'N + をもって (1) - mốc chính thức kết thúc hoặc bắt đầu: 本日をもって閉店いたします (đóng cửa kể từ hôm nay); 4月1日をもって社名を変更する. Dạng lịch sự hơn: をもちまして - 以上をもちまして終了いたします.'
+  - type: explain
+    text:
+      vi: 'N + をもって (2) - phương tiện, căn cứ, trang trọng hơn で: 書面をもって通知する (thông báo bằng văn bản); 彼の実力をもってすれば、優勝も夢ではない (với thực lực của anh ấy thì...).'
+  - type: explain
+    text:
+      vi: 'N + をおいて他に～ない - "ngoài N ra thì không có": この仕事を任せられるのは、彼をおいて他にいない. Có thể lược 他に: 彼をおいて適任者はいない. Vế sau luôn phủ định.'
+  - type: deep_explain
+    text:
+      vi: 'Hai mẫu cùng dùng を nhưng khác hẳn: をもって gắn với mốc / công cụ, còn をおいて là "đặt sang một bên N thì không còn gì" - tức khen N là duy nhất. Đừng nhầm をおいて với を除いて (trừ N ra): 彼を除いて全員賛成した chỉ loại trừ, không đánh giá. Ngoài ra, をもって không phải hạn nộp: "nộp trước thứ Sáu" là 金曜日までに提出.'
+  - type: example
+    target: 本日をもちまして、受付を締め切らせていただきます。
+    target_lang: ja
+    translation:
+      vi: Kể từ hôm nay, chúng tôi xin phép ngừng nhận hồ sơ.
+  - type: example
+    target: 結果は後日、書面をもってお知らせいたします。
+    target_lang: ja
+    translation:
+      vi: Kết quả sẽ được thông báo bằng văn bản vào ngày khác.
+  - type: example
+    target: 彼女の語学力をもってすれば、通訳の仕事も十分こなせるだろう。
+    target_lang: ja
+    translation:
+      vi: Với năng lực ngoại ngữ của cô ấy thì hoàn toàn có thể đảm đương công việc phiên dịch.
+  - type: example
+    target: 次の社長には、田中さんをおいて他に適任者はいない。
+    target_lang: ja
+    translation:
+      vi: Làm giám đốc kế nhiệm thì ngoài anh Tanaka ra không còn ai thích hợp hơn.
+  - type: common_mistake
+    wrong: 金曜日をもって書類を提出してください。
+    right: 金曜日までに書類を提出してください。
+    target_lang: ja
+    note:
+      vi: をもって là mốc kết thúc / thay đổi tình trạng do bên thông báo quyết định (締め切る, 終了する), không dùng làm hạn chót cho người khác làm việc gì - hạn chót là までに.
+  - type: common_mistake
+    wrong: この役は、彼をおいて他に適任者がいる。
+    right: この役は、彼をおいて他に適任者はいない。
+    target_lang: ja
+    note:
+      vi: ～をおいて他に luôn đi với phủ định ở cuối câu (いない / ない); ý câu là "chỉ có N".
+  - type: summary
+    points:
+      - vi: をもって (mốc) - 本日をもって終了; lịch sự hơn - をもちまして.
+      - vi: をもって (phương tiện) - 書面をもって; ～をもってすれば - với (năng lực) ... thì.
+      - vi: をおいて他に～ない - ngoài N ra không có; khác を除いて (trừ ra).
+      - vi: 締め切る (khoá sổ), 書面 (văn bản), 適任 (thích hợp với vai trò).
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n1-u4-wo-motte-mcq-meaning
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u4-gram-wo-motte
+    prompt:
+      stem: 「本日をもって閉店いたします」 - をもって ở đây nghĩa là gì?
+      stem_lang: vi
+      options:
+        - { id: k3a, text: "kể từ, đến hết (mốc kết thúc chính thức)", lang: vi }
+        - { id: p7d, text: "trước (hạn chót)", lang: vi }
+        - { id: c2m, text: "mang theo", lang: vi }
+        - { id: z9e, text: "ngoài ra thì không", lang: vi }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: 本日をもって閉店 - đóng cửa kể từ hôm nay (hôm nay là ngày cuối). Hạn chót là までに; "ngoài ra thì không" là をおいて他に～ない.
+    display_answer: "kể từ, đến hết (mốc kết thúc chính thức)"
+
+  - key: ja:exercise:n1-u4-wo-motte-listen-shimekiru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n1-u4-shimekiru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 本日をもちまして、受付を締め切らせていただきます。
+      options:
+        - { id: r4t, text: "Kể từ hôm nay, chúng tôi xin phép ngừng nhận hồ sơ.", lang: vi }
+        - { id: b8n, text: "Từ hôm nay, chúng tôi bắt đầu nhận hồ sơ.", lang: vi }
+        - { id: h1w, text: Xin vui lòng nộp hồ sơ trước hôm nay., lang: vi }
+        - { id: m6q, text: Hôm nay quầy tiếp tân tạm đóng cửa sớm., lang: vi }
+    answer:
+      correct_option_id: r4t
+    explanation:
+      vi: をもちまして - lịch sự của をもって (mốc); 受付を締め切る - ngừng nhận (hồ sơ, đăng ký); させていただきます - xin phép làm.
+    display_answer: Kể từ hôm nay, chúng tôi xin phép ngừng nhận hồ sơ.
+
+  - key: ja:exercise:n1-u4-wo-motte-mcq-oite
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-wo-oite
+    prompt:
+      stem: 'Chọn từ phù hợp: この難しい交渉を任せられるのは、山本さん＿＿他にいない。'
+      stem_lang: vi
+      options:
+        - { id: f5s, text: をおいて, lang: ja }
+        - { id: u2k, text: を除いて, lang: ja }
+        - { id: d8v, text: をもって, lang: ja }
+        - { id: l3j, text: に即して, lang: ja }
+    answer:
+      correct_option_id: f5s
+    explanation:
+      vi: ～をおいて他にいない - ngoài anh Yamamoto ra không còn ai (đánh giá cao nhất). を除いて chỉ là "trừ ra", không đi với 他にいない theo nghĩa khen.
+    display_answer: をおいて
+
+  - key: ja:exercise:n1-u4-wo-motte-fill-shomen
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n1-u4-shomen
+    prompt:
+      template: "結果は後日、{{b1}}をもってお知らせいたします。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Kết quả sẽ được thông báo bằng văn bản vào ngày khác."
+        - "Gợi ý: 'văn bản' (đối lập với nói miệng) - しょめん."
+    answer:
+      blanks:
+        b1: [書面, しょめん]
+    known_wrong:
+      - answer: 書類
+        feedback_vi: 書類 là giấy tờ, hồ sơ cụ thể; "bằng hình thức văn bản" là 書面.
+        error_tag: vocab_meaning
+      - answer: しょうめん
+        feedback_vi: しょ là âm ngắn - しょめん. しょうめん (正面) là "mặt trước".
+        error_tag: long_vowel
+    explanation:
+      vi: 書面をもって - bằng văn bản (trang trọng hơn 書面で).
+    display_answer: 結果は後日、書面をもってお知らせいたします。
+
+  - key: ja:exercise:n1-u4-wo-motte-wb-oite
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-tekinin
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Làm giám đốc kế nhiệm thì ngoài anh Tanaka ra không còn ai thích hợp.\""
+      tokens:
+        - { id: t3, text: 他に適任者はいない }
+        - { id: t1, text: 次の社長には、 }
+        - { id: t4, text: 田中さんをもって }
+        - { id: t2, text: 田中さんをおいて }
+    answer:
+      orders:
+        - [t1, t2, t3]
+    explanation:
+      vi: N + をおいて + 他に適任者はいない. をもって là mốc / phương tiện, không mang nghĩa "ngoài ra".
+    display_answer: 次の社長には、田中さんをおいて他に適任者はいない。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n1-u4-wo-motte-fill-shimekiru
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-shimekiru
+    prompt:
+      template: "応募は今月末をもって{{b1}}ます。(khoá sổ, ngừng nhận)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [締め切り, しめきり, 締切り]
+    known_wrong:
+      - answer: 閉め
+        feedback_vi: 閉める là đóng (cửa, nắp); ngừng nhận hồ sơ là 締め切る.
+        error_tag: vocab_meaning
+      - answer: 締め切
+        feedback_vi: Thể ます của 締め切る là 締め切ります - cần cả り.
+        error_tag: grammar_form
+    explanation:
+      vi: 締め切る → 締め切ります. Mẫu thông báo - ～をもって締め切ります.
+    display_answer: 応募は今月末をもって締め切ります。
+
+  - key: ja:exercise:n1-u4-wo-motte-translate-close
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-wo-motte
+    prompt:
+      source_text: Đến đây, cuộc họp hôm nay xin được kết thúc. (dùng 以上をもちまして)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 以上をもちまして、本日の会議を終了いたします。
+        - 以上をもちまして本日の会議を終了いたします。
+        - 以上をもちまして、本日の会議を終了します。
+        - 以上をもちまして、今日の会議を終了いたします。
+        - 以上をもちまして、今日の会議を終了します。
+        - 以上をもちまして、本日の会議を終わります。
+        - 以上をもちまして、本日の会議を終わらせていただきます。
+        - 以上をもちまして、本日の会議を終了させていただきます。
+        - 以上をもちまして、本日の会議は終了いたします。
+        - 以上をもちまして、本日の会議は終了です。
+        - 以上をもちまして、会議を終了いたします。
+        - 以上をもちまして、本日の会議を閉会いたします。
+        - いじょうをもちまして、ほんじつのかいぎをしゅうりょういたします。
+    known_wrong:
+      - answer: 以上までに、本日の会議を終了いたします。
+        feedback_vi: までに là hạn chót; mốc kết thúc trang trọng là 以上をもちまして.
+        error_tag: wo_motte
+      - answer: 以上をおいて、本日の会議を終了いたします。
+        feedback_vi: をおいて là "ngoài ... ra không có"; ở đây cần をもちまして.
+        error_tag: wo_motte_oite
+    explanation:
+      vi: 以上をもちまして - đến đây (kết thúc phần trình bày); 会議を終了いたします - xin kết thúc cuộc họp (khiêm nhường).
+    display_answer: 以上をもちまして、本日の会議を終了いたします。
+
+  - key: ja:exercise:n1-u4-wo-motte-translate-oite
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u4-gram-wo-oite
+    prompt:
+      source_text: Người có thể giao công việc này, ngoài cô ấy ra thì không có ai khác. (dùng をおいて他に)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この仕事を任せられるのは、彼女をおいて他にいない。
+        - この仕事を任せられるのは彼女をおいて他にいない。
+        - この仕事を任せられるのは、彼女をおいて他にいません。
+        - この仕事を任せられる人は、彼女をおいて他にいない。
+        - この仕事を任せられる人は、彼女をおいて他にいません。
+        - この仕事を任せられる人は、彼女をおいて他にはいない。
+        - この仕事を任せられるのは、彼女をおいて他にはいない。
+        - この仕事を任せられるのは、彼女をおいてほかにいない。
+        - この仕事を任せられるのは、彼女をおいてほかにいません。
+        - この仕事を任せられるのは、彼女をおいて他に誰もいない。
+        - この仕事を任せられる人は、彼女をおいて他に誰もいない。
+        - この仕事を任せられるのは、彼女を措いて他にいない。
+        - このしごとをまかせられるのは、かのじょをおいてほかにいない。
+    known_wrong:
+      - answer: この仕事を任せられるのは、彼女を除いて他にいない。
+        feedback_vi: を除いて là "trừ ra" - câu thành "trừ cô ấy ra thì không ai", ngược nghĩa khen. Dùng をおいて.
+        error_tag: oite_nozoite
+      - answer: この仕事を任せられるのは、彼女をおいて他にいる。
+        feedback_vi: ～をおいて他に luôn đi với phủ định - いない.
+        error_tag: negative_required
+    explanation:
+      vi: 任せられるのは - người có thể giao phó; 彼女をおいて他にいない - ngoài cô ấy ra không có ai.
+    display_answer: この仕事を任せられるのは、彼女をおいて他にいない。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n1-u4-wo-motte-mcq-notice
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-wo-motte
+    prompt:
+      stem: "Đọc thông báo: 「当店は、3月31日をもちまして閉店することとなりました。長年のご愛顧、誠にありがとうございました。」 Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g4p, text: Ngày 31/3 là ngày cuối cùng cửa hàng mở cửa., lang: vi }
+        - { id: s9x, text: Cửa hàng sẽ mở cửa trở lại từ ngày 31/3., lang: vi }
+        - { id: e2c, text: Khách hàng phải đến cửa hàng trước ngày 31/3., lang: vi }
+        - { id: y7h, text: Cửa hàng đóng cửa tạm thời trong tháng 3., lang: vi }
+    answer:
+      correct_option_id: g4p
+    explanation:
+      vi: 3月31日をもちまして閉店 - đóng cửa kể từ (sau) ngày 31/3, tức 31/3 là ngày cuối. ご愛顧 - sự ủng hộ của quý khách.
+    display_answer: Ngày 31/3 là ngày cuối cùng cửa hàng mở cửa.
+
+  - key: ja:exercise:n1-u4-wo-motte-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n1-u4-gram-wo-motte
+    prompt:
+      source_text: 彼女の語学力をもってすれば、通訳の仕事も十分こなせるだろう。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Với năng lực ngoại ngữ của cô ấy thì hoàn toàn có thể đảm đương công việc phiên dịch.
+        - Với năng lực ngoại ngữ của cô ấy thì chắc hoàn toàn có thể đảm đương công việc phiên dịch.
+        - Với năng lực ngoại ngữ của cô ấy thì có lẽ hoàn toàn làm được công việc phiên dịch.
+        - Với khả năng ngoại ngữ của cô ấy thì hoàn toàn có thể đảm đương công việc phiên dịch.
+        - Với khả năng ngoại ngữ của cô ấy thì chắc chắn làm tốt công việc phiên dịch.
+        - Với năng lực ngôn ngữ của cô ấy thì hoàn toàn có thể làm công việc phiên dịch.
+        - Với trình độ ngoại ngữ của cô ấy thì hoàn toàn có thể đảm nhận công việc phiên dịch.
+        - Với năng lực ngoại ngữ của cô ấy, việc phiên dịch chắc cũng làm tốt được.
+        - Nếu với năng lực ngoại ngữ của cô ấy thì công việc phiên dịch cũng hoàn toàn làm được.
+        - Với năng lực ngoại ngữ như cô ấy thì hoàn toàn có thể đảm đương công việc thông dịch.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cô ấy mang theo năng lực ngoại ngữ nên làm công việc phiên dịch.
+        feedback_vi: をもってすれば là "với (năng lực) đó thì", không phải "mang theo"; だろう là phỏng đoán.
+        error_tag: wo_motte_meaning
+    explanation:
+      vi: 語学力をもってすれば - với năng lực ngoại ngữ (ấy) thì; 十分こなせるだろう - chắc hoàn toàn đảm đương được.
+    display_answer: Với năng lực ngoại ngữ của cô ấy thì hoàn toàn có thể đảm đương công việc phiên dịch.
+
+  - key: ja:exercise:n1-u4-wo-motte-mcq-tekinin
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-tekinin
+    prompt:
+      stem: Trong cuộc họp nhân sự, bạn muốn tiến cử chị Sato là người duy nhất phù hợp làm trưởng dự án. Câu nào đúng và tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - { id: w5b, text: プロジェクトリーダーには、佐藤さんをおいて他に適任者はいないと思います。, lang: ja }
+        - { id: n1f, text: プロジェクトリーダーには、佐藤さんを除いて他に適任者はいないと思います。, lang: ja }
+        - { id: o6r, text: プロジェクトリーダーには、佐藤さんをもって適任者はいないと思います。, lang: ja }
+        - { id: i3g, text: プロジェクトリーダーには、佐藤さんをおいて他に適任者がいると思います。, lang: ja }
+    answer:
+      correct_option_id: w5b
+    explanation:
+      vi: をおいて他に適任者はいない - ngoài chị Sato ra không có ai thích hợp. を除いて làm câu thành "trừ chị Sato"; をもって sai nghĩa; vế sau phải phủ định.
+    display_answer: プロジェクトリーダーには、佐藤さんをおいて他に適任者はいないと思います。
+
+  - key: ja:exercise:n1-u4-wo-motte-wb-change
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n1-u4-gram-wo-motte
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Kể từ ngày 1 tháng 4, công ty sẽ đổi tên.\""
+      tokens:
+        - { id: s3, text: 変更いたします }
+        - { id: s4, text: 4月1日までに }
+        - { id: s1, text: 4月1日をもって }
+        - { id: s2, text: 社名を }
+    answer:
+      orders:
+        - [s1, s2, s3]
+    explanation:
+      vi: 4月1日をもって - mốc bắt đầu chính thức của thay đổi. までに là hạn chót, không hợp với thông báo thay đổi.
+    display_answer: 4月1日をもって社名を変更いたします。

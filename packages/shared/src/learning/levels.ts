@@ -15,10 +15,11 @@ export type LevelCode = EnLevel | KoLevel | JaLevel;
  * Highest level each language has a published program for (`content/<lang>/programs/*`, max `level_to`).
  * Levels above it stay valid codes (DB, diagnostic bank, exams) but are not offered as a current level or a
  * target, and diagnostic results are clamped to it, so nobody lands on a level without lessons.
- * `pnpm content:check` fails when a program reaches above this, and a test checks it matches the content tree:
- * shipping N2 means adding `content/ja/programs/n2` and raising `ja` here.
+ * `pnpm content:check` fails when a program reaches above this, and a test checks it matches the content tree.
+ * Every language now has content on its whole scale (JLPT N2/N1 shipped as `content/ja/programs/n2` and `n1`);
+ * the ceiling stays so a new language or scale can ship partially.
  */
-export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n3' };
+export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n1' };
 
 export interface LevelInfo {
   label: string;
@@ -148,7 +149,7 @@ export function availableLevels(language: LanguageCode): LevelCode[] {
 
 /**
  * True when `current` is at or above the highest level with content while the scale goes higher
- * (e.g. JLPT N3 before N2/N1 ship): there is nothing to aim for yet, though the learner has not finished the scale.
+ * (e.g. JLPT N3 back when N2/N1 had no lessons): there is nothing to aim for yet, though the learner has not finished the scale.
  */
 export function isAtContentCeiling(language: LanguageCode, current: string): boolean {
   const ordinal = levelOrdinal(language, current);

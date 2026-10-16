@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u3-meeting-requests
+order_index: 4
+level: n2
+title:
+  vi: Họp, nhờ vả và từ chối khéo
+objectives:
+  - vi: Nhờ việc khó một cách rất lịch sự bằng ～ていただけないでしょうか, 差し支えなければ.
+  - vi: Từ chối mềm bằng ～かねます, 遠慮させていただきます, せっかくですが.
+  - vi: Hiểu 検討いたします trong cuộc họp có thể là đồng ý hay từ chối khéo.
+estimated_minutes: 24
+skills: [speaking, listening, grammar]
+prerequisites: [ja:lesson:n2-u3-phone-message]
+items:
+  - item: ja:item:n2-u3-gram-kanemasu
+  - item: ja:item:n2-u3-gram-te-itadakenai-deshouka
+  - item: ja:item:n2-u3-kentou
+  - item: ja:item:n2-u3-sashitsukae
+  - item: ja:item:n2-u3-enryo
+  - item: ja:item:n2-u3-gram-sasete-itadaku
+    role: reuse
+  - item: ja:item:n3-gram-te-itadakemasenka
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Trong cuộc họp với đối tác, người Nhật hiếm khi nói thẳng "không". Bài này giúp bạn vừa nhờ được việc khó, vừa từ chối mà không làm mất lòng, và đọc được ý thật sau những câu rất lịch sự.
+  - type: explain
+    text:
+      vi: 'Nhờ việc khó: (cụm đệm) + V-ていただけないでしょうか. 大変恐縮ですが、納期を一週間延ばしていただけないでしょうか. Hỏi thông tin riêng hoặc nhờ việc ngoài phận sự: 差し支えなければ、ご予算を伺ってもよろしいでしょうか.'
+  - type: explain
+    text:
+      vi: 'Từ chối mềm: V(bỏ ます)-かねます - お引き受けいたしかねます (khó có thể nhận), わかりかねます (tôi không rõ), ご希望に沿いかねます (khó đáp ứng mong muốn). Từ chối lời mời: せっかくですが、今回は遠慮させていただきます. Hẹn trả lời sau: 社内で検討いたします / 検討させていただきます.'
+  - type: explain
+    text:
+      vi: 'Cấu trúc từ chối khéo thường gồm ba bước: (1) cảm ơn hoặc tỏ tiếc - 貴重なご提案をありがとうございます / せっかくですが; (2) lý do ngắn - 予算の関係で; (3) lời từ chối mềm - 今回は見送らせていただきます / お受けいたしかねます. Có thể thêm bước (4) mở đường cho lần sau - また機会がございましたら、よろしくお願いいたします.'
+  - type: deep_explain
+    text:
+      vi: かねます là cách nói khiêm tốn rằng phía mình không thể làm, không phải người kia sai. Đừng nhầm với かねない (có nguy cơ xảy ra chuyện xấu) - このままでは事故が起こりかねない. Về 検討, nếu đối tác chỉ nói 検討させていただきます rồi không hẹn ngày, đó thường là từ chối; nếu nói 前向きに検討いたします, 来週までにお返事いたします thì còn khả năng. Phần nghe N2 hay hỏi "kết quả cuộc họp là gì", nên hãy nghe kỹ những tín hiệu này.
+  - type: example
+    target: 大変恐縮ですが、納期を一週間延ばしていただけないでしょうか。
+    target_lang: ja
+    translation:
+      vi: Thật vô cùng ngại, liệu anh/chị có thể lùi hạn giao hàng thêm một tuần được không ạ?
+  - type: example
+    target: 差し支えなければ、ご予算を伺ってもよろしいでしょうか。
+    target_lang: ja
+    translation:
+      vi: Nếu không có gì bất tiện, cho phép tôi hỏi ngân sách của quý công ty được không ạ?
+  - type: example
+    target: 申し訳ございませんが、このお値段ではお引き受けいたしかねます。
+    target_lang: ja
+    translation:
+      vi: Thành thật xin lỗi, với mức giá này chúng tôi khó có thể nhận ạ.
+  - type: example
+    target: せっかくのお誘いですが、今回は遠慮させていただきます。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn lời mời quý giá, nhưng lần này cho phép tôi xin từ chối ạ.
+  - type: example
+    target: 貴重なご提案をありがとうございます。社内で検討いたしまして、来週中にお返事いたします。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn đề xuất quý giá của anh/chị. Chúng tôi sẽ xem xét trong nội bộ và trả lời trong tuần sau.
+  - type: common_mistake
+    wrong: その件については、私ではわかりません。
+    right: その件については、私ではわかりかねます。
+    target_lang: ja
+    note:
+      vi: Với khách, わかりません nghe cộc. わかりかねます là cách nói "tôi không rõ" khiêm tốn, giữ thể diện cho cả hai.
+  - type: common_mistake
+    wrong: 申し訳ございませんが、お引き受けしかねないです。
+    right: 申し訳ございませんが、お引き受けいたしかねます。
+    target_lang: ja
+    note:
+      vi: かねない nghĩa là "có thể sẽ (xảy ra chuyện xấu)", ngược nghĩa. Từ chối dùng かねます; ghép với いたす - いたしかねます.
+  - type: summary
+    points:
+      - vi: V-ていただけないでしょうか - nhờ việc khó, lịch sự hơn ていただけませんか.
+      - vi: 差し支えなければ - mở lời trước câu hỏi riêng, việc ngoài phận sự.
+      - vi: V(bỏ ます)-かねます - khó có thể (từ chối); ngược nghĩa với かねない.
+      - vi: せっかくですが + 遠慮させていただきます - từ chối lời mời.
+      - vi: 検討いたします - không hẹn ngày thường là từ chối; 前向きに検討 - còn hy vọng.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u3-meeting-requests-mcq-kanemasu
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-gram-kanemasu
+    prompt:
+      stem: 「このお値段ではお引き受けいたしかねます。」 Người nói có ý gì?
+      stem_lang: vi
+      options:
+        - { id: y5b, text: Với giá này thì khó có thể nhận (từ chối)., lang: vi }
+        - { id: c8n, text: Với giá này thì sẵn sàng nhận ngay., lang: vi }
+        - { id: m2k, text: Có nguy cơ phải nhận với giá này., lang: vi }
+        - { id: q4w, text: Muốn hỏi lại giá trước khi nhận., lang: vi }
+    answer:
+      correct_option_id: y5b
+    explanation:
+      vi: V(bỏ ます)-かねます - khó có thể (từ chối lịch sự). Nguy cơ xấu là かねない - nghĩa ngược hẳn.
+    display_answer: Với giá này thì khó có thể nhận (từ chối).
+
+  - key: ja:exercise:n2-u3-meeting-requests-listen-kentou
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u3-kentou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 貴重なご提案をありがとうございます。社内で前向きに検討いたしまして、来週中にお返事いたします。
+      options:
+        - { id: z6r, text: "Bên này đánh giá tích cực đề xuất và sẽ trả lời trong tuần sau.", lang: vi }
+        - { id: h1f, text: "Bên này từ chối đề xuất ngay tại cuộc họp.", lang: vi }
+        - { id: o9t, text: "Bên này nhờ đối tác xem xét lại đề xuất.", lang: vi }
+        - { id: e3j, text: "Bên này đã đồng ý và sẽ ký hợp đồng tuần sau.", lang: vi }
+    answer:
+      correct_option_id: z6r
+    explanation:
+      vi: 前向きに検討いたします - sẽ xem xét theo hướng tích cực; 来週中にお返事いたします - trả lời trong tuần sau. Chưa đồng ý hẳn, nhưng có hẹn ngày nên còn khả năng.
+    display_answer: Bên này đánh giá tích cực đề xuất và sẽ trả lời trong tuần sau.
+
+  - key: ja:exercise:n2-u3-meeting-requests-mcq-sashitsukae
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-sashitsukae
+    prompt:
+      stem: 'Bạn muốn hỏi đối tác lý do họ đổi nhà cung cấp - câu hỏi hơi riêng tư. Cụm mở đầu nào hợp nhất? ＿＿、変更の理由を伺ってもよろしいでしょうか。'
+      stem_lang: vi
+      options:
+        - { id: i7d, text: 差し支えなければ, lang: ja }
+        - { id: s2c, text: あいにく, lang: ja }
+        - { id: v5h, text: せっかくですが, lang: ja }
+        - { id: g8u, text: 念のため, lang: ja }
+    answer:
+      correct_option_id: i7d
+    explanation:
+      vi: 差し支えなければ - nếu không phiền, hợp với câu hỏi riêng. あいにく báo tin xấu; せっかくですが mở đầu lời từ chối; 念のため là xác nhận cho chắc.
+    display_answer: 差し支えなければ
+
+  - key: ja:exercise:n2-u3-meeting-requests-fill-enryo
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-enryo
+    prompt:
+      template: "せっかくのお誘いですが、今回は{{b1}}させていただきます。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Cảm ơn lời mời quý giá, nhưng lần này cho phép tôi xin từ chối ạ."
+        - "Gợi ý: danh từ nghĩa 'ngại, khách sáo' - えん…"
+    answer:
+      blanks:
+        b1: [遠慮, えんりょ]
+    known_wrong:
+      - answer: 検討
+        feedback_vi: 検討させていただきます là "xin phép xem xét", chưa phải từ chối thẳng lời mời. Từ chối lời mời dùng 遠慮.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 遠慮させていただきます - xin phép từ chối (khiêm nhường). せっかくですが mở đầu cho thấy mình trân trọng lời mời.
+    display_answer: せっかくのお誘いですが、今回は遠慮させていただきます。
+
+  - key: ja:exercise:n2-u3-meeting-requests-wb-itadakenai
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-gram-te-itadakenai-deshouka
+    prompt:
+      instruction: "Sắp xếp: \"Liệu anh/chị có thể lùi hạn giao hàng thêm một tuần được không ạ?\""
+      tokens:
+        - { id: n3, text: 延ばして }
+        - { id: n1, text: 納期を }
+        - { id: n5, text: さしあげないでしょうか }
+        - { id: n2, text: 一週間 }
+        - { id: n4, text: いただけないでしょうか }
+    answer:
+      orders:
+        - [n1, n2, n3, n4]
+        - [n2, n1, n3, n4]
+    explanation:
+      vi: V-ていただけないでしょうか - nhờ người kia làm cho mình (rất lịch sự). ～てさしあげる là mình làm cho người trên - sai hướng.
+    display_answer: 納期を一週間延ばしていただけないでしょうか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u3-meeting-requests-fill-wakarikanemasu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-gram-kanemasu
+    prompt:
+      template: "その件については、私では{{b1}}。(tôi không rõ - lịch sự với khách)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [わかりかねます, 分かりかねます, 判りかねます]
+    known_wrong:
+      - answer: わかりません
+        feedback_vi: Đúng nghĩa nhưng cộc với khách; dùng わかりかねます.
+        error_tag: register
+      - answer: わかりかねない
+        feedback_vi: かねない là "có nguy cơ" - ngược nghĩa. Dùng かねます.
+        error_tag: kaneru_kanenai
+    explanation:
+      vi: V(bỏ ます)-かねます - khó có thể. わかりかねます là câu quen thuộc của nhân viên khi không trả lời được.
+    display_answer: その件については、私ではわかりかねます。
+
+  - key: ja:exercise:n2-u3-meeting-requests-translate-itadakenai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-te-itadakenai-deshouka
+    prompt:
+      source_text: Liệu anh/chị có thể dời buổi họp sang thứ Năm được không ạ? (rất lịch sự, dùng ～ていただけないでしょうか)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会議を木曜日に変更していただけないでしょうか。
+        - 会議を木曜日に変えていただけないでしょうか。
+        - 会議を木曜日にずらしていただけないでしょうか。
+        - 会議を木曜日に移していただけないでしょうか。
+        - 会議の日程を木曜日に変更していただけないでしょうか。
+        - 会議の日を木曜日に変更していただけないでしょうか。
+        - 会議を木曜に変更していただけないでしょうか。
+        - 打ち合わせを木曜日に変更していただけないでしょうか。
+        - 会議を木曜日にご変更いただけないでしょうか。
+        - 恐れ入りますが、会議を木曜日に変更していただけないでしょうか。
+        - 大変恐縮ですが、会議を木曜日に変更していただけないでしょうか。
+        - かいぎをもくようびにへんこうしていただけないでしょうか。
+    known_wrong:
+      - answer: 会議を木曜日に変更してもらえないか。
+        feedback_vi: Thể thường, quá suồng sã với đối tác. Dùng ～ていただけないでしょうか.
+        error_tag: register
+      - answer: 会議を木曜日に変更いたしていただけないでしょうか。
+        feedback_vi: いたす là khiêm nhường cho mình; người kia đổi lịch - 変更していただけないでしょうか.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: 木曜日に変更する - đổi sang thứ Năm; ～ていただけないでしょうか - liệu có thể... giúp được không ạ. Thêm 恐れ入りますが ở đầu càng tự nhiên.
+    display_answer: 会議を木曜日に変更していただけないでしょうか。
+
+  - key: ja:exercise:n2-u3-meeting-requests-translate-enryo
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-enryo
+    prompt:
+      source_text: Cảm ơn anh/chị đã có lòng, nhưng lần này cho phép tôi xin từ chối ạ. (dùng せっかくですが và 遠慮)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - せっかくですが、今回は遠慮させていただきます。
+        - せっかくですが、今回はご遠慮させていただきます。
+        - せっかくですが、今回は遠慮いたします。
+        - せっかくですが今回は遠慮させていただきます。
+        - せっかくのお誘いですが、今回は遠慮させていただきます。
+        - せっかくのお話ですが、今回は遠慮させていただきます。
+        - せっかくですが、今回は遠慮させていただけますでしょうか。
+        - せっかくですが、今回は遠慮させていただければと思います。
+        - 折角ですが、今回は遠慮させていただきます。
+        - せっかくですが、このたびは遠慮させていただきます。
+        - せっかくですが、こんかいはえんりょさせていただきます。
+    known_wrong:
+      - answer: せっかくですが、今回はご遠慮ください。
+        feedback_vi: ご遠慮ください là "xin anh/chị đừng..." - bảo người kia không làm, không phải mình từ chối.
+        error_tag: kenjougo_meaning
+      - answer: せっかくですが、今回は遠慮しないでください。
+        feedback_vi: 遠慮しないで là "đừng khách sáo" - ngược ý.
+        error_tag: vocab_confusion
+    explanation:
+      vi: せっかくですが - cảm ơn đã có lòng nhưng...; 遠慮させていただきます - xin phép từ chối. ご遠慮させていただきます vẫn hay nghe dù về lý thuyết thừa ご.
+    display_answer: せっかくですが、今回は遠慮させていただきます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u3-meeting-requests-listen-result
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u3-kentou
+    prompt:
+      audio_asset_id: null
+      fallback_text: "A: こちらの新しいシステム、ぜひ御社でもご導入いただけないでしょうか。B: ご丁寧にご説明いただき、ありがとうございます。ただ、今年度は予算の関係もございますので…。検討させていただきます。"
+      options:
+        - { id: w8x, text: "B nhiều khả năng đang từ chối khéo vì vấn đề ngân sách.", lang: vi }
+        - { id: d1q, text: "B đồng ý mua hệ thống trong năm nay.", lang: vi }
+        - { id: r4m, text: "B nhờ A giảm giá hệ thống.", lang: vi }
+        - { id: k7s, text: "B hẹn trả lời chắc chắn vào tuần sau.", lang: vi }
+    answer:
+      correct_option_id: w8x
+    explanation:
+      vi: ただ (nhưng), 予算の関係もございますので… (vì liên quan ngân sách, bỏ lửng), rồi 検討させていただきます không hẹn ngày - đây là tín hiệu từ chối khéo điển hình.
+    display_answer: B nhiều khả năng đang từ chối khéo vì vấn đề ngân sách.
+
+  - key: ja:exercise:n2-u3-meeting-requests-mcq-decline
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-kanemasu
+    prompt:
+      stem: Khách yêu cầu giao hàng ngay ngày mai, nhưng công ty bạn không thể. Câu trả lời nào lịch sự và đúng nhất?
+      stem_lang: vi
+      options:
+        - { id: b2v, text: 大変申し訳ございませんが、明日のお届けはいたしかねます。, lang: ja }
+        - { id: f9e, text: 大変申し訳ございませんが、明日のお届けはいたしかねない状況です。, lang: ja }
+        - { id: j6o, text: 明日は無理です。できません。, lang: ja }
+        - { id: t3a, text: 大変申し訳ございませんが、明日のお届けはなさいかねます。, lang: ja }
+    answer:
+      correct_option_id: b2v
+    explanation:
+      vi: いたしかねます - (chúng tôi) khó có thể làm. かねない là nguy cơ xấu - sai nghĩa; 無理です quá thẳng; なさる là tôn kính, không dùng cho phía mình.
+    display_answer: 大変申し訳ございませんが、明日のお届けはいたしかねます。
+
+  - key: ja:exercise:n2-u3-meeting-requests-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u3-sashitsukae
+    prompt:
+      source_text: 差し支えなければ、ご予算を伺ってもよろしいでしょうか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu không có gì bất tiện, cho phép tôi hỏi ngân sách của anh chị được không ạ?
+        - Nếu không có gì bất tiện, cho tôi hỏi ngân sách của anh chị được không ạ?
+        - Nếu không phiền, cho phép tôi hỏi ngân sách của anh chị được không ạ?
+        - Nếu không phiền, cho tôi hỏi ngân sách của anh chị được không ạ?
+        - Nếu không phiền, tôi có thể hỏi ngân sách của anh chị được không ạ?
+        - Nếu không có gì bất tiện, tôi có thể hỏi về ngân sách được không ạ?
+        - Nếu không phiền, tôi xin phép hỏi ngân sách của quý công ty được không ạ?
+        - Nếu không có gì bất tiện, cho phép tôi hỏi ngân sách của quý công ty được không ạ?
+        - Nếu không phiền, cho tôi hỏi ngân sách được không ạ?
+        - Nếu không ngại, cho tôi hỏi ngân sách của anh chị được không ạ?
+        - Nếu không có gì trở ngại, cho phép tôi hỏi ngân sách của anh chị được không ạ?
+        - Nếu không phiền, cho phép tôi hỏi ngân sách của anh/chị được không ạ?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nếu không phiền, anh chị có thể hỏi ngân sách của tôi được không ạ?
+        feedback_vi: 伺う là khiêm nhường - người hỏi là "tôi", ngân sách là của người kia (ご予算).
+        error_tag: subject_confusion
+    explanation:
+      vi: 差し支えなければ - nếu không có gì bất tiện; ご予算 - ngân sách (của quý vị); 伺ってもよろしいでしょうか - cho phép tôi hỏi được không ạ.
+    display_answer: Nếu không có gì bất tiện, cho phép tôi hỏi ngân sách của anh chị được không ạ?
+
+  - key: ja:exercise:n2-u3-meeting-requests-wb-decline
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u3-gram-sasete-itadaku
+    prompt:
+      instruction: "Từ chối đề xuất trong họp: \"Cảm ơn đề xuất quý giá. Vì lý do ngân sách, lần này chúng tôi xin phép chưa tiến hành.\""
+      tokens:
+        - { id: g3, text: 予算の関係で、 }
+        - { id: g1, text: 貴重なご提案をありがとうございます。 }
+        - { id: g5, text: 見送っていただきます }
+        - { id: g2, text: 今回は }
+        - { id: g4, text: 見送らせていただきます }
+    answer:
+      orders:
+        - [g1, g3, g2, g4]
+        - [g1, g2, g3, g4]
+    explanation:
+      vi: Ba bước - cảm ơn, lý do, lời từ chối. 見送らせていただきます - (chúng tôi) xin phép gác lại; 見送っていただきます là bắt người kia gác lại - sai.
+    display_answer: 貴重なご提案をありがとうございます。予算の関係で、今回は見送らせていただきます。

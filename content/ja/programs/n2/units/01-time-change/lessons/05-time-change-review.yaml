@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-time-change-review
+order_index: 5
+level: n2
+title:
+  vi: "Ôn tập: bài báo về thị trấn đang thay đổi và email công việc"
+objectives:
+  - vi: Đọc hiểu một đoạn bài báo về thay đổi của một thị trấn, suy ra điều không viết thẳng.
+  - vi: Phối hợp うちに/最中に, たとたん/次第, につれて/とともに, かけ/つつある/一方だ trong cùng một văn bản.
+  - vi: Dùng 傾向, 急速, 物価 để mô tả xu hướng xã hội.
+estimated_minutes: 25
+skills: [reading, grammar, writing]
+prerequisites: [ja:lesson:n2-u1-kake-tsutsu-ippou]
+items:
+  - item: ja:item:n2-u1-keikou
+  - item: ja:item:n2-u1-kyuusoku
+  - item: ja:item:n2-u1-bukka
+  - item: ja:item:n2-u1-gram-uchini
+    role: reuse
+  - item: ja:item:n2-u1-gram-saichuuni
+    role: reuse
+  - item: ja:item:n2-u1-gram-totan
+    role: reuse
+  - item: ja:item:n2-u1-gram-shidai
+    role: reuse
+  - item: ja:item:n2-u1-gram-nitsurete
+    role: reuse
+  - item: ja:item:n2-u1-gram-totomoni
+    role: reuse
+  - item: ja:item:n2-u1-gram-tsutsuaru
+    role: reuse
+  - item: ja:item:n2-u1-gram-ippouda
+    role: reuse
+  - item: ja:item:n2-u1-koureika
+    role: reuse
+  - item: ja:item:n2-u1-genshou
+    role: reuse
+  - item: ja:item:n2-u1-orikaesu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đưa bạn vào hai loại văn bản rất hay gặp ở trình độ N2 - đoạn bài báo về thay đổi xã hội và email công việc. Bạn dùng lại toàn bộ ngữ pháp thời điểm, diễn biến và thay đổi của unit.
+  - type: explain
+    text:
+      vi: 'Bài báo về thay đổi xã hội dùng thể thường (だ/である) và nhiều mẫu văn viết: ～とともに, ～につれて, ～つつある, ～一方だ, ～傾向にある. Hãy để ý chiều của thay đổi - 増加 / 減少, 回復 / 悪化 - vì câu hỏi đọc hiểu thường xoay quanh đó.'
+  - type: explain
+    text:
+      vi: 'Email công việc dùng kính ngữ và mẫu 次第: 確認でき次第, 戻り次第, 折り返しご連絡いたします. Khi kể sự việc đã xảy ra, người viết dùng 最中に hoặc たとたん, không dùng 次第.'
+  - type: deep_explain
+    text:
+      vi: Đề đọc hiểu N2 thường hỏi "theo bài viết, điều nào đúng" và đặt bẫy bằng cách đảo chiều thay đổi hoặc đảo quan hệ nguyên nhân - kết quả. Hãy gạch chân các cặp A につれて B, A とともに B, A たとたん B để biết vế nào kéo theo vế nào. 一方だ cho biết người viết thấy xu hướng đáng lo; つつある chỉ là mô tả trung tính.
+  - type: example
+    target: この十年で、町の様子は急速に変わりつつある。駅前に大型スーパーができたとたん、商店街の客は減少した。
+    target_lang: ja
+    translation:
+      vi: Mười năm nay, diện mạo thị trấn đang thay đổi nhanh chóng. Siêu thị lớn vừa mở trước ga thì khách của khu phố mua sắm giảm hẳn.
+    note:
+      vi: たとたん - thay đổi xảy ra ngay sau sự kiện.
+  - type: example
+    target: 物価は上がる一方で、若い世代は都市へ出ていく傾向にある。
+    target_lang: ja
+    translation:
+      vi: Vật giá cứ tăng mãi, và thế hệ trẻ có xu hướng ra thành phố.
+  - type: example
+    target: 高齢化が進むにつれて、病院や介護施設の需要が増加している。
+    target_lang: ja
+    translation:
+      vi: Dân số càng già hoá thì nhu cầu về bệnh viện và cơ sở chăm sóc người già càng tăng.
+  - type: example
+    target: 会議の最中にお電話をいただき、失礼いたしました。資料は確認でき次第、お送りいたします。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi vì anh/chị gọi đến đúng lúc tôi đang họp. Tài liệu sẽ được gửi ngay khi tôi kiểm tra xong.
+    note:
+      vi: 最中に kể chuyện đã xảy ra; 次第 hứa việc sắp làm.
+  - type: common_mistake
+    wrong: 物価が増加する一方だ。
+    right: 物価が上がる一方だ。
+    target_lang: ja
+    note:
+      vi: 物価 đi với 上がる / 上昇する, không đi với 増加 (dùng cho số lượng). Tiếng Việt nói "giá tăng" nên người Việt hay chọn 増加.
+  - type: common_mistake
+    wrong: 確認できた次第、お送りいたします。
+    right: 確認でき次第、お送りいたします。
+    target_lang: ja
+    note:
+      vi: 次第 gắn vào gốc ます - できます → でき次第.
+  - type: summary
+    points:
+      - vi: 'Bài báo: とともに, につれて, つつある, 一方だ, 傾向にある - nhớ chiều của thay đổi.'
+      - vi: 'Email: 次第 cho lời hứa (確認でき次第); 最中に / たとたん để kể chuyện đã xảy ra.'
+      - vi: 傾向 - xu hướng; 急速に - nhanh chóng; 物価が上がる - vật giá tăng.
+      - vi: Đọc hiểu - xác định vế nào kéo theo vế nào trước khi chọn đáp án.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u1-review-mcq-article
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u1-gram-totan
+    prompt:
+      stem: "Đọc đoạn: 「駅前に大型スーパーができたとたん、商店街の客は減少し、今では閉まったままの店も多い。」 Điều nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: v4c, text: Siêu thị vừa mở thì khách của khu phố mua sắm giảm., lang: vi }
+        - { id: q2h, text: Khu phố mua sắm đóng cửa rồi siêu thị mới mở., lang: vi }
+        - { id: n7x, text: Siêu thị và khu phố mua sắm cùng đông khách hơn., lang: vi }
+        - { id: e5m, text: Siêu thị sẽ mở khi khu phố mua sắm đóng cửa., lang: vi }
+    answer:
+      correct_option_id: v4c
+    explanation:
+      vi: できたとたん - siêu thị vừa mở thì ngay sau đó khách giảm (減少し). Thứ tự là siêu thị trước, khách giảm sau; 閉まったまま - vẫn đóng cửa.
+    display_answer: Siêu thị vừa mở thì khách của khu phố mua sắm giảm.
+
+  - key: ja:exercise:n2-u1-review-listen-bukka
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n2-u1-bukka
+    prompt:
+      audio_asset_id: null
+      fallback_text: 最近、物価は上がる一方だ。
+      options:
+        - { id: b6t, text: Dạo này vật giá cứ tăng mãi., lang: vi }
+        - { id: k9w, text: Dạo này vật giá đang dần ổn định., lang: vi }
+        - { id: g3s, text: Dạo này vật giá đã giảm một chút., lang: vi }
+        - { id: o1p, text: Dạo này hàng hoá ngày càng nhiều., lang: vi }
+    answer:
+      correct_option_id: b6t
+    explanation:
+      vi: 物価 - vật giá (không phải "hàng hoá"); 上がる一方だ - cứ tăng mãi, không dừng.
+    display_answer: Dạo này vật giá cứ tăng mãi.
+
+  - key: ja:exercise:n2-u1-review-fill-keikou
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-keikou
+    prompt:
+      template: "若い世代は都市へ出ていく{{b1}}にある。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: Thế hệ trẻ có xu hướng ra thành phố."
+        - "Gợi ý: \"xu hướng\" - けいこう."
+    answer:
+      blanks:
+        b1: [傾向, けいこう]
+    known_wrong:
+      - answer: 流行
+        feedback_vi: 流行 là mốt, trào lưu. Xu hướng rút ra từ thực tế xã hội là 傾向.
+        error_tag: keikou_ryuukou
+    explanation:
+      vi: ～傾向にある / ～傾向がある - có xu hướng ... Hay gặp trong bài báo, báo cáo.
+    display_answer: 若い世代は都市へ出ていく傾向にある。
+
+  - key: ja:exercise:n2-u1-review-wb-kyuusoku
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-kyuusoku
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: \"Diện mạo thị trấn đang thay đổi nhanh chóng.\""
+      tokens:
+        - { id: k3, text: 急速に }
+        - { id: k5, text: 変わる一方つつある }
+        - { id: k1, text: 町の様子は }
+        - { id: k4, text: 変わりつつある }
+    answer:
+      orders:
+        - [k1, k3, k4]
+    explanation:
+      vi: 急速に (trạng từ) + 変わりつつある - đang thay đổi nhanh chóng. Không ghép 一方 và つつある với nhau.
+    display_answer: 町の様子は急速に変わりつつある。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u1-review-fill-email
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-shidai
+    prompt:
+      template: "会議の{{b1}}にお電話をいただき、失礼いたしました。資料は確認でき{{b2}}、お送りいたします。"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [最中, さいちゅう]
+        b2: [次第, しだい]
+    known_wrong:
+      - answer: とたん
+        feedback_vi: とたん đi với thể た và không dùng cho lời hứa. Sau gốc ます でき dùng 次第.
+        error_tag: totan_shidai
+      - answer: うち
+        feedback_vi: 会議のうちに không tự nhiên; cuộc gọi xen vào đúng lúc đang họp dùng 最中に.
+        error_tag: uchini_saichuu
+    explanation:
+      vi: Vế đầu kể chuyện đã xảy ra - 会議の最中に. Vế sau là lời hứa - 確認でき次第 (gốc ます của できる + 次第).
+    display_answer: 会議の最中にお電話をいただき、失礼いたしました。資料は確認でき次第、お送りいたします。
+
+  - key: ja:exercise:n2-u1-review-translate-koureika
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-nitsurete
+    prompt:
+      source_text: Dân số càng già hoá thì nhu cầu về bệnh viện càng tăng. (dùng につれて)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 高齢化が進むにつれて、病院の需要が増加している。
+        - 高齢化が進むにつれて、病院の需要が増加する。
+        - 高齢化が進むにつれて、病院の需要が増えている。
+        - 高齢化が進むにつれて、病院の需要が増える。
+        - 高齢化が進むにつれて、病院の需要が増えていく。
+        - 高齢化が進むにつれて、病院の需要が高まっている。
+        - 高齢化が進むにつれて、病院の需要が高まる。
+        - 高齢化が進むにつれて、病院の需要は増加している。
+        - 高齢化が進むにつれて、病院の需要は増えている。
+        - 高齢化が進むにつれて、病院へのニーズが増えている。
+        - 高齢化が進むにつれて、病院へのニーズが高まっている。
+        - 人口の高齢化が進むにつれて、病院の需要が増加している。
+        - 人口の高齢化が進むにつれて、病院の需要が増えている。
+        - 高齢化につれて、病院の需要が増加している。
+        - 高齢化につれて、病院の需要が増えている。
+        - こうれいかがすすむにつれて、びょういんのじゅようがふえている。
+    known_wrong:
+      - answer: 高齢化が進んだにつれて、病院の需要が増加している。
+        feedback_vi: につれて gắn vào thể từ điển - 進むにつれて.
+        error_tag: tsurete_form
+      - answer: 高齢化が進むにつれて、病院の需要が減少している。
+        feedback_vi: 減少 là giảm; "tăng" là 増加する / 増える / 高まる.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 高齢化が進む - già hoá ngày càng tăng; 需要 - nhu cầu; 増加する / 増える / 高まる - tăng.
+    display_answer: 高齢化が進むにつれて、病院の需要が増加している。
+
+  - key: ja:exercise:n2-u1-review-translate-orikaeshi
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-orikaesu
+    prompt:
+      source_text: Ngay khi quay về văn phòng, tôi sẽ gọi lại cho anh/chị. (khiêm nhường, dùng 次第)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 会社に戻り次第、折り返しお電話いたします。
+        - 会社に戻り次第、折り返しお電話します。
+        - 会社に戻り次第、折り返しご連絡いたします。
+        - 会社に戻り次第、折り返しご連絡します。
+        - 事務所に戻り次第、折り返しお電話いたします。
+        - 事務所に戻り次第、折り返しお電話します。
+        - 事務所に戻り次第、折り返しご連絡いたします。
+        - オフィスに戻り次第、折り返しお電話いたします。
+        - オフィスに戻り次第、折り返しお電話します。
+        - オフィスに戻り次第、折り返しご連絡いたします。
+        - 社に戻り次第、折り返しお電話いたします。
+        - 戻り次第、折り返しお電話いたします。
+        - 戻り次第、折り返しご連絡いたします。
+        - 会社に戻り次第、すぐに折り返しお電話いたします。
+        - 会社へ戻り次第、折り返しお電話いたします。
+        - かいしゃにもどりしだい、おりかえしおでんわいたします。
+    known_wrong:
+      - answer: 会社に戻ったとたん、折り返しお電話いたします。
+        feedback_vi: たとたん không đi với lời hứa của người nói. Dùng 戻り次第.
+        error_tag: totan_volition
+      - answer: 会社に戻った次第、折り返しお電話いたします。
+        feedback_vi: 次第 gắn vào gốc ます - 戻り次第.
+        error_tag: shidai_form
+    explanation:
+      vi: 戻ります → 戻り次第; 折り返しお電話いたします - tôi sẽ gọi lại (khiêm nhường).
+    display_answer: 会社に戻り次第、折り返しお電話いたします。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u1-review-mcq-infer
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u1-gram-ippouda
+    prompt:
+      stem: "Đọc đoạn: 「この町では、観光客は回復しつつあるが、住民の数は減る一方だ。」 Điều nào suy ra được?"
+      stem_lang: vi
+      options:
+        - { id: p3d, text: Người viết lo ngại về việc dân số của thị trấn giảm., lang: vi }
+        - { id: u8b, text: Lượng khách du lịch đã trở lại như trước hoàn toàn., lang: vi }
+        - { id: a6k, text: Dân số thị trấn sắp tăng trở lại., lang: vi }
+        - { id: j2f, text: Khách du lịch và cư dân cùng đang giảm., lang: vi }
+    answer:
+      correct_option_id: p3d
+    explanation:
+      vi: 減る一方だ - cứ giảm mãi, không dấu hiệu dừng; mẫu này mang giọng lo ngại. 回復しつつある - khách đang dần trở lại, chưa phải hồi phục hoàn toàn.
+    display_answer: Người viết lo ngại về việc dân số của thị trấn giảm.
+
+  - key: ja:exercise:n2-u1-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u1-gram-totomoni
+    prompt:
+      source_text: 時代の変化とともに、人々の働き方も変わりつつある。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cùng với sự thay đổi của thời đại, cách làm việc của mọi người cũng đang dần thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách làm việc của mọi người cũng đang thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách làm việc của con người cũng đang dần thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách làm việc của con người cũng đang thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách mọi người làm việc cũng đang dần thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách mọi người làm việc cũng đang thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách làm việc của mọi người cũng dần thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách làm việc của người ta cũng đang dần thay đổi.
+        - Cùng với sự biến đổi của thời đại, cách làm việc của mọi người cũng đang dần thay đổi.
+        - Cùng với thời đại thay đổi, cách làm việc của mọi người cũng đang dần thay đổi.
+        - Thời đại thay đổi thì cách làm việc của mọi người cũng đang dần thay đổi.
+        - Thời đại thay đổi kéo theo cách làm việc của mọi người cũng đang dần thay đổi.
+        - Theo sự thay đổi của thời đại, cách làm việc của mọi người cũng đang dần thay đổi.
+        - Cùng với sự thay đổi của thời đại, phong cách làm việc của mọi người cũng đang dần thay đổi.
+        - Cùng với sự thay đổi của thời đại, cách thức làm việc của mọi người cũng đang dần thay đổi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cùng với sự thay đổi của thời đại, cách làm việc của mọi người đã thay đổi hoàn toàn.
+        feedback_vi: つつある là "đang dần thay đổi", quá trình chưa xong - không phải "đã thay đổi hoàn toàn".
+        error_tag: tsutsu_meaning
+      - answer: Vì cách làm việc thay đổi nên thời đại thay đổi.
+        feedback_vi: Quan hệ ngược - thời đại thay đổi (vế trước) kéo theo cách làm việc thay đổi (vế sau).
+        error_tag: order_meaning
+    explanation:
+      vi: 時代の変化とともに - cùng với sự thay đổi của thời đại; 働き方 - cách làm việc; 変わりつつある - đang dần thay đổi.
+    display_answer: Cùng với sự thay đổi của thời đại, cách làm việc của mọi người cũng đang dần thay đổi.
+
+  - key: ja:exercise:n2-u1-review-mcq-email
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-shidai
+    prompt:
+      stem: 'Bạn viết email cho khách: "Ngay khi nhận được hàng, xin quý khách vui lòng liên lạc." Câu nào đúng?'
+      stem_lang: vi
+      options:
+        - { id: c4n, text: 商品が届き次第、ご連絡ください。, lang: ja }
+        - { id: h9r, text: 商品が届いたとたん、ご連絡ください。, lang: ja }
+        - { id: m1v, text: 商品が届く一方で、ご連絡ください。, lang: ja }
+        - { id: s7y, text: 商品が届きつつあるので、ご連絡ください。, lang: ja }
+    answer:
+      correct_option_id: c4n
+    explanation:
+      vi: Lời nhờ cho việc tương lai - 届き次第、ご連絡ください. たとたん không đi với lời nhờ; 一方で và つつある nói xu hướng thay đổi, không hợp.
+    display_answer: 商品が届き次第、ご連絡ください。
+
+  - key: ja:exercise:n2-u1-review-fill-mix
+    type: fill_blank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u1-gram-uchini
+    prompt:
+      template: "商店街の店は減る{{b1}}だ。今の{{b2}}に、好きな店に行っておこう。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [一方, いっぽう]
+        b2: [うち]
+    known_wrong:
+      - answer: 最中
+        feedback_vi: '"Nhân lúc bây giờ còn (cửa hàng)" dùng 今のうちに. 最中 là đúng lúc đang làm dở một việc cụ thể.'
+        error_tag: uchini_saichuu
+      - answer: つつある
+        feedback_vi: つつある gắn vào gốc ます (減りつつある) và không có だ phía sau. Sau 減る + だ dùng 一方.
+        error_tag: tsutsu_form
+    explanation:
+      vi: 減る一方だ - cứ giảm mãi; 今のうちに - nhân lúc bây giờ (còn kịp), trước khi cửa hàng biến mất.
+    display_answer: 商店街の店は減る一方だ。今のうちに、好きな店に行っておこう。
