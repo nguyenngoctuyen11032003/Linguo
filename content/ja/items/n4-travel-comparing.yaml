@@ -561,6 +561,7 @@ items:
     skill_tags: [speaking]
     front:
       text: おすすめは何ですか
+      reading: おすすめはなんですか
       romanization: osusume wa nan desu ka
       pos: cụm từ
     back:
