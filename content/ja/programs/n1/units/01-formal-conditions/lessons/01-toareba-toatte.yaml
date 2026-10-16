@@ -18,7 +18,8 @@ prerequisites: []
 items:
   - item: ja:item:n1-u1-gram-toareba
   - item: ja:item:n1-u1-gram-toatte
-  - item: ja:item:n1-u1-hikiukeru
+  - item: ja:item:n2-u5-hikiukeru
+    role: reuse
   - item: ja:item:n1-u1-sattou
   - item: ja:item:n1-u1-itowanai
 body:
@@ -217,7 +218,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n1-u1-hikiukeru
+    item: ja:item:n2-u5-hikiukeru
     prompt:
       source_text: Đã là lời nhờ của trưởng phòng thì tôi sẽ nhận việc này. (dùng とあれば, lịch sự)
       source_lang: vi

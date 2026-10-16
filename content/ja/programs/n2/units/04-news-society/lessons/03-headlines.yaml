@@ -19,7 +19,8 @@ items:
   - item: ja:item:n2-u4-seifu
   - item: ja:item:n2-u4-hassei
   - item: ja:item:n2-u4-taiho
-  - item: ja:item:n2-u4-higai
+  - item: ja:item:n2-u2-higai
+    role: reuse
   - item: ja:item:n2-u4-houshin
   - item: ja:item:n2-u4-neage
   - item: ja:item:n2-u4-gram-midashi
@@ -129,7 +130,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 3
-    item: ja:item:n2-u4-higai
+    item: ja:item:n2-u2-higai
     prompt:
       stem: 「被害」 nghĩa là gì?
       stem_lang: vi
@@ -198,7 +199,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n2-u4-higai
+    item: ja:item:n2-u2-higai
     prompt:
       template: "台風による{{b1}}が九州で広がっています。(thiệt hại)"
       blanks:
@@ -361,7 +362,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n2-u4-higai
+    item: ja:item:n2-u2-higai
     prompt:
       stem: Câu nào diễn đạt đúng nội dung tiêu đề 「台風10号、九州で被害拡大」?
       stem_lang: vi

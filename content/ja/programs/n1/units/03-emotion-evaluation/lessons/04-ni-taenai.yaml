@@ -16,7 +16,8 @@ estimated_minutes: 24
 skills: [grammar, vocabulary, reading]
 prerequisites: [ja:lesson:n1-u3-to-ittara-nai]
 items:
-  - item: ja:item:n1-u3-shinrai
+  - item: ja:item:n2-u2-shinrai
+    role: reuse
   - item: ja:item:n1-u3-ikan
   - item: ja:item:n1-u3-shousan
   - item: ja:item:n1-u3-gram-ni-taenai
@@ -148,7 +149,7 @@ exercises:
     stage: recognition
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n1-u3-shinrai
+    item: ja:item:n2-u2-shinrai
     prompt:
       template: "彼は口数は少ないが、{{b1}}に足る人物だ。"
       blanks:

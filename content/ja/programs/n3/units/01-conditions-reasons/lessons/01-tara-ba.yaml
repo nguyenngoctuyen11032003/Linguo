@@ -16,11 +16,14 @@ estimated_minutes: 18
 skills: [grammar, speaking]
 prerequisites: []
 items:
-  - item: ja:item:n3-gram-tara
+  - item: ja:item:n4-gram-tara
+    role: reuse
   - item: ja:item:n3-gram-ba
-  - item: ja:item:n3-tsugou
+  - item: ja:item:n4-tsugou
+    role: reuse
   - item: ja:item:n3-maniau
-  - item: ja:item:n3-renraku
+  - item: ja:item:n4-renraku
+    role: reuse
 body:
   - type: objective
     text:
@@ -106,7 +109,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 2
-    item: ja:item:n3-gram-tara
+    item: ja:item:n4-gram-tara
     prompt:
       audio_asset_id: null
       fallback_text: 駅に着いたら、連絡してください。
@@ -195,7 +198,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-gram-tara
+    item: ja:item:n4-gram-tara
     prompt:
       template: "明日雨が{{b1}}、試合は中止です。(降る)"
       blanks:
@@ -222,7 +225,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-tsugou
+    item: ja:item:n4-tsugou
     prompt:
       source_text: Nếu bạn không tiện thì tuần sau cũng được.
       source_lang: vi
@@ -263,7 +266,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-renraku
+    item: ja:item:n4-renraku
     prompt:
       source_text: Đến ga thì liên lạc cho tôi nhé. (lịch sự)
       source_lang: vi
@@ -299,7 +302,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-gram-tara
+    item: ja:item:n4-gram-tara
     prompt:
       stem: Bạn muốn dặn bạn thân "Về đến nhà thì nhắn tin cho mình nhé." Câu nào đúng?
       stem_lang: vi
@@ -358,7 +361,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-tsugou
+    item: ja:item:n4-tsugou
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Nếu bạn tiện thì tuần sau gặp nhau nhé.\""
       tokens:

@@ -317,27 +317,6 @@ items:
         vi: 打たれる là thể bị động của 打つ. Câu phản ánh văn hoá coi trọng hoà hợp tập thể của Nhật; hay được nhắc tới khi bàn về văn hoá công sở.
 
   # ================= bài 3: thành ngữ bốn chữ 四字熟語 =================
-  - key: ja:item:n1-u5-isshou-kenmei
-    type: phrase
-    level: n1
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 一生懸命
-      reading: いっしょうけんめい
-      romanization: isshō kenmei
-      pos: thành ngữ bốn chữ
-    back:
-      meaning:
-        vi: hết sức, dốc toàn lực (Hán Việt "nhất sinh huyền mệnh")
-      examples:
-        - target: 彼女は合格を目指して、毎日一生懸命勉強している。
-          translation:
-            vi: Cô ấy đang học hết sức mỗi ngày để thi đỗ.
-      pronunciation_note:
-        vi: いっしょう có âm ngắt っ và âm dài - "ít-shô-ô kên-mê-ê".
-      confusion:
-        vi: Dùng như tính từ đuôi な hoặc phó từ - 一生懸命な姿, 一生懸命働く. Gốc là 一所懸命 (giữ một mảnh đất bằng cả mạng sống).
 
   - key: ja:item:n1-u5-ishin-denshin
     type: phrase

@@ -20,7 +20,8 @@ items:
   - item: ja:item:n1-u1-gram-gasaigo
   - item: ja:item:n1-u1-kigen
   - item: ja:item:n1-u1-yamitsuki
-  - item: ja:item:n1-u1-tebanasu
+  - item: ja:item:n2-u5-tebanasu
+    role: reuse
 body:
   - type: objective
     text:
@@ -173,7 +174,7 @@ exercises:
     stage: recognition
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n1-u1-tebanasu
+    item: ja:item:n2-u5-tebanasu
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Một khi đã bán căn nhà đi thì không bao giờ mua lại được.\""
       tokens:

@@ -19,7 +19,8 @@ items:
   - item: ja:item:n3-gram-causative
   - item: ja:item:n3-gram-sasete-kudasai
   - item: ja:item:n3-naraigoto
-  - item: ja:item:n3-shinpai
+  - item: ja:item:n4-shinpai-suru
+    role: reuse
   - item: ja:item:n3-jiyuu
   - item: ja:item:n3-gram-node
     role: reuse
@@ -173,7 +174,7 @@ exercises:
     stage: recognition
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-shinpai
+    item: ja:item:n4-shinpai-suru
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Tôi đã làm bố mẹ lo lắng.\""
       tokens:

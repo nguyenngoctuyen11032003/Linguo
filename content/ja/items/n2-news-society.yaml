@@ -158,49 +158,6 @@ items:
         vi: という cuối câu (truyền đạt) khác という nối danh từ (～という店 - cửa hàng tên là...). Trong hội thoại thường dùng そうだ hoặc って thay cho という.
 
   # ================= bài 2: phủ định một phần =================
-  - key: ja:item:n2-u4-ichigai-ni
-    type: vocab
-    level: n2
-    difficulty: 4
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 一概に
-      reading: いちがいに
-      romanization: ichigai ni
-      pos: phó từ
-    back:
-      meaning:
-        vi: (không thể) vơ đũa cả nắm, (không thể) nói chung chung; đi với phủ định - 一概に～とは言えない
-      examples:
-        - target: 若者が本を読まなくなったとは、一概には言えません。
-          translation:
-            vi: Không thể vơ đũa cả nắm rằng giới trẻ không còn đọc sách.
-      pronunciation_note:
-        vi: Đọc "i-chi-ga-i-ni".
-      confusion:
-        vi: 一概に gần như luôn đi với ～とは言えない / ～できない. Khác 一般に (nói chung, khẳng định).
-
-  - key: ja:item:n2-u4-reigai
-    type: vocab
-    level: n2
-    difficulty: 3
-    skill_tags: [vocabulary]
-    front:
-      text: 例外
-      reading: れいがい
-      romanization: reigai
-      pos: danh từ
-    back:
-      meaning:
-        vi: ngoại lệ; 例外なく - không có ngoại lệ
-      examples:
-        - target: どんなルールにも例外はあります。
-          translation:
-            vi: Quy tắc nào cũng có ngoại lệ.
-      pronunciation_note:
-        vi: Đọc "rê-ê-ga-i", が không phải か. Hán Việt "lệ ngoại".
-      confusion:
-        vi: 例外 là trường hợp ngoài quy tắc; 以外 (ngoài ra) là trợ từ ghép - 日曜日以外 (trừ chủ nhật).
 
   - key: ja:item:n2-u4-gokai
     type: vocab
@@ -355,28 +312,6 @@ items:
       confusion:
         vi: 逮捕する là tha động từ - người bị bắt đi với を. Bị bắt - 逮捕される. 捕まえる là từ thường ngày (bắt côn trùng, bắt kẻ trộm).
 
-  - key: ja:item:n2-u4-higai
-    type: vocab
-    level: n2
-    difficulty: 3
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 被害
-      reading: ひがい
-      romanization: higai
-      pos: danh từ
-    back:
-      meaning:
-        vi: thiệt hại; 被害を受ける (chịu thiệt hại), 被害が広がる / 被害拡大 (thiệt hại lan rộng)
-      examples:
-        - target: 台風による被害が九州で広がっています。
-          translation:
-            vi: Thiệt hại do bão đang lan rộng ở Kyushu.
-      pronunciation_note:
-        vi: Đọc "hi-ga-i", が không phải か. Hán Việt "bị hại".
-      confusion:
-        vi: 被害 là thiệt hại người hoặc vật phải chịu; 損害 nghiêng về thiệt hại tiền bạc. 被害者 - nạn nhân.
-
   - key: ja:item:n2-u4-houshin
     type: vocab
     level: n2
@@ -465,50 +400,6 @@ items:
         vi: 占める đọc "shi-mê-ru"; を đọc "ô".
       confusion:
         vi: 占める luôn đi với を (không dùng に). 割 = 10% - 7割 là 70%. 占う (うらなう - bói) dùng cùng chữ 占 nhưng khác nghĩa.
-
-  - key: ja:item:n2-u4-zouka
-    type: vocab
-    level: n2
-    difficulty: 3
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 増加
-      reading: ぞうか
-      romanization: zōka
-      pos: danh từ
-    back:
-      meaning:
-        vi: sự gia tăng; ～が増加する - tăng (văn viết của 増える); 急増 - tăng mạnh
-      examples:
-        - target: 外国人観光客の数は前年比20%増加した。
-          translation:
-            vi: Số khách du lịch nước ngoài tăng 20% so với năm trước.
-      pronunciation_note:
-        vi: ぞう là âm dài - "dô-ô-ka". Hán Việt "tăng gia".
-      confusion:
-        vi: 増加 là tự động từ (số lượng tăng); làm cho tăng dùng 増やす. 増加 dùng cho số lượng; giá cả, nhiệt độ, tỉ lệ thường dùng 上昇.
-
-  - key: ja:item:n2-u4-genshou
-    type: vocab
-    level: n2
-    difficulty: 3
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 減少
-      reading: げんしょう
-      romanization: genshō
-      pos: danh từ
-    back:
-      meaning:
-        vi: sự giảm; ～が減少する - giảm (văn viết của 減る); 急減 - giảm mạnh
-      examples:
-        - target: 人口の減少に伴って、空き家が増えている。
-          translation:
-            vi: Cùng với việc dân số giảm, nhà bỏ trống đang tăng lên.
-      pronunciation_note:
-        vi: しょう là âm dài - "ghen-shô-ô". Hán Việt "giảm thiểu".
-      confusion:
-        vi: 減少 dùng cho số lượng; giá cả, tỉ lệ, nhiệt độ giảm thường dùng 低下 / 下落.
 
   - key: ja:item:n2-u4-gram-ni-tomonatte
     type: grammar_point

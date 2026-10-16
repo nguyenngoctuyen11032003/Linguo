@@ -20,7 +20,7 @@ items:
   - item: ja:item:n3-chuushi
   - item: ja:item:n3-enki
   - item: ja:item:n3-sanka
-  - item: ja:item:n3-gram-tara
+  - item: ja:item:n4-gram-tara
     role: reuse
   - item: ja:item:n3-gram-ba
     role: reuse
@@ -38,7 +38,7 @@ items:
     role: reuse
   - item: ja:item:n3-gram-temo
     role: reuse
-  - item: ja:item:n3-renraku
+  - item: ja:item:n4-renraku
     role: reuse
 body:
   - type: objective
@@ -186,7 +186,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-gram-tara
+    item: ja:item:n4-gram-tara
     prompt:
       template: "雨が{{b1}}、お祭りは延期です。でも、少し雨が{{b2}}、お祭りはやります。(降る)"
       blanks:

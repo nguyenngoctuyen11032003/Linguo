@@ -290,28 +290,6 @@ items:
       confusion:
         vi: 習い事 là học kỹ năng, sở thích; học thêm các môn ở trường là 塾 (じゅく). Cho con học dùng thể sai khiến - 習わせる.
 
-  - key: ja:item:n3-shinpai
-    type: vocab
-    level: n3
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 心配する
-      reading: しんぱいする
-      romanization: shinpai suru
-      pos: động từ (nhóm 3)
-    back:
-      meaning:
-        vi: lo lắng; 心配させる - làm (ai) lo lắng
-      examples:
-        - target: 連絡しなかったので、両親を心配させてしまいました。
-          translation:
-            vi: Vì không liên lạc nên tôi đã làm bố mẹ lo lắng.
-      pronunciation_note:
-        vi: ん trước ぱ đọc như "m" - "sim-pai".
-      confusion:
-        vi: Làm ai lo, làm ai buồn, làm ai cười dùng thể sai khiến với を - 両親を心配させる, 友だちを笑わせる. Tiếng Việt "làm" ở đây không dịch bằng する.
-
   - key: ja:item:n3-jiyuu
     type: vocab
     level: n3

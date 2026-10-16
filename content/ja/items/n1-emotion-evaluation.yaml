@@ -403,27 +403,6 @@ items:
         vi: Chỉ đi với tính từ cảm xúc (嬉しい, 寂しい, 羨ましい, 心細い), không đi với tính từ mô tả khách quan (×高い限りだ). Chủ thể là người nói; không dùng cho cảm xúc của người thứ ba.
 
   # ================= bài 4: ～に堪えない, ～に足る, ～に値する =================
-  - key: ja:item:n1-u3-shinrai
-    type: vocab
-    level: n1
-    difficulty: 3
-    skill_tags: [vocabulary]
-    front:
-      text: 信頼
-      reading: しんらい
-      romanization: shinrai
-      pos: danh từ
-    back:
-      meaning:
-        vi: sự tin cậy, tín nhiệm; 信頼に足る - đáng tin cậy
-      examples:
-        - target: 彼は口数は少ないが、信頼に足る人物だ。
-          translation:
-            vi: Anh ấy ít nói nhưng là người đáng tin cậy.
-      pronunciation_note:
-        vi: Đọc "xin-rai".
-      confusion:
-        vi: 信用 thường dựa trên thành tích, uy tín (信用を失う, 信用金庫); 信頼 là tin tưởng và có thể dựa vào (信頼関係).
 
   - key: ja:item:n1-u3-ikan
     type: vocab

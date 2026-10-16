@@ -17,7 +17,8 @@ skills: [reading, writing, grammar]
 prerequisites: [ja:lesson:n1-u4-towaie-toiedomo]
 items:
   - item: ja:item:n1-u4-ronten
-  - item: ja:item:n1-u4-konkyo
+  - item: ja:item:n2-u5-konkyo
+    role: reuse
   - item: ja:item:n1-u4-teigen
   - item: ja:item:n1-u4-kenkai
   - item: ja:item:n1-u4-gram-wo-motte
@@ -32,7 +33,7 @@ items:
     role: reuse
   - item: ja:item:n1-u4-gram-ikan-dewa
     role: reuse
-  - item: ja:item:n1-u4-gram-towaie
+  - item: ja:item:n2-u5-gram-towaie
     role: reuse
   - item: ja:item:n1-u4-gram-toiedomo
     role: reuse
@@ -96,7 +97,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 5
-    item: ja:item:n1-u4-konkyo
+    item: ja:item:n2-u5-konkyo
     prompt:
       stem: "Đọc: 「人工知能の導入で雇用が失われるという見解がある。確かに一部の職種では仕事が減るだろう。とはいえ、その主張には十分な根拠があるとは言い難い。過去の技術革新に照らせば、新たな職種が生まれる可能性も高いからだ。」 Quan điểm của người viết là gì?"
       stem_lang: vi
@@ -205,7 +206,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n1-u4-konkyo
+    item: ja:item:n2-u5-konkyo
     prompt:
       template: "その主張には科学的な{{b1}}がない。(căn cứ)"
       blanks:
@@ -374,7 +375,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 5
-    item: ja:item:n1-u4-gram-towaie
+    item: ja:item:n2-u5-gram-towaie
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Tuy đúng là đề xuất có căn cứ, nhưng vẫn còn vấn đề về chi phí.\""
       tokens:

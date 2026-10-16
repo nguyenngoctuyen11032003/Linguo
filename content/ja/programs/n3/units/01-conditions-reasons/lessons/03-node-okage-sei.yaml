@@ -21,7 +21,7 @@ items:
   - item: ja:item:n3-gram-seide
   - item: ja:item:n3-juutai
   - item: ja:item:n3-goukaku
-  - item: ja:item:n3-renraku
+  - item: ja:item:n4-renraku
     role: reuse
   - item: ja:item:n3-maniau
     role: reuse

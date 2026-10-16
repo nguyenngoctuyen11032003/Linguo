@@ -16,9 +16,11 @@ estimated_minutes: 25
 skills: [reading, grammar, writing]
 prerequisites: [ja:lesson:n2-u1-kake-tsutsu-ippou]
 items:
-  - item: ja:item:n2-u1-keikou
+  - item: ja:item:n3-keikou
+    role: reuse
   - item: ja:item:n2-u1-kyuusoku
-  - item: ja:item:n2-u1-bukka
+  - item: ja:item:n3-bukka
+    role: reuse
   - item: ja:item:n2-u1-gram-uchini
     role: reuse
   - item: ja:item:n2-u1-gram-saichuuni
@@ -123,7 +125,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 2
-    item: ja:item:n2-u1-bukka
+    item: ja:item:n3-bukka
     prompt:
       audio_asset_id: null
       fallback_text: 最近、物価は上がる一方だ。
@@ -143,7 +145,7 @@ exercises:
     stage: recognition
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n2-u1-keikou
+    item: ja:item:n3-keikou
     prompt:
       template: "若い世代は都市へ出ていく{{b1}}にある。"
       blanks:

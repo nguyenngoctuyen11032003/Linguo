@@ -49,28 +49,6 @@ items:
       confusion:
         vi: Vế sau của とあって không dùng ý chí, mệnh lệnh, rủ rê của người nói (～しよう, ～てください). Muốn nói "nếu là... thì tôi sẽ..." phải dùng とあれば.
 
-  - key: ja:item:n1-u1-hikiukeru
-    type: vocab
-    level: n1
-    difficulty: 3
-    skill_tags: [vocabulary]
-    front:
-      text: 引き受ける
-      reading: ひきうける
-      romanization: hikiukeru
-      pos: động từ (nhóm 2)
-    back:
-      meaning:
-        vi: nhận lời, đảm nhận (một việc, một trách nhiệm người khác nhờ)
-      examples:
-        - target: 部長の頼みとあれば、この仕事を引き受けます。
-          translation:
-            vi: Đã là lời nhờ của trưởng phòng thì tôi xin nhận việc này.
-      pronunciation_note:
-        vi: Đọc "hi-ki-u-kê-ru", き và う tách rõ.
-      confusion:
-        vi: 引き受ける là nhận làm một việc; nhận đồ vật thì dùng 受け取る (うけとる).
-
   - key: ja:item:n1-u1-sattou
     type: vocab
     level: n1
@@ -310,28 +288,6 @@ items:
         vi: Đọc "ya-mi-tsư-ki", つ đọc nhẹ.
       confusion:
         vi: 病みつき là mê một thứ cụ thể, sắc thái nhẹ, hay dùng khen món ăn ngon; nghiện rượu, ma tuý là 依存症 (いぞんしょう) hoặc 中毒 (ちゅうどく).
-
-  - key: ja:item:n1-u1-tebanasu
-    type: vocab
-    level: n1
-    difficulty: 3
-    skill_tags: [vocabulary]
-    front:
-      text: 手放す
-      reading: てばなす
-      romanization: tebanasu
-      pos: động từ (nhóm 1)
-    back:
-      meaning:
-        vi: buông bỏ, bán đi, để mất (thứ mình đang sở hữu như nhà, đất, cơ hội)
-      examples:
-        - target: 一度家を手放したが最後、二度と買い戻せないだろう。
-          translation:
-            vi: Một khi đã bán căn nhà đi thì có lẽ sẽ không bao giờ mua lại được.
-      pronunciation_note:
-        vi: ば là âm đục - "tê-ba-na-sư", không đọc "tê-ha-na-sư".
-      confusion:
-        vi: 手放す là từ bỏ quyền sở hữu; buông tay theo nghĩa đen (thả tay khỏi vật đang cầm) là 手を離す (てをはなす).
 
   # ================= bài 4: ～が早いか / ～や否や / ～なり =================
   - key: ja:item:n1-u1-gram-gahayaika

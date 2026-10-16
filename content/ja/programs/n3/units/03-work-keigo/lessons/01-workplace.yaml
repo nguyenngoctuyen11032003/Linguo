@@ -17,8 +17,10 @@ skills: [vocabulary, grammar, speaking]
 prerequisites: [ja:lesson:n3-passive-causative-review]
 items:
   - item: ja:item:n3-shiryou
-  - item: ja:item:n3-shimekiri
-  - item: ja:item:n3-zangyou
+  - item: ja:item:n4-shimekiri
+    role: reuse
+  - item: ja:item:n4-zangyou
+    role: reuse
   - item: ja:item:n3-shucchou
   - item: ja:item:n3-joushi
   - item: ja:item:n3-douryou
@@ -86,7 +88,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 2
-    item: ja:item:n3-shimekiri
+    item: ja:item:n4-shimekiri
     prompt:
       stem: 「締め切り」 nghĩa là gì?
       stem_lang: vi
@@ -195,7 +197,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n3-zangyou
+    item: ja:item:n4-zangyou
     prompt:
       template: "今日は仕事が多いので、{{b1}}します。(làm thêm giờ)"
       blanks:

@@ -17,7 +17,8 @@ skills: [grammar, vocabulary, speaking]
 prerequisites: [ja:lesson:n2-u2-ni-kagirazu]
 items:
   - item: ja:item:n2-u2-higai
-  - item: ja:item:n2-u2-akka
+  - item: ja:item:n2-u1-akka
+    role: reuse
   - item: ja:item:n2-u2-kaizen
   - item: ja:item:n2-u2-shinrai
   - item: ja:item:n2-u2-gram-bakarika
@@ -344,7 +345,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n2-u2-akka
+    item: ja:item:n2-u1-akka
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Tình hình chẳng những không được cải thiện mà còn xấu đi.\""
       tokens:

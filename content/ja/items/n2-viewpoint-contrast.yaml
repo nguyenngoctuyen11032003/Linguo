@@ -335,28 +335,6 @@ items:
       confusion:
         vi: 被害 là thiệt hại do thiên tai, tội phạm gây ra (被害が出る); 損 là lỗ, thiệt về lợi ích (損をする).
 
-  - key: ja:item:n2-u2-akka
-    type: vocab
-    level: n2
-    difficulty: 4
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 悪化
-      reading: あっか
-      romanization: akka
-      pos: danh từ (～する)
-    back:
-      meaning:
-        vi: trở nên xấu đi, chuyển biến xấu; 病状が悪化する - bệnh tình xấu đi
-      examples:
-        - target: 薬を飲んだのに、症状が悪化してしまいました。
-          translation:
-            vi: Đã uống thuốc rồi mà triệu chứng lại xấu đi.
-      pronunciation_note:
-        vi: っ là âm ngắt - "ák-ka".
-      confusion:
-        vi: 悪化 là tự động từ - 状況が悪化する (không nói 状況を悪化する; gây xấu đi là 悪化させる). Ngược nghĩa là 改善.
-
   - key: ja:item:n2-u2-kaizen
     type: vocab
     level: n2

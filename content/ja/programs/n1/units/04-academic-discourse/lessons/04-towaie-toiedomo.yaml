@@ -17,9 +17,11 @@ skills: [grammar, reading, vocabulary]
 prerequisites: [ja:lesson:n1-u4-ikan]
 items:
   - item: ja:item:n1-u4-shasetsu
-  - item: ja:item:n1-u4-kenen
+  - item: ja:item:n1-u2-kenen
+    role: reuse
   - item: ja:item:n1-u4-koujiru
-  - item: ja:item:n1-u4-gram-towaie
+  - item: ja:item:n2-u5-gram-towaie
+    role: reuse
   - item: ja:item:n1-u4-gram-toiedomo
   - item: ja:item:n1-u4-gram-nagaramo
 body:
@@ -103,7 +105,7 @@ exercises:
     stage: recognition
     answer_lang: vi
     difficulty: 4
-    item: ja:item:n1-u4-gram-towaie
+    item: ja:item:n2-u5-gram-towaie
     prompt:
       audio_asset_id: null
       fallback_text: 景気は回復しつつあるとはいえ、楽観できる状況ではない。
@@ -143,7 +145,7 @@ exercises:
     stage: recognition
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n1-u4-kenen
+    item: ja:item:n1-u2-kenen
     prompt:
       template: "専門家の間では、副作用への{{b1}}が広がっている。"
       blanks:
@@ -215,7 +217,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n1-u4-gram-towaie
+    item: ja:item:n2-u5-gram-towaie
     prompt:
       source_text: Tuy đã là mùa xuân nhưng vẫn còn lạnh. (dùng とはいえ)
       source_lang: vi
@@ -360,7 +362,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 5
-    item: ja:item:n1-u4-kenen
+    item: ja:item:n1-u2-kenen
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Tuy nói là có lợi ích kinh tế, nhưng không thể bỏ qua nỗi lo về môi trường.\""
       tokens:

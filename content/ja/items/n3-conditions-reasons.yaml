@@ -7,26 +7,6 @@ reviewed_at: "2026-10-16T12:00:00+07:00"
 source: src:linguo-demo
 items:
   # ================= bài 1: ～たら / ～ば =================
-  - key: ja:item:n3-gram-tara
-    type: grammar_point
-    level: n3
-    difficulty: 2
-    skill_tags: [grammar]
-    front:
-      text: V-たら · A-かったら · N-だったら
-      romanization: -tara
-      pos: điều kiện / thời điểm
-    back:
-      meaning:
-        vi: '"Nếu... thì", "khi (đã)... thì". Lấy thể た rồi thêm ら - 行ったら, 安かったら, 雨だったら. Vế sau dùng được mọi kiểu câu, kể cả nhờ vả, rủ rê.'
-      examples:
-        - target: 駅に着いたら、連絡してください。
-          translation:
-            vi: Đến ga thì liên lạc cho tôi nhé.
-      pronunciation_note:
-        vi: たら đọc "ta-ra", r tiếng Nhật đọc nhẹ giữa "r" và "l".
-      confusion:
-        vi: たら không phải thì quá khứ dù có た - 明日駅に着いたら là "ngày mai khi đến ga". Đây là dạng điều kiện an toàn nhất khi bạn phân vân.
 
   - key: ja:item:n3-gram-ba
     type: grammar_point
@@ -49,28 +29,6 @@ items:
       confusion:
         vi: Khi vế ば là hành động (着く, 行く) và cùng chủ ngữ với vế sau, vế sau không được là lời nhờ hay rủ - nói 着いたら、電話してください, không nói 着けば、電話してください. いい → よければ (không phải いければ).
 
-  - key: ja:item:n3-tsugou
-    type: vocab
-    level: n3
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 都合
-      reading: つごう
-      romanization: tsugō
-      pos: danh từ
-    back:
-      meaning:
-        vi: sự tiện / không tiện về thời gian, hoàn cảnh; 都合がいい - tiện, 都合が悪い - không tiện
-      examples:
-        - target: 都合が悪ければ、来週でもいいですよ。
-          translation:
-            vi: Nếu bạn không tiện thì tuần sau cũng được.
-      pronunciation_note:
-        vi: ごう là âm dài - "gô-ô", kéo dài gấp đôi; đọc ngắn thành "tsugo" là sai.
-      confusion:
-        vi: 都合 nói về lịch, hoàn cảnh của người; đồ vật tiện dụng thì dùng 便利 (べんり). "Tôi bận" một cách lịch sự là 都合が悪いです.
-
   - key: ja:item:n3-maniau
     type: vocab
     level: n3
@@ -92,28 +50,6 @@ items:
         vi: Đọc liền "ma-ni-a-u", あう là hai nguyên âm tách rõ.
       confusion:
         vi: Kịp cái gì dùng に - 電車に間に合う (kịp tàu). Không kịp tàu nên bị lỡ là 電車に乗り遅れる.
-
-  - key: ja:item:n3-renraku
-    type: vocab
-    level: n3
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 連絡する
-      reading: れんらくする
-      romanization: renraku suru
-      pos: động từ (nhóm 3)
-    back:
-      meaning:
-        vi: liên lạc, báo tin (gọi điện, nhắn tin, email đều được)
-      examples:
-        - target: 何かあったら、すぐ連絡してください。
-          translation:
-            vi: Có chuyện gì thì liên lạc ngay cho tôi nhé.
-      pronunciation_note:
-        vi: ん trước r đọc như "n" mũi nhẹ - "ren-ra-ku".
-      confusion:
-        vi: Liên lạc với ai dùng に - 先生に連絡する. 連絡 bao gồm mọi cách báo tin, nên không cần nói rõ là gọi hay nhắn.
 
   # ================= bài 2: ～と / ～なら =================
   - key: ja:item:n3-gram-to-cond

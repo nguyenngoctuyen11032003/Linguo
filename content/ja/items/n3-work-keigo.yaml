@@ -29,50 +29,6 @@ items:
       confusion:
         vi: 資料 là tài liệu tham khảo, trình bày; giấy tờ cần điền, nộp là 書類 (しょるい).
 
-  - key: ja:item:n3-shimekiri
-    type: vocab
-    level: n3
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 締め切り
-      reading: しめきり
-      romanization: shimekiri
-      pos: danh từ
-    back:
-      meaning:
-        vi: hạn chót (nộp bài, nộp hồ sơ)
-      examples:
-        - target: 報告書の締め切りは金曜日です。
-          translation:
-            vi: Hạn nộp báo cáo là thứ Sáu.
-      pronunciation_note:
-        vi: Đọc "si-mê-ki-ri".
-      confusion:
-        vi: Trước hạn chót dùng までに - 締め切りまでに出す. Cũng hay viết 締切.
-
-  - key: ja:item:n3-zangyou
-    type: vocab
-    level: n3
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 残業
-      reading: ざんぎょう
-      romanization: zangyō
-      pos: danh từ
-    back:
-      meaning:
-        vi: làm thêm giờ; 残業する - làm thêm giờ
-      examples:
-        - target: 今日は仕事が多いので、残業します。
-          translation:
-            vi: Hôm nay nhiều việc nên tôi làm thêm giờ.
-      pronunciation_note:
-        vi: ん trước ぎ đọc "ng" - "zang-gyô", ぎょう kéo dài.
-      confusion:
-        vi: 残業 là ở lại làm sau giờ; làm vào ngày nghỉ là 休日出勤 (きゅうじつしゅっきん).
-
   - key: ja:item:n3-shucchou
     type: vocab
     level: n3

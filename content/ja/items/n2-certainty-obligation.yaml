@@ -94,28 +94,6 @@ items:
       confusion:
         vi: 犯人 là người gây ra tội; 容疑者 (ようぎしゃ) là nghi phạm, chưa được xác định có tội. Tin tức thường dùng 容疑者 cho người mới bị bắt.
 
-  - key: ja:item:n2-u5-higai
-    type: vocab
-    level: n2
-    difficulty: 3
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 被害
-      reading: ひがい
-      romanization: higai
-      pos: danh từ
-    back:
-      meaning:
-        vi: thiệt hại; 被害を受ける - bị thiệt hại, 被害が出る - có thiệt hại
-      examples:
-        - target: このままでは、被害がさらに広がる恐れがある。
-          translation:
-            vi: Cứ thế này thì có nguy cơ thiệt hại còn lan rộng hơn.
-      pronunciation_note:
-        vi: Đọc "hi-ga-i", ba nhịp đều.
-      confusion:
-        vi: 被害 là thiệt hại do thiên tai, tội phạm gây ra cho người bị hại; 損害 (そんがい) thiên về tổn thất tiền bạc, tài sản của công ty.
-
   # ================= bài 2: ～ざるを得ない / ～ずにはいられない / ～ないわけにはいかない =================
   - key: ja:item:n2-u5-gram-zaru-wo-enai
     type: grammar_point

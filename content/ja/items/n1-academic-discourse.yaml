@@ -362,28 +362,6 @@ items:
       confusion:
         vi: 社説 là ý kiến của toà soạn; 記事 là bài báo đưa tin nói chung; コラム là chuyên mục của một cây bút.
 
-  - key: ja:item:n1-u4-kenen
-    type: vocab
-    level: n1
-    difficulty: 4
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 懸念
-      reading: けねん
-      romanization: kenen
-      pos: danh từ
-    back:
-      meaning:
-        vi: mối lo ngại; 懸念する - lo ngại; 懸念が残る - vẫn còn lo ngại
-      examples:
-        - target: 専門家の間では、副作用への懸念が広がっている。
-          translation:
-            vi: Trong giới chuyên gia, mối lo ngại về tác dụng phụ đang lan rộng.
-      pronunciation_note:
-        vi: Đọc "kê-nên" - け và ねん tách rõ, không đọc "kên-nên".
-      confusion:
-        vi: 懸念 là lo ngại về rủi ro (văn viết, trang trọng); 心配 là lo lắng nói chung. Báo chí viết 懸念される (bị lo ngại) rất thường xuyên.
-
   - key: ja:item:n1-u4-koujiru
     type: vocab
     level: n1
@@ -405,28 +383,6 @@ items:
         vi: こう là âm dài - "cô-ô-di-rư".
       confusion:
         vi: 講じる hầu như chỉ đi với 対策, 措置, 手段, 策. Văn nói thay bằng 対策を取る / 対策をする.
-
-  - key: ja:item:n1-u4-gram-towaie
-    type: grammar_point
-    level: n1
-    difficulty: 4
-    skill_tags: [grammar, reading]
-    front:
-      text: thể thường / N + とはいえ
-      reading: とはいえ
-      romanization: to wa ie
-      pos: tuy nói là ... nhưng
-    back:
-      meaning:
-        vi: '"Tuy (đúng là) ... nhưng" - công nhận một sự thật rồi nêu điều trái với dự đoán: 春とはいえ、まだ寒い. Đứng đầu câu: とはいえ、～ (dù vậy).'
-      examples:
-        - target: 景気は回復しつつあるとはいえ、楽観できる状況ではない。
-          translation:
-            vi: Tuy kinh tế đang dần hồi phục, nhưng tình hình chưa thể lạc quan.
-      pronunciation_note:
-        vi: は đọc "oa" - "tô-oa-i-ê".
-      confusion:
-        vi: とはいえ nhấn mạnh "dù sự thật là thế"; けれども / のに là liên từ thông thường. Không viết とわいえ.
 
   - key: ja:item:n1-u4-gram-toiedomo
     type: grammar_point
@@ -494,28 +450,6 @@ items:
         vi: Đọc "rôn-tên".
       confusion:
         vi: 論点 là điểm đang được tranh luận; 要点 là ý chính của một văn bản; 観点 là góc nhìn.
-
-  - key: ja:item:n1-u4-konkyo
-    type: vocab
-    level: n1
-    difficulty: 3
-    skill_tags: [vocabulary, reading]
-    front:
-      text: 根拠
-      reading: こんきょ
-      romanization: konkyo
-      pos: danh từ
-    back:
-      meaning:
-        vi: căn cứ, cơ sở; 根拠がない - không có căn cứ
-      examples:
-        - target: その主張には科学的な根拠がない。
-          translation:
-            vi: Lập luận đó không có căn cứ khoa học.
-      pronunciation_note:
-        vi: きょ là âm ghép - "côn-kyô".
-      confusion:
-        vi: 根拠 là cơ sở cho một nhận định; 理由 là lý do của một hành động. 根拠を示す - đưa ra căn cứ.
 
   - key: ja:item:n1-u4-teigen
     type: vocab

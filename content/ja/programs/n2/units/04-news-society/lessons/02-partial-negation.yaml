@@ -16,8 +16,10 @@ estimated_minutes: 24
 skills: [grammar, speaking, reading]
 prerequisites: [ja:lesson:n2-u4-hearsay]
 items:
-  - item: ja:item:n2-u4-ichigai-ni
-  - item: ja:item:n2-u4-reigai
+  - item: ja:item:n2-u2-ichigai-ni
+    role: reuse
+  - item: ja:item:n2-u2-reigai
+    role: reuse
   - item: ja:item:n2-u4-gokai
   - item: ja:item:n2-u4-gram-nai-koto-wa-nai
   - item: ja:item:n2-u4-gram-to-wa-kagiranai
@@ -200,7 +202,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n2-u4-reigai
+    item: ja:item:n2-u2-reigai
     prompt:
       template: "どんなルールにも{{b1}}はあります。(ngoại lệ)"
       blanks:
@@ -267,7 +269,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n2-u4-ichigai-ni
+    item: ja:item:n2-u2-ichigai-ni
     prompt:
       source_text: Không thể vơ đũa cả nắm rằng giới trẻ không đọc sách. (dùng 一概に)
       source_lang: vi

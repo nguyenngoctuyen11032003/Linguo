@@ -20,7 +20,8 @@ items:
   - item: ja:item:n2-u5-gram-ni-soui-nai
   - item: ja:item:n2-u5-gram-osore-ga-aru
   - item: ja:item:n2-u5-hannin
-  - item: ja:item:n2-u5-higai
+  - item: ja:item:n2-u2-higai
+    role: reuse
 body:
   - type: objective
     text:
@@ -257,7 +258,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n2-u5-higai
+    item: ja:item:n2-u2-higai
     prompt:
       source_text: Có nguy cơ thiệt hại sẽ lan rộng. (văn bản tin tức, lịch sự)
       source_lang: vi

@@ -17,8 +17,10 @@ skills: [reading, grammar, vocabulary]
 prerequisites: [ja:lesson:n2-u4-headlines]
 items:
   - item: ja:item:n2-u4-gram-wo-shimeru
-  - item: ja:item:n2-u4-zouka
-  - item: ja:item:n2-u4-genshou
+  - item: ja:item:n2-u1-zouka
+    role: reuse
+  - item: ja:item:n2-u1-genshou
+    role: reuse
   - item: ja:item:n2-u4-gram-ni-tomonatte
   - item: ja:item:n2-u4-zennenhi
   - item: ja:item:n2-u4-yokobai
@@ -199,7 +201,7 @@ exercises:
     stage: recall
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n2-u4-genshou
+    item: ja:item:n2-u1-genshou
     prompt:
       template: "今年の輸出は前年に比べて5%{{b1}}した。(giảm)"
       blanks:
@@ -367,7 +369,7 @@ exercises:
     stage: application
     answer_lang: ja
     difficulty: 4
-    item: ja:item:n2-u4-zouka
+    item: ja:item:n2-u1-zouka
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Số khách du lịch nước ngoài tăng 20% so với năm trước.\""
       tokens:

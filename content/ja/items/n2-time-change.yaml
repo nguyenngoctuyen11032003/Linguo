@@ -496,27 +496,6 @@ items:
         vi: 悪化 trái nghĩa 回復 hoặc 改善 (かいぜん - cải thiện). 悪化する là tự động từ - 病気が悪化する, không nói 病気を悪化する (muốn nói "làm cho xấu đi" dùng 悪化させる).
 
   # ================= bài 5: ôn tập =================
-  - key: ja:item:n2-u1-keikou
-    type: vocab
-    level: n2
-    difficulty: 3
-    skill_tags: [vocabulary]
-    front:
-      text: 傾向
-      reading: けいこう
-      romanization: keikō
-      pos: danh từ
-    back:
-      meaning:
-        vi: xu hướng, khuynh hướng; ～傾向がある / ～傾向にある - có xu hướng ...
-      examples:
-        - target: 最近、結婚しない人が増える傾向にある。
-          translation:
-            vi: Gần đây, số người không kết hôn có xu hướng tăng.
-      pronunciation_note:
-        vi: けい và こう đều là âm dài - "kê-ê-cô-ô".
-      confusion:
-        vi: 傾向 là xu hướng khách quan rút ra từ số liệu, thói quen. Mốt, trào lưu nhất thời là 流行 (りゅうこう).
 
   - key: ja:item:n2-u1-kyuusoku
     type: vocab
@@ -539,25 +518,3 @@ items:
         vi: きゅう là âm dài "kiư-u"; そく đọc "xô-kư".
       confusion:
         vi: 急速 nói tốc độ của một quá trình. 急に là "đột ngột" (không báo trước); người chạy nhanh thì dùng 速く.
-
-  - key: ja:item:n2-u1-bukka
-    type: vocab
-    level: n2
-    difficulty: 2
-    skill_tags: [vocabulary]
-    front:
-      text: 物価
-      reading: ぶっか
-      romanization: bukka
-      pos: danh từ
-    back:
-      meaning:
-        vi: vật giá, mức giá cả chung trong xã hội
-      examples:
-        - target: 物価は上がる一方で、生活が苦しい。
-          translation:
-            vi: Vật giá cứ tăng mãi, cuộc sống thật chật vật.
-      pronunciation_note:
-        vi: っ là nhịp ngắt - "búk-ka".
-      confusion:
-        vi: 物価 là mức giá chung; giá của một món hàng là 値段 (ねだん). Nói 物価が高い / 物価が上がる, không nói 物価が増える.

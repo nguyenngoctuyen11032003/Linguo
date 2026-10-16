@@ -16,7 +16,8 @@ estimated_minutes: 22
 skills: [vocabulary, reading, writing]
 prerequisites: [ja:lesson:n1-u5-kotowaza]
 items:
-  - item: ja:item:n1-u5-isshou-kenmei
+  - item: ja:item:n3-isshoukenmei
+    role: reuse
   - item: ja:item:n1-u5-ishin-denshin
   - item: ja:item:n1-u5-jigou-jitoku
   - item: ja:item:n1-u5-ichigo-ichie
@@ -169,7 +170,7 @@ exercises:
     stage: recognition
     answer_lang: ja
     difficulty: 3
-    item: ja:item:n1-u5-isshou-kenmei
+    item: ja:item:n3-isshoukenmei
     prompt:
       instruction: "Sắp xếp thành câu tiếng Nhật: \"Cô ấy đang học hết sức mỗi ngày để thi đỗ.\""
       tokens:

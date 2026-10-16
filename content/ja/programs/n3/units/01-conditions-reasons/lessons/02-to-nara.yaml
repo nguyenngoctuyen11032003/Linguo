@@ -21,7 +21,7 @@ items:
   - item: ja:item:n3-magaru
   - item: ja:item:n3-tsukiatari
   - item: ja:item:n3-osusume
-  - item: ja:item:n3-gram-tara
+  - item: ja:item:n4-gram-tara
     role: reuse
   - item: ja:item:n3-gram-ba
     role: reuse
