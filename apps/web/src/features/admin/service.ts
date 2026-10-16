@@ -16,8 +16,11 @@ import {
   type ReportTargetKind,
   type StaffRole,
 } from '@linguo/shared';
+import { z } from 'zod';
 import { callRpc, parse } from '@/features/lesson-player/service';
 import type { AppSupabaseClient } from '@/lib/supabase';
+
+const openReportCountSchema = z.number().int().nonnegative();
 
 // Spec 11 §3–§4. The admin RPCs are not in the generated Database types yet: callRpc goes through an untyped cast
 // and every payload is validated with the shared zod contract.
@@ -107,9 +110,33 @@ export interface AdminReportQuery {
   /** Zero-based page. */
   page: number;
   pageSize?: number;
+  /** One content row (needs `kind`): only its group, see findAdminReportGroup. */
+  targetId?: string | null;
+}
+
+/** Groups fetched per call while looking for one target (admin_list_reports caps p_limit at 200). */
+export const ADMIN_REPORT_SCAN_PAGE_SIZE = 200;
+const ADMIN_REPORT_SCAN_MAX_PAGES = 25;
+
+/**
+ * The queue narrowed to one content row. admin_list_reports has no per-target filter, so this pages through the
+ * groups of the kind (200 at a time) until it finds the target. At most one group; total_groups is 0 or 1.
+ */
+export async function findAdminReportGroup(
+  client: AppSupabaseClient,
+  query: { status: ReportStatus | null; kind: ReportTargetKind; targetId: string },
+): Promise<AdminReportList> {
+  for (let page = 0; page < ADMIN_REPORT_SCAN_MAX_PAGES; page++) {
+    const list = await listAdminReports(client, { status: query.status, kind: query.kind, page, pageSize: ADMIN_REPORT_SCAN_PAGE_SIZE });
+    const group = list.groups.find((g) => g.target_kind === query.kind && g.target_id === query.targetId);
+    if (group) return { groups: [group], total_groups: 1 };
+    if ((page + 1) * ADMIN_REPORT_SCAN_PAGE_SIZE >= list.total_groups) break;
+  }
+  return { groups: [], total_groups: 0 };
 }
 
 export async function listAdminReports(client: AppSupabaseClient, query: AdminReportQuery): Promise<AdminReportList> {
+  if (query.targetId && query.kind) return findAdminReportGroup(client, { status: query.status, kind: query.kind, targetId: query.targetId });
   const limit = query.pageSize ?? ADMIN_REPORT_PAGE_SIZE;
   const data = await callRpc(client, 'admin_list_reports', {
     p_status: query.status,
@@ -118,6 +145,11 @@ export async function listAdminReports(client: AppSupabaseClient, query: AdminRe
     p_offset: Math.max(0, query.page) * limit,
   });
   return parse(adminReportListSchema, data);
+}
+
+/** admin_item_open_reports → unresolved (open or triaged) reports on one content row (editor+). */
+export async function getAdminItemOpenReports(client: AppSupabaseClient, kind: ReportTargetKind, id: string): Promise<number> {
+  return parse(openReportCountSchema, await callRpc(client, 'admin_item_open_reports', { p_kind: kind, p_id: id }));
 }
 
 /** admin_resolve_report → number of reports updated. The note is trimmed; an empty note is sent as null. */

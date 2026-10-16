@@ -69,7 +69,7 @@ describe('ContentDetailPage', () => {
     expect(answer).toHaveTextContent('She là ngôi thứ ba số ít');
     expect(screen.getByRole('region', { name: 'Nguồn và giấy phép' })).toHaveTextContent('Linguo demo');
     expect(screen.getByRole('region', { name: 'Lịch sử version' })).toHaveTextContent('Version 3');
-    expect(screen.getByRole('link', { name: 'Mở hàng đợi báo lỗi loại nội dung này' })).toHaveAttribute('href', '/quan-tri/bao-loi?loai=exercise');
+    expect(screen.getByRole('link', { name: 'Hàng đợi báo lỗi loại nội dung này' })).toHaveAttribute('href', '/quan-tri/bao-loi?loai=exercise');
     expect(screen.getByRole('region', { name: 'Đoạn YAML hiện tại' })).toHaveTextContent('02-i-am.yaml');
 
     // Editors only read.
@@ -168,6 +168,35 @@ describe('ContentDetailPage', () => {
 
     release({ data: exerciseDetailFixture({ id: OTHER, key: 'en:exercise:other' }), error: null });
     expect(await screen.findByLabelText('Ghi chú duyệt (không bắt buộc)')).toHaveValue('');
+  });
+
+  it('loads the open-report count itself (direct link) and links to the queue filtered to the row', async () => {
+    routeRpcs(mocks.rpc, detailTable('editor', { admin_item_open_reports: { data: 2 } }));
+    renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
+    const reports = await screen.findByRole('region', { name: 'Báo lỗi liên quan' });
+    expect(await within(reports).findByText('2 báo lỗi đang mở.')).toBeInTheDocument();
+    expect(mocks.rpc).toHaveBeenCalledWith('admin_item_open_reports', { p_kind: 'exercise', p_id: EXERCISE_ID });
+    expect(within(reports).getByRole('link', { name: 'Mở báo lỗi của nội dung này' })).toHaveAttribute(
+      'href',
+      `/quan-tri/bao-loi?loai=exercise&muc=${EXERCISE_ID}`,
+    );
+  });
+
+  it('says when the row has no open report, and offers a retry when the count fails', async () => {
+    routeRpcs(mocks.rpc, detailTable('editor', { admin_item_open_reports: { data: 0 } }));
+    const first = renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
+    expect(await screen.findByText('Không có báo lỗi đang mở.')).toBeInTheDocument();
+    first.unmount();
+
+    const count = vi.fn(() => ({ data: null as unknown, error: { message: 'boom', code: 'X' } as unknown }));
+    routeRpcs(mocks.rpc, detailTable('editor', { admin_item_open_reports: count }));
+    const user = userEvent.setup();
+    renderAdmin(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
+    const reports = await screen.findByRole('region', { name: 'Báo lỗi liên quan' });
+    expect(await within(reports).findByText(/Không tải được số báo lỗi đang mở/)).toBeInTheDocument();
+    count.mockImplementation(() => ({ data: 1, error: null }));
+    await user.click(within(reports).getByRole('button', { name: 'Thử lại' }));
+    expect(await within(reports).findByText('1 báo lỗi đang mở.')).toBeInTheDocument();
   });
 
   it('shows a not-found error', async () => {

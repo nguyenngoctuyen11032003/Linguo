@@ -88,6 +88,9 @@ describe('helpers', () => {
   it('builds paths and formats dates', () => {
     expect(contentDetailPath('exercise', EXERCISE_ID)).toBe(`/quan-tri/noi-dung/exercise/${EXERCISE_ID}`);
     expect(reportsPath('learning_item')).toBe('/quan-tri/bao-loi?loai=learning_item');
+    expect(reportsPath('exercise', 'e0000000-0000-4000-8000-000000000001')).toBe(
+      '/quan-tri/bao-loi?loai=exercise&muc=e0000000-0000-4000-8000-000000000001',
+    );
     expect(reportTargetKind('unit')).toBeNull();
     expect(reportTargetKind('exam_question')).toBe('exam_question');
     expect(formatAdminDate('2026-10-10T08:05:00Z')).toBe('10/10/2026');

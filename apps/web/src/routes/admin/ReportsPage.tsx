@@ -36,6 +36,7 @@ const RESOLVE_LABELS: Record<ReportResolveStatus, string> = {
   triaged: 'Đã tiếp nhận',
 };
 
+const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const groupKey = (g: AdminReportGroup) => `${g.target_kind}:${g.target_id}`;
 const reasonLabel = (reason: string) => REPORT_REASON_LABELS_VI[reason as ReportReason] ?? reason;
 const formatDate = (iso: string) => {
@@ -47,19 +48,29 @@ const selectClasses = cn(inputClasses(false), 'min-h-11 appearance-none py-2 pr-
 /** Spec 11 §4 "Báo lỗi": the queue grouped by target, filtered, paged, resolved in bulk with a note. */
 export function ReportsPage() {
   const [status, setStatus] = useState<ReportStatus | null>('open');
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   // ?loai=<kind> pre-filters the queue (link from a content detail page).
   const [kind, setKind] = useState<ReportTargetKind | null>(() => {
     const initial = params.get('loai');
     return (REPORT_TARGET_KINDS as readonly string[]).includes(initial ?? '') ? (initial as ReportTargetKind) : null;
   });
+  // ?muc=<id> (with ?loai) narrows it to one content row ("Mở báo lỗi của nội dung này").
+  const itemParam = params.get('muc');
+  const targetId = kind && itemParam && UUID.test(itemParam) ? itemParam : null;
   const [page, setPage] = useState(0);
   const [selected, setSelected] = useState<ReadonlySet<string>>(new Set());
   const [action, setAction] = useState<ReportResolveStatus>('fixed');
   const [note, setNote] = useState('');
   const [message, setMessage] = useState<string | null>(null);
   const [failure, setFailure] = useState<string | null>(null);
-  const reports = useAdminReports({ status, kind, page });
+  const reports = useAdminReports({ status, kind, page: targetId ? 0 : page, targetId });
+
+  const clearItem = () => {
+    if (!params.has('muc')) return;
+    const next = new URLSearchParams(params);
+    next.delete('muc');
+    setParams(next, { replace: true });
+  };
   const ids = useId();
 
   const groups = useMemo(() => reports.data?.groups ?? [], [reports.data]);
@@ -138,6 +149,7 @@ export function ReportsPage() {
               setKind((e.target.value || null) as ReportTargetKind | null);
               setPage(0);
               resetView();
+              clearItem();
             }}
             className={selectClasses}
           >
@@ -150,6 +162,27 @@ export function ReportsPage() {
           </select>
         </div>
       </div>
+
+      {targetId && kind && (
+        <p className="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl border border-border bg-surface-solid px-4 py-2 text-[15px]">
+          <span>
+            Chỉ hiện báo lỗi của một nội dung ({REPORT_TARGET_LABELS_VI[kind]}).{' '}
+            <Link to={adminContentPath(kind, targetId)} className="font-semibold text-primary underline-offset-4 hover:underline">
+              Xem nội dung
+            </Link>
+          </span>
+          <button
+            type="button"
+            onClick={() => {
+              resetView();
+              clearItem();
+            }}
+            className="min-h-11 font-semibold text-primary underline underline-offset-4"
+          >
+            Xem cả hàng đợi
+          </button>
+        </p>
+      )}
 
       <form onSubmit={submit} aria-labelledby={`${ids}-action-title`} className="rounded-3xl border border-border bg-surface-solid p-4">
         <h2 id={`${ids}-action-title`} className="font-semibold">
@@ -216,7 +249,7 @@ export function ReportsPage() {
           ))}
         </div>
       ) : groups.length === 0 ? (
-        <EmptyState icon={Flag} title="Không có báo lỗi" description="Không có báo lỗi nào khớp với bộ lọc hiện tại." />
+        <EmptyState icon={Flag} title="Không có báo lỗi" description={targetId ? 'Nội dung này không có báo lỗi nào khớp với trạng thái đã chọn.' : 'Không có báo lỗi nào khớp với bộ lọc hiện tại.'} />
       ) : (
         <>
           {reports.status === 'error' && (

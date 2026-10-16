@@ -1,8 +1,19 @@
 import { describe, expect, it } from 'vitest';
 import { fakeClient } from '../../../tests/unit/fake-supabase';
-import { auditEntryFixture, overviewFixture, REPORT_A1, REPORT_A2, reportListFixture, sourceFixture } from './admin-fixtures';
+import {
+  auditEntryFixture,
+  overviewFixture,
+  REPORT_A1,
+  REPORT_A2,
+  REPORT_TARGET_A,
+  REPORT_TARGET_B,
+  reportListFixture,
+  sourceFixture,
+} from './admin-fixtures';
 import {
   adminContentPath,
+  findAdminReportGroup,
+  getAdminItemOpenReports,
   getAdminOverview,
   getStaffRole,
   hasStaffRole,
@@ -45,6 +56,29 @@ describe('admin reads', () => {
     const result = await listAdminReports(client, { status: null, kind: 'exercise', page: 2 });
     expect(result.groups).toHaveLength(2);
     expect(client.rpcCalls).toEqual([['admin_list_reports', { p_status: null, p_kind: 'exercise', p_limit: 20, p_offset: 40 }]]);
+  });
+
+  it('narrows the queue to one target, paging 200 groups at a time until it is found', async () => {
+    const found = fakeClient({}, { admin_list_reports: { data: reportListFixture() } });
+    const one = await listAdminReports(found, { status: 'open', kind: 'learning_item', page: 3, targetId: REPORT_TARGET_B });
+    expect(one).toEqual({ groups: [reportListFixture().groups[1]], total_groups: 1 });
+    expect(found.rpcCalls).toEqual([['admin_list_reports', { p_status: 'open', p_kind: 'learning_item', p_limit: 200, p_offset: 0 }]]);
+
+    const missing = fakeClient({}, { admin_list_reports: { data: reportListFixture({ total_groups: 450 }) } });
+    await expect(findAdminReportGroup(missing, { status: null, kind: 'exercise', targetId: REPORT_TARGET_B })).resolves.toEqual({
+      groups: [],
+      total_groups: 0,
+    });
+    expect(missing.rpcCalls.map(([, args]) => args.p_offset)).toEqual([0, 200, 400]);
+  });
+
+  it('reads the open-report count of one row', async () => {
+    const client = fakeClient({}, { admin_item_open_reports: { data: 3 } });
+    await expect(getAdminItemOpenReports(client, 'exercise', REPORT_TARGET_A)).resolves.toBe(3);
+    expect(client.rpcCalls).toEqual([['admin_item_open_reports', { p_kind: 'exercise', p_id: REPORT_TARGET_A }]]);
+    await expect(getAdminItemOpenReports(fakeClient({}, { admin_item_open_reports: { data: -1 } }), 'lesson', REPORT_TARGET_A)).rejects.toThrow(
+      'invalid_payload',
+    );
   });
 
   it('reads the audit log with a limit', async () => {

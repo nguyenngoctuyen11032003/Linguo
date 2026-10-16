@@ -1,8 +1,9 @@
 import { useCallback, useRef, useState } from 'react';
-import type { AdminContentDetail, AdminContentKind, AdminContentList, ContentStatus } from '@linguo/shared';
+import type { AdminContentDetail, AdminContentKind, AdminContentList, ContentStatus, ReportTargetKind } from '@linguo/shared';
 import { getSupabase } from '@/lib/supabase';
 import { getContent, listContent, setContentStatus, type ContentFilters } from './content';
 import { adminErrorCode, adminErrorMessage } from './error-map';
+import { getAdminItemOpenReports } from './service';
 import { useAdminResource, type AdminResourceState } from './useAdminOverview';
 
 /** admin_list_content for the given filters (spec 11 §4 "Nội dung"); the previous page stays while the next loads. */
@@ -63,4 +64,22 @@ export function useAdminContentDetail(kind: AdminContentKind | null, id: string 
     return { ...resource, status: resource.status === 'error' ? 'error' : 'loading', data: null, changeStatus, saving };
   }
   return { ...resource, changeStatus, saving };
+}
+
+interface ItemOpenReports {
+  kind: ReportTargetKind;
+  id: string;
+  count: number;
+}
+
+/**
+ * admin_item_open_reports for one reportable row (spec 11 §4 "Báo lỗi liên quan"), so the count survives a refresh
+ * or a direct link. data is null while kind or id is missing, while loading, or when it belongs to another row.
+ */
+export function useAdminItemOpenReports(kind: ReportTargetKind | null, id: string | null): AdminResourceState<number> {
+  const resource = useAdminResource<ItemOpenReports>(`item-open-reports:${kind ?? ''}:${id ?? ''}`, (client) =>
+    kind && id ? getAdminItemOpenReports(client, kind, id).then((count) => ({ kind, id, count })) : NEVER,
+  );
+  const own = resource.data && resource.data.kind === kind && resource.data.id === id ? resource.data.count : null;
+  return { ...resource, data: own };
 }

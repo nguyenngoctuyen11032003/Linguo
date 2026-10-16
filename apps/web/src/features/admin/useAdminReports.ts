@@ -13,7 +13,7 @@ export interface AdminReportsState extends AdminResourceState<AdminReportList> {
 
 /** admin_list_reports + admin_resolve_report (editor+), grouped by target. */
 export function useAdminReports(query: AdminReportQuery): AdminReportsState {
-  const key = `reports:${query.status ?? '*'}:${query.kind ?? '*'}:${query.page}:${query.pageSize ?? ''}`;
+  const key = `reports:${query.status ?? '*'}:${query.kind ?? '*'}:${query.page}:${query.pageSize ?? ''}:${query.targetId ?? ''}`;
   const resource = useAdminResource(key, (client) => listAdminReports(client, query));
   const [resolving, setResolving] = useState(false);
   const { reload } = resource;

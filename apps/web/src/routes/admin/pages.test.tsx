@@ -90,6 +90,23 @@ describe('ReportsPage', () => {
     expect(await screen.findByRole('alert')).toHaveTextContent('Bạn không có quyền thực hiện thao tác này.');
   });
 
+  it('narrows the queue to one content row with ?muc= and can widen it again', async () => {
+    routeRpcs(mocks.rpc, { staff_role: { data: 'editor' }, admin_list_reports: { data: reportListFixture() } });
+    const user = userEvent.setup();
+    renderAdmin(`/quan-tri/bao-loi?loai=exercise&muc=${REPORT_TARGET_A}`);
+    const table = await screen.findByRole('table', { name: 'Hàng đợi báo lỗi, nhóm theo nội dung' });
+    expect(mocks.rpc).toHaveBeenCalledWith('admin_list_reports', { p_status: 'open', p_kind: 'exercise', p_limit: 200, p_offset: 0 });
+    expect(within(table).getByRole('link', { name: /I ___ a student/ })).toBeInTheDocument();
+    expect(within(table).queryByRole('link', { name: 'apple' })).not.toBeInTheDocument();
+    expect(screen.getByText('Trang 1 / 1')).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Xem cả hàng đợi' }));
+    await waitFor(() =>
+      expect(mocks.rpc).toHaveBeenLastCalledWith('admin_list_reports', { p_status: 'open', p_kind: 'exercise', p_limit: 20, p_offset: 0 }),
+    );
+    expect(screen.queryByRole('button', { name: 'Xem cả hàng đợi' })).not.toBeInTheDocument();
+  });
+
   it('refetches with the chosen filters', async () => {
     routeRpcs(mocks.rpc, { staff_role: { data: 'editor' }, admin_list_reports: { data: reportListFixture({ groups: [], total_groups: 0 }) } });
     const user = userEvent.setup();

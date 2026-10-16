@@ -7,7 +7,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { formatAdminDate, isContentKind, reportTargetKind, reportsPath, safeUrl } from '@/features/admin/content';
 import { ADMIN_KIND_LABELS_VI } from '@/features/admin/service';
-import { useAdminContentDetail } from '@/features/admin/useAdminContent';
+import { useAdminContentDetail, useAdminItemOpenReports } from '@/features/admin/useAdminContent';
 import { useAdminRole } from '@/features/admin/useStaffRole';
 import { AnswerPanel } from './AnswerPanel';
 import { ContentPreview } from './ContentPreview';
@@ -53,6 +53,8 @@ export function ContentDetailPage() {
   const kind = isContentKind(params.kind) ? params.kind : null;
   const id = params.id && UUID.test(params.id) ? params.id : null;
   const detail = useAdminContentDetail(kind, id);
+  const reportKind = kind ? reportTargetKind(kind) : null;
+  const itemReports = useAdminItemOpenReports(reportKind, id);
 
   const back = (
     <Link to="/quan-tri/noi-dung" className="inline-flex min-h-11 items-center gap-1.5 font-semibold text-primary underline-offset-4 hover:underline">
@@ -98,7 +100,8 @@ export function ContentDetailPage() {
   const sourceHref = data.source ? safeUrl(data.source.url) : null;
   // Local state (note, force, blocked, previewed answers) belongs to one row.
   const rowKey = `${data.kind}:${data.id}`;
-  const openReports = openReportsFromState(location.state);
+  // Loaded for this row (refresh / direct link); the list's count (router state) only fills in while it loads.
+  const openReports = itemReports.data ?? (itemReports.status === 'loading' ? openReportsFromState(location.state) : null);
 
   return (
     <div className="min-w-0 space-y-5">
@@ -182,15 +185,31 @@ export function ContentDetailPage() {
       <Section title="Báo lỗi liên quan">
         {targetKind ? (
           <div className="space-y-2 text-[15px]">
-            {openReports !== null && (
+            {openReports !== null ? (
               <p className="inline-flex items-center gap-1.5">
                 <Flag aria-hidden className={openReports > 0 ? 'size-4 text-error-text' : 'size-4 text-muted'} />
                 {openReports > 0 ? `${openReports} báo lỗi đang mở.` : 'Không có báo lỗi đang mở.'}
               </p>
+            ) : itemReports.status === 'error' ? (
+              <p className="text-muted">
+                Không tải được số báo lỗi đang mở.{' '}
+                <button type="button" onClick={itemReports.reload} className="min-h-11 font-semibold text-primary underline underline-offset-4">
+                  Thử lại
+                </button>
+              </p>
+            ) : (
+              <p role="status" className="text-muted">
+                Đang tải số báo lỗi…
+              </p>
             )}
             <p>
-              <Link to={reportsPath(targetKind)} className="font-semibold text-primary underline underline-offset-4">
-                Mở hàng đợi báo lỗi loại nội dung này
+              <Link to={reportsPath(targetKind, data.id)} className="font-semibold text-primary underline underline-offset-4">
+                Mở báo lỗi của nội dung này
+              </Link>
+            </p>
+            <p>
+              <Link to={reportsPath(targetKind)} className="text-primary underline underline-offset-4">
+                Hàng đợi báo lỗi loại nội dung này
               </Link>
             </p>
           </div>
