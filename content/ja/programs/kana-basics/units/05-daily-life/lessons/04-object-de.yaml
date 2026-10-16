@@ -320,28 +320,29 @@ exercises:
     difficulty: 3
     item: ja:item:yomimasu
     prompt:
-      source_text: Tôi đọc sách ở thư viện.
+      source_text: Ngày mai tôi đọc sách ở trường.
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
-        - としょかんでほんをよみます。
-        - 図書館で本を読みます。
-        - わたしはとしょかんでほんをよみます。
-        - 私は図書館で本を読みます。
-        - ほんをとしょかんでよみます。
-        - 本を図書館で読みます。
-        - としょかんで本を読みます。
+        - あしたがっこうでほんをよみます。
+        - 明日学校で本を読みます。
+        - あした、がっこうでほんをよみます。
+        - わたしはあしたがっこうでほんをよみます。
+        - 私は明日学校で本を読みます。
+        - あしたほんをがっこうでよみます。
+        - 明日本を学校で読みます。
+        - あしたがっこうで本を読みます。
     known_wrong:
-      - answer: としょかんにほんをよみます。
-        feedback_vi: Nơi diễn ra hành động dùng で - としょかんで.
+      - answer: あしたがっこうにほんをよみます。
+        feedback_vi: Nơi diễn ra hành động dùng で - がっこうで.
         error_tag: particle_ni_de
-      - answer: としょかんでほんおよみます。
+      - answer: あしたがっこうでほんおよみます。
         feedback_vi: Trợ từ tân ngữ viết を.
         error_tag: particle_o_spelling
-      - answer: としょかんでほんがよみます。
-        feedback_vi: Vật bị đọc là tân ngữ - dùng を, không dùng が.
-        error_tag: particle_o
+      - answer: あしたにがっこうでほんをよみます。
+        feedback_vi: あした là thời gian tương đối, không đi với に.
+        error_tag: particle_ni_time
     explanation:
-      vi: としょかんで (ở thư viện - nơi làm việc gì đó) + ほんを (sách - tân ngữ) + よみます (đọc). Tiếng Việt đặt "ở thư viện" cuối câu, tiếng Nhật đặt trước động từ.
-    display_answer: としょかんでほんをよみます。
+      vi: あした (ngày mai, không cần に) + がっこうで (ở trường - nơi làm việc gì đó) + ほんを (sách - tân ngữ) + よみます (đọc). Tiếng Việt đặt "ở trường" cuối câu, tiếng Nhật đặt trước động từ.
+    display_answer: あしたがっこうでほんをよみます。
