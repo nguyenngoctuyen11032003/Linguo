@@ -70,10 +70,10 @@ export function LanguagePill({ paths, currentId, pending = false, onSelect, onAd
         aria-busy={pending || undefined}
         aria-label={lang ? `${lang.short} – Ngôn ngữ đang học: ${lang.nameVi}. Đổi ngôn ngữ` : 'Chọn ngôn ngữ học'}
         onClick={() => setOpen((v) => !v)}
-        className="glass inline-flex min-h-11 items-center gap-1.5 rounded-full px-3.5 text-sm font-bold tracking-wide"
+        className="glass inline-flex min-h-11 items-center gap-1 rounded-full pl-3 pr-2.5 text-sm font-bold tracking-[0.06em] transition-[background-color,scale] duration-150 hover:bg-text/5 active:scale-[0.97] min-[380px]:pl-3.5 min-[380px]:pr-3"
       >
         {lang ? lang.short : 'Ngôn ngữ'}
-        {pending ? <Spinner /> : <ChevronDown aria-hidden className="size-4" />}
+        {pending ? <Spinner /> : <ChevronDown aria-hidden className={`size-4 text-muted transition-transform duration-200 ${open ? "rotate-180" : ""}`} strokeWidth={2.25} />}
       </button>
       <ul
         id={panelId}

@@ -76,7 +76,7 @@ export function HomePage() {
           {status === 'loading' ? (
             <>
               <span className="sr-only">Đang tải…</span>
-              <Skeleton className="h-8 w-52 align-middle" />
+              <Skeleton className="block h-[1.04em] w-52 max-w-full rounded-2xl" />
             </>
           ) : (
             `Chào ${name || 'bạn'}`

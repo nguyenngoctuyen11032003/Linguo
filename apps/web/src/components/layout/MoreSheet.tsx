@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, type RefObject } from 'react';
 import { AnimatePresence, m as motion } from 'motion/react';
-import { ChevronRight, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router';
 import { functionalTransition } from '@/design/motion';
 import { cn } from '@/lib/cn';
@@ -84,18 +84,13 @@ export function MoreSheet({
                     onClick={onClose}
                     className={({ isActive }) =>
                       cn(
-                        'flex h-full min-h-24 flex-col justify-between gap-3 rounded-[1.25rem] p-3.5 text-[15px] font-bold leading-snug ring-1 ring-inset transition-colors',
-                        isActive ? 'bg-primary/12 text-primary ring-primary/30' : 'bg-text/[0.04] ring-border hover:bg-text/8',
+                        'flex h-full min-h-22 flex-col justify-between gap-4 rounded-[1.25rem] p-4 text-[15px] font-bold leading-snug tracking-[-0.01em] ring-1 ring-inset transition-[background-color,scale] duration-150 active:scale-[0.97]',
+                        isActive ? 'bg-primary/12 text-primary ring-primary/30' : 'bg-text/[0.035] ring-border hover:bg-text/8',
                       )
                     }
                   >
-                    <span className="flex items-center justify-between">
-                      <span className="inline-flex size-10 items-center justify-center rounded-2xl bg-primary/12 text-primary">
-                        <item.icon aria-hidden className="size-5" />
-                      </span>
-                      <ChevronRight aria-hidden className="size-4 text-muted" />
-                    </span>
-                    <span>{item.label}</span>
+                    <item.icon aria-hidden className="size-6 text-primary" strokeWidth={1.9} />
+                    <span className="text-balance">{item.label}</span>
                   </NavLink>
                 </li>
               ))}

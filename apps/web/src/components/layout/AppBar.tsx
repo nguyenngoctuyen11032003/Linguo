@@ -18,12 +18,12 @@ export function AppBar() {
   const [pending, setPending] = useState(false);
   const initial = (profile?.displayName || user?.email || '?').trim().charAt(0).toUpperCase();
   return (
-    <header className="glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
-      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-3 px-safe">
-        <Link to="/app" aria-label="Linguo" className="inline-flex min-h-11 items-center lg:invisible">
-          <Wordmark />
+    <header className="vt-appbar glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
+      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-2 px-safe">
+        <Link to="/app" aria-label="Linguo" className="inline-flex min-h-11 min-w-0 shrink-0 items-center rounded-full lg:invisible">
+          <Wordmark compact />
         </Link>
-        <div className="flex items-center gap-1.5">
+        <div className="flex shrink-0 items-center gap-1 min-[380px]:gap-1.5">
           <LanguagePill
             paths={paths}
             currentId={currentId}

@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { THEMES, type ThemePreference } from '@linguo/shared';
 import { readString, writeString } from '@/lib/storage';
+import { syncThemeColor } from '@/lib/theme-color';
 import { useMediaQuery } from '@/lib/useMediaQuery';
 
 export type ResolvedTheme = 'light' | 'dark';
@@ -31,7 +32,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = resolved;
-  }, [resolved]);
+    syncThemeColor(preference, resolved);
+  }, [preference, resolved]);
 
   const setPreference = useCallback((next: ThemePreference) => {
     setPreferenceState(next);

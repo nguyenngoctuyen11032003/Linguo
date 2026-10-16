@@ -40,7 +40,7 @@ export function CompletionView({ session, onPlanAgain, learner }: Props) {
               id="session-done-title"
               ref={headingRef}
               tabIndex={-1}
-              className="font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-none focus:outline-none"
+              className="scroll-mt-[calc(7rem+env(safe-area-inset-top,0px))] font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.06] focus:outline-none"
             >
               Hoàn thành phiên học
             </h2>

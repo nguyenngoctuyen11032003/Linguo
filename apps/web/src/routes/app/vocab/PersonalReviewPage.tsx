@@ -48,7 +48,7 @@ export function PersonalReviewPage() {
         <ArrowLeft aria-hidden className="size-4 shrink-0" />
         <span className="min-w-0 truncate">{list ? list.name : 'Về danh sách'}</span>
       </Link>
-      <h1 className="page-title">Ôn từ vựng của tôi</h1>
+      <h1 className="page-title text-[clamp(2rem,9vw,2.5rem)]">Ôn từ vựng của tôi</h1>
     </div>
   );
 

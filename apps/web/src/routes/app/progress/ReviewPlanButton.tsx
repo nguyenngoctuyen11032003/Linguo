@@ -24,6 +24,7 @@ export function ReviewPlanButton({ dashboard, learner }: Props) {
       <Button
         ref={trigger}
         variant="ghost"
+        className="max-[379px]:px-4 max-[379px]:text-sm"
         onClick={() => {
           setMounted(true);
           setOpen(true);

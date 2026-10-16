@@ -125,7 +125,7 @@ export function SpeakingPage() {
       {material.status === 'ready' && lang && (
         <>
           <PrivacyNote />
-          <SolidCard className="space-y-4">
+          <SolidCard className="space-y-4 max-[379px]:p-4">
             <ChoiceGroup label="Chế độ luyện" options={MODES} value={mode} onChange={changeMode} />
             {mode !== 'roleplay' && material.lessons.length > 0 && (
               <SelectField label="Lấy câu mẫu từ bài" value={material.lessonId ?? ''} onChange={material.selectLesson}>

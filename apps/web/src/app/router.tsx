@@ -3,15 +3,10 @@ import { createBrowserRouter, type RouteObject } from 'react-router';
 import { AuthLayout } from '@/components/layout/AuthLayout';
 import { FullScreenLoader } from '@/components/layout/FullScreenLoader';
 import { RootLayout } from '@/components/layout/RootLayout';
-import { RedirectIfAuthed, RequireAuth } from '@/features/auth/guards';
-import { AuthCallbackPage } from '@/routes/auth/AuthCallbackPage';
-import { CheckEmailPage } from '@/routes/auth/CheckEmailPage';
-import { ForgotPasswordPage } from '@/routes/auth/ForgotPasswordPage';
-import { ResetPasswordPage } from '@/routes/auth/ResetPasswordPage';
-import { SignInPage } from '@/routes/auth/SignInPage';
-import { SignUpPage } from '@/routes/auth/SignUpPage';
+import { RedirectIfAuthed } from '@/features/auth/guards';
+import { installRoutePrefetch, prefetchOnIdle } from '@/lib/prefetch';
+import { enableViewTransitions } from '@/lib/view-transitions';
 import { LandingPage } from '@/routes/landing/LandingPage';
-import { LegalPage } from '@/routes/legal/LegalPage';
 import { NotFoundPage } from '@/routes/NotFoundPage';
 import { RouteError } from '@/routes/RouteError';
 
@@ -32,7 +27,8 @@ function failedChunk(error: unknown): Pick<RouteObject, 'Component'> {
 }
 
 /**
- * Route-level code splitting: the landing, legal and auth screens stay in the entry chunk; everything a signed-in
+ * Route-level code splitting: only the landing page stays in the entry chunk. The signed-out screens (auth, legal)
+ * share one lazy chunk (public-pages.ts) and everything a signed-in
  * learner uses loads on demand (`/app` shell, lesson player, review, exams, ...). React Router holds a navigation
  * until the chunk arrives (the previous screen stays up, so nothing shifts) and shows `hydrateFallbackElement` on a
  * deep link. Every chunk is still in the service worker's precache (vite.config.ts globs all JS), so the app
@@ -81,6 +77,8 @@ const adminRoute: RouteObject = {
   }),
 };
 
+const loadPublic = () => import('./public-pages');
+
 const routeTree: RouteObject[] = [
   {
     path: '/',
@@ -88,8 +86,8 @@ const routeTree: RouteObject[] = [
     hydrateFallbackElement: <FullScreenLoader />,
     children: [
       { index: true, element: <LandingPage /> },
-      { path: 'quyen-rieng-tu', element: <LegalPage kind="privacy" /> },
-      { path: 'dieu-khoan', element: <LegalPage kind="terms" /> },
+      { path: 'quyen-rieng-tu', ...lazyPage(loadPublic, 'PrivacyPage') },
+      { path: 'dieu-khoan', ...lazyPage(loadPublic, 'TermsPage') },
       {
         element: (
           <RedirectIfAuthed>
@@ -98,25 +96,18 @@ const routeTree: RouteObject[] = [
         ),
         handle: MAIN_LAYOUT,
         children: [
-          { path: 'dang-nhap', element: <SignInPage /> },
-          { path: 'dang-ky', element: <SignUpPage /> },
-          { path: 'quen-mat-khau', element: <ForgotPasswordPage /> },
-          { path: 'kiem-tra-email', element: <CheckEmailPage /> },
+          { path: 'dang-nhap', ...lazyPage(loadPublic, 'SignInPage') },
+          { path: 'dang-ky', ...lazyPage(loadPublic, 'SignUpPage') },
+          { path: 'quen-mat-khau', ...lazyPage(loadPublic, 'ForgotPasswordPage') },
+          { path: 'kiem-tra-email', ...lazyPage(loadPublic, 'CheckEmailPage') },
         ],
       },
       {
         element: <AuthLayout />,
         handle: MAIN_LAYOUT,
         children: [
-          { path: 'auth/callback', element: <AuthCallbackPage /> },
-          {
-            path: 'dat-lai-mat-khau',
-            element: (
-              <RequireAuth>
-                <ResetPasswordPage />
-              </RequireAuth>
-            ),
-          },
+          { path: 'auth/callback', ...lazyPage(loadPublic, 'AuthCallbackPage') },
+          { path: 'dat-lai-mat-khau', ...lazyPage(loadPublic, 'GuardedResetPasswordPage') },
         ],
       },
       {
@@ -186,7 +177,31 @@ function withErrorBoundaries(list: RouteObject[], inMain: boolean): RouteObject[
 
 export const routes: RouteObject[] = withErrorBoundaries(routeTree, false);
 
+/** Likely-next screens, warmed on idle (lib/prefetch.ts): the bottom-nav tabs inside /app, sign-in elsewhere. */
+export const APP_IDLE_PREFETCH = ['/app', '/app/hoc-tap', '/app/on-tap', '/app/tien-do', '/app/cai-dat'] as const;
+export const PUBLIC_IDLE_PREFETCH = ['/dang-nhap'] as const;
+
 export function createAppRouter() {
   const basename = import.meta.env.BASE_URL.replace(/\/+$/, '') || '/';
-  return createBrowserRouter(routes, { basename });
+  const router = createBrowserRouter(routes, { basename });
+  enableViewTransitions(router);
+  installRoutePrefetch(routes, basename);
+  // Warm the likely-next chunks once the first screen has settled (no navigation in flight).
+  let warmedApp = false;
+  let warmedPublic = false;
+  const warm = (pathname: string) => {
+    if (pathname.startsWith('/app')) {
+      if (warmedApp) return;
+      warmedApp = true;
+      prefetchOnIdle(APP_IDLE_PREFETCH);
+    } else if (!warmedPublic && !pathname.startsWith('/quan-tri') && !pathname.startsWith('/giao-vien')) {
+      warmedPublic = true;
+      prefetchOnIdle(PUBLIC_IDLE_PREFETCH);
+    }
+  };
+  if (router.state.initialized) warm(router.state.location.pathname);
+  router.subscribe((state) => {
+    if (state.initialized && state.navigation.state === 'idle') warm(state.location.pathname);
+  });
+  return router;
 }

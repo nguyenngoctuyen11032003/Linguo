@@ -326,15 +326,15 @@ export function OnboardingPage() {
           id="onboarding-title"
           ref={titleRef}
           tabIndex={-1}
-          className="mt-2 font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.02] focus:outline-none"
+          className="mt-2 font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.1] focus:outline-none"
         >
           {TITLES[step]}
         </h1>
         <div className="mt-6">{body}</div>
       </main>
       {step !== 6 && (
-        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
-          <div className="mx-auto w-full max-w-xl px-safe py-4">
+        <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
+          <div className="mx-auto w-full max-w-xl px-safe pt-3 pb-4">
             {step === 1 && allTaken ? (
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <p className="text-[15px] text-muted">Bạn đã có lộ trình cho mọi ngôn ngữ hiện có.</p>

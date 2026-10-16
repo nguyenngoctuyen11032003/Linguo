@@ -12,10 +12,11 @@ import { formatEstimate } from '@/features/learning-paths/format-estimate';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { setPathStatus, type LearningPath } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { cn } from '@/lib/cn';
 import { formatDateVi, todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
 import { PathPlanEditor } from './PathPlanEditor';
-import { SECTION_SCROLL_MARGIN } from './section-state';
+import { SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './section-state';
 
 const STATUS_DONE: Partial<Record<PathStatus, string>> = {
   paused: 'Đã tạm dừng lộ trình.',
@@ -38,7 +39,7 @@ function PathDiagnostic({ path }: { path: LearningPath }) {
 
   if (data.status === 'in_progress') {
     return (
-      <Link to={href} aria-label={`${label}Tiếp tục bài kiểm tra`} className={buttonClasses('ghost')}>
+      <Link to={href} aria-label={`${label}Tiếp tục bài kiểm tra`} className={cn(buttonClasses('ghost'), 'max-[379px]:w-full max-[379px]:px-3 max-[379px]:text-sm')}>
         Tiếp tục bài kiểm tra
       </Link>
     );
@@ -47,7 +48,7 @@ function PathDiagnostic({ path }: { path: LearningPath }) {
   if (data.can_start) {
     const text = taken ? 'Làm lại bài kiểm tra' : 'Làm bài kiểm tra trình độ';
     return (
-      <Link to={href} aria-label={`${label}${text}`} className={buttonClasses('ghost')}>
+      <Link to={href} aria-label={`${label}${text}`} className={cn(buttonClasses('ghost'), 'max-[379px]:w-full max-[379px]:px-3 max-[379px]:text-sm')}>
         {text}
       </Link>
     );
@@ -136,10 +137,10 @@ function PathItem({ path, onArchived }: { path: LearningPath; onArchived: () => 
   }
 
   return (
-    <li className="space-y-3 rounded-2xl border border-border p-4">
+    <li className="space-y-3 rounded-[1.25rem] bg-text/[0.04] p-3.5 min-[380px]:p-4">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <h3 className="font-semibold">
+          <h3 className="font-semibold leading-snug">
             {LANGUAGES[path.language].nameVi} · {GOAL_LABELS[path.goalType]}
           </h3>
           <p className="text-sm text-muted">
@@ -149,7 +150,7 @@ function PathItem({ path, onArchived }: { path: LearningPath; onArchived: () => 
         {path.status === 'paused' && <span className="shrink-0 rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold">Tạm dừng</span>}
         {completed && <span className="shrink-0 rounded-full bg-success/15 px-3 py-1 text-xs font-semibold">Đã hoàn thành</span>}
       </div>
-      <div className="flex flex-wrap gap-2">
+      <div className="grid gap-2 min-[380px]:flex min-[380px]:flex-wrap">
         {!completed && (
           <Button ref={editRef} variant="ghost" aria-expanded={editing} disabled={itemBusy} onClick={() => setEditing((v) => !v)}>
             Sửa kế hoạch
@@ -220,7 +221,7 @@ export function LearningPathsSection() {
           id="paths-heading"
           ref={headingRef}
           tabIndex={-1}
-          className="text-lg font-bold focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/45"
+          className={SECTION_HEADING_CLASS}
         >
           Lộ trình học
         </h2>
@@ -235,11 +236,15 @@ export function LearningPathsSection() {
           </ul>
         )}
         {status === 'ready' &&
-          missing.map((code) => (
-            <Link key={code} to={`/app/bat-dau?lang=${code}`} className={buttonClasses('ghost')}>
-              + Thêm {LANGUAGES[code].nameVi}
-            </Link>
-          ))}
+          missing.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {missing.map((code) => (
+                <Link key={code} to={`/app/bat-dau?lang=${code}`} className={buttonClasses('ghost')}>
+                  + Thêm {LANGUAGES[code].nameVi}
+                </Link>
+              ))}
+            </div>
+          )}
       </SolidCard>
     </section>
   );

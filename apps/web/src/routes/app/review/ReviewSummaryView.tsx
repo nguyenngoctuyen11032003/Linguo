@@ -44,7 +44,7 @@ export function ReviewSummaryView({ reviewedCount, droppedCount = 0, graded, pen
             <h2
               id="review-summary-title"
               tabIndex={-1}
-              className="font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-none focus:outline-none"
+              className="scroll-mt-[calc(7rem+env(safe-area-inset-top,0px))] font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.06] focus:outline-none"
             >
               Xong phiên ôn
             </h2>

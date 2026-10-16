@@ -292,7 +292,11 @@ export function ReviewPage() {
       )}
 
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 ref={cardHeadingRef} tabIndex={-1} className="text-[13px] font-bold tabular-nums text-muted focus:outline-none">
+        <h2
+          ref={cardHeadingRef}
+          tabIndex={-1}
+          className="scroll-mt-[calc(6rem+env(safe-area-inset-top,0px))] text-[13px] font-bold tabular-nums text-muted focus:outline-none"
+        >
           {counter}
         </h2>
         {pendingCount > 0 && (
@@ -333,7 +337,7 @@ export function ReviewPage() {
       {flipped && (
         <div>
           <Button variant="ghost" onClick={() => setAiOpen(true)}>
-            <Sparkles aria-hidden className="size-5" />
+            <Sparkles aria-hidden className="size-4" />
             Giải thích AI
           </Button>
           <AiExplainSheet
@@ -350,7 +354,8 @@ export function ReviewPage() {
         data-testid="rating-dock"
         className={cn(
           flipped &&
-            'sticky bottom-[calc(3.5rem+env(safe-area-inset-bottom,0px))] z-10 -mx-5 rounded-t-[1.5rem] border-t border-border bg-bg/95 px-5 pb-3 pt-4 backdrop-blur-md lg:bottom-0',
+            // Floats just above the bottom dock (4rem tall + its max(0.75rem, inset) bottom gap); opaque so nothing shows through.
+            'sticky bottom-[calc(4.5rem+max(0.75rem,env(safe-area-inset-bottom,0px)))] z-10 -mx-2 rounded-[1.75rem] border border-border bg-surface-solid px-2.5 pb-2.5 pt-3 shadow-[var(--shadow-dock)] lg:bottom-4',
         )}
       >
         <RatingBar

@@ -5,6 +5,7 @@ import { DEFAULT_TIMEZONE, SKILLS, type SkillEstimate } from '@linguo/shared';
 import { buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { cn } from '@/lib/cn';
 import { levelLabel } from '../diagnostic/labels';
 import { ESTIMATE_CONFIDENCE_LABELS, ESTIMATE_SOURCE_LABELS, formatDay, SKILL_LABELS } from './labels';
 
@@ -24,15 +25,13 @@ export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
   return (
     <SolidCard>
       <section aria-labelledby={headingId} className="space-y-4">
-        <div className="flex items-start gap-3">
-          <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-2xl bg-primary/12 text-primary">
-            <Gauge aria-hidden className="size-5" />
-          </span>
+        <div className="min-w-0">
+          <h2 id={headingId} className="flex items-center gap-2 text-xl font-extrabold tracking-[-0.02em]">
+            <Gauge aria-hidden className="size-5 text-primary" strokeWidth={2.1} />
+            Năng lực ước lượng
+          </h2>
           <div className="min-w-0">
-            <h2 id={headingId} className="text-lg font-bold tracking-[-0.02em]">
-              Năng lực ước lượng
-            </h2>
-            <p className="text-sm text-muted">Trình độ từng kỹ năng là ước lượng, không phải điểm thi. Độ tin cậy cho biết nên tin bao nhiêu.</p>
+            <p className="mt-0.5 text-[13px] leading-snug text-muted">Trình độ từng kỹ năng là ước lượng, không phải điểm thi. Độ tin cậy cho biết nên tin bao nhiêu.</p>
           </div>
         </div>
 
@@ -47,20 +46,20 @@ export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
           </div>
         ) : (
           <>
-            <ul className="grid gap-3 sm:grid-cols-2">
+            <ul className="grid grid-cols-2 gap-2.5">
               {SKILLS.map((skill) => {
                 const estimate = bySkill.get(skill);
                 return (
-                  <li key={skill} className="min-w-0 rounded-2xl bg-text/5 p-3">
+                  <li key={skill} className={cn('min-w-0 rounded-[1.25rem] bg-text/[0.04] p-3.5', estimate && 'col-span-2 sm:col-span-1')}>
                     <div className="flex items-start justify-between gap-2">
-                      <h3 className="font-semibold">{SKILL_LABELS[skill]}</h3>
+                      <h3 className="text-[15px] font-semibold leading-snug">{SKILL_LABELS[skill]}</h3>
                       {estimate && (
                         <span className="shrink-0 rounded-full border border-border px-2 py-0.5 text-xs font-semibold text-muted">Ước lượng</span>
                       )}
                     </div>
                     {estimate ? (
-                      <div className="mt-1 space-y-0.5 text-sm">
-                        <p className="text-2xl font-bold leading-tight tracking-[-0.02em]">{levelLabel(estimate.level_code)}</p>
+                      <div className="mt-1 space-y-0.5 text-[13px] leading-snug">
+                        <p className="stat-num pb-1 pt-1.5 text-[34px]">{levelLabel(estimate.level_code)}</p>
                         <p>Độ tin cậy: {ESTIMATE_CONFIDENCE_LABELS[estimate.confidence]}</p>
                         <p className="text-muted">
                           Nguồn: {ESTIMATE_SOURCE_LABELS[estimate.source]}
@@ -69,8 +68,8 @@ export function EstimatesCard({ estimates, pathId }: EstimatesCardProps) {
                         <p className="text-muted">Cập nhật ngày {formatDay(estimate.assessed_at, timeZone)}</p>
                       </div>
                     ) : (
-                      <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">
-                        <CircleDashed aria-hidden className="size-4 shrink-0" />
+                      <p className="mt-1 flex items-start gap-1.5 text-[13px] leading-snug text-muted">
+                        <CircleDashed aria-hidden className="mt-px size-4 shrink-0" />
                         Chưa có ước lượng
                       </p>
                     )}

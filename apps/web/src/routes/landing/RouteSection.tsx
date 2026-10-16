@@ -56,7 +56,7 @@ export function RouteSection() {
           <h2 id="route-title" className="font-display text-[clamp(48px,14vw,88px)] font-extrabold uppercase leading-[0.92] text-white">
             Một lộ trình
           </h2>
-          <p className="mt-2 text-[clamp(18px,5vw,26px)] leading-snug text-[#C9D6E2]">
+          <p className="mt-4 text-[clamp(18px,5vw,26px)] leading-snug text-[#C9D6E2]">
             rõ ràng từ điểm xuất phát
             <br />
             điều chỉnh theo kết quả thật

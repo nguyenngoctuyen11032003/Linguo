@@ -18,10 +18,22 @@ export interface RatingBarProps {
 /** Each grade gets its own tint and ledge; the word, interval and key still carry the meaning without colour. */
 const TONES: Record<Rating, string> = {
   1: 'border-error/55 bg-error/10 text-error-text shadow-[0_4px_0_var(--error)] not-disabled:hover:bg-error/15 not-disabled:active:shadow-[0_1px_0_var(--error)]',
-  2: 'border-warn/60 bg-warn/12 text-gold shadow-[0_4px_0_var(--warn)] not-disabled:hover:bg-warn/18 not-disabled:active:shadow-[0_1px_0_var(--warn)]',
+  2: 'border-warn/60 bg-warn/12 text-[color-mix(in_srgb,var(--gold)_70%,var(--text))] shadow-[0_4px_0_var(--warn)] not-disabled:hover:bg-warn/18 not-disabled:active:shadow-[0_1px_0_var(--warn)]',
   3: 'border-success/55 bg-success/12 text-success-text shadow-[0_4px_0_var(--success)] not-disabled:hover:bg-success/18 not-disabled:active:shadow-[0_1px_0_var(--success)]',
   4: 'border-primary/55 bg-primary/10 text-primary shadow-[0_4px_0_var(--primary)] not-disabled:hover:bg-primary/15 not-disabled:active:shadow-[0_1px_0_var(--primary)]',
 };
+
+/** "10 phút" as a big numeral and a small unit on one line, so no interval ever wraps at 320px. */
+function IntervalText({ value }: { value: string }) {
+  const match = /^(\S+)\s+(.+)$/.exec(value);
+  if (!match) return <span className="stat-num text-[22px] text-text">{value}</span>;
+  return (
+    <span className="inline-flex items-baseline gap-1 whitespace-nowrap text-text">
+      <span className="stat-num text-[24px] leading-none">{match[1]}</span>{' '}
+      <span className="text-[12px] font-bold">{match[2]}</span>
+    </span>
+  );
+}
 
 function isTextEntry(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
@@ -68,14 +80,14 @@ export function RatingBar({ previews, onRate, revealed, submitting = false, clas
               aria-label={`${RATING_LABELS[rating]}, ôn lại sau ${interval}`}
               data-rating={rating}
               className={cn(
-                'flex min-h-14 min-w-0 flex-col items-center justify-center gap-1 rounded-[1.25rem] border-2 px-1 pb-2.5 pt-2 text-center leading-tight',
+                'flex min-h-14 min-w-0 flex-col items-center justify-center gap-0.5 rounded-[1.25rem] border-2 px-1 pb-2 pt-1.5 text-center leading-tight',
                 'transition-[translate,box-shadow,background-color] duration-150 not-disabled:active:translate-y-[3px] disabled:shadow-none',
                 DISABLED_NEUTRAL,
                 TONES[rating],
               )}
             >
-              <span className="text-[15px] font-extrabold">{RATING_LABELS[rating]}</span>
-              <span className="stat-num text-[22px] text-text">{interval}</span>
+              <span className="text-[14px] font-extrabold">{RATING_LABELS[rating]}</span>
+              <IntervalText value={interval} />
               <span aria-hidden="true" className="hidden text-xs font-semibold opacity-80 sm:block">
                 Phím {rating}
               </span>

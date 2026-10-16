@@ -57,12 +57,12 @@ function ScenarioCard({
             ))}
           </ul>
         </div>
-        <div className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-border pt-3">
-          <p className="text-[13px] text-muted">
+        <div className="mt-auto flex items-center justify-between gap-3 border-t border-border pt-3">
+          <p className="min-w-0 text-[13px] leading-snug text-muted">
             Trình độ gợi ý: {levelName(scenario.level_min)} – {levelName(scenario.level_max)}
             {!suits && ' (khác trình độ hiện tại của bạn)'}
           </p>
-          <Button variant={featured ? 'accent' : 'ghost'} disabled={disabled} onClick={onPick} aria-label={`Bắt đầu: ${scenario.title_vi}`} aria-describedby={describedBy}>
+          <Button className="shrink-0" variant={featured ? 'accent' : 'ghost'} disabled={disabled} onClick={onPick} aria-label={`Bắt đầu: ${scenario.title_vi}`} aria-describedby={describedBy}>
             Bắt đầu
           </Button>
         </div>

@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
-import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
 import { CLASS_LANGUAGE_LABELS } from '@/features/teacher/format';
 import { useTeacherClasses } from '@/features/teacher/useTeacherClasses';
@@ -89,7 +88,7 @@ export function TeacherClassesPage() {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0">
           <h1 className="page-title">Lớp học của tôi</h1>
-          <p className="mt-1 max-w-prose text-[15px] text-muted">
+          <p className="mt-2 max-w-prose text-[15px] text-muted">
             Bạn chỉ thấy số liệu tổng hợp của học viên. Câu trả lời, hội thoại với AI và từ vựng riêng của họ luôn được giữ kín.
           </p>
         </div>
@@ -121,17 +120,17 @@ function ClassList({ classes }: { classes: TeacherClass[] }) {
     <ul className="grid gap-3 sm:grid-cols-2">
       {classes.map((c) => (
         <li key={c.id} className="min-w-0">
-          <SolidCard className="p-0">
+          <div className="card">
             <Link
               to={`/giao-vien/lop/${c.id}`}
-              className="group flex min-h-20 items-center gap-4 rounded-[1.75rem] p-4 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
+              className="group flex min-h-20 items-center gap-3.5 rounded-[1.75rem] py-3.5 pl-3.5 pr-3 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
             >
-              <span aria-hidden="true" className="flex size-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 ring-inset">
-                <span className="stat-num text-[30px]">{c.member_count}</span>
-                <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.06em] text-muted">học viên</span>
+              <span aria-hidden="true" className="flex h-14 min-w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-primary/10 px-2 text-primary ring-1 ring-primary/20 ring-inset">
+                <span className="stat-num text-[26px] leading-none">{c.member_count}</span>
+                <span className="mt-0.5 text-[12px] font-semibold leading-none text-muted">học viên</span>
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block break-words text-[17px] font-bold leading-snug tracking-[-0.01em]">{c.name}</span>
+                <span className="line-clamp-2 break-words text-[16px] font-bold leading-snug tracking-[-0.01em]">{c.name}</span>
                 <span className="mt-0.5 block text-[13px] text-muted">
                   {CLASS_LANGUAGE_LABELS[c.language_code]} · {c.member_count} học viên · {c.assignment_count} bài giao
                   {c.archived_at === null && c.invites.length > 0 ? ` · ${c.invites.length} mã mời` : ''}
@@ -139,7 +138,7 @@ function ClassList({ classes }: { classes: TeacherClass[] }) {
               </span>
               <ChevronRight aria-hidden className="size-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5" />
             </Link>
-          </SolidCard>
+          </div>
         </li>
       ))}
     </ul>

@@ -30,10 +30,11 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 type Tab = 'explain' | 'practice' | 'sentence';
 type PracticeSkill = 'vocabulary' | 'grammar' | 'reading';
 
-const TABS: { id: Tab; label: string }[] = [
-  { id: 'explain', label: 'Hỏi khái niệm' },
-  { id: 'practice', label: 'Tạo bài luyện' },
-  { id: 'sentence', label: 'Phân tích câu' },
+/** `parts` joins to `label`; on phones the first and last part are visually dropped so the three tabs fit one row. */
+const TABS: { id: Tab; label: string; parts: [string, string, string] }[] = [
+  { id: 'explain', label: 'Hỏi khái niệm', parts: ['Hỏi ', 'khái niệm', ''] },
+  { id: 'practice', label: 'Tạo bài luyện', parts: ['Tạo ', 'bài luyện', ''] },
+  { id: 'sentence', label: 'Phân tích câu', parts: ['', 'Phân tích', ' câu'] },
 ];
 
 const SKILLS: { id: PracticeSkill; label: string }[] = [
@@ -126,17 +127,20 @@ function TabButton({
       role="tab"
       id={`tutor-tab-${tab.id}`}
       aria-controls={`tutor-panel-${tab.id}`}
+      aria-label={tab.label}
       aria-selected={selected}
       tabIndex={selected ? 0 : -1}
       onClick={onSelect}
       onKeyDown={onKeyDown}
       className={cn(
-        'min-h-11 flex-1 rounded-full px-2 text-[14px] font-bold whitespace-nowrap transition-[background-color,color,scale] active:scale-95 min-[380px]:px-4 min-[380px]:text-[15px]',
+        'min-h-11 min-w-0 rounded-full px-1.5 text-[14px] font-bold whitespace-nowrap transition-[background-color,color,scale] active:scale-95 max-sm:first-letter:uppercase sm:px-4 sm:text-[15px]',
         'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
         selected ? 'bg-primary text-on-primary shadow-[0_6px_16px_-6px_var(--primary)]' : 'text-muted hover:bg-text/5 hover:text-text',
       )}
     >
-      {tab.label}
+      <span className="max-sm:sr-only">{tab.parts[0]}</span>
+      {tab.parts[1]}
+      <span className="max-sm:sr-only">{tab.parts[2]}</span>
     </button>
   );
 }
@@ -158,7 +162,7 @@ function Segmented<T extends string | number>({
       <p id={labelId} className="eyebrow px-1">
         {label}
       </p>
-      <div role="group" aria-labelledby={labelId} className="flex flex-wrap gap-2">
+      <div role="group" aria-labelledby={labelId} className="flex flex-wrap gap-2 min-[380px]:grid" style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}>
         {options.map((o) => (
           <button
             key={String(o.id)}
@@ -166,7 +170,7 @@ function Segmented<T extends string | number>({
             aria-pressed={o.id === value}
             onClick={() => onChange(o.id)}
             className={cn(
-              'min-h-11 min-w-11 rounded-full border-2 px-4 text-[15px] font-bold transition-[translate,box-shadow,background-color]',
+              'min-h-11 min-w-11 rounded-full border-2 px-4 text-[15px] font-bold whitespace-nowrap min-[380px]:min-w-0 min-[380px]:px-2 transition-[translate,box-shadow,background-color]',
               'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 active:translate-y-[2px]',
               o.id === value
                 ? 'border-primary bg-primary/12 text-primary shadow-[0_3px_0_var(--primary-depth)] active:shadow-[0_1px_0_var(--primary-depth)]'
@@ -629,7 +633,7 @@ export function TutorPage() {
     };
     content = (
       <div className="space-y-5">
-        <div role="tablist" aria-label="Chế độ gia sư" className="glass flex gap-1 rounded-full p-1 shadow-[var(--shadow-card)]">
+        <div role="tablist" aria-label="Chế độ gia sư" className="glass grid grid-cols-3 gap-1 rounded-full p-1 shadow-[var(--shadow-card)]">
           {TABS.map((t) => (
             <TabButton
               key={t.id}

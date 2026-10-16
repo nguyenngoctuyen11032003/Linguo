@@ -2,6 +2,7 @@ import './zod-config';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import '@/design/global.css';
+import './app-shell.css';
 import { captureInstallPrompt, registerServiceWorker } from '@/features/pwa';
 import { installErrorReporting } from '@/lib/error-reporting';
 import { installKeyboardAwareness } from '@/lib/viewport';

@@ -21,7 +21,7 @@ export function ChoiceGroup<T extends string>({
       <p id={labelId} className="eyebrow px-1">
         {label}
       </p>
-      <div role="group" aria-labelledby={labelId} className="flex flex-wrap gap-2">
+      <div role="group" aria-labelledby={labelId} className="grid gap-2" style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}>
         {options.map((o) => (
           <button
             key={o.id}
@@ -29,7 +29,7 @@ export function ChoiceGroup<T extends string>({
             aria-pressed={o.id === value}
             onClick={() => onChange(o.id)}
             className={cn(
-              'min-h-11 rounded-full border-2 px-4 text-[15px] font-bold transition-[translate,box-shadow,background-color] active:translate-y-[2px]',
+              'min-h-12 min-w-0 rounded-[1.25rem] border-2 px-2 py-1.5 text-center text-[13px] leading-tight font-bold text-balance transition-[translate,box-shadow,background-color] active:translate-y-[2px] max-[379px]:px-1 min-[380px]:text-[15px]',
               FOCUS_RING,
               o.id === value ? 'border-primary bg-primary/12 text-primary shadow-[0_3px_0_var(--primary-depth)] active:shadow-[0_1px_0_var(--primary-depth)]' : 'border-border bg-surface-solid shadow-[0_3px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
             )}

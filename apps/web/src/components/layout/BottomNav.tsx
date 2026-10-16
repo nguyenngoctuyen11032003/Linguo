@@ -41,7 +41,7 @@ export function BottomNav({
   return (
     <nav
       aria-label="Điều hướng chính"
-      className={cn('pointer-events-none fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))]', className)}
+      className={cn('vt-dock pointer-events-none fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))]', className)}
     >
       <ul className="glass pointer-events-auto mx-auto grid max-w-md grid-cols-5 rounded-[1.75rem] px-1 py-1 shadow-[var(--shadow-dock)]">
         {PRIMARY_NAV.map((item) => (

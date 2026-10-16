@@ -26,7 +26,7 @@ describe('ReviewDueCard', () => {
     const { container } = renderWithProviders(<ReviewDueCard />, { route: '/app' });
     expect(container.querySelector('section')).toBeNull();
     expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!).toHaveTextContent('Đang tải số thẻ cần ôn');
-    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!.parentElement).toHaveClass('min-h-44');
+    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!.parentElement).toHaveClass('min-h-26');
   });
 
   it('uses an outline button so Hôm nay stays the only primary action', () => {

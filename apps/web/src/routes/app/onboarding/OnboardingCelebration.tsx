@@ -51,7 +51,7 @@ export function OnboardingCelebration({ path, onDone }: { path: LearningPath; on
       <h1
         ref={headingRef}
         tabIndex={-1}
-        className="font-display text-[clamp(44px,14vw,64px)] font-extrabold uppercase leading-[0.95] tracking-[-0.005em] focus:outline-none"
+        className="font-display text-[clamp(44px,14vw,64px)] font-extrabold uppercase leading-[1.12] tracking-[-0.005em] focus:outline-none"
       >
         Lộ trình đã sẵn sàng!
       </h1>

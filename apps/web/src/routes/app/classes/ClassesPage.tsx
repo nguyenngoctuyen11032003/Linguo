@@ -48,7 +48,7 @@ export function ClassesPage() {
         <h1 ref={headingRef} tabIndex={-1} className="page-title focus:outline-none">
           Lớp học
         </h1>
-        <p className="mt-1 max-w-prose text-[15px] text-muted">
+        <p className="mt-2 max-w-prose text-[15px] text-muted">
           Tham gia lớp bằng mã giáo viên gửi để nhận bài được giao. Bạn vẫn học trên lộ trình của mình như bình thường.
         </p>
       </div>

@@ -83,7 +83,7 @@ export function AiModal({
             aria-labelledby={titleId}
             aria-describedby={description ? descriptionId : undefined}
             tabIndex={-1}
-            initial={offscreen}
+            initial={reduceMotion ? false : offscreen}
             animate={onscreen}
             exit={offscreen}
             transition={{ ...functionalTransition, duration: 0.28 }}

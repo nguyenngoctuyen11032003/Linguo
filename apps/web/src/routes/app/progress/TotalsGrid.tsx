@@ -14,8 +14,8 @@ interface TotalsGridProps {
 
 function Stat({ term, children, hint, wide = false }: { term: string; children: ReactNode; hint?: ReactNode; wide?: boolean }) {
   return (
-    <div className={cn('min-w-0 rounded-2xl bg-text/[0.04] p-3.5 ring-1 ring-border ring-inset', wide && 'col-span-2 sm:col-span-1')}>
-      <dt className="eyebrow">{term}</dt>
+    <div className={cn('min-w-0 rounded-[1.25rem] bg-text/[0.04] p-3 min-[380px]:p-3.5', wide && 'col-span-2 sm:col-span-1')}>
+      <dt className="eyebrow leading-tight">{term}</dt>
       <dd className="mt-2 flex flex-wrap items-baseline gap-x-1">{children}</dd>
       {hint && <dd className="mt-1.5 text-xs leading-snug text-muted">{hint}</dd>}
     </div>
@@ -26,8 +26,8 @@ function Stat({ term, children, hint, wide = false }: { term: string; children: 
 function Big({ value, unit }: { value: ReactNode; unit?: string }) {
   return (
     <>
-      <span className="stat-num text-[38px]">{value}</span>
-      {unit && <span className="text-[13px] font-semibold text-muted"> {unit} </span>}
+      <span className="stat-num text-[32px] min-[380px]:text-[38px]">{value}</span>
+      {unit && <span className="text-xs font-semibold text-muted min-[380px]:text-[13px]"> {unit} </span>}
     </>
   );
 }
@@ -52,7 +52,7 @@ export function TotalsGrid({ totals, retention, masteredTotal, rangeDays }: Tota
   const weekGoal = totals.week_goal_minutes;
   const weekShare = weekGoal > 0 ? Math.min(1, totals.week_minutes / weekGoal) : 0;
   return (
-    <dl className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+    <dl className="grid grid-cols-2 gap-2 min-[380px]:gap-2.5 sm:grid-cols-3">
       <Stat term="Hôm nay">
         <Duration minutes={totals.today_minutes} />
       </Stat>
@@ -94,10 +94,10 @@ export function TotalsGrid({ totals, retention, masteredTotal, rangeDays }: Tota
         {retention.value === null ? (
           <span className="text-[15px] font-semibold text-muted">Chưa đủ dữ liệu</span>
         ) : (
-          <span className="stat-num text-[38px] text-success-text">{percent(retention.value)}</span>
+          <span className="stat-num text-[32px] text-success-text min-[380px]:text-[38px]">{percent(retention.value)}</span>
         )}
       </Stat>
-      <Stat term="Mục đã thành thạo">
+      <Stat term="Mục đã thành thạo" wide>
         <Big value={count(masteredTotal)} />
       </Stat>
     </dl>

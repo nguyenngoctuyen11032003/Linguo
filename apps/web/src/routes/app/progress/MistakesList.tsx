@@ -15,10 +15,10 @@ export function MistakesList({ mistakes, action }: { mistakes: Mistake[]; /** e.
     <SolidCard>
       <section aria-labelledby={headingId} className="space-y-3">
         <div>
-          <h2 id={headingId} className="text-lg font-bold tracking-[-0.02em]">
+          <h2 id={headingId} className="text-xl font-extrabold tracking-[-0.02em]">
             Lỗi thường gặp
           </h2>
-          {mistakes.length > 0 && <p className="text-sm text-muted">Những câu bạn hay nhầm nhất. Ôn lại bài là cách nhanh nhất để nhớ chắc.</p>}
+          {mistakes.length > 0 && <p className="mt-0.5 text-[13px] leading-snug text-muted">Những câu bạn hay nhầm nhất. Ôn lại bài là cách nhanh nhất để nhớ chắc.</p>}
         </div>
         {mistakes.length === 0 ? (
           <div className="flex items-start gap-3 rounded-2xl bg-text/5 p-4">

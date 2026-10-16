@@ -23,7 +23,7 @@ export function NotificationBell({ className }: { className?: string }) {
         <span
           aria-hidden="true"
           data-testid="notification-badge"
-          className="absolute right-0.5 top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[11px] font-bold leading-none text-on-primary ring-2 ring-surface-solid"
+          className="absolute right-0.5 top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-xs font-bold leading-none tabular-nums text-on-primary ring-2 ring-surface-solid"
         >
           {unreadBadgeText(count)}
         </span>

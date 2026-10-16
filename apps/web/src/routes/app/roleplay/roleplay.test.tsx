@@ -259,9 +259,9 @@ describe('RoleplayPage: UX polish', () => {
       await screen.findByText('Lượt 2/12');
       const input = screen.getByLabelText(/Tin nhắn của bạn/);
       await waitFor(() => expect(input).toHaveFocus());
-      const last = scroll.mock.contexts.at(-1) as HTMLElement;
-      expect(last).toContainElement(input);
-      expect(last).toContainElement(screen.getByRole('button', { name: 'Gửi' }));
+      // The composer is sticky; it is scrolled to, then the end of the log is brought just above it.
+      const send = screen.getByRole('button', { name: 'Gửi' });
+      expect((scroll.mock.contexts as HTMLElement[]).some((el) => el.contains(input) && el.contains(send))).toBe(true);
     } finally {
       Element.prototype.scrollIntoView = original;
     }

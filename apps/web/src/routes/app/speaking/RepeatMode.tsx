@@ -29,7 +29,7 @@ export function RepeatMode({ lang, sentences, tts, transcribe, onSaveReflection 
   };
 
   return (
-    <SolidCard className="space-y-5">
+    <SolidCard className="space-y-5 max-[379px]:p-4">
       <div className="flex items-center justify-between gap-3">
         <h2 className="text-xl font-extrabold tracking-[-0.02em]">Nhắc lại câu</h2>
         <p className="rounded-full bg-text/5 px-3 py-1 text-[13px] font-bold tabular-nums" aria-live="polite">
@@ -60,12 +60,14 @@ export function RepeatMode({ lang, sentences, tts, transcribe, onSaveReflection 
         onSaveReflection={onSaveReflection}
       />
       <div className="flex items-center justify-between gap-3 border-t border-border pt-4">
-        <Button variant="ghost" disabled={at === 0} onClick={() => go(at - 1)}>
+        <Button variant="ghost" className="whitespace-nowrap" aria-label="Câu trước" disabled={at === 0} onClick={() => go(at - 1)}>
           <ChevronLeft aria-hidden className="size-4" />
-          Câu trước
+          <span className="max-[379px]:hidden">Câu trước</span>
+          <span className="min-[380px]:hidden">Trước</span>
         </Button>
-        <Button variant="ghost" disabled={at >= sentences.length - 1} onClick={() => go(at + 1)}>
-          Câu tiếp
+        <Button variant="ghost" className="whitespace-nowrap" aria-label="Câu tiếp" disabled={at >= sentences.length - 1} onClick={() => go(at + 1)}>
+          <span className="max-[379px]:hidden">Câu tiếp</span>
+          <span className="min-[380px]:hidden">Tiếp</span>
           <ChevronRight aria-hidden className="size-4" />
         </Button>
       </div>

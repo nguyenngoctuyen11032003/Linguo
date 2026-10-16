@@ -76,22 +76,23 @@ export function InviteSection({ cls, archived, api }: { cls: TeacherClass; archi
                       {archived ? ' · tạm ngừng vì lớp đã lưu trữ' : ''}
                     </p>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    <Button variant="primary" aria-label={`Chép mã ${code}`} onClick={() => void copy(invite)}>
+                  <div className="flex items-center gap-2">
+                    <Button variant="primary" block aria-label={`Chép mã ${code}`} onClick={() => void copy(invite)} className="sm:w-auto">
                       <Copy aria-hidden className="size-4" />
                       Chép mã
                     </Button>
-                    <Button
-                      variant="danger"
+                    <button
+                      type="button"
                       aria-label={`Thu hồi mã ${code}`}
+                      title="Thu hồi"
                       onClick={(e) => {
                         revokeTrigger.current = e.currentTarget;
                         setRevoking(invite);
                       }}
+                      className="inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-error/40 text-error-text transition-[background-color,scale] duration-150 hover:bg-error/10 active:scale-95"
                     >
-                      <XCircle aria-hidden className="size-4" />
-                      Thu hồi
-                    </Button>
+                      <XCircle aria-hidden className="size-5" />
+                    </button>
                   </div>
                 </SolidCard>
               </li>

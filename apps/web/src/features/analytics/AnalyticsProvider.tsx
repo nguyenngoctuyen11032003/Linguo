@@ -1,7 +1,6 @@
 import { useEffect, useLayoutEffect, type ReactNode } from 'react';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { subscribeMotivationPrefs } from '@/features/progress/prefs-events';
-import { getMotivationPrefs } from '@/features/progress/service';
 import { getSupabase } from '@/lib/supabase';
 import { configureAnalytics, flushAnalytics, setAnalyticsRoute } from './client';
 
@@ -31,7 +30,9 @@ export function AnalyticsProvider({ children }: { children: ReactNode }): ReactN
   useEffect(() => {
     if (!userId || !client) return;
     let active = true;
-    getMotivationPrefs(client, userId)
+    // Lazy: keeps the progress contract (zod schemas) out of the entry chunk.
+    import('@/features/progress/service')
+      .then((m) => m.getMotivationPrefs(client, userId))
       .then((prefs) => {
         if (active && prefs.analytics_opt_out) configureAnalytics({ client, enabled: false });
       })

@@ -41,6 +41,8 @@ export interface ExerciseFrameProps {
   ai?: LessonAiContext;
   /** Shows "Báo lỗi nội dung" for this exercise under the feedback (learner screens only, not admin previews). */
   reportable?: boolean;
+  /** The action bar spans the page gutter (lesson player); off inside a padded card such as the admin preview. */
+  bleed?: boolean;
 }
 
 type Parsed =
@@ -114,7 +116,7 @@ export function ExerciseFrame(props: ExerciseFrameProps) {
   return <ExerciseFrameInner key={`${props.exercise.id}:${props.exercise.version}:${props.recheck}`} {...props} />;
 }
 
-function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai, reportable = false }: ExerciseFrameProps) {
+function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai, reportable = false, bleed = false }: ExerciseFrameProps) {
   const titleId = useId();
   const parsed = useMemo(() => parsePrompt(exercise), [exercise]);
   const gate = useMemo(() => createCompositionGate(), []);
@@ -154,14 +156,14 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
 
   if (!parsed) {
     return (
-      <section aria-labelledby={titleId} className="flex min-w-0 flex-col gap-4">
+      <section aria-labelledby={titleId} className="flex min-w-0 flex-1 flex-col gap-4">
         <div role="alert" className="flex items-start gap-3 rounded-3xl border border-error/50 bg-error/10 p-4">
           <AlertTriangle aria-hidden className="mt-0.5 size-5 shrink-0 text-error-text" />
           <h2 id={titleId} className="text-[17px] font-semibold">
             Bài tập bị lỗi định dạng
           </h2>
         </div>
-        <ActionBar>
+        <ActionBar bleed={bleed}>
           <Button variant="accent" size="lg" block onClick={onContinue}>
             Tiếp tục
           </Button>
@@ -292,16 +294,16 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
   } else if (showResult) {
     actions = (
       // One row: two stacked buttons would cover the feedback card on a small screen.
-      <div className={canGiveUp ? 'grid grid-cols-2 gap-2' : 'grid gap-2'}>
-        <Button variant="primary" size={canGiveUp ? 'md' : 'lg'} block onClick={retry} disabled={busy}>
-          <RotateCcw aria-hidden className="size-5" />
-          Thử lại
-        </Button>
+      <div className={canGiveUp ? 'grid grid-cols-2 gap-3' : 'grid gap-2'}>
         {canGiveUp && (
-          <Button variant="ghost" size="md" block onClick={giveUp} disabled={busy}>
+          <Button variant="ghost" size="lg" block className="px-3!" onClick={giveUp} disabled={busy}>
             Xem đáp án
           </Button>
         )}
+        <Button variant="primary" size="lg" block className={canGiveUp ? 'px-3!' : undefined} onClick={retry} disabled={busy}>
+          <RotateCcw aria-hidden className="size-5" />
+          Thử lại
+        </Button>
       </div>
     );
   } else {
@@ -325,24 +327,25 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
 
   return (
     <CompositionGateContext.Provider value={gate}>
-      <section aria-labelledby={titleId} className="flex min-w-0 flex-col">
-        <div className="min-w-0 pb-4">
-          <p className="flex flex-wrap items-center gap-2">
-            <span className="eyebrow inline-flex items-center gap-1.5">
+      <section aria-labelledby={titleId} className="flex min-w-0 flex-1 flex-col">
+        <div className="min-w-0 pb-6">
+          {/* Stage + instruction read as one quiet line; the prompt below is the thing to look at. */}
+          <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
+            <span className="eyebrow inline-flex items-center gap-1.5 text-accent-text">
               <span aria-hidden="true" className="size-1.5 rounded-full bg-accent" />
               {STAGE_LABELS[exercise.stage]}
             </span>
+            <h2 id={titleId} className="text-[15px] font-semibold leading-snug text-muted">
+              {instructionFor(parsed, exercise.answer_lang)}
+            </h2>
             {recheck && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-accent/12 px-2.5 py-0.5 text-xs font-bold text-accent-text">
+              <span className="inline-flex items-center gap-1 rounded-full bg-warn/15 px-2.5 py-0.5 text-xs font-bold text-text ring-1 ring-warn/40 ring-inset">
                 <RotateCcw aria-hidden className="size-3" />
                 Làm lại
               </span>
             )}
-          </p>
-          <h2 id={titleId} className="mt-2 text-[26px] font-extrabold leading-[1.15] tracking-[-0.025em]">
-            {instructionFor(parsed, exercise.answer_lang)}
-          </h2>
-          <div ref={bodyRef} className="mt-5 min-w-0">
+          </div>
+          <div ref={bodyRef} className="mt-4 min-w-0">
             {body}
           </div>
           {hintLevels.length > 0 && (
@@ -359,28 +362,38 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
             answerLang={exercise.answer_lang}
           />
         </div>
-        <ActionBar verdict={showResult ? result.verdict : null}>{actions}</ActionBar>
+        <ActionBar bleed={bleed} verdict={showResult ? result.verdict : null}>
+          {actions}
+        </ActionBar>
       </section>
     </CompositionGateContext.Provider>
   );
 }
 
 const BAR_TONE: Record<Verdict, string> = {
-  correct: 'border-success/45 bg-[color-mix(in_srgb,var(--success)_14%,var(--bg))]',
-  almost: 'border-warn/50 bg-[color-mix(in_srgb,var(--warn)_14%,var(--bg))]',
-  incorrect: 'border-error/45 bg-[color-mix(in_srgb,var(--error)_12%,var(--bg))]',
+  correct: 'border-success/50 bg-[color-mix(in_srgb,var(--success)_16%,var(--bg))]',
+  almost: 'border-warn/55 bg-[color-mix(in_srgb,var(--warn)_16%,var(--bg))]',
+  incorrect: 'border-error/50 bg-[color-mix(in_srgb,var(--error)_14%,var(--bg))]',
 };
 
-/** Sticky bottom bar holding the main action; it takes the verdict's tint once an answer is graded. */
-function ActionBar({ children, verdict = null }: { children: ReactNode; verdict?: Verdict | null }) {
+/**
+ * Sticky bottom bar holding the main action. It is opaque (content never shows through the buttons), fades the
+ * content scrolling under it, sits on the home indicator inset and takes the verdict's tint once an answer is graded.
+ */
+function ActionBar({ children, verdict = null, bleed = false }: { children: ReactNode; verdict?: Verdict | null; bleed?: boolean }) {
   return (
     <div
       className={cn(
-        'sticky bottom-0 z-10 mt-auto rounded-t-[1.5rem] border-t-2 px-3 pb-safe backdrop-blur-md transition-colors duration-300',
-        verdict ? BAR_TONE[verdict] : 'border-border bg-bg/95',
+        'sticky bottom-0 z-10 mt-auto rounded-t-[1.75rem] border-t-2 pb-safe transition-colors duration-200',
+        'before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-6 before:bg-gradient-to-t before:from-bg before:to-transparent',
+        bleed
+          ? '-mx-[max(1.25rem,env(safe-area-inset-left,0px))] px-[max(1.25rem,env(safe-area-inset-left,0px))]'
+          : '-mx-4 px-4',
+        verdict ? BAR_TONE[verdict] : 'border-transparent bg-bg',
+        verdict && 'before:hidden',
       )}
     >
-      <div className="py-4">{children}</div>
+      <div className="pt-4 pb-4">{children}</div>
     </div>
   );
 }

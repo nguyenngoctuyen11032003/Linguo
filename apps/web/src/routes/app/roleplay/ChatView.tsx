@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
-import { Check, Flag, Lightbulb, Mic, Pencil, Sparkles, Square, Volume2 } from 'lucide-react';
+import { Check, Flag, Lightbulb, Mic, Pencil, SendHorizontal, Sparkles, Square, Volume2 } from 'lucide-react';
 import type { RoleplayScenario } from '@linguo/shared';
 import { AiFallback, AiLoading, AiTextarea, type QuotaGate } from '@/components/ai';
 import { Button } from '@/components/ui/Button';
@@ -22,7 +22,7 @@ import { LeaveRoleplayDialog } from './LeaveRoleplayDialog';
 
 const MESSAGE_MAX = 300;
 const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' } as const;
-const REPLY_PLACEHOLDER = { en: 'Type your reply in English…', ko: 'Gõ câu trả lời bằng tiếng Hàn…', ja: 'Gõ câu trả lời bằng tiếng Nhật…' } as const;
+const REPLY_PLACEHOLDER = { en: 'Reply in English…', ko: 'Nhập bằng tiếng Hàn…', ja: 'Nhập bằng tiếng Nhật…' } as const;
 
 export const ROLEPLAY_AI_NOTE =
   'Đối tác là AI nên có thể nói sai hoặc chưa tự nhiên. Đừng nhập thông tin cá nhân thật như số điện thoại, địa chỉ hay mật khẩu.';
@@ -200,9 +200,20 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
   // New message: keep the end of the conversation in view (no smooth scroll with reduced motion). While the partner
   // is typing that is the typing indicator; once it replied it is the whole composer (input and "Gửi"), which the
   // root scroll-padding keeps clear of the bottom nav.
+  // The composer is sticky, so instead of scrolling to it (it is always "in view") the end of the log is brought
+  // above it: its scroll margin is the composer's height (the root scroll-padding already clears the dock).
   useEffect(() => {
-    const target = loading ? endRef.current : (tailRef.current ?? endRef.current);
-    target?.scrollIntoView?.({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+    const end = endRef.current;
+    const tail = tailRef.current;
+    if (end) end.style.scrollMarginBottom = !over && tail ? `${tail.offsetHeight + 12}px` : '';
+    const behavior = reduceMotion ? 'auto' : 'smooth';
+    if (over && !loading) {
+      (tail ?? end)?.scrollIntoView?.({ block: 'nearest', behavior });
+      return;
+    }
+    // The composer first (a no-op while it is stuck in view), then the end of the log above it: the last call wins.
+    if (!loading) tail?.scrollIntoView?.({ block: 'nearest', behavior: 'auto' });
+    end?.scrollIntoView?.({ block: 'nearest', behavior });
   }, [session.messages.length, loading, over, reduceMotion]);
 
   // After each partner reply the input is ready again.
@@ -321,36 +332,54 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
           </SolidCard>
         </div>
       ) : (
-        <form onSubmit={submit} noValidate className="space-y-3">
-          <div ref={tailRef} className="glass space-y-2.5 rounded-[1.75rem] p-2.5 shadow-[var(--shadow-dock)]">
-            <div ref={composerRef} className="space-y-1.5">
-              <label htmlFor={`${voiceId}-msg`} className="eyebrow block px-2 pt-1">
-                Tin nhắn của bạn (bằng {LANGUAGE_NAME[lang]})
-              </label>
-              <AiTextarea
-                id={`${voiceId}-msg`}
-                lang={lang}
-                value={draft}
-                maxLength={MESSAGE_MAX}
-                invalid={empty}
-                aria-describedby={empty ? errorId : undefined}
-                placeholder={REPLY_PLACEHOLDER[lang]}
-                onValueChange={(v) => {
-                  setDraft(v);
-                  if (empty) setEmpty(false);
-                }}
-                onSubmitShortcut={() => submit()}
-              />
+        <>
+          {/* The composer sticks just above the bottom dock (above the page bottom on desktop, where there is no
+              dock) so the reply box is always at hand, like a messaging app; it never covers the log because it
+              sits in the flow after it. */}
+          <form
+            onSubmit={submit}
+            noValidate
+            className="sticky bottom-[calc(4.5rem+max(0.75rem,env(safe-area-inset-bottom,0px)))] z-20 lg:bottom-[max(1rem,env(safe-area-inset-bottom,0px))]"
+          >
+            <div ref={tailRef} className="glass space-y-2 rounded-[1.75rem] p-2 shadow-[var(--shadow-dock)]">
+              <div className="flex items-start gap-2">
+                <div ref={composerRef} className="min-w-0 flex-1">
+                  <label htmlFor={`${voiceId}-msg`} className="sr-only">
+                    Tin nhắn của bạn (bằng {LANGUAGE_NAME[lang]})
+                  </label>
+                  <AiTextarea
+                    id={`${voiceId}-msg`}
+                    lang={lang}
+                    value={draft}
+                    maxLength={MESSAGE_MAX}
+                    invalid={empty}
+                    aria-describedby={empty ? errorId : undefined}
+                    placeholder={REPLY_PLACEHOLDER[lang]}
+                    className="px-4"
+                    onValueChange={(v) => {
+                      setDraft(v);
+                      if (empty) setEmpty(false);
+                    }}
+                    onSubmitShortcut={() => submit()}
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  variant="accent"
+                  loading={loading}
+                  disabled={sendDisabled}
+                  hint={gate.hint ? `${gate.hint} Bài học và ôn tập vẫn dùng bình thường.` : undefined}
+                  className="min-h-12 min-w-12 shrink-0 px-3 min-[380px]:px-4"
+                >
+                  {!loading && <SendHorizontal aria-hidden className="size-5" />}
+                  <span className="max-[379px]:sr-only">Gửi</span>
+                </Button>
+              </div>
               {empty && (
-                <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
+                <p id={errorId} role="alert" className="px-3 text-sm text-error-text">
                   Hãy viết vài chữ trước khi gửi nhé.
                 </p>
               )}
-            </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <Button type="submit" variant="accent" loading={loading} disabled={sendDisabled} hint={gate.hint ? `${gate.hint} Bài học và ôn tập vẫn dùng bình thường.` : undefined}>
-                Gửi
-              </Button>
               {stt.supported && voiceOn && (
                 <Button variant="ghost" onClick={listening ? stopStt : startStt} aria-pressed={listening} disabled={loading || api.stalled}>
                   {listening ? <Square aria-hidden className="size-4" /> : <Mic aria-hidden className="size-4" />}
@@ -358,7 +387,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
                 </Button>
               )}
             </div>
-          </div>
+          </form>
           {stt.supported && (
             <div className="space-y-1">
               <label htmlFor={voiceId} className="flex min-h-11 cursor-pointer items-center gap-3 text-[15px] font-medium">
@@ -380,7 +409,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
             </div>
           )}
           {!tts.available && <p className="px-1 text-sm text-muted">Trình duyệt chưa có giọng đọc {LANGUAGE_NAME[lang]}, nên bạn hãy đọc to câu của đối tác nhé.</p>}
-        </form>
+        </>
       )}
 
       <div className="space-y-2 border-t border-border pt-3">

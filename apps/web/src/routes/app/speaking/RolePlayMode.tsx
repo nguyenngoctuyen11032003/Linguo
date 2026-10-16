@@ -44,7 +44,7 @@ export function RolePlayMode({ lang, tts, transcribe, onSaveReflection }: Props)
   };
 
   return (
-    <SolidCard className="space-y-5">
+    <SolidCard className="space-y-5 max-[379px]:p-4">
       <h2 ref={headingRef} tabIndex={-1} className="text-xl font-extrabold tracking-[-0.02em] focus:outline-none">
         Hội thoại mẫu
       </h2>

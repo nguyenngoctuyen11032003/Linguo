@@ -42,10 +42,12 @@ export function AccuracyList({ title, rows, rangeDays }: AccuracyListProps) {
           const change = delta(row, rangeDays);
           const Icon = change?.icon;
           return (
-            <li key={row.key} className="min-w-0 rounded-2xl bg-text/[0.03] p-3 ring-1 ring-border ring-inset">
+            <li key={row.key} className="min-w-0 rounded-[1.25rem] bg-text/[0.04] p-3.5">
               <div className="flex items-baseline justify-between gap-3">
-                <span className="min-w-0 truncate font-semibold">
-                  {row.label} <span className="text-[13px] font-medium text-muted">· {row.attempts} câu</span>
+                <span className="min-w-0 break-words font-semibold leading-snug">
+                  {row.label}
+                  <span className="sr-only"> · </span>
+                  <span className="block text-[13px] font-medium tabular-nums text-muted">{row.attempts} câu</span>
                 </span>
                 {row.accuracy !== null && <span className="stat-num shrink-0 text-[30px] tabular-nums">{percent(row.accuracy)}</span>}
               </div>
@@ -59,8 +61,8 @@ export function AccuracyList({ title, rows, rangeDays }: AccuracyListProps) {
                     </div>
                   </div>
                   {change && Icon && (
-                    <p className={cn('mt-1.5 flex items-center gap-1.5 text-[13px]', change.className)}>
-                      <Icon aria-hidden className="size-4 shrink-0" />
+                    <p className={cn('mt-1.5 flex items-start gap-1.5 text-[13px] leading-snug text-pretty', change.className)}>
+                      <Icon aria-hidden className="mt-px size-4 shrink-0" />
                       <span>{change.text}</span>
                     </p>
                   )}

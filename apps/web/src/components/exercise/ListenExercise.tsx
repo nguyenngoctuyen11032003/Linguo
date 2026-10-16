@@ -15,7 +15,7 @@ export function ListenExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & 
 
   return (
     <div className="min-w-0">
-      <p id={labelId} className="mb-4 text-[19px] font-bold leading-snug">
+      <p id={labelId} className="mb-4 text-[22px] font-extrabold leading-[1.3] tracking-[-0.015em]">
         Nghe và chọn nghĩa đúng
       </p>
       {prompt.audio_asset_id !== null && <ContentAudio key={prompt.audio_asset_id} assetId={prompt.audio_asset_id} fallbackText={prompt.fallback_text} onFailedChange={setFailed} className="mb-3" />}

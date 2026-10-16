@@ -11,8 +11,9 @@ export function FinalCtaSection() {
           <div aria-hidden="true" className="absolute -bottom-32 -right-16 -z-10 size-96 rounded-full bg-accent/35 blur-3xl" />
           <div aria-hidden="true" className="absolute -left-24 -top-24 -z-10 size-72 rounded-full bg-primary/30 blur-3xl" />
           <div className="max-w-3xl space-y-6">
-            <h2 id="final-cta" className="font-display text-[clamp(48px,14vw,96px)] font-extrabold uppercase leading-[0.92] text-white">
-              Bắt đầu lộ trình <span className="text-accent">của bạn</span>
+            <h2 id="final-cta" className="font-display text-[clamp(48px,14vw,96px)] font-extrabold uppercase leading-[0.95] text-white">
+              <span className="block">Bắt đầu</span> <span className="block">lộ trình</span>{' '}
+              <span className="block text-right text-accent sm:text-left">của bạn</span>
             </h2>
             <p className="max-w-md text-[clamp(15px,3.8vw,18px)] text-white/75">
               Miễn phí. Chỉ cần 10–15 phút mỗi ngày để hình thành thói quen học đều đặn.

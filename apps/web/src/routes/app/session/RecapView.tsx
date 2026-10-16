@@ -68,7 +68,7 @@ export function RecapView({ sessionId, learner, saving, onDone, onBack }: Props)
           <ArrowLeft aria-hidden className="size-4" />
           Quay lại kế hoạch
         </button>
-        <h2 id="recap-title" ref={headingRef} tabIndex={-1} className="text-[22px] font-extrabold leading-tight tracking-[-0.02em] focus:outline-none">
+        <h2 id="recap-title" ref={headingRef} tabIndex={-1} className="scroll-mt-[calc(6rem+env(safe-area-inset-top,0px))] text-[22px] font-extrabold leading-tight tracking-[-0.02em] focus:outline-none">
           Tổng kết: lỗi sai hôm nay
         </h2>
         <p className="text-[15px] text-muted">Xem lại từng lỗi một chút. Hiểu vì sao sai giúp bạn nhớ lâu hơn.</p>

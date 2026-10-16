@@ -4,6 +4,7 @@ import type { Confidence } from '@/features/reviews/types';
 import { cn } from '@/lib/cn';
 
 const LEVELS: Confidence[] = [1, 2, 3];
+const BAR_HEIGHT: Record<Confidence, string> = { 1: 'h-1.5', 2: 'h-2.5', 3: 'h-3.5' };
 
 interface Props {
   value: Confidence | null;
@@ -31,13 +32,18 @@ export function RecallConfidence({ value, onChange }: Props) {
               aria-pressed={pressed}
               onClick={() => onChange(pressed ? null : level)}
               className={cn(
-                'inline-flex min-h-12 min-w-0 items-center justify-center rounded-2xl border-2 px-2 text-center text-[15px] font-bold leading-tight',
+                'group inline-flex min-h-14 min-w-0 flex-col items-center justify-center gap-1.5 rounded-2xl border-2 px-1 py-2 text-center text-[14px] font-bold leading-tight whitespace-nowrap min-[360px]:text-[15px]',
                 'transition-[translate,box-shadow,background-color] duration-150 active:translate-y-[3px]',
                 pressed
                   ? 'border-primary bg-primary/12 text-text shadow-[0_4px_0_var(--primary)] active:shadow-[0_1px_0_var(--primary)]'
                   : 'border-border bg-surface-solid text-text shadow-[0_4px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
               )}
             >
+              <span aria-hidden="true" className={cn('flex h-3.5 items-end gap-[3px]', pressed ? 'text-primary' : 'text-muted')}>
+                {LEVELS.map((bar) => (
+                  <span key={bar} className={cn('w-1 rounded-full bg-current', BAR_HEIGHT[bar], bar > level && 'opacity-30')} />
+                ))}
+              </span>
               {CONFIDENCE_LABELS[level]}
             </button>
           );

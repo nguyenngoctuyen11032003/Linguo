@@ -37,13 +37,11 @@ export function MethodSection() {
               initial="hidden"
               animate={state}
             >
-              <span aria-hidden="true" className="stat-num text-gradient-fade absolute -right-1 -top-2 -z-10 text-[112px] opacity-40">
+              <span aria-hidden="true" className="stat-num text-gradient-fade absolute right-5 top-4 -z-10 text-[72px] leading-none opacity-50">
                 0{i + 1}
               </span>
-              <span className="inline-flex size-11 items-center justify-center rounded-full bg-primary/15 text-primary ring-1 ring-primary/25 ring-inset">
-                <Icon aria-hidden className="size-5" />
-              </span>
-              <h3 className="mt-6 text-[19px] font-bold tracking-[-0.02em]">{title}</h3>
+              <Icon aria-hidden className="size-6 text-primary" strokeWidth={1.75} />
+              <h3 className="mt-8 text-[19px] font-bold tracking-[-0.02em]">{title}</h3>
               <p className="mt-1.5 text-[15px] leading-relaxed text-muted">{text}</p>
             </motion.li>
           ))}

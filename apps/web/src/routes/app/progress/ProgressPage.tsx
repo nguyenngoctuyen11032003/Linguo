@@ -31,9 +31,9 @@ function LoadingDashboard() {
   return (
     <div role="status" className="space-y-6">
       <span className="sr-only">Đang tải tiến độ…</span>
-      <Skeleton className="block h-72 w-full rounded-3xl" />
-      <Skeleton className="block h-56 w-full rounded-3xl" />
-      <Skeleton className="block h-48 w-full rounded-3xl" />
+      <Skeleton className="block h-[26rem] w-full rounded-[1.75rem]" />
+      <Skeleton className="block h-80 w-full rounded-[1.75rem]" />
+      <Skeleton className="block h-64 w-full rounded-[1.75rem]" />
     </div>
   );
 }
@@ -41,7 +41,7 @@ function LoadingDashboard() {
 function Layer({ title, intro, children }: { title: string; intro: string; children: ReactNode }) {
   const headingId = useId();
   return (
-    <SolidCard>
+    <SolidCard className="max-[379px]:p-4">
       <section aria-labelledby={headingId} className="space-y-4">
         <div>
           <h2 id={headingId} className="text-xl font-extrabold tracking-[-0.02em]">

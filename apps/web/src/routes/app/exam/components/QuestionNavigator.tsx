@@ -60,7 +60,7 @@ export function QuestionNavigator({ questions, currentId, onGo }: QuestionNaviga
                         className={cn(
                           'relative flex h-11 w-full flex-col items-center justify-center rounded-2xl border text-sm font-bold tabular-nums transition-[background-color,scale] active:scale-95',
                           'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40',
-                          done ? 'border-primary/40 bg-primary/12' : 'border-dashed border-input-border bg-surface-solid',
+                          done ? 'border-primary/40 bg-primary/12' : 'border-border bg-surface-solid',
                           current && 'border-primary ring-2 ring-primary ring-offset-2 ring-offset-bg',
                         )}
                       >

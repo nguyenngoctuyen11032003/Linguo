@@ -255,8 +255,9 @@ function RunningExam({ attempt, run, onExit, submitOpen, setSubmitOpen }: Runnin
         {/* Below 380 px the title line is visually dropped (still the page heading for screen readers) so the
             "Phần X · Câu n/N" position keeps the room. */}
         <h1 className="text-[15px] font-bold leading-tight max-[379px]:sr-only min-[380px]:truncate">{attempt.form_title_vi}</h1>
-        <p className="text-[13px] font-semibold text-muted max-[379px]:text-balance min-[380px]:truncate">
-          Phần {SECTION_LABELS[current.section]} · Câu {index + 1}/{questions.length}
+        {/* The non-breaking space keeps the dot with the section, so a narrow phone wraps as "Phần Nghe ·" / "Câu n/N". */}
+        <p className="text-[13px] font-semibold leading-tight text-muted min-[380px]:truncate">
+          Phần {SECTION_LABELS[current.section]}{' '}· Câu{' '}{index + 1}/{questions.length}
         </p>
       </div>
       <ExamTimer remainingMs={run.remainingMs} />

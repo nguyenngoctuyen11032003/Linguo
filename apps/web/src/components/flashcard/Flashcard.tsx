@@ -200,10 +200,27 @@ function FaceGlow() {
   );
 }
 
+/** Long prompts (phrases, grammar patterns) step down in size so a card face never turns into a wall of display type. */
+const TARGET_SIZES: Array<[number, string]> = [
+  [12, 'text-[clamp(36px,12vw,56px)]'],
+  [24, 'text-[clamp(28px,8.5vw,40px)]'],
+  [Infinity, 'text-[clamp(22px,6.5vw,30px)]'],
+];
+const MEANING_SIZES: Array<[number, string]> = [
+  [16, 'text-[clamp(28px,9vw,40px)]'],
+  [40, 'text-[clamp(22px,6.5vw,30px)]'],
+  [Infinity, 'text-[clamp(19px,5.5vw,24px)]'],
+];
+
+function sizeFor(text: string | null | undefined, sizes: Array<[number, string]>): string {
+  const length = (text ?? '').length;
+  return sizes.find(([max]) => length <= max)![1];
+}
+
 function TargetWord({ content }: { content: CardContent }) {
   return (
     <span className="flex flex-col items-center gap-1.5">
-      <span lang={content.lang} className="text-[clamp(36px,12vw,56px)] font-extrabold leading-[1.1] tracking-[-0.02em]">
+      <span lang={content.lang} className={cn('font-extrabold leading-[1.12] tracking-[-0.02em]', sizeFor(content.text, TARGET_SIZES))}>
         {content.text}
       </span>
       {content.reading && (
@@ -222,7 +239,7 @@ function Meaning({ content, big = false }: { content: CardContent; big?: boolean
   return (
     <span
       lang="vi"
-      className={cn('font-extrabold leading-tight tracking-[-0.015em]', big ? 'text-[clamp(28px,9vw,40px)]' : 'text-[clamp(22px,7vw,28px)]')}
+      className={cn('font-extrabold leading-tight tracking-[-0.015em]', big ? sizeFor(content.meaningVi, MEANING_SIZES) : 'text-[clamp(22px,7vw,28px)]')}
     >
       {content.meaningVi}
     </span>

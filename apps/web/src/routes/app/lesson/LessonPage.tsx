@@ -5,6 +5,7 @@ import { DEFAULT_TIMEZONE } from '@linguo/shared';
 import { DemoBadge, ExerciseFrame } from '@/components/exercise';
 import { lessonAiContext } from '@/components/exercise/ai-context';
 import { Button, buttonClasses } from '@/components/ui/Button';
+import { cn } from '@/lib/cn';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import type { LessonRunApi, LessonStep } from '@/features/lesson-player/types';
@@ -208,6 +209,7 @@ export function LessonPage() {
             onContinue={run.next}
             ai={lessonAiContext(lesson, exercise, run.items)}
             reportable
+            bleed
           />
         );
       } else {
@@ -266,45 +268,41 @@ export function LessonPage() {
       break;
   }
 
+  const isExercise = step.kind === 'exercise' && !footer;
   return (
     <div className="flex min-h-dvh flex-col bg-bg">
       {header}
       <main
         id="main"
-        className="mx-auto w-full max-w-xl flex-1 px-safe pb-[calc(7rem+env(safe-area-inset-bottom,0px))] pt-3 text-[17px] leading-relaxed"
+        className={cn(
+          'mx-auto flex w-full max-w-xl flex-1 flex-col px-safe pt-2 text-[17px] leading-relaxed',
+          // Content steps sit above the fixed footer; an exercise brings its own sticky bar (no extra space under it).
+          !isExercise && 'pb-[calc(7.5rem+env(safe-area-inset-bottom,0px))]',
+        )}
       >
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2 empty:hidden">
           {lesson.is_demo && <DemoBadge />}
-          {step.kind === 'exercise' && step.recheck && (
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-warn/15 px-3 py-1 text-sm font-bold ring-1 ring-warn/40 ring-inset">
-              <RotateCcw aria-hidden className="size-3.5" />
-              Làm lại câu sai
-            </span>
-          )}
+          {step.kind === 'exercise' && step.recheck && <span className="sr-only">Làm lại câu sai</span>}
         </div>
         {step.kind === 'exercise' ? (
-          <p
-            ref={titleRef}
-            tabIndex={-1}
-            aria-live="polite"
-            className="eyebrow mt-2 focus:outline-none"
-          >
+          // The header already shows "Câu n/N": keep this as the announced focus target only.
+          <p ref={titleRef} tabIndex={-1} aria-live="polite" className="sr-only">
             {stepTitle(run, step)}
           </p>
         ) : (
           <h2
             ref={titleRef}
             tabIndex={-1}
-            className="mt-2 font-display text-[clamp(34px,10vw,44px)] font-extrabold uppercase leading-[1.02] focus:outline-none"
+            className="mt-3 font-display text-[clamp(36px,11vw,46px)] font-extrabold uppercase leading-[1.08] tracking-[-0.005em] focus:outline-none"
           >
             {stepTitle(run, step)}
           </h2>
         )}
-        <div className="mt-5">{body}</div>
+        <div className={cn('flex min-w-0 flex-col', isExercise ? 'mt-3 flex-1' : 'mt-6')}>{body}</div>
       </main>
       {footer && (
-        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
-          <div className="mx-auto w-full max-w-xl px-safe py-4">{footer}</div>
+        <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
+          <div className="mx-auto w-full max-w-xl px-safe pt-3 pb-4">{footer}</div>
         </footer>
       )}
       {exitSheet}

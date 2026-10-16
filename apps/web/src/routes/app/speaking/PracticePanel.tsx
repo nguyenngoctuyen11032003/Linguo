@@ -54,12 +54,12 @@ function RatingGroup({
       <p id={hintId} className="text-sm text-muted">
         {axis.hint}
       </p>
-      <div className="flex flex-wrap gap-2">
+      <div className="grid grid-cols-3 gap-1.5 min-[380px]:gap-2">
         {([1, 2, 3] as const).map((n) => (
           <label
             key={n}
             className={cn(
-              'inline-flex min-h-11 cursor-pointer items-center rounded-full border-2 px-4 text-[15px] font-bold transition-[translate,box-shadow,background-color] active:translate-y-[2px]',
+              'flex min-h-12 min-w-0 cursor-pointer items-center justify-center rounded-[1.25rem] border-2 px-2 py-1.5 text-center text-[13px] leading-tight font-bold text-balance transition-[translate,box-shadow,background-color] active:translate-y-[2px] max-[379px]:px-1 min-[380px]:text-[15px]',
               'has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/40',
               value === n ? 'border-primary bg-primary/12 text-primary shadow-[0_3px_0_var(--primary-depth)] active:shadow-[0_1px_0_var(--primary-depth)]' : 'border-border bg-surface-solid shadow-[0_3px_0_var(--border)] hover:bg-text/5 active:shadow-[0_1px_0_var(--border)]',
             )}
@@ -258,6 +258,7 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
               variant="ghost"
               disabled={!rated || saved}
               aria-describedby={rated ? undefined : saveHintId}
+              aria-label={saved ? undefined : 'Lưu tự đánh giá trên thiết bị này'}
               onClick={() => {
                 onSaveReflection(ratings);
                 setSaved(true);
@@ -269,7 +270,9 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
                   Đã lưu
                 </>
               ) : (
-                'Lưu tự đánh giá trên thiết bị này'
+                <>
+                  Lưu tự đánh giá<span className="max-[379px]:hidden"> trên thiết bị này</span>
+                </>
               )}
             </Button>
             {!rated && (

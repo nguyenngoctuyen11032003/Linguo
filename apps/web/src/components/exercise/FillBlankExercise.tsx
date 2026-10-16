@@ -26,7 +26,7 @@ export function FillBlankExercise({ prompt, lang, values, onChange, onSubmitRequ
     .trim();
 
   return (
-    <p lang={lang} className="min-w-0 text-[20px] font-medium leading-[3.5rem] break-words">
+    <p lang={lang} className="min-w-0 text-[20px] font-medium leading-[3.5rem] break-words whitespace-pre-line">
       {parts.map((part, i) => {
         if (part.kind === 'text') return <Fragment key={i}>{part.text}</Fragment>;
         const index = blankIds.indexOf(part.id);
@@ -50,7 +50,7 @@ export function FillBlankExercise({ prompt, lang, values, onChange, onSubmitRequ
             }}
             disabled={disabled}
             style={{ width: `${width}ch` }}
-            className="mx-1 inline-block max-w-full min-h-11 align-middle px-3 leading-normal"
+            className="mx-1 inline-block h-12 max-w-full min-h-12! align-middle rounded-xl! px-3 text-[19px]! leading-normal"
           />
         );
       })}

@@ -15,7 +15,7 @@ export function AuthCard({ title, subtitle, children, footer }: AuthCardProps) {
       <div className="space-y-2.5">
         <span aria-hidden="true" className="block h-1 w-10 rounded-full bg-gradient-to-r from-primary to-accent" />
         <h1 className="page-title">{title}</h1>
-        {subtitle && <p className="max-w-sm text-[15px] leading-relaxed text-muted">{subtitle}</p>}
+        {subtitle && <p className="max-w-sm pt-1.5 text-pretty text-[15px] leading-relaxed text-muted">{subtitle}</p>}
       </div>
       <div className="relative isolate">
         <div aria-hidden="true" className="absolute -right-10 -top-10 -z-10 size-48 rounded-full bg-primary/25 blur-3xl" />

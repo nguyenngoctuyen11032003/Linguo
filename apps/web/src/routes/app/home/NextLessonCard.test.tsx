@@ -73,7 +73,7 @@ describe('NextLessonCard', () => {
     const { container, unmount } = renderWithProviders(<NextLessonCard />, { route: '/app' });
     expect(container.querySelector('section')).toBeNull();
     expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!).toHaveTextContent('Đang tải bài tiếp theo');
-    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!.parentElement).toHaveClass('min-h-48');
+    expect(screen.getByText(/Đang tải (số thẻ cần ôn|bài tiếp theo)/).closest('[role=status]')!.parentElement).toHaveClass('min-h-35');
     unmount();
     setHook({ status: 'loading', lessons: [open] });
     renderWithProviders(<NextLessonCard />, { route: '/app' });

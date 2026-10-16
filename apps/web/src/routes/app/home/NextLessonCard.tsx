@@ -26,13 +26,15 @@ export function NextLessonCard() {
   if (status === 'loading' && lessons.length === 0) {
     // Hold the card's place so the cards below do not jump when the lesson arrives.
     return (
-      <SolidCard className="min-h-48">
-        <div role="status" className="space-y-3">
+      <SolidCard className="min-h-35 p-4">
+        <div role="status" className="flex items-center gap-4">
           <span className="sr-only">Đang tải bài tiếp theo…</span>
-          <Skeleton className="block h-4 w-24" />
-          <Skeleton className="block h-6 w-56 max-w-full" />
-          <Skeleton className="block h-4 w-44 max-w-full" />
-          <Skeleton className="block h-13 w-full rounded-full" />
+          <Skeleton className="block size-16 shrink-0 rounded-full" />
+          <span className="min-w-0 flex-1 space-y-2">
+            <Skeleton className="block h-3 w-24" />
+            <Skeleton className="block h-6 w-40 max-w-full" />
+            <Skeleton className="block h-5 w-32 max-w-full rounded-full" />
+          </span>
         </div>
       </SolidCard>
     );

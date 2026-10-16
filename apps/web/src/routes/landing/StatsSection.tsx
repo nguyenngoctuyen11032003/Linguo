@@ -7,9 +7,9 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 
 /** Product facts only — never user counts or outcomes we cannot back up. */
 const STATS = [
-  { value: 2, tag: 'Ngôn ngữ', label: 'ngôn ngữ — tiếng Anh và tiếng Hàn', gold: false },
-  { value: 6, tag: 'Kỹ năng', label: 'kỹ năng theo dõi riêng: từ vựng, ngữ pháp, đọc, nghe, viết, nói', gold: false },
-  { value: 12, tag: 'Cấp độ', label: 'cấp độ mục tiêu: CEFR A1–C2 và TOPIK 1–6', gold: true },
+  { value: 2, tag: 'Ngôn ngữ', label: 'ngôn ngữ — tiếng Anh và tiếng Hàn', short: 'Tiếng Anh · Tiếng Hàn', gold: false },
+  { value: 6, tag: 'Kỹ năng', label: 'kỹ năng theo dõi riêng: từ vựng, ngữ pháp, đọc, nghe, viết, nói', short: 'Từ vựng · ngữ pháp · đọc · nghe · viết · nói', gold: false },
+  { value: 12, tag: 'Cấp độ', label: 'cấp độ mục tiêu: CEFR A1–C2 và TOPIK 1–6', short: 'CEFR A1–C2 · TOPIK 1–6', gold: true },
 ];
 
 export function StatsSection() {
@@ -45,7 +45,10 @@ export function StatsSection() {
                 <p aria-hidden="true" className={cn('font-display text-[22px] font-extrabold uppercase leading-none', s.gold ? 'text-gold' : 'text-text')}>
                   {s.tag}
                 </p>
-                <p className="mt-1.5 max-w-[16rem] text-[clamp(13px,3.6vw,16px)] leading-snug text-muted">{s.label}</p>
+                <p className="sr-only">{s.label}</p>
+                <p aria-hidden="true" className="mt-2 max-w-[16rem] text-[clamp(13px,3.6vw,15px)] leading-snug text-muted">
+                  {s.short}
+                </p>
               </div>
             </motion.li>
           ))}

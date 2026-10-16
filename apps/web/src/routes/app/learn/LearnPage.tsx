@@ -21,12 +21,19 @@ const STATUS_LABEL: Record<RunStatus, string> = {
 
 function LoadingList() {
   return (
-    <div role="status" className="space-y-3">
+    // Same rhythm as the loaded list (hero, program heading + bar, collapsed units) so nothing jumps.
+    <div role="status" className="space-y-8">
       <span className="sr-only">Đang tải bài học…</span>
-      <Skeleton className="block h-6 w-40" />
-      <Skeleton className="block h-20 w-full rounded-2xl" />
-      <Skeleton className="block h-20 w-full rounded-2xl" />
-      <Skeleton className="block h-20 w-full rounded-2xl" />
+      <Skeleton className="block h-[6.5rem] w-full rounded-[1.75rem]" />
+      <div className="space-y-3">
+        <div className="space-y-2.5">
+          <Skeleton className="block h-7 w-56 max-w-full" />
+          <Skeleton className="block h-2.5 w-full rounded-full" />
+        </div>
+        <Skeleton className="block h-20 w-full rounded-[1.75rem]" />
+        <Skeleton className="block h-20 w-full rounded-[1.75rem]" />
+        <Skeleton className="block h-20 w-full rounded-[1.75rem]" />
+      </div>
     </div>
   );
 }
@@ -324,8 +331,10 @@ export function LearnPage() {
     <div className="space-y-6">
       <div className="space-y-3">
         <h1 className="page-title">Học tập</h1>
-        {paths.current && (
+        {paths.current ? (
           <PathHeader language={paths.current.language} current={paths.current.currentLevel} target={paths.current.targetLevel} />
+        ) : (
+          paths.status === 'loading' && <Skeleton className="block h-[22px] w-44 rounded-full" />
         )}
       </div>
       {content}

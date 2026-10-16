@@ -142,10 +142,14 @@ export function AiExplainSheet({ open, onClose, request, fallback, triggerRef }:
         active={!reportOpen}
         triggerRef={triggerRef}
         title={TITLES[request.task]}
-        description={<span className="text-sm font-medium">{FEEDBACK_TASKS.has(request.task) ? AI_WRITING_LABEL : AI_LABEL}</span>}
-        headerExtra={
-          <span className="flex shrink-0 items-center gap-2">
+        description={
+          <span className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5">
+            <span className="text-sm font-medium">{FEEDBACK_TASKS.has(request.task) ? AI_WRITING_LABEL : AI_LABEL}</span>
             <AiQuotaChip quota={liveQuota} />
+          </span>
+        }
+        headerExtra={
+          <span className="-mr-2 -mt-1.5 flex shrink-0 items-center">
             <button
               type="button"
               aria-label="Đóng"

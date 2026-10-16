@@ -17,6 +17,9 @@ import { WordEditDialog } from './WordEditDialog';
 
 const PAGE_SIZE = 100;
 
+const ICON_BTN =
+  'inline-flex size-11 items-center justify-center rounded-full border border-border bg-text/[0.03] text-muted transition-[background-color,color,scale] duration-150 hover:bg-text/8 hover:text-text active:scale-95';
+
 const STATE_LABELS: Record<PersonalWord['fsrs_state'], string> = {
   new: 'Mới',
   learning: 'Đang học',
@@ -121,7 +124,7 @@ export function PersonalListPage() {
         <h1 ref={headingRef} tabIndex={-1} className="break-words page-title focus:outline-none">
           {list.name}
         </h1>
-        <p className="text-[15px] text-muted">
+        <p className="pt-2 text-[15px] text-muted">
           {language.nameVi} · {wordCount} từ{dueCount > 0 ? ` · ${dueCount} từ cần ôn hôm nay` : ''}
         </p>
         <div aria-hidden="true" className="flex gap-6 pt-3">
@@ -136,9 +139,9 @@ export function PersonalListPage() {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         {dueCount > 0 ? (
-          <Link to={`/app/tu-vung-cua-toi/${list.id}/on-tap`} className={buttonClasses('accent')}>
+          <Link to={`/app/tu-vung-cua-toi/${list.id}/on-tap`} className={cn(buttonClasses('accent', 'lg'), 'w-full sm:w-auto')}>
             <Play aria-hidden className="size-5" />
             Ôn danh sách này
           </Link>
@@ -147,14 +150,21 @@ export function PersonalListPage() {
           <FileUp aria-hidden className="size-5" />
           Nhập từ CSV
         </Button>
-        <Button ref={renameRef} variant="ghost" onClick={() => setRenaming(true)}>
-          <Pencil aria-hidden className="size-5" />
-          Đổi tên
-        </Button>
-        <Button ref={deleteRef} variant="danger" onClick={() => setDeleting(true)}>
-          <Trash2 aria-hidden className="size-5" />
-          Xoá danh sách
-        </Button>
+        <div className="ml-auto flex gap-1.5">
+          <button ref={renameRef} type="button" aria-label="Đổi tên" title="Đổi tên" onClick={() => setRenaming(true)} className={ICON_BTN}>
+            <Pencil aria-hidden className="size-5" />
+          </button>
+          <button
+            ref={deleteRef}
+            type="button"
+            aria-label="Xoá danh sách"
+            title="Xoá danh sách"
+            onClick={() => setDeleting(true)}
+            className={cn(ICON_BTN, 'hover:bg-error/10 hover:text-error-text')}
+          >
+            <Trash2 aria-hidden className="size-5" />
+          </button>
+        </div>
       </div>
 
       {words.status === 'error' && (

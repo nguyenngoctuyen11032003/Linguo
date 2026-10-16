@@ -22,10 +22,11 @@ export function DiagnosticCard({ pathId }: { pathId: string }) {
       description={
         resume
           ? 'Bài kiểm tra đang dừng giữa chừng. Làm tiếp từ câu đang chờ.'
-          : 'Khoảng 12 phút, giúp đặt trình độ lộ trình sát hơn. Bạn có thể làm sau.'
+          : 'Khoảng 12 phút, để lộ trình sát trình độ của bạn.'
       }
       to={`/app/kiem-tra/${pathId}`}
       label={resume ? 'Làm tiếp' : 'Làm bài kiểm tra'}
+      shortLabel={resume ? undefined : 'Làm bài'}
     />
   );
 }

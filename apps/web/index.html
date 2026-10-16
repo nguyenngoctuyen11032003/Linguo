@@ -12,8 +12,8 @@
       content="Lộ trình tiếng Anh và tiếng Hàn cá nhân hoá cho người Việt: nhớ lại chủ động, ôn tập ngắt quãng, phản hồi có giải thích."
     />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#F6F8FB" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0B1420" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3f1ec" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#070b12" media="(prefers-color-scheme: dark)" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="%BASE_URL%favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" href="%BASE_URL%brand/logo-mark.svg" type="image/svg+xml" />
@@ -41,6 +41,10 @@
           if (p !== 'light' && p !== 'dark' && p !== 'system') p = 'system';
           var dark = p === 'dark' || ((!p || p === 'system') && matchMedia('(prefers-color-scheme: dark)').matches);
           document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+          if (p !== 'system') {
+            var metas = document.querySelectorAll('meta[name="theme-color"]');
+            for (var i = 0; i < metas.length; i++) metas[i].content = dark ? '#070b12' : '#f3f1ec';
+          }
           if (localStorage.getItem('linguo-reduce-motion') === 'true') document.documentElement.dataset.reduceMotion = 'true';
         } catch (e) {}
         var font = document.createElement('link');

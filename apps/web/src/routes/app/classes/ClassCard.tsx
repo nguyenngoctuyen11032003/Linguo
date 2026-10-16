@@ -1,7 +1,7 @@
-import { BookOpen, GraduationCap, RotateCcw, type LucideIcon } from 'lucide-react';
+import { BookOpen, GraduationCap, LogOut, RotateCcw, type LucideIcon } from 'lucide-react';
 import { Link } from 'react-router';
 import type { AssignmentKind, LearnerAssignment, LearnerClass } from '@linguo/shared';
-import { Button, buttonClasses } from '@/components/ui/Button';
+import { buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import {
   ASSIGNMENT_KIND_LABELS,
@@ -42,8 +42,7 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
   return (
     <SolidCard>
       <section aria-labelledby={titleId} className="space-y-4">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-          <div className="flex min-w-0 flex-1 items-start gap-3">
+        <div className="flex min-w-0 items-start gap-3">
             <div className="min-w-0 flex-1 break-words">
               <h2 id={titleId} className="text-[19px] font-extrabold leading-snug tracking-[-0.02em]">
                 {klass.name}
@@ -54,20 +53,10 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
             </div>
             {assignments.length > 0 && (
               <span aria-hidden="true" className="flex shrink-0 flex-col items-end">
-                <span className={cn('stat-num text-[44px]', open > 0 ? 'text-accent-text' : 'text-success-text')}>{open}</span>
+                <span className={cn('stat-num text-[44px] leading-none', open > 0 ? 'text-accent-text' : 'text-success-text')}>{open}</span>
                 <span className="eyebrow mt-1">còn lại</span>
               </span>
             )}
-          </div>
-          <Button
-            variant="ghost"
-            onClick={(e) => onLeave(e.currentTarget)}
-            disabled={leaveDisabled}
-            aria-label={`Rời lớp ${klass.name}`}
-            className="w-full sm:w-auto sm:shrink-0"
-          >
-            Rời lớp
-          </Button>
         </div>
         {currentLanguage !== null && currentLanguage !== klass.language_code && assignments.length > 0 && (
           <p className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
@@ -81,12 +70,24 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
           {assignments.length === 0 ? (
             <p className="text-[15px] text-muted">Giáo viên chưa giao bài nào. Khi có bài mới, bài sẽ hiện ở đây.</p>
           ) : (
-            <ul className="space-y-2">
+            <ul className="-mx-1 divide-y divide-border">
               {assignments.map((a) => (
                 <AssignmentRow key={a.id} assignment={a} timeZone={timeZone} />
               ))}
             </ul>
           )}
+        </div>
+        <div className="-mb-2 flex justify-end border-t border-border pt-1">
+          <button
+            type="button"
+            onClick={(e) => onLeave(e.currentTarget)}
+            disabled={leaveDisabled}
+            aria-label={`Rời lớp ${klass.name}`}
+            className="-mr-2 inline-flex min-h-11 items-center gap-2 rounded-full px-3 text-[14px] font-semibold text-muted transition-[background-color,color,scale] duration-150 not-disabled:hover:bg-error/10 not-disabled:hover:text-error-text not-disabled:active:scale-95 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <LogOut aria-hidden className="size-4" />
+            Rời lớp
+          </button>
         </div>
       </section>
     </SolidCard>
@@ -99,16 +100,18 @@ function AssignmentRow({ assignment: a, timeZone }: { assignment: LearnerAssignm
   const action = assignmentAction(a);
   const done = a.state === 'done';
   return (
-    <li className={cn('flex flex-col gap-3 rounded-2xl p-4 ring-1 ring-inset sm:flex-row sm:items-center', a.state === 'overdue' ? 'bg-error/[0.04] ring-error/25' : 'bg-text/[0.03] ring-border')}>
+    <li className="flex flex-col gap-3 px-1 py-4 sm:flex-row sm:items-center">
       <div className="flex min-w-0 flex-1 items-start gap-3">
-        <span className={cn('inline-flex size-10 shrink-0 items-center justify-center rounded-full', done ? 'bg-success/15 text-success-text' : 'bg-primary/12 text-primary')}>
-          <Icon aria-hidden className="size-5" />
-        </span>
+        <Icon
+          aria-hidden
+          strokeWidth={1.75}
+          className={cn('mt-0.5 size-5 shrink-0', done ? 'text-success-text' : a.state === 'overdue' ? 'text-error-text' : 'text-primary')}
+        />
         <div className="min-w-0 flex-1 break-words">
           <p className="eyebrow">{ASSIGNMENT_KIND_LABELS[a.kind]}</p>
           <p className={cn('mt-0.5 font-bold leading-snug', done && 'text-muted line-through decoration-1')}>{title}</p>
           <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-            <span className={cn('rounded-full px-2.5 py-0.5 text-[13px] font-semibold', STATE_CLASSES[a.state])}>{assignmentStatus(a)}</span>
+            <span className={cn('whitespace-nowrap rounded-full px-2.5 py-0.5 text-[13px] font-semibold', STATE_CLASSES[a.state])}>{assignmentStatus(a)}</span>
             <span className="text-muted">{formatDue(a.due_at, timeZone)}</span>
           </p>
           {a.note && (
@@ -122,7 +125,7 @@ function AssignmentRow({ assignment: a, timeZone }: { assignment: LearnerAssignm
       <Link
         to={assignmentLink(a)}
         aria-label={`${action}: ${title}`}
-        className={cn(buttonClasses('ghost', 'md'), 'w-full sm:w-auto sm:shrink-0')}
+        className={cn(buttonClasses('ghost', 'md'), 'ml-8 self-start sm:ml-0 sm:self-auto sm:shrink-0')}
       >
         {action}
       </Link>

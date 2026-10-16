@@ -18,14 +18,16 @@ describe('FeedbackPanel', () => {
   });
 
   it.each([
-    ['correct', '✓', 'Chính xác'],
-    ['almost', '≈', 'Gần đúng'],
-    ['incorrect', '✗', 'Chưa đúng'],
-  ] as const)('shows %s with an icon and a text label', (verdict, icon, label) => {
+    ['correct', 'Chính xác'],
+    ['almost', 'Gần đúng'],
+    ['incorrect', 'Chưa đúng'],
+  ] as const)('shows %s with an icon and a text label', (verdict, label) => {
     renderExercise(<FeedbackPanel result={makeResult({ verdict, is_correct: verdict !== 'incorrect' })} />);
     const heading = screen.getByRole('heading', { name: label });
     expect(heading).toBeInTheDocument();
-    expect(screen.getByText(icon)).toHaveAttribute('aria-hidden', 'true');
+    const icon = document.querySelector(`[data-verdict-icon="${verdict}"]`);
+    expect(icon).toHaveAttribute('aria-hidden', 'true');
+    expect(icon?.querySelector('svg')).not.toBeNull();
   });
 
   it.each([

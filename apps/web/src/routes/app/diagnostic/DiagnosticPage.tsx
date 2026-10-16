@@ -40,8 +40,8 @@ function Shell({ header, children, footer }: { header: ReactNode; children: Reac
         {children}
       </main>
       {footer && (
-        <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
-          <div className="mx-auto w-full max-w-xl px-safe py-4">{footer}</div>
+        <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
+          <div className="mx-auto w-full max-w-xl px-safe pt-3 pb-4">{footer}</div>
         </footer>
       )}
     </div>
@@ -166,9 +166,9 @@ function Question({ item, pathLanguage, busy, nearEnd, onAnswer, onOpenSkip, ski
         </div>
       </motion.div>
       {/* Outside the animated block: a transformed ancestor would break `position: fixed`. */}
-      <footer className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/90 pb-safe backdrop-blur-md">
+      <footer className="fixed inset-x-0 bottom-0 z-30 bg-bg pb-safe before:pointer-events-none before:absolute before:inset-x-0 before:bottom-full before:h-8 before:bg-gradient-to-t before:from-bg before:to-transparent">
         {/* Below 360 px the buttons stack (primary on top) so "Tiếp tục" never wraps beside the ghost one. */}
-        <div className="mx-auto flex w-full max-w-xl flex-col-reverse gap-2 px-safe py-4 min-[360px]:flex-row min-[360px]:gap-3">
+        <div className="mx-auto flex w-full max-w-xl flex-col-reverse gap-2 px-safe pt-3 pb-4 min-[360px]:flex-row min-[360px]:gap-3">
           <Button
             variant="ghost"
             size="lg"

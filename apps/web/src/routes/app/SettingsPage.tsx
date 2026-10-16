@@ -35,10 +35,10 @@ import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_
 import { SettingsJumpList } from './settings/SettingsJumpList';
 import { timeZoneLabel, timeZoneOptions } from './settings/timezones';
 
-const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; icon: typeof Sun }> = [
+const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; short?: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
   { value: 'dark', label: 'Tối', icon: Moon },
-  { value: 'system', label: 'Theo hệ thống', icon: Monitor },
+  { value: 'system', label: 'Theo hệ thống', short: 'Hệ thống', icon: Monitor },
 ];
 
 /** Mini preview of each theme in the picker. */
@@ -224,7 +224,7 @@ export function SettingsPage() {
           {status === 'error' && <ErrorState title="Không tải được hồ sơ" onRetry={reload} />}
           {status === 'ready' && (
             <form ref={profileFormRef} noValidate onSubmit={saveProfile} className="space-y-4">
-              <div className="flex items-center gap-3 rounded-2xl bg-text/[0.04] p-3 ring-1 ring-border ring-inset">
+              <div className="flex items-center gap-3 rounded-[1.25rem] bg-text/[0.04] p-3">
                 <span
                   aria-hidden="true"
                   className="inline-flex size-12 shrink-0 rounded-full bg-[conic-gradient(from_200deg,var(--primary),var(--accent),var(--primary))] p-[2px]"
@@ -233,8 +233,11 @@ export function SettingsPage() {
                     {(displayName || user?.email || '?').trim().charAt(0).toUpperCase()}
                   </span>
                 </span>
-                <p className="min-w-0 truncate text-sm text-muted">
-                  Email: <span className="text-text">{user?.email}</span>
+                <p className="min-w-0 flex-1">
+                  <span className="eyebrow block">
+                    Email<span className="sr-only">:</span>
+                  </span>
+                  <span className="mt-0.5 block truncate text-[15px] font-medium">{user?.email}</span>
                 </p>
               </div>
               <FormField label="Tên hiển thị" error={errors.displayName}>
@@ -281,7 +284,7 @@ export function SettingsPage() {
           <fieldset>
             <legend className="mb-2 text-sm font-medium text-muted">Chủ đề màu</legend>
             <div className="grid grid-cols-3 gap-2">
-              {THEME_OPTIONS.map(({ value, label, icon: Icon }) => (
+              {THEME_OPTIONS.map(({ value, label, short, icon: Icon }) => (
                 <div key={value} className="relative">
                   <input
                     type="radio"
@@ -295,7 +298,7 @@ export function SettingsPage() {
                   <label
                     htmlFor={`theme-${value}`}
                     className={cn(
-                      'flex min-h-16 cursor-pointer flex-col items-center justify-center gap-2 rounded-2xl border p-2 pb-2.5 text-center text-sm font-semibold',
+                      'flex min-h-16 cursor-pointer flex-col items-center justify-center gap-2 rounded-[1.25rem] border p-1.5 pb-2.5 text-center text-[13px] font-semibold leading-tight whitespace-nowrap min-[380px]:p-2 transition-[background-color,border-color,scale] duration-150 active:scale-[0.97] min-[380px]:text-sm',
                       'border-border hover:bg-text/5 peer-checked:border-primary peer-checked:bg-primary/12 peer-checked:text-primary',
                       'peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-(--focus-ring)',
                     )}
@@ -304,9 +307,16 @@ export function SettingsPage() {
                       <span className="absolute inset-x-2 top-2 h-2 rounded-full bg-current opacity-25" />
                       <span className="absolute bottom-2 left-2 h-3 w-8 rounded-full bg-[#f37d25]" />
                     </span>
-                    <span className="inline-flex items-center gap-1">
-                      <Icon aria-hidden className="size-4" />
-                      {label}
+                    <span className="inline-flex min-h-5 items-center gap-1.5">
+                      <Icon aria-hidden className="size-4 max-[379px]:hidden" />
+                      {short ? (
+                        <>
+                          <span className="sr-only">{label}</span>
+                          <span aria-hidden="true">{short}</span>
+                        </>
+                      ) : (
+                        label
+                      )}
                     </span>
                   </label>
                 </div>

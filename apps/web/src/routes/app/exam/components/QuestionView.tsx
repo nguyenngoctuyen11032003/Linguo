@@ -45,6 +45,7 @@ export function QuestionView({ question, language, listenLimit, onAnswer, onTogg
         <button
           type="button"
           aria-pressed={question.flagged}
+          aria-label="Đánh dấu xem lại"
           onClick={onToggleFlag}
           className={cn(
             'inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-3 text-sm font-semibold transition-colors',
@@ -53,7 +54,9 @@ export function QuestionView({ question, language, listenLimit, onAnswer, onTogg
           )}
         >
           <Flag aria-hidden className={cn('size-4', question.flagged && 'fill-current text-gold')} />
-          Đánh dấu xem lại
+          <span>
+            Đánh dấu<span className="max-[379px]:hidden"> xem lại</span>
+          </span>
         </button>
       </header>
 
@@ -81,7 +84,15 @@ export function QuestionView({ question, language, listenLimit, onAnswer, onTogg
         </div>
       )}
 
-      <p id={stemId} lang={prompt.stem_lang} className="text-[18px] font-semibold leading-snug break-words whitespace-pre-line">
+      <p
+        id={stemId}
+        lang={prompt.stem_lang}
+        className={cn(
+          'break-words whitespace-pre-line',
+          // A long task card (writing prompts) reads as body text; a short question stays a bold headline.
+          prompt.stem.length > 140 ? 'text-[16px] font-medium leading-relaxed' : 'text-[18px] font-semibold leading-snug',
+        )}
+      >
         {prompt.stem}
       </p>
 

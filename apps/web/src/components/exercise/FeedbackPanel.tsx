@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode, type RefObject } from 'react';
-import { HelpCircle, Sparkles } from 'lucide-react';
+import { Check, EqualApproximately, HelpCircle, Sparkles, X, type LucideIcon } from 'lucide-react';
 import { m as motion } from 'motion/react';
 import type { AnswerLang, ReportTargetKind, SubmitResult, Verdict } from '@linguo/shared';
 import { AiExplainSheet } from '@/components/ai';
@@ -12,23 +12,23 @@ import { feedbackAiRequests, type AiSheetState, type ExerciseAiInput } from './a
 import { ERROR_TAG_MESSAGES } from './exercise-utils';
 import { JAPANESE_SCRIPT_RE } from './machine-speech';
 
-const VERDICT_UI: Record<Verdict, { icon: string; label: string; tone: string; iconTone: string; titleTone: string }> = {
+const VERDICT_UI: Record<Verdict, { icon: LucideIcon; label: string; tone: string; iconTone: string; titleTone: string }> = {
   correct: {
-    icon: '✓',
+    icon: Check,
     label: 'Chính xác',
     tone: 'border-success/45 bg-success/12 shadow-[0_4px_0_color-mix(in_srgb,var(--success)_35%,transparent)]',
     iconTone: 'bg-success text-bg shadow-[0_3px_0_color-mix(in_srgb,var(--success)_55%,black)]',
     titleTone: 'text-success-text',
   },
   almost: {
-    icon: '≈',
+    icon: EqualApproximately,
     label: 'Gần đúng',
     tone: 'border-warn/55 bg-warn/12 shadow-[0_4px_0_color-mix(in_srgb,var(--warn)_35%,transparent)]',
     iconTone: 'bg-warn text-on-warn shadow-[0_3px_0_color-mix(in_srgb,var(--warn)_55%,black)]',
     titleTone: 'text-text',
   },
   incorrect: {
-    icon: '✗',
+    icon: X,
     label: 'Chưa đúng',
     tone: 'border-error/45 bg-error/10 shadow-[0_4px_0_color-mix(in_srgb,var(--error)_35%,transparent)]',
     iconTone: 'bg-error text-bg shadow-[0_3px_0_color-mix(in_srgb,var(--error)_55%,black)]',
@@ -73,10 +73,11 @@ export function FeedbackPanel({ result, className, ai, report, answerLang }: Fee
           <FeedbackCard key={result.attempt_id} result={result} reduceMotion={reduceMotion} headingRef={headingRef} answerLang={answerLang} />
         )}
       </div>
-      {result && ai && <FeedbackAiActions key={result.attempt_id} result={result} ai={ai} />}
-      {result && report && (
-        <div className="mt-3">
-          <ReportContentButton targetKind={report.kind} targetId={report.id} />
+      {result && (ai || report) && (
+        // Secondary actions share one wrapping row instead of a tall stack of pills.
+        <div className="mt-3 flex flex-wrap gap-2">
+          {ai && <FeedbackAiActions key={result.attempt_id} result={result} ai={ai} />}
+          {report && <ReportContentButton targetKind={report.kind} targetId={report.id} className="px-4!" />}
         </div>
       )}
     </div>
@@ -98,18 +99,16 @@ function FeedbackAiActions({ result, ai }: { result: SubmitResult; ai: ExerciseA
 
   return (
     <>
-      <div className="mt-3 flex flex-wrap gap-2">
-        {why && (
-          <Button variant="ghost" onClick={() => show(why)}>
-            <HelpCircle aria-hidden className="size-5" />
-            Vì sao?
-          </Button>
-        )}
-        <Button variant="ghost" onClick={() => show(explain)}>
-          <Sparkles aria-hidden className="size-5" />
-          Giải thích AI
+      {why && (
+        <Button variant="ghost" className="px-4!" onClick={() => show(why)}>
+          <HelpCircle aria-hidden className="size-4" />
+          Vì sao?
         </Button>
-      </div>
+      )}
+      <Button variant="ghost" className="px-4!" onClick={() => show(explain)}>
+        <Sparkles aria-hidden className="size-4" />
+        Giải thích AI
+      </Button>
       {sheet && <AiExplainSheet open={open} onClose={() => setOpen(false)} request={sheet.request} fallback={sheet.fallback} />}
     </>
   );
@@ -140,6 +139,7 @@ function FeedbackCard({
   answerLang?: AnswerLang;
 }) {
   const ui = VERDICT_UI[result.verdict];
+  const Icon = ui.icon;
   const tagMessages = result.error_tags.map((tag) => ERROR_TAG_MESSAGES[tag]).filter((m): m is string => Boolean(m));
   const canRetry = result.verdict === 'incorrect' && !result.final;
 
@@ -149,19 +149,24 @@ function FeedbackCard({
       variants={reveal('fadeUp', reduceMotion)}
       initial="hidden"
       animate="shown"
-      className={cn('min-w-0 rounded-[1.75rem] border-2 p-5 break-words', ui.tone)}
+      className={cn('min-w-0 rounded-[1.5rem] border-2 p-4 break-words min-[360px]:p-5', ui.tone)}
     >
       <div className="flex items-center gap-3.5">
-        <span
+        {/* A short spring pop on the badge: the "ding" moment, skipped with reduced motion. */}
+        <motion.span
           aria-hidden="true"
-          className={cn('inline-flex size-12 shrink-0 items-center justify-center rounded-full text-2xl font-black', ui.iconTone)}
+          data-verdict-icon={result.verdict}
+          initial={reduceMotion ? false : { scale: 0.4, rotate: result.verdict === 'incorrect' ? 0 : -20 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: 'spring', stiffness: 520, damping: 18, delay: 0.05 }}
+          className={cn('inline-flex size-11 shrink-0 items-center justify-center rounded-full', ui.iconTone)}
         >
-          {ui.icon}
-        </span>
+          <Icon className="size-6" strokeWidth={3.25} />
+        </motion.span>
         <h3
           ref={headingRef}
           tabIndex={-1}
-          className={cn('font-display text-[30px] font-extrabold uppercase leading-none tracking-[0.005em] focus:outline-none', ui.titleTone)}
+          className={cn('pt-[0.08em] font-display text-[30px] font-extrabold uppercase leading-none tracking-[0.005em] focus:outline-none', ui.titleTone)}
         >
           {ui.label}
         </h3>

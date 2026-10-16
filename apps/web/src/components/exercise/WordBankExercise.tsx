@@ -61,18 +61,19 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
 
   return (
     <div className="min-w-0">
-      <p className="mb-5 text-[19px] font-bold leading-snug break-words">{prompt.instruction}</p>
+      <p className="mb-5 text-[21px] font-extrabold leading-[1.3] tracking-[-0.015em] break-words">{prompt.instruction}</p>
       <p id={answerLabel} className="sr-only">
         Câu trả lời của bạn
       </p>
+      {/* Ruled answer lines, one per token row: 6px top + 3rem token + 4px ledge = 3.625rem = 3rem token + 10px row gap. */}
       <div
         ref={answerRef}
         role="group"
         aria-labelledby={answerLabel}
         lang={lang}
-        className="flex min-h-[7.5rem] min-w-0 flex-wrap content-start gap-2 rounded-[1.25rem] bg-[repeating-linear-gradient(to_bottom,transparent_0,transparent_3.6rem,var(--border)_3.6rem,var(--border)_calc(3.6rem+2px))] px-1 pt-1.5 pb-3"
+        className="flex min-h-[7.5rem] min-w-0 flex-wrap content-start gap-x-2 gap-y-2.5 bg-[repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3.625rem-2px),var(--border)_calc(3.625rem-2px),var(--border)_3.625rem)] pt-1.5 pb-2"
       >
-        {tokenIds.length === 0 && <span className="self-center px-2 text-[15px] text-muted">Chạm vào các thẻ bên dưới để ghép câu</span>}
+        {tokenIds.length === 0 && <span className="flex min-h-12 items-center px-1 text-[14px] text-muted">Chạm vào các thẻ bên dưới để ghép câu</span>}
         {tokenIds.map((id, i) => {
           const text = byId.get(id)?.text ?? id;
           return (
@@ -89,7 +90,7 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
           );
         })}
       </div>
-      <div role="group" aria-label="Các thẻ từ" lang={lang} className="mt-6 flex min-w-0 flex-wrap justify-center gap-2.5 pb-1">
+      <div role="group" aria-label="Các thẻ từ" lang={lang} className="mt-7 flex min-w-0 flex-wrap justify-center gap-x-2 gap-y-2.5 pb-1">
         {bank.map((token) => {
           const used = placed.has(token.id);
           return (
@@ -107,7 +108,8 @@ export function WordBankExercise({ prompt, lang, seed, tokenIds, onChange, disab
               className={cn(
                 tokenClasses,
                 'border-border bg-surface-solid shadow-[0_4px_0_var(--border)] not-disabled:hover:bg-text/[0.03] not-disabled:active:shadow-[0_1px_0_var(--border)]',
-                used && 'invisible',
+                // A used token leaves a sunken slot of its own size, so the bank never reflows or looks gappy.
+                used && 'border-transparent bg-text/[0.07] text-transparent shadow-none',
               )}
             >
               {token.text}

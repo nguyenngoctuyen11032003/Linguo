@@ -16,7 +16,7 @@ export function NotFoundPage() {
           <span className="text-xs font-semibold uppercase tracking-[0.08em]">Lạc đường</span>
         </div>
         <h1 className="page-title mt-2">Không tìm thấy trang</h1>
-        <p className="mt-2 max-w-sm text-[15px] text-muted">Đường dẫn có thể đã thay đổi hoặc không còn tồn tại.</p>
+        <p className="mt-3.5 max-w-sm text-pretty text-[15px] leading-relaxed text-muted">Đường dẫn có thể đã thay đổi hoặc không còn tồn tại.</p>
         <Link to="/" className={cn(buttonClasses('accent', 'lg', true), 'mt-7')}>
           Về trang chủ
         </Link>

@@ -59,9 +59,12 @@ function SkillCard({ row }: { row: SkillRow }) {
         </div>
         {estimated ? (
           <div className="mt-3 space-y-3">
-            <p>
-              <span className="stat-num text-[48px] text-gradient-fade pr-1">{levelLabel(row.level_code)}</span>
-              {range && <span className="ml-2 text-[14px] font-semibold text-muted">khoảng {range}</span>}
+            <p className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
+              {/* A level code ("B1") is the big numeral; a worded level ("Mới bắt đầu") steps down so it stays on one line. */}
+              <span className={cn('stat-num pr-1 text-gradient-fade', levelLabel(row.level_code).length <= 4 ? 'text-[48px]' : 'text-[34px]')}>
+                {levelLabel(row.level_code)}
+              </span>
+              {range && <span className="text-[14px] font-semibold text-muted">khoảng {range}</span>}
             </p>
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
               {row.confidence && <ConfidenceChip confidence={row.confidence} />}

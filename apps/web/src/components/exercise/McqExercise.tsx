@@ -17,7 +17,7 @@ export function McqExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & { p
   const options = useOrderedOptions(prompt.options, prompt.shuffle, seed);
   return (
     <div className="min-w-0">
-      <p id={stemId} lang={prompt.stem_lang} className="mb-5 text-[20px] font-bold leading-snug break-words">
+      <p id={stemId} lang={prompt.stem_lang} className="mb-5 text-[22px] font-extrabold leading-[1.3] tracking-[-0.015em] break-words">
         {prompt.stem}
       </p>
       <ChoiceGroup labelledBy={stemId} options={options} {...rest} />

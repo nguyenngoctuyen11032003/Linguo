@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { StaffRole } from '@linguo/shared';
 import { ArrowLeft, BarChart3, BookOpen, Flag, LayoutDashboard, Library, ScrollText, Users, type LucideIcon } from 'lucide-react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router';
+import { Wordmark } from '@/components/layout/Wordmark';
 import { breakOutOfFrame, isFramed } from '@/features/admin/frame-guard';
 import { STAFF_ROLE_LABELS_VI, hasStaffRole } from '@/features/admin/service';
 import { useAdminRole } from '@/features/admin/useStaffRole';
@@ -100,15 +101,17 @@ export function AdminLayout() {
       </a>
       <header className="sticky top-0 z-30 border-b border-border bg-surface-solid pt-safe">
         <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-safe">
-          <Link to="/quan-tri" className="inline-flex min-h-11 items-center gap-2 font-bold tracking-[-0.02em]">
-            <span>Linguo</span>
-            <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-sm font-semibold text-text">Quản trị</span>
+          <Link to="/quan-tri" className="inline-flex min-h-11 min-w-0 items-center gap-2">
+            <Wordmark compact size={24} />
+            <span className="rounded-full bg-accent/15 whitespace-nowrap px-2.5 py-0.5 text-xs font-bold uppercase tracking-[0.08em] text-accent-text ring-1 ring-accent/30 ring-inset">Quản trị</span>
           </Link>
           <div className="flex items-center gap-3 text-sm">
             {role && <span className="hidden text-muted sm:inline">{STAFF_ROLE_LABELS_VI[role]}</span>}
-            <Link to="/app" className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-3 font-medium text-muted hover:bg-text/5 hover:text-text">
+            <Link to="/app" aria-label="Về ứng dụng" className="inline-flex min-h-11 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-3 font-medium text-muted hover:bg-text/5 hover:text-text">
               <ArrowLeft aria-hidden className="size-4" />
-              Về ứng dụng
+              <span aria-hidden="true">
+                Về<span className="hidden sm:inline"> ứng dụng</span>
+              </span>
             </Link>
           </div>
         </div>

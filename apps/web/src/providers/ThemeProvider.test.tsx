@@ -37,4 +37,21 @@ describe('ThemeProvider', () => {
     expect(document.documentElement.dataset.theme).toBe('dark');
     expect(localStorage.getItem('linguo-theme')).toBe('dark');
   });
+
+  it('points both theme-color metas at the chosen theme, and back to per-scheme colours for "system"', () => {
+    document.head.innerHTML =
+      '<meta name="theme-color" content="" media="(prefers-color-scheme: light)"><meta name="theme-color" content="" media="(prefers-color-scheme: dark)">';
+    const contents = () => [...document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')].map((m) => m.content);
+    stubMatchMedia(() => false);
+    localStorage.removeItem('linguo-theme');
+    render(
+      <ThemeProvider>
+        <Probe />
+      </ThemeProvider>,
+    );
+    expect(contents()).toEqual(['#f3f1ec', '#070b12']);
+    act(() => screen.getByText('dark').click());
+    expect(contents()).toEqual(['#070b12', '#070b12']);
+    document.head.innerHTML = '';
+  });
 });

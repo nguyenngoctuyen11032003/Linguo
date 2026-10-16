@@ -64,7 +64,7 @@ export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
               key={key}
               aria-label={label}
               className={cn(
-                'flex min-w-0 flex-col items-center gap-2 rounded-2xl p-2.5 pt-3 text-center',
+                'flex min-w-0 flex-col items-center gap-2 rounded-2xl px-1.5 pb-2.5 pt-3 text-center min-[380px]:px-2.5',
                 date ? 'bg-gold/10 ring-1 ring-gold/30 ring-inset' : 'bg-text/[0.03]',
               )}
             >
@@ -82,7 +82,7 @@ export function BadgeGrid({ badges }: { badges: Motivation['badges'] }) {
               <div className="min-w-0">
                 <p className={cn('text-[13px] font-bold leading-tight', !date && 'text-muted')}>{info.title_vi}</p>
                 {date ? (
-                  <p className="mt-0.5 text-xs text-muted">Đã đạt ngày {formatDay(date, timeZone)}</p>
+                  <p className="mt-0.5 text-xs tabular-nums text-muted">Đã đạt ngày {formatDay(date, timeZone)}</p>
                 ) : (
                   <p className="mt-0.5 line-clamp-2 text-xs leading-snug text-muted">
                     <span className="sr-only">Chưa đạt · </span>

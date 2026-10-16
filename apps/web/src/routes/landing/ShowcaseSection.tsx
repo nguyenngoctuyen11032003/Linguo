@@ -17,7 +17,7 @@ const TABS = [
 function PhonePreview() {
   return (
     <div data-theme="dark" className="relative flex h-full flex-col bg-bg bg-[image:var(--ambient)] text-text">
-      <div className="flex h-24 items-end justify-between px-5 pb-3">
+      <div className="flex h-[7.5rem] items-end justify-between px-5 pb-3">
         <span className="inline-flex items-center gap-2 font-display text-[24px] font-extrabold uppercase">
           <img src={asset('brand/logo-mark.svg')} alt="" className="size-7" />
           Linguo
@@ -54,6 +54,15 @@ function PhonePreview() {
             <span className="block text-[13px] text-muted">Chưa có thẻ đến hạn</span>
           </span>
         </div>
+        <div className="card flex items-end justify-between p-4">
+          <span>
+            <span className="eyebrow block">Mục tiêu hôm nay</span>
+            <span className="mt-1 block text-[13px] text-muted">Đặt sau khi tạo lộ trình</span>
+          </span>
+          <span className="stat-num text-[44px] leading-none">
+            15<span className="ml-1 text-[18px] text-muted">phút</span>
+          </span>
+        </div>
       </div>
       <div className="absolute inset-x-3 bottom-6">
         <div className="glass grid grid-cols-5 rounded-[1.75rem] px-1 py-1 shadow-[var(--shadow-dock)]">
@@ -85,13 +94,13 @@ function PhoneFrame() {
     return () => ro.disconnect();
   }, []);
   return (
-    <div className="relative aspect-[393/852] w-[min(300px,72vw)] rounded-[54px] border-8 border-[#2a2a2a] bg-[#1a1a1a] shadow-[0_40px_80px_rgb(0_0_0/0.45),inset_0_0_0_1px_#3a3a3a] min-[900px]:w-[min(340px,30vw)]">
+    <div className="relative aspect-[393/852] w-[min(300px,78vw)] rounded-[54px] border-8 border-[#2a2a2a] bg-[#1a1a1a] shadow-[0_40px_80px_rgb(0_0_0/0.45),inset_0_0_0_1px_#3a3a3a] min-[900px]:w-[min(340px,30vw)]">
       <div ref={screenRef} className="absolute inset-0 overflow-hidden rounded-[46px]">
-        <div aria-hidden="true" className="absolute left-1/2 top-[11px] z-10 h-9 w-[126px] -translate-x-1/2 rounded-[20px] bg-black" />
+        <div aria-hidden="true" className="absolute left-1/2 top-[1.3%] z-10 h-[4.2%] w-[32%] -translate-x-1/2 rounded-full bg-black" />
         <div style={{ width: SCREEN_W, height: `${100 / scale}%`, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
           <PhonePreview />
         </div>
-        <div aria-hidden="true" className="absolute bottom-2 left-1/2 h-[5px] w-[134px] -translate-x-1/2 rounded-full bg-white/30" />
+        <div aria-hidden="true" className="absolute bottom-[1%] left-1/2 h-[5px] w-[34%] -translate-x-1/2 rounded-full bg-white/30" />
       </div>
     </div>
   );
@@ -109,9 +118,12 @@ export function ShowcaseSection() {
       <div className="mx-auto grid max-w-5xl items-center gap-10 min-[900px]:grid-cols-2 min-[900px]:gap-12">
         <div className="space-y-4">
           <h2 id="showcase-title" className="font-display text-[clamp(44px,12vw,72px)] font-extrabold uppercase leading-[0.95]">
-            Thiết kế cho <span className="text-primary">điện thoại</span> trước tiên
+            <span className="block">Thiết kế</span> <span className="block whitespace-nowrap">
+              cho <span className="text-primary">điện thoại</span>
+            </span>{' '}
+            <span className="block">trước tiên</span>
           </h2>
-          <p className="max-w-md text-[17px] leading-relaxed text-muted">
+          <p className="max-w-md pt-2 text-[17px] leading-relaxed text-muted">
             Mở trên trình duyệt iPhone hoặc Android là học được ngay — bố cục tràn viền, chừa đúng tai thỏ và thanh điều hướng,
             chế độ sáng/tối và giảm chuyển động.
           </p>

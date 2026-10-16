@@ -54,7 +54,7 @@ export function TodayCard({ pathId }: { pathId: string }) {
 
   if (status === 'loading') {
     return (
-      <SolidCard className="min-h-64">
+      <SolidCard className="min-h-[21.25rem] rounded-[2rem]">
         <div role="status" className="space-y-3">
           <span className="sr-only">Đang tải phiên học hôm nay…</span>
           <Skeleton className="block h-4 w-24" />
@@ -179,12 +179,12 @@ export function TodayCard({ pathId }: { pathId: string }) {
         </div>
       )}
 
-      <div className="mt-5 flex items-center gap-2">
+      <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1">
         <Link
           to={SESSION_PAGE_PATH}
-          className="press-accent inline-flex min-h-13 min-w-0 flex-1 items-center justify-between gap-3 rounded-full bg-accent py-1.5 pl-5 pr-1.5 text-[16px] font-bold text-on-accent transition-[translate,box-shadow,filter] duration-150 hover:brightness-110"
+          className="press-accent inline-flex min-h-13 min-w-0 flex-1 basis-56 items-center justify-between gap-2 rounded-full bg-accent py-1.5 pl-4 pr-1.5 text-[15px] font-bold text-on-accent min-[380px]:gap-3 min-[380px]:pl-5 min-[380px]:text-[16px] transition-[translate,box-shadow,filter] duration-150 hover:brightness-110"
         >
-          <span className="min-w-0">{step ? `Tiếp tục phiên (${step.finished}/${step.total})` : 'Bắt đầu phiên học'}</span>
+          <span className="min-w-0 truncate">{step ? `Tiếp tục phiên (${step.finished}/${step.total})` : 'Bắt đầu phiên học'}</span>
           <span aria-hidden="true" className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-[#0b1420] text-white">
             <ArrowRight className="size-5" />
           </span>

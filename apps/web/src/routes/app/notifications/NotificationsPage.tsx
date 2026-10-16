@@ -10,11 +10,11 @@ import { formatRelativeTimeVi } from '@/features/notifications/format';
 import { useNotifications } from '@/features/notifications/useNotifications';
 import { cn } from '@/lib/cn';
 
-const KIND_META: Record<NotificationKind, { icon: LucideIcon; label: string }> = {
-  review_due: { icon: Layers, label: 'Ôn tập' },
-  resume_lesson: { icon: PlayCircle, label: 'Học tiếp' },
-  quick_check: { icon: Zap, label: 'Kiểm tra nhanh' },
-  weekly_summary: { icon: BarChart3, label: 'Báo cáo tuần' },
+const KIND_META: Record<NotificationKind, { icon: LucideIcon; label: string; tone: string }> = {
+  review_due: { icon: Layers, label: 'Ôn tập', tone: 'bg-primary/12 text-primary' },
+  resume_lesson: { icon: PlayCircle, label: 'Học tiếp', tone: 'bg-accent/12 text-accent-text' },
+  quick_check: { icon: Zap, label: 'Kiểm tra nhanh', tone: 'bg-gold/15 text-text' },
+  weekly_summary: { icon: BarChart3, label: 'Báo cáo tuần', tone: 'bg-success/12 text-success-text' },
 };
 
 /** action_url is always an internal /app/ path (contract); anything else falls back to Home. */
@@ -45,18 +45,17 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
         data-notification-id={item.id}
         onClick={() => onOpen(item)}
         className={cn(
-          'flex min-h-11 w-full items-start gap-3 rounded-[1.25rem] px-3 py-3 text-left transition-[background-color,scale] hover:bg-text/5 active:scale-[0.99]',
+          'flex min-h-11 w-full items-start gap-3 rounded-[1.25rem] px-3 py-3.5 text-left transition-[background-color,scale] duration-150 hover:bg-text/5 active:scale-[0.99]',
           'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
-          unread && 'bg-primary/8',
         )}
       >
         <span
           className={cn(
             'relative mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-full',
-            unread ? 'bg-gradient-to-br from-primary to-primary-strong text-on-primary shadow-[0_6px_16px_-6px_var(--primary)]' : 'bg-text/8 text-muted',
+            unread ? meta.tone : 'bg-text/6 text-muted',
           )}
         >
-          <Icon aria-hidden className="size-5" />
+          <Icon aria-hidden className="size-5" strokeWidth={1.75} />
           {unread && (
             // A dot on the icon instead of a word beside the title, so a long title keeps the full row width at 320 px.
             <span
@@ -67,12 +66,12 @@ function NotificationRow({ item, onOpen }: { item: AppNotification; onOpen: (ite
           )}
         </span>
         <span className="min-w-0 flex-1">
-          <span className={cn('block text-[15px] leading-snug', unread ? 'font-bold' : 'font-medium')}>
+          <span className={cn('block text-[15px] leading-snug', unread ? 'font-bold' : 'font-medium text-muted')}>
             {item.title_vi}
             {unread && <span className="sr-only"> — Chưa đọc</span>}
           </span>
           <span className="mt-0.5 block text-[13px] leading-snug text-muted">{item.body_vi}</span>
-          <span className="mt-1 block text-xs font-semibold text-muted">
+          <span className="mt-1.5 block text-xs font-semibold text-muted">
             <span className="sr-only">{meta.label} · </span>
             <time dateTime={item.created_at}>{formatRelativeTimeVi(item.created_at)}</time>
           </span>
@@ -160,7 +159,7 @@ export function NotificationsPage() {
   return (
     <div className="space-y-6">
       <Title unread={items.filter((i) => !i.read_at).length} />
-      <ul ref={listRef} aria-label="Danh sách thông báo" className="card space-y-1 p-2">
+      <ul ref={listRef} aria-label="Danh sách thông báo" className="card divide-y divide-border px-1.5 py-1">
         {items.map((item) => (
           <NotificationRow key={item.id} item={item} onOpen={open} />
         ))}

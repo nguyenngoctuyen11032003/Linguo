@@ -1,12 +1,12 @@
 import { ArrowLeft, Presentation } from 'lucide-react';
 import { Link, Outlet } from 'react-router';
+import { Wordmark } from '@/components/layout/Wordmark';
 import { buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { Spinner } from '@/components/ui/Spinner';
 import { RequireAuth } from '@/features/auth/guards';
 import { useIsTeacher } from '@/features/teacher/useIsTeacher';
-import { asset } from '@/lib/asset';
 
 /**
  * `/giao-vien` (PRD P2 "Công cụ giáo viên"): signed-in users with a teacher profile. Its own light shell (no learner
@@ -28,9 +28,8 @@ function TeacherLayout() {
       </a>
       <header className="glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-2 px-safe">
-          <Link to="/giao-vien" className="inline-flex min-h-11 min-w-0 items-center gap-2 font-bold tracking-[-0.02em]">
-            <img src={asset('brand/logo-mark.svg')} alt="" width={28} height={28} className="size-7 shrink-0" />
-            <span>Linguo</span>
+          <Link to="/giao-vien" aria-label="Linguo — khu vực giáo viên" className="inline-flex min-h-11 min-w-0 items-center gap-2">
+            <Wordmark compact />
             <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-bold uppercase tracking-[0.08em] text-accent-text ring-1 ring-accent/30 ring-inset">Giáo viên</span>
           </Link>
           <Link to="/app" className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full px-3 text-sm font-medium text-muted hover:bg-text/5 hover:text-text">

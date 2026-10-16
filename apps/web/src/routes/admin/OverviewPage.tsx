@@ -37,8 +37,8 @@ function summarize(overview: AdminOverview) {
 function Metric({ label, value, hint }: { label: string; value: string; hint?: string }) {
   return (
     <SolidCard className="p-4">
-      <dt className="text-sm text-muted">{label}</dt>
-      <dd className="mt-1 text-[28px] font-bold leading-tight tracking-[-0.02em]">{value}</dd>
+      <dt className="text-[13px] leading-snug text-muted">{label}</dt>
+      <dd className="stat-num mt-2 text-[40px] leading-none">{value}</dd>
       {hint && <dd className="mt-1 text-sm text-muted">{hint}</dd>}
     </SolidCard>
   );

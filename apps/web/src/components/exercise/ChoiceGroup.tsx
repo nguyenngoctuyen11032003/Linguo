@@ -1,5 +1,5 @@
 import { useEffect, useRef, type KeyboardEvent } from 'react';
-import { Check, CornerDownRight } from 'lucide-react';
+import { Check, CornerDownRight, X } from 'lucide-react';
 import { cn } from '@/lib/cn';
 import type { ChoiceOption } from './exercise-utils';
 
@@ -18,6 +18,22 @@ export interface ChoiceGroupProps {
   disabled?: boolean;
   marks?: ChoiceMarks | null;
 }
+
+type Tone = 'idle' | 'checked' | 'correct' | 'wrong';
+
+const CHOICE_TONE: Record<Tone, string> = {
+  idle: 'border-border bg-surface-solid shadow-[0_4px_0_var(--border)] not-disabled:hover:bg-text/[0.03] not-disabled:active:shadow-[0_1px_0_var(--border)]',
+  checked: 'border-primary bg-primary/10 shadow-[0_4px_0_var(--primary)] not-disabled:active:shadow-[0_1px_0_var(--primary)]',
+  correct: 'border-success bg-success/12 shadow-[0_4px_0_var(--success)]',
+  wrong: 'border-error bg-error/10 shadow-[0_4px_0_var(--error)]',
+};
+
+const KEY_TONE: Record<Tone, string> = {
+  idle: 'border-border text-muted',
+  checked: 'border-primary bg-primary text-on-primary',
+  correct: 'border-success bg-success text-bg',
+  wrong: 'border-error bg-error text-bg',
+};
 
 function isTypingTarget(target: EventTarget | null): boolean {
   return target instanceof HTMLElement && (target.isContentEditable || target.matches('input, textarea, select'));
@@ -65,11 +81,13 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
   };
 
   return (
-    <div ref={groupRef} role="radiogroup" aria-labelledby={labelledBy} onKeyDown={onKeyDown} className="grid min-w-0 gap-3 pb-1">
+    <div ref={groupRef} role="radiogroup" aria-labelledby={labelledBy} onKeyDown={onKeyDown} className="grid min-w-0 auto-rows-fr gap-3 pb-1">
       {options.map((option, i) => {
         const checked = option.id === selectedId;
         const chosen = marks?.chosenId === option.id;
         const correct = marks?.correctText != null && marks.correctText.trim() === option.text.trim();
+        // One tone per option: graded marks win over the plain selection.
+        const tone = correct ? 'correct' : chosen ? 'wrong' : checked ? 'checked' : 'idle';
         return (
           <button
             key={option.id}
@@ -86,23 +104,17 @@ export function ChoiceGroup({ labelledBy, options, selectedId, onSelect, disable
               'flex min-h-16 w-full min-w-0 items-center gap-3.5 rounded-[1.25rem] border-2 px-4 py-3 text-left',
               'transition-[translate,box-shadow,background-color,border-color] duration-150 not-disabled:active:translate-y-[3px]',
               'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 disabled:cursor-default',
-              checked
-                ? 'border-primary bg-primary/10 shadow-[0_4px_0_var(--primary)] not-disabled:active:shadow-[0_1px_0_var(--primary)]'
-                : 'border-border bg-surface-solid shadow-[0_4px_0_var(--border)] not-disabled:hover:bg-text/[0.03] not-disabled:active:shadow-[0_1px_0_var(--border)]',
-              chosen && !correct && 'border-error bg-error/10 shadow-[0_4px_0_var(--error)]',
-              correct && 'border-success bg-success/10 shadow-[0_4px_0_var(--success)]',
+              CHOICE_TONE[tone],
             )}
           >
             <span
               aria-hidden="true"
               className={cn(
                 'inline-flex size-8 shrink-0 items-center justify-center rounded-[0.65rem] border-2 text-sm font-bold tabular-nums',
-                checked ? 'border-primary bg-primary text-on-primary' : 'border-border text-muted',
-                chosen && !correct && 'border-error bg-error text-bg',
-                correct && 'border-success bg-success text-bg',
+                KEY_TONE[tone],
               )}
             >
-              {correct ? <Check className="size-4" strokeWidth={3} /> : i + 1}
+              {tone === 'correct' ? <Check className="size-4" strokeWidth={3} /> : tone === 'wrong' ? <X className="size-4" strokeWidth={3} /> : i + 1}
             </span>
             <span className="min-w-0 flex-1 break-words">
               <span lang={option.lang} className="block text-[17px] font-semibold leading-snug">

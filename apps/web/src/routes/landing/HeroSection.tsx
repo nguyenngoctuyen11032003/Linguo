@@ -52,12 +52,12 @@ export function HeroSection() {
           </span>
           Tiếng Anh · Tiếng Hàn
         </motion.p>
-        <h1 id="hero-title" className="font-display text-[clamp(52px,15vw,136px)] font-extrabold uppercase leading-[0.9] tracking-[-0.01em]">
-          <motion.span className="block" variants={reveal('slideLeft', reduceMotion, 0)} initial="hidden" animate={state}>
+        <h1 id="hero-title" className="font-display text-[clamp(40px,14vw,136px)] font-extrabold uppercase leading-[0.92] tracking-[-0.01em]">
+          <motion.span className="block whitespace-nowrap" variants={reveal('slideLeft', reduceMotion, 0)} initial="hidden" animate={state}>
             Học thông minh
           </motion.span>
           <motion.span
-            className="block bg-gradient-to-r from-primary via-[#8fd0f2] to-accent bg-clip-text pb-[0.04em] text-right text-transparent"
+            className="block whitespace-nowrap bg-gradient-to-r from-primary via-[#8fd0f2] to-accent bg-clip-text pb-[0.04em] text-right text-transparent"
             variants={reveal('slideRight', reduceMotion, 0.13)}
             initial="hidden"
             animate={state}

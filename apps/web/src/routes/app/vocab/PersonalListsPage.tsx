@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
-import { SolidCard } from '@/components/ui/SolidCard';
 import { cn } from '@/lib/cn';
 import { useToast } from '@/components/ui/Toast';
 import { usePersonalLists } from '@/features/personal-vocab/usePersonalLists';
@@ -64,23 +63,23 @@ export function PersonalListsPage() {
           <ul className="grid gap-3 sm:grid-cols-2">
             {api.lists.map((list) => (
               <li key={list.id} className="min-w-0">
-                <SolidCard className="p-0">
+                <div className="card">
                   <Link
                     to={`/app/tu-vung-cua-toi/${list.id}`}
-                    className="group flex min-h-20 items-center gap-4 rounded-[1.75rem] p-4 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
+                    className="group flex min-h-20 items-center gap-3.5 rounded-[1.75rem] py-3.5 pl-3.5 pr-3 transition-[background-color,scale] hover:bg-text/[0.03] active:scale-[0.99]"
                   >
                     <span
                       aria-hidden="true"
                       className={cn(
-                        'flex size-16 shrink-0 flex-col items-center justify-center rounded-2xl ring-1 ring-inset',
+                        'flex h-14 w-16 shrink-0 flex-col items-center justify-center rounded-2xl ring-1 ring-inset',
                         list.due_count > 0 ? 'bg-accent/12 text-accent-text ring-accent/30' : 'bg-text/[0.04] ring-border',
                       )}
                     >
-                      <span className="stat-num text-[30px]">{list.due_count > 0 ? list.due_count : list.word_count}</span>
-                      <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.06em] text-muted">{list.due_count > 0 ? 'cần ôn' : 'từ'}</span>
+                      <span className="stat-num text-[26px] leading-none">{list.due_count > 0 ? list.due_count : list.word_count}</span>
+                      <span className="mt-0.5 text-[12px] font-semibold uppercase leading-none text-muted">{list.due_count > 0 ? 'cần ôn' : 'từ'}</span>
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block break-words text-[17px] font-bold leading-snug tracking-[-0.01em]">{list.name}</span>
+                      <span className="line-clamp-2 break-words text-[16px] font-bold leading-snug tracking-[-0.01em]">{list.name}</span>
                       <span className="mt-0.5 block text-[13px] text-muted">
                         {LANGUAGES[list.language_code].nameVi} · {list.word_count} từ
                         {list.due_count > 0 ? ` · ${list.due_count} từ cần ôn` : list.word_count > 0 ? ' · hôm nay đã ôn xong' : ''}
@@ -88,7 +87,7 @@ export function PersonalListsPage() {
                     </span>
                     <ChevronRight aria-hidden className="size-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5" />
                   </Link>
-                </SolidCard>
+                </div>
               </li>
             ))}
           </ul>
@@ -102,7 +101,7 @@ export function PersonalListsPage() {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="page-title">Từ vựng của tôi</h1>
-          <p className="mt-1 max-w-prose text-[15px] text-muted">
+          <p className="mt-2 max-w-prose text-[15px] text-muted">
             Danh sách riêng của bạn, chỉ mình bạn thấy. Ôn bằng cùng lịch ôn thông minh với các thẻ trong bài học.
           </p>
         </div>

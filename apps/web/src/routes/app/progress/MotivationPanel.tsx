@@ -11,8 +11,8 @@ const count = (n: number) => n.toLocaleString('vi-VN');
 function Block({ icon: Icon, title, children, tone }: { icon: LucideIcon; title: string; children: ReactNode; tone: string }) {
   const headingId = useId();
   return (
-    <section aria-labelledby={headingId} className="relative min-w-0 overflow-hidden rounded-2xl bg-text/[0.04] p-4 ring-1 ring-border ring-inset">
-      <Icon aria-hidden className={cn('pointer-events-none absolute -right-3 -top-3 size-20 opacity-[0.12]', tone)} />
+    <section aria-labelledby={headingId} className="relative isolate min-w-0 overflow-hidden rounded-[1.25rem] bg-text/[0.04] p-4">
+      <Icon aria-hidden className={cn('pointer-events-none absolute -right-5 -top-5 -z-10 size-20 opacity-[0.08]', tone)} />
       <h3 id={headingId} className="eyebrow flex items-center gap-1.5">
         <Icon aria-hidden className={cn('size-4 shrink-0', tone)} />
         {title}
