@@ -308,6 +308,36 @@ describe('PersonalReviewPage', () => {
     expect(client.calls.filter(([n]) => n === 'grade_personal_word').map(([, a]) => a.p_rating)).toEqual([3, 4]);
   });
 
+  it('keeps grading offline, shows the waiting grades, and says so on the summary', async () => {
+    const user = userEvent.setup();
+    lists = [personalList()];
+    words = [personalWord({ term: '사과', meaning: 'quả táo' }), personalWord({ term: '학교', meaning: 'trường học' })];
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/tu-vung-cua-toi/:listId/on-tap" element={<PersonalReviewPage />} />
+      </Routes>,
+      { route: `/app/tu-vung-cua-toi/${LIST_ID}/on-tap` },
+    );
+    expect(await screen.findByRole('heading', { level: 2, name: 'Thẻ 1/2' })).toBeInTheDocument();
+    Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => false });
+    try {
+      window.dispatchEvent(new Event('offline'));
+      await user.click(screen.getByTestId('flashcard-front'));
+      await user.keyboard('3');
+      expect(await screen.findByRole('heading', { level: 2, name: 'Thẻ 2/2' })).toBeInTheDocument();
+      expect(screen.getByText('Đang chờ gửi 1 lượt chấm')).toBeInTheDocument();
+      await user.click(screen.getByTestId('flashcard-front'));
+      await user.keyboard('4');
+      expect(await screen.findByRole('heading', { name: 'Xong phiên ôn' })).toBeInTheDocument();
+      expect(screen.getByText('Bạn vừa ôn 2 từ.')).toBeInTheDocument();
+      expect(screen.getByText(/Còn 2 lượt chấm đang chờ gửi/)).toBeInTheDocument();
+      expect(client.calls.filter(([n]) => n === 'grade_personal_word')).toHaveLength(0);
+    } finally {
+      Object.defineProperty(navigator, 'onLine', { configurable: true, get: () => true });
+      localStorage.clear();
+    }
+  });
+
   it('shows an empty state when nothing is due', async () => {
     lists = [personalList()];
     words = [];

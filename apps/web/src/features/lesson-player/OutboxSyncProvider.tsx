@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useMemo, useRef, type ReactNode } from 'react';
 import { useAuth } from '@/features/auth/AuthProvider';
+import { PERSONAL_OUTBOX_CHANNEL, type PersonalOutboxResultHandler } from '@/features/personal-vocab/outbox';
 import { REVIEW_OUTBOX_CHANNEL, type ReviewOutboxResultHandler } from '@/features/reviews/outbox';
 import { getSupabase } from '@/lib/supabase';
 import { useOutboxChannelSync, useOutboxSync, type OutboxResultHandler } from './useOutboxSync';
@@ -13,6 +14,15 @@ export interface ReviewOutboxSyncValue {
   subscribe: (handler: ReviewOutboxResultHandler) => () => void;
 }
 
+export interface PersonalOutboxSyncValue {
+  /** Personal vocabulary grades waiting in the personal outbox for the signed-in user. */
+  pendingCount: number;
+  /** Sends every queued grade now (ignoring backoff). */
+  flush: () => Promise<void>;
+  /** Registers a handler for replayed grades (the personal review on screen); returns the unsubscribe function. */
+  subscribe: (handler: PersonalOutboxResultHandler) => () => void;
+}
+
 export interface OutboxSyncContextValue {
   /** Attempts waiting in the offline lesson outbox for the signed-in user. */
   pendingCount: number;
@@ -22,6 +32,8 @@ export interface OutboxSyncContextValue {
   subscribe: (handler: OutboxResultHandler) => () => void;
   /** Spec 3: the review-grade outbox, replayed by the same provider. */
   reviews: ReviewOutboxSyncValue;
+  /** The personal vocabulary grade outbox, replayed by the same provider. */
+  personalVocab: PersonalOutboxSyncValue;
 }
 
 export const OutboxSyncContext = createContext<OutboxSyncContextValue | null>(null);
@@ -42,7 +54,7 @@ function useHandlers<H extends (...args: never[]) => void>() {
 }
 
 /**
- * Spec 2 §7.4 / spec 3 §6: replays the offline outboxes (lesson answers, review grades) on every signed-in screen,
+ * Spec 2 §7.4 / spec 3 §6: replays the offline outboxes (lesson answers, review grades, personal vocabulary grades) on every signed-in screen,
  * not only inside a lesson or a review session, so queued work reaches the server as soon as the app is open and online.
  */
 export function OutboxSyncProvider({ children }: { children: ReactNode }) {
@@ -53,14 +65,20 @@ export function OutboxSyncProvider({ children }: { children: ReactNode }) {
   const review = useHandlers<ReviewOutboxResultHandler>();
   const { pendingCount, flush } = useOutboxSync(client, userId, lesson.dispatch);
   const reviewSync = useOutboxChannelSync(REVIEW_OUTBOX_CHANNEL, client, userId, review.dispatch);
+  const personal = useHandlers<PersonalOutboxResultHandler>();
+  const personalSync = useOutboxChannelSync(PERSONAL_OUTBOX_CHANNEL, client, userId, personal.dispatch);
 
   const reviews = useMemo(
     () => ({ pendingCount: reviewSync.pendingCount, flush: reviewSync.flush, subscribe: review.subscribe }),
     [reviewSync.pendingCount, reviewSync.flush, review.subscribe],
   );
+  const personalVocab = useMemo(
+    () => ({ pendingCount: personalSync.pendingCount, flush: personalSync.flush, subscribe: personal.subscribe }),
+    [personalSync.pendingCount, personalSync.flush, personal.subscribe],
+  );
   const value = useMemo(
-    () => ({ pendingCount, flush, subscribe: lesson.subscribe, reviews }),
-    [pendingCount, flush, lesson.subscribe, reviews],
+    () => ({ pendingCount, flush, subscribe: lesson.subscribe, reviews, personalVocab }),
+    [pendingCount, flush, lesson.subscribe, reviews, personalVocab],
   );
   return <OutboxSyncContext.Provider value={value}>{children}</OutboxSyncContext.Provider>;
 }
