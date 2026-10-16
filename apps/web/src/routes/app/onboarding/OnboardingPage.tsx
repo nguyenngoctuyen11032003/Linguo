@@ -25,6 +25,7 @@ import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvide
 import { createPath, type LearningPath } from '@/features/learning-paths/service';
 import { useReferenceHours } from '@/features/learning-paths/useReferenceHours';
 import { useProfile } from '@/features/profile/ProfileProvider';
+import { cn } from '@/lib/cn';
 import { todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
 import { isStepValid, resolveStep, resolveTargetDate, scheduleOf, stepHint, visibleSteps, type StepNumber } from './logic';
@@ -318,7 +319,14 @@ export function OnboardingPage() {
           )}
         </div>
       </header>
-      <main id="main" className="mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 px-safe pb-[calc(9rem+env(safe-area-inset-bottom,0px))] pt-3 min-[1024px]:pt-10">
+      <main
+        id="main"
+        className={cn(
+          'mx-auto w-full max-w-xl min-[1024px]:max-w-[42rem] flex-1 px-safe pt-3 min-[1024px]:pt-10',
+          // Room for the fixed Continue footer; the review step has its own in-flow CTA instead.
+          step === 6 ? 'pb-[calc(2.5rem+env(safe-area-inset-bottom,0px))]' : 'pb-[calc(9rem+env(safe-area-inset-bottom,0px))]',
+        )}
+      >
         <p className="eyebrow tabular-nums">
           Bước {index + 1}/{steps.length}
         </p>

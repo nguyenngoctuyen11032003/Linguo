@@ -28,7 +28,7 @@ export function StatsSection() {
           {STATS.map((s, i) => (
             <motion.li
               key={s.value}
-              className={cn('grid grid-cols-[minmax(0,auto)_1fr] items-end gap-x-5 py-6', i === 1 && 'sm:pl-[clamp(40px,12vw,120px)] min-[1024px]:pl-5', 'min-[1024px]:px-5 min-[1024px]:first:pl-0')}
+              className={cn('grid grid-cols-[minmax(0,auto)_1fr] items-end gap-x-5 py-6', i === 1 && 'sm:max-[1023px]:pl-[clamp(40px,12vw,120px)]', 'min-[1024px]:px-5 min-[1024px]:first:pl-0')}
               variants={reveal('fadeUp', reduceMotion, i * 0.1)}
               initial="hidden"
               animate={state}
@@ -37,7 +37,7 @@ export function StatsSection() {
                 to={s.value}
                 delayMs={i * 200}
                 className={cn(
-                  'stat-num min-w-[1.1ch] pr-1 text-[clamp(96px,30vw,176px)]',
+                  'stat-num min-w-[1.1ch] pr-1 text-[clamp(96px,30vw,176px)] min-[1024px]:text-[clamp(104px,10vw,160px)]',
                   s.gold ? 'bg-gradient-to-b from-gold to-gold/25 bg-clip-text text-transparent' : 'text-gradient-fade',
                 )}
               />
