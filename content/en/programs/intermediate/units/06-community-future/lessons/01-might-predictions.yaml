@@ -1,0 +1,365 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:community-future-might
+order_index: 1
+level: b1
+title:
+  vi: Our city in 2040 - may, might và mức độ chắc chắn khi dự đoán
+objectives:
+  - vi: Dự đoán tương lai với các mức chắc chắn khác nhau - will, will probably, may/might, probably won't, won't.
+  - vi: Dùng may not / might not và I doubt (that)… đúng nghĩa, không phủ định hai lần.
+  - vi: Nói về vấn đề đô thị - pollution, flooding, overcrowded, electric vehicles.
+estimated_minutes: 20
+skills: [grammar, speaking, vocabulary]
+prerequisites: [en:lesson:money-services-review]
+items:
+  - item: en:item:might-may-future
+  - item: en:item:might-not-may-not
+  - item: en:item:i-doubt
+  - item: en:item:it-depends-on
+  - item: en:item:pollution
+  - item: en:item:flooding
+  - item: en:item:electric-vehicle
+  - item: en:item:overcrowded
+  - item: en:item:in-the-near-future
+  - item: en:item:will-prediction
+    role: reuse
+  - item: en:item:probably
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tham gia được một cuộc trò chuyện về tương lai thành phố mình - giao thông, ô nhiễm, ngập lụt - và nói rõ mình chắc chắn đến mức nào, thay vì chỉ dùng will cho mọi dự đoán.
+  - type: explain
+    text:
+      vi: "Bạn đã biết will cho dự đoán chắc chắn. Khi không chắc, dùng may hoặc might + V nguyên mẫu - The city might ban petrol motorbikes. Might phổ biến trong văn nói; may nghe trang trọng hơn một chút, hay gặp trong bản tin."
+  - type: explain
+    text:
+      vi: "Thang chắc chắn từ cao xuống thấp - will → will probably → may / might → probably won't → won't. Chú ý vị trí - will probably (probably sau will) nhưng probably won't (probably trước won't)."
+  - type: explain
+    text:
+      vi: "Phủ định - may not / might not + V (có thể sẽ không). Muốn nói \"tôi không nghĩ là…\", dùng I doubt (that) + câu khẳng định - I doubt the metro will open on time. I doubt đã mang nghĩa nghi ngờ nên không thêm not phía sau."
+  - type: deep_explain
+    text:
+      vi: "Could cũng dùng để dự đoán khả năng (Prices could rise again next year), nghe như một rủi ro có thật. Khi người khác hỏi Will…?, câu trả lời It depends (on…) giúp bạn không phải đoán bừa - It depends on the weather. Lưu ý - may/might không đi cùng will (không nói might will) và không có to (không nói might to)."
+  - type: example
+    target: By 2040, the city might have three metro lines, but traffic will probably still be a problem.
+    target_lang: en
+    translation:
+      vi: Đến năm 2040, thành phố có thể có ba tuyến metro, nhưng giao thông có lẽ vẫn sẽ là vấn đề.
+    note:
+      vi: Might - có thể; will probably - khá chắc.
+  - type: example
+    target: Some coastal areas may flood more often if sea levels keep rising.
+    target_lang: en
+    translation:
+      vi: Một số vùng ven biển có thể sẽ ngập thường xuyên hơn nếu mực nước biển tiếp tục dâng.
+    note:
+      vi: May + V nguyên mẫu (flood) - giọng trang trọng như bản tin.
+  - type: example
+    target: "A: Will electric motorbikes replace petrol ones soon? B: I doubt it. They're still too expensive for many families."
+    target_lang: en
+    translation:
+      vi: "A: Xe máy điện có sớm thay thế xe chạy xăng không? B: Tôi không nghĩ vậy. Chúng vẫn quá đắt với nhiều gia đình."
+    note:
+      vi: I doubt it - câu trả lời ngắn khi nghĩ điều đó khó xảy ra.
+  - type: common_mistake
+    wrong: The new bridge might will open next year.
+    right: The new bridge might open next year.
+    target_lang: en
+    note:
+      vi: Might đã là động từ khuyết thiếu, không dùng cùng will.
+  - type: common_mistake
+    wrong: I doubt the air won't get cleaner.
+    right: I doubt the air will get cleaner.
+    target_lang: en
+    note:
+      vi: I doubt đã có nghĩa "tôi không nghĩ", thêm won't sẽ đảo ngược ý bạn muốn nói.
+  - type: common_mistake
+    wrong: Traffic probably will get worse.
+    right: Traffic will probably get worse.
+    target_lang: en
+    note:
+      vi: Probably đứng sau will nhưng đứng trước won't - will probably / probably won't.
+  - type: summary
+    points:
+      - vi: will > will probably > may / might > probably won't > won't.
+      - vi: may / might (not) + V nguyên mẫu; không dùng với will hoặc to.
+      - vi: I doubt (that) + câu khẳng định · I doubt it.
+      - vi: It depends (on…) - còn tuỳ.
+      - vi: pollution (không đếm được) · flood · overcrowded · electric vehicle · in the near future · by 2040.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:comfut-might-mcq-might
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:might-may-future
+    prompt:
+      stem: "Chọn đáp án đúng: Nobody knows yet, but the council ___ a new park on the old factory site."
+      stem_lang: vi
+      options:
+        - { id: n4f, text: might build, lang: en }
+        - { id: r7c, text: might will build, lang: en }
+        - { id: x2h, text: might to build, lang: en }
+        - { id: e9p, text: might builds, lang: en }
+    answer:
+      correct_option_id: n4f
+    explanation:
+      vi: Chưa ai biết chắc nên dùng might + V nguyên mẫu (build). Might không đi với will, không có to và không thêm -s.
+    display_answer: might build
+
+  - key: en:exercise:comfut-might-mcq-probably-position
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:probably
+    prompt:
+      stem: "Câu nào đặt probably đúng vị trí?"
+      stem_lang: vi
+      options:
+        - { id: b6s, text: "The rent will probably go up again, but salaries probably won't.", lang: en }
+        - { id: k1m, text: "The rent probably will go up again, but salaries won't probably.", lang: en }
+        - { id: t8w, text: "The rent will go probably up again, but salaries won't probably.", lang: en }
+        - { id: g3j, text: "Probably the rent will go up again, but probably salaries won't.", lang: en }
+    answer:
+      correct_option_id: b6s
+    explanation:
+      vi: Với câu khẳng định, probably đứng sau will (will probably); với câu phủ định, probably đứng trước won't (probably won't).
+    display_answer: "The rent will probably go up again, but salaries probably won't."
+
+  - key: en:exercise:comfut-might-listen-doubt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:i-doubt
+    prompt:
+      audio_asset_id: null
+      fallback_text: I doubt the new metro line will reduce traffic much, but it might help people who live near the stations.
+      options:
+        - { id: w5d, text: "Tôi không nghĩ tuyến metro mới sẽ giảm kẹt xe nhiều, nhưng nó có thể giúp những người sống gần các nhà ga.", lang: vi }
+        - { id: o2k, text: "Tôi chắc chắn tuyến metro mới sẽ giảm kẹt xe nhiều, nhất là cho người sống gần nhà ga.", lang: vi }
+        - { id: h9a, text: "Tôi không biết tuyến metro mới có mở không, nhưng người sống gần nhà ga thì muốn nó mở.", lang: vi }
+        - { id: z6v, text: "Tuyến metro mới sẽ không giúp được ai, kể cả người sống gần nhà ga.", lang: vi }
+    answer:
+      correct_option_id: w5d
+    explanation:
+      vi: I doubt … will reduce là "tôi không nghĩ… sẽ giảm" (nghi ngờ); might help là "có thể giúp" (có khả năng nhưng không chắc). Phương án cuối bỏ mất ý tích cực của vế sau.
+    display_answer: "Tôi không nghĩ tuyến metro mới sẽ giảm kẹt xe nhiều, nhưng nó có thể giúp những người sống gần các nhà ga."
+
+  - key: en:exercise:comfut-might-fill-may-not-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:might-not-may-not
+    prompt:
+      template: "Take an umbrella. The streets {{b1}} flood today, but they {{b2}} not - the forecast isn't clear."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Mang ô đi. Hôm nay đường có thể ngập, mà cũng có thể không - dự báo không rõ ràng."
+        - "Gợi ý: cả hai chỗ trống đều là động từ khuyết thiếu chỉ khả năng không chắc chắn."
+    answer:
+      blanks:
+        b1: [might, may, could]
+        b2: [might, may]
+    known_wrong:
+      - answer: will
+        feedback_vi: Dự báo không rõ nên không dùng will (chắc chắn). Dùng might hoặc may.
+        error_tag: certainty_level
+      - answer: can
+        feedback_vi: Can nói khả năng chung; dự đoán một lần cụ thể dùng might/may.
+        error_tag: modal_choice
+      - answer: won't
+        feedback_vi: Chỗ trống đứng trước not nên chỉ cần might hoặc may.
+        error_tag: modal_choice
+    explanation:
+      vi: Người nói không chắc nên dùng might/may cho cả hai vế - might flood, might not. Ở vế sau động từ flood được hiểu ngầm.
+    display_answer: Take an umbrella. The streets might flood today, but they might not - the forecast isn't clear.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:comfut-might-fill-depends
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:it-depends-on
+    prompt:
+      template: "Will young people move back to the countryside? It {{b1}} {{b2}} whether there are good jobs there."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [depends]
+        b2: [on, upon]
+    known_wrong:
+      - answer: depend
+        feedback_vi: Chủ ngữ it nên động từ thêm -s - depends.
+        error_tag: third_person_s
+      - answer: of
+        feedback_vi: Depend đi với on, không đi với of.
+        error_tag: depend_on
+      - answer: in
+        feedback_vi: Depend đi với on, không đi với in.
+        error_tag: depend_on
+    explanation:
+      vi: "\"Còn tuỳ vào\" là It depends on…. It là số ít nên depends có -s; giới từ luôn là on (upon trang trọng hơn)."
+    display_answer: Will young people move back to the countryside? It depends on whether there are good jobs there.
+
+  - key: en:exercise:comfut-might-translate-pollution
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:pollution
+    prompt:
+      source_text: Ô nhiễm không khí có thể sẽ tệ hơn vào mùa đông năm nay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Air pollution might get worse this winter.
+        - Air pollution may get worse this winter.
+        - Air pollution could get worse this winter.
+        - Air pollution might be worse this winter.
+        - Air pollution may be worse this winter.
+        - Air pollution could be worse this winter.
+        - Air pollution might become worse this winter.
+        - Air pollution may become worse this winter.
+        - The air pollution might get worse this winter.
+        - Air pollution might get worse in winter this year.
+        - Air pollution may get worse in winter this year.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Air pollution might gets worse this winter.
+        feedback_vi: Sau might là động từ nguyên mẫu - get, không thêm -s.
+        error_tag: modal_verb_form
+      - answer: Air pollution might will get worse this winter.
+        feedback_vi: Không dùng might cùng will.
+        error_tag: modal_double
+      - answer: An air pollution might get worse this winter.
+        feedback_vi: Pollution không đếm được nên không có an.
+        error_tag: uncountable_article
+    explanation:
+      vi: "\"Có thể sẽ\" là might/may (could cũng được) + V nguyên mẫu. Get worse hoặc be worse đều tự nhiên. Pollution không đếm được nên không có a/an."
+    display_answer: Air pollution might get worse this winter.
+
+  - key: en:exercise:comfut-might-translate-doubt
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:i-doubt
+    prompt:
+      source_text: Tôi không nghĩ là giá nhà sẽ giảm trong tương lai gần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - I doubt house prices will fall in the near future.
+        - I doubt that house prices will fall in the near future.
+        - I doubt house prices will go down in the near future.
+        - I doubt that house prices will go down in the near future.
+        - I doubt house prices will drop in the near future.
+        - I doubt that house prices will drop in the near future.
+        - I don't think house prices will fall in the near future.
+        - I don't think house prices will go down in the near future.
+        - I don't think that house prices will fall in the near future.
+        - I don't think house prices will drop in the near future.
+        - I doubt housing prices will fall in the near future.
+        - I doubt property prices will fall in the near future.
+        - I doubt house prices will decrease in the near future.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: I doubt house prices won't fall in the near future.
+        feedback_vi: I doubt đã mang nghĩa nghi ngờ; thêm won't làm ngược nghĩa. Dùng will fall.
+        error_tag: double_negative
+      - answer: I think house prices won't fall in the near future.
+        feedback_vi: Tiếng Anh tự nhiên hơn khi đặt phủ định ở think - I don't think… will, hoặc dùng I doubt.
+        error_tag: negative_transfer
+      - answer: I doubt house prices will fall in near future.
+        feedback_vi: Thiếu the - in the near future.
+        error_tag: article
+    explanation:
+      vi: "\"Tôi không nghĩ là…\" có hai cách tự nhiên - I doubt (that) + will, hoặc I don't think + will. Người bản ngữ đặt phủ định ở think, không nói I think … won't."
+    display_answer: I doubt house prices will fall in the near future.
+
+  # ---------------- application ----------------
+  - key: en:exercise:comfut-might-mcq-scale
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:in-the-near-future
+    prompt:
+      stem: "Trong buổi họp cư dân, bạn muốn nói: chắc chắn sẽ có thêm xe điện, khả năng có thêm trạm sạc, nhưng có lẽ giá sẽ không giảm sớm. Câu nào diễn đạt đúng các mức độ đó?"
+      stem_lang: vi
+      options:
+        - { id: s5q, text: "There will be more electric vehicles, there might be more charging stations, but prices probably won't fall in the near future.", lang: en }
+        - { id: l8u, text: "There might be more electric vehicles, there will be more charging stations, but prices won't probably fall in the near future.", lang: en }
+        - { id: c1y, text: "There will be more electric vehicles, there might will be more charging stations, but prices probably won't fall in near future.", lang: en }
+        - { id: j4e, text: "There are more electric vehicles, there may to be more charging stations, but prices doubt to fall in the near future.", lang: en }
+    answer:
+      correct_option_id: s5q
+    explanation:
+      vi: Chắc chắn - will; có khả năng - might; có lẽ không - probably won't (probably đứng trước won't). Phương án thứ hai đảo mức chắc chắn, các phương án còn lại sai cấu trúc.
+    display_answer: "There will be more electric vehicles, there might be more charging stations, but prices probably won't fall in the near future."
+
+  - key: en:exercise:comfut-might-order-overcrowded
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:overcrowded
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Các trường học ở quận này có thể sẽ quá tải trước năm 2030.\""
+      tokens:
+        - { id: t-by, text: by 2030 }
+        - { id: t-over, text: overcrowded }
+        - { id: t-schools, text: Schools in this district }
+        - { id: t-be, text: be }
+        - { id: t-may, text: may }
+        - { id: t-are, text: are }
+    answer:
+      orders:
+        - [t-schools, t-may, t-be, t-over, t-by]
+    explanation:
+      vi: Dự đoán không chắc - may + be + tính từ. Are là thừa vì sau may cần động từ nguyên mẫu be. By 2030 là "trước/đến năm 2030".
+    display_answer: Schools in this district may be overcrowded by 2030.
+
+  - key: en:exercise:comfut-might-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:flooding
+    prompt:
+      source_text: If the city doesn't improve its drains, flooding might become a serious problem in the near future.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu thành phố không cải thiện hệ thống thoát nước, ngập lụt có thể trở thành một vấn đề nghiêm trọng trong tương lai gần.
+        - Nếu thành phố không cải thiện hệ thống cống thoát nước, ngập lụt có thể sẽ trở thành vấn đề nghiêm trọng trong tương lai gần.
+        - Nếu thành phố không cải tạo hệ thống thoát nước, tình trạng ngập có thể trở thành vấn đề nghiêm trọng trong tương lai gần.
+        - Nếu thành phố không nâng cấp hệ thống thoát nước thì ngập lụt có thể trở thành một vấn đề nghiêm trọng trong tương lai gần.
+        - Nếu thành phố không cải thiện hệ thống thoát nước, ngập úng có thể trở thành một vấn đề nghiêm trọng trong thời gian tới.
+        - Nếu thành phố không cải thiện hệ thống thoát nước, ngập lụt có lẽ sẽ trở thành một vấn đề nghiêm trọng trong tương lai gần.
+        - Nếu thành phố không cải thiện cống thoát nước, ngập lụt có thể trở thành vấn đề nghiêm trọng trong tương lai gần.
+        - Nếu thành phố không cải thiện hệ thống thoát nước thì tình trạng ngập lụt có thể sẽ trở thành vấn đề nghiêm trọng trong tương lai gần.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Đây là câu điều kiện loại 1 với might ở vế kết quả - "có thể (sẽ) trở thành", mức chắc chắn thấp hơn will. Drains là "hệ thống thoát nước, cống"; flooding là "ngập lụt, tình trạng ngập".
+    display_answer: Nếu thành phố không cải thiện hệ thống thoát nước, ngập lụt có thể trở thành một vấn đề nghiêm trọng trong tương lai gần.

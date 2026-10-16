@@ -1,0 +1,704 @@
+# Học liệu unit "Cộng đồng & tương lai" (B1). IPA ghi cả Anh (UK) và Mỹ (US) khi hai cách đọc khác nhau.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: may, might cho dự đoán ----------------
+  - key: en:item:might-may-future
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: may / might + V (có thể sẽ… - dự đoán tương lai)
+      ipa: /meɪ/ · /maɪt/
+      pos: động từ khuyết thiếu
+    back:
+      meaning:
+        vi: "Nói điều có thể xảy ra trong tương lai nhưng không chắc: The city might build a metro line to the airport. May nghe trang trọng hơn một chút; might phổ biến hơn trong văn nói. Cả hai đi với động từ nguyên mẫu."
+      examples:
+        - target: Petrol motorbikes may disappear from the city centre within twenty years.
+          translation:
+            vi: Xe máy chạy xăng có thể sẽ biến mất khỏi trung tâm thành phố trong vòng hai mươi năm.
+      confusion:
+        vi: "Mức chắc chắn - will (chắc) > will probably (khá chắc) > may / might (có thể) > probably won't > won't. Không viết might will hay might to."
+
+  - key: en:item:might-not-may-not
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: may not / might not (mightn't) + V
+      pos: phủ định của may/might
+    back:
+      meaning:
+        vi: "có thể sẽ không: The new bridge might not be ready by 2030. Mightn't chỉ dùng trong văn nói Anh - Anh; may not thường không viết tắt."
+      examples:
+        - target: Young people may not want to live in the suburbs if there's no good public transport.
+          translation:
+            vi: Người trẻ có thể sẽ không muốn sống ở ngoại ô nếu không có giao thông công cộng tốt.
+      confusion:
+        vi: May not còn có nghĩa "không được phép" (You may not smoke here). Trong dự đoán, ngữ cảnh giúp bạn phân biệt.
+
+  - key: en:item:i-doubt
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: I doubt (that) … / I doubt it.
+      ipa: /aɪ ˈdaʊt/
+      pos: cụm bày tỏ nghi ngờ
+    back:
+      meaning:
+        vi: Tôi không nghĩ là… / Tôi nghi lắm. (dự đoán điều khó xảy ra)
+      examples:
+        - target: I doubt the traffic will get better any time soon.
+          translation:
+            vi: Tôi không nghĩ giao thông sẽ sớm khá hơn.
+      pronunciation_note:
+        vi: Chữ b trong doubt là âm câm - đọc /daʊt/ "đao-t".
+      confusion:
+        vi: I doubt đã mang nghĩa phủ định, nên vế sau ở dạng khẳng định - I doubt it will rain, không nói I doubt it won't rain (nghĩa sẽ bị đảo).
+
+  - key: en:item:it-depends-on
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: It depends (on …)
+      ipa: /ɪt dɪˈpendz ɒn/ · US /ɪt dɪˈpendz ɑːn/
+      pos: cụm trả lời
+    back:
+      meaning:
+        vi: Còn tuỳ (vào…)
+      examples:
+        - target: "Will the new metro solve the traffic problem? - It depends on how many people actually use it."
+          translation:
+            vi: Tuyến metro mới có giải quyết được kẹt xe không? - Còn tuỳ vào việc thực sự có bao nhiêu người dùng nó.
+      confusion:
+        vi: Depend đi với on, không đi với of hay in. Tiếng Việt "tuỳ vào" dễ khiến người Việt nói It depends in.
+
+  - key: en:item:pollution
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: (air / noise / plastic) pollution
+      ipa: /pəˈluːʃn/
+      pos: danh từ không đếm được
+    back:
+      meaning:
+        vi: sự ô nhiễm (không khí / tiếng ồn / rác nhựa)
+      examples:
+        - target: Air pollution in Hanoi is usually worse in winter.
+          translation:
+            vi: Ô nhiễm không khí ở Hà Nội thường tệ hơn vào mùa đông.
+      confusion:
+        vi: Pollution không đếm được - không nói a pollution, many pollutions. Tính từ là polluted (a polluted river).
+
+  - key: en:item:flooding
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: flood / flooding
+      ipa: /flʌd/ · /ˈflʌdɪŋ/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: lũ lụt; ngập (đường phố, nhà cửa)
+      examples:
+        - target: After heavy rain, the streets near my office often flood.
+          translation:
+            vi: Sau mưa lớn, các con phố gần văn phòng tôi thường bị ngập.
+      pronunciation_note:
+        vi: Oo trong flood đọc /ʌ/ như "ă" (giống blood), không đọc /uː/.
+
+  - key: en:item:electric-vehicle
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: electric vehicle (EV) / electric motorbike
+      ipa: /ɪˈlektrɪk ˈviːəkl/
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: xe điện / xe máy điện
+      examples:
+        - target: More and more delivery drivers are switching to electric motorbikes.
+          translation:
+            vi: Ngày càng nhiều tài xế giao hàng chuyển sang xe máy điện.
+      pronunciation_note:
+        vi: Vehicle đọc /ˈviːəkl/ - chữ h câm, "VI-ơ-cồ".
+
+  - key: en:item:overcrowded
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: overcrowded
+      ipa: UK /ˌəʊvəˈkraʊdɪd/ · US /ˌoʊvɚˈkraʊdɪd/
+      pos: tính từ
+    back:
+      meaning:
+        vi: quá tải, quá đông đúc (vượt sức chứa)
+      examples:
+        - target: Schools in the new districts are already overcrowded.
+          translation:
+            vi: Trường học ở các quận mới đã quá tải rồi.
+      confusion:
+        vi: Crowded là đông người (có thể vui); overcrowded là đông quá mức, gây vấn đề.
+
+  - key: en:item:in-the-near-future
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary, writing]
+    front:
+      text: in the (near / distant) future · by + năm
+      ipa: UK /ɪn ðə ˌnɪə ˈfjuːtʃə/ · US /ɪn ðə ˌnɪr ˈfjuːtʃɚ/
+      pos: cụm thời gian
+    back:
+      meaning:
+        vi: trong tương lai (gần / xa) · trước năm, đến năm…
+      examples:
+        - target: By 2035, most buses in the city may run on electricity.
+          translation:
+            vi: Đến năm 2035, phần lớn xe buýt trong thành phố có thể sẽ chạy bằng điện.
+      confusion:
+        vi: Luôn có the - in the future, không nói in future với nghĩa "trong tương lai xa" (UK in future = từ nay về sau).
+
+  # ---------------- Bài 2: make, let, allow, want sb to ----------------
+  - key: en:item:make-someone-do
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: make + người + V nguyên mẫu (bắt ai làm gì)
+      pos: động từ gây khiến
+    back:
+      meaning:
+        vi: "bắt, buộc ai làm gì: The building manager makes us sort our rubbish. Sau make + người là động từ nguyên mẫu, không có to."
+      examples:
+        - target: My first boss made me rewrite every email twice.
+          translation:
+            vi: Sếp đầu tiên của tôi bắt tôi viết lại mọi email hai lần.
+      confusion:
+        vi: Không nói make me to rewrite. Make còn có nghĩa "khiến" - The film made me cry.
+
+  - key: en:item:let-someone-do
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: let + người + V nguyên mẫu (cho phép, để ai làm gì)
+      ipa: /let/
+      pos: động từ gây khiến
+    back:
+      meaning:
+        vi: "cho phép, để ai làm gì (thân mật): Our landlord lets us keep a cat. Quá khứ của let vẫn là let."
+      examples:
+        - target: The security guard didn't let me park in front of the building.
+          translation:
+            vi: Bảo vệ không cho tôi đỗ xe trước toà nhà.
+      confusion:
+        vi: Let không có to và không dùng ở bị động - không nói We are let to…; dùng We are allowed to….
+
+  - key: en:item:allow-someone-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: allow + người + to + V
+      ipa: /əˈlaʊ/
+      pos: động từ cho phép
+    back:
+      meaning:
+        vi: "cho phép ai làm gì (trang trọng hơn let, hay dùng trong quy định): The new rules allow residents to use the rooftop garden."
+      examples:
+        - target: The company allows employees to work from home on Fridays.
+          translation:
+            vi: Công ty cho phép nhân viên làm việc ở nhà vào thứ Sáu.
+      pronunciation_note:
+        vi: Allow đọc /əˈlaʊ/ - "ơ-LAO", không đọc "a-lâu".
+      confusion:
+        vi: Allow cần to (allow us to use), còn let thì không (let us use). Bị động - We are allowed to….
+
+  - key: en:item:want-someone-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: want / would like + người + to + V
+      pos: mẫu câu mong muốn
+    back:
+      meaning:
+        vi: "muốn ai làm gì: The neighbours want the council to build a playground."
+      examples:
+        - target: I'd like you to join the residents' meeting on Sunday.
+          translation:
+            vi: Tôi muốn bạn tham gia buổi họp cư dân vào Chủ nhật.
+      confusion:
+        vi: "Tiếng Việt nói \"tôi muốn bạn đến\", nên người Việt hay viết I want that you come - sai. Đúng là I want you to come."
+
+  - key: en:item:resident
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: resident / residents' association
+      ipa: /ˈrezɪdənt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cư dân / ban đại diện cư dân
+      examples:
+        - target: All residents must register their motorbikes with the building office.
+          translation:
+            vi: Tất cả cư dân phải đăng ký xe máy với ban quản lý toà nhà.
+
+  - key: en:item:recycle
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: recycle / recycling
+      ipa: /ˌriːˈsaɪkl/ · /ˌriːˈsaɪklɪŋ/
+      pos: động từ, danh từ
+    back:
+      meaning:
+        vi: tái chế / việc tái chế
+      examples:
+        - target: Our building has separate bins for recycling and general waste.
+          translation:
+            vi: Toà nhà chúng tôi có thùng riêng cho rác tái chế và rác thường.
+
+  - key: en:item:litter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: litter / drop litter
+      ipa: UK /ˈlɪtə/ · US /ˈlɪtɚ/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: rác vứt bừa bãi (nơi công cộng) / xả rác
+      examples:
+        - target: People who drop litter in the park can be fined.
+          translation:
+            vi: Người xả rác trong công viên có thể bị phạt.
+      confusion:
+        vi: Litter là rác trên đường, nơi công cộng; rubbish (UK) / trash, garbage (US) là rác nói chung, rác trong nhà.
+
+  - key: en:item:keep-the-noise-down
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [speaking]
+    front:
+      text: keep the noise down
+      ipa: /ˌkiːp ðə ˈnɔɪz daʊn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: giữ trật tự, bớt ồn
+      examples:
+        - target: Could you keep the noise down after 10 p.m.? My baby is sleeping.
+          translation:
+            vi: Anh chị có thể giữ yên lặng sau 10 giờ tối được không? Con tôi đang ngủ.
+
+  - key: en:item:parking-space
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: parking space (UK) / parking spot (US)
+      ipa: UK /ˈpɑːkɪŋ speɪs/ · US /ˈpɑːrkɪŋ speɪs/
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: chỗ đỗ xe
+      examples:
+        - target: There aren't enough parking spaces for visitors.
+          translation:
+            vi: Không đủ chỗ đỗ xe cho khách.
+      confusion:
+        vi: Parking không đếm được (There's no parking here); car park (UK) / parking lot (US) là bãi đỗ xe.
+
+  # ---------------- Bài 3: so do I, neither do I; both/either/neither ----------------
+  - key: en:item:so-do-i
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, speaking]
+    front:
+      text: So + trợ động từ + chủ ngữ (So do I. / So am I. / So did we.)
+      pos: đồng tình với câu khẳng định
+    back:
+      meaning:
+        vi: "Tôi cũng vậy (với câu khẳng định). Trợ động từ phải khớp với câu trước: I volunteer every month. - So do I. I'm tired. - So am I. We went yesterday. - So did we."
+      examples:
+        - target: "A: I'm worried about the new road. B: So am I."
+          translation:
+            vi: "A: Tôi lo về con đường mới. B: Tôi cũng vậy."
+      confusion:
+        vi: Đảo trật tự - So do I, không nói So I do (câu này nghĩa khác - "đúng là tôi có làm"). Me too thân mật hơn và dùng được cho mọi trường hợp khẳng định.
+
+  - key: en:item:neither-do-i
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar, speaking]
+    front:
+      text: Neither / Nor + trợ động từ + chủ ngữ
+      ipa: UK /ˈnaɪðə/ · US /ˈniːðɚ/
+      pos: đồng tình với câu phủ định
+    back:
+      meaning:
+        vi: "Tôi cũng không (với câu phủ định). Trợ động từ ở dạng khẳng định: I don't have a car. - Neither do I. I can't come on Sunday. - Neither can I."
+      examples:
+        - target: "A: I didn't know about the meeting. B: Neither did I."
+          translation:
+            vi: "A: Tôi không biết về cuộc họp. B: Tôi cũng không."
+      pronunciation_note:
+        vi: Neither có hai cách đọc - UK hay đọc /ˈnaɪðə/ "NAI-đơ", US hay đọc /ˈniːðɚ/ "NI-đơ"; cả hai đều đúng.
+      confusion:
+        vi: Không nói Neither don't I - neither đã phủ định. Cũng không đáp Me too cho câu phủ định; dùng Me neither.
+
+  - key: en:item:me-neither
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [speaking]
+    front:
+      text: Me neither.
+      ipa: UK /ˌmiː ˈnaɪðə/ · US /ˌmiː ˈniːðɚ/
+      pos: câu đáp thân mật
+    back:
+      meaning:
+        vi: Tôi cũng không. (thân mật, đáp lại câu phủ định)
+      examples:
+        - target: "A: I don't really like crowded festivals. B: Me neither."
+          translation:
+            vi: "A: Tôi không thích lễ hội đông người lắm. B: Tôi cũng không."
+      confusion:
+        vi: "Me too đáp câu khẳng định, Me neither đáp câu phủ định. Người Việt hay đáp \"Me too\" cho cả hai vì tiếng Việt nói \"tôi cũng thế\"."
+
+  - key: en:item:both-and
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: both A and B / both of + đại từ
+      ipa: UK /bəʊθ/ · US /boʊθ/
+      pos: liên từ cặp
+    back:
+      meaning:
+        vi: cả A và B (hai thứ, động từ số nhiều)
+      examples:
+        - target: Both my neighbours and I signed the petition.
+          translation:
+            vi: Cả hàng xóm của tôi và tôi đều ký vào bản kiến nghị.
+      confusion:
+        vi: Both chỉ dùng cho hai thứ; ba thứ trở lên dùng all. Both of us, both of them (có of trước đại từ).
+
+  - key: en:item:either-or
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: either A or B
+      ipa: UK /ˈaɪðə/ · US /ˈiːðɚ/
+      pos: liên từ cặp
+    back:
+      meaning:
+        vi: hoặc A hoặc B (chọn một trong hai)
+      examples:
+        - target: You can either donate money or help on the day.
+          translation:
+            vi: Bạn có thể quyên góp tiền hoặc đến giúp vào hôm đó.
+      confusion:
+        vi: Either đi với or, không đi với and.
+
+  - key: en:item:neither-nor
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: neither A nor B
+      pos: liên từ cặp phủ định
+    back:
+      meaning:
+        vi: không A cũng không B (động từ ở dạng khẳng định)
+      examples:
+        - target: Neither the school nor the council replied to our letter.
+          translation:
+            vi: Cả nhà trường lẫn chính quyền địa phương đều không trả lời thư của chúng tôi.
+      confusion:
+        vi: Neither … nor đã phủ định, nên động từ không thêm not - Neither… nor… replied, không nói didn't reply.
+
+  - key: en:item:volunteer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: volunteer / voluntary work
+      ipa: UK /ˌvɒlənˈtɪə/ · US /ˌvɑːlənˈtɪr/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: tình nguyện viên; làm tình nguyện / công việc tình nguyện
+      examples:
+        - target: She volunteers at an animal shelter every Saturday morning.
+          translation:
+            vi: Sáng thứ Bảy nào cô ấy cũng làm tình nguyện ở một trại cứu hộ động vật.
+      pronunciation_note:
+        vi: Trọng âm ở âm cuối - vo-lun-TEER.
+
+  - key: en:item:charity
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: charity
+      ipa: /ˈtʃærəti/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tổ chức từ thiện; hoạt động từ thiện
+      examples:
+        - target: The money from the concert went to a children's charity.
+          translation:
+            vi: Tiền từ buổi hoà nhạc được chuyển cho một tổ chức từ thiện vì trẻ em.
+
+  - key: en:item:donate
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: donate (to) / donation
+      ipa: UK /dəʊˈneɪt/ · US /ˈdoʊneɪt/
+      pos: động từ / danh từ
+    back:
+      meaning:
+        vi: quyên góp, hiến tặng (cho) / khoản quyên góp
+      examples:
+        - target: We donated our old clothes to the flood victims.
+          translation:
+            vi: Chúng tôi quyên góp quần áo cũ cho người dân vùng lũ.
+      pronunciation_note:
+        vi: UK nhấn âm thứ hai (do-NATE), US thường nhấn âm đầu (DO-nate).
+      confusion:
+        vi: Donate something to somebody - không nói donate somebody something.
+
+  # ---------------- Bài 4: mục đích - to, in order to, so that ----------------
+  - key: en:item:to-of-purpose
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: to + V (để làm gì - chỉ mục đích)
+      pos: to chỉ mục đích
+    back:
+      meaning:
+        vi: "Nói mục đích ngắn gọn nhất: We're organising a market to raise money for the library."
+      examples:
+        - target: I went to the community centre to sign up for the English club.
+          translation:
+            vi: Tôi đến nhà văn hoá để đăng ký câu lạc bộ tiếng Anh.
+      confusion:
+        vi: "Tiếng Việt \"để\" dễ khiến người Việt viết for + V (for raise money) - sai. Mục đích + động từ dùng to + V; for đi với danh từ (for the library)."
+
+  - key: en:item:in-order-to
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar, writing]
+    front:
+      text: in order to / in order not to + V
+      pos: chỉ mục đích (trang trọng)
+    back:
+      meaning:
+        vi: "để (trang trọng hơn to, hay dùng trong văn viết): The road will be closed in order to repair the drains. Phủ định - in order not to + V."
+      examples:
+        - target: We start early in order not to disturb the residents.
+          translation:
+            vi: Chúng tôi bắt đầu sớm để không làm phiền cư dân.
+      confusion:
+        vi: Phủ định là in order not to (hoặc so as not to). Không viết not to đứng một mình đầu câu với nghĩa mục đích.
+
+  - key: en:item:so-that
+    type: grammar_point
+    level: b1
+    difficulty: 4
+    skill_tags: [grammar, writing]
+    front:
+      text: so that + chủ ngữ + can / could / will / won't + V
+      pos: chỉ mục đích (có chủ ngữ)
+    back:
+      meaning:
+        vi: "để (cho ai đó) có thể…: dùng khi mục đích có chủ ngữ riêng. They built a ramp so that wheelchair users can enter the library."
+      examples:
+        - target: Please speak slowly so that everyone can understand.
+          translation:
+            vi: Vui lòng nói chậm để mọi người đều hiểu được.
+      confusion:
+        vi: Sau so that là một mệnh đề có chủ ngữ và động từ (so that everyone can understand); sau to là động từ nguyên mẫu. Không trộn - so that to understand là sai.
+
+  - key: en:item:for-purpose-noun
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: for + danh từ (mục đích, công dụng)
+      pos: for chỉ mục đích
+    back:
+      meaning:
+        vi: "để lấy, để dùng cho (cái gì): We're collecting money for a new playground. I went out for some fresh air."
+      examples:
+        - target: The hall is used for weddings and community meetings.
+          translation:
+            vi: Hội trường được dùng cho đám cưới và các buổi họp cộng đồng.
+      confusion:
+        vi: for + danh từ (for a playground) nhưng to + động từ (to build a playground). Không viết for build.
+
+  - key: en:item:campaign
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: campaign (for / against)
+      ipa: /kæmˈpeɪn/
+      pos: danh từ, động từ
+    back:
+      meaning:
+        vi: chiến dịch; vận động (ủng hộ / phản đối)
+      examples:
+        - target: Local students started a campaign against single-use plastic.
+          translation:
+            vi: Sinh viên địa phương phát động chiến dịch chống đồ nhựa dùng một lần.
+      pronunciation_note:
+        vi: Chữ g câm - đọc /kæmˈpeɪn/ "cam-PÊN".
+
+  - key: en:item:raise-money
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: raise money (for …)
+      ipa: /ˌreɪz ˈmʌni/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: gây quỹ, quyên góp tiền (cho…)
+      examples:
+        - target: The runners raised over fifty million dong for the hospital.
+          translation:
+            vi: Các vận động viên đã gây quỹ được hơn năm mươi triệu đồng cho bệnh viện.
+      confusion:
+        vi: Raise (nâng lên, gây quỹ) cần tân ngữ; rise (tăng lên) không có tân ngữ - Prices rise, but we raise money.
+
+  - key: en:item:take-part-in
+    type: phrase
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: take part in
+      ipa: UK /ˌteɪk ˈpɑːt ɪn/ · US /ˌteɪk ˈpɑːrt ɪn/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: tham gia (một hoạt động, sự kiện)
+      examples:
+        - target: Over two hundred families took part in the clean-up.
+          translation:
+            vi: Hơn hai trăm gia đình đã tham gia buổi dọn dẹp.
+      confusion:
+        vi: Tham gia hoạt động là take part in hoặc join; attend dùng cho cuộc họp, lớp học (đến dự). Không nói join in a club - nói join a club.
+
+  - key: en:item:community-centre
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: community centre (UK) / community center (US)
+      ipa: UK /kəˈmjuːnəti ˌsentə/ · US /kəˈmjuːnəti ˌsentɚ/
+      pos: danh từ ghép
+    back:
+      meaning:
+        vi: nhà văn hoá, trung tâm sinh hoạt cộng đồng
+      examples:
+        - target: The community centre offers free English classes for children.
+          translation:
+            vi: Nhà văn hoá có lớp tiếng Anh miễn phí cho trẻ em.
+
+  # ---------------- Bài 5: ôn tập ----------------
+  - key: en:item:clean-up-day
+    type: vocab
+    level: b1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: a clean-up (day) / clean up
+      ipa: /ˈkliːn ʌp/
+      pos: danh từ / cụm động từ
+    back:
+      meaning:
+        vi: buổi (ngày) dọn dẹp chung / dọn sạch
+      examples:
+        - target: Join our beach clean-up this Sunday morning!
+          translation:
+            vi: Hãy tham gia buổi dọn bãi biển sáng Chủ nhật này!
+      confusion:
+        vi: Danh từ viết có gạch nối (a clean-up), cụm động từ viết rời (Let's clean up the park).
+
+  - key: en:item:sign-up-for
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sign up (for …)
+      ipa: /ˌsaɪn ˈʌp/
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: đăng ký (tham gia hoạt động, khoá học, dịch vụ)
+      examples:
+        - target: You can sign up for the event on our Facebook page.
+          translation:
+            vi: Bạn có thể đăng ký tham gia sự kiện trên trang Facebook của chúng tôi.
+      pronunciation_note:
+        vi: Chữ g trong sign là âm câm - /saɪn/ "xai-n".

@@ -1,0 +1,361 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:community-future-make-let
+order_index: 2
+level: b1
+title:
+  vi: They make us sort our rubbish - make, let, allow và want somebody to
+objectives:
+  - vi: Nói về quy định và sự cho phép bằng make / let + người + V và allow + người + to + V.
+  - vi: Nói mong muốn về người khác bằng want / would like + người + to + V.
+  - vi: Bàn về nội quy chung cư - residents, recycling, litter, noise, parking spaces.
+estimated_minutes: 20
+skills: [grammar, speaking, writing]
+prerequisites: [en:lesson:community-future-might]
+items:
+  - item: en:item:make-someone-do
+  - item: en:item:let-someone-do
+  - item: en:item:allow-someone-to
+  - item: en:item:want-someone-to
+  - item: en:item:resident
+  - item: en:item:recycle
+  - item: en:item:litter
+  - item: en:item:keep-the-noise-down
+  - item: en:item:parking-space
+  - item: en:item:be-allowed-to
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được nội quy khu chung cư hay nơi làm việc cho người nước ngoài - ai bắt ai làm gì, ai được phép làm gì - và nêu mong muốn của mình trong một buổi họp cư dân.
+  - type: explain
+    text:
+      vi: "Make + người + V nguyên mẫu là bắt, buộc (The manager makes us sign in). Let + người + V nguyên mẫu là cho phép, để (thân mật - Our landlord lets us have pets). Cả hai đều không có to."
+  - type: explain
+    text:
+      vi: "Allow + người + to + V cũng là cho phép, nhưng trang trọng hơn và hay gặp trong văn bản quy định (The rules allow residents to use the gym). Khác với let, allow cần to. Bị động - We are allowed to… (bạn đã học be allowed to ở unit 2)."
+  - type: explain
+    text:
+      vi: "Muốn người khác làm gì - want / would like + người + to + V (I want the council to fix the lights). Tiếng Việt nói \"tôi muốn họ sửa\", nên người Việt hay viết I want that they fix - câu này sai trong tiếng Anh."
+  - type: deep_explain
+    text:
+      vi: "Let không dùng ở bị động - không nói We are let to park here; dùng We are allowed to park here. Make ở bị động thì phải thêm to - We were made to wait (chúng tôi bị bắt chờ), nhưng dạng này ít gặp ở B1. Quá khứ - make → made, let → let (không đổi), allow → allowed."
+  - type: example
+    target: The building manager makes every resident sort their rubbish into three bins.
+    target_lang: en
+    translation:
+      vi: Ban quản lý toà nhà bắt mọi cư dân phân loại rác vào ba thùng.
+    note:
+      vi: Make + người + V nguyên mẫu (sort) - không có to.
+  - type: example
+    target: Our landlord lets us keep a dog, but he doesn't let us paint the walls.
+    target_lang: en
+    translation:
+      vi: Chủ nhà cho chúng tôi nuôi chó nhưng không cho sơn tường.
+    note:
+      vi: Let + người + V nguyên mẫu; phủ định doesn't let.
+  - type: example
+    target: The new rules don't allow visitors to use residents' parking spaces after 8 p.m.
+    target_lang: en
+    translation:
+      vi: Quy định mới không cho phép khách dùng chỗ đỗ xe của cư dân sau 8 giờ tối.
+    note:
+      vi: Allow + người + to + V - giọng văn bản quy định.
+  - type: common_mistake
+    wrong: The security guard made me to show my ID card.
+    right: The security guard made me show my ID card.
+    target_lang: en
+    note:
+      vi: Sau make + người là V nguyên mẫu, không có to.
+  - type: common_mistake
+    wrong: My parents don't let me to stay out late.
+    right: My parents don't let me stay out late. / My parents don't allow me to stay out late.
+    target_lang: en
+    note:
+      vi: Let không có to; muốn dùng to thì đổi sang allow.
+  - type: common_mistake
+    wrong: We want that the council builds more parks.
+    right: We want the council to build more parks.
+    target_lang: en
+    note:
+      vi: Want không đi với mệnh đề that. Dùng want + người + to + V.
+  - type: summary
+    points:
+      - vi: make + người + V (bắt) · let + người + V (để, cho - thân mật).
+      - vi: allow + người + to + V (cho phép - trang trọng) · be allowed to (bị động).
+      - vi: want / would like + người + to + V - không dùng want that.
+      - vi: residents · recycling · drop litter · keep the noise down · parking space.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:comfut-make-mcq-make
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:make-someone-do
+    prompt:
+      stem: "Chọn đáp án đúng: At my old company, they made us ___ a uniform every day."
+      stem_lang: vi
+      options:
+        - { id: d4x, text: wear, lang: en }
+        - { id: p7b, text: to wear, lang: en }
+        - { id: u1n, text: wearing, lang: en }
+        - { id: f8k, text: wore, lang: en }
+    answer:
+      correct_option_id: d4x
+    explanation:
+      vi: Make + người + V nguyên mẫu - made us wear. Dù câu ở quá khứ, chỉ make đổi thành made, động từ sau vẫn ở dạng nguyên mẫu.
+    display_answer: wear
+
+  - key: en:exercise:comfut-make-mcq-allow-let
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:allow-someone-to
+    prompt:
+      stem: "Câu nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: q3h, text: "The landlord doesn't allow tenants to smoke on the balcony.", lang: en }
+        - { id: m6t, text: "The landlord doesn't let tenants to smoke on the balcony.", lang: en }
+        - { id: v9c, text: "The landlord doesn't allow tenants smoke on the balcony.", lang: en }
+        - { id: a2e, text: "The landlord doesn't allow that tenants smoke on the balcony.", lang: en }
+    answer:
+      correct_option_id: q3h
+    explanation:
+      vi: Allow + người + to + V là đúng. Let không có to; allow thì bắt buộc có to; allow that + mệnh đề là cách dùng sai.
+    display_answer: "The landlord doesn't allow tenants to smoke on the balcony."
+
+  - key: en:exercise:comfut-make-listen-let
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:let-someone-do
+    prompt:
+      audio_asset_id: null
+      fallback_text: The guard let me park in the basement because it was raining, but he made me move my bike the next morning.
+      options:
+        - { id: y5o, text: "Bảo vệ cho tôi đỗ xe dưới tầng hầm vì trời mưa, nhưng sáng hôm sau anh ấy bắt tôi dời xe đi.", lang: vi }
+        - { id: i8r, text: "Bảo vệ không cho tôi đỗ xe dưới tầng hầm dù trời mưa, nên tôi phải dời xe đi.", lang: vi }
+        - { id: c4l, text: "Bảo vệ nhờ tôi đỗ xe dưới tầng hầm, rồi sáng hôm sau anh ấy tự dời xe giúp tôi.", lang: vi }
+        - { id: w7s, text: "Tôi để bảo vệ đỗ xe dưới tầng hầm vì trời mưa.", lang: vi }
+    answer:
+      correct_option_id: y5o
+    explanation:
+      vi: Let me park là "cho tôi đỗ"; made me move là "bắt tôi dời". Phương án cuối hiểu ngược chủ ngữ - người cho phép là bảo vệ.
+    display_answer: "Bảo vệ cho tôi đỗ xe dưới tầng hầm vì trời mưa, nhưng sáng hôm sau anh ấy bắt tôi dời xe đi."
+
+  - key: en:exercise:comfut-make-fill-want-to-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:want-someone-to
+    prompt:
+      template: "The residents want the management board {{b1}} {{b2}} more recycling bins."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa của câu: Cư dân muốn ban quản lý cung cấp thêm thùng rác tái chế."
+        - "Gợi ý: want + người + một từ nhỏ + động từ nguyên mẫu."
+    answer:
+      blanks:
+        b1: [to]
+        b2: [provide, install, put, add, buy]
+    known_wrong:
+      - answer: that
+        feedback_vi: Want không đi với that. Dùng want + người + to + V.
+        error_tag: want_that
+      - answer: provides
+        feedback_vi: Sau to là động từ nguyên mẫu - provide.
+        error_tag: infinitive_form
+      - answer: for
+        feedback_vi: Want somebody to do something - không dùng for.
+        error_tag: want_to
+    explanation:
+      vi: Muốn người khác làm gì - want + người + to + V nguyên mẫu. The management board là người được mong sẽ làm việc đó.
+    display_answer: The residents want the management board to provide more recycling bins.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:comfut-make-fill-let-recycle
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:recycle
+    prompt:
+      template: "Our building doesn't {{b1}} us put glass in the normal bins. We have to {{b2}} it separately."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [let]
+        b2: [recycle, sort, collect, take]
+    known_wrong:
+      - answer: allow
+        feedback_vi: Sau chỗ trống là us put (không có to), nên chỉ let đúng. Allow cần to - allow us to put.
+        error_tag: let_allow
+      - answer: make
+        feedback_vi: Câu nói về điều bị cấm (không cho), nên dùng let, không phải make (bắt).
+        error_tag: make_let
+      - answer: recycling
+        feedback_vi: Sau have to là động từ nguyên mẫu - recycle.
+        error_tag: infinitive_form
+    explanation:
+      vi: Doesn't let us put - không cho chúng tôi bỏ (let + người + V không có to). Vế sau have to + V nguyên mẫu - recycle it separately.
+    display_answer: Our building doesn't let us put glass in the normal bins. We have to recycle it separately.
+
+  - key: en:exercise:comfut-make-translate-noise
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:keep-the-noise-down
+    prompt:
+      source_text: Bạn có thể giữ trật tự sau mười giờ tối được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Could you keep the noise down after ten p.m.?
+        - Could you keep the noise down after 10 p.m.?
+        - Could you keep the noise down after 10 pm?
+        - Could you keep the noise down after ten o'clock at night?
+        - Could you keep the noise down after 10 o'clock at night?
+        - Could you please keep the noise down after 10 p.m.?
+        - Can you keep the noise down after 10 p.m.?
+        - Can you keep the noise down after ten p.m.?
+        - Would you mind keeping the noise down after 10 p.m.?
+        - Could you keep the noise down after ten at night?
+        - Could you keep the noise down after 10 at night?
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Could you keep the noise after 10 p.m.?
+        feedback_vi: Cụm cố định là keep the noise down - thiếu down thì nghĩa thành "giữ tiếng ồn".
+        error_tag: phrasal_verb
+      - answer: Could you keep quietly after 10 p.m.?
+        feedback_vi: Sau keep dùng tính từ - keep quiet, hoặc dùng keep the noise down.
+        error_tag: adjective_adverb
+      - answer: Could you to keep the noise down after 10 p.m.?
+        feedback_vi: Sau could là động từ nguyên mẫu - Could you keep….
+        error_tag: modal_to
+    explanation:
+      vi: Nhờ lịch sự - Could you + V…? "Giữ trật tự, bớt ồn" là keep the noise down (cũng có thể nói keep quiet).
+    display_answer: Could you keep the noise down after 10 p.m.?
+
+  - key: en:exercise:comfut-make-translate-allow
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:allow-someone-to
+    prompt:
+      source_text: Công ty cho phép nhân viên mang thú cưng đến văn phòng vào thứ Sáu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - The company allows employees to bring their pets to the office on Fridays.
+        - The company allows employees to bring pets to the office on Fridays.
+        - The company allows staff to bring their pets to the office on Fridays.
+        - The company allows staff to bring pets to the office on Fridays.
+        - The company lets employees bring their pets to the office on Fridays.
+        - The company lets employees bring pets to the office on Fridays.
+        - The company lets staff bring their pets to the office on Fridays.
+        - The company allows its employees to bring their pets to the office on Fridays.
+        - The company allows employees to bring their pets to work on Fridays.
+        - The company allows employees to bring their pets into the office on Fridays.
+        - The company allows employees to bring their pets to the office on Friday.
+        - The company lets its staff bring their pets to the office on Fridays.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: The company allows employees bring their pets to the office on Fridays.
+        feedback_vi: Allow cần to - allows employees to bring.
+        error_tag: allow_to
+      - answer: The company lets employees to bring their pets to the office on Fridays.
+        feedback_vi: Let không có to - lets employees bring.
+        error_tag: let_to
+      - answer: The company allow employees to bring their pets to the office on Fridays.
+        feedback_vi: The company là số ít nên động từ thêm -s - allows.
+        error_tag: third_person_s
+    explanation:
+      vi: "\"Cho phép ai làm gì\" - allows + người + to + V (trang trọng) hoặc lets + người + V. The company số ít nên thêm -s."
+    display_answer: The company allows employees to bring their pets to the office on Fridays.
+
+  # ---------------- application ----------------
+  - key: en:exercise:comfut-make-mcq-explain-rules
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:resident
+    prompt:
+      stem: "Bạn giải thích nội quy chung cư cho một người thuê mới đến từ Úc: ban quản lý bắt mọi người đăng ký xe, không cho để xe đạp ở hành lang, nhưng cho phép dùng sân thượng. Câu nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: k7f, text: "The management makes all residents register their vehicles and doesn't let them leave bikes in the corridor, but it allows them to use the rooftop.", lang: en }
+        - { id: e3w, text: "The management makes all residents to register their vehicles and doesn't let them to leave bikes in the corridor, but it allows them use the rooftop.", lang: en }
+        - { id: z8d, text: "The management lets all residents register their vehicles and doesn't make them leave bikes in the corridor, but it allows them to use the rooftop.", lang: en }
+        - { id: o1g, text: "The management makes that all residents register their vehicles and doesn't allow leave bikes in the corridor, but it lets them using the rooftop.", lang: en }
+    answer:
+      correct_option_id: k7f
+    explanation:
+      vi: Make + người + V (bắt đăng ký), doesn't let + người + V (không cho để), allows + người + to + V (cho phép dùng). Phương án thứ ba đổi nghĩa make/let; các phương án còn lại sai to.
+    display_answer: "The management makes all residents register their vehicles and doesn't let them leave bikes in the corridor, but it allows them to use the rooftop."
+
+  - key: en:exercise:comfut-make-order-litter
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:litter
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chúng tôi muốn chính quyền phạt những người xả rác.\""
+      tokens:
+        - { id: t-litter, text: who drop litter }
+        - { id: t-fine, text: to fine }
+        - { id: t-we, text: We want }
+        - { id: t-people, text: people }
+        - { id: t-council, text: the council }
+        - { id: t-that, text: that }
+    answer:
+      orders:
+        - [t-we, t-council, t-fine, t-people, t-litter]
+    explanation:
+      vi: Want + người (the council) + to + V (fine). That là token thừa vì want không đi với mệnh đề that. Who drop litter là mệnh đề quan hệ bổ nghĩa cho people.
+    display_answer: We want the council to fine people who drop litter.
+
+  - key: en:exercise:comfut-make-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:parking-space
+    prompt:
+      source_text: Visitors aren't allowed to use residents' parking spaces, and the guards make them park on the street.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khách không được phép dùng chỗ đỗ xe của cư dân, và bảo vệ bắt họ đỗ xe ngoài đường.
+        - Khách không được dùng chỗ đỗ xe của cư dân, và bảo vệ bắt họ đỗ ngoài đường.
+        - Khách đến thăm không được phép sử dụng chỗ đỗ xe của cư dân, và bảo vệ bắt họ đỗ xe trên đường.
+        - Khách không được phép đỗ vào chỗ của cư dân, và bảo vệ bắt họ đỗ xe ngoài đường.
+        - Khách không được sử dụng chỗ đậu xe của cư dân, và bảo vệ bắt họ đậu xe ngoài đường.
+        - Khách không được phép dùng chỗ đỗ xe của cư dân nên bảo vệ bắt họ đỗ xe ngoài đường.
+        - Khách không được phép dùng chỗ đỗ xe dành cho cư dân, và bảo vệ bắt họ đỗ xe ngoài đường.
+        - Khách không được dùng chỗ đỗ xe của cư dân và bị bảo vệ bắt đỗ xe ngoài đường.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Aren't allowed to là "không được phép"; make them park là "bắt họ đỗ xe". Parking spaces là "chỗ đỗ xe" (miền Nam hay nói "chỗ đậu xe").
+    display_answer: Khách không được phép dùng chỗ đỗ xe của cư dân, và bảo vệ bắt họ đỗ xe ngoài đường.

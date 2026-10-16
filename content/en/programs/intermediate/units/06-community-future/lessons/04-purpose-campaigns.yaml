@@ -1,0 +1,361 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:community-future-purpose
+order_index: 4
+level: b1
+title:
+  vi: To raise money, so that everyone can… - nói mục đích khi kêu gọi cộng đồng
+objectives:
+  - vi: Nói mục đích bằng to + V, in order (not) to + V và so that + chủ ngữ + can/will.
+  - vi: Phân biệt for + danh từ với to + động từ.
+  - vi: Viết lời kêu gọi ngắn với campaign, raise money, take part in, community centre.
+estimated_minutes: 20
+skills: [grammar, writing]
+prerequisites: [en:lesson:community-future-so-neither]
+items:
+  - item: en:item:to-of-purpose
+  - item: en:item:in-order-to
+  - item: en:item:so-that
+  - item: en:item:for-purpose-noun
+  - item: en:item:campaign
+  - item: en:item:raise-money
+  - item: en:item:take-part-in
+  - item: en:item:community-centre
+  - item: en:item:charity
+    role: reuse
+  - item: en:item:volunteer
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một bài đăng kêu gọi hàng xóm tham gia một chiến dịch - nói rõ làm gì, để làm gì, để ai được lợi - với câu chỉ mục đích chính xác.
+  - type: explain
+    text:
+      vi: "Cách ngắn nhất để nói mục đích là to + V - We're selling cakes to raise money. Trong văn viết trang trọng (thông báo, thư gửi chính quyền), dùng in order to + V. Phủ định - in order not to + V (để không…)."
+  - type: explain
+    text:
+      vi: "Khi mục đích có chủ ngữ khác, dùng so that + chủ ngữ + can / could / will / won't + V - We built a ramp so that wheelchair users can enter the library. Sau so that là một câu đầy đủ, không phải to + V."
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ có \"để\", nên người Việt hay viết for + động từ (for raise money) - sai. Quy tắc - for + danh từ (for the library, for a new playground), to + động từ (to build a playground)."
+  - type: deep_explain
+    text:
+      vi: "Khi câu ở quá khứ, so that thường đi với could hoặc would - We left early so that we could get a good parking space. So that khác so (vì vậy) - so that nói mục đích, so nói kết quả (It rained, so we stayed home). Take part in và join đều là \"tham gia\", nhưng attend dùng cho việc đến dự (attend a meeting)."
+  - type: example
+    target: We're organising a second-hand book market to raise money for the community library.
+    target_lang: en
+    translation:
+      vi: Chúng tôi tổ chức phiên chợ sách cũ để gây quỹ cho thư viện cộng đồng.
+    note:
+      vi: To + V (raise) cho mục đích; for + danh từ (the community library).
+  - type: example
+    target: The road will be closed on Sunday morning in order to repair the drains.
+    target_lang: en
+    translation:
+      vi: Con đường sẽ bị đóng vào sáng Chủ nhật để sửa hệ thống thoát nước.
+    note:
+      vi: In order to - giọng thông báo chính thức.
+  - type: example
+    target: The community centre now opens until 9 p.m. so that working parents can take part in the evening classes.
+    target_lang: en
+    translation:
+      vi: Nhà văn hoá giờ mở cửa đến 9 giờ tối để các phụ huynh đi làm có thể tham gia lớp buổi tối.
+    note:
+      vi: So that + chủ ngữ mới (working parents) + can + V.
+  - type: common_mistake
+    wrong: We need volunteers for clean the beach.
+    right: We need volunteers to clean the beach.
+    target_lang: en
+    note:
+      vi: Mục đích với động từ dùng to + V. For chỉ đi với danh từ (volunteers for the clean-up).
+  - type: common_mistake
+    wrong: Please arrive early so that to get a free T-shirt.
+    right: Please arrive early to get a free T-shirt. / Please arrive early so that you can get a free T-shirt.
+    target_lang: en
+    note:
+      vi: Không ghép so that với to. So that cần chủ ngữ và động từ.
+  - type: common_mistake
+    wrong: We turned off the music for not disturbing the neighbours.
+    right: We turned off the music in order not to disturb the neighbours. / …so that we wouldn't disturb the neighbours.
+    target_lang: en
+    note:
+      vi: Mục đích phủ định là in order not to + V hoặc so that … won't/wouldn't + V, không dùng for not + V-ing.
+  - type: summary
+    points:
+      - vi: to + V - mục đích ngắn gọn · in order (not) to + V - trang trọng.
+      - vi: so that + chủ ngữ + can / will / could / would (not) + V - mục đích có chủ ngữ riêng.
+      - vi: for + danh từ (for a new playground) · to + động từ (to build a playground).
+      - vi: launch a campaign · raise money for · take part in · community centre.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:comfut-purp-mcq-to
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:to-of-purpose
+    prompt:
+      stem: "Chọn đáp án đúng: Hundreds of people ran in the marathon ___ money for children with heart disease."
+      stem_lang: vi
+      options:
+        - { id: v5p, text: to raise, lang: en }
+        - { id: d3a, text: for raise, lang: en }
+        - { id: m8j, text: for raising, lang: en }
+        - { id: y1q, text: so that raise, lang: en }
+    answer:
+      correct_option_id: v5p
+    explanation:
+      vi: Mục đích với động từ dùng to + V - to raise money. For raise sai; for raising không phải cách nói mục đích tự nhiên ở đây; so that cần chủ ngữ.
+    display_answer: to raise
+
+  - key: en:exercise:comfut-purp-mcq-for-noun
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:for-purpose-noun
+    prompt:
+      stem: "Chọn đáp án đúng: The residents are collecting money ___ a new playground."
+      stem_lang: vi
+      options:
+        - { id: q6g, text: for, lang: en }
+        - { id: l2x, text: to, lang: en }
+        - { id: i9e, text: so that, lang: en }
+        - { id: a4t, text: in order to, lang: en }
+    answer:
+      correct_option_id: q6g
+    explanation:
+      vi: Sau chỗ trống là danh từ (a new playground), nên dùng for. To, in order to cần động từ; so that cần cả một mệnh đề.
+    display_answer: for
+
+  - key: en:exercise:comfut-purp-listen-so-that
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:so-that
+    prompt:
+      audio_asset_id: null
+      fallback_text: The library added large-print books so that older readers can enjoy them more easily.
+      options:
+        - { id: s7n, text: "Thư viện bổ sung sách in chữ to để người đọc lớn tuổi có thể đọc dễ dàng hơn.", lang: vi }
+        - { id: e4c, text: "Người đọc lớn tuổi đã tặng thư viện sách in chữ to.", lang: vi }
+        - { id: h1v, text: "Thư viện bổ sung sách in chữ to, vì vậy người đọc lớn tuổi không đến nữa.", lang: vi }
+        - { id: z5o, text: "Thư viện muốn người đọc lớn tuổi mua sách in chữ to.", lang: vi }
+    answer:
+      correct_option_id: s7n
+    explanation:
+      vi: So that older readers can enjoy là "để người đọc lớn tuổi có thể đọc dễ hơn" - mục đích có chủ ngữ riêng. So that khác so (vì vậy), nên phương án thứ ba hiểu sai.
+    display_answer: "Thư viện bổ sung sách in chữ to để người đọc lớn tuổi có thể đọc dễ dàng hơn."
+
+  - key: en:exercise:comfut-purp-fill-in-order-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:in-order-to
+    prompt:
+      template: "Please switch off the lights in the hall {{b1}} order {{b2}} to waste electricity."
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Vui lòng tắt đèn trong hội trường để không lãng phí điện."
+        - "Gợi ý: cụm trang trọng chỉ mục đích phủ định - … order … to + V."
+    answer:
+      blanks:
+        b1: [in]
+        b2: [not]
+    known_wrong:
+      - answer: for
+        feedback_vi: Cụm cố định là in order to, không phải for order to.
+        error_tag: in_order_to
+      - answer: don't
+        feedback_vi: Phủ định của in order to là in order not to.
+        error_tag: in_order_not_to
+      - answer: no
+        feedback_vi: Dùng not, không dùng no - in order not to.
+        error_tag: in_order_not_to
+    explanation:
+      vi: Mục đích phủ định trang trọng là in order not to + V. Not đứng ngay trước to.
+    display_answer: Please switch off the lights in the hall in order not to waste electricity.
+
+  # ---------------- recall ----------------
+  - key: en:exercise:comfut-purp-fill-take-part
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:take-part-in
+    prompt:
+      template: "More than fifty teenagers {{b1}} part {{b2}} the campaign against plastic bags last summer."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 2 }
+    answer:
+      blanks:
+        b1: [took]
+        b2: [in]
+    known_wrong:
+      - answer: take
+        feedback_vi: Có last summer nên dùng quá khứ - took.
+        error_tag: past_tense
+      - answer: joined
+        feedback_vi: Joined không đi với part. Cụm cố định là take part in.
+        error_tag: collocation
+      - answer: on
+        feedback_vi: Take part đi với in.
+        error_tag: preposition
+    explanation:
+      vi: Cụm cố định take part in (tham gia); việc đã xảy ra nên take → took.
+    display_answer: More than fifty teenagers took part in the campaign against plastic bags last summer.
+
+  - key: en:exercise:comfut-purp-translate-campaign
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:campaign
+    prompt:
+      source_text: Chúng tôi bắt đầu một chiến dịch để giữ sạch bãi biển.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We started a campaign to keep the beach clean.
+        - We launched a campaign to keep the beach clean.
+        - We began a campaign to keep the beach clean.
+        - We have started a campaign to keep the beach clean.
+        - We've started a campaign to keep the beach clean.
+        - We started a campaign in order to keep the beach clean.
+        - We launched a campaign in order to keep the beach clean.
+        - We started a campaign to keep the beaches clean.
+        - We've launched a campaign to keep the beach clean.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We started a campaign for keep the beach clean.
+        feedback_vi: Mục đích với động từ dùng to + V, không dùng for.
+        error_tag: for_to_purpose
+      - answer: We started a campaign to keep clean the beach.
+        feedback_vi: Mẫu đúng là keep + tân ngữ + tính từ - keep the beach clean.
+        error_tag: word_order
+      - answer: We started campaign to keep the beach clean.
+        feedback_vi: Campaign đếm được, số ít cần a.
+        error_tag: article
+    explanation:
+      vi: "\"Để giữ sạch\" là to keep + tân ngữ + clean. Bắt đầu chiến dịch là start / launch a campaign."
+    display_answer: We started a campaign to keep the beach clean.
+
+  - key: en:exercise:comfut-purp-translate-so-that
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:so-that
+    prompt:
+      source_text: Chúng tôi dịch tờ rơi sang tiếng Anh để người nước ngoài cũng có thể tham gia.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - We translated the leaflet into English so that foreigners could take part too.
+        - We translated the leaflet into English so that foreigners could also take part.
+        - We translated the leaflet into English so that foreigners can take part too.
+        - We translated the leaflet into English so that foreigners can also take part.
+        - We translated the leaflets into English so that foreigners could take part too.
+        - We translated the leaflets into English so that foreigners can take part too.
+        - We translated the leaflet into English so that foreigners could join too.
+        - We translated the leaflet into English so that foreigners can join too.
+        - We translated the flyer into English so that foreigners could take part too.
+        - We translated the flyer into English so that foreigners can take part too.
+        - We translated the leaflet into English so foreigners could take part too.
+        - We translated the leaflet into English so that foreign people could take part too.
+        - We translated the leaflet into English so that people from other countries could take part too.
+        - We translated the leaflet into English so that foreigners could participate too.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: We translated the leaflet into English for foreigners take part too.
+        feedback_vi: Mục đích có chủ ngữ riêng dùng so that + chủ ngữ + could/can + V.
+        error_tag: so_that
+      - answer: We translated the leaflet into English so that foreigners to take part too.
+        feedback_vi: Sau so that là một mệnh đề - foreigners could take part.
+        error_tag: so_that
+      - answer: We translated the leaflet to English so that foreigners could take part too.
+        feedback_vi: Dịch sang ngôn ngữ nào dùng translate into.
+        error_tag: translate_into
+    explanation:
+      vi: Người được lợi (người nước ngoài) khác chủ ngữ (chúng tôi), nên dùng so that + foreigners + could/can + V. Câu ở quá khứ nên could tự nhiên hơn. Dịch sang tiếng Anh là translate into English.
+    display_answer: We translated the leaflet into English so that foreigners could take part too.
+
+  # ---------------- application ----------------
+  - key: en:exercise:comfut-purp-mcq-post
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:raise-money
+    prompt:
+      stem: "Bạn viết bài đăng kêu gọi trong nhóm cư dân: tổ chức buổi hoà nhạc để gây quỹ cho trẻ em vùng lũ, mở cửa đến 9 giờ để người đi làm về muộn cũng đến được. Đoạn nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: o7w, text: "We're holding a concert at the community centre to raise money for children in flooded areas. It's open until 9 p.m. so that people who finish work late can come too.", lang: en }
+        - { id: c3k, text: "We're holding a concert at the community centre for raise money to children in flooded areas. It's open until 9 p.m. so that people who finish work late to come too.", lang: en }
+        - { id: g9d, text: "We're holding a concert at the community centre to rise money for children in flooded areas. It's open until 9 p.m. for people who finish work late can come too.", lang: en }
+        - { id: w2y, text: "We're holding a concert at the community centre in order raise money for children in flooded areas. It's open until 9 p.m. so people who finish work late coming too.", lang: en }
+    answer:
+      correct_option_id: o7w
+    explanation:
+      vi: To raise money for + danh từ, và so that + chủ ngữ + can + V. Các phương án khác dùng for + V, rise (không có tân ngữ) thay cho raise, thiếu to sau in order, hoặc so that + to.
+    display_answer: "We're holding a concert at the community centre to raise money for children in flooded areas. It's open until 9 p.m. so that people who finish work late can come too."
+
+  - key: en:exercise:comfut-purp-order-community
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:community-centre
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Tôi đến nhà văn hoá để đăng ký lớp học bơi.\""
+      tokens:
+        - { id: t-swim, text: for the swimming class }
+        - { id: t-to, text: to sign up }
+        - { id: t-went, text: I went }
+        - { id: t-centre, text: to the community centre }
+        - { id: t-for, text: for sign up }
+    answer:
+      orders:
+        - [t-went, t-centre, t-to, t-swim]
+    explanation:
+      vi: Mục đích với động từ là to sign up; for đi với danh từ (for the swimming class). For sign up là token sai vì for không đứng trước động từ nguyên mẫu.
+    display_answer: I went to the community centre to sign up for the swimming class.
+
+  - key: en:exercise:comfut-purp-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:in-order-to
+    prompt:
+      source_text: In order to reduce waste, the market no longer gives out free plastic bags, so please bring your own.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để giảm rác thải, chợ không còn phát túi ni lông miễn phí nữa, vì vậy hãy mang theo túi của bạn.
+        - Để giảm rác thải, chợ không phát túi ni lông miễn phí nữa, nên vui lòng mang túi riêng.
+        - Nhằm giảm rác thải, chợ không còn phát túi nhựa miễn phí nữa, vì vậy hãy tự mang túi của mình.
+        - Để giảm lượng rác, chợ không còn phát túi ni lông miễn phí, nên bạn hãy mang túi của mình.
+        - Để giảm rác thải, chợ không còn phát túi ni lông miễn phí nữa, vì thế xin hãy mang theo túi riêng.
+        - Để giảm rác thải, chợ không còn cho túi ni lông miễn phí nữa, nên vui lòng mang theo túi của bạn.
+        - Để giảm rác thải, chợ đã ngừng phát túi ni lông miễn phí, vì vậy vui lòng tự mang túi.
+        - Để giảm rác, chợ không phát túi nilon miễn phí nữa, nên hãy mang túi của bạn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: In order to reduce waste là "để/nhằm giảm rác thải"; no longer là "không còn… nữa"; bring your own (bags) là "mang túi của bạn". So ở đây là "vì vậy" (kết quả), khác so that.
+    display_answer: Để giảm rác thải, chợ không còn phát túi ni lông miễn phí nữa, vì vậy hãy mang theo túi của bạn.

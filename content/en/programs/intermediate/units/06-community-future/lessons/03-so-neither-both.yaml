@@ -1,0 +1,360 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:community-future-so-neither
+order_index: 3
+level: b1
+title:
+  vi: So do I, neither can I - đồng tình, và both / either / neither khi làm tình nguyện
+objectives:
+  - vi: Đồng tình ngắn gọn bằng So + trợ động từ + I và Neither / Nor + trợ động từ + I, chọn đúng trợ động từ.
+  - vi: Phân biệt Me too và Me neither.
+  - vi: Nối hai lựa chọn bằng both … and, either … or, neither … nor.
+estimated_minutes: 20
+skills: [grammar, speaking]
+prerequisites: [en:lesson:community-future-make-let]
+items:
+  - item: en:item:so-do-i
+  - item: en:item:neither-do-i
+  - item: en:item:me-neither
+  - item: en:item:both-and
+  - item: en:item:either-or
+  - item: en:item:neither-nor
+  - item: en:item:volunteer
+  - item: en:item:charity
+  - item: en:item:donate
+  - item: en:item:me-too
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trò chuyện tự nhiên khi lên kế hoạch cho một hoạt động tình nguyện - đồng tình với người khác (So do I! Neither can I.) và đưa ra lựa chọn (We can either… or…).
+  - type: explain
+    text:
+      vi: "Đồng tình với câu khẳng định - So + trợ động từ + chủ ngữ. Trợ động từ phải khớp với câu trước: I'm free on Sunday. - So am I. I volunteer at the shelter. - So do I. We went last year. - So did we. I can drive. - So can I."
+  - type: explain
+    text:
+      vi: "Đồng tình với câu phủ định - Neither (hoặc Nor) + trợ động từ khẳng định + chủ ngữ: I can't come. - Neither can I. I didn't know. - Neither did I. Thân mật hơn - Me neither. Tiếng Việt chỉ có \"tôi cũng thế\", nên người Việt hay đáp Me too cho cả câu phủ định - sai."
+  - type: explain
+    text:
+      vi: "Nối hai thứ - both A and B (cả hai), either A or B (một trong hai), neither A nor B (không cái nào). Neither … nor đã phủ định, nên động từ không thêm not nữa."
+  - type: deep_explain
+    text:
+      vi: "So do I phải đảo trật tự - So I do có nghĩa khác (\"đúng thế, tôi có làm\"). Với both … and, động từ số nhiều (Both Lan and Minh are…). Với either … or / neither … nor, động từ thường chia theo danh từ gần nhất (Neither the manager nor the volunteers were…), nhưng trong văn nói không quá khắt khe."
+  - type: example
+    target: "A: I've never volunteered before. B: Neither have I, but I'd love to try."
+    target_lang: en
+    translation:
+      vi: "A: Tôi chưa từng làm tình nguyện. B: Tôi cũng chưa, nhưng tôi rất muốn thử."
+    note:
+      vi: Câu trước dùng have (hiện tại hoàn thành, phủ định) → Neither have I.
+  - type: example
+    target: You can either donate clothes or help us sort them at the community centre.
+    target_lang: en
+    translation:
+      vi: Bạn có thể quyên góp quần áo hoặc giúp chúng tôi phân loại ở nhà văn hoá.
+    note:
+      vi: Either … or - chọn một trong hai.
+  - type: example
+    target: Neither the school nor the charity had enough volunteers, so both of them asked local students for help.
+    target_lang: en
+    translation:
+      vi: Cả trường học lẫn tổ chức từ thiện đều không đủ tình nguyện viên, nên cả hai đã nhờ sinh viên địa phương giúp.
+    note:
+      vi: Neither … nor + động từ khẳng định (had); both of them.
+  - type: common_mistake
+    wrong: "A: I don't eat meat. B: Me too."
+    right: "A: I don't eat meat. B: Me neither. / Neither do I."
+    target_lang: en
+    note:
+      vi: Đồng tình với câu phủ định dùng Me neither hoặc Neither do I, không dùng Me too.
+  - type: common_mistake
+    wrong: "A: I went to the meeting. B: So do I."
+    right: "A: I went to the meeting. B: So did I."
+    target_lang: en
+    note:
+      vi: Câu trước ở quá khứ đơn nên trợ động từ là did.
+  - type: common_mistake
+    wrong: Neither my brother nor my sister don't live here.
+    right: Neither my brother nor my sister lives here.
+    target_lang: en
+    note:
+      vi: Neither … nor đã phủ định, không thêm don't. Danh từ gần động từ nhất (my sister) số ít nên lives.
+  - type: summary
+    points:
+      - vi: Khẳng định - So am / do / did / can / have + I. Phủ định - Neither (Nor) am / do / did / can / have + I.
+      - vi: Trợ động từ khớp với câu trước (am, do, did, can, have…).
+      - vi: Me too (khẳng định) · Me neither (phủ định).
+      - vi: both A and B · either A or B · neither A nor B (động từ khẳng định).
+      - vi: volunteer · charity · donate (something) to.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:comfut-so-mcq-so-am-i
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:so-do-i
+    prompt:
+      stem: "\"I'm really excited about the charity run.\" Câu đáp nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h2m, text: "So am I!", lang: en }
+        - { id: r5t, text: "So do I!", lang: en }
+        - { id: n8c, text: "So I am!", lang: en }
+        - { id: g1w, text: "Neither am I!", lang: en }
+    answer:
+      correct_option_id: h2m
+    explanation:
+      vi: Câu trước dùng am (I'm excited) nên đáp So am I. So do I chỉ dùng khi câu trước có động từ thường ở hiện tại; Neither dùng cho câu phủ định.
+    display_answer: "So am I!"
+
+  - key: en:exercise:comfut-so-mcq-neither-can
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:neither-do-i
+    prompt:
+      stem: "\"I can't come to the clean-up on Saturday.\" Câu đáp nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c6y, text: "Neither can I.", lang: en }
+        - { id: o9k, text: "Neither can't I.", lang: en }
+        - { id: t3e, text: "So can't I.", lang: en }
+        - { id: w7n, text: "Me too can't.", lang: en }
+    answer:
+      correct_option_id: c6y
+    explanation:
+      vi: Đồng tình với câu phủ định - Neither + trợ động từ khẳng định + I. Câu trước dùng can't nên đáp Neither can I (không thêm n't vì neither đã phủ định).
+    display_answer: "Neither can I."
+
+  - key: en:exercise:comfut-so-listen-either
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:either-or
+    prompt:
+      audio_asset_id: null
+      fallback_text: You can either bring your old books to the community centre or leave them with the security guard.
+      options:
+        - { id: k4p, text: "Bạn có thể mang sách cũ đến nhà văn hoá hoặc gửi lại cho bảo vệ.", lang: vi }
+        - { id: e1s, text: "Bạn nên mang sách cũ đến nhà văn hoá và gửi cho bảo vệ.", lang: vi }
+        - { id: z7h, text: "Bạn không thể mang sách cũ đến nhà văn hoá hay gửi cho bảo vệ.", lang: vi }
+        - { id: b9u, text: "Bảo vệ sẽ mang sách cũ của bạn đến nhà văn hoá.", lang: vi }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: Either … or là "hoặc… hoặc…", chọn một trong hai cách. Phương án thứ hai dịch thành "và" - làm cả hai, không đúng nghĩa.
+    display_answer: "Bạn có thể mang sách cũ đến nhà văn hoá hoặc gửi lại cho bảo vệ."
+
+  - key: en:exercise:comfut-so-fill-did-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: en
+    difficulty: 2
+    item: en:item:so-do-i
+    prompt:
+      template: "\"We donated our old laptops to the school last month.\" - \"So {{b1}} {{b2}}! We gave them two.\""
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: \"Tháng trước chúng tôi đã quyên góp laptop cũ cho trường.\" - \"Chúng tôi cũng vậy! Chúng tôi tặng hai cái.\""
+        - "Gợi ý: câu trước ở quá khứ đơn; người đáp nói thay cho \"chúng tôi\"."
+    answer:
+      blanks:
+        b1: [did]
+        b2: [we]
+    known_wrong:
+      - answer: do
+        feedback_vi: Câu trước ở quá khứ (donated, last month) nên trợ động từ là did.
+        error_tag: auxiliary_match
+      - answer: us
+        feedback_vi: Sau So + trợ động từ là đại từ chủ ngữ - we, không dùng us.
+        error_tag: subject_pronoun
+      - answer: donated
+        feedback_vi: Không lặp lại động từ chính; dùng trợ động từ did.
+        error_tag: auxiliary_match
+    explanation:
+      vi: Câu gốc ở quá khứ đơn với động từ thường (donated), nên trợ động từ là did. Người đáp nói về nhóm mình nên dùng we - So did we.
+    display_answer: "\"We donated our old laptops to the school last month.\" - \"So did we! We gave them two.\""
+
+  # ---------------- recall ----------------
+  - key: en:exercise:comfut-so-fill-neither-nor
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:neither-nor
+    prompt:
+      template: "{{b1}} the bus {{b2}} the metro goes to the new hospital yet, so most patients take a taxi."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [Neither]
+        b2: [nor]
+    known_wrong:
+      - answer: Either
+        feedback_vi: Câu mang nghĩa phủ định (không tuyến nào đi đến) mà động từ goes ở dạng khẳng định, nên cần Neither … nor.
+        error_tag: neither_nor
+      - answer: or
+        feedback_vi: Neither đi với nor, không đi với or.
+        error_tag: neither_nor
+      - answer: Both
+        feedback_vi: Both … and đi với động từ số nhiều và nghĩa khẳng định; ở đây nghĩa là không tuyến nào.
+        error_tag: neither_nor
+    explanation:
+      vi: Ý câu là không có tuyến nào đến bệnh viện (nên bệnh nhân đi taxi). Động từ goes ở dạng khẳng định, nên phủ định nằm ở Neither … nor.
+    display_answer: Neither the bus nor the metro goes to the new hospital yet, so most patients take a taxi.
+
+  - key: en:exercise:comfut-so-translate-volunteer
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:volunteer
+    prompt:
+      source_text: Cả tôi và chồng tôi đều làm tình nguyện ở một trại cứu hộ chó mèo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Both my husband and I volunteer at an animal shelter.
+        - Both my husband and I volunteer at a dog and cat shelter.
+        - Both my husband and I volunteer at an animal rescue centre.
+        - Both my husband and I volunteer at an animal rescue center.
+        - My husband and I both volunteer at an animal shelter.
+        - My husband and I both volunteer at an animal rescue centre.
+        - My husband and I both volunteer at a dog and cat shelter.
+        - Both my husband and I do voluntary work at an animal shelter.
+        - Both my husband and I work as volunteers at an animal shelter.
+        - Both my husband and I volunteer at a shelter for dogs and cats.
+        - Both my husband and I volunteer at a shelter for cats and dogs.
+        - Both my husband and I volunteer at a cat and dog shelter.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: Both my husband and I volunteers at an animal shelter.
+        feedback_vi: Both … and đi với động từ số nhiều - volunteer, không thêm -s.
+        error_tag: both_agreement
+      - answer: Both my husband or I volunteer at an animal shelter.
+        feedback_vi: Both đi với and, không đi với or.
+        error_tag: both_and
+      - answer: Both I and my husband volunteer at an animal shelter.
+        feedback_vi: Tiếng Anh lịch sự đặt người khác trước, I sau cùng - my husband and I.
+        error_tag: word_order
+    explanation:
+      vi: "\"Cả… và… đều\" là both … and, động từ số nhiều (volunteer). Tiếng Anh đặt I sau cùng khi liệt kê - my husband and I."
+    display_answer: Both my husband and I volunteer at an animal shelter.
+
+  - key: en:exercise:comfut-so-translate-me-neither
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:me-neither
+    prompt:
+      source_text: "\"Tôi chưa bao giờ quyên góp máu.\" - \"Tôi cũng chưa.\""
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "\"I've never donated blood.\" - \"Neither have I.\""
+        - "\"I have never donated blood.\" - \"Neither have I.\""
+        - "\"I've never donated blood.\" - \"Me neither.\""
+        - "\"I have never donated blood.\" - \"Me neither.\""
+        - "\"I've never donated blood.\" - \"Nor have I.\""
+        - "\"I have never donated blood.\" - \"Nor have I.\""
+        - "\"I've never given blood.\" - \"Neither have I.\""
+        - "\"I've never given blood.\" - \"Me neither.\""
+        - "\"I have never given blood.\" - \"Neither have I.\""
+        - "\"I've never given blood.\" - \"Nor have I.\""
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: "\"I've never donated blood.\" - \"Me too.\""
+        feedback_vi: Never làm câu thành phủ định, nên đáp Me neither hoặc Neither have I.
+        error_tag: me_too_neither
+      - answer: "\"I've never donated blood.\" - \"Neither haven't I.\""
+        feedback_vi: Neither đã phủ định - dùng Neither have I.
+        error_tag: double_negative
+      - answer: "\"I've never donated blood.\" - \"Neither do I.\""
+        feedback_vi: Câu trước dùng have (hiện tại hoàn thành) nên đáp Neither have I.
+        error_tag: auxiliary_match
+    explanation:
+      vi: "\"Chưa bao giờ\" là hiện tại hoàn thành với never - câu phủ định. Đồng tình dùng Neither/Nor have I (khớp trợ động từ have) hoặc Me neither. Hiến máu là donate blood hoặc give blood."
+    display_answer: "\"I've never donated blood.\" - \"Neither have I.\""
+
+  # ---------------- application ----------------
+  - key: en:exercise:comfut-so-mcq-plan
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:charity
+    prompt:
+      stem: "Nhóm bạn lên kế hoạch gây quỹ từ thiện. Một người nói: \"I don't want to sell cakes again.\" Bạn đồng tình và đề xuất chọn một trong hai: bán sách cũ hoặc tổ chức buổi hoà nhạc. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: j8a, text: "Neither do I. We could either sell old books or organise a small concert.", lang: en }
+        - { id: s2r, text: "Me too. We could either sell old books and organise a small concert.", lang: en }
+        - { id: f5v, text: "So do I. We could neither sell old books or organise a small concert.", lang: en }
+        - { id: u4b, text: "Neither don't I. We could both sell old books or organise a small concert.", lang: en }
+    answer:
+      correct_option_id: j8a
+    explanation:
+      vi: Câu gốc phủ định (don't want) nên đồng tình bằng Neither do I. Chọn một trong hai dùng either … or. Các phương án khác dùng Me too/So do I cho câu phủ định hoặc ghép sai cặp liên từ.
+    display_answer: "Neither do I. We could either sell old books or organise a small concert."
+
+  - key: en:exercise:comfut-so-order-donate
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:donate
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Cả hai công ty đều quyên góp tiền cho bệnh viện.\""
+      tokens:
+        - { id: t-money, text: money }
+        - { id: t-both, text: Both companies }
+        - { id: t-hospital, text: to the hospital }
+        - { id: t-donated, text: donated }
+        - { id: t-either, text: Either company }
+    answer:
+      orders:
+        - [t-both, t-donated, t-money, t-hospital]
+    explanation:
+      vi: "\"Cả hai\" là both + danh từ số nhiều (both companies). Donate something to somebody - donated money to the hospital. Either company nghĩa là \"một trong hai\"."
+    display_answer: Both companies donated money to the hospital.
+
+  - key: en:exercise:comfut-so-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:both-and
+    prompt:
+      source_text: Both the volunteers and the residents were tired, but neither group wanted to stop before the park was clean.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cả tình nguyện viên lẫn cư dân đều mệt, nhưng không nhóm nào muốn dừng lại trước khi công viên sạch sẽ.
+        - Cả các tình nguyện viên và cư dân đều mệt, nhưng không nhóm nào muốn dừng lại trước khi công viên sạch.
+        - Cả tình nguyện viên và cư dân đều mệt, nhưng chẳng nhóm nào muốn dừng trước khi công viên được dọn sạch.
+        - Cả tình nguyện viên lẫn người dân đều mệt, nhưng không nhóm nào muốn nghỉ trước khi công viên sạch sẽ.
+        - Cả tình nguyện viên và cư dân đều mệt mỏi, nhưng không bên nào muốn dừng lại trước khi công viên sạch sẽ.
+        - Tình nguyện viên và cư dân đều mệt, nhưng không nhóm nào muốn dừng lại khi công viên chưa sạch.
+        - Cả tình nguyện viên lẫn cư dân đều mệt, nhưng không nhóm nào muốn dừng lại cho đến khi công viên sạch sẽ.
+        - Cả tình nguyện viên lẫn cư dân đều đã mệt, nhưng không nhóm nào muốn dừng trước khi công viên sạch.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Both … and là "cả… lẫn/và… đều"; neither group là "không nhóm nào" (neither + danh từ số ít). Câu tiếng Việt tự nhiên hơn khi thêm "đều".
+    display_answer: Cả tình nguyện viên lẫn cư dân đều mệt, nhưng không nhóm nào muốn dừng lại trước khi công viên sạch sẽ.

@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: en:lesson:community-future-review
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập - Bài đăng nhóm cư dân và kế hoạch ngày dọn dẹp
+objectives:
+  - vi: Đọc hiểu một bài đăng trong nhóm cư dân có dự đoán, quy định và lời kêu gọi.
+  - vi: Phản hồi trong một cuộc trò chuyện nhóm - đồng tình, đưa lựa chọn, nói mục đích.
+  - vi: Kết hợp may/might, make/let/allow, so/neither, both/either và to/so that trong một tình huống thật.
+estimated_minutes: 25
+skills: [reading, writing, speaking]
+prerequisites: [en:lesson:community-future-purpose]
+items:
+  - item: en:item:clean-up-day
+  - item: en:item:sign-up-for
+  - item: en:item:might-may-future
+    role: reuse
+  - item: en:item:i-doubt
+    role: reuse
+  - item: en:item:make-someone-do
+    role: reuse
+  - item: en:item:let-someone-do
+    role: reuse
+  - item: en:item:allow-someone-to
+    role: reuse
+  - item: en:item:so-do-i
+    role: reuse
+  - item: en:item:neither-do-i
+    role: reuse
+  - item: en:item:either-or
+    role: reuse
+  - item: en:item:to-of-purpose
+    role: reuse
+  - item: en:item:so-that
+    role: reuse
+  - item: en:item:litter
+    role: reuse
+  - item: en:item:volunteer
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn tập này đặt bạn vào nhóm chat của một khu chung cư - ban quản lý thông báo quy định mới, cư dân dự đoán chuyện gì có thể xảy ra, rồi cùng lên kế hoạch cho một ngày dọn dẹp chung.
+  - type: explain
+    text:
+      vi: "Một bài kêu gọi hiệu quả thường có - vấn đề (Litter in the park might attract rats), giải pháp và mục đích (We're organising a clean-up to…), cách tham gia (You can either… or…; Sign up for… so that we can…)."
+  - type: explain
+    text:
+      vi: "Khi trả lời trong nhóm, giữ câu ngắn và đúng trợ động từ - So am I! / Neither can I. / I doubt it. / It depends on the weather. Đây là những phản hồi người bản ngữ dùng hằng ngày."
+  - type: deep_explain
+    text:
+      vi: "Sign up for + sự kiện (sign up for the clean-up); sign up + to + V (sign up to help). Clean-up có gạch nối khi là danh từ (a beach clean-up), viết rời khi là động từ (We'll clean up the beach). Thông báo chính thức hay dùng in order to và allow; tin nhắn giữa hàng xóm dùng to và let cho thân mật."
+  - type: example
+    target: "From next month, the management will make all residents separate food waste, and they won't let anyone leave rubbish bags in the corridor."
+    target_lang: en
+    translation:
+      vi: Từ tháng sau, ban quản lý sẽ bắt mọi cư dân tách rác thực phẩm, và không cho ai để túi rác ngoài hành lang.
+    note:
+      vi: Make + người + V; let + người + V.
+  - type: example
+    target: "If nobody cleans the playground, it might become dangerous for the kids. Let's organise a clean-up day so that everyone can help a little."
+    target_lang: en
+    translation:
+      vi: Nếu không ai dọn sân chơi, nó có thể trở nên nguy hiểm cho bọn trẻ. Mình tổ chức một ngày dọn dẹp để ai cũng góp một tay nhé.
+    note:
+      vi: Might cho dự đoán; so that + chủ ngữ + can.
+  - type: example
+    target: "A: I can't come on Saturday. B: Neither can I. Could we either do it on Sunday or after work on Friday?"
+    target_lang: en
+    translation:
+      vi: "A: Thứ Bảy tôi không đến được. B: Tôi cũng không. Mình làm vào Chủ nhật hoặc sau giờ làm thứ Sáu được không?"
+    note:
+      vi: Neither can I; either … or.
+  - type: common_mistake
+    wrong: Please sign up the clean-up on the noticeboard.
+    right: Please sign up for the clean-up on the noticeboard.
+    target_lang: en
+    note:
+      vi: Đăng ký tham gia một sự kiện là sign up for.
+  - type: common_mistake
+    wrong: "A: I'm going to bring gloves. B: So I am."
+    right: "A: I'm going to bring gloves. B: So am I."
+    target_lang: en
+    note:
+      vi: Đồng tình phải đảo trật tự - So am I.
+  - type: summary
+    points:
+      - vi: Bài kêu gọi - vấn đề (might/may), giải pháp + mục đích (to, so that), cách tham gia (either … or, sign up for).
+      - vi: Quy định - make / let + người + V · allow + người + to + V.
+      - vi: Phản hồi ngắn - So am I / Neither can I / I doubt it / It depends.
+      - vi: a clean-up (day) · sign up for.
+exercises:
+  # ---------------- recognition ----------------
+  - key: en:exercise:comfut-review-mcq-read-post
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:allow-someone-to
+    prompt:
+      stem: "Đọc thông báo: \"The new rules allow residents to use the rooftop until 10 p.m., but they don't let children go up there without an adult.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: p4e, text: "Cư dân được dùng sân thượng đến 10 giờ tối, nhưng trẻ em không được lên đó nếu không có người lớn.", lang: vi }
+        - { id: t9k, text: "Cư dân phải lên sân thượng trước 10 giờ tối và phải mang theo trẻ em.", lang: vi }
+        - { id: b3s, text: "Trẻ em được lên sân thượng một mình đến 10 giờ tối.", lang: vi }
+        - { id: n6w, text: "Quy định mới cấm cư dân dùng sân thượng sau 10 giờ sáng.", lang: vi }
+    answer:
+      correct_option_id: p4e
+    explanation:
+      vi: Allow residents to use là "cho phép cư dân dùng"; don't let children go up there without an adult là "không cho trẻ em lên nếu không có người lớn". 10 p.m. là 10 giờ tối.
+    display_answer: "Cư dân được dùng sân thượng đến 10 giờ tối, nhưng trẻ em không được lên đó nếu không có người lớn."
+
+  - key: en:exercise:comfut-review-mcq-reply
+    type: mcq
+    stage: recognition
+    answer_lang: en
+    difficulty: 3
+    item: en:item:neither-do-i
+    prompt:
+      stem: "Trong nhóm chat, một hàng xóm viết: \"I didn't know about the new parking rules.\" Bạn cũng không biết. Câu đáp nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c8f, text: "Neither did I.", lang: en }
+        - { id: j5m, text: "So did I.", lang: en }
+        - { id: x1a, text: "Neither didn't I.", lang: en }
+        - { id: r2h, text: "Me too.", lang: en }
+    answer:
+      correct_option_id: c8f
+    explanation:
+      vi: Câu gốc phủ định ở quá khứ (didn't know), nên đồng tình bằng Neither did I. So did I và Me too dùng cho câu khẳng định.
+    display_answer: "Neither did I."
+
+  - key: en:exercise:comfut-review-listen-sign-up
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:sign-up-for
+    prompt:
+      audio_asset_id: null
+      fallback_text: Please sign up for the clean-up by Thursday so that we can buy enough gloves and bags for everyone.
+      options:
+        - { id: k7d, text: "Vui lòng đăng ký tham gia buổi dọn dẹp trước thứ Năm để chúng tôi mua đủ găng tay và túi cho mọi người.", lang: vi }
+        - { id: o4u, text: "Vui lòng mang găng tay và túi đến buổi dọn dẹp vào thứ Năm.", lang: vi }
+        - { id: e8z, text: "Buổi dọn dẹp bị huỷ vì chúng tôi không mua đủ găng tay và túi.", lang: vi }
+        - { id: y6b, text: "Vui lòng đăng ký trước thứ Năm, nếu không bạn phải tự mua găng tay.", lang: vi }
+    answer:
+      correct_option_id: k7d
+    explanation:
+      vi: Sign up for the clean-up by Thursday là "đăng ký tham gia buổi dọn dẹp trước thứ Năm"; so that we can buy enough… là mục đích - "để chúng tôi mua đủ…".
+    display_answer: "Vui lòng đăng ký tham gia buổi dọn dẹp trước thứ Năm để chúng tôi mua đủ găng tay và túi cho mọi người."
+
+  # ---------------- recall ----------------
+  - key: en:exercise:comfut-review-fill-make-let
+    type: fill_blank
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:make-someone-do
+    prompt:
+      template: "The park keeper {{b1}} us wear gloves, but he {{b2}} us take the plants home after the clean-up."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [made, makes]
+        b2: [let, lets]
+    known_wrong:
+      - answer: allowed
+        feedback_vi: Sau chỗ trống là us take (không có to), nên dùng let. Allow cần to - allowed us to take.
+        error_tag: let_allow
+      - answer: let us to
+        feedback_vi: Let không có to.
+        error_tag: let_to
+    explanation:
+      vi: Bắt đeo găng là make + người + V (made us wear); cho mang cây về là let + người + V (let us take). Cả hai không có to; quá khứ của let vẫn là let.
+    display_answer: The park keeper made us wear gloves, but he let us take the plants home after the clean-up.
+
+  - key: en:exercise:comfut-review-translate-might
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 3
+    item: en:item:might-may-future
+    prompt:
+      source_text: Chủ nhật này có thể sẽ mưa, nên chúng ta có thể dời buổi dọn dẹp sang tuần sau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - It might rain this Sunday, so we could move the clean-up to next week.
+        - It may rain this Sunday, so we could move the clean-up to next week.
+        - It might rain this Sunday, so we might move the clean-up to next week.
+        - It might rain this Sunday, so we can move the clean-up to next week.
+        - It might rain this Sunday, so we could postpone the clean-up until next week.
+        - It might rain this Sunday, so we could postpone the clean-up to next week.
+        - It may rain this Sunday, so we could postpone the clean-up until next week.
+        - It might rain this Sunday, so we could move the clean-up to the following week.
+        - It might rain on Sunday, so we could move the clean-up to next week.
+        - It might rain this Sunday, so we could put off the clean-up until next week.
+        - It might rain this Sunday, so we could put the clean-up off until next week.
+        - It could rain this Sunday, so we could move the clean-up to next week.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: It might rains this Sunday, so we could move the clean-up to next week.
+        feedback_vi: Sau might là động từ nguyên mẫu - rain.
+        error_tag: modal_verb_form
+      - answer: It might will rain this Sunday, so we could move the clean-up to next week.
+        feedback_vi: Không dùng might cùng will.
+        error_tag: modal_double
+      - answer: Might rain this Sunday, so we could move the clean-up to next week.
+        feedback_vi: Câu nói thời tiết cần chủ ngữ it - It might rain.
+        error_tag: missing_subject
+    explanation:
+      vi: "\"Có thể sẽ mưa\" là It might/may rain - cần chủ ngữ it. \"Chúng ta có thể dời\" là gợi ý, dùng could move/postpone."
+    display_answer: It might rain this Sunday, so we could move the clean-up to next week.
+
+  - key: en:exercise:comfut-review-translate-either
+    type: translate
+    stage: recall
+    answer_lang: en
+    difficulty: 4
+    item: en:item:either-or
+    prompt:
+      source_text: Bạn có thể quyên góp tiền hoặc làm tình nguyện viên vào hôm đó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - You can either donate money or volunteer on the day.
+        - You can either donate money or be a volunteer on the day.
+        - You can either donate money or volunteer on that day.
+        - You can either donate money or be a volunteer on that day.
+        - You can either give money or volunteer on the day.
+        - You could either donate money or volunteer on the day.
+        - You can donate money or volunteer on the day.
+        - You can donate money or be a volunteer on the day.
+        - You can either make a donation or volunteer on the day.
+        - You can either donate money or work as a volunteer on the day.
+        - You can donate money or volunteer on that day.
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: You can either donate money and volunteer on the day.
+        feedback_vi: Either đi với or, không đi với and.
+        error_tag: either_or
+      - answer: You can either donate money or volunteering on the day.
+        feedback_vi: Hai vế sau either … or cùng dạng - donate … or volunteer.
+        error_tag: parallel_structure
+      - answer: You can neither donate money or volunteer on the day.
+        feedback_vi: Neither nghĩa là "không"; chọn một trong hai là either … or.
+        error_tag: either_neither
+    explanation:
+      vi: "\"Hoặc… hoặc…\" là either … or, hai vế cùng dạng động từ nguyên mẫu (donate / volunteer). Vào hôm đó là on the day (đã nhắc ở trước)."
+    display_answer: You can either donate money or volunteer on the day.
+
+  # ---------------- application ----------------
+  - key: en:exercise:comfut-review-mcq-post
+    type: mcq
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:clean-up-day
+    prompt:
+      stem: "Bạn viết bài đăng kêu gọi: rác ở bờ hồ có thể làm cá chết; bạn tổ chức ngày dọn dẹp để hồ sạch lại; mọi người có thể đăng ký để bạn chuẩn bị đủ dụng cụ. Đoạn nào đúng hoàn toàn?"
+      stem_lang: vi
+      options:
+        - { id: u5x, text: "The litter around the lake might kill the fish. We're organising a clean-up day to make the lake clean again. Please sign up for it so that we can prepare enough tools.", lang: en }
+        - { id: h9r, text: "The litter around the lake might kills the fish. We're organising a clean up day for make the lake clean again. Please sign up it so that we can prepare enough tools.", lang: en }
+        - { id: s2o, text: "The litters around the lake might will kill the fish. We're organising a clean-up day to make the lake clean again. Please sign up for it so that to prepare enough tools.", lang: en }
+        - { id: f7g, text: "The litter around the lake may to kill the fish. We're organising a clean-up day so that make the lake clean again. Please sign for it so we prepare enough tools.", lang: en }
+    answer:
+      correct_option_id: u5x
+    explanation:
+      vi: Might + V nguyên mẫu (kill), to + V cho mục đích, sign up for + sự kiện, so that + chủ ngữ + can. Litter không đếm được nên không thêm -s; các phương án khác sai ít nhất một cấu trúc.
+    display_answer: "The litter around the lake might kill the fish. We're organising a clean-up day to make the lake clean again. Please sign up for it so that we can prepare enough tools."
+
+  - key: en:exercise:comfut-review-order-so-that
+    type: word_bank
+    stage: application
+    answer_lang: en
+    difficulty: 3
+    item: en:item:so-that
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Anh: \"Chúng tôi bắt đầu sớm để có thể xong trước buổi trưa.\""
+      tokens:
+        - { id: t-finish, text: could finish }
+        - { id: t-noon, text: before noon }
+        - { id: t-we-started, text: We started early }
+        - { id: t-so-that, text: so that }
+        - { id: t-we, text: we }
+        - { id: t-to, text: to }
+    answer:
+      orders:
+        - [t-we-started, t-so-that, t-we, t-finish, t-noon]
+    explanation:
+      vi: So that + chủ ngữ (we) + could + V (finish). To là token thừa vì so that không đi với to. Câu ở quá khứ nên dùng could.
+    display_answer: We started early so that we could finish before noon.
+
+  - key: en:exercise:comfut-review-translate-doubt-en
+    type: translate
+    stage: application
+    answer_lang: en
+    difficulty: 4
+    item: en:item:i-doubt
+    prompt:
+      source_text: "\"Ban quản lý sẽ cho chúng ta trồng rau trên sân thượng chứ?\" - \"Tôi không nghĩ vậy.\""
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "\"Will the management let us grow vegetables on the rooftop?\" - \"I doubt it.\""
+        - "\"Will the management let us grow vegetables on the roof?\" - \"I doubt it.\""
+        - "\"Will the management allow us to grow vegetables on the rooftop?\" - \"I doubt it.\""
+        - "\"Will the management allow us to grow vegetables on the roof?\" - \"I doubt it.\""
+        - "\"Will the management let us grow vegetables on the rooftop?\" - \"I don't think so.\""
+        - "\"Will the management allow us to grow vegetables on the rooftop?\" - \"I don't think so.\""
+        - "\"Will the management let us grow vegetables on the roof?\" - \"I don't think so.\""
+        - "\"Will the building management let us grow vegetables on the rooftop?\" - \"I doubt it.\""
+        - "\"Will the management board let us grow vegetables on the rooftop?\" - \"I doubt it.\""
+        - "\"Will the management let us grow vegetables on the rooftop?\" - \"I doubt that.\""
+    rubric:
+      typo_tolerance: 1
+    known_wrong:
+      - answer: "\"Will the management let us to grow vegetables on the rooftop?\" - \"I doubt it.\""
+        feedback_vi: Let không có to - let us grow.
+        error_tag: let_to
+      - answer: "\"Will the management let us grow vegetables on the rooftop?\" - \"I don't doubt it.\""
+        feedback_vi: I don't doubt it nghĩa là "tôi chắc chắn vậy" - ngược nghĩa.
+        error_tag: doubt_meaning
+      - answer: "\"Will the management allow us grow vegetables on the rooftop?\" - \"I doubt it.\""
+        feedback_vi: Allow cần to - allow us to grow.
+        error_tag: allow_to
+      - answer: "\"Will the management let us grow vegetables on the rooftop?\" - \"I don't think.\""
+        feedback_vi: Câu trả lời ngắn cần so - I don't think so.
+        error_tag: think_so
+    explanation:
+      vi: "\"Cho chúng ta trồng\" - let us grow hoặc allow us to grow. \"Tôi không nghĩ vậy\" trả lời ngắn là I doubt it hoặc I don't think so."
+    display_answer: "\"Will the management let us grow vegetables on the rooftop?\" - \"I doubt it.\""
+
+  - key: en:exercise:comfut-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: en:item:volunteer
+    prompt:
+      source_text: Thanks to forty volunteers, the park is clean again, and the council has agreed to put in more bins so that it stays that way.
+      source_lang: en
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhờ bốn mươi tình nguyện viên, công viên đã sạch trở lại, và chính quyền địa phương đã đồng ý lắp thêm thùng rác để công viên luôn sạch như vậy.
+        - Nhờ có bốn mươi tình nguyện viên, công viên sạch sẽ trở lại, và chính quyền đã đồng ý đặt thêm thùng rác để giữ công viên sạch như thế.
+        - Nhờ bốn mươi tình nguyện viên mà công viên đã sạch lại, và chính quyền địa phương đã đồng ý đặt thêm thùng rác để nó luôn sạch như vậy.
+        - Nhờ bốn mươi tình nguyện viên, công viên đã sạch trở lại, và phường đã đồng ý lắp thêm thùng rác để công viên giữ được như vậy.
+        - Nhờ bốn mươi tình nguyện viên, công viên đã sạch sẽ trở lại, và chính quyền đã đồng ý lắp thêm thùng rác để công viên luôn sạch.
+        - Nhờ có bốn mươi tình nguyện viên, công viên đã sạch trở lại, và chính quyền địa phương đồng ý lắp thêm thùng rác để công viên luôn sạch như vậy.
+        - Nhờ bốn mươi tình nguyện viên, công viên đã sạch trở lại và chính quyền địa phương đã đồng ý đặt thêm thùng rác để giữ cho nó luôn sạch.
+        - Nhờ 40 tình nguyện viên, công viên đã sạch trở lại, và chính quyền địa phương đã đồng ý lắp thêm thùng rác để công viên luôn sạch như vậy.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: Thanks to là "nhờ"; the council là "chính quyền địa phương"; so that it stays that way là mục đích - "để công viên luôn (sạch) như vậy".
+    display_answer: Nhờ bốn mươi tình nguyện viên, công viên đã sạch trở lại, và chính quyền địa phương đã đồng ý lắp thêm thùng rác để công viên luôn sạch như vậy.
