@@ -148,8 +148,8 @@
   border: 1px solid var(--border);
   background: var(--card-bg);
   box-shadow: var(--card-sheen), var(--shadow-card);
-  -webkit-backdrop-filter: blur(var(--card-blur, 0px));
-  backdrop-filter: blur(var(--card-blur, 0px));
+  /* No backdrop-filter here: even blur(0px) gives every card its own backdrop layer, which on software-rendered
+     WebKit grew a page with many cards to 15 GB. Styles that want frosted cards opt in (styles.css). */
 }
 /* Display heading (F1 / CARGOX): condensed, uppercase, tight. */
 @utility page-title {
