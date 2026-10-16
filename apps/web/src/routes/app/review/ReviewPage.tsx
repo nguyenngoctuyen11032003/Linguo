@@ -29,7 +29,12 @@ function isTypingTarget(target: EventTarget | null): boolean {
 }
 
 function Heading() {
-  return <h1 className="page-title-lg">{TITLE}</h1>;
+  // Wrapped: .page-title-lg sets margin: 0 outside the utility layer, which would cancel the parent's space-y gap.
+  return (
+    <div className="min-w-0">
+      <h1 className="page-title-lg">{TITLE}</h1>
+    </div>
+  );
 }
 
 /** /app/on-tap: the daily flashcard review (spec 3 §6). Scheduling stays on the server; this screen only rates. */

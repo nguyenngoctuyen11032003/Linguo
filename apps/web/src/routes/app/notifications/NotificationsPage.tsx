@@ -162,7 +162,7 @@ export function NotificationsPage() {
   return (
     <div className="space-y-6 lg:space-y-8">
       <Title unread={items.filter((i) => !i.read_at).length} />
-      <ul ref={listRef} aria-label="Danh sách thông báo" className="reveal-stagger grid gap-2.5 lg:grid-cols-2 lg:gap-4">
+      <ul ref={listRef} aria-label="Danh sách thông báo" className="reveal-stagger grid max-w-3xl gap-2.5 lg:gap-3">
         {items.map((item) => (
           <NotificationRow key={item.id} item={item} onOpen={open} />
         ))}
@@ -173,7 +173,7 @@ export function NotificationsPage() {
         </p>
       )}
       {hasMore && (
-        <div className="flex justify-center">
+        <div className="flex max-w-3xl justify-center">
           <Button ref={moreRef} variant="ghost" loading={loadingMore} onClick={() => void showMore()}>
             Xem thêm
           </Button>

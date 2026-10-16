@@ -29,6 +29,7 @@ import { useProfile } from '@/features/profile/ProfileProvider';
 import { cn } from '@/lib/cn';
 import { todayIso } from '@/lib/dates';
 import { requireSupabase } from '@/lib/supabase';
+import { SelectChevron, SELECT_WITH_CHEVRON } from './SelectChevron';
 
 interface Props {
   path: LearningPath;
@@ -136,43 +137,47 @@ export function PathPlanEditor({ path, onSaved, onCancel, onSavingChange }: Prop
     <form noValidate onSubmit={save} className="space-y-4 border-t border-border pt-4">
       <FormField label="Mục tiêu">
         {({ invalid, ...a11y }) => (
-          <select
-            {...a11y}
-            aria-invalid={invalid || undefined}
-            value={goalType}
-            onChange={(e) => {
-              const g = e.target.value as GoalType;
-              setError(null);
-              setGoalType(g);
-              // Coming back to the saved goal restores the saved target instead of a fresh default.
-              setTargetLevel(savedOrDefaultTarget(path, g));
-            }}
-            className={cn(inputClasses(invalid), 'appearance-none')}
-          >
-            {GOALS_BY_LANGUAGE[path.language].map((g) => (
-              <option key={g} value={g}>
-                {GOAL_LABELS[g]}
-              </option>
-            ))}
-          </select>
+          <SelectChevron>
+            <select
+              {...a11y}
+              aria-invalid={invalid || undefined}
+              value={goalType}
+              onChange={(e) => {
+                const g = e.target.value as GoalType;
+                setError(null);
+                setGoalType(g);
+                // Coming back to the saved goal restores the saved target instead of a fresh default.
+                setTargetLevel(savedOrDefaultTarget(path, g));
+              }}
+              className={cn(inputClasses(invalid), SELECT_WITH_CHEVRON)}
+            >
+              {GOALS_BY_LANGUAGE[path.language].map((g) => (
+                <option key={g} value={g}>
+                  {GOAL_LABELS[g]}
+                </option>
+              ))}
+            </select>
+          </SelectChevron>
         )}
       </FormField>
       <FormField label="Bậc mục tiêu" error={targetError}>
         {({ invalid, ...a11y }) => (
-          <select
-            {...a11y}
-            ref={targetRef}
-            aria-invalid={invalid || undefined}
-            value={targetLevel}
-            onChange={(e) => changed(setTargetLevel)(e.target.value)}
-            className={cn(inputClasses(invalid), 'appearance-none')}
-          >
-            {targets.map((code) => (
-              <option key={code} value={code}>
-                {LEVEL_INFO[code].label}
-              </option>
-            ))}
-          </select>
+          <SelectChevron>
+            <select
+              {...a11y}
+              ref={targetRef}
+              aria-invalid={invalid || undefined}
+              value={targetLevel}
+              onChange={(e) => changed(setTargetLevel)(e.target.value)}
+              className={cn(inputClasses(invalid), SELECT_WITH_CHEVRON)}
+            >
+              {targets.map((code) => (
+                <option key={code} value={code}>
+                  {LEVEL_INFO[code].label}
+                </option>
+              ))}
+            </select>
+          </SelectChevron>
         )}
       </FormField>
       <div className="space-y-2">

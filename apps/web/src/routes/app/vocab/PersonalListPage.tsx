@@ -239,33 +239,36 @@ export function PersonalListPage() {
                     {word.note && <span className="mt-0.5 block text-sm text-muted">{word.note}</span>}
                   </td>
                   <td className="hidden px-3 py-3 text-sm text-muted sm:table-cell">{STATE_LABELS[word.fsrs_state]}</td>
-                  <td className="whitespace-nowrap px-1 py-1 text-right">
-                    <button
-                      type="button"
-                      aria-label={`Sửa từ ${word.term}`}
-                      onClick={(e) => {
-                        rowTrigger.current = e.currentTarget;
-                        setEditing(word);
-                      }}
-                      className="inline-flex size-11 items-center justify-center rounded-full text-muted hover:bg-text/5 hover:text-text"
-                    >
-                      <Pencil aria-hidden className="size-4" />
-                    </button>
-                    <button
-                      ref={(el) => {
-                        if (el) deleteButtons.current.set(word.id, el);
-                        else deleteButtons.current.delete(word.id);
-                      }}
-                      type="button"
-                      aria-label={`Xoá từ ${word.term}`}
-                      onClick={(e) => {
-                        rowTrigger.current = e.currentTarget;
-                        setRemoving(word);
-                      }}
-                      className="inline-flex size-11 items-center justify-center rounded-full text-muted hover:bg-error/10 hover:text-error"
-                    >
-                      <Trash2 aria-hidden className="size-4" />
-                    </button>
+                  <td className="px-1 py-1">
+                    {/* Stacked on the narrowest phones so the meaning column keeps room for whole words. */}
+                    <div className="flex flex-col items-end min-[400px]:flex-row min-[400px]:justify-end">
+                      <button
+                        type="button"
+                        aria-label={`Sửa từ ${word.term}`}
+                        onClick={(e) => {
+                          rowTrigger.current = e.currentTarget;
+                          setEditing(word);
+                        }}
+                        className="inline-flex size-11 items-center justify-center rounded-full text-muted hover:bg-text/5 hover:text-text"
+                      >
+                        <Pencil aria-hidden className="size-4" />
+                      </button>
+                      <button
+                        ref={(el) => {
+                          if (el) deleteButtons.current.set(word.id, el);
+                          else deleteButtons.current.delete(word.id);
+                        }}
+                        type="button"
+                        aria-label={`Xoá từ ${word.term}`}
+                        onClick={(e) => {
+                          rowTrigger.current = e.currentTarget;
+                          setRemoving(word);
+                        }}
+                        className="inline-flex size-11 items-center justify-center rounded-full text-muted hover:bg-error/10 hover:text-error"
+                      >
+                        <Trash2 aria-hidden className="size-4" />
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}

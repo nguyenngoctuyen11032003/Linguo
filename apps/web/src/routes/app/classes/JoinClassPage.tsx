@@ -20,7 +20,7 @@ export function JoinClassPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 lg:max-w-3xl">
       <div>
         <h1 className="page-title">Tham gia lớp học</h1>
         <p className="mt-2 max-w-prose text-[15px] text-muted">

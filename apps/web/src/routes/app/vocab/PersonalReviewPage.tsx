@@ -54,7 +54,7 @@ export function PersonalReviewPage() {
 
   if (status === 'loading') {
     return (
-      <div className="space-y-6">
+      <div className="mx-auto w-full max-w-[46rem] space-y-6">
         {heading}
         <div role="status" className="space-y-4">
           <span className="sr-only">Đang tải thẻ ôn…</span>
@@ -68,7 +68,7 @@ export function PersonalReviewPage() {
 
   if (status === 'error') {
     return (
-      <div className="space-y-6">
+      <div className="mx-auto w-full max-w-[46rem] space-y-6">
         {heading}
         <ErrorState title="Không tải được thẻ ôn" description={session.error ?? undefined} onRetry={session.retry} />
       </div>
@@ -77,7 +77,7 @@ export function PersonalReviewPage() {
 
   if (status === 'empty') {
     return (
-      <div className="space-y-6">
+      <div className="mx-auto w-full max-w-[46rem] space-y-6">
         {heading}
         <EmptyState
           icon={CalendarCheck}
@@ -95,7 +95,7 @@ export function PersonalReviewPage() {
 
   if (status === 'finished' || !card) {
     return (
-      <div className="space-y-6">
+      <div className="mx-auto w-full max-w-[46rem] space-y-6">
         {heading}
         <SolidCard className="relative isolate flex flex-col items-center gap-4 overflow-hidden px-6 py-10 text-center">
           <div aria-hidden="true" className="absolute -top-16 left-1/2 -z-10 size-56 -translate-x-1/2 rounded-full bg-radial from-accent/20 to-transparent to-70%" />
@@ -142,7 +142,7 @@ export function PersonalReviewPage() {
 
   const flipped = cardState !== 'front';
   return (
-    <div className="space-y-5">
+    <div className="mx-auto w-full max-w-[46rem] space-y-5">
       {heading}
       <div className="flex flex-wrap items-center justify-between gap-2">
         <h2 ref={cardHeadingRef} tabIndex={-1} className="eyebrow tabular-nums focus:outline-none">

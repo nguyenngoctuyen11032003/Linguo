@@ -38,6 +38,7 @@ import { COLLAPSIBLE_SECTION_IDS, jumpToSection, SECTION_HEADING_CLASS, SECTION_
 import { SettingsJumpList } from './settings/SettingsJumpList';
 import { PageHeader } from './PageHeader';
 import { timeZoneLabel, timeZoneOptions } from './settings/timezones';
+import { SelectChevron, SELECT_WITH_CHEVRON } from './settings/SelectChevron';
 
 const THEME_OPTIONS: Array<{ value: ThemePreference; label: string; short?: string; icon: typeof Sun }> = [
   { value: 'light', label: 'Sáng', icon: Sun },
@@ -292,7 +293,7 @@ export function SettingsPage() {
                   <span className="eyebrow block">
                     Email<span className="sr-only">:</span>
                   </span>
-                  <span className="mt-0.5 block truncate text-[15px] font-medium">{user?.email}</span>
+                  <span className="mt-0.5 block text-[15px] font-medium [overflow-wrap:anywhere]">{user?.email}</span>
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-2">
@@ -328,19 +329,21 @@ export function SettingsPage() {
                 error={errors.timezone}
               >
                 {({ invalid, ...a11y }) => (
-                  <select
-                    {...a11y}
-                    aria-invalid={invalid || undefined}
-                    value={timezone}
-                    onChange={(e) => setTimezone(e.target.value)}
-                    className={cn(inputClasses(invalid), 'appearance-none')}
-                  >
-                    {zones.map((zone) => (
-                      <option key={zone} value={zone}>
-                        {timeZoneLabel(zone)}
-                      </option>
-                    ))}
-                  </select>
+                  <SelectChevron>
+                    <select
+                      {...a11y}
+                      aria-invalid={invalid || undefined}
+                      value={timezone}
+                      onChange={(e) => setTimezone(e.target.value)}
+                      className={cn(inputClasses(invalid), SELECT_WITH_CHEVRON)}
+                    >
+                      {zones.map((zone) => (
+                        <option key={zone} value={zone}>
+                          {timeZoneLabel(zone)}
+                        </option>
+                      ))}
+                    </select>
+                  </SelectChevron>
                 )}
               </FormField>
               <Button type="submit" variant="primary" loading={saving}>
