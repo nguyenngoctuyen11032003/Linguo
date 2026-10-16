@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import type { StudySession } from '@linguo/shared';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { sessionMinutes } from './session-summary';
 import { SessionSummaryButton } from './SessionSummaryButton';
 
 interface Props {
@@ -13,18 +14,13 @@ interface Props {
   learner?: { language: 'en' | 'ko'; level: string } | null;
 }
 
-/** Whole minutes for display; a started minute counts once something was done. */
-function minutesOf(seconds: number): number {
-  return seconds <= 0 ? 0 : Math.max(1, Math.round(seconds / 60));
-}
-
 /** End of a session: time, activities, and a calm word — no streak pressure (spec 6 §4). */
 export function CompletionView({ session, onPlanAgain, learner }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const { activities } = session.plan;
   const done = activities.filter((a) => a.status === 'done').length;
   const skipped = activities.filter((a) => a.status === 'skipped').length;
-  const minutes = minutesOf(activities.reduce((sum, a) => sum + a.seconds_spent, 0));
+  const minutes = sessionMinutes(session);
 
   useEffect(() => {
     headingRef.current?.focus();

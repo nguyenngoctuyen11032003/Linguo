@@ -5,19 +5,11 @@ import { AiExplainSheet } from '@/components/ai';
 import { Button } from '@/components/ui/Button';
 import { getSessionRecap, type SessionMistake } from '@/features/session/service';
 import { getSupabase } from '@/lib/supabase';
-import { buildSessionSummaryRequest } from './session-summary';
+import { buildSessionSummaryRequest, sessionSummaryFallback } from './session-summary';
 
 interface Props {
   session: StudySession;
   learner: { language: 'en' | 'ko'; level: string };
-}
-
-/** What the learner still reads when the AI cannot write the recap: the same numbers, no AI. */
-function fallbackText(session: StudySession): { title: string; body: string } {
-  const { activities } = session.plan;
-  const done = activities.filter((a) => a.status === 'done').length;
-  const minutes = Math.round(activities.reduce((sum, a) => sum + a.seconds_spent, 0) / 60);
-  return { title: 'Phiên học hôm nay', body: `Bạn đã hoàn thành ${done}/${activities.length} hoạt động, khoảng ${minutes} phút.` };
 }
 
 /** "Tóm tắt phiên bằng AI" on the completion screen: asks summarize_session with a compact, client-built summary. */
@@ -36,7 +28,7 @@ export function SessionSummaryButton({ session, learner }: Props) {
 
   // The recap only adds error tags; without it (offline, error) the summary is built from the activities.
   const request = useMemo(() => buildSessionSummaryRequest(session, learner, mistakes ?? []), [session, learner, mistakes]);
-  const fallback = useMemo(() => fallbackText(session), [session]);
+  const fallback = useMemo(() => sessionSummaryFallback(session), [session]);
 
   async function openSheet() {
     if (loading) return;
