@@ -1,0 +1,355 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:watashi-wa-desu
+order_index: 2
+level: n5
+title:
+  vi: わたしは〜です - Tôi là…
+objectives:
+  - vi: Nói "Tôi là + nghề" bằng わたしは N です.
+  - vi: Viết đúng trợ từ は (đọc "wa") và đặt です ở cuối câu.
+  - vi: Gọi tên bốn nghề - がくせい, せんせい, かいしゃいん, いしゃ.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking, writing]
+prerequisites: [ja:lesson:greetings]
+items:
+  - item: ja:item:watashi
+  - item: ja:item:topic-wa
+  - item: ja:item:copula-desu
+  - item: ja:item:gakusei
+  - item: ja:item:sensei
+  - item: ja:item:kaishain
+  - item: ja:item:isha
+  - item: ja:item:konnichiwa
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự giới thiệu nghề của mình, ví dụ わたしはがくせいです (Tôi là sinh viên), わたしはいしゃです (Tôi là bác sĩ).
+  - type: explain
+    text:
+      vi: Câu "Tôi là sinh viên" tiếng Nhật có thứ tự わたし + は + がくせい + です - tức "tôi + thì + sinh viên + là". Chữ "là" (です) luôn đứng cuối câu, khác với tiếng Việt.
+  - type: explain
+    text:
+      vi: は đánh dấu chủ đề câu, gần "thì / còn" của tiếng Việt. Khi làm trợ từ, は viết bằng chữ は nhưng đọc "wa". です không đổi theo người hay số ít, số nhiều - tôi, anh ấy, họ đều dùng です.
+  - type: explain
+    text:
+      vi: Khi người nghe đã biết bạn đang nói về mình, người Nhật thường bỏ わたしは - chỉ nói がくせいです. Nói わたしは quá nhiều nghe hơi cứng.
+  - type: deep_explain
+    text:
+      vi: せんせい là cách gọi tôn trọng người khác (thầy, cô, bác sĩ), không dùng cho bản thân - giáo viên tự giới thiệu thì nói きょうしです. Chữ Hán của các từ trong bài - 私 (わたし), 学生 (がくせい), 先生 (せんせい), 会社員 (かいしゃいん), 医者 (いしゃ).
+  - type: example
+    target: こんにちは。わたしはがくせいです。
+    target_lang: ja
+    translation:
+      vi: Xin chào. Tôi là sinh viên.
+    note:
+      vi: は ở đây đọc "wa" - "wa-ta-shi wa ga-ku-xê đes".
+  - type: example
+    target: わたしはいしゃです。
+    target_lang: ja
+    translation:
+      vi: Tôi là bác sĩ.
+    note:
+      vi: いしゃ - しゃ là một nhịp "sha".
+  - type: example
+    target: たなかさんはかいしゃいんです。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka là nhân viên công ty.
+    note:
+      vi: Chủ đề có thể là bất kỳ ai, không chỉ わたし. さん thêm sau tên người khác, giống "anh/chị".
+  - type: example
+    target: かいしゃいんです。
+    target_lang: ja
+    translation:
+      vi: (Tôi) là nhân viên công ty.
+    note:
+      vi: Bỏ わたしは khi đã rõ đang nói về mình - rất tự nhiên.
+  - type: common_mistake
+    wrong: わたしわがくせいです。
+    right: わたしはがくせいです。
+    target_lang: ja
+    note:
+      vi: Trợ từ đọc "wa" nhưng luôn viết は, không viết わ.
+  - type: common_mistake
+    wrong: わたしはですがくせい。
+    right: わたしはがくせいです。
+    target_lang: ja
+    note:
+      vi: です luôn đứng cuối câu, sau danh từ - không đặt ngay sau chủ ngữ như "là" tiếng Việt.
+  - type: common_mistake
+    wrong: わたしはせんせいです。
+    right: わたしはきょうしです。
+    target_lang: ja
+    note:
+      vi: Không tự gọi mình là せんせい (cách gọi tôn trọng người khác). Giáo viên tự giới thiệu dùng きょうし.
+  - type: summary
+    points:
+      - vi: わたしは + N + です = Tôi là N.
+      - vi: Trợ từ は đọc "wa", viết は; です đứng cuối câu.
+      - vi: Đã rõ chủ ngữ thì bỏ わたしは - がくせいです.
+      - vi: がくせい sinh viên · せんせい thầy cô · かいしゃいん nhân viên công ty · いしゃ bác sĩ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:watashi-mcq-order
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:copula-desu
+    prompt:
+      stem: Câu nào có nghĩa "Tôi là bác sĩ" và đúng thứ tự?
+      stem_lang: vi
+      options:
+        - { id: a2c, text: わたしはいしゃです。, lang: ja }
+        - { id: b6d, text: わたしはですいしゃ。, lang: ja }
+        - { id: c1e, text: いしゃはわたしです。, lang: ja }
+        - { id: d5f, text: わたしわいしゃです。, lang: ja }
+    answer:
+      correct_option_id: a2c
+    explanation:
+      vi: Thứ tự đúng là わたし + は + いしゃ + です; です luôn đứng cuối. いしゃはわたしです là "Bác sĩ là tôi" (đổi chủ đề); わたしわ sai chính tả trợ từ.
+    display_answer: わたしはいしゃです。
+
+  - key: ja:exercise:watashi-mcq-wa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:topic-wa
+    prompt:
+      stem: "Trong câu わたしはがくせいです, chữ は đọc là gì?"
+      stem_lang: vi
+      options:
+        - { id: e9g, text: wa, lang: vi }
+        - { id: f4h, text: ha, lang: vi }
+        - { id: g8i, text: ba, lang: vi }
+        - { id: h3j, text: e, lang: vi }
+    answer:
+      correct_option_id: e9g
+    explanation:
+      vi: Khi làm trợ từ chủ đề, は đọc "wa". Chữ は trong từ thường (như はな) mới đọc "ha".
+    display_answer: wa
+
+  - key: ja:exercise:watashi-listen-office
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:kaishain
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしはかいしゃいんです。
+      options:
+        - { id: i7k, text: Tôi là nhân viên công ty., lang: vi }
+        - { id: j2l, text: Tôi là bác sĩ., lang: vi }
+        - { id: k6m, text: Tôi là sinh viên., lang: vi }
+        - { id: l1n, text: Tôi là giáo viên., lang: vi }
+    answer:
+      correct_option_id: i7k
+    explanation:
+      vi: かいしゃいん là nhân viên công ty (かいしゃ = công ty). Bác sĩ là いしゃ, sinh viên là がくせい, giáo viên là きょうし / せんせい.
+    display_answer: Tôi là nhân viên công ty.
+
+  - key: ja:exercise:watashi-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:topic-wa
+    prompt:
+      template: "わたし{{b1}}がくせい{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi là sinh viên."
+        - Chỗ thứ nhất là trợ từ chủ đề (đọc "wa"); chỗ thứ hai là "là" lịch sự.
+    answer:
+      blanks:
+        b1: [は]
+        b2: [です]
+    known_wrong:
+      - answer: わ
+        feedback_vi: Trợ từ đọc "wa" nhưng viết は.
+        error_tag: particle_wa_spelling
+      - answer: wa
+        feedback_vi: Hãy gõ bằng Hiragana (は), không dùng phiên âm Latinh.
+        error_tag: romanization
+      - answer: desu
+        feedback_vi: Hãy gõ bằng Hiragana (です), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: わたし + は (trợ từ chủ đề, đọc "wa") + がくせい + です (là).
+    display_answer: わたしはがくせいです。
+
+  - key: ja:exercise:watashi-order-office
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:kaishain
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Anh Tanaka là nhân viên công ty.”"
+      tokens:
+        - { id: t1, text: です }
+        - { id: t2, text: かいしゃいん }
+        - { id: t3, text: わ }
+        - { id: t4, text: たなかさん }
+        - { id: t5, text: は }
+    answer:
+      orders:
+        - [t4, t5, t2, t1]
+    explanation:
+      vi: たなかさん + は + かいしゃいん + です. Trợ từ chủ đề viết は (không phải わ), です đứng cuối câu.
+    display_answer: たなかさんはかいしゃいんです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:watashi-fill-jobs
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:gakusei
+    prompt:
+      template: "Sinh viên - {{b1}}. Bác sĩ - {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [がくせい, 学生]
+        b2: [いしゃ, 医者]
+    known_wrong:
+      - answer: がくせ
+        feedback_vi: Thiếu nhịp kéo dài - がくせい (xê dài).
+        error_tag: long_vowel
+      - answer: いしや
+        feedback_vi: や phải viết nhỏ - いしゃ.
+        error_tag: small_kana
+      - answer: gakusei
+        feedback_vi: Hãy gõ bằng kana (がくせい), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Sinh viên là がくせい (学生), bác sĩ là いしゃ (医者).
+    display_answer: がくせい / いしゃ
+
+  - key: ja:exercise:watashi-write-doctor
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:isha
+    prompt:
+      source_text: Tôi là bác sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしはいしゃです。
+        - 私は医者です。
+        - わたしは医者です。
+        - 私はいしゃです。
+        - いしゃです。
+        - 医者です。
+    known_wrong:
+      - answer: わたしわいしゃです。
+        feedback_vi: Trợ từ đọc "wa" nhưng viết は - わたしは.
+        error_tag: particle_wa_spelling
+      - answer: わたしはいしゃ。
+        feedback_vi: Thiếu です ở cuối - câu lịch sự cần です.
+        error_tag: missing_desu
+      - answer: わたしはですいしゃ。
+        feedback_vi: です đứng cuối câu - わたしはいしゃです.
+        error_tag: word_order
+      - answer: watashi wa isha desu
+        feedback_vi: Hãy gõ bằng kana (わたしはいしゃです), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: わたし (tôi) + は (thì) + いしゃ (bác sĩ) + です (là). Có thể bỏ わたしは khi đã rõ.
+    display_answer: わたしはいしゃです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:watashi-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:gakusei
+    prompt:
+      source_text: こんにちは。わたしはがくせいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin chào. Tôi là sinh viên.
+        - Xin chào, tôi là sinh viên.
+        - Xin chào. Tôi là học sinh.
+        - Xin chào, tôi là học sinh.
+        - Chào bạn. Tôi là sinh viên.
+        - Xin chào. Mình là sinh viên.
+        - Xin chào. Em là sinh viên.
+        - Chào bạn, tôi là sinh viên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin chào. Tôi là giáo viên.
+        feedback_vi: Giáo viên là せんせい / きょうし. がくせい là học sinh, sinh viên.
+        error_tag: vocab_meaning
+    explanation:
+      vi: こんにちは là "xin chào"; わたしはがくせいです là "tôi là sinh viên/học sinh".
+    display_answer: Xin chào. Tôi là sinh viên.
+
+  - key: ja:exercise:watashi-mcq-teacher
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:sensei
+    prompt:
+      stem: Bạn là giáo viên và tự giới thiệu với phụ huynh người Nhật. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: m4o, text: わたしはきょうしです。, lang: ja }
+        - { id: n8p, text: わたしはせんせいです。, lang: ja }
+        - { id: o3q, text: わたしはがくせいです。, lang: ja }
+        - { id: p7r, text: わたしわきょうしです。, lang: ja }
+    answer:
+      correct_option_id: m4o
+    explanation:
+      vi: せんせい là cách gọi tôn trọng người khác, không dùng cho chính mình; tự giới thiệu nghề giáo thì nói きょうし. がくせい là sinh viên; わたしわ sai chính tả trợ từ.
+    display_answer: わたしはきょうしです。
+
+  - key: ja:exercise:watashi-write-student
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:watashi
+    prompt:
+      source_text: Anh Tanaka là sinh viên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - たなかさんはがくせいです。
+        - 田中さんは学生です。
+        - たなかさんは学生です。
+        - 田中さんはがくせいです。
+    known_wrong:
+      - answer: たなかさんわがくせいです。
+        feedback_vi: Trợ từ chủ đề viết は - たなかさんは.
+        error_tag: particle_wa_spelling
+      - answer: たなかはがくせいです。
+        feedback_vi: Gọi tên người khác cần thêm さん - たなかさん.
+        error_tag: missing_san
+      - answer: たなかさんはがくせい。
+        feedback_vi: Thiếu です ở cuối câu.
+        error_tag: missing_desu
+    explanation:
+      vi: たなかさん (anh Tanaka) + は + がくせい + です. Gọi người khác luôn thêm さん.
+    display_answer: たなかさんはがくせいです。

@@ -1,0 +1,305 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:greetings
+order_index: 1
+level: n5
+title:
+  vi: Chào hỏi, cảm ơn, xin lỗi
+objectives:
+  - vi: Chào đúng theo thời điểm - おはようございます, こんにちは, こんばんは.
+  - vi: Cảm ơn, xin lỗi, gọi người bằng ありがとうございます và すみません.
+  - vi: Chào tạm biệt và chúc ngủ ngon đúng tình huống.
+estimated_minutes: 12
+skills: [speaking, listening, reading]
+prerequisites: [ja:lesson:kana-review]
+items:
+  - item: ja:item:ohayou-gozaimasu
+  - item: ja:item:konnichiwa
+  - item: ja:item:konbanwa
+  - item: ja:item:arigatou-gozaimasu
+  - item: ja:item:sumimasen
+  - item: ja:item:sayounara
+  - item: ja:item:oyasuminasai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chào hỏi, cảm ơn và xin lỗi bằng tiếng Nhật lịch sự trong các tình huống hằng ngày.
+  - type: explain
+    text:
+      vi: Tiếng Nhật chọn câu chào theo thời điểm trong ngày - buổi sáng おはようございます, ban ngày こんにちは, buổi tối こんばんは. Tiếng Việt chỉ cần "xin chào" cho mọi lúc, nên bạn hãy tập thói quen nhìn đồng hồ trước khi chào.
+  - type: explain
+    text:
+      vi: Nhiều câu có dạng dài lịch sự và dạng ngắn thân mật - おはようございます / おはよう, ありがとうございます / ありがとう. Với người lạ, thầy cô, cấp trên luôn dùng dạng dài.
+  - type: explain
+    text:
+      vi: Từ bài này, câu tiếng Nhật được viết bằng kana để bạn đọc được ngay; chữ Hán của từ vựng có trên thẻ từ. Khi làm bài viết, bạn gõ bằng kana hoặc chữ Hán đều được.
+  - type: deep_explain
+    text:
+      vi: こんにちは và こんばんは viết chữ cuối là は nhưng đọc "wa", vì vốn là trợ từ は trong một câu chào dài ngày xưa. すみません rất đa năng - xin lỗi, gọi nhân viên ("anh ơi"), và cả cảm ơn khi ai đó giúp mình. さようなら mang ý chia tay lâu; với bạn bè hằng ngày người Nhật hay nói じゃあ、また (hẹn gặp lại).
+  - type: example
+    target: おはようございます。
+    target_lang: ja
+    translation:
+      vi: Chào buổi sáng.
+    note:
+      vi: Dùng đến khoảng 10-11 giờ sáng. Với bạn thân nói おはよう.
+  - type: example
+    target: こんにちは。
+    target_lang: ja
+    translation:
+      vi: Xin chào.
+    note:
+      vi: Đọc "kon-ni-chi-wa", dùng ban ngày.
+  - type: example
+    target: すみません。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi. / Anh (chị) ơi.
+    note:
+      vi: Dùng để xin lỗi hoặc để gọi người khác một cách lịch sự.
+  - type: example
+    target: どうもありがとうございます。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn rất nhiều.
+    note:
+      vi: どうも thêm vào để nhấn mạnh - "rất".
+  - type: common_mistake
+    wrong: こんにちわ
+    right: こんにちは
+    target_lang: ja
+    note:
+      vi: Chữ cuối đọc "wa" nhưng viết は. こんにちわ là lỗi chính tả người mới học hay mắc.
+  - type: common_mistake
+    wrong: こんにちは。
+    right: こんばんは。
+    target_lang: ja
+    note:
+      vi: Gặp ai lúc 8 giờ tối thì chào こんばんは. こんにちは chỉ dùng ban ngày.
+  - type: summary
+    points:
+      - vi: Sáng おはようございます · ngày こんにちは · tối こんばんは.
+      - vi: ありがとうございます - cảm ơn; すみません - xin lỗi / gọi người.
+      - vi: さようなら - tạm biệt; おやすみなさい - chúc ngủ ngon.
+      - vi: こんにちは, こんばんは viết は, đọc "wa".
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:greet-mcq-morning
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:ohayou-gozaimasu
+    prompt:
+      stem: 8 giờ sáng, bạn gặp thầy giáo ở cổng trường. Bạn chào thế nào?
+      stem_lang: vi
+      options:
+        - { id: a1m, text: おはようございます。, lang: ja }
+        - { id: b5n, text: こんばんは。, lang: ja }
+        - { id: c9o, text: おやすみなさい。, lang: ja }
+        - { id: d3p, text: おはよう。, lang: ja }
+    answer:
+      correct_option_id: a1m
+    explanation:
+      vi: Buổi sáng chào おはようございます; với thầy giáo phải dùng dạng dài lịch sự. おはよう chỉ dùng với bạn bè; こんばんは là chào buổi tối, おやすみなさい là chúc ngủ ngon.
+    display_answer: おはようございます。
+
+  - key: ja:exercise:greet-mcq-sumimasen
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:sumimasen
+    prompt:
+      stem: Trong quán ăn, bạn muốn gọi nhân viên. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: e7q, text: すみません。, lang: ja }
+        - { id: f2r, text: さようなら。, lang: ja }
+        - { id: g6s, text: ありがとうございます。, lang: ja }
+        - { id: h1t, text: こんばんは。, lang: ja }
+    answer:
+      correct_option_id: e7q
+    explanation:
+      vi: すみません vừa là "xin lỗi" vừa dùng để gọi người lịch sự, như "anh/chị ơi". さようなら là tạm biệt, ありがとうございます là cảm ơn.
+    display_answer: すみません。
+
+  - key: ja:exercise:greet-listen-thanks
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:arigatou-gozaimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: ありがとうございます。
+      options:
+        - { id: i5u, text: Cảm ơn., lang: vi }
+        - { id: j9v, text: Xin lỗi., lang: vi }
+        - { id: k4w, text: Chào buổi sáng., lang: vi }
+        - { id: l8x, text: Tạm biệt., lang: vi }
+    answer:
+      correct_option_id: i5u
+    explanation:
+      vi: ありがとうございます là "cảm ơn" lịch sự. Xin lỗi là すみません, chào buổi sáng là おはようございます, tạm biệt là さようなら.
+    display_answer: Cảm ơn.
+
+  - key: ja:exercise:greet-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:konnichiwa
+    prompt:
+      template: "こんにち{{b1}} (Xin chào - ban ngày)"
+      blanks:
+        - { id: b1, width_hint: 1 }
+      hint_levels:
+        - Chữ cuối đọc "wa".
+        - Chữ thuộc hàng は (ha ひ ふ へ ほ).
+    answer:
+      blanks:
+        b1: [は]
+    known_wrong:
+      - answer: わ
+        feedback_vi: Đọc "wa" nhưng viết は - こんにちは.
+        error_tag: particle_wa_spelling
+      - answer: wa
+        feedback_vi: Hãy gõ bằng Hiragana (は), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: こんにちは - chữ cuối viết は, đọc "wa". Đây là lỗi chính tả rất thường gặp.
+    display_answer: こんにちは
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:greet-write-evening
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:konbanwa
+    prompt:
+      source_text: Chào buổi tối.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - こんばんは
+        - 今晩は
+    known_wrong:
+      - answer: こんばんわ
+        feedback_vi: Đọc "wa" nhưng viết は - こんばんは.
+        error_tag: particle_wa_spelling
+      - answer: こんにちは
+        feedback_vi: こんにちは dùng ban ngày. Buổi tối chào こんばんは.
+        error_tag: greeting_time
+      - answer: konbanwa
+        feedback_vi: Hãy gõ bằng Hiragana (こんばんは), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Chào buổi tối là こんばんは - chữ cuối viết は, đọc "wa".
+    display_answer: こんばんは
+
+  - key: ja:exercise:greet-write-goodnight
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:oyasuminasai
+    prompt:
+      source_text: Chúc ngủ ngon. (lịch sự)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - おやすみなさい
+        - お休みなさい
+    known_wrong:
+      - answer: おやすみ
+        feedback_vi: おやすみ là dạng thân mật. Dạng lịch sự là おやすみなさい.
+        error_tag: politeness_level
+      - answer: こんばんは
+        feedback_vi: こんばんは là chào khi gặp buổi tối. Trước khi đi ngủ nói おやすみなさい.
+        error_tag: greeting_time
+      - answer: oyasuminasai
+        feedback_vi: Hãy gõ bằng Hiragana (おやすみなさい), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Chúc ngủ ngon lịch sự là おやすみなさい; với người thân nói gọn おやすみ.
+    display_answer: おやすみなさい
+
+  # ---------------- application ----------------
+  - key: ja:exercise:greet-meaning-doumo
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:arigatou-gozaimasu
+    prompt:
+      source_text: どうもありがとうございます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cảm ơn rất nhiều.
+        - Cảm ơn nhiều.
+        - Rất cảm ơn.
+        - Xin cảm ơn rất nhiều.
+        - Cám ơn rất nhiều.
+        - Cảm ơn bạn rất nhiều.
+        - Xin chân thành cảm ơn.
+        - Cảm ơn rất nhiều ạ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin lỗi.
+        feedback_vi: ありがとうございます là cảm ơn; xin lỗi là すみません.
+        error_tag: vocab_meaning
+    explanation:
+      vi: どうも (rất) + ありがとうございます (cảm ơn) = cảm ơn rất nhiều.
+    display_answer: Cảm ơn rất nhiều.
+
+  - key: ja:exercise:greet-mcq-leave-teacher
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:sayounara
+    prompt:
+      stem: Hết giờ học buổi chiều, bạn chào cô giáo ra về. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: m6y, text: せんせい、さようなら。, lang: ja }
+        - { id: n1z, text: せんせい、おやすみ。, lang: ja }
+        - { id: o5a, text: せんせい、こんにちわ。, lang: ja }
+        - { id: p9b, text: せんせい、おはよう。, lang: ja }
+    answer:
+      correct_option_id: m6y
+    explanation:
+      vi: Học sinh chào thầy cô cuối buổi học bằng さようなら. おやすみ là chúc ngủ ngon thân mật; こんにちわ vừa sai chính tả vừa là câu chào khi gặp; おはよう là chào buổi sáng thân mật.
+    display_answer: せんせい、さようなら。
+
+  - key: ja:exercise:greet-build-hello
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:konnichiwa
+    prompt:
+      instruction: Ghép các chữ thành câu "Xin chào" dùng ban ngày.
+      tokens:
+        - { id: w1, text: ち }
+        - { id: w2, text: は }
+        - { id: w3, text: こ }
+        - { id: w4, text: わ }
+        - { id: w5, text: に }
+        - { id: w6, text: ん }
+    answer:
+      orders:
+        - [w3, w6, w5, w1, w2]
+    explanation:
+      vi: 'こんにちは = こ + ん + に + ち + は. Chữ cuối đọc "wa" nhưng viết は, không viết わ.'
+    display_answer: こんにちは

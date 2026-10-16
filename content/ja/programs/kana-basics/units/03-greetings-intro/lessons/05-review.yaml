@@ -1,0 +1,367 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:greetings-intro-review
+order_index: 5
+level: n5
+title:
+  vi: Ôn tập - Cuộc gặp đầu tiên
+objectives:
+  - vi: Ghép chào hỏi, tên, quốc tịch, nghề nghiệp thành một đoạn hội thoại làm quen hoàn chỉnh.
+  - vi: Dùng đúng は, か, の, じゃありません trong câu dài hơn.
+  - vi: Chọn đúng これ / それ / あれ và câu chào theo tình huống.
+estimated_minutes: 15
+skills: [speaking, listening, grammar, writing]
+prerequisites: [ja:lesson:this-that]
+items:
+  - item: ja:item:konnichiwa
+    role: reuse
+  - item: ja:item:hajimemashite
+    role: reuse
+  - item: ja:item:yoroshiku-onegaishimasu
+    role: reuse
+  - item: ja:item:sayounara
+    role: reuse
+  - item: ja:item:sumimasen
+    role: reuse
+  - item: ja:item:topic-wa
+    role: reuse
+  - item: ja:item:copula-desu
+    role: reuse
+  - item: ja:item:san
+    role: reuse
+  - item: ja:item:jin
+    role: reuse
+  - item: ja:item:question-ka
+    role: reuse
+  - item: ja:item:ja-arimasen
+    role: reuse
+  - item: ja:item:hai-iie
+    role: reuse
+  - item: ja:item:kaishain
+    role: reuse
+  - item: ja:item:kore-sore-are
+    role: reuse
+  - item: ja:item:no-possessive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự tin làm quen với một người Nhật - chào, giới thiệu tên, quốc tịch, nghề, hỏi về đồ vật và chào tạm biệt.
+  - type: explain
+    text:
+      vi: Một cuộc làm quen thường theo thứ tự - こんにちは → はじめまして → tên + です → quốc tịch, nghề → よろしくおねがいします. Bạn đã có đủ mẫu câu cho từng bước.
+  - type: explain
+    text:
+      vi: Ba trợ từ của chủ đề này - は (chủ đề, đọc "wa"), か (câu hỏi, cuối câu), の (sở hữu, giữa hai danh từ). Phần lớn lỗi của người Việt là đặt sai vị trí hoặc viết は thành わ.
+  - type: deep_explain
+    text:
+      vi: Tiếng Nhật thích bỏ những gì đã rõ - không lặp わたしは, trả lời はい、そうです (vâng, đúng vậy) thay vì nói lại cả câu. Gọi người đối diện bằng tên + さん thay cho "bạn"; từ あなた (bạn) có, nhưng dùng nhiều sẽ nghe xa cách. Các chủ đề tiếp theo - số đếm, giờ giấc, động từ - đều xây trên mẫu N は N です này.
+  - type: example
+    target: こんにちは。はじめまして。たなかです。- はじめまして。ランです。よろしくおねがいします。
+    target_lang: ja
+    translation:
+      vi: Xin chào. Rất vui được gặp chị. Tôi là Tanaka. - Rất vui được gặp anh. Tôi là Lan. Mong anh giúp đỡ.
+    note:
+      vi: Cả hai cùng nói はじめまして vì đều gặp lần đầu.
+  - type: example
+    target: ランさんはベトナムじんですか。- はい、そうです。
+    target_lang: ja
+    translation:
+      vi: Chị Lan là người Việt Nam phải không? - Vâng, đúng vậy.
+    note:
+      vi: はい、そうです là cách trả lời "đúng vậy" rất tự nhiên.
+  - type: example
+    target: たなかさんはがくせいですか。- いいえ、がくせいじゃありません。かいしゃいんです。
+    target_lang: ja
+    translation:
+      vi: Anh Tanaka là sinh viên à? - Không, tôi không phải sinh viên. Tôi là nhân viên công ty.
+    note:
+      vi: Phủ định じゃありません rồi nói thông tin đúng.
+  - type: example
+    target: すみません、それはなんですか。- これはにほんのとけいです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, đó là cái gì vậy? - Đây là đồng hồ của Nhật.
+    note:
+      vi: Đồng hồ trong tay Tanaka - Lan hỏi それ, Tanaka trả lời これ.
+  - type: common_mistake
+    wrong: わたしはランさんです。ベトナムじんです。
+    right: わたしはランです。ベトナムじんです。
+    target_lang: ja
+    note:
+      vi: Không thêm さん vào tên của chính mình.
+  - type: common_mistake
+    wrong: たなかさんわにほんじんですか。
+    right: たなかさんはにほんじんですか。
+    target_lang: ja
+    note:
+      vi: Trợ từ chủ đề đọc "wa" nhưng luôn viết は.
+  - type: summary
+    points:
+      - vi: Làm quen - はじめまして → (tên) です → よろしくおねがいします.
+      - vi: Hỏi - おなまえは？ · (nước) じんですか · がくせいですか.
+      - vi: は chủ đề · か câu hỏi · の sở hữu · じゃありません phủ định.
+      - vi: これ gần mình · それ gần người nghe · あれ xa cả hai.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:gi-review-mcq-iie
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:hai-iie
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống. Lan - たなかさんはがくせいですか。 Tanaka - ___、かいしゃいんです。"
+      stem_lang: vi
+      options:
+        - { id: z8q, text: いいえ, lang: ja }
+        - { id: c3t, text: はい, lang: ja }
+        - { id: w6f, text: ありがとうございます, lang: ja }
+        - { id: j1k, text: こんにちは, lang: ja }
+    answer:
+      correct_option_id: z8q
+    explanation:
+      vi: Tanaka là nhân viên công ty, không phải sinh viên, nên trả lời いいえ (không). はい (vâng) mâu thuẫn với phần sau.
+    display_answer: いいえ
+
+  - key: ja:exercise:gi-review-listen-intro
+    type: listen
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:jin
+    prompt:
+      audio_asset_id: null
+      fallback_text: はじめまして。ナムです。ベトナムじんです。
+      options:
+        - { id: r2m, text: Rất vui được gặp bạn. Tôi là Nam. Tôi là người Việt Nam., lang: vi }
+        - { id: e9w, text: Rất vui được gặp bạn. Tôi là Nam. Tôi là người Nhật., lang: vi }
+        - { id: b4n, text: Xin chào. Anh Nam là sinh viên., lang: vi }
+        - { id: y7c, text: Rất vui được gặp bạn. Tôi không phải người Việt Nam., lang: vi }
+    answer:
+      correct_option_id: r2m
+    explanation:
+      vi: ベトナムじんです là "là người Việt Nam"; người Nhật là にほんじん, còn phủ định cần じゃありません.
+    display_answer: Rất vui được gặp bạn. Tôi là Nam. Tôi là người Việt Nam.
+
+  - key: ja:exercise:gi-review-order-not-teacher
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:ja-arimasen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Nhật: “Chị Lan không phải là giáo viên.”"
+      tokens:
+        - { id: w1, text: じゃありません }
+        - { id: w2, text: きょうし }
+        - { id: w3, text: は }
+        - { id: w4, text: ランさん }
+        - { id: w5, text: の }
+        - { id: w6, text: か }
+    answer:
+      orders:
+        - [w4, w3, w2, w1]
+    explanation:
+      vi: ランさん + は + きょうし + じゃありません. Câu kể nên không có か; の chỉ sở hữu, không dùng ở đây.
+    display_answer: ランさんはきょうしじゃありません。
+
+  - key: ja:exercise:gi-review-fill-hinted
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:no-possessive
+    prompt:
+      template: "それはだれ{{b1}}かさですか。- わたし{{b2}}です。"
+      blanks:
+        - { id: b1, width_hint: 1 }
+        - { id: b2, width_hint: 1 }
+      hint_levels:
+        - "Nghĩa: Đó là ô của ai? - Của tôi."
+        - Cả hai chỗ đều là trợ từ sở hữu.
+    answer:
+      blanks:
+        b1: [の]
+        b2: [の]
+    known_wrong:
+      - answer: は
+        feedback_vi: は là trợ từ chủ đề; "của" dùng の.
+        error_tag: particle_no
+      - answer: no
+        feedback_vi: Hãy gõ bằng Hiragana (の), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: だれのかさ - ô của ai; わたしのです - của tôi (bỏ かさ vì đã rõ).
+    display_answer: それはだれのかさですか。- わたしのです。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:gi-review-write-nice
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:yoroshiku-onegaishimasu
+    prompt:
+      source_text: Rất vui được gặp bạn. Mong được giúp đỡ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はじめまして。よろしくおねがいします。
+        - はじめまして。どうぞよろしくおねがいします。
+        - はじめまして。よろしくお願いします。
+        - はじめまして。どうぞよろしくお願いします。
+        - はじめまして、よろしくおねがいします。
+        - はじめまして、どうぞよろしくおねがいします。
+        - 初めまして。よろしくお願いします。
+        - 初めまして。どうぞよろしくお願いします。
+    known_wrong:
+      - answer: こんにちは。よろしくおねがいします。
+        feedback_vi: Gặp lần đầu thì mở bằng はじめまして (rất vui được gặp).
+        error_tag: wrong_expression
+      - answer: hajimemashite. yoroshiku onegaishimasu.
+        feedback_vi: Hãy gõ bằng Hiragana, không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: はじめまして mở đầu lần gặp đầu tiên; よろしくおねがいします (lịch sự hơn - どうぞよろしく…) kết thúc phần giới thiệu.
+    display_answer: はじめまして。よろしくおねがいします。
+
+  - key: ja:exercise:gi-review-fill-question
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:question-ka
+    prompt:
+      template: "Anh Tanaka là người Nhật phải không? - たなか{{b1}}はにほんじんです{{b2}}。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+        - { id: b2, width_hint: 1 }
+    answer:
+      blanks:
+        b1: [さん]
+        b2: [か]
+    known_wrong:
+      - answer: ちゃん
+        feedback_vi: ちゃん dùng cho trẻ nhỏ, người rất thân. Gọi lịch sự dùng さん.
+        error_tag: honorific_suffix
+      - answer: san
+        feedback_vi: Hãy gõ bằng Hiragana (さん), không dùng phiên âm Latinh.
+        error_tag: romanization
+    explanation:
+      vi: Gọi người khác - tên + さん; câu hỏi có/không - thêm か ở cuối.
+    display_answer: たなかさんはにほんじんですか。
+
+  - key: ja:exercise:gi-review-write-office
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kaishain
+    prompt:
+      source_text: Tôi không phải là sinh viên. Tôi là nhân viên công ty.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしはがくせいじゃありません。かいしゃいんです。
+        - わたしはがくせいじゃありません。わたしはかいしゃいんです。
+        - がくせいじゃありません。かいしゃいんです。
+        - わたしはがくせいではありません。かいしゃいんです。
+        - がくせいではありません。かいしゃいんです。
+        - 私は学生じゃありません。会社員です。
+        - 私は学生ではありません。会社員です。
+        - 学生じゃありません。会社員です。
+        - 学生ではありません。会社員です。
+        - わたしは学生じゃありません。会社員です。
+    known_wrong:
+      - answer: わたしはがくせいですじゃありません。かいしゃいんです。
+        feedback_vi: じゃありません thay cho です - がくせいじゃありません.
+        error_tag: negation_form
+      - answer: わたしわがくせいじゃありません。かいしゃいんです。
+        feedback_vi: Trợ từ chủ đề viết は.
+        error_tag: particle_wa_spelling
+    explanation:
+      vi: Phủ định - がくせいじゃありません (hoặc ではありません); khẳng định - かいしゃいんです. Câu thứ hai không cần lặp わたしは.
+    display_answer: わたしはがくせいじゃありません。かいしゃいんです。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:gi-review-translate-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:jin
+    prompt:
+      source_text: はじめまして。ランです。ベトナムじんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Rất vui được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
+        - Rất vui được gặp bạn. Tôi là Lan. Tôi là người Việt.
+        - Rất hân hạnh được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
+        - Hân hạnh được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
+        - Rất vui được gặp anh chị. Tôi là Lan. Tôi là người Việt Nam.
+        - Rất vui được gặp bạn. Mình là Lan. Mình là người Việt Nam.
+        - Xin chào. Tôi là Lan. Tôi là người Việt Nam.
+        - Rất vui được gặp bạn, tôi là Lan, tôi là người Việt Nam.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: はじめまして - rất vui được gặp (lần đầu); ランです - tôi là Lan; ベトナムじんです - tôi là người Việt Nam. Tiếng Việt nên thêm "tôi".
+    display_answer: Rất vui được gặp bạn. Tôi là Lan. Tôi là người Việt Nam.
+
+  - key: ja:exercise:gi-review-write-whose
+    type: translate
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:no-possessive
+    prompt:
+      source_text: Đây là đồng hồ của anh Tanaka.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - これはたなかさんのとけいです。
+        - これは田中さんの時計です。
+        - これはたなかさんの時計です。
+        - これは田中さんのとけいです。
+    known_wrong:
+      - answer: これはとけいのたなかさんです。
+        feedback_vi: Người sở hữu đứng trước の - たなかさんのとけい.
+        error_tag: word_order
+      - answer: それはたなかさんのとけいです。
+        feedback_vi: '"Đây" là これ; それ là "đó".'
+        error_tag: demonstrative
+      - answer: これはたなかのとけいです。
+        feedback_vi: Gọi tên người khác thêm さん - たなかさん.
+        error_tag: missing_san
+    explanation:
+      vi: これ (đây) + は + たなかさん + の + とけい + です.
+    display_answer: これはたなかさんのとけいです。
+
+  - key: ja:exercise:gi-review-mcq-are
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:kore-sore-are
+    prompt:
+      stem: Lan và Tanaka đứng cạnh nhau, nhìn một tòa nhà ở xa. Lan muốn hỏi "Kia là cái gì?". Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: n5x, text: あれはなんですか。, lang: ja }
+        - { id: a7g, text: それはなんですか。, lang: ja }
+        - { id: u2s, text: あれはなにですか。, lang: ja }
+        - { id: o9d, text: これはなんですか。, lang: ja }
+    answer:
+      correct_option_id: n5x
+    explanation:
+      vi: Vật xa cả hai người dùng あれ. Trước です, なに đổi thành なん. それ là vật gần người nghe, これ là vật gần mình.
+    display_answer: あれはなんですか。
