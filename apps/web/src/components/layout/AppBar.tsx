@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
+import { routeName } from '@/lib/route-titles';
 import { NotificationBell } from '@/components/notifications/NotificationBell';
 import { LanguagePill } from '@/components/ui/LanguagePill';
 import { useToast } from '@/components/ui/Toast';
@@ -18,15 +19,26 @@ export function AppBar() {
   const { paths, currentId, setCurrent } = useLearningPaths();
   const toast = useToast();
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const page = routeName(pathname);
   const [pending, setPending] = useState(false);
   const initial = (profile?.displayName || user?.email || '?').trim().charAt(0).toUpperCase();
   return (
-    <header className="vt-appbar glass sticky top-0 z-30 border-x-0 border-t-0 pt-safe">
-      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between gap-2 px-safe lg:h-16 lg:max-w-[1360px] lg:px-8 min-[1440px]:px-10">
-        <Link to="/app" aria-label="Linguo" className="inline-flex min-h-11 min-w-0 shrink-0 items-center rounded-full lg:invisible">
+    <header className="appbar vt-appbar sticky top-0 z-30 pt-safe">
+      <div className="appbar__inner">
+        <Link to="/app" aria-label="Linguo" className="appbar__brand focus-ring">
           <Wordmark compact />
         </Link>
-        <div className="flex shrink-0 items-center gap-1 min-[380px]:gap-1.5">
+        <nav aria-label="Vị trí hiện tại" className="appbar__crumb">
+          <span aria-hidden className="appbar__crumb-root">Linguo</span>
+          {page && (
+            <>
+              <span aria-hidden className="appbar__crumb-sep">/</span>
+              <span className="appbar__crumb-here">{page}</span>
+            </>
+          )}
+        </nav>
+        <div className="appbar__tools">
           <LanguagePill
             paths={paths}
             currentId={currentId}
@@ -45,7 +57,7 @@ export function AppBar() {
           <Link
             to="/app/cai-dat"
             aria-label="Tài khoản và cài đặt"
-            className="inline-flex size-11 items-center justify-center rounded-full"
+            className="appbar__avatar focus-ring"
           >
             <Avatar src={avatarUrl(getSupabase(), profile?.avatarPath)} initial={initial} className="size-11" initialClassName="text-[15px]" />
           </Link>
