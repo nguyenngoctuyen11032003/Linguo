@@ -91,7 +91,8 @@ describe('useLessonRun', () => {
     expect(hook.current.api.steps).toHaveLength(8);
     expect(hook.current.api.stepIndex).toBe(0);
     expect(hook.current.api.step).toEqual({ kind: 'objective' });
-    expect(hook.current.location.search).toBe('?buoc=1');
+    // The URL is mirrored by an effect after the run loads, so it can trail the ready state by a render.
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=1'));
   });
 
   it('starts a run when there is no open one', async () => {
@@ -154,7 +155,7 @@ describe('useLessonRun', () => {
     expect(hook.current.api.exerciseState(EX1, 0).status).toBe('idle');
     expect(hook.current.api.completeResult).toBeNull();
     expect(hook.current.api.stepIndex).toBe(0);
-    expect(hook.current.location.search).toBe('?buoc=1');
+    await waitFor(() => expect(hook.current.location.search).toBe('?buoc=1'));
 
     // A later reload of the same lesson does not start yet another run.
     act(() => hook.current.api.retry());
