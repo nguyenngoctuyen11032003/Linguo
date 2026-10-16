@@ -1,12 +1,15 @@
 import { useEffect, useId, useState } from 'react';
 import { Check, Mic, Square, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { alignToTarget } from '@/features/speaking/align';
 import { compareToTarget } from '@/features/speaking/overlap';
 import { RATING_AXES, RATING_LABELS, type Ratings, type RatingValue, type SpeakingLanguage } from '@/features/speaking/ratings';
 import { useRecorder, type RecorderError } from '@/features/speaking/useRecorder';
 import { useSpeechRecognition } from '@/features/speaking/useSpeechRecognition';
+import type { TtsApi } from '@/features/speaking/useTts';
 import { cn } from '@/lib/cn';
 import { FOCUS_RING } from './controls';
+import { WordFeedback } from './WordFeedback';
 
 const RECORDER_MESSAGES: Record<RecorderError, string> = {
   unsupported: 'Trình duyệt này chưa hỗ trợ ghi âm. Bạn vẫn luyện bình thường theo cách bên dưới.',
@@ -30,6 +33,8 @@ export interface PracticePanelProps {
   target: string | null;
   /** The learner switched on the optional automatic transcript. */
   transcribe: boolean;
+  /** Sample voice, used to replay single words the transcript did not have. */
+  tts?: TtsApi;
   onSaveReflection: (ratings: Ratings) => void;
 }
 
@@ -78,7 +83,7 @@ function RatingGroup({
  * Record yourself, listen back, and rate it on separate axes (spec 6.9). Audio never leaves this component's memory.
  * Without a usable microphone it turns into "Nghe và tự luyện": the same self-rating, no recording.
  */
-export function PracticePanel({ lang, target, transcribe, onSaveReflection }: PracticePanelProps) {
+export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection }: PracticePanelProps) {
   const recorder = useRecorder();
   const stt = useSpeechRecognition(lang);
   const [ratings, setRatings] = useState<Ratings>({});
@@ -124,6 +129,7 @@ export function PracticePanel({ lang, target, transcribe, onSaveReflection }: Pr
   const showRatings = selfPractice || status === 'recorded';
   const rated = Object.keys(ratings).length > 0;
   const hint = target && status === 'recorded' && useTranscript ? compareToTarget(target, stt.transcript) : null;
+  const alignment = hint && target ? alignToTarget(target, stt.transcript) : null;
 
   return (
     <div className="space-y-5">
@@ -194,7 +200,8 @@ export function PracticePanel({ lang, target, transcribe, onSaveReflection }: Pr
                   <span lang={lang}>{hint.missing.slice(0, MISSING_SHOWN).join(', ')}</span>
                 </p>
               )}
-              <p className="mt-1 text-muted">Đây chỉ là gợi ý so từ, không phải điểm số.</p>
+              {alignment && <WordFeedback lang={lang} alignment={alignment} tts={tts} />}
+              <p className="mt-3 text-muted">Đây chỉ là gợi ý so từ, không phải điểm số.</p>
             </div>
           )}
         </div>

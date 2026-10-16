@@ -316,6 +316,90 @@ describe('SpeakingPage', () => {
       await user.type(box, 'good morning how are you today');
       expect(screen.getByTestId('overlap-hint')).toHaveTextContent(/khá khớp/);
     });
+
+    async function recordSaying(heard: string) {
+      vi.stubGlobal('webkitSpeechRecognition', FakeRecognition);
+      const user = userEvent.setup();
+      render();
+      await user.click(screen.getByLabelText(/Bật bản chép lời tự động/));
+      await user.click(screen.getByRole('button', { name: 'Bắt đầu ghi âm' }));
+      await screen.findByRole('button', { name: 'Dừng ghi âm' });
+      act(() => {
+        FakeRecognition.last?.onresult?.({ results: [Object.assign([{ transcript: heard }], { isFinal: true })] });
+      });
+      await user.click(screen.getByRole('button', { name: 'Dừng ghi âm' }));
+      await screen.findByLabelText('Bản chép lời có thể sai');
+      return user;
+    }
+
+    function marked() {
+      const list = within(screen.getByTestId('word-feedback')).getByRole('list', { name: 'Từng từ trong câu mẫu' });
+      return within(list)
+        .getAllByRole('listitem')
+        .map((li) => [li.getAttribute('data-mark'), li.textContent]);
+    }
+
+    it('marks each word of the sentence as heard, heard as another word or not heard, with words and not only colour', async () => {
+      await recordSaying('uh good morning how is you');
+      expect(marked()).toEqual([
+        ['match', 'Good, nghe khớp'],
+        ['match', 'morning, nghe khớp'],
+        ['match', 'how, nghe khớp'],
+        ['misheard', 'are, nghe thành “is”'],
+        ['match', 'you, nghe khớp'],
+        ['missed', 'today, chưa thấy'],
+      ]);
+      const feedback = screen.getByTestId('word-feedback');
+      expect(feedback).toHaveTextContent('Máy còn nghe thêm: uh');
+      expect(within(feedback).getByText(/^Nghe thành từ khác: are \(nghe là is\)\. Chưa thấy trong bản chép: today\.$/)).toHaveClass(
+        'sr-only',
+      );
+      // The legend names every state; the hint still says it is not a score.
+      expect(within(feedback).getByRole('list', { name: 'Chú thích' })).toHaveTextContent(/nghe khớp.*gần đúng.*nghe thành từ khác.*chưa thấy/);
+      expect(screen.getByTestId('overlap-hint')).toHaveTextContent('không phải điểm số');
+      expect(screen.queryByText(/điểm số:|Tổng điểm|\d+\s*%|\d+\s*\/\s*\d+ từ/)).toBeNull();
+    });
+
+    it('suggests up to three words to practise and replays the sample voice for just that word', async () => {
+      const user = await recordSaying('good morning how is you');
+      const tips = within(screen.getByTestId('word-feedback')).getByRole('list', { name: 'Gợi ý luyện lại' });
+      expect(within(tips).getAllByRole('listitem').map((li) => li.textContent)).toEqual([
+        'Nghe mẫu rồi nói lại chậm từ: areNghe mẫu',
+        'Nghe mẫu rồi nói lại chậm từ: todayNghe mẫu',
+      ]);
+      await user.click(within(tips).getByRole('button', { name: 'Nghe mẫu: today' }));
+      expect(mocks.tts.play).toHaveBeenCalledWith('today');
+    });
+
+    it('shows a stop control while that word is read, and no replay button without a voice', async () => {
+      mocks.tts = { ...mocks.tts, speakingText: 'today' };
+      const view = await recordSaying('good morning how are you');
+      const tips = within(screen.getByTestId('word-feedback')).getByRole('list', { name: 'Gợi ý luyện lại' });
+      await view.click(within(tips).getByRole('button', { name: 'Dừng đọc: today' }));
+      expect(mocks.tts.stop).toHaveBeenCalled();
+    });
+
+    it('keeps the tips but drops the replay button when there is no voice', async () => {
+      mocks.tts = { ...mocks.tts, available: false };
+      await recordSaying('good morning how are you');
+      const tips = within(screen.getByTestId('word-feedback')).getByRole('list', { name: 'Gợi ý luyện lại' });
+      expect(tips).toHaveTextContent('Nghe mẫu rồi nói lại chậm từ: today');
+      expect(within(tips).queryByRole('button')).toBeNull();
+    });
+
+    it('treats a Korean particle or ending heard differently as close, not wrong', async () => {
+      mocks.material = material({
+        lang: 'ko',
+        sentences: [{ id: 'k1', text: '저는 학교에 가요.', translation: 'Tôi đi đến trường.' }],
+      });
+      await recordSaying('저도 학교에서 가요');
+      expect(marked()).toEqual([
+        ['near', '저는, gần đúng “저도”'],
+        ['near', '학교에, gần đúng “학교에서”'],
+        ['match', '가요, nghe khớp'],
+      ]);
+      expect(within(screen.getByTestId('word-feedback')).queryByRole('list', { name: 'Gợi ý luyện lại' })).toBeNull();
+    });
   });
 
   describe('open answer', () => {

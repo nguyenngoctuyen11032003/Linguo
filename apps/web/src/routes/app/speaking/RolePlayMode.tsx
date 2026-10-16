@@ -108,6 +108,7 @@ export function RolePlayMode({ lang, tts, transcribe, onSaveReflection }: Props)
               lang={lang}
               target={turn.text}
               transcribe={transcribe}
+              tts={tts}
               onSaveReflection={onSaveReflection}
             />
           )}

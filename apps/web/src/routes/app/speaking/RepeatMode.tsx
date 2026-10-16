@@ -48,6 +48,7 @@ export function RepeatMode({ lang, sentences, tts, transcribe, onSaveReflection 
         lang={lang}
         target={sentence.text}
         transcribe={transcribe}
+        tts={tts}
         onSaveReflection={onSaveReflection}
       />
       <div className="flex items-center justify-between gap-3 border-t border-border pt-4">
