@@ -43,8 +43,13 @@
   html {
     /* Removes the double-tap-to-zoom wait on every tap (pinch zoom still works). */
     touch-action: manipulation;
-    /* Desktop: a page that grows a scrollbar does not shift the centred layout sideways on route change. */
-    scrollbar-gutter: stable;
+  }
+  /* Desktop: a page that grows a scrollbar does not shift the centred layout sideways on route change. Scoped to
+     laptops so a phone browser with classic (non-overlay) scrollbars never reserves a blank gutter beside the app bar. */
+  @media (min-width: 1024px) {
+    html {
+      scrollbar-gutter: stable;
+    }
   }
   button,
   [role='button'],
@@ -305,7 +310,8 @@
   width: 100%;
   max-width: 48rem;
   margin-inline: auto;
-  padding: 1rem max(var(--page-gutter), env(safe-area-inset-left, 0px)) calc(6rem + env(safe-area-inset-bottom, 0px));
+  padding: 1rem max(var(--page-gutter), env(safe-area-inset-right, 0px)) calc(6rem + env(safe-area-inset-bottom, 0px))
+    max(var(--page-gutter), env(safe-area-inset-left, 0px));
 }
 .shell__route {
   animation: rise-in var(--dur-slow) var(--ease-expo) both;
@@ -351,7 +357,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding-inline: max(var(--page-gutter), env(safe-area-inset-left, 0px));
+  /* Each side clears its own notch inset (landscape phones have one side only). */
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--page-gutter), env(safe-area-inset-right, 0px));
 }
 .appbar__brand {
   display: inline-flex;
