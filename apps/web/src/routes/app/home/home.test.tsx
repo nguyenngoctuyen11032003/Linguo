@@ -40,7 +40,7 @@ vi.mock('@/features/learning-paths/service', async (importOriginal) => ({
 describe('HomePage', () => {
   it('greets and summarises the current path without fake progress', () => {
     renderWithProviders(<HomePage />, { route: '/app' });
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Minh Anh');
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Anh');
     expect(screen.getByText('Lộ trình của bạn')).toBeInTheDocument();
     const row = screen.getByRole('link', { name: /Lộ trình của bạn/ });
     expect(row).toHaveAttribute('href', '/app/hoc-tap');
@@ -131,7 +131,7 @@ describe('HomePage', () => {
       route: '/app',
       profile: { profile: { id: 'u', displayName: 'Minh Anh', timezone: 'Not/AZone' } },
     });
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Minh Anh');
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Anh');
     expect(screen.getByText('Lộ trình của bạn')).toBeInTheDocument();
   });
 

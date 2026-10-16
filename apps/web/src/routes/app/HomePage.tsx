@@ -36,7 +36,9 @@ export function HomePage() {
     cardFocusRef.current = node;
   }, []);
   const [focusAfterResume, setFocusAfterResume] = useState(false);
-  const name = profile?.displayName.trim();
+  const fullName = profile?.displayName.trim();
+  // Vietnamese names end with the given name: greet by it only ("Nguyễn Ngọc Tuyền" → "Tuyền").
+  const name = fullName?.split(/\s+/).pop();
   const timeZone = resolveTimeZone(profile?.timezone ?? DEFAULT_TIMEZONE);
 
   const currentStatus = paths.current?.status;
