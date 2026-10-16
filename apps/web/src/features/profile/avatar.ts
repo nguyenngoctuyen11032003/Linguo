@@ -19,6 +19,8 @@ export function avatarErrorMessage(error: unknown): string {
     if (error.code === 'SIZE') return 'Ảnh quá lớn (tối đa 10 MB).';
     return 'Không đọc được ảnh này. Hãy thử ảnh khác.';
   }
+  const text = error instanceof Error ? error.message : typeof error === 'object' && error && 'message' in error ? String((error as { message: unknown }).message) : '';
+  if (/bucket not found|avatar_path|schema cache|column/i.test(text)) return 'Tính năng ảnh đại diện chưa sẵn sàng trên máy chủ. Vui lòng thử lại sau ít phút.';
   return 'Chưa tải được ảnh đại diện. Vui lòng thử lại.';
 }
 

@@ -1,15 +1,17 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Navigate } from 'react-router';
 import { DEFAULT_TIMEZONE } from '@linguo/shared';
+import { Avatar } from '@/components/ui/Avatar';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
 import { learningPathErrorMessage } from '@/features/learning-paths/error-map';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { setPathStatus } from '@/features/learning-paths/service';
+import { avatarUrl } from '@/features/profile/avatar';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { resolveTimeZone } from '@/lib/dates';
-import { requireSupabase } from '@/lib/supabase';
+import { getSupabase, requireSupabase } from '@/lib/supabase';
 import { ClassesHomeCard } from '@/features/classes/ClassesHomeCard';
 import { DiagnosticCard } from './home/DiagnosticCard';
 import { NextLessonCard } from './home/NextLessonCard';
@@ -70,18 +72,26 @@ export function HomePage() {
 
   return (
     <div className="space-y-4">
-      <header className="space-y-2 pb-2">
-        <p className="eyebrow">{todayLabel(timeZone)}</p>
-        <h1 className="page-title">
-          {status === 'loading' ? (
-            <>
-              <span className="sr-only">Đang tải…</span>
-              <Skeleton className="block h-[1.04em] w-52 max-w-full rounded-2xl" />
-            </>
-          ) : (
-            `Chào ${name || 'bạn'}`
-          )}
-        </h1>
+      <header className="flex items-center gap-3.5 pb-2">
+        <Avatar
+          src={avatarUrl(getSupabase(), profile?.avatarPath)}
+          initial={(name || '?').charAt(0).toUpperCase()}
+          className="size-14"
+          initialClassName="stat-num text-[26px]"
+        />
+        <div className="min-w-0 flex-1 space-y-1">
+          <p className="eyebrow truncate">{todayLabel(timeZone)}</p>
+          <h1 className="page-title truncate !text-[clamp(1.75rem,8.5vw,2.25rem)] !leading-[1.15]">
+            {status === 'loading' ? (
+              <>
+                <span className="sr-only">Đang tải…</span>
+                <Skeleton className="block h-[1.04em] w-44 max-w-full rounded-2xl" />
+              </>
+            ) : (
+              `Chào ${name || 'bạn'}`
+            )}
+          </h1>
+        </div>
       </header>
 
       {status === 'error' && <ErrorState title="Không tải được hồ sơ" onRetry={reload} />}
