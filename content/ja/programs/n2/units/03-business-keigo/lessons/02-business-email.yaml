@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-u3-business-email
+order_index: 2
+level: n2
+title:
+  vi: Viết email công việc
+objectives:
+  - vi: Dùng ～させていただく đúng chỗ, tránh lạm dụng và lỗi さ入れ.
+  - vi: Viết yêu cầu trang trọng bằng お/ご～願います và ～ていただければ幸いです.
+  - vi: Mở lời nhờ vả bằng 恐れ入りますが, お手数ですが; trình bày nội dung bằng 下記の通り.
+estimated_minutes: 24
+skills: [writing, reading, grammar]
+prerequisites: [ja:lesson:n2-u3-teichougo]
+items:
+  - item: ja:item:n2-u3-gram-sasete-itadaku
+  - item: ja:item:n2-u3-gram-o-negaimasu
+  - item: ja:item:n2-u3-osoreirimasu
+  - item: ja:item:n2-u3-otesuu
+  - item: ja:item:n2-u3-kaki
+  - item: ja:item:n2-u3-gram-te-itadakereba-saiwai
+  - item: ja:item:n3-kakunin
+    role: reuse
+  - item: ja:item:n3-tenpu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Ở N3 bạn đã viết được email ngắn (お世話になっております, 添付いたしました, ご確認ください). Bài này giúp email của bạn mềm và chuyên nghiệp hơn - biết xin phép, biết đệm lời trước khi nhờ, biết yêu cầu mà không ép.
+  - type: explain
+    text:
+      vi: '～させていただく - "xin phép được làm" khi việc mình làm cần sự cho phép hoặc nhờ ơn người kia: 資料を拝見させていただきました; 体調不良のため、本日は休ませていただきます. Nhóm 1 dùng thể sai khiến ～せて (休ませて, 読ませて), nhóm 2/3 dùng ～させて (説明させて, 確認させて).'
+  - type: explain
+    text:
+      vi: 'Yêu cầu trang trọng trong email: ご確認願います, ご返信願います (ngắn, hơi cứng); ご確認のほど、よろしくお願いいたします (mềm hơn); ご確認いただければ幸いです (mềm nhất, không ép). Trước lời nhờ thường đệm 恐れ入りますが hoặc お手数ですが / お手数をおかけしますが.'
+  - type: explain
+    text:
+      vi: 'Phần thân email hay có danh sách: 打ち合わせの日時は下記の通りです. Sau đó liệt kê 日時, 場所, 議題. Thông tin ở trên đã nói - 上記の件. Kết thư - 何卒よろしくお願い申し上げます (rất trang trọng) hoặc よろしくお願いいたします.'
+  - type: deep_explain
+    text:
+      vi: Người Nhật trẻ hay bị phê bình vì lạm dụng させていただく - 本日司会を務めさせていただきます là ổn (được giao nhiệm vụ), nhưng 私が担当させていただいております nghe vòng vo, chỉ cần 担当しております. Mẹo kiểm tra - nếu việc đó không cần ai cho phép, không mang ơn ai, hãy dùng いたします. Ngoài ra, thêm さ thừa vào động từ nhóm 1 (読まさせて, 行かさせて) là lỗi được nhắc nhiều trong các bài thi kính ngữ.
+  - type: example
+    target: 先日はお時間をいただき、ありがとうございました。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn anh/chị đã dành thời gian cho tôi hôm trước.
+  - type: example
+    target: 恐れ入りますが、添付の見積書をご確認のほど、よろしくお願いいたします。
+    target_lang: ja
+    translation:
+      vi: Xin phép làm phiền, mong anh/chị kiểm tra giúp bảng báo giá đính kèm.
+  - type: example
+    target: 次回の打ち合わせの日時は下記の通りです。
+    target_lang: ja
+    translation:
+      vi: Thời gian buổi trao đổi lần tới như dưới đây.
+  - type: example
+    target: お手数をおかけしますが、今週中にご返信いただければ幸いです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi đã làm phiền, nếu anh/chị phản hồi trong tuần này thì tôi rất biết ơn.
+  - type: example
+    target: 誠に勝手ながら、8月13日から16日まで休業させていただきます。
+    target_lang: ja
+    translation:
+      vi: Chúng tôi xin phép nghỉ từ ngày 13 đến 16 tháng 8, mong quý khách thông cảm.
+  - type: common_mistake
+    wrong: 資料を読まさせていただきました。
+    right: 資料を読ませていただきました。
+    target_lang: ja
+    note:
+      vi: 読む là nhóm 1, thể sai khiến là 読ませる - không thêm さ. Chỉ nhóm 2/3 mới dùng させる (確認させる, 説明させる).
+  - type: common_mistake
+    wrong: ご確認して願います。
+    right: ご確認願います。/ ご確認をお願いいたします。
+    target_lang: ja
+    note:
+      vi: Mẫu là ご + từ Hán + 願います, không chen して. Muốn có を thì dùng ご確認をお願いいたします.
+  - type: summary
+    points:
+      - vi: ～(さ)せていただく - xin phép làm; nhóm 1 ～せて, nhóm 2/3 ～させて; đừng lạm dụng.
+      - vi: お/ご～願います - yêu cầu trang trọng, ngắn; ご～のほどよろしくお願いいたします - mềm hơn.
+      - vi: ～ていただければ幸いです - nhờ mềm, không ép.
+      - vi: 恐れ入りますが, お手数ですが - đệm trước lời nhờ; 下記の通り - như dưới đây.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-u3-business-email-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-gram-te-itadakereba-saiwai
+    prompt:
+      stem: "Đọc đoạn email: 「来月の展示会について、ご意見をお聞かせいただければ幸いです。」 Người viết muốn gì?"
+      stem_lang: vi
+      options:
+        - { id: a4r, text: Mong người nhận cho biết ý kiến về triển lãm tháng sau., lang: vi }
+        - { id: k9m, text: Báo cho người nhận ý kiến của mình về triển lãm., lang: vi }
+        - { id: w2t, text: Yêu cầu người nhận phải đến triển lãm tháng sau., lang: vi }
+        - { id: e7c, text: Cảm ơn người nhận đã đến triển lãm., lang: vi }
+    answer:
+      correct_option_id: a4r
+    explanation:
+      vi: お聞かせいただく - được anh/chị cho nghe (ý kiến); ～ていただければ幸いです - nếu anh/chị làm giúp thì tôi rất vui. Đây là lời nhờ mềm, không bắt buộc.
+    display_answer: Mong người nhận cho biết ý kiến về triển lãm tháng sau.
+
+  - key: ja:exercise:n2-u3-business-email-mcq-sasete
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-gram-sasete-itadaku
+    prompt:
+      stem: 'Bạn báo với sếp là hôm nay xin nghỉ vì ốm. 体調不良のため、本日は＿＿。'
+      stem_lang: vi
+      options:
+        - { id: n3f, text: 休ませていただきます, lang: ja }
+        - { id: u6p, text: 休まさせていただきます, lang: ja }
+        - { id: h1x, text: お休みになります, lang: ja }
+        - { id: b5s, text: 休んでいただきます, lang: ja }
+    answer:
+      correct_option_id: n3f
+    explanation:
+      vi: Nghỉ cần sếp cho phép - ～させていただく. 休む là nhóm 1 nên thể sai khiến là 休ませる (không thêm さ). お休みになる là tôn kính; 休んでいただく là để người kia nghỉ.
+    display_answer: 休ませていただきます
+
+  - key: ja:exercise:n2-u3-business-email-listen-osoreirimasu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-osoreirimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 恐れ入りますが、お名前をもう一度伺ってもよろしいでしょうか。
+      options:
+        - { id: q8d, text: "Xin thứ lỗi, cho phép tôi hỏi lại tên anh/chị được không ạ?", lang: vi }
+        - { id: y2k, text: "Tôi rất sợ, xin anh/chị nói lại tên mình được không?", lang: vi }
+        - { id: j5w, text: "Xin lỗi, anh/chị đã hỏi tên tôi phải không ạ?", lang: vi }
+        - { id: g7n, text: "Cảm ơn anh/chị đã cho tôi biết tên ạ.", lang: vi }
+    answer:
+      correct_option_id: q8d
+    explanation:
+      vi: 恐れ入りますが - cụm đệm "xin thứ lỗi" (không phải "tôi sợ"); 伺ってもよろしいでしょうか - cho phép tôi hỏi được không ạ.
+    display_answer: Xin thứ lỗi, cho phép tôi hỏi lại tên anh/chị được không ạ?
+
+  - key: ja:exercise:n2-u3-business-email-fill-kaki
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-kaki
+    prompt:
+      template: "次回の打ち合わせの日時は{{b1}}の通りです。"
+      blanks:
+        - { id: b1, width_hint: 2 }
+      hint_levels:
+        - "Nghĩa: Thời gian buổi trao đổi lần tới như (ghi) dưới đây."
+        - "Gợi ý: 下 + 記, đối lại 上記."
+    answer:
+      blanks:
+        b1: [下記, かき]
+    known_wrong:
+      - answer: 上記
+        feedback_vi: 上記 là "ghi ở trên". Phần liệt kê nằm phía sau thì dùng 下記.
+        error_tag: vocab_confusion
+    explanation:
+      vi: 下記の通り - như ghi dưới đây; thường theo sau là danh sách 日時・場所・議題.
+    display_answer: 次回の打ち合わせの日時は下記の通りです。
+
+  - key: ja:exercise:n2-u3-business-email-wb-otesuu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-otesuu
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Xin lỗi đã làm phiền, mong anh/chị kiểm tra giúp.\""
+      tokens:
+        - { id: o3, text: お願いいたします }
+        - { id: o1, text: お手数をおかけしますが、 }
+        - { id: o4, text: お手数をおかけしました。 }
+        - { id: o2, text: ご確認を }
+    answer:
+      orders:
+        - [o1, o2, o3]
+    explanation:
+      vi: お手数をおかけしますが đặt trước lời nhờ. お手数をおかけしました (quá khứ) dùng để cảm ơn sau khi người kia đã làm xong.
+    display_answer: お手数をおかけしますが、ご確認をお願いいたします。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-u3-business-email-fill-negaimasu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-gram-o-negaimasu
+    prompt:
+      template: "出席の可否を今週中にご連絡{{b1}}。(yêu cầu trang trọng, ngắn)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [願います, ねがいます]
+    known_wrong:
+      - answer: してください
+        feedback_vi: ご連絡してください trộn khiêm nhường ご～する với yêu cầu - sai. Đề yêu cầu mẫu ご～願います.
+        error_tag: go_kudasai_form
+      - answer: いたします
+        feedback_vi: ご連絡いたします là "tôi sẽ liên lạc" - ngược người làm.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: ご + từ Hán + 願います - xin vui lòng... 出席の可否 - có tham dự hay không.
+    display_answer: 出席の可否を今週中にご連絡願います。
+
+  - key: ja:exercise:n2-u3-business-email-translate-saiwai
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-te-itadakereba-saiwai
+    prompt:
+      source_text: Nếu anh/chị phản hồi trong tuần này thì tôi rất biết ơn. (email, dùng ～ていただければ幸いです)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 今週中にご返信いただければ幸いです。
+        - 今週中にご返事いただければ幸いです。
+        - 今週中にお返事いただければ幸いです。
+        - 今週中にご回答いただければ幸いです。
+        - 今週中にお返事をいただければ幸いです。
+        - 今週中にご返信をいただければ幸いです。
+        - 今週中に返信していただければ幸いです。
+        - 今週中に返事をしていただければ幸いです。
+        - 今週中にご連絡いただければ幸いです。
+        - 今週中にご返信いただけましたら幸いです。
+        - 今週中にお返事いただけましたら幸いです。
+        - こんしゅうちゅうにごへんしんいただければさいわいです。
+    known_wrong:
+      - answer: 今週中にご返信いたしければ幸いです。
+        feedback_vi: いたす là khiêm nhường cho mình; người kia phản hồi cho mình - ご返信いただければ.
+        error_tag: kenjougo_meaning
+      - answer: 今週中にご返信していただければ幸いです。
+        feedback_vi: Không chen して sau ご + từ Hán; dùng ご返信いただければ hoặc 返信していただければ.
+        error_tag: go_itadaku_form
+    explanation:
+      vi: 今週中に - trong tuần này; ご返信いただければ - nếu được anh/chị hồi âm; 幸いです - tôi rất lấy làm vui/biết ơn.
+    display_answer: 今週中にご返信いただければ幸いです。
+
+  - key: ja:exercise:n2-u3-business-email-translate-sasete
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-sasete-itadaku
+    prompt:
+      source_text: Tôi đã được xem tài liệu anh/chị gửi rồi ạ. (dùng 拝見させていただく)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - お送りいただいた資料を拝見させていただきました。
+        - 送っていただいた資料を拝見させていただきました。
+        - お送りいただきました資料を拝見させていただきました。
+        - 資料を拝見させていただきました。
+        - いただいた資料を拝見させていただきました。
+        - お送りいただいた資料、拝見させていただきました。
+        - 送っていただいた資料、拝見させていただきました。
+        - お送りくださった資料を拝見させていただきました。
+        - 送ってくださった資料を拝見させていただきました。
+        - お送りいただいた資料はもう拝見させていただきました。
+        - おおくりいただいたしりょうをはいけんさせていただきました。
+    known_wrong:
+      - answer: お送りいただいた資料をご覧させていただきました。
+        feedback_vi: ご覧 thuộc tôn kính (ご覧になる). Mình xem - 拝見させていただく.
+        error_tag: sonkeigo_kenjougo
+      - answer: お送りした資料を拝見させていただきました。
+        feedback_vi: お送りした là "tài liệu tôi đã gửi". Tài liệu anh/chị gửi - お送りいただいた / 送っていただいた.
+        error_tag: giving_direction
+    explanation:
+      vi: お送りいただいた資料 - tài liệu được anh/chị gửi cho; 拝見させていただきました - tôi đã được xem (khiêm nhường, quen dùng trong email).
+    display_answer: お送りいただいた資料を拝見させていただきました。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-u3-business-email-mcq-wrong
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-sasete-itadaku
+    prompt:
+      stem: Câu nào dùng ～させていただく SAI ngữ pháp?
+      stem_lang: vi
+      options:
+        - { id: s9c, text: 明日、御社に行かさせていただきます。, lang: ja }
+        - { id: f4j, text: 本日の司会を務めさせていただきます。, lang: ja }
+        - { id: l2o, text: 内容を確認させていただきました。, lang: ja }
+        - { id: x6v, text: 来週の会議は欠席させていただきます。, lang: ja }
+    answer:
+      correct_option_id: s9c
+    explanation:
+      vi: 行く là nhóm 1 → 行かせていただきます (không thêm さ); tự nhiên hơn nữa là 伺います. Ba câu kia đúng - 務める, 確認する, 欠席する.
+    display_answer: 明日、御社に行かさせていただきます。
+
+  - key: ja:exercise:n2-u3-business-email-mcq-register
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-osoreirimasu
+    prompt:
+      stem: Bạn viết email cho một khách hàng quan trọng nhờ gửi lại hợp đồng đã ký. Câu nào lịch sự và phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: m1q, text: 恐れ入りますが、ご署名いただいた契約書をご返送いただけますでしょうか。, lang: ja }
+        - { id: d5y, text: 署名した契約書を早く送り返してください。, lang: ja }
+        - { id: z8b, text: 恐れ入りますが、ご署名いただいた契約書をご返送いたします。, lang: ja }
+        - { id: p3h, text: 契約書をご返送してください。よろしく。, lang: ja }
+    answer:
+      correct_option_id: m1q
+    explanation:
+      vi: Đệm 恐れ入りますが + nhờ bằng ご返送いただけますでしょうか. Câu thứ hai ra lệnh, quá cứng; câu thứ ba ご返送いたします là "tôi gửi lại" - sai người làm; câu cuối sai mẫu ご～してください và suồng sã.
+    display_answer: 恐れ入りますが、ご署名いただいた契約書をご返送いただけますでしょうか。
+
+  - key: ja:exercise:n2-u3-business-email-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u3-otesuu
+    prompt:
+      source_text: お手数をおかけしますが、添付の資料をご確認のほど、よろしくお願いいたします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi đã làm phiền, mong anh chị kiểm tra giúp tài liệu đính kèm.
+        - Xin lỗi đã làm phiền anh chị, mong anh chị kiểm tra giúp tài liệu đính kèm.
+        - Xin lỗi làm phiền, mong anh chị kiểm tra tài liệu đính kèm.
+        - Xin lỗi đã làm phiền, rất mong anh chị kiểm tra tài liệu đính kèm.
+        - Xin lỗi vì làm phiền, nhờ anh chị kiểm tra giúp tài liệu đính kèm.
+        - Làm phiền anh chị, xin vui lòng kiểm tra tài liệu đính kèm.
+        - Xin lỗi đã làm phiền, xin vui lòng kiểm tra tài liệu đính kèm.
+        - Xin lỗi đã làm phiền, mong anh chị xác nhận tài liệu đính kèm.
+        - Xin lỗi đã làm phiền, mong anh/chị kiểm tra giúp tài liệu đính kèm.
+        - Xin lỗi vì đã làm phiền, mong anh chị kiểm tra giúp tài liệu đính kèm ạ.
+        - Xin lỗi đã làm phiền, mong anh kiểm tra giúp tài liệu đính kèm.
+        - Xin lỗi đã làm phiền, mong chị kiểm tra giúp tài liệu đính kèm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã làm phiền anh chị, tôi sẽ kiểm tra tài liệu đính kèm.
+        feedback_vi: ご確認のほどよろしくお願いいたします là nhờ người kia kiểm tra, không phải tôi kiểm tra.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: お手数をおかけしますが - xin lỗi đã làm phiền; 添付の資料 - tài liệu đính kèm; ご確認のほどよろしくお願いいたします - mong anh/chị kiểm tra giúp (mềm hơn ご確認ください).
+    display_answer: Xin lỗi đã làm phiền, mong anh chị kiểm tra giúp tài liệu đính kèm.
+
+  - key: ja:exercise:n2-u3-business-email-wb-closing
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-o-negaimasu
+    prompt:
+      instruction: "Câu kết email: \"Rất mong nhận được sự hợp tác của quý vị.\""
+      tokens:
+        - { id: k2, text: ご協力の }
+        - { id: k5, text: ご協力して }
+        - { id: k1, text: 何卒 }
+        - { id: k3, text: ほど、 }
+        - { id: k4, text: よろしくお願い申し上げます }
+    answer:
+      orders:
+        - [k1, k2, k3, k4]
+        - [k2, k3, k1, k4]
+    explanation:
+      vi: ご + danh từ + のほど、よろしくお願い申し上げます - mẫu kết thư rất trang trọng. 何卒 (なにとぞ) - rất mong. ご協力して sai mẫu.
+    display_answer: 何卒ご協力のほど、よろしくお願い申し上げます。
+
+  - key: ja:exercise:n2-u3-business-email-mcq-structure
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-tenpu
+    prompt:
+      stem: Bạn gửi email kèm lịch trình, mong đối tác xem trước nhưng không gấp. Câu nào hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: r7e, text: スケジュール案を添付いたしましたので、お目通しいただければ幸いです。, lang: ja }
+        - { id: c4a, text: スケジュール案を添付なさいましたので、ご確認ください。, lang: ja }
+        - { id: t9l, text: スケジュール案を添付いたしましたので、すぐに確認しろ。, lang: ja }
+        - { id: i1g, text: スケジュール案を添付いただきましたので、拝見いたします。, lang: ja }
+    answer:
+      correct_option_id: r7e
+    explanation:
+      vi: 添付いたしました - tôi đã đính kèm; お目通しいただければ幸いです - nếu anh/chị xem qua thì tôi rất biết ơn (nhờ mềm, không ép). なさる là tôn kính sai chỗ; 確認しろ là mệnh lệnh thô; 添付いただきました là người kia đính kèm - sai tình huống.
+    display_answer: スケジュール案を添付いたしましたので、お目通しいただければ幸いです。

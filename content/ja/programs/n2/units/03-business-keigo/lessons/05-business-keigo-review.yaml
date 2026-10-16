@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-16T12:00:00+07:00"
+key: ja:lesson:n2-business-keigo-review
+order_index: 5
+level: n2
+title:
+  vi: "Ôn tập: tiếp đối tác từ email đến cuộc họp"
+objectives:
+  - vi: Phối hợp 丁重語, khiêm nhường và tôn kính trong một tình huống công việc trọn vẹn.
+  - vi: Dùng thêm 存じる, お目にかかる khi chào hỏi đối tác.
+  - vi: Nhận ra và sửa lỗi kính ngữ hay gặp trong email, điện thoại, cuộc họp.
+estimated_minutes: 25
+skills: [reading, listening, writing, grammar]
+prerequisites: [ja:lesson:n2-u3-meeting-requests]
+items:
+  - item: ja:item:n2-u3-zonjiru
+  - item: ja:item:n2-u3-omenikakaru
+  - item: ja:item:n2-u3-gram-teichougo
+    role: reuse
+  - item: ja:item:n2-u3-gozaru
+    role: reuse
+  - item: ja:item:n2-u3-gram-sasete-itadaku
+    role: reuse
+  - item: ja:item:n2-u3-gram-o-negaimasu
+    role: reuse
+  - item: ja:item:n2-u3-moushitsutaeru
+    role: reuse
+  - item: ja:item:n2-u3-gram-kanemasu
+    role: reuse
+  - item: ja:item:n2-u3-gram-te-itadakenai-deshouka
+    role: reuse
+  - item: ja:item:n2-u3-myounichi
+    role: reuse
+  - item: ja:item:n3-gram-sonkeigo
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn đi theo một chuỗi việc - gửi email hẹn gặp, gọi điện xác nhận, gặp mặt và họp. Ở mỗi bước, bạn chọn đúng mức kính ngữ và tránh lỗi trộn lẫn tôn kính với khiêm nhường.
+  - type: explain
+    text:
+      vi: 'Hai từ khiêm nhường hay dùng khi gặp đối tác: お目にかかる (gặp) - 来週お目にかかれるのを楽しみにしております; 存じる (biết, nghĩ) - その件は存じております, お名前はかねがね存じ上げております, ～と存じます (tôi nghĩ rằng, văn viết).'
+  - type: explain
+    text:
+      vi: 'Bảng kiểm nhanh khi nói về một hành động: (1) Ai làm? Người được tôn trọng làm - tôn kính (お～になる, いらっしゃる, ご覧になる). (2) Mình làm và hướng tới người kia - khiêm nhường I (お～する, 伺う, 拝見する). (3) Mình làm, không hướng tới ai, chỉ cần trang trọng - 丁重語 (いたす, まいる, おる). (4) Nhờ người kia - ～ていただけないでしょうか, お/ご～願います. (5) Từ chối - ～かねます, 遠慮させていただきます.'
+  - type: deep_explain
+    text:
+      vi: Lỗi hay gặp nhất ở trình độ N2 không phải là thiếu kính ngữ mà là dùng quá tay hoặc trộn sai - ご覧になられる (kính ngữ chồng), おっしゃられる, 拝見させていただきます trong mọi câu, hay hỏi khách 存じていますか. Nguyên tắc là mỗi động từ chỉ nâng một lần, và chỉ một hướng. Khi phân vân, câu đơn giản ます/です đúng hướng vẫn tốt hơn câu dài sai hướng.
+  - type: example
+    target: 来週の打ち合わせで、お目にかかれるのを楽しみにしております。
+    target_lang: ja
+    translation:
+      vi: Tôi rất mong được gặp anh/chị ở buổi trao đổi tuần sau.
+  - type: example
+    target: お名前はかねがね存じ上げております。本日はお時間をいただき、ありがとうございます。
+    target_lang: ja
+    translation:
+      vi: Tôi đã nghe danh anh/chị từ lâu. Cảm ơn anh/chị hôm nay đã dành thời gian.
+  - type: example
+    target: 先ほどの件、上司と相談いたしまして、明日（みょうにち）改めてご連絡いたします。
+    target_lang: ja
+    translation:
+      vi: Về việc lúc nãy, tôi sẽ bàn với cấp trên rồi ngày mai liên lạc lại với anh/chị.
+  - type: example
+    target: ご要望に沿えるよう努力いたしますが、全額の負担はいたしかねます。
+    target_lang: ja
+    translation:
+      vi: Chúng tôi sẽ cố gắng đáp ứng yêu cầu, nhưng khó có thể chịu toàn bộ chi phí.
+  - type: common_mistake
+    wrong: 部長、その件はもう存じていますか。
+    right: 部長、その件はもうご存じですか。
+    target_lang: ja
+    note:
+      vi: 存じる là khiêm nhường, chỉ cho mình. Hỏi người trên có biết không dùng tôn kính ご存じですか.
+  - type: common_mistake
+    wrong: 社長が先ほどおっしゃられました。
+    right: 社長が先ほどおっしゃいました。
+    target_lang: ja
+    note:
+      vi: おっしゃる đã là tôn kính; thêm られる thành kính ngữ chồng (二重敬語). Tương tự ご覧になられる → ご覧になる.
+  - type: summary
+    points:
+      - vi: お目にかかる - gặp (khiêm nhường); 存じる / 存じ上げる - biết (khiêm nhường); ご存じ - tôn kính.
+      - vi: Ai làm, hướng tới ai - quyết định tôn kính, khiêm nhường hay 丁重語.
+      - vi: Nhờ - ていただけないでしょうか, ご～願います; từ chối - かねます, 遠慮させていただきます.
+      - vi: Tránh kính ngữ chồng (おっしゃられる, ご覧になられる) và lạm dụng させていただく.
+exercises:
+  # ---------------- recognition ----------------
+  - key: ja:exercise:n2-business-keigo-review-mcq-reading
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u3-gram-te-itadakenai-deshouka
+    prompt:
+      stem: "Đọc email: 「先日はお忙しいところ、ありがとうございました。さて、ご提案いただいた件ですが、誠に恐縮ながら、今回は見送らせていただくことになりました。また機会がございましたら、よろしくお願いいたします。」 Nội dung chính là gì?"
+      stem_lang: vi
+      options:
+        - { id: p5a, text: Lịch sự từ chối đề xuất của người nhận lần này., lang: vi }
+        - { id: e2w, text: Đồng ý với đề xuất và hẹn ký hợp đồng., lang: vi }
+        - { id: u8k, text: Nhờ người nhận gửi lại đề xuất mới., lang: vi }
+        - { id: l3z, text: Xin lỗi vì đã không đến buổi họp hôm trước., lang: vi }
+    answer:
+      correct_option_id: p5a
+    explanation:
+      vi: 見送らせていただくことになりました - đã quyết định xin phép gác lại (từ chối); 誠に恐縮ながら - thật vô cùng ngại; また機会がございましたら - nếu có dịp khác. Đây là mẫu email từ chối điển hình.
+    display_answer: Lịch sự từ chối đề xuất của người nhận lần này.
+
+  - key: ja:exercise:n2-business-keigo-review-listen-omenikakaru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n2-u3-omenikakaru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 来週の打ち合わせで、お目にかかれるのを楽しみにしております。
+      options:
+        - { id: x4f, text: "Tôi rất mong được gặp anh/chị ở buổi trao đổi tuần sau.", lang: vi }
+        - { id: o7c, text: "Tôi rất mong anh/chị xem tài liệu trước buổi trao đổi tuần sau.", lang: vi }
+        - { id: y1h, text: "Anh/chị rất mong gặp tôi ở buổi trao đổi tuần sau.", lang: vi }
+        - { id: s6d, text: "Buổi trao đổi tuần sau đã bị huỷ, rất tiếc.", lang: vi }
+    answer:
+      correct_option_id: x4f
+    explanation:
+      vi: お目にかかる - (khiêm nhường) gặp; お目にかかれる - có thể được gặp; 楽しみにしております - tôi đang rất mong (丁重語 おる). Người gặp là "tôi".
+    display_answer: Tôi rất mong được gặp anh/chị ở buổi trao đổi tuần sau.
+
+  - key: ja:exercise:n2-business-keigo-review-mcq-zonji
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-zonjiru
+    prompt:
+      stem: 'Sếp hỏi bạn có biết chuyện đổi lịch không. Bạn đáp "Vâng, tôi biết ạ": はい、＿＿。'
+      stem_lang: vi
+      options:
+        - { id: c9r, text: 存じております, lang: ja }
+        - { id: h4v, text: ご存じです, lang: ja }
+        - { id: b6m, text: ご存じでいらっしゃいます, lang: ja }
+        - { id: t2q, text: 知っていらっしゃいます, lang: ja }
+    answer:
+      correct_option_id: c9r
+    explanation:
+      vi: Mình biết - khiêm nhường 存じております. ご存じ và 知っていらっしゃる là tôn kính, chỉ dùng cho người kia.
+    display_answer: 存じております
+
+  - key: ja:exercise:n2-business-keigo-review-fill-moushitsutaeru
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-moushitsutaeru
+    prompt:
+      template: "承知いたしました。戻りましたら、山本にそのように{{b1}}。"
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Tôi đã rõ. Khi anh Yamamoto về, tôi sẽ chuyển lời như vậy ạ."
+        - "Gợi ý: khiêm nhường của 伝える khi chuyển lời đến người phe mình."
+    answer:
+      blanks:
+        b1: [申し伝えます, もうしつたえます]
+    known_wrong:
+      - answer: お伝えになります
+        feedback_vi: お～になる là tôn kính - sai người làm. Mình chuyển lời - 申し伝えます.
+        error_tag: sonkeigo_kenjougo
+      - answer: 伝えてください
+        feedback_vi: Câu này nhờ người khác chuyển lời. Người nghe máy hứa chuyển - 申し伝えます.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: 申し伝える - chuyển lời đến người phe mình (khiêm nhường). 山本 không có さん vì đang nói với khách.
+    display_answer: 承知いたしました。戻りましたら、山本にそのように申し伝えます。
+
+  - key: ja:exercise:n2-business-keigo-review-wb-gozaimasu
+    type: word_bank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u3-gozaru
+    prompt:
+      instruction: "Kết thúc buổi thuyết trình: \"Quý vị có câu hỏi nào không ạ?\""
+      tokens:
+        - { id: q3, text: ございませんか }
+        - { id: q1, text: 何か }
+        - { id: q4, text: いらっしゃいませんか }
+        - { id: q2, text: ご質問は }
+    answer:
+      orders:
+        - [q1, q2, q3]
+        - [q2, q1, q3]
+    explanation:
+      vi: Câu hỏi là sự vật - ございませんか (trang trọng của ありませんか). いらっしゃる chỉ dùng cho người.
+    display_answer: 何かご質問はございませんか。
+
+  # ---------------- recall ----------------
+  - key: ja:exercise:n2-business-keigo-review-fill-nijuu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-gram-sonkeigo
+    prompt:
+      template: "社長が先ほど{{b1}}ました。(nói - tôn kính, không chồng kính ngữ)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [おっしゃい]
+    known_wrong:
+      - answer: おっしゃられ
+        feedback_vi: おっしゃられる là kính ngữ chồng. おっしゃる đã đủ - おっしゃいました.
+        error_tag: double_keigo
+      - answer: 申し
+        feedback_vi: 申す là khiêm nhường/丁重語 cho mình, không dùng cho giám đốc khi nói trong nội bộ.
+        error_tag: sonkeigo_kenjougo
+    explanation:
+      vi: Trong nội bộ công ty, nói về giám đốc dùng tôn kính おっしゃる - おっしゃいました (dạng ます là おっしゃいます). Mỗi động từ chỉ nâng một lần.
+    display_answer: 社長が先ほどおっしゃいました。
+
+  - key: ja:exercise:n2-business-keigo-review-translate-omenikakaru
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-omenikakaru
+    prompt:
+      source_text: Tuần sau tôi sẽ gặp trực tiếp để trình bày với anh/chị. (dùng お目にかかる)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 来週、直接お目にかかってご説明いたします。
+        - 来週直接お目にかかってご説明いたします。
+        - 来週、直接お目にかかってご説明します。
+        - 来週、直接お目にかかって説明いたします。
+        - 来週、直接お目にかかってご説明させていただきます。
+        - 来週、直接お目にかかり、ご説明いたします。
+        - 来週、お目にかかって直接ご説明いたします。
+        - 来週、お目にかかってご説明いたします。
+        - 来週は直接お目にかかってご説明いたします。
+        - 来週、直接お目にかかった上でご説明いたします。
+        - らいしゅう、ちょくせつおめにかかってごせつめいいたします。
+    known_wrong:
+      - answer: 来週、直接お会いになってご説明いたします。
+        feedback_vi: お会いになる là tôn kính - người kia gặp. Mình gặp - お目にかかる.
+        error_tag: sonkeigo_kenjougo
+      - answer: 来週、直接お目にかかってご説明なさいます。
+        feedback_vi: なさる là tôn kính; mình trình bày - ご説明いたします.
+        error_tag: sonkeigo_kenjougo
+    explanation:
+      vi: 直接 - trực tiếp; お目にかかって - gặp (khiêm nhường); ご説明いたします - tôi xin trình bày.
+    display_answer: 来週、直接お目にかかってご説明いたします。
+
+  - key: ja:exercise:n2-business-keigo-review-translate-kanemasu
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u3-gram-kanemasu
+    prompt:
+      source_text: Thành thật xin lỗi, chúng tôi khó có thể chịu toàn bộ chi phí ạ. (dùng ～かねます)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 申し訳ございませんが、全額の負担はいたしかねます。
+        - 申し訳ございませんが、全額のご負担はいたしかねます。
+        - 申し訳ございませんが、費用の全額負担はいたしかねます。
+        - 申し訳ございませんが、費用を全額負担することはいたしかねます。
+        - 申し訳ございませんが、全額を負担いたしかねます。
+        - 申し訳ございませんが、全額負担はいたしかねます。
+        - 申し訳ありませんが、全額の負担はいたしかねます。
+        - 申し訳ありませんが、全額負担はいたしかねます。
+        - 申し訳ございませんが、費用を全額負担しかねます。
+        - 申し訳ございませんが、全額の負担はできかねます。
+        - 大変申し訳ございませんが、全額の負担はいたしかねます。
+        - もうしわけございませんが、ぜんがくのふたんはいたしかねます。
+    known_wrong:
+      - answer: 申し訳ございませんが、全額の負担はいたしかねません。
+        feedback_vi: かねます đã mang nghĩa phủ định "khó có thể"; thêm ません thành ngược nghĩa.
+        error_tag: kaneru_kanenai
+      - answer: 申し訳ございませんが、全額の負担はしかねない。
+        feedback_vi: かねない là "có nguy cơ" - sai nghĩa và không đủ lịch sự.
+        error_tag: kaneru_kanenai
+    explanation:
+      vi: 全額 - toàn bộ số tiền; 負担 - gánh chịu; いたしかねます / できかねます - khó có thể (từ chối lịch sự).
+    display_answer: 申し訳ございませんが、全額の負担はいたしかねます。
+
+  # ---------------- application ----------------
+  - key: ja:exercise:n2-business-keigo-review-mcq-wrong
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u3-zonjiru
+    prompt:
+      stem: Câu nào dùng kính ngữ ĐÚNG?
+      stem_lang: vi
+      options:
+        - { id: k8t, text: お名前はかねがね存じ上げております。, lang: ja }
+        - { id: a1e, text: 部長、この件はもう存じていらっしゃいますか。, lang: ja }
+        - { id: w5n, text: 資料はもうご覧になられましたか。, lang: ja }
+        - { id: g3p, text: 失礼ですが、田中様でございますか。, lang: ja }
+    answer:
+      correct_option_id: k8t
+    explanation:
+      vi: 存じ上げる - biết (về một người được tôn trọng), dùng cho mình - đúng. 存じる không dùng cho sếp (phải là ご存じですか); ご覧になられる là kính ngữ chồng; hỏi về khách phải dùng でいらっしゃいますか.
+    display_answer: お名前はかねがね存じ上げております。
+
+  - key: ja:exercise:n2-business-keigo-review-listen-phone
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u3-myounichi
+    prompt:
+      audio_asset_id: null
+      fallback_text: "A: 申し訳ございません。木村は本日出張しておりまして、戻りはみょうにちの午後になります。B: そうですか。では、みょうにちの夕方、こちらから改めてお電話いたします。"
+      options:
+        - { id: m9b, text: "Chiều tối ngày mai, B sẽ tự gọi lại.", lang: vi }
+        - { id: z4s, text: "Chiều tối hôm nay, anh Kimura sẽ gọi lại cho B.", lang: vi }
+        - { id: f7l, text: "Chiều mai A sẽ gọi lại cho B.", lang: vi }
+        - { id: j2d, text: "B sẽ đến gặp anh Kimura vào chiều mai.", lang: vi }
+    answer:
+      correct_option_id: m9b
+    explanation:
+      vi: 木村 đi công tác hôm nay (本日出張), chiều mai mới về (戻りはみょうにちの午後). B quyết định こちらから改めてお電話いたします - phía B tự gọi lại, vào みょうにちの夕方 (chiều tối mai).
+    display_answer: Chiều tối ngày mai, B sẽ tự gọi lại.
+
+  - key: ja:exercise:n2-business-keigo-review-translate-to-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u3-gram-o-negaimasu
+    prompt:
+      source_text: 恐れ入りますが、ご出席の可否を今週中にご連絡願います。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin thứ lỗi, xin vui lòng báo việc có tham dự hay không trong tuần này.
+        - Xin thứ lỗi, xin vui lòng thông báo có tham dự hay không trong tuần này.
+        - Xin thứ lỗi, mong anh chị báo có tham dự hay không trong tuần này.
+        - Xin thứ lỗi, xin anh chị vui lòng cho biết có tham dự hay không trong tuần này.
+        - Xin lỗi, xin vui lòng báo việc có tham dự hay không trong tuần này.
+        - Xin lỗi làm phiền, xin vui lòng báo có tham dự hay không trong tuần này.
+        - Xin thứ lỗi, vui lòng liên lạc cho biết có tham dự hay không trong tuần này.
+        - Xin thứ lỗi, xin vui lòng liên lạc trong tuần này cho biết có tham dự hay không.
+        - Xin thứ lỗi, xin vui lòng báo trong tuần này việc có tham dự hay không.
+        - Xin thứ lỗi, mong quý vị báo có tham dự hay không trong tuần này.
+        - Xin thứ lỗi, xin vui lòng cho biết anh chị có tham dự hay không trong tuần này.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin thứ lỗi, tôi sẽ báo việc có tham dự hay không trong tuần này.
+        feedback_vi: ご～願います là nhờ người kia làm, không phải tôi sẽ làm.
+        error_tag: kenjougo_meaning
+    explanation:
+      vi: ご出席の可否 - việc có tham dự hay không; 今週中に - trong tuần này; ご連絡願います - xin vui lòng liên lạc, báo cho biết.
+    display_answer: Xin thứ lỗi, xin vui lòng báo việc có tham dự hay không trong tuần này.
+
+  - key: ja:exercise:n2-business-keigo-review-wb-request
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u3-gram-sasete-itadaku
+    prompt:
+      instruction: "Nhờ đối tác trong họp: \"Thật ngại quá, liệu anh/chị có thể cho phép tôi chụp ảnh tài liệu này được không ạ?\""
+      tokens:
+        - { id: v2, text: こちらの資料を }
+        - { id: v5, text: 撮影させて }
+        - { id: v1, text: 大変恐縮ですが、 }
+        - { id: v4, text: いただけないでしょうか }
+        - { id: v3, text: 撮影して }
+    answer:
+      orders:
+        - [v1, v2, v5, v4]
+    explanation:
+      vi: Mình chụp nhưng cần người kia cho phép - V-させていただけないでしょうか (xin phép rất lịch sự). 撮影していただけないでしょうか sẽ là nhờ người kia chụp - sai ý.
+    display_answer: 大変恐縮ですが、こちらの資料を撮影させていただけないでしょうか。
