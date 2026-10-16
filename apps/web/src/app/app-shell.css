@@ -109,3 +109,178 @@
 [data-reduce-motion='true']::view-transition-new(*) {
   animation: none !important;
 }
+
+/* ======================================================================================================
+   Shared page primitives (adopt in routes)
+   .page                 centred content column (max --page-max); modifiers .page--wide, .page--narrow
+   .page-header          eyebrow + title + lede (+ .page-header__actions) with a hairline rule below
+   .page-title-lg        display heading sized for laptop (use inside .page-header)
+   .page-stack           vertical rhythm between sections (--section-gap)
+   .page-grid            12-col grid on laptop, 1 col on mobile; children use .col-span-* (Tailwind)
+   .section-head         small heading row inside a section (title left, link/action right)
+   .surface-1/-2/-3      layered surfaces (panel, raised card, floating)
+   .surface-interactive  hover lift + border highlight for clickable cards
+   .hover-lift           transform-only lift on hover
+   .reveal / .reveal-stagger   one-shot entrance (children of .reveal-stagger cascade)
+   .rule                 hairline divider
+   .focus-ring           consistent focus ring for custom controls
+   ====================================================================================================== */
+.page {
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+.page--wide {
+  max-width: var(--page-max-wide);
+}
+.page--narrow {
+  max-width: var(--page-max-narrow);
+}
+.page-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+.page-stack--tight {
+  gap: var(--stack-gap);
+}
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--stack-gap);
+}
+@media (min-width: 1024px) {
+  .page-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: var(--section-gap);
+  border-bottom: 1px solid var(--hairline);
+}
+.page-header__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.page-header .eyebrow {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+.page-header p {
+  margin: 0.4rem 0 0;
+  max-width: 42rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+.page-title-lg {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.25rem, 8vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  .page-title-lg {
+    font-size: clamp(2.5rem, 2.4vw + 1.2rem, 3.5rem);
+  }
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.875rem;
+}
+.section-head h2 {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+.rule {
+  height: 1px;
+  border: 0;
+  background: var(--hairline);
+}
+
+.surface-1,
+.surface-2,
+.surface-3 {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--hairline);
+}
+.surface-1 {
+  background: var(--layer-1);
+}
+.surface-2 {
+  background: var(--layer-2);
+  box-shadow: var(--card-sheen), var(--shadow-2);
+}
+.surface-3 {
+  background: var(--layer-2);
+  border-color: var(--hairline-strong);
+  box-shadow: var(--card-sheen), var(--shadow-3);
+}
+.surface-interactive,
+.hover-lift {
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out);
+}
+@media (hover: hover) {
+  .surface-interactive:hover,
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+  .surface-interactive:hover {
+    border-color: color-mix(in srgb, var(--primary) 35%, var(--hairline));
+    box-shadow: var(--card-sheen), var(--shadow-3);
+  }
+}
+.surface-interactive:active {
+  transform: translateY(0) scale(0.995);
+}
+.focus-ring:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.reveal {
+  animation: rise-in var(--dur-slow) var(--ease-expo) both;
+}
+.reveal-stagger > * {
+  animation: rise-in var(--dur-slow) var(--ease-expo) both;
+}
+.reveal-stagger > :nth-child(2) { animation-delay: 50ms; }
+.reveal-stagger > :nth-child(3) { animation-delay: 100ms; }
+.reveal-stagger > :nth-child(4) { animation-delay: 150ms; }
+.reveal-stagger > :nth-child(5) { animation-delay: 200ms; }
+.reveal-stagger > :nth-child(n + 6) { animation-delay: 240ms; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > * {
+    animation: none;
+  }
+}
+[data-reduce-motion='true'] .reveal,
+[data-reduce-motion='true'] .reveal-stagger > * {
+  animation: none;
+}
