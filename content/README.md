@@ -69,6 +69,7 @@ Câu trả lời được chấm trên server theo thuật toán trong `packages
 - Đáp án tiếng Việt: liệt kê các cách nói phổ biến (đại từ, "những/các", "nhé"…); thường đặt `rubric.diacritics: lenient` để câu gõ thiếu dấu được tính "gần đúng".
 - Đáp án tiếng Anh dài: `rubric.typo_tolerance: 1` (một lỗi gõ ở từ ≥ 5 chữ cái được tính "gần đúng"; mạo từ sai luôn là sai).
 - Đáp án tiếng Hàn: `ko_spacing: lenient` (mặc định) - sai khoảng cách là "gần đúng"; sai biến thể trợ từ (은/는, 이/가…) là sai.
+- Đáp án tiếng Nhật: máy chấm bỏ dấu câu (`、` `。` `「」`…) rồi bỏ mọi khoảng trắng, nên không cần khai biến thể chỉ khác dấu câu hay khoảng trắng; vẫn phải khai biến thể kana/kanji (`がっこう` / `学校`).
 - `known_wrong`: thêm các lỗi dự đoán được của người Việt kèm `feedback_vi` ngắn và `error_tag` dạng snake_case (`missing_be`, `article`, `be_form`, `possessive`, `vowel_eo_o`, `consonant_tense`, `romanization`…).
 - `known_wrong` của `fill_blank` áp dụng cho mọi ô trống, nhưng mỗi ô so với `accepted` của nó trước. Quy tắc kiểm tra: một đáp án `known_wrong` không được trùng (sau chuẩn hoá) với đáp án đúng của **bất kỳ** ô nào trong bài tập.
 - Công cụ kiểm tra bắt buộc: mọi `accepted`/`blanks`/`orders` chấm **đúng**; mọi phương án nhiễu và `known_wrong` của `translate` chấm **sai**; `known_wrong` của `fill_blank` theo quy tắc ở trên.
