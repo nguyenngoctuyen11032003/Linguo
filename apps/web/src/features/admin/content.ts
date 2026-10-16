@@ -205,7 +205,7 @@ export function formatAdminDate(iso: string | null): string {
   return `${m[3]}/${m[2]}/${m[1]}`;
 }
 
-/** Link to the report queue filtered to a content kind (admin_list_reports has no per-target filter). */
-export function reportsPath(kind: ReportTargetKind): string {
-  return `/quan-tri/bao-loi?${new URLSearchParams({ loai: kind }).toString()}`;
+/** Link to the report queue filtered to a content kind, or to one row of it (?muc=<id>, filtered client-side). */
+export function reportsPath(kind: ReportTargetKind, id?: string): string {
+  return `/quan-tri/bao-loi?${new URLSearchParams(id ? { loai: kind, muc: id } : { loai: kind }).toString()}`;
 }
