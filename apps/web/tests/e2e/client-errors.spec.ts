@@ -27,13 +27,14 @@ async function openBrokenLesson(page: Page) {
   }, LESSON_URL);
 }
 
-const errorHeading = (page: Page) => page.getByRole('heading', { level: 1, name: 'Có lỗi xảy ra' });
+// A failed lazy chunk while online reads as a stale deploy: the dedicated "new version" screen, whose action reloads.
+const errorHeading = (page: Page) => page.getByRole('heading', { level: 1, name: 'Đã có phiên bản mới' });
 
 test('a failed chunk shows the friendly error and reports one anonymous client_error', async ({ page }) => {
   const mock = await setup(page);
   await openBrokenLesson(page);
   await expect(errorHeading(page)).toBeVisible({ timeout: 15_000 });
-  await expect(page.getByRole('button', { name: 'Thử lại' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Tải lại trang' })).toBeVisible();
 
   await page.evaluate(() => window.dispatchEvent(new Event('pagehide')));
   await expect.poll(() => mock.progress.events().filter((e) => e.name === 'client_error').length).toBeGreaterThan(0);

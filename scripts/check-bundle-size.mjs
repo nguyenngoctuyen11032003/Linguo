@@ -13,16 +13,22 @@ import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
 
-/** Gzip bytes (KiB). Measured 2026-10: entry chunk 28.5 KiB, initial JS 208.9 KiB (was one 357 KiB chunk). */
+/**
+ * Gzip bytes (KiB). Measured 2026-10-16: entry chunk 28.2 KiB, initial JS 146.2 KiB once Supabase and zod moved out of
+ * the first load (was 32.5 / 235.8; originally one 357 KiB chunk).
+ */
 export const BUDGETS = {
   entryChunkGzip: 33 * 1024,
-  initialJsGzip: 240 * 1024,
+  initialJsGzip: 170 * 1024,
 };
 
 /** Route chunks and heavy libraries that must never be part of the initial graph. */
 export const LAZY_CHUNKS = [
   /^admin-routes-/,
   /^motion-features-/,
+  // Loaded on demand by src/lib/supabase-loader.ts / lazy contract chunks; must not return to the first load.
+  /^v-supabase-/,
+  /^v-zod-/,
   /^(Lesson|Review|Session|Progress|Settings|Tutor|Onboarding|Home|Learn|Notifications|Diagnostic|DiagnosticReport|ExamHub|ExamRunner|ExamResult)Page-/,
 ];
 

@@ -8,7 +8,7 @@ import { appPathFrom } from '@/features/pwa/app-path';
 import { PwaBridge } from './PwaBridge';
 
 const markNotification = vi.fn<(...args: unknown[]) => Promise<void>>(() => Promise.resolve());
-vi.mock('@/lib/supabase', () => ({ getSupabase: () => ({}) }));
+vi.mock('@/lib/supabase-loader', () => ({ loadSupabase: () => Promise.resolve({}) }));
 vi.mock('@/features/notifications/service', () => ({ markNotification: (...args: unknown[]) => markNotification(...args) }));
 
 const ORIGIN = 'https://linguo.example';
@@ -56,7 +56,7 @@ describe('PwaBridge', () => {
       );
     });
     expect(await screen.findByRole('heading', { name: 'Ôn tập' })).toBeInTheDocument();
-    expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked');
+    await vi.waitFor(() => expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked'));
   });
 
   function renderAt(initial: string) {
@@ -87,7 +87,7 @@ describe('PwaBridge', () => {
     const { router, click } = renderAt('/app/hoc-tap/bai/abc');
     click(false);
     expect(await screen.findByTestId('notification-open-toast')).toBeInTheDocument();
-    expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked');
+    await vi.waitFor(() => expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked'));
     expect(router.state.location.pathname).toBe('/app/hoc-tap/bai/abc');
     await userEvent.click(screen.getByRole('button', { name: 'Mở' }));
     expect(await screen.findByRole('heading', { name: 'Ôn tập' })).toBeInTheDocument();
@@ -100,7 +100,7 @@ describe('PwaBridge', () => {
     await userEvent.click(await screen.findByRole('button', { name: 'Để sau' }));
     expect(screen.queryByTestId('notification-open-toast')).not.toBeInTheDocument();
     expect(router.state.location.pathname).toBe('/app/luyen-thi/lam-bai/7');
-    expect(markNotification).toHaveBeenCalledTimes(1);
+    await vi.waitFor(() => expect(markNotification).toHaveBeenCalledTimes(1));
   });
 
   it('routes straight away from an ordinary page', async () => {
@@ -108,7 +108,7 @@ describe('PwaBridge', () => {
     click(false);
     expect(await screen.findByRole('heading', { name: 'Ôn tập' })).toBeInTheDocument();
     expect(router.state.location.pathname).toBe('/app/on-tap');
-    expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked');
+    await vi.waitFor(() => expect(markNotification).toHaveBeenCalledWith(expect.anything(), ID, 'clicked'));
   });
 
   it('only marks the click when the window already shows the target', async () => {

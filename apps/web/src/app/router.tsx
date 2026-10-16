@@ -9,6 +9,7 @@ import { enableViewTransitions } from '@/lib/view-transitions';
 import { LandingPage } from '@/routes/landing/LandingPage';
 import { NotFoundPage } from '@/routes/NotFoundPage';
 import { RouteError } from '@/routes/RouteError';
+import { loadAppServices } from './app-services';
 
 /** Layout routes whose element renders `<main>`: error elements below them must not add a second one. */
 const MAIN_LAYOUT = { providesMain: true } as const;
@@ -33,12 +34,21 @@ function failedChunk(error: unknown): Pick<RouteObject, 'Component'> {
  * until the chunk arrives (the previous screen stays up, so nothing shifts) and shows `hydrateFallbackElement` on a
  * deep link. Every chunk is still in the service worker's precache (vite.config.ts globs all JS), so the app
  * keeps working offline. A failed chunk load reaches the route's errorElement ("Thử lại" reloads the page).
+ *
+ * Every route that may talk to Supabase also waits for the app services (Supabase client and analytics, see
+ * app-services.ts), loaded in parallel with its own chunk, so getSupabase() is set before the screen renders. Only
+ * the legal pages, which need neither, skip that (`services: false`).
  */
-function lazyPage<K extends string>(load: () => Promise<Record<K, ComponentType>>, name: K): Pick<RouteObject, 'lazy'> {
+function lazyPage<K extends string>(
+  load: () => Promise<Record<K, ComponentType>>,
+  name: K,
+  { services = true }: { services?: boolean } = {},
+): Pick<RouteObject, 'lazy'> {
   return {
     lazy: async () => {
       try {
-        return { Component: (await load())[name] };
+        const [mod] = await Promise.all([load(), services ? loadAppServices() : null]);
+        return { Component: mod[name] };
       } catch (error) {
         return failedChunk(error);
       }
@@ -59,7 +69,8 @@ const adminRoute: RouteObject = {
   handle: MAIN_LAYOUT,
   lazy: async () => {
     try {
-      return { element: (await loadAdmin()).adminRootRoute.element };
+      const [admin] = await Promise.all([loadAdmin(), loadAppServices()]);
+      return { element: admin.adminRootRoute.element };
     } catch (error) {
       return failedChunk(error);
     }
@@ -67,7 +78,7 @@ const adminRoute: RouteObject = {
   children: ADMIN_CHILD_PATHS.map((path): RouteObject => {
     const lazy = async () => {
       try {
-        const { adminRoutes } = await loadAdmin();
+        const [{ adminRoutes }] = await Promise.all([loadAdmin(), loadAppServices()]);
         return { element: adminRoutes.find((r) => (path === null ? r.index : r.path === path))?.element };
       } catch (error) {
         return failedChunk(error);
@@ -86,8 +97,8 @@ const routeTree: RouteObject[] = [
     hydrateFallbackElement: <FullScreenLoader />,
     children: [
       { index: true, element: <LandingPage /> },
-      { path: 'quyen-rieng-tu', ...lazyPage(loadPublic, 'PrivacyPage') },
-      { path: 'dieu-khoan', ...lazyPage(loadPublic, 'TermsPage') },
+      { path: 'quyen-rieng-tu', ...lazyPage(loadPublic, 'PrivacyPage', { services: false }) },
+      { path: 'dieu-khoan', ...lazyPage(loadPublic, 'TermsPage', { services: false }) },
       {
         element: (
           <RedirectIfAuthed>

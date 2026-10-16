@@ -1,24 +1,17 @@
-import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Database } from '@linguo/shared';
 import { env } from './env';
+import { loadedSupabase } from './supabase-loader';
 
 export type AppSupabaseClient = SupabaseClient<Database>;
 
-let client: AppSupabaseClient | null = null;
-
-/** Null when VITE_SUPABASE_* are missing; the UI then shows <NotConfigured />. */
+/**
+ * Null when VITE_SUPABASE_* are missing; the UI then shows <NotConfigured />. The client itself is loaded lazily
+ * (supabase-loader.ts): every route that uses it awaits the load first, so it is set by the time any screen reads it.
+ */
 export function getSupabase(): AppSupabaseClient | null {
   if (!env.isSupabaseConfigured) return null;
-  client ??= createClient<Database>(env.supabaseUrl, env.supabaseKey, {
-    auth: {
-      flowType: 'pkce',
-      persistSession: true,
-      autoRefreshToken: true,
-      // /auth/callback exchanges the code explicitly; auto-detection would exchange it twice.
-      detectSessionInUrl: false,
-    },
-  });
-  return client;
+  return loadedSupabase();
 }
 
 export function requireSupabase(): AppSupabaseClient {

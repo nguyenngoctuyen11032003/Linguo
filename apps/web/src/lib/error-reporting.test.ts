@@ -3,7 +3,9 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 const mocks = vi.hoisted(() => ({ track: vi.fn(), flush: vi.fn(() => Promise.resolve()) }));
 vi.mock('@/features/analytics/client', () => ({ track: mocks.track, flushAnalytics: mocks.flush }));
 
+import { errorReportingSink } from './error-reporting-sink';
 import {
+  connectErrorReporting,
   ERROR_DEDUPE_WINDOW_MS,
   errorCode,
   installErrorReporting,
@@ -17,6 +19,7 @@ import {
 beforeEach(() => {
   vi.useFakeTimers();
   resetErrorReportingForTests();
+  connectErrorReporting(errorReportingSink);
   mocks.track.mockReset();
 });
 afterEach(() => vi.useRealTimers());

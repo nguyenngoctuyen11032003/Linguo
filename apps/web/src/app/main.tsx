@@ -3,7 +3,9 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import '@/design/global.css';
 import './app-shell.css';
-import { captureInstallPrompt, registerServiceWorker } from '@/features/pwa';
+// Direct imports, not the @/features/pwa barrel: it also re-exports InstallAppSection (Settings only).
+import { registerServiceWorker } from '@/features/pwa/register';
+import { captureInstallPrompt } from '@/features/pwa/useInstallPrompt';
 import { installErrorReporting } from '@/lib/error-reporting';
 import { installKeyboardAwareness } from '@/lib/viewport';
 import { App } from './App';

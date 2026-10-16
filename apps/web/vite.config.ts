@@ -78,9 +78,9 @@ export default defineConfig(({ mode }) => {
               { name: 'v-react', test: /node_modules[\\/](\.pnpm[\\/][^\\/]*[\\/]node_modules[\\/])?(react|react-dom|scheduler)[\\/]/, priority: 10 },
               { name: 'v-router', test: /node_modules[\\/].*react-router/, priority: 9 },
               { name: 'v-supabase', test: /node_modules[\\/].*@supabase/, priority: 9 },
-              // zod-config.ts (jitless, see its header) must run right after zod and before any module that builds a
-              // schema, or zod probes Function('') and the CSP reports it; keeping it in this chunk guarantees that.
-              { name: 'v-zod', test: /(node_modules[\\/].*[\\/]zod[\\/])|src[\\/]app[\\/]zod-config\.ts/, priority: 9 },
+              // Lazy: only route chunks and the app services (app/app-services.ts) build schemas. zod-config.ts sets
+              // zod's global jitless config from the entry chunk before zod loads (see its header), so it is not here.
+              { name: 'v-zod', test: /node_modules[\\/].*[\\/]zod[\\/]/, priority: 9 },
               { name: 'v-lucide', test: /node_modules[\\/].*lucide/, tags: ['$initial'], priority: 9 },
               { name: 'v-lucide-app', test: /node_modules[\\/].*lucide/, priority: 8 },
             ],

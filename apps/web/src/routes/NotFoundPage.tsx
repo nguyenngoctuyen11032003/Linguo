@@ -1,26 +1,36 @@
-import { Compass } from 'lucide-react';
-import { Link } from 'react-router';
+import { ArrowLeft, Compass } from 'lucide-react';
+import { Link, useNavigate } from 'react-router';
+import { FeedbackScreen } from '@/components/feedback/FeedbackScreen';
 import { buttonClasses } from '@/components/ui/Button';
-import { cn } from '@/lib/cn';
 
 export function NotFoundPage() {
+  const navigate = useNavigate();
+  // A deep link opened in a new tab has nowhere to go back to.
+  const canGoBack = typeof window !== 'undefined' && window.history.length > 1;
   return (
     <main id="main" className="relative isolate flex min-h-hero flex-col justify-center overflow-x-clip px-safe py-10">
-      <div aria-hidden="true" className="absolute left-1/2 top-1/3 -z-10 size-80 -translate-x-1/2 rounded-full bg-primary/20 blur-3xl" />
-      <div className="mx-auto w-full max-w-md">
-        <p aria-hidden="true" className="stat-num text-gradient-fade -ml-1 text-[clamp(140px,48vw,200px)]">
-          404
-        </p>
-        <div className="mt-2 flex items-center gap-2 text-primary">
-          <Compass aria-hidden className="size-5" />
-          <span className="text-xs font-semibold uppercase tracking-[0.08em]">Lạc đường</span>
-        </div>
-        <h1 className="page-title mt-2">Không tìm thấy trang</h1>
-        <p className="mt-3.5 max-w-sm text-pretty text-[15px] leading-relaxed text-muted">Đường dẫn có thể đã thay đổi hoặc không còn tồn tại.</p>
-        <Link to="/" className={cn(buttonClasses('accent', 'lg', true), 'mt-7')}>
-          Về trang chủ
-        </Link>
-      </div>
+      <FeedbackScreen
+        display="404"
+        illustration="lost"
+        tone="primary"
+        eyebrowIcon={Compass}
+        eyebrow="Lạc đường"
+        title="Không tìm thấy trang"
+        description="Đường dẫn có thể đã thay đổi hoặc không còn tồn tại. Đừng lo, lộ trình học của bạn vẫn ở nguyên chỗ cũ."
+        actions={
+          <>
+            <Link to="/" className={buttonClasses('accent', 'lg', true)}>
+              Về trang chủ
+            </Link>
+            {canGoBack && (
+              <button type="button" onClick={() => void navigate(-1)} className={buttonClasses('ghost', 'lg', true)}>
+                <ArrowLeft aria-hidden className="size-5" />
+                Quay lại trang trước
+              </button>
+            )}
+          </>
+        }
+      />
     </main>
   );
 }

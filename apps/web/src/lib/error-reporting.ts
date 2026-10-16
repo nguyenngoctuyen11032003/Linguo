@@ -1,10 +1,39 @@
-import { CLIENT_ERROR_KINDS, clientErrorPropsSchema, type ClientErrorKind } from '@linguo/shared';
-import { flushAnalytics, track } from '@/features/analytics/client';
+import type { ClientErrorKind } from '@linguo/shared';
 
 // Privacy-preserving client error reporting, part of the analytics system (event `client_error`). Only a bounded
 // whitelist leaves the device: kind, an error name/short code (never a message), a route TEMPLATE (never ids, query
 // or hash) and the online flag. Signed-out or opted-out users send nothing (track() is a no-op without an enabled
 // client). Nothing here ever throws or blocks the UI.
+//
+// The analytics queue (and the zod contracts it validates with) is not part of the entry chunk: app-services.ts
+// connects it through connectErrorReporting() before anyone can be signed in. Until then track() would drop the
+// event anyway (no analytics client is configured before AnalyticsProvider mounts, which happens after the
+// connection), so reports are still checked and deduped exactly as before, just not handed to the queue.
+
+type ClientErrorProps = { kind: ClientErrorKind; code: string; online: boolean };
+
+/** The analytics queue as seen from here (error-reporting-sink.ts). */
+export interface ErrorReportingSink {
+  validProps: (props: ClientErrorProps) => boolean;
+  track: (props: ClientErrorProps, route: string) => void;
+  flush: () => void;
+}
+
+let sink: ErrorReportingSink | null = null;
+
+/** Called once the analytics queue is loaded (app/app-services.ts). */
+export function connectErrorReporting(next: ErrorReportingSink | null): void {
+  sink = next;
+}
+
+/** Mirrors CLIENT_ERROR_KINDS of @linguo/shared (the Record type makes the compiler keep it exhaustive). */
+const CLIENT_ERROR_KINDS: Record<ClientErrorKind, true> = {
+  render_error: true,
+  unhandled_rejection: true,
+  window_error: true,
+  chunk_load_error: true,
+  rpc_error: true,
+};
 
 export const ERROR_DEDUPE_WINDOW_MS = 10 * 60 * 1000;
 const DEDUPE_MAX_ENTRIES = 100;
@@ -44,7 +73,7 @@ export interface ClientErrorReport {
 /** Returns true when an event was queued. Never throws. */
 export function reportClientError(report: ClientErrorReport): boolean {
   try {
-    if (!(CLIENT_ERROR_KINDS as readonly string[]).includes(report.kind)) return false;
+    if (!Object.prototype.hasOwnProperty.call(CLIENT_ERROR_KINDS, report.kind)) return false;
     const route = templatePath(report.pathname ?? window.location.pathname);
     const code = report.code && CODE_RE.test(report.code) ? report.code : errorCode(report.error);
     const key = `${report.kind}|${route}|${code}`;
@@ -52,11 +81,13 @@ export function reportClientError(report: ClientErrorReport): boolean {
     const prev = lastSent.get(key);
     if (prev !== undefined && now - prev < ERROR_DEDUPE_WINDOW_MS) return false;
     const props = { kind: report.kind, code, online: typeof navigator === 'undefined' ? true : navigator.onLine };
-    if (!clientErrorPropsSchema.safeParse(props).success) return false;
+    // Without a sink the props are valid by construction: kind is checked above, code matches CODE_RE (the
+    // contract's own pattern) and online is a boolean; the sink checks them against the shared zod contract.
+    if (sink && !sink.validProps(props)) return false;
     lastSent.set(key, now);
     if (lastSent.size > DEDUPE_MAX_ENTRIES) lastSent.delete(lastSent.keys().next().value as string);
-    track('client_error', props, { route });
-    void flushAnalytics();
+    sink?.track(props, route);
+    sink?.flush();
     return true;
   } catch {
     return false;

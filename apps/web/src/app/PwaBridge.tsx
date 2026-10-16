@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router';
 import { publishNotificationsChanged } from '@/features/notifications/events';
-import { markNotification } from '@/features/notifications/service';
-import { isBusyRoute, onNotificationClicked, UpdateToast } from '@/features/pwa';
+import { isBusyRoute } from '@/features/pwa/busy-route';
+import { onNotificationClicked } from '@/features/pwa/notification-click';
+import { UpdateToast } from '@/features/pwa/UpdateToast';
 import { appPathFrom } from '@/features/pwa/app-path';
 import { NotificationOpenToast } from '@/features/pwa/NotificationOpenToast';
-import { getSupabase } from '@/lib/supabase';
+import { loadSupabase } from '@/lib/supabase-loader';
 
 /**
  * Spec 10 §4–5 glue inside the router: the "Đã có phiên bản mới" toast and the SW → app notification-click
@@ -27,10 +28,10 @@ export function PwaBridge() {
   useEffect(
     () =>
       onNotificationClicked(({ notificationId, url, navigated }) => {
-        const client = getSupabase();
-        if (notificationId && client) {
-          markNotification(client, notificationId, 'clicked')
-            .then(publishNotificationsChanged)
+        if (notificationId) {
+          // Both lazy (the Supabase client and the zod contracts stay out of the entry chunk); a no-op when unconfigured.
+          Promise.all([loadSupabase(), import('@/features/notifications/service')])
+            .then(([client, service]) => client && service.markNotification(client, notificationId, 'clicked').then(publishNotificationsChanged))
             .catch(() => undefined);
         }
         if (navigated) return;

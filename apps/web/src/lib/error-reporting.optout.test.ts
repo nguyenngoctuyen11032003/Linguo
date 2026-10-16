@@ -4,7 +4,11 @@ const rpc = vi.hoisted(() => vi.fn());
 vi.mock('@/features/lesson-player/service', () => ({ callRpc: rpc }));
 
 import { configureAnalytics, flushAnalytics } from '@/features/analytics/client';
-import { reportClientError, resetErrorReportingForTests } from './error-reporting';
+import { connectErrorReporting, reportClientError, resetErrorReportingForTests } from './error-reporting';
+import { errorReportingSink } from './error-reporting-sink';
+
+// app-services.ts connects the analytics queue in the app.
+connectErrorReporting(errorReportingSink);
 
 afterEach(() => {
   configureAnalytics({ client: null, enabled: false });
