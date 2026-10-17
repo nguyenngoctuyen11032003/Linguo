@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u01-bevor-seitdem-bis
+order_index: 3
+level: b1
+title:
+  vi: Trước khi, kể từ khi, cho đến khi (Bevor, seitdem, bis)
+objectives:
+  - vi: Nối hai sự việc bằng bevor (trước khi), seit/seitdem (từ khi) và bis (cho đến khi) với động từ ở cuối câu phụ.
+  - vi: Chọn đúng thì sau seitdem – Präsens cho việc vẫn còn tiếp diễn.
+  - vi: Kể các mốc quan trọng của đời người (đi học, tốt nghiệp, sự nghiệp, nghỉ hưu).
+estimated_minutes: 19
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b1u01-nachdem]
+items:
+  - item: de:item:b1u01-g-bevor
+  - item: de:item:b1u01-g-seitdem
+  - item: de:item:b1u01-g-bis
+  - item: de:item:b1u01-abschluss
+  - item: de:item:b1u01-studium
+  - item: de:item:b1u01-karriere
+  - item: de:item:b1u01-rente
+  - item: de:item:b1u01-ruhestand
+  - item: de:item:b1u01-geburt
+  - item: de:item:b1u01-sterben
+  - item: de:item:b1u01-tod
+  - item: de:item:b1u01-einschulung
+  - item: de:item:b1u01-schwanger
+  - item: de:item:b1u01-beerdigung
+  - item: de:item:b1u01-lebensabschnitt
+  - item: de:item:b1u01-wendepunkt
+  - item: de:item:b1u01-jahrzehnt
+  - item: de:item:b1u01-g-plusquamperfekt
+    role: reuse
+  - item: de:item:a1u02-rentner
+    role: reuse
+  - item: de:item:a1u02-enkel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được các mốc quan trọng của một đời người và nối chúng lại, ví dụ: \"Bevor meine Mutter in Rente ging, arbeitete sie 30 Jahre als Lehrerin. Seitdem sie im Ruhestand ist, reist sie viel.\""
+  - type: explain
+    text:
+      vi: "bevor (trước khi) mở đầu câu phụ, động từ chia đứng cuối: Bevor ich nach Deutschland kam, lernte ich Deutsch. Hai vế thường cùng một thì, vì bevor đã cho biết thứ tự. Nói ngắn bằng danh từ thì dùng giới từ vor + Dativ: vor dem Studium, vor der Rente."
+  - type: explain
+    text:
+      vi: "seit hoặc seitdem (từ khi) cũng mở đầu câu phụ với động từ ở cuối. Việc vẫn còn tiếp diễn đến nay thì dùng Präsens, dù tiếng Việt nói \"đã … được\": Seit ich in Berlin wohne, fahre ich mehr Fahrrad. Nếu câu phụ nói một sự kiện xảy ra một lần, nó thường ở Perfekt: Seitdem ich umgezogen bin, schlafe ich besser."
+  - type: explain
+    text:
+      vi: "bis (cho đến khi) mở đầu câu phụ: Ich arbeitete dort, bis ich in Rente ging. Trước mốc thời gian không có mạo từ, bis là giới từ: bis Montag, bis 2030; có mạo từ thì dùng bis zu + Dativ: bis zum Abend, bis zur Rente."
+  - type: explain
+    text:
+      vi: "Khi kể các mốc đời người, bạn hay mở đầu bằng tuổi hoặc năm, rồi để động từ ở vị trí 2: Mit sechs Jahren kam ich in die Schule. 2012 machte ich meinen Abschluss. Năm đứng một mình, không có in (không nói in 2012)."
+  - type: deep_explain
+    text:
+      vi: "seitdem còn là trạng từ \"từ đó\" đứng trong câu chính, lúc ấy động từ ở vị trí 2: Ich bin 2018 umgezogen. Seitdem wohne ich in Köln. Vì vậy hãy nhìn dấu phẩy và động từ: seitdem + động từ cuối là câu phụ, seitdem + động từ ngay sau là trạng từ. Sau bevor cũng có thể dùng Plusquamperfekt ở câu chính khi muốn nhấn mạnh việc đã hoàn tất trước: Bevor er in Rente ging, hatte er 40 Jahre gearbeitet. Phân biệt ba giới từ thời gian: vor drei Jahren = cách đây ba năm (việc đã xong), seit drei Jahren = đã ba năm nay (vẫn tiếp diễn), in drei Jahren = ba năm nữa."
+  - type: example
+    target: Bevor ich nach Deutschland kam, arbeitete ich drei Jahre in Hanoi.
+    target_lang: de
+    translation:
+      vi: Trước khi sang Đức, tôi làm việc ba năm ở Hà Nội.
+    note:
+      vi: "kam đứng cuối câu phụ; câu phụ đứng đầu nên arbeitete đứng ngay sau dấu phẩy. Hai vế cùng ở Präteritum."
+  - type: example
+    target: Bevor mein Vater in Rente ging, hatte er 40 Jahre in einer Fabrik gearbeitet.
+    target_lang: de
+    translation:
+      vi: Trước khi về hưu, bố tôi đã làm việc 40 năm ở một nhà máy.
+    note:
+      vi: "Câu chính dùng Plusquamperfekt (hatte … gearbeitet) để nhấn mạnh 40 năm làm việc đã hoàn tất trước lúc nghỉ hưu."
+  - type: example
+    target: Seitdem ich Rentner bin, habe ich endlich Zeit für meine Enkel.
+    target_lang: de
+    translation:
+      vi: Từ khi nghỉ hưu, cuối cùng tôi cũng có thời gian cho các cháu.
+    note:
+      vi: "der Rentner / die Rentnerin = người nghỉ hưu (nghề không cần mạo từ). Vẫn đang nghỉ hưu nên cả hai vế ở Präsens: bin, habe."
+  - type: example
+    target: Seit ich mein Studium abgeschlossen habe, arbeite ich als Ingenieurin.
+    target_lang: de
+    translation:
+      vi: Từ khi học xong đại học, tôi làm kỹ sư.
+    note:
+      vi: "Tốt nghiệp là một sự kiện (Perfekt: habe … abgeschlossen); công việc vẫn tiếp diễn (Präsens: arbeite)."
+  - type: example
+    target: Ich wohnte bei meinen Eltern, bis ich heiratete.
+    target_lang: de
+    translation:
+      vi: Tôi sống với bố mẹ cho đến khi lấy chồng/vợ.
+    note:
+      vi: "bis + câu phụ, động từ heiratete đứng cuối. bei meinen Eltern = ở nhà bố mẹ (Dativ số nhiều)."
+  - type: example
+    target: Bis zur Rente muss ich noch zehn Jahre arbeiten.
+    target_lang: de
+    translation:
+      vi: Tôi còn phải làm việc mười năm nữa mới đến tuổi về hưu.
+    note:
+      vi: "bis zu + Dativ trước danh từ có mạo từ: zu der → zur Rente."
+  - type: common_mistake
+    wrong: Bevor zu essen, wasche ich mir die Hände.
+    right: Bevor ich esse, wasche ich mir die Hände.
+    target_lang: de
+    note:
+      vi: "Không có \"bevor zu + nguyên thể\" như before + V-ing của tiếng Anh. Dùng câu phụ (Bevor ich esse) hoặc giới từ (Vor dem Essen)."
+  - type: common_mistake
+    wrong: Ich wohne hier vor drei Jahren.
+    right: Ich wohne hier seit drei Jahren.
+    target_lang: de
+    note:
+      vi: "vor drei Jahren = cách đây ba năm (việc đã xong); việc vẫn tiếp diễn thì dùng seit + Präsens."
+  - type: common_mistake
+    wrong: Seitdem ich in Rente bin, ich reise viel.
+    right: Seitdem ich in Rente bin, reise ich viel.
+    target_lang: de
+    note:
+      vi: "Câu phụ đứng đầu chiếm vị trí 1, nên động từ câu chính reise đứng ngay sau dấu phẩy."
+  - type: common_mistake
+    wrong: Ich warte, bis du kommst zurück.
+    right: Ich warte, bis du zurückkommst.
+    target_lang: de
+    note:
+      vi: "Trong câu phụ, động từ tách không tách: zurückkommst viết liền và đứng cuối."
+  - type: summary
+    points:
+      - vi: "bevor = trước khi (câu phụ, động từ cuối); vor + Dativ = trước (danh từ): vor dem Studium."
+      - vi: "seit/seitdem = từ khi; việc còn tiếp diễn → Präsens: Seit ich hier wohne, …"
+      - vi: "seitdem + động từ vị trí 2 = \"từ đó\" (trạng từ trong câu chính)."
+      - vi: "bis = cho đến khi (câu phụ); bis Montag; bis zum Abend, bis zur Rente."
+      - vi: "vor drei Jahren (cách đây) ≠ seit drei Jahren (đã … nay)."
+      - vi: "Mốc đời: die Geburt, die Einschulung, der Abschluss, das Studium, die Karriere, die Rente / der Ruhestand, sterben, der Tod."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u01l3-mcq-bevor
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-bevor
+    prompt:
+      stem: "Chọn liên từ phù hợp với nghĩa \"Trước khi sang Đức, tôi đã học tiếng Đức một năm\": ___ ich nach Deutschland kam, lernte ich ein Jahr Deutsch."
+      stem_lang: vi
+      options:
+        - { id: b7v, text: "Bevor", lang: de }
+        - { id: b2n, text: "Nachdem", lang: de }
+        - { id: b5s, text: "Seitdem", lang: de }
+        - { id: b9t, text: "Bis", lang: de }
+    answer:
+      correct_option_id: b7v
+    explanation:
+      vi: "\"Trước khi\" là bevor. nachdem = sau khi (và cần lùi thì: Nachdem ich … gekommen war), seitdem = từ khi, bis = cho đến khi."
+    display_answer: Bevor
+
+  - key: de:exercise:b1u01l3-mcq-seitdem-bin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-seitdem
+    prompt:
+      stem: "Bà tôi vẫn đang nghỉ hưu. Chọn dạng đúng: Seitdem meine Oma in Rente ___, reist sie viel."
+      stem_lang: vi
+      options:
+        - { id: s4b, text: "ist", lang: de }
+        - { id: s8w, text: "war", lang: de }
+        - { id: s1g, text: "geht", lang: de }
+        - { id: s6h, text: "wird", lang: de }
+    answer:
+      correct_option_id: s4b
+    explanation:
+      vi: "Việc nghỉ hưu vẫn tiếp diễn và câu chính ở Präsens (reist), nên câu seitdem cũng dùng Präsens: in Rente sein → sie ist. war chỉ quá khứ đã kết thúc; in Rente gehen (geht) là lúc bắt đầu nghỉ hưu, không phải trạng thái."
+    display_answer: ist
+
+  - key: de:exercise:b1u01l3-listen-opa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-g-bis
+    prompt:
+      audio_asset_id: null
+      fallback_text: Mein Opa hat vierzig Jahre in einer Fabrik gearbeitet, bis er in Rente gegangen ist. Seitdem arbeitet er jeden Tag im Garten.
+      options:
+        - { id: l3a, text: "Ông tôi làm ở nhà máy bốn mươi năm cho đến khi về hưu. Từ đó ngày nào ông cũng làm vườn.", lang: vi }
+        - { id: l7b, text: "Ông tôi làm ở nhà máy bốn mươi năm trước khi về hưu. Bây giờ ông vẫn làm ở nhà máy.", lang: vi }
+        - { id: l1c, text: "Ông tôi làm ở nhà máy mười bốn năm cho đến khi về hưu. Từ đó ngày nào ông cũng làm vườn.", lang: vi }
+        - { id: l9d, text: "Ông tôi làm vườn bốn mươi năm cho đến khi về hưu. Từ đó ngày nào ông cũng đi làm ở nhà máy.", lang: vi }
+    answer:
+      correct_option_id: l3a
+    explanation:
+      vi: "bis er in Rente gegangen ist = cho đến khi về hưu; Seitdem arbeitet er … im Garten = từ đó ông làm vườn (seitdem là trạng từ, động từ ở vị trí 2). vierzig = 40, mười bốn là vierzehn. Khi nói, người Đức dùng Perfekt: hat … gearbeitet."
+    display_answer: Ông tôi làm ở nhà máy bốn mươi năm cho đến khi về hưu. Từ đó ngày nào ông cũng làm vườn.
+
+  - key: de:exercise:b1u01l3-fill-seit-bis-bevor
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-bis
+    prompt:
+      template: "{{b1}} ich in Deutschland wohne, koche ich öfter selbst. Ich bleibe hier, {{b2}} ich mein Studium abgeschlossen habe. {{b3}} ich zurückkehre, will ich noch Österreich besuchen."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Từ khi sống ở Đức, tôi tự nấu ăn thường xuyên hơn. Tôi ở lại đây cho đến khi học xong đại học. Trước khi về nước, tôi còn muốn đi thăm nước Áo."
+        - "Gợi ý: từ khi = seit/seitdem, cho đến khi = bis, trước khi = bevor."
+    answer:
+      blanks:
+        b1: [Seit, Seitdem]
+        b2: [bis]
+        b3: [Bevor]
+    known_wrong:
+      - answer: Vor
+        feedback_vi: vor là giới từ đi với danh từ (vor dem Studium). Trước một câu có động từ cần liên từ bevor.
+        error_tag: preposition
+      - answer: Nachdem
+        feedback_vi: "nachdem nghĩa là \"sau khi\". \"Trước khi\" là bevor."
+        error_tag: word_choice
+      - answer: bis zu
+        feedback_vi: bis zu chỉ đi với danh từ (bis zum Ende). Trước một câu phụ chỉ dùng bis.
+        error_tag: preposition
+    explanation:
+      vi: "Ba liên từ đều mở đầu câu phụ, động từ chia đứng cuối (wohne, habe, zurückkehre): seit/seitdem = từ khi, bis = cho đến khi, bevor = trước khi. Câu phụ đứng đầu thì động từ câu chính đứng ngay sau dấu phẩy (koche ich, will ich)."
+    display_answer: "Seit ich in Deutschland wohne, koche ich öfter selbst. Ich bleibe hier, bis ich mein Studium abgeschlossen habe. Bevor ich zurückkehre, will ich noch Österreich besuchen."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u01l3-tr-bevor-essen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-bevor
+    prompt:
+      source_text: Trước khi ăn, tôi rửa tay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Bevor ich esse, wasche ich mir die Hände.
+        - Ich wasche mir die Hände, bevor ich esse.
+        - Vor dem Essen wasche ich mir die Hände.
+        - Ich wasche mir vor dem Essen die Hände.
+        - Bevor ich esse, wasche ich meine Hände.
+        - Ich wasche meine Hände, bevor ich esse.
+    known_wrong:
+      - answer: Bevor zu essen, wasche ich mir die Hände.
+        feedback_vi: "Không có \"bevor zu + nguyên thể\" như tiếng Anh. Dùng câu phụ – Bevor ich esse, … (hoặc Vor dem Essen, …)."
+        error_tag: word_order
+      - answer: Bevor ich esse, ich wasche mir die Hände.
+        feedback_vi: Câu phụ đứng đầu là vị trí 1, nên wasche đứng ngay sau dấu phẩy – …, wasche ich mir die Hände.
+        error_tag: verb_position
+      - answer: Bevor ich esse, wasche ich mich die Hände.
+        feedback_vi: Khi có tân ngữ die Hände, đại từ phản thân ở Dativ – mir die Hände.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "bevor mở câu phụ, động từ esse đứng cuối; câu phụ đứng đầu thì wasche đứng ngay sau dấu phẩy. Nói ngắn bằng danh từ: vor dem Essen. Rửa tay: sich (Dativ) die Hände waschen."
+    display_answer: Bevor ich esse, wasche ich mir die Hände.
+
+  - key: de:exercise:b1u01l3-fill-rente
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-rente
+    prompt:
+      template: "Meine Mutter ist jetzt 67. Seitdem sie in Rente {{b1}} (sein), {{b2}} (reisen) sie viel. Bevor sie in Rente {{b3}} (gehen), arbeitete sie 30 Jahre als Lehrerin."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [ist]
+        b2: [reist]
+        b3: [ging]
+    known_wrong:
+      - answer: war
+        feedback_vi: Bà ấy vẫn đang nghỉ hưu (ist jetzt 67), nên câu seitdem dùng Präsens – sie ist.
+        error_tag: verb_form
+      - answer: reiste
+        feedback_vi: Việc đi du lịch vẫn tiếp diễn đến nay nên dùng Präsens – sie reist.
+        error_tag: verb_form
+      - answer: geht
+        feedback_vi: Việc về hưu đã xảy ra, và câu chính ở Präteritum (arbeitete), nên dùng ging.
+        error_tag: verb_form
+      - answer: gehte
+        feedback_vi: gehen là động từ mạnh – Präteritum là ging.
+        error_tag: verb_form
+    explanation:
+      vi: "Bà ấy vẫn đang nghỉ hưu, nên seitdem + Präsens ở cả hai vế: ist, reist. Câu bevor nói chuyện đã qua, cùng thì với câu chính (arbeitete): sie ging in Rente."
+    display_answer: "Meine Mutter ist jetzt 67. Seitdem sie in Rente ist, reist sie viel. Bevor sie in Rente ging, arbeitete sie 30 Jahre als Lehrerin."
+
+  - key: de:exercise:b1u01l3-tr-seit-jahren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-seitdem
+    prompt:
+      source_text: Tôi sống ở Berlin đã ba năm nay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich wohne seit drei Jahren in Berlin.
+        - Ich lebe seit drei Jahren in Berlin.
+        - Seit drei Jahren wohne ich in Berlin.
+        - Seit drei Jahren lebe ich in Berlin.
+        - Ich wohne schon seit drei Jahren in Berlin.
+        - Ich lebe schon seit drei Jahren in Berlin.
+        - Ich wohne seit 3 Jahren in Berlin.
+        - Ich lebe seit 3 Jahren in Berlin.
+    known_wrong:
+      - answer: Ich habe seit drei Jahren in Berlin gewohnt.
+        feedback_vi: Tôi vẫn đang sống ở Berlin, nên tiếng Đức dùng Präsens với seit – Ich wohne seit drei Jahren …
+        error_tag: verb_form
+      - answer: Ich wohne vor drei Jahren in Berlin.
+        feedback_vi: "vor drei Jahren = cách đây ba năm. \"Đã ba năm nay\" là seit drei Jahren."
+        error_tag: preposition
+      - answer: Ich wohne seit drei Jahre in Berlin.
+        feedback_vi: seit đi với Dativ; số nhiều Dativ thêm -n – seit drei Jahren.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Việc còn tiếp diễn đến nay: seit + Dativ + Präsens (wohne/lebe), dù tiếng Việt nói \"đã\". Dativ số nhiều: drei Jahren."
+    display_answer: Ich wohne seit drei Jahren in Berlin.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u01l3-wb-tochter
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-seitdem
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Từ khi con gái tôi ra đời, tôi ngủ ít.\""
+      tokens:
+        - { id: t-schlafe, text: schlafe }
+        - { id: t-geboren, text: geboren }
+        - { id: t-meine, text: meine }
+        - { id: t-wenig, text: wenig }
+        - { id: t-seitdem, text: Seitdem }
+        - { id: t-ist, text: ist }
+        - { id: t-ich, text: ich }
+        - { id: t-komma, text: "," }
+        - { id: t-tochter, text: Tochter }
+    answer:
+      orders:
+        - [t-seitdem, t-meine, t-tochter, t-geboren, t-ist, t-komma, t-schlafe, t-ich, t-wenig]
+    explanation:
+      vi: "Trong câu seitdem, động từ chia ist đứng cuối (geboren ist). Câu phụ đứng đầu là vị trí 1, nên schlafe đứng ngay sau dấu phẩy, rồi đến chủ ngữ ich. Đứa bé đã ra đời và tôi vẫn ngủ ít, nên câu chính ở Präsens."
+    display_answer: Seitdem meine Tochter geboren ist, schlafe ich wenig.
+
+  - key: de:exercise:b1u01l3-tr-bevor-rente
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u01-g-bevor
+    prompt:
+      source_text: "Trước khi về hưu, bố tôi làm việc ở một nhà máy. (dùng bevor, văn viết – Präteritum)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Bevor mein Vater in Rente ging, arbeitete er in einer Fabrik.
+        - Mein Vater arbeitete in einer Fabrik, bevor er in Rente ging.
+        - Bevor mein Vater in den Ruhestand ging, arbeitete er in einer Fabrik.
+        - Mein Vater arbeitete in einer Fabrik, bevor er in den Ruhestand ging.
+        - Bevor mein Vater in Rente ging, hatte er in einer Fabrik gearbeitet.
+        - Mein Vater hatte in einer Fabrik gearbeitet, bevor er in Rente ging.
+    known_wrong:
+      - answer: Bevor mein Vater ging in Rente, arbeitete er in einer Fabrik.
+        feedback_vi: Trong câu bevor, động từ chia đứng cuối – bevor mein Vater in Rente ging.
+        error_tag: verb_position
+      - answer: Bevor mein Vater in Rente ging, er arbeitete in einer Fabrik.
+        feedback_vi: Câu phụ đứng đầu là vị trí 1, nên arbeitete đứng ngay sau dấu phẩy – …, arbeitete er …
+        error_tag: verb_position
+      - answer: Bevor mein Vater in Rente geht, arbeitete er in einer Fabrik.
+        feedback_vi: Chuyện đã qua nên câu bevor cũng ở quá khứ – ging.
+        error_tag: verb_form
+    explanation:
+      vi: "bevor mở câu phụ, động từ ging đứng cuối; câu phụ đứng đầu thì arbeitete đứng ngay sau dấu phẩy. Về hưu = in Rente gehen (trang trọng: in den Ruhestand gehen)."
+    display_answer: Bevor mein Vater in Rente ging, arbeitete er in einer Fabrik.
+
+  - key: de:exercise:b1u01l3-tr-bis-studium
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u01-studium
+    prompt:
+      source_text: Ich bleibe in Deutschland, bis ich mein Studium abgeschlossen habe.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi ở lại Đức cho đến khi học xong đại học.
+        - Tôi sẽ ở lại Đức cho đến khi học xong đại học.
+        - Tôi ở lại Đức cho đến khi tốt nghiệp đại học.
+        - Tôi sẽ ở lại Đức cho đến khi tốt nghiệp đại học.
+        - Tôi ở lại Đức cho tới khi học xong đại học.
+        - Tôi sẽ ở lại Đức cho tới khi học xong đại học.
+        - Tôi ở lại Đức đến khi học xong đại học.
+        - Tôi sẽ ở lại Đức đến khi học xong đại học.
+        - Tôi ở lại Đức cho đến khi tôi học xong đại học.
+        - Tôi sẽ ở lại Đức cho đến khi tôi học xong đại học.
+        - Tôi ở lại Đức cho đến khi hoàn thành việc học đại học.
+        - Tôi ở lại Đức cho đến khi học xong.
+        - Tôi sẽ ở Đức cho đến khi học xong đại học.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi ở lại Đức trước khi học xong đại học.
+        feedback_vi: "bis là \"cho đến khi\"; \"trước khi\" là bevor."
+        error_tag: meaning
+    explanation:
+      vi: "bis = cho đến khi; mein Studium abgeschlossen habe = học xong đại học (Perfekt trong câu phụ cho việc sẽ hoàn tất). Câu chính ở Präsens nhưng nói về kế hoạch, nên dịch \"ở lại\" hoặc \"sẽ ở lại\" đều được."
+    display_answer: Tôi ở lại Đức cho đến khi học xong đại học.

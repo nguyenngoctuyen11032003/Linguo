@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u01-kindheit
+order_index: 1
+level: b1
+title:
+  vi: Hồi nhỏ – Präteritum đầy đủ (Als Kind wohnte ich auf dem Land.)
+objectives:
+  - vi: Chia Präteritum của mọi nhóm động từ – yếu (wohnte), mạnh (fuhr, schrieb, fand) và hỗn hợp (brachte, dachte, wusste).
+  - vi: Biết khi nào người Đức viết bằng Präteritum và khi nào nói bằng Perfekt.
+  - vi: Đọc và viết đoạn hồi ký ngắn về tuổi thơ ở Präteritum.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: []
+items:
+  - item: de:item:b1u01-g-praeteritum-system
+  - item: de:item:b1u01-g-praeteritum-perfekt-gebrauch
+  - item: de:item:b1u01-kindheit
+  - item: de:item:b1u01-erinnerung
+  - item: de:item:b1u01-sich-erinnern-an
+  - item: de:item:b1u01-aufwachsen
+  - item: de:item:b1u01-dorf
+  - item: de:item:b1u01-jugend
+  - item: de:item:b1u01-streng
+  - item: de:item:b1u01-vermissen
+  - item: de:item:b1u01-spielzeug
+  - item: de:item:b1u01-klettern
+  - item: de:item:b1u01-schuechtern
+  - item: de:item:b1u01-frech
+  - item: de:item:b1u01-maerchen
+  - item: de:item:b1u01-bauernhof
+  - item: de:item:b1u01-baum
+  - item: de:item:b1u01-fuettern
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+    role: reuse
+  - item: de:item:a1u02-grosseltern
+    role: reuse
+  - item: de:item:a1u04-ferien
+    role: reuse
+  - item: de:item:a2u08-g-verben-praeposition
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được vài câu hồi ký về tuổi thơ ở Präteritum, ví dụ: \"Als Kind wohnte ich in einem Dorf. Meine Großeltern hatten einen Bauernhof, und jeden Morgen fütterte ich die Hühner.\""
+  - type: explain
+    text:
+      vi: "Động từ yếu (có quy tắc) tạo Präteritum bằng cách thêm -te vào gốc: wohnen → ich wohnte, wir wohnten. Gốc tận cùng bằng -t hoặc -d thêm -ete cho dễ đọc: arbeiten → arbeitete, reden → redete. Ở A2 bạn đã gặp cách này; ở B1 bạn dùng nó cho mọi động từ yếu."
+  - type: explain
+    text:
+      vi: "Động từ mạnh không thêm -te mà đổi nguyên âm gốc: schreiben → schrieb, finden → fand, fahren → fuhr, gehen → ging, kommen → kam, sehen → sah. Ở ich và er/sie/es không có đuôi (ich fuhr, sie fuhr); các ngôi khác thêm đuôi giống thì hiện tại: du fuhrst, wir fuhren, ihr fuhrt, sie fuhren."
+  - type: explain
+    text:
+      vi: "Một nhóm nhỏ động từ hỗn hợp vừa đổi nguyên âm vừa thêm -te: bringen → brachte, denken → dachte, kennen → kannte, nennen → nannte, rennen → rannte, wissen → wusste. Người Việt hay chia nhầm thành denkte hay wisste, vì vậy hãy học sáu từ này thành một nhóm."
+  - type: explain
+    text:
+      vi: "Hồi ký, tiểu sử và truyện thường được viết ở Präteritum; khi nói chuyện, người Đức dùng Perfekt cho phần lớn động từ. Riêng sein, haben và động từ khiếm khuyết thì cả khi nói cũng thường dùng Präteritum: war, hatte, konnte, musste. Tiếng Việt chỉ thêm \"hồi đó\" hay \"đã\", còn tiếng Đức bắt buộc đổi dạng động từ."
+  - type: explain
+    text:
+      vi: "Để mở đầu một kỷ niệm, bạn dùng als + câu phụ cho một lần hoặc một giai đoạn trong quá khứ, động từ đứng cuối: Als ich zehn war, zogen wir in die Stadt. Ngắn gọn hơn: Als Kind … (hồi nhỏ), In meiner Kindheit … (thời thơ ấu)."
+  - type: deep_explain
+    text:
+      vi: "Động từ mạnh đổi nguyên âm theo vài nhóm hay gặp: ei → ie/i (schreiben – schrieb, bleiben – blieb), i → a (finden – fand, trinken – trank, singen – sang), a → u (fahren – fuhr, tragen – trug, wachsen – wuchs), e → a (sprechen – sprach, sehen – sah, geben – gab). Các nhóm này chỉ giúp nhớ, không phải quy tắc tuyệt đối, nên vẫn cần tra bảng động từ bất quy tắc. Động từ tách vẫn tách ở Präteritum: aufwachsen → Ich wuchs in Hanoi auf. Kể chuyện rất hay dùng es gab (Präteritum của es gibt): In unserem Dorf gab es nur eine Schule. Năm đứng một mình, không có in: 1998 zogen wir um, hoặc im Jahr 1998. Ở miền Nam nước Đức, ở Áo và Thụy Sĩ, khi nói người ta dùng Perfekt còn nhiều hơn miền Bắc, nhưng trong văn viết mọi vùng đều dùng Präteritum. Kể kỷ niệm hay dùng hai động từ + giới từ: denken an + Akkusativ (Damals dachte ich oft an meine Heimat) và sich erinnern an + Akkusativ (Ich erinnere mich gern an mein Dorf)."
+  - type: example
+    target: Als Kind wohnte ich in einem kleinen Dorf. Meine Großeltern hatten dort einen Bauernhof.
+    target_lang: de
+    translation:
+      vi: Hồi nhỏ tôi sống ở một ngôi làng nhỏ. Ông bà tôi có một trang trại ở đó.
+    note:
+      vi: "wohnte: động từ yếu, gốc + -te. hatten: Präteritum của haben, ngôi sie (họ)."
+  - type: example
+    target: Jeden Morgen fütterte ich die Hühner, und am Nachmittag kletterten wir auf Bäume.
+    target_lang: de
+    translation:
+      vi: Sáng nào tôi cũng cho gà ăn, còn buổi chiều chúng tôi trèo cây.
+    note:
+      vi: "füttern và klettern là động từ yếu: fütterte, kletterten. Jeden Morgen đứng đầu nên động từ ở vị trí 2."
+  - type: example
+    target: Mein Vater war sehr streng, aber abends las er uns oft Märchen vor.
+    target_lang: de
+    translation:
+      vi: Bố tôi rất nghiêm khắc, nhưng buổi tối ông hay đọc truyện cổ tích cho chúng tôi nghe.
+    note:
+      vi: "vorlesen (đọc cho ai nghe) là động từ mạnh và tách: las … vor. war là Präteritum của sein."
+  - type: example
+    target: Wir kannten alle Nachbarn, und alle wussten alles über uns.
+    target_lang: de
+    translation:
+      vi: Chúng tôi quen hết hàng xóm, và ai cũng biết mọi chuyện về nhà chúng tôi.
+    note:
+      vi: "kennen → kannten, wissen → wussten: động từ hỗn hợp, vừa đổi nguyên âm vừa có -te."
+  - type: example
+    target: Wo bist du aufgewachsen? – In Hanoi. Aber in den Ferien war ich immer bei meiner Oma auf dem Land.
+    target_lang: de
+    translation:
+      vi: Bạn lớn lên ở đâu? – Ở Hà Nội. Nhưng kỳ nghỉ nào mình cũng về quê ở với bà.
+    note:
+      vi: "Hội thoại giữa bạn bè (du): khi nói, aufwachsen dùng Perfekt (bist … aufgewachsen), còn sein vẫn dùng Präteritum (war)."
+  - type: common_mistake
+    wrong: Er denkte oft an seine Kindheit.
+    right: Er dachte oft an seine Kindheit.
+    target_lang: de
+    note:
+      vi: "denken là động từ hỗn hợp: dachte (đổi e → a, thêm -te), không phải denkte."
+  - type: common_mistake
+    wrong: Sie wisste nicht, wo ihr Vater war.
+    right: Sie wusste nicht, wo ihr Vater war.
+    target_lang: de
+    note:
+      vi: "wissen → wusste (với u). Dạng wüsste có ü là Konjunktiv II, bạn sẽ học ở unit sau."
+  - type: common_mistake
+    wrong: Als Kind wohne ich auf dem Land.
+    right: Als Kind wohnte ich auf dem Land.
+    target_lang: de
+    note:
+      vi: "Tiếng Việt không đổi động từ khi kể chuyện cũ, nhưng tiếng Đức phải chia ở quá khứ: wohnte."
+  - type: common_mistake
+    wrong: Ich fuhrte jeden Tag mit dem Rad zur Schule.
+    right: Ich fuhr jeden Tag mit dem Rad zur Schule.
+    target_lang: de
+    note:
+      vi: "Động từ mạnh chỉ đổi nguyên âm, không thêm -te: fahren → fuhr."
+  - type: summary
+    points:
+      - vi: "Động từ yếu: gốc + -te (wohnte, spielte); gốc -t/-d: -ete (arbeitete)."
+      - vi: "Động từ mạnh: đổi nguyên âm, không -te (fuhr, schrieb, fand, ging, kam)."
+      - vi: "Động từ hỗn hợp: brachte, dachte, kannte, nannte, rannte, wusste."
+      - vi: "ich và er/sie/es không có đuôi: ich fuhr, er fuhr; du fuhrst, wir fuhren, ihr fuhrt."
+      - vi: "Viết, kể chuyện: Präteritum. Nói: phần lớn Perfekt, nhưng war, hatte, konnte, musste."
+      - vi: "Từ vựng: die Kindheit, die Erinnerung an, sich erinnern an, aufwachsen, das Dorf, streng, vermissen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u01l1-mcq-fuhr
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      stem: "Chọn dạng Präteritum đúng của fahren: Als Kind ___ ich jeden Tag mit dem Fahrrad zur Schule."
+      stem_lang: vi
+      options:
+        - { id: q7f, text: "fuhr", lang: de }
+        - { id: k2t, text: "fährt", lang: de }
+        - { id: m9u, text: "führte", lang: de }
+        - { id: w4a, text: "fuhren", lang: de }
+    answer:
+      correct_option_id: q7f
+    explanation:
+      vi: "fahren là động từ mạnh: Präteritum đổi nguyên âm a → u, không thêm -te, và ở ngôi ich không có đuôi: ich fuhr. fährt là hiện tại ngôi er; fuhren là ngôi wir/sie; führte là Präteritum của một động từ khác (führen = dẫn)."
+    display_answer: fuhr
+
+  - key: de:exercise:b1u01l1-mcq-dachte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      stem: "Chọn dạng Präteritum đúng của denken: Damals ___ ich oft an meine Heimat."
+      stem_lang: vi
+      options:
+        - { id: d3x, text: "dachte", lang: de }
+        - { id: d8k, text: "dankte", lang: de }
+        - { id: d1p, text: "denkt", lang: de }
+        - { id: d6r, text: "dachten", lang: de }
+    answer:
+      correct_option_id: d3x
+    explanation:
+      vi: "denken là động từ hỗn hợp: đổi nguyên âm e → a và thêm -te – ich dachte (không phải denkte). dankte là Präteritum của danken (cảm ơn); denkt là hiện tại ngôi er; dachten là ngôi wir/sie."
+    display_answer: dachte
+
+  - key: de:exercise:b1u01l1-mcq-lesen-maerchen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-maerchen
+    prompt:
+      stem: "Als Kind wohnte ich bei meinen Großeltern auf einem Bauernhof. Jeden Morgen fütterte ich die Hühner, dann ging ich zu Fuß zur Schule. Mein Großvater war streng, aber am Abend erzählte er mir Märchen. Heute wohne ich in der Stadt, aber ich vermisse diese Zeit sehr. — Richtig oder falsch? Der Großvater erzählte am Abend Märchen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Đoạn văn viết: Mein Großvater war streng, aber am Abend erzählte er mir Märchen – ông nghiêm khắc nhưng buổi tối kể chuyện cổ tích. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u01l1-mcq-lesen-stadt
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-vermissen
+    prompt:
+      stem: "Als Kind wohnte ich bei meinen Großeltern auf einem Bauernhof. Jeden Morgen fütterte ich die Hühner, dann ging ich zu Fuß zur Schule. Mein Großvater war streng, aber am Abend erzählte er mir Märchen. Heute wohne ich in der Stadt, aber ich vermisse diese Zeit sehr. — Richtig oder falsch? Die Person wohnt heute noch auf dem Bauernhof."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Heute wohne ich in der Stadt – bây giờ người viết sống ở thành phố và nhớ (vermisse) thời ở trang trại. wohnte (Präteritum) chỉ thời quá khứ, nên câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u01l1-fill-wohnte-hatten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      template: "Als Kind {{b1}} (wohnen) ich auf dem Land. Wir {{b2}} (haben) einen großen Garten, und ich {{b3}} (klettern) jeden Tag auf die Bäume."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [wohnte]
+        b2: [hatten]
+        b3: [kletterte]
+    known_wrong:
+      - answer: wohne
+        feedback_vi: Đây là chuyện hồi nhỏ (Als Kind) nên phải dùng quá khứ – ich wohnte.
+        error_tag: verb_form
+      - answer: habten
+        feedback_vi: haben có Präteritum riêng – wir hatten (không phải habten).
+        error_tag: verb_form
+      - answer: hatte
+        feedback_vi: Chủ ngữ là wir nên cần đuôi -en – wir hatten.
+        error_tag: verb_form
+      - answer: kletterten
+        feedback_vi: Chủ ngữ là ich nên không có đuôi – ich kletterte.
+        error_tag: verb_form
+    explanation:
+      vi: "wohnen và klettern là động từ yếu: gốc + -te, ở ngôi ich không thêm đuôi (wohnte, kletterte). haben có Präteritum riêng: wir hatten."
+    display_answer: "Als Kind wohnte ich auf dem Land. Wir hatten einen großen Garten, und ich kletterte jeden Tag auf die Bäume."
+
+  - key: de:exercise:b1u01l1-fill-brachte-fuhr
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      template: "Mein Vater {{b1}} (bringen) mich jeden Morgen zur Schule. Danach {{b2}} (fahren) er ins Büro. Ich {{b3}} (wissen) damals nicht, wie schwer seine Arbeit war."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [brachte]
+        b2: [fuhr]
+        b3: [wusste]
+    known_wrong:
+      - answer: bringte
+        feedback_vi: bringen là động từ hỗn hợp – brachte (đổi nguyên âm và thêm -te).
+        error_tag: verb_form
+      - answer: fahrte
+        feedback_vi: fahren là động từ mạnh – fuhr, không thêm -te.
+        error_tag: verb_form
+      - answer: fuhrte
+        feedback_vi: Động từ mạnh chỉ đổi nguyên âm, không thêm -te – er fuhr.
+        error_tag: verb_form
+      - answer: wisste
+        feedback_vi: wissen → wusste (với u).
+        error_tag: verb_form
+    explanation:
+      vi: "bringen và wissen là động từ hỗn hợp: brachte, wusste. fahren là động từ mạnh: fuhr. Danach đứng đầu câu nên động từ fuhr đứng ở vị trí 2."
+    display_answer: "Mein Vater brachte mich jeden Morgen zur Schule. Danach fuhr er ins Büro. Ich wusste damals nicht, wie schwer seine Arbeit war."
+
+  - key: de:exercise:b1u01l1-tr-schuechtern
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-schuechtern
+    prompt:
+      source_text: "Hồi nhỏ tôi rất nhút nhát. (văn viết, dùng Präteritum)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Als Kind war ich sehr schüchtern.
+        - Ich war als Kind sehr schüchtern.
+        - In meiner Kindheit war ich sehr schüchtern.
+        - Ich war in meiner Kindheit sehr schüchtern.
+        - Als ich klein war, war ich sehr schüchtern.
+        - Als ich ein Kind war, war ich sehr schüchtern.
+    known_wrong:
+      - answer: Als Kind ich war sehr schüchtern.
+        feedback_vi: Als Kind đứng ở vị trí 1 nên động từ war phải ở vị trí 2 – Als Kind war ich …
+        error_tag: verb_position
+      - answer: Als Kind bin ich sehr schüchtern.
+        feedback_vi: Chuyện hồi nhỏ phải dùng quá khứ – war (Präteritum của sein).
+        error_tag: verb_form
+    explanation:
+      vi: "Hồi nhỏ = als Kind (hoặc in meiner Kindheit). sein ở Präteritum: ich war. Cụm thời gian đứng đầu thì war ở vị trí 2, chủ ngữ ich đứng sau."
+    display_answer: Als Kind war ich sehr schüchtern.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u01l1-wb-als-zogen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Khi tôi lên mười, gia đình tôi chuyển lên thành phố.\""
+      tokens:
+        - { id: z-wir, text: wir }
+        - { id: z-stadt, text: Stadt }
+        - { id: z-war, text: war }
+        - { id: z-als, text: Als }
+        - { id: z-komma, text: "," }
+        - { id: z-zogen, text: zogen }
+        - { id: z-zehn, text: zehn }
+        - { id: z-die, text: die }
+        - { id: z-ich, text: ich }
+        - { id: z-in, text: in }
+    answer:
+      orders:
+        - [z-als, z-ich, z-zehn, z-war, z-komma, z-zogen, z-wir, z-in, z-die, z-stadt]
+    explanation:
+      vi: "Câu phụ với als: động từ war đứng cuối. Cả câu phụ chiếm vị trí 1, nên động từ câu chính zogen (Präteritum của ziehen, động từ mạnh) đứng ngay sau dấu phẩy, rồi mới đến chủ ngữ wir."
+    display_answer: Als ich zehn war, zogen wir in die Stadt.
+
+  - key: de:exercise:b1u01l1-tr-spielzeug
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-spielzeug
+    prompt:
+      source_text: "Hồi đó chúng tôi không có nhiều đồ chơi. (văn viết, dùng Präteritum)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Damals hatten wir nicht viel Spielzeug.
+        - Wir hatten damals nicht viel Spielzeug.
+        - Damals hatten wir wenig Spielzeug.
+        - Wir hatten damals wenig Spielzeug.
+    known_wrong:
+      - answer: Damals wir hatten nicht viel Spielzeug.
+        feedback_vi: Damals ở vị trí 1 thì động từ hatten đứng ở vị trí 2 – Damals hatten wir …
+        error_tag: verb_position
+      - answer: Damals haben wir nicht viel Spielzeug.
+        feedback_vi: Damals (hồi đó) chỉ quá khứ nên dùng hatten, không dùng haben ở hiện tại.
+        error_tag: verb_form
+    explanation:
+      vi: "haben ở Präteritum: wir hatten. Spielzeug thường dùng ở số ít với nghĩa chung, nên nói nicht viel Spielzeug (hoặc wenig Spielzeug)."
+    display_answer: Damals hatten wir nicht viel Spielzeug.
+
+  - key: de:exercise:b1u01l1-tr-vater-streng
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u01-streng
+    prompt:
+      source_text: Mein Vater war streng, aber ich vermisse ihn sehr.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bố tôi nghiêm khắc, nhưng tôi rất nhớ ông ấy.
+        - Bố tôi nghiêm khắc, nhưng tôi rất nhớ bố.
+        - Bố tôi từng nghiêm khắc, nhưng tôi rất nhớ ông ấy.
+        - Bố tôi đã từng nghiêm khắc, nhưng tôi rất nhớ ông ấy.
+        - Bố tôi ngày xưa nghiêm khắc, nhưng tôi rất nhớ ông ấy.
+        - Bố tôi nghiêm khắc, nhưng tôi nhớ ông ấy lắm.
+        - Bố tôi nghiêm khắc, nhưng tôi rất nhớ ông.
+        - Cha tôi nghiêm khắc, nhưng tôi rất nhớ ông ấy.
+        - Cha tôi nghiêm khắc, nhưng tôi rất nhớ cha.
+        - Ba tôi nghiêm khắc, nhưng tôi rất nhớ ba.
+        - Ba tôi nghiêm khắc, nhưng tôi rất nhớ ông ấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bố tôi nghiêm khắc, nhưng tôi rất nhớ lại ông ấy.
+        feedback_vi: "vermissen là nhớ thương người ở xa hoặc đã mất, không phải \"nhớ lại\" (sich erinnern an)."
+        error_tag: meaning
+    explanation:
+      vi: "war streng = (đã) nghiêm khắc – Präteritum của sein. vermissen = nhớ (thương) ai, ở đây động từ ở hiện tại: bây giờ tôi vẫn nhớ."
+    display_answer: Bố tôi nghiêm khắc, nhưng tôi rất nhớ ông ấy.

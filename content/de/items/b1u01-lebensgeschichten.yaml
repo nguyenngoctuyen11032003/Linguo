@@ -1,0 +1,1434 @@
+# Học liệu unit B1U01 "Câu chuyện cuộc đời" (Lebensgeschichten), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U01L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Hồi nhỏ – Präteritum đầy đủ =================
+  - key: de:item:b1u01-g-praeteritum-system
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Präteritum: machte, arbeitete · fuhr, schrieb, fand · brachte, dachte, wusste"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ yếu thêm -te vào gốc (machen → machte; gốc tận cùng bằng -t/-d thêm -ete: arbeitete). Động từ mạnh đổi nguyên âm gốc và không có -te (fahren → fuhr, schreiben → schrieb, finden → fand); động từ hỗn hợp vừa đổi nguyên âm vừa thêm -te (bringen → brachte, denken → dachte, kennen → kannte, wissen → wusste). Ở ich và er/sie/es, Präteritum không có đuôi: ich fuhr, er fuhr; các ngôi khác: du fuhrst, wir fuhren, ihr fuhrt, sie fuhren."
+      examples:
+        - target: Als Kind wohnte ich auf dem Land.
+          translation:
+            vi: Hồi nhỏ tôi sống ở nông thôn.
+        - target: Mein Großvater fuhr jeden Morgen mit dem Fahrrad zur Arbeit.
+          translation:
+            vi: Sáng nào ông tôi cũng đạp xe đi làm.
+        - target: Ich dachte, du wusstest das schon.
+          translation:
+            vi: Tôi cứ tưởng bạn đã biết chuyện đó rồi.
+      confusion:
+        vi: "Động từ hỗn hợp hay bị chia nhầm như động từ yếu: không nói er denkte, sie wisste mà là er dachte, sie wusste. Dạng của động từ mạnh và hỗn hợp nên học thuộc theo bộ (fahren – fuhr – ist gefahren)."
+
+  - key: de:item:b1u01-g-praeteritum-perfekt-gebrauch
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Präteritum oder Perfekt? Schriftlich erzählen – mündlich erzählen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi viết để kể (hồi ký, tiểu sử, truyện, tin báo), người Đức thường dùng Präteritum. Khi nói chuyện, phần lớn động từ dùng Perfekt, nhưng sein, haben và động từ khiếm khuyết thường vẫn ở Präteritum (war, hatte, musste, konnte). Hai thì đều chỉ việc đã qua; chúng khác nhau chủ yếu ở văn phong, không ở nghĩa."
+      examples:
+        - target: Im Sommer 1998 zog die Familie nach Leipzig.
+          translation:
+            vi: Mùa hè năm 1998, gia đình chuyển đến Leipzig.
+        - target: Was hast du am Wochenende gemacht? – Ich war krank und musste zu Hause bleiben.
+          translation:
+            vi: Cuối tuần bạn làm gì? – Mình bị ốm nên phải ở nhà.
+      confusion:
+        vi: "Ở miền Nam nước Đức, ở Áo và Thụy Sĩ, văn nói dùng Perfekt còn nhiều hơn miền Bắc. Tiếng Việt kể chuyện cũ mà không đổi động từ (\"hồi nhỏ tôi sống ở quê\"), nhưng tiếng Đức phải chia động từ ở thì quá khứ."
+
+  - key: de:item:b1u01-kindheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kindheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuổi thơ, thời thơ ấu
+      examples:
+        - target: In meiner Kindheit hatten wir keinen Fernseher.
+          translation:
+            vi: Hồi tôi còn nhỏ, nhà tôi không có ti vi.
+        - target: Sie erzählt gern von ihrer Kindheit in Hanoi.
+          translation:
+            vi: Cô ấy thích kể về tuổi thơ của mình ở Hà Nội.
+      confusion:
+        vi: "Danh từ đuôi -heit là giống cái: die Kindheit, die Freiheit. Nói \"hồi nhỏ\" ngắn gọn hơn: als Kind."
+
+  - key: de:item:b1u01-erinnerung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erinnerung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỷ niệm, ký ức
+      examples:
+        - target: Ich habe schöne Erinnerungen an meine Kindheit.
+          translation:
+            vi: Tôi có nhiều kỷ niệm đẹp về tuổi thơ.
+        - target: Das Foto weckt viele Erinnerungen.
+          translation:
+            vi: Tấm ảnh gợi lại nhiều kỷ niệm.
+      confusion:
+        vi: "Kỷ niệm về điều gì: Erinnerung an + Akkusativ (an meine Kindheit), không dùng von hay über."
+
+  - key: de:item:b1u01-sich-erinnern-an
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich erinnern an (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: nhớ (lại), còn nhớ
+      examples:
+        - target: Erinnerst du dich an unseren ersten Schultag?
+          translation:
+            vi: Bạn còn nhớ ngày đầu tiên đi học của chúng mình không?
+        - target: Ich erinnere mich gut an meine Großmutter.
+          translation:
+            vi: Tôi nhớ rõ bà tôi.
+      confusion:
+        vi: "Cần cả đại từ phản thân lẫn an + Akk: Ich erinnere mich an dich (không nói Ich erinnere dich – câu này nghĩa là \"tôi nhắc bạn\"). Nhớ nhung người ở xa là vermissen."
+
+  - key: de:item:b1u01-aufwachsen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aufwachsen, wächst auf, wuchs auf, ist aufgewachsen
+      pos: động từ
+    back:
+      meaning:
+        vi: lớn lên
+      examples:
+        - target: Ich bin in einem kleinen Dorf aufgewachsen.
+          translation:
+            vi: Tôi lớn lên ở một ngôi làng nhỏ.
+        - target: Meine Mutter wuchs bei ihren Großeltern auf.
+          translation:
+            vi: Mẹ tôi lớn lên bên ông bà.
+      confusion:
+        vi: "Động từ tách và đổi trạng thái nên Perfekt dùng sein: ich bin aufgewachsen. Präteritum đổi a → u: wuchs auf."
+
+  - key: de:item:b1u01-dorf
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Dorf, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: làng, ngôi làng
+      examples:
+        - target: Im Dorf kannte jeder jeden.
+          translation:
+            vi: Trong làng ai cũng biết mặt nhau.
+        - target: In unserem Dorf gab es nur eine Schule.
+          translation:
+            vi: Làng chúng tôi chỉ có một trường học.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Dörfer. auf dem Land = ở nông thôn (nói chung), im Dorf = trong một ngôi làng cụ thể."
+
+  - key: de:item:b1u01-jugend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Jugend (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuổi trẻ, thời niên thiếu
+      examples:
+        - target: In meiner Jugend spielte ich in einer Band.
+          translation:
+            vi: Thời trẻ tôi chơi trong một ban nhạc.
+        - target: Seine Jugend war nicht leicht.
+          translation:
+            vi: Tuổi trẻ của anh ấy không dễ dàng.
+      confusion:
+        vi: "die Kindheit là thời bé, die Jugend là khoảng tuổi thiếu niên đến khi trưởng thành. Người trẻ là der/die Jugendliche hoặc junge Leute."
+
+  - key: de:item:b1u01-streng
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: streng
+      pos: tính từ
+    back:
+      meaning:
+        vi: nghiêm khắc
+      examples:
+        - target: Mein Vater war sehr streng.
+          translation:
+            vi: Bố tôi rất nghiêm khắc.
+        - target: Damals waren die Lehrer strenger als heute.
+          translation:
+            vi: Hồi đó thầy cô nghiêm khắc hơn bây giờ.
+      pronunciation_note:
+        vi: "st đầu từ đọc là \"scht\": /ʃtʁɛŋ/."
+
+  - key: de:item:b1u01-vermissen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vermissen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhớ (người, nơi, thứ ở xa); thấy thiếu
+      examples:
+        - target: Ich vermisse meine Familie.
+          translation:
+            vi: Tôi nhớ gia đình.
+        - target: Vermisst du das Essen aus Vietnam?
+          translation:
+            vi: Bạn có nhớ đồ ăn Việt Nam không?
+      confusion:
+        vi: "vermissen đi thẳng với Akkusativ: Ich vermisse dich (không có giới từ). Còn nhớ lại một chuyện cũ là sich erinnern an."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 1 – trường tuổi thơ
+  - key: de:item:b1u01-spielzeug
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Spielzeug, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ chơi
+      examples:
+        - target: Als Kind hatte ich nicht viel Spielzeug.
+          translation:
+            vi: Hồi nhỏ tôi không có nhiều đồ chơi.
+        - target: Das war mein liebstes Spielzeug.
+          translation:
+            vi: Đó là món đồ chơi tôi thích nhất.
+      confusion:
+        vi: "Spielzeug thường dùng ở số ít với nghĩa chung \"đồ chơi\" (viel Spielzeug)."
+
+  - key: de:item:b1u01-klettern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: klettern (ist geklettert)
+      pos: động từ
+    back:
+      meaning:
+        vi: leo, trèo
+      examples:
+        - target: Wir kletterten jeden Tag auf Bäume.
+          translation:
+            vi: Ngày nào chúng tôi cũng trèo cây.
+        - target: Bist du als Kind auch auf Bäume geklettert?
+          translation:
+            vi: Hồi nhỏ bạn cũng trèo cây à?
+      confusion:
+        vi: "Khi có hướng (auf den Baum, über die Mauer), Perfekt dùng sein: ich bin geklettert."
+
+  - key: de:item:b1u01-schuechtern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schüchtern
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhút nhát, rụt rè
+      examples:
+        - target: Als Kind war ich sehr schüchtern.
+          translation:
+            vi: Hồi nhỏ tôi rất nhút nhát.
+        - target: Sie war ein schüchternes Mädchen.
+          translation:
+            vi: Cô ấy từng là một cô bé rụt rè.
+
+  - key: de:item:b1u01-frech
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: frech
+      pos: tính từ
+    back:
+      meaning:
+        vi: hỗn, láu lỉnh
+      examples:
+        - target: Mein kleiner Bruder war ziemlich frech.
+          translation:
+            vi: Em trai tôi khá là láu lỉnh.
+        - target: Sei nicht so frech!
+          translation:
+            vi: Đừng có hỗn thế!
+
+  - key: de:item:b1u01-maerchen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Märchen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyện cổ tích
+      examples:
+        - target: Meine Großmutter erzählte uns jeden Abend ein Märchen.
+          translation:
+            vi: Tối nào bà tôi cũng kể cho chúng tôi nghe một câu chuyện cổ tích.
+        - target: Kennst du deutsche Märchen?
+          translation:
+            vi: Bạn có biết truyện cổ tích Đức nào không?
+      confusion:
+        vi: "Märchen là giống trung (das Märchen); số nhiều giữ nguyên: die Märchen."
+
+  - key: de:item:b1u01-bauernhof
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bauernhof, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trang trại (của nhà nông)
+      examples:
+        - target: Meine Großeltern hatten einen Bauernhof.
+          translation:
+            vi: Ông bà tôi có một trang trại.
+        - target: Auf dem Bauernhof gab es Kühe und Hühner.
+          translation:
+            vi: Ở trang trại có bò và gà.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Hof → der Bauernhof. Số nhiều: die Bauernhöfe."
+
+  - key: de:item:b1u01-baum
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Baum, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái cây
+      examples:
+        - target: Vor unserem Haus stand ein großer Baum.
+          translation:
+            vi: Trước nhà chúng tôi có một cái cây lớn.
+        - target: Im Garten gab es viele Bäume.
+          translation:
+            vi: Trong vườn có nhiều cây.
+      pronunciation_note:
+        vi: "au đọc như \"ao\"; số nhiều Bäume với äu đọc gần như \"oi\"."
+
+  - key: de:item:b1u01-fuettern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: füttern
+      pos: động từ
+    back:
+      meaning:
+        vi: cho (con vật) ăn
+      examples:
+        - target: Jeden Morgen fütterte ich die Hühner.
+          translation:
+            vi: Sáng nào tôi cũng cho gà ăn.
+        - target: Kannst du heute die Katze füttern?
+          translation:
+            vi: Hôm nay bạn cho mèo ăn được không?
+      confusion:
+        vi: "füttern dùng cho con vật (hoặc em bé); người tự ăn là essen, con vật tự ăn là fressen."
+
+  # ================= Bài 2: Sau khi … – Plusquamperfekt, nachdem =================
+  - key: de:item:b1u01-g-plusquamperfekt
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Plusquamperfekt: hatte / war + Partizip II"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Plusquamperfekt = hatte/war (Präteritum của haben/sein) + Partizip II ở cuối câu. Bạn dùng nó cho việc xảy ra trước một việc khác cũng đã qua, giống \"đã … từ trước\" trong tiếng Việt. Chọn hatte hay war theo đúng quy tắc của Perfekt: ich hatte gegessen, ich war gefahren."
+      examples:
+        - target: Als wir am Bahnhof ankamen, war der Zug schon abgefahren.
+          translation:
+            vi: Khi chúng tôi đến ga thì tàu đã chạy mất rồi.
+        - target: Vorher hatte ich nie im Ausland gelebt.
+          translation:
+            vi: Trước đó tôi chưa từng sống ở nước ngoài.
+      confusion:
+        vi: "Không dùng Plusquamperfekt chỉ vì việc đã xảy ra lâu: một việc đơn lẻ trong quá khứ vẫn dùng Präteritum hoặc Perfekt. Plusquamperfekt cần khi bạn muốn cho thấy việc này xảy ra trước một mốc quá khứ khác."
+
+  - key: de:item:b1u01-g-nachdem
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "nachdem: Nachdem ich … gemacht hatte, zog ich … / Nachdem ich … gemacht habe, gehe ich …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "nachdem (sau khi) mở đầu câu phụ, động từ chia đứng cuối. Việc trong câu nachdem xảy ra trước nên lùi một thì: câu chính ở Präteritum/Perfekt → câu nachdem ở Plusquamperfekt; câu chính ở Präsens → câu nachdem ở Perfekt. Câu nachdem đứng đầu thì động từ câu chính đứng ngay sau dấu phẩy."
+      examples:
+        - target: Nachdem sie das Abitur gemacht hatte, zog sie nach Berlin.
+          translation:
+            vi: Sau khi thi tốt nghiệp phổ thông, cô ấy chuyển đến Berlin.
+        - target: Nachdem ich gefrühstückt habe, fahre ich zur Arbeit.
+          translation:
+            vi: Ăn sáng xong tôi đi làm.
+      confusion:
+        vi: "nachdem là liên từ (động từ cuối câu), còn nach + Dativ là giới từ (nach dem Abitur). Muốn nói \"sau đó\" ở đầu câu chính thì dùng danach: Danach zog sie nach Berlin."
+
+  - key: de:item:b1u01-auswandern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: auswandern (ist ausgewandert)
+      pos: động từ
+    back:
+      meaning:
+        vi: di cư (rời nước mình ra nước ngoài sống)
+      examples:
+        - target: Meine Eltern sind 1990 nach Deutschland ausgewandert.
+          translation:
+            vi: Bố mẹ tôi di cư sang Đức năm 1990.
+        - target: Viele junge Leute wollen auswandern.
+          translation:
+            vi: Nhiều người trẻ muốn ra nước ngoài sinh sống.
+      confusion:
+        vi: "aus- = ra khỏi (nước mình); người đến một nước để định cư thì dùng einwandern. Là động từ di chuyển nên Perfekt dùng sein."
+
+  - key: de:item:b1u01-heimat
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Heimat (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quê hương
+      examples:
+        - target: Vietnam ist meine Heimat.
+          translation:
+            vi: Việt Nam là quê hương tôi.
+        - target: Sie besucht jedes Jahr ihre alte Heimat.
+          translation:
+            vi: Năm nào bà ấy cũng về thăm quê cũ.
+      confusion:
+        vi: "Heimat mang sắc thái tình cảm (nơi mình thuộc về), không chỉ là nơi sinh ra. Trong tiếng Anh không có từ tương đương hoàn toàn, nên đừng dịch máy móc thành home."
+
+  - key: de:item:b1u01-verlassen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verlassen, verlässt, verließ, hat verlassen
+      pos: động từ
+    back:
+      meaning:
+        vi: rời (khỏi), bỏ đi
+      examples:
+        - target: Mit 18 Jahren verließ er sein Dorf.
+          translation:
+            vi: Năm 18 tuổi anh ấy rời làng.
+        - target: Ich habe das Haus um sieben Uhr verlassen.
+          translation:
+            vi: Tôi ra khỏi nhà lúc bảy giờ.
+      confusion:
+        vi: "verlassen đi thẳng với Akkusativ, không có giới từ: Ich verlasse das Haus. Nó còn có nghĩa \"bỏ (ai)\": Sie hat ihren Mann verlassen. sich verlassen auf (tin cậy) là một nghĩa khác, bạn sẽ học ở unit sau."
+
+  - key: de:item:b1u01-sich-verabschieden
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verabschieden (von + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: chào tạm biệt, từ biệt
+      examples:
+        - target: Am Flughafen verabschiedete ich mich von meiner Familie.
+          translation:
+            vi: Ở sân bay tôi chào tạm biệt gia đình.
+        - target: Wir müssen uns jetzt leider verabschieden.
+          translation:
+            vi: Tiếc là bây giờ chúng tôi phải chào tạm biệt rồi.
+      confusion:
+        vi: "Phải có đại từ phản thân: ich verabschiede mich, du verabschiedest dich. Người được chào đi với von + Dativ."
+
+  - key: de:item:b1u01-entscheidung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Entscheidung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyết định
+      examples:
+        - target: Das war eine schwere Entscheidung.
+          translation:
+            vi: Đó là một quyết định khó khăn.
+        - target: Wir haben endlich eine Entscheidung getroffen.
+          translation:
+            vi: Cuối cùng chúng tôi đã đưa ra quyết định.
+      confusion:
+        vi: "Đưa ra quyết định là eine Entscheidung treffen (không nói machen). Danh từ đuôi -ung là giống cái."
+
+  - key: de:item:b1u01-mutig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: mutig
+      pos: tính từ
+    back:
+      meaning:
+        vi: dũng cảm, can đảm
+      examples:
+        - target: Das war eine mutige Entscheidung.
+          translation:
+            vi: Đó là một quyết định can đảm.
+        - target: Meine Großmutter war eine sehr mutige Frau.
+          translation:
+            vi: Bà tôi là một người phụ nữ rất dũng cảm.
+      pronunciation_note:
+        vi: "-ig cuối từ theo chuẩn đọc như \"ich\": /ˈmuːtɪç/ (ở miền Nam nước Đức hay đọc -ik)."
+
+  - key: de:item:b1u01-ausland
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ausland (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước ngoài
+      examples:
+        - target: Sie hat zwei Jahre im Ausland gelebt.
+          translation:
+            vi: Cô ấy đã sống ở nước ngoài hai năm.
+        - target: Nach dem Studium will er ins Ausland gehen.
+          translation:
+            vi: Học xong đại học anh ấy muốn ra nước ngoài.
+      confusion:
+        vi: "im Ausland = ở nước ngoài (Wo?), ins Ausland = ra nước ngoài (Wohin?), aus dem Ausland = từ nước ngoài. Người nước ngoài là der Ausländer / die Ausländerin."
+
+  - key: de:item:b1u01-fremd
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fremd
+      pos: tính từ
+    back:
+      meaning:
+        vi: lạ, xa lạ
+      examples:
+        - target: Am Anfang war mir alles fremd.
+          translation:
+            vi: Lúc đầu mọi thứ đều xa lạ với tôi.
+        - target: Entschuldigung, ich bin hier fremd.
+          translation:
+            vi: Xin lỗi, tôi không phải người ở đây.
+      confusion:
+        vi: "Ich bin hier fremd là câu quen thuộc khi bị hỏi đường: \"tôi không rành chỗ này\". Người thấy lạ ở Dativ: Das ist mir fremd."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 2 – trường rời quê hương
+  - key: de:item:b1u01-abschied
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Abschied, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chia tay, lúc từ biệt
+      examples:
+        - target: Der Abschied von meiner Familie war sehr schwer.
+          translation:
+            vi: Chia tay gia đình thật khó khăn.
+        - target: Zum Abschied gab mir meine Mutter ein Foto.
+          translation:
+            vi: Lúc chia tay, mẹ tôi đưa cho tôi một tấm ảnh.
+      confusion:
+        vi: "Danh từ của sich verabschieden. Abschied nehmen von + Dativ = từ biệt (trang trọng)."
+
+  - key: de:item:b1u01-grenze
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Grenze, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: biên giới; giới hạn
+      examples:
+        - target: Wir fuhren mit dem Zug über die Grenze.
+          translation:
+            vi: Chúng tôi đi tàu qua biên giới.
+        - target: Die Stadt liegt direkt an der Grenze.
+          translation:
+            vi: Thành phố nằm ngay sát biên giới.
+
+  - key: de:item:b1u01-zurueckkehren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zurückkehren (ist zurückgekehrt)
+      pos: động từ
+    back:
+      meaning:
+        vi: trở về
+      examples:
+        - target: Nach zehn Jahren kehrte sie in ihre Heimat zurück.
+          translation:
+            vi: Sau mười năm, bà ấy trở về quê hương.
+        - target: Er ist nie zurückgekehrt.
+          translation:
+            vi: Anh ấy không bao giờ trở về nữa.
+      confusion:
+        vi: "Động từ tách, hơi trang trọng; khi nói hằng ngày thường dùng zurückkommen. Di chuyển nên Perfekt dùng sein."
+
+  - key: de:item:b1u01-neuanfang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Neuanfang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khởi đầu mới
+      examples:
+        - target: Für meine Eltern war Deutschland ein Neuanfang.
+          translation:
+            vi: Với bố mẹ tôi, nước Đức là một khởi đầu mới.
+        - target: Ein Neuanfang ist nie leicht.
+          translation:
+            vi: Bắt đầu lại chẳng bao giờ dễ.
+
+  - key: de:item:b1u01-schwerfallen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schwerfallen, fällt schwer, fiel schwer, ist schwergefallen
+      pos: động từ
+    back:
+      meaning:
+        vi: (ai đó) thấy khó, khó khăn với ai
+      examples:
+        - target: Der Abschied fiel mir sehr schwer.
+          translation:
+            vi: Tôi thấy chia tay thật khó.
+        - target: Am Anfang ist mir die Sprache schwergefallen.
+          translation:
+            vi: Lúc đầu tôi thấy học tiếng rất khó.
+      confusion:
+        vi: "Việc khó là chủ ngữ, người thấy khó ở Dativ: Die Sprache fällt mir schwer. Không nói Ich falle schwer."
+
+  - key: de:item:b1u01-sich-einleben
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich einleben
+      pos: động từ
+    back:
+      meaning:
+        vi: quen dần, hoà nhập (với nơi ở mới)
+      examples:
+        - target: Wir haben uns schnell in Leipzig eingelebt.
+          translation:
+            vi: Chúng tôi đã nhanh chóng quen với cuộc sống ở Leipzig.
+        - target: Hast du dich schon gut eingelebt?
+          translation:
+            vi: Bạn đã quen với nơi mới chưa?
+      confusion:
+        vi: "Động từ phản thân và động từ tách: ich lebe mich ein, ich habe mich eingelebt."
+
+  # ================= Bài 3: Trước khi, kể từ khi, cho đến khi =================
+  - key: de:item:b1u01-g-bevor
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "bevor + Nebensatz · vor + Dativ"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "bevor (trước khi) mở đầu câu phụ, động từ chia ở cuối: Bevor ich nach Deutschland kam, lernte ich Deutsch. Hai vế thường cùng một thì, vì bevor đã cho biết thứ tự. Muốn nói ngắn bằng danh từ thì dùng giới từ vor + Dativ: vor dem Studium, vor der Arbeit."
+      examples:
+        - target: Bevor ich nach Deutschland kam, lernte ich ein Jahr Deutsch.
+          translation:
+            vi: Trước khi sang Đức, tôi đã học tiếng Đức một năm.
+        - target: Vor dem Studium hat er ein Jahr gearbeitet.
+          translation:
+            vi: Trước khi học đại học, anh ấy đã đi làm một năm.
+      confusion:
+        vi: "Không có kiểu \"bevor zu + nguyên thể\" như before + V-ing của tiếng Anh: nói Bevor ich esse, … hoặc Vor dem Essen, …"
+
+  - key: de:item:b1u01-g-seitdem
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "seit / seitdem + Nebensatz: Seit ich hier wohne, …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "seit hoặc seitdem (từ khi) mở đầu câu phụ, động từ ở cuối. Nếu việc vẫn tiếp diễn đến nay, động từ dùng Präsens, dù tiếng Việt hay nói \"đã … được\": Seit ich in Berlin wohne, fahre ich mehr Fahrrad. Nếu câu phụ nói một sự kiện chỉ xảy ra một lần, nó thường ở Perfekt: Seitdem ich umgezogen bin, schlafe ich besser."
+      examples:
+        - target: Seit ich in Deutschland lebe, koche ich öfter selbst.
+          translation:
+            vi: Từ khi sống ở Đức, tôi tự nấu ăn thường xuyên hơn.
+        - target: Seitdem sie in Rente ist, reist sie viel.
+          translation:
+            vi: Từ khi nghỉ hưu, bà ấy đi du lịch nhiều.
+      confusion:
+        vi: "seitdem còn là trạng từ \"từ đó\" đứng trong câu chính, lúc ấy động từ ở vị trí 2: Ich bin 2018 umgezogen. Seitdem wohne ich in Köln. Còn seit + Dativ là giới từ: seit drei Jahren."
+
+  - key: de:item:b1u01-g-bis
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "bis + Nebensatz · bis / bis zu (Präposition)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "bis (cho đến khi) mở đầu câu phụ, động từ ở cuối: Ich arbeitete dort, bis ich in Rente ging. Trước mốc thời gian không có mạo từ, bis là giới từ: bis Montag, bis 2030. Có mạo từ thì dùng bis zu + Dativ: bis zum Abend, bis zur Rente."
+      examples:
+        - target: Ich warte hier, bis du zurückkommst.
+          translation:
+            vi: Tôi chờ ở đây cho đến khi bạn quay lại.
+        - target: Mein Vater arbeitete bis zur Rente in einer Fabrik.
+          translation:
+            vi: Bố tôi làm việc ở một nhà máy cho đến khi về hưu.
+      confusion:
+        vi: "Người Việt hay quên đẩy động từ về cuối: …, bis ich in Rente ging (không phải bis ich ging in Rente). Đừng nhầm bis (đến khi) với bevor (trước khi)."
+
+  - key: de:item:b1u01-abschluss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Abschluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng tốt nghiệp; sự kết thúc (khoá học)
+      examples:
+        - target: Nach dem Abschluss fand ich schnell eine Stelle.
+          translation:
+            vi: Tốt nghiệp xong tôi nhanh chóng tìm được việc.
+        - target: Sie hat einen Abschluss in Informatik.
+          translation:
+            vi: Cô ấy có bằng tin học.
+      confusion:
+        vi: "Số nhiều: die Abschlüsse. Lấy bằng là einen Abschluss machen; có nhiều loại: Schulabschluss, Studienabschluss."
+
+  - key: de:item:b1u01-studium
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Studium, Studien
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc học đại học
+      examples:
+        - target: Nach dem Studium ging er ins Ausland.
+          translation:
+            vi: Học xong đại học anh ấy ra nước ngoài.
+        - target: Mein Studium hat fünf Jahre gedauert.
+          translation:
+            vi: Tôi học đại học mất năm năm.
+      confusion:
+        vi: "Studium chỉ dùng cho bậc đại học; học phổ thông là die Schule, học nghề là die Ausbildung. Số nhiều bất quy tắc: die Studien."
+
+  - key: de:item:b1u01-karriere
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Karriere, -n
+      ipa: /kaˈʁi̯eːʁə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nghiệp
+      examples:
+        - target: Sie hat in einer großen Firma Karriere gemacht.
+          translation:
+            vi: Cô ấy đã thăng tiến trong một công ty lớn.
+        - target: Für seine Karriere zog er nach München.
+          translation:
+            vi: Vì sự nghiệp, anh ấy chuyển đến München.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết thứ hai: ka-RIE-re; -rie- đọc gần như \"riê\" với ê kéo dài."
+      confusion:
+        vi: "Karriere machen = thăng tiến, thành công trong nghề (không chỉ \"có sự nghiệp\")."
+
+  - key: de:item:b1u01-rente
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rente, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương hưu; (thời) nghỉ hưu
+      examples:
+        - target: Mein Vater geht nächstes Jahr in Rente.
+          translation:
+            vi: Năm sau bố tôi nghỉ hưu.
+        - target: Von ihrer Rente kann sie gut leben.
+          translation:
+            vi: Bà ấy sống thoải mái bằng lương hưu.
+      confusion:
+        vi: "in Rente gehen = về hưu, in Rente sein = đã nghỉ hưu. Người nghỉ hưu là der Rentner / die Rentnerin."
+
+  - key: de:item:b1u01-ruhestand
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ruhestand (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng nghỉ hưu (trang trọng)
+      examples:
+        - target: Seit zwei Jahren ist er im Ruhestand.
+          translation:
+            vi: Ông ấy đã nghỉ hưu được hai năm.
+        - target: Sie ging mit 65 Jahren in den Ruhestand.
+          translation:
+            vi: Bà ấy nghỉ hưu năm 65 tuổi.
+      confusion:
+        vi: "Ruhestand trang trọng hơn Rente: im Ruhestand sein = in Rente sein; in den Ruhestand gehen = in Rente gehen."
+
+  - key: de:item:b1u01-geburt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Geburt, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ra đời, sự sinh nở
+      examples:
+        - target: Nach der Geburt blieb sie ein Jahr zu Hause.
+          translation:
+            vi: Sau khi sinh, chị ấy ở nhà một năm.
+        - target: Herzlichen Glückwunsch zur Geburt!
+          translation:
+            vi: Chúc mừng em bé chào đời!
+      confusion:
+        vi: "die Geburt là việc sinh ra; ngày sinh nhật là der Geburtstag. Nói mình sinh năm nào thì dùng Ich bin … geboren."
+
+  - key: de:item:b1u01-sterben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sterben, stirbt, starb, ist gestorben
+      pos: động từ
+    back:
+      meaning:
+        vi: chết, qua đời
+      examples:
+        - target: Mein Großvater starb im Jahr 2015.
+          translation:
+            vi: Ông tôi mất năm 2015.
+        - target: Sie ist sehr jung gestorben.
+          translation:
+            vi: Cô ấy mất khi còn rất trẻ.
+      confusion:
+        vi: "Đổi trạng thái nên Perfekt dùng sein: er ist gestorben. Tính từ \"đã chết\" là tot, danh từ \"cái chết\" là der Tod."
+
+  - key: de:item:b1u01-tod
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Tod (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái chết, sự qua đời
+      examples:
+        - target: Bis zu ihrem Tod wohnte sie in ihrem Dorf.
+          translation:
+            vi: Bà ấy sống ở làng mình cho đến lúc mất.
+        - target: Nach seinem Tod verkaufte die Familie das Haus.
+          translation:
+            vi: Sau khi ông ấy mất, gia đình đã bán ngôi nhà.
+      confusion:
+        vi: "der Tod (danh từ, có d) khác tot (tính từ, có t), nhưng hai từ đọc giống nhau vì d cuối từ đọc thành t."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 3 – trường các mốc đời người
+  - key: de:item:b1u01-einschulung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Einschulung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày nhập học lớp một
+      examples:
+        - target: Ich erinnere mich noch gut an meine Einschulung.
+          translation:
+            vi: Tôi vẫn nhớ rõ ngày đầu vào lớp một.
+        - target: Zur Einschulung bekommen viele Kinder in Deutschland eine Schultüte.
+          translation:
+            vi: Ở Đức, nhiều trẻ được tặng một túi quà hình nón (Schultüte) vào ngày nhập học lớp một.
+      confusion:
+        vi: "Schultüte là túi giấy hình nón đựng quà, bánh kẹo mà trẻ em ở Đức thường nhận vào ngày này."
+
+  - key: de:item:b1u01-schwanger
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schwanger
+      pos: tính từ
+    back:
+      meaning:
+        vi: có thai, mang bầu
+      examples:
+        - target: Meine Schwester ist schwanger.
+          translation:
+            vi: Chị tôi đang mang bầu.
+        - target: Damals war sie im fünften Monat schwanger.
+          translation:
+            vi: Lúc đó cô ấy đang mang thai tháng thứ năm.
+
+  - key: de:item:b1u01-beerdigung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Beerdigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đám tang, lễ an táng
+      examples:
+        - target: Zur Beerdigung kam die ganze Familie.
+          translation:
+            vi: Cả gia đình đều đến dự đám tang.
+        - target: Nach der Beerdigung saßen wir lange zusammen.
+          translation:
+            vi: Sau đám tang, chúng tôi ngồi bên nhau rất lâu.
+
+  - key: de:item:b1u01-lebensabschnitt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lebensabschnitt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giai đoạn (của cuộc đời)
+      examples:
+        - target: Das Studium war ein wichtiger Lebensabschnitt.
+          translation:
+            vi: Thời đại học là một giai đoạn quan trọng.
+        - target: Mit der Rente beginnt ein neuer Lebensabschnitt.
+          translation:
+            vi: Nghỉ hưu là bắt đầu một giai đoạn mới của cuộc đời.
+      confusion:
+        vi: "Từ ghép das Leben + s + der Abschnitt; lấy giống của từ cuối: der Lebensabschnitt. Chữ s ở giữa là âm nối."
+
+  - key: de:item:b1u01-wendepunkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Wendepunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bước ngoặt
+      examples:
+        - target: Der Umzug nach Deutschland war ein Wendepunkt in meinem Leben.
+          translation:
+            vi: Việc chuyển sang Đức là một bước ngoặt trong đời tôi.
+        - target: Das Jahr 2010 war für uns ein Wendepunkt.
+          translation:
+            vi: Năm 2010 là một bước ngoặt đối với chúng tôi.
+
+  - key: de:item:b1u01-jahrzehnt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Jahrzehnt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thập kỷ, mười năm
+      examples:
+        - target: Sie lebt seit drei Jahrzehnten in Berlin.
+          translation:
+            vi: Bà ấy sống ở Berlin đã ba mươi năm.
+        - target: Das war vor zwei Jahrzehnten.
+          translation:
+            vi: Chuyện đó cách đây hai mươi năm.
+      confusion:
+        vi: "Sau seit/vor (Dativ), số nhiều thêm -n: seit drei Jahrzehnten."
+
+  # ================= Bài 4: Kể đi! – Perfekt của động từ khiếm khuyết =================
+  - key: de:item:b1u01-g-modal-perfekt
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Perfekt der Modalverben: Ich habe lange arbeiten müssen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi động từ khiếm khuyết đi kèm một động từ nguyên thể, Perfekt của nó là haben + nguyên thể + modal ở dạng nguyên thể (không dùng gemusst, gekonnt): Ich habe lange arbeiten müssen. Trợ động từ là haben, kể cả khi động từ chính là gehen hay fahren: Ich habe nach Hause gehen müssen. Khi nói, người Đức thường chọn Präteritum ngắn gọn hơn: Ich musste lange arbeiten."
+      examples:
+        - target: Gestern habe ich lange arbeiten müssen.
+          translation:
+            vi: Hôm qua tôi đã phải làm việc đến muộn.
+        - target: Wir haben den Zug nicht mehr erreichen können.
+          translation:
+            vi: Chúng tôi đã không kịp bắt chuyến tàu.
+      confusion:
+        vi: "Chỉ khi modal đứng một mình, không có nguyên thể, mới dùng Partizip: Das habe ich nicht gewollt. Trong câu phụ, haben đứng trước hai nguyên thể: …, weil ich lange habe arbeiten müssen."
+
+  - key: de:item:b1u01-ereignis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ereignis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự kiện, biến cố
+      examples:
+        - target: Das war ein wichtiges Ereignis in meinem Leben.
+          translation:
+            vi: Đó là một sự kiện quan trọng trong đời tôi.
+        - target: Über dieses Ereignis spricht die ganze Stadt.
+          translation:
+            vi: Cả thành phố đang bàn tán về sự kiện này.
+      confusion:
+        vi: "Đuôi -nis có số nhiều -nisse: die Ereignisse. Ereignis là việc xảy ra; sự kiện được tổ chức (hội chợ, lễ hội) thường gọi là die Veranstaltung."
+
+  - key: de:item:b1u01-zufall
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zufall, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tình cờ, sự trùng hợp
+      examples:
+        - target: Was für ein Zufall!
+          translation:
+            vi: Trùng hợp thật!
+        - target: Durch Zufall habe ich meinen alten Lehrer getroffen.
+          translation:
+            vi: Tình cờ tôi gặp lại thầy giáo cũ.
+      confusion:
+        vi: "Số nhiều: die Zufälle. durch Zufall = tình cờ (cùng nghĩa với trạng từ zufällig)."
+
+  - key: de:item:b1u01-zufaellig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zufällig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tình cờ, ngẫu nhiên
+      examples:
+        - target: Ich habe sie zufällig im Zug getroffen.
+          translation:
+            vi: Tôi tình cờ gặp cô ấy trên tàu.
+        - target: Weißt du zufällig, wann der Kurs beginnt?
+          translation:
+            vi: Bạn có biết khoá học bắt đầu lúc nào không?
+      confusion:
+        vi: "Trong câu hỏi, zufällig làm câu nhẹ nhàng, lịch sự hơn (\"bạn có tình cờ biết …\"), không nhất thiết có nghĩa \"tình cờ\"."
+
+  - key: de:item:b1u01-ueberrascht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: überrascht
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngạc nhiên, bất ngờ (người)
+      examples:
+        - target: Ich war total überrascht.
+          translation:
+            vi: Tôi hoàn toàn bất ngờ.
+        - target: Wir waren sehr überrascht über das Geschenk.
+          translation:
+            vi: Chúng tôi rất ngạc nhiên về món quà.
+      confusion:
+        vi: "überrascht chỉ cảm giác của người; ngạc nhiên về điều gì: überrascht über + Akk (cũng gặp von + Dat)."
+
+  - key: de:item:b1u01-ueberraschung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Überraschung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bất ngờ; điều bất ngờ
+      examples:
+        - target: Das ist aber eine Überraschung!
+          translation:
+            vi: Thật là bất ngờ!
+        - target: Zu meiner Überraschung war die Prüfung ganz leicht.
+          translation:
+            vi: Thật bất ngờ, bài thi rất dễ.
+
+  - key: de:item:b1u01-peinlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: peinlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngượng, đáng xấu hổ (tình huống)
+      examples:
+        - target: Das war mir total peinlich.
+          translation:
+            vi: Chuyện đó làm tôi ngượng chín người.
+        - target: Das ist eine peinliche Geschichte.
+          translation:
+            vi: Đó là một câu chuyện đáng xấu hổ.
+      confusion:
+        vi: "peinlich mô tả tình huống; người thấy ngượng ở Dativ: Das ist mir peinlich. Ich bin peinlich nghĩa là \"tôi là người đáng xấu hổ\", không phải \"tôi thấy ngượng\"."
+
+  - key: de:item:b1u01-lachen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: lachen
+      pos: động từ
+    back:
+      meaning:
+        vi: cười
+      examples:
+        - target: Alle haben laut gelacht.
+          translation:
+            vi: Mọi người đều cười to.
+        - target: Später haben wir über die Geschichte gelacht.
+          translation:
+            vi: Sau này chúng tôi đã cười về câu chuyện đó.
+      confusion:
+        vi: "lachen über + Akk = cười về điều gì; mỉm cười là lächeln."
+
+  - key: de:item:b1u01-anschliessend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: anschließend
+      pos: trạng từ
+    back:
+      meaning:
+        vi: sau đó, tiếp theo
+      examples:
+        - target: Wir haben zusammen gegessen. Anschließend sind wir spazieren gegangen.
+          translation:
+            vi: Chúng tôi ăn cùng nhau. Sau đó chúng tôi đi dạo.
+        - target: Zuerst war ich beim Arzt, anschließend bin ich zur Arbeit gefahren.
+          translation:
+            vi: Đầu tiên tôi đi khám bác sĩ, sau đó tôi đi làm.
+      confusion:
+        vi: "Nghĩa gần như danach nhưng trang trọng hơn một chút. Đứng đầu câu thì động từ ở vị trí 2: Anschließend sind wir …"
+
+  - key: de:item:b1u01-inzwischen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: inzwischen
+      pos: trạng từ
+    back:
+      meaning:
+        vi: giờ đây (đã khác trước); trong lúc đó
+      examples:
+        - target: Früher war sie Krankenschwester, inzwischen ist sie Ärztin.
+          translation:
+            vi: Trước kia cô ấy là y tá, giờ cô ấy đã là bác sĩ.
+        - target: Ich koche, und du kannst inzwischen den Tisch decken.
+          translation:
+            vi: Mình nấu ăn, trong lúc đó bạn dọn bàn nhé.
+      confusion:
+        vi: "inzwischen có hai nghĩa: \"đến nay thì đã …\" và \"trong lúc đó\". mittlerweile thường chỉ dùng với nghĩa thứ nhất."
+
+  - key: de:item:b1u01-mittlerweile
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: mittlerweile
+      pos: trạng từ
+    back:
+      meaning:
+        vi: giờ đây, đến nay (sau một thời gian thay đổi)
+      examples:
+        - target: Mittlerweile spreche ich ziemlich gut Deutsch.
+          translation:
+            vi: Đến giờ tôi đã nói tiếng Đức khá tốt.
+        - target: Am Anfang kannte ich niemanden, mittlerweile habe ich viele Freunde hier.
+          translation:
+            vi: Lúc đầu tôi chẳng quen ai, giờ thì tôi có nhiều bạn ở đây.
+      confusion:
+        vi: "Dùng khi kể sự thay đổi từ quá khứ đến hiện tại; câu sau mittlerweile thường ở Präsens."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 4 – trường sự cố, cảm xúc khi kể
+  - key: de:item:b1u01-stolpern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: stolpern (ist gestolpert)
+      pos: động từ
+    back:
+      meaning:
+        vi: vấp, vấp ngã
+      examples:
+        - target: Auf der Treppe bin ich gestolpert.
+          translation:
+            vi: Tôi bị vấp ở cầu thang.
+        - target: Er stolperte über einen Stein.
+          translation:
+            vi: Anh ấy vấp phải một hòn đá.
+      confusion:
+        vi: "Vấp phải cái gì: stolpern über + Akk. Perfekt dùng sein."
+
+  - key: de:item:b1u01-erschrecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erschrecken, erschrickt, erschrak, ist erschrocken
+      pos: động từ
+    back:
+      meaning:
+        vi: giật mình, hoảng sợ
+      examples:
+        - target: Als plötzlich das Telefon klingelte, erschrak ich.
+          translation:
+            vi: Khi điện thoại bỗng reo, tôi giật bắn mình.
+        - target: Ich bin furchtbar erschrocken.
+          translation:
+            vi: Tôi hoảng hết cả hồn.
+      confusion:
+        vi: "Với nghĩa \"làm ai giật mình\", động từ chia theo kiểu yếu và dùng haben: Du hast mich erschreckt!"
+
+  - key: de:item:b1u01-sich-schaemen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich schämen (für + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: xấu hổ, hổ thẹn
+      examples:
+        - target: Ich habe mich so geschämt!
+          translation:
+            vi: Tôi xấu hổ quá!
+        - target: Du musst dich nicht schämen.
+          translation:
+            vi: Bạn không cần phải xấu hổ đâu.
+      confusion:
+        vi: "Động từ phản thân: ich schäme mich. Khi tình huống làm mình ngượng, người Đức hay nói Das war mir peinlich."
+
+  - key: de:item:b1u01-missgeschick
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Missgeschick, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cố nhỏ do vụng về, chuyện không may
+      examples:
+        - target: Mir ist ein kleines Missgeschick passiert.
+          translation:
+            vi: Tôi vừa gặp một sự cố nhỏ.
+        - target: Über das Missgeschick haben wir später viel gelacht.
+          translation:
+            vi: Sau này chúng tôi đã cười rất nhiều về chuyện không may đó.
+      confusion:
+        vi: "Người gặp chuyện ở Dativ: Mir ist ein Missgeschick passiert (không nói Ich habe ein Missgeschick passiert)."
+
+  - key: de:item:b1u01-aus-versehen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aus Versehen
+      pos: cụm từ
+    back:
+      meaning:
+        vi: lỡ (tay), vô ý, nhầm
+      examples:
+        - target: Ich habe aus Versehen die falsche Tür geöffnet.
+          translation:
+            vi: Tôi lỡ mở nhầm cửa.
+        - target: Entschuldigung, das war aus Versehen!
+          translation:
+            vi: Xin lỗi, tôi không cố ý!
+      confusion:
+        vi: "Ngược nghĩa là absichtlich (cố ý)."
+
+  - key: de:item:b1u01-ausrutschen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausrutschen (ist ausgerutscht)
+      pos: động từ
+    back:
+      meaning:
+        vi: trượt chân, trơn trượt
+      examples:
+        - target: Im Winter bin ich auf dem Eis ausgerutscht.
+          translation:
+            vi: Mùa đông tôi bị trượt chân trên băng.
+        - target: Pass auf, dass du nicht ausrutschst!
+          translation:
+            vi: Cẩn thận kẻo trượt chân đấy!
+      confusion:
+        vi: "Động từ tách, Perfekt dùng sein: ich bin ausgerutscht."

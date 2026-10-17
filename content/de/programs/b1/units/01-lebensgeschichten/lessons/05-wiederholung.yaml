@@ -1,0 +1,419 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u01-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – tiểu sử, e-mail kể trải nghiệm (Wiederholung)
+objectives:
+  - vi: Đọc hiểu một đoạn tiểu sử viết ở Präteritum (kiểu Goethe B1 Lesen) và chọn richtig/falsch.
+  - vi: Nghe hiểu người khác kể một trải nghiệm hay một mốc đời.
+  - vi: Viết e-mail thân mật khoảng 80 từ kể một sự kiện đáng nhớ, trả lời đủ ba ý (kiểu Goethe B1 Schreiben Teil 1).
+estimated_minutes: 24
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b1u01-erzaehl-mal]
+items:
+  - item: de:item:b1u01-g-praeteritum-system
+    role: reuse
+  - item: de:item:b1u01-g-praeteritum-perfekt-gebrauch
+    role: reuse
+  - item: de:item:b1u01-g-plusquamperfekt
+    role: reuse
+  - item: de:item:b1u01-g-nachdem
+    role: reuse
+  - item: de:item:b1u01-g-bevor
+    role: reuse
+  - item: de:item:b1u01-g-seitdem
+    role: reuse
+  - item: de:item:b1u01-g-bis
+    role: reuse
+  - item: de:item:b1u01-g-modal-perfekt
+    role: reuse
+  - item: de:item:b1u01-aufwachsen
+    role: reuse
+  - item: de:item:b1u01-studium
+    role: reuse
+  - item: de:item:b1u01-abschluss
+    role: reuse
+  - item: de:item:b1u01-zurueckkehren
+    role: reuse
+  - item: de:item:b1u01-tod
+    role: reuse
+  - item: de:item:b1u01-ruhestand
+    role: reuse
+  - item: de:item:b1u01-zufaellig
+    role: reuse
+  - item: de:item:b1u01-inzwischen
+    role: reuse
+  - item: de:item:b1u01-lachen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được một đoạn tiểu sử ngắn, nghe hiểu người khác kể trải nghiệm, và viết được e-mail thân mật khoảng 80 từ kể một sự kiện đáng nhớ.
+  - type: explain
+    text:
+      vi: "Khi đọc tiểu sử, trước hết hãy tìm các mốc thời gian (1879, später, nachdem, bis zu seinem Tod) rồi xác định động từ Präteritum đi kèm. Với câu richtig/falsch, so từng chi tiết: đúng người, đúng thời điểm, đúng thứ tự trước – sau."
+  - type: explain
+    text:
+      vi: "Nhận ra Präteritum giúp bạn đọc nhanh: động từ yếu có -te (arbeitete), động từ mạnh đổi nguyên âm (fand, kam, wuchs … auf), hatte/war + Partizip là Plusquamperfekt – việc xảy ra trước. Câu nachdem, bevor, seitdem, bis cho biết thứ tự các sự kiện."
+  - type: explain
+    text:
+      vi: "E-mail thân mật gồm: lời chào (Liebe Lan, / Lieber Minh, / Hallo …,), một câu mở đầu (cảm ơn thư, xin lỗi trả lời muộn), phần kể chuyện trả lời đủ ba ý của đề, và lời chào cuối (Viele Grüße / Liebe Grüße + tên). Thiếu một ý trong ba ý là mất điểm, dù tiếng Đức đúng."
+  - type: explain
+    text:
+      vi: "Trong e-mail thân mật, người Đức kể chủ yếu bằng Perfekt, còn sein, haben và modal dùng Präteritum (war, hatte, musste). Hãy dùng thêm một hai câu nachdem, bevor hay seitdem để bài viết mạch lạc và đạt mức B1."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B1 có ba nhiệm vụ, trong đó Teil 1 là e-mail thân mật khoảng 80 từ theo ba ý cho sẵn; cấu trúc và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Bài đọc kiểu tiểu sử hay blog thường dùng Präteritum, và câu hỏi richtig/falsch hay đổi cách diễn đạt (wuchs in München auf ↔ ist in München aufgewachsen), nên đừng chỉ tìm từ giống hệt. Trong tiểu sử, người ta hay viết … wurde 1879 geboren (dạng bị động, bạn sẽ học ở unit sau) hoặc … kam 1879 zur Welt (ra đời)."
+  - type: example
+    target: "Liebe Lan, vielen Dank für deine Mail! Entschuldige, dass ich so spät antworte. Stell dir vor, was mir letzte Woche passiert ist: Nachdem ich den ganzen Tag gearbeitet hatte, bin ich noch in ein Café gegangen. Dort habe ich zufällig unsere alte Lehrerin, Frau Weber, getroffen! Inzwischen ist sie im Ruhestand. Wir haben zwei Stunden geredet und viel gelacht. Seitdem denke ich oft an unsere Schulzeit. Hast du nächsten Monat Zeit? Dann können wir uns treffen. Viele Grüße, Minh"
+    target_lang: de
+    translation:
+      vi: "Lan thân mến, cảm ơn bạn nhiều vì thư của bạn! Xin lỗi vì mình trả lời muộn. Bạn thử tưởng tượng chuyện xảy ra với mình tuần trước xem: sau khi làm việc cả ngày, mình còn ghé vào một quán cà phê. Ở đó mình tình cờ gặp cô giáo cũ của chúng mình, cô Weber! Giờ cô đã nghỉ hưu. Bọn mình nói chuyện hai tiếng và cười rất nhiều. Từ hôm đó mình hay nghĩ về thời đi học. Tháng sau bạn có rảnh không? Lúc đó bọn mình gặp nhau nhé. Thân, Minh"
+    note:
+      vi: "E-mail mẫu khoảng 75 từ: chào – cảm ơn, xin lỗi – kể chuyện (Plusquamperfekt + Perfekt) – đề nghị gặp – chào cuối. Lan là nữ nên Liebe."
+  - type: example
+    target: Albert Einstein kam 1879 in Ulm zur Welt und wuchs in München auf.
+    target_lang: de
+    translation:
+      vi: Albert Einstein ra đời năm 1879 ở Ulm và lớn lên ở München.
+    note:
+      vi: "Văn tiểu sử dùng Präteritum: kam (kommen), wuchs … auf (aufwachsen, động từ tách). zur Welt kommen = ra đời."
+  - type: example
+    target: Seit ich in Deutschland lebe, spreche ich jeden Tag Deutsch.
+    target_lang: de
+    translation:
+      vi: Từ khi sống ở Đức, ngày nào tôi cũng nói tiếng Đức.
+    note:
+      vi: "Việc vẫn tiếp diễn → seit + Präsens ở cả hai vế."
+  - type: common_mistake
+    wrong: Nachdem ich den ganzen Tag gearbeitet habe, bin ich in ein Café gegangen.
+    right: Nachdem ich den ganzen Tag gearbeitet hatte, bin ich in ein Café gegangen.
+    target_lang: de
+    note:
+      vi: "Câu chính ở Perfekt (quá khứ) nên câu nachdem lùi về Plusquamperfekt: hatte … gearbeitet."
+  - type: common_mistake
+    wrong: Ich habe seit zwei Jahren in Leipzig gewohnt.
+    right: Ich wohne seit zwei Jahren in Leipzig.
+    target_lang: de
+    note:
+      vi: "Vẫn còn sống ở Leipzig thì dùng seit + Präsens, dù tiếng Việt nói \"đã\"."
+  - type: common_mistake
+    wrong: Lieber Lan,
+    right: Liebe Lan,
+    target_lang: de
+    note:
+      vi: "Người nhận là nữ → Liebe; Lieber chỉ dùng cho nam (Lieber Minh)."
+  - type: summary
+    points:
+      - vi: "Đọc: tìm mốc thời gian + động từ; hatte/war + Partizip = việc xảy ra trước."
+      - vi: "richtig/falsch: so chi tiết, chú ý cách diễn đạt khác nhưng cùng nghĩa."
+      - vi: "E-mail thân mật: Liebe/Lieber … – cảm ơn/xin lỗi – ba ý – Viele Grüße + tên."
+      - vi: "Kể trong thư: Perfekt; war, hatte, musste; thêm nachdem/bevor/seitdem cho mạch lạc."
+      - vi: "nachdem + Plusquamperfekt; seit + Präsens; bis zu + Dativ; habe … müssen."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen) ----------------
+  - key: de:exercise:b1u01l5-mcq-einstein-muenchen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-aufwachsen
+    prompt:
+      stem: "Albert Einstein kam 1879 in Ulm zur Welt, wuchs aber in München auf. In der Schule war er gut in Mathematik. Nachdem er in Zürich studiert hatte, fand er zuerst keine Stelle an einer Universität und arbeitete einige Jahre beim Patentamt in Bern. Später bekam er den Nobelpreis für Physik. Ab 1933 lebte er in den USA und kehrte nie nach Deutschland zurück. Er starb 1955. —Richtig oder falsch? Einstein ist in München aufgewachsen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Văn bản viết: … kam 1879 in Ulm zur Welt, wuchs aber in München auf – sinh ở Ulm nhưng lớn lên ở München. wuchs … auf (Präteritum) và ist … aufgewachsen (Perfekt) cùng nghĩa, nên câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u01l5-mcq-einstein-mathe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      stem: "Albert Einstein kam 1879 in Ulm zur Welt, wuchs aber in München auf. In der Schule war er gut in Mathematik. Nachdem er in Zürich studiert hatte, fand er zuerst keine Stelle an einer Universität und arbeitete einige Jahre beim Patentamt in Bern. Später bekam er den Nobelpreis für Physik. Ab 1933 lebte er in den USA und kehrte nie nach Deutschland zurück. Er starb 1955. —Richtig oder falsch? In der Schule hatte Einstein Probleme in Mathematik."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: In der Schule war er gut in Mathematik – ở trường ông giỏi toán, không gặp khó khăn (Probleme). Vì vậy câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u01l5-mcq-einstein-stelle
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-nachdem
+    prompt:
+      stem: "Albert Einstein kam 1879 in Ulm zur Welt, wuchs aber in München auf. In der Schule war er gut in Mathematik. Nachdem er in Zürich studiert hatte, fand er zuerst keine Stelle an einer Universität und arbeitete einige Jahre beim Patentamt in Bern. Später bekam er den Nobelpreis für Physik. Ab 1933 lebte er in den USA und kehrte nie nach Deutschland zurück. Er starb 1955. —Richtig oder falsch? Nach dem Studium arbeitete Einstein sofort an einer Universität."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Nachdem er in Zürich studiert hatte, fand er zuerst keine Stelle an einer Universität – học xong, lúc đầu ông không tìm được chỗ làm ở trường đại học mà làm ở Patentamt (cục sáng chế) tại Bern. Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u01l5-mcq-einstein-usa
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-zurueckkehren
+    prompt:
+      stem: "Albert Einstein kam 1879 in Ulm zur Welt, wuchs aber in München auf. In der Schule war er gut in Mathematik. Nachdem er in Zürich studiert hatte, fand er zuerst keine Stelle an einer Universität und arbeitete einige Jahre beim Patentamt in Bern. Später bekam er den Nobelpreis für Physik. Ab 1933 lebte er in den USA und kehrte nie nach Deutschland zurück. Er starb 1955. —Richtig oder falsch? Nach 1933 lebte Einstein wieder in Deutschland."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Ab 1933 lebte er in den USA und kehrte nie nach Deutschland zurück – từ năm 1933 ông sống ở Mỹ và không bao giờ trở về Đức. Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u01l5-listen-lehrer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-ruhestand
+    prompt:
+      audio_asset_id: null
+      fallback_text: Stell dir vor, gestern habe ich im Supermarkt zufällig Herrn Weber getroffen, unseren alten Mathelehrer! Inzwischen ist er im Ruhestand.
+      options:
+        - { id: h2a, text: "Hôm qua người nói tình cờ gặp thầy dạy toán cũ ở siêu thị. Giờ thầy đã nghỉ hưu.", lang: vi }
+        - { id: h6b, text: "Hôm qua người nói tình cờ gặp thầy dạy toán cũ ở siêu thị. Thầy vẫn đang đi dạy.", lang: vi }
+        - { id: h9c, text: "Hôm qua người nói hẹn gặp thầy dạy toán cũ ở siêu thị. Giờ thầy đã nghỉ hưu.", lang: vi }
+        - { id: h4d, text: "Hôm qua người nói tình cờ gặp thầy dạy toán cũ ở trường. Giờ thầy đã nghỉ hưu.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: "zufällig getroffen = tình cờ gặp (không hẹn trước); im Supermarkt = ở siêu thị; Inzwischen ist er im Ruhestand = giờ thầy đã nghỉ hưu. Herrn Weber là dạng Akkusativ của Herr Weber."
+    display_answer: Hôm qua người nói tình cờ gặp thầy dạy toán cũ ở siêu thị. Giờ thầy đã nghỉ hưu.
+
+  - key: de:exercise:b1u01l5-listen-bevor-seitdem
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-g-seitdem
+    prompt:
+      audio_asset_id: null
+      fallback_text: Bevor ich nach Deutschland gekommen bin, habe ich ein Jahr in Hanoi Deutsch gelernt. Seitdem ich hier wohne, spreche ich jeden Tag Deutsch.
+      options:
+        - { id: g3a, text: "Trước khi sang Đức, người nói học tiếng Đức một năm ở Hà Nội. Từ khi sống ở Đức, ngày nào người đó cũng nói tiếng Đức.", lang: vi }
+        - { id: g7b, text: "Sau khi sang Đức, người nói học tiếng Đức một năm. Từ khi sống ở Đức, ngày nào người đó cũng nói tiếng Đức.", lang: vi }
+        - { id: g1c, text: "Trước khi sang Đức, người nói học tiếng Đức một năm ở Hà Nội. Ở Đức, người đó ít khi nói tiếng Đức.", lang: vi }
+        - { id: g5d, text: "Trước khi sang Đức, người nói dạy tiếng Đức một năm ở Hà Nội. Từ khi sống ở Đức, ngày nào người đó cũng nói tiếng Đức.", lang: vi }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: "Bevor ich nach Deutschland gekommen bin = trước khi sang Đức (không phải sau khi); Deutsch gelernt = học (không phải dạy). Seitdem ich hier wohne, spreche ich jeden Tag Deutsch = từ khi sống ở đây, ngày nào cũng nói tiếng Đức."
+    display_answer: Trước khi sang Đức, người nói học tiếng Đức một năm ở Hà Nội. Từ khi sống ở Đức, ngày nào người đó cũng nói tiếng Đức.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u01l5-fill-mail-floskeln
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-praeteritum-perfekt-gebrauch
+    prompt:
+      template: "Liebe Lan, vielen {{b1}} für deine Mail! Entschuldige, dass ich so spät {{b2}} (antworten). … Hast du nächsten Monat Zeit? Viele {{b3}}, Minh"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Dank]
+        b2: [antworte]
+        b3: [Grüße]
+    known_wrong:
+      - answer: Danke
+        feedback_vi: Cụm cố định là vielen Dank (danh từ der Dank); Danke đứng một mình, không đi sau vielen.
+        error_tag: word_choice
+      - answer: antwortete
+        feedback_vi: Bạn đang xin lỗi vì bây giờ mới trả lời, nên dùng hiện tại – dass ich so spät antworte.
+        error_tag: verb_form
+      - answer: Gruß
+        feedback_vi: Lời chào cuối thư dùng số nhiều – Viele Grüße.
+        error_tag: plural_form
+    explanation:
+      vi: "Các cụm cố định của e-mail thân mật: vielen Dank für …, Entschuldige, dass ich so spät antworte (câu dass: động từ cuối), Viele Grüße + tên."
+    display_answer: "Liebe Lan, vielen Dank für deine Mail! Entschuldige, dass ich so spät antworte. … Hast du nächsten Monat Zeit? Viele Grüße, Minh"
+
+  - key: de:exercise:b1u01l5-fill-tagebuch
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-plusquamperfekt
+    prompt:
+      template: "Nachdem ich den ganzen Tag {{b1}} (arbeiten) hatte, {{b2}} (gehen) ich noch in ein Café. Dort {{b3}} (treffen) ich zufällig meine alte Freundin Hoa."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [gearbeitet]
+        b2: [ging]
+        b3: [traf]
+    known_wrong:
+      - answer: arbeitet
+        feedback_vi: Sau hatte cần Partizip II – gearbeitet.
+        error_tag: verb_form
+      - answer: gehte
+        feedback_vi: gehen là động từ mạnh – Präteritum là ging.
+        error_tag: verb_form
+      - answer: treffte
+        feedback_vi: treffen là động từ mạnh – Präteritum là traf.
+        error_tag: verb_form
+      - answer: gehe
+        feedback_vi: Câu nachdem ở Plusquamperfekt thì câu chính ở quá khứ – ich ging.
+        error_tag: verb_form
+    explanation:
+      vi: "hatte + Partizip II (gearbeitet) là Plusquamperfekt – việc xảy ra trước. Câu chính ở Präteritum: gehen → ging, treffen → traf (động từ mạnh, ngôi ich không có đuôi)."
+    display_answer: "Nachdem ich den ganzen Tag gearbeitet hatte, ging ich noch in ein Café. Dort traf ich zufällig meine alte Freundin Hoa."
+
+  - key: de:exercise:b1u01l5-tr-seit-deutsch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-seitdem
+    prompt:
+      source_text: "Từ khi tôi sống ở Đức, ngày nào tôi cũng nói tiếng Đức. (bắt đầu bằng câu phụ)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Seit ich in Deutschland lebe, spreche ich jeden Tag Deutsch.
+        - Seitdem ich in Deutschland lebe, spreche ich jeden Tag Deutsch.
+        - Seit ich in Deutschland wohne, spreche ich jeden Tag Deutsch.
+        - Seitdem ich in Deutschland wohne, spreche ich jeden Tag Deutsch.
+        - Seit ich in Deutschland lebe, spreche ich täglich Deutsch.
+        - Seitdem ich in Deutschland lebe, spreche ich täglich Deutsch.
+        - Seit ich in Deutschland wohne, spreche ich täglich Deutsch.
+        - Seitdem ich in Deutschland wohne, spreche ich täglich Deutsch.
+    known_wrong:
+      - answer: Seit ich in Deutschland lebe, ich spreche jeden Tag Deutsch.
+        feedback_vi: Câu phụ đứng đầu là vị trí 1, nên spreche đứng ngay sau dấu phẩy – …, spreche ich …
+        error_tag: verb_position
+      - answer: Seit ich lebe in Deutschland, spreche ich jeden Tag Deutsch.
+        feedback_vi: Trong câu phụ seit, động từ lebe đứng cuối – Seit ich in Deutschland lebe, …
+        error_tag: verb_position
+      - answer: Seit ich in Deutschland gelebt habe, spreche ich jeden Tag Deutsch.
+        feedback_vi: Bạn vẫn đang sống ở Đức, nên câu seit dùng Präsens – lebe.
+        error_tag: verb_form
+    explanation:
+      vi: "Việc vẫn tiếp diễn → seit/seitdem + Präsens (lebe/wohne), động từ cuối câu phụ. Câu phụ đứng đầu nên spreche đứng ngay sau dấu phẩy."
+    display_answer: Seit ich in Deutschland lebe, spreche ich jeden Tag Deutsch.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u01l5-wb-studium-bern
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-abschluss
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Sau khi học xong đại học, ông ấy làm việc ở Bern.\""
+      tokens:
+        - { id: s-arbeitete, text: arbeitete }
+        - { id: s-studium, text: Studium }
+        - { id: s-er1, text: er }
+        - { id: s-hatte, text: hatte }
+        - { id: s-bern, text: Bern }
+        - { id: s-nachdem, text: Nachdem }
+        - { id: s-sein, text: sein }
+        - { id: s-komma, text: "," }
+        - { id: s-abgeschlossen, text: abgeschlossen }
+        - { id: s-in, text: in }
+        - { id: s-er2, text: er }
+    answer:
+      orders:
+        - [s-nachdem, s-er1, s-sein, s-studium, s-abgeschlossen, s-hatte, s-komma, s-arbeitete, s-er2, s-in, s-bern]
+        - [s-nachdem, s-er2, s-sein, s-studium, s-abgeschlossen, s-hatte, s-komma, s-arbeitete, s-er1, s-in, s-bern]
+    explanation:
+      vi: "Câu nachdem ở Plusquamperfekt: Partizip abgeschlossen rồi hatte ở cuối câu phụ. Câu phụ là vị trí 1, nên arbeitete (Präteritum) đứng ngay sau dấu phẩy."
+    display_answer: Nachdem er sein Studium abgeschlossen hatte, arbeitete er in Bern.
+
+  - key: de:exercise:b1u01l5-wb-bis-tod
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-tod
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ông ấy sống ở Princeton cho đến khi qua đời.\""
+      tokens:
+        - { id: o-tod, text: Tod }
+        - { id: o-in, text: in }
+        - { id: o-zu, text: zu }
+        - { id: o-er, text: Er }
+        - { id: o-princeton, text: Princeton }
+        - { id: o-bis, text: bis }
+        - { id: o-seinem, text: seinem }
+        - { id: o-lebte, text: lebte }
+    answer:
+      orders:
+        - [o-er, o-lebte, o-bis, o-zu, o-seinem, o-tod, o-in, o-princeton]
+        - [o-er, o-lebte, o-in, o-princeton, o-bis, o-zu, o-seinem, o-tod]
+    explanation:
+      vi: "Er lebte ở vị trí 1–2. bis zu + Dativ trước danh từ có từ hạn định: bis zu seinem Tod (der Tod → seinem). Cụm thời gian và cụm nơi chốn có thể đổi chỗ cho nhau."
+    display_answer: Er lebte bis zu seinem Tod in Princeton.
+
+  - key: de:exercise:b1u01l5-tr-schnee
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u01-g-bevor
+    prompt:
+      source_text: Bevor sie nach Deutschland kam, hatte sie nie Schnee gesehen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước khi sang Đức, cô ấy chưa bao giờ nhìn thấy tuyết.
+        - Trước khi sang Đức, cô ấy chưa từng nhìn thấy tuyết.
+        - Trước khi sang Đức, cô ấy chưa bao giờ thấy tuyết.
+        - Trước khi sang Đức, cô ấy chưa từng thấy tuyết.
+        - Trước khi đến Đức, cô ấy chưa bao giờ nhìn thấy tuyết.
+        - Trước khi đến Đức, cô ấy chưa từng thấy tuyết.
+        - Trước khi đến Đức, cô ấy chưa bao giờ thấy tuyết.
+        - Trước khi sang Đức, chị ấy chưa bao giờ nhìn thấy tuyết.
+        - Trước khi sang Đức, bà ấy chưa bao giờ nhìn thấy tuyết.
+        - Trước khi sang Đức, cô ấy chưa bao giờ được thấy tuyết.
+        - Trước khi cô ấy sang Đức, cô ấy chưa bao giờ nhìn thấy tuyết.
+        - Trước khi sang Đức, cô ấy chưa hề thấy tuyết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi sang Đức, cô ấy chưa bao giờ nhìn thấy tuyết.
+        feedback_vi: "bevor là \"trước khi\"; \"sau khi\" là nachdem."
+        error_tag: meaning
+    explanation:
+      vi: "bevor = trước khi. hatte … gesehen là Plusquamperfekt: việc chưa từng thấy tuyết kéo dài đến trước mốc sang Đức. nie = chưa bao giờ."
+    display_answer: Trước khi sang Đức, cô ấy chưa bao giờ nhìn thấy tuyết.

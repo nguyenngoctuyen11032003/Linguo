@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u01-erzaehl-mal
+order_index: 4
+level: b1
+title:
+  vi: Kể đi! – Perfekt của động từ khiếm khuyết (Ich habe arbeiten müssen.)
+objectives:
+  - vi: Dùng Perfekt của động từ khiếm khuyết – haben + nguyên thể + modal nguyên thể (Ich habe arbeiten müssen).
+  - vi: Nghe một đoạn phỏng vấn/podcast ngắn kể chuyện và kể lại ý chính.
+  - vi: Kể một sự việc bất ngờ hoặc ngượng ngùng và nói cảm xúc của mình.
+estimated_minutes: 20
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b1u01-bevor-seitdem-bis]
+items:
+  - item: de:item:b1u01-g-modal-perfekt
+  - item: de:item:b1u01-ereignis
+  - item: de:item:b1u01-zufall
+  - item: de:item:b1u01-zufaellig
+  - item: de:item:b1u01-ueberrascht
+  - item: de:item:b1u01-ueberraschung
+  - item: de:item:b1u01-peinlich
+  - item: de:item:b1u01-lachen
+  - item: de:item:b1u01-anschliessend
+  - item: de:item:b1u01-inzwischen
+  - item: de:item:b1u01-mittlerweile
+  - item: de:item:b1u01-stolpern
+  - item: de:item:b1u01-erschrecken
+  - item: de:item:b1u01-sich-schaemen
+  - item: de:item:b1u01-missgeschick
+  - item: de:item:b1u01-aus-versehen
+  - item: de:item:b1u01-ausrutschen
+  - item: de:item:a1u04-g-modal-satzklammer
+    role: reuse
+  - item: de:item:a1u04-muessen
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-haben
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được một chuyện bất ngờ hoặc ngượng ngùng, ví dụ: \"Gestern habe ich lange arbeiten müssen. Dann habe ich zufällig meine alte Lehrerin getroffen – was für ein Zufall!\""
+  - type: explain
+    text:
+      vi: "Khi động từ khiếm khuyết (können, müssen, wollen, dürfen, sollen) đi kèm một động từ nguyên thể, Perfekt của nó là haben + động từ chính + modal, cả hai ở dạng nguyên thể và đứng cuối câu: Ich habe arbeiten müssen. Không dùng Partizip gemusst, gekonnt ở đây; người Đức gọi đây là \"nguyên thể thay Partizip\" (Ersatzinfinitiv)."
+  - type: explain
+    text:
+      vi: "Trợ động từ của modal là haben, kể cả khi động từ chính là gehen hay fahren (vốn dùng sein): Ich habe nach Hause gehen müssen, không nói Ich bin nach Hause gehen müssen. Ở cuối câu, động từ chính đứng trước, modal đứng sau: arbeiten müssen, kommen können."
+  - type: explain
+    text:
+      vi: "Khi nói, người Đức thường chọn Präteritum của modal vì ngắn hơn: Ich musste lange arbeiten. Ich konnte nicht kommen. Dạng Perfekt (habe … müssen) vẫn hay gặp và hoàn toàn đúng, nên bạn cần nhận ra khi nghe."
+  - type: explain
+    text:
+      vi: "Khi kể chuyện, nối các bước bằng zuerst, dann, danach, anschließend và để động từ ở vị trí 2: Anschließend sind wir essen gegangen. Nói cảm xúc: Ich war total überrascht. Das war mir peinlich. Was für ein Zufall!"
+  - type: deep_explain
+    text:
+      vi: "Nếu modal đứng một mình, không có động từ nguyên thể, thì dùng Partizip bình thường: Das habe ich nicht gewollt. Ich habe nach Hause gemusst. Trong câu phụ, haben đứng trước hai nguyên thể chứ không đứng cuối: …, weil ich gestern lange habe arbeiten müssen; cấu trúc này khó, nên trong câu phụ người Đức thường dùng Präteritum: …, weil ich gestern lange arbeiten musste. lassen (học ở A2) cũng có kiểu nguyên thể thay Partizip: Ich habe mein Fahrrad reparieren lassen. Về từ vựng: peinlich mô tả tình huống (Das war mir peinlich), còn sich schämen là động từ phản thân nói cảm xúc của người (Ich habe mich geschämt)."
+  - type: example
+    target: Gestern habe ich lange arbeiten müssen, deshalb konnte ich nicht zur Party kommen.
+    target_lang: de
+    translation:
+      vi: Hôm qua tôi phải làm việc đến muộn, vì vậy tôi không đến bữa tiệc được.
+    note:
+      vi: "habe … arbeiten müssen = Perfekt của müssen. Vế sau dùng Präteritum konnte – cả hai đều đúng khi kể."
+  - type: example
+    target: Wir haben den letzten Bus nicht mehr erreichen können und sind zu Fuß nach Hause gegangen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi không kịp chuyến xe buýt cuối cùng nên đã đi bộ về nhà.
+    note:
+      vi: "können có nguyên thể đi kèm → haben … erreichen können. gehen đứng một mình nên vẫn dùng sein: sind … gegangen."
+  - type: example
+    target: Am Flughafen habe ich zufällig meine alte Lehrerin getroffen. Was für ein Zufall!
+    target_lang: de
+    translation:
+      vi: Ở sân bay tôi tình cờ gặp cô giáo cũ. Thật là trùng hợp!
+    note:
+      vi: "zufällig (trạng từ) = tình cờ; der Zufall (danh từ) = sự trùng hợp. Was für ein Zufall! là câu cảm thán rất hay dùng."
+  - type: example
+    target: Auf der Party bin ich gestolpert und habe aus Versehen Rotwein über ihr Kleid geschüttet. Das war mir so peinlich!
+    target_lang: de
+    translation:
+      vi: Ở bữa tiệc tôi bị vấp và lỡ làm đổ rượu vang đỏ lên váy cô ấy. Tôi ngượng quá!
+    note:
+      vi: "stolpern dùng sein (bin gestolpert), schütten dùng haben. Người thấy ngượng ở Dativ: Das war mir peinlich."
+  - type: example
+    target: Hast du am Wochenende mitkommen dürfen? – Nein, leider nicht. Ich habe für die Prüfung lernen müssen.
+    target_lang: de
+    translation:
+      vi: Cuối tuần bạn có được phép đi cùng không? – Không, tiếc là không. Mình phải ôn thi.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). mitkommen dürfen, lernen müssen: modal đứng sau động từ chính ở cuối câu."
+  - type: common_mistake
+    wrong: Ich habe gestern arbeiten gemusst.
+    right: Ich habe gestern arbeiten müssen.
+    target_lang: de
+    note:
+      vi: "Có động từ nguyên thể đi kèm (arbeiten) thì modal cũng ở dạng nguyên thể: müssen, không phải gemusst."
+  - type: common_mistake
+    wrong: Ich bin nach Hause gehen müssen.
+    right: Ich habe nach Hause gehen müssen.
+    target_lang: de
+    note:
+      vi: "Trợ động từ do modal quyết định, và modal dùng haben – dù gehen một mình dùng sein."
+  - type: common_mistake
+    wrong: Ich habe müssen arbeiten.
+    right: Ich habe arbeiten müssen.
+    target_lang: de
+    note:
+      vi: "Cuối câu: động từ chính trước, modal sau – arbeiten müssen."
+  - type: common_mistake
+    wrong: Ich war so peinlich.
+    right: Das war mir so peinlich.
+    target_lang: de
+    note:
+      vi: "Ich war peinlich nghĩa là \"tôi là người đáng xấu hổ\". Muốn nói mình thấy ngượng: Das war mir peinlich (hoặc Ich habe mich geschämt)."
+  - type: summary
+    points:
+      - vi: "Perfekt của modal + nguyên thể: haben + … + nguyên thể + modal nguyên thể (habe arbeiten müssen)."
+      - vi: "Modal dùng haben, kể cả khi đi với gehen/fahren: habe nach Hause gehen müssen."
+      - vi: "Modal đứng một mình: Partizip bình thường – Das habe ich nicht gewollt."
+      - vi: "Khi nói, Präteritum của modal phổ biến hơn: musste, konnte, wollte, durfte."
+      - vi: "Kể chuyện: zuerst – dann – danach – anschließend (động từ vị trí 2); inzwischen/mittlerweile = giờ đây."
+      - vi: "Cảm xúc: überrascht, Was für ein Zufall!, Das war mir peinlich, ich habe mich geschämt, ich bin erschrocken."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u01l4-listen-nicht-kommen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-g-modal-perfekt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Tut mir leid, ich habe gestern nicht kommen können. Ich habe bis neun Uhr arbeiten müssen.
+      options:
+        - { id: k1a, text: "Xin lỗi, hôm qua mình không đến được. Mình phải làm việc đến chín giờ.", lang: vi }
+        - { id: k5b, text: "Xin lỗi, hôm qua mình không muốn đến. Mình phải làm việc đến chín giờ.", lang: vi }
+        - { id: k8c, text: "Xin lỗi, mai mình không đến được. Mình phải làm việc đến chín giờ.", lang: vi }
+        - { id: k3d, text: "Xin lỗi, hôm qua mình không đến được. Mình phải làm việc từ chín giờ.", lang: vi }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "habe … kommen können = đã không thể đến (können, không phải wollen = muốn). gestern = hôm qua; bis neun Uhr = đến chín giờ (từ chín giờ là ab neun Uhr)."
+    display_answer: Xin lỗi, hôm qua mình không đến được. Mình phải làm việc đến chín giờ.
+
+  - key: de:exercise:b1u01l4-listen-treppe
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-ausrutschen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Letzte Woche bin ich im Büro auf der Treppe ausgerutscht. Alle haben gelacht, und ich habe mich so geschämt.
+      options:
+        - { id: r2a, text: "Tuần trước tôi bị trượt chân ở cầu thang trong văn phòng. Mọi người cười, và tôi rất xấu hổ.", lang: vi }
+        - { id: r6b, text: "Tuần trước tôi bị trượt chân ở cầu thang trong văn phòng. Không ai cười, nhưng tôi vẫn rất xấu hổ.", lang: vi }
+        - { id: r9c, text: "Tuần trước đồng nghiệp tôi bị trượt chân ở cầu thang. Mọi người cười, và anh ấy rất xấu hổ.", lang: vi }
+        - { id: r4d, text: "Tuần trước tôi bị trượt chân trên đường. Mọi người cười, và tôi rất xấu hổ.", lang: vi }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: "bin ich … ausgerutscht = tôi đã bị trượt chân; im Büro auf der Treppe = ở cầu thang trong văn phòng. Alle haben gelacht = mọi người đều cười; ich habe mich geschämt = tôi thấy xấu hổ."
+    display_answer: Tuần trước tôi bị trượt chân ở cầu thang trong văn phòng. Mọi người cười, và tôi rất xấu hổ.
+
+  - key: de:exercise:b1u01l4-listen-podcast
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-mittlerweile
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich bin vor fünf Jahren nach Leipzig gekommen. Am Anfang habe ich niemanden gekannt. Mittlerweile habe ich hier viele Freunde, und ich fühle mich zu Hause.
+      options:
+        - { id: p3a, text: "Lúc đầu người nói không quen ai ở Leipzig, bây giờ thì có nhiều bạn.", lang: vi }
+        - { id: p7b, text: "Người nói đã quen nhiều bạn ở Leipzig ngay từ đầu.", lang: vi }
+        - { id: p1c, text: "Người nói sẽ chuyển đến Leipzig sau năm năm nữa.", lang: vi }
+        - { id: p5d, text: "Người nói sống ở Leipzig năm năm rồi nhưng vẫn chưa có bạn.", lang: vi }
+    answer:
+      correct_option_id: p3a
+    explanation:
+      vi: "Am Anfang habe ich niemanden gekannt = lúc đầu không quen ai; Mittlerweile habe ich viele Freunde = giờ đây có nhiều bạn. vor fünf Jahren = cách đây năm năm (đã xảy ra), không phải năm năm nữa."
+    display_answer: Lúc đầu người nói không quen ai ở Leipzig, bây giờ thì có nhiều bạn.
+
+  - key: de:exercise:b1u01l4-mcq-arbeiten-muessen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-modal-perfekt
+    prompt:
+      stem: "Câu nào đúng? (Hôm qua tôi đã phải làm việc đến muộn.)"
+      stem_lang: vi
+      options:
+        - { id: m2a, text: "Gestern habe ich lange arbeiten müssen.", lang: de }
+        - { id: m6b, text: "Gestern habe ich lange arbeiten gemusst.", lang: de }
+        - { id: m9c, text: "Gestern bin ich lange arbeiten müssen.", lang: de }
+        - { id: m4d, text: "Gestern habe ich lange müssen arbeiten.", lang: de }
+    answer:
+      correct_option_id: m2a
+    explanation:
+      vi: "Modal có nguyên thể đi kèm → Perfekt: habe + arbeiten + müssen (nguyên thể, không phải gemusst). Modal dùng haben (không dùng sein), và ở cuối câu động từ chính đứng trước modal."
+    display_answer: Gestern habe ich lange arbeiten müssen.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u01l4-fill-koennen-muessen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-modal-perfekt
+    prompt:
+      template: "Gestern {{b1}} ich nicht zum Kurs kommen {{b2}} (können), denn ich habe lange arbeiten {{b3}} (müssen)."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [können]
+        b3: [müssen]
+    known_wrong:
+      - answer: bin
+        feedback_vi: Modal dùng haben ở Perfekt, kể cả khi đi với kommen – ich habe … kommen können.
+        error_tag: aux_verb
+      - answer: gekonnt
+        feedback_vi: Có động từ nguyên thể đi kèm (kommen) nên modal ở dạng nguyên thể – können.
+        error_tag: verb_form
+      - answer: gemusst
+        feedback_vi: Có động từ nguyên thể đi kèm (arbeiten) nên modal ở dạng nguyên thể – müssen.
+        error_tag: verb_form
+      - answer: kann
+        feedback_vi: Cuối câu Perfekt cần dạng nguyên thể của modal – kommen können.
+        error_tag: verb_form
+    explanation:
+      vi: "Perfekt của modal + nguyên thể: haben ở vị trí 2 (Gestern habe ich), cuối câu là động từ chính + modal nguyên thể: kommen können, arbeiten müssen."
+    display_answer: "Gestern habe ich nicht zum Kurs kommen können, denn ich habe lange arbeiten müssen."
+
+  - key: de:exercise:b1u01l4-fill-getroffen-gelacht
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-ueberrascht
+    prompt:
+      template: "Ich habe zufällig meinen alten Lehrer im Zug {{b1}} (treffen). Was für ein Zufall! Ich war total {{b2}} (überraschen), und wir haben viel {{b3}} (lachen)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 11 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [getroffen]
+        b2: [überrascht]
+        b3: [gelacht]
+    known_wrong:
+      - answer: getreffen
+        feedback_vi: treffen là động từ mạnh, Partizip II đổi e → o – getroffen.
+        error_tag: verb_form
+      - answer: geüberrascht
+        feedback_vi: Động từ có tiền tố über- không tách thì không thêm ge- – überrascht.
+        error_tag: verb_form
+      - answer: überraschte
+        feedback_vi: Tính từ sau sein không có đuôi – ich war überrascht.
+        error_tag: adj_ending
+      - answer: gelachen
+        feedback_vi: lachen là động từ yếu – Partizip II là gelacht.
+        error_tag: verb_form
+    explanation:
+      vi: "treffen là động từ mạnh: habe … getroffen. überrascht (ngạc nhiên) là Partizip của überraschen dùng như tính từ, không có ge- và không có đuôi sau war. lachen là động từ yếu: haben … gelacht."
+    display_answer: "Ich habe zufällig meinen alten Lehrer im Zug getroffen. Was für ein Zufall! Ich war total überrascht, und wir haben viel gelacht."
+
+  - key: de:exercise:b1u01l4-tr-nach-hause
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-modal-perfekt
+    prompt:
+      source_text: "Tôi đã phải về nhà. (dùng Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe nach Hause gehen müssen.
+        - Ich habe nach Hause fahren müssen.
+        - Ich habe nach Hause gemusst.
+    known_wrong:
+      - answer: Ich bin nach Hause gehen müssen.
+        feedback_vi: Modal dùng haben ở Perfekt, kể cả khi đi với gehen – Ich habe … gehen müssen.
+        error_tag: aux_verb
+      - answer: Ich habe nach Hause gehen gemusst.
+        feedback_vi: Có nguyên thể gehen đi kèm thì modal cũng ở nguyên thể – gehen müssen.
+        error_tag: verb_form
+      - answer: Ich habe nach Hause müssen gehen.
+        feedback_vi: "Cuối câu, động từ chính đứng trước, modal đứng sau – gehen müssen."
+        error_tag: word_order
+    explanation:
+      vi: "Perfekt của modal + nguyên thể: Ich habe nach Hause gehen (hoặc fahren) müssen. Khi modal đứng một mình (không có gehen), dùng Partizip: Ich habe nach Hause gemusst – cũng đúng."
+    display_answer: Ich habe nach Hause gehen müssen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u01l4-wb-bus
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-modal-perfekt
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đã không kịp chuyến xe buýt cuối cùng.\""
+      tokens:
+        - { id: u-koennen, text: können }
+        - { id: u-bus, text: Bus }
+        - { id: u-haben, text: haben }
+        - { id: u-mehr, text: mehr }
+        - { id: u-wir, text: Wir }
+        - { id: u-erreichen, text: erreichen }
+        - { id: u-letzten, text: letzten }
+        - { id: u-nicht, text: nicht }
+        - { id: u-den, text: den }
+    answer:
+      orders:
+        - [u-wir, u-haben, u-den, u-letzten, u-bus, u-nicht, u-mehr, u-erreichen, u-koennen]
+    explanation:
+      vi: "haben ở vị trí 2; tân ngữ den letzten Bus, rồi nicht mehr (không … kịp nữa); cuối câu là động từ chính erreichen trước, modal können sau."
+    display_answer: Wir haben den letzten Bus nicht mehr erreichen können.
+
+  - key: de:exercise:b1u01l4-tr-lehrerin
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u01-zufaellig
+    prompt:
+      source_text: "Tôi tình cờ gặp cô giáo cũ của tôi trên tàu. (văn nói, dùng Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe zufällig meine alte Lehrerin im Zug getroffen.
+        - Ich habe meine alte Lehrerin zufällig im Zug getroffen.
+        - Ich habe im Zug zufällig meine alte Lehrerin getroffen.
+        - Ich habe zufällig im Zug meine alte Lehrerin getroffen.
+        - Im Zug habe ich zufällig meine alte Lehrerin getroffen.
+        - Zufällig habe ich meine alte Lehrerin im Zug getroffen.
+        - Ich habe zufällig meine ehemalige Lehrerin im Zug getroffen.
+        - Ich habe meine ehemalige Lehrerin zufällig im Zug getroffen.
+        - Ich habe im Zug zufällig meine ehemalige Lehrerin getroffen.
+        - Im Zug habe ich zufällig meine ehemalige Lehrerin getroffen.
+    known_wrong:
+      - answer: Ich bin zufällig meine alte Lehrerin im Zug getroffen.
+        feedback_vi: treffen dùng haben ở Perfekt – Ich habe … getroffen.
+        error_tag: aux_verb
+      - answer: Ich habe zufällig meine alte Lehrerin im Zug treffen.
+        feedback_vi: Perfekt cần Partizip II ở cuối câu – getroffen.
+        error_tag: verb_form
+      - answer: Ich habe zufällig meinen alten Lehrerin im Zug getroffen.
+        feedback_vi: die Lehrerin là giống cái, tân ngữ Akkusativ – meine alte Lehrerin.
+        error_tag: gender
+    explanation:
+      vi: "treffen + Akkusativ: meine alte Lehrerin (giống cái, Akk giống Nom). Perfekt: habe … getroffen. zufällig là trạng từ, thường đứng ngay sau động từ chia hoặc ở đầu câu."
+    display_answer: Ich habe zufällig meine alte Lehrerin im Zug getroffen.
+
+  - key: de:exercise:b1u01l4-mcq-peinlich
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-peinlich
+    prompt:
+      stem: "Bạn kể với bạn thân rằng bạn vấp ngã trước mặt mọi người và thấy rất ngượng. Câu nào đúng nghĩa đó?"
+      stem_lang: vi
+      options:
+        - { id: e3a, text: "Das war mir total peinlich!", lang: de }
+        - { id: e7b, text: "Ich war total peinlich!", lang: de }
+        - { id: e1c, text: "Das war mich total peinlich!", lang: de }
+        - { id: e5d, text: "Ich habe mir total geschämt!", lang: de }
+    answer:
+      correct_option_id: e3a
+    explanation:
+      vi: "peinlich mô tả tình huống, người thấy ngượng ở Dativ: Das war mir peinlich. Ich war peinlich nghĩa là \"tôi là người đáng xấu hổ\"; mich là Akkusativ nên sai sau peinlich; sich schämen cần Akkusativ: Ich habe mich geschämt."
+    display_answer: Das war mir total peinlich!

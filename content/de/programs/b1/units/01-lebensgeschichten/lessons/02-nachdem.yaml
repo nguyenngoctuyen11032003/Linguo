@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u01-nachdem
+order_index: 2
+level: b1
+title:
+  vi: Sau khi tôi đã… – Plusquamperfekt (Nachdem ich das Abitur gemacht hatte, …)
+objectives:
+  - vi: Tạo Plusquamperfekt với hatte/war + Partizip II.
+  - vi: Kể hai sự việc quá khứ theo đúng trước – sau bằng nachdem và lùi thì đúng.
+  - vi: Viết vài câu kể chuyện rời quê, di cư, chia tay gia đình.
+estimated_minutes: 19
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b1u01-kindheit]
+items:
+  - item: de:item:b1u01-g-plusquamperfekt
+  - item: de:item:b1u01-g-nachdem
+  - item: de:item:b1u01-auswandern
+  - item: de:item:b1u01-heimat
+  - item: de:item:b1u01-verlassen
+  - item: de:item:b1u01-sich-verabschieden
+  - item: de:item:b1u01-entscheidung
+  - item: de:item:b1u01-mutig
+  - item: de:item:b1u01-ausland
+  - item: de:item:b1u01-fremd
+  - item: de:item:b1u01-abschied
+  - item: de:item:b1u01-grenze
+  - item: de:item:b1u01-zurueckkehren
+  - item: de:item:b1u01-neuanfang
+  - item: de:item:b1u01-schwerfallen
+  - item: de:item:b1u01-sich-einleben
+  - item: de:item:a1u06-g-perfekt-sein
+    role: reuse
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+    role: reuse
+  - item: de:item:a1u07-flughafen
+    role: reuse
+  - item: de:item:b1u01-g-praeteritum-system
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được hai việc trong quá khứ theo đúng thứ tự trước – sau, ví dụ khi kể chuyện rời quê: \"Nachdem ich mich von meiner Familie verabschiedet hatte, flog ich nach Deutschland.\""
+  - type: explain
+    text:
+      vi: "Plusquamperfekt gồm hatte/war (Präteritum của haben/sein) + Partizip II ở cuối câu: ich hatte gelernt, wir waren ausgewandert. Chọn hatte hay war theo đúng quy tắc của Perfekt: động từ chỉ di chuyển hoặc đổi trạng thái (fahren, ankommen, auswandern) và bleiben, sein dùng war; phần lớn động từ còn lại dùng hatte."
+  - type: explain
+    text:
+      vi: "Plusquamperfekt cho thấy một việc đã xảy ra trước một việc khác cũng đã qua, giống \"đã … rồi\" hay \"trước đó đã …\" trong tiếng Việt: Als ich ankam, war der Zug schon abgefahren. Một việc đơn lẻ trong quá khứ thì vẫn dùng Präteritum hoặc Perfekt, dù nó xảy ra rất lâu."
+  - type: explain
+    text:
+      vi: "nachdem (sau khi) mở đầu câu phụ, động từ chia đứng cuối. Việc trong câu nachdem xảy ra trước nên lùi một thì: câu chính ở Präteritum hoặc Perfekt → câu nachdem ở Plusquamperfekt; câu chính ở Präsens → câu nachdem ở Perfekt."
+  - type: explain
+    text:
+      vi: "Khi câu nachdem đứng đầu, cả câu phụ là vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy: Nachdem ich das Abitur gemacht hatte, zog ich nach Hanoi. Đây là quy tắc câu phụ đứng đầu bạn đã gặp với weil và wenn."
+  - type: deep_explain
+    text:
+      vi: "Trong văn nói, đôi khi bạn nghe người Đức dùng Perfekt ở cả hai vế (Nachdem ich gegessen habe, bin ich gegangen), nhưng văn viết chuẩn và đề thi dùng quy tắc lùi thì. Đừng nhầm ba từ: nachdem (liên từ, động từ cuối câu), nach (giới từ + Dativ: nach dem Abitur) và danach (trạng từ \"sau đó\", động từ ở vị trí 2: Danach zog ich nach Hanoi). Với động từ phản thân, đại từ đứng sau chủ ngữ như ở Perfekt: ich hatte mich verabschiedet, wir hatten uns eingelebt. Trong bài, auswandern (ra nước ngoài sống) và zurückkehren (trở về) đều chỉ di chuyển nên dùng war: Sie war schon ausgewandert."
+  - type: example
+    target: Nachdem ich das Abitur gemacht hatte, verließ ich mein Dorf.
+    target_lang: de
+    translation:
+      vi: Sau khi tốt nghiệp phổ thông, tôi rời làng.
+    note:
+      vi: "Câu chính ở Präteritum (verließ) → câu nachdem ở Plusquamperfekt (hatte … gemacht). verließ đứng ngay sau dấu phẩy."
+  - type: example
+    target: Als meine Eltern nach Deutschland auswanderten, hatten sie vorher nie im Ausland gelebt.
+    target_lang: de
+    translation:
+      vi: Khi bố mẹ tôi di cư sang Đức, trước đó họ chưa từng sống ở nước ngoài.
+    note:
+      vi: "Việc sống ở nước ngoài (không xảy ra) được so với mốc di cư, nên dùng Plusquamperfekt: hatten … gelebt."
+  - type: example
+    target: Nachdem wir uns am Flughafen verabschiedet hatten, flog meine Schwester nach Berlin.
+    target_lang: de
+    translation:
+      vi: Sau khi chúng tôi chào tạm biệt nhau ở sân bay, chị tôi bay sang Berlin.
+    note:
+      vi: "sich verabschieden là động từ phản thân: wir hatten uns verabschiedet. Câu chính: flog (Präteritum của fliegen)."
+  - type: example
+    target: Nachdem ich die Prüfung bestanden habe, ziehe ich nach Berlin.
+    target_lang: de
+    translation:
+      vi: Thi đỗ xong tôi sẽ chuyển đến Berlin.
+    note:
+      vi: "Kế hoạch tương lai: câu chính ở Präsens (ziehe) → câu nachdem ở Perfekt (habe … bestanden)."
+  - type: example
+    target: Der Abschied fiel mir schwer, denn ich hatte vorher nie allein gelebt.
+    target_lang: de
+    translation:
+      vi: Tôi thấy chia tay thật khó, vì trước đó tôi chưa từng sống một mình.
+    note:
+      vi: "schwerfallen: người thấy khó ở Dativ (mir). hatte … gelebt xảy ra trước lúc chia tay."
+  - type: common_mistake
+    wrong: Nachdem ich das Abitur machte, zog ich nach Hanoi.
+    right: Nachdem ich das Abitur gemacht hatte, zog ich nach Hanoi.
+    target_lang: de
+    note:
+      vi: "Hai vế cùng thì là sai trong văn viết chuẩn: câu chính ở Präteritum thì câu nachdem phải lùi về Plusquamperfekt."
+  - type: common_mistake
+    wrong: Nachdem ich gegessen, ging ich schlafen.
+    right: Nachdem ich gegessen hatte, ging ich schlafen.
+    target_lang: de
+    note:
+      vi: "Không được bỏ trợ động từ: Partizip II luôn cần hatte/war (hoặc habe/bin) đi kèm."
+  - type: common_mistake
+    wrong: Nachdem ich angekommen hatte, rief ich meine Mutter an.
+    right: Nachdem ich angekommen war, rief ich meine Mutter an.
+    target_lang: de
+    note:
+      vi: "ankommen dùng sein ở Perfekt (ich bin angekommen), nên Plusquamperfekt là ich war angekommen."
+  - type: common_mistake
+    wrong: Nachdem ich das Abitur gemacht hatte, ich zog nach Hanoi.
+    right: Nachdem ich das Abitur gemacht hatte, zog ich nach Hanoi.
+    target_lang: de
+    note:
+      vi: "Câu phụ đứng đầu chiếm vị trí 1, nên động từ zog đứng ngay sau dấu phẩy, chủ ngữ ich đứng sau."
+  - type: summary
+    points:
+      - vi: "Plusquamperfekt = hatte/war + Partizip II: ich hatte gelernt, ich war gefahren."
+      - vi: "Dùng cho việc xảy ra trước một việc khác đã qua (\"đã … rồi\")."
+      - vi: "nachdem + Plusquamperfekt → câu chính Präteritum/Perfekt."
+      - vi: "nachdem + Perfekt → câu chính Präsens."
+      - vi: "Câu nachdem đứng đầu → động từ câu chính ngay sau dấu phẩy."
+      - vi: "nachdem (liên từ) – nach + Dativ (giới từ) – danach (trạng từ, vị trí 2)."
+      - vi: "Từ vựng: auswandern, die Heimat, verlassen, sich verabschieden, die Entscheidung, mutig, im/ins Ausland, fremd."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u01l2-mcq-war-abgefahren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-plusquamperfekt
+    prompt:
+      stem: "Chọn trợ động từ đúng: Als wir am Bahnhof ankamen, ___ der Zug schon abgefahren."
+      stem_lang: vi
+      options:
+        - { id: p4w, text: "war", lang: de }
+        - { id: p9h, text: "hatte", lang: de }
+        - { id: p2i, text: "ist", lang: de }
+        - { id: p7b, text: "hat", lang: de }
+    answer:
+      correct_option_id: p4w
+    explanation:
+      vi: "Tàu chạy trước khi chúng tôi đến, nên dùng Plusquamperfekt. abfahren chỉ di chuyển nên dùng sein → war … abgefahren. hatte/hat sai trợ động từ; ist … abgefahren là Perfekt, không cho thấy việc này xảy ra trước một việc quá khứ khác."
+    display_answer: war
+
+  - key: de:exercise:b1u01l2-mcq-nachdem-satz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-nachdem
+    prompt:
+      stem: "Câu nào đúng trong văn viết chuẩn? (Sau khi thi tốt nghiệp phổ thông, cô ấy chuyển đến Berlin.)"
+      stem_lang: vi
+      options:
+        - { id: n3a, text: "Nachdem sie das Abitur gemacht hatte, zog sie nach Berlin.", lang: de }
+        - { id: n8c, text: "Nachdem sie das Abitur machte, zog sie nach Berlin.", lang: de }
+        - { id: n5e, text: "Nachdem sie das Abitur gemacht hatte, sie zog nach Berlin.", lang: de }
+        - { id: n1g, text: "Nachdem sie das Abitur gemacht, zog sie nach Berlin.", lang: de }
+    answer:
+      correct_option_id: n3a
+    explanation:
+      vi: "Câu chính ở Präteritum (zog) nên câu nachdem lùi về Plusquamperfekt (hatte … gemacht), và zog đứng ngay sau dấu phẩy. Các câu kia: cùng thì ở hai vế, sai vị trí động từ (sie zog), hoặc thiếu trợ động từ hatte."
+    display_answer: "Nachdem sie das Abitur gemacht hatte, zog sie nach Berlin."
+
+  - key: de:exercise:b1u01l2-mcq-was-zuerst
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u01-sich-verabschieden
+    prompt:
+      stem: "\"Nachdem ich mich von meiner Familie verabschiedet hatte, flog ich nach Deutschland.\" – Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: v2a, text: "Tôi chào tạm biệt gia đình trước rồi mới bay sang Đức.", lang: vi }
+        - { id: v6b, text: "Tôi bay sang Đức trước rồi mới chào tạm biệt gia đình.", lang: vi }
+        - { id: v9c, text: "Tôi sẽ chào tạm biệt gia đình rồi bay sang Đức.", lang: vi }
+        - { id: v4d, text: "Gia đình tôi chào tạm biệt tôi rồi bay sang Đức.", lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "Việc trong câu nachdem (hatte … verabschiedet) xảy ra trước, việc ở câu chính (flog) xảy ra sau. Cả hai đều là quá khứ, không phải tương lai; chủ ngữ là ich, không phải gia đình."
+    display_answer: Tôi chào tạm biệt gia đình trước rồi mới bay sang Đức.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u01l2-fill-verabschiedet
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-plusquamperfekt
+    prompt:
+      template: "Nachdem wir uns von allen {{b1}} (verabschieden) hatten, {{b2}} (fahren) wir zum Flughafen. Ich {{b3}} (Hilfsverb, Plusquamperfekt) vorher noch nie geflogen."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [verabschiedet]
+        b2: [fuhren]
+        b3: [war]
+    known_wrong:
+      - answer: geverabschiedet
+        feedback_vi: Động từ có tiền tố ver- không thêm ge- ở Partizip II – verabschiedet.
+        error_tag: verb_form
+      - answer: fahren
+        feedback_vi: Câu chính kể chuyện đã qua nên dùng Präteritum – wir fuhren.
+        error_tag: verb_form
+      - answer: hatte
+        feedback_vi: fliegen chỉ di chuyển nên dùng sein – ich war … geflogen.
+        error_tag: aux_verb
+      - answer: bin
+        feedback_vi: bin … geflogen là Perfekt; ở đây cần Plusquamperfekt để cho thấy việc này xảy ra trước chuyến đi – ich war … geflogen.
+        error_tag: verb_form
+    explanation:
+      vi: "Partizip II của sich verabschieden không có ge- (verabschiedet). Câu chính ở Präteritum: wir fuhren. fliegen dùng sein, và việc này xảy ra trước nên là Plusquamperfekt: ich war … geflogen."
+    display_answer: "Nachdem wir uns von allen verabschiedet hatten, fuhren wir zum Flughafen. Ich war vorher noch nie geflogen."
+
+  - key: de:exercise:b1u01l2-fill-hatte-war
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-plusquamperfekt
+    prompt:
+      template: "Als ich nach Deutschland kam, {{b1}} ich schon ein Jahr Deutsch gelernt. Meine Schwester {{b2}} schon zwei Jahre vorher ausgewandert. (Plusquamperfekt)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [hatte]
+        b2: [war]
+    known_wrong:
+      - answer: habe
+        feedback_vi: Việc học xảy ra trước khi tôi sang Đức (cũng là quá khứ), nên dùng Plusquamperfekt – hatte … gelernt.
+        error_tag: verb_form
+      - answer: ist
+        feedback_vi: ist … ausgewandert là Perfekt; đề yêu cầu Plusquamperfekt cho việc xảy ra trước mốc quá khứ – war … ausgewandert.
+        error_tag: verb_form
+      - answer: hat
+        feedback_vi: auswandern chỉ di chuyển nên dùng sein, và ở Plusquamperfekt là war … ausgewandert.
+        error_tag: aux_verb
+    explanation:
+      vi: "Cả hai việc đều xảy ra trước mốc \"khi tôi sang Đức\" nên dùng Plusquamperfekt. lernen dùng haben → ich hatte gelernt; auswandern chỉ di chuyển nên dùng sein → sie war ausgewandert."
+    display_answer: "Als ich nach Deutschland kam, hatte ich schon ein Jahr Deutsch gelernt. Meine Schwester war schon zwei Jahre vorher ausgewandert."
+
+  - key: de:exercise:b1u01l2-tr-abitur-dorf
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-verlassen
+    prompt:
+      source_text: "Sau khi tốt nghiệp phổ thông (Abitur), tôi rời làng mình. (dùng nachdem)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nachdem ich das Abitur gemacht hatte, verließ ich mein Dorf.
+        - Nachdem ich das Abitur gemacht hatte, habe ich mein Dorf verlassen.
+        - Ich verließ mein Dorf, nachdem ich das Abitur gemacht hatte.
+        - Ich habe mein Dorf verlassen, nachdem ich das Abitur gemacht hatte.
+        - Nachdem ich das Abitur bestanden hatte, verließ ich mein Dorf.
+        - Nachdem ich das Abitur bestanden hatte, habe ich mein Dorf verlassen.
+        - Ich verließ mein Dorf, nachdem ich das Abitur bestanden hatte.
+        - Ich habe mein Dorf verlassen, nachdem ich das Abitur bestanden hatte.
+    known_wrong:
+      - answer: Nachdem ich das Abitur gemacht hatte, ich verließ mein Dorf.
+        feedback_vi: Câu nachdem đứng đầu là vị trí 1, nên verließ đứng ngay sau dấu phẩy – …, verließ ich mein Dorf.
+        error_tag: verb_position
+      - answer: Nachdem ich das Abitur machte, verließ ich mein Dorf.
+        feedback_vi: Việc sau nachdem xảy ra trước nên phải lùi thì – hatte … gemacht.
+        error_tag: verb_form
+      - answer: Nachdem ich das Abitur gemacht habe, verließ ich mein Dorf.
+        feedback_vi: Câu chính ở Präteritum (verließ) thì câu nachdem dùng Plusquamperfekt – hatte … gemacht.
+        error_tag: verb_form
+    explanation:
+      vi: "Tốt nghiệp phổ thông = das Abitur machen (hoặc bestehen). Việc này xảy ra trước nên dùng Plusquamperfekt: hatte … gemacht. Câu chính ở Präteritum (verließ) hoặc Perfekt (habe … verlassen); verlassen đi thẳng với Akkusativ: mein Dorf."
+    display_answer: Nachdem ich das Abitur gemacht hatte, verließ ich mein Dorf.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u01l2-wb-angekommen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-nachdem
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Sau khi đến nơi, tôi gọi điện cho mẹ.\""
+      tokens:
+        - { id: a-rief, text: rief }
+        - { id: a-mutter, text: Mutter }
+        - { id: a-ich1, text: ich }
+        - { id: a-war, text: war }
+        - { id: a-an, text: an }
+        - { id: a-nachdem, text: Nachdem }
+        - { id: a-komma, text: "," }
+        - { id: a-meine, text: meine }
+        - { id: a-angekommen, text: angekommen }
+        - { id: a-ich2, text: ich }
+    answer:
+      orders:
+        - [a-nachdem, a-ich1, a-angekommen, a-war, a-komma, a-rief, a-ich2, a-meine, a-mutter, a-an]
+        - [a-nachdem, a-ich2, a-angekommen, a-war, a-komma, a-rief, a-ich1, a-meine, a-mutter, a-an]
+    explanation:
+      vi: "Trong câu nachdem, động từ chia war đứng cuối, sau Partizip angekommen (ankommen dùng sein). Câu phụ là vị trí 1 nên rief đứng ngay sau dấu phẩy; anrufen là động từ tách nên an đứng cuối câu."
+    display_answer: Nachdem ich angekommen war, rief ich meine Mutter an.
+
+  - key: de:exercise:b1u01l2-tr-ausland
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u01-ausland
+    prompt:
+      source_text: "Trước đó tôi chưa bao giờ sống ở nước ngoài. (dùng Plusquamperfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Vorher hatte ich nie im Ausland gelebt.
+        - Ich hatte vorher nie im Ausland gelebt.
+        - Vorher hatte ich noch nie im Ausland gelebt.
+        - Ich hatte vorher noch nie im Ausland gelebt.
+        - Davor hatte ich nie im Ausland gelebt.
+        - Ich hatte davor nie im Ausland gelebt.
+        - Davor hatte ich noch nie im Ausland gelebt.
+        - Ich hatte davor noch nie im Ausland gelebt.
+        - Vorher hatte ich nie im Ausland gewohnt.
+        - Ich hatte vorher nie im Ausland gewohnt.
+        - Vorher hatte ich noch nie im Ausland gewohnt.
+        - Ich hatte vorher noch nie im Ausland gewohnt.
+    known_wrong:
+      - answer: Vorher ich hatte nie im Ausland gelebt.
+        feedback_vi: Vorher ở vị trí 1 thì hatte phải ở vị trí 2 – Vorher hatte ich …
+        error_tag: verb_position
+      - answer: Vorher war ich nie im Ausland gelebt.
+        feedback_vi: leben không chỉ di chuyển nên dùng haben – ich hatte … gelebt.
+        error_tag: aux_verb
+      - answer: Vorher hatte ich nie in Ausland gelebt.
+        feedback_vi: das Ausland cần mạo từ – im Ausland (in dem), ở nước ngoài.
+        error_tag: article
+    explanation:
+      vi: "Plusquamperfekt: hatte + Partizip II (gelebt) ở cuối câu; leben dùng haben. Ở nước ngoài = im Ausland (Wo?). vorher/davor ở đầu câu thì hatte đứng ở vị trí 2."
+    display_answer: Vorher hatte ich nie im Ausland gelebt.
+
+  - key: de:exercise:b1u01l2-tr-schwester
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u01-g-plusquamperfekt
+    prompt:
+      source_text: Als ich nach Deutschland kam, hatte meine Schwester schon zwei Jahre dort gelebt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi tôi sang Đức, chị tôi đã sống ở đó hai năm rồi.
+        - Khi tôi sang Đức, chị tôi đã sống ở đó được hai năm.
+        - Khi tôi sang Đức, chị tôi đã sống ở đó hai năm.
+        - Khi tôi sang Đức, em gái tôi đã sống ở đó hai năm rồi.
+        - Khi tôi sang Đức, em gái tôi đã sống ở đó được hai năm.
+        - Khi tôi sang Đức, em gái tôi đã sống ở đó hai năm.
+        - Khi tôi đến Đức, chị tôi đã sống ở đó hai năm rồi.
+        - Khi tôi đến Đức, em gái tôi đã sống ở đó hai năm rồi.
+        - Lúc tôi sang Đức, chị tôi đã sống ở đó hai năm rồi.
+        - Lúc tôi sang Đức, em gái tôi đã sống ở đó hai năm rồi.
+        - Khi tôi sang Đức thì chị tôi đã sống ở đó hai năm rồi.
+        - Khi tôi sang Đức thì em gái tôi đã sống ở đó hai năm rồi.
+        - Khi tôi sang Đức, chị gái tôi đã sống ở đó hai năm rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi tôi sang Đức, chị tôi sẽ sống ở đó hai năm.
+        feedback_vi: hatte … gelebt là Plusquamperfekt – việc đã xảy ra trước đó, không phải tương lai.
+        error_tag: meaning
+    explanation:
+      vi: "hatte … gelebt là Plusquamperfekt: chị/em gái đã sống ở Đức hai năm trước lúc tôi đến. die Schwester có thể là chị hoặc em gái; dort = ở đó."
+    display_answer: Khi tôi sang Đức, chị tôi đã sống ở đó hai năm rồi.

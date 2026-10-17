@@ -1,0 +1,3 @@
+# Allow-list của unit B1U01 (Lebensgeschichten): tên riêng và từ đúng mà từ điển offline thiếu.
+# Princeton: thành phố ở Mỹ, nơi Albert Einstein sống từ năm 1933 (bài đọc L5).
+Princeton
