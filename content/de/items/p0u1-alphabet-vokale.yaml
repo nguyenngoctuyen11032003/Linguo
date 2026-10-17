@@ -24,11 +24,11 @@ items:
         - target: "Taxi: T, A, X, I"
           translation:
             vi: "taxi: tê – a – íks – i"
-        - target: "Zoo: Z, Doppel-O"
+        - target: "Tennis: T, E, Doppel-N, I, S"
           translation:
-            vi: "sở thú: txét – hai chữ ô"
+            vi: "quần vợt: tê – ê – hai chữ en – i – ét"
       pronunciation_note:
-        vi: "Phần lớn tên chữ có âm ê dài ở cuối (Be, Ce, De, Ge, Pe, Te, We) hoặc âm e ngắn ở đầu (Ef, El, Em, En, Er, Es). Ä, Ö, Ü được gọi bằng chính âm của chúng (ä như \"e\" kéo dài; ö và ü là âm tròn môi, học ở bài 3), không gọi là \"a có hai chấm\"."
+        vi: "Phần lớn tên chữ có âm ê dài ở cuối (Be, Ce, De, Ge, Pe, Te, We) hoặc âm e ngắn ở đầu (Ef, El, Em, En, Er, Es). Ä, Ö, Ü thường được gọi bằng chính âm của chúng (ä như \"e\" kéo dài; ö và ü là âm tròn môi, học ở bài 3); khi đánh vần người Đức cũng hay nói \"A-Umlaut\", \"O-Umlaut\", \"U-Umlaut\"."
       confusion:
         vi: "Đừng đọc tên chữ theo tiếng Anh: J không phải \"giây\", E không phải \"i\", I không phải \"ai\", Y không phải \"oai\" (tiếng Đức gọi là Ypsilon)."
 
@@ -168,7 +168,7 @@ items:
           translation:
             vi: em bé của Anna
       pronunciation_note:
-        vi: "Đọc là BÊ-bi (e dài như \"ê\"), không đọc \"bây-bi\" kiểu tiếng Anh."
+        vi: "Người Đức thường đọc là BÊ-bi (e dài như \"ê\"); cách đọc \"bây-bi\" kiểu tiếng Anh ít gặp hơn."
 
   - key: de:item:p0u1-tee
     type: vocab
@@ -183,9 +183,9 @@ items:
       meaning:
         vi: trà
       examples:
-        - target: "Ein Tee, bitte!"
+        - target: Tee aus China
           translation:
-            vi: Cho tôi một tách trà!
+            vi: trà Trung Quốc
       pronunciation_note:
         vi: "Hai chữ e viết liền là một âm \"ê\" kéo dài: \"têê\", không đọc thành hai âm."
 
@@ -208,7 +208,7 @@ items:
       pronunciation_note:
         vi: "o dài như \"ô\": CÔ-la."
       confusion:
-        vi: "Ở miền Nam nước Đức và ở Áo người ta hay nói das Cola; ở Đức chuẩn là die Cola."
+        vi: "Phần lớn nước Đức nói die Cola; ở miền Nam nước Đức, Áo và Thụy Sĩ cũng hay nói das Cola."
 
   - key: de:item:p0u1-kamera
     type: vocab
@@ -229,24 +229,24 @@ items:
       pronunciation_note:
         vi: "Trọng âm ở âm tiết đầu: CA-mơ-ra; e ở giữa đọc rất nhẹ như \"ơ\"."
 
-  - key: de:item:p0u1-zoo
+  - key: de:item:p0u1-tennis
     type: vocab
     level: pre_a1
     difficulty: 1
     skill_tags: [pronunciation]
     front:
-      text: "der Zoo, -s"
-      ipa: /tsoː/
+      text: "das Tennis (Sg.)"
+      ipa: /ˈtɛnɪs/
       pos: danh từ
     back:
       meaning:
-        vi: sở thú, vườn bách thú
+        vi: quần vợt, tennis
       examples:
-        - target: der Zoo in Berlin
+        - target: Tennis und Fußball
           translation:
-            vi: sở thú ở Berlin
+            vi: quần vợt và bóng đá
       pronunciation_note:
-        vi: "z đọc là \"ts\", oo là \"ô\" dài: \"txôô\". Không đọc \"zu\" như tiếng Anh."
+        vi: "Trọng âm ở âm tiết đầu: TEN-nix; e ngắn vì có nn. Khi đánh vần nói \"T, E, Doppel-N, I, S\"."
 
   # ---------------- bài 2: nguyên âm dài và ngắn ----------------
   - key: de:item:p0u1-g-vokallaenge
@@ -350,7 +350,7 @@ items:
           translation:
             vi: một cái hồ ở bang Bayern
       pronunciation_note:
-        vi: "s đầu từ đọc như \"d\" nhẹ (giọng Bắc), ee là \"ê\" dài: \"dêê\". Số nhiều die Seen đọc \"dê-ừn\"."
+        vi: "s đầu từ đọc như \"d\" nhẹ (giọng Bắc), ee là \"ê\" dài: \"dêê\". Số nhiều die Seen đọc \"dê-ơn\"."
       confusion:
         vi: "die See (giống cái) nghĩa là biển; der See (giống đực) là hồ."
 
@@ -736,7 +736,7 @@ items:
           translation:
             vi: "hôm nay, mọi người, mệt – e cuối đều đọc nhẹ như \"ơ\""
       pronunciation_note:
-        vi: "Trọng âm của các từ này luôn ở âm tiết đầu; âm tiết cuối có -e hoặc -er đọc lướt, nhỏ và ngắn."
+        vi: "Ở các từ này trọng âm nằm ở âm tiết đầu; âm tiết cuối có -e hoặc -er đọc lướt, nhỏ và ngắn."
 
   - key: de:item:p0u1-ei
     type: vocab
@@ -869,7 +869,7 @@ items:
           translation:
             vi: Ông Weber là giáo viên.
       pronunciation_note:
-        vi: "eh là \"ê\" dài; -er cuối như \"a\" nhẹ: LÊ-ra, không đọc \"lê-rơ-rơ\"."
+        vi: "eh là \"ê\" dài; -er cuối như \"a\" nhẹ: LÊ-ra, không đọc rõ thành \"lê-re-rơ\"."
 
   - key: de:item:p0u1-zeit
     type: vocab

@@ -54,7 +54,7 @@ body:
     translation:
       vi: "đã, rồi – đẹp"
     note:
-      vi: "schon có o ngắn, môi tròn như \"ô\"; schön có ö dài, lưỡi như \"ê\" mà môi tròn. Hai từ khác nghĩa hoàn toàn."
+      vi: "Cả hai đều có nguyên âm dài: schon có o như \"ô\" (lưỡi lùi về sau); schön có ö, lưỡi đưa ra trước như \"ê\" mà môi vẫn tròn. Hai từ khác nghĩa hoàn toàn."
   - type: example
     target: "die Tour – die Tür"
     target_lang: de
@@ -126,7 +126,7 @@ exercises:
     answer:
       correct_option_id: g5r
     explanation:
-      vi: "Bạn nghe một âm dài, lưỡi ở vị trí \"ê\" nhưng môi tròn: đó là ö trong schön (đẹp). schon (đã, rồi) có o ngắn, nghe như \"ô\" gọn."
+      vi: "Bạn nghe một âm dài, lưỡi ở vị trí \"ê\" nhưng môi tròn: đó là ö trong schön (đẹp). schon (đã, rồi) có o thường, nghe như \"ô\" của tiếng Việt."
     display_answer: schön
 
   - key: de:exercise:p0u1l3-listen-tuer-tour

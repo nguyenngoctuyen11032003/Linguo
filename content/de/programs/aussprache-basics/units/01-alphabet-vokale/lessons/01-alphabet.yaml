@@ -27,11 +27,11 @@ items:
   - item: de:item:p0u1-tee
   - item: de:item:p0u1-cola
   - item: de:item:p0u1-kamera
-  - item: de:item:p0u1-zoo
+  - item: de:item:p0u1-tennis
 body:
   - type: objective
     text:
-      vi: Sau bài này, bạn đọc được bảng chữ cái tiếng Đức, đánh vần được tên mình và viết lại được những từ quốc tế như Taxi, Pizza, Zoo khi nghe người khác đánh vần.
+      vi: Sau bài này, bạn đọc được bảng chữ cái tiếng Đức, đánh vần được tên mình và viết lại được những từ quốc tế như Taxi, Pizza, Tennis khi nghe người khác đánh vần.
   - type: explain
     text:
       vi: "Tiếng Đức có 26 chữ cái giống tiếng Anh, thêm ba chữ có hai chấm ä, ö, ü và chữ ß. Tên chữ đọc theo kiểu Đức, gần với cách gọi chữ cái tiếng Việt hơn là tiếng Anh: A \"a\", B \"bê\", D \"đê\", E \"ê\", I \"i\", O \"ô\", U \"u\"."
@@ -43,10 +43,10 @@ body:
       vi: "Khi đánh vần, bạn đọc lần lượt tên từng chữ: Taxi là T, A, X, I. Chữ đầu viết hoa thì nói thêm \"großes\" (großes N), hai chữ giống nhau liền nhau thì nói \"Doppel-\" (Doppel-Z trong Pizza). Muốn hỏi một từ viết thế nào, bạn nói \"Wie schreibt man das?\"."
   - type: explain
     text:
-      vi: "Các từ quốc tế trong bài (Taxi, Hotel, Bus, Radio, Pizza, Baby, Tee, Cola, Kamera, Zoo) bạn đã biết nghĩa, nhưng tiếng Đức đọc khác tiếng Anh. Baby là \"BÊ-bi\", Zoo là \"txôô\", Pizza là \"PÍT-xa\": cứ đọc đúng từng chữ theo kiểu Đức là gần đúng."
+      vi: "Các từ quốc tế trong bài (Taxi, Hotel, Bus, Radio, Pizza, Baby, Tee, Cola, Kamera, Tennis) bạn đã biết nghĩa, nhưng tiếng Đức đọc khác tiếng Anh. Baby là \"BÊ-bi\", Hotel là \"hô-TEL\", Pizza là \"PÍT-xa\": cứ đọc đúng từng chữ theo kiểu Đức là gần đúng."
   - type: deep_explain
     text:
-      vi: "Người Đức đánh vần rất thường xuyên: khi đặt bàn, đặt phòng khách sạn, gọi điện cho cơ quan. Qua điện thoại họ hay đánh vần kèm một từ quen, ví dụ \"A wie Anton\" (A như trong Anton), để người nghe khỏi nhầm B với P hay D với T. Ở Thụy Sĩ không dùng ß mà luôn viết ss; ở Đức và Áo ß vẫn là chữ chuẩn."
+      vi: "Người Đức đánh vần rất thường xuyên: khi đặt bàn, đặt phòng khách sạn, gọi điện cho cơ quan. Qua điện thoại họ hay đánh vần kèm một từ quen, ví dụ \"A wie Anton\" (A như trong Anton; bảng đánh vần chuẩn mới dùng tên thành phố: \"A wie Aachen\"), để người nghe khỏi nhầm B với P hay D với T. Ở Thụy Sĩ không dùng ß mà luôn viết ss; ở Đức và Áo ß vẫn là chữ chuẩn."
   - type: example
     target: "Taxi: T, A, X, I"
     target_lang: de
@@ -69,10 +69,10 @@ body:
     note:
       vi: "Tên riêng viết hoa chữ đầu, nên khi đánh vần tên người Đức hay nói \"großes A\"."
   - type: example
-    target: "Wie schreibt man das? – Z, Doppel-O."
+    target: "Wie schreibt man das? – T, E, Doppel-N, I, S."
     target_lang: de
     translation:
-      vi: "Từ đó viết thế nào? – Txét, hai chữ ô (Zoo)."
+      vi: "Từ đó viết thế nào? – Tê, ê, hai chữ en, i, ét (Tennis)."
     note:
       vi: "Câu hỏi dùng man (người ta) nên hỏi được cả người lạ lẫn bạn bè, không cần chọn du hay Sie."
   - type: common_mistake
@@ -105,7 +105,7 @@ body:
       - vi: "ß tên là Eszett, đọc như s; ở Thụy Sĩ viết ss."
       - vi: "Đánh vần: đọc tên từng chữ; chữ hoa → großes …; hai chữ giống nhau → Doppel-…"
       - vi: "Hỏi cách viết: Wie schreibt man das?"
-      - vi: "Từ quốc tế đọc theo chữ kiểu Đức: Baby \"BÊ-bi\", Zoo \"txôô\", Pizza \"PÍT-xa\"."
+      - vi: "Từ quốc tế đọc theo chữ kiểu Đức: Baby \"BÊ-bi\", Hotel \"hô-TEL\", Pizza \"PÍT-xa\"."
 exercises:
   # ---------------- recognition ----------------
   - key: de:exercise:p0u1l1-mcq-buchstabe-j
@@ -145,7 +145,7 @@ exercises:
     answer:
       correct_option_id: r3t
     explanation:
-      vi: "Chữ V tên là Vau, đọc \"phao\". W tên là \"vê\", F là \"ép\", P là \"pê\" - không chữ nào trong số đó đọc là \"phao\"."
+      vi: "Chữ V tên là Vau, đọc \"phao\". W tên là \"vê\", F là Ef, P là \"pê\" - không chữ nào trong số đó đọc là \"phao\"."
     display_answer: V
 
   - key: de:exercise:p0u1l1-listen-kamera
@@ -212,29 +212,29 @@ exercises:
       vi: "Khách sạn là das Hotel: ha – ô – tê – ê – el. Từ này giống tiếng Anh nhưng đọc kiểu Đức hô-TEL, với o như \"ô\"; chữ a và u là chữ thừa."
     display_answer: Hotel
 
-  - key: de:exercise:p0u1l1-fill-zoo
+  - key: de:exercise:p0u1l1-fill-tennis
     type: fill_blank
     stage: recall
     answer_lang: de
     difficulty: 1
-    item: de:item:p0u1-zoo
+    item: de:item:p0u1-tennis
     prompt:
-      template: "Z, Doppel-O → {{b1}}"
+      template: "T, E, Doppel-N, I, S → {{b1}}"
       blanks:
-        - { id: b1, width_hint: 6 }
+        - { id: b1, width_hint: 8 }
     answer:
       blanks:
-        b1: [Zoo, der Zoo]
+        b1: [Tennis, das Tennis]
     known_wrong:
-      - answer: Zo
-        feedback_vi: "Doppel-O là hai chữ o liền nhau, nên phải viết Zoo."
+      - answer: Tenis
+        feedback_vi: "Doppel-N là hai chữ n liền nhau, nên phải viết Tennis."
         error_tag: double_letter
-      - answer: Tso
-        feedback_vi: "Âm \"ts\" ở đầu từ là chữ Z (Zett), và Doppel-O là hai chữ o: Zoo."
+      - answer: Tennix
+        feedback_vi: "Chữ cuối được đánh vần là S (\"ét\"), không phải X (\"íks\"): Tennis."
         error_tag: spelling
     explanation:
-      vi: "Z là \"txét\", Doppel-O là hai chữ o, nên từ được đánh vần là Zoo (sở thú). Chữ z tiếng Đức đọc là \"ts\": Zoo đọc \"txôô\"."
-    display_answer: Zoo
+      vi: "T, E, hai chữ n, I, S ghép lại thành Tennis (quần vợt). e đứng trước nn nên đọc ngắn: TEN-nix."
+    display_answer: Tennis
 
   - key: de:exercise:p0u1l1-fill-pizza
     type: fill_blank

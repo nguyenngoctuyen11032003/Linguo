@@ -48,7 +48,7 @@ body:
       vi: "Chữ e ở cuối từ, không mang trọng âm, đọc rất nhẹ như \"ơ\": heute (HOI-tơ), die Leute. Đuôi -er cuối từ đọc như \"a\" nhẹ và ngắn, không rung r: der Lehrer (LÊ-ra), der Teller (TEL-la)."
   - type: deep_explain
     text:
-      vi: "Âm \"ơ\" nhẹ (IPA /ə/) và \"a\" nhẹ của -er (IPA /ɐ/) xuất hiện rất nhiều, vì nhiều đuôi từ tiếng Đức là -e, -en, -er. Đọc chúng to và rõ (\"lê-rơ\", \"hoi-tê\") là dấu hiệu giọng nước ngoài dễ nhận nhất. Hãy nhấn rõ âm tiết đầu và đọc lướt, nhỏ, ngắn âm tiết cuối."
+      vi: "Âm \"ơ\" nhẹ (IPA /ə/) và \"a\" nhẹ của -er (IPA /ɐ/) xuất hiện rất nhiều, vì nhiều đuôi từ tiếng Đức là -e, -en, -er. Đọc chúng to và rõ (\"lê-re-rơ\", \"hoi-tê\") là dấu hiệu giọng nước ngoài dễ nhận nhất. Hãy nhấn rõ âm tiết đầu và đọc lướt, nhỏ, ngắn âm tiết cuối."
   - type: example
     target: "das Ei – die Zeit"
     target_lang: de
@@ -97,7 +97,7 @@ body:
     note:
       vi: "eu đọc như \"oi\", không phải \"ê-u\"; e cuối đọc nhẹ như \"ơ\", không phải \"ê\": HOI-tơ."
   - type: common_mistake
-    wrong: "lê-rơ-rơ"
+    wrong: "lê-re-rơ"
     right: "Lehrer"
     target_lang: de
     note:
