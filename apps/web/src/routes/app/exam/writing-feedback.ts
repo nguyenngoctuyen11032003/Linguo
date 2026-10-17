@@ -14,6 +14,7 @@ type ReviewItem = ExamResult['review'][number];
 export function writingFeedbackLevel(result: Pick<ExamResult, 'family' | 'cefr_sections'>): string {
   if (result.family === 'cefr') return result.cefr_sections?.[0]?.level_code ?? 'a2';
   if (result.family === 'jlpt') return 'n3';
+  if (result.family === 'goethe') return result.cefr_sections?.[0]?.level_code ?? 'b1';
   return result.family === 'topik_i' ? 'topik2' : 'topik4';
 }
 

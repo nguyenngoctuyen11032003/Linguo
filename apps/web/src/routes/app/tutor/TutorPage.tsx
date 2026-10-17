@@ -52,8 +52,9 @@ const CONCEPT_PLACEHOLDER = {
   en: 'Ví dụ: khi nào dùng present perfect?',
   ko: 'Ví dụ: khác nhau giữa 은/는 và 이/가',
   ja: 'Ví dụ: khác nhau giữa は và が',
+  de: 'Ví dụ: khi nào dùng Akkusativ và Dativ?',
 } as const;
-const SENTENCE_PLACEHOLDER = { en: 'Ví dụ: I have lived here for two years.', ko: 'Ví dụ: 저는 학생이에요.', ja: 'Ví dụ: 私は学生です。' } as const;
+const SENTENCE_PLACEHOLDER = { en: 'Ví dụ: I have lived here for two years.', ko: 'Ví dụ: 저는 학생이에요.', ja: 'Ví dụ: 私は学生です。', de: 'Ví dụ: Ich wohne seit zwei Jahren hier.' } as const;
 
 interface HistoryEntry {
   key: string;
@@ -202,13 +203,13 @@ function ResultCard({
   titleLang,
 }: {
   entry: HistoryEntry;
-  language: 'en' | 'ko' | 'ja';
+  language: 'en' | 'ko' | 'ja' | 'de';
   latest: boolean;
   actions: ReactNode;
   /** Receives focus when this answer arrives (latest card only). */
   headingRef?: Ref<HTMLHeadingElement>;
   /** Language of the title when it is the learner's own target-language text. */
-  titleLang?: 'en' | 'ko' | 'ja';
+  titleLang?: 'en' | 'ko' | 'ja' | 'de';
 }) {
   const content = (
     <div className="space-y-4">
@@ -252,7 +253,7 @@ function ResultCard({
 }
 
 interface PanelProps {
-  language: 'en' | 'ko' | 'ja';
+  language: 'en' | 'ko' | 'ja' | 'de';
   level: string;
   notice: ReturnType<typeof useAiNotice>;
   quota: AiQuota | null;
@@ -277,7 +278,7 @@ function TutorPanel({
   loadingLabel: string;
   form: ReactNode;
   extraActions?: (entry: HistoryEntry) => ReactNode;
-  titleLang?: 'en' | 'ko' | 'ja';
+  titleLang?: 'en' | 'ko' | 'ja' | 'de';
 }) {
   const { reduceMotion } = useMotionPrefs();
   const latestHeading = useRef<HTMLHeadingElement>(null);

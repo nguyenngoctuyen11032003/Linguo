@@ -94,6 +94,7 @@ export function ForeignText({ children, course = null }: ForeignTextProps): Reac
     en: useVoiceAvailable('en'),
     ko: useVoiceAvailable('ko'),
     ja: useVoiceAvailable('ja'),
+    de: useVoiceAvailable('de'),
   };
   const parts: Segment[] = [];
   for (const seg of segments(children, course)) {

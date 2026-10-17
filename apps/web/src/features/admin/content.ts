@@ -29,9 +29,9 @@ export const CONTENT_STATUS_LABELS_VI: Record<ContentStatus, string> = {
   archived: 'Đã lưu trữ',
 };
 
-export const CONTENT_LANGUAGES = ['en', 'ko', 'ja'] as const;
+export const CONTENT_LANGUAGES = ['en', 'ko', 'ja', 'de'] as const;
 export type ContentLanguage = (typeof CONTENT_LANGUAGES)[number];
-export const CONTENT_LANGUAGE_LABELS_VI: Record<ContentLanguage, string> = { en: 'Tiếng Anh', ko: 'Tiếng Hàn', ja: 'Tiếng Nhật' };
+export const CONTENT_LANGUAGE_LABELS_VI: Record<ContentLanguage, string> = { en: 'Tiếng Anh', ko: 'Tiếng Hàn', ja: 'Tiếng Nhật', de: 'Tiếng Đức' };
 
 export function isContentLanguage(value: string | null | undefined): value is ContentLanguage {
   return (CONTENT_LANGUAGES as readonly (string | null | undefined)[]).includes(value);

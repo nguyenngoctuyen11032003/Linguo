@@ -5,6 +5,7 @@ const DESCRIPTIONS: Record<LanguageCode, string> = {
   en: 'Từ nền tảng tới CEFR C2: giao tiếp, công việc, đọc tài liệu.',
   ko: 'Từ bảng chữ Hangul tới TOPIK II: giao tiếp, du học, công việc.',
   ja: 'Từ Hiragana, Katakana tới JLPT N1: giao tiếp, du học, công việc.',
+  de: 'Từ phát âm và chữ cái tới CEFR B2: giao tiếp, du học, công việc, thi Goethe.',
 };
 
 interface Props {

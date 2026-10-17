@@ -96,7 +96,7 @@ describe('levels: Japanese (JLPT)', () => {
 
 describe('levels: content ceiling', () => {
   it('has content on the whole scale of every language, Japanese included (N2/N1 shipped)', () => {
-    expect(CONTENT_MAX_LEVEL).toEqual({ en: 'c2', ko: 'topik6', ja: 'n1' });
+    expect(CONTENT_MAX_LEVEL).toEqual({ en: 'c2', ko: 'topik6', ja: 'n1', de: 'pre_a1' });
     expect(availableLevels('ja')).toEqual([...LEVELS.ja]);
     expect(availableLevels('en')).toEqual([...LEVELS.en]);
     expect(availableLevels('ko')).toEqual([...LEVELS.ko]);

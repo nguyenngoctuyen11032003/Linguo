@@ -15,7 +15,7 @@ export type KeyConfidence = (typeof KEY_CONFIDENCES)[number];
 /** Minimum items per skill × level × language (spec 4 plan, task D5). */
 export const DIAGNOSTIC_MIN_ITEMS_PER_CELL = 5;
 /** Option languages: Vietnamese or a target language. */
-export const DIAGNOSTIC_TEXT_LANGS = ['en', 'ko', 'ja', 'vi'] as const;
+export const DIAGNOSTIC_TEXT_LANGS = ['en', 'ko', 'ja', 'de', 'vi'] as const;
 
 const text = z.string().trim().min(1);
 

@@ -15,6 +15,7 @@ export const CLASS_LANGUAGE_LABELS: Record<ClassLanguage, string> = {
   en: 'Tiếng Anh',
   ko: 'Tiếng Hàn',
   ja: 'Tiếng Nhật',
+  de: 'Tiếng Đức',
 };
 
 export const ASSIGNMENT_KIND_LABELS: Record<AssignmentKind, string> = {

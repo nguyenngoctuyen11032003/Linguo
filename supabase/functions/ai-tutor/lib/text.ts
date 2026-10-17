@@ -110,7 +110,7 @@ export function repairPrompt(schema: Record<string, unknown>, badText: string): 
 }
 
 export interface SanitizeOptions {
-  language: 'en' | 'ko' | 'ja';
+  language: 'en' | 'ko' | 'ja' | 'de';
   /** Maximum length (in code points) of any string; defaults to 2000. */
   maxStringLength?: number;
   /** Maximum array length; defaults to 20. */

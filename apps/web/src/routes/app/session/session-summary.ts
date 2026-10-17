@@ -27,7 +27,7 @@ export function sessionSummaryFallback(session: StudySession): { title: string; 
  */
 export function buildSessionSummaryRequest(
   session: StudySession,
-  learner: { language: 'en' | 'ko' | 'ja'; level: string },
+  learner: { language: 'en' | 'ko' | 'ja' | 'de'; level: string },
   mistakes: readonly SessionMistake[],
 ): Extract<SummarizeSessionRequestInput, { task: 'summarize_session' }> {
   const activities = session.plan.activities.slice(0, SESSION_SUMMARY_MAX_ACTIVITIES).map((a) => ({

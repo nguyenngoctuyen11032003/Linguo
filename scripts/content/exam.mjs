@@ -13,7 +13,7 @@ const DOLLAR_TAG = '$exam$';
 const q = (s) => JSON.stringify(s);
 
 /** Exam family → language of its forms. */
-export const FAMILY_LANGUAGE = { topik_i: 'ko', topik_ii: 'ko', cefr: 'en', jlpt: 'ja' };
+export const FAMILY_LANGUAGE = { topik_i: 'ko', topik_ii: 'ko', cefr: 'en', jlpt: 'ja', goethe: 'de' };
 
 /** Comparison form of an option text: NFC, case-folded, single spaces. */
 const norm = (s) => s.normalize('NFC').trim().toLowerCase().replace(/\s+/g, ' ');

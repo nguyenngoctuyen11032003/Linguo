@@ -9,7 +9,7 @@ import { buildSessionSummaryRequest, sessionSummaryFallback } from './session-su
 
 interface Props {
   session: StudySession;
-  learner: { language: 'en' | 'ko' | 'ja'; level: string };
+  learner: { language: 'en' | 'ko' | 'ja' | 'de'; level: string };
 }
 
 /** "Tóm tắt phiên bằng AI" on the completion screen: asks summarize_session with a compact, client-built summary. */

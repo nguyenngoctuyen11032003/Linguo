@@ -78,7 +78,7 @@ function parsePrompt(exercise: PublicExercise): Parsed | null {
   }
 }
 
-const LANG_NAMES: Record<AnswerLang, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật', vi: 'tiếng Việt' };
+const LANG_NAMES: Record<AnswerLang, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật', de: 'tiếng Đức', vi: 'tiếng Việt' };
 const STAGE_LABELS: Record<ExerciseStage, string> = { recognition: 'Nhận biết', recall: 'Nhớ lại', application: 'Vận dụng' };
 
 function instructionFor(parsed: Parsed, answerLang: AnswerLang): string {
@@ -251,6 +251,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
       body = (
         <ListenExercise
           prompt={parsed.prompt}
+          lang={ai?.language}
           seed={exercise.id}
           selectedId={selectedId}
           onSelect={pick}

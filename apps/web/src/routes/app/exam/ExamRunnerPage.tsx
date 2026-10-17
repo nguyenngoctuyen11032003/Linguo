@@ -40,7 +40,7 @@ function playAsset(assetId: string, onStarted: () => void): Promise<boolean> {
 }
 
 /** TTS availability for the attempt language; voices can load after the first render. */
-function useVoice(lang: 'en' | 'ko' | 'ja'): boolean {
+function useVoice(lang: 'en' | 'ko' | 'ja' | 'de'): boolean {
   const [ready, setReady] = useState(() => canSpeak(lang));
   useEffect(() => {
     const update = () => setReady(canSpeak(lang));

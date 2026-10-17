@@ -7,15 +7,15 @@ export const SLOW_RATE = 0.7;
 /** Hiragana, katakana (incl. phonetic extensions and half-width forms) and CJK unified ideographs (kanji). */
 export const JAPANESE_SCRIPT_RE = /[぀-ヿㇰ-ㇿ一-鿿ｦ-ﾟ]/;
 
-/** Hangul means Korean; kana or kanji means Japanese; everything else the app teaches is English. */
+/** Hangul means Korean; kana or kanji means Japanese; Latin script is English unless the caller says German (the script alone cannot tell). */
 export function detectScriptLang(text: string): TtsLanguage {
   if (/[ᄀ-ᇿㄱ-ㆎ가-힣]/.test(text)) return 'ko';
   return JAPANESE_SCRIPT_RE.test(text) ? 'ja' : 'en';
 }
 
-/** `en`/`ko`/`ja` pass through; Vietnamese and anything unknown is not read aloud. */
+/** `en`/`ko`/`ja`/`de` pass through; Vietnamese and anything unknown is not read aloud. */
 export function toTtsLanguage(lang: string | null | undefined): TtsLanguage | null {
-  return lang === 'en' || lang === 'ko' || lang === 'ja' ? lang : null;
+  return lang === 'en' || lang === 'ko' || lang === 'ja' || lang === 'de' ? lang : null;
 }
 
 /** The language of a lesson's foreign text, taken from its example / mistake blocks. */

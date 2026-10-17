@@ -11,7 +11,7 @@ import { PERSONAL_LANGUAGES } from './personal-vocab/contract';
 // Japanese is the third learnable language, offered since content/ja (kana–N1 programs, diagnostic bank, JLPT N5–N1 mocks) shipped.
 describe('Japanese (ja) plumbing', () => {
   it('is a known language that learners can pick', () => {
-    expect(LANGUAGE_CODES).toEqual(['en', 'ko', 'ja']);
+    expect(LANGUAGE_CODES).toEqual(['en', 'ko', 'ja', 'de']);
     expect(LANGUAGES.ja).toEqual({ code: 'ja', short: 'JA', nameVi: 'Tiếng Nhật', nativeName: '日本語', available: true });
     expect(isLanguageAvailable('ja')).toBe(true);
     expect(AVAILABLE_LANGUAGE_CODES).toEqual(['en', 'ko', 'ja']);

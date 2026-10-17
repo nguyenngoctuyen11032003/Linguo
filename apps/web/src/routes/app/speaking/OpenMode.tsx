@@ -16,7 +16,7 @@ interface Props {
 }
 
 const HELP_SHOWN = 3;
-const LANGUAGE_NAME: Record<SpeakingLanguage, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
+const LANGUAGE_NAME: Record<SpeakingLanguage, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật', de: 'tiếng Đức' };
 
 /** "Trả lời mở": a question in Vietnamese, the learner answers freely in the target language. */
 export function OpenMode({ lang, lessonTitle, helpSentences, transcribe, onSaveReflection }: Props) {

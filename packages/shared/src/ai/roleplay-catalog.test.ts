@@ -10,6 +10,7 @@ import {
   type RoleplayLanguage,
 } from './roleplay-catalog';
 
+// de joins once its scenarios exist (German plan, phase 4).
 const LANGS: RoleplayLanguage[] = ['en', 'ko', 'ja'];
 
 describe('roleplay catalog integrity', () => {
@@ -63,7 +64,7 @@ describe('roleplay catalog integrity', () => {
   });
 
   it('level scales mirror the learning levels of every language', () => {
-    expect(ROLEPLAY_LEVELS).toEqual({ en: [...LEVELS.en], ko: [...LEVELS.ko], ja: [...LEVELS.ja] });
+    expect(ROLEPLAY_LEVELS).toEqual({ en: [...LEVELS.en], ko: [...LEVELS.ko], ja: [...LEVELS.ja], de: [...LEVELS.de] });
   });
 
   it('ja mirrors ko: same scenario keys, goal keys and level spread (same ordinal positions)', () => {

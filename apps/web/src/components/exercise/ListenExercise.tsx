@@ -2,12 +2,12 @@ import { useId, useState } from 'react';
 import type { ListenPrompt } from '@linguo/shared';
 import { ContentAudio } from '@/features/audio/ContentAudio';
 import { ChoiceGroup } from './ChoiceGroup';
-import { detectScriptLang } from './machine-speech';
+import { detectScriptLang, toTtsLanguage } from './machine-speech';
 import { MachineSpeechButton } from './MachineSpeechButton';
 import { useOrderedOptions } from './exercise-utils';
 import type { ChoiceExerciseProps } from './McqExercise';
 
-export function ListenExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & { prompt: ListenPrompt }) {
+export function ListenExercise({ prompt, seed, lang, ...rest }: ChoiceExerciseProps & { prompt: ListenPrompt; /** The lesson language; Latin-script text (en, de) cannot be told apart from its script. */ lang?: string }) {
   const labelId = useId();
   const options = useOrderedOptions(prompt.options, prompt.shuffle, seed);
   const [failed, setFailed] = useState(false);
@@ -23,7 +23,7 @@ export function ListenExercise({ prompt, seed, ...rest }: ChoiceExerciseProps & 
         <MachineSpeechButton
           key={prompt.fallback_text}
           text={prompt.fallback_text}
-          lang={detectScriptLang(prompt.fallback_text)}
+          lang={toTtsLanguage(lang) ?? detectScriptLang(prompt.fallback_text)}
           label="Nghe bằng giọng đọc của máy"
           slow
           className="mb-3"

@@ -19,10 +19,10 @@ export const LICENSES = ['own', 'cc_by', 'cc_by_sa', 'public_domain', 'licensed'
 export const PROGRAM_KINDS = ['core', 'goal'] as const;
 export const ITEM_TYPES = ['vocab', 'phrase', 'grammar_point', 'hangul', 'kana'] as const;
 export const ITEM_ROLES = ['introduce', 'reuse'] as const;
-export const TARGET_LANGS = ['en', 'ko', 'ja'] as const;
+export const TARGET_LANGS = ['en', 'ko', 'ja', 'de'] as const;
 
 /** Stable repo keys, e.g. `en:lesson:greetings-hello`, `src:linguo-demo`. */
-export const contentKeySchema = z.string().regex(/^(?:en|ko|ja|src):(?:[a-z]+:)?[a-z0-9][a-z0-9-]{0,63}$/);
+export const contentKeySchema = z.string().regex(/^(?:en|ko|ja|de|src):(?:[a-z]+:)?[a-z0-9][a-z0-9-]{0,63}$/);
 export const localizedTextSchema = z.strictObject({ vi: z.string().trim().min(1).max(2000) });
 export type LocalizedText = z.infer<typeof localizedTextSchema>;
 

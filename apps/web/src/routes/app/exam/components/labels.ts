@@ -10,6 +10,7 @@ export const FAMILY_LABELS: Record<ExamFamily, string> = {
   topik_ii: 'TOPIK II',
   cefr: 'CEFR',
   jlpt: 'JLPT',
+  goethe: 'Goethe',
 };
 
 export const SECTION_LABELS: Record<ExamSection, string> = {
@@ -25,8 +26,9 @@ export const MODE_LABELS: Record<ExamMode, string> = {
 };
 
 /** Target language of a family: what the learner reads, hears and writes. */
-export function familyLanguage(family: ExamFamily): 'en' | 'ko' | 'ja' {
+export function familyLanguage(family: ExamFamily): 'en' | 'ko' | 'ja' | 'de' {
   if (family === 'cefr') return 'en';
+  if (family === 'goethe') return 'de';
   return family === 'jlpt' ? 'ja' : 'ko';
 }
 
@@ -113,7 +115,7 @@ export function questionTypeLabel(tag: string): string {
   const known = QUESTION_TYPE_LABELS[tag];
   if (known) return known;
   const parts = tag
-    .replace(/^(topik_ii|topik_i|cefr|jlpt)_/, '')
+    .replace(/^(topik_ii|topik_i|cefr|jlpt|goethe)_/, '')
     .split('_')
     .filter(Boolean);
   const head = parts[0] !== undefined ? TAG_SECTIONS[parts[0]] : undefined;

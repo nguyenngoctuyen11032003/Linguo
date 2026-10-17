@@ -11,7 +11,7 @@ import {
 // Spec 8.2 #6: a role-play session lives in the browser only. The server sees one bounded request per turn
 // (the last turns of the conversation, never a stored history), and a compact numbers-only summary at the end.
 
-export type RoleplayLanguage = 'en' | 'ko' | 'ja';
+export type RoleplayLanguage = 'en' | 'ko' | 'ja' | 'de';
 
 export interface RoleplayCorrection {
   original: string;

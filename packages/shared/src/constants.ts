@@ -1,4 +1,4 @@
-export const LANGUAGE_CODES = ['en', 'ko', 'ja'] as const;
+export const LANGUAGE_CODES = ['en', 'ko', 'ja', 'de'] as const;
 export type LanguageCode = (typeof LANGUAGE_CODES)[number];
 
 export interface LanguageInfo {
@@ -13,6 +13,8 @@ export const LANGUAGES: Record<LanguageCode, LanguageInfo> = {
   en: { code: 'en', short: 'EN', nameVi: 'Tiếng Anh', nativeName: 'English', available: true },
   ko: { code: 'ko', short: 'KO', nameVi: 'Tiếng Hàn', nativeName: '한국어', available: true },
   ja: { code: 'ja', short: 'JA', nameVi: 'Tiếng Nhật', nativeName: '日本語', available: true },
+  // Plumbing only until content/de is published; the release step flips `available`.
+  de: { code: 'de', short: 'DE', nameVi: 'Tiếng Đức', nativeName: 'Deutsch', available: false },
 };
 
 /**

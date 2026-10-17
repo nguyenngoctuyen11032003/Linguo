@@ -26,7 +26,7 @@ export interface PromptModule {
   validate(data: unknown, req?: AiRequest): ValidateResult;
 }
 
-export const LANGUAGE_LABELS: Record<'en' | 'ko' | 'ja', string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
+export const LANGUAGE_LABELS: Record<'en' | 'ko' | 'ja' | 'de', string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
 
 const LEVEL_LABELS: Record<string, string> = {
   pre_a1: 'Pre-A1 (mới bắt đầu)',
@@ -150,7 +150,7 @@ export function requireTargetSentence(language: AiRequest['language'], text: str
 }
 
 /** For "is this text really in the sentence?" checks: NFKC, unified quotes, no whitespace, English lower-cased. */
-export function normalizeForMatch(text: string, language: 'en' | 'ko' | 'ja'): string {
+export function normalizeForMatch(text: string, language: 'en' | 'ko' | 'ja' | 'de'): string {
   const s = text
     .normalize('NFKC')
     .replace(/[‘’ʼ]/g, "'")

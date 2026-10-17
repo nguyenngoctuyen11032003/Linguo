@@ -44,7 +44,7 @@ function tagGaps(types: ProgressDashboard['exercise_types']): PlanGap[] {
  */
 export function buildPlanReviewRequest(
   dashboard: Pick<ProgressDashboard, 'mistakes' | 'exercise_types'>,
-  learner: { language: 'en' | 'ko' | 'ja'; level: string },
+  learner: { language: 'en' | 'ko' | 'ja' | 'de'; level: string },
 ): Extract<PlanReviewRequestInput, { task: 'plan_review' }> | null {
   const gaps = [...lessonGaps(dashboard.mistakes), ...tagGaps(dashboard.exercise_types)];
   if (gaps.length === 0) return null;

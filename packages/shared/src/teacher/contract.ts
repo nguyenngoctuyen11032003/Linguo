@@ -5,7 +5,7 @@ import { TEACHER_LIMITS as L } from './limits';
 // supabase/migrations/20261017000400_teacher_tools.sql. snake_case mirrors the SQL jsonb exactly.
 // Teachers only ever receive aggregates about members, never answers, AI conversations or personal vocabulary.
 
-export const CLASS_LANGUAGES = ['en', 'ko', 'ja'] as const;
+export const CLASS_LANGUAGES = ['en', 'ko', 'ja', 'de'] as const;
 export type ClassLanguage = (typeof CLASS_LANGUAGES)[number];
 
 export const ASSIGNMENT_KINDS = ['lesson', 'review', 'exam'] as const;

@@ -35,7 +35,7 @@ describe('service', () => {
       ],
     });
     const grouped = await listReferenceHours(fakeClient({ level_reference_hours: q }));
-    expect(grouped).toEqual({ en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }], ko: [], ja: [] });
+    expect(grouped).toEqual({ en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }], ko: [], ja: [], de: [] });
     expect(q.calls).toContainEqual(['order', ['ordinal']]);
   });
 
@@ -66,6 +66,7 @@ describe('service', () => {
       en: [{ levelCode: 'a1', ordinal: 1, cumulativeHours: 90, reviewed: false }],
       ko: [{ levelCode: 'topik1', ordinal: 1, cumulativeHours: 120, reviewed: true }],
       ja: [],
+      de: [],
     });
   });
 

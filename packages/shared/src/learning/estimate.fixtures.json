@@ -26,6 +26,13 @@
       { "levelCode": "n3", "ordinal": 3, "cumulativeHours": 700 },
       { "levelCode": "n2", "ordinal": 4, "cumulativeHours": 1300 },
       { "levelCode": "n1", "ordinal": 5, "cumulativeHours": 2200 }
+    ],
+    "de": [
+      { "levelCode": "pre_a1", "ordinal": 0, "cumulativeHours": 0 },
+      { "levelCode": "a1", "ordinal": 1, "cumulativeHours": 80 },
+      { "levelCode": "a2", "ordinal": 2, "cumulativeHours": 200 },
+      { "levelCode": "b1", "ordinal": 3, "cumulativeHours": 400 },
+      { "levelCode": "b2", "ordinal": 4, "cumulativeHours": 650 }
     ]
   },
   "cases": [
@@ -106,6 +113,12 @@
       "language": "ja", "currentLevel": "n3", "targetLevel": "n2",
       "weeklyMinutes": [60, 60, 60, 60, 60, 0, 0], "targetDate": "2027-10-12",
       "expected": { "hoursNeeded": 600, "weeksMin": 96, "weeksMid": 120, "weeksMax": 156, "feasibility": "needs_more_time", "suggestedMinutesPerDay": 139, "suggestedDate": "2029-01-30" }
+    },
+    {
+      "name": "de pre_a1 to b2, 60 min on weekdays, no deadline",
+      "language": "de", "currentLevel": "pre_a1", "targetLevel": "b2",
+      "weeklyMinutes": [60, 60, 60, 60, 60, 0, 0], "targetDate": null,
+      "expected": { "hoursNeeded": 650, "weeksMin": 104, "weeksMid": 130, "weeksMax": 169, "feasibility": "no_deadline", "suggestedMinutesPerDay": null, "suggestedDate": null }
     }
   ]
 }

@@ -29,7 +29,7 @@ describe('sentencesFromLesson', () => {
 
 describe('fixed practice content', () => {
   it('has fallback sentences, open prompts and role-plays for every language', () => {
-    for (const lang of ['en', 'ko', 'ja'] as const) {
+    for (const lang of ['en', 'ko', 'ja', 'de'] as const) {
       expect(FALLBACK_SENTENCES[lang].length).toBeGreaterThan(2);
       expect(openPromptsFor(lang, null).length).toBeGreaterThan(2);
       for (const script of ROLE_PLAYS[lang]) {

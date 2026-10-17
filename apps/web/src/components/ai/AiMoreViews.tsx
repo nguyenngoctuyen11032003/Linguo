@@ -7,7 +7,7 @@ import { tagLabel } from './tag-labels';
 
 // AI sheet views of analyze_sentence, summarize_session and plan_review (spec 8.2 #4, #9, #7).
 
-type Lang = 'en' | 'ko' | 'ja';
+type Lang = 'en' | 'ko' | 'ja' | 'de';
 
 function SectionTitle({ children }: { children: string }) {
   return <h3 className="eyebrow">{children}</h3>;

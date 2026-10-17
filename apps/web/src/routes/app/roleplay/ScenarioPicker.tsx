@@ -4,7 +4,7 @@ import { LEVEL_INFO, roleplayScenarioFitsLevel, roleplayScenariosFor, type Level
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 
-type Lang = 'en' | 'ko' | 'ja';
+type Lang = 'en' | 'ko' | 'ja' | 'de';
 
 const levelName = (code: string) => LEVEL_INFO[code as LevelCode]?.label ?? code;
 

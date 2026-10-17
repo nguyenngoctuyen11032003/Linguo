@@ -2,7 +2,7 @@ import type { ExamFamily, ExamFormSummary, ExamMode, ExamSection, GoalType } fro
 
 /** The exam family a path goal prepares for, if any: the hub filter starts there. */
 export function goalFamily(goal: GoalType | null | undefined): ExamFamily | null {
-  if (goal === 'topik_i' || goal === 'topik_ii' || goal === 'cefr' || goal === 'jlpt') return goal;
+  if (goal === 'topik_i' || goal === 'topik_ii' || goal === 'cefr' || goal === 'jlpt' || goal === 'goethe') return goal;
   return null;
 }
 
@@ -23,6 +23,9 @@ export function structureWarning(goal: GoalType | null | undefined, family: Exam
   }
   if (goal === 'jlpt' && family !== 'jlpt') {
     return 'Đề này không theo cấu trúc JLPT, khác mục tiêu JLPT của lộ trình. Kết quả chỉ để tham khảo.';
+  }
+  if (goal === 'goethe' && family !== 'goethe') {
+    return 'Đề này không theo cấu trúc Goethe, khác mục tiêu Goethe của lộ trình. Kết quả chỉ để tham khảo.';
   }
   return null;
 }

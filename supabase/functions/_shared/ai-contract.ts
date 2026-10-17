@@ -47,7 +47,7 @@ export const ROLEPLAY_REPLY_MAX_CHARS = 400;
 export const ROLEPLAY_MAX_CORRECTIONS = 2;
 export const AI_REPORT_REASONS = ['wrong', 'unclear', 'unsafe', 'other'] as const;
 
-const language = z.enum(['en', 'ko', 'ja']);
+const language = z.enum(['en', 'ko', 'ja', 'de']);
 /** CEFR (en), TOPIK (ko) and kana + JLPT (ja) level codes; mirrors LEVELS in learning/levels.ts (a test keeps them equal). */
 export const AI_LEVELS = [
   'pre_a1',

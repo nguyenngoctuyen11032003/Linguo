@@ -115,7 +115,7 @@ export const lessonPayloadSchema = z.object({
   lesson: z.object({
     id: z.uuid(),
     key: z.string(),
-    language_code: z.enum(['en', 'ko', 'ja']),
+    language_code: z.enum(['en', 'ko', 'ja', 'de']),
     level_code: z.string(),
     title: localizedTextSchema,
     objectives: z.array(localizedTextSchema),

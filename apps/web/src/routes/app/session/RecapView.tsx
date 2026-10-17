@@ -14,7 +14,7 @@ import { recapAiState } from './recap-ai';
 interface Props {
   sessionId: string;
   /** Learner language and level for the AI tutor; null hides "Giải thích AI". */
-  learner: { language: 'en' | 'ko' | 'ja'; level: string } | null;
+  learner: { language: 'en' | 'ko' | 'ja' | 'de'; level: string } | null;
   saving: boolean;
   /** Marks the recap activity done with the seconds spent on this screen. */
   onDone: (seconds: number) => void;

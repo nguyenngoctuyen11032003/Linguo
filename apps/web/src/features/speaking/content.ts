@@ -52,6 +52,13 @@ export const FALLBACK_SENTENCES: Record<SpeakingLanguage, SpeakingSentence[]> = 
     { id: 'fb-ja-4', text: 'お水をください。', translation: 'Cho tôi nước.' },
     { id: 'fb-ja-5', text: 'もう一度言ってください。', translation: 'Xin hãy nói lại một lần nữa.' },
   ],
+  de: [
+    { id: 'fb-de-1', text: 'Guten Tag! Wie geht es Ihnen?', translation: 'Chào ông/bà! Ông/bà có khỏe không?' },
+    { id: 'fb-de-2', text: 'Freut mich, Sie kennenzulernen.', translation: 'Rất vui được gặp ông/bà.' },
+    { id: 'fb-de-3', text: 'Ich komme aus Vietnam.', translation: 'Tôi đến từ Việt Nam.' },
+    { id: 'fb-de-4', text: 'Ich hätte gern ein Wasser, bitte.', translation: 'Làm ơn cho tôi một cốc nước.' },
+    { id: 'fb-de-5', text: 'Können Sie das bitte wiederholen?', translation: 'Ông/bà có thể nhắc lại được không?' },
+  ],
 };
 
 export interface OpenPrompt {
@@ -77,6 +84,11 @@ export const OPEN_PROMPTS: Record<SpeakingLanguage, OpenPrompt[]> = {
     { id: 'open-ja-1', question: 'Hãy giới thiệu bản thân trong 2–3 câu.', starter: 'わたしは…です。…にすんでいます。' },
     { id: 'open-ja-2', question: 'Hãy kể về một ngày bình thường của bạn.', starter: '朝、わたしは…ます。それから、…ます。' },
     { id: 'open-ja-3', question: 'Cuối tuần bạn thích làm gì?', starter: '週末、わたしは…がすきです。' },
+  ],
+  de: [
+    { id: 'open-de-1', question: 'Hãy giới thiệu bản thân trong 2–3 câu.', starter: 'Ich heiße … Ich komme aus … Ich wohne in …' },
+    { id: 'open-de-2', question: 'Hãy kể về một ngày bình thường của bạn.', starter: 'Am Morgen stehe ich um … Uhr auf. Danach …' },
+    { id: 'open-de-3', question: 'Cuối tuần bạn thích làm gì?', starter: 'Am Wochenende gehe ich gern …, weil …' },
   ],
 };
 
@@ -177,6 +189,32 @@ export const ROLE_PLAYS: Record<SpeakingLanguage, RolePlayScript[]> = {
         { speaker: 'you', text: 'はじめまして。ミンです。よろしくおねがいします。', translation: 'Rất vui được gặp bạn. Mình là Minh. Mong được giúp đỡ.' },
         { speaker: 'partner', text: 'こちらこそ。どこから来ましたか？', translation: 'Mình cũng vậy. Bạn đến từ đâu?' },
         { speaker: 'you', text: 'ベトナムから来ました。', translation: 'Mình đến từ Việt Nam.' },
+      ],
+    },
+  ],
+  de: [
+    {
+      id: 'rp-de-cafe',
+      title: 'Gọi đồ uống ở quán cà phê',
+      setting: 'Bạn bước vào quán cà phê và gọi một thức uống.',
+      turns: [
+        { speaker: 'partner', text: 'Guten Tag! Was möchten Sie trinken?', translation: 'Chào bạn! Bạn muốn uống gì?' },
+        { speaker: 'you', text: 'Ich möchte einen Kaffee, bitte.', translation: 'Cho tôi một cà phê.' },
+        { speaker: 'partner', text: 'Gern. Mit Milch?', translation: 'Vâng. Có sữa không ạ?' },
+        { speaker: 'you', text: 'Ja, bitte. Was kostet das?', translation: 'Có, làm ơn. Hết bao nhiêu tiền?' },
+        { speaker: 'partner', text: 'Das macht drei Euro fünfzig.', translation: 'Ba euro rưỡi ạ.' },
+        { speaker: 'you', text: 'Hier, bitte. Danke schön!', translation: 'Của bạn đây. Cảm ơn nhiều!' },
+      ],
+    },
+    {
+      id: 'rp-de-intro',
+      title: 'Làm quen với người mới',
+      setting: 'Bạn gặp một người bạn mới và chào hỏi.',
+      turns: [
+        { speaker: 'partner', text: 'Hallo! Ich bin Anna. Wie heißt du?', translation: 'Chào! Mình là Anna. Bạn tên gì?' },
+        { speaker: 'you', text: 'Hallo, ich heiße Minh. Freut mich!', translation: 'Chào, mình là Minh. Rất vui được gặp bạn!' },
+        { speaker: 'partner', text: 'Freut mich auch. Woher kommst du?', translation: 'Mình cũng vui. Bạn đến từ đâu?' },
+        { speaker: 'you', text: 'Ich komme aus Vietnam.', translation: 'Mình đến từ Việt Nam.' },
       ],
     },
   ],

@@ -10,7 +10,7 @@ export const EXAM_SCHEMA_VERSION = 1;
 export const EXAM_BUNDLE_VERSION = 1;
 
 /** Exam families. Forms are always "bài luyện mô phỏng", never official papers. */
-export const EXAM_FAMILIES = ['topik_i', 'topik_ii', 'cefr', 'jlpt'] as const;
+export const EXAM_FAMILIES = ['topik_i', 'topik_ii', 'cefr', 'jlpt', 'goethe'] as const;
 export type ExamFamily = (typeof EXAM_FAMILIES)[number];
 
 export const EXAM_SECTIONS = ['listening', 'reading', 'writing'] as const;
@@ -51,7 +51,7 @@ export const EXAM_DRILL_SIZE = 10;
 
 const text = z.string().trim().min(1);
 const optionId = z.string().regex(/^[a-z0-9]{1,8}$/);
-const targetLang = z.enum(['en', 'ko', 'ja', 'vi']);
+const targetLang = z.enum(['en', 'ko', 'ja', 'de', 'vi']);
 
 // ---------------------------------------------------------------------------
 // Scoring config — versioned data, never hard-coded in SQL or UI (PRD §9.2).

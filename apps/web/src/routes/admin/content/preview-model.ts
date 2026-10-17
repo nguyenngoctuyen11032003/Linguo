@@ -62,7 +62,7 @@ export function toReviewCard(detail: AdminContentDetail, direction: CardDirectio
 }
 
 /** Target language of a row: its language_code, else the `<lang>:` prefix of its key. */
-export function rowLanguage(detail: AdminContentDetail): 'en' | 'ko' | 'ja' | null {
+export function rowLanguage(detail: AdminContentDetail): 'en' | 'ko' | 'ja' | 'de' | null {
   const code = detail.row.language_code ?? detail.key?.split(':')[0];
   return code === 'en' || code === 'ko' || code === 'ja' ? code : null;
 }

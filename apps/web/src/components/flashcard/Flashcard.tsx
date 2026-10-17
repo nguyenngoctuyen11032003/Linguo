@@ -14,7 +14,7 @@ import { playSound } from '@/lib/sound';
 /** Spec 3 §6: the card turns over in 250 ms; reduced motion swaps the faces instantly. */
 export const FLIP_DURATION_S = 0.25;
 
-const LANGUAGE_NAMES: Record<CardContent['lang'], string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' };
+const LANGUAGE_NAMES: Record<CardContent['lang'], string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật', de: 'tiếng Đức' };
 
 export interface FlashcardProps {
   card: ReviewCard;

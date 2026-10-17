@@ -66,7 +66,7 @@ export async function listReferenceHours(client: AppSupabaseClient): Promise<Ref
     .select('language_code, level_code, ordinal, cumulative_hours, reviewed')
     .order('ordinal');
   if (error) throw error;
-  const grouped: ReferenceHoursByLanguage = { en: [], ko: [], ja: [] };
+  const grouped: ReferenceHoursByLanguage = { en: [], ko: [], ja: [], de: [] };
   for (const row of data ?? []) {
     const bucket = (grouped as Partial<ReferenceHoursByLanguage>)[row.language_code as LanguageCode];
     if (!bucket) continue; // unknown language code: skip rather than crash

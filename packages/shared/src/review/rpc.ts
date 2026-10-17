@@ -48,7 +48,7 @@ export const reviewCardSchema = z.object({
   due_at: z.string(),
   postpone_count: z.number().int(),
   item: z.object({
-    language_code: z.enum(['en', 'ko', 'ja']),
+    language_code: z.enum(['en', 'ko', 'ja', 'de']),
     item_type: z.enum(ITEM_TYPES),
     /** itemFrontSchema: { text, ipa?, reading?, romanization?, pos? } */
     front: z.record(z.string(), z.unknown()),

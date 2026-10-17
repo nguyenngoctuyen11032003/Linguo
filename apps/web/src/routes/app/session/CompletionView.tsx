@@ -11,7 +11,7 @@ interface Props {
   session: StudySession;
   onPlanAgain: () => void;
   /** Learner language and level for the AI recap; omitted hides "Tóm tắt phiên bằng AI". */
-  learner?: { language: 'en' | 'ko' | 'ja'; level: string } | null;
+  learner?: { language: 'en' | 'ko' | 'ja' | 'de'; level: string } | null;
 }
 
 /** End of a session: time, activities, and a calm word — no streak pressure (spec 6 §4). */

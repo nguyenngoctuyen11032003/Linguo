@@ -5,11 +5,15 @@ export const LEVELS = {
   ko: ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'],
   /** Kana (ordinal 0), then JLPT N5 → N1 (ordinals 1–5): JLPT numbers count down, ordinals count up. */
   ja: ['kana', 'n5', 'n4', 'n3', 'n2', 'n1'],
+  /** CEFR codes shared with en, but the scale stops at B2 (the German programme's target). */
+  de: ['pre_a1', 'a1', 'a2', 'b1', 'b2'],
 } as const;
 export type EnLevel = (typeof LEVELS.en)[number];
 export type KoLevel = (typeof LEVELS.ko)[number];
 export type JaLevel = (typeof LEVELS.ja)[number];
-export type LevelCode = EnLevel | KoLevel | JaLevel;
+/** German reuses the CEFR codes of en, so it adds no level code of its own. */
+export type DeLevel = (typeof LEVELS.de)[number];
+export type LevelCode = EnLevel | KoLevel | JaLevel | DeLevel;
 
 /**
  * Highest level each language has a published program for (`content/<lang>/programs/*`, max `level_to`).
@@ -19,7 +23,7 @@ export type LevelCode = EnLevel | KoLevel | JaLevel;
  * Every language now has content on its whole scale (JLPT N2/N1 shipped as `content/ja/programs/n2` and `n1`);
  * the ceiling stays so a new language or scale can ship partially.
  */
-export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n1' };
+export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n1', de: 'pre_a1' };
 
 export interface LevelInfo {
   label: string;
@@ -72,6 +76,7 @@ export const GOAL_TYPES = [
   'skill_focus',
   'kana_basics',
   'jlpt',
+  'goethe',
 ] as const;
 export type GoalType = (typeof GOAL_TYPES)[number];
 
@@ -79,6 +84,7 @@ export const GOALS_BY_LANGUAGE: Record<LanguageCode, readonly GoalType[]> = {
   en: ['foundation', 'daily_communication', 'work_it', 'reading_docs', 'cefr'],
   ko: ['hangul_basics', 'communication', 'topik_i', 'topik_ii', 'skill_focus'],
   ja: ['kana_basics', 'communication', 'jlpt', 'skill_focus'],
+  de: ['foundation', 'daily_communication', 'goethe', 'skill_focus'],
 };
 
 export const GOAL_LABELS: Record<GoalType, string> = {
@@ -94,6 +100,7 @@ export const GOAL_LABELS: Record<GoalType, string> = {
   skill_focus: 'Nâng cao nghe, đọc hoặc viết',
   kana_basics: 'Kana và giao tiếp nền tảng',
   jlpt: 'Đạt một cấp JLPT',
+  goethe: 'Đạt một bậc Goethe (A1–B2)',
 };
 
 const GOAL_DEFAULT_TARGET: Record<GoalType, LevelCode> = {
@@ -109,14 +116,16 @@ const GOAL_DEFAULT_TARGET: Record<GoalType, LevelCode> = {
   skill_focus: 'topik4',
   kana_basics: 'n5',
   jlpt: 'n3',
+  goethe: 'b1',
 };
 
 /** Defaults of goals shared between languages whose own scale differs from the table above. */
 const GOAL_DEFAULT_TARGET_BY_LANGUAGE: Partial<Record<LanguageCode, Partial<Record<GoalType, LevelCode>>>> = {
   ja: { communication: 'n3', skill_focus: 'n3' },
+  de: { skill_focus: 'b1' },
 };
 
-const UNSURE_DEFAULT_LEVEL: Record<LanguageCode, LevelCode> = { en: 'a1', ko: 'topik1', ja: 'n5' };
+const UNSURE_DEFAULT_LEVEL: Record<LanguageCode, LevelCode> = { en: 'a1', ko: 'topik1', ja: 'n5', de: 'a1' };
 
 const TOPIK_I: readonly string[] = ['topik1', 'topik2'];
 const TOPIK_II: readonly string[] = ['topik3', 'topik4', 'topik5', 'topik6'];

@@ -22,8 +22,8 @@ import { LeaveRoleplayDialog } from './LeaveRoleplayDialog';
 import { playSound } from '@/lib/sound';
 
 const MESSAGE_MAX = 300;
-const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật' } as const;
-const REPLY_PLACEHOLDER = { en: 'Reply in English…', ko: 'Nhập bằng tiếng Hàn…', ja: 'Nhập bằng tiếng Nhật…' } as const;
+const LANGUAGE_NAME = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật', de: 'tiếng Đức' } as const;
+const REPLY_PLACEHOLDER = { en: 'Reply in English…', ko: 'Nhập bằng tiếng Hàn…', ja: 'Nhập bằng tiếng Nhật…', de: 'Nhập bằng tiếng Đức…' } as const;
 
 export const ROLEPLAY_AI_NOTE =
   'Đối tác là AI nên có thể nói sai hoặc chưa tự nhiên. Đừng nhập thông tin cá nhân thật như số điện thoại, địa chỉ hay mật khẩu.';
@@ -55,7 +55,7 @@ function GoalChecklist({ scenario, reached }: { scenario: RoleplayScenario; reac
   );
 }
 
-function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' | 'ko' | 'ja' }) {
+function Corrections({ message, lang }: { message: RoleplayMessage; lang: 'en' | 'ko' | 'ja' | 'de' }) {
   if (message.corrections.length === 0) return null;
   return (
     <section aria-label="Gợi ý sửa câu" className="mt-1.5 space-y-1.5 rounded-2xl bg-warn/8 px-3.5 py-2.5 text-sm ring-1 ring-warn/30 ring-inset">
@@ -92,7 +92,7 @@ function Bubble({
   onReport,
 }: {
   message: RoleplayMessage;
-  lang: 'en' | 'ko' | 'ja';
+  lang: 'en' | 'ko' | 'ja' | 'de';
   tts: TtsApi;
   latestPartner: boolean;
   onReport: (responseId: string, trigger: HTMLButtonElement) => void;

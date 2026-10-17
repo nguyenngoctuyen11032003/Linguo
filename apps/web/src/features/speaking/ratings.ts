@@ -19,7 +19,7 @@ export type Ratings = Partial<Record<RatingAxisId, RatingValue>>;
 export const RATING_LABELS: Record<RatingValue, string> = { 1: 'Cần luyện thêm', 2: 'Tạm ổn', 3: 'Khá tốt' };
 
 export type SpeakingMode = 'repeat' | 'open' | 'roleplay';
-export type SpeakingLanguage = 'en' | 'ko' | 'ja';
+export type SpeakingLanguage = 'en' | 'ko' | 'ja' | 'de';
 
 export interface Reflection {
   /** ISO timestamp. */
@@ -40,7 +40,7 @@ function sanitize(value: unknown): Reflection | null {
   if (typeof value !== 'object' || value === null) return null;
   const v = value as Record<string, unknown>;
   if (typeof v.at !== 'string' || typeof v.mode !== 'string' || !MODES.has(v.mode)) return null;
-  if (v.lang !== 'en' && v.lang !== 'ko' && v.lang !== 'ja') return null;
+  if (v.lang !== 'en' && v.lang !== 'ko' && v.lang !== 'ja' && v.lang !== 'de') return null;
   const ratings: Ratings = {};
   if (typeof v.ratings === 'object' && v.ratings !== null) {
     for (const [axis, rating] of Object.entries(v.ratings)) {

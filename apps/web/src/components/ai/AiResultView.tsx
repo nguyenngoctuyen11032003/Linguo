@@ -14,7 +14,7 @@ import { AnalyzeSentenceView, PlanReviewView, SessionSummaryView } from './AiMor
 import { MarkdownLite } from './MarkdownLite';
 import { parseAiResult } from './parse';
 
-type Lang = 'en' | 'ko' | 'ja';
+type Lang = 'en' | 'ko' | 'ja' | 'de';
 
 function SectionTitle({ children }: { children: string }) {
   return <h3 className="eyebrow">{children}</h3>;
