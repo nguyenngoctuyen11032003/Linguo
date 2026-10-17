@@ -67,10 +67,10 @@ body:
       vi: "Nhớ trật tự: sau weil và wenn động từ đứng cuối (weil ich mich erkältet habe); sau denn giữ trật tự câu chính (denn ich habe Fieber). Trong văn viết, đừng dùng weil với động từ ở vị trí 2."
   - type: explain
     text:
-      vi: "Ngữ vực: gửi sếp hoặc giáo viên xưng Sie thì mở đầu Sehr geehrte Frau … / Sehr geehrter Herr … và kết thúc Mit freundlichen Grüßen; gửi bạn bè thì Liebe … / Lieber … hoặc Hallo …, kết thúc Viele Grüße. Bạn bè đáp lại thường chúc Gute Besserung!"
+      vi: "Ngữ vực: gửi sếp xưng Sie thì mở đầu Sehr geehrte Frau … / Sehr geehrter Herr … và kết thúc Mit freundlichen Grüßen; với giáo viên quen (vẫn xưng Sie) có thể viết Lieber Herr … / Liebe Frau … và Viele Grüße. Gửi bạn bè (du): Liebe … / Lieber … hoặc Hallo …, kết thúc Viele Grüße. Bạn bè đáp lại thường chúc Gute Besserung!"
   - type: deep_explain
     text:
-      vi: "Ở Đức, người đi làm bị ốm thường phải báo cho chỗ làm ngay ngày đầu và từ một số ngày nhất định thì cần giấy chứng nhận của bác sĩ (Krankschreibung); quy định cụ thể tuỳ hợp đồng và có thể thay đổi, nên hỏi chỗ làm của bạn. Trong bài thi Goethe A2 phần Schreiben, bạn thường phải viết tin nhắn hoặc e-mail ngắn theo ba ý cho trước – hãy viết đủ cả ba ý, mỗi ý một hai câu."
+      vi: "Ở Đức, người đi làm bị ốm thường phải báo cho chỗ làm ngay ngày đầu và từ một số ngày nhất định thì cần giấy chứng nhận của bác sĩ (Krankschreibung); quy định cụ thể tuỳ hợp đồng và có thể thay đổi, nên hỏi chỗ làm của bạn. Trong bài thi Goethe A2 phần Schreiben, bạn thường phải viết tin nhắn hoặc e-mail ngắn theo ba ý cho trước (định dạng đề có thể thay đổi, hãy xem đề mẫu mới nhất) – hãy viết đủ cả ba ý, mỗi ý một hai câu."
   - type: example
     target: "Sehr geehrte Frau Schulz, leider kann ich heute nicht zur Arbeit kommen, denn ich bin krank. Mit freundlichen Grüßen, Linh Tran"
     target_lang: de
@@ -408,7 +408,6 @@ exercises:
         - Hôm qua tôi bị cảm và hôm nay tôi thấy người yếu.
         - Hôm qua tôi bị cảm, hôm nay tôi thấy yếu.
         - Hôm qua tôi bị cảm lạnh và hôm nay tôi thấy yếu.
-        - Hôm qua tôi bị cảm và hôm nay tôi thấy mệt.
         - Hôm qua mình bị cảm và hôm nay mình thấy yếu.
         - Tôi bị cảm từ hôm qua và hôm nay tôi thấy yếu.
         - Hôm qua tôi bị cảm và hôm nay tôi cảm thấy yếu.

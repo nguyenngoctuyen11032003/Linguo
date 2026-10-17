@@ -27,9 +27,9 @@ items:
             vi: Hôm nay tôi thấy khoẻ hơn.
         - target: Wir haben uns im Urlaub gut erholt.
           translation:
-            vi: Kỳ nghỉ vừa rồi chúng tôi đã nghỉ ngơi lại sức rất tốt.
+            vi: Trong kỳ nghỉ chúng tôi đã nghỉ ngơi lại sức tốt.
       confusion:
-        vi: "Chỉ ngôi thứ ba và Sie dùng dạng mới sich (luôn viết thường, kể cả với Sie: Wie fühlen Sie sich?). ich, du, wir, ihr dùng mich, dich, uns, euch – giống đại từ Akkusativ bạn đã biết."
+        vi: "Chỉ ngôi thứ ba và Sie dùng dạng mới sich (viết thường, kể cả khi đi với Sie viết hoa: Wie fühlen Sie sich?). ich, du, wir, ihr dùng mich, dich, uns, euch – giống đại từ Akkusativ bạn đã biết."
 
   - key: de:item:a2u04-sich-fuehlen
     type: vocab
@@ -90,7 +90,7 @@ items:
             vi: Trong kỳ nghỉ tôi đã lại sức rất tốt.
         - target: Erholen Sie sich gut!
           translation:
-            vi: Chúc ông/bà mau lại sức!
+            vi: Chúc ông/bà nghỉ ngơi lại sức tốt!
       confusion:
         vi: "er- là tiền tố không tách nên Partizip II không có ge-: erholt. sich ausruhen là nghỉ một lúc; sich erholen nhấn vào kết quả: lại sức, khoẻ lại."
 
@@ -186,7 +186,7 @@ items:
       examples:
         - target: Ich jogge jeden Morgen und fühle mich fit.
           translation:
-            vi: Sáng nào tôi cũng chạy bộ và thấy rất khoẻ khoắn.
+            vi: Sáng nào tôi cũng chạy bộ và thấy khoẻ khoắn.
 
   - key: de:item:a2u04-schwach
     type: vocab
@@ -222,7 +222,7 @@ items:
           translation:
             vi: Dạo này tôi rất căng thẳng trong công việc.
       confusion:
-        vi: "Nói \"tôi bị căng thẳng\": Ich habe Stress (không nói Ich bin Stress). Tính từ: stressig."
+        vi: "Nói \"tôi bị căng thẳng\": Ich habe Stress hoặc Ich bin gestresst (không nói Ich bin Stress). Tính từ chỉ việc gây căng thẳng: stressig."
 
   - key: de:item:a2u04-sich-hinlegen
     type: vocab
@@ -1275,4 +1275,4 @@ items:
       examples:
         - target: Fragen Sie Ihren Arzt oder Apotheker.
           translation:
-            vi: Hãy hỏi bác sĩ hoặc dược sĩ của bạn.
+            vi: Hãy hỏi bác sĩ hoặc dược sĩ của anh/chị.

@@ -50,7 +50,7 @@ body:
       vi: "Tiếng Việt nói \"tôi thấy mệt\", còn tiếng Đức nói \"tôi thấy mình mệt\": Ich fühle mich müde. Động từ cần thêm một đại từ chỉ chính chủ ngữ như vậy gọi là động từ phản thân; từ điển ghi kèm sich: sich fühlen, sich ausruhen."
   - type: explain
     text:
-      vi: "Đại từ phản thân (Akkusativ): ich → mich, du → dich, er/sie/es → sich, wir → uns, ihr → euch, sie/Sie → sich. Chỉ ngôi thứ ba và Sie có dạng mới sich; các ngôi khác giống đại từ Akkusativ bạn đã biết. sich luôn viết thường, kể cả khi đi với Sie: Wie fühlen Sie sich?"
+      vi: "Đại từ phản thân (Akkusativ): ich → mich, du → dich, er/sie/es → sich, wir → uns, ihr → euch, sie/Sie → sich. Chỉ ngôi thứ ba và Sie có dạng mới sich; các ngôi khác giống đại từ Akkusativ bạn đã biết. sich viết thường, kể cả khi đi với Sie viết hoa: Wie fühlen Sie sich?"
   - type: explain
     text:
       vi: "Đại từ phản thân đứng ngay sau động từ chia: Ich fühle mich besser. Khi câu mở đầu bằng trạng ngữ, động từ vẫn ở vị trí 2, chủ ngữ đại từ theo sau rồi mới đến đại từ phản thân: Heute fühle ich mich besser. Với động từ tách, tiền tố vẫn ra cuối câu: Ich ruhe mich am Wochenende aus."
@@ -78,7 +78,7 @@ body:
     target: Ich jogge jeden Morgen. Danach fühle ich mich fit.
     target_lang: de
     translation:
-      vi: Sáng nào tôi cũng chạy bộ. Chạy xong tôi thấy rất khoẻ khoắn.
+      vi: Sáng nào tôi cũng chạy bộ. Chạy xong tôi thấy khoẻ khoắn.
     note:
       vi: "Danach ở vị trí 1 → fühle ở vị trí 2, rồi ich, rồi mich."
   - type: example
@@ -119,7 +119,7 @@ body:
     right: Heute fühle ich mich besser.
     target_lang: de
     note:
-      vi: "Động từ luôn ở vị trí 2: sau Heute là fühle, rồi mới đến ich."
+      vi: "Trong câu kể, động từ chia ở vị trí 2: sau Heute là fühle, rồi mới đến ich."
   - type: summary
     points:
       - vi: "Động từ phản thân: sich fühlen, sich ausruhen, sich erholen, sich beeilen, sich bewegen, sich verletzen, sich erkälten."
@@ -212,7 +212,7 @@ exercises:
     difficulty: 2
     item: de:item:a2u04-sich-verletzen
     prompt:
-      template: "Thomas hat {{b1}} beim Fußball verletzt. – Oh nein! Und du? Hast du {{b2}} auch verletzt?"
+      template: "Thomas hat {{b1}} (Reflexivpronomen) beim Fußball verletzt. – Oh nein! Und du? Hast du {{b2}} (Reflexivpronomen) auch verletzt?"
       blanks:
         - { id: b1, width_hint: 4 }
         - { id: b2, width_hint: 4 }

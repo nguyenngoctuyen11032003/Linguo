@@ -69,7 +69,7 @@ body:
       vi: "Nhờ lịch sự hơn Können Sie …?: Könnten Sie …? hoặc Würden Sie … + nguyên thể ở cuối: Würden Sie bitte langsamer sprechen? Khuyên kiểu \"nếu tôi là bạn\": An deiner Stelle würde ich … (với người lạ: An Ihrer Stelle …)."
   - type: deep_explain
     text:
-      vi: "sollte, könnte, würde đều thuộc Konjunktiv II – dạng giả định giúp câu mềm hơn, giống tiếng Việt thêm \"nên\", \"có lẽ\", \"phiền … được không\". Ở A2 bạn chỉ cần học chúng như mẫu câu; hệ thống đầy đủ (wäre, hätte, điều kiện không có thật) học ở B1. Ich hätte gern … bạn học ở A1 cũng là Konjunktiv II. Chỉ cần một dạng lịch sự: Könnten Sie mir helfen? hoặc Würden Sie mir helfen? – gộp cả hai thành Würden Sie mir helfen können? nghe rườm rà. Với người chưa thân, nhất là về cân nặng hay ăn uống, người Đức thường chỉ khuyên khi được hỏi."
+      vi: "sollte, könnte, würde đều thuộc Konjunktiv II – dạng giả định giúp câu mềm hơn, giống tiếng Việt thêm \"nên\", \"có lẽ\", \"phiền … được không\". Ở A2 bạn chỉ cần học chúng như mẫu câu; hệ thống đầy đủ (wäre, hätte, điều kiện không có thật) học ở B1. Ich hätte gern … bạn học ở A1 cũng là Konjunktiv II. Chỉ cần một dạng lịch sự: Könnten Sie mir helfen? hoặc Würden Sie mir helfen? – gộp cả hai thành Würden Sie mir helfen können? nghe rườm rà. Với người chưa thân, nhất là về cân nặng hay ăn uống, nhiều người Đức chỉ khuyên khi được hỏi."
   - type: example
     target: Du arbeitest zu viel. Du solltest mehr schlafen.
     target_lang: de
@@ -149,7 +149,7 @@ body:
     right: Du solltest weniger arbeiten.
     target_lang: de
     note:
-      vi: "Khi chính bạn khuyên: câu trái không sai ngữ pháp, nhưng nghĩa là \"(người ta dặn) bạn phải làm ít đi\". Lời khuyên của chính bạn là du solltest."
+      vi: "Câu bên trái đúng ngữ pháp, nhưng là lời dặn, yêu cầu (như bác sĩ dặn: bạn phải làm ít đi), nghe nặng. Khi chính bạn khuyên bạn bè, tự nhiên hơn là du solltest."
   - type: summary
     points:
       - vi: "Khuyên: du solltest / Sie sollten + nguyên thể cuối câu."
@@ -264,7 +264,7 @@ exercises:
     answer:
       blanks:
         b1: [Könnten]
-        b2: [Würden]
+        b2: [würden]
     known_wrong:
       - answer: Können
         feedback_vi: "Können Sie …? đúng nhưng chưa phải dạng lịch sự hơn mà đề yêu cầu: Könnten Sie …?"
@@ -272,11 +272,11 @@ exercises:
       - answer: Konnten
         feedback_vi: "Konnten (không có ö) là quá khứ. Nhờ lịch sự: Könnten."
         error_tag: konjunktiv_form
-      - answer: Werden
-        feedback_vi: "Werden Sie …? không phải lời nhờ. Nhờ lịch sự: Würden Sie …?"
+      - answer: werden
+        feedback_vi: "werden Sie …? không phải lời nhờ. Nhờ lịch sự: würden Sie …?"
         error_tag: konjunktiv_form
-      - answer: Wurden
-        feedback_vi: "Wurden (không có ü) là quá khứ của werden. Nhờ lịch sự: Würden."
+      - answer: wurden
+        feedback_vi: "wurden (không có ü) là quá khứ của werden. Nhờ lịch sự: würden."
         error_tag: konjunktiv_form
     explanation:
       vi: "Dạng lịch sự (Konjunktiv II) có umlaut: können → Könnten Sie …?, werden → Würden Sie …? Nguyên thể (helfen, unterschreiben) ở cuối câu."
@@ -297,6 +297,7 @@ exercises:
         - Du solltest mit dem Rauchen aufhören.
         - Du solltest aufhören zu rauchen.
         - Du solltest nicht mehr rauchen.
+        - Du solltest das Rauchen aufgeben.
     known_wrong:
       - answer: Du solltest mit dem Rauchen aufhörst.
         feedback_vi: "Sau solltest, động từ chính ở nguyên thể: aufhören."
@@ -308,7 +309,7 @@ exercises:
         feedback_vi: "solltet là dạng của ihr; với du là solltest."
         error_tag: verb_form
     explanation:
-      vi: "Lời khuyên với du: Du solltest … + nguyên thể cuối câu. \"Bỏ thuốc lá\" = mit dem Rauchen aufhören (mit + Dativ, das Rauchen viết hoa vì là danh từ)."
+      vi: "Lời khuyên với du: Du solltest … + nguyên thể cuối câu. \"Bỏ thuốc lá\" = mit dem Rauchen aufhören (mit + Dativ, das Rauchen viết hoa vì là danh từ). Du solltest aufhören zu rauchen cũng đúng; cấu trúc zu + nguyên thể bạn sẽ học ở A2U06."
     display_answer: Du solltest mit dem Rauchen aufhören.
 
   # ---------------- application ----------------

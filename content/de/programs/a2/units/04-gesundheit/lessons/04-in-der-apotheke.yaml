@@ -68,7 +68,7 @@ body:
       vi: "Câu wenn đứng đầu chiếm vị trí 1, nên câu chính bắt đầu ngay bằng động từ: Wenn es nicht besser wird, gehe ich zum Arzt. Tiếng Việt có chữ \"thì\", tiếng Đức không cần (có thể thêm dann: …, dann gehe ich zum Arzt). Câu chính là mệnh lệnh thì động từ vốn đã đứng đầu: Wenn du Fieber hast, geh zum Arzt."
   - type: explain
     text:
-      vi: "Câu wenn cũng có thể đứng sau, khi đó câu chính giữ trật tự bình thường: Ich gehe zum Arzt, wenn es nicht besser wird. Đừng nhầm wenn (nếu) với wann (khi nào? – từ để hỏi)."
+      vi: "Câu wenn cũng có thể đứng sau, khi đó câu chính giữ trật tự bình thường: Ich gehe zum Arzt, wenn es nicht besser wird. Với việc lặp lại, wenn còn có nghĩa \"(mỗi) khi\": Ich lege mich hin, wenn ich Kopfschmerzen habe. Đừng nhầm wenn (nếu) với wann (khi nào? – từ để hỏi)."
   - type: explain
     text:
       vi: "Ở hiệu thuốc: Ich brauche etwas gegen Kopfschmerzen. · Haben Sie eine Salbe gegen …? · Wie oft muss ich das einnehmen? Dược sĩ hay hỏi: Haben Sie Allergien? Nehmen Sie andere Medikamente? Viên thuốc thì einnehmen hoặc nehmen, không dùng trinken."
@@ -255,7 +255,7 @@ exercises:
         - { id: b2, width_hint: 8 }
     answer:
       blanks:
-        b1: [Krankenwagen]
+        b1: [Krankenwagen, Rettungswagen]
         b2: [Notfall]
     known_wrong:
       - answer: Krankenhaus

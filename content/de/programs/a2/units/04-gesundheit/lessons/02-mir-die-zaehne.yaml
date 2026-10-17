@@ -261,10 +261,10 @@ exercises:
         error_tag: verb_form
       - answer: gerasiert
         feedback_vi: "Động từ đuôi -ieren không thêm ge- ở Partizip II: rasiert."
-        error_tag: partizip_form
+        error_tag: participle_form
       - answer: rasieren
         feedback_vi: "Sau hat cần Partizip II ở cuối câu: rasiert."
-        error_tag: partizip_form
+        error_tag: participle_form
     explanation:
       vi: "waschen là động từ đổi nguyên âm: du wäschst, er wäscht. rasieren có đuôi -ieren nên Partizip II không có ge-: hat sich rasiert."
     display_answer: Paul wäscht sich die Haare. Heute hat er sich nicht rasiert.
