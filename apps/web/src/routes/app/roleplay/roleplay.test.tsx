@@ -1,7 +1,7 @@
 import { screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { FunctionsHttpError } from '@supabase/supabase-js';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { aiError, aiSuccess, QUOTA, SUMMARY_DATA } from '@/components/ai/ai-fixtures';
 import type { AiNoticeState } from '@/features/ai-tutor/useAiNotice';
 import type { AiQuotaState } from '@/features/ai-tutor/useAiQuota';
@@ -340,5 +340,20 @@ describe('RoleplayPage: UX polish', () => {
     const dialog = await screen.findByRole('alertdialog');
     expect(dialog).toHaveAccessibleName(/Trước khi trò chuyện với Đối tác AI/);
     expect(dialog).toHaveTextContent('Tin nhắn của bạn được gửi tới Google Gemini');
+  });
+});
+
+
+describe('RoleplayPage offline', () => {
+  afterEach(() => {
+    Object.defineProperty(navigator, 'onLine', { value: true, configurable: true });
+  });
+
+  it('says it needs the network instead of offering what cannot work', () => {
+    Object.defineProperty(navigator, 'onLine', { value: false, configurable: true });
+    render();
+    expect(screen.getByText('Tính năng này cần mạng')).toBeInTheDocument();
+    expect(screen.getByText(/Đóng vai với AI cần kết nối mạng/)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Tiếp tục học ngoại tuyến' })).toHaveAttribute('href', '/app/hoc-tap');
   });
 });

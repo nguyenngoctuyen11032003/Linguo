@@ -6,6 +6,7 @@ import { AiNoticeDialog, AiQuotaChip, AiReportDialog, useQuotaGate } from '@/com
 import { buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
+import { OnlineOnlyState } from '@/components/ui/OnlineOnlyState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
@@ -16,6 +17,7 @@ import { roleplayLanguageNames } from '@/features/roleplay/languages';
 import { buildSummaryRequest } from '@/features/roleplay/session';
 import { useRoleplaySession } from '@/features/roleplay/useRoleplaySession';
 import { useTts } from '@/features/speaking/useTts';
+import { useOnline } from '@/lib/useOnline';
 import { ChatView, ROLEPLAY_AI_NOTE } from './ChatView';
 import { RecapView } from './RecapView';
 import { ScenarioPicker } from './ScenarioPicker';
@@ -40,6 +42,7 @@ export function RoleplayPage() {
   const quota = useAiQuota();
   const gate = useQuotaGate(quota.quota);
   const path = paths.current;
+  const online = useOnline();
   // Any language with scenarios in the catalog (en, ko, ja today; de once its scenarios ship).
   const language = path && roleplayScenariosFor(path.language).length > 0 ? path.language : null;
   const api = useRoleplaySession(user?.id ?? null, language, path?.currentLevel ?? null);
@@ -130,6 +133,9 @@ export function RoleplayPage() {
         onReport={openReport}
       />
     );
+  } else if (!online) {
+    // A conversation in progress stays readable (it is saved on the device); starting one, and every reply, need the AI.
+    content = <OnlineOnlyState feature="Đóng vai với AI" />;
   } else if (language) {
     content = (
       <ScenarioPicker

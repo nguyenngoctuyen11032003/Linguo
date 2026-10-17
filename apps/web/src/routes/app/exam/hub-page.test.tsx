@@ -1,7 +1,7 @@
 import { screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { ExamFormSummary, ExamHistoryEntry } from '@linguo/shared';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { examAttempt, examHistory, examHistoryAttemptId, topikIForm, topikIIForm } from '@/features/exam/exam-fixtures';
 import type { LearningPath } from '@/features/learning-paths/service';
 import { TEST_KO_PATH } from '../../../../tests/unit/learning-fixtures';
@@ -308,5 +308,20 @@ describe('ExamHubPage', () => {
     renderHub(TEST_KO_PATH);
     expect(screen.getByRole('radio', { name: 'Tất cả' })).toBeChecked();
     expect(screen.getAllByRole('article')).toHaveLength(2);
+  });
+});
+
+
+describe('ExamHubPage offline', () => {
+  afterEach(() => {
+    Object.defineProperty(navigator, 'onLine', { value: true, configurable: true });
+  });
+
+  it('says it needs the network instead of offering what cannot work', () => {
+    Object.defineProperty(navigator, 'onLine', { value: false, configurable: true });
+    renderHub();
+    expect(screen.getByText('Tính năng này cần mạng')).toBeInTheDocument();
+    expect(screen.getByText(/Thi thử cần kết nối mạng/)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Tiếp tục học ngoại tuyến' })).toHaveAttribute('href', '/app/hoc-tap');
   });
 });

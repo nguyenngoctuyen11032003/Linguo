@@ -6,6 +6,7 @@ import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { useOnline } from '@/lib/useOnline';
 import { useAuth } from '@/features/auth/AuthProvider';
 import {
   clearReflections,
@@ -49,6 +50,9 @@ export function SpeakingPage() {
   const userId = user?.id ?? null;
   const [mode, setMode] = useState<SpeakingMode>('repeat');
   const [transcribe, setTranscribe] = useState(false);
+  const online = useOnline();
+  // The browser's speech service (the optional transcript) needs the network; self-rating and listening do not.
+  const transcribing = transcribe && online;
   const [reflections, setReflections] = useState(() => (userId ? loadReflections(userId) : []));
   const transcribeId = useId();
   const lang = material.lang;
@@ -147,11 +151,12 @@ export function SpeakingPage() {
                   <input
                     id={transcribeId}
                     type="checkbox"
-                    checked={transcribe}
+                    checked={transcribing}
+                    disabled={!online}
                     onChange={(e) => setTranscribe(e.target.checked)}
                     className={`size-5 accent-primary ${FOCUS_RING}`}
                   />
-                  Bật bản chép lời tự động (tuỳ chọn)
+                  Bật bản chép lời tự động (tuỳ chọn){online ? '' : ' · cần mạng'}
                 </label>
                 <p className="px-1 text-sm text-muted">
                   Một số trình duyệt gửi âm thanh tới dịch vụ nhận dạng giọng nói của hãng trình duyệt để chép lời, nên mục này mặc định tắt. Bản chép có thể sai và bạn tự sửa được.
@@ -166,7 +171,7 @@ export function SpeakingPage() {
               lang={lang}
               sentences={material.sentences}
               tts={tts}
-              transcribe={transcribe}
+              transcribe={transcribing}
               onSaveReflection={onSaveReflection}
             />
           )}
@@ -175,11 +180,11 @@ export function SpeakingPage() {
               lang={lang}
               lessonTitle={material.lessonTitle}
               helpSentences={material.usingFallback ? [] : material.sentences}
-              transcribe={transcribe}
+              transcribe={transcribing}
               onSaveReflection={onSaveReflection}
             />
           )}
-          {mode === 'roleplay' && <RolePlayMode lang={lang} tts={tts} transcribe={transcribe} onSaveReflection={onSaveReflection} />}
+          {mode === 'roleplay' && <RolePlayMode lang={lang} tts={tts} transcribe={transcribing} onSaveReflection={onSaveReflection} />}
 
           {userId && reflections.length > 0 && (
             <p className="flex flex-wrap items-center gap-x-3 text-sm text-muted">

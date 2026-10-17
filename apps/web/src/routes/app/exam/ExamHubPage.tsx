@@ -5,12 +5,14 @@ import { EXAM_FAMILIES, type ExamFamily, type ExamFormSummary, type ExamMode, ty
 import { buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
+import { OnlineOnlyState } from '@/components/ui/OnlineOnlyState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useExamForms } from '@/features/exam/useExamForms';
 import { useExamHistory } from '@/features/exam/useExamHistory';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
+import { useOnline } from '@/lib/useOnline';
 import { ExamFormCard, ExamHistoryList, FAMILY_LABELS, QuestionTypePicker } from './components';
 import { fullMockMinutes, goalFamily, structureWarning } from './exam-page-utils';
 import { OpenAttemptDialog } from './OpenAttemptDialog';
@@ -50,6 +52,7 @@ export function ExamHubPage() {
   const forms = useExamForms(path?.language ?? null);
   const history = useExamHistory(path?.id ?? null, HISTORY_LIMIT);
   const starter = useStartExam();
+  const online = useOnline();
   const [searchParams, setSearchParams] = useSearchParams();
   const assignedFormId = searchParams.get(ASSIGNED_FORM_PARAM)?.trim() || null;
   const showAllForms = () =>
@@ -73,7 +76,10 @@ export function ExamHubPage() {
   const openAttempt = history.status === 'ready' ? (history.entries.find((e) => e.status === 'in_progress') ?? null) : null;
 
   let content;
-  if (!path) {
+  if (!online) {
+    // Forms, the attempt clock and the grading are all on the server.
+    content = <OnlineOnlyState feature="Thi thử" />;
+  } else if (!path) {
     if (paths.status === 'loading') content = <LoadingForms />;
     else if (paths.status === 'error') content = <ErrorState title="Không tải được lộ trình" onRetry={paths.reload} />;
     else {

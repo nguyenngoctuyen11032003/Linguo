@@ -19,6 +19,7 @@ import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Input } from '@/components/ui/Input';
+import { OnlineOnlyState } from '@/components/ui/OnlineOnlyState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
 import type { AiQuota } from '@/features/ai-tutor/quota';
@@ -27,6 +28,7 @@ import { useAiTutor, type AiTutorState as UseAiTutor } from '@/features/ai-tutor
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { cn } from '@/lib/cn';
 import { playSound } from '@/lib/sound';
+import { useOnline } from '@/lib/useOnline';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
 type Tab = 'explain' | 'practice' | 'sentence';
@@ -597,6 +599,7 @@ export function TutorPage() {
   const reportTriggerRef = useRef<HTMLElement | null>(null);
 
   const path = paths.current;
+  const online = useOnline();
 
   const onTabKey = (e: KeyboardEvent<HTMLButtonElement>) => {
     const i = TABS.findIndex((t) => t.id === tab);
@@ -618,7 +621,9 @@ export function TutorPage() {
   };
 
   let content: ReactNode;
-  if (!path) {
+  if (!online) {
+    content = <OnlineOnlyState feature="Gia sư AI" />;
+  } else if (!path) {
     if (paths.status === 'loading') content = <LoadingPage />;
     else if (paths.status === 'error') content = <ErrorState title="Không tải được lộ trình" onRetry={paths.reload} />;
     else {

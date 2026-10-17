@@ -5,6 +5,7 @@ import { nearestSessionLength, SESSION_LENGTHS, type SessionActivity, type Sessi
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
+import { OnlineOnlyState } from '@/components/ui/OnlineOnlyState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
@@ -15,6 +16,7 @@ import { finishSession, firstPending, reorderSession, sessionLink, sessionProgre
 import { usePlanner } from '@/features/session/usePlanner';
 import { useTodaySession } from '@/features/session/useTodaySession';
 import { playSound } from '@/lib/sound';
+import { useOnline } from '@/lib/useOnline';
 import { requireSupabase } from '@/lib/supabase';
 import { ActivityList, type MoveDirection } from './ActivityList';
 import { CompletionView } from './CompletionView';
@@ -50,6 +52,7 @@ function PathSession() {
   const planner = usePlanner();
   const toast = useToast();
   const navigate = useNavigate();
+  const online = useOnline();
   const { session, setSession } = today;
 
   const [searchParams] = useSearchParams();
@@ -118,8 +121,15 @@ function PathSession() {
     return { run, isLatest: () => latestRequest.current === ticket };
   }
 
+  /** Planning and every change of the session are decided by the server: offline they only explain. */
+  function needsNetwork(): boolean {
+    if (online) return false;
+    toast.show({ tone: 'info', message: 'Cần có mạng để làm việc này. Phần đã tải vẫn học được, mọi thay đổi sẽ lưu khi có mạng.' });
+    return true;
+  }
+
   async function mutate(job: () => Promise<StudySession>, success?: (saved: StudySession) => void) {
-    if (saving) return;
+    if (saving || needsNetwork()) return;
     clearUndo();
     setSaving(true);
     try {
@@ -139,7 +149,7 @@ function PathSession() {
     const target = direction === 'up' ? index - 1 : index + 1;
     const moved = activities[index];
     const other = activities[target];
-    if (!moved || !other) return;
+    if (!moved || !other || needsNetwork()) return;
     clearUndo();
     activities[index] = other;
     activities[target] = moved;
@@ -198,7 +208,7 @@ function PathSession() {
   }
 
   async function create(minutes: SessionLength, replace: boolean) {
-    if (!pathId) return;
+    if (!pathId || needsNetwork()) return;
     const saved = await planner.create(pathId, minutes, replace);
     if (saved) {
       setSession(saved);
@@ -208,7 +218,7 @@ function PathSession() {
   }
 
   async function shorten(current: StudySession) {
-    if (!pathId) return;
+    if (!pathId || needsNetwork()) return;
     const saved = await planner.shorten(pathId, current, SHORT_SESSION_MINUTES);
     if (saved) {
       setSession(saved);
@@ -328,7 +338,7 @@ function PathSession() {
               </Button>
             )}
             {pendingMinutes > SHORT_SESSION_MINUTES && (
-              <Button variant="ghost" block loading={planner.busy} onClick={() => void shorten(session)}>
+              <Button variant="ghost" block loading={planner.busy} disabled={!online} onClick={() => void shorten(session)}>
                 <Scissors aria-hidden className="size-4" />
                 Rút gọn còn {SHORT_SESSION_MINUTES} phút
               </Button>
@@ -345,7 +355,7 @@ function PathSession() {
           <SolidCard className="space-y-3">
             <LengthChips value={selected} onChange={setChosen} disabled={planner.busy} />
             {chosen !== null && chosen !== session.minutes_planned && (
-              <Button variant="primary" block loading={planner.busy} onClick={() => void create(chosen, true)}>
+              <Button variant="primary" block loading={planner.busy} disabled={!online} onClick={() => void create(chosen, true)}>
                 Lập lại kế hoạch {chosen} phút
               </Button>
             )}
@@ -403,6 +413,8 @@ function PathSession() {
         }
       />
     );
+  } else if (!online) {
+    body = <OnlineOnlyState feature="Lập kế hoạch phiên học" />;
   } else {
     const goal = today.dailyGoalMinutes;
     const selected = chosen ?? nearestSessionLength(goal);

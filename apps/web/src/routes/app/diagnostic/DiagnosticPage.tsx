@@ -7,6 +7,7 @@ import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
 import { ReportContentButton } from '@/components/report';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { ErrorState } from '@/components/ui/ErrorState';
+import { OnlineOnlyState } from '@/components/ui/OnlineOnlyState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { functionalTransition } from '@/design/motion';
 import { track } from '@/features/analytics';
@@ -18,6 +19,7 @@ import { SkillProgress } from './SkillProgress';
 import { SkipSkillSheet } from './SkipSkillSheet';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 import { playSound } from '@/lib/sound';
+import { useOnline } from '@/lib/useOnline';
 
 const HOME = '/app';
 
@@ -237,6 +239,7 @@ export function DiagnosticPage() {
   }, [status, report, pathId, navigate]);
 
   const inTest = status === 'question' || status === 'submitting';
+  const online = useOnline();
 
   const pause = () => {
     // Answers are already on the server; the next visit resumes at the pending item.
@@ -269,6 +272,16 @@ export function DiagnosticPage() {
       </div>
     </header>
   );
+
+  // The test is scored on the server: before it starts (or while its first request is out) offline only explains.
+  if (!online && !inTest && status !== 'report' && status !== 'finishing') {
+    return (
+      <Shell header={header}>
+        <h1 className="sr-only">Kiểm tra trình độ</h1>
+        <OnlineOnlyState feature="Bài kiểm tra trình độ" action={<Link to={HOME} className={buttonClasses('accent', 'md', true)}>Về trang chủ</Link>} />
+      </Shell>
+    );
+  }
 
   if (status === 'loading' || status === 'finishing' || status === 'report') {
     const label = status === 'loading' ? 'Đang tải bài kiểm tra…' : 'Đang tính kết quả…';

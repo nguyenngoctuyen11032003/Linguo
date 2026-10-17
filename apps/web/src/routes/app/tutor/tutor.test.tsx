@@ -1,7 +1,7 @@
 import { screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import type { AiError, AiRequestInput, AiSuccess } from '@linguo/shared';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { aiError, aiSuccess, EXPLAIN_DATA, PRACTICE_DATA, QUOTA, SENTENCE_DATA } from '@/components/ai/ai-fixtures';
 import type { AiNoticeState } from '@/features/ai-tutor/useAiNotice';
 import type { AiQuotaState } from '@/features/ai-tutor/useAiQuota';
@@ -294,5 +294,20 @@ describe('TutorPage', () => {
     await userEvent.click(within(dialog).getByRole('radio', { name: /Khó hiểu/ }));
     await userEvent.click(within(dialog).getByRole('button', { name: 'Gửi báo lỗi' }));
     expect(mocks.report).toHaveBeenCalledWith(expect.anything(), { usageId: 'u-present perfect', reason: 'unclear', note: null });
+  });
+});
+
+
+describe('TutorPage offline', () => {
+  afterEach(() => {
+    Object.defineProperty(navigator, 'onLine', { value: true, configurable: true });
+  });
+
+  it('says it needs the network instead of offering what cannot work', () => {
+    Object.defineProperty(navigator, 'onLine', { value: false, configurable: true });
+    render();
+    expect(screen.getByText('Tính năng này cần mạng')).toBeInTheDocument();
+    expect(screen.getByText(/Gia sư AI cần kết nối mạng/)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Tiếp tục học ngoại tuyến' })).toHaveAttribute('href', '/app/hoc-tap');
   });
 });
