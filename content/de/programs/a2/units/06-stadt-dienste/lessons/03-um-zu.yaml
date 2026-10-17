@@ -1,0 +1,337 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u06-um-zu
+order_index: 3
+level: a2
+title:
+  vi: Để … – um … zu, deshalb (Ich gehe zur Post, um ein Paket abzuholen.)
+objectives:
+  - vi: Nói mục đích bằng um … zu khi gửi, nhận thư và bưu phẩm.
+  - vi: Nói hệ quả bằng deshalb/deswegen/darum và đảo động từ lên ngay sau chúng.
+  - vi: Phân biệt deshalb (vì vậy – động từ vị trí 2) với weil (vì – động từ cuối).
+  - vi: Dùng từ vựng ở bưu điện – das Paket, die Briefmarke, der Absender, der Empfänger, der Briefkasten, ausfüllen, abholen.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u06-zu-infinitiv]
+items:
+  - item: de:item:a2u06-g-um-zu
+  - item: de:item:a2u06-g-deshalb
+  - item: de:item:a2u06-paket
+  - item: de:item:a2u06-paeckchen
+  - item: de:item:a2u06-briefmarke
+  - item: de:item:a2u06-abholen
+  - item: de:item:a2u06-absender
+  - item: de:item:a2u06-empfaenger
+  - item: de:item:a2u06-ausfuellen
+  - item: de:item:a2u06-einwerfen
+  - item: de:item:a2u06-briefkasten
+  - item: de:item:a2u06-lieferung
+  - item: de:item:a2u06-umschlag
+  - item: de:item:a2u06-wiegen
+  - item: de:item:a2u06-verschicken
+  - item: de:item:a2u06-zettel
+  - item: de:item:a2u06-postbote
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a1u05-post
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi ra bưu điện để lấy gói hàng", "Gói hàng nặng quá, vì vậy tôi đi taxi" và xử lý được các việc thường gặp ở bưu điện.
+  - type: explain
+    text:
+      vi: "um … zu nói mục đích (để …): um đứng đầu cụm, zu + nguyên thể đứng cuối cụm, trước cụm luôn có dấu phẩy. Ich gehe zur Post, um Briefmarken zu kaufen. Động từ tách vẫn chèn zu vào giữa: um ein Paket abzuholen."
+  - type: explain
+    text:
+      vi: "Tiếng Việt \"để mua tem\" đặt động từ ngay sau \"để\"; tiếng Đức đẩy động từ về cuối: um Briefmarken zu kaufen. Thường thì người làm hai việc là một (tôi đi – tôi mua). Cụm um … zu cũng có thể đứng đầu câu: Um Briefmarken zu kaufen, gehe ich zur Post – động từ chính đứng ngay sau dấu phẩy."
+  - type: explain
+    text:
+      vi: "deshalb, deswegen, darum đều nghĩa là \"vì vậy, cho nên\" và nêu kết quả. Khi đứng đầu câu, chúng chiếm vị trí 1 nên động từ đứng ngay sau, rồi mới đến chủ ngữ: Deshalb gehe ich zur Post. Tiếng Việt nói \"Vì vậy tôi đi\" nên người Việt hay viết sai thành Deshalb ich gehe."
+  - type: explain
+    text:
+      vi: "So sánh với weil: weil nêu nguyên nhân và đẩy động từ xuống cuối (…, weil das Paket schwer ist); deshalb nêu kết quả và đi với động từ ở vị trí 2 (Das Paket ist schwer, deshalb nehme ich ein Taxi)."
+  - type: deep_explain
+    text:
+      vi: "deshalb không bắt buộc đứng đầu: Ich nehme deshalb ein Taxi cũng đúng (đứng sau động từ). deswegen và deshalb dùng như nhau; darum hơi khẩu ngữ hơn một chút. Khi mục đích là của người khác (tôi gửi gói hàng để mẹ tôi có quà), tiếng Đức không dùng um … zu mà dùng damit – bạn sẽ học ở B1. Ở bưu điện: das Päckchen là gói nhỏ, thường rẻ hơn das Paket; kích thước, cân nặng tối đa và giá tùy hãng và có thể thay đổi, nên nhân viên sẽ cân (wiegen) gói hàng của bạn. Nếu người đưa thư (der Postbote) không gặp bạn, bạn có thể nhận một tờ giấy báo (der Zettel) ghi nơi đến lấy hàng (abholen) – mang theo giấy tờ tùy thân."
+  - type: example
+    target: Ich gehe zur Post, um ein Paket abzuholen.
+    target_lang: de
+    translation:
+      vi: Tôi ra bưu điện để lấy một gói hàng.
+    note:
+      vi: "abholen là động từ tách → abzuholen; zur Post = zu der Post."
+  - type: example
+    target: Um Briefmarken zu kaufen, gehe ich zur Post.
+    target_lang: de
+    translation:
+      vi: Để mua tem, tôi ra bưu điện.
+    note:
+      vi: "Cụm um … zu đứng đầu chiếm vị trí 1, nên động từ gehe đứng ngay sau dấu phẩy."
+  - type: example
+    target: Das Paket ist sehr schwer. Deshalb nehme ich ein Taxi.
+    target_lang: de
+    translation:
+      vi: Gói hàng rất nặng. Vì vậy tôi đi taxi.
+    note:
+      vi: "Deshalb ở vị trí 1 → động từ nehme rồi mới đến ich."
+  - type: example
+    target: "Kannst du den Brief einwerfen? Der Briefkasten ist gleich an der Ecke."
+    target_lang: de
+    translation:
+      vi: "Bạn bỏ lá thư vào thùng thư giúp mình nhé? Thùng thư ở ngay góc phố."
+    note:
+      vi: "Nhờ bạn bè nên dùng du. einwerfen là động từ tách: Kannst du … einwerfen?"
+  - type: example
+    target: "Füllen Sie bitte das Formular aus und schreiben Sie den Absender auf das Paket."
+    target_lang: de
+    translation:
+      vi: "Xin anh/chị điền vào mẫu đơn và ghi người gửi lên gói hàng."
+    note:
+      vi: "Nhân viên bưu điện nói với khách nên dùng Sie và câu mệnh lệnh lịch sự."
+  - type: common_mistake
+    wrong: Ich gehe zur Post, um abholen ein Paket.
+    right: Ich gehe zur Post, um ein Paket abzuholen.
+    target_lang: de
+    note:
+      vi: "Sau um, tân ngữ đứng trước; zu + nguyên thể (abzuholen) đứng cuối cụm."
+  - type: common_mistake
+    wrong: Das Paket ist schwer. Deshalb ich nehme ein Taxi.
+    right: Das Paket ist schwer. Deshalb nehme ich ein Taxi.
+    target_lang: de
+    note:
+      vi: "deshalb chiếm vị trí 1 nên động từ phải đứng ngay sau nó, trước chủ ngữ."
+  - type: common_mistake
+    wrong: Ich gehe zur Post, um ein Paket zu abholen.
+    right: Ich gehe zur Post, um ein Paket abzuholen.
+    target_lang: de
+    note:
+      vi: "Động từ tách: zu chen vào giữa ab- và holen, viết liền."
+  - type: summary
+    points:
+      - vi: "um + … + zu + nguyên thể = để … (cùng một người làm)."
+      - vi: "Luôn có dấu phẩy trước um; động từ tách: abzuholen, einzuwerfen."
+      - vi: "Um … zu …, + động từ + chủ ngữ … khi cụm um … zu đứng đầu."
+      - vi: "deshalb/deswegen/darum ở vị trí 1 → động từ ngay sau: Deshalb nehme ich …"
+      - vi: "weil → động từ cuối (nguyên nhân); deshalb → động từ vị trí 2 (kết quả)."
+      - vi: "Bưu điện: das Paket, das Päckchen, die Briefmarke, der Briefkasten, der Absender, der Empfänger."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u06l3-mcq-um-abzuholen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u06-g-um-zu
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi ra bưu điện để lấy một gói hàng.\""
+      stem_lang: vi
+      options:
+        - { id: m3a, text: "Ich gehe zur Post, um ein Paket abzuholen.", lang: de }
+        - { id: e7k, text: "Ich gehe zur Post, um abholen ein Paket.", lang: de }
+        - { id: w1u, text: "Ich gehe zur Post, um ein Paket abholen.", lang: de }
+        - { id: h5z, text: "Ich gehe zur Post, um ein Paket zu abholen.", lang: de }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "um … zu: tân ngữ ein Paket ở giữa, zu + nguyên thể ở cuối. abholen là động từ tách nên zu chen vào giữa: abzuholen."
+    display_answer: "Ich gehe zur Post, um ein Paket abzuholen."
+
+  - key: de:exercise:a2u06l3-mcq-deshalb-taxi
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u06-g-deshalb
+    prompt:
+      stem: "Câu trước: \"Das Paket ist sehr schwer.\" Chọn câu tiếp theo viết đúng."
+      stem_lang: vi
+      options:
+        - { id: c8f, text: "Deshalb nehme ich ein Taxi.", lang: de }
+        - { id: p2v, text: "Deshalb ich nehme ein Taxi.", lang: de }
+        - { id: s6l, text: "Deshalb ich ein Taxi nehme.", lang: de }
+        - { id: d4q, text: "Deshalb ein Taxi ich nehme.", lang: de }
+    answer:
+      correct_option_id: c8f
+    explanation:
+      vi: "Deshalb chiếm vị trí 1, nên động từ nehme đứng ngay sau, rồi đến chủ ngữ ich. Động từ chia đứng cuối là dấu hiệu của câu phụ (weil, dass, ob …), không dùng sau deshalb."
+    display_answer: "Deshalb nehme ich ein Taxi."
+
+  - key: de:exercise:a2u06l3-listen-briefmarken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-briefmarke
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Ich gehe noch schnell zur Post, um Briefmarken zu kaufen. Danach hole ich dein Päckchen ab."
+      options:
+        - { id: n5g, text: "Người nói ra bưu điện mua tem, sau đó đi lấy gói hàng nhỏ của bạn.", lang: vi }
+        - { id: b9r, text: "Người nói ra bưu điện gửi gói hàng nhỏ, sau đó mua tem.", lang: vi }
+        - { id: x4j, text: "Người nói ra bưu điện mua phong bì, sau đó gửi thư cho bạn.", lang: vi }
+        - { id: f1y, text: "Người nói nhờ bạn ra bưu điện mua tem.", lang: vi }
+    answer:
+      correct_option_id: n5g
+    explanation:
+      vi: "um Briefmarken zu kaufen = để mua tem; Danach hole ich dein Päckchen ab = sau đó tôi lấy gói hàng nhỏ của bạn (abholen = đến lấy)."
+    display_answer: "Người nói ra bưu điện mua tem, sau đó đi lấy gói hàng nhỏ của bạn."
+
+  - key: de:exercise:a2u06l3-fill-deshalb-bringe
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-g-deshalb
+    prompt:
+      template: "Der Brief ist sehr wichtig. {{b1}} {{b2}} (bringen) ich ihn direkt zur Post."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Lá thư rất quan trọng. Vì vậy tôi mang nó thẳng ra bưu điện."
+        - "Gợi ý: ô 1 là từ \"vì vậy\" (de…/des…/dar…); ô 2 là bringen chia theo ich."
+    answer:
+      blanks:
+        b1: [Deshalb, Deswegen, Darum]
+        b2: [bringe]
+    known_wrong:
+      - answer: Weil
+        feedback_vi: "weil (vì) nêu nguyên nhân và đẩy động từ xuống cuối. Ở đây câu nêu kết quả và động từ đứng ngay sau, nên dùng Deshalb/Deswegen/Darum."
+        error_tag: verb_position
+    explanation:
+      vi: "\"Vì vậy\" là deshalb (hoặc deswegen, darum). Từ này đứng ở vị trí 1, nên động từ bringe đứng ngay sau rồi mới đến ich."
+    display_answer: "Der Brief ist sehr wichtig. Deshalb bringe ich ihn direkt zur Post."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u06l3-fill-einzuwerfen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-einwerfen
+    prompt:
+      template: "Ich gehe zum Briefkasten, um den Brief {{b1}} (einwerfen). Dann gehe ich zur Post, um das Paket {{b2}} (verschicken)."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 14 }
+    answer:
+      blanks:
+        b1: [einzuwerfen]
+        b2: [zu verschicken]
+    known_wrong:
+      - answer: zu einwerfen
+        feedback_vi: "einwerfen là động từ tách: zu chen vào giữa → einzuwerfen."
+        error_tag: separable_prefix
+      - answer: verzuschicken
+        feedback_vi: "ver- không tách được, nên zu đứng riêng phía trước: zu verschicken."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Cả hai cụm đều là um … zu (mục đích). einwerfen có tiền tố tách ein- → einzuwerfen; verschicken có tiền tố không tách ver- → zu verschicken."
+    display_answer: "Ich gehe zum Briefkasten, um den Brief einzuwerfen. Dann gehe ich zur Post, um das Paket zu verschicken."
+
+  - key: de:exercise:a2u06l3-tr-briefmarken-kaufen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-um-zu
+    prompt:
+      source_text: Tôi ra bưu điện để mua tem.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich gehe zur Post, um Briefmarken zu kaufen.
+        - Ich gehe zur Post, um eine Briefmarke zu kaufen.
+        - Um Briefmarken zu kaufen, gehe ich zur Post.
+        - Um eine Briefmarke zu kaufen, gehe ich zur Post.
+        - Ich gehe auf die Post, um Briefmarken zu kaufen.
+    known_wrong:
+      - answer: Ich gehe zur Post, um kaufen Briefmarken.
+        feedback_vi: "Sau um, tân ngữ đứng trước và zu + nguyên thể đứng cuối: um Briefmarken zu kaufen."
+        error_tag: word_order
+      - answer: Ich gehe zur Post, um Briefmarken kaufen.
+        feedback_vi: "um … zu cần zu trước nguyên thể ở cuối: um Briefmarken zu kaufen."
+        error_tag: zu_infinitive
+      - answer: Um Briefmarken zu kaufen, ich gehe zur Post.
+        feedback_vi: "Cụm um … zu đứng đầu chiếm vị trí 1, nên động từ gehe đứng ngay sau dấu phẩy: …, gehe ich zur Post."
+        error_tag: verb_position
+    explanation:
+      vi: "Mục đích, cùng một người làm → um … zu: um Briefmarken zu kaufen. \"Ra bưu điện\" là zur Post gehen (zu der Post)."
+    display_answer: Ich gehe zur Post, um Briefmarken zu kaufen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u06l3-wb-um-briefmarken
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-um-zu
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng \"Um\": \"Để gửi gói hàng, tôi điền vào mẫu đơn.\""
+      tokens:
+        - { id: t-fuelle, text: fülle }
+        - { id: t-das-paket, text: das Paket }
+        - { id: t-ich, text: ich }
+        - { id: t-um, text: Um }
+        - { id: t-formular, text: das Formular }
+        - { id: t-zu, text: zu }
+        - { id: t-aus, text: aus }
+        - { id: t-verschicken, text: verschicken }
+    answer:
+      orders:
+        - [t-um, t-das-paket, t-zu, t-verschicken, t-fuelle, t-ich, t-formular, t-aus]
+    explanation:
+      vi: "Cụm um das Paket zu verschicken đứng đầu là vị trí 1, nên động từ fülle đứng ngay sau, rồi đến ich; tiền tố aus của ausfüllen đứng cuối câu."
+    display_answer: Um das Paket zu verschicken, fülle ich das Formular aus.
+
+  - key: de:exercise:a2u06l3-mcq-weil-deshalb
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      stem: "Câu nào đúng theo văn viết chuẩn?"
+      stem_lang: vi
+      options:
+        - { id: g2h, text: "Ich gehe zur Post, weil ich ein Paket abholen muss.", lang: de }
+        - { id: u5n, text: "Ich muss ein Paket abholen, deshalb ich gehe zur Post.", lang: de }
+        - { id: o8c, text: "Ich gehe zur Post, weil ich muss ein Paket abholen.", lang: de }
+        - { id: l3s, text: "Ich muss ein Paket abholen, weil gehe ich zur Post.", lang: de }
+    answer:
+      correct_option_id: g2h
+    explanation:
+      vi: "weil đẩy động từ chia (muss) xuống cuối: …, weil ich ein Paket abholen muss. Sau deshalb động từ phải đứng ngay sau (deshalb gehe ich). Câu cuối sai cả trật tự lẫn ý: \"vì tôi đi bưu điện\" không phải nguyên nhân của việc lấy gói hàng."
+    display_answer: "Ich gehe zur Post, weil ich ein Paket abholen muss."
+
+  - key: de:exercise:a2u06l3-tr-absender-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u06-absender
+    prompt:
+      source_text: Auf dem Päckchen steht kein Absender, deshalb rufe ich bei der Post an.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trên gói hàng không ghi người gửi, vì vậy tôi gọi điện cho bưu điện.
+        - Trên gói hàng không có tên người gửi, vì vậy tôi gọi điện cho bưu điện.
+        - Trên gói hàng nhỏ không ghi người gửi nên tôi gọi điện cho bưu điện.
+        - Trên gói hàng không ghi người gửi nên tôi gọi điện cho bưu điện.
+        - Gói hàng không ghi người gửi, vì vậy tôi gọi điện cho bưu điện.
+        - Trên gói hàng không ghi người gửi, cho nên tôi gọi điện đến bưu điện.
+        - Trên gói bưu phẩm không ghi người gửi, vì thế tôi gọi cho bưu điện.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Auf dem Päckchen steht kein Absender = trên gói hàng không ghi người gửi; deshalb = vì vậy/nên; bei der Post anrufen = gọi điện cho bưu điện."
+    display_answer: Trên gói hàng không ghi người gửi, vì vậy tôi gọi điện cho bưu điện.

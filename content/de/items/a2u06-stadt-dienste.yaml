@@ -1,0 +1,1236 @@
+# Học liệu unit A2U06 "Thành phố và dịch vụ" (Stadt und Dienstleistungen), tiếng Đức A2.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: câu hỏi gián tiếp, ob; dịch vụ công =================
+  - key: de:item:a2u06-g-indirekte-w-frage
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Indirekte W-Frage: Können Sie mir sagen, wo die Bibliothek ist?"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Câu hỏi gián tiếp là câu hỏi W- đặt sau một câu dẫn như Können Sie mir sagen, …? / Wissen Sie, …? / Ich weiß nicht, … . Từ để hỏi (wo, wann, wie, was, welcher …) đứng đầu câu phụ, động từ chia đi xuống cuối câu và có dấu phẩy ngăn cách. Cả câu kết thúc bằng dấu hỏi nếu câu dẫn là câu hỏi, bằng dấu chấm nếu câu dẫn là câu kể."
+      examples:
+        - target: Können Sie mir sagen, wo die Bibliothek ist?
+          translation:
+            vi: Anh/chị có thể cho tôi biết thư viện ở đâu không?
+        - target: Wissen Sie, wann das Rathaus heute öffnet?
+          translation:
+            vi: Anh/chị có biết hôm nay tòa thị chính mấy giờ mở cửa không?
+        - target: Ich weiß nicht, welcher Schalter zuständig ist.
+          translation:
+            vi: Tôi không biết quầy nào phụ trách.
+      confusion:
+        vi: "Câu hỏi trực tiếp: Wo ist die Bibliothek? (động từ ở vị trí 2). Câu hỏi gián tiếp: …, wo die Bibliothek ist (động từ ở cuối). Động từ tách viết liền ở cuối câu phụ: …, wann der Bus abfährt."
+
+  - key: de:item:a2u06-g-ob
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "ob: Ich weiß nicht, ob das Fundbüro heute geöffnet ist."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Câu hỏi có/không (Ist das Fundbüro geöffnet?) khi thành câu gián tiếp thì mở đầu bằng ob (liệu … có … không) và động từ xuống cuối. ob không được bỏ đi. Thường đứng sau Ich weiß nicht, …; Können Sie mir sagen, …?; Ich möchte wissen, …"
+      examples:
+        - target: Ich weiß nicht, ob das Fundbüro heute geöffnet ist.
+          translation:
+            vi: Tôi không biết hôm nay phòng đồ thất lạc có mở cửa không.
+        - target: Können Sie mir sagen, ob ich hier eine Wartenummer brauche?
+          translation:
+            vi: Anh/chị có thể cho tôi biết ở đây tôi có cần lấy số thứ tự không?
+      confusion:
+        vi: "ob = liệu … có … không (câu hỏi có/không gián tiếp); wenn = nếu / khi (điều kiện, thời gian). \"Ich weiß nicht, wenn …\" là sai khi bạn muốn nói \"tôi không biết liệu …\"."
+
+  - key: de:item:a2u06-wissen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "wissen, weiß, wusste, hat gewusst"
+      pos: động từ
+    back:
+      meaning:
+        vi: biết (một thông tin, một sự việc)
+      examples:
+        - target: Weißt du, wo hier die Post ist?
+          translation:
+            vi: Bạn có biết bưu điện ở chỗ nào quanh đây không?
+        - target: Das weiß ich leider nicht.
+          translation:
+            vi: Tiếc là tôi không biết điều đó.
+      confusion:
+        vi: "Chia bất quy tắc ở số ít giống động từ khuyết thiếu: ich weiß, du weißt, er/sie weiß (ngôi 1 và 3 không có -t); số nhiều wir wissen, ihr wisst. wissen đi với thông tin hoặc câu phụ (Ich weiß, wo …); còn \"quen biết một người, một nơi\" là kennen (Ich kenne Anna)."
+
+  - key: de:item:a2u06-auskunft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Auskunft, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin (được cung cấp khi hỏi); quầy hướng dẫn/thông tin
+      examples:
+        - target: Fragen Sie bitte an der Auskunft.
+          translation:
+            vi: Anh/chị hãy hỏi ở quầy thông tin nhé.
+        - target: Können Sie mir eine Auskunft geben?
+          translation:
+            vi: Anh/chị có thể cung cấp cho tôi một thông tin không?
+      confusion:
+        vi: "Số nhiều die Auskünfte. die Information cũng là \"thông tin\"; die Auskunft nhấn mạnh thông tin bạn hỏi và được trả lời."
+
+  - key: de:item:a2u06-rathaus
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Rathaus, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tòa thị chính, trụ sở chính quyền thành phố
+      examples:
+        - target: Das Rathaus ist am Marktplatz.
+          translation:
+            vi: Tòa thị chính ở quảng trường chợ.
+      pronunciation_note:
+        vi: "Rat + Haus: t và h thuộc hai phần khác nhau nên đọc tách \"Rát-hau-s\", không đọc thành một âm \"th\"."
+
+  - key: de:item:a2u06-bibliothek
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Bibliothek, -en"
+      ipa: /bibli̯oˈteːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư viện
+      examples:
+        - target: Die Bibliothek ist am Sonntag geschlossen.
+          translation:
+            vi: Thư viện đóng cửa vào Chủ nhật.
+      pronunciation_note:
+        vi: "th đọc là t; trọng âm ở âm tiết cuối -thek với e dài."
+
+  - key: de:item:a2u06-fundbuero
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Fundbüro, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng đồ thất lạc (nơi giữ đồ người khác nhặt được)
+      examples:
+        - target: Ich habe meine Geldbörse verloren. Ist sie vielleicht im Fundbüro?
+          translation:
+            vi: Tôi bị mất ví. Có khi nào ví ở phòng đồ thất lạc không?
+      confusion:
+        vi: "finden (tìm thấy) → der Fund (đồ nhặt được) + das Büro. Từ ghép lấy giống của từ cuối: das Büro → das Fundbüro."
+
+  - key: de:item:a2u06-polizei
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Polizei (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh sát, công an (cơ quan)
+      examples:
+        - target: Die Polizei kommt gleich.
+          translation:
+            vi: Cảnh sát sắp đến ngay.
+        - target: Wo ist hier die Polizei?
+          translation:
+            vi: Đồn cảnh sát ở chỗ nào quanh đây?
+      confusion:
+        vi: "die Polizei là cả lực lượng nên động từ chia số ít (Die Polizei kommt). Một người cảnh sát là der Polizist / die Polizistin."
+
+  - key: de:item:a2u06-schalter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Schalter, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy giao dịch (ở ngân hàng, bưu điện, cơ quan)
+      examples:
+        - target: Gehen Sie bitte zu Schalter drei.
+          translation:
+            vi: Mời anh/chị đến quầy số ba.
+      confusion:
+        vi: "der Schalter còn có nghĩa là công tắc (đèn, điện). Ở cơ quan, quầy thường được đánh số: Schalter 1, Schalter 2 …"
+
+  - key: de:item:a2u06-wartenummer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Wartenummer, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: số thứ tự (để chờ đến lượt)
+      examples:
+        - target: Bitte ziehen Sie eine Wartenummer.
+          translation:
+            vi: Xin vui lòng lấy số thứ tự.
+      confusion:
+        vi: "warten (chờ) + die Nummer. Ở cơ quan, \"lấy số\" thường được nói là eine Wartenummer ziehen (rút số từ máy)."
+
+  - key: de:item:a2u06-zustaendig
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zuständig
+      pos: tính từ
+    back:
+      meaning:
+        vi: "phụ trách, có thẩm quyền (zuständig für + Akkusativ)"
+      examples:
+        - target: Wer ist hier für Anmeldungen zuständig?
+          translation:
+            vi: Ở đây ai phụ trách việc đăng ký cư trú?
+        - target: Dafür ist das Bürgeramt zuständig.
+          translation:
+            vi: Việc đó thuộc về văn phòng dịch vụ công dân.
+      confusion:
+        vi: "Rất hay gặp ở cơ quan Đức: nếu nghe \"Wir sind nicht zuständig\" nghĩa là việc của bạn không thuộc chỗ này, bạn cần hỏi nơi khác."
+
+  - key: de:item:a2u06-oeffnen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: öffnen
+      pos: động từ
+    back:
+      meaning:
+        vi: mở; mở cửa (cửa hàng, cơ quan)
+      examples:
+        - target: Die Bibliothek öffnet um neun Uhr.
+          translation:
+            vi: Thư viện mở cửa lúc chín giờ.
+        - target: Kannst du bitte das Fenster öffnen?
+          translation:
+            vi: Bạn mở cửa sổ giúp mình được không?
+      confusion:
+        vi: "öffnen là động từ (Die Post öffnet um acht); geöffnet là trạng thái \"đang mở cửa\" (Die Post ist geöffnet). Gốc öffn- kết thúc bằng phụ âm khó đọc nên thêm -e-: du öffnest, er öffnet."
+
+  - key: de:item:a2u06-regenschirm
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Regenschirm, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ô, cái dù (che mưa)
+      examples:
+        - target: Ich habe meinen Regenschirm im Bus vergessen.
+          translation:
+            vi: Tôi để quên ô trên xe buýt.
+      confusion:
+        vi: "der Regen (mưa) + der Schirm (cái ô). Nói ngắn thường chỉ là der Schirm."
+
+  - key: de:item:a2u06-geldboerse
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Geldbörse, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ví (đựng tiền)
+      examples:
+        - target: In meiner Geldbörse sind mein Ausweis und meine Kreditkarte.
+          translation:
+            vi: Trong ví của tôi có thẻ căn cước và thẻ tín dụng.
+      confusion:
+        vi: "Trong lời nói hằng ngày người ta còn gọi ví là das Portemonnaie hoặc der Geldbeutel (nhiều ở miền Nam nước Đức)."
+
+  - key: de:item:a2u06-eingang
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Eingang, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối vào, cửa vào
+      examples:
+        - target: Die Auskunft ist gleich rechts neben dem Eingang.
+          translation:
+            vi: Quầy thông tin ở ngay bên phải cạnh lối vào.
+      confusion:
+        vi: "der Eingang (lối vào) ↔ der Ausgang (lối ra). Cả hai đều giống đực vì từ cuối là der Gang."
+
+  - key: de:item:a2u06-ausgang
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Ausgang, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối ra, cửa ra
+      examples:
+        - target: Wo ist hier der Ausgang?
+          translation:
+            vi: Lối ra ở đâu vậy?
+      confusion:
+        vi: "Số nhiều die Ausgänge. Trên biển báo thường chỉ ghi Ausgang hoặc Notausgang (lối thoát hiểm)."
+
+  # ================= bài 2: zu + nguyên thể; ngân hàng =================
+  - key: de:item:a2u06-g-zu-infinitiv
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "zu + Infinitiv: Es ist wichtig, ein Konto zu eröffnen."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Sau Es ist wichtig/schwer/einfach …, sau các động từ như vergessen, versuchen và sau danh từ như Zeit, Lust, ta dùng cụm zu + nguyên thể ở cuối câu. Với động từ tách, zu chen vào giữa: anzurufen, abzuheben. Sau động từ khuyết thiếu (können, müssen, wollen, dürfen …) thì không có zu."
+      examples:
+        - target: Es ist wichtig, die Geheimzahl nicht zu vergessen.
+          translation:
+            vi: Điều quan trọng là đừng quên mã PIN.
+        - target: Ich habe keine Zeit, heute zur Bank zu gehen.
+          translation:
+            vi: Hôm nay tôi không có thời gian ra ngân hàng.
+        - target: Ich versuche, am Automaten Geld abzuheben.
+          translation:
+            vi: Tôi đang cố rút tiền ở máy.
+      confusion:
+        vi: "Ich muss zur Bank gehen (modal → không zu) ≠ Ich habe keine Lust, zur Bank zu gehen (danh từ Lust → có zu). Cụm zu không có chủ ngữ riêng: người làm việc đó là chủ ngữ của câu chính."
+
+  - key: de:item:a2u06-konto
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Konto, Konten"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài khoản (ngân hàng)
+      examples:
+        - target: Ich möchte ein Konto eröffnen.
+          translation:
+            vi: Tôi muốn mở một tài khoản.
+      confusion:
+        vi: "Số nhiều thường dùng là die Konten (cũng gặp die Kontos). Tài khoản được nhận diện bằng số IBAN, dùng khi chuyển khoản."
+
+  - key: de:item:a2u06-eroeffnen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: eröffnen
+      pos: động từ
+    back:
+      meaning:
+        vi: mở (tài khoản); khai trương (cửa hàng)
+      examples:
+        - target: Wir haben gestern ein Konto für unsere Tochter eröffnet.
+          translation:
+            vi: Hôm qua chúng tôi đã mở một tài khoản cho con gái.
+      confusion:
+        vi: "ein Konto eröffnen (mở tài khoản) – không dùng öffnen. Tiền tố er- không tách, Partizip II là eröffnet (không có ge-)."
+
+  - key: de:item:a2u06-kreditkarte
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kreditkarte, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ tín dụng
+      examples:
+        - target: Kann ich hier mit Kreditkarte bezahlen?
+          translation:
+            vi: Ở đây tôi trả bằng thẻ tín dụng được không?
+      confusion:
+        vi: "Ở Đức thẻ ghi nợ của ngân hàng (thường gọi là Girocard hoặc EC-Karte) rất phổ biến; vẫn có quán nhỏ chỉ nhận tiền mặt."
+
+  - key: de:item:a2u06-geheimzahl
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Geheimzahl, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: mã PIN (số bí mật của thẻ)
+      examples:
+        - target: Geben Sie bitte Ihre Geheimzahl ein.
+          translation:
+            vi: Xin vui lòng nhập mã PIN của quý khách.
+      confusion:
+        vi: "geheim (bí mật) + die Zahl (con số). Trong lời nói cũng hay gọi là die PIN."
+
+  - key: de:item:a2u06-ueberweisen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "überweisen, überwies, hat überwiesen"
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển khoản
+      examples:
+        - target: Ich überweise die Miete jeden Monat.
+          translation:
+            vi: Tháng nào tôi cũng chuyển khoản tiền nhà.
+      confusion:
+        vi: "über- ở đây không tách: ich überweise, Partizip II überwiesen (không có ge-), zu-Infinitiv zu überweisen. Danh từ: die Überweisung (lệnh chuyển khoản)."
+
+  - key: de:item:a2u06-abheben
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "abheben, hob ab, hat abgehoben"
+      pos: động từ
+    back:
+      meaning:
+        vi: rút (tiền)
+      examples:
+        - target: Ich hebe am Geldautomaten 50 Euro ab.
+          translation:
+            vi: Tôi rút 50 euro ở máy ATM.
+      confusion:
+        vi: "Động từ tách: ich hebe … ab; zu-Infinitiv là abzuheben (zu chen vào giữa)."
+
+  - key: de:item:a2u06-geldautomat
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "der Geldautomat, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy rút tiền, cây ATM
+      examples:
+        - target: Wo ist hier in der Nähe ein Geldautomat?
+          translation:
+            vi: Gần đây cây ATM ở chỗ nào?
+      confusion:
+        vi: "Danh từ biến cách yếu: chỉ Nominativ số ít là der Geldautomat, còn lại thêm -en: den Geldautomaten, dem Geldautomaten (am Geldautomaten)."
+
+  - key: de:item:a2u06-bargeld
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Bargeld (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền mặt
+      examples:
+        - target: Hast du Bargeld dabei?
+          translation:
+            vi: Bạn có mang tiền mặt theo không?
+      confusion:
+        vi: "\"Trả tiền mặt\" là bar bezahlen (Ich bezahle bar). Ở Đức nhiều người vẫn hay dùng tiền mặt, dù thanh toán bằng thẻ ngày càng phổ biến."
+
+  - key: de:item:a2u06-versuchen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: versuchen
+      pos: động từ
+    back:
+      meaning:
+        vi: thử, cố gắng
+      examples:
+        - target: Ich versuche, dich später anzurufen.
+          translation:
+            vi: Lát nữa mình sẽ cố gọi cho bạn.
+      confusion:
+        vi: "versuchen + zu-Infinitiv = cố làm gì. Tiền tố ver- không tách: Partizip II versucht."
+
+  - key: de:item:a2u06-gebuehr
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Gebühr, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí, lệ phí
+      examples:
+        - target: Kostet das Konto eine Gebühr?
+          translation:
+            vi: Tài khoản này có mất phí không?
+      confusion:
+        vi: "die Gebühr là phí cho một dịch vụ (ngân hàng, cơ quan); der Preis là giá của một món hàng. Mức phí tùy nơi và có thể thay đổi."
+
+  - key: de:item:a2u06-geld
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Geld, -er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền
+      examples:
+        - target: Ich habe leider kein Geld dabei.
+          translation:
+            vi: Tiếc là tôi không mang theo tiền.
+      confusion:
+        vi: "Hằng ngày gần như chỉ dùng số ít (das Geld); số nhiều die Gelder nghĩa là các khoản tiền, các nguồn quỹ."
+
+  - key: de:item:a2u06-einzahlen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: einzahlen
+      pos: động từ
+    back:
+      meaning:
+        vi: nộp tiền (vào tài khoản)
+      examples:
+        - target: Ich möchte 200 Euro auf mein Konto einzahlen.
+          translation:
+            vi: Tôi muốn nộp 200 euro vào tài khoản của mình.
+      confusion:
+        vi: "einzahlen (nộp vào) ↔ abheben (rút ra). Động từ tách: ich zahle … ein, zu-Infinitiv einzuzahlen."
+
+  - key: de:item:a2u06-muenze
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Münze, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng xu, tiền xu
+      examples:
+        - target: Für den Automaten brauche ich Münzen.
+          translation:
+            vi: Để dùng cái máy này tôi cần tiền xu.
+      confusion:
+        vi: "die Münze (tiền xu) ↔ der Geldschein (tiền giấy)."
+
+  - key: de:item:a2u06-geldschein
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Geldschein, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tờ tiền, tiền giấy
+      examples:
+        - target: Der Automat nimmt keine Geldscheine.
+          translation:
+            vi: Cái máy này không nhận tiền giấy.
+      confusion:
+        vi: "Nói ngắn thường là der Schein: ein Zehn-Euro-Schein (tờ mười euro)."
+
+  - key: de:item:a2u06-filiale
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Filiale, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chi nhánh (ngân hàng, bưu điện, cửa hàng)
+      examples:
+        - target: Die Filiale in der Bahnhofstraße ist leider geschlossen.
+          translation:
+            vi: Tiếc là chi nhánh trên phố Bahnhofstraße đóng cửa rồi.
+      pronunciation_note:
+        vi: "Trọng âm rơi vào âm a: fi-li-A-le, trong đó \"li-a\" đọc lướt gần như một âm."
+
+  # ================= bài 3: um … zu, deshalb; bưu điện =================
+  - key: de:item:a2u06-g-um-zu
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "um … zu: Ich gehe zur Post, um ein Paket abzuholen."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "um … zu + nguyên thể nói mục đích (để …), thường khi người làm hai việc là một. um đứng đầu cụm, zu + nguyên thể đứng cuối cụm, luôn có dấu phẩy. Cụm um … zu cũng có thể đứng đầu câu; khi đó động từ chính đứng ngay sau dấu phẩy."
+      examples:
+        - target: Ich gehe zur Post, um ein Paket abzuholen.
+          translation:
+            vi: Tôi ra bưu điện để lấy một gói hàng.
+        - target: Um Briefmarken zu kaufen, gehe ich zur Post.
+          translation:
+            vi: Để mua tem, tôi ra bưu điện.
+      confusion:
+        vi: "Tiếng Việt \"để + động từ\" đứng ngay trước tân ngữ; tiếng Đức đẩy nguyên thể về cuối: um ein Paket abzuholen (không phải um abholen ein Paket). Khi hai việc do hai người khác nhau làm, tiếng Đức dùng damit – bạn sẽ học ở B1."
+
+  - key: de:item:a2u06-g-deshalb
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "deshalb / deswegen / darum: Deshalb gehe ich zur Post."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "deshalb, deswegen, darum (vì vậy, cho nên) nêu kết quả và là trạng từ: khi đứng ở vị trí 1, động từ đứng ngay sau rồi mới đến chủ ngữ. Chúng cũng có thể đứng giữa câu, sau động từ (Ich gehe deshalb …). So sánh: weil nêu nguyên nhân và đẩy động từ xuống cuối."
+      examples:
+        - target: Das Paket ist sehr schwer. Deshalb nehme ich ein Taxi.
+          translation:
+            vi: Gói hàng rất nặng. Vì vậy tôi đi taxi.
+        - target: Ich nehme ein Taxi, weil das Paket sehr schwer ist.
+          translation:
+            vi: Tôi đi taxi vì gói hàng rất nặng.
+      confusion:
+        vi: "Tiếng Việt \"Vì vậy tôi đi\" giữ chủ ngữ trước động từ, nhưng tiếng Đức phải đảo: Deshalb gehe ich (không phải Deshalb ich gehe)."
+
+  - key: de:item:a2u06-paket
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Paket, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu kiện, gói hàng
+      examples:
+        - target: Ich schicke meiner Familie ein Paket nach Vietnam.
+          translation:
+            vi: Tôi gửi một gói hàng về Việt Nam cho gia đình.
+      confusion:
+        vi: "das Paket ↔ das Päckchen (gói nhỏ). Kích thước, cân nặng và giá cho từng loại tùy hãng vận chuyển và có thể thay đổi."
+
+  - key: de:item:a2u06-paeckchen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Päckchen, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: gói hàng nhỏ, gói bưu phẩm nhỏ
+      examples:
+        - target: Für dich ist ein Päckchen gekommen.
+          translation:
+            vi: Có một gói bưu phẩm nhỏ gửi đến cho bạn.
+      confusion:
+        vi: "Đuôi giảm nhẹ -chen làm danh từ thành \"nhỏ\" và giống trung, số nhiều không đổi: das Paket → das Päckchen, die Päckchen (der Kuchen không phải dạng giảm nhẹ này)."
+
+  - key: de:item:a2u06-briefmarke
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Briefmarke, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: con tem (thư)
+      examples:
+        - target: Ich brauche zwei Briefmarken für Briefe nach Vietnam.
+          translation:
+            vi: Tôi cần hai con tem cho thư gửi về Việt Nam.
+      confusion:
+        vi: "der Brief + die Marke → die Briefmarke (giống của từ cuối). Giá tem tùy loại thư và có thể thay đổi."
+
+  - key: de:item:a2u06-abholen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: abholen
+      pos: động từ
+    back:
+      meaning:
+        vi: đến lấy, đến nhận (đồ); đón (người)
+      examples:
+        - target: Ich hole das Paket morgen in der Filiale ab.
+          translation:
+            vi: Ngày mai tôi đến chi nhánh lấy gói hàng.
+        - target: Holst du mich vom Bahnhof ab?
+          translation:
+            vi: Bạn ra ga đón mình nhé?
+      confusion:
+        vi: "Động từ tách: ich hole … ab; zu-Infinitiv abzuholen; Partizip II abgeholt."
+
+  - key: de:item:a2u06-absender
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Absender, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người gửi; địa chỉ người gửi
+      examples:
+        - target: Auf dem Brief steht kein Absender.
+          translation:
+            vi: Trên thư không ghi người gửi.
+      confusion:
+        vi: "der Absender (người gửi) ↔ der Empfänger (người nhận). Người gửi là nữ: die Absenderin."
+
+  - key: de:item:a2u06-empfaenger
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Empfänger, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người nhận
+      examples:
+        - target: Der Empfänger wohnt leider nicht mehr hier.
+          translation:
+            vi: Tiếc là người nhận không còn sống ở đây nữa.
+      confusion:
+        vi: "Người nhận là nữ: die Empfängerin."
+
+  - key: de:item:a2u06-ausfuellen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: ausfüllen
+      pos: động từ
+    back:
+      meaning:
+        vi: điền (vào mẫu đơn)
+      examples:
+        - target: Füllen Sie bitte dieses Formular aus.
+          translation:
+            vi: Xin anh/chị điền vào mẫu đơn này.
+      confusion:
+        vi: "Động từ tách: ich fülle … aus; zu-Infinitiv auszufüllen."
+
+  - key: de:item:a2u06-einwerfen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "einwerfen, wirft ein, warf ein, hat eingeworfen"
+      pos: động từ
+    back:
+      meaning:
+        vi: bỏ (thư) vào thùng thư
+      examples:
+        - target: Kannst du bitte den Brief einwerfen?
+          translation:
+            vi: Bạn bỏ lá thư này vào thùng thư giúp mình nhé?
+      confusion:
+        vi: "Động từ tách và đổi nguyên âm: du wirfst … ein, er wirft … ein; zu-Infinitiv einzuwerfen."
+
+  - key: de:item:a2u06-briefkasten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Briefkasten, ¨-"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thùng thư (công cộng); hộp thư (ở nhà)
+      examples:
+        - target: Der Briefkasten ist gleich an der Ecke.
+          translation:
+            vi: Thùng thư ở ngay góc phố.
+      confusion:
+        vi: "Số nhiều die Briefkästen. Ở Đức, thùng thư công cộng thường màu vàng; hộp thư riêng của từng nhà cũng gọi là der Briefkasten."
+
+  - key: de:item:a2u06-lieferung
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Lieferung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc giao hàng; lô hàng được giao
+      examples:
+        - target: Die Lieferung kommt leider erst am Freitag.
+          translation:
+            vi: Tiếc là hàng phải đến thứ Sáu mới giao tới.
+      confusion:
+        vi: "Danh từ tạo bằng hậu tố -ung là giống cái: die Lieferung, die Anmeldung, die Wohnung."
+
+  - key: de:item:a2u06-umschlag
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Umschlag, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong bì
+      examples:
+        - target: Haben Sie einen Umschlag für diesen Brief?
+          translation:
+            vi: Anh/chị có phong bì cho lá thư này không?
+      confusion:
+        vi: "Số nhiều die Umschläge. Nói rõ hơn là der Briefumschlag."
+
+  - key: de:item:a2u06-wiegen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "wiegen, wog, hat gewogen"
+      pos: động từ
+    back:
+      meaning:
+        vi: cân (vật); nặng (bao nhiêu)
+      examples:
+        - target: Das Paket wiegt drei Kilo.
+          translation:
+            vi: Gói hàng nặng ba ký.
+        - target: Können Sie das Päckchen bitte wiegen?
+          translation:
+            vi: Anh/chị cân giúp tôi gói hàng nhỏ này được không?
+      confusion:
+        vi: "Hỏi cân nặng: Wie viel wiegt das Paket? Danh từ liên quan: das Gewicht (cân nặng)."
+
+  - key: de:item:a2u06-verschicken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verschicken
+      pos: động từ
+    back:
+      meaning:
+        vi: gửi đi (thư, hàng)
+      examples:
+        - target: Wir verschicken die Einladungen morgen.
+          translation:
+            vi: Ngày mai chúng tôi gửi thiệp mời đi.
+      confusion:
+        vi: "Gần nghĩa với schicken; ver- không tách nên zu-Infinitiv là zu verschicken, Partizip II verschickt."
+
+  - key: de:item:a2u06-zettel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Zettel, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẩu giấy, tờ giấy nhỏ (ghi chú, giấy báo)
+      examples:
+        - target: Im Briefkasten war ein Zettel von der Post.
+          translation:
+            vi: Trong hộp thư có một tờ giấy báo của bưu điện.
+      confusion:
+        vi: "Khi người giao hàng không gặp bạn, họ có thể để lại một tờ giấy báo (Zettel) ghi nơi bạn đến lấy hàng."
+
+  - key: de:item:a2u06-postbote
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "der Postbote, -n / die Postbotin, -nen"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đưa thư
+      examples:
+        - target: Der Postbote kommt meistens am Vormittag.
+          translation:
+            vi: Người đưa thư thường đến vào buổi sáng.
+      confusion:
+        vi: "der Postbote biến cách yếu: den Postboten, dem Postboten (Ich habe den Postboten gesehen)."
+
+  # ================= bài 4: lassen; nicht müssen ≠ nicht dürfen; dịch vụ =================
+  - key: de:item:a2u06-g-lassen
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "lassen + Infinitiv: Ich lasse mein Fahrrad reparieren."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "lassen + nguyên thể (ở cuối câu) nghĩa là nhờ / thuê người khác làm việc đó cho mình. Chia: ich lasse, du lässt, er/sie lässt. Ich repariere mein Fahrrad = tôi tự sửa; Ich lasse mein Fahrrad reparieren = tôi mang đi sửa."
+      examples:
+        - target: Ich lasse mein Fahrrad reparieren.
+          translation:
+            vi: Tôi mang xe đạp đi sửa.
+        - target: Lässt du dir beim Friseur die Haare schneiden?
+          translation:
+            vi: Bạn đi cắt tóc ở tiệm à?
+      confusion:
+        vi: "Tiếng Việt nói \"tôi đi sửa xe\", \"tôi đi cắt tóc\" dù người khác làm; tiếng Đức phải nói rõ bằng lassen. Nguyên thể đứng cuối như sau động từ khuyết thiếu: Ich lasse … reparieren."
+
+  - key: de:item:a2u06-g-muss-nicht-darf-nicht
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "nicht müssen ≠ nicht dürfen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "nicht müssen = không cần, không bắt buộc (làm cũng được, không làm cũng được). nicht dürfen = không được phép, bị cấm. Tiếng Việt \"không phải …\" gần với nicht müssen, \"không được …\" gần với nicht dürfen."
+      examples:
+        - target: Sie müssen nicht warten. Der Schalter ist frei.
+          translation:
+            vi: Anh/chị không cần chờ. Quầy đang trống.
+        - target: Hier dürfen Sie nicht parken.
+          translation:
+            vi: Ở đây anh/chị không được đỗ xe.
+      confusion:
+        vi: "Nếu bạn biết tiếng Anh: must not = cấm, tương ứng nicht dürfen; còn nicht müssen giống don't have to. Với danh từ có thể dùng kein: Sie müssen kein Formular ausfüllen (không cần điền đơn)."
+
+  - key: de:item:a2u06-lassen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "lassen, lässt, ließ, hat gelassen"
+      pos: động từ
+    back:
+      meaning:
+        vi: để, để lại; nhờ / cho người khác làm (lassen + nguyên thể)
+      examples:
+        - target: Ich lasse mein Auto in der Werkstatt reparieren.
+          translation:
+            vi: Tôi mang ô tô đến xưởng sửa.
+        - target: Lass das bitte hier.
+          translation:
+            vi: Cứ để cái đó ở đây nhé.
+      confusion:
+        vi: "Khi đi kèm một nguyên thể khác, Perfekt dùng lassen thay cho gelassen: Ich habe mein Fahrrad reparieren lassen (chỉ cần nhận ra ở bài này)."
+
+  - key: de:item:a2u06-reparieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: reparieren
+      pos: động từ
+    back:
+      meaning:
+        vi: sửa, sửa chữa
+      examples:
+        - target: Kann man das Handy noch reparieren?
+          translation:
+            vi: Cái điện thoại này còn sửa được không?
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge- trong Partizip II: repariert (Ich habe das Fahrrad repariert)."
+
+  - key: de:item:a2u06-werkstatt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Werkstatt, Werkstätten"
+      pos: danh từ
+    back:
+      meaning:
+        vi: xưởng sửa chữa (xe hơi, xe đạp …)
+      examples:
+        - target: Mein Auto ist seit Montag in der Werkstatt.
+          translation:
+            vi: Ô tô của tôi ở trong xưởng sửa từ thứ Hai.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Werkstätten. Xưởng sửa xe đạp thường gọi là die Fahrradwerkstatt."
+
+  - key: de:item:a2u06-friseur
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Friseur, -e"
+      ipa: /fʁiˈzøːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thợ cắt tóc; tiệm cắt tóc
+      examples:
+        - target: Morgen gehe ich zum Friseur.
+          translation:
+            vi: Ngày mai tôi đi cắt tóc.
+      pronunciation_note:
+        vi: "eu ở đây đọc như ö dài (môi tròn như o, lưỡi như ê), không đọc \"oi\" như trong heute; trọng âm ở âm tiết cuối."
+      confusion:
+        vi: "Nữ: die Friseurin. \"Ở tiệm cắt tóc\" là beim Friseur, \"đi cắt tóc\" là zum Friseur gehen. Cũng gặp cách viết der Frisör."
+
+  - key: de:item:a2u06-schneiden
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "schneiden, schnitt, hat geschnitten"
+      pos: động từ
+    back:
+      meaning:
+        vi: cắt
+      examples:
+        - target: Kannst du bitte das Brot schneiden?
+          translation:
+            vi: Bạn cắt bánh mì giúp mình được không?
+      confusion:
+        vi: "Cắt tóc ở tiệm: sich die Haare schneiden lassen (mir/dir … ở Dativ vì tóc là của mình)."
+
+  - key: de:item:a2u06-reinigung
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Reinigung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiệm giặt khô, tiệm giặt là; việc làm sạch
+      examples:
+        - target: Ich bringe meinen Anzug in die Reinigung.
+          translation:
+            vi: Tôi mang bộ com-lê đến tiệm giặt khô.
+      confusion:
+        vi: "Mang đồ đến tiệm: in die Reinigung bringen (Wohin? → Akkusativ); đồ đang ở tiệm: in der Reinigung (Wo? → Dativ)."
+
+  - key: de:item:a2u06-handwerker
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Handwerker, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thợ (thợ sửa chữa, thợ thủ công)
+      examples:
+        - target: Morgen kommt ein Handwerker und repariert die Heizung.
+          translation:
+            vi: Ngày mai có thợ đến sửa lò sưởi.
+      confusion:
+        vi: "Nữ: die Handwerkerin. Từ chung cho thợ điện, thợ nước, thợ sơn …"
+
+  - key: de:item:a2u06-erlaubt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: erlaubt
+      pos: tính từ
+    back:
+      meaning:
+        vi: được phép
+      examples:
+        - target: Ist Fotografieren hier erlaubt?
+          translation:
+            vi: Ở đây có được chụp ảnh không?
+      confusion:
+        vi: "erlaubt ↔ verboten. Câu hỏi lịch sự: Darf man hier fotografieren?"
+
+  - key: de:item:a2u06-verboten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verboten
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị cấm
+      examples:
+        - target: Rauchen ist hier verboten.
+          translation:
+            vi: Ở đây cấm hút thuốc.
+      confusion:
+        vi: "Trên biển báo thường chỉ có danh từ + verboten: Parken verboten, Rauchen verboten. Nói thành câu: Hier darf man nicht parken."
+
+  - key: de:item:a2u06-anzug
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Anzug, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ com-lê, bộ vest
+      examples:
+        - target: Für die Hochzeit brauche ich einen neuen Anzug.
+          translation:
+            vi: Tôi cần một bộ com-lê mới cho đám cưới.
+      confusion:
+        vi: "Số nhiều die Anzüge. Không nhầm với der Aufzug (thang máy)."
+
+  - key: de:item:a2u06-kosten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kosten (Pl.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chi phí
+      examples:
+        - target: Die Kosten für die Reparatur sind leider hoch.
+          translation:
+            vi: Tiếc là chi phí sửa chữa cao.
+      confusion:
+        vi: "die Kosten chỉ có số nhiều (Die Kosten sind …); động từ kosten nghĩa là \"có giá\" (Das kostet 20 Euro)."
+
+  - key: de:item:a2u06-fertig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fertig
+      pos: tính từ
+    back:
+      meaning:
+        vi: xong, làm xong, sẵn sàng
+      examples:
+        - target: Wann ist mein Fahrrad fertig?
+          translation:
+            vi: Khi nào xe đạp của tôi sửa xong?
+      confusion:
+        vi: "Ở tiệm dịch vụ rất hay nghe: Es ist morgen fertig (mai là xong). Trong khẩu ngữ, ich bin fertig còn có nghĩa \"tôi mệt rã rời\"."
+
+  - key: de:item:a2u06-faerben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: färben
+      pos: động từ
+    back:
+      meaning:
+        vi: nhuộm (màu)
+      examples:
+        - target: Ich lasse mir beim Friseur die Haare färben.
+          translation:
+            vi: Tôi nhuộm tóc ở tiệm.
+      confusion:
+        vi: "Không nhầm với fahren hay fehlen: färben có ä, liên quan đến die Farbe (màu)."
+
+  - key: de:item:a2u06-kette
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kette, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: dây xích (xe đạp); dây chuyền
+      examples:
+        - target: Die Kette von meinem Fahrrad ist kaputt.
+          translation:
+            vi: Xích xe đạp của tôi bị hỏng.
+      confusion:
+        vi: "die Kette còn là dây chuyền đeo cổ (die Halskette) và chuỗi cửa hàng (eine Supermarktkette)."

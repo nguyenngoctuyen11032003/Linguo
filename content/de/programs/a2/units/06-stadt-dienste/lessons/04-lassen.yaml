@@ -1,0 +1,354 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u06-lassen
+order_index: 4
+level: a2
+title:
+  vi: Nhờ sửa – lassen; không cần ≠ không được (Ich lasse mein Fahrrad reparieren.)
+objectives:
+  - vi: Thuê dịch vụ – sửa xe, cắt tóc, giặt khô – bằng lassen + nguyên thể.
+  - vi: Hỏi khi nào xong và chi phí bao nhiêu (Wann ist … fertig? Was kostet …?).
+  - vi: Hiểu điều bị cấm và điều không bắt buộc – nicht dürfen ≠ nicht müssen, verboten, erlaubt.
+  - vi: Nghe hiểu hội thoại ngắn ở xưởng sửa xe, tiệm giặt và lời nhắc trên biển báo.
+estimated_minutes: 17
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:a2u06-um-zu]
+items:
+  - item: de:item:a2u06-g-lassen
+  - item: de:item:a2u06-g-muss-nicht-darf-nicht
+  - item: de:item:a2u06-lassen
+  - item: de:item:a2u06-reparieren
+  - item: de:item:a2u06-werkstatt
+  - item: de:item:a2u06-friseur
+  - item: de:item:a2u06-schneiden
+  - item: de:item:a2u06-reinigung
+  - item: de:item:a2u06-handwerker
+  - item: de:item:a2u06-erlaubt
+  - item: de:item:a2u06-verboten
+  - item: de:item:a2u06-anzug
+  - item: de:item:a2u06-kosten
+  - item: de:item:a2u06-fertig
+  - item: de:item:a2u06-faerben
+  - item: de:item:a2u06-kette
+  - item: de:item:a1u06-g-duerfen
+    role: reuse
+  - item: de:item:a1u04-g-modalverben
+    role: reuse
+  - item: de:item:a1u06-g-man
+    role: reuse
+  - item: de:item:a1u02-fahrrad
+    role: reuse
+  - item: de:item:a2u06-abholen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi mang xe đạp đi sửa", "Tôi đi cắt tóc", hỏi được khi nào xong, và không còn nhầm "không cần" với "không được phép".
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"tôi đi sửa xe\", \"tôi đi cắt tóc\" dù người khác làm. Tiếng Đức phân biệt rõ: Ich repariere mein Fahrrad = tôi tự sửa; Ich lasse mein Fahrrad reparieren = tôi nhờ/thuê người sửa."
+  - type: explain
+    text:
+      vi: "lassen chia ở vị trí 2, việc được làm (nguyên thể) đứng cuối câu – giống như với động từ khuyết thiếu và không có zu: Ich lasse meinen Anzug reinigen. lassen đổi nguyên âm ở du và er: du lässt, er/sie lässt."
+  - type: explain
+    text:
+      vi: "nicht müssen = không cần (không bắt buộc): Sie müssen nicht warten. nicht dürfen = không được phép (bị cấm): Hier dürfen Sie nicht parken. Tiếng Việt \"không phải\" gần với nicht müssen, còn \"không được\" là nicht dürfen."
+  - type: explain
+    text:
+      vi: "Nếu bạn biết tiếng Anh, cẩn thận: must not (cấm) tương ứng nicht dürfen, không phải nicht müssen. Trên biển báo thường chỉ có danh từ + verboten (Rauchen verboten) hoặc erlaubt."
+  - type: deep_explain
+    text:
+      vi: "Cắt tóc của chính mình ở tiệm: Ich lasse mir die Haare schneiden – mir ở Dativ cho biết tóc là của mình (giống Ich wasche mir die Hände). Với động từ khuyết thiếu, lassen đứng cuối: Ich muss mein Fahrrad reparieren lassen. Ở Perfekt, lassen đi với nguyên thể thì dùng dạng lassen chứ không dùng gelassen: Ich habe mein Fahrrad reparieren lassen – bạn chỉ cần nhận ra dạng này. Với danh từ, \"không cần\" thường nói bằng kein: Sie müssen kein Formular ausfüllen. Ở tiệm dịch vụ, hai câu hỏi hữu ích: Wann ist es fertig? (khi nào xong) và Was kostet das? / Wie hoch sind die Kosten? (giá bao nhiêu). Ở nhiều tiệm cắt tóc và xưởng sửa xe tại Đức, nên đặt lịch hẹn trước; cách làm và giá mỗi nơi một khác."
+  - type: example
+    target: Ich lasse mein Fahrrad in der Werkstatt reparieren.
+    target_lang: de
+    translation:
+      vi: Tôi mang xe đạp đến xưởng sửa.
+    note:
+      vi: "lasse ở vị trí 2, reparieren ở cuối câu. Người sửa là thợ ở xưởng, không phải tôi."
+  - type: example
+    target: "Lässt du dir die Haare beim Friseur schneiden? – Nein, meine Schwester schneidet sie mir."
+    target_lang: de
+    translation:
+      vi: "Bạn cắt tóc ở tiệm à? – Không, chị gái mình cắt cho mình."
+    note:
+      vi: "Bạn bè nói với nhau nên dùng du. du lässt (a → ä); mir/dir ở Dativ chỉ tóc của chính mình."
+  - type: example
+    target: "Ich möchte meinen Anzug reinigen lassen. Wann ist er fertig? – Am Donnerstag."
+    target_lang: de
+    translation:
+      vi: "Tôi muốn giặt khô bộ com-lê. Khi nào xong ạ? – Thứ Năm."
+    note:
+      vi: "Khách nói với nhân viên tiệm giặt. Có möchten nên lassen đứng cuối: reinigen lassen."
+  - type: example
+    target: Sie müssen nicht warten. Sie können das Fahrrad morgen abholen.
+    target_lang: de
+    translation:
+      vi: Anh/chị không cần chờ. Mai anh/chị có thể đến lấy xe đạp.
+    note:
+      vi: "Thợ nói với khách nên dùng Sie. müssen nicht = không cần."
+  - type: example
+    target: Hier dürfen Sie nicht rauchen. Rauchen ist im ganzen Gebäude verboten.
+    target_lang: de
+    translation:
+      vi: Ở đây anh/chị không được hút thuốc. Trong cả tòa nhà đều cấm hút thuốc.
+    note:
+      vi: "Nhân viên nói với khách nên dùng Sie. dürfen nicht = bị cấm; das Gebäude = tòa nhà."
+  - type: common_mistake
+    wrong: Du musst hier nicht rauchen.
+    right: Du darfst hier nicht rauchen.
+    target_lang: de
+    note:
+      vi: "Muốn nói \"cấm\" thì dùng nicht dürfen. Du musst hier nicht rauchen nghĩa là \"bạn không cần hút thuốc ở đây\"."
+  - type: common_mistake
+    wrong: Ich lasse reparieren mein Fahrrad.
+    right: Ich lasse mein Fahrrad reparieren.
+    target_lang: de
+    note:
+      vi: "Nguyên thể đi với lassen đứng cuối câu, tân ngữ đứng giữa."
+  - type: common_mistake
+    wrong: Ich lasse mein Fahrrad zu reparieren.
+    right: Ich lasse mein Fahrrad reparieren.
+    target_lang: de
+    note:
+      vi: "Sau lassen không có zu – giống như sau động từ khuyết thiếu."
+  - type: summary
+    points:
+      - vi: "lassen + … + nguyên thể (cuối câu) = nhờ/thuê người khác làm."
+      - vi: "ich lasse, du lässt, er/sie lässt; không có zu."
+      - vi: "Ich repariere … = tự làm; Ich lasse … reparieren = người khác làm."
+      - vi: "nicht müssen = không cần; nicht dürfen = không được phép."
+      - vi: "verboten = bị cấm; erlaubt = được phép."
+      - vi: "Ở tiệm: Wann ist … fertig? Was kostet das?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u06l4-listen-werkstatt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-g-lassen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Mein Fahrrad ist kaputt. Ich lasse es in der Werkstatt reparieren. Morgen ist es fertig."
+      options:
+        - { id: k2d, text: "Xe đạp của người nói bị hỏng; thợ ở xưởng sửa và mai là xong.", lang: vi }
+        - { id: v6h, text: "Xe đạp của người nói bị hỏng; người nói tự sửa và mai là xong.", lang: vi }
+        - { id: a1p, text: "Người nói mua một chiếc xe đạp mới ở xưởng.", lang: vi }
+        - { id: y8e, text: "Xe đạp đã sửa xong hôm nay.", lang: vi }
+    answer:
+      correct_option_id: k2d
+    explanation:
+      vi: "Ich lasse es … reparieren = tôi để/nhờ (thợ) sửa, không phải tự sửa. Morgen ist es fertig = mai là xong."
+    display_answer: "Xe đạp của người nói bị hỏng; thợ ở xưởng sửa và mai là xong."
+
+  - key: de:exercise:a2u06l4-listen-parken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-g-muss-nicht-darf-nicht
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hier dürfen Sie leider nicht parken. Aber Sie müssen nicht weit gehen, der Parkplatz ist gleich um die Ecke."
+      options:
+        - { id: q4t, text: "Không được đỗ xe ở đây, nhưng bãi đỗ xe ở ngay góc phố nên không phải đi xa.", lang: vi }
+        - { id: j9m, text: "Có thể đỗ xe ở đây, nhưng phải đi bộ xa.", lang: vi }
+        - { id: o3c, text: "Không cần đỗ xe ở đây vì bãi đỗ xe ở xa.", lang: vi }
+        - { id: d7s, text: "Không được đỗ xe ở đây và cũng không được đi bộ qua góc phố.", lang: vi }
+    answer:
+      correct_option_id: q4t
+    explanation:
+      vi: "dürfen nicht parken = không được phép đỗ xe; müssen nicht weit gehen = không cần đi xa; gleich um die Ecke = ngay góc phố."
+    display_answer: "Không được đỗ xe ở đây, nhưng bãi đỗ xe ở ngay góc phố nên không phải đi xa."
+
+  - key: de:exercise:a2u06l4-listen-reinigung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-reinigung
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, ich möchte diesen Anzug reinigen lassen. Wann ist er fertig? – Am Donnerstag ab zehn Uhr. Das kostet zwölf Euro."
+      options:
+        - { id: x5b, text: "Bộ com-lê sẽ xong vào thứ Năm từ 10 giờ, giá 12 euro.", lang: vi }
+        - { id: g8w, text: "Bộ com-lê sẽ xong vào thứ Ba lúc 10 giờ, giá 12 euro.", lang: vi }
+        - { id: l2n, text: "Bộ com-lê sẽ xong vào thứ Năm lúc 12 giờ, giá 10 euro.", lang: vi }
+        - { id: c6r, text: "Khách muốn mua một bộ com-lê giá 12 euro.", lang: vi }
+    answer:
+      correct_option_id: x5b
+    explanation:
+      vi: "reinigen lassen = mang đi giặt khô (người khác làm); am Donnerstag ab zehn Uhr = thứ Năm từ 10 giờ; zwölf Euro = 12 euro (Dienstag mới là thứ Ba)."
+    display_answer: "Bộ com-lê sẽ xong vào thứ Năm từ 10 giờ, giá 12 euro."
+
+  - key: de:exercise:a2u06l4-mcq-nicht-vorher-anrufen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-g-muss-nicht-darf-nicht
+    prompt:
+      stem: "Nhân viên tiệm muốn nói với khách: \"Anh/chị không cần gọi điện trước.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f3k, text: "Sie müssen nicht vorher anrufen.", lang: de }
+        - { id: t7a, text: "Sie dürfen nicht vorher anrufen.", lang: de }
+        - { id: m1v, text: "Sie müssen nicht vorher anzurufen.", lang: de }
+        - { id: b5y, text: "Sie lassen nicht vorher anrufen.", lang: de }
+    answer:
+      correct_option_id: f3k
+    explanation:
+      vi: "\"Không cần\" là nicht müssen. Sie dürfen nicht vorher anrufen nghĩa là \"không được phép gọi trước\" – sai ý. Sau müssen không có zu; lassen ở đây không có nghĩa."
+    display_answer: "Sie müssen nicht vorher anrufen."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u06l4-fill-laesst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-lassen
+    prompt:
+      template: "{{b1}} (lassen) du dein Auto in der Werkstatt reparieren? – Nein, mein Bruder repariert es. Aber meine Schwester {{b2}} (lassen) ihr Auto immer reparieren."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Lässt]
+        b2: [lässt]
+    explanation:
+      vi: "lassen đổi nguyên âm a → ä ở du và er/sie: du lässt, sie lässt. Câu hỏi có/không nên động từ đứng đầu: Lässt du …?"
+    display_answer: "Lässt du dein Auto in der Werkstatt reparieren? – Nein, mein Bruder repariert es. Aber meine Schwester lässt ihr Auto immer reparieren."
+
+  - key: de:exercise:a2u06l4-fill-darf-muss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-muss-nicht-darf-nicht
+    prompt:
+      template: "Rauchen ist hier verboten: Sie {{b1}} (müssen/dürfen) hier nicht rauchen. Das Formular brauchen wir nicht: Sie {{b2}} (müssen/dürfen) es nicht ausfüllen."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [dürfen]
+        b2: [müssen]
+    explanation:
+      vi: "verboten = bị cấm → nicht dürfen (không được phép). Không cần mẫu đơn → nicht müssen (không bắt buộc). Với Sie, động từ khuyết thiếu chia như nguyên thể: Sie dürfen, Sie müssen."
+    display_answer: "Rauchen ist hier verboten: Sie dürfen hier nicht rauchen. Das Formular brauchen wir nicht: Sie müssen es nicht ausfüllen."
+
+  - key: de:exercise:a2u06l4-tr-haare-schneiden
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-schneiden
+    prompt:
+      source_text: Ngày mai tôi đi cắt tóc ở tiệm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Morgen lasse ich mir die Haare schneiden.
+        - Ich lasse mir morgen die Haare schneiden.
+        - Morgen lasse ich mir beim Friseur die Haare schneiden.
+        - Ich lasse mir morgen beim Friseur die Haare schneiden.
+        - Morgen lasse ich meine Haare schneiden.
+        - Ich lasse morgen meine Haare schneiden.
+        - Morgen gehe ich zum Friseur.
+        - Ich gehe morgen zum Friseur.
+    known_wrong:
+      - answer: Morgen lasse ich mir schneiden die Haare.
+        feedback_vi: "Nguyên thể schneiden đứng cuối câu: … die Haare schneiden."
+        error_tag: verb_position
+      - answer: Morgen ich lasse mir die Haare schneiden.
+        feedback_vi: "Câu bắt đầu bằng Morgen thì động từ lasse đứng thứ hai: Morgen lasse ich …"
+        error_tag: verb_position
+    explanation:
+      vi: "Người khác cắt cho mình → lassen + schneiden ở cuối: Ich lasse mir die Haare schneiden (mir chỉ tóc của mình). Cũng có thể nói đơn giản: Ich gehe morgen zum Friseur."
+    display_answer: Morgen lasse ich mir die Haare schneiden.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u06l4-wb-fahrrad-reparieren
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-lassen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ngày mai tôi mang xe đạp đi sửa.\""
+      tokens:
+        - { id: t-reparieren, text: reparieren }
+        - { id: t-fahrrad, text: Fahrrad }
+        - { id: t-lasse, text: lasse }
+        - { id: t-morgen, text: morgen }
+        - { id: t-mein, text: mein }
+        - { id: t-ich, text: ich }
+        - { id: t-repariere, text: repariere }
+        - { id: t-zu, text: zu }
+    answer:
+      orders:
+        - [t-morgen, t-lasse, t-ich, t-mein, t-fahrrad, t-reparieren]
+        - [t-ich, t-lasse, t-morgen, t-mein, t-fahrrad, t-reparieren]
+        - [t-ich, t-lasse, t-mein, t-fahrrad, t-morgen, t-reparieren]
+        - [t-mein, t-fahrrad, t-lasse, t-ich, t-morgen, t-reparieren]
+    explanation:
+      vi: "Người khác sửa → lassen (lasse ở vị trí 2) + reparieren ở cuối câu, không có zu. repariere là \"tôi tự sửa\" nên không dùng ở đây."
+    display_answer: Morgen lasse ich mein Fahrrad reparieren.
+
+  - key: de:exercise:a2u06l4-mcq-fotografieren
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-verboten
+    prompt:
+      stem: "Trong bảo tàng có biển \"Fotografieren verboten\". Bạn của bạn giơ điện thoại lên định chụp. Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: h6u, text: "Hier darfst du nicht fotografieren.", lang: de }
+        - { id: p9b, text: "Hier musst du nicht fotografieren.", lang: de }
+        - { id: e2x, text: "Hier lässt du nicht fotografieren.", lang: de }
+        - { id: w4o, text: "Hier darfst du nicht zu fotografieren.", lang: de }
+    answer:
+      correct_option_id: h6u
+    explanation:
+      vi: "verboten = bị cấm → nicht dürfen: Hier darfst du nicht fotografieren. musst du nicht chỉ là \"không cần\"; sau dürfen không có zu."
+    display_answer: "Hier darfst du nicht fotografieren."
+
+  - key: de:exercise:a2u06l4-tr-nicht-bezahlen-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u06-g-muss-nicht-darf-nicht
+    prompt:
+      source_text: Sie müssen heute nicht bezahlen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm nay anh không cần trả tiền.
+        - Hôm nay chị không cần trả tiền.
+        - Hôm nay anh chị không cần trả tiền.
+        - Hôm nay ông bà không cần trả tiền.
+        - Hôm nay bạn không cần trả tiền.
+        - Hôm nay quý khách không cần trả tiền.
+        - Hôm nay anh không phải trả tiền.
+        - Hôm nay chị không phải trả tiền.
+        - Hôm nay bạn không phải trả tiền.
+        - Hôm nay quý khách không phải trả tiền.
+        - Hôm nay anh chị không phải trả tiền.
+        - Hôm nay anh/chị không cần trả tiền.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "müssen nicht = không cần / không phải (không bắt buộc), không phải \"không được\". Sie là cách xưng hô lịch sự, dịch là anh/chị/ông/bà/quý khách tùy ngữ cảnh."
+    display_answer: Hôm nay anh/chị không cần trả tiền.

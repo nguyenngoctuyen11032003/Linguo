@@ -1,0 +1,355 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u06-wissen-sie-wo
+order_index: 1
+level: a2
+title:
+  vi: Bạn có biết … không? – câu hỏi gián tiếp (Wissen Sie, wo …?)
+objectives:
+  - vi: Hỏi thông tin lịch sự ở quầy, ở cơ quan bằng câu hỏi gián tiếp (Können Sie mir sagen, wo …?).
+  - vi: Đặt động từ ở cuối câu hỏi gián tiếp, kể cả động từ tách và động từ khuyết thiếu.
+  - vi: Dùng ob cho câu hỏi có/không gián tiếp và phân biệt ob với wenn.
+  - vi: Gọi tên các nơi dịch vụ công (das Rathaus, die Bibliothek, das Fundbüro, die Polizei) và chia đúng wissen.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u05-wiederholung]
+items:
+  - item: de:item:a2u06-g-indirekte-w-frage
+  - item: de:item:a2u06-g-ob
+  - item: de:item:a2u06-wissen
+  - item: de:item:a2u06-auskunft
+  - item: de:item:a2u06-rathaus
+  - item: de:item:a2u06-bibliothek
+  - item: de:item:a2u06-fundbuero
+  - item: de:item:a2u06-polizei
+  - item: de:item:a2u06-schalter
+  - item: de:item:a2u06-wartenummer
+  - item: de:item:a2u06-zustaendig
+  - item: de:item:a2u06-oeffnen
+  - item: de:item:a2u06-regenschirm
+  - item: de:item:a2u06-geldboerse
+  - item: de:item:a2u06-eingang
+  - item: de:item:a2u06-ausgang
+  - item: de:item:a1u01-g-w-fragen
+    role: reuse
+  - item: de:item:a1u01-g-ja-nein-frage
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+    role: reuse
+  - item: de:item:p0u3-ich-weiss-es-nicht
+    role: reuse
+  - item: de:item:a1u05-post
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được ở quầy thông tin hay ở tòa thị chính một cách lịch sự, ví dụ "Anh/chị có thể cho tôi biết phòng đồ thất lạc ở đâu không?" hay "Tôi không biết hôm nay thư viện có mở cửa không."
+  - type: explain
+    text:
+      vi: "Câu hỏi trực tiếp \"Wo ist die Bibliothek?\" hơi cụt khi hỏi người lạ. Người Đức thường đặt nó sau một câu dẫn như Können Sie mir sagen, …? hoặc Wissen Sie, …? – lúc đó câu hỏi trở thành câu phụ và động từ ist chạy xuống cuối: …, wo die Bibliothek ist?"
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ thêm \"có biết … không\" mà không đổi trật tự (\"Anh có biết thư viện ở đâu không?\"). Tiếng Đức thì đổi: sau dấu phẩy là từ để hỏi, rồi chủ ngữ, các thành phần khác, cuối cùng là động từ chia – giống câu phụ với weil, dass mà bạn đã học."
+  - type: explain
+    text:
+      vi: "Câu hỏi có/không (Ist das Fundbüro geöffnet?) không có từ để hỏi, nên khi thành câu gián tiếp bạn phải thêm ob (= liệu … có … không): Ich weiß nicht, ob das Fundbüro geöffnet ist. Đừng dùng wenn ở đây – wenn là \"nếu\" hoặc \"khi\"."
+  - type: explain
+    text:
+      vi: "Dấu câu cuối câu do câu dẫn quyết định: Können Sie mir sagen, …? là câu hỏi nên có dấu hỏi; Ich weiß nicht, … . là câu kể nên có dấu chấm. Trả lời ngắn khi không biết: Das weiß ich leider nicht. / Ich weiß es nicht."
+  - type: deep_explain
+    text:
+      vi: "Động từ tách viết liền lại ở cuối câu phụ: Wann fährt der Bus ab? → Wissen Sie, wann der Bus abfährt? Có động từ khuyết thiếu thì động từ khuyết thiếu đứng cuối cùng: Wo kann ich parken? → Können Sie mir sagen, wo ich parken kann? Các câu dẫn hay dùng: Können/Könnten Sie mir sagen, …?, Wissen Sie, …?, Ich möchte wissen, …, Ich weiß nicht, … . wissen chia bất quy tắc ở số ít: ich weiß, du weißt, er/sie weiß (không có -t ở ngôi 1 và 3). Ở cơ quan Đức bạn sẽ hay nghe zuständig (phụ trách): \"Dafür sind wir nicht zuständig\" nghĩa là bạn cần hỏi bộ phận khác. Ở nhiều cơ quan, bạn rút số thứ tự (eine Wartenummer ziehen) rồi chờ màn hình gọi số và quầy (Schalter); cách làm cụ thể mỗi nơi một khác."
+  - type: example
+    target: Entschuldigung, können Sie mir sagen, wo das Fundbüro ist?
+    target_lang: de
+    translation:
+      vi: Xin lỗi, anh/chị có thể cho tôi biết phòng đồ thất lạc ở đâu không?
+    note:
+      vi: "Hỏi người lạ nên dùng Sie. Câu trực tiếp là Wo ist das Fundbüro? – trong câu gián tiếp, ist chạy xuống cuối."
+  - type: example
+    target: Wissen Sie, wann die Bibliothek heute öffnet?
+    target_lang: de
+    translation:
+      vi: Anh/chị có biết hôm nay thư viện mấy giờ mở cửa không?
+    note:
+      vi: "Nói với nhân viên nên dùng Sie. Câu trực tiếp: Wann öffnet die Bibliothek heute?"
+  - type: example
+    target: Ich weiß nicht, ob die Polizei schon da ist.
+    target_lang: de
+    translation:
+      vi: Tôi không biết cảnh sát đã đến chưa.
+    note:
+      vi: "Câu hỏi có/không Ist die Polizei schon da? → ob die Polizei schon da ist. Câu dẫn là câu kể nên kết thúc bằng dấu chấm."
+  - type: example
+    target: "Weißt du, welcher Schalter für Pässe zuständig ist? – Nein, frag doch an der Auskunft."
+    target_lang: de
+    translation:
+      vi: "Bạn có biết quầy nào phụ trách hộ chiếu không? – Không, bạn hỏi ở quầy thông tin đi."
+    note:
+      vi: "Hai người bạn đi cùng nhau nên dùng du (weißt du, frag). welcher Schalter là chủ ngữ của câu phụ, zuständig ist đứng cuối."
+  - type: example
+    target: Können Sie mir sagen, ob ich hier eine Wartenummer brauche?
+    target_lang: de
+    translation:
+      vi: Anh/chị có thể cho tôi biết ở đây tôi có cần lấy số thứ tự không?
+    note:
+      vi: "Hỏi nhân viên nên dùng Sie. Câu gốc: Brauche ich hier eine Wartenummer? (câu hỏi có/không → ob)."
+  - type: common_mistake
+    wrong: Können Sie mir sagen, wo ist die Bibliothek?
+    right: Können Sie mir sagen, wo die Bibliothek ist?
+    target_lang: de
+    note:
+      vi: "Sau câu dẫn, câu hỏi thành câu phụ: động từ ist phải xuống cuối."
+  - type: common_mistake
+    wrong: Ich weiß nicht, wenn das Rathaus heute geöffnet ist.
+    right: Ich weiß nicht, ob das Rathaus heute geöffnet ist.
+    target_lang: de
+    note:
+      vi: "\"Liệu … có … không\" là ob; wenn nghĩa là \"nếu\" hoặc \"khi\"."
+  - type: common_mistake
+    wrong: Wissen Sie, wann fährt der Bus ab?
+    right: Wissen Sie, wann der Bus abfährt?
+    target_lang: de
+    note:
+      vi: "Trong câu phụ, động từ tách viết liền và đứng cuối: abfährt."
+  - type: summary
+    points:
+      - vi: "Câu dẫn + từ để hỏi + … + động từ cuối: Können Sie mir sagen, wo die Post ist?"
+      - vi: "Câu hỏi có/không gián tiếp: ob + … + động từ cuối."
+      - vi: "ob = liệu … có … không; wenn = nếu / khi."
+      - vi: "Động từ tách viết liền ở cuối (abfährt); động từ khuyết thiếu đứng cuối cùng (parken kann)."
+      - vi: "wissen: ich weiß, du weißt, er weiß, wir wissen."
+      - vi: "Nơi dịch vụ công: das Rathaus, die Bibliothek, das Fundbüro, die Polizei, die Auskunft, der Schalter."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u06l1-mcq-wo-bibliothek
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u06-g-indirekte-w-frage
+    prompt:
+      stem: "Chọn câu hỏi gián tiếp viết đúng."
+      stem_lang: vi
+      options:
+        - { id: q7m, text: "Können Sie mir sagen, wo die Bibliothek ist?", lang: de }
+        - { id: d2k, text: "Können Sie mir sagen, wo ist die Bibliothek?", lang: de }
+        - { id: s9v, text: "Können Sie mir sagen, wo ist sie die Bibliothek?", lang: de }
+        - { id: h4b, text: "Können Sie mir sagen, die Bibliothek wo ist?", lang: de }
+    answer:
+      correct_option_id: q7m
+    explanation:
+      vi: "Sau câu dẫn Können Sie mir sagen, câu hỏi trở thành câu phụ: từ để hỏi wo đứng đầu, chủ ngữ die Bibliothek theo sau, động từ ist xuống cuối."
+    display_answer: "Können Sie mir sagen, wo die Bibliothek ist?"
+
+  - key: de:exercise:a2u06l1-mcq-ob-wenn
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-g-ob
+    prompt:
+      stem: "Bạn muốn nói: \"Tôi không biết liệu hôm nay phòng đồ thất lạc có mở cửa không.\" Chọn từ đúng: Ich weiß nicht, ___ das Fundbüro heute geöffnet ist."
+      stem_lang: vi
+      options:
+        - { id: b3n, text: ob, lang: de }
+        - { id: w8p, text: wenn, lang: de }
+        - { id: f5t, text: dass, lang: de }
+        - { id: k1z, text: weil, lang: de }
+    answer:
+      correct_option_id: b3n
+    explanation:
+      vi: "\"Liệu … có … không\" là câu hỏi có/không gián tiếp nên dùng ob. wenn là \"nếu/khi\", dass là \"rằng\" (khẳng định một điều), weil là \"vì\" – đều không mang nghĩa \"liệu … có không\"."
+    display_answer: ob
+
+  - key: de:exercise:a2u06l1-listen-fundbuero
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-fundbuero
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Entschuldigung, können Sie mir sagen, wo das Fundbüro ist? – Ja, im Rathaus, gleich rechts neben dem Eingang."
+      options:
+        - { id: r6c, text: "Phòng đồ thất lạc ở trong tòa thị chính, ngay bên phải lối vào.", lang: vi }
+        - { id: m2y, text: "Phòng đồ thất lạc ở ngay bên phải tòa thị chính, cạnh lối ra.", lang: vi }
+        - { id: t8j, text: "Phòng đồ thất lạc ở đồn cảnh sát, bên trái lối vào.", lang: vi }
+        - { id: e4w, text: "Người được hỏi không biết phòng đồ thất lạc ở đâu.", lang: vi }
+    answer:
+      correct_option_id: r6c
+    explanation:
+      vi: "im Rathaus = trong tòa thị chính; gleich rechts = ngay bên phải; neben dem Eingang = cạnh lối vào (der Eingang ↔ der Ausgang là lối ra)."
+    display_answer: "Phòng đồ thất lạc ở trong tòa thị chính, ngay bên phải lối vào."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u06l1-fill-ist-oeffnet
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-g-indirekte-w-frage
+    prompt:
+      template: "Entschuldigung, wissen Sie, wo der Schalter für Pässe {{b1}} (sein) und wann er {{b2}} (öffnen)?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [ist]
+        b2: [öffnet]
+    explanation:
+      vi: "Hai câu hỏi gián tiếp (wo …, wann …) nên động từ đứng cuối và chia theo chủ ngữ ngôi 3 số ít: der Schalter … ist, er … öffnet (gốc öffn- thêm -e- trước -t)."
+    display_answer: "Entschuldigung, wissen Sie, wo der Schalter für Pässe ist und wann er öffnet?"
+
+  - key: de:exercise:a2u06l1-fill-weisst-weiss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-wissen
+    prompt:
+      template: "{{b1}} (wissen) du, ob die Polizei hier in der Nähe ist? – Nein, das {{b2}} (wissen) ich leider nicht."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Weißt]
+        b2: [weiß]
+    explanation:
+      vi: "wissen chia bất quy tắc ở số ít: du weißt, ich weiß (ngôi 1 không có đuôi). Câu đầu là câu hỏi có/không nên động từ đứng đầu: Weißt du …?"
+    display_answer: "Weißt du, ob die Polizei hier in der Nähe ist? – Nein, das weiß ich leider nicht."
+
+  - key: de:exercise:a2u06l1-tr-wo-post
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-g-indirekte-w-frage
+    prompt:
+      source_text: "Anh/chị có biết bưu điện ở đâu không? (hỏi một người lạ)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wissen Sie, wo die Post ist?
+        - Wissen Sie, wo hier die Post ist?
+        - Wissen Sie, wo die Post hier ist?
+        - Entschuldigung, wissen Sie, wo die Post ist?
+        - Können Sie mir sagen, wo die Post ist?
+    known_wrong:
+      - answer: Wissen Sie, wo ist die Post?
+        feedback_vi: "Trong câu hỏi gián tiếp, động từ ist đứng cuối: …, wo die Post ist?"
+        error_tag: verb_position
+      - answer: Weißt du, wo die Post ist?
+        feedback_vi: "Hỏi người lạ nên dùng Sie: Wissen Sie, …?"
+        error_tag: register_du_sie
+    explanation:
+      vi: "\"Anh/chị có biết\" với người lạ là Wissen Sie. Câu hỏi Wo ist die Post? thành câu phụ: wo die Post ist (động từ cuối)."
+    display_answer: Wissen Sie, wo die Post ist?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u06l1-wb-ob-fundbuero
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-ob
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi không biết phòng đồ thất lạc có mở cửa không.\""
+      tokens:
+        - { id: t-ist, text: ist }
+        - { id: t-ob, text: ob }
+        - { id: t-weiss, text: weiß }
+        - { id: t-fundbuero, text: Fundbüro }
+        - { id: t-ich, text: ich }
+        - { id: t-geoeffnet, text: geöffnet }
+        - { id: t-nicht, text: nicht }
+        - { id: t-das, text: das }
+        - { id: t-wenn, text: wenn }
+    answer:
+      orders:
+        - [t-ich, t-weiss, t-nicht, t-ob, t-das, t-fundbuero, t-geoeffnet, t-ist]
+        - [t-ob, t-das, t-fundbuero, t-geoeffnet, t-ist, t-weiss, t-ich, t-nicht]
+    explanation:
+      vi: "Câu hỏi có/không gián tiếp mở đầu bằng ob (không phải wenn), động từ ist đứng cuối câu phụ. Câu phụ cũng có thể đứng đầu: Ob das Fundbüro geöffnet ist, weiß ich nicht – khi đó weiß đứng ngay sau dấu phẩy."
+    display_answer: Ich weiß nicht, ob das Fundbüro geöffnet ist.
+
+  - key: de:exercise:a2u06l1-mcq-schalter-zustaendig
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-zustaendig
+    prompt:
+      stem: "Ở tòa thị chính, bạn muốn hỏi nhân viên một cách lịch sự: \"Anh/chị có thể cho tôi biết quầy nào phụ trách việc đăng ký cư trú không?\" Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: p5x, text: "Entschuldigung, können Sie mir sagen, welcher Schalter für Anmeldungen zuständig ist?", lang: de }
+        - { id: a9g, text: "Entschuldigung, können Sie mir sagen, welcher Schalter ist für Anmeldungen zuständig?", lang: de }
+        - { id: n3r, text: "Entschuldigung, kannst du mir sagen, welcher Schalter für Anmeldungen zuständig ist?", lang: de }
+        - { id: v7l, text: "Entschuldigung, können Sie mir sagen, ob welcher Schalter für Anmeldungen zuständig ist?", lang: de }
+    answer:
+      correct_option_id: p5x
+    explanation:
+      vi: "Với nhân viên cơ quan dùng Sie. Câu hỏi gián tiếp với welcher: welcher Schalter … zuständig ist (động từ cuối). ob chỉ dùng khi không có từ để hỏi."
+    display_answer: "Entschuldigung, können Sie mir sagen, welcher Schalter für Anmeldungen zuständig ist?"
+
+  - key: de:exercise:a2u06l1-tr-ob-bibliothek
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-ob
+    prompt:
+      source_text: Tôi không biết liệu hôm nay thư viện có mở cửa không.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich weiß nicht, ob die Bibliothek heute geöffnet ist.
+        - Ich weiß nicht, ob die Bibliothek heute offen ist.
+        - Ich weiß nicht, ob die Bibliothek heute öffnet.
+        - Ich weiß nicht, ob heute die Bibliothek geöffnet ist.
+        - Ich weiß nicht, ob die Bibliothek heute auf ist.
+        - Ob die Bibliothek heute geöffnet ist, weiß ich nicht.
+        - Ob die Bibliothek heute offen ist, weiß ich nicht.
+    known_wrong:
+      - answer: Ich weiß nicht, ob die Bibliothek ist heute geöffnet.
+        feedback_vi: "Sau ob, động từ chia (ist) đứng cuối câu: …, ob die Bibliothek heute geöffnet ist."
+        error_tag: verb_position
+      - answer: Ich weiß nicht, ob ist die Bibliothek heute geöffnet.
+        feedback_vi: "Sau ob là chủ ngữ, động từ ist xuống cuối: ob die Bibliothek heute geöffnet ist."
+        error_tag: verb_position
+    explanation:
+      vi: "\"Liệu … có … không\" là ob; câu phụ với ob đẩy động từ ist xuống cuối. geöffnet/offen đều nghĩa là \"đang mở cửa\"."
+    display_answer: Ich weiß nicht, ob die Bibliothek heute geöffnet ist.
+
+  - key: de:exercise:a2u06l1-tr-wartenummer-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u06-wartenummer
+    prompt:
+      source_text: Ich möchte wissen, ob ich hier eine Wartenummer brauche.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi muốn biết ở đây tôi có cần số thứ tự không.
+        - Tôi muốn biết liệu ở đây tôi có cần số thứ tự không.
+        - Tôi muốn biết ở đây tôi có cần lấy số thứ tự không.
+        - Tôi muốn biết liệu ở đây tôi có cần lấy số thứ tự không.
+        - Tôi muốn biết liệu tôi có cần số thứ tự ở đây không.
+        - Tôi muốn biết tôi có cần lấy số ở đây không.
+        - Tôi muốn biết ở đây có cần lấy số không.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Ich möchte wissen = tôi muốn biết; ob … brauche = liệu … có cần … không; die Wartenummer = số thứ tự."
+    display_answer: Tôi muốn biết ở đây tôi có cần lấy số thứ tự không.

@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u06-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – thông báo của cơ quan, e-mail hỏi thông tin (Wiederholung)
+objectives:
+  - vi: Đọc hiểu thông báo ngắn của cơ quan, ngân hàng, bưu điện (giờ mở cửa, giấy tờ cần mang, việc cần làm).
+  - vi: Nghe hiểu lời gọi số ở cơ quan và tin nhắn thoại của tiệm dịch vụ.
+  - vi: Viết e-mail trang trọng khoảng 50 từ hỏi giờ mở cửa và giấy tờ cần mang (kiểu Goethe A2 Schreiben Teil 2).
+  - vi: Ôn câu hỏi gián tiếp, ob, zu + nguyên thể, um … zu, deshalb, lassen và nicht müssen/nicht dürfen.
+estimated_minutes: 22
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a2u06-lassen]
+items:
+  - item: de:item:a2u06-g-indirekte-w-frage
+    role: reuse
+  - item: de:item:a2u06-g-ob
+    role: reuse
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:a2u06-g-um-zu
+    role: reuse
+  - item: de:item:a2u06-g-deshalb
+    role: reuse
+  - item: de:item:a2u06-g-lassen
+    role: reuse
+  - item: de:item:a2u06-g-muss-nicht-darf-nicht
+    role: reuse
+  - item: de:item:a1u08-g-anrede-gruss
+    role: reuse
+  - item: de:item:a2u06-wartenummer
+    role: reuse
+  - item: de:item:a2u06-schalter
+    role: reuse
+  - item: de:item:a2u06-geheimzahl
+    role: reuse
+  - item: de:item:a2u06-kreditkarte
+    role: reuse
+  - item: de:item:a2u06-zettel
+    role: reuse
+  - item: de:item:a2u06-abholen
+    role: reuse
+  - item: de:item:a2u06-filiale
+    role: reuse
+  - item: de:item:a2u06-werkstatt
+    role: reuse
+  - item: de:item:a2u06-fertig
+    role: reuse
+  - item: de:item:a2u06-geldboerse
+    role: reuse
+  - item: de:item:a2u06-fundbuero
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn toàn bộ unit qua ba việc rất hay gặp khi sống ở Đức và trong đề Goethe A2 – đọc thông báo của cơ quan, nghe gọi số và tin nhắn thoại, viết e-mail trang trọng để hỏi thông tin.
+  - type: explain
+    text:
+      vi: "Đọc thông báo: trước hết xem câu hỏi cần gì – ngày, giờ, giấy tờ hay việc phải làm. Chú ý các chữ nhỏ nhưng đổi nghĩa: geschlossen (đóng cửa), nicht mehr (không còn nữa), müssen nicht (không cần), dürfen nicht (không được)."
+  - type: explain
+    text:
+      vi: "E-mail trang trọng gồm: lời chào Sehr geehrte Damen und Herren, (sau dấu phẩy, dòng tiếp theo viết thường), một câu giới thiệu lý do, hai câu hỏi lịch sự, lời cảm ơn và lời chào cuối Mit freundlichen Grüßen + họ tên. Luôn dùng Sie, Ihnen, Ihr viết hoa."
+  - type: explain
+    text:
+      vi: "Câu hỏi trong e-mail nên viết gián tiếp cho lịch sự: Können Sie mir bitte sagen, wann …? / Ich möchte gern wissen, ob … . Đừng quên: động từ chia đứng cuối câu phụ."
+  - type: deep_explain
+    text:
+      vi: "Một e-mail mẫu khoảng 50 từ: \"Sehr geehrte Damen und Herren, ich bin neu in der Stadt und möchte mich anmelden. Können Sie mir bitte sagen, wann das Bürgeramt geöffnet ist? Ich möchte auch wissen, ob ich einen Termin brauche und welche Dokumente ich mitbringen muss. Vielen Dank im Voraus! Mit freundlichen Grüßen Mai Tran\". Đề Goethe A2 Schreiben Teil 2 thường yêu cầu trả lời đủ các ý cho sẵn – đánh dấu từng ý khi viết xong. Giờ mở cửa, việc có cần đặt lịch hẹn (Termin) hay không và giấy tờ cần mang khác nhau theo từng thành phố và có thể thay đổi – vì vậy bạn mới cần viết e-mail để hỏi. Ngân hàng đứng đắn sẽ không hỏi mã PIN qua e-mail hay điện thoại; gặp yêu cầu như vậy thì đừng trả lời."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, können Sie mir bitte sagen, wann das Bürgeramt am Freitag geöffnet ist?"
+    target_lang: de
+    translation:
+      vi: "Kính gửi quý ông bà, xin vui lòng cho tôi biết thứ Sáu văn phòng dịch vụ công dân mở cửa vào giờ nào?"
+    note:
+      vi: "Thư trang trọng dùng Sie. Sau lời chào có dấu phẩy, câu tiếp theo viết thường (können)."
+  - type: example
+    target: Ich möchte auch wissen, ob ich einen Termin brauche und welche Dokumente ich mitbringen muss.
+    target_lang: de
+    translation:
+      vi: Tôi cũng muốn biết liệu tôi có cần lịch hẹn không và tôi phải mang theo những giấy tờ gì.
+    note:
+      vi: "Hai câu hỏi gián tiếp: ob … brauche (có/không) và welche Dokumente … mitbringen muss (động từ khuyết thiếu đứng cuối cùng)."
+  - type: example
+    target: "Ich habe meine Geldbörse verloren. Deshalb gehe ich zum Fundbüro, um zu fragen, ob jemand sie gefunden hat."
+    target_lang: de
+    translation:
+      vi: "Tôi bị mất ví. Vì vậy tôi đến phòng đồ thất lạc để hỏi xem có ai nhặt được không."
+    note:
+      vi: "Ôn ba cấu trúc trong một đoạn: deshalb + động từ vị trí 2, um … zu, ob + động từ cuối."
+  - type: example
+    target: "Die Wartenummer 214, bitte zu Schalter 3."
+    target_lang: de
+    translation:
+      vi: "Số thứ tự 214, mời đến quầy số 3."
+    note:
+      vi: "Thông báo ở cơ quan rất ngắn: chỉ có số và quầy."
+  - type: common_mistake
+    wrong: "Sehr geehrte Damen und Herren, Ich möchte wissen, wann ist das Amt geöffnet."
+    right: "Sehr geehrte Damen und Herren, ich möchte wissen, wann das Amt geöffnet ist."
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu tiếp theo viết thường; trong câu hỏi gián tiếp động từ ist đứng cuối."
+  - type: common_mistake
+    wrong: Mit freundlichen Grüßen, Mai Tran
+    right: Mit freundlichen Grüßen Mai Tran
+    target_lang: de
+    note:
+      vi: "Trong thư tiếng Đức, sau lời chào cuối không đặt dấu phẩy; tên viết ở dòng dưới."
+  - type: common_mistake
+    wrong: Können Sie mir sagen, ob welche Dokumente ich brauche?
+    right: Können Sie mir sagen, welche Dokumente ich brauche?
+    target_lang: de
+    note:
+      vi: "Có từ để hỏi (welche) thì không thêm ob; ob chỉ dùng cho câu hỏi có/không."
+  - type: summary
+    points:
+      - vi: "Thông báo: tìm ngày, giờ, giấy tờ; chú ý geschlossen, nicht mehr, müssen nicht, dürfen nicht."
+      - vi: "E-mail trang trọng: Sehr geehrte Damen und Herren, … Mit freundlichen Grüßen + tên."
+      - vi: "Hỏi lịch sự: Können Sie mir bitte sagen, wann/wo/welche …? Ich möchte wissen, ob …"
+      - vi: "zu + nguyên thể, um … zu, deshalb + động từ vị trí 2."
+      - vi: "lassen + nguyên thể = nhờ người khác làm; nicht müssen ≠ nicht dürfen."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a2u06l5-mcq-lesen-buergeramt
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-g-muss-nicht-darf-nicht
+    prompt:
+      stem: "Đọc thông báo: \"Bürgeramt Nord – Öffnungszeiten: Montag bis Donnerstag 8 bis 15 Uhr, Freitag geschlossen. Sie müssen nicht unbedingt einen Termin machen, aber ohne Termin warten Sie oft lange. Bitte bringen Sie Ihren Ausweis mit.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a3r, text: "Không bắt buộc đặt lịch hẹn, nhưng không có lịch hẹn thì thường phải chờ lâu.", lang: vi }
+        - { id: n7f, text: "Không có lịch hẹn thì không được vào văn phòng.", lang: vi }
+        - { id: u1k, text: "Văn phòng mở cửa thứ Sáu từ 8 đến 15 giờ.", lang: vi }
+        - { id: i5d, text: "Không cần mang theo giấy tờ tùy thân.", lang: vi }
+    answer:
+      correct_option_id: a3r
+    explanation:
+      vi: "müssen nicht unbedingt = không nhất thiết phải (không cần) – không phải \"không được\". Freitag geschlossen = thứ Sáu đóng cửa; Bitte bringen Sie Ihren Ausweis mit = hãy mang theo giấy tờ tùy thân."
+    display_answer: "Không bắt buộc đặt lịch hẹn, nhưng không có lịch hẹn thì thường phải chờ lâu."
+
+  - key: de:exercise:a2u06l5-mcq-lesen-zettel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-zettel
+    prompt:
+      stem: "Đọc tờ giấy báo trong hộp thư: \"Liebe Kundin, lieber Kunde, wir konnten Ihr Paket heute leider nicht zustellen. Sie können es ab morgen, 10 Uhr, in unserer Filiale in der Bahnhofstraße abholen. Bitte bringen Sie diesen Zettel und Ihren Ausweis mit.\" Bạn cần làm gì?"
+      stem_lang: vi
+      options:
+        - { id: s8b, text: "Từ 10 giờ sáng mai, mang tờ giấy này và giấy tờ tùy thân đến chi nhánh để lấy gói hàng.", lang: vi }
+        - { id: o2w, text: "Hôm nay đến chi nhánh lấy gói hàng trước 10 giờ.", lang: vi }
+        - { id: e6c, text: "Chờ ở nhà, mai người đưa thư mang gói hàng đến lúc 10 giờ.", lang: vi }
+        - { id: z9h, text: "Gửi lại tờ giấy này cho bưu điện qua đường thư.", lang: vi }
+    answer:
+      correct_option_id: s8b
+    explanation:
+      vi: "nicht zustellen = không giao được; ab morgen, 10 Uhr = từ 10 giờ ngày mai; in unserer Filiale … abholen = đến chi nhánh lấy; diesen Zettel und Ihren Ausweis mitbringen = mang theo tờ giấy này và giấy tờ tùy thân."
+    display_answer: "Từ 10 giờ sáng mai, mang tờ giấy này và giấy tờ tùy thân đến chi nhánh để lấy gói hàng."
+
+  - key: de:exercise:a2u06l5-mcq-lesen-bank
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-geheimzahl
+    prompt:
+      stem: "Đọc thư của ngân hàng: \"Ihre neue Kreditkarte ist da. Die Geheimzahl bekommen Sie in einem anderen Brief. Bitte schreiben Sie die Geheimzahl nicht auf die Karte. Wir fragen Sie nie per E-Mail oder Telefon nach Ihrer Geheimzahl.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c4m, text: "Mã PIN được gửi trong một lá thư khác, và ngân hàng không bao giờ hỏi mã PIN qua e-mail hay điện thoại.", lang: vi }
+        - { id: y7t, text: "Mã PIN được ghi ở mặt sau thẻ tín dụng.", lang: vi }
+        - { id: h1x, text: "Ngân hàng sẽ gọi điện hỏi mã PIN của bạn.", lang: vi }
+        - { id: q8s, text: "Bạn phải đến chi nhánh để lấy thẻ tín dụng mới.", lang: vi }
+    answer:
+      correct_option_id: c4m
+    explanation:
+      vi: "in einem anderen Brief = trong một lá thư khác; nicht auf die Karte schreiben = đừng ghi lên thẻ; Wir fragen Sie nie … nach Ihrer Geheimzahl = chúng tôi không bao giờ hỏi mã PIN của bạn."
+    display_answer: "Mã PIN được gửi trong một lá thư khác, và ngân hàng không bao giờ hỏi mã PIN qua e-mail hay điện thoại."
+
+  - key: de:exercise:a2u06l5-mcq-lesen-email
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-g-ob
+    prompt:
+      stem: "Đọc e-mail: \"Sehr geehrte Damen und Herren, ich habe gestern im Bus Nummer 5 meinen Regenschirm vergessen. Er ist blau und ziemlich groß. Können Sie mir bitte sagen, ob er bei Ihnen im Fundbüro ist? Mit freundlichen Grüßen Long Pham\" Long viết e-mail để làm gì?"
+      stem_lang: vi
+      options:
+        - { id: v3j, text: "Hỏi xem chiếc ô màu xanh để quên trên xe buýt có ở phòng đồ thất lạc không.", lang: vi }
+        - { id: k6n, text: "Báo cho phòng đồ thất lạc rằng anh ấy nhặt được một chiếc ô.", lang: vi }
+        - { id: d1p, text: "Hỏi giờ chạy của xe buýt số 5.", lang: vi }
+        - { id: r5g, text: "Hỏi mua một chiếc ô mới màu xanh.", lang: vi }
+    answer:
+      correct_option_id: v3j
+    explanation:
+      vi: "meinen Regenschirm vergessen = để quên ô của mình; Können Sie mir bitte sagen, ob er … im Fundbüro ist? = xin cho tôi biết liệu nó có ở phòng đồ thất lạc không (ob = liệu … có không)."
+    display_answer: "Hỏi xem chiếc ô màu xanh để quên trên xe buýt có ở phòng đồ thất lạc không."
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a2u06l5-listen-wartenummer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-wartenummer
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Die Wartenummer zweihundertvierzehn, bitte zu Schalter drei."
+      options:
+        - { id: w2a, text: "Số thứ tự 214, mời đến quầy số 3.", lang: vi }
+        - { id: f8e, text: "Số thứ tự 241, mời đến quầy số 3.", lang: vi }
+        - { id: m4u, text: "Số thứ tự 214, mời đến quầy số 2.", lang: vi }
+        - { id: b6o, text: "Số thứ tự 204, mời đến quầy số 13.", lang: vi }
+    answer:
+      correct_option_id: w2a
+    explanation:
+      vi: "zweihundertvierzehn = 214 (hai trăm + mười bốn, vierzehn = 14); Schalter drei = quầy số 3. 241 sẽ là zweihunderteinundvierzig."
+    display_answer: "Số thứ tự 214, mời đến quầy số 3."
+
+  - key: de:exercise:a2u06l5-listen-werkstatt-anruf
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u06-werkstatt
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, hier ist die Fahrradwerkstatt Berger. Ihr Fahrrad ist fertig. Sie können es ab heute Nachmittag abholen. Wir haben bis achtzehn Uhr geöffnet."
+      options:
+        - { id: t3y, text: "Xe đạp đã sửa xong; từ chiều nay có thể đến lấy, xưởng mở cửa đến 18 giờ.", lang: vi }
+        - { id: g7l, text: "Xe đạp chưa sửa xong; chiều mai mới lấy được.", lang: vi }
+        - { id: p1c, text: "Xe đạp đã sửa xong; xưởng sẽ mang xe đến nhà lúc 18 giờ.", lang: vi }
+        - { id: j9r, text: "Xưởng hỏi khi nào bạn mang xe đạp đến sửa.", lang: vi }
+    answer:
+      correct_option_id: t3y
+    explanation:
+      vi: "Ihr Fahrrad ist fertig = xe của bạn xong rồi; ab heute Nachmittag abholen = từ chiều nay đến lấy; bis achtzehn Uhr geöffnet = mở cửa đến 18 giờ."
+    display_answer: "Xe đạp đã sửa xong; từ chiều nay có thể đến lấy, xưởng mở cửa đến 18 giờ."
+
+  # ---------------- recall: viết thư ----------------
+  - key: de:exercise:a2u06l5-fill-anrede-gruss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      template: "{{b1}} Damen und Herren, können Sie mir bitte sagen, wann das Fundbüro geöffnet ist? Vielen Dank! Mit {{b2}} Grüßen Minh Nguyen"
+      blanks:
+        - { id: b1, width_hint: 13 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [Sehr geehrte]
+        b2: [freundlichen, besten]
+    explanation:
+      vi: "Thư trang trọng gửi cơ quan khi không biết tên người nhận mở đầu bằng Sehr geehrte Damen und Herren và kết thúc bằng Mit freundlichen Grüßen (Mit besten Grüßen cũng được dùng)."
+    display_answer: "Sehr geehrte Damen und Herren, können Sie mir bitte sagen, wann das Fundbüro geöffnet ist? Vielen Dank! Mit freundlichen Grüßen Minh Nguyen"
+
+  - key: de:exercise:a2u06l5-fill-ob-welche
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-indirekte-w-frage
+    prompt:
+      template: "Ich möchte gern wissen, ob ich einen Termin {{b1}} (brauchen) und welche Dokumente ich {{b2}} (mitbringen müssen)."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 16 }
+    answer:
+      blanks:
+        b1: [brauche]
+        b2: [mitbringen muss]
+    known_wrong:
+      - answer: muss mitbringen
+        feedback_vi: "Trong câu phụ, động từ chia (muss) đứng cuối cùng, sau nguyên thể: mitbringen muss."
+        error_tag: verb_position
+    explanation:
+      vi: "Hai câu hỏi gián tiếp (ob …, welche Dokumente …) nên động từ chia đứng cuối: ich … brauche; với động từ khuyết thiếu thì nguyên thể trước, muss sau cùng: mitbringen muss."
+    display_answer: "Ich möchte gern wissen, ob ich einen Termin brauche und welche Dokumente ich mitbringen muss."
+
+  - key: de:exercise:a2u06l5-tr-ob-termin
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-ob
+    prompt:
+      source_text: "Tôi muốn biết liệu tôi có cần lịch hẹn không. (viết trong e-mail trang trọng)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte wissen, ob ich einen Termin brauche.
+        - Ich möchte gern wissen, ob ich einen Termin brauche.
+        - Ich möchte gerne wissen, ob ich einen Termin brauche.
+        - Ich würde gern wissen, ob ich einen Termin brauche.
+        - Ich möchte wissen, ob ich einen Termin machen muss.
+        - Ich möchte wissen, ob ich einen Termin vereinbaren muss.
+    known_wrong:
+      - answer: Ich möchte wissen, ob ich brauche einen Termin.
+        feedback_vi: "Sau ob, động từ chia (brauche) đứng cuối: ob ich einen Termin brauche."
+        error_tag: verb_position
+      - answer: Ich möchte wissen, ob brauche ich einen Termin.
+        feedback_vi: "Sau ob là chủ ngữ, động từ xuống cuối: ob ich einen Termin brauche."
+        error_tag: verb_position
+    explanation:
+      vi: "Câu hỏi có/không gián tiếp → ob + chủ ngữ + … + động từ cuối. der Termin → Akkusativ einen Termin."
+    display_answer: Ich möchte wissen, ob ich einen Termin brauche.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u06l5-wb-welche-dokumente
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-indirekte-w-frage
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi lịch sự: \"Anh/chị có thể cho tôi biết tôi phải mang theo những giấy tờ gì không?\""
+      tokens:
+        - { id: t-muss, text: muss }
+        - { id: t-sagen, text: sagen }
+        - { id: t-dokumente, text: Dokumente }
+        - { id: t-koennen, text: Können }
+        - { id: t-mitbringen, text: mitbringen }
+        - { id: t-mir, text: mir }
+        - { id: t-ich, text: ich }
+        - { id: t-welche, text: welche }
+        - { id: t-sie, text: Sie }
+    answer:
+      orders:
+        - [t-koennen, t-sie, t-mir, t-sagen, t-welche, t-dokumente, t-ich, t-mitbringen, t-muss]
+    explanation:
+      vi: "Câu dẫn Können Sie mir sagen là câu hỏi có/không nên Können đứng đầu. Câu hỏi gián tiếp: welche Dokumente + chủ ngữ ich + nguyên thể mitbringen + động từ chia muss ở cuối cùng."
+    display_answer: Können Sie mir sagen, welche Dokumente ich mitbringen muss?
+
+  - key: de:exercise:a2u06l5-wb-deshalb-ausweis
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-deshalb
+    prompt:
+      instruction: "Ngữ cảnh: \"Ich habe meinen Ausweis verloren.\" Sắp xếp câu tiếp theo: \"Vì vậy tôi cần một thẻ căn cước mới.\""
+      tokens:
+        - { id: t-neuen, text: neuen }
+        - { id: t-ich, text: ich }
+        - { id: t-ausweis, text: Ausweis }
+        - { id: t-deshalb, text: deshalb }
+        - { id: t-brauche, text: brauche }
+        - { id: t-einen, text: einen }
+        - { id: t-neue, text: neue }
+    answer:
+      orders:
+        - [t-deshalb, t-brauche, t-ich, t-einen, t-neuen, t-ausweis]
+        - [t-ich, t-brauche, t-deshalb, t-einen, t-neuen, t-ausweis]
+    explanation:
+      vi: "deshalb ở vị trí 1 thì động từ brauche đứng ngay sau, rồi đến ich (deshalb cũng có thể đứng sau động từ: Ich brauche deshalb …). der Ausweis ở Akkusativ sau ein-: einen neuen Ausweis (đuôi -en)."
+    display_answer: Deshalb brauche ich einen neuen Ausweis.
+
+  - key: de:exercise:a2u06l5-tr-buergeramt-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u06-g-indirekte-w-frage
+    prompt:
+      source_text: Können Sie mir bitte sagen, wann das Rathaus am Freitag geöffnet ist?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh chị có thể cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào không?
+        - Anh chị có thể cho tôi biết thứ Sáu tòa thị chính mở cửa khi nào không?
+        - Xin anh chị cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào?
+        - Ông bà có thể cho tôi biết tòa thị chính mở cửa vào thứ Sáu lúc nào không?
+        - Anh chị có thể cho tôi biết tòa thị chính mở cửa vào thứ Sáu lúc nào không?
+        - Anh chị có thể cho tôi biết thứ Sáu tòa thị chính mở cửa mấy giờ không?
+        - Anh có thể cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào không?
+        - Chị có thể cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào không?
+        - Bạn có thể cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào không?
+        - Anh chị làm ơn cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Können Sie mir bitte sagen = anh/chị làm ơn cho tôi biết; wann … geöffnet ist = (mở cửa) lúc nào; am Freitag = vào thứ Sáu; das Rathaus = tòa thị chính."
+    display_answer: Anh chị có thể cho tôi biết thứ Sáu tòa thị chính mở cửa lúc nào không?

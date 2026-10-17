@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u06-zu-infinitiv
+order_index: 2
+level: a2
+title:
+  vi: Cần phải … – zu + nguyên thể (Es ist wichtig, ein Konto zu eröffnen.)
+objectives:
+  - vi: Làm các việc cơ bản ở ngân hàng – mở tài khoản, rút tiền, nộp tiền, chuyển khoản – và hỏi về phí.
+  - vi: Nói điều quan trọng, khó hay dễ bằng Es ist wichtig/schwer/einfach, … zu …
+  - vi: Nói điều mình quên, cố gắng hoặc không có thời gian/hứng làm (vergessen, versuchen, keine Zeit/Lust … zu …).
+  - vi: Đặt zu đúng chỗ với động từ tách (abzuheben) và bỏ zu sau động từ khuyết thiếu.
+estimated_minutes: 17
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a2u06-wissen-sie-wo]
+items:
+  - item: de:item:a2u06-g-zu-infinitiv
+  - item: de:item:a2u06-konto
+  - item: de:item:a2u06-eroeffnen
+  - item: de:item:a2u06-kreditkarte
+  - item: de:item:a2u06-geheimzahl
+  - item: de:item:a2u06-ueberweisen
+  - item: de:item:a2u06-abheben
+  - item: de:item:a2u06-geldautomat
+  - item: de:item:a2u06-bargeld
+  - item: de:item:a2u06-versuchen
+  - item: de:item:a2u06-gebuehr
+  - item: de:item:a2u06-geld
+  - item: de:item:a2u06-einzahlen
+  - item: de:item:a2u06-muenze
+  - item: de:item:a2u06-geldschein
+  - item: de:item:a2u06-filiale
+  - item: de:item:a1u04-g-trennbare-verben
+    role: reuse
+  - item: de:item:a2u03-g-dass
+    role: reuse
+  - item: de:item:a1u06-lust-haben
+    role: reuse
+  - item: de:item:a2u01-vergessen
+    role: reuse
+  - item: de:item:a1u05-bank
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được những câu như "Điều quan trọng là đừng quên mã PIN", "Tôi quên rút tiền mặt", "Hôm nay tôi không có thời gian ra ngân hàng" – và xử lý được các việc cơ bản ở ngân hàng.
+  - type: explain
+    text:
+      vi: "Sau một số cụm như Es ist wichtig (quan trọng), Es ist schwer/einfach (khó/dễ), Ich habe vergessen (tôi quên), Ich versuche (tôi cố), Ich habe keine Zeit/Lust (tôi không có thời gian/hứng), việc cần làm được nói bằng một cụm zu + nguyên thể. Cụm này đứng sau dấu phẩy, zu + nguyên thể đứng cuối cùng: Es ist wichtig, ein Konto zu eröffnen."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"quan trọng là mở tài khoản\" với động từ đứng trước tân ngữ; tiếng Đức đẩy động từ về cuối: ein Konto zu eröffnen. Cụm zu không có chủ ngữ riêng – người làm chính là chủ ngữ của câu chính (Ich habe vergessen, … = tôi quên, và tôi là người phải làm)."
+  - type: explain
+    text:
+      vi: "Với động từ tách, zu chen vào giữa tiền tố và gốc, viết liền thành một chữ: anrufen → anzurufen, abheben → abzuheben, einzahlen → einzuzahlen. Tiền tố không tách (über-, er-, ver-, be-) thì zu đứng riêng phía trước: zu überweisen, zu eröffnen, zu versuchen."
+  - type: explain
+    text:
+      vi: "Sau động từ khuyết thiếu (können, müssen, wollen, dürfen, möchten) không có zu: Ich muss Geld abheben (không phải zu abheben). Mẹo: modal → nguyên thể trơn; Es ist …, vergessen, versuchen, Zeit, Lust → zu."
+  - type: deep_explain
+    text:
+      vi: "Dấu phẩy: trước cụm zu sau Es ist … (có chữ es báo trước) và sau danh từ (Zeit, Lust) thì phải có dấu phẩy; sau động từ như vergessen, versuchen dấu phẩy có thể bỏ, nhưng bạn nên đặt cho rõ. Cùng một ý có thể nói bằng dass, nhưng câu dass cần chủ ngữ riêng: Es ist wichtig, dass Sie die Geheimzahl nicht vergessen. = Es ist wichtig, die Geheimzahl nicht zu vergessen. nicht đứng ngay trước zu + nguyên thể. Về ngân hàng ở Đức: chuyển khoản dùng số IBAN của người nhận; nhiều người vẫn hay trả tiền mặt (Bargeld), dù thẻ ngày càng phổ biến. Rút tiền ở máy của ngân hàng khác hoặc một số loại tài khoản có thể mất phí (Gebühr) – mức phí tùy ngân hàng và có thể thay đổi, nên bạn hỏi trước: Kostet das eine Gebühr?"
+  - type: example
+    target: Es ist wichtig, die Geheimzahl nicht zu vergessen.
+    target_lang: de
+    translation:
+      vi: Điều quan trọng là đừng quên mã PIN.
+    note:
+      vi: "nicht đứng trước zu vergessen. Cùng ý với dass: Es ist wichtig, dass man die Geheimzahl nicht vergisst."
+  - type: example
+    target: Ich habe vergessen, Bargeld abzuheben.
+    target_lang: de
+    translation:
+      vi: Tôi quên rút tiền mặt.
+    note:
+      vi: "abheben là động từ tách → abzuheben (zu viết liền ở giữa)."
+  - type: example
+    target: "Hast du Lust, morgen mit mir zur Bank zu gehen? – Leider habe ich keine Zeit."
+    target_lang: de
+    translation:
+      vi: "Mai bạn có muốn đi ngân hàng với mình không? – Tiếc là mình không có thời gian."
+    note:
+      vi: "Hai người bạn nói với nhau nên dùng du. Lust haben + zu: … zur Bank zu gehen."
+  - type: example
+    target: "Ich möchte ein Konto eröffnen. Kostet das eine Gebühr?"
+    target_lang: de
+    translation:
+      vi: "Tôi muốn mở một tài khoản. Việc này có mất phí không?"
+    note:
+      vi: "Nói với nhân viên ngân hàng. Sau möchten (modal) không có zu: ein Konto eröffnen."
+  - type: example
+    target: Ich versuche seit einer Stunde, Geld zu überweisen.
+    target_lang: de
+    translation:
+      vi: Tôi cố chuyển tiền suốt một tiếng nay rồi.
+    note:
+      vi: "überweisen có tiền tố không tách nên zu đứng trước: zu überweisen."
+  - type: common_mistake
+    wrong: Ich muss heute zur Bank zu gehen.
+    right: Ich muss heute zur Bank gehen.
+    target_lang: de
+    note:
+      vi: "Sau động từ khuyết thiếu (muss) chỉ dùng nguyên thể trơn, không có zu."
+  - type: common_mistake
+    wrong: Ich habe vergessen, dich zu anrufen.
+    right: Ich habe vergessen, dich anzurufen.
+    target_lang: de
+    note:
+      vi: "anrufen là động từ tách: zu chen vào giữa và viết liền → anzurufen."
+  - type: common_mistake
+    wrong: Es ist wichtig, zu eröffnen ein Konto.
+    right: Es ist wichtig, ein Konto zu eröffnen.
+    target_lang: de
+    note:
+      vi: "zu + nguyên thể đứng cuối cụm, sau tân ngữ."
+  - type: summary
+    points:
+      - vi: "Es ist wichtig/schwer/einfach, … zu + nguyên thể."
+      - vi: "vergessen, versuchen, keine Zeit/Lust haben + , … zu + nguyên thể."
+      - vi: "Động từ tách: anzurufen, abzuheben, einzuzahlen (một chữ)."
+      - vi: "Tiền tố không tách: zu überweisen, zu eröffnen."
+      - vi: "Sau modal không có zu: Ich muss Geld abheben."
+      - vi: "Ngân hàng: das Konto, die Kreditkarte, die Geheimzahl, der Geldautomat, das Bargeld, die Gebühr."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u06l2-mcq-konto-eroeffnen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u06-g-zu-infinitiv
+    prompt:
+      stem: "Chọn câu đúng: \"Điều quan trọng là mở một tài khoản.\""
+      stem_lang: vi
+      options:
+        - { id: j4r, text: "Es ist wichtig, ein Konto zu eröffnen.", lang: de }
+        - { id: u8c, text: "Es ist wichtig, zu eröffnen ein Konto.", lang: de }
+        - { id: x2f, text: "Es ist wichtig, ein Konto eröffnen.", lang: de }
+        - { id: g6s, text: "Es ist wichtig, ein Konto zu eröffnet.", lang: de }
+    answer:
+      correct_option_id: j4r
+    explanation:
+      vi: "Sau Es ist wichtig cần cụm zu + nguyên thể, và zu eröffnen đứng cuối, sau tân ngữ ein Konto. Thiếu zu là sai; eröffnet là Partizip II, không phải nguyên thể."
+    display_answer: "Es ist wichtig, ein Konto zu eröffnen."
+
+  - key: de:exercise:a2u06l2-mcq-muss-abheben
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-abheben
+    prompt:
+      stem: "Chọn câu đúng: \"Hôm nay tôi phải rút tiền.\""
+      stem_lang: vi
+      options:
+        - { id: c5n, text: "Ich muss heute Geld abheben.", lang: de }
+        - { id: o9d, text: "Ich muss heute Geld abzuheben.", lang: de }
+        - { id: y3h, text: "Ich muss heute Geld zu abheben.", lang: de }
+        - { id: l7w, text: "Ich muss heute abheben Geld.", lang: de }
+    answer:
+      correct_option_id: c5n
+    explanation:
+      vi: "müssen là động từ khuyết thiếu: theo sau là nguyên thể trơn ở cuối câu, không có zu. abzuheben chỉ dùng sau Es ist …, vergessen, versuchen, Zeit/Lust …"
+    display_answer: "Ich muss heute Geld abheben."
+
+  - key: de:exercise:a2u06l2-fill-anzurufen
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-trennbare-verben
+    prompt:
+      template: "Entschuldigung, ich habe gestern vergessen, dich {{b1}} (anrufen)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+      hint_levels:
+        - "Nghĩa: Xin lỗi, hôm qua mình quên gọi điện cho bạn."
+        - "Gợi ý: sau vergessen cần zu; anrufen là động từ tách → zu chen vào giữa an- và rufen."
+    answer:
+      blanks:
+        b1: [anzurufen]
+    known_wrong:
+      - answer: zu anrufen
+        feedback_vi: "Với động từ tách, zu đứng giữa tiền tố và gốc, viết liền: anzurufen."
+        error_tag: separable_prefix
+      - answer: anrufen zu
+        feedback_vi: "zu không đứng sau động từ; với động từ tách viết liền: anzurufen."
+        error_tag: separable_prefix
+    explanation:
+      vi: "vergessen + cụm zu. anrufen là động từ tách, nên zu chen vào giữa và viết thành một chữ: anzurufen."
+    display_answer: "Entschuldigung, ich habe gestern vergessen, dich anzurufen."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u06l2-fill-ueberweisen-gehen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-ueberweisen
+    prompt:
+      template: "Es ist nicht schwer, online Geld {{b1}} (überweisen). Aber heute habe ich keine Zeit, zur Bank {{b2}} (gehen)."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [zu überweisen]
+        b2: [zu gehen]
+    known_wrong:
+      - answer: überzuweisen
+        feedback_vi: "über- trong überweisen không tách, nên zu đứng riêng phía trước: zu überweisen."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Sau Es ist nicht schwer và sau keine Zeit đều cần zu + nguyên thể ở cuối. überweisen có tiền tố không tách (ich überweise) nên viết zu überweisen."
+    display_answer: "Es ist nicht schwer, online Geld zu überweisen. Aber heute habe ich keine Zeit, zur Bank zu gehen."
+
+  - key: de:exercise:a2u06l2-fill-abheben-kommen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-zu-infinitiv
+    prompt:
+      template: "Ich muss noch Bargeld {{b1}} (abheben). Hast du Lust, mit mir zum Geldautomaten {{b2}} (kommen)?"
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [abheben]
+        b2: [zu kommen]
+    known_wrong:
+      - answer: zu abheben
+        feedback_vi: "Sau muss không có zu (và với động từ tách, zu đứng giữa tiền tố và gốc chứ không đứng trước). Ở đây chỉ cần abheben."
+        error_tag: separable_prefix
+      - answer: abzuheben
+        feedback_vi: "Sau động từ khuyết thiếu muss chỉ dùng nguyên thể trơn, không có zu: Ich muss … abheben."
+        error_tag: zu_infinitive
+      - answer: kommen
+        feedback_vi: "Sau danh từ Lust cần zu + nguyên thể: Hast du Lust, … zu kommen?"
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Câu 1 có modal muss → nguyên thể trơn abheben. Câu 2 có danh từ Lust → cần zu + nguyên thể: zu kommen."
+    display_answer: "Ich muss noch Bargeld abheben. Hast du Lust, mit mir zum Geldautomaten zu kommen?"
+
+  - key: de:exercise:a2u06l2-tr-keine-zeit-bank
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-zu-infinitiv
+    prompt:
+      source_text: Hôm nay tôi không có thời gian ra ngân hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe heute keine Zeit, zur Bank zu gehen.
+        - Heute habe ich keine Zeit, zur Bank zu gehen.
+        - Ich habe heute keine Zeit, in die Bank zu gehen.
+        - Heute habe ich keine Zeit, in die Bank zu gehen.
+        - Ich habe heute keine Zeit, auf die Bank zu gehen.
+        - Ich habe heute keine Zeit, zur Bank zu fahren.
+        - Heute habe ich keine Zeit, zur Bank zu fahren.
+    known_wrong:
+      - answer: Ich habe heute keine Zeit, zu gehen zur Bank.
+        feedback_vi: "zu + nguyên thể đứng cuối cụm: …, zur Bank zu gehen."
+        error_tag: word_order
+      - answer: Ich habe heute keine Zeit, zur Bank gehen.
+        feedback_vi: "Sau keine Zeit cần zu + nguyên thể: …, zur Bank zu gehen."
+        error_tag: zu_infinitive
+      - answer: Heute ich habe keine Zeit, zur Bank zu gehen.
+        feedback_vi: "Câu bắt đầu bằng Heute thì động từ habe đứng thứ hai: Heute habe ich …"
+        error_tag: verb_position
+    explanation:
+      vi: "keine Zeit haben + cụm zu: zur Bank zu gehen (zu gehen đứng cuối). die Bank → zu der → zur Bank."
+    display_answer: Ich habe heute keine Zeit, zur Bank zu gehen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u06l2-wb-vergessen-abzuheben
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-abheben
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi quên rút tiền.\""
+      tokens:
+        - { id: t-abzuheben, text: abzuheben }
+        - { id: t-vergessen, text: vergessen }
+        - { id: t-zu, text: zu }
+        - { id: t-geld, text: Geld }
+        - { id: t-habe, text: habe }
+        - { id: t-abheben, text: abheben }
+        - { id: t-ich, text: Ich }
+    answer:
+      orders:
+        - [t-ich, t-habe, t-vergessen, t-geld, t-abzuheben]
+        - [t-geld, t-abzuheben, t-habe, t-ich, t-vergessen]
+    explanation:
+      vi: "Câu chính ở Perfekt: Ich habe vergessen. Sau đó là cụm zu, với động từ tách viết liền: Geld abzuheben. zu abheben là sai vì zu phải chen vào giữa ab- và heben."
+    display_answer: Ich habe vergessen, Geld abzuheben.
+
+  - key: de:exercise:a2u06l2-mcq-lesen-filiale
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u06-einzahlen
+    prompt:
+      stem: "Đọc thông báo ở một chi nhánh ngân hàng: \"Liebe Kundinnen und Kunden, ab Montag ist es nicht mehr möglich, am Automaten Münzen einzuzahlen. Bitte kommen Sie dafür an den Schalter. Geldscheine können Sie weiter am Automaten einzahlen.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z1q, text: "Từ thứ Hai, muốn nộp tiền xu thì phải ra quầy.", lang: vi }
+        - { id: i6b, text: "Từ thứ Hai, máy không nhận tiền giấy nữa.", lang: vi }
+        - { id: r4m, text: "Từ thứ Hai, quầy không nhận tiền xu nữa.", lang: vi }
+        - { id: k8t, text: "Từ thứ Hai, chi nhánh này đóng cửa.", lang: vi }
+    answer:
+      correct_option_id: z1q
+    explanation:
+      vi: "nicht mehr möglich, am Automaten Münzen einzuzahlen = không thể nộp tiền xu ở máy nữa; Bitte kommen Sie dafür an den Schalter = hãy ra quầy để làm việc đó. Tiền giấy (Geldscheine) vẫn nộp được ở máy (weiter = tiếp tục)."
+    display_answer: "Từ thứ Hai, muốn nộp tiền xu thì phải ra quầy."
+
+  - key: de:exercise:a2u06l2-tr-vergiss-bargeld
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-bargeld
+    prompt:
+      source_text: "Đừng quên rút tiền mặt nhé! (nói với một người bạn)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Vergiss nicht, Bargeld abzuheben!
+        - Vergiss bitte nicht, Bargeld abzuheben!
+        - Vergiss nicht, Geld abzuheben!
+        - Denk daran, Bargeld abzuheben!
+        - Denk bitte daran, Bargeld abzuheben!
+    known_wrong:
+      - answer: Vergiss nicht, Bargeld zu abheben!
+        feedback_vi: "abheben là động từ tách: zu chen vào giữa → abzuheben."
+        error_tag: separable_prefix
+      - answer: Vergessen Sie nicht, Bargeld abzuheben!
+        feedback_vi: "Nói với bạn thân dùng du: Vergiss nicht, …!"
+        error_tag: register_du_sie
+    explanation:
+      vi: "Mệnh lệnh với du của vergessen là Vergiss! (e → i). Sau vergessen là cụm zu; abheben là động từ tách nên viết abzuheben."
+    display_answer: Vergiss nicht, Bargeld abzuheben!
+
+  - key: de:exercise:a2u06l2-tr-versuche-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u06-versuchen
+    prompt:
+      source_text: Ich versuche seit einer Stunde, Geld zu überweisen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi cố chuyển tiền suốt một tiếng nay rồi.
+        - Tôi cố chuyển khoản suốt một tiếng nay rồi.
+        - Tôi đã cố chuyển tiền một tiếng đồng hồ rồi.
+        - Tôi đang cố chuyển tiền từ một tiếng nay.
+        - Tôi cố gắng chuyển tiền đã một tiếng rồi.
+        - Tôi thử chuyển tiền suốt một tiếng rồi.
+        - Một tiếng nay tôi cố chuyển tiền.
+        - Tôi đã cố chuyển khoản một tiếng rồi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "versuchen, … zu = cố làm gì; seit einer Stunde + thì hiện tại = (đã) một tiếng nay và vẫn đang tiếp diễn; überweisen = chuyển khoản/chuyển tiền."
+    display_answer: Tôi cố chuyển tiền suốt một tiếng nay rồi.
