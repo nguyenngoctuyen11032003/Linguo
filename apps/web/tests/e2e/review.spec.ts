@@ -159,6 +159,32 @@ test('a card rated offline waits in the outbox, then syncs once back online', as
   expect(mock.reviewGrades()[0]!.rating).toBe(3);
 });
 
+test('a review runs with no network from the queue saved on Home, and its grades sync later', async ({ page, context }) => {
+  const mock = await setup(page);
+  await page.goto('/app');
+  await expect(page.getByRole('heading', { level: 2, name: 'Ôn tập hôm nay: 4 thẻ' })).toBeVisible({ timeout: 15_000 });
+  // Home saved up to 100 due cards on the device; the review page chunk is loaded by the first visit below.
+  await page.waitForFunction(() => Object.keys(localStorage).some((k) => k.startsWith('linguo-snap-v1:review-queue:')));
+  await page.getByRole('link', { name: 'Ôn ngay' }).click();
+  await expect(counter(page)).toHaveText('Thẻ 1/4', { timeout: 15_000 });
+  await page.goBack();
+  await expect(page.getByRole('heading', { level: 2, name: 'Ôn tập hôm nay: 4 thẻ' })).toBeVisible();
+
+  await context.setOffline(true);
+  await page.getByRole('link', { name: 'Ôn ngay' }).click();
+  await expect(counter(page)).toHaveText('Thẻ 1/4', { timeout: 15_000 });
+  // The server decides postponing and extra cards: offline they wait, rating does not.
+  await expect(page.getByRole('button', { name: 'Hoãn sang mai' })).toBeDisabled();
+  await finishWithMouse(page);
+  await expect(page.getByTestId('sync-status')).toContainText('4 mục sẽ được gửi khi có mạng');
+  expect(mock.reviewGrades()).toHaveLength(0);
+
+  await context.setOffline(false);
+  await expect.poll(() => mock.reviewGrades().length, { timeout: 20_000 }).toBe(4);
+  await expect(page.getByTestId('sync-status')).toHaveCount(0, { timeout: 20_000 });
+  expect(new Set(mock.reviewGrades().map((g) => g.key)).size).toBe(4);
+});
+
 test('P postpones the current card and "Hoãn tất cả" the rest', async ({ page }) => {
   const mock = await setup(page);
   await openReview(page);

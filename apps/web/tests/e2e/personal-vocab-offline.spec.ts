@@ -66,3 +66,46 @@ test('a personal review finishes offline and its grades sync once back online', 
   expect(delivered.size).toBe(3);
   expect(new Set(delivered.values()).size).toBe(3);
 });
+
+test('a personal review starts offline from the queue saved when the lists loaded', async ({ page, context }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await mockSupabase(page);
+  const mock = await mockPersonalVocab(page, {
+    lists: [
+      {
+        id: PERSONAL_LIST_ID,
+        name: 'Từ vựng TOPIK',
+        language_code: 'ko',
+        words: [
+          { term: '사과', meaning: 'quả táo' },
+          { term: '학교', meaning: 'trường học' },
+        ],
+      },
+    ],
+  });
+  await signIn(page);
+
+  // Online first: the lists load (the due words are saved on the device) and the review chunk is fetched.
+  await page.goto('/app/tu-vung-cua-toi');
+  await expect(page.getByText('Từ vựng TOPIK')).toBeVisible({ timeout: 15_000 });
+  await page.waitForFunction(() => Object.keys(localStorage).some((k) => k.startsWith('linguo-snap-v1:personal-queue:')));
+  await page.getByRole('link', { name: /Từ vựng TOPIK/ }).click();
+  await page.getByRole('link', { name: 'Ôn danh sách này' }).first().click();
+  const counter = page.getByRole('heading', { level: 2, name: /^Thẻ \d+\/2$/ });
+  await expect(counter).toHaveText('Thẻ 1/2', { timeout: 15_000 });
+  await page.goBack();
+  await page.goBack();
+
+  await context.setOffline(true);
+  await expect(page.getByText('Từ vựng TOPIK')).toBeVisible();
+  await page.getByRole('link', { name: /Từ vựng TOPIK/ }).click();
+  await page.getByRole('link', { name: 'Ôn danh sách này' }).first().click();
+  await expect(counter).toHaveText('Thẻ 1/2', { timeout: 15_000 });
+  await page.getByTestId('flashcard-front').click();
+  await page.keyboard.press('3');
+  await expect(counter).toHaveText('Thẻ 2/2');
+  expect(mock.grades()).toHaveLength(0);
+
+  await context.setOffline(false);
+  await expect.poll(() => mock.grades().length, { timeout: 20_000 }).toBe(1);
+});
