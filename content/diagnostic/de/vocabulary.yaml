@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+language: de
+skill: vocabulary
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+items:
+  # ---------- pre_a1 ----------
+  - key: de:diag:voc-pre-a1-danke
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “cảm ơn”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Bitte, lang: de }
+        - { id: b, text: Danke, lang: de }
+        - { id: c, text: Hallo, lang: de }
+        - { id: d, text: Tschüss, lang: de }
+    answer: b
+    explanation: { vi: "“Danke” là cảm ơn. “Bitte” là làm ơn / không có gì, “Hallo” là xin chào, “Tschüss” là tạm biệt (thân mật)." }
+  - key: de:diag:voc-pre-a1-guten-morgen
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Buổi sáng gặp đồng nghiệp ở cơ quan, bạn chào thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Gute Nacht!, lang: de }
+        - { id: b, text: Guten Abend!, lang: de }
+        - { id: c, text: Guten Morgen!, lang: de }
+        - { id: d, text: Auf Wiedersehen!, lang: de }
+    answer: c
+    explanation: { vi: "“Guten Morgen!” là lời chào buổi sáng. “Guten Abend!” dùng buổi tối, “Gute Nacht!” là chúc ngủ ngon khi đi ngủ, còn “Auf Wiedersehen!” là lời tạm biệt, không phải lời chào khi gặp." }
+  - key: de:diag:voc-pre-a1-wasser
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “nước”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: das Brot, lang: de }
+        - { id: b, text: die Milch, lang: de }
+        - { id: c, text: der Wein, lang: de }
+        - { id: d, text: das Wasser, lang: de }
+    answer: d
+    explanation: { vi: "“das Wasser” là nước. “das Brot” là bánh mì, “die Milch” là sữa, “der Wein” là rượu vang. Nên học danh từ cùng mạo từ: “das Wasser”." }
+  - key: de:diag:voc-pre-a1-schwester
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ “die Schwester” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: chị gái / em gái, lang: vi }
+        - { id: b, text: anh trai / em trai, lang: vi }
+        - { id: c, text: mẹ, lang: vi }
+        - { id: d, text: con gái, lang: vi }
+    answer: a
+    explanation: { vi: "“die Schwester” là chị hoặc em gái (tiếng Đức không phân biệt chị hay em). Anh/em trai là “der Bruder”, mẹ là “die Mutter”, con gái là “die Tochter”." }
+  - key: de:diag:voc-pre-a1-siebzehn
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Số 17 trong tiếng Đức là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: siebzig, lang: de }
+        - { id: b, text: siebzehn, lang: de }
+        - { id: c, text: sechzehn, lang: de }
+        - { id: d, text: sieben, lang: de }
+    answer: b
+    explanation: { vi: "17 = “siebzehn” (sieben + zehn, bỏ đuôi “-en” của “sieben”). “siebzig” là 70 (đuôi “-zig” chỉ hàng chục), “sechzehn” là 16, “sieben” là 7." }
+  - key: de:diag:voc-pre-a1-wie-geht-es
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Ai đó hỏi bạn “Wie geht es Ihnen?”. Câu trả lời phù hợp là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Ich heiße Anna., lang: de }
+        - { id: b, text: Ich komme aus Vietnam., lang: de }
+        - { id: c, text: "Danke, gut. Und Ihnen?", lang: de }
+        - { id: d, text: Ich bin zwanzig Jahre alt., lang: de }
+    answer: c
+    explanation: { vi: "“Wie geht es Ihnen?” nghĩa là “Ông/bà có khỏe không?” (cách nói lịch sự với “Sie”), nên đáp “Danke, gut. Und Ihnen?”. Các câu còn lại trả lời cho câu hỏi tên (Wie heißen Sie?), quê quán (Woher kommen Sie?) và tuổi (Wie alt sind Sie?)." }
+  # ---------- a1 ----------
+  - key: de:diag:voc-a1-baeckerei
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Bạn muốn mua bánh mì và bánh ngọt. Bạn đến đâu?"
+      stem_lang: vi
+      options:
+        - { id: a, text: die Apotheke, lang: de }
+        - { id: b, text: die Bibliothek, lang: de }
+        - { id: c, text: die Post, lang: de }
+        - { id: d, text: die Bäckerei, lang: de }
+    answer: d
+    explanation: { vi: "“die Bäckerei” là tiệm bánh. “die Apotheke” là hiệu thuốc, “die Bibliothek” là thư viện, “die Post” là bưu điện." }
+  - key: de:diag:voc-a1-fruehstueck
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Bữa ăn buổi sáng trong tiếng Đức gọi là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: das Frühstück, lang: de }
+        - { id: b, text: das Mittagessen, lang: de }
+        - { id: c, text: das Abendessen, lang: de }
+        - { id: d, text: der Nachtisch, lang: de }
+    answer: a
+    explanation: { vi: "“das Frühstück” là bữa sáng. “das Mittagessen” là bữa trưa, “das Abendessen” là bữa tối, “der Nachtisch” là món tráng miệng." }
+  - key: de:diag:voc-a1-mittwoch
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Ngày nào đứng ngay sau “Dienstag”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Montag, lang: de }
+        - { id: b, text: Donnerstag, lang: de }
+        - { id: c, text: Mittwoch, lang: de }
+        - { id: d, text: Sonntag, lang: de }
+    answer: c
+    explanation: { vi: "Thứ tự các ngày: Montag (thứ Hai), Dienstag (thứ Ba), Mittwoch (thứ Tư), Donnerstag (thứ Năm)… Sau “Dienstag” là “Mittwoch” (nghĩa đen: giữa tuần)." }
+  - key: de:diag:voc-a1-schlafen
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich bin sehr müde. Ich möchte jetzt ___."
+      stem_lang: de
+      options:
+        - { id: a, text: tanzen, lang: de }
+        - { id: b, text: schlafen, lang: de }
+        - { id: c, text: arbeiten, lang: de }
+        - { id: d, text: einkaufen, lang: de }
+    answer: b
+    explanation: { vi: "“müde” nghĩa là mệt, buồn ngủ, nên hợp lý nhất là “schlafen” (ngủ). “tanzen” là nhảy, “arbeiten” là làm việc, “einkaufen” là đi mua sắm — không phải điều người mệt muốn làm." }
+  - key: de:diag:voc-a1-halb-acht
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "“Es ist halb acht.” Bây giờ là mấy giờ?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "8:30", lang: vi }
+        - { id: b, text: "7:30", lang: vi }
+        - { id: c, text: "8:00", lang: vi }
+        - { id: d, text: "7:15", lang: vi }
+    answer: b
+    explanation: { vi: "Trong tiếng Đức “halb acht” là “còn nửa tiếng nữa đến 8 giờ”, tức 7:30 — không phải 8:30. 7:15 là “Viertel nach sieben”, 8:00 là “acht Uhr”." }
+  - key: de:diag:voc-a1-bekommen
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Từ “bekommen” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: trở thành, lang: vi }
+        - { id: b, text: mang đến, lang: vi }
+        - { id: c, text: mua, lang: vi }
+        - { id: d, text: nhận được, lang: vi }
+    answer: d
+    explanation: { vi: "“bekommen” là nhận được (Ich bekomme einen Brief — Tôi nhận được một lá thư). Người biết tiếng Anh hay nhầm với “become”; “trở thành” trong tiếng Đức là “werden”. Mang đến là “bringen”, mua là “kaufen”." }
+  # ---------- a2 ----------
+  - key: de:diag:voc-a2-termin
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich habe Zahnschmerzen. Ich muss einen ___ beim Zahnarzt machen."
+      stem_lang: de
+      options:
+        - { id: a, text: Termin, lang: de }
+        - { id: b, text: Urlaub, lang: de }
+        - { id: c, text: Ausflug, lang: de }
+        - { id: d, text: Unterricht, lang: de }
+    answer: a
+    explanation: { vi: "“einen Termin machen” là đặt lịch hẹn (với bác sĩ, cơ quan…). “der Urlaub” là kỳ nghỉ, “der Ausflug” là chuyến dã ngoại, “der Unterricht” là giờ học — không ai “đặt” chúng ở nha sĩ." }
+  - key: de:diag:voc-a2-regenschirm
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Es regnet stark. Nimm lieber einen ___ mit!"
+      stem_lang: de
+      options:
+        - { id: a, text: Sonnenhut, lang: de }
+        - { id: b, text: Badeanzug, lang: de }
+        - { id: c, text: Regenschirm, lang: de }
+        - { id: d, text: Fernseher, lang: de }
+    answer: c
+    explanation: { vi: "Trời mưa to (“es regnet stark”) thì mang “der Regenschirm” (cái ô). “der Sonnenhut” là mũ che nắng, “der Badeanzug” là đồ bơi, “der Fernseher” là cái ti vi." }
+  - key: de:diag:voc-a2-wissen-kennen
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Entschuldigung, ich ___ leider nicht, wo der Bahnhof ist."
+      stem_lang: de
+      options:
+        - { id: a, text: kenne, lang: de }
+        - { id: b, text: weiß, lang: de }
+        - { id: c, text: kann, lang: de }
+        - { id: d, text: lerne, lang: de }
+    answer: b
+    explanation: { vi: "“wissen” (ich weiß) là biết một thông tin/sự việc, thường đi với mệnh đề (“…, wo der Bahnhof ist”). “kennen” là biết, quen một người/vật và đi với danh từ (Ich kenne den Bahnhof). “können” và “lernen” không đi với mệnh đề “wo…” theo nghĩa này." }
+  - key: de:diag:voc-a2-verpasst
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich bin zu spät zum Bahnhof gekommen und habe den Zug ___."
+      stem_lang: de
+      options:
+        - { id: a, text: verloren, lang: de }
+        - { id: b, text: verkauft, lang: de }
+        - { id: c, text: vergessen, lang: de }
+        - { id: d, text: verpasst, lang: de }
+    answer: d
+    explanation: { vi: "“den Zug verpassen” là lỡ chuyến tàu. “verlieren” là đánh mất (đồ vật, trận đấu), “verkaufen” là bán, “vergessen” là quên — đều không dùng cho việc đến muộn bị lỡ tàu." }
+  - key: de:diag:voc-a2-bewirbt
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Anna sucht eine neue Stelle. Sie ___ sich bei einer Firma in Berlin."
+      stem_lang: de
+      options:
+        - { id: a, text: bewirbt, lang: de }
+        - { id: b, text: bezahlt, lang: de }
+        - { id: c, text: bestellt, lang: de }
+        - { id: d, text: besucht, lang: de }
+    answer: a
+    explanation: { vi: "“sich bewerben (bei + Dativ)” là nộp đơn xin việc; ngôi “sie” chia là “bewirbt” (e → i). “bezahlen” (trả tiền), “bestellen” (đặt hàng), “besuchen” (thăm) không phải động từ phản thân và không hợp nghĩa “tìm việc”." }
+  - key: de:diag:voc-a2-gift
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "Từ tiếng Đức “das Gift” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: món quà, lang: vi }
+        - { id: b, text: chất độc, lang: vi }
+        - { id: c, text: tiền boa, lang: vi }
+        - { id: d, text: sự may mắn, lang: vi }
+    answer: b
+    explanation: { vi: "“das Gift” là chất độc (giftig = độc hại) — một “bạn giả” với tiếng Anh “gift”. Món quà trong tiếng Đức là “das Geschenk”, tiền boa là “das Trinkgeld”, may mắn là “das Glück”." }
+  # ---------- b1 ----------
+  - key: de:diag:voc-b1-warten-auf
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wir warten schon seit einer Stunde ___ den Bus."
+      stem_lang: de
+      options:
+        - { id: a, text: für, lang: de }
+        - { id: b, text: an, lang: de }
+        - { id: c, text: auf, lang: de }
+        - { id: d, text: nach, lang: de }
+    answer: c
+    explanation: { vi: "Động từ cố định giới từ: “warten auf + Akkusativ” (chờ ai/cái gì). Dịch từ tiếng Anh “wait for” sang “für” là lỗi rất phổ biến." }
+  - key: de:diag:voc-b1-interessieren-fuer
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Interessierst du dich eigentlich ___ Politik?"
+      stem_lang: de
+      options:
+        - { id: a, text: für, lang: de }
+        - { id: b, text: an, lang: de }
+        - { id: c, text: auf, lang: de }
+        - { id: d, text: über, lang: de }
+    answer: a
+    explanation: { vi: "“sich interessieren für + Akkusativ” (quan tâm đến). Bẫy: danh từ lại đi với “an” — “das Interesse an + Dativ” — nên phải học giới từ theo từng từ." }
+  - key: de:diag:voc-b1-erinnern-an
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich kann mich nicht mehr ___ seinen Namen erinnern."
+      stem_lang: de
+      options:
+        - { id: a, text: über, lang: de }
+        - { id: b, text: an, lang: de }
+        - { id: c, text: von, lang: de }
+        - { id: d, text: auf, lang: de }
+    answer: b
+    explanation: { vi: "“sich erinnern an + Akkusativ” là nhớ lại ai/điều gì (“seinen Namen” ở Akkusativ). Các giới từ “über”, “von”, “auf” không đi với “sich erinnern”." }
+  - key: de:diag:voc-b1-vorbereitung
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "Danh từ nào được tạo từ động từ “vorbereiten” (chuẩn bị)?"
+      stem_lang: vi
+      options:
+        - { id: a, text: die Vorstellung, lang: de }
+        - { id: b, text: die Vorlesung, lang: de }
+        - { id: c, text: die Vorsicht, lang: de }
+        - { id: d, text: die Vorbereitung, lang: de }
+    answer: d
+    explanation: { vi: "Gốc động từ + “-ung” tạo danh từ giống cái: vorbereiten → “die Vorbereitung” (sự chuẩn bị). “die Vorstellung” (sự giới thiệu / buổi biểu diễn) từ “vorstellen”, “die Vorlesung” (bài giảng đại học) từ “vorlesen”, “die Vorsicht” là sự thận trọng." }
+  - key: de:diag:voc-b1-ruecksicht-nehmen
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Bitte ___ Sie nach 22 Uhr Rücksicht auf die Nachbarn."
+      stem_lang: de
+      options:
+        - { id: a, text: machen, lang: de }
+        - { id: b, text: geben, lang: de }
+        - { id: c, text: nehmen, lang: de }
+        - { id: d, text: halten, lang: de }
+    answer: c
+    explanation: { vi: "Cụm cố định “Rücksicht nehmen auf + Akkusativ” (để ý, tôn trọng người khác). Danh từ “die Rücksicht” chỉ đi với động từ “nehmen”, không dùng “machen”, “geben” hay “halten”." }
+  - key: de:diag:voc-b1-bescheid-sagen
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Kannst du mir bitte ___ sagen, wann du ankommst?"
+      stem_lang: de
+      options:
+        - { id: a, text: Bescheid, lang: de }
+        - { id: b, text: Auskunft, lang: de }
+        - { id: c, text: Nachricht, lang: de }
+        - { id: d, text: Antwort, lang: de }
+    answer: a
+    explanation: { vi: "“jemandem Bescheid sagen” (báo cho ai biết) là cụm cố định. Các danh từ kia đi với động từ khác: “Auskunft geben”, “eine Nachricht schicken”, “eine Antwort geben” — không nói “Auskunft/Nachricht/Antwort sagen”." }
+  # ---------- b2 ----------
+  - key: de:diag:voc-b2-nachhaltig
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Trong cụm “nachhaltige Landwirtschaft”, từ “nachhaltig” có nghĩa gần nhất là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: truyền thống, lang: vi }
+        - { id: b, text: muộn màng, lang: vi }
+        - { id: c, text: bền vững, lang: vi }
+        - { id: d, text: hiện đại, lang: vi }
+    answer: c
+    explanation: { vi: "“nachhaltig” nghĩa là bền vững (không làm cạn kiệt tài nguyên, có tác dụng lâu dài); “die Nachhaltigkeit” là tính bền vững. Tiền tố “nach-” dễ gây hiểu nhầm thành “sau/muộn”, nhưng nghĩa của từ không phải vậy." }
+  - key: de:diag:voc-b2-in-kraft
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Das neue Gesetz tritt am 1. Januar in ___."
+      stem_lang: de
+      options:
+        - { id: a, text: Geltung, lang: de }
+        - { id: b, text: Kraft, lang: de }
+        - { id: c, text: Wirkung, lang: de }
+        - { id: d, text: Macht, lang: de }
+    answer: b
+    explanation: { vi: "Cụm động từ chức năng (Funktionsverbgefüge) “in Kraft treten” = có hiệu lực. Các danh từ “Geltung”, “Wirkung”, “Macht” có nghĩa gần nhưng không kết hợp với “in … treten”." }
+  - key: de:diag:voc-b2-abhaengen-von
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ob wir das Projekt fortsetzen, hängt vor allem ___ der Finanzierung ab."
+      stem_lang: de
+      options:
+        - { id: a, text: an, lang: de }
+        - { id: b, text: auf, lang: de }
+        - { id: c, text: mit, lang: de }
+        - { id: d, text: von, lang: de }
+    answer: d
+    explanation: { vi: "“abhängen von + Dativ” (phụ thuộc vào); tính từ cũng vậy: “abhängig von”. Người Việt hay dịch “vào” thành “an” hoặc “auf”, nhưng ở đây chỉ dùng “von”." }
+  - key: de:diag:voc-b2-zur-verfuegung
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Die Firma ___ allen Mitarbeitern kostenlose Laptops zur Verfügung."
+      stem_lang: de
+      options:
+        - { id: a, text: stellt, lang: de }
+        - { id: b, text: legt, lang: de }
+        - { id: c, text: setzt, lang: de }
+        - { id: d, text: gibt, lang: de }
+    answer: a
+    explanation: { vi: "Funktionsverbgefüge “jemandem etwas zur Verfügung stellen” = cung cấp, để sẵn cho ai dùng. Danh từ “Verfügung” trong cụm này chỉ đi với “stellen” (hoặc “stehen”: etwas steht zur Verfügung), không đi với “legen”, “setzen”, “geben”." }
+  - key: de:diag:voc-b2-register-hoeflich
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Trong email gửi giáo sư bạn chưa quen, câu nào phù hợp nhất để xin tài liệu?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Schick mir mal die Unterlagen!, lang: de }
+        - { id: b, text: Kannst du mir die Unterlagen schicken?, lang: de }
+        - { id: c, text: "Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zusenden könnten.", lang: de }
+        - { id: d, text: Sie müssen mir die Unterlagen schicken., lang: de }
+    answer: c
+    explanation: { vi: "Văn phong trang trọng dùng “Sie” và Konjunktiv II để lịch sự: “Ich wäre Ihnen dankbar, wenn Sie … könnten”. Câu với “du”/mệnh lệnh “Schick mir mal” là thân mật, còn “Sie müssen …” dùng đúng “Sie” nhưng mang tính ra lệnh, bất lịch sự." }
+  - key: de:diag:voc-b2-auseinandersetzen
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Im Seminar setzen wir uns kritisch ___ dem Thema Migration auseinander."
+      stem_lang: de
+      options:
+        - { id: a, text: über, lang: de }
+        - { id: b, text: mit, lang: de }
+        - { id: c, text: an, lang: de }
+        - { id: d, text: von, lang: de }
+    answer: b
+    explanation: { vi: "“sich auseinandersetzen mit + Dativ” = nghiên cứu, đối diện, tranh luận kỹ về một vấn đề. “über” dễ bị chọn vì nghĩa “về”, nhưng động từ này chỉ đi với “mit” (đúng với “dem Thema” ở Dativ)." }

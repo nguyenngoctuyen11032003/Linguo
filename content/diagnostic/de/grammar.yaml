@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+language: de
+skill: grammar
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+items:
+  # ---------- pre_a1 ----------
+  - key: de:diag:gra-pre-a1-ich-bin
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich ___ Student."
+      stem_lang: de
+      options:
+        - { id: a, text: bist, lang: de }
+        - { id: b, text: bin, lang: de }
+        - { id: c, text: ist, lang: de }
+        - { id: d, text: sind, lang: de }
+    answer: b
+    explanation: { vi: "Động từ “sein” (là) chia theo chủ ngữ: ich bin, du bist, er/sie/es ist, wir/Sie sind. Với “ich” chỉ dùng “bin”. Nói nghề nghiệp thì không cần mạo từ: “Ich bin Student”." }
+  - key: de:diag:gra-pre-a1-ich-heisse
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Hallo! Ich ___ Lan."
+      stem_lang: de
+      options:
+        - { id: a, text: heiße, lang: de }
+        - { id: b, text: heißt, lang: de }
+        - { id: c, text: heißen, lang: de }
+        - { id: d, text: heiß, lang: de }
+    answer: a
+    explanation: { vi: "“heißen” (tên là) với “ich” có đuôi “-e”: “Ich heiße Lan”. “heißt” dùng cho du/er/sie, “heißen” cho wir/Sie, còn “heiß” là tính từ “nóng”." }
+  - key: de:diag:gra-pre-a1-der-tisch
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ Tisch ist neu."
+      stem_lang: de
+      options:
+        - { id: a, text: Die, lang: de }
+        - { id: b, text: Das, lang: de }
+        - { id: c, text: Der, lang: de }
+        - { id: d, text: Dem, lang: de }
+    answer: c
+    explanation: { vi: "“Tisch” (cái bàn) là danh từ giống đực: “der Tisch”. Ở vị trí chủ ngữ (Nominativ) dùng “der”; “dem” là dạng Dativ. Giống của danh từ phải học thuộc cùng từ." }
+  - key: de:diag:gra-pre-a1-woher
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ kommst du? – Aus Vietnam."
+      stem_lang: de
+      options:
+        - { id: a, text: Wo, lang: de }
+        - { id: b, text: Wohin, lang: de }
+        - { id: c, text: Wie, lang: de }
+        - { id: d, text: Woher, lang: de }
+    answer: d
+    explanation: { vi: "Câu trả lời “Aus Vietnam” (từ Việt Nam) cho biết nơi xuất phát, nên hỏi bằng “Woher?” (từ đâu). “Wo?” là ở đâu, “Wohin?” là đi đâu, “Wie?” là thế nào." }
+  - key: de:diag:gra-pre-a1-das-kind
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ Kind spielt im Garten."
+      stem_lang: de
+      options:
+        - { id: a, text: Der, lang: de }
+        - { id: b, text: Das, lang: de }
+        - { id: c, text: Die, lang: de }
+        - { id: d, text: Den, lang: de }
+    answer: b
+    explanation: { vi: "“Kind” (đứa trẻ) là danh từ giống trung: “das Kind”, dù đứa trẻ là trai hay gái. “Den” là dạng Akkusativ của giống đực, không dùng cho chủ ngữ." }
+  - key: de:diag:gra-pre-a1-sie-sind
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Entschuldigung, wie alt ___ Sie?"
+      stem_lang: de
+      options:
+        - { id: a, text: bist, lang: de }
+        - { id: b, text: ist, lang: de }
+        - { id: c, text: seid, lang: de }
+        - { id: d, text: sind, lang: de }
+    answer: d
+    explanation: { vi: "“Sie” viết hoa là đại từ xưng hô lịch sự (ông/bà/anh/chị), chia động từ như ngôi số nhiều: “Sie sind”. “bist” đi với “du”, “seid” đi với “ihr”, “ist” đi với er/sie/es." }
+  # ---------- a1 ----------
+  - key: de:diag:gra-a1-plural-kinder
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich habe ein Kind und meine Schwester hat zwei ___."
+      stem_lang: de
+      options:
+        - { id: a, text: Kind, lang: de }
+        - { id: b, text: Kindern, lang: de }
+        - { id: c, text: Kinder, lang: de }
+        - { id: d, text: Kindes, lang: de }
+    answer: c
+    explanation: { vi: "Khác tiếng Việt, danh từ tiếng Đức đổi dạng ở số nhiều: “das Kind” → “die Kinder” (đuôi “-er”), nên sau “zwei” không giữ nguyên “Kind”. “Kindern” là dạng Dativ số nhiều, “Kindes” là Genitiv số ít — đều sai ở vị trí tân ngữ Akkusativ này." }
+  - key: de:diag:gra-a1-akk-einen
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wir haben ___ Hund und zwei Katzen."
+      stem_lang: de
+      options:
+        - { id: a, text: einen, lang: de }
+        - { id: b, text: ein, lang: de }
+        - { id: c, text: einem, lang: de }
+        - { id: d, text: eine, lang: de }
+    answer: a
+    explanation: { vi: "“haben” cần tân ngữ ở Akkusativ. “der Hund” là giống đực, mà chỉ giống đực đổi mạo từ ở Akkusativ: ein → “einen”. “ein” là Nominativ, “einem” là Dativ, “eine” dùng cho giống cái." }
+  - key: de:diag:gra-a1-modal-kann
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Mein Bruder kann sehr gut ___."
+      stem_lang: de
+      options:
+        - { id: a, text: schwimmt, lang: de }
+        - { id: b, text: schwimmen, lang: de }
+        - { id: c, text: schwimme, lang: de }
+        - { id: d, text: geschwommen, lang: de }
+    answer: b
+    explanation: { vi: "Sau động từ khuyết thiếu (Modalverb) như “können”, động từ chính ở dạng nguyên thể và đứng cuối câu: “kann … schwimmen”. Chỉ “kann” được chia theo chủ ngữ." }
+  - key: de:diag:gra-a1-v2-morgen
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Câu nào có trật tự từ đúng?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Morgen ich fahre nach Berlin., lang: de }
+        - { id: b, text: Morgen ich nach Berlin fahre., lang: de }
+        - { id: c, text: Morgen fahre ich nach Berlin., lang: de }
+        - { id: d, text: Ich morgen fahre nach Berlin., lang: de }
+    answer: c
+    explanation: { vi: "Trong câu trần thuật, động từ chia luôn đứng ở vị trí thứ 2 (quy tắc V2). Khi “Morgen” đứng đầu câu, động từ “fahre” đứng ngay sau, rồi mới đến chủ ngữ “ich”: “Morgen fahre ich nach Berlin”." }
+  - key: de:diag:gra-a1-trennbar-aufstehen
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich ___ jeden Tag um sechs Uhr ___."
+      stem_lang: de
+      options:
+        - { id: a, text: stehen … auf, lang: de }
+        - { id: b, text: steht … auf, lang: de }
+        - { id: c, text: stehe … an, lang: de }
+        - { id: d, text: stehe … auf, lang: de }
+    answer: d
+    explanation: { vi: "“aufstehen” (thức dậy) là động từ tách được: phần chia “stehe” ở vị trí 2, tiền tố “auf” xuống cuối câu. “steht” là ngôi er/sie, “stehen” là ngôi wir/sie/Sie, còn “anstehen” là xếp hàng (nghĩa khác)." }
+  - key: de:diag:gra-a1-perfekt-habe
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Gestern ___ ich eine Pizza gegessen."
+      stem_lang: de
+      options:
+        - { id: a, text: bin, lang: de }
+        - { id: b, text: habe, lang: de }
+        - { id: c, text: hat, lang: de }
+        - { id: d, text: war, lang: de }
+    answer: b
+    explanation: { vi: "Thì Perfekt = trợ động từ “haben”/“sein” + Partizip II ở cuối câu. “essen” có tân ngữ và không chỉ sự di chuyển nên dùng “haben”: “ich habe … gegessen”. “hat” là ngôi er/sie, “bin” dùng cho động từ di chuyển (ich bin gefahren)." }
+  # ---------- a2 ----------
+  - key: de:diag:gra-a2-komparativ
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Berlin ist ___ als München."
+      stem_lang: de
+      options:
+        - { id: a, text: großer, lang: de }
+        - { id: b, text: mehr groß, lang: de }
+        - { id: c, text: größer, lang: de }
+        - { id: d, text: am größten, lang: de }
+    answer: c
+    explanation: { vi: "So sánh hơn: tính từ + “-er” + “als”; nhiều tính từ một âm tiết thêm Umlaut: groß → “größer”. Tiếng Đức không dùng “mehr groß”; “am größten” là so sánh nhất và không đi với “als”." }
+  - key: de:diag:gra-a2-praeteritum-war
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Letzte Woche ___ ich krank und konnte nicht arbeiten."
+      stem_lang: de
+      options:
+        - { id: a, text: war, lang: de }
+        - { id: b, text: bin, lang: de }
+        - { id: c, text: habe, lang: de }
+        - { id: d, text: ist, lang: de }
+    answer: a
+    explanation: { vi: "Với “sein”, “haben” và động từ khuyết thiếu, khi kể chuyện quá khứ người Đức thường dùng Präteritum: ich war, ich hatte, ich konnte. “Letzte Woche” là quá khứ nên không dùng “bin”/“ist” (hiện tại; “ist” còn sai ngôi), còn “krank sein” đi với “sein”, không đi với “habe”." }
+  - key: de:diag:gra-a2-dativ-mit
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich fahre jeden Morgen mit ___ Bus zur Arbeit."
+      stem_lang: de
+      options:
+        - { id: a, text: den, lang: de }
+        - { id: b, text: der, lang: de }
+        - { id: c, text: dem, lang: de }
+        - { id: d, text: das, lang: de }
+    answer: c
+    explanation: { vi: "Giới từ “mit” luôn đi với Dativ. “der Bus” là giống đực, Dativ của “der” là “dem”: “mit dem Bus”. “den” là Akkusativ giống đực." }
+  - key: de:diag:gra-a2-weil
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "Chọn phần đúng để hoàn thành câu: Ich bleibe heute zu Hause, …"
+      stem_lang: vi
+      options:
+        - { id: a, text: weil ich bin krank., lang: de }
+        - { id: b, text: weil ich krank bin., lang: de }
+        - { id: c, text: weil bin ich krank., lang: de }
+        - { id: d, text: weil krank ich bin., lang: de }
+    answer: b
+    explanation: { vi: "“weil” mở đầu mệnh đề phụ, nên động từ chia (“bin”) đứng ở cuối mệnh đề: “…, weil ich krank bin”. Trật tự “weil ich bin krank” hay nghe trong khẩu ngữ nhưng sai trong tiếng Đức chuẩn." }
+  - key: de:diag:gra-a2-wechsel-auf-den
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich lege das Buch auf ___ Tisch."
+      stem_lang: de
+      options:
+        - { id: a, text: dem, lang: de }
+        - { id: b, text: der, lang: de }
+        - { id: c, text: das, lang: de }
+        - { id: d, text: den, lang: de }
+    answer: d
+    explanation: { vi: "“auf” là giới từ hai cách (Wechselpräposition): chỉ hướng di chuyển (Wohin? – đặt lên đâu) dùng Akkusativ, chỉ vị trí (Wo?) dùng Dativ. “legen” là hành động đặt → Akkusativ: “auf den Tisch”. So sánh: Das Buch liegt auf dem Tisch." }
+  - key: de:diag:gra-a2-adj-kleinen
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Meine Großeltern haben einen ___ Garten hinter dem Haus."
+      stem_lang: de
+      options:
+        - { id: a, text: kleinen, lang: de }
+        - { id: b, text: kleiner, lang: de }
+        - { id: c, text: kleines, lang: de }
+        - { id: d, text: kleine, lang: de }
+    answer: a
+    explanation: { vi: "“der Garten” là giống đực, làm tân ngữ của “haben” nên ở Akkusativ: “einen”. Sau “einen”, tính từ giống đực Akkusativ luôn có đuôi “-en”: “einen kleinen Garten”. “kleiner” là đuôi Nominativ (ein kleiner Garten)." }
+  # ---------- b1 ----------
+  - key: de:diag:gra-b1-konj2-wuerde
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wenn ich mehr Zeit hätte, ___ ich öfter reisen."
+      stem_lang: de
+      options:
+        - { id: a, text: werde, lang: de }
+        - { id: b, text: würde, lang: de }
+        - { id: c, text: wurde, lang: de }
+        - { id: d, text: wäre, lang: de }
+    answer: b
+    explanation: { vi: "Câu điều kiện không có thật ở hiện tại dùng Konjunktiv II ở cả hai vế: “hätte … würde … reisen”. “werde” là tương lai, “wurde” là quá khứ (chú ý dấu Umlaut), “wäre” là Konjunktiv II của “sein” và không đi với “reisen” nguyên thể." }
+  - key: de:diag:gra-b1-obwohl
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ es stark regnete, gingen wir spazieren."
+      stem_lang: de
+      options:
+        - { id: a, text: Trotzdem, lang: de }
+        - { id: b, text: Weil, lang: de }
+        - { id: c, text: Obwohl, lang: de }
+        - { id: d, text: Deshalb, lang: de }
+    answer: c
+    explanation: { vi: "Động từ “regnete” đứng cuối mệnh đề, nên cần liên từ phụ thuộc. “Obwohl” (mặc dù) hợp nghĩa nhượng bộ. “Weil” (vì) cũng là liên từ phụ thuộc nhưng sai nghĩa; “trotzdem”, “deshalb” là trạng từ, theo sau phải là động từ (Trotzdem gingen wir …)." }
+  - key: de:diag:gra-b1-passiv-wurde
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Dieses Haus ___ im Jahr 1950 von meinem Großvater gebaut."
+      stem_lang: de
+      options:
+        - { id: a, text: hat, lang: de }
+        - { id: b, text: würde, lang: de }
+        - { id: c, text: hatte, lang: de }
+        - { id: d, text: wurde, lang: de }
+    answer: d
+    explanation: { vi: "Câu bị động (Vorgangspassiv) = “werden” + Partizip II; người thực hiện đi với “von + Dativ”. Năm 1950 là quá khứ nên dùng Präteritum “wurde … gebaut”. “hat/hatte gebaut” là chủ động, “würde” là Konjunktiv II." }
+  - key: de:diag:gra-b1-relativ-dem
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Der Mann, ___ ich gestern geholfen habe, ist mein neuer Nachbar."
+      stem_lang: de
+      options:
+        - { id: a, text: den, lang: de }
+        - { id: b, text: dem, lang: de }
+        - { id: c, text: der, lang: de }
+        - { id: d, text: dessen, lang: de }
+    answer: b
+    explanation: { vi: "Đại từ quan hệ lấy giống/số theo danh từ được thay thế (der Mann → giống đực, số ít) nhưng lấy cách theo động từ trong mệnh đề quan hệ. “helfen” đi với Dativ → “dem”. “den” sẽ đúng với động từ cần Akkusativ (den ich gesehen habe)." }
+  - key: de:diag:gra-b1-genitiv-meiner
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Das rote Auto vor der Tür ist das Auto ___ Lehrerin."
+      stem_lang: de
+      options:
+        - { id: a, text: meine, lang: de }
+        - { id: b, text: meinem, lang: de }
+        - { id: c, text: meiner, lang: de }
+        - { id: d, text: meinen, lang: de }
+    answer: c
+    explanation: { vi: "Quan hệ sở hữu “xe của cô giáo tôi” dùng Genitiv, danh từ sở hữu đứng sau. “die Lehrerin” giống cái, Genitiv của “meine” là “meiner”: “das Auto meiner Lehrerin”." }
+  - key: de:diag:gra-b1-adj-meinen-alten
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Am Wochenende habe ich mit ___ Freunden einen Ausflug gemacht."
+      stem_lang: de
+      options:
+        - { id: a, text: meine alten, lang: de }
+        - { id: b, text: meinem alten, lang: de }
+        - { id: c, text: meinen alte, lang: de }
+        - { id: d, text: meinen alten, lang: de }
+    answer: d
+    explanation: { vi: "“mit” + Dativ; Dativ số nhiều: mạo từ sở hữu “meinen”, tính từ đuôi “-en”, danh từ thêm “-n” (Freunden): “mit meinen alten Freunden”. “meinem” là Dativ số ít, “meine” là Nominativ/Akkusativ số nhiều." }
+  # ---------- b2 ----------
+  - key: de:diag:gra-b2-dennoch
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Die Prüfung war äußerst schwierig, ___ hat Lan sie mit sehr gutem Ergebnis bestanden."
+      stem_lang: de
+      options:
+        - { id: a, text: obwohl, lang: de }
+        - { id: b, text: dennoch, lang: de }
+        - { id: c, text: zumal, lang: de }
+        - { id: d, text: trotz, lang: de }
+    answer: b
+    explanation: { vi: "Sau chỗ trống là động từ “hat” rồi mới đến chủ ngữ, tức từ cần điền chiếm vị trí 1 của mệnh đề chính → phải là trạng từ nối “dennoch” (tuy vậy). “obwohl”, “zumal” là liên từ phụ thuộc (đẩy động từ xuống cuối), “zumal” còn mang nghĩa “nhất là vì”; “trotz” là giới từ + Genitiv." }
+  - key: de:diag:gra-b2-indem
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Man kann viel Energie sparen, ___ man das Licht in leeren Räumen ausschaltet."
+      stem_lang: de
+      options:
+        - { id: a, text: indem, lang: de }
+        - { id: b, text: obwohl, lang: de }
+        - { id: c, text: damit, lang: de }
+        - { id: d, text: ob, lang: de }
+    answer: a
+    explanation: { vi: "“indem” nêu cách thức/phương tiện (bằng cách): tiết kiệm năng lượng bằng cách tắt đèn. “damit” chỉ mục đích (để …) — sai nghĩa, “obwohl” là nhượng bộ, “ob” mở đầu câu hỏi gián tiếp (liệu …)." }
+  - key: de:diag:gra-b2-konj1-habe
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Chọn dạng Konjunktiv I (lời dẫn gián tiếp): Der Minister erklärte, er ___ von dem Plan nichts gewusst."
+      stem_lang: vi
+      options:
+        - { id: a, text: hat, lang: de }
+        - { id: b, text: hatte, lang: de }
+        - { id: c, text: habe, lang: de }
+        - { id: d, text: haben, lang: de }
+    answer: c
+    explanation: { vi: "Báo chí và văn bản trang trọng thuật lời người khác bằng Konjunktiv I: ngôi “er” của “haben” là “habe” (khác dạng trực thuyết “hat”). Quá khứ trong lời gián tiếp = habe + Partizip II: “er habe … gewusst”. “hatte” là Plusquamperfekt trực thuyết, “haben” sai ngôi." }
+  - key: de:diag:gra-b2-passiversatz
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Câu nào cùng nghĩa với “Das Problem lässt sich leicht lösen.”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Das Problem muss leicht gelöst werden., lang: de }
+        - { id: b, text: Das Problem hat sich leicht gelöst., lang: de }
+        - { id: c, text: Das Problem soll leicht gelöst werden., lang: de }
+        - { id: d, text: Das Problem kann leicht gelöst werden., lang: de }
+    answer: d
+    explanation: { vi: "“sich lassen + Infinitiv” là dạng thay thế bị động (Passiversatz) mang nghĩa khả năng = “können + Passiv”: “kann … gelöst werden” (có thể được giải quyết). “muss”/“soll” đổi nghĩa thành bắt buộc/yêu cầu, còn “hat sich gelöst” là việc đã tự được giải quyết." }
+  - key: de:diag:gra-b2-partizipialattribut
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Die von der Regierung ___ Maßnahmen stoßen bei vielen Bürgern auf Kritik."
+      stem_lang: de
+      options:
+        - { id: a, text: beschlossene, lang: de }
+        - { id: b, text: beschlossenen, lang: de }
+        - { id: c, text: beschließenden, lang: de }
+        - { id: d, text: beschlossen, lang: de }
+    answer: b
+    explanation: { vi: "Cụm phân từ làm định ngữ (Partizipialattribut) = “die Maßnahmen, die von der Regierung beschlossen wurden”. Nghĩa bị động, đã hoàn thành → Partizip II “beschlossen”; đứng trước danh từ nên chia đuôi như tính từ: sau “die” số nhiều là “-en” → “beschlossenen”. Partizip I “beschließenden” mang nghĩa chủ động (đang quyết định)." }
+  - key: de:diag:gra-b2-nominalisierung
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Cách danh từ hóa nào đúng cho mệnh đề “Nachdem der Vertrag unterzeichnet worden war, …”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: Nach der Unterzeichnung dem Vertrag …, lang: de }
+        - { id: b, text: Nach der Unterzeichnung des Vertrags …, lang: de }
+        - { id: c, text: Nach die Unterzeichnung des Vertrags …, lang: de }
+        - { id: d, text: Vor der Unterzeichnung des Vertrags …, lang: de }
+    answer: b
+    explanation: { vi: "Văn phong viết (Nominalstil) đổi mệnh đề “nachdem …” thành giới từ “nach + Dativ” (“der Unterzeichnung”), chủ thể bị động trở thành bổ ngữ Genitiv: “des Vertrags”. “dem Vertrag” sai cách, “nach die” sai vì “nach” cần Dativ, còn “vor” đảo ngược nghĩa thời gian." }
