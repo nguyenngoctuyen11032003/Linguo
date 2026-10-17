@@ -1,9 +1,10 @@
 import { act, render, screen } from '@testing-library/react';
 import type { Session } from '@supabase/supabase-js';
 import { MemoryRouter, Route, Routes, useLocation } from 'react-router';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { authStorageKey } from '@/lib/auth-storage';
 import type { AppSupabaseClient } from '@/lib/supabase';
-import { AuthContext, AuthProvider, useAuth, type AuthState } from './AuthProvider';
+import { AuthContext, AuthProvider, SESSION_LOOKUP_GRACE_MS, useAuth, type AuthState } from './AuthProvider';
 import { authErrorMessage, isKnownAuthErrorCode } from './error-map';
 import { RedirectIfAuthed, RequireAuth } from './guards';
 import { clearRecovery, isRecoveryPending, markRecoveryPending } from './recovery';
@@ -171,6 +172,90 @@ describe('AuthProvider', () => {
       </AuthProvider>,
     );
     expect(screen.getByText('unconfigured')).toBeInTheDocument();
+  });
+});
+
+describe('AuthProvider offline-first session', () => {
+  const stored = {
+    access_token: 'expired.jwt',
+    refresh_token: 'r1',
+    expires_at: 1,
+    user: { id: 'u-stored', email: 'a@b.vn' },
+  };
+  function setup(getSession: () => Promise<unknown>) {
+    let listener: ((event: string, session: Session | null) => void) | undefined;
+    const client = {
+      auth: {
+        getSession: vi.fn(getSession),
+        onAuthStateChange: vi.fn((cb) => {
+          listener = cb;
+          return { data: { subscription: { unsubscribe: vi.fn() } } };
+        }),
+      },
+    } as unknown as AppSupabaseClient;
+    function Probe() {
+      const auth = useAuth();
+      return <span data-testid="status">{`${auth.status}:${auth.user?.id ?? '-'}`}</span>;
+    }
+    render(
+      <AuthProvider client={client}>
+        <Probe />
+      </AuthProvider>,
+    );
+    return { fire: (event: string, session: Session | null) => act(() => listener?.(event, session)) };
+  }
+  const retryable = { name: 'AuthRetryableFetchError', message: 'Failed to fetch', status: 0 };
+
+  beforeEach(() => {
+    localStorage.setItem(authStorageKey(), JSON.stringify(stored));
+  });
+  afterEach(() => {
+    localStorage.clear();
+    vi.useRealTimers();
+    vi.restoreAllMocks();
+  });
+
+  it('keeps an expired stored session signed in when the refresh failed on the network', async () => {
+    setup(() => Promise.resolve({ data: { session: null }, error: retryable }));
+    expect(await screen.findByText('signed-in:u-stored')).toBeInTheDocument();
+  });
+
+  it('is signed out when nothing is stored (supabase-js removed a rejected session)', async () => {
+    localStorage.clear();
+    setup(() => Promise.resolve({ data: { session: null }, error: null }));
+    expect(await screen.findByText('signed-out:-')).toBeInTheDocument();
+  });
+
+  it('opens on the stored session at once when offline, without waiting for getSession', async () => {
+    vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+    setup(() => new Promise(() => undefined)); // the refresh retry budget: never settles within the test
+    expect(await screen.findByText('signed-in:u-stored')).toBeInTheDocument();
+  });
+
+  it('opens on the stored session after a short grace when the network is dead but navigator.onLine lies', async () => {
+    vi.useFakeTimers();
+    setup(() => new Promise(() => undefined));
+    expect(screen.getByTestId('status')).toHaveTextContent('loading:-');
+    await act(async () => {
+      await vi.advanceTimersByTimeAsync(SESSION_LOOKUP_GRACE_MS + 10);
+    });
+    expect(screen.getByTestId('status')).toHaveTextContent('signed-in:u-stored');
+  });
+
+  it('falls back to the stored session on an INITIAL_SESSION without a session, but SIGNED_OUT always signs out', async () => {
+    const { fire } = setup(() => new Promise(() => undefined));
+    fire('INITIAL_SESSION', null);
+    expect(screen.getByTestId('status')).toHaveTextContent('signed-in:u-stored');
+    localStorage.clear(); // supabase-js clears storage before announcing a sign-out
+    fire('SIGNED_OUT', null);
+    expect(screen.getByTestId('status')).toHaveTextContent('signed-out:-');
+  });
+
+  it('upgrades to the refreshed session when the network comes back', async () => {
+    const { fire } = setup(() => Promise.resolve({ data: { session: null }, error: retryable }));
+    await screen.findByText('signed-in:u-stored');
+    fire('TOKEN_REFRESHED', { user: { id: 'u-stored' }, access_token: 'fresh' } as unknown as Session);
+    expect(screen.getByTestId('status')).toHaveTextContent('signed-in:u-stored');
   });
 });
 
