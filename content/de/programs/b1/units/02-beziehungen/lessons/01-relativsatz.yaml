@@ -61,7 +61,7 @@ body:
       vi: "Tiếng Việt dùng \"mà\" cho cả người lẫn vật, nhưng tiếng Đức không dùng was hay wo làm đại từ quan hệ cho người: die Frau, die …, không phải die Frau, was … Khi mệnh đề quan hệ chen vào giữa câu chính, cần dấu phẩy ở cả hai đầu: Der Freund, den ich besuche, wohnt in Köln."
   - type: deep_explain
     text:
-      vi: "was làm đại từ quan hệ chỉ dùng sau những từ như alles, etwas, nichts, das hoặc sau tính từ so sánh nhất danh từ hóa: Alles, was du sagst, stimmt. Das ist das Beste, was mir passiert ist. Trong văn viết trang trọng còn có welcher, welche, welches thay cho der, die, das (der Freund, welcher …), nhưng khi nói hầu như không dùng. Nếu câu chính có khung câu, mệnh đề quan hệ thường được đặt sau phần cuối khung cho dễ nghe: Gestern habe ich einen Mann kennengelernt, der aus Hanoi kommt. Về từ vựng: kennenlernen tách khi chia (Ich lerne ihn kennen) và có Partizip kennengelernt; vertrauen đi với Dativ (Ich vertraue dir), bạn sẽ dùng nó trong mệnh đề quan hệ Dativ ở bài sau."
+      vi: "was làm đại từ quan hệ chỉ dùng sau những từ như alles, etwas, nichts, das hoặc sau tính từ so sánh nhất danh từ hóa: Alles, was du sagst, stimmt. Das ist das Beste, was mir passiert ist. Trong văn viết trang trọng còn có welcher, welche, welches thay cho der, die, das (der Freund, welcher …), nhưng khi nói hầu như không dùng; trong bài tập của khóa này hãy dùng der, die, das. Nếu câu chính có khung câu, mệnh đề quan hệ thường được đặt sau phần cuối khung cho dễ nghe: Gestern habe ich einen Mann kennengelernt, der aus Hanoi kommt. Về từ vựng: kennenlernen tách khi chia (Ich lerne ihn kennen) và có Partizip kennengelernt; vertrauen đi với Dativ (Ich vertraue dir), bạn sẽ dùng nó trong mệnh đề quan hệ Dativ ở bài sau."
   - type: example
     target: Ein guter Freund ist ein Mensch, der ehrlich ist und immer hilft.
     target_lang: de
@@ -168,7 +168,7 @@ exercises:
     answer:
       correct_option_id: k2a
     explanation:
-      vi: "die Kollegin giống cái; trong mệnh đề nó là tân ngữ của kennengelernt (ich habe sie kennengelernt) → Akkusativ die. den chỉ dùng cho giống đực; der ở đây sẽ là Dativ, mà kennenlernen cần Akkusativ; wo không dùng cho người."
+      vi: "die Kollegin giống cái; trong mệnh đề nó là tân ngữ của kennengelernt (ich habe sie kennengelernt) → Akkusativ die. den chỉ dùng cho giống đực; der là Nominativ giống đực hoặc Dativ giống cái, mà kennenlernen cần Akkusativ; wo không dùng cho người."
     display_answer: die
 
   - key: de:exercise:b1u02l1-mcq-satz-hamburg
@@ -206,9 +206,9 @@ exercises:
         - { id: b3, width_hint: 4 }
     answer:
       blanks:
-        b1: [der, welcher]
-        b2: [die, welche]
-        b3: [das, welches]
+        b1: [der]
+        b2: [die]
+        b3: [das]
     known_wrong:
       - answer: den
         feedback_vi: "den là Akkusativ giống đực. Ô 1: người bạn là chủ ngữ của ist → der (dù câu chính có einen Freund); ô 2: Freundin giống cái → die."
@@ -234,9 +234,9 @@ exercises:
         - { id: b3, width_hint: 4 }
     answer:
       blanks:
-        b1: [die, welche]
-        b2: [den, welchen]
-        b3: [das, welches]
+        b1: [die]
+        b2: [den]
+        b3: [das]
     known_wrong:
       - answer: der
         feedback_vi: "Partner là tân ngữ trong mệnh đề (sie hat ihn kennengelernt) → Akkusativ den."

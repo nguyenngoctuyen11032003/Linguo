@@ -259,7 +259,7 @@ exercises:
       blanks:
         b1: [finde]
         b2: [Obwohl]
-        b3: [dem, welchem]
+        b3: [dem]
     known_wrong:
       - answer: Trotzdem
         feedback_vi: "Động từ ist đứng cuối vế đầu, nên đây là câu phụ – cần liên từ obwohl."
@@ -287,8 +287,8 @@ exercises:
         - { id: b2, width_hint: 6 }
     answer:
       blanks:
-        b1: [der, welcher]
-        b2: [denen, welchen]
+        b1: [der]
+        b2: [denen]
     known_wrong:
       - answer: die
         feedback_vi: "jemandem etwas erzählen – người nghe ở Dativ: eine Partnerin → der."
@@ -373,6 +373,9 @@ exercises:
         - Ein guter Freund ist ein Mensch, dem ich vertrauen kann.
         - Ein guter Freund ist jemand, dem ich vertrauen kann.
         - Ein guter Freund ist ein Mensch, dem wir vertrauen können.
+        - Ein guter Freund ist jemand, dem wir vertrauen können.
+        - Eine gute Freundin ist ein Mensch, dem ich vertrauen kann.
+        - Eine gute Freundin ist jemand, dem ich vertrauen kann.
     known_wrong:
       - answer: Ein guter Freund ist ein Mensch, den man vertrauen kann.
         feedback_vi: vertrauen đi với Dativ – ein Mensch → dem.

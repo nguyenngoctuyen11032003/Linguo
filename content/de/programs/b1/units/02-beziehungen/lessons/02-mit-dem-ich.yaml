@@ -226,9 +226,9 @@ exercises:
         - { id: b3, width_hint: 4 }
     answer:
       blanks:
-        b1: [dem, welchem]
-        b2: [denen, welchen]
-        b3: [der, welcher]
+        b1: [dem]
+        b2: [denen]
+        b3: [der]
     known_wrong:
       - answer: den
         feedback_vi: "den là mạo từ hoặc Akkusativ giống đực. mit + Dativ giống đực → dem; Dativ số nhiều của đại từ quan hệ → denen."
@@ -254,9 +254,9 @@ exercises:
         - { id: b3, width_hint: 6 }
     answer:
       blanks:
-        b1: [dem, welchem]
-        b2: [die, welche]
-        b3: [denen, welchen]
+        b1: [dem]
+        b2: [die]
+        b3: [denen]
     known_wrong:
       - answer: das
         feedback_vi: "Ở đâu? (Wo?) → in + Dativ: das Café → in dem. in das chỉ hướng đi vào."
@@ -284,7 +284,6 @@ exercises:
     answer:
       accepted:
         - Das ist der Mann, in den sie sich verliebt hat.
-        - Das ist der Mann, in welchen sie sich verliebt hat.
         - Das ist der Mann, in den sie sich damals verliebt hat.
     known_wrong:
       - answer: Das ist der Mann, in dem sie sich verliebt hat.

@@ -360,7 +360,7 @@ items:
       pos: danh từ
     back:
       meaning:
-        vi: bạn, bạn thân (khẩu ngữ)
+        vi: bạn, bạn bè (khẩu ngữ, thân mật)
       examples:
         - target: Tom ist ein alter Kumpel von mir.
           translation:
@@ -411,7 +411,7 @@ items:
           translation:
             vi: Lâu rồi anh ấy không liên lạc với tôi.
       confusion:
-        vi: "sich bei jemandem melden = gọi điện, nhắn tin cho ai. Khác anmelden (đăng ký) ở A1."
+        vi: "sich bei jemandem melden = gọi điện, nhắn tin cho ai. Khác sich anmelden (đăng ký)."
 
   # ================= Bài 2: Mệnh đề quan hệ Dativ và có giới từ =================
   - key: de:item:b1u02-g-relativsatz-dativ
@@ -1013,7 +1013,7 @@ items:
             vi: Chúng tôi trò chuyện rất lâu về tuổi thơ.
         - target: Worüber habt ihr euch unterhalten?
           translation:
-            vi: Các bạn đã nói chuyện về gì vậy?
+            vi: Các bạn đã nói chuyện về chuyện gì vậy?
       confusion:
         vi: "unter- ở đây không tách: wir unterhalten uns, Partizip unterhalten (không có ge-)."
 
@@ -1230,7 +1230,7 @@ items:
           translation:
             vi: Anh ấy thất vọng về người bạn thân nhất của mình.
       confusion:
-        vi: "Một số tính từ đổi giới từ theo đối tượng: wütend auf + người (wütend auf meinen Bruder), wütend über + việc (wütend über die Verspätung); enttäuscht von + người, enttäuscht über + việc."
+        vi: "Một số tính từ có hai giới từ: wütend auf + người (wütend auf meinen Bruder), với việc thường dùng wütend über (wütend über die Verspätung); enttäuscht von dùng cho cả người lẫn việc, với việc cũng hay nói enttäuscht über (enttäuscht über das Ergebnis)."
 
   - key: de:item:b1u02-gefuehl
     type: vocab
@@ -1289,7 +1289,7 @@ items:
         - target: Ich bin sehr enttäuscht von dir.
           translation:
             vi: Mình rất thất vọng về bạn.
-        - target: Sie war enttäuscht, weil niemand gekommen ist.
+        - target: Sie war enttäuscht, weil niemand gekommen war.
           translation:
             vi: Cô ấy thất vọng vì không ai đến.
       confusion:
@@ -1356,7 +1356,7 @@ items:
           translation:
             vi: Cô ấy giận anh trai mình.
       confusion:
-        vi: "wütend auf + người; wütend über + việc (wütend über die Verspätung). Danh từ: die Wut."
+        vi: "wütend auf + người; với việc thường dùng wütend über (wütend über die Verspätung). Danh từ: die Wut."
 
   - key: de:item:b1u02-traurig
     type: vocab

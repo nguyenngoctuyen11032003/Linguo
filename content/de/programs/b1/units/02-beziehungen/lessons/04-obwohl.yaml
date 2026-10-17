@@ -58,7 +58,7 @@ body:
       vi: "Nhiều tính từ cảm xúc đi với giới từ cố định: stolz auf, eifersüchtig auf, wütend auf, traurig über, verliebt in (+ Akkusativ); zufrieden mit, enttäuscht von (+ Dativ). Với vật và sự việc, hỏi và trả lời bằng wo(r)-/da(r)- như ở bài trước: Worauf bist du stolz? – Darauf bin ich stolz."
   - type: deep_explain
     text:
-      vi: "obwohl và trotzdem diễn đạt cùng một ý theo hai cách: Obwohl es regnet, gehen wir spazieren = Es regnet. Trotzdem gehen wir spazieren. Trong khẩu ngữ, đôi khi nghe trotzdem dùng như liên từ với động từ cuối (trotzdem es regnet), nhưng chuẩn viết là obwohl. Một số tính từ đổi giới từ theo đối tượng: wütend auf + người nhưng wütend über + việc; enttäuscht von + người, enttäuscht über + việc. einsam (cô đơn) khác allein (một mình): Ich wohne allein, aber ich bin nicht einsam. neidisch là ghen tị với cái người khác có, còn eifersüchtig là ghen vì sợ mất người mình yêu. Câu seitdem (B1U01) cũng hay dùng để nói cảm xúc: Seitdem sie weg ist, fühle ich mich einsam."
+      vi: "obwohl và trotzdem diễn đạt cùng một ý theo hai cách: Obwohl es regnet, gehen wir spazieren = Es regnet. Trotzdem gehen wir spazieren. Trong khẩu ngữ, đôi khi nghe trotzdem dùng như liên từ với động từ cuối (trotzdem es regnet), nhưng chuẩn viết là obwohl. Một số tính từ có hai giới từ: wütend auf + người, còn với việc thường dùng wütend über; enttäuscht von dùng cho cả người lẫn việc (enttäuscht vom Gehalt), với việc cũng hay nói enttäuscht über. einsam (cô đơn) khác allein (một mình): Ich wohne allein, aber ich bin nicht einsam. neidisch là ghen tị với cái người khác có, còn eifersüchtig là ghen vì sợ mất người mình yêu. Câu seitdem (B1U01) cũng hay dùng để nói cảm xúc: Seitdem sie weg ist, fühle ich mich einsam."
   - type: example
     target: Obwohl ich müde bin, gehe ich heute Abend mit dir ins Kino.
     target_lang: de
@@ -294,6 +294,8 @@ exercises:
         - Es regnet, aber wir gehen trotzdem spazieren.
         - Es regnet, aber trotzdem gehen wir spazieren.
         - Es regnet, und trotzdem gehen wir spazieren.
+        - Es regnet. Wir gehen aber trotzdem spazieren.
+        - Es regnet, wir gehen trotzdem spazieren.
     known_wrong:
       - answer: Es regnet. Trotzdem wir gehen spazieren.
         feedback_vi: Trotzdem ở vị trí 1 thì động từ gehen đứng ngay sau – Trotzdem gehen wir …

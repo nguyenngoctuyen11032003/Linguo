@@ -229,9 +229,9 @@ exercises:
       - answer: wer
         feedback_vi: mit đi với Dativ – mit wem.
         error_tag: case_dat_akk
-      - answer: darüber
-        feedback_vi: Mein Freund là người, nên dùng giới từ + đại từ – über ihn.
-        error_tag: pronominal_adverb
+      - answer: ihm
+        feedback_vi: "sich ärgern über đi với Akkusativ: über ihn (Freund là người nên dùng giới từ + đại từ, không dùng darüber)."
+        error_tag: case_dat_akk
     explanation:
       vi: "denken an + Akkusativ: hỏi về sự việc → woran, trả lời → daran (an bắt đầu bằng nguyên âm nên có r). Hỏi về người → mit wem (Dativ). Über + người → über ihn (Akkusativ giống đực)."
     display_answer: "Woran denkst du gerade? – An meine Prüfung morgen. Ich denke die ganze Zeit daran. – Und mit wem hast du dich gestern gestritten? – Mit meinem Freund. Ich habe mich sehr über ihn geärgert."
@@ -291,6 +291,9 @@ exercises:
       - answer: Ich habe mich schon an es gewöhnt.
         feedback_vi: Với sự việc không dùng an + es mà dùng daran.
         error_tag: pronominal_adverb
+      - answer: Ich bin mich schon daran gewöhnt.
+        feedback_vi: "Perfekt của sich gewöhnen dùng haben: Ich habe mich … gewöhnt (hoặc câu trạng thái không có mich: Ich bin daran gewöhnt)."
+        error_tag: aux_verb
       - answer: Ich habe schon daran gewöhnt.
         feedback_vi: gewöhnen ở nghĩa này là động từ phản thân – Ich habe mich … gewöhnt.
         error_tag: reflexive_missing
@@ -298,7 +301,7 @@ exercises:
         feedback_vi: sich gewöhnen đi với an – daran, không phải darauf.
         error_tag: preposition
     explanation:
-      vi: "sich gewöhnen an + Akkusativ; \"chuyện đó\" là sự việc → daran (an bắt đầu bằng nguyên âm nên có r). Perfekt: Ich habe mich … gewöhnt. Câu trạng thái Ich bin daran gewöhnt cũng đúng."
+      vi: "sich gewöhnen an + Akkusativ; \"chuyện đó\" là sự việc → daran (an bắt đầu bằng nguyên âm nên có r). Perfekt: Ich habe mich … gewöhnt. Câu trạng thái Ich bin (schon) daran gewöhnt cũng đúng và được chấp nhận, nhưng đó là sein + tính từ gewöhnt (không có mich), không phải Perfekt: Perfekt của sich gewöhnen luôn dùng haben."
     display_answer: Ich habe mich schon daran gewöhnt.
 
   # ---------------- application ----------------
@@ -309,7 +312,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u02-sich-unterhalten
     prompt:
-      instruction: "Sắp xếp thành câu hỏi: \"Các bạn đã nói chuyện về gì mà lâu thế?\""
+      instruction: "Sắp xếp thành câu hỏi: \"Các bạn đã nói chuyện gì mà lâu thế?\""
       tokens:
         - { id: w-euch, text: euch }
         - { id: w-lange, text: lange }
