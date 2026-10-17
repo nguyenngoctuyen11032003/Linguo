@@ -130,7 +130,7 @@ body:
     right: Ich habe mit Anna telefoniert.
     target_lang: de
     note:
-      vi: Động từ tận cùng -ieren không bao giờ thêm ge-.
+      vi: "Động từ có hậu tố -ieren (nhấn vào -IE-) không thêm ge-. frieren → gefroren không thuộc nhóm này, vì -ieren ở đây là một phần của gốc từ."
   - type: summary
     points:
       - vi: "Không có ge-: tiền tố không tách be-, emp-, ent-, er-, ge-, miss-, ver-, zer- (besucht, erlebt, verpasst, vergessen)."
@@ -380,7 +380,7 @@ exercises:
     known_wrong:
       - answer: Thứ Bảy chúng tôi sẽ tham quan thành phố và chụp rất nhiều ảnh.
         feedback_vi: haben … besichtigt, fotografiert là Perfekt – việc đã xảy ra, không phải "sẽ".
-        error_tag: tense_meaning
+        error_tag: meaning
     explanation:
       vi: "besichtigt là Partizip của besichtigen (tham quan), fotografiert là của fotografieren (chụp ảnh); cả hai dùng chung haben. Tiếng Việt không bắt buộc thêm \"đã\" khi đã có mốc thời gian."
     display_answer: Thứ Bảy chúng tôi đã tham quan thành phố và chụp rất nhiều ảnh.

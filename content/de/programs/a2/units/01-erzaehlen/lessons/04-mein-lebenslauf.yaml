@@ -47,7 +47,7 @@ body:
       vi: "Sau bài này, bạn kể được tiểu sử ngắn của mình, ví dụ: \"Ich bin 1998 in Hanoi geboren. 2016 habe ich das Abitur gemacht. Seit zwei Jahren wohne ich in Deutschland.\""
   - type: explain
     text:
-      vi: "Năm từ 1100 đến 1999 đọc theo \"trăm\": 1998 = neunzehnhundertachtundneunzig (mười chín trăm + chín mươi tám). Từ năm 2000 đọc như số thường: 2000 = zweitausend, 2010 = zweitausendzehn, 2024 = zweitausendvierundzwanzig. Như mọi số, hàng đơn vị đọc trước hàng chục: achtundneunzig."
+      vi: "Năm từ 1100 đến 1999 đọc theo \"trăm\": 1998 = neunzehnhundertachtundneunzig (mười chín trăm + chín mươi tám). Từ năm 2000 đọc như số thường: 2000 = zweitausend, 2010 = zweitausendzehn, 2024 = zweitausendvierundzwanzig. Như với số đếm đã học, hàng đơn vị đọc trước hàng chục: achtundneunzig."
   - type: explain
     text:
       vi: "Năm đứng một mình, không có giới từ: Ich bin 1998 geboren. Muốn rõ hơn thì nói im Jahr 1998. Không nói in 1998 – đó là kiểu nói theo tiếng Anh."
@@ -354,7 +354,6 @@ exercises:
         - Ich wohne seit drei Jahren in Berlin.
         - Seit drei Jahren wohne ich in Berlin.
         - Ich wohne schon seit drei Jahren in Berlin.
-        - Ich wohne schon drei Jahre in Berlin.
         - Ich lebe seit drei Jahren in Berlin.
         - Seit drei Jahren lebe ich in Berlin.
         - Ich lebe schon seit drei Jahren in Berlin.

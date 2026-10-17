@@ -766,7 +766,7 @@ items:
           translation:
             vi: Trên đường cao tốc bị tắc đường.
       confusion:
-        vi: "Từ ghép die Auto + die Bahn → giống của từ cuối: die Autobahn. Trên đường cao tốc: auf der Autobahn (Dativ)."
+        vi: "Từ ghép das Auto + die Bahn → giống theo từ cuối: die Autobahn. Trên đường cao tốc: auf der Autobahn (Dativ)."
 
   - key: de:item:a2u01-leer
     type: vocab
@@ -1146,7 +1146,7 @@ items:
       pronunciation_note:
         vi: "ver- không nhấn: ver-GAN-gen-heit."
       confusion:
-        vi: "Các từ -heit đều giống cái: die Vergangenheit. Tương lai là die Zukunft (học ở unit sau)."
+        vi: "Danh từ có hậu tố -heit là giống cái: die Vergangenheit. Tương lai là die Zukunft (học ở unit sau)."
 
   # ================= Bài 4: Lý lịch của tôi – seit, năm =================
   - key: de:item:a2u01-g-seit-praesens
@@ -1368,7 +1368,7 @@ items:
           translation:
             vi: Bạn có kinh nghiệm với trẻ con không?
       confusion:
-        vi: "die Erfahrung = kinh nghiệm tích lũy được; das Erlebnis = một sự việc cụ thể đã trải qua. Các từ -ung đều giống cái."
+        vi: "die Erfahrung = kinh nghiệm tích lũy được; das Erlebnis = một sự việc cụ thể đã trải qua. Danh từ có hậu tố -ung là giống cái."
 
   - key: de:item:a2u01-heiraten
     type: vocab
@@ -1432,7 +1432,7 @@ items:
           translation:
             vi: Bạn qua bài kiểm tra chưa?
       confusion:
-        vi: "bestehen + Akkusativ: die Prüfung bestehen. Partizip II: bestanden (be- không nhấn nên không có ge-)."
+        vi: "bestehen + Akkusativ: die Prüfung bestehen. Partizip II: bestanden (be- không nhấn nên không có ge-). Đi với giới từ thì nghĩa khác hẳn: bestehen aus (gồm có), bestehen auf (khăng khăng đòi – học ở B2)."
 
   - key: de:item:a2u01-durchfallen
     type: vocab

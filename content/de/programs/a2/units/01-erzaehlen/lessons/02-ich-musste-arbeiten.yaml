@@ -50,7 +50,7 @@ body:
       vi: "Sau bài này, bạn kể được một ngày gặp sự cố theo đúng trình tự, ví dụ: \"Zuerst hatten wir eine Panne. Dann mussten wir lange warten. Zum Schluss konnten wir endlich nach Hause fahren.\""
   - type: explain
     text:
-      vi: "Khi kể việc đã phải, đã muốn hay đã có thể làm, người Đức thường dùng Präteritum của động từ khiếm khuyết, kể cả khi nói. Cách tạo: gốc + -te, và bỏ umlaut nếu có: können → konnte, müssen → musste, dürfen → durfte, wollen → wollte, sollen → sollte, mögen → mochte."
+      vi: "Khi kể việc đã phải, đã muốn hay đã có thể làm, người Đức thường dùng Präteritum của động từ khiếm khuyết, kể cả khi nói. Cách tạo: gốc + -te, và bỏ umlaut nếu có: können → konnte, müssen → musste, dürfen → durfte, wollen → wollte, sollen → sollte; riêng mögen còn đổi g thành ch: mochte."
   - type: explain
     text:
       vi: "ich và er/sie/es giống nhau, không có đuôi riêng: ich musste, er musste. Các ngôi khác thêm đuôi: du musstest, wir mussten, ihr musstet, sie/Sie mussten. Động từ chính vẫn ở nguyên thể, cuối câu: Ich musste gestern lange arbeiten."
@@ -65,7 +65,7 @@ body:
       vi: "plötzlich (bỗng nhiên) mở đầu sự cố, zum Glück (may mà) và leider (tiếc là) cho biết cảm xúc. zum Schluss chỉ bước cuối của chuỗi việc, còn endlich là \"cuối cùng thì\" sau khi chờ lâu."
   - type: deep_explain
     text:
-      vi: "Động từ khiếm khuyết cũng có Perfekt, nhưng hình thức khá nặng: Ich habe gestern arbeiten müssen (hai nguyên thể ở cuối câu). Vì vậy ngay cả trong văn nói, người Đức thường chọn Ich musste gestern arbeiten. Hãy nhớ bộ ba dạng quá khứ dùng nhiều nhất khi nói: war, hatte và musste/konnte/wollte; các động từ còn lại bạn kể bằng Perfekt. und, aber, oder đứng ở vị trí 0, không tính: Zuerst haben wir gegessen, und dann sind wir gegangen – sau und, dann là vị trí 1 nên sind đứng ngay sau."
+      vi: "Động từ khiếm khuyết cũng có Perfekt, nhưng hình thức khá nặng: Ich habe gestern arbeiten müssen (hai nguyên thể ở cuối câu). Vì vậy ngay cả trong văn nói, người Đức thường chọn Ich musste gestern arbeiten. Hãy nhớ bộ ba dạng quá khứ dùng nhiều nhất khi nói: war, hatte và musste/konnte/wollte; phần lớn động từ còn lại bạn kể bằng Perfekt. und, aber, oder đứng ở vị trí 0, không tính: Zuerst haben wir gegessen, und dann sind wir gegangen – sau und, dann là vị trí 1 nên sind đứng ngay sau."
   - type: example
     target: Am Montag hatte ich eine Panne. Ich konnte nicht zur Arbeit fahren.
     target_lang: de
@@ -346,6 +346,8 @@ exercises:
         - Der Bus ist endlich da!
         - Endlich kommt der Bus!
         - Endlich kam der Bus!
+        - Endlich ist der Bus angekommen!
+        - Der Bus ist endlich angekommen!
     known_wrong:
       - answer: Endlich der Bus ist gekommen!
         feedback_vi: Endlich ở vị trí 1 thì ist phải ở vị trí 2 – Endlich ist der Bus gekommen.

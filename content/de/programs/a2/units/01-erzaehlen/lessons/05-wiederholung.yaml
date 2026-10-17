@@ -10,7 +10,7 @@ title:
   vi: Ôn tập – e-mail kể cuối tuần (Wiederholung)
 objectives:
   - vi: Đọc hiểu một bài blog du lịch ngắn kể theo trình tự (Perfekt, war/hatte, musste/konnte).
-  - vi: Viết e-mail thân mật khoảng 40–50 từ kể về cuối tuần theo 3 ý cho trước (kiểu Goethe A2 Schreiben).
+  - vi: Viết e-mail thân mật ngắn (độ dài luyện tập khoảng 40–50 từ) kể về cuối tuần theo 3 ý cho trước – dạng bài gần giống phần Viết của Goethe A2 (yêu cầu chính thức xem tài liệu của Goethe-Institut).
   - vi: Nghe hiểu tin nhắn thoại và lời giới thiệu ngắn có mốc thời gian, năm và seit.
 estimated_minutes: 22
 skills: [reading, writing, listening]
@@ -236,7 +236,7 @@ exercises:
       blanks:
         b1: [Liebe, Hallo]
         b2: [war]
-        b3: [Viele, Liebe]
+        b3: [Viele, Liebe, Herzliche, Beste]
     known_wrong:
       - answer: Lieber
         feedback_vi: Anna là nữ → Liebe Anna; cuối thư là Viele Grüße hoặc Liebe Grüße.
@@ -360,9 +360,8 @@ exercises:
     answer:
       orders:
         - [x-ich, x-wohne, x-seit, x-zwei, x-jahren, x-in, x-wien]
-        - [x-ich, x-wohne, x-in, x-wien, x-seit, x-zwei, x-jahren]
     explanation:
-      vi: "Việc vẫn tiếp diễn → thì hiện tại wohne + seit. seit đi với Dativ, nên số nhiều thêm -n: zwei Jahren (Jahre là thừa)."
+      vi: "Việc vẫn tiếp diễn → thì hiện tại wohne + seit. seit đi với Dativ, nên số nhiều thêm -n: zwei Jahren (Jahre là thừa). Trật tự trung tính: thời gian (seit zwei Jahren) trước nơi chốn (in Wien)."
     display_answer: Ich wohne seit zwei Jahren in Wien.
 
   - key: de:exercise:a2u01l5-tr-wien
