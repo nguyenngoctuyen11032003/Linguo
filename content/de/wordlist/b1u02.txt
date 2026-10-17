@@ -1,0 +1,3 @@
+# Allow-list của unit B1U02 (Beziehungen und Gefühle): tên riêng và từ đúng mà từ điển offline thiếu.
+# Elif: tên nữ (gốc Thổ Nhĩ Kỳ), phổ biến ở Đức (bài đọc diễn đàn L5).
+Elif

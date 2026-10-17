@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u02-obwohl
+order_index: 4
+level: b1
+title:
+  vi: Mặc dù… – obwohl, trotzdem, tính từ với giới từ (Obwohl ich müde bin, …)
+objectives:
+  - vi: Nối hai ý trái ngược bằng obwohl (câu phụ, động từ cuối) và trotzdem (câu chính, động từ vị trí 2).
+  - vi: Dùng tính từ cảm xúc với giới từ cố định – stolz auf, zufrieden mit, enttäuscht von, eifersüchtig auf …
+  - vi: Nghe một cuộc trò chuyện về xung đột, cảm xúc và nói cảm nhận của mình.
+estimated_minutes: 20
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b1u02-worauf]
+items:
+  - item: de:item:b1u02-g-obwohl-trotzdem
+  - item: de:item:b1u02-g-adjektive-praeposition
+  - item: de:item:b1u02-gefuehl
+  - item: de:item:b1u02-eifersuechtig
+  - item: de:item:b1u02-enttaeuscht
+  - item: de:item:b1u02-stolz
+  - item: de:item:b1u02-zufrieden
+  - item: de:item:b1u02-wuetend
+  - item: de:item:b1u02-traurig
+  - item: de:item:b1u02-einsam
+  - item: de:item:b1u02-gluecklich
+  - item: de:item:b1u02-wut
+  - item: de:item:b1u02-eifersucht
+  - item: de:item:b1u02-enttaeuschung
+  - item: de:item:b1u02-erleichtert
+  - item: de:item:b1u02-nervoes
+  - item: de:item:b1u02-freude
+  - item: de:item:b1u02-weinen
+  - item: de:item:b1u02-laune
+  - item: de:item:b1u02-neidisch
+  - item: de:item:b1u01-g-seitdem
+    role: reuse
+  - item: de:item:b1u02-sich-streiten
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn diễn tả được cảm xúc mâu thuẫn, ví dụ: \"Obwohl ich mich über meinen Freund geärgert habe, bin ich nicht mehr wütend auf ihn. Trotzdem bin ich ein bisschen enttäuscht.\""
+  - type: explain
+    text:
+      vi: "obwohl (mặc dù) mở đầu một câu phụ, nên động từ chia đứng cuối như với weil: Ich gehe zur Arbeit, obwohl ich krank bin. Khi câu obwohl đứng đầu, cả câu phụ chiếm vị trí 1, nên câu chính bắt đầu ngay bằng động từ: Obwohl ich krank bin, gehe ich zur Arbeit."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"mặc dù … nhưng …\", còn tiếng Đức chỉ cần obwohl: sau câu obwohl không thêm aber. Sai: Obwohl ich müde bin, aber ich arbeite. Đúng: Obwohl ich müde bin, arbeite ich."
+  - type: explain
+    text:
+      vi: "trotzdem (dù vậy, tuy thế) là trạng từ trong câu chính, cho biết kết quả ngược với điều vừa nói. Nó đứng ở vị trí 1 – khi đó động từ theo ngay sau (Trotzdem arbeite ich) – hoặc đứng sau động từ (Ich arbeite trotzdem). Sau dấu phẩy, trotzdem ở đầu vế câu vẫn kéo động từ lên trước chủ ngữ: Ich bin müde, trotzdem arbeite ich."
+  - type: explain
+    text:
+      vi: "Nhiều tính từ cảm xúc đi với giới từ cố định: stolz auf, eifersüchtig auf, wütend auf, traurig über, verliebt in (+ Akkusativ); zufrieden mit, enttäuscht von (+ Dativ). Với vật và sự việc, hỏi và trả lời bằng wo(r)-/da(r)- như ở bài trước: Worauf bist du stolz? – Darauf bin ich stolz."
+  - type: deep_explain
+    text:
+      vi: "obwohl và trotzdem diễn đạt cùng một ý theo hai cách: Obwohl es regnet, gehen wir spazieren = Es regnet. Trotzdem gehen wir spazieren. Trong khẩu ngữ, đôi khi nghe trotzdem dùng như liên từ với động từ cuối (trotzdem es regnet), nhưng chuẩn viết là obwohl. Một số tính từ đổi giới từ theo đối tượng: wütend auf + người nhưng wütend über + việc; enttäuscht von + người, enttäuscht über + việc. einsam (cô đơn) khác allein (một mình): Ich wohne allein, aber ich bin nicht einsam. neidisch là ghen tị với cái người khác có, còn eifersüchtig là ghen vì sợ mất người mình yêu. Câu seitdem (B1U01) cũng hay dùng để nói cảm xúc: Seitdem sie weg ist, fühle ich mich einsam."
+  - type: example
+    target: Obwohl ich müde bin, gehe ich heute Abend mit dir ins Kino.
+    target_lang: de
+    translation:
+      vi: Mặc dù mệt, tối nay mình vẫn đi xem phim với bạn.
+    note:
+      vi: "Nói với bạn (du). bin đứng cuối câu obwohl; câu chính bắt đầu bằng gehe."
+  - type: example
+    target: Ich habe wenig Zeit. Trotzdem helfe ich dir beim Umzug.
+    target_lang: de
+    translation:
+      vi: Mình có ít thời gian. Dù vậy, mình vẫn giúp bạn chuyển nhà.
+    note:
+      vi: "Trotzdem ở vị trí 1 → động từ helfe ngay sau, rồi mới đến chủ ngữ ich."
+  - type: example
+    target: Meine Eltern sind sehr stolz auf mich, obwohl ich nicht die beste Note bekommen habe.
+    target_lang: de
+    translation:
+      vi: Bố mẹ tôi rất tự hào về tôi, mặc dù tôi không được điểm cao nhất.
+    note:
+      vi: "stolz auf + Akkusativ (mich). Câu obwohl đứng sau: Perfekt bekommen habe ở cuối."
+  - type: example
+    target: Er ist eifersüchtig auf ihren besten Freund.
+    target_lang: de
+    translation:
+      vi: Anh ấy ghen với người bạn thân nhất của cô ấy.
+    note:
+      vi: "eifersüchtig auf + Akkusativ: ihren besten Freund (giống đực, Akkusativ)."
+  - type: example
+    target: Seitdem mein bester Freund weggezogen ist, fühle ich mich manchmal einsam.
+    target_lang: de
+    translation:
+      vi: Từ khi người bạn thân nhất chuyển đi, đôi khi tôi thấy cô đơn.
+    note:
+      vi: "Câu seitdem đứng đầu (B1U01) → fühle ở vị trí 2. sich einsam fühlen = cảm thấy cô đơn."
+  - type: example
+    target: Bist du zufrieden mit deinem neuen Job? – Ja, eigentlich schon. Trotzdem bin ich ein bisschen enttäuscht vom Gehalt.
+    target_lang: de
+    translation:
+      vi: Bạn có hài lòng với công việc mới không? – Ừ, nói chung là có. Dù vậy mình hơi thất vọng về mức lương.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). zufrieden mit + Dativ, enttäuscht von + Dativ (vom = von dem)."
+  - type: common_mistake
+    wrong: Obwohl ich müde bin, aber ich arbeite weiter.
+    right: Obwohl ich müde bin, arbeite ich weiter.
+    target_lang: de
+    note:
+      vi: "Không dịch \"mặc dù … nhưng\" từng chữ: sau câu obwohl không có aber, câu chính bắt đầu bằng động từ."
+  - type: common_mistake
+    wrong: Ich bin müde, trotzdem ich arbeite weiter.
+    right: Ich bin müde, trotzdem arbeite ich weiter.
+    target_lang: de
+    note:
+      vi: "trotzdem chiếm vị trí 1 của vế câu, nên động từ arbeite đứng ngay sau nó."
+  - type: common_mistake
+    wrong: Obwohl ich habe wenig Geld, bin ich glücklich.
+    right: Obwohl ich wenig Geld habe, bin ich glücklich.
+    target_lang: de
+    note:
+      vi: "Trong câu obwohl, động từ chia đứng cuối."
+  - type: common_mistake
+    wrong: Wir sind stolz für unsere Tochter.
+    right: Wir sind stolz auf unsere Tochter.
+    target_lang: de
+    note:
+      vi: "\"Tự hào về\" trong tiếng Đức là stolz auf + Akkusativ."
+  - type: summary
+    points:
+      - vi: "obwohl + câu phụ, động từ cuối; câu obwohl đứng đầu → câu chính bắt đầu bằng động từ."
+      - vi: "Không có aber sau câu obwohl."
+      - vi: "trotzdem: vị trí 1 (Trotzdem arbeite ich) hoặc sau động từ (Ich arbeite trotzdem)."
+      - vi: "+ Akk: stolz auf, eifersüchtig auf, wütend auf, traurig über, verliebt in."
+      - vi: "+ Dat: zufrieden mit, enttäuscht von."
+      - vi: "Từ vựng: das Gefühl, glücklich, traurig, einsam, wütend, enttäuscht, erleichtert, nervös, gute/schlechte Laune."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u02l4-listen-streiten-gluecklich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      audio_asset_id: null
+      fallback_text: Obwohl Lena und Paul sich oft streiten, sind sie sehr glücklich zusammen.
+      options:
+        - { id: l2a, text: "Lena và Paul hay cãi nhau, nhưng họ rất hạnh phúc bên nhau.", lang: vi }
+        - { id: l6b, text: "Vì Lena và Paul hay cãi nhau nên họ không hạnh phúc.", lang: vi }
+        - { id: l9c, text: "Lena và Paul ít khi cãi nhau và rất hạnh phúc bên nhau.", lang: vi }
+        - { id: l4d, text: "Lena và Paul hay cãi nhau, vì vậy họ đã chia tay.", lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "obwohl = mặc dù: hai ý trái ngược nhau. sich oft streiten = hay cãi nhau; sehr glücklich zusammen = rất hạnh phúc bên nhau."
+    display_answer: Lena và Paul hay cãi nhau, nhưng họ rất hạnh phúc bên nhau.
+
+  - key: de:exercise:b1u02l4-listen-geburtstag
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u02-enttaeuscht
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich bin ein bisschen enttäuscht von meinem Bruder, weil er meinen Geburtstag vergessen hat. Trotzdem bin ich nicht wütend auf ihn.
+      options:
+        - { id: g3a, text: "Người nói hơi thất vọng về anh trai vì anh ấy quên sinh nhật mình, nhưng không giận anh ấy.", lang: vi }
+        - { id: g7b, text: "Người nói hơi thất vọng về anh trai vì anh ấy quên sinh nhật mình, và rất giận anh ấy.", lang: vi }
+        - { id: g1c, text: "Người nói hơi thất vọng về anh trai vì anh ấy không đến dự sinh nhật, nhưng không giận anh ấy.", lang: vi }
+        - { id: g5d, text: "Anh trai thất vọng về người nói vì người nói quên sinh nhật anh ấy.", lang: vi }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: "enttäuscht von meinem Bruder = thất vọng về anh (em) trai; weil er meinen Geburtstag vergessen hat = vì anh ấy quên sinh nhật mình. Trotzdem bin ich nicht wütend auf ihn = dù vậy tôi không giận anh ấy."
+    display_answer: Người nói hơi thất vọng về anh trai vì anh ấy quên sinh nhật mình, nhưng không giận anh ấy.
+
+  - key: de:exercise:b1u02l4-listen-kanada
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u02-einsam
+    prompt:
+      audio_asset_id: null
+      fallback_text: Seitdem meine Freundin in Kanada wohnt, fühle ich mich oft einsam. Aber ich bin stolz auf sie.
+      options:
+        - { id: k4a, text: "Từ khi bạn gái sống ở Canada, tôi thường thấy cô đơn. Nhưng tôi tự hào về cô ấy.", lang: vi }
+        - { id: k8b, text: "Từ khi bạn gái sống ở Canada, tôi thường thấy cô đơn và giận cô ấy.", lang: vi }
+        - { id: k2c, text: "Bạn gái tôi thấy cô đơn ở Canada, nhưng tôi tự hào về cô ấy.", lang: vi }
+        - { id: k6d, text: "Trước khi bạn gái sang Canada, tôi thường thấy cô đơn.", lang: vi }
+    answer:
+      correct_option_id: k4a
+    explanation:
+      vi: "Seitdem … wohnt = từ khi (bây giờ vẫn) sống ở đó; fühle ich mich oft einsam = tôi (người nói) thường thấy cô đơn; stolz auf sie = tự hào về cô ấy."
+    display_answer: Từ khi bạn gái sống ở Canada, tôi thường thấy cô đơn. Nhưng tôi tự hào về cô ấy.
+
+  - key: de:exercise:b1u02l4-mcq-trotzdem-kopf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      stem: "Chọn từ đúng: Ich habe Kopfschmerzen. ___ gehe ich heute zur Arbeit."
+      stem_lang: vi
+      options:
+        - { id: t2a, text: "Trotzdem", lang: de }
+        - { id: t6b, text: "Obwohl", lang: de }
+        - { id: t9c, text: "Deshalb", lang: de }
+        - { id: t4d, text: "Weil", lang: de }
+    answer:
+      correct_option_id: t2a
+    explanation:
+      vi: "Hai ý trái ngược (đau đầu – vẫn đi làm) và động từ gehe đứng ngay sau chỗ trống → cần trạng từ trotzdem. obwohl và weil mở đầu câu phụ (động từ phải ở cuối); deshalb (vì vậy) không hợp nghĩa."
+    display_answer: Trotzdem
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u02l4-fill-obwohl-trotzdem
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      template: "{{b1}} (obwohl/trotzdem) Lan und ich uns manchmal streiten, sind wir beste Freundinnen. Letzte Woche habe ich meine Prüfung nicht bestanden. {{b2}} (obwohl/trotzdem) hat Lan gesagt, dass sie stolz {{b3}} mich ist."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Obwohl]
+        b2: [Trotzdem]
+        b3: [auf]
+    known_wrong:
+      - answer: für
+        feedback_vi: Tự hào về ai là stolz auf + Akkusativ.
+        error_tag: preposition
+      - answer: von
+        feedback_vi: Không dịch theo tiếng Anh (proud of) – stolz auf + Akkusativ.
+        error_tag: preposition
+    explanation:
+      vi: "Ô 1: động từ streiten đứng cuối → câu phụ với obwohl. Ô 2: động từ hat đứng ngay sau → trạng từ trotzdem ở vị trí 1. Ô 3: stolz auf + Akkusativ (mich)."
+    display_answer: "Obwohl Lan und ich uns manchmal streiten, sind wir beste Freundinnen. Letzte Woche habe ich meine Prüfung nicht bestanden. Trotzdem hat Lan gesagt, dass sie stolz auf mich ist."
+
+  - key: de:exercise:b1u02l4-tr-obwohl-muede
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      source_text: "Mặc dù tôi mệt, tôi vẫn đi làm. (bắt đầu bằng Obwohl)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Obwohl ich müde bin, gehe ich zur Arbeit.
+        - Obwohl ich müde bin, gehe ich arbeiten.
+        - Obwohl ich müde bin, gehe ich trotzdem zur Arbeit.
+        - Obwohl ich müde bin, gehe ich trotzdem arbeiten.
+        - Obwohl ich müde bin, arbeite ich.
+        - Obwohl ich müde bin, arbeite ich trotzdem.
+    known_wrong:
+      - answer: Obwohl ich müde bin, aber ich gehe zur Arbeit.
+        feedback_vi: Sau câu obwohl không thêm aber; câu chính bắt đầu ngay bằng động từ – gehe ich …
+        error_tag: conjunction
+      - answer: Obwohl ich bin müde, gehe ich zur Arbeit.
+        feedback_vi: Trong câu obwohl, động từ bin đứng cuối – Obwohl ich müde bin, …
+        error_tag: verb_position
+      - answer: Obwohl ich müde bin, ich gehe zur Arbeit.
+        feedback_vi: Câu obwohl là vị trí 1, nên động từ gehe đứng ngay sau dấu phẩy – …, gehe ich zur Arbeit.
+        error_tag: verb_position
+    explanation:
+      vi: "obwohl + câu phụ: bin ở cuối. Cả câu phụ là vị trí 1, nên câu chính bắt đầu bằng động từ gehe, rồi đến ich. Có thể thêm trotzdem (vẫn) trong câu chính để nhấn mạnh."
+    display_answer: Obwohl ich müde bin, gehe ich zur Arbeit.
+
+  - key: de:exercise:b1u02l4-tr-trotzdem-regen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      source_text: "Trời mưa. Dù vậy, chúng tôi vẫn đi dạo. (dùng trotzdem)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Es regnet. Trotzdem gehen wir spazieren.
+        - Es regnet. Wir gehen trotzdem spazieren.
+        - Es regnet, trotzdem gehen wir spazieren.
+        - Es regnet, aber wir gehen trotzdem spazieren.
+        - Es regnet, aber trotzdem gehen wir spazieren.
+        - Es regnet, und trotzdem gehen wir spazieren.
+    known_wrong:
+      - answer: Es regnet. Trotzdem wir gehen spazieren.
+        feedback_vi: Trotzdem ở vị trí 1 thì động từ gehen đứng ngay sau – Trotzdem gehen wir …
+        error_tag: verb_position
+      - answer: Es regnet. Obwohl gehen wir spazieren.
+        feedback_vi: obwohl là liên từ mở đầu câu phụ, không đứng một mình như trạng từ; ở đây dùng trotzdem.
+        error_tag: conjunction
+    explanation:
+      vi: "trotzdem là trạng từ: ở vị trí 1 thì động từ theo ngay sau (Trotzdem gehen wir), hoặc đứng sau động từ (Wir gehen trotzdem spazieren). spazieren gehen = đi dạo."
+    display_answer: Es regnet. Trotzdem gehen wir spazieren.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u02l4-wb-wenig-geld
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-gluecklich
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mặc dù có ít tiền, họ rất hạnh phúc.\""
+      tokens:
+        - { id: o-sind, text: sind }
+        - { id: o-geld, text: Geld }
+        - { id: o-sie1, text: sie }
+        - { id: o-gluecklich, text: glücklich }
+        - { id: o-obwohl, text: Obwohl }
+        - { id: o-haben, text: haben }
+        - { id: o-komma, text: "," }
+        - { id: o-sehr, text: sehr }
+        - { id: o-wenig, text: wenig }
+        - { id: o-sie2, text: sie }
+    answer:
+      orders:
+        - [o-obwohl, o-sie1, o-wenig, o-geld, o-haben, o-komma, o-sind, o-sie2, o-sehr, o-gluecklich]
+        - [o-obwohl, o-sie2, o-wenig, o-geld, o-haben, o-komma, o-sind, o-sie1, o-sehr, o-gluecklich]
+    explanation:
+      vi: "Câu obwohl: haben đứng cuối. Câu phụ là vị trí 1, nên câu chính bắt đầu bằng động từ sind, rồi chủ ngữ sie."
+    display_answer: Obwohl sie wenig Geld haben, sind sie sehr glücklich.
+
+  - key: de:exercise:b1u02l4-wb-mit-ergebnis
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-zufrieden
+    prompt:
+      instruction: "Sắp xếp thành câu (bắt đầu bằng Mit): \"Tôi không hài lòng với kết quả.\""
+      tokens:
+        - { id: e-nicht, text: nicht }
+        - { id: e-ergebnis, text: Ergebnis }
+        - { id: e-ich, text: ich }
+        - { id: e-mit, text: Mit }
+        - { id: e-zufrieden, text: zufrieden }
+        - { id: e-dem, text: dem }
+        - { id: e-bin, text: bin }
+    answer:
+      orders:
+        - [e-mit, e-dem, e-ergebnis, e-bin, e-ich, e-nicht, e-zufrieden]
+    explanation:
+      vi: "zufrieden mit + Dativ: mit dem Ergebnis (das Ergebnis → dem). Cụm này đứng ở vị trí 1 nên bin ở vị trí 2, sau đó là ich; nicht đứng trước tính từ zufrieden."
+    display_answer: Mit dem Ergebnis bin ich nicht zufrieden.
+
+  - key: de:exercise:b1u02l4-mcq-eifersuechtig
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-eifersuechtig
+    prompt:
+      stem: "Bạn trai của Mai ghen khi cô ấy nói chuyện với các đồng nghiệp nam. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: j3a, text: "Er ist eifersüchtig auf ihre Kollegen.", lang: de }
+        - { id: j7b, text: "Er ist eifersüchtig für ihre Kollegen.", lang: de }
+        - { id: j1c, text: "Er ist neidisch auf ihre Kollegen.", lang: de }
+        - { id: j5d, text: "Er ist eifersüchtig mit ihren Kollegen.", lang: de }
+    answer:
+      correct_option_id: j3a
+    explanation:
+      vi: "Ghen vì sợ mất người yêu là eifersüchtig, đi với auf + Akkusativ (ihre Kollegen). für và mit sai giới từ; neidisch nghĩa là ghen tị (muốn có cái người khác có), không hợp tình huống này."
+    display_answer: Er ist eifersüchtig auf ihre Kollegen.

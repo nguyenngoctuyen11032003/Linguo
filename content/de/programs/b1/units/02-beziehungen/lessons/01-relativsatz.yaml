@@ -1,0 +1,353 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u02-relativsatz
+order_index: 1
+level: b1
+title:
+  vi: Người bạn mà tôi… – mệnh đề quan hệ Nom/Akk (Ein Freund, der immer hilft)
+objectives:
+  - vi: Tả người và vật bằng mệnh đề quan hệ ở Nominativ và Akkusativ (der Freund, der … / den …).
+  - vi: Chọn đúng đại từ quan hệ – giống và số theo danh từ, cách theo vai trò trong mệnh đề.
+  - vi: Nói và viết về tình bạn và tính cách của một người.
+estimated_minutes: 19
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b1u01-wiederholung]
+items:
+  - item: de:item:b1u02-g-relativsatz-nom-akk
+  - item: de:item:b1u02-g-relativpronomen-wahl
+  - item: de:item:b1u02-freundschaft
+  - item: de:item:b1u02-vertrauen
+  - item: de:item:b1u02-ehrlich
+  - item: de:item:b1u02-hilfsbereit
+  - item: de:item:b1u02-charakter
+  - item: de:item:b1u02-eigenschaft
+  - item: de:item:b1u02-kennenlernen
+  - item: de:item:b1u02-partner
+  - item: de:item:b1u02-beziehung
+  - item: de:item:b1u02-treu
+  - item: de:item:b1u02-egoistisch
+  - item: de:item:b1u02-neugierig
+  - item: de:item:b1u02-grosszuegig
+  - item: de:item:b1u02-humorvoll
+  - item: de:item:b1u02-kumpel
+  - item: de:item:b1u02-freundeskreis
+  - item: de:item:b1u02-sich-melden
+  - item: de:item:a1u01-freund
+    role: reuse
+  - item: de:item:a1u01-sympathisch
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+    role: reuse
+  - item: de:item:a2u03-g-dativ-verben
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn tả được một người bằng mệnh đề quan hệ, ví dụ: \"Ein guter Freund ist ein Mensch, der ehrlich ist und den man immer anrufen kann.\""
+  - type: explain
+    text:
+      vi: "Mệnh đề quan hệ giống phần \"mà …\" trong tiếng Việt (người bạn mà tôi quen): nó bổ nghĩa cho một danh từ và thường đứng ngay sau danh từ đó. Nó mở đầu bằng đại từ quan hệ (der, die, das …), động từ chia đứng cuối như trong câu weil hay dass, và được tách khỏi câu chính bằng dấu phẩy."
+  - type: explain
+    text:
+      vi: "Đại từ quan hệ trông giống mạo từ xác định. Nominativ: der, die, das, die (số nhiều); Akkusativ: den, die, das, die. Chỉ giống đực số ít đổi dạng giữa hai cách: der Freund, der … (chủ ngữ) ↔ der Freund, den … (tân ngữ)."
+  - type: explain
+    text:
+      vi: "Chọn đại từ theo hai bước: giống và số lấy theo danh từ đứng trước; cách lấy theo vai trò trong mệnh đề quan hệ, không theo câu chính. Ich habe einen Freund, der mir oft hilft: câu chính có einen Freund (Akkusativ), nhưng trong mệnh đề quan hệ người bạn là chủ ngữ của hilft nên dùng der."
+  - type: explain
+    text:
+      vi: "Tiếng Việt dùng \"mà\" cho cả người lẫn vật, nhưng tiếng Đức không dùng was hay wo làm đại từ quan hệ cho người: die Frau, die …, không phải die Frau, was … Khi mệnh đề quan hệ chen vào giữa câu chính, cần dấu phẩy ở cả hai đầu: Der Freund, den ich besuche, wohnt in Köln."
+  - type: deep_explain
+    text:
+      vi: "was làm đại từ quan hệ chỉ dùng sau những từ như alles, etwas, nichts, das hoặc sau tính từ so sánh nhất danh từ hóa: Alles, was du sagst, stimmt. Das ist das Beste, was mir passiert ist. Trong văn viết trang trọng còn có welcher, welche, welches thay cho der, die, das (der Freund, welcher …), nhưng khi nói hầu như không dùng. Nếu câu chính có khung câu, mệnh đề quan hệ thường được đặt sau phần cuối khung cho dễ nghe: Gestern habe ich einen Mann kennengelernt, der aus Hanoi kommt. Về từ vựng: kennenlernen tách khi chia (Ich lerne ihn kennen) và có Partizip kennengelernt; vertrauen đi với Dativ (Ich vertraue dir), bạn sẽ dùng nó trong mệnh đề quan hệ Dativ ở bài sau."
+  - type: example
+    target: Ein guter Freund ist ein Mensch, der ehrlich ist und immer hilft.
+    target_lang: de
+    translation:
+      vi: Một người bạn tốt là người thành thật và luôn giúp đỡ.
+    note:
+      vi: "der Mensch là giống đực và là chủ ngữ của ist/hilft trong mệnh đề quan hệ → der (Nominativ)."
+  - type: example
+    target: Lan ist eine Freundin, die ich seit der Schule kenne.
+    target_lang: de
+    translation:
+      vi: Lan là một người bạn mà tôi quen từ hồi đi học.
+    note:
+      vi: "die Freundin giống cái; trong mệnh đề nó là tân ngữ (ich kenne sie) → die. Giống cái có Nominativ và Akkusativ giống nhau."
+  - type: example
+    target: Ihr neuer Partner, den sie im Urlaub kennengelernt hat, ist sehr humorvoll.
+    target_lang: de
+    translation:
+      vi: Người bạn đời mới mà cô ấy quen trong kỳ nghỉ rất hài hước.
+    note:
+      vi: "sie hat ihn kennengelernt – Partner là tân ngữ → den. Mệnh đề chen giữa câu nên có dấu phẩy ở hai đầu."
+  - type: example
+    target: Gestern habe ich einen Mann kennengelernt, der in meinem Haus wohnt.
+    target_lang: de
+    translation:
+      vi: Hôm qua tôi làm quen với một người đàn ông sống cùng tòa nhà với tôi.
+    note:
+      vi: "Mệnh đề quan hệ đứng sau Partizip kennengelernt. Người đàn ông là chủ ngữ của wohnt → der, dù câu chính dùng einen Mann."
+  - type: example
+    target: Die Freunde, die ich in Berlin habe, sind alle sehr hilfsbereit.
+    target_lang: de
+    translation:
+      vi: Những người bạn tôi có ở Berlin đều rất hay giúp đỡ.
+    note:
+      vi: "Số nhiều luôn dùng die ở Nominativ và Akkusativ; ở đây die là tân ngữ của habe."
+  - type: example
+    target: Wie ist dein neuer Mitbewohner? – Sehr nett. Er ist ein Mensch, den man sofort sympathisch findet.
+    target_lang: de
+    translation:
+      vi: Bạn cùng phòng mới của bạn thế nào? – Dễ mến lắm. Anh ấy là người mà ai gặp cũng thấy mến ngay.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). man findet ihn sympathisch – tân ngữ → den."
+  - type: common_mistake
+    wrong: Ich habe eine Freundin, was immer ehrlich ist.
+    right: Ich habe eine Freundin, die immer ehrlich ist.
+    target_lang: de
+    note:
+      vi: "\"mà\" trong tiếng Việt không dịch thành was; với die Freundin dùng đại từ quan hệ die."
+  - type: common_mistake
+    wrong: Ich kenne den Mann, den dort an der Tür steht.
+    right: Ich kenne den Mann, der dort an der Tür steht.
+    target_lang: de
+    note:
+      vi: "Câu chính dùng den Mann, nhưng trong mệnh đề quan hệ người đàn ông là chủ ngữ của steht → der."
+  - type: common_mistake
+    wrong: Der Freund, der wohnt in Hamburg, besucht mich morgen.
+    right: Der Freund, der in Hamburg wohnt, besucht mich morgen.
+    target_lang: de
+    note:
+      vi: "Trong mệnh đề quan hệ, động từ chia đứng cuối: …, der in Hamburg wohnt, …"
+  - type: summary
+    points:
+      - vi: "Mệnh đề quan hệ: đại từ quan hệ ở đầu, động từ chia ở cuối, dấu phẩy ngăn với câu chính."
+      - vi: "Nominativ: der, die, das, die; Akkusativ: den, die, das, die."
+      - vi: "Giống và số theo danh từ đứng trước; cách theo vai trò trong mệnh đề quan hệ."
+      - vi: "Không dùng was/wo làm đại từ quan hệ cho người; was đi sau alles, etwas, nichts, das …"
+      - vi: "Từ vựng: die Freundschaft, die Beziehung, der Charakter, die Eigenschaft, ehrlich, hilfsbereit, treu, vertrauen + Dativ, kennenlernen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u02l1-mcq-der-ehrlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-nom-akk
+    prompt:
+      stem: "Chọn đại từ quan hệ đúng: Paul ist ein Freund, ___ immer ehrlich ist."
+      stem_lang: vi
+      options:
+        - { id: r3a, text: "der", lang: de }
+        - { id: r7b, text: "den", lang: de }
+        - { id: r1c, text: "die", lang: de }
+        - { id: r5d, text: "was", lang: de }
+    answer:
+      correct_option_id: r3a
+    explanation:
+      vi: "der Freund là giống đực, và trong mệnh đề quan hệ nó là chủ ngữ của ist → Nominativ der. den là Akkusativ; die dùng cho giống cái hoặc số nhiều; was không dùng sau danh từ chỉ người."
+    display_answer: der
+
+  - key: de:exercise:b1u02l1-mcq-die-kollegin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativpronomen-wahl
+    prompt:
+      stem: "Chọn đại từ quan hệ đúng: Das ist die Kollegin, ___ ich gestern kennengelernt habe."
+      stem_lang: vi
+      options:
+        - { id: k2a, text: "die", lang: de }
+        - { id: k6b, text: "den", lang: de }
+        - { id: k9c, text: "der", lang: de }
+        - { id: k4d, text: "wo", lang: de }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "die Kollegin giống cái; trong mệnh đề nó là tân ngữ của kennengelernt (ich habe sie kennengelernt) → Akkusativ die. den chỉ dùng cho giống đực; der ở đây sẽ là Dativ, mà kennenlernen cần Akkusativ; wo không dùng cho người."
+    display_answer: die
+
+  - key: de:exercise:b1u02l1-mcq-satz-hamburg
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-nom-akk
+    prompt:
+      stem: "Câu nào đúng? (Người bạn sống ở Hamburg ngày mai đến thăm tôi.)"
+      stem_lang: vi
+      options:
+        - { id: h1a, text: "Der Freund, der in Hamburg wohnt, besucht mich morgen.", lang: de }
+        - { id: h5b, text: "Der Freund, der wohnt in Hamburg, besucht mich morgen.", lang: de }
+        - { id: h8c, text: "Der Freund, den in Hamburg wohnt, besucht mich morgen.", lang: de }
+        - { id: h3d, text: "Der Freund, was in Hamburg wohnt, besucht mich morgen.", lang: de }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: "Trong mệnh đề quan hệ động từ wohnt đứng cuối; der Freund là chủ ngữ của wohnt nên dùng der (Nominativ). den là Akkusativ, còn was không dùng sau danh từ chỉ người."
+    display_answer: Der Freund, der in Hamburg wohnt, besucht mich morgen.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u02l1-fill-der-die-das
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativpronomen-wahl
+    prompt:
+      template: "Mein Bruder hat einen Freund, {{b1}} immer hilfsbereit ist. Seine Freundin, {{b2}} er seit der Schule kennt, ist sehr ehrlich. Und das Foto, {{b3}} an der Wand hängt, zeigt die beiden zusammen."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [der, welcher]
+        b2: [die, welche]
+        b3: [das, welches]
+    known_wrong:
+      - answer: den
+        feedback_vi: "den là Akkusativ giống đực. Ô 1: người bạn là chủ ngữ của ist → der (dù câu chính có einen Freund); ô 2: Freundin giống cái → die."
+        error_tag: relative_pronoun
+      - answer: was
+        feedback_vi: "Sau danh từ (das Foto) dùng đại từ quan hệ das; was đi sau những từ như alles, etwas, nichts."
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Ô 1: der Freund là chủ ngữ của ist → der. Ô 2: die Freundin là tân ngữ của kennt → die (giống cái: Nom = Akk). Ô 3: das Foto là chủ ngữ của hängt → das."
+    display_answer: "Mein Bruder hat einen Freund, der immer hilfsbereit ist. Seine Freundin, die er seit der Schule kennt, ist sehr ehrlich. Und das Foto, das an der Wand hängt, zeigt die beiden zusammen."
+
+  - key: de:exercise:b1u02l1-fill-den-partner
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativsatz-nom-akk
+    prompt:
+      template: "Die Eigenschaft, {{b1}} ich an Lan am meisten mag, ist ihre Ehrlichkeit. Ihren Partner, {{b2}} sie letztes Jahr kennengelernt hat, finde ich sehr humorvoll. Und das Café, {{b3}} die beiden zusammen eröffnet haben, ist wunderbar."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [die, welche]
+        b2: [den, welchen]
+        b3: [das, welches]
+    known_wrong:
+      - answer: der
+        feedback_vi: "Partner là tân ngữ trong mệnh đề (sie hat ihn kennengelernt) → Akkusativ den."
+        error_tag: relative_pronoun
+      - answer: was
+        feedback_vi: "Sau danh từ das Café dùng đại từ quan hệ das, không dùng was."
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Cả ba đại từ đều là tân ngữ (Akkusativ) trong mệnh đề quan hệ: die Eigenschaft → die, der Partner → den, das Café → das. Chủ ngữ của các mệnh đề là ich, sie và die beiden."
+    display_answer: "Die Eigenschaft, die ich an Lan am meisten mag, ist ihre Ehrlichkeit. Ihren Partner, den sie letztes Jahr kennengelernt hat, finde ich sehr humorvoll. Und das Café, das die beiden zusammen eröffnet haben, ist wunderbar."
+
+  - key: de:exercise:b1u02l1-tr-partner-ehrlich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-ehrlich
+    prompt:
+      source_text: "Tôi đang tìm một người bạn đời thành thật. (dùng mệnh đề quan hệ: …, der/die …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich suche einen Partner, der ehrlich ist.
+        - Ich suche eine Partnerin, die ehrlich ist.
+        - Ich suche gerade einen Partner, der ehrlich ist.
+        - Ich suche gerade eine Partnerin, die ehrlich ist.
+    known_wrong:
+      - answer: Ich suche einen Partner, den ehrlich ist.
+        feedback_vi: Trong mệnh đề quan hệ, Partner là chủ ngữ của ist → der (dù câu chính dùng einen Partner).
+        error_tag: relative_pronoun
+      - answer: Ich suche einen Partner, was ehrlich ist.
+        feedback_vi: Với người dùng der/die làm đại từ quan hệ, không dùng was.
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Câu chính: Ich suche einen Partner (Akkusativ). Trong mệnh đề quan hệ, người bạn đời là chủ ngữ của ist → der (với Partnerin → die), và ist đứng cuối."
+    display_answer: Ich suche einen Partner, der ehrlich ist.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u02l1-wb-mann-kennengelernt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-kennenlernen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đó là người đàn ông mà hôm qua tôi mới quen.\""
+      tokens:
+        - { id: m-kennengelernt, text: kennengelernt }
+        - { id: m-ich, text: ich }
+        - { id: m-mann, text: Mann }
+        - { id: m-komma, text: "," }
+        - { id: m-das, text: Das }
+        - { id: m-habe, text: habe }
+        - { id: m-den, text: den }
+        - { id: m-gestern, text: gestern }
+        - { id: m-der, text: der }
+        - { id: m-ist, text: ist }
+    answer:
+      orders:
+        - [m-das, m-ist, m-der, m-mann, m-komma, m-den, m-ich, m-gestern, m-kennengelernt, m-habe]
+    explanation:
+      vi: "Câu chính: Das ist der Mann. Trong mệnh đề quan hệ người đàn ông là tân ngữ (ich habe ihn kennengelernt) → den; động từ chia habe đứng cuối, sau Partizip kennengelernt."
+    display_answer: Das ist der Mann, den ich gestern kennengelernt habe.
+
+  - key: de:exercise:b1u02l1-mcq-zuhoert
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativpronomen-wahl
+    prompt:
+      stem: "Bạn muốn tả bạn mình: \"Minh là người luôn lắng nghe tôi.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z4a, text: "Minh ist ein Mensch, der mir immer zuhört.", lang: de }
+        - { id: z8b, text: "Minh ist ein Mensch, den mir immer zuhört.", lang: de }
+        - { id: z2c, text: "Minh ist ein Mensch, der mir immer hört zu.", lang: de }
+        - { id: z6d, text: "Minh ist ein Mensch, was mir immer zuhört.", lang: de }
+    answer:
+      correct_option_id: z4a
+    explanation:
+      vi: "der Mensch giống đực và là chủ ngữ của zuhört → der. Trong mệnh đề quan hệ, động từ tách đứng cuối và viết liền: zuhört (không tách thành hört … zu); was không dùng cho người."
+    display_answer: Minh ist ein Mensch, der mir immer zuhört.
+
+  - key: de:exercise:b1u02l1-tr-freunde-berlin
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u02-hilfsbereit
+    prompt:
+      source_text: Die Freunde, die ich in Deutschland kennengelernt habe, sind sehr hilfsbereit.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Những người bạn mà tôi quen ở Đức rất hay giúp đỡ.
+        - Những người bạn tôi quen ở Đức rất hay giúp đỡ.
+        - Những người bạn mà tôi quen ở Đức rất sẵn lòng giúp đỡ.
+        - Những người bạn tôi quen ở Đức rất sẵn lòng giúp đỡ.
+        - Những người bạn mà tôi đã quen ở Đức rất hay giúp đỡ.
+        - Những người bạn mà tôi làm quen ở Đức rất hay giúp đỡ.
+        - Những người bạn tôi làm quen ở Đức rất hay giúp đỡ.
+        - Các bạn mà tôi quen ở Đức rất hay giúp đỡ.
+        - Những người bạn mà tôi quen ở Đức rất nhiệt tình giúp đỡ.
+        - Những người bạn tôi quen ở Đức rất nhiệt tình giúp đỡ.
+        - Những người bạn mà tôi quen được ở Đức rất hay giúp đỡ người khác.
+        - Những người bạn mà tôi quen ở Đức rất hay giúp đỡ người khác.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Die Freunde, die ich … kennengelernt habe = những người bạn mà tôi đã quen; die là tân ngữ (Akkusativ số nhiều). hilfsbereit = hay giúp đỡ, sẵn lòng giúp người khác."
+    display_answer: Những người bạn mà tôi quen ở Đức rất hay giúp đỡ.

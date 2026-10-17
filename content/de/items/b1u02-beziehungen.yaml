@@ -1,0 +1,1613 @@
+# Học liệu unit B1U02 "Quan hệ và cảm xúc" (Beziehungen und Gefühle), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U02L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Mệnh đề quan hệ Nominativ/Akkusativ =================
+  - key: de:item:b1u02-g-relativsatz-nom-akk
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Relativsatz (Nominativ/Akkusativ): der Freund, der mir hilft · der Freund, den ich kenne"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Mệnh đề quan hệ bổ nghĩa cho một danh từ, giống phần \"mà …\" trong tiếng Việt; nó mở đầu bằng đại từ quan hệ, động từ chia đứng cuối và có dấu phẩy ngăn cách với câu chính. Nominativ: der, die, das, die (số nhiều); Akkusativ: den, die, das, die. Chỉ giống đực số ít có hai dạng khác nhau: der (chủ ngữ) và den (tân ngữ)."
+      examples:
+        - target: Paul ist ein Freund, der immer ehrlich ist.
+          translation:
+            vi: Paul là một người bạn luôn thành thật.
+        - target: Der Film, den wir gestern gesehen haben, war sehr lustig.
+          translation:
+            vi: Bộ phim mà chúng tôi xem hôm qua rất buồn cười.
+        - target: Die Leute, die neben uns wohnen, sind sehr hilfsbereit.
+          translation:
+            vi: Những người sống cạnh nhà chúng tôi rất hay giúp đỡ.
+      confusion:
+        vi: "Khi mệnh đề quan hệ chen vào giữa câu chính, cần dấu phẩy ở cả hai đầu: Der Film, den wir gesehen haben, war lustig."
+
+  - key: de:item:b1u02-g-relativpronomen-wahl
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Relativpronomen wählen: Genus und Numerus vom Nomen, Kasus aus dem Relativsatz"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Giống và số của đại từ quan hệ lấy theo danh từ đứng trước nó (der Freund → der/den, die Freundin → die, das Kind → das, số nhiều → die). Cách thì lấy theo vai trò của nó trong chính mệnh đề quan hệ, không theo câu chính. Ich kenne den Mann, der dort steht: câu chính có den Mann, nhưng trong mệnh đề quan hệ người đàn ông là chủ ngữ của steht nên dùng der."
+      examples:
+        - target: Ich kenne den Mann, der dort an der Tür steht.
+          translation:
+            vi: Tôi biết người đàn ông đang đứng ở cửa đằng kia.
+        - target: Der Mann, den du dort siehst, ist mein Nachbar.
+          translation:
+            vi: Người đàn ông mà bạn thấy ở đằng kia là hàng xóm của tôi.
+      confusion:
+        vi: "Mẹo: tách mệnh đề quan hệ thành một câu riêng – Der Mann steht dort (chủ ngữ → der); Du siehst den Mann (tân ngữ → den). Với người, không dùng was hay wo làm đại từ quan hệ."
+
+  - key: de:item:b1u02-freundschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Freundschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình bạn
+      examples:
+        - target: Für mich ist Freundschaft sehr wichtig.
+          translation:
+            vi: Với tôi, tình bạn rất quan trọng.
+        - target: Unsere Freundschaft hat in der Schule begonnen.
+          translation:
+            vi: Tình bạn của chúng tôi bắt đầu từ hồi đi học.
+      confusion:
+        vi: "Danh từ đuôi -schaft là giống cái: die Freundschaft, die Mannschaft. Ghép với Freund (der) nhưng giống theo đuôi -schaft."
+
+  - key: de:item:b1u02-vertrauen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vertrauen (+ Dativ)
+      pos: động từ
+    back:
+      meaning:
+        vi: tin tưởng, tin cậy (ai)
+      examples:
+        - target: Ich vertraue meiner besten Freundin.
+          translation:
+            vi: Tôi tin tưởng người bạn thân nhất của mình.
+        - target: Vertraust du ihm?
+          translation:
+            vi: Bạn có tin anh ấy không?
+      confusion:
+        vi: "vertrauen đi với Dativ: Ich vertraue dir (không nói Ich vertraue dich). Danh từ tương ứng là das Vertrauen (lòng tin)."
+
+  - key: de:item:b1u02-ehrlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ehrlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thành thật, trung thực
+      examples:
+        - target: Er ist immer ehrlich zu mir.
+          translation:
+            vi: Anh ấy luôn thành thật với tôi.
+        - target: Ehrlich gesagt habe ich heute keine Lust.
+          translation:
+            vi: Nói thật là hôm nay tôi không có hứng.
+      confusion:
+        vi: "ehrlich zu + Dativ = thành thật với ai. ehrlich gesagt (nói thật thì) đứng ở đầu câu."
+
+  - key: de:item:b1u02-hilfsbereit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: hilfsbereit
+      pos: tính từ
+    back:
+      meaning:
+        vi: hay giúp đỡ, sẵn lòng giúp người khác
+      examples:
+        - target: Meine Nachbarin ist sehr hilfsbereit.
+          translation:
+            vi: Chị hàng xóm của tôi rất hay giúp đỡ người khác.
+        - target: Die Kollegen sind nett und hilfsbereit.
+          translation:
+            vi: Các đồng nghiệp dễ mến và sẵn lòng giúp đỡ.
+      confusion:
+        vi: "Từ ghép: die Hilfe (sự giúp đỡ) + s + bereit (sẵn sàng)."
+
+  - key: de:item:b1u02-charakter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Charakter, -e
+      ipa: /kaˈʁaktɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tính cách
+      examples:
+        - target: Sie hat einen starken Charakter.
+          translation:
+            vi: Cô ấy có tính cách mạnh mẽ.
+        - target: Mein Bruder und ich haben ganz verschiedene Charaktere.
+          translation:
+            vi: Anh trai tôi và tôi có tính cách hoàn toàn khác nhau.
+      pronunciation_note:
+        vi: "Ch ở đầu từ này đọc như \"k\", trọng âm ở âm tiết thứ hai: Cha-RAK-ter. Ở số nhiều die Charaktere, trọng âm chuyển sang -te-: /kaʁakˈteːʁə/."
+
+  - key: de:item:b1u02-eigenschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Eigenschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đặc điểm, phẩm chất, tính chất
+      examples:
+        - target: Welche Eigenschaften hat ein guter Freund?
+          translation:
+            vi: Một người bạn tốt có những phẩm chất gì?
+        - target: Ehrlichkeit ist für mich die wichtigste Eigenschaft.
+          translation:
+            vi: Với tôi, sự thành thật là phẩm chất quan trọng nhất.
+      confusion:
+        vi: "der Charakter là toàn bộ tính cách của một người; die Eigenschaft là một đặc điểm riêng lẻ (ehrlich, geduldig, neugierig …)."
+
+  - key: de:item:b1u02-kennenlernen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kennenlernen (lernt kennen, hat kennengelernt)
+      pos: động từ
+    back:
+      meaning:
+        vi: làm quen, bắt đầu quen (ai, cái gì)
+      examples:
+        - target: Wo habt ihr euch kennengelernt?
+          translation:
+            vi: Hai bạn quen nhau ở đâu?
+        - target: In Deutschland möchte ich viele neue Leute kennenlernen.
+          translation:
+            vi: Ở Đức tôi muốn làm quen với nhiều người mới.
+      confusion:
+        vi: "kennen = biết, đã quen; kennenlernen = lần đầu gặp và bắt đầu quen. Khi chia, hai phần tách ra: Ich lerne ihn kennen; Perfekt: Ich habe ihn kennengelernt."
+
+  - key: de:item:b1u02-partner
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Partner, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn đời, người yêu; đối tác, bạn cùng làm
+      examples:
+        - target: Mein Partner und ich wohnen seit zwei Jahren zusammen.
+          translation:
+            vi: Bạn đời của tôi và tôi sống chung đã hai năm.
+        - target: Für die Übung brauchst du einen Partner.
+          translation:
+            vi: Để làm bài luyện này bạn cần một bạn cùng làm.
+      confusion:
+        vi: "Dạng nữ: die Partnerin, -nen. Người Đức hay nói mein Partner / meine Partnerin cho người yêu hoặc bạn đời, dù đã cưới hay chưa."
+
+  - key: de:item:b1u02-beziehung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Beziehung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: mối quan hệ; quan hệ yêu đương
+      examples:
+        - target: Wir haben eine gute Beziehung zu unseren Nachbarn.
+          translation:
+            vi: Chúng tôi có quan hệ tốt với hàng xóm.
+        - target: Bist du gerade in einer Beziehung?
+          translation:
+            vi: Hiện giờ bạn có đang yêu ai không?
+      confusion:
+        vi: "Quan hệ với ai: eine Beziehung zu + Dativ. Đứng một mình, in einer Beziehung sein thường có nghĩa là đang có người yêu."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 1 – tình bạn, tính cách
+  - key: de:item:b1u02-treu
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: treu
+      pos: tính từ
+    back:
+      meaning:
+        vi: chung thủy, trung thành
+      examples:
+        - target: Ein treuer Freund hilft dir auch in schweren Zeiten.
+          translation:
+            vi: Một người bạn trung thành giúp bạn cả trong lúc khó khăn.
+        - target: Er ist seiner Frau immer treu geblieben.
+          translation:
+            vi: Anh ấy luôn chung thủy với vợ.
+      confusion:
+        vi: "Chung thủy với ai: jemandem treu sein (Dativ, không có giới từ)."
+
+  - key: de:item:b1u02-egoistisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: egoistisch
+      ipa: /eɡoˈɪstɪʃ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ích kỷ
+      examples:
+        - target: Sei nicht so egoistisch!
+          translation:
+            vi: Đừng ích kỷ như vậy!
+        - target: Ich finde sein Verhalten sehr egoistisch.
+          translation:
+            vi: Tôi thấy cách cư xử của anh ấy rất ích kỷ.
+      pronunciation_note:
+        vi: "o và i đọc tách thành hai âm tiết: e-go-is-tisch, trọng âm ở -is-."
+
+  - key: de:item:b1u02-neugierig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: neugierig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tò mò
+      examples:
+        - target: Kinder sind sehr neugierig.
+          translation:
+            vi: Trẻ con rất tò mò.
+        - target: Ich bin neugierig – wie ist dein neuer Freund?
+          translation:
+            vi: Mình tò mò quá – bạn trai mới của bạn thế nào?
+      confusion:
+        vi: "neugierig auf + Akkusativ = tò mò, háo hức muốn biết về điều gì: Ich bin neugierig auf das Ergebnis."
+
+  - key: de:item:b1u02-grosszuegig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: großzügig
+      pos: tính từ
+    back:
+      meaning:
+        vi: hào phóng, rộng rãi
+      examples:
+        - target: Mein Onkel ist sehr großzügig.
+          translation:
+            vi: Chú tôi rất hào phóng.
+        - target: Vielen Dank für das großzügige Geschenk!
+          translation:
+            vi: Cảm ơn nhiều vì món quà hào phóng!
+      confusion:
+        vi: "Trái nghĩa thường gặp: geizig (keo kiệt)."
+
+  - key: de:item:b1u02-humorvoll
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: humorvoll
+      pos: tính từ
+    back:
+      meaning:
+        vi: hài hước, có khiếu hài hước
+      examples:
+        - target: Meine Kollegin ist klug und humorvoll.
+          translation:
+            vi: Đồng nghiệp của tôi thông minh và hài hước.
+        - target: Ich suche einen humorvollen Partner.
+          translation:
+            vi: Tôi tìm một người bạn đời có khiếu hài hước.
+      confusion:
+        vi: "Đuôi -voll nghĩa là \"đầy, có nhiều\": der Humor → humorvoll. Cũng có thể nói: Er hat viel Humor."
+
+  - key: de:item:b1u02-kumpel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kumpel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn, bạn thân (khẩu ngữ)
+      examples:
+        - target: Tom ist ein alter Kumpel von mir.
+          translation:
+            vi: Tom là bạn lâu năm của tôi.
+        - target: Mein Kumpel hilft mir am Samstag beim Umzug.
+          translation:
+            vi: Thứ bảy, bạn tôi giúp tôi chuyển nhà.
+      confusion:
+        vi: "Từ khẩu ngữ, dùng khi nói chuyện thân mật. Số nhiều là die Kumpel, khi nói cũng hay nghe die Kumpels."
+
+  - key: de:item:b1u02-freundeskreis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Freundeskreis, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhóm bạn, vòng bạn bè
+      examples:
+        - target: Sie hat einen großen Freundeskreis.
+          translation:
+            vi: Cô ấy có rất nhiều bạn bè.
+        - target: In meinem Freundeskreis sprechen alle Deutsch.
+          translation:
+            vi: Trong nhóm bạn của tôi, ai cũng nói tiếng Đức.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Kreis (vòng tròn) → der Freundeskreis; giữa hai từ có -es-."
+
+  - key: de:item:b1u02-sich-melden
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich melden (bei + Dativ)
+      pos: động từ
+    back:
+      meaning:
+        vi: liên lạc, báo tin (cho ai)
+      examples:
+        - target: Melde dich, wenn du in Berlin bist!
+          translation:
+            vi: Khi nào đến Berlin thì liên lạc với mình nhé!
+        - target: Er hat sich lange nicht bei mir gemeldet.
+          translation:
+            vi: Lâu rồi anh ấy không liên lạc với tôi.
+      confusion:
+        vi: "sich bei jemandem melden = gọi điện, nhắn tin cho ai. Khác anmelden (đăng ký) ở A1."
+
+  # ================= Bài 2: Mệnh đề quan hệ Dativ và có giới từ =================
+  - key: de:item:b1u02-g-relativsatz-dativ
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Relativsatz im Dativ: dem, der, dem, denen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi danh từ đóng vai Dativ trong mệnh đề quan hệ (ví dụ sau helfen, danken, vertrauen, erzählen), đại từ quan hệ ở Dativ: dem (giống đực), der (giống cái), dem (giống trung), denen (số nhiều). Dạng số nhiều denen khác mạo từ den, và đây là chỗ hay sai nhất. Động từ vẫn đứng cuối, dấu phẩy ở hai bên."
+      examples:
+        - target: Das ist die Kollegin, der ich am meisten vertraue.
+          translation:
+            vi: Đó là chị đồng nghiệp mà tôi tin tưởng nhất.
+        - target: Die Freunde, denen ich geholfen habe, haben mich zum Essen eingeladen.
+          translation:
+            vi: Những người bạn mà tôi đã giúp đã mời tôi đi ăn.
+        - target: Der Mann, dem das Auto gehört, wohnt neben uns.
+          translation:
+            vi: Người đàn ông sở hữu chiếc xe sống cạnh nhà chúng tôi.
+      confusion:
+        vi: "Đừng nhầm denen (đại từ quan hệ Dativ số nhiều) với den (mạo từ Dativ số nhiều: mit den Kindern, hoặc Akkusativ giống đực: den Mann)."
+
+  - key: de:item:b1u02-g-relativsatz-praeposition
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Relativsatz mit Präposition: die Frau, mit der ich … · der Film, über den wir …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nếu động từ trong mệnh đề quan hệ cần giới từ (sprechen über, sich verlieben in, zusammenleben mit …), giới từ đứng ngay trước đại từ quan hệ, ở đầu mệnh đề: die Frau, mit der ich zusammenlebe. Giới từ quyết định cách: mit + Dativ → mit dem/der/denen; über + Akkusativ → über den/die/das. Tiếng Đức không để giới từ ở cuối mệnh đề như tiếng Anh hay tiếng Việt."
+      examples:
+        - target: Der Film, über den wir gestern gesprochen haben, läuft jetzt im Kino.
+          translation:
+            vi: Bộ phim mà hôm qua chúng ta nói tới giờ đang chiếu ở rạp.
+        - target: Die Stadt, in der wir uns kennengelernt haben, liegt am Meer.
+          translation:
+            vi: Thành phố nơi chúng tôi quen nhau nằm bên bờ biển.
+        - target: Thomas ist der Mann, mit dem ich seit zehn Jahren verheiratet bin.
+          translation:
+            vi: Thomas là người đàn ông mà tôi đã kết hôn được mười năm.
+      confusion:
+        vi: "Với nơi chốn có thể dùng wo thay cho giới từ + đại từ: die Stadt, wo wir uns kennengelernt haben. Với người thì cần giới từ + đại từ quan hệ: die Freundin, mit der ich wohne."
+
+  - key: de:item:b1u02-liebe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Liebe (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình yêu
+      examples:
+        - target: Bei uns war es Liebe auf den ersten Blick.
+          translation:
+            vi: Với chúng tôi, đó là tình yêu sét đánh.
+        - target: Ihre Liebe zur Musik hat sie von ihrem Vater.
+          translation:
+            vi: Tình yêu âm nhạc của cô ấy là do bố truyền lại.
+      confusion:
+        vi: "Liebe / Lieber ở đầu thư (Liebe Lan, Lieber Minh) là tính từ lieb (thân mến), không phải danh từ die Liebe. Tình yêu đối với điều gì: die Liebe zu + Dativ."
+
+  - key: de:item:b1u02-sich-verlieben-in
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verlieben in (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: phải lòng, bắt đầu yêu (ai)
+      examples:
+        - target: Sie hat sich sofort in ihn verliebt.
+          translation:
+            vi: Cô ấy phải lòng anh ấy ngay lập tức.
+        - target: Ich habe mich im Urlaub in einen Spanier verliebt.
+          translation:
+            vi: Trong kỳ nghỉ tôi đã phải lòng một anh chàng người Tây Ban Nha.
+      confusion:
+        vi: "sich verlieben in = bắt đầu yêu (sự việc); trạng thái đang yêu dùng tính từ: in jemanden verliebt sein (Ich bin in ihn verliebt). Perfekt dùng haben: Sie hat sich verliebt."
+
+  - key: de:item:b1u02-sich-trennen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich trennen (von + Dativ)
+      pos: động từ
+    back:
+      meaning:
+        vi: chia tay (ai), chia tay nhau
+      examples:
+        - target: Sie haben sich nach fünf Jahren getrennt.
+          translation:
+            vi: Họ chia tay nhau sau năm năm.
+        - target: Anna hat sich von ihrem Freund getrennt.
+          translation:
+            vi: Anna đã chia tay bạn trai.
+      confusion:
+        vi: "Có sich: chia tay (sich von jemandem trennen). Không có sich (A2U08): tách, phân loại – den Müll trennen."
+
+  - key: de:item:b1u02-trennung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Trennung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chia tay, sự chia cắt
+      examples:
+        - target: Nach der Trennung war er lange traurig.
+          translation:
+            vi: Sau khi chia tay, anh ấy buồn rất lâu.
+        - target: Die Trennung war für beide nicht leicht.
+          translation:
+            vi: Việc chia tay không dễ dàng với cả hai người.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Trennung, die Beziehung, die Enttäuschung."
+
+  - key: de:item:b1u02-ehe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ehe, -n
+      ipa: /ˈeːə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hôn nhân, cuộc hôn nhân
+      examples:
+        - target: Nach zwanzig Jahren Ehe lieben sie sich immer noch.
+          translation:
+            vi: Sau hai mươi năm chung sống, họ vẫn yêu nhau.
+        - target: Ihre Ehe ist sehr glücklich.
+          translation:
+            vi: Cuộc hôn nhân của họ rất hạnh phúc.
+      pronunciation_note:
+        vi: "h giữa hai nguyên âm không đọc, chỉ làm e đầu dài: E-he đọc là /ˈeːə/."
+
+  - key: de:item:b1u02-ehemann
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ehemann, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: người chồng
+      examples:
+        - target: Ihr Ehemann arbeitet als Koch.
+          translation:
+            vi: Chồng cô ấy làm đầu bếp.
+        - target: Das ist mein Ehemann Thomas.
+          translation:
+            vi: Đây là Thomas, chồng tôi.
+      confusion:
+        vi: "Khi nói, người Đức thường nói mein Mann (chồng tôi); der Ehemann trang trọng hơn hoặc dùng để nói rõ. Số nhiều: die Ehemänner."
+
+  - key: de:item:b1u02-ehefrau
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ehefrau, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: người vợ
+      examples:
+        - target: Seine Ehefrau kommt aus Vietnam.
+          translation:
+            vi: Vợ anh ấy là người Việt Nam.
+        - target: Er hat seine Ehefrau im Studium kennengelernt.
+          translation:
+            vi: Anh ấy quen vợ hồi học đại học.
+      confusion:
+        vi: "Khi nói thường dùng meine Frau (vợ tôi). die Frau vừa là \"người phụ nữ\" vừa là \"vợ\", tùy ngữ cảnh."
+
+  - key: de:item:b1u02-zusammenziehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zusammenziehen, zieht zusammen, zog zusammen, ist zusammengezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: dọn về sống chung
+      examples:
+        - target: Nach einem Jahr sind wir zusammengezogen.
+          translation:
+            vi: Sau một năm, chúng tôi dọn về sống chung.
+        - target: Wann zieht ihr zusammen?
+          translation:
+            vi: Khi nào hai bạn dọn về ở chung?
+      confusion:
+        vi: "Động từ tách, Perfekt dùng sein vì là chuyển chỗ ở: Wir sind zusammengezogen. Sống chung (trạng thái) là zusammenleben hoặc zusammenwohnen."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 2 – tình yêu, hôn nhân
+  - key: de:item:b1u02-sich-verloben
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verloben (mit + Dativ)
+      pos: động từ
+    back:
+      meaning:
+        vi: đính hôn (với ai)
+      examples:
+        - target: Sie haben sich im Urlaub verlobt.
+          translation:
+            vi: Họ đã đính hôn trong kỳ nghỉ.
+        - target: Mein Bruder hat sich mit seiner Freundin verlobt.
+          translation:
+            vi: Anh trai tôi đã đính hôn với bạn gái.
+      confusion:
+        vi: "Danh từ: die Verlobung (lễ đính hôn). Partizip không có ge-: verlobt."
+
+  - key: de:item:b1u02-paar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Paar, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cặp, đôi (cặp đôi; một đôi giày …)
+      examples:
+        - target: Die beiden sind ein schönes Paar.
+          translation:
+            vi: Hai người họ là một cặp đẹp đôi.
+        - target: Viele junge Paare wohnen zuerst in einer kleinen Wohnung.
+          translation:
+            vi: Nhiều cặp đôi trẻ lúc đầu sống trong một căn hộ nhỏ.
+      confusion:
+        vi: "das Paar (cặp, đôi: ein Paar Schuhe) khác ein paar viết thường (vài, một ít: ein paar Freunde)."
+
+  - key: de:item:b1u02-kuessen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: küssen
+      pos: động từ
+    back:
+      meaning:
+        vi: hôn
+      examples:
+        - target: Er küsst sie zum Abschied.
+          translation:
+            vi: Anh ấy hôn cô ấy khi chia tay.
+        - target: Habt ihr euch schon geküsst?
+          translation:
+            vi: Hai bạn đã hôn nhau chưa?
+      confusion:
+        vi: "Danh từ: der Kuss, die Küsse. küssen đi thẳng với Akkusativ: Sie küsst ihn."
+
+  - key: de:item:b1u02-umarmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: umarmen
+      pos: động từ
+    back:
+      meaning:
+        vi: ôm
+      examples:
+        - target: Zur Begrüßung umarmen sich die beiden Freundinnen.
+          translation:
+            vi: Hai cô bạn ôm nhau khi chào hỏi.
+        - target: Sie hat mich fest umarmt.
+          translation:
+            vi: Cô ấy ôm chặt tôi.
+      confusion:
+        vi: "umarmen không tách và Partizip không có ge-: ich umarme dich, sie hat mich umarmt."
+
+  - key: de:item:b1u02-fernbeziehung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fernbeziehung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: mối tình xa, yêu xa
+      examples:
+        - target: Eine Fernbeziehung ist oft nicht leicht.
+          translation:
+            vi: Yêu xa thường không dễ dàng.
+        - target: Wir hatten zwei Jahre lang eine Fernbeziehung.
+          translation:
+            vi: Chúng tôi yêu xa suốt hai năm.
+      confusion:
+        vi: "Từ ghép: fern (xa) + die Beziehung, nên là giống cái."
+
+  - key: de:item:b1u02-liebeskummer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Liebeskummer (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nỗi buồn vì tình, thất tình
+      examples:
+        - target: Nach der Trennung hatte er wochenlang Liebeskummer.
+          translation:
+            vi: Sau khi chia tay, anh ấy buồn vì tình suốt mấy tuần.
+        - target: Meine Schwester hat Liebeskummer.
+          translation:
+            vi: Em gái tôi đang thất tình.
+      confusion:
+        vi: "Thường dùng không có mạo từ: Liebeskummer haben. Từ ghép: die Liebe + s + der Kummer (nỗi buồn), nên là giống đực."
+
+  - key: de:item:b1u02-sich-scheiden-lassen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich scheiden lassen, lässt sich scheiden, ließ sich scheiden, hat sich scheiden lassen
+      pos: động từ
+    back:
+      meaning:
+        vi: ly hôn
+      examples:
+        - target: Meine Eltern haben sich scheiden lassen, als ich zehn war.
+          translation:
+            vi: Bố mẹ tôi ly hôn khi tôi lên mười.
+        - target: Sie lassen sich nach zwanzig Jahren scheiden.
+          translation:
+            vi: Họ ly hôn sau hai mươi năm.
+      confusion:
+        vi: "Perfekt: hat sich scheiden lassen (lassen ở dạng nguyên thể, giống modal). Danh từ: die Scheidung; tính từ: geschieden (đã ly hôn)."
+
+  - key: de:item:b1u02-single
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Single, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: người độc thân
+      examples:
+        - target: In Großstädten leben viele Singles.
+          translation:
+            vi: Ở các thành phố lớn có nhiều người sống độc thân.
+        - target: Ich bin seit einem Jahr Single.
+          translation:
+            vi: Tôi độc thân được một năm rồi.
+      confusion:
+        vi: "Từ mượn tiếng Anh, đọc gần như trong tiếng Anh. Sau sein thường không có mạo từ: Ich bin Single."
+
+  # ================= Bài 3: darauf / worauf, động từ + giới từ =================
+  - key: de:item:b1u02-g-pronominaladverbien
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "da(r)- / wo(r)- + Präposition: darauf, damit, darüber · worauf, womit, worüber · aber Personen: auf ihn, mit wem"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi nói về vật hay sự việc, tiếng Đức thay giới từ + đại từ bằng da(r)- + giới từ (auf das Wochenende → darauf, mit dem Ergebnis → damit), và câu hỏi dùng wo(r)- + giới từ: Worauf freust du dich? Chữ r được chèn vào khi giới từ bắt đầu bằng nguyên âm (darüber, woran), không chèn khi bắt đầu bằng phụ âm (damit, wofür). Khi nói về người thì giữ giới từ + đại từ: auf ihn, mit ihr, Auf wen wartest du?"
+      examples:
+        - target: Worauf freust du dich? – Auf das Wochenende. Darauf freue ich mich schon lange.
+          translation:
+            vi: Bạn đang mong điều gì? – Cuối tuần. Mình mong nó lâu lắm rồi.
+        - target: Mit wem hast du telefoniert? – Mit meiner Schwester. Ich telefoniere jeden Sonntag mit ihr.
+          translation:
+            vi: Bạn đã gọi điện với ai vậy? – Với chị gái mình. Chủ nhật nào mình cũng gọi cho chị ấy.
+        - target: Hast du Zeit für das Projekt? – Nein, dafür habe ich leider keine Zeit.
+          translation:
+            vi: Bạn có thời gian cho dự án không? – Không, tiếc là mình không có thời gian cho việc đó.
+      confusion:
+        vi: "Không nói Ich freue mich auf es mà nói Ich freue mich darauf. Ngược lại, với người không dùng darauf: Ich warte auf ihn."
+
+  - key: de:item:b1u02-g-verben-praeposition-b1
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Verben mit Präposition (B1): sich ärgern über, sich verlassen auf, sich kümmern um, sich gewöhnen an (+ Akk) · sich streiten mit, sich bedanken bei (+ Dat)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nhiều động từ phản thân đi với một giới từ cố định, và giới từ quyết định cách: über, auf, um, an trong các cụm này đi với Akkusativ, còn mit và bei đi với Dativ. Giới từ thường khác tiếng Việt (bực về → über, lo cho → um), nên hãy học cả cụm: động từ + giới từ + cách. Một số động từ có hai giới từ cho hai đối tượng: sich bei jemandem für etwas bedanken / entschuldigen."
+      examples:
+        - target: Ich ärgere mich über den Lärm.
+          translation:
+            vi: Tôi bực mình vì tiếng ồn.
+        - target: Kann ich mich auf dich verlassen?
+          translation:
+            vi: Mình có thể trông cậy vào bạn không?
+        - target: Ich muss mich noch an das Wetter in Deutschland gewöhnen.
+          translation:
+            vi: Tôi vẫn phải làm quen với thời tiết ở Đức.
+      confusion:
+        vi: "an, auf, über trong các cụm này đi với Akkusativ, không theo câu hỏi Wo?/Wohin?. Nhưng cũng có cụm dùng Dativ (Angst haben vor + Dativ), nên mỗi cụm phải học kèm cách của nó."
+
+  - key: de:item:b1u02-sich-aergern-ueber
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich ärgern über (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: bực mình, tức (về điều gì, ai)
+      examples:
+        - target: Ich ärgere mich über den Lärm von nebenan.
+          translation:
+            vi: Tôi bực mình vì tiếng ồn từ nhà bên cạnh.
+        - target: Ärgere dich nicht darüber!
+          translation:
+            vi: Đừng bực mình vì chuyện đó!
+      confusion:
+        vi: "Không có sich, ärgern + Akk nghĩa là chọc tức ai: Mein Bruder ärgert mich. Tính từ: ärgerlich (đáng bực mình)."
+
+  - key: de:item:b1u02-sich-verlassen-auf
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verlassen auf (+ Akk), verlässt sich, verließ sich, hat sich verlassen
+      pos: động từ
+    back:
+      meaning:
+        vi: tin cậy, trông cậy vào (ai, điều gì)
+      examples:
+        - target: Auf meine Schwester kann ich mich immer verlassen.
+          translation:
+            vi: Tôi luôn có thể trông cậy vào chị gái mình.
+        - target: Kann ich mich darauf verlassen?
+          translation:
+            vi: Tôi có thể tin chắc vào điều đó không?
+      confusion:
+        vi: "verlassen + Akk không có sich (B1U01) nghĩa là rời bỏ, rời khỏi: Er hat seine Familie verlassen. Có sich + auf thì nghĩa là tin cậy."
+
+  - key: de:item:b1u02-sich-kuemmern-um
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich kümmern um (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: chăm sóc, lo liệu (cho ai, việc gì)
+      examples:
+        - target: Wer kümmert sich um die Kinder?
+          translation:
+            vi: Ai chăm sóc bọn trẻ?
+        - target: Keine Sorge, ich kümmere mich darum.
+          translation:
+            vi: Đừng lo, tôi sẽ lo việc đó.
+      confusion:
+        vi: "Tiếng Việt \"lo cho\" dễ khiến bạn dùng für, nhưng tiếng Đức là um: sich um jemanden kümmern."
+
+  - key: de:item:b1u02-sich-streiten
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "sich streiten, streitet sich, stritt sich, hat sich gestritten (mit + Dat, über + Akk)"
+      pos: động từ
+    back:
+      meaning:
+        vi: cãi nhau, tranh cãi
+      examples:
+        - target: Ich habe mich mit meinem Bruder gestritten.
+          translation:
+            vi: Tôi đã cãi nhau với anh trai.
+        - target: Worüber streitet ihr euch?
+          translation:
+            vi: Các bạn cãi nhau về chuyện gì vậy?
+      confusion:
+        vi: "Cãi nhau với ai: mit + Dativ; cãi nhau về chuyện gì: über + Akkusativ. Danh từ: der Streit."
+
+  - key: de:item:b1u02-sich-gewoehnen-an
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich gewöhnen an (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: làm quen với, quen dần với
+      examples:
+        - target: Ich habe mich an das kalte Wetter gewöhnt.
+          translation:
+            vi: Tôi đã quen với thời tiết lạnh.
+        - target: Daran gewöhnst du dich schnell.
+          translation:
+            vi: Bạn sẽ quen với chuyện đó nhanh thôi.
+      confusion:
+        vi: "Quá trình: sich an etwas gewöhnen; trạng thái đã quen: an etwas gewöhnt sein (Ich bin daran gewöhnt)."
+
+  - key: de:item:b1u02-sich-entschuldigen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich entschuldigen (bei + Dat, für + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: xin lỗi (ai, vì điều gì)
+      examples:
+        - target: Ich möchte mich bei dir für gestern entschuldigen.
+          translation:
+            vi: Mình muốn xin lỗi bạn về chuyện hôm qua.
+        - target: Er hat sich für die Verspätung entschuldigt.
+          translation:
+            vi: Anh ấy đã xin lỗi vì đến muộn.
+      confusion:
+        vi: "Người nhận lời xin lỗi đi với bei + Dativ, lý do đi với für + Akkusativ. Câu ngắn Entschuldigung! / Entschuldige! dùng khi xin lỗi nhanh."
+
+  - key: de:item:b1u02-sich-bedanken
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich bedanken (bei + Dat, für + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: cảm ơn (ai, vì điều gì)
+      examples:
+        - target: Ich möchte mich bei Ihnen für Ihre Hilfe bedanken.
+          translation:
+            vi: Tôi muốn cảm ơn ông/bà vì đã giúp đỡ.
+        - target: Hast du dich schon für das Geschenk bedankt?
+          translation:
+            vi: Bạn đã cảm ơn về món quà chưa?
+      confusion:
+        vi: "sich bei jemandem bedanken = danken + Dativ (Ich danke dir). sich bedanken nghe trang trọng hơn một chút."
+
+  - key: de:item:b1u02-sich-unterhalten
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "sich unterhalten, unterhält sich, unterhielt sich, hat sich unterhalten (mit + Dat, über + Akk)"
+      pos: động từ
+    back:
+      meaning:
+        vi: trò chuyện, nói chuyện (với ai, về điều gì)
+      examples:
+        - target: Wir haben uns lange über unsere Kindheit unterhalten.
+          translation:
+            vi: Chúng tôi trò chuyện rất lâu về tuổi thơ.
+        - target: Worüber habt ihr euch unterhalten?
+          translation:
+            vi: Các bạn đã nói chuyện về gì vậy?
+      confusion:
+        vi: "unter- ở đây không tách: wir unterhalten uns, Partizip unterhalten (không có ge-)."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 3 – quan hệ hằng ngày
+  - key: de:item:b1u02-sich-beschaeftigen-mit
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich beschäftigen mit (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: bận bịu với, dành thời gian cho, tìm hiểu về (điều gì)
+      examples:
+        - target: Zurzeit beschäftige ich mich viel mit Fotografie.
+          translation:
+            vi: Dạo này tôi dành nhiều thời gian cho nhiếp ảnh.
+        - target: Womit beschäftigst du dich in deiner Freizeit?
+          translation:
+            vi: Lúc rảnh bạn hay làm gì?
+      confusion:
+        vi: "mit luôn đi với Dativ: Womit? – Damit."
+
+  - key: de:item:b1u02-sich-sorgen-machen-um
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich Sorgen machen um (+ Akk)
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: lo lắng cho (ai, điều gì)
+      examples:
+        - target: Meine Mutter macht sich immer Sorgen um mich.
+          translation:
+            vi: Mẹ tôi lúc nào cũng lo cho tôi.
+        - target: Mach dir keine Sorgen!
+          translation:
+            vi: Đừng lo!
+      confusion:
+        vi: "Đại từ phản thân ở đây là Dativ, hãy học như một cụm cố định: ich mache mir Sorgen, du machst dir Sorgen, er macht sich Sorgen."
+
+  - key: de:item:b1u02-sich-verabreden
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verabreden (mit + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: hẹn gặp (ai)
+      examples:
+        - target: Ich habe mich mit Lisa zum Kaffee verabredet.
+          translation:
+            vi: Tôi đã hẹn Lisa đi uống cà phê.
+        - target: Wollen wir uns für Samstag verabreden?
+          translation:
+            vi: Mình hẹn nhau thứ bảy nhé?
+      confusion:
+        vi: "Danh từ: die Verabredung (cuộc hẹn). Partizip không có ge-: verabredet."
+
+  - key: de:item:b1u02-sich-wundern-ueber
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich wundern über (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: ngạc nhiên, lấy làm lạ (về điều gì)
+      examples:
+        - target: Ich wundere mich über sein Verhalten.
+          translation:
+            vi: Tôi lấy làm lạ về cách cư xử của anh ấy.
+        - target: Wundere dich nicht, wenn er zu spät kommt.
+          translation:
+            vi: Đừng ngạc nhiên nếu anh ấy đến muộn.
+      confusion:
+        vi: "sich wundern thường là ngạc nhiên kèm chút khó hiểu; ngạc nhiên vui vì bất ngờ thì dùng überrascht sein."
+
+  - key: de:item:b1u02-sich-versoehnen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich versöhnen (mit + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: làm lành, làm hòa (với ai)
+      examples:
+        - target: Nach dem Streit haben sie sich schnell wieder versöhnt.
+          translation:
+            vi: Sau trận cãi nhau, họ đã nhanh chóng làm lành.
+        - target: Hast du dich mit deiner Schwester versöhnt?
+          translation:
+            vi: Bạn đã làm lành với chị gái chưa?
+      confusion:
+        vi: "Partizip không có ge-: versöhnt. Làm lành với ai: mit + Dativ."
+
+  - key: de:item:b1u02-nachdenken-ueber
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: nachdenken über (+ Akk), denkt nach, dachte nach, hat nachgedacht
+      pos: động từ
+    back:
+      meaning:
+        vi: suy nghĩ kỹ (về điều gì)
+      examples:
+        - target: Ich muss noch darüber nachdenken.
+          translation:
+            vi: Tôi còn phải suy nghĩ thêm về chuyện đó.
+        - target: Worüber denkst du nach?
+          translation:
+            vi: Bạn đang nghĩ ngợi về chuyện gì vậy?
+      confusion:
+        vi: "Động từ tách: Ich denke darüber nach. Khác denken an + Akk (nghĩ đến, nhớ đến): Ich denke an dich."
+
+  - key: de:item:b1u02-sich-aufregen-ueber
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich aufregen über (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: nổi nóng, bực bội (về điều gì)
+      examples:
+        - target: Reg dich nicht so auf!
+          translation:
+            vi: Đừng nổi nóng như vậy!
+        - target: Mein Vater regt sich über jede Kleinigkeit auf.
+          translation:
+            vi: Bố tôi chuyện nhỏ gì cũng nổi nóng.
+      confusion:
+        vi: "Động từ tách: Ich rege mich auf. Mạnh hơn sich ärgern. Tính từ aufgeregt thường có nghĩa khác: hồi hộp."
+
+  - key: de:item:b1u02-streit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Streit, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc cãi nhau, sự tranh cãi
+      examples:
+        - target: Wir hatten gestern einen großen Streit.
+          translation:
+            vi: Hôm qua chúng tôi cãi nhau to.
+        - target: Nach dem Streit haben wir lange nicht miteinander gesprochen.
+          translation:
+            vi: Sau trận cãi nhau, chúng tôi không nói chuyện với nhau một thời gian dài.
+      confusion:
+        vi: "Số nhiều die Streite ít dùng; nói nhiều vụ tranh chấp thường dùng die Streitigkeiten. Động từ: sich streiten."
+
+  # ================= Bài 4: obwohl / trotzdem, tính từ + giới từ =================
+  - key: de:item:b1u02-g-obwohl-trotzdem
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "obwohl + Nebensatz (Verb am Ende) ↔ trotzdem + Hauptsatz (Verb an Position 2)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "obwohl (mặc dù) mở đầu câu phụ, động từ chia đứng cuối: Ich gehe zur Arbeit, obwohl ich krank bin. trotzdem (dù vậy) là trạng từ trong câu chính: đứng ở vị trí 1 thì động từ theo ngay sau (Trotzdem gehe ich zur Arbeit), hoặc đứng sau động từ (Ich gehe trotzdem zur Arbeit). Tiếng Việt nói \"mặc dù … nhưng …\", còn tiếng Đức không thêm aber sau câu obwohl."
+      examples:
+        - target: Obwohl ich müde bin, gehe ich noch mit dir ins Kino.
+          translation:
+            vi: Mặc dù mệt, mình vẫn đi xem phim với bạn.
+        - target: Ich bin müde. Trotzdem gehe ich noch mit dir ins Kino.
+          translation:
+            vi: Mình mệt. Dù vậy, mình vẫn đi xem phim với bạn.
+      confusion:
+        vi: "Câu obwohl đứng đầu chiếm vị trí 1, nên câu chính bắt đầu ngay bằng động từ: Obwohl es regnet, gehen wir spazieren (không nói …, aber wir gehen spazieren)."
+
+  - key: de:item:b1u02-g-adjektive-praeposition
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Adjektive mit Präposition: stolz auf, eifersüchtig auf, wütend auf, traurig über, verliebt in (+ Akk) · zufrieden mit, enttäuscht von (+ Dat)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nhiều tính từ chỉ cảm xúc đi với một giới từ cố định, và giới từ quyết định cách: stolz auf, eifersüchtig auf, wütend auf, traurig über, verliebt in + Akkusativ; zufrieden mit, enttäuscht von + Dativ. Mẫu thường gặp: sein + tính từ + giới từ + danh từ (Ich bin stolz auf dich). Với vật và sự việc, hỏi và trả lời bằng wo(r)-/da(r)- như với động từ: Worauf bist du stolz? – Darauf bin ich stolz."
+      examples:
+        - target: Meine Eltern sind sehr stolz auf mich.
+          translation:
+            vi: Bố mẹ tôi rất tự hào về tôi.
+        - target: Bist du zufrieden mit deiner neuen Wohnung?
+          translation:
+            vi: Bạn có hài lòng với căn hộ mới không?
+        - target: Er ist enttäuscht von seinem besten Freund.
+          translation:
+            vi: Anh ấy thất vọng về người bạn thân nhất của mình.
+      confusion:
+        vi: "Một số tính từ đổi giới từ theo đối tượng: wütend auf + người (wütend auf meinen Bruder), wütend über + việc (wütend über die Verspätung); enttäuscht von + người, enttäuscht über + việc."
+
+  - key: de:item:b1u02-gefuehl
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gefühl, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảm giác, cảm xúc, tình cảm
+      examples:
+        - target: Ich habe ein gutes Gefühl.
+          translation:
+            vi: Tôi có linh cảm tốt.
+        - target: Er zeigt seine Gefühle nicht gern.
+          translation:
+            vi: Anh ấy không thích bộc lộ cảm xúc.
+      confusion:
+        vi: "Động từ cùng gốc: sich fühlen (cảm thấy) – Ich fühle mich wohl."
+
+  - key: de:item:b1u02-eifersuechtig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: eifersüchtig (auf + Akk)
+      pos: tính từ
+    back:
+      meaning:
+        vi: ghen, ghen tuông
+      examples:
+        - target: Mein Freund ist schnell eifersüchtig.
+          translation:
+            vi: Bạn trai tôi rất dễ ghen.
+        - target: Bist du eifersüchtig auf sie?
+          translation:
+            vi: Bạn ghen với cô ấy à?
+      confusion:
+        vi: "eifersüchtig = ghen vì sợ mất người mình yêu hay bạn thân; neidisch = ghen tị vì muốn có cái người khác có."
+
+  - key: de:item:b1u02-enttaeuscht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: enttäuscht (von + Dat)
+      pos: tính từ
+    back:
+      meaning:
+        vi: thất vọng
+      examples:
+        - target: Ich bin sehr enttäuscht von dir.
+          translation:
+            vi: Mình rất thất vọng về bạn.
+        - target: Sie war enttäuscht, weil niemand gekommen ist.
+          translation:
+            vi: Cô ấy thất vọng vì không ai đến.
+      confusion:
+        vi: "Partizip của enttäuschen (làm ai thất vọng) dùng như tính từ, không có ge-. Danh từ: die Enttäuschung."
+
+  - key: de:item:b1u02-stolz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: stolz (auf + Akk)
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự hào, kiêu hãnh
+      examples:
+        - target: Wir sind stolz auf unsere Tochter.
+          translation:
+            vi: Chúng tôi tự hào về con gái mình.
+        - target: Darauf kannst du stolz sein!
+          translation:
+            vi: Bạn có thể tự hào về điều đó!
+      confusion:
+        vi: "Tiếng Việt \"tự hào về\", tiếng Anh \"proud of\", nhưng tiếng Đức là auf: stolz auf + Akkusativ. Danh từ: der Stolz."
+
+  - key: de:item:b1u02-zufrieden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zufrieden (mit + Dat)
+      pos: tính từ
+    back:
+      meaning:
+        vi: hài lòng
+      examples:
+        - target: Bist du mit deiner Arbeit zufrieden?
+          translation:
+            vi: Bạn có hài lòng với công việc của mình không?
+        - target: Der Chef ist sehr zufrieden mit uns.
+          translation:
+            vi: Sếp rất hài lòng với chúng tôi.
+      confusion:
+        vi: "Trái nghĩa: unzufrieden. Cụm mit + Dativ có thể đứng trước hoặc sau tính từ: mit der Arbeit zufrieden / zufrieden mit der Arbeit."
+
+  - key: de:item:b1u02-wuetend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: wütend (auf + Akk)
+      pos: tính từ
+    back:
+      meaning:
+        vi: giận dữ, tức giận
+      examples:
+        - target: Warum bist du so wütend?
+          translation:
+            vi: Sao bạn tức giận thế?
+        - target: Sie ist wütend auf ihren Bruder.
+          translation:
+            vi: Cô ấy giận anh trai mình.
+      confusion:
+        vi: "wütend auf + người; wütend über + việc (wütend über die Verspätung). Danh từ: die Wut."
+
+  - key: de:item:b1u02-traurig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: traurig (über + Akk)
+      pos: tính từ
+    back:
+      meaning:
+        vi: buồn
+      examples:
+        - target: Ich bin traurig, weil mein bester Freund wegzieht.
+          translation:
+            vi: Tôi buồn vì người bạn thân nhất sắp chuyển đi.
+        - target: Sie war traurig über die schlechte Nachricht.
+          translation:
+            vi: Cô ấy buồn vì tin xấu.
+      confusion:
+        vi: "Buồn vì điều gì: traurig über + Akkusativ hoặc câu weil."
+
+  - key: de:item:b1u02-einsam
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einsam
+      pos: tính từ
+    back:
+      meaning:
+        vi: cô đơn
+      examples:
+        - target: Am Anfang habe ich mich in Deutschland sehr einsam gefühlt.
+          translation:
+            vi: Lúc đầu ở Đức tôi cảm thấy rất cô đơn.
+        - target: Viele alte Menschen sind einsam.
+          translation:
+            vi: Nhiều người già cô đơn.
+      confusion:
+        vi: "einsam = cô đơn (cảm xúc); allein = một mình (có thể vẫn vui): Ich wohne allein, aber ich bin nicht einsam."
+
+  - key: de:item:b1u02-gluecklich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: glücklich
+      pos: tính từ
+    back:
+      meaning:
+        vi: hạnh phúc
+      examples:
+        - target: Die beiden sind sehr glücklich zusammen.
+          translation:
+            vi: Hai người họ rất hạnh phúc bên nhau.
+        - target: Ich bin so glücklich, dass du da bist!
+          translation:
+            vi: Mình hạnh phúc quá vì có bạn ở đây!
+      confusion:
+        vi: "glücklich = hạnh phúc (sâu, lâu dài); froh = vui, mừng vì một việc cụ thể (Ich bin froh, dass es geklappt hat)."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 4 – cảm xúc
+  - key: de:item:b1u02-wut
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wut (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơn giận, sự giận dữ
+      examples:
+        - target: Seine Wut war schnell wieder vorbei.
+          translation:
+            vi: Cơn giận của anh ấy qua đi nhanh.
+        - target: Ich konnte meine Wut kaum kontrollieren.
+          translation:
+            vi: Tôi gần như không kìm được cơn giận.
+      confusion:
+        vi: "Tính từ: wütend. Nói mình đang giận thường dùng tính từ: Ich bin wütend."
+
+  - key: de:item:b1u02-eifersucht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Eifersucht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ghen tuông
+      examples:
+        - target: Eifersucht kann eine Beziehung kaputt machen.
+          translation:
+            vi: Ghen tuông có thể phá hỏng một mối quan hệ.
+        - target: Ich verstehe seine Eifersucht nicht.
+          translation:
+            vi: Tôi không hiểu sao anh ấy ghen như vậy.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối (die Sucht), nên là giống cái. Tính từ: eifersüchtig."
+
+  - key: de:item:b1u02-enttaeuschung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Enttäuschung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thất vọng; điều gây thất vọng
+      examples:
+        - target: Das Konzert war eine große Enttäuschung.
+          translation:
+            vi: Buổi hòa nhạc thật đáng thất vọng.
+        - target: Ich verstehe deine Enttäuschung.
+          translation:
+            vi: Mình hiểu nỗi thất vọng của bạn.
+      confusion:
+        vi: "Tính từ: enttäuscht (người thấy thất vọng). Sự việc gây thất vọng: Das war eine Enttäuschung."
+
+  - key: de:item:b1u02-erleichtert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erleichtert
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhẹ nhõm
+      examples:
+        - target: Nach der Prüfung war ich sehr erleichtert.
+          translation:
+            vi: Thi xong tôi thấy rất nhẹ nhõm.
+        - target: Zum Glück ist nichts passiert – ich bin so erleichtert!
+          translation:
+            vi: May mà không có chuyện gì – mình nhẹ cả người!
+      confusion:
+        vi: "Partizip của erleichtern (làm nhẹ bớt) dùng như tính từ: erleichtert sein."
+
+  - key: de:item:b1u02-nervoes
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: nervös
+      ipa: /nɛʁˈvøːs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: hồi hộp, lo lắng, bồn chồn
+      examples:
+        - target: Vor der Prüfung bin ich immer nervös.
+          translation:
+            vi: Trước kỳ thi tôi lúc nào cũng hồi hộp.
+        - target: Warum bist du so nervös?
+          translation:
+            vi: Sao bạn bồn chồn thế?
+      pronunciation_note:
+        vi: "v trong từ gốc Latinh này đọc như \"v\" tiếng Việt (không như f), trọng âm ở -vös."
+
+  - key: de:item:b1u02-freude
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Freude, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: niềm vui
+      examples:
+        - target: Das Geschenk hat ihr große Freude gemacht.
+          translation:
+            vi: Món quà làm cô ấy rất vui.
+        - target: Ich habe viel Freude an meiner Arbeit.
+          translation:
+            vi: Tôi rất vui với công việc của mình.
+      confusion:
+        vi: "Động từ cùng gốc: sich freuen auf/über (A2). Freude an + Dativ = niềm vui với việc gì."
+
+  - key: de:item:b1u02-weinen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: weinen
+      pos: động từ
+    back:
+      meaning:
+        vi: khóc
+      examples:
+        - target: Bei traurigen Filmen weine ich oft.
+          translation:
+            vi: Xem phim buồn tôi hay khóc.
+        - target: Warum weint das Kind?
+          translation:
+            vi: Sao đứa bé khóc vậy?
+      confusion:
+        vi: "Động từ có quy tắc: weinte, hat geweint. Trái nghĩa: lachen (cười)."
+
+  - key: de:item:b1u02-laune
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Laune, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tâm trạng, tính khí lúc đó
+      examples:
+        - target: Heute habe ich gute Laune.
+          translation:
+            vi: Hôm nay tâm trạng tôi rất tốt.
+        - target: Warum hast du so schlechte Laune?
+          translation:
+            vi: Sao hôm nay bạn khó chịu thế?
+      confusion:
+        vi: "Thường đi với haben và không có mạo từ: gute/schlechte Laune haben."
+
+  - key: de:item:b1u02-neidisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: neidisch (auf + Akk)
+      pos: tính từ
+    back:
+      meaning:
+        vi: ghen tị
+      examples:
+        - target: Ich bin ein bisschen neidisch auf deinen Urlaub.
+          translation:
+            vi: Mình hơi ghen tị với kỳ nghỉ của bạn.
+        - target: Sei nicht neidisch!
+          translation:
+            vi: Đừng ghen tị!
+      confusion:
+        vi: "neidisch = muốn có cái người khác có (đồ, thành công, kỳ nghỉ); eifersüchtig = ghen vì sợ mất người mình yêu."

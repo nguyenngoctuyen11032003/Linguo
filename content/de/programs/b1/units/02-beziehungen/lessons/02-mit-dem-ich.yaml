@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u02-mit-dem-ich
+order_index: 2
+level: b1
+title:
+  vi: Người mà tôi tin tưởng – quan hệ Dativ và có giới từ (Die Frau, mit der ich …)
+objectives:
+  - vi: Dùng mệnh đề quan hệ ở Dativ (dem, der, dem, denen).
+  - vi: Dùng mệnh đề quan hệ có giới từ đứng đầu (die Frau, mit der ich …; der Film, über den wir …).
+  - vi: Kể về tình yêu, hôn nhân và chia tay bằng câu phức; đọc hiểu một đoạn kể ngắn.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u02-relativsatz]
+items:
+  - item: de:item:b1u02-g-relativsatz-dativ
+  - item: de:item:b1u02-g-relativsatz-praeposition
+  - item: de:item:b1u02-liebe
+  - item: de:item:b1u02-sich-verlieben-in
+  - item: de:item:b1u02-sich-trennen
+  - item: de:item:b1u02-trennung
+  - item: de:item:b1u02-ehe
+  - item: de:item:b1u02-ehemann
+  - item: de:item:b1u02-ehefrau
+  - item: de:item:b1u02-zusammenziehen
+  - item: de:item:b1u02-sich-verloben
+  - item: de:item:b1u02-paar
+  - item: de:item:b1u02-kuessen
+  - item: de:item:b1u02-umarmen
+  - item: de:item:b1u02-fernbeziehung
+  - item: de:item:b1u02-liebeskummer
+  - item: de:item:b1u02-sich-scheiden-lassen
+  - item: de:item:b1u02-single
+  - item: de:item:b1u02-g-relativpronomen-wahl
+    role: reuse
+  - item: de:item:b1u02-vertrauen
+    role: reuse
+  - item: de:item:b1u02-neugierig
+    role: reuse
+  - item: de:item:b1u01-g-nachdem
+    role: reuse
+  - item: de:item:a2u01-heiraten
+    role: reuse
+  - item: de:item:a2u07-hochzeit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được về tình yêu và hôn nhân bằng câu phức, ví dụ: \"Das ist die Frau, in die ich mich verliebt habe und mit der ich seit drei Jahren zusammenlebe.\""
+  - type: explain
+    text:
+      vi: "Khi danh từ đóng vai Dativ trong mệnh đề quan hệ – ví dụ là người nhận sau helfen, danken, vertrauen, erzählen – đại từ quan hệ ở Dativ: dem (giống đực), der (giống cái), dem (giống trung), denen (số nhiều). Mẹo: tách thành câu riêng – Ich vertraue der Kollegin → die Kollegin, der ich vertraue."
+  - type: explain
+    text:
+      vi: "Dativ số nhiều là denen, không phải den như mạo từ: die Freunde, denen ich helfe. Trong ba cách đã học, đây là dạng duy nhất khác hẳn mạo từ xác định, nên người học hay viết nhầm."
+  - type: explain
+    text:
+      vi: "Nếu động từ trong mệnh đề cần giới từ (sprechen über, sich verlieben in, zusammenleben mit), giới từ đứng ngay trước đại từ quan hệ, ở đầu mệnh đề: die Frau, mit der ich zusammenlebe. Giới từ quyết định cách: mit + Dativ → mit dem/der/denen; über + Akkusativ → der Film, über den wir sprechen; sich verlieben in + Akkusativ → der Mann, in den sie sich verliebt hat."
+  - type: explain
+    text:
+      vi: "Tiếng Việt và tiếng Anh có thể để giới từ ở cuối (\"người mà tôi sống cùng\", the woman I live with), nhưng tiếng Đức thì không: giới từ phải đứng đầu mệnh đề, trước đại từ quan hệ. Sai: die Frau, der ich mit wohne; đúng: die Frau, mit der ich wohne."
+  - type: deep_explain
+    text:
+      vi: "Với nơi chốn, có thể thay giới từ + đại từ bằng wo: die Stadt, in der wir uns kennengelernt haben = die Stadt, wo wir uns kennengelernt haben; với người thì không. Đừng nhầm giới từ với tiền tố tách của động từ: die Freundin, mit der ich ins Kino gehe (giới từ mit + Dativ) khác die Freundin, die ich mitnehme (động từ mitnehmen + Akkusativ). Về từ vựng: sich trennen von + Dativ (chia tay ai) khác trennen không có sich ở A2 (phân loại rác); zusammenziehen dùng sein ở Perfekt (Wir sind zusammengezogen); sich scheiden lassen có Perfekt hat sich scheiden lassen, giống modal. Cụm Liebe auf den ersten Blick nghĩa là tình yêu sét đánh."
+  - type: example
+    target: Das ist meine Kollegin Anna, der ich alles erzählen kann.
+    target_lang: de
+    translation:
+      vi: Đây là Anna, chị đồng nghiệp mà tôi có thể kể mọi chuyện.
+    note:
+      vi: "jemandem etwas erzählen: người nghe ở Dativ → die Kollegin → der. Động từ modal kann đứng cuối mệnh đề."
+  - type: example
+    target: Die Nachbarn, denen wir beim Umzug geholfen haben, haben uns zum Essen eingeladen.
+    target_lang: de
+    translation:
+      vi: Những người hàng xóm mà chúng tôi đã giúp chuyển nhà đã mời chúng tôi đi ăn.
+    note:
+      vi: "helfen + Dativ, số nhiều → denen (không phải den)."
+  - type: example
+    target: Der Mann, in den sie sich verliebt hat, wohnt in Wien.
+    target_lang: de
+    translation:
+      vi: Người đàn ông mà cô ấy phải lòng sống ở Wien.
+    note:
+      vi: "sich verlieben in + Akkusativ → in den (giống đực). Giới từ in đứng đầu mệnh đề, trước den."
+  - type: example
+    target: Thomas ist der Mann, mit dem ich seit zehn Jahren verheiratet bin.
+    target_lang: de
+    translation:
+      vi: Thomas là người đàn ông mà tôi đã kết hôn được mười năm.
+    note:
+      vi: "verheiratet sein mit + Dativ → mit dem."
+  - type: example
+    target: Die Trennung, über die alle sprechen, war für beide sehr schwer.
+    target_lang: de
+    translation:
+      vi: Cuộc chia tay mà ai cũng bàn tán rất khó khăn với cả hai người.
+    note:
+      vi: "sprechen über + Akkusativ → über die (die Trennung giống cái)."
+  - type: example
+    target: Wann seid ihr zusammengezogen? – Vor einem Jahr, kurz nachdem wir uns verlobt hatten.
+    target_lang: de
+    translation:
+      vi: Khi nào hai bạn dọn về sống chung? – Cách đây một năm, ngay sau khi chúng mình đính hôn.
+    note:
+      vi: "Hỏi một cặp bạn bè (ihr). zusammenziehen dùng sein; câu nachdem dùng Plusquamperfekt (B1U01)."
+  - type: common_mistake
+    wrong: Die Freunde, den ich helfe, sind sehr nett.
+    right: Die Freunde, denen ich helfe, sind sehr nett.
+    target_lang: de
+    note:
+      vi: "Dativ số nhiều của đại từ quan hệ là denen; den là mạo từ."
+  - type: common_mistake
+    wrong: Das ist der Film, den wir gestern über gesprochen haben.
+    right: Das ist der Film, über den wir gestern gesprochen haben.
+    target_lang: de
+    note:
+      vi: "Không để giới từ ở cuối như tiếng Anh: giới từ über đứng đầu mệnh đề, trước đại từ quan hệ."
+  - type: common_mistake
+    wrong: Die Frau, die ich vertraue, ist meine Schwester.
+    right: Die Frau, der ich vertraue, ist meine Schwester.
+    target_lang: de
+    note:
+      vi: "vertrauen đi với Dativ, nên đại từ quan hệ giống cái là der, không phải die."
+  - type: summary
+    points:
+      - vi: "Dativ: dem, der, dem, denen – số nhiều là denen."
+      - vi: "Dativ sau helfen, danken, vertrauen, gehören, erzählen (người nghe) …"
+      - vi: "Giới từ + đại từ quan hệ ở đầu mệnh đề: mit dem, über den, in die …; giới từ quyết định cách."
+      - vi: "Không để giới từ ở cuối mệnh đề như tiếng Anh."
+      - vi: "Nơi chốn: in der … = wo …; với người không dùng wo."
+      - vi: "Từ vựng: die Liebe, sich verlieben in, sich trennen von, die Trennung, die Ehe, der Ehemann, die Ehefrau, zusammenziehen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u02l2-mcq-der-vertraue
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-dativ
+    prompt:
+      stem: "Chọn đại từ quan hệ đúng: Die Kollegin, ___ ich am meisten vertraue, heißt Mai."
+      stem_lang: vi
+      options:
+        - { id: v2a, text: "der", lang: de }
+        - { id: v6b, text: "die", lang: de }
+        - { id: v9c, text: "den", lang: de }
+        - { id: v4d, text: "denen", lang: de }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "vertrauen đi với Dativ, và die Kollegin giống cái số ít → der. die là Nominativ/Akkusativ; den dùng cho giống đực; denen là Dativ số nhiều."
+    display_answer: der
+
+  - key: de:exercise:b1u02l2-mcq-denen-umzug
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-dativ
+    prompt:
+      stem: "Chọn đại từ quan hệ đúng: Meine Freunde, ___ ich beim Umzug geholfen habe, haben mir Blumen geschenkt."
+      stem_lang: vi
+      options:
+        - { id: u3a, text: "denen", lang: de }
+        - { id: u7b, text: "den", lang: de }
+        - { id: u1c, text: "die", lang: de }
+        - { id: u5d, text: "dem", lang: de }
+    answer:
+      correct_option_id: u3a
+    explanation:
+      vi: "helfen đi với Dativ, và Freunde là số nhiều → denen. den là mạo từ (hoặc Akkusativ giống đực), die là Nominativ/Akkusativ số nhiều, dem là Dativ số ít."
+    display_answer: denen
+
+  - key: de:exercise:b1u02l2-mcq-lesen-staedte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-fernbeziehung
+    prompt:
+      stem: "Vor fünf Jahren habe ich Jonas kennengelernt und mich sofort in ihn verliebt. Zwei Jahre lang hatten wir eine Fernbeziehung: Ich habe in Hamburg gewohnt, er in München. Dann hat er eine Stelle in Hamburg gefunden, und wir sind zusammengezogen. Letzten Sommer haben wir geheiratet. Auf der Hochzeit war auch Lena, mit der Jonas seit der Schulzeit befreundet ist. — Richtig oder falsch? Am Anfang haben die beiden in verschiedenen Städten gewohnt."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Văn bản viết: Zwei Jahre lang hatten wir eine Fernbeziehung: Ich habe in Hamburg gewohnt, er in München – hai năm đầu họ yêu xa, mỗi người ở một thành phố. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u02l2-mcq-lesen-lena
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-praeposition
+    prompt:
+      stem: "Vor fünf Jahren habe ich Jonas kennengelernt und mich sofort in ihn verliebt. Zwei Jahre lang hatten wir eine Fernbeziehung: Ich habe in Hamburg gewohnt, er in München. Dann hat er eine Stelle in Hamburg gefunden, und wir sind zusammengezogen. Letzten Sommer haben wir geheiratet. Auf der Hochzeit war auch Lena, mit der Jonas seit der Schulzeit befreundet ist. — Richtig oder falsch? Jonas hat Lena erst auf der Hochzeit kennengelernt."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Lena, mit der Jonas seit der Schulzeit befreundet ist – Lena là người mà Jonas làm bạn từ thời đi học, nên không phải mới quen ở đám cưới. Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u02l2-fill-dem-denen-der
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativsatz-dativ
+    prompt:
+      template: "Thomas ist der Mann, mit {{b1}} ich seit zehn Jahren verheiratet bin. Unsere Kinder, {{b2}} er jeden Abend Geschichten vorliest, lieben ihn sehr. Und meine Schwester, {{b3}} ich alles erzähle, findet ihn auch toll."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [dem, welchem]
+        b2: [denen, welchen]
+        b3: [der, welcher]
+    known_wrong:
+      - answer: den
+        feedback_vi: "den là mạo từ hoặc Akkusativ giống đực. mit + Dativ giống đực → dem; Dativ số nhiều của đại từ quan hệ → denen."
+        error_tag: relative_pronoun
+      - answer: die
+        feedback_vi: "erzählen + Dativ (người nghe): meine Schwester → der, không phải die."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Ô 1: mit + Dativ, der Mann → dem. Ô 2: jemandem etwas vorlesen – người nghe ở Dativ, số nhiều → denen. Ô 3: jemandem etwas erzählen – Dativ, giống cái → der."
+    display_answer: "Thomas ist der Mann, mit dem ich seit zehn Jahren verheiratet bin. Unsere Kinder, denen er jeden Abend Geschichten vorliest, lieben ihn sehr. Und meine Schwester, der ich alles erzähle, findet ihn auch toll."
+
+  - key: de:exercise:b1u02l2-fill-in-dem-ueber-die
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativsatz-praeposition
+    prompt:
+      template: "Erinnerst du dich an das Café, in {{b1}} wir uns kennengelernt haben? Und an die Band, über {{b2}} wir den ganzen Abend gesprochen haben? Die Freunde, mit {{b3}} wir damals dort waren, sehen wir heute noch jede Woche."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [dem, welchem]
+        b2: [die, welche]
+        b3: [denen, welchen]
+    known_wrong:
+      - answer: das
+        feedback_vi: "Ở đâu? (Wo?) → in + Dativ: das Café → in dem. in das chỉ hướng đi vào."
+        error_tag: case_dat_akk
+      - answer: der
+        feedback_vi: "sprechen über + Akkusativ: die Band → über die, không phải Dativ der."
+        error_tag: case_dat_akk
+      - answer: den
+        feedback_vi: "mit + Dativ số nhiều → denen; den là mạo từ (mit den Freunden)."
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Giới từ đứng đầu mệnh đề và quyết định cách. Ô 1: quen nhau ở đâu → in + Dativ → in dem. Ô 2: sprechen über + Akkusativ → über die. Ô 3: mit + Dativ số nhiều → mit denen."
+    display_answer: "Erinnerst du dich an das Café, in dem wir uns kennengelernt haben? Und an die Band, über die wir den ganzen Abend gesprochen haben? Die Freunde, mit denen wir damals dort waren, sehen wir heute noch jede Woche."
+
+  - key: de:exercise:b1u02l2-tr-in-den-verliebt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-sich-verlieben-in
+    prompt:
+      source_text: "Đó là người đàn ông mà cô ấy đã phải lòng. (dùng sich verlieben in, Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das ist der Mann, in den sie sich verliebt hat.
+        - Das ist der Mann, in welchen sie sich verliebt hat.
+        - Das ist der Mann, in den sie sich damals verliebt hat.
+    known_wrong:
+      - answer: Das ist der Mann, in dem sie sich verliebt hat.
+        feedback_vi: sich verlieben in đi với Akkusativ – in den (giống đực).
+        error_tag: case_dat_akk
+      - answer: Das ist der Mann, den sie sich in verliebt hat.
+        feedback_vi: Giới từ in phải đứng đầu mệnh đề, trước đại từ quan hệ – in den sie sich verliebt hat.
+        error_tag: preposition
+      - answer: Das ist der Mann, in den sie hat sich verliebt.
+        feedback_vi: Trong mệnh đề quan hệ, động từ chia hat đứng cuối – … sich verliebt hat.
+        error_tag: verb_position
+      - answer: Das ist der Mann, in den sie verliebt hat.
+        feedback_vi: verlieben là động từ phản thân – sie hat sich verliebt.
+        error_tag: reflexive_missing
+    explanation:
+      vi: "sich verlieben in + Akkusativ, der Mann → in den. Giới từ đứng đầu mệnh đề; trong mệnh đề, sich đứng sau chủ ngữ sie, và hat đứng cuối sau Partizip verliebt."
+    display_answer: Das ist der Mann, in den sie sich verliebt hat.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u02l2-wb-mit-der
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativsatz-praeposition
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đó là người phụ nữ mà tôi đã sống cùng nhiều năm nay.\""
+      tokens:
+        - { id: f-mit, text: mit }
+        - { id: f-frau, text: Frau }
+        - { id: f-jahren, text: Jahren }
+        - { id: f-das, text: Das }
+        - { id: f-zusammenlebe, text: zusammenlebe }
+        - { id: f-der, text: der }
+        - { id: f-komma, text: "," }
+        - { id: f-ist, text: ist }
+        - { id: f-seit, text: seit }
+        - { id: f-die, text: die }
+        - { id: f-ich, text: ich }
+    answer:
+      orders:
+        - [f-das, f-ist, f-die, f-frau, f-komma, f-mit, f-der, f-ich, f-seit, f-jahren, f-zusammenlebe]
+    explanation:
+      vi: "zusammenleben mit + Dativ: giới từ mit đứng đầu mệnh đề, rồi đại từ quan hệ Dativ giống cái der. Động từ chia zusammenlebe đứng cuối; seit Jahren = nhiều năm nay (vẫn còn tiếp diễn, nên dùng hiện tại)."
+    display_answer: Das ist die Frau, mit der ich seit Jahren zusammenlebe.
+
+  - key: de:exercise:b1u02l2-tr-von-dem-getrennt
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u02-sich-trennen
+    prompt:
+      source_text: Das ist der Freund, von dem sie sich letztes Jahr getrennt hat.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đó là người bạn trai mà cô ấy đã chia tay năm ngoái.
+        - Đó là bạn trai mà cô ấy đã chia tay năm ngoái.
+        - Đó là người bạn trai mà cô ấy chia tay năm ngoái.
+        - Đó là người bạn trai cô ấy đã chia tay năm ngoái.
+        - Đó là người bạn trai cô ấy chia tay năm ngoái.
+        - Đây là người bạn trai mà cô ấy đã chia tay năm ngoái.
+        - Đó là anh bạn trai mà cô ấy đã chia tay năm ngoái.
+        - Đó là người yêu cũ mà cô ấy đã chia tay năm ngoái.
+        - Đó là người mà cô ấy đã chia tay năm ngoái.
+        - Đó là bạn trai cũ mà cô ấy đã chia tay năm ngoái.
+        - Đó là người bạn trai mà năm ngoái cô ấy đã chia tay.
+        - Đó là người bạn trai mà chị ấy đã chia tay năm ngoái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đó là người bạn trai mà cô ấy đã quen năm ngoái.
+        feedback_vi: "sich trennen von = chia tay ai, không phải làm quen (kennenlernen)."
+        error_tag: meaning
+    explanation:
+      vi: "sich trennen von + Dativ = chia tay ai; der Freund → von dem. Ở đây der Freund nghĩa là bạn trai (người yêu). letztes Jahr = năm ngoái."
+    display_answer: Đó là người bạn trai mà cô ấy đã chia tay năm ngoái.
+
+  - key: de:exercise:b1u02l2-mcq-kinder-denen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativsatz-dativ
+    prompt:
+      stem: "Câu nào đúng? (Những đứa trẻ mà tôi dạy tiếng Đức rất tò mò.)"
+      stem_lang: vi
+      options:
+        - { id: c5a, text: "Die Kinder, denen ich Deutsch beibringe, sind sehr neugierig.", lang: de }
+        - { id: c9b, text: "Die Kinder, den ich Deutsch beibringe, sind sehr neugierig.", lang: de }
+        - { id: c2c, text: "Die Kinder, die ich Deutsch beibringe, sind sehr neugierig.", lang: de }
+        - { id: c7d, text: "Die Kinder, denen ich beibringe Deutsch, sind sehr neugierig.", lang: de }
+    answer:
+      correct_option_id: c5a
+    explanation:
+      vi: "jemandem etwas beibringen: người học ở Dativ, số nhiều → denen. den là mạo từ, die là Akkusativ; và động từ tách beibringe phải đứng cuối mệnh đề, viết liền."
+    display_answer: Die Kinder, denen ich Deutsch beibringe, sind sehr neugierig.

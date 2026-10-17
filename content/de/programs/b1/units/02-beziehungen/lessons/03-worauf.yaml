@@ -1,0 +1,407 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u02-worauf
+order_index: 3
+level: b1
+title:
+  vi: Bạn mong điều gì? – darauf/worauf (Worauf freust du dich?)
+objectives:
+  - vi: Dùng da(r)- + giới từ (darauf, damit, darüber) để nói về vật, sự việc đã nhắc tới, và wo(r)- + giới từ để hỏi.
+  - vi: Phân biệt với người – giới từ + đại từ (auf ihn, mit ihr, auf wen, mit wem).
+  - vi: Nói mình quan tâm, bực mình, quen với, lo cho điều gì hay ai bằng các động từ + giới từ ở B1.
+estimated_minutes: 19
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b1u02-mit-dem-ich]
+items:
+  - item: de:item:b1u02-g-pronominaladverbien
+  - item: de:item:b1u02-g-verben-praeposition-b1
+  - item: de:item:b1u02-sich-aergern-ueber
+  - item: de:item:b1u02-sich-verlassen-auf
+  - item: de:item:b1u02-sich-kuemmern-um
+  - item: de:item:b1u02-sich-streiten
+  - item: de:item:b1u02-sich-gewoehnen-an
+  - item: de:item:b1u02-sich-entschuldigen
+  - item: de:item:b1u02-sich-bedanken
+  - item: de:item:b1u02-sich-unterhalten
+  - item: de:item:b1u02-sich-beschaeftigen-mit
+  - item: de:item:b1u02-sich-sorgen-machen-um
+  - item: de:item:b1u02-sich-verabreden
+  - item: de:item:b1u02-sich-wundern-ueber
+  - item: de:item:b1u02-sich-versoehnen
+  - item: de:item:b1u02-nachdenken-ueber
+  - item: de:item:b1u02-sich-aufregen-ueber
+  - item: de:item:b1u02-streit
+  - item: de:item:a2u08-g-verben-praeposition
+    role: reuse
+  - item: de:item:a2u04-g-reflexiv-akk
+    role: reuse
+  - item: de:item:a2u08-sich-freuen-auf
+    role: reuse
+  - item: de:item:a2u08-warten-auf
+    role: reuse
+  - item: de:item:a2u08-denken-an
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hỏi và nói được mình bực mình, quen với hay lo cho điều gì và ai, ví dụ: \"Worüber ärgerst du dich? – Über den Lärm. Darüber ärgere ich mich jeden Tag.\""
+  - type: explain
+    text:
+      vi: "Nhiều động từ phản thân đi với một giới từ cố định: sich ärgern über, sich verlassen auf, sich kümmern um, sich gewöhnen an (đều + Akkusativ); sich streiten mit, sich unterhalten mit (+ Dativ). Giới từ thường khác tiếng Việt (bực về → über, lo cho → um), nên hãy học cả cụm cùng cách: sich kümmern um + Akkusativ."
+  - type: explain
+    text:
+      vi: "Khi đối tượng là vật hay sự việc đã được nhắc tới, tiếng Đức không nói giới từ + es mà ghép da(r)- với giới từ: Ich freue mich auf die Ferien → Ich freue mich darauf. Thêm r khi giới từ bắt đầu bằng nguyên âm (darauf, darüber, daran, darum), không thêm khi bắt đầu bằng phụ âm (damit, dafür, davon)."
+  - type: explain
+    text:
+      vi: "Câu hỏi về vật và sự việc dùng wo(r)- + giới từ: Worauf wartest du? Worüber sprecht ihr? Womit beschäftigst du dich? Khi hỏi và nói về người, giữ giới từ + đại từ: Auf wen wartest du? – Auf meine Freundin. Ich warte auf sie (không nói darauf)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt dùng \"chuyện đó, cái đó\" cho mọi thứ (tôi quen với chuyện đó rồi), còn tiếng Đức gói vào một từ: Daran habe ich mich gewöhnt. Hãy nhớ: da(r)-/wo(r)- dành cho vật và sự việc; với người dùng auf ihn, mit ihr, an wen …"
+  - type: deep_explain
+    text:
+      vi: "Khi nói, nhiều người Đức hỏi bằng giới từ + was (Auf was wartest du? Über was sprecht ihr?); cách này rất phổ biến trong khẩu ngữ, nhưng trong văn viết chuẩn nên dùng worauf, worüber. Nếu chưa biết câu trả lời là người hay vật, câu hỏi Worauf wartest du? vẫn tự nhiên, và câu trả lời có thể là Auf meine Freundin. darauf, daran … còn có thể báo trước một câu dass: Ich freue mich darauf, dass du kommst. sich streiten và sich unterhalten là động từ mạnh: stritt – hat gestritten, unterhielt – hat unterhalten (không có ge- vì unter- ở đây không tách). sich Sorgen machen um dùng đại từ phản thân Dativ (Ich mache mir Sorgen um dich), hãy học như một cụm cố định."
+  - type: example
+    target: Worauf freust du dich am meisten? – Auf den Sommer. Darauf freue ich mich schon lange.
+    target_lang: de
+    translation:
+      vi: Bạn mong điều gì nhất? – Mùa hè. Mình mong nó lâu lắm rồi.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). sich freuen auf → worauf (hỏi), darauf (thay cho auf den Sommer)."
+  - type: example
+    target: Mit wem hast du dich gestritten? – Mit meinem Bruder. Ich habe mich schon wieder mit ihm gestritten.
+    target_lang: de
+    translation:
+      vi: Bạn cãi nhau với ai thế? – Với anh trai mình. Mình lại cãi nhau với anh ấy rồi.
+    note:
+      vi: "Với người: mit wem (hỏi), mit ihm (trả lời) – không dùng womit/damit."
+  - type: example
+    target: Worüber ärgerst du dich? – Über die laute Musik von nebenan. Darüber ärgere ich mich jeden Abend.
+    target_lang: de
+    translation:
+      vi: Bạn bực mình vì chuyện gì? – Vì tiếng nhạc to từ nhà bên. Tối nào mình cũng bực vì chuyện đó.
+    note:
+      vi: "über bắt đầu bằng nguyên âm nên có r: worüber, darüber."
+  - type: example
+    target: Hast du dich schon an das Wetter in Deutschland gewöhnt? – Nein, daran gewöhne ich mich nie!
+    target_lang: de
+    translation:
+      vi: Bạn đã quen với thời tiết ở Đức chưa? – Chưa, mình sẽ chẳng bao giờ quen nổi!
+    note:
+      vi: "sich gewöhnen an + Akkusativ → daran. Hiện tại dùng cho tương lai: gewöhne ich mich nie."
+  - type: example
+    target: Kann ich mich auf dich verlassen? – Natürlich, auf mich kannst du dich immer verlassen.
+    target_lang: de
+    translation:
+      vi: Mình có thể trông cậy vào bạn không? – Tất nhiên, bạn luôn có thể trông cậy vào mình.
+    note:
+      vi: "Người → auf dich, auf mich. auf mich đứng đầu nên động từ kannst ở vị trí 2."
+  - type: example
+    target: Wer kümmert sich um eure Wohnung, wenn ihr im Urlaub seid? – Unsere Nachbarin kümmert sich darum.
+    target_lang: de
+    translation:
+      vi: Ai trông căn hộ cho các bạn khi các bạn đi nghỉ? – Chị hàng xóm trông giúp.
+    note:
+      vi: "sich kümmern um + Akkusativ; die Wohnung là vật → darum."
+  - type: common_mistake
+    wrong: Ich freue mich auf es.
+    right: Ich freue mich darauf.
+    target_lang: de
+    note:
+      vi: "Vật và sự việc: không dùng giới từ + es mà dùng da(r)- + giới từ."
+  - type: common_mistake
+    wrong: Wartest du auf Anna? – Ja, ich warte darauf.
+    right: Wartest du auf Anna? – Ja, ich warte auf sie.
+    target_lang: de
+    note:
+      vi: "Anna là người, nên dùng giới từ + đại từ: auf sie."
+  - type: common_mistake
+    wrong: Ich kümmere mich für die Kinder.
+    right: Ich kümmere mich um die Kinder.
+    target_lang: de
+    note:
+      vi: "\"lo cho\" trong tiếng Việt dễ khiến bạn dùng für, nhưng cụm cố định là sich kümmern um."
+  - type: common_mistake
+    wrong: Auf meine Schwester kann ich immer verlassen.
+    right: Auf meine Schwester kann ich mich immer verlassen.
+    target_lang: de
+    note:
+      vi: "Nghĩa \"tin cậy\" cần đại từ phản thân: sich verlassen auf. Không có sich, verlassen nghĩa là rời bỏ."
+  - type: summary
+    points:
+      - vi: "Động từ + giới từ: học cả cụm và cách (sich ärgern über + Akk, sich streiten mit + Dat)."
+      - vi: "Vật/sự việc: da(r)- + giới từ (darauf, damit, darüber); hỏi: wo(r)- + giới từ (worauf, womit, worüber)."
+      - vi: "Có r khi giới từ bắt đầu bằng nguyên âm: darauf, daran, darum, worüber."
+      - vi: "Người: giới từ + đại từ (auf ihn, mit ihr); hỏi: auf wen, mit wem."
+      - vi: "Không nói auf es, mit es; khi nói thường nghe Auf was …?, văn viết dùng Worauf …?"
+      - vi: "Từ vựng: sich verlassen auf, sich kümmern um, sich gewöhnen an, sich entschuldigen/bedanken bei … für …, sich unterhalten über."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u02l3-mcq-darauf-party
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-pronominaladverbien
+    prompt:
+      stem: "Chọn từ đúng: Freust du dich auf die Party? – Ja, ich freue mich sehr ___."
+      stem_lang: vi
+      options:
+        - { id: p2a, text: "darauf", lang: de }
+        - { id: p6b, text: "auf es", lang: de }
+        - { id: p9c, text: "worauf", lang: de }
+        - { id: p4d, text: "dafür", lang: de }
+    answer:
+      correct_option_id: p2a
+    explanation:
+      vi: "die Party là sự việc đã nhắc tới → da(r)- + auf = darauf. Không nói auf es; worauf dùng để hỏi; dafür sai giới từ (sich freuen auf)."
+    display_answer: darauf
+
+  - key: de:exercise:b1u02l3-mcq-auf-ihn
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-pronominaladverbien
+    prompt:
+      stem: "Chọn từ đúng: Wartest du auf deinen Bruder? – Ja, ich warte ___."
+      stem_lang: vi
+      options:
+        - { id: b3a, text: "auf ihn", lang: de }
+        - { id: b7b, text: "darauf", lang: de }
+        - { id: b1c, text: "auf es", lang: de }
+        - { id: b5d, text: "worauf", lang: de }
+    answer:
+      correct_option_id: b3a
+    explanation:
+      vi: "Bruder là người → giữ giới từ + đại từ: auf ihn (Akkusativ giống đực). darauf chỉ dùng cho vật, sự việc; auf es và worauf đều sai ở đây."
+    display_answer: auf ihn
+
+  - key: de:exercise:b1u02l3-listen-entschuldigen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u02-sich-entschuldigen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich habe mich gestern mit meiner Schwester gestritten. Jetzt möchte ich mich bei ihr entschuldigen.
+      options:
+        - { id: s2a, text: "Hôm qua tôi cãi nhau với chị gái. Bây giờ tôi muốn xin lỗi chị ấy.", lang: vi }
+        - { id: s6b, text: "Hôm qua tôi cãi nhau với chị gái. Bây giờ tôi muốn chị ấy xin lỗi tôi.", lang: vi }
+        - { id: s9c, text: "Hôm qua tôi nói chuyện lâu với chị gái. Bây giờ tôi muốn cảm ơn chị ấy.", lang: vi }
+        - { id: s4d, text: "Hôm qua chị gái tôi cãi nhau với bạn. Bây giờ chị ấy muốn xin lỗi.", lang: vi }
+    answer:
+      correct_option_id: s2a
+    explanation:
+      vi: "Ich habe mich … mit meiner Schwester gestritten = tôi đã cãi nhau với chị (em) gái. Ich möchte mich bei ihr entschuldigen = tôi muốn xin lỗi chị ấy: người nói là người xin lỗi, bei ihr là người nhận lời xin lỗi."
+    display_answer: Hôm qua tôi cãi nhau với chị gái. Bây giờ tôi muốn xin lỗi chị ấy.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u02l3-fill-woran-daran
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-pronominaladverbien
+    prompt:
+      template: "{{b1}} denkst du gerade? – An meine Prüfung morgen. Ich denke die ganze Zeit {{b2}}. – Und mit {{b3}} hast du dich gestern gestritten? – Mit meinem Freund. Ich habe mich sehr über {{b4}} geärgert."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 4 }
+        - { id: b4, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Woran]
+        b2: [daran]
+        b3: [wem]
+        b4: [ihn]
+    known_wrong:
+      - answer: an was
+        feedback_vi: "Khi nói, người Đức cũng hay hỏi An was …?, nhưng dạng chuẩn (nhất là khi viết) là Woran …?"
+        error_tag: pronominal_adverb
+      - answer: an es
+        feedback_vi: Với sự việc không dùng an + es mà dùng daran.
+        error_tag: pronominal_adverb
+      - answer: wer
+        feedback_vi: mit đi với Dativ – mit wem.
+        error_tag: case_dat_akk
+      - answer: darüber
+        feedback_vi: Mein Freund là người, nên dùng giới từ + đại từ – über ihn.
+        error_tag: pronominal_adverb
+    explanation:
+      vi: "denken an + Akkusativ: hỏi về sự việc → woran, trả lời → daran (an bắt đầu bằng nguyên âm nên có r). Hỏi về người → mit wem (Dativ). Über + người → über ihn (Akkusativ giống đực)."
+    display_answer: "Woran denkst du gerade? – An meine Prüfung morgen. Ich denke die ganze Zeit daran. – Und mit wem hast du dich gestern gestritten? – Mit meinem Freund. Ich habe mich sehr über ihn geärgert."
+
+  - key: de:exercise:b1u02l3-fill-ueber-um
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-verben-praeposition-b1
+    prompt:
+      template: "Seit einem Jahr wohne ich in Deutschland. Ich ärgere mich oft {{b1}} die vielen Regentage. Aber meine Nachbarin ist toll: Sie kümmert sich {{b2}} meine Pflanzen, wenn ich verreist bin, und auf sie kann ich mich immer {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [über]
+        b2: [um]
+        b3: [verlassen]
+    known_wrong:
+      - answer: auf
+        feedback_vi: "Bực mình về điều gì: sich ärgern über + Akkusativ."
+        error_tag: preposition
+      - answer: für
+        feedback_vi: "\"lo cho\" là sich kümmern um, không phải für."
+        error_tag: preposition
+      - answer: vertrauen
+        feedback_vi: "vertrauen đi với Dativ và không có sich, auf: Ich vertraue ihr. Với auf sie … mich cần sich verlassen."
+        error_tag: verb_choice
+    explanation:
+      vi: "sich ärgern über + Akk, sich kümmern um + Akk, sich verlassen auf + Akk. Sau kann, động từ chính ở nguyên thể cuối câu: verlassen."
+    display_answer: "Seit einem Jahr wohne ich in Deutschland. Ich ärgere mich oft über die vielen Regentage. Aber meine Nachbarin ist toll: Sie kümmert sich um meine Pflanzen, wenn ich verreist bin, und auf sie kann ich mich immer verlassen."
+
+  - key: de:exercise:b1u02l3-tr-daran-gewoehnt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-sich-gewoehnen-an
+    prompt:
+      source_text: "Tôi đã quen với chuyện đó rồi. (dùng sich gewöhnen an ở Perfekt và da(r)-)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe mich schon daran gewöhnt.
+        - Daran habe ich mich schon gewöhnt.
+        - Ich habe mich daran schon gewöhnt.
+        - Ich habe mich daran gewöhnt.
+        - Daran habe ich mich gewöhnt.
+        - Ich habe mich inzwischen daran gewöhnt.
+        - Ich bin schon daran gewöhnt.
+        - Daran bin ich schon gewöhnt.
+    known_wrong:
+      - answer: Ich habe mich schon an es gewöhnt.
+        feedback_vi: Với sự việc không dùng an + es mà dùng daran.
+        error_tag: pronominal_adverb
+      - answer: Ich habe schon daran gewöhnt.
+        feedback_vi: gewöhnen ở nghĩa này là động từ phản thân – Ich habe mich … gewöhnt.
+        error_tag: reflexive_missing
+      - answer: Ich habe mich schon darauf gewöhnt.
+        feedback_vi: sich gewöhnen đi với an – daran, không phải darauf.
+        error_tag: preposition
+    explanation:
+      vi: "sich gewöhnen an + Akkusativ; \"chuyện đó\" là sự việc → daran (an bắt đầu bằng nguyên âm nên có r). Perfekt: Ich habe mich … gewöhnt. Câu trạng thái Ich bin daran gewöhnt cũng đúng."
+    display_answer: Ich habe mich schon daran gewöhnt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u02l3-wb-worueber-unterhalten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-sich-unterhalten
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Các bạn đã nói chuyện về gì mà lâu thế?\""
+      tokens:
+        - { id: w-euch, text: euch }
+        - { id: w-lange, text: lange }
+        - { id: w-worueber, text: Worüber }
+        - { id: w-unterhalten, text: unterhalten }
+        - { id: w-ihr, text: ihr }
+        - { id: w-so, text: so }
+        - { id: w-habt, text: habt }
+    answer:
+      orders:
+        - [w-worueber, w-habt, w-ihr, w-euch, w-so, w-lange, w-unterhalten]
+    explanation:
+      vi: "Từ hỏi Worüber (sich unterhalten über + sự việc) ở vị trí 1, trợ động từ habt ở vị trí 2, rồi chủ ngữ ihr, đại từ phản thân euch; Partizip unterhalten (không có ge-) ở cuối."
+    display_answer: Worüber habt ihr euch so lange unterhalten?
+
+  - key: de:exercise:b1u02l3-wb-auf-freunde-verlassen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-sich-verlassen-auf
+    prompt:
+      instruction: "Sắp xếp thành câu (bắt đầu bằng Auf): \"Tôi luôn có thể trông cậy vào bạn bè mình.\""
+      tokens:
+        - { id: v-kann, text: kann }
+        - { id: v-freunde, text: Freunde }
+        - { id: v-verlassen, text: verlassen }
+        - { id: v-auf, text: Auf }
+        - { id: v-mich, text: mich }
+        - { id: v-immer, text: immer }
+        - { id: v-meine, text: meine }
+        - { id: v-ich, text: ich }
+    answer:
+      orders:
+        - [v-auf, v-meine, v-freunde, v-kann, v-ich, v-mich, v-immer, v-verlassen]
+    explanation:
+      vi: "Cụm auf meine Freunde đứng ở vị trí 1, nên kann ở vị trí 2, rồi chủ ngữ ich và đại từ phản thân mich. Nguyên thể verlassen đứng cuối câu."
+    display_answer: Auf meine Freunde kann ich mich immer verlassen.
+
+  - key: de:exercise:b1u02l3-tr-keine-sorgen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u02-sich-kuemmern-um
+    prompt:
+      source_text: Mach dir keine Sorgen, ich kümmere mich darum.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đừng lo, tôi sẽ lo việc đó.
+        - Đừng lo, tôi sẽ lo chuyện đó.
+        - Đừng lo, mình sẽ lo việc đó.
+        - Đừng lo, mình sẽ lo chuyện đó.
+        - Đừng lo, tôi lo việc đó.
+        - Đừng lo, mình lo việc đó.
+        - Đừng lo, để tôi lo việc đó.
+        - Đừng lo, để mình lo việc đó.
+        - Đừng lo, để tôi lo.
+        - Đừng lo, để mình lo.
+        - Đừng lo lắng, tôi sẽ lo việc đó.
+        - Đừng lo lắng, mình sẽ lo việc đó.
+        - Đừng lo, tôi sẽ lo liệu việc đó.
+        - Bạn đừng lo, tôi sẽ lo việc đó.
+        - Bạn đừng lo, mình sẽ lo việc đó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đừng lo, tôi quan tâm đến việc đó.
+        feedback_vi: "sich kümmern um ở đây là lo liệu, chăm lo cho việc gì, không chỉ là quan tâm (sich interessieren für)."
+        error_tag: meaning
+    explanation:
+      vi: "Mach dir keine Sorgen = đừng lo (nói với bạn thân, du). ich kümmere mich darum = tôi sẽ lo liệu việc đó; darum thay cho um + việc vừa nhắc tới."
+    display_answer: Đừng lo, tôi sẽ lo việc đó.
+
+  - key: de:exercise:b1u02l3-mcq-worueber-aergern
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-sich-aergern-ueber
+    prompt:
+      stem: "Bạn muốn hỏi bạn thân xem bạn ấy đang bực mình vì chuyện gì. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a4a, text: "Worüber ärgerst du dich?", lang: de }
+        - { id: a8b, text: "Worauf ärgerst du dich?", lang: de }
+        - { id: a2c, text: "Wofür ärgerst du dich?", lang: de }
+        - { id: a6d, text: "Worüber ärgerst du?", lang: de }
+    answer:
+      correct_option_id: a4a
+    explanation:
+      vi: "sich ärgern über + sự việc → hỏi bằng worüber. worauf và wofür sai giới từ; câu cuối thiếu đại từ phản thân dich."
+    display_answer: Worüber ärgerst du dich?

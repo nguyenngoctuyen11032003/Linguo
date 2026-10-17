@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u02-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – bài đăng diễn đàn về tình bạn (Wiederholung)
+objectives:
+  - vi: Đọc nhiều ý kiến ngắn trên diễn đàn và xác định mỗi người đồng ý hay không (kiểu Goethe B1 Lesen Teil 4).
+  - vi: Nghe hiểu người khác kể về xung đột và làm lành với bạn bè.
+  - vi: Viết bài diễn đàn khoảng 80 từ nêu ý kiến, lý do và ví dụ (kiểu Goethe B1 Schreiben Teil 2).
+estimated_minutes: 24
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:b1u02-obwohl]
+items:
+  - item: de:item:b1u02-g-relativsatz-nom-akk
+    role: reuse
+  - item: de:item:b1u02-g-relativpronomen-wahl
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-dativ
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-praeposition
+    role: reuse
+  - item: de:item:b1u02-g-pronominaladverbien
+    role: reuse
+  - item: de:item:b1u02-g-verben-praeposition-b1
+    role: reuse
+  - item: de:item:b1u02-g-obwohl-trotzdem
+    role: reuse
+  - item: de:item:b1u02-g-adjektive-praeposition
+    role: reuse
+  - item: de:item:b1u02-freundschaft
+    role: reuse
+  - item: de:item:b1u02-vertrauen
+    role: reuse
+  - item: de:item:b1u02-ehrlich
+    role: reuse
+  - item: de:item:b1u02-sich-trennen
+    role: reuse
+  - item: de:item:b1u02-trennung
+    role: reuse
+  - item: de:item:b1u02-sich-verlassen-auf
+    role: reuse
+  - item: de:item:b1u02-sich-kuemmern-um
+    role: reuse
+  - item: de:item:b1u02-sich-streiten
+    role: reuse
+  - item: de:item:b1u02-sich-versoehnen
+    role: reuse
+  - item: de:item:b1u02-eifersucht
+    role: reuse
+  - item: de:item:b1u01-inzwischen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được nhiều ý kiến ngắn trên một diễn đàn, nghe hiểu người khác kể về xung đột với bạn bè, và viết được một bài diễn đàn khoảng 80 từ nêu ý kiến của mình.
+  - type: explain
+    text:
+      vi: "Khi đọc ý kiến trên diễn đàn, nhiệm vụ thường là quyết định mỗi người đồng ý hay không với câu hỏi chủ đề. Đừng chỉ tìm từ khóa: hãy tìm câu nêu ý kiến (Ich finde …, Für mich ist das nichts) và chú ý những chỗ có aber, obwohl, trotzdem, vì ý chính thường nằm ở đó."
+  - type: explain
+    text:
+      vi: "Bài đăng diễn đàn khoảng 80 từ gồm: ý kiến của bạn (Ich finde, dass … / Meiner Meinung nach …), lý do, một ví dụ từ kinh nghiệm, và một câu kết. Bài diễn đàn thường không cần lời chào như e-mail, nhưng phải bám đúng chủ đề được hỏi."
+  - type: explain
+    text:
+      vi: "Để bài viết đạt mức B1, hãy dùng vài cấu trúc của unit này: mệnh đề quan hệ (ein Mensch, dem ich vertraue), obwohl/trotzdem cho ý trái ngược, động từ và tính từ + giới từ (sich verlassen auf, enttäuscht von). Sau Meiner Meinung nach, động từ đứng ở vị trí 2: Meiner Meinung nach ist Ehrlichkeit am wichtigsten."
+  - type: explain
+    text:
+      vi: "Khi nói, bạn dùng các mẫu tương tự để nêu và bảo vệ ý kiến: Ich bin dafür, weil … / Ich bin dagegen, weil … Ở đây dafür, dagegen là da(r)- + giới từ, thay cho ý kiến vừa được nhắc tới."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe-Zertifikat B1 có một phần đọc với nhiều ý kiến ngắn (Lesen Teil 4) và một nhiệm vụ viết bài diễn đàn khoảng 80 từ (Schreiben Teil 2); cấu trúc, số câu và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Trong phần đọc, ý kiến thường được diễn đạt gián tiếp (Für mich ist das nichts = tôi không đồng ý), và người viết có thể nêu cả mặt trái trước khi kết luận, nên hãy đọc đến câu cuối. Khi viết, đừng chỉ liệt kê câu đơn: một hai mệnh đề quan hệ và một câu obwohl đã làm bài viết mạch lạc hơn nhiều."
+  - type: example
+    target: "Ich finde, dass man nach einer Trennung Freunde bleiben kann – aber nur, wenn beide ehrlich sind. Ich habe mich vor drei Jahren von meinem Freund getrennt. Obwohl es am Anfang sehr schwer war, sind wir heute gute Freunde. Er ist ein Mensch, auf den ich mich immer verlassen kann. Natürlich braucht man nach einer Trennung zuerst Zeit für sich. Trotzdem möchte ich einen Menschen, den ich so gut kenne, nicht verlieren. Was meint ihr?"
+    target_lang: de
+    translation:
+      vi: "Tôi thấy rằng sau khi chia tay vẫn có thể làm bạn – nhưng chỉ khi cả hai đều thành thật. Ba năm trước tôi đã chia tay bạn trai. Mặc dù lúc đầu rất khó khăn, bây giờ chúng tôi là bạn tốt. Anh ấy là người mà tôi luôn có thể trông cậy. Tất nhiên sau khi chia tay, trước hết mỗi người cần thời gian cho riêng mình. Dù vậy, tôi không muốn mất một người mà tôi hiểu rõ như thế. Các bạn nghĩ sao?"
+    note:
+      vi: "Bài diễn đàn mẫu khoảng 80 từ: ý kiến (Ich finde, dass …) – ví dụ từ kinh nghiệm – mặt trái (Natürlich …) – kết luận (Trotzdem …) – câu hỏi mở cho người đọc."
+  - type: example
+    target: Meiner Meinung nach ist Ehrlichkeit in einer Freundschaft am wichtigsten.
+    target_lang: de
+    translation:
+      vi: Theo tôi, sự thành thật là quan trọng nhất trong tình bạn.
+    note:
+      vi: "Meiner Meinung nach chiếm vị trí 1, nên động từ ist đứng ngay sau."
+  - type: example
+    target: Ich bin dagegen, weil man nach einer Trennung Abstand braucht.
+    target_lang: de
+    translation:
+      vi: Tôi không đồng ý, vì sau khi chia tay người ta cần khoảng cách.
+    note:
+      vi: "dagegen = gegen + ý kiến vừa nêu (gegen bắt đầu bằng phụ âm nên không có r). Câu weil: braucht ở cuối."
+  - type: example
+    target: Ich war sehr enttäuscht von ihm. Trotzdem habe ich mich mit ihm versöhnt.
+    target_lang: de
+    translation:
+      vi: Tôi đã rất thất vọng về anh ấy. Dù vậy, tôi vẫn làm lành với anh ấy.
+    note:
+      vi: "enttäuscht von + Dativ (ihm); sich versöhnen mit + Dativ. Trotzdem ở vị trí 1 nên habe đứng ngay sau."
+  - type: common_mistake
+    wrong: Obwohl es schwer war, aber wir sind Freunde geblieben.
+    right: Obwohl es schwer war, sind wir Freunde geblieben.
+    target_lang: de
+    note:
+      vi: "Sau câu obwohl không thêm aber; câu chính bắt đầu bằng động từ."
+  - type: common_mistake
+    wrong: Ich finde, dass man kann nach einer Trennung Freunde bleiben.
+    right: Ich finde, dass man nach einer Trennung Freunde bleiben kann.
+    target_lang: de
+    note:
+      vi: "Trong câu dass, động từ chia (kann) đứng cuối, sau nguyên thể bleiben."
+  - type: common_mistake
+    wrong: Ein Freund, den ich vertraue, hilft mir immer.
+    right: Ein Freund, dem ich vertraue, hilft mir immer.
+    target_lang: de
+    note:
+      vi: "vertrauen đi với Dativ → đại từ quan hệ giống đực là dem."
+  - type: summary
+    points:
+      - vi: "Đọc diễn đàn: tìm câu nêu ý kiến, chú ý aber/obwohl/trotzdem, đọc đến câu cuối."
+      - vi: "Viết diễn đàn (~80 từ): ý kiến – lý do – ví dụ – kết luận; bám đúng chủ đề."
+      - vi: "Mẫu câu: Ich finde, dass …; Meiner Meinung nach + động từ vị trí 2; Ich bin dafür/dagegen, weil …"
+      - vi: "Mệnh đề quan hệ: der/den/dem/denen, giới từ + đại từ (auf den, mit der)."
+      - vi: "obwohl + động từ cuối; trotzdem + động từ ngay sau."
+      - vi: "Vật: darauf/worauf; người: auf ihn/auf wen."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen Teil 4) ----------------
+  - key: de:exercise:b1u02l5-mcq-forum-mia
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-sich-verlassen-auf
+    prompt:
+      stem: "Forum: Kann man nach einer Trennung Freunde bleiben? — Mia, 28: Mein Ex-Freund und ich haben uns vor zwei Jahren getrennt. Am Anfang war es schwer, aber heute sind wir gute Freunde. Wir treffen uns oft zum Kaffee, und auf ihn kann ich mich immer verlassen. Warum soll man einen Menschen verlieren, den man so gut kennt? — Findet Mia, dass man nach einer Trennung Freunde bleiben kann?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn1
+    explanation:
+      vi: "Mia viết: heute sind wir gute Freunde và auf ihn kann ich mich immer verlassen – bây giờ họ là bạn tốt, cô ấy luôn tin cậy được anh ấy. Câu hỏi cuối (Warum soll man … verlieren?) cũng cho thấy cô ấy đồng ý."
+    display_answer: Ja
+
+  - key: de:exercise:b1u02l5-mcq-forum-thomas
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      stem: "Forum: Kann man nach einer Trennung Freunde bleiben? — Thomas, 41: Ich finde das unrealistisch. Nach einer Trennung ist man oft wütend oder traurig. Obwohl ich es lange versucht habe, konnte ich mit meiner Ex-Frau keine Freundschaft aufbauen. Man braucht Abstand, und das ist ganz normal. — Findet Thomas, dass man nach einer Trennung Freunde bleiben kann?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn2
+    explanation:
+      vi: "Ich finde das unrealistisch = tôi thấy điều đó không thực tế. Obwohl ich es lange versucht habe, konnte ich … keine Freundschaft aufbauen = dù đã cố gắng lâu, anh ấy vẫn không làm bạn được với vợ cũ. Thomas không đồng ý."
+    display_answer: Nein
+
+  - key: de:exercise:b1u02l5-mcq-forum-elif
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-praeposition
+    prompt:
+      stem: "Forum: Kann man nach einer Trennung Freunde bleiben? — Elif, 33: Ja, das geht – aber nur, wenn beide ehrlich sind. Mit meinem ersten Freund, mit dem ich vier Jahre zusammen war, verstehe ich mich heute noch super. Unsere neuen Partner kennen sich auch und finden das ganz normal. Eifersucht gibt es bei uns nicht. — Findet Elif, dass man nach einer Trennung Freunde bleiben kann?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn1
+    explanation:
+      vi: "Ja, das geht = được chứ; điều kiện là cả hai thành thật. Elif vẫn rất hợp với người bạn trai đầu tiên, người mà cô đã yêu bốn năm (mit dem ich vier Jahre zusammen war). Elif đồng ý."
+    display_answer: Ja
+
+  - key: de:exercise:b1u02l5-mcq-forum-jan
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u02-g-relativsatz-dativ
+    prompt:
+      stem: "Forum: Kann man nach einer Trennung Freunde bleiben? — Jan, 25: Für mich ist das nichts. Wenn ich mich trenne, dann richtig. Ich wünsche meiner Ex-Freundin alles Gute, trotzdem brauche ich keinen Kontakt mehr zu ihr. Neue Freunde, denen ich vertrauen kann, finde ich auch so. — Findet Jan, dass man nach einer Trennung Freunde bleiben kann?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn2
+    explanation:
+      vi: "Für mich ist das nichts = với tôi thì không được. Jan chúc bạn gái cũ mọi điều tốt đẹp, nhưng (trotzdem) không cần liên lạc nữa. Câu chúc lịch sự không đổi ý chính: Jan không đồng ý."
+    display_answer: Nein
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u02l5-listen-versoehnt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u02-sich-versoehnen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich habe mich letzte Woche mit meiner besten Freundin gestritten, weil sie nicht zu unserer Verabredung gekommen war. Inzwischen haben wir uns wieder versöhnt.
+      options:
+        - { id: v2a, text: "Tuần trước tôi cãi nhau với bạn thân vì cô ấy không đến buổi hẹn. Giờ chúng tôi đã làm lành.", lang: vi }
+        - { id: v6b, text: "Tuần trước tôi cãi nhau với bạn thân vì cô ấy không đến buổi hẹn. Đến giờ chúng tôi vẫn chưa làm lành.", lang: vi }
+        - { id: v9c, text: "Tuần trước tôi cãi nhau với bạn thân vì tôi không đến buổi hẹn. Giờ chúng tôi đã làm lành.", lang: vi }
+        - { id: v4d, text: "Tuần trước tôi hẹn gặp bạn thân, nhưng cô ấy không đến. Tôi vẫn còn giận cô ấy.", lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "weil sie nicht zu unserer Verabredung gekommen war = vì cô ấy (bạn thân) không đến buổi hẹn – Plusquamperfekt, xảy ra trước trận cãi nhau. Inzwischen haben wir uns wieder versöhnt = giờ chúng tôi đã làm lành."
+    display_answer: Tuần trước tôi cãi nhau với bạn thân vì cô ấy không đến buổi hẹn. Giờ chúng tôi đã làm lành.
+
+  - key: de:exercise:b1u02l5-listen-mitbewohner
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u02-sich-kuemmern-um
+    prompt:
+      audio_asset_id: null
+      fallback_text: Mein Mitbewohner ist ein Mensch, auf den man sich immer verlassen kann. Obwohl er viel arbeitet, kümmert er sich um alles in der Wohnung.
+      options:
+        - { id: m3a, text: "Bạn cùng nhà của tôi là người luôn đáng tin cậy. Dù làm việc nhiều, anh ấy vẫn lo hết mọi việc trong nhà.", lang: vi }
+        - { id: m7b, text: "Bạn cùng nhà của tôi là người luôn đáng tin cậy. Vì làm việc nhiều nên anh ấy không lo việc nhà.", lang: vi }
+        - { id: m1c, text: "Bạn cùng nhà của tôi không đáng tin cậy, nhưng anh ấy lo hết mọi việc trong nhà.", lang: vi }
+        - { id: m5d, text: "Bạn cùng nhà của tôi là người luôn đáng tin cậy. Anh ấy ít việc nên có thời gian lo việc nhà.", lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "ein Mensch, auf den man sich immer verlassen kann = người mà ai cũng luôn tin cậy được. Obwohl er viel arbeitet = mặc dù anh ấy làm việc nhiều; kümmert er sich um alles = anh ấy lo mọi việc."
+    display_answer: Bạn cùng nhà của tôi là người luôn đáng tin cậy. Dù làm việc nhiều, anh ấy vẫn lo hết mọi việc trong nhà.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u02l5-fill-forum-meinung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      template: "Ich {{b1}} (finden), dass man nach einer Trennung Freunde bleiben kann. {{b2}} (obwohl/trotzdem) es am Anfang schwer ist, lohnt es sich. Ein Freund, {{b3}} man vertrauen kann, ist sehr wichtig."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [finde]
+        b2: [Obwohl]
+        b3: [dem, welchem]
+    known_wrong:
+      - answer: Trotzdem
+        feedback_vi: "Động từ ist đứng cuối vế đầu, nên đây là câu phụ – cần liên từ obwohl."
+        error_tag: conjunction
+      - answer: den
+        feedback_vi: "vertrauen đi với Dativ: ein Freund → dem."
+        error_tag: relative_pronoun
+      - answer: findet
+        feedback_vi: Chủ ngữ là ich – ich finde.
+        error_tag: verb_form
+    explanation:
+      vi: "Ich finde, dass … là mẫu nêu ý kiến. Ô 2: vế có động từ ist ở cuối là câu phụ → Obwohl; câu chính sau đó bắt đầu bằng động từ lohnt. Ô 3: vertrauen + Dativ, der Freund → dem."
+    display_answer: "Ich finde, dass man nach einer Trennung Freunde bleiben kann. Obwohl es am Anfang schwer ist, lohnt es sich. Ein Freund, dem man vertrauen kann, ist sehr wichtig."
+
+  - key: de:exercise:b1u02l5-fill-der-denen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-relativpronomen-wahl
+    prompt:
+      template: "Ich bin glücklich: Ich habe eine Partnerin, {{b1}} ich alles erzählen kann, und Freunde, {{b2}} ich vertraue."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [der, welcher]
+        b2: [denen, welchen]
+    known_wrong:
+      - answer: die
+        feedback_vi: "jemandem etwas erzählen – người nghe ở Dativ: eine Partnerin → der."
+        error_tag: case_dat_akk
+      - answer: den
+        feedback_vi: "vertrauen + Dativ, số nhiều → denen; den là mạo từ."
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Cả hai động từ (erzählen cho ai, vertrauen ai) cần Dativ. Giống cái số ít → der; số nhiều → denen."
+    display_answer: "Ich bin glücklich: Ich habe eine Partnerin, der ich alles erzählen kann, und Freunde, denen ich vertraue."
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u02l5-wb-ich-finde-dass
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-trennung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi thấy rằng sau khi chia tay người ta vẫn có thể làm bạn.\""
+      tokens:
+        - { id: d-man, text: man }
+        - { id: d-kann, text: kann }
+        - { id: d-ich, text: Ich }
+        - { id: d-trennung, text: Trennung }
+        - { id: d-dass, text: dass }
+        - { id: d-bleiben, text: bleiben }
+        - { id: d-komma, text: "," }
+        - { id: d-nach, text: nach }
+        - { id: d-finde, text: finde }
+        - { id: d-einer, text: einer }
+        - { id: d-freunde, text: Freunde }
+    answer:
+      orders:
+        - [d-ich, d-finde, d-komma, d-dass, d-man, d-nach, d-einer, d-trennung, d-freunde, d-bleiben, d-kann]
+    explanation:
+      vi: "Ich finde, dass … : trong câu dass, chủ ngữ man đứng sau dass, động từ chia kann đứng cuối, sau nguyên thể bleiben. nach + Dativ: nach einer Trennung."
+    display_answer: Ich finde, dass man nach einer Trennung Freunde bleiben kann.
+
+  - key: de:exercise:b1u02l5-wb-obwohl-geblieben
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u02-g-obwohl-trotzdem
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mặc dù không dễ dàng, chúng tôi vẫn là bạn.\""
+      tokens:
+        - { id: g-geblieben, text: geblieben }
+        - { id: g-war, text: war }
+        - { id: g-wir, text: wir }
+        - { id: g-obwohl, text: Obwohl }
+        - { id: g-leicht, text: leicht }
+        - { id: g-komma, text: "," }
+        - { id: g-sind, text: sind }
+        - { id: g-es, text: es }
+        - { id: g-freunde, text: Freunde }
+        - { id: g-nicht, text: nicht }
+    answer:
+      orders:
+        - [g-obwohl, g-es, g-nicht, g-leicht, g-war, g-komma, g-sind, g-wir, g-freunde, g-geblieben]
+    explanation:
+      vi: "Câu obwohl: war đứng cuối. Câu phụ chiếm vị trí 1, nên trợ động từ sind đứng ngay sau dấu phẩy; Freunde bleiben ở Perfekt dùng sein: sind … geblieben."
+    display_answer: Obwohl es nicht leicht war, sind wir Freunde geblieben.
+
+  - key: de:exercise:b1u02l5-tr-dem-man-vertraut
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u02-vertrauen
+    prompt:
+      source_text: "Một người bạn tốt là người mà ta có thể tin tưởng. (dùng mệnh đề quan hệ với vertrauen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ein guter Freund ist ein Mensch, dem man vertrauen kann.
+        - Ein guter Freund ist jemand, dem man vertrauen kann.
+        - Eine gute Freundin ist ein Mensch, dem man vertrauen kann.
+        - Eine gute Freundin ist jemand, dem man vertrauen kann.
+        - Ein guter Freund ist ein Mensch, dem ich vertrauen kann.
+        - Ein guter Freund ist jemand, dem ich vertrauen kann.
+        - Ein guter Freund ist ein Mensch, dem wir vertrauen können.
+    known_wrong:
+      - answer: Ein guter Freund ist ein Mensch, den man vertrauen kann.
+        feedback_vi: vertrauen đi với Dativ – ein Mensch → dem.
+        error_tag: relative_pronoun
+      - answer: Ein guter Freund ist ein Mensch, dem man kann vertrauen.
+        feedback_vi: Trong mệnh đề quan hệ, động từ chia kann đứng cuối – … vertrauen kann.
+        error_tag: verb_position
+      - answer: Ein guter Freund ist ein Mensch, der man vertrauen kann.
+        feedback_vi: man là chủ ngữ; der Mensch ở vai Dativ (vertrauen) → dem.
+        error_tag: relative_pronoun
+    explanation:
+      vi: "vertrauen + Dativ: der Mensch → dem (jemand cũng đi với dem). man là chủ ngữ của mệnh đề; kann đứng cuối, sau nguyên thể vertrauen."
+    display_answer: Ein guter Freund ist ein Mensch, dem man vertrauen kann.
+
+  - key: de:exercise:b1u02l5-tr-streiten-verlassen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u02-sich-streiten
+    prompt:
+      source_text: Obwohl wir uns manchmal streiten, kann ich mich immer auf ihn verlassen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mặc dù đôi khi chúng tôi cãi nhau, tôi luôn có thể tin cậy vào anh ấy.
+        - Mặc dù đôi khi chúng tôi cãi nhau, tôi luôn có thể trông cậy vào anh ấy.
+        - Mặc dù thỉnh thoảng chúng tôi cãi nhau, tôi luôn có thể tin cậy vào anh ấy.
+        - Mặc dù thỉnh thoảng chúng tôi cãi nhau, tôi luôn có thể trông cậy vào anh ấy.
+        - Dù đôi khi chúng tôi cãi nhau, tôi luôn có thể tin cậy vào anh ấy.
+        - Dù thỉnh thoảng chúng tôi cãi nhau, tôi luôn có thể trông cậy vào anh ấy.
+        - Mặc dù đôi khi chúng tôi cãi nhau, tôi vẫn luôn có thể tin cậy vào anh ấy.
+        - Mặc dù đôi khi chúng tôi cãi nhau, tôi vẫn luôn tin cậy được anh ấy.
+        - Mặc dù chúng tôi đôi khi cãi nhau, tôi luôn có thể tin cậy vào anh ấy.
+        - Mặc dù đôi khi chúng mình cãi nhau, mình luôn có thể tin cậy vào anh ấy.
+        - Mặc dù đôi khi chúng tôi cãi nhau, nhưng tôi luôn có thể tin cậy vào anh ấy.
+        - Mặc dù đôi khi chúng tôi cãi nhau, tôi luôn có thể tin tưởng anh ấy.
+        - Mặc dù đôi khi chúng tôi cãi nhau, tôi luôn có thể dựa vào anh ấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mặc dù đôi khi chúng tôi cãi nhau, tôi luôn có thể rời bỏ anh ấy.
+        feedback_vi: "sich verlassen auf = tin cậy, trông cậy vào; verlassen không có sich mới là rời bỏ."
+        error_tag: meaning
+    explanation:
+      vi: "obwohl = mặc dù (tiếng Việt có thể thêm \"nhưng\" ở vế sau, tiếng Đức thì không). sich streiten = cãi nhau; sich auf jemanden verlassen = tin cậy, trông cậy vào ai."
+    display_answer: Mặc dù đôi khi chúng tôi cãi nhau, tôi luôn có thể tin cậy vào anh ấy.
