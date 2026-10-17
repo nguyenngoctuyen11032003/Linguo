@@ -1,0 +1,497 @@
+schema_version: 1
+demo: false
+language: de
+skill: reading
+key_confidence: reviewed
+reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+items:
+  # ---------------- pre_a1 ----------------
+  - key: de:diag:rea-pre-a1-name-tag-austria
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.2
+    prompt:
+      passage: "Hallo, ich bin Anna Weber.\nIch komme aus Österreich."
+      stem: Theo bảng tên này, Anna Weber đến từ nước nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nước Úc", lang: vi }
+        - { id: b, text: "Nước Áo", lang: vi }
+        - { id: c, text: "Nước Đức", lang: vi }
+        - { id: d, text: "Thụy Sĩ", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Ich komme aus Österreich” nghĩa là “Tôi đến từ nước Áo”. Nước Úc là “Australien”, nước Đức là “Deutschland”, còn Thụy Sĩ là “die Schweiz”."
+  - key: de:diag:rea-pre-a1-no-smoking
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.3
+    prompt:
+      passage: "Bitte nicht rauchen!"
+      stem: Tấm biển “Bitte nicht rauchen!” yêu cầu bạn điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Không ăn uống", lang: vi }
+        - { id: b, text: "Không chụp ảnh", lang: vi }
+        - { id: c, text: "Không hút thuốc", lang: vi }
+        - { id: d, text: "Không nói chuyện to", lang: vi }
+    answer: c
+    explanation:
+      vi: "“rauchen” là hút thuốc, “nicht” là không, “bitte” là xin vui lòng. Biển cấm ăn uống sẽ có chữ “essen” và “trinken”, biển cấm chụp ảnh có chữ “fotografieren”."
+  - key: de:diag:rea-pre-a1-cafe-message
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.4
+    prompt:
+      passage: "Hallo Tim, ich bin im Café am Markt. Kommst du?\nLea"
+      stem: Theo tin nhắn, Lea đang ở đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Ở nhà", lang: vi }
+        - { id: b, text: "Ở quán cà phê cạnh khu chợ", lang: vi }
+        - { id: c, text: "Ở trường học", lang: vi }
+        - { id: d, text: "Ở nhà ga", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Ich bin im Café am Markt” nghĩa là “Mình đang ở quán cà phê cạnh chợ”. “Kommst du?” là câu hỏi “Bạn có đến không?”."
+  - key: de:diag:rea-pre-a1-bakery-sunday
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.55
+    prompt:
+      passage: "BÄCKEREI MÜLLER\nMontag – Samstag: geöffnet\nSonntag: geschlossen"
+      stem: Tiệm bánh Müller đóng cửa vào ngày nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thứ Hai", lang: vi }
+        - { id: b, text: "Thứ Bảy", lang: vi }
+        - { id: c, text: "Thứ Sáu", lang: vi }
+        - { id: d, text: "Chủ nhật", lang: vi }
+    answer: d
+    explanation:
+      vi: "“geschlossen” (đóng cửa) đi với “Sonntag” (Chủ nhật). Từ thứ Hai (“Montag”) đến thứ Bảy (“Samstag”) tiệm “geöffnet” (mở cửa)."
+  - key: de:diag:rea-pre-a1-brother-age
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.7
+    prompt:
+      passage: "Ich heiße Jonas. Ich bin siebzehn Jahre alt. Mein Bruder Paul ist sieben."
+      stem: Theo lời giới thiệu của Jonas, Paul bao nhiêu tuổi?
+      stem_lang: vi
+      options:
+        - { id: a, text: "7 tuổi", lang: vi }
+        - { id: b, text: "17 tuổi", lang: vi }
+        - { id: c, text: "70 tuổi", lang: vi }
+        - { id: d, text: "11 tuổi", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Mein Bruder Paul ist sieben” — “sieben” là 7. “siebzehn” (17) là tuổi của Jonas; 70 là “siebzig”, còn 11 là “elf”."
+  - key: de:diag:rea-pre-a1-half-eight
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.85
+    prompt:
+      passage: "Hallo Mia! Kino heute um halb acht?\nBis später, Max"
+      stem: Max rủ Mia đi xem phim lúc mấy giờ?
+      stem_lang: vi
+      options:
+        - { id: a, text: "8 giờ 30", lang: vi }
+        - { id: b, text: "8 giờ", lang: vi }
+        - { id: c, text: "7 giờ 30", lang: vi }
+        - { id: d, text: "7 giờ", lang: vi }
+    answer: c
+    explanation:
+      vi: "“halb acht” nghĩa là “còn nửa tiếng nữa là tám giờ”, tức 7 giờ 30. Trong tiếng Đức, “halb” tính về giờ sắp tới, nên đừng hiểu thành 8 giờ 30. “Kino” là rạp chiếu phim."
+
+  # ---------------- a1 ----------------
+  - key: de:diag:rea-a1-note-football
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.2
+    prompt:
+      passage: "Liebe Oma,\nich bin beim Fußballtraining. Um sechs Uhr bin ich wieder zu Hause.\nDein Felix"
+      stem: Theo lời nhắn gửi bà, Felix đang ở đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đang ở nhà bà", lang: vi }
+        - { id: b, text: "Đang tập bóng đá", lang: vi }
+        - { id: c, text: "Đang ở trường", lang: vi }
+        - { id: d, text: "Đang đi mua sắm", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Ich bin beim Fußballtraining” nghĩa là “Cháu đang đi tập bóng đá”. Câu “Um sechs Uhr bin ich wieder zu Hause” cho biết 6 giờ Felix mới về nhà."
+  - key: de:diag:rea-a1-menu-vegetarian
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.3
+    prompt:
+      passage: "Speisekarte\nTomatensuppe – 4,50 €\nSchnitzel mit Pommes – 11,90 €\nGemüsepfanne (vegetarisch) – 9,80 €\nApfelkuchen – 3,20 €"
+      stem: Theo thực đơn, món nào được ghi rõ là món chay?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tomatensuppe", lang: de }
+        - { id: b, text: "Schnitzel mit Pommes", lang: de }
+        - { id: c, text: "Gemüsepfanne", lang: de }
+        - { id: d, text: "Apfelkuchen", lang: de }
+    answer: c
+    explanation:
+      vi: "Chỉ “Gemüsepfanne” (rau củ xào chảo) có ghi chú “(vegetarisch)”, nghĩa là món chay. “Schnitzel” là thịt tẩm bột chiên; “Tomatensuppe” (súp cà chua) và “Apfelkuchen” (bánh táo) không có ghi chú này."
+  - key: de:diag:rea-a1-bus-saturday
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.45
+    prompt:
+      passage: "Buslinie 42: Bahnhof – Universität\nMontag bis Freitag: alle 15 Minuten (6–20 Uhr)\nSamstag: alle 30 Minuten (8–18 Uhr)\nSonntag: kein Busverkehr"
+      stem: Vào thứ Bảy, bao lâu thì có một chuyến xe buýt số 42?
+      stem_lang: vi
+      options:
+        - { id: a, text: "15 phút một chuyến", lang: vi }
+        - { id: b, text: "30 phút một chuyến", lang: vi }
+        - { id: c, text: "60 phút một chuyến", lang: vi }
+        - { id: d, text: "Không có chuyến nào", lang: vi }
+    answer: b
+    explanation:
+      vi: "Dòng “Samstag: alle 30 Minuten” nghĩa là thứ Bảy cứ 30 phút có một chuyến. 15 phút là lịch từ thứ Hai đến thứ Sáu (“Montag bis Freitag”), còn “kein Busverkehr” (không có xe buýt) là vào Chủ nhật."
+  - key: de:diag:rea-a1-sms-homework
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.6
+    prompt:
+      passage: "Hi Sara, ich bin krank und kann heute nicht zum Deutschkurs kommen. Kannst du mir bitte die Hausaufgaben schicken? Danke! Ben"
+      stem: Trong tin nhắn, Ben nhờ Sara làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đến nhà thăm Ben", lang: vi }
+        - { id: b, text: "Mua thuốc cho Ben", lang: vi }
+        - { id: c, text: "Báo với giáo viên rằng Ben bị ốm", lang: vi }
+        - { id: d, text: "Gửi cho Ben bài tập về nhà", lang: vi }
+    answer: d
+    explanation:
+      vi: "“Kannst du mir bitte die Hausaufgaben schicken?” nghĩa là “Bạn gửi giúp mình bài tập về nhà được không?”. Ben chỉ nói mình bị ốm (“krank”) nên không đến lớp, không nhờ Sara đến thăm hay báo giáo viên."
+  - key: de:diag:rea-a1-room-ad
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.75
+    prompt:
+      passage: "Zimmer frei!\nHelles Zimmer (14 m²) in einer WG in Leipzig, 320 € im Monat.\nNur für Nichtraucher!\nTel. 0341 556 7890"
+      stem: Theo mẩu quảng cáo, ai KHÔNG thể thuê căn phòng này?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Người hút thuốc", lang: vi }
+        - { id: b, text: "Sinh viên", lang: vi }
+        - { id: c, text: "Người không có ô tô", lang: vi }
+        - { id: d, text: "Người nước ngoài", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Nur für Nichtraucher!” nghĩa là “Chỉ dành cho người không hút thuốc”. Quảng cáo không nhắc gì đến sinh viên, ô tô hay quốc tịch. (“WG” là căn hộ ở ghép, “hell” là sáng sủa.)"
+  - key: de:diag:rea-a1-appointment-change
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.9
+    prompt:
+      passage: "Hallo Herr Schmidt,\nder Termin am Dienstag um 10 Uhr geht leider nicht. Ich habe am Mittwoch um 10 Uhr oder am Donnerstag um 14 Uhr Zeit.\nViele Grüße\nKatrin Vogel"
+      stem: Katrin Vogel có thể gặp ông Schmidt vào lúc nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thứ Ba lúc 10 giờ", lang: vi }
+        - { id: b, text: "Thứ Tư lúc 14 giờ hoặc thứ Năm lúc 10 giờ", lang: vi }
+        - { id: c, text: "Thứ Tư lúc 10 giờ hoặc thứ Năm lúc 14 giờ", lang: vi }
+        - { id: d, text: "Chỉ thứ Năm lúc 14 giờ", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Der Termin am Dienstag um 10 Uhr geht leider nicht” nghĩa là lịch hẹn thứ Ba lúc 10 giờ không được. Câu “Ich habe am Mittwoch um 10 Uhr oder am Donnerstag um 14 Uhr Zeit” cho biết chị ấy rảnh thứ Tư (“Mittwoch”) lúc 10 giờ hoặc thứ Năm (“Donnerstag”) lúc 14 giờ."
+
+  # ---------------- a2 ----------------
+  - key: de:diag:rea-a2-postcard-hamburg
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.2
+    prompt:
+      passage: "Liebe Jana,\nviele Grüße aus Hamburg! Das Wetter ist leider nicht so schön, es regnet fast jeden Tag. Aber die Stadt gefällt mir sehr. Gestern haben wir eine Hafenrundfahrt gemacht, und morgen gehen wir ins Musical. Am Samstag fahren wir dann wieder nach Hause.\nBis bald!\nDeine Clara"
+      stem: Theo tấm bưu thiếp, hôm qua Clara đã làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đi xem nhạc kịch", lang: vi }
+        - { id: b, text: "Trở về nhà", lang: vi }
+        - { id: c, text: "Đi thuyền tham quan bến cảng", lang: vi }
+        - { id: d, text: "Ở trong phòng cả ngày vì trời mưa", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Gestern haben wir eine Hafenrundfahrt gemacht” — “gestern” là hôm qua, “Hafenrundfahrt” là chuyến đi thuyền vòng quanh bến cảng. Đi xem nhạc kịch là việc của ngày mai (“morgen”), còn về nhà là vào thứ Bảy (“am Samstag”)."
+  - key: de:diag:rea-a2-water-notice
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.3
+    prompt:
+      passage: "Liebe Mieterinnen und Mieter,\nam Donnerstag, dem 12. März, wird von 8 bis 12 Uhr im ganzen Haus das Wasser abgestellt, weil im Keller Rohre repariert werden. In dieser Zeit können Sie weder duschen noch die Waschmaschine benutzen.\nVielen Dank für Ihr Verständnis!\nIhre Hausverwaltung"
+      stem: Theo thông báo, vì sao cả tòa nhà bị cắt nước?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì đường ống dưới tầng hầm được sửa chữa", lang: vi }
+        - { id: b, text: "Vì tầng hầm được dọn dẹp", lang: vi }
+        - { id: c, text: "Vì người thuê nhà dùng quá nhiều nước", lang: vi }
+        - { id: d, text: "Vì máy giặt chung bị hỏng", lang: vi }
+    answer: a
+    explanation:
+      vi: "“weil im Keller Rohre repariert werden” nghĩa là “vì các đường ống dưới tầng hầm đang được sửa”. Máy giặt (“Waschmaschine”) chỉ được nhắc đến như một việc không làm được trong lúc cắt nước."
+  - key: de:diag:rea-a2-directions-dialogue
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.45
+    prompt:
+      passage: "– Entschuldigung, wie komme ich zum Rathaus?\n– Gehen Sie hier geradeaus bis zur Ampel und dann nach links. Das Rathaus ist direkt neben der Post.\n– Ist das weit?\n– Nein, zu Fuß sind es nur fünf Minuten."
+      stem: Theo đoạn hội thoại, tòa thị chính nằm ở đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đối diện bưu điện", lang: vi }
+        - { id: b, text: "Ngay cạnh bưu điện", lang: vi }
+        - { id: c, text: "Ngay ở chỗ đèn giao thông", lang: vi }
+        - { id: d, text: "Cách đó năm cây số", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Das Rathaus ist direkt neben der Post” — “neben” là bên cạnh, “die Post” là bưu điện; đối diện thì phải là “gegenüber”. Đèn giao thông (“Ampel”) là chỗ phải rẽ trái, còn “fünf Minuten” là năm phút đi bộ, không phải năm cây số."
+  - key: de:diag:rea-a2-summer-party-email
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.6
+    prompt:
+      passage: "Lieber Herr Becker,\nvielen Dank für Ihre Einladung zum Sommerfest! Ich komme sehr gern, aber leider erst gegen 19 Uhr, weil ich bis 18 Uhr arbeiten muss. Soll ich einen Salat mitbringen?\nViele Grüße\nMonika Hahn"
+      stem: Monika Hahn sẽ đến bữa tiệc mùa hè vào khoảng mấy giờ?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Lúc 18 giờ", lang: vi }
+        - { id: b, text: "Khoảng 19 giờ", lang: vi }
+        - { id: c, text: "Trước 18 giờ để giúp chuẩn bị", lang: vi }
+        - { id: d, text: "Monika không đến được", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Ich komme sehr gern, aber leider erst gegen 19 Uhr” — “erst” nghĩa là “mãi đến”, “gegen 19 Uhr” là khoảng 19 giờ. 18 giờ là lúc Monika tan làm (“weil ich bis 18 Uhr arbeiten muss”)."
+  - key: de:diag:rea-a2-library-hours
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.75
+    prompt:
+      passage: "Stadtbibliothek – neue Öffnungszeiten ab 1. April\nMontag: geschlossen\nDienstag bis Freitag: 10–19 Uhr\nSamstag: 10–14 Uhr\nBücher können Sie jetzt rund um die Uhr am Rückgabeautomaten vor dem Eingang zurückgeben."
+      stem: Theo thông báo của thư viện thành phố, điều nào ĐÚNG?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Thư viện mở cửa vào thứ Hai", lang: vi }
+        - { id: b, text: "Thứ Bảy thư viện mở cửa đến 19 giờ", lang: vi }
+        - { id: c, text: "Máy trả sách đặt bên trong thư viện", lang: vi }
+        - { id: d, text: "Có thể trả sách ở máy trả sách vào bất kỳ giờ nào", lang: vi }
+    answer: d
+    explanation:
+      vi: "“rund um die Uhr” nghĩa là suốt ngày đêm, và máy trả sách (“Rückgabeautomat”) đặt “vor dem Eingang” — trước lối vào, tức là ở bên ngoài. Thứ Hai thư viện đóng cửa (“geschlossen”), thứ Bảy chỉ mở đến 14 giờ."
+  - key: de:diag:rea-a2-babysitter-ad
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.9
+    prompt:
+      passage: "Babysitter gesucht!\nWir suchen ab sofort eine Babysitterin oder einen Babysitter für unsere Kinder (4 und 7 Jahre), zweimal pro Woche nachmittags von 15 bis 18 Uhr. Sie sollten mindestens 18 Jahre alt sein und gut Deutsch sprechen. Erfahrung mit Kindern ist wichtig, einen Führerschein brauchen Sie nicht. Wir zahlen 13 € pro Stunde.\nFamilie Koch, Tel. 0176 2345 6789"
+      stem: Ai phù hợp nhất với công việc mà gia đình Koch đăng tuyển?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Max, 17 tuổi, nói tiếng Đức tốt, đã nhiều năm trông các em, rảnh buổi chiều", lang: vi }
+        - { id: b, text: "Linh, 20 tuổi, nói tiếng Đức tốt, từng trông trẻ, rảnh buổi chiều, không có bằng lái xe", lang: vi }
+        - { id: c, text: "Sophie, 25 tuổi, nói tiếng Đức tốt, từng trông trẻ, có bằng lái xe, chỉ rảnh buổi sáng", lang: vi }
+        - { id: d, text: "Tom, 30 tuổi, nói tiếng Đức tốt, rảnh buổi chiều, có bằng lái xe, chưa từng trông trẻ", lang: vi }
+    answer: b
+    explanation:
+      vi: "Gia đình Koch cần người “mindestens 18 Jahre alt” (ít nhất 18 tuổi), “gut Deutsch sprechen”, có “Erfahrung mit Kindern” (kinh nghiệm với trẻ em) và làm “nachmittags” (buổi chiều); “einen Führerschein brauchen Sie nicht” nghĩa là không cần bằng lái. Linh đáp ứng đủ. Max chưa đủ 18 tuổi, Sophie chỉ rảnh buổi sáng, Tom chưa có kinh nghiệm với trẻ em."
+
+  # ---------------- b1 ----------------
+  - key: de:diag:rea-b1-blog-cycling
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.2
+    prompt:
+      passage: "Seit drei Monaten fahre ich fast jeden Tag mit dem Fahrrad zur Arbeit – zwölf Kilometer hin und zwölf zurück. Am Anfang war ich abends völlig kaputt, inzwischen macht es mir richtig Spaß. Ich spare nicht nur das Geld für die Monatskarte, sondern fühle mich auch viel fitter. Nur bei starkem Regen nehme ich noch die S-Bahn. Mein Tipp für alle, die es ausprobieren wollen: Fangt mit zwei Tagen pro Woche an und steigert euch langsam!"
+      stem: Người viết blog vẫn đi S-Bahn trong trường hợp nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Khi buổi tối quá mệt", lang: vi }
+        - { id: b, text: "Hai ngày mỗi tuần", lang: vi }
+        - { id: c, text: "Khi trời mưa to", lang: vi }
+        - { id: d, text: "Khi muốn tiết kiệm tiền", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Nur bei starkem Regen nehme ich noch die S-Bahn” nghĩa là chỉ khi mưa to mới còn đi S-Bahn. Cảm giác mệt (“völlig kaputt”) là chuyện lúc mới bắt đầu, “zwei Tage pro Woche” là lời khuyên cho người mới thử, còn đi xe đạp mới là cách tiết kiệm tiền vé tháng (“Monatskarte”)."
+  - key: de:diag:rea-b1-forum-registration
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.3
+    prompt:
+      passage: "Frage von NeuInFreiburg:\nHallo zusammen, ich ziehe nächsten Monat nach Freiburg. Muss ich mich nach dem Umzug irgendwo anmelden, und wenn ja, was brauche ich dafür?\n\nAntwort von Jule_88:\nJa, du musst dich innerhalb von zwei Wochen beim Bürgeramt anmelden. Buch am besten gleich online einen Termin, denn die sind oft schnell weg. Mitbringen musst du deinen Ausweis und die Wohnungsgeberbestätigung, die du von deinem Vermieter bekommst."
+      stem: Theo Jule_88, nên làm gì để chắc chắn có lịch hẹn ở Bürgeramt (văn phòng dịch vụ công dân)?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đặt lịch hẹn trực tuyến càng sớm càng tốt", lang: vi }
+        - { id: b, text: "Đến thẳng Bürgeramt mà không cần hẹn trước", lang: vi }
+        - { id: c, text: "Nhờ chủ nhà đi đăng ký hộ", lang: vi }
+        - { id: d, text: "Đợi hai tuần sau khi chuyển nhà rồi mới đặt lịch", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Buch am besten gleich online einen Termin, denn die sind oft schnell weg” — tốt nhất nên đặt lịch online ngay, vì lịch hẹn thường hết rất nhanh. “Innerhalb von zwei Wochen” là thời hạn phải đăng ký (trong vòng hai tuần), không phải thời gian phải chờ; chủ nhà (“Vermieter”) chỉ cấp giấy xác nhận chỗ ở (“Wohnungsgeberbestätigung”)."
+  - key: de:diag:rea-b1-news-bridge
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.45
+    prompt:
+      passage: "Lindenau. Wegen Bauarbeiten wird die Alte Brücke ab kommendem Montag für drei Wochen für den Autoverkehr gesperrt. Fußgänger und Radfahrer können die Brücke weiterhin nutzen. Der Autoverkehr wird über die Nordbrücke umgeleitet; die Stadt rechnet vor allem morgens mit längeren Staus. Die Buslinie 5 fährt in dieser Zeit nicht über die Brücke, sondern endet bereits am Marktplatz."
+      stem: Theo bản tin, điều nào ĐÚNG?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cây cầu bị đóng với tất cả mọi người", lang: vi }
+        - { id: b, text: "Người đi xe đạp vẫn được qua cầu", lang: vi }
+        - { id: c, text: "Xe buýt số 5 đi đường vòng qua cầu phía Bắc", lang: vi }
+        - { id: d, text: "Thành phố dự báo tắc đường chủ yếu vào buổi tối", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Fußgänger und Radfahrer können die Brücke weiterhin nutzen” — người đi bộ và người đi xe đạp vẫn được dùng cầu; chỉ ô tô (“Autoverkehr”) bị cấm. Xe buýt số 5 không đi vòng mà “endet bereits am Marktplatz” (dừng ngay ở quảng trường chợ), và tắc đường được dự báo “vor allem morgens” — chủ yếu vào buổi sáng."
+  - key: de:diag:rea-b1-descaling-instructions
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.6
+    prompt:
+      passage: "So entkalken Sie Ihre Kaffeemaschine:\n1. Füllen Sie den Wassertank mit einem halben Liter Wasser und geben Sie eine Packung Entkalker dazu.\n2. Stellen Sie ein großes Gefäß unter den Auslauf.\n3. Halten Sie die Taste „Reinigung“ drei Sekunden lang gedrückt. Das Programm dauert etwa 20 Minuten.\n4. Spülen Sie anschließend den Wassertank gründlich aus und lassen Sie die Maschine zweimal mit klarem Wasser durchlaufen, bevor Sie wieder Kaffee zubereiten.\nWichtig: Schalten Sie das Gerät während des Programms nicht aus!"
+      stem: Sau khi chương trình tẩy cặn kết thúc, phải làm gì trước khi pha cà phê lại?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cho thêm một gói chất tẩy cặn rồi chạy lại chương trình", lang: vi }
+        - { id: b, text: "Tắt máy và đợi 20 phút", lang: vi }
+        - { id: c, text: "Giữ nút „Reinigung“ thêm ba giây", lang: vi }
+        - { id: d, text: "Rửa kỹ bình nước và cho máy chạy hai lần với nước sạch", lang: vi }
+    answer: d
+    explanation:
+      vi: "Bước 4: “Spülen Sie anschließend den Wassertank gründlich aus und lassen Sie die Maschine zweimal mit klarem Wasser durchlaufen, bevor Sie wieder Kaffee zubereiten” — rửa kỹ bình nước rồi cho máy chạy hai lần với nước sạch. Chất tẩy cặn (“Entkalker”) chỉ cho vào ở bước 1, 20 phút là thời gian chạy chương trình, và lưu ý cuối cùng dặn không được tắt máy (“nicht aus”) khi chương trình đang chạy."
+  - key: de:diag:rea-b1-exchange-letter
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.75
+    prompt:
+      passage: "Sehr geehrte Damen und Herren,\nam 3. Mai habe ich in Ihrem Onlineshop einen Rucksack bestellt (Bestellnummer 48213). Geliefert wurde jedoch ein roter Rucksack statt eines blauen. Da der Rucksack ein Geschenk ist und es unbedingt der blaue sein soll, möchte ich ihn umtauschen. Eine Rückerstattung des Kaufpreises wünsche ich nicht. Bitte teilen Sie mir mit, wie ich vorgehen soll.\nMit freundlichen Grüßen\nLukas Brandt"
+      stem: Lukas Brandt muốn cửa hàng trực tuyến làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nhận lại hàng và hoàn tiền cho anh", lang: vi }
+        - { id: b, text: "Đổi cho anh chiếc ba lô màu xanh dương", lang: vi }
+        - { id: c, text: "Cho anh giữ chiếc ba lô đỏ với giá rẻ hơn", lang: vi }
+        - { id: d, text: "Hủy toàn bộ đơn hàng", lang: vi }
+    answer: b
+    explanation:
+      vi: "“möchte ich ihn umtauschen” nghĩa là anh muốn đổi hàng, vì “es unbedingt der blaue sein soll” — nhất định phải là chiếc màu xanh dương. Câu “Eine Rückerstattung des Kaufpreises wünsche ich nicht” (tôi không muốn được hoàn tiền) loại trừ phương án trả hàng lấy tiền."
+  - key: de:diag:rea-b1-homeoffice-opinion
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.9
+    prompt:
+      passage: "Ich arbeite seit einem Jahr zwei Tage pro Woche im Homeoffice. Viele Kollegen beneiden mich darum, aber ganz so ideal ist es nicht. Klar, ich spare mir den Arbeitsweg und kann mich zu Hause besser konzentrieren. Dafür fehlt mir der spontane Austausch in der Kaffeeküche, und abends fällt es mir oft schwer, den Laptop zuzuklappen. Trotzdem möchte ich nicht wieder jeden Tag ins Büro fahren – die Mischung ist für mich genau richtig."
+      stem: Người viết đánh giá việc làm việc tại nhà như thế nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Muốn quay lại văn phòng mỗi ngày", lang: vi }
+        - { id: b, text: "Muốn làm việc ở nhà cả tuần", lang: vi }
+        - { id: c, text: "Hài lòng với việc kết hợp nhà và văn phòng, dù thấy có nhược điểm", lang: vi }
+        - { id: d, text: "Cho rằng ở nhà khó tập trung hơn ở văn phòng", lang: vi }
+    answer: c
+    explanation:
+      vi: "Người viết nêu cả ưu điểm (“spare mir den Arbeitsweg”, “besser konzentrieren”) lẫn nhược điểm (“fehlt mir der spontane Austausch”), rồi kết luận “Trotzdem möchte ich nicht wieder jeden Tag ins Büro fahren – die Mischung ist für mich genau richtig”: sự kết hợp là vừa đúng. Không có câu nào nói muốn ở nhà cả tuần, và ở nhà người viết lại tập trung tốt hơn."
+
+  # ---------------- b2 ----------------
+  - key: de:diag:rea-b2-secondhand-report
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.2
+    prompt:
+      passage: "Immer mehr Menschen in Deutschland kaufen gebrauchte Kleidung. Einer aktuellen Umfrage zufolge hat fast jeder zweite Befragte im vergangenen Jahr mindestens ein Kleidungsstück aus zweiter Hand erworben; vor fünf Jahren war es noch knapp ein Viertel. Besonders beliebt ist Secondhandmode bei den 18- bis 29-Jährigen, die vor allem Onlineplattformen nutzen. Als wichtigsten Grund nennen die meisten allerdings nicht den Umweltschutz, sondern die niedrigeren Preise; ökologische Motive folgen erst an zweiter Stelle. Ältere Befragte kaufen dagegen häufiger in klassischen Secondhandläden und legen Wert darauf, die Ware vor dem Kauf anfassen zu können. Der Handel mit Neuware beobachtet den Trend mit gemischten Gefühlen; einige Ketten bieten inzwischen eigene Rücknahme- und Wiederverkaufsprogramme an."
+      stem: Theo bài báo, phần lớn người mua quần áo cũ làm vậy chủ yếu vì lý do gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì muốn bảo vệ môi trường", lang: vi }
+        - { id: b, text: "Vì giá rẻ hơn", lang: vi }
+        - { id: c, text: "Vì có thể sờ thử hàng trước khi mua", lang: vi }
+        - { id: d, text: "Vì các chuỗi cửa hàng có chương trình thu mua lại", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Als wichtigsten Grund nennen die meisten allerdings nicht den Umweltschutz, sondern die niedrigeren Preise” — cấu trúc “nicht …, sondern …” cho thấy lý do chính là giá thấp hơn; lý do môi trường chỉ “erst an zweiter Stelle” (mới đứng thứ hai). Việc muốn sờ hàng trước khi mua là đặc điểm của người lớn tuổi, còn chương trình thu mua lại là phản ứng của các chuỗi bán hàng mới."
+  - key: de:diag:rea-b2-heating-letter
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.35
+    prompt:
+      passage: "Sehr geehrte Frau Albers,\nleider muss ich Ihnen mitteilen, dass die Heizung in meiner Wohnung (Lindenstraße 14, 3. OG links) seit dem 2. November erneut ausgefallen ist. Bereits im Oktober hatte ich den Schaden telefonisch gemeldet; der damals beauftragte Techniker konnte das Problem jedoch nur vorübergehend beheben. Da die Raumtemperatur inzwischen unter 16 Grad liegt, ist ein normales Wohnen kaum noch möglich.\nIch bitte Sie daher, die Reparatur bis spätestens zum 15. November zu veranlassen. Andernfalls behalte ich mir vor, die Miete für die Dauer des Mangels angemessen zu mindern.\nFür Rückfragen bin ich werktags ab 17 Uhr unter 0221 447 8213 erreichbar.\nMit freundlichen Grüßen\nJan Petersen"
+      stem: Có thể suy ra điều gì từ bức thư của Jan Petersen?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Lò sưởi từng hỏng trước đây và lần sửa trước không triệt để", lang: vi }
+        - { id: b, text: "Jan Petersen đã tự ý giảm tiền thuê nhà", lang: vi }
+        - { id: c, text: "Chưa có kỹ thuật viên nào đến xem lò sưởi", lang: vi }
+        - { id: d, text: "Jan Petersen muốn chuyển sang một căn hộ khác", lang: vi }
+    answer: a
+    explanation:
+      vi: "“erneut ausgefallen” (lại hỏng lần nữa) và “der damals beauftragte Techniker konnte das Problem jedoch nur vorübergehend beheben” (kỹ thuật viên lần trước chỉ khắc phục tạm thời) cho thấy đây là sự cố lặp lại. Việc giảm tiền thuê chỉ là điều ông “behalte ich mir vor” — bảo lưu quyền làm nếu lò sưởi không được sửa trước ngày 15/11, chứ chưa thực hiện."
+  - key: de:diag:rea-b2-smartphone-ban
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.5
+    prompt:
+      passage: "Kaum ein Thema erhitzt derzeit die Gemüter von Eltern so sehr wie die Frage, ob Smartphones an Schulen verboten werden sollten. Befürworter verweisen auf Studien, nach denen sich Schülerinnen und Schüler ohne Handy besser konzentrieren und in den Pausen wieder miteinander reden. Das klingt überzeugend, greift aber zu kurz. Ein Verbot mag die ständigen Benachrichtigungen für einige Stunden zum Schweigen bringen – den bewussten Umgang mit dem Gerät lernt dadurch niemand. Spätestens nach Schulschluss sind die Jugendlichen mit ihren Bildschirmen wieder allein. Sinnvoller wäre es, Medienkompetenz zu einem festen Bestandteil des Unterrichts zu machen: Wer versteht, wie Apps um Aufmerksamkeit buhlen, kann sich ihnen auch besser entziehen. Schulen, die das Handy einfach aus dem Klassenzimmer verbannen, machen es sich zu leicht."
+      stem: Quan điểm của tác giả về việc cấm điện thoại thông minh ở trường học là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Ủng hộ lệnh cấm vì nghiên cứu cho thấy học sinh tập trung tốt hơn", lang: vi }
+        - { id: b, text: "Học sinh nên được tự do dùng điện thoại cả trong giờ học", lang: vi }
+        - { id: c, text: "Đây là trách nhiệm của phụ huynh, không phải của nhà trường", lang: vi }
+        - { id: d, text: "Chỉ cấm là chưa đủ; nhà trường nên dạy học sinh cách dùng điện thoại có ý thức", lang: vi }
+    answer: d
+    explanation:
+      vi: "Tác giả thừa nhận lập luận của phe ủng hộ lệnh cấm “klingt überzeugend” (nghe thuyết phục) nhưng ngay sau đó nói “greift aber zu kurz” (chưa giải quyết tận gốc). Đề xuất của tác giả là “Sinnvoller wäre es, Medienkompetenz zu einem festen Bestandteil des Unterrichts zu machen” — đưa kỹ năng sử dụng truyền thông vào giờ học. Câu cuối “machen es sich zu leicht” phê phán các trường chỉ cấm cho xong, chứ không đòi bỏ mọi quy định hay đẩy việc sang phụ huynh."
+  - key: de:diag:rea-b2-powernap
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.6
+    prompt:
+      passage: "Lange galt das Nickerchen am Arbeitsplatz hierzulande als Zeichen mangelnder Arbeitsmoral. Inzwischen richten jedoch immer mehr Unternehmen Ruheräume ein, in denen sich Beschäftigte für eine Viertelstunde hinlegen können. Schlafforscher begrüßen diese Entwicklung grundsätzlich, warnen aber vor zu langen Pausen: Wer länger als etwa 30 Minuten schläft, gerät in den Tiefschlaf und fühlt sich danach oft benommener als zuvor. Ideal seien zehn bis zwanzig Minuten, am besten am frühen Nachmittag. Ob sich der sogenannte Powernap flächendeckend durchsetzt, hängt allerdings weniger von der Wissenschaft ab als von der Unternehmenskultur. Solange Vorgesetzte ein kurzes Schläfchen insgeheim für Drückebergerei halten, dürften die neuen Ruheräume vielerorts leer bleiben."
+      stem: Theo tác giả, điều gì quyết định việc ngủ ngắn ở nơi làm việc có trở nên phổ biến hay không?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Kết quả của các nghiên cứu về giấc ngủ", lang: vi }
+        - { id: b, text: "Văn hóa doanh nghiệp, nhất là thái độ của cấp trên", lang: vi }
+        - { id: c, text: "Số lượng phòng nghỉ mà các công ty xây dựng", lang: vi }
+        - { id: d, text: "Việc nhân viên ngủ không quá 30 phút", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Ob sich der sogenannte Powernap flächendeckend durchsetzt, hängt allerdings weniger von der Wissenschaft ab als von der Unternehmenskultur” — việc này phụ thuộc vào văn hóa doanh nghiệp hơn là vào khoa học. Câu cuối nói nếu cấp trên (“Vorgesetzte”) thầm coi giấc ngủ ngắn là trốn việc (“Drückebergerei”) thì phòng nghỉ sẽ bỏ trống, nên chỉ có phòng nghỉ thôi là chưa đủ. Mốc 30 phút là lời khuyên của các nhà nghiên cứu giấc ngủ, không phải yếu tố quyết định."
+  - key: de:diag:rea-b2-train-irony
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.75
+    prompt:
+      passage: "Es gibt Gewissheiten im Leben, auf die man sich verlassen kann: Der Sommer ist zu kurz, der Montag zu lang – und der Regionalexpress um 7:42 Uhr kommt zu spät. Seit Monaten versichert das Bahnunternehmen, die Verspätungen seien eine „vorübergehende Erscheinung“. Vorübergehend ist offenbar ein dehnbarer Begriff. Die Pendlerinnen und Pendler haben sich längst arrangiert: Sie planen zwanzig Minuten Puffer ein, kennen die Durchsagen auswendig und wissen, an welchem Bahnhof der Kaffeeautomat funktioniert. Man könnte das als Beweis für die Anpassungsfähigkeit des Menschen feiern. Man könnte aber auch fragen, warum sich darüber eigentlich niemand mehr aufregt."
+      stem: Câu “Vorübergehend ist offenbar ein dehnbarer Begriff” trong bài bình luận thể hiện điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tác giả tin rằng tình trạng trễ tàu sắp chấm dứt", lang: vi }
+        - { id: b, text: "Tác giả khen hãng tàu xử lý linh hoạt", lang: vi }
+        - { id: c, text: "Tác giả mỉa mai rằng tình trạng trễ tàu kéo dài mãi, trái với lời hứa “tạm thời”", lang: vi }
+        - { id: d, text: "Tác giả giải thích nghĩa của một từ khó cho người đọc", lang: vi }
+    answer: c
+    explanation:
+      vi: "“ein dehnbarer Begriff” là “một khái niệm co giãn được”. Hãng tàu hứa chậm trễ chỉ là “vorübergehende Erscheinung” (hiện tượng tạm thời), nhưng tình trạng đó đã kéo dài “seit Monaten” (nhiều tháng nay). Tác giả mỉa mai rằng chữ “tạm thời” bị kéo giãn vô hạn; câu cuối “warum sich darüber eigentlich niemand mehr aufregt” cũng cho thấy tác giả không hề hài lòng."
+  - key: de:diag:rea-b2-carfree-centre
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.9
+    prompt:
+      passage: "Die Pläne der Stadtverwaltung, die Innenstadt bis 2030 weitgehend autofrei zu machen, stoßen bei vielen Einzelhändlern auf Widerstand. Ihre Sorge ist nachvollziehbar: Wer bislang davon lebt, dass die Kundschaft direkt vor der Tür parken kann, fürchtet Umsatzeinbußen. Erfahrungen aus anderen europäischen Städten zeigen allerdings, dass Fußgängerzonen den Handel keineswegs zwangsläufig schwächen – vorausgesetzt, die Innenstadt bleibt mit Bus und Bahn gut erreichbar und bietet mehr als bloße Einkaufsmöglichkeiten. Genau hier liegt die Schwachstelle der aktuellen Pläne: Zum Ausbau des Nahverkehrs enthalten sie bislang kaum mehr als eine Absichtserklärung. Eine autofreie Innenstadt ohne verlässliche Alternativen wäre kein Fortschritt, sondern ein Risiko."
+      stem: Tác giả có khả năng đồng ý nhất với nhận định nào sau đây?
+      stem_lang: vi
+      options:
+        - { id: a, text: "Trung tâm không ô tô có thể thành công, nhưng chỉ khi giao thông công cộng thực sự được mở rộng", lang: vi }
+        - { id: b, text: "Nên dừng kế hoạch vì nó chắc chắn làm giảm doanh thu của các cửa hàng", lang: vi }
+        - { id: c, text: "Kế hoạch hiện tại đã nêu đủ chi tiết về việc mở rộng giao thông công cộng", lang: vi }
+        - { id: d, text: "Kinh nghiệm ở các nước châu Âu cho thấy phố đi bộ luôn làm tăng doanh thu", lang: vi }
+    answer: a
+    explanation:
+      vi: "Tác giả thấy nỗi lo của chủ cửa hàng là “nachvollziehbar” (dễ hiểu), nhưng dẫn kinh nghiệm cho thấy phố đi bộ “keineswegs zwangsläufig” (hoàn toàn không nhất thiết) làm yếu việc buôn bán — với điều kiện (“vorausgesetzt”) trung tâm dễ đi tới bằng xe buýt và tàu. Điểm yếu của kế hoạch là phần giao thông công cộng mới chỉ là “kaum mehr als eine Absichtserklärung” (chỉ là tuyên bố ý định), và câu cuối gọi một trung tâm không ô tô thiếu lựa chọn thay thế là “ein Risiko”. “Không nhất thiết làm yếu” cũng khác với “luôn làm tăng” doanh thu."
