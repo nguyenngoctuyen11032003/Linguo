@@ -1,6 +1,7 @@
 import { act, fireEvent, renderHook, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { stubMatchMedia } from '../../../tests/unit/match-media';
 import { renderWithProviders } from '../../../tests/unit/render';
 import { HeroSection } from './HeroSection';
 import { LandingPage } from './LandingPage';
@@ -145,5 +146,33 @@ describe('LandingPage', () => {
     expect(trigger).toHaveAttribute('aria-expanded', 'false');
     expect(trigger).toHaveFocus();
     expect(document.body.style.overflow).toBe('');
+  });
+});
+
+describe('LandingPage in the installed app', () => {
+  const signedIn = { auth: { status: 'signed-in' as const, session: null, user: { id: 'u1' } as never } };
+  const standalone = () => stubMatchMedia((q) => q.includes('display-mode: standalone'));
+
+  it('sends a signed-in learner launching the home-screen app straight to /app', () => {
+    standalone();
+    renderWithProviders(<LandingPage />, { ...signedIn, route: '/' });
+    expect(screen.queryByRole('heading', { level: 1 })).not.toBeInTheDocument();
+  });
+
+  it('holds the loader, not the marketing page, while the stored session is read', () => {
+    standalone();
+    renderWithProviders(<LandingPage />, { auth: { status: 'loading', session: null, user: null }, route: '/' });
+    expect(screen.queryByRole('link', { name: 'Bắt đầu miễn phí' })).not.toBeInTheDocument();
+  });
+
+  it('still shows the landing page to a signed-out learner in the installed app', () => {
+    standalone();
+    renderWithProviders(<LandingPage />, signedOut);
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Học thông minh/i);
+  });
+
+  it('keeps the landing page in an ordinary browser tab even when signed in', () => {
+    renderWithProviders(<LandingPage />, signedIn);
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Học thông minh/i);
   });
 });
